@@ -1,7 +1,7 @@
 /** Chunk was on 35755 **/
 /** chunk id: 536650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,15 +25,15 @@ function y(e) {
   }, [e]), t
 }
 
-function x(e) {
+function g(e) {
   let {
     application: t,
     context: n,
     name: r,
-    iconURL: x,
-    scrollerRef: g,
+    iconURL: g,
+    scrollerRef: x,
     sectionName: b
-  } = e, N = (0, s.ap)((0, u.ZP)()), j = l.useRef(null), C = l.useRef(null), E = l.useRef(null), P = l.useRef(null), A = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOW).hex(), _ = (0, d.ZP)("number" == typeof x ? "" : x, null != A ? A : ""), O = l.useMemo(() => {
+  } = e, N = (0, s.ap)((0, u.ZP)()), j = l.useRef(null), C = l.useRef(null), E = l.useRef(null), P = l.useRef(null), A = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOW).hex(), _ = (0, d.ZP)("number" == typeof g ? "" : g, null != A ? A : ""), O = l.useMemo(() => {
     var e, t;
     return null != (t = null == (e = (0, p.wh)({
       foreground: a()(_),
@@ -43,7 +43,7 @@ function x(e) {
     })) ? true : e.hex()) ? t : _
   }, [_, N]), I = y(j), S = y(C), T = l.useCallback(() => {
     var e, t, n, i;
-    let l = g.current,
+    let l = x.current,
       r = j.current,
       a = E.current,
       s = null == P ? true : P.current,
@@ -58,18 +58,18 @@ function x(e) {
         f = p === m ? 1 : (0, o.clamp)((e - p) / (m - p), 0, 1);
       r.style.filter = "brightness(".concat(1 + ((N ? 1.4 : .6) - 1) * f, ")"), r.style.backgroundColor = "color-mix(in oklab,".concat(_, " ").concat((1 - f) * 100, "%, ").concat(O, ")"), a.style.opacity = "".concat(0 + +f), a.style.transform = "translateY(".concat((i = c / 4) + (0 - i) * f, "px)"), null != s && (s.style.opacity = "".concat(1 + false * f))
     }
-  }, [O, _, null == S ? true : S.height, N, g, null == I ? true : I.height]);
+  }, [O, _, null == S ? true : S.height, N, x, null == I ? true : I.height]);
   return l.useEffect(() => {
     T()
   }, [T, N]), l.useEffect(() => {
-    let e = g.current,
+    let e = x.current,
       t = () => {
         T()
       };
     return null == e || e.addEventListener("scroll", t), () => {
       null == e || e.removeEventListener("scroll", t)
     }
-  }, [g, T]), (0, i.jsxs)(i.Fragment, {
+  }, [x, T]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: v.stickyContainer,
       children: [(0, i.jsx)("div", {

@@ -22,11 +22,11 @@ function N(e, t, n) {
 let R = Chunk981631.QZA.CLOSED,
   P = {};
 
-function w() {
+function D() {
   R = Chunk981631.QZA.OPEN, P = {}
 }
 
-function D() {
+function w() {
   R = Chunk981631.QZA.CLOSED, P = {}
 }
 
@@ -44,7 +44,7 @@ function M(e) {
   let {
     section: t
   } = e;
-  return t === C.oAB.ACCOUNT && w()
+  return t === C.oAB.ACCOUNT && D()
 }
 
 function k(e) {
@@ -227,7 +227,7 @@ function eu() {
 }
 
 function ed() {
-  ei(), es(), D()
+  ei(), es(), w()
 }
 class ef extends(v = Chunk442837.ZP.Store) {
   getFormState() {
@@ -320,11 +320,11 @@ class ef extends(v = Chunk442837.ZP.Store) {
 }
 N(ef, "displayName", "UserSettingsAccountStore");
 let e_ = new ef(Chunk570140.Z, {
-  USER_SETTINGS_ACCOUNT_INIT: w,
-  USER_SETTINGS_MODAL_INIT: w,
-  USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: w,
+  USER_SETTINGS_ACCOUNT_INIT: D,
+  USER_SETTINGS_MODAL_INIT: D,
+  USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: D,
   USER_SETTINGS_MODAL_SET_SECTION: M,
-  USER_SETTINGS_ACCOUNT_CLOSE: D,
+  USER_SETTINGS_ACCOUNT_CLOSE: w,
   USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: ed,
   USER_SETTINGS_ACCOUNT_SUBMIT: L,
   USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: x,

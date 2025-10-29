@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 62764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H
@@ -47,7 +47,7 @@ function V(e) {
   let {
     channel: t
   } = e, l = t.isArchivedThread(), a = (0, E.P0)(t), [o, c] = i.useState(false), d = () => {
-    c(true), O.Z.resolveFlag(t.id).then(() => {
+    c(true), x.Z.resolveFlag(t.id).then(() => {
       c(false)
     })
   };
@@ -86,7 +86,7 @@ function H(e) {
     isLastItem: l = false,
     parentChannelId: s
   } = e, {
-    ref: O,
+    ref: x,
     width: E
   } = (0, f.ZP)(), [S, k] = i.useState(3), [H, G] = i.useState(!n), [W, z] = (0, h.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: Y
@@ -105,7 +105,7 @@ function H(e) {
     }
   }, [n]);
   i.useLayoutEffect(() => {
-    let e = O.current;
+    let e = x.current;
     if (null == e || !n) return;
     let t = new IntersectionObserver(el, {
       threshold: 1
@@ -133,7 +133,7 @@ function H(e) {
       className: a()(U.container, {
         [U.header]: H
       }),
-      ref: O,
+      ref: x,
       children: [et ? (0, r.jsx)("div", {
         className: U.reportedMessageActions,
         children: (0, r.jsx)(P.Z, {
@@ -146,7 +146,7 @@ function H(e) {
         }),
         children: [!es && !J && null != er && (0, r.jsx)("div", {
           className: B.reactions,
-          children: (0, r.jsx)(x.le, {
+          children: (0, r.jsx)(O.le, {
             message: Y,
             readOnly: false,
             useChatFontScaling: false,

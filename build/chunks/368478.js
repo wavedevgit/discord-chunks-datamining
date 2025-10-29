@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 368478, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => _,
@@ -25,8 +25,8 @@ function b(e) {
     primaryEntryPointCommand: n,
     application: a,
     showAppLauncherPopup: s = false
-  } = e, [p, b] = r.useState(false), _ = (0, i.e7)([l.ZP], () => l.ZP.getCurrentEmbeddedActivity()), y = s ? g.t.cpT0Cq : g.t["0hKkS+"], C = r.useMemo(() => null != n ? (0, d.XZ)(n.displayName) : g.intl.string(g.t["3xjX0U"]), [n]), v = true !== a.flags && (0, h.yE)(a.flags, m.udG.EMBEDDED), x = null != _ && _.applicationId === a.id && (0, o.p)(_.location) === t.channel.id, {
-    analyticsLocations: O
+  } = e, [p, b] = r.useState(false), _ = (0, i.e7)([l.ZP], () => l.ZP.getCurrentEmbeddedActivity()), y = s ? g.t.cpT0Cq : g.t["0hKkS+"], C = r.useMemo(() => null != n ? (0, d.XZ)(n.displayName) : g.intl.string(g.t["3xjX0U"]), [n]), v = true !== a.flags && (0, h.yE)(a.flags, m.udG.EMBEDDED), O = null != _ && _.applicationId === a.id && (0, o.p)(_.location) === t.channel.id, {
+    analyticsLocations: x
   } = (0, u.ZP)(c.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), E = null != t.channel.recipients ? t.channel.recipients[0] : true;
   return {
     isExecutingLaunchInteraction: p,
@@ -34,13 +34,13 @@ function b(e) {
       context: t,
       applicationId: a.id,
       botUserId: E
-    }) && v ? x ? g.intl.string(g.t["Hi1/aQ"]) : null != C ? C : g.intl.string(g.t.zKX8Nu) : g.intl.string(y),
-    hasActiveMatchingEmbeddedActivity: x,
+    }) && v ? O ? g.intl.string(g.t["Hi1/aQ"]) : null != C ? C : g.intl.string(g.t.zKX8Nu) : g.intl.string(y),
+    hasActiveMatchingEmbeddedActivity: O,
     isEmbeddedApp: v,
     currentEmbeddedActivity: _,
     channelRecipientUserId: E,
     setIsExecutingLaunchInteraction: b,
-    analyticsLocations: O
+    analyticsLocations: x
   }
 }
 

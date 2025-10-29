@@ -77,13 +77,13 @@ function T(e) {
     location: "VoiceActivityStatus"
   }), R = !N && T, {
     analyticsLocations: P
-  } = (0, l.ZP)(), w = i.useCallback(() => {
+  } = (0, l.ZP)(), D = i.useCallback(() => {
     (0, p.A)({
       analyticsLocations: P,
       activityType: "VOICE",
       voiceChannelId: t.id
     })
-  }, [P, t.id]), D = () => y || C ? (0, r.jsx)(_.Z, {
+  }, [P, t.id]), w = () => y || C ? (0, r.jsx)(_.Z, {
     size: "custom",
     color: S,
     channel: t,
@@ -95,7 +95,7 @@ function T(e) {
       channel: t
     }),
     delay: g.X,
-    onTooltipShow: w,
+    onTooltipShow: D,
     children: e => (0, r.jsx)(_.Z, I(O({}, e), {
       size: "custom",
       color: S,
@@ -104,7 +104,7 @@ function T(e) {
     }))
   }), L = () => N ? A : C ? E.intl.string(E.t["9FaEzi"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCN) : E.intl.string(E.t.msxteM);
   return (0, r.jsxs)(r.Fragment, {
-    children: [D(), !m && (0, r.jsxs)(h.Z, {
+    children: [w(), !m && (0, r.jsxs)(h.Z, {
       variant: n,
       className: a,
       canTruncate: v,

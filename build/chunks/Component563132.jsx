@@ -123,7 +123,7 @@ function ee(e) {
     setCurrency: eI,
     currencyLoading: eT,
     currencies: eS
-  } = (0, D.Z)({
+  } = (0, w.Z)({
     activeSubscription: K,
     skuIDs: $,
     paymentSourceId: eg,
@@ -132,8 +132,8 @@ function ee(e) {
   }), eA = (0, U.Z)(), [eC, eN] = i.useState(false), {
     step: eR,
     setStep: eP,
-    steps: ew,
-    breadcrumbsData: eD,
+    steps: eD,
+    breadcrumbsData: ew,
     previousStepRef: eL
   } = (0, B.Z)({
     stepConfigs: q,
@@ -172,7 +172,7 @@ function ee(e) {
   }), tc = i.useRef(tl.isSame(s()(0)) ? null : tl);
   i.useEffect(() => {
     null != tc.current || tl.isSame(s()(0)) || (tc.current = tl)
-  }, [tl]), (0, w.m)(ef, eg);
+  }, [tl]), (0, D.m)(ef, eg);
   let {
     skusById: tu,
     hasFetchedSkus: td,
@@ -213,9 +213,9 @@ function ee(e) {
     } = (0, c.cj)([E.Z], () => ({
       isDisplayingWowMomentConfirmation: E.Z.isDisplayingWowMomentConfirmation
     })),
-    tw = tR ? W.premiumBrandRefreshBackground : true,
+    tD = tR ? W.premiumBrandRefreshBackground : true,
     {
-      enabled: tD
+      enabled: tw
     } = (0, g.l)({
       location: "PaymentModal"
     }),
@@ -228,7 +228,7 @@ function ee(e) {
   return (0, r.jsx)(Q.Provider, {
     value: X(z({
       stripe: ec,
-      paymentElementsEnabled: tD,
+      paymentElementsEnabled: tw,
       contextMetadata: eZ,
       blockedPayments: eu,
       activeSubscription: K,
@@ -252,9 +252,9 @@ function ee(e) {
       setHasAcceptedTerms: eN,
       step: eR,
       setStep: eP,
-      steps: ew,
+      steps: eD,
       stepConfigs: q,
-      breadcrumbs: eD,
+      breadcrumbs: ew,
       previousStepRef: eL,
       purchaseState: ex,
       setPurchaseState: eM,
@@ -312,7 +312,7 @@ function ee(e) {
       inReverseTrial: tN,
       enablePremiumBrandRefresh: tR,
       isDisplayingWowMomentConfirmation: tP,
-      premiumBrandRefreshBackgroundClassName: tw,
+      premiumBrandRefreshBackgroundClassName: tD,
       wasTier2PremiumBeforePurchase: el,
       customCheckoutFlow: tx
     }),

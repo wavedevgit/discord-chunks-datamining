@@ -55,7 +55,7 @@ function P(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,8 +66,8 @@ function w(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -220,7 +220,7 @@ function H(e) {
     scrollerClassName: T,
     className: S,
     listName: R
-  } = e, w = i.useRef(null), x = (0, p.Z)(R, w), B = (0, u.e7)([y.ZP], () => y.ZP.hasNotice()), Z = (0, u.e7)([O.Z], () => O.Z.windowSize());
+  } = e, D = i.useRef(null), x = (0, p.Z)(R, D), B = (0, u.e7)([y.ZP], () => y.ZP.hasNotice()), Z = (0, u.e7)([O.Z], () => O.Z.windowSize());
   i.useEffect(() => {
     v.default.track(A.rMx.OPEN_POPOUT, {
       type: t
@@ -228,14 +228,14 @@ function H(e) {
   }, [t]), i.useEffect(() => {
     function e() {
       var e;
-      null == (e = w.current) || e.scrollPageUp({
+      null == (e = D.current) || e.scrollPageUp({
         animate: true
       })
     }
 
     function t() {
       var e;
-      null == (e = w.current) || e.scrollPageDown({
+      null == (e = D.current) || e.scrollPageDown({
         animate: true
       })
     }
@@ -245,7 +245,7 @@ function H(e) {
   }, []);
   let F = i.useCallback(() => {
       var e;
-      let t = null == (e = w.current) ? true : e.getScrollerState();
+      let t = null == (e = D.current) ? true : e.getScrollerState();
       null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < U && a && !s && (null == _ || _())
     }, [a, _, s]),
     V = [],
@@ -303,7 +303,7 @@ function H(e) {
       children: [(0, r.jsxs)(f.Den, {
         className: o()(N.messagesPopout, T),
         onScroll: q ? F : true,
-        ref: w,
+        ref: D,
         children: [(0, r.jsx)(c.bG, {
           navigator: x,
           children: (0, r.jsx)(c.SJ, {
@@ -311,7 +311,7 @@ function H(e) {
               var {
                 ref: t
               } = e, n = L(e, ["ref"]);
-              return (0, r.jsx)("div", D(P({
+              return (0, r.jsx)("div", w(P({
                 ref: t
               }, n), {
                 children: V
@@ -358,7 +358,7 @@ function Y(e) {
     }
   }
 
-  function w(e) {
+  function D(e) {
     let {
       message: t,
       channel: n
@@ -385,14 +385,14 @@ function Y(e) {
   i.useEffect(() => {
     n(a)
   }, [a, n]);
-  let D = i.useMemo(() => null == o ? true : o.map(e => ({
+  let w = i.useMemo(() => null == o ? true : o.map(e => ({
     message: e,
     channel: a
   })), [o, a]);
   return (0, r.jsx)(H, {
     className: v,
     scrollerClassName: O,
-    items: D,
+    items: w,
     loading: l,
     analyticsName: t,
     renderEmptyState: h,
@@ -400,7 +400,7 @@ function Y(e) {
     hasMore: s,
     loadMore: c,
     getProTip: y,
-    renderItem: w,
+    renderItem: D,
     listName: C,
     "aria-label": e["aria-label"]
   })

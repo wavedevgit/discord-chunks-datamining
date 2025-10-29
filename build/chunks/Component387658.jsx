@@ -46,7 +46,7 @@ function k(e) {
     sectionName: c
   } = e, d = l.useCallback(() => {
     let e = N.Z.entrypoint();
-    b.yT(j.ti.COMMAND), (0, x.Mo)({
+    b.yT(j.ti.COMMAND), (0, g.Mo)({
       command: a,
       location: v.Vh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c
@@ -58,7 +58,7 @@ function k(e) {
       sectionName: c,
       source: e,
       commandOrigin: v.bB.APPLICATION_LAUNCHER
-    }), g.S.dispatch(I.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+    }), x.S.dispatch(I.CkL.FOCUS_CHANNEL_TEXT_AREA, {
       channelId: r.channel.id
     }))
   }, [r, a, s, c]), p = (null != (n = null == (t = a.options) ? true : t.length) ? n : 0) > 0, f = l.useMemo(() => (0, _.ae)(a.displayDescription, true), [a.displayDescription]), h = l.useMemo(() => (0, i.jsxs)("div", {
@@ -246,8 +246,8 @@ function H(e) {
   }), f = null != (t = p.find(e => e.id === r.id)) ? t : null, {
     sortOrder: v,
     setSortOrder: y,
-    commands: x,
-    canSort: g
+    commands: g,
+    canSort: x
   } = (0, P.Z)({
     sectionId: r.id,
     commandsByActiveSection: u
@@ -257,12 +257,12 @@ function H(e) {
   }, [r.id, c]);
   let b = (0, E.Z)({
     context: n,
-    commands: x,
+    commands: g,
     limit: 5
   });
   return (l.useEffect(() => {
-    s(x.length > 0)
-  }, [s, x]), m || 0 !== x.length) ? (0, i.jsxs)("ul", {
+    s(g.length > 0)
+  }, [s, g]), m || 0 !== g.length) ? (0, i.jsxs)("ul", {
     className: R.contentContainer,
     children: [(0, i.jsx)(D, {
       context: n,
@@ -273,10 +273,10 @@ function H(e) {
     }), (0, i.jsx)(D, {
       context: n,
       section: f,
-      commands: m ? w : x,
+      commands: m ? w : g,
       headerName: T.intl.string(T.t.DUU9L3),
       sectionName: a,
-      children: g && (0, i.jsx)(O.Z, {
+      children: x && (0, i.jsx)(O.Z, {
         sortOrder: v,
         onSortOptionClick: y
       })

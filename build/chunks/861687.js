@@ -535,7 +535,7 @@ class eN extends Chunk47770.Z {
         return null != (t = await (null == (e = this._systemResources) ? true : e.getBatteryLevelStats())) ? t : {
           batteryUsageRounded: null
         }
-      })(), w.Z.getKrispModel(), M.Z.getKrispEnableStats() ? M.Z.getMediaEngine().getNoiseCancellationStats() : Promise.resolve(null), M.Z.getMediaEngine().getSystemMicrophoneMode()]).then(e => {
+      })(), D.Z.getKrispModel(), M.Z.getKrispEnableStats() ? M.Z.getMediaEngine().getNoiseCancellationStats() : Promise.resolve(null), M.Z.getMediaEngine().getSystemMicrophoneMode()]).then(e => {
         let [{
           batteryUsageRounded: t
         }, n, r, i] = e;
@@ -573,7 +573,7 @@ class eN extends Chunk47770.Z {
       active: false
     });
     let l = M.Z.getMediaEngine(),
-      c = D.Z.getPersistentCodesEnabled(),
+      c = w.Z.getPersistentCodesEnabled(),
       u = null != (s = L.default.getStaticAuthSessionId()) ? s : true,
       d = (0, _.zO)(),
       h = l.connect(this.context, this.userId, ed({

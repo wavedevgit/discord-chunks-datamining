@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 111248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -28,7 +28,7 @@ function y(e) {
     channel: y,
     participants: C,
     onSelectParticipant: v
-  } = e, [x, O] = function() {
+  } = e, [O, x] = function() {
     let [e, t] = i.useState(() => s.K.get(_, h.VD2.BOTTOM_RIGHT));
     return [e, i.useCallback(e => {
       s.K.set(_, e), t(e)
@@ -46,12 +46,12 @@ function y(e) {
       c.d7(t, m.cL.CAMERA_PREVIEW)
     }, [P]),
     N = i.useCallback((e, t) => {
-      O(t)
-    }, [O]);
+      x(t)
+    }, [x]);
   return (0, r.jsx)("div", {
     className: g.container,
     children: (0, r.jsx)(d._, {
-      position: x,
+      position: O,
       id: 0,
       width: I,
       ref: E,

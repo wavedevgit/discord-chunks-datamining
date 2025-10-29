@@ -23,24 +23,24 @@ function m(e) {
     h = "channel" === n.type ? n.channel : true,
     v = (0, i.e7)([c.Z], () => c.Z.can(d.Pl.USE_EMBEDDED_ACTIVITIES, h)),
     y = (0, r.KF)(null == h ? true : h.id),
-    x = false;
+    g = false;
   switch (f) {
     case o.JS.LEAVE:
-      x = false;
+      g = false;
       break;
     case o.JS.START:
-      null == h ? x = false : (null == h ? true : h.isGuildVoice()) ? y !== r.jy.CAN_LAUNCH && (x = true) : (0, l.WS)(h) || (x = true);
+      null == h ? g = false : (null == h ? true : h.isGuildVoice()) ? y !== r.jy.CAN_LAUNCH && (g = true) : (0, l.WS)(h) || (g = true);
       break;
     case o.JS.JOIN:
-      (null == h ? true : h.isGuildVoice()) ? x = !v: (0, l.WS)(h) || (x = true)
+      (null == h ? true : h.isGuildVoice()) ? g = !v: (0, l.WS)(h) || (g = true)
   }
   if (f !== o.JS.LEAVE) {
     let e = m instanceof s.ZP ? m.embeddedActivityConfig : m.embedded_activity_config,
       n = (0, a.Z)((0, u.getOS)());
-    null == e || e.supported_platforms.includes(n) ? (null == h ? true : h.isThread()) && (x = true, t = p.intl.string(p.t.ddSR3v)) : (x = false, t = p.intl.string(p.t.z2YTgJ))
+    null == e || e.supported_platforms.includes(n) ? (null == h ? true : h.isThread()) && (g = true, t = p.intl.string(p.t.ddSR3v)) : (g = false, t = p.intl.string(p.t.z2YTgJ))
   }
-  return x && null == t && (t = p.intl.string(p.t.f41E1g)), {
-    disabled: x,
+  return g && null == t && (t = p.intl.string(p.t.f41E1g)), {
+    disabled: g,
     reason: t
   }
 }

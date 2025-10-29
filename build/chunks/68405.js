@@ -124,7 +124,7 @@ function P(e, t) {
   c.ZP.trackWithMetadata(E.rMx.SEARCH_RESULT_VIEWED, v({}, o, s))
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   let r = Date.now();
   R(t), o.tn.get({
     url: E.ANM.GIFS_SEARCH,
@@ -152,7 +152,7 @@ function w(e, t, n) {
     query: e
   }))
 }
-let D = i().debounce(w, C);
+let w = i().debounce(D, C);
 
 function L(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
@@ -160,7 +160,7 @@ function L(e, t) {
   "" === e ? M() : (l.Z.dispatch({
     type: "GIF_PICKER_QUERY",
     query: e
-  }), n ? w(e, t, r) : D(e, t, r))
+  }), n ? D(e, t, r) : w(e, t, r))
 }
 
 function x(e) {

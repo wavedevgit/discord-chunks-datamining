@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   AG: () => R,
-  Z$: () => D,
+  Z$: () => w,
   jH: () => P,
   zH: () => L
 }), require("./388685.js");
@@ -190,7 +190,7 @@ class P extends Chunk647438.PureComponent {
   }
 }
 
-function w(e) {
+function D(e) {
   let {
     value: t,
     eagerUpdate: n = false,
@@ -202,7 +202,7 @@ function w(e) {
     showEyeDropper: E,
     wrapperComponentType: y,
     className: v
-  } = e, I = (0, _.Z)(), A = C(t), N = null != A ? A : 0, R = (0, c.Rf)(N), P = (0, c.O)(N), [w, D] = i.useState({
+  } = e, I = (0, _.Z)(), A = C(t), N = null != A ? A : 0, R = (0, c.Rf)(N), P = (0, c.O)(N), [D, w] = i.useState({
     current: N,
     pending: {
       hex: R,
@@ -211,10 +211,10 @@ function w(e) {
     input: R
   });
   i.useEffect(() => {
-    if (null == A || A === w.current) return;
+    if (null == A || A === D.current) return;
     let e = (0, c.Rf)(A),
       t = (0, c.O)(A);
-    D({
+    w({
       current: A,
       pending: {
         hex: e,
@@ -222,15 +222,15 @@ function w(e) {
       },
       input: e
     })
-  }, [A, w]), i.useEffect(() => s, [s]);
+  }, [A, D]), i.useEffect(() => s, [s]);
   let L = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
-      if (!(0, c.FX)(t)) return void D(e => O(b({}, e), {
+      if (!(0, c.FX)(t)) return void w(e => O(b({}, e), {
         input: t
       }));
       let n = (0, c._i)(t),
         r = (0, c.O)(n);
-      D({
+      w({
         current: n,
         pending: {
           hex: t,
@@ -247,7 +247,7 @@ function w(e) {
         L(e)
       } catch (e) {}
     }, M = i.useCallback(e => {
-      D(t => O(b({}, t), {
+      w(t => O(b({}, t), {
         pending: e,
         input: e.hex
       })), n && a((0, c._i)(e.hex))
@@ -264,10 +264,10 @@ function w(e) {
             } = e;
             return k(t)
           },
-          color: w.pending.hsl
+          color: D.pending.hsl
         })
       }), p, (0, r.jsx)(f.oil, {
-        value: w.input.slice(1),
+        value: D.input.slice(1),
         onChange: L,
         maxLength: S - 1,
         leading: "#",
@@ -294,7 +294,7 @@ function w(e) {
     children: j
   })
 }
-let D = Chunk647438.memo(w);
+let w = Chunk647438.memo(D);
 
 function L(e) {
   let {

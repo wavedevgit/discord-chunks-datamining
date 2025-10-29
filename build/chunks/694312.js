@@ -25,14 +25,14 @@ function p(e) {
       activity: v[0].embeddedActivityConfig,
       application: v[0]
     }] : [], [v, p]),
-    x = i.useMemo(() => n.map(e => {
+    g = i.useMemo(() => n.map(e => {
       let t = v.find(t => t.id === e.application_id);
       return null == t ? null : {
         activity: e,
         application: t
       }
     }).filter(s.lm), [n, v]);
-  return i.useMemo(() => [...y, ...x].filter(e => {
+  return i.useMemo(() => [...y, ...g].filter(e => {
     var t;
     let {
       activity: n
@@ -43,5 +43,5 @@ function p(e) {
       activity: n
     } = e;
     return !n.requires_age_gate || (null == t ? true : t.nsfwAllowed) === true || (null == t ? true : t.nsfwAllowed) == null
-  }), [null == t ? true : t.nsfwAllowed, x, y])
+  }), [null == t ? true : t.nsfwAllowed, g, y])
 }

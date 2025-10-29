@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Go: () => R,
-  LZ: () => D,
+  LZ: () => w,
   Pq: () => v,
   RJ: () => P,
   Sd: () => M,
@@ -185,15 +185,15 @@ function P() {
   return (0, Chunk442837.Wu)([Chunk926491.Z], () => module.map(e => g.Z.getStickerById(e)).filter(e => null != e && (!(0, b.J8)(e) || (0, b.V9)(e))), [module])
 }
 
-function w() {
+function D() {
   var e, t;
   let n = (0, Chunk516373.D)(),
     r = N;
   return (null == require || null == (e = require.stickerFrecency) ? true : module.stickers) != null && (r = Object.keys(null == require || null == (t = require.stickerFrecency) ? true : exports.stickers)), Chunk647438
 }
 
-function D() {
-  let e = w();
+function w() {
+  let e = D();
   return (0, Chunk442837.Wu)([Chunk926491.Z], () => module.map(e => g.Z.getStickerById(e)).filter(e => true !== e), [module])
 }
 let L = e => {

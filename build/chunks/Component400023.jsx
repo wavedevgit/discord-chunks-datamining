@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 400023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -105,7 +105,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       showNewMessagesBar: _,
       messageDisplayCompact: y,
       channelStream: v,
-      uploads: x,
+      uploads: O,
       hasUnreads: E,
       editingMessageId: S,
       fontSize: P,
@@ -158,7 +158,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       showNewMessagesBar: _,
       messageDisplayCompact: y,
       channelStream: v,
-      uploads: x,
+      uploads: O,
       loadMore: X.loadMore,
       scrollManager: X,
       specs: K,
@@ -213,9 +213,9 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
         var t;
         X.ref.current = e, ea.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
       }),
-      ec = (0, c.e7)([O.Z], () => {
+      ec = (0, c.e7)([x.Z], () => {
         var e;
-        let t = null == (e = O.Z.settings.appearance) ? true : e.clientThemeSettings;
+        let t = null == (e = x.Z.settings.appearance) ? true : e.clientThemeSettings;
         return (null == t ? true : t.backgroundGradientPresetId) != null || (null == t ? true : t.customUserThemeSettings) != null
       }),
       eu = i.useMemo(() => R ? L ? H.chatTypingGradientAtBottom : H.chatTypingGradientNotAtBottom : H.chatGradient, [R, L]),
@@ -292,14 +292,14 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
         canManageMessages: r
       }
     }(t), {
-      messageGroupSpacing: O,
+      messageGroupSpacing: x,
       fontSize: j,
       messageDisplayCompact: w,
       renderSpoilers: D,
       keyboardModeEnabled: k
     } = function() {
-      let e = x.jU.useSetting(),
-        t = x.cC.useSetting(),
+      let e = O.jU.useSetting(),
+        t = O.cC.useSetting(),
         {
           messageGroupSpacing: n,
           fontSize: r,
@@ -382,7 +382,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       value: (0, M.Z)(D, d),
       children: (0, r.jsx)(L.v, {
         children: (0, r.jsx)(Y, W(G({}, u), {
-          messageGroupSpacing: O,
+          messageGroupSpacing: x,
           showNewMessagesBar: true,
           channel: t,
           messageDisplayCompact: !o && (a || w),

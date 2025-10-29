@@ -8,7 +8,7 @@ var Chunk427164 = require("./427164.js"),
   Chunk480218 = require("./480218.js");
 let a = (0, Chunk427164.le)({
   kind: "user",
-  name: "2025_10_force_sdr_emojis_stickers",
+  name: "2025-10-force-sdr-emojis-stickers",
   defaultConfig: {
     enabled: false
   },

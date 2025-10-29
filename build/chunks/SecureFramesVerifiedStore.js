@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 98369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -41,7 +41,7 @@ function v() {
   return _ = r, i
 }
 
-function x(e) {
+function O(e) {
   let {
     userId: t
   } = e;
@@ -61,7 +61,7 @@ function x(e) {
   return n || r || i
 }
 
-function O() {
+function x() {
   g.clear(), b.clear(), _ = false
 }
 class E extends(r = Chunk442837.ZP.Store) {
@@ -84,13 +84,13 @@ class E extends(r = Chunk442837.ZP.Store) {
   writable: true
 }) : E[i] = "SecureFramesVerifiedStore";
 let j = new E(Chunk570140.Z, {
-  CONNECTION_OPEN: O,
+  CONNECTION_OPEN: x,
   VOICE_CHANNEL_SELECT: function(e) {
     let {
       channelId: t
     } = e;
     if (t === y) returnfalse;
-    y = t, O()
+    y = t, x()
   },
   RTC_CONNECTION_STATE: function(e) {
     let {
@@ -104,20 +104,20 @@ let j = new E(Chunk570140.Z, {
         if (null == t) returnfalse;
         return b.delete(t), v();
       case a.Yn.DEFAULT:
-        O()
+        x()
     }
   },
   RTC_CONNECTION_ROSTER_MAP_UPDATE: function(e) {
     let {
       userIds: t
-    } = e, n = c.default.getId(), r = t.reduce((e, t) => n === t ? e : !!x({
+    } = e, n = c.default.getId(), r = t.reduce((e, t) => n === t ? e : !!O({
       userId: t
     }) || e, false), i = C(), l = v();
     return r || i || l
   },
-  SECURE_FRAMES_TRANSIENT_KEY_CREATE: x,
-  SECURE_FRAMES_TRANSIENT_KEY_DELETE: x,
-  SECURE_FRAMES_VERIFIED_KEY_CREATE: x,
-  SECURE_FRAMES_VERIFIED_KEY_DELETE: x,
-  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: x
+  SECURE_FRAMES_TRANSIENT_KEY_CREATE: O,
+  SECURE_FRAMES_TRANSIENT_KEY_DELETE: O,
+  SECURE_FRAMES_VERIFIED_KEY_CREATE: O,
+  SECURE_FRAMES_VERIFIED_KEY_DELETE: O,
+  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: O
 })

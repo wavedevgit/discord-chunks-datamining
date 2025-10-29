@@ -1,1 +1,0 @@
-{"id":"844439","type":"store","data":{"name":"","functions":[{"name":"getLastFetchTimeMs","args":["e"]},{"name":"getFetchState","args":["e"]},{"name":"getRecommendations","args":["e"]}],"events":["APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS","APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS","APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_FAILURE"]},"fromModule":{"id":"web.js"}}

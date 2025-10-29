@@ -95,8 +95,8 @@ function T(e) {
   } = (0, _.X)(A), {
     disabled: R,
     errorMessage: P,
-    required: w = false
-  } = N, D = {
+    required: D = false
+  } = N, w = {
     hasError: null != P && "" !== P
   }, {
     refs: L,
@@ -132,7 +132,7 @@ function T(e) {
   return (0, r.jsx)(_.g, O(b({}, N), {
     children: e => (0, r.jsx)(h.U, O(b({
       className: g.inputField,
-      validation: D,
+      validation: w,
       ref: L.setReference
     }, G()), {
       children: (0, r.jsxs)(o.Mt, {
@@ -144,7 +144,7 @@ function T(e) {
         value: t,
         onChange: F,
         isDisabled: R,
-        isRequired: w,
+        isRequired: D,
         minValue: i,
         maxValue: E,
         placeholderValue: y,

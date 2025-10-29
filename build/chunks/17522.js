@@ -180,7 +180,7 @@ function Z({
       isVirtualized: A,
       layoutDelegate: C,
       dropTargetDelegate: N,
-      CollectionRoot: D
+      CollectionRoot: w
     } = (0, x.useContext)(a.Qk),
     {
       dragAndDropHooks: L
@@ -253,7 +253,7 @@ function Z({
     width: "fit-content"
   }));
   let $ = F("table"),
-    ee = (0, w.z)(e, {
+    ee = (0, D.z)(e, {
       global: true
     });
   return x.createElement(o.zt, {
@@ -281,7 +281,7 @@ function Z({
     "data-drop-target": V || true,
     "data-focused": K || true,
     "data-focus-visible": z || true
-  }, x.createElement(c.y, null, x.createElement(D, {
+  }, x.createElement(c.y, null, x.createElement(w, {
     collection: S.collection,
     scrollRef: null != (l = null == I ? true : I.scrollRef) ? l : t,
     persistedKeys: (0, s.y)(j, L, d)
@@ -329,7 +329,7 @@ let Y = (0, Chunk785894.IW)(H, (e, t) => {
       }
     });
   return x.createElement(i, {
-    ...(0, y.d)((0, w.z)(e, {
+    ...(0, y.d)((0, D.z)(e, {
       global: true
     }), a, s),
     ...c,
@@ -430,7 +430,7 @@ let z = (0, Chunk785894.G5)(K, (e, t, n) => {
       width: p.getColumnWidth(n.key)
     });
     let I = F("th"),
-      T = (0, w.z)(e, {
+      T = (0, D.z)(e, {
         global: true
       });
     return delete T.id, x.createElement(I, {
@@ -508,7 +508,7 @@ let Q = (0, Chunk785894.IW)(X, (e, t) => {
   }
   let {
     rowGroupProps: I
-  } = (0, O.LA)(), T = F("tbody"), S = (0, w.z)(e, {
+  } = (0, O.LA)(), T = F("tbody"), S = (0, D.z)(e, {
     global: true
   });
   return x.createElement(T, {
@@ -558,7 +558,7 @@ let $ = (0, Chunk785894.IW)(J, (e, t, n) => {
     } = (0, E.F)(),
     {
       isFocusVisible: P,
-      focusProps: D
+      focusProps: w
     } = (0, E.F)({
       within: true
     }),
@@ -619,7 +619,7 @@ let $ = (0, Chunk785894.IW)(J, (e, t, n) => {
     }),
     W = F("tr"),
     K = F("td"),
-    z = (0, w.z)(e, {
+    z = (0, D.z)(e, {
       global: true
     });
   return delete z.id, delete z.onClick, x.createElement(x.Fragment, null, u && !u.isHidden && x.createElement(W, {
@@ -639,7 +639,7 @@ let $ = (0, Chunk785894.IW)(J, (e, t, n) => {
     ...u.dropIndicatorProps,
     ref: j
   }))), x.createElement(W, {
-    ...(0, y.d)(z, Y, b, N, L, null == c ? true : c.dragProps, D),
+    ...(0, y.d)(z, Y, b, N, L, null == c ? true : c.dragProps, w),
     ref: d,
     "data-disabled": O.isDisabled || true,
     "data-selected": O.isSelected || true,
@@ -725,7 +725,7 @@ let et = (0, Chunk785894.G5)(ee, (e, t, n) => {
       isHovered: m,
       id: n.key
     }
-  }), b = F("td"), O = (0, w.z)(e, {
+  }), b = F("td"), O = (0, D.z)(e, {
     global: true
   });
   return delete O.id, x.createElement(b, {
@@ -774,7 +774,7 @@ function er(e, t) {
     }
   }), u = F("tr"), d = F("td");
   return x.createElement(u, {
-    ...(0, w.z)(e, {
+    ...(0, D.z)(e, {
       global: true
     }),
     ...c,
@@ -855,7 +855,7 @@ function ea() {
       sentinelRef: f,
       scrollOffset: c
     }), [l, c, null == r ? true : r.collection]);
-  (0, D.B)(_, f);
+  (0, w.B)(_, f);
   let p = (0, o.aX)({
       ...u,
       id: true,
@@ -889,7 +889,7 @@ function ea() {
       width: 1
     }
   }))), s && p.children && x.createElement(h, {
-    ...(0, y.d)((0, w.z)(e, {
+    ...(0, y.d)((0, D.z)(e, {
       global: true
     }), g),
     ...p,

@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 613548, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -101,13 +101,13 @@ function R(e) {
     participant: C,
     showQuality: true,
     premiumIndicator: false
-  }, "live-indicator"))), (null == C ? true : C.type) === N.fO.USER && U.push((0, r.jsx)(x.Z, {
+  }, "live-indicator"))), (null == C ? true : C.type) === N.fO.USER && U.push((0, r.jsx)(O.Z, {
     className: w.button,
     userId: C.id
   }, "video-warning")), u && !R && U.push((0, r.jsx)(d.yRy, {
     targetElementRef: l,
     position: "bottom",
-    renderPopout: () => (0, r.jsx)(O.Z, {
+    renderPopout: () => (0, r.jsx)(x.Z, {
       children: (0, r.jsx)(Z.Z, {
         channel: t
       })

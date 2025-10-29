@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 83896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => S
@@ -98,15 +98,15 @@ function S(e) {
     }, [I, T, t, n.id, l]);
   return (0, r.jsxs)("div", {
     ref: P,
-    className: a()(O.popover, x.container),
+    className: a()(x.popover, O.container),
     children: [(0, r.jsx)(_.Z, {
       userId: l,
       size: 32,
-      className: x.icon,
+      className: O.icon,
       hangStatusActivity: t
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
-      className: x.statusText,
+      className: O.statusText,
       children: (0, h.O8)(l, t)
     }), I ? (0, r.jsx)(s.aML, {
       "data-migration-pending": true,

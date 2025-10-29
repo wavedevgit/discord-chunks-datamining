@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 331197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -98,12 +98,12 @@ function E(e) {
   }
 
   function z() {
-    (0, d.v)(P, d.d.SOUNDBOARD), j === x.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != j ? (Z(), H()) : Z(), null == S || S(x.D.SOUNDBOARD))
+    (0, d.v)(P, d.d.SOUNDBOARD), j === O.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != j ? (Z(), H()) : Z(), null == S || S(O.D.SOUNDBOARD))
   }
   let q = i.useRef(null);
   return (0, r.jsx)(s.y, {
     targetElementRef: q,
-    shouldShow: F && (j === x.D.SOUNDBOARD || null == j) || j === x.D.SOUNDBOARD,
+    shouldShow: F && (j === O.D.SOUNDBOARD || null == j) || j === O.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
@@ -137,7 +137,7 @@ function E(e) {
       ref: q,
       isTrayButton: true,
       themeable: E,
-      label: w ? O.intl.string(O.t["Ox4/zU"]) : M ? O.intl.string(O.t["+YBKYI"]) : R ? O.intl.string(O.t.X1lQli) : true,
+      label: w ? x.intl.string(x.t["Ox4/zU"]) : M ? x.intl.string(x.t["+YBKYI"]) : R ? x.intl.string(x.t.X1lQli) : true,
       iconComponent: I,
       disabled: D,
       onContextMenu: W,
@@ -148,8 +148,8 @@ function E(e) {
       onMouseLeave: () => {
         null == j && (G(), N())
       },
-      isActive: F || j === x.D.SOUNDBOARD,
-      color: F || j === x.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: F || j === O.D.SOUNDBOARD,
+      color: F || j === O.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

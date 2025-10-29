@@ -131,11 +131,11 @@ let O = (0, Chunk647438.createContext)(null),
           isRequired: a.isRequired
         }
       }),
-      w = (0, h.z)(e, {
+      D = (0, h.z)(e, {
         global: true
       });
-    return delete w.id, delete w.onClick, y.createElement("label", {
-      ...(0, m.d)(w, l, N, P),
+    return delete D.id, delete D.onClick, y.createElement("label", {
+      ...(0, m.d)(D, l, N, P),
       ref: t,
       "data-selected": u || true,
       "data-pressed": O || true,

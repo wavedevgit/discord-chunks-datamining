@@ -91,7 +91,7 @@ let A = e => {
     soundEffect: C,
     setEmojiConfetti: N,
     setSoundEffect: R
-  } = (0, c.wD)(), [P, w] = i.useState(false), D = i.useRef(null), L = (0, s.Jb)({
+  } = (0, c.wD)(), [P, D] = i.useState(false), w = i.useRef(null), L = (0, s.Jb)({
     orientation: "horizontal"
   }), {
     ref: x
@@ -125,7 +125,7 @@ let A = e => {
       tabIndex: null != v || P ? true : 0,
       onFocus: e => {
         var t;
-        e.target === e.currentTarget && (null == (t = D.current) || t.focus())
+        e.target === e.currentTarget && (null == (t = w.current) || t.focus())
       },
       className: o()(b.giftBoxOptionContainer, a),
       "aria-label": E.intl.string(E.t.v54NrN),
@@ -135,9 +135,9 @@ let A = e => {
         isSelected: v === e,
         giftStyle: e,
         setSelectedGiftStyle: S,
-        ref: 0 === t ? D : null,
-        onFocus: () => w(true),
-        onBlur: () => w(false)
+        ref: 0 === t ? w : null,
+        onFocus: () => D(true),
+        onBlur: () => D(false)
       }, e))
     })), (0, r.jsx)("div", {
       className: b.__invalid_selectPlanDivider

@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 677601, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => eH,
@@ -255,7 +255,7 @@ class ez extends Chunk647438.PureComponent {
       awaitingRemoteSessionInfo: g,
       currentChannelActivities: b,
       callContainerDimensions: _
-    } = this.props, y = h === eL.AEg.MINIMUM, C = y || h === eL.AEg.NORMAL, v = l && o === eL.WtW.VIDEO, x = (null != (t = null == b ? true : b.length) ? t : 0) > 0 && p.isPrivate();
+    } = this.props, y = h === eL.AEg.MINIMUM, C = y || h === eL.AEg.NORMAL, v = l && o === eL.WtW.VIDEO, O = (null != (t = null == b ? true : b.length) ? t : 0) > 0 && p.isPrivate();
     return this._lastIdleProps = e, (0, r.jsx)(J.Z, eV(eF({
       renderHeader: this.renderHeader,
       renderBottomLeft: this.renderBottomLeft,
@@ -282,7 +282,7 @@ class ez extends Chunk647438.PureComponent {
         mode: o,
         onSelectParticipant: this.handleSelectParticipant,
         onContextMenuParticipant: this.handleContextMenu,
-        showParticipants: s && (!C || x),
+        showParticipants: s && (!C || O),
         popoutType: n,
         awaitingRemoteSessionInfo: g,
         callContainerDimensions: _
@@ -511,7 +511,7 @@ class ez extends Chunk647438.PureComponent {
         let n = e.getGuildId();
         null != n && (0, V.uL)((0, eg.LY)(n)), B.hP(e)
       };
-      null == t || (0, O.R)() ? n() : (0, I.Z)({
+      null == t || (0, x.R)() ? n() : (0, I.Z)({
         onConfirm: n
       })
     }), eB(this, "handleStayOnTop", e => {
@@ -630,7 +630,7 @@ class ez extends Chunk647438.PureComponent {
       } = this.viewProperties;
       return (0, r.jsxs)(r.Fragment, {
         children: [null != i && i.type !== eD.fO.ACTIVITY && i.user.id !== n ? (0, r.jsx)(er.Z, {
-          context: (0, ex.Z)(i.type),
+          context: (0, eO.Z)(i.type),
           userId: i.user.id,
           currentWindow: this.inPopout ? null != e ? e : true : window,
           sliderClassName: eU.volumeSlider,
@@ -730,9 +730,9 @@ let eq = function(e) {
     ref: g
   } = (0, v.ZP)(), {
     ref: b
-  } = (0, v.ZP)(), _ = (0, U.bp)(), O = (0, D.Z)(), j = (0, u.e7)([ep.Z], () => {
+  } = (0, v.ZP)(), _ = (0, U.bp)(), x = (0, D.Z)(), j = (0, u.e7)([ep.Z], () => {
     var e;
-    return (null != (e = null == O ? true : O.channelId) ? e : ep.Z.getVoiceChannelId()) === n.id
+    return (null != (e = null == x ? true : x.channelId) ? e : ep.Z.getVoiceChannelId()) === n.id
   }), {
     participants: I,
     filteredParticipants: T,
@@ -773,7 +773,7 @@ let eq = function(e) {
     y.ZP.updatedUnsyncedSettings({
       callHeaderHeight: e
     })
-  }, []), ei = null != (t = null == q ? true : q.id) ? t : null, ef = (0, P.Z)(ei, n.id), eh = (0, u.e7)([E.Z], () => E.Z.getFetchState(), []), em = (0, x.Z)(eh);
+  }, []), ei = null != (t = null == q ? true : q.id) ? t : null, ef = (0, P.Z)(ei, n.id), eh = (0, u.e7)([E.Z], () => E.Z.getFetchState(), []), em = (0, O.Z)(eh);
   i.useEffect(() => {
     eh === E.O.ERROR && em !== E.O.ERROR && (0, f.showToast)((0, f.createToast)(ek.intl.string(ek.t["AlJyI+"]), f.ToastType.FAILURE))
   }, [eh, em]);
@@ -787,7 +787,7 @@ let eq = function(e) {
       null != t ? ey.ZP.unblockDisplaySleep(t) : e = true
     }
   }, [j, w]);
-  let eb = (0, eO.Z)(n, true),
+  let eb = (0, ex.Z)(n, true),
     {
       hasParticipantsPanel: e_
     } = (0, eZ.Z)({
@@ -795,7 +795,7 @@ let eq = function(e) {
     }),
     eC = (0, M.bn)(d.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK),
     {
-      analyticsLocations: ex
+      analyticsLocations: eO
     } = (0, N.ZP)(Z.Z.CHANNEL_CALL),
     ej = c - eD.oo,
     eS = S.ZP.getEmbeddedActivitiesForChannel(n.id),
@@ -803,7 +803,7 @@ let eq = function(e) {
       theme: eP
     } = (0, f.TCT)();
   return (0, r.jsx)(N.Gt, {
-    value: ex,
+    value: eO,
     children: (0, r.jsx)(C.Z, {
       page: eL.ZY5.CHANNEL_CALL,
       children: (0, r.jsx)(eE.B2, {

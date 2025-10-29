@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 873387, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 88647 **/
+/** chunk id: 873387, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => u
 });
@@ -14,20 +13,20 @@ var Chunk149765 = require("./149765.js"),
 
 function u(e) {
   let t = e.getGuildId(),
-    n = (0, i.e7)([o.ZP, l.default], () => {
+    n = (0, i.e7)([a.ZP, s.default], () => {
       var e, n;
-      let r = l.default.getCurrentUser();
-      return null != (n = null != t && null != r ? null == (e = o.ZP.getMember(t, r.id)) ? true : e.isPending : null) && n
+      let r = s.default.getCurrentUser();
+      return null != (n = null != t && null != r ? null == (e = a.ZP.getMember(t, r.id)) ? true : e.isPending : null) && n
     }),
     {
       messagesDisabled: u
-    } = (0, i.cj)([s.Z], () => {
+    } = (0, i.cj)([o.Z], () => {
       let t = e.isPrivate(),
-        i = s.Z.computePermissions(e),
-        o = r.e$(i, c.Plq.SEND_MESSAGES),
-        l = (0, a.xl)(e);
+        i = o.Z.computePermissions(e),
+        a = r.e$(i, c.Plq.SEND_MESSAGES),
+        s = (0, l.xl)(e);
       return {
-        messagesDisabled: n || !t && !o || l
+        messagesDisabled: n || !t && !a || s
       }
     }, [e, n]);
   return !u

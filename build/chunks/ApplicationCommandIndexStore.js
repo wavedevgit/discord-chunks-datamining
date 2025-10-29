@@ -220,7 +220,7 @@ function er(e) {
     };
     s[e.id] = t
   }
-  for (let e of ("guild" === i.type && u.size > 0 && c.Z.requestMembersById(i.guildId, [...u]), (0, N.nG)(a.application_commands.map(e => ew(e, o)), true))) {
+  for (let e of ("guild" === i.type && u.size > 0 && c.Z.requestMembersById(i.guildId, [...u]), (0, N.nG)(a.application_commands.map(e => eD(e, o)), true))) {
     let t = s[e.applicationId];
     if (null == t) {
       j.error("Command has no matching application");
@@ -428,7 +428,7 @@ class e_ extends(r = Chunk442837.ZP.Store) {
       c = null == r || (null == l ? true : l.hasBaseAccessPermissions) === true,
       u = false !== t.applicationCommands,
       d = false;
-    n.allowFetch && (u && c && null != r && eC(r) && (y.default.track(D.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
+    n.allowFetch && (u && c && null != r && eC(r) && (y.default.track(w.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
       miss: null == i.result,
       size: Object.keys(ep.indices).length
     }), eN(i) && null != r && (null != r.guild_id ? (0, S.j)({
@@ -506,7 +506,7 @@ function em(e, t, n) {
         });
         return
       }
-      n && t && eC(e.channel) && (y.default.track(D.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
+      n && t && eC(e.channel) && (y.default.track(w.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
         miss: null == o.result,
         size: Object.keys(ep.indices).length
       }), eN(o) && (null != e.channel.guild_id ? (0, S.j)({
@@ -526,7 +526,7 @@ function eg(e, t) {
     return null != (t = ep.indices[e]) ? t : V
   });
   return i.useEffect(() => {
-    n && null != e && (t && (y.default.track(D.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
+    n && null != e && (t && (y.default.track(w.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
       miss: null == a.result,
       size: Object.keys(ep.indices).length
     }), eN(a) && (0, S.j)({
@@ -583,17 +583,17 @@ function ev(e, t, n, r) {
     let e = o.filter(e => u.includes(e.id)).sort((e, t) => {
       let n = T.ZP.getScoreWithoutLoadingLatest(c, e);
       return T.ZP.getScoreWithoutLoadingLatest(c, t) - n
-    }).splice(0, w.hz);
+    }).splice(0, D.hz);
     return 0 === e.length ? {
       descriptors: a,
       commands: o,
       sectionedCommands: s,
       loading: l
     } : {
-      descriptors: [v.Tm[w.bi.FRECENCY], ...a],
+      descriptors: [v.Tm[D.bi.FRECENCY], ...a],
       commands: e.concat(o),
       sectionedCommands: [{
-        section: v.Tm[w.bi.FRECENCY],
+        section: v.Tm[D.bi.FRECENCY],
         data: e
       }, ...s],
       loading: l
@@ -652,7 +652,7 @@ function eS(e) {
     installOnDemand: S = false
   } = e, {
     commandTypes: C
-  } = c, N = null == p ? true : p.toLowerCase(), R = null == N ? true : N.split(" "), P = m === A.D.ONLY_TEXT, D = m !== A.D.DENY ? (0, v.Kh)(C, true, P) : [], L = [], M = {
+  } = c, N = null == p ? true : p.toLowerCase(), R = null == N ? true : N.split(" "), P = m === A.D.ONLY_TEXT, w = m !== A.D.DENY ? (0, v.Kh)(C, true, P) : [], L = [], M = {
     permissionContext: c,
     query: N,
     splitQuery: R,
@@ -711,8 +711,8 @@ function eS(e) {
         if (n !== r) return r - n
       }
       return ej(e.section.name, t.section.name)
-    }), D.length > 0 || true === y) {
-    let e = eA(v.Tm[w.bi.BUILT_IN], D, true, true, M);
+    }), w.length > 0 || true === y) {
+    let e = eA(v.Tm[D.bi.BUILT_IN], w, true, true, M);
     null != e && L.push(e)
   }
   let Z = L.flatMap(e => e.data.map(t => k(x({}, t), {
@@ -782,7 +782,7 @@ function eA(e, t, n, r, i) {
 
 function eC(e) {
   var t;
-  return (null == e ? true : e.guild_id) != null || e.type === D.d4z.DM && (null == (t = b.default.getUser(e.getRecipientId())) ? true : t.bot) === true
+  return (null == e ? true : e.guild_id) != null || e.type === w.d4z.DM && (null == (t = b.default.getUser(e.getRecipientId())) ? true : t.bot) === true
 }
 
 function eN(e) {
@@ -805,25 +805,25 @@ function eP(e) {
   }
 }
 
-function ew(e, t) {
+function eD(e, t) {
   var n, r, i, a, o;
   let s = k(x({}, e), {
     description: null != (i = null != (r = e.description_default) ? r : e.description) ? i : "",
     dm_permission: e.dm_permission,
     name: null != (a = e.name_default) ? a : e.name,
-    options: null != (o = null == (n = e.options) ? true : n.map(eD)) ? o : [],
+    options: null != (o = null == (n = e.options) ? true : n.map(ew)) ? o : [],
     permissions: null != e.permissions ? ex(e.permissions, t) : true
   });
   return e.description !== e.description_default && (s.description_localized = e.description), e.name !== e.name_default && (s.name_localized = e.name), s
 }
 
-function eD(e) {
+function ew(e) {
   var t, n, r, i;
   let a = k(x({}, e), {
     choices: null == (t = e.choices) ? true : t.map(eL),
     description: null != (r = e.description_default) ? r : e.description,
     name: null != (i = e.name_default) ? i : e.name,
-    options: null == (n = e.options) ? true : n.map(eD)
+    options: null == (n = e.options) ? true : n.map(ew)
   });
   return e.description !== e.description_default && (a.description_localized = e.description), e.name !== e.name_default && (a.name_localized = e.name), a
 }
@@ -913,8 +913,8 @@ function eU(e, t) {
 function eG(e, t) {
   var n, r, i, a, o, s;
   let l, c;
-  if (t === w.bi.BUILT_IN) return {
-    descriptor: v.Tm[w.bi.BUILT_IN],
+  if (t === D.bi.BUILT_IN) return {
+    descriptor: v.Tm[D.bi.BUILT_IN],
     sectionCommands: (0, v.Kh)([u.yU.CHAT], true, false),
     isGuildInstalled: true,
     isUserInstalled: true

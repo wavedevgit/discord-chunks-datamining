@@ -108,7 +108,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
       })
     })
   },
-  w = () => Object.entries(M).map(e => {
+  D = () => Object.entries(M).map(e => {
     let [t, n] = e;
     return (0, r.jsx)("div", {
       className: v.promoCardContainer,
@@ -146,7 +146,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
       })
     }, t)
   }),
-  D = e => {
+  w = e => {
     let {
       promotionRecurrences: t
     } = e, [n, o] = i.useState(t.length > 1), [l, c] = i.useState([]);
@@ -312,7 +312,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
         let e = new Date,
           t = new Date(e.getFullYear(), e.getMonth() + 1, 0).getDate(),
           n = e.getDate() / t * 100;
-        return l ? (0, r.jsx)(w, {}) : (0, r.jsxs)("div", {
+        return l ? (0, r.jsx)(D, {}) : (0, r.jsxs)("div", {
           className: v.container,
           children: [(0, r.jsx)("div", {
             className: v.progressHeader,
@@ -329,7 +329,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
             className: v.cards,
             children: Object.entries(u).map(e => {
               let [t, n] = e;
-              return (0, r.jsx)(D, {
+              return (0, r.jsx)(w, {
                 promotionRecurrences: n
               }, t)
             })

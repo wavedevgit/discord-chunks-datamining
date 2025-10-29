@@ -1,1 +1,0 @@
-{"id":"162609","type":"experiment","data":{"kind":"user","id":"2024-07_contextual_image_recs_user","label":"Contextual Image Recommendations","defaultConfig":{"imageRecsEnabled":false},"treatments":[{"id":1,"label":"Enable the Contextual Image Recommendations with options","config":{"imageRecsEnabled":true}}]},"fromModule":{"id":"web.js"}}

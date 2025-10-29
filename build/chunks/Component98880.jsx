@@ -145,11 +145,11 @@ function Q(e) {
     }
   }, [t]), {
     name: y,
-    description: x
+    description: g
   } = r.useMemo(() => (0, R.sl)(t, {
     fakeAppIconURL: W
   }), [t]), {
-    trackItemImpressionRef: g
+    trackItemImpressionRef: x
   } = (0, k.Z)({
     applicationId: t.id,
     applicationFlags: (0, R.BQ)(t) ? t.flags : true,
@@ -166,17 +166,17 @@ function Q(e) {
     }, f)
   }, [f, m, h]);
   return m ? (0, l.jsx)("div", {
-    ref: p ? g : true,
+    ref: p ? x : true,
     className: b,
     children: i
   }) : (0, l.jsx)(u.P3F, {
-    innerRef: p ? g : true,
+    innerRef: p ? x : true,
     className: b,
     onClick: n,
     onContextMenu: v,
     "aria-label": B.intl.formatToPlainString(B.t["zLhr9+"], {
       applicationName: y,
-      applicationDescription: x
+      applicationDescription: g
     }),
     children: (0, l.jsx)(u.Rny, {
       children: i
@@ -222,10 +222,10 @@ function J(e) {
   } = e, {
     iconURL: v,
     name: y,
-    description: x
+    description: g
   } = r.useMemo(() => (0, R.sl)(t, {
     fakeAppIconURL: W
-  }), [t]), g = r.useMemo(() => null == x ? null : (0, w.ae)(x), [x]), b = (0, E.ZP)(v, ""), [N, C] = r.useState(false), P = r.useCallback(() => {
+  }), [t]), x = r.useMemo(() => null == g ? null : (0, w.ae)(g), [g]), b = (0, E.ZP)(v, ""), [N, C] = r.useState(false), P = r.useCallback(() => {
     true === a && C(true)
   }, [a]), A = f || (0, R.lf)(t), _ = "large_banner" === n || "medium_banner" === n, O = r.useCallback(() => C(false), []), S = (0, s.e7)([h.Z, I.Z], () => h.Z.inDevModeForApplication(t.id) || I.Z.inTestModeForApplication(t.id), [t.id]), T = (0, R.WA)(t);
   return (0, l.jsxs)(l.Fragment, {
@@ -297,7 +297,7 @@ function J(e) {
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
-          children: g
+          children: x
         })]
       }), "row" === n ? (0, l.jsx)("div", {
         className: V.rowDivider
@@ -325,7 +325,7 @@ function $(e) {
   if (!(null == n ? true : n.isStaff()) && !(null == n ? true : n.isStaffPersonal())) return null;
   let i = (0, R.yJ)(t);
   if (null == i || !(0, R.BQ)(t)) return null;
-  let r = (0, g.fD)(t, i);
+  let r = (0, x.fD)(t, i);
   return null == r ? null : (0, l.jsx)(c.u, {
     __unsupportedReactNodeAsText: r,
     children: (0, l.jsx)("img", {
@@ -380,7 +380,7 @@ function et(e) {
     names: ["embedded_cover"]
   }), s = r.useMemo(() => {
     let e = (0, R.yJ)(t);
-    return null != e && null != e.activity_preview_video_asset_id ? (0, x.Z)(t.id, e.activity_preview_video_asset_id) : null
+    return null != e && null != e.activity_preview_video_asset_id ? (0, g.Z)(t.id, e.activity_preview_video_asset_id) : null
   }, [t]), [c, u] = r.useState(n);
   r.useEffect(() => {
     n && u(true)
@@ -522,7 +522,7 @@ function ea(e) {
     [m, f, h] = (0, s.Wu)([v.ZP, A.Z], () => [v.ZP.isLaunchingActivity(), v.ZP.getLaunchState(n.id, "channel" === t.type ? t.channel.id : true), A.Z.isLaunchingFrame(n.id)]),
     y = null != f && f.isLaunching && f.componentId === p || h,
     {
-      onActivityItemSelected: x,
+      onActivityItemSelected: g,
       activityAction: b,
       buttonVariant: N,
       buttonText: j
@@ -534,10 +534,10 @@ function ea(e) {
       launchingComponentId: p,
       fetchesApplication: c
     });
-  return b === g.JS.START || b === g.JS.JOIN ? o ? (0, l.jsx)(q, Y(G({}, d), {
+  return b === x.JS.START || b === x.JS.JOIN ? o ? (0, l.jsx)(q, Y(G({}, d), {
     sectionName: a,
     application: n,
-    onClick: x,
+    onClick: g,
     disabled: m || h,
     enableVideoBanner: !y,
     children: y ? (0, l.jsx)(u.$jN, {
@@ -565,7 +565,7 @@ function ea(e) {
         size: "md",
         variant: N,
         disabled: m || h,
-        onClick: x,
+        onClick: g,
         "aria-label": B.intl.formatToPlainString(B.t["XjP/R+"], {
           buttonText: j,
           applicationName: n.name

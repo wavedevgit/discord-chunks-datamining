@@ -34,8 +34,8 @@ let v = (0, Chunk647438.createContext)(null),
     } = (0, a.jn)(c.q) || {}, C = null != (S = null != (n = e.validationBehavior) ? n : A) ? S : "native", N = (0, g.N)({
       ...e,
       validationBehavior: C
-    }), R = (0, O.useRef)(null), [P, w] = (0, a.xc)(!e["aria-label"] && !e["aria-labelledby"]), {
-      groupProps: D,
+    }), R = (0, O.useRef)(null), [P, D] = (0, a.xc)(!e["aria-label"] && !e["aria-labelledby"]), {
+      groupProps: w,
       labelProps: L,
       fieldProps: x,
       buttonProps: M,
@@ -46,7 +46,7 @@ let v = (0, Chunk647438.createContext)(null),
       ...B
     } = (0, h.k)({
       ...(0, a.vl)(e),
-      label: w,
+      label: D,
       validationBehavior: C
     }, N, R), [Z, F] = (0, O.useState)(null), V = (0, O.useCallback)(() => {
       R.current && F(R.current.offsetWidth + "px")
@@ -80,7 +80,7 @@ let v = (0, Chunk647438.createContext)(null),
       values: [
         [I, N],
         [u.E, {
-          ...D,
+          ...w,
           ref: R,
           isInvalid: N.isInvalid
         }],

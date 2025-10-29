@@ -41,8 +41,8 @@ let N = {
       nameplate: a,
       nameplateData: R,
       className: P,
-      innerClassName: w,
-      isHighlighted: D,
+      innerClassName: D,
+      isHighlighted: w,
       showStatus: L,
       showPlaceholderUser: x,
       pendingGlobalName: M,
@@ -79,14 +79,14 @@ let N = {
       },
       children: (0, r.jsxs)(c.Rny, {
         className: o()(P, S.nameplatePreview, {
-          [S.nameplatePurchased]: B && !D,
+          [S.nameplatePurchased]: B && !w,
           [S.large]: "large" === G,
           [S.xlarge]: "xlarge" === G,
           [S.inheritWidth]: null != F
         }),
         children: [null != H && (0, r.jsx)(I.Z, {
           nameplate: H,
-          hovered: D,
+          hovered: w,
           placement: v.i.PREVIEW,
           content: x ? true : K
         }, null == a ? true : a.skuId), (0, r.jsxs)("div", {
@@ -114,7 +114,7 @@ let N = {
                 effectDisplayType: Z ? p.F.PLAIN : p.F.ANIMATED,
                 loop: true
               }),
-              innerClassName: w,
+              innerClassName: D,
               withDisplayNameStyles: null != J
             })
           }) : null, (0, r.jsxs)("div", {

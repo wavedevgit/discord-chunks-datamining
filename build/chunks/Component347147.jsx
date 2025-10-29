@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 347147, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -29,7 +29,7 @@ let y = Chunk647438.memo(function(e) {
       minZoom: C = 1,
       maxZoom: v = 5
     } = e,
-    x = function(e, t) {
+    O = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -45,13 +45,13 @@ let y = Chunk647438.memo(function(e) {
       return i
     }(e, ["enableZoom", "initialZoomLevel", "minZoom", "maxZoom"]);
   let {
-    streamId: O,
+    streamId: x,
     onResize: E,
     wrapperClassName: j,
     videoComponent: S,
     mirror: P,
     paused: I
-  } = x, [Z, T] = i.useState(false), [N, A] = i.useState(null), [w, M] = i.useState(null), [R, D] = i.useState(0), [L, k] = i.useState({
+  } = O, [Z, T] = i.useState(false), [N, A] = i.useState(null), [w, M] = i.useState(null), [R, D] = i.useState(0), [L, k] = i.useState({
     x: 0,
     y: 0
   }), [U, B] = i.useState(null), [F, V] = i.useState(null), [H, G] = i.useState(false), [W, z] = i.useState(_(y, C, v)), [q, Y] = i.useState(false), [K, X] = i.useState(16 / 9), [J, Q] = i.useState(false), [$, ee] = i.useState(false), et = i.useRef(new o.V7), en = i.useRef(new o.V7), er = i.useRef(new o.V7), ei = i.useRef(null), el = i.useRef(null), ea = i.useRef(null), eo = 1 !== W, es = i.useCallback(e => {
@@ -131,12 +131,12 @@ let y = Chunk647438.memo(function(e) {
       x: 0,
       y: 0
     })
-  }, [ed]), ex = i.useCallback(e => {
+  }, [ed]), eO = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), z(1), k({
       x: 0,
       y: 0
     })
-  }, []), eO = i.useCallback(() => {
+  }, []), ex = i.useCallback(() => {
     ep()
   }, [ep]), eE = i.useCallback(() => {
     G(false), ef()
@@ -194,8 +194,8 @@ let y = Chunk647438.memo(function(e) {
   }, [eu, eo, W]), [eo, W]), (0, d.zq)(() => {
     et.current.stop(), en.current.stop(), er.current.stop()
   }), i.useEffect(() => {
-    null != O && (0, f.N)(O, l && eo ? W : 1)
-  }, [l, eo, O, W]);
+    null != x && (0, f.N)(x, l && eo ? W : 1)
+  }, [l, eo, x, W]);
   let eN = i.useMemo(() => {
       let e = eu(L.x, L.y);
       return {
@@ -240,7 +240,7 @@ let y = Chunk647438.memo(function(e) {
     onWheel: ey,
     children: (0, r.jsxs)(c.P3F, {
       onClick: eb,
-      children: [null != O && (0, r.jsxs)(r.Fragment, {
+      children: [null != x && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: a()(b.videoContainer, b.zoomed),
           style: eN,
@@ -261,7 +261,7 @@ let y = Chunk647438.memo(function(e) {
               })
             }
             return e
-          }({}, x), n = n = {
+          }({}, O), n = n = {
             onResize: es,
             wrapperClassName: true
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -276,7 +276,7 @@ let y = Chunk647438.memo(function(e) {
           }), t))
         }), l && (0, r.jsx)(c.P3F, {
           onClick: eT,
-          onMouseEnter: eO,
+          onMouseEnter: ex,
           onMouseLeave: eE,
           children: (0, r.jsxs)("div", {
             ref: el,
@@ -291,7 +291,7 @@ let y = Chunk647438.memo(function(e) {
               className: a()(b.minimapVideo, {
                 [g.mirror]: P
               }),
-              streamId: O,
+              streamId: x,
               paused: I,
               reportContainerResized: false
             }), (0, r.jsx)("div", {
@@ -304,7 +304,7 @@ let y = Chunk647438.memo(function(e) {
         className: a()(b.zoomControls, {
           [b.fadeOut]: !J
         }),
-        onMouseEnter: eO,
+        onMouseEnter: ex,
         onMouseLeave: eE,
         onClick: ej,
         children: [W > 1 && (0, r.jsxs)("div", {
@@ -337,7 +337,7 @@ let y = Chunk647438.memo(function(e) {
           position: "top",
           children: (0, r.jsx)(c.hU, {
             icon: c.DuK,
-            onClick: ex,
+            onClick: eO,
             disabled: 1 === W,
             variant: "secondary",
             size: "sm",

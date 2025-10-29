@@ -7,10 +7,10 @@ require.d(exports, {
   Ev: () => s,
   Fu: () => h,
   GM: () => L,
-  Gu: () => w,
+  Gu: () => D,
   JT: () => p,
   K8: () => O,
-  OF: () => D,
+  OF: () => w,
   P9: () => b,
   Pc: () => S,
   S4: () => I,
@@ -92,8 +92,8 @@ let N = {
     supported_locales: []
   },
   P = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
-  w = [...P, Chunk981631.d4z.GUILD_VOICE],
-  D = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
+  D = [...P, Chunk981631.d4z.GUILD_VOICE],
+  w = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
 var L = function(e) {
   return e.NORMAL = "normal", e.FULL_SCREEN = "full-screen", e
 }({});

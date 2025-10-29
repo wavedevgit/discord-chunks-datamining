@@ -136,7 +136,7 @@ function V(e) {
       isActivityInTextChannel: o,
       users: s
     } = e;
-    return ei && null != B && ((null == X ? true : X.type) === M.fO.ACTIVITY || o) ? (null == (t = B.config) ? true : t.useInteractivePIP) ? (0, r.jsx)(w.of, {
+    return ei && null != B && ((null == X ? true : X.type) === M.fO.ACTIVITY || o) ? (null == (t = B.config) ? true : t.useInteractivePIP) ? (0, r.jsx)(D.of, {
       onJumpToChannel: eo,
       applicationId: B.applicationId,
       channel: _,
@@ -148,7 +148,7 @@ function V(e) {
       isExpanded: C,
       hideExpandedButton: o,
       embeddedActivity: B
-    }) : o ? (0, r.jsx)(w.q5, {
+    }) : o ? (0, r.jsx)(D.q5, {
       idle: a,
       onMouseMove: n,
       onMouseDown: n,
@@ -167,7 +167,7 @@ function V(e) {
         onMouseLeave: i,
         className: k.clickShield,
         onDoubleClick: eo
-      }), (0, r.jsx)(w.YB, {
+      }), (0, r.jsx)(D.YB, {
         idle: a,
         onMouseMove: n,
         onMouseDown: n,
@@ -182,7 +182,7 @@ function V(e) {
   }
   if (i.useEffect(() => {
       if (null != Z) {
-        let e = ei ? D.cE.PIP : D.cE.FOCUSED;
+        let e = ei ? w.cE.PIP : w.cE.FOCUSED;
         c.Z.dispatch({
           type: "ACTIVITY_LAYOUT_MODE_UPDATE",
           layoutMode: e,
@@ -234,7 +234,7 @@ function V(e) {
           })
         }) : (0, r.jsx)(P.J, {
           allowPopups: (0, N.h)(H),
-          referrerPolicy: D.um.has(B.applicationId) ? "no-referrer" : "origin",
+          referrerPolicy: w.um.has(B.applicationId) ? "no-referrer" : "origin",
           url: B.url,
           queryParams: eu,
           className: o()(k.iframe, {
@@ -243,7 +243,7 @@ function V(e) {
             [k.pipNonInteractive]: ei && !(null == (n = B.config) ? true : n.useInteractivePIP)
           }),
           shouldRefocus: !ei && W
-        }), !ei && null != _ && (0, r.jsx)(w.Ds, {
+        }), !ei && null != _ && (0, r.jsx)(D.Ds, {
           participantsOpen: J,
           showToggleParticipants: false,
           channelId: _.id

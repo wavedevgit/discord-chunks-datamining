@@ -69,12 +69,12 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = (e, t) => {
+let w = (e, t) => {
     var n;
     return !!(null == (n = e.discounts) ? true : n.some(e => e.type === t))
   },
@@ -84,7 +84,7 @@ let D = (e, t) => {
   };
 
 function x(e, t, n, r) {
-  let i = D(e, d.eW.PREMIUM_TRIAL);
+  let i = w(e, d.eW.PREMIUM_TRIAL);
   switch (e.subscriptionPlanId) {
     case T.Xh.PREMIUM_MONTH_LEGACY:
     case T.Xh.PREMIUM_YEAR_LEGACY:
@@ -155,7 +155,7 @@ function M(e) {
       text: A.intl.format(A.t.UDop9c, {}),
       "aria-label": A.intl.string(A.t.P68ePO),
       tooltipClassName: C.invoiceItemTooltip,
-      children: e => (0, r.jsx)(u.idN, w(R({
+      children: e => (0, r.jsx)(u.idN, D(R({
         size: "md",
         color: "currentColor"
       }, e), {
@@ -192,7 +192,7 @@ function k(e) {
       text: n,
       "aria-label": i,
       tooltipClassName: C.invoiceItemTooltip,
-      children: e => (0, r.jsx)(u.idN, w(R({
+      children: e => (0, r.jsx)(u.idN, D(R({
         size: "md",
         color: "currentColor"
       }, e), {
@@ -237,7 +237,7 @@ function U(e) {
   l()(null != s, "Expected newPlanInvoiceItem");
   let c = o.find(e => !(0, g.Z8)(e.subscriptionPlanId) && e.amount < 0),
     u = o.find(e => null == e.subscriptionPlanId && null != e.discounts && e.discounts.find(e => e.type === d.eW.PREMIUM_LEGACY_UPGRADE_PROMOTION)),
-    f = D(s, d.eW.PREMIUM_TRIAL),
+    f = w(s, d.eW.PREMIUM_TRIAL),
     _ = L(s, d.eW.SUBSCRIPTION_PLAN),
     p = s.quantity * _,
     h = s.amount + (null != c ? c.amount : 0) - p + (null != u ? u.amount : 0),

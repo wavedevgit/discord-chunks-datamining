@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 190210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => er
@@ -137,10 +137,10 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     setEditorRef: ey,
     autoCompletePosition: eC,
     children: ev,
-    disableThemedBackground: ex = false,
-    emojiPickerCloseOnModalOuterClick: eO,
+    disableThemedBackground: eO = false,
+    emojiPickerCloseOnModalOuterClick: ex,
     parentModalKey: eE
-  } = e, ej = O.Z.useField("channelDrafts")[D.id], eS = null != (l = null == ej ? true : ej.title) ? l : "", eP = null == ej ? true : ej.heroFile, eI = null == (o = null == ej ? true : ej.publish) || o, eZ = null == (u = null == ej ? true : ej.createThread) || u;
+  } = e, ej = x.Z.useField("channelDrafts")[D.id], eS = null != (l = null == ej ? true : ej.title) ? l : "", eP = null == ej ? true : ej.heroFile, eI = null == (o = null == ej ? true : ej.publish) || o, eZ = null == (u = null == ej ? true : ej.createThread) || u;
   s()(null != k, "chat input type must be set");
   let {
     analyticsLocations: eT
@@ -174,7 +174,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     let t = e => {
         if (e.shouldClear) {
           var t;
-          (0, O.c)(D.id, {
+          (0, x.c)(D.id, {
             title: "",
             heroFile: null
           }), null == (t = ew.current) || t.blur()
@@ -299,7 +299,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     var e;
     if (null == eP) return;
     let t = null == (e = R.Z.getUploads(D.id, k.drafts.type).find(e => e.filename === eP.name)) ? true : e.id;
-    null != t && m.Z.remove(D.id, t, w.d.ChannelMessage), (0, O.c)(D.id, {
+    null != t && m.Z.remove(D.id, t, w.d.ChannelMessage), (0, x.c)(D.id, {
       heroFile: null
     })
   }, [D.id, eP, k.drafts.type]);
@@ -315,7 +315,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           ref: eM,
           onScroll: e2,
           className: a()(Q.announcementScrollableContainer, {
-            [Q.themedBackground]: !ex
+            [Q.themedBackground]: !eO
           }),
           children: (0, r.jsxs)("div", {
             className: a()(Q.inner, J.inner),
@@ -332,7 +332,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                   onRemoveHeroImage: t_
                 }) : null, null != eP ? null : (0, r.jsx)(eo, {
                   channel: D,
-                  onImageUploaded: e => (0, O.c)(D.id, {
+                  onImageUploaded: e => (0, x.c)(D.id, {
                     heroFile: e
                   }),
                   onFocus: () => ts(true)
@@ -343,7 +343,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                   className: J.titleInput,
                   placeholder: X.intl.string(X.t.Z8fYjO),
                   value: eS,
-                  onChange: e => (0, O.c)(D.id, {
+                  onChange: e => (0, x.c)(D.id, {
                     title: e.target.value
                   })
                 })]
@@ -468,7 +468,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
               })
             })
           })]
-        }), (0, r.jsx)(x.Z, {
+        }), (0, r.jsx)(O.Z, {
           targetRef: eN,
           ref: e$,
           channel: D,
@@ -497,7 +497,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
         onSelectEmoji: ti,
         onSelectSticker: ta,
         channel: D,
-        closeOnModalOuterClick: eO,
+        closeOnModalOuterClick: ex,
         parentModalKey: eE,
         position: "top",
         align: "right",
@@ -512,7 +512,7 @@ function ei(e) {
   let {
     channelId: i,
     canCreateThread: l
-  } = e, a = O.Z.useField("channelDrafts")[i], o = null == (t = null == a ? true : a.createThread) || t, s = null == (n = null == a ? true : a.publish) || n;
+  } = e, a = x.Z.useField("channelDrafts")[i], o = null == (t = null == a ? true : a.createThread) || t, s = null == (n = null == a ? true : a.publish) || n;
   return (0, r.jsxs)(h.v2r, {
     "aria-label": X.intl.string(X.t["9WnJyo"]),
     navId: "send-announcement-options",
@@ -524,7 +524,7 @@ function ei(e) {
       checked: l && o,
       disabled: !l,
       action: () => {
-        (0, O.c)(i, {
+        (0, x.c)(i, {
           createThread: !o
         })
       }
@@ -533,7 +533,7 @@ function ei(e) {
       label: X.intl.string(X.t.MFGE51),
       checked: s,
       action: () => {
-        (0, O.c)(i, {
+        (0, x.c)(i, {
           publish: !s
         })
       }

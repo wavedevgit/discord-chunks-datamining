@@ -78,7 +78,7 @@ function L(e) {
     application_id: r.id,
     section_name: Z,
     source: C.Z.lastShownEntrypoint()
-  }, V = x.default.getCurrentUser(), W = (0, f.Z)({
+  }, V = g.default.getCurrentUser(), W = (0, f.Z)({
     id: r.id,
     label: O.intl.string(O.t["+NP/b2"])
   }), F = (0, P.P)({
@@ -94,7 +94,7 @@ function L(e) {
         }) : (0, p.J)(S({
           id: r.id
         }, M));
-        (0, b.JG)(e, () => (0, s.showToast)((0, s.createToast)(O.intl.string(O.t["L/PwZf"]), s.ToastType.SUCCESS))), g.default.track(_.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
+        (0, b.JG)(e, () => (0, s.showToast)((0, s.createToast)(O.intl.string(O.t["L/PwZf"]), s.ToastType.SUCCESS))), x.default.track(_.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: r.id,
           source: k
         })

@@ -23,8 +23,8 @@ function h(e) {
     application: h,
     onClick: v,
     query: y,
-    searchResultsPosition: x
-  } = e, g = l.useCallback(e => {
+    searchResultsPosition: g
+  } = e, x = l.useCallback(e => {
     if ((0, s.BQ)(h)) {
       let t = h instanceof o.ZP ? h : o.ZP.createFromServer(h);
       (0, a.vq)(e, e => (0, i.jsx)(u.Z, function(e) {
@@ -64,7 +64,7 @@ function h(e) {
     applicationId: h.id,
     commandId: null == n ? true : n.id,
     query: y,
-    searchResultsPosition: x
+    searchResultsPosition: g
   });
   return (0, i.jsx)(r.P3F, {
     className: m.clickable,
@@ -72,7 +72,7 @@ function h(e) {
       E.current = e
     },
     onClick: v,
-    onContextMenu: g,
+    onContextMenu: x,
     children: (0, i.jsxs)(r.Rny, {
       className: m.focusBlock,
       children: [(0, i.jsx)(d.Z, {

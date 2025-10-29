@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 974251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H
@@ -113,18 +113,18 @@ let H = Chunk647438.memo(function(e) {
       Z.S.unsubscribe(D.CkL.UPLOAD_FILE, e)
     }
   });
-  let eg = (0, x.NE)(G),
-    eb = (0, x.Xu)(G),
-    e_ = !O.dN.useSetting() && !(0, T.isAndroidWeb)() && null != window.ResizeObserver,
+  let eg = (0, O.NE)(G),
+    eb = (0, O.Xu)(G),
+    e_ = !x.dN.useSetting() && !(0, T.isAndroidWeb)() && null != window.ResizeObserver,
     ey = (0, C.UI)(null != G ? G : true),
     eC = (0, p.qB)(),
     ev = (0, v.Us)({
       location: "ChannelAttachButton"
     }),
-    ex = f.C.useExperiment({
+    eO = f.C.useExperiment({
       location: "ChannelAttachButton"
     }).enableAIFeatures,
-    eO = null != (l = null == et ? true : et.length) ? l : 0,
+    ex = null != (l = null == et ? true : et.length) ? l : 0,
     eE = (0, R.Z)({
       canAttachFiles: ep,
       canStartThreads: eg || eb,
@@ -133,12 +133,12 @@ let H = Chunk647438.memo(function(e) {
       canUseApplicationCommands: !Y,
       channel: G,
       activities: Q,
-      newClipsCount: eO,
+      newClipsCount: ex,
       canPostPolls: ey,
       canLaunchActivities: eC,
       appContext: K,
       canSendScheduledMessages: ev,
-      canSummarizeThreads: ex
+      canSummarizeThreads: eO
     });
   if (0 === eE.length) return null;
   let ej = (0, r.jsx)(c.svS, {

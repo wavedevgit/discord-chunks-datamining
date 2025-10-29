@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 352978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => f,
@@ -28,7 +28,7 @@ let h = Chunk647438.memo(function(e) {
     videoSpinnerContext: _,
     userId: y,
     streamKey: C
-  } = e, [v, x] = l.useState(true);
+  } = e, [v, O] = l.useState(true);
   (0, u.Z)({
     location: "VideoStream",
     videoSpinnerContext: _,
@@ -38,7 +38,7 @@ let h = Chunk647438.memo(function(e) {
     paused: g
   });
   let {
-    onReady: O
+    onReady: x
   } = (0, c.Z)({
     streamId: t,
     userId: y,
@@ -47,8 +47,8 @@ let h = Chunk647438.memo(function(e) {
     streamKey: C,
     paused: g
   }), E = l.useCallback(() => {
-    x(false), O()
-  }, [O]);
+    O(false), x()
+  }, [x]);
   return (0, i.jsxs)("div", {
     className: o()(p.wrapper, r),
     children: [null != t && (0, i.jsx)(a, {

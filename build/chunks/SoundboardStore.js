@@ -46,11 +46,11 @@ function P() {
   O.clear(), C.clear()
 }
 
-function w() {
+function D() {
   T = 1
 }
 
-function D(e) {
+function w(e) {
   let {
     updates: t
   } = e;
@@ -260,7 +260,7 @@ class q extends(r = Chunk442837.ZP.Store) {
 E(q, "displayName", "SoundboardStore");
 let X = new q(Chunk570140.Z, {
   LOGOUT: R,
-  GUILD_SOUNDBOARD_FETCH: w,
+  GUILD_SOUNDBOARD_FETCH: D,
   GUILD_SOUNDBOARD_SOUND_CREATE: x,
   GUILD_SOUNDBOARD_SOUND_UPDATE: x,
   GUILD_SOUNDBOARD_SOUND_DELETE: k,
@@ -274,7 +274,7 @@ let X = new q(Chunk570140.Z, {
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: U,
   SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FETCH: G,
   SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_SUCCESS: B,
-  SOUNDBOARD_SOUNDS_RECEIVED: D,
+  SOUNDBOARD_SOUNDS_RECEIVED: w,
   GUILD_DELETE: L,
   AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: K,
   OVERLAY_INITIALIZE: z

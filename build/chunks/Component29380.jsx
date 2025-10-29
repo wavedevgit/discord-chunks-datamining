@@ -74,12 +74,12 @@ function b(e) {
       disabled: Z,
       loading: _,
       onClick: () => {
-        O(true), T(), u.default.track(x.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+        O(true), T(), u.default.track(g.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
           application_id: n.id,
           button_action: m._y.USE_APP_COMMAND
         })
       },
-      "aria-label": g.intl.formatToPlainString(g.t["XjP/R+"], {
+      "aria-label": x.intl.formatToPlainString(x.t["XjP/R+"], {
         buttonText: R,
         applicationName: n.name
       }),

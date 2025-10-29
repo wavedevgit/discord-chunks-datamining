@@ -90,7 +90,7 @@ var r, Chunk913527 = require("./913527.js"),
   Chunk231338 = require("./231338.js"),
   Chunk65154 = require("./65154.js");
 
-function ew(e, t, n) {
+function eD(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -99,14 +99,14 @@ function ew(e, t, n) {
   }) : e[t] = n, e
 }
 
-function eD(e) {
+function ew(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      ew(e, t, n[t])
+      eD(e, t, n[t])
     })
   }
   return e
@@ -640,7 +640,7 @@ let eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           currentUser: n
         } = e, r = null != (t = eh.Z.paymentSources) ? t : {};
-        return w.Z.getIsTargeted() && !(0, eO.I5)(n) && 0 !== Object.keys(r).length
+        return D.Z.getIsTargeted() && !(0, eO.I5)(n) && 0 !== Object.keys(r).length
       }
     },
     [Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR]: {
@@ -700,7 +700,7 @@ function e0() {
         premiumSubscription: Chunk913527,
         selectedGuildId: a
       });
-      eH = ex(eD({}, eV), {
+      eH = ex(ew({}, eV), {
         type: require,
         metadata: Chunk442837
       });
@@ -780,7 +780,7 @@ class tn extends(r = Chunk442837.ZP.Store) {
     return eX(e)
   }
 }
-ew(tn, "displayName", "NoticeStore");
+eD(tn, "displayName", "NoticeStore");
 let tr = new tn(Chunk570140.Z, {
   CURRENT_USER_UPDATE: e0,
   MEDIA_ENGINE_SET_AUDIO_ENABLED: e0,

@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   XX: () => U,
@@ -149,7 +149,7 @@ let F = (0, Chunk888651.$)(function(e) {
     hangStatusActivity: em,
     requestToStreamActivity: eg,
     showHangStatus: eb
-  } = e, e_ = i.useRef(null), [ey, eC] = i.useState(false), ev = i.useRef(null), [ex, eO] = i.useState(false), [eE, ej] = i.useState(false), [eS, eP] = i.useState(false), [eI, eZ] = i.useState(false), eT = eE || eI || eS, eN = ex || eT, eA = (null == eg ? true : eg.session_id) != null, ew = () => {
+  } = e, e_ = i.useRef(null), [ey, eC] = i.useState(false), ev = i.useRef(null), [eO, ex] = i.useState(false), [eE, ej] = i.useState(false), [eS, eP] = i.useState(false), [eI, eZ] = i.useState(false), eT = eE || eI || eS, eN = eO || eT, eA = (null == eg ? true : eg.session_id) != null, ew = () => {
     eC(!ey)
   }, eM = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
@@ -158,12 +158,12 @@ let F = (0, Chunk888651.$)(function(e) {
     (ee || eb || eA) && (null == el || el(f.id))
   }, eD = e => {
     e ? ev.current = setTimeout(() => {
-      eO(true)
+      ex(true)
     }, 150 * !!eo) : clearTimeout(ev.current)
   };
   i.useEffect(() => () => clearTimeout(ev.current), []);
   let eL = e => {
-      e && eO(false)
+      e && ex(false)
     },
     ek = () => {
       if (!(ee && (0, C.p9)(U, A.Z, Z.Z, T.Z, b.default)[0])) return;
@@ -192,7 +192,7 @@ let F = (0, Chunk888651.$)(function(e) {
         }))
       })
     },
-    eB = e => ef ? (0, r.jsx)(O.$, k(L({}, e), {
+    eB = e => ef ? (0, r.jsx)(x.$, k(L({}, e), {
       channel: U,
       setIsHangStatusInputFocused: ej,
       setIsEmojiPickerOpen: eZ
@@ -205,7 +205,7 @@ let F = (0, Chunk888651.$)(function(e) {
       userId: f.id,
       channel: U
     }),
-    eV = () => (0, h.dl)() && (0, h.zd)(U.id) ? null : (0, r.jsx)(x.Z, {
+    eV = () => (0, h.dl)() && (0, h.zd)(U.id) ? null : (0, r.jsx)(O.Z, {
       user: f,
       channel: U,
       onWatch: ek,

@@ -5,7 +5,7 @@ require.d(exports, {
   $W: () => ee,
   Ad: () => j,
   BH: () => R,
-  Cs: () => D,
+  Cs: () => w,
   G1: () => O,
   IC: () => q,
   OT: () => Q,
@@ -131,13 +131,13 @@ let O = e => (null == e ? true : e.premiumType) != null,
     var t;
     return (null == (t = C(e, h.tuJ.DEFAULT)) ? true : t.amount) === 0
   },
-  w = e => e.reduce((e, t) => null != t && t.type === i.Z.VARIANTS_GROUP && null != t.variants ? (0, r.concat)(e, t.variants.map(e => y(E({}, e), {
+  D = e => e.reduce((e, t) => null != t && t.type === i.Z.VARIANTS_GROUP && null != t.variants ? (0, r.concat)(e, t.variants.map(e => y(E({}, e), {
     variantGroupStoreListingId: t.storeListingId,
     eligibleOffers: t.eligibleOffers
   }))) : (e.push(t), e), []),
-  D = (e, t) => {
+  w = (e, t) => {
     let n = (0, r.flatMap)([...e.values()], "products");
-    return (0, r.uniqBy)(t ? w(n) : n, "storeListingId")
+    return (0, r.uniqBy)(t ? D(n) : n, "storeListingId")
   },
   L = (e, t) => {
     if (t === i.Z.AVATAR_DECORATION) {
@@ -155,7 +155,7 @@ let O = e => (null == e ? true : e.premiumType) != null,
     return []
   },
   x = (e, t) => {
-    let n = D(e, true);
+    let n = w(e, true);
     if (t === i.Z.AVATAR_DECORATION) {
       let e = (0, r.flatMap)(n, "items").filter(c.M);
       return (0, r.uniqBy)(e, "skuId")

@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   B0: () => R,
-  Hc: () => D,
+  Hc: () => w,
   J8: () => L,
   Q6: () => N,
   V9: () => k,
-  WD: () => w,
+  WD: () => D,
   Zt: () => T,
   Zv: () => A,
   _V: () => C,
@@ -94,7 +94,7 @@ let {
   name: e.name,
   stickers: e.stickers,
   previewSticker: T(e)
-}), w = (e, t) => e === _.yr.ANIMATE_ON_INTERACTION ? t : e !== _.yr.NEVER_ANIMATE, D = (e, t, n, r) => {
+}), D = (e, t) => e === _.yr.ANIMATE_ON_INTERACTION ? t : e !== _.yr.NEVER_ANIMATE, w = (e, t, n, r) => {
   if (s.Z.getUploadCount(n, r) > 0) returntrue;
   let i = u.Z.getStickerPreview(n, r);
   if (null != i && i.length > 0) returntrue;

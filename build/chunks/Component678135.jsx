@@ -38,8 +38,8 @@ function T(e) {
     pendingAccentColor: N,
     pendingBio: R,
     pendingPronouns: P,
-    pendingAvatar: w,
-    pendingAvatarDecoration: D,
+    pendingAvatar: D,
+    pendingAvatarDecoration: w,
     pendingNickname: L,
     pendingGlobalName: x,
     pendingThemeColors: M,
@@ -58,7 +58,7 @@ function T(e) {
     hideExampleButton: z = false,
     interactive: q = true
   } = e, X = (0, c.ZP)(i.id, null == T ? true : T.id), Q = (0, o.e7)([p.ZP], () => null != T ? p.ZP.getMember(T.id, i.id) : null), J = (0, h.Ys)({
-    pendingValue: D,
+    pendingValue: w,
     userValue: null == i ? true : i.avatarDecoration,
     guildValue: null == Q ? true : Q.avatarDecoration,
     guildId: null == T ? true : T.id
@@ -69,7 +69,7 @@ function T(e) {
     userId: null == i ? true : i.id,
     guildId: null == T ? true : T.id,
     avatarDecorationOverride: J,
-    avatarOverride: w,
+    avatarOverride: D,
     size: s.EFr.SIZE_80,
     showPending: true
   }), et = (0, h.Ys)({
@@ -130,7 +130,7 @@ function T(e) {
       user: i,
       displayProfile: X,
       guild: T,
-      pendingAvatar: w,
+      pendingAvatar: D,
       pendingNickname: L,
       pendingGlobalName: x,
       pendingBio: R,

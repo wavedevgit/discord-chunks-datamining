@@ -144,11 +144,11 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           object: "" === o ? k.qAy.STICKER_PICKER_VIEW_ALL : k.qAy.STICKER_SEARCH_VIEW_ALL
         });
         if (null != s && !(0, A.kl)(s, r, n)) {
-          let e = (0, w.J8)(s);
+          let e = (0, D.J8)(s);
           (0, A.cO)(s, r, n) === A.eb.SENDABLE_WITH_PREMIUM && (0, S.f)(true), e && A.eb.SENDABLE_WITH_BOOSTED_GUILD;
           return
         }
-        if (i) return void((0, w.gM)(s.id) ? (0, C.hW)(s.id) : ((0, N.cQ)({
+        if (i) return void((0, D.gM)(s.id) ? (0, C.hW)(s.id) : ((0, N.cQ)({
           sticker: s,
           location: H(F({}, l), {
             object: k.qAy.STICKER
@@ -296,10 +296,10 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             "aria-label": U.intl.formatToPlainString(U.t["7lLCjZ"], {
               categoryName: e.name
             }),
-            icon: (0, r.jsx)(D.Z, {
+            icon: (0, r.jsx)(w.Z, {
               disableAnimation: true,
               size: ec,
-              sticker: (0, w.Zt)(e)
+              sticker: (0, D.Zt)(e)
             }),
             isCollapsed: t.has(e.id),
             onClick: () => K(e.id),
@@ -356,8 +356,8 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       stickersGrid: T,
       channel: S
     } = e, A = i.useRef(false), C = i.useRef(null), [N, P] = h.ZN.useStore(e => [e.activeCategoryIndex, e.inspectedExpressionPosition], a.X), {
-      analyticsLocations: w
-    } = (0, f.ZP)(d.Z.STICKER_PICKER), D = (0, m.Iu)(e => e.searchQuery), L = (0, o.e7)([R.Z], () => R.Z.getPremiumPacks()), {
+      analyticsLocations: D
+    } = (0, f.ZP)(d.Z.STICKER_PICKER), w = (0, m.Iu)(e => e.searchQuery), L = (0, o.e7)([R.Z], () => R.Z.getPremiumPacks()), {
       renderRow: M,
       renderSection: k,
       renderSectionFooter: j,
@@ -385,10 +385,10 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       listRef: C,
       onActiveCategoryIndexChange: h.ZN.setActiveCategoryIndex,
       scrollOffset: eo,
-      searchQuery: D
+      searchQuery: w
     });
     return (0, E.Xs)({
-      searchQuery: D,
+      searchQuery: w,
       activeCategoryIndex: N,
       listRef: C
     }), i.useImperativeHandle(t, () => ({
@@ -428,7 +428,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         }
       }
     }), []), (0, r.jsx)(f.Gt, {
-      value: w,
+      value: D,
       children: (0, r.jsxs)("div", {
         className: G.wrapper,
         children: [null != l && 0 === l.sendable.length && 0 === l.sendableWithPremium.length ? (0, r.jsx)(c.Z, {

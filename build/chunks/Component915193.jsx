@@ -1,7 +1,7 @@
-/** Chunk was on 49062 **/
+/** Chunk was on 70522 **/
 /** chunk id: 915193, original params: e,n,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk452438 = require("./452438.js");
 
-function h(e) {
+function p(e) {
   let {
     color: n,
     className: r
@@ -52,7 +52,7 @@ function h(e) {
   })
 }
 
-function b(e, n) {
+function h(e, n) {
   let r = (0, i.e7)([c.default], () => c.default.getCurrentUser());
   return null == r || n.ownerId !== r.id || e.id === r.id ? null : (0, t.jsx)(o.sNh, {
     id: "make-dm-owner",
@@ -60,7 +60,7 @@ function b(e, n) {
     label: u.intl.string(u.t["6t3CyN"]),
     action: () => {
       (0, o.h7j)(i => {
-        var c, b;
+        var c, h;
         return (0, t.jsxs)(o.ConfirmModal, (c = function(e) {
           for (var n = 1; n < arguments.length; n++) {
             var r = null != arguments[n] ? arguments[n] : {},
@@ -84,8 +84,8 @@ function b(e, n) {
           confirmText: u.intl.string(u.t["cY+Oob"]),
           cancelText: u.intl.string(u.t["ETE/oC"]),
           onConfirm: () => l.Z.setDMOwner(n.id, e.id)
-        }, i), b = b = {
-          children: [(0, t.jsx)(h, {
+        }, i), h = h = {
+          children: [(0, t.jsx)(p, {
             color: s.Z.unsafe_rawColors.PRIMARY_300.css
           }), (0, t.jsxs)("div", {
             className: m.fromToWrapper,
@@ -119,15 +119,15 @@ function b(e, n) {
               }, r)
             })
           })]
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(b)) : (function(e, n) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(h)) : (function(e, n) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var t = Object.getOwnPropertySymbols(e);
             r.push.apply(r, t)
           }
           return r
-        })(Object(b)).forEach(function(e) {
-          Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(b, e))
+        })(Object(h)).forEach(function(e) {
+          Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(h, e))
         }), c))
       })
     }

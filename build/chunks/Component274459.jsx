@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 274459, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -26,7 +26,7 @@ function b(e) {
   } = e, {
     emoji: b,
     sentAt: _
-  } = n, y = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), [C, v] = i.useState(true), x = !y, O = (0, o.Yzy)(C, {
+  } = n, y = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), [C, v] = i.useState(true), O = !y, x = (0, o.Yzy)(C, {
     from: {
       rotate: false
     },
@@ -47,11 +47,11 @@ function b(e) {
   return (i.useEffect(() => {
     let e;
     return Date.now() - _ >= m ? (0, d.H)(t) : e = setTimeout(() => {
-      v(false), x && (0, d.H)(t)
-    }, x ? h : f), () => {
+      v(false), O && (0, d.H)(t)
+    }, O ? h : f), () => {
       null != e && clearTimeout(e)
     }
-  }, [_, t, x]), x) ? null : O((e, t) => {
+  }, [_, t, O]), O) ? null : x((e, t) => {
     var n;
     let {
       rotate: i

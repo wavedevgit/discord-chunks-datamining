@@ -43,15 +43,15 @@ function I(e) {
     return null != (e = (0, b.jD)(n)) ? e : ""
   }, [n]), f = (0, o.e7)([c.Z], () => c.Z.inDevModeForApplication(n.id)), {
     isSlideReady: h
-  } = (0, N.hH)(), [y, x] = l.useState(false);
+  } = (0, N.hH)(), [y, g] = l.useState(false);
   l.useEffect(() => {
-    h && x(true)
+    h && g(true)
   }, [h]);
-  let g = null != r;
+  let x = null != r;
   return (0, i.jsxs)("div", {
     className: _.container,
     children: [(0, i.jsxs)("div", {
-      children: [g ? (0, i.jsxs)("div", {
+      children: [x ? (0, i.jsxs)("div", {
         className: _.videoContainer,
         children: [y ? (0, i.jsx)(v.Z, {
           className: a()(_.videoCover, _.video),
@@ -66,7 +66,7 @@ function I(e) {
           "aria-label": A.intl.string(A.t.X4IxWL)
         })]
       }) : null, (0, i.jsxs)("div", {
-        className: g ? _.overviewContainerWithVideo : _.overviewContainerNoVideo,
+        className: x ? _.overviewContainerWithVideo : _.overviewContainerNoVideo,
         children: [(0, i.jsx)(T, {
           application: n
         }), (0, i.jsx)(L, {
@@ -173,7 +173,7 @@ function R(e) {
     application: n
   } = e;
   if (!(0, b.ye)(n)) return null;
-  let l = null != (t = (0, b.BQ)(n) ? n instanceof x.ZP ? n.maxParticipants : n.max_participants : 0) ? t : 0;
+  let l = null != (t = (0, b.BQ)(n) ? n instanceof g.ZP ? n.maxParticipants : n.max_participants : 0) ? t : 0;
   return (0, i.jsxs)("div", {
     className: _.tagContainer,
     children: [(0, i.jsx)(s.BFJ, {
@@ -200,12 +200,12 @@ function Z(e) {
     application: r,
     botUserId: v
   }), {
-    analyticsLocations: x
+    analyticsLocations: g
   } = (0, p.ZP)();
   return (l.useEffect(() => {
     if (!(0, b.BQ)(r) || !(0, b.ye)(r)) return;
     let e = setTimeout(() => {
-      (null == u || null == v) && g.default.track(P.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
+      (null == u || null == v) && x.default.track(P.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
         application_id: r.id,
         is_primary_entry_point_command_non_null: null != u,
         is_bot_user_id_non_null: null != v,
@@ -223,7 +223,7 @@ function Z(e) {
     }), y && null != v ? (0, i.jsx)(E.Z, {
       botUserId: v,
       applicationId: r.id,
-      analyticsLocations: x
+      analyticsLocations: g
     }) : null]
   }) : c && !o && (0, b.ye)(r) ? (0, i.jsx)(s.Wn, {
     className: _.primaryEntryPointWarningMessage,

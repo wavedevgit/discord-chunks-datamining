@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 450936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -29,10 +29,10 @@ function b(e) {
   }, [y]), v = (0, i.e7)([d.Z], () => {
     var e;
     return d.Z.isFetchingProfile(null != (e = null == C ? true : C.id) ? e : m.lds)
-  }), x = (0, o.Z)(v), O = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == C ? true : C.id)), E = (0, i.e7)([d.Z], () => {
+  }), O = (0, o.Z)(v), x = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == C ? true : C.id)), E = (0, i.e7)([d.Z], () => {
     var e;
     return null !== C ? null == (e = d.Z.getUserProfile(null == C ? true : C.id)) ? true : e.application : true
-  }), j = null != O ? O : null == E ? true : E.id;
+  }), j = null != x ? x : null == E ? true : E.id;
   r.useEffect(() => {
     if (null == j) {
       var e;
@@ -73,7 +73,7 @@ function b(e) {
     isAppDM: null != (b = null == C ? true : C.bot) && b,
     primaryEntryPointCommand: P,
     isProfileFetching: v,
-    wasProfileFetching: null != x ? x : null,
+    wasProfileFetching: null != O ? O : null,
     applicationId: j,
     channelId: y.id,
     commands: I

@@ -1,7 +1,7 @@
-/** Chunk was on 49062 **/
+/** Chunk was on 70522 **/
 /** chunk id: 354589, original params: e,n,r (module,exports,require) **/
 require.d(exports, {
-  default: () => L
+  default: () => G
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -44,25 +44,25 @@ var Chunk442837 = require("./442837.js"),
   Chunk332031 = require("./332031.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let L = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let G = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   var n;
   let {
     user: r,
     channel: l,
     context: a,
     showChatItems: u = true,
-    showMediaItems: F = false,
-    showChannelCallItems: L = false,
-    showModalItems: W = true,
+    showMediaItems: z = false,
+    showChannelCallItems: G = false,
+    showModalItems: L = true,
     onSelect: q,
     onHeightUpdate: B,
     onInteraction: X
   } = e, Y = (0, R.Z)({
     userId: r.id,
     guildId: null
-  }), H = (0, S.Z)(r, null, a), J = (0, i.e7)([x.Z, j.Z], () => {
-    let e = x.Z.getVoiceChannelId();
-    return j.Z.getChannel(e)
+  }), H = (0, S.Z)(r, null, a), J = (0, i.e7)([j.Z, x.Z], () => {
+    let e = j.Z.getVoiceChannelId();
+    return x.Z.getChannel(e)
   }), {
     enabled: K
   } = Z.Z.useExperiment({
@@ -75,30 +75,30 @@ let L = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     user: r,
     channelId: l.id,
     context: a
-  }), et = (0, _.Z)({
+  }), et = (0, v.Z)({
     user: r
-  }), ei = (0, A.Z)(r.id), es = (0, U.Z)(r.id, l.id), eo = (0, Q.Z)(r.id), el = (0, g.B)({
+  }), ei = (0, W.Z)(r.id), es = (0, U.Z)(r.id, l.id), eo = (0, Q.Z)(r.id), el = (0, b.B)({
     userId: r.id,
     channelId: l.id,
     guildId: l.getGuildId()
   }), ea = (0, k.Z)(r.id, l.id), ed = (0, N.Z)({
     user: r
-  }), ec = (0, c.Z)(null, r), eu = (0, v.Z)({
+  }), ec = (0, c.Z)(null, r), eu = (0, _.Z)({
     user: r
   }), em = (0, O.Z)({
     user: r
-  }), eh = (0, M.Z)({
+  }), ep = (0, M.Z)({
     user: r
-  }), eb = (0, w.Z)({
+  }), eh = (0, w.Z)({
     user: r,
     location: "GroupDMUserContextMenu"
-  }), eg = (0, E.Z)({
+  }), eb = (0, E.Z)({
     user: r,
     location: "GroupDMUserContextMenu"
-  }), ep = (0, p.Z)({
+  }), eg = (0, g.Z)({
     id: r.id,
-    label: G.intl.string(G.t["/AXYnE"])
-  }), ef = (0, z.Z)(r.id), eZ = (0, h.Z)(r.id), ej = (0, m.Z)(l.id), ex = (0, f.Z)(r), ev = (0, b.Z)(r.id), e_ = (0, C.Z)({
+    label: F.intl.string(F.t["/AXYnE"])
+  }), ef = (0, A.Z)(r.id), eZ = (0, p.Z)(r.id), ex = (0, m.Z)(l.id), ej = (0, f.Z)(r), e_ = (0, h.Z)(r.id), ev = (0, C.Z)({
     commandType: d.yU.USER,
     commandTargetId: r.id,
     channel: l,
@@ -108,27 +108,27 @@ let L = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   return (0, t.jsxs)(s.v2r, {
     navId: "user-context",
     onClose: o.Zy,
-    "aria-label": G.intl.string(G.t.liqwPJ),
+    "aria-label": F.intl.string(F.t.liqwPJ),
     onSelect: q,
     onInteraction: X,
     children: [!eI && (0, t.jsxs)(t.Fragment, {
       children: [(0, t.jsx)(s.kSQ, {
-        children: ex
+        children: ej
       }), (0, t.jsxs)(s.kSQ, {
-        children: [W && Y, u && H, ee, en, !eC && $, W && er, W && et, ef]
-      }), F && (0, t.jsx)(s.kSQ, {
+        children: [L && Y, u && H, ee, en, !eC && $, L && er, L && et, ef]
+      }), z && (0, t.jsx)(s.kSQ, {
         children: ei
       }), ew && (0, t.jsxs)(s.kSQ, {
         children: [!eC && es, eO]
       }), (0, t.jsx)(s.kSQ, {
-        children: W && ec
+        children: L && ec
       }), (0, t.jsxs)(s.kSQ, {
-        children: [F && eo, F && el, F && ea, e_, W && ed, eu, em, eh, W && eg, W && eb, F && ev]
-      }), L && (0, t.jsxs)(s.kSQ, {
-        children: [ej, eZ]
+        children: [z && eo, z && el, z && ea, ev, L && ed, eu, em, ep, L && eb, L && eh, z && e_]
+      }), G && (0, t.jsxs)(s.kSQ, {
+        children: [ex, eZ]
       })]
     }), (0, t.jsx)(s.kSQ, {
-      children: ep
+      children: eg
     })]
   })
 }, {

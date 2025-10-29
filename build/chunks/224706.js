@@ -43,7 +43,7 @@ function k(e) {
     applicationId: t,
     secret: n,
     channelId: r,
-    intent: i = w.Ws.PLAY,
+    intent: i = D.Ws.PLAY,
     embedded: a = false,
     source: o,
     locationObject: s,
@@ -180,7 +180,7 @@ async function G(e) {
       pids: e
     })
   }).catch(e => {
-    R.Z.show(P.kVF.LAUNCH_GAME_FAILURE, D.intl.string(D.t.YZEBdj)), l.Z.dispatch({
+    R.Z.show(P.kVF.LAUNCH_GAME_FAILURE, w.intl.string(w.t.YZEBdj)), l.Z.dispatch({
       type: "GAME_LAUNCH_FAIL",
       applicationId: t,
       error: f
@@ -408,7 +408,7 @@ let B = {
       applicationId: r,
       channelId: i,
       messageId: a,
-      intent: o = w.Ws.PLAY,
+      intent: o = D.Ws.PLAY,
       embedded: s = false,
       source: c,
       locationObject: u,

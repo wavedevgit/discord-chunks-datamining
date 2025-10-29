@@ -41,8 +41,8 @@ let T = "SELECTABLE",
   N = {},
   R = {},
   P = null,
-  w = {},
-  D = {
+  D = {},
+  w = {
     comparator: false,
     channel: (0, Chunk131704.createChannelRecord)({
       id: Chunk981631.Sc2,
@@ -59,7 +59,7 @@ function k(e) {
     id: e,
     [T]: [],
     [S]: [],
-    [v.d4z.GUILD_CATEGORY]: [D],
+    [v.d4z.GUILD_CATEGORY]: [w],
     count: 0
   }
 }
@@ -121,17 +121,17 @@ function V(e) {
     let r = n.channel;
     if (e.count += 1, _.zS.has(r.type) && !b.Z.can(v.Plq.VIEW_CHANNEL, r) && !c.Z.isChannelGated(r.guild_id, r.id) && r.id !== P) return;
     let i = B(r.type);
-    r.type === v.d4z.GUILD_DIRECTORY && (null == w[t] && (w[t] = []), w[t].push(n)), null != e[i] && e[i].push(n)
+    r.type === v.d4z.GUILD_DIRECTORY && (null == D[t] && (D[t] = []), D[t].push(n)), null != e[i] && e[i].push(n)
   }), e
 }
 
 function H() {
-  C = {}, w = {}, N = {}, R = {}, null != A && Y(A)
+  C = {}, D = {}, N = {}, R = {}, null != A && Y(A)
 }
 
 function Y(e) {
   let t = k(e);
-  return C[e] = t, w[e] = [], V(t), G(t), W(t), en(e), t
+  return C[e] = t, D[e] = [], V(t), G(t), W(t), en(e), t
 }
 
 function W(e) {
@@ -164,7 +164,7 @@ function z(e) {
       id: t
     }
   } = e;
-  return delete C[t], delete N[t], delete R[t], delete w[t], true
+  return delete C[t], delete N[t], delete R[t], delete D[t], true
 }
 
 function q(e) {
@@ -333,7 +333,7 @@ class el extends(r = Chunk442837.ZP.Store) {
   }
   getDirectoryChannelIds(e) {
     var t, n;
-    return null != (n = null == (t = w[e]) ? true : t.map(e => {
+    return null != (n = null == (t = D[e]) ? true : t.map(e => {
       let {
         channel: t
       } = e;

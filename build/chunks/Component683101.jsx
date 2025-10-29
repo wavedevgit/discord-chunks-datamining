@@ -86,8 +86,7 @@ class T extends Chunk647438.PureComponent {
               onContextMenu: t => this.handleContextMenu(t, e),
               animateAvatar: false,
               subscribeToComponentDispatch: false,
-              trackAnnouncementViews: true,
-              isSearchResult: true
+              trackAnnouncementViews: true
             })
           }, module.id)
         }), (0, Chunk951288.jsx)("div", {

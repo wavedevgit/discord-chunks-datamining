@@ -73,7 +73,7 @@ function et(e) {
     setSearchQuery: a,
     setScroller: o,
     isScrollCloseToBottom: s
-  } = e, c = (0, m.e7)([v.Z], () => v.Z.getIsEnabled(), []), u = n === R._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, M.Yn)(n), p = !(0, M.Yn)(n), h = n === R._b.TEXT, [x, g] = ec(true), [b, N] = ec(u), [j, C] = ec(d), [E, P] = ec(p), A = x && b && j && E, _ = (d || u) && !A, O = p && c;
+  } = e, c = (0, m.e7)([v.Z], () => v.Z.getIsEnabled(), []), u = n === R._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, M.Yn)(n), p = !(0, M.Yn)(n), h = n === R._b.TEXT, [g, x] = ec(true), [b, N] = ec(u), [j, C] = ec(d), [E, P] = ec(p), A = g && b && j && E, _ = (d || u) && !A, O = p && c;
   l.useEffect(() => {
     var e;
     let n = "channel" === t.type ? null == (e = t.channel) ? true : e.guild_id : true;
@@ -104,7 +104,7 @@ function et(e) {
         children: [(0, i.jsx)(el, {
           context: t,
           entrypoint: n,
-          onEmptyState: g
+          onEmptyState: x
         }), u && "channel" === t.type && (0, i.jsx)(ea, {
           context: t,
           onEmptyState: N
@@ -282,8 +282,8 @@ function er(e) {
     context: n,
     onEmptyState: r
   } = e;
-  (0, g.g)();
-  let a = (0, x.Z)({
+  (0, x.g)();
+  let a = (0, g.Z)({
       guildId: "channel" === n.type ? null == (t = n.channel) ? true : t.getGuildId() : true
     }),
     o = D.U4.LARGE_BANNER,
@@ -448,8 +448,8 @@ function eo(e) {
       context: n,
       recommendationsSections: i
     } = e;
-    (0, g.g)();
-    let r = (0, x.Z)({
+    (0, x.g)();
+    let r = (0, g.Z)({
       guildId: "channel" === n.type ? null == (t = n.channel) ? true : t.getGuildId() : true
     });
     return l.useMemo(() => {
@@ -543,7 +543,7 @@ function es(e) {
   }
   let {
     items: y,
-    handleViewMore: x
+    handleViewMore: g
   } = eu({
     title: f,
     look: t,
@@ -552,7 +552,7 @@ function es(e) {
     sectionName: v,
     sectionOverallPosition: u
   }), {
-    trackSectionImpressionRef: g
+    trackSectionImpressionRef: x
   } = (0, B.Z)({
     sectionName: v,
     numItems: h.length,
@@ -561,12 +561,12 @@ function es(e) {
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)("div", {
       ref: e => {
-        g.current = e
+        x.current = e
       },
       children: (0, i.jsx)(W.Z, {
         title: r.title,
         buttonType: W.Z.buttonTypes.VIEW_MORE,
-        onClickViewButton: x
+        onClickViewButton: g
       })
     }), (0, i.jsx)("div", {
       className: t === D.U4.ROW ? X.sectionRowsContentContainer : X.sectionTwoColumnContentContainer,

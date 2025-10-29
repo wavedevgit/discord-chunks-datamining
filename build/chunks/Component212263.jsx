@@ -76,10 +76,10 @@ let T = e => {
       analyticsLocations: P
     } = (0, l.ZP)(s.Z.EMOJI_PICKER);
   t = T === g.Hz.REACTION ? E.cd.EMOJI_PICKER_REACTION_EMOJI_CLICKED : null == v ? E.cd.EMOJI_PICKER_FLOATING_UPSELL : v.subCategory === h.t0.TOP_GUILD_EMOJI ? E.cd.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED : v.subCategory === h.t0.NEWLY_ADDED_EMOJI ? E.cd.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED : E.cd.EMOJI_PICKER_EMOJI_CLICKED;
-  let w = null != v ? v.emoji : true,
-    D = null != w && w.animated,
-    L = null != w && !_.ZP.isInternalEmojiForGuildId(w, null == y ? true : y.getGuildId()),
-    x = null != w ? m.qAy.EMOJI : m.qAy.EMOJI_PICKER_FLOATING_UPSELL,
+  let D = null != v ? v.emoji : true,
+    w = null != D && D.animated,
+    L = null != D && !_.ZP.isInternalEmojiForGuildId(D, null == y ? true : y.getGuildId()),
+    x = null != D ? m.qAy.EMOJI : m.qAy.EMOJI_PICKER_FLOATING_UPSELL,
     M = (0, a.e7)([u.Z], () => u.Z.hasFetched);
   return i.useEffect(() => {
     M || o.MH()
@@ -104,7 +104,7 @@ let T = e => {
       location_stack: P,
       sku_id: (0, p.Wz)(p.ZP.getSkuIdForPremiumType(E.PremiumTypes.TIER_2)),
       has_search_query: null != R && "" !== R,
-      is_animated: D
+      is_animated: w
     },
     isEmojiPickerOverlay: true
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 544610, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
@@ -20,24 +20,24 @@ var i, l, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 let C = false,
   v = "",
-  x = 0,
-  O = [],
+  O = 0,
+  x = [],
   E = false,
   j = new Set,
   S = null;
 
 function P() {
-  v = "", x = 0, O = [], j = new Set, C = false, S = null
+  v = "", O = 0, x = [], j = new Set, C = false, S = null
 }
 
 function I(e) {
-  v = e, x = 0, Z()
+  v = e, O = 0, Z()
 }
 
 function Z() {
   if (!C) returnfalse;
   let e = Chunk592125.Z.getChannel(S);
-  if (0 === v.trim().length) return null != r && r.clearQuery(), O = function(e) {
+  if (0 === v.trim().length) return null != r && r.clearQuery(), x = function(e) {
     let t = b.Z.getFriendIDs(),
       n = _.default.getCurrentUser();
     return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ..._.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
@@ -116,7 +116,7 @@ function A(e) {
       comparator: r
     })
   }
-  O = n, k.emitChange()
+  x = n, k.emitChange()
 }
 
 function w() {
@@ -141,7 +141,7 @@ class L extends(i = Chunk442837.ZP.Store) {
     this.waitFor(Chunk592125.Z, Chunk480294.Z, Chunk353926.Z, Chunk580005.Z, Chunk699516.Z, Chunk752048.Z, Chunk594174.default), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], T)
   }
   getResults() {
-    return O
+    return x
   }
   hasFriends() {
     return E
@@ -155,9 +155,9 @@ class L extends(i = Chunk442837.ZP.Store) {
   getState() {
     return {
       query: v,
-      selectedRow: x,
+      selectedRow: O,
       selectedUsers: j,
-      results: O,
+      results: x,
       hasFriends: E
     }
   }
@@ -192,7 +192,7 @@ let k = new L(Chunk570140.Z, {
       S = e.channelId, I(e.query)
     },
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
-      x = e.row
+      O = e.row
     },
     PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: function(e) {
       let {

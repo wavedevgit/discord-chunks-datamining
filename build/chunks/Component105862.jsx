@@ -22,7 +22,7 @@ function y(e) {
   let {
     showImage: t = true,
     padding: n = false
-  } = e, y = (0, o.ZP)(), x = (0, r.ap)(y) ? v : h, g = l.useCallback(() => {
+  } = e, y = (0, o.ZP)(), g = (0, r.ap)(y) ? v : h, x = l.useCallback(() => {
     (0, s.Z)(c.Z.getAppsSupportURL(p.BhN.APPS_LEARN_MORE))
   }, []), {
     trackSectionImpressionRef: b
@@ -40,7 +40,7 @@ function y(e) {
       className: f.container,
       children: [t && (0, i.jsx)("img", {
         className: f.image,
-        src: x,
+        src: g,
         alt: "",
         "aria-hidden": true
       }), (0, i.jsxs)("div", {
@@ -61,7 +61,7 @@ function y(e) {
           sectionTitle: m.intl.string(m.t["kw8/Ec"]),
           sectionBody: m.intl.string(m.t.GZoV1O)
         }),
-        onClick: g
+        onClick: x
       })]
     })
   })

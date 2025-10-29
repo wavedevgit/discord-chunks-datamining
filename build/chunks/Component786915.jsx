@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 786915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -46,8 +46,8 @@ function y(e) {
     channel: y,
     exitFullScreen: C,
     appContext: v,
-    analyticsLocation: x,
-    guildScheduledEvent: O,
+    analyticsLocation: O,
+    guildScheduledEvent: x,
     shouldPrioritizeGroupPlusIcon: E = false,
     isRichPresenceInvite: j = false,
     iconClassName: S,
@@ -140,8 +140,8 @@ function y(e) {
           applicationId: t,
           appContext: null != v ? v : A,
           exitFullScreen: C,
-          analyticsLocation: x,
-          guildScheduledEvent: O
+          analyticsLocation: O,
+          guildScheduledEvent: x
         })
     },
     iconComponent: L,

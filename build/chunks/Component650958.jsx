@@ -93,7 +93,7 @@ function g(e) {
   }), N = I ? A.concat(C) : A, {
     id: R,
     name: P
-  } = (0, l.p6)(t), w = null != p ? p : R, D = N.map(e => {
+  } = (0, l.p6)(t), D = null != p ? p : R, w = N.map(e => {
     let i, {
         id: o,
         disabled: s,
@@ -110,7 +110,7 @@ function g(e) {
         variant: "text-xs/normal",
         children: i
       }),
-      checked: o === w,
+      checked: o === D,
       action: () => {
         var e;
         (null == (e = null == u ? true : u(o)) || e) && y(o, {
@@ -137,10 +137,10 @@ function g(e) {
     label: O(),
     subtext: P
   }, E), {
-    children: [D, x && L]
+    children: [w, x && L]
   })) : (0, r.jsxs)(a.kSQ, h(_({
     label: O()
   }, g), {
-    children: [D, x && L]
+    children: [w, x && L]
   }))
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 442168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -58,13 +58,13 @@ function v(e) {
     popoutType: n
   } = e, {
     reducedMotion: v
-  } = i.useContext(o.Sf), x = (0, i.useRef)(null), O = p.n.getState().clipsButtonRef, E = (0, f.V9)(t), j = (0, a.e7)([u.Z], () => u.Z.getActiveAnimation()), S = (0, a.Wu)([u.Z], () => u.Z.getStreamClipAnimations(E)), P = (0, i.useRef)(true);
+  } = i.useContext(o.Sf), O = (0, i.useRef)(null), x = p.n.getState().clipsButtonRef, E = (0, f.V9)(t), j = (0, a.e7)([u.Z], () => u.Z.getActiveAnimation()), S = (0, a.Wu)([u.Z], () => u.Z.getStreamClipAnimations(E)), P = (0, i.useRef)(true);
   i.useEffect(() => () => {
     (0, d.Gh)(E)
   }, [E]);
   let I = e => {
       if (n !== c.P.NO_POPOUT) return b;
-      let t = null == O ? true : O.getBoundingClientRect();
+      let t = null == x ? true : x.getBoundingClientRect();
       if (P.current = t, e.timestamp !== j || null == t) return b;
       let {
         top: r,
@@ -100,7 +100,7 @@ function v(e) {
       }, v.enabled ? I(e) : (() => {
         var e;
         if (n !== c.P.NO_POPOUT) return b;
-        let t = null == (e = x.current) ? true : e.getBoundingClientRect();
+        let t = null == (e = O.current) ? true : e.getBoundingClientRect();
         return null == t ? b : {
           width: t.width,
           height: t.height,
@@ -131,7 +131,7 @@ function v(e) {
   return (0, l.useChain)([Z, N], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: m.hidden,
-      ref: x
+      ref: O
     }), T((e, t) => null != t && (0, r.jsx)(l.animated.div, {
       className: m.whiteFlash,
       style: e

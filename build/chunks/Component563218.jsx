@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 563218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -36,7 +36,7 @@ function b(e) {
     t = null != (C = null == b ? true : b.window) ? C : window
   } else t = window;
   let v = i.useRef(null),
-    x = i.useMemo(() => {
+    O = i.useMemo(() => {
       let e = null;
       return () => {
         null == e && (e = t.requestAnimationFrame(() => {
@@ -45,19 +45,19 @@ function b(e) {
         }))
       }
     }, [n, t]);
-  return i.useEffect(() => (t.addEventListener("resize", x), c.S.subscribe(m.CkL.REMEASURE_TARGET, x), () => {
-    t.removeEventListener("resize", x), c.S.unsubscribe(m.CkL.REMEASURE_TARGET, x)
-  }), [x, t]), i.useLayoutEffect(() => {
+  return i.useEffect(() => (t.addEventListener("resize", O), c.S.subscribe(m.CkL.REMEASURE_TARGET, O), () => {
+    t.removeEventListener("resize", O), c.S.unsubscribe(m.CkL.REMEASURE_TARGET, O)
+  }), [O, t]), i.useLayoutEffect(() => {
     let e = v.current;
     if (null == e) return;
     let t = e.ownerDocument.defaultView;
     if (null == t) return;
-    x();
-    let r = new t.ResizeObserver(x);
+    O();
+    let r = new t.ResizeObserver(O);
     return r.observe(e), () => {
       r.disconnect(), g(n, null)
     }
-  }, [n, x]), (0, r.jsx)("div", {
+  }, [n, O]), (0, r.jsx)("div", {
     ref: v,
     style: o,
     className: a

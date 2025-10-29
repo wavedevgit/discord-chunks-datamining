@@ -1,7 +1,7 @@
 /** Chunk was on 35755 **/
 /** chunk id: 421591, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => x
 }), require("./388685.js"), require("./482853.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,10 +21,10 @@ let y = {
     width: Chunk314734.Gy,
     height: Chunk314734.lv
   },
-  x = {
+  g = {
     height: Chunk314734.lv
   },
-  g = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
+  x = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     let {
       context: n,
       entrypoint: r,
@@ -153,14 +153,14 @@ function N(e) {
   }(a), {
     currentView: h,
     getMostRecentHistoryItemByType: y,
-    setSlideReady: g
+    setSlideReady: x
   } = (0, u.hH)();
   l.useEffect(() => {
-    g(false)
-  }, [null == h ? true : h.type, g]);
+    x(false)
+  }, [null == h ? true : h.type, x]);
   let b = l.useCallback(() => {
-    g(true)
-  }, [g]);
+    x(true)
+  }, [x]);
   if (null == h) return null;
   let N = y(u.gc.LIST),
     j = y(u.gc.APPLICATION);
@@ -172,7 +172,7 @@ function N(e) {
       id: u.gc.HOME,
       children: (0, i.jsx)("div", {
         className: v.slideContent,
-        style: x,
+        style: g,
         children: (0, i.jsx)(p.Z, {
           isScrollCloseToBottom: c,
           setScroller: s,
@@ -186,7 +186,7 @@ function N(e) {
       id: u.gc.LIST,
       children: (0, i.jsx)("div", {
         className: v.slideContent,
-        style: x,
+        style: g,
         children: null != N && (0, i.jsx)(m.Z, {
           context: t,
           entrypoint: n,
@@ -201,7 +201,7 @@ function N(e) {
       id: u.gc.APPLICATION,
       children: (0, i.jsx)("div", {
         className: v.slideContent,
-        style: x,
+        style: g,
         children: null != j && (0, i.jsx)(d.Z, {
           context: t,
           application: j.application,

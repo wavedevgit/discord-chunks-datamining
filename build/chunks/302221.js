@@ -6,13 +6,13 @@ require.d(exports, {
   BM: () => M,
   Cj: () => d,
   WY: () => C,
-  YD: () => D,
+  YD: () => w,
   aD: () => h,
   j: () => P,
   oo: () => f,
   rj: () => p,
   vq: () => g,
-  wh: () => w,
+  wh: () => D,
   xj: () => x
 }), require("./415506.js"), require("./388685.js"), require("./35282.js"), require("./539854.js"), require("./642613.js");
 var Chunk688619 = require("./688619.js"),
@@ -271,7 +271,7 @@ function P(e, t) {
   return n ? r.lightness = r.lightness + t > 1 ? .9 : r.lightness + t : r.lightness = r.lightness - t < 0 ? .1 : r.lightness - t, R(r.hue, r.saturation, r.lightness)
 }
 
-function w(e) {
+function D(e) {
   let {
     foreground: t,
     background: n,
@@ -293,7 +293,7 @@ function w(e) {
   return t.alpha(1)
 }
 
-function D(e) {
+function w(e) {
   return e.slice(0, 3).map(e => {
     var t;
     return {

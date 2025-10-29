@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 534469, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   AP: () => et,
@@ -184,7 +184,7 @@ function er(e) {
     compact: b = false,
     className: _,
     groupId: y,
-    viewingChannelId: O
+    viewingChannelId: x
   } = e, j = o.type === Y.uaV.REPLY ? o.messageReference : true, S = (0, c.JA)(null != (t = e.id) ? t : ""), {
     onFocus: I
   } = S, N = ee(S, ["onFocus"]), {
@@ -195,7 +195,7 @@ function er(e) {
     popouts: G,
     selected: J,
     setPopout: et
-  } = (0, D.Z)(o.id, q.d$), en = x.RS.useSetting(), er = x.NA.useSetting(), ei = (0, u.e7)([C.Z], () => C.Z.getMessageByReference(j)), el = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
+  } = (0, D.Z)(o.id, q.d$), en = O.RS.useSetting(), er = O.NA.useSetting(), ei = (0, u.e7)([C.Z], () => C.Z.getMessageByReference(j)), el = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
     handleMouseEnter: ea,
     handleMouseLeave: eo,
     isHovered: es
@@ -216,7 +216,7 @@ function er(e) {
     allowLinks: true,
     allowDevLinks: ep,
     previewLinkTarget: true,
-    viewingChannelId: O
+    viewingChannelId: x
   }), em = (0, R.Z)(s, f, ec), eg = (0, T.ZP)(o), eb = (0, w.iG)(o, y), e_ = (0, w.Gx)(o), ey = (0, H.Z)(e, ef, false), eC = i.useCallback(() => (0, v.XU)(g, f, s), [g, f, s]), ev = (0, h.p9)({
     guildId: g,
     roleId: eg.iconRoleId
@@ -307,8 +307,8 @@ let ei = Chunk647438.memo(function(e) {
     } = es,
     eu = ee(es, ["onFocus"]),
     ed = (0, b.p7)("ChatMessage"),
-    ep = x.RS.useSetting(),
-    ef = x.NA.useSetting(),
+    ep = O.RS.useSetting(),
+    ef = O.NA.useSetting(),
     eh = (0, u.e7)([C.Z], () => C.Z.getMessageByReference(eo)),
     {
       popouts: em,
@@ -320,8 +320,8 @@ let ei = Chunk647438.memo(function(e) {
     {
       handleMouseEnter: eC,
       handleMouseLeave: ev,
-      hasHovered: ex,
-      isHovered: eO
+      hasHovered: eO,
+      isHovered: ex
     } = (0, M.tn)({
       groupId: el,
       message: v,
@@ -343,8 +343,8 @@ let ei = Chunk647438.memo(function(e) {
     eT = (0, u.e7)([j.Z], () => j.Z.isEditing(et, I), [et, I]),
     eN = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled),
     eA = eg || eT || eN && eE,
-    ew = eA || eO,
-    eM = (0, u.e7)([O.Z], () => v.hasFlag(Y.iLy.HAS_THREAD) && O.Z.getChannel(S.default.castMessageIdAsChannelId(v.id))),
+    ew = eA || ex,
+    eM = (0, u.e7)([x.Z], () => v.hasFlag(Y.iLy.HAS_THREAD) && x.Z.getChannel(S.default.castMessageIdAsChannelId(v.id))),
     eR = v.isFirstMessageInForumPost(J),
     eD = (0, m.A)((null != (n = v.editedTimestamp) ? n : v.timestamp).valueOf()),
     eL = (0, u.e7)([E.Z], () => E.Z.isDeveloper),
@@ -398,7 +398,7 @@ let ei = Chunk647438.memo(function(e) {
         children: [(0, _.Uw)(v) && (0, r.jsx)(g.Z, {
           compact: en,
           message: v,
-          hovering: eO && !eT && !eJ
+          hovering: ex && !eT && !eJ
         }), (0, r.jsx)(A.Z, $(Q({}, eu), {
           "aria-setsize": false,
           "aria-roledescription": K.intl.string(K.t.BAB0yK),
@@ -454,11 +454,11 @@ let ei = Chunk647438.memo(function(e) {
             isAutomodBlockedMessage: eX,
             forceAddReactions: v.type === Y.uaV.EMOJI_ADDED
           }),
-          childrenButtons: ex || ej ? (0, F.Z)({
+          childrenButtons: eO || ej ? (0, F.Z)({
             buttonProps: e,
             setPopout: eb,
             messagePopouts: em,
-            isFocused: eO || eE,
+            isFocused: ex || eE,
             messageWindow: eK.current
           }) : true,
           childrenSystemMessage: (0, z.Z)(e),

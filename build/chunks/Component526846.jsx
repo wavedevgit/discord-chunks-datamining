@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 526846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => k
@@ -72,7 +72,7 @@ function L(e) {
       return null == e ? null : e.type === u.C.APPLICATION_BANNER ? e : null
     }, [null == f ? true : f.application_directory_collection_items]),
     {
-      trackItemImpressionRef: O
+      trackItemImpressionRef: x
     } = (0, b.Z)({
       applicationId: null != (t = null == y ? true : y.application.id) ? t : "",
       applicationFlags: null == y ? true : y.application.flags,
@@ -81,13 +81,13 @@ function L(e) {
       sectionOverallPosition: 0,
       promotionalLabel: null != y ? (0, g.dF)(y.application) : true
     });
-  return null == y || null == f || m ? null : (null != y.id && null != y.image_hash && (n = (0, x.$_)({
+  return null == y || null == f || m ? null : (null != y.id && null != y.image_hash && (n = (0, O.$_)({
     itemId: y.id,
     hash: y.image_hash,
     containerWidth: 584
   })), (0, r.jsxs)(p.P3F, {
     className: M.clickableBanner,
-    innerRef: O,
+    innerRef: x,
     onClick: () => {
       o(), (0, _.Z)({
         context: {
@@ -122,17 +122,17 @@ let k = Chunk647438.forwardRef(function(e, t) {
     className: b
   } = e, C = (0, d.e7)([f.Z], () => f.Z.useReducedMotion), {
     id: v,
-    guild_id: x
+    guild_id: O
   } = l;
   i.useEffect(() => {
     S.default.track(A.rMx.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
       channel_id: v,
-      guild_id: x
+      guild_id: O
     })
-  }, [v, x]), i.useEffect(() => {
+  }, [v, O]), i.useEffect(() => {
     o || s()
   }, [s, o]);
-  let j = (0, O.bp)(),
+  let j = (0, x.bp)(),
     {
       analyticsLocations: R,
       newestAnalyticsLocation: k

@@ -132,10 +132,10 @@ function P(e) {
   let {
     userSettings: t
   } = e;
-  w(t)
+  D(t)
 }
 
-function w(e) {
+function D(e) {
   null != e && s().forEach(y, (t, n) => {
     var r, i;
     let o = e[Number(n)];
@@ -150,9 +150,9 @@ function w(e) {
     null != u && (t.editInfo.protoToSave = u, t.editInfo.offlineEditDataVersion = o.offlineEditDataVersion)
   })
 }
-class D extends(r = Chunk442837.ZP.PersistedStore) {
+class w extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    w(e)
+    D(e)
   }
   getState() {
     return this.computeState()
@@ -214,8 +214,8 @@ class D extends(r = Chunk442837.ZP.PersistedStore) {
     return null != (t = null == (e = this.settings.guilds) ? true : module.guilds) ? exports : null
   }
 }
-m(D, "displayName", "UserSettingsProtoStore"), m(D, "persistKey", "UserSettingsProtoStore-Cache");
-let L = new D(Chunk570140.Z, {
+m(w, "displayName", "UserSettingsProtoStore"), m(w, "persistKey", "UserSettingsProtoStore-Cache");
+let L = new w(Chunk570140.Z, {
   CACHE_LOADED: P,
   USER_SETTINGS_PROTO_UPDATE: N,
   USER_SETTINGS_PROTO_ENQUEUE_UPDATE: N,

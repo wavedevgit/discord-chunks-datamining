@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 600084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H
@@ -73,12 +73,12 @@ function H(e) {
     showingBanner: f
   } = e, y = (0, d.ZP)(p), {
     type: v
-  } = p, P = (0, l.e7)([O.default], () => p.isPrivate() ? O.default.getUser(p.getRecipientId()) : null), A = E.ZP.useUserTag(P), {
+  } = p, P = (0, l.e7)([x.default], () => p.isPrivate() ? x.default.getUser(p.getRecipientId()) : null), A = E.ZP.useUserTag(P), {
     canManageRoles: M,
     canReadMessageHistory: R
-  } = (0, l.cj)([x.Z], () => ({
-    canManageRoles: x.Z.can(L.Plq.MANAGE_ROLES, p),
-    canReadMessageHistory: x.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
+  } = (0, l.cj)([O.Z], () => ({
+    canManageRoles: O.Z.can(L.Plq.MANAGE_ROLES, p),
+    canReadMessageHistory: O.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
   })), D = (0, l.e7)([b.Z], () => v === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, v]), {
     systemDMRedesignEnabled: H
   } = g.Z.useExperiment({

@@ -91,8 +91,8 @@ let P = e => {
     targetBoostedGuildTier: A,
     onClose: R = () => {},
     closeLayer: P = () => {},
-    pauseAnimation: w = false,
-    applicationId: D,
+    pauseAnimation: D = false,
+    applicationId: w,
     handleSubscribeModalClose: L,
     withHighlight: x = false,
     icon: M,
@@ -121,7 +121,7 @@ let P = e => {
         onClose: R,
         closeLayer: P,
         inPopout: B,
-        applicationId: D,
+        applicationId: w,
         handleSubscribeModalClose: L,
         intent: k
       }), F(false)
@@ -152,7 +152,7 @@ let P = e => {
     }, e), {
       disabled: true,
       size: u.zx.Sizes.SMALL,
-      pauseAnimation: w
+      pauseAnimation: D
     }), U), {
       children: X
     }))
@@ -171,7 +171,7 @@ let P = e => {
     }),
     submitting: Z,
     onClick: z,
-    pauseAnimation: w,
+    pauseAnimation: D,
     children: X
   }))
 }

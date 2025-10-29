@@ -5,7 +5,7 @@ require.d(exports, {
   CR: () => R,
   ZP: () => X,
   oL: () => P,
-  so: () => w
+  so: () => D
 }), require("./539854.js"), require("./642613.js"), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -69,11 +69,11 @@ function N(e, t) {
 }
 let R = "everyone",
   P = 0;
-var w = function(e) {
+var D = function(e) {
   return e.GROUP = "GROUP", e.MEMBER = "MEMBER", e.CONTENT_INVENTORY = "CONTENT_INVENTORY", e.CONTENT_INVENTORY_GROUP = "CONTENT_INVENTORY_GROUP", e.HIDDEN_CONTENT_INVENTORY = "HIDDEN_CONTENT_INVENTORY", e.CONTENT_INVENTORY_LEADERBOARD = "CONTENT_INVENTORY_LEADERBOARD", e
 }({});
 
-function D(e, t, n, r) {
+function w(e, t, n, r) {
   switch (t) {
     case I.Skl.ONLINE:
     case I.Skl.OFFLINE:
@@ -146,7 +146,7 @@ class k {
       var n;
       let r = t,
         i = Math.max(0, null != (n = e.count) ? n : 0);
-      return t += i + 1, D(this.guildId, e.id, i, r)
+      return t += i + 1, w(this.guildId, e.id, i, r)
     }), this.rows.length = t
   }
   sync(e, t) {
@@ -167,7 +167,7 @@ class k {
       group: n,
       member: r
     } = t;
-    if (null != n) this.rows.splice(e, 0, D(this.guildId, n.id, n.count));
+    if (null != n) this.rows.splice(e, 0, w(this.guildId, n.id, n.count));
     else if (null != r) {
       let t = L(this.guildId, this.ownerId, r.user.id);
       if (null == t) return;
@@ -180,7 +180,7 @@ class k {
       group: n,
       member: r
     } = t, i = this.rows[e];
-    if (null != i && "MEMBER" === i.type && delete this.members[i.user.id], null != n) this.rows[e] = D(this.guildId, n.id, n.count);
+    if (null != i && "MEMBER" === i.type && delete this.members[i.user.id], null != n) this.rows[e] = w(this.guildId, n.id, n.count);
     else if (null != r) {
       let t = L(this.guildId, this.ownerId, r.user.id);
       if (null == t) return;

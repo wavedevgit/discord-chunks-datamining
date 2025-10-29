@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 287746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tt
@@ -522,9 +522,9 @@ class e9 extends Chunk647438.PureComponent {
           isEdit: false
         });
         null != v && (null != v.content && (t = v.content), null != v.tts && (b = v.tts));
-        let x = en.ZP.parse(d, t);
-        x.tts = x.tts || b, null != s && (x.content = "", x.components = s);
-        let O = e8(e3({}, h.Z.getSendMessageOptions({
+        let O = en.ZP.parse(d, t);
+        O.tts = O.tts || b, null != s && (O.content = "", O.components = s);
+        let x = e8(e3({}, h.Z.getSendMessageOptions({
           content: t,
           channelId: d.id,
           uploads: n,
@@ -537,7 +537,7 @@ class e9 extends Chunk647438.PureComponent {
         })), {
           location: eQ.dy.CHAT_INPUT
         });
-        if (null != c && (O.announcementSendOptions = c), null != s && (O.flags = (0, eD.pj)(null != (_ = O.flags) ? _ : 0, eJ.iLy.IS_COMPONENTS_V2)), o) return h.Z.sendMessage(d.id, x, true, O), (0, ep.A6)(d.id), {
+        if (null != c && (x.announcementSendOptions = c), null != s && (x.flags = (0, eD.pj)(null != (_ = x.flags) ? _ : 0, eJ.iLy.IS_COMPONENTS_V2)), o) return h.Z.sendMessage(d.id, O, true, x), (0, ep.A6)(d.id), {
           shouldClear: false,
           shouldRefocus: true
         };
@@ -547,7 +547,7 @@ class e9 extends Chunk647438.PureComponent {
             shouldClear: false,
             shouldRefocus: false
           };
-          O.eagerDispatch = false, O.attachmentsToUpload = n, O.onAttachmentUploadError = (e, r, i) => {
+          x.eagerDispatch = false, x.attachmentsToUpload = n, x.onAttachmentUploadError = (e, r, i) => {
             (0, ee.A)({
               file: e,
               guildId: d.getGuildId(),
@@ -561,27 +561,27 @@ class e9 extends Chunk647438.PureComponent {
             }))
           }, g.Z.clearAll(d.id, eE.d.ChannelMessage)
         }
-        if (null != O.scheduledTimestamp) try {
+        if (null != x.scheduledTimestamp) try {
           await (0, em.PV)({
             channelId: d.id,
-            scheduledTimestamp: O.scheduledTimestamp,
+            scheduledTimestamp: x.scheduledTimestamp,
             messageSendData: {
               channelId: d.id,
               content: t,
               nonce: (0, er.r)(),
               tts: b,
-              message_reference: O.messageReference,
-              allowed_mentions: O.allowedMentions,
-              flags: O.flags
+              message_reference: x.messageReference,
+              allowed_mentions: x.allowedMentions,
+              flags: x.flags
             },
             attachmentsToUpload: n
-          }), (0, eb.Hw)(O.scheduledTimestamp)
+          }), (0, eb.Hw)(x.scheduledTimestamp)
         } catch (e) {
           return (0, eb.wW)(e.message), {
             shouldClear: false,
             shouldRefocus: false
           }
-        } else h.Z.sendMessage(d.id, x, true, O);
+        } else h.Z.sendMessage(d.id, O, true, x);
         return this.setState((0, k.H2)()), (0, ep.A6)(d.id), (0, e_.qB)(d.id, m.drafts.type), {
           shouldClear: true,
           shouldRefocus: true
@@ -644,8 +644,8 @@ class te extends Chunk647438.PureComponent {
         shakeIntensity: y,
         poggermodeEnabled: C,
         isSelectedResourceChannel: v,
-        showAutomodUserProfileChatBlocker: x,
-        showAppLauncherButton: O,
+        showAutomodUserProfileChatBlocker: O,
+        showAppLauncherButton: x,
         showAppDMsUI: E,
         isInitialLoading: j,
         pendingScheduledMessage: S,
@@ -839,7 +839,7 @@ class te extends Chunk647438.PureComponent {
           return;
         case eJ.yXg.ARROW_RIGHT:
           n === L.Ie.NORMAL && eR.S.dispatch(eJ.CkL.FOCUS_CHANNEL_TEXT_AREA, {
-            channelId: ex.ZP.getCurrentSidebarChannelId(r.id)
+            channelId: eO.ZP.getCurrentSidebarChannelId(r.id)
           })
       }
     }), e2(this, "handleOpenExpressionPicker", e => {
@@ -935,13 +935,13 @@ let tt = Chunk647438.memo(function(e) {
     applicationId: w,
     channelId: M,
     commands: R
-  } = (0, x.Z)({
+  } = (0, O.Z)({
     context: {
       channel: t,
       type: "channel"
     }
   });
-  (0, O.Z)({
+  (0, x.Z)({
     isProfileFetching: N,
     wasProfileFetching: A,
     applicationId: w,
@@ -951,7 +951,7 @@ let tt = Chunk647438.memo(function(e) {
   let D = i.useRef(null),
     L = (0, d.e7)([S.Z], () => S.Z.appDMChannelsWithFailedLoads().has(t.id)),
     k = (0, d.e7)([eZ.Z], () => eZ.Z.getVoiceChannelId()),
-    U = (0, d.e7)([eO.Z], () => eO.Z.getChannel(k)),
+    U = (0, d.e7)([ex.Z], () => ex.Z.getChannel(k)),
     B = (0, d.e7)([eN.default], () => t.type !== eJ.d4z.DM ? null : eN.default.getUser(t.getRecipientId())),
     F = (0, d.e7)([es.ZP, ev.default], () => es.ZP.getUserCombo(ev.default.getId(), t.id)),
     V = (0, b.iD)(t),

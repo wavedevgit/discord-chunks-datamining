@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 217871, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk989830 = require("./989830.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk23586 = require("./23586.js");
-let O = Chunk647438.memo(function(e) {
+let x = Chunk647438.memo(function(e) {
     let {
       channelId: t,
       width: n
@@ -47,10 +47,10 @@ let O = Chunk647438.memo(function(e) {
         config: l ? o.config.stiff : o.config.slow
       }, "animate-always");
     return null != a && (0, r.jsx)(o.animated.div, {
-      className: x.messageComboScore,
+      className: O.messageComboScore,
       style: h,
       children: (0, r.jsx)(c.Text, {
-        className: x.comboScore,
+        className: O.comboScore,
         variant: "text-sm/bold",
         children: (0, y.Eo)(a.combo)
       })
@@ -67,16 +67,16 @@ let O = Chunk647438.memo(function(e) {
     } = i.useMemo(() => (0, y.yz)(n), [n]), u = (0, p.Lq)(l);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.Text, {
-        className: x.comboValue,
+        className: O.comboValue,
         variant: "text-sm/bold",
         children: t
       }), (0, r.jsxs)("div", {
-        className: x.comboNameplate,
+        className: O.comboNameplate,
         style: {
           color: u
         },
         children: [(0, r.jsx)(c.Text, {
-          className: x.comboMultiplier,
+          className: O.comboMultiplier,
           style: {
             color: u
           },
@@ -86,32 +86,32 @@ let O = Chunk647438.memo(function(e) {
           })
         }), o && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
-            className: a()(x.comboSquare, x.left),
+            className: a()(O.comboSquare, O.left),
             style: {
               backgroundColor: u
             }
           }), (0, r.jsx)("div", {
-            className: a()(x.comboSquare, x.right),
+            className: a()(O.comboSquare, O.right),
             style: {
               backgroundColor: u
             }
           })]
         }), s && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
-            className: a()(x.confettiIcon, x.left),
+            className: a()(O.confettiIcon, O.left),
             children: (0, r.jsx)(m.Z, {
               width: 24,
               height: 24
             })
           }), (0, r.jsx)("div", {
-            className: a()(x.confettiIcon, x.right),
+            className: a()(O.confettiIcon, O.right),
             children: (0, r.jsx)(m.Z, {
               width: 24,
               height: 24
             })
           })]
         }), 1 === n && (0, r.jsx)(c.Text, {
-          className: x.tip,
+          className: O.tip,
           variant: "text-sm/bold",
           children: v.intl.string(v.t.b5Cpof)
         })]
@@ -152,12 +152,12 @@ let O = Chunk647438.memo(function(e) {
       multiplier: j ? P.multiplier : I.current.multiplier
     }), [j, P, I]);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(O, {
+      children: [(0, r.jsx)(x, {
         channelId: t,
         width: m
       }), (0, r.jsx)(o.animated.div, {
         ref: p,
-        className: x.combo,
+        className: O.combo,
         style: S,
         children: (0, r.jsx)(E, {
           value: T,

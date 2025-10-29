@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 737243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -26,8 +26,8 @@ let f = Chunk647438.memo(function(e) {
     referencedAvatarProfile: C,
     setPopout: v
   } = e, {
-    isInteractionUserBlocked: x,
-    isInteractionUserIgnored: O
+    isInteractionUserBlocked: O,
+    isInteractionUserIgnored: x
   } = (0, l.cj)([c.Z], () => ({
     isInteractionUserBlocked: c.Z.isBlockedForMessage(f),
     isInteractionUserIgnored: c.Z.isIgnoredForMessage(f)
@@ -55,8 +55,8 @@ let f = Chunk647438.memo(function(e) {
     message: f,
     channel: h,
     compact: m,
-    isInteractionUserBlocked: x,
-    isInteractionUserIgnored: O,
+    isInteractionUserBlocked: O,
+    isInteractionUserIgnored: x,
     showAvatarPopout: b,
     showUsernamePopout: g,
     showDataPopout: _,

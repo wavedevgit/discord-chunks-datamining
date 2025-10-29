@@ -2,7 +2,7 @@
 /** chunk id: 434404, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./953529.js");
 var Chunk990547 = require("./990547.js"),
   Chunk544891 = require("./544891.js"),
@@ -230,8 +230,8 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
         discoverySplash: C,
         publicUpdatesChannelId: N,
         premiumProgressBarEnabled: P,
-        profile: w,
-        moderatorReportingEnabled: D
+        profile: D,
+        moderatorReportingEnabled: w
       } = t, L = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, x = A(T({
         name: n,
         description: r,
@@ -256,8 +256,8 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
       }, null != P ? {
         premium_progress_bar_enabled: P
       } : null), {
-        profile: null != w ? (0, l.n)(w) : w,
-        moderator_reporting_enabled: D
+        profile: null != D ? (0, l.n)(D) : D,
+        moderator_reporting_enabled: w
       });
       return a.Z.dispatch({
         type: "GUILD_SETTINGS_SUBMIT"
@@ -441,4 +441,4 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
       }))
     }
   },
-  w = P
+  D = P

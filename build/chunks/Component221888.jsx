@@ -117,7 +117,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     users: t,
     guildId: n,
@@ -145,7 +145,7 @@ function w(e) {
     })
   })
 }
-let D = [];
+let w = [];
 
 function L(e) {
   let {
@@ -159,9 +159,9 @@ function L(e) {
   } = e, A = i.useRef(null), R = (0, p.Z)(), [L, x] = i.useState(false), M = i.useRef(new u.sW(N, () => x(false))), k = (0, c.Wu)([m.Z, g.default], () => {
     if (s.type === y.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
-      return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
+      return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : w
     }
-    return s.type === y.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : D
+    return s.type === y.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : w
   }, [s]);
   i.useEffect(() => {
     R && (M.current.cancel(), x(false))
@@ -185,7 +185,7 @@ function L(e) {
       })
     }, [U, j]);
   if (0 === k.length) return null;
-  if (b) return (0, r.jsx)(w, {
+  if (b) return (0, r.jsx)(D, {
     maxVisibleUsers: T,
     users: k,
     guildId: a,

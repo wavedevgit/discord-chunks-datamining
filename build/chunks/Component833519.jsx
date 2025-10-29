@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 833519, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => q,
@@ -60,7 +60,7 @@ function z(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [n || i ? null : (0, r.jsx)(k.Z, {
       participant: t
-    }), i || null == c || c.state === B.jm8.ENDED || c.state === B.jm8.FAILED ? null : (0, r.jsx)(x.Z, {
+    }), i || null == c || c.state === B.jm8.ENDED || c.state === B.jm8.FAILED ? null : (0, r.jsx)(O.Z, {
       size: m.ZP.Sizes.SMALL,
       className: G.liveIndicator,
       participant: t,
@@ -78,7 +78,7 @@ function q(e) {
     onVideoResize: l,
     fit: m,
     popoutType: g,
-    width: x,
+    width: O,
     focused: k,
     wrapperClassName: U,
     paused: z = false
@@ -90,7 +90,7 @@ function q(e) {
     defaultWatchMultipleStreams: et
   } = (0, y.P)({
     location: "StreamTile"
-  }), en = (0, o.e7)([P.Z], () => P.Z.getAllActiveStreams().length > 0), er = (0, o.e7)([N.Z], () => N.Z.isFocused()), ei = (null == ee ? true : ee.ownerId) === Y, el = ei && !er && g === h.P.NO_POPOUT, ea = null != ee ? (0, C.Z)(ee, J, J.id === Y, el) : null, eo = x < 195;
+  }), en = (0, o.e7)([P.Z], () => P.Z.getAllActiveStreams().length > 0), er = (0, o.e7)([N.Z], () => N.Z.isFocused()), ei = (null == ee ? true : ee.ownerId) === Y, el = ei && !er && g === h.P.NO_POPOUT, ea = null != ee ? (0, C.Z)(ee, J, J.id === Y, el) : null, eo = O < 195;
   (0, p.ZP)(() => {
     !en && (null == $ ? true : $.isGuildStageVoice()) && !ei && ((0, d.rn)(X), u.Z.updateStageStreamSize(X.channelId, false))
   });
@@ -100,7 +100,7 @@ function q(e) {
   }, [q, ee, n]);
   let {
     allowGoLiveZoomPan: ec
-  } = (0, O.H)({
+  } = (0, x.H)({
     location: "StreamTile"
   });
   if (K) return (0, r.jsx)(L.Z, {
@@ -112,19 +112,19 @@ function q(e) {
   if ((null == ee ? true : ee.state) === B.jm8.ENDED) return (0, r.jsx)(M.Z, {
     selected: n,
     stream: ee,
-    width: x
+    width: O
   });
   if (null != es || (null == ee ? true : ee.state) === B.jm8.FAILED) return (0, r.jsx)(R.Z, {
     avError: null == es ? true : es.type,
     avErrorContext: es,
     selected: n,
     stream: t.stream,
-    width: x
+    width: O
   });
   if (t.type === F.fO.HIDDEN_STREAM) return (0, r.jsx)(D.Z, {
     selected: n,
     participant: t,
-    width: x
+    width: O
   });
   if (!(null != ee && !n && null != q && T.Z.supports(V.AN.VIDEO))) return (0, r.jsxs)("div", {
     className: a()(G.content, G.streamPreview, {
@@ -143,7 +143,7 @@ function q(e) {
         children: (0, r.jsx)(c.Button, {
           variant: "secondary",
           size: eo ? "sm" : "md",
-          text: x < 175 ? H.intl.string(H.t.I6JG46) : H.intl.string(H.t["7Xq/nV"])
+          text: O < 175 ? H.intl.string(H.t.I6JG46) : H.intl.string(H.t["7Xq/nV"])
         })
       }), en && !et ? (0, r.jsx)("div", {
         className: a()(G.cta, G.addCta),
@@ -202,7 +202,7 @@ function q(e) {
       }
       return e
     }({
-      size: (0, A.L)(x)
+      size: (0, A.L)(O)
     }, ea)) : null, (0, r.jsx)(w.Z, {
       stream: X,
       popoutType: g

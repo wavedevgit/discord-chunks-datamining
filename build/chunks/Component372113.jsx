@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk997267 = require("./997267.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,14 +42,14 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -171,7 +171,7 @@ function U(e) {
       return y ? (0, r.jsx)(G, {
         ctaConfig: b,
         tooltipProps: e
-      }) : (0, r.jsx)(u.Button, x(D({}, e), {
+      }) : (0, r.jsx)(u.Button, x(w({}, e), {
         fullWidth: true,
         variant: "primary",
         disabled: null == b.onClick,
@@ -197,7 +197,7 @@ function G(e) {
     className: o()({
       [P.fullWidthShinyCtaButtonWrapper]: d
     }),
-    children: (0, r.jsx)(u.gtL, x(D({}, a), {
+    children: (0, r.jsx)(u.gtL, x(w({}, a), {
       "data-migration-pending": true,
       fullWidth: true,
       wrapperClassName: P.ctaButtonWrapper,
@@ -206,7 +206,7 @@ function G(e) {
       onClick: null != (t = i.onClick) ? t : true,
       children: i.text
     }))
-  }) : (0, r.jsx)(u.Button, x(D({}, a), {
+  }) : (0, r.jsx)(u.Button, x(w({}, a), {
     fullWidth: true,
     variant: "primary",
     disabled: null == i.onClick,
@@ -226,11 +226,11 @@ let B = e => {
     isAnimating: y,
     contentPosition: S,
     sourceQuestContent: A
-  } = e, N = (0, g._Q)(n), w = (0, g.B6)(null == (t = n.userStatus) ? true : t.completedAt, {
+  } = e, N = (0, g._Q)(n), D = (0, g.B6)(null == (t = n.userStatus) ? true : t.completedAt, {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), D = N >= g.OH.ACCEPTED, L = N >= g.OH.COMPLETED, x = (0, m.Xv)(n.config), G = p || y, B = (0, g.t5)(n, C.dr.QUESTS_CARD, a, A), Z = (0, h.O5)(), F = i.useMemo(() => v.r.build(n.config), [n.config]), V = (0, g.Rf)(n), H = (0, O.DD)({
+  }), w = N >= g.OH.ACCEPTED, L = N >= g.OH.COMPLETED, x = (0, m.Xv)(n.config), G = p || y, B = (0, g.t5)(n, C.dr.QUESTS_CARD, a, A), Z = (0, h.O5)(), F = i.useMemo(() => v.r.build(n.config), [n.config]), V = (0, g.Rf)(n), H = (0, O.DD)({
     quest: n,
     taskDetails: V,
     location: C.dr.QUESTS_CARD,
@@ -287,7 +287,7 @@ let B = e => {
       }), (0, r.jsxs)("div", {
         className: P.taskDetails,
         children: [(0, r.jsx)(u.Text, {
-          variant: M(a, c, D),
+          variant: M(a, c, w),
           className: P.taskInstructions,
           children: _ ? R.intl.formatToPlainString(R.t["ge+AJp"], {
             questName: n.config.messages.questName
@@ -301,7 +301,7 @@ let B = e => {
             isQuestExpired: _,
             sharedQuestFields: F,
             collectibleQuestRewardDescription: H,
-            formattedCompletionDate: w
+            formattedCompletionDate: D
           })
         })]
       }), Y ? (0, r.jsxs)(u.ButtonGroup, {

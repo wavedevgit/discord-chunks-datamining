@@ -158,7 +158,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       children: t
     })
   },
-  w = Chunk647438.memo(function(e) {
+  D = Chunk647438.memo(function(e) {
     var {
       options: t,
       renderAsStandaloneElement: n,
@@ -194,7 +194,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       }), u]
     }) : u
   }),
-  D = e => {
+  w = e => {
     let {
       step: t,
       billingAddressInfo: n,
@@ -224,7 +224,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
         }))
       }), (0, r.jsx)("div", {
         className: s()(O.addressElementContainer, m ? O.visible : [O.hidden, O.rightToLeftEntry]),
-        children: (0, r.jsx)(w, S(I({}, l), {
+        children: (0, r.jsx)(D, S(I({}, l), {
           internalKey: d,
           renderAsStandaloneElement: u === y.He.PAYMENT_REQUEST,
           billingAddressInfo: n
@@ -254,7 +254,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
     return o || null != s || null == l ? (0, r.jsx)(L, {}) : (0, r.jsx)(a.Elements, {
       stripe: l,
       options: I({}, i),
-      children: (0, r.jsx)(D, I({}, n))
+      children: (0, r.jsx)(w, I({}, n))
     })
   },
   M = ["applePay", "googlePay", "link"],

@@ -30,7 +30,7 @@ function C(e) {
     context: n,
     application: s,
     sectionName: c
-  } = e, C = "channel" === n.type ? n.channel : true, P = (0, r.e7)([p.Z], () => p.Z.entrypoint()), A = null != (t = (0, d.q)(s.id === g.bi.BUILT_IN ? null : s.id)) ? t : s, _ = (0, f.ye)(A) ? E : x.Z, O = l.useRef(null), [I, S] = l.useState(false), {
+  } = e, C = "channel" === n.type ? n.channel : true, P = (0, r.e7)([p.Z], () => p.Z.entrypoint()), A = null != (t = (0, d.q)(s.id === x.bi.BUILT_IN ? null : s.id)) ? t : s, _ = (0, f.ye)(A) ? E : g.Z, O = l.useRef(null), [I, S] = l.useState(false), {
     iconURL: T,
     name: L
   } = l.useMemo(() => (0, f.sl)(A, {
@@ -85,7 +85,7 @@ function E(e) {
     size: 2048,
     names: ["embedded_cover"]
   }), o = (0, f.yJ)(n), u = null != o && null != o.activity_preview_video_asset_id ? (0, s.Z)(n.id, o.activity_preview_video_asset_id) : null;
-  return (0, i.jsx)(x.Z, {
+  return (0, i.jsx)(g.Z, {
     context: t,
     application: n,
     imageCoverUrl: a.url,

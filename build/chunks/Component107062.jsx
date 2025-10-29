@@ -35,7 +35,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
     username: t.username,
     activity: e.extra.activity_name
   }),
-  w = (e, t, n) => {
+  D = (e, t, n) => {
     let r = R.t["bES+y2"],
       i = b.ZP.getName(t.guild_id, t.id, n),
       a = e.extra.activity_name;
@@ -44,7 +44,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
       userName: i
     }).replaceAll("*", "")
   },
-  D = e => {
+  w = e => {
     let {
       entry: t,
       channel: n,
@@ -89,12 +89,12 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
       })
     }, z = i.useCallback(e => {
       if ((null == M ? true : M.src) == null || null == t || null == k) return;
-      let r = W > 0 ? D({
+      let r = W > 0 ? w({
         entry: n,
         channel: t,
         users: [H, Y],
         countOthers: W
-      }) : w(n, t, k);
+      }) : D(n, t, k);
       return (0, I.C4)({
         entry: n,
         applicationImageSrc: null == M ? true : M.src,

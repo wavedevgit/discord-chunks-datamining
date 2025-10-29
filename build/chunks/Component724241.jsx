@@ -38,7 +38,7 @@ function p(e) {
     pendingGlobalName: g,
     user: t,
     guildMember: A
-  }), w = () => {
+  }), D = () => {
     if (null != A && null !== h && (null != A.avatar || null != h)) return (0, r.jsx)(l.Z, {
       user: t,
       nickname: P
@@ -50,7 +50,7 @@ function p(e) {
     children: [(0, r.jsx)(o.Z, {
       user: t,
       guildId: null == p ? true : p.id,
-      usernameIcon: w(),
+      usernameIcon: D(),
       nickname: P,
       pendingDisplayNameStyles: v,
       pronouns: R,

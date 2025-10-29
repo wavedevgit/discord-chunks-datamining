@@ -65,7 +65,7 @@ function P(e) {
   I.add(t)
 }
 
-function w(e) {
+function D(e) {
   let {
     applicationId: t,
     entitlements: n
@@ -73,7 +73,7 @@ function w(e) {
   for (let e of (I.delete(t), T.add(t), n)) true !== e.consumed && C(e)
 }
 
-function D(e) {
+function w(e) {
   let {
     entitlements: t
   } = e;
@@ -231,9 +231,9 @@ class Z extends(r = Chunk442837.yh) {
 h(Z, "displayName", "EntitlementStore");
 let F = new Z(Chunk570140.Z, {
   ENTITLEMENT_FETCH_APPLICATION_START: P,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: w,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: D,
   ENTITLEMENT_FETCH_APPLICATION_FAIL: L,
-  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: D,
+  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: w,
   SKU_PURCHASE_SUCCESS: j,
   VIRTUAL_CURRENCY_REDEEM_SUCCESS: j,
   LIBRARY_FETCH_SUCCESS: U,

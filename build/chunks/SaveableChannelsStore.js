@@ -113,8 +113,8 @@ class S extends Chunk750041.Z {
       CONNECTION_OPEN_SUPPLEMENTAL: C,
       GUILD_DELETE: L,
       LOGIN_SUCCESS: x,
-      THREAD_DELETE: D,
-      THREAD_UPDATE: w
+      THREAD_DELETE: w,
+      THREAD_UPDATE: D
     })
   }
 }
@@ -143,11 +143,11 @@ function P(e) {
   S.deleteChannel(e.channel.id)
 }
 
-function w(e) {
+function D(e) {
   N(e.channel)
 }
 
-function D(e) {
+function w(e) {
   S.deleteChannel(e.channel.id)
 }
 

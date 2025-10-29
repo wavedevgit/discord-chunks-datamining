@@ -7,9 +7,9 @@ require.d(exports, {
   Db: () => U,
   Dx: () => N,
   R: () => k,
-  TB: () => w,
+  TB: () => D,
   XE: () => x,
-  hs: () => D,
+  hs: () => w,
   w: () => C,
   xR: () => M,
   xU: () => L,
@@ -159,7 +159,7 @@ async function P(e, t) {
   })
 }
 
-function w(e) {
+function D(e) {
   c.DZ.updateAsync("favoriteSoundboardSounds", t => i().size(t.soundIds) >= E.oX ? (s.Z.show({
     title: b.intl.string(b.t["+XYXtZ"]),
     body: b.intl.formatToPlainString(b.t.JaIyFi, {
@@ -168,7 +168,7 @@ function w(e) {
   }), false) : !t.soundIds.includes(e) && void t.soundIds.push(e), E.fy.INFREQUENT_USER_ACTION)
 }
 
-function D(e) {
+function w(e) {
   c.DZ.updateAsync("favoriteSoundboardSounds", t => {
     t.soundIds = t.soundIds.filter(t => t !== e)
   }, E.fy.INFREQUENT_USER_ACTION)

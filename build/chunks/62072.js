@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 62072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -49,7 +49,7 @@ let I = function(e, t, n) {
         ((0, v.isMac)() ? N : T) && y.wS && (n.preventDefault(), (0, y.JG)(w.content));
         break;
       case "e":
-        r && !M.isSystemDM() && (0, O.Z)(w, R) && (n.preventDefault(), (0, S.Hd)(M, w));
+        r && !M.isSystemDM() && (0, x.Z)(w, R) && (n.preventDefault(), (0, S.Hd)(M, w));
         break;
       case "p":
         (r || A) && (0, E.Z)(w, M) && (n.preventDefault(), (0, S.rY)(M, w, n));
@@ -86,7 +86,7 @@ let I = function(e, t, n) {
       case "t":
         if (r && (0, c.ki)(M, w)) n.preventDefault(), (0, u.R6)(M, w, "Message Shortcut");
         else if (w.hasFlag(P.iLy.HAS_THREAD)) {
-          let e = f.Z.getChannel(x.default.castMessageIdAsChannelId(w.id));
+          let e = f.Z.getChannel(O.default.castMessageIdAsChannelId(w.id));
           null != e && (r || A) && (n.preventDefault(), (0, u.ok)(e, A))
         }
         break;

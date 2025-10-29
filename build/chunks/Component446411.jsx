@@ -2,18 +2,15 @@
 /** chunk id: 446411, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BC: () => ea,
-  ZP: () => es
+  BC: () => et,
+  ZP: () => er
 }), require("./388685.js"), require("./539854.js"), require("./953529.js"), require("./35282.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk228458 = require("./228458.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
-  Chunk399654 = require("./399654.js"),
-  Chunk370298 = require("./370298.jsx"),
   Chunk635477 = require("./635477.js"),
   Chunk715697 = require("./715697.jsx"),
   Chunk95398 = require("./95398.jsx"),
@@ -45,10 +42,9 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk781452 = require("./781452.js"),
-  Chunk374299 = require("./374299.js"),
   Chunk430864 = require("./430864.js");
 
-function W(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -57,20 +53,20 @@ function W(e, t, n) {
   }) : e[t] = n, e
 }
 
-function K(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      W(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
 }
 
-function z(e, t) {
+function H(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -81,31 +77,31 @@ function z(e, t) {
   return n
 }
 
-function q(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : z(Object(t)).forEach(function(n) {
+function Y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : H(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let X = 32,
-  Q = 12,
-  J = 150,
-  $ = 144,
-  ee = 520,
-  et = 5,
-  en = 150;
+let W = 32,
+  K = 12,
+  z = 150,
+  q = 144,
+  X = 520,
+  Q = 5,
+  J = 150;
 
-function er(e, t) {
-  let n = Q / t,
+function $(e, t) {
+  let n = K / t,
     r = e * n;
   return "".concat(r + 1, " / ").concat(r + n + 1)
 }
 
-function ei(e) {
-  let t = k.Z.toURLSafe(e);
+function ee(e) {
+  let t = L.Z.toURLSafe(e);
   return null == t ? e : (t.searchParams.set("format", "png"), t.toString())
 }
 
-function ea(e) {
+function et(e) {
   var t, n;
   let {
     className: r,
@@ -121,67 +117,67 @@ function ea(e) {
     renderVideoComponent: m,
     renderLinkComponent: g,
     playable: E = true,
-    autoPlay: b = false,
-    autoMute: y,
-    volume: O,
+    autoPlay: y = false,
+    autoMute: O,
+    volume: v,
     onPlay: I,
     onPause: T,
     onEnded: S,
-    onControlsHide: A,
-    onControlsShow: C,
-    onVolumeChange: N,
-    onMute: P,
-    href: D,
-    placeholder: L,
-    placeholderVersion: M,
-    sourceMetadata: k
-  } = e, [U, G] = a.useState(b), Z = null != d && null == d.proxyURL, F = a.useCallback(() => G(false), [G]), H = e => {
-    e.preventDefault(), e.stopPropagation(), null == I || I(false), G(true), Z && (w.S.dispatch(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED), w.S.subscribeOnce(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED, F))
+    onControlsHide: C,
+    onControlsShow: R,
+    onVolumeChange: P,
+    onMute: w,
+    href: L,
+    placeholder: M,
+    placeholderVersion: k,
+    sourceMetadata: U
+  } = e, [G, Z] = a.useState(y), F = null != d && null == d.proxyURL, V = a.useCallback(() => Z(false), [Z]), H = e => {
+    e.preventDefault(), e.stopPropagation(), null == I || I(false), Z(true), F && (N.S.dispatch(j.CkL.VIDEO_EMBED_PLAYBACK_STARTED), N.S.subscribeOnce(j.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V))
   };
   a.useEffect(() => () => {
-    Z && w.S.unsubscribe(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED, F)
-  }, [Z, F]);
+    F && N.S.unsubscribe(j.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V)
+  }, [F, V]);
   let {
     width: Y,
     height: W
   } = u;
   null != d && (Y = d.width, W = d.height);
-  let K = (0, x.Tj)({
+  let K = (0, D.Tj)({
     width: Y,
     height: W,
     maxWidth: l,
     maxHeight: c
   });
-  Y = Math.max(K.width, J), W = Math.max(K.height, $);
-  let z = (0, R.q)(u);
+  Y = Math.max(K.width, z), W = Math.max(K.height, q);
+  let X = (0, A.q)(u);
   if (null != d && null != d.proxyURL) return (0, i.jsx)("div", {
-    className: s()(V.embedVideo, r),
+    className: s()(B.embedVideo, r),
     children: m({
-      poster: z,
+      poster: X,
       src: d.proxyURL,
-      placeholder: L,
-      placeholderVersion: M,
+      placeholder: M,
+      placeholderVersion: k,
       width: Y,
       height: W,
       responsive: p,
-      autoPlay: b,
+      autoPlay: y,
       onEnded: S,
       naturalWidth: d.width,
       naturalHeight: d.height,
-      onVolumeChange: N,
+      onVolumeChange: P,
       playable: E,
-      autoMute: y,
-      volume: O,
+      autoMute: O,
+      volume: v,
       onPlay: I,
       onPause: T,
-      onMute: P,
-      onControlsHide: A,
-      onControlsShow: C,
-      sourceMetadata: k
+      onMute: w,
+      onControlsHide: C,
+      onControlsShow: R,
+      sourceMetadata: U
     })
   });
-  if (U && null != d) {
-    let e, t = true === y || "function" == typeof y && y(),
+  if (G && null != d) {
+    let e, t = true === O || "function" == typeof O && O(),
       n = {
         width: Y,
         height: W
@@ -212,9 +208,9 @@ function ea(e) {
       className: r,
       style: n,
       children: (0, i.jsx)("div", {
-        className: s()(V.embedVideo, o),
+        className: s()(B.embedVideo, o),
         style: a,
-        children: (0, i.jsx)(j.ZP, {
+        children: (0, i.jsx)(x.ZP, {
           provider: f,
           src: d.url,
           style: e,
@@ -227,7 +223,7 @@ function ea(e) {
     })
   }
   return (0, i.jsxs)("div", {
-    className: s()(V.embedVideo, r),
+    className: s()(B.embedVideo, r),
     style: p ? {
       maxWidth: Y
     } : {
@@ -235,36 +231,36 @@ function ea(e) {
       height: W
     },
     children: [h({
-      src: z,
+      src: X,
       width: Y,
       height: W,
       maxWidth: Y,
       maxHeight: W,
       responsive: p,
-      containerClassName: V.embedVideoImageComponent,
-      imageClassName: V.embedVideoImageComponentInner,
-      placeholder: L,
-      placeholderVersion: M,
+      containerClassName: B.embedVideoImageComponent,
+      imageClassName: B.embedVideoImageComponentInner,
+      placeholder: M,
+      placeholderVersion: k,
       onClick: E && null != d ? H : null,
-      sourceMetadata: k,
+      sourceMetadata: U,
       analyticsSource: "EmbedVideo"
     }), (0, i.jsx)("div", {
-      className: V.embedVideoActions,
+      className: B.embedVideoActions,
       children: (0, i.jsx)("div", {
-        className: V.centerContent,
-        children: E ? (0, i.jsx)(v.Z, {
+        className: B.centerContent,
+        children: E ? (0, i.jsx)(b.Z, {
           onPlay: null != d ? H : null,
-          externalURL: D,
+          externalURL: L,
           renderLinkComponent: g,
-          messageId: null == k || null == (t = k.message) ? true : t.id,
-          channelId: null == k || null == (n = k.message) ? true : n.channel_id
+          messageId: null == U || null == (t = U.message) ? true : t.id,
+          channelId: null == U || null == (n = U.message) ? true : n.channel_id
         }) : null
       })
     })]
   })
 }
 
-function eo(e) {
+function en(e) {
   let {
     className: t,
     href: n,
@@ -280,14 +276,14 @@ function eo(e) {
     playable: p = true,
     hiddenSpoilers: h,
     placeholder: m,
-    placeholderVersion: g,
-    sourceMetadata: E
+    placeholderVersion: E,
+    sourceMetadata: b
   } = e;
-  return (0, i.jsx)(y.Z, {
-    className: s()(V.embedVideo, t),
+  return (0, i.jsx)(g.Z, {
+    className: s()(B.embedVideo, t),
     original: n,
-    poster: (0, R.q)(l),
-    src: (0, R.q)(c),
+    poster: (0, A.q)(l),
+    src: (0, A.q)(c),
     alt: f,
     width: l.width,
     height: l.height,
@@ -302,11 +298,11 @@ function eo(e) {
     hiddenSpoilers: h,
     disableAltTextDisplay: _,
     placeholder: m,
-    placeholderVersion: g,
-    sourceMetadata: E
+    placeholderVersion: E,
+    sourceMetadata: b
   })
 }
-class es extends(r = Chunk647438.PureComponent) {
+class er extends(r = Chunk647438.PureComponent) {
   renderProvider() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
       {
@@ -360,13 +356,13 @@ class es extends(r = Chunk647438.PureComponent) {
           disableAnimations: l
         } = o;
         return (0, i.jsxs)("div", {
-          className: s()(V.embedAuthor, V.embedMargin),
+          className: s()(B.embedAuthor, B.embedMargin),
           children: [null != t.iconProxyURL ? (0, i.jsx)("img", {
             alt: "",
-            className: V.embedAuthorIcon,
-            src: a && !l ? t.iconProxyURL : ei(t.iconProxyURL)
+            className: B.embedAuthorIcon,
+            src: a && !l ? t.iconProxyURL : ee(t.iconProxyURL)
           }) : null, null != t.url ? n({
-            className: V.embedAuthorNameLink,
+            className: B.embedAuthorNameLink,
             href: t.url,
             tabIndex: e ? 0 : false,
             children: t.name,
@@ -375,7 +371,7 @@ class es extends(r = Chunk647438.PureComponent) {
             messageId: null == r ? true : r.id,
             channelId: null == r ? true : r.channel_id
           }) : (0, i.jsx)("span", {
-            className: V.embedAuthorName,
+            className: B.embedAuthorName,
             children: t.name
           })]
         })
@@ -387,8 +383,8 @@ class es extends(r = Chunk647438.PureComponent) {
       width: t,
       height: n
     } = e;
-    return (0, i.jsx)(T.ZT, {
-      className: V.contentPlaceholder,
+    return (0, i.jsx)(O.ZT, {
+      className: B.contentPlaceholder,
       width: t,
       height: n,
       opacity: .3
@@ -414,9 +410,9 @@ class es extends(r = Chunk647438.PureComponent) {
       })
     }) : (0, Chunk951288.jsx)("div", {
       className: s()(Chunk781452.embedTitle, Chunk781452.embedMargin),
-      children: null != Chunk228458 ? require({
+      children: null != Chunk481060 ? require({
         className: Chunk781452.embedTitleLink,
-        href: Chunk228458,
+        href: Chunk481060,
         tabIndex: module ? 0 : false,
         children: r(exports, Chunk120356),
         target: "_blank",
@@ -461,8 +457,8 @@ class es extends(r = Chunk647438.PureComponent) {
           disableAnimations: l
         } = i;
         return a({
-          containerClassName: V.embedThumbnail,
-          src: (0, R.q)(t),
+          containerClassName: B.embedThumbnail,
+          src: (0, A.q)(t),
           original: t.url,
           width: t.width,
           height: t.height,
@@ -504,15 +500,15 @@ class es extends(r = Chunk647438.PureComponent) {
         return e.map((e, r) => {
           let [a, o] = e;
           return (0, i.jsxs)("div", {
-            className: V.embedField,
+            className: B.embedField,
             style: {
-              gridColumn: er(r, n)
+              gridColumn: $(r, n)
             },
             children: [(0, i.jsx)("div", {
-              className: V.embedFieldName,
+              className: B.embedFieldName,
               children: a
             }), (0, i.jsx)("div", {
-              className: V.embedFieldValue,
+              className: B.embedFieldValue,
               children: o
             })]
           }, "".concat(t, "-").concat(r))
@@ -538,176 +534,123 @@ class es extends(r = Chunk647438.PureComponent) {
       isGalleryImage: true,
       allImages: s.images
     }));
-    return null == Chunk481060 && null == Chunk607070 && null == Chunk399654 && null == Chunk370298 ? null : (0, Chunk951288.jsxs)("div", {
+    return null == Chunk607070 && null == Chunk635477 && null == Chunk715697 && null == Chunk95398 ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk781452.embedGalleryImagesWrapper,
       style: {
-        height: Chunk228458
+        height: Chunk481060
       },
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk781452.embedGallerySide,
         children: [(0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(s.images[0].url, s.images[0]),
-          children: Chunk481060
-        }, 0), null != Chunk370298 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
+          children: Chunk607070
+        }, 0), null != Chunk95398 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(null == (e = s.images[2]) ? true : module.url, s.images[2]),
-          children: Chunk399654
+          children: Chunk715697
         }, 2)]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk781452.embedGallerySide,
         children: [(0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(null == (t = s.images[1]) ? true : exports.url, s.images[1]),
-          children: Chunk607070
-        }, 1), null == Chunk370298 && null != Chunk399654 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
+          children: Chunk635477
+        }, 1), null == Chunk95398 && null != Chunk715697 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(null == (n = s.images[2]) ? true : require.url, s.images[2]),
-          children: Chunk399654
-        }, 2), null != Chunk370298 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
+          children: Chunk715697
+        }, 2), null != Chunk95398 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(null == (r = s.images[3]) ? true : r.url, s.images[3]),
-          children: Chunk370298
+          children: Chunk95398
         }, 3)]
       })]
     })
   }
-  renderImageHoverButtons(e) {
-    let {
-      mimeType: t,
-      downloadURL: n,
-      isVisualMediaType: r,
-      channelId: a
-    } = e, o = () => {
-      this.setState({
-        showImageAppMenu: !this.state.showImageAppMenu
-      })
-    };
-    return (0, i.jsx)("div", {
-      className: s()(H.hoverButtonGroup, {
-        [H.nonMediaMosaicItem]: !r,
-        [H.forceShowHover]: this.state.showImageAppMenu
-      }),
-      children: (0, i.jsx)(f.Z, {
-        toggleShowMenu: o,
-        showMenu: this.state.showImageAppMenu,
-        channelId: a,
-        className: s()(H.hoverButton, {
-          [H.selected]: this.state.showImageAppMenu
-        }),
-        imageUrl: n,
-        mimeType: t
-      })
+  handleImageHover() {
+    var e;
+    let t = Chunk592125.Z.getChannel(null == (e = this.props.message) ? true : module.channel_id);
+    Chunk626135.default.track(Chunk981631.rMx.IMAGE_HOVERED, {
+      guild_id: null == exports ? true : exports.guild_id,
+      channel_id: null == exports ? true : exports.id,
+      image_recommendations_shown: false
     })
   }
-  handleImageHover(e, t, n) {
-    if (n)
-      if (e && !this.state.isImageHovered) {
-        var r, i;
-        this.setState({
-          isImageHovered: true
-        });
-        let e = N.Z.getChannel(null == (r = this.props.message) ? true : r.channel_id);
-        this.props.showImageRecs && (0, d.a)({
-          channelId: null != (i = null == e ? true : e.id) ? i : "",
-          location: l.I.CONTEXTUAL_IMAGE,
-          withCommands: true
-        }), P.default.track(B.rMx.IMAGE_HOVERED, {
-          guild_id: null == e ? true : e.guild_id,
-          channel_id: null == e ? true : e.id,
-          image_recommendations_shown: this.props.showImageRecs
-        })
-      } else !e && this.state.isImageHovered && this.setState({
-        isImageHovered: false
-      })
-  }
   renderImage() {
-    var e, t, n, r;
+    var e, t;
     let {
-      hiddenSpoiler: a = false,
-      isVisible: o = true,
-      image: l,
-      isGalleryImage: c = false,
-      alt: u = Chunk388032.intl.string(Chunk388032.t.X4IxWL),
-      allImages: d = null
+      hiddenSpoiler: n = false,
+      isVisible: r = true,
+      image: a,
+      isGalleryImage: o = false,
+      alt: l = Chunk388032.intl.string(Chunk388032.t.X4IxWL),
+      allImages: c = null
     } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, {
-      renderImageComponent: f,
-      className: _,
-      autoPlayGif: p
+      renderImageComponent: u,
+      className: d,
+      autoPlayGif: f
     } = this.props, {
-      maxMediaWidth: h,
+      maxMediaWidth: _,
       maxMediaHeight: m,
-      sourceMetadata: b
+      sourceMetadata: g
     } = this.state;
-    if (null == Chunk228458) return null;
-    let y = (0, Chunk52824.q)(Chunk228458),
+    if (null == Chunk647438) return null;
+    let b = (0, Chunk52824.q)(Chunk647438),
       {
-        srcToOnClickOverride: v,
-        srcToHandlePreloadImage: T
-      } = null == Chunk399654 ? {
+        srcToOnClickOverride: O,
+        srcToHandlePreloadImage: v
+      } = null == Chunk607070 ? {
         srcToOnClickOverride: {},
         srcToHandlePreloadImage: {}
-      } : (0, Chunk120324.G)(Chunk399654.map(e => q(K({}, (0, E.Hv)(e, b, "IMAGE")), {
+      } : (0, Chunk120324.G)(Chunk607070.map(e => Y(V({}, (0, h.Hv)(e, g, "IMAGE")), {
         original: e.url,
         srcIsAnimated: e.srcIsAnimated
       })), {}, "Embed"),
-      S = Chunk124347.ZP.isAnimated({
-        src: (0, Chunk52824.q)(Chunk228458),
-        original: Chunk228458.url,
+      I = Chunk124347.ZP.isAnimated({
+        src: (0, Chunk52824.q)(Chunk647438),
+        original: Chunk647438.url,
         animated: false,
-        srcIsAnimated: Chunk228458.srcIsAnimated
+        srcIsAnimated: Chunk647438.srcIsAnimated
       }),
-      A = {
-        containerClassName: s()(Chunk635477, {
-          [Chunk781452.embedMedia]: !Chunk481060,
-          [Chunk781452.embedImage]: !Chunk481060,
-          [Chunk781452.galleryImage]: Chunk481060
+      T = {
+        containerClassName: s()(Chunk715697, {
+          [Chunk781452.embedMedia]: !Chunk120356,
+          [Chunk781452.embedImage]: !Chunk120356,
+          [Chunk781452.galleryImage]: Chunk120356
         }),
-        imageContainerClassName: Chunk481060 ? Chunk781452.galleryImageContainer : true,
-        imageClassName: Chunk481060 ? Chunk781452.embedGalleryImageElement : true,
-        src: (0, Chunk52824.q)(Chunk228458),
-        alt: null == Chunk228458.description || "" === Chunk228458.description ? Chunk607070 : Chunk228458.description,
+        imageContainerClassName: Chunk120356 ? Chunk781452.galleryImageContainer : true,
+        imageClassName: Chunk120356 ? Chunk781452.embedGalleryImageElement : true,
+        src: (0, Chunk52824.q)(Chunk647438),
+        alt: null == Chunk647438.description || "" === Chunk647438.description ? Chunk481060 : Chunk647438.description,
         responsive: true,
-        limitResponsiveWidth: !Chunk481060,
-        width: Chunk228458.width,
-        height: Chunk228458.height,
-        maxWidth: Chunk95398,
-        maxHeight: Chunk936141,
-        original: Chunk228458.url,
-        shouldLink: Chunk120356,
-        disableAltTextDisplay: null == Chunk228458.description || "" === Chunk228458.description,
-        hiddenSpoilers: Chunk647438,
-        placeholder: Chunk228458.placeholder,
-        placeholderVersion: Chunk228458.placeholderVersion,
-        srcIsAnimated: Chunk228458.srcIsAnimated,
+        limitResponsiveWidth: !Chunk120356,
+        width: Chunk647438.width,
+        height: Chunk647438.height,
+        maxWidth: Chunk936141,
+        maxHeight: Chunk624195,
+        original: Chunk647438.url,
+        shouldLink: r,
+        disableAltTextDisplay: null == Chunk647438.description || "" === Chunk647438.description,
+        hiddenSpoilers: require,
+        placeholder: Chunk647438.placeholder,
+        placeholderVersion: Chunk647438.placeholderVersion,
+        srcIsAnimated: Chunk647438.srcIsAnimated,
         mosaicStyleAlt: true
       },
-      C = null != (r = null == (e = Chunk228458.url.split(".").pop()) ? true : module.split("?")[0]) ? r : "";
-    "jpg" === Chunk400266 && (C = "jpeg");
-    let N = null != Chunk228458 && !Chunk124347.uo.test(null == Chunk228458 ? true : Chunk228458.url) && !(Chunk228458.srcIsAnimated && Chunk124347.YG.test(null == Chunk228458 ? true : Chunk228458.url)) && !(Chunk228458.srcIsAnimated && Chunk124347.FH.test(null == Chunk228458 ? true : Chunk228458.url)),
-      P = true !== this.props.isSearchResult && Chunk120356 && (null == (t = this.props.message) ? true : exports.channel_id) != null && (null == (n = this.props.message) ? true : require.channel_id) !== true && Chunk592125 && !el(Chunk228458) && null != Chunk400266;
-    return (0, Chunk951288.jsx)(Chunk947849.h.Consumer, {
-      children: e => (0, i.jsx)(G.G.Consumer, {
+      S = null != (t = null == (e = Chunk647438.url.split(".").pop()) ? true : module.split("?")[0]) ? exports : "";
+    return "jpg" === Chunk592125 && (S = "jpeg"), (0, Chunk951288.jsx)(Chunk947849.h.Consumer, {
+      children: e => (0, i.jsx)(k.G.Consumer, {
         children: t => {
           let {
-            disableAnimations: n
+            disableAnimations: r
           } = t;
-          return f(q(K({}, A), {
-            autoPlay: p && !n && !a,
-            renderAccessory: S ? e : null,
-            handlePreloadImage: T[y],
-            onClick: v[y],
-            onMouseEnter: () => this.handleImageHover(true, l, P),
-            onMouseLeave: () => this.handleImageHover(false, l, P),
-            renderAdjacentContent: () => {
-              var e, t;
-              returntrue === this.props.showImageRecs && P ? this.renderImageHoverButtons({
-                mimeType: ["image", C],
-                downloadURL: null != (t = l.proxyURL) ? t : l.url,
-                isVisualMediaType: null != l,
-                channelId: null == (e = this.props.message) ? true : e.channel_id
-              }) : null
-            },
-            sourceMetadata: b,
+          return u(Y(V({}, T), {
+            autoPlay: f && !r && !n,
+            renderAccessory: I ? e : null,
+            handlePreloadImage: v[b],
+            onClick: O[b],
+            onMouseEnter: () => this.handleImageHover(),
+            sourceMetadata: g,
             analyticsSource: "Embed"
           }))
         }
-      }, l.url)
+      }, a.url)
     })
   }
   renderVideo() {
@@ -739,8 +682,8 @@ class es extends(r = Chunk647438.PureComponent) {
         let {
           disableAnimations: s
         } = e;
-        return (0, i.jsx)(eo, {
-          className: V.embedMedia,
+        return (0, i.jsx)(en, {
+          className: B.embedMedia,
           href: r,
           thumbnail: a,
           video: o,
@@ -768,25 +711,25 @@ class es extends(r = Chunk647438.PureComponent) {
           videoControlsShown: false
         })
       };
-    return (0, Chunk951288.jsx)(ea, {
+    return (0, Chunk951288.jsx)(et, {
       className: Chunk781452.embedMedia,
       href: r,
-      allowFullScreen: Chunk399654,
+      allowFullScreen: Chunk715697,
       thumbnail: Chunk647438,
       video: Chunk120356,
       provider: null == s ? true : s.name,
-      maxWidth: Chunk715697,
-      maxHeight: Chunk95398,
+      maxWidth: Chunk947849,
+      maxHeight: Chunk768494,
       responsive: true,
-      renderImageComponent: Chunk481060,
-      renderVideoComponent: Chunk228458,
-      renderLinkComponent: Chunk607070,
-      onControlsShow: Chunk947849,
-      onControlsHide: Chunk768494,
+      renderImageComponent: Chunk607070,
+      renderVideoComponent: Chunk481060,
+      renderLinkComponent: Chunk635477,
+      onControlsShow: Chunk44824,
+      onControlsHide: Chunk124347,
       playable: exports && !require,
       placeholder: null == Chunk120356 ? true : Chunk120356.placeholder,
       placeholderVersion: null == Chunk120356 ? true : Chunk120356.placeholderVersion,
-      sourceMetadata: Chunk936141
+      sourceMetadata: Chunk624195
     })
   }
   renderFooter() {
@@ -802,17 +745,17 @@ class es extends(r = Chunk647438.PureComponent) {
           disableAnimations: a
         } = r;
         return (0, i.jsxs)("div", {
-          className: s()(V.embedFooter, V.embedMargin),
+          className: s()(B.embedFooter, B.embedMargin),
           children: [null != t.iconProxyURL && "" !== t.iconProxyURL ? (0, i.jsx)("img", {
             alt: "",
-            className: V.embedFooterIcon,
-            src: e && !a ? t.iconProxyURL : ei(t.iconProxyURL)
+            className: B.embedFooterIcon,
+            src: e && !a ? t.iconProxyURL : ee(t.iconProxyURL)
           }) : null, (0, i.jsxs)("span", {
-            className: V.embedFooterText,
+            className: B.embedFooterText,
             children: [t.text, null != t.text && null != n ? (0, i.jsx)("span", {
-              className: V.embedFooterSeparator,
+              className: B.embedFooterSeparator,
               children: "•"
-            }) : null, null != n ? (0, D.Y4)(n) : null]
+            }) : null, null != n ? (0, R.Y4)(n) : null]
           })]
         })
       }
@@ -836,7 +779,7 @@ class es extends(r = Chunk647438.PureComponent) {
     if (null == Chunk120356) return null;
     let {
       width: s,
-      height: l
+      height: c
     } = (0, Chunk956664.Tj)({
       width: Chunk120356.width,
       height: Chunk120356.height,
@@ -848,7 +791,7 @@ class es extends(r = Chunk647438.PureComponent) {
       readyState: Chunk981631.zo9.READY,
       src: "",
       width: s,
-      height: Chunk228458,
+      height: Chunk607070,
       maxWidth: r,
       maxHeight: Chunk647438,
       mediaLayoutType: Chunk217702.hV.STATIC,
@@ -919,10 +862,10 @@ class es extends(r = Chunk647438.PureComponent) {
       author: Chunk120356,
       title: s,
       description: module,
-      thumbnail: !r && Chunk607070 ? this.renderThumbnail(Chunk951288) : null,
-      fields: Chunk228458,
+      thumbnail: !r && Chunk635477 ? this.renderThumbnail(Chunk951288) : null,
+      fields: Chunk481060,
       media: exports,
-      footer: Chunk481060
+      footer: Chunk607070
     }
   }
   getMaxWidth(e) {
@@ -941,19 +884,19 @@ class es extends(r = Chunk647438.PureComponent) {
     if (null == l) return;
     let {
       width: c
-    } = (0, x.Tj)({
+    } = (0, D.Tj)({
       width: l.width,
       height: l.height,
       maxWidth: o,
       maxHeight: s
     });
-    if (!e && (i === B.hBH.VIDEO || c >= 300)) return c + X;
-    if (i === B.hBH.RICH && true !== n) return ee;
-    if (i === B.hBH.GIFV) {
+    if (!e && (i === j.hBH.VIDEO || c >= 300)) return c + W;
+    if (i === j.hBH.RICH && true !== n) return X;
+    if (i === j.hBH.GIFV) {
       var u, d, f, _;
       let {
         width: e
-      } = (0, x.Tj)({
+      } = (0, D.Tj)({
         width: null != (d = null != (u = null == r ? true : r.width) ? u : null == a ? true : a.width) ? d : 0,
         height: null != (_ = null != (f = null == r ? true : r.height) ? f : null == a ? true : a.height) ? _ : 0,
         maxWidth: o,
@@ -967,8 +910,8 @@ class es extends(r = Chunk647438.PureComponent) {
       video: e
     } = this.props.embed;
     return null != module ? {
-      minWidth: J,
-      minHeight: $
+      minWidth: z,
+      minHeight: q
     } : true
   }
   isInline() {
@@ -979,16 +922,16 @@ class es extends(r = Chunk647438.PureComponent) {
     return !module && (0, Chunk408433.dY)(exports)
   }
   renderSuppressButton(e) {
-    return (0, i.jsx)(c.P3F, {
+    return (0, i.jsx)(l.P3F, {
       focusProps: {
         offset: {
           bottom: 4
         }
       },
-      className: V.embedSuppressButton,
+      className: B.embedSuppressButton,
       onClick: e,
-      "aria-label": F.intl.string(F.t.GT3fNz),
-      children: (0, i.jsx)(c.Dio, {
+      "aria-label": G.intl.string(G.t.GT3fNz),
+      children: (0, i.jsx)(l.Dio, {
         size: "xs",
         color: "currentColor"
       })
@@ -1018,11 +961,11 @@ class es extends(r = Chunk647438.PureComponent) {
       }
     } = this.props, {
       maxMediaWidth: l,
-      maxMediaHeight: c
+      maxMediaHeight: u
     } = this.state;
     if (!this.usesJustifiedAutoStyle()) return;
     let d = e ? true : this.getMaxWidth(false);
-    if (true === d && true === i && o !== B.hBH.RICH) {
+    if (true === d && true === i && o !== j.hBH.RICH) {
       let e = null != r ? r : a;
       if (true !== e) {
         let {
@@ -1030,20 +973,20 @@ class es extends(r = Chunk647438.PureComponent) {
           minHeight: r
         } = null != (t = this.getMinSize()) ? t : {}, {
           width: i
-        } = (0, x.Tj)({
+        } = (0, D.Tj)({
           width: e.width,
           height: e.height,
           maxWidth: l,
-          maxHeight: c,
+          maxHeight: u,
           minWidth: n,
           minHeight: r
         });
         d = i
       }
     }
-    let f = en / (u.Z.fontScale / 100),
-      _ = (null != s ? (0, M.TZ)(s) : 0) >= f,
-      p = (null != (n = null == s ? true : s.split("\n").length) ? n : 0) >= et,
+    let f = J / (c.Z.fontScale / 100),
+      _ = (null != s ? (0, w.TZ)(s) : 0) >= f,
+      p = (null != (n = null == s ? true : s.split("\n").length) ? n : 0) >= Q,
       h = _ || p;
     return {
       maxWidth: true === d || h ? "max-content" : d,
@@ -1104,11 +1047,9 @@ class es extends(r = Chunk647438.PureComponent) {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, W(this, "state", K({
+    super(...e), t = this, F(this, "state", V({
       isVisible: null == this.props.obscureReason,
       videoControlsShown: false,
-      isImageHovered: false,
-      showImageAppMenu: false,
       sourceMetadata: {
         message: this.props.message,
         identifier: {
@@ -1116,15 +1057,15 @@ class es extends(r = Chunk647438.PureComponent) {
           embedIndex: this.props.embedIndex
         }
       }
-    }, (0, L.vP)(this.props.embed))), W(this, "onReveal", () => {
+    }, (0, P.vP)(this.props.embed))), F(this, "onReveal", () => {
       this.setState({
         isVisible: true
       })
-    }), W(this, "onToggleObscurity", () => {
+    }), F(this, "onToggleObscurity", () => {
       this.setState({
         isVisible: !this.state.isVisible
       })
-    }), W(this, "renderInlineMediaEmbed", function() {
+    }), F(this, "renderInlineMediaEmbed", function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
         {
           obscureReason: n,
@@ -1133,18 +1074,18 @@ class es extends(r = Chunk647438.PureComponent) {
         a = t.getMaxWidth(true);
       return (0, i.jsx)("div", {
         "aria-hidden": e,
-        className: s()(V.inlineMediaEmbed, r, {
-          [V.spoilerAttachment]: n === m.wk.SPOILER,
-          [V.hiddenExplicitAttachment]: t.shouldObscure,
-          [V.isHidden]: e,
-          [V.justifyAuto]: t.usesJustifiedAutoStyle()
+        className: s()(B.inlineMediaEmbed, r, {
+          [B.spoilerAttachment]: n === _.wk.SPOILER,
+          [B.hiddenExplicitAttachment]: t.shouldObscure,
+          [B.isHidden]: e,
+          [B.justifyAuto]: t.usesJustifiedAutoStyle()
         }),
         style: {
           maxWidth: a
         },
         children: t.renderMedia(e)
       })
-    }), W(this, "renderEmbedContent", function() {
+    }), F(this, "renderEmbedContent", function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
         {
           className: n,
@@ -1158,15 +1099,15 @@ class es extends(r = Chunk647438.PureComponent) {
           description: u,
           fields: d,
           thumbnail: f,
-          media: _,
-          footer: p
+          media: p,
+          footer: h
         } = t.renderAll();
       return (0, i.jsx)("article", {
-        className: s()(n, V.embedFull, Y.markup, {
-          [V.isHidden]: e,
-          [V.spoilerEmbed]: a === m.wk.SPOILER,
-          [V.hiddenExplicitEmbed]: t.shouldObscure,
-          [V.justifyAuto]: t.usesJustifiedAutoStyle()
+        className: s()(n, B.embedFull, Z.markup, {
+          [B.isHidden]: e,
+          [B.spoilerEmbed]: a === _.wk.SPOILER,
+          [B.hiddenExplicitEmbed]: t.shouldObscure,
+          [B.justifyAuto]: t.usesJustifiedAutoStyle()
         }),
         "aria-hidden": e,
         style: {
@@ -1174,24 +1115,20 @@ class es extends(r = Chunk647438.PureComponent) {
           maxWidth: t.getMaxWidth(false)
         },
         children: (0, i.jsx)("div", {
-          className: V.gridContainer,
+          className: B.gridContainer,
           children: (0, i.jsxs)("div", {
             className: s()({
-              [V.grid]: true,
-              [V.hasThumbnail]: null != f
+              [B.grid]: true,
+              [B.hasThumbnail]: null != f
             }),
-            children: [null != r ? t.renderSuppressButton(r) : null, o, l, c, u, d, _, f, p]
+            children: [null != r ? t.renderSuppressButton(r) : null, o, l, c, u, d, p, f, h]
           })
         })
       })
     })
   }
 }
-
-function el(e) {
-  return null != e && (e.width <= Z.OF || e.height <= Z.OF)
-}
-W(es, "defaultProps", {
+F(er, "defaultProps", {
   hideMedia: false,
   allowFullScreen: true,
   maxThumbnailWidth: 80,

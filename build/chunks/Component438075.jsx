@@ -56,8 +56,7 @@ function s(e, t) {
     compact: o = false,
     renderThreadAccessory: s,
     disableReactionCreates: l,
-    disableReactionUpdates: c,
-    isSearchResult: u
+    disableReactionUpdates: c
   } = e;
   return (0, r.jsx)(a.$p, {
     message: n,
@@ -66,7 +65,6 @@ function s(e, t) {
     hasSpoilerEmbeds: t,
     renderThreadAccessory: s,
     disableReactionCreates: l,
-    disableReactionUpdates: c,
-    isSearchResult: u
+    disableReactionUpdates: c
   })
 }

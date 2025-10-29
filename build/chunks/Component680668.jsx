@@ -52,23 +52,23 @@ function T(e) {
       onTransitionToInviteChannel: N,
       onAcceptInstantInvite: R,
       guild: P,
-      invite: w,
-      message: D,
+      invite: D,
+      message: w,
       currentUserId: L
     } = e,
-    x = L === D.author.id,
+    x = L === w.author.id,
     {
       channel: M,
       approximate_member_count: k,
       approximate_presence_count: j
-    } = w,
-    U = w.state === b.r2o.ACCEPTING,
+    } = D,
+    U = D.state === b.r2o.ACCEPTING,
     G = null != M ? (0, p.jD)(M) : null,
     B = null != P,
     Z = null != G,
     F = null != G && G.isGuildVocal(),
     V = null != G && G.isGuildStageVoice(),
-    H = (0, h.yE)(null != (t = w.flags) ? t : 0, a.$.IS_GUEST_INVITE),
+    H = (0, h.yE)(null != (t = D.flags) ? t : 0, a.$.IS_GUEST_INVITE),
     Y = null != (v = null == P ? true : P.features.has(b.GuildFeatures.HUB)) && v,
     W = null == P ? true : P.id,
     {
@@ -83,15 +83,15 @@ function T(e) {
     $ = i.useCallback(() => {
       let e = "noop";
       B ? (N(), e = "transition") : (R(), e = "accept"), (0, l.r$)({
-        invite: w,
+        invite: D,
         action: e,
-        inviter_id: D.author.id,
-        invite_message_id: D.id
+        inviter_id: w.author.id,
+        invite_message_id: w.id
       }, K)
-    }, [w, D, K, B, N, R]);
+    }, [D, w, K, B, N, R]);
   if (null == P) {
-    if (null == w.guild) return (0, r.jsx)(E.Z, {});
-    (P = m.Qs(w.guild)).premiumTier = null != (T = w.guild.premium_tier) ? T : b.Eu4.NONE
+    if (null == D.guild) return (0, r.jsx)(E.Z, {});
+    (P = m.Qs(D.guild)).premiumTier = null != (T = D.guild.premium_tier) ? T : b.Eu4.NONE
   }
   let ee = (0, g.e)({
     isVoiceChannel: F,

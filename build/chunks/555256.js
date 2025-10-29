@@ -304,8 +304,8 @@ let N = {
     let e = [];
     return N.replay && module.push("replay"), module.join(",")
   },
-  w = 10,
-  D = false,
+  D = 10,
+  w = false,
   L = "",
   x = false,
   M = false,
@@ -316,7 +316,7 @@ let N = {
     null != (t = null == e ? true : e.blockedURI) && t.includes(window.UserLeap._API_URL) && (M = true, console.warn(`[Sprig] ${e.blockedURI} is blocked by Content-Security-Policy`))
   },
   G = (e = "") => {
-    D = true, L = e
+    w = true, L = e
   };
 
 function B(e = {}) {
@@ -357,13 +357,13 @@ let Z = async ({
     ok: false,
     reportError: false
   };
-  if (D) return console.info(`UserLeap - ${L}`), s;
+  if (w) return console.info(`UserLeap - ${L}`), s;
   try {
     let t = await fetch(e, a);
     if (429 === t.status) {
       if (!x && !r || i) {
         x = true;
-        let n = t.headers.has("ratelimit-reset") ? Number(t.headers.get("ratelimit-reset")) : w;
+        let n = t.headers.has("ratelimit-reset") ? Number(t.headers.get("ratelimit-reset")) : D;
         return await v(1e3 * n), F(e, {
           ...a,
           shouldDropOnRateLimit: r,

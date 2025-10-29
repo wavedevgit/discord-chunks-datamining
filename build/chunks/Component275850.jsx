@@ -178,7 +178,7 @@ function A(e) {
       value: e.value,
       label: e.label
     }
-  }), w = i.useMemo(() => new Map(a.map(e => [e.id, e])), [a]), D = S(h, i.useMemo(() => a.find(e => e.id === n), [a, n]));
+  }), D = i.useMemo(() => new Map(a.map(e => [e.id, e])), [a]), w = S(h, i.useMemo(() => a.find(e => e.id === n), [a, n]));
   if (null == n && null != C && C.length > 0) {
     let e = a.filter(e => C.includes(e.paymentGateway));
     n = 0 === e.length ? O : e[0].id
@@ -196,7 +196,7 @@ function A(e) {
       onChange: R,
       isDisabled: E,
       className: o()({
-        [g.paymentSourceHasWarning]: null != D
+        [g.paymentSourceHasWarning]: null != w
       }, b),
       optionClassName: y,
       placeholder: m.intl.string(m.t["8lqkf8"]),
@@ -204,10 +204,10 @@ function A(e) {
         let [t] = e;
         return A ? (0, r.jsx)(c.$jN, {
           type: c.RAz.SPINNING_CIRCLE
-        }) : T(null == t.value ? true : w.get(t.value), t, d)
+        }) : T(null == t.value ? true : D.get(t.value), t, d)
       },
-      renderOptionLabel: e => T(null == e.value ? true : w.get(e.value), e, d)
-    }), null != D ? (0, r.jsxs)("div", {
+      renderOptionLabel: e => T(null == e.value ? true : D.get(e.value), e, d)
+    }), null != w ? (0, r.jsxs)("div", {
       className: g.paymentSourceWarning,
       children: [(0, r.jsx)(c.Mgn, {
         size: "custom",
@@ -217,7 +217,7 @@ function A(e) {
         color: s.Z.unsafe_rawColors.YELLOW_300.css
       }), (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
-        children: D
+        children: w
       })]
     }) : null]
   })

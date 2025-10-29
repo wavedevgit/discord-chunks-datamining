@@ -54,7 +54,7 @@ function P(e, t) {
   })
 }
 
-function w(e) {
+function D(e) {
   if (S.has(e) || e === g.YN.GAME_PROFILE_FEED && (!(0, s._J)("ContentInventoryManager") || true !== m.Z.getFeed(e))) returnfalse;
   if (e === v) {
     if (!(0, _.sA)("ContentInventoryManager") || h.Z.hidden && null != m.Z.getFeed(e) || !d.Z.isFocused() || !l.Z.isConnected()) returnfalse;
@@ -64,7 +64,7 @@ function w(e) {
   returntrue
 }
 
-function D(e) {
+function w(e) {
   P(e, {
     loading: false
   });
@@ -75,7 +75,7 @@ function D(e) {
 function L() {
   var e;
   let t = null != (e = A.get(v)) ? module : 0;
-  if (exports > 0 && exports <= y || (D(v), !w(v))) return;
+  if (exports > 0 && exports <= y || (w(v), !D(v))) return;
   let n = Chunk146282.Z.getFeed(v);
   if ((null == require ? true : require.refresh_stale_inbox_after_ms) != null && null == C) return;
   let r = (null == require ? true : require.expired_at) == null ? 0 : new Date(require.expired_at).getTime() - Date.now(),
@@ -94,7 +94,7 @@ async function x(e) {
     feature: n,
     force: r = false
   } = e;
-  if (w(t) || r) try {
+  if (D(t) || r) try {
     let e = m.Z.getFeed(t);
     S.add(t), P(t, {
       loading: true
@@ -138,7 +138,7 @@ function k() {
 }
 
 function j() {
-  D(v)
+  w(v)
 }
 
 function U(e) {
@@ -146,7 +146,7 @@ function U(e) {
     feedId: t,
     feature: n
   } = e;
-  D(t), x({
+  w(t), x({
     feedId: t,
     feature: n,
     force: true

@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 213652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -26,18 +26,18 @@ function y(e) {
   } = e, {
     parentAnalyticsLocation: n
   } = (0, o.ZP)(), y = (0, l.e7)([h.Z], () => h.Z.getSelectedParticipant(t.id)), C = (null == y ? true : y.type) === g.fO.STREAM, v = (0, l.e7)([p.Z], () => C ? p.Z.getActiveStreamForStreamKey(y.id) : null), {
-    ignoreSenderPreference: x
+    ignoreSenderPreference: O
   } = u.Z.useExperiment({
     location: "ActionBarClipsButton"
   }, {
     autoTrackExposure: false
   }), {
-    viewerClippingAllowed: O,
+    viewerClippingAllowed: x,
     isAtMaxSavingClipOperations: E
   } = (0, l.cj)([s.Z], () => ({
-    viewerClippingAllowed: null != v && (s.Z.isViewerClippingAllowedForUser(v.ownerId) || x),
+    viewerClippingAllowed: null != v && (s.Z.isViewerClippingAllowedForUser(v.ownerId) || O),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), j = s.Z.getSettings().clipsEnabled, S = (null == v ? true : v.ownerId) === f.default.getId(), P = !j || !(S || O) || E || null == y, I = i.useCallback(e => {
+  })), j = s.Z.getSettings().clipsEnabled, S = (null == v ? true : v.ownerId) === f.default.getId(), P = !j || !(S || x) || E || null == y, I = i.useCallback(e => {
     var t, n;
     return (0, r.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -76,7 +76,7 @@ function y(e) {
     },
     disabled: P,
     iconComponent: I,
-    label: null == v ? b.intl.string(b.t.eg5qtV) : S || O ? j ? E ? true : b.intl.string(b.t.U4URzP) : b.intl.string(b.t.wSS1yN) : b.intl.string(b.t.aRifJX),
+    label: null == v ? b.intl.string(b.t.eg5qtV) : S || x ? j ? E ? true : b.intl.string(b.t.U4URzP) : b.intl.string(b.t.wSS1yN) : b.intl.string(b.t.aRifJX),
     grow: false
   })
 }

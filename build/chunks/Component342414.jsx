@@ -119,12 +119,12 @@ let X = (e, t, i) => {
     s ? N = (0, r.jsx)(T.Z, {
       variant: T.C.SUBSCRIBER_HOME
     }) : l ? N = (0, r.jsx)(U.Z, {}) : _ && (N = (0, r.jsx)(A._, {}));
-    let D = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()),
-      k = null != D && D.status === B.O0b.CANCELED && null != y,
+    let w = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()),
+      k = null != w && w.status === B.O0b.CANCELED && null != y,
       H = (0, I.N)(),
       Y = (0, v.Ng)(),
       W = (0, v.Wp)(Y, G.Si.TIER_2) ? G.Si.TIER_2 : true,
-      K = null != D && D.status !== B.O0b.ACCOUNT_HOLD && D.hasAnyPremiumNitro,
+      K = null != w && w.status !== B.O0b.ACCOUNT_HOLD && w.hasAnyPremiumNitro,
       z = (0, p.Z)().isFractionalPremiumActive && !K && null == N && !k,
       q = (0, o.e7)([u.Z], () => u.Z.useReducedMotion),
       {
@@ -142,7 +142,7 @@ let X = (e, t, i) => {
           className: V.headerContainer,
           children: [(0, r.jsx)(j.Z, {
             containerVisibilityPercentage: J
-          }), k && null != y.expires_at && (0, r.jsx)(w.Z, {
+          }), k && null != y.expires_at && (0, r.jsx)(D.Z, {
             expiresAt: y.expires_at,
             className: F.heroOfferCountdown
           }), (0, r.jsx)(x.Z, {
@@ -170,7 +170,7 @@ let X = (e, t, i) => {
             icon: c.SrA,
             size: "md",
             text: Z.intl.string(Z.t.zrCzVB),
-            onClick: () => X(C, D, L.R.CONFIRM_DISCOUNT)
+            onClick: () => X(C, w, L.R.CONFIRM_DISCOUNT)
           }), (0, r.jsx)(R.Z, {
             variant: z || k ? "secondary" : "expressive",
             size: "md",
@@ -192,7 +192,7 @@ let X = (e, t, i) => {
       buttonVisibilityRef: g
     } = en(), {
       analyticsLocations: b
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), y = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), O = null != y && y.status === B.O0b.CANCELED && null != _, T = (0, I.N)(), S = (0, v.Ng)(), A = (0, v.Wp)(S, G.Si.TIER_2) ? G.Si.TIER_2 : true, P = null != y && y.status !== B.O0b.ACCOUNT_HOLD && y.hasAnyPremiumNitro, D = (0, p.Z)().isFractionalPremiumActive && !P && !O;
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), y = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), O = null != y && y.status === B.O0b.CANCELED && null != _, T = (0, I.N)(), S = (0, v.Ng)(), A = (0, v.Wp)(S, G.Si.TIER_2) ? G.Si.TIER_2 : true, P = null != y && y.status !== B.O0b.ACCOUNT_HOLD && y.hasAnyPremiumNitro, w = (0, p.Z)().isFractionalPremiumActive && !P && !O;
     return (0, r.jsxs)("div", {
       className: a()(F.container, i),
       "data-testid": "subscriber-nitro-home-hero-header",
@@ -203,7 +203,7 @@ let X = (e, t, i) => {
         className: F.headerArt
       }), (0, r.jsxs)("div", {
         className: O ? F.churnDiscountContent : F.content,
-        children: [u, O && null != _.expires_at && (0, r.jsx)(w.Z, {
+        children: [u, O && null != _.expires_at && (0, r.jsx)(D.Z, {
           expiresAt: _.expires_at,
           className: F.heroOfferCountdown
         }), (0, r.jsx)(c.Heading, {
@@ -224,7 +224,7 @@ let X = (e, t, i) => {
           })
         }), (0, r.jsxs)("div", {
           className: F.heroHeadingOriginalButtonContainer,
-          children: [D && (0, r.jsx)(N.Z, {
+          children: [w && (0, r.jsx)(N.Z, {
             color: l.Tt.BRAND,
             className: a()(F.button, F.subscribeButton),
             subscriptionTier: null != (n = null == T || null == (t = T.subscription_trial) ? true : t.sku_id) ? n : A
@@ -357,12 +357,12 @@ let X = (e, t, i) => {
     if (C === G.a$.NONE || h) P = n ? (0, r.jsx)(k.Z, {
       enablePremiumBrandRefresh: true,
       text: v
-    }) : (0, r.jsx)(D.Cy, {
+    }) : (0, r.jsx)(w.Cy, {
       className: a()(F.trialPill, {
         [F.hidden]: !E
       }),
       text: v,
-      colorOptions: D.VE.PREMIUM_TIER_2_WHITE_FILL
+      colorOptions: w.VE.PREMIUM_TIER_2_WHITE_FILL
     });
     else {
       E = true;
@@ -388,12 +388,12 @@ let X = (e, t, i) => {
             children: n ? (0, r.jsx)(k.Z, {
               enablePremiumBrandRefresh: true,
               text: R
-            }) : (0, r.jsx)(D.mn, {
+            }) : (0, r.jsx)(w.mn, {
               className: a()(F.trialPill, {
                 [F.hidden]: !E
               }),
               text: R,
-              colorOptions: D.VE.PREMIUM_TIER_2_WHITE_FILL,
+              colorOptions: w.VE.PREMIUM_TIER_2_WHITE_FILL,
               icon: e,
               gap: false
             })

@@ -54,7 +54,7 @@ function A(e) {
   let {
     commands: v,
     commandSectionMap: y,
-    loading: g
+    loading: x
   } = function(e) {
     var t, n;
     let {
@@ -125,7 +125,7 @@ function A(e) {
   }), O = i.useMemo(() => {
     var e, i, r, a, s, u;
     if (!o) return [];
-    return (0, x.N)(v, {
+    return (0, g.N)(v, {
       limit: l,
       filterPredicates: [function(e) {
         let t = (0, m.k)("channel" === e.type ? e.channel : true, [c.yU.CHAT]),
@@ -248,7 +248,7 @@ function A(e) {
         return t
       }))
     } else s && (u = A);
-    return (0, x.N)(u, {
+    return (0, g.N)(u, {
       limit: a,
       filterPredicates: [function(e) {
         let t = (0, m.k)("channel" === e.type ? e.channel : true, [c.yU.CHAT, c.yU.PRIMARY_ENTRY_POINT]);
@@ -291,7 +291,7 @@ function A(e) {
     applicationResults: S,
     hasApplicationResults: L,
     isEmptyState: !T && !L,
-    loading: g && o
+    loading: x && o
   }
 }
 
@@ -304,14 +304,14 @@ function _(e) {
     entrypoint: c
   } = e;
   n.startsWith("".concat(j.GI)) && (n = n.substring(1));
-  let u = c === g._b.VOICE,
+  let u = c === x._b.VOICE,
     d = "channel" === t.type ? t.channel.guild_id : true,
     [p, m] = i.useState(1),
     f = i.useRef(p);
   f.current = p;
   let {
     fetchState: h,
-    totalPages: x
+    totalPages: g
   } = (0, s.cj)([y.Z], () => {
     var e, t;
     return {
@@ -355,8 +355,8 @@ function _(e) {
     })) ? true : i.results) ? l : []
   }), [h, d, n, p, u]), N = i.useCallback(() => {
     let e = b.length;
-    h === y.M.FETCHED && e === f.current && e > 0 && e < x && e < r && b[e - 1].length > 0 && (f.current++, m(e => e + 1))
-  }, [h, r, b, x]), C = i.useCallback(e => {
+    h === y.M.FETCHED && e === f.current && e > 0 && e < g && e < r && b[e - 1].length > 0 && (f.current++, m(e => e + 1))
+  }, [h, r, b, g]), C = i.useCallback(e => {
     let {
       query: t,
       page: n,

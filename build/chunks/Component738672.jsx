@@ -1,4 +1,4 @@
-/** Chunk was on 73726 **/
+/** Chunk was on 88647 **/
 /** chunk id: 738672, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => d
@@ -20,18 +20,18 @@ function d(e) {
     renderComponent: p,
     nudgeAlignIntoViewport: f = false,
     skipForceHide: h = false
-  } = e, m = i.useContext(c.h9), [g, b] = i.useState(""), [_, y] = i.useState(false), C = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), v = i.useRef(null), x = i.useRef(0);
+  } = e, m = i.useContext(c.h9), [g, b] = i.useState(""), [_, y] = i.useState(false), C = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), v = i.useRef(null), O = i.useRef(0);
   i.useEffect(() => {
     let e = t.current;
     if (null != e) return e.addEventListener("click", d), () => e.removeEventListener("click", d)
   }), i.useEffect(() => {
     if (!h) {
       var e, t;
-      b(String(x.current)), y(true !== C && C < (null != (t = null == (e = v.current) ? true : e.clientHeight) ? t : 300) + 24), x.current += 1
+      b(String(O.current)), y(true !== C && C < (null != (t = null == (e = v.current) ? true : e.clientHeight) ? t : 300) + 24), O.current += 1
     }
   }, [C, v, h]);
   let {
-    preventIdle: O,
+    preventIdle: x,
     allowIdle: E
   } = (0, u.Y)("popup");
   return (null == t ? true : t.current) == null ? null : (0, r.jsx)(o.ZP, {
@@ -44,8 +44,8 @@ function d(e) {
       nudgeAlignIntoViewport: f,
       children: () => (0, r.jsx)("div", {
         ref: v,
-        onMouseOver: O,
-        onFocus: O,
+        onMouseOver: x,
+        onFocus: x,
         onBlur: E,
         onMouseLeave: E,
         children: p({
