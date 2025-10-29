@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -24,7 +24,7 @@ let _ = e => {
     wideBannerBlock: _,
     handleTransition: m,
     tab: b
-  } = e, v = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), x = l.useRef(null), [O, S] = l.useState();
+  } = e, v = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId), E = l.useRef(null), x = l.useRef(null), [O, S] = l.useState();
   l.useEffect(() => {
     let e = x.current;
     if (null == e) return;
@@ -35,7 +35,7 @@ let _ = e => {
       e.onload = null
     }
   }, []);
-  let y = null != v ? v : "",
+  let y = null != (t = null == v ? true : v.skuId) ? t : "",
     {
       handleCardVisibilityChange: j
     } = (0, d.E)(y, "home", "marketing wide banner"),
@@ -44,24 +44,24 @@ let _ = e => {
     } = (0, g.UI)(_);
   if (null == k) return null;
   let T = b === p.AW.ORBS;
-  return (0, r.jsx)(s.$, {
+  return (0, r.jsx)(a.$, {
     innerRef: E,
     onChange: j,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: E,
-      className: a()(C.row, C.between, C.bannerBlockContainer, C.centeredSection, {
+      className: s()(C.row, C.between, C.bannerBlockContainer, C.centeredSection, {
         [C.extraRounded]: T
       }),
       children: [(0, r.jsx)("div", {
-        className: a()(C.wideBannerBackgroundImg, {
+        className: s()(C.wideBannerBackgroundImg, {
           [C.extraRounded]: T
         }),
         children: (0, r.jsx)("img", {
           ref: x,
           src: k,
           alt: _.title,
-          className: a()(C.wideBannerArt, {
+          className: s()(C.wideBannerArt, {
             [C.wideBannerArtOrbs]: T
           }),
           style: {
@@ -97,7 +97,14 @@ let _ = e => {
         className: C.wideBannerBlockButton,
         children: (0, r.jsx)(o.Button, {
           variant: "overlay-primary",
-          onClick: () => m("shop wide banner", y, true, true),
+          onClick: () => {
+            m({
+              sourceButton: "shop wide banner",
+              categorySkuId: y,
+              isInternalShopDeeplink: true,
+              isOrbsExclusive: null == v ? true : v.isOrbsExclusive
+            })
+          },
           text: h.intl.string(h.t.jVcuVY)
         })
       })]

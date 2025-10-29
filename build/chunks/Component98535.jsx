@@ -2,7 +2,7 @@
 /** chunk id: 98535, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,7 +12,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk960048 = require("./960048.js"),
   Chunk597688 = require("./597688.js"),
   Chunk1870 = require("./1870.js"),
-  Chunk884697 = require("./884697.js"),
   Chunk870289 = require("./870289.js"),
   Chunk149705 = require("./149705.js"),
   Chunk929255 = require("./929255.jsx"),
@@ -21,56 +20,63 @@ var Chunk951288 = require("./951288.js"),
   Chunk566564 = require("./566564.jsx"),
   Chunk795477 = require("./795477.jsx"),
   Chunk215023 = require("./215023.js");
-let v = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
+let b = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
 
-function E(e) {
+function v(e) {
   let {
     tab: t,
     sortedCategories: n,
-    transitionToTab: s,
+    transitionToTab: a,
     transitionState: o,
     updateAnalyticsState: c,
     refreshCategories: u
-  } = e, C = x();
-  O(C);
-  let E = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
-    [S, y] = l.useState(true),
-    [j, k] = l.useState(true),
-    T = l.useCallback(async (e, t, n, r) => {
-      c(e, t);
-      let l = n && !E,
-        i = (0, d.$2)(t) ? b.AW.ORBS : b.AW.CATALOG;
-      y(t), k(!r), await s(i, l)
-    }, [E, s, c]),
-    I = (0, g.FF)("CollectiblesContent"),
+  } = e, h = E();
+  x(h);
+  let v = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
+    [O, S] = l.useState(true),
+    [y, j] = l.useState(true),
+    k = l.useCallback(e => {
+      let {
+        sourceButton: t,
+        categorySkuId: n,
+        shouldAnimate: r,
+        isInternalShopDeeplink: l,
+        isOrbsExclusive: i
+      } = e;
+      c(t, n);
+      let s = r && !v,
+        o = i ? m.AW.ORBS : m.AW.CATALOG;
+      S(n), j(!l), a(o, s)
+    }, [v, a, c]),
+    T = (0, d.FF)("CollectiblesContent"),
     {
-      searchError: L
-    } = (0, p.a)();
-  return I && null != L ? (0, r.jsx)(m.Z, {}) : null != C ? (0, r.jsx)(h.Z, {
+      searchError: I
+    } = (0, g.a)();
+  return T && null != I ? (0, r.jsx)(_.Z, {}) : null != h ? (0, r.jsx)(f.Z, {
     onRetry: u,
-    errorMessage: C,
-    errorOrigin: h.i.SHOP_PAGE
-  }) : v.includes(t) ? (0, r.jsx)(_.Z, {
-    handleTransition: T,
+    errorMessage: h,
+    errorOrigin: f.i.SHOP_PAGE
+  }) : b.includes(t) ? (0, r.jsx)(C.Z, {
+    handleTransition: k,
     tab: t,
     transitionState: o
-  }) : (0, r.jsx)(f.Z, {
+  }) : (0, r.jsx)(p.Z, {
     tab: t,
     sortedCategories: n,
-    initialCategoryId: S,
-    showFilterInitially: j,
+    initialCategoryId: O,
+    showFilterInitially: y,
     onUnmount: () => {
-      y(true), k(true)
+      S(true), j(true)
     }
   })
 }
-let x = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
-  O = e => {
-    let t = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
+let E = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
+  x = e => {
+    let t = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r
-      } = (0, C.Z)();
+      } = (0, h.Z)();
     l.useEffect(() => {
       var l, i;
       null != e && o.Z.captureMessage(e, {

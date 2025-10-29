@@ -2,7 +2,7 @@
 /** chunk id: 236446, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,6 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk362762 = require("./362762.js"),
   Chunk409059 = require("./409059.js"),
@@ -45,27 +46,30 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk442837.ZP.initialize();
-class w extends Chunk647438.PureComponent {
+class D extends Chunk647438.PureComponent {
   componentDidMount() {
     (0, Chunk108427.e)("guildTemplate"), Chunk436620.KO || Chunk954824.Z.launch("discord://" + Chunk981631.Z5c.GUILD_TEMPLATE(this.props.code), () => true)
   }
   componentDidUpdate(e) {
-    this.props.code !== e.code && p.Z.resolveGuildTemplate(this.props.code)
+    this.props.code !== e.code && m.Z.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
-    return T.KO ? (0, r.jsx)(u.zx, {
-      className: R.marginTop40,
-      onClick: t,
-      children: e
-    }) : (0, r.jsx)(u.v6, {
-      className: R.marginTop40
+    return Z.KO ? (0, r.jsx)("div", {
+      className: w.marginTop40,
+      children: (0, r.jsx)(u.Button, {
+        text: e,
+        fullWidth: true,
+        onClick: t
+      })
+    }) : (0, r.jsx)(d.v6, {
+      className: w.marginTop40
     })
   }
   renderSpinner(e) {
-    return (0, r.jsxs)(u.ZP, {
-      children: [(0, r.jsx)(u.Dx, {
+    return (0, r.jsxs)(d.ZP, {
+      children: [(0, r.jsx)(d.Dx, {
         children: e
-      }), (0, r.jsx)(u.Hh, {})]
+      }), (0, r.jsx)(d.Hh, {})]
     })
   }
   renderInvalidGuildTemplate() {
@@ -100,7 +104,7 @@ class w extends Chunk647438.PureComponent {
       children: (0, Chunk951288.jsx)(Chunk306453.Z, {
         guildTemplate: module
       })
-    }) : (0, Chunk951288.jsx)(k, {
+    }) : (0, Chunk951288.jsx)(M, {
       guildTemplate: module
     })
   }
@@ -157,14 +161,14 @@ class w extends Chunk647438.PureComponent {
   }
 }
 
-function D(e) {
+function k(e) {
   let t = {
-    guildTemplate: (0, c.e7)([h.Z], () => h.Z.getGuildTemplate(e.code)),
-    nativeAppState: (0, c.e7)([d.Z], () => d.Z.getState(e.code)),
-    authenticated: (0, c.e7)([v.default], () => v.default.isAuthenticated()),
-    defaultRoute: (0, c.e7)([b.Z], () => b.Z.defaultRoute)
+    guildTemplate: (0, c.e7)([g.Z], () => g.Z.getGuildTemplate(e.code)),
+    nativeAppState: (0, c.e7)([h.Z], () => h.Z.getState(e.code)),
+    authenticated: (0, c.e7)([b.default], () => b.default.isAuthenticated()),
+    defaultRoute: (0, c.e7)([j.Z], () => j.Z.defaultRoute)
   };
-  return (0, r.jsx)(w, function(e) {
+  return (0, r.jsx)(D, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -178,30 +182,33 @@ function D(e) {
   }({}, e, t))
 }
 
-function k(e) {
+function M(e) {
   let {
     guildTemplate: t
   } = e, {
     form: n,
     handleSubmit: i
-  } = (0, g.Z)(t, false);
-  E.Z.flowStep(A.MK.ORGANIC_GUILD_TEMPLATES, A.X2.GUILD_CREATE);
+  } = (0, p.Z)(t, false);
+  v.Z.flowStep(T.MK.ORGANIC_GUILD_TEMPLATES, T.X2.GUILD_CREATE);
   let s = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(u.Dx, {
-      className: P.header,
-      children: Z.intl.string(Z.t.UNFvtM)
-    }), n, (0, r.jsx)(u.zx, {
-      className: P.createButton,
-      onClick: i,
-      children: Z.intl.string(Z.t.xr59t7)
+    children: [(0, r.jsx)(d.Dx, {
+      className: R.header,
+      children: P.intl.string(P.t.UNFvtM)
+    }), n, (0, r.jsx)("div", {
+      className: R.createButton,
+      children: (0, r.jsx)(u.Button, {
+        text: P.intl.string(P.t.xr59t7),
+        fullWidth: true,
+        onClick: i
+      })
     })]
   });
-  return (0, r.jsx)(N.Z, {
-    className: P.authBox,
-    children: () => [(0, r.jsx)(m.Z, {
+  return (0, r.jsx)(O.Z, {
+    className: R.authBox,
+    children: () => [(0, r.jsx)(f.Z, {
       guildTemplate: t
     }, "template"), (0, r.jsx)("div", {
-      className: P.formContainer,
+      className: R.formContainer,
       children: s
     }, "contents")]
   })

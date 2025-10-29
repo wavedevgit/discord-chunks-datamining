@@ -22,9 +22,9 @@ let g = {
   p = e => {
     let {
       enabled: t
-    } = (0, a.WX)({
+    } = (0, s.WX)({
       location: "useShopViewTransition"
-    }), n = (0, s.FF)("CollectiblesBrowse"), {
+    }), n = (0, a.FF)("CollectiblesBrowse"), {
       setItemTypeFilter: i,
       reset: p,
       setCurrentTab: f

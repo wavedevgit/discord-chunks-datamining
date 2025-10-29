@@ -39,7 +39,7 @@ let P = e => {
       product: t,
       cardRef: n,
       isPremiumUser: i,
-      analyticsLocations: s,
+      analyticsLocations: a,
       selectedVariantIndex: o,
       hasDiscountOffer: u,
       discountOfferAmount: d,
@@ -49,7 +49,7 @@ let P = e => {
     }) : L.intl.formatToPlainString(L.t["cNSL/j"], {
       price: p
     });
-    return (0, r.jsx)(a.Button, {
+    return (0, r.jsx)(s.Button, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), (0, c.Z)({
@@ -58,7 +58,7 @@ let P = e => {
             selectedVariantIndex: o
           }),
           returnRef: n,
-          analyticsLocations: s,
+          analyticsLocations: a,
           variantsReturnStyle: l.v.VARIANTS_GROUP
         })
       },
@@ -87,7 +87,7 @@ let P = e => {
       handlePreviewButtonClick: t,
       text: n
     } = e;
-    return (0, r.jsx)(a.Button, {
+    return (0, r.jsx)(s.Button, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), t(e)
@@ -102,7 +102,7 @@ let P = e => {
       isApplying: n,
       text: l
     } = e;
-    return (0, r.jsx)(a.Button, {
+    return (0, r.jsx)(s.Button, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), t()
@@ -118,7 +118,7 @@ let P = e => {
       onClick: n,
       text: l
     } = e;
-    return (0, r.jsx)(a.Button, {
+    return (0, r.jsx)(s.Button, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), n(t)
@@ -133,7 +133,7 @@ let P = e => {
       isClaimPremiumProductDisabled: n,
       isClaiming: l,
       analyticsLocations: i,
-      text: s,
+      text: a,
       onClickAnalytics: o
     } = e, c = async () => {
       null == o || o("claim premium product button"), await (0, h.fK)(t.skuId), (0, k.Z)({
@@ -142,7 +142,7 @@ let P = e => {
         purchaseType: T.o8.PREMIUM_PURCHASE
       })
     };
-    return (0, r.jsx)(a.Button, {
+    return (0, r.jsx)(s.Button, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), c()
@@ -151,7 +151,7 @@ let P = e => {
       loading: l,
       loadingStartedLabel: L.intl.string(L.t["TYw+9s"]),
       loadingFinishedLabel: L.intl.string(L.t.Pg1UP5),
-      text: null != s ? s : L.intl.string(L.t.zp6caO),
+      text: null != a ? a : L.intl.string(L.t.zp6caO),
       fullWidth: true
     })
   },
@@ -160,11 +160,11 @@ let P = e => {
       product: t,
       checkoutEligiblePrices: n,
       analyticsLocations: i,
-      selectedVariantIndex: s,
+      selectedVariantIndex: a,
       text: o,
       onClickAnalytics: c
     } = e;
-    return (0, r.jsx)(a.Button, {
+    return (0, r.jsx)(s.Button, {
       variant: "primary",
       text: null != o ? o : L.intl.format(L.t.kAgx5L, {
         orbPrice: n[0].amount,
@@ -176,7 +176,7 @@ let P = e => {
         e.stopPropagation(), null == c || c("claim with orbs button"), (0, g.qA)({
           skuId: (0, O.S)({
             product: t,
-            selectedVariantIndex: s
+            selectedVariantIndex: a
           }),
           onCheckoutSuccess: e => {
             var n;
@@ -206,7 +206,7 @@ let P = e => {
       handlePreviewButtonClick: t,
       text: n
     } = e;
-    return (0, r.jsx)(a.Button, {
+    return (0, r.jsx)(s.Button, {
       variant: "primary",
       onClick: e => {
         e.stopPropagation(), t(e)
@@ -220,7 +220,7 @@ let P = e => {
       product: t,
       cardRef: n,
       selectedVariantIndex: l,
-      onClick: a,
+      onClick: s,
       text: c,
       prioritizedCurrency: u,
       onClickAnalytics: d
@@ -244,14 +244,14 @@ let P = e => {
       hasDiscountOffer: B
     }), {
       analyticsLocations: V
-    } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), U = (0, x.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [z, G] = (0, i.Wu)([C.Z], () => [C.Z.isClaiming === t.skuId, null != C.Z.isClaiming && C.Z.isClaiming !== t.skuId]), {
+    } = (0, o.ZP)(a.Z.COLLECTIBLES_SHOP_CARD), U = (0, x.J7)(t, a.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, d), [z, G] = (0, i.Wu)([C.Z], () => [C.Z.isClaiming === t.skuId, null != C.Z.isClaiming && C.Z.isClaiming !== t.skuId]), {
       handleUseNow: K,
       isApplying: Y
     } = (0, b.W)({
       product: t
     });
-    return null != a ? (0, r.jsx)(Z, {
-      onClick: a,
+    return null != s ? (0, r.jsx)(Z, {
+      onClick: s,
       skuId: t.skuId,
       text: c
     }) : !S || h || k ? !I || T ? (0, r.jsx)(N, {
@@ -301,8 +301,8 @@ let P = e => {
       cardRef: n,
       onClick: l,
       text: i,
-      prioritizedCurrency: a,
-      onClickAnalytics: s
+      prioritizedCurrency: s,
+      onClickAnalytics: a
     } = e, o = (0, x.LJ)(t), c = (0, _.o)(o);
     if (null == o) return null;
     let u = (0, S.W)(o, c);
@@ -312,7 +312,7 @@ let P = e => {
       selectedVariantIndex: c,
       onClick: l,
       text: i,
-      prioritizedCurrency: a,
-      onClickAnalytics: s
+      prioritizedCurrency: s,
+      onClickAnalytics: a
     })
   }

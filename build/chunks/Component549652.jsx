@@ -1,13 +1,14 @@
 /** Chunk was on 57047 **/
 /** chunk id: 549652, original params: t,e,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => B
+  default: () => b
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk593473 = require("./593473.js"),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk536285 = require("./536285.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk600164 = require("./600164.jsx"),
@@ -18,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk796771 = require("./796771.js"),
   Chunk197571 = require("./197571.js");
 
-function x(t, e, n) {
+function j(t, e, n) {
   return e in t ? Object.defineProperty(t, e, {
     value: n,
     enumerable: true,
@@ -27,7 +28,7 @@ function x(t, e, n) {
   }) : t[e] = n, t
 }
 Chunk442837.ZP.initialize();
-let j = "done",
+let B = "done",
   D = "failed";
 
 function N() {
@@ -35,13 +36,13 @@ function N() {
     window.close()
   } catch (t) {}
 }
-class B extends Chunk647438.PureComponent {
+class b extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       stage: t,
       key: e
     } = this.state;
-    module === j ? N() : Chunk314897.default.isAuthenticated() ? Chunk544891.tn.post({
+    module === B ? N() : Chunk314897.default.isAuthenticated() ? Chunk544891.tn.post({
       url: Chunk981631.ANM.HANDOFF,
       body: {
         key: exports
@@ -51,7 +52,7 @@ class B extends Chunk647438.PureComponent {
     }).then(t => this.handoff(t.body.handoff_token), () => this.handoff()) : this.handoff()
   }
   handoff(t) {
-    o.default.requestRedirect(u.Etm.BROWSER_HANDOFF, {
+    d.default.requestRedirect(p.Etm.BROWSER_HANDOFF, {
       handoffToken: t,
       fingerprint: f.default.getFingerprint()
     }).then(this.done, this.failed)
@@ -67,9 +68,10 @@ class B extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         className: Chunk197571.marginBottom40,
         children: Chunk388032.intl.string(Chunk388032.t.CSBYDo)
-      }), (0, Chunk951288.jsx)(Chunk388905.zx, {
-        onClick: this.handleOpenApp,
-        children: Chunk388032.intl.string(Chunk388032.t.fIv16B)
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
+        fullWidth: true,
+        onClick: this.handleOpenApp
       })]
     })
   }
@@ -84,9 +86,10 @@ class B extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         className: Chunk197571.marginBottom40,
         children: Chunk388032.intl.string(Chunk388032.t.CSBYDo)
-      }), (0, Chunk951288.jsx)(Chunk388905.zx, {
-        onClick: this.handleOpenApp,
-        children: Chunk388032.intl.string(Chunk388032.t.fIv16B)
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
+        fullWidth: true,
+        onClick: this.handleOpenApp
       })]
     })
   }
@@ -105,7 +108,7 @@ class B extends Chunk647438.PureComponent {
       stage: e
     } = this.state;
     switch (exports) {
-      case j:
+      case B:
         t = this.renderDone();
         break;
       case D:
@@ -123,23 +126,23 @@ class B extends Chunk647438.PureComponent {
   }
   constructor(t) {
     var e;
-    super(t), x(this, "done", () => {
+    super(t), j(this, "done", () => {
       N(), this.setState({
-        stage: j
+        stage: B
       })
-    }), x(this, "failed", () => {
+    }), j(this, "failed", () => {
       this.setState({
         stage: D
       }), N()
-    }), x(this, "handleOpenApp", () => {
-      (0, h.uL)(u.Z5c.ME)
+    }), j(this, "handleOpenApp", () => {
+      (0, u.uL)(p.Z5c.ME)
     });
     let {
       search: n
     } = t.location, s = null != n && "" !== n ? (0, i.parse)(n) : {};
     this.state = {
       key: null != (e = s.key) ? e : "",
-      stage: "true" === s.done ? j : "handoff"
+      stage: "true" === s.done ? B : "handoff"
     }
   }
 }

@@ -1,15 +1,14 @@
 /** Chunk was on 35401 **/
-/** chunk id: 704903, original params: e,t,i (module,exports,require) **/
+/** chunk id: 704903, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => v
 }), require("./388685.js");
 var n, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk846519 = require("./846519.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -17,18 +16,18 @@ var n, Chunk951288 = require("./951288.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 
-function C(e, t, i) {
-  return t in e ? Object.defineProperty(e, t, {
+function f(t, e, i) {
+  return e in t ? Object.defineProperty(t, e, {
     value: i,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = i, e
+  }) : t[e] = i, t
 }
-class v extends(n = Chunk647438.PureComponent) {
+class C extends(n = Chunk647438.PureComponent) {
   async componentDidMount() {
-    let [e, {
-      default: t
+    let [t, {
+      default: e
     }] = await Promise.all([require.e("27526").then(require.t.bind(require, 555589, 19)), Promise.resolve().then(require.t.bind(require, 500923, 23))]);
     null != this._lottieRef && (this._animItem = exports.loadAnimation({
       container: this._lottieRef,
@@ -43,8 +42,8 @@ class v extends(n = Chunk647438.PureComponent) {
   }
   renderInputs() {
     let {
-      emailError: e,
-      passwordError: t,
+      emailError: t,
+      passwordError: e,
       submitting: i
     } = this.props, {
       email: n,
@@ -71,125 +70,126 @@ class v extends(n = Chunk647438.PureComponent) {
             onChange: this.handlePasswordChange,
             onKeyPress: this.handleKeyPress
           })]
-        }), (0, Chunk951288.jsx)(Chunk755721.zx, {
+        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+          text: Chunk388032.intl.string(Chunk388032.t.v740sh),
+          variant: "primary",
           fullWidth: true,
-          size: Chunk755721.zx.Sizes.LARGE,
           onClick: this.handleVerify,
-          submitting: require,
-          disabled: 0 === n.length || 0 === Chunk647438.length,
-          children: Chunk388032.intl.string(Chunk388032.t.v740sh)
+          loading: require,
+          disabled: 0 === n.length || 0 === Chunk647438.length
         })]
       })
     })
   }
   renderActions() {
     let {
-      canChange: e
+      canChange: t
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk831319.container,
-      children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
+      children: [(0, Chunk951288.jsx)("div", {
         className: Chunk197571.marginTop20,
-        fullWidth: true,
-        size: Chunk755721.zx.Sizes.LARGE,
-        color: Chunk755721.Tt.PRIMARY,
-        onClick: this.handleResendEmail,
-        children: Chunk388032.intl.string(Chunk388032.t.LdUkO6)
-      }), module && (0, Chunk951288.jsx)(Chunk755721.zx, {
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+          text: Chunk388032.intl.string(Chunk388032.t.LdUkO6),
+          variant: "secondary",
+          fullWidth: true,
+          onClick: this.handleResendEmail
+        })
+      }), module && (0, Chunk951288.jsx)("div", {
         className: Chunk197571.marginTop20,
-        fullWidth: true,
-        size: Chunk755721.zx.Sizes.MEDIUM,
-        look: Chunk755721.iL.LINK,
-        color: Chunk755721.Tt.LINK,
-        onClick: this.handleChangeEmailClick,
-        children: Chunk388032.intl.string(Chunk388032.t.oP5zGA)
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+          text: Chunk388032.intl.string(Chunk388032.t.oP5zGA),
+          variant: "primary",
+          fullWidth: true,
+          onClick: this.handleChangeEmailClick
+        })
       })]
     })
   }
   render() {
-    let e, {
-        resent: t
+    let t, {
+        resent: e
       } = this.state,
       {
         email: i,
         canResend: n,
         transitionState: a
       } = this.props;
-    return e = exports && null != require ? Chunk388032.intl.format(Chunk388032.t.JqLgQL, {
+    return t = exports && null != require ? Chunk388032.intl.format(Chunk388032.t.JqLgQL, {
       email: require
     }) : n ? Chunk388032.intl.string(Chunk388032.t.tSXg8O) : Chunk388032.intl.string(Chunk388032.t.KW5DEh), (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: Chunk647438,
       "aria-labelledby": this._headerId,
-      className: o()(Chunk831319.emailVerificationModal, Chunk149715.vertical, Chunk149715.alignCenter, Chunk149715.justifyCenter, Chunk197571.marginTop60),
+      className: r()(Chunk831319.emailVerificationModal, Chunk149715.vertical, Chunk149715.alignCenter, Chunk149715.justifyCenter, Chunk197571.marginTop60),
       parentComponent: "EmailVerificationModal",
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk831319.animationContainer,
         ref: this.setLottieRef
       }), (0, Chunk951288.jsx)("div", {
         id: this._headerId,
-        className: o()(Chunk831319.title, Chunk197571.marginBottom8),
+        className: r()(Chunk831319.title, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t["1MPz27"])
       }), (0, Chunk951288.jsx)("div", {
-        className: o()(Chunk831319.body, Chunk197571.marginBottom20),
+        className: r()(Chunk831319.body, Chunk197571.marginBottom20),
         children: module
       }), n ? this.renderActions() : this.renderInputs()]
     })
   }
-  constructor(...e) {
-    super(...e), C(this, "_lottieRef", true), C(this, "_animItem", null), C(this, "_timeout", new h.V7), C(this, "_headerId", (0, r.Z)()), C(this, "state", {
+  constructor(...t) {
+    super(...t), f(this, "_lottieRef", true), f(this, "_animItem", null), f(this, "_timeout", new h.V7), f(this, "_headerId", (0, o.Z)()), f(this, "state", {
       resent: false,
       shouldClose: false,
       email: "",
       password: ""
-    }), C(this, "setLottieRef", e => {
-      this._lottieRef = e
-    }), C(this, "handleVerify", () => {
+    }), f(this, "setLottieRef", t => {
+      this._lottieRef = t
+    }), f(this, "handleVerify", () => {
       let {
-        onVerify: e
+        onVerify: t
       } = this.props;
-      e(this.state.email, this.state.password)
-    }), C(this, "handleResendEmail", () => {
+      t(this.state.email, this.state.password)
+    }), f(this, "handleResendEmail", () => {
       let {
-        onResend: e,
-        onClose: t
+        onResend: t,
+        onClose: e
       } = this.props;
-      e(), this.state.resent || (this.setState({
+      t(), this.state.resent || (this.setState({
         resent: true,
         shouldClose: true
       }), this._timeout.start(3e3, () => {
-        this.state.shouldClose && t()
+        this.state.shouldClose && e()
       }))
-    }), C(this, "handleChangeEmailClick", () => {
+    }), f(this, "handleChangeEmailClick", () => {
       let {
-        onChangeEmailClick: e
+        onChangeEmailClick: t
       } = this.props;
       this.setState({
         resent: false,
         shouldClose: false
-      }), e()
-    }), C(this, "handleEmailChange", e => {
+      }), t()
+    }), f(this, "handleEmailChange", t => {
       this.setState({
-        email: e
+        email: t
       })
-    }), C(this, "handlePasswordChange", e => {
+    }), f(this, "handlePasswordChange", t => {
       this.setState({
-        password: e
+        password: t
       })
-    }), C(this, "handleKeyPress", e => {
+    }), f(this, "handleKeyPress", t => {
       let {
-        email: t,
+        email: e,
         password: i
       } = this.state;
-      13 === e.which && t.length > 0 && i.length > 0 && (e.preventDefault(), this.handleVerify())
+      13 === t.which && e.length > 0 && i.length > 0 && (t.preventDefault(), this.handleVerify())
     })
   }
 }
-C(v, "defaultProps", {
+f(C, "defaultProps", {
   canResend: false,
   canChange: true,
   onChangeEmailClick: Chunk981631.dG4,
-  onVerify: (e, t) => {},
+  onVerify: (t, e) => {},
   onResend: Chunk981631.dG4,
   onClose: Chunk981631.dG4
 });
-let y = v
+let v = C

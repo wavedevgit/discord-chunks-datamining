@@ -22,19 +22,19 @@ let x = () => {
       nickname: t,
       dmsAllowed: x,
       showActivity: g,
-      setNickname: N,
-      setDmsAllowed: h,
-      setShowActivity: f,
-      guildId: E,
-      inviteCode: I
+      setNickname: f,
+      setDmsAllowed: N,
+      setShowActivity: h,
+      guildId: v,
+      inviteCode: E
     } = (0, Chunk978986.XW)(),
-    v = null == (e = Chunk590965.Z.getProps().invite) ? true : module.is_nickname_changeable,
+    I = null == (e = Chunk590965.Z.getProps().invite) ? true : module.is_nickname_changeable,
     j = Chunk647438.useCallback(() => {
       Chunk626135.default.track(Chunk981631.rMx.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
-        guild_id: E,
-        invite_code: I
+        guild_id: v,
+        invite_code: E
       })
-    }, [E, I]);
+    }, [v, E]);
   return (0, Chunk951288.jsxs)(Chunk590149.Z, {
     className: Chunk181174.accordion,
     icon: (0, Chunk951288.jsx)(Chunk481060.ewm, {
@@ -43,8 +43,8 @@ let x = () => {
     title: Chunk388032.intl.string(Chunk388032.t["A5wHQ/"]),
     subtitle: Chunk388032.intl.string(Chunk388032.t.UKCSEd),
     onOpen: j,
-    maxHeight: v ? 220 : 130,
-    children: [v && (0, Chunk951288.jsxs)("div", {
+    maxHeight: I ? 220 : 130,
+    children: [I && (0, Chunk951288.jsxs)("div", {
       className: Chunk181174.serverNickname,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
@@ -54,16 +54,16 @@ let x = () => {
         placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8yp"]),
         maxLength: Chunk981631.l$U,
         value: require,
-        onChange: N
+        onChange: f
       })]
     }), (0, Chunk951288.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk388032.t["/2ed37"]),
       value: x,
-      onChange: h
+      onChange: N
     }), exports && (0, Chunk951288.jsx)(Chunk51331.ZP, {
       title: Chunk388032.intl.string(Chunk388032.t.bN4m1G),
       value: g,
-      onChange: f
+      onChange: h
     })]
   })
 }

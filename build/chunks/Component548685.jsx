@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk685816 = require("./685816.js"),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -70,11 +70,11 @@ let R = e => {
       page_session_id: er,
       sort_type: e
     })
-  }, [et, z, er]), ea = v.Z.useConfig({
+  }, [et, z, er]), es = v.Z.useConfig({
     location: "FeedBlock"
   }).showCardsV2;
   return null == F ? null : (0, r.jsxs)("div", {
-    className: a()(N.popularPicksSection, N.centeredSection),
+    className: s()(N.popularPicksSection, N.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: N.blockHeader,
       children: [(0, r.jsxs)("div", {
@@ -95,7 +95,7 @@ let R = e => {
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: a()(N.headerRight, {
+        className: s()(N.headerRight, {
           [A.shopTakeOver]: V
         }),
         children: [(0, r.jsx)(u.Text, {
@@ -107,7 +107,7 @@ let R = e => {
             options: K,
             select: ei,
             className: N.sortSelect,
-            popoutClassName: a()({
+            popoutClassName: s()({
               [A.shopTakeOver]: V
             }),
             isSelected: e => e === U,
@@ -135,12 +135,12 @@ let R = e => {
     }), (0, r.jsx)("div", {
       className: N.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
-        children: [...Array(12)].map((e, t) => ea ? (0, r.jsx)(y.Z, {}, t + 1) : (0, r.jsx)(E.K, {}, t + 1))
+        children: [...Array(12)].map((e, t) => es ? (0, r.jsx)(y.Z, {}, t + 1) : (0, r.jsx)(E.K, {}, t + 1))
       }) : J.slice(0, Z).map((e, t) => {
         let n, l = b.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if ($)
-          if (ee === j.g.SHUFFLE_OUT) return ea ? (0, r.jsx)("div", {
+          if (ee === j.g.SHUFFLE_OUT) return es ? (0, r.jsx)("div", {
             className: N.shuffleOutro,
             children: (0, r.jsx)(y.Z, {
               skipPulseAnimation: true
@@ -158,7 +158,7 @@ let R = e => {
             pageSection: "popular picks",
             categoryPosition: 2
           },
-          children: ea && (null == e ? true : e.skuId) != null ? (0, r.jsx)("div", {
+          children: es && (null == e ? true : e.skuId) != null ? (0, r.jsx)("div", {
             className: n,
             children: (0, r.jsx)(O.Z, {
               skuId: null == e ? true : e.skuId,
@@ -171,7 +171,7 @@ let R = e => {
             user: F,
             tab: H,
             className: n,
-            shopBlockType: s.z.FEED
+            shopBlockType: a.z.FEED
           })
         }, null == e ? true : e.skuId)
       })

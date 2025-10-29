@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk13941 = require("./13941.js"),
   Chunk481060 = require("./481060.js"),
   Chunk144114 = require("./144114.js"),
@@ -26,7 +26,7 @@ function h(e) {
     }
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, [t, r, i]);
-  let C = (0, l.q_F)({
+  let O = (0, l.q_F)({
     width: "".concat(f, "px"),
     onStart: () => {
       y(true)
@@ -47,13 +47,13 @@ function h(e) {
     children: e => {
       var s, c;
       return (0, n.jsx)("div", {
-        className: o()(d.outerContainer, {
+        className: a()(d.outerContainer, {
           [d.hidden]: !(t || g)
         }),
         ref: h,
-        children: (0, n.jsx)(a.animated.div, {
+        children: (0, n.jsx)(o.animated.div, {
           className: d.container,
-          style: C,
+          style: O,
           children: (0, n.jsxs)("div", {
             className: d.innerContainer,
             ref: p,

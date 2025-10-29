@@ -2,7 +2,7 @@
 /** chunk id: 677760, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk271922 = require("./271922.js");
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function y(e) {
   return e
 }
 
-function O(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function O(e, t) {
   }), e
 }
 
-function S() {
+function N() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk271922.centerFlex,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
@@ -138,10 +138,10 @@ function T(e) {
     let e = C(c);
     e !== d && h(e)
   }, [c, d]), (0, r.jsxs)(s.animated.div, {
-    className: N.inviteCard,
+    className: y.inviteCard,
     style: m,
     children: [(0, r.jsx)(s.animated.div, {
-      className: N.inviteChildContainer,
+      className: y.inviteChildContainer,
       style: m,
       children: (0, r.jsx)("section", {
         ref: g,
@@ -156,9 +156,9 @@ function Z(e) {
   let {
     invite: t
   } = e;
-  return null != t && (0, E.JI)(t) ? (0, r.jsx)(T, O(y({
+  return null != t && (0, E.JI)(t) ? (0, r.jsx)(T, S(O({
     startAnimHeightPx: 0,
-    innerStyle: () => N.guildInfoInner
+    innerStyle: () => y.guildInfoInner
   }, e), {
     children: e => null == t ? null : 1 === e ? (0, r.jsx)(b.X, {
       invite: t
@@ -170,27 +170,27 @@ function P(e) {
   let {
     invite: t
   } = e, n = {
-    1: N.inviteCardInner,
-    2: N.inviteCardInnerError,
-    0: N.inviteCardInnerLoading
+    1: y.inviteCardInner,
+    2: y.inviteCardInnerError,
+    0: y.inviteCardInnerLoading
   };
-  return (0, r.jsx)(T, O(y({
+  return (0, r.jsx)(T, S(O({
     startAnimHeightPx: 200,
     innerStyle: e => n[e]
   }, e), {
     children: n => (n => {
-      if (null == t) return (0, r.jsx)(S, {});
+      if (null == t) return (0, r.jsx)(N, {});
       switch (n) {
         case 1:
-          return (0, r.jsx)(v.Z, O(y({}, e), {
+          return (0, r.jsx)(v.Z, S(O({}, e), {
             invite: t
           }));
         case 2:
-          return (0, r.jsx)(A, O(y({}, e), {
+          return (0, r.jsx)(A, S(O({}, e), {
             invite: t
           }));
         default:
-          return (0, r.jsx)(S, {})
+          return (0, r.jsx)(N, {})
       }
     })(n)
   }))
@@ -212,16 +212,16 @@ function R(e) {
   }
   return (0, r.jsxs)(d.ZP, {
     theme: j.BRd.DARK,
-    className: N.splashBackground,
+    className: y.splashBackground,
     style: s,
-    contentClassName: N.centerAuthBoxContent,
-    children: [(0, r.jsx)(P, O(y({}, e), {
+    contentClassName: y.centerAuthBoxContent,
+    children: [(0, r.jsx)(P, S(O({}, e), {
       onAcceptInvite: n
-    })), (0, r.jsx)(Z, y({}, e))]
+    })), (0, r.jsx)(Z, O({}, e))]
   })
 }
 
-function L(e) {
+function w(e) {
   let {
     inviteKey: t,
     transitionTo: n

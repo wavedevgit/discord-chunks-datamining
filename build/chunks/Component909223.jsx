@@ -2,7 +2,7 @@
 /** chunk id: 909223, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -60,7 +60,7 @@ let I = {
     [Chunk82554.BM.USER]: Chunk388032.t.F4jrRW,
     [Chunk82554.BM.GUILD]: Chunk388032.t.gH3aMs
   },
-  N = e => {
+  y = e => {
     let {
       title: t,
       menuType: i
@@ -108,7 +108,7 @@ let I = {
       })]
     })
   },
-  y = () => {
+  O = () => {
     let [e, t] = Chunk647438.useState(true), [n, s] = Chunk647438.useState([]), h = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated()), g = (0, Chunk442837.e7)([Chunk353926.Z], () => Chunk353926.Z.hasLoadedExperiments), b = () => {
       (0, Chunk185625.Jj)().then(e => {
         let {
@@ -142,7 +142,7 @@ let I = {
         })
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk325659.container,
-        children: require.map(e => null == I[e] ? null : (0, r.jsx)(N, {
+        children: require.map(e => null == I[e] ? null : (0, r.jsx)(y, {
           title: x.intl.string(I[e]),
           menuType: e
         }, e))

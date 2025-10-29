@@ -16,24 +16,24 @@ let o = e => {
       selectedVariantIndex: n,
       isCardHovered: l
     } = e;
-    return (0, r.jsx)(a.a, {
+    return (0, r.jsx)(s.a, {
       product: t,
       selectedVariantIndex: n,
       isCardHovered: l,
-      className: s.wishlistButton
+      className: a.wishlistButton
     })
   },
   c = e => {
     let {
       skuId: t,
       selectedVariantIndex: n,
-      isCardHovered: a
-    } = e, s = (0, l.Y)({
+      isCardHovered: s
+    } = e, a = (0, l.Y)({
       location: "ProductWishlistButton"
     }), c = (0, i.LJ)(t);
-    return null != c && s ? (0, r.jsx)(o, {
+    return null != c && a ? (0, r.jsx)(o, {
       product: c,
       selectedVariantIndex: n,
-      isCardHovered: a
+      isCardHovered: s
     }) : null
   }

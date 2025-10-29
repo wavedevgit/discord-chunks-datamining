@@ -24,7 +24,7 @@ let b = e => {
     let {
       product: t,
       prioritizedCurrency: n
-    } = e, p = (0, i.e7)([s.default], () => s.default.getCurrentUser()), b = o.ZP.canUseCollectibles(p), {
+    } = e, p = (0, i.e7)([a.default], () => a.default.getCurrentUser()), b = o.ZP.canUseCollectibles(p), {
       isDisabled: v
     } = (0, u.G)(t.skuId), {
       isPurchased: E,
@@ -38,20 +38,20 @@ let b = e => {
       prioritizedCurrency: n,
       hasDiscountOffer: null != j
     }), I = O && !b;
-    return v ? (0, r.jsx)(a.Text, {
+    return v ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       color: "header-muted",
       children: _.intl.string(_.t.wu4gyV)
-    }) : x ? (0, r.jsx)(a.Text, {
+    }) : x ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t.BEjTij)
-    }) : E && !I ? (0, r.jsx)(a.Text, {
+    }) : E && !I ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t["6cfuDj"])
-    }) : S ? (0, r.jsx)(a.Text, {
+    }) : S ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t.nBtvYB)
-    }) : O ? (0, r.jsx)(a.Text, {
+    }) : O ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t.rt69oo)
     }) : 0 === k.length ? null : (0, r.jsx)(g.F, {

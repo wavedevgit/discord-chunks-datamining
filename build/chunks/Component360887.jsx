@@ -37,9 +37,9 @@ let E = e => {
         }), (0, r.jsx)(u.DK, {
           children: n
         })]
-      }), (0, r.jsx)(u.zx, {
+      }), (0, r.jsx)(o.Button, {
         onClick: s,
-        children: i
+        text: i
       })]
     })
   })

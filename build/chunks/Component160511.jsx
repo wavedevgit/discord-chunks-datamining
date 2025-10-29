@@ -43,7 +43,7 @@ function c(e) {
       null == (e = w.current) || e.focus()
     }
   }, [f]);
-  let k = null == b ? u.intl.string(u.t.LQdCQE) : u.intl.formatToPlainString(u.t["8r6h7+"], {
+  let E = null == b ? u.intl.string(u.t.LQdCQE) : u.intl.formatToPlainString(u.t["8r6h7+"], {
     phoneNumber: b
   });
   return (0, l.jsxs)("form", {
@@ -59,11 +59,11 @@ function c(e) {
       })
     },
     children: [(0, l.jsx)(o.Z.SlideHeader, {
-      subtitle: k,
+      subtitle: E,
       onClose: h,
       headerAlignStart: g
-    }), (0, l.jsx)(o.Z.SlideContent, {
-      children: (0, l.jsxs)(a.NIo, {
+    }), (0, l.jsxs)(o.Z.SlideContent, {
+      children: [(0, l.jsxs)(a.NIo, {
         children: [(0, l.jsx)(a.oil, {
           label: u.intl.string(u.t.HZPBOd),
           inputRef: w,
@@ -73,8 +73,7 @@ function c(e) {
           value: C,
           autoComplete: "one-time-code",
           spellCheck: "false",
-          disabled: x,
-          error: y
+          disabled: x
         }), (0, l.jsx)(a.Button, {
           variant: "secondary",
           text: u.intl.string(u.t.ZF29L6),
@@ -95,7 +94,9 @@ function c(e) {
             })
           }
         })]
-      })
+      }), (0, l.jsx)(o.Z.SlideError, {
+        error: y
+      })]
     }), (0, l.jsx)(o.Z.SlideFooter, {
       mfaChallenge: t,
       setSlide: c,

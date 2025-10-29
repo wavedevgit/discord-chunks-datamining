@@ -1,5 +1,5 @@
 /** Chunk was on 35401 **/
-/** chunk id: 831319, original params: e,t,i (module,exports,require) **/
+/** chunk id: 831319, original params: t,e,i (module,exports,require) **/
 module.exports = {
   emailVerificationModal: "emailVerificationModal_a2241a",
   animationContainer: "animationContainer_a2241a",

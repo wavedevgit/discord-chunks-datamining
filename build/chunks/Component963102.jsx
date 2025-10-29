@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -42,7 +42,7 @@ function L(e) {
   return (0, r.jsx)(p.Z.Title, {
     onClick: () => i(t),
     wrapperClassName: I.tabWrapper,
-    className: a()(I.tab, {
+    className: s()(I.tab, {
       [I.selected]: l
     }),
     children: n
@@ -54,7 +54,7 @@ function B(e) {
     tab: t,
     selected: n,
     displayText: i,
-    handleTransition: s
+    handleTransition: a
   } = e, [o, u] = l.useState(false), f = l.useRef(null), [h, C] = l.useState(0), _ = l.useRef(false), m = e => {
     clearTimeout(h), C(setTimeout(() => {
       u(e)
@@ -81,7 +81,7 @@ function B(e) {
           closePopout: t
         } = e;
         return (0, r.jsx)(O.Z, {
-          handleTransition: s,
+          handleTransition: a,
           onClose: t
         })
       },
@@ -109,10 +109,10 @@ function B(e) {
           return e
         }({}, e), u = u = {
           ref: f,
-          onClick: () => s(t),
+          onClick: () => a(t),
           onKeyDown: b,
           wrapperClassName: I.tabWrapper,
-          className: a()(I.tab, {
+          className: s()(I.tab, {
             [I.selected]: n
           }),
           children: (0, r.jsxs)("span", {
@@ -168,7 +168,7 @@ function P(e) {
         sectionType: j.jXE.ORBS_BALANCE_MENU,
         ctaObject: j.qAy.CTA_TO_QUEST_HOME
       }), (0, f.navigateToQuestHome)({
-        fromContent: s.j.ORBS_BALANCE_MENU
+        fromContent: a.j.ORBS_BALANCE_MENU
       })
     }, [A]),
     R = (0, x.eN)("collectibles_shop_header_bar"),
@@ -183,7 +183,7 @@ function P(e) {
     theme: i,
     children: e => (0, r.jsxs)(p.Z, {
       disableDoubleClick: true,
-      className: a()(e, I.headerBar),
+      className: s()(e, I.headerBar),
       innerClassname: g ? I.headerBarInner : true,
       children: [(0, r.jsxs)(c.P3F, {
         className: I.shopHomeLink,

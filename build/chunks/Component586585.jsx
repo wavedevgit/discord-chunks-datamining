@@ -2,12 +2,13 @@
 /** chunk id: 586585, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => b,
-  g: () => m
+  Z: () => y,
+  g: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk793030 = require("./793030.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -16,7 +17,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk42207 = require("./42207.js");
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +26,20 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,92 +50,90 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var m = function(e) {
+var g = function(e) {
   return e[e.CONTINUE = 0] = "CONTINUE", e[e.UPGRADE = 1] = "UPGRADE", e[e.PURCHASE = 2] = "PURCHASE", e
 }({});
-let g = e => {
+let E = e => {
     let {
       primaryIcon: t,
       primaryCTA: n,
       primaryType: i,
-      primaryText: o,
+      primaryText: a,
       primaryDisabled: s,
       primarySubmitting: l,
-      onPrimary: c,
-      tooltipProps: u
-    } = e, f = {
+      onPrimary: c
+    } = e, u = {
       type: i,
       disabled: s,
       onClick: c,
       icon: null == t ? true : () => (0, r.jsx)(t, {
         color: "currentColor",
-        className: d.primaryIcon
+        className: f.primaryIcon
       }),
       loading: l,
-      text: o
+      text: a
     };
-    return 2 === n ? (0, r.jsx)(a.zxk, _({
+    return 2 === n ? (0, r.jsx)(o.zxk, p({
       variant: "expressive"
-    }, f, u)) : (0, r.jsx)(a.zxk, _(h(_({}, f), {
+    }, u)) : (0, r.jsx)(o.zxk, m(p({}, u), {
       variant: 0 === n ? "primary" : "active"
-    }), u))
+    }))
   },
-  E = e => {
+  b = e => {
     let {
       onBack: t,
       backText: n,
-      primaryIcon: d,
-      primaryCTA: f,
-      primaryType: p,
-      primaryText: m,
-      primaryTooltip: E,
-      primaryDisabled: b,
-      primarySubmitting: y,
-      onPrimary: O
+      primaryIcon: f,
+      primaryCTA: _,
+      primaryType: h,
+      primaryText: g,
+      primaryTooltip: b,
+      primaryDisabled: y,
+      primarySubmitting: O,
+      onPrimary: v
     } = e, {
-      premiumBrandRefreshBackgroundClassName: v
-    } = (0, l.JL)(), I = () => {
-      if (null == f || null == m) return null;
+      premiumBrandRefreshBackgroundClassName: I
+    } = (0, c.JL)(), T = () => {
+      if (null == _ || null == g) return null;
       let e = {
-        primaryIcon: d,
-        primaryCTA: f,
-        primaryType: p,
-        primaryText: m,
-        primaryDisabled: b,
-        primarySubmitting: y,
-        onPrimary: O
+        primaryIcon: f,
+        primaryCTA: _,
+        primaryType: h,
+        primaryText: g,
+        primaryDisabled: y,
+        primarySubmitting: O,
+        onPrimary: v
       };
-      return null != E ? (0, r.jsx)(o.aML, {
-        text: E,
-        children: t => (0, r.jsx)(g, h(_({}, e), {
-          tooltipProps: t
-        }))
-      }) : (0, r.jsx)(g, h(_({}, e), {
-        onPrimary: O
+      return null != b ? (0, r.jsx)(a.u, {
+        text: b,
+        asContainer: true,
+        children: (0, r.jsx)(E, p({}, e))
+      }) : (0, r.jsx)(E, m(p({}, e), {
+        onPrimary: v
       }))
-    }, T = () => null == t ? null : (0, r.jsx)(a.Avr, {
-      text: null != n ? n : u.intl.string(u.t["13/7kX"]),
+    }, S = () => null == t ? null : (0, r.jsx)(o.Avr, {
+      text: null != n ? n : d.intl.string(d.t["13/7kX"]),
       onClick: t,
       variant: "secondary"
     });
-    return (0, r.jsxs)(o.mzw, {
+    return (0, r.jsxs)(s.mzw, {
       "data-migration-pending": true,
-      justify: s.Z.Justify.BETWEEN,
-      align: s.Z.Align.CENTER,
-      className: v,
+      justify: l.Z.Justify.BETWEEN,
+      align: l.Z.Align.CENTER,
+      className: I,
       children: [(0, r.jsxs)(i.Kqy, {
         direction: "horizontal-reverse",
         align: "center",
         gap: 0,
         padding: 0,
-        children: [I(), (0, r.jsx)(c.Z, {})]
-      }), T()]
+        children: [T(), (0, r.jsx)(u.Z, {})]
+      }), S()]
     })
   };
-E.CTAType = m;
-let b = E
+b.CTAType = g;
+let y = b

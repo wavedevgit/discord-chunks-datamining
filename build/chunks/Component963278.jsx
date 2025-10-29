@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -26,11 +26,11 @@ let v = e => {
     shelf: t,
     handleTransition: n,
     tab: i
-  } = e, v = (0, s.e7)([c.default], () => c.default.getCurrentUser()), E = g.Z.useConfig({
+  } = e, v = (0, a.e7)([c.default], () => c.default.getCurrentUser()), E = (0, a.e7)([d.Z], () => d.Z.getCategory(t.categorySkuId)), x = g.Z.useConfig({
     location: "ShelfBlock"
-  }).showCardsV2, x = (0, u.sp)(), O = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), S = (0, p.l)(O).slice(0, 4);
+  }).showCardsV2, O = (0, u.sp)(), S = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), y = (0, p.l)(S).slice(0, 4);
   return null == v ? null : (0, r.jsxs)("div", {
-    className: a()(b.shelfBlockContainer, b.centeredSection),
+    className: s()(b.shelfBlockContainer, b.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: b.blockHeader,
       children: [(0, r.jsx)(o.Heading, {
@@ -41,32 +41,39 @@ let v = e => {
         text: m.intl.formatToPlainString(m.t.bc9RBE, {
           category_name: t.name
         }),
-        onClick: () => n("shelf block see all", t.categorySkuId, true, true)
+        onClick: () => {
+          n({
+            sourceButton: "shelf block see all",
+            categorySkuId: t.categorySkuId,
+            isInternalShopDeeplink: true,
+            isOrbsExclusive: null == E ? true : E.isOrbsExclusive
+          })
+        }
       })]
     }), (0, r.jsx)("div", {
       className: b.feed,
       children: (0, r.jsx)(r.Fragment, {
-        children: S.map((e, n) => {
+        children: y.map((e, n) => {
           let l = d.Z.getCategoryForProduct(e.skuId);
           if (null == l || null == e) return null;
-          let a = e.skuId;
+          let s = e.skuId;
           return (0, r.jsx)(u.k0, {
             newValue: {
               tilePosition: n,
               pageSection: t.name,
               categoryPosition: 2
             },
-            children: E ? (0, r.jsx)(h.Z, {
-              skuId: a,
+            children: x ? (0, r.jsx)(h.Z, {
+              skuId: s,
               prioritizedCurrency: i === _.AW.ORBS ? C.tA.ORBS : true,
-              onClickAnalytics: (0, C.wO)(e, i, x)
-            }, a) : (0, r.jsx)(f.Z, {
+              onClickAnalytics: (0, C.wO)(e, i, O)
+            }, s) : (0, r.jsx)(f.Z, {
               product: e,
               category: l,
               user: v,
               tab: i
-            }, a)
-          }, a)
+            }, s)
+          }, s)
         })
       })
     })]

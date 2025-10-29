@@ -78,16 +78,20 @@ class v extends(r = Chunk647438.PureComponent) {
         children: _.intl.string(_.t.f6rdLg)
       }), (0, i.jsx)(d.DK, {
         children: s
-      }), (0, i.jsx)(d.zx, {
+      }), (0, i.jsx)("div", {
         className: x.marginTop20,
-        onClick: () => r(n),
-        children: _.intl.string(_.t.fIv16B)
-      }), (0, i.jsx)(d.zx, {
+        children: (0, i.jsx)(c.Button, {
+          text: _.intl.string(_.t.fIv16B),
+          fullWidth: true,
+          onClick: () => r(n)
+        })
+      }), (0, i.jsx)("div", {
         className: x.marginTop8,
-        color: d.zx.Colors.LINK,
-        look: d.zx.Looks.LINK,
-        onClick: () => r(m.Z5c.SETTINGS("notifications", f.vG)),
-        children: _.intl.string(_.t.YYTirT)
+        children: (0, i.jsx)(c.Avr, {
+          text: _.intl.string(_.t.YYTirT),
+          textVariant: "text-sm/normal",
+          onClick: () => r(m.Z5c.SETTINGS("notifications", f.vG))
+        })
       })]
     })
   }
@@ -113,10 +117,13 @@ class v extends(r = Chunk647438.PureComponent) {
         children: Chunk388032.intl.string(Chunk388032.t["6U6OMQ"])
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t["yaDJ4/"])
-      }), (0, Chunk951288.jsx)(Chunk388905.zx, {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk197571.marginTop40,
-        onClick: () => exports(module),
-        children: Chunk388032.intl.string(Chunk388032.t.fIv16B)
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+          text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
+          fullWidth: true,
+          onClick: () => exports(module)
+        })
       })]
     })
   }
@@ -134,10 +141,13 @@ class v extends(r = Chunk647438.PureComponent) {
         children: Chunk388032.intl.string(Chunk388032.t.ox9hIS)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t["/dcuR5"])
-      }), (0, Chunk951288.jsx)(Chunk388905.zx, {
+      }), (0, Chunk951288.jsx)("div", {
         className: Chunk197571.marginTop40,
-        onClick: () => exports(module),
-        children: Chunk388032.intl.string(Chunk388032.t.fIv16B)
+        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+          text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
+          fullWidth: true,
+          onClick: () => exports(module)
+        })
       })]
     })
   }

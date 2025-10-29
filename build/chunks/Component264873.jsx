@@ -2,13 +2,14 @@
 /** chunk id: 264873, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk525654 = require("./525654.js"),
   l = require.n(Chunk525654),
   Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
   Chunk493773 = require("./493773.js"),
   Chunk129293 = require("./129293.js"),
@@ -19,58 +20,59 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function _(e) {
+function x(e) {
   let {
     location: t,
-    transitionTo: s = h.uL
-  } = e, [a, _] = i.useState("submitting");
+    transitionTo: s = g.uL
+  } = e, [a, x] = i.useState("submitting");
 
-  function x() {
-    return "Android" === l().os.family || "iOS" === l().os.family ? null : (0, r.jsx)(d.zx, {
-      onClick: () => s(p.Z5c.LOGIN, {
+  function E() {
+    return "Android" === l().os.family || "iOS" === l().os.family ? null : (0, r.jsx)(o.Button, {
+      text: f.intl.string(f.t.dKhVQN),
+      fullWidth: true,
+      onClick: () => s(m.Z5c.LOGIN, {
         source: "authorizeIPAdress"
-      }),
-      children: m.intl.string(m.t.dKhVQN)
+      })
     })
   }
-  return ((0, c.ZP)(() => {
-    (0, g.e)("authorize_ip");
-    let e = (0, u.Z)(t);
-    if (null == e) return void _("failed");
+  return ((0, u.ZP)(() => {
+    (0, p.e)("authorize_ip");
+    let e = (0, d.Z)(t);
+    if (null == e) return void x("failed");
     (async () => {
       try {
-        await o.Z.authorizeIPAddress(e), _("succeeded")
+        await c.Z.authorizeIPAddress(e), x("succeeded")
       } catch (e) {
-        _("failed")
+        x("failed")
       }
     })()
-  }), "failed" === a) ? (0, r.jsxs)(d.ZP, {
+  }), "failed" === a) ? (0, r.jsxs)(h.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(262467),
-      className: f.marginBottom20
-    }), (0, r.jsx)(d.Dx, {
-      className: f.marginBottom8,
-      children: m.intl.string(m.t["f/54az"])
-    }), (0, r.jsx)(d.DK, {
-      className: f.marginBottom40,
-      children: m.intl.string(m.t.i3ehMr)
-    }), x()]
-  }) : "succeeded" === a ? (0, r.jsxs)(d.ZP, {
+      className: _.marginBottom20
+    }), (0, r.jsx)(h.Dx, {
+      className: _.marginBottom8,
+      children: f.intl.string(f.t["f/54az"])
+    }), (0, r.jsx)(h.DK, {
+      className: _.marginBottom40,
+      children: f.intl.string(f.t.i3ehMr)
+    }), E()]
+  }) : "succeeded" === a ? (0, r.jsxs)(h.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: n(640356),
-      className: f.marginBottom20
-    }), (0, r.jsx)(d.Dx, {
-      className: f.marginBottom8,
-      children: m.intl.string(m.t.iG0SlK)
-    }), (0, r.jsx)(d.DK, {
-      className: f.marginBottom40,
-      children: m.intl.string(m.t["Elv+qt"])
-    }), x()]
-  }) : (0, r.jsxs)(d.ZP, {
-    children: [(0, r.jsx)(d.Hh, {}), (0, r.jsx)(d.Dx, {
-      children: m.intl.string(m.t["9exy+V"])
+      className: _.marginBottom20
+    }), (0, r.jsx)(h.Dx, {
+      className: _.marginBottom8,
+      children: f.intl.string(f.t.iG0SlK)
+    }), (0, r.jsx)(h.DK, {
+      className: _.marginBottom40,
+      children: f.intl.string(f.t["Elv+qt"])
+    }), E()]
+  }) : (0, r.jsxs)(h.ZP, {
+    children: [(0, r.jsx)(h.Hh, {}), (0, r.jsx)(h.Dx, {
+      children: f.intl.string(f.t["9exy+V"])
     })]
   })
 }

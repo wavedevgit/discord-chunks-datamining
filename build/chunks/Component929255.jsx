@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk702486 = require("./702486.js"),
   Chunk626135 = require("./626135.js"),
@@ -59,14 +59,14 @@ function y(e) {
   }, []), l.useEffect(() => {
     p || E(false)
   }, [p, E]), (0, r.jsx)("div", {
-    className: a()(S.pageWrapper, {
+    className: s()(S.pageWrapper, {
       [S.pageWrapperFilter]: p
     }),
     children: (0, r.jsxs)("main", {
-      className: a()(S.page, {
+      className: s()(S.page, {
         [S.pageFilter]: p
       }),
-      children: [(0, r.jsx)(s.yWw, {
+      children: [(0, r.jsx)(a.yWw, {
         className: S.shopScroll,
         ref: f,
         onScroll: C,
@@ -81,7 +81,7 @@ function y(e) {
         })
       }), v && !x && (0, r.jsx)("div", {
         className: S.divider
-      }), v && !x && (0, r.jsx)(s.Ttm, {
+      }), v && !x && (0, r.jsx)(a.Ttm, {
         className: S.filterBar,
         children: (0, r.jsx)(_.Z, {})
       })]
@@ -100,10 +100,7 @@ let j = e => {
   } = e, k = (0, d.FF)("CollectiblesBrowse"), T = l.useRef(null), I = (0, g.S)(e => e.hasDefaultFilters()), L = (0, u.sp)(), {
     handlePageChange: B,
     currentPage: P
-  } = (0, m.h)({
-    scrollerRef: h,
-    sortedCategories: y
-  }), A = l.useCallback(e => {
+  } = (0, m.h)(h), A = l.useCallback(e => {
     c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == L ? true : L.sessionId,
       page_section: null == L ? true : L.pageSection,
@@ -132,7 +129,7 @@ let j = e => {
   }, [t, n, i, L]), (0, r.jsx)("div", {
     className: S.inventoryWrapper,
     children: (0, r.jsxs)("div", {
-      className: a()(S.inventory, {
+      className: s()(S.inventory, {
         [S.inventoryFilter]: k
       }),
       children: [k && (0, r.jsxs)("div", {
@@ -141,18 +138,18 @@ let j = e => {
           className: S.controlsLeftSide,
           children: (0, r.jsx)(p.Z, {})
         }), (0, r.jsxs)("div", {
-          className: a()(S.controlsRightSide, {
+          className: s()(S.controlsRightSide, {
             [S.controlsRightSideResponsive]: t
           }),
           children: [(0, r.jsxs)("div", {
             className: S.sortBy,
-            children: [(0, r.jsx)(s.Text, {
+            children: [(0, r.jsx)(a.Text, {
               variant: "text-md/semibold",
               children: O.intl.string(O.t.uaX705)
             }), (0, r.jsx)(C.Z, {})]
           }), (0, r.jsx)("div", {
             ref: N,
-            children: (0, r.jsx)(s.Button, {
+            children: (0, r.jsx)(a.Button, {
               onClick: () => {
                 let e = !n;
                 c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
@@ -167,14 +164,14 @@ let j = e => {
               },
               variant: "secondary",
               text: O.intl.string(n ? O.t.fYtm6f : O.t["TeTYE+"]),
-              icon: s.gXV,
+              icon: a.gXV,
               iconPosition: "end"
             })
           })]
         }), n && t && (0, r.jsx)("div", {
           className: S.filterOverlay,
           ref: T,
-          children: (0, r.jsx)(s.Den, {
+          children: (0, r.jsx)(a.Den, {
             className: S.filterOverlayContent,
             children: (0, r.jsx)(_.Z, {})
           })

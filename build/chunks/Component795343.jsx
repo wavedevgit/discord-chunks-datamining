@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -38,12 +38,12 @@ function k(e) {
   } = e, T = (0, d.sp)(), I = null != (t = null == T ? true : T.sessionId) ? t : "", {
     noCache: L,
     includeUnpublished: B
-  } = (0, O.Z)(), P = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, O.Z)(), P = (0, a.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: A,
     currentPage: N,
     totalCount: R,
     isFetchingResults: Z
-  } = (0, C.a)(), w = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(A)), H = l.useCallback(() => {
+  } = (0, C.a)(), w = (0, a.Wu)([g.Z], () => g.Z.getProductsBySkus(A)), H = l.useCallback(() => {
     var e;
     null == i || null == (e = i.current) || e.scrollToTop({
       animate: true
@@ -98,11 +98,11 @@ function k(e) {
     }).showCardsV2;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()({
+      className: s()({
         [j.productsEmpty]: q
       }),
       children: [q && (0, r.jsx)(S.Z, {}), (0, r.jsxs)("div", {
-        className: a()(j.products, {
+        className: s()(j.products, {
           [j.loadIn]: G
         }),
         ref: W,
