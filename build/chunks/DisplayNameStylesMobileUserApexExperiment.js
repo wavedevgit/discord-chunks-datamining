@@ -80,4 +80,21 @@ function c(e) {
   return l.useConfig({
     location: t
   }).enabled && n
-}
+}(0, Chunk427164.le)({
+  name: "2025-10-display-name-styles-mobile",
+  kind: "user",
+  defaultConfig: {
+    enabled: false,
+    dmEffects: false
+  },
+  variations: {
+    1: {
+      enabled: true,
+      dmEffects: false
+    },
+    2: {
+      enabled: true,
+      dmEffects: true
+    }
+  }
+})

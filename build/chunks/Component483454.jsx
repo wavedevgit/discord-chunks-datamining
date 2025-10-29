@@ -163,8 +163,8 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       options: t,
       renderAsStandaloneElement: n,
       billingAddressInfo: o,
-      rerenderKey: s
-    } = e, l = A(e, ["options", "renderAsStandaloneElement", "billingAddressInfo", "rerenderKey"]);
+      internalKey: s
+    } = e, l = A(e, ["options", "renderAsStandaloneElement", "billingAddressInfo", "internalKey"]);
     let c = i.useMemo(() => {
         let {
           name: e,
@@ -202,7 +202,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       stripeAddressElementProps: l,
       elementsRef: c,
       paymentElementSelectedType: u,
-      addressElementRerenderKey: d,
+      addressElementKey: d,
       analyticsContext: _
     } = e, p = (0, a.useElements)();
     i.useEffect(() => {
@@ -225,7 +225,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       }), (0, r.jsx)("div", {
         className: s()(O.addressElementContainer, m ? O.visible : [O.hidden, O.rightToLeftEntry]),
         children: (0, r.jsx)(w, S(I({}, l), {
-          rerenderKey: d,
+          internalKey: d,
           renderAsStandaloneElement: u === y.He.PAYMENT_REQUEST,
           billingAddressInfo: n
         }))
@@ -267,64 +267,71 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       onBillingAddressChange: o,
       shouldLogOnChangeEvents: s,
       continueSessionToInitialStep: l
-    } = e, c = i.useRef(null), [d, _] = i.useState(false), [p, h] = i.useState(l === f.h8.CREDIT_CARD_INFORMATION ? y.He.CARD : null), m = r && (t === f.h8.PAYMENT_ELEMENT || t === f.h8.ADDRESS && null != p), b = i.useMemo(() => ({
-      onChange: e => {
-        s && null != a && a.log("PaymentElements onChange event:", e), _(e.complete), h((0, E.hR)(e.value.type))
-      },
-      wallets: M
-    }), [a, s]), O = i.useMemo(() => ({
-      onChange: e => {
-        var t;
-        let {
-          complete: n,
-          value: {
-            address: r,
-            name: i
-          }
-        } = e, a = {
-          name: i,
-          country: r.country,
-          city: r.city,
-          line1: r.line1,
-          line2: null != (t = r.line2) ? t : "",
-          state: r.state,
-          postalCode: r.postal_code
-        }, s = g._.every(e => {
-          let t = a[e];
-          return null != t && "" !== t
-        }) && n;
-        o(a, s)
-      }
-    }), [o]), v = i.useCallback(function(e) {
-      let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-      true !== e && h(e), n(f.h8.PAYMENT_ELEMENT, t)
-    }, [n]);
+    } = e, c = i.useRef(null), d = i.useRef(null), [_, p] = i.useState(false), [h, m] = i.useState(l === f.h8.CREDIT_CARD_INFORMATION ? y.He.CARD : null), b = r && (t === f.h8.PAYMENT_ELEMENT || t === f.h8.ADDRESS && null != h);
+    i.useEffect(() => {
+      t === f.h8.PAYMENT_ELEMENT && (d.current = null)
+    }, [t]);
+    let O = i.useMemo(() => ({
+        onChange: e => {
+          s && null != a && a.log("PaymentElements onChange event:", e), p(e.complete), m((0, E.hR)(e.value.type))
+        },
+        wallets: M
+      }), [a, s]),
+      v = i.useMemo(() => ({
+        onChange: e => {
+          var t;
+          let {
+            complete: n,
+            value: {
+              address: r,
+              name: i
+            }
+          } = e, a = {
+            name: i,
+            country: r.country,
+            city: r.city,
+            line1: r.line1,
+            line2: null != (t = r.line2) ? t : "",
+            state: r.state,
+            postalCode: r.postal_code
+          }, s = g._.every(e => {
+            let t = a[e];
+            return null != t && "" !== t
+          }) && n;
+          o(a, s)
+        }
+      }), [o]),
+      I = i.useCallback(function(e) {
+        let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
+        true !== e && m(e), n(f.h8.PAYMENT_ELEMENT, t)
+      }, [n]);
     i.useEffect(() => {
       if (!r) return;
       let e = () => {
-        v(true)
+        I(true)
       };
       return u.Z.subscribe("BRAINTREE_TOKENIZE_PAYPAL_FAIL_WINDOW_CLOSED", e), () => {
         u.Z.unsubscribe("BRAINTREE_TOKENIZE_PAYPAL_FAIL_WINDOW_CLOSED", e)
       }
-    }, [v, r]);
-    let I = i.useCallback(() => {
-        h(null)
+    }, [I, r]);
+    let T = i.useCallback(() => {
+        m(null)
       }, []),
-      [T, S] = i.useState(true);
+      [S, A] = i.useState(true);
     return {
-      shouldRenderPaymentElement: m,
-      stripePaymentElementProps: b,
-      stripeAddressElementProps: O,
+      shouldRenderPaymentElement: b,
+      stripePaymentElementProps: O,
+      stripeAddressElementProps: v,
       combinedStripeElementsRef: c,
-      paymentElementReady: d,
-      paymentElementSelectedType: p,
-      setPaymentElementSelectedType: h,
-      handlePaymentElementStep: v,
-      onBackFromPaymentElement: I,
-      addressElementRerenderKey: T,
-      rerenderAddressElement: i.useCallback(() => {
-        S(Date.now().toString())
+      lastConfirmedSetupIntentRef: d,
+      paymentElementReady: _,
+      paymentElementSelectedType: h,
+      setPaymentElementSelectedType: m,
+      handlePaymentElementStep: I,
+      onBackFromPaymentElement: T,
+      addressElementKey: S,
+      remountAddressElement: i.useCallback(() => {
+        A(Date.now().toString())
       }, [])
     }
   }

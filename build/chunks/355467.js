@@ -48,7 +48,7 @@ require.d(exports, {
   w$: () => ee,
   w7: () => eM,
   xt: () => M
-}), require("./49124.js"), require("./415506.js");
+}), require("./49124.js"), require("./415506.js"), require("./388685.js");
 var Chunk289008 = require("./289008.js"),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
@@ -534,41 +534,51 @@ let X = (e, t, n) => {
       error: r
     }
   };
-async function et(e, t, n, r, i) {
-  if (null == e) throw H("Stripe not loaded", true);
-  if (null == r) throw H("Stripe Elements not loaded", true);
-  c.Z.dispatch({
+async function et() {
+  for (var e, t = arguments.length, n = Array(exports), r = 0; Chunk289008 < exports; Chunk289008++) require[Chunk289008] = arguments[Chunk289008];
+  let [i, a, {
+    billingAddress: o,
+    paymentSourceType: s,
+    lastConfirmedSetupIntentRef: l
+  }, u] = require;
+  if (null == Chunk512722) throw H("Stripe not loaded", true);
+  if (null == a) throw H("Stripe Elements not loaded", true);
+  Chunk570140.Z.dispatch({
     type: "BILLING_PAYMENT_SOURCE_CREATE_START"
   });
-  let a = await G(t);
-  n !== A.He.PAYMENT_REQUEST && await J(r);
-  let o = null;
-  if (n === A.He.CARD || n === A.He.PAYMENT_REQUEST) {
-    let t = await e.confirmSetup({
-      redirect: "if_required",
-      elements: r
-    });
-    if (Q(t.error)) {
-      let i = await (0, f.V)();
-      n !== A.He.PAYMENT_REQUEST && await J(r), t = await e.confirmSetup({
+  let d = await G(Chunk913527);
+  s !== Chunk231338.He.PAYMENT_REQUEST && await J(a);
+  let _ = null;
+  if (s === Chunk231338.He.CARD || s === Chunk231338.He.PAYMENT_REQUEST) {
+    let t = null != (e = Chunk544891.current) ? module : true,
+      n = null != exports && s === Chunk231338.He.PAYMENT_REQUEST ? {
+        setupIntent: null != exports ? exports : true,
+        error: true
+      } : await Chunk512722.confirmSetup({
         redirect: "if_required",
-        clientSecret: i,
-        elements: r
+        elements: a
+      });
+    if (Q(require.error) && s !== Chunk231338.He.PAYMENT_REQUEST) {
+      let e = await (0, Chunk947673.V)();
+      await J(a), n = await Chunk512722.confirmSetup({
+        redirect: "if_required",
+        clientSecret: module,
+        elements: a
       })
     }
     let {
-      setupIntent: i
-    } = X(t.setupIntent, t.error, e => H(e, true));
-    o = i.payment_method
+      setupIntent: r
+    } = X(require.setupIntent, require.error, e => H(e, true));
+    Chunk544891.current = Chunk289008, _ = Chunk289008.payment_method
   } else {
     let {
-      paymentMethod: t
-    } = await $(e, r);
-    o = t.id
+      paymentMethod: e
+    } = await $(Chunk512722, a);
+    _ = module.id
   }
-  return Z(I.gg$.STRIPE, o, t, {
-    billingAddressToken: a,
-    analyticsLocation: i
+  return Z(Chunk981631.gg$.STRIPE, Chunk710845, Chunk913527, {
+    billingAddressToken: Chunk128069,
+    analyticsLocation: Chunk881052
   })
 }
 async function en(e, t, n, r) {
