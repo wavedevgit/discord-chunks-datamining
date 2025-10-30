@@ -84,7 +84,7 @@ function P(e) {
   let {
     detectableApplications: t
   } = e;
-  for (let e of t) R(e)
+  for (let e of (O.clear(), v = {}, I = {}, t)) R(e)
 }
 
 function D() {
@@ -100,7 +100,7 @@ function L(e) {
     games: t,
     etag: n
   } = e;
-  for (let e of (null != n && S !== n && (S = n), t)) R(C(e));
+  for (let e of (null != n && S !== n && (O.clear(), v = {}, I = {}, S = n), t)) R(C(e));
   r = true, A = Date.now()
 }
 class x extends(a = Chunk442837.ZP.PersistedStore) {

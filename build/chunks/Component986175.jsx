@@ -93,10 +93,16 @@ let O = {
     id: "modal",
     docs: "https://design.discord.tools/components/web/modals/modal",
     component: function(e) {
-      var {
-        showPreview: t,
-        showInput: n
-      } = e, i = b(e, ["showPreview", "showInput"]);
+      var t, {
+          showPreview: n,
+          showInput: i,
+          subtitleIcon: a
+        } = e,
+        s = b(e, ["showPreview", "showInput", "subtitleIcon"]);
+      let c = a ? {
+        text: null != (t = s.subtitle) ? t : "Default subtitle",
+        leadingIcon: o.VL1
+      } : s.subtitle;
       return (0, r.jsxs)(u.Kqy, {
         gap: 16,
         align: "center",
@@ -106,15 +112,15 @@ let O = {
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           text: "Open Modal",
-          onClick: () => (0, u.h7j)(e => (0, r.jsx)(o.Modal, E(m({}, e, i), {
-            title: i.title,
-            subtitle: i.subtitle,
-            input: n ? (0, r.jsx)(u.E1j, {
+          onClick: () => (0, u.h7j)(e => (0, r.jsx)(o.Modal, E(m({}, e, s), {
+            title: s.title,
+            subtitle: c,
+            input: i ? (0, r.jsx)(u.E1j, {
               placeholder: "Search...",
               onChange: () => {},
               query: ""
             }) : true,
-            preview: t ? (0, r.jsxs)(u.Kqy, {
+            preview: n ? (0, r.jsxs)(u.Kqy, {
               gap: 8,
               children: [(0, r.jsx)(u.Text, {
                 variant: "text-lg/semibold",
@@ -183,7 +189,7 @@ let O = {
               })]
             })
           })), {
-            dismissable: i.dismissable
+            dismissable: s.dismissable
           })
         })]
       })
@@ -198,6 +204,11 @@ let O = {
         label: "Subtitle",
         type: "text",
         defaultValue: "This is a modal subtitle"
+      },
+      subtitleIcon: {
+        label: "Subtitle Icon",
+        type: "boolean",
+        defaultValue: false
       },
       size: {
         label: "Size",
@@ -232,33 +243,39 @@ let O = {
     id: "expressive-modal",
     docs: "https://design.discord.tools/components/web/modals/expressive-modal",
     component: function(e) {
-      var {
-        graphic: t
-      } = e, l = b(e, ["graphic"]);
-      let c = i.useMemo(() => 0 === t ? {
-        type: "image",
-        src: d
-      } : 1 === t ? {
-        type: "lottie",
-        lottie: () => n.e("94792").then(n.t.bind(n, 972951, 19)),
-        aspectRatio: "6/4"
-      } : 2 === t ? {
-        type: "rive",
-        rive: a.PerfTestRive
-      } : 3 === t ? {
-        type: "video",
-        src: f.Z,
-        fallbackImageSrc: d,
-        loop: true,
-        loopAt: 2.5
-      } : 4 === t ? {
-        type: "dynamic",
-        component: s.DynamicGraphicComponent.DEMO,
-        aspectRatio: "6/4",
-        props: {
-          text: "Dynamic Content"
-        }
-      } : true, [t]);
+      var t, {
+          graphic: l,
+          subtitleIcon: c
+        } = e,
+        _ = b(e, ["graphic", "subtitleIcon"]);
+      let p = c ? {
+          text: null != (t = _.subtitle) ? t : "Default subtitle",
+          leadingIcon: o.VL1
+        } : _.subtitle,
+        h = i.useMemo(() => 0 === l ? {
+          type: "image",
+          src: d
+        } : 1 === l ? {
+          type: "lottie",
+          lottie: () => n.e("94792").then(n.t.bind(n, 972951, 19)),
+          aspectRatio: "6/4"
+        } : 2 === l ? {
+          type: "rive",
+          rive: a.PerfTestRive
+        } : 3 === l ? {
+          type: "video",
+          src: f.Z,
+          fallbackImageSrc: d,
+          loop: true,
+          loopAt: 2.5
+        } : 4 === l ? {
+          type: "dynamic",
+          component: s.DynamicGraphicComponent.DEMO,
+          aspectRatio: "6/4",
+          props: {
+            text: "Dynamic Content"
+          }
+        } : true, [l]);
       return (0, r.jsxs)(u.Kqy, {
         gap: 16,
         align: "center",
@@ -268,10 +285,10 @@ let O = {
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           text: "Open ExpressiveModal",
-          onClick: () => (0, u.h7j)(e => (0, r.jsx)(o.ExpressiveModal, E(m({}, e, l), {
-            title: l.title,
-            subtitle: l.subtitle,
-            graphic: c,
+          onClick: () => (0, u.h7j)(e => (0, r.jsx)(o.ExpressiveModal, E(m({}, e, _), {
+            title: _.title,
+            subtitle: p,
+            graphic: h,
             actions: [{
               variant: "secondary",
               text: "Cancel",
@@ -289,7 +306,7 @@ let O = {
               })
             })
           })), {
-            dismissable: l.dismissable
+            dismissable: _.dismissable
           })
         })]
       })
@@ -304,6 +321,11 @@ let O = {
         label: "Subtitle",
         type: "text",
         defaultValue: "This modal has a gradient background"
+      },
+      subtitleIcon: {
+        label: "Subtitle Icon",
+        type: "boolean",
+        defaultValue: false
       },
       gradientColor: {
         label: "Gradient Color",
