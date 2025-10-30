@@ -166,8 +166,9 @@ function L(e) {
       var t;
       e.preventDefault(), (null == (t = e.dataTransfer) ? true : t.types.includes("Files")) && m(true)
     }, []),
-    U = i.useCallback(() => {
-      m(false)
+    U = i.useCallback(e => {
+      var t;
+      null != (t = u.current) && t.contains(e.relatedTarget) || m(false)
     }, []),
     G = i.useCallback((e, t) => {
       if (0 === e.length) return;
