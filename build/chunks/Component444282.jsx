@@ -85,7 +85,7 @@ function b(e) {
       children: [(0, r.jsxs)(s.Text, {
         tag: "span",
         variant: "text-md/normal",
-        children: [n.name, ": "]
+        children: [n.displayName, ": "]
       }), (0, r.jsx)(s.Text, {
         tag: "span",
         variant: "text-md/normal",
@@ -108,7 +108,7 @@ function b(e) {
       className: o()(g.optionName, {
         [g.optionNameActive]: y
       }),
-      children: n.name
+      children: n.displayName
     }), (0, r.jsx)(s.P3F, {
       className: g.clickContainer,
       onClick: () => {
