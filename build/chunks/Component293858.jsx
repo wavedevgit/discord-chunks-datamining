@@ -49,8 +49,8 @@ function L(e) {
       giftRecipient: N,
       giftCode: R,
       hasSentMessage: F,
-      isSendingMessage: H,
-      sendGiftMessage: G,
+      isSendingMessage: G,
+      sendGiftMessage: H,
       claimableRewards: U,
       selectedGiftingPromotionReward: D
     } = (0, _.wD)(),
@@ -68,10 +68,10 @@ function L(e) {
     n(), null == L || L()
   }, [n, L]);
   i.useEffect(() => {
-    !Z || null == N || null == R || F || H || (0, u.pO)(N) || G({
+    !Z || null == N || null == R || F || G || (0, u.pO)(N) || H({
       onSubscriptionConfirmation: L
     })
-  }, [G, Z, N, R, F, H, L]), i.useEffect(() => {
+  }, [H, Z, N, R, F, G, L]), i.useEffect(() => {
     null != K && null != K.reminderNotice && W && (0, s.wH)(o.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
       dismissAction: j.L.INDIRECT_ACTION
     })

@@ -2,15 +2,14 @@
 /** chunk id: 737406, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
-}), require("./388685.js"), require("./781311.js"), require("./539854.js");
+  Z: () => E
+}), require("./388685.js"), require("./953529.js"), require("./781311.js"), require("./539854.js");
 var Chunk732870 = require("./732870.js"),
   Chunk429091 = require("./429091.js"),
   Chunk70956 = require("./70956.js"),
-  Chunk373228 = require("./373228.js"),
-  Chunk378233 = require("./378233.js");
+  Chunk373228 = require("./373228.js");
 
-function l(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,55 +17,32 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
+let l = new Map,
+  c = new Map,
+  u = false,
+  d = null,
+  f = Chunk70956.Z.Millis.HOUR;
 
-function c(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      l(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function u(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function d(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let f = new Map,
-  _ = new Map,
-  p = false,
-  h = null,
-  m = Chunk70956.Z.Millis.HOUR;
-
-function g(e) {
-  return d(c({}, e), {
+function _(e) {
+  return {
+    id: e.id,
+    tags: e.tags,
+    type: e.type,
+    name: e.name,
+    description: e.description,
+    format_type: e.format_type,
+    pack_id: e.pack_id,
     [r.O]: "PackSticker"
-  })
+  }
 }
 
-function E(e) {
+function p(e) {
   let t = {};
-  for (let n of e) t[n.id] = g(n);
+  for (let n of e) t[n.id] = _(n);
   return t
 }
 
-function b(e, t) {
+function h(e, t) {
   let n = [];
   return n.push({
     type: o.MO.STICKER_NAME,
@@ -76,64 +52,63 @@ function b(e, t) {
     value: t.name
   }), n
 }
-class y extends Chunk429091.d {
+class m extends Chunk429091.d {
   get isFetchingStickerPacks() {
-    return p
+    return u
   }
   get hasLoadedStickerPacks() {
-    return null != h && h + m > performance.now()
+    return null != d && d + f > performance.now()
   }
   isPremiumPack(e) {
-    return _.has(e)
+    return c.has(e)
   }
   getStickerPack(e) {
-    return f.get(e)
+    return l.get(e)
   }
   constructor(...e) {
-    super(...e), l(this, "getAllPackStickers", this.memoized(e => {
+    super(...e), s(this, "getAllPackStickers", this.memoized(e => {
       let t = new Map;
       for (let n in e) t.set(n, Object.values(e[n].root));
       return t
-    })), l(this, "getStickerMetadataMap", this.memoized(e => {
+    })), s(this, "getStickerMetadataMap", this.memoized(e => {
       let t = new Map;
       for (let n in e)
         for (let [r, i] of Object.entries(e[n].root)) {
-          let e = f.get(n);
-          t.set(r, b(i, e))
+          let e = l.get(n);
+          t.set(r, h(i, e))
         }
       return t
-    })), l(this, "getStickerById", this.memoizedSecondaryIndex()), l(this, "getPremiumPacks", this.memoized(e => Array.from(_.values())))
+    })), s(this, "getStickerById", this.memoizedSecondaryIndex()), s(this, "getPremiumPacks", this.memoized(e => Array.from(c.values())))
   }
 }
 
-function O(e, t, n) {
-  f.set(e.id, e), n && _.set(e.id, e), t.setPartition(e.id, E(e.stickers))
+function g(e, t, n) {
+  l.set(e.id, e), n && c.set(e.id, e), t.setPartition(e.id, p(e.stickers))
 }
-l(y, "displayName", "StickersPackStore");
-let v = new y({
+s(m, "displayName", "StickersPackStore");
+let E = new m({
   LOGOUT: (e, t) => {
-    f.clear(), _.clear(), t.reset()
+    l.clear(), c.clear(), t.reset()
   },
   STICKER_PACK_FETCH_SUCCESS: (e, t) => {
     let {
       pack: n
     } = e;
-    O(n, t, false)
+    g(n, t, false)
   },
   STICKER_PACKS_FETCH_START: (e, t) => {
-    p = true
+    u = true
   },
   STICKER_PACKS_FETCH_SUCCESS: (e, t) => {
     let {
       packs: n
     } = e;
-    for (let e of (p = false, h = performance.now(), n)) O(e, t, true)
+    for (let e of (u = false, d = performance.now(), n)) g(e, t, true)
   },
-  STICKER_FETCH_SUCCESS: (e, t) => {
+  PACK_STICKER_FETCH_SUCCESS: (e, t) => {
     let {
       sticker: n
     } = e;
-    if (!(0, s.jl)(n)) returnfalse;
-    t.set(n.pack_id, n.id, g(n))
+    t.set(n.pack_id, n.id, _(n))
   }
 }, "typescript")

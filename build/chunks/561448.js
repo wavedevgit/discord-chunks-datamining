@@ -13,7 +13,7 @@ var Chunk409813 = require("./409813.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx");
 let s = new Set([Chunk231338.He.CARD, Chunk231338.He.PAYMENT_REQUEST, Chunk231338.He.PAYPAL]),
-  l = new Set([Chunk231338.He.IDEAL, Chunk231338.He.GOPAY_WALLET, Chunk231338.He.KAKAOPAY, Chunk231338.He.VENMO, Chunk231338.He.CASH_APP]),
+  l = new Set([Chunk231338.He.IDEAL, Chunk231338.He.GOPAY_WALLET, Chunk231338.He.KAKAOPAY, Chunk231338.He.VENMO, Chunk231338.He.CASH_APP, Chunk231338.He.GCASH, Chunk231338.He.PAYSAFE_CARD, Chunk231338.He.GRABPAY_MY, Chunk231338.He.MOMO_WALLET]),
   c = {
     [Chunk231338.He.PAYPAL]: {
       paymentSourceType: Chunk231338.He.PAYPAL,
@@ -49,9 +49,37 @@ let s = new Set([Chunk231338.He.CARD, Chunk231338.He.PAYMENT_REQUEST, Chunk23133
     },
     [Chunk231338.He.KAKAOPAY]: {
       paymentSourceType: Chunk231338.He.KAKAOPAY,
-      liveId: null,
+      liveId: "cpmt_1SNzmCCR4aIufmH2C8zATYJI",
       testId: "cpmt_1ReOr3CR4aIufmH29WgZlgkT",
       subtitleTranslationKey: Chunk388032.t.CSVexi,
+      isRegionalPaymentMethod: true
+    },
+    [Chunk231338.He.GCASH]: {
+      paymentSourceType: Chunk231338.He.GCASH,
+      liveId: "cpmt_1SNzmeCR4aIufmH2v4MZH92s",
+      testId: "cpmt_1SNz6wCR4aIufmH2TaWNlg1v",
+      subtitleTranslationKey: Chunk388032.t.PjehcF,
+      isRegionalPaymentMethod: true
+    },
+    [Chunk231338.He.PAYSAFE_CARD]: {
+      paymentSourceType: Chunk231338.He.PAYSAFE_CARD,
+      liveId: "cpmt_1SNzmsCR4aIufmH2qIXwMUK4",
+      testId: "cpmt_1SNzBTCR4aIufmH2OtCsCtAs",
+      subtitleTranslationKey: Chunk388032.t.boznHN,
+      isRegionalPaymentMethod: true
+    },
+    [Chunk231338.He.GRABPAY_MY]: {
+      paymentSourceType: Chunk231338.He.GRABPAY_MY,
+      liveId: "cpmt_1SNznNCR4aIufmH2WmA6DMWd",
+      testId: "cpmt_1SNzhoCR4aIufmH2jDETkgfZ",
+      subtitleTranslationKey: Chunk388032.t.T5davE,
+      isRegionalPaymentMethod: true
+    },
+    [Chunk231338.He.MOMO_WALLET]: {
+      paymentSourceType: Chunk231338.He.MOMO_WALLET,
+      liveId: "cpmt_1SNznaCR4aIufmH2wong8Fun",
+      testId: "cpmt_1SNzGhCR4aIufmH21EMOA2P3",
+      subtitleTranslationKey: Chunk388032.t.J0A1Vk,
       isRegionalPaymentMethod: true
     }
   },
@@ -62,7 +90,11 @@ let s = new Set([Chunk231338.He.CARD, Chunk231338.He.PAYMENT_REQUEST, Chunk23133
     [Chunk231338.He.VENMO]: "venmo",
     [Chunk231338.He.CASH_APP]: "cashapp",
     [Chunk231338.He.GOPAY_WALLET]: "gopay",
-    [Chunk231338.He.KAKAOPAY]: "kakaopay"
+    [Chunk231338.He.KAKAOPAY]: "kakaopay",
+    [Chunk231338.He.GCASH]: "gcash",
+    [Chunk231338.He.PAYSAFE_CARD]: "paysafecard",
+    [Chunk231338.He.GRABPAY_MY]: "grabpay",
+    [Chunk231338.He.MOMO_WALLET]: "momo"
   },
   d = (e, t) => {
     let n = c[e];

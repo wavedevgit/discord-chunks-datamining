@@ -6,10 +6,10 @@ require.d(exports, {
 }), require("./953529.js"), require("./388685.js"), require("./781311.js"), require("./539854.js");
 var Chunk732870 = require("./732870.js"),
   Chunk633302 = require("./633302.js"),
+  Chunk894276 = require("./894276.js"),
   Chunk429091 = require("./429091.js"),
   Chunk430824 = require("./430824.js"),
-  Chunk373228 = require("./373228.js"),
-  Chunk378233 = require("./378233.js");
+  Chunk373228 = require("./373228.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,29 +78,29 @@ function h(e, t) {
       tags: r
     } = t,
     a = {
-      type: s.MO.STICKER_NAME,
+      type: l.MO.STICKER_NAME,
       value: t.name.trim().toLocaleLowerCase()
     };
   if (n.push(a), null != r) {
     let t = {
-      type: s.MO.TAG,
+      type: l.MO.TAG,
       value: r.trim().toLocaleLowerCase()
     };
     n.push(t);
-    let a = o.Z.getGuild(e);
+    let a = s.Z.getGuild(e);
     if (null != a) {
       let e = a.name.trim().toLocaleLowerCase();
       null != e && "" !== e && n.push({
-        type: s.MO.GUILD_NAME,
+        type: l.MO.GUILD_NAME,
         value: e
       })
     }
-    let l = i.ZP.getByName(r);
-    null != l && (n.push({
-      type: s.MO.CORRELATED_EMOJI,
-      value: l.surrogates
-    }), l.forEachDiversity(e => n.push({
-      type: s.MO.CORRELATED_EMOJI,
+    let o = i.ZP.getByName(r);
+    null != o && (n.push({
+      type: l.MO.CORRELATED_EMOJI,
+      value: o.surrogates
+    }), o.forEachDiversity(e => n.push({
+      type: l.MO.CORRELATED_EMOJI,
       value: e.surrogates
     })))
   }
@@ -141,8 +141,7 @@ let g = new m({
   GUILD_STICKERS_CREATE_SUCCESS: (e, t) => {
     t.set(e.guildId, e.sticker.id, _(e.sticker))
   },
-  STICKER_FETCH_SUCCESS: (e, t) => {
-    if (!(0, l.J8)(e.sticker)) returnfalse;
+  GUILD_STICKER_FETCH_SUCCESS: (e, t) => {
     t.set(e.sticker.guild_id, e.sticker.id, _(e.sticker))
   },
   GUILD_STICKERS_UPDATE: (e, t) => {
@@ -164,4 +163,4 @@ let g = new m({
   GUILD_STICKERS_FETCH_SUCCESS: (e, t) => {
     t.setPartition(e.guildId, p(e.stickers))
   }
-}, "typescript")
+}, Chunk894276.iZ.getCachedBridgedStoreMode())

@@ -135,7 +135,7 @@ function O(e) {
           wishlistId: s,
           isOwner: false,
           surface: h.Y.GIFTING_FLOW,
-          giftingOrigin: n === f.lr.WISHLIST ? b.Wt.DM_CHANNEL_WISHLIST : b.Wt.DM_CHANNEL,
+          giftingOrigin: b.Wt.DM_CHANNEL_WISHLIST,
           collectibleSource: n,
           showIcons: l
         })
@@ -191,17 +191,17 @@ let P = function(e) {
       userId: t.id,
       section: j.oh.WISHLIST
     })
-  }, [t.id]), R = y[i.useMemo(() => T >= f.zL ? "FULL_WISHLIST" : T > 0 ? "MIXED" : "SHOP_ONLY", [T])], F = g.ZP.getName(t), H = null == n ? true : n.getBannerURL({
+  }, [t.id]), R = y[i.useMemo(() => T >= f.zL ? "FULL_WISHLIST" : T > 0 ? "MIXED" : "SHOP_ONLY", [T])], F = g.ZP.getName(t), G = null == n ? true : n.getBannerURL({
     canAnimate: false,
     size: 713
-  }), G = _ || h || m || x, U = P ? w.slice(0, f.zL - 1) : w, D = P ? w[f.zL - 1] : null, z = E - f.zL + 1;
+  }), H = _ || h || m || x, U = P ? w.slice(0, f.zL - 1) : w, D = P ? w[f.zL - 1] : null, z = E - f.zL + 1;
   return null != b || null != L ? null : (0, r.jsxs)("div", {
     className: l()(v.wishlistBanner, Z),
     style: B,
-    children: [null != H && (0, r.jsx)("div", {
+    children: [null != G && (0, r.jsx)("div", {
       className: v.backgroundImage,
       style: {
-        backgroundImage: "url(".concat(H, ")")
+        backgroundImage: "url(".concat(G, ")")
       }
     }), (0, r.jsx)(o.f6W, {
       disableAdaptiveTheme: true,
@@ -212,7 +212,7 @@ let P = function(e) {
           themeClass: e
         }), (0, r.jsx)("div", {
           className: e,
-          children: G || 0 === w.length ? (0, r.jsx)(I, {}) : (0, r.jsx)(O, {
+          children: H || 0 === w.length ? (0, r.jsx)(I, {}) : (0, r.jsx)(O, {
             items: U,
             hasOverflow: P,
             overflowItem: D,

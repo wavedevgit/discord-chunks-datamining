@@ -5,8 +5,9 @@ require.d(exports, {
   Ng: () => h,
   Re: () => l,
   fg: () => m,
+  iZ: () => g,
   j_: () => p,
-  l2: () => g
+  l2: () => E
 }), require("./953529.js"), require("./539854.js"), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -141,6 +142,7 @@ class _ extends u {
 }
 let p = new f("2025-09-libdiscore-migrate-guildstore", "GuildStore", "Kv"),
   h = new f("2025-09-libdiscore-guildrolestore", "GuildRoleStore", "Kkv"),
-  m = new f("2025-09-libdiscore-rawguildemojistore", "RawGuildEmojiStore", "Kkv");
+  m = new f("2025-09-libdiscore-rawguildemojistore", "RawGuildEmojiStore", "Kkv"),
+  g = new f("2025-10-libdiscore-guildstickersstore", "GuildStickersStore", "Kkv");
 new _("2025-09-libdiscore-telemetry");
-let g = new d("2025-10-defer-load-late-lazy-cache", "Allow react to render before lazy cache is loaded")
+let E = new d("2025-10-defer-load-late-lazy-cache", "Allow react to render before lazy cache is loaded")

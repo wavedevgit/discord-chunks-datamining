@@ -2,18 +2,18 @@
 /** chunk id: 268350, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $p: () => S,
-  FQ: () => I,
-  Il: () => T,
-  Jf: () => R,
-  SA: () => L,
-  SV: () => A,
-  Um: () => C,
-  eu: () => P,
-  hW: () => x,
-  lY: () => N,
-  qB: () => w
-}), require("./953529.js"), require("./539854.js");
+  $p: () => T,
+  FQ: () => S,
+  Il: () => A,
+  Jf: () => P,
+  SA: () => x,
+  SV: () => C,
+  Um: () => N,
+  eu: () => w,
+  hW: () => M,
+  lY: () => R,
+  qB: () => D
+}), require("./415506.js"), require("./953529.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk544891 = require("./544891.js"),
@@ -27,11 +27,12 @@ var Chunk392711 = require("./392711.js"),
   Chunk594174 = require("./594174.js"),
   Chunk73346 = require("./73346.js"),
   Chunk926491 = require("./926491.js"),
+  Chunk378233 = require("./378233.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,20 +41,20 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,16 +65,16 @@ function O(e, t) {
   return n
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = async (e, t) => {
+let S = async (e, t) => {
   let {
     body: n
   } = await (0, p.Kb)({
-    url: m.ANM.STICKER_PACK(e),
+    url: g.ANM.STICKER_PACK(e),
     rejectWithError: false
   });
   return o.Z.dispatch({
@@ -82,7 +83,7 @@ let I = async (e, t) => {
     pack: n,
     ingestStickers: t
   }), n
-}, S = async function() {
+}, T = async function() {
   let {
     locale: e = Chunk706454.default.locale
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
@@ -107,44 +108,49 @@ let I = async (e, t) => {
     type: "STICKER_PACKS_FETCH_SUCCESS",
     packs: exports
   })
-}, T = async e => {
+}, A = async e => {
   let {
     body: t
   } = await a.tn.get({
-    url: m.ANM.STICKER(e),
+    url: g.ANM.STICKER(e),
     rejectWithError: false
   });
-  o.Z.dispatch({
-    type: "STICKER_FETCH_SUCCESS",
+  if ((0, m.J8)(t)) o.Z.dispatch({
+    type: "GUILD_STICKER_FETCH_SUCCESS",
     sticker: t
-  })
-}, A = async (e, t) => {
+  });
+  else if ((0, m.jl)(t)) o.Z.dispatch({
+    type: "PACK_STICKER_FETCH_SUCCESS",
+    sticker: t
+  });
+  else throw Error("Invalid sticker type")
+}, C = async (e, t) => {
   let {
     body: n
   } = await a.tn.get({
-    url: m.ANM.GUILD_STICKER_PACKS(e),
+    url: g.ANM.GUILD_STICKER_PACKS(e),
     rejectWithError: false,
     signal: t
   });
   o.Z.dispatch({
     type: "GUILD_STICKERS_FETCH_SUCCESS",
     guildId: e,
-    stickers: n.map(e => null != e.user ? v(y({}, e), {
+    stickers: n.map(e => null != e.user ? I(O({}, e), {
       user_id: e.user.id,
       user: new d.Z(e.user)
     }) : e)
   })
-}, C = async e => {
+}, N = async e => {
   await a.tn.del({
-    url: m.ANM.GUILD_STICKER(e.guild_id, e.id),
+    url: g.ANM.GUILD_STICKER(e.guild_id, e.id),
     rejectWithError: false
   })
-}, N = async e => {
+}, R = async e => {
   var t;
   let {
     guildId: n
   } = e, r = await a.tn.post({
-    url: m.ANM.GUILD_STICKER_PACKS(n),
+    url: g.ANM.GUILD_STICKER_PACKS(n),
     body: "web" === e.platform ? e.body : true,
     fields: "mobile" === e.platform ? [{
       name: "name",
@@ -169,17 +175,17 @@ let I = async (e, t) => {
   return o.Z.dispatch({
     type: "GUILD_STICKERS_CREATE_SUCCESS",
     guildId: n,
-    sticker: v(y({}, r.body), {
+    sticker: I(O({}, r.body), {
       user_id: null == (t = _.default.getCurrentUser()) ? true : t.id
     })
   }), r.body
-}, R = async (e, t, n) => (await a.tn.patch({
-  url: m.ANM.GUILD_STICKER(e, t),
+}, P = async (e, t, n) => (await a.tn.patch({
+  url: g.ANM.GUILD_STICKER(e, t),
   body: n,
   rejectWithError: false
 })).body;
 
-function P(e, t, n) {
+function w(e, t, n) {
   o.Z.dispatch({
     type: "ADD_STICKER_PREVIEW",
     channelId: e,
@@ -188,7 +194,7 @@ function P(e, t, n) {
   })
 }
 
-function w(e, t) {
+function D(e, t) {
   o.Z.dispatch({
     type: "CLEAR_STICKER_PREVIEW",
     channelId: e,
@@ -196,21 +202,21 @@ function w(e, t) {
   })
 }
 
-function D(e) {
+function L(e) {
   return f.Z.totalUnavailableGuilds > 0 || !l.Z.isConnected() ? e : e.filter(e => null != h.Z.getStickerById(e))
 }
 
-function L(e) {
-  u.DZ.updateAsync("favoriteStickers", t => (t.stickerIds = D(t.stickerIds), i().size(t.stickerIds) >= g.oX) ? (s.Z.show({
-    title: E.intl.string(E.t["+XYXtZ"]),
-    body: E.intl.formatToPlainString(E.t.JaIyFi, {
-      count: g.oX
+function x(e) {
+  u.DZ.updateAsync("favoriteStickers", t => (t.stickerIds = L(t.stickerIds), i().size(t.stickerIds) >= E.oX) ? (s.Z.show({
+    title: b.intl.string(b.t["+XYXtZ"]),
+    body: b.intl.formatToPlainString(b.t.JaIyFi, {
+      count: E.oX
     })
-  }), false) : !t.stickerIds.includes(e) && void t.stickerIds.push(e), g.fy.INFREQUENT_USER_ACTION)
+  }), false) : !t.stickerIds.includes(e) && void t.stickerIds.push(e), E.fy.INFREQUENT_USER_ACTION)
 }
 
-function x(e) {
+function M(e) {
   u.DZ.updateAsync("favoriteStickers", t => {
-    t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = D(t.stickerIds)
-  }, g.fy.INFREQUENT_USER_ACTION)
+    t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = L(t.stickerIds)
+  }, E.fy.INFREQUENT_USER_ACTION)
 }

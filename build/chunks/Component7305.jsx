@@ -92,14 +92,14 @@ function F(e) {
     p.Z.isLoadedForPremiumSKUs() || l.Z.wait(() => (0, o.Y2)())
   }, []);
   let {
-    step: H
+    step: G
   } = (0, f.JL)(), {
-    isGift: G,
+    isGift: H,
     giftMessage: U,
     giftRecipient: D
-  } = (0, m.wD)(), z = G && (0, h.pO)(D) && H === x.h8.PLAN_SELECT;
+  } = (0, m.wD)(), z = H && (0, h.pO)(D) && G === x.h8.PLAN_SELECT;
   return (0, r.jsx)(S.Z, {
-    isConfirmationStep: H === x.h8.CONFIRM && null == R && null == I,
+    isConfirmationStep: G === x.h8.CONFIRM && null == R && null == I,
     children: (0, r.jsx)(b.PaymentModal, {
       analyticsLocations: F,
       analyticsLocation: t,
@@ -113,7 +113,7 @@ function F(e) {
       subscriptionTier: u,
       onClose: _,
       trialId: g,
-      isGift: G,
+      isGift: H,
       trialFooterMessageOverride: j,
       reviewWarningMessage: L,
       planGroup: A.Y1,
@@ -136,7 +136,7 @@ function F(e) {
   })
 }
 
-function H(e) {
+function G(e) {
   var t, n;
   let {
     initialPlanId: i,
@@ -174,7 +174,7 @@ function H(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 }
-let G = function() {
+let H = function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     return [{
       key: null,
@@ -205,7 +205,7 @@ let G = function() {
       }
     }, {
       key: Chunk409813.h8.ADD_PAYMENT_STEPS,
-      renderStep: e => (0, r.jsx)(H, N({}, e)),
+      renderStep: e => (0, r.jsx)(G, N({}, e)),
       options: {
         renderHeader: true,
         useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : B.intl.string(B.t.Sb6wI1)
@@ -235,7 +235,7 @@ let G = function() {
       }
     }]
   },
-  U = G();
+  U = H();
 
 function D(e) {
   let t = (0, a.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()),
@@ -267,7 +267,7 @@ function D(e) {
     children: (0, r.jsx)(f.PaymentContextProvider, {
       loadId: j,
       activeSubscription: null != e.subscription ? e.subscription : t,
-      stepConfigs: G(S),
+      stepConfigs: H(S),
       skuIDs: [...A.YQ],
       isGift: b,
       defaultPlanId: null != n ? n : o,
