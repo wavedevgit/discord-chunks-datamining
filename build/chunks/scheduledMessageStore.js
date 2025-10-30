@@ -73,6 +73,14 @@ let m = new h(Chunk570140.Z, {
       [n.scheduledMessageId]: n
     }), p = o({}, p), delete p[t]
   },
+  SCHEDULED_MESSAGES_UPDATE_SUCCESS: function(e) {
+    let {
+      scheduledMessageSend: t
+    } = e;
+    u = s(o({}, u), {
+      [t.scheduledMessageId]: t
+    })
+  },
   SCHEDULED_MESSAGES_DELETE_START: function(e) {
     let {
       scheduledMessageId: t

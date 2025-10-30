@@ -117,31 +117,35 @@ function A(e) {
     fetchShopHomeError: a
   } = e;
   return r.useMemo(() => {
-    var e;
+    var e, r;
     if (null != i || null != a) return {
       displayItems: [],
-      wishlistLength: 0
+      displayItemsFromWishlistCount: 0,
+      hasMoreItems: false,
+      totalWishlistItemCount: 0
     };
-    let r = (null != (e = null == t ? true : t.items) ? e : []).filter(e => true !== e.isOwned).slice(0, b),
-      o = r.length,
-      s = [];
-    if (s.push(...r.map(e => ({
+    let o = (null != (e = null == t ? true : t.items) ? e : []).filter(e => true !== e.isOwned),
+      s = o.slice(0, b),
+      l = [];
+    if (l.push(...s.map(e => ({
         item: e,
         source: "wishlist"
-      }))), s.length < b) {
-      let e = new Set(r.map(e => e.skuId)),
+      }))), l.length < b) {
+      let e = new Set(s.map(e => e.skuId)),
         t = n.filter(t => !e.has(t.skuId));
-      for (let e = 0; e < t.length && s.length < b; e++) {
+      for (let e = 0; e < t.length && l.length < b; e++) {
         let n = I(t[e]);
-        null !== n && s.push({
+        null !== n && l.push({
           item: n,
           source: "popular"
         })
       }
     }
     return {
-      displayItems: s,
-      wishlistLength: o
+      displayItems: l,
+      displayItemsFromWishlistCount: s.length,
+      hasMoreItems: o.length > b,
+      totalWishlistItemCount: null != (r = null == t ? true : t.items.length) ? r : 0
     }
   }, [t, i, n, a])
 }

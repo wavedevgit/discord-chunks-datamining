@@ -50,17 +50,17 @@ function m(e, t) {
 let b = function(e) {
   let {
     channel: t
-  } = e, n = (0, o.$5)(t), [b, _] = i.useState(false), y = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), x = (0, c.Aq)(), j = i.useRef(null), O = i.useCallback(() => {
+  } = e, n = (0, o.$5)(t), [b, _] = i.useState(false), y = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), x = (0, c.Aq)(), O = i.useRef(null), j = i.useCallback(() => {
     n || _(e => !e)
   }, [n]);
 
   function v(e) {
     (null == e ? true : e.shiftKey) || x.dispatch(h.CkL.POPOUT_CLOSE)
   }
-  return i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_CHANNEL_PINS, O), () => {
-    u.S.unsubscribe(h.CkL.TOGGLE_CHANNEL_PINS, O)
-  }), [O]), (0, r.jsx)(a.yRy, {
-    targetElementRef: j,
+  return i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_CHANNEL_PINS, j), () => {
+    u.S.unsubscribe(h.CkL.TOGGLE_CHANNEL_PINS, j)
+  }), [j]), (0, r.jsx)(a.yRy, {
+    targetElementRef: O,
     shouldShow: b,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
@@ -80,8 +80,8 @@ let b = function(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(p.JO, m(g({}, e), {
-        ref: j,
-        onClick: O,
+        ref: O,
+        onClick: j,
         tooltip: i ? null : f.intl.string(f.t["mp1N/2"]),
         icon: a.qQX,
         iconSize: 20,

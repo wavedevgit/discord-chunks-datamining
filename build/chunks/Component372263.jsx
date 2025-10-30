@@ -12,7 +12,7 @@ function l(e) {
   let {
     surface: t = a.Y.PROFILE_MODAL
   } = e;
-  return (0, r.jsx)(i.w, {
+  return (0, r.jsx)(i.w_, {
     surface: t
   })
 }

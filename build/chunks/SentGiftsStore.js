@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => u
 }), require("./388685.js");
-var n, Chunk442837 = require("./442837.js"),
+var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
 function s(e, t, r) {
@@ -18,10 +18,10 @@ let a = {
   sentGifts: {}
 };
 
-function o(e, t) {
+function c(e, t) {
   return "".concat(e, ":").concat(t)
 }
-class c extends(n = Chunk442837.ZP.PersistedStore) {
+class o extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && (a = e, this.cleanupExpiredGifts())
   }
@@ -29,31 +29,31 @@ class c extends(n = Chunk442837.ZP.PersistedStore) {
     return a
   }
   hasSentGift(e, t) {
-    let r = o(e, t),
-      n = a.sentGifts[r];
-    return !(null == n || new Date(n.expiresAt) < new Date)
+    let r = c(e, t),
+      i = a.sentGifts[r];
+    return !(null == i || new Date(i.expiresAt) < new Date)
   }
   getSentGift(e, t) {
-    let r = o(e, t),
-      n = a.sentGifts[r];
-    return null == n || new Date(n.expiresAt) < new Date ? null : n
+    let r = c(e, t),
+      i = a.sentGifts[r];
+    return null == i || new Date(i.expiresAt) < new Date ? null : i
   }
   cleanupExpiredGifts() {
     let e = new Date;
     for (let [t, r] of Object.entries(a.sentGifts)) new Date(require.expiresAt) < module && delete a.sentGifts[exports]
   }
 }
-s(c, "displayName", "SentGiftsStore"), s(c, "persistKey", "SentGiftsStore");
-let u = new c(Chunk570140.Z, {
+s(o, "displayName", "SentGiftsStore"), s(o, "persistKey", "SentGiftsStore");
+let u = new o(Chunk570140.Z, {
   WISHLIST_GIFT_SENT: function(e) {
-    let t = o(e.skuId, e.recipientId),
+    let t = c(e.skuId, e.recipientId),
       r = new Date,
-      n = new Date(r.getTime() + 1728e5);
+      i = new Date(r.getTime() + 1728e5);
     a.sentGifts[t] = {
       skuId: e.skuId,
       recipientId: e.recipientId,
       sentAt: r.toISOString(),
-      expiresAt: n.toISOString()
+      expiresAt: i.toISOString()
     }
   }
 })

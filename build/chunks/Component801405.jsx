@@ -26,8 +26,8 @@ function x(e) {
     channel: t,
     appContext: n,
     popoutOpen: x,
-    popoutWindow: j,
-    currentWindow: O
+    popoutWindow: O,
+    currentWindow: j
   } = e, {
     parentAnalyticsLocation: v
   } = (0, c.ZP)(), C = n === y.IlC.POPOUT, I = i.useRef(null), {
@@ -51,14 +51,14 @@ function x(e) {
       currentDocument: T,
       rootNode: N
     } = i.useMemo(() => {
-      let e = null != j && C ? j.document : document,
-        t = O.document.getElementById("app-mount");
+      let e = null != O && C ? O.document : document,
+        t = j.document.getElementById("app-mount");
       return {
-        currentWindow: O,
+        currentWindow: j,
         currentDocument: e,
         rootNode: t
       }
-    }, [j, C, O]),
+    }, [O, C, j]),
     R = x && !C,
     w = E === y.WtW.VIDEO && Z && !R,
     A = i.useCallback((e, r) => {
@@ -121,7 +121,7 @@ function x(e) {
   }, [Z, C]), w) ? (0, r.jsx)(h.Z, {
     themeable: false,
     node: N,
-    guestWindow: j,
+    guestWindow: O,
     onClick: L(S)
   }) : null
 }

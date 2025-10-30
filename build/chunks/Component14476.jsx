@@ -27,16 +27,16 @@ let m = e => {
     a11yLabel: g,
     selectedSkuId: j,
     category: b
-  } = e, y = i.useRef(null), {
-    isHoveringOrFocusing: L
-  } = (0, c.Z)(y), v = !m && L, S = (0, C.ZP)(), w = (0, s.wj)(S), O = {
+  } = e, L = i.useRef(null), {
+    isHoveringOrFocusing: y
+  } = (0, c.Z)(L), v = !m && y, S = (0, C.ZP)(), w = (0, s.wj)(S), I = {
     type: o.Z.AVATAR_DECORATION,
     label: g,
     asset: n
   };
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)(d.kL8, {
-      ref: y,
+      ref: L,
       "aria-label": null != x ? x : "",
       onClick: () => {
         null == t || null == f || m || f(t)
@@ -53,7 +53,7 @@ let m = e => {
           [h.shopCardClaimed]: m
         }),
         children: (0, r.jsx)(p.R, {
-          item: O,
+          item: I,
           user: a,
           isHighlighted: v,
           avatarSize: d.EFr.SIZE_120,

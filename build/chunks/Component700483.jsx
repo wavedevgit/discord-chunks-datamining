@@ -118,9 +118,9 @@ function es(e) {
   let {
     channel: t,
     onSelect: n
-  } = e, d = (0, j.bp)(), {
+  } = e, d = (0, O.bp)(), {
     canManageGuildEvent: u
-  } = (0, O.XJ)(t), p = (0, l.e7)([z.Z], () => z.Z.getStageInstanceByChannel(t.id), [t.id]), h = (0, l.e7)([_.ZP], () => _.ZP.getGuildScheduledEvent(null == p ? true : p.guild_scheduled_event_id)), {
+  } = (0, j.XJ)(t), p = (0, l.e7)([z.Z], () => z.Z.getStageInstanceByChannel(t.id), [t.id]), h = (0, l.e7)([_.ZP], () => _.ZP.getGuildScheduledEvent(null == p ? true : p.guild_scheduled_event_id)), {
     suppress: m
   } = (0, S.Z)(t), b = D.default.getId(), [y] = (0, $.Z)(t), x = V.ZP.isModerator(b, t.id), v = (0, F.B)(t.id), C = u(h), {
     parentAnalyticsLocation: I
@@ -240,8 +240,8 @@ let ed = Chunk647438.memo(function(e) {
     mute: f
   } = (0, S.Z)(t), _ = (0, F.B)(t.id), y = (0, l.e7)([m.default], () => null != m.default.getAwaitingRemoteSessionInfo()), {
     cameraUnavailable: x,
-    enabled: j
-  } = (0, v.Z)(), O = (0, I.Z)(t), {
+    enabled: O
+  } = (0, v.Z)(), j = (0, I.Z)(t), {
     limit: N,
     reachedLimit: R
   } = (0, C.Z)(t), D = (0, l.e7)([U.default], () => U.default.getCurrentUser()), M = (0, l.e7)([L.Z], () => (0, b.Z)(L.Z)), G = (0, l.e7)([k.Z], () => k.Z.getVoiceChannelId() === t.id, [t.id]), H = (0, l.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, W.PK)(t.id), V = N > 0, z = R && !B || null != H && H.user.id !== (null == D ? true : D.id), Y = (0, g.u)("AudioDeviceMenu", n, {
@@ -277,8 +277,8 @@ let ed = Chunk647438.memo(function(e) {
       return (0, r.jsx)(A.C, {
         ref: q,
         centerButton: true,
-        hasPermission: O,
-        enabled: j,
+        hasPermission: j,
+        enabled: O,
         cameraUnavailable: x,
         onChange: E.r,
         onCameraUnavailable: P.Z,
@@ -343,7 +343,7 @@ let ed = Chunk647438.memo(function(e) {
         currentUser: D,
         exitFullScreen: () => null,
         canGoLive: M,
-        hasPermission: O,
+        hasPermission: j,
         disabled: z
       }) : null, (0, r.jsx)(ec, {
         channelId: t.id

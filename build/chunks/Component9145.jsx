@@ -106,10 +106,10 @@ function Y(e) {
     eh ? ((t = eu.width / G.I0) > eu.height && (e = (t = eu.height) * G.I0), eg = (eu.height - t) / 2) : ((e = Math.min(eu.height * G.I0)) > eu.width && (t = (e = eu.width) / G.I0), ef = (eu.width - e) / 2)
   }
   let eb = en.get(null != (Y = null == X ? true : X.id) ? Y : ""),
-    e_ = (0, s.e7)([O.Z], () => O.Z.getChannelId()),
-    ey = (0, s.Wu)([j.ZP], () => {
+    e_ = (0, s.e7)([j.Z], () => j.Z.getChannelId()),
+    ey = (0, s.Wu)([O.ZP], () => {
       var e;
-      return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => j.ZP.getMember(ee.guild_id, e))
+      return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => O.ZP.getMember(ee.guild_id, e))
     }, [eb, ee]),
     ex = i.useMemo(() => {
       let e = new Map;
@@ -117,7 +117,7 @@ function Y(e) {
         null != t && true !== t && e.set(t.userId, t)
       }), e
     }, [ey]),
-    ej = function(e, t, n) {
+    eO = function(e, t, n) {
       let r = (0, p.Z)(e),
         l = e !== r,
         [a, s] = i.useState(false);
@@ -150,7 +150,7 @@ function Y(e) {
         }), r) : l
       }, [o, e, n, t])
     }(ea, es, q),
-    eO = (0, k.y)(),
+    ej = (0, k.y)(),
     {
       data: ev
     } = (0, R.K)(Z.B);
@@ -179,7 +179,7 @@ function Y(e) {
     children: e => (0, r.jsxs)("div", {
       className: a()(B.wrapper, W[el], e),
       ref: ei,
-      style: ej,
+      style: eO,
       children: [null == Q ? true : Q(), (0, r.jsxs)("div", {
         className: B.activityPanelContainer,
         children: [ea ? null : (0, r.jsx)("div", {
@@ -251,7 +251,7 @@ function Y(e) {
               text: F.intl.string(F.t["36gY4e"]),
               variant: "color-mix"
             })
-          }), eO ? (0, r.jsx)(y.Z, {
+          }), ej ? (0, r.jsx)(y.Z, {
             popoutOpen: false,
             onOpenPopout: () => {
               (0, f.yw)(H.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, L.Z)({

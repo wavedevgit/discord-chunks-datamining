@@ -18,23 +18,23 @@ function d(e) {
     item: t,
     profileOwner: r,
     isHighlighted: d,
-    surface: f = c.Y.PROFILE_MODAL
+    surface: f = o.Y.PROFILE_MODAL
   } = e, m = t.collectiblesItem;
   switch (m.type) {
-    case i.Z.PROFILE_EFFECT:
-      return (0, n.jsx)("div", {
+    case n.Z.PROFILE_EFFECT:
+      return (0, i.jsx)("div", {
         className: u.profileEffectPreview,
-        children: (0, n.jsx)(o.Z, {
+        children: (0, i.jsx)(c.Z, {
           skuId: m.skuId,
           isHighlighted: d,
           isPurchased: false,
           removeSetHeight: true
         })
       });
-    case i.Z.AVATAR_DECORATION:
-      return (0, n.jsx)("div", {
+    case n.Z.AVATAR_DECORATION:
+      return (0, i.jsx)("div", {
         className: u.avatarDecorationPreview,
-        children: (0, n.jsx)(s.R, {
+        children: (0, i.jsx)(s.R, {
           item: m,
           user: r,
           isHighlighted: d,
@@ -42,12 +42,12 @@ function d(e) {
           avatarSize: l.EFr.SIZE_80
         })
       });
-    case i.Z.NAMEPLATE:
-      return (0, n.jsxs)("div", {
+    case n.Z.NAMEPLATE:
+      return (0, i.jsxs)("div", {
         className: u.nameplatePreview,
-        children: [(0, n.jsx)("div", {
+        children: [(0, i.jsx)("div", {
           className: u.nameplateTopLeft,
-          children: (0, n.jsx)(a.Z, {
+          children: (0, i.jsx)(a.Z, {
             user: r,
             nameplate: m,
             isHighlighted: d,
@@ -55,12 +55,12 @@ function d(e) {
             showStatus: true,
             isPurchased: false,
             nameplatePreviewSize: "default",
-            width: f === c.Y.GIFTING_FLOW ? 136 : 200
+            width: f === o.Y.GIFTING_FLOW ? 136 : 200
           })
-        }), (0, n.jsx)("div", {
+        }), (0, i.jsx)("div", {
           className: u.nameplateBottomRight,
           "aria-hidden": true,
-          children: (0, n.jsx)(a.Z, {
+          children: (0, i.jsx)(a.Z, {
             user: r,
             nameplate: m,
             isHighlighted: d,
@@ -68,7 +68,7 @@ function d(e) {
             showStatus: true,
             isPurchased: false,
             nameplatePreviewSize: "default",
-            width: f === c.Y.GIFTING_FLOW ? 136 : 200
+            width: f === o.Y.GIFTING_FLOW ? 136 : 200
           })
         })]
       });

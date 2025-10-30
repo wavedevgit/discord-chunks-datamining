@@ -32,10 +32,10 @@ function _() {
       isDarkMode: h,
       isAndroid: false
     }),
-    y = (0, Chunk717401.Tl)(b);
+    L = (0, Chunk717401.Tl)(b);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
-    style: null != j ? j : y,
+    style: null != j ? j : L,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk432483.avatar,
       children: (0, Chunk951288.jsx)(Chunk897942.Z, {

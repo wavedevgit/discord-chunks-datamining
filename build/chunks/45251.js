@@ -2,11 +2,12 @@
 /** chunk id: 45251, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  P4: () => d,
   PV: () => u,
-  _e: () => p,
-  gD: () => d,
-  kg: () => _,
-  pO: () => h
+  _e: () => h,
+  gD: () => f,
+  kg: () => p,
+  pO: () => m
 }), require("./415506.js"), require("./388685.js"), require("./997841.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -69,7 +70,36 @@ async function u(e) {
     }), Error(e)
   }
 }
-async function d(e) {
+async function d(e, t) {
+  i.Z.dispatch({
+    type: "SCHEDULED_MESSAGES_UPDATE_START",
+    scheduledMessageId: e
+  });
+  try {
+    let n = await r.tn.patch({
+      url: l.ANM.SCHEDULED_MESSAGE(e),
+      body: {
+        scheduled_timestamp: t
+      },
+      rejectWithError: true
+    });
+    if (!n.ok) throw Error("Failed to update scheduled message");
+    i.Z.dispatch({
+      type: "SCHEDULED_MESSAGES_UPDATE_SUCCESS",
+      scheduledMessageSend: (0, s.IR)(n.body)
+    })
+  } catch (r) {
+    var n, a;
+    s.GO.error("Failed to update scheduled message", r);
+    let t = null != (a = null == (n = r.body) ? true : n.message) ? a : r.message;
+    throw i.Z.dispatch({
+      type: "SCHEDULED_MESSAGES_UPDATE_FAILURE",
+      scheduledMessageId: e,
+      errorMsg: t
+    }), Error(t)
+  }
+}
+async function f(e) {
   i.Z.dispatch({
     type: "SCHEDULED_MESSAGES_DELETE_START",
     scheduledMessageId: e
@@ -94,7 +124,7 @@ async function d(e) {
     }), Error(r)
   }
 }
-async function f() {
+async function _() {
   let e = await Chunk544891.tn.get({
     url: Chunk981631.ANM.SCHEDULED_MESSAGES,
     rejectWithError: true
@@ -102,12 +132,12 @@ async function f() {
   if (!module.ok) throw Error("Failed to fetch scheduled messages");
   return module.body.map(Chunk216789.IR)
 }
-async function _() {
+async function p() {
   Chunk570140.Z.dispatch({
     type: "FETCH_SCHEDULED_MESSAGES"
   });
   try {
-    let e = await f();
+    let e = await _();
     Chunk216789.GO.info("Fetched scheduled messages", module), Chunk570140.Z.dispatch({
       type: "FETCH_SCHEDULED_MESSAGES_SUCCESS",
       messages: module
@@ -120,7 +150,7 @@ async function _() {
   }
 }
 
-function p(e) {
+function h(e) {
   let {
     channelId: t,
     scheduledTimestamp: n
@@ -132,7 +162,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   i.Z.dispatch({
     type: "DELETE_PENDING_SCHEDULED_MESSAGE",
     channelId: e

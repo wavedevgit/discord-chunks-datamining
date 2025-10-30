@@ -128,8 +128,8 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       status: _,
       channel: y,
       guildId: x,
-      isTyping: j,
-      isMobileOnline: O,
+      isTyping: O,
+      isMobileOnline: j,
       premiumSince: v,
       nameplate: C
     } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [E, Z] = i.useState(false), T = null != v ? new Date(v) : null, N = i.useCallback(e => {
@@ -198,10 +198,10 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           colorString: t,
           colorStrings: l,
           colorRoleName: a,
-          isTyping: j,
+          isTyping: O,
           channel: y,
           guildId: x,
-          isMobile: O,
+          isMobile: j,
           onClickPremiumGuildIcon: w,
           selected: E,
           itemProps: I,
@@ -571,7 +571,7 @@ function ea(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, j.ZP)(y.Z.MEMBER_LIST), s = (0, p.e7)([_.Z], () => _.Z.keyboardModeEnabled), o = (0, p.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, O.ZP)(y.Z.MEMBER_LIST), s = (0, p.e7)([_.Z], () => _.Z.keyboardModeEnabled), o = (0, p.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
     rows: u,
     groups: f,
     version: g,
@@ -580,7 +580,7 @@ function ea(e) {
     memberStoreProps: o,
     channelId: t.id,
     guildId: t.guild_id
-  }), b = i.useRef(null), x = (0, h.UBm)("lg") + (0, h.UBm)("xxs"), O = i.useCallback((e, t) => {
+  }), b = i.useRef(null), x = (0, h.UBm)("lg") + (0, h.UBm)("xxs"), j = i.useCallback((e, t) => {
     let n = b.current;
     if (null == n) return;
     let r = parseInt(t, 10),
@@ -614,12 +614,12 @@ function ea(e) {
     })
   }), []), I = (0, d.ZP)({
     id: "members-".concat(t.id),
-    setFocus: O,
+    setFocus: j,
     isEnabled: s,
     scrollToStart: v,
     scrollToEnd: C
   });
-  return (0, r.jsx)(j.Gt, {
+  return (0, r.jsx)(O.Gt, {
     value: l,
     children: (0, r.jsx)("div", {
       className: a()(q.container, n),

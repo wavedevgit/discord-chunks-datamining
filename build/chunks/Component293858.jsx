@@ -1,7 +1,7 @@
 /** Chunk was on 31029 **/
 /** chunk id: 293858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => y
+  b: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,19 +23,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk698708 = require("./698708.jsx"),
   Chunk921944 = require("./921944.js");
 
-function y(e) {
+function L(e) {
   let t, {
       handleClose: n,
       planGroup: a,
-      onSubscriptionConfirmation: y,
-      renderPurchaseConfirmation: L,
+      onSubscriptionConfirmation: L,
+      renderPurchaseConfirmation: y,
       postSuccessGuild: v,
       followupSKUInfo: S,
       continueSessionToInitialStep: w
     } = e,
     {
-      activeSubscription: O,
-      paymentSources: I,
+      activeSubscription: I,
+      paymentSources: O,
       paymentSourceId: P,
       selectedPlan: E,
       selectedSkuId: T,
@@ -61,23 +61,23 @@ function y(e) {
     K = (0, d.Z)(),
     Y = (0, C.a5)(E),
     V = (0, C.tK)(null == D ? true : D.skuId),
-    q = (0, g.$)(I, P),
+    q = (0, g.$)(O, P),
     J = Z && null != D && Y;
   l()(null != E, "Expected plan to selected"), l()(null != T, "Expected selectedSkuId"), l()(null != k, "Step should be set");
   let Q = i.useCallback(() => {
-    n(), null == y || y()
-  }, [n, y]);
+    n(), null == L || L()
+  }, [n, L]);
   i.useEffect(() => {
     !Z || null == N || null == R || F || G || (0, u.pO)(N) || H({
-      onSubscriptionConfirmation: y
+      onSubscriptionConfirmation: L
     })
-  }, [H, Z, N, R, F, G, y]), i.useEffect(() => {
+  }, [H, Z, N, R, F, G, L]), i.useEffect(() => {
     null != K && null != K.reminderNotice && W && (0, s.wH)(o.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
       dismissAction: b.L.INDIRECT_ACTION
     })
   }, [K, W]);
   let X = null != w ? c.PI.DEEPLINK_TO_DESKTOP_APP : true;
-  if (null != L) t = L(E, Q, M);
+  if (null != y) t = y(E, Q, M);
   else if (Z) t = (0, r.jsx)(c.TB, {
     planId: E.id,
     onClose: Q
@@ -88,7 +88,7 @@ function y(e) {
     } : {
       followupSKUInfo: S,
       startingPremiumSubscriptionPlanId: A.current,
-      isDowngrade: null != O && (0, p.GY)(O, E.id, a)
+      isDowngrade: null != I && (0, p.GY)(I, E.id, a)
     };
     t = (0, r.jsx)(c.ZP, function(e) {
       for (var t = 1; t < arguments.length; t++) {

@@ -22,5 +22,8 @@ module.exports = {
   itemIconShop: "itemIconShop__39b32",
   placeholderPulse: "placeholderPulse__39b32",
   placeholderCard: "placeholderCard__39b32",
-  placeholderAvatar: "placeholderAvatar__39b32"
+  placeholderAvatar: "placeholderAvatar__39b32",
+  seeMoreCard: "seeMoreCard__39b32",
+  seeMoreCardPreview: "seeMoreCardPreview__39b32",
+  seeMoreOverlay: "seeMoreOverlay__39b32"
 }

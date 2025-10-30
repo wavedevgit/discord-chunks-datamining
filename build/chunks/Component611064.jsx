@@ -30,7 +30,7 @@ let _ = Chunk647438.memo(function(e) {
       expandedCount: y
     } = e,
     x = (0, l.e7)([d.Z], () => d.Z.hidden),
-    j = i.useCallback(e => {
+    O = i.useCallback(e => {
       (0, s.jW)(e, async () => {
         let {
           MemberListContentSettingsMenu: e
@@ -51,7 +51,7 @@ let _ = Chunk647438.memo(function(e) {
       onClick: e => {
         if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return x ? (0, c.lY)() : y > 3 ? b() : (0, h.dG4)()
       },
-      onContextMenu: j,
+      onContextMenu: O,
       tag: "span",
       "aria-hidden": true,
       className: g.headerContainer,

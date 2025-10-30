@@ -103,9 +103,9 @@ let w = Chunk647438.memo(function(e) {
     let {
       isMobile: E,
       status: Z
-    } = (0, c.cj)([j.Z], () => ({
-      isMobile: j.Z.isMobileOnline(a.user.id),
-      status: j.Z.getStatus(a.user.id, S)
+    } = (0, c.cj)([O.Z], () => ({
+      isMobile: O.Z.isMobileOnline(a.user.id),
+      status: O.Z.getStatus(a.user.id, S)
     })), w = (0, c.e7)([y.ZP], () => y.ZP.getMember(S, a.user.id)), A = (0, b.X7)(l.guild_id, null == w ? true : w.userId, null != (t = null == w ? true : w.colorStrings) ? t : null), D = i.useMemo(() => ({
       [S]: [a.user.id]
     }), [S, a.user.id]);
@@ -169,7 +169,7 @@ let w = Chunk647438.memo(function(e) {
           asContainer: true,
           children: (0, r.jsx)(u.hU, {
             onClick: function() {
-              (0, O.DT)(l, a.user.id, false)
+              (0, j.DT)(l, a.user.id, false)
             },
             disabled: L || x,
             icon: u.Lrb,
@@ -182,7 +182,7 @@ let w = Chunk647438.memo(function(e) {
           children: (0, r.jsx)(u.hU, {
             "aria-label": P.intl.string(P.t.moABMy),
             onClick: function() {
-              (0, O.DT)(l, a.user.id, true)
+              (0, j.DT)(l, a.user.id, true)
             },
             icon: u.Dio,
             variant: "secondary"

@@ -63,16 +63,16 @@ function f(e) {
   i.useEffect(() => {
     _ || y || null != x || (0, a.Zy)()
   });
-  let j = () => {
+  let O = () => {
     c.kx(t.channelId, t.guildId)
   };
 
-  function O() {
+  function j() {
     (0, a.Zy)(), null == g || g()
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "guild-entry-context",
-    onClose: O,
+    onClose: j,
     "aria-label": u.intl.string(u.t.HpQykc),
     onSelect: f,
     children: [(0, r.jsxs)(l.kSQ, {
@@ -87,7 +87,7 @@ function f(e) {
             return n => (0, r.jsx)(e, h(p({}, n), {
               entry: t
             }))
-          }), O()
+          }), j()
         }
       }) : null, y ? (0, r.jsx)(l.sNh, {
         id: "remove-from-hub",
@@ -97,7 +97,7 @@ function f(e) {
             header: u.intl.string(u.t.KUxYWH),
             confirmText: u.intl.string(u.t.N86XcP),
             cancelText: u.intl.string(u.t["ETE/oC"]),
-            onConfirm: j
+            onConfirm: O
           }, e), {
             children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
@@ -105,14 +105,14 @@ function f(e) {
                 guildName: t.name
               })
             })
-          }))), O()
+          }))), j()
         },
         color: "danger"
       }) : null, b ? null : (0, r.jsx)(l.sNh, {
         id: "report-server-listing",
         label: u.intl.string(u.t.Aen9eh),
         action: function() {
-          null != t && ((0, o.sq)(t), O())
+          null != t && ((0, o.sq)(t), j())
         },
         icon: l.U65,
         color: "danger"

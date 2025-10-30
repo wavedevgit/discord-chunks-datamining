@@ -1,7 +1,7 @@
 /** Chunk was on 31029 **/
 /** chunk id: 846464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => y
+  q: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk360026 = require("./360026.js");
 
-function y(e) {
+function L(e) {
   let {
     handleStepChange: t,
     handleClose: n,
@@ -37,11 +37,11 @@ function y(e) {
     defaultPlanId: j
   } = (0, h.JL)(), {
     isGift: b,
-    claimableRewards: y
-  } = (0, _.wD)(), v = b && null != y && y.length > 0, S = (0, d.N)(i), w = (0, o.Nx)(), O = (0, s.Z)({
+    claimableRewards: L
+  } = (0, _.wD)(), v = b && null != L && L.length > 0, S = (0, d.N)(i), w = (0, o.Nx)(), I = (0, s.Z)({
     location: "PremiumPaymentSelect"
   });
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(y, {
     selectSku: e => (function(e) {
       let {
         activeSubscription: t,
@@ -90,11 +90,11 @@ function y(e) {
     inOfferExperience: w,
     priceOptions: u,
     showPromotionalGiftBanner: v,
-    enablePremiumBrandRefresh: O
+    enablePremiumBrandRefresh: I
   })
 }
 
-function L(e) {
+function y(e) {
   let {
     selectSku: t,
     onClose: n,

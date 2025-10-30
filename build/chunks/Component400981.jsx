@@ -26,7 +26,7 @@ function f(e) {
     selectedGiftingPromotionReward: f
   } = e, x = (0, i.e7)([p.default], () => p.default.getCurrentUser()), g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), {
     analyticsLocations: j
-  } = (0, s.ZP)(), b = l.EFr.SIZE_32, y = (0, d.Z)(null == f ? true : f.assetId, b, !g), L = (0, u.Z)(), v = null == L ? true : L.giftPurchaseConfirmation;
+  } = (0, s.ZP)(), b = l.EFr.SIZE_32, L = (0, d.Z)(null == f ? true : f.assetId, b, !g), y = (0, u.Z)(), v = null == y ? true : y.giftPurchaseConfirmation;
   return null == n || null == v ? null : (0, r.jsx)(_.O3, {
     children: (0, r.jsx)(l.mzw, {
       align: c.Z.Align.CENTER,
@@ -37,7 +37,7 @@ function f(e) {
           "aria-label": null == x ? true : x.username,
           size: b,
           src: null == x ? true : x.getAvatarURL(true, (0, l.pxk)(b), !g),
-          avatarDecoration: y
+          avatarDecoration: L
         }), (0, r.jsx)(a.zxk, {
           variant: "primary",
           text: v.collectRewardButtonText(),

@@ -173,13 +173,13 @@ function D(e) {
   } = (0, l.cj)([v.Z], () => ({
     notFriend: n.type === Z.d4z.DM && null != g && !v.Z.isFriend(g),
     isBlocked: n.type === Z.d4z.DM && null != g && v.Z.isBlocked(g)
-  })), O = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, p.Z)(n.id), T = (0, l.e7)([j.Z], () => j.Z.hasLayers());
-  return (P && !T && E.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == O ? true : O.bot)) ? null : (0, r.jsx)(A, {
+  })), j = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, p.Z)(n.id), T = (0, l.e7)([O.Z], () => O.Z.hasLayers());
+  return (P && !T && E.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == j ? true : j.bot)) ? null : (0, r.jsx)(A, {
     channel: n,
     mode: s,
     inCall: o,
     callActive: d,
-    isProvisional: null != (t = null == O ? true : O.isProvisional) && t,
+    isProvisional: null != (t = null == j ? true : j.isProvisional) && t,
     callUnavailable: f,
     notFriend: _,
     isBlocked: y,

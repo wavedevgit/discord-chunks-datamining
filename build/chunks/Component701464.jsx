@@ -1,7 +1,7 @@
 /** Chunk was on 31029 **/
 /** chunk id: 701464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,6 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk576635 = require("./576635.js"),
   Chunk213053 = require("./213053.js"),
   Chunk892001 = require("./892001.js"),
+  Chunk835255 = require("./835255.jsx"),
   Chunk796483 = require("./796483.jsx"),
   Chunk688192 = require("./688192.jsx"),
   Chunk372263 = require("./372263.jsx"),
@@ -28,37 +29,39 @@ function y(e) {
     giftRecipient: t
   } = e, n = (0, s.ZP)(null == t ? true : t.id), {
     defaultWishlistId: a,
-    wishlist: f,
+    wishlist: x,
     popularCollectiblesProducts: y,
-    isFetchingWishlist: L,
-    isFetchingShopHome: v,
-    isFetchingCategories: S,
-    wishlistError: w,
+    isFetchingWishlist: v,
+    isFetchingShopHome: S,
+    isFetchingCategories: w,
+    wishlistError: I,
     fetchShopHomeError: O
-  } = (0, h.ZL)(t), {
-    displayItems: I,
-    wishlistLength: P
-  } = (0, h.UD)({
-    wishlist: f,
+  } = (0, m.ZL)(t), {
+    displayItems: P,
+    hasMoreItems: E,
+    totalWishlistItemCount: T,
+    displayItemsFromWishlistCount: k
+  } = (0, m.UD)({
+    wishlist: x,
     popularCollectiblesProducts: y,
-    wishlistError: w,
+    wishlistError: I,
     fetchShopHomeError: O
   }), {
-    theme: E,
-    primaryColor: T,
-    secondaryColor: k
+    theme: M,
+    primaryColor: A,
+    secondaryColor: B
   } = (0, d.Z)({
     user: t,
     displayProfile: n
   }), {
-    profileThemeStyle: M,
-    profileThemeClassName: A
+    profileThemeStyle: Z,
+    profileThemeClassName: N
   } = (0, C.Z)({
-    theme: E,
+    theme: M,
     themeType: null,
-    primaryColor: T,
-    secondaryColor: k
-  }), B = function(e) {
+    primaryColor: A,
+    secondaryColor: B
+  }), R = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -75,104 +78,100 @@ function y(e) {
       })
     }
     return e
-  }({}, M), Z = i.useCallback(() => {
+  }({}, Z), F = i.useCallback(() => {
     (0, c.openUserProfileModal)({
       userId: t.id,
-      section: g.oh.WISHLIST
+      section: j.oh.WISHLIST
     })
   }, [t.id]);
-  if (null != w || null != O) return null;
-  let N = m.ZP.getName(t),
-    R = null == n ? true : n.getBannerURL({
+  if (null != I || null != O) return null;
+  let G = f.ZP.getName(t),
+    H = null == n ? true : n.getBannerURL({
       canAnimate: false,
       size: 713
     }),
-    F = L || v || S;
+    U = v || S || w;
   return (0, r.jsxs)("div", {
-    className: l()(b.wishlistBanner, A),
-    style: B,
-    children: [null != R && (0, r.jsx)("div", {
-      className: b.backgroundImage,
+    className: l()(L.wishlistBanner, N),
+    style: R,
+    children: [null != H && (0, r.jsx)("div", {
+      className: L.backgroundImage,
       style: {
-        backgroundImage: "url(".concat(R, ")")
+        backgroundImage: "url(".concat(H, ")")
       }
     }), (0, r.jsx)(o.f6W, {
       disableAdaptiveTheme: true,
       children: e => (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)("div", {
-          className: l()(b.wishlistBannerHeader, e),
-          children: [(0, r.jsxs)("div", {
-            className: b.wishlistBannerTitleContainer,
+        children: [(0, r.jsx)("div", {
+          className: l()(L.wishlistBannerHeader, e),
+          children: (0, r.jsxs)("div", {
+            className: L.wishlistBannerTitleContainer,
             children: [(0, r.jsx)(o.Heading, {
               variant: "display-md",
-              className: b.wishlistBannerTitle,
-              children: P >= h.zL ? j.intl.string(j.t["7lZ31J"]) : j.intl.string(j.t.SK5rmi)
+              className: L.wishlistBannerTitle,
+              children: k >= m.zL ? b.intl.string(b.t["7lZ31J"]) : b.intl.string(b.t.SK5rmi)
             }), (0, r.jsx)(o.Text, {
               variant: "text-sm/medium",
-              children: P >= h.zL ? j.intl.format(j.t.BjEX38, {
-                username: N
-              }) : P >= 1 ? j.intl.format(j.t.dIDKgi, {
-                username: N
-              }) : j.intl.format(j.t.wyMp1j, {
-                username: N
+              children: k >= m.zL ? b.intl.format(b.t.BjEX38, {
+                username: G
+              }) : k > 0 ? b.intl.format(b.t.dIDKgi, {
+                username: G
+              }) : b.intl.format(b.t.wyMp1j, {
+                username: G
               })
             })]
-          }), P >= h.zL && (0, r.jsx)(o.Button, {
-            variant: "overlay-secondary",
-            text: j.intl.format(j.t["8uYD+I"], {
-              username: N
-            }),
-            onClick: Z,
-            disabled: (null == t ? true : t.id) == null
-          })]
+          })
         }), (0, r.jsx)("div", {
           className: e,
-          children: F || 0 === I.length ? (0, r.jsxs)(r.Fragment, {
+          children: U || 0 === P.length ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(o.nn4, {
-              children: j.intl.string(j.t.pfChQr)
+              children: b.intl.string(b.t.pfChQr)
             }), (0, r.jsx)("div", {
-              className: b.wishlistBannerGrid,
+              className: L.wishlistBannerGrid,
               children: Array.from({
-                length: h.zL
-              }, (e, t) => (0, r.jsx)(_.Z, {
-                surface: p.Y.GIFTING_FLOW
+                length: m.zL
+              }, (e, t) => (0, r.jsx)(h.Z, {
+                surface: _.Y.GIFTING_FLOW
               }, "placeholder-".concat(t)))
             })]
-          }) : (0, r.jsx)("ul", {
-            className: b.wishlistBannerGrid,
-            style: {
-              listStyle: "none",
-              margin: 0,
-              padding: 0
-            },
-            children: I.map(e => {
+          }) : (0, r.jsxs)("ul", {
+            className: L.wishlistBannerGrid,
+            children: [(E ? P.slice(0, m.zL - 1) : P).map(e => {
               let {
                 item: n,
                 source: i
               } = e;
               return (0, r.jsx)("li", {
-                style: {
-                  display: "contents"
-                },
-                children: (0, r.jsx)(u.Z, {
+                className: L.wishlistBannerListItem,
+                children: (0, r.jsx)(p.Z, {
                   item: n,
                   profileOwner: t,
                   wishlistId: a,
                   isOwner: false,
-                  surface: p.Y.GIFTING_FLOW,
-                  giftingOrigin: i === h.lr.WISHLIST ? x.Wt.DM_CHANNEL_WISHLIST : x.Wt.DM_CHANNEL,
+                  surface: _.Y.GIFTING_FLOW,
+                  giftingOrigin: i === m.lr.WISHLIST ? g.Wt.DM_CHANNEL_WISHLIST : g.Wt.DM_CHANNEL,
                   collectibleSource: i,
-                  showIcons: P > 0 && P < h.zL
+                  showIcons: k > 0 && k < m.zL
                 })
               }, n.skuId)
-            })
+            }), E && (0, r.jsx)("li", {
+              className: L.wishlistBannerListItem,
+              children: (0, r.jsx)(u.Uw, {
+                item: P[m.zL - 1].item,
+                profileOwner: t,
+                remainingCount: T - m.zL + 1,
+                onClick: F,
+                size: "sm",
+                surface: _.Y.GIFTING_FLOW
+              })
+            }, "overflow-".concat(P[m.zL - 1].item.skuId))]
           })
         })]
       })
     })]
   })
 }
-let L = function(e) {
+let v = function(e) {
   let {
     onSelectSku: t,
     isGift: n,
@@ -181,17 +180,17 @@ let L = function(e) {
     giftRecipient: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: b.giftOptionContainer,
+    className: L.giftOptionContainer,
     children: [(0, r.jsxs)("div", {
-      className: b.cardsRow,
-      children: [(0, r.jsx)(f.jB, {
-        onClick: () => t(x.Si.TIER_2),
+      className: L.cardsRow,
+      children: [(0, r.jsx)(x.jB, {
+        onClick: () => t(g.Si.TIER_2),
         isGift: n,
         priceOptions: i,
         showPromotionalGiftBanner: a,
         enablePremiumBrandRefresh: true
-      }), (0, r.jsx)(f.j8, {
-        onClick: () => t(x.Si.TIER_0),
+      }), (0, r.jsx)(x.j8, {
+        onClick: () => t(g.Si.TIER_0),
         isGift: n,
         priceOptions: i,
         enablePremiumBrandRefresh: true,
