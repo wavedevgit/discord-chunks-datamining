@@ -1,1 +1,0 @@
-{"id":"446276","type":"experiment","data":{"id":"2025-07_quest_bar_render_delay","kind":"user","label":"Quest Bar Render Delay","defaultConfig":{"enabled":false},"treatments":[{"id":0,"label":"disabled","config":{"enabled":false}},{"id":1,"label":"enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

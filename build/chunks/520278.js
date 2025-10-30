@@ -1,10 +1,12 @@
-/** Chunk was on web.js **/
-/** chunk id: 520278, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 32249 **/
+/** chunk id: 520278, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  J: () => r
+});
 
 function r(e, t, n, r) {
   let {
-    enabled: i
+    enabled: l
   } = e.useExperiment({
     location: r
   }, {
@@ -12,8 +14,5 @@ function r(e, t, n, r) {
   });
   return !!n.config.features.includes(t) && (e.trackExposure({
     location: r
-  }), i)
+  }), l)
 }
-require.d(exports, {
-  J: () => r
-})
