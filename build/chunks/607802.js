@@ -6,26 +6,27 @@ require.d(exports, {
   AH: () => N,
   BU: () => F,
   BX: () => T,
-  Fr: () => z,
-  Fz: () => K,
+  EX: () => et,
+  Fr: () => q,
+  Fz: () => z,
   Jl: () => B,
   Ko: () => w,
-  Pe: () => q,
-  R6: () => X,
+  Pe: () => X,
+  R6: () => Q,
   Tm: () => S,
   UP: () => k,
   Vj: () => P,
-  WU: () => W,
-  X$: () => $,
-  X3: () => Q,
+  WU: () => K,
+  X$: () => ee,
+  X3: () => J,
   b7: () => C,
   cl: () => V,
   g9: () => U,
   i3: () => Z,
   jW: () => x,
-  kG: () => Y,
+  kG: () => W,
   nI: () => j,
-  nl: () => J,
+  nl: () => $,
   qc: () => G,
   s5: () => A,
   zH: () => R
@@ -368,36 +369,41 @@ function F(e) {
 function V(e) {
   return null == e ? "" : e.map(e => e.getFullMatch()).join("")
 }
-let H = new Chunk349033.ZP;
+let H = new Chunk349033.ZP,
+  Y = new Chunk349033.ZP;
 
-function Y(e) {
+function W(e) {
   return H.tokenize(e)
 }
 
-function W() {
-  return H.clearCache()
+function K() {
+  H.clearCache(), Y.clearCache()
 }
 
-function K(e) {
+function z(e) {
   return null != e ? D[e] : null
 }
 
-function z(e, t) {
+function q(e, t) {
   let n = y.TNx.test(e.type);
   return (null != t || !n) && (null == t || !n || !!y.KA4.test(t.type))
 }
 
-function q() {
+function X() {
   (0, Chunk532428.WK)(), H.reset(), i()(Chunk532428.ZP).forOwn((e, t) => H.addRule(I({
+    type: t
+  }, e))), Y.reset();
+  let e = (0, Chunk532428.mh)();
+  i()(module).forOwn((e, t) => Y.addRule(I({
     type: t
   }, e))), Chunk748610.Z.markSearchTokensRefreshed()
 }
 
-function X(e) {
+function Q(e) {
   return !!C(e) || e.type === y.aib.DMS && !f.Z.hidePersonalInformation
 }
 
-function Q(e) {
+function J(e) {
   let t = e.name,
     n = false;
   if (e.isGroupDM()) t = (0, o.F6)(e, _.default, u.Z);
@@ -415,7 +421,7 @@ function Q(e) {
   return (t = B(t), n) ? "#".concat(t) : t
 }
 
-function J(e) {
+function $(e) {
   var t;
   if (e.isGroupDM()) return (0, o.F6)(e, _.default, u.Z);
   if (e.isDM()) {
@@ -427,7 +433,19 @@ function J(e) {
   return null != (t = null == n ? true : n.name) ? t : e.name
 }
 
-function $() {
+function ee() {
   var e, t;
   return null != (t = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && exports
+}
+
+function et(e) {
+  let t = Y.tokenize(e),
+    n = [];
+  t.forEach(e => {
+    e.type !== y.dCx.FILTER_IN && e.type !== y.dCx.ANSWER_IN && n.push(e)
+  });
+  let r = "";
+  return n.forEach(e => {
+    r += e.getFullMatch()
+  }), r.trim()
 }

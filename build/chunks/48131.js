@@ -2,14 +2,16 @@
 /** chunk id: 48131, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => f
 });
 var Chunk174609 = require("./174609.js"),
   Chunk728285 = require("./728285.jsx"),
+  Chunk522474 = require("./522474.js"),
+  Chunk788983 = require("./788983.js"),
   Chunk555804 = require("./555804.js"),
   Chunk981631 = require("./981631.js");
 
-function s(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,7 +20,7 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function l(e, t) {
+function u(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -28,12 +30,12 @@ function l(e, t) {
   }
   return n
 }
-async function c(e) {
+async function d(e) {
   let t = (0, i.GB)();
-  await a.launchFrame(e), t === o.IlC.POPOUT && (0, r.Z)()
+  a.Z.getWindowOpen(l.KJ3.ACTIVITY_POPOUT) && (0, o.xv)(l.KJ3.ACTIVITY_POPOUT), await s.launchFrame(e), t === l.IlC.POPOUT && (0, r.Z)()
 }
-let u = function(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
+let f = function(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }(function(e) {
@@ -43,10 +45,10 @@ let u = function(e, t) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      c(e, t, n[t])
     })
   }
   return e
 }({}, Chunk555804), {
-  launchFrame: c
+  launchFrame: d
 })

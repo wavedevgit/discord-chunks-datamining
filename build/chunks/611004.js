@@ -2,8 +2,8 @@
 /** chunk id: 611004, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
-}), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./781311.js");
+  Z: () => C
+}), require("./704826.js"), require("./35282.js"), require("./781311.js");
 var Chunk258863 = require("./258863.js"),
   Chunk349033 = require("./349033.js"),
   Chunk592125 = require("./592125.js"),
@@ -115,30 +115,18 @@ function S(e, t) {
   })
 }
 
-function T(e, t) {
-  let n = (0, u.kG)(t),
-    r = [];
-  n.forEach(t => {
-    let n = t.type === E.dCx.FILTER_IN || t.type === E.dCx.ANSWER_IN;
-    ((0, u.R6)(e) || !n) && r.push(t)
-  });
-  let i = "";
-  return r.forEach(e => {
-    i += e.getFullMatch()
-  }), i
-}
-
-function A(e, t, n) {
+function T(e, t, n) {
   let r = (0, u.Tm)(e),
     i = h.Z.getEditorState(r);
   if (null == i) return;
-  let a = T(t, s.Sq(i));
-  I(t, a = a.trim());
-  let o = h.Z.getSearchMode(r);
-  p.Z.updateSearchMode(t, null != o ? o : g.o), c.Z.clearSearchMessages(r), p.Z.clearSearchEditorState(e), n(a)
+  let a = s.Sq(i),
+    o = t.type === E.aib.CHANNEL ? (0, u.EX)(a) : a;
+  I(t, o = o.trim());
+  let l = h.Z.getSearchMode(r);
+  p.Z.updateSearchMode(t, null != l ? l : g.o), c.Z.clearSearchMessages(r), p.Z.clearSearchEditorState(e), n(o)
 }
 
-function C() {
+function A() {
   Chunk817190.Z.getSearchStateIds().forEach(e => {
     let t = a.Z.getChannel(e);
     null != t && t.isPrivate() && b({
@@ -147,7 +135,7 @@ function C() {
     })
   })
 }
-let N = {
+let C = {
   cleanUpSearchState: b,
   fetchMessages: O,
   setSearchInputText: I,
@@ -180,6 +168,6 @@ let N = {
       replace: r
     })
   },
-  transitionQueryStateToSearchContext: A,
-  cleanUpPrivateChannelSearchState: C
+  transitionQueryStateToSearchContext: T,
+  cleanUpPrivateChannelSearchState: A
 }

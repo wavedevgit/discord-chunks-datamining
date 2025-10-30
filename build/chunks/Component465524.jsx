@@ -242,42 +242,42 @@ function L(e) {
       queryString: a
     }),
     o = r.useMemo(() => {
-      let e = [],
-        t = new Set;
-      if (s.length > 0) s.forEach(l => {
-        let n = l.channel,
+      let t = [],
+        n = new Set;
+      if (s.length > 0) s.forEach(e => {
+        let l = e.channel,
           r = y({
-            channel: n
+            channel: l
           });
-        t.add(n.id), e.push(r)
+        n.add(l.id), t.push(r)
       });
       else {
         let {
           tokens: l
-        } = i, n = l[l.length - 1];
-        if (null != n && n.type === _.dCx.ANSWER_IN && (0, T.Ni)(n)) {
-          let l = n.getData("channelIds");
-          null != l && l.length > 0 && l.forEach(l => {
-            let n = E.Z.getChannel(l);
-            if (null != n) {
-              let l = y({
-                channel: n
+        } = i, r = l[l.length - 1];
+        if (null != r && r.type === _.dCx.ANSWER_IN && (0, T.Ni)(r, e)) {
+          let e = r.getData("channelIds");
+          null != e && e.length > 0 && e.forEach(e => {
+            let l = E.Z.getChannel(e);
+            if (null != l) {
+              let e = y({
+                channel: l
               });
-              t.add(n.id), e.push(l)
+              n.add(l.id), t.push(e)
             }
           })
         }
       }
-      return l.length > 0 && l.forEach(l => {
-        if (t.has(l)) return;
-        let n = E.Z.getChannel(l);
-        if (null == n) return;
+      return l.length > 0 && l.forEach(e => {
+        if (n.has(e)) return;
+        let l = E.Z.getChannel(e);
+        if (null == l) return;
         let r = y({
-          channel: n
+          channel: l
         });
-        t.add(l), e.unshift(r)
-      }), e
-    }, [i, s, l]),
+        n.add(e), t.unshift(r)
+      }), t
+    }, [i, s, l, e]),
     d = r.useCallback(() => {
       n([]), u("")
     }, []),

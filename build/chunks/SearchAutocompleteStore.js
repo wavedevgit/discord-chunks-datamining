@@ -321,11 +321,17 @@ function W(e) {
       r = (0, E.BX)(e);
     if (null == r) return null;
     let i = t.getHistory(r);
-    return null == i ? null : {
-      group: O.rtL.HISTORY,
-      results: i.map(e => ({
-        text: e
+    if (null == i) return null;
+    let a = [],
+      o = new Set;
+    return i.forEach(t => {
+      let n = e.type === O.aib.CHANNEL ? (0, E.EX)(t) : t;
+      "" === n || o.has(n) || (o.add(n), a.push({
+        text: n
       }))
+    }), {
+      group: O.rtL.HISTORY,
+      results: a
     }
   }
 }
