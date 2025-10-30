@@ -34,12 +34,12 @@ function d(e) {
     case i.Z.AVATAR_DECORATION:
       return (0, n.jsx)("div", {
         className: u.avatarDecorationPreview,
-        children: (0, n.jsx)(s.R, {
+        children: (0, n.jsx)(l.R, {
           item: m,
           user: r,
           isHighlighted: d,
           isPurchased: false,
-          avatarSize: l.EFr.SIZE_80
+          avatarSize: s.EFr.SIZE_80
         })
       });
     case i.Z.NAMEPLATE:

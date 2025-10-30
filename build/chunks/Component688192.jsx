@@ -25,7 +25,7 @@ function v(e) {
     item: t,
     wishlistId: r,
     isOwner: n,
-    surface: s = "profile_modal",
+    surface: l = "profile_modal",
     cardRef: g,
     renderItemPreview: v,
     accessibleLabel: P,
@@ -34,7 +34,7 @@ function v(e) {
     buttonIcon: S,
     isOwned: w = false,
     renderSourceIcon: x
-  } = e, y = l.useRef(null), E = l.useRef(null), T = null != g ? g : E, {
+  } = e, y = s.useRef(null), E = s.useRef(null), T = null != g ? g : E, {
     analyticsLocations: N
   } = (0, u.ZP)(), k = n && true === t.isOwned && null != t.gifterUserId, L = null != t.gifterUserId ? d.default.getUser(t.gifterUserId) : null, _ = null != L ? f.ZP.getName(L) : null, C = k && null != L && null != _ && "" !== _, Z = C ? (0, i.jsx)(o.qEK, {
     src: L.getAvatarURL(true, 48),
@@ -79,8 +79,8 @@ function v(e) {
       ref: T,
       className: a()(O.card, {
         [O.isOwned]: w,
-        [O.smallCard]: "gifting_flow" === s,
-        [O.largeCard]: "profile_modal" === s
+        [O.smallCard]: "gifting_flow" === l,
+        [O.largeCard]: "profile_modal" === l
       }),
       onClick: A,
       children: [(0, i.jsx)(o.nn4, {
@@ -90,7 +90,7 @@ function v(e) {
       }), (0, i.jsx)("div", {
         className: O.cardPreview,
         children: v()
-      }), w && R, "profile_modal" === s ? F : (0, i.jsx)(o.P3F, {
+      }), w && R, "profile_modal" === l ? F : (0, i.jsx)(o.P3F, {
         "aria-label": j,
         focusProps: {
           ringTarget: T

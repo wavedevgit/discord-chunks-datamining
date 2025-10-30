@@ -136,7 +136,7 @@ function O(e) {
           isOwner: false,
           surface: h.Y.GIFTING_FLOW,
           giftingOrigin: b.Wt.DM_CHANNEL_WISHLIST,
-          collectibleSource: n,
+          source: n,
           showIcons: l
         })
       }, t.skuId)
