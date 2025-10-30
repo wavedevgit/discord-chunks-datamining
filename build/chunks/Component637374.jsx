@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk494452 = require("./494452.js");
+  Chunk584645 = require("./584645.js");
 
 function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -329,7 +329,7 @@ class q extends Chunk647438.Component {
         isHorizontal: require >= Chunk568836.aL
       });
     return (0, Chunk884697.mO)(module) ? (0, Chunk951288.jsx)("div", {
-      className: Chunk494452.collectiblesEmbedWrapper,
+      className: Chunk584645.collectiblesEmbedWrapper,
       children: this.renderEmbed()
     }) : this.renderEmbed()
   }
@@ -344,7 +344,7 @@ class q extends Chunk647438.Component {
         }
       })
     }), V(this, "handleVerificationClick", e => {
-      e.stopPropagation(), e.preventDefault(), (0, T.openUserSettings)(S.n.ACCOUNT_PANEL, {
+      e.stopPropagation(), e.preventDefault(), (0, S.openUserSettings)(T.n.ACCOUNT_PANEL, {
         section: G.oAB.ACCOUNT
       })
     }), V(this, "handleAccept", e => {
@@ -357,7 +357,7 @@ class q extends Chunk647438.Component {
         sku: o,
         giftCode: s
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), L.default.track(G.rMx.OPEN_MODAL, {
+      e.preventDefault(), e.stopPropagation(), x.default.track(G.rMx.OPEN_MODAL, {
         type: "gift_accept",
         location: W(H({}, this.analyticsLocation), {
           object: G.qAy.BUTTON_CTA
@@ -379,7 +379,7 @@ class q extends Chunk647438.Component {
       let {
         giftCode: t
       } = this.props;
-      null != t && t.isSubscription && (e.preventDefault(), (0, T.openUserSettings)(S.n.NITRO_PANEL, {
+      null != t && t.isSubscription && (e.preventDefault(), (0, S.openUserSettings)(T.n.NITRO_PANEL, {
         section: G.oAB.PREMIUM
       }))
     }), V(this, "handleClaimPromotion", e => {
@@ -431,6 +431,6 @@ let X = (0, Chunk112724.Z)((0, Chunk730749.Z)(q)),
       subscriptionPlan: null != i && null != i.subscriptionPlanId ? (0, k.oE)(i.subscriptionPlanId) : null,
       isSelfGift: null != i ? A.default.getId() === i.userId : A.default.getId() === n.id,
       resolved: C.Z.getIsResolved(t),
-      libraryApplication: null != a && (null == i ? true : i.entitlementBranches) != null ? x.z2(i.entitlementBranches, a, N.Z) : null
+      libraryApplication: null != a && (null == i ? true : i.entitlementBranches) != null ? L.z2(i.entitlementBranches, a, N.Z) : null
     }
   })(X)

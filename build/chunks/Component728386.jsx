@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk443603 = require("./443603.jsx"),
   Chunk957825 = require("./957825.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk564355 = require("./564355.js");
+  Chunk744114 = require("./744114.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -64,7 +64,7 @@ function E(e, t) {
   }, [a]), {
     Component: v,
     events: I,
-    play: S
+    play: T
   } = (0, l.z)();
   return n ? null : (0, r.jsx)("div", {
     className: o()(d.CT, _.buttonContainer),
@@ -73,7 +73,7 @@ function E(e, t) {
       className: o()(_.button, _.stickerButton)
     }, I), {
       onClick: () => {
-        O(), S()
+        O(), T()
       },
       isActive: b,
       "aria-label": f.intl.string(f.t.rZpidU),

@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk704543 = require("./704543.js");
+  Chunk663907 = require("./663907.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,21 +84,21 @@ let I = Chunk647438.forwardRef(function(e, t) {
     onClose: b,
     "aria-label": v,
     "aria-labelledby": I
-  } = e, S = O(e, ["children", "className", "subsection", "onAction", "onClose", "aria-label", "aria-labelledby"]);
+  } = e, T = O(e, ["children", "className", "subsection", "onAction", "onClose", "aria-label", "aria-labelledby"]);
   let {
-    themeType: T
+    themeType: S
   } = (0, f.z)(), {
     analyticsLocations: A
   } = (0, l.ZP)(), {
     context: C
   } = (0, c.KZ)();
-  return T === p.l.MODAL || T === p.l.MODAL_V2 || (null == C ? true : C.userId) == null ? (0, r.jsx)("article", {
+  return S === p.l.MODAL || S === p.l.MODAL_V2 || (null == C ? true : C.userId) == null ? (0, r.jsx)("article", {
     "aria-label": v,
     "aria-labelledby": I,
     children: (0, r.jsx)(d.Z.Overlay, y(E({
       ref: t,
       className: o()(m.card, i)
-    }, S), {
+    }, T), {
       children: n
     }))
   }) : (0, r.jsx)("article", {
@@ -121,7 +121,7 @@ let I = Chunk647438.forwardRef(function(e, t) {
       children: (0, r.jsx)(d.Z.Overlay, y(E({
         ref: t,
         className: o()(m.card, i)
-      }, S), {
+      }, T), {
         children: n
       }))
     })

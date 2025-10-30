@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk443603 = require("./443603.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk564355 = require("./564355.js");
+  Chunk744114 = require("./744114.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,15 +69,15 @@ function O(e) {
     events: v,
     play: I
   } = (0, a.$)(), {
-    enabled: S
+    enabled: T
   } = d.G.useExperiment({
     location: "gift-button"
   }, {
     autoTrackExposure: false
-  }), T = i.type === p.d4z.DM;
+  }), S = i.type === p.d4z.DM;
   if (t) return null;
   let A = () => {
-    S && T && null != b ? (0, s.ZDy)(async () => {
+    T && S && null != b ? (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("59207").then(n.bind(n, 435626));

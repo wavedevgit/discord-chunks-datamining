@@ -55,13 +55,13 @@ let h = null,
   m = null,
   g = {},
   E = false,
-  b = x(),
+  b = L(),
   y = M(),
   O = null,
-  v = L(),
+  v = x(),
   I = false,
-  S = false,
-  T = null,
+  T = false,
+  S = null,
   A = null,
   C = [],
   N = [],
@@ -70,12 +70,12 @@ let h = null,
   w = {},
   D = {};
 
-function L() {
+function x() {
   var e, t, n, r;
   return (null == (t = window) || null == (e = exports.location) ? true : module.pathname) === Chunk292352.ix.FAMILY_CENTER_MY_FAMILY ? Chunk292352.dG.REQUESTS : (null == (r = window) || null == (n = Chunk133080.location) ? true : require.pathname) === Chunk292352.ix.FAMILY_CENTER_SETTINGS ? Chunk292352.dG.SETTINGS : Chunk292352.dG.ACTIVITY
 }
 
-function x() {
+function L() {
   let e = new Map;
   return module.set(Chunk292352.MY.USER_ADD, new Map), module.set(Chunk292352.MY.GUILD_ADD, new Map), module.set(Chunk292352.MY.USER_INTERACTION, new Map), module.set(Chunk292352.MY.GUILD_INTERACTION, new Map), module.set(Chunk292352.MY.USER_CALLED, new Map), module.set(Chunk292352.MY.TOTAL_VOICE_MINUTES, new Map), module.set(Chunk292352.MY.PURCHASES, new Map), module
 }
@@ -104,7 +104,7 @@ function j(e) {
 }
 
 function U(e, t) {
-  let n = t ? b : x();
+  let n = t ? b : L();
   return e.forEach(e => {
     let t = e.display_type,
       r = n.get(t);
@@ -141,7 +141,7 @@ function B(e) {
 }
 
 function Z() {
-  S = true
+  T = true
 }
 
 function F(e) {
@@ -160,7 +160,7 @@ function F(e) {
     totalSpendCurrency: f,
     invoices: _
   } = n;
-  h = o, m = l, U(r), j(a), G(i), k(t), null != _ && B(_), C = c, N = u, R = d, P = f, S = false, T = s.default.fromTimestamp(Date.now()), I = true
+  h = o, m = l, U(r), j(a), G(i), k(t), null != _ && B(_), C = c, N = u, R = d, P = f, T = false, S = s.default.fromTimestamp(Date.now()), I = true
 }
 
 function V(e) {
@@ -194,7 +194,7 @@ function Y(e) {
     totalSpendCurrency: d,
     invoices: f
   } = t;
-  h = a, m = o, U(n), j(r), G(i), null != f && B(f), C = l, N = c, S = false, T = s.default.fromTimestamp(Date.now()), R = u, P = d
+  h = a, m = o, U(n), j(r), G(i), null != f && B(f), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now()), R = u, P = d
 }
 
 function W(e) {
@@ -289,7 +289,7 @@ function en(e) {
 }
 
 function er() {
-  h = null, m = null, g = {}, b = x(), y = M(), D = {}, S = false, T = null, v = L(), E = false, C = [], N = [], R = null, P = null, w = {}
+  h = null, m = null, g = {}, b = L(), y = M(), D = {}, T = false, S = null, v = x(), E = false, C = [], N = [], R = null, P = null, w = {}
 }
 class ei extends Chunk750041.Z {
   initialize() {
@@ -353,7 +353,7 @@ class ei extends Chunk750041.Z {
     return A
   }
   isLoading() {
-    return S
+    return T
   }
   getTopUserActivities() {
     return C
@@ -371,7 +371,7 @@ class ei extends Chunk750041.Z {
     return w[e]
   }
   canRefetch() {
-    return null === T || Chunk709054.default.age(T) > Chunk292352.Of
+    return null === S || Chunk709054.default.age(S) > Chunk292352.Of
   }
   constructor() {
     super({

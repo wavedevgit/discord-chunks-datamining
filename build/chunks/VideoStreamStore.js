@@ -142,7 +142,7 @@ function I(e) {
   }
 }
 
-function S(e) {
+function T(e) {
   let {
     mediaContext: t,
     userId: n
@@ -150,7 +150,7 @@ function S(e) {
   if (null == h[r]) returnfalse;
   delete h[r]
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk442837.ZP.Store) {
   getStreamId(e, t) {
     var n, r, i;
     let a = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s.Yn.DEFAULT;
@@ -168,12 +168,12 @@ class T extends(r = Chunk442837.ZP.Store) {
     return h[m(e, t)]
   }
 }
-l(T, "displayName", "VideoStreamStore");
-let A = new T(Chunk570140.Z, {
+l(S, "displayName", "VideoStreamStore");
+let A = new S(Chunk570140.Z, {
   CONNECTION_OPEN: b,
   OVERLAY_INITIALIZE: y,
   RTC_CONNECTION_VIDEO: O,
   VOICE_STATE_UPDATES: v,
   VIDEO_STREAM_READY_TIMEOUT: I,
-  CLEAR_VIDEO_STREAM_READY_TIMEOUT: S
+  CLEAR_VIDEO_STREAM_READY_TIMEOUT: T
 })

@@ -6,7 +6,7 @@ require.d(exports, {
   UB: () => D,
   Uc: () => I,
   ZP: () => H,
-  kE: () => L
+  kE: () => x
 });
 var i, Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -37,8 +37,8 @@ function v(e, t, n) {
 var I = function(e) {
   return e[e.Present = 0] = "Present", e[e.Update = 1] = "Update", e[e.Cancel = 2] = "Cancel", e[e.Error = 3] = "Error", e
 }({});
-let S = false,
-  T = 0,
+let T = false,
+  S = 0,
   A = 0,
   C = false,
   N = {};
@@ -52,7 +52,7 @@ function P() {
 }
 
 function w() {
-  let e = P() && (A > 0 || S && 0 === T);
+  let e = P() && (A > 0 || T && 0 === S);
   if (module !== C) {
     var t, n;
     C = module, null == (n = Chunk131951.Z.getMediaEngine()) || null == (t = require.setNativeDesktopVideoSourcePickerActive) || exports.call(require, C)
@@ -60,20 +60,20 @@ function w() {
 }
 
 function D() {
-  return (0, Chunk647438.useEffect)(() => (T++, w(), () => {
-    0 == --T && w()
+  return (0, Chunk647438.useEffect)(() => (S++, w(), () => {
+    0 == --S && w()
   }), [])
 }
 
-function L() {
+function x() {
   return (0, Chunk647438.useEffect)(() => (A++, w(), () => {
     --A, w()
   }), [])
 }
 
-function x() {
+function L() {
   let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId());
-  return S = null != module && (0, Chunk74299.Z)(Chunk131951.Z) && (0, Chunk102172.JL)(module, Chunk430824.Z, Chunk496675.Z, false), w(), false
+  return T = null != module && (0, Chunk74299.Z)(Chunk131951.Z) && (0, Chunk102172.JL)(module, Chunk430824.Z, Chunk496675.Z, false), w(), false
 }
 
 function M() {
@@ -98,7 +98,7 @@ function j() {
 }
 class U extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk131951.Z, Chunk944486.Z, Chunk592125.Z, Chunk430824.Z, Chunk496675.Z], x), x()
+    this.syncWith([Chunk131951.Z, Chunk944486.Z, Chunk592125.Z, Chunk430824.Z, Chunk496675.Z], L), L()
   }
   supported() {
     return R()
@@ -133,7 +133,7 @@ function G(e) {
   } = e;
   if (N = {
       lastPickerAction: 1
-    }, r = n, 0 === T && !t) {
+    }, r = n, 0 === S && !t) {
     let e = u.Z.getChannel(p.Z.getVoiceChannelId());
     null != e && (0, m.Z)(f.Z) && (0, h.JL)(e, d.Z, _.Z, false) && (0, l.WH)(e.getGuildId(), e.id, j())
   }

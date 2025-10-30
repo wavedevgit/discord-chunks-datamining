@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => w,
-  ag: () => S,
+  ag: () => T,
   u8: () => b
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
@@ -16,7 +16,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk598077 = require("./598077.js"),
   Chunk594174 = require("./594174.js"),
   Chunk426563 = require("./426563.js"),
-  Chunk245141 = require("./245141.js");
+  Chunk562721 = require("./562721.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,10 +66,10 @@ let b = {
   O = 15,
   v = 20,
   I = 35,
-  S = "user-icon";
+  T = "user-icon";
 
-function T(e, t) {
-  if (e === S) return "user-icon-".concat(t);
+function S(e, t) {
+  if (e === T) return "user-icon-".concat(t);
   let n = e instanceof d.Z ? e : null != e ? e.user : null;
   return null != n ? n.id : "user-".concat(t)
 }
@@ -92,15 +92,15 @@ function N() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : b.SIZE_24;
   switch (module) {
     case b.SIZE_16:
-      return Chunk245141.size16;
+      return Chunk562721.size16;
     case b.SIZE_24:
-      return Chunk245141.size24;
+      return Chunk562721.size24;
     case b.SIZE_32:
-      return Chunk245141.size32;
+      return Chunk562721.size32;
     case b.SIZE_56:
-      return Chunk245141.size56;
+      return Chunk562721.size56;
     default:
-      return Chunk245141.size24
+      return Chunk562721.size24
   }
 }
 
@@ -133,15 +133,15 @@ class P extends(r = Chunk647438.PureComponent) {
       let t = null == Chunk481060 && null == Chunk647438 && Chunk670188 === module.length - 1,
         s = require(module[Chunk670188], exports, Chunk670188);
       Chunk120356.push(exports ? (0, Chunk951288.jsx)("div", {
-        className: Chunk245141.avatarContainer,
+        className: Chunk562721.avatarContainer,
         children: s
-      }, T(null != (d = module[Chunk670188]) ? Chunk598077 : null, Chunk670188)) : (0, Chunk951288.jsx)(Chunk686546.ZP, {
-        className: Chunk245141.avatarContainerMasked,
+      }, S(null != (d = module[Chunk670188]) ? Chunk598077 : null, Chunk670188)) : (0, Chunk951288.jsx)(Chunk686546.ZP, {
+        className: Chunk562721.avatarContainerMasked,
         height: r,
         width: r,
         mask: Chunk686546.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
         children: s
-      }, T(module[Chunk670188], Chunk670188))), Chunk670188++
+      }, S(module[Chunk670188], Chunk670188))), Chunk670188++
     }
     return null != Chunk647438 ? Chunk120356.push(Chunk647438) : null != Chunk481060 && Chunk120356.push(Chunk481060), Chunk120356
   }
@@ -177,8 +177,8 @@ class P extends(r = Chunk647438.PureComponent) {
     return this.props.renderIcon ? (0, Chunk951288.jsx)(Chunk481060.gj8, {
       size: "md",
       color: "currentColor",
-      colorClass: Chunk245141.__invalid_foreground,
-      className: Chunk245141.icon
+      colorClass: Chunk562721.__invalid_foreground,
+      className: Chunk562721.icon
     }) : null
   }
   render() {
@@ -193,7 +193,7 @@ class P extends(r = Chunk647438.PureComponent) {
       popoutUserId: l
     } = this.state;
     if (null == Chunk481060) return (0, Chunk951288.jsxs)("div", {
-      className: s()(module, Chunk245141.container, N(exports)),
+      className: s()(module, Chunk562721.container, N(exports)),
       children: [this.renderIcon(), this.renderUsers()]
     });
     let c = require.find(e => e instanceof d.Z && e.id === l),
@@ -241,7 +241,7 @@ class P extends(r = Chunk647438.PureComponent) {
             alt: "",
             className: p.avatar
           })
-        } if (e === S) {
+        } if (e === T) {
         let e = R(c);
         r = (0, i.jsx)(l.tBG, {
           size: "custom",
@@ -257,8 +257,8 @@ class P extends(r = Chunk647438.PureComponent) {
       let d = (0, i.jsx)("div", {
         className: p.avatarWithBackground,
         children: r
-      }, T(e, n));
-      return a && e !== S ? (0, i.jsx)(l.P3F, {
+      }, S(e, n));
+      return a && e !== T ? (0, i.jsx)(l.P3F, {
         className: p.clickableAvatar,
         onClick: () => {
           null != this._ref.current && null != e && this.setState({
@@ -267,7 +267,7 @@ class P extends(r = Chunk647438.PureComponent) {
         },
         tabIndex: false,
         children: d
-      }, T(e, n)) : d
+      }, S(e, n)) : d
     })
   }
 }

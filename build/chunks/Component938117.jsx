@@ -2,7 +2,7 @@
 /** chunk id: 938117, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -61,21 +61,21 @@ function I(e, t) {
   }), e
 }
 
-function S(e) {
+function T(e) {
   let {
     onLearnMore: t,
     selectedBackgroundOption: y,
     onSelectBackgroundOption: v,
-    currentDeviceId: S,
-    smallerBackgroundOptions: T,
+    currentDeviceId: T,
+    smallerBackgroundOptions: S,
     className: A
   } = e, C = (0, a.e7)([l.default], () => l.default.getCurrentUser()), [N, R] = i.useState(null), P = (0, p.Z)(), w = c.ZP.canUseCustomBackgrounds(C);
   i.useEffect(() => {
     (0, u.XV)()
   }, []);
   let D = (0, a.cj)([d.Z], () => w ? d.Z.videoFilterAssets : {}),
-    L = i.useMemo(() => Object.values(D).filter(e => e.type === m.xV.BACKGROUND), [D]),
-    x = (0, s.O)(),
+    x = i.useMemo(() => Object.values(D).filter(e => e.type === m.xV.BACKGROUND), [D]),
+    L = (0, s.O)(),
     M = {
       isVideoBackgroundSupported: P,
       onSelectBackgroundOption: v,
@@ -90,10 +90,10 @@ function S(e) {
       onSelectBackgroundOption: t,
       selectedBackgroundOption: n
     } = k.current;
-    e ? (0, _.FU)(n, S, {
+    e ? (0, _.FU)(n, T, {
       track: false
     }).catch(() => t(null)) : null != n && t(null)
-  }, [S]);
+  }, [T]);
   let j = function(e, t) {
       let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
       return new Promise(async r => {
@@ -107,11 +107,11 @@ function S(e) {
       })
     },
     U = e => {
-      v(e), (0, _.FU)(e, S, {
-        location: x.location
+      v(e), (0, _.FU)(e, T, {
+        location: L.location
       }).then(() => R(null)).catch(() => {
-        R(b.intl.string(b.t.ejrSLe)), (0, _.FU)(null, S, {
-          location: x.location
+        R(b.intl.string(b.t.ejrSLe)), (0, _.FU)(null, T, {
+          location: L.location
         })
       })
     },
@@ -122,7 +122,7 @@ function S(e) {
         } = await n.e("87200").then(n.bind(n, 592163));
         return n => (0, r.jsx)(e, I(O({}, n), {
           onLearnMore: t,
-          analyticsSource: I(O({}, x.location), {
+          analyticsSource: I(O({}, L.location), {
             object: g.qAy.BUTTON_CTA
           })
         }))
@@ -135,12 +135,12 @@ function S(e) {
       errorMessage: N,
       children: (0, r.jsx)(h.Z, {
         canUseCustomBackgrounds: w,
-        customBackgroundOptions: L,
+        customBackgroundOptions: x,
         selectedOption: y,
         onSelectOption: U,
         onUpsellClick: G,
         onAddBackgroundImage: j,
-        smallerOptions: T
+        smallerOptions: S
       })
     })
   }) : null

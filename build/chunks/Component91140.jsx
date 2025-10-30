@@ -18,8 +18,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk297781 = require("./297781.jsx"),
   Chunk443487 = require("./443487.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk800371 = require("./800371.js"),
-  Chunk451419 = require("./451419.js");
+  Chunk966198 = require("./966198.js"),
+  Chunk584830 = require("./584830.js");
 let E = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk297781.wO, Chunk297781.f, Chunk297781.n8, Chunk297781.v1, Chunk297781.pQ],
   b = e => {
     var t;
@@ -36,7 +36,7 @@ let E = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
       showCoverImage: false
     }), {
       data: I
-    } = (0, l.IX)(n.extra.application_id), S = (0, s.q)(I, "MemberListGamingContent") && O, T = S ? [a.z.CLOUD_PLAY_NEW_BADGE] : [], [A] = (0, u.US)(T), C = S;
+    } = (0, l.IX)(n.extra.application_id), T = (0, s.q)(I, "MemberListGamingContent") && O, S = T ? [a.z.CLOUD_PLAY_NEW_BADGE] : [], [A] = (0, u.US)(S), C = T;
     return (0, r.jsxs)(p.Zb, {
       selected: b,
       usesCardRows: true,
@@ -63,7 +63,7 @@ let E = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
           className: g.thumbnail,
           showTooltip: (null == v ? true : v.text) != null
         })]
-      }), S && (0, r.jsxs)(r.Fragment, {
+      }), T && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(p.xx, {}), (0, r.jsxs)(p.lS, {
           className: m.cloudPlaySection,
           children: [(0, r.jsxs)("div", {

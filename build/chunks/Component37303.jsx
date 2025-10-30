@@ -16,7 +16,7 @@ var Chunk497505 = require("./497505.js"),
   Chunk372113 = require("./372113.jsx"),
   Chunk206044 = require("./206044.jsx"),
   Chunk266843 = require("./266843.js"),
-  Chunk556260 = require("./556260.js");
+  Chunk616082 = require("./616082.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -50,13 +50,13 @@ function m(e) {
     expansionSpring: O,
     isAnimating: v,
     isExpanded: I,
-    toggleExpanded: S
+    toggleExpanded: T
   } = (0, f.O)({
     initiallyExpanded: p || (0, c.iM)({
       location: n,
       quest: t
     })
-  }), [T, A] = i.useState(false), C = () => A(true), N = () => A(false), R = null != y ? y : c.U0;
+  }), [S, A] = i.useState(false), C = () => A(true), N = () => A(false), R = null != y ? y : c.U0;
   return (0, r.jsx)(l.A, {
     questOrQuests: t,
     questContent: n,
@@ -85,18 +85,18 @@ function m(e) {
           quest: t,
           size: b,
           expansionSpring: O,
-          isInteracting: T,
+          isInteracting: S,
           isAnimating: v,
           isExpanded: I,
           contentPosition: h,
-          toggleExpanded: S,
+          toggleExpanded: T,
           sourceQuestContent: m
         }), (0, r.jsx)(u.Z, {
           quest: t,
           isQuestExpired: g,
           location: n,
           size: b,
-          isFocused: T,
+          isFocused: S,
           isExpanded: I,
           isAnimating: v,
           contentPosition: h,

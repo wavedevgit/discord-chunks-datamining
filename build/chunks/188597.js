@@ -4,7 +4,7 @@
 require.d(exports, {
   $s: () => N,
   A0: () => R,
-  Sg: () => T,
+  Sg: () => S,
   ow: () => y,
   rQ: () => A,
   t$: () => C,
@@ -76,7 +76,7 @@ let v = async e => {
       customId: a,
       componentId: s
     },
-    onFailure: (e, t) => S(p, e, t)
+    onFailure: (e, t) => T(p, e, t)
   }), null != g && (0, f.B0)(n, E, g, s);
   let y = {
     type: o.B8.MESSAGE_COMPONENT,
@@ -98,7 +98,7 @@ let v = async e => {
     timeout: 3e3,
     rejectWithError: false
   }, e => {
-    T(E, e, l, p, h)
+    S(E, e, l, p, h)
   })
 };
 
@@ -111,10 +111,10 @@ function I(e) {
     values: t
   }
 }
-let S = (e, t, n) => {
+let T = (e, t, n) => {
     null == n && null != t && a.Z.sendClydeError(e, t)
   },
-  T = (e, t, n, r, a) => {
+  S = (e, t, n, r, a) => {
     if (!t.ok) {
       if (!t.hasErr)
         if (t.status >= 400 && t.status < 500 && t.body)

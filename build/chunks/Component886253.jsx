@@ -19,8 +19,8 @@ var Chunk374481 = require("./374481.jsx"),
   Chunk533159 = require("./533159.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk186812 = require("./186812.js"),
-  Chunk325380 = require("./325380.js");
+  Chunk217246 = require("./217246.js"),
+  Chunk815847 = require("./815847.js");
 
 function b(e) {
   let {
@@ -34,15 +34,15 @@ function b(e) {
     var e;
     return null != (e = l.Z.getApplication(t)) ? e : c.Z.getApplicationRecord(t)
   }, [t]), {
-    data: S
+    data: T
   } = (0, u.Z)(n);
   if (null == I) return null;
-  let T = (0, f.y)(I, 25),
+  let S = (0, f.y)(I, 25),
     {
       termsOfServiceUrl: A,
       privacyPolicyUrl: C
     } = I;
-  if ((null == S ? true : S.applicationId) !== t) return (0, r.jsx)(a.Modal, {
+  if ((null == T ? true : T.applicationId) !== t) return (0, r.jsx)(a.Modal, {
     actions: [{
       onClick: y,
       text: m.intl.string(m.t.BddRzS),
@@ -59,8 +59,8 @@ function b(e) {
       children: m.intl.string(m.t.omH3bq)
     })
   });
-  let N = null != T ? (0, r.jsx)("img", {
-    src: T.href,
+  let N = null != S ? (0, r.jsx)("img", {
+    src: S.href,
     alt: "",
     className: g.appIcon
   }) : true;

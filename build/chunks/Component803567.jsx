@@ -2,7 +2,7 @@
 /** chunk id: 803567, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,7 +20,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk419659 = require("./419659.js");
+  Chunk383409 = require("./383409.js");
 let Chunk775322 = require("./775322.js"),
   Chunk853453 = require("./853453.js"),
   O = {
@@ -79,7 +79,7 @@ function I() {
     }), Chunk463395 && (0, Chunk951288.jsx)(Chunk481060.Zbd, {
       type: Chunk481060.Zbd.Types.PRIMARY,
       children: (0, Chunk951288.jsxs)("div", {
-        className: Chunk419659.krispCard,
+        className: Chunk383409.krispCard,
         children: [(0, Chunk951288.jsx)("img", {
           src: (0, Chunk780384.ap)(module) ? Chunk775322 : Chunk853453,
           width: 70,
@@ -95,7 +95,7 @@ function I() {
   })
 }
 
-function S() {
+function T() {
   let {
     inputMode: e,
     inputDeviceId: t,
@@ -120,7 +120,7 @@ function S() {
     hasEchoCancellation: Chunk463395.Z.hasEchoCancellation(exports),
     hasNoiseSuppression: Chunk463395.Z.hasNoiseSuppression(exports),
     hasAutomaticGainControl: Chunk463395.Z.hasAutomaticGainControl(exports)
-  }), [exports]), O = Chunk419659 || Chunk775322 || Chunk853453, v = module === Chunk981631.pM4.VOICE_ACTIVITY && Chunk626135;
+  }), [exports]), O = Chunk383409 || Chunk775322 || Chunk853453, v = module === Chunk981631.pM4.VOICE_ACTIVITY && Chunk626135;
   return (0, Chunk951288.jsxs)(Chunk738486.Z, {
     children: [O && (0, Chunk951288.jsx)(Chunk481060.M14, {
       type: "info",
@@ -134,7 +134,7 @@ function S() {
           page: m.ZY5.USER_SETTINGS,
           section: m.jXE.SETTINGS_VOICE_AND_VIDEO
         }),
-        disabled: Chunk419659
+        disabled: Chunk383409
       })
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION,

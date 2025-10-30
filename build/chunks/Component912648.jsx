@@ -23,18 +23,18 @@ var Chunk951288 = require("./951288.js"),
 function E(e) {
   let {
     channel: t
-  } = e, n = i.useRef(null), [E, b] = i.useState(false), y = (0, l.ZP)(s.Z.EMOJI_PICKER), [O, v] = i.useState(false), I = (0, a.e7)([h.Z], () => h.Z.getGuild(null == t ? true : t.guild_id)), S = (0, c.qt)({
+  } = e, n = i.useRef(null), [E, b] = i.useState(false), y = (0, l.ZP)(s.Z.EMOJI_PICKER), [O, v] = i.useState(false), I = (0, a.e7)([h.Z], () => h.Z.getGuild(null == t ? true : t.guild_id)), T = (0, c.qt)({
     autoTrackExposure: false,
     location: s.Z.EMOJI_PICKER
   }), {
-    availableEmojiSlots: T
+    availableEmojiSlots: S
   } = (0, d.t)({
     guild: null != I ? I : null
   }), {
     canCreateExpressions: A
-  } = (0, p.XJ)(I), C = 0 === T || !A, N = !S.isSelectFileBeforeEmojiStudioExperimentEnabled && C, R = O || E || N, P = i.useCallback(async () => {
-    if (R || S.isSelectFileBeforeEmojiStudioExperimentEnabled) return;
-    if (v(true), S.enabled) {
+  } = (0, p.XJ)(I), C = 0 === S || !A, N = !T.isSelectFileBeforeEmojiStudioExperimentEnabled && C, R = O || E || N, P = i.useCallback(async () => {
+    if (R || T.isSelectFileBeforeEmojiStudioExperimentEnabled) return;
+    if (v(true), T.enabled) {
       var e;
       await (0, u.i)({
         guildId: null != (e = null == t ? true : t.guild_id) ? e : null,
@@ -46,13 +46,13 @@ function E(e) {
       return
     }
     if (null == t) return void v(false);
-    let n = S.isEntrypointOnlyExperimentEnabled || S.isEmojiEditingExperimentEnabled;
+    let n = T.isEntrypointOnlyExperimentEnabled || T.isEmojiEditingExperimentEnabled;
     f.Ku({
       guildId: t.guild_id,
       autoOpenFileInput: n,
       analyticsLocation: y
     }), v(false)
-  }, [t, y, S, R]), w = i.useCallback(async (e, n, r) => {
+  }, [t, y, T, R]), w = i.useCallback(async (e, n, r) => {
     var i;
     v(true), await (0, u.i)({
       userImage: {
@@ -78,7 +78,7 @@ function E(e) {
     focusProps: {
       within: true
     },
-    children: [g.intl.string(g.t.iMJO37), S.isSelectFileBeforeEmojiStudioExperimentEnabled ? (0, r.jsx)(_.ZP, {
+    children: [g.intl.string(g.t.iMJO37), T.isSelectFileBeforeEmojiStudioExperimentEnabled ? (0, r.jsx)(_.ZP, {
       ref: n,
       tabIndex: 0,
       disabled: R,

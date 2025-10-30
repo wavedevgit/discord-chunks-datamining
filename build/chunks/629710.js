@@ -6,13 +6,13 @@ require.d(exports, {
   DQ: () => A,
   Hz: () => w,
   LD: () => C,
-  MD: () => T,
+  MD: () => S,
   SI: () => P,
   UJ: () => R,
   X6: () => I,
   aQ: () => U,
   g4: () => N,
-  hi: () => L,
+  hi: () => x,
   kC: () => v,
   kh: () => O,
   px: () => G,
@@ -47,7 +47,7 @@ let g = false,
   y = (e, t) => {
     let n = d.default.getCurrentUser();
     if (null == n || t === n.id) return m.qn.NONE;
-    let r = L(e, t, [l.Z, u.Z]);
+    let r = x(e, t, [l.Z, u.Z]);
     return null == r ? m.qn.NONE : O(r)
   },
   O = e => {
@@ -77,7 +77,7 @@ function I(e, t) {
   returnfalse
 }
 
-function S(e) {
+function T(e) {
   return (Array.isArray(e) ? e : [e]).flatMap(e => {
     switch (e.type) {
       case i.re.MEDIA_GALLERY:
@@ -88,14 +88,14 @@ function S(e) {
         return e.file;
       case i.re.SECTION:
       case i.re.ACTION_ROW:
-        return e.components.flatMap(S);
+        return e.components.flatMap(T);
       default:
         return []
     }
   }).map(e => "proxy_url" in e ? (0, s.ym)(e) : e)
 }
 
-function T(e, t) {
+function S(e, t) {
   var n, r;
   let i = null != t ? t : b(e);
   if (i === m.qn.NONE) returnfalse;
@@ -105,14 +105,14 @@ function T(e, t) {
     }, i))) || (null == (r = e.embeds) ? true : r.some(e => R({
       type: p.l.Embed,
       media: e
-    }, i))) || null != e.components && S(e.components).some(e => R({
+    }, i))) || null != e.components && T(e.components).some(e => R({
       type: p.l.GenericMedia,
       media: e
     }, i))) returntrue;
   let a = null;
   if ("messageSnapshots" in e ? a = e.messageSnapshots : "message_snapshots" in e && (a = e.message_snapshots), null == a || 0 === a.length) returnfalse;
   for (let e of a)
-    if (T(e.message, i)) returntrue;
+    if (S(e.message, i)) returntrue;
   returnfalse
 }
 
@@ -155,7 +155,7 @@ function R(e, t) {
   if (0 === n.length) returnfalse;
   switch (e.type) {
     case p.l.Embed:
-      return x(e.media, n);
+      return L(e.media, n);
     case p.l.Attachment:
       return M(e.media, n);
     case p.l.GenericMedia:
@@ -204,7 +204,7 @@ function D(e) {
   return t
 }
 
-function L(e, t) {
+function x(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [l.Z, u.Z],
     [r, i] = n,
     a = r.getChannel(e),
@@ -212,7 +212,7 @@ function L(e, t) {
   return null == o || t === o.id || null == a ? null : a.isDM() || a.isGroupDM() ? null != t && i.getFriendIDs().includes(t) ? p.n.FRIEND_DM : p.n.NON_FRIEND_DM : p.n.GUILD
 }
 
-function x(e, t) {
+function L(e, t) {
   var n, r, i, a, o, s, l;
   return !(0 === t.length || null == e || 0 === t.filter(t => !P(t, {
     type: p.l.Embed,

@@ -92,12 +92,12 @@ function I(e) {
   }
 }
 
-function S(e) {
+function T(e) {
   var t;
   return null != (t = y[e]) ? t : {}
 }
 
-function T(e, t) {
+function S(e, t) {
   var n, r;
   let i = null == (n = y[e]) ? true : n.error,
     a = null == (r = y[e]) ? true : r.error_description;
@@ -105,11 +105,11 @@ function T(e, t) {
 }
 
 function A(e) {
-  v(e), s.default.track(h.rMx.OVERLAY_HOOK_RESULT, S(e))
+  v(e), s.default.track(h.rMx.OVERLAY_HOOK_RESULT, T(e))
 }
 
 function C(e, t) {
-  e !== l.UNSET_PID && T(e, {
+  e !== l.UNSET_PID && S(e, {
     host_crash_count: 1,
     error: t.message,
     error_description: t.stack
@@ -117,7 +117,7 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  e !== l.UNSET_PID && T(e, {
+  e !== l.UNSET_PID && S(e, {
     renderer_crash_count: 1,
     error: t.message,
     error_description: t.stack
@@ -153,29 +153,29 @@ function D(e) {
   let {
     createWindowTriggeringPID: t
   } = e;
-  return T(t, {
+  return S(t, {
     mounting_started_at: new Date().getTime()
   }), true
-}
-
-function L(e) {
-  var t, n;
-  let {
-    createWindowTriggeringPID: r
-  } = e, i = null != (n = null == (t = S(r)) ? true : t.mounting_started_at) ? n : new Date().getTime(), a = {
-    renderer_started: true,
-    fullscreen_type: (0, f.hs)(r),
-    graphics_info_after: new Date().getTime() - i
-  };
-  return T(r, a), true
 }
 
 function x(e) {
   var t, n;
   let {
     createWindowTriggeringPID: r
-  } = e, i = null != (n = null == (t = S(r)) ? true : t.mounting_started_at) ? n : new Date().getTime();
-  return T(r, {
+  } = e, i = null != (n = null == (t = T(r)) ? true : t.mounting_started_at) ? n : new Date().getTime(), a = {
+    renderer_started: true,
+    fullscreen_type: (0, f.hs)(r),
+    graphics_info_after: new Date().getTime() - i
+  };
+  return S(r, a), true
+}
+
+function L(e) {
+  var t, n;
+  let {
+    createWindowTriggeringPID: r
+  } = e, i = null != (n = null == (t = T(r)) ? true : t.mounting_started_at) ? n : new Date().getTime();
+  return S(r, {
     renderer_started_after: new Date().getTime() - i
   }), true
 }
@@ -198,8 +198,8 @@ function j(e) {
   var t, n;
   let {
     pid: r
-  } = e, i = null != (n = null == (t = S(r)) ? true : t.mounting_started_at) ? n : new Date().getTime();
-  return T(r, {
+  } = e, i = null != (n = null == (t = T(r)) ? true : t.mounting_started_at) ? n : new Date().getTime();
+  return S(r, {
     total_mount_time_ms: null != i ? new Date().getTime() - i : true,
     success: true
   }), true
@@ -209,7 +209,7 @@ class U extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk371651.default, Chunk509140.Z, Chunk594190.ZP)
   }
   getData(e) {
-    return S(e)
+    return T(e)
   }
   getCrashExtra(e, t) {
     return P(e, t)
@@ -218,8 +218,8 @@ class U extends(r = Chunk442837.ZP.Store) {
 m(U, "displayName", "Overlay-v3-Native-Analytics-Store");
 let G = new U(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
   OVERLAY_V3_PRE_CREATE_POPOUT: D,
-  OVERLAY_V3_POST_CREATE_POPOUT: L,
-  OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: x,
+  OVERLAY_V3_POST_CREATE_POPOUT: x,
+  OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: L,
   OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: k,
   OVERLAY_SUCCESSFULLY_SHOWN: j,
   OVERLAY_CRASHED: w,

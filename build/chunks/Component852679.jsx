@@ -29,8 +29,8 @@ async function p(e) {
     onSubscribeComplete: O,
     onSubscriptionConfirmation: v,
     inPopout: I,
-    applicationId: S,
-    intent: T
+    applicationId: T,
+    intent: S
   } = e, A = I ? i.u1M : i.z1l, C = l.Z.getPremiumTypeSubscription();
   if (null != C && C.isPurchasedExternally && null != C.paymentGateway) {
     null != g && g(), a.Z.show({
@@ -54,7 +54,7 @@ async function p(e) {
   await (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("24920"), n.e("26539")]).then(n.bind(n, 343649));
+    } = await Promise.all([n.e("24920"), n.e("32284")]).then(n.bind(n, 343649));
     return n => {
       let {
         transitionState: i,
@@ -74,8 +74,8 @@ async function p(e) {
         disablePremiumUpsell: y,
         onSubscriptionConfirmation: v,
         onSubscribeComplete: O,
-        applicationId: S,
-        intent: T
+        applicationId: T,
+        intent: S
       })
     }
   }, {

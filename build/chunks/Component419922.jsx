@@ -23,11 +23,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk373228 = require("./373228.js"),
   Chunk378233 = require("./378233.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk353681 = require("./353681.js");
+  Chunk365278 = require("./365278.js");
 let v = e => e.preventDefault(),
   I = .7,
-  S = 33,
-  T = 1.55,
+  T = 33,
+  S = 1.55,
   A = {
     tension: 1100,
     friction: 40
@@ -58,7 +58,7 @@ let P = e => {
       maskAsset: a,
       size: s,
       withLoadingIndicator: l = true
-    } = e, c = s >= S;
+    } = e, c = s >= T;
     return (0, r.jsxs)("div", {
       className: o()(O.assetWrapper, {
         [O.assetWrapperMasked]: n || a
@@ -99,7 +99,7 @@ let P = e => {
       positionRef: _,
       withLoadingIndicator: h,
       onError: m
-    } = e, g = i.useRef(null), E = i.useRef(null), [v, I] = i.useState(true), [S, T] = i.useState(false), A = i.useRef(false);
+    } = e, g = i.useRef(null), E = i.useRef(null), [v, I] = i.useState(true), [T, S] = i.useState(false), A = i.useRef(false);
     A.current = t && u;
     let C = null == s ? (0, b.Q6)(o) : s;
     return (l()(null != C, "Unable to determine sticker asset URL. Sticker ID: ".concat(o.id)), i.useEffect(() => {
@@ -120,7 +120,7 @@ let P = e => {
             t || I(false)
           },
           onError: () => {
-            t || (I(false), T(true), null == m || m())
+            t || (I(false), S(true), null == m || m())
           }
         }), A.current && E.current.setState(true))
       })(), () => {
@@ -134,10 +134,10 @@ let P = e => {
     }, [o, t, u]), null == C) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
-      "aria-label": S ? y.intl.string(y.t.yEvsK9) : R(o),
+      "aria-label": T ? y.intl.string(y.t.yEvsK9) : R(o),
       ref: _,
       children: (0, r.jsx)(P, {
-        hasError: S,
+        hasError: T,
         isLoading: v,
         maskAsset: f,
         size: a,
@@ -160,7 +160,7 @@ let P = e => {
       positionRef: u,
       withLoadingIndicator: f,
       fileUri: _
-    } = e, [p, h] = i.useState(false), [m, g] = i.useState(true), [E, y] = i.useState(false), S = i.useRef(null), T = i.useRef(null), A = null != _ ? _ : (0, b.Q6)(n, {
+    } = e, [p, h] = i.useState(false), [m, g] = i.useState(true), [E, y] = i.useState(false), T = i.useRef(null), S = i.useRef(null), A = null != _ ? _ : (0, b.Q6)(n, {
       isPreview: !t || !p || !a,
       size: s
     }), C = i.useCallback(() => {
@@ -169,18 +169,18 @@ let P = e => {
       y(true)
     }, []);
     return (i.useEffect(() => {
-      if (null != S.current) {
+      if (null != T.current) {
         let {
           isVisible: e
-        } = S.current;
+        } = T.current;
         h(e)
       }
     }, []), i.useLayoutEffect(() => {
       var e;
-      (null == (e = T.current) ? true : e.complete) === true && g(false)
+      (null == (e = S.current) ? true : e.complete) === true && g(false)
     }, []), null == A) ? null : (0, r.jsx)(d.$, {
       innerRef: u,
-      ref: S,
+      ref: T,
       onChange: h,
       threshold: I,
       children: (0, r.jsx)("div", {
@@ -200,13 +200,13 @@ let P = e => {
             onError: w,
             onLoad: C,
             onContextMenu: v,
-            ref: T
+            ref: S
           }), n.id)
         })
       })
     })
   },
-  L = e => {
+  x = e => {
     let {
       disableAnimation: t,
       enlargeScaleFactor: n,
@@ -244,7 +244,7 @@ let P = e => {
         children: [(0, r.jsx)(c.animated.div, {
           className: O.overlayStickerWrapper,
           style: e,
-          children: (0, r.jsx)(x, {
+          children: (0, r.jsx)(L, {
             className: O.__invalid_overlaySticker,
             disableAnimation: t,
             enlargeOnInteraction: false,
@@ -266,13 +266,13 @@ let P = e => {
       })
     }))
   },
-  x = e => {
+  L = e => {
     let {
       isInteracting: t = false,
       disableAnimation: n = false,
       enlargeOnInteraction: a = false,
       enlargeWithName: o = true,
-      enlargeScaleFactor: s = T,
+      enlargeScaleFactor: s = S,
       maskAsset: l = false,
       size: c,
       sticker: u,
@@ -297,7 +297,7 @@ let P = e => {
         assetData: _,
         fileUri: p,
         onError: h
-      }), a && (0, r.jsx)(L, {
+      }), a && (0, r.jsx)(x, {
         disableAnimation: n,
         enlargeScaleFactor: s,
         enlargeWithName: o,
@@ -308,4 +308,4 @@ let P = e => {
       })]
     }, "".concat(u.id, ",").concat(c))
   },
-  M = x
+  M = L

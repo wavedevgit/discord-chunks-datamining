@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk215023 = require("./215023.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk498138 = require("./498138.js");
+  Chunk176343 = require("./176343.js");
 let g = (e, t, n, r) => {
     if (null == e || null == t || null == n) {
       let e = Error("Missing base rate for legal fine print"),
@@ -38,8 +38,8 @@ let g = (e, t, n, r) => {
         isTrial: O,
         isOrbCheckout: v,
         isEmbeddedIAP: I,
-        renewalInvoice: S,
-        paymentSourceType: T,
+        renewalInvoice: T,
+        paymentSourceType: S,
         hide: A,
         purchaseType: C,
         productLine: N,
@@ -47,14 +47,14 @@ let g = (e, t, n, r) => {
         basePrice: P,
         currentSubscription: w,
         skuId: D,
-        applicationName: L
+        applicationName: x
       } = e,
-      x = (0, i.e7)([o.Z], () => o.Z.inReverseTrial());
+      L = (0, i.e7)([o.Z], () => o.Z.inReverseTrial());
     if (A) return null;
     let M = null == e.planGroup ? [] : e.planGroup;
-    if (null != S) {
-      let e = c.ZP.getIntervalForInvoice(S);
-      t = e.intervalType, n = e.intervalCount, s = (0, u.og)((0, u.T4)(S.total, S.currency), t, n), E = (0, u.og)((0, u.T4)(S.subtotal, S.currency), t, n)
+    if (null != T) {
+      let e = c.ZP.getIntervalForInvoice(T);
+      t = e.intervalType, n = e.intervalCount, s = (0, u.og)((0, u.T4)(T.total, T.currency), t, n), E = (0, u.og)((0, u.T4)(T.subtotal, T.currency), t, n)
     } else null != b && (t = b.interval, n = b.intervalCount);
     let k = (0, a.K)({
         purchaseType: C || f.GZQ.SUBSCRIPTION,
@@ -83,7 +83,7 @@ let g = (e, t, n, r) => {
       let e = "";
       e = D === _.Vt.ORB_PROFILE_BADGE ? h.intl.string(h.t.APcKRo) : D === _.Vt.FRACTIONAL_PREMIUM ? h.intl.string(h.t.FhJ74j) : h.intl.string(h.t["Sxed/G"]), Array.isArray(G) ? G = [...G, " ".concat(e)] : G += " ".concat(e)
     } else if (I)
-      if (null != s && (null == S ? true : S.subscriptionPeriodEnd) != null) G = h.intl.format(h.t["2VPTay"], {
+      if (null != s && (null == T ? true : T.subscriptionPeriodEnd) != null) G = h.intl.format(h.t["2VPTay"], {
         subtotalRate: E
       });
       else switch (t) {
@@ -115,7 +115,7 @@ let g = (e, t, n, r) => {
           break;
         case f.POd.SOCIAL_LAYER_GAME_ITEM:
           B = j, G = h.intl.format(h.t.CVITgq, {
-            applicationName: null != L ? L : "game's"
+            applicationName: null != x ? x : "game's"
           });
           break;
         default:
@@ -156,7 +156,7 @@ let g = (e, t, n, r) => {
           paidURL: f.EYA.PAID_TERMS,
           contactLink: f.EYA.CONTACT,
           helpdeskArticle: l.Z.getArticleURL(f.BhN.BILLING)
-        }) : x && N === f.POd.BOOST && null != P ? h.intl.format(h.t["2nKy/0"], {
+        }) : L && N === f.POd.BOOST && null != P ? h.intl.format(h.t["2nKy/0"], {
           price: (0, u.T4)(P.amount, P.currency),
           paidServiceTermsArticle: f.EYA.PAID_TERMS,
           contactUsArticle: f.EYA.CONTACT,
@@ -191,10 +191,10 @@ let g = (e, t, n, r) => {
         })]
       }), "" !== G && (0, r.jsx)("div", {
         children: G
-      }), T === f.HeQ.PAYSAFE_CARD && (0, r.jsx)("div", {
+      }), S === f.HeQ.PAYSAFE_CARD && (0, r.jsx)("div", {
         className: m.paymentSourceNoticeCopy,
         children: h.intl.string(h.t.kj9VLI)
-      }), T === f.HeQ.SOFORT && (0, r.jsxs)("div", {
+      }), S === f.HeQ.SOFORT && (0, r.jsxs)("div", {
         className: m.paymentSourceNoticeCopy,
         children: [h.intl.string(h.t["UYy1/h"]), " "]
       })]

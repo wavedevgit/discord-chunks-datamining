@@ -43,7 +43,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk701488 = require("./701488.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk206733 = require("./206733.js");
+  Chunk402255 = require("./402255.js");
 
 function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -95,7 +95,7 @@ let q = {
   X = (0, Chunk438139.Z)(class extends Chunk647438.PureComponent {
     render() {
       return (0, Chunk951288.jsx)("div", {
-        className: Chunk206733.timestamp,
+        className: Chunk402255.timestamp,
         children: this.props.message
       })
     }
@@ -198,7 +198,7 @@ class $ extends(r = Chunk647438.PureComponent) {
   }
   renderXboxImage() {
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk206733.assets,
+      className: Chunk402255.assets,
       children: (0, Chunk951288.jsx)("img", {
         alt: "",
         src: Chunk726542.Z.get(Chunk981631.ABu.XBOX).icon.customPNG,
@@ -316,7 +316,7 @@ class $ extends(r = Chunk647438.PureComponent) {
       application: r,
       activityGuild: a
     } = this.props;
-    return null != e.assets || (0, L.Z)(e) || e.type !== B.IIU.PLAYING || "ActivityFeed" === n || t.bot ? null : null == r && null != a ? (0, i.jsx)("div", {
+    return null != e.assets || (0, x.Z)(e) || e.type !== B.IIU.PLAYING || "ActivityFeed" === n || t.bot ? null : null == r && null != a ? (0, i.jsx)("div", {
       className: s()(F.gameIcon, F.screenshareIcon)
     }) : (0, i.jsx)(E.Z, {
       className: F.gameIcon,
@@ -335,7 +335,7 @@ class $ extends(r = Chunk647438.PureComponent) {
       type: o
     } = e;
     if (o === B.IIU.CUSTOM_STATUS) return null;
-    let l = (0, x.Z)(e),
+    let l = (0, L.Z)(e),
       c = e.name,
       u = c;
     return (o === B.IIU.HANG_STATUS ? u = (0, v.O8)(t.id, e) : l && null != n ? u = (0, i.jsx)("span", {
@@ -366,9 +366,9 @@ class $ extends(r = Chunk647438.PureComponent) {
     else if (e.type === B.IIU.HANG_STATUS && null != a) o = Z.intl.formatToPlainString(Z.t.IAZiW2, {
       guildName: a.name
     }), t = () => {
-      (0, T.X)(a.id)
+      (0, S.X)(a.id)
     };
-    else if (!(0, x.Z)(e)) {
+    else if (!(0, L.Z)(e)) {
       if (o = r, s = r, (0, M.Z)(e) && null != r) {
         let t = (t, n) => (0, i.jsx)(A.Z, {
           artists: r,
@@ -434,15 +434,15 @@ class $ extends(r = Chunk647438.PureComponent) {
     let {
       activityGuild: t
     } = this.props;
-    if (!(0, x.Z)(e) || (0, M.Z)(e)) return null;
+    if (!(0, L.Z)(e) || (0, M.Z)(e)) return null;
     let {
       timestamps: n
     } = e;
-    return null == n ? null : (0, L.Z)(e) ? (0, i.jsx)(X, {
+    return null == n ? null : (0, x.Z)(e) ? (0, i.jsx)(X, {
       timestamps: n
-    }) : (0, i.jsx)(S.ZP, {
+    }) : (0, i.jsx)(T.ZP, {
       start: n.start,
-      location: S.ZP.Locations.USER_ACTIVITY,
+      location: T.ZP.Locations.USER_ACTIVITY,
       className: F.playTime,
       isApplicationStreaming: null != t
     })
@@ -473,7 +473,7 @@ class $ extends(r = Chunk647438.PureComponent) {
       } = e,
       c = o,
       u = o;
-    if (!(0, x.Z)(e) && (c = null == l ? true : l.large_text, u = null == l ? true : l.large_text, (0, M.Z)(e) && null != c)) {
+    if (!(0, L.Z)(e) && (c = null == l ? true : l.large_text, u = null == l ? true : l.large_text, (0, M.Z)(e) && null != c)) {
       let t = (t, n) => null != e.sync_id && null != u ? (0, i.jsx)(f.Anchor, {
         className: F.bodyLink,
         onClick: this.handleOpenSpotifyAlbum,
@@ -531,13 +531,13 @@ class $ extends(r = Chunk647438.PureComponent) {
     return (0, Chunk951288.jsxs)("div", {
       className: s()(this.getTypeClass("activity"), r),
       children: [this.renderHeader(Chunk833858), (0, Chunk951288.jsx)("div", {
-        className: s()(Chunk438139 ? Chunk206733.bodyAlignCenter : Chunk206733.bodyNormal),
+        className: s()(Chunk438139 ? Chunk402255.bodyAlignCenter : Chunk402255.bodyNormal),
         children: (0, Chunk951288.jsxs)("div", {
-          className: Chunk206733.activityDetails,
+          className: Chunk402255.activityDetails,
           children: [module, this.isStreamerOnTypeActivityFeed() ? null : (0, Chunk951288.jsxs)(Chunk600164.Z.Child, {
-            className: s()((0, Chunk153066.l)(Chunk206733, "content", Chunk438139 ? "GameImage" : null != module ? "Images" : "NoImages", exports)),
+            className: s()((0, Chunk153066.l)(Chunk402255, "content", Chunk438139 ? "GameImage" : null != module ? "Images" : "NoImages", exports)),
             children: [(0, Chunk951288.jsxs)(Chunk481060.P3F, {
-              className: s()(null != Chunk512722 && Chunk206733.openGameProfile),
+              className: s()(null != Chunk512722 && Chunk402255.openGameProfile),
               onClick: null != Chunk512722 ? e => {
                 l(e), null == o || o()
               } : true,

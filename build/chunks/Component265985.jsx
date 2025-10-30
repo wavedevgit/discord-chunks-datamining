@@ -2,7 +2,7 @@
 /** chunk id: 265985, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  h: () => T,
+  h: () => S,
   x: () => A
 });
 var Chunk951288 = require("./951288.js");
@@ -24,11 +24,11 @@ var Chunk120356 = require("./120356.js"),
   Chunk575460 = require("./575460.jsx"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk673854 = require("./673854.js");
+  Chunk822849 = require("./822849.js");
 let v = 440,
   I = 80,
-  S = 4,
-  T = e => {
+  T = 4,
+  S = e => {
     let {
       onClose: t,
       listing: n,
@@ -78,7 +78,7 @@ let v = 440,
       onClose: t,
       listing: n,
       guildId: i
-    } = e, a = (0, o.e7)([f.Z], () => f.Z.getGuild(i), [i]), u = (0, m.Z)(i).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(p.rC).slice(0, null === u.length ? S : S - 1), _ = (0, g.Z)(d).slice(0, null === u.length ? S : S - 1), h = () => {
+    } = e, a = (0, o.e7)([f.Z], () => f.Z.getGuild(i), [i]), u = (0, m.Z)(i).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(p.rC).slice(0, null === u.length ? T : T - 1), _ = (0, g.Z)(d).slice(0, null === u.length ? T : T - 1), h = () => {
       var e;
       if (0 === u.length) return null;
       let t = u[0];

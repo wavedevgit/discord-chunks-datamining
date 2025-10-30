@@ -11,7 +11,7 @@ require.d(exports, {
   Z3: () => u,
   ZR: () => s,
   am: () => p,
-  av: () => S,
+  av: () => T,
   cq: () => E,
   j: () => N,
   k3: () => A,
@@ -20,7 +20,7 @@ require.d(exports, {
   pw: () => I,
   rk: () => v,
   tB: () => y,
-  uo: () => T,
+  uo: () => S,
   vD: () => b,
   x3: () => m
 }), require("./953529.js"), require("./388685.js");
@@ -150,14 +150,14 @@ function I(e) {
   return null == e || (null == e.message || !(e.message.length > 0)) && (null == e.authorIds || !(e.authorIds.length > 0))
 }
 
-function S(e) {
+function T(e) {
   return null == e || !!I(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0))
 }
 
-function T(e) {
+function S(e) {
   var t, n;
   if (null == e) returnfalse;
-  if (S(e)) returntrue;
+  if (T(e)) returntrue;
   if ((null == (t = e.welcomeMessage) ? true : t.message) == null || e.welcomeMessage.message.length < s || (null == (n = e.welcomeMessage) ? true : n.authorIds) == null || 0 === e.welcomeMessage.authorIds.length || null == e.newMemberActions || e.newMemberActions.length < d) returnfalse;
   if (null != e.newMemberActions)
     for (let t of e.newMemberActions) {

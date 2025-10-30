@@ -6,10 +6,10 @@ require.d(exports, {
   Sg: () => eO,
   TE: () => eP,
   ZP: () => ej,
-  aT: () => ex,
+  aT: () => eL,
   ae: () => ev,
   bL: () => ey,
-  hJ: () => eT,
+  hJ: () => eS,
   iV: () => ew,
   jx: () => eC,
   oR: () => eR,
@@ -79,7 +79,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk761652 = require("./761652.js"),
   Chunk957825 = require("./957825.js"),
-  Chunk564355 = require("./564355.js");
+  Chunk744114 = require("./744114.js");
 
 function ef(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -138,12 +138,12 @@ function ey(e, t, a, o, s) {
     c(true);
     let y = null != (E = null == (g = M.Z.getStickerPreview(s, t.drafts.type)) ? true : g.map(e => e.id)) ? E : [],
       O = null != (b = H.Z.getUploads(s, t.drafts.type)) ? b : [],
-      v = (0, x.q5)(s);
+      v = (0, L.q5)(s);
     if (null == d && !_ && !m && (0, R.CB)(O, s)) {
       c(false), (0, p.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("57804"), n.e("90508"), n.e("95546"), n.e("22173"), n.e("48890")]).then(n.bind(n, 273602));
+        } = await Promise.all([n.e("57804"), n.e("90508"), n.e("95546"), n.e("22173"), n.e("44576")]).then(n.bind(n, 273602));
         return t => (0, r.jsx)(e, eh(e_({}, t), {
           threadId: s,
           attachments: O,
@@ -225,7 +225,7 @@ function eI(e) {
   }, [n, r, a, t, l, s, o])
 }
 
-function eS(e, t) {
+function eT(e, t) {
   return i.useCallback((n, r, i) => {
     let a = e.current;
     null != n && null != a && (W.default.track(el.rMx.SOUNDMOJI_SELECT, {
@@ -238,7 +238,7 @@ function eS(e, t) {
   }, [e, t.id, t.guild_id])
 }
 
-function eT(e, t) {
+function eS(e, t) {
   let n = i.useCallback(() => {
       t || (0, C.RO)(eu.X1.EMOJI, e)
     }, [t, e]),
@@ -374,17 +374,17 @@ function eD(e, t, n) {
   }
 }
 
-function eL(e, t) {
+function ex(e, t) {
   let [n, r] = i.useState(null), a = i.useCallback(() => {
     var e, n;
     let i, a = null == (e = t.current) ? true : e.getSlateEditor();
-    null != a && (i = null == (n = eo.bN.getSelectedParentOfType(a, T.un)) ? true : n[0].type), r(null != i ? i : null)
+    null != a && (i = null == (n = eo.bN.getSelectedParentOfType(a, S.un)) ? true : n[0].type), r(null != i ? i : null)
   }, [t]);
   return i.useEffect(() => (e.on("selection-changed", a), a(), () => {
     e.off("selection-changed", a)
   }), [a, e]), n
 }
-let ex = e => {
+let eL = e => {
     let {
       enabled: t,
       onlyExactMatch: n
@@ -417,12 +417,12 @@ function ek(e, t) {
     textValue: f,
     richValue: h,
     className: O,
-    innerClassName: T,
+    innerClassName: S,
     editorClassName: C,
     id: R,
     required: P,
     disabled: w,
-    placeholder: x,
+    placeholder: L,
     accessibilityLabel: M,
     channel: k,
     type: j,
@@ -464,15 +464,15 @@ function ek(e, t) {
   } = (0, b.ZP)(E.Z.CHANNEL_TEXT_AREA), eq = eN(t), eX = i.useRef(null), eQ = i.useRef(null), eJ = i.useRef(null), e$ = i.useRef(null);
   null == eG || eG(eQ.current);
   let e0 = (0, y.Z)(k),
-    [e1, e3] = i.useState(!e0);
+    [e1, e2] = i.useState(!e0);
   (0, m.PM)(eq, e => {
     let {
       width: t
     } = e;
-    return e3(!e0 && (null == t || t > em))
+    return e2(!e0 && (null == t || t > em))
   });
   let {
-    activeCommand: e2,
+    activeCommand: e3,
     activeCommandSection: e4
   } = (0, _.cj)([v.Z], () => {
     var e, t;
@@ -487,7 +487,7 @@ function ek(e, t) {
     canAttachFiles: e7,
     canCreateThreads: e9,
     canEveryoneSendMessages: te
-  } = eP(k, j, e2, w), tt = j.toolbarType === Q.OW.STATIC, tn = !G.dN.useSetting() && !(0, q.isAndroidWeb)() && null != window.ResizeObserver, tr = !tn || !(null == (n = j.commands) ? true : n.enabled) || !U || f !== ec.GI, ti = (0, D.Z)(), {
+  } = eP(k, j, e3, w), tt = j.toolbarType === Q.OW.STATIC, tn = !G.dN.useSetting() && !(0, q.isAndroidWeb)() && null != window.ResizeObserver, tr = !tn || !(null == (n = j.commands) ? true : n.enabled) || !U || f !== ec.GI, ti = (0, D.Z)(), {
     fontSize: ta
   } = (0, _.cj)([g.Z], () => ({
     fontSize: g.Z.fontSize
@@ -497,7 +497,7 @@ function ek(e, t) {
     var r;
     t === ec.GI && "" === ts.current && (null == (r = j.commands) ? true : r.enabled) && (null == eY || eY()), null == W || W(e, t, n)
   }, [W, eY, null == (a = j.commands) ? true : a.enabled]);
-  eT(j, e6);
+  eS(j, e6);
   let {
     eventEmitter: tc,
     handleEditorSelectionChanged: tu
@@ -516,35 +516,35 @@ function ek(e, t) {
     channelId: k.id,
     chatInputType: j,
     submit: eu
-  }), ty = eS(eQ, k), tO = i.useCallback(() => {
+  }), ty = eT(eQ, k), tO = i.useCallback(() => {
     var e;
     return null == e$ || null == (e = e$.current) ? true : e.hide()
   }, []), {
     editorHeight: tv,
     handleResize: tI
   } = eR(K), {
-    handleTab: tS,
-    handleEnter: tT,
+    handleTab: tT,
+    handleEnter: tS,
     handleMoveSelection: tA
   } = eD(tp, eX, tr), {
     expressionPickerView: tC,
     shouldHideExpressionPicker: tN,
     handleOuterClick: tR
-  } = ew(j, eQ), tP = eL(tc, eQ), tw = ex(f), {
+  } = ew(j, eQ), tP = ex(tc, eQ), tw = eL(f), {
     currentAutocompleteType: tD,
-    handleAutocompleteVisibilityChange: tL
+    handleAutocompleteVisibilityChange: tx
   } = eM();
   (0, X.S)(tc, k.guild_id, k.id);
-  let tx = null != Y,
+  let tL = null != Y,
     tM = e6 && !((e8 || e5) && te) || td && (null == (s = j.submit) ? true : s.useDisabledStylesOnSubmit),
     tk = null;
-  null != e2 ? tk = null == F ? true : F(e2, e4, ed.attachButton) : (!e6 || e9) && (tk = null == Z ? true : Z(tx, ed.attachButton));
-  let tj = tn && null != h && !e6 && j.showCharacterCount && null == e2,
-    tU = tn && !__OVERLAY__ && null != h && null == e2 && j.toolbarType !== Q.OW.NONE && !e6,
+  null != e3 ? tk = null == F ? true : F(e3, e4, ed.attachButton) : (!e6 || e9) && (tk = null == Z ? true : Z(tL, ed.attachButton));
+  let tj = tn && null != h && !e6 && j.showCharacterCount && null == e3,
+    tU = tn && !__OVERLAY__ && null != h && null == e3 && j.toolbarType !== Q.OW.NONE && !e6,
     tG = (0, et.c)({
       channel: k,
       type: j,
-      activeCommand: e2,
+      activeCommand: e3,
       pendingReply: Y,
       pendingScheduledMessage: eW,
       selectedAutocompleteInputType: tP
@@ -597,7 +597,7 @@ function ek(e, t) {
         }), (0, r.jsxs)("div", {
           ref: eJ,
           onScroll: tO,
-          className: o()(T, {
+          className: o()(S, {
             [ed.scrollableContainer]: true,
             [ed.themedBackground]: !eF,
             [ed.hasStackedBar]: tG.stacked.length > 0
@@ -629,7 +629,7 @@ function ek(e, t) {
                 textValue: f,
                 richValue: h,
                 disabled: e6,
-                placeholder: x,
+                placeholder: L,
                 required: P,
                 accessibilityLabel: M,
                 isPreviewing: (e8 || e5) && te,
@@ -646,8 +646,8 @@ function ek(e, t) {
                 onFocus: ee,
                 onKeyDown: eo,
                 onSubmit: tf,
-                onTab: tS,
-                onEnter: tT,
+                onTab: tT,
+                onEnter: tS,
                 onMoveSelection: tA,
                 onSelectionChanged: tu,
                 onMaybeShowAutocomplete: th,
@@ -655,7 +655,7 @@ function ek(e, t) {
                 promptToUpload: ef,
                 fontSize: ta,
                 spellcheckEnabled: to,
-                canOnlyUseTextCommands: tx,
+                canOnlyUseTextCommands: tL,
                 isEditorIdle: tw,
                 currentAutocompleteType: tD,
                 className: o()({
@@ -671,14 +671,14 @@ function ek(e, t) {
         }), tr ? null : (0, r.jsx)(I.Z, {
           ref: eX,
           channel: k,
-          canOnlyUseTextCommands: tx
-        }), (0, r.jsx)(S.Z, {
+          canOnlyUseTextCommands: tL
+        }), (0, r.jsx)(T.Z, {
           ref: tp,
           channel: k,
           canMentionRoles: ep,
           canMentionChannels: eh,
           useNewSlashCommands: tn,
-          canOnlyUseTextCommands: tx,
+          canOnlyUseTextCommands: tL,
           canSendStickers: null == (l = j.stickers) ? true : l.allowSending,
           canSendSoundmoji: null == (u = j.soundmoji) ? true : u.allowSending,
           textValue: f,
@@ -690,13 +690,13 @@ function ek(e, t) {
           editorRef: eQ,
           onSendMessage: tf,
           onSendSticker: tb,
-          onVisibilityChange: tL,
+          onVisibilityChange: tx,
           editorScrollerRef: eJ,
           editorHeight: tv,
           barsHeight: 40 * tG.floating.length,
           setValue: (e, t) => null == tl ? true : tl(null, e, t),
           position: eB
-        }), (0, r.jsx)(L.Z, {
+        }), (0, r.jsx)(x.Z, {
           textValue: f,
           editorHeight: tv,
           channelId: k.id

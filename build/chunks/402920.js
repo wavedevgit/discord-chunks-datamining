@@ -1,0 +1,24 @@
+/** Chunk was on 77033 **/
+/** chunk id: 402920, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  card: "card_abfd90",
+  cardMedium: "cardMedium_abfd90",
+  cardLarge: "cardLarge_abfd90",
+  cardDark: "cardDark_abfd90 card_abfd90",
+  cardHighlighted: "cardHighlighted_abfd90",
+  cardDarkHighlighted: "cardDarkHighlighted_abfd90",
+  cardAnimation: "cardAnimation_abfd90",
+  cardBackgroundImage: "cardBackgroundImage_abfd90",
+  cardImage: "cardImage_abfd90",
+  ticketIconContainer: "ticketIconContainer_abfd90",
+  ticketIcon: "ticketIcon_abfd90",
+  details: "details_abfd90",
+  titleContainer: "titleContainer_abfd90",
+  descriptionContainer: "descriptionContainer_abfd90",
+  buttonHover: "buttonHover_abfd90",
+  bottomGradient: "bottomGradient_abfd90",
+  bottomGradientLarge: "bottomGradientLarge_abfd90",
+  iconAsset: "iconAsset_abfd90",
+  badge: "badge_abfd90",
+  wishlistButtonContainer: "wishlistButtonContainer_abfd90"
+}

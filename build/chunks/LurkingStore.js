@@ -106,7 +106,7 @@ function I(e) {
   return n && (p = null), n
 }
 
-function S(e) {
+function T(e) {
   let {
     lurkingGuildId: t,
     lurkingSource: n
@@ -114,7 +114,7 @@ function S(e) {
   return g(t), p = n, true
 }
 
-function T() {
+function S() {
   f = Chunk430824.Z.getGuildsArray().filter(e => (0, o.zN)(e)).map(e => e.id)
 }
 class A extends(r = Chunk442837.ZP.Store) {
@@ -143,10 +143,10 @@ class A extends(r = Chunk442837.ZP.Store) {
 }
 d(A, "displayName", "LurkingStore");
 let C = new A(Chunk570140.Z, {
-  CONNECTION_OPEN: T,
+  CONNECTION_OPEN: S,
   GUILD_JOIN: b,
   GUILD_STOP_LURKING: I,
-  GUILD_STOP_LURKING_FAILURE: S,
+  GUILD_STOP_LURKING_FAILURE: T,
   GUILD_CREATE: y,
   GUILD_DELETE: v,
   GUILD_MEMBER_ADD: O

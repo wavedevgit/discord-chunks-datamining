@@ -20,8 +20,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk572995 = require("./572995.js"),
   Chunk981631 = require("./981631.js"),
   Chunk869783 = require("./869783.js"),
-  Chunk642650 = require("./642650.js"),
-  Chunk595475 = require("./595475.js");
+  Chunk885257 = require("./885257.js"),
+  Chunk411200 = require("./411200.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,13 +56,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e) {
+function S(e) {
   let t;
   switch (e) {
     case m.NA.EMOJIS:
@@ -136,20 +136,20 @@ let A = e => {
         size: w,
         enablePremiumBrandRefreshDesign: D
       } = e,
-      L = (0, h.rO)(),
-      x = i.useRef(null),
+      x = (0, h.rO)(),
+      L = i.useRef(null),
       M = i.useRef(0),
-      k = T(n),
+      k = S(n),
       j = (0, s.debounce)(() => {
         p.default.track(g.rMx.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
           box_type: (0, s.snakeCase)(n)
         })
       }, 800),
       U = () => {
-        null == x.current || N || (x.current.currentTime = M.current, x.current.play())
+        null == L.current || N || (L.current.currentTime = M.current, L.current.play())
       },
       G = () => {
-        null == x.current || N || (M.current = x.current.currentTime, x.current.pause())
+        null == L.current || N || (M.current = L.current.currentTime, L.current.pause())
       },
       B = D ? y : b;
     t = D ? w === m.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold" : w === m.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold";
@@ -192,10 +192,10 @@ let A = e => {
           className: o()(B.boxVideo, {
             [C]: null != C
           }),
-          ref: x,
+          ref: L,
           children: (0, r.jsx)("source", {
             src: f,
-            type: L ? E.m.MP4 : E.m.WEBM
+            type: x ? E.m.MP4 : E.m.WEBM
           })
         }, f)
       }),
@@ -212,10 +212,10 @@ let A = e => {
         onBlur: G,
         onMouseLeave: G
       };
-    return D ? (0, r.jsx)(d.$1m, S(v({}, Y), {
+    return D ? (0, r.jsx)(d.$1m, T(v({}, Y), {
       color: "purple",
       children: (0, r.jsx)(H, {})
-    })) : (0, r.jsx)("div", S(v({}, Y), {
+    })) : (0, r.jsx)("div", T(v({}, Y), {
       children: (0, r.jsx)(H, {})
     }))
   }

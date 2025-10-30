@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk998502 = require("./998502.js"),
   Chunk264783 = require("./264783.js"),
   Chunk892071 = require("./892071.jsx"),
-  Chunk982519 = require("./982519.js"),
+  Chunk893026 = require("./893026.js"),
   Chunk388032 = require("./388032.jsx");
 
 function w(e, t, n, r, o) {
@@ -107,8 +107,8 @@ function D(e) {
     focused: R,
     currentWindow: P,
     fontScale: D,
-    fontScaleClass: L,
-    keyboardModeEnabled: x,
+    fontScaleClass: x,
+    keyboardModeEnabled: L,
     saturation: M,
     desaturateUserColors: k,
     useForcedColors: j,
@@ -117,12 +117,12 @@ function D(e) {
     alwaysShowLinkDecorations: B,
     confettiMode: Z,
     highContrastMode: F
-  } = (0, l.cj)([I.default, d.Z, S.Z, T.Z, O.Z, v.Z], () => {
+  } = (0, l.cj)([I.default, d.Z, T.Z, S.Z, O.Z, v.Z], () => {
     var e;
     return {
       locale: I.default.locale,
-      theme: null != n ? n : S.Z.theme,
-      focused: o ? O.Z.getWindowFocused(t) : T.Z.isFocused(),
+      theme: null != n ? n : T.Z.theme,
+      focused: o ? O.Z.getWindowFocused(t) : S.Z.isFocused(),
       currentWindow: o && null != (e = O.Z.getWindow(t)) ? e : window,
       fontScale: d.Z.fontScale,
       fontScaleClass: d.Z.fontScaleClass,
@@ -171,8 +171,8 @@ function D(e) {
         density: W,
         focused: R,
         fontScale: D,
-        fontScaleClass: L,
-        keyboardModeEnabled: x,
+        fontScaleClass: x,
+        keyboardModeEnabled: L,
         mouseMode: H,
         saturation: M,
         desaturateUserColors: k,

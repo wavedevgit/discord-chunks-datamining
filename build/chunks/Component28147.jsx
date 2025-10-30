@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk314734 = require("./314734.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk399235 = require("./399235.js");
+  Chunk712658 = require("./712658.js");
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -306,12 +306,12 @@ function B() {
     children: [(0, Chunk951288.jsx)(Chunk41558.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["0hKkS+"])
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk399235.sectionContentContainer,
+      className: Chunk712658.sectionContentContainer,
       children: L.map(e => (0, i.jsx)(A.Z, {}, e))
     }), (0, Chunk951288.jsx)(Chunk41558.Z, {
       title: Chunk388032.intl.string(Chunk388032.t.PHjkRE)
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk399235.sectionContentContainer,
+      className: Chunk712658.sectionContentContainer,
       children: R.map(e => (0, i.jsx)(A.Z, {}, e))
     })]
   })

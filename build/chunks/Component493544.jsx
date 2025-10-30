@@ -4,7 +4,7 @@
 require.d(exports, {
   ID: () => I,
   NM: () => A,
-  Xi: () => T,
+  Xi: () => S,
   ZP: () => P,
   bT: () => C
 });
@@ -20,7 +20,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk110924 = require("./110924.js"),
   Chunk358085 = require("./358085.js"),
   Chunk425493 = require("./425493.jsx"),
-  Chunk630016 = require("./630016.js");
+  Chunk551955 = require("./551955.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,8 +83,8 @@ let I = {
     DIVIDER: "DIVIDER",
     CUSTOM: "CUSTOM"
   },
-  S = Chunk647438.createContext(null);
-class T extends(r = Chunk647438.PureComponent) {
+  T = Chunk647438.createContext(null);
+class S extends(r = Chunk647438.PureComponent) {
   renderContent() {
     let e = this.props,
       {
@@ -92,16 +92,16 @@ class T extends(r = Chunk647438.PureComponent) {
       } = module,
       n = O(module, ["scrollerRef"]);
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk630016.customContainer,
+      className: Chunk551955.customContainer,
       children: (0, Chunk951288.jsx)(Chunk481060._2F, y(E({}, require), {
-        className: s()(Chunk630016.customScroller, Chunk630016.contentRegionScroller),
+        className: s()(Chunk551955.customScroller, Chunk551955.contentRegionScroller),
         ref: exports
       }))
     })
   }
   render() {
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk630016.customColumn,
+      className: Chunk551955.customColumn,
       children: this.renderContent()
     })
   }
@@ -122,7 +122,7 @@ function A(e) {
     })
   })
 }
-g(T, "defaultProps", {
+g(S, "defaultProps", {
   paddingTop: 60,
   paddingBottom: 60
 });
@@ -179,7 +179,7 @@ let P = function(e) {
     mobileSidebarOpen: b,
     toggleSidebar: y,
     hideSidebar: O = false
-  } = e, v = a.useRef(null), I = a.useRef(null), T = (0, _.Z)(o), A = (0, f.Yzy)(O, {
+  } = e, v = a.useRef(null), I = a.useRef(null), S = (0, _.Z)(o), A = (0, f.Yzy)(O, {
     from: {
       position: "absolute",
       opacity: 0
@@ -193,10 +193,10 @@ let P = function(e) {
     v.current = e, null != E && (E.current = e)
   }, [E]);
   a.useLayoutEffect(() => {
-    null != v.current && T !== o && v.current.scrollTo({
+    null != v.current && S !== o && v.current.scrollTo({
       to: 0
     })
-  }, [o, T, v]);
+  }, [o, S, v]);
   let P = (0, i.jsx)(R, {
     isMobile: u.tq,
     mobileSidebarOpen: b,
@@ -233,7 +233,7 @@ let P = function(e) {
       children: [t, (0, i.jsxs)(f.yWw, {
         className: s()(m.contentRegionScroller, O ? m.contentRegionHiddenSidebar : m.contentRegionShownSidebar),
         ref: C,
-        children: [(0, i.jsx)(S.Provider, {
+        children: [(0, i.jsx)(T.Provider, {
           value: v.current,
           children: (0, i.jsx)("div", {
             ref: I,
@@ -257,7 +257,7 @@ let P = function(e) {
         children: [t, (0, i.jsxs)(f.yWw, {
           className: s()(m.contentRegionScroller, O ? m.contentRegionHiddenSidebar : m.contentRegionShownSidebar),
           ref: C,
-          children: [(0, i.jsx)(S.Provider, {
+          children: [(0, i.jsx)(T.Provider, {
             value: v.current,
             children: (0, i.jsx)(f.njP.Panel, {
               id: o,
@@ -279,7 +279,7 @@ let P = function(e) {
     })
   }
 
-  function L() {
+  function x() {
     return null == t ? null : (0, i.jsx)(f.f6W, {
       theme: h,
       children: e => (0, i.jsx)("div", {
@@ -307,7 +307,7 @@ let P = function(e) {
     children: A((e, t) => (0, i.jsxs)(l.animated.div, {
       style: e,
       className: m.standardSidebarView,
-      children: [!t && L(), D()]
+      children: [!t && x(), D()]
     }))
   })
 }

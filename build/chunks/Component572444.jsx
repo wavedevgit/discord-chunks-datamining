@@ -1,4 +1,4 @@
-/** Chunk was on 39297 **/
+/** Chunk was on 87665 **/
 /** chunk id: 572444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -18,8 +18,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk131951 = require("./131951.js"),
   Chunk246992 = require("./246992.js"),
   Chunk65154 = require("./65154.js"),
-  Chunk653301 = require("./653301.js"),
-  Chunk451429 = require("./451429.js");
+  Chunk25016 = require("./25016.js"),
+  Chunk866403 = require("./866403.js");
 
 function j(e) {
   let {
@@ -163,9 +163,9 @@ function y() {
     label: "Disabled",
     value: "NONE"
   }), (0, Chunk951288.jsx)(Chunk481060.zJl, {
-    className: Chunk451429.panel,
+    className: Chunk866403.panel,
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk653301.innerPanel,
+      className: Chunk25016.innerPanel,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-lg/bold",
         children: "Krisp Tester"

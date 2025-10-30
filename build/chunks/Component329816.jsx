@@ -49,7 +49,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk950796 = require("./950796.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk302821 = require("./302821.js");
+  Chunk654924 = require("./654924.js");
 require("./29973.jsx"), Promise.resolve().then(require.bind(require, 62883)).then(e => {
   B.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, false) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, false)
 }), (0, Chunk335854.E)({
@@ -93,16 +93,16 @@ let q = (0, Chunk663993.Un)({
           children: (0, r.jsx)(N.Z, {
             children: (0, r.jsxs)(d.JcV, {
               containerRef: k,
-              children: [(0, r.jsx)(Y.Co, {}), (0, r.jsx)(H.ZP, {}), (0, r.jsx)(l.OUJ, {}), (0, r.jsx)(L.Wu, {
+              children: [(0, r.jsx)(Y.Co, {}), (0, r.jsx)(H.ZP, {}), (0, r.jsx)(l.OUJ, {}), (0, r.jsx)(x.Wu, {
                 appContext: K.IlC.APP,
                 renderWindow: window,
                 children: (0, r.jsxs)(P.yP, {
                   children: [null != a ? (0, r.jsx)(Q, {}) : null, (0, r.jsxs)("div", {
                     className: o()(z.appAsidePanelWrapper, u && z.mobileAppAsidePanelWrapper),
-                    children: [(0, r.jsx)(T.K, {}), (0, r.jsx)("div", {
+                    children: [(0, r.jsx)(S.K, {}), (0, r.jsx)("div", {
                       className: z.notAppAsidePanel,
                       "data-app-not-dev-tools": true,
-                      children: (0, r.jsx)(S.m, {
+                      children: (0, r.jsx)(T.m, {
                         children: (0, r.jsx)(D.OR, {
                           children: (0, r.jsx)(E.Z.Provider, {
                             value: b.Z,
@@ -112,7 +112,7 @@ let q = (0, Chunk663993.Un)({
                                 children: t
                               }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(O.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(j.Z, {}), (0, r.jsx)(w.Ox, {}), (0, r.jsx)(P.Un, {}), (0, r.jsx)(D.ot, {}), (0, r.jsx)(d.Ixi, {
                                 appContext: K.IlC.APP
-                              }), (0, r.jsx)(y.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(q, {}), (0, r.jsx)(X, {})]
+                              }), (0, r.jsx)(y.Z, {}), (0, r.jsx)(L.Z, {}), (0, r.jsx)(q, {}), (0, r.jsx)(X, {})]
                             })
                           })
                         })

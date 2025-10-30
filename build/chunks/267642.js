@@ -2,11 +2,11 @@
 /** chunk id: 267642, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A3: () => T,
-  FZ: () => S,
+  A3: () => S,
+  FZ: () => T,
   Hl: () => Q,
   Je: () => N,
-  Jh: () => x,
+  Jh: () => L,
   KK: () => W,
   Oe: () => I,
   Qi: () => F,
@@ -18,7 +18,7 @@ require.d(exports, {
   e9: () => w,
   ee: () => z,
   gZ: () => Z,
-  ge: () => L,
+  ge: () => x,
   ig: () => A,
   nL: () => H,
   nW: () => P,
@@ -63,11 +63,11 @@ var O = function(e) {
 }({});
 let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, Chunk981631.Eu4.TIER_3],
   I = v.slice().reverse(),
-  S = e => {
+  T = e => {
     var t;
     return e === g.Eu4.NONE ? g.Eu4.TIER_1 : null == (t = B.find(t => t.tier === e)) ? true : t.nextTier
   },
-  T = (e, t) => null != t && t.features.has(g.GuildFeatures.MORE_STICKERS) && e === g.Eu4.TIER_3 ? a.D.MAX_STICKER_SLOTS : b.$8[e],
+  S = (e, t) => null != t && t.features.has(g.GuildFeatures.MORE_STICKERS) && e === g.Eu4.TIER_3 ? a.D.MAX_STICKER_SLOTS : b.$8[e],
   A = e => b.pH[e],
   C = (e, t) => null != t && t.features.has(g.GuildFeatures.MORE_SOUNDBOARD) ? b.w1 : b._k[e],
   N = e => {
@@ -88,7 +88,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     }, {
       title: y.intl.formatToPlainString(y.t["/9p2/g"], {
         adding: A(g.Eu4.TIER_1),
-        total: T(g.Eu4.TIER_1)
+        total: S(g.Eu4.TIER_1)
       }),
       description: y.intl.string(y.t.JfsnDQ),
       icon: 8
@@ -131,7 +131,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     }, {
       title: y.intl.formatToPlainString(y.t["/9p2/g"], {
         adding: A(g.Eu4.TIER_2),
-        total: T(g.Eu4.TIER_2)
+        total: S(g.Eu4.TIER_2)
       }),
       description: y.intl.string(y.t.t4TM28),
       icon: 8
@@ -190,7 +190,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     }, {
       title: y.intl.formatToPlainString(y.t["/9p2/g"], {
         adding: A(g.Eu4.TIER_3),
-        total: T(g.Eu4.TIER_3)
+        total: S(g.Eu4.TIER_3)
       }),
       description: y.intl.string(y.t["+ZI4QZ"]),
       icon: 8
@@ -270,9 +270,9 @@ function w(e) {
   }
 }
 let D = i().memoize(e => b.HO[g.Eu4.TIER_1].features.includes(e) ? g.Eu4.TIER_1 : b.HO[g.Eu4.TIER_2].features.includes(e) ? g.Eu4.TIER_2 : b.HO[g.Eu4.TIER_3].features.includes(e) ? g.Eu4.TIER_3 : null),
-  L = e => e === g.Eu4.NONE ? g.AnalyticsObjectTypes.NONE : e === g.Eu4.TIER_1 ? g.AnalyticsObjectTypes.TIER_1 : e === g.Eu4.TIER_2 ? g.AnalyticsObjectTypes.TIER_2 : e === g.Eu4.TIER_3 ? g.AnalyticsObjectTypes.TIER_3 : null;
+  x = e => e === g.Eu4.NONE ? g.AnalyticsObjectTypes.NONE : e === g.Eu4.TIER_1 ? g.AnalyticsObjectTypes.TIER_1 : e === g.Eu4.TIER_2 ? g.AnalyticsObjectTypes.TIER_2 : e === g.Eu4.TIER_3 ? g.AnalyticsObjectTypes.TIER_3 : null;
 
-function x(e) {
+function L(e) {
   var t;
   let n = null == (t = c.Z.getGuild(e)) ? true : t.premiumTier;
   return null != n ? n : g.Eu4.NONE
@@ -318,7 +318,7 @@ function U(e) {
 function G(e, t) {
   var n;
   if ((null == (n = c.Z.getGuild(t)) ? true : n.features.has(g.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true) return 0;
-  let r = x(t),
+  let r = L(t),
     i = g.oCV[r],
     a = e.filter(e => null != e.endsAt);
   return i - (e.length - a.length)
@@ -347,7 +347,7 @@ function Z(e, t) {
       message: "Negative index while checking grace period ending date.",
       data: {
         subscriptionLength: e.length,
-        subscriptionsNeededForPremiumTier: g.oCV[x(t)],
+        subscriptionsNeededForPremiumTier: g.oCV[L(t)],
         endingSubscriptionLength: r.length
       }
     });
@@ -362,8 +362,8 @@ function F(e, t) {
     r = v.indexOf(t);
   if (false === r) return 0;
   let i = v[r - 1],
-    a = null != i ? T(i) : 0,
-    o = T(t);
+    a = null != i ? S(i) : 0,
+    o = S(t);
   return Math.max(0, n - e.slice(a, o).length)
 }
 

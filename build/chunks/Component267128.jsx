@@ -32,8 +32,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk217702 = require("./217702.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk724913 = require("./724913.js"),
-  Chunk430864 = require("./430864.js");
+  Chunk136907 = require("./136907.js"),
+  Chunk602009 = require("./602009.js");
 
 function D(e) {
   let {
@@ -56,7 +56,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     width: t = 18,
     height: n = 18,
@@ -76,7 +76,7 @@ function L(e) {
   })
 }
 
-function x(e, t, n, i, a, s) {
+function L(e, t, n, i, a, s) {
   return (0, r.jsx)("img", {
     alt: "",
     src: (null == t ? true : t.guildMemberAvatar) != null && null != n ? (0, y.JM)({
@@ -119,7 +119,7 @@ function M(e, t, n) {
       className: P.replyIcon
     })
   });
-  if (a.message.type === N.uaV.USER_JOIN || a.message.type === N.uaV.ROLE_SUBSCRIPTION_PURCHASE || a.message.type === N.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || a.message.type === N.uaV.GUILD_GAMING_STATS_PROMPT) return (0, r.jsx)(L, {
+  if (a.message.type === N.uaV.USER_JOIN || a.message.type === N.uaV.ROLE_SUBSCRIPTION_PURCHASE || a.message.type === N.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || a.message.type === N.uaV.GUILD_GAMING_STATS_PROMPT) return (0, r.jsx)(x, {
     className: P.userJoinSystemMessageIcon
   });
   if (a.message.type === N.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, r.jsx)(c.Prq, {
@@ -133,7 +133,7 @@ function M(e, t, n) {
     height: C.WW,
     size: "custom"
   });
-  let y = () => x(a.message.author, f, o.guild_id, p, h, b);
+  let y = () => L(a.message.author, f, o.guild_id, p, h, b);
   return null != t && null != _ ? (0, r.jsx)(d.Gt, {
     value: E,
     children: (0, r.jsx)(c.yRy, {
@@ -160,7 +160,7 @@ function k(e, t) {
     onContextMenu: l,
     onPopoutRequestClose: c
   } = e, u = (null == a ? true : a.state) === g.Y.LOADED ? a.message : true;
-  return null == u || u.type === N.uaV.USER_JOIN || u.type === N.uaV.ROLE_SUBSCRIPTION_PURCHASE || u.type === N.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || u.type === N.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || u.type === N.uaV.GUILD_GAMING_STATS_PROMPT || u.type === N.uaV.POLL_RESULT ? null : (0, r.jsx)(T.Z, {
+  return null == u || u.type === N.uaV.USER_JOIN || u.type === N.uaV.ROLE_SUBSCRIPTION_PURCHASE || u.type === N.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || u.type === N.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || u.type === N.uaV.GUILD_GAMING_STATS_PROMPT || u.type === N.uaV.POLL_RESULT ? null : (0, r.jsx)(S.Z, {
     message: u,
     channel: i,
     compact: true,
@@ -241,11 +241,11 @@ function U(e, t, n, i, a, s) {
       iconSize: v
     } = s,
     I = null == t || "" === t || Array.isArray(t) && 0 === t.length,
-    T = (0, b.cv)(E).length > 0,
+    S = (0, b.cv)(E).length > 0,
     A = null != E.interaction,
     C = E.hasFlag(N.iLy.IS_VOICE_MESSAGE),
     D = E.isPoll(),
-    L = E.type === N.uaV.POLL_RESULT;
+    x = E.type === N.uaV.POLL_RESULT;
   if ((0, _.Z)(e) && (g = (0, r.jsx)(h.Z, {
       size: "custom",
       className: O,
@@ -260,25 +260,25 @@ function U(e, t, n, i, a, s) {
   });
   else if (I)
     if (D) {
-      var x, M;
+      var L, M;
       u = (0, r.jsx)("div", {
         className: o()(P.repliedTextContent, w.markup),
-        children: null == E || null == (M = E.poll) || null == (x = M.question) ? true : x.text
+        children: null == E || null == (M = E.poll) || null == (L = M.question) ? true : L.text
       })
-    } else L ? l = (0, m.N4)(E) : T ? l = R.intl.string(R.t.kHdYCW) : A ? l = R.intl.string(R.t["E+6SSY"]) : C ? l = R.intl.string(R.t.XC3A52) : E.hasFlag(N.iLy.IS_COMPONENTS_V2) ? l = R.intl.string(R.t.Xxat6S) : (l = R.intl.string(R.t["6hGo0c"]), d = (0, r.jsx)(c.XBm, {
+    } else x ? l = (0, m.N4)(E) : S ? l = R.intl.string(R.t.kHdYCW) : A ? l = R.intl.string(R.t["E+6SSY"]) : C ? l = R.intl.string(R.t.XC3A52) : E.hasFlag(N.iLy.IS_COMPONENTS_V2) ? l = R.intl.string(R.t.Xxat6S) : (l = R.intl.string(R.t["6hGo0c"]), d = (0, r.jsx)(c.XBm, {
       size: "custom",
       color: "currentColor",
       className: y,
       width: v,
       height: v
     }));
-  else u = (0, r.jsx)(S.ZP, {
+  else u = (0, r.jsx)(T.ZP, {
     message: E,
     content: t,
     className: a,
     compact: true
   });
-  return T ? d = (0, r.jsx)(c.B7q, {
+  return S ? d = (0, r.jsx)(c.B7q, {
     size: "custom",
     color: "currentColor",
     className: y,
@@ -296,7 +296,7 @@ function U(e, t, n, i, a, s) {
     className: y,
     width: 19 / 24 * v,
     height: v
-  }) : (E.attachments.length > 0 || E.embeds.length > 0) && !L && (d = (0, r.jsx)(c.XBm, {
+  }) : (E.attachments.length > 0 || E.embeds.length > 0) && !x && (d = (0, r.jsx)(c.XBm, {
     size: "custom",
     color: "currentColor",
     className: y,
@@ -326,15 +326,15 @@ function G(e) {
     b = M(e, m, s.type),
     y = k(e, m),
     v = j(e, p, E),
-    S = i.useMemo(() => e.compact ? (0, A.Z)((0, O.vc)(l()(), "LT")) : null, [e.compact]);
+    T = i.useMemo(() => e.compact ? (0, A.Z)((0, O.vc)(l()(), "LT")) : null, [e.compact]);
   null != n && null != a && (t = R.intl.formatToPlainString(R.t.RhbQ2K, {
     author: null == a ? true : a.nick,
     repliedAuthor: null == n ? true : n.nick
   }));
-  let T = s.type === N.uaV.CONTEXT_MENU_COMMAND;
+  let S = s.type === N.uaV.CONTEXT_MENU_COMMAND;
   return (0, r.jsxs)("div", {
     id: (0, I.Gq)(s),
-    className: o()(P.repliedMessage, S, T ? P.contextCommandMessage : {
+    className: o()(P.repliedMessage, T, S ? P.contextCommandMessage : {
       [P.messageSpine]: !f && _
     }),
     "aria-label": t,

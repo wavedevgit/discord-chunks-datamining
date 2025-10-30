@@ -23,7 +23,7 @@ var Chunk952265 = require("./952265.js"),
   Chunk761652 = require("./761652.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk913235 = require("./913235.js");
+  Chunk526003 = require("./526003.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,8 +46,8 @@ function I(e) {
   }
   return e
 }
-let S = 8,
-  T = 4,
+let T = 8,
+  S = 4,
   A = 4,
   C = 40,
   N = 6;
@@ -100,7 +100,7 @@ let D = {
     if (r.allowStickers) {
       (0, c.$p)();
       let t = h.ZP.queryStickers([n], true, [e, (e, t) => t === l.eb.SENDABLE]),
-        r = Math.max(T, S - d.length);
+        r = Math.max(S, T - d.length);
       f = t.slice(0, r), "-" === n[0] && (f = t.filter(e => e.sticker.name === n))
     }
     let _ = [];

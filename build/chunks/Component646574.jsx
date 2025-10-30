@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk74538 = require("./74538.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk975377 = require("./975377.js");
+  Chunk623337 = require("./623337.js");
 let E = {
     tension: 750,
     mass: 2.5,
@@ -62,7 +62,7 @@ function v(e) {
     checked: t,
     onClick: n,
     id: a = "burst-reaction-toggle-button"
-  } = e, v = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), I = _.default.getCurrentUser(), S = null == I || (0, p.I5)(I) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [T, A] = (0, f.US)(S), [C, N] = i.useState(false), [R, P] = (0, u.q_F)(() => ({})), w = (0, s.animated)(u.Pt5);
+  } = e, v = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), I = _.default.getCurrentUser(), T = null == I || (0, p.I5)(I) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [S, A] = (0, f.US)(T), [C, N] = i.useState(false), [R, P] = (0, u.q_F)(() => ({})), w = (0, s.animated)(u.Pt5);
 
   function D() {
     P({
@@ -76,21 +76,21 @@ function v(e) {
     }), null == n || n(), N(false)
   }
   i.useEffect(() => {
-    let e = T === c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP;
+    let e = S === c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP;
     e && (A(h.L.DISMISS), setTimeout(() => N(e), 200))
-  }, [T, A]);
-  let L = C ? m.intl.string(m.t["Osi/uy"]) : O(t),
-    x = C ? m.intl.string(m.t.ORK94p) : true;
+  }, [S, A]);
+  let x = C ? m.intl.string(m.t["Osi/uy"]) : O(t),
+    L = C ? m.intl.string(m.t.ORK94p) : true;
   return (0, r.jsxs)(u.jSM, {
     position: "top",
     text: (0, r.jsx)(y, {
       textColor: "always-white",
-      tooltipText: L,
-      headingText: x
+      tooltipText: x,
+      headingText: L
     }),
     color: u.aML.Colors.BRAND,
     forceOpen: C,
-    "aria-label": L,
+    "aria-label": x,
     tooltipClassName: g.tooltip,
     children: [(0, r.jsx)("input", {
       className: g.visuallyHidden,

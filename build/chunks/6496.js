@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   RR: () => A,
-  WW: () => S,
+  WW: () => T,
   bE: () => N,
   n4: () => M,
   q8: () => C,
-  t$: () => T,
-  xl: () => x
+  t$: () => S,
+  xl: () => L
 }), require("./415506.js"), require("./388685.js"), require("./781311.js");
 var Chunk683860 = require("./683860.js"),
   Chunk344185 = require("./344185.js"),
@@ -67,11 +67,11 @@ function I(e, t) {
   }), e
 }
 
-function S(e) {
+function T(e) {
   return m.Z.getForumChannelSessionId(e)
 }
 
-function T(e) {
+function S(e) {
   switch (e) {
     case r.z.CREATION_DATE:
       return b.SX.CREATION_DATE;
@@ -131,7 +131,7 @@ function D(e) {
   return null != (n = null == (t = r.appliedTags) ? true : t.filter(e => o.has(e))) ? n : []
 }
 
-function L(e) {
+function x(e) {
   let t = R(e);
   return null == t ? [] : t.attachments.map(e => {
     var t;
@@ -139,7 +139,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   var t, n, r, i;
   let {
     channelId: a,
@@ -154,7 +154,7 @@ function x(e) {
     forum_channel_can_create_post: u.Z.can(g.Plq.SEND_MESSAGES, s),
     forum_channel_filter_tag_ids: p.Z.getFilterTagIdsAnalytics(),
     forum_channel_sort_order: p.Z.getSortOrderAnalytics(s.id),
-    forum_channel_session_id: null != o ? o : S(s.id),
+    forum_channel_session_id: null != o ? o : T(s.id),
     forum_channel_layout: p.Z.getLayoutAnalytics(s.id),
     forum_channel_default_sort_order: s.defaultSortOrder,
     forum_channel_tag_setting: p.Z.getTagSettingAnalytics(s.id),
@@ -171,7 +171,7 @@ function M(e) {
   } = e, m = l.Z.getChannel(_);
   if (null == m || !m.isForumPost()) return null;
   let g = l.Z.getChannel(m.parent_id);
-  return null != g && g.isForumLikeChannel() ? I(O({}, x({
+  return null != g && g.isForumLikeChannel() ? I(O({}, L({
     channelId: g.id,
     sessionId: p
   })), {
@@ -190,6 +190,6 @@ function M(e) {
     forum_post_is_new: null == (i = h.Z.getReadStateSnapshotAnalytics(m.id)) ? true : i.isNew,
     forum_post_is_unread: null == (c = h.Z.getReadStateSnapshotAnalytics(m.id)) ? true : c.hasUnreads,
     forum_post_is_following: a.Z.hasJoined(m.id),
-    forum_post_attachment_mimetypes: L(m.id)
+    forum_post_attachment_mimetypes: x(m.id)
   }) : null
 }

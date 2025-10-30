@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk573567 = require("./573567.js");
+  Chunk687605 = require("./687605.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -122,7 +122,7 @@ function g(e) {
     case c.O0b.PAUSED:
       b === u.a$.NONE && (I.transfer.disabled = true, I.transfer.subtext = d.intl.string(d.t.LiLRRT), I.cancel.subtext = d.intl.string(d.t["1ywaWL"]), I.cancel.disabled = true, I.uncancel.disabled = true)
   }
-  let S = i.useMemo(() => g.isPausedOrPausePending && b === u.a$.NONE ? (0, r.jsx)(a.sNh, {
+  let T = i.useMemo(() => g.isPausedOrPausePending && b === u.a$.NONE ? (0, r.jsx)(a.sNh, {
     id: "manage-subscription",
     label: d.intl.string(d.t.obRG6Y),
     action: () => (0, s.openUserSettings)(o.n.SUBSCRIPTIONS_PANEL, {
@@ -156,6 +156,6 @@ function g(e) {
       action: O,
       disabled: I.cancel.disabled,
       color: "danger"
-    }), S]
+    }), T]
   })
 }

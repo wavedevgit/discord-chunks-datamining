@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk781990 = require("./781990.js");
+  Chunk170568 = require("./170568.js");
 
 function y(e) {
   var t, n, i, y;
@@ -29,19 +29,19 @@ function y(e) {
     type: O,
     textValue: v,
     maxCharacterCount: I,
-    showRemainingCharsAfterCount: S,
-    className: T
-  } = e, A = (0, o.e7)([_.default], () => p.ZP.canUseIncreasedMessageLength(_.default.getCurrentUser())), C = (0, d.Z)(), N = null != I ? I : C, R = null != (y = null != S ? S : I) ? y : C / 10, P = v.length, w = null != O.upsellLongMessages && (null != P ? P : 0) > m.J6R && A, D = null != O.upsellLongMessages && !A, L = (null == (n = (0, f.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2, x = N - P, M = x > R, k = x < 0 && L, j = 0 === x ? E.intl.string(E.t.tU6YQ7) : x > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
-    count: x
+    showRemainingCharsAfterCount: T,
+    className: S
+  } = e, A = (0, o.e7)([_.default], () => p.ZP.canUseIncreasedMessageLength(_.default.getCurrentUser())), C = (0, d.Z)(), N = null != I ? I : C, R = null != (y = null != T ? T : I) ? y : C / 10, P = v.length, w = null != O.upsellLongMessages && (null != P ? P : 0) > m.J6R && A, D = null != O.upsellLongMessages && !A, x = (null == (n = (0, f.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2, L = N - P, M = L > R, k = L < 0 && x, j = 0 === L ? E.intl.string(E.t.tU6YQ7) : L > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
+    count: L
   }) : E.intl.string(E.t.YSRIqa), {
     analyticsLocations: U
   } = (0, u.ZP)(c.Z.CHARACTER_COUNT);
-  if (!(w && x >= 0 || !M || D && !M)) return null;
-  let G = x >= 0;
+  if (!(w && L >= 0 || !M || D && !M)) return null;
+  let G = L >= 0;
   return (0, r.jsx)(u.Gt, {
     value: U,
     children: (0, r.jsxs)("div", {
-      className: a()(T, b.characterCount),
+      className: a()(S, b.characterCount),
       children: [(0, r.jsxs)("div", {
         className: b.flairContainer,
         children: [w && G ? (0, r.jsx)(s.u, {
@@ -62,17 +62,17 @@ function y(e) {
             tabularNumbers: true,
             "aria-hidden": true,
             color: G ? "text-default" : "text-danger",
-            children: x
+            children: L
           })
         })]
       }), (0, r.jsx)(l.nn4, {
         children: E.intl.format(E.t.qH8uFW, {
-          count: x
+          count: L
         })
       }), D && !M ? (0, r.jsx)(h.Z, {
         className: b.upsell,
         iconOnly: (null == (i = O.upsellLongMessages) ? true : i.iconOnly) || false,
-        remaining: x
+        remaining: L
       }) : null]
     })
   })

@@ -8,7 +8,7 @@ require.d(exports, {
   Fv: () => c,
   G$: () => d,
   Hp: () => g,
-  JO: () => S,
+  JO: () => T,
   Kw: () => A,
   MG: () => b,
   OT: () => a,
@@ -29,8 +29,8 @@ require.d(exports, {
   qb: () => w,
   rI: () => m,
   wD: () => I,
-  yl: () => T,
-  zh: () => L
+  yl: () => S,
+  zh: () => x
 });
 var Chunk710845 = require("./710845.js"),
   Chunk70956 = require("./70956.js"),
@@ -61,8 +61,8 @@ let c = "alt+c",
   O = "clips-gallery",
   v = 640,
   I = 360,
-  S = 100,
-  T = e => "Clip - ".concat(new Date(e).toLocaleString()),
+  T = 100,
+  S = e => "Clip - ".concat(new Date(e).toLocaleString()),
   A = 15,
   C = 3e4,
   N = 30,
@@ -71,6 +71,6 @@ Chunk70956.Z.Millis.DAY;
 let P = 20,
   w = 1,
   D = 50;
-var L = function(e) {
+var x = function(e) {
   return e.ALL = ":all", e.APPLICATION = ":application", e.VOICE = ":voice", e.SOUNDBOARD = ":soundboard", e
 }({})

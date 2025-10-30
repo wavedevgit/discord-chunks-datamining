@@ -8,9 +8,9 @@ require.d(exports, {
   _3: () => k,
   _F: () => U,
   _b: () => R,
-  dA: () => x,
+  dA: () => L,
   jZ: () => M,
-  mH: () => L,
+  mH: () => x,
   uk: () => P
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
@@ -43,7 +43,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,7 +68,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -96,7 +96,7 @@ function D(e, t, n) {
   var r, i;
   let a = y.r.build(e.config),
     s = (0, o.Gy)(n).uuid;
-  return S({
+  return T({
     quest_id: e.id,
     quest_type: a.questType,
     game_id: a.application.id,
@@ -107,7 +107,7 @@ function D(e, t, n) {
   }, (0, h.qe)(e.id, t))
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   return {
     content_id: e,
     content_name: R(e),
@@ -116,7 +116,7 @@ function L(e, t, n) {
   }
 }
 
-function x(e) {
+function L(e) {
   let {
     questId: t,
     event: n,
@@ -128,7 +128,7 @@ function x(e) {
   if (null == s || (0, b.X)({
       location: O.dr.QUEST_PREVIEW_TOOL
     }) && d.Z.getLayers().includes(v.S9g.USER_SETTINGS)) return;
-  let c = S({}, D(s, o, a), r);
+  let c = T({}, D(s, o, a), r);
   if (u.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, c), s.preview) return;
   let _ = N.has(n);
   if (i) return l.ZP.trackWithMetadata(n, c, _);
@@ -150,10 +150,10 @@ async function k(e) {
     trackGuildAndChannelMetadata: u = false,
     sourceQuestContent: d
   } = e, f = m.Z.getQuest(t), p = await (0, a.S)(R(n)), g = (0, h.jY)(n);
-  x({
+  L({
     questId: t,
     event: v.rMx.QUEST_CONTENT_CLICKED,
-    properties: A(S({}, L(n, o, s), (0, c.Z)()), {
+    properties: A(T({}, x(n, o, s), (0, c.Z)()), {
       cta_name: r,
       quest_status: null != f ? P(f) : null,
       impression_id: l,
@@ -175,8 +175,8 @@ function j(e) {
     questId: r,
     mode: i,
     prevMode: a
-  } = e, o = L(t);
-  x({
+  } = e, o = x(t);
+  L({
     questId: r,
     event: v.rMx.QUEST_BAR_MODE_CHANGED,
     properties: {
@@ -192,8 +192,8 @@ function j(e) {
 function U() {
   let e = (0, Chunk915750.WD)();
   return Chunk647438.useCallback(t => {
-    x(A(S({}, t), {
-      properties: A(S({}, t.properties), {
+    L(A(T({}, t), {
+      properties: A(T({}, t.properties), {
         impression_id: null == e ? true : e.getId()
       })
     }))
@@ -216,7 +216,7 @@ function G() {
       e({
         questId: n,
         event: v.rMx.QUEST_CONTENT_CLICKED,
-        properties: A(S({}, L(r, s, l), (0, c.Z)()), {
+        properties: A(T({}, x(r, s, l), (0, c.Z)()), {
           cta_name: o,
           quest_status: null != f ? P(f) : null,
           click_id: (0, i.Z)(),

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   K: () => v,
-  Z: () => S
+  Z: () => T
 }), require("./997841.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -89,7 +89,7 @@ function I(e, t) {
   }), t())
 }
 
-function S(e) {
+function T(e) {
   var t;
   let {
     legalTermsNodeRef: n,
@@ -100,8 +100,8 @@ function S(e) {
     isSubmitting: m,
     premiumSubscription: E,
     isGift: y,
-    planGroup: S,
-    isPrepaid: T,
+    planGroup: T,
+    isPrepaid: S,
     isTrial: A,
     makePurchase: C,
     needsPaymentSource: N,
@@ -110,8 +110,8 @@ function S(e) {
     onPaymentSourceAdd: w
   } = e, {
     application: D,
-    selectedPlan: L,
-    hasAcceptedTerms: x,
+    selectedPlan: x,
+    hasAcceptedTerms: L,
     purchaseType: M,
     paymentSourceId: k,
     activeSubscription: j,
@@ -123,11 +123,11 @@ function S(e) {
     location: "SubscriptionReviewButton"
   }), Z = v({
     purchaseType: M,
-    plan: L,
+    plan: x,
     premiumSubscription: E,
     isGift: y,
-    planGroup: S,
-    isPrepaidPaymentSource: T,
+    planGroup: T,
+    isPrepaidPaymentSource: S,
     inReverseTrial: R,
     paymentSourceId: k,
     hasPaymentSources: G
@@ -180,16 +180,16 @@ function S(e) {
   });
   if (A) return (0, r.jsx)(o.Button, {
     variant: "expressive",
-    "data-testid": x ? "purchase" : "submitButton",
+    "data-testid": L ? "purchase" : "submitButton",
     text: Z,
-    onClick: x ? C : () => I(n, f),
+    onClick: L ? C : () => I(n, f),
     loading: m,
     iconPosition: "start",
     icon: () => (0, r.jsx)(o.SrA, {
       color: "currentColor"
     })
   });
-  else if (!x) return (0, r.jsx)(o.aML, {
+  else if (!L) return (0, r.jsx)(o.aML, {
     "data-migration-pending": true,
     text: g.intl.string(g.t.XdvBLS),
     children: e => (0, r.jsx)(o.Button, O(b({

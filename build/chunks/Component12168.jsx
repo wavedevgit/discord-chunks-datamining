@@ -25,9 +25,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk354459 = require("./354459.js"),
   Chunk185923 = require("./185923.js"),
   Chunk295907 = require("./295907.js"),
-  Chunk339051 = require("./339051.js");
+  Chunk378158 = require("./378158.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -148,16 +148,16 @@ function D(e) {
     onExpandedToggle: p,
     emojiSearchProps: m,
     recentlyUsedEmojis: b,
-    analyticsOverride: S,
+    analyticsOverride: T,
     ref: A
-  } = e, D = (0, d.Dt)(), [L, x] = i.useState(false), M = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...M, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
+  } = e, D = (0, d.Dt)(), [x, L] = i.useState(false), M = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...M, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: N
   })).slice(0, y.e5);
   null != b && b.length > 0 && k.splice(k.length - 1, 1, b[0]);
   let j = e => {
-      x(e), null == p || p(e)
+      L(e), null == p || p(e)
     },
     U = e => {
       let {
@@ -168,7 +168,7 @@ function D(e) {
       null != t && u(t), j(!n), n && g.kJ.setSearchPlaceholder(null)
     },
     G = e => {
-      null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? j(true) : j(!L))
+      null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? j(true) : j(!x))
     };
   return (0, r.jsxs)(c.VqE, {
     "aria-labelledby": D,
@@ -184,23 +184,23 @@ function D(e) {
     }), (0, r.jsxs)("div", {
       className: I.container,
       children: [(0, r.jsx)(h.Z, {
-        analyticsOverride: S,
+        analyticsOverride: T,
         channel: t,
         className: o()(I.animatedPicker, {
-          [I.animatedPickerTall]: L
+          [I.animatedPickerTall]: x
         }),
         headerClassName: o()(I.emojiPickerHeader, {
-          [I.emojiPickerHeaderExpanded]: L
+          [I.emojiPickerHeaderExpanded]: x
         }),
         closePopout: a,
-        onSelectEmoji: L ? U : () => {},
-        shouldHidePickerActions: !L,
+        onSelectEmoji: x ? U : () => {},
+        shouldHidePickerActions: !x,
         wrapper: "div",
         pickerIntention: N,
-        searchProps: C(T({}, m), {
+        searchProps: C(S({}, m), {
           accessory: (0, r.jsx)(w, {
             otherAccessories: null == m ? true : m.accessory,
-            isEmojiPickerExpanded: L,
+            isEmojiPickerExpanded: x,
             onSetExpanded: j,
             onFocus: l
           }),

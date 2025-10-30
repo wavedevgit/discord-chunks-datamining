@@ -33,17 +33,17 @@ let h = 750,
   O = null,
   v = new Chunk553245.b(h, g),
   I = new Chunk143806.S(m),
-  S = false;
-class T extends Chunk750041.Z {
+  T = false;
+class S extends Chunk750041.Z {
   initialize() {
     this.waitFor(Chunk592125.Z), this.waitFor(Chunk944486.Z), this.waitFor(Chunk650774.Z), this.syncWith([Chunk368321.Z], () => true), this.syncWith([Chunk944486.Z], A)
   }
   loadCache() {
-    let e = this.readSnapshot(T.LATEST_SNAPSHOT_VERSION);
-    null != module && (S = true, T.mergeSnapshot(module))
+    let e = this.readSnapshot(S.LATEST_SNAPSHOT_VERSION);
+    null != module && (T = true, S.mergeSnapshot(module))
   }
   canEvictOrphans() {
-    return S
+    return T
   }
   saveLimit(e) {
     let t = r.Z.getBasicChannel(e);
@@ -58,7 +58,7 @@ class T extends Chunk750041.Z {
   }
   takeSnapshot() {
     return {
-      version: T.LATEST_SNAPSHOT_VERSION,
+      version: S.LATEST_SNAPSHOT_VERSION,
       data: {
         channels: [...v.allValues()].filter(e => !e.fallback),
         penalized: [...I.keys()],
@@ -95,11 +95,11 @@ class T extends Chunk750041.Z {
   static dropUnreachableChannels() {
     for (let e of v.keys()) {
       let t = Chunk592125.Z.getBasicChannel(module);
-      (0, Chunk989263.v)(exports) || T.deleteChannel(module)
+      (0, Chunk989263.v)(exports) || S.deleteChannel(module)
     }
   }
   static deleteUnreadableGuildChannels(e) {
-    for (let t of v.values()) e !== t.guildId || (0, f.$)(t.channelId) || T.deleteChannel(t.channelId)
+    for (let t of v.values()) e !== t.guildId || (0, f.$)(t.channelId) || S.deleteChannel(t.channelId)
   }
   static replaceLru(e) {
     v = e
@@ -111,8 +111,8 @@ class T extends Chunk750041.Z {
       CHANNEL_DELETE: P,
       CHANNEL_UPDATES: R,
       CONNECTION_OPEN_SUPPLEMENTAL: C,
-      GUILD_DELETE: L,
-      LOGIN_SUCCESS: x,
+      GUILD_DELETE: x,
+      LOGIN_SUCCESS: L,
       THREAD_DELETE: D,
       THREAD_UPDATE: w
     })
@@ -121,18 +121,18 @@ class T extends Chunk750041.Z {
 
 function A() {
   let e = Chunk944486.Z.getChannelId();
-  null != module && T.recordChannel(module)
+  null != module && S.recordChannel(module)
 }
 
 function C() {
-  T.dropUnreachableChannels(), T.replaceLru((0, Chunk872261.J)(v, h + g))
+  S.dropUnreachableChannels(), S.replaceLru((0, Chunk872261.J)(v, h + g))
 }
 
 function N(e) {
   let t = e.id,
     n = (0, f.v)(e),
     r = o.Z.getChannelId();
-  n && t === r && T.recordChannel(t), n || T.deleteChannel(t)
+  n && t === r && S.recordChannel(t), n || S.deleteChannel(t)
 }
 
 function R(e) {
@@ -140,7 +140,7 @@ function R(e) {
 }
 
 function P(e) {
-  T.deleteChannel(e.channel.id)
+  S.deleteChannel(e.channel.id)
 }
 
 function w(e) {
@@ -148,19 +148,19 @@ function w(e) {
 }
 
 function D(e) {
-  T.deleteChannel(e.channel.id)
-}
-
-function L(e) {
-  return !e.guild.unavailable && (T.deleteGuild(e.guild.id), true)
+  S.deleteChannel(e.channel.id)
 }
 
 function x(e) {
-  v.clear(), I.clear(), S = false
+  return !e.guild.unavailable && (S.deleteGuild(e.guild.id), true)
+}
+
+function L(e) {
+  v.clear(), I.clear(), T = false
 }
 
 function M(e) {
-  S = true
+  T = true
 }
-p(T, "displayName", "SaveableChannelsStore"), p(T, "LATEST_SNAPSHOT_VERSION", 1);
-let k = new T
+p(S, "displayName", "SaveableChannelsStore"), p(S, "LATEST_SNAPSHOT_VERSION", 1);
+let k = new S

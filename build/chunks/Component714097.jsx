@@ -13,9 +13,9 @@ var Chunk657707 = require("./657707.js"),
   Chunk866419 = require("./866419.js"),
   Chunk771934 = require("./771934.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk531421 = require("./531421.js"),
+  Chunk24864 = require("./24864.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk884984 = require("./884984.js");
+  Chunk825734 = require("./825734.js");
 let p = (e, t) => e === t ? _.themePillItemSelected : true;
 
 function h() {
@@ -26,18 +26,18 @@ function h() {
       value: Chunk231338.BR.DARK,
       icon: Chunk657707.Z6G,
       className: p(exports, Chunk231338.BR.DARK),
-      tooltip: Chunk388032.intl.string(Chunk531421.default["Dk+OWY"]),
-      tooltipAriaLabel: Chunk388032.intl.string(Chunk531421.default["Dk+OWY"])
+      tooltip: Chunk388032.intl.string(Chunk24864.default["Dk+OWY"]),
+      tooltipAriaLabel: Chunk388032.intl.string(Chunk24864.default["Dk+OWY"])
     }, {
       name: "",
       value: Chunk231338.BR.LIGHT,
       icon: Chunk657707.chG,
       className: p(exports, Chunk231338.BR.LIGHT),
-      tooltip: Chunk388032.intl.string(Chunk531421.default["5vlJkY"]),
-      tooltipAriaLabel: Chunk388032.intl.string(Chunk531421.default["5vlJkY"])
+      tooltip: Chunk388032.intl.string(Chunk24864.default["5vlJkY"]),
+      tooltipAriaLabel: Chunk388032.intl.string(Chunk24864.default["5vlJkY"])
     }];
   return (0, Chunk951288.jsx)(Chunk481060.sY7, {
-    className: Chunk884984.themeSelector,
+    className: Chunk825734.themeSelector,
     options: require,
     value: exports,
     onChange: e => {

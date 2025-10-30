@@ -4,7 +4,7 @@
 require.d(exports, {
   Eb: () => D,
   Fx: () => k,
-  IM: () => L,
+  IM: () => x,
   J2: () => F,
   r$: () => w
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
@@ -60,13 +60,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -94,18 +94,18 @@ function w(e, t) {
       merged_members: i,
       merged_presences: a
     } = e,
-    o = T(e, ["guilds", "merged_members", "merged_presences"]);
+    o = S(e, ["guilds", "merged_members", "merged_presences"]);
   let s = j(P, null == a ? true : a.friends),
     l = null != (n = null == r ? true : r.map((e, t) => {
       let n = j(P, null == a ? true : a.guilds[t]),
         r = j(P, null == i ? true : i[t]);
-      return S(v({}, e), {
+      return T(v({}, e), {
         unavailable: true === e.voice_states,
         presences: n,
         members: r
       })
     })) ? n : [],
-    c = x(t, r, e => ({
+    c = L(t, r, e => ({
       id: e.id,
       members: e.members,
       presences: e.presences,
@@ -113,7 +113,7 @@ function w(e, t) {
       voice_states: e.voice_states,
       unavailable: false
     }));
-  return null != c && l.push(c), P = {}, S(v({}, o), {
+  return null != c && l.push(c), P = {}, T(v({}, o), {
     presences: s,
     guilds: l
   })
@@ -132,7 +132,7 @@ function D() {
   })
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   var r, {
       users: a,
       relationships: s,
@@ -140,7 +140,7 @@ function L(e, t, n) {
       merged_members: c,
       guilds: u
     } = e,
-    d = T(e, ["users", "relationships", "private_channels", "merged_members", "guilds"]);
+    d = S(e, ["users", "relationships", "private_channels", "merged_members", "guilds"]);
   G(n);
   let f = j(P = o().keyBy(a, e => e.id), s);
   null == l || l.forEach(e => {
@@ -148,8 +148,8 @@ function L(e, t, n) {
     null != t && (e.recipients = t.map(e => (i()(null != P[e], "Missing user in compressed ready payload"), P[e]))), delete e.recipient_ids
   });
   let _ = null != (r = null == u ? true : u.map((e, t) => true === e.unavailable ? e : (e.members = j(P, null == c ? true : c[t]), Z(e)))) ? r : [],
-    p = x(t, u, e => Z(e));
-  return null != p && _.push(p), S(v({}, d), {
+    p = L(t, u, e => Z(e));
+  return null != p && _.push(p), T(v({}, d), {
     users: a,
     presences: [],
     relationships: f,
@@ -158,7 +158,7 @@ function L(e, t, n) {
   })
 }
 
-function x(e, t, n) {
+function L(e, t, n) {
   return null == R || R.identifyTime !== e || null != t && t.some(e => e.id === R.guild.id) ? null : n(R.guild)
 }
 

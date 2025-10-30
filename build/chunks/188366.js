@@ -45,26 +45,26 @@ let p = (0, Chunk647438.createContext)({}),
       isFocusVisible: y,
       isDisabled: e.isDisabled || false,
       isPending: null != d && d
-    }, S = (0, r.aX)({
+    }, T = (0, r.aX)({
       ...e,
       values: I,
       defaultClassName: "react-aria-Button"
-    }), T = (0, c.Me)(h.id), A = (0, c.Me)(), C = h["aria-labelledby"];
-    d && (C ? C = `${C} ${A}` : h["aria-label"] && (C = `${T} ${A}`));
+    }), S = (0, c.Me)(h.id), A = (0, c.Me)(), C = h["aria-labelledby"];
+    d && (C ? C = `${C} ${A}` : h["aria-label"] && (C = `${S} ${A}`));
     let N = (0, _.useRef)(d);
     (0, _.useEffect)(() => {
       let e = {
-        "aria-labelledby": C || T
+        "aria-labelledby": C || S
       };
       !N.current && b && d ? (0, a.xQ)(e, "assertive") : N.current && b && !d && (0, a.xQ)(e, "assertive"), N.current = d
-    }, [d, b, C, T]);
+    }, [d, b, C, S]);
     let R = (0, f.z)(e, {
       global: true
     });
     return delete R.onClick, _.createElement("button", {
-      ...(0, u.d)(R, S, h, E, O),
+      ...(0, u.d)(R, T, h, E, O),
       type: "submit" === h.type && d ? "button" : h.type,
-      id: T,
+      id: S,
       ref: t,
       "aria-labelledby": C,
       slot: e.slot || true,
@@ -79,7 +79,7 @@ let p = (0, Chunk647438.createContext)({}),
       value: {
         id: A
       }
-    }, S.children))
+    }, T.children))
   });
 
 function m(e, t) {

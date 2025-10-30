@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk935149 = require("./935149.js"),
+  Chunk777449 = require("./777449.js"),
   Chunk867250 = require("./867250.js");
 let v = () => (0, Chunk45521.f)(false),
   I = e => {
@@ -38,20 +38,20 @@ let v = () => (0, Chunk45521.f)(false),
         location_stack: I
       })
     }, [I]);
-    let S = (0, d.N)(),
-      T = (0, u.Ng)(),
-      A = (null == S || null == (t = S.subscription_trial) ? true : t.sku_id) === E.Si.TIER_0,
-      C = null != S || null != T;
+    let T = (0, d.N)(),
+      S = (0, u.Ng)(),
+      A = (null == T || null == (t = T.subscription_trial) ? true : t.sku_id) === E.Si.TIER_0,
+      C = null != T || null != S;
     return (0, r.jsxs)("div", {
       className: o()(y.upsellWrapper, {
         [y.unifyTrialUpsell]: C
       }),
       children: [C ? (0, r.jsx)(f.ZP, {
-        trialOffer: S,
-        discountOffer: T,
+        trialOffer: T,
+        discountOffer: S,
         onClose: v,
         type: E.cd.STICKER_PICKER_UPSELL,
-        subscriptionTier: null != (a = null == S || null == (n = S.subscription_trial) ? true : n.sku_id) ? a : E.Si.TIER_2,
+        subscriptionTier: null != (a = null == T || null == (n = T.subscription_trial) ? true : n.sku_id) ? a : E.Si.TIER_2,
         children: A ? b.intl.format(b.t.MAGagw, {
           planName: (0, p.aq)(E.Xh.PREMIUM_MONTH_TIER_0),
           onClick: h

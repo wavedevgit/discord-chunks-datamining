@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk422034 = require("./422034.jsx"),
   Chunk206127 = require("./206127.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk876544 = require("./876544.js");
+  Chunk452761 = require("./452761.js");
 let I = e => {
     let {
       inOfferExperience: t,
@@ -60,18 +60,18 @@ let I = e => {
       children: [d, " ", f]
     })
   },
-  S = () => (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+  T = () => (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk535322.A, {
-      className: Chunk876544.settingsSparkleStar1
+      className: Chunk452761.settingsSparkleStar1
     }), (0, Chunk951288.jsx)(Chunk535322.A, {
-      className: Chunk876544.settingsSparkleStar2
+      className: Chunk452761.settingsSparkleStar2
     }), (0, Chunk951288.jsx)(Chunk535322.A, {
-      className: Chunk876544.settingsSparkleStar3
+      className: Chunk452761.settingsSparkleStar3
     }), (0, Chunk951288.jsx)(Chunk535322.A, {
-      className: Chunk876544.settingsSparkleStar4
+      className: Chunk452761.settingsSparkleStar4
     })]
   }),
-  T = (e, t) => {
+  S = (e, t) => {
     let {
       className: n,
       buttonClassName: i,
@@ -79,27 +79,27 @@ let I = e => {
       isDarkMode: f
     } = e, {
       analyticsLocations: E
-    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), y = (0, m._O)(), T = (0, h.Nx)(), C = (0, p.Vi)(), N = (0, s.e7)([_.Z], () => _.Z.affinities).length > 0, R = O.intl.string(O.t.YCZldK);
+    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), y = (0, m._O)(), S = (0, h.Nx)(), C = (0, p.Vi)(), N = (0, s.e7)([_.Z], () => _.Z.affinities).length > 0, R = O.intl.string(O.t.YCZldK);
     return (0, r.jsx)(d.Gt, {
       value: E,
       children: (0, r.jsxs)("div", {
         ref: t,
         className: o()(v.container, n, {
-          [v.settingsContainer]: !T,
-          [v.affinityHeight]: !T && N
+          [v.settingsContainer]: !S,
+          [v.affinityHeight]: !S && N
         }),
         "data-testid": "v2-marketing-page-hero-header",
         children: [(0, r.jsxs)("div", {
-          className: T ? v.fullscreenTextContainer : v.settingsTextContainer,
+          className: S ? v.fullscreenTextContainer : v.settingsTextContainer,
           children: [(0, r.jsx)(c.Heading, {
-            variant: T ? "display-lg" : "display-md",
+            variant: S ? "display-lg" : "display-md",
             color: "always-white",
             children: R
           }), N ? (0, r.jsx)("div", {
             className: v.affinityDescription,
             children: (0, r.jsx)(b.Z, {
               textColor: "always-white",
-              smallerText: !T
+              smallerText: !S
             })
           }) : (0, r.jsx)(A, {}), C || y ? (0, r.jsx)("div", {
             className: v.buttonContainer,
@@ -109,14 +109,14 @@ let I = e => {
             })
           }) : (0, r.jsx)(I, {
             subscriptionTier: a,
-            inOfferExperience: T,
+            inOfferExperience: S,
             buttonClassName: i,
             isDarkMode: f
           }), N && (0, r.jsx)(A, {
             variant: "text-md/normal",
             withBottomMargin: false
           })]
-        }), !T && (0, r.jsx)(S, {})]
+        }), !S && (0, r.jsx)(T, {})]
       })
     })
   };
@@ -139,4 +139,4 @@ function A(e) {
     })
   })
 }
-let C = Chunk647438.forwardRef(T)
+let C = Chunk647438.forwardRef(S)

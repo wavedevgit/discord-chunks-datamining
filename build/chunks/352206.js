@@ -89,7 +89,7 @@ var m = {
     }
     return null
   },
-  S = function(e) {
+  T = function(e) {
     var t = I(e, m.TITLE),
       n = I(e, "titleTemplate");
     if (Array.isArray(t) && (t = t.join("")), n && t) return n.replace(/%s/g, function() {
@@ -98,7 +98,7 @@ var m = {
     var r = I(e, "defaultTitle");
     return t || r || true
   },
-  T = function(e) {
+  S = function(e) {
     return I(e, "onChangeClientState") || function() {}
   },
   A = function(e, t) {
@@ -180,8 +180,8 @@ var m = {
     var n;
     return f({}, e, ((n = {})[t] = true, n))
   },
-  L = [m.NOSCRIPT, m.SCRIPT, m.STYLE],
-  x = function(e, t) {
+  x = [m.NOSCRIPT, m.SCRIPT, m.STYLE],
+  L = function(e, t) {
     return true === t && (t = true), false === t ? String(e) : String(e).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;")
   },
   M = function(e) {
@@ -221,7 +221,7 @@ var m = {
             return function(e, t, n, r) {
               var i = M(n),
                 a = P(t);
-              return i ? "<" + e + ' data-rh="true" ' + i + ">" + x(a, r) + "</" + e + ">" : "<" + e + ' data-rh="true">' + x(a, r) + "</" + e + ">"
+              return i ? "<" + e + ' data-rh="true" ' + i + ">" + L(a, r) + "</" + e + ">" : "<" + e + ' data-rh="true">' + L(a, r) + "</" + e + ">"
             }(e, t.title, t.titleAttributes, n)
           }
         };
@@ -244,11 +244,11 @@ var m = {
                 var i = Object.keys(r).filter(function(e) {
                     return "innerHTML" !== e && "cssText" !== e
                   }).reduce(function(e, t) {
-                    var i = true === r[t] ? t : t + '="' + x(r[t], n) + '"';
+                    var i = true === r[t] ? t : t + '="' + L(r[t], n) + '"';
                     return e ? e + " " + i : i
                   }, ""),
                   a = r.innerHTML || r.cssText || "",
-                  o = false === L.indexOf(e);
+                  o = false === x.indexOf(e);
                 return t + "<" + e + ' data-rh="true" ' + i + (o ? "/>" : ">" + a + "</" + e + ">")
               }, "")
             }(e, t, n)
@@ -473,10 +473,10 @@ var W = function(e, t) {
           linkTags: N(m.LINK, ["rel", "href"], e),
           metaTags: N(m.META, ["name", "charset", "http-equiv", "property", "itemprop"], e),
           noscriptTags: N(m.NOSCRIPT, ["innerHTML"], e),
-          onChangeClientState: T(e),
+          onChangeClientState: S(e),
           scriptTags: N(m.SCRIPT, ["src", "innerHTML"], e),
           styleTags: N(m.STYLE, ["cssText"], e),
-          title: S(e),
+          title: T(e),
           titleAttributes: A("titleAttributes", e),
           prioritizeSeoTags: R(e, "prioritizeSeoTags")
         };

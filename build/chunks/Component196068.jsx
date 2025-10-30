@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk961987 = require("./961987.js");
+  Chunk93128 = require("./93128.js");
 let v = e => {
   let {
     dismissibleContent: t
@@ -33,13 +33,13 @@ let v = e => {
   }, {
     autoTrackExposure: false,
     disable: v
-  }), S = i.useCallback(() => {
+  }), T = i.useCallback(() => {
     p.default.track(E.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, f.openUserSettings)(d.n.GIFT_PANEL, {
       section: E.oAB.INVENTORY
     }), u.ZP.dismissOutboundPromotionNotice()
   }, []);
   if (null == n) return null;
-  let T = e => (0, r.jsxs)(s.qXd, {
+  let S = e => (0, r.jsxs)(s.qXd, {
     color: s.DM8.PREMIUM_TIER_2,
     children: [(0, r.jsx)(s.RyX, {
       noticeType: E.kVF.OUTBOUND_PROMOTION,
@@ -53,7 +53,7 @@ let v = e => {
     }), I ? y.intl.string(y.t["5JMiOo"]) : y.intl.string(y.t["Pzh+G2"]), (0, r.jsx)(s.NoS, {
       noticeType: E.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
-        S(), null !== e && e(g.L.TAKE_ACTION)
+        T(), null !== e && e(g.L.TAKE_ACTION)
       },
       children: y.intl.string(y.t.jVcuVY)
     })]
@@ -71,7 +71,7 @@ let v = e => {
         visibleContent: t,
         markAsDismissed: n
       } = e;
-      if (t === o.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return T(n)
+      if (t === o.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return S(n)
     }
   })
 }

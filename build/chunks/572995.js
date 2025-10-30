@@ -23,8 +23,8 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk531421 = require("./531421.js"),
-  Chunk352609 = require("./352609.js"),
+  Chunk24864 = require("./24864.js"),
+  Chunk593082 = require("./593082.js"),
   Chunk509614 = require("./509614.js"),
   Chunk880511 = require("./880511.js"),
   Chunk985443 = require("./985443.js"),
@@ -125,11 +125,11 @@ let ef = (e, t) => ec({
     },
     emojis: {
       thumbnail: D.Z,
-      assetUrl: e ? w.Z : L.Z
+      assetUrl: e ? w.Z : x.Z
     },
     noLimits: {
       thumbnail: M.Z,
-      assetUrl: e ? x.Z : k.Z
+      assetUrl: e ? L.Z : k.Z
     }
   } : {
     referralProgram: {
@@ -137,11 +137,11 @@ let ef = (e, t) => ec({
       assetUrl: e ? $.ZP : et.ZP
     },
     showYourStyle: {
-      thumbnail: T,
+      thumbnail: S,
       assetUrl: e ? ei.Z : ea.Z
     },
     yourSpace: {
-      thumbnail: S,
+      thumbnail: T,
       assetUrl: e ? eo.Z : es.Z
     },
     emojis: {
@@ -163,14 +163,14 @@ let ef = (e, t) => ec({
       location: "useBentoBoxes"
     }), I = Chunk340625.Z.useExperiment({
       location: "useBentoBoxes"
-    }), S = (0, Chunk647438.useCallback)(() => {
+    }), T = (0, Chunk647438.useCallback)(() => {
       (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
         section: Chunk981631.oAB.PROFILE_CUSTOMIZATION,
         analyticsLocations: module
       }, () => (0, Chunk829716.I)({
         analyticsLocations: module
       }))
-    }, [module]), T = () => {
+    }, [module]), S = () => {
       {
         letChunk518596 = require("./518596.jsx");
         exports(Chunk313789.n.APPEARANCE_PANEL, {
@@ -198,8 +198,8 @@ let ef = (e, t) => ec({
       videoUrl: Chunk184071.referralProgram.assetUrl
     }, w = {
       name: "customThemes",
-      title: Chunk388032.intl.string(Chunk531421.default.XokIHM),
-      description: Chunk388032.intl.string(Chunk531421.default["7esQMC"]),
+      title: Chunk388032.intl.string(Chunk24864.default.XokIHM),
+      description: Chunk388032.intl.string(Chunk24864.default["7esQMC"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
       previewImage: Chunk184071.customThemes.thumbnail,
       onClick: () => {
@@ -208,14 +208,14 @@ let ef = (e, t) => ec({
       videoUrl: Chunk184071.customThemes.assetUrl
     }, D = {
       name: "displayNameStyles",
-      title: Chunk388032.intl.string(Chunk352609.default.ABtBDQ),
-      description: Chunk388032.intl.string(Chunk352609.default.MFNXZh),
+      title: Chunk388032.intl.string(Chunk593082.default.ABtBDQ),
+      description: Chunk388032.intl.string(Chunk593082.default.MFNXZh),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
       previewImage: Chunk184071.displayNameStyles.thumbnail,
       onClick: Chunk985443,
       badgeText: Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase(),
       videoUrl: Chunk184071.displayNameStyles.assetUrl
-    }, L = {
+    }, x = {
       name: "recurring3PPromotions",
       title: Chunk388032.intl.string(Chunk388032.t.m7PucM),
       description: Chunk388032.intl.format(Chunk388032.t.mqSNPd, {}),
@@ -228,7 +228,7 @@ let ef = (e, t) => ec({
       badgeText: Chunk388032.intl.string(Chunk388032.t.oW0eUd).toLocaleUpperCase(),
       previewImage: Chunk184071.recurring3PPromotions.thumbnail,
       videoUrl: Chunk184071.recurring3PPromotions.thumbnail
-    }, x = {
+    }, L = {
       name: "showYourStyle",
       title: Chunk388032.intl.string(Chunk388032.t.Ij3Zmv),
       description: Chunk388032.intl.string(Chunk388032.t.UsOUxY),

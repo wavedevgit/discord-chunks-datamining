@@ -2,7 +2,7 @@
 /** chunk id: 350207, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./467055.js"), require("./388685.js"), require("./472816.js"), require("./794429.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk350917 = require("./350917.js");
+  Chunk987364 = require("./987364.js");
 let v = 4;
 
 function I(e) {
@@ -33,7 +33,7 @@ function I(e) {
   })))
 }
 
-function S(e) {
+function T(e) {
   let {
     widgets: t = [],
     onClick: n
@@ -45,11 +45,11 @@ function S(e) {
       var t;
       return null == (t = o[e.applicationId]) ? true : t.id
     }
-  }).filter(_.lm).flat())], [t, o]), S = (0, s.e7)([d.Z], () => d.Z.canFetchDetectableGames()), [A, C] = (0, i.useState)([]), {
+  }).filter(_.lm).flat())], [t, o]), T = (0, s.e7)([d.Z], () => d.Z.canFetchDetectableGames()), [A, C] = (0, i.useState)([]), {
     themeType: N
   } = (0, E.z)(), R = N === b.l.SIDEBAR;
   return (0, i.useEffect)(() => {
-    if (S) return void c.Z.getDetectableGames();
+    if (T) return void c.Z.getDetectableGames();
     C(u.map(e => d.Z.getDetectableGame(e)).filter(e => null != e).map(e => {
       var t;
       return {
@@ -60,7 +60,7 @@ function S(e) {
         name: e.name
       }
     }).filter(e => "" !== e.image).slice(0, v))
-  }, [u, S]), (0, r.jsx)(l.P3F, {
+  }, [u, T]), (0, r.jsx)(l.P3F, {
     "aria-label": y.intl.string(y.t.JjiwFx),
     onClick: () => {
       a({
@@ -75,7 +75,7 @@ function S(e) {
         children: y.intl.string(y.t.JjiwFx)
       }), (0, r.jsx)("div", {
         className: O.icons,
-        children: A.map((e, t) => (0, r.jsx)(T, {
+        children: A.map((e, t) => (0, r.jsx)(S, {
           iconUrl: e.image,
           name: e.name,
           displayCount: t === A.length - 1 && u.length > v,
@@ -86,7 +86,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     iconUrl: t,
     name: n,

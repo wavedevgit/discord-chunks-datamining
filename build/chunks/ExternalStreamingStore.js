@@ -32,8 +32,8 @@ let g = "33kozedd0zs6fbauka98psnc7zwom2s",
   O = "https://api.twitch.tv/helix",
   v = /live_user_(.*)-\{width\}/,
   I = 128,
-  S = null,
-  T = 0,
+  T = null,
+  S = 0,
   A = null,
   C = new Set,
   N = {};
@@ -72,7 +72,7 @@ class D {
     this._started || (this._started = true, Chunk553795.Z.isFetching() ? Chunk457330.Z.fetch() : this._check())
   }
   stop() {
-    this._started = false, A = null, T = 0, null != this._nextCheck && clearTimeout(this._nextCheck), Chunk570140.Z.dispatch({
+    this._started = false, A = null, S = 0, null != this._nextCheck && clearTimeout(this._nextCheck), Chunk570140.Z.dispatch({
       type: "STREAMING_UPDATE",
       stream: null
     })
@@ -163,7 +163,7 @@ class D {
     null != this._nextCheck && clearTimeout(this._nextCheck);
     let t = [Chunk981631.ABu.TWITCH],
       n = Date.now();
-    T <= require && (exports.push(Chunk981631.ABu.YOUTUBE), T = require + y), Promise.allSettled(module.filter(e => t.includes(e.type)).map(e => e.type === h.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
+    S <= require && (exports.push(Chunk981631.ABu.YOUTUBE), S = require + y), Promise.allSettled(module.filter(e => t.includes(e.type)).map(e => e.type === h.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
       if (this._started) {
         var t;
         let n = null == (t = e.find(e => "fulfilled" === e.status && null != e.value)) ? true : t.value;
@@ -182,27 +182,27 @@ class D {
     m(this, "_nextCheck", true), m(this, "_started", true), this._started = false
   }
 }
-let L = new D;
+let x = new D;
 
-function x() {
-  Chunk246946.Z.enabled ? L.start() : L.stop()
+function L() {
+  Chunk246946.Z.enabled ? x.start() : x.stop()
 }
 
 function M(e) {
   var t;
-  if (a()(e.stream, S)) returnfalse;
-  S = null != (t = e.stream) ? t : null
+  if (a()(e.stream, T)) returnfalse;
+  T = null != (t = e.stream) ? t : null
 }
 class k extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    x(), this.waitFor(Chunk553795.Z, Chunk246946.Z), this.syncWith([Chunk246946.Z], x)
+    L(), this.waitFor(Chunk553795.Z, Chunk246946.Z), this.syncWith([Chunk246946.Z], L)
   }
   getStream() {
-    return S
+    return T
   }
 }
 m(k, "displayName", "ExternalStreamingStore");
 let j = new k(Chunk570140.Z, {
   STREAMING_UPDATE: M,
-  USER_CONNECTIONS_UPDATE: () => L._check()
+  USER_CONNECTIONS_UPDATE: () => x._check()
 })

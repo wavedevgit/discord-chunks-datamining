@@ -27,7 +27,7 @@ let _ = Chunk647438.forwardRef(function(e, t) {
       l.kJ.setActiveCategoryIndex("" === e ? 0 : u.c), l.kJ.setInspectedExpressionPosition(0, 0), l.kJ.setSearchPlaceholder(null), (0, c.ql)(e), null == (t = n.current) || t.scrollTo(0)
     }, [n]), I = i.useCallback(() => {
       (0, c.ql)("")
-    }, []), S = e => {
+    }, []), T = e => {
       switch (e.key) {
         case d.vn.ARROW_LEFT:
         case d.vn.ARROW_RIGHT:
@@ -48,7 +48,7 @@ let _ = Chunk647438.forwardRef(function(e, t) {
       ref: E,
       placeholder: null != O ? O : g,
       onClear: I,
-      onKeyDown: S,
+      onKeyDown: T,
       onFocus: h,
       onChange: v,
       inputProps: {

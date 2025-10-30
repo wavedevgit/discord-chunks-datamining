@@ -59,8 +59,8 @@ let h = null,
   O = null,
   v = false,
   I = false,
-  S = null,
-  T = false,
+  T = null,
+  S = false,
   A = null;
 
 function C(e) {
@@ -110,7 +110,7 @@ function P(e) {
   let {
     subscription: t
   } = e;
-  if (y = true, T = false, null != t) {
+  if (y = true, S = false, null != t) {
     if (t.user_id !== l.default.getId()) {
       y = false;
       return
@@ -120,7 +120,7 @@ function P(e) {
 }
 
 function w() {
-  T = false
+  S = false
 }
 
 function D(e) {
@@ -136,28 +136,28 @@ function D(e) {
   }
 }
 
-function L() {
+function x() {
   I = true
 }
 
-function x() {
-  T = true
+function L() {
+  S = true
 }
 
 function M(e) {
   let {
     eligible: t
   } = e;
-  S = t, I = false
+  T = t, I = false
 }
 
 function k(e) {
   let {} = e;
-  S = false, I = false
+  T = false, I = false
 }
 
 function j() {
-  h = null, m = null, g = null, E = null, b = null, y = false, O = null, v = false, I = false, T = false, A = null
+  h = null, m = null, g = null, E = null, b = null, y = false, O = null, v = false, I = false, S = false, A = null
 }
 
 function U(e) {
@@ -228,13 +228,13 @@ class B extends(r = Chunk442837.ZP.Store) {
     return O
   }
   getIsSubscriptionEligibleForReward() {
-    return S
+    return T
   }
   getIsFetchingSubscriptionRewardEligibility() {
     return I
   }
   getIsFetchingMostRecentSubscription() {
-    return T
+    return S
   }
   getLastLazyPerkSync() {
     return A
@@ -244,12 +244,12 @@ d(B, "displayName", "SubscriptionStore");
 let Z = new B(Chunk570140.Z, {
   BILLING_SUBSCRIPTION_FETCH_SUCCESS: C,
   BILLING_SUBSCRIPTION_UPDATE_SUCCESS: R,
-  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_START: x,
+  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_START: L,
   BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: P,
   BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_FAIL: w,
   BILLING_PREVIOUS_PREMIUM_SUBSCRIPTION_FETCH_SUCCESS: D,
   BILLING_SUBSCRIPTION_RESET: j,
-  BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_START: L,
+  BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_START: x,
   BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_SUCCESS: M,
   BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_FAILURE: k,
   LOGOUT: j

@@ -77,14 +77,14 @@ function O(e) {
     icon: a.xhG,
     tooltipText: m.intl.string(m.t["UKOtz+"]),
     "aria-label": m.intl.string(m.t["UKOtz+"])
-  }, S = (0, d.Z)({
+  }, T = (0, d.Z)({
     user: t,
     guildId: n,
     onAction: () => y({
       action: "PRESS_INVITE_TO_SERVER",
       analyticsLocations: O
     })
-  }), T = (0, c.Z)({
+  }), S = (0, c.Z)({
     user: t,
     guildId: n,
     location: v,
@@ -130,8 +130,8 @@ function O(e) {
       analyticsLocations: O
     })
   }), N = [
-    [i, S],
-    [A, T, C, (0, f.T)({
+    [i, T],
+    [A, S, C, (0, f.T)({
       user: t,
       guildId: n,
       location: v,

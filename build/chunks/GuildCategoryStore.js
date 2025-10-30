@@ -84,7 +84,7 @@ function I(e) {
   delete h[t]
 }
 
-function S(e) {
+function T(e) {
   let {
     channel: {
       guild_id: t
@@ -94,7 +94,7 @@ function S(e) {
   h[t] = true, p === t && y(t)
 }
 
-function T(e) {
+function S(e) {
   let {
     channels: t
   } = e, n = false;
@@ -160,20 +160,20 @@ function D(e) {
   y(t)
 }
 
-function L() {
+function x() {
   y(Chunk981631.I_8)
 }
 
-function x(e) {
+function L(e) {
   let t = h[e];
   return null != t ? t : y(e)
 }
 class M extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk984933.ZP, Chunk430824.Z, Chunk314897.default, Chunk592125.Z, Chunk853856.Z), this.syncWith([Chunk853856.Z], L)
+    this.waitFor(Chunk984933.ZP, Chunk430824.Z, Chunk314897.default, Chunk592125.Z, Chunk853856.Z), this.syncWith([Chunk853856.Z], x)
   }
   getCategories(e) {
-    return null != e ? x(e) : E
+    return null != e ? L(e) : E
   }
 }
 _(M, "displayName", "GuildCategoryStore");
@@ -185,9 +185,9 @@ let k = new M(Chunk570140.Z, {
   GUILD_CREATE: v,
   GUILD_UPDATE: v,
   GUILD_DELETE: I,
-  CHANNEL_CREATE: S,
-  CHANNEL_DELETE: S,
-  CHANNEL_UPDATES: T,
+  CHANNEL_CREATE: T,
+  CHANNEL_DELETE: T,
+  CHANNEL_UPDATES: S,
   GUILD_MEMBER_UPDATE: A,
   CURRENT_USER_UPDATE: C,
   GUILD_ROLE_CREATE: N,

@@ -18,9 +18,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk131951 = require("./131951.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk192294 = require("./192294.js"),
-  Chunk89079 = require("./89079.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk558254 = require("./558254.js"),
+  Chunk43404 = require("./43404.js"),
+  Chunk10198 = require("./10198.js");
 let y = (0, Chunk313201.hQ)();
 
 function O() {
@@ -33,14 +33,14 @@ function O() {
   })), {
     inputMode: v,
     automaticVADSupported: I,
-    isEnabled: S
+    isEnabled: T
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
     inputMode: Chunk131951.Z.getMode(),
     automaticVADSupported: Chunk131951.Z.supports(Chunk65154.AN.AUTOMATIC_VAD),
     isEnabled: Chunk131951.Z.isEnabled()
   }));
 
-  function T(e, n) {
+  function S(e, n) {
     t(e), a((n & h.Dg.VOICE) === h.Dg.VOICE)
   }
 
@@ -53,13 +53,13 @@ function O() {
   Chunk647438.useEffect(() => {
     let e = new Chunk846519.V7;
     return module.start(1e3, () => {
-      Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceActivity, T), module.stop()
+      Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceActivity, S), module.stop()
     }), () => {
-      Chunk131951.Z.getMediaEngine().removeListener(Chunk46973.aB.VoiceActivity, T), module.stop()
+      Chunk131951.Z.getMediaEngine().removeListener(Chunk46973.aB.VoiceActivity, S), module.stop()
     }
   }, []);
   let C = (0, Chunk951288.jsx)("section", {
-    className: o()(Chunk192294.inputSensitivityToggle, Chunk192294.manual),
+    className: o()(Chunk558254.inputSensitivityToggle, Chunk558254.manual),
     children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
       initialValue: Chunk313201 + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
@@ -72,9 +72,9 @@ function O() {
       },
       "aria-labelledby": y,
       children: (0, Chunk951288.jsxs)("div", {
-        className: o()(Chunk192294.sliderBar, Chunk192294.microphone, Chunk192294.inputSensitivityBar, Chunk89079.bar),
+        className: o()(Chunk558254.sliderBar, Chunk558254.microphone, Chunk558254.inputSensitivityBar, Chunk43404.bar),
         children: [(0, Chunk951288.jsx)("div", {
-          className: o()(Chunk192294.fill, Chunk192294.inputSensitivityBarFill),
+          className: o()(Chunk558254.fill, Chunk558254.inputSensitivityBarFill),
           style: {
             width: module + 100 + "%"
           }
@@ -85,29 +85,29 @@ function O() {
     })
   });
   return O && (C = (0, Chunk951288.jsxs)("section", {
-    className: Chunk192294.inputSensitivityToggle,
+    className: Chunk558254.inputSensitivityToggle,
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk192294.inputSensitivitySlider,
+      className: Chunk558254.inputSensitivitySlider,
       children: (0, Chunk951288.jsx)("div", {
-        className: o()(Chunk192294.inputSensitivityBar, Chunk192294.sliderBar, {
-          [Chunk192294.speaking]: require
+        className: o()(Chunk558254.inputSensitivityBar, Chunk558254.sliderBar, {
+          [Chunk558254.speaking]: require
         })
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
-      className: Chunk197571.marginBottom8,
+      className: Chunk10198.marginBottom8,
       children: Chunk388032.intl.string(Chunk388032.t.W3K5Im)
     })]
   })), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
     label: Chunk388032.intl.string(Chunk388032.t["sqUm+k"]),
-    className: Chunk192294.sensitivity,
+    className: Chunk558254.sensitivity,
     children: [I && (0, Chunk951288.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.I1Zuq0),
       checked: O,
       onChange: e => A(_, e)
-    }), C, !S && (0, Chunk951288.jsx)(Chunk481060.Wn, {
+    }), C, !T && (0, Chunk951288.jsx)(Chunk481060.Wn, {
       messageType: Chunk481060.QYI.WARNING,
-      className: Chunk197571.marginBottom8,
+      className: Chunk10198.marginBottom8,
       children: Chunk388032.intl.format(Chunk388032.t["O13I+O"], {
         onEnableClick: () => Chunk846027.Z.enable(true)
       })

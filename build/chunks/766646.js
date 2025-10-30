@@ -25,8 +25,8 @@ var Chunk512722 = require("./512722.js"),
   Chunk70722 = require("./70722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
-let S = 3e5,
-  T = 6e4,
+let T = 3e5,
+  S = 6e4,
   A = {},
   C = new Chunk846519.V7,
   N = false,
@@ -36,10 +36,10 @@ let S = 3e5,
 R.width = 512, R.height = w;
 let D = R.getContext("2d");
 
-function L() {
+function x() {
   C.stop(), null != r && (Chunk649754.Z.removeSink(r, A), r = null)
 }
-let x = s().debounce((e, t, n, r) => {
+let L = s().debounce((e, t, n, r) => {
   k(e, (0, y.V9)({
     streamType: null != t ? O.lo.GUILD : O.lo.CALL,
     guildId: t,
@@ -89,10 +89,10 @@ async function k(e, t) {
       rejectWithError: false
     })
   } catch (t) {
-    new p.Z("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", t), r === e && C.start(T, n);
+    new p.Z("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", t), r === e && C.start(S, n);
     return
   }
-  r === e && (N ? C.start(T, n) : C.start(S, n))
+  r === e && (N ? C.start(S, n) : C.start(T, n))
 }
 
 function j(e, t) {
@@ -148,7 +148,7 @@ function G(e, t) {
 }
 let B = {
   init() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", L), Chunk570140.Z.subscribe("LOGOUT", L), Chunk570140.Z.subscribe("STREAM_DELETE", L), Chunk570140.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", x), Chunk570140.Z.subscribe("LOGOUT", x), Chunk570140.Z.subscribe("STREAM_DELETE", x), Chunk570140.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
       let {
         guildId: t,
         channelId: n,
@@ -156,7 +156,7 @@ let B = {
         streamId: a,
         context: o
       } = e;
-      null == a || o !== I.Yn.STREAM || i !== g.default.getId() || __OVERLAY__ || (L(), r = a, x(a, t, n, i))
+      null == a || o !== I.Yn.STREAM || i !== g.default.getId() || __OVERLAY__ || (x(), r = a, L(a, t, n, i))
     }), Chunk570140.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
       let {
         videoState: t

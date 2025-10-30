@@ -2,7 +2,7 @@
 /** chunk id: 892567, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,15 +23,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk821795 = require("./821795.js"),
   Chunk760692 = require("./760692.js"),
   Chunk7284 = require("./7284.js"),
-  Chunk492333 = require("./492333.js");
+  Chunk713162 = require("./713162.js");
 let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
-  S = Chunk647438.memo(function(e) {
+  T = Chunk647438.memo(function(e) {
     var t;
     let {
       userName: n,
       displayNameStyles: a,
       effectDisplayType: s = b.F.STATIC,
-      inProfile: S = false,
+      inProfile: T = false,
       textClassName: A,
       loop: C = false,
       shouldWrap: N = false,
@@ -39,15 +39,15 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       shouldUnderlineOnHover: P = false
     } = e, w = (0, O.j)({
       displayNameStyles: a,
-      inProfile: S
+      inProfile: T
     }), {
       useReducedMotion: D,
-      saturation: L
+      saturation: x
     } = (0, d.cj)([p.Z], () => ({
       useReducedMotion: p.Z.useReducedMotion,
       saturation: p.Z.desaturateUserColors ? p.Z.saturation : 1
     })), {
-      includeNonProfile: x
+      includeNonProfile: L
     } = m.fN.useExperiment({
       location: "useDisplayNameStylesFont"
     }), M = (0, E.Y)({
@@ -56,20 +56,20 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       foreground: o()(e),
       background: j === c.m.TOON ? o()("#333") : o()(k),
       ratio: U.minContrastRatio,
-      saturationFactor: L
-    }).hex()) : [], [a, M, j, U.minContrastRatio, L, k]);
-    if (!M || !S && !x || null == a) return n;
+      saturationFactor: x
+    }).hex()) : [], [a, M, j, U.minContrastRatio, x, k]);
+    if (!M || !T && !L || null == a) return n;
     let F = (0, y.K)(j, Z, {
         shouldWrap: N,
         fontOpacity: I.includes(a.fontId) ? R : 1
       }),
-      V = T(j);
+      V = S(j);
     return (0, r.jsxs)("div", {
       className: l()(v.container, w, A, {
         [v.showEffect]: s !== b.F.PLAIN,
         [v.animated]: s === b.F.ANIMATED && !D,
         [v.loop]: C,
-        [v.inProfile]: S
+        [v.inProfile]: T
       }),
       style: F,
       children: [(0, r.jsx)("span", {
@@ -89,7 +89,7 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
     })
   });
 
-function T(e) {
+function S(e) {
   switch (e) {
     case c.m.GRADIENT:
     case c.m.GLOW:

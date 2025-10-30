@@ -2,7 +2,7 @@
 /** chunk id: 650743, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,7 +23,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk763296 = require("./763296.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk638527 = require("./638527.js");
+  Chunk45517 = require("./45517.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -47,12 +47,12 @@ function I(e) {
   return e
 }
 
-function S(e) {
+function T(e) {
   let {
     soundboardSound: t,
     closePicker: v
-  } = e, S = (0, d.Iu)(e => e.searchQuery), T = (0, i.e7)([E.Z], () => null != t && E.Z.isFavoriteSound(t.soundId)), A = (0, i.e7)([_.Z], () => _.Z.getGuild(null == t ? true : t.guildId)), C = (0, i.e7)([l.Z], () => l.Z.useReducedMotion, []), N = (0, i.e7)([h.Z], () => h.Z.isFocused()), R = (0, i.e7)([p.ZP], () => p.ZP.getKeybindForAction(b.kg4.SOUNDBOARD_HOLD));
-  if (null != t && S.length > 0) return (0, r.jsx)(f.Z, {
+  } = e, T = (0, d.Iu)(e => e.searchQuery), S = (0, i.e7)([E.Z], () => null != t && E.Z.isFavoriteSound(t.soundId)), A = (0, i.e7)([_.Z], () => _.Z.getGuild(null == t ? true : t.guildId)), C = (0, i.e7)([l.Z], () => l.Z.useReducedMotion, []), N = (0, i.e7)([h.Z], () => h.Z.isFocused()), R = (0, i.e7)([p.ZP], () => p.ZP.getKeybindForAction(b.kg4.SOUNDBOARD_HOLD));
+  if (null != t && T.length > 0) return (0, r.jsx)(f.Z, {
     graphicPrimary: null != t.emojiId || null != t.emojiName ? (0, r.jsx)(s.Z, {
       emojiId: t.emojiId,
       emojiName: t.emojiName,
@@ -68,7 +68,7 @@ function S(e) {
     }) : null,
     titlePrimary: t.name,
     titleSecondary: null == A ? true : A.name,
-    isFavorite: T
+    isFavorite: S
   });
   let P = () => {
       v(), (0, o.ZDy)(async () => {
@@ -80,14 +80,14 @@ function S(e) {
     },
     w = (0, c.zu)(a.z.SOUNDBOARD_KEYBIND_TIP),
     D = () => (0, c.Q3)(a.z.SOUNDBOARD_KEYBIND_TIP),
-    L = null != R && (0, m.isWindows)() && !w ? y.intl.format(y.t.udMTth, {
+    x = null != R && (0, m.isWindows)() && !w ? y.intl.format(y.t.udMTth, {
       keybind: (0, g.BB)(R.shortcut, true),
       openSettingsHook: (e, t) => (0, r.jsx)(o.Anchor, {
         onClick: P,
         children: e
       }, t)
     }) : null;
-  return null == L ? null : (0, r.jsxs)("div", {
+  return null == x ? null : (0, r.jsxs)("div", {
     className: O.keybindHint,
     children: [(0, r.jsx)(o.Mgn, {
       size: "custom",
@@ -99,7 +99,7 @@ function S(e) {
       variant: "text-sm/medium",
       color: "text-default",
       className: O.keybindHintText,
-      children: L
+      children: x
     }), (0, r.jsx)(o.P3F, {
       className: O.closeButton,
       onClick: D,

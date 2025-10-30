@@ -2,7 +2,7 @@
 /** chunk id: 390966, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  z: () => S
+  z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk849464 = require("./849464.js"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk646615 = require("./646615.js");
+  Chunk606532 = require("./606532.js");
 let E = 20;
 
 function b(e, t) {
@@ -117,10 +117,10 @@ function O(e) {
 
 function v() {
   return (0, Chunk951288.jsx)(Chunk481060.IGR, {
-    className: Chunk646615.newBadge,
+    className: Chunk606532.newBadge,
     color: Chunk692547.Z.unsafe_rawColors.BRAND_260.css,
     text: (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk646615.newBadgeText,
+      className: Chunk606532.newBadgeText,
       variant: "text-xs/bold",
       children: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     })
@@ -147,7 +147,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     startTime: t,
     status: n,
@@ -155,8 +155,8 @@ function S(e) {
     className: s,
     endTime: u,
     liveText: p,
-    textVariant: S = "text-sm/semibold",
-    isNew: T,
+    textVariant: T = "text-sm/semibold",
+    isNew: S,
     recurrenceRule: A,
     guildEventId: C,
     recurrenceId: N
@@ -164,8 +164,8 @@ function S(e) {
   null == p && (p = a === h.WX.EXTERNAL ? m.intl.string(m.t.IyZxjH) : m.intl.string(m.t["X2K3/4"]));
   let D = (0, f.Z)(N, C),
     [{
-      startDateTimeString: L,
-      endDateTimeString: x,
+      startDateTimeString: x,
+      endDateTimeString: L,
       currentOrPastEvent: M,
       upcomingEvent: k,
       diffMinutes: j
@@ -177,13 +177,13 @@ function S(e) {
       clearInterval(e)
     }
   }, [t, u]);
-  let G = L;
-  null != x && "" !== x && (G = m.intl.formatToPlainString(m.t.tXbu7I, {
-    start: L,
-    end: x
+  let G = x;
+  null != L && "" !== L && (G = m.intl.formatToPlainString(m.t.tXbu7I, {
+    start: x,
+    end: L
   }));
   let B = i.useMemo(() => n === h.p1.CANCELED || (null == D ? true : D.is_canceled) ? 5 : n === h.p1.ACTIVE ? 3 : h.$I.has(n) ? 4 : M ? 2 : +!!k, [n, null == D ? true : D.is_canceled, M, k]),
-    Z = y(B, G, p, x, j),
+    Z = y(B, G, p, L, j),
     {
       Icon: F,
       iconColor: V,
@@ -194,9 +194,9 @@ function S(e) {
       textBrand: R,
       textPositive: P,
       textDanger: w,
-      endDateTimeString: x,
-      startDateTimeString: L
-    }), [B, R, P, w, x, L]),
+      endDateTimeString: L,
+      startDateTimeString: x
+    }), [B, R, P, w, L, x]),
     W = null;
   if (null != A) {
     let e = (0, _.Ho)(A);
@@ -211,7 +211,7 @@ function S(e) {
       [g.isRecurring]: null != W
     }),
     tooltipText: Y,
-    children: [T && n === h.p1.SCHEDULED ? (0, r.jsx)(v, {}) : (0, r.jsx)(F, {
+    children: [S && n === h.p1.SCHEDULED ? (0, r.jsx)(v, {}) : (0, r.jsx)(F, {
       color: V,
       size: "custom",
       width: E,
@@ -220,7 +220,7 @@ function S(e) {
       className: g.eventStatusLabel,
       children: [(0, r.jsx)(d.Text, {
         color: H,
-        variant: S,
+        variant: T,
         children: Z
       }), null != W && (0, r.jsx)(d.Text, {
         color: "header-secondary",

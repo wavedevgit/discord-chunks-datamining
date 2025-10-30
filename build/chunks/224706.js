@@ -34,8 +34,8 @@ var Chunk664751 = require("./664751.js"),
   Chunk981631 = require("./981631.js"),
   Chunk701488 = require("./701488.js"),
   Chunk388032 = require("./388032.jsx");
-let L = 3,
-  x = 20,
+let x = 3,
+  L = 20,
   M = new Chunk710845.Z("GamesActionCreators");
 
 function k(e) {
@@ -77,7 +77,7 @@ function k(e) {
     source: o,
     locationObject: s,
     analyticsLocations: c
-  }).then(e => 0 === e ? null : S.Z.waitConnected(t).then(() => Promise.race([S.Z.waitSubscribed(t, P.zMe.ACTIVITY_JOIN)]))).then(() => {
+  }).then(e => 0 === e ? null : T.Z.waitConnected(t).then(() => Promise.race([T.Z.waitSubscribed(t, P.zMe.ACTIVITY_JOIN)]))).then(() => {
     l.Z.dispatch({
       type: "ACTIVITY_JOIN",
       applicationId: t,
@@ -160,10 +160,10 @@ async function G(e) {
     if (null == e) throw Error("Missing dispatch game when launching");
     let i = y.Z.getLibraryApplication(t, n);
     if (null == i) throw Error("Missing library application when launching");
-    d = U(t).then(t => S.Z.launchDispatchApplication(e, t, g.default.locale, i.getBranchName(), r))
+    d = U(t).then(t => T.Z.launchDispatchApplication(e, t, g.default.locale, i.getBranchName(), r))
   } else {
     let e = u.Z.getApplication(t);
-    d = null != e ? S.Z.launch(e) : S.Z.launchGame(t)
+    d = null != e ? T.Z.launch(e) : T.Z.launchGame(t)
   }
   let f = Error("game not found");
   return null != d ? (l.Z.dispatch({
@@ -282,7 +282,7 @@ let B = {
         })
       }
     };
-    for (; n.length > 0;) r(n.splice(0, x))
+    for (; n.length > 0;) r(n.splice(0, L))
   },
   getDetectableGames() {
     if (!Chunk77498.Z.canFetchDetectableGames()) return;
@@ -355,12 +355,12 @@ let B = {
       url: P.ANM.UNVERIFIED_APPLICATIONS,
       body: {
         name: t,
-        os: (0, T.getPlatformName)(),
+        os: (0, S.getPlatformName)(),
         icon: n,
         distributor_application: j(i, a),
         executable: c,
         publisher: r,
-        report_version: L
+        report_version: x
       },
       retries: 1,
       oldFormErrors: true,
@@ -429,7 +429,7 @@ let B = {
       remotePartyId: f
     });
     try {
-      let e = (0, T.platformPrefersDeepLink)(),
+      let e = (0, S.platformPrefersDeepLink)(),
         l = await C.Z.getJoinSecret(t, n, r, i, a);
       return null == f && k({
         applicationId: r,

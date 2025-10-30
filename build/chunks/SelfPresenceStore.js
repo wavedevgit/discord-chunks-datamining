@@ -32,8 +32,8 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let S = false,
-  T = Chunk981631.Skl.ONLINE,
+let T = false,
+  S = Chunk981631.Skl.ONLINE,
   A = Chunk981631.Skl.UNKNOWN,
   C = 0,
   N = [],
@@ -41,8 +41,8 @@ let S = false,
   P = false,
   w = true,
   D = Object.freeze([]),
-  L = Object.freeze([]),
-  x = [],
+  x = Object.freeze([]),
+  L = [],
   M = [];
 
 function k(e) {
@@ -80,37 +80,37 @@ function G(e) {
 }
 
 function B() {
-  w = true, A = T, Z()
+  w = true, A = S, Z()
 }
 
 function Z() {
   var e;
-  if (C = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0, P = Chunk517100.Z.isAFK(), w) T = A;
-  else if (S) T = Chunk981631.Skl.INVISIBLE;
+  if (C = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0, P = Chunk517100.Z.isAFK(), w) S = A;
+  else if (T) S = Chunk981631.Skl.INVISIBLE;
   else {
     let e = Chunk695346.co.getSetting();
-    T = module !== Chunk981631.Skl.UNKNOWN ? module : Chunk981631.Skl.ONLINE
+    S = module !== Chunk981631.Skl.UNKNOWN ? module : Chunk981631.Skl.ONLINE
   }
-  T === Chunk981631.Skl.ONLINE && C > 0 && (T = Chunk981631.Skl.IDLE);
+  S === Chunk981631.Skl.ONLINE && C > 0 && (S = Chunk981631.Skl.IDLE);
   let t = false,
-    n = w || T === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(G);
+    n = w || S === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(G);
   a()(N, require) || (N = require, R = k(require), t = true);
   let r = Chunk797258.Z.getRemoteActivities();
   D !== r && (D = r, t = true);
   let i = Chunk797258.Z.getHiddenActivities();
-  L !== Chunk348327 && (L = Chunk348327), exports && (M = k(x = s()([...N, ...D.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
+  x !== Chunk348327 && (x = Chunk348327), exports && (M = k(L = s()([...N, ...D.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
 }
 
 function F(e) {
-  return S = e.invisible, Z()
+  return T = e.invisible, Z()
 }
 
 function V() {
-  return S = false, Z()
+  return T = false, Z()
 }
 
 function H() {
-  w = false, A = Chunk981631.Skl.UNKNOWN, Z(), Chunk158776.Z.setCurrentUserOnConnectionOpen(T, x)
+  w = false, A = Chunk981631.Skl.UNKNOWN, Z(), Chunk158776.Z.setCurrentUserOnConnectionOpen(S, L)
 }
 
 function Y() {
@@ -122,14 +122,14 @@ class W extends(r = Chunk442837.ZP.Store) {
   }
   getLocalPresence() {
     return {
-      status: T,
+      status: S,
       since: C,
       activities: R,
       afk: P
     }
   }
   getStatus() {
-    return T
+    return S
   }
   getActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
@@ -137,10 +137,10 @@ class W extends(r = Chunk442837.ZP.Store) {
   }
   getUnfilteredActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return module ? x : N
+    return module ? L : N
   }
   getHiddenActivities() {
-    return L
+    return x
   }
   getPrimaryActivity() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];

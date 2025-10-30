@@ -59,18 +59,18 @@ let _ = "mp4",
   O = "fixed_width.mp4",
   v = "fixed_width_small.mp4",
   I = "downsized_small.mp4",
-  S = "original.mp4",
-  T = m,
-  A = k(T) ? Chunk377108.EO.VIDEO : Chunk377108.EO.IMAGE,
+  T = "original.mp4",
+  S = m,
+  A = k(S) ? Chunk377108.EO.VIDEO : Chunk377108.EO.IMAGE,
   C = null,
   N = "",
   R = "",
   P = [],
   w = [],
   D = [],
-  L = [];
+  x = [];
 
-function x(e) {
+function L(e) {
   C = e.analyticsID
 }
 
@@ -85,7 +85,7 @@ function k(e) {
     case O:
     case v:
     case I:
-    case S:
+    case T:
     case _:
     case p:
     case h:
@@ -158,7 +158,7 @@ function F(e) {
   let {
     items: t
   } = e;
-  L = t
+  x = t
 }
 class V extends(r = Chunk442837.ZP.Store) {
   getAnalyticsID() {
@@ -177,18 +177,18 @@ class V extends(r = Chunk442837.ZP.Store) {
     return w
   }
   getSelectedFormat() {
-    return T
+    return S
   }
   getSuggestions() {
     return D
   }
   getTrendingSearchTerms() {
-    return L
+    return x
   }
 }
 c(V, "displayName", "GIFPickerViewStore");
 let H = new V(Chunk570140.Z, {
-  GIF_PICKER_INITIALIZE: x,
+  GIF_PICKER_INITIALIZE: L,
   GIF_PICKER_QUERY: M,
   GIF_PICKER_QUERY_SUCCESS: U,
   GIF_PICKER_QUERY_FAILURE: G,

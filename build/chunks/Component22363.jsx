@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk533432 = require("./533432.jsx"),
   Chunk149203 = require("./149203.js"),
   Chunk185923 = require("./185923.js"),
-  Chunk359175 = require("./359175.js");
+  Chunk593391 = require("./593391.js");
 let p = e => {
   let {
     channel: t,
@@ -31,8 +31,8 @@ let p = e => {
     isBurstReaction: O,
     onBurstReactionToggle: v,
     renderHeader: I,
-    showAddEmojiButton: S = false
-  } = e, T = (0, r.jsxs)(r.Fragment, {
+    showAddEmojiButton: T = false
+  } = e, S = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Z, {
       emojiListRef: h,
       gridNavigatorId: d.Vr,
@@ -48,12 +48,12 @@ let p = e => {
       searchBarRef: b,
       className: _.diversitySelector,
       selectedSurrogate: y
-    }), S && (0, r.jsx)(l.Z, {
+    }), T && (0, r.jsx)(l.Z, {
       channel: t
     })]
   });
   return (0, r.jsx)("div", {
     className: a()(_.header, p),
-    children: null != I ? I(T) : T
+    children: null != I ? I(S) : S
   })
 }

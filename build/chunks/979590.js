@@ -176,13 +176,13 @@
     return n.r = s(0, o(255, n.r - a(-(t / 100 * 255)))), n.g = s(0, o(255, n.g - a(-(t / 100 * 255)))), n.b = s(0, o(255, n.b - a(-(t / 100 * 255)))), c(n)
   }
 
-  function S(e, t) {
+  function T(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
     return n.l -= t / 100, n.l = j(n.l), c(n)
   }
 
-  function T(e, t) {
+  function S(e, t) {
     var n = c(e).toHsl(),
       r = (n.h + t) % 360;
     return n.h = r < 0 ? 360 + r : r, c(n)
@@ -354,7 +354,7 @@
       return 1 == this._a ? "rgb(" + a(100 * k(this._r, 255)) + "%, " + a(100 * k(this._g, 255)) + "%, " + a(100 * k(this._b, 255)) + "%)" : "rgba(" + a(100 * k(this._r, 255)) + "%, " + a(100 * k(this._g, 255)) + "%, " + a(100 * k(this._b, 255)) + "%, " + this._roundA + ")"
     },
     toName: function() {
-      return 0 === this._a ? "transparent" : !(this._a < 1) && (L[m(this._r, this._g, this._b, true)] || false)
+      return 0 === this._a ? "transparent" : !(this._a < 1) && (x[m(this._r, this._g, this._b, true)] || false)
     },
     toFilter: function(e) {
       var t = "#" + E(this._r, this._g, this._b, this._a),
@@ -387,7 +387,7 @@
       return this._applyModification(I, arguments)
     },
     darken: function() {
-      return this._applyModification(S, arguments)
+      return this._applyModification(T, arguments)
     },
     desaturate: function() {
       return this._applyModification(b, arguments)
@@ -399,7 +399,7 @@
       return this._applyModification(O, arguments)
     },
     spin: function() {
-      return this._applyModification(T, arguments)
+      return this._applyModification(S, arguments)
     },
     _applyCombination: function(e, t) {
       return e.apply(null, [this].concat([].slice.call(t)))
@@ -627,9 +627,9 @@
       yellow: "ff0",
       yellowgreen: "9acd32"
     },
-    L = c.hexNames = x(D);
+    x = c.hexNames = L(D);
 
-  function x(e) {
+  function L(e) {
     var t = {};
     for (var n in e) e.hasOwnProperty(n) && (t[e[n]] = n);
     return t

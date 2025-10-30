@@ -24,9 +24,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk465687 = require("./465687.js");
+  Chunk296266 = require("./296266.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -92,8 +92,8 @@ var P = function(e) {
 }({});
 let w = ["TOP_LEFT", "TOP_RIGHT"],
   D = (0, Chunk468194.Mg)(Chunk477690.Z.USER_PREMIUM_GUILD_SUBSCRIPTION_EASTER_EGG_SIZE),
-  L = 11,
-  x = 125,
+  x = 11,
+  L = 125,
   M = {
     leafPosition: {
       x: 85,
@@ -110,8 +110,8 @@ let w = ["TOP_LEFT", "TOP_RIGHT"],
   F = Object.freeze({
     TOP_LEFT: {
       getConfettiPosition: e => ({
-        x: e - L,
-        y: e - x
+        x: e - x,
+        y: e - L
       }),
       confettiVelocityDirection: {
         x: 1,
@@ -125,8 +125,8 @@ let w = ["TOP_LEFT", "TOP_RIGHT"],
     },
     TOP_RIGHT: {
       getConfettiPosition: e => ({
-        x: L,
-        y: e - x
+        x: x,
+        y: e - L
       }),
       confettiVelocityDirection: {
         x: false,
@@ -138,20 +138,20 @@ let w = ["TOP_LEFT", "TOP_RIGHT"],
       },
       leafRotationDirection: false
     },
-    BOTTOM_LEFT: C(T({}, M), {
+    BOTTOM_LEFT: C(S({}, M), {
       getConfettiPosition: e => ({
-        x: e - L,
-        y: x
+        x: e - x,
+        y: L
       }),
       confettiVelocityDirection: {
         x: 1,
         y: false
       }
     }),
-    BOTTOM_RIGHT: C(T({}, M), {
+    BOTTOM_RIGHT: C(S({}, M), {
       getConfettiPosition: e => ({
-        x: L,
-        y: x
+        x: x,
+        y: L
       }),
       confettiVelocityDirection: {
         x: false,
@@ -253,7 +253,7 @@ function et(e) {
   } = e, u = i.useRef(null), [_, p] = i.useState(null), [h] = i.useState(null != a ? a : Y()), {
     createMultipleConfettiAt: m,
     confettiCanvas: g
-  } = i.useContext(f.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = J(_, h), v = w.includes(h), S = v && "exit" === _, T = i.useCallback(e => {
+  } = i.useContext(f.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = J(_, h), v = w.includes(h), T = v && "exit" === _, S = i.useCallback(e => {
     p(e)
   }, []), A = i.useCallback(() => {
     "exit" === _ && (null == t || t())
@@ -337,11 +337,11 @@ function et(e) {
       children: (0, r.jsx)(d.kci, {
         animationRef: C,
         className: o()(I.easterEggAnimation, {
-          [I.easterEggAnimationHideLeaf]: S
+          [I.easterEggAnimationHideLeaf]: T
         }),
         nextScene: O,
         sceneSegments: R,
-        onScenePlay: T,
+        onScenePlay: S,
         onSceneComplete: A,
         importData: Q,
         pauseWhileUnfocused: false
@@ -361,8 +361,8 @@ function en(e) {
     c = H(n),
     u = (0, h.Z)(n),
     {
-      createMultipleConfettiAt: S,
-      addClickListener: T
+      createMultipleConfettiAt: T,
+      addClickListener: S
     } = i.useContext(f.h),
     [A, C] = i.useState(false),
     R = i.useRef(null),
@@ -371,35 +371,35 @@ function en(e) {
     } = i.useContext(d.Sfi),
     w = (0, b.ZP)(n),
     D = w.nick,
-    L = s(w);
+    x = s(w);
   t = null == c || null == o ? u > 1 ? v.intl.format(v.t.yfC9ds, {
     username: D,
-    usernameHook: L,
+    usernameHook: x,
     numSubscriptions: u
   }) : v.intl.format(v.t["57St/7"], {
     username: D,
-    usernameHook: L
+    usernameHook: x
   }) : u > 1 ? v.intl.format(v.t.PO9uJD, {
     username: D,
-    usernameHook: L,
+    usernameHook: x,
     numSubscriptions: u,
     guildName: o.name,
     newTierName: (0, E.nW)(c)
   }) : v.intl.format(v.t.cUfTTE, {
     username: D,
-    usernameHook: L,
+    usernameHook: x,
     guildName: o.name,
     newTierName: (0, E.nW)(c)
   });
-  let x = i.useCallback(() => {
+  let L = i.useCallback(() => {
       if (!P.enabled)
         if (A || 0 !== Math.floor(Math.random() * N)) {
           var e;
           let t = null == (e = R.current) ? true : e.getBoundingClientRect();
           if (null == t) return;
-          S(t.left + t.width / 2, t.top + t.height / 2)
+          T(t.left + t.width / 2, t.top + t.height / 2)
         } else C(true)
-    }, [S, P, A]),
+    }, [T, P, A]),
     M = i.useCallback(() => {
       C(false)
     }, []),
@@ -413,7 +413,7 @@ function en(e) {
     j = i.useCallback((e, t) => {
       (null == t ? true : t.id.startsWith(V)) && k()
     }, [k]);
-  i.useEffect(() => T(j));
+  i.useEffect(() => S(j));
   let U = (0, r.jsx)(d.P3F, {
     className: I.iconWrapper,
     innerRef: R,
@@ -421,7 +421,7 @@ function en(e) {
     children: (0, r.jsx)(d.Ucv, {
       color: d.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: I.icon,
-      onMouseEnter: x
+      onMouseEnter: L
     })
   });
   return (0, r.jsxs)(y.Z, {

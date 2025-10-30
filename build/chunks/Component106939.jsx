@@ -32,17 +32,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk539086 = require("./539086.js"),
   Chunk292352 = require("./292352.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk602698 = require("./602698.js"),
+  Chunk382402 = require("./382402.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk166387 = require("./166387.js");
-let L = {
+  Chunk799114 = require("./799114.js");
+let x = {
     [Chunk292352.dG.REQUESTS]: Chunk731934.Z,
     [Chunk292352.dG.ACTIVITY]: Chunk830746.Z,
     [Chunk292352.dG.SETTINGS]: Chunk521450.Z,
     [Chunk292352.dG.CONTENT_AND_SOCIAL]: Chunk615160.Z,
     [Chunk292352.dG.DATA_AND_PRIVACY]: Chunk273879.Z
   },
-  x = {
+  L = {
     [Chunk292352.dG.REQUESTS]: Chunk731934.Z,
     [Chunk292352.dG.ACTIVITY]: Chunk830746.Z,
     [Chunk292352.dG.CONTENT_AND_SOCIAL]: Chunk615160.Z,
@@ -53,7 +53,7 @@ function M() {
   return (0, Chunk951288.jsx)(Chunk481060.Kqy, {
     justify: "center",
     align: "center",
-    className: Chunk166387.loadingContainer,
+    className: Chunk799114.loadingContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   })
 }
@@ -150,19 +150,19 @@ function U() {
       i(e)
     };
   if (Chunk120356) return null;
-  let s = L[require];
+  let s = x[require];
   return (0, Chunk951288.jsxs)("main", {
-    className: Chunk166387.container,
-    "aria-label": Chunk388032.intl.string(Chunk602698.default.RZqaJn),
+    className: Chunk799114.container,
+    "aria-label": Chunk388032.intl.string(Chunk382402.default.RZqaJn),
     children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
-      location: Chunk388032.intl.string(Chunk602698.default.RZqaJn)
+      location: Chunk388032.intl.string(Chunk382402.default.RZqaJn)
     }), (0, Chunk951288.jsx)(k, {
       section: require,
       handleItemSelect: o
     }), (0, Chunk951288.jsx)(Chunk481060.njP.Panel, {
       id: require,
       "aria-labelledby": module,
-      className: Chunk166387.contentPanel,
+      className: Chunk799114.contentPanel,
       children: (0, Chunk951288.jsx)("div", {
         children: exports ? (0, Chunk951288.jsx)(M, {}) : (0, Chunk951288.jsx)(Chunk873546, {})
       })
@@ -188,19 +188,19 @@ function G() {
     let e = Chunk695346.Ex.getSetting();
     require && exports && true === module && Chunk695346.Ex.updateSetting(true)
   }, [require, exports]);
-  let S = e => {
+  let T = e => {
     v(e)
   };
   if (Chunk273879) return null;
-  let T = Chunk631885 !== Chunk292352.dG.SETTINGS ? Chunk631885 : Chunk292352.dG.ACTIVITY,
-    A = x[Chunk731934];
+  let S = Chunk631885 !== Chunk292352.dG.SETTINGS ? Chunk631885 : Chunk292352.dG.ACTIVITY,
+    A = L[Chunk731934];
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: module,
     children: (0, Chunk951288.jsxs)("main", {
-      className: o()(Chunk166387.container, Chunk166387.containerSidenav),
-      "aria-label": Chunk388032.intl.string(Chunk602698.default.RZqaJn),
+      className: o()(Chunk799114.container, Chunk799114.containerSidenav),
+      "aria-label": Chunk388032.intl.string(Chunk382402.default.RZqaJn),
       children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
-        location: Chunk388032.intl.string(Chunk602698.default.RZqaJn)
+        location: Chunk388032.intl.string(Chunk382402.default.RZqaJn)
       }), (0, Chunk951288.jsx)(j, {
         theme: Chunk120356,
         section: Chunk731934,
@@ -208,10 +208,10 @@ function G() {
       }), (0, Chunk951288.jsx)(Chunk481060.njP.Panel, {
         id: Chunk731934,
         "aria-labelledby": Chunk873546,
-        className: Chunk166387.contentPanel,
+        className: Chunk799114.contentPanel,
         children: (0, Chunk951288.jsx)(Chunk481060.Ttm, {
           children: (0, Chunk951288.jsx)("div", {
-            className: Chunk166387.sideNavContent,
+            className: Chunk799114.sideNavContent,
             children: Chunk984370 ? (0, Chunk951288.jsx)(M, {}) : (0, Chunk951288.jsx)(Chunk521450, {})
           })
         })

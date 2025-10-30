@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk28546 = require("./28546.js"),
   Chunk122567 = require("./122567.js"),
   Chunk98528 = require("./98528.js"),
-  Chunk557340 = require("./557340.js");
+  Chunk544744 = require("./544744.js");
 let f = 20,
   _ = Chunk647438.forwardRef(function(e, t) {
     let {
@@ -29,32 +29,32 @@ let f = 20,
       rowCount: O,
       rowCountBySection: v,
       rowHeight: I,
-      sectionHeaderHeight: S,
-      sectionFooterHeight: T,
+      sectionHeaderHeight: T,
+      sectionFooterHeight: S,
       renderUpsell: A,
       onScroll: C
     } = e, N = i.useRef(false), R = i.useRef(null), P = (0, l.Iu)(e => e.searchQuery), w = a.useStore(e => e.activeCategoryIndex), D = i.useMemo(() => n.map(e => (0, s._O)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
       isNitroLocked: false
-    }), [n]), L = (0, u.Qs)({
+    }), [n]), x = (0, u.Qs)({
       activeCategoryIndex: w,
       isScrolling: N,
       listRef: R,
       onActiveCategoryIndexChange: a.setActiveCategoryIndex,
       scrollOffset: f,
       searchQuery: P
-    }), x = i.useCallback(e => {
-      L(e), p({
+    }), L = i.useCallback(e => {
+      x(e), p({
         listRef: R,
         searchQuery: P,
         nitroLockedSectionStates: D,
         scrollTop: e
       }), null == C || C(e)
-    }, [L, P, D, C]);
+    }, [x, P, D, C]);
     return i.useEffect(() => {
-      null != R.current && x(0)
-    }, [x, R]), (0, u.Xs)({
+      null != R.current && L(0)
+    }, [L, R]), (0, u.Xs)({
       searchQuery: P,
       activeCategoryIndex: w,
       listRef: R
@@ -99,7 +99,7 @@ let f = 20,
       children: [P.length > 0 && !c && null != y ? y() : (0, r.jsx)(o.Z, {
         role: "none presentation",
         listPadding: _,
-        onScroll: x,
+        onScroll: L,
         renderRow: h,
         renderSection: m,
         renderSectionHeader: g,
@@ -107,8 +107,8 @@ let f = 20,
         rowCount: O,
         rowCountBySection: v,
         rowHeight: I,
-        sectionHeaderHeight: S,
-        sectionFooterHeight: T,
+        sectionHeaderHeight: T,
+        sectionFooterHeight: S,
         stickyHeaders: true,
         ref: R
       }), null == A ? true : A(), null == b ? true : b()]

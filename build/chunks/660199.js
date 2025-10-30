@@ -3,10 +3,11 @@
 "use strict";
 require.d(exports, {
   Ay: () => u,
-  He: () => f,
+  He: () => _,
   K_: () => l,
   Qh: () => s,
-  ZB: () => d
+  ZB: () => f,
+  tC: () => d
 }), require("./413496.js"), require("./433524.js"), require("./35282.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -19,6 +20,8 @@ let s = {
     D: e => (0, a.vc)(e, "LL"),
     f: e => (0, a.vc)(e, "LLL"),
     F: e => (0, a.vc)(e, "LLLL"),
+    s: e => (0, a.vc)(e, "L LT"),
+    S: e => (0, a.vc)(e, "L LTS"),
     R: e => {
       let t = i().relativeTimeThreshold("s");
       i().relativeTimeThreshold("s", 60);
@@ -38,19 +41,29 @@ Object.setPrototypeOf(s, null);
 let c = Object.keys(s).join("|"),
   u = new RegExp("^<t:(-?\\d{1,17})(?::(".concat(c, "))?>"));
 
-function d(e, t) {
-  let n = i()(Number(e) * o.Z.Millis.SECOND);
-  if (!n.isValid()) return null;
-  let r = null != t ? s[t] : true;
-  return null == r && (r = s[l]), {
-    timestamp: e,
-    format: t,
-    parsed: n,
-    full: s.F(n),
-    formatted: r(n)
+function d(e) {
+  let {
+    timestamp: t,
+    format: n
+  } = e, r = i()(Number(t) * o.Z.Millis.SECOND);
+  if (!r.isValid()) return null;
+  let a = null != n ? s[n] : true;
+  return null == a && (a = s[l]), {
+    timestamp: t,
+    format: n,
+    parsed: r,
+    full: s.F(r),
+    formatted: a(r)
   }
 }
 
 function f(e, t) {
+  return d({
+    timestamp: e,
+    format: t
+  })
+}
+
+function _(e, t) {
   return null != t ? "<t:".concat(e, ":").concat(t, ">") : "<t:".concat(e, ">")
 }

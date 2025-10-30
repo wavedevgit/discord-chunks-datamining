@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk215569 = require("./215569.js"),
-  Chunk278397 = require("./278397.js");
+  Chunk228034 = require("./228034.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,7 +73,7 @@ class p extends Chunk647438.PureComponent {
   render() {
     return (0, Chunk951288.jsx)(Chunk748780.Z.div, {
       style: this.getStyle(),
-      className: Chunk278397.item,
+      className: Chunk228034.item,
       children: this.props.children
     })
   }

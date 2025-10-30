@@ -18,8 +18,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk731722 = require("./731722.js"),
   Chunk131085 = require("./131085.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk562915 = require("./562915.js"),
-  Chunk655262 = require("./655262.js");
+  Chunk572073 = require("./572073.js"),
+  Chunk833972 = require("./833972.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -110,8 +110,8 @@ let b = Chunk647438.memo(function(e) {
       badgeSize: O,
       disableGuildProfile: v = false,
       inline: I = true,
-      onShowProfile: S,
-      onClose: T
+      onShowProfile: T,
+      onClose: S
     } = e, A = i.useRef(null), C = (0, s.e7)([d.default], () => d.default.getUser(a), [a]), N = (0, s.e7)([u.Z], () => u.Z.theme), R = null != (t = null == C ? true : C.primaryGuild) ? t : n, {
       tag: P,
       badge: w,
@@ -130,8 +130,8 @@ let b = Chunk647438.memo(function(e) {
       theme: N,
       children: (0, r.jsx)(c.Z, {
         guildId: D,
-        onRequestOpen: S,
-        onClose: T,
+        onRequestOpen: T,
+        onClose: S,
         targetElementRef: A,
         children: e => (0, r.jsx)("span", {
           className: h,

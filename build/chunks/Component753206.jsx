@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk25015 = require("./25015.jsx"),
   Chunk963550 = require("./963550.jsx"),
   Chunk845080 = require("./845080.jsx"),
-  Chunk360514 = require("./360514.js");
+  Chunk5898 = require("./5898.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,18 +68,18 @@ function E(e) {
     previewGuildId: O,
     preview: v,
     author: I
-  } = e, S = null != O ? O : (0, l.k)(n), T = (0, s.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
+  } = e, T = null != O ? O : (0, l.k)(n), S = (0, s.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
     content: A
   } = (0, u.Z)(n, {
     hideSimpleEmbedContent: b,
-    allowList: T,
-    allowHeading: T,
+    allowList: S,
+    allowHeading: S,
     allowLinks: true,
     previewLinkTarget: true
   }), C = i.useMemo(() => (0, f.Z)(g(h({}, e), {
     channel: a,
-    guildId: S
-  })), [e, a, S]);
+    guildId: T
+  })), [e, a, T]);
   return (0, r.jsx)(c.Z, {
     compact: p,
     className: o()(m, {

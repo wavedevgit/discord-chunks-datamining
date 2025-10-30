@@ -2,7 +2,7 @@
 /** chunk id: 205912, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => S
+  M: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk657707 = require("./657707.js"),
   Chunk454389 = require("./454389.jsx"),
   Chunk402453 = require("./402453.jsx"),
-  Chunk170382 = require("./170382.js");
+  Chunk878644 = require("./878644.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,7 +77,7 @@ function I(e, t) {
   return i
 }
 
-function S(e) {
+function T(e) {
   var {
     value: t,
     onChange: n,
@@ -85,8 +85,8 @@ function S(e) {
     maxValue: E,
     placeholderValue: y,
     granularity: I = "day",
-    hourCycle: S,
-    hideTimeZone: T = false
+    hourCycle: T,
+    hideTimeZone: S = false
   } = e, A = v(e, ["value", "onChange", "minValue", "maxValue", "placeholderValue", "granularity", "hourCycle", "hideTimeZone"]);
   let {
     i18n: C
@@ -99,8 +99,8 @@ function S(e) {
   } = N, D = {
     hasError: null != P && "" !== P
   }, {
-    refs: L,
-    floatingStyles: x,
+    refs: x,
+    floatingStyles: L,
     isOpen: M,
     setIsOpen: k,
     context: j,
@@ -133,7 +133,7 @@ function S(e) {
     children: e => (0, r.jsx)(h.U, O(b({
       className: g.inputField,
       validation: D,
-      ref: L.setReference
+      ref: x.setReference
     }, G()), {
       children: (0, r.jsxs)(o.Mt, {
         id: e.controlId,
@@ -149,8 +149,8 @@ function S(e) {
         maxValue: E,
         placeholderValue: y,
         granularity: I,
-        hourCycle: S,
-        hideTimeZone: T,
+        hourCycle: T,
+        hideTimeZone: S,
         "data-mana-component": "date-picker",
         className: g.datePicker,
         children: [(0, r.jsxs)(s.Z, {
@@ -170,8 +170,8 @@ function S(e) {
             })
           })]
         }), M && B && (0, r.jsx)("div", O(b({}, U()), {
-          ref: L.setFloating,
-          style: x,
+          ref: x.setFloating,
+          style: L,
           className: g.popover,
           children: (0, r.jsx)(u.Vq, {
             style: Z,

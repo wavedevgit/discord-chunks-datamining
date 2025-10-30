@@ -2,7 +2,7 @@
 /** chunk id: 268010, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,16 +34,16 @@ let I = (e, t, n) => {
       episodeDescription: e.extra.media_subtitle
     }).replaceAll("*", "")
   },
-  S = (e, t) => v.intl.formatToPlainString(v.t.kCbfbN, {
+  T = (e, t) => v.intl.formatToPlainString(v.t.kCbfbN, {
     username: t.username,
     activity: e.extra.media_title
   }),
-  T = e => {
+  S = e => {
     let {
       channel: t,
       entry: n,
       onReaction: u,
-      onVoiceChannelPreview: T
+      onVoiceChannelPreview: S
     } = e, A = (0, a.e7)([l.default], () => l.default.getUser(n.author_id)), {
       largeImage: C
     } = (0, f.rv)({
@@ -51,7 +51,7 @@ let I = (e, t, n) => {
     }), {
       primaryColor: N,
       secondaryColor: R
-    } = (0, m.Z)(null == C ? true : C.src), P = (0, a.e7)([s.default], () => s.default.locale), w = (0, h.Z)(O.ABu.CRUNCHYROLL), D = (0, _.ap)(n.extra.media_assets_large_text), L = i.useCallback(e => {
+    } = (0, m.Z)(null == C ? true : C.src), P = (0, a.e7)([s.default], () => s.default.locale), w = (0, h.Z)(O.ABu.CRUNCHYROLL), D = (0, _.ap)(n.extra.media_assets_large_text), x = i.useCallback(e => {
       if (null != A && (null == C ? true : C.src) != null) return (0, p.B)({
         entry: n,
         mediaImageSrc: null == C ? true : C.src,
@@ -62,7 +62,7 @@ let I = (e, t, n) => {
         colors: [N, R],
         channelId: e
       })
-    }, [t, n, D, P, null == C ? true : C.src, N, R, A]), x = () => {
+    }, [t, n, D, P, null == C ? true : C.src, N, R, A]), L = () => {
       if (null == n.extra.url) return;
       let e = d.Z.safeParseWithQuery(n.extra.url);
       null != e && null != e.protocol && null != e.hostname && (0, c.q)({
@@ -88,16 +88,16 @@ let I = (e, t, n) => {
             entry: n
           }, t))
         }),
-        onClickTitle: x,
-        onClickThumbnail: x
+        onClickTitle: L,
+        onClickThumbnail: L
       }), (0, r.jsx)(b.St, {
         children: (0, r.jsx)(b.WT, {
           onReaction: u,
-          onVoiceChannelPreview: T,
+          onVoiceChannelPreview: S,
           user: A,
           channel: t,
-          generateReactionImage: L,
-          reactionImageAltText: S(n, A),
+          generateReactionImage: x,
+          reactionImageAltText: T(n, A),
           entry: n
         })
       })]

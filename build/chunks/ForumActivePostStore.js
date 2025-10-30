@@ -33,8 +33,8 @@ function y(e, t, n) {
 let O = [],
   v = null,
   I = null,
-  S = new Set,
-  T = Chunk683860.z.LATEST_ACTIVITY,
+  T = new Set,
+  S = Chunk683860.z.LATEST_ACTIVITY,
   A = Chunk697988.z.MATCH_SOME,
   C = 0,
   N = [],
@@ -42,8 +42,8 @@ let O = [],
   P = [],
   w = o().chain(O),
   D = o().chain(O),
-  L = new Set,
-  x = new Set;
+  x = new Set,
+  L = new Set;
 
 function M(e) {
   var t;
@@ -74,7 +74,7 @@ function U(e, t) {
 }
 
 function G() {
-  N = [], r = null, I = null, S = new Set, T = Chunk683860.z.LATEST_ACTIVITY, A = Chunk697988.z.MATCH_SOME, C = 0, P = [], w = o().chain(O), D = o().chain(O), x.clear(), L.clear()
+  N = [], r = null, I = null, T = new Set, S = Chunk683860.z.LATEST_ACTIVITY, A = Chunk697988.z.MATCH_SOME, C = 0, P = [], w = o().chain(O), D = o().chain(O), L.clear(), x.clear()
 }
 
 function B() {
@@ -93,7 +93,7 @@ function Z(e) {
       id: t
     } = e;
     return t
-  }).sort(j(T))
+  }).sort(j(S))
 }
 
 function F(e) {
@@ -104,9 +104,9 @@ function F(e) {
       id: t
     } = e;
     return t
-  }), C = 0, R = true), 0 !== L.size && (P = P.filter(e => !L.has(e)), L.clear()), 0 !== x.size && (P = Array.from(new Set([...P, ...x])), x.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = o().chain(P).sort(j(l.z.LATEST_ACTIVITY)), w = o().chain(P).sort(j(l.z.CREATION_DATE)));
-  let n = (T === l.z.LATEST_ACTIVITY ? D : w).value(),
-    i = (N = 0 === S.size ? n : n.filter(U(S, A))).find(e => k(e));
+  }), C = 0, R = true), 0 !== x.size && (P = P.filter(e => !x.has(e)), x.clear()), 0 !== L.size && (P = Array.from(new Set([...P, ...L])), L.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = o().chain(P).sort(j(l.z.LATEST_ACTIVITY)), w = o().chain(P).sort(j(l.z.CREATION_DATE)));
+  let n = (S === l.z.LATEST_ACTIVITY ? D : w).value(),
+    i = (N = 0 === T.size ? n : n.filter(U(T, A))).find(e => k(e));
   r = null == i ? null : i
 }
 
@@ -127,13 +127,13 @@ function H(e) {
   } = e;
   if (null == t.parent_id || t.parent_id !== I) returnfalse;
   let n = (0, b.yv)(t.id),
-    r = x.has(t.id);
-  if (n && !r) x.add(t.id), F({
+    r = L.has(t.id);
+  if (n && !r) L.add(t.id), F({
     sortThreadIds: true
   });
   else {
     if (n || !r) returnfalse;
-    x.delete(t.id), F({
+    L.delete(t.id), F({
       sortThreadIds: true
     })
   }
@@ -153,7 +153,7 @@ function W(e) {
     channel: t
   } = e;
   if (null == t.parent_id || t.parent_id !== I) returnfalse;
-  L.add(t.id), F({
+  x.add(t.id), F({
     sortThreadIds: true
   })
 }
@@ -195,10 +195,10 @@ class X extends(i = Chunk442837.ZP.Store) {
   }
   getThreadIds(e, t, n, r) {
     let i = e !== I,
-      a = !(0, c.O)(n, S),
-      o = t !== T,
+      a = !(0, c.O)(n, T),
+      o = t !== S,
       s = r !== A;
-    return I = e, S = n, T = t, A = r, i ? F({
+    return I = e, T = n, S = t, A = r, i ? F({
       refreshThreadIds: true
     }) : o ? F({
       sortThreadIds: true

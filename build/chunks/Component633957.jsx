@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk701488 = require("./701488.js"),
   Chunk967249 = require("./967249.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk853392 = require("./853392.js");
+  Chunk833788 = require("./833788.js");
 
 function B(e) {
   var t, n, a;
@@ -48,7 +48,7 @@ function B(e) {
       application: d,
       channelId: I,
       guildId: w,
-      message: L
+      message: x
     } = e,
     {
       analyticsLocations: B
@@ -56,7 +56,7 @@ function B(e) {
     F = (0, u.O)(),
     V = (0, s.e7)([A.Z], () => A.Z.getChannel(I), [I]),
     H = (null == V || null == (t = V.isThread) ? true : t.call(V)) ? null == V ? true : V.parent_id : I,
-    Y = (0, s.e7)([T.default], () => T.default.getId()),
+    Y = (0, s.e7)([S.default], () => S.default.getId()),
     {
       embeddedActivity: W,
       currentEmbeddedActivity: K,
@@ -78,7 +78,7 @@ function B(e) {
     }, [d.id, q]),
     J = null == Q ? true : Q.details,
     $ = i.useMemo(() => {
-      let e = new S.ZP(d);
+      let e = new T.ZP(d);
       return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.wT), e
     }, [d]),
     ee = (0, h.s5)({
@@ -87,7 +87,7 @@ function B(e) {
       application: $
     }),
     et = null == W,
-    en = (0, x.NL)({
+    en = (0, L.NL)({
       embeddedActivity: W,
       joinability: ee,
       currentEmbeddedActivity: K,
@@ -199,14 +199,14 @@ function B(e) {
       linkType: j.U.ACTIVITY_INSTANCE,
       guildId: w,
       channelId: I,
-      messageId: L.id
+      messageId: x.id
     }
   })
 }
 let Z = Chunk647438.memo(e => {
   let {
     start: t
-  } = e, [n, r] = i.useState(0), a = (0, L.n)(), o = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === a || o;
+  } = e, [n, r] = i.useState(0), a = (0, x.n)(), o = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === a || o;
   return i.useEffect(() => {
     let e = new l.Xp;
     return e.start(c ? 15 * w.Z.Millis.SECOND : w.Z.Millis.SECOND, () => {

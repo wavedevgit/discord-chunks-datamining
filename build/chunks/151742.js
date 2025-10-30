@@ -2,39 +2,49 @@
 /** chunk id: 151742, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => l
-}), require("./358797.js"), require("./388685.js");
-var Chunk147913 = require("./147913.js"),
-  Chunk695346 = require("./695346.js");
+  GR: () => i,
+  NL: () => o,
+  Wu: () => r,
+  zU: () => a
+});
+let r = {
+    零: 0,
+    一: 1,
+    二: 2,
+    兩: 2,
+    三: 3,
+    四: 4,
+    五: 5,
+    六: 6,
+    七: 7,
+    八: 8,
+    九: 9,
+    十: 10,
+    廿: 20,
+    卅: 30
+  },
+  i = {
+    天: 0,
+    日: 0,
+    一: 1,
+    二: 2,
+    三: 3,
+    四: 4,
+    五: 5,
+    六: 6
+  };
 
-function a(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
+function a(e) {
+  let t = 0;
+  for (let n = 0; n < e.length; n++) {
+    let i = e[n];
+    "十" === i ? t = 0 === t ? r[i] : t * r[i] : t += r[i]
+  }
+  return t
 }
-let o = false;
-class s extends Chunk147913.Z {
-  maybeShowChangeLanguageToast() {}
-  setVerifyTimezone() {
-    o = true
-  }
-  ensureTimezoneUpdated() {
-    if (!o) return;
-    o = false;
-    let e = new Date().getTimezoneOffset();
-    Chunk695346.rN.getSetting() !== module && setImmediate(() => Chunk695346.rN.updateSetting(module))
-  }
-  constructor(...e) {
-    super(...e), a(this, "actions", {
-      POST_CONNECTION_OPEN: () => {
-        this.setVerifyTimezone(), this.maybeShowChangeLanguageToast()
-      },
-      OVERLAY_INITIALIZE: this.setVerifyTimezone,
-      USER_SETTINGS_PROTO_UPDATE: this.ensureTimezoneUpdated
-    })
-  }
+
+function o(e) {
+  let t = "";
+  for (let n = 0; n < e.length; n++) t += r[e[n]];
+  return parseInt(t)
 }
-let l = new s

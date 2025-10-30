@@ -72,13 +72,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -103,8 +103,8 @@ let C = {
   P = 1e4,
   w = 6e4,
   D = 12e4,
-  L = 3e5,
-  x = 9e5,
+  x = 3e5,
+  L = 9e5,
   M = 36e5,
   k = 864e5,
   j = .001,
@@ -120,7 +120,7 @@ function Z(e) {
 }
 let F = {
   [Chunk981631.rMx.APP_OPENED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.APP_BACKGROUND]: {
@@ -128,31 +128,31 @@ let F = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.ACK_MESSAGES]: e => e.location_object_type === g.AnalyticsObjectTypes.ACK_MANUAL ? true : {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.guild_id, e.channel_id, e.location_section]
   },
   [Chunk981631.rMx.GUILD_VIEWED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.guild_id, e.is_pending]
   },
   [Chunk981631.rMx.FRIENDS_LIST_CLICKED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.tab_opened]
   },
   [Chunk981631.rMx.FRIENDS_LIST_VIEWED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.tab_opened]
   },
   [Chunk981631.rMx.NOW_PLAYING_CARD_HOVERED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.tab_opened]
   },
   [Chunk981631.rMx.START_SPEAKING]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.server]
   },
   [Chunk981631.rMx.START_LISTENING]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.server]
   },
   [Chunk981631.rMx.ACTIVITY_UPDATED]: {
@@ -161,7 +161,7 @@ let F = {
     deduplicate: true
   },
   [Chunk981631.rMx.CHANNEL_OPENED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => null != e.channel_static_route ? [e.guild_id, e.channel_static_route, e.channel_view] : null != e.location && e.location.startsWith(c.Z.FREQUENT_FRIENDS_ROW) ? [e.channel_id, e.channel_view, e.location] : [e.channel_id, e.channel_view]
   },
   [Chunk981631.rMx.TEXT_IN_VOICE_OPENED]: {
@@ -169,19 +169,19 @@ let F = {
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.NOTIFICATION_VIEWED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.notif_type]
   },
   [Chunk981631.rMx.MEMBER_LIST_VIEWED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.DM_LIST_VIEWED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.NAV_DRAWER_OPENED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.KEYBOARD_SHORTCUT_USED]: {
@@ -196,7 +196,7 @@ let F = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.CHAT_INPUT_COMPONENT_VIEWED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.type]
   },
   [Chunk981631.rMx.ROLE_PAGE_VIEWED]: {
@@ -204,19 +204,19 @@ let F = {
     throttleKeys: e => [e.role_id, e.tab_opened]
   },
   [Chunk981631.rMx.VIDEO_INPUT_INITIALIZED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.AUDIO_INPUT_INITIALIZED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.HUB_ONBOARDING_CAROUSEL_SCROLLED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.HUB_STUDENT_PROMPT_CLICKED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.RPC_SERVER_ERROR_CAUGHT]: {
@@ -250,7 +250,7 @@ let F = {
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.FORUM_CHANNEL_SCROLLED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED]: {
@@ -262,27 +262,27 @@ let F = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.SUMMARIES_UNREAD_BAR_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.ACTIVITY_CARDS_VIEWED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.context, e.guild_id]
   },
   [Chunk981631.rMx.GUILD_TOOLTIP_SHOWN]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.ACK_COMMUNITY_MESSAGES]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.REDESIGN_NAV_BAR_CLICKED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.tab]
   },
   [Chunk981631.rMx.CHANNEL_LIST_END_REACHED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED]: {
@@ -294,28 +294,28 @@ let F = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.KEYWORD_FILTER_MATCH]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.message_id]
   },
   [Chunk981631.rMx.MEDIA_INPUT_VOLUME_CHANGED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.location_stack]
   },
   [Chunk981631.rMx.MEDIA_OUTPUT_VOLUME_CHANGED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.location_stack]
   },
   [Chunk981631.rMx.APP_DMS_QUICK_LAUNCHER_IMPRESSION]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.USER_VOICE_ACTIVITY_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.activity_user_id, e.surface],
     deduplicate: true
   },
   [Chunk981631.rMx.PARTY_VOICE_ACTIVITY_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.voice_channel_id],
     deduplicate: true
   },
@@ -324,7 +324,7 @@ let F = {
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.REDACTABLE_MESSAGE_LOADED]: {
-    throttlePeriod: x,
+    throttlePeriod: L,
     throttleKeys: e => [e.channel_id, e.message_id]
   },
   [Chunk981631.rMx.OPEN_MODAL]: e => e.type === g.jXE.MEDIA_VIEWER ? {
@@ -406,13 +406,13 @@ function q(e) {
     let {
       location: e
     } = a;
-    a = v({}, T(a, ["location"]), V(e))
+    a = v({}, S(a, ["location"]), V(e))
   }
   if (null != a.source) {
     let {
       source: e
     } = a;
-    a = v({}, T(a, ["source"]), H(e))
+    a = v({}, S(a, ["source"]), H(e))
   }
   a.client_performance_cpu = h.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = h.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = h.Z.getCPUCoreCount(), a.accessibility_features = Y(), a.rendered_locale = y.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - U) / 1e3);
   let o = h.Z.getProcessUptime();
@@ -490,7 +490,7 @@ function es(e, t) {
 function el() {
   return (0, Chunk772848.Z)()
 }
-let ec = S(v({}, Chunk990547), {
+let ec = T(v({}, Chunk990547), {
   getCampaignParams: Chunk990547.getCampaignParams,
   setSystemAccessibilityFeatures: W,
   expandEventProperties: q,

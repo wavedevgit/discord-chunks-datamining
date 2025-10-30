@@ -15,8 +15,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk695103 = require("./695103.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk39205 = require("./39205.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk518952 = require("./518952.js"),
+  Chunk10198 = require("./10198.js");
 let m = /^\d+$|^$/;
 
 function g(e, t, n) {
@@ -41,15 +41,15 @@ function E(e) {
     authorizedApplicationId: f.Z.testModeApplicationId,
     authorizationError: f.Z.error,
     authorizing: f.Z.isFetchingAuthorization
-  })), [y, O] = i.useState(null != u ? u : ""), [v, I] = i.useState("8080"), [S, T] = i.useState("localhost"), A = m.test(y);
+  })), [y, O] = i.useState(null != u ? u : ""), [v, I] = i.useState("8080"), [T, S] = i.useState("localhost"), A = m.test(y);
   async function C() {
     c.q$();
-    let e = g(S, v, y);
+    let e = g(T, v, y);
     null != await c.Wt(y, e) && t()
   }
 
   function N() {
-    c.mc(), O(""), T(null)
+    c.mc(), O(""), S(null)
   }
 
   function R(e) {
@@ -57,7 +57,7 @@ function E(e) {
   }
 
   function P(e) {
-    T(e)
+    S(e)
   }
 
   function w() {
@@ -71,7 +71,7 @@ function E(e) {
   }
 
   function D() {
-    return "localhost" !== S ? null : (0, r.jsx)("div", {
+    return "localhost" !== T ? null : (0, r.jsx)("div", {
       className: p.inputWrapper,
       children: (0, r.jsx)(s.oil, {
         required: true,
@@ -84,15 +84,15 @@ function E(e) {
     })
   }
   i.useEffect(() => () => l.Z.wait(() => c.q$()), []);
-  let L = null != u && u === y,
-    x = L ? N : C,
+  let x = null != u && u === y,
+    L = x ? N : C,
     M = i.useMemo(() => [{
       loading: b,
-      disabled: !A || 0 === y.length || "localhost" === S && 0 === v.length,
-      variant: L ? "critical-primary" : "active",
-      text: L ? _.intl.string(_.t.d6TR3I) : _.intl.string(_.t.qwuK5I),
-      onClick: x
-    }], [y.length, b, L, A, v.length, x, S]);
+      disabled: !A || 0 === y.length || "localhost" === T && 0 === v.length,
+      variant: x ? "critical-primary" : "active",
+      text: x ? _.intl.string(_.t.d6TR3I) : _.intl.string(_.t.qwuK5I),
+      onClick: L
+    }], [y.length, b, x, A, v.length, L, T]);
   return (0, r.jsxs)(a.Modal, {
     title: _.intl.string(_.t.f8fzky),
     subtitle: _.intl.string(_.t.a6Vill),
@@ -118,7 +118,7 @@ function E(e) {
         children: (0, r.jsx)(s.q4e, {
           label: _.intl.string(_.t["/GTqXG"]),
           isDisabled: !A || "" === y,
-          value: S,
+          value: T,
           options: [{
             value: "localhost",
             label: _.intl.string(_.t["+Y9Y6r"]),

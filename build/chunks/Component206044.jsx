@@ -2,7 +2,7 @@
 /** chunk id: 206044, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk310696 = require("./310696.js");
+  Chunk74576 = require("./74576.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,15 +69,15 @@ function w(e, t) {
   }), e
 }
 let D = (0, Chunk13941.animated)(Chunk481060.CJ0),
-  L = e => {
+  x = e => {
     var t;
     let {
       isQuestExpired: n,
       quest: a,
       location: N,
       size: P,
-      expansionSpring: L,
-      isAnimating: x,
+      expansionSpring: x,
+      isAnimating: L,
       isExpanded: M,
       isInteracting: k,
       contentPosition: j,
@@ -89,7 +89,7 @@ let D = (0, Chunk13941.animated)(Chunk481060.CJ0),
     } = (0, d.ZP)(), [F, V] = i.useState(null), [H, Y] = i.useState(null), W = (0, _.Z)(e => {
       let t = e.target;
       V(t.offsetWidth), Y(t.scrollWidth)
-    }), K = (0, f.y)(W), z = (0, I.uq)(N), q = N === m.jn.QUESTS_EMBED, X = (0, h.t5)(a, S.dr.QUESTS_CARD, N, G), Q = (null == (t = a.userStatus) ? true : t.completedAt) != null, J = (0, p.O5)(), $ = (0, h.B6)(a.config.expiresAt), ee = (0, h.B6)(g.r.build(a.config).rewardsExpireAt), et = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), en = e => {
+    }), K = (0, f.y)(W), z = (0, I.uq)(N), q = N === m.jn.QUESTS_EMBED, X = (0, h.t5)(a, T.dr.QUESTS_CARD, N, G), Q = (null == (t = a.userStatus) ? true : t.completedAt) != null, J = (0, p.O5)(), $ = (0, h.B6)(a.config.expiresAt), ee = (0, h.B6)(g.r.build(a.config).rewardsExpireAt), et = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), en = e => {
       e.stopPropagation(), e.currentTarget.blur(), U(), J({
         questId: a.id,
         questContent: N,
@@ -103,7 +103,7 @@ let D = (0, Chunk13941.animated)(Chunk481060.CJ0),
       gameTileSize: b.fF.MEDIUM,
       quest: a,
       separatorSpacing: b.US.MEDIUM,
-      theme: T.BR.DARK,
+      theme: S.BR.DARK,
       withGameTile: !q || null == a.config.cosponsorMetadata
     });
     return (0, r.jsxs)("div", {
@@ -133,7 +133,7 @@ let D = (0, Chunk13941.animated)(Chunk481060.CJ0),
             [C.headerContentEmbed]: q
           }),
           style: {
-            y: z ? L.to({
+            y: z ? x.to({
               range: [0, 1],
               output: [I.DJ, 0]
             }) : true
@@ -141,13 +141,13 @@ let D = (0, Chunk13941.animated)(Chunk481060.CJ0),
           children: [z && (0, r.jsx)(s.animated.div, {
             className: C.headerCollapsedContent,
             style: {
-              opacity: L.to({
+              opacity: x.to({
                 range: [0, 1],
                 output: [1, 0]
               }),
-              visibility: x || !M ? "inherit" : "hidden"
+              visibility: L || !M ? "inherit" : "hidden"
             },
-            "aria-hidden": !x && M,
+            "aria-hidden": !L && M,
             children: (0, r.jsxs)(u.kL8, {
               "aria-label": A.intl.string(A.t.dcl9MQ),
               onClick: en,
@@ -158,7 +158,7 @@ let D = (0, Chunk13941.animated)(Chunk481060.CJ0),
                   quest: a,
                   questContent: N,
                   className: C.headerCollapsedRewardTile,
-                  location: S.dr.QUESTS_CARD,
+                  location: T.dr.QUESTS_CARD,
                   sourceQuestContent: G
                 })
               }), (0, r.jsxs)("div", {
@@ -183,13 +183,13 @@ let D = (0, Chunk13941.animated)(Chunk481060.CJ0),
               [C.outerContainerEmbed]: q
             }),
             style: {
-              opacity: L.to({
+              opacity: x.to({
                 range: [0, 1],
                 output: [0, 1]
               }),
-              visibility: x || M ? "inherit" : "hidden"
+              visibility: L || M ? "inherit" : "hidden"
             },
-            "aria-hidden": !x && !M,
+            "aria-hidden": !L && !M,
             children: (0, r.jsxs)("div", {
               className: C.headerExpandedWrapper,
               children: [(0, r.jsxs)("div", {
@@ -228,7 +228,7 @@ let D = (0, Chunk13941.animated)(Chunk481060.CJ0),
         }), (0, r.jsxs)(s.animated.div, {
           className: C.iconsContainer,
           style: {
-            top: z ? L.to({
+            top: z ? x.to({
               range: [0, 1],
               output: [I.DJ / 2 - I.Z$ / 2, I.jc]
             }) : I.jc
@@ -243,10 +243,10 @@ let D = (0, Chunk13941.animated)(Chunk481060.CJ0),
             sourceQuestContent: G,
             children: e => (0, r.jsx)(s.animated.div, {
               style: {
-                opacity: L,
-                visibility: x || M ? "inherit" : "hidden"
+                opacity: x,
+                visibility: L || M ? "inherit" : "hidden"
               },
-              "aria-hidden": !x && !M,
+              "aria-hidden": !L && !M,
               children: (0, r.jsx)(u.P3F, w(R({}, e), {
                 className: C.iconWrapper,
                 "aria-label": A.intl.string(A.t.DEoVWZ),
@@ -262,7 +262,7 @@ let D = (0, Chunk13941.animated)(Chunk481060.CJ0),
             "aria-label": M ? A.intl.string(A.t.iTcuma) : A.intl.string(A.t.dcl9MQ),
             children: (0, r.jsx)(D, {
               style: {
-                rotate: L.to({
+                rotate: x.to({
                   range: [0, 1],
                   output: [0, 180]
                 })

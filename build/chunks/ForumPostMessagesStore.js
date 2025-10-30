@@ -130,7 +130,7 @@ function I(e) {
   p[n] = d({}, c), "MESSAGE_REACTION_ADD" === t ? p[n].firstMessage = c.firstMessage.addReaction(a, f, e.colors, s) : p[n].firstMessage = c.firstMessage.removeReaction(a, f, s)
 }
 
-function S(e) {
+function T(e) {
   let {
     channelId: t,
     messageId: n,
@@ -144,7 +144,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     channelId: t,
     messageId: n
@@ -201,9 +201,9 @@ let R = new N(Chunk570140.Z, {
   THREAD_CREATE: v,
   MESSAGE_REACTION_ADD: I,
   MESSAGE_REACTION_REMOVE: I,
-  MESSAGE_REACTION_REMOVE_ALL: T,
+  MESSAGE_REACTION_REMOVE_ALL: S,
   MESSAGE_REACTION_REMOVE_EMOJI: A,
-  MESSAGE_REACTION_ADD_MANY: S,
+  MESSAGE_REACTION_ADD_MANY: T,
   LOAD_FORUM_POSTS: m,
   LOAD_THREADS_SUCCESS: g,
   LOAD_ARCHIVED_THREADS_SUCCESS: g,

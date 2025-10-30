@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk865672 = require("./865672.jsx"),
   Chunk109161 = require("./109161.jsx"),
-  Chunk836484 = require("./836484.js");
+  Chunk10515 = require("./10515.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -88,9 +88,9 @@ function O(e) {
     animateRoleGradient: E,
     variant: b,
     displayNameStylesFont: y = ""
-  } = e, O = i.useContext(u.d), [v, I] = i.useState(false), S = i.useCallback(() => {
+  } = e, O = i.useContext(u.d), [v, I] = i.useState(false), T = i.useCallback(() => {
     I(true)
-  }, []), T = i.useCallback(() => {
+  }, []), S = i.useCallback(() => {
     I(false)
   }, []), A = "username" === t, C = "dot" === t, N = null != c && null != c.primaryColor && null != c.secondaryColor, R = A && N, {
     gradientStyle: P,
@@ -100,12 +100,12 @@ function O(e) {
     colorStrings: c,
     roleStyle: "username",
     animateGradient: E || v || (null == O ? true : O.animate)
-  }), L = (0, f.EJ)(n), x = {
+  }), x = (0, f.EJ)(n), L = {
     className: o()(p.name, g, y, {
       [p.username]: A,
       [w]: R
     }),
-    children: L
+    children: x
   }, M = {
     className: o()(p.nameGlow, D, y),
     children: n
@@ -118,8 +118,8 @@ function O(e) {
   }) : null;
   return (0, r.jsxs)("span", {
     className: o()(h, p.container),
-    onMouseEnter: S,
-    onMouseLeave: T,
+    onMouseEnter: T,
+    onMouseLeave: S,
     children: ["left" === d && k, (0, r.jsxs)("span", {
       className: p.nameContainer,
       style: m({
@@ -129,7 +129,7 @@ function O(e) {
         tag: "span",
         color: "currentColor",
         variant: b
-      }, x)) : (0, r.jsx)("span", m({}, x)), R && (null != b ? (0, r.jsx)(s.xvT, m({
+      }, L)) : (0, r.jsx)("span", m({}, L)), R && (null != b ? (0, r.jsx)(s.xvT, m({
         tag: "span",
         color: "currentColor",
         "aria-hidden": true,

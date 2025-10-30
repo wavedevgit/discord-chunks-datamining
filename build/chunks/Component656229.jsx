@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk486324 = require("./486324.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk579534 = require("./579534.js");
+  Chunk674932 = require("./674932.js");
 
 function _(e) {
   let {
@@ -29,7 +29,7 @@ function _(e) {
     onUpsellClick: b
   } = e, {
     newestAnalyticsLocation: y
-  } = (0, a.ZP)(), O = p || (null == n ? true : n.canUsePremiumProfileCustomization) || false, v = O ? i.vdY : i.SrA, I = (0, o.M)(O), S = () => {
+  } = (0, a.ZP)(), O = p || (null == n ? true : n.canUsePremiumProfileCustomization) || false, v = O ? i.vdY : i.SrA, I = (0, o.M)(O), T = () => {
     if (!O && !I) {
       null == b || b();
       return
@@ -49,7 +49,7 @@ function _(e) {
     pendingAccentColor: m,
     canUsePremiumProfileCustomization: p,
     children: !E && (0, r.jsxs)(i.P3F, {
-      onClick: S,
+      onClick: T,
       className: f.clickable,
       children: [(0, r.jsx)(v, {
         size: "xs",

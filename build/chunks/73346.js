@@ -2,7 +2,7 @@
 /** chunk id: 73346, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Gg: () => x,
+  Gg: () => L,
   Kb: () => R,
   Ww: () => k,
   ZI: () => A,
@@ -52,8 +52,8 @@ function I(e) {
   return e
 }
 require("./388032.jsx"), l().shim();
-let S = !Chunk873546.tq && !Chunk873546.Em && false !== (0, Chunk526167.vu)(),
-  T = 3;
+let T = !Chunk873546.tq && !Chunk873546.Em && false !== (0, Chunk526167.vu)(),
+  S = 3;
 
 function A(e, t) {
   let {
@@ -89,7 +89,7 @@ function C(e, t, n, r) {
     default:
       r = "webp"
   }
-  "webp" !== r || S || (r = "png");
+  "webp" !== r || T || (r = "png");
   let s = "string" == typeof t ? t : t.id,
     l = i = "https:";
   return a = null != o ? "".concat(l, "//").concat(o, "/app-assets/").concat(e, "/store/").concat(s, ".").concat(r) : "".concat(l).concat(window.GLOBAL_ENV.API_ENDPOINT).concat(O.ANM.STORE_ASSET(e, s, r)), null != n && (a += "?size=".concat((0, f.oO)(n * (0, f.x_)()))), a
@@ -166,11 +166,11 @@ function D(e, t, n) {
     userInfo: i
   }
 }
-let L = [];
+let x = [];
 
-function x(e, t, n, r, a) {
+function L(e, t, n, r, a) {
   let o = t.get(e);
-  if (null == o) return L;
+  if (null == o) return x;
   let s = o.applicationId,
     l = [],
     c = [],
@@ -202,7 +202,7 @@ function k(e, t, n) {
     type: O.AzA.HAS_FREE_PREMIUM_CONTENT
   });
   let s = r.releaseDate;
-  return null != s && o()().diff(s, "months") < T && (r.accessType === O.kGb.EARLY_ACCESS ? a.push({
+  return null != s && o()().diff(s, "months") < S && (r.accessType === O.kGb.EARLY_ACCESS ? a.push({
     type: O.AzA.EARLY_ACCESS,
     releaseDate: s
   }) : a.push({

@@ -33,15 +33,15 @@ let y = 25,
   O = false,
   v = true,
   I = false,
-  S = false,
-  T = null,
+  T = false,
+  S = null,
   A = Chunk683860.z.LATEST_ACTIVITY,
   C = [],
   N = 0,
   R = Chunk697988.z.MATCH_SOME;
 
 function P() {
-  O = false, v = true, I = false, S = false, T = null, A = Chunk683860.z.LATEST_ACTIVITY, r = new Set, N = 0, C = [], R = Chunk697988.z.MATCH_SOME
+  O = false, v = true, I = false, T = false, S = null, A = Chunk683860.z.LATEST_ACTIVITY, r = new Set, N = 0, C = [], R = Chunk697988.z.MATCH_SOME
 }
 
 function w(e, t) {
@@ -49,14 +49,14 @@ function w(e, t) {
 }
 
 function D(e) {
-  e.channelId === T && e.sortOrder === A && (0, c.O)(e.tagFilter, r) && e.tagSetting === R || P(), T = e.channelId, A = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), R = e.tagSetting, O = true, v = false
+  e.channelId === S && e.sortOrder === A && (0, c.O)(e.tagFilter, r) && e.tagSetting === R || P(), S = e.channelId, A = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), R = e.tagSetting, O = true, v = false
 }
 
-function L(e) {
-  if (e.channelId !== T || e.sortOrder !== A || !(0, c.O)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
+function x(e) {
+  if (e.channelId !== S || e.sortOrder !== A || !(0, c.O)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
   let t = e.threads.filter(e => p.AW.has(e.type)).map(e => e.id);
   C = C.concat(t);
-  let n = h.Z.getChannel(T);
+  let n = h.Z.getChannel(S);
   null != n && n.isForumLikeChannel() && (0, _.Hr)({
     guildId: n.guild_id,
     channelId: n.id,
@@ -67,16 +67,16 @@ function L(e) {
   }), M(), I = e.hasMore, N = e.offset + y, O = false, v = false
 }
 
-function x(e) {
-  return (null == T || null == e.channelId || T === e.channelId) && M()
+function L(e) {
+  return (null == S || null == e.channelId || S === e.channelId) && M()
 }
 
 function M() {
-  if (null == T) returnfalse;
+  if (null == S) returnfalse;
   let e = !I,
     t = Chunk592125.Z.getChannel(C[C.length - 1]),
     n = null == exports ? null : w(exports, A);
-  C = o()(Chunk592125.Z.getAllThreadsForParent(T)).filter(e => e.isArchivedThread()).filter(t => {
+  C = o()(Chunk592125.Z.getAllThreadsForParent(S)).filter(e => e.isArchivedThread()).filter(t => {
     if (0 !== r.size) {
       var i, a;
       if (R === s.z.MATCH_SOME) {
@@ -95,12 +95,12 @@ function M() {
 }
 
 function k(e) {
-  if (e.channelId !== T || e.sortOrder !== A || !(0, c.O)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
-  O = false, S = true, v = false
+  if (e.channelId !== S || e.sortOrder !== A || !(0, c.O)(e.tagFilter, r) || e.tagSetting !== R) returnfalse;
+  O = false, T = true, v = false
 }
 
 function j(e) {
-  if (e.channel.id !== T) returnfalse;
+  if (e.channel.id !== S) returnfalse;
   P()
 }
 
@@ -120,7 +120,7 @@ function B(e) {
   let {
     channel: t
   } = e;
-  return T === t.parent_id && !!(0, f.yv)(t.id) && void U(t.id)
+  return S === t.parent_id && !!(0, f.yv)(t.id) && void U(t.id)
 }
 let Z = [];
 class F extends(i = Chunk442837.ZP.Store) {
@@ -128,7 +128,7 @@ class F extends(i = Chunk442837.ZP.Store) {
     this.waitFor(Chunk592125.Z, Chunk569471.Z, Chunk306680.ZP)
   }
   get canLoadMore() {
-    return I && !O && !S
+    return I && !O && !T
   }
   get nextOffset() {
     return N
@@ -137,10 +137,10 @@ class F extends(i = Chunk442837.ZP.Store) {
     return v
   }
   isLoading(e, t, n, i) {
-    return T === e && A === t && (0, c.O)(r, n) && R === i ? O : (P(), false)
+    return S === e && A === t && (0, c.O)(r, n) && R === i ? O : (P(), false)
   }
   getThreads(e, t, n, i) {
-    return T === e && A === t && (0, c.O)(r, n) && R === i ? C : Z
+    return S === e && A === t && (0, c.O)(r, n) && R === i ? C : Z
   }
 }
 b(F, "displayName", "ArchivedThreadsStore");
@@ -150,7 +150,7 @@ let V = new F(Chunk570140.Z, {
   THREAD_UPDATE: B,
   CHANNEL_DELETE: j,
   LOAD_ARCHIVED_THREADS: D,
-  LOAD_ARCHIVED_THREADS_SUCCESS: L,
+  LOAD_ARCHIVED_THREADS_SUCCESS: x,
   LOAD_ARCHIVED_THREADS_FAIL: k,
-  RESORT_THREADS: x
+  RESORT_THREADS: L
 })

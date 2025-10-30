@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk112843 = require("./112843.js"),
   Chunk524484 = require("./524484.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk749714 = require("./749714.js");
+  Chunk892879 = require("./892879.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -90,7 +90,7 @@ let C = {
     title: Chunk388032.intl.string(Chunk388032.t.V66giQ),
     description: Chunk388032.intl.string(Chunk388032.t.fiHV7u)
   }],
-  L = () => [{
+  x = () => [{
     location: Chunk524484.oZ.CHAT_INPUT,
     title: Chunk388032.intl.string(Chunk388032.t.vUcvPP),
     description: Chunk388032.intl.string(Chunk388032.t.y00OrF)
@@ -104,7 +104,7 @@ let C = {
     description: Chunk388032.intl.string(Chunk388032.t["mqfw/H"])
   }];
 
-function x(e) {
+function L(e) {
   let {
     disabled: t,
     locations: n,
@@ -115,7 +115,7 @@ function x(e) {
     description: e.description,
     checked: i[e.location],
     disabled: t,
-    onChange: t => a(A(S({}, i), {
+    onChange: t => a(A(T({}, i), {
       [e.location]: t
     }))
   }, e.location));
@@ -145,7 +145,7 @@ function k(e) {
     },
     updateSettings: i
   } = e, a = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), s = e => {
-    e || (0, p.T)(h.hn.DISABLE_POGGERMODE), e && (!n || a) ? (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, A(S({
+    e || (0, p.T)(h.hn.DISABLE_POGGERMODE), e && (!n || a) ? (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, A(T({
       header: a ? O.intl.string(O.t["FxT+p0"]) : O.intl.string(O.t.TAZ4F9),
       confirmText: O.intl.string(O.t.JFfins),
       cancelText: O.intl.string(O.t["ETE/oC"]),
@@ -231,7 +231,7 @@ function j(e) {
         }, 0),
         onValueRender: e => "".concat(e)
       })]
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(L, {
       disabled: c,
       locations: D(),
       settingsLocations: o,
@@ -338,9 +338,9 @@ function G(e) {
         }, 1),
         onMarkerRender: e => e === R[R.length - 1] ? O.intl.string(O.t["4rbMWc"]) : "".concat(100 * e, "%")
       })]
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(L, {
       disabled: d,
-      locations: L(),
+      locations: x(),
       settingsLocations: a,
       onChange: e => s({
         screenshakeEnabledLocations: e
@@ -518,14 +518,14 @@ function K() {
     Math.random() > .99 && (0, Chunk57562.T)(Chunk955204.hn.VISITOR_100)
   }, []), (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk578361.Z, {
-      className: Chunk749714.slideAnimator,
+      className: Chunk892879.slideAnimator,
       step: module,
       direction: require,
       children: H(module, exports, Chunk460181)
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk88658 ? Chunk749714.enableAnimationOverlayVisible : Chunk749714.enableAnimationOverlayHidden,
+      className: Chunk88658 ? Chunk892879.enableAnimationOverlayVisible : Chunk892879.enableAnimationOverlayHidden,
       children: (0, Chunk951288.jsx)(Chunk481060.Fmz, {
-        className: Chunk749714.enableAnimation,
+        className: Chunk892879.enableAnimation,
         importData: F,
         shouldAnimate: Chunk88658,
         autoplay: false,

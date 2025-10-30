@@ -53,7 +53,7 @@ function f(e, t, n) {
     } = _(t, n);
     e._raw = (e._raw || "") + a;
     let o = m(i);
-    return (0, r.wB)(e, T(g(o, true))), true
+    return (0, r.wB)(e, S(g(o, true))), true
   } catch (e) {
     returnfalse
   }
@@ -128,24 +128,24 @@ function v(e) {
 
 function I(e) {
   return {
-    attributes: S(e),
+    attributes: T(e),
     value: g(e)
   }
 }
 
-function S(e) {
+function T(e) {
   let t = {};
   for (let n = 0; n < e.attributes.length; n++) t[e.attributes[n].nodeName] = decodeURIComponent(escape(e.attributes[n].value));
   return t
 }
 
-function T(e) {
+function S(e) {
   let t = {};
   if ("string" == typeof e) return e;
   for (let n in e) {
     let i = e[n];
     Array.isArray(i) || (i = [i]), i.forEach(e => {
-      (0, r.wB)(t, A(e.attributes)), "object" == typeof e.value && (0, r.wB)(t, x(e.value))
+      (0, r.wB)(t, A(e.attributes)), "object" == typeof e.value && (0, r.wB)(t, L(e.value))
     })
   }
   return t
@@ -195,15 +195,15 @@ function w(e) {
 
 function D(e) {
   let t = [];
-  for (let n in e) t.push(`${L(n)}: ${P(e[n].value)}`);
+  for (let n in e) t.push(`${x(n)}: ${P(e[n].value)}`);
   return t.join("; ")
 }
 
-function L(e) {
+function x(e) {
   return "CiAdrCity" === e ? "CreatorCity" : "CiAdrCtry" === e ? "CreatorCountry" : "CiAdrExtadr" === e ? "CreatorAddress" : "CiAdrPcode" === e ? "CreatorPostalCode" : "CiAdrRegion" === e ? "CreatorRegion" : "CiEmailWork" === e ? "CreatorWorkEmail" : "CiTelWork" === e ? "CreatorWorkPhone" : "CiUrlWork" === e ? "CreatorWorkUrl" : e
 }
 
-function x(e) {
+function L(e) {
   let t = {};
   for (let n in e) try {
     N(n) || (t[R(n)] = M(e[n], n))
@@ -271,7 +271,7 @@ function Y(e, t) {
     value: {},
     attributes: {}
   };
-  return true !== e.value["rdf:Description"] && ((0, r.wB)(n.value, A(e.value["rdf:Description"].attributes)), (0, r.wB)(n.attributes, Z(e)), e = e.value["rdf:Description"]), (0, r.wB)(n.value, x(e.value)), n.description = P(n.value, t), n
+  return true !== e.value["rdf:Description"] && ((0, r.wB)(n.value, A(e.value["rdf:Description"].attributes)), (0, r.wB)(n.attributes, Z(e)), e = e.value["rdf:Description"]), (0, r.wB)(n.value, L(e.value)), n.description = P(n.value, t), n
 }
 
 function W(e) {
@@ -313,7 +313,7 @@ function Q(e) {
 }
 
 function J(e, t) {
-  let n = $(e) || T(e.value);
+  let n = $(e) || S(e.value);
   return {
     value: n,
     attributes: Z(e),

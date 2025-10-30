@@ -34,15 +34,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk293810 = require("./293810.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk126683 = require("./126683.js");
-let L = 24,
-  x = 5,
+  Chunk546810 = require("./546810.js");
+let x = 24,
+  L = 5,
   M = e => {
     let {
       benefits: t,
       header: n,
       guildId: a
-    } = e, [o, s] = i.useState(false), l = o ? t : t.slice(0, x), u = t.length > x, f = t.length - x, _ = w.intl.formatToPlainString(w.t.XSdy72, {
+    } = e, [o, s] = i.useState(false), l = o ? t : t.slice(0, L), u = t.length > L, f = t.length - L, _ = w.intl.formatToPlainString(w.t.XSdy72, {
       numTruncated: f
     }), p = () => s(e => !e), m = (0, d.Dt)();
     return 0 === t.length ? null : (0, r.jsxs)("div", {
@@ -59,7 +59,7 @@ let L = 24,
         className: D.benefitsList,
         "aria-labelledby": m,
         children: l.map((e, t) => (0, r.jsx)("li", {
-          children: (0, r.jsx)(T.Z, {
+          children: (0, r.jsx)(S.Z, {
             guildId: a,
             benefit: e
           }, (0, h.ab)(e))
@@ -81,7 +81,7 @@ let L = 24,
       return p.ZP.getEmojiURL({
         id: e.id,
         animated: e.animated,
-        size: L
+        size: x
       })
     }
     return 0 === o.length ? null : (0, r.jsxs)("div", {
@@ -105,8 +105,8 @@ let L = 24,
             children: (0, r.jsx)("img", {
               className: D.emojiListEmoji,
               src: s(e),
-              width: L,
-              height: L,
+              width: x,
+              height: x,
               alt: e.name
             })
           }, null != (n = e.id) ? n : t)
@@ -174,13 +174,13 @@ let L = 24,
       canOpenModal: O,
       cannotOpenReason: v,
       isCheckingTrialEligibility: I
-    } = (0, N.Z)(p, n, a, d), T = (0, s.e7)([_.Z], () => _.Z.isSyncing), {
-      activeSubscription: L,
-      activeSubscriptionListing: x
-    } = (0, E.Z)(a), M = (null == x ? true : x.id) === t, k = (null == L ? true : L.status) === P.O0b.CANCELED, [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useCallback(e => {
+    } = (0, N.Z)(p, n, a, d), S = (0, s.e7)([_.Z], () => _.Z.isSyncing), {
+      activeSubscription: x,
+      activeSubscriptionListing: L
+    } = (0, E.Z)(a), M = (null == L ? true : L.id) === t, k = (null == x ? true : x.status) === P.O0b.CANCELED, [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useCallback(e => {
       let t = false;
       null != e && (t = e.scrollHeight - e.clientHeight > 1), F(t)
-    }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == L && z, X = () => B(e => !e), Q = (0, u.Z)(R.iP), [J, $] = i.useState(false), ee = J || !Q, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == p ? true : p.published) === true, ei = (null == p ? true : p.soft_deleted) === true, ea = w.intl.string(w.t.KzmEA9);
+    }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == x && z, X = () => B(e => !e), Q = (0, u.Z)(R.iP), [J, $] = i.useState(false), ee = J || !Q, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == p ? true : p.published) === true, ei = (null == p ? true : p.soft_deleted) === true, ea = w.intl.string(w.t.KzmEA9);
     return (er || en) && !ei ? (0, r.jsxs)("article", {
       className: D.container,
       "aria-label": H,
@@ -230,10 +230,10 @@ let L = 24,
               }), (0, r.jsx)(c.Button, {
                 fullWidth: true,
                 text: w.intl.string(w.t.fM5ZsX),
-                disabled: !O || T,
+                disabled: !O || S,
                 loading: I,
                 onClick: y,
-                icon: S.Z,
+                icon: T.Z,
                 variant: "primary"
               })]
             }), (0, r.jsxs)(c.Kqy, {

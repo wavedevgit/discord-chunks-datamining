@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk358595 = require("./358595.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk105341 = require("./105341.js");
+  Chunk739236 = require("./739236.js");
 
 function O(e) {
   let t, {
@@ -31,8 +31,8 @@ function O(e) {
       onTransitionToInviteChannel: v,
       onAcceptInstantInvite: I
     } = e,
-    S = O === a.author.id,
-    T = n.state === E.r2o.ACCEPTING,
+    T = O === a.author.id,
+    S = n.state === E.r2o.ACCEPTING,
     A = (0, l.e7)([p.Z], () => null != n.channel ? p.Z.getChannel(n.channel.id) : null, [n]);
   o()(null == A || A.isPrivate(), "must be a private channel");
   let {
@@ -62,10 +62,10 @@ function O(e) {
   let w = b.intl.string(b.t.XpeFYr),
     D = "active";
   N && (w = b.intl.string(b.t.cEnaWx), D = "secondary");
-  let L = b.intl.string(b.t["3p3/BK"]);
-  return S && (L = b.intl.string(b.t.qmtuXE)), (0, r.jsxs)(f.Z, {
+  let x = b.intl.string(b.t["3p3/BK"]);
+  return T && (x = b.intl.string(b.t.qmtuXE)), (0, r.jsxs)(f.Z, {
     children: [(0, r.jsx)(f.Z.Header, {
-      text: L
+      text: x
     }), (0, r.jsxs)(f.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: y.headerLine,
@@ -81,7 +81,7 @@ function O(e) {
         })]
       }), (0, r.jsx)(s.zxk, {
         onClick: R,
-        loading: T,
+        loading: S,
         disabled: N,
         variant: D,
         text: w,

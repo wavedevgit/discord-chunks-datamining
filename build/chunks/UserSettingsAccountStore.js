@@ -30,11 +30,11 @@ function D() {
   R = Chunk981631.QZA.CLOSED, P = {}
 }
 
-function L() {
+function x() {
   R = Chunk981631.QZA.SUBMITTING, P = {}
 }
 
-function x(e) {
+function L(e) {
   var t;
   if (R !== C.QZA.SUBMITTING) returnfalse;
   R = C.QZA.OPEN, P = null != (t = e.errors) ? t : {}
@@ -93,7 +93,7 @@ function F(e) {
   let {
     item: t
   } = e;
-  (0, T.M)(t) ? (E = t, b = null) : (0, A.H)(t) && (E = null, b = t)
+  (0, S.M)(t) ? (E = t, b = null) : (0, A.H)(t) && (E = null, b = t)
 }
 
 function V(e) {
@@ -326,8 +326,8 @@ let e_ = new ef(Chunk570140.Z, {
   USER_SETTINGS_MODAL_SET_SECTION: M,
   USER_SETTINGS_ACCOUNT_CLOSE: D,
   USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: ed,
-  USER_SETTINGS_ACCOUNT_SUBMIT: L,
-  USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: x,
+  USER_SETTINGS_ACCOUNT_SUBMIT: x,
+  USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: L,
   USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: k,
   USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: j,
   USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED: U,

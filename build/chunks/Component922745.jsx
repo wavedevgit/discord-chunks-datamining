@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk507675 = require("./507675.jsx"),
   Chunk273716 = require("./273716.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk186880 = require("./186880.js");
+  Chunk533362 = require("./533362.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -117,8 +117,8 @@ function I(e) {
     hideControls: E = false,
     className: O,
     innerClassName: I,
-    videoControlsClassName: S
-  } = e, T = y(e, ["children", "idle", "onJumpToChannel", "onHide", "backgroundKey", "onActive", "onForceIdle", "renderBottomLeftControls", "renderBottomRightControls", "screenMessage", "hideControls", "className", "innerClassName", "videoControlsClassName"]);
+    videoControlsClassName: T
+  } = e, S = y(e, ["children", "idle", "onJumpToChannel", "onHide", "backgroundKey", "onActive", "onForceIdle", "renderBottomLeftControls", "renderBottomRightControls", "screenMessage", "hideControls", "className", "innerClassName", "videoControlsClassName"]);
   return (0, r.jsxs)("div", {
     onMouseMove: u,
     onMouseDown: u,
@@ -135,14 +135,14 @@ function I(e) {
     }), null != m ? (0, r.jsx)(p.Z, b({
       size: "small"
     }, m)) : null, !E && (0, r.jsxs)("div", {
-      className: a()(g.videoControls, S, "theme-dark"),
+      className: a()(g.videoControls, T, "theme-dark"),
       children: [(0, r.jsx)("div", {
         className: g.topControls,
         children: (0, r.jsx)(v, b({
           idle: n,
           onJumpToChannel: i,
           onHide: o
-        }, T))
+        }, S))
       }), (0, r.jsxs)("div", {
         className: g.bottomControls,
         children: [(0, r.jsx)(c.Z, {

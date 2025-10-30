@@ -62,7 +62,7 @@ function v(e, t) {
 
 function I(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -70,7 +70,7 @@ function I(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -78,7 +78,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   return i.useCallback(n => {
     let r = m.Z.getChannel(t);
     null != r && null != e && (0, g.Pv)(n, e, r)
@@ -93,7 +93,7 @@ function A(e) {
     messageId: g,
     stopPropagation: b = false,
     ariaLabel: O,
-    enableDisplayNameStyles: S = false
+    enableDisplayNameStyles: T = false
   } = e, A = i.useRef(null), {
     analyticsLocations: C
   } = (0, c.ZP)(l.Z.USERNAME), N = (0, p.ZP)(m, null == t ? true : t.id), R = (0, u.Z)({
@@ -101,17 +101,17 @@ function A(e) {
     guildId: m
   }), P = (0, _.j)({
     displayNameStyles: R
-  }), w = T(t, n), D = i.useContext(o.d);
+  }), w = S(t, n), D = i.useContext(o.d);
   return (0, E.Z)({
     subscribeToGroupId: g,
     authorId: null == t ? true : t.id,
-    shouldSubscribe: S && null != R && null == m
+    shouldSubscribe: T && null != R && null == m
   }), i.useCallback(e => (i, o) => {
     let l = null == e ? true : e.colorStrings,
       u = N && null != l && null != l.primaryColor && null != l.secondaryColor,
       _ = (t, n) => {
         var o, c, _;
-        if (!S || null == R || null != m) return (0, r.jsx)(s.rz2, v(y({}, null != t ? t : {}), {
+        if (!T || null == R || null != m) return (0, r.jsx)(s.rz2, v(y({}, null != t ? t : {}), {
           ref: A,
           onContextMenu: w,
           name: null != (c = (0, s.qgQ)(i)) ? c : "",
@@ -160,5 +160,5 @@ function A(e) {
         }
       }) : _(true, true)
     }, o)
-  }, [C, t, n, m, g, w, b, O, N, P, null == D ? true : D.animate, R, S])
+  }, [C, t, n, m, g, w, b, O, N, P, null == D ? true : D.animate, R, T])
 }

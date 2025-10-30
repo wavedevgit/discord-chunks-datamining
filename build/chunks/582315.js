@@ -28,19 +28,19 @@ function p(e) {
     isDisabled: O,
     onAction: v,
     allowsDifferentPressOrigin: I,
-    linkBehavior: S = "action"
-  } = e, T = (0, i.tv)();
+    linkBehavior: T = "action"
+  } = e, S = (0, i.tv)();
   t = (0, a.Me)(t);
   let A = e => {
     if ("keyboard" === e.pointerType && (0, r.FJ)(e)) n.toggleSelection(p);
     else {
       if ("none" === n.selectionMode) return;
       if (n.isLink(p)) {
-        if ("selection" === S && g.current) {
+        if ("selection" === T && g.current) {
           let t = n.getItemProps(p);
-          T.open(g.current, e, t.href, t.routerOptions), n.setSelectedKeys(n.selectedKeys);
+          S.open(g.current, e, t.href, t.routerOptions), n.setSelectedKeys(n.selectedKeys);
           return
-        } else if ("override" === S || "none" === S) return
+        } else if ("override" === T || "none" === T) return
       }
       "single" === n.selectionMode ? n.isSelected(p) && !n.disallowEmptySelection ? n.toggleSelection(p) : n.replaceSelection(p) : e && e.shiftKey ? n.extendSelection(p) : "toggle" === n.selectionBehavior || e && ((0, o.y)(e) || "touch" === e.pointerType || "virtual" === e.pointerType) ? n.toggleSelection(p) : n.replaceSelection(p)
     }
@@ -57,14 +57,14 @@ function p(e) {
       e.target === g.current && n.setFocusedKey(p)
     }
   };
-  let N = n.isLink(p) && "override" === S,
+  let N = n.isLink(p) && "override" === T,
     R = v && "action" === e.UNSTABLE_itemBehavior,
-    P = n.isLink(p) && "selection" !== S && "none" !== S,
+    P = n.isLink(p) && "selection" !== T && "none" !== T,
     w = !O && n.canSelectItem(p) && !N && !R,
     D = (v || P) && !O,
-    L = D && ("replace" === n.selectionBehavior ? !w : !w || n.isEmpty),
-    x = D && w && "replace" === n.selectionBehavior,
-    M = L || x,
+    x = D && ("replace" === n.selectionBehavior ? !w : !w || n.isEmpty),
+    L = D && w && "replace" === n.selectionBehavior,
+    M = x || L,
     k = (0, _.useRef)(null),
     j = M && w,
     U = (0, _.useRef)(false),
@@ -77,21 +77,21 @@ function p(e) {
           bubbles: true
         }))
       }
-      P && g.current && T.open(g.current, e, B.href, B.routerOptions)
+      P && g.current && S.open(g.current, e, B.href, B.routerOptions)
     },
     F = {
       ref: g
     };
   if (E ? (F.onPressStart = e => {
       k.current = e.pointerType, U.current = j, "keyboard" === e.pointerType && (!M || m()) && A(e)
-    }, I ? (F.onPressUp = L ? true : e => {
+    }, I ? (F.onPressUp = x ? true : e => {
       "mouse" === e.pointerType && w && A(e)
-    }, F.onPress = L ? Z : e => {
+    }, F.onPress = x ? Z : e => {
       "keyboard" !== e.pointerType && "mouse" !== e.pointerType && w && A(e)
     }) : F.onPress = e => {
-      L || x && "mouse" !== e.pointerType ? ("keyboard" !== e.pointerType || h()) && Z(e) : "keyboard" !== e.pointerType && w && A(e)
+      x || L && "mouse" !== e.pointerType ? ("keyboard" !== e.pointerType || h()) && Z(e) : "keyboard" !== e.pointerType && w && A(e)
     }) : (F.onPressStart = e => {
-      k.current = e.pointerType, U.current = j, G.current = L, w && ("mouse" === e.pointerType && !L || "keyboard" === e.pointerType && (!D || m())) && A(e)
+      k.current = e.pointerType, U.current = j, G.current = x, w && ("mouse" === e.pointerType && !x || "keyboard" === e.pointerType && (!D || m())) && A(e)
     }, F.onPress = e => {
       ("touch" === e.pointerType || "pen" === e.pointerType || "virtual" === e.pointerType || "keyboard" === e.pointerType && M && h() || "mouse" === e.pointerType && G.current) && (M ? Z(e) : w && A(e))
     }), C["data-collection"] = (0, r.Zx)(n.collection), C["data-key"] = p, F.preventFocusOnPress = b, b && (F = (0, s.d)(F, {
@@ -106,7 +106,7 @@ function p(e) {
   let {
     pressProps: V,
     isPressed: H
-  } = (0, u.r)(F), Y = x ? e => {
+  } = (0, u.r)(F), Y = L ? e => {
     "mouse" === k.current && (e.stopPropagation(), e.preventDefault(), Z(e))
   } : true, {
     longPressProps: W
@@ -117,11 +117,11 @@ function p(e) {
     }
   }), K = e => {
     "touch" === k.current && U.current && e.preventDefault()
-  }, z = "none" !== S && n.isLink(p) ? e => {
+  }, z = "none" !== T && n.isLink(p) ? e => {
     i.nG.isOpening || e.preventDefault()
   } : true;
   return {
-    itemProps: (0, s.d)(C, w || L || b && !O ? V : {}, j ? W : {}, {
+    itemProps: (0, s.d)(C, w || x || b && !O ? V : {}, j ? W : {}, {
       onDoubleClick: Y,
       onDragStartCapture: K,
       onClick: z,

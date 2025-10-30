@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk337363 = require("./337363.jsx"),
   Chunk725027 = require("./725027.jsx"),
   Chunk464281 = require("./464281.js"),
-  Chunk495511 = require("./495511.js");
+  Chunk220104 = require("./220104.js");
 let p = 11,
   h = ["left", "center", "right"],
   m = ["top", "center", "bottom"];
@@ -31,8 +31,8 @@ function g(e) {
     spacing: O = p,
     caretConfig: v,
     layerContext: I,
-    animationStyle: S,
-    positionKey: T
+    animationStyle: T,
+    positionKey: S
   } = e, A = i.useRef(null), {
     isRichTooltip: C
   } = (0, d.nr)(), N = i.useMemo(() => ("left" === b || "right" === b ? m : h).includes(y) ? y : "center", [b, y]);
@@ -42,7 +42,7 @@ function g(e) {
     position: b,
     align: N,
     spacing: O,
-    positionKey: T,
+    positionKey: S,
     autoInvert: true,
     nudgeAlignIntoViewport: true,
     children: e => {
@@ -73,8 +73,8 @@ function g(e) {
           }) : E
         })]
       });
-      return S ? (0, r.jsx)(s.animated.div, {
-        style: S,
+      return T ? (0, r.jsx)(s.animated.div, {
+        style: T,
         children: O
       }) : O
     }

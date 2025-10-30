@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk884902 = require("./884902.js"),
   Chunk48950 = require("./48950.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk787185 = require("./787185.js");
+  Chunk139205 = require("./139205.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -81,15 +81,15 @@ function C(e, t) {
   return i
 }
 let N = Chunk647438.forwardRef(function(e, t) {
-  var a, v, S;
+  var a, v, T;
   let C, {
       canRemove: N,
       className: R,
       role: P,
       onRemove: w,
       guildId: D,
-      disableBorderColor: L,
-      onMouseDown: x
+      disableBorderColor: x,
+      onMouseDown: L
     } = e,
     M = (0, s.JA)(P.id),
     {
@@ -107,8 +107,8 @@ let N = Chunk647438.forwardRef(function(e, t) {
       (0, p.jW)(e, async () => {
         let {
           default: e
-        } = await n.e("5396").then(n.bind(n, 999588));
-        return t => (0, r.jsx)(e, T(I({}, t), {
+        } = await n.e("5396").then(n.bind(n, 731646));
+        return t => (0, r.jsx)(e, S(I({}, t), {
           id: P.id,
           label: y.intl.string(y.t.sMsaLg)
         }))
@@ -116,7 +116,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
     }, [P.id]),
     F = (0, _.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
     V = null != (v = P.colorString) ? v : F,
-    H = null != (S = (0, l.wK)(V, .6)) ? S : true,
+    H = null != (T = (0, l.wK)(V, .6)) ? T : true,
     Y = u.Z.unsafe_rawColors.WHITE_500.css,
     W = (0, l._i)(V);
   null != W && .3 > (0, l.Bd)(W) && (Y = u.Z.unsafe_rawColors.PRIMARY_630.css);
@@ -140,9 +140,9 @@ let N = Chunk647438.forwardRef(function(e, t) {
   let z = i.useMemo(() => {
       var t;
       return I({
-        borderColor: L ? true : H
+        borderColor: x ? true : H
       }, null != (t = e.style) ? t : {})
-    }, [H, L, e.style]),
+    }, [H, x, e.style]),
     q = () => N ? (0, r.jsx)(f.u, {
       asContainer: true,
       text: y.intl.string(y.t.u3RVsH),
@@ -177,16 +177,16 @@ let N = Chunk647438.forwardRef(function(e, t) {
       children: C
     });
   return (0, r.jsx)(_.tEY, {
-    children: (0, r.jsxs)("div", T(I({
+    children: (0, r.jsxs)("div", S(I({
       ref: t,
       className: o()(O.role, R),
       style: z,
       onContextMenu: Z,
-      onMouseDown: x,
+      onMouseDown: L,
       "aria-label": P.name,
       tabIndex: k
     }, j), {
-      children: [q(), null != U ? (0, r.jsx)(b.Z, T(I({
+      children: [q(), null != U ? (0, r.jsx)(b.Z, S(I({
         className: O.roleIcon
       }, U), {
         enableTooltip: false

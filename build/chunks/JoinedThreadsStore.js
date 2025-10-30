@@ -77,7 +77,7 @@ function y(e) {
 function O(e) {
   let t = h[e];
   m.clearTimer(e), true === t.muted ? ((g = new Set(g)).add(e), m.setTimer(e, t.muteConfig, () => {
-    h[e].muted = false, (g = new Set(g)).delete(e), x.emitChange()
+    h[e].muted = false, (g = new Set(g)).delete(e), L.emitChange()
   }) && (h[e].muted = false, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
 }
 
@@ -96,14 +96,14 @@ function I(e) {
   })).keyBy("threadId").value()
 }
 
-function S(e) {
+function T(e) {
   let {
     guild: t
   } = e;
   E(t.id), b(t)
 }
 
-function T(e) {
+function S(e) {
   let {
     guild: t
   } = e;
@@ -210,7 +210,7 @@ function D(e) {
     }, O(e.id), r = true)
   }), r
 }
-class L extends(r = Chunk442837.ZP.Store) {
+class x extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default)
   }
@@ -239,12 +239,12 @@ class L extends(r = Chunk442837.ZP.Store) {
     return g.has(e)
   }
 }
-d(L, "displayName", "JoinedThreadsStore");
-let x = new L(Chunk570140.Z, {
+d(x, "displayName", "JoinedThreadsStore");
+let L = new x(Chunk570140.Z, {
     CONNECTION_OPEN: v,
     OVERLAY_INITIALIZE: I,
-    GUILD_CREATE: S,
-    GUILD_DELETE: T,
+    GUILD_CREATE: T,
+    GUILD_DELETE: S,
     THREAD_CREATE: A,
     THREAD_LIST_SYNC: C,
     SEARCH_MESSAGES_SUCCESS: N,
@@ -256,4 +256,4 @@ let x = new L(Chunk570140.Z, {
     THREAD_MEMBER_LOCAL_UPDATE: w,
     THREAD_MEMBERS_UPDATE: D
   }),
-  M = x
+  M = L

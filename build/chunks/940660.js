@@ -41,17 +41,17 @@ var a, Chunk76466 = require("./76466.js"),
   Chunk205558 = require("./205558.js"),
   Chunk246974 = require("./246974.js"),
   Chunk997962 = require("./997962.js"),
-  S = Chunk740336("draft_tree_data_support"),
-  T = "&nbsp;",
+  T = Chunk740336("draft_tree_data_support"),
+  S = "&nbsp;",
   A = " ",
   C = RegExp("\r", "g"),
   N = RegExp("\n", "g"),
   R = RegExp("^\n", "g"),
-  P = RegExp(T, "g"),
+  P = RegExp(S, "g"),
   w = RegExp("&#13;?", "g"),
   D = RegExp("&#8203;?", "g"),
-  L = ["bold", "bolder", "500", "600", "700", "800", "900"],
-  x = ["light", "lighter", "normal", "100", "200", "300", "400"],
+  x = ["bold", "bolder", "500", "600", "700", "800", "900"],
+  L = ["light", "lighter", "normal", "100", "200", "300", "400"],
   M = ["className", "href", "rel", "target", "title"],
   k = ["alt", "className", "height", "src", "width"],
   j = (i(a = {}, Chunk606166("public/DraftStyleDefault/depth0"), 0), i(a, Chunk606166("public/DraftStyleDefault/depth1"), 1), i(a, Chunk606166("public/DraftStyleDefault/depth2"), 2), i(a, Chunk606166("public/DraftStyleDefault/depth3"), 3), i(a, Chunk606166("public/DraftStyleDefault/depth4"), 4), a),
@@ -99,7 +99,7 @@ var a, Chunk76466 = require("./76466.js"),
       i = n.style.fontStyle,
       a = n.style.textDecoration;
     return t.withMutations(function(e) {
-      L.indexOf(r) >= 0 ? e.add("BOLD") : x.indexOf(r) >= 0 && e.remove("BOLD"), "italic" === i ? e.add("ITALIC") : "normal" === i && e.remove("ITALIC"), "underline" === a && e.add("UNDERLINE"), "line-through" === a && e.add("STRIKETHROUGH"), "none" === a && (e.remove("UNDERLINE"), e.remove("STRIKETHROUGH"))
+      x.indexOf(r) >= 0 ? e.add("BOLD") : L.indexOf(r) >= 0 && e.remove("BOLD"), "italic" === i ? e.add("ITALIC") : "normal" === i && e.remove("ITALIC"), "underline" === a && e.add("UNDERLINE"), "line-through" === a && e.add("STRIKETHROUGH"), "none" === a && (e.remove("UNDERLINE"), e.remove("STRIKETHROUGH"))
     })
   },
   H = function(e) {
@@ -116,7 +116,7 @@ var a, Chunk76466 = require("./76466.js"),
       var t;
       return this.contentBlocks = [], this.currentDepth = 0, (t = this.blockConfigs).push.apply(t, this._toBlockConfigs([e], b())), this._trimCurrentText(), "" !== this.currentText && this.blockConfigs.push(this._makeBlockConfig()), this
     }, exports.getContentBlocks = function() {
-      return 0 === this.contentBlocks.length && (S ? this._toContentBlocks(this.blockConfigs) : this._toFlatContentBlocks(this.blockConfigs)), {
+      return 0 === this.contentBlocks.length && (T ? this._toContentBlocks(this.blockConfigs) : this._toFlatContentBlocks(this.blockConfigs)), {
         contentBlocks: this.contentBlocks,
         entityMap: this.entityMap
       }
@@ -151,7 +151,7 @@ var a, Chunk76466 = require("./76466.js"),
           this._trimCurrentText(), "" !== this.currentText && n.push(this._makeBlockConfig());
           var c = this.currentDepth,
             u = this.wrapper;
-          if (this.wrapper = "pre" === a ? "pre" : this.wrapper, "string" != typeof l && (l = this.disambiguate(a, this.wrapper) || l[0] || "unstyled"), !S && v(i) && ("unordered-list-item" === l || "ordered-list-item" === l)) {
+          if (this.wrapper = "pre" === a ? "pre" : this.wrapper, "string" != typeof l && (l = this.disambiguate(a, this.wrapper) || l[0] || "unstyled"), !T && v(i) && ("unordered-list-item" === l || "ordered-list-item" === l)) {
             var d = i;
             this.currentDepth = B(d, this.currentDepth)
           }

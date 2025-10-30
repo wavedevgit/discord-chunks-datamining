@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   a: () => v,
-  default: () => S
+  default: () => T
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,27 +22,27 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk459931 = require("./459931.js"),
+  Chunk418128 = require("./418128.js"),
   Chunk740353 = require("./740353.js");
 let v = "VoiceChannelStatusModal",
   I = 500;
 
-function S(e) {
+function T(e) {
   let {
     channel: t,
     transitionState: n,
-    sourceAnalyticsLocations: S,
-    onClose: T
-  } = e, A = (0, o.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = (0, o.e7)([h.Z], () => h.Z.getMediaSessionId()), [N, R] = i.useState(null != A ? A : ""), [P, w] = i.useState(false), [D, L] = i.useState(null), x = (0, o.e7)([m.default], () => m.default.getCurrentUser()), M = N.length > I;
+    sourceAnalyticsLocations: T,
+    onClose: S
+  } = e, A = (0, o.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = (0, o.e7)([h.Z], () => h.Z.getMediaSessionId()), [N, R] = i.useState(null != A ? A : ""), [P, w] = i.useState(false), [D, x] = i.useState(null), L = (0, o.e7)([m.default], () => m.default.getCurrentUser()), M = N.length > I;
   i.useEffect(() => {
     g.default.track(E.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
       guild_id: t.guild_id,
-      location_stack: S
+      location_stack: T
     })
-  }, [t.guild_id, S]);
+  }, [t.guild_id, T]);
   let k = e => {
-      L(new s.Hx(e, e.status).getAnyErrorMessage())
+      x(new s.Hx(e, e.status).getAnyErrorMessage())
     },
     j = e => {
       let {
@@ -51,8 +51,8 @@ function S(e) {
       if (null != n && n.length > 0) {
         let {
           errorMessage: e
-        } = c.Z.validateMessage(n, x, t.id);
-        return L(e), w(false), {
+        } = c.Z.validateMessage(n, L, t.id);
+        return x(e), w(false), {
           hasErrors: true
         }
       }
@@ -61,7 +61,7 @@ function S(e) {
       }
     },
     U = async e => {
-      N === A && T(), null == e || e.preventDefault(), L(null), w(true);
+      N === A && S(), null == e || e.preventDefault(), x(null), w(true);
       let n = N.length,
         r = N.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = p.ZP.parse(t, N),
@@ -77,8 +77,8 @@ function S(e) {
             media_session_id: C,
             raw_length: n,
             text_length: r,
-            location_stack: S
-          }), T()) : k(e)
+            location_stack: T
+          }), S()) : k(e)
         } catch (e) {
           k(e)
         }
@@ -115,7 +115,7 @@ function S(e) {
     });
   return (0, r.jsx)(a.ExpressiveModal, {
     transitionState: n,
-    onClose: T,
+    onClose: S,
     graphic: {
       type: "image",
       src: O
@@ -125,7 +125,7 @@ function S(e) {
     actions: [{
       variant: "secondary",
       text: b.intl.string(b.t["ETE/oC"]),
-      onClick: T
+      onClick: S
     }, {
       variant: "primary",
       loading: P,

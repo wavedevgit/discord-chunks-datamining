@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk145807 = require("./145807.jsx"),
   Chunk56744 = require("./56744.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk360514 = require("./360514.js");
+  Chunk5898 = require("./5898.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,7 +71,7 @@ function w(e, t) {
 
 function D(e, t) {
   if (null == e) return {};
-  var n, r, i = L(e, t);
+  var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -79,7 +79,7 @@ function D(e, t) {
   return i
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -87,15 +87,15 @@ function L(e, t) {
   return i
 }
 
-function x(e) {
+function L(e) {
   var t, n;
   let {
     message: i,
     compact: a = false,
     className: N,
     onContextMenu: P,
-    onClick: L,
-    hideSimpleEmbedContent: x = true,
+    onClick: x,
+    hideSimpleEmbedContent: L = true,
     channel: M,
     isGroupStart: k,
     animateAvatar: j,
@@ -106,7 +106,7 @@ function x(e) {
     content: Y,
     hasSpoilerEmbeds: W
   } = (0, E.Z)(i, {
-    hideSimpleEmbedContent: x,
+    hideSimpleEmbedContent: L,
     allowList: V || H,
     allowHeading: V || H,
     allowLinks: true,
@@ -126,8 +126,8 @@ function x(e) {
       [C.disableInteraction]: F
     }),
     disableInteraction: F,
-    childrenRepliedMessage: (0, T.Z)(i, M, K, z, a),
-    childrenExecutedCommand: (0, S.Z)(i, M, a),
+    childrenRepliedMessage: (0, S.Z)(i, M, K, z, a),
+    childrenExecutedCommand: (0, T.Z)(i, M, a),
     childrenHeader: (0, v.Z)(w(R({}, e), {
       guildId: M.guild_id,
       author: X,
@@ -139,7 +139,7 @@ function x(e) {
       disableInteraction: F
     })),
     onContextMenu: P,
-    onClick: L,
+    onClick: x,
     hasThread: G && null != Q && i.hasFlag(A.iLy.HAS_THREAD),
     hasReply: i.type === A.uaV.REPLY,
     "aria-labelledby": ee,
@@ -148,4 +148,4 @@ function x(e) {
     author: X
   }, q, Z))
 }
-let M = Chunk647438.memo(x)
+let M = Chunk647438.memo(L)

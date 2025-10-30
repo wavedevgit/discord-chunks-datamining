@@ -60,8 +60,8 @@ function O(e, t) {
 }
 let v = "default",
   I = [],
-  S = [],
   T = [],
+  S = [],
   A = 0,
   C = null,
   N = null,
@@ -69,8 +69,8 @@ let v = "default",
   P = null,
   w = [],
   D = null,
-  L = {},
-  x = new Map,
+  x = {},
+  L = new Map,
   M = {
     clipsEnabled: false,
     storageLocation: v,
@@ -133,9 +133,9 @@ function G(e) {
   let {
     clip: t
   } = e;
-  for (let [e, n] of S.entries())
+  for (let [e, n] of T.entries())
     if (n.id === t.id) {
-      S[e] = t, S = [...S];
+      T[e] = t, T = [...T];
       return
     }
 }
@@ -164,7 +164,7 @@ function F(e) {
   if (A += 1, k.hasTakenDecoupledClip = k.hasTakenDecoupledClip || t === h.X9.DECOUPLED, null != n && null != r) {
     var i;
     let e = Date.now();
-    D = null != D ? D : e, L[n] = [...null != (i = L[n]) ? i : [], {
+    D = null != D ? D : e, x[n] = [...null != (i = x[n]) ? i : [], {
       timestamp: e,
       thumbnail: r
     }]
@@ -176,7 +176,7 @@ function V(e) {
     streamKey: t,
     timestamp: n
   } = e;
-  D === n && (D = null), null == n ? L[t] = [] : L[t] = L[t].filter(e => e.timestamp !== n)
+  D === n && (D = null), null == n ? x[t] = [] : x[t] = x[t].filter(e => e.timestamp !== n)
 }
 
 function H() {
@@ -195,26 +195,26 @@ function Y(e) {
     newClipIds: [...null != (t = null == N ? true : N.newClipIds) ? t : [], r.id]
   }), k = O(b({}, k), {
     newClipIds: [...null != (n = k.newClipIds) ? n : [], r.id]
-  }), T = T.filter(e => {
+  }), S = S.filter(e => {
     let {
       id: t
     } = e;
     return t !== r.id
-  }), S = [r, ...S], k.hasClips = true
+  }), T = [r, ...T], k.hasClips = true
 }
 
 function W(e) {
   let {
     clip: t
   } = e;
-  T = [t, ...T]
+  S = [t, ...S]
 }
 
 function K(e) {
   let {
     clipId: t
   } = e;
-  T = T.filter(e => {
+  S = S.filter(e => {
     let {
       id: n
     } = e;
@@ -279,18 +279,18 @@ function $(e) {
   let {
     streamKey: t
   } = e;
-  if (D = null, L[t] = [], null == N || (0, l.my)(t).ownerId !== c.default.getId()) returnfalse;
+  if (D = null, x[t] = [], null == N || (0, l.my)(t).ownerId !== c.default.getId()) returnfalse;
   N = 0 === N.newClipIds.length ? null : O(b({}, N), {
     ended: true
   })
 }
 
 function ee(e) {
-  k.hasClips = e.clips.length > 0, S = e.clips
+  k.hasClips = e.clips.length > 0, T = e.clips
 }
 
 function et(e) {
-  0 === (S = S.filter(t => {
+  0 === (T = T.filter(t => {
     let {
       filepath: n
     } = t;
@@ -353,8 +353,8 @@ function el(e, t, n) {
       a = t.substring(n),
       o = JSON.parse(a);
     if (null == o.id) returnfalse;
-    let s = x.get(e);
-    return null == s && (s = new Set, x.set(e, s)), s.add(o.id), true
+    let s = L.get(e);
+    return null == s && (s = new Set, L.set(e, s)), s.add(o.id), true
   } catch (e) {
     returnfalse
   }
@@ -378,10 +378,10 @@ class ed extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     null != e && (k = e), j(), this.waitFor(s.ZP)
   }
   getClips() {
-    return S
+    return T
   }
   getPendingClips() {
-    return T
+    return S
   }
   getUserAgnosticState() {
     return k
@@ -403,10 +403,10 @@ class ed extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   getStreamClipAnimations(e) {
     var t;
-    return null != (t = L[e]) ? t : I
+    return null != (t = x[e]) ? t : I
   }
   hasAnyClipAnimations() {
-    return Object.values(L).some(e => e.length > 0)
+    return Object.values(x).some(e => e.length > 0)
   }
   getHardwareClassification() {
     return k.hardwareClassification
@@ -455,7 +455,7 @@ class ed extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   getMatchingGroupClip(e, t) {
     if (null == e && null == t) return null;
-    for (let o of S) {
+    for (let o of T) {
       var n, r, i, a;
       if (null != t && o.id === t || null != e && (null == (r = o.decision) || null == (n = r.signal) ? true : n.type) === p.Bs.DISTRIBUTED && (null == (a = o.decision) || null == (i = a.signal) ? true : i.remoteTriggerClipId) === e) return o
     }
@@ -463,7 +463,7 @@ class ed extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   wasClipSharedInChannel(e, t) {
     var n;
-    let r = x.get(t);
+    let r = L.get(t);
     return null != (n = null == r ? true : r.has(e)) && n
   }
 }

@@ -9,7 +9,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk600164 = require("./600164.jsx"),
-  Chunk803925 = require("./803925.js");
+  Chunk16483 = require("./16483.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,7 +55,7 @@ class _ extends(r = Chunk647438.PureComponent) {
       onMouseLeave: r
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
-      className: s()(Chunk803925.card, exports),
+      className: s()(Chunk16483.card, exports),
       onMouseEnter: require,
       onMouseLeave: r,
       children: module

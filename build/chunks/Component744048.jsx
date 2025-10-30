@@ -22,22 +22,22 @@ var Chunk442837 = require("./442837.js"),
   Chunk550385 = require("./550385.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk223399 = require("./223399.js");
+  Chunk537272 = require("./537272.js");
 let O = function(e) {
   let {
     mobile: t
   } = e, n = (0, i.e7)([p.Z], () => p.Z.getLayers().includes(E.S9g.USER_SETTINGS)), O = (0, i.e7)([h.default], () => m.ZP.canUseClientThemes(h.default.getCurrentUser())), v = (0, i.e7)([s.Z], () => s.Z.isCoachmark), I = (0, l.g)(), {
-    activePanel: S,
-    metadata: T
+    activePanel: T,
+    metadata: S
   } = (0, g.oq)(), A = [];
-  !n && null == S && (v && !O && A.push(a.z.CLIENT_THEMES_COACHMARK), I && A.push(a.z.CUSTOM_THEME_COACHMARK));
+  !n && null == T && (v && !O && A.push(a.z.CLIENT_THEMES_COACHMARK), I && A.push(a.z.CUSTOM_THEME_COACHMARK));
   let [C, N] = (0, _.US)(A, b.R.SIDEBAR, true), R = C === a.z.CLIENT_THEMES_COACHMARK, P = C === a.z.CUSTOM_THEME_COACHMARK;
   if ((0, u.HA)(I, C), n) return null;
-  let w = S === g.wh.CLIENT_THEMES || R,
-    D = S === g.wh.APP_ICON,
-    L = S === g.wh.CUSTOM_THEME || P;
-  if (!(w || D || L)) return null;
-  let x = () => (0, r.jsxs)(r.Fragment, {
+  let w = T === g.wh.CLIENT_THEMES || R,
+    D = T === g.wh.APP_ICON,
+    x = T === g.wh.CUSTOM_THEME || P;
+  if (!(w || D || x)) return null;
+  let L = () => (0, r.jsxs)(r.Fragment, {
     children: [w && (0, r.jsx)(c.Z, {
       markAsDismissed: R ? N : () => {
         (0, f.Q3)(a.z.CLIENT_THEMES_COACHMARK, {
@@ -49,8 +49,8 @@ let O = function(e) {
     }), D && (0, r.jsx)(o.Z, {
       isCoachmark: false,
       markAsDismissed: N
-    }), L && (0, r.jsx)(d.Z, {
-      metadata: null != T ? T : {},
+    }), x && (0, r.jsx)(d.Z, {
+      metadata: null != S ? S : {},
       markAsDismissed: N,
       isCoachmark: P,
       isMobile: t
@@ -58,6 +58,6 @@ let O = function(e) {
   });
   return t ? (0, r.jsx)("div", {
     className: y.mobileContainer,
-    children: x()
-  }) : x()
+    children: L()
+  }) : L()
 }

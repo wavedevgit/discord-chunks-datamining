@@ -51,11 +51,11 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let t = f.Z.getChannel(e);
   ((null == t ? true : t.type) === E.d4z.GUILD_FORUM || (null == t ? true : t.type) === E.d4z.GUILD_MEDIA) && (0, c.EB)(t)
 }
-class T extends Chunk147913.Z {
+class S extends Chunk147913.Z {
   constructor(...e) {
     super(...e), y(this, "_previousAgeVerificationStatus", null), y(this, "handlePostConnectionOpen", () => {
       var e, t;
@@ -74,7 +74,7 @@ class T extends Chunk147913.Z {
               channelId: r
             } = n, i = f.Z.getChannel(r);
             (null == i ? true : i.nsfw) && (s.Z.clear(r), r === e && (t = true))
-          }), t && null != e && (I(e), S(e))
+          }), t && null != e && (I(e), T(e))
         }
       } catch (e) {
         O.warn("Error clearing cache and refetching messages", e)
@@ -88,4 +88,4 @@ class T extends Chunk147913.Z {
     })
   }
 }
-let A = new T
+let A = new S

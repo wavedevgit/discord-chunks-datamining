@@ -60,9 +60,9 @@ let b = "overlay-negative-experiment-notification-settings",
   O = false,
   v = false,
   I = true,
-  S = new Chunk579092.Yd("OverlayNegativeWidgetExperimentManager");
+  T = new Chunk579092.Yd("OverlayNegativeWidgetExperimentManager");
 
-function T(e) {
+function S(e) {
   switch (e) {
     case p.Odu.VOICE:
     case p.Odu.TEXT:
@@ -81,7 +81,7 @@ let A = {
 };
 
 function C(e) {
-  let [t] = l.Z.getWidgetsByTypeAndLayout(e, T(e));
+  let [t] = l.Z.getWidgetsByTypeAndLayout(e, S(e));
   if (null != t || ([t] = l.Z.getWidgetsByType(e), null != t)) return t;
   for (let t of Object.values(l.Z.getAllWidgets()))
     if (t.type === e) return t
@@ -179,12 +179,12 @@ function w() {
   return Object.values(Chunk486016.i)
 }
 let D = new Set([Chunk486016.i.WELCOME_GENERAL, Chunk486016.i.GO_LIVE_NUDGE, Chunk486016.i.GAME_ACTIVITY]),
-  L = "overlay-negative-widget-experiment-bucket";
-class x extends Chunk147913.Z {
+  x = "overlay-negative-widget-experiment-bucket";
+class L extends Chunk147913.Z {
   constructor() {
     var e, t;
     super(), e = this, h(this, "_settings", new P), h(this, "_hasInitialized", false), h(this, "_isProcessing", false), h(this, "_appliedExperimentBucket", "control"), h(this, "setAppliedExperimentBucket", e => {
-      this._appliedExperimentBucket = e, i.K.set(L, e)
+      this._appliedExperimentBucket = e, i.K.set(x, e)
     }), h(this, "getRawAppliedExperimentBucket", () => (0, Chunk32300.hb)("applied-experiment-bucket")), h(this, "getWidgetExperimentSettings", e => {
       let {
         voiceWidgetDefaultUnpinned: t,
@@ -204,7 +204,7 @@ class x extends Chunk147913.Z {
       for (let t of Object.values(Chunk981631.Odu)) module._settings.initializeWidget(exports);
       for (let t of Chunk579092) await module._settings.restoreWidget(exports);
       for (let t of require) await module._settings.unpinWidget(exports);
-      require.size > 0 && S.info("Experiment Override: Widgets", {
+      require.size > 0 && T.info("Experiment Override: Widgets", {
         widgetsToRestore: Chunk579092,
         widgetsToOverride: require
       })
@@ -228,7 +228,7 @@ class x extends Chunk147913.Z {
       for (let e of w()) this._settings.initializeNotification(e);
       for (let e of n) await this._settings.restoreNotification(e);
       for (let e of t) await this._settings.disableNotification(e);
-      t.size > 0 && S.info("Experiment Override: Notifications", {
+      t.size > 0 && T.info("Experiment Override: Notifications", {
         notificationsToRestore: n,
         notificationsToOverride: t
       })
@@ -240,7 +240,7 @@ class x extends Chunk147913.Z {
         try {
           await this.processWidgetExperiment(e), await this.processNotificationExperiment(e)
         } catch (e) {
-          S.error("Experiments processing failed", {
+          T.error("Experiments processing failed", {
             error: e
           })
         } finally {
@@ -272,7 +272,7 @@ class x extends Chunk147913.Z {
       EXPERIMENT_OVERRIDE_BUCKET: this.handleExperimentOverrideBucket,
       OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: this.handleSetNotificationDisabledSetting,
       LAYOUT_SET_PINNED: this.handleSetPinned
-    }), this._appliedExperimentBucket = null != (t = Chunk433517.K.get(L)) ? exports : "control"
+    }), this._appliedExperimentBucket = null != (t = Chunk433517.K.get(x)) ? exports : "control"
   }
 }
-let M = new x
+let M = new L

@@ -65,10 +65,10 @@ function G(e) {
       userId: F.id,
       activity: B
     }),
-    et = (0, i.e7)([A.Z, O.Z, L.Z, I.Z], () => Q || null != X && (0, M.t)({
+    et = (0, i.e7)([A.Z, O.Z, x.Z, I.Z], () => Q || null != X && (0, M.t)({
       LibraryApplicationStore: A.Z,
       LaunchableGameStore: O.Z,
-      DispatchApplicationStore: L.Z,
+      DispatchApplicationStore: x.Z,
       ConnectedAppsStore: I.Z,
       applicationId: X
     })),
@@ -88,7 +88,7 @@ function G(e) {
       channelId: ee,
       application: ei
     }),
-    es = (0, i.e7)([v.Z, T.Z, S.Z, N.Z, R.Z, w.Z, C.Z], () => null != Z ? eo === p.Fw.CAN_JOIN : (0, d.Z)({
+    es = (0, i.e7)([v.Z, S.Z, T.Z, N.Z, R.Z, w.Z, C.Z], () => null != Z ? eo === p.Fw.CAN_JOIN : (0, d.Z)({
       user: F,
       activity: B,
       application: ei,
@@ -96,8 +96,8 @@ function G(e) {
       currentUser: J,
       isEmbedded: Q,
       ChannelStore: v.Z,
-      GuildStore: T.Z,
-      GuildMemberCountStore: S.Z,
+      GuildStore: S.Z,
+      GuildMemberCountStore: T.Z,
       RelationshipStore: N.Z,
       SelectedChannelStore: R.Z,
       VoiceStateStore: w.Z,
@@ -110,7 +110,7 @@ function G(e) {
     }),
     ec = (0, l.O)();
   if (Q && null == Z && (null == B || !(0, h.Z)(B, k.xjy.CONTEXTLESS))) return null;
-  let eu = !x.isPlatformEmbedded;
+  let eu = !L.isPlatformEmbedded;
   if (!((0, h.Z)(B, k.xjy.JOIN) || Q) || null == X) return null;
   let ed = !$ || Q && !el,
     ef = ed && (eu || et) && !z && !en;

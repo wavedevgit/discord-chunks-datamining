@@ -2,7 +2,7 @@
 /** chunk id: 678869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./804061.js"), require("./704826.js"), require("./35282.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,8 +30,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk616922 = require("./616922.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk119835 = require("./119835.js"),
-  Chunk951948 = require("./951948.js");
+  Chunk694505 = require("./694505.js"),
+  Chunk826565 = require("./826565.js");
 
 function w(e, t) {
   return N.intl.formatToPlainString(N.t.h2yWWX, {
@@ -51,12 +51,12 @@ let D = (e, t, n) => {
   }).replaceAll("*", "")
 };
 
-function L(e) {
+function x(e) {
   let {
     activity: t
   } = e, n = t.timestamps, {
     now: a
-  } = (0, S.tS)(), {
+  } = (0, T.tS)(), {
     durationTimestamp: o,
     seekBarStyles: s
   } = i.useMemo(() => {
@@ -80,7 +80,7 @@ function L(e) {
   }, [t, a]);
   return null == s ? null : (0, r.jsxs)("div", {
     className: R.listeningTimeline,
-    children: [(0, r.jsx)(S.x3, {
+    children: [(0, r.jsx)(T.x3, {
       entry: n
     }), (0, r.jsx)("div", {
       className: R.seekBarContainer,
@@ -98,11 +98,11 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   var t;
-  let n, m, S, {
+  let n, m, T, {
       channel: R,
-      entry: x,
+      entry: L,
       closePopout: M,
       onReaction: k,
       onVoiceChannelPreview: j
@@ -110,7 +110,7 @@ function x(e) {
     {
       largeImage: U
     } = (0, g.rv)({
-      entry: x
+      entry: L
     }),
     {
       activity: G,
@@ -118,7 +118,7 @@ function x(e) {
       artist: Z,
       title: F,
       user: V
-    } = (0, v.pi)(x),
+    } = (0, v.pi)(L),
     {
       primaryColor: H,
       secondaryColor: Y
@@ -131,7 +131,7 @@ function x(e) {
       let t = null == (e = G.timestamps) ? true : e.start,
         n = (0, E.T_)(null != t ? {
           start: t
-        } : x, Date.now());
+        } : L, Date.now());
       return (0, b.CR)({
         user: V,
         channel: R,
@@ -146,14 +146,14 @@ function x(e) {
           timestamp: n
         })
       })
-    }, [G, Z, R, x, null == U ? true : U.src, H, Y, F, V]);
+    }, [G, Z, R, L, null == U ? true : U.src, H, Y, F, V]);
   if (null == G || null == B) return null;
   let q = Z,
     X = [];
   if (B.media.provider === a.p.SPOTIFY) {
     m = () => {
       (0, c.aG)(G)
-    }, S = () => {
+    }, T = () => {
       (0, c.Z5)(G, V.id)
     }, n = () => {
       var e;
@@ -182,20 +182,20 @@ function x(e) {
     }
   }
   let Q = (0, r.jsx)(I.wG, {
-    onClickThumbnail: S,
+    onClickThumbnail: T,
     channel: R,
-    entry: x,
-    headerIcons: B.media.provider === a.p.SPOTIFY ? (0, r.jsx)(T.Z, {
+    entry: L,
+    headerIcons: B.media.provider === a.p.SPOTIFY ? (0, r.jsx)(S.Z, {
       onClick: n,
       "aria-label": N.intl.string(N.t.rRffNz),
       Icon: h.Z
     }) : null,
-    userDescription: (0, E.kr)(x) ? N.t.Tzx5D2 : N.t.CcVI1T,
+    userDescription: (0, E.kr)(L) ? N.t.Tzx5D2 : N.t.CcVI1T,
     title: F,
     onClickTitle: m,
     subtitle: q,
     badges: null,
-    children: (null == (t = G.timestamps) ? true : t.start) != null && (0, r.jsx)(L, {
+    children: (null == (t = G.timestamps) ? true : t.start) != null && (0, r.jsx)(x, {
       activity: G
     })
   });
@@ -208,7 +208,7 @@ function x(e) {
         channel: R,
         generateReactionImage: z,
         reactionImageAltText: w(Z, V),
-        entry: x,
+        entry: L,
         buttons: X
       })
     })]

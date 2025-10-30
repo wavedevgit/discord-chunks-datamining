@@ -21,8 +21,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk704875 = require("./704875.jsx"),
   Chunk653309 = require("./653309.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk115488 = require("./115488.js"),
-  Chunk430864 = require("./430864.js");
+  Chunk155857 = require("./155857.js"),
+  Chunk602009 = require("./602009.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -107,11 +107,11 @@ class N extends Chunk647438.PureComponent {
       attributes: o,
       children: s
     } = e;
-    "rtl" === o.dir && (o.style = T(I({}, o.style), {
+    "rtl" === o.dir && (o.style = S(I({}, o.style), {
       textAlign: "right"
     }));
     let l = null != (t = null == a ? true : a(e)) ? t : (0, g.Z)(e, n, i);
-    return null != l ? l : (0, r.jsx)("div", T(I({}, o), {
+    return null != l ? l : (0, r.jsx)("div", S(I({}, o), {
       children: s
     }))
   }
@@ -124,7 +124,7 @@ class N extends Chunk647438.PureComponent {
       attributes: a,
       children: o
     } = e, s = null != (t = null == i ? true : i(e)) ? t : (0, E.Z)(n, e);
-    return null != s ? s : (0, r.jsx)("span", T(I({}, a), {
+    return null != s ? s : (0, r.jsx)("span", S(I({}, a), {
       children: o
     }))
   }
@@ -313,7 +313,7 @@ class N extends Chunk647438.PureComponent {
         let {
           default: e
         } = await n.e("41984").then(n.bind(n, 343602));
-        return n => (0, r.jsx)(e, T(I({}, n), {
+        return n => (0, r.jsx)(e, S(I({}, n), {
           editor: t,
           text: m.bN.getSelectedText(t, true)
         }))
@@ -356,14 +356,14 @@ class N extends Chunk647438.PureComponent {
       ref: this.containerRef,
       className: Chunk647438,
       children: [this.state.showPlaceholder ? (0, Chunk951288.jsx)("div", {
-        className: o()(Chunk115488.placeholder, require),
+        className: o()(Chunk155857.placeholder, require),
         "aria-hidden": true,
         children: Chunk728285
       }) : null, (0, Chunk951288.jsx)(Chunk755712.mH, {
         editor: exports,
         value: [...this.state.initialValue],
-        children: (0, Chunk951288.jsx)(Chunk755712.CX, T(I({}, v), {
-          className: o()(Chunk430864.markup, Chunk115488.editor, require),
+        children: (0, Chunk951288.jsx)(Chunk755712.CX, S(I({}, v), {
+          className: o()(Chunk602009.markup, Chunk155857.editor, require),
           decorate: Chunk358085,
           renderElement: this.renderElement,
           renderLeaf: this.renderLeaf,

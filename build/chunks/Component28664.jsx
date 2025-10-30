@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk102725 = require("./102725.js"),
   Chunk342134 = require("./342134.js"),
   Chunk966327 = require("./966327.js"),
-  Chunk495511 = require("./495511.js");
+  Chunk220104 = require("./220104.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,8 +84,8 @@ function y(e) {
     tag: O = "span",
     position: v = "top",
     align: I = "center",
-    spacing: S,
-    layerContext: T,
+    spacing: T,
+    layerContext: S,
     targetElementRef: A,
     caretConfig: C,
     positionKey: N
@@ -94,11 +94,11 @@ function y(e) {
     w = i.useId(),
     {
       isVisible: D,
-      triggerProps: L
+      triggerProps: x
     } = (0, u.l)(h({
       targetElementRef: P.targetElementRef
     }, R)),
-    x = (0, d.Q)({
+    L = (0, d.Q)({
       shouldShow: D
     }),
     {
@@ -116,8 +116,8 @@ function y(e) {
   if (null == k || "string" == typeof k && "" === k) return n;
   let j = null != N ? N : (0, c.Sw)(p);
   if (y) {
-    let e = g(h({}, L), {
-      onFocus: (0, c.tS)(L.onFocus, e => {
+    let e = g(h({}, x), {
+      onFocus: (0, c.tS)(x.onFocus, e => {
         let t = e.target;
         if (null != t) {
           var n;
@@ -125,7 +125,7 @@ function y(e) {
           t.setAttribute("aria-describedby", e)
         }
       }),
-      onBlur: (0, c.tS)(L.onBlur, e => {
+      onBlur: (0, c.tS)(x.onBlur, e => {
         let t = e.target;
         if (null != t) {
           let e = t.getAttribute("aria-describedby");
@@ -144,9 +144,9 @@ function y(e) {
     })
   } else {
     if (!i.isValidElement(n)) return null;
-    t = (0, c.C9)(n, L, w, P.triggerRef)
+    t = (0, c.C9)(n, x, w, P.triggerRef)
   }
-  let U = x((e, t) => t ? (0, r.jsx)(l.N, {
+  let U = L((e, t) => t ? (0, r.jsx)(l.N, {
     isVisible: D,
     isRendered: true,
     targetElementRef: P.targetElementRef,
@@ -154,9 +154,9 @@ function y(e) {
     content: k,
     position: v,
     align: I,
-    spacing: S,
+    spacing: T,
     caretConfig: C,
-    layerContext: null != T ? T : M,
+    layerContext: null != S ? S : M,
     animationStyle: e,
     positionKey: j
   }) : null);

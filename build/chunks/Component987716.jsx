@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk96848 = require("./96848.jsx"),
   Chunk703926 = require("./703926.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk611344 = require("./611344.js");
+  Chunk469059 = require("./469059.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,9 +61,9 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,7 +71,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -86,16 +86,16 @@ let A = e => {
   } = e, {
     giftRecipient: y,
     selectedGiftStyle: v,
-    setSelectedGiftStyle: T,
+    setSelectedGiftStyle: S,
     emojiConfetti: A,
     soundEffect: C,
     setEmojiConfetti: N,
     setSoundEffect: R
-  } = (0, c.wD)(), [P, w] = i.useState(false), D = i.useRef(null), L = (0, s.Jb)({
+  } = (0, c.wD)(), [P, w] = i.useState(false), D = i.useRef(null), x = (0, s.Jb)({
     orientation: "horizontal"
   }), {
-    ref: x
-  } = L, M = S(L, ["ref"]), k = (0, d.MY)(y, t), j = k === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = k !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.Z)({
+    ref: L
+  } = x, M = T(x, ["ref"]), k = (0, d.MY)(y, t), j = k === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = k !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.Z)({
     location: "GiftAnimationOptions"
   }), Z = e => {
     null != R && R(null == e ? true : e)
@@ -129,12 +129,12 @@ let A = e => {
       },
       className: o()(b.giftBoxOptionContainer, a),
       "aria-label": E.intl.string(E.t.v54NrN),
-      ref: x
+      ref: L
     }, M), {
       children: null != G && !B && G.map((e, t) => (0, r.jsx)(g.m, {
         isSelected: v === e,
         giftStyle: e,
-        setSelectedGiftStyle: T,
+        setSelectedGiftStyle: S,
         ref: 0 === t ? D : null,
         onFocus: () => w(true),
         onBlur: () => w(false)

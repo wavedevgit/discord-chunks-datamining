@@ -47,19 +47,19 @@ function h(e) {
     isDisabled: O = false,
     isReadOnly: v = false,
     isRequired: I = false,
-    minValue: S,
-    maxValue: T,
+    minValue: T,
+    maxValue: S,
     isDateUnavailable: A
   } = e, C = e.value || e.defaultValue || e.placeholderValue || null, [N, R] = (0, r.iZ)(C, e.granularity), P = R || "UTC";
   if (C && !(N in C)) throw Error("Invalid granularity " + N + " for value " + C.toString());
   let w = (0, d.useMemo)(() => new(0, a.C)(h), [h]),
     D = (0, d.useMemo)(() => g(w.resolvedOptions().calendar), [g, w]),
-    [L, x] = (0, u.z)(e.value, null != (t = e.defaultValue) ? t : null, e.onChange),
-    [M] = (0, d.useState)(L),
+    [x, L] = (0, u.z)(e.value, null != (t = e.defaultValue) ? t : null, e.onChange),
+    [M] = (0, d.useState)(x),
     k = (0, d.useMemo)(() => {
       var e;
-      return null != (e = (0, r.Ai)(L, D)) ? e : null
-    }, [L, D]),
+      return null != (e = (0, r.Ai)(x, D)) ? e : null
+    }, [x, D]),
     [j, U] = (0, d.useState)(() => (0, r.OJ)(e.placeholderValue, N, D, R)),
     G = k || j,
     B = "gregory" === D.identifier && "BC" === G.era,
@@ -86,17 +86,17 @@ function h(e) {
     q = (0, d.useRef)(D);
   (0, d.useEffect)(() => {
     (0, o.jv)(D, q.current) || (q.current = D, U(t => Object.keys(W).length > 0 ? (0, s.Mw)(t, D) : (0, r.OJ)(e.placeholderValue, N, D, R)))
-  }, [D, N, W, R, e.placeholderValue]), L && Object.keys(W).length < Object.keys(Y).length && K(W = {
+  }, [D, N, W, R, e.placeholderValue]), x && Object.keys(W).length < Object.keys(Y).length && K(W = {
     ...Y
-  }), null == L && Object.keys(W).length === Object.keys(Y).length && (K(W = {}), U((0, r.OJ)(e.placeholderValue, N, D, R)));
+  }), null == x && Object.keys(W).length === Object.keys(Y).length && (K(W = {}), U((0, r.OJ)(e.placeholderValue, N, D, R)));
   let X = k && Object.keys(W).length >= Object.keys(Y).length ? k : j,
     Q = t => {
       if (e.isDisabled || e.isReadOnly) return;
       let n = Object.keys(W),
         i = Object.keys(Y);
-      null == t ? (x(null), U((0, r.OJ)(e.placeholderValue, N, D, R)), K({})) : 0 === n.length && null == z.current || n.length >= i.length || n.length === i.length - 1 && Y.dayPeriod && !W.dayPeriod && "dayPeriod" !== z.current ? (0 === n.length && K(W = {
+      null == t ? (L(null), U((0, r.OJ)(e.placeholderValue, N, D, R)), K({})) : 0 === n.length && null == z.current || n.length >= i.length || n.length === i.length - 1 && Y.dayPeriod && !W.dayPeriod && "dayPeriod" !== z.current ? (0 === n.length && K(W = {
         ...Y
-      }), x(t = (0, s.Mw)(t, (null == C ? true : C.calendar) || new(0, l.IQ)))) : U(t), z.current = null
+      }), L(t = (0, s.Mw)(t, (null == C ? true : C.calendar) || new(0, l.IQ)))) : U(t), z.current = null
     },
     J = (0, d.useMemo)(() => X.toDate(P), [X, P]),
     $ = (0, d.useMemo)(() => m(J, W, V, H, X, D, h, N), [J, W, V, H, X, D, h, N]);
@@ -119,10 +119,10 @@ function h(e) {
         (t.length >= n.length || t.length === n.length - 1 && Y.dayPeriod && !W.dayPeriod) && Q(X)
       }
     },
-    en = (0, d.useMemo)(() => (0, r.p2)(L, S, T, A, Z), [L, S, T, A, Z]),
+    en = (0, d.useMemo)(() => (0, r.p2)(x, T, S, A, Z), [x, T, S, A, Z]),
     er = (0, c.Q3)({
       ...e,
-      value: L,
+      value: x,
       builtinValidation: en
     }),
     ei = er.displayValidation.isInvalid,
@@ -185,7 +185,7 @@ function h(e) {
       }) : t in X && (i = X.set({
         [t]: n[t]
       }));
-      x(null), Q(i)
+      L(null), Q(i)
     },
     formatValue(e) {
       if (!k) return "";

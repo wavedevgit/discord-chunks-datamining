@@ -37,9 +37,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk918559 = require("./918559.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk505386 = require("./505386.js"),
-  Chunk186880 = require("./186880.js"),
-  Chunk315091 = require("./315091.js");
+  Chunk51434 = require("./51434.js"),
+  Chunk533362 = require("./533362.js"),
+  Chunk285236 = require("./285236.js");
 
 function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -86,7 +86,7 @@ function V(e) {
   let {
     channel: _,
     isLoading: p
-  } = e, [C, G] = i.useState(false), B = (0, s.e7)([T.ZP], () => T.ZP.getCurrentEmbeddedActivity()), Z = null == B ? true : B.applicationId, F = (0, s.e7)([T.ZP], () => null != Z && T.ZP.isProxyTicketRefreshing(Z), [Z]), V = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), H = (0, h.q)(Z), Y = null == B ? true : B.launchId, W = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == _ ? true : _.id)), {
+  } = e, [C, G] = i.useState(false), B = (0, s.e7)([S.ZP], () => S.ZP.getCurrentEmbeddedActivity()), Z = null == B ? true : B.applicationId, F = (0, s.e7)([S.ZP], () => null != Z && S.ZP.isProxyTicketRefreshing(Z), [Z]), V = (0, s.e7)([S.ZP], () => S.ZP.getActivityPanelMode()), H = (0, h.q)(Z), Y = null == B ? true : B.launchId, W = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == _ ? true : _.id)), {
     dockedRect: K,
     isHidden: z
   } = (0, s.cj)([O.Z], () => {
@@ -108,7 +108,7 @@ function V(e) {
     })) : null,
     selectedParticipant: null != _ ? g.Z.getSelectedParticipant(_.id) : null,
     participantsOpen: null != _ && g.Z.getParticipantsOpen(_.id)
-  })), $ = W || null != q, ee = (0, R.Z)(null == _ ? true : _.id), et = ee && (null == Q ? true : Q.type) !== M.fO.ACTIVITY, en = !ee && V === L.Ez.PIP, er = $ && (et || en) && null == K, ei = (!$ || er) && !z, ea = ei && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
+  })), $ = W || null != q, ee = (0, R.Z)(null == _ ? true : _.id), et = ee && (null == Q ? true : Q.type) !== M.fO.ACTIVITY, en = !ee && V === x.Ez.PIP, er = $ && (et || en) && null == K, ei = (!$ || er) && !z, ea = ei && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
 
   function eo() {
     if (null != _) {
@@ -117,7 +117,7 @@ function V(e) {
         applicationId: B.applicationId,
         instanceId: B.compositeInstanceId
       }));
-      let t = null != (e = _.getGuildId()) ? e : x.ME;
+      let t = null != (e = _.getGuildId()) ? e : L.ME;
       d.Z.channelListScrollTo(t, _.id), (0, E.XU)(t, _.id)
     }
     null == q && (0, f.Ou)()
@@ -154,7 +154,7 @@ function V(e) {
       onMouseDown: n,
       onMouseLeave: i,
       onJumpToChannel: () => {
-        eo(), (0, S.tg)(L.Ez.PANEL)
+        eo(), (0, T.tg)(x.Ez.PANEL)
       },
       channel: _,
       applicationId: B.applicationId,
@@ -256,7 +256,7 @@ let H = e => {
   var {
     channel: t
   } = e, n = Z(e, ["channel"]);
-  let i = T.ZP.getCurrentEmbeddedActivity();
+  let i = S.ZP.getCurrentEmbeddedActivity();
   (0, C.Z)({
     connectedEmbeddedActivity: i
   });

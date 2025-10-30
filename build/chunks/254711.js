@@ -66,12 +66,12 @@ function D(e, t) {
   return n
 }
 
-function L(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = require("./227419.jsx").Z,
+let L = require("./227419.jsx").Z,
   M = (e, t) => {
     var n;
     return null == (n = e.find(e => e.name === t)) ? true : n.value
@@ -92,7 +92,7 @@ let x = require("./227419.jsx").Z,
       }
     }
   },
-  j = [...x, {
+  j = [...L, {
     id: "-1",
     untranslatedName: "shrug",
     displayName: "shrug",
@@ -582,7 +582,7 @@ let x = require("./227419.jsx").Z,
       },
       required: true,
       get choices() {
-        return (0, Chunk590433.tr)().map(e => L(w({}, e), {
+        return (0, Chunk590433.tr)().map(e => x(w({}, e), {
           name: e.label,
           displayName: e.label
         }))
@@ -698,5 +698,5 @@ let x = require("./227419.jsx").Z,
   G = j.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.untranslatedName)),
   B = (e, t, n) => {
     let r = t ? j : G;
-    return r.filter(t => e.includes(t.type) && (!n || t.inputType === S.iw.BUILT_IN_TEXT || t.inputType === S.iw.BUILT_IN_INTEGRATION))
+    return r.filter(t => e.includes(t.type) && (!n || t.inputType === T.iw.BUILT_IN_TEXT || t.inputType === T.iw.BUILT_IN_INTEGRATION))
   }

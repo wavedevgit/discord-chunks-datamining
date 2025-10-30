@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 63962 **/
 /** chunk id: 823748, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ts
@@ -118,7 +118,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk440493 = require("./440493.js"),
   Chunk157925 = require("./157925.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk97009 = require("./97009.js");
+  Chunk161655 = require("./161655.js");
 
 function tt(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -155,10 +155,10 @@ function tr(e, t) {
   }), e
 }
 let ti = (0, Chunk663993.Un)({
-  createPromise: () => Promise.all([require.e("22173"), require.e("9456")]).then(require.bind(require, 346975)),
+  createPromise: () => Promise.all([require.e("22173"), require.e("76892")]).then(require.bind(require, 346975)),
   webpackId: 346975,
   renderLoader: () => (0, Chunk951288.jsx)("div", {
-    className: Chunk97009.loader,
+    className: Chunk161655.loader,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   }),
   name: "ForumChannel"
@@ -179,7 +179,7 @@ class tl extends Chunk647438.PureComponent {
     o()(null != t, "Missing channel in Channel.openChannelContextMenu"), o()(null != i, "Missing guild in Channel.openChannelContextMenu"), (0, b.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("24783"), n.e("41815")]).then(n.bind(n, 439635));
+      } = await Promise.all([n.e("24783"), n.e("63384")]).then(n.bind(n, 439635));
       return n => (0, r.jsx)(e, tr(tn({}, n), {
         channel: t,
         guild: i
@@ -202,7 +202,7 @@ class tl extends Chunk647438.PureComponent {
     o()(null != i, "Missing user in Channel.openDMContextMenu"), (0, b.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("88855")]).then(n.bind(n, 131404));
+      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("85952")]).then(n.bind(n, 131404));
       return n => (0, r.jsx)(e, tr(tn({}, n), {
         user: i,
         channelSelected: true,
@@ -427,7 +427,7 @@ class tl extends Chunk647438.PureComponent {
           style: {
             width: Chunk981631.$Y6
           },
-          className: Chunk97009.guildSidebar,
+          className: Chunk161655.guildSidebar,
           children: (0, Chunk951288.jsx)(Chunk613464.Z, {
             guildId: module,
             userId: exports,
@@ -473,20 +473,20 @@ class tl extends Chunk647438.PureComponent {
         subsection: null != require ? require : true
       }), (0, Chunk951288.jsxs)("div", {
         "data-has-border": module.type !== Chunk981631.d4z.GUILD_VOICE,
-        className: a()(Chunk97009.chat, {
-          [Chunk97009.threadSidebarOpen]: Chunk952265 || Chunk481060,
-          [Chunk97009.threadSidebarFloating]: Chunk952265 && Chunk442837
+        className: a()(Chunk161655.chat, {
+          [Chunk161655.threadSidebarOpen]: Chunk952265 || Chunk481060,
+          [Chunk161655.threadSidebarFloating]: Chunk952265 && Chunk442837
         }),
         children: [Chunk475179 ? (0, Chunk951288.jsx)(Chunk561472.Z, {
           style: {
             right: Chunk952265 ? Chunk843611 : true
           },
-          className: Chunk97009.uploadArea,
+          className: Chunk161655.uploadArea,
           channel: module,
           draftType: Chunk703558.d.ChannelMessage
         }) : null, Chunk704215 || d ? null : this.renderHeaderBar(), this.renderCall(), this.renderEmbeddedActivityPanel(), (0, Chunk951288.jsxs)("div", {
-          className: a()(Chunk97009.content, {
-            [Chunk97009.noChat]: Chunk120356 === Chunk981631.AEg.NO_CHAT
+          className: a()(Chunk161655.content, {
+            [Chunk161655.noChat]: Chunk120356 === Chunk981631.AEg.NO_CHAT
           }),
           children: [this.renderChat(), this.renderSidebar()]
         })]
@@ -589,7 +589,7 @@ class tl extends Chunk647438.PureComponent {
             channel: e
           }, "pins")), s.push((0, r.jsx)(ea.Z, {
             channel: e,
-            tooltip: e5.intl.string(e5.t.Xjlbvs),
+            tooltip: e9.intl.string(e9.t.Xjlbvs),
             location: "ChannelHeaderToolbar-DM-AddFriendsButton"
           }, "invite")), s.push((0, r.jsx)(ec.Z, {
             channel: e,
@@ -604,7 +604,7 @@ class tl extends Chunk647438.PureComponent {
             }, "calls")), s.push((0, r.jsx)(ee.Z, {
               channel: e
             }, "pins")), !e.isManaged()) {
-            let t = e5.intl.string(e5.t.Xjlbvs);
+            let t = e9.intl.string(e9.t.Xjlbvs);
             s.push((0, r.jsx)(ea.Z, {
               channel: e,
               tooltip: t,
@@ -712,7 +712,7 @@ class tl extends Chunk647438.PureComponent {
         children: (0, r.jsx)(g.Button, {
           variant: "secondary",
           size: "sm",
-          text: e5.intl.string(e5.t["3aOv+h"]),
+          text: e9.intl.string(e9.t["3aOv+h"]),
           onClick: () => (0, g.ZDy)(async () => {
             let {
               default: e
@@ -759,7 +759,7 @@ class tl extends Chunk647438.PureComponent {
             }),
             transparent: _,
             hidden: d,
-            "aria-label": e5.intl.string(e5.t.BIYAqa),
+            "aria-label": e9.intl.string(e9.t.BIYAqa),
             children: [p && (0, r.jsx)(ei.TS, {
               channel: e,
               guild: i,
@@ -781,7 +781,7 @@ class tl extends Chunk647438.PureComponent {
                 onClick: () => (0, em.XU)(e.guild_id, e.id),
                 variant: "secondary",
                 size: "sm",
-                text: e5.intl.string(e5.t.k5WiPf)
+                text: e9.intl.string(e9.t.k5WiPf)
               })
             }) : (0, ei.v0)(e, i)]
           }, "header-".concat(e.id))
@@ -850,7 +850,7 @@ let ta = (0, Chunk112724.Z)(tl),
     }), i.useEffect(() => {
       var e, t, n;
       let r = (0, em.s1)();
-      if ((null == r || null == (e = r.location) ? true : e.state) === e9.Df) {
+      if ((null == r || null == (e = r.location) ? true : e.state) === e5.Df) {
         let {
           channelId: e
         } = null != (n = (0, eu.Qj)(null == r || null == (t = r.location) ? true : t.pathname)) ? n : {};

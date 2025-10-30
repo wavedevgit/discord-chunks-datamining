@@ -83,7 +83,7 @@ async function b(e, t) {
 }
 async function y(e, t) {
   var n;
-  let r = L(e),
+  let r = x(e),
     i = await s.tn.get({
       url: _.ANM.GET_REPORT_MENU(r),
       query: (null == t ? true : t.variant) != null ? {
@@ -119,10 +119,10 @@ async function v(e, t) {
 }
 
 function I(e, t, n) {
-  return u.ZP.get("iar_skip_api_report_submit") ? Promise.resolve() : o.s.REPORT_TO_MOD.has(t.name) ? T(e, t, n) : S(e, t, n)
+  return u.ZP.get("iar_skip_api_report_submit") ? Promise.resolve() : o.s.REPORT_TO_MOD.has(t.name) ? S(e, t, n) : T(e, t, n)
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   return s.tn.post({
     url: _.ANM.SUBMIT_REPORT_MENU(D(t)),
     body: k(e, t, n),
@@ -130,10 +130,10 @@ function S(e, t, n) {
   })
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let r = M(e, t, n);
   return s.tn.post({
-    url: x(t),
+    url: L(t),
     body: r,
     rejectWithError: false
   }).then(e => (d.Z.showSuccessToast(p.wQ.REPORT_TO_MOD_SUCCESS), (null == r ? true : r.channel_id) != null && (null == r ? true : r.message_id) != null && l.Z.dispatch({
@@ -200,12 +200,12 @@ function D(e) {
   return a()(Object.values(f.b).includes(t), "Invalid report type ".concat(e.name)), t
 }
 
-function L(e) {
+function x(e) {
   let t = e.name;
   return a()(Object.values(f.xw).includes(t), "Invalid report type ".concat(e.name)), t
 }
 
-function x(e) {
+function L(e) {
   if (a()(o.s.REPORT_TO_MOD.has(e.name), "Invalid report type ".concat(e.name)), e.name === f.xw.MESSAGE) return _.ANM.SUBMIT_MODERATOR_MESSAGE_REPORT(e.record.channel_id, e.record.id);
   throw Error("Invalid report type ".concat(e.name))
 }

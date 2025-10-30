@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk618158 = require("./618158.jsx"),
   Chunk362267 = require("./362267.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk119421 = require("./119421.js");
+  Chunk842250 = require("./842250.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -92,8 +92,8 @@ function I(e) {
     iconComponent: b,
     themeable: v = false,
     disabled: I = false,
-    isActive: S = false,
-    tooltipPosition: T = "top",
+    isActive: T = false,
+    tooltipPosition: S = "top",
     shouldShowTooltip: A = true,
     forceTooltipOpen: C = false,
     buttonRef: N,
@@ -101,13 +101,13 @@ function I(e) {
     "aria-label": P,
     look: w,
     buttonText: D,
-    size: L,
-    color: x
+    size: x,
+    color: L
   } = e;
   return (0, r.jsx)(_.Z, {
     children: (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
-      position: T,
+      position: S,
       text: t,
       "aria-label": P,
       shouldShow: A,
@@ -117,12 +117,12 @@ function I(e) {
           onClick: t,
           onContextMenu: c,
           onMouseEnter: _,
-          onMouseLeave: T
+          onMouseLeave: S
         } = e, A = O(e, ["onClick", "onContextMenu", "onMouseEnter", "onMouseLeave"]);
         return (0, r.jsxs)(l.zx, y(E({
           look: null != w ? w : l.zx.Looks.BLANK,
-          size: null != L ? L : l.zx.Sizes.NONE,
-          color: x,
+          size: null != x ? x : l.zx.Sizes.NONE,
+          color: L,
           onKeyDown: e => {
             null == i || i(e)
           },
@@ -136,7 +136,7 @@ function I(e) {
             null == _ || _(), null == a || a(e)
           },
           onMouseLeave: e => {
-            null == T || T(), null == u || u(e)
+            null == S || S(), null == u || u(e)
           },
           onContextMenu: e => {
             null == c || c(), null == d || d(e)
@@ -145,14 +145,14 @@ function I(e) {
             null == _ || _(), null == a || a(e)
           },
           onBlur: e => {
-            null == T || T(), null == u || u(e)
+            null == S || S(), null == u || u(e)
           },
           disabled: I,
           innerClassName: o()(m.lineHeightReset, {
             [m.buttonInnerWithText]: null != D
           }),
           className: o()({
-            [m.active]: S
+            [m.active]: T
           }, f),
           wrapperClassName: p,
           buttonRef: N,
@@ -164,7 +164,7 @@ function I(e) {
             className: o()(h, {
               [m.controlIcon]: null == D,
               [m.themeable]: v,
-              [m.active]: S
+              [m.active]: T
             }),
             color: g
           }), D]
@@ -173,29 +173,29 @@ function I(e) {
     })
   })
 }
-let S = {
-    disconnect: Chunk119421.disconnect,
-    join: Chunk119421.join,
-    red: Chunk119421.red,
-    white: Chunk119421.white,
-    green: Chunk119421.green,
-    yellow: Chunk119421.yellow,
-    primaryDark: Chunk119421.primaryDark,
-    primaryLight: Chunk119421.primaryDark,
-    activeLight: Chunk119421.activeLight,
-    premiumGradient: Chunk119421.premiumGradient
+let T = {
+    disconnect: Chunk842250.disconnect,
+    join: Chunk842250.join,
+    red: Chunk842250.red,
+    white: Chunk842250.white,
+    green: Chunk842250.green,
+    yellow: Chunk842250.yellow,
+    primaryDark: Chunk842250.primaryDark,
+    primaryLight: Chunk842250.primaryDark,
+    activeLight: Chunk842250.activeLight,
+    premiumGradient: Chunk842250.premiumGradient
   },
-  T = {
-    disconnect: Chunk119421.disconnect,
-    join: Chunk119421.join,
-    red: Chunk119421.redGlow,
-    white: Chunk119421.white,
-    green: Chunk119421.greenGlow,
-    yellow: Chunk119421.yellow,
-    primaryDark: Chunk119421.primaryDark,
-    primaryLight: Chunk119421.primaryDark,
-    activeLight: Chunk119421.activeLight,
-    premiumGradient: Chunk119421.premiumGradient
+  S = {
+    disconnect: Chunk842250.disconnect,
+    join: Chunk842250.join,
+    red: Chunk842250.redGlow,
+    white: Chunk842250.white,
+    green: Chunk842250.greenGlow,
+    yellow: Chunk842250.yellow,
+    primaryDark: Chunk842250.primaryDark,
+    primaryLight: Chunk842250.primaryDark,
+    activeLight: Chunk842250.activeLight,
+    premiumGradient: Chunk842250.premiumGradient
   };
 
 function A(e) {
@@ -215,11 +215,11 @@ function A(e) {
     P = O(e, ["ref", "color", "caretColor", "isActive", "className", "iconClassName", "onPopoutClick", "popoutOpen", "popoutDisabled", "isTrayButton", "applyStyles"]);
   let w = (0, p.Z)(a, l),
     D = null != s ? s : w,
-    L = (0, u.Z)("(max-width: 456px)"),
-    x = i.useRef(null),
+    x = (0, u.Z)("(max-width: 456px)"),
+    L = i.useRef(null),
     M = i.useContext(f.h9);
   i.useEffect(() => {
-    null != x.current && (M ? x.current.pause() : x.current.play())
+    null != L.current && (M ? L.current.pause() : L.current.play())
   }, [M]);
   let k = null != (t = P.onContextMenu) ? t : v,
     j = null == v && !N,
@@ -229,16 +229,16 @@ function A(e) {
       grow: false,
       onContextMenu: k,
       iconClassName: o()(b, m.centerIcon, j && m.fullRegionIcon),
-      className: o()(L || R ? g : null, l && m.active, m.centerButton, T[w], j && m.fullRegionButton, G && m.attachedButton)
+      className: o()(x || R ? g : null, l && m.active, m.centerButton, S[w], j && m.fullRegionButton, G && m.attachedButton)
     }));
-  return L ? B : (0, r.jsxs)("div", {
+  return x ? B : (0, r.jsxs)("div", {
     ref: n,
-    className: o()(m.attachedCaretButtonContainer, A && m.popoutOpen, g, U && [m.fullRegionDropdownButton, S[w]]),
+    className: o()(m.attachedCaretButtonContainer, A && m.popoutOpen, g, U && [m.fullRegionDropdownButton, T[w]]),
     children: [B, null != v ? (0, r.jsx)(_.Z, {
       children: (0, r.jsx)(c.P3F, {
         "aria-label": h.intl.string(h.t.PdRCRg),
         onClick: C ? true : v,
-        className: o()(m.contextMenuNub, N && m.attachedCaret, T[D], A && [m.popoutOpen, m.active], C && m.disabled),
+        className: o()(m.contextMenuNub, N && m.attachedCaret, S[D], A && [m.popoutOpen, m.active], C && m.disabled),
         children: (0, r.jsx)(d.Z, {
           className: o()(m.contextMenuCaret, A && m.open, C && m.disabled)
         })

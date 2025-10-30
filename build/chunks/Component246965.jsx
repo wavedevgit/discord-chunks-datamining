@@ -20,7 +20,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk655227 = require("./655227.js");
+  Chunk627881 = require("./627881.js");
 
 function b(e) {
   switch (e) {
@@ -62,9 +62,9 @@ let v = function(e) {
   } = e, {
     analyticsLocations: g
   } = (0, l.ZP)(b(s)), v = (0, f.N)(), I = (0, o.Z)(null != v && null != v.expires_at ? Date.parse(v.expires_at) : 0), {
-    variant: S,
-    showNagbar: T
-  } = (0, d.ZP)("PremiumTrialEndingNotice"), A = null == v || (null == (t = v.subscription_trial) ? true : t.sku_id) !== s || null == v.expires_at || Object.values(I).every(e => 0 === e) || v.trial_id !== h.a7 && !T;
+    variant: T,
+    showNagbar: S
+  } = (0, d.ZP)("PremiumTrialEndingNotice"), A = null == v || (null == (t = v.subscription_trial) ? true : t.sku_id) !== s || null == v.expires_at || Object.values(I).every(e => 0 === e) || v.trial_id !== h.a7 && !S;
   if ((0, c.Z)({
       type: i.ImpressionTypes.VIEW,
       name: i.ImpressionNames.TRIAL_NOTICE,
@@ -86,7 +86,7 @@ let v = function(e) {
       }
     })
   };
-  return S === d.tE.NAGBAR_REFRESH && (null == v ? true : v.trial_id) !== h.a7 ? (0, r.jsxs)(_.eJ, {
+  return T === d.tE.NAGBAR_REFRESH && (null == v ? true : v.trial_id) !== h.a7 ? (0, r.jsxs)(_.eJ, {
     onClick: n,
     children: [(0, r.jsx)(_.Jy, {
       children: (0, p.kj)(s, I)

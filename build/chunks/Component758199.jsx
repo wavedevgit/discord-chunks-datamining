@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk914498 = require("./914498.js"),
   Chunk967249 = require("./967249.js"),
   Chunk217702 = require("./217702.js"),
-  Chunk906376 = require("./906376.js"),
+  Chunk666209 = require("./666209.js"),
   E = function(e) {
     return e[e.BOT = 0] = "BOT", e[e.ACTIVITY = 1] = "ACTIVITY", e
   }({});
@@ -68,48 +68,48 @@ function O(e) {
     bannerAspectRatio: O = 0,
     iconSrc: v,
     actions: I = [],
-    trackingConfig: S,
-    onClickContent: T,
+    trackingConfig: T,
+    onClickContent: S,
     onClickBanner: A
   } = e;
-  S = b(S);
+  T = b(T);
   let {
     primaryColor: C,
     secondaryColor: N
   } = (0, f.Z)(null != v ? v : h), R = "linear-gradient(45deg, ".concat(C, ", ").concat(N, ")"), P = (0, u.e7)([d.Z], () => d.Z.useReducedMotion), w = i.useRef(false), D = (0, l.O)(e => {
     if (false === w.current && e) {
       var t;
-      null == S || null == (t = S.onView) || t.call(S), (0, p.GF)({
-        appId: S.id,
-        linkType: S.linkType,
-        referrerId: S.referrerId,
-        customId: S.activityCustomId,
-        guildId: S.guildId,
-        channelId: S.channelId,
-        messageId: S.messageId
+      null == T || null == (t = T.onView) || t.call(T), (0, p.GF)({
+        appId: T.id,
+        linkType: T.linkType,
+        referrerId: T.referrerId,
+        customId: T.activityCustomId,
+        guildId: T.guildId,
+        channelId: T.channelId,
+        messageId: T.messageId
       }), w.current = true
     }
-  }, true), L = null != h, x = null != E && false === P, M = L || x, k = 0 === O ? g.bannerAspectRatioBot : g.bannerAspectRatioActivity, j = i.useRef(null), U = i.useCallback(() => {
+  }, true), x = null != h, L = null != E && false === P, M = x || L, k = 0 === O ? g.bannerAspectRatioBot : g.bannerAspectRatioActivity, j = i.useRef(null), U = i.useCallback(() => {
     let e = j.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-  }, []), G = i.useMemo(() => !!x && new URL(E).pathname.endsWith(".gif"), [x, E]), B = i.useMemo(() => {
-    if (null != T) return e => {
-      T(e), (0, p.KX)(S.id, S.linkType, p.j_.CONTENT, S.referrerId, S.activityCustomId)
+  }, []), G = i.useMemo(() => !!L && new URL(E).pathname.endsWith(".gif"), [L, E]), B = i.useMemo(() => {
+    if (null != S) return e => {
+      S(e), (0, p.KX)(T.id, T.linkType, p.j_.CONTENT, T.referrerId, T.activityCustomId)
     }
-  }, [T, S]), Z = i.useMemo(() => {
+  }, [S, T]), Z = i.useMemo(() => {
     if (null != A) return e => {
-      A(e), (0, p.KX)(S.id, S.linkType, p.j_.BANNER, S.referrerId, S.activityCustomId)
+      A(e), (0, p.KX)(T.id, T.linkType, p.j_.BANNER, T.referrerId, T.activityCustomId)
     }
-  }, [A, S]);
+  }, [A, T]);
   return (0, r.jsxs)("div", {
     ref: D,
     className: g.embed,
     children: [M && (0, r.jsxs)(y, {
       onClick: Z,
       className: o()(g.bannerWrapper, k, {
-        [g.showVideoOnFocus]: x
+        [g.showVideoOnFocus]: L
       }),
-      children: [x && (G ? (0, r.jsx)("div", {
+      children: [L && (G ? (0, r.jsx)("div", {
         className: g.videoBanner,
         style: {
           backgroundImage: "url(".concat(E, ")")
@@ -121,7 +121,7 @@ function O(e) {
         loop: true,
         muted: true,
         className: g.videoBanner
-      })), L && (0, r.jsx)("div", {
+      })), x && (0, r.jsx)("div", {
         className: g.staticBanner,
         style: {
           backgroundImage: "url(".concat(h, ")")
@@ -183,7 +183,7 @@ function O(e) {
                 icon: i,
                 text: n,
                 onClick: e => {
-                  a(e), (0, p.KX)(S.id, S.linkType, u, S.referrerId, S.activityCustomId)
+                  a(e), (0, p.KX)(T.id, T.linkType, u, T.referrerId, T.activityCustomId)
                 },
                 fullWidth: true
               }), null != s && (0, r.jsx)(c.xvT, {

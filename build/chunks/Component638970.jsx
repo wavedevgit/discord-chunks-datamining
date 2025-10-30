@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk31948 = require("./31948.js");
+  Chunk923805 = require("./923805.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -70,7 +70,7 @@ function P(e, t) {
 let w = 250,
   D = 24;
 
-function L(e, t) {
+function x(e, t) {
   switch (t.type) {
     case "MEASUREMENT_COMPLETE":
       return P(N({}, e), {
@@ -91,7 +91,7 @@ function L(e, t) {
       return (0, h.vE)(t)
   }
 }
-let x = {
+let L = {
   animationPhase: "awaitingInput",
   height: "auto"
 };
@@ -118,12 +118,12 @@ function M(e) {
     guildId: a
   }), B = t.id === n.id, Z = (0, s.e7)([p.Z, _.Z], () => {
     let e = B ? p.Z.getStatus() : _.Z.getStatus(t.id, a);
-    return e === S.Sk.OFFLINE || e === S.Sk.INVISIBLE
+    return e === T.Sk.OFFLINE || e === T.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: F
   } = (0, u.U)({
     location: "UserProfileStackedActivity"
-  }), V = F && null == j && null == G && null != U, H = (0, b.yi)(), Y = (null == H ? true : H.interactionSource) === I.n_.ACTIVITY, W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), q = i.useRef(null), [X, Q] = i.useReducer(L, x), {
+  }), V = F && null == j && null == G && null != U, H = (0, b.yi)(), Y = (null == H ? true : H.interactionSource) === I.n_.ACTIVITY, W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), q = i.useRef(null), [X, Q] = i.useReducer(x, L), {
     height: J,
     animationPhase: $
   } = X, ee = "awaitingInput" !== $, et = "animating" === $ || "done" === $, en = [], er = {
@@ -153,7 +153,7 @@ function M(e) {
         })
       },
       variant: "secondary",
-      text: T.intl.string(T.t.pD1L1u),
+      text: S.intl.string(S.t.pD1L1u),
       textVariant: "text-xs/medium"
     })
   }) : null, el = i.useCallback(() => {
@@ -187,7 +187,7 @@ function M(e) {
     children: [(0, r.jsx)(l.nn4, {
       children: (0, r.jsx)(l.H, {
         id: R,
-        children: T.intl.string(T.t.J6STd9)
+        children: S.intl.string(S.t.J6STd9)
       })
     }), (0, r.jsxs)("div", {
       ref: W,
@@ -210,7 +210,7 @@ function M(e) {
               children: (0, r.jsx)(l.Text, {
                 variant: "text-xs/medium",
                 color: "none",
-                children: T.intl.format(T.t.wv8Q7k, {
+                children: S.intl.format(S.t.wv8Q7k, {
                   activitiesCount: ea.length
                 })
               })

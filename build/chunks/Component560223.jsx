@@ -2,7 +2,7 @@
 /** chunk id: 560223, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk391110 = require("./391110.js"),
   Chunk75077 = require("./75077.js"),
   Chunk51636 = require("./51636.jsx"),
-  Chunk484327 = require("./484327.js");
+  Chunk118461 = require("./118461.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -85,15 +85,15 @@ let I = e => {
       })
     })
   },
-  S = e => {
+  T = e => {
     let {
       className: t,
       variant: n,
       noBackground: a = false,
       leftAlignHeaders: b = false,
       showAllPerksButton: O,
-      headerClassname: S
-    } = e, T = i.useRef(null), A = n === h.gM.WHATS_NEW, C = (0, _.x)();
+      headerClassname: T
+    } = e, S = i.useRef(null), A = n === h.gM.WHATS_NEW, C = (0, _.x)();
     i.useEffect(() => {
       A && C()
     }, [C, A]);
@@ -104,10 +104,10 @@ let I = e => {
         fractionalState: w
       } = (0, l.Z)(),
       D = (0, d.W)(),
-      L = (0, u.bg)({
+      x = (0, u.bg)({
         location: "PremiumPerks"
       }),
-      x = (0, c.cL)({
+      L = (0, c.cL)({
         location: "PremiumPerks"
       }),
       M = f.Z.useExperiment({
@@ -120,13 +120,13 @@ let I = e => {
         isPremiumSubscriber: P,
         fractionalState: w,
         isInReverseTrial: D,
-        showProfileWidgets: L,
-        showDisplayNameStyles: x,
+        showProfileWidgets: x,
+        showDisplayNameStyles: L,
         recurring3PPromotionExperiment: M
       }),
       j = k.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
-      ref: T,
+      ref: S,
       className: o()(E.section, {
         [E.centerAlignSection]: !b,
         [E.leftAlignSection]: b
@@ -135,7 +135,7 @@ let I = e => {
         showAllPerksButton: O,
         leftAlignHeaders: b,
         title: N.title,
-        headerClassname: S
+        headerClassname: T
       }), (0, r.jsx)(s.Text, {
         variant: "text-lg/normal",
         color: "header-primary",

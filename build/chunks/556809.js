@@ -2,7 +2,7 @@
 /** chunk id: 556809, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js");
 var Chunk147913 = require("./147913.js"),
   Chunk710845 = require("./710845.js"),
@@ -38,10 +38,10 @@ let y = null,
   O = false,
   v = false,
   I = {},
-  S = (e, t) => {
+  T = (e, t) => {
     I[e] = t
   },
-  T = e => {
+  S = e => {
     delete I[e]
   },
   A = () => {
@@ -65,9 +65,9 @@ let y = null,
       if (o.Z.isFocused() && m.error("Main window is reported as focused when it should not be!"), n || r) {
         y = n ? "OverlayGameFocused" : "OverlayWindowFocused";
         let r = t.requestAnimationFrame(t => {
-          T(r), e(t)
+          S(r), e(t)
         });
-        return S(r, e), r
+        return T(r, e), r
       }
     } catch (e) {
       m.error("RAF redirect failed, falling back to original. Cause:", e), (0, c.D1)(e, f.default.getOverlayMethod((0, s.getPID)()))
@@ -137,4 +137,4 @@ class D extends Chunk147913.Z {
     })
   }
 }
-let L = new D
+let x = new D

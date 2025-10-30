@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   DG: () => g,
-  FO: () => T,
+  FO: () => S,
   G1: () => R,
   I6: () => I,
   J7: () => C,
-  JM: () => S,
+  JM: () => T,
   Jw: () => m,
   WL: () => y,
   ak: () => h,
@@ -184,7 +184,7 @@ function I(e, t, n, r) {
   })
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = new o.Z({});
   D(l.BM.USER, {
     reported_user_id: n.id
@@ -199,7 +199,7 @@ function S(e, t) {
   })
 }
 
-function T(e, t) {
+function S(e, t) {
   let n = (0, s.dangerouslyConstructGuildRecordFromUntypedObject)({});
   D(l.BM.GUILD, {
     guild_id: n.id

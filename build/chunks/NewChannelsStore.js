@@ -2,7 +2,7 @@
 /** chunk id: 22082, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -39,7 +39,7 @@ function I(e) {
   delete O[t.id]
 }
 
-function S(e) {
+function T(e) {
   var t;
   let {
     channel: n
@@ -47,7 +47,7 @@ function S(e) {
   n.isVocal() || (O[n.guild_id] = null != (t = O[n.guild_id]) ? t : new Set, O[n.guild_id].add(n.id))
 }
 
-function T(e) {
+function S(e) {
   let {
     guildId: t,
     channelIds: n
@@ -128,12 +128,12 @@ class D extends(r = Chunk442837.ZP.Store) {
   }
 }
 b(D, "displayName", "NewChannelsStore");
-let L = new D(Chunk570140.Z, {
-  BULK_CLEAR_RECENTS: T,
+let x = new D(Chunk570140.Z, {
+  BULK_CLEAR_RECENTS: S,
   CHANNEL_ACK: () => true,
   CHANNEL_SELECT: A,
   SIDEBAR_VIEW_CHANNEL: C,
   SIDEBAR_VIEW_GUILD: N,
   GUILD_DELETE: I,
-  CHANNEL_CREATE: S
+  CHANNEL_CREATE: T
 })

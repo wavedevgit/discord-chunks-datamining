@@ -92,21 +92,21 @@ function p(e) {
       PaymentModal: i
     } = await Promise.resolve().then(n.bind(n, 791785)), {
       STEPS: s
-    } = await Promise.all([n.e("17938"), n.e("94758"), n.e("84992"), n.e("31029")]).then(n.bind(n, 7305));
+    } = await Promise.all([n.e("17938"), n.e("94758"), n.e("84992"), n.e("10065")]).then(n.bind(n, 7305));
     return n => {
       var {
-        onClose: S
-      } = n, T = f(n, ["onClose"]);
+        onClose: T
+      } = n, S = f(n, ["onClose"]);
       return (0, r.jsx)(e, {
         activeSubscription: l,
         stepConfigs: s,
         skuIDs: [I],
         children: (0, r.jsx)(o.c1, {
           children: (0, r.jsx)(a.KB, {
-            children: (0, r.jsx)(i, d(c({}, T), {
+            children: (0, r.jsx)(i, d(c({}, S), {
               initialPlanId: t,
               onClose: e => {
-                S(), null == p || p(e)
+                T(), null == p || p(e)
               },
               analyticsLocations: g,
               analyticsObject: h,

@@ -54,12 +54,12 @@ function v() {
   }
 }
 let I = Chunk647438.createContext(null),
-  S = Chunk647438.createContext(null),
-  T = () => {
+  T = Chunk647438.createContext(null),
+  S = () => {
     var e;
     return (null == (e = Chunk647438.useContext(I)) ? true : module.id) || null
   },
-  A = () => Chunk647438.useContext(S);
+  A = () => Chunk647438.useContext(T);
 
 function C(e) {
   return "data-floating-ui-" + e
@@ -79,8 +79,8 @@ let w = {
 function D(e) {
   return "inert" === e ? w.inert : "aria-hidden" === e ? w["aria-hidden"] : w.none
 }
-let L = new WeakSet,
-  x = null,
+let x = new WeakSet,
+  L = null,
   M = 0,
   k = e => e && (e.host || k(e.parentNode)),
   j = (e, t) => t.map(t => {
@@ -96,8 +96,8 @@ function U(e, t, n, r) {
     s = new Set,
     l = new Set(o),
     c = [];
-  x[i] || (x[i] = new WeakMap);
-  let u = x[i];
+  L[i] || (L[i] = new WeakMap);
+  let u = L[i];
 
   function d(e) {
     !(!e || s.has(e)) && (s.add(e), e.parentNode && d(e.parentNode))
@@ -113,7 +113,7 @@ function U(e, t, n, r) {
             r = D(a),
             o = (r.get(e) || 0) + 1,
             s = (u.get(e) || 0) + 1;
-          r.set(e, o), u.set(e, s), c.push(e), 1 === o && n && L.add(e), 1 === s && e.setAttribute(i, ""), !n && a && e.setAttribute(a, "inert" === a ? "" : "true")
+          r.set(e, o), u.set(e, s), c.push(e), 1 === o && n && x.add(e), 1 === s && e.setAttribute(i, ""), !n && a && e.setAttribute(a, "inert" === a ? "" : "true")
         }
     })
   }
@@ -122,8 +122,8 @@ function U(e, t, n, r) {
       let t = D(a),
         n = (t.get(e) || 0) - 1,
         r = (u.get(e) || 0) - 1;
-      t.set(e, n), u.set(e, r), n || (!L.has(e) && a && e.removeAttribute(a), L.delete(e)), r || e.removeAttribute(i)
-    }), --M || (w.inert = new WeakMap, w["aria-hidden"] = new WeakMap, w.none = new WeakMap, L = new WeakSet, x = {})
+      t.set(e, n), u.set(e, r), n || (!x.has(e) && a && e.removeAttribute(a), x.delete(e)), r || e.removeAttribute(i)
+    }), --M || (w.inert = new WeakMap, w["aria-hidden"] = new WeakMap, w.none = new WeakMap, x = new WeakSet, L = {})
   }
 }
 let G = null,
@@ -174,8 +174,8 @@ function z(e, t) {
     escapeKey: v,
     outsidePress: I
   } = K(m), {
-    escapeKey: S,
-    outsidePress: T
+    escapeKey: T,
+    outsidePress: S
   } = K(g), N = i.useRef(false), R = (0, a.iW)(e => {
     var t;
     if (!n || !c || !u || "Escape" !== e.key || N.current) return;
@@ -215,7 +215,7 @@ function z(e, t) {
       _ = e
     }
     if (d.length && (0, o.kK)(c) && !(0, a.ex)(c) && !(0, a.r3)(c, s.floating) && Array.from(d).every(e => !(0, a.r3)(_, e))) return;
-    if ((0, o.Re)(c) && x) {
+    if ((0, o.Re)(c) && L) {
       let t = (0, o.Py)(c),
         n = (0, o.Dx)(c),
         r = /auto|scroll/,
@@ -273,7 +273,7 @@ function z(e, t) {
       }, 5 * !!(0, o.Pf)())
     }
     let _ = (0, a.Me)(s.floating);
-    u && (_.addEventListener("keydown", S ? P : R, S), _.addEventListener("compositionstart", i), _.addEventListener("compositionend", d)), y && _.addEventListener(f, T ? D : w, T);
+    u && (_.addEventListener("keydown", T ? P : R, T), _.addEventListener("compositionstart", i), _.addEventListener("compositionend", d)), y && _.addEventListener(f, S ? D : w, S);
     let p = [];
     return h && ((0, o.kK)(s.domReference) && (p = (0, o.Kx)(s.domReference)), (0, o.kK)(s.floating) && (p = p.concat((0, o.Kx)(s.floating))), !(0, o.kK)(s.reference) && s.reference && s.reference.contextElement && (p = p.concat((0, o.Kx)(s.reference.contextElement)))), (p = p.filter(e => {
       var t;
@@ -283,14 +283,14 @@ function z(e, t) {
         passive: true
       })
     }), () => {
-      u && (_.removeEventListener("keydown", S ? P : R, S), _.removeEventListener("compositionstart", i), _.removeEventListener("compositionend", d)), y && _.removeEventListener(f, T ? D : w, T), p.forEach(e => {
+      u && (_.removeEventListener("keydown", T ? P : R, T), _.removeEventListener("compositionstart", i), _.removeEventListener("compositionend", d)), y && _.removeEventListener(f, S ? D : w, S), p.forEach(e => {
         e.removeEventListener("scroll", t)
       }), window.clearTimeout(e)
     }
-  }, [l, s, u, y, f, n, r, h, c, v, I, R, S, P, w, T, D]), i.useEffect(() => {
+  }, [l, s, u, y, f, n, r, h, c, v, I, R, T, P, w, S, D]), i.useEffect(() => {
     l.current.insideReactTree = false
   }, [l, y, f]);
-  let L = i.useMemo(() => ({
+  let x = i.useMemo(() => ({
       onKeyDown: R,
       ..._ && {
         [Y[p]]: e => {
@@ -303,7 +303,7 @@ function z(e, t) {
         }
       }
     }), [R, r, _, p]),
-    x = i.useMemo(() => ({
+    L = i.useMemo(() => ({
       onKeyDown: R,
       onMouseDown() {
         O.current = true
@@ -316,9 +316,9 @@ function z(e, t) {
       }
     }), [R, f, l]);
   return i.useMemo(() => c ? {
-    reference: L,
-    floating: x
-  } : {}, [c, L, x])
+    reference: x,
+    floating: L
+  } : {}, [c, x, L])
 }
 
 function q(e) {
@@ -326,7 +326,7 @@ function q(e) {
     open: t = false,
     onOpenChange: n,
     elements: r
-  } = e, o = O(), s = i.useRef({}), [l] = i.useState(() => v()), c = null != T(), [u, d] = i.useState(r.reference), f = (0, a.iW)((e, t, r) => {
+  } = e, o = O(), s = i.useRef({}), [l] = i.useState(() => v()), c = null != S(), [u, d] = i.useState(r.reference), f = (0, a.iW)((e, t, r) => {
     s.current.openEvent = e ? t : true, l.emit("openchange", {
       open: e,
       event: t,

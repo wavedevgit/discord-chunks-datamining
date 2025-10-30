@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk91907 = require("./91907.jsx"),
   Chunk866040 = require("./866040.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk817120 = require("./817120.js");
+  Chunk991553 = require("./991553.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,14 +67,14 @@ function y(e) {
     participant1: O,
     participant2: v,
     numOtherParticipants: I,
-    orderedParticipants: S
-  } = (0, u.Z)(t), T = [O, v];
+    orderedParticipants: T
+  } = (0, u.Z)(t), S = [O, v];
   return (0, r.jsxs)("div", {
     className: o()(h.container, a),
     children: [y.length > 0 ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(_.Z, {
         targetElementRef: m,
-        participants: S,
+        participants: T,
         channel: n,
         children: e => (0, r.jsx)(l.P3F, b(g({
           innerRef: m,
@@ -98,22 +98,22 @@ function y(e) {
       className: o()(h.truncatedText, h.usersHeader),
       scaleFontToUserSetting: true,
       children: p.intl.format(p.t.rH95Gu, {
-        user0: c.ZP.getName(n.guild_id, n.id, T[0]),
-        user1: c.ZP.getName(n.guild_id, n.id, T[1]),
+        user0: c.ZP.getName(n.guild_id, n.id, S[0]),
+        user1: c.ZP.getName(n.guild_id, n.id, S[1]),
         countOthers: I,
         name0Hook: (e, t) => (0, r.jsx)(f.Z, {
           text: e,
-          user: T[0],
+          user: S[0],
           channel: n
         }, t),
         name1Hook: (e, t) => (0, r.jsx)(f.Z, {
           text: e,
-          user: T[1],
+          user: S[1],
           channel: n
         }, t),
         countOthersHook: (e, t) => (0, r.jsx)(_.Z, {
           targetElementRef: E,
-          participants: S,
+          participants: T,
           channel: n,
           children: t => (0, r.jsx)(d.Z, b(g({}, t), {
             tag: "span",

@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk656139 = require("./656139.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk756555 = require("./756555.js"),
+  Chunk299383 = require("./299383.js"),
   Chunk754761 = require("./754761.js");
 
 function y(e, t, n) {
@@ -61,7 +61,7 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = e => {
+let T = e => {
     let {
       startingScreen: t,
       analyticsLocations: i
@@ -77,7 +77,7 @@ let S = e => {
       }))
     })
   },
-  T = e => {
+  S = e => {
     let {
       user: t
     } = e, {
@@ -110,7 +110,7 @@ let S = e => {
       let e = [];
       for (let n = 0; n < p.Q; n++)
         if ((null == t ? true : t[n]) !== true) {
-          let i = (0, r.jsx)(T, {
+          let i = (0, r.jsx)(S, {
             user: t[n]
           }, t[n].id);
           e.push(i)
@@ -185,7 +185,7 @@ let S = e => {
           variant: "primary",
           disabled: false === l || true === d,
           text: g.intl.string(g.t.Lm2nFc),
-          onClick: () => S({
+          onClick: () => T({
             startingScreen: h.SelectFriendsModalScreens.SELECT_FRIENDS,
             analyticsLocations: []
           })

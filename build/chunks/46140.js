@@ -2,11 +2,11 @@
 /** chunk id: 46140, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $z: () => T,
+  $z: () => S,
   Dp: () => O,
   Ew: () => k,
   HO: () => E,
-  Jk: () => S,
+  Jk: () => T,
   Jp: () => P,
   Lv: () => N,
   NH: () => b,
@@ -14,7 +14,7 @@ require.d(exports, {
   R4: () => p,
   S7: () => Chunk670081.S,
   Ts: () => y,
-  UP: () => L,
+  UP: () => x,
   V6: () => I,
   V_: () => v,
   XZ: () => _,
@@ -65,8 +65,8 @@ var v = function(e) {
   return e.EXCLUDED_QUEST = "excluded_quest", e.UNKNOWN_QUEST = "unknown_quest", e.NOT_SHAREABLE_QUEST = "not_shareable_quest", e
 }({});
 let I = "1333839522189938740",
-  S = "1420556874629251124",
-  T = "1402418703554842694",
+  T = "1420556874629251124",
+  S = "1402418703554842694",
   A = new Set([Chunk497505.Ok.DESKTOP_ACCOUNT_PANEL_AREA, Chunk497505.Ok.MOBILE_HOME_DOCK_AREA]),
   C = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2, Chunk754700.X.PLAY_ACTIVITY]),
   N = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2, Chunk754700.X.PLAY_ACTIVITY]),
@@ -80,10 +80,10 @@ var w = function(e) {
   D = function(e) {
     return e.VIDEO = "task_video", e.PLAY = "task_play", e
   }({}),
-  L = function(e) {
+  x = function(e) {
     return e.VIRTUAL_CURRENCY = "reward_virtual_currency", e.COLLECTIBLE = "reward_collectible", e.IN_GAME = "reward_in_game", e
   }({});
-let x = [{
+let L = [{
     group: "task",
     filter: "task_play"
   }, {
@@ -100,7 +100,7 @@ let x = [{
     filter: "reward_in_game"
   }],
   M = ["reward", "task"],
-  k = Object.entries((0, Chunk392711.groupBy)(x, "group")).sort((e, t) => {
+  k = Object.entries((0, Chunk392711.groupBy)(L, "group")).sort((e, t) => {
     let n = M.indexOf(e[0]),
       r = M.indexOf(t[0]);
     return n < r ? false : +(r < n)

@@ -61,7 +61,7 @@ let b = {
       name: Chunk388032.intl.string(Chunk388032.t.RbkXxR)
     })
   },
-  S = {
+  T = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SKULL_TREAT_SKU_ID,
     assetId: "a_46d01a1f046e4f58894f5b5361ab2e61",
     a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0m, {
@@ -69,7 +69,7 @@ let b = {
       name: Chunk388032.intl.string(Chunk388032.t.RbkXxR)
     })
   },
-  T = {
+  S = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SPIDER_TRICK_SKU_ID,
     assetId: "a_f6fbc6e9dedd53a1b70e5573499ddd11",
     a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0m, {
@@ -98,12 +98,12 @@ let b = {
       variants: [O, v]
     }, {
       name: () => Chunk388032.intl.string(Chunk388032.t.RbkXxR),
-      variants: [I, S]
+      variants: [I, T]
     }, {
       name: () => Chunk388032.intl.string(Chunk388032.t["FW3Qp/"]),
-      variants: [T, A]
+      variants: [S, A]
     }],
-    rewardAssetIdMap: (0, Chunk717401.YV)([b, y, O, v, I, S, T, A]),
+    rewardAssetIdMap: (0, Chunk717401.YV)([b, y, O, v, I, T, S, A]),
     chatGiftIcon: {
       trinketsAnimation: {
         getAnimationData: () => require.e("21723").then(require.bind(require, 421344)).then(e => {

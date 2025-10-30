@@ -25,9 +25,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk406128 = require("./406128.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk365861 = require("./365861.js");
+  Chunk12205 = require("./12205.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -53,7 +53,7 @@ function A() {
     size: Chunk755721.Ph.LARGE,
     onClick: require,
     submitting: module,
-    className: Chunk365861.clearOverrideButton,
+    className: Chunk12205.clearOverrideButton,
     children: Chunk388032.intl.string(Chunk388032.t["/Nz9rY"])
   })
 }
@@ -116,7 +116,7 @@ class N extends Chunk647438.PureComponent {
           })]
         }),
         n = (0, Chunk951288.jsxs)("div", {
-          className: Chunk365861.buttons,
+          className: Chunk12205.buttons,
           children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
             size: Chunk755721.Ph.LARGE,
             onClick: this._handleSubmitReport,
@@ -127,16 +127,16 @@ class N extends Chunk647438.PureComponent {
         title: Chunk388032.intl.string(Chunk388032.t["3h+n+8"]),
         note: null != exports ? exports() : module,
         action: require,
-        className: Chunk365861.errorPage
+        className: Chunk12205.errorPage
       })
     }
     return module
   }
   constructor(...e) {
-    super(...e), T(this, "state", {
+    super(...e), S(this, "state", {
       error: null,
       info: null
-    }), T(this, "discordErrorsSet", false)
+    }), S(this, "discordErrorsSet", false)
   }
 }
 let R = N

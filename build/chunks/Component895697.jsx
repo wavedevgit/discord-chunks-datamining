@@ -29,8 +29,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk915014 = require("./915014.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk57842 = require("./57842.js"),
-  Chunk116649 = require("./116649.js");
+  Chunk759253 = require("./759253.js"),
+  Chunk593540 = require("./593540.js");
 
 function R(e) {
   let {
@@ -40,9 +40,9 @@ function R(e) {
     guild: P,
     isHoveringOrFocusing: w,
     onOpenProfile: D,
-    channelId: L,
-    onClose: x
-  } = e, M = c.ZP.getName(null == P ? true : P.id, L, t), k = (0, i.e7)([u.Z], () => {
+    channelId: x,
+    onClose: L
+  } = e, M = c.ZP.getName(null == P ? true : P.id, x, t), k = (0, i.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getUserProfile(t.id)) ? true : e.application
   }), j = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), U = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), G = (0, d.b)({
@@ -59,8 +59,8 @@ function R(e) {
       pronouns: null == R ? true : R.pronouns,
       tags: (0, r.jsx)(_.Z, {
         displayProfile: R,
-        themeType: T.l.POPOUT,
-        onClose: x
+        themeType: S.l.POPOUT,
+        onClose: L
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.Z, {
@@ -71,7 +71,7 @@ function R(e) {
           onOpenProfile: D
         })]
       })
-    }), (0, r.jsx)(S.Z, {
+    }), (0, r.jsx)(T.Z, {
       user: t,
       onOpenProfile: e => null == D ? true : D({
         section: e
@@ -80,7 +80,7 @@ function R(e) {
       className: C.buttons,
       children: [(0, r.jsx)(b.Z, {
         user: t,
-        closePopout: x,
+        closePopout: L,
         fullWidth: true
       }), (0, r.jsx)(y.Z, {
         user: t,
@@ -91,24 +91,24 @@ function R(e) {
       user: t,
       bio: null == R ? true : R.bio,
       hidePersonalInformation: U,
-      onClose: x
+      onClose: L
     }), G ? (0, r.jsx)(g.Z, {
       user: t,
       currentUser: n,
       guildId: null == P ? true : P.id,
       onOpenUserProfileModal: D,
-      onClose: x
+      onClose: L
     }) : (0, r.jsx)(p.Z, {
       user: t,
       currentUser: n,
       guildId: null == P ? true : P.id,
-      onClose: x
+      onClose: L
     }), (null == k ? true : k.popularApplicationCommandIds) != null && null != j && (0, r.jsx)(f.Z, {
       applicationId: k.id,
       commandIds: k.popularApplicationCommandIds,
       channel: j,
       guildId: null == P ? true : P.id,
-      onClick: x
+      onClick: L
     }), null != P && (0, r.jsx)(m.Z, {
       heading: A.intl.string(A.t["LPJmL/"]),
       children: (0, r.jsx)(I.Z, {

@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk682392 = require("./682392.js");
+  Chunk78642 = require("./78642.js");
 
 function g(e) {
   var t;
@@ -31,12 +31,12 @@ function g(e) {
     avatarSrc: v,
     eventHandlers: {
       onMouseEnter: I,
-      onMouseLeave: S
+      onMouseLeave: T
     }
   } = (0, f.m)(true);
   return (0, r.jsx)("div", {
     onMouseEnter: I,
-    onMouseLeave: S,
+    onMouseLeave: T,
     children: (0, r.jsx)(_.Z, {
       className: a()(m.mainContainer, {
         [m.compact]: i

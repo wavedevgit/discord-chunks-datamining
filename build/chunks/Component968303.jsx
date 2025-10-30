@@ -14,7 +14,7 @@ var r, i, Chunk951288 = require("./951288.js"),
   Chunk360920 = require("./360920.jsx"),
   Chunk777207 = require("./777207.jsx"),
   Chunk295907 = require("./295907.js"),
-  Chunk82642 = require("./82642.js");
+  Chunk49036 = require("./49036.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,9 +73,9 @@ function O(e, t) {
   return i
 }
 let v = {
-    side: Chunk82642.side,
-    top: Chunk82642.top,
-    "top-pill": Chunk82642.topPill
+    side: Chunk49036.side,
+    top: Chunk49036.top,
+    "top-pill": Chunk49036.topPill
   },
   I = Chunk647438.forwardRef(function(e, t) {
     let {
@@ -106,7 +106,7 @@ let v = {
     })
   });
 
-function S(e) {
+function T(e) {
   let {
     style: t
   } = e;
@@ -115,7 +115,7 @@ function S(e) {
     style: t
   })
 }
-let T = Chunk647438.forwardRef(function(e, t) {
+let S = Chunk647438.forwardRef(function(e, t) {
   var {
     children: n,
     id: r
@@ -192,12 +192,12 @@ class N extends(r = Chunk647438.Component) {
     } = this.props, m = this.props["aria-label"], g = r === require;
     return (0, Chunk951288.jsx)(Chunk360920.P, {
       className: l()(exports, {
-        [Chunk82642.item]: !Chunk295907,
-        [Chunk82642.brand]: "brand" === Chunk777207,
-        [Chunk82642.selected]: null == i && g,
-        [Chunk82642.themed]: "grey" === Chunk777207,
-        [Chunk82642.disabled]: null == i && Chunk120356,
-        [Chunk82642.destructive]: "destructive" === Chunk647438
+        [Chunk49036.item]: !Chunk295907,
+        [Chunk49036.brand]: "brand" === Chunk777207,
+        [Chunk49036.selected]: null == i && g,
+        [Chunk49036.themed]: "grey" === Chunk777207,
+        [Chunk49036.disabled]: null == i && Chunk120356,
+        [Chunk49036.destructive]: "destructive" === Chunk647438
       }),
       style: this.getStyle(),
       role: "tab",
@@ -322,4 +322,4 @@ class R extends(i = Chunk647438.Component) {
     })
   }
 }
-m(R, "Header", I), m(R, "Item", N), m(R, "Separator", S), m(R, "Panel", T)
+m(R, "Header", I), m(R, "Item", N), m(R, "Separator", T), m(R, "Panel", S)

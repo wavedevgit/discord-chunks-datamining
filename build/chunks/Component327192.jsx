@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk856651 = require("./856651.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk11049 = require("./11049.js");
+  Chunk465631 = require("./465631.js");
 
 function H(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -112,8 +112,8 @@ let z = e => {
     className: V.integrationWrapper,
     children: [(0, r.jsxs)("div", {
       className: V.integration,
-      children: [(0, r.jsx)(T.Z, {
-        size: T.Z.Sizes.SMALL,
+      children: [(0, r.jsx)(S.Z, {
+        size: S.Z.Sizes.SMALL,
         guild: a.guild,
         className: V.guildIcon
       }), (0, r.jsxs)("div", {
@@ -146,9 +146,9 @@ function q(e) {
     account: n,
     theme: a,
     locale: l
-  } = e, [c, p] = i.useState(n.friendSync), [m, g] = i.useState(n.visibility), [E, S] = i.useState(n.metadataVisibility), [T, C] = i.useState(n.showActivity), [N, R] = i.useState(null), [P, D] = i.useState(null), [k, Z] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), X = b.Z.get(q);
+  } = e, [c, p] = i.useState(n.friendSync), [m, g] = i.useState(n.visibility), [E, T] = i.useState(n.metadataVisibility), [S, C] = i.useState(n.showActivity), [N, R] = i.useState(null), [P, D] = i.useState(null), [k, Z] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), X = b.Z.get(q);
   i.useEffect(() => {
-    p(n.friendSync), g(n.visibility), S(n.metadataVisibility), C(n.showActivity)
+    p(n.friendSync), g(n.visibility), T(n.metadataVisibility), C(n.showActivity)
   }, [n]);
   let Q = {
       inProgressVisibility: N,
@@ -306,7 +306,7 @@ function q(e) {
       label: F.intl.format(F.t["6u6J0q"], {
         platform: e.name
       }),
-      checked: T,
+      checked: S,
       onChange: eu
     })), (null == (t = b.Z.get(n.type)) ? true : t.hasMetadata) === true && (o = (0, r.jsx)(_.rsf, {
       label: F.intl.string(F.t.FYKGsL),
@@ -371,7 +371,7 @@ function q(e) {
         variant: "primary"
       }]
     }, i), {
-      children: (0, x.Z)(n) && (0, r.jsx)(M.Z, {
+      children: (0, L.Z)(n) && (0, r.jsx)(M.Z, {
         children: F.intl.format(F.t.COW3Xn, {
           platformName: e.name
         })
@@ -404,7 +404,7 @@ function q(e) {
       });
       return
     }
-    S(r), h.Z.setMetadataVisibility(n.type, n.id, r)
+    T(r), h.Z.setMetadataVisibility(n.type, n.id, r)
   }
 
   function ec(e) {
@@ -422,9 +422,9 @@ function q(e) {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
     } = J.current;
-    null != e && (g(e), h.Z.setVisibility(n.type, n.id, e), R(null)), null != t && (S(t), h.Z.setMetadataVisibility(n.type, n.id, t), D(null))
+    null != e && (g(e), h.Z.setVisibility(n.type, n.id, e), R(null)), null != t && (T(t), h.Z.setMetadataVisibility(n.type, n.id, t), D(null))
   }, [n]);
-  let ed = (0, L.wy)("ConnectedAccount");
+  let ed = (0, x.wy)("ConnectedAccount");
   return (0, r.jsxs)("div", {
     className: o()(V.connection, {
       [V.connectionUserSettingsRedesign]: ed
@@ -467,7 +467,7 @@ function J() {
   }
   let t = (0, Chunk122021.fq)();
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk11049.connectionsContainer,
+    className: Chunk465631.connectionsContainer,
     children: [exports.slice(0, 10).map(e => (0, r.jsx)(g.Z, {
       type: e.type,
       className: V.__invalid_accountButton,
@@ -475,10 +475,10 @@ function J() {
     }, e.type)), (0, Chunk951288.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t.QqTz8b),
       children: (0, Chunk951288.jsx)("div", {
-        className: o()(Chunk11049.accountAddWrapper, Chunk11049.__invalid_accountButton),
+        className: o()(Chunk465631.accountAddWrapper, Chunk465631.__invalid_accountButton),
         children: (0, Chunk951288.jsx)(Chunk481060.tEY, {
           children: (0, Chunk951288.jsx)("button", {
-            className: o()(Chunk11049.accountAddInner, Chunk11049.accountButtonInner),
+            className: o()(Chunk465631.accountAddInner, Chunk465631.accountButtonInner),
             type: "button",
             onClick: module,
             "aria-label": Chunk388032.intl.string(Chunk388032.t.Zhcj9X),

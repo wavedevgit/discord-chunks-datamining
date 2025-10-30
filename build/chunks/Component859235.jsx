@@ -2,7 +2,7 @@
 /** chunk id: 859235, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T,
+  Z: () => S,
   q: () => v
 });
 var Chunk951288 = require("./951288.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk43085 = require("./43085.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk132045 = require("./132045.js");
+  Chunk729506 = require("./729506.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,7 +83,7 @@ function I(e) {
   e.stopPropagation()
 }
 
-function S(e, t) {
+function T(e, t) {
   let {
     id: n,
     channelId: i,
@@ -92,25 +92,25 @@ function S(e, t) {
     actions: E,
     handleEditModal: O,
     keyboardModeEnabled: v,
-    onKeyDown: S,
-    draftType: T,
+    onKeyDown: T,
+    draftType: S,
     size: A = 1
   } = e, C = (0, s.JA)(n), {
     onFocus: N
   } = C, R = y(C, ["onFocus"]), {
     handleFocus: P,
     handleBlur: w
-  } = (0, f.b)(N), D = 0 === A, L = null != E, x = e => {
+  } = (0, f.b)(N), D = 0 === A, x = null != E, L = e => {
     if (v) {
       switch (e.which) {
         case _.yXg.D:
-          e.preventDefault(), c.Z.remove(i, n, T);
+          e.preventDefault(), c.Z.remove(i, n, S);
           return;
         case _.yXg.E:
           null != O && (e.preventDefault(), O(e));
           return;
         case _.yXg.BACKSPACE:
-          e.ctrlKey ? (e.preventDefault(), c.Z.clearAll(i, T)) : (e.preventDefault(), c.Z.remove(i, n, T));
+          e.ctrlKey ? (e.preventDefault(), c.Z.clearAll(i, S)) : (e.preventDefault(), c.Z.remove(i, n, S));
           return;
         case _.yXg.ARROW_UP:
           let t = e.shiftKey || e.altKey || e.ctrlKey || e.metaKey;
@@ -119,21 +119,21 @@ function S(e, t) {
             atEnd: true
           })
       }
-      null == S || S(e)
+      null == T || T(e)
     }
   };
   return (0, r.jsx)(l.tEY, {
     children: (0, r.jsx)("li", b(g({}, R), {
       onFocus: P,
       onBlur: w,
-      onKeyDown: x,
+      onKeyDown: L,
       className: o()(h.upload, a, {
         [h.sizeClip]: 2 === A
       }),
       ref: t,
       children: (0, r.jsxs)("div", {
         className: h.uploadContainer,
-        children: [m, L ? (0, r.jsx)("div", {
+        children: [m, x ? (0, r.jsx)("div", {
           className: h.actionBarContainer,
           children: (0, r.jsx)("div", {
             className: o()(h.actionBar, {
@@ -153,4 +153,4 @@ function S(e, t) {
     }))
   })
 }
-let T = Chunk647438.forwardRef(S)
+let S = Chunk647438.forwardRef(T)

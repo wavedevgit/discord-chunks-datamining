@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk310752 = require("./310752.jsx"),
   Chunk731994 = require("./731994.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk374450 = require("./374450.js");
+  Chunk854835 = require("./854835.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,22 +54,22 @@ function O(e) {
     icons: b,
     fileSize: y,
     onClose: O
-  } = e, v = (0, l.Dt)(), I = null != b ? b : m.J6, S = (0, u.Z)({
+  } = e, v = (0, l.Dt)(), I = null != b ? b : m.J6, T = (0, u.Z)({
     location: "UploadError"
-  }), T = () => {
+  }), S = () => {
     (0, c.Z)(), O(), p.default.track(g.rMx.PREMIUM_PROMOTION_OPENED, {
       location_section: g.jXE.FILE_UPLOAD_UPSELL_MODAL,
       location_object: g.qAy.NAVIGATION_LINK
     }), (0, _.uL)(g.Z5c.APPLICATION_STORE)
   };
-  return i ? S ? (0, r.jsx)(f.Z, {
+  return i ? T ? (0, r.jsx)(f.Z, {
     transitionState: o,
     onClose: O,
-    handleLearnMore: T
+    handleLearnMore: S
   }) : (0, r.jsx)(d.Z, {
     transitionState: o,
     onClose: O,
-    handleLearnMore: T,
+    handleLearnMore: S,
     fileSize: y
   }) : (0, r.jsx)(s.Y0, {
     size: s.Cg.DYNAMIC,

@@ -109,7 +109,7 @@ function eD(e) {
   return e
 }
 
-function eL(e, t) {
+function ex(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -120,8 +120,8 @@ function eL(e, t) {
   return n
 }
 
-function ex(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eL(Object(t)).forEach(function(n) {
+function eL(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ex(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -271,15 +271,15 @@ function eZ(e) {
     var n;
     let r = null == (n = t.messageReference) ? true : n.channel_id;
     if (null != r) {
-      await L.Z.loadThread(r);
+      await x.Z.loadThread(r);
       let t = U.Z.getChannel(r);
-      null != t && (0, x.ok)(t, e.shiftKey)
+      null != t && (0, L.ok)(t, e.shiftKey)
     }
   }, [t]), d = i.useCallback(() => {
     (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("91315"), n.e("219")]).then(n.bind(n, 223901));
+      } = await Promise.all([n.e("91315"), n.e("91792")]).then(n.bind(n, 223901));
       return t => (0, r.jsx)(e, eD({
         channel: a
       }, t))
@@ -290,8 +290,8 @@ function eZ(e) {
     null != a && (0, s.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("90508"), n.e("89250"), n.e("32925")]).then(n.bind(n, 422200));
-      return t => (0, r.jsx)(e, ex(eD({}, t), {
+      } = await Promise.all([n.e("90508"), n.e("89250"), n.e("43012")]).then(n.bind(n, 422200));
+      return t => (0, r.jsx)(e, eL(eD({}, t), {
         channel: a
       }))
     })
@@ -324,7 +324,7 @@ function eF(e) {
     guildId: n.guild_id,
     messageId: t.id
   });
-  return n.isThread() ? (0, r.jsx)(eS.Z, {
+  return n.isThread() ? (0, r.jsx)(eT.Z, {
     message: t,
     channel: n,
     compact: i,
@@ -616,7 +616,7 @@ function e1(e) {
   })
 }
 
-function e3(e) {
+function e2(e) {
   var t, n;
   let {
     message: i,
@@ -644,7 +644,7 @@ function e3(e) {
   })
 }
 
-function e2(e) {
+function e3(e) {
   let {
     message: t,
     channel: n,
@@ -753,7 +753,7 @@ function tt(e) {
     message: t,
     compact: n
   } = e;
-  return (0, r.jsx)(T.Z, {
+  return (0, r.jsx)(S.Z, {
     userTrialOfferId: t.referralTrialOfferId,
     canRenderReferralEmbed: true,
     compact: n
@@ -825,13 +825,13 @@ let ti = Object.freeze({
   [Chunk981631.uaV.STAGE_START]: eJ,
   [Chunk981631.uaV.STAGE_END]: e$,
   [Chunk981631.uaV.STAGE_SPEAKER]: e1,
-  [Chunk981631.uaV.STAGE_RAISE_HAND]: e3,
+  [Chunk981631.uaV.STAGE_RAISE_HAND]: e2,
   [Chunk981631.uaV.STAGE_TOPIC]: e0,
   [Chunk981631.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION]: Chunk504733.Z,
   [Chunk981631.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED]: Chunk563959.P,
   [Chunk981631.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED]: Chunk563959.e,
   [Chunk981631.uaV.PREMIUM_REFERRAL]: tt,
-  [Chunk981631.uaV.GUILD_DEADCHAT_REVIVE_PROMPT]: e2,
+  [Chunk981631.uaV.GUILD_DEADCHAT_REVIVE_PROMPT]: e3,
   [Chunk981631.uaV.CUSTOM_GIFT]: true,
   [Chunk981631.uaV.GUILD_GAMING_STATS_PROMPT]: e4,
   [Chunk981631.uaV.VOICE_HANGOUT_INVITE]: true,

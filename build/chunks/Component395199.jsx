@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk78839 = require("./78839.js"),
   Chunk709054 = require("./709054.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk542886 = require("./542886.js");
+  Chunk76409 = require("./76409.js");
 
 function m(e) {
   let {
@@ -199,7 +199,7 @@ let v = e => {
     onConfirm: y,
     onCancel: v,
     error: I
-  } = e, S = O(h, m, g, y, v), T = () => f && null != p ? (0, r.jsx)(b, {
+  } = e, T = O(h, m, g, y, v), S = () => f && null != p ? (0, r.jsx)(b, {
     imageClass: null != o ? o : "",
     blurb: a,
     fromGuilds: _,
@@ -223,9 +223,9 @@ let v = e => {
     children: [(0, r.jsx)(s.xBx, {
       title: i
     }), (0, r.jsx)(s.fef, {
-      children: T()
+      children: S()
     }), (0, r.jsx)(s.Go$, {
-      actions: S,
+      actions: T,
       actionsFullWidth: false
     })]
   })

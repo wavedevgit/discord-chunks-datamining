@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk967249 = require("./967249.js"),
   Chunk245335 = require("./245335.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk969016 = require("./969016.js");
+  Chunk552517 = require("./552517.js");
 
 function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -91,7 +91,7 @@ function B(e) {
       variant: "text-xs/normal",
       className: M.count,
       color: i,
-      children: x.intl.format(x.t["LC+S+m"], {
+      children: L.intl.format(L.t["LC+S+m"], {
         membersOnline: n
       })
     })]
@@ -103,7 +103,7 @@ function B(e) {
       variant: "text-xs/normal",
       className: M.count,
       color: i,
-      children: x.intl.format(x.t.zRl6XR, {
+      children: L.intl.format(L.t.zRl6XR, {
         count: t
       })
     })]
@@ -134,7 +134,7 @@ function Z(e) {
         children: (0, r.jsx)(d.Text, {
           variant: "text-xs/normal",
           color: a,
-          children: x.intl.format(x.t["dc+LW4"], {
+          children: L.intl.format(L.t["dc+LW4"], {
             channelName: t.name,
             serverName: n.name
           })
@@ -150,7 +150,7 @@ function Z(e) {
       children: (0, r.jsx)(d.Text, {
         variant: "text-xs/normal",
         color: a,
-        children: x.intl.format(x.t.u0vaDE, {
+        children: L.intl.format(L.t.u0vaDE, {
           guildName: n.name
         })
       })
@@ -171,7 +171,7 @@ function F(e) {
       target_type: E,
       target_application: b
     } = s;
-  l()(E === L.Iq.EMBEDDED_APPLICATION && null != b, "invalid application invite");
+  l()(E === x.Iq.EMBEDDED_APPLICATION && null != b, "invalid application invite");
   let y = i.useCallback(() => {
       var e;
       C.default.track(w.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
@@ -179,7 +179,7 @@ function F(e) {
         invite_inviter_id: null == (e = s.inviter) ? true : e.id
       })
     }, [null == (t = s.inviter) ? true : t.id, b.id]),
-    v = (0, c.e7)([S.Z], () => null != s.guild ? S.Z.getGuild(s.guild.id) : null, [s]),
+    v = (0, c.e7)([T.Z], () => null != s.guild ? T.Z.getGuild(s.guild.id) : null, [s]),
     N = (0, O.Z)([b.id])[0],
     D = (0, c.e7)([_.ZP], () => {
       var e;
@@ -195,7 +195,7 @@ function F(e) {
       })
     }),
     k = I.Z.getChannel(null == (n = s.channel) ? true : n.id),
-    j = (0, c.e7)([T.Z], () => null != k && T.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, k), [k]),
+    j = (0, c.e7)([S.Z], () => null != k && S.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, k), [k]),
     {
       analyticsLocations: U
     } = (0, h.ZP)(p.Z.INVITE_EMBED),
@@ -219,9 +219,9 @@ function F(e) {
     if (null == s.guild) return (0, r.jsx)(P.Z, {});
     v = (0, R.Qs)(s.guild)
   }
-  a = H ? D ? x.intl.string(x.t.DPfdsq) : M ? x.intl.string(x.t.sqe0hj) : x.intl.string(x.t.RscU7I) : x.intl.string(x.t["2BP08E"]);
+  a = H ? D ? L.intl.string(L.t.DPfdsq) : M ? L.intl.string(L.t.sqe0hj) : L.intl.string(L.t.RscU7I) : L.intl.string(L.t["2BP08E"]);
   let Y = H && !j || H && D;
-  return (j || (o = x.intl.string(x.t.hHGrWz)), null == s.code || "" === s.code || null == N) ? null : (0, r.jsx)(h.Gt, {
+  return (j || (o = L.intl.string(L.t.hHGrWz)), null == s.code || "" === s.code || null == N) ? null : (0, r.jsx)(h.Gt, {
     value: U,
     children: (0, r.jsx)(V, {
       app: N,
@@ -262,10 +262,10 @@ function V(e) {
     onView: v
   } = e, {
     bot: I,
-    icon: S
-  } = t, T = N.ZP.getApplicationIconURL({
+    icon: T
+  } = t, S = N.ZP.getApplicationIconURL({
     id: t.id,
-    icon: S,
+    icon: T,
     bot: I
   }), A = (0, y.G)(t), C = (0, b.E)(t), R = n.length, P = i.useMemo(() => [{
     label: _,
@@ -277,8 +277,8 @@ function V(e) {
   }], [_, a, f, p, h, O]);
   return (0, r.jsx)(m.W, G(j({
     header: t.name,
-    title: x.intl.string(x.t["7vb6nw"]),
-    iconSrc: T
+    title: L.intl.string(L.t["7vb6nw"]),
+    iconSrc: S
   }, C), {
     onClickBanner: A,
     info: (0, r.jsxs)("div", {
@@ -291,7 +291,7 @@ function V(e) {
       }), a ? R > 0 && (0, r.jsx)(g.K, {
         activityUsers: n,
         guildId: s.id,
-        activityText: x.intl.formatToPlainString(x.t.yJj035, {
+        activityText: L.intl.formatToPlainString(L.t.yJj035, {
           count: R
         })
       }) : (0, r.jsx)(B, {

@@ -2,7 +2,7 @@
 /** chunk id: 427081, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js");
 var Chunk754700 = require("./754700.js"),
   Chunk670081 = require("./670081.js"),
@@ -26,7 +26,7 @@ var Chunk754700 = require("./754700.js"),
   Chunk5881 = require("./5881.js"),
   Chunk46140 = require("./46140.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let T = +Chunk70956.Z.Millis.MINUTE,
+let S = +Chunk70956.Z.Millis.MINUTE,
   A = 2,
   C = +Chunk70956.Z.Millis.SECOND,
   N = (0, Chunk5881.T)({
@@ -63,7 +63,7 @@ function w(e, t) {
 function D(e) {
   return null != e && e.config.features.includes(i.S.MANUAL_HEARTBEAT_INITIALIZATION)
 }
-class L extends Chunk147913.Z {
+class x extends Chunk147913.Z {
   syncHeartbeats(e, t, n) {
     for (let r of ("VOICE_STATE_UPDATES" !== t && "PASSIVE_UPDATE_V2" !== t && N.log("~ syncHeartbeats -> syncing heartbeats for taskTypes: ".concat(e.join(", "), " (triggered by: ").concat(t, ")")), e)) {
       let e = this.heartbeats[r],
@@ -154,19 +154,19 @@ class L extends Chunk147913.Z {
     return N.log("~ getActivelyProgressingActivityQuestIds -> Actively progressing questIds: ", Array.from(module.keys())), module
   }
   constructor(...e) {
-    super(...e), S(this, "heartbeats", {
+    super(...e), T(this, "heartbeats", {
       [r.X.PLAY_ON_DESKTOP]: new Map,
       [r.X.STREAM_ON_DESKTOP]: new Map,
       [r.X.PLAY_ACTIVITY]: new Map
-    }), S(this, "calculateHeartbeatDurationMs", e => {
+    }), T(this, "calculateHeartbeatDurationMs", e => {
       let t = b.Z.quests.get(e);
-      if (null == t || null == t.config || null == t.userStatus) return T;
+      if (null == t || null == t.config || null == t.userStatus) return S;
       let {
         progressSeconds: n,
         targetSeconds: i
       } = (0, g.il)(t, r.T.DESKTOP), a = Math.max(0, (i - n) * p.Z.Millis.SECOND);
-      return a <= T ? a + C : T
-    }), S(this, "initiateHeartbeat", (e, t, n) => {
+      return a <= S ? a + C : S
+    }), T(this, "initiateHeartbeat", (e, t, n) => {
       let i = this.heartbeats[t];
       if (i.has(e)) return void N.log("~ initiateHeartbeat -> Heartbeat already initiated for questId: ".concat(e));
       let a = () => {
@@ -197,7 +197,7 @@ class L extends Chunk147913.Z {
         } else N.log("~ initiateHeartbeat -> Quest ".concat(e, " is no longer actively progressing, terminating heartbeat")), this.terminateHeartbeat(e, t)
       };
       N.log("~ initiateHeartbeat -> Initiating heartbeat for Quest ".concat(e)), a()
-    }), S(this, "terminateHeartbeat", (e, t) => {
+    }), T(this, "terminateHeartbeat", (e, t) => {
       let n = this.heartbeats[t],
         r = b.Z.quests,
         i = n.get(e);
@@ -209,19 +209,19 @@ class L extends Chunk147913.Z {
           terminal: true
         }))
       }
-    }), S(this, "handleSendHeartbeatSuccess", e => {
+    }), T(this, "handleSendHeartbeatSuccess", e => {
       let {
         questId: t,
         userStatus: n
       } = e;
       if (N.log("~ handleSendHeartbeatSuccess -> Heartbeat succeeded for questId: ".concat(t, ")")), null != n.completedAt)
         for (let e of (N.log("~ handleSendHeartbeatSuccess -> Quest ".concat(t, " completed, terminating any heartbeats for it")), Object.keys(this.heartbeats))) this.terminateHeartbeat(t, e)
-    }), S(this, "handleSendHeartbeatFailure", e => {
+    }), T(this, "handleSendHeartbeatFailure", e => {
       let {
         questId: t
       } = e;
       N.log("~ handleSendHeartbeatFailure -> Heartbeat failed for questId: ".concat(t))
-    }), S(this, "actions", {
+    }), T(this, "actions", {
       QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: () => this.syncHeartbeats([r.X.PLAY_ON_DESKTOP, r.X.STREAM_ON_DESKTOP], "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS"),
       QUESTS_ENROLL_SUCCESS: () => this.syncHeartbeats([r.X.PLAY_ON_DESKTOP, r.X.STREAM_ON_DESKTOP, r.X.PLAY_ACTIVITY], "QUESTS_ENROLL_SUCCESS", e => !D(e)),
       QUESTS_SEND_HEARTBEAT_SUCCESS: this.handleSendHeartbeatSuccess,
@@ -249,4 +249,4 @@ class L extends Chunk147913.Z {
     })
   }
 }
-let x = new L
+let L = new x

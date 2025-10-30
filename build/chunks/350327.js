@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   CM: () => A,
-  Cf: () => S,
-  ID: () => T,
+  Cf: () => T,
+  ID: () => S,
   Ls: () => y,
   Xz: () => R,
   Z: () => b,
@@ -14,7 +14,7 @@ require.d(exports, {
   ho: () => v,
   pG: () => O,
   rf: () => w,
-  uV: () => x,
+  uV: () => L,
   x3: () => D,
   z5: () => C
 });
@@ -127,14 +127,14 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_BIO",
     bio: e
   })
 }
 
-function T(e) {
+function S(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS",
     pronouns: e
@@ -188,7 +188,7 @@ function D(e) {
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET"
   }, e)), E(h.QP.PRESET)
 }
-async function L() {
+async function x() {
   if (null == Chunk621853.Z.applicationWidgetApplicationConfigs || !(Chunk621853.Z.applicationWidgetApplicationConfigs.length > 0)) {
     Chunk570140.Z.dispatch({
       type: "USER_PROFILE_APPLICATION_WIDGET_APPLICATION_CONFIGS_FETCH_START"
@@ -209,8 +209,8 @@ async function L() {
     }
   }
 }
-let x = (0, Chunk442837.Kb)(Chunk621853.Z, {
+let L = (0, Chunk442837.Kb)(Chunk621853.Z, {
   getQueryId: Chunk981631.McO.APPLICATION_WIDGET_APPLICATION_CONFIGS,
   get: () => Chunk621853.Z.applicationWidgetApplicationConfigs,
-  load: () => L()
+  load: () => x()
 })

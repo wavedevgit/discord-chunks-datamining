@@ -2,7 +2,7 @@
 /** chunk id: 386733, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,10 +24,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk938736 = require("./938736.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk120472 = require("./120472.js"),
+  Chunk55282 = require("./55282.js"),
   Chunk691766 = require("./691766.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -152,7 +152,7 @@ let R = e => {
       }))
     })
   },
-  L = e => {
+  x = e => {
     let {
       isInSettings: t = false
     } = e, n = (0, s.e7)([g.Z], () => g.Z.getRecipientStatus()), {
@@ -165,7 +165,7 @@ let R = e => {
     n.forEach(e => {
       e === m.Fe.REDEEMED && p.redeemed++, e === m.Fe.CONVERTED && (p.redeemed++, p.converted++)
     });
-    let T = p.sent === E.Q,
+    let S = p.sent === E.Q,
       A = h.Z.getArticleURL(O.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: C
@@ -187,7 +187,7 @@ let R = e => {
             variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
             className: I.expandedProgressBarHeader,
             children: (0, y.$s)({
-              hasSentAll: T
+              hasSentAll: S
             })
           }), (0, r.jsx)(w, {
             userRecords: f
@@ -212,31 +212,31 @@ let R = e => {
               children: (0, r.jsxs)("div", {
                 className: I.expandedProgressBarSelectFriendsCTAInner,
                 children: [(0, r.jsx)("img", {
-                  src: S,
+                  src: T,
                   alt: "",
                   className: I.expandedProgressBarSelectFriendsIcon
-                }), T ? v.intl.string(v.t.SY9tyI) : v.intl.string(v.t.Lm2nFc)]
+                }), S ? v.intl.string(v.t.SY9tyI) : v.intl.string(v.t.Lm2nFc)]
               })
             })
           })]
         })]
       }),
-      L = p.redeemed === E.Q;
+      x = p.redeemed === E.Q;
     return (0, r.jsx)(d.Gt, {
       value: C,
       children: (0, r.jsx)("div", {
         className: o()({
-          [I.containerWithGlowWithoutBanner]: L,
-          [I.containerWithoutGlow]: !L,
+          [I.containerWithGlowWithoutBanner]: x,
+          [I.containerWithoutGlow]: !x,
           [I.containerWithMargins]: !t,
-          [I.containerWithGlowOnSettingsPage]: L && t
+          [I.containerWithGlowOnSettingsPage]: x && t
         }),
         children: (0, r.jsx)("div", {
           ref: N,
           className: o()({
             [I.expandedProgressBarContainer]: !t,
             [I.expandedProgressBarContainerSettingsPage]: t,
-            [I.allReferralsSentBorder]: L
+            [I.allReferralsSentBorder]: x
           }),
           children: P
         })

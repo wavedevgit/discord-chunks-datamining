@@ -2,8 +2,8 @@
 /** chunk id: 296533, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x,
-  r: () => L
+  Z: () => L,
+  r: () => x
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk183547 = require("./183547.js");
+  Chunk603081 = require("./603081.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -35,7 +35,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,7 +60,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -147,7 +147,7 @@ function P(e) {
     hasCancelableGuildBoostSlot: d,
     showAltText: f,
     isLastGuildBoostSlot: p
-  } = e, h = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), E = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), b = i.useMemo(() => null != E && E > new Date, [E]), y = (0, _.tl)(n), I = (0, c.Z)(), T = i.useRef(null);
+  } = e, h = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), E = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), b = i.useMemo(() => null != E && E > new Date, [E]), y = (0, _.tl)(n), I = (0, c.Z)(), S = i.useRef(null);
 
   function C(e) {
     let {
@@ -183,12 +183,12 @@ function P(e) {
           fractionalPremiumInfo: I
         })
       }), (0, r.jsx)(s.yRy, {
-        targetElementRef: T,
+        targetElementRef: S,
         renderPopout: C,
         position: "right",
         align: "center",
-        children: e => (0, r.jsx)(s.P3F, A(S({}, e), {
-          innerRef: T,
+        children: e => (0, r.jsx)(s.P3F, A(T({}, e), {
+          innerRef: S,
           "aria-label": O.intl.string(O.t.PdRCRg),
           className: v.boostSlotMenuIcon,
           children: (0, r.jsx)(s.Huf, {
@@ -262,7 +262,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     appliedGuildBoosts: t,
     premiumSubscription: n
@@ -288,7 +288,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     guildBoostSlots: t,
     premiumSubscription: n

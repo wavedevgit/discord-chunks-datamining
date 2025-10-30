@@ -23,5 +23,11 @@ let a = {
     inlineAutocompleteType: "gameMentionInput",
     description: Chunk388032.intl.string(Chunk388032.t["1kR88y"])
   }),
+  MENTION_TIMESTAMP: () => ({
+    test: "time",
+    text: "@time",
+    inlineAutocompleteType: "timestampMentionInput",
+    description: Chunk388032.intl.string(Chunk388032.t.V6L3TV)
+  }),
   LAUNCHABLE_APPLICATIONS: () => Chunk490983.Z.launchableApplicationViewItems
 }

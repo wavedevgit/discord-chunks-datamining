@@ -29,7 +29,7 @@ function I(e) {
   let {
     location: t,
     onMountEffect: n
-  } = e, I = (0, g.Z)(), S = (0, E.M8)(), T = (0, c.Nj)(o.z.FAMILY_CENTER_NEW_BADGE), {
+  } = e, I = (0, g.Z)(), T = (0, E.M8)(), S = (0, c.Nj)(o.z.FAMILY_CENTER_NEW_BADGE), {
     familyCenterInitialized: A,
     isLoading: C
   } = (0, a.cj)([p.Z], () => ({
@@ -38,22 +38,22 @@ function I(e) {
   })), N = (0, m.M)(), {
     selectedTab: R,
     handleTabChange: P
-  } = (0, h.Z)(), w = f.default.getCurrentUser(), D = null != I, L = A && null != w && !D;
+  } = (0, h.Z)(), w = f.default.getCurrentUser(), D = null != I, x = A && null != w && !D;
   (0, s.ZP)(() => {
-    (0, d.e)("family-center"), null != n && n(), T || (0, c.Q3)(o.z.FAMILY_CENTER_NEW_BADGE, {
+    (0, d.e)("family-center"), null != n && n(), S || (0, c.Q3)(o.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: v.L.AUTO,
       forceTrack: true
     })
   });
-  let x = {
+  let L = {
       isConsideredAdult: I,
-      numOfAcceptedRequests: S,
+      numOfAcceptedRequests: T,
       selectedTab: R,
       selectedTeenId: N
     },
-    M = r.useRef(x);
+    M = r.useRef(L);
   return r.useEffect(() => {
-    M.current = x
+    M.current = L
   }), r.useEffect(() => {
     if (A && D) {
       let {
@@ -73,11 +73,11 @@ function I(e) {
       })
     }
   }, [A, D, t]), r.useEffect(() => {
-    L && (0, l.mN)(O.L0.FAMILY_CENTER)
-  }, [L]), {
+    x && (0, l.mN)(O.L0.FAMILY_CENTER)
+  }, [x]), {
     isLoading: C,
     selectedTab: R,
     handleTabChange: P,
-    showAgeGateModal: L
+    showAgeGateModal: x
   }
 }

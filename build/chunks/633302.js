@@ -31,12 +31,12 @@ let c = null,
   g = /\ud83c[\udffb-\udfff](?=\ud83c[\udffb-\udfff])|(?:[^\ud800-\udfff][\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]?|[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\ud800-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?(?:\u200d(?:[^\ud800-\udfff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe2f\u20d0-\u20ff]|\ud83c[\udffb-\udfff])?)*/g,
   Chunk382342 = require("./382342.js");
 
-function S(e) {
+function T(e) {
   let t = y[e];
   return null == t ? null : E[t]
 }
 
-function T(e) {
+function S(e) {
   let t = O[e];
   return null == t ? null : E[t]
 }
@@ -83,7 +83,7 @@ class A {
   get name() {
     if (this.hasDiversity && null != c) {
       var e;
-      return "".concat(this.uniqueName, "::").concat(null == (e = T(c)) ? true : module.names[0])
+      return "".concat(this.uniqueName, "::").concat(null == (e = S(c)) ? true : module.names[0])
     }
     return this.uniqueName
   }
@@ -134,16 +134,16 @@ function w() {
 }
 
 function D(e) {
-  let t = S(e);
+  let t = T(e);
   return null != t ? C(t) : null
 }
-let L = new Map;
+let x = new Map;
 
-function x(e) {
-  let t = L.get(e);
+function L(e) {
+  let t = x.get(e);
   if (null == t) {
     let n = b[e];
-    t = o.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(C), L.set(e, t)
+    t = o.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(C), x.set(e, t)
   }
   return t
 }
@@ -158,7 +158,7 @@ function k(e) {
 
 function j(e) {
   var t;
-  let n = null == (t = T(e)) ? true : t.names[0];
+  let n = null == (t = S(e)) ? true : t.names[0];
   return null != n ? {
     type: "emoji",
     surrogate: e,
@@ -219,14 +219,14 @@ function V(e) {
 function H(e) {
   var t, n;
   let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "";
-  return null != (n = null == (t = S(e)) ? true : t.surrogates) ? n : r
+  return null != (n = null == (t = T(e)) ? true : t.surrogates) ? n : r
 }
 
 function Y(e) {
   var t, n;
   let r = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "",
-    a = null != (n = null == (t = T(e)) ? true : t.names[0]) ? n : i;
+    a = null != (n = null == (t = S(e)) ? true : t.names[0]) ? n : i;
   return r ? ":".concat(a, ":") : a
 }
 
@@ -238,7 +238,7 @@ let K = {
   setDefaultDiversitySurrogate: R,
   getCategories: w,
   getByName: D,
-  getByCategory: x,
+  getByCategory: L,
   contentHasUnicodeOrEmoji: M,
   translateInlineEmojiToSurrogates: k,
   maybeTranslateSurrogatesToInlineEmoji: V,

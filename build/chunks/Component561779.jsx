@@ -15,7 +15,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
   Chunk506802 = require("./506802.jsx"),
   Chunk607070 = require("./607070.js"),
-  Chunk89079 = require("./89079.js");
+  Chunk43404 = require("./43404.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -147,7 +147,7 @@ class I extends(r = Chunk647438.PureComponent) {
       className: O,
       children: v,
       barStyles: I,
-      fillStyles: T,
+      fillStyles: S,
       mini: A,
       hideBubble: C,
       defaultValue: N,
@@ -155,8 +155,8 @@ class I extends(r = Chunk647438.PureComponent) {
       onValueRender: P,
       renderMarker: w,
       getAriaValueText: D,
-      barClassName: L,
-      grabberClassName: x,
+      barClassName: x,
+      grabberClassName: L,
       grabberStyles: M = {},
       markerPosition: k = 0,
       "aria-hidden": j,
@@ -194,7 +194,7 @@ class I extends(r = Chunk647438.PureComponent) {
       Y = null != P ? P(exports) : "".concat(F.toFixed(0), "%"),
       W = null != (e = null == D ? true : D(exports)) ? module : true;
     return (0, Chunk951288.jsx)(Chunk793030.gNt, b(g({}, Z), {
-      children: e => (0, i.jsx)(S, {
+      children: e => (0, i.jsx)(T, {
         active: n,
         keyboardFocused: r && p.Z.keyboardModeEnabled,
         children: a => {
@@ -239,11 +239,11 @@ class I extends(r = Chunk647438.PureComponent) {
                 className: h.track,
                 children: H
               }), (0, i.jsx)("div", {
-                className: s()(h.bar, L),
+                className: s()(h.bar, x),
                 style: I,
                 children: (0, i.jsx)("div", {
                   className: h.barFill,
-                  style: b(g({}, T), {
+                  style: b(g({}, S), {
                     width: V
                   })
                 })
@@ -256,7 +256,7 @@ class I extends(r = Chunk647438.PureComponent) {
                   text: C || y ? null : Y,
                   forceOpen: n || r && p.Z.keyboardModeEnabled,
                   children: e => (0, i.jsx)("div", b(g({}, e), {
-                    className: s()(h.grabber, x),
+                    className: s()(h.grabber, L),
                     style: b(g({}, M), {
                       left: V
                     }),
@@ -466,7 +466,7 @@ class I extends(r = Chunk647438.PureComponent) {
   }
 }
 
-function S(e) {
+function T(e) {
   let {
     active: t,
     keyboardFocused: n,

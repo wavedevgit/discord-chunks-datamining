@@ -21,9 +21,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk415540 = require("./415540.js"),
   Chunk345729 = require("./345729.js"),
   Chunk483753 = require("./483753.js"),
-  Chunk982519 = require("./982519.js"),
+  Chunk893026 = require("./893026.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk680765 = require("./680765.js");
+  Chunk484050 = require("./484050.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,9 +75,9 @@ function R(e) {
     required: a,
     label: o
   } = t;
-  return (0, r.jsx)(l.g, A(S({}, t), {
+  return (0, r.jsx)(l.g, A(T({}, t), {
     "data-mana-component": "select",
-    children: (0, r.jsx)(P, A(S({}, n), {
+    children: (0, r.jsx)(P, A(T({}, n), {
       id: i,
       required: a,
       label: o
@@ -93,11 +93,11 @@ function P(e) {
     disabled: l,
     readOnly: _,
     autoFocus: I,
-    clearable: T,
+    clearable: S,
     fullWidth: R,
     closeOnSelect: P = true,
-    shouldFocusWrap: L,
-    placeholder: x = O.intl.string(y.default["A+pfVR"]),
+    shouldFocusWrap: x,
+    placeholder: L = O.intl.string(y.default["A+pfVR"]),
     label: M,
     name: k,
     form: j,
@@ -157,16 +157,16 @@ function P(e) {
           eo && (e.preventDefault(), null == (o = Y.current) || null == (a = o.lastChild) || a.focus());
           break;
         case "Escape":
-          eo && T && (e.preventDefault(), e.stopPropagation(), ef())
+          eo && S && (e.preventDefault(), e.stopPropagation(), ef())
       }
-    }, [ef, eo, T, K, es]),
+    }, [ef, eo, S, K, es]),
     ep = i.useMemo(() => {
       let e = Array.isArray(V) ? V : [V];
       return ee.filter(t => (0, b._s)(t.value, e))
     }, [V, ee]),
     eh = i.useMemo(() => {
-      if (!R) return "".concat(Math.max(null != el ? el : 200, 200) * ("multiple" === t ? 1.5 : 1) + !!T * C + N + 8, "px")
-    }, [R, el, t, T]),
+      if (!R) return "".concat(Math.max(null != el ? el : 200, 200) * ("multiple" === t ? 1.5 : 1) + !!S * C + N + 8, "px")
+    }, [R, el, t, S]),
     em = i.useCallback(e => {
       if (es) return;
       let n = Array.from(e);
@@ -207,12 +207,12 @@ function P(e) {
   }, 10)), () => {
     null != eO.current && clearTimeout(eO.current)
   }), [et, $, W]), (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(m.q, A(S({
+    children: [(0, r.jsx)(m.q, A(T({
       ref: eb,
       disabled: l,
       readOnly: _,
       loading: et,
-      clearable: T,
+      clearable: S,
       fullWidth: R,
       isOpen: W,
       isInert: es,
@@ -225,7 +225,7 @@ function P(e) {
       children: (0, r.jsxs)(f.kL8, {
         "aria-label": M,
         buttonRef: er,
-        buttonProps: A(S({}, null != n ? {
+        buttonProps: A(T({}, null != n ? {
           id: n
         } : {}), {
           style: {
@@ -252,7 +252,7 @@ function P(e) {
           children: [M, ", "]
         }), (0, r.jsx)(D, {
           tagGroupRef: Y,
-          placeholder: x,
+          placeholder: L,
           selectionMode: t,
           selectedItems: ep,
           onRemove: ey
@@ -267,11 +267,11 @@ function P(e) {
       selectedItems: ep,
       onSelectionChange: em,
       listItems: ee
-    }), !R && ec, !es && W && (0, r.jsx)("div", A(S({
+    }), !R && ec, !es && W && (0, r.jsx)("div", A(T({
       ref: z.setFloating,
       className: v.selectDropdown
     }, Q()), {
-      style: S({}, q, J),
+      style: T({}, q, J),
       children: (0, r.jsx)(f.VqE, {
         children: (0, r.jsx)(d.w, {
           id: $,
@@ -280,8 +280,8 @@ function P(e) {
           selectionMode: t,
           selectedItems: ep,
           onSelectionChange: em,
-          shouldFocusWrap: L,
-          renderListItem: e => (0, r.jsx)(h.W, S({}, e)),
+          shouldFocusWrap: x,
+          renderListItem: e => (0, r.jsx)(h.W, T({}, e)),
           maxVisibleItems: G,
           loading: et,
           typeahead: true
@@ -315,7 +315,7 @@ function w(e, t) {
         selectedItems: [],
         onSelectionChange: () => {},
         shouldFocusWrap: false,
-        renderListItem: e => (0, r.jsx)(h.W, S({}, e))
+        renderListItem: e => (0, r.jsx)(h.W, T({}, e))
       })
     }), [e, t, o, n])
   }
@@ -343,7 +343,7 @@ function D(e) {
     items: i,
     layout: "inline",
     onRemove: a
-  }) : (0, r.jsx)(h.W, A(S({}, i[0]), {
+  }) : (0, r.jsx)(h.W, A(T({}, i[0]), {
     inInput: true
   }))
 }

@@ -18,8 +18,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk424218 = require("./424218.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk409077 = require("./409077.js"),
-  Chunk154257 = require("./154257.js");
+  Chunk638707 = require("./638707.js"),
+  Chunk525685 = require("./525685.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,7 +72,7 @@ function I(e) {
   }
 }
 
-function S(e, t) {
+function T(e, t) {
   let [n, r] = i.useState(false), [a, o] = i.useState(null), [s, l] = i.useState(1);
   return i.useEffect(() => {
     let n = 5e4;
@@ -101,7 +101,7 @@ function S(e, t) {
   }
 }
 
-function T(e) {
+function S(e) {
   let {
     text: t,
     language: i
@@ -274,8 +274,8 @@ function P(e) {
   }) : I += " " + m.intl.formatToPlainString(m.t["1+gGcK"], {
     formattedBytes: (0, h.IC)(p)
   }));
-  let S = (null == b ? true : b.slice(0, O).join("\n")) + I,
-    P = (0, f.nM)(S),
+  let T = (null == b ? true : b.slice(0, O).join("\n")) + I,
+    P = (0, f.nM)(T),
     w = l || O < y;
   return (0, r.jsxs)("div", {
     className: o()(E, g.container),
@@ -285,7 +285,7 @@ function P(e) {
       }),
       children: null == s ? (0, r.jsx)(u.$jN, {
         className: g.spinner
-      }) : (0, r.jsx)(T, {
+      }) : (0, r.jsx)(S, {
         text: P,
         language: d
       })
@@ -346,7 +346,7 @@ function w(e) {
         className: g.modalTextContainer,
         children: null == l ? (0, r.jsx)(u.$jN, {
           className: g.spinner
-        }) : (0, r.jsx)(T, {
+        }) : (0, r.jsx)(S, {
           text: p,
           language: f
         })
@@ -382,7 +382,7 @@ let D = Chunk647438.memo(function(e) {
     fileContents: m,
     bytesLeft: E,
     hadError: b
-  } = S(t, s);
+  } = T(t, s);
   return b ? (0, r.jsx)(d.Z, {
     url: t,
     fileName: n,

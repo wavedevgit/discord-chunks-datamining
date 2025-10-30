@@ -2,8 +2,8 @@
 /** chunk id: 680005, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  YG: () => T,
-  pV: () => S,
+  YG: () => S,
+  pV: () => T,
   rf: () => v
 });
 var Chunk951288 = require("./951288.js");
@@ -96,7 +96,7 @@ function I(e, t) {
   }
 }
 
-function S(e) {
+function T(e) {
   let {
     appId: t,
     onClick: n,
@@ -122,7 +122,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     appId: t,
     onClick: n,

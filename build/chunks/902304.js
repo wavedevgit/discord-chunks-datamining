@@ -26,7 +26,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let T = new Chunk710845.Z("GameConsoleManager"),
+let S = new Chunk710845.Z("GameConsoleManager"),
   A = 3e3,
   C = 6e4,
   N = 18e4;
@@ -58,7 +58,7 @@ function P(e) {
 }
 class w extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), S(this, "rollbackCommandTimeout", new a.V7), S(this, "awaitRemoteTimeout", new a.V7), S(this, "actions", {
+    super(...e), T(this, "rollbackCommandTimeout", new a.V7), T(this, "awaitRemoteTimeout", new a.V7), T(this, "actions", {
       WAIT_FOR_REMOTE_SESSION: () => this.handleWaitForRemoteSession(),
       POST_CONNECTION_OPEN: () => this.handleSessionsChanged(),
       SESSIONS_REPLACE: () => this.handleSessionsChanged(),
@@ -68,13 +68,13 @@ class w extends Chunk147913.Z {
       CONSOLE_COMMAND_UPDATE: e => this.handleConsoleCommandUpdate(e),
       PASSIVE_UPDATE_V2: e => this.handleVoiceStateUpdates(e),
       REMOTE_SESSION_DISCONNECT: () => this.handleRemoteSessionDisconnect()
-    }), S(this, "maybeConnect", e => {
+    }), T(this, "maybeConnect", e => {
       let t = P(e);
       if (null == t) return null;
       this.awaitRemoteTimeout.stop(), (0, m.ef)(t.sessionId);
       let n = p.Z.getVoiceStateForSession(u.default.getId(), t.sessionId);
       null != n && R(n)
-    }), S(this, "handleAudioStateToggle", e => {
+    }), T(this, "handleAudioStateToggle", e => {
       let {
         syncRemote: t,
         context: n
@@ -92,7 +92,7 @@ class w extends Chunk147913.Z {
       }), this.rollbackCommandTimeout.start(A, () => {
         R(s)
       }))
-    }), S(this, "handleVoiceStateUpdates", e => {
+    }), T(this, "handleVoiceStateUpdates", e => {
       let t = e.voiceStates,
         n = E.default.getRemoteSessionId();
       if (null == n) {
@@ -111,17 +111,17 @@ class w extends Chunk147913.Z {
         return t === n
       });
       null != r && (this.rollbackCommandTimeout.stop(), R(r))
-    }), S(this, "handleSessionsChanged", () => {
+    }), T(this, "handleSessionsChanged", () => {
       let e = E.default.getRemoteSessionId();
       null != e && null == _.Z.getSessionById(e) && (0, m.s6)(), null == e && this.maybeConnect(Object.values(_.Z.getSessions()))
-    }), S(this, "handleWaitForRemoteSession", () => {
+    }), T(this, "handleWaitForRemoteSession", () => {
       this.awaitRemoteTimeout.start(C, () => {
         (0, m.s6)(), o.Z.show({
           title: I.intl.string(I.t.wGMxr3),
           body: I.intl.string(I.t.i5k8b5)
         })
       })
-    }), S(this, "handleConsoleCommandUpdate", e => {
+    }), T(this, "handleConsoleCommandUpdate", e => {
       var t;
       let {
         id: n,
@@ -129,7 +129,7 @@ class w extends Chunk147913.Z {
         error: i
       } = e;
       if ("failed" !== r && "n/a" !== r || null == i) return;
-      T.info("Console command Error result:", r, i);
+      S.info("Console command Error result:", r, i);
       let a = E.default.getAwaitingRemoteSessionInfo();
       if ((null == a ? true : a.commandId) !== n) return;
       let o = E.default.getDevice(a.type, null != (t = a.deviceId) ? t : ""),
@@ -144,7 +144,7 @@ class w extends Chunk147913.Z {
         errorCodeMessage: s.errorCodeMessage,
         reconnectPlatformType: s.isAccountLinkError ? a.type : true
       }), O.e8.has(i.code) && this.awaitRemoteTimeout.isStarted() ? this.awaitRemoteTimeout.start(N, () => (0, m.s6)(), true) : "failed" === r && (0, m.s6)()
-    }), S(this, "handleRemoteSessionDisconnect", () => {
+    }), T(this, "handleRemoteSessionDisconnect", () => {
       this.awaitRemoteTimeout.stop()
     })
   }

@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk146128 = require("./146128.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk675654 = require("./675654.js"),
-  Chunk433661 = require("./433661.js");
+  Chunk950176 = require("./950176.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,8 +60,8 @@ let b = [],
   O = false,
   v = false,
   I = false,
-  S = 11,
-  T = 125,
+  T = 11,
+  S = 125,
   A = 20,
   C = 12,
   N = 48,
@@ -82,7 +82,7 @@ function D(e) {
     if (null != e.match(new RegExp(":".concat(t, "(_tone[1-9])?")))) return t;
   return null
 }
-let L = {
+let x = {
   enter: {
     BEG: 0,
     END: 22
@@ -97,7 +97,7 @@ let L = {
   }
 };
 
-function x() {
+function L() {
   return require.e("77843").then(require.t.bind(require, 931152, 19)).then(e => {
     let {
       default: t
@@ -186,8 +186,8 @@ function j(e) {
     if ("confetti" === a) {
       if (null == _.current) return;
       let e = _.current.getBoundingClientRect(),
-        t = e.left - S,
-        r = e.top + T,
+        t = e.left - T,
+        r = e.top + S,
         i = n.current[g.current];
       null == i || i.fireConfetti(t, r)
     }
@@ -208,10 +208,10 @@ function j(e) {
           animationRef: I,
           className: p.lottieAnimation,
           nextScene: l,
-          sceneSegments: L,
+          sceneSegments: x,
           onScenePlay: O,
           onSceneComplete: v,
-          importData: x,
+          importData: L,
           pauseWhileUnfocused: false
         })
       })

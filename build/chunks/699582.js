@@ -54,8 +54,8 @@ var r, Chunk863714 = require("./863714.js"),
   }),
   v = false,
   I = false,
-  S = /^[A-Z]{3}$/,
-  T = /-u(?:-[0-9a-z]{2,8})+/gi,
+  T = /^[A-Z]{3}$/,
+  S = /-u(?:-[0-9a-z]{2,8})+/gi,
   A = {
     "art-lojban": "jbo",
     "i-ami": "ami",
@@ -417,12 +417,12 @@ function D() {
   return r
 }
 
-function L(e) {
+function x(e) {
   var t = eg(String(e));
-  returnfalse !== S.test(t)
+  returnfalse !== T.test(t)
 }
 
-function x(e) {
+function L(e) {
   if (true === e) return new eh;
   for (var t = new eh, e = "string" == typeof e ? [e] : e, n = eE(e), r = n.length, i = 0; i < r;) {
     var a = String(i);
@@ -450,14 +450,14 @@ function M(e, t) {
 function k(e, t) {
   for (var n, r = 0, i = t.length; r < i && !n;) {
     var a = t[r],
-      o = String(a).replace(T, ""),
+      o = String(a).replace(S, ""),
       n = M(e, o);
     r++
   }
   var s = new ep;
   if (true !== n) {
     if (s["[[locale]]"] = n, String(a) !== String(o)) {
-      var l = a.match(T)[0],
+      var l = a.match(S)[0],
         c = a.indexOf("-u-");
       s["[[extension]]"] = l, s["[[extensionIndex]]"] = c
     }
@@ -491,13 +491,13 @@ function U(e, t, n, r, i) {
       var I = v.call(f, E);
       if (false !== I)
         if (I + 1 < _ && f[I + 1].length > 2) {
-          var S = f[I + 1],
-            T = v.call(b, S);
-          if (false !== T) var y = S,
+          var T = f[I + 1],
+            S = v.call(b, T);
+          if (false !== S) var y = T,
             O = "-" + E + "-" + y
         } else {
-          var T = v(b, "true");
-          if (false !== T) var y = "true"
+          var S = v(b, "true");
+          if (false !== S) var y = "true"
         }
     }
     if (c.call(n, "[[" + E + "]]")) {
@@ -515,7 +515,7 @@ function U(e, t, n, r, i) {
 function G(e, t) {
   for (var n = t.length, r = new eh, i = 0; i < n;) {
     var a = t[i];
-    true !== M(e, String(a).replace(T, "")) && h.call(r, a), i++
+    true !== M(e, String(a).replace(S, "")) && h.call(r, a), i++
   }
   return _.call(r)
 }
@@ -575,7 +575,7 @@ function Y(e, t, n) {
       if (arguments[0] === y) return r
     }
   }), r["[[initializedIntlObject]]"] = true;
-  var a = x(t);
+  var a = L(t);
   n = true === n ? {} : eE(n);
   var o = new ep,
     s = F(n, "localeMatcher", "string", new eh("lookup", "best fit"), "best fit");
@@ -587,7 +587,7 @@ function Y(e, t, n) {
     _ = F(n, "style", "string", new eh("decimal", "percent", "currency"), "decimal");
   r["[[style]]"] = _;
   var p = F(n, "currency", "string");
-  if (true !== p && !L(p)) throw RangeError("'" + p + "' is not a valid currency code");
+  if (true !== p && !x(p)) throw RangeError("'" + p + "' is not a valid currency code");
   if ("currency" === _ && true === p) throw TypeError("Currency code is required when style is currency");
   if ("currency" === _) {
     p = p.toUpperCase(), r["[[currency]]"] = p;
@@ -603,10 +603,10 @@ function Y(e, t, n) {
     v = V(n, "maximumFractionDigits", E, 20, O);
   r["[[maximumFractionDigits]]"] = v;
   var I = n.minimumSignificantDigits,
-    S = n.maximumSignificantDigits;
-  (true !== I || true !== S) && (I = V(n, "minimumSignificantDigits", 1, 21, 1), S = V(n, "maximumSignificantDigits", I, 21, 21), r["[[minimumSignificantDigits]]"] = I, r["[[maximumSignificantDigits]]"] = S);
-  var T = F(n, "useGrouping", "boolean", true, true);
-  r["[[useGrouping]]"] = T;
+    T = n.maximumSignificantDigits;
+  (true !== I || true !== T) && (I = V(n, "minimumSignificantDigits", 1, 21, 1), T = V(n, "maximumSignificantDigits", I, 21, 21), r["[[minimumSignificantDigits]]"] = I, r["[[maximumSignificantDigits]]"] = T);
+  var S = F(n, "useGrouping", "boolean", true, true);
+  r["[[useGrouping]]"] = S;
   var A = c[f].patterns[_];
   return r["[[positivePattern]]"] = A.positivePattern, r["[[negativePattern]]"] = A.negativePattern, r["[[boundFormat]]"] = true, r["[[initializedNumberFormat]]"] = true, l && (e.format = K.call(e)), i.exp.test(i.input), e
 }
@@ -662,9 +662,9 @@ function z(e, t) {
   }
   var I = i[true === u ? "[[negativePattern]]" : "[[positivePattern]]"];
   if (I = I.replace("{number}", n), "currency" === i["[[style]]"]) {
-    var S, T = i["[[currency]]"],
-      A = s.currencies[T];
-    S = "symbol" === i["[[currencyDisplay]]"] && A || T, I = I.replace("{currency}", S)
+    var T, S = i["[[currency]]"],
+      A = s.currencies[S];
+    T = "symbol" === i["[[currencyDisplay]]"] && A || S, I = I.replace("{currency}", T)
   }
   return r.exp.test(r.input), I
 }
@@ -752,7 +752,7 @@ function $(e, t, n) {
       if (arguments[0] === y) return r
     }
   }), r["[[initializedIntlObject]]"] = true;
-  var a = x(t),
+  var a = L(t),
     n = en(n, "any", "date"),
     o = new ep;
   v = F(n, "localeMatcher", "string", new eh("lookup", "best fit"), "best fit"), o["[[localeMatcher]]"] = v;
@@ -774,14 +774,14 @@ function $(e, t, n) {
     if (c.call(ee, h) && c.call(g, h)) {
       var I = g[h];
       r["[[" + h + "]]"] = I
-    } var S, T = F(n, "hour12", "boolean");
+    } var T, S = F(n, "hour12", "boolean");
   if (r["[[hour]]"])
-    if (T = true === T ? E.hour12 : T, r["[[hour12]]"] = T, true === T) {
+    if (S = true === S ? E.hour12 : S, r["[[hour12]]"] = S, true === S) {
       var A = E.hourNo0;
-      r["[[hourNo0]]"] = A, S = g.pattern12
-    } else S = g.pattern;
-  else S = g.pattern;
-  return r["[[pattern]]"] = S, r["[[boundFormat]]"] = true, r["[[initializedDateTimeFormat]]"] = true, l && (e.format = eo.call(e)), i.exp.test(i.input), e
+      r["[[hourNo0]]"] = A, T = g.pattern12
+    } else T = g.pattern;
+  else T = g.pattern;
+  return r["[[pattern]]"] = T, r["[[boundFormat]]"] = true, r["[[initializedDateTimeFormat]]"] = true, l && (e.format = eo.call(e)), i.exp.test(i.input), e
 }
 u(o.NumberFormat.prototype, "resolvedOptions", {
   configurable: true,
@@ -987,7 +987,7 @@ function ef(e) {
   var t = em(),
     n = arguments[1],
     r = this["[[availableLocales]]"],
-    i = x(e);
+    i = L(e);
   return t.exp.test(t.input), Z(r, i, n)
 }
 

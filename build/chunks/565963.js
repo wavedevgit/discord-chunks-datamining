@@ -34,8 +34,8 @@ function a(e, t) {
     O = b + e.clientWidth,
     v = y + e.clientHeight,
     I = parseInt(d, 10) || 0,
-    S = parseInt(_, 10) || 0,
-    T = parseInt(f, 10) || 0,
+    T = parseInt(_, 10) || 0,
+    S = parseInt(f, 10) || 0,
     A = parseInt(p, 10) || 0,
     C = parseInt(h, 10) || 0,
     N = parseInt(g, 10) || 0,
@@ -43,12 +43,12 @@ function a(e, t) {
     P = n - (parseInt(E, 10) || 0),
     w = n + i + R,
     D = r - C,
-    L = r + a + N,
-    x = s + parseInt(u, 10) + A,
-    M = O - T,
+    x = r + a + N,
+    L = s + parseInt(u, 10) + A,
+    M = O - S,
     k = l + parseInt(c, 10) + I,
-    j = v - S;
-  (P > x || w < M) && (P <= s + A ? s = P - parseInt(u, 10) - A : w > O - T && (s += w - O + T)), (D > k || L < j) && (D <= y + I ? l = D - parseInt(c, 10) - I : L > v - S && (l += L - v + S)), e.scrollTo({
+    j = v - T;
+  (P > L || w < M) && (P <= s + A ? s = P - parseInt(u, 10) - A : w > O - S && (s += w - O + S)), (D > k || x < j) && (D <= y + I ? l = D - parseInt(c, 10) - I : x > v - T && (l += x - v + T)), e.scrollTo({
     left: s,
     top: l
   })

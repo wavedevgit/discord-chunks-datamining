@@ -15,9 +15,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk966902 = require("./966902.jsx"),
   Chunk562618 = require("./562618.jsx"),
   Chunk803866 = require("./803866.jsx"),
-  Chunk982519 = require("./982519.js"),
+  Chunk893026 = require("./893026.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk37751 = require("./37751.js");
+  Chunk869918 = require("./869918.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,11 +84,11 @@ function I(e) {
     previewUrl: b = g,
     disableMediaViewer: v = false,
     action: I,
-    caretConfig: S = {
+    caretConfig: T = {
       position: "bottom",
       align: "center"
     },
-    badge: T,
+    badge: S,
     textLink: A,
     onWatchVideo: C,
     onRequestClose: N,
@@ -96,7 +96,7 @@ function I(e) {
   } = e, P = O(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
   let w = i.useRef(null),
     D = (0, a.j1L)(b),
-    L = i.useCallback(() => ({
+    x = i.useCallback(() => ({
       type: "VIDEO",
       url: g,
       proxyUrl: g,
@@ -105,7 +105,7 @@ function I(e) {
       height: 720,
       className: m.media
     }), [g, t]),
-    x = i.useCallback(() => {
+    L = i.useCallback(() => {
       null !== w.current && w.current.pause(), null == N || N()
     }, [N]),
     M = i.useCallback(() => {
@@ -113,14 +113,14 @@ function I(e) {
     }, [N]),
     k = i.useCallback(() => {
       null !== w.current && w.current.pause();
-      let e = L();
+      let e = x();
       (0, l.K)({
         items: [e],
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: true
       }), null == N || N(), null == C || C()
-    }, [L, C, N]),
+    }, [x, C, N]),
     j = D ? (0, r.jsx)(a.zsu, {
       type: "image",
       src: b
@@ -147,21 +147,21 @@ function I(e) {
       })]
     });
   return (0, r.jsx)(c.m, y(E({}, P), {
-    onRequestClose: x,
+    onRequestClose: L,
     hasVideo: true,
     children: (0, r.jsxs)("div", {
       ref: R,
       children: [(0, r.jsx)(_.N, {
         onClick: M
       }), (0, r.jsx)(d.$, {
-        caretConfig: S
+        caretConfig: T
       }), (0, r.jsx)("div", {
         className: m.assetContainer,
         children: j
       }), (0, r.jsx)(f.Y, {
         title: t,
         body: n,
-        badge: T,
+        badge: S,
         textLink: A
       }), null != I ? (0, r.jsx)(u.k, {
         actions: [I]

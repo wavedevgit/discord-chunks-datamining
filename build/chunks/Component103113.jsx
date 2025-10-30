@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk544989 = require("./544989.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk116649 = require("./116649.js");
+  Chunk593540 = require("./593540.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,8 +60,8 @@ function P(e) {
     channelId: P,
     messageId: w,
     roleId: D,
-    openedAt: L,
-    setPopoutRef: x,
+    openedAt: x,
+    setPopoutRef: L,
     closePopout: M,
     disableUserProfileLink: k = __OVERLAY__,
     newAnalyticsLocations: j = [],
@@ -77,8 +77,8 @@ function P(e) {
     roleId: D
   }), F = i.useRef(null), V = (0, u.X)(F);
   i.useEffect(() => {
-    null == x || x(null == F ? true : F.current)
-  }, [F, x]);
+    null == L || L(null == F ? true : F.current)
+  }, [F, L]);
   let H = () => {
       null == M || M(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: B,
@@ -103,7 +103,7 @@ function P(e) {
     value: B,
     children: (0, r.jsx)(_.Mt, {
       value: Z,
-      openedAt: L,
+      openedAt: x,
       fetchStartedAt: null == G ? true : G.fetchStartedAt,
       fetchEndedAt: null == G ? true : G.fetchEndedAt,
       isLoaded: null == G ? true : G.isLoaded,
@@ -120,8 +120,8 @@ function P(e) {
         }), (0, r.jsxs)(O.Z, {
           user: n,
           displayProfile: G,
-          themeType: T.l.POPOUT,
-          children: [(0, r.jsx)(S.Z, {
+          themeType: S.l.POPOUT,
+          children: [(0, r.jsx)(T.Z, {
             children: (0, r.jsx)(I.Z, {
               user: n,
               viewProfileItem: W()
@@ -132,13 +132,13 @@ function P(e) {
               user: n,
               displayProfile: G,
               guildId: N,
-              themeType: T.l.POPOUT
+              themeType: S.l.POPOUT
             }), (0, r.jsx)(g.Z, {
               user: n,
               displayProfile: G,
               guildId: N,
               channelId: P,
-              themeType: T.l.POPOUT,
+              themeType: S.l.POPOUT,
               onOpenProfile: Y ? H : true
             })]
           }), (0, r.jsxs)(a.Ttm, {
@@ -151,7 +151,7 @@ function P(e) {
               onOpenProfile: Y ? H : true,
               tags: (0, r.jsx)(E.Z, {
                 displayProfile: G,
-                themeType: T.l.POPOUT,
+                themeType: S.l.POPOUT,
                 onClose: M
               })
             }), (0, r.jsx)(y.Z, {

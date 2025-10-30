@@ -59,8 +59,8 @@ let _ = 3e5,
   O = 0,
   v = {},
   I = 0,
-  S = 0,
   T = 0,
+  S = 0,
   A = {
     friends: true,
     blocked: true,
@@ -93,7 +93,7 @@ function P(e) {
 
 function w() {
   var e, t;
-  S = g.size, T = b.size, I = Math.max((null != (t = null == (e = N.get(Chunk981631.OGo.PENDING_INCOMING)) ? true : module.size) ? exports : 0) - S - T, 0), O++
+  T = g.size, S = b.size, I = Math.max((null != (t = null == (e = N.get(Chunk981631.OGo.PENDING_INCOMING)) ? true : module.size) ? exports : 0) - T - S, 0), O++
 }
 
 function D(e) {
@@ -102,12 +102,12 @@ function D(e) {
   }), w()
 }
 
-function L(e) {
+function x(e) {
   for (let [t, n] of(p.clear(), N.clear(), e.relationships)) R(t, n);
   w()
 }
 
-function x(e) {
+function L(e) {
   let t = p.get(e.relationship.id);
   R(e.relationship.id, e.relationship.type), null != e.relationship.nickname && (h = f(u({}, h), {
     [e.relationship.id]: e.relationship.nickname
@@ -185,10 +185,10 @@ class G extends(r = Chunk442837.ZP.Store) {
     return I
   }
   getSpamCount() {
-    return S
+    return T
   }
   getPendingIgnoredCount() {
-    return T
+    return S
   }
   getOutgoingCount() {
     var e, t;
@@ -260,8 +260,8 @@ class G extends(r = Chunk442837.ZP.Store) {
 c(G, "displayName", "RelationshipStore");
 let B = new G(Chunk570140.Z, {
   CONNECTION_OPEN: D,
-  OVERLAY_INITIALIZE: L,
-  RELATIONSHIP_ADD: x,
+  OVERLAY_INITIALIZE: x,
+  RELATIONSHIP_ADD: L,
   RELATIONSHIP_REMOVE: M,
   RELATIONSHIP_UPDATE: k,
   RELATIONSHIP_PENDING_INCOMING_REMOVED: j,

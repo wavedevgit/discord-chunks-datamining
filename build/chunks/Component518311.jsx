@@ -1,4 +1,4 @@
-/** Chunk was on 88647 **/
+/** Chunk was on 13873 **/
 /** chunk id: 518311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eC,
@@ -59,8 +59,8 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk575464 = require("./575464.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk918324 = require("./918324.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk497072 = require("./497072.js"),
+  Chunk10198 = require("./10198.js");
 
 function eo(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -290,7 +290,7 @@ class eg extends(r = Chunk647438.PureComponent) {
     let n = this.getRemaining(),
       r = 0 === exports.size || require < 0;
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk918324.addButton,
+      className: Chunk497072.addButton,
       children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
@@ -310,9 +310,9 @@ class eg extends(r = Chunk647438.PureComponent) {
       });
     return (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
-      className: o()(Chunk918324.subtitle, {
-        [Chunk918324.subtitleWarning]: module < 0
-      }, Chunk197571.marginTop4),
+      className: o()(Chunk497072.subtitle, {
+        [Chunk497072.subtitleWarning]: module < 0
+      }, Chunk10198.marginTop4),
       children: exports
     })
   }
@@ -331,10 +331,10 @@ class eg extends(r = Chunk647438.PureComponent) {
       let t = q.default.getUser(e);
       null != t && o.push($.ZP.getName(t))
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk918324.searchBar,
+      className: Chunk497072.searchBar,
       children: [(0, Chunk951288.jsx)(Chunk794433.Z, {
         ref: this.searchBarRef,
-        className: Chunk918324.searchBarComponent,
+        className: Chunk497072.searchBarComponent,
         autoFocus: true,
         placeholder: 0 === Chunk120356.size ? Chunk388032.intl.string(Chunk388032.t.Wxnb6q) : "",
         disabled: this.isPartyFull(),
@@ -365,14 +365,14 @@ class eg extends(r = Chunk647438.PureComponent) {
     return (0, Chunk951288.jsxs)(Chunk481060.xBx, {
       direction: Chunk600164.Z.Direction.VERTICAL,
       align: Chunk600164.Z.Align.STRETCH,
-      className: Chunk918324.header,
+      className: Chunk497072.header,
       separator: module,
       children: [Chunk873546.tq ? this.renderMobileCloseButton() : null, (0, Chunk951288.jsx)(Chunk481060.Heading, {
         id: ed,
         variant: "heading-lg/semibold",
         children: exports
       }), this.renderSubtitle(), (0, Chunk951288.jsx)(Chunk481060.olH, {
-        className: Chunk918324.closeButton,
+        className: Chunk497072.closeButton,
         onClick: this.props.onClose
       })]
     })
@@ -390,7 +390,7 @@ class eg extends(r = Chunk647438.PureComponent) {
         r = null != require ? require.username : "",
         l = null != require && Chunk699516.Z.getRelationshipType(require.id) === Chunk981631.OGo.PENDING_OUTGOING;
       return (0, Chunk951288.jsxs)(ef, {
-        className: Chunk918324.notFriends,
+        className: Chunk497072.notFriends,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
@@ -399,7 +399,7 @@ class eg extends(r = Chunk647438.PureComponent) {
           })
         }), (0, Chunk951288.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: Chunk197571.marginTop20,
+          className: Chunk10198.marginTop20,
           children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             size: "sm",
@@ -411,7 +411,7 @@ class eg extends(r = Chunk647438.PureComponent) {
       })
     }
     return exports ? this.isPartyFull() ? (0, Chunk951288.jsxs)(ef, {
-      className: Chunk918324.partyFull,
+      className: Chunk497072.partyFull,
       children: [(0, Chunk951288.jsx)("div", {
         children: Chunk388032.intl.string(Chunk388032.t.OtTQDz)
       }), (0, Chunk951288.jsx)("div", {
@@ -420,15 +420,15 @@ class eg extends(r = Chunk647438.PureComponent) {
         })
       })]
     }) : 0 === require.length ? (0, Chunk951288.jsx)(ef, {
-      className: o()(Chunk918324.noResults, Chunk197571.marginBottom20),
+      className: o()(Chunk497072.noResults, Chunk10198.marginBottom20),
       children: (0, Chunk951288.jsx)("div", {
         children: Chunk388032.intl.string(Chunk388032.t.SV4DJ1)
       })
     }) : (0, Chunk951288.jsx)(Chunk481060.aVo, {
       ref: this.scrollerRef,
       sections: [require.length],
-      className: Chunk918324.scroller,
-      innerClassName: Chunk918324.scrollerInner,
+      className: Chunk497072.scroller,
+      innerClassName: Chunk497072.scrollerInner,
       renderRow: this.renderRow,
       rowHeight: this.getRowHeight,
       renderSection: this.renderSection,
@@ -443,12 +443,12 @@ class eg extends(r = Chunk647438.PureComponent) {
       innerAriaMultiselectable: true,
       innerAriaOrientation: "vertical"
     }) : (0, Chunk951288.jsxs)(ef, {
-      className: Chunk918324.noFriends,
+      className: Chunk497072.noFriends,
       children: [(0, Chunk951288.jsx)("div", {
         children: Chunk388032.intl.string(Chunk388032.t["7orY6K"])
       }), (0, Chunk951288.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: Chunk197571.marginTop20,
+        className: Chunk10198.marginTop20,
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
@@ -500,7 +500,7 @@ class eg extends(r = Chunk647438.PureComponent) {
     } = this.props;
     if (this.isNotFriends() || !module || this.isPartyFull()) return null;
     if (null == exports) return (0, Chunk951288.jsxs)(Chunk481060.mzw, {
-      className: Chunk918324.footer,
+      className: Chunk497072.footer,
       children: [require.size > 1 && (0, Chunk951288.jsx)(eb, {
         previewIcon: this.state.previewIcon,
         selectedUsers: require,
@@ -520,7 +520,7 @@ class eg extends(r = Chunk647438.PureComponent) {
     });
     let r = exports.isDM() ? this.renderCreateGroupButton() : this.renderInviteLink();
     if (null != r) return (0, Chunk951288.jsx)(Chunk481060.mzw, {
-      className: Chunk918324.footer,
+      className: Chunk497072.footer,
       children: r
     })
   }
@@ -531,9 +531,9 @@ class eg extends(r = Chunk647438.PureComponent) {
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: null != module ? module : Chunk481060.Dvm.ENTERED,
-      className: o()(Chunk918324.popout, {
-        [Chunk918324.showAsModal]: exports,
-        [Chunk918324.showAsPopout]: !exports
+      className: o()(Chunk497072.popout, {
+        [Chunk497072.showAsModal]: exports,
+        [Chunk497072.showAsPopout]: !exports
       }),
       fullscreenOnMobile: false,
       parentComponent: "PrivateChannelRecipientsInvite",

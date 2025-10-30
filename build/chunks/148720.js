@@ -80,7 +80,7 @@ async function E(e) {
   }
   if (null == O || null == v) return;
   let I = u.default.getCurrentUser();
-  async function S() {
+  async function T() {
     null != O && await (0, _.Z)({
       applicationId: O.applicationId,
       activityChannelId: t,
@@ -103,6 +103,6 @@ async function E(e) {
       PermissionStore: c.Z,
       GuildStore: l.Z
     }),
-    handleCanJoin: S
+    handleCanJoin: T
   })
 }

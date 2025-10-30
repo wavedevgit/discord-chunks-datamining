@@ -43,7 +43,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,7 +68,7 @@ function x(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -165,9 +165,9 @@ if (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.feat
         let e = X[n];
         if (R.isPlatformEmbedded ? P.ZP.focus() : window.focus(), null != e) {
           var a, o, s;
-          (null == (a = e.options) ? true : a.omitClickTracking) || (T.default.track(w.rMx.NOTIFICATION_ACTION, L({
+          (null == (a = e.options) ? true : a.omitClickTracking) || (S.default.track(w.rMx.NOTIFICATION_ACTION, x({
             action: "CLICK"
-          }, e.trackingProps)), T.default.track(w.rMx.NOTIFICATION_CLICKED, e.clickTrackingProps)), null == (s = e.options) || null == (o = s.onClick) || o.call(s, r);
+          }, e.trackingProps)), S.default.track(w.rMx.NOTIFICATION_CLICKED, e.clickTrackingProps)), null == (s = e.options) || null == (o = s.onClick) || o.call(s, r);
           return
         }
         if (null != i) {
@@ -222,12 +222,12 @@ async function et(e, t, n, r, i) {
   var a, o, s, l, u, d, m;
   let g, E = await Z(),
     D = (null == E ? true : E.authorizationStatus) === "authorized" || (null == E ? true : E.authorizationStatus) === "provisional",
-    x = null != E ? D : await J(),
+    L = null != E ? D : await J(),
     j = D,
     F = I.Z.disableNotifications && null == i.overrideStreamerMode,
     V = !R.isPlatformEmbedded || (0, R.isMac)() && j || P.ZP.shouldDisplayNotifications(),
-    H = !F && x && V,
-    W = M(L({}, r), {
+    H = !F && L && V,
+    W = M(x({}, r), {
       action: true,
       ping: true,
       banner: true,
@@ -236,7 +236,7 @@ async function et(e, t, n, r, i) {
     K = W,
     z = W;
   if (r.banner = await (0, p.K)(), !H) {
-    null != i.sound && false !== i.playSoundIfDisabled && (ee(i.sound, null != (a = i.volume) ? a : 1, i.soundpack), r.ping = true, i.omitViewTracking || T.default.track(w.rMx.NOTIFICATION_ACTION, L({
+    null != i.sound && false !== i.playSoundIfDisabled && (ee(i.sound, null != (a = i.volume) ? a : 1, i.soundpack), r.ping = true, i.omitViewTracking || S.default.track(w.rMx.NOTIFICATION_ACTION, x({
       action: "VIEW"
     }, r)));
     return
@@ -246,9 +246,9 @@ async function et(e, t, n, r, i) {
     $ = j && (null == E ? true : E.sound) === true && (null == E ? true : E.authorizationStatus) === "authorized",
     et = (e, t) => {
       var n;
-      null == (n = i.onShown) || n.call(i), i.omitViewTracking || (T.default.track(w.rMx.NOTIFICATION_ACTION, L({
+      null == (n = i.onShown) || n.call(i), i.omitViewTracking || (S.default.track(w.rMx.NOTIFICATION_ACTION, x({
         action: "VIEW"
-      }, t)), T.default.track(w.rMx.NOTIFICATION_VIEWED, z)), B && setTimeout(() => e.close(), 5e3)
+      }, t)), S.default.track(w.rMx.NOTIFICATION_VIEWED, z)), B && setTimeout(() => e.close(), 5e3)
     };
   if (null == i.sound || $ || (ee(i.sound, null != (s = i.volume) ? s : 1, i.soundpack), r.ping = true), i.isUserAvatar && null != e && (e = await (0, h.D)(e)), k && O.Z.taskbarFlash && P.ZP.flashFrame(true), j) {
     let a = {
@@ -267,7 +267,7 @@ async function et(e, t, n, r, i) {
         t = i.messageRecord.author;
       a.threadIdentifier = e;
       let n = y.Z.getChannel(e);
-      null != n && (a.groupName = (0, c.F6)(n, S.default, v.Z));
+      null != n && (a.groupName = (0, c.F6)(n, T.default, v.Z));
       let r = null == n ? true : n.getGuildId();
       if (a.senderIdentifier = t.id, a.senderDisplayName = N.ZP.getName(r, e, t), a.senderAvatar = t.getAvatarURL(r, 128, false, false), a.attachments = [], o.includeStickers)
         for (let e of (0, b.cv)(i.messageRecord)) {
@@ -286,7 +286,7 @@ async function et(e, t, n, r, i) {
         });
       null != i.emoji && f.Z.getConfig({
         location: "showNotification"
-      }).enabled && (a.emoji = i.emoji.map(e => L({
+      }).enabled && (a.emoji = i.emoji.map(e => x({
         url: (0, A.gT)({
           id: e.id,
           animated: false,
@@ -332,9 +332,9 @@ async function et(e, t, n, r, i) {
   }
   return (et(g, r), g.onclick = e => {
     var t;
-    R.isPlatformEmbedded ? P.ZP.focus() : (window.focus(), g.close()), i.omitClickTracking || (T.default.track(w.rMx.NOTIFICATION_ACTION, L({
+    R.isPlatformEmbedded ? P.ZP.focus() : (window.focus(), g.close()), i.omitClickTracking || (S.default.track(w.rMx.NOTIFICATION_ACTION, x({
       action: "CLICK"
-    }, r)), T.default.track(w.rMx.NOTIFICATION_CLICKED, K));
+    }, r)), S.default.track(w.rMx.NOTIFICATION_CLICKED, K));
     let n = "";
     null == (t = i.onClick) || t.call(i, n)
   }, U) ? {

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   CR: () => j,
-  DD: () => x
+  DD: () => L
 }), require("./953529.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -89,7 +89,7 @@ function I(e) {
   }, i)
 }
 
-function S(e) {
+function T(e) {
   let t, {
       quest: n,
       taskDetails: r,
@@ -113,7 +113,7 @@ function S(e) {
   }, i)
 }
 
-function T(e) {
+function S(e) {
   let t, {
       quest: n,
       taskDetails: r,
@@ -302,14 +302,14 @@ function D(e) {
     hasNitro: _,
     collectibleRewardDuration: p
   });
-  if ((0, l.$J)(t)) return S({
+  if ((0, l.$J)(t)) return T({
     quest: t,
     taskDetails: n,
     withoutMarkdown: o,
     hasNitro: _,
     collectibleRewardDuration: p
   });
-  if ((0, l.$H)(t)) return T({
+  if ((0, l.$H)(t)) return S({
     quest: t,
     taskDetails: n,
     withoutMarkdown: o,
@@ -339,7 +339,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   var t;
   return D(y(E({}, e), {
     currentUser: null != (t = e.currentUser) ? t : a.default.getCurrentUser(),
@@ -349,7 +349,7 @@ function L(e) {
   }))
 }
 
-function x(e) {
+function L(e) {
   let {
     quest: t,
     questContent: n,
@@ -359,7 +359,7 @@ function x(e) {
     questContent: n,
     sourceQuestContent: r
   }), s = (0, i.e7)([a.default], () => a.default.getCurrentUser()), l = (0, c.Jf)(t);
-  return L(y(E({}, e), {
+  return x(y(E({}, e), {
     connectedConsoleLinkOnClick: o,
     currentUser: s,
     withoutMarkdown: false,

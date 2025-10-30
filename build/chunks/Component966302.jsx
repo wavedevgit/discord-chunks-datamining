@@ -49,9 +49,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk295907 = require("./295907.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk993103 = require("./993103.js"),
-  Chunk450943 = require("./450943.js"),
-  Chunk315091 = require("./315091.js");
+  Chunk327667 = require("./327667.js"),
+  Chunk70623 = require("./70623.js"),
+  Chunk285236 = require("./285236.js");
 
 function Q(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -106,9 +106,9 @@ let et = {
 function eo(e) {
   let {
     header: t
-  } = e, n = L.Z.getCameraComponent(), a = (0, l.e7)([L.Z], () => L.Z.getVideoDeviceId()), o = (0, I.Z)();
+  } = e, n = x.Z.getCameraComponent(), a = (0, l.e7)([x.Z], () => x.Z.getVideoDeviceId()), o = (0, I.Z)();
   return i.useEffect(() => {
-    let e = x.default.getCurrentUser();
+    let e = L.default.getCurrentUser();
     if (o && null != e) {
       let t = (0, O.P)(e);
       (0, v.FU)(t, a, {
@@ -142,7 +142,7 @@ function es(e) {
   } = (0, m.ZP)(), {
     cameraUnavailable: l,
     enabled: d
-  } = (0, S.Z)(), _ = (0, T.Z)(n), p = i.useRef(null), g = a > 1;
+  } = (0, T.Z)(), _ = (0, S.Z)(n), p = i.useRef(null), g = a > 1;
   return (0, r.jsxs)("div", {
     className: o()(q.wrapper, q.actions),
     children: [(0, r.jsx)(C.Z, {
@@ -223,11 +223,11 @@ function el(e) {
     channel: h
   } = e, {
     analyticsLocations: y
-  } = (0, m.ZP)(p.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(false), I = (0, l.e7)([D.Z], () => D.Z.getGuild(h.guild_id)), S = null != I ? j.ZP.getGuildIconURL({
+  } = (0, m.ZP)(p.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(false), I = (0, l.e7)([D.Z], () => D.Z.getGuild(h.guild_id)), T = null != I ? j.ZP.getGuildIconURL({
     id: I.id,
     icon: I.icon,
     size: ea
-  }) : null, T = null != (t = (0, g.x)(h, ea, true)) ? t : S, A = (0, E.ZP)(h), [C, N] = (0, l.Wu)([L.Z], () => [L.Z.supports(W.AN.VIDEO), Object.keys(L.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, x = (0, l.e7)([M.Z], () => M.Z.isFocused()), k = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
+  }) : null, S = null != (t = (0, g.x)(h, ea, true)) ? t : T, A = (0, E.ZP)(h), [C, N] = (0, l.Wu)([x.Z], () => [x.Z.supports(W.AN.VIDEO), Object.keys(x.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, L = (0, l.e7)([M.Z], () => M.Z.isFocused()), k = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
   }, []), Z = (0, c.q_F)({
     value: +!!O,
@@ -250,7 +250,7 @@ function el(e) {
     }),
     Q = k === H.WtW.VOICE || V && h.type === H.d4z.GUILD_VOICE ? K.intl.string(K.t.Js8cK3) : K.intl.string(K.t.KcnWCO),
     $ = (0, r.jsxs)(r.Fragment, {
-      children: [null != I && null == S ? (0, r.jsx)("div", {
+      children: [null != I && null == T ? (0, r.jsx)("div", {
         className: o()(q.icon, z.wrapper, z.ringingIncoming),
         children: (0, r.jsx)(b.ZP, {
           className: q.mask,
@@ -267,8 +267,8 @@ function el(e) {
         })
       }) : (0, r.jsx)(G.Z, {
         className: q.icon,
-        ringing: x,
-        src: null != T ? T : "",
+        ringing: L,
+        src: null != S ? S : "",
         ringingType: G.Z.RingingType.INCOMING,
         size: O ? c.EFr.SIZE_40 : c.EFr.SIZE_80
       }), (0, r.jsxs)("div", {

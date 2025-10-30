@@ -2,7 +2,7 @@
 /** chunk id: 151200, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,8 +17,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk313201 = require("./313201.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk382150 = require("./382150.js"),
-  Chunk46999 = require("./46999.js");
+  Chunk478541 = require("./478541.js"),
+  Chunk959624 = require("./959624.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -119,7 +119,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   var {
     clickable: t
   } = e, n = O(e, ["clickable"]);
@@ -131,7 +131,7 @@ function S(e) {
   }))
 }
 
-function T(e) {
+function S(e) {
   let {
     entry: t,
     channel: n,
@@ -142,19 +142,19 @@ function T(e) {
     subtitleClickable: y,
     thumbnailClickable: O,
     providerIconProps: v,
-    style: T = {}
+    style: S = {}
   } = e, A = (0, f.Dt)(), {
     primaryColor: C,
     secondaryColor: N
   } = (0, u.Z)(g);
-  return null != g && (T.background = "linear-gradient(45deg, ".concat(C, ", ").concat(N, ")")), (0, r.jsx)(o.f6W, {
+  return null != g && (S.background = "linear-gradient(45deg, ".concat(C, ", ").concat(N, ")")), (0, r.jsx)(o.f6W, {
     theme: _.BR.DARK,
     disableAdaptiveTheme: true,
     children: e => (0, r.jsxs)("figure", {
       "aria-roledescription": p.intl.string(p.t.zFfUhF),
       "aria-labelledby": A,
       className: a()(h.container, e),
-      style: T,
+      style: S,
       children: [(0, r.jsx)(I, {
         className: h.thumbnailContainer,
         clickableClassName: h.clickable,
@@ -173,7 +173,7 @@ function T(e) {
           className: h.users
         }), (0, r.jsx)(o.LZC, {
           size: 2
-        }), (0, r.jsx)(S, {
+        }), (0, r.jsx)(T, {
           clickable: b,
           className: h.clickableText,
           children: (0, r.jsx)(o.Heading, {
@@ -187,7 +187,7 @@ function T(e) {
         }), null != m ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(o.LZC, {
             size: 2
-          }), (0, r.jsx)(S, {
+          }), (0, r.jsx)(T, {
             clickable: y,
             className: h.clickableText,
             children: (0, r.jsx)(o.Text, {

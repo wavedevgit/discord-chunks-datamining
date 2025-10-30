@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk731646 = require("./731646.js");
+  Chunk727781 = require("./727781.js");
 let p = e => {
   let t, n, a, {
       body: p,
@@ -27,8 +27,8 @@ let p = e => {
       onClose: O,
       onConfirm: v,
       onConfirmSecondary: I,
-      title: S,
-      transitionState: T,
+      title: T,
+      transitionState: S,
       titleClassName: A
     } = e,
     C = s.Button.Sizes.MEDIUM,
@@ -62,23 +62,23 @@ let p = e => {
     label: b,
     labelType: "secondary"
   })), (0, r.jsx)(l.Y0, {
-    transitionState: T,
+    transitionState: S,
     size: l.Cg.DYNAMIC,
     className: o()(m, _.container),
-    "aria-label": S,
+    "aria-label": T,
     parentComponent: "Alert",
     children: (0, r.jsxs)("form", {
       onSubmit: w,
       className: _.form,
       children: [(0, r.jsx)(l.xB, {
-        children: null != S ? (0, r.jsx)(u.Heading, {
+        children: null != T ? (0, r.jsx)(u.Heading, {
           variant: "heading-lg/semibold",
           className: o()(_.title, A),
-          children: S
+          children: T
         }) : (0, r.jsx)(u.Heading, {
           variant: "heading-md/semibold",
           className: o()(_.title, A),
-          children: S
+          children: T
         })
       }), (0, r.jsx)(l.hz, {
         className: _.modalContent,

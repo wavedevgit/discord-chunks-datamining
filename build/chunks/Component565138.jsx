@@ -19,7 +19,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk451478 = require("./451478.js"),
   Chunk956664 = require("./956664.js"),
   Chunk153066 = require("./153066.js"),
-  Chunk965005 = require("./965005.js");
+  Chunk532168 = require("./532168.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,9 +60,9 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -70,7 +70,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -114,7 +114,7 @@ class R extends Chunk647438.PureComponent {
       iconSrc: t
     } = this.props;
     return null != module.icon || null != exports ? null : (0, Chunk951288.jsx)("div", {
-      className: Chunk965005.acronym,
+      className: Chunk532168.acronym,
       children: (0, Chunk601964.gM)(module)
     })
   }
@@ -127,7 +127,7 @@ class R extends Chunk647438.PureComponent {
       badgeTooltipDelay: a
     } = this.props;
     return module ? (0, Chunk951288.jsx)(Chunk372769.Z, {
-      className: Chunk965005.guildIconBadge,
+      className: Chunk532168.guildIconBadge,
       guild: exports,
       badgeStrokeColor: require,
       tooltipColor: r,
@@ -151,28 +151,28 @@ class R extends Chunk647438.PureComponent {
         to: g,
         badgeStrokeColor: y,
         animate: v,
-        tabIndex: T,
+        tabIndex: S,
         iconSrc: A,
         "aria-hidden": C,
         lossless: R,
         iconSize: P
       } = require,
-      w = S(require, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
+      w = T(require, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
       D = N[Chunk442837],
-      L = null != Chunk451478 ? Chunk481060.P3F : "div",
-      x = (0, Chunk601964.gM)(r);
-    return (0, Chunk951288.jsxs)(L, I(O({
-      className: s()(Chunk965005.icon, Chunk647438, (0, Chunk153066.l)(Chunk965005, "iconSize", Chunk442837), {
-        [null != (e = (0, Chunk153066.l)(Chunk965005, "iconActive", Chunk442837)) ? module : ""]: Chunk799899,
-        [Chunk965005.iconInactive]: !Chunk799899,
-        [Chunk965005.noIcon]: null == r.icon
+      x = null != Chunk451478 ? Chunk481060.P3F : "div",
+      L = (0, Chunk601964.gM)(r);
+    return (0, Chunk951288.jsxs)(x, I(O({
+      className: s()(Chunk532168.icon, Chunk647438, (0, Chunk153066.l)(Chunk532168, "iconSize", Chunk442837), {
+        [null != (e = (0, Chunk153066.l)(Chunk532168, "iconActive", Chunk442837)) ? module : ""]: Chunk799899,
+        [Chunk532168.iconInactive]: !Chunk799899,
+        [Chunk532168.noIcon]: null == r.icon
       }),
       "aria-hidden": C,
       style: null == r.icon ? O({
-        fontSize: (null != (t = D[x.length]) ? exports : D[D.length - 1]) * Chunk891819
+        fontSize: (null != (t = D[L.length]) ? exports : D[D.length - 1]) * Chunk891819
       }, Chunk692547) : Chunk692547,
       onClick: null != Chunk956664 || null == Chunk451478 ? true : Chunk451478,
-      tabIndex: T
+      tabIndex: S
     }, w), {
       children: [this.renderAcronym(), this.renderBadge()]
     }))

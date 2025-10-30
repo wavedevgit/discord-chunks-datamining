@@ -2,7 +2,7 @@
 /** chunk id: 98474, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk768581 = require("./768581.js"),
   Chunk176354 = require("./176354.js"),
   Chunk675654 = require("./675654.js"),
-  Chunk42868 = require("./42868.js");
+  Chunk255971 = require("./255971.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,13 +61,13 @@ let O = 450,
   v = .5,
   I = [];
 
-function S(e) {
+function T(e) {
   let {
     messageId: t,
     emoji: n,
     startPosition: g,
     targetPosition: b
-  } = e, [S, T] = i.useState(0), [A, C] = i.useState(0), [N, R] = i.useState(null), {
+  } = e, [T, S] = i.useState(0), [A, C] = i.useState(0), [N, R] = i.useState(null), {
     confettiCanvas: P
   } = i.useContext(u.h), w = (0, a.uR)(P, N), D = i.useMemo(() => [{
     src: null == n.id ? p.ZP.getURL(n.name) : _.ZP.getEmojiURL({
@@ -76,12 +76,12 @@ function S(e) {
       size: 22
     }),
     colorize: false
-  }], [n.name, n.id]), L = b.x - b.width / 2 * v, x = b.y - b.height / 2 * v, M = (0, l.q_F)({
+  }], [n.name, n.id]), x = b.x - b.width / 2 * v, L = b.y - b.height / 2 * v, M = (0, l.q_F)({
     from: {
       y: g.y
     },
     to: {
-      y: x
+      y: L
     },
     config: {
       duration: O,
@@ -100,7 +100,7 @@ function S(e) {
       opacity: 1
     },
     to: {
-      x: L,
+      x: x,
       scale: v,
       opacity: .4
     },
@@ -115,20 +115,20 @@ function S(e) {
       let {
         x: t
       } = e;
-      T(t)
+      S(t)
     }
   });
   return i.useEffect(() => {
-    S > 0 && A > 0 && w.createConfetti(y(E({}, h.We), {
+    T > 0 && A > 0 && w.createConfetti(y(E({}, h.We), {
       position: {
         type: "static",
         value: {
-          x: S,
+          x: T,
           y: A
         }
       }
     }))
-  }, [w, S, A]), (0, r.jsxs)(r.Fragment, {
+  }, [w, T, A]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Ji, {
       ref: R,
       sprites: D,

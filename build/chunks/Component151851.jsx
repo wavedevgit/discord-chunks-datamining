@@ -24,10 +24,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk325645 = require("./325645.js");
+  Chunk676517 = require("./676517.js");
 let I = "#ffffff",
-  S = e => y.ZP.close(e),
-  T = e => y.ZP.minimize(e),
+  T = e => y.ZP.close(e),
+  S = e => y.ZP.minimize(e),
   A = (e, t) => {
     (0, b.isMac)() && !t.altKey ? y.ZP.fullscreen(e) : y.ZP.maximize(e)
   },
@@ -39,7 +39,7 @@ let I = "#ffffff",
       hasOpenLayer: o
     } = e, l = (0, r.jsx)(s.P3F, {
       className: v.winButtonClose,
-      onClick: () => S(n),
+      onClick: () => T(n),
       "aria-label": O.intl.string(O.t.ZdNUj2),
       tabIndex: false,
       children: (0, r.jsx)(_.Z, {})
@@ -51,7 +51,7 @@ let I = "#ffffff",
       children: (0, r.jsx)(h.Z, {})
     }), u = (0, r.jsx)(s.P3F, {
       className: v.winButtonMinMax,
-      onClick: () => T(n),
+      onClick: () => S(n),
       "aria-label": O.intl.string(O.t.CxOC4U),
       tabIndex: false,
       children: (0, r.jsx)(g.Z, {})
@@ -92,7 +92,7 @@ let I = "#ffffff",
           className: v.macButtons,
           children: [(0, r.jsx)(s.P3F, {
             className: v.macButtonClose,
-            onClick: () => S(n),
+            onClick: () => T(n),
             "aria-label": O.intl.string(O.t.ZdNUj2),
             tabIndex: false,
             children: (0, r.jsx)(p.Z, {
@@ -100,7 +100,7 @@ let I = "#ffffff",
             })
           }), (0, r.jsx)(s.P3F, {
             className: v.macButtonMinimize,
-            onClick: () => T(n),
+            onClick: () => S(n),
             "aria-label": O.intl.string(O.t.CxOC4U),
             tabIndex: false,
             children: (0, r.jsx)(E.Z, {

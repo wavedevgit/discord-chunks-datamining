@@ -59,10 +59,10 @@ let N = 100,
   w = .5,
   D = new Set;
 
-function L(e, t) {
+function x(e, t) {
   return "".concat(e, "_").concat(t)
 }
-class x {
+class L {
   getId() {
     return this.id
   }
@@ -136,20 +136,20 @@ class x {
     var p = this;
     A(this, "id", true), A(this, "quests", true), A(this, "questContent", true), A(this, "triggeredByStatusChange", true), A(this, "trackGuildAndChannelMetadata", true), A(this, "questContentPosition", true), A(this, "questContentRowIndex", true), A(this, "sourceQuestContent", true), A(this, "heartbeatTimeoutId", true), A(this, "lastBeatTime", true), A(this, "minViewTimeReachedTimeoutId", true), A(this, "minViewTimeSeconds", true), A(this, "minViewportPercentage", true), A(this, "isQuestEnrollmentBlocked", true), A(this, "isRunning", false), A(this, "onMinViewTimeReached", () => {
       this.quests.forEach(e => {
-        (0, S.T)().info("".concat(e.config.messages.questName, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, b._b)(this.questContent)), {
+        (0, T.T)().info("".concat(e.config.messages.questName, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, b._b)(this.questContent)), {
           impressionId: this.id
         });
         let t = false,
           n = (0, y.Zp)(this.questContent);
         if (null != n) {
-          let r = L(e.id, n);
+          let r = x(e.id, n);
           (t = !D.has(r) && (0, y.VB)(this.questContent)) && D.add(r)
         }
         let r = (0, y.jY)(this.questContent);
         (0, u.S)((0, b._b)(this.questContent)).then(n => {
           (0, b.dA)({
             questId: e.id,
-            event: T.rMx.QUEST_CONTENT_VIEWED,
+            event: S.rMx.QUEST_CONTENT_VIEWED,
             trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
             properties: C({
               min_view_time_seconds: this.minViewTimeSeconds,
@@ -169,11 +169,11 @@ class x {
       p.quests.forEach(t => {
         if (null != p.lastBeatTime) {
           let n = Math.round(Date.now() - p.lastBeatTime);
-          (0, S.T)().info("".concat(t.config.messages.questName, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
+          (0, T.T)().info("".concat(t.config.messages.questName, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
             impressionId: p.id
           }), (0, b.dA)({
             questId: t.id,
-            event: T.rMx.QUEST_CONTENT_VIEW_TIME,
+            event: S.rMx.QUEST_CONTENT_VIEW_TIME,
             properties: C({
               is_termination_beat: e,
               viewed_time_ms: n,
@@ -192,7 +192,7 @@ class x {
       let {
         triggeredByStatusChange: t
       } = e;
-      return this.stop(), new x({
+      return this.stop(), new L({
         questContent: this.questContent,
         questOrQuests: this.quests,
         questContentRowIndex: this.questContentRowIndex,
@@ -206,11 +206,11 @@ class x {
       this.stop(false), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * R), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds);
       let e = (0, y.jY)(this.questContent);
       this.quests.forEach(t => {
-        (0, S.T)().info("".concat(t.config.messages.questName, " Quest became visible at ").concat((0, b._b)(this.questContent)), {
+        (0, T.T)().info("".concat(t.config.messages.questName, " Quest became visible at ").concat((0, b._b)(this.questContent)), {
           impressionId: this.id
         }), (0, b.dA)({
           questId: t.id,
-          event: T.rMx.QUEST_CONTENT_LOADED,
+          event: S.rMx.QUEST_CONTENT_LOADED,
           properties: C({
             triggered_by_status_change: this.triggeredByStatusChange,
             metadata_raw: null != e ? e : null
@@ -264,7 +264,7 @@ function B(e) {
     let r = a && t,
       i = (n || c || d) && r,
       o = (n || c) && !r || d;
-    (i || o) && null != f.current && f.current.stop(), i && (f.current = new x({
+    (i || o) && null != f.current && f.current.stop(), i && (f.current = new L({
       questOrQuests: e.questOrQuests,
       questContent: e.questContent,
       questContentPosition: e.questContentPosition,

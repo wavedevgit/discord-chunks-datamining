@@ -34,9 +34,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk681642 = require("./681642.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk517793 = require("./517793.js");
+  Chunk311838 = require("./311838.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,14 +45,14 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -95,7 +95,7 @@ function U(e) {
     className: i,
     badgeClassName: d,
     displayProfile: g,
-    onClose: L,
+    onClose: x,
     shouldOpenBadgeTooltip: M,
     shouldGlowTenureBadge: U
   } = e, {
@@ -103,7 +103,7 @@ function U(e) {
   } = (0, c.ZP)(l.Z.BADGE), {
     context: B,
     trackUserProfileAction: Z
-  } = (0, v.KZ)(), F = E.default.getCurrentUser(), V = (0, y.yd)(null == F ? true : F.premiumType, R.PremiumTypes.TIER_2), H = (0, T.Of)(null != (t = null == F ? true : F.id) ? t : null), Y = (0, S.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
+  } = (0, v.KZ)(), F = E.default.getCurrentUser(), V = (0, y.yd)(null == F ? true : F.premiumType, R.PremiumTypes.TIER_2), H = (0, S.Of)(null != (t = null == F ? true : F.id) ? t : null), Y = (0, T.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
     className: a()(D.container, i),
     "aria-label": w.intl.string(w.t.VWV0y5),
@@ -116,7 +116,7 @@ function U(e) {
         y = t => {
           if (Z({
               action: "PRESS_BADGE"
-            }), (0, I.NE)(x({
+            }), (0, I.NE)(L({
               badge: e.id,
               analyticsLocations: G
             }, B)), i) return void(0, u.mK)({
@@ -133,7 +133,7 @@ function U(e) {
               (null == g ? true : g.userId) === (null == F ? true : F.id) ? (0, h.uL)(C.Z5c.NITRO_HOME) : (0, f.k)({
                 analyticsLocations: G,
                 displayProfile: g
-              }), null == L || L();
+              }), null == x || x();
               return
             }
             if ((null == g ? true : g.userId) === (null == F ? true : F.id)) {
@@ -141,35 +141,35 @@ function U(e) {
                 analyticsLocations: G
               }) : null;
               if (null == n) return;
-              return null == L || L(), n(t)
+              return null == x || x(), n(t)
             }
             return (0, f.k)({
               analyticsLocations: G,
               displayProfile: g
-            }), void(null == L || L())
+            }), void(null == x || x())
           }
           let n = null != e.link ? (0, s.default)(e.link, {
             analyticsLocations: G
           }) : null;
-          if (null != n) return null == L || L(), n(t)
+          if (null != n) return null == x || x(), n(t)
         },
         v = () => {
-          e.id === S.i && b.default.track(C.rMx.QUEST_CONTENT_VIEWED, k(x({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
+          e.id === T.i && b.default.track(C.rMx.QUEST_CONTENT_VIEWED, k(L({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
             is_targeted: false
           })), Z({
             action: "HOVER_BADGE"
-          }), (0, I.Qf)(x({
+          }), (0, I.Qf)(L({
             badge: e.id,
             analyticsLocations: G
           }, B))
         },
-        T = j({
+        S = j({
           badge: e,
           tieredTenureBadge: E && e.id !== P.a ? c : true,
           currentUserOwnsOrbBadge: Y
         });
       return (0, r.jsx)(o.jSM, {
-        text: T,
+        text: S,
         "aria-label": e.description,
         forceOpen: null != M && M(e.id),
         delay: A.vB,

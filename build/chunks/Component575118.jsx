@@ -2,7 +2,7 @@
 /** chunk id: 575118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  x: () => S
+  x: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk821541 = require("./821541.jsx"),
   Chunk777207 = require("./777207.jsx"),
   Chunk624653 = require("./624653.js"),
-  Chunk325380 = require("./325380.js");
+  Chunk815847 = require("./815847.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -144,7 +144,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     gradientColor: t,
     graphic: n,
@@ -157,7 +157,7 @@ function S(e) {
     trailing: E
   } = e, {
     headingId: y
-  } = (0, m.v)(), S = null != t, C = (0, f.MW)(n), N = c ? C ? v : I : O, R = null != n && (0, r.jsx)("div", {
+  } = (0, m.v)(), T = null != t, C = (0, f.MW)(n), N = c ? C ? v : I : O, R = null != n && (0, r.jsx)("div", {
     className: o()(g.headerGraphic, {
       [g.headerGraphicAnimated]: C
     }),
@@ -182,27 +182,27 @@ function S(e) {
         children: (0, r.jsx)(N, {
           leading: h,
           trailing: E,
-          hasGradient: S,
+          hasGradient: T,
           children: (0, r.jsx)("div", {
             className: g.headerMain,
             children: w
           })
         })
-      }), (0, r.jsx)(T, {
+      }), (0, r.jsx)(S, {
         badge: i
       }), null != n && null != a && P, null != l && (0, r.jsx)(A, {
         subtitle: l
       })]
     })
   });
-  return S ? (0, r.jsx)(u.$, {
+  return T ? (0, r.jsx)(u.$, {
     color: t,
     className: g.headerGradient,
     children: D
   }) : D
 }
 
-function T(e) {
+function S(e) {
   let {
     badge: t
   } = e;

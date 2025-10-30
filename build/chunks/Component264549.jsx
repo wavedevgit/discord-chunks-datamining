@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 15647 **/
 /** chunk id: 264549, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk714338 = require("./714338.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk24445 = require("./24445.js");
+  Chunk438835 = require("./438835.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -23,9 +23,9 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 let h = () => (0, Chunk951288.jsxs)("div", {
-  className: Chunk24445.symbol,
+  className: Chunk438835.symbol,
   children: [(0, Chunk951288.jsx)("div", {
-    className: Chunk24445.symbolBackground
+    className: Chunk438835.symbolBackground
   }), (0, Chunk951288.jsx)("img", {
     alt: "",
     src: require("./977706.js")
@@ -49,28 +49,28 @@ class g extends Chunk647438.PureComponent {
   }
   renderPrimary() {
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk24445.primaryExplosion,
+      className: Chunk438835.primaryExplosion,
       children: [(0, Chunk951288.jsx)("img", {
         alt: "",
-        className: Chunk24445.circleInner,
+        className: Chunk438835.circleInner,
         src: require("./273226.js"),
         width: 70,
         height: 69
       }), (0, Chunk951288.jsx)("img", {
         alt: "",
-        className: Chunk24445.circleOuter,
+        className: Chunk438835.circleOuter,
         src: require("./922026.js"),
         width: 96,
         height: 95
       }), (0, Chunk951288.jsx)("img", {
         alt: "",
-        className: Chunk24445.linesSecondary,
+        className: Chunk438835.linesSecondary,
         src: require("./827926.js"),
         width: 183,
         height: 104
       }), (0, Chunk951288.jsx)("img", {
         alt: "",
-        className: Chunk24445.linesMain,
+        className: Chunk438835.linesMain,
         src: require("./873180.js"),
         width: 69,
         height: 180
@@ -120,8 +120,8 @@ class g extends Chunk647438.PureComponent {
       scale: l
     } = this.state, a = [this.renderPrimary()];
     return module && Chunk392711.push(this.renderSecondary(exports, require)), (0, Chunk951288.jsx)("div", {
-      className: o()(Chunk24445.container, {
-        [Chunk24445.animate]: Chunk647438
+      className: o()(Chunk438835.container, {
+        [Chunk438835.animate]: Chunk647438
       }),
       style: {
         top: this.props.top,
@@ -158,8 +158,8 @@ class m extends Chunk647438.PureComponent {
   }
   render() {
     return (0, Chunk951288.jsx)("div", {
-      className: o()(Chunk24445.ragingDemon, {
-        [Chunk24445.visible]: this.state.visible
+      className: o()(Chunk438835.ragingDemon, {
+        [Chunk438835.visible]: this.state.visible
       }),
       children: this.children
     })

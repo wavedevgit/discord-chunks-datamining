@@ -39,31 +39,31 @@ let y = (0, Chunk191336.U)(e => ({
     } = (0, f.ZP)(d.Z.CLOUD_PLAY_POPOVER), I = (0, u.Z)({
       application: O,
       analyticsLocations: v
-    }), S = (0, h.Nj)(s.z.CLOUD_PLAY_NEW_BADGE), T = null != I && !S && n, {
+    }), T = (0, h.Nj)(s.z.CLOUD_PLAY_NEW_BADGE), S = null != I && !T && n, {
       activeEntryId: A,
       setActiveEntryId: C
-    } = y(), N = A === t.id, R = T && N ? [s.z.CLOUD_PLAY_POPOVER] : [], [P, w] = (0, m.US)(R), D = P === s.z.CLOUD_PLAY_POPOVER;
+    } = y(), N = A === t.id, R = S && N ? [s.z.CLOUD_PLAY_POPOVER] : [], [P, w] = (0, m.US)(R), D = P === s.z.CLOUD_PLAY_POPOVER;
     i.useEffect(() => {
-      T && null === A && C(t.id)
-    }, [A, T, t.id, C]);
-    let L = () => {
+      S && null === A && C(t.id)
+    }, [A, S, t.id, C]);
+    let x = () => {
       null == I || I()
     };
     i.useEffect(() => () => {
       D && (w(g.L.USER_DISMISS), C(null))
     }, [D, w, C]);
-    let [x, M] = i.useState(false);
+    let [L, M] = i.useState(false);
     i.useEffect(() => {
-      D && !x && M(true)
-    }, [D, x]), (0, _.Z)({
+      D && !L && M(true)
+    }, [D, L]), (0, _.Z)({
       name: o.ImpressionNames.CLOUD_PLAY_CTA,
       type: o.ImpressionTypes.VIEW,
       properties: {
         location_stack: v
       }
     }, {
-      disableTrack: !x
-    }, [x]);
+      disableTrack: !L
+    }, [L]);
     let k = () => {
       w(g.L.USER_DISMISS), C(null)
     };
@@ -84,7 +84,7 @@ let y = (0, Chunk191336.U)(e => ({
       actions: [{
         icon: c.v3n,
         text: E.intl.string(E.t["jaYS/h"]),
-        onClick: L
+        onClick: x
       }],
       onRequestClose: k
     })

@@ -32,13 +32,13 @@ let f = 5,
   O = null,
   v = [],
   I = false,
-  S = 0,
-  T = false,
+  T = 0,
+  S = false,
   A = false,
   C = null;
 
 function N() {
-  _ = null, p = new Set, m = false, g = new Set, E = new Set, b = new Map, y = 0, O = null, v = [], I = false, S = 0, T = false, A = false, C = null, h = new Map
+  _ = null, p = new Set, m = false, g = new Set, E = new Set, b = new Map, y = 0, O = null, v = [], I = false, T = 0, S = false, A = false, C = null, h = new Map
 }
 let R = () => true;
 
@@ -55,24 +55,24 @@ function w(e) {
     recipient_status: i,
     has_eligible_friends: a
   } = e;
-  T = true === c.Z.getCurrentConfig({
+  S = true === c.Z.getCurrentConfig({
     location: "handleReferralsRemainingFetchSuccess"
   }).enabled || null == r && a, A = a, m = false, _ = t, p = new Set(n), C = r, h = i
 }
 
 function D(e) {
   let {} = e;
-  T = false, A = false, C = null, m = false, y += 1, O = Date.now() + 1e3 * Math.pow(2, y)
+  S = false, A = false, C = null, m = false, y += 1, O = Date.now() + 1e3 * Math.pow(2, y)
 }
 
-function L(e) {
+function x(e) {
   let {
     userTrialOffer: t
   } = e;
   (0, l.C$)(), b.set(t.id, t), p.add(t.user_id)
 }
 
-function x(e) {
+function L(e) {
   let {
     userTrialOffers: t
   } = e;
@@ -133,7 +133,7 @@ function V(e) {
     users: t,
     nextIndex: n
   } = e;
-  I = false, v = t, S = n
+  I = false, v = t, T = n
 }
 
 function H() {
@@ -168,10 +168,10 @@ class Y extends(r = Chunk442837.ZP.Store) {
     return I
   }
   getNextIndexOfEligibleUsers() {
-    return S
+    return T
   }
   getIsEligibleToSendReferrals() {
-    return T
+    return S
   }
   getHasEligibleFriends() {
     return A
@@ -192,8 +192,8 @@ let W = new Y(Chunk570140.Z, {
   BILLING_REFERRALS_REMAINING_FETCH_START: P,
   BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: w,
   BILLING_REFERRALS_REMAINING_FETCH_FAIL: D,
-  BILLING_CREATE_REFERRAL_SUCCESS: L,
-  CREATE_REFERRALS_SUCCESS: x,
+  BILLING_CREATE_REFERRAL_SUCCESS: x,
+  CREATE_REFERRALS_SUCCESS: L,
   BILLING_REFERRAL_RESOLVE_SUCCESS: k,
   BILLING_REFERRAL_RESOLVE_FAIL: j,
   REFERRALS_FETCH_ELIGIBLE_USER_START: F,

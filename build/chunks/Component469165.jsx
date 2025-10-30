@@ -4,7 +4,7 @@
 require.d(exports, {
   EA: () => k,
   Recurring3PModal: () => U,
-  gu: () => L,
+  gu: () => x,
   wQ: () => G
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
@@ -26,11 +26,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk737963 = require("./737963.js"),
+  Chunk927143 = require("./927143.js"),
   Chunk180964 = require("./180964.js"),
   Chunk730440 = require("./730440.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,7 +46,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -212,7 +212,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
       })]
     })
   },
-  L = e => {
+  x = e => {
     let {
       percentage: t
     } = e, n = () => {
@@ -235,7 +235,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
       })]
     })
   },
-  x = "kontrolfreek",
+  L = "kontrolfreek",
   M = {
     steelseries: {
       title: Chunk388032.intl.string(Chunk388032.t.sfGgOG),
@@ -247,7 +247,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
       },
       asset: Chunk730440.Z
     },
-    [x]: {
+    [L]: {
       title: Chunk388032.intl.string(Chunk388032.t["9N8obd"]),
       body: Chunk388032.intl.string(Chunk388032.t["34g+Z3"]),
       redemptionURL: "https://www.kontrolfreek.com/",
@@ -323,7 +323,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
                 days: t - e.getDate()
               })
             })
-          }), (0, r.jsx)(L, {
+          }), (0, r.jsx)(x, {
             percentage: n
           }), (0, r.jsx)("div", {
             className: v.cards,

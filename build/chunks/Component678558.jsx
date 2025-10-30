@@ -24,9 +24,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk132810 = require("./132810.js");
+  Chunk131092 = require("./131092.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -87,14 +87,14 @@ let P = e => {
     analyticsLocation: t,
     analyticsSourceLocation: n,
     guild: a,
-    buttonText: S,
+    buttonText: T,
     targetBoostedGuildTier: A,
     onClose: R = () => {},
     closeLayer: P = () => {},
     pauseAnimation: w = false,
     applicationId: D,
-    handleSubscribeModalClose: L,
-    withHighlight: x = false,
+    handleSubscribeModalClose: x,
+    withHighlight: L = false,
     icon: M,
     intent: k,
     useExpressiveButton: j = false
@@ -122,12 +122,12 @@ let P = e => {
         closeLayer: P,
         inPopout: B,
         applicationId: D,
-        handleSubscribeModalClose: L,
+        handleSubscribeModalClose: x,
         intent: k
       }), F(false)
     }, q = g.Z.getPremiumTypeSubscription(), X = (0, r.jsxs)("div", {
       className: I.button,
-      children: [M, null != S ? S : v.intl.string(v.t.gKmQ1G)]
+      children: [M, null != T ? T : v.intl.string(v.t.gKmQ1G)]
     }), Q = false;
   return ((Q = null !== q && !(Y.length > 0) && (null == q ? true : q.isPausedOrPausePending) && V === O.a$.NONE) && (X = (0, r.jsxs)("div", {
     className: I.button,
@@ -142,12 +142,12 @@ let P = e => {
       icon: d.mBM,
       iconPosition: "start",
       disabled: true,
-      text: null != S ? S : v.intl.string(v.t.gKmQ1G)
+      text: null != T ? T : v.intl.string(v.t.gKmQ1G)
     })
   }) : (0, r.jsx)(l.Z, {
     text: K,
     "aria-label": false,
-    children: e => (0, r.jsx)(d.gtL, C(T(C(T({
+    children: e => (0, r.jsx)(d.gtL, C(S(C(S({
       "data-migration-pending": true
     }, e), {
       disabled: true,
@@ -160,14 +160,14 @@ let P = e => {
     variant: "expressive",
     disabled: Q,
     loading: Z,
-    text: null != S ? S : v.intl.string(v.t.gKmQ1G),
+    text: null != T ? T : v.intl.string(v.t.gKmQ1G),
     onClick: z
-  }) : (0, r.jsx)(d.gtL, C(T({
+  }) : (0, r.jsx)(d.gtL, C(S({
     "data-migration-pending": true,
     size: u.zx.Sizes.SMALL
   }, U), {
     className: o()(U.className, {
-      [I.buttonHighlighted]: x
+      [I.buttonHighlighted]: L
     }),
     submitting: Z,
     onClick: z,

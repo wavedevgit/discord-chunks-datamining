@@ -46,8 +46,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk379039 = require("./379039.js"),
-  Chunk810392 = require("./810392.js"),
+  Chunk650714 = require("./650714.js"),
+  Chunk909197 = require("./909197.js"),
   Chunk107283 = require("./107283.js");
 let z = () => {
   (0, Chunk214852.z)(Chunk433811.X);
@@ -90,10 +90,10 @@ let z = () => {
       home: eO,
       whatsNew: ev,
       bestOfNitro: eI,
-      plans: eS,
-      compare: eT
+      plans: eT,
+      compare: eS
     } = eb,
-    eA = em ? Chunk379039 : Chunk810392,
+    eA = em ? Chunk650714 : Chunk909197,
     {
       variant: eC
     } = (0, Chunk931118.ZP)("PremiumBrandRefreshMarketingHeroHeading"),
@@ -102,17 +102,17 @@ let z = () => {
     eP = Chunk431.Z.getAlmostExpiringTrialOffers([Chunk474936.Si.TIER_2]).length > 0 && null != eN && null != eN.expires_at && eN.trial_id !== Chunk474936.a7,
     ew = Chunk431.Z.getAlmostExpiringDiscountOffers([Chunk474936.Si.TIER_2]).length > 0 && null != eR && null != eR.expires_at,
     eD = eP ? eN.expires_at : ew ? eR.expires_at : null,
-    eL = eC === Chunk931118.tE.HERO_COUNTDOWN && (eP || ew) && null != eD,
-    ex = (0, Chunk951288.jsxs)("div", {
+    ex = eC === Chunk931118.tE.HERO_COUNTDOWN && (eP || ew) && null != eD,
+    eL = (0, Chunk951288.jsxs)("div", {
       className: o()(eA.container, eA.responsiveContainer, {
         [eA.containerBackground]: em || J,
-        [Chunk379039.fadeInFromTop]: !X && em
+        [Chunk650714.fadeInFromTop]: !X && em
       }),
       "data-cy": "tier-0-marketing-page",
       children: [em && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk306066.Z, {
-          className: o()(Chunk379039.topOfPageGradient, {
-            [Chunk379039.topOfPageGradientWithCountdown]: eL
+          className: o()(Chunk650714.topOfPageGradient, {
+            [Chunk650714.topOfPageGradientWithCountdown]: ex
           })
         }), (0, Chunk951288.jsx)(Chunk457227.Z, {
           navBarSections: eb,
@@ -120,10 +120,10 @@ let z = () => {
         })]
       }), !em && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk810392.heroHeaderSideGradient
+          className: Chunk909197.heroHeaderSideGradient
         }), (0, Chunk951288.jsx)("img", {
           src: Chunk107283,
-          className: Chunk810392.heroHeaderBackgroundStars,
+          className: Chunk909197.heroHeaderBackgroundStars,
           alt: ""
         })]
       }), (0, Chunk951288.jsxs)("div", {
@@ -140,7 +140,7 @@ let z = () => {
               ref: Chunk120356,
               subscriptionTier: ef,
               isEligibleForBogoPromotion: e_,
-              offerExpiresAt: eL ? eD : null
+              offerExpiresAt: ex ? eD : null
             }) : (0, Chunk951288.jsx)(Chunk903250.Z, {
               ref: Chunk120356,
               subscriptionTier: ef,
@@ -172,7 +172,7 @@ let z = () => {
           })
         }), (0, Chunk951288.jsx)("div", {
           className: eA.premiumTierCardsContainer,
-          ref: eS.ref,
+          ref: eT.ref,
           children: (0, Chunk951288.jsx)(Chunk622535.$, {
             innerRef: require,
             onChange: e => ei(e),
@@ -187,7 +187,7 @@ let z = () => {
           })
         }), (0, Chunk951288.jsx)("div", {
           className: eA.planComparisonTableContainer,
-          ref: eT.ref,
+          ref: eS.ref,
           children: em ? (0, Chunk951288.jsx)(Chunk975978.Z, {}) : (0, Chunk951288.jsx)(Chunk8231.Z, {})
         })]
       }), !em && (0, Chunk951288.jsx)(Chunk349803.Z, {
@@ -226,7 +226,7 @@ let z = () => {
           subscriptionTier: ef,
           isEligibleForBogoPromotion: e_
         }), (0, Chunk951288.jsx)(Chunk306066.Z, {
-          className: Chunk379039.bottomOfPageGradient
+          className: Chunk650714.bottomOfPageGradient
         })]
       })]
     });
@@ -235,7 +235,7 @@ let z = () => {
     children: t => (0, r.jsx)(u.yWw, {
       className: o()(eA.scroller, t),
       ref: e,
-      children: ex
+      children: eL
     })
   })
 }

@@ -479,7 +479,7 @@ let d = {
     },
     toolbarType: 2
   },
-  S = {
+  T = {
     analyticsName: "profile_bio_input",
     drafts: {
       type: Chunk703558.d.ChannelMessage
@@ -497,7 +497,7 @@ let d = {
     disableAutoFocus: true,
     showCharacterCount: true
   },
-  T = {
+  S = {
     analyticsName: "custom_gift_type",
     drafts: {
       type: Chunk703558.d.ChannelMessage
@@ -602,8 +602,8 @@ let d = {
     THREAD_CREATION: g,
     USER_PROFILE: O,
     USER_PROFILE_REPLY: I,
-    PROFILE_BIO_INPUT: S,
-    CUSTOM_GIFT: T,
+    PROFILE_BIO_INPUT: T,
+    CUSTOM_GIFT: S,
     RULES_INPUT: A,
     CREATE_FORUM_POST: b,
     CREATE_ANNOUNCEMENT_POST: E,

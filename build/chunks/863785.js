@@ -78,11 +78,11 @@ function f(e) {
     isPositioned: false
   }), [y, O] = i.useState(o);
   l(y, o) || O(o);
-  let [v, I] = i.useState(null), [S, T] = i.useState(null), A = i.useCallback(e => {
+  let [v, I] = i.useState(null), [T, S] = i.useState(null), A = i.useCallback(e => {
     e !== P.current && (P.current = e, I(e))
   }, []), C = i.useCallback(e => {
-    e !== w.current && (w.current = e, T(e))
-  }, []), N = _ || v, R = p || S, P = i.useRef(null), w = i.useRef(null), D = i.useRef(E), L = null != m, x = d(m), M = d(f), k = d(g), j = i.useCallback(() => {
+    e !== w.current && (w.current = e, S(e))
+  }, []), N = _ || v, R = p || T, P = i.useRef(null), w = i.useRef(null), D = i.useRef(E), x = null != m, L = d(m), M = d(f), k = d(g), j = i.useCallback(() => {
     if (!P.current || !w.current) return;
     let e = {
       placement: t,
@@ -110,10 +110,10 @@ function f(e) {
     U.current = false
   }), []), s(() => {
     if (N && (P.current = N), R && (w.current = R), N && R) {
-      if (x.current) return x.current(N, R, j);
+      if (L.current) return L.current(N, R, j);
       j()
     }
-  }, [N, R, j, x, L]);
+  }, [N, R, j, L, x]);
   let G = i.useMemo(() => ({
       reference: P,
       floating: w,

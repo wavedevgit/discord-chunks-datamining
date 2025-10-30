@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk613311 = require("./613311.jsx"),
   Chunk601564 = require("./601564.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk430355 = require("./430355.js");
+  Chunk763032 = require("./763032.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -34,7 +34,7 @@ class _ extends Chunk647438.Component {
       page: Chunk981631.ZY5.CHANNEL_STORE_LISTING,
       root: true,
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk430355.applicationStore,
+        className: Chunk763032.applicationStore,
         children: (0, Chunk951288.jsx)(Chunk843611.AW, {
           path: "*",
           render: this.renderApplicationListing

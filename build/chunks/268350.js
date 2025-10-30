@@ -2,11 +2,11 @@
 /** chunk id: 268350, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $p: () => T,
-  FQ: () => S,
+  $p: () => S,
+  FQ: () => T,
   Il: () => A,
   Jf: () => P,
-  SA: () => x,
+  SA: () => L,
   SV: () => C,
   Um: () => N,
   eu: () => w,
@@ -70,7 +70,7 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = async (e, t) => {
+let T = async (e, t) => {
   let {
     body: n
   } = await (0, p.Kb)({
@@ -83,7 +83,7 @@ let S = async (e, t) => {
     pack: n,
     ingestStickers: t
   }), n
-}, T = async function() {
+}, S = async function() {
   let {
     locale: e = Chunk706454.default.locale
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
@@ -202,12 +202,12 @@ function D(e, t) {
   })
 }
 
-function L(e) {
+function x(e) {
   return f.Z.totalUnavailableGuilds > 0 || !l.Z.isConnected() ? e : e.filter(e => null != h.Z.getStickerById(e))
 }
 
-function x(e) {
-  u.DZ.updateAsync("favoriteStickers", t => (t.stickerIds = L(t.stickerIds), i().size(t.stickerIds) >= E.oX) ? (s.Z.show({
+function L(e) {
+  u.DZ.updateAsync("favoriteStickers", t => (t.stickerIds = x(t.stickerIds), i().size(t.stickerIds) >= E.oX) ? (s.Z.show({
     title: b.intl.string(b.t["+XYXtZ"]),
     body: b.intl.formatToPlainString(b.t.JaIyFi, {
       count: E.oX
@@ -217,6 +217,6 @@ function x(e) {
 
 function M(e) {
   u.DZ.updateAsync("favoriteStickers", t => {
-    t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = L(t.stickerIds)
+    t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = x(t.stickerIds)
   }, E.fy.INFREQUENT_USER_ACTION)
 }

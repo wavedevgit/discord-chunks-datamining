@@ -103,12 +103,12 @@ function m(e) {
   }, [n]);
   let {
     focusPath: I
-  } = y, [S, T] = r.useState(false), [A, C] = r.useState(E), [{
+  } = y, [T, S] = r.useState(false), [A, C] = r.useState(E), [{
     onItemFocusMemoizer: N,
     onItemMouseEnterMemoizer: R
   }] = r.useState(() => ({
     onItemFocusMemoizer: new o.$o(e => () => {
-      T(true), O({
+      S(true), O({
         type: i.B.SET_FOCUS_PATH,
         path: e.split(d)
       })
@@ -142,35 +142,35 @@ function m(e) {
         null == i || i.click()
     }
   }, [v, t, I, c, g]), w = r.useCallback(() => {
-    S || T(true)
-  }, [S]), D = r.useCallback(e => {
-    e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && S && T(false)
-  }, [S]), L = r.useCallback(() => {
+    T || S(true)
+  }, [T]), D = r.useCallback(e => {
+    e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && T && S(false)
+  }, [T]), x = r.useCallback(() => {
     O({
       type: i.B.SET_FOCUS_PATH,
       path: []
-    }), T(false)
-  }, []), x = r.useCallback(e => e.every((e, t) => I[t] === e), [I]), M = r.useCallback(() => ({
+    }), S(false)
+  }, []), L = r.useCallback(e => e.every((e, t) => I[t] === e), [I]), M = r.useCallback(() => ({
     role: "menu",
     id: t,
     tabIndex: false,
     onKeyDown: P,
     onFocus: w,
     onBlur: D,
-    onMouseLeave: L,
+    onMouseLeave: x,
     "aria-activedescendant": I.length > 0 ? (0, o.qR)(t, I.join(d)) : true
-  }), [t, P, w, D, L, I]), k = r.useCallback(e => {
+  }), [t, P, w, D, x, I]), k = r.useCallback(e => {
     let {
       path: n
     } = e;
     return {
       role: "menu",
       tabIndex: false,
-      "aria-activedescendant": x(n) ? (0, o.qR)(t, I.join(d)) : true,
+      "aria-activedescendant": L(n) ? (0, o.qR)(t, I.join(d)) : true,
       focusIndex: y.focusIndex,
       isUsingKeyboardNavigation: A
     }
-  }, [t, I, x, y.focusIndex, A]), j = r.useCallback(e => {
+  }, [t, I, L, y.focusIndex, A]), j = r.useCallback(e => {
     let {
       path: n,
       hasSubmenu: r = false,
@@ -178,7 +178,7 @@ function m(e) {
       role: a = "menuitem"
     } = e, s = n.join(d);
     return u(l({}, r ? {
-      "aria-expanded": x(n),
+      "aria-expanded": L(n),
       "aria-haspopup": true
     } : {}), {
       role: a,
@@ -187,13 +187,13 @@ function m(e) {
       onFocus: i ? N.get(s) : () => {},
       onMouseEnter: i ? R.get(s) : () => {}
     })
-  }, [t, x, N, R]);
+  }, [t, L, N, R]);
   return r.useMemo(() => ({
     dispatch: v,
     getContainerProps: M,
     getSubmenuProps: k,
     getItemProps: j,
-    isFocused: x,
+    isFocused: L,
     isUsingKeyboardNavigation: A
-  }), [v, M, k, j, x, A])
+  }), [v, M, k, j, L, A])
 }

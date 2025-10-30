@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk391110 = require("./391110.js"),
-  Chunk424373 = require("./424373.js");
+  Chunk309253 = require("./309253.js");
 let s = {
     subtitle: {
       onlyShowOnHover: false
     },
     description: {
       onlyShowOnHover: true,
-      className: Chunk424373.cardDescription
+      className: Chunk309253.cardDescription
     },
     descriptionCta: {
       onlyShowOnHover: true

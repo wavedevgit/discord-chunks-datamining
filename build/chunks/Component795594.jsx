@@ -59,9 +59,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk468788 = require("./468788.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk392082 = require("./392082.js"),
-  Chunk430864 = require("./430864.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk609157 = require("./609157.js"),
+  Chunk602009 = require("./602009.js"),
+  Chunk10198 = require("./10198.js");
 
 function eo(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -250,9 +250,9 @@ let ef = e => {
     } = e, E = a.id, O = i.useMemo(() => D.ZP.createFromServer(a), [a]), v = (0, G.yE)(O.flags, ee.udG.EMBEDDED), I = (0, p.e7)([K.Z], () => {
       var e, t, n, r;
       return null == (r = K.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[E]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
-    }, [E]), C = T.w.useExperiment({
+    }, [E]), C = S.w.useExperiment({
       location: "oauth2_authorize"
-    }), L = a.bot, M = (0, p.e7)([x.Z], () => x.Z.getDMFromUserId(null == L ? true : L.id)), {
+    }), x = a.bot, M = (0, p.e7)([L.Z], () => L.Z.getDMFromUserId(null == x ? true : x.id)), {
       appDMChannelMuteConfig: k,
       dmChannelMuted: B
     } = (0, p.cj)([j.ZP], () => null == M ? {
@@ -409,15 +409,15 @@ let ef = e => {
             allowMobilePush: e
           })
         })
-      }, W.fy.INFREQUENT_USER_ACTION), S.ZP.trackWithMetadata(ee.rMx.NOTIFICATION_SETTINGS_UPDATED, {
+      }, W.fy.INFREQUENT_USER_ACTION), T.ZP.trackWithMetadata(ee.rMx.NOTIFICATION_SETTINGS_UPDATED, {
         update_type: et.I.AUTHORIZED_APP_DM_PUSH_NOTIFICATION,
         application_id: a.id,
         label: e ? Z.ZB.Unmuted : Z.ZB.Muted
       })
     }, em = i.useCallback(async () => {
-      u()(null != L, "dm channel mute setting requires having a bot user");
+      u()(null != x, "dm channel mute setting requires having a bot user");
       let e = M;
-      null == e && (e = await b.Z.ensurePrivateChannel(L.id)), B ? y.Z.updateAppDMOverrideSettings(null, e, a.id, {
+      null == e && (e = await b.Z.ensurePrivateChannel(x.id)), B ? y.Z.updateAppDMOverrideSettings(null, e, a.id, {
         muted: false
       }, Z.ZB.Unmuted) : (0, g.ZDy)(async () => {
         let {
@@ -428,7 +428,7 @@ let ef = e => {
           applicationId: a.id
         }, n))
       })
-    }, [M, L, B, a.id]), eg = () => C.enabled ? (0, r.jsxs)("div", {
+    }, [M, x, B, a.id]), eg = () => C.enabled ? (0, r.jsxs)("div", {
       className: er.directMessagesSection,
       children: [(0, r.jsx)(g.Heading, {
         variant: "heading-sm/medium",
@@ -437,7 +437,7 @@ let ef = e => {
         children: en.intl.string(en.t.NaZyYC)
       }), (0, r.jsxs)(g.Kqy, {
         gap: 20,
-        children: [null != L ? (0, r.jsx)(g.rsf, {
+        children: [null != x ? (0, r.jsx)(g.rsf, {
           label: en.intl.string(en.t.NkwaBs),
           description: (null == k ? true : k.end_time) != null ? en.intl.format(en.t.j7h4AJ, {
             endTime: new Date(k.end_time).toLocaleString(en.intl.currentLocale, {
@@ -542,7 +542,7 @@ let ef = e => {
         Chunk243814("")
       },
       m = () => (0, Chunk951288.jsx)("div", {
-        className: Chunk392082.searchContainer,
+        className: Chunk609157.searchContainer,
         children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
           query: Chunk191336,
           onChange: Chunk793030,
@@ -562,8 +562,8 @@ let ef = e => {
         let e = Chunk191336.trim().toLowerCase();
         return "" === module || null == require ? require : require.length < 100 ? require.filter(t => l()(e, t.application.name.toLowerCase())) : require.filter(t => t.application.name.toLowerCase().includes(e))
       }, [require, Chunk191336]),
-      S = () => null == require || null == Chunk87051 || exports !== Chunk881998.M.FETCHED ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
-        className: Chunk197571.marginTop20,
+      T = () => null == require || null == Chunk87051 || exports !== Chunk881998.M.FETCHED ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
+        className: Chunk10198.marginTop20,
         type: Chunk481060.$jN.Type.SPINNING_CIRCLE
       }) : 0 === require.length ? Chunk493683(Chunk388032.intl.string(Chunk388032.t.CpPv5l), Chunk388032.intl.string(Chunk388032.t["E+SM6T"])) : 0 === Chunk87051.length ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [Chunk524437(), Chunk493683(null, Chunk388032.intl.string(Chunk388032.t.EVWFNr))]
@@ -580,7 +580,7 @@ let ef = e => {
       children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
         component: (0, Chunk951288.jsxs)(Chunk481060.Zbd, {
           type: Chunk481060.Zbd.Types.PRIMARY,
-          className: Chunk392082.headingCard,
+          className: Chunk609157.headingCard,
           children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-md/medium",
             children: Chunk388032.intl.string(Chunk388032.t.HU3RFw)

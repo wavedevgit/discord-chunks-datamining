@@ -11,7 +11,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk493773 = require("./493773.js"),
   Chunk930295 = require("./930295.jsx"),
   Chunk126306 = require("./126306.jsx"),
-  Chunk974101 = require("./974101.js");
+  Chunk311883 = require("./311883.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -116,7 +116,7 @@ class y extends(r = Chunk647438.Component) {
       autoInvert: O = true,
       nudgeAlignIntoViewport: v = true,
       spacing: I = 8,
-      clickTrap: S = false
+      clickTrap: T = false
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk930295.H, {
       ref: this.ref,
@@ -134,14 +134,14 @@ class y extends(r = Chunk647438.Component) {
       onRequestOpen: require,
       onRequestClose: r,
       onShiftClick: Chunk126306,
-      positionKey: Chunk974101,
+      positionKey: Chunk311883,
       popoutKey: d,
       disablePointerEvents: _,
       ignoreModalClicks: p,
       scrollBehavior: h,
       useMouseEnter: m,
       layerContext: E,
-      clickTrap: S,
+      clickTrap: T,
       children: module
     })
   }

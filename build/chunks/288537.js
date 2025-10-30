@@ -21,8 +21,8 @@ var r, Chunk754793 = require("./754793.js"),
   O = 2,
   v = 3,
   I = 4,
-  S = 0,
-  T = 2,
+  T = 0,
+  S = 2,
   A = 8,
   C = 9,
   N = 15,
@@ -30,8 +30,8 @@ var r, Chunk754793 = require("./754793.js"),
   P = 286,
   w = 30,
   D = 19,
-  L = 573,
-  x = 15,
+  x = 573,
+  L = 15,
   M = 3,
   k = 258,
   j = 262,
@@ -196,12 +196,12 @@ function ef(e) {
 }
 
 function e_() {
-  this.strm = null, this.status = 0, this.pending_buf = null, this.pending_buf_size = 0, this.pending_out = 0, this.pending = 0, this.wrap = 0, this.gzhead = null, this.gzindex = 0, this.method = A, this.last_flush = false, this.w_size = 0, this.w_bits = 0, this.w_mask = 0, this.window = null, this.window_size = 0, this.prev = null, this.head = null, this.ins_h = 0, this.hash_size = 0, this.hash_bits = 0, this.hash_mask = 0, this.hash_shift = 0, this.block_start = 0, this.match_length = 0, this.prev_match = 0, this.match_available = 0, this.strstart = 0, this.match_start = 0, this.lookahead = 0, this.prev_length = 0, this.max_chain_length = 0, this.max_lazy_match = 0, this.level = 0, this.strategy = 0, this.good_match = 0, this.nice_match = 0, this.dyn_ltree = new Chunk754793.Buf16(2 * L), this.dyn_dtree = new Chunk754793.Buf16((2 * w + 1) * 2), this.bl_tree = new Chunk754793.Buf16((2 * D + 1) * 2), $(this.dyn_ltree), $(this.dyn_dtree), $(this.bl_tree), this.l_desc = null, this.d_desc = null, this.bl_desc = null, this.bl_count = new Chunk754793.Buf16(x + 1), this.heap = new Chunk754793.Buf16(2 * P + 1), $(this.heap), this.heap_len = 0, this.heap_max = 0, this.depth = new Chunk754793.Buf16(2 * P + 1), $(this.depth), this.l_buf = 0, this.lit_bufsize = 0, this.last_lit = 0, this.d_buf = 0, this.opt_len = 0, this.static_len = 0, this.matches = 0, this.insert = 0, this.bi_buf = 0, this.bi_valid = 0
+  this.strm = null, this.status = 0, this.pending_buf = null, this.pending_buf_size = 0, this.pending_out = 0, this.pending = 0, this.wrap = 0, this.gzhead = null, this.gzindex = 0, this.method = A, this.last_flush = false, this.w_size = 0, this.w_bits = 0, this.w_mask = 0, this.window = null, this.window_size = 0, this.prev = null, this.head = null, this.ins_h = 0, this.hash_size = 0, this.hash_bits = 0, this.hash_mask = 0, this.hash_shift = 0, this.block_start = 0, this.match_length = 0, this.prev_match = 0, this.match_available = 0, this.strstart = 0, this.match_start = 0, this.lookahead = 0, this.prev_length = 0, this.max_chain_length = 0, this.max_lazy_match = 0, this.level = 0, this.strategy = 0, this.good_match = 0, this.nice_match = 0, this.dyn_ltree = new Chunk754793.Buf16(2 * x), this.dyn_dtree = new Chunk754793.Buf16((2 * w + 1) * 2), this.bl_tree = new Chunk754793.Buf16((2 * D + 1) * 2), $(this.dyn_ltree), $(this.dyn_dtree), $(this.bl_tree), this.l_desc = null, this.d_desc = null, this.bl_desc = null, this.bl_count = new Chunk754793.Buf16(L + 1), this.heap = new Chunk754793.Buf16(2 * P + 1), $(this.heap), this.heap_len = 0, this.heap_max = 0, this.depth = new Chunk754793.Buf16(2 * P + 1), $(this.depth), this.l_buf = 0, this.lit_bufsize = 0, this.last_lit = 0, this.d_buf = 0, this.opt_len = 0, this.static_len = 0, this.matches = 0, this.insert = 0, this.bi_buf = 0, this.bi_valid = 0
 }
 
 function ep(e) {
   var t;
-  return e && e.state ? (e.total_in = e.total_out = 0, e.data_type = T, (t = e.state).pending = 0, t.pending_out = 0, t.wrap < 0 && (t.wrap = -t.wrap), t.status = t.wrap ? G : H, e.adler = +(2 !== t.wrap), t.last_flush = c, a._tr_init(t), p) : Q(e, m)
+  return e && e.state ? (e.total_in = e.total_out = 0, e.data_type = S, (t = e.state).pending = 0, t.pending_out = 0, t.wrap < 0 && (t.wrap = -t.wrap), t.status = t.wrap ? G : H, e.adler = +(2 !== t.wrap), t.last_flush = c, a._tr_init(t), p) : Q(e, m)
 }
 
 function eh(e) {
@@ -300,5 +300,5 @@ r = [new ed(0, 0, 0, 0, function(e, t) {
   }
   return (e.insert = 0, t === f) ? (et(e, true), 0 === e.strm.avail_out) ? z : q : (e.strstart > e.block_start && (et(e, false), e.strm.avail_out), W)
 }), new ed(4, 4, 8, 4, es), new ed(4, 5, 16, 8, es), new ed(4, 6, 32, 32, es), new ed(4, 4, 16, 16, el), new ed(8, 16, 32, 32, el), new ed(8, 16, 128, 128, el), new ed(8, 32, 128, 256, el), new ed(32, 128, 258, 1024, el), new ed(32, 258, 258, 4096, el)], exports.deflateInit = function(e, t) {
-  return eg(e, t, A, N, R, S)
+  return eg(e, t, A, N, R, T)
 }, exports.deflateInit2 = eg, exports.deflateReset = eh, exports.deflateResetKeep = ep, exports.deflateSetHeader = em, exports.deflate = eE, exports.deflateEnd = eb, exports.deflateSetDictionary = ey, exports.deflateInfo = "pako deflate (from Nodeca project)"

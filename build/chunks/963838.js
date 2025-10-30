@@ -7,7 +7,7 @@ require.d(exports, {
   _r: () => B,
   cX: () => F,
   lv: () => U,
-  v: () => x
+  v: () => L
 });
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -40,7 +40,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk176354 = require("./176354.js"),
   Chunk353368 = require("./353368.js"),
   Chunk388032 = require("./388032.jsx");
-let x = {
+let L = {
     start: 10,
     end: 15
   },
@@ -99,14 +99,14 @@ function F(e) {
   let s = Z(e, "userId"),
     l = Z(e, "emojiName"),
     c = l.length < 2 ? null != (t = null == l ? true : l[0]) ? t : "" : l.join(", ");
-  return s.length < 1 ? "" : 1 === s.length ? L.intl.formatToPlainString(L.t.yZYxzF, {
+  return s.length < 1 ? "" : 1 === s.length ? x.intl.formatToPlainString(x.t.yZYxzF, {
     firstUsername: null == (n = R.default.getUser(s[0])) ? true : n.username,
     emojiNames: c
-  }) : 2 === s.length ? L.intl.formatToPlainString(L.t["8rmtbd"], {
+  }) : 2 === s.length ? x.intl.formatToPlainString(x.t["8rmtbd"], {
     firstUsername: null == (r = R.default.getUser(s[0])) ? true : r.username,
     secondUsername: null == (i = R.default.getUser(s[1])) ? true : i.username,
     emojiNames: c
-  }) : L.intl.formatToPlainString(L.t["/okjv0"], {
+  }) : x.intl.formatToPlainString(x.t["/okjv0"], {
     firstUsername: null == (a = R.default.getUser(s[0])) ? true : a.username,
     secondUsername: null == (o = R.default.getUser(s[1])) ? true : o.username,
     count: s.length - 2,

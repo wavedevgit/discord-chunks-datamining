@@ -21,7 +21,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk474936 = require("./474936.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk262381 = require("./262381.js");
+  Chunk538972 = require("./538972.js");
 
 function y(e) {
   return e === m.PremiumTypes.TIER_2 ? E.intl.string(E.t.jqO5Qn) : null == e ? E.intl.string(E.t.f2qjw5) : E.intl.string(E.t.SblICW)
@@ -33,7 +33,7 @@ function O(e) {
     markAsDismissed: n
   } = e, O = (0, i.e7)([f.default], () => f.default.getCurrentUser()), v = y(null == O ? true : O.premiumType), I = _.ZP.canUseCustomCallSounds(O);
 
-  function S() {
+  function T() {
     (0, d.openUserSettings)(u.n.VOICE_AND_VIDEO_PANEL, {
       section: p.oAB.VOICE,
       subsection: g.GA
@@ -67,7 +67,7 @@ function O(e) {
       variant: "text-sm/normal",
       children: v
     }), I ? (0, r.jsx)(s.Button, {
-      onClick: S,
+      onClick: T,
       text: E.intl.string(E.t.RzWDqY),
       fullWidth: true
     }) : (0, r.jsx)(l.Z, {

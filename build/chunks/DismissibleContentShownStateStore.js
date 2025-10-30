@@ -9,7 +9,7 @@ require.d(exports, {
   bn: () => G,
   cI: () => U,
   cv: () => D,
-  f0: () => x,
+  f0: () => L,
   gE: () => M,
   og: () => k
 }), require("./388685.js"), require("./290780.js");
@@ -84,16 +84,16 @@ let m = new(require("./499303.js")).I,
     var n;
     return null == t || (null != t.content && e.currentlyShown.delete(t.content), null != t.groupName && e.currentlyShownGroup.delete(t.groupName), (null == (n = e.shownFatigableCandidate) ? true : n.content) === t.content && (e.shownFatigableCandidate = null)), e
   },
-  S = (e, t) => {
+  T = (e, t) => {
     var n, r;
     if (null == t) return e;
     e.currentlyShown.add(t.content);
     let i = e.recentlyShown.filter(e => e !== t.content);
     return i.unshift(t.content), i.splice(5), e.recentlyShown = i, null != t.groupName && e.currentlyShownGroup.add(t.groupName), d.O.has(t.content) || (e.shownFatigableCandidate = t, (null == (r = e.prevFatigableCandidate) ? true : r.content) !== t.content && (e.prevFatigableCandidate = t, e.lastWinnerTime = new Date().getTime())), null == (n = t.onAdded) || n.call(t), e
   },
-  T = (e, t) => (e.candidates.set(t.content, t), e),
+  S = (e, t) => (e.candidates.set(t.content, t), e),
   A = (e, t) => (e.candidates.delete(t.content), e),
-  C = (e, t) => S(I(e, e.shownFatigableCandidate), t),
+  C = (e, t) => T(I(e, e.shownFatigableCandidate), t),
   N = e => null != e.prevFatigableCandidate ? e.candidates.get(e.prevFatigableCandidate.content) : true,
   R = e => {
     let t = [...e.candidates.keys()];
@@ -106,7 +106,7 @@ let m = new(require("./499303.js")).I,
   w = e => {
     if (0 === e.candidates.size) return e;
     let t = new Date().getTime() - e.lastWinnerTime > g;
-    return P(e) && !t ? (m.unschedule(), C(e, N(e))) : (null != e.shownFatigableCandidate && !t || m.scheduled() || L(e) || m.schedule(() => {
+    return P(e) && !t ? (m.unschedule(), C(e, N(e))) : (null != e.shownFatigableCandidate && !t || m.scheduled() || x(e) || m.schedule(() => {
       (0, a.j)(() => {
         y.setState(e => {
           let t = v(e);
@@ -115,17 +115,17 @@ let m = new(require("./499303.js")).I,
       })
     }, 250), e)
   },
-  D = () => L(y.getState()),
-  L = e => {
+  D = () => x(y.getState()),
+  x = e => {
     let t = new Date().getTime();
     return null == e.shownFatigableCandidate && t - e.lastWinnerTime < E
   },
-  x = e => {
+  L = e => {
     let t = d.O.has(e.content);
     (0, a.j)(() => {
       y.setState(n => {
         let r = v(n);
-        return O ? r : t ? S(r, e) : w(T(r, e))
+        return O ? r : t ? T(r, e) : w(S(r, e))
       })
     })
   },

@@ -63,11 +63,11 @@ function I() {
   v = true
 }
 
-function S() {
+function T() {
   v = false, b = {}
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let r = false,
     i = [];
   for (let t = 0; t < e.options.length; t++) {
@@ -85,7 +85,7 @@ function T(e, t, n) {
 }
 
 function A(e, t, n) {
-  return e.map(e => T(e, t, n))
+  return e.map(e => S(e, t, n))
 }
 
 function C(e) {
@@ -174,7 +174,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t,
     channelIds: n
@@ -184,7 +184,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     mode: n
@@ -267,7 +267,7 @@ class U extends(r = Chunk442837.ZP.Store) {
 }
 h(U, "displayName", "GuildOnboardingPromptsStore");
 let G = new U(Chunk570140.Z, {
-  CONNECTION_OPEN: S,
+  CONNECTION_OPEN: T,
   GUILD_ONBOARDING_PROMPTS_FETCH_START: I,
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: C,
   GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: N,
@@ -275,6 +275,6 @@ let G = new U(Chunk570140.Z, {
   GUILD_ONBOARDING_UPDATE_RESPONSES_SUCCESS: D,
   GUILD_ONBOARDING_PROMPTS_LOCAL_UPDATE: R,
   GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_SUCCESS: R,
-  GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS: L,
-  GUILD_SETTINGS_ONBOARDING_SET_MODE: x
+  GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS: x,
+  GUILD_SETTINGS_ONBOARDING_SET_MODE: L
 })

@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk515344 = require("./515344.js"),
   Chunk967249 = require("./967249.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk217648 = require("./217648.js");
+  Chunk299650 = require("./299650.js");
 
 function k(e) {
   var t;
@@ -51,13 +51,13 @@ function k(e) {
   } = e, {
     name: E,
     bot: O
-  } = n = (0, P.O)(n), v = null == O ? true : O.id, I = (0, p.ye)(n), T = S.ZP.getApplicationIconURL({
+  } = n = (0, P.O)(n), v = null == O ? true : O.id, I = (0, p.ye)(n), S = T.ZP.getApplicationIconURL({
     id: n.id,
     icon: n.icon,
     bot: O
   }), {
     staticBannerSrc: N,
-    videoBannerSrc: L,
+    videoBannerSrc: x,
     bannerAspectRatio: M
   } = (0, w.E)(n), k = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
     analyticsLocations: G
@@ -75,7 +75,7 @@ function k(e) {
   }), W = null != v && I && Y, K = V && I, z = (0, D.G)(n), q = (0, D.z)(n), X = i.useMemo(() => {
     let e = [];
     return I ? (K && e.push({
-      label: null == Z ? x.intl.string(x.t.RscU7I) : F ? x.intl.string(x.t.DPfdsq) : x.intl.string(x.t.sqe0hj),
+      label: null == Z ? L.intl.string(L.t.RscU7I) : F ? L.intl.string(L.t.DPfdsq) : L.intl.string(L.t.sqe0hj),
       trackingArea: R.j_.PLAY,
       onClick() {
         (0, c.G6)({
@@ -90,7 +90,7 @@ function k(e) {
       },
       disabled: F
     }), !K && W && e.push({
-      label: x.intl.string(x.t.JeK1Wg),
+      label: L.intl.string(L.t.JeK1Wg),
       trackingArea: R.j_.PLAY,
       onClick() {
         (0, _.W)({
@@ -110,10 +110,10 @@ function k(e) {
   return (0, r.jsx)(C.W, {
     title: E,
     staticBannerSrc: N,
-    videoBannerSrc: L,
+    videoBannerSrc: x,
     onClickBanner: z,
     bannerAspectRatio: M,
-    iconSrc: T,
+    iconSrc: S,
     info: Q,
     actions: X,
     onClickContent: z,
@@ -134,7 +134,7 @@ function j(e) {
   var t, n, o;
   let {
     app: c
-  } = e, u = (0, T.Eb)({
+  } = e, u = (0, S.Eb)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig
@@ -146,7 +146,7 @@ function j(e) {
         compactDisplay: "short"
       }),
       r = null != (t = null == (e = c.directoryEntry) ? true : e.guild_count) ? t : 0;
-    return 0 === r ? null : x.intl.format(x.t["6IW6Wi"], {
+    return 0 === r ? null : L.intl.format(L.t["6IW6Wi"], {
       guildCount: n.format(r)
     })
   }, [null == (t = c.directoryEntry) ? true : t.guild_count, u, d]), _ = null == (o = c.categories) || null == (n = o.at(0)) ? true : n.name;
@@ -191,7 +191,7 @@ function U(e) {
     if (d.length > 0) return (0, r.jsx)(N.K, {
       activityUsers: d,
       guildId: c,
-      activityText: x.intl.formatToPlainString(x.t["IJa+46"], {
+      activityText: L.intl.formatToPlainString(L.t["IJa+46"], {
         count: d.length
       })
     });
@@ -199,11 +199,11 @@ function U(e) {
       children: [(0, r.jsx)(l.YqE, {
         size: "xxs",
         color: "currentColor"
-      }), x.intl.string(x.t.TsWCdW)]
+      }), L.intl.string(L.t.TsWCdW)]
     });
-    let e = a > 0 ? x.intl.format(x.t.z8EAJW, {
+    let e = a > 0 ? L.intl.format(L.t.z8EAJW, {
       count: a
-    }) : x.intl.string(x.t.RjceQU);
+    }) : L.intl.string(L.t.RjceQU);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.tBG, {
         size: "xxs",

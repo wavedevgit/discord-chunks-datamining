@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk315 = require("./315.js");
+  Chunk864976 = require("./864976.js");
 
 function v(e, t) {
   return e in t
@@ -35,8 +35,8 @@ function I(e) {
     referralTrialOfferId: a,
     handleClose: I
   } = e, {
-    selectedSkuId: S,
-    step: T,
+    selectedSkuId: T,
+    step: S,
     selectedPlan: A,
     purchaseState: C,
     purchaseType: N,
@@ -45,38 +45,38 @@ function I(e) {
     isDisplayingWowMomentConfirmation: w
   } = (0, m.JL)(), {
     isGift: D,
-    selectedGiftStyle: L,
-    giftRecipient: x
-  } = (0, h.wD)(), M = (null == R ? true : R.productLine) === E.POd.COLLECTIBLES, k = (null == R ? true : R.productLine) === E.POd.SOCIAL_LAYER_GAME_ITEM, j = D && (0, p.pO)(x) && T === g.h8.CONFIRM && null != L && !M && !k, U = null != n && null != T, G = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], B = null != T && !G.includes(T) && null != S, Z = (0, u.N)(a), F = !D && null != Z && null != S && b.nG[Z.trial_id].skus.includes(S), V = (0, c.Ng)(), H = null == V || null == (t = V.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === S), Y = !D && null != V && null != S && H;
+    selectedGiftStyle: x,
+    giftRecipient: L
+  } = (0, h.wD)(), M = (null == R ? true : R.productLine) === E.POd.COLLECTIBLES, k = (null == R ? true : R.productLine) === E.POd.SOCIAL_LAYER_GAME_ITEM, j = D && (0, p.pO)(L) && S === g.h8.CONFIRM && null != x && !M && !k, U = null != n && null != S, G = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], B = null != S && !G.includes(S) && null != T, Z = (0, u.N)(a), F = !D && null != Z && null != T && b.nG[Z.trial_id].skus.includes(T), V = (0, c.Ng)(), H = null == V || null == (t = V.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === T), Y = !D && null != V && null != T && H;
   return i.useMemo(() => {
-    if (null == T) return;
+    if (null == S) return;
     let e = null;
     return j ? e = (0, r.jsxs)("div", {
       className: O.container,
       children: [(0, r.jsx)(d.Z, {
         defaultAnimationState: l.SR.LOOP,
-        giftStyle: L,
+        giftStyle: x,
         className: O.seasonalGiftBoxHeaderIcon
       }), (0, r.jsx)(s.olH, {
         onClick: I,
         className: O.closeButton,
         "data-migration-pending": true
       })]
-    }) : U ? e = n(null != A ? A : null, I, T) : N === y.GZ.ONE_TIME ? e = (0, r.jsx)(_.t, {
-      step: T,
+    }) : U ? e = n(null != A ? A : null, I, S) : N === y.GZ.ONE_TIME ? e = (0, r.jsx)(_.t, {
+      step: S,
       onClose: I
-    }) : B && (o()(v(S, b.y7), "invalid sku id: ".concat(S)), e = (0, r.jsx)(f.Z, {
-      currentStep: null != T ? T : true,
+    }) : B && (o()(v(T, b.y7), "invalid sku id: ".concat(T)), e = (0, r.jsx)(f.Z, {
+      currentStep: null != S ? S : true,
       purchaseState: C,
-      premiumType: b.y7[S],
+      premiumType: b.y7[T],
       onClose: I,
       showTrialBadge: F,
       showDiscountBadge: Y,
       isGift: D,
-      giftRecipient: x,
+      giftRecipient: L,
       isEligibleForTrial: F,
       enablePremiumBrandRefresh: P,
       isDisplayingWowMomentConfirmation: w
     })), e
-  }, [L, I, C, n, A, S, T, F, Y, j, B, U, N, D, x, P, w])
+  }, [x, I, C, n, A, T, S, F, Y, j, B, U, N, D, L, P, w])
 }

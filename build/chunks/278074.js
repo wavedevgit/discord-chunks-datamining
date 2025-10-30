@@ -200,10 +200,10 @@ function v(e) {
 function I(e) {
   return "bigint" == typeof e
 }
-let S = f(b(function(e) {
+let T = f(b(function(e) {
     returntrue
   })),
-  T = S,
+  S = T,
   A = e => Object.assign(f(e), {
     startsWith: t => {
       var n;
@@ -236,8 +236,8 @@ let S = f(b(function(e) {
   P = e => b(t => O(t) && t > e),
   w = e => b(t => O(t) && t <= e),
   D = e => b(t => O(t) && t >= e),
-  L = () => b(e => O(e) && Number.isInteger(e)),
-  x = () => b(e => O(e) && Number.isFinite(e)),
+  x = () => b(e => O(e) && Number.isInteger(e)),
+  L = () => b(e => O(e) && Number.isFinite(e)),
   M = () => b(e => O(e) && e > 0),
   k = () => b(e => O(e) && e < 0),
   j = e => Object.assign(f(e), {
@@ -246,8 +246,8 @@ let S = f(b(function(e) {
     gt: t => j(g(e, P(t))),
     lte: t => j(g(e, w(t))),
     gte: t => j(g(e, D(t))),
-    int: () => j(g(e, L())),
-    finite: () => j(g(e, x())),
+    int: () => j(g(e, x())),
+    finite: () => j(g(e, L())),
     positive: () => j(g(e, M())),
     negative: () => j(g(e, k()))
   }),
@@ -389,16 +389,16 @@ var Q = {
   },
   when: b,
   select: y,
-  any: S,
-  _: T,
+  any: T,
+  _: S,
   string: C,
   between: N,
   lt: R,
   gt: P,
   lte: w,
   gte: D,
-  int: L,
-  finite: x,
+  int: x,
+  finite: L,
   positive: M,
   negative: k,
   number: U,

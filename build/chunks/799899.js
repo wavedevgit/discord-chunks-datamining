@@ -104,14 +104,14 @@ true === b && (b = E), b(function(e, t) {
     O = e.location,
     v = e.sensitive,
     I = e.strict,
-    S = e.style,
-    T = e.to,
+    T = e.style,
+    S = e.to,
     A = e.innerRef,
     C = (0, l.Z)(e, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
   return a.createElement(r.s6.Consumer, null, function(e) {
     e || (0, c.Z)(false);
     var n = O || e.location,
-      o = f(d(T, n), n),
+      o = f(d(S, n), n),
       l = o.pathname,
       N = l && l.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1"),
       R = N ? (0, r.LX)(n.pathname, {
@@ -122,13 +122,13 @@ true === b && (b = E), b(function(e, t) {
       }) : null,
       P = !!(m ? m(R, n) : R),
       w = P ? y(p, u) : p,
-      D = P ? (0, s.Z)({}, S, {}, _) : S,
-      L = (0, s.Z)({
+      D = P ? (0, s.Z)({}, T, {}, _) : T,
+      x = (0, s.Z)({
         "aria-current": P && i || null,
         className: w,
         style: D,
         to: o
       }, C);
-    return E !== b ? L.ref = t || A : L.innerRef = A, a.createElement(g, L)
+    return E !== b ? x.ref = t || A : x.innerRef = A, a.createElement(g, x)
   })
 })

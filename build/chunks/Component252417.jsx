@@ -1,7 +1,7 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 58829 **/
 /** chunk id: 252417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,38 +18,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
-  Chunk777267 = require("./777267.js");
-let O = Chunk481060.EFr.SIZE_40,
-  y = (0, Chunk481060.pxk)(O);
+  Chunk788485 = require("./788485.js");
+let j = Chunk481060.EFr.SIZE_40,
+  y = (0, Chunk481060.pxk)(j);
 
-function v(e) {
+function g(e) {
   let {
     user: t,
-    status: v,
-    guildId: j,
-    channelId: C,
-    onSelect: E
+    status: g,
+    guildId: x,
+    channelId: O,
+    onSelect: k
   } = e, {
-    theme: x,
-    themeType: S
-  } = (0, g.z)(), I = i.useMemo(() => t.isNonUserBot() || (0, p.W)(t, C), [t, C]), {
-    activities: P,
-    isMobileOnline: N
-  } = (0, l.cj)([h.Z], () => ({
-    activities: h.Z.getActivities(t.id),
-    isMobileOnline: h.Z.isMobileOnline(t.id)
-  })), Z = (0, f.Z)(t.id), {
-    voiceActivityStatusEnabled: T
-  } = (0, c.a)({
+    theme: Z,
+    themeType: P
+  } = (0, p.z)(), C = i.useMemo(() => t.isNonUserBot() || (0, b.W)(t, O), [t, O]), {
+    activities: S,
+    isMobileOnline: w
+  } = (0, o.cj)([_.Z], () => ({
+    activities: _.Z.getActivities(t.id),
+    isMobileOnline: _.Z.isMobileOnline(t.id)
+  })), E = (0, f.Z)(t.id), {
+    voiceActivityStatusEnabled: I
+  } = (0, s.a)({
     location: "UserProfileMutualFriendRow"
   }), {
-    voiceChannel: w
-  } = (0, u.Z)({
-    userId: T ? t.id : true,
-    guildId: j
+    voiceChannel: A
+  } = (0, d.Z)({
+    userId: I ? t.id : true,
+    guildId: x
   });
-  return (0, r.jsxs)(o.P3F, {
-    focusProps: S === b.l.MODAL_V2 ? {
+  return (0, r.jsxs)(a.P3F, {
+    focusProps: P === v.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -60,15 +60,15 @@ function v(e) {
         right: 8
       }
     },
-    className: _.row,
-    onClick: E,
+    className: m.row,
+    onClick: k,
     onContextMenu: e => {
-      (0, a.jW)(e, async () => {
+      (0, l.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
         return n => {
-          var i, l;
+          var i, o;
           return (0, r.jsx)(e, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -86,40 +86,40 @@ function v(e) {
               })
             }
             return e
-          }({}, n), l = l = {
+          }({}, n), o = o = {
             user: t
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+          })(Object(o)).forEach(function(e) {
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
           }), i))
         }
       })
     },
-    children: [(0, r.jsx)(o.qEK, {
-      src: t.getAvatarURL(j, y),
+    children: [(0, r.jsx)(a.qEK, {
+      src: t.getAvatarURL(x, y),
       "aria-label": t.username,
-      size: O,
-      status: I ? m.Skl.UNKNOWN : v,
-      statusBackdropColor: I ? true : (0, o.QFD)(x),
-      isMobile: N,
-      className: _.avatar
+      size: j,
+      status: C ? h.Skl.UNKNOWN : g,
+      statusBackdropColor: C ? true : (0, a.QFD)(Z),
+      isMobile: w,
+      className: m.avatar
     }), (0, r.jsxs)("div", {
-      className: _.details,
-      children: [(0, r.jsx)(s.Z, {
+      className: m.details,
+      children: [(0, r.jsx)(c.Z, {
         user: t,
-        className: _.tag,
-        discriminatorClass: _.discriminator
-      }), (0, r.jsx)(d.Z, {
+        className: m.tag,
+        discriminatorClass: m.discriminator
+      }), (0, r.jsx)(u.Z, {
         user: t,
-        activities: P,
-        applicationStream: Z,
-        voiceChannel: w
+        activities: S,
+        applicationStream: E,
+        voiceChannel: A
       })]
     })]
   })

@@ -2,7 +2,7 @@
 /** chunk id: 862077, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk907179 = require("./907179.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk637079 = require("./637079.js"),
+  Chunk836061 = require("./836061.js"),
   Chunk609440 = require("./609440.js");
 
 function v(e, t, n) {
@@ -46,13 +46,13 @@ function I(e) {
   return e
 }
 
-function S(e) {
+function T(e) {
   let {
     user: t,
     guildId: n,
     setPopoutRef: v,
-    channelId: S,
-    messageId: T,
+    channelId: T,
+    messageId: S,
     roleId: A,
     openedAt: C,
     onHide: N,
@@ -60,29 +60,29 @@ function S(e) {
     disableAutoFocus: P = false
   } = e, w = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
     analyticsLocations: D
-  } = (0, l.ZP)([...R, w ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), L = (0, d.ZB)({
+  } = (0, l.ZP)([...R, w ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), x = (0, d.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
-    channelId: S,
-    messageId: T,
+    channelId: T,
+    messageId: S,
     roleId: A
-  }), x = i.useRef(null), M = (0, _.ZP)(t.id, n);
+  }), L = i.useRef(null), M = (0, _.ZP)(t.id, n);
   i.useEffect(() => {
-    null == v || v(null == x ? true : x.current)
-  }, [x, v]);
+    null == v || v(null == L ? true : L.current)
+  }, [L, v]);
   let k = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
     j = P ? "div" : o.VqE;
   return (0, r.jsx)(l.Gt, {
     value: D,
     children: (0, r.jsx)(d.Mt, {
-      value: L,
+      value: x,
       openedAt: C,
       fetchStartedAt: null == M ? true : M.fetchStartedAt,
       fetchEndedAt: null == M ? true : M.fetchEndedAt,
       isLoaded: null == M ? true : M.isLoaded,
       children: (0, r.jsx)(j, {
-        ref: x,
+        ref: L,
         "aria-label": t.username,
         children: (0, r.jsx)(h.Z, {
           user: t,
@@ -108,7 +108,7 @@ function S(e) {
                 }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
                   children: b.intl.format(w ? b.t["8F+WNz"] : b.t["/cZp5s"], {
-                    username: u.ZP.getName(n, S, t)
+                    username: u.ZP.getName(n, T, t)
                   })
                 })]
               }), (0, r.jsxs)(o.Kqy, {
@@ -119,7 +119,7 @@ function S(e) {
                     N(), (0, f.pQ)(I({
                       action: k,
                       analyticsLocations: D
-                    }, L))
+                    }, x))
                   }
                 }), (0, r.jsx)(m.Z, {
                   userId: t.id,
@@ -127,7 +127,7 @@ function S(e) {
                     N(), (0, f.pQ)(I({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                       analyticsLocations: D
-                    }, L))
+                    }, x))
                   }
                 })]
               })]

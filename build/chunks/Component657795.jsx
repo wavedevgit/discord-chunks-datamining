@@ -2,7 +2,7 @@
 /** chunk id: 657795, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,13 +24,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk107293 = require("./107293.js");
-let S = 80;
+  Chunk908522 = require("./908522.js");
+let T = 80;
 
-function T(e) {
+function S(e) {
   var t, n, a;
   let {
-    className: T,
+    className: S,
     onClose: A
   } = e;
   (0, h.fP)();
@@ -51,7 +51,7 @@ function T(e) {
     w = null != R || null != P,
     D = (null == R || null == (t = R.subscription_trial) ? true : t.sku_id) === O.Si.TIER_0;
   return (0, r.jsxs)("div", {
-    className: o()(I.emptyState, T, {
+    className: o()(I.emptyState, S, {
       [I.unifyTrialUpsell]: w
     }),
     children: [w ? (0, r.jsx)(_.ZP, {
@@ -76,7 +76,7 @@ function T(e) {
         children: N.filter(e => null != e).map(e => (0, r.jsx)(g.Z, {
           sticker: e,
           className: I.sticker,
-          size: S
+          size: T
         }, null == e ? true : e.id))
       })]
     }), !w && (0, r.jsx)(E.Z, {

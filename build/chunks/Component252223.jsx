@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk556638 = require("./556638.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk80568 = require("./80568.js");
+  Chunk666998 = require("./666998.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -43,7 +43,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,7 +68,7 @@ function x(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -149,8 +149,8 @@ function Z(e) {
     hideTooltip: D = false
   } = e;
   (0, _.Z)(null == t ? true : t.id);
-  let x = (null == a ? true : a.discoverable) !== false ? a : null,
-    k = (0, m.Cf)(x),
+  let L = (null == a ? true : a.discoverable) !== false ? a : null,
+    k = (0, m.Cf)(L),
     j = (0, E.E)("ActivityStatus", l),
     Z = i.useMemo(() => {
       var e, t;
@@ -180,7 +180,7 @@ function Z(e) {
     W = (null == t ? true : t.bot) === true,
     K = (0, c.e7)([y.Z], () => y.Z.isBlockedOrIgnored(null == t ? true : t.id)),
     z = (null == Z ? true : Z.state) != null,
-    q = null != x,
+    q = null != L,
     X = !q && null != l,
     Q = H.length + (q || X ? 1 : 0),
     J = Q > 1,
@@ -194,8 +194,8 @@ function Z(e) {
   let et = function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
         t = true === e || D;
-      if (null != x) return (0, r.jsx)(S.Z, {
-        stream: x,
+      if (null != L) return (0, r.jsx)(T.Z, {
+        stream: L,
         game: Y,
         textVariant: "text-".concat(h, "/medium"),
         textClassName: d,
@@ -231,16 +231,16 @@ function Z(e) {
           hideText: false,
           canTruncate: false
         };
-      return null != x && e.push((0, r.jsx)(S.Z, M(L({
-        stream: x,
+      return null != L && e.push((0, r.jsx)(T.Z, M(x({
+        stream: L,
         game: null == n ? true : n.find(f.Z)
       }, t), {
         showChannelName: true
       }), "stream")), H.forEach((n, i) => {
-        e.push((0, r.jsx)(A.Z, L({
+        e.push((0, r.jsx)(A.Z, x({
           activity: n
         }, t), "activity-".concat(i)))
-      }), X && e.push((0, r.jsx)(C.Z, M(L({
+      }), X && e.push((0, r.jsx)(C.Z, M(x({
         channel: l
       }, t), {
         showChannelName: true
@@ -261,7 +261,7 @@ function Z(e) {
       delay: N.X,
       text: en(),
       "aria-label": ee,
-      children: e => (0, r.jsxs)("div", M(L({
+      children: e => (0, r.jsxs)("div", M(x({
         className: o()(w.activityContainer, $ && w.iconOnly)
       }, e), {
         children: [et(true), er()]
@@ -271,7 +271,7 @@ function Z(e) {
       [w.textXs]: "xs" === h,
       [w.textSm]: "sm" === h
     }),
-    eo = () => null == Z && null == V ? null : (0, r.jsx)(T.Z, {
+    eo = () => null == Z && null == V ? null : (0, r.jsx)(S.Z, {
       customStatusActivity: Z,
       textSize: h,
       animateEmoji: O,

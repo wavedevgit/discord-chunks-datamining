@@ -2,7 +2,7 @@
 /** chunk id: 443002, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,21 +24,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk383881 = require("./383881.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk517872 = require("./517872.js");
-let S = function(e) {
+  Chunk436950 = require("./436950.js");
+let T = function(e) {
   let {
     analyticsLocation: t,
     guild: n,
-    onClose: S
-  } = e, [T, A] = i.useState(true), C = i.useRef(false), N = (0, l.Z)(() => Date.now()), {
+    onClose: T
+  } = e, [S, A] = i.useState(true), C = i.useRef(false), N = (0, l.Z)(() => Date.now()), {
     analyticsLocations: R
-  } = (0, c.ZP)(), P = i.useRef(null), w = i.useRef(null), D = i.useRef(null), L = i.useCallback(() => {
+  } = (0, c.ZP)(), P = i.useRef(null), w = i.useRef(null), D = i.useRef(null), x = i.useCallback(() => {
     null != D.current && null != w.current && w.current.scrollTo({
       to: D.current.offsetTop,
       animate: true
     })
-  }, []), x = i.useCallback(() => {
-    null == S || S(), f.default.track(O.rMx.MODAL_DISMISSED, {
+  }, []), L = i.useCallback(() => {
+    null == T || T(), f.default.track(O.rMx.MODAL_DISMISSED, {
       type: O.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: R,
       location_section: t.section,
@@ -46,7 +46,7 @@ let S = function(e) {
       guild_id: n.id,
       duration_open_ms: Date.now() - N
     })
-  }, [S, t, R, N, n.id]), M = i.useCallback(e => {
+  }, [T, t, R, N, n.id]), M = i.useCallback(e => {
     e && !C.current && (f.default.track(O.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: O.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: R,
@@ -65,17 +65,17 @@ let S = function(e) {
     })
   }, [n.id, t, R]), i.useEffect(() => {
     function e(e) {
-      "Escape" === e.key && x()
+      "Escape" === e.key && L()
     }
     return window.addEventListener("keydown", e), () => {
       window.removeEventListener("keydown", e)
     }
-  }, [x]), (0, r.jsxs)(r.Fragment, {
-    children: [null != S && (0, r.jsx)("div", {
+  }, [L]), (0, r.jsxs)(r.Fragment, {
+    children: [null != T && (0, r.jsx)("div", {
       className: I.closeIconWrapper,
       children: (0, r.jsx)(s.Z, {
         className: I.closeIcon,
-        closeAction: x,
+        closeAction: L,
         keybind: "ESC",
         variant: s.Z.Variants.BOLD
       })
@@ -89,7 +89,7 @@ let S = function(e) {
           children: [(0, r.jsx)(u.Z, {
             guild: e.guild,
             themeResponsive: false,
-            onButtonClick: L
+            onButtonClick: x
           }), (0, r.jsx)(o.Heading, {
             className: I.heading,
             color: "always-white",
@@ -97,7 +97,7 @@ let S = function(e) {
             children: v.intl.string(v.t.N4sqzL)
           }), (0, r.jsx)(p.Z, {
             guild: n,
-            closeLayer: x,
+            closeLayer: L,
             onCtaVisibilityChange: A
           }), (0, r.jsx)(g.Z, {
             guild: n
@@ -110,7 +110,7 @@ let S = function(e) {
         children: (0, r.jsx)(d.Z, {
           ref: D,
           guild: e.guild,
-          onClose: x
+          onClose: L
         })
       }), (0, r.jsxs)("div", {
         className: I.lowerBody,
@@ -133,8 +133,8 @@ let S = function(e) {
       })]
     }), (0, r.jsx)(m.Z, {
       guild: n,
-      isVisible: !T,
-      closeLayer: x
+      isVisible: !S,
+      closeLayer: L
     })]
   })
 }

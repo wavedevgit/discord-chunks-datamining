@@ -9,7 +9,7 @@ require.d(exports, {
   RW: () => H,
   Y3: () => q,
   Yt: () => R,
-  _I: () => L,
+  _I: () => x,
   _t: () => K,
   a1: () => G,
   bN: () => N,
@@ -77,19 +77,19 @@ function I(e, t) {
   }), e
 }
 
-function S(e) {
+function T(e) {
   return {
     description: e ? b.intl.string(b.t["lSgO/q"]) : b.intl.string(b.t.SxY4IW),
     agreement: e ? b.intl.string(b.t.PBG51l) : b.intl.string(b.t["5B+npG"])
   }
 }
-let T = new Date("06/16/2020"),
+let S = new Date("06/16/2020"),
   A = [Chunk981631.V_K.AGE_RESTRICTED, Chunk981631.V_K.EXPLICIT],
   C = new Set([Chunk723359.L0.NSFW_SERVER, Chunk723359.L0.NSFW_SERVER_INVITE, Chunk723359.L0.NSFW_SERVER_INVITE_EMBED]);
 
 function N() {
   let e = Chunk594174.default.getCurrentUser();
-  return null != module && Chunk709054.default.extractTimestamp(module.id) > T.getTime() && null == module.nsfwAllowed
+  return null != module && Chunk709054.default.extractTimestamp(module.id) > S.getTime() && null == module.nsfwAllowed
 }
 
 function R(e) {
@@ -112,11 +112,11 @@ function D(e) {
   return t && n && (null == e ? true : e.features.has(E.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD))
 }
 
-function L(e) {
-  return null != e && x(f.Z.getGuild(e))
+function x(e) {
+  return null != e && L(f.Z.getGuild(e))
 }
 
-function x(e) {
+function L(e) {
   return null != e && (0, a.u)("age_verification_utils") && (0, o.sf)() && e.features.has(E.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD)
 }
 
@@ -154,7 +154,7 @@ function U(e) {
     d = b.intl.string(n ? b.t.xi46lg : b.t.ZmwvDc);
   if (l) {
     if (u) {
-      let e = S(t);
+      let e = T(t);
       return I(O({
         title: b.intl.string(b.t.MjQbfi)
       }, e), {
@@ -203,7 +203,7 @@ function G(e) {
     });
   if (e === g.L0.JOIN_LARGE_GUILD_UNDERAGE || e === g.L0.ACCESS_LARGE_GUILD_UNDERAGE) {
     let n = e === g.L0.JOIN_LARGE_GUILD_UNDERAGE ? b.t["u/xsK9"] : b.t.MjQbfi,
-      r = S(t);
+      r = T(t);
     return {
       verifyTitle: b.intl.string(n),
       verifyGateDescription: r.description,
@@ -255,7 +255,7 @@ function Y(e, t, n) {
     (0, m.mN)(e);
     return
   }
-  return L(e) ? void(0, m.mN)(g.L0.LARGE_GUILD) : Q() && F(t) ? void(0, m.mN)(null != n ? n : g.L0.NSFW_CHANNEL) : true
+  return x(e) ? void(0, m.mN)(g.L0.LARGE_GUILD) : Q() && F(t) ? void(0, m.mN)(null != n ? n : g.L0.NSFW_CHANNEL) : true
 }
 let W = e => null != e && (e.isNSFW() || (0, c.Y2)(f.Z.getGuild(e.guild_id))),
   K = e => {
@@ -284,7 +284,7 @@ function q(e) {
   return null != h && ((0, s.Tz)({
     guildId: p,
     location: "age-gate-utils"
-  }) && (0, c.Y2)(h) && u || x(h) && a)
+  }) && (0, c.Y2)(h) && u || L(h) && a)
 }
 
 function X(e) {

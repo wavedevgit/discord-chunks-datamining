@@ -27,8 +27,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk30989 = require("./30989.js"),
-  Chunk564355 = require("./564355.js");
+  Chunk276088 = require("./276088.js"),
+  Chunk744114 = require("./744114.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,7 +72,7 @@ function w(e, t) {
 function D(e) {
   return (0, r.jsx)(v.Z, {
     className: C.button,
-    "aria-label": T.intl.string(T.t.Z1RnTk),
+    "aria-label": S.intl.string(S.t.Z1RnTk),
     isActive: false,
     noHover: true,
     onClick: e.onClick,
@@ -86,7 +86,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     Component: t,
     events: n,
@@ -97,7 +97,7 @@ function L(e) {
   };
   return (0, r.jsx)(v.Z, w(R({
     className: C.button,
-    "aria-label": T.intl.string(T.t.Z1RnTk),
+    "aria-label": S.intl.string(S.t.Z1RnTk),
     isActive: false,
     noHover: true,
     onClick: a
@@ -119,7 +119,7 @@ function L(e) {
     })
   }))
 }
-let x = Chunk70956.Z.Millis.DAYS_30;
+let L = Chunk70956.Z.Millis.DAYS_30;
 
 function M(e) {
   var t;
@@ -129,10 +129,10 @@ function M(e) {
     channel: l
   } = e, {
     analyticsLocations: E
-  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [v, T] = i.useState(false), C = (0, a.e7)([m.Z], () => !(null === m.Z || true === m.Z ? true : m.Z.hasLayers())), N = (0, a.e7)([g.default], () => g.default.getCurrentUser()), R = null != N ? b.default.age(N.id) : 0, {
+  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [v, S] = i.useState(false), C = (0, a.e7)([m.Z], () => !(null === m.Z || true === m.Z ? true : m.Z.hasLayers())), N = (0, a.e7)([g.default], () => g.default.getCurrentUser()), R = null != N ? b.default.age(N.id) : 0, {
     giftBoxAnimation: P,
     trinketsAnimation: w
-  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, M = null != n.firstTimeNotice && !s && C && R >= x, [k, j] = (0, f.XR)(M ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), U = null != k, G = v || U, B = (0, y.Ft)(l), Z = (0, p.IH)();
+  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, M = null != n.firstTimeNotice && !s && C && R >= L, [k, j] = (0, f.XR)(M ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), U = null != k, G = v || U, B = (0, y.Ft)(l), Z = (0, p.IH)();
   if (s) return null;
   let F = () => {
       (0, _.Z)({
@@ -149,13 +149,13 @@ function M(e) {
       })
     },
     V = () => {
-      T(false), j(S.L.TAKE_ACTION), F()
+      S(false), j(T.L.TAKE_ACTION), F()
     },
     H = true !== P ? (0, r.jsx)(D, {
       config: P,
       hovered: G,
       onClick: V
-    }) : true !== w && Z ? (0, r.jsx)(L, {
+    }) : true !== w && Z ? (0, r.jsx)(x, {
       config: w,
       hovered: G,
       onClick: V
@@ -166,13 +166,13 @@ function M(e) {
   return (0, r.jsx)("div", {
     className: A.container,
     onMouseEnter: () => {
-      v || T(true)
+      v || S(true)
     },
     onMouseLeave: () => {
-      T(false)
+      S(false)
     },
     children: true !== n.firstTimeNotice && U ? (0, r.jsx)(h.Z, {
-      onComplete: () => T(false),
+      onComplete: () => S(false),
       onCheckItOutClick: F,
       markAsDismissed: j,
       config: n.firstTimeNotice,

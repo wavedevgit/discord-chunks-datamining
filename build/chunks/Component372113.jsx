@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk997267 = require("./997267.js");
+  Chunk868317 = require("./868317.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,7 +55,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,8 +66,8 @@ function L(e, t) {
   return n
 }
 
-function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function L(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -152,7 +152,7 @@ function U(e) {
     questContent: a,
     questContentPosition: o,
     sourceQuestContent: l
-  } = e, c = n >= g.OH.COMPLETED, f = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), _ = (0, s.e7)([E.Z], () => E.Z.isEnrolling(t.id)), p = (0, m.q8)(t), h = (0, m.Vl)(t), b = (0, T.Ks)({
+  } = e, c = n >= g.OH.COMPLETED, f = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), _ = (0, s.e7)([E.Z], () => E.Z.isEnrolling(t.id)), p = (0, m.q8)(t), h = (0, m.Vl)(t), b = (0, S.Ks)({
     progressState: n,
     quest: t,
     questContent: a,
@@ -171,7 +171,7 @@ function U(e) {
       return y ? (0, r.jsx)(G, {
         ctaConfig: b,
         tooltipProps: e
-      }) : (0, r.jsx)(u.Button, x(D({}, e), {
+      }) : (0, r.jsx)(u.Button, L(D({}, e), {
         fullWidth: true,
         variant: "primary",
         disabled: null == b.onClick,
@@ -197,7 +197,7 @@ function G(e) {
     className: o()({
       [P.fullWidthShinyCtaButtonWrapper]: d
     }),
-    children: (0, r.jsx)(u.gtL, x(D({}, a), {
+    children: (0, r.jsx)(u.gtL, L(D({}, a), {
       "data-migration-pending": true,
       fullWidth: true,
       wrapperClassName: P.ctaButtonWrapper,
@@ -206,7 +206,7 @@ function G(e) {
       onClick: null != (t = i.onClick) ? t : true,
       children: i.text
     }))
-  }) : (0, r.jsx)(u.Button, x(D({}, a), {
+  }) : (0, r.jsx)(u.Button, L(D({}, a), {
     fullWidth: true,
     variant: "primary",
     disabled: null == i.onClick,
@@ -224,30 +224,30 @@ let B = e => {
     isQuestExpired: _,
     isExpanded: p,
     isAnimating: y,
-    contentPosition: T,
+    contentPosition: S,
     sourceQuestContent: A
   } = e, N = (0, g._Q)(n), w = (0, g.B6)(null == (t = n.userStatus) ? true : t.completedAt, {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), D = N >= g.OH.ACCEPTED, L = N >= g.OH.COMPLETED, x = (0, m.Xv)(n.config), G = p || y, B = (0, g.t5)(n, C.dr.QUESTS_CARD, a, A), Z = (0, h.O5)(), F = i.useMemo(() => v.r.build(n.config), [n.config]), V = (0, g.Rf)(n), H = (0, O.DD)({
+  }), D = N >= g.OH.ACCEPTED, x = N >= g.OH.COMPLETED, L = (0, m.Xv)(n.config), G = p || y, B = (0, g.t5)(n, C.dr.QUESTS_CARD, a, A), Z = (0, h.O5)(), F = i.useMemo(() => v.r.build(n.config), [n.config]), V = (0, g.Rf)(n), H = (0, O.DD)({
     quest: n,
     taskDetails: V,
     location: C.dr.QUESTS_CARD,
     questContent: b.jn.QUESTS_EMBED,
     sourceQuestContent: A
   }), Y = (0, s.e7)([E.Z], () => null != E.Z.questEnrollmentBlockedUntil, []), W = () => {
-    (0, S.navigateToQuestHome)({
+    (0, T.navigateToQuestHome)({
       fromContent: a,
       questId: n.id
     }), Z({
       questId: n.id,
       questContent: a,
-      questContentPosition: T,
+      questContentPosition: S,
       questContentCTA: h.jZ.LEARN_MORE,
       sourceQuestContent: A
     })
-  }, K = (0, s.e7)([f.default], () => f.default.locale), z = _ && !L;
+  }, K = (0, s.e7)([f.default], () => f.default.locale), z = _ && !x;
   return (0, r.jsx)("div", {
     className: P.root,
     children: (0, r.jsxs)("div", {
@@ -280,7 +280,7 @@ let B = e => {
             location: C.dr.QUESTS_CARD,
             quest: n,
             questContent: a,
-            questContentPosition: T,
+            questContentPosition: S,
             sourceQuestContent: A
           })]
         })
@@ -314,7 +314,7 @@ let B = e => {
           text: R.intl.string(R.t.V293qn)
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
-          onClick: () => (0, S.openQuestMinorEnrollmentBlockModal)(n, a, A),
+          onClick: () => (0, T.openQuestMinorEnrollmentBlockModal)(n, a, A),
           text: R.intl.string(R.t.vY9GgG)
         })]
       }) : (0, r.jsxs)(u.ButtonGroup, {
@@ -329,7 +329,7 @@ let B = e => {
         }), !z && (0, r.jsx)(U, {
           quest: n,
           progressState: N,
-          isCollectibleQuest: x,
+          isCollectibleQuest: L,
           questContent: a,
           sourceQuestContent: A
         })]

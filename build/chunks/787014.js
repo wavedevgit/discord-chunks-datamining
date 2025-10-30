@@ -70,7 +70,7 @@ function p(e) {
     defaultForumLayout: O,
     defaultTagSetting: v,
     iconEmoji: I,
-    themeColor: S
+    themeColor: T
   } = e;
   i.Z.dispatch({
     type: "CHANNEL_SETTINGS_UPDATE",
@@ -96,7 +96,7 @@ function p(e) {
     defaultForumLayout: O,
     defaultTagSetting: v,
     iconEmoji: I,
-    themeColor: S
+    themeColor: T
   })
 }
 async function h(e, t) {
@@ -117,8 +117,8 @@ async function h(e, t) {
     defaultReactionEmoji: O,
     rtcRegion: v,
     videoQualityMode: I,
-    autoArchiveDuration: S,
-    locked: T,
+    autoArchiveDuration: T,
+    locked: S,
     invitable: A,
     availableTags: C,
     defaultSortOrder: N,
@@ -126,7 +126,7 @@ async function h(e, t) {
     defaultTagSetting: P,
     iconEmoji: w,
     themeColor: D
-  } = t, L = s.Z.getChannel(e);
+  } = t, x = s.Z.getChannel(e);
   return i.Z.dispatch({
     type: "CHANNEL_SETTINGS_SUBMIT"
   }), await o.Z.unarchiveThreadIfNecessary(e), r.tn.patch({
@@ -147,8 +147,8 @@ async function h(e, t) {
       template: y,
       rtc_region: v,
       video_quality_mode: I,
-      auto_archive_duration: S,
-      locked: T,
+      auto_archive_duration: T,
+      locked: S,
       invitable: A,
       default_reaction_emoji: null != O ? {
         emoji_id: null == O ? true : O.emojiId,
@@ -177,8 +177,8 @@ async function h(e, t) {
       type: "CHANNEL_SETTINGS_SUBMIT_SUCCESS",
       channelId: e
     });
-    let n = null == L ? true : L.getGuildId();
-    return null == n || (null == L ? true : L.isThread()) || a.Z.checkGuildTemplateDirty(n), t
+    let n = null == x ? true : x.getGuildId();
+    return null == n || (null == x ? true : x.isThread()) || a.Z.checkGuildTemplateDirty(n), t
   }, e => (i.Z.dispatch({
     type: "CHANNEL_SETTINGS_SUBMIT_FAILURE",
     errors: e.body

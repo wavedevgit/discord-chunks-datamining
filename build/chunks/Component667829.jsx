@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk925994 = require("./925994.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk564355 = require("./564355.js");
+  Chunk744114 = require("./744114.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -43,7 +43,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,7 +68,7 @@ function x(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -223,12 +223,12 @@ class U extends Chunk647438.Component {
       useSlate: E,
       spellcheckEnabled: y,
       useNewSlashCommands: O,
-      canOnlyUseTextCommands: S,
-      className: T,
+      canOnlyUseTextCommands: T,
+      className: S,
       id: N,
       required: P,
       maxCharacterCount: D,
-      allowNewLines: x,
+      allowNewLines: L,
       isEditorIdle: k,
       currentAutocompleteType: j,
       "aria-describedby": U,
@@ -240,9 +240,9 @@ class U extends Chunk647438.Component {
       popup: V
     } = this.state, H = {
       channel: Chunk998698,
-      className: o()(Chunk330122, Chunk564355.textArea, {
-        [Chunk564355.textAreaSlate]: Chunk117530,
-        [Chunk564355.textAreaDisabled]: Chunk430742 || F
+      className: o()(Chunk330122, Chunk744114.textArea, {
+        [Chunk744114.textAreaSlate]: Chunk117530,
+        [Chunk744114.textAreaDisabled]: Chunk430742 || F
       }),
       id: Chunk925994,
       placeholder: this.getPlaceholder(),
@@ -259,16 +259,16 @@ class U extends Chunk647438.Component {
       moveSelection: this.handleMoveSelection,
       maybeShowAutocomplete: this.maybeShowAutocomplete,
       hideAutocomplete: this.hideAutocomplete,
-      allowNewLines: x,
+      allowNewLines: L,
       onChange: Chunk166459,
       onResize: Chunk911969,
       onKeyDown: Chunk531643,
       onSubmit: Chunk476326,
       textAreaPaddingClassName: o()({
-        [Chunk564355.textAreaForPostCreation]: Chunk710845 === Chunk541716.Ie.CREATE_FORUM_POST,
-        [Chunk564355.textAreaCustomGift]: Chunk710845 === Chunk541716.Ie.CUSTOM_GIFT,
-        [Chunk564355.textAreaForUserProfile]: Chunk710845 === Chunk541716.Ie.USER_PROFILE,
-        [Chunk564355.textAreaForOverlayInlineReply]: Chunk710845 === Chunk541716.Ie.OVERLAY_INLINE_REPLY
+        [Chunk744114.textAreaForPostCreation]: Chunk710845 === Chunk541716.Ie.CREATE_FORUM_POST,
+        [Chunk744114.textAreaCustomGift]: Chunk710845 === Chunk541716.Ie.CUSTOM_GIFT,
+        [Chunk744114.textAreaForUserProfile]: Chunk710845 === Chunk541716.Ie.USER_PROFILE,
+        [Chunk744114.textAreaForOverlayInlineReply]: Chunk710845 === Chunk541716.Ie.OVERLAY_INLINE_REPLY
       }),
       spellcheckEnabled: Chunk403182,
       useNewSlashCommands: Chunk137058,
@@ -284,14 +284,14 @@ class U extends Chunk647438.Component {
       "aria-describedby": U,
       "aria-labelledby": G,
       "aria-autocomplete": "list"
-    }, Y = Chunk117530 ? (0, Chunk951288.jsx)(Chunk4484.Z, M(L({
+    }, Y = Chunk117530 ? (0, Chunk951288.jsx)(Chunk4484.Z, M(x({
       ref: this.ref
     }, H), {
       type: Chunk710845,
       value: Chunk430742 && !Z ? (0, Chunk752305.JM)("") : Chunk729594,
       canUseCommands: null == (t = Chunk710845.commands) ? true : exports.enabled,
       canOnlyUseTextCommands: Chunk30465
-    })) : (0, Chunk951288.jsx)(Chunk140963.Z, M(L({
+    })) : (0, Chunk951288.jsx)(Chunk140963.Z, M(x({
       ref: this.ref
     }, H), {
       value: Chunk430742 && !Z ? "" : l
@@ -386,10 +386,10 @@ class U extends Chunk647438.Component {
           maxCharacterCount: c,
           type: u
         } = this.props,
-        d = null != i ? (0, T.im)(i) : null,
-        g = (0, T.Mo)(),
+        d = null != i ? (0, S.im)(i) : null,
+        g = (0, S.Mo)(),
         b = null != (r = null != d ? d : g) ? r : a,
-        y = (0, T._K)(i, this._getEditorWindow()) ? a : b;
+        y = (0, S._K)(i, this._getEditorWindow()) ? a : b;
       if (null == l || !y.isPrivate() && !o || y.isPrivate() && y.isManaged()) returnfalse;
       let O = (e, t) => {
           var n, r;
@@ -418,7 +418,7 @@ class U extends Chunk647438.Component {
         v = null != s ? s : c,
         {
           files: I,
-          errors: S
+          errors: T
         } = G(e.clipboardData, u.uploadLongMessages ? v : null);
       return (k("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
@@ -434,7 +434,7 @@ class U extends Chunk647438.Component {
             path: null == t ? true : t.path
           }
         }
-      })), 0 === I.length) ? ((null == S ? true : S.some(e => {
+      })), 0 === I.length) ? ((null == T ? true : T.some(e => {
         let {
           error: t
         } = e;
@@ -443,7 +443,7 @@ class U extends Chunk647438.Component {
         title: P.intl.string(P.t.azO1Pe),
         help: P.intl.string(P.t["Koklr/"])
       }), false) : (e.preventDefault(), e.stopPropagation(), this.saveCurrentText(), O(I), this.focus(), true)
-    }), this._unsubscribe = S.p8.subscribe(e => {
+    }), this._unsubscribe = T.p8.subscribe(e => {
       requestAnimationFrame(() => {
         this.setState({
           popup: e
@@ -452,7 +452,7 @@ class U extends Chunk647438.Component {
     }), this.state = {
       focused: false,
       submitting: false,
-      popup: S.p8.getState()
+      popup: T.p8.getState()
     }
   }
 }

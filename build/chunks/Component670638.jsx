@@ -2,7 +2,7 @@
 /** chunk id: 670638, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => x
+  r: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -86,7 +86,7 @@ function D(e, t) {
   return i
 }
 
-function L(e) {
+function x(e) {
   var t;
   let n = (0, a.e7)([b.Z], () => b.Z.questDeliveryOverride, []),
     u = (0, m.GN)(e.questContent),
@@ -97,16 +97,16 @@ function L(e) {
     w = true === e.showShareLink && (0, m.vB)(e.quest.config),
     {
       handleComplete: D,
-      handleProgress: L,
-      handleResetDismissibilityClick: x,
+      handleProgress: x,
+      handleResetDismissibilityClick: L,
       handleResetStatusClick: M,
       handleOverrideDeliveryClick: k
     } = (0, E.kJ)(e.quest.id),
     j = () => {
-      L(.9 * Math.random() + .03)
+      x(.9 * Math.random() + .03)
     },
     U = i.useCallback(() => {
-      if (e.quest.id === I.V6) return void window.open(_.Z.getArticleURL(S.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
+      if (e.quest.id === I.V6) return void window.open(_.Z.getArticleURL(T.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
       (0, m.nc)(e.quest, {
         content: e.questContent,
         ctaContent: p.jZ.CONTEXT_MENU_OPEN_GAME_LINK,
@@ -174,7 +174,7 @@ function L(e) {
       action: k
     }), [k, e.quest.id, null == n ? true : n.id]),
     Q = i.useCallback(() => {
-      (0, c.uL)(S.Z5c.QUEST_PREVIEW_TOOL_2(e.quest.id))
+      (0, c.uL)(T.Z5c.QUEST_PREVIEW_TOOL_2(e.quest.id))
     }, [e.quest.id]),
     J = e.shouldShowDisclosure && e.quest.id !== I.V6;
   return (0, r.jsxs)(o.v2r, {
@@ -182,7 +182,7 @@ function L(e) {
     onSelect: F,
     navId: "quests-entry",
     "aria-label": A.intl.string(A.t.ogxXGq),
-    onClose: null != (t = null == e ? true : e.onClose) ? t : T.dG,
+    onClose: null != (t = null == e ? true : e.onClose) ? t : S.dG,
     children: [(0, r.jsxs)(o.kSQ, {
       children: [(0, r.jsx)(o.sNh, {
         id: "play-game",
@@ -216,7 +216,7 @@ function L(e) {
       children: [!(z || q) && X, (0, r.jsx)(o.sNh, {
         id: "dismiss",
         label: A.intl.string(A.t.JF6W66),
-        action: x
+        action: L
       }), (0, r.jsx)(o.sNh, {
         id: "enrollment",
         label: A.intl.string(A.t.taqkwK),
@@ -262,7 +262,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     children: t,
     onOpen: n,
@@ -290,14 +290,14 @@ function x(e) {
         closePopout: t
       } = e;
       return s ? (0, r.jsx)(u.Z, {
-        children: (0, r.jsx)(L, P(N({}, _), {
+        children: (0, r.jsx)(x, P(N({}, _), {
           quest: l,
           questContent: c,
           questContentPosition: d,
           onClose: t,
           sourceQuestContent: f
         }))
-      }) : (0, r.jsx)(L, P(N({}, _), {
+      }) : (0, r.jsx)(x, P(N({}, _), {
         quest: l,
         questContent: c,
         questContentPosition: d,

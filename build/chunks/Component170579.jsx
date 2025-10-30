@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk639119 = require("./639119.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk716619 = require("./716619.js");
+  Chunk911419 = require("./911419.js");
 
 function b(e, t) {
   let n = f.ZP.getDefaultPrice(e),
@@ -69,8 +69,8 @@ let y = e => {
         onClose: O,
         isGift: v,
         upgradeToPremiumType: I,
-        className: S,
-        showTrialBadge: T = false,
+        className: T,
+        showTrialBadge: S = false,
         showDiscountBadge: A = false
       } = e,
       C = I === m.PremiumTypes.TIER_2;
@@ -82,8 +82,8 @@ let y = e => {
       className: a()({
         [E.headerBackground]: !C,
         [E.tier2HeaderBackground]: C
-      }, S),
-      children: [(T || A) && (0, r.jsx)(d.Z, {
+      }, T),
+      children: [(S || A) && (0, r.jsx)(d.Z, {
         className: E.trialBadgeSparkles
       }), g(), (0, r.jsxs)(s.Z, {
         align: s.Z.Align.START,
@@ -94,7 +94,7 @@ let y = e => {
             className: a()(E.headerIcon, {
               [E.nonTier2]: !C
             })
-          }), (T || A) && (0, r.jsx)(y, {
+          }), (S || A) && (0, r.jsx)(y, {
             isTier0: I === m.PremiumTypes.TIER_0,
             discountAmount: A ? R : true
           })]

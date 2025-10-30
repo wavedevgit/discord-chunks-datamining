@@ -3,10 +3,10 @@
 "use strict";
 require.r(exports), require.d(exports, {
   USER_SETTINGS_MODAL_KEY: () => b,
-  getUserSettingsSectionsByWebUserSettings: () => S,
+  getUserSettingsSectionsByWebUserSettings: () => T,
   getWebUserSettingsByUserSettingsSections: () => I,
   openUserSettings: () => y,
-  openUserSettingsFromParsedUrl: () => T
+  openUserSettingsFromParsedUrl: () => S
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -93,7 +93,7 @@ async function y(e) {
   }) : await (0, i.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("9452"), n.e("75685")]).then(n.bind(n, 245286));
+    } = await Promise.all([n.e("9452"), n.e("13608")]).then(n.bind(n, 245286));
     return n => (0, r.jsx)(t, m(p({}, n), {
       target: e
     }))
@@ -167,14 +167,14 @@ function I() {
   ])
 }
 
-function S() {
+function T() {
   let e = I(),
     t = new Map;
   for (let [n, r] of module.entries()) exports.set(Chunk951288, require);
   return exports
 }
 
-function T(e) {
+function S(e) {
   let {
     match: t,
     urlOrigin: n,

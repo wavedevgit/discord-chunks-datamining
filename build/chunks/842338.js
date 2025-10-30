@@ -28,8 +28,8 @@ function d(e, t, n) {
   } = e, O = e.isDisabled || t.isDisabled, v = t.selectedValue === d, I = e => {
     e.stopPropagation(), t.setSelectedValue(d)
   }, {
-    pressProps: S,
-    isPressed: T
+    pressProps: T,
+    isPressed: S
   } = (0, l.r)({
     onPressStart: h,
     onPressEnd: m,
@@ -56,14 +56,14 @@ function d(e, t, n) {
     focusableProps: N
   } = (0, c.kc)((0, i.d)(e, {
     onFocus: () => t.setLastFocusedValue(d)
-  }), n), R = (0, i.d)(S, N), P = (0, a.z)(e, {
+  }), n), R = (0, i.d)(T, N), P = (0, a.z)(e, {
     labelable: true
   }), w = false;
   null != t.selectedValue ? t.selectedValue === d && (w = 0) : (t.lastFocusedValue === d || null == t.lastFocusedValue) && (w = 0), O && (w = true);
   let {
     name: D,
-    form: L,
-    descriptionId: x,
+    form: x,
+    descriptionId: L,
     errorMessageId: M,
     validationBehavior: k
   } = r.H.get(t);
@@ -78,17 +78,17 @@ function d(e, t, n) {
       ...R,
       type: "radio",
       name: D,
-      form: L,
+      form: x,
       tabIndex: w,
       disabled: O,
       required: t.isRequired && "native" === k,
       checked: v,
       value: d,
       onChange: I,
-      "aria-describedby": [e["aria-describedby"], t.isInvalid ? M : null, x].filter(Boolean).join(" ") || true
+      "aria-describedby": [e["aria-describedby"], t.isInvalid ? M : null, L].filter(Boolean).join(" ") || true
     }),
     isDisabled: O,
     isSelected: v,
-    isPressed: T || C
+    isPressed: S || C
   }
 }

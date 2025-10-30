@@ -24,7 +24,7 @@ var Chunk873546 = require("./873546.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
-  Chunk979905 = require("./979905.js");
+  Chunk477962 = require("./477962.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -48,7 +48,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,8 +59,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -100,16 +100,16 @@ function R(e) {
     innerClassname: g,
     transparent: v = false,
     hidden: I = false,
-    toolbar: S,
-    mobileToolbar: T,
+    toolbar: T,
+    mobileToolbar: S,
     "aria-label": A,
     "aria-labelledby": C,
     scrollable: R,
     role: P,
     hideSearch: w,
     showDivider: D,
-    disableDoubleClick: L
-  } = e, x = null == s || (0, y.AB)(s) ? null : s, M = (0, a.e7)([h.Z], () => h.Z.isInChannel(x) || false), k = (0, a.e7)([c.Z], () => null != x && c.Z.getParticipantsListOpen(x)), {
+    disableDoubleClick: x
+  } = e, L = null == s || (0, y.AB)(s) ? null : s, M = (0, a.e7)([h.Z], () => h.Z.isInChannel(L) || false), k = (0, a.e7)([c.Z], () => null != L && c.Z.getParticipantsListOpen(L)), {
     enabled: j,
     inInbox: U
   } = d.Z.useExperiment({
@@ -121,17 +121,17 @@ function R(e) {
   });
 
   function B() {
-    if (null == S) return null;
+    if (null == T) return null;
     let e = null != s && !w;
-    return i.tq ? T : (0, r.jsxs)(r.Fragment, {
-      children: [S, e && !(0, y.AB)(s) ? (0, r.jsx)(_.ZP, {
+    return i.tq ? S : (0, r.jsxs)(r.Fragment, {
+      children: [T, e && !(0, y.AB)(s) ? (0, r.jsx)(_.ZP, {
         guildId: m,
         channelId: s,
         className: O.search
-      }, null != m ? m : s) : null, D && (0, r.jsx)(E.ZP.Divider, {}), j && !U ? (0, r.jsx)(f.Z, {}) : null, G && M && null != x && !k && l === b.d4z.GROUP_DM && (0, r.jsxs)("div", {
+      }, null != m ? m : s) : null, D && (0, r.jsx)(E.ZP.Divider, {}), j && !U ? (0, r.jsx)(f.Z, {}) : null, G && M && null != L && !k && l === b.d4z.GROUP_DM && (0, r.jsxs)("div", {
         className: O.controlButtonWrapper,
         children: [(0, r.jsx)(E.ZP.Divider, {}), (0, r.jsx)(p.Z, {
-          onClick: () => o.Z.toggleParticipantsList(x, !k)
+          onClick: () => o.Z.toggleParticipantsList(L, !k)
         })]
       })]
     })
@@ -142,7 +142,7 @@ function R(e) {
     toolbar: B(),
     transparent: v,
     hidden: I,
-    onDoubleClick: () => N(L),
+    onDoubleClick: () => N(x),
     "aria-label": A,
     "aria-labelledby": C,
     role: P,
@@ -179,9 +179,9 @@ function w(e) {
   } = (0, l.ZP)(s.Z.HEADER_BAR);
   return (0, r.jsx)(l.Gt, {
     value: i,
-    children: t ? (0, r.jsx)(R, T(I({}, n), {
+    children: t ? (0, r.jsx)(R, S(I({}, n), {
       className: n.className
-    })) : (0, r.jsx)(P, T(I({}, n), {
+    })) : (0, r.jsx)(P, S(I({}, n), {
       className: n.className
     }))
   })

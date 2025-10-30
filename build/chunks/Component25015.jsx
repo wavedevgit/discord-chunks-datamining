@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk479398 = require("./479398.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk491068 = require("./491068.js");
+  Chunk453116 = require("./453116.js");
 let m = Chunk647438.lazy(() => Promise.all([require.e("51889"), require.e("85831")]).then(require.bind(require, 120314)));
 
 function g(e, t) {
@@ -28,8 +28,8 @@ function g(e, t) {
     allowHeading: O = false,
     allowList: v = false,
     allowLinks: I = false,
-    allowDevLinks: S = false,
-    previewLinkTarget: T = false,
+    allowDevLinks: T = false,
+    previewLinkTarget: S = false,
     viewingChannelId: A
   } = t, C = (0, o.p)(), N = a.d.useExperiment({
     location: "useMessageRenderedContent"
@@ -81,11 +81,11 @@ function g(e, t) {
       allowHeading: O,
       allowList: v,
       allowLinks: I,
-      allowDevLinks: S,
-      previewLinkTarget: T,
+      allowDevLinks: T,
+      previewLinkTarget: S,
       shouldFilterKeywords: C,
       viewingChannelId: A,
       allowGameMentions: N
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, g, E, b, y, O, v, I, T, C, S, A, R.enabled, N, P])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, g, E, b, y, O, v, I, S, C, T, A, R.enabled, N, P])
 }

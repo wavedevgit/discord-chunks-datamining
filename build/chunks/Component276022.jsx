@@ -28,7 +28,7 @@ function E(e) {
     guildId: y,
     context: O,
     onItemClick: v
-  } = e, I = null != (t = null == b ? true : b.id) ? t : null == E ? true : E.id, S = p.Z.getGuild(y), T = (0, a.e7)([h.Z], () => null != S ? h.Z.can(m.Plq.MANAGE_GUILD, S) : null), A = true, C = true, N = (0, l.LD)(y, C), R = (0, l.PL)(A, C), P = (0, a.e7)([_.Z], () => null != _.Z.getNewestTokenForApplication(I)), {
+  } = e, I = null != (t = null == b ? true : b.id) ? t : null == E ? true : E.id, T = p.Z.getGuild(y), S = (0, a.e7)([h.Z], () => null != T ? h.Z.can(m.Plq.MANAGE_GUILD, T) : null), A = true, C = true, N = (0, l.LD)(y, C), R = (0, l.PL)(A, C), P = (0, a.e7)([_.Z], () => null != _.Z.getNewestTokenForApplication(I)), {
     isUserApp: w,
     isGuildApp: D
   } = i.useMemo(() => {
@@ -53,10 +53,10 @@ function E(e) {
   i.useEffect(() => {
     n(145260)
   }, []);
-  let L = i.useCallback(() => {
-      (null == S ? true : S.id) != null && (c.Z.open(S.id, m.pNK.INTEGRATIONS), s.Z.setSection(m.b4C.APPLICATION, I), null == v || v())
-    }, [I, null == S ? true : S.id, v]),
-    x = i.useCallback(() => {
+  let x = i.useCallback(() => {
+      (null == T ? true : T.id) != null && (c.Z.open(T.id, m.pNK.INTEGRATIONS), s.Z.setSection(m.b4C.APPLICATION, I), null == v || v())
+    }, [I, null == T ? true : T.id, v]),
+    L = i.useCallback(() => {
       (0, f.openUserSettings)(u.n.AUTHORIZED_APPS_PANEL, {
         section: m.oAB.AUTHORIZED_APPS
       });
@@ -67,13 +67,13 @@ function E(e) {
     }, [b, v, E]);
   if (O === m.IlC.POPOUT) return null;
   let M = [];
-  return D && T && M.push((0, r.jsx)(o.sNh, {
+  return D && S && M.push((0, r.jsx)(o.sNh, {
     id: "manage-server-integration",
     label: g.intl.string(g.t.IuSJT8),
-    action: L
+    action: x
   }, "manage-server-integration")), w && P && M.push((0, r.jsx)(o.sNh, {
     id: "manage-authorized-app",
     label: g.intl.string(g.t.V8ruvz),
-    action: x
+    action: L
   }, "manage-authorized-app")), M
 }

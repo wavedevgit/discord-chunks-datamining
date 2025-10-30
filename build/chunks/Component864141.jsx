@@ -29,7 +29,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk670451 = require("./670451.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk704543 = require("./704543.js");
+  Chunk663907 = require("./663907.js");
 
 function N(e) {
   let {
@@ -50,10 +50,10 @@ function N(e) {
     voiceChannelId: i.id,
     user: t,
     analyticsLocations: w
-  }), L = (0, m.Z)({
+  }), x = (0, m.Z)({
     userId: t.id,
     onAction: D
-  }), x = (0, o.e7)([f.Z], () => f.Z.getGuild(i.guild_id)), M = (0, p.Z)(i), k = (0, d.ZP)(i), {
+  }), L = (0, o.e7)([f.Z], () => f.Z.getGuild(i.guild_id)), M = (0, p.Z)(i), k = (0, d.ZP)(i), {
     channelStatusEnabled: j
   } = (0, _.D)({
     location: "UserProfileVoiceActivityCard"
@@ -77,7 +77,7 @@ function N(e) {
   return (0, r.jsx)(u.Gt, {
     value: w,
     children: (0, r.jsxs)(E.Z, {
-      ref: L,
+      ref: x,
       className: a()(C.card, N),
       onAction: D,
       onClose: R,
@@ -85,7 +85,7 @@ function N(e) {
       children: [(0, r.jsx)(b.Z, {
         text: B,
         tags: U(),
-        contextMenu: (0, r.jsx)(S.Z, {
+        contextMenu: (0, r.jsx)(T.Z, {
           display: "voice",
           user: t,
           onClose: R
@@ -101,17 +101,17 @@ function N(e) {
             className: C.details,
             children: [(0, r.jsx)(y.Z, {
               channel: i,
-              guild: x,
+              guild: L,
               onAction: D,
               onClose: R
             }), j && i.isGuildVoice() && (0, r.jsx)(v.Z, {
               voiceChannel: i,
               onAction: D,
               onClose: R
-            }), P === T.l.MODAL_V2 && G()]
-          }), P === T.l.MODAL && G()]
+            }), P === S.l.MODAL_V2 && G()]
+          }), P === S.l.MODAL && G()]
         })
-      }), P !== T.l.MODAL && P !== T.l.MODAL_V2 && G()]
+      }), P !== S.l.MODAL && P !== S.l.MODAL_V2 && G()]
     })
   })
 }

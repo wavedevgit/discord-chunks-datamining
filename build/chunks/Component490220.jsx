@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk643879 = require("./643879.js"),
   Chunk25990 = require("./25990.js"),
   Chunk678135 = require("./678135.jsx"),
-  Chunk575169 = require("./575169.js");
+  Chunk725412 = require("./725412.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -52,25 +52,25 @@ function p(e) {
     pendingPronouns: O,
     pendingBio: v,
     tryItOutThemeColors: I,
-    tryItOutAvatar: S,
-    tryItOutBanner: T,
+    tryItOutAvatar: T,
+    tryItOutBanner: S,
     tryItOutAvatarDecoration: A,
     tryItOutDisplayNameStyles: C
   } = (0, a.cj)([c.Z], () => _({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), N = (0, l.SD)({
     userId: f.id,
-    image: null != S ? S : g
+    image: null != T ? T : g
   }), R = (0, s.Z)(A, false);
   return (0, r.jsx)(u.Z, {
     containerClassName: h,
     user: f,
     pendingPronouns: O,
     pendingBio: v,
-    pendingBanner: null != (t = null != T ? T : E) ? t : n(466045),
+    pendingBanner: null != (t = null != S ? S : E) ? t : n(466045),
     pendingDisplayNameStyles: null != C ? C : b,
     pendingAvatar: N,
     pendingThemeColors: null != I ? I : y,
     pendingAvatarDecoration: R,
-    avatarClassName: null != S || null != g || m.enabled ? true : d.spinningAvatar,
+    avatarClassName: null != T || null != g || m.enabled ? true : d.spinningAvatar,
     canUsePremiumCustomization: true,
     isTryItOutFlow: true,
     disabledInputs: p,

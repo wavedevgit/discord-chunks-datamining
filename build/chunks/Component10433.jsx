@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk370210 = require("./370210.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk923289 = require("./923289.js");
+  Chunk974766 = require("./974766.js");
 
 function E(e) {
   let {
@@ -27,9 +27,9 @@ function E(e) {
   } = e, [E, b, y] = (0, s.Wu)([p.Z], () => [p.Z.getApplication(t), p.Z.isInvalidApplication(t), p.Z.getApplicationFetchState(t)], [t]), O = (0, s.e7)([d.Z], () => {
     var e;
     return null != (e = d.Z.getGuildId()) ? e : true
-  }), [v, I] = i.useState(false), S = i.useCallback(e => {
+  }), [v, I] = i.useState(false), T = i.useCallback(e => {
     e && I(true)
-  }, []), T = (0, a.O)(S), A = i.useCallback(() => {
+  }, []), S = (0, a.O)(T), A = i.useCallback(() => {
     f.default.track(h.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: t,
       device_platform: o.tq ? "mobile_web" : "desktop_web",
@@ -50,7 +50,7 @@ function E(e) {
       channel_id: n.channel_id
     })
   }, [v, O, b, n.author.id, n.channel_id]), b) ? (0, r.jsxs)(c.Z, {
-    containerRef: T,
+    containerRef: S,
     children: [(0, r.jsx)(c.Z.Header, {
       text: m.intl.string(m.t.j4KtLa)
     }), (0, r.jsx)(c.Z.Body, {
@@ -66,7 +66,7 @@ function E(e) {
       })
     })]
   }) : null == E || y === p.M.FETCHING ? (0, r.jsxs)(c.Z, {
-    containerRef: T,
+    containerRef: S,
     children: [(0, r.jsx)(c.Z.Header, {
       text: m.intl.string(m.t.m9hXGR)
     }), (0, r.jsx)(c.Z.Body, {

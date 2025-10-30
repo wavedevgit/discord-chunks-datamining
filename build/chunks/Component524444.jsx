@@ -59,7 +59,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk814249 = require("./814249.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk180376 = require("./180376.js");
+  Chunk599610 = require("./599610.js");
 
 function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -146,7 +146,7 @@ function J(e) {
   let E = X(t),
     b = Q(n);
   a = null == a ? M.FC : a, s = null == s ? M.rs : s;
-  let [y, O] = i.useState(true), [v, S] = i.useState(false), T = h === j.hV.MOSAIC || true === p, A = (y || v) && !f && N.H1.getSetting() && null != l && "" !== l && true !== _, C = e => {
+  let [y, O] = i.useState(true), [v, T] = i.useState(false), S = h === j.hV.MOSAIC || true === p, A = (y || v) && !f && N.H1.getSetting() && null != l && "" !== l && true !== _, C = e => {
     let {
       altText: t
     } = e;
@@ -180,7 +180,7 @@ function J(e) {
       renderLinkComponent: er,
       renderOverlayContent: u,
       volume: a
-    })), null != c && c(), T && A && (0, r.jsx)("div", {
+    })), null != c && c(), S && A && (0, r.jsx)("div", {
       className: F.mediaMosaicVideoAltTextContainer,
       children: (0, r.jsx)(d.yRy, {
         targetElementRef: R,
@@ -194,8 +194,8 @@ function J(e) {
             type: "button",
             ref: R,
             "aria-label": Z.intl.string(Z.t.fSiQ3A),
-            onMouseEnter: () => S(true),
-            onMouseLeave: () => S(false),
+            onMouseEnter: () => T(true),
+            onMouseLeave: () => T(false),
             className: o()(F.mediaMosaicAltText, {
               [F.mediaMosaicVideoAltText]: true,
               [F.reducedSize]: m
@@ -204,7 +204,7 @@ function J(e) {
           }))
         })
       })
-    }), !T && A && (0, r.jsx)("span", {
+    }), !S && A && (0, r.jsx)("span", {
       className: F.altText,
       children: l
     })]
@@ -333,7 +333,7 @@ function ei(e) {
     renderAdjacentContent: t
   } = e, n = K(e, ["renderAdjacentContent"]);
   return (0, r.jsxs)(i.Fragment, {
-    children: [(0, r.jsx)(S.Z, H({}, n)), null != t && t()]
+    children: [(0, r.jsx)(T.Z, H({}, n)), null != t && t()]
   })
 }
 
@@ -351,7 +351,7 @@ function es(e) {
     case 1:
       return Z.intl.string(Z.t["1J6Xq7"]);
     default:
-      return (0, x.vE)(e)
+      return (0, L.vE)(e)
   }
 }
 
@@ -362,7 +362,7 @@ function el(e) {
     case 1:
       return Z.intl.string(Z.t.k3RM8z);
     default:
-      return (0, x.vE)(e)
+      return (0, L.vE)(e)
   }
 }
 let ec = e => {
@@ -495,12 +495,12 @@ function ef(e) {
     scrollManager: h
   } = e, {
     disableInteractions: E
-  } = i.useContext(b.G), [y, v] = i.useState(null), I = i.useRef(null), [S, N] = i.useState(null), R = i.useRef(null), M = (0, u.Wu)([A.Z], () => {
+  } = i.useContext(b.G), [y, v] = i.useState(null), I = i.useRef(null), [T, N] = i.useState(null), R = i.useRef(null), M = (0, u.Wu)([A.Z], () => {
     var e;
     return null != (e = A.Z.summaries(s.id)) ? e : []
   }, [s]), j = (0, g.Z)(M);
   i.useEffect(() => {
-    l().isEqual(j, M) || L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
+    l().isEqual(j, M) || x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
       num_summaries: M.length,
       message_counts: M.map(e => e.count),
       start_message_ids: M.map(e => e.startId),
@@ -518,7 +518,7 @@ function ef(e) {
         return null == (t = e.people) ? true : t.map(e => {
           var t;
           return null != (t = w.default.getUser(e)) ? t : null
-        }).filter(x.lm)
+        }).filter(L.lm)
       })) ? e : []
     }, [M], ep),
     V = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
@@ -529,7 +529,7 @@ function ef(e) {
       v(null != (t = null == e ? true : e.id) ? t : null)
     }, 64), [v]),
     W = i.useMemo(() => l().throttle(() => {
-      (0, T.yK)(null)
+      (0, S.yK)(null)
     }, 1200, {
       trailing: false
     }), []),
@@ -538,7 +538,7 @@ function ef(e) {
     }, [Y, W]),
     [z, q] = i.useState(false),
     X = i.useCallback(() => {
-      L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
+      x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
         topics_dropdown_open: !z,
         num_summaries: M.length,
         message_counts: M.map(e => e.count),
@@ -554,13 +554,13 @@ function ef(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : G.DZ.PILL_DROPDOWN,
         n = M[e];
       if (null == n) return;
-      (0, T.wv)(s.id, n.id), (0, T.yK)(s.id, n.id);
+      (0, S.wv)(s.id, n.id), (0, S.yK)(s.id, n.id);
       let r = () => {
         h.removeScrollCompleteCallback(r), setTimeout(() => {
           h.addAutomaticAnchorCallback(K, false)
         }, 100)
       };
-      h.removeAutomaticAnchorCallback(K), h.addScrollCompleteCallback(r), L.default.track(U.rMx.SUMMARIES_TOPIC_CLICKED, {
+      h.removeAutomaticAnchorCallback(K), h.addScrollCompleteCallback(r), x.default.track(U.rMx.SUMMARIES_TOPIC_CLICKED, {
         source: t,
         message_id: n.startId,
         guild_id: s.guild_id,
@@ -582,16 +582,16 @@ function ef(e) {
       null != n && N(n)
     }, []);
   i.useEffect(() => {
-    if (null != S && z) {
+    if (null != T && z) {
       var e;
       null == (e = R.current) || e.scrollTo({
-        top: S
+        top: T
       })
     }
-  }, [S, z]);
+  }, [T, z]);
   let $ = i.useCallback(e => {
     var t;
-    (0, c.kK)(e.target) && (null == (t = I.current) ? true : t.contains(e.target)) || (z && L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
+    (0, c.kK)(e.target) && (null == (t = I.current) ? true : t.contains(e.target)) || (z && x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
       topics_dropdown_open: false,
       num_summaries: M.length,
       message_counts: M.map(e => e.count),
@@ -606,7 +606,7 @@ function ef(e) {
   i.useEffect(() => (h.addAutomaticAnchorCallback(K), () => {
     h.removeAutomaticAnchorCallback(K)
   }), [h, K]), i.useEffect(() => {
-    (0, T.G1)(s.id)
+    (0, S.G1)(s.id)
   }, [s.id]), i.useEffect(() => (document.addEventListener("mousedown", $), () => {
     document.removeEventListener("mousedown", $)
   }), [$]);
@@ -738,12 +738,12 @@ function eh(e) {
     scrollManager: _
   } = e, {
     disableInteractions: p
-  } = i.useContext(b.G), [h, E] = i.useState(null), y = i.useRef(null), [v, I] = i.useState(null), S = i.useRef(null), N = (0, u.Wu)([A.Z], () => {
+  } = i.useContext(b.G), [h, E] = i.useState(null), y = i.useRef(null), [v, I] = i.useState(null), T = i.useRef(null), N = (0, u.Wu)([A.Z], () => {
     var e;
     return null != (e = A.Z.summaries(s.id)) ? e : []
   }, [s]), R = (0, g.Z)(N);
   i.useEffect(() => {
-    l().isEqual(R, N) || L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
+    l().isEqual(R, N) || x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
       num_summaries: N.length,
       message_counts: N.map(e => e.count),
       start_message_ids: N.map(e => e.startId),
@@ -761,7 +761,7 @@ function eh(e) {
         return null == (t = e.people) ? true : t.map(e => {
           var t;
           return null != (t = w.default.getUser(e)) ? t : null
-        }).filter(x.lm)
+        }).filter(L.lm)
       })) ? e : []
     }, [N], ep),
     M = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
@@ -774,7 +774,7 @@ function eh(e) {
       E(null != (t = null == e ? true : e.id) ? t : null)
     }, 64), [E]),
     H = i.useMemo(() => l().throttle(() => {
-      (0, T.yK)(null)
+      (0, S.yK)(null)
     }, 1200, {
       trailing: false
     }), []),
@@ -783,7 +783,7 @@ function eh(e) {
     }, [V, H]),
     [W, K] = i.useState(false),
     z = i.useCallback(() => {
-      L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
+      x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
         topics_dropdown_open: !W,
         num_summaries: N.length,
         message_counts: N.map(e => e.count),
@@ -799,13 +799,13 @@ function eh(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : G.DZ.PILL_DROPDOWN,
         n = N[e];
       if (null == n) return;
-      (0, T.wv)(s.id, n.id), (0, T.yK)(s.id, n.id);
+      (0, S.wv)(s.id, n.id), (0, S.yK)(s.id, n.id);
       let r = () => {
         _.removeScrollCompleteCallback(r), setTimeout(() => {
           _.addAutomaticAnchorCallback(Y, false)
         }, 100)
       };
-      _.removeAutomaticAnchorCallback(Y), _.addScrollCompleteCallback(r), L.default.track(U.rMx.SUMMARIES_TOPIC_CLICKED, {
+      _.removeAutomaticAnchorCallback(Y), _.addScrollCompleteCallback(r), x.default.track(U.rMx.SUMMARIES_TOPIC_CLICKED, {
         source: t,
         message_id: n.startId,
         guild_id: s.guild_id,
@@ -829,20 +829,20 @@ function eh(e) {
     J = i.useCallback(e => {
       var t;
       K(e);
-      let n = null == (t = S.current) ? true : t.scrollTop;
+      let n = null == (t = T.current) ? true : t.scrollTop;
       null != n && I(n)
     }, []);
   i.useEffect(() => {
     if (null != v && W) {
       var e;
-      null == (e = S.current) || e.scrollTo({
+      null == (e = T.current) || e.scrollTo({
         top: v
       })
     }
   }, [v, W]);
   let $ = i.useCallback(e => {
     var t;
-    (0, c.kK)(e.target) && (null == (t = y.current) ? true : t.contains(e.target)) || (W && L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
+    (0, c.kK)(e.target) && (null == (t = y.current) ? true : t.contains(e.target)) || (W && x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
       topics_dropdown_open: false,
       num_summaries: N.length,
       message_counts: N.map(e => e.count),
@@ -857,7 +857,7 @@ function eh(e) {
   i.useEffect(() => (_.addAutomaticAnchorCallback(Y), () => {
     _.removeAutomaticAnchorCallback(Y)
   }), [_, Y]), i.useEffect(() => {
-    (0, T.G1)(s.id)
+    (0, S.G1)(s.id)
   }, [s.id]), i.useEffect(() => (document.addEventListener("mousedown", $), () => {
     document.removeEventListener("mousedown", $)
   }), [$]);
@@ -955,7 +955,7 @@ function eh(e) {
           })
         })]
       }), (0, r.jsx)(d.Ttm, {
-        ref: S,
+        ref: T,
         className: F.topicsScroller,
         fade: true,
         children: ee

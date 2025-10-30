@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk486324 = require("./486324.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk199306 = require("./199306.js");
+  Chunk605690 = require("./605690.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,12 +65,12 @@ function D(e, t) {
   return n
 }
 
-function L(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = 25,
+let L = 25,
   M = 720;
 
 function k() {
@@ -164,7 +164,7 @@ function G(e) {
     hotspotLocation: y
   } = e, v = (0, d.O)(), {
     analyticsLocations: I
-  } = (0, p.ZP)(_.Z.VIDEO_BACKGROUND_IMAGE_OPTION), T = (0, s.e7)([g.Z], () => null != y && g.Z.hasHotspot(y)), A = b ? (0, r.jsx)(h.Z, {
+  } = (0, p.ZP)(_.Z.VIDEO_BACKGROUND_IMAGE_OPTION), S = (0, s.e7)([g.Z], () => null != y && g.Z.hasHotspot(y)), A = b ? (0, r.jsx)(h.Z, {
     className: R.backgroundImageOption,
     src: i,
     loop: true,
@@ -177,7 +177,7 @@ function G(e) {
   });
 
   function P() {
-    null != y && T && (m.Kw(y), E.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
+    null != y && S && (m.Kw(y), E.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
       type: C.cd.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
       location: v.location,
       location_stack: I
@@ -192,7 +192,7 @@ function G(e) {
       let {
         default: e
       } = await n.e("99414").then(n.bind(n, 187658));
-      return n => (0, r.jsx)(e, L(w({}, n), {
+      return n => (0, r.jsx)(e, x(w({}, n), {
         backgroundOption: t,
         optionIsInUse: a
       }))
@@ -210,7 +210,7 @@ function G(e) {
         size: "xxs",
         color: "currentColor"
       })
-    }) : null, T && (0, r.jsx)(c.IGR, {
+    }) : null, S && (0, r.jsx)(c.IGR, {
       text: N.intl.string(N.t.y2b7CA),
       className: R.newTextBadge
     })]
@@ -219,11 +219,11 @@ function G(e) {
 
 function B() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk199306.customBackgroundTooltip,
+    className: Chunk605690.customBackgroundTooltip,
     children: [(0, Chunk951288.jsx)(Chunk481060.SrA, {
       size: "md",
       color: "currentColor",
-      className: Chunk199306.customBackgroundTooltipIcon
+      className: Chunk605690.customBackgroundTooltipIcon
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t["T+yRY3"])
@@ -236,10 +236,10 @@ function Z(e) {
     onClick: t,
     tooltipText: n,
     disabled: i = false
-  } = e, a = (0, s.e7)([g.Z], () => g.Z.hasHotspot(T.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
+  } = e, a = (0, s.e7)([g.Z], () => g.Z.hasHotspot(S.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
 
   function o() {
-    m.Kw(T.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
+    m.Kw(S.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
   }
   let l = a ? N.intl.string(N.t["5TUJOv"]) : n;
   return (0, r.jsxs)(c.jSM, {
@@ -282,7 +282,7 @@ function F(e) {
     analyticsLocations: i
   } = (0, p.ZP)(_.Z.VIDEO_BACKGROUND_CUSTOM_UPSELL);
   return (0, f.ZP)(() => {
-    E.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
+    E.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
       type: C.cd.VIDEO_BACKGROUNDS_INLINE,
       location: n.location,
       location_stack: i
@@ -298,14 +298,14 @@ function V(e) {
     onAddBackgroundImage: t,
     disabled: i
   } = e, a = (0, c.vRw)(), o = i ? N.intl.formatToPlainString(N.t.ykGFeD, {
-    maxCustomBackgrounds: x
+    maxCustomBackgrounds: L
   }) : N.intl.string(N.t.Qx0tFc), s = k();
 
   function l() {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("91689"), n.e("89289"), n.e("53488")]).then(n.bind(n, 28130));
+      } = await Promise.all([n.e("91689"), n.e("89289"), n.e("50893")]).then(n.bind(n, 28130));
       return n => (0, r.jsx)(e, w({
         maxFileSizeBytes: I.SJ,
         onComplete: e => {
@@ -343,7 +343,7 @@ function H(e) {
     onUpsellClick: s,
     onAddBackgroundImage: u,
     smallerOptions: d
-  } = e, f = i.useMemo(() => n.sort((e, t) => null == e.last_used || null == t.last_used ? y.default.compare(t.id, e.id) : new Date(t.last_used).getTime() - new Date(e.last_used).getTime()), [n]), h = f.length >= x, {
+  } = e, f = i.useMemo(() => n.sort((e, t) => null == e.last_used || null == t.last_used ? y.default.compare(t.id, e.id) : new Date(t.last_used).getTime() - new Date(e.last_used).getTime()), [n]), h = f.length >= L, {
     analyticsLocations: m
   } = (0, p.ZP)(_.Z.VIDEO_BACKGROUND_OPTIONS), g = Object.values((0, v.Z)()).sort((e, t) => I.E1[e.id] - I.E1[t.id]);
   return (0, r.jsx)(p.Gt, {

@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk741570 = require("./741570.js"),
   Chunk584973 = require("./584973.jsx"),
   Chunk556638 = require("./556638.js"),
-  Chunk80568 = require("./80568.js");
+  Chunk666998 = require("./666998.js");
 let h = 14;
 
 function m(e) {
@@ -32,15 +32,15 @@ function m(e) {
     animateEmoji: O = true,
     hideEmoji: v = false,
     hideTooltip: I = false
-  } = e, S = (0, d.E)("ActivityStatus", g), {
-    defaultStatusVariant: T
+  } = e, T = (0, d.E)("ActivityStatus", g), {
+    defaultStatusVariant: S
   } = (0, l.bN)({
     guildId: null == g ? true : g.guild_id,
     location: "CustomStatusActivityStatus"
   });
   if (null == t && null == E) return null;
-  let A = null != E && S,
-    C = A && null != b ? (0, c.O8)(b, E, T) : null,
+  let A = null != E && T,
+    C = A && null != b ? (0, c.O8)(b, E, S) : null,
     N = null == t ? true : t.emoji,
     R = null != C ? C : null == t ? true : t.state,
     P = null != R && "" !== R,
@@ -57,7 +57,7 @@ function m(e) {
     hideTooltip: I || P
   }));
   let D = P && (null != w ? " ".concat(R) : R),
-    L = () => {
+    x = () => {
       let e = null != N && !v && !P;
       return I || e ? (0, r.jsxs)(r.Fragment, {
         children: [w, D]
@@ -71,6 +71,6 @@ function m(e) {
     variant: "text-".concat(y, "/medium"),
     color: "none",
     className: a()(p.truncated, n),
-    children: L()
+    children: x()
   })
 }

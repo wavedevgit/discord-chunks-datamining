@@ -40,26 +40,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk22665 = require("./22665.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
-  Chunk953278 = require("./953278.js");
+  Chunk417801 = require("./417801.js");
 
 function B(e) {
   let {
     message: t,
     snapshot: n,
     index: u
-  } = e, f = i.useMemo(() => new d.r(t, n, u), [t, n, u]), p = (0, o.e7)([N.Z, x.default, D.Z, w.Z, P.Z, _.Z], () => f.getForwardInfo(N.Z, x.default, D.Z, w.Z, P.Z, _.Z).footerInfo, [f], s.Z), h = i.useCallback(() => {
+  } = e, f = i.useMemo(() => new d.r(t, n, u), [t, n, u]), p = (0, o.e7)([N.Z, L.default, D.Z, w.Z, P.Z, _.Z], () => f.getForwardInfo(N.Z, L.default, D.Z, w.Z, P.Z, _.Z).footerInfo, [f], s.Z), h = i.useCallback(() => {
     var e, n;
     let r = N.Z.getChannel(t.channel_id),
       i = P.Z.getGuild(null == r ? true : r.guild_id),
       a = null == (e = t.messageReference) ? true : e.channel_id,
-      o = L.Z.getCurrentlySelectedChannelId(),
+      o = x.Z.getCurrentlySelectedChannelId(),
       s = C.ZP.getCurrentSidebarChannelId(null == (n = t.messageReference) ? true : n.channel_id),
       l = o === a && s === (null == r ? true : r.id);
-    null == r || null == i || l || null == a || (T.Z.openModReportAsSidebar({
+    null == r || null == i || l || null == a || (S.Z.openModReportAsSidebar({
       channelId: r.id,
       baseChannelId: a,
       guildId: r.guild_id
-    }), (0, S.Kh)(a), M.default.track(j.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+    }), (0, T.Kh)(a), M.default.track(j.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
       moderator_report_id: t.channel_id,
       destination_channel_id: a,
       destination_message_id: t.id
@@ -180,7 +180,7 @@ function V(e) {
     y = (0, p.A)((null != (a = h.editedTimestamp) ? a : h.timestamp).valueOf()),
     {
       content: O,
-      hasSpoilerEmbeds: S
+      hasSpoilerEmbeds: T
     } = (0, v.Z)(h, {
       hideSimpleEmbedContent: E,
       isInteracting: false,
@@ -191,24 +191,24 @@ function V(e) {
       allowDevLinks: b,
       previewLinkTarget: true
     }),
-    T = (0, o.e7)([N.Z], () => N.Z.getChannel(s.channel_id));
-  return null == T ? null : (0, r.jsx)("div", {
+    S = (0, o.e7)([N.Z], () => N.Z.getChannel(s.channel_id));
+  return null == S ? null : (0, r.jsx)("div", {
     className: G.container,
     children: (0, r.jsxs)("div", {
       className: G.content,
       children: [(0, r.jsx)(F, {
         mergedMessageRecord: h,
         content: O,
-        channel: T,
+        channel: S,
         reportingUserId: null == l || null == (n = l.moderatorReport) ? true : n.reporting_user_id,
         reportedTimestamp: s.timestamp
       }), (0, I.Z)({
         channelMessageProps: {
           message: h,
-          channel: T,
+          channel: S,
           compact: false
         },
-        hasSpoilerEmbeds: S,
+        hasSpoilerEmbeds: T,
         isInteracting: false,
         isMessageSnapshot: true,
         renderThreadAccessory: false,

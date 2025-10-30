@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk21023 = require("./21023.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk17355 = require("./17355.js"),
+  Chunk213599 = require("./213599.js"),
   Chunk102655 = require("./102655.js"),
   Chunk768236 = require("./768236.js"),
   Chunk314907 = require("./314907.js"),
@@ -81,14 +81,14 @@ let Z = () => {
     let e = (0, Chunk346497.W)();
     return (0, Chunk951288.jsx)(Chunk382791.Cy, {
       text: module,
-      className: Chunk17355.bogoPillWithSparkles,
+      className: Chunk213599.bogoPillWithSparkles,
       colorOptions: Chunk382791.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     })
   },
   F = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk17355.mostPopularPill,
+    className: Chunk213599.mostPopularPill,
     children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
-      className: Chunk17355.mostPopularText,
+      className: Chunk213599.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
       children: Chunk388032.intl.string(Chunk388032.t["o/oRJB"])
     })
@@ -98,7 +98,7 @@ let Z = () => {
         premiumType: n
       } = e,
       i = (0, d.ZP)();
-    t = n === P.PremiumTypes.TIER_0 ? (0, l.wj)(i) ? L : x : (0, l.wj)(i) ? M : k;
+    t = n === P.PremiumTypes.TIER_0 ? (0, l.wj)(i) ? x : L : (0, l.wj)(i) ? M : k;
     let a = (0, E.Px)(n);
     return (0, r.jsx)("img", {
       src: t,
@@ -172,8 +172,8 @@ let Z = () => {
     let n, {
         className: a,
         hideCTAs: C = false,
-        headingOverride: L,
-        hidePill: x = false,
+        headingOverride: x,
+        hidePill: L = false,
         selectedPlanColumnClassName: M,
         selectedPlanTier: k = P.PremiumTypes.TIER_2
       } = e,
@@ -229,34 +229,34 @@ let Z = () => {
     }) : es.push({
       label: null,
       column1: (0, r.jsxs)(r.Fragment, {
-        children: [J === P.Si.TIER_2 || el ? (0, r.jsx)(T.Z, {
+        children: [J === P.Si.TIER_2 || el ? (0, r.jsx)(S.Z, {
           className: D.button,
           subscriptionTier: P.Si.TIER_0,
           showIcon: false,
           look: c.iL.OUTLINED,
           color: z ? c.Tt.BRAND : c.Tt.WHITE
-        }) : (0, r.jsx)(T.Z, {
+        }) : (0, r.jsx)(S.Z, {
           className: D.button,
           subscriptionTier: P.Si.TIER_0,
           showIcon: false
-        }), $ === P.PremiumTypes.TIER_2 || null != J ? null : (0, r.jsx)(S.Z, {
+        }), $ === P.PremiumTypes.TIER_2 || null != J ? null : (0, r.jsx)(T.Z, {
           className: D.button,
           subscriptionTier: P.Si.TIER_0
         })]
       }),
       column2: (0, r.jsxs)(r.Fragment, {
-        children: [J === P.Si.TIER_0 ? (0, r.jsx)(T.Z, {
+        children: [J === P.Si.TIER_0 ? (0, r.jsx)(S.Z, {
           className: D.button,
           subscriptionTier: P.Si.TIER_2,
           showIcon: false,
           look: c.iL.OUTLINED,
           color: z ? c.Tt.BRAND : c.Tt.WHITE
-        }) : (0, r.jsx)(T.Z, {
+        }) : (0, r.jsx)(S.Z, {
           className: D.button,
           subscriptionTier: P.Si.TIER_2,
           showIcon: false,
           hasActivePromotion: el
-        }), $ === P.PremiumTypes.TIER_0 || null != J ? null : (0, r.jsx)(S.Z, {
+        }), $ === P.PremiumTypes.TIER_0 || null != J ? null : (0, r.jsx)(T.Z, {
           className: D.button,
           subscriptionTier: P.Si.TIER_2
         })]
@@ -264,7 +264,7 @@ let Z = () => {
       withBottomBorder: false,
       withBottomBorderRadius: true,
       buttonsRow: null == J
-    }), n = x ? null : null != J || null != $ ? (0, r.jsx)(N.Cy, {
+    }), n = L ? null : null != J || null != $ ? (0, r.jsx)(N.Cy, {
       text: null != J ? w.intl.string(w.t.IBYG5U) : w.intl.string(w.t.ce1v3V),
       className: D.freeTrialPillWithSparkles,
       colorOptions: J === P.Si.TIER_0 ? z ? N.VE.PREMIUM_TIER_0_GRADIENT_FILL : N.VE.PREMIUM_TIER_0_WHITE_FILL : z ? X ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_WHITE_FILL
@@ -278,7 +278,7 @@ let Z = () => {
         children: [(0, r.jsx)(u.Heading, {
           className: o()(D.titleText, D.__invalid_textColor),
           variant: "heading-xxl/extrabold",
-          children: null != L ? L : w.intl.string(w.t.FIbMh9)
+          children: null != x ? x : w.intl.string(w.t.FIbMh9)
         }), (0, r.jsxs)("div", {
           className: D.tableWrapper,
           children: [(0, r.jsx)("div", {

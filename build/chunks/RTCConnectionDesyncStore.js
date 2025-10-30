@@ -64,7 +64,7 @@ function I(e) {
   return t || n || r
 }
 
-function S() {
+function T() {
   var e;
   let t = Chunk19780.Z.getChannelId();
   if (null == exports) returnfalse;
@@ -77,12 +77,12 @@ function S() {
   }), r
 }
 
-function T() {
+function S() {
   b.clear(), y.clear(), O.clear()
 }
 
 function A() {
-  T()
+  S()
 }
 
 function C(e) {
@@ -91,7 +91,7 @@ function C(e) {
     context: n
   } = e;
   if (n !== a.Yn.DEFAULT || t !== m.hes.DISCONNECTED) returnfalse;
-  T()
+  S()
 }
 
 function N(e) {
@@ -130,7 +130,7 @@ function P(e) {
 }
 class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk979651.Z, Chunk594174.default, Chunk592125.Z, Chunk19780.Z), this.syncWith([Chunk594174.default], S)
+    this.waitFor(Chunk979651.Z, Chunk594174.default, Chunk592125.Z, Chunk19780.Z), this.syncWith([Chunk594174.default], T)
   }
   get desyncedVoiceStatesCount() {
     return b.size()
@@ -148,7 +148,7 @@ class w extends(r = Chunk442837.ZP.Store) {
 E(w, "displayName", "RTCConnectionDesyncStore");
 let D = new w(Chunk570140.Z, {
   CONNECTION_OPEN: A,
-  VOICE_CHANNEL_SELECT: T,
+  VOICE_CHANNEL_SELECT: S,
   RTC_CONNECTION_STATE: C,
   VOICE_STATE_UPDATES: N,
   RTC_CONNECTION_CLIENT_CONNECT: R,

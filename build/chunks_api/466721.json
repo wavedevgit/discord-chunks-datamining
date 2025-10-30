@@ -1,1 +1,1 @@
-{"id":"466721","type":"experiment","data":{"kind":"user","id":"2025-07_staff_ai_features","label":"Staff AI Features","defaultConfig":{"enableAIFeatures":false},"treatments":[{"id":1,"label":"Enable AI Features","config":{"enableAIFeatures":true}}]},"fromModule":{"id":"41984"}}
+{"id":"466721","type":"experiment","data":{"kind":"user","id":"2025-07_staff_ai_features","label":"Staff AI Features","defaultConfig":{"enableAIFeatures":false},"treatments":[{"id":1,"label":"Enable AI Features","config":{"enableAIFeatures":true}}]},"fromModule":{"id":"44514"}}

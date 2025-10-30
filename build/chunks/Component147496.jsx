@@ -28,29 +28,29 @@ function g(e) {
     skuId: O,
     appId: v,
     onHeaderTitleClick: I
-  } = e, S = (0, a.e7)([l.Z], () => l.Z.getForSKU(O), [O]), T = (0, a.e7)([s.Z], () => s.Z.get(O), [O]), A = (0, d.M)(O);
-  if (null == T) return null;
-  let C = null != (n = T.name) ? n : "",
-    N = null != (g = null == S || null == (t = S.description) ? true : t.trim()) ? g : true,
-    R = (null == S ? true : S.headerBackground) != null && null != (E = u.Z.toURLSafe((0, c._W)(v, S.headerBackground, 256))) ? E : true,
-    P = T.type === h.epS.DURABLE && A,
-    w = T.type === h.epS.DURABLE ? P ? m.intl.string(m.t.bm82mm) : m.intl.string(m.t["6gprwf"]) : true,
+  } = e, T = (0, a.e7)([l.Z], () => l.Z.getForSKU(O), [O]), S = (0, a.e7)([s.Z], () => s.Z.get(O), [O]), A = (0, d.M)(O);
+  if (null == S) return null;
+  let C = null != (n = S.name) ? n : "",
+    N = null != (g = null == T || null == (t = T.description) ? true : t.trim()) ? g : true,
+    R = (null == T ? true : T.headerBackground) != null && null != (E = u.Z.toURLSafe((0, c._W)(v, T.headerBackground, 256))) ? E : true,
+    P = S.type === h.epS.DURABLE && A,
+    w = S.type === h.epS.DURABLE ? P ? m.intl.string(m.t.bm82mm) : m.intl.string(m.t["6gprwf"]) : true,
     {
       price: D
-    } = T;
+    } = S;
   return null == D ? null : (0, r.jsx)(f.A, {
     appId: v,
-    skuId: T.id,
+    skuId: S.id,
     transitionState: y,
     onHeaderTitleClick: null != I ? I : b,
     onClose: b,
     footer: (0, r.jsx)(_.YG, {
       appId: v,
-      sku: T
+      sku: S
     }),
     children: (0, r.jsx)(p.i, {
       appId: v,
-      skuId: T.id,
+      skuId: S.id,
       title: C,
       description: N,
       imgSrc: R,

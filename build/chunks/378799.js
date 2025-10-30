@@ -7,7 +7,7 @@ require.d(exports, {
   T_: () => k,
   _v: () => j,
   jd: () => M,
-  pz: () => L,
+  pz: () => x,
   s5: () => P
 }), require("./388685.js"), require("./467055.js"), require("./361932.js"), require("./187205.js"), require("./539854.js"), require("./642613.js");
 var Chunk921738 = require("./921738.js"),
@@ -168,12 +168,12 @@ function v(e) {
 }
 let I = "keyboard-layout-map";
 
-function S() {
+function T() {
   var e;
   return null != (e = Chunk433517.K.get(I)) ? module : null
 }
 
-function T(e) {
+function S(e) {
   a.K.set(I, e)
 }
 class A {
@@ -240,7 +240,7 @@ class A {
     this._internalKeyLayoutMap = null, this.keyMap = O(d({}, this._defaultKeyMap)), this._initializeInternalLayoutMap(), this.keyCodeMap = this._buildKeyCodeMapFromKeyMap(), this.updateCaches(), this.save()
   }
   save() {
-    T(this.keyMap)
+    S(this.keyMap)
   }
   getLayoutMap() {
     return null == this._internalKeyLayoutMap ? y() : this._internalKeyLayoutMap
@@ -262,7 +262,7 @@ class A {
   }
   constructor(e = {}) {
     u(this, "keyCodeMap", true), u(this, "keyMap", true), u(this, "_internalKeyLayoutMap", null), u(this, "_defaultKeyMap", true), u(this, "_cachedKeyCodeMapEntries", []), u(this, "_cachedKeyMapEntries", []), u(this, "_cachedKeyLayoutMapEntries", []), u(this, "_cachedAllEvents", []), this._defaultKeyMap = e;
-    let t = S();
+    let t = T();
     null != t ? this.keyMap = t : this.keyMap = O(d({}, e)), this._initializeInternalLayoutMap(), this.keyCodeMap = this._buildKeyCodeMapFromKeyMap(), this.updateCaches(), this.save()
   }
 }
@@ -391,13 +391,13 @@ async function D() {
   await b(), null == (e = w()) || module.reset()
 }
 
-function L() {
+function x() {
   var e, t;
   let n = arguments.length > 0 && true !== arguments[0] && arguments[0];
   return require ? y() : null != (t = null == (e = w()) ? true : module.getLayoutMap()) ? exports : y()
 }
 
-function x(e) {
+function L(e) {
   var t, n;
   let r = null != e ? m(e) : true;
   if (null != r) return null != (n = null == (t = w()) ? true : t.findCodeFromKeyboardLayoutMap(r)) ? n : true
@@ -416,7 +416,7 @@ function k(e) {
   var t, n, r, i;
   let a = null != e ? m(e) : true;
   if (null == a) return null;
-  let o = x(a),
+  let o = L(a),
     s = null != (n = null == (t = w()) ? true : t.findKeyboardEventByKey(a, o)) ? n : null;
   if (null != s) return s;
   try {

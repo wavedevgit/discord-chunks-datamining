@@ -130,7 +130,7 @@ function ef(e, t) {
 function e_(e, t, n) {
   var r, i;
   if ((null == n ? true : n.targetType) === er.Iq.ROLE_SUBSCRIPTIONS_PURCHASE) return et.oC.ROLE_SUBSCRIPTIONS;
-  if ((null == n ? true : n.targetType) == null && !M.tx.has(t.type) && (0, S.s)(e)) return et.oC.GUILD_HOME;
+  if ((null == n ? true : n.targetType) == null && !M.tx.has(t.type) && (0, T.s)(e)) return et.oC.GUILD_HOME;
   let a = j.Z.getChannel(t.id);
   return F.Z.can($.Plq.VIEW_CHANNEL, a) ? t.id : null != (i = null == (r = U.ZP.getDefaultChannel(e, true, $.Plq.CREATE_INSTANT_INVITE)) ? true : r.id) ? i : t.id
 }
@@ -146,7 +146,7 @@ function ep(e, t) {
     source: D.Z.INVITE_ACCEPT,
     navigationReplace: true
   };
-  return null != i && (s.welcomeModalChannelId = i), o && (s.state = ei.Df), null != a && (s.guildScheduledEventId = a.id), e => null != r ? r(e, s) : (0, L.uL)(e, s)
+  return null != i && (s.welcomeModalChannelId = i), o && (s.state = ei.Df), null != a && (s.guildScheduledEventId = a.id), e => null != r ? r(e, s) : (0, x.uL)(e, s)
 }
 
 function eh(e) {
@@ -165,21 +165,21 @@ function eh(e) {
   if (!f && !_ && !(null == i ? true : i.forceTransition) && s && V.Z.getGuildId() !== t) return;
   let {
     type: p
-  } = r, g = j.Z.getChannel(r.id), E = e_(t, r, i), y = p === $.d4z.GUILD_STAGE_VOICE, S = $.Z5c.CHANNEL(t, E);
+  } = r, g = j.Z.getChannel(r.id), E = e_(t, r, i), y = p === $.d4z.GUILD_STAGE_VOICE, T = $.Z5c.CHANNEL(t, E);
   M.tx.has(p) ? (0, O.h)(() => {
     Promise.resolve().then(n.bind(n, 287734)).then(e => {
       let {
         default: n
       } = e, o = () => {
         if (y) {
-          (0, x.Cq)(r instanceof M.Sf ? r : (0, M.createChannelRecord)(r)), (0, L.uL)(S);
+          (0, L.Cq)(r instanceof M.Sf ? r : (0, M.createChannelRecord)(r)), (0, x.uL)(T);
           return
         }(null == i ? true : i.muteOnJoinVoiceChannel) && X.Z.setSelfMute(d.Yn.DEFAULT, true), n.selectVoiceChannel(E), c === er.Iq.STREAM && null != l && J.iV({
           streamType: en.lo.GUILD,
           ownerId: l,
           guildId: t,
           channelId: E
-        }), c === er.Iq.EMBEDDED_APPLICATION && null != u && ((0, L.uL)($.Z5c.CHANNEL(null != t ? t : $.ME, E)), (0, m.Z)({
+        }), c === er.Iq.EMBEDDED_APPLICATION && null != u && ((0, x.uL)($.Z5c.CHANNEL(null != t ? t : $.ME, E)), (0, m.Z)({
           channelId: E,
           applicationId: u,
           intent: null == i ? true : i.intent,
@@ -190,14 +190,14 @@ function eh(e) {
       };
       !f && (0, I.n)(t, [B.Z, H.default, G.ZP]) ? (0, v.hk)(t, o) : o()
     })
-  }) : (0, h.l5)(g) && c === er.Iq.EMBEDDED_APPLICATION && null != u && ((0, L.uL)($.Z5c.CHANNEL(null != t ? t : $.ME, E)), (0, m.Z)({
+  }) : (0, h.l5)(g) && c === er.Iq.EMBEDDED_APPLICATION && null != u && ((0, x.uL)($.Z5c.CHANNEL(null != t ? t : $.ME, E)), (0, m.Z)({
     channelId: E,
     applicationId: u,
     intent: null == i ? true : i.intent,
     inviterUserId: null == i ? true : i.inviterUserId,
     analyticsLocations: a,
     commandOrigin: b.bB.CHAT
-  })), ep(r, i)(S)
+  })), ep(r, i)(T)
 }
 
 function em(e) {
@@ -209,7 +209,7 @@ function em(e) {
     let e = {
       guildScheduledEventId: t.id
     };
-    null != n && (e.welcomeModalChannelId = n), (0, T.P3)(t, e)
+    null != n && (e.welcomeModalChannelId = n), (0, S.P3)(t, e)
   })
 }
 

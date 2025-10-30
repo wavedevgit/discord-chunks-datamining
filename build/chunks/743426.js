@@ -661,11 +661,11 @@ class I extends Chunk47770.Z {
       ducking: false
     }), null == (i = E.setNativeScreenSharePickerCallbacks) || i.call(E, this.handleNativeScreenSharePickerUpdate, this.handleNativeScreenSharePickerCancel, this.handleNativeScreenSharePickerError), null == (a = E.setVideoCodecErrorCallback) || Chunk47770.call(E, this.handleVideoCodecErrorCallback), null == (c = E.setSystemMicrophoneModeChangeCallback) || Chunk997545.call(E, this.handleSystemMicrophoneModeChangeCallback), this.on("removeListener", this.handleRemoveListener), this.on("newListener", this.handleNewListener), null != (0, Chunk992774.zS)().getAudioSubsystem ? (0, Chunk992774.zS)().getAudioSubsystem((e, t) => {
       this.audioSubsystem = e, this.audioLayer = t
-    }) : null != (0, Chunk992774.zS)().getUseLegacyAudioDevice && (this.audioSubsystem = (0, Chunk992774.zS)().getUseLegacyAudioDevice() ? Chunk149396.iA.LEGACY : Chunk149396.iA.STANDARD), null != E.pingVoiceThread && "undefined" != typeof window && "canary" === window.GLOBAL_ENV.RELEASE_CHANNEL && this.watchdogTick(), null != E.setActiveSinksChangeCallback && E.setActiveSinksChangeCallback(this.handleActiveSinksChange), null == (p = E.setLoopbackPlaybackGainMultiplier) || Chunk65154.call(E, Chunk149396.Jk), null == (m = E.setVoiceFiltersFailedCallback) || m.call(E, e => this.emit(s.aB.VoiceFiltersFailed, e)), (0, Chunk734298.Z)(this), S(this)
+    }) : null != (0, Chunk992774.zS)().getUseLegacyAudioDevice && (this.audioSubsystem = (0, Chunk992774.zS)().getUseLegacyAudioDevice() ? Chunk149396.iA.LEGACY : Chunk149396.iA.STANDARD), null != E.pingVoiceThread && "undefined" != typeof window && "canary" === window.GLOBAL_ENV.RELEASE_CHANNEL && this.watchdogTick(), null != E.setActiveSinksChangeCallback && E.setActiveSinksChangeCallback(this.handleActiveSinksChange), null == (p = E.setLoopbackPlaybackGainMultiplier) || Chunk65154.call(E, Chunk149396.Jk), null == (m = E.setVoiceFiltersFailedCallback) || m.call(E, e => this.emit(s.aB.VoiceFiltersFailed, e)), (0, Chunk734298.Z)(this), T(this)
   }
 }
 
-function S(e) {
+function T(e) {
   let t = 9e5,
     n = false;
   e.on(s.aB.Destroy, () => n = true);

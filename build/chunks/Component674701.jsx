@@ -2,8 +2,8 @@
 /** chunk id: 674701, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => L,
-  Z: () => x
+  U: () => x,
+  Z: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,18 +34,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk957825 = require("./957825.js"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk553517 = require("./553517.js"),
-  L = function(e) {
+  Chunk571528 = require("./571528.js"),
+  x = function(e) {
     return e.SYSTEM_MESSAGE = "system_message", e.COACHMARK = "coachmark", e
   }({});
 
-function x(e) {
+function L(e) {
   let {
     giftIntentType: t,
     premiumGiftIntentCardType: n,
     recipientUser: a,
-    onMouseEnter: L,
-    onMouseLeave: x,
+    onMouseEnter: x,
+    onMouseLeave: L,
     popoutPosition: M,
     analyticsPage: k,
     analyticsSection: j,
@@ -53,7 +53,7 @@ function x(e) {
     giftIntentSecondaryAction: G
   } = e, B = (0, l.e7)([y.default], () => y.default.getCurrentUser()), {
     analyticsLocations: Z
-  } = (0, h.ZP)(), F = (0, l.e7)([T.Z], () => T.Z.getFriendAnniversaryYears(a.id));
+  } = (0, h.ZP)(), F = (0, l.e7)([S.Z], () => S.Z.getFriendAnniversaryYears(a.id));
   i.useEffect(() => {
     (0, m.h)({
       name: s.ImpressionNames.GIFT_INTENT_CARD,
@@ -61,7 +61,7 @@ function x(e) {
       properties: {
         gift_intent_type: t,
         type: n,
-        num_friend_anniversaries: T.Z.getFriendAnniversaries().length
+        num_friend_anniversaries: S.Z.getFriendAnniversaries().length
       }
     })
   }, [t, n]);
@@ -108,7 +108,7 @@ function x(e) {
         cta_type: G
       }), G === C.X2.VIEW_ALL ? _.Z.transitionToSection(N.pJs.ALL, {
         explicit: true
-      }) : G === C.X2.SEND_MESSAGE && ((0, S.PV)(a.id), f.Z.openPrivateChannel({
+      }) : G === C.X2.SEND_MESSAGE && ((0, T.PV)(a.id), f.Z.openPrivateChannel({
         recipientIds: a.id
       }).then(() => {
         setTimeout(() => {
@@ -134,8 +134,8 @@ function x(e) {
       [D.outerGlow]: U,
       [D.contentCoachmark]: q
     }),
-    onMouseEnter: L,
-    onMouseLeave: x,
+    onMouseEnter: x,
+    onMouseLeave: L,
     children: (0, r.jsxs)("div", {
       className: o()(X, {
         [D.innerGlow]: U

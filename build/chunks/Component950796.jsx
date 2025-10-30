@@ -4,7 +4,7 @@
 require.d(exports, {
   Dg: () => A,
   On: () => E,
-  TF: () => T,
+  TF: () => S,
   Y7: () => b
 });
 var Chunk951288 = require("./951288.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk107009 = require("./107009.js");
+  Chunk196495 = require("./196495.js");
 let g = 1e3;
 
 function E(e) {
@@ -44,7 +44,7 @@ function I(e) {
   e.stopPropagation()
 }
 
-function S(e) {
+function T(e) {
   let {
     windowKey: t,
     showDivider: n
@@ -75,7 +75,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     leading: t,
     title: n,
@@ -96,7 +96,7 @@ function T(e) {
     }), (0, r.jsxs)("div", {
       className: m.trailing,
       onDoubleClick: I,
-      children: [a, c === _.PlatformTypes.WINDOWS && (0, r.jsx)(S, {
+      children: [a, c === _.PlatformTypes.WINDOWS && (0, r.jsx)(T, {
         windowKey: s,
         showDivider: null != a
       })]
@@ -125,7 +125,7 @@ function A(e) {
     children: f && (0, r.jsx)("div", {
       className: m.trailing,
       onDoubleClick: I,
-      children: (0, r.jsx)(S, {
+      children: (0, r.jsx)(T, {
         windowKey: a
       })
     })

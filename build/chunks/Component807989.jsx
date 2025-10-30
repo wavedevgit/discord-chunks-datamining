@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk713938 = require("./713938.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk852303 = require("./852303.js");
+  Chunk239522 = require("./239522.js");
 let E = e => {
   switch (e) {
     case u.ZC.IP_LOCATION:
@@ -41,8 +41,8 @@ function b(e) {
       isEmbeddedFlow: v,
       disclosures: I
     } = e,
-    S = new Date(f.default.extractTimestamp(i.id)),
-    T = (0, p.W3)(s),
+    T = new Date(f.default.extractTimestamp(i.id)),
+    S = (0, p.W3)(s),
     A = (0, d.yE)(null != (t = i.flags) ? t : 0, h.udG.EMBEDDED);
   if (null != b && !A && !v) try {
     let e = new URL(b);
@@ -68,7 +68,7 @@ function b(e) {
     }), (0, r.jsx)(y, {
       icon: l.T39,
       text: m.intl.formatToPlainString(m.t["+1bjc8"], {
-        date: S
+        date: T
       })
     }), s.includes(o.x.BOT) && null != O ? (0, r.jsx)(y, {
       icon: l.wGt,
@@ -77,7 +77,7 @@ function b(e) {
       })
     }) : null, (0, r.jsx)(y, {
       icon: l.b7C,
-      text: T
+      text: S
     }), null != I ? I.map(e => {
       let t = (0, u.PM)(e),
         n = E(e);

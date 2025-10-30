@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk320161 = require("./320161.jsx"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk447160 = require("./447160.js");
+  Chunk950954 = require("./950954.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,8 +75,8 @@ function O(e) {
   var t, n, i, o, s;
   let {
     compact: _ = false
-  } = e, m = (0, d.Dt)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "463639", v = "bf581046a6c71634bce7c3ff7f07d67f12b4e0f2".substring(0, 7), I = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), S = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), T = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), A = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, C = y(), N = [E, O, "(".concat(v, ")")];
-  return (null != I && (N.push("Host ".concat(I)), null != T && N.push(T.toLowerCase()), null != S && N.push("(".concat(S, ")"))), N.push("Build Override: ".concat(null != A ? A.id : "N/A")), null != C && N.push(C), _) ? (0, r.jsxs)(r.Fragment, {
+  } = e, m = (0, d.Dt)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "463664", v = "515709e5fa68e9c85ee662757615c5aa14b3ffa7".substring(0, 7), I = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), T = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), S = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), A = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, C = y(), N = [E, O, "(".concat(v, ")")];
+  return (null != I && (N.push("Host ".concat(I)), null != S && N.push(S.toLowerCase()), null != T && N.push("(".concat(T, ")"))), N.push("Build Override: ".concat(null != A ? A.id : "N/A")), null != C && N.push(C), _) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z, {
       copyValue: N.join(" "),
       text: p.intl.string(p.t["9Al4Qd"]),
@@ -100,11 +100,11 @@ function O(e) {
             tag: "span",
             variant: "text-xxs/normal",
             color: "text-muted",
-            children: [I, null != T && (0, r.jsxs)("span", {
+            children: [I, null != S && (0, r.jsxs)("span", {
               className: h.appArch,
-              children: [" ", T.toLowerCase()]
-            }), null != S && (0, r.jsxs)("span", {
-              children: [" (", S, ")"]
+              children: [" ", S.toLowerCase()]
+            }), null != T && (0, r.jsxs)("span", {
+              children: [" (", T, ")"]
             })]
           })]
         }), null != A && (0, r.jsx)(l.Text, {
@@ -157,11 +157,11 @@ function O(e) {
               className: h.line,
               variant: "text-xs/normal",
               color: "text-muted",
-              children: ["Host ", I, " ", null != T ? (0, r.jsxs)("span", {
+              children: ["Host ", I, " ", null != S ? (0, r.jsxs)("span", {
                 className: h.appArch,
-                children: [T.toLowerCase(), " "]
-              }) : null, null != S ? (0, r.jsxs)("span", {
-                children: ["(", S, ")"]
+                children: [S.toLowerCase(), " "]
+              }) : null, null != T ? (0, r.jsxs)("span", {
+                children: ["(", T, ")"]
               }) : null]
             }), " "]
           }) : null, null != C ? (0, r.jsx)(l.Text, {

@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk544978 = require("./544978.js"),
   Chunk893182 = require("./893182.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk793701 = require("./793701.js");
+  Chunk918319 = require("./918319.js");
 
 function A(e) {
   let {
@@ -35,17 +35,17 @@ function A(e) {
   } = e;
   return (0, r.jsxs)(l.P3F, {
     onClick: t,
-    className: T.showMoreButton,
+    className: S.showMoreButton,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: "header-primary",
-      children: S.intl.string(S.t.J4cw1q)
+      children: T.intl.string(T.t.J4cw1q)
     }), (0, r.jsx)(l.LZC, {
       size: 4,
       horizontal: true
     }), (0, r.jsx)(g.Z, {
       direction: g.Z.Directions.RIGHT,
-      className: T.showMoreArrow
+      className: S.showMoreArrow
     })]
   })
 }
@@ -70,22 +70,22 @@ function N(e) {
   } = e, i = p.QK.useSetting(), a = (0, b.n)() && i, [o, s] = (0, _.Z)(t, a), l = a ? (0, r.jsx)(d.Z, {
     autoPlay: true,
     loop: true,
-    className: T.coverImage,
+    className: S.coverImage,
     width: 655,
     poster: (0, u.b)("server_products/storefront/default-header.png"),
     src: (0, u.b)("server_products/storefront/default-header.mov")
   }) : (0, r.jsx)("img", {
     src: (0, u.b)("server_products/storefront/default-header.png"),
     alt: "",
-    className: T.coverImage
+    className: S.coverImage
   });
   return (0, r.jsx)("div", {
     ref: o,
-    className: T.coverImageContainer,
+    className: S.coverImageContainer,
     children: null == s || n ? l : (0, r.jsx)("img", {
       src: s,
       alt: "",
-      className: T.coverImage
+      className: S.coverImage
     })
   })
 }
@@ -106,11 +106,11 @@ function R(e) {
   }), g = (null != (n = null == o || null == (t = o.description) ? true : t.trim().length) ? n : 0) > 0, [E, b] = i.useState(1), R = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: P,
     isPhantomPreview: w
-  } = (0, O.m)(), D = P === v.y.GUILD_PRODUCTS_PREVIEW ? S.intl.string(S.t["LvXy/H"]) : S.intl.string(S.t.XyqKh8), L = e => {
+  } = (0, O.m)(), D = P === v.y.GUILD_PRODUCTS_PREVIEW ? T.intl.string(T.t["LvXy/H"]) : T.intl.string(T.t.XyqKh8), x = e => {
     null != e && e.clientHeight > 30 && b(2)
   };
 
-  function x(e, t) {
+  function L(e, t) {
     return (0, r.jsx)("span", {
       style: {
         color: _
@@ -136,12 +136,12 @@ function R(e) {
   }) : (0, r.jsx)(l.Text, {
     variant: "text-sm/normal",
     color: "text-default",
-    children: w ? D : S.intl.string(S.t["NY/FIW"])
+    children: w ? D : T.intl.string(T.t["NY/FIW"])
   });
   return (0, r.jsxs)("div", {
-    className: T.container,
+    className: S.container,
     children: [(0, r.jsxs)("div", {
-      className: T.infoContainer,
+      className: S.infoContainer,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(f.Z, {
           guild: a,
@@ -153,12 +153,12 @@ function R(e) {
         horizontal: true
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-          ref: L,
+          ref: x,
           children: (0, r.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
             color: "header-primary",
             lineClamp: 2,
-            children: w ? S.intl.string(S.t.rtgp7q) : S.intl.formatToPlainString(S.t.NZeik9, {
+            children: w ? T.intl.string(T.t.rtgp7q) : T.intl.formatToPlainString(T.t.NZeik9, {
               guildName: a.name
             })
           })
@@ -167,9 +167,9 @@ function R(e) {
         }), (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "text-default",
-          children: S.intl.format(S.t["7JwrlH"], {
+          children: T.intl.format(T.t["7JwrlH"], {
             username: d,
-            usernameHook: x
+            usernameHook: L
           })
         }), (0, r.jsx)(l.LZC, {
           size: 9

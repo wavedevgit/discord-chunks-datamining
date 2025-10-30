@@ -4,16 +4,16 @@
 require.d(exports, {
   B0: () => R,
   Hc: () => D,
-  J8: () => L,
+  J8: () => x,
   Q6: () => N,
   V9: () => k,
   WD: () => w,
-  Zt: () => S,
+  Zt: () => T,
   Zv: () => A,
   _V: () => C,
   cv: () => M,
   gM: () => G,
-  jl: () => x,
+  jl: () => L,
   z: () => P
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./415506.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./781311.js");
 var Chunk586132 = require("./586132.js"),
@@ -34,13 +34,13 @@ let {
   PROJECT_ENV: g,
   ASSET_ENDPOINT: E,
   CDN_HOST: b
-} = window.GLOBAL_ENV, y = Object.values(Chunk373228.og), O = decodeURIComponent(Chunk981631.ANM.STICKER_ASSET("[\\d]+", "(".concat(y.join("|"), ")"))), v = RegExp("(".concat(location.protocol).concat(E, "|").concat(location.protocol).concat(m, ")(").concat(O, ")"), "ig"), I = RegExp("".concat(location.protocol).concat(h, "(").concat(O, ")"), "ig"), S = e => {
+} = window.GLOBAL_ENV, y = Object.values(Chunk373228.og), O = decodeURIComponent(Chunk981631.ANM.STICKER_ASSET("[\\d]+", "(".concat(y.join("|"), ")"))), v = RegExp("(".concat(location.protocol).concat(E, "|").concat(location.protocol).concat(m, ")(").concat(O, ")"), "ig"), I = RegExp("".concat(location.protocol).concat(h, "(").concat(O, ")"), "ig"), T = e => {
   if (null != e.cover_sticker_id) {
     let t = e.stickers.find(t => t.id === e.cover_sticker_id);
     if (null != t) return t
   }
   return e.stickers[0]
-}, T = e => {
+}, S = e => {
   switch (e) {
     case f.u3.PNG:
       return l.$k ? f.og.WEBP : f.og.PNG;
@@ -67,7 +67,7 @@ let {
     default:
       throw Error("Unexpected file type: ".concat(e))
   }
-}, C = e => null == e ? null : "".concat(e.name, ".").concat(T(e.format_type)), N = function(e) {
+}, C = e => null == e ? null : "".concat(e.name, ".").concat(S(e.format_type)), N = function(e) {
   let {
     isPreview: t = false,
     size: n = _.lE
@@ -75,7 +75,7 @@ let {
   if (null == e.format_type) return null;
   let a = e.format_type;
   e.format_type === f.u3.GIF && t && (a = f.u3.PNG);
-  let o = T(a),
+  let o = S(a),
     s = p.ANM.STICKER_ASSET(e.id, o),
     l = (0, r.W)({
       location: "sticker_url"
@@ -93,7 +93,7 @@ let {
   id: e.id,
   name: e.name,
   stickers: e.stickers,
-  previewSticker: S(e)
+  previewSticker: T(e)
 }), w = (e, t) => e === _.yr.ANIMATE_ON_INTERACTION ? t : e !== _.yr.NEVER_ANIMATE, D = (e, t, n, r) => {
   if (s.Z.getUploadCount(n, r) > 0) returntrue;
   let i = u.Z.getStickerPreview(n, r);
@@ -107,7 +107,7 @@ let {
     default:
       returnfalse
   }
-}, L = e => e.type === f.n0.GUILD, x = e => e.type === f.n0.STANDARD, M = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], k = e => {
+}, x = e => e.type === f.n0.GUILD, L = e => e.type === f.n0.STANDARD, M = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], k = e => {
   if (null === e) returnfalse;
   let t = e.guild_id;
   return true !== o.Z.getGuild(t)

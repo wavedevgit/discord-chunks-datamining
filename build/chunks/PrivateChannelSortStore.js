@@ -47,7 +47,7 @@ function I() {
   v.clear()
 }
 
-function S(e) {
+function T(e) {
   var t, n;
   let r = null != (n = null != (t = h.ZP.lastMessageId(e.id)) ? t : e.lastMessageId) ? n : e.id,
     i = e.isMessageRequestTimestamp;
@@ -59,8 +59,8 @@ function S(e) {
   return r
 }
 
-function T(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : S(e);
+function S(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(e);
   return {
     channelId: e.id,
     lastMessageId: t,
@@ -71,7 +71,7 @@ function T(e) {
 
 function A() {
   v.clear(), Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
-    v.set(e.id, T(e))
+    v.set(e.id, S(e))
   })
 }
 
@@ -80,7 +80,7 @@ function C(e) {
     channel: t
   } = e;
   if (!(0, f.hv)(t.type) || t.id === c.V) returnfalse;
-  v.set(t.id, T(t))
+  v.set(t.id, S(t))
 }
 
 function N(e) {
@@ -88,7 +88,7 @@ function N(e) {
     channels: t
   } = e;
   t.forEach(e => {
-    ((0, f.hv)(e.type) || v.has(e.id)) && v.set(e.id, T(e))
+    ((0, f.hv)(e.type) || v.has(e.id)) && v.set(e.id, S(e))
   })
 }
 
@@ -106,7 +106,7 @@ function P(e) {
   } = e;
   if (!v.has(t)) returnfalse;
   let r = _.Z.getChannel(t);
-  return null != r && v.set(t, T(r, n.id))
+  return null != r && v.set(t, S(r, n.id))
 }
 
 function w(e) {
@@ -116,9 +116,9 @@ function w(e) {
 
 function D() {
   let e = Chunk592125.Z.getMutablePrivateChannels();
-  for (let t in module) v.set(exports, T(module[exports]))
+  for (let t in module) v.set(exports, S(module[exports]))
 }
-let L = (() => {
+let x = (() => {
   let e = [],
     t = [],
     n = [];
@@ -138,12 +138,12 @@ let L = (() => {
     }), t = Chunk913527), require
   }
 })();
-class x extends(r = Chunk442837.ZP.Store) {
+class L extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk355298.Z, Chunk306680.ZP, Chunk333984.Z, Chunk9156.ZP, Chunk594174.default), this.syncWith([Chunk9156.ZP, Chunk355298.Z], A)
   }
   getPrivateChannelIds() {
-    return L()
+    return x()
   }
   getSortedChannels() {
     return [v.values("FAVORITE"), v.values("DEFAULT")]
@@ -159,8 +159,8 @@ class x extends(r = Chunk442837.ZP.Store) {
     }), module
   }
 }
-b(x, "displayName", "PrivateChannelSortStore");
-let M = new x(Chunk570140.Z, {
+b(L, "displayName", "PrivateChannelSortStore");
+let M = new L(Chunk570140.Z, {
   CONNECTION_OPEN: A,
   CONNECTION_OPEN_SUPPLEMENTAL: A,
   OVERLAY_INITIALIZE: A,

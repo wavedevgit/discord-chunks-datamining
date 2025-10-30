@@ -56,18 +56,18 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e) {
+function S(e) {
   return e.hasOwnProperty("pid")
 }
 
 function A(e) {
-  if (T(e)) return {
+  if (S(e)) return {
     pid: e.pid
   };
   let t = (0, E.Z)(true, e, a.ZP.getRunningGames()),
@@ -81,15 +81,15 @@ function A(e) {
   }
 }
 async function C(e, t) {
-  var n, p, E, O, I, T, C, N;
+  var n, p, E, O, I, S, C, N;
   let R = _.default.getCurrentUser(),
     P = f.Z.getVoiceChannelId(),
     w = c.Z.getChannel(P),
     D = null == w ? true : w.getGuildId(),
-    L = null == (n = u.Z.getGuild(D)) ? true : n.premiumTier;
+    x = null == (n = u.Z.getGuild(D)) ? true : n.premiumTier;
   if (null == R || null == w || null == P) return [false, "no user or channel"];
-  let x = null;
-  if (null == (x = "number" == typeof e ? a.ZP.getGameForPID(e) : e)) return [false, "no source"];
+  let L = null;
+  if (null == (L = "number" == typeof e ? a.ZP.getGameForPID(e) : e)) return [false, "no source"];
   if (!d.Z.getUseSystemScreensharePicker() && !await o.Z.hasPermission(y.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
     })) return [false, "no permission"];
@@ -105,18 +105,18 @@ async function C(e, t) {
   });
   G !== b.ApplicationStreamPresets.PRESET_AUTO || B || (G = b.ApplicationStreamPresets.PRESET_VIDEO);
   let Z = G === b.ApplicationStreamPresets.PRESET_AUTO ? b.ApplicationStreamPresets.PRESET_VIDEO : G,
-    [F, V] = null != (O = (0, g.Z)(Z, R, L)) ? O : [],
+    [F, V] = null != (O = (0, g.Z)(Z, R, x)) ? O : [],
     H = null != (I = null != F ? F : null == t ? true : t.resolution) ? I : k,
-    Y = null != (T = null != V ? V : null == t ? true : t.fps) ? T : j,
+    Y = null != (S = null != V ? V : null == t ? true : t.fps) ? S : j,
     W = null != (C = null == t ? true : t.previewDisabled) ? C : s.I0.getSetting(),
     K = null != (N = null == t ? true : t.soundshareEnabled) ? N : U;
-  return (0, m.Z)(Z, H, Y, R, L, w) || (G = b.ApplicationStreamPresets.PRESET_VIDEO, H = b.ApplicationStreamResolutions.RESOLUTION_720, Y = b.ApplicationStreamFPS.FPS_30), (0, i.Rc)({
+  return (0, m.Z)(Z, H, Y, R, x, w) || (G = b.ApplicationStreamPresets.PRESET_VIDEO, H = b.ApplicationStreamResolutions.RESOLUTION_720, Y = b.ApplicationStreamFPS.FPS_30), (0, i.Rc)({
     preset: G,
     resolution: H,
     frameRate: Y,
     soundshareEnabled: K
-  }), (0, i.WH)(D, P, S(v({}, A(x)), {
-    audioSourceId: (null == (p = x.id) ? true : p.startsWith(r.vA.CAMERA)) ? null == t ? true : t.audioSourceId : true,
+  }), (0, i.WH)(D, P, T(v({}, A(L)), {
+    audioSourceId: (null == (p = L.id) ? true : p.startsWith(r.vA.CAMERA)) ? null == t ? true : t.audioSourceId : true,
     sound: K,
     previewDisabled: W,
     goLiveModalDurationMs: null == t ? true : t.goLiveModalDurationMs,

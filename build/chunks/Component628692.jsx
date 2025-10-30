@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => A,
-  ku: () => S
+  ku: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk695346 = require("./695346.js"),
   Chunk592125 = require("./592125.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk766106 = require("./766106.js");
+  Chunk695560 = require("./695560.js");
 
 function I(e) {
   let {
@@ -45,7 +45,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     soundId: t
   } = e, n = (0, s.e7)([m.Z], () => m.Z.getSoundById(t)), i = (0, f.V2)({
@@ -54,7 +54,7 @@ function S(e) {
     isPlaying: a,
     playSound: o
   } = (0, h.Z)(n);
-  return i ? null == n ? (0, r.jsx)(I, {}) : (0, r.jsx)(T, {
+  return i ? null == n ? (0, r.jsx)(I, {}) : (0, r.jsx)(S, {
     className: v.inlineTextArea,
     isPlaying: a,
     playSound: o,
@@ -62,7 +62,7 @@ function S(e) {
   }) : null
 }
 
-function T(e) {
+function S(e) {
   let {
     className: t,
     sound: n,
@@ -100,12 +100,12 @@ let A = function(e) {
   } = e, u = b.jU.useSetting(), f = (0, s.e7)([m.Z], () => m.Z.getSoundById(a), [a]), O = i.useMemo(() => {
     var e;
     return null != (e = (0, _.Z)(t, n, a, o)) ? e : f
-  }, [t, n, a, o, f]), S = (0, s.e7)([y.Z], () => y.Z.getChannel(t)), A = (0, d.X0)({
+  }, [t, n, a, o, f]), T = (0, s.e7)([y.Z], () => y.Z.getChannel(t)), A = (0, d.X0)({
     location: "SoundboardMention"
   }), C = i.useRef(null), {
     isPlaying: N,
     playSound: R
-  } = (0, h.Z)(O, S), P = i.useCallback(async () => {
+  } = (0, h.Z)(O, T), P = i.useCallback(async () => {
     if (await R()) {
       var e;
       null == (e = C.current) || e.addAnimation()
@@ -117,7 +117,7 @@ let A = function(e) {
     containerClassName: v.jumboContainer,
     className: v.jumboButton,
     sound: O,
-    channel: S,
+    channel: T,
     onSelectItem: P,
     isPlayingSoundOverride: N,
     isSoundmoji: true,
@@ -137,7 +137,7 @@ let A = function(e) {
     position: "top",
     delay: 500,
     children: (0, r.jsx)("span", {
-      children: (0, r.jsx)(T, {
+      children: (0, r.jsx)(S, {
         sound: O,
         playSound: P,
         isPlaying: N

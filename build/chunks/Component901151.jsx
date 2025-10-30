@@ -22,11 +22,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk42101 = require("./42101.js");
+  Chunk511693 = require("./511693.js");
 let v = 3,
   I = 3;
 
-function S(e) {
+function T(e) {
   let {
     applications: t
   } = e, n = i.useMemo(() => t.sort((e, t) => u.default.compare(t.id, e.id)), [t]), a = i.useMemo(() => {
@@ -115,7 +115,7 @@ function S(e) {
   })
 }
 
-function T() {
+function S() {
   let e = Chunk695346._j.useSetting();
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
@@ -163,17 +163,17 @@ function C() {
   } = (0, Chunk749876.Z)(true);
   return (0, Chunk951288.jsx)(Chunk546957.Z, {
     children: module ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : exports.length > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(S, {
+      children: [(0, Chunk951288.jsx)(T, {
         applications: exports
-      }), (0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)("div", {
-        className: Chunk42101.divider
+      }), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)("div", {
+        className: Chunk511693.divider
       }), (0, Chunk951288.jsx)(A, {})]
     }) : (0, Chunk951288.jsxs)("div", {
-      className: Chunk42101.emptyContainer,
+      className: Chunk511693.emptyContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        className: Chunk42101.noGamesConnectedText,
+        className: Chunk511693.noGamesConnectedText,
         children: Chunk388032.intl.string(Chunk388032.t["+0U77d"])
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",

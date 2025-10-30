@@ -61,8 +61,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk560688 = require("./560688.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk306762 = require("./306762.js"),
-  Chunk315091 = require("./315091.js");
+  Chunk431740 = require("./431740.js"),
+  Chunk285236 = require("./285236.js");
 
 function el(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -214,7 +214,7 @@ class ef extends Chunk647438.PureComponent {
       return (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "always-white",
-        className: Chunk306762.participantName,
+        className: Chunk431740.participantName,
         lineClamp: 1,
         children: Chunk647438
       })
@@ -251,7 +251,7 @@ class ef extends Chunk647438.PureComponent {
           onHide: this.handleHidePIP,
           renderBottomLeftControls: this.renderBottomLeftControls,
           renderBottomRightControls: this.renderBottomRightControls,
-          preventIdleComponent: x.Z,
+          preventIdleComponent: L.Z,
           width: a,
           className: es.elevationHigh,
           videoControlsClassName: (null == c ? true : c.state) === ei.jm8.ENDED ? eo.videoControls : true
@@ -329,7 +329,7 @@ class ef extends Chunk647438.PureComponent {
         participantOnScreen: e,
         channel: t
       } = this.props;
-      return o()((0, ea._5)(e) || (null == e ? true : e.type) === ea.fO.ACTIVITY, "Cannot render participants for participant type ".concat(null == e ? true : e.type)), (0, r.jsx)(x.Z, {
+      return o()((0, ea._5)(e) || (null == e ? true : e.type) === ea.fO.ACTIVITY, "Cannot render participants for participant type ".concat(null == e ? true : e.type)), (0, r.jsx)(L.Z, {
         children: (0, r.jsx)(O.Z, {
           channelId: t.id,
           guildId: t.getGuildId(),
@@ -364,7 +364,7 @@ function e_(e) {
   let {
     channel: t,
     width: n
-  } = e, i = (0, c.e7)([Y.Z], () => Y.Z.getSpeaker(t.id)), a = (0, c.e7)([b.Z], () => b.Z.getParticipant(t.id, i), [t.id, i]), o = (0, c.e7)([F.Z], () => l()(F.Z.getVideoDevices()).values().first()), s = (0, c.e7)([W.Z], () => null != a && a.type !== ea.fO.ACTIVITY && a.type !== ea.fO.HIDDEN_STREAM ? W.Z.getStreamId(a.user.id, t.getGuildId(), (0, y.Z)(a.type)) : null, [a, t]), d = null == o || o.disabled, f = !d, _ = (0, c.e7)([F.Z], () => !d && F.Z.isVideoEnabled(), [d]), p = (0, c.e7)([F.Z], () => (0, C.Z)(F.Z)), h = (0, c.e7)([Z.default], () => Z.default.getId()), m = (0, c.e7)([B.Z], () => B.Z.getCurrentUserActiveStream()), g = null != a && "user" in a ? a.user.id : "", E = (0, T.Z)((null == a ? true : a.type) === ea.fO.STREAM ? u.Yn.STREAM : u.Yn.DEFAULT, g), O = (0, S.Z)(g), v = (0, c.Wu)([B.Z], () => B.Z.getAllActiveStreams());
+  } = e, i = (0, c.e7)([Y.Z], () => Y.Z.getSpeaker(t.id)), a = (0, c.e7)([b.Z], () => b.Z.getParticipant(t.id, i), [t.id, i]), o = (0, c.e7)([F.Z], () => l()(F.Z.getVideoDevices()).values().first()), s = (0, c.e7)([W.Z], () => null != a && a.type !== ea.fO.ACTIVITY && a.type !== ea.fO.HIDDEN_STREAM ? W.Z.getStreamId(a.user.id, t.getGuildId(), (0, y.Z)(a.type)) : null, [a, t]), d = null == o || o.disabled, f = !d, _ = (0, c.e7)([F.Z], () => !d && F.Z.isVideoEnabled(), [d]), p = (0, c.e7)([F.Z], () => (0, C.Z)(F.Z)), h = (0, c.e7)([Z.default], () => Z.default.getId()), m = (0, c.e7)([B.Z], () => B.Z.getCurrentUserActiveStream()), g = null != a && "user" in a ? a.user.id : "", E = (0, S.Z)((null == a ? true : a.type) === ea.fO.STREAM ? u.Yn.STREAM : u.Yn.DEFAULT, g), O = (0, T.Z)(g), v = (0, c.Wu)([B.Z], () => B.Z.getAllActiveStreams());
   return (0, r.jsx)(ef, {
     channel: t,
     streamId: s,

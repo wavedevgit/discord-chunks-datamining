@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk865427 = require("./865427.js"),
   Chunk820254 = require("./820254.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk36398 = require("./36398.js");
+  Chunk94226 = require("./94226.js");
 let h = "isHideDevBanner",
   g = () => {
     var e;
@@ -28,25 +28,25 @@ let h = "isHideDevBanner",
       },
       _ = () => (0, Chunk951288.jsx)(Chunk481060.P3F, {
         onClick: g,
-        className: Chunk36398.closeButton,
+        className: Chunk94226.closeButton,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.WAI6xu),
         children: (0, Chunk951288.jsx)(Chunk481060.Dio, {
           size: "md",
           color: "currentColor",
-          className: Chunk36398.closeIcon
+          className: Chunk94226.closeIcon
         })
       });
     return null != Chunk120356 ? (0, Chunk951288.jsxs)("div", {
-      className: a()(Chunk36398.devBanner, Chunk36398.buildOverride),
+      className: a()(Chunk94226.devBanner, Chunk94226.buildOverride),
       children: [(0, Chunk951288.jsx)(Chunk820254.Z, {
-        className: Chunk36398.icon
+        className: Chunk94226.icon
       }), Chunk388032.intl.string(Chunk388032.t.Wj3LW4), (0, Chunk951288.jsx)(_, {})]
     }) : "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, Chunk951288.jsxs)("div", {
-      className: a()(Chunk36398.devBanner, Chunk36398.staging),
+      className: a()(Chunk94226.devBanner, Chunk94226.staging),
       children: [(0, Chunk951288.jsx)(Chunk820254.Z, {
-        className: Chunk36398.icon
+        className: Chunk94226.icon
       }), Chunk388032.intl.format(Chunk388032.t.uyrfYF, {
-        buildNumber: "463639"
+        buildNumber: "463664"
       }), (0, Chunk951288.jsx)(_, {})]
     }) : null
   }

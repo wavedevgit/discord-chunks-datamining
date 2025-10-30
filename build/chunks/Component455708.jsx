@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk149203 = require("./149203.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk577021 = require("./577021.js");
+  Chunk709637 = require("./709637.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -93,14 +93,14 @@ class N extends Chunk647438.PureComponent {
         return (0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           color: exports,
-          className: Chunk577021.searchHeader,
+          className: Chunk709637.searchHeader,
           children: Chunk388032.intl.string(Chunk388032.t.y3LQCG)
         });
       case Chunk981631.wI2.TRENDING_GIFS:
         return (0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           color: exports,
-          className: Chunk577021.searchHeader,
+          className: Chunk709637.searchHeader,
           children: Chunk388032.intl.string(Chunk388032.t.H6zNFz)
         });
       default:
@@ -121,7 +121,7 @@ class N extends Chunk647438.PureComponent {
     } = this.state, t = null;
     return null != module && (t = (0, Chunk951288.jsx)(Chunk481060.P3F, {
       onClick: this.handleClearQuery,
-      className: Chunk577021.backButton,
+      className: Chunk709637.backButton,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["13/7kX"]),
       children: (0, Chunk951288.jsx)(Chunk481060.whL, {
         size: "md",
@@ -174,14 +174,14 @@ class N extends Chunk647438.PureComponent {
       id: Chunk149203.vO,
       role: "tabpanel",
       "aria-labelledby": Chunk149203._3,
-      className: o()(Chunk577021.container, module),
+      className: o()(Chunk709637.container, module),
       onClick: C,
       ref: exports,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk577021.header,
+        className: Chunk709637.header,
         children: this.renderHeader()
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk577021.content,
+        className: Chunk709637.content,
         children: this.renderContent()
       })]
     })
@@ -251,7 +251,7 @@ let R = Chunk647438.forwardRef((e, t) => {
       var e;
       null == (e = g.current) || e.focus()
     }
-  }, [d, g]), (0, r.jsx)(N, A(S({}, e), {
+  }, [d, g]), (0, r.jsx)(N, A(T({}, e), {
     forwardedRef: t,
     query: f,
     resultQuery: a,

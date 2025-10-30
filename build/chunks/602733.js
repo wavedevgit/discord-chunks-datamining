@@ -7,7 +7,7 @@ require.d(exports, {
   ao: () => R,
   kZ: () => I,
   lr: () => v,
-  ny: () => S,
+  ny: () => T,
   zL: () => y
 }), require("./388685.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
@@ -51,11 +51,11 @@ function I(e, t) {
   }
 }
 
-function S(e, t) {
+function T(e, t) {
   return (0, o.e7)([m.Z], () => null != e && m.Z.hasSkuId(e, t))
 }
 
-function T(e) {
+function S(e) {
   if (null == e.items || 0 === e.items.length) return null;
   let t = {
     sku_id: e.skuId,
@@ -153,7 +153,7 @@ function N(e) {
       let e = new Set(s.map(e => e.skuId)),
         t = n.filter(t => !e.has(t.skuId));
       for (let e = 0; e < t.length && l.length < y; e++) {
-        let n = T(t[e]);
+        let n = S(t[e]);
         null !== n && l.push({
           item: n,
           source: "popular"

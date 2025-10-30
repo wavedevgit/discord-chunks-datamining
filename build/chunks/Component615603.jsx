@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk387473 = require("./387473.js");
+  Chunk79665 = require("./79665.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,7 +78,7 @@ function D(e) {
     premiumSubscription: s,
     useReducedMotion: d,
     fractionalState: f
-  } = e, _ = i.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), p = (0, b.tl)(t), h = (null == s ? true : s.isPaused) === true && f === T.a$.NONE, m = A.intl.string(A.t.mOWsF1);
+  } = e, _ = i.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), p = (0, b.tl)(t), h = (null == s ? true : s.isPaused) === true && f === S.a$.NONE, m = A.intl.string(A.t.mOWsF1);
   return (0, r.jsxs)("li", {
     className: C.unappliedGuildBoostSlot,
     children: [(0, r.jsxs)("div", {
@@ -137,14 +137,14 @@ function D(e) {
   }, t.id)
 }
 
-function L(e) {
+function x(e) {
   (0, u.ZDy)(async () => t => (0, r.jsx)(_.default, w(R({}, t), {
     guildBoostSlots: [e],
-    locationSection: S.jXE.SETTINGS_PREMIUM
+    locationSection: T.jXE.SETTINGS_PREMIUM
   })))
 }
 
-function x(e) {
+function L(e) {
   (0, u.ZDy)(async () => t => (0, r.jsx)(p.default, w(R({}, t), {
     guildBoostSlot: e
   })))
@@ -166,8 +166,8 @@ let k = function(e) {
     } = (0, f.Z)(),
     v = (0, s.e7)([d.Z], () => d.Z.useReducedMotion),
     I = (0, s.e7)([g.default], () => g.default.getCurrentUser()),
-    S = h === T.a$.FP_SUB_PAUSED,
-    N = p && !S,
+    T = h === S.a$.FP_SUB_PAUSED,
+    N = p && !T,
     {
       appliedGuildBoostSlots: P,
       unappliedGuildBoostSlots: k,
@@ -228,7 +228,7 @@ let k = function(e) {
   } else n = G ? A.intl.string(A.t["8pcUZi"]) : A.intl.formatToPlainString(A.t.Kaw82o, {
     numUnappliedGuildBoostSlots: K
   });
-  return a = p && h === T.a$.NONE ? A.intl.string(A.t.mOWsF1) : A.intl.string(A.t.xr4m5B), (0, r.jsx)("div", {
+  return a = p && h === S.a$.NONE ? A.intl.string(A.t.mOWsF1) : A.intl.string(A.t.xr4m5B), (0, r.jsx)("div", {
     className: C.wrapper,
     children: (0, r.jsxs)("div", {
       className: o()(C.content, [C.headerWithoutSpecialHeader]),
@@ -263,7 +263,7 @@ let k = function(e) {
               text: A.intl.string(A.t.BMx1iy)
             }, e), {
               disabled: null == W || N,
-              onClick: null != W ? () => L(W) : true
+              onClick: null != W ? () => x(W) : true
             }))
           })
         })]
@@ -272,7 +272,7 @@ let k = function(e) {
         children: k.map(e => (0, r.jsx)(D, {
           guildBoostSlot: e,
           isCancellable: F,
-          onCancel: x,
+          onCancel: L,
           onUncancel: M,
           premiumSubscription: _,
           useReducedMotion: v,

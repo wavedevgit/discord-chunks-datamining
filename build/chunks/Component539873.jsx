@@ -19,8 +19,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk441319 = require("./441319.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk339637 = require("./339637.js"),
-  Chunk226518 = require("./226518.js");
+  Chunk871976 = require("./871976.js"),
+  Chunk5874 = require("./5874.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,9 +61,9 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,7 +71,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -85,7 +85,7 @@ function A(e) {
     disabled: n,
     isEditor: y,
     renderCTAButtons: v
-  } = e, [T] = (0, a.Wu)([_.Z], () => [_.Z.getCurrentDesktopIcon()]), A = (0, f.T)("app_icons_settings_web"), C = i.useRef(null);
+  } = e, [S] = (0, a.Wu)([_.Z], () => [_.Z.getCurrentDesktopIcon()]), A = (0, f.T)("app_icons_settings_web"), C = i.useRef(null);
   (0, d.Z)(C, m.h1.CUSTOM_APP_ICONS);
   let N = (0, c.Dt)(),
     R = (0, o.Jb)({
@@ -95,7 +95,7 @@ function A(e) {
     {
       ref: P
     } = R,
-    w = S(R, ["ref"]),
+    w = T(R, ["ref"]),
     D = e => {
       l.Z.dispatch({
         type: "APP_ICON_UPDATED",
@@ -142,7 +142,7 @@ function A(e) {
             return !t
           }).map((e, t) => (0, r.jsx)(p.Z, {
             icon: e,
-            isSelected: T === e.id,
+            isSelected: S === e.id,
             onSelect: e => D(e),
             disabled: n,
             tabIndex: 0 !== t || n ? true : 0,

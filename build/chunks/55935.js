@@ -2,7 +2,7 @@
 /** chunk id: 55935, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Hg: () => S,
+  Hg: () => T,
   KC: () => m,
   QX: () => C,
   TD: () => A,
@@ -90,7 +90,7 @@ function I(e) {
   return i().isMoment(e) ? e.toDate() : e
 }
 
-function S(e) {
+function T(e) {
   let t, n = i().localeData(),
     r = new Date,
     a = h(e, r);
@@ -99,7 +99,7 @@ function S(e) {
 Chunk706454.default.addChangeListener(() => {
   _ = Object.create(null)
 });
-let T = [{
+let S = [{
   key: "days",
   millisecondsInUnit: 864e5
 }, {
@@ -123,7 +123,7 @@ function A(e, t) {
     };
   if (e > t || n && Number(e) + 1200 > Number(t)) return r;
   let i = Number(t) - Number(e);
-  return T.forEach(e => {
+  return S.forEach(e => {
     let {
       key: t,
       millisecondsInUnit: n

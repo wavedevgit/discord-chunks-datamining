@@ -25,7 +25,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk987650 = require("./987650.js"),
   Chunk757744 = require("./757744.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,14 +34,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -68,8 +68,8 @@ let N = new Chunk710845.Z("OverlayV3Store"),
   P = new Set,
   w = null,
   D = null,
-  L = null,
   x = null,
+  L = null,
   M = null,
   k = null,
   j = null,
@@ -140,7 +140,7 @@ function K(e) {
 
 function z() {
   var e;
-  null != M && x === M && null != w && (M = null, (0, Chunk932404.PY)(x, "renderer_window_refreshing_finished"), null == (e = w.readyToShow) || module.call(w, x), Chunk13245.Z.updateOverlayState(x, Chunk837268.mM.OVERLAY_RENDERING), N.verbose("Showing overlay v3 for pid ".concat(x)))
+  null != M && L === M && null != w && (M = null, (0, Chunk932404.PY)(L, "renderer_window_refreshing_finished"), null == (e = w.readyToShow) || module.call(w, L), Chunk13245.Z.updateOverlayState(L, Chunk837268.mM.OVERLAY_RENDERING), N.verbose("Showing overlay v3 for pid ".concat(L)))
 }
 
 function q(e, t) {
@@ -177,7 +177,7 @@ function J(e) {
 }
 
 function $(e) {
-  Z = C(T({}, Z), {
+  Z = C(S({}, Z), {
     windowHandleSentToNative: e
   }), e && (o.Z.updateOverlayState((0, d.getPID)(), f.mM.WAITING_FOR_REACT_INITIALIZATION), (0, _.bs)((0, d.getPID)(), "window_handle_initialized")), ev.emitChange()
 }
@@ -200,7 +200,7 @@ function ei(e) {
   let {
     createWindowTriggeringPID: t
   } = e;
-  Z = C(T({}, Z), {
+  Z = C(S({}, Z), {
     popoutOpened: true
   }), K(t), k = t, (0, d.setPID)(t)
 }
@@ -219,7 +219,7 @@ function eo(e) {
     error: n,
     nativeWindowHandle: r
   } = e;
-  o.Z.updateOverlayState(t, f.mM.OVERLAY_CRASHED_DISABLED), Z = C(T({}, Z), {
+  o.Z.updateOverlayState(t, f.mM.OVERLAY_CRASHED_DISABLED), Z = C(S({}, Z), {
     errorMessage: "Error in _createOutOfProcessOverlayHostWindow: " + n
   }), (0, _.bs)(t, "renderer_window_mounting_failed", {
     error: n,
@@ -251,26 +251,26 @@ function ed(e) {
     pid: t,
     windowHandle: n
   } = e;
-  if (D !== t || L !== n) {
+  if (D !== t || x !== n) {
     var r;
     (0, _.bs)(null != (r = null != t ? t : D) ? r : d.UNSET_PID, "overlay_focused", {
       focusedPID: t,
-      focusedWindowHandle: L,
+      focusedWindowHandle: x,
       windowHandle: n
     })
   }
-  return D = t, L = n, true
+  return D = t, x = n, true
 }
 
 function ef() {
   var e;
-  Z = C(T({}, Z), {
+  Z = C(S({}, Z), {
     showInactiveCalled: true
   }), null == w || null == (e = w.onNativePopoutShowInactiveSuccess) || module.call(w)
 }
 
 function e_() {
-  Z = C(T({}, Z), {
+  Z = C(S({}, Z), {
     allDone: true
   }), P.forEach(e => {
     Q(e)
@@ -281,7 +281,7 @@ function ep(e) {
   let {
     update: t
   } = e;
-  Z = T({}, Z, t)
+  Z = S({}, Z, t)
 }
 
 function eh(e) {
@@ -289,7 +289,7 @@ function eh(e) {
     pid: t,
     windowHandle: n
   } = e;
-  if (x = t, z(), null != n && null != w) {
+  if (L = t, z(), null != n && null != w) {
     var r;
     null == (r = w.setRenderingWindowHandle) || r.call(w, (0, y.rd)(n), t)
   }
@@ -342,7 +342,7 @@ class eO extends(r = Chunk442837.ZP.Store) {
     return D
   }
   getFocusedWindowHandle() {
-    return L
+    return x
   }
   isFocused(e) {
     return null != D && e !== d.UNSET_PID && (!!R.has(e) || e === d.DEV_PID) && D === e
@@ -373,7 +373,7 @@ class eO extends(r = Chunk442837.ZP.Store) {
     return null != (t = G[e]) ? t : null
   }
 }
-S(eO, "displayName", "Overlay-V3-Store");
+T(eO, "displayName", "Overlay-V3-Store");
 let ev = new eO(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
     OVERLAY_UPDATE_OVERLAY_METHOD: em,
     OVERLAY_UPDATE_OVERLAY_STATE: eg,

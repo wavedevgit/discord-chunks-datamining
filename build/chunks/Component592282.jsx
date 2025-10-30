@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk670596 = require("./670596.js"),
   Chunk743236 = require("./743236.js"),
   Chunk939350 = require("./939350.js"),
-  Chunk334405 = require("./334405.js");
+  Chunk515527 = require("./515527.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,7 +72,7 @@ function g(e) {
   i.useEffect(() => {
     g && (0, u.F)(I)
   }, [g]);
-  let S = i.useCallback(e => {
+  let T = i.useCallback(e => {
     b(e), null == v || v({
       type: c.U.CHECKBOX
     })
@@ -84,7 +84,7 @@ function g(e) {
       [f.focused]: g,
       [null != O ? O : ""]: g
     }),
-    onClick: h ? true : S
+    onClick: h ? true : T
   }, E), {
     "aria-checked": a,
     "aria-disabled": h,

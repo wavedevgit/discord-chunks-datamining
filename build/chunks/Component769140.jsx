@@ -39,8 +39,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk704543 = require("./704543.js"),
-  Chunk936524 = require("./936524.js"),
+  Chunk663907 = require("./663907.js"),
+  Chunk875055 = require("./875055.js"),
   Chunk924482 = require("./924482.js"),
   Chunk774797 = require("./774797.js");
 
@@ -54,14 +54,14 @@ function Z(e) {
   } = e, {
     themeType: V,
     theme: H
-  } = (0, C.z)(), Y = (0, o.e7)([O.Z], () => O.Z.getGuild(null == i ? true : i.guildId)), W = (0, o.e7)([y.Z], () => y.Z.getChannel(null == i ? true : i.channelId)), K = (0, o.Wu)([S.ZP], () => null != W ? S.ZP.getVoiceStatesForChannel(W).map(e => {
+  } = (0, C.z)(), Y = (0, o.e7)([O.Z], () => O.Z.getGuild(null == i ? true : i.guildId)), W = (0, o.e7)([y.Z], () => y.Z.getChannel(null == i ? true : i.channelId)), K = (0, o.Wu)([T.ZP], () => null != W ? T.ZP.getVoiceStatesForChannel(W).map(e => {
     let {
       user: t
     } = e;
     return t
   }) : []), z = (0, o.e7)([I.Z], () => I.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
     analyticsLocations: q
-  } = (0, m.ZP)(h.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), X = (0, T.Z)({
+  } = (0, m.ZP)(h.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), X = (0, S.Z)({
     display: "live",
     voiceChannelId: null == W ? true : W.id,
     user: t,
@@ -73,7 +73,7 @@ function Z(e) {
   }), {
     previewUrl: J,
     isLoading: $
-  } = (0, E.Z)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.wq)(W), en = (0, p.Kt)() && (0, p.zd)(null == W ? true : W.id), er = (0, o.e7)([v.Z], () => null != W && !en && v.Z.canBasicChannel(x.S7T.CONNECT, W)), ei = (0, d.Z)($ ? null : J), ea = $ || null == J ? ei : J;
+  } = (0, E.Z)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.wq)(W), en = (0, p.Kt)() && (0, p.zd)(null == W ? true : W.id), er = (0, o.e7)([v.Z], () => null != W && !en && v.Z.canBasicChannel(L.S7T.CONNECT, W)), ei = (0, d.Z)($ ? null : J), ea = $ || null == J ? ei : J;
   if (null == Y || null == W || false === i.discoverable) return null;
   let eo = () => {
       let e = e => {
@@ -91,7 +91,7 @@ function Z(e) {
         "aria-disabled": !ee,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: H === x.BRd.LIGHT ? B : G
+          src: H === L.BRd.LIGHT ? B : G
         }), V !== M.l.MODAL && V !== M.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
             className: U.overlayText,
@@ -181,7 +181,7 @@ function Z(e) {
         tags: (0, r.jsx)(g.ZP, {
           size: g.OH.SMALL
         }),
-        contextMenu: (0, r.jsx)(L.Z, {
+        contextMenu: (0, r.jsx)(x.Z, {
           display: "live",
           user: t,
           onClose: F

@@ -32,8 +32,8 @@ function g(e, t, n) {
     allowNsfw: g,
     computedPermissions: v,
     userId: I,
-    roleIds: S,
-    isImpersonating: T,
+    roleIds: T,
+    isImpersonating: S,
     hasBaseAccessPermissions: A
   } = t, {
     applicationAllowedForUser: C,
@@ -56,17 +56,17 @@ function g(e, t, n) {
       })) return 3
   }
   if (e.applicationId === p.bi.BUILT_IN) return 0;
-  let L = null != l ? (0, _.ny)(l) : true;
-  if (null == L || o.e$(v, h.Plq.ADMINISTRATOR) || P && (null == (r = e.integration_types) ? true : r.includes(a.Y.USER_INSTALL))) return 0;
+  let x = null != l ? (0, _.ny)(l) : true;
+  if (null == x || o.e$(v, h.Plq.ADMINISTRATOR) || P && (null == (r = e.integration_types) ? true : r.includes(a.Y.USER_INSTALL))) return 0;
   if (!A && R && (null == e.integration_types || e.integration_types.includes(a.Y.GUILD_INSTALL))) return 5;
   if (l instanceof c.Sf) {
     i()(true !== N, "missing applicationAllowedForChannel");
-    let t = y(e.permissions, l, L);
+    let t = y(e.permissions, l, x);
     if (b(t) || !E(t) && b(N)) return 6
   }
-  let x = O(e.permissions, L, I, S, T);
-  if (E(x)) return 0;
-  if (b(x) || b(C)) return 7;
+  let L = O(e.permissions, x, I, T, S);
+  if (E(L)) return 0;
+  if (b(L) || b(C)) return 7;
   if (null != e.defaultMemberPermissions && !(!o.fS(e.defaultMemberPermissions, f.BO) && o.e$(v, e.defaultMemberPermissions))) return 7;
   return 0
 }

@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk78946 = require("./78946.js");
+  Chunk445143 = require("./445143.js");
 
 function y(e) {
   let {
@@ -31,8 +31,8 @@ function y(e) {
     sectionTitle: O,
     forcedDivider: v = false,
     withTutorial: I = false,
-    showBorder: S = false,
-    isTryItOutFlow: T = false
+    showBorder: T = false,
+    isTryItOutFlow: S = false
   } = e, A = (0, _.Kg)(t, n), C = f.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: N
   } = (0, c.ZP)(), {
@@ -50,9 +50,9 @@ function y(e) {
     })
   }, [C, N]);
   let D = null != n,
-    L = T || true !== R ? null != R : null != A;
+    x = S || true !== R ? null != R : null != A;
 
-  function x() {
+  function L() {
     (0, _.UK)(null, A, null == n ? true : n.id)
   }
   let M = I ? l.gtL : s.zx;
@@ -61,7 +61,7 @@ function y(e) {
     borderType: h.Y.PREMIUM,
     hasBackground: true,
     title: O,
-    showBorder: S,
+    showBorder: T,
     errors: P,
     className: y,
     children: (0, r.jsxs)("div", {
@@ -73,14 +73,14 @@ function y(e) {
           [b.buttonHighlighted]: I
         }),
         children: E.intl.string(E.t["/dRfCf"])
-      }), L && (0, r.jsx)("div", {
+      }), x && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: b.removeButton,
         children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
           text: D ? E.intl.string(E.t.CHf9iJ) : E.intl.string(E.t.uMuafO),
-          onClick: x
+          onClick: L
         })
       })]
     })

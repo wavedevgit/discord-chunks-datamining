@@ -33,7 +33,7 @@ function O(e, t, n) {
 let v = {},
   I = new Set;
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) returnfalse;
   let n = b.default.getCurrentUser();
   if (null == n) returnfalse;
@@ -41,13 +41,13 @@ function S(e, t) {
   return null != r && r.roles.includes(e.id)
 }
 
-function T(e) {
+function S(e) {
   let {
     guildId: t,
     role: n,
     isPreviewingRoles: r
   } = e;
-  return !!(0, u.Z)(n) && !!(r || (0, u.h)(null != n ? n : true) || S(n, t))
+  return !!(0, u.Z)(n) && !!(r || (0, u.h)(null != n ? n : true) || T(n, t))
 }
 
 function A(e, t) {
@@ -55,7 +55,7 @@ function A(e, t) {
   let n = f.Z.isViewingServerShop(t.id);
   for (let r of Object.keys(e.permissionOverwrites)) {
     let i = g.Z.getRole(t.id, r);
-    if (!T({
+    if (!S({
         guildId: t.id,
         role: i,
         isPreviewingRoles: n
@@ -68,7 +68,7 @@ function A(e, t) {
     a = (0, d.wB)(e, e.permissionOverwrites[t.id]);
   if (i && !a) {
     for (let e of g.Z.getSortedRoles(t.id))
-      if (T({
+      if (S({
           guildId: t.id,
           role: e,
           isPreviewingRoles: n
@@ -126,7 +126,7 @@ function D(e) {
   return null != t.guild_id && N(t.guild_id, t.id)
 }
 
-function L(e) {
+function x(e) {
   let {
     channels: t
   } = e, n = false;
@@ -134,7 +134,7 @@ function L(e) {
   return n
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     restrictions: n
@@ -184,7 +184,7 @@ let j = new k(Chunk570140.Z, {
   IMPERSONATE_STOP: w,
   CHANNEL_CREATE: D,
   CHANNEL_DELETE: D,
-  CHANNEL_UPDATES: L,
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: x,
+  CHANNEL_UPDATES: x,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: L,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: M
 })

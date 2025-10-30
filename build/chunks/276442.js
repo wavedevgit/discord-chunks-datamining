@@ -73,8 +73,8 @@ function O(e) {
   } = e, {
     contextMetadata: v,
     step: I,
-    paymentSources: S,
-    paymentSourceId: T,
+    paymentSources: T,
+    paymentSourceId: S,
     setPaymentSourceId: A,
     purchaseError: C,
     setPurchaseError: N,
@@ -82,14 +82,14 @@ function O(e) {
     paymentAuthenticationState: P,
     selectedSkuId: w,
     activeSubscription: D,
-    previousStepRef: L,
-    setPurchaseState: x,
+    previousStepRef: x,
+    setPurchaseState: L,
     paymentElementsEnabled: M
   } = (0, d.JL)(), {
     isGift: k
   } = (0, u.wD)(), j = b(g({}, (0, s.fL)()), {
-    paymentSources: S,
-    paymentSourceId: T,
+    paymentSources: T,
+    paymentSourceId: S,
     setPaymentSourceId: A,
     purchaseError: C,
     setPurchaseError: N,
@@ -98,13 +98,13 @@ function O(e) {
     selectedSkuId: w,
     isGift: k
   }), U = (0, o.N)(m), G = !k && null != U && null != w && h.nG[U.trial_id].skus.includes(w), B = () => {
-    c(Object.values(S).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
+    c(Object.values(T).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
       trackedFromStep: M ? f.h8.PAYMENT_ELEMENT : f.h8.PAYMENT_TYPE
     })
   }, Z = null != E ? E : B;
   i()(I, "Step should be set here");
   let F = (0, a.Z)(() => Date.now(), [I]),
-    V = (0, a.Z)(() => null != O && null == L.current ? M && O === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : O : f.h8.PAYMENT_TYPE, [O, L.current, M]);
+    V = (0, a.Z)(() => null != O && null == x.current ? M && O === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : O : f.h8.PAYMENT_TYPE, [O, x.current, M]);
   return (0, s.vP)({
     paymentModalArgs: j,
     initialStep: V,
@@ -116,7 +116,7 @@ function O(e) {
     analyticsData: t,
     onReturn: Z,
     onComplete: e => {
-      f.Nj.has(e) ? (x(_.A.COMPLETED), c(f.h8.CONFIRM, {
+      f.Nj.has(e) ? (L(_.A.COMPLETED), c(f.h8.CONFIRM, {
         trackedFromStep: e
       })) : c(f.h8.REVIEW, {
         trackedFromStep: e

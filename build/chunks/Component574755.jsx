@@ -35,8 +35,8 @@ function O(e) {
     autoTrackExposure: false
   }), {
     analyticsLocations: I
-  } = (0, l.ZP)(), S = (0, _.Go)(), {
-    viewerClipsEnabled: T
+  } = (0, l.ZP)(), T = (0, _.Go)(), {
+    viewerClipsEnabled: S
   } = (0, a.cj)([p.Z], () => p.Z.getSettings()), A = (0, h.Z)(f.Z);
   return i.useEffect(() => {
     (0, c.Q3)(o.z.CLIPS_SETTINGS_BETA_TAG)
@@ -44,19 +44,19 @@ function O(e) {
     value: I,
     children: (0, r.jsxs)(s.Kqy, {
       gap: 20,
-      children: [(S || n) && (0, r.jsxs)("div", {
+      children: [(T || n) && (0, r.jsxs)("div", {
         className: t,
         children: [n ? (0, r.jsxs)(s.Heading, {
           variant: "heading-lg/semibold",
           children: [y.intl.string(y.t.z2jK6X), " ", (0, r.jsx)(g.Z, {})]
-        }) : null, S && (0, r.jsx)("form", {
+        }) : null, T && (0, r.jsx)("form", {
           onSubmit: e => e.preventDefault(),
           children: (0, r.jsxs)(s.Kqy, {
             gap: 24,
             children: [(0, r.jsx)(E.Z, {}), (0, r.jsx)(b.Z, {})]
           })
         })]
-      }), S && (0, r.jsx)(s.izJ, {}), (0, r.jsxs)(s.Kqy, {
+      }), T && (0, r.jsx)(s.izJ, {}), (0, r.jsxs)(s.Kqy, {
         gap: 16,
         children: [(0, r.jsx)(s.rsf, {
           label: y.intl.string(y.t.AGDDkH),
@@ -68,7 +68,7 @@ function O(e) {
         }), v && A && (0, r.jsx)(s.rsf, {
           label: y.intl.string(y.t.NWw7kY),
           description: y.intl.string(y.t["0vjy8N"]),
-          checked: T,
+          checked: S,
           onChange: e => m.yl({
             enabled: e,
             trackAnalytics: true

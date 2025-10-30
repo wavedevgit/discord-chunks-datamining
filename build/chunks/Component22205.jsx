@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk534887 = require("./534887.js");
+  Chunk460063 = require("./460063.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -49,9 +49,9 @@ let D = o().throttle(() => {
   }, 100, {
     trailing: false
   }),
-  L = 10 * Chunk70956.Z.Millis.SECOND;
+  x = 10 * Chunk70956.Z.Millis.SECOND;
 
-function x(e) {
+function L(e) {
   var t, n;
   let {
     error: a,
@@ -60,12 +60,12 @@ function x(e) {
     onDisable: c,
     onCrashDisabled: u
   } = e, _ = i.useMemo(() => new s.SpringValue(1), []), m = i.useRef(null), [g, y] = i.useState(false), [O, v] = i.useState(false), I = (0, d.e7)([E.default], () => E.default.getCurrentUser());
-  (0, h.ZP)(() => (m.current = setTimeout(S, L), p.Z.track(N.rMx.NOTIFICATION_VIEWED, {
+  (0, h.ZP)(() => (m.current = setTimeout(T, x), p.Z.track(N.rMx.NOTIFICATION_VIEWED, {
     notif_type: C.n0.OverlayCrashed
   }), () => {
     null != m.current && clearTimeout(m.current)
   }));
-  let S = i.useCallback(() => {
+  let T = i.useCallback(() => {
       _.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == o || o(), null == u || u()
     }, [_, o, u]),
     w = i.useCallback(e => {
@@ -77,10 +77,10 @@ function x(e) {
     D = i.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (y(true), null != m.current && clearTimeout(m.current)) : y(false)
     }, [y]),
-    x = i.useCallback(e => {
+    L = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
-    M = (0, d.e7)([T.Z], () => T.Z.getFocusedRunningGame()),
+    M = (0, d.e7)([S.Z], () => S.Z.getFocusedRunningGame()),
     k = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
@@ -119,7 +119,7 @@ function x(e) {
     }),
     onNotificationClick: D,
     onConfirmClick: w,
-    onCancelClick: null != M ? x : true,
+    onCancelClick: null != M ? L : true,
     onDismissClick: o,
     expand: true,
     locked: true,
@@ -165,8 +165,8 @@ class M extends Chunk647438.PureComponent {
       showError: i
     } = this.state;
     return null != require ? Chunk647438 ? (0, Chunk951288.jsx)(Chunk333031.Z, {
-      className: Chunk534887.errorClickNotification,
-      children: (0, Chunk951288.jsx)(x, {
+      className: Chunk460063.errorClickNotification,
+      children: (0, Chunk951288.jsx)(L, {
         error: require,
         onLock: () => {
           var e;

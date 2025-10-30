@@ -81,7 +81,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk610674 = require("./610674.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk655227 = require("./655227.js");
+  Chunk627881 = require("./627881.js");
 
 function eA(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -126,19 +126,19 @@ let eP = e => {
     let {
       error: n,
       allowClick: i = false
-    } = e, a = null == (t = (0, k.hp)(n)) ? true : t.errorCode, o = eS.intl.formatToPlainString(eS.t.ejOT95, {
+    } = e, a = null == (t = (0, k.hp)(n)) ? true : t.errorCode, o = eT.intl.formatToPlainString(eT.t.ejOT95, {
       errorCode: a
     }), s = (0, r.jsx)(u.Text, {
       variant: "text-sm/bold",
       color: "currentColor",
       tag: "span",
-      className: eT.errorCodeNoticeText,
+      className: eS.errorCodeNoticeText,
       selectable: true,
       children: o
     });
     return i ? (0, r.jsx)(u.P3F, {
       tag: "span",
-      className: eT.errorCodeNoticeClickable,
+      className: eS.errorCodeNoticeClickable,
       onClick: () => i && open(eE.Z.getArticleURL(ey.BhN.AV_ERROR_CODES)),
       children: s
     }) : s
@@ -157,8 +157,8 @@ let eP = e => {
     })]
   }),
   eD = "ms-settings:sound-properties",
-  eL = e => "".concat(eD, "?endpointId=").concat(e),
-  ex = e => {
+  ex = e => "".concat(eD, "?endpointId=").concat(e),
+  eL = e => {
     let {
       deviceGuid: t
     } = e;
@@ -168,11 +168,11 @@ let eP = e => {
         onClick: () => {
           eG(), (0, el.b)()
         }
-      }), eS.intl.string(eS.t.ppW3ri), (0, r.jsx)(eP, {
+      }), eT.intl.string(eT.t.ppW3ri), (0, r.jsx)(eP, {
         error: k.u.NO_AUDIO_INPUT_DETECTED
       }), (0, r.jsx)(u.u3T, {
-        href: eL(t),
-        children: eS.intl.string(eS.t.pxYBbM)
+        href: ex(t),
+        children: eT.intl.string(eT.t.pxYBbM)
       })]
     })
   },
@@ -186,11 +186,11 @@ let eP = e => {
         onClick: () => {
           eG(), (0, el.b)()
         }
-      }), eS.intl.string(eS.t.j4gGA4), (0, r.jsx)(eP, {
+      }), eT.intl.string(eT.t.j4gGA4), (0, r.jsx)(eP, {
         error: k.u.NO_AUDIO_INPUT_DETECTED
       }), (0, r.jsx)(u.u3T, {
-        href: eL(t),
-        children: eS.intl.string(eS.t.pxYBbM)
+        href: ex(t),
+        children: eT.intl.string(eT.t.pxYBbM)
       })]
     })
   },
@@ -272,7 +272,7 @@ let eZ = Chunk647438.memo(function() {
   }, [Chunk100527]);
   let eN = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT),
     [eP, eD] = Chunk647438.useState(""),
-    [eL, eZ] = Chunk647438.useState(null),
+    [ex, eZ] = Chunk647438.useState(null),
     [eF, eV] = Chunk647438.useState(null);
   Chunk647438.useEffect(() => {
     if ((0, Chunk358085.isWindows)() && eA) {
@@ -427,7 +427,7 @@ let eZ = Chunk647438.memo(function() {
           noticeType: Chunk981631.kVF.SPOTIFY_AUTO_PAUSED
         }), (0, Chunk951288.jsx)("img", {
           alt: "",
-          className: Chunk655227.platformIcon,
+          className: Chunk627881.platformIcon,
           src: e$.icon.whiteSVG
         }), Chunk388032.intl.string(Chunk388032.t.D8Cp76), (0, Chunk951288.jsx)(Chunk481060.NoS, {
           onClick: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
@@ -436,7 +436,7 @@ let eZ = Chunk647438.memo(function() {
           noticeType: Chunk981631.kVF.SPOTIFY_AUTO_PAUSED,
           children: Chunk388032.intl.string(Chunk388032.t.NiTd0e)
         }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
-          className: Chunk655227.textLinkSmall,
+          className: Chunk627881.textLinkSmall,
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SPOTIFY_AUTO_PAUSED),
           target: "_blank",
           children: Chunk388032.intl.string(Chunk388032.t.CiqAIU)
@@ -483,7 +483,7 @@ let eZ = Chunk647438.memo(function() {
       });
     case Chunk981631.kVF.NO_INPUT_DETECTED:
       if ((0, Chunk358085.isWindows)() && eA) {
-        if (true === eL) return (0, Chunk951288.jsx)(ex, {
+        if (true === ex) return (0, Chunk951288.jsx)(eL, {
           deviceGuid: eP
         });
         else if (0 === eF) return (0, Chunk951288.jsx)(eM, {
@@ -546,8 +546,8 @@ let eZ = Chunk647438.memo(function() {
     case Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK:
       if (null == Chunk100527.metadata) return null;
       let {
-        skuId: e3, applicationId: e2
-      } = Chunk100527.metadata, e4 = Chunk55563.Z.get(e3), e8 = Chunk812206.Z.getApplication(e2);
+        skuId: e2, applicationId: e3
+      } = Chunk100527.metadata, e4 = Chunk55563.Z.get(e2), e8 = Chunk812206.Z.getApplication(e3);
       if (null == e4 || null == e8) return null;
       let e5 = {
         page: Chunk981631.ZY5.IN_APP
@@ -560,7 +560,7 @@ let eZ = Chunk647438.memo(function() {
         }), (0, Chunk951288.jsx)(Chunk481060.SrA, {
           size: "md",
           color: "currentColor",
-          className: Chunk655227.premiumIcon
+          className: Chunk627881.premiumIcon
         }), Chunk388032.intl.format(Chunk388032.t["g3MU/+"], {
           applicationName: e8.name,
           skuName: e4.name
@@ -599,7 +599,7 @@ let eZ = Chunk647438.memo(function() {
         }), (0, Chunk951288.jsx)(Chunk481060.SrA, {
           size: "md",
           color: "currentColor",
-          className: Chunk655227.premiumIcon
+          className: Chunk627881.premiumIcon
         }), Chunk388032.intl.format(Chunk388032.t.LquIKC, {
           applicationName: Chunk647438.name,
           skuName: require.name
@@ -714,7 +714,7 @@ let eZ = Chunk647438.memo(function() {
             total: e9
           }), (0, Chunk951288.jsx)(Chunk481060.$jN, {
             type: Chunk481060.$jN.Type.PULSING_ELLIPSIS,
-            className: Chunk655227.ellipsis
+            className: Chunk627881.ellipsis
           })]
         })]
       });
@@ -746,7 +746,7 @@ let eZ = Chunk647438.memo(function() {
             })
           }), (0, Chunk951288.jsx)(Chunk69499.Z, {
             dropdownSize: Chunk69499.E.DropdownSizes.SMALL,
-            className: Chunk655227.testModeSKUSelector,
+            className: Chunk627881.testModeSKUSelector,
             color: Chunk69499.E.Colors.WHITE,
             look: Chunk69499.E.Looks.OUTLINED,
             size: Chunk69499.E.Sizes.MIN,
@@ -779,7 +779,7 @@ let eZ = Chunk647438.memo(function() {
         }), (0, Chunk951288.jsx)(Chunk481060.SrA, {
           size: "md",
           color: "currentColor",
-          className: Chunk655227.premiumIcon
+          className: Chunk627881.premiumIcon
         }), ez === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.fXv4wm, {
           daysLeft: Chunk100527.metadata.daysLeft
         }) : ez === Chunk474936.PremiumTypes.TIER_0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.ZOHZMr, {
@@ -793,7 +793,7 @@ let eZ = Chunk647438.memo(function() {
             eG(null == (t = Chunk100527.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk481060.ZDy)(async () => {
               let {
                 default: e
-              } = await Promise.all([require.e("17938"), require.e("84992"), require.e("11394")]).then(require.bind(require, 561623));
+              } = await Promise.all([require.e("17938"), require.e("84992"), require.e("12222")]).then(require.bind(require, 561623));
               return t => (0, r.jsx)(e, eR(eC({}, t), {
                 daysLeft: A.metadata.daysLeft,
                 premiumType: ez,
@@ -916,7 +916,7 @@ let eZ = Chunk647438.memo(function() {
         }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUARANTINE),
           target: "_blank",
-          className: Chunk655227.quarantineLearnMoreLink,
+          className: Chunk627881.quarantineLearnMoreLink,
           children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
         })]
       });

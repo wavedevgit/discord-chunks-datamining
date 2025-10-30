@@ -53,7 +53,7 @@ function p(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = ["gameMentionInput"];
+let h = ["gameMentionInput", "timestampMentionInput"];
 
 function m() {
   return {
@@ -69,7 +69,7 @@ class g extends Chunk836560.EventEmitter {
       n = this.props.channel.id !== e.channel.id || this.props.activeCommandOption !== e.activeCommandOption || this.props.activeInlineAutocompleteInput !== e.activeInlineAutocompleteInput,
       r = !this.state.didInitialQuery || this.props.currentWord !== e.currentWord || this.props.currentWordIsAtStart !== e.currentWordIsAtStart || this.props.currentFullWord !== e.currentFullWord || this.props.textValue !== e.textValue || this.props.optionText !== e.optionText,
       i = this.props.isEditorIdle !== e.isEditorIdle;
-    if (this.props = e, n || r || i) this.updateResults(r, n), this.state.didInitialQuery || (this.state = p(f({}, this.state), {
+    if (this.props = e, n || r || i) this.updateResultsDebounced(r, n), this.state.didInitialQuery || (this.state = p(f({}, this.state), {
       didInitialQuery: true
     }));
     else if (t) {
@@ -124,10 +124,19 @@ class g extends Chunk836560.EventEmitter {
     })
   }
   queryResults() {
-    this.updateResults()
+    this.updateResultsDebounced()
   }
   isVisible() {
     return this.state.isVisible
+  }
+  updateResultsDebounced() {
+    let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
+      t = arguments.length > 1 && true !== arguments[1] && arguments[1];
+    null != this.updateTimeout && clearTimeout(this.updateTimeout);
+    let n = this;
+    this.nextUpdateQueryChanged = this.nextUpdateQueryChanged || module, this.nextUpdateContextChanged = this.nextUpdateContextChanged || exports, this.updateTimeout = setTimeout(() => {
+      require.updateResults(this.nextUpdateQueryChanged, this.nextUpdateContextChanged), this.nextUpdateQueryChanged = false, this.nextUpdateContextChanged = false, this.updateTimeout = true
+    }, 0)
   }
   updateResults() {
     var e, t;
@@ -161,26 +170,26 @@ class g extends Chunk836560.EventEmitter {
     f.allowSoundmoji = f.allowSoundmoji ? v : f.allowSoundmoji;
     let {
       results: I,
-      metadata: S
-    } = E.queryResults(this.props.channel, this.props.guild, b, f, y), T = 0;
-    for (let e of Object.values(I)) Array.isArray(module) && (T += module.length);
+      metadata: T
+    } = E.queryResults(this.props.channel, this.props.guild, b, f, y), S = 0;
+    for (let e of Object.values(I)) Array.isArray(module) && (S += module.length);
     let A = true === I.isLoading,
-      C = this.shouldShow(T, A, E),
+      C = this.shouldShow(S, A, E),
       N = this.state.selectedIndex;
-    !C || A ? N = null : null != N && N >= T && (N = T - 1);
+    !C || A ? N = null : null != N && N >= S && (N = S - 1);
     let R = null != this.props.guild && Chunk627050.N.getCurrentConfig({
       guildId: this.props.guild.id,
       location: "mention autocomplete"
     }, {
       autoTrackExposure: true
     }).enabled;
-    C && !this.state.isVisible && (0, Chunk376918.a7)(g, this.props.channel, S, R), this.setState({
+    C && !this.state.isVisible && (0, Chunk376918.a7)(g, this.props.channel, T, R), this.setState({
       query: {
         type: g,
         typeInfo: E,
         queryText: b,
         results: I,
-        resultCount: T,
+        resultCount: S,
         options: f,
         isLoading: A
       },
@@ -222,6 +231,6 @@ class g extends Chunk836560.EventEmitter {
       }
   }
   constructor(e) {
-    super(), d(this, "props", true), d(this, "state", true), this.props = e, this.state = m()
+    super(), d(this, "props", true), d(this, "state", true), d(this, "nextUpdateQueryChanged", false), d(this, "nextUpdateContextChanged", false), d(this, "updateTimeout", true), this.props = e, this.state = m()
   }
 }

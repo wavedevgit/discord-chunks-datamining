@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk710111 = require("./710111.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk937309 = require("./937309.js");
+  Chunk518025 = require("./518025.js");
 
 function A(e) {
   let {
@@ -49,12 +49,12 @@ function A(e) {
     color: l.zx.Colors.CUSTOM,
     onClick: n,
     textOptions: {
-      textOverride: S.intl.string(S.t.pj0XBN)
+      textOverride: T.intl.string(T.t.pj0XBN)
     }
   }) : a === y.y.JOIN_GUILD ? (0, r.jsx)(c.Button, {
     variant: "primary",
     size: "sm",
-    text: S.intl.string(S.t.riu2R5),
+    text: T.intl.string(T.t.riu2R5),
     fullWidth: true,
     onClick: o
   }) : null
@@ -77,14 +77,14 @@ function C(e) {
     }))
   }, [u, P, t.guildId, t.soundId]);
   let {
-    buttonType: L,
-    description: x
-  } = (0, y.Z)(t, n, v, C), M = L === y.y.JOIN_GUILD, k = !E && w, j = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != C ? d.JO.createFromDiscoverableGuild(C) : true, [O, v, C]);
+    buttonType: x,
+    description: L
+  } = (0, y.Z)(t, n, v, C), M = x === y.y.JOIN_GUILD, k = !E && w, j = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != C ? d.JO.createFromDiscoverableGuild(C) : true, [O, v, C]);
   return k ? (0, r.jsx)(_.SE, {}) : (0, r.jsxs)("div", {
-    className: T.infoContainer,
+    className: S.infoContainer,
     children: [(0, r.jsxs)(_.W_, {
       children: [(0, r.jsxs)("div", {
-        className: T.infoExpandedSoundContainer,
+        className: S.infoExpandedSoundContainer,
         children: [(0, r.jsx)(m.ZP, {
           buttonOverlay: h.Pb.NONE,
           sound: t,
@@ -93,24 +93,24 @@ function C(e) {
           onSelectItem: () => {}
         }), (0, r.jsx)(o.xvT, {
           variant: "text-sm/normal",
-          children: x
+          children: L
         })]
       }), null != j && (0, r.jsxs)("div", {
-        className: T.infoExpandedGuildContainer,
+        className: S.infoExpandedGuildContainer,
         children: [(0, r.jsx)(o.xvT, {
           variant: "eyebrow",
           color: "header-muted",
-          className: T.infoExpandedGuildTitle,
-          children: v ? S.intl.string(S.t.tGDabk) : S.intl.string(S.t.rnOmOa)
+          className: S.infoExpandedGuildTitle,
+          children: v ? T.intl.string(T.t.tGDabk) : T.intl.string(T.t.rnOmOa)
         }), (0, r.jsx)("div", {
-          className: T.infoExpandedGuildInfo,
+          className: S.infoExpandedGuildInfo,
           children: (0, r.jsx)(f.Oe, {
             expressionSourceGuild: j,
             hasJoinedExpressionSourceGuild: v,
             isDisplayingJoinGuildButtonInPopout: M
           })
         }), (0, r.jsx)(A, {
-          buttonType: L,
+          buttonType: x,
           discoverableGuildId: null == C ? true : C.id,
           closePopout: l
         })]
@@ -118,7 +118,7 @@ function C(e) {
     }), (0, r.jsx)(c.IGR, {
       text: "BETA",
       color: a.Z.BG_BRAND,
-      className: T.betaBadge
+      className: S.betaBadge
     })]
   })
 }

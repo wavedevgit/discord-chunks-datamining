@@ -32,14 +32,14 @@ let b = new Map,
   O = new Map,
   v = new Set,
   I = 0,
-  S = 0,
   T = 0,
+  S = 0,
   A = new Set,
   C = new Map,
   N = false;
 
 function R() {
-  b.clear(), y.clear(), O.clear(), C.clear(), N = false, S = 0, T = 0, I = 0
+  b.clear(), y.clear(), O.clear(), C.clear(), N = false, T = 0, S = 0, I = 0
 }
 
 function P() {
@@ -47,7 +47,7 @@ function P() {
 }
 
 function w() {
-  S = 1
+  T = 1
 }
 
 function D(e) {
@@ -60,17 +60,17 @@ function D(e) {
       sounds: n
     } = e;
     b.set(t, n)
-  }), S = 2
+  }), T = 2
 }
 
-function L(e) {
+function x(e) {
   let {
     guild: t
   } = e;
   b.delete(t.id)
 }
 
-function x(e) {
+function L(e) {
   let {
     sound: t
   } = e, n = b.get(t.guildId), r = null == n ? true : n.findIndex(e => e.soundId === t.soundId);
@@ -105,14 +105,14 @@ function U(e) {
 }
 
 function G() {
-  T = 1
+  S = 1
 }
 
 function B(e) {
   let {
     topSoundsForGuilds: t
   } = e;
-  y = new Map(t), T = 2
+  y = new Map(t), S = 2
 }
 
 function Z(e) {
@@ -207,7 +207,7 @@ class q extends(r = Chunk442837.ZP.Store) {
     return Array.from(b.values()).flat().find(t => t.soundId === e)
   }
   isFetchingSounds() {
-    return 1 === S
+    return 1 === T
   }
   isFetchingDefaultSounds() {
     return 1 === I
@@ -244,25 +244,25 @@ class q extends(r = Chunk442837.ZP.Store) {
     return N
   }
   shouldFetchTopSoundsForGuilds() {
-    return (0, Chunk771784.cI)("SoundboardStore") && 0 === T
+    return (0, Chunk771784.cI)("SoundboardStore") && 0 === S
   }
   hasFetchedTopSoundsForGuilds() {
-    return 2 === T
+    return 2 === S
   }
   hasFetchedAllSounds() {
-    let e = [S, I];
-    return (0, Chunk771784.cI)("SoundboardStore") && module.push(T), module.every(e => 2 === e)
+    let e = [T, I];
+    return (0, Chunk771784.cI)("SoundboardStore") && module.push(S), module.every(e => 2 === e)
   }
   isFetchingAnySounds() {
-    return [S, I, T].some(e => 1 === e)
+    return [T, I, S].some(e => 1 === e)
   }
 }
 E(q, "displayName", "SoundboardStore");
 let X = new q(Chunk570140.Z, {
   LOGOUT: R,
   GUILD_SOUNDBOARD_FETCH: w,
-  GUILD_SOUNDBOARD_SOUND_CREATE: x,
-  GUILD_SOUNDBOARD_SOUND_UPDATE: x,
+  GUILD_SOUNDBOARD_SOUND_CREATE: L,
+  GUILD_SOUNDBOARD_SOUND_UPDATE: L,
   GUILD_SOUNDBOARD_SOUND_DELETE: k,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: Z,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: F,
@@ -275,7 +275,7 @@ let X = new q(Chunk570140.Z, {
   SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FETCH: G,
   SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_SUCCESS: B,
   SOUNDBOARD_SOUNDS_RECEIVED: D,
-  GUILD_DELETE: L,
+  GUILD_DELETE: x,
   AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: K,
   OVERLAY_INITIALIZE: z
 })

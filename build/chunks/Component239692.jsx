@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   l = require.n(Chunk90757),
   Chunk155127 = require("./155127.js"),
   Chunk780900 = require("./780900.js"),
-  Chunk901259 = require("./901259.js");
+  Chunk247679 = require("./247679.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -162,8 +162,8 @@ function v(e, t, n, a) {
       className: g,
       onScroll: v,
       onResize: I = null,
-      onContentResize: S = null,
-      dir: T = "ltr",
+      onContentResize: T = null,
+      dir: S = "ltr",
       sections: A,
       sectionHeight: C,
       rowHeight: N,
@@ -171,8 +171,8 @@ function v(e, t, n, a) {
       sidebarHeight: P,
       listHeaderHeight: w = 0,
       renderSection: D,
-      renderRow: L,
-      renderFooter: x,
+      renderRow: x,
+      renderFooter: L,
       renderSidebar: M,
       renderListHeader: k,
       stickyListHeader: j,
@@ -205,7 +205,7 @@ function v(e, t, n, a) {
       className: g,
       specs: s,
       orientation: "vertical",
-      dir: T
+      dir: S
     });
     let {
       spacerTop: es,
@@ -227,9 +227,9 @@ function v(e, t, n, a) {
       chunkSize: H,
       getScrollerState: eo,
       getAnchorId: G
-    }), ep = (0, u.t2)(ei), eh = i.useRef(I), em = i.useRef(S);
+    }), ep = (0, u.t2)(ei), eh = i.useRef(I), em = i.useRef(T);
     i.useLayoutEffect(() => {
-      eh.current = I, em.current = S
+      eh.current = I, em.current = T
     });
     let eg = i.useCallback(function() {
         let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 2;
@@ -271,7 +271,7 @@ function v(e, t, n, a) {
     }, [v, eg]);
     return i.useLayoutEffect(() => {
       2 !== ea.current.dirty && (ea.current.dirty = 2)
-    }, [ec, D, L, x, U, el, es, ea]), (0, u.rS)({
+    }, [ec, D, x, L, U, el, es, ea]), (0, u.rS)({
       scrollerRef: ei,
       anchor: e_,
       getScrollerState: eo,
@@ -307,13 +307,13 @@ function v(e, t, n, a) {
             renderListHeader: k,
             stickyListHeader: j,
             renderSection: D,
-            renderRow: L,
-            renderFooter: x,
+            renderRow: x,
+            renderFooter: L,
             wrapSection: U,
             spacerTop: es
           })
         })
-      }), [J, W, K, z, q, X, el, Q, ec, k, j, D, L, x, U, es]), i.useMemo(() => O({
+      }), [J, W, K, z, q, X, el, Q, ec, k, j, D, x, L, U, es]), i.useMemo(() => O({
         isSidebarVisible: eu,
         renderSidebar: M,
         sidebarHeight: P,

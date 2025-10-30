@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk172751 = require("./172751.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk954677 = require("./954677.js");
+  Chunk69295 = require("./69295.js");
 
 function E(e) {
   let {
@@ -32,8 +32,8 @@ function E(e) {
     pendingDisplayNameStyles: O,
     pronouns: v,
     className: I,
-    tagClassName: S,
-    isTryItOut: T,
+    tagClassName: T,
+    isTryItOut: S,
     onOpenProfile: A,
     onClose: C,
     nicknameVariant: N = "heading-lg/bold"
@@ -46,14 +46,14 @@ function E(e) {
     userId: t.id,
     guildId: n,
     pendingDisplayNameStyles: O
-  }), L = null != D;
+  }), x = null != D;
   return (0, r.jsxs)("div", {
     className: a()(g.container, {
       [g.bot]: null != w
     }, I),
     children: [(0, r.jsxs)("div", {
       className: g.usernameRow,
-      children: [R(L ? (0, r.jsx)(s.Text, {
+      children: [R(x ? (0, r.jsx)(s.Text, {
         variant: N,
         children: (0, r.jsx)(_.Z, {
           userName: b,
@@ -85,8 +85,8 @@ function E(e) {
         user: t,
         usernameIcon: i,
         forceUsername: true,
-        forcePomelo: T,
-        className: a()(g.userTag, S),
+        forcePomelo: S,
+        className: a()(g.userTag, T),
         usernameClass: g.userTagUsername,
         discriminatorClass: g.userTagDiscriminator,
         hideBotTag: true
@@ -99,7 +99,7 @@ function E(e) {
           text: m.intl.string(m.t.GI2A8C),
           delay: h.vB,
           children: (0, r.jsx)(s.Text, {
-            className: a()(g.pronounsText, S),
+            className: a()(g.pronounsText, T),
             variant: "text-sm/medium",
             color: "header-primary",
             children: v

@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk12033 = require("./12033.js");
+  Chunk810270 = require("./810270.js");
 let g = (0, Chunk131704.createChannelRecord)({
   id: "1",
   type: Chunk981631.d4z.DM
@@ -35,10 +35,10 @@ function E(e) {
     innerClassName: y,
     disabled: O = false,
     disableThemedBackground: v = false
-  } = e, [I, S] = i.useState(null != f ? f : E), [T, A] = i.useState((0, c.JM)(I)), C = i.useRef(false);
+  } = e, [I, T] = i.useState(null != f ? f : E), [S, A] = i.useState((0, c.JM)(I)), C = i.useRef(false);
 
   function N(e, t, n) {
-    t !== I && (S(t), A(n), a(t))
+    t !== I && (T(t), A(n), a(t))
   }
 
   function R() {
@@ -54,7 +54,7 @@ function E(e) {
   }, []), i.useEffect(() => {
     if (true === f) {
       let e = (0, c.JM)(E);
-      S(E), A(e)
+      T(E), A(e)
     }
   }, [f, E]), (0, r.jsx)("div", {
     className: o()(m.body, b),
@@ -70,7 +70,7 @@ function E(e) {
         placeholder: p,
         channel: g,
         textValue: I,
-        richValue: T,
+        richValue: S,
         type: l.Ie.CUSTOM_GIFT,
         onBlur: () => {
           C.current = false

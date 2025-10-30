@@ -28,10 +28,10 @@ function l(e, t, n) {
     onPress: O,
     onPressUp: v,
     onClick: I
-  } = e, S = e => {
+  } = e, T = e => {
     e.stopPropagation(), t.setSelected(e.target.checked)
   }, {
-    pressProps: T,
+    pressProps: S,
     isPressed: A
   } = (0, o.r)({
     onPressStart: E,
@@ -57,7 +57,7 @@ function l(e, t, n) {
     isDisabled: l || c
   }), {
     focusableProps: R
-  } = (0, s.kc)(e, n), P = (0, r.d)(T, R), w = (0, i.z)(e, {
+  } = (0, s.kc)(e, n), P = (0, r.d)(S, R), w = (0, i.z)(e, {
     labelable: true
   });
   return (0, a.y)(n, t.defaultSelected, t.setSelected), {
@@ -69,7 +69,7 @@ function l(e, t, n) {
       "aria-errormessage": e["aria-errormessage"],
       "aria-controls": e["aria-controls"],
       "aria-readonly": c || true,
-      onChange: S,
+      onChange: T,
       disabled: l,
       ...null == u ? {} : {
         value: u

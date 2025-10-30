@@ -1,34 +1,34 @@
-/** Chunk was on 50614 **/
-/** chunk id: 292263, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 87665 **/
+/** chunk id: 292263, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
-var i, l, Chunk442837 = require("./442837.js"),
+var a, r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 let o = null,
   s = false;
-class c extends(l = Chunk442837.ZP.Store) {
+class c extends(r = Chunk442837.ZP.Store) {
   get loading() {
     return s
   }
   get methods() {
     return o
   }
-}(i = "displayName") in c ? Object.defineProperty(c, i, {
+}(a = "displayName") in c ? Object.defineProperty(c, a, {
   value: "AgeVerificationStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : c[i] = "AgeVerificationStore";
+}) : c[a] = "AgeVerificationStore";
 let d = new c(Chunk570140.Z, {
   AGE_VERIFICATION_METHODS_LOAD_START: function() {
     s = true
   },
-  AGE_VERIFICATION_METHODS_LOAD_SUCCESS: function(t) {
+  AGE_VERIFICATION_METHODS_LOAD_SUCCESS: function(e) {
     let {
-      methods: e
-    } = t;
-    o = e, s = false
+      methods: t
+    } = e;
+    o = t, s = false
   },
   AGE_VERIFICATION_METHODS_LOAD_FAILURE: function() {
     s = false

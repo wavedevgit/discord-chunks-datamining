@@ -85,14 +85,14 @@ async function I(e, t) {
       let e = s.l.getItemObject("sprig.anon.env.vid.map");
       e && e[window.UserLeap.envId] === a && (delete e[window.UserLeap.envId], s.l.setItemObject("sprig.anon.env.vid.map", e))
     }
-    i && a && (a !== window.UserLeap.visitorId || window.UserLeap.token !== i) && (S("token", i), S("vid", a), s.e.emit(s.S.VisitorIDUpdated, {
+    i && a && (a !== window.UserLeap.visitorId || window.UserLeap.token !== i) && (T("token", i), T("vid", a), s.e.emit(s.S.VisitorIDUpdated, {
       visitorId: a
     }), window.UserLeap.token = i, window.UserLeap.visitorId = a)
   }
   return null != (i = l.json) && i.logMessage && console.warn(`[Sprig] ${l.json.logMessage}`), l
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = s.l.getItemObject("userleap.ids"),
     r = n[window.UserLeap.envId];
   r ? r[e] = t : r = {
@@ -100,14 +100,14 @@ function S(e, t) {
   }, n[window.UserLeap.envId] = r, s.l.setItemObject("userleap.ids", n)
 }
 
-function T() {
+function S() {
   return window.previewMode ? "0" : window.UserLeap.visitorId ?? ""
 }
 
 function A(e, t, n) {
   let r = [window.UserLeap._API_URL, "sdk", e];
   return t && t.forEach(e => {
-    r.push(e), e === v ? r.push(window.UserLeap.envId) : e === O && r.push(T())
+    r.push(e), e === v ? r.push(window.UserLeap.envId) : e === O && r.push(S())
   }), n && r.push(n), r.join("/")
 }
 let C = async (e, t, r) => {
@@ -127,17 +127,17 @@ let C = async (e, t, r) => {
     surveyId: O,
     uuid: v,
     vid: I,
-    sessionReplay: S,
-    studyType: T
+    sessionReplay: T,
+    studyType: S
   } = e, A = (0, s.g)(window.UserLeap), C = R(A), P = N(A);
-  if (S)
+  if (T)
     if (C) s.e.emit(s.S.ReplayCapture, {
       responseGroupUid: y,
       hasQuestions: !!(null != g && g.length),
       surveyId: O,
-      uploadId: S.uploadId,
-      replayType: S.replayDurationType ?? "before",
-      seconds: S.replayDurationSeconds,
+      uploadId: T.uploadId,
+      replayType: T.replayDurationType ?? "before",
+      seconds: T.replayDurationSeconds,
       generateVideoUploadUrlPayload: {
         mediaRecordingUid: (0, s.v)(),
         mediaType: "screen",
@@ -159,7 +159,7 @@ let C = async (e, t, r) => {
         responseGroupId: y,
         surveyId: O,
         visitorId: I,
-        replayParams: S,
+        replayParams: T,
         completeUploadHeaders: A,
         apiUrl: window.UserLeap._API_URL,
         triggerTimestamp: Date.now(),
@@ -236,7 +236,7 @@ let C = async (e, t, r) => {
       let {
         "view.version": t
       } = e;
-      t !== A["x-ul-sdk-version"] && L(), s.e.removeListener("verify.view.version", B)
+      t !== A["x-ul-sdk-version"] && x(), s.e.removeListener("verify.view.version", B)
     };
   s.e.on("verify.view.version", B), window.UserLeap.useMobileStyling = P, (0, s.h)(A) ? (w = "ul-direct-embeded-frame", M = document.head, j = window, U = false, (() => {
     let e = (0, s.g)(window.UserLeap),
@@ -244,7 +244,7 @@ let C = async (e, t, r) => {
       n = window.UserLeap.forceDirectEmbed,
       r = "web" === e["userleap-platform"];
     return t || n && r
-  })() && (D(O, f), G.id = w, window.UserLeap.container.appendChild(G), x(), s.e.emit(s.S.SurveyLifeCycle, {
+  })() && (D(O, f), G.id = w, window.UserLeap.container.appendChild(G), L(), s.e.emit(s.S.SurveyLifeCycle, {
     state: "presented"
   }), s.e.emit(s.S.SurveyPresented, {
     name: s.S.SurveyPresented,
@@ -287,7 +287,7 @@ let C = async (e, t, r) => {
     },
     responseGroupUid: y,
     startingQuestionIdx: null == (a = window.UserLeap.config) ? true : a.startingQuestionIdx,
-    studyType: T,
+    studyType: S,
     styleNonce: window.UserLeap.styleNonce,
     surveyId: O,
     tabTitle: document.title,
@@ -361,12 +361,12 @@ let w = "0px",
     let r = K();
     n && r && !window.UserLeap.useMobileStyling ? r.appendChild(window.UserLeap.container) : document.body.appendChild(window.UserLeap.container)
   },
-  L = (e, t) => {
+  x = (e, t) => {
     var n;
     G();
     let r = window.UserLeap.container;
     if (r) try {
-      null == (n = r.parentNode) || n.removeChild(r), window.UserLeap.container = null, S("trackStartUrl", null), s.e.emit(s.S.SurveyLifeCycle, {
+      null == (n = r.parentNode) || n.removeChild(r), window.UserLeap.container = null, T("trackStartUrl", null), s.e.emit(s.S.SurveyLifeCycle, {
         state: "dismissed"
       }), s.e.emit(s.S.SurveyClosed, {
         name: s.S.SurveyClosed,
@@ -380,12 +380,12 @@ let w = "0px",
       console.warn(`[Sprig] (ERR-412) Error removing UserLeap container by ${e} ` + r), t instanceof Error && window.UserLeap.reportError("dismissActiveSurvey", t)
     }
   },
-  x = () => {
+  L = () => {
     Chunk555256.e.once(Chunk555256.S.SurveyWillClose, ({
       initiator: e,
       studyType: t
     }) => {
-      s.e.removeAllListeners(s.S.CloseSurveyOnOverlayClick), L(e, t)
+      s.e.removeAllListeners(s.S.CloseSurveyOnOverlayClick), x(e, t)
     })
   },
   M = (e, t, n, r) => {
@@ -470,7 +470,7 @@ let w = "0px",
     let c = document.createElement("iframe");
     c.id = o, c.setAttribute("title", "Sprig User Feedback Dialog");
     let u = M(c, e, t, r);
-    x();
+    L();
     let d = false;
     c.setHeight = e => {
       parseInt(c.style.height) == e && d || (d = true, c.style.height = `${e}px`, s.e.emit(s.S.SurveyHeight, {
@@ -875,12 +875,12 @@ let eg = e => {
       t.report(r / 1e3), setTimeout(() => eb(e, t), e)
     }, 0)
   },
-  ey, eO, ev, eI, eS = {},
-  eT = (e, t = 1) => {
+  ey, eO, ev, eI, eT = {},
+  eS = (e, t = 1) => {
     let {
       name: n
     } = e;
-    eS[n] = (eS[n] || 0) + t
+    eT[n] = (eT[n] || 0) + t
   },
   eA = e => {
     let t = 1;
@@ -897,16 +897,16 @@ let eg = e => {
   eN = e => {
     switch (e.type) {
       case "childList":
-        return eT(ey, eC(e.addedNodes)), void eT(eO, eC(e.removedNodes));
+        return eS(ey, eC(e.addedNodes)), void eS(eO, eC(e.removedNodes));
       case "attributes":
-        return void eT(ev);
+        return void eS(ev);
       case "characterData":
-        return void eT(eI)
+        return void eS(eI)
     }
   },
   eR = e => e.forEach(eN),
   eP = () => {
-    ey.report(eS[ey.name] || 0), eO.report(eS[eO.name] || 0), ev.report(eS[ev.name] || 0), eI.report(eS[eI.name] || 0), eS = {}
+    ey.report(eT[ey.name] || 0), eO.report(eT[eO.name] || 0), ev.report(eT[ev.name] || 0), eI.report(eT[eI.name] || 0), eT = {}
   },
   ew = (e = 1e3) => {
     ey = (0, s.r)("sdk_mutations_nodes_added"), eO = (0, s.r)("sdk_mutations_nodes_removed"), ev = (0, s.r)("sdk_mutations_attributes_changed"), eI = (0, s.r)("sdk_mutations_character_data"), new MutationObserver(eR).observe(document, {
@@ -947,8 +947,8 @@ let eg = e => {
       r = (0, s.r)("sdk_dom_nodes_count"), i = (0, s.r)("sdk_page_html_characters"), eE(), setInterval(eE, e)
     })(), ew())
   },
-  eL = "test",
-  ex = ["popState", "pushState", "replaceState"],
+  ex = "test",
+  eL = ["popState", "pushState", "replaceState"],
   eM = {},
   ek = "!email",
   ej = "pageUrl",
@@ -976,7 +976,7 @@ function eG(e) {
   })(), s.a.getItem("sprig.isCapturingHeatmap") && (null == (n = null == (t = s.m.replay) ? true : t.checkPendingHeatmapsUrl()) || n.then(e => {
     var t;
     e && (null == (t = s.m.replay) || t.uploadReadyPendingCaptures(true))
-  })), !ei() && a && c && c !== window.location.href && e && ex.includes(e.type) && window.UserLeap("dismissActiveSurvey", s.D.PageChange)
+  })), !ei() && a && c && c !== window.location.href && e && eL.includes(e.type) && window.UserLeap("dismissActiveSurvey", s.D.PageChange)
 }
 let eB = {
     capture: true
@@ -1015,7 +1015,7 @@ function eH() {
     t = module[window.UserLeap.envId];
   window.UserLeap.visitorId = exports || (0, Chunk555256.v)(), Chunk555256.b.info("NewVid", {
     vid: window.UserLeap.visitorId
-  }), S("vid", window.UserLeap.visitorId), exports || (module[window.UserLeap.envId] = window.UserLeap.visitorId, Chunk555256.l.setItemObject("sprig.anon.env.vid.map", module)), Chunk555256.e.emit(Chunk555256.S.VisitorIDUpdated, {
+  }), T("vid", window.UserLeap.visitorId), exports || (module[window.UserLeap.envId] = window.UserLeap.visitorId, Chunk555256.l.setItemObject("sprig.anon.env.vid.map", module)), Chunk555256.e.emit(Chunk555256.S.VisitorIDUpdated, {
     visitorId: window.UserLeap.visitorId
   })
 }
@@ -1064,8 +1064,8 @@ function eW() {
   }), ["hashchange", "popstate"].forEach(e => window.addEventListener(e, eG, true))
 }
 async function eK(e, t) {
-  let n = T();
-  e && !t && (window.UserLeap._config.mode = eL);
+  let n = S();
+  e && !t && (window.UserLeap._config.mode = ex);
   let r = N((0, s.g)(window.UserLeap)),
     i = await I(function(e) {
       let t = new URL(A("1", [v], "questions"));
@@ -1160,7 +1160,7 @@ let eq = function(e) {
       }
     }
     let g = o ?? window.location.href;
-    f.url || (f.url = g), S("trackStartUrl", g), null != (r = null == (n = window.UserLeap) ? true : n._config) && r.optimizelyEnabled && (R((0, s.g)(window.UserLeap)) || eh.getAndSetWebOptimizelyExperiments(), f.optimizelyExperiments = Object.assign({}, eh.getAllOptimizelyExperiments())), null != (l = null == (i = window.UserLeap) ? true : i._config) && l.launchDarklyEnabled && (f.launchDarklyFlags = ep.getAllLaunchDarklyVariations()), u && (window.UserLeap.userId = u), d && (window.UserLeap.partnerAnonymousId = d), _ && (f.eventProperties = _), null == (c = s.m.replay) || c.RecordEvent({
+    f.url || (f.url = g), T("trackStartUrl", g), null != (r = null == (n = window.UserLeap) ? true : n._config) && r.optimizelyEnabled && (R((0, s.g)(window.UserLeap)) || eh.getAndSetWebOptimizelyExperiments(), f.optimizelyExperiments = Object.assign({}, eh.getAllOptimizelyExperiments())), null != (l = null == (i = window.UserLeap) ? true : i._config) && l.launchDarklyEnabled && (f.launchDarklyFlags = ep.getAllLaunchDarklyVariations()), u && (window.UserLeap.userId = u), d && (window.UserLeap.partnerAnonymousId = d), _ && (f.eventProperties = _), null == (c = s.m.replay) || c.RecordEvent({
       name: h,
       url: f.url
     }), s.b.info("TrackEvent", {
@@ -1194,7 +1194,7 @@ let eq = function(e) {
         surveyState: "no survey"
       }
     }
-    u && S("uid", u), d && S("aid", d);
+    u && T("uid", u), d && T("aid", d);
     let b = E.json;
     b.invalidPreviewKey && s.l.removeItem("sprig.previewKey");
     let y = f.trackPageView ? f.url : true;
@@ -1324,7 +1324,7 @@ let eq = function(e) {
       })).ok ? Object.assign(eM, a) : n.reportError && (console.warn("[Sprig] (ERR-432) identifyAndSetAttributes failed", n.error), n.error && window.UserLeap.reportError("identifyAndSetAttributes", n.error)) : n = await I(A("1", [v, O]), {
         body: JSON.stringify(o),
         method: "PUT"
-      }), a && a[ek] && (window.UserLeap.email = a[ek]), n.ok && (r && S("uid", r), i && S("aid", i)), {
+      }), a && a[ek] && (window.UserLeap.email = a[ek]), n.ok && (r && T("uid", r), i && T("aid", i)), {
         success: !!n.ok
       }
     },
@@ -1390,7 +1390,7 @@ let eq = function(e) {
           }),
           method: "PUT"
         });
-      i.ok ? (r !== window.UserLeap.visitorId && (null == (n = s.m.replay) || n.clearUserReplayData()), S("uid", t)) : i.reportError && (console.warn("[Sprig] (ERR-420) Failed to set user id", i.error), i.error && window.UserLeap.reportError("setUserId", i.error))
+      i.ok ? (r !== window.UserLeap.visitorId && (null == (n = s.m.replay) || n.clearUserReplayData()), T("uid", t)) : i.reportError && (console.warn("[Sprig] (ERR-420) Failed to set user id", i.error), i.error && window.UserLeap.reportError("setUserId", i.error))
     },
     async setPartnerAnonymousId(e) {
       if (window.UserLeap.debugMode && console.info("[DEBUG] Sprig setPartnerAnonymousId", e), null == e) {
@@ -1400,7 +1400,7 @@ let eq = function(e) {
           message: t
         }
       }
-      return window.UserLeap.partnerAnonymousId = e, S("aid", e), {
+      return window.UserLeap.partnerAnonymousId = e, T("aid", e), {
         success: true
       }
     },
@@ -1541,7 +1541,7 @@ let eq = function(e) {
 };
 async function eX(e, t, n = {}, r = {}) {
   let i = window.__cfg && window.__cfg.mode,
-    a = T(),
+    a = S(),
     l = window.UserLeap.envId,
     c = window.document.documentElement,
     u = {
@@ -1594,8 +1594,8 @@ function eQ(e = {}) {
       c = window.UserLeap.sampleRate,
       u = l.sampled;
     if (c) {
-      if (null === u && S("sampled", u = Math.random() < c), !u) return
-    } else null !== u && S("sampled", null);
+      if (null === u && T("sampled", u = Math.random() < c), !u) return
+    } else null !== u && T("sampled", null);
     window.UserLeap._API_URL || (window.UserLeap._API_URL = "https://api.sprig.com");
     let d = [...window.UserLeap._queue];
     window.UserLeap._queue = new em(window.UserLeap, []), window.UserLeap._queue.pause();

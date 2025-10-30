@@ -36,7 +36,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk483012 = require("./483012.js"),
   Chunk955132 = require("./955132.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,14 +45,14 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -101,7 +101,7 @@ let G = new Chunk710845.Z("ConnectionStore"),
     };
     let r = (0, b.q_)(t),
       i = v.Z.getChannel(t.id),
-      a = null == i ? true : i.merge(k(x({}, r), {
+      a = null == i ? true : i.merge(k(L({}, r), {
         recipients: i.recipients,
         bitrate: null != (n = r.bitrate) ? n : i.bitrate
       }));
@@ -200,8 +200,8 @@ function X(e, t, n) {
     unusual_dm_activity_until: b,
     collectibles: y,
     display_name_styles: O
-  } = n, v = I.ZP.getMember(e, t.id), S = (0, f.bN)(O);
-  null != v && v.nick === c && v.avatar === d && i().isEqual(v.roles, l) && (0, u.sr)(null != (r = v.avatarDecoration) ? r : null, null != _ ? _ : null) && v.premiumSince === h && v.isPending === m && v.joinedAt === g && v.communicationDisabledUntil === E && v.flags === p && (null != (a = v.unusualDMActivityUntil) ? a : null) === (null != b ? b : null) && i().isEqual(null != (o = v.collectibles) ? o : null, null != y ? y : null) && i().isEqual(null != (s = v.displayNameStyles) ? s : null, null != S ? S : null) || q({
+  } = n, v = I.ZP.getMember(e, t.id), T = (0, f.bN)(O);
+  null != v && v.nick === c && v.avatar === d && i().isEqual(v.roles, l) && (0, u.sr)(null != (r = v.avatarDecoration) ? r : null, null != _ ? _ : null) && v.premiumSince === h && v.isPending === m && v.joinedAt === g && v.communicationDisabledUntil === E && v.flags === p && (null != (a = v.unusualDMActivityUntil) ? a : null) === (null != b ? b : null) && i().isEqual(null != (o = v.collectibles) ? o : null, null != y ? y : null) && i().isEqual(null != (s = v.displayNameStyles) ? s : null, null != T ? T : null) || q({
     type: "GUILD_MEMBER_ADD",
     guildId: e,
     user: t,
@@ -216,7 +216,7 @@ function X(e, t, n) {
     unusualDMActivityUntil: b,
     flags: p,
     collectibles: y,
-    displayNameStyles: S
+    displayNameStyles: T
   })
 }
 
@@ -276,7 +276,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
   g.Z.initialGuild.measure(() => {
     a.ZP.Emitter.batched(() => {
       let t = P.Fx(e, D.Wb.identifyStartTime);
-      null != T.default.getCurrentUser() && (q({
+      null != S.default.getCurrentUser() && (q({
         type: "GUILD_CREATE",
         guild: t
       }), q({
@@ -861,7 +861,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     requiredAction: e.required_action
   })
 }), Y(["USER_NOTE_UPDATE"], e => {
-  q(x({
+  q(L({
     type: "USER_NOTE_UPDATE"
   }, e))
 }), Y(["RELATIONSHIP_ADD"], e => {
@@ -1071,7 +1071,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     type: "MESSAGE_REACTION_ADD_MANY",
     channelId: e.channel_id,
     messageId: e.message_id,
-    reactions: e.votes.map(e => k(x({}, e), {
+    reactions: e.votes.map(e => k(L({}, e), {
       emoji: {
         id: e.answer_id,
         name: ""
@@ -1567,7 +1567,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     openid_params: e.openid_params
   })
 }), Y(["DELETED_ENTITY_IDS"], e => {
-  q(x({
+  q(L({
     type: "DELETED_ENTITY_IDS"
   }, e))
 }), W(["CHANNEL_SYNC"], e => v.o.loadGuildIds([e.guild_id]), e => {
@@ -1671,7 +1671,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     inviteIds: e.invite_ids
   })
 }), Y(["CONVERSATION_SUMMARY_UPDATE"], e => {
-  q(x({
+  q(L({
     type: "CONVERSATION_SUMMARY_UPDATE"
   }, e))
 }), Y(["PREMIUM_MARKETING_PREVIEW"], e => {

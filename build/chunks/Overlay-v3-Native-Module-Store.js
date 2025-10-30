@@ -62,11 +62,11 @@ function I(e) {
   O(t)
 }
 
-function S() {
+function T() {
   return y(), false
 }
 
-function T(e) {
+function S(e) {
   let {
     pid: t,
     isCrashedDisabled: n
@@ -102,7 +102,7 @@ let N = new C(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
     POST_CONNECTION_OPEN: A,
     EXPERIMENT_OVERRIDE_BUCKET: v,
     OVERLAY_SET_ENABLED: I,
-    OVERLAY_V3_LOAD_NATIVE_MODULE: S,
-    OVERLAY_CRASHED: T
+    OVERLAY_V3_LOAD_NATIVE_MODULE: T,
+    OVERLAY_CRASHED: S
   }),
   R = N

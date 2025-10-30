@@ -47,7 +47,7 @@ function D() {
   return R = module, P = exports, w.clear()
 }
 
-function L(e) {
+function x(e) {
   let {
     guild: {
       id: t
@@ -56,7 +56,7 @@ function L(e) {
   return w.clearGuildId(t)
 }
 
-function x(e) {
+function L(e) {
   let {
     channel: {
       guild_id: t
@@ -158,7 +158,7 @@ function K(e) {
   return a()(t).map(e => {
     var t;
     return null == (t = g.Z.getChannel(e.channelId)) ? true : t.guild_id
-  }).filter(S.lm).uniq().forEach(e => {
+  }).filter(T.lm).uniq().forEach(e => {
     w.clearGuildId(e) && (n = true)
   }), n
 }
@@ -267,7 +267,7 @@ function el(e) {
   if (n.type !== C.yP.PRELOADED_USER_SETTINGS) returnfalse;
   let r = null == (t = n.proto.guilds) ? true : t.guilds,
     i = false;
-  return null != r && T.default.keys(r).forEach(e => {
+  return null != r && S.default.keys(r).forEach(e => {
     null != r[e].guildRecentsDismissedAt && (i = w.updateRecentsCategory(e) || i)
   }), i
 }
@@ -314,8 +314,8 @@ let eu = new ec(Chunk570140.Z, {
   CATEGORY_EXPAND: ee,
   CHANNEL_ACK: Y,
   CHANNEL_COLLAPSE: F,
-  CHANNEL_CREATE: x,
-  CHANNEL_DELETE: x,
+  CHANNEL_CREATE: L,
+  CHANNEL_DELETE: L,
   CHANNEL_LOCAL_ACK: Y,
   CHANNEL_MUTE_EXPIRED: B,
   CHANNEL_RTC_UPDATE_CHAT_OPEN: Y,
@@ -338,8 +338,8 @@ let eu = new ec(Chunk570140.Z, {
   GAMES_DATABASE_FETCH: ei,
   GAMES_DATABASE_UPDATE: ei,
   GUILD_APPLICATIONS_FETCH_SUCCESS: ei,
-  GUILD_CREATE: L,
-  GUILD_DELETE: L,
+  GUILD_CREATE: x,
+  GUILD_DELETE: x,
   GUILD_MEMBER_UPDATE: U,
   GUILD_MUTE_EXPIRED: B,
   GUILD_ROLE_CREATE: B,
@@ -351,7 +351,7 @@ let eu = new ec(Chunk570140.Z, {
   GUILD_SCHEDULED_EVENT_DELETE: eo,
   GUILD_SCHEDULED_EVENT_UPDATE: eo,
   GUILD_TOGGLE_COLLAPSE_MUTED: B,
-  GUILD_UPDATE: L,
+  GUILD_UPDATE: x,
   IMPERSONATE_STOP: B,
   IMPERSONATE_UPDATE: B,
   LOAD_CHANNELS: Z,

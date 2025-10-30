@@ -41,8 +41,8 @@ function P(e, t, n) {
 }
 let w = {},
   D = null,
-  L = [],
-  x = new Chunk810457.Z,
+  x = [],
+  L = new Chunk810457.Z,
   M = false,
   k = false,
   j = false,
@@ -82,7 +82,7 @@ function Y(e) {
   if (!E.Z.isReady(e)) return;
   let n = m.Z.getBasicChannel(e),
     r = E.Z.getMessages(e);
-  if (r.hasPresent() && 0 !== r.length) return x.addChannelMessages({
+  if (r.hasPresent() && 0 !== r.length) return L.addChannelMessages({
     channel: n,
     channelMessages: r,
     userId: null == (t = v.default.getCurrentUser()) ? true : t.id
@@ -109,7 +109,7 @@ function K() {
     notifyingChannelIds: e,
     staleChannelIds: t
   } = H();
-  D = module, L = exports, a()(null != D, "notifyingChannelIds should not be null");
+  D = module, x = exports, a()(null != D, "notifyingChannelIds should not be null");
   let n = D.filter(e => null == w[e]),
     r = Object.keys(w).filter(e => !(null == D ? true : D.includes(e)));
   if (0 !== D.length && 0 === require.length && 0 === r.length) returnfalse;
@@ -124,11 +124,11 @@ function K() {
         var i, o;
         w[module].loadState = Chunk982183.a7.LOADED, w[module].mostRecentMessageId = null != (o = null == (i = exports.last()) ? true : Chunk512722.id) ? Chunk442837 : w[module].mostRecentMessageId
       }
-    } x.updateChannelIds(D), W()
+    } L.updateChannelIds(D), W()
 }
 
 function z() {
-  w = {}, D = null, L = [], x = new Chunk810457.Z, M = false, k = false, j = false, G = Chunk709054.default.fromTimestamp(Date.now()), B = true, U = false, F = null, Z = null
+  w = {}, D = null, x = [], L = new Chunk810457.Z, M = false, k = false, j = false, G = Chunk709054.default.fromTimestamp(Date.now()), B = true, U = false, F = null, Z = null
 }
 
 function q() {
@@ -138,7 +138,7 @@ function q() {
     null != r && (w[require].loadState = Chunk982183.a7.LOADED, w[require].mostRecentMessageId = null != (t = null == (e = r.last()) ? true : module.id) ? exports : null, W())
   }
   let r = null != (n = Chunk455199.ZP.getSettingsFilteredMentions()) ? require : [];
-  x.addMessages(r.map(e => {
+  L.addMessages(r.map(e => {
     var t;
     return {
       id: e.id,
@@ -176,11 +176,11 @@ function $(e) {
   let s = J(a),
     c = s.mentioned;
   if (!o && !c) {
-    if (!L.includes(i)) returnfalse;
+    if (!x.includes(i)) returnfalse;
     K()
   }
   if (!o && c && !(0, u.ln)(s)) returnfalse;
-  x.addMessage({
+  L.addMessage({
     id: a.id,
     channelId: a.channel_id,
     guildId: null == (r = m.Z.getBasicChannel(a.channel_id)) ? true : r.guild_id,
@@ -207,7 +207,7 @@ function et(e) {
   if (0 === t.length) returnfalse;
   let n = u.ZP.getSettingsFilteredMentions();
   if (null == n || 0 === n.length) returnfalse;
-  x.addMessages(n.map(e => {
+  L.addMessages(n.map(e => {
     var t;
     return {
       id: e.id,
@@ -223,14 +223,14 @@ function en(e) {
   let {
     id: t
   } = e;
-  return x.deleteMessages([t])
+  return L.deleteMessages([t])
 }
 
 function er(e) {
   let {
     ids: t
   } = e;
-  return x.deleteMessages(t)
+  return L.deleteMessages(t)
 }
 
 function ei() {
@@ -251,7 +251,7 @@ function eo(e) {
   let {
     preload: n
   } = e;
-  return null != (null == (t = (0, S.Ag)({
+  return null != (null == (t = (0, T.Ag)({
     location: "NotificationsInboxStore.canLoadMore",
     autoTrackExposure: false
   })) ? true : t.notificationCenterVariant) && null != D && !M && !k && (!n || !U) && B
@@ -266,10 +266,10 @@ function el(e) {
     messageId: t,
     channelId: n,
     isUnread: r
-  } = e, i = (0, S.Ag)({
+  } = e, i = (0, T.Ag)({
     location: "handleInboxItemClick"
   }).notificationCenterVariant;
-  Z = r && i === S.jP.SIDEBAR ? {
+  Z = r && i === T.jP.SIDEBAR ? {
     channelId: n,
     messageId: t
   } : null
@@ -280,7 +280,7 @@ function ec(e) {
     channelId: t,
     messageId: n
   } = e;
-  (0, T.Tj)({
+  (0, S.Tj)({
     channelId: t,
     id: n
   }, Z) && (Z = null)
@@ -330,7 +330,7 @@ function eh(e) {
   let {
     channel: t
   } = e;
-  if (!x.getMessages().some(e => e.channelId === t.id)) returnfalse;
+  if (!L.getMessages().some(e => e.channelId === t.id)) returnfalse;
   X()
 }
 
@@ -338,7 +338,7 @@ function em(e) {
   let {
     guild: t
   } = e;
-  if (!x.getMessages().some(e => e.guildId === t.id)) returnfalse;
+  if (!L.getMessages().some(e => e.guildId === t.id)) returnfalse;
   X()
 }
 
@@ -361,7 +361,7 @@ class eE extends(r = Chunk442837.ZP.Store) {
     })
   }
   getInboxMessages() {
-    return x.getMessages()
+    return L.getMessages()
   }
   getNotifyingChannelIds() {
     return D

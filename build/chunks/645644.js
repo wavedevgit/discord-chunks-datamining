@@ -70,13 +70,13 @@ let P = 3,
   w = false,
   D = new Chunk710845.Z("OverlayUsageStatsManager");
 w || (D.verbose = () => {});
-class L {
+class x {
   increment(e) {
     ++this.actions[e]
   }
   getAnalytics(e, t) {
-    let n = this.actions[T.bv.Viewed],
-      r = this.actions[T.bv.Clicked];
+    let n = this.actions[S.bv.Viewed],
+      r = this.actions[S.bv.Clicked];
     return 0 === n && 0 === r ? null : {
       event_uuid: t,
       notification_type: e,
@@ -91,7 +91,7 @@ class L {
     })
   }
 }
-class x {
+class L {
   static makeEmptyGroupAnalytics() {
     return {
       [Chunk987650.Vk.Nudge]: 0,
@@ -105,14 +105,14 @@ class x {
   static makeCounters() {
     let e = {},
       t = Object.values(Chunk987650.n0);
-    for (let n of exports) module[require] = new L;
+    for (let n of exports) module[require] = new x;
     if (Object.keys(module).length !== exports.length) throw Error("NotificationAnalytics: Failed to make counters");
     return module
   }
   increment(e, t) {
     let n = this.groupCounters[t];
     if (null == n) return void D.error("NotificationCounter: Unknown notification action: ".concat(t));
-    let r = (0, T.YK)(e);
+    let r = (0, S.YK)(e);
     if (!(r in n)) return void D.error("NotificationCounter: Unknown notification action: ".concat(e));
     ++n[r], ++this.actionCounters[t];
     let i = this.counters[e];
@@ -150,9 +150,9 @@ class x {
       [Chunk987650.bv.Viewed]: 0,
       [Chunk987650.bv.Clicked]: 0
     }), A(this, "groupCounters", {
-      [Chunk987650.bv.Viewed]: x.makeEmptyGroupAnalytics(),
-      [Chunk987650.bv.Clicked]: x.makeEmptyGroupAnalytics()
-    }), A(this, "counters", x.makeCounters())
+      [Chunk987650.bv.Viewed]: L.makeEmptyGroupAnalytics(),
+      [Chunk987650.bv.Clicked]: L.makeEmptyGroupAnalytics()
+    }), A(this, "counters", L.makeCounters())
   }
 }
 class M {
@@ -169,9 +169,9 @@ class M {
   }
   getByWidget(e) {
     switch (e) {
-      case S.Odu.VOICE:
+      case T.Odu.VOICE:
         return this.getByType(0);
-      case S.Odu.TEXT:
+      case T.Odu.TEXT:
         return this.getByType(1);
       default:
         return null
@@ -349,7 +349,7 @@ class U {
     if (null != n) {
       n.screenAnalytics.destroy();
       let t = await n.getAnalytics();
-      for (let e of (E.default.track(S.rMx.OVERLAY_USAGE_STATS, t.usage), t.notifications)) E.default.track(S.rMx.OVERLAY_USAGE_NOTIFICATION_STATS, e);
+      for (let e of (E.default.track(T.rMx.OVERLAY_USAGE_STATS, t.usage), t.notifications)) E.default.track(T.rMx.OVERLAY_USAGE_NOTIFICATION_STATS, e);
       D.verbose("OVERLAY_USAGE_STATS: ".concat(e.name), t), delete U.gamesByPid[e.pid]
     }
     delete U.gamesByName[t]
@@ -459,7 +459,7 @@ class U {
   }
   constructor(e) {
     var t, n;
-    A(this, "game", true), A(this, "uuid", true), A(this, "overlayStatus", true), A(this, "overlayMethod", true), A(this, "overlayMethodStats", true), A(this, "notificationAnalytics", true), A(this, "widgetAnalytics", true), A(this, "screenAnalytics", true), A(this, "uiUnlockedCount", true), A(this, "uiLockedCount", true), A(this, "gameFocusChangedCount", true), A(this, "gameConcurrentGameCount", true), A(this, "overlayMessageAckCount", true), A(this, "overlayMessageCreateCount", true), A(this, "gameTimer", true), A(this, "gameFocusedTimer", true), A(this, "unlockedTimer", true), A(this, "rtcConnectionTimer", true), A(this, "desktopFocusedTimer", true), A(this, "desktopFocusChangedCount", true), A(this, "desktopMessageAckCount", true), A(this, "desktopMessageCreateCount", true), A(this, "soundboardShownTimer", true), A(this, "soundboardShownCount", true), A(this, "soundboardKeepOpenCount", true), A(this, "muteToggledCount", true), A(this, "_successfullyShown", true), this.game = e, this.uuid = j(), this.overlayMethod = null, this.overlayMethodStats = null, this.notificationAnalytics = new x, this.widgetAnalytics = new M, this.uiUnlockedCount = 0, this.uiLockedCount = 0, this.gameFocusChangedCount = 0, this.gameConcurrentGameCount = 0, this.overlayMessageAckCount = 0, this.overlayMessageCreateCount = 0, this.gameTimer = i.G9.startNew(), this.gameFocusedTimer = new i.G9, this.unlockedTimer = new i.G9, this.rtcConnectionTimer = new i.G9, this.desktopFocusedTimer = new i.G9, this.desktopFocusChangedCount = 0, this.desktopMessageAckCount = 0, this.desktopMessageCreateCount = 0, this.soundboardShownTimer = new i.G9, this.soundboardShownCount = 0, this.soundboardKeepOpenCount = 0, this.muteToggledCount = 0, this._successfullyShown = false, this.screenAnalytics = new k(e), this.overlayStatus = (0, d.b6)(e), this.overlayMethod = null != (n = null == (t = this.overlayStatus) ? true : t.overlayMethod) ? n : null, this.overlayMethodStats = this.buildOverlayMethodStats(this.overlayMethod, e), U.desktopMainWindowHasFocus && this.desktopFocusedTimer.start(), J.hasConnection() && this.rtcConnectionTimer.start()
+    A(this, "game", true), A(this, "uuid", true), A(this, "overlayStatus", true), A(this, "overlayMethod", true), A(this, "overlayMethodStats", true), A(this, "notificationAnalytics", true), A(this, "widgetAnalytics", true), A(this, "screenAnalytics", true), A(this, "uiUnlockedCount", true), A(this, "uiLockedCount", true), A(this, "gameFocusChangedCount", true), A(this, "gameConcurrentGameCount", true), A(this, "overlayMessageAckCount", true), A(this, "overlayMessageCreateCount", true), A(this, "gameTimer", true), A(this, "gameFocusedTimer", true), A(this, "unlockedTimer", true), A(this, "rtcConnectionTimer", true), A(this, "desktopFocusedTimer", true), A(this, "desktopFocusChangedCount", true), A(this, "desktopMessageAckCount", true), A(this, "desktopMessageCreateCount", true), A(this, "soundboardShownTimer", true), A(this, "soundboardShownCount", true), A(this, "soundboardKeepOpenCount", true), A(this, "muteToggledCount", true), A(this, "_successfullyShown", true), this.game = e, this.uuid = j(), this.overlayMethod = null, this.overlayMethodStats = null, this.notificationAnalytics = new L, this.widgetAnalytics = new M, this.uiUnlockedCount = 0, this.uiLockedCount = 0, this.gameFocusChangedCount = 0, this.gameConcurrentGameCount = 0, this.overlayMessageAckCount = 0, this.overlayMessageCreateCount = 0, this.gameTimer = i.G9.startNew(), this.gameFocusedTimer = new i.G9, this.unlockedTimer = new i.G9, this.rtcConnectionTimer = new i.G9, this.desktopFocusedTimer = new i.G9, this.desktopFocusChangedCount = 0, this.desktopMessageAckCount = 0, this.desktopMessageCreateCount = 0, this.soundboardShownTimer = new i.G9, this.soundboardShownCount = 0, this.soundboardKeepOpenCount = 0, this.muteToggledCount = 0, this._successfullyShown = false, this.screenAnalytics = new k(e), this.overlayStatus = (0, d.b6)(e), this.overlayMethod = null != (n = null == (t = this.overlayStatus) ? true : t.overlayMethod) ? n : null, this.overlayMethodStats = this.buildOverlayMethodStats(this.overlayMethod, e), U.desktopMainWindowHasFocus && this.desktopFocusedTimer.start(), J.hasConnection() && this.rtcConnectionTimer.start()
   }
 }
 
@@ -530,7 +530,7 @@ function W(e) {
 }
 
 function K(e) {
-  e.message.state === S.yb.SENDING && U.desktopMessageEvent("created")
+  e.message.state === T.yb.SENDING && U.desktopMessageEvent("created")
 }
 
 function z(e) {
@@ -569,10 +569,10 @@ class J {
     var t;
     let n = (null != (t = e.channelId) ? t : "unknown") + e.context;
     switch (e.state) {
-      case S.hes.RTC_CONNECTED:
+      case T.hes.RTC_CONNECTED:
         J.connections.add(n);
         break;
-      case S.hes.DISCONNECTED:
+      case T.hes.DISCONNECTED:
         J.connections.delete(n)
     }
     let r = J.hasConnection();
@@ -593,7 +593,7 @@ class $ {
     })
   }
   static handleMessageCreate(e) {
-    if (e.message.state !== S.yb.SENDING) return;
+    if (e.message.state !== T.yb.SENDING) return;
     D.verbose("MESSAGE_CREATE", e, Error().stack);
     let t = h.Z.getGame();
     if (null == t) return void D.error("Game not found.");

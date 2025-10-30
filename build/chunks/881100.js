@@ -109,7 +109,7 @@ let G = (e, t, n) => (0, i.wj)(e) ? t : n,
       longerMessages: {
         title: _.intl.string(_.t.BUScid),
         description: _.intl.string(_.t.vN6XpQ),
-        imageSource: G(i, L, x),
+        imageSource: G(i, x, L),
         imageClassName: t.longerMessagesImage
       },
       moreGuilds: {
@@ -134,25 +134,25 @@ let G = (e, t, n) => (0, i.wj)(e) ? t : n,
       soundboard: {
         title: _.intl.string(_.t["lGcW+c"]),
         description: _.intl.string(_.t["/fDyO+"]),
-        imageSource: G(i, I, S),
+        imageSource: G(i, I, T),
         imageClassName: t.soundboardImage
       },
       stickers: {
         title: _.intl.string(_.t["1c+xwT"]),
         description: _.intl.string(_.t.hJG8ZN),
-        imageSource: G(i, T, k),
+        imageSource: G(i, S, k),
         imageClassName: t.stickersImage
       },
       stickersBurst: {
         title: _.intl.string(_.t.tzdIwI),
         description: _.intl.string(_.t.hJG8ZN),
-        imageSource: G(i, T, k),
+        imageSource: G(i, S, k),
         imageClassName: t.stickersImage
       },
       stickersPremiumPerk: {
         title: _.intl.string(_.t.tzdIwI),
         description: _.intl.string(_.t.FXlU24),
-        imageSource: G(i, T, k),
+        imageSource: G(i, S, k),
         imageClassName: t.stickersImage
       },
       streaming: {

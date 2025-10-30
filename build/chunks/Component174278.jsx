@@ -12,7 +12,7 @@ var Chunk952265 = require("./952265.js"),
   Chunk481060 = require("./481060.js"),
   Chunk479661 = require("./479661.js"),
   Chunk135102 = require("./135102.js"),
-  Chunk531421 = require("./531421.js"),
+  Chunk24864 = require("./24864.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f(e, t, n) {
@@ -40,7 +40,7 @@ let p = () => {
     (0, Chunk952265.ZD)(async () => {
       let {
         CustomThemesShareModalWrapper: e
-      } = await Promise.all([require.e("36653"), require.e("26196")]).then(require.bind(require, 433359));
+      } = await Promise.all([require.e("36653"), require.e("67261")]).then(require.bind(require, 433359));
       return t => (0, r.jsx)(e, _({}, t))
     }, {
       modalKey: Chunk135102.tj
@@ -49,7 +49,7 @@ let p = () => {
   h = () => (0, Chunk479661.e)("client_themes_editor") ? (0, Chunk951288.jsx)(Chunk28664.u, {
     text: Chunk388032.intl.string(Chunk388032.t.RDE0Sc),
     children: (0, Chunk951288.jsx)(Chunk159691.hU, {
-      "aria-label": Chunk388032.intl.string(Chunk531421.default.zgFs8C),
+      "aria-label": Chunk388032.intl.string(Chunk24864.default.zgFs8C),
       icon: Chunk481060.aAc,
       variant: "icon-only",
       onClick: () => {

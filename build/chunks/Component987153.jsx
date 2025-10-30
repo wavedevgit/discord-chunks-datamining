@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk624653 = require("./624653.js"),
   Chunk635146 = require("./635146.js"),
   Chunk219855 = require("./219855.js"),
-  Chunk325380 = require("./325380.js");
+  Chunk815847 = require("./815847.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -70,8 +70,8 @@ function b(e) {
     "aria-label": O,
     dismissable: v = true,
     onClose: I,
-    contentOutsideContainer: S,
-    trackingProps: T,
+    contentOutsideContainer: T,
+    trackingProps: S,
     children: A
   } = e, C = i.useId(), N = i.useMemo(() => ({
     id: C,
@@ -87,8 +87,8 @@ function b(e) {
       "aria-label": O,
       "aria-labelledby": null != O ? true : N.headingId,
       returnRef: b,
-      trackingProps: E(m({}, T), {
-        impressionType: null != (t = null == T ? true : T.impressionType) ? t : l.ImpressionTypes.MODAL
+      trackingProps: E(m({}, S), {
+        impressionType: null != (t = null == S ? true : S.impressionType) ? t : l.ImpressionTypes.MODAL
       }),
       children: (0, r.jsx)(u.y, {
         forceLevel: 1,
@@ -96,7 +96,7 @@ function b(e) {
           className: o()(p.outerContainer, {
             [p.fullScreenOnMobile]: g
           }),
-          children: [S, (0, r.jsx)(s.animated.div, {
+          children: [T, (0, r.jsx)(s.animated.div, {
             "data-mana-component": "modal",
             className: o()(p.container, p["size-".concat(_)], p["padding-size-".concat(h)]),
             style: R,

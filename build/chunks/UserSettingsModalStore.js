@@ -2,7 +2,7 @@
 /** chunk id: 663389, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -68,12 +68,12 @@ function I() {
   u = Chunk981631.QZA.CLOSED, h = null, m = null, d = null, f = {}, _ = {}, E = null, b = [], y = null
 }
 
-function S(e) {
+function T(e) {
   var t;
   d = e.section, E = null, b = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (f[d] = e.subsection)
 }
 
-function T(e) {
+function S(e) {
   let {
     forSection: t
   } = e;
@@ -161,15 +161,15 @@ class D extends(r = Chunk442837.ZP.Store) {
   }
 }
 l(D, "displayName", "UserSettingsModalStore");
-let L = new D(Chunk570140.Z, {
+let x = new D(Chunk570140.Z, {
   USER_SETTINGS_MODAL_OPEN: O,
   USER_SETTINGS_MODAL_INIT: v,
   USER_SETTINGS_MODAL_CLOSE: I,
   LOGOUT: I,
   USER_SETTINGS_MODAL_SUBMIT: N,
   USER_SETTINGS_MODAL_SUBMIT_FAILURE: w,
-  USER_SETTINGS_MODAL_SET_SECTION: S,
-  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: T,
+  USER_SETTINGS_MODAL_SET_SECTION: T,
+  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: S,
   USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: A,
   USER_SETTINGS_MODAL_UPDATE_ACCOUNT: C,
   USER_SETTINGS_MODAL_SUBMIT_COMPLETE: P,

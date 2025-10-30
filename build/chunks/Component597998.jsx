@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk354459 = require("./354459.js"),
   Chunk927923 = require("./927923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk368736 = require("./368736.js");
+  Chunk867721 = require("./867721.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,7 +73,7 @@ function w(e, t) {
 
 function D(e, t) {
   if (null == e) return {};
-  var n, r, i = L(e, t);
+  var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -81,14 +81,14 @@ function D(e, t) {
   return i
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let x = 16,
+let L = 16,
   M = e => {
     let {
       hangStatusActivity: t,
@@ -111,7 +111,7 @@ let x = 16,
       className: C.icons,
       children: (0, r.jsx)(E.Z, {
         userId: s,
-        size: x,
+        size: L,
         hangStatusActivity: t,
         className: o()(C.icon, n)
       })
@@ -149,8 +149,8 @@ function j(e) {
     otherClientSessionType: P,
     voicePlatform: w,
     application: D,
-    guildId: L,
-    channelId: x,
+    guildId: x,
+    channelId: L,
     user: k,
     disconnected: j,
     hangStatusActivity: U,
@@ -206,9 +206,9 @@ function j(e) {
       color: "currentColor",
       className: o()(C.icon, N)
     })
-  }, "activity")), P === T.YE.XBOX || w === S.wR.XBOX ? K.push((0, r.jsx)(y.Z, {
+  }, "activity")), P === S.YE.XBOX || w === T.wR.XBOX ? K.push((0, r.jsx)(y.Z, {
     className: o()(C.icon, N)
-  }, "xbox")) : (P === T.YE.PLAYSTATION || w === S.wR.PLAYSTATION) && K.push((0, r.jsx)(b.Z, {
+  }, "xbox")) : (P === S.YE.PLAYSTATION || w === T.wR.PLAYSTATION) && K.push((0, r.jsx)(b.Z, {
     className: o()(C.icon, N)
   }, "playstation")), v && K.push((0, r.jsx)(l.u, {
     text: A.intl.string(A.t["JH1SJ+"]),
@@ -236,8 +236,8 @@ function j(e) {
       children: Q ? (0, r.jsx)(G, {
         application: D,
         iconClassName: N,
-        guildId: L,
-        channelId: x,
+        guildId: x,
+        channelId: L,
         userId: k.id
       }, "".concat(k.id, "-game")) : (0, r.jsx)(M, {
         userId: k.id,
@@ -266,12 +266,12 @@ let U = function(e) {
     onDoubleClick: b,
     onContextMenu: y,
     onMouseLeave: O,
-    onMouseDown: S,
-    priority: T,
+    onMouseDown: T,
+    priority: S,
     speaking: N,
     collapsed: P,
-    mute: L,
-    serverMute: x,
+    mute: x,
+    serverMute: L,
     guildId: M,
     nick: k,
     isGuest: U,
@@ -295,15 +295,15 @@ let U = function(e) {
   }, X = e => {
     null == O || O(e, H)
   }, Q = e => {
-    null == S || S(e, H)
+    null == T || T(e, H)
   };
 
   function J() {
-    return T && !P ? (0, r.jsx)(l.u, {
+    return S && !P ? (0, r.jsx)(l.u, {
       text: A.intl.string(A.t.BVK71i),
       children: (0, r.jsx)("div", {
         className: o()(C.iconPriortySpeaker, {
-          [C.iconPriortySpeakerSpeaking]: !L && !x && N
+          [C.iconPriortySpeakerSpeaking]: !x && !L && N
         })
       })
     }) : null
@@ -325,7 +325,7 @@ let U = function(e) {
   function ee() {
     let e = (0, r.jsxs)("div", {
         className: o()(i, C.username, W, {
-          [C.usernameSpeaking]: !L && !x && N
+          [C.usernameSpeaking]: !x && !L && N
         }),
         children: [null != k ? k : v.ZP.getName(H), U ? (0, r.jsxs)("span", {
           className: C.guestSuffix,

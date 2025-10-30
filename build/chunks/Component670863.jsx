@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk118896 = require("./118896.js");
+  Chunk918165 = require("./918165.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -107,16 +107,16 @@ function R(e) {
     onSelectDevice: y,
     hideDeviceTypeIcon: I = false,
     label: A
-  } = e, R = T(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon", "label"]);
+  } = e, R = S(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon", "label"]);
   let {
     setDevice: P,
     Icon: w,
     getCanSetDevice: D,
-    getWarningMessage: L,
-    getLocation: x
+    getWarningMessage: x,
+    getLocation: L
   } = N(t), {
     analyticsLocations: M
-  } = (0, d.ZP)(), k = (0, s.e7)([f.Z], () => f.Z.theme), [j, U] = i.useState(u), G = x(a), [B, Z] = (0, E.Ls)(t, {
+  } = (0, d.ZP)(), k = (0, s.e7)([f.Z], () => f.Z.theme), [j, U] = i.useState(u), G = L(a), [B, Z] = (0, E.Ls)(t, {
     location: G
   }), {
     id: F
@@ -126,7 +126,7 @@ function R(e) {
     location: "".concat(G, "/SingleSelectDevices")
   }), W = (0, r.jsx)(c.Wn, {
     messageType: c.QYI.WARNING,
-    children: L()
+    children: x()
   }), K = i.useCallback(e => {
     if (e === C) U(true), m.default.track(b.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
       device_type: t,
@@ -220,7 +220,7 @@ function R(e) {
     }
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.q4e, S({
+    children: [(0, r.jsx)(c.q4e, T({
       label: A,
       value: V,
       onChange: K,

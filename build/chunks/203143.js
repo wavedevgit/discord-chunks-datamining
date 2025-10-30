@@ -44,7 +44,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,7 +69,7 @@ function x(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -96,7 +96,7 @@ function U(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = S.Z.getMessage(t, n);
+  } = e, r = T.Z.getMessage(t, n);
   if (null != r) return {
     message: r,
     channelId: t,
@@ -158,7 +158,7 @@ function Z(e) {
     title: w.intl.string(w.t["7LpysO"]),
     body: w.intl.string(w.t["5sHHoy"])
   });
-  let a = S.Z.getMessage(t, n);
+  let a = T.Z.getMessage(t, n);
   if (null == a || null == a.poll || 0 === a.poll.answers.length) return;
   let o = null != r ? r : String(a.poll.answers[0].answer_id);
   A.A({
@@ -189,7 +189,7 @@ function V(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = S.Z.getMessage(t, n);
+  } = e, r = T.Z.getMessage(t, n);
   return null == r ? [] : r.reactions.flatMap(e => true === e.me_vote ? e.emoji.name : [])
 }
 async function H(e) {
@@ -251,7 +251,7 @@ async function Y(e) {
   });
   try {
     let e = [...a.selectedAnswerIds.values()];
-    (0, N.eu)(t, n, e => (i()(null != e, "Must not be able to vote without existing state!"), M(L({}, e), {
+    (0, N.eu)(t, n, e => (i()(null != e, "Must not be able to vote without existing state!"), M(x({}, e), {
       submitting: true,
       editing: false
     }))), await H({
@@ -273,7 +273,7 @@ async function Y(e) {
       messageId: n,
       answerIds: o
     }), (0, N.eu)(t, n, e => {
-      if (null != e) return M(L({}, e), {
+      if (null != e) return M(x({}, e), {
         submitting: false,
         editing: false
       })
@@ -312,7 +312,7 @@ function K(e) {
   (0, N.eu)(t, n, e => {
     var r, i;
     let a = null == e || !e.showResults,
-      o = S.Z.getMessage(t, n),
+      o = T.Z.getMessage(t, n),
       s = null != o ? o.reactions.reduce((e, t) => {
         var n, r;
         return e + (null != (r = null == (n = t.count_details) ? true : n.vote) ? r : 0)
@@ -414,7 +414,7 @@ let q = {
           showResults: false
         }
       }
-      let s = L({}, e),
+      let s = x({}, e),
         c = new Set(s.selectedAnswerIds);
       if (s.selectedAnswerIds = c, c.has(r)) c.delete(r);
       else {
@@ -448,7 +448,7 @@ let q = {
       duration: a,
       layout: o,
       onClose: l
-    } = e, c = T.Z.getUploads(t.id, v.d.Poll), u = r.map(e => {
+    } = e, c = S.Z.getUploads(t.id, v.d.Poll), u = r.map(e => {
       var t, n;
       let r = null == c ? true : c.findIndex(t => t.id === e.localCreationAnswerId),
         i = {
@@ -487,7 +487,7 @@ let q = {
         }
       }), null == l || l()
     } catch (e) {
-      if ("poll" === (e instanceof p.Hx ? e : new p.Hx(e)).getAnyErrorMessage() && null != e.text) throw M(L({}, e), {
+      if ("poll" === (e instanceof p.Hx ? e : new p.Hx(e)).getAnyErrorMessage() && null != e.text) throw M(x({}, e), {
         body: JSON.parse(e.text)
       });
       throw e

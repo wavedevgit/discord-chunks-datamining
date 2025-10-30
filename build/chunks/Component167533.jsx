@@ -9,7 +9,7 @@ var n, Chunk951288 = require("./951288.js"),
   l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk530410 = require("./530410.js");
+  Chunk843966 = require("./843966.js");
 
 function u(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -87,8 +87,8 @@ class O extends(n = Chunk647438.PureComponent) {
       }, e.key)
     });
     return (0, Chunk951288.jsx)(E, {
-      className: l()(Chunk120356, Chunk530410.row, {
-        [Chunk530410.stickyHeader]: _
+      className: l()(Chunk120356, Chunk843966.row, {
+        [Chunk843966.stickyHeader]: _
       }),
       children: p
     })

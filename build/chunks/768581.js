@@ -9,7 +9,7 @@ require.d(exports, {
   JM: () => w,
   NZ: () => M,
   ZP: () => et,
-  aN: () => x,
+  aN: () => L,
   ay: () => Q,
   ff: () => E,
   gT: () => C,
@@ -76,8 +76,8 @@ r.DEFAULT_GROUP_DM_AVATARS;
 let O = r.canUseWebp(),
   v = 5,
   I = 360,
-  S = 1096,
-  T = (0, Chunk358085.isAndroid)();
+  T = 1096,
+  S = (0, Chunk358085.isAndroid)();
 
 function A(e) {
   let t, {
@@ -111,7 +111,7 @@ function C(e) {
   } = e, o = O ? "webp" : "png", s = O ? "webp" : "gif", c = i ? "png" : n ? s : o;
   if (null != window.GLOBAL_ENV.CDN_HOST) {
     let e = new URL("/emojis/".concat(t, ".").concat(c), "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST));
-    return e.searchParams.set("size", (0, l.oO)(r * (0, l.x_)(), T).toString()), O && n && e.searchParams.set("animated", "true"), a && e.searchParams.set("force_sdr", "true"), e.toString()
+    return e.searchParams.set("size", (0, l.oO)(r * (0, l.x_)(), S).toString()), O && n && e.searchParams.set("animated", "true"), a && e.searchParams.set("force_sdr", "true"), e.toString()
   } {
     let e = new URL(f.ANM.EMOJI(t, c), location.protocol + window.GLOBAL_ENV.API_ENDPOINT);
     return a && e.searchParams.set("force_sdr", "true"), e.toString()
@@ -193,13 +193,13 @@ function D(e) {
   })
 }
 
-function L(e, t) {
+function x(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = D(e, n);
   return null != r ? ee(r) : t.getAvatarSource(e.guildId, n)
 }
 
-function x(e) {
+function L(e) {
   let t, {
     id: n,
     banner: r,
@@ -294,7 +294,7 @@ function B(e) {
     homeHeader: r
   } = e;
   if (null == r) return null;
-  let i = (0, l.oO)(S * (0, l.x_)()),
+  let i = (0, l.oO)(T * (0, l.x_)()),
     a = window.GLOBAL_ENV.CDN_HOST;
   return (null != a ? "https://".concat(a, "/home-headers/").concat(n, "/").concat(r, ".png") : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_HOME_HEADER(n, r)) + "?size=".concat(i)
 }
@@ -482,9 +482,9 @@ let et = {
   getDefaultAvatarURL: N,
   getGuildMemberAvatarURL: D,
   getGuildMemberAvatarURLSimple: w,
-  getGuildMemberAvatarSource: L,
+  getGuildMemberAvatarSource: x,
   getGuildMemberBannerURL: k,
-  getUserBannerURL: x,
+  getUserBannerURL: L,
   getAvatarDecorationURL: M,
   hasAnimatedGuildIcon: function e(e) {
     return X(null == e ? true : e.icon)

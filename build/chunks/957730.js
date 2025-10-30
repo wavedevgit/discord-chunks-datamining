@@ -333,7 +333,7 @@ let V = Chunk428595.Z.RULES,
           return null != t ? {
             content: "@".concat(t.name)
           } : {
-            content: "@".concat(x.intl.string(x.t["11pdXZ"]))
+            content: "@".concat(L.intl.string(L.t["11pdXZ"]))
           }
         }
         return {
@@ -346,7 +346,7 @@ let V = Chunk428595.Z.RULES,
       parse(e) {
         let t = E.Z.getChannel(e[1]);
         return {
-          content: null == t ? e[0] : (0, l.F6)(t, C.default, T.Z, true, true)
+          content: null == t ? e[0] : (0, l.F6)(t, C.default, S.Z, true, true)
         }
       }
     },
@@ -460,7 +460,7 @@ function er(e, t, n) {
 function ei(e) {
   let t, n = null == e ? true : e.getGuildId(),
     r = null != n ? I.Z.getGuild(n) : null,
-    a = S.Z.can(D.Plq.MENTION_EVERYONE, e);
+    a = T.Z.can(D.Plq.MENTION_EVERYONE, e);
   t = (null == e ? true : e.isPrivate()) ? e.recipients.map(e => ({
     userId: e,
     nick: null
@@ -568,7 +568,7 @@ let es = {
       R.ZP.isEmojiPremiumLocked({
         emoji: t,
         channel: e,
-        intention: L.Hz.CHAT
+        intention: x.Hz.CHAT
       }) ? i.invalidEmojis.push(t) : n || i.validNonShortcutEmojis.push(t)
     }), i
   },

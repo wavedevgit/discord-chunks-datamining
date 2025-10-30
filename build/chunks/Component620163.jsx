@@ -92,9 +92,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk352609 = require("./352609.js"),
-  Chunk602698 = require("./602698.js"),
-  Chunk202323 = require("./202323.js");
+  Chunk593082 = require("./593082.js"),
+  Chunk382402 = require("./382402.js"),
+  Chunk756464 = require("./756464.js");
 
 function ek(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -168,8 +168,8 @@ let eB = () => {
       unseenGiftCount: t,
       showPrepaidPaymentPastDueWarning: h,
       searchParams: I,
-      numOfPendingFamilyRequests: S,
-      isOverlaySupported: x,
+      numOfPendingFamilyRequests: T,
+      isOverlaySupported: L,
       isClipsBetaTagShowing: ek = false,
       shouldMergeGameSettings: eU,
       isKeywordFilteringEnabled: eY,
@@ -183,8 +183,8 @@ let eB = () => {
       hasTOTPEnabled: e$,
       developerMode: e0,
       isAdultUser: e1,
-      hasSecureFramesVerifiedUserIds: e3,
-      hasIgnoredUsers: e2,
+      hasSecureFramesVerifiedUserIds: e2,
+      hasIgnoredUsers: e3,
       hasBlockedUsers: e4,
       isEligibleForSensitiveContentDefaults: e8,
       inputMode: e5,
@@ -310,7 +310,7 @@ let eB = () => {
         searchableTitles: [eD.intl.string(eD.t.URyqtP)],
         label: eD.intl.string(eD.t.URyqtP),
         ariaLabel: eD.intl.string(eD.t.URyqtP),
-        element: eS.Z,
+        element: eT.Z,
         predicate: () => eU
       },
       [eN.s6.GAMES_MY_GAMES]: {
@@ -348,7 +348,7 @@ let eB = () => {
         },
         onSettingsClose: () => {
           l.Z.wait(() => {
-            (0, T.It)(), (0, u.P6)(), d.Z.clearSubsection(eP.oAB.PROFILE_CUSTOMIZATION)
+            (0, S.It)(), (0, u.P6)(), d.Z.clearSubsection(eP.oAB.PROFILE_CUSTOMIZATION)
           })
         },
         url: eP.Z5c.SETTINGS("profile-customization")
@@ -575,15 +575,15 @@ let eB = () => {
         section: eP.oAB.DATA_AND_PRIVACY,
         searchableTitles: [eD.intl.string(eD.t["5b3FNI"])],
         parent: eN.s6.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-        predicate: () => e3
+        predicate: () => e2
       },
       [eN.s6.PRIVACY_FAMILY_CENTER]: {
         section: eP.oAB.FAMILY_CENTER,
-        searchableTitles: [eD.intl.string(ex.default.gntCQT)],
-        label: eD.intl.string(ex.default.gntCQT),
-        ariaLabel: eD.intl.string(ex.default.gntCQT),
+        searchableTitles: [eD.intl.string(eL.default.gntCQT)],
+        label: eD.intl.string(eL.default.gntCQT),
+        ariaLabel: eD.intl.string(eL.default.gntCQT),
         element: es.Z,
-        badgeCount: S,
+        badgeCount: T,
         newIndicator: (0, r.jsx)(s.IGR, {
           text: eD.intl.string(eD.t.y2b7CA),
           color: v.Z.BG_BRAND
@@ -655,15 +655,15 @@ let eB = () => {
         section: eP.oAB.CONTENT_AND_SOCIAL,
         parent: eN.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
         label: eD.intl.string(eD.t["3wRort"]),
-        element: eT.ZP,
-        predicate: () => e2 || e4
+        element: eS.ZP,
+        predicate: () => e3 || e4
       },
       [eN.s6.BLOCKED_USERS]: {
         section: eP.oAB.CONTENT_AND_SOCIAL,
         parent: eN.s6.RESTRICTED_USERS,
         label: eD.intl.string(eD.t.PFOUKW),
         searchableTitles: [eD.intl.string(eD.t.PFOUKW)],
-        element: eT.GF,
+        element: eS.GF,
         predicate: () => e4
       },
       [eN.s6.IGNORED_USERS]: {
@@ -671,8 +671,8 @@ let eB = () => {
         parent: eN.s6.RESTRICTED_USERS,
         searchableTitles: [eD.intl.string(eD.t["93ZDWE"])],
         label: eD.intl.string(eD.t["93ZDWE"]),
-        element: eT.yo,
-        predicate: () => e2
+        element: eS.yo,
+        predicate: () => e3
       },
       [eN.s6.PREMIUM]: {
         section: eP.oAB.PREMIUM,
@@ -801,7 +801,7 @@ let eB = () => {
         section: eP.oAB.APPEARANCE,
         searchableTitles: [eD.intl.string(eD.t.dyamEI), eD.intl.string(eD.t.p8NOwi), eD.intl.string(eD.t["+o/sOo"])],
         parent: eN.s6.APPEARANCE,
-        predicate: () => L.Z.getCurrentConfig({
+        predicate: () => x.Z.getCurrentConfig({
           location: "SettingsRendererConfig"
         }, {
           autoTrackExposure: false
@@ -853,7 +853,7 @@ let eB = () => {
       },
       [eN.s6.ACCESSIBILITY_DISPLAY_NAME_STYLES]: {
         section: eP.oAB.ACCESSIBILITY,
-        searchableTitles: [eD.intl.string(eL.default["2gFUEw"])],
+        searchableTitles: [eD.intl.string(ex.default["2gFUEw"])],
         parent: eN.s6.ACCESSIBILITY
       },
       [eN.s6.ACCESSIBILITY_PROFILE_COLORS]: {
@@ -1634,7 +1634,7 @@ let eB = () => {
         searchableTitles: [eD.intl.string(eD.t["9cb1Uz"]), eD.intl.string(eD.t.HcoRu0)],
         label: eD.intl.string(eD.t["9cb1Uz"]),
         element: e_.Z,
-        predicate: () => !eU && x
+        predicate: () => !eU && L
       },
       [eN.s6.CHANGELOG]: {
         section: "changelog",

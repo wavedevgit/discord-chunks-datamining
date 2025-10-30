@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk26033 = require("./26033.js"),
   Chunk178762 = require("./178762.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk709516 = require("./709516.js");
+  Chunk313175 = require("./313175.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,11 +68,11 @@ function O(e) {
     entry: O,
     onSelect: v,
     disableGameProfileLinks: I
-  } = e, S = i.useRef(null), T = i.useContext(_.Ir), A = (0, d.Z)({
+  } = e, T = i.useRef(null), S = i.useContext(_.Ir), A = (0, d.Z)({
     userId: n.id,
     guildId: m,
     channelId: null == E ? true : E.id,
-    onAction: T
+    onAction: S
   }), C = (0, l.Z)({
     id: n.id,
     label: p.intl.string(p.t["/AXYnE"])
@@ -87,7 +87,7 @@ function O(e) {
     sourceUserId: O.author_id
   });
   return (0, r.jsx)(o.yRy, {
-    targetElementRef: S,
+    targetElementRef: T,
     align: "top",
     position: "right",
     disablePointerEvents: false,
@@ -108,7 +108,7 @@ function O(e) {
               id: "game-profile",
               label: p.intl.string(p.t.f7aVGn),
               action: e => {
-                w(e), null == T || T()
+                w(e), null == S || S()
               }
             })]
           }), (0, r.jsxs)(o.kSQ, {
@@ -121,7 +121,7 @@ function O(e) {
       asContainer: true,
       text: p.intl.string(p.t["UKOtz+"]),
       children: (0, r.jsx)(o.P3F, b(g({
-        innerRef: S,
+        innerRef: T,
         className: h.menuIcon
       }, e), {
         children: (0, r.jsx)(o.xhG, {

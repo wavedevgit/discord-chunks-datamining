@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk967538 = require("./967538.jsx"),
   Chunk885302 = require("./885302.jsx"),
   Chunk914677 = require("./914677.jsx"),
-  Chunk86852 = require("./86852.js"),
+  Chunk544074 = require("./544074.js"),
   h = function(e) {
     return e[e.NITRO_GEM = 0] = "NITRO_GEM", e[e.NITRO_LOGO = 1] = "NITRO_LOGO", e[e.AVATAR_DECO = 2] = "AVATAR_DECO", e
   }({});
@@ -53,8 +53,8 @@ let m = e => {
       ellipseOpacity: O,
       customAnimationClassName: v,
       circleColor: I,
-      circleStroke: S
-    } = e, T = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), A = t && !T, C = () => {
+      circleStroke: T
+    } = e, S = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), A = t && !S, C = () => {
       switch (E) {
         case 0:
           return (0, r.jsx)(d.Z, {
@@ -84,7 +84,7 @@ let m = e => {
           [p.activeProgressCircleAnimation]: A,
           [null != v ? v : ""]: A
         }),
-        progressCircleStroke: S,
+        progressCircleStroke: T,
         progressCircleStrokeSize: l,
         percentage: null != i ? i : h,
         initialPercentage: null != i ? i : g,

@@ -2,7 +2,7 @@
 /** chunk id: 350483, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -79,7 +79,7 @@ function I(e, t) {
   }, ...v(e, t)]
 }
 
-function S(e, t) {
+function T(e, t) {
   var i, a;
   let s, {
       channelPredicate: d = () => true,
@@ -89,11 +89,11 @@ function S(e, t) {
       withVoiceChannels: b = false
     } = t,
     v = null != (i = l.Z.getState().guildId) ? i : h.ME,
-    S = l.Z.getState().channelId,
-    T = O(v, e),
-    A = e > 0 ? 0 : T.length - 1,
+    T = l.Z.getState().channelId,
+    S = O(v, e),
+    A = e > 0 ? 0 : S.length - 1,
     C = I(v, b),
-    N = C.indexOf(S) + e;
+    N = C.indexOf(T) + e;
   for (; null != v && "" !== v;) {
     if (s = C[N], f(v))
       for (; null != s && "" !== s;) {
@@ -102,14 +102,14 @@ function S(e, t) {
         } else if ("object" == typeof s && m(s.resourceId, s.type)) return v !== u.Z.getGuildId() && (0, p.K)(v, null == (a = c.ZP.getDefaultChannel(v)) ? true : a.id), (0, o.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("4096"), n.e("56236"), n.e("74103")]).then(n.bind(n, 17671));
+          } = await Promise.all([n.e("4096"), n.e("56236"), n.e("63933")]).then(n.bind(n, 17671));
           return t => (0, r.jsx)(e, y(E({}, t), {
             guildId: v
           }))
         });
         N += e, s = C[N]
       }
-    if (A += e, null == (v = T[A]) || "" === v) break;
+    if (A += e, null == (v = S[A]) || "" === v) break;
     C = I(v, b), N = e < 0 ? C.length - 1 : 0
   }
   _.S.dispatch(h.CkL.SHAKE_APP, {
@@ -117,4 +117,4 @@ function S(e, t) {
     intensity: 2
   })
 }
-let T = a().throttle(S, Chunk981631.aZC)
+let S = a().throttle(T, Chunk981631.aZC)

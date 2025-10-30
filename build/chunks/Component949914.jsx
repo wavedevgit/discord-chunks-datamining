@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk176505 = require("./176505.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk602589 = require("./602589.js");
+  Chunk816730 = require("./816730.js");
 let j = e => {
     let {
       label: t,
@@ -133,9 +133,9 @@ let j = e => {
     } = (0, E.uP)(null == l ? true : l.id), V = (null == t ? true : t.paymentGateway) === D.gg$.APPLE_PARTNER;
     if (null == a || null == n || null == y) return null;
     let H = () => {
-        null != l && ((0, v.uL)(D.Z5c.CHANNEL(l.id, L.oC.ROLE_SUBSCRIPTIONS)), (0, S.default)(), f.Z.show(D.kVF.BACK_TO_PREVIOUS_SCREEN, true, M.intl.string(M.t.DvbaM4), () => (0, T.openUserSettings)(I.n.SUBSCRIPTIONS_PANEL, {
+        null != l && ((0, v.uL)(D.Z5c.CHANNEL(l.id, x.oC.ROLE_SUBSCRIPTIONS)), (0, T.default)(), f.Z.show(D.kVF.BACK_TO_PREVIOUS_SCREEN, true, M.intl.string(M.t.DvbaM4), () => (0, S.openUserSettings)(I.n.SUBSCRIPTIONS_PANEL, {
           section: D.oAB.SUBSCRIPTIONS,
-          subsection: x.cP
+          subsection: L.cP
         })))
       },
       Y = () => {

@@ -15,7 +15,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk522501 = require("./522501.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk639965 = require("./639965.js");
+  Chunk478615 = require("./478615.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -44,10 +44,10 @@ let g = 200,
   y = 132,
   O = 80,
   v = {
-    [Chunk981631.VD2.TOP_RIGHT]: Chunk639965.resizeHandleTopRight,
-    [Chunk981631.VD2.TOP_LEFT]: Chunk639965.resizeHandleTopLeft,
-    [Chunk981631.VD2.BOTTOM_LEFT]: Chunk639965.resizeHandleBottomLeft,
-    [Chunk981631.VD2.BOTTOM_RIGHT]: Chunk639965.resizeHandleBottomRight
+    [Chunk981631.VD2.TOP_RIGHT]: Chunk478615.resizeHandleTopRight,
+    [Chunk981631.VD2.TOP_LEFT]: Chunk478615.resizeHandleTopLeft,
+    [Chunk981631.VD2.BOTTOM_LEFT]: Chunk478615.resizeHandleBottomLeft,
+    [Chunk981631.VD2.BOTTOM_RIGHT]: Chunk478615.resizeHandleBottomRight
   },
   I = {
     [Chunk981631.VD2.TOP_RIGHT]: Chunk347469.y.HORIZONTAL_LEFT,
@@ -56,12 +56,12 @@ let g = 200,
     [Chunk981631.VD2.BOTTOM_RIGHT]: Chunk347469.y.HORIZONTAL_LEFT
   };
 
-function S(e, t) {
+function T(e, t) {
   let n = Math.round(e / E) * E;
   return (0, l.clamp)(n, t.minWidth, t.maxWidth)
 }
 
-function T(e) {
+function S(e) {
   let {
     resizableNode: t,
     onResize: n,
@@ -222,9 +222,9 @@ class A extends(r = Chunk647438.PureComponent) {
     }), (0, Chunk951288.jsxs)(Chunk689425.Z, {
       dragAnywhere: true,
       ref: this.handleSetDraggableRef,
-      className: s()(Chunk639965.pictureInPictureWindow, Chunk120356, {
-        [Chunk639965.hidden]: r,
-        [Chunk639965.borderRadius]: Chunk647438
+      className: s()(Chunk478615.pictureInPictureWindow, Chunk120356, {
+        [Chunk478615.hidden]: r,
+        [Chunk478615.borderRadius]: Chunk647438
       }),
       maxX: module,
       maxY: exports,
@@ -236,7 +236,7 @@ class A extends(r = Chunk647438.PureComponent) {
         ref: this.handleSetInnerDivRef,
         style: Chunk981631,
         children: this.props.children
-      }), null != Chunk347469 ? (0, Chunk951288.jsx)(T, {
+      }), null != Chunk347469 ? (0, Chunk951288.jsx)(S, {
         onResize: this.handleResize,
         onResizeEnd: this.handleResizeEnd,
         resizableNode: this._innerDivRef,
@@ -259,7 +259,7 @@ class A extends(r = Chunk647438.PureComponent) {
         resizeConfig: i
       } = this.props;
       if (null == i) return;
-      let a = S(r - (t + n), i);
+      let a = T(r - (t + n), i);
       this.getWidth() > a && (this._width = a, null == e || e(a))
     }), h(this, "handleSetInnerDivRef", e => {
       this._innerDivRef.current = e;
@@ -280,7 +280,7 @@ class A extends(r = Chunk647438.PureComponent) {
         resizeConfig: n
       } = this.props;
       if (null == n) return;
-      let r = S(e, n);
+      let r = T(e, n);
       this._width = r, null == t || t(r), this.setState({
         isResizing: false
       }), this.ensureWidth()
@@ -330,8 +330,8 @@ let C = e => {
       roundCorners: E,
       resizeConfig: v,
       className: I,
-      getDockedRectPositionY: S
-    } = e, [T, C] = a.useState(false), N = a.useMemo(() => null == t ? null : n.map(e => {
+      getDockedRectPositionY: T
+    } = e, [S, C] = a.useState(false), N = a.useMemo(() => null == t ? null : n.map(e => {
       if (e.id !== t.id && e.component !== f.NYg.ACTIVITY && e.component !== f.NYg.FRAME) return null;
       let n = "string" == typeof e.component ? h[e.component] : e.component;
       return (0, i.jsx)(n, m({
@@ -349,7 +349,7 @@ let C = e => {
     }) : (0, i.jsx)(d.ZP, {
       children: (0, i.jsx)("div", {
         className: s()(p.pictureInPicture, {
-          [p.dragging]: T
+          [p.dragging]: S
         }, I),
         children: (0, i.jsx)(A, {
           appContext: g,
@@ -364,7 +364,7 @@ let C = e => {
           maxY: l,
           width: r,
           dockedRect: _,
-          getDockedRectPositionY: S,
+          getDockedRectPositionY: T,
           edgeOffsetTop: b,
           edgeOffsetBottom: y,
           edgeOffsetLeft: O,

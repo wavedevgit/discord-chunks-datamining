@@ -27,7 +27,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -54,12 +54,12 @@ let C = "recentMentionFilterSettings",
   P = {},
   w = false,
   D = true,
-  L = Chunk433517.K.get(C, {
+  x = Chunk433517.K.get(C, {
     guildFilter: Chunk981631.NgX.ALL_SERVERS,
     everyoneFilter: true,
     roleFilter: true
   }),
-  x = false,
+  L = false,
   M = 0,
   k = false;
 
@@ -85,8 +85,8 @@ function G(e) {
   let {
     guildId: t
   } = e;
-  w = true, null == t && L.guildFilter === S.NgX.THIS_SERVER && X({
-    guildFilter: S.NgX.ALL_SERVERS
+  w = true, null == t && x.guildFilter === T.NgX.THIS_SERVER && X({
+    guildFilter: T.NgX.ALL_SERVERS
   })
 }
 
@@ -98,11 +98,11 @@ function B(e) {
 
 function Z(e) {
   let t = g.Z.getBasicChannel(e.channel_id);
-  if (null == t || !S.TPd.GUILD_TEXTUAL.has(t.type) || v.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || (0, u.zd)(t.id)) returnfalse;
+  if (null == t || !T.TPd.GUILD_TEXTUAL.has(t.type) || v.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || (0, u.zd)(t.id)) returnfalse;
   switch (v.ZP.resolvedMessageNotifications(t)) {
-    case S.bL.ALL_MESSAGES:
+    case T.bL.ALL_MESSAGES:
       returntrue;
-    case S.bL.ONLY_MENTIONS:
+    case T.bL.ONLY_MENTIONS:
       let n = v.ZP.isSuppressEveryoneEnabled(t.guild_id),
         r = v.ZP.isSuppressRolesEnabled(t.guild_id),
         i = I.default.getCurrentUser();
@@ -113,7 +113,7 @@ function Z(e) {
         suppressEveryone: n,
         suppressRoles: r
       });
-    case S.bL.NO_MESSAGES:
+    case T.bL.NO_MESSAGES:
     default:
       returnfalse
   }
@@ -129,7 +129,7 @@ function F(e) {
     addedMessages: i
   }), r ? N = N.concat(i) : (N = i, P = {}), a().forEach(i, e => {
     P[e.id] = true
-  }), w = false, D = t, M = (0, l.zO)(), x = true
+  }), w = false, D = t, M = (0, l.zO)(), L = true
 }
 
 function V() {
@@ -138,15 +138,15 @@ function V() {
 
 function H(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
-  if ((0, _.Z)(e) && !S.V$x.SELF_MENTIONABLE_SYSTEM.has(e.type)) return null;
+  if ((0, _.Z)(e) && !T.V$x.SELF_MENTIONABLE_SYSTEM.has(e.type)) return null;
   null == t && (t = e.channel_id);
   let n = g.Z.getChannel(t);
-  if (null == n || n.type === S.d4z.DM || L.guildFilter === S.NgX.THIS_SERVER && n.getGuildId() !== O.Z.getGuildId()) return null;
+  if (null == n || n.type === T.d4z.DM || x.guildFilter === T.NgX.THIS_SERVER && n.getGuildId() !== O.Z.getGuildId()) return null;
   let r = m.default.getId();
   if (y.Z.isBlockedOrIgnoredForMessage(e) || (0, p.Z)(e, r)) return null;
   e = B(e);
-  let i = !L.everyoneFilter,
-    a = !L.roleFilter;
+  let i = !x.everyoneFilter,
+    a = !x.roleFilter;
   return (0, f.ZP)({
     message: e,
     userId: r,
@@ -223,25 +223,25 @@ function q(e) {
 }
 
 function X(e) {
-  let t = A({}, L);
-  L = a().defaults(a().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), L), s.K.set(C, L);
-  let n = (e, n) => t[e] !== L[e] && L[e] === n,
-    r = n("guildFilter", S.NgX.THIS_SERVER) || n("everyoneFilter", false) || n("roleFilter", false);
+  let t = A({}, x);
+  x = a().defaults(a().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), x), s.K.set(C, x);
+  let n = (e, n) => t[e] !== x[e] && x[e] === n,
+    r = n("guildFilter", T.NgX.THIS_SERVER) || n("everyoneFilter", false) || n("roleFilter", false);
   P = {};
   let i = [];
   r && N.forEach(e => {
     let t = H(e);
     null != t && (i.push(t), P[t.id] = true)
-  }), j(N = i), 0 === N.length && (x = false)
+  }), j(N = i), 0 === N.length && (L = false)
 }
 
 function Q() {
-  if (L.guildFilter !== Chunk981631.NgX.THIS_SERVER) returnfalse;
-  x = false
+  if (x.guildFilter !== Chunk981631.NgX.THIS_SERVER) returnfalse;
+  L = false
 }
 
 function J() {
-  N = [], P = {}, x = false, k = false, R = {}
+  N = [], P = {}, L = false, k = false, R = {}
 }
 
 function $(e) {
@@ -294,16 +294,16 @@ class ea extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk375954.Z, Chunk306680.ZP, Chunk699516.Z, Chunk914010.Z, Chunk9156.ZP, Chunk594174.default)
   }
   get hasLoadedEver() {
-    return x
+    return L
   }
   get lastLoaded() {
     return M
   }
   getMentions() {
-    return x || N.length > 0 ? N : null
+    return L || N.length > 0 ? N : null
   }
   getSettingsFilteredMentions() {
-    return x || N.length > 0 ? N.filter(Z) : null
+    return L || N.length > 0 ? N.filter(Z) : null
   }
   hasMention(e) {
     return P[e]
@@ -315,13 +315,13 @@ class ea extends(r = Chunk442837.ZP.Store) {
     return D
   }
   get guildFilter() {
-    return L.guildFilter
+    return x.guildFilter
   }
   get everyoneFilter() {
-    return L.everyoneFilter
+    return x.everyoneFilter
   }
   get roleFilter() {
-    return L.roleFilter
+    return x.roleFilter
   }
   get mentionsAreStale() {
     return k
@@ -334,7 +334,7 @@ class ea extends(r = Chunk442837.ZP.Store) {
     return null != (t = R[e]) ? t : 0
   }
 }
-T(ea, "displayName", "RecentMentionsStore");
+S(ea, "displayName", "RecentMentionsStore");
 let eo = new ea(Chunk570140.Z, {
   LOAD_RECENT_MENTIONS: G,
   LOAD_RECENT_MENTIONS_SUCCESS: F,

@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk67844 = require("./67844.js"),
   Chunk871499 = require("./871499.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk461812 = require("./461812.js");
+  Chunk444612 = require("./444612.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -127,7 +127,7 @@ function O(e) {
   } = e, O = E(e, ["enabled", "join", "channel", "onChange", "onCameraUnavailable", "cameraUnavailable", "hasPermission", "className", "channelLimitReached", "channelLimit", "centerButton", "onPopoutClick"]);
   let v = m ? d.d : d.Z,
     I = () => n ? "join" : t ? "green" : "primaryDark",
-    S = e => n ? "join" : e ? "green" : O.color;
+    T = e => n ? "join" : e ? "green" : O.color;
   return (0, r.jsx)(y, {
     enabled: t,
     join: n,
@@ -146,7 +146,7 @@ function O(e) {
         isActive: s
       } = e, l = E(e, ["unavailable", "onMouseEnter", "onMouseLeave", "isActive"]);
       return (0, r.jsx)(v, g(h({}, l, O), {
-        color: S(s),
+        color: T(s),
         caretColor: I(),
         isActive: s,
         onMouseEnter: e => {

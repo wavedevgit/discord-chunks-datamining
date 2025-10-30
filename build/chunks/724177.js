@@ -66,19 +66,19 @@ function E(e, t, n, r) {
     v = o.Z.getMessages(e.id).toArray(),
     I = new Set;
   for (let e = 0; e < v.length; e++) {
-    var S;
+    var T;
     let t = v[e];
-    O[t.author.id] = (null != (S = O[t.author.id]) ? S : 1) + (v.length - e) / v.length, I.add(t.author.id)
+    O[t.author.id] = (null != (T = O[t.author.id]) ? T : 1) + (v.length - e) / v.length, I.add(t.author.id)
   }
-  let T = s.ZP.queryMentionSuggestionResults({
+  let S = s.ZP.queryMentionSuggestionResults({
     query: y,
     channel: e,
     boosters: O,
     onlyExactMatch: m && !E
   });
-  return (E && (T = T.filter(e => "exact" === e.matchType || I.has(e.user.id))), u || h === a.eq.MENTION_SUGGESTIONS || !(y.length < _) || T.some(e => "exact" === e.matchType || E && I.has(e.user.id))) ? {
+  return (E && (S = S.filter(e => "exact" === e.matchType || I.has(e.user.id))), u || h === a.eq.MENTION_SUGGESTIONS || !(y.length < _) || S.some(e => "exact" === e.matchType || E && I.has(e.user.id))) ? {
     results: {
-      suggestions: T,
+      suggestions: S,
       queryInfo: b
     }
   } : d

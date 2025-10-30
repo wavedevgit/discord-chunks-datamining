@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk563132 = require("./563132.jsx"),
   Chunk409813 = require("./409813.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk490684 = require("./490684.js");
+  Chunk175556 = require("./175556.js");
 
 function h(e, t) {
   if (null == e) return {};
@@ -60,8 +60,8 @@ function E(e) {
       step: O,
       stepConfigs: v,
       setBodyNode: I,
-      setFooterNode: S,
-      setModalOverlayNode: T,
+      setFooterNode: T,
+      setModalOverlayNode: S,
       setReadySlideId: A,
       premiumBrandRefreshBackgroundClassName: C,
       selectedSkuId: N,
@@ -71,10 +71,10 @@ function E(e) {
     w = null != N && N in _.y7,
     D = v.find(e => e.key === O);
   i.useEffect(() => {
-    T(null)
-  }, [O, T]), l()(null != D, "Unknown step for current payment flow.");
-  let L = null != (c = null == D || null == (t = D.options) ? true : t.hideSlider) && c,
-    x = null == D || null == (n = D.options) ? true : n.bodyClassName,
+    S(null)
+  }, [O, S]), l()(null != D, "Unknown step for current payment flow.");
+  let x = null != (c = null == D || null == (t = D.options) ? true : t.hideSlider) && c,
+    L = null == D || null == (n = D.options) ? true : n.bodyClassName,
     M = null == D || null == (a = D.options) ? true : a.sliderBodyClassName;
   switch (true !== b && b && (M = p.sliderBodyLarge), O) {
     case f.h8.ADD_PAYMENT_STEPS:
@@ -87,10 +87,10 @@ function E(e) {
       w && !P && (m = "100%")
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [null == (h = null == D || null == (s = D.options) ? true : s.renderHeader) || h ? E : null, D.renderStep(y), null == O || L ? null : (0, r.jsxs)(r.Fragment, {
+    children: [null == (h = null == D || null == (s = D.options) ? true : s.renderHeader) || h ? E : null, D.renderStep(y), null == O || x ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
         "data-migration-pending": true,
-        className: o()(x, p.body, C, {
+        className: o()(L, p.body, C, {
           [p.reviewStep]: O === f.h8.REVIEW,
           [p.addPaymentStepForPremium]: O === f.h8.ADD_PAYMENT_STEPS && w
         }),
@@ -113,10 +113,10 @@ function E(e) {
           }, e.key))
         })
       }), (0, r.jsx)("div", {
-        ref: e => S(e)
+        ref: e => T(e)
       }), (0, r.jsx)("div", {
         ref: e => {
-          T(e)
+          S(e)
         }
       })]
     })]

@@ -11,37 +11,37 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk600164 = require("./600164.jsx"),
   Chunk245315 = require("./245315.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk5146 = require("./5146.js");
+  Chunk804660 = require("./804660.js");
 let u = () => (0, Chunk951288.jsxs)(Chunk600164.Z, {
   align: Chunk600164.Z.Align.CENTER,
   justify: Chunk600164.Z.Justify.CENTER,
   direction: Chunk600164.Z.Direction.VERTICAL,
-  className: Chunk5146.popout,
+  className: Chunk804660.popout,
   children: [(0, Chunk951288.jsx)("img", {
     alt: "",
     src: (0, Chunk245315.QA)(),
-    className: Chunk5146.avatar
+    className: Chunk804660.avatar
   }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
     align: Chunk600164.Z.Align.CENTER,
     justify: Chunk600164.Z.Justify.CENTER,
-    className: Chunk5146.nameWrapper,
+    className: Chunk804660.nameWrapper,
     children: [(0, Chunk951288.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t.oMx98L),
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk5146.staffBadge
+        className: Chunk804660.staffBadge
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
-      className: Chunk5146.header,
+      className: Chunk804660.header,
       variant: "heading-md/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.xfAlNx)
     })]
   }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-    className: Chunk5146.description,
+    className: Chunk804660.description,
     color: "header-secondary",
     variant: "text-sm/normal",
     children: Chunk388032.intl.string(Chunk388032.t.BUZ0sl)
   }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-    className: Chunk5146.description,
+    className: Chunk804660.description,
     color: "header-secondary",
     variant: "text-sm/normal",
     children: Chunk388032.intl.string(Chunk388032.t.w5beJH)

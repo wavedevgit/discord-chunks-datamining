@@ -1,4 +1,4 @@
-/** Chunk was on 39297 **/
+/** Chunk was on 87665 **/
 /** chunk id: 200178, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -11,8 +11,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk389458 = require("./389458.js"),
-  Chunk451429 = require("./451429.js"),
-  Chunk603473 = require("./603473.js");
+  Chunk866403 = require("./866403.js"),
+  Chunk939030 = require("./939030.js");
 
 function p() {
   let [e, t] = Chunk647438.useState(""), n = (0, Chunk442837.e7)([Chunk389458.Z], () => Chunk389458.Z.getAllWordsSorted().map((e, t) => {
@@ -34,17 +34,17 @@ function p() {
     })
   }, []);
   return (0, Chunk951288.jsxs)("div", {
-    className: i()(Chunk451429.panel, Chunk603473.panel),
+    className: i()(Chunk866403.panel, Chunk939030.panel),
     children: [require.length > 0 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/semibold",
-        className: Chunk603473.sectionTitle,
+        className: Chunk939030.sectionTitle,
         children: ["Word Frequencies (", Chunk120356.length, " unique words)"]
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         children: "This is a list of the most common short words found in messages sent and received by this client. They're ignored by the mention suggestions experiment to avoid distracting suggestions. These statistics are stored locally only."
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk603473.headerSection,
+        className: Chunk939030.headerSection,
         children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {
           size: "sm",
           query: module,
@@ -58,21 +58,21 @@ function p() {
           onClick: p
         })]
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk603473.resultsSection,
+        className: Chunk939030.resultsSection,
         children: (0, Chunk951288.jsx)(Chunk481060.zJl, {
-          className: Chunk603473.resultsContainer,
+          className: Chunk939030.resultsContainer,
           children: (0, Chunk951288.jsxs)("div", {
-            className: Chunk603473.resultsTable,
+            className: Chunk939030.resultsTable,
             children: [(0, Chunk951288.jsxs)("div", {
-              className: i()(Chunk451429.tableHeader, Chunk603473.tableHeader),
+              className: i()(Chunk866403.tableHeader, Chunk939030.tableHeader),
               children: [(0, Chunk951288.jsx)("div", {
-                className: Chunk603473.indexColumn,
+                className: Chunk939030.indexColumn,
                 children: "Index"
               }), (0, Chunk951288.jsx)("div", {
-                className: Chunk603473.wordColumn,
+                className: Chunk939030.wordColumn,
                 children: "Word"
               }), (0, Chunk951288.jsx)("div", {
-                className: Chunk603473.valueColumn,
+                className: Chunk939030.valueColumn,
                 children: "Count"
               })]
             }), Chunk120356.map(e => {
@@ -108,14 +108,14 @@ function p() {
         })
       })]
     }), 0 === require.length && (0, Chunk951288.jsx)("div", {
-      className: Chunk603473.emptyState,
+      className: Chunk939030.emptyState,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: "Load messages in a channel to see word frequency analysis."
       })
     }), require.length > 0 && 0 === Chunk120356.length && module.length > 0 && (0, Chunk951288.jsx)("div", {
-      className: Chunk603473.emptyState,
+      className: Chunk939030.emptyState,
       children: (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-muted",

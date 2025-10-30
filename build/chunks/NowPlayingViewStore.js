@@ -97,7 +97,7 @@ function et() {
 }
 
 function en(e) {
-  return L.Z.findActivity(e, e => e.type !== U.IIU.CUSTOM_STATUS)
+  return x.Z.findActivity(e, e => e.type !== U.IIU.CUSTOM_STATUS)
 }
 
 function er(e) {
@@ -110,7 +110,7 @@ function er(e) {
 
 function ei(e) {
   return null == J[e] && (J = F(B({}, J), {
-    [e]: new T.Z({
+    [e]: new S.Z({
       url: e
     })
   })), J[e]
@@ -121,7 +121,7 @@ function ea(e) {
 }
 
 function eo(e) {
-  if ((0, d.Z)(e)) return S.r9;
+  if ((0, d.Z)(e)) return T.r9;
   if ((0, f.Z)(e)) return er(e.name);
   let t = null != e.application_id ? m.Z.getApplication(e.application_id) : null;
   return null != t ? t : (0, _.Z)(e) && null != e.url ? ei(e.url) : (null != e.application_id && ea(e.application_id), t)
@@ -133,7 +133,7 @@ function es(e) {
     tags: {
       source: "ACTIVITIES"
     }
-  }), null) : e === S.XB ? S.r9 : e.startsWith(A.H) ? er(e.slice(A.H.length)) : e.startsWith(T._) ? ei(e.slice(T._.length)) : (ea(e), null)
+  }), null) : e === T.XB ? T.r9 : e.startsWith(A.H) ? er(e.slice(A.H.length)) : e.startsWith(S._) ? ei(e.slice(S._.length)) : (ea(e), null)
 }
 
 function el(e) {
@@ -158,7 +158,7 @@ function eu(e, t) {
 }
 
 function ed(e) {
-  return x.Z.isFriend(e.id)
+  return L.Z.isFriend(e.id)
 }
 
 function ef(e, t, n) {
@@ -173,7 +173,7 @@ function ef(e, t, n) {
     g = false,
     E = [];
   for (let e of s) {
-    var T, A, R, x;
+    var S, A, R, L;
     let t = C.Z.getAnyStreamForUser(e.id),
       n = N.Z.getChannel(null == t ? true : t.channelId);
     if ((0, p.Y3)(n)) continue;
@@ -185,7 +185,7 @@ function ef(e, t, n) {
       }), null == r) continue;
     let o = (0, b.Z)(r);
     if (null == o) continue;
-    g = o === S.XB;
+    g = o === T.XB;
     let d = es(o);
     if ((0, u.Z)(r)) {
       let t = (0, l.a)();
@@ -217,7 +217,7 @@ function ef(e, t, n) {
       game: d,
       activity: r,
       activityUser: e,
-      startedPlayingTime: null != (x = null == r || null == (T = r.timestamps) ? true : T.start) ? x : null == r ? true : r.created_at,
+      startedPlayingTime: null != (L = null == r || null == (S = r.timestamps) ? true : S.start) ? L : null == r ? true : r.created_at,
       playingMembers: O
     })
   }
@@ -260,7 +260,7 @@ function ef(e, t, n) {
     isSpotifyActivity: g,
     priorityMembers: f.map(e => ({
       user: e,
-      status: L.Z.getStatus(e.id)
+      status: x.Z.getStatus(e.id)
     })),
     partiedMembers: s,
     showPlayingMembers: _,
@@ -308,7 +308,7 @@ function em(e) {
 }
 
 function eg(e) {
-  return e.partiedMembers.some(e => x.Z.isBlockedOrIgnored(e.id))
+  return e.partiedMembers.some(e => L.Z.isBlockedOrIgnored(e.id))
 }
 
 function eE(e) {
@@ -348,11 +348,11 @@ let eI = a().throttle(() => {
   ev(), eR.emitChange()
 }, W);
 
-function eS() {
+function eT() {
   return !!eO() && (eI(), false)
 }
 
-function eT() {
+function eS() {
   K = false, q = [], X = [], $.clear()
 }
 
@@ -365,7 +365,7 @@ function eC() {
 }
 class eN extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk594174.default, Chunk812206.Z, Chunk158776.Z, Chunk831506.Z, Chunk979651.Z, Chunk199902.Z, Chunk699516.Z, Chunk480294.Z, Chunk752048.Z], eS), this.waitFor(Chunk812206.Z, Chunk199902.Z, Chunk592125.Z, Chunk480294.Z, Chunk831506.Z, Chunk38618.Z, Chunk430824.Z, Chunk496675.Z, Chunk158776.Z, Chunk699516.Z, Chunk752048.Z, Chunk594174.default, Chunk979651.Z)
+    this.syncWith([Chunk594174.default, Chunk812206.Z, Chunk158776.Z, Chunk831506.Z, Chunk979651.Z, Chunk199902.Z, Chunk699516.Z, Chunk480294.Z, Chunk752048.Z], eT), this.waitFor(Chunk812206.Z, Chunk199902.Z, Chunk592125.Z, Chunk480294.Z, Chunk831506.Z, Chunk38618.Z, Chunk430824.Z, Chunk496675.Z, Chunk158776.Z, Chunk699516.Z, Chunk752048.Z, Chunk594174.default, Chunk979651.Z)
   }
   get currentActivityParties() {
     return q
@@ -382,7 +382,7 @@ class eN extends(r = Chunk442837.ZP.Store) {
 }
 G(eN, "displayName", "NowPlayingViewStore");
 let eR = new eN(Chunk570140.Z, {
-    LOGOUT: eT,
+    LOGOUT: eS,
     NOW_PLAYING_MOUNTED: eA,
     NOW_PLAYING_UNMOUNTED: eC
   }),

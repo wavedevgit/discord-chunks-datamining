@@ -41,7 +41,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk723642 = require("./723642.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk495824 = require("./495824.js");
+  Chunk486321 = require("./486321.js");
 
 function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -121,7 +121,7 @@ let X = (e, t, n) => {
     if (null == s) return (0, r.jsx)("strong", {
       children: l
     });
-    let c = T.default.getUser(s.id),
+    let c = S.default.getUser(s.id),
       u = (0, P.AH)(e),
       d = (0, P.s5)(e),
       f = y.Z.getChannel(u),
@@ -138,7 +138,7 @@ let X = (e, t, n) => {
     }, "display-nick-".concat(t, "-").concat(s.id)), (0, r.jsx)("span", {
       className: B.displayUsername,
       children: N.ZP.getUserTag(s, {
-        identifiable: S.Z.enabled && S.Z.hidePersonalInformation ? "never" : "always"
+        identifiable: T.Z.enabled && T.Z.hidePersonalInformation ? "never" : "always"
       })
     }, "display-username-".concat(t, "-").concat(s.id))]
   },
@@ -151,12 +151,12 @@ let X = (e, t, n) => {
       children: a
     }) : (0, r.jsxs)("div", {
       className: B.resultChannel,
-      children: [(0, r.jsx)(x.MC, {
+      children: [(0, r.jsx)(L.MC, {
         channel: i,
         className: B.searchResultChannelIcon
-      }), (0, r.jsx)(x.GQ, {
+      }), (0, r.jsx)(L.GQ, {
         channel: i
-      }), (0, r.jsx)(x.P, {
+      }), (0, r.jsx)(L.P, {
         channel: i
       })]
     })
@@ -310,7 +310,7 @@ let er = {
       text: Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
       position: "left",
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk495824.searchLearnMore,
+        className: Chunk486321.searchLearnMore,
         children: (0, Chunk951288.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.USING_SEARCH),
           title: Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
@@ -437,7 +437,7 @@ class ei extends Chunk647438.PureComponent {
       (0, k.bh)({
         searchContext: this.props.searchContext,
         searchQuery: M.Z.getSearchResultsQuery(t),
-        searchQueryString: L.Z.getSearchInputText(this.props.searchContext),
+        searchQueryString: x.Z.getSearchInputText(this.props.searchContext),
         searchTokenType: this.props.resultsState.mode.filter,
         searchAutocompleteGroup: U.rtL.DATES,
         searchAutocompleteMode: this.props.resultsState.mode,
@@ -529,7 +529,7 @@ class ei extends Chunk647438.PureComponent {
         (0, k.bh)({
           searchContext: this.props.searchContext,
           searchQuery: M.Z.getSearchResultsQuery(p),
-          searchQueryString: L.Z.getSearchInputText(this.props.searchContext),
+          searchQueryString: x.Z.getSearchInputText(this.props.searchContext),
           searchTokenType: d,
           searchAutocompleteGroup: null != (u = s.group) ? u : a,
           searchAutocompleteMode: this.props.resultsState.mode,

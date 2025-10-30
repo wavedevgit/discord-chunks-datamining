@@ -2,7 +2,7 @@
 /** chunk id: 678334, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,16 +33,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk612853 = require("./612853.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk62868 = require("./62868.js"),
+  Chunk590557 = require("./590557.js"),
   Chunk133529 = require("./133529.js");
 
-function x(e) {
+function L(e) {
   let {
     premiumSubscription: t,
     setPurchaseState: n,
     onBack: a,
     onNext: s,
-    legalTermsNodeRef: x,
+    legalTermsNodeRef: L,
     flashLegalTerms: M,
     invoiceError: k,
     planError: j,
@@ -75,7 +75,7 @@ function x(e) {
     invoicePreview: ec,
     inReverseTrial: eu,
     premiumBrandRefreshBackgroundClassName: ed
-  } = (0, S.JL)(), {
+  } = (0, T.JL)(), {
     isGift: ef,
     selectedGiftStyle: e_,
     customGiftMessage: ep,
@@ -88,9 +88,9 @@ function x(e) {
   let ev = null == Q ? true : Q.id,
     eI = (0, A.sE)(Z, J.paymentSourceId, ev),
     {
-      analyticsLocations: eS
+      analyticsLocations: eT
     } = (0, d.ZP)(),
-    eT = (0, N.m)(er, en),
+    eS = (0, N.m)(er, en),
     [eA, eC] = i.useState(eI),
     [eN, eR] = i.useState(false),
     {
@@ -98,8 +98,8 @@ function x(e) {
     } = (0, E.H)(ev, ef),
     ew = (0, v.Ap)(J.paymentSourceId),
     eD = eP || eI,
-    eL = (0, m.U)(),
-    ex = (0, c.e7)([C.Z], () => C.Z.currentOrderId),
+    ex = (0, m.U)(),
+    eL = (0, c.e7)([C.Z], () => C.Z.currentOrderId),
     eM = null,
     ek = null;
   if (et === P.GZQ.ONE_TIME) {
@@ -112,7 +112,7 @@ function x(e) {
   let eU = (0, _.Iw)(et === P.GZQ.ONE_TIME ? f.Z.getProduct(ei) : true),
     eG = null !== eU,
     eB = async () => {
-      await (0, T.H)({
+      await (0, S.H)({
         setPurchaseState: n,
         setHasAcceptedTerms: $,
         setIsSubmitting: eC,
@@ -122,14 +122,14 @@ function x(e) {
         isGift: ef,
         baseAnalyticsData: G,
         analyticsLocation: V,
-        analyticsLocations: eS,
+        analyticsLocations: eT,
         flowStartTime: B,
         subscriptionPlan: Q,
         planGroup: F,
         trialId: Z,
         priceOptions: J,
-        paymentSource: eT,
-        isPrepaidPaymentPastDue: eL,
+        paymentSource: eS,
+        isPrepaidPaymentPastDue: ex,
         openInvoiceId: Y,
         premiumSubscription: t,
         onNext: s,
@@ -141,7 +141,7 @@ function x(e) {
         loadId: el.loadId,
         giftInfoOptions: eO,
         invoicePreview: ec,
-        orderId: ex
+        orderId: eL
       })
     }, eZ = {
       baseAnalyticsData: G,
@@ -149,7 +149,7 @@ function x(e) {
       makePurchase: eB,
       onNext: s,
       onPurchaseError: U,
-      paymentSource: eT,
+      paymentSource: eS,
       paymentSourceId: en,
       purchaseTokenAuthState: H,
       setPurchaseState: n
@@ -171,11 +171,11 @@ function x(e) {
       [D.modalFooterDiscount]: eG
     }, ed, D.modalFooter),
     children: [eG && (0, r.jsx)("img", {
-      src: L.Z,
+      src: x.Z,
       alt: "",
       className: D.discountFooterBackground
     }), (0, r.jsx)(b.Z, {
-      legalTermsNodeRef: x,
+      legalTermsNodeRef: L,
       invoiceError: k,
       planError: j,
       disablePurchase: z,
@@ -187,7 +187,7 @@ function x(e) {
       isPrepaid: ew,
       isTrial: q,
       makePurchase: eB,
-      needsPaymentSource: null == eT && !eD,
+      needsPaymentSource: null == eS && !eD,
       onNext: s,
       inReverseTrial: eu,
       onPaymentSourceAdd: X

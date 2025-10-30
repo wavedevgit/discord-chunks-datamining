@@ -2,7 +2,7 @@
 /** chunk id: 581883, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 });
 var r, Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
@@ -68,20 +68,20 @@ function v(e) {
   } = (0, p.xt)(E.proto, _.Z[h.yP.PRELOADED_USER_SETTINGS]);
   r && A(E), E.proto = n, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = true, Object.values(y).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = false, e.editInfo.loading = false)
-  }), T()
+  }), S()
 }
 
 function I() {
-  T()
+  S()
 }
 
-function S() {
-  T(), Object.values(y).forEach(e => {
+function T() {
+  S(), Object.values(y).forEach(e => {
     e.proto = e.ProtoClass.create(), e.editInfo = (0, h.JC)()
   })
 }
 
-function T() {
+function S() {
   Object.values(y).forEach(e => {
     if (null != e.editInfo.timeout) {
       var t, n;
@@ -215,7 +215,7 @@ class D extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 m(D, "displayName", "UserSettingsProtoStore"), m(D, "persistKey", "UserSettingsProtoStore-Cache");
-let L = new D(Chunk570140.Z, {
+let x = new D(Chunk570140.Z, {
   CACHE_LOADED: P,
   USER_SETTINGS_PROTO_UPDATE: N,
   USER_SETTINGS_PROTO_ENQUEUE_UPDATE: N,
@@ -224,5 +224,5 @@ let L = new D(Chunk570140.Z, {
   CONNECTION_CLOSED: I,
   CONNECTION_RESUMED: I,
   OVERLAY_INITIALIZE: C,
-  LOGOUT: S
+  LOGOUT: T
 })

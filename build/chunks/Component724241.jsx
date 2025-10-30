@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk246946 = require("./246946.js"),
   Chunk654904 = require("./654904.jsx"),
   Chunk671955 = require("./671955.js"),
-  Chunk116649 = require("./116649.js");
+  Chunk593540 = require("./593540.js");
 
 function p(e) {
   let {
@@ -31,8 +31,8 @@ function p(e) {
     pendingBadges: O,
     pendingDisplayNameStyles: v,
     isTryItOutFlow: I,
-    hideBioSection: S,
-    shouldOpenBadgeTooltip: T
+    hideBioSection: T,
+    shouldOpenBadgeTooltip: S
   } = e, A = (0, i.e7)([c.ZP], () => null == p ? null : c.ZP.getMember(p.id, t.id)), C = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), N = null == n ? true : n.getPreviewBio(E), R = null != b ? b : null == n ? true : n.pronouns, P = (0, d.Ly)({
     pendingNickname: m,
     pendingGlobalName: g,
@@ -60,9 +60,9 @@ function p(e) {
         themeType: f.l.POPOUT,
         pendingLegacyUsernameDisabled: y,
         pendingBadges: O,
-        shouldOpenBadgeTooltip: T
+        shouldOpenBadgeTooltip: S
       })
-    }), !S && null != N && "" !== N && (0, r.jsx)(s.Z, {
+    }), !T && null != N && "" !== N && (0, r.jsx)(s.Z, {
       user: t,
       bio: N,
       hidePersonalInformation: C,

@@ -21,8 +21,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk352609 = require("./352609.js"),
-  Chunk147164 = require("./147164.js");
+  Chunk593082 = require("./593082.js"),
+  Chunk714892 = require("./714892.js");
 
 function v(e) {
   let {
@@ -31,8 +31,8 @@ function v(e) {
     className: v
   } = e, I = u.JH.useExperiment({
     location: "DisplayNameStylesSection"
-  }).enabled, S = p.ZP.canUsePremiumProfileCustomization(t), {
-    analyticsLocations: T
+  }).enabled, T = p.ZP.canUsePremiumProfileCustomization(t), {
+    analyticsLocations: S
   } = (0, l.ZP)(), {
     userDisplayNameStyles: A,
     guildDisplayNameStyles: C,
@@ -40,12 +40,12 @@ function v(e) {
     pendingErrors: R
   } = (0, h.mD)(t, n), P = [];
   I && P.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
-  let [w, D] = (0, c.US)(P), L = w === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, x = (0, i.useCallback)(() => {
+  let [w, D] = (0, c.US)(P), x = w === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, L = (0, i.useCallback)(() => {
     D(E.L.TAKE_ACTION), _.default.track(g.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.I)({
-      analyticsLocations: T,
+      analyticsLocations: S,
       guildId: n
     })
-  }, [T, D, n]), M = (0, i.useCallback)(() => {
+  }, [S, D, n]), M = (0, i.useCallback)(() => {
     (0, s.NI)(null), _.default.track(g.rMx.DISPLAY_NAME_STYLES_REMOVED)
   }, []), k = (0, i.useCallback)(() => {
     (0, f.N_)(null)
@@ -54,12 +54,12 @@ function v(e) {
   let U = true !== N ? N : C;
   return (0, r.jsx)(m.Z, {
     title: b.intl.string(y.default["86GtGH"]),
-    titleIcon: L ? (0, r.jsx)(o.IGR, {
+    titleIcon: x ? (0, r.jsx)(o.IGR, {
       text: b.intl.string(b.t.y2b7CA),
       className: O.newBadge
     }) : true,
     className: v,
-    showPremiumIcon: S,
+    showPremiumIcon: T,
     errors: R,
     children: (0, r.jsxs)("div", {
       className: O.buttonsContainer,
@@ -67,7 +67,7 @@ function v(e) {
         variant: "primary",
         size: "sm",
         text: b.intl.string(y.default.vJqrIg),
-        onClick: x
+        onClick: L
       }), null == n && j && (0, r.jsx)(o.Button, {
         variant: "secondary",
         size: "sm",

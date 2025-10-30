@@ -20,21 +20,21 @@ module.exports = function(e, t, n, m, g, E) {
     v = y ? _ : s(t);
   O = O == f ? p : O, v = v == f ? p : v;
   var I = O == p,
-    S = v == p,
-    T = O == v;
-  if (T && c(e)) {
+    T = v == p,
+    S = O == v;
+  if (S && c(e)) {
     if (!c(t)) returnfalse;
     b = true, I = false
   }
-  if (T && !I) return E || (E = new r), b || u(e) ? i(e, t, n, m, g, E) : a(e, t, O, n, m, g, E);
+  if (S && !I) return E || (E = new r), b || u(e) ? i(e, t, n, m, g, E) : a(e, t, O, n, m, g, E);
   if (!(n & d)) {
     var A = I && h.call(e, "__wrapped__"),
-      C = S && h.call(t, "__wrapped__");
+      C = T && h.call(t, "__wrapped__");
     if (A || C) {
       var N = A ? e.value() : e,
         R = C ? t.value() : t;
       return E || (E = new r), g(N, R, n, m, E)
     }
   }
-  return !!T && (E || (E = new r), o(e, t, n, m, g, E))
+  return !!S && (E || (E = new r), o(e, t, n, m, g, E))
 }

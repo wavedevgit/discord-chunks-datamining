@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk246946 = require("./246946.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk739406 = require("./739406.js");
+  Chunk497238 = require("./497238.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -120,8 +120,8 @@ let v = e => {
     let g = (0, o.e7)([_.Z], () => _.Z.hidePersonalInformation),
       y = g || d || t.isNonUserBot(),
       I = t.toString(),
-      S = c ? null : O(t),
-      T = t.isVerifiedBot(),
+      T = c ? null : O(t),
+      S = t.isVerifiedBot(),
       A = p.ZP.getName(t),
       C = i ? I : null != n ? n : A,
       N = t.hasUniqueUsername() || l;
@@ -133,8 +133,8 @@ let v = e => {
       return (0, r.jsx)(v, E({
         primary: e,
         secondary: n,
-        botType: S,
-        botVerified: T,
+        botType: T,
+        botVerified: S,
         showStreamerModeTooltip: g && p.ZP.isNameConcealed(e),
         displayNameStyles: C !== I ? t.displayNameStyles : null,
         displayNameStylesType: h
@@ -142,8 +142,8 @@ let v = e => {
     }
     return (0, r.jsx)(f.Z, E({
       name: C,
-      botType: S,
-      botVerified: T,
+      botType: T,
+      botVerified: S,
       discriminator: y || C !== I ? null : null != s ? s : t.discriminator
     }, m))
   }

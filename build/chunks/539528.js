@@ -7,7 +7,7 @@ require.d(exports, {
   PP: () => M,
   lX: () => A,
   ob: () => p,
-  q_: () => L
+  q_: () => x
 });
 var Chunk44837 = require("./44837.js"),
   Chunk634450 = require("./634450.js"),
@@ -132,9 +132,9 @@ function v(e) {
   return true === e.state && false === navigator.userAgent.indexOf("CriOS")
 }
 var I = "popstate",
-  S = "hashchange";
+  T = "hashchange";
 
-function T() {
+function S() {
   try {
     return window.history.state || {}
   } catch (e) {
@@ -178,13 +178,13 @@ function A(e) {
     v(e) || M(N(e.state))
   }
 
-  function L() {
-    M(N(T()))
+  function x() {
+    M(N(S()))
   }
-  var x = false;
+  var L = false;
 
   function M(e) {
-    if (x) x = false, w();
+    if (L) L = false, w();
     else {
       var t = "POP";
       P.confirmTransitionTo(e, t, h, function(n) {
@@ -203,9 +203,9 @@ function A(e) {
     var r = U.indexOf(e.key);
     false === r && (r = 0);
     var i = n - r;
-    i && (x = true, F(i))
+    i && (L = true, F(i))
   }
-  var j = N(T()),
+  var j = N(S()),
     U = [j.key];
 
   function G(e) {
@@ -277,7 +277,7 @@ function A(e) {
   var Y = 0;
 
   function W(e) {
-    1 === (Y += e) && 1 === e ? (window.addEventListener(I, D), i && window.addEventListener(S, L)) : 0 === Y && (window.removeEventListener(I, D), i && window.removeEventListener(S, L))
+    1 === (Y += e) && 1 === e ? (window.addEventListener(I, D), i && window.addEventListener(T, x)) : 0 === Y && (window.removeEventListener(I, D), i && window.removeEventListener(T, x))
   }
   var K = false;
 
@@ -351,7 +351,7 @@ function D(e) {
   window.location.replace(R(window.location.href) + "#" + e)
 }
 
-function L(e) {
+function x(e) {
   true === e && (e = {}), g || (0, o.Z)(false);
   var t = window.history;
   O();
@@ -371,34 +371,34 @@ function L(e) {
   }
   var I = m();
 
-  function S(e) {
+  function T(e) {
     (0, r.Z)(J, e), J.length = t.length, I.notifyListeners(J.location, J.action)
   }
-  var T = false,
+  var S = false,
     A = null;
 
-  function L(e, t) {
+  function x(e, t) {
     return e.pathname === t.pathname && e.search === t.search && e.hash === t.hash
   }
 
-  function x() {
+  function L() {
     var e = P(),
       t = b(e);
     if (e !== t) D(t);
     else {
       var n = v(),
         r = J.location;
-      if (!T && L(r, n) || A === _(n)) return;
+      if (!S && x(r, n) || A === _(n)) return;
       A = null, M(n)
     }
   }
 
   function M(e) {
-    if (T) T = false, S();
+    if (S) S = false, T();
     else {
       var t = "POP";
       I.confirmTransitionTo(e, t, a, function(n) {
-        n ? S({
+        n ? T({
           action: t,
           location: e
         }) : k(e)
@@ -413,7 +413,7 @@ function L(e) {
     var r = B.lastIndexOf(_(e));
     false === r && (r = 0);
     var i = n - r;
-    i && (T = true, H(i))
+    i && (S = true, H(i))
   }
   var j = P(),
     U = b(j);
@@ -439,11 +439,11 @@ function L(e) {
           A = t, w(i);
           var o = B.lastIndexOf(_(J.location)),
             s = B.slice(0, o + 1);
-          s.push(t), B = s, S({
+          s.push(t), B = s, T({
             action: n,
             location: r
           })
-        } else S()
+        } else T()
       }
     })
   }
@@ -458,7 +458,7 @@ function L(e) {
           a = P() !== i;
         a && (A = t, D(i));
         var o = B.indexOf(_(J.location));
-        false !== o && (B[o] = t), S({
+        false !== o && (B[o] = t), T({
           action: n,
           location: r
         })
@@ -480,7 +480,7 @@ function L(e) {
   var K = 0;
 
   function z(e) {
-    1 === (K += e) && 1 === e ? window.addEventListener(C, x) : 0 === K && window.removeEventListener(C, x)
+    1 === (K += e) && 1 === e ? window.addEventListener(C, L) : 0 === K && window.removeEventListener(C, L)
   }
   var q = false;
 
@@ -516,7 +516,7 @@ function L(e) {
   return J
 }
 
-function x(e, t, n) {
+function L(e, t, n) {
   return Math.min(Math.max(e, t), n)
 }
 
@@ -539,7 +539,7 @@ function M(e) {
   function f() {
     return Math.random().toString(36).substr(2, c)
   }
-  var h = x(s, 0, a.length - 1),
+  var h = L(s, 0, a.length - 1),
     g = a.map(function(e) {
       return "string" == typeof e ? p(e, true, f()) : p(e, true, e.key || f())
     }),
@@ -575,7 +575,7 @@ function M(e) {
   }
 
   function O(e) {
-    var t = x(C.index + e, 0, C.entries.length - 1),
+    var t = L(C.index + e, 0, C.entries.length - 1),
       r = "POP",
       i = C.entries[t];
     u.confirmTransitionTo(i, r, n, function(e) {
@@ -595,12 +595,12 @@ function M(e) {
     O(1)
   }
 
-  function S(e) {
+  function T(e) {
     var t = C.index + e;
     return t >= 0 && t < C.entries.length
   }
 
-  function T(e) {
+  function S(e) {
     return true === e && (e = false), u.setPrompt(e)
   }
 
@@ -619,8 +619,8 @@ function M(e) {
     go: O,
     goBack: v,
     goForward: I,
-    canGo: S,
-    block: T,
+    canGo: T,
+    block: S,
     listen: A
   };
   return C

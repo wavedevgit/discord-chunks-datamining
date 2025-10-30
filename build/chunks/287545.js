@@ -116,8 +116,8 @@ async function X(e) {
     rejectWithError: false
   });
   let l = F[n],
-    c = (0, x.p)(r),
-    u = (0, x.j)(r),
+    c = (0, L.p)(r),
+    u = (0, L.j)(r),
     d = g.Z.getChannel(c),
     f = y.default.getCurrentUser();
   if (null == l || null == f) return;
@@ -168,18 +168,18 @@ function Q(e) {
     embeddedActivity: c,
     location: u,
     inviterUserId: f
-  } = e, h = m.default.getId(), b = l.find(e => e.userId === h), v = (0, x.p)(u), I = (0, x.j)(u), A = g.Z.getChannel(v);
+  } = e, h = m.default.getId(), b = l.find(e => e.userId === h), v = (0, L.p)(u), I = (0, L.j)(u), A = g.Z.getChannel(v);
   if (o && null != A && A.isPrivate() && a && null == b && s.Z.selectParticipant(A.id, null), null == b) return;
   let R = E.Z.getMediaSessionId(),
     P = c.compositeInstanceId,
     w = null == R && (null == A ? true : A.isVocal()) === true && (null == A ? true : A.isPrivate()) === false;
   if (null == P || w) return;
   let D = (0, i.Z)(),
-    L = "location" in c ? 2 : 1,
+    x = "location" in c ? 2 : 1,
     M = y.default.getCurrentUser();
   if (null == M) return;
   let k = C.ZP.getShelfActivities(I),
-    j = T.Z.getState().shelfOrder,
+    j = S.Z.getState().shelfOrder,
     G = (0, N.Z)({
       applicationId: r,
       activityConfigs: k
@@ -195,11 +195,11 @@ function Q(e) {
       activityUserSessionId: D,
       launchId: c.launchId,
       mediaSessionIds: W,
-      activitiesInfraVersion: L
+      activitiesInfraVersion: x
     };
   F[r] = K;
   let z = V[r];
-  (0, S.Ew)(b.nonce) || b.nonce === (null == z ? true : z.nonce) || (z = true), O.default.track(U.rMx.ACTIVITY_SESSION_JOINED, {
+  (0, T.Ew)(b.nonce) || b.nonce === (null == z ? true : z.nonce) || (z = true), O.default.track(U.rMx.ACTIVITY_SESSION_JOINED, {
     channel_id: v,
     guild_id: I,
     media_session_id: W[0],
@@ -233,7 +233,7 @@ function Q(e) {
     is_activity_start: o,
     shelf_rank: null == G || null == (n = G.activity) ? true : n.shelf_rank,
     shelf_sorted_rank: B > 0 ? B : null,
-    activities_infra_version: L,
+    activities_infra_version: x,
     embedded_activity_location_kind: u.kind
   })
 }
@@ -256,7 +256,7 @@ class $ extends Chunk317770.Z {
           applicationId: n
         }
         of C.ZP.getSelfEmbeddedActivities().values()) {
-        let r = (0, x.p)(t);
+        let r = (0, L.p)(t);
         null != r && (0, j.Z)(r) && r !== e && this.leaveActivity({
           location: t,
           applicationId: n
@@ -267,7 +267,7 @@ class $ extends Chunk317770.Z {
           n = m.default.getId();
         t.forEach(e => {
           if (e.userIds.has(n)) {
-            let t = (0, x.p)(e.location),
+            let t = (0, L.p)(e.location),
               n = C.ZP.getSelfEmbeddedActivityForChannel(t);
             null == n ? this.leaveActivity({
               location: e.location,
@@ -297,7 +297,7 @@ class $ extends Chunk317770.Z {
         applicationId: a,
         isStart: o,
         locationKind: s
-      } = e, l = K(a, n), c = await (0, L.k)(t, a);
+      } = e, l = K(a, n), c = await (0, x.k)(t, a);
       this.showLaunchErrorModal(c.message);
       let u = g.Z.getChannel(r),
         d = p.Z.getRawThermalState();
@@ -416,7 +416,7 @@ class $ extends Chunk317770.Z {
         let {
           location: n,
           applicationId: r
-        } = e, i = (0, x.j)(n);
+        } = e, i = (0, L.j)(n);
         t.id === i && this.leaveActivity({
           location: n,
           applicationId: r

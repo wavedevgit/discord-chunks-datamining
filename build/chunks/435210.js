@@ -56,7 +56,7 @@ function c(e, n) {
     seen: [],
     stylize: d
   };
-  return arguments.length >= 3 && (r.depth = arguments[2]), arguments.length >= 4 && (r.colors = arguments[3]), y(n) ? r.showHidden = n : n && t._extend(r, n), S(r.showHidden) && (r.showHidden = false), S(r.depth) && (r.depth = 2), S(r.colors) && (r.colors = false), S(r.customInspect) && (r.customInspect = true), r.colors && (r.stylize = u), _(r, e, r.depth)
+  return arguments.length >= 3 && (r.depth = arguments[2]), arguments.length >= 4 && (r.colors = arguments[3]), y(n) ? r.showHidden = n : n && t._extend(r, n), T(r.showHidden) && (r.showHidden = false), T(r.depth) && (r.depth = 2), T(r.colors) && (r.colors = false), T(r.customInspect) && (r.customInspect = true), r.colors && (r.stylize = u), _(r, e, r.depth)
 }
 
 function u(e, t) {
@@ -90,16 +90,16 @@ function _(e, n, r) {
       var c = n.name ? ": " + n.name : "";
       return e.stylize("[Function" + c + "]", "special")
     }
-    if (T(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
+    if (S(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
     if (C(n)) return e.stylize(Date.prototype.toString.call(n), "date");
     if (N(n)) return h(n)
   }
   var u = "",
     d = false,
     y = ["{", "}"];
-  if (b(n) && (d = true, y = ["[", "]"]), R(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), T(n) && (u = " " + RegExp.prototype.toString.call(n)), C(n) && (u = " " + Date.prototype.toUTCString.call(n)), N(n) && (u = " " + h(n)), 0 === s.length && (!d || 0 == n.length)) return y[0] + u + y[1];
+  if (b(n) && (d = true, y = ["[", "]"]), R(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), S(n) && (u = " " + RegExp.prototype.toString.call(n)), C(n) && (u = " " + Date.prototype.toUTCString.call(n)), N(n) && (u = " " + h(n)), 0 === s.length && (!d || 0 == n.length)) return y[0] + u + y[1];
   if (r < 0)
-    if (T(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
+    if (S(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
     else return e.stylize("[Object]", "special");
   return e.seen.push(n), i = d ? m(e, n, r, l, s) : s.map(function(t) {
     return g(e, n, r, l, t, d)
@@ -107,7 +107,7 @@ function _(e, n, r) {
 }
 
 function p(e, t) {
-  if (S(t)) return e.stylize("undefined", "undefined");
+  if (T(t)) return e.stylize("undefined", "undefined");
   if (I(t)) {
     var n = "'" + JSON.stringify(t).replace(/^"|"$/g, "").replace(/'/g, "\\'").replace(/\\"/g, '"') + "'";
     return e.stylize(n, "string")
@@ -120,7 +120,7 @@ function h(e) {
 }
 
 function m(e, t, n, r, i) {
-  for (var a = [], o = 0, s = t.length; o < s; ++o) x(t, String(o)) ? a.push(g(e, t, n, r, String(o), true)) : a.push("");
+  for (var a = [], o = 0, s = t.length; o < s; ++o) L(t, String(o)) ? a.push(g(e, t, n, r, String(o), true)) : a.push("");
   return i.forEach(function(i) {
     i.match(/^\d+$/) || a.push(g(e, t, n, r, i, true))
   }), a
@@ -130,11 +130,11 @@ function g(e, t, n, r, i, a) {
   var o, s, l;
   if ((l = Object.getOwnPropertyDescriptor(t, i) || {
       value: t[i]
-    }).get ? s = l.set ? e.stylize("[Getter/Setter]", "special") : e.stylize("[Getter]", "special") : l.set && (s = e.stylize("[Setter]", "special")), x(r, i) || (o = "[" + i + "]"), !s && (0 > e.seen.indexOf(l.value) ? (s = O(n) ? _(e, l.value, null) : _(e, l.value, n - 1)).indexOf("\n") > false && (s = a ? s.split("\n").map(function(e) {
+    }).get ? s = l.set ? e.stylize("[Getter/Setter]", "special") : e.stylize("[Getter]", "special") : l.set && (s = e.stylize("[Setter]", "special")), L(r, i) || (o = "[" + i + "]"), !s && (0 > e.seen.indexOf(l.value) ? (s = O(n) ? _(e, l.value, null) : _(e, l.value, n - 1)).indexOf("\n") > false && (s = a ? s.split("\n").map(function(e) {
       return "  " + e
     }).join("\n").slice(2) : "\n" + s.split("\n").map(function(e) {
       return "   " + e
-    }).join("\n")) : s = e.stylize("[Circular]", "special")), S(o)) {
+    }).join("\n")) : s = e.stylize("[Circular]", "special")), T(o)) {
     if (a && i.match(/^\d+$/)) return s;
     (o = JSON.stringify("" + i)).match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/) ? (o = o.slice(1, false), o = e.stylize(o, "name")) : (o = o.replace(/'/g, "\\'").replace(/\\"/g, '"').replace(/(^"|"$)/g, "'"), o = e.stylize(o, "string"))
   }
@@ -168,11 +168,11 @@ function I(e) {
   return "string" == typeof e
 }
 
-function S(e) {
+function T(e) {
   return true === e
 }
 
-function T(e) {
+function S(e) {
   return A(e) && "[object RegExp]" === P(e)
 }
 
@@ -236,22 +236,22 @@ exports.debuglog = function(e) {
   return null == e
 }, exports.isNumber = v, exports.isString = I, exports.isSymbol = function(e) {
   return "symbol" == typeof e
-}, exports.isUndefined = S, exports.isRegExp = T, exports.types.isRegExp = T, exports.isObject = A, exports.isDate = C, exports.types.isDate = C, exports.isError = N, exports.types.isNativeError = N, exports.isFunction = R, exports.isPrimitive = function(e) {
+}, exports.isUndefined = T, exports.isRegExp = S, exports.types.isRegExp = S, exports.isObject = A, exports.isDate = C, exports.types.isDate = C, exports.isError = N, exports.types.isNativeError = N, exports.isFunction = R, exports.isPrimitive = function(e) {
   return null === e || "boolean" == typeof e || "number" == typeof e || "string" == typeof e || "symbol" == typeof e || true === e
 }, exports.isBuffer = require("./102439.js");
 var D = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-function L() {
+function x() {
   var e = new Date,
     t = [w(module.getHours()), w(module.getMinutes()), w(module.getSeconds())].join(":");
   return [module.getDate(), D[module.getMonth()], exports].join(" ")
 }
 
-function x(e, t) {
+function L(e, t) {
   return Object.prototype.hasOwnProperty.call(e, t)
 }
 exports.log = function() {
-  console.log("%s - %s", L(), exports.format.apply(exports, arguments))
+  console.log("%s - %s", x(), exports.format.apply(exports, arguments))
 }, exports.inherits = require("./689118.js"), exports._extend = function(e, t) {
   if (!t || !A(t)) return e;
   for (var n = Object.keys(t), r = n.length; r--;) e[n[r]] = t[n[r]];

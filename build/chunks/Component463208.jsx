@@ -2,8 +2,8 @@
 /** chunk id: 463208, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => T,
-  o: () => S
+  I: () => S,
+  o: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk841878 = require("./841878.jsx"),
   Chunk897037 = require("./897037.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk430490 = require("./430490.js");
+  Chunk693697 = require("./693697.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -159,7 +159,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   var t;
   let {
     disabled: n = false,
@@ -171,7 +171,7 @@ function S(e) {
     placeholder: h = "",
     maxLength: g,
     value: y,
-    defaultValue: S,
+    defaultValue: T,
     minLength: A,
     error: C,
     defaultDirty: N = false,
@@ -179,8 +179,8 @@ function S(e) {
     trailing: P,
     validateOn: w = "change",
     size: D = "md",
-    fullWidth: L = false,
-    clearable: x = false,
+    fullWidth: x = false,
+    clearable: L = false,
     showCharacterCount: M = false
   } = e, k = b(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "showCharacterCount"]), {
     fieldProps: j
@@ -193,7 +193,7 @@ function S(e) {
     defaultDirty: N
   }), {
     setShouldValidate: G
-  } = U, B = O(y, S), Z = "object" == typeof R && "type" in R && "tags" === R.type, F = e => {
+  } = U, B = O(y, T), Z = "object" == typeof R && "type" in R && "tags" === R.type, F = e => {
     var t, n;
     let r = e.currentTarget.value;
     null == (t = k.onChange) || t.call(k, r, u), G(true), null == (n = B.setHasValue) || n.call(B, "" !== r)
@@ -212,7 +212,7 @@ function S(e) {
   }, W = i.useRef(null), K = k.readOnly;
   null == K && false === a && (K = true);
   let z = null;
-  ("boolean" == typeof x ? x && null != y && "" !== y && !K : x.show) ? z = (0, r.jsx)(I, {
+  ("boolean" == typeof L ? L && null != y && "" !== y && !K : L.show) ? z = (0, r.jsx)(I, {
     inputSize: D,
     onClick: Y
   }): null != P && (z = (0, r.jsx)(v, {
@@ -235,7 +235,7 @@ function S(e) {
       ref: W,
       disabled: n,
       validation: U,
-      fullWidth: L,
+      fullWidth: x,
       readOnly: K,
       className: o()(p.container, p[D], {
         [p.hasLeading]: null != q,
@@ -245,7 +245,7 @@ function S(e) {
       children: [q, (0, r.jsx)(s.tEY, E(m({
         ringTarget: W
       }, c), {
-        children: (0, r.jsx)(T, E(m({
+        children: (0, r.jsx)(S, E(m({
           name: u,
           className: p.input,
           disabled: n,
@@ -256,7 +256,7 @@ function S(e) {
           maxLength: g,
           minLength: A,
           value: y,
-          defaultValue: S,
+          defaultValue: T,
           "data-mana-component": "text-input"
         }, k), {
           onChange: F,
@@ -269,7 +269,7 @@ function S(e) {
   }))
 }
 
-function T(e) {
+function S(e) {
   var {
     value: t,
     defaultValue: n,

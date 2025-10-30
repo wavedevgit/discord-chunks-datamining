@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   g: () => M,
-  i: () => L
+  i: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,14 +33,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk505575 = require("./505575.js");
+  Chunk352334 = require("./352334.js");
 let D = () => {
     (0, Chunk266454.Q3)(Chunk704215.z.CLIENT_THEMES_SPARKLE_PREVIEW, {
       dismissAction: Chunk921944.L.PRIMARY,
       forceTrack: true
     }), (0, Chunk550385.XO)(Chunk550385.wh.CLIENT_THEMES), (0, Chunk342386.default)()
   },
-  L = () => {
+  x = () => {
     var e, t;
     let {
       analyticsLocations: n
@@ -50,7 +50,7 @@ let D = () => {
         percent: null == Chunk857595 ? true : Chunk857595.discount.amount
       }) : Chunk388032.intl.string(Chunk388032.t.mr4K7D);
       return (0, Chunk951288.jsxs)("div", {
-        className: Chunk505575.tryItOutButtons,
+        className: Chunk352334.tryItOutButtons,
         children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "secondary",
           text: Chunk388032.intl.string(Chunk388032.t["E+COuA"]),
@@ -74,7 +74,7 @@ let D = () => {
     }, [Chunk704215, require]);
     let g = Chunk780384 && Chunk704215 && (0, Chunk951288.jsxs)("div", {
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk505575.previewThemeButton,
+          className: Chunk352334.previewThemeButton,
           children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "secondary",
             fullWidth: true,
@@ -82,7 +82,7 @@ let D = () => {
             onClick: () => D()
           })
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk505575.premiumTier2Divider
+          className: Chunk352334.premiumTier2Divider
         }), (0, Chunk951288.jsx)(Chunk165583.ZP, {
           type: Chunk474936.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
           subscriptionTier: Chunk474936.Si.TIER_2
@@ -96,7 +96,7 @@ let D = () => {
           }), Chunk266454]
         });
         return Chunk704215 && (e = (0, Chunk951288.jsx)("div", {
-          className: Chunk505575.colorThemesBackground,
+          className: Chunk352334.colorThemesBackground,
           children: module
         })), module
       })();
@@ -104,15 +104,15 @@ let D = () => {
       children: [(0, Chunk951288.jsxs)(Chunk705262.ZP, {
         type: Chunk705262.yH.SETTINGS,
         children: [(0, Chunk951288.jsx)(Chunk705262.ZP.Basic, {
-          className: Chunk505575.basicThemeSelectors
-        }), (0, Chunk951288.jsx)(x, {}), (0, Chunk951288.jsx)(Chunk607270.Z, {}), Chunk984802]
+          className: Chunk352334.basicThemeSelectors
+        }), (0, Chunk951288.jsx)(L, {}), (0, Chunk951288.jsx)(Chunk607270.Z, {}), Chunk984802]
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk505575.divider
+        className: Chunk352334.divider
       })]
     })
   };
 
-function x() {
+function L() {
   let e = (0, Chunk984802.A6)(),
     {
       theme: t,

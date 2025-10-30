@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk717461 = require("./717461.js");
+  Chunk250039 = require("./250039.js");
 let E = "https://cdn.discordapp.com/assets/22_211_SuperReactions_GTM_Hero_v09.mp4",
   b = 32;
 
@@ -27,7 +27,7 @@ function y(e) {
   var t, n;
   let {
     onDismiss: i
-  } = e, y = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), O = m.intl.string(m.t.eikz43), v = (0, d.N)(), I = (0, u.Ng)(), S = (null == v ? true : v.subscription_trial) != null || null != I, T = {
+  } = e, y = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), O = m.intl.string(m.t.eikz43), v = (0, d.N)(), I = (0, u.Ng)(), T = (null == v ? true : v.subscription_trial) != null || null != I, S = {
     object: p.qAy.BUTTON_CTA,
     section: p.jXE.SUPER_REACTION_PICKER
   };
@@ -47,7 +47,7 @@ function y(e) {
         className: g.contentFill,
         children: (0, r.jsx)(c.Z, {
           className: a()(g.banner, {
-            [g.hasTrialOffer]: S
+            [g.hasTrialOffer]: T
           }),
           src: E,
           loop: true,
@@ -55,11 +55,11 @@ function y(e) {
           muted: true,
           controls: true
         })
-      }), S ? (0, r.jsx)(_.ZP, {
+      }), T ? (0, r.jsx)(_.ZP, {
         type: h.cd.BURST_REACTION_QUICK_ACTION_UPSELL,
         subscriptionTier: null != (n = null == v || null == (t = v.subscription_trial) ? true : t.sku_id) ? n : h.Si.TIER_2,
         headingText: m.intl.string(m.t.Wfl5zp),
-        analyticsLocationObject: T,
+        analyticsLocationObject: S,
         discountOffer: I,
         trialOffer: v,
         children: O

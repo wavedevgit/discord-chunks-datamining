@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk13941 = require("./13941.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393238 = require("./393238.js"),
-  Chunk484201 = require("./484201.js");
+  Chunk639156 = require("./639156.js");
 let d = 100;
 
 function f(e) {
@@ -26,11 +26,11 @@ function f(e) {
   } = (0, c.ZP)(), {
     ref: v,
     height: I = 0
-  } = (0, c.ZP)(), S = (0, l.q_F)({
+  } = (0, c.ZP)(), T = (0, l.q_F)({
     height: b ? O + I : I,
     config: s.config.stiff,
     onRest: () => E(true)
-  }, h ? "animate-never" : "respect-motion-settings"), T = i.useCallback(() => {
+  }, h ? "animate-never" : "respect-motion-settings"), S = i.useCallback(() => {
     p(!_)
   }, [_, p]);
   return i.useLayoutEffect(() => {
@@ -46,14 +46,14 @@ function f(e) {
       className: o()(u.contentExpandContainer, {
         [u.showOverflow]: b && g
       }),
-      style: S,
+      style: T,
       children: [(0, r.jsx)("div", {
         ref: v,
         className: o()(u.header, {
           [u.toggled]: b
         }),
         children: t({
-          onClick: T
+          onClick: S
         })
       }), (0, r.jsx)(l.Rny, {
         enabled: !b,

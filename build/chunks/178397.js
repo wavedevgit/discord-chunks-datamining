@@ -1,0 +1,13 @@
+/** Chunk was on 10065 **/
+/** chunk id: 178397, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  skuSelectModalHeader: "skuSelectModalHeader_e50a4d",
+  skuSelectModalContent: "skuSelectModalContent_e50a4d",
+  modalPadding: "modalPadding_e50a4d",
+  modalSize: "modalSize_e50a4d",
+  close: "close_e50a4d",
+  closeInner: "closeInner_e50a4d",
+  premiumBrandRefreshHeader: "premiumBrandRefreshHeader_e50a4d",
+  premiumBrandRefreshContent: "premiumBrandRefreshContent_e50a4d",
+  wishlistModalSize: "wishlistModalSize_e50a4d"
+}

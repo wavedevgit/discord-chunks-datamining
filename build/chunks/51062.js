@@ -60,11 +60,11 @@ function O(e, t) {
 }
 
 function v(e, t, n) {
-  var E, y, v, I, S, T, A, C, N, R, P;
+  var E, y, v, I, T, S, A, C, N, R, P;
   let {
     channel: w,
     type: D
-  } = e, [L, x] = r.useState(() => (0, p.PA)()), M = (0, i.Z)(), k = (0, a.e7)([u.ZP, _.default], () => {
+  } = e, [x, L] = r.useState(() => (0, p.PA)()), M = (0, i.Z)(), k = (0, a.e7)([u.ZP, _.default], () => {
     var e, t;
     let n = _.default.getCurrentUser();
     return null != (t = null != w.guild_id && null != n ? null == (e = u.ZP.getMember(w.guild_id, n.id)) ? true : e.isPending : null) && t
@@ -83,10 +83,10 @@ function v(e, t, n) {
   })), Z = (0, h.Z)({
     navId: "channel-autocomplete",
     scrollerRef: n,
-    state: L,
+    state: x,
     onFocus: e => W.setSelectedIndex(e)
   }), F = null == (E = e.editorRef.current) ? true : E.getCurrentWord(), V = null == (y = e.editorRef.current) ? true : y.getSlateEditor(), H = null;
-  null != V && (H = null != (A = null == (T = c.bN.getSelectedParentOfType(V, p.un)) ? true : T[0]) ? A : null);
+  null != V && (H = null != (A = null == (S = c.bN.getSelectedParentOfType(V, p.un)) ? true : S[0]) ? A : null);
   let Y = O(b({}, e), {
       navigator: Z,
       activeCommand: G,
@@ -108,13 +108,13 @@ function v(e, t, n) {
   return r.useEffect(() => {
     W.updateProps(Y)
   }), r.useImperativeHandle(t, () => W, [W]), r.useEffect(() => {
-    let e = e => x(e);
+    let e = e => L(e);
     return W.on("change", e), W.on("update", M), () => {
       W.off("change", e), W.off("update", M)
     }
   }, [M, W]), r.useEffect(() => {
     var e;
-    let t = null == (e = L.query) ? true : e.typeInfo.stores;
+    let t = null == (e = x.query) ? true : e.typeInfo.stores;
     if (null != t) {
       let e = () => W.queryResults();
       for (let n of t) n.addChangeListener(e);
@@ -122,5 +122,5 @@ function v(e, t, n) {
         for (let n of t) n.removeChangeListener(e)
       }
     }
-  }, [W, null == (S = L.query) ? true : S.typeInfo]), [L, W, Z]
+  }, [W, null == (T = x.query) ? true : T.typeInfo]), [x, W, Z]
 }

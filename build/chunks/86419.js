@@ -6,21 +6,21 @@ require.d(exports, {
   Bu: () => k,
   ES: () => j,
   Eq: () => U,
-  Gv: () => S,
+  Gv: () => T,
   Hy: () => y,
   M8: () => I,
   RZ: () => M,
   X6: () => B,
   kQ: () => F,
   mR: () => b,
-  n$: () => x,
+  n$: () => L,
   np: () => C,
   ou: () => Y,
   qH: () => D,
   tk: () => Z,
   vI: () => v,
   ww: () => O,
-  y8: () => L
+  y8: () => x
 }), require("./388685.js"), require("./642613.js");
 var Chunk624238 = require("./624238.js"),
   Chunk379405 = require("./379405.js"),
@@ -97,11 +97,11 @@ function I(e) {
   return d.uX.includes(e)
 }
 
-function S(e) {
+function T(e) {
   return e in r.kp ? r.kp[e] : 0
 }
 
-function T(e) {
+function S(e) {
   return e[Math.floor(Math.random() * e.length)]
 }
 
@@ -113,9 +113,9 @@ function C(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : new Set,
     n = _.J6.filter(e => !t.has(e)),
     r = {
-      applicationId: T(n.length > 0 ? n : _.J6)
+      applicationId: S(n.length > 0 ? n : _.J6)
     };
-  return v(e) && (r.comment = Math.random() > .5 ? T(f.x) : true), I(e) && (r.tags = Math.random() > .3 ? A(f.T, f.T.length) : true), r
+  return v(e) && (r.comment = Math.random() > .5 ? S(f.x) : true), I(e) && (r.tags = Math.random() > .3 ? A(f.T, f.T.length) : true), r
 }
 
 function N() {
@@ -150,12 +150,12 @@ function D(e, t) {
   null == r.find(t => t.type === e) && (n ? c.Z.setPendingWidgets([t, ...r]) : c.Z.setPendingWidgets([...r, t]))
 }
 
-function L(e) {
+function x(e) {
   let t = R().filter(t => t.type !== e);
   c.Z.setPendingWidgets(t)
 }
 
-function x(e, t, n) {
+function L(e, t, n) {
   let r = Object.values(i._).length;
   if (n.length > r) return;
   let a = P(e);
@@ -178,7 +178,7 @@ function M(e, t, n) {
   let i = r.games.find(e => e.applicationId === t);
   if (null == i || null == i.tags || 0 === i.tags.length) return;
   let a = i.tags.filter(e => e !== n);
-  x(r.type, t, a.length > 0 ? a : [])
+  L(r.type, t, a.length > 0 ? a : [])
 }
 
 function k(e, t, n) {
@@ -199,7 +199,7 @@ function k(e, t, n) {
 function j(e, t) {
   var n, r, i, o;
   let l, u = P(e),
-    d = S(e);
+    d = T(e);
   if (null != u && ((null != (r = null == (n = u.games) ? true : n.length) ? r : 0) >= d || (null != (i = u.games) ? i : []).some(e => e.applicationId === t.applicationId))) return;
   let f = {
     applicationId: t.applicationId,
@@ -254,7 +254,7 @@ async function Z() {
 }
 
 function F(e) {
-  let t = S(e.type);
+  let t = T(e.type);
   return e.games.length >= t
 }
 

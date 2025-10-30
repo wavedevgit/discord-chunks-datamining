@@ -2,8 +2,8 @@
 /** chunk id: 767623, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ee: () => S,
-  Y8: () => T
+  Ee: () => T,
+  Y8: () => S
 });
 var Chunk922387 = require("./922387.js"),
   Chunk986636 = require("./986636.js"),
@@ -26,7 +26,7 @@ var Chunk922387 = require("./922387.js"),
 let O = (0, Chunk647438.createContext)(null),
   v = (0, Chunk647438.createContext)(null),
   I = (0, Chunk647438.createContext)(null),
-  S = (0, Chunk647438.forwardRef)(function(e, t) {
+  T = (0, Chunk647438.forwardRef)(function(e, t) {
     var n, s;
     [e, t] = (0, r.pE)(e, t, O);
     let {
@@ -37,8 +37,8 @@ let O = (0, Chunk647438.createContext)(null),
     }), [p, g] = (0, r.xc)(!e["aria-label"] && !e["aria-labelledby"]), {
       radioGroupProps: E,
       labelProps: v,
-      descriptionProps: S,
-      errorMessageProps: T,
+      descriptionProps: T,
+      errorMessageProps: S,
       ...A
     } = (0, u.a)({
       ...e,
@@ -77,15 +77,15 @@ let O = (0, Chunk647438.createContext)(null),
         }],
         [c.j, {
           slots: {
-            description: S,
-            errorMessage: T
+            description: T,
+            errorMessage: S
           }
         }],
         [i.E, A]
       ]
     }, y.createElement(l.y, null, C.children)))
   }),
-  T = (0, Chunk647438.forwardRef)(function(e, t) {
+  S = (0, Chunk647438.forwardRef)(function(e, t) {
     let {
       inputRef: n = null,
       ...i
@@ -104,8 +104,8 @@ let O = (0, Chunk647438.createContext)(null),
         children: "function" == typeof e.children || e.children
       }, a, o),
       {
-        isFocused: S,
-        isFocusVisible: T,
+        isFocused: T,
+        isFocusVisible: S,
         focusProps: A
       } = (0, f.F)(),
       C = b || a.isReadOnly,
@@ -123,8 +123,8 @@ let O = (0, Chunk647438.createContext)(null),
           isSelected: u,
           isPressed: O,
           isHovered: R,
-          isFocused: S,
-          isFocusVisible: T,
+          isFocused: T,
+          isFocusVisible: S,
           isDisabled: b,
           isReadOnly: a.isReadOnly,
           isInvalid: a.isInvalid,
@@ -140,8 +140,8 @@ let O = (0, Chunk647438.createContext)(null),
       "data-selected": u || true,
       "data-pressed": O || true,
       "data-hovered": R || true,
-      "data-focused": S || true,
-      "data-focus-visible": T || true,
+      "data-focused": T || true,
+      "data-focus-visible": S || true,
       "data-disabled": b || true,
       "data-readonly": a.isReadOnly || true,
       "data-invalid": a.isInvalid || true,

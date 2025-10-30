@@ -88,8 +88,8 @@ let b = e => {
   O = 0,
   v = [],
   I = "SERIES",
-  S = {},
-  T = {};
+  T = {},
+  S = {};
 
 function A(e) {
   y.set(e.id, e), O += 1
@@ -97,7 +97,7 @@ function A(e) {
 
 function C(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  y.delete(e), delete S[e], t && delete T[e], O += 1
+  y.delete(e), delete T[e], t && delete S[e], O += 1
 }
 
 function N(e) {
@@ -108,44 +108,44 @@ function R(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     r = e.guild_scheduled_event_id;
-  null == S[r] && (S[r] = {});
+  null == T[r] && (T[r] = {});
   let i = N(e.guild_scheduled_event_exception_id);
-  null == S[r][i] && (S[r][i] = {}), S[r][i][e.user_id] = e, t && D(e), n && (O += 1)
+  null == T[r][i] && (T[r][i] = {}), T[r][i][e.user_id] = e, t && D(e), n && (O += 1)
 }
 
 function P(e) {
   var t, n, r, i;
   let a = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     o = N(e.guild_scheduled_event_exception_id),
-    s = (null == (n = S[e.guild_scheduled_event_id]) || null == (t = n[o]) ? true : t[e.user_id]) != null,
+    s = (null == (n = T[e.guild_scheduled_event_id]) || null == (t = n[o]) ? true : t[e.user_id]) != null,
     l = e.user_id === c.default.getId();
-  (s || !l) && (null == (i = S[e.guild_scheduled_event_id]) || null == (r = i[o]) || delete r[e.user_id], L(e), a && (O += 1))
+  (s || !l) && (null == (i = T[e.guild_scheduled_event_id]) || null == (r = i[o]) || delete r[e.user_id], x(e), a && (O += 1))
 }
 
 function w(e, t, n) {
   let r = N(t);
-  null == T[e] && (T[e] = {}), T[e][r] = n
+  null == S[e] && (S[e] = {}), S[e][r] = n
 }
 
 function D(e) {
   var t, n;
   let r = N(e.guild_scheduled_event_exception_id),
-    i = (null != (n = null == (t = T[e.guild_scheduled_event_id]) ? true : t[r]) ? n : 0) + (null != e.guild_scheduled_event_exception_id && e.response === f.gv.UNINTERESTED || null == e.guild_scheduled_event_exception_id && e.response === f.gv.INTERESTED ? 1 : false);
-  w(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i)
-}
-
-function L(e) {
-  var t, n;
-  let r = N(e.guild_scheduled_event_exception_id),
-    i = (null != (n = null == (t = T[e.guild_scheduled_event_id]) ? true : t[r]) ? n : 0) + (null != e.guild_scheduled_event_exception_id && e.response === f.gv.UNINTERESTED || null == e.guild_scheduled_event_exception_id && e.response === f.gv.INTERESTED ? false : 1);
+    i = (null != (n = null == (t = S[e.guild_scheduled_event_id]) ? true : t[r]) ? n : 0) + (null != e.guild_scheduled_event_exception_id && e.response === f.gv.UNINTERESTED || null == e.guild_scheduled_event_exception_id && e.response === f.gv.INTERESTED ? 1 : false);
   w(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i)
 }
 
 function x(e) {
+  var t, n;
+  let r = N(e.guild_scheduled_event_exception_id),
+    i = (null != (n = null == (t = S[e.guild_scheduled_event_id]) ? true : t[r]) ? n : 0) + (null != e.guild_scheduled_event_exception_id && e.response === f.gv.UNINTERESTED || null == e.guild_scheduled_event_exception_id && e.response === f.gv.INTERESTED ? false : 1);
+  w(e.guild_scheduled_event_id, e.guild_scheduled_event_exception_id, i)
+}
+
+function L(e) {
   let {
     guilds: t
   } = e;
-  return y.clear(), O = 0, S = {}, T = {}, v.forEach(A), t.forEach(e => e.guild_scheduled_events.forEach(e => A(e))), true
+  return y.clear(), O = 0, T = {}, S = {}, v.forEach(A), t.forEach(e => e.guild_scheduled_events.forEach(e => A(e))), true
 }
 
 function M(e) {
@@ -252,7 +252,7 @@ function K(e) {
     guildId: a,
     guildEventExceptionId: o,
     response: s
-  } = e, l = N(o), c = null == (n = S[i]) || null == (t = n[l]) ? true : t[r];
+  } = e, l = N(o), c = null == (n = T[i]) || null == (t = n[l]) ? true : t[r];
   null != c && P(c, false);
   let d = u.ZP.getMember(a, r);
   return R({
@@ -339,7 +339,7 @@ class en extends(r = Chunk442837.ZP.Store) {
     var r, i;
     if (null == e) return null;
     let a = N(t);
-    return null == (i = S[e]) || null == (r = i[a]) ? true : r[n]
+    return null == (i = T[e]) || null == (r = i[a]) ? true : r[n]
   }
   isInterestedInEventRecurrence(e, t) {
     let n = c.default.getId(),
@@ -353,13 +353,13 @@ class en extends(r = Chunk442837.ZP.Store) {
   getUserCount(e, t) {
     var n, r, i, a;
     if (null == e) return 0;
-    let o = null != (i = null == (n = T[e]) ? true : n[I]) ? i : 0;
-    return null == t ? o : o - (null != (a = null == (r = T[e]) ? true : r[t]) ? a : 0)
+    let o = null != (i = null == (n = S[e]) ? true : n[I]) ? i : 0;
+    return null == t ? o : o - (null != (a = null == (r = S[e]) ? true : r[t]) ? a : 0)
   }
   hasUserCount(e, t) {
     var n;
     let r = N(t);
-    return (null == (n = T[e]) ? true : n[r]) != null
+    return (null == (n = S[e]) ? true : n[r]) != null
   }
   isActive(e) {
     return null != e && J(y.get(e))
@@ -371,12 +371,12 @@ class en extends(r = Chunk442837.ZP.Store) {
     var n, r;
     if (null == e) return {};
     let i = N(t);
-    return null != (r = null == (n = S[e]) ? true : n[i]) ? r : {}
+    return null != (r = null == (n = T[e]) ? true : n[i]) ? r : {}
   }
 }
 _(en, "displayName", "GuildScheduledEventStore");
 let er = new en(Chunk570140.Z, {
-  CONNECTION_OPEN: x,
+  CONNECTION_OPEN: L,
   GUILD_CREATE: j,
   GUILD_DELETE: U,
   FETCH_GUILD_EVENT: M,

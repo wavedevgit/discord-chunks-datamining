@@ -80,14 +80,14 @@ function Z(e, t) {
   }), e
 }
 async function F(e) {
-  var t, n, r, o, l, u, d, p, h, m, g, E, b, v, S, T, A;
+  var t, n, r, o, l, u, d, p, h, m, g, E, b, v, T, S, A;
   let {
     command: C,
     optionValues: w,
     context: k,
     commandTargetId: j,
     maxSizeCallback: U,
-    commandOrigin: G = L.bB.CHAT,
+    commandOrigin: G = x.bB.CHAT,
     sectionName: B,
     interactionLifecycleOptionsFactory: Z = K,
     source: F
@@ -103,7 +103,7 @@ async function F(e) {
   }), await y.Z.unarchiveThreadIfNecessary(k.channel.id);
   let q = [],
     X = [],
-    Q = (0, x.D7)(W);
+    Q = (0, L.D7)(W);
   if (null != C.options)
     for (let e of C.options) {
       let t;
@@ -143,7 +143,7 @@ async function F(e) {
         case c.jw.CHANNEL:
           if ("channelMention" === a.type) t = a.channelId;
           else if ("text" === a.type)
-            if ((0, x.BH)(a.text)) t = a.text.trim();
+            if ((0, L.BH)(a.text)) t = a.text.trim();
             else {
               let e = (0, _.K)(a.text, null == (h = k.guild) ? true : h.id, k.channel.id);
               i()((null == e ? true : e.type) === "channelMention", "Failed to resolve ".concat(a.text)), t = e.channelId
@@ -151,7 +151,7 @@ async function F(e) {
         case c.jw.ROLE:
           if ("roleMention" === a.type) t = a.roleId;
           else if ("text" === a.type)
-            if ((0, x.BH)(a.text)) t = a.text.trim();
+            if ((0, L.BH)(a.text)) t = a.text.trim();
             else {
               let e = (0, _.K)(a.text, null == (m = k.guild) ? true : m.id, k.channel.id, {
                 allowUsers: false
@@ -163,7 +163,7 @@ async function F(e) {
         case c.jw.USER:
           if ("userMention" === a.type) t = a.userId;
           else if ("text" === a.type)
-            if ((0, x.BH)(a.text)) t = a.text.trim();
+            if ((0, L.BH)(a.text)) t = a.text.trim();
             else {
               let e = (0, _.K)(a.text, null == (E = k.guild) ? true : E.id, k.channel.id, {
                 allowRoles: false
@@ -175,10 +175,10 @@ async function F(e) {
           else if ("roleMention" === a.type) t = a.roleId;
           else if ("textMention" === a.type && "@everyone" === a.text) t = null == (b = k.guild) ? true : b.id;
           else if ("text" === a.type)
-            if ((0, x.BH)(a.text)) t = a.text.trim();
+            if ((0, L.BH)(a.text)) t = a.text.trim();
             else {
               let e = (0, _.K)(a.text, null == (v = k.guild) ? true : v.id, k.channel.id);
-              (null == e ? true : e.type) === "userMention" ? t = e.userId: (null == e ? true : e.type) === "roleMention" ? t = e.roleId : (null == e ? true : e.type) === "textMention" && "@everyone" === e.text ? t = null == (S = k.guild) ? true : S.id : i()(false, "Failed to resolve ".concat(a.text))
+              (null == e ? true : e.type) === "userMention" ? t = e.userId: (null == e ? true : e.type) === "roleMention" ? t = e.roleId : (null == e ? true : e.type) === "textMention" && "@everyone" === e.text ? t = null == (T = k.guild) ? true : T.id : i()(false, "Failed to resolve ".concat(a.text))
             } break;
         case c.jw.BOOLEAN:
           "text" === a.type && (t = (0, R.Kl)(a.text.trim()));
@@ -223,10 +223,10 @@ async function F(e) {
     location: z(W),
     source: H
   }), C.execute(q, k);
-  if (C.inputType === L.iw.BUILT_IN || C.inputType === L.iw.BUILT_IN_TEXT || C.inputType === L.iw.BUILT_IN_INTEGRATION) return;
+  if (C.inputType === x.iw.BUILT_IN || C.inputType === x.iw.BUILT_IN_TEXT || C.inputType === x.iw.BUILT_IN_INTEGRATION) return;
   let J = {
       version: C.version,
-      id: null != (T = null == (t = C.rootCommand) ? true : t.id) ? T : C.id,
+      id: null != (S = null == (t = C.rootCommand) ? true : t.id) ? S : C.id,
       guild_id: C.guildId,
       name: null != (A = null == (n = C.rootCommand) ? true : n.name) ? A : C.untranslatedName,
       type: C.type,
@@ -357,7 +357,7 @@ async function K(e, t, n) {
       name: n.name,
       name_localized: e.displayName,
       type: c.B8.APPLICATION_COMMAND,
-      user: (0, E.pe)(S.default.getCurrentUser())
+      user: (0, E.pe)(T.default.getCurrentUser())
     },
     interaction_data: n
   });
@@ -391,26 +391,26 @@ async function K(e, t, n) {
 
 function z(e) {
   switch (e) {
-    case L.bB.APPLICATION_LAUNCHER:
-      return L.Vh.APP_LAUNCHER;
-    case L.bB.APP_LAUNCHER_APPLICATION_VIEW:
-      return L.Vh.APP_LAUNCHER_APPLICATION_VIEW;
-    case L.bB.IMAGE_RECS_MENU:
-      return L.Vh.IMAGE_RECS_MENU;
-    case L.bB.IMAGE_RECS_SUBMENU:
-      return L.Vh.IMAGE_RECS_SUBMENU;
-    case L.bB.ACTIVITY_INSTANCE_EMBED:
-      return L.Vh.ACTIVITY_INSTANCE_EMBED;
-    case L.bB.ACTIVITY_BOOKMARK_EMBED:
-      return L.Vh.ACTIVITY_BOOKMARK_EMBED;
-    case L.bB.MINI_SHELF:
-      return L.Vh.ACTIVITIES_MINI_SHELF;
-    case L.bB.VOICE_TILE_ACTIVITY_SUGGESTIONS:
-      return L.Vh.VC_TILE_ACTIVITY_SUGGESTION;
-    case L.bB.APP_DMS_ENTRY_POINT_COMMAND_BUTTON:
-      return L.Vh.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
+    case x.bB.APPLICATION_LAUNCHER:
+      return x.Vh.APP_LAUNCHER;
+    case x.bB.APP_LAUNCHER_APPLICATION_VIEW:
+      return x.Vh.APP_LAUNCHER_APPLICATION_VIEW;
+    case x.bB.IMAGE_RECS_MENU:
+      return x.Vh.IMAGE_RECS_MENU;
+    case x.bB.IMAGE_RECS_SUBMENU:
+      return x.Vh.IMAGE_RECS_SUBMENU;
+    case x.bB.ACTIVITY_INSTANCE_EMBED:
+      return x.Vh.ACTIVITY_INSTANCE_EMBED;
+    case x.bB.ACTIVITY_BOOKMARK_EMBED:
+      return x.Vh.ACTIVITY_BOOKMARK_EMBED;
+    case x.bB.MINI_SHELF:
+      return x.Vh.ACTIVITIES_MINI_SHELF;
+    case x.bB.VOICE_TILE_ACTIVITY_SUGGESTIONS:
+      return x.Vh.VC_TILE_ACTIVITY_SUGGESTION;
+    case x.bB.APP_DMS_ENTRY_POINT_COMMAND_BUTTON:
+      return x.Vh.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
     default:
-      return L.Vh.SLASH_UI
+      return x.Vh.SLASH_UI
   }
 }
 async function q(e, t) {
@@ -427,10 +427,10 @@ async function q(e, t) {
   }
 }
 async function X(e, t, n, r) {
-  let i = (0, T.dg)(n),
+  let i = (0, S.dg)(n),
     a = e => {
       null == r || r(i, e), m.yr(t, M.evJ.ENTITY_TOO_LARGE, j.intl.formatToPlainString(j.t.fxEKdS, {
-        maxSize: (0, T.Ng)(i)
+        maxSize: (0, S.Ng)(i)
       }))
     },
     {

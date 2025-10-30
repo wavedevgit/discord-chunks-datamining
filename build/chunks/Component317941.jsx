@@ -2,7 +2,7 @@
 /** chunk id: 317941, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk296848 = require("./296848.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk669255 = require("./669255.js");
+  Chunk786636 = require("./786636.js");
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,9 +67,9 @@ class D extends Chunk647438.PureComponent {
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk600164.Z, {
       direction: Chunk600164.Z.Direction.VERTICAL,
-      className: Chunk669255.giftCodeRow,
+      className: Chunk786636.giftCodeRow,
       children: [(0, Chunk951288.jsx)(Chunk481060.kO8, {
-        className: Chunk669255.codeText,
+        className: Chunk786636.codeText,
         value: (0, Chunk669079.Nz)(exports.code),
         text: this.copyButtonText,
         mode: require,
@@ -79,7 +79,7 @@ class D extends Chunk647438.PureComponent {
         buttonColor: Chunk755721.Tt.BRAND,
         buttonLook: Chunk755721.iL.FILLED
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk669255.subTextRow,
+        className: Chunk786636.subTextRow,
         children: [null != exports.expiresAt ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
           children: [Chunk388032.intl.format(Chunk388032.t.ltVZcJ, {
             hours: exports.expiresAt.diff(o()(), "h")
@@ -100,7 +100,7 @@ class D extends Chunk647438.PureComponent {
         giftCode: t,
         sku: n
       } = this.props;
-      (0, S.dM)(t, n), (0, I.JG)(e, () => this.setState({
+      (0, T.dM)(t, n), (0, I.JG)(e, () => this.setState({
         copyMode: u.uA3.SUCCESS
       }), () => this.setState({
         copyMode: u.uA3.ERROR
@@ -112,7 +112,7 @@ class D extends Chunk647438.PureComponent {
     })
   }
 }
-class L extends Chunk647438.PureComponent {
+class x extends Chunk647438.PureComponent {
   componentDidMount() {
     this._loadedAt = Date.now()
   }
@@ -129,7 +129,7 @@ class L extends Chunk647438.PureComponent {
       skuName: exports.name,
       intervalCount: require.intervalCount
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk669255.gameName,
+      className: Chunk786636.gameName,
       children: module
     })
   }
@@ -137,7 +137,7 @@ class L extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)(Chunk600164.Z, {
       justify: Chunk600164.Z.Justify.BETWEEN,
       align: Chunk600164.Z.Align.CENTER,
-      className: Chunk669255.generateCodeRow,
+      className: Chunk786636.generateCodeRow,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.lELyPj)
@@ -172,27 +172,27 @@ class L extends Chunk647438.PureComponent {
       className: Chunk913527,
       children: [(0, Chunk951288.jsx)(Chunk481060.P3F, {
         onClick: this.handleToggleOpen,
-        className: Chunk669255.card,
+        className: Chunk786636.card,
         onMouseEnter: () => this.setIsHovered(true),
         onMouseLeave: () => this.setIsHovered(false),
         children: (0, Chunk951288.jsx)(Chunk189907.Z.Header, {
           splashArtURL: exports.getSplashURL(P),
           children: (0, Chunk951288.jsxs)("div", {
-            className: Chunk669255.cardHeader,
+            className: Chunk786636.cardHeader,
             children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
               align: Chunk600164.Z.Align.CENTER,
               children: [null != Chunk755721 ? (0, Chunk951288.jsx)(Chunk981632.Z, {
                 giftStyle: Chunk755721,
-                className: Chunk669255.seasonalGiftBox,
+                className: Chunk786636.seasonalGiftBox,
                 shouldAnimate: this.state.isHovered
               }) : (0, Chunk951288.jsx)(Chunk925329.Z, {
                 game: exports,
                 size: Chunk925329.A.MEDIUM,
                 skuId: o.id
               }), (0, Chunk951288.jsxs)("div", {
-                className: Chunk669255.headerText,
+                className: Chunk786636.headerText,
                 children: [this.renderTitle(), (0, Chunk951288.jsx)("div", {
-                  className: Chunk669255.subTextHeader,
+                  className: Chunk786636.subTextHeader,
                   children: Chunk388032.intl.format(Chunk388032.t.zMcvcA, {
                     copies: module.length
                   })
@@ -200,13 +200,13 @@ class L extends Chunk647438.PureComponent {
               })]
             }), (0, Chunk951288.jsx)(Chunk259580.Z, {
               direction: Chunk533307 ? Chunk259580.Z.Directions.UP : Chunk259580.Z.Directions.DOWN,
-              className: Chunk669255.expandIcon
+              className: Chunk786636.expandIcon
             })]
           })
         })
       }), Chunk533307 ? (0, Chunk951288.jsx)(Chunk189907.Z.Body, {
         children: Chunk442837 ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
-          className: Chunk669255.spinner
+          className: Chunk786636.spinner
         }) : (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
           children: [require.length < module.length ? this.renderGenerateGiftCodeRow() : null, require.map(e => (0, r.jsx)(D, {
             giftCode: e,
@@ -247,7 +247,7 @@ class L extends Chunk647438.PureComponent {
     })
   }
 }
-let x = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk246946.Z, Chunk82142.Z, Chunk812206.Z, Chunk509545.Z, Chunk314897.default], e => {
+let L = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk246946.Z, Chunk82142.Z, Chunk812206.Z, Chunk509545.Z, Chunk314897.default], e => {
   let {
     skuId: t,
     subscriptionPlanId: n,
@@ -261,7 +261,7 @@ let x = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk246946.Z, Chunk82142.Z,
     isFetching: E.Z.getUserGiftCodesFetchingForSKUAndPlan(t, n),
     loadedAt: E.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
     application: _.Z.getApplication(i.applicationId),
-    subscriptionPlan: null != n ? (0, T.oE)(n) : null,
+    subscriptionPlan: null != n ? (0, S.oE)(n) : null,
     giftCodes: a
   }
-})(L)
+})(x)

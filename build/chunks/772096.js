@@ -76,8 +76,8 @@ let y = ["http:", "https:", "discord:", "tel:", "sms:", "mailto:"],
   O = [Chunk172244.b.TEXT, Chunk172244.b.UNDERLINE, Chunk172244.b.STRONG, Chunk172244.b.ITALICS, Chunk172244.b.STRIKETHROUGH, Chunk172244.b.INLINE_CODE, Chunk172244.b.SPOILER, Chunk172244.b.LINE_BREAK, Chunk172244.b.TIMESTAMP],
   v = [...O, Chunk172244.b.EMOJI, Chunk172244.b.CUSTOM_EMOJI],
   I = [Chunk172244.b.LIST, Chunk172244.b.HEADING, Chunk172244.b.BLOCK_QUOTE, Chunk172244.b.SUBTEXT],
-  S = [Chunk172244.b.TEXT],
-  T = [Chunk172244.b.UNDERLINE, Chunk172244.b.STRONG, Chunk172244.b.ITALICS, Chunk172244.b.STRIKETHROUGH, Chunk172244.b.INLINE_CODE, Chunk172244.b.SPOILER, Chunk172244.b.LINE_BREAK, Chunk172244.b.TIMESTAMP, Chunk172244.b.EMOJI, Chunk172244.b.CUSTOM_EMOJI, Chunk172244.b.LIST, Chunk172244.b.HEADING, Chunk172244.b.BLOCK_QUOTE, Chunk172244.b.SUBTEXT];
+  T = [Chunk172244.b.TEXT],
+  S = [Chunk172244.b.UNDERLINE, Chunk172244.b.STRONG, Chunk172244.b.ITALICS, Chunk172244.b.STRIKETHROUGH, Chunk172244.b.INLINE_CODE, Chunk172244.b.SPOILER, Chunk172244.b.LINE_BREAK, Chunk172244.b.TIMESTAMP, Chunk172244.b.EMOJI, Chunk172244.b.CUSTOM_EMOJI, Chunk172244.b.LIST, Chunk172244.b.HEADING, Chunk172244.b.BLOCK_QUOTE, Chunk172244.b.SUBTEXT];
 
 function A(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [];
@@ -176,20 +176,20 @@ let P = g(h({}, l().defaultRules.link), {
     if (0 === m.trim().length || 0 === P.length) return u();
     let w = R(l().unescapeUrl(o)),
       D = null == w,
-      L = (0, c.ZP)(a).length > 0 || (0, c.ZP)(s).length > 0;
-    if (D || L) return u();
-    let x = g(h({}, n), {
+      x = (0, c.ZP)(a).length > 0 || (0, c.ZP)(s).length > 0;
+    if (D || x) return u();
+    let L = g(h({}, n), {
         allowEscape: false,
         parseInlineCodeChildContent: true
       }),
       M = n.allowEmojiLinks ? v : O,
       k = [...M, ...I],
-      j = [...S, ...T],
-      U = A(t(E, x), k, [f.b.EMOJI]),
-      G = A(t(y, x), j);
+      j = [...T, ...S],
+      U = A(t(E, L), k, [f.b.EMOJI]),
+      G = A(t(y, L), j);
     if (null == U || null == G || 0 === C(U).trim().length) return u();
     let B = i().pick(t.rules, M),
-      Z = l().parserFor(B)(_.whitespaceSanitized, x),
+      Z = l().parserFor(B)(_.whitespaceSanitized, L),
       F = p.whitespaceSanitized,
       {
         target: V

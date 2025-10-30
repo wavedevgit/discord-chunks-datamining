@@ -2,7 +2,7 @@
 /** chunk id: 898463, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L,
+  Z: () => x,
   r: () => D
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -16,18 +16,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk476326 = require("./476326.js"),
   Chunk543651 = require("./543651.jsx"),
   Chunk377171 = require("./377171.js"),
-  Chunk95398 = require("./95398.jsx"),
   Chunk70097 = require("./70097.jsx"),
   Chunk312097 = require("./312097.jsx"),
+  Chunk411405 = require("./411405.jsx"),
   Chunk592125 = require("./592125.js"),
   Chunk956664 = require("./956664.js"),
   Chunk709054 = require("./709054.js"),
   Chunk273031 = require("./273031.jsx"),
   Chunk859235 = require("./859235.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk635085 = require("./635085.js");
+  Chunk258392 = require("./258392.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -74,15 +74,15 @@ function R(e) {
     renderContent: a,
     size: s
   } = e, [l, c] = i.useState(false);
-  return (0, r.jsx)(p.aQ.Provider, {
+  return (0, r.jsx)(m.aQ.Provider, {
     value: !n,
-    children: (0, r.jsx)(p.ZP, {
+    children: (0, r.jsx)(m.ZP, {
       containerStyles: s === O.q.CLIP ? {
         borderBottomLeftRadius: 0,
         borderBottomRightRadius: 0,
         boxShadow: "none"
       } : true,
-      type: p.ZP.Types.ATTACHMENT,
+      type: m.ZP.Types.ATTACHMENT,
       onReveal: () => c(true),
       className: o()(I.spoilerContainer, {
         [I.sizeXSmall]: s === O.q.XSMALL,
@@ -137,7 +137,7 @@ function P(e) {
       }), URL.revokeObjectURL(e)
     }
   }, [t]);
-  let h = i.useCallback(function(e) {
+  let m = i.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
       return null == u ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)("img", {
         src: u,
@@ -153,7 +153,7 @@ function P(e) {
       })
     }, [u, p, s, n, f]),
     g = i.useCallback(() => {
-      null != u && (0, m.K)({
+      null != u && (0, h.K)({
         location: "ChannelAttachmentUpload",
         items: [{
           type: "IMAGE",
@@ -182,7 +182,7 @@ function P(e) {
         size: s,
         alt: n,
         spoiler: a,
-        renderContent: h
+        renderContent: m
       })
     })
   })
@@ -210,7 +210,7 @@ function w(e) {
       size: s,
       alt: n,
       spoiler: a,
-      renderContent: e => (0, r.jsx)(h.Z, {
+      renderContent: e => (0, r.jsx)(p.Z, {
         ref: f,
         src: u,
         className: o()(I.media, {
@@ -264,7 +264,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     channelId: t,
     draftType: n,
@@ -274,12 +274,12 @@ function L(e) {
     size: h = O.q.MEDIUM,
     canEdit: m = true,
     hideFileName: E = false,
-    clip: S
-  } = e, A = null != S, N = (h = A ? O.q.CLIP : h) === O.q.SMALL, R = (0, s.e7)([g.Z], () => {
+    clip: T
+  } = e, A = null != T, N = (h = A ? O.q.CLIP : h) === O.q.SMALL, R = (0, s.e7)([g.Z], () => {
     var e;
     return null == (e = g.Z.getChannel(t)) ? true : e.guild_id
   }), P = e => {
-    e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, C(T({}, e), {
+    e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, C(S({}, e), {
       draftType: n,
       upload: a,
       channelId: t,
@@ -372,10 +372,10 @@ function L(e) {
     }), A && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(f.Z, {
         className: I.clipsFooter,
-        createdAt: b.default.extractTimestamp(S.id),
-        participantIds: S.users,
-        applicationId: S.applicationId,
-        title: S.name,
+        createdAt: b.default.extractTimestamp(T.id),
+        participantIds: T.users,
+        applicationId: T.applicationId,
+        title: T.name,
         guildId: R
       }), (0, r.jsx)(l.IGR, {
         color: _.Z.BG_BRAND,

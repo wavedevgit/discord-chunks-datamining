@@ -2,7 +2,7 @@
 /** chunk id: 774343, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var r, i, a, o, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -73,7 +73,7 @@ function I(e) {
   } = e;
   null == t.guild_id && null != t.id && null != g && g === h.Z5c.CHANNEL(h.ME, t.id) && (g = null)
 }
-class S extends(o = Chunk442837.ZP.Store) {
+class T extends(o = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk896797.Z, Chunk55589.Z, Chunk944486.Z, Chunk430824.Z, Chunk592125.Z)
   }
@@ -81,8 +81,8 @@ class S extends(o = Chunk442837.ZP.Store) {
     return null != g ? g : Chunk896797.Z.fallbackRoute
   }
 }
-m(S, "displayName", "AppViewStore");
-let T = new S(Chunk570140.Z, {
+m(T, "displayName", "AppViewStore");
+let S = new T(Chunk570140.Z, {
   OVERLAY_INITIALIZE: E,
   APP_VIEW_SET_HOME_LINK: b,
   APPLICATION_STORE_LOCATION_CHANGE: O,

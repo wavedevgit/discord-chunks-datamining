@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk484459 = require("./484459.js"),
   Chunk695346 = require("./695346.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk182719 = require("./182719.js");
+  Chunk781416 = require("./781416.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,26 +83,26 @@ let O = function(e) {
     speaking: O = false
   } = e, v = b(e, ["style", "src", "backgroundSrc", "userId", "pulseSpeakingIndicator", "speaking"]);
   let I = null != h ? h : n,
-    S = (0, s.ZP)(I, a.Z.unsafe_rawColors.PRIMARY_800.css),
-    T = (0, l.c)(true, "VideoBackground-web").enabled,
+    T = (0, s.ZP)(I, a.Z.unsafe_rawColors.PRIMARY_800.css),
+    S = (0, l.c)(true, "VideoBackground-web").enabled,
     A = (0, u.ZP)(null != g ? g : _.lds),
     C = null == A ? true : A.getBannerURL({
       size: 1024,
       canAnimate: f.QK.getSetting()
     });
   if (i.useEffect(() => {
-      null != g && T && (0, d.Z)(g, true, {
+      null != g && S && (0, d.Z)(g, true, {
         dispatchWait: true
       })
-    }, [T, g]), null == n) return null;
+    }, [S, g]), null == n) return null;
   let N = (0, r.jsx)(o.qEK, m({
       className: p.avatarWrapper,
       src: n
     }, v)),
     R = E(m({}, t), {
-      backgroundColor: S
+      backgroundColor: T
     });
-  return null != C && O && T && (R.backgroundImage = "url(".concat(C, ")"), R.backgroundSize = "cover"), (0, r.jsx)("div", {
+  return null != C && O && S && (R.backgroundImage = "url(".concat(C, ")"), R.backgroundSize = "cover"), (0, r.jsx)("div", {
     style: R,
     className: p.background,
     children: y ? (0, r.jsx)(c.Z, {

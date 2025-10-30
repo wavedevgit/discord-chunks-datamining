@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk604483 = require("./604483.js");
+  Chunk972731 = require("./972731.js");
 
 function E(e) {
   let {
@@ -29,10 +29,10 @@ function E(e) {
     showLogout: y,
     location: O,
     scopes: v
-  } = e, I = (0, _.X)(), S = c.ZP.getApplicationIconURL({
+  } = e, I = (0, _.X)(), T = c.ZP.getApplicationIconURL({
     id: n.id,
     icon: n.icon
-  }), T = c.ZP.getUserAvatarURL(t), A = i.useMemo(() => v.some(e => (0, f.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
+  }), S = c.ZP.getUserAvatarURL(t), A = i.useMemo(() => v.some(e => (0, f.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.x, {
       variant: "text-lg/normal",
       color: "header-secondary",
@@ -67,7 +67,7 @@ function E(e) {
       className: g.headerIcons,
       children: [(0, r.jsx)(o.qE, {
         className: g.avatar,
-        src: S,
+        src: T,
         size: h.EF.SIZE_80,
         "aria-label": n.name
       }), (0, r.jsxs)("div", {
@@ -81,7 +81,7 @@ function E(e) {
         })]
       }), (0, r.jsx)(o.qE, {
         className: g.avatar,
-        src: T,
+        src: S,
         size: h.EF.SIZE_80,
         "aria-label": t.username
       })]

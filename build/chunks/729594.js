@@ -72,15 +72,15 @@ i.prototype.parse = function(e, t, n) {
     this.protocol = I, y = y.substr(v.length)
   }
   if (n || v || y.match(/^\/\/[^@/]+@[^@/]+/)) {
-    var S = "//" === y.substr(0, 2);
-    S && !(v && h[v]) && (y = y.substr(2), this.slashes = true)
+    var T = "//" === y.substr(0, 2);
+    T && !(v && h[v]) && (y = y.substr(2), this.slashes = true)
   }
-  if (!h[v] && (S || v && !m[v])) {
-    for (var T, A, C = false, N = 0; N < u.length; N++) {
+  if (!h[v] && (T || v && !m[v])) {
+    for (var S, A, C = false, N = 0; N < u.length; N++) {
       var R = y.indexOf(u[N]);
       false !== R && (false === C || R < C) && (C = R)
     }
-    false !== (A = false === C ? y.lastIndexOf("@") : y.lastIndexOf("@", C)) && (T = y.slice(0, A), y = y.slice(A + 1), this.auth = decodeURIComponent(T)), C = false;
+    false !== (A = false === C ? y.lastIndexOf("@") : y.lastIndexOf("@", C)) && (S = y.slice(0, A), y = y.slice(A + 1), this.auth = decodeURIComponent(S)), C = false;
     for (var N = 0; N < c.length; N++) {
       var R = y.indexOf(c[N]);
       false !== R && (false === C || R < C) && (C = R)
@@ -89,13 +89,13 @@ i.prototype.parse = function(e, t, n) {
     var P = "[" === this.hostname[0] && "]" === this.hostname[this.hostname.length - 1];
     if (!P)
       for (var w = this.hostname.split(/\./), N = 0, D = w.length; N < D; N++) {
-        var L = w[N];
-        if (L && !L.match(f)) {
-          for (var x = "", M = 0, k = L.length; M < k; M++) L.charCodeAt(M) > 127 ? x += "x" : x += L[M];
-          if (!x.match(f)) {
+        var x = w[N];
+        if (x && !x.match(f)) {
+          for (var L = "", M = 0, k = x.length; M < k; M++) x.charCodeAt(M) > 127 ? L += "x" : L += x[M];
+          if (!L.match(f)) {
             var j = w.slice(0, N),
               U = w.slice(N + 1),
-              G = L.match(_);
+              G = x.match(_);
             G && (j.push(G[1]), U.unshift(G[2])), U.length && (y = "/" + U.join(".") + y), this.hostname = j.join(".");
             break
           }
@@ -190,21 +190,21 @@ i.prototype.parse = function(e, t, n) {
   else if (null != e.search) {
     if (I) {
       n.host = v.shift(), n.hostname = n.host;
-      var S = !!(n.host && n.host.indexOf("@") > 0) && n.host.split("@");
-      S && (n.auth = S.shift(), n.hostname = S.shift(), n.host = n.hostname)
+      var T = !!(n.host && n.host.indexOf("@") > 0) && n.host.split("@");
+      T && (n.auth = T.shift(), n.hostname = T.shift(), n.host = n.hostname)
     }
     return n.search = e.search, n.query = e.query, (null !== n.pathname || null !== n.search) && (n.path = (n.pathname ? n.pathname : "") + (n.search ? n.search : "")), n.href = n.format(), n
   }
   if (!v.length) return n.pathname = null, n.search ? n.path = "/" + n.search : n.path = null, n.href = n.format(), n;
-  for (var T = v.slice(false)[0], A = (n.host || e.host || v.length > 1) && ("." === T || ".." === T) || "" === T, C = 0, N = v.length; N >= 0; N--) "." === (T = v[N]) ? v.splice(N, 1) : ".." === T ? (v.splice(N, 1), C++) : C && (v.splice(N, 1), C--);
+  for (var S = v.slice(false)[0], A = (n.host || e.host || v.length > 1) && ("." === S || ".." === S) || "" === S, C = 0, N = v.length; N >= 0; N--) "." === (S = v[N]) ? v.splice(N, 1) : ".." === S ? (v.splice(N, 1), C++) : C && (v.splice(N, 1), C--);
   if (!y && !O)
     for (; C--;) v.unshift("..");
   y && "" !== v[0] && (!v[0] || "/" !== v[0].charAt(0)) && v.unshift(""), A && "/" !== v.join("/").substr(false) && v.push("");
   var R = "" === v[0] || v[0] && "/" === v[0].charAt(0);
   if (I) {
     n.hostname = R ? "" : v.length ? v.shift() : "", n.host = n.hostname;
-    var S = !!(n.host && n.host.indexOf("@") > 0) && n.host.split("@");
-    S && (n.auth = S.shift(), n.hostname = S.shift(), n.host = n.hostname)
+    var T = !!(n.host && n.host.indexOf("@") > 0) && n.host.split("@");
+    T && (n.auth = T.shift(), n.hostname = T.shift(), n.host = n.hostname)
   }
   return (y = y || n.host && v.length) && !R && v.unshift(""), v.length > 0 ? n.pathname = v.join("/") : (n.pathname = null, n.path = null), (null !== n.pathname || null !== n.search) && (n.path = (n.pathname ? n.pathname : "") + (n.search ? n.search : "")), n.auth = e.auth || n.auth, n.slashes = n.slashes || e.slashes, n.href = n.format(), n
 }, i.prototype.parseHost = function() {

@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 15030, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk975464 = require("./975464.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk674563 = require("./674563.js"),
-  Chunk423887 = require("./423887.js");
+  Chunk295699 = require("./295699.js");
 
 function j() {
   let e, t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
@@ -42,14 +42,14 @@ function j() {
     guild: exports,
     application: require
   }), (0, Chunk951288.jsx)("div", {
-    className: Chunk423887.settingsColumn,
+    className: Chunk295699.settingsColumn,
     children: (0, Chunk951288.jsx)("div", {
-      className: Chunk423887.settingsContainer,
+      className: Chunk295699.settingsContainer,
       children: (0, Chunk951288.jsx)(Chunk481060.w0Z, {
-        className: Chunk423887.settingsScroller,
+        className: Chunk295699.settingsScroller,
         children: (0, Chunk951288.jsx)("main", {
           ref: v,
-          className: Chunk423887.settingsContent,
+          className: Chunk295699.settingsContent,
           children: (0, Chunk951288.jsx)(Chunk481060.JcV, {
             containerRef: v,
             children: module

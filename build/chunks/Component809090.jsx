@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk768581 = require("./768581.js"),
   Chunk895924 = require("./895924.js"),
-  Chunk557545 = require("./557545.js"),
+  Chunk852802 = require("./852802.js"),
   Chunk970952 = require("./970952.js");
 
 function f(e, t, n) {
@@ -85,14 +85,14 @@ function E(e) {
     onMouseOver: O,
     onMouseLeave: v
   } = e, I = m(e, ["section", "isSelected", "width", "height", "className", "selectable", "isSquircle", "onFocus", "onBlur", "onMouseOver", "onMouseLeave"]);
-  let [S, T] = i.useState(false), A = i.useCallback(() => {
-    T(true), null == b || b()
+  let [T, S] = i.useState(false), A = i.useCallback(() => {
+    S(true), null == b || b()
   }, [b]), C = i.useCallback(() => {
-    T(false), null == y || y()
+    S(false), null == y || y()
   }, [y]), N = i.useCallback(() => {
-    T(true), null == O || O()
+    S(true), null == O || O()
   }, [O]), R = i.useCallback(() => {
-    T(false), null == v || v()
+    S(false), null == v || v()
   }, [v]), P = i.useMemo(() => {
     var e;
     return t.type !== c.Qi.APPLICATION ? d : l.ZP.getApplicationIconURL({
@@ -114,7 +114,7 @@ function E(e) {
     onMouseLeave: R,
     children: (0, r.jsx)(s.ZP, {
       className: u.mask,
-      mask: E || g && (n || S) ? s.QS.SQUIRCLE : s.QS.AVATAR_DEFAULT,
+      mask: E || g && (n || T) ? s.QS.SQUIRCLE : s.QS.AVATAR_DEFAULT,
       width: a,
       height: f,
       children: (0, r.jsx)("img", {

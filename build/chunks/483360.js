@@ -3,11 +3,11 @@
 "use strict";
 let r;
 require.d(exports, {
-  Cq: () => eW,
-  ZP: () => e9,
-  gF: () => eE,
-  k1: () => eK,
-  mB: () => eY
+  Cq: () => ez,
+  ZP: () => tt,
+  gF: () => eb,
+  k1: () => eq,
+  mB: () => eK
 }), require("./388685.js"), require("./35282.js"), require("./413496.js"), require("./433524.js"), require("./539854.js"), require("./642613.js"), require("./290780.js"), require("./704826.js"), require("./583741.js"), require("./361932.js"), require("./187205.js");
 var Chunk658722 = require("./658722.js"),
   a = require.n(Chunk658722),
@@ -19,6 +19,7 @@ var Chunk658722 = require("./658722.js"),
   Chunk815372 = require("./815372.js"),
   Chunk620490 = require("./620490.js"),
   Chunk933557 = require("./933557.js"),
+  Chunk510255 = require("./510255.js"),
   Chunk565924 = require("./565924.js"),
   Chunk710845 = require("./710845.js"),
   Chunk339085 = require("./339085.js"),
@@ -73,7 +74,7 @@ var Chunk658722 = require("./658722.js"),
   Chunk570911 = require("./570911.js"),
   Chunk388032 = require("./388032.jsx");
 
-function e_(e, t, n) {
+function ep(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -82,20 +83,20 @@ function e_(e, t, n) {
   }) : e[t] = n, e
 }
 
-function ep(e) {
+function eh(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      e_(e, t, n[t])
+      ep(e, t, n[t])
     })
   }
   return e
 }
 
-function eh(e, t) {
+function em(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -106,103 +107,104 @@ function eh(e, t) {
   return n
 }
 
-function em(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eh(Object(t)).forEach(function(n) {
+function eg(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : em(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let eg = (0, Chunk509160.M)(() => ({
+let eE = (0, Chunk509160.M)(() => ({
   options: []
 }));
 
-function eE(e) {
-  eg.setState({
+function eb(e) {
+  eE.setState({
     options: e
   })
 }
-let eb = new Chunk710845.Z("AutocompleteUtils"),
-  ey = 10,
-  eO = 8,
-  ev = 7,
-  eI = 5,
+let ey = new Chunk710845.Z("AutocompleteUtils"),
+  eO = 10,
+  ev = 8,
+  eI = 7,
+  eT = 5,
   eS = 3,
-  eT = 1,
   eA = 1,
-  eC = 3,
-  eN = 5,
-  eR = 3,
-  eP = 11,
-  ew = 6,
-  eD = 8,
+  eC = 1,
+  eN = 3,
+  eR = 5,
+  eP = 3,
+  ew = 11,
+  eD = 6,
+  ex = 8,
   eL = 1,
-  ex = 1e3,
-  eM = .2,
-  ek = .1,
-  ej = 50,
-  eU = () => true,
-  eG = /(\t|\s)/,
-  eB = [],
-  eZ = (r = require("./786074.js").Z).MENTION_EVERYONE,
-  eF = r.MENTION_HERE,
-  eV = r.MENTION_GAME,
-  eH = r.LAUNCHABLE_APPLICATIONS;
+  eM = 1e3,
+  ek = .2,
+  ej = .1,
+  eU = 50,
+  eG = () => true,
+  eB = /(\t|\s)/,
+  eZ = [],
+  eF = (r = require("./786074.js").Z).MENTION_EVERYONE,
+  eV = r.MENTION_HERE,
+  eH = r.MENTION_GAME,
+  eY = r.MENTION_TIMESTAMP,
+  eW = r.LAUNCHABLE_APPLICATIONS;
 
-function eY() {
+function eK() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0,
     t = arguments.length > 1 ? arguments[1] : true;
-  return ex * module * (null != exports ? exports : 1)
+  return eM * module * (null != exports ? exports : 1)
 }
 
-function eW(e) {
+function ez(e) {
   var t, n;
-  let r = U.Z.getFrequentlyWithoutFetchingLatest(),
+  let r = G.Z.getFrequentlyWithoutFetchingLatest(),
     i = r.reduce((e, t) => {
       let {
         id: n
-      } = t, r = U.Z.getScoreWithoutFetchingLatest(n);
+      } = t, r = G.Z.getScoreWithoutFetchingLatest(n);
       return r > e ? r : e
     }, 0),
     a = [];
   switch (e) {
-    case ec.h8.GUILD:
-      a = r.filter(e => (0, et.lM)(e));
+    case eu.h8.GUILD:
+      a = r.filter(e => (0, en.lM)(e));
       break;
-    case ec.h8.USER:
-      a = r.filter(e => e instanceof L.Sf && e.type === el.d4z.DM);
+    case eu.h8.USER:
+      a = r.filter(e => e instanceof L.Sf && e.type === ec.d4z.DM);
       break;
-    case ec.h8.GROUP_DM:
+    case eu.h8.GROUP_DM:
       a = r.filter(e => e instanceof L.Sf && e.isMultiUserDM());
       break;
-    case ec.h8.TEXT_CHANNEL:
+    case eu.h8.TEXT_CHANNEL:
       a = r.filter(e => e instanceof L.Sf && (0, L.r8)(e.type));
       break;
-    case ec.h8.VOICE_CHANNEL:
+    case eu.h8.VOICE_CHANNEL:
       a = r.filter(e => e instanceof L.Sf && e.isGuildVocal())
   }
   let o = {};
   for (let t of a) {
     let {
       id: n
-    } = t, r = U.Z.getScoreWithoutFetchingLatest(n);
-    if (e === ec.h8.USER && t instanceof L.mn) {
-      if (t.type === el.d4z.DM) o[n = t.getRecipientId()] = 1 + r / i;
-      else if (t.type === el.d4z.GROUP_DM) {
+    } = t, r = G.Z.getScoreWithoutFetchingLatest(n);
+    if (e === eu.h8.USER && t instanceof L.mn) {
+      if (t.type === ec.d4z.DM) o[n = t.getRecipientId()] = 1 + r / i;
+      else if (t.type === ec.d4z.GROUP_DM) {
         let e = t.recipients.length;
         for (let n of t.recipients) o[n] = 1 + r / i * (1 / e)
       }
     } else o[n] = 1 + r / i
   }
-  for (let e of K.Z.getFriendIDs()) o[e] = (null != (t = o[e]) ? t : 1) + eM;
-  for (let e of j.Z.getDMUserIds()) o[e] = (null != (n = o[e]) ? n : 1) + ek;
+  for (let e of z.Z.getFriendIDs()) o[e] = (null != (t = o[e]) ? t : 1) + ek;
+  for (let e of U.Z.getDMUserIds()) o[e] = (null != (n = o[e]) ? n : 1) + ej;
   return o
 }
-let eK = [Chunk984933.sH, Chunk984933.Zb, Chunk981631.d4z.GUILD_CATEGORY];
+let eq = [Chunk984933.sH, Chunk984933.Zb, Chunk981631.d4z.GUILD_CATEGORY];
 
-function ez(e, t) {
-  return e.split(/(?:,| )+/).every(e => RegExp(ei.Z.escape(e), "i").test(t))
+function eX(e, t) {
+  return e.split(/(?:,| )+/).every(e => RegExp(ea.Z.escape(e), "i").test(t))
 }
 
-function eq(e, t) {
+function eQ(e, t) {
   let {
     exactQuery: n,
     containQuery: r,
@@ -210,30 +212,30 @@ function eq(e, t) {
   } = t, o = !(arguments.length > 2) || true === arguments[2] || arguments[2];
   try {
     if (n.test(e)) {
-      if (e.toLocaleLowerCase() === i) return ey;
-      return ev
+      if (e.toLocaleLowerCase() === i) return eO;
+      return eI
     }
-    if (r.test(e)) return eI;
-    if (ez(i, e)) return eS;
-    if (o && a()(i, e)) return eT
+    if (r.test(e)) return eT;
+    if (eX(i, e)) return eS;
+    if (o && a()(i, e)) return eA
   } catch (e) {
-    eb.error(e)
+    ey.error(e)
   }
   return 0
 }
 
-function eX(e) {
+function eJ(e) {
   return (null == e ? true : e.joinedAt) != null && !e.isPending
 }
 
-function eQ(e) {
+function e$(e) {
   if (null == e) return [null, null];
-  let t = (0, eo._I)(e),
-    n = (0, eo.Fv)(t);
+  let t = (0, es._I)(e),
+    n = (0, es.Fv)(t);
   return [t, n]
 }
 
-function eJ(e) {
+function e0(e) {
   let {
     query: t,
     members: n,
@@ -241,35 +243,35 @@ function eJ(e) {
     filter: i,
     allowSnowflake: o,
     boosters: s
-  } = e, l = X.default.getUsers(), c = q.Z.getGuildId(), u = t.toLocaleLowerCase(), d = (0, eo.Fv)(u), _ = [], p = [], h = n.length, m = 0, g = 0;
+  } = e, l = Q.default.getUsers(), c = X.Z.getGuildId(), u = t.toLocaleLowerCase(), d = (0, es.Fv)(u), _ = [], p = [], h = n.length, m = 0, g = 0;
   for (; m < h;) {
-    var E, b, y, O, v, I, S, T, A;
+    var E, b, y, O, v, I, T, S, A;
     let e, r, f = n[m];
-    f instanceof M.Z ? (r = f, e = null == (b = Z.ZP.getNick(c, r.id)) ? true : b.toLocaleLowerCase()) : (e = null == (y = f.nick) ? true : y.toLocaleLowerCase(), r = l[f.userId]);
-    let h = null == (E = es.ZP.getGlobalName(r)) ? true : E.toLocaleLowerCase();
+    f instanceof k.Z ? (r = f, e = null == (b = F.ZP.getNick(c, r.id)) ? true : b.toLocaleLowerCase()) : (e = null == (y = f.nick) ? true : y.toLocaleLowerCase(), r = l[f.userId]);
+    let h = null == (E = el.ZP.getGlobalName(r)) ? true : E.toLocaleLowerCase();
     if (null != r && (null == i || i(r))) {
       let n = r.username.toLocaleLowerCase(),
-        i = (0, eo._I)(n),
-        l = (0, eo.Fv)(i),
-        [c, f] = eQ(e),
-        [m, E] = eQ(h);
+        i = (0, es._I)(n),
+        l = (0, es.Fv)(i),
+        [c, f] = e$(e),
+        [m, E] = e$(h);
       o && t === r.id || n.substring(0, u.length) === u || i.substring(0, u.length) === u || (null == e ? true : e.substring(0, u.length)) === u || (null == c ? true : c.substring(0, u.length)) === u || (null == h ? true : h.substring(0, u.length)) === u || (null == m ? true : m.substring(0, u.length)) === u ? _.push({
-        type: ec.h8.USER,
+        type: eu.h8.USER,
         record: r,
-        score: eY(ey, null == s ? true : s[r.id]),
+        score: eK(eO, null == s ? true : s[r.id]),
         comparator: null != (O = null != h ? h : e) ? O : n,
         sortable: null != (v = null != m ? m : c) ? v : i
       }) : l.substring(0, d.length) === d || (null == f ? true : f.substring(0, d.length)) === d || (null == E ? true : E.substring(0, d.length)) === d ? _.push({
-        type: ec.h8.USER,
+        type: eu.h8.USER,
         record: r,
-        score: eY(eT, null == s ? true : s[r.id]),
+        score: eK(eA, null == s ? true : s[r.id]),
         comparator: null != (I = null != h ? h : e) ? I : n,
-        sortable: null != (S = null != m ? m : c) ? S : i
-      }) : g < ej && (a()(u, i) || a()(d, l) || null != c && a()(u, c) || null != f && a()(d, f) || null != m && a()(u, m) || null != E && a()(d, E)) && (p.push({
-        type: ec.h8.USER,
+        sortable: null != (T = null != m ? m : c) ? T : i
+      }) : g < eU && (a()(u, i) || a()(d, l) || null != c && a()(u, c) || null != f && a()(d, f) || null != m && a()(u, m) || null != E && a()(d, E)) && (p.push({
+        type: eu.h8.USER,
         record: r,
-        score: eY(eT, null == s ? true : s[r.id]),
-        comparator: null != (T = null != h ? h : e) ? T : n,
+        score: eK(eA, null == s ? true : s[r.id]),
+        comparator: null != (S = null != h ? h : e) ? S : n,
         sortable: null != (A = null != m ? m : c) ? A : i
       }), g += 1)
     }
@@ -278,42 +280,42 @@ function eJ(e) {
   return _.sort(f.Z), _.length < r && (p.sort(f.Z), _ = _.concat(p.slice(0, Math.max(0, r - _.length)))), _.length > r && (_.length = r), _
 }
 
-function e$(e) {
+function e1(e) {
   switch (e) {
-    case R.MO.STICKER_NAME:
-      return eP;
-    case R.MO.CORRELATED_EMOJI:
+    case P.MO.STICKER_NAME:
       return ew;
-    case R.MO.TAG:
-      return eL;
-    case R.MO.GUILD_NAME:
-    case R.MO.PACK_NAME:
+    case P.MO.CORRELATED_EMOJI:
       return eD;
+    case P.MO.TAG:
+      return eL;
+    case P.MO.GUILD_NAME:
+    case P.MO.PACK_NAME:
+      return ex;
     default:
       return 1
   }
 }
 
-function e0(e) {
-  return e === B.sH || e !== B.Zb && !!(0, L.Q5)(e)
-}
-
-function e1(e, t, n) {
-  return e === t || (!!n || !!(0, L.Km)(t)) && (e === B.sH ? (0, L.r8)(t) || (0, L.bw)(t) : e === B.Zb && (0, L.bw)(t))
-}
-
-function e3(e, t) {
-  return e === B.sH && (0, L.bw)(t)
-}
-
 function e2(e) {
+  return e === Z.sH || e !== Z.Zb && !!(0, L.Q5)(e)
+}
+
+function e3(e, t, n) {
+  return e === t || (!!n || !!(0, L.Km)(t)) && (e === Z.sH ? (0, L.r8)(t) || (0, L.bw)(t) : e === Z.Zb && (0, L.bw)(t))
+}
+
+function e4(e, t) {
+  return e === Z.sH && (0, L.bw)(t)
+}
+
+function e8(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = e.split(" ").filter(e => "" !== e || t).map(e => {
       let t = e.toLocaleLowerCase();
       return {
         queryLower: t,
-        exactQuery: RegExp("^".concat(ei.Z.escape(t)), "i"),
-        containQuery: RegExp(ei.Z.escape(t), "i"),
+        exactQuery: RegExp("^".concat(ea.Z.escape(t)), "i"),
+        containQuery: RegExp(ea.Z.escape(t), "i"),
         isFullMatch: false
       }
     });
@@ -321,73 +323,73 @@ function e2(e) {
     let t = e.toLocaleLowerCase();
     n.unshift({
       queryLower: t,
-      exactQuery: RegExp("^".concat(ei.Z.escape(t).replace(" ", "( |-)")), "i"),
-      containQuery: RegExp(ei.Z.escape(t).replace(" ", "( |-)"), "i"),
+      exactQuery: RegExp("^".concat(ea.Z.escape(t).replace(" ", "( |-)")), "i"),
+      containQuery: RegExp(ea.Z.escape(t).replace(" ", "( |-)"), "i"),
       isFullMatch: true
     })
   }
   return n
 }
 
-function e4(e, t, n) {
+function e5(e, t, n) {
   let r = 0,
     i = null;
   for (let a of t) {
-    let t = eq(e, a, n);
+    let t = eQ(e, a, n);
     t > r && (r = t, i = a)
   }
   return null != i && (i.isFullMatch ? t.length = 0 : t.splice(t.indexOf(i), 1)), r
 }
 
-function e8(e, t) {
+function e6(e, t) {
   if (null == e.guild_id) return;
   let n = t[e.guild_id];
   if (null == n) {
     var r;
-    n = t[e.guild_id] = null == (r = V.Z.getGuild(e.guild_id)) ? true : r.name.toLocaleLowerCase()
+    n = t[e.guild_id] = null == (r = H.Z.getGuild(e.guild_id)) ? true : r.name.toLocaleLowerCase()
   }
   return n
 }
 
-function e5(e, t) {
+function e7(e, t) {
   if (null == e.parent_id) return;
   let n = t[e.parent_id];
   if (null == n) {
     var r;
-    n = t[e.parent_id] = null == (r = j.Z.getChannel(e.parent_id)) ? true : r.name.toLocaleLowerCase()
+    n = t[e.parent_id] = null == (r = U.Z.getChannel(e.parent_id)) ? true : r.name.toLocaleLowerCase()
   }
   return n
 }
 
-function e6(e, t) {
-  let n = j.Z.getChannel(e);
-  return null == e || null == n ? [] : s()(H.Z.getMessages(e).toArray()).reverse().uniqBy(e => e.author.id).map(e => X.default.getUser(e.author.id)).filter(e => {
+function e9(e, t) {
+  let n = U.Z.getChannel(e);
+  return null == e || null == n ? [] : s()(Y.Z.getMessages(e).toArray()).reverse().uniqBy(e => e.author.id).map(e => Q.default.getUser(e.author.id)).filter(e => {
     if (null == e || e.isNonUserBot()) returnfalse;
     let t = n.getGuildId();
-    return null == t || eX(Z.ZP.getMember(t, e.id))
+    return null == t || eJ(F.ZP.getMember(t, e.id))
   }).map(e => {
     var t;
     let r = n.getGuildId(),
-      i = null != r ? Z.ZP.getMember(r, e.id) : null;
+      i = null != r ? F.ZP.getMember(r, e.id) : null;
     return {
-      type: ec.h8.USER,
+      type: eu.h8.USER,
       record: e,
       score: 0,
-      comparator: null != (t = null == i ? true : i.nick) ? t : es.ZP.getName(e)
+      comparator: null != (t = null == i ? true : i.nick) ? t : el.ZP.getName(e)
     }
   }).take(t).value()
 }
-let e7 = (0, Chunk251625.oH)((e, t, n) => {
+let te = (0, Chunk251625.oH)((e, t, n) => {
     let r = new Map,
       i = new Map,
       a = [];
-    return s()(j.Z.getMutablePrivateChannels()).values().value().forEach(e => {
+    return s()(U.Z.getMutablePrivateChannels()).values().value().forEach(e => {
       if (e.isDM()) {
         let t = e.getRecipientId(),
-          n = X.default.getUser(t);
+          n = Q.default.getUser(t);
         null == t || null == n || r.has(t) || (r.set(t, e), a.push({
           userId: t,
-          nick: K.Z.getNickname(t)
+          nick: z.Z.getNickname(t)
         }), i.set(t, n))
       }
     }), {
@@ -396,7 +398,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
       recipients: a
     }
   }),
-  e9 = {
+  tt = {
     queryFriends(e) {
       let {
         query: t,
@@ -404,9 +406,9 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         _fuzzy: r = true,
         filter: i
       } = e;
-      return eJ({
+      return e0({
         query: t,
-        members: K.Z.getFriendIDs().map(e => X.default.getUser(e)).filter(ee.lm),
+        members: z.Z.getFriendIDs().map(e => Q.default.getUser(e)).filter(et.lm),
         limit: n,
         filter: i
       })
@@ -417,9 +419,9 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         limit: n = 10,
         filter: r
       } = e;
-      return eJ({
+      return e0({
         query: t,
-        members: j.Z.getDMUserIds().map(e => X.default.getUser(e)).filter(ee.lm),
+        members: U.Z.getDMUserIds().map(e => Q.default.getUser(e)).filter(et.lm),
         limit: n,
         filter: r
       })
@@ -433,9 +435,9 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
           checkRecentlyTalkedOnEmptyQuery: o = true,
           allowSnowflake: s = false
         } = e,
-        l = j.Z.getChannel(n);
+        l = U.Z.getChannel(n);
       if (null == l) return [];
-      let c = l.isThread() ? j.Z.getChannel(l.parent_id) : null,
+      let c = l.isThread() ? U.Z.getChannel(l.parent_id) : null,
         u = null != c ? c : l;
       if (null == u) return [];
       if (u.isPrivate()) {
@@ -443,27 +445,27 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
           var t;
           return {
             userId: e,
-            nick: null != (t = K.Z.getNickname(e)) ? t : null
+            nick: null != (t = z.Z.getNickname(e)) ? t : null
           }
         });
-        let e = X.default.getCurrentUser();
+        let e = Q.default.getCurrentUser();
         null != e && t.push({
           userId: e.id,
           nick: null
         })
       } else {
         if (0 === r.length && o) {
-          let e = e6(l.id, i);
+          let e = e9(l.id, i);
           if (e.length > 0) return e
         }
-        t = Z.ZP.getMembers(u.guild_id).filter(eX), a && en.Z.requestMembers(u.guild_id, r, i)
+        t = F.ZP.getMembers(u.guild_id).filter(eJ), a && er.Z.requestMembers(u.guild_id, r, i)
       }
-      return eJ({
+      return e0({
         query: r,
         members: t,
         limit: i,
-        filter: e => u.isPrivate() || er.BT({
-          permission: el.Plq.VIEW_CHANNEL,
+        filter: e => u.isPrivate() || ei.BT({
+          permission: ec.Plq.VIEW_CHANNEL,
           user: e,
           context: u
         }),
@@ -480,13 +482,13 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         filter: o,
         allowSnowflake: s
       } = e;
-      if (null == V.Z.getGuild(t)) return [];
+      if (null == H.Z.getGuild(t)) return [];
       if (0 === n.length && a) {
-        let e = e6(z.Z.getChannelId(t), r);
+        let e = e9(q.Z.getChannelId(t), r);
         if (e.length > 0) return e
       }
-      let l = Z.ZP.getMembers(t).filter(eX);
-      return i && n.length > 0 && en.Z.requestMembers(t, n, r), eJ({
+      let l = F.ZP.getMembers(t).filter(eJ);
+      return i && n.length > 0 && er.Z.requestMembers(t, n, r), e0({
         query: n,
         members: l,
         limit: r,
@@ -503,7 +505,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         users: a,
         allowSnowflake: o
       } = e;
-      return eJ({
+      return e0({
         query: t,
         members: a,
         limit: i,
@@ -520,56 +522,56 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         limit: i = 10,
         request: a = true
       } = e;
-      return a && t.length > 0 && en.Z.requestMembers(null, t, i), this.queryUsers({
+      return a && t.length > 0 && er.Z.requestMembers(null, t, i), this.queryUsers({
         query: t,
         limit: i,
         request: a,
         filter: n,
         boosters: r,
-        users: s()(X.default.getUsers()).values().value()
+        users: s()(Q.default.getUsers()).values().value()
       })
     },
     queryChannels(e) {
       let t, {
           query: n,
           guildId: r,
-          limit: i = el.rnv,
+          limit: i = ec.rnv,
           fuzzy: a = true,
-          filter: o = eU,
-          type: l = B.sH,
+          filter: o = eG,
+          type: l = Z.sH,
           allowEmptyQueries: c = false,
           requireVocalConnectAccess: u = true,
           boosters: d = {},
           allowSnowflake: p,
           includeAllThreads: h
         } = e,
-        m = e2(n, c),
-        g = e0(l);
-      t = null != r ? s()(B.ZP.getChannels(r)[l]).map(e => e.channel).concat(g ? h ? j.Z.getAllThreadsForGuild(r) : P.Z.computeAllActiveJoinedThreads(r) : []).value() : s()(j.Z.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(g ? P.Z.computeAllActiveJoinedThreads() : []).value();
+        m = e8(n, c),
+        g = e2(l);
+      t = null != r ? s()(Z.ZP.getChannels(r)[l]).map(e => e.channel).concat(g ? h ? U.Z.getAllThreadsForGuild(r) : w.Z.computeAllActiveJoinedThreads(r) : []).value() : s()(U.Z.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(g ? w.Z.computeAllActiveJoinedThreads() : []).value();
       let E = {},
         b = [],
-        y = U.Z.getMaxScore();
+        y = G.Z.getMaxScore();
       for (let e of t) {
         var O;
-        if (!e1(l, e.type, null != r) || (0, L.Km)(e.type) && !Y.Z.can(u ? e.accessPermissions : el.Plq.VIEW_CHANNEL, e) || !o(e)) continue;
+        if (!e3(l, e.type, null != r) || (0, L.Km)(e.type) && !W.Z.can(u ? e.accessPermissions : ec.Plq.VIEW_CHANNEL, e) || !o(e)) continue;
         let t = [...m],
           i = e.name.toLocaleLowerCase(),
           s = p && n === e.id,
-          c = s ? ey : e4(i, t, a);
+          c = s ? eO : e5(i, t, a);
         if (0 !== c) {
           if (t.length > 0) {
-            for (let n of [e8(e, E), e5(e, E)]) {
+            for (let n of [e6(e, E), e7(e, E)]) {
               if (null == n || "" === n) continue;
-              let e = e4(n, t, false);
+              let e = e5(n, t, false);
               0 !== e && (c += .5 * e)
             }
-            c = Math.min(ev - eT, c)
+            c = Math.min(eI - eA, c)
           }
-          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e3(l, e.type) && (c = Math.max(c - eA, eT / 2)), e.isThread() && (e.isActiveThread() || (c -= eC), w.Z.hasJoined(e.id) || (c -= eN)), c = Math.min(c + Math.min(null != (O = U.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= ev ? ey : ev), b.push({
-            type: (0, L.bw)(e.type) ? ec.h8.VOICE_CHANNEL : ec.h8.TEXT_CHANNEL,
+          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e4(l, e.type) && (c = Math.max(c - eC, eA / 2)), e.isThread() && (e.isActiveThread() || (c -= eN), D.Z.hasJoined(e.id) || (c -= eR)), c = Math.min(c + Math.min(null != (O = G.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eP, c >= eI ? eO : eI), b.push({
+            type: (0, L.bw)(e.type) ? eu.h8.VOICE_CHANNEL : eu.h8.TEXT_CHANNEL,
             record: e,
-            score: eY(c, d[e.id]),
-            comparator: (0, _.F6)(e, X.default, K.Z),
+            score: eK(c, d[e.id]),
+            comparator: (0, _.F6)(e, Q.default, z.Z),
             sortable: i
           }))
         }
@@ -582,21 +584,21 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         limit: n = 10,
         fuzzy: r = true,
         allowSnowflake: i,
-        filter: a = eU,
+        filter: a = eG,
         boosters: o = {}
       } = e, s = "" === t ? "" : t.toLocaleLowerCase(), l = {
-        exactQuery: RegExp("^".concat(ei.Z.escape(s)), "i"),
-        containQuery: RegExp(ei.Z.escape(s), "i"),
+        exactQuery: RegExp("^".concat(ea.Z.escape(s)), "i"),
+        containQuery: RegExp(ea.Z.escape(s), "i"),
         queryLower: s
       }, c = [];
-      for (let e of V.Z.getGuildsArray()) {
+      for (let e of H.Z.getGuildsArray()) {
         if (!a(e)) continue;
         let n = e.name.toLocaleLowerCase(),
-          s = i && t === e.id ? ey : eq(n, l, r);
+          s = i && t === e.id ? eO : eQ(n, l, r);
         s > 0 && c.push({
-          type: ec.h8.GUILD,
+          type: eu.h8.GUILD,
           record: e,
-          score: eY(s, o[e.id]),
+          score: eK(s, o[e.id]),
           comparator: e.name,
           sortable: n
         })
@@ -612,7 +614,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         channelsByRecipientId: i,
         recipientsById: a,
         recipients: o
-      } = e7(j.Z.getPrivateChannelsVersion(), K.Z.getVersion(), X.default.getUserStoreVersion()), s = eJ({
+      } = te(U.Z.getPrivateChannelsVersion(), z.Z.getVersion(), Q.default.getUserStoreVersion()), s = e0({
         query: t,
         members: o,
         limit: o.length,
@@ -621,10 +623,10 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
       return s.forEach(e => {
         let t = i.get(e.record.id);
         null != t && l.push({
-          type: ec.h8.DM,
+          type: eu.h8.DM,
           record: t,
           score: e.score,
-          comparator: es.ZP.getUserTag(a.get(e.record.id)),
+          comparator: el.ZP.getUserTag(a.get(e.record.id)),
           sortable: e.sortable
         })
       }), l.sort(f.Z), l.length > n && (l.length = n), l
@@ -634,36 +636,36 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         query: t,
         limit: n = 10,
         fuzzy: r = true,
-        filter: i = eU,
+        filter: i = eG,
         boosters: a = {}
-      } = e, o = (0, eo._I)((0, eo.Fv)(t.toLocaleLowerCase())), l = {
-        exactQuery: RegExp("^".concat(ei.Z.escape(o)), "i"),
-        containQuery: RegExp(ei.Z.escape(o), "i"),
+      } = e, o = (0, es._I)((0, es.Fv)(t.toLocaleLowerCase())), l = {
+        exactQuery: RegExp("^".concat(ea.Z.escape(o)), "i"),
+        containQuery: RegExp(ea.Z.escape(o), "i"),
         queryLower: o
-      }, c = s()(j.Z.getMutablePrivateChannels()).values().value(), u = [];
+      }, c = s()(U.Z.getMutablePrivateChannels()).values().value(), u = [];
       for (let e of c) {
         if (!e.isMultiUserDM() || !i(e)) continue;
-        let t = (0, _.F6)(e, X.default, K.Z).toLocaleLowerCase(),
-          n = (0, eo._I)((0, eo.Fv)(t)),
-          o = eq(n, l, r),
+        let t = (0, _.F6)(e, Q.default, z.Z).toLocaleLowerCase(),
+          n = (0, es._I)((0, es.Fv)(t)),
+          o = eQ(n, l, r),
           s = [];
         for (let t of e.recipients) {
-          let e = X.default.getUser(t);
+          let e = Q.default.getUser(t);
           if (null == e) continue;
           let n = e.username,
-            r = es.ZP.getGlobalName(e),
-            i = K.Z.getNickname(t);
+            r = el.ZP.getGlobalName(e),
+            i = z.Z.getNickname(t);
           null != n && s.push(n), null != r && s.push(r), null != i && s.push(i)
         }
         for (let e of s) {
-          let t = Math.min(eI, eq((0, eo._I)((0, eo.Fv)(e.toLocaleLowerCase())), l, r));
+          let t = Math.min(eT, eQ((0, es._I)((0, es.Fv)(e.toLocaleLowerCase())), l, r));
           t > o && (o = t)
         }
         o > 0 && u.push({
-          type: ec.h8.GROUP_DM,
+          type: eu.h8.GROUP_DM,
           record: e,
-          score: eY(o, a[e.id]),
-          comparator: (0, _.F6)(e, X.default, K.Z),
+          score: eK(o, a[e.id]),
+          comparator: (0, _.F6)(e, Q.default, z.Z),
           sortable: n
         })
       }
@@ -674,21 +676,21 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         query: t,
         limit: n = 10,
         fuzzy: r = true,
-        filter: i = eU
+        filter: i = eG
       } = e, a = t.toLocaleLowerCase(), o = {
-        exactQuery: RegExp("^".concat(ei.Z.escape(a)), "i"),
-        containQuery: RegExp(ei.Z.escape(a), "i"),
+        exactQuery: RegExp("^".concat(ea.Z.escape(a)), "i"),
+        containQuery: RegExp(ea.Z.escape(a), "i"),
         queryLower: a
-      }, s = eH(), l = [];
+      }, s = eW(), l = [];
       for (let {
           application: e
         }
         of s) {
         if (!i(e)) continue;
         let t = e.name.toLocaleLowerCase(),
-          n = eq(t, o, r);
+          n = eQ(t, o, r);
         n > 0 && l.push({
-          type: ec.h8.APPLICATION,
+          type: eu.h8.APPLICATION,
           record: e,
           score: n,
           comparator: e.name,
@@ -703,14 +705,14 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         limit: r = 10,
         fuzzy: i = true
       } = e, a = t.toLocaleLowerCase(), s = {
-        exactQuery: RegExp("^".concat(ei.Z.escape(a)), "i"),
-        containQuery: RegExp(ei.Z.escape(a), "i"),
+        exactQuery: RegExp("^".concat(ea.Z.escape(a)), "i"),
+        containQuery: RegExp(ea.Z.escape(a), "i"),
         queryLower: a
-      }, l = es.ZP.getUserIsStaff(), c = {
-        [d.Ky.SHOP]: [ef.intl.string(ef.t.pWG4ze)],
-        [d.Ky.NITRO_HOME]: [ef.intl.string(ef.t.Ipxkog)],
-        [d.Ky.QUEST_HOME]: [ef.intl.string(ef.t.JALI2K)],
-        [d.Ky.APPS_HOME]: [ef.intl.string(ef.t.PHjkRE), ef.intl.string(ef.t.AKcFUj)]
+      }, l = el.ZP.getUserIsStaff(), c = {
+        [d.Ky.SHOP]: [e_.intl.string(e_.t.pWG4ze)],
+        [d.Ky.NITRO_HOME]: [e_.intl.string(e_.t.Ipxkog)],
+        [d.Ky.QUEST_HOME]: [e_.intl.string(e_.t.JALI2K)],
+        [d.Ky.APPS_HOME]: [e_.intl.string(e_.t.PHjkRE), e_.intl.string(e_.t.AKcFUj)]
       }, u = [];
       for (let e in c) {
         let t = d.Ky[e],
@@ -718,11 +720,11 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         if (null != n)
           for (let e of n) {
             let n = e.toLocaleLowerCase(),
-              r = eq(n, s, i);
+              r = eQ(n, s, i);
             r > 0 && u.push({
-              type: ec.h8.IN_APP_NAVIGATION,
+              type: eu.h8.IN_APP_NAVIGATION,
               record: d.FL.fromType(t),
-              score: eY(r),
+              score: eK(r),
               comparator: n,
               sortable: n
             })
@@ -735,12 +737,12 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         for (let t of e.flatMap(e => e.collections))
           for (let e of ["".concat(t.name, " Playground"), "".concat(t.name, " Components"), "".concat(t.name, " Design System"), t.name]) {
             let n = e.toLocaleLowerCase(),
-              r = eq(n, s, i);
+              r = eQ(n, s, i);
             if (r > 0) {
               u.push({
-                type: ec.h8.IN_APP_NAVIGATION,
+                type: eu.h8.IN_APP_NAVIGATION,
                 record: d.FL.fromType(d.Ky.PLAYGROUND, true, "".concat(t.name, " Playground"), t.id),
-                score: eY(r),
+                score: eK(r),
                 comparator: n,
                 sortable: n
               });
@@ -748,12 +750,12 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
             }
           }
       }
-      return eg.getState().options.forEach(e => {
+      return eE.getState().options.forEach(e => {
         var t;
         let n = [e.title].concat(e.searchableTitles),
-          r = null != (t = (0, o.max)(n.map(e => eY(eq(e.toLocaleLowerCase(), s, i))))) ? t : 0;
+          r = null != (t = (0, o.max)(n.map(e => eK(eQ(e.toLocaleLowerCase(), s, i))))) ? t : 0;
         r > 0 && u.push({
-          type: ec.h8.IN_APP_NAVIGATION,
+          type: eu.h8.IN_APP_NAVIGATION,
           record: d.FL.fromType(d.Ky.SETTINGS, e.path, e.title),
           score: r,
           comparator: e.title.toLocaleLowerCase(),
@@ -766,18 +768,18 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         query: t,
         limit: n = 10,
         fuzzy: r = true,
-        filter: i = eU
+        filter: i = eG
       } = e, a = t.toLocaleLowerCase(), o = {
-        exactQuery: RegExp("^".concat(ei.Z.escape(a)), "i"),
-        containQuery: RegExp(ei.Z.escape(a), "i"),
+        exactQuery: RegExp("^".concat(ea.Z.escape(a)), "i"),
+        containQuery: RegExp(ea.Z.escape(a), "i"),
         queryLower: a
-      }, l = s()(J.Z.getSKUs()).values().value(), c = [];
+      }, l = s()($.Z.getSKUs()).values().value(), c = [];
       for (let e of l)
-        if (e.type === el.epS.DURABLE_PRIMARY && i(e)) {
+        if (e.type === ec.epS.DURABLE_PRIMARY && i(e)) {
           let t = e.name.toLocaleLowerCase(),
-            n = eq(t, o, r);
+            n = eQ(t, o, r);
           n > 0 && c.push({
-            type: ec.h8.SKU,
+            type: eu.h8.SKU,
             record: e,
             score: n,
             comparator: e.name,
@@ -785,7 +787,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
           })
         } return c.sort(f.Z), c.length > n && (c.length = n), c
     },
-    getRecentlyTalked: e6,
+    getRecentlyTalked: e9,
     queryMentionResults(e) {
       let {
         query: t,
@@ -794,25 +796,26 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         canMentionHere: i = true,
         canMentionUsers: o = true,
         canMentionRoles: c = true,
-        includeAllGuildUsers: u = false,
-        includeNonMentionableRoles: d = false,
-        checkRecentlyTalkedOnEmptyQuery: f = true,
-        limit: _ = el.rnv,
-        request: p,
-        allowSnowflake: h = false
-      } = e, m = o ? (u && null != n.guild_id ? this.queryGuildUsers({
+        canMentionOtherGlobals: u = true,
+        includeAllGuildUsers: d = false,
+        includeNonMentionableRoles: f = false,
+        checkRecentlyTalkedOnEmptyQuery: _ = true,
+        limit: h = ec.rnv,
+        request: m,
+        allowSnowflake: g = false
+      } = e, E = o ? (d && null != n.guild_id ? this.queryGuildUsers({
         guildId: n.guild_id,
         query: t,
-        limit: _,
-        checkRecentlyTalkedOnEmptyQuery: f,
-        request: p,
-        allowSnowflake: h
+        limit: h,
+        checkRecentlyTalkedOnEmptyQuery: _,
+        request: m,
+        allowSnowflake: g
       }) : this.queryChannelUsers({
         channelId: n.id,
         query: t,
-        limit: _,
-        checkRecentlyTalkedOnEmptyQuery: f,
-        allowSnowflake: h
+        limit: h,
+        checkRecentlyTalkedOnEmptyQuery: _,
+        allowSnowflake: g
       })).map(e => {
         let {
           record: t,
@@ -823,39 +826,41 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
           user: t,
           score: r,
           comparator: i,
-          nick: Z.ZP.getNick(n.guild_id, t.id),
-          status: W.Z.getStatus(t.id)
+          nick: F.ZP.getNick(n.guild_id, t.id),
+          status: K.Z.getStatus(t.id)
         }
-      }) : [], g = m.length, b = t.toLowerCase(), y = [];
-      if (g < _ && c) {
+      }) : [], y = E.length, O = t.toLowerCase(), v = [];
+      if (y < h && c) {
         let e = n.getGuildId(),
-          i = V.Z.getGuild(e);
+          i = H.Z.getGuild(e);
         if (null != i) {
-          let n = s()(F.Z.getSortedRoles(i.id)).filter(t => {
+          let n = s()(V.Z.getSortedRoles(i.id)).filter(t => {
             let {
               mentionable: n,
               name: i,
               id: o
             } = t;
-            return (n || r || d) && (a()(b, i.toLowerCase()) || h && b === o) && o !== ea.default.castGuildIdAsEveryoneGuildRoleId(e)
+            return (n || r || f) && (a()(O, i.toLowerCase()) || g && O === o) && o !== eo.default.castGuildIdAsEveryoneGuildRoleId(e)
           }).value();
-          y = (0, l.Lu)(n, t, {
+          v = (0, l.Lu)(n, t, {
             keys: ["name"]
-          }).slice(0, _ - g), g += y.length
+          }).slice(0, h - y), y += v.length
         }
       }
-      let O = [];
-      !n.isPrivate() && r && c && (g < _ && a()(b, eZ().test) && (O.push(eZ()), g += 1), i && g < _ && a()(b, eF().test) && (O.push(eF()), g += 1));
-      let v = E.N.getCurrentConfig({
+      let I = [];
+      !n.isPrivate() && r && c && (y < h && a()(O, eF().test) && (I.push(eF()), y += 1), i && y < h && a()(O, eV().test) && (I.push(eV()), y += 1));
+      let T = b.N.getCurrentConfig({
         guildId: n.guild_id,
         location: "mention autocomplete"
       }, {
         autoTrackExposure: true
       }).enabled;
-      return r && v && null != eV && (g < _ || 0 === b.length) && a()(b, eV().test) && (g >= _ && (O.length > 0 ? O.pop() : y.length > 0 ? y.pop() : m.length > 0 && m.pop()), O.push(eV()), g += 1), {
-        users: m,
-        globals: O,
-        roles: y
+      return r && T && null != eH && (y < h || 0 === O.length) && a()(O, eH().test) && (y >= h && (I.length > 0 ? I.pop() : v.length > 0 ? v.pop() : E.length > 0 && E.pop()), I.push(eH()), y += 1), p.Z.getConfig({
+        location: "mention autocomplete"
+      }).enabled && u && null != eY && ((y < h || 0 === O.length) && a()(O, eY().test) || O === eY().test) && (y >= h && (v.length > 0 ? v.pop() : E.length > 0 && E.pop()), I.push(eY()), y += 1), {
+        users: E,
+        globals: I,
+        roles: v
       }
     },
     queryGuildMentionResults(e) {
@@ -869,17 +874,17 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
       } = e, c = i ? this.queryGuildUsers({
         guildId: n,
         query: t
-      }).map(e => em(ep({}, e), {
-        status: W.Z.getStatus(e.record.id)
+      }).map(e => eg(eh({}, e), {
+        status: K.Z.getStatus(e.record.id)
       })) : [], u = c.length, d = t.toLowerCase(), f = [];
-      if (u < el.rnv && o) {
-        let e = V.Z.getGuild(n);
-        null != e && (s()(F.Z.getSortedRoles(e.id)).filter(e => (e.mentionable || r || l) && a()(d, e.name.toLowerCase()) && !(0, x.fI)(e)).take(el.rnv - u).forEach(e => {
+      if (u < ec.rnv && o) {
+        let e = H.Z.getGuild(n);
+        null != e && (s()(V.Z.getSortedRoles(e.id)).filter(e => (e.mentionable || r || l) && a()(d, e.name.toLowerCase()) && !(0, M.fI)(e)).take(ec.rnv - u).forEach(e => {
           f.push(e)
         }), u += f.length)
       }
       let _ = [];
-      return r && o && (u < el.rnv && a()(d, eZ().test) && (_.push(eZ()), u += 1), u < el.rnv && a()(d, eF().test) && _.push(eF())), {
+      return r && o && (u < ec.rnv && a()(d, eF().test) && (_.push(eF()), u += 1), u < ec.rnv && a()(d, eV().test) && _.push(eV())), {
         users: c,
         globals: _,
         roles: f
@@ -891,8 +896,8 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         choices: n,
         limit: r = 10,
         fuzzy: i = true
-      } = e, a = t.toLocaleLowerCase(), o = RegExp("^".concat(ei.Z.escape(a)), "i"), l = RegExp(ei.Z.escape(a), "i"), c = s()(n).map((e, t) => {
-        let n = eq(e.displayName.toLocaleLowerCase(), {
+      } = e, a = t.toLocaleLowerCase(), o = RegExp("^".concat(ea.Z.escape(a)), "i"), l = RegExp(ea.Z.escape(a), "i"), c = s()(n).map((e, t) => {
+        let n = eQ(e.displayName.toLocaleLowerCase(), {
           exactQuery: o,
           containQuery: l,
           queryLower: a
@@ -902,7 +907,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
           score: n,
           originalIndex: t
         } : null
-      }).filter(ee.lm).sortBy(e => false * e.score);
+      }).filter(et.lm).sortBy(e => false * e.score);
       return null !== r && (c = c.take(r)), c.value()
     },
     queryStaticRouteChannels(e) {
@@ -910,23 +915,23 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         query: t,
         guild: n
       } = e, r = t.toLocaleLowerCase(), i = {
-        exactQuery: RegExp("^".concat(ei.Z.escape(r)), "i"),
-        containQuery: RegExp(ei.Z.escape(r), "i"),
+        exactQuery: RegExp("^".concat(ea.Z.escape(r)), "i"),
+        containQuery: RegExp(ea.Z.escape(r), "i"),
         queryLower: r
-      }, a = (0, y.s)(n.id) && !n.features.has(el.GuildFeatures.HUB), o = n.features.has(el.GuildFeatures.COMMUNITY), s = (0, b.t)(n) && n.features.has(el.GuildFeatures.COMMUNITY), l = [{
-        id: eu.HY.SERVER_GUIDE,
-        name: ef.intl.string(ef.t.VbpLyU)
+      }, a = (0, O.s)(n.id) && !n.features.has(ec.GuildFeatures.HUB), o = n.features.has(ec.GuildFeatures.COMMUNITY), s = (0, y.t)(n) && n.features.has(ec.GuildFeatures.COMMUNITY), l = [{
+        id: ed.HY.SERVER_GUIDE,
+        name: e_.intl.string(e_.t.VbpLyU)
       }, {
-        id: eu.HY.CHANNEL_BROWSER,
-        name: ef.intl.string(ef.t.et6wav)
+        id: ed.HY.CHANNEL_BROWSER,
+        name: e_.intl.string(e_.t.et6wav)
       }, {
-        id: eu.HY.CUSTOMIZE_COMMUNITY,
-        name: ef.intl.string(ef.t.h9mGOP)
+        id: ed.HY.CUSTOMIZE_COMMUNITY,
+        name: e_.intl.string(e_.t.h9mGOP)
       }], c = [];
-      for (let e of l)(e.id !== eu.HY.SERVER_GUIDE || a) && (e.id !== eu.HY.CHANNEL_BROWSER || o) && (e.id !== eu.HY.CUSTOMIZE_COMMUNITY || s) && eq(e.name.toLocaleLowerCase(), i, false) > 0 && c.push(new L.nl({
+      for (let e of l)(e.id !== ed.HY.SERVER_GUIDE || a) && (e.id !== ed.HY.CHANNEL_BROWSER || o) && (e.id !== ed.HY.CUSTOMIZE_COMMUNITY || s) && eQ(e.name.toLocaleLowerCase(), i, false) > 0 && c.push(new L.nl({
         id: e.id,
         name: e.name,
-        type: el.d4z.UNKNOWN,
+        type: ec.d4z.UNKNOWN,
         guild_id: n.id
       }));
       return c
@@ -935,7 +940,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
       let {
         query: t,
         channel: n,
-        type: r = B.sH,
+        type: r = Z.sH,
         channelTypes: i
       } = e;
       return {
@@ -955,7 +960,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         query: t,
         channel: n,
         channelTypes: r,
-        limit: i = el.rnv,
+        limit: i = ec.rnv,
         allowSnowflake: a
       } = e;
       if (null == n.guild_id) {
@@ -965,7 +970,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         }
       }
       let o = [];
-      for (let e of eK) o = o.concat(this.queryChannels({
+      for (let e of eq) o = o.concat(this.queryChannels({
         query: t,
         guildId: n.guild_id,
         limit: i,
@@ -981,7 +986,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
           record: t
         } = e;
         return "null" !== t.id
-      }).sort(p.Z), null != i && o.length > i && (o = o.slice(0, i)), {
+      }).sort(h.Z), null != i && o.length > i && (o = o.slice(0, i)), {
         channels: o.map(e => e.record)
       }
     },
@@ -1003,11 +1008,11 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         query: t,
         channel: n,
         intention: r,
-        maxCount: i = el.rnv,
+        maxCount: i = ec.rnv,
         matchComparator: a
       } = e;
-      return D.DZ.loadIfNecessary(), {
-        emojis: m.ZP.searchWithoutFetchingLatest({
+      return x.DZ.loadIfNecessary(), {
+        emojis: g.ZP.searchWithoutFetchingLatest({
           channel: n,
           query: t,
           count: i,
@@ -1018,30 +1023,30 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
     },
     queryStickers(e) {
       let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-        [n, r] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [null, eU],
-        i = X.default.getCurrentUser(),
+        [n, r] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [null, eG],
+        i = Q.default.getCurrentUser(),
         a = new Set,
         o = [];
-      for (let s of (D.DZ.loadIfNecessary(), e)) {
+      for (let s of (x.DZ.loadIfNecessary(), e)) {
         if ("" === s) continue;
         let e = s.toLocaleLowerCase(),
-          l = (0, eo._I)(e),
-          c = RegExp("^".concat(ei.Z.escape(l)), "i"),
-          u = RegExp("".concat(ei.Z.escape(l)), "i");
-        N.Z.getStickerMetadataArrays().forEach(s => {
+          l = (0, es._I)(e),
+          c = RegExp("^".concat(ea.Z.escape(l)), "i"),
+          u = RegExp("".concat(ea.Z.escape(l)), "i");
+        R.Z.getStickerMetadataArrays().forEach(s => {
           s.forEach((s, l) => {
             let d = 0,
               f = null,
-              _ = N.Z.getStickerById(l);
-            if (null == _ || !r(_, (0, A.cO)(_, i, n))) return;
+              _ = R.Z.getStickerById(l);
+            if (null == _ || !r(_, (0, C.cO)(_, i, n))) return;
             for (let n of s) {
               let {
                 type: r,
                 value: i
-              } = n, a = e$(r), o = 0;
-              t ? i === e ? o = ey * a : c.test(i) ? o = ev * a : (r === R.MO.GUILD_NAME || r === R.MO.PACK_NAME || r === R.MO.STICKER_NAME) && u.test(i) && (o = eI * a) : i === e && (o = ey * a, f = i), o > d && (d = o, f = i)
+              } = n, a = e1(r), o = 0;
+              t ? i === e ? o = eO * a : c.test(i) ? o = eI * a : (r === P.MO.GUILD_NAME || r === P.MO.PACK_NAME || r === P.MO.STICKER_NAME) && u.test(i) && (o = eT * a) : i === e && (o = eO * a, f = i), o > d && (d = o, f = i)
             }
-            let p = C.Z.stickerFrecencyWithoutFetchingLatest.getScore(l);
+            let p = N.Z.stickerFrecencyWithoutFetchingLatest.getScore(l);
             null != p && (d *= p / 100), d > 0 && null != f && !a.has(_.id) && (a.add(_.id), o.push({
               sticker: _,
               comparator: f,
@@ -1050,29 +1055,29 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
           })
         })
       }
-      return 0 === (o = s()(o).sortBy(e => false * e.score).value()).length && (o = eB), o
+      return 0 === (o = s()(o).sortBy(e => false * e.score).value()).length && (o = eZ), o
     },
     querySoundmoji(e, t) {
-      let n = X.default.getCurrentUser();
-      S.Z.isFetching() || S.Z.hasFetchedAllSounds() || (0, I.w)(), D.DZ.loadIfNecessary();
+      let n = Q.default.getCurrentUser();
+      S.Z.isFetching() || S.Z.hasFetchedAllSounds() || (0, T.w)(), x.DZ.loadIfNecessary();
       let r = Array.from(S.Z.getSounds().values()).reduce((e, n) => (n.forEach(n => {
-        (0, v.Z)(n, null == t ? true : t.guild_id, null == t ? true : t.id) && e.push(n)
+        (0, I.Z)(n, null == t ? true : t.guild_id, null == t ? true : t.id) && e.push(n)
       }), e), []);
-      return (0, T.cK)(e, r, n, t)
+      return (0, A.cK)(e, r, n, t)
     },
     queryGames(e) {
-      let t = g.ZP.getRunningVerifiedApplicationIds();
-      null == Q.Z.lastFetched && u.N();
-      let n = Q.Z.applicationStatistics;
+      let t = E.ZP.getRunningVerifiedApplicationIds();
+      null == J.Z.lastFetched && u.N();
+      let n = J.Z.applicationStatistics;
 
       function r(r) {
         let i = 0,
           o = r.name.toLowerCase(),
           s = e.toLowerCase();
-        return r.id === s ? i += 1e3 : o === s ? i += 5 : o.startsWith(s) ? i += 4 : o.includes(s) ? i += 3 : o.endsWith(s) ? i += 2 : a()(s, o) && (i += 1), i > 0 && (t.includes(r.id) && (i += 10), r.id in n && (i += 2), ed.gQ.has(r.id) && (i += ed.gQ.get(r.id) / ed.gQ.size)), i
+        return r.id === s ? i += 1e3 : o === s ? i += 5 : o.startsWith(s) ? i += 4 : o.includes(s) ? i += 3 : o.endsWith(s) ? i += 2 : a()(s, o) && (i += 1), i > 0 && (t.includes(r.id) && (i += 10), r.id in n && (i += 2), ef.gQ.has(r.id) && (i += ef.gQ.get(r.id) / ef.gQ.size)), i
       }
-      let i = G.Z.games;
-      return s()(i).filter(e => !(0, O.N)(e)).map(e => ({
+      let i = B.Z.games;
+      return s()(i).filter(e => !(0, v.N)(e)).map(e => ({
         game: e,
         score: r(e)
       })).filter(e => {
@@ -1090,7 +1095,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
           game: t
         } = e;
         return t
-      }).reverse().value().slice(0, el.rnv)
+      }).reverse().value().slice(0, ec.rnv)
     },
     queryMentionSuggestionResults(e) {
       let {
@@ -1103,83 +1108,83 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         var t;
         return {
           userId: e,
-          nick: null != (t = K.Z.getNickname(e)) ? t : null
+          nick: null != (t = z.Z.getNickname(e)) ? t : null
         }
-      }) : Z.ZP.getMembers(n.guild_id).filter(eX), s = k.default.getId(), l = X.default.getUsers(), c = q.Z.getGuildId(), u = t.toLocaleLowerCase(), d = (0, eo.Fv)(u), _ = [];
+      }) : F.ZP.getMembers(n.guild_id).filter(eJ), s = j.default.getId(), l = Q.default.getUsers(), c = X.Z.getGuildId(), u = t.toLocaleLowerCase(), d = (0, es.Fv)(u), _ = [];
       c: for (let e of o) {
         var p, h, m, g;
         let t, o;
         if (_.length >= r) break;
-        e instanceof M.Z ? (o = e, t = null == (m = Z.ZP.getNick(c, o.id)) ? true : m.toLocaleLowerCase()) : (t = null == (g = e.nick) ? true : g.toLocaleLowerCase(), o = l[e.userId]);
-        let f = null == (p = K.Z.getNickname(o.id)) ? true : p.toLocaleLowerCase(),
-          E = null == (h = es.ZP.getGlobalName(o)) ? true : h.toLocaleLowerCase();
-        if (null == o || o.id === s || o.bot || !er.BT({
-            permission: el.Plq.VIEW_CHANNEL,
+        e instanceof k.Z ? (o = e, t = null == (m = F.ZP.getNick(c, o.id)) ? true : m.toLocaleLowerCase()) : (t = null == (g = e.nick) ? true : g.toLocaleLowerCase(), o = l[e.userId]);
+        let f = null == (p = z.Z.getNickname(o.id)) ? true : p.toLocaleLowerCase(),
+          E = null == (h = el.ZP.getGlobalName(o)) ? true : h.toLocaleLowerCase();
+        if (null == o || o.id === s || o.bot || !ei.BT({
+            permission: ec.Plq.VIEW_CHANNEL,
             user: o,
             context: n
           }) && !n.isPrivate()) continue;
         let b = (e, n, r) => {
             _.push({
               user: o,
-              score: eY(n, null == i ? true : i[o.id]),
+              score: eK(n, null == i ? true : i[o.id]),
               matchType: e,
               comparator: r,
               nick: t,
-              status: W.Z.getStatus(o.id)
+              status: K.Z.getStatus(o.id)
             })
           },
           y = o.username.toLocaleLowerCase(),
-          O = (0, eo._I)(y),
-          v = (0, eo.Fv)(O),
-          [I, S] = eQ(t),
-          [T, A] = eQ(f),
-          [C, N] = eQ(E),
+          O = (0, es._I)(y),
+          v = (0, es.Fv)(O),
+          [I, T] = e$(t),
+          [S, A] = e$(f),
+          [C, N] = e$(E),
           R = [
             [y, y],
             [O, y],
             [t, t],
             [I, t],
             [f, f],
-            [T, f],
+            [S, f],
             [E, E],
             [C, E]
           ].filter(e => null != e[0] && null != e[1]);
         for (let [e, t] of R)
           if (u === e) {
-            b("exact", ey, t);
+            b("exact", eO, t);
             continue c
           } let P = /\s+|\.|_/;
         for (let [e, t] of R)
           if (u === e.split(P, 1)[0]) {
-            b("exact", eO, t);
+            b("exact", ev, t);
             continue c
           } if (!a) {
           for (let [e, t] of R)
             if (e.startsWith(u)) {
-              b("starts_with", ev, t);
+              b("starts_with", eI, t);
               continue c
             } for (let [e, n] of [
               [v, y],
-              [S, t],
+              [T, t],
               [A, f],
               [N, E]
             ])
             if (null != e && null != n && e.startsWith(d)) {
-              b("starts_with", ev, n);
+              b("starts_with", eI, n);
               continue c
             }
         }
       }
       return _.sort(f.Z), _
     },
-    matchSentinel: (e, t, n) => !eG.test(t) && e === n,
+    matchSentinel: (e, t, n) => !eB.test(t) && e === n,
     hasSameRoleAsUsername(e, t) {
       if (!t.hasUniqueUsername()) returnfalse;
-      let n = V.Z.getGuild(e.getGuildId());
+      let n = H.Z.getGuild(e.getGuildId());
       for (let {
           name: e
         }
-        of null != n ? F.Z.getSortedRoles(n.id) : [])
+        of null != n ? V.Z.getSortedRoles(n.id) : [])
         if (t.username.startsWith(e.toLowerCase())) returntrue;
       returnfalse
     }

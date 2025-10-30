@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk889963 = require("./889963.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk18039 = require("./18039.js");
+  Chunk384 = require("./384.js");
 
 function f(e) {
   let {
@@ -144,7 +144,7 @@ function _(e) {
     return null != g ? g(e, t) : t
   }
 
-  function S(e) {
+  function T(e) {
     return (0, r.jsx)(f, {
       page: e,
       totalPageCount: E,
@@ -153,7 +153,7 @@ function _(e) {
     }, e.key)
   }
 
-  function T(e) {
+  function S(e) {
     let {
       pages: t,
       hasMultiplePages: n
@@ -169,7 +169,7 @@ function _(e) {
             case c.s.PAGE:
               return I(e);
             case c.s.GAP:
-              return S(e);
+              return T(e);
             case c.s.NEXT:
               return O(e);
             default:
@@ -185,6 +185,6 @@ function _(e) {
     maxVisiblePages: a,
     hideMaxPage: h,
     onPageChange: b,
-    children: T
+    children: S
   })
 }

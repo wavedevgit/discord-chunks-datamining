@@ -2,7 +2,7 @@
 /** chunk id: 709093, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk573702 = require("./573702.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk108626 = require("./108626.js"),
+  Chunk491881 = require("./491881.js"),
   Chunk236078 = require("./236078.js"),
   Chunk278345 = require("./278345.js"),
   Chunk895601 = require("./895601.js"),
@@ -72,7 +72,7 @@ function I(e) {
     })]
   })
 }
-let S = function(e) {
+let T = function(e) {
   var t, n, i;
   let {
     hideCloseButton: u = false,
@@ -80,13 +80,13 @@ let S = function(e) {
     onClose: g,
     upgradeToPremiumType: E,
     isEligibleForTrial: b = false,
-    showTrialBadge: S = false,
-    showDiscountBadge: T = false
+    showTrialBadge: T = false,
+    showDiscountBadge: S = false
   } = e, A = E === _.PremiumTypes.TIER_2, C = (0, c.Fv)(b), N = (0, d.Ng)(), R = null == N || null == (t = N.discount) ? true : t.amount, P = A ? O : y, {
     step: w,
     breadcrumbs: D,
-    startedPaymentFlowWithPaymentSourcesRef: L,
-    isDisplayingWowMomentConfirmation: x
+    startedPaymentFlowWithPaymentSourcesRef: x,
+    isDisplayingWowMomentConfirmation: L
   } = (0, s.JL)();
   if (null == D || 0 === D.length) return null;
   let M = D.flatMap(e => {
@@ -101,7 +101,7 @@ let S = function(e) {
   if (0 === M.length) return null;
   let k = (M = M.filter(e => {
       let t = e.id !== l.h8.ADD_PAYMENT_STEPS,
-        n = e.id === l.h8.ADD_PAYMENT_STEPS && !L.current;
+        n = e.id === l.h8.ADD_PAYMENT_STEPS && !x.current;
       return !b || b && (t || n)
     })).find(e => e.id === w),
     j = null != (i = null == k || null == (n = k.sectionHeaderText) ? true : n.call(k)) ? i : null == k ? true : k.label,
@@ -109,7 +109,7 @@ let S = function(e) {
     G = C && U && w === l.h8.REVIEW,
     B = A ? "nitro-pink" : "nitro-green",
     Z = A ? p.intl.string(p.t.lG6a5x) : p.intl.string(p.t["t9uG/o"]);
-  return x ? (0, r.jsx)("div", {
+  return L ? (0, r.jsx)("div", {
     className: h.container,
     children: (0, r.jsx)(o.$1m, {
       color: B,
@@ -142,7 +142,7 @@ let S = function(e) {
           children: Z
         })
       })]
-    }), (S || T) && (0, r.jsx)(f.Z, {
+    }), (T || S) && (0, r.jsx)(f.Z, {
       discountAmount: R
     }), U && (0, r.jsx)(v, {
       isOneStepCheckout: C,

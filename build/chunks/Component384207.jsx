@@ -1,4 +1,4 @@
-/** Chunk was on 39297 **/
+/** Chunk was on 87665 **/
 /** chunk id: 384207, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => u
@@ -11,20 +11,20 @@ var Chunk481060 = require("./481060.js"),
   Chunk812381 = require("./812381.jsx"),
   Chunk11075 = require("./11075.jsx"),
   Chunk511010 = require("./511010.jsx"),
-  Chunk809863 = require("./809863.js");
+  Chunk915868 = require("./915868.js");
 let u = () => (0, Chunk951288.jsxs)("div", {
-  className: Chunk809863.previewPanel,
+  className: Chunk915868.previewPanel,
   children: [(0, Chunk951288.jsx)(Chunk11075.a, {
-    className: Chunk809863.previewSection
+    className: Chunk915868.previewSection
   }), (0, Chunk951288.jsxs)("div", {
-    className: Chunk809863.previewSection,
+    className: Chunk915868.previewSection,
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
       children: "Shop Overrides"
     }), (0, Chunk951288.jsx)(Chunk812381.a, {}), (0, Chunk951288.jsx)(Chunk511010.Z, {
-      className: Chunk809863.divider
+      className: Chunk915868.divider
     }), (0, Chunk951288.jsx)(Chunk484486.Z, {}), (0, Chunk951288.jsx)(Chunk511010.Z, {
-      className: Chunk809863.divider
+      className: Chunk915868.divider
     }), (0, Chunk951288.jsx)(Chunk646466.O, {})]
   })]
 })

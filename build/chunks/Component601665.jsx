@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk161572 = require("./161572.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk116649 = require("./116649.js");
+  Chunk593540 = require("./593540.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,8 +60,8 @@ function P(e) {
     channelId: P,
     messageId: w,
     roleId: D,
-    openedAt: L,
-    closePopout: x,
+    openedAt: x,
+    closePopout: L,
     setPopoutRef: M,
     disableUserProfileLink: k = __OVERLAY__,
     newAnalyticsLocations: j = [],
@@ -82,7 +82,7 @@ function P(e) {
     null == M || M(null == V ? true : V.current)
   }, [V, M]);
   let Y = e => {
-      null == x || x(), (0, m.openUserProfileModal)(R({
+      null == L || L(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: G,
         hideRestrictedProfile: true
       }, B, e))
@@ -104,7 +104,7 @@ function P(e) {
     value: G,
     children: (0, r.jsx)(_.Mt, {
       value: B,
-      openedAt: L,
+      openedAt: x,
       fetchStartedAt: null == Z ? true : Z.fetchStartedAt,
       fetchEndedAt: null == Z ? true : Z.fetchEndedAt,
       isLoaded: null == Z ? true : Z.isLoaded,
@@ -121,13 +121,13 @@ function P(e) {
         }), (0, r.jsxs)(b.Z, {
           user: t,
           displayProfile: Z,
-          themeType: T.l.POPOUT,
+          themeType: S.l.POPOUT,
           children: [(0, r.jsx)(O.Z, {
             children: (0, r.jsx)(y.Z, {
               user: t,
               guildId: N,
               viewProfileItem: W(),
-              onCloseProfile: x
+              onCloseProfile: L
             })
           }), (0, r.jsxs)("div", {
             className: C.header,
@@ -135,18 +135,18 @@ function P(e) {
               user: t,
               displayProfile: Z,
               guildId: N,
-              themeType: T.l.POPOUT
+              themeType: S.l.POPOUT
             }), (0, r.jsx)(g.Z, {
               user: t,
               displayProfile: Z,
               guildId: N,
               channelId: P,
-              themeType: T.l.POPOUT,
+              themeType: S.l.POPOUT,
               onOpenProfile: k ? true : Y
             }), (0, r.jsx)(v.Z, {
               user: t,
-              themeType: T.l.POPOUT,
-              onCloseProfile: x,
+              themeType: S.l.POPOUT,
+              onCloseProfile: L,
               disableToolbar: true
             })]
           }), (0, r.jsx)(I.Z, {
@@ -157,12 +157,12 @@ function P(e) {
             isHoveringOrFocusing: H,
             onOpenProfile: k ? true : Y,
             channelId: P,
-            onClose: x
-          }), (0, r.jsx)(S.Z, {
+            onClose: L
+          }), (0, r.jsx)(T.Z, {
             user: t,
             guildId: N,
             channelId: P,
-            onClose: x,
+            onClose: L,
             disableAutoFocus: U
           })]
         })]

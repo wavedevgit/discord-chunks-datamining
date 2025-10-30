@@ -34,8 +34,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk430864 = require("./430864.js"),
-  Chunk329072 = require("./329072.js");
+  Chunk602009 = require("./602009.js"),
+  Chunk443937 = require("./443937.js");
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -101,7 +101,7 @@ function B(e) {
     var e;
     return null == (e = R.Z.getGuild(a)) ? true : e.ownerId
   }, [a]), _ = (0, l.e7)([P.default], () => P.default.getUser(t.userId), [t.userId]), p = (0, l.e7)([A.Z], () => A.Z.getChannel(o), [o]);
-  return null == _ || null == p ? null : (0, r.jsx)(S.Z, {
+  return null == _ || null == p ? null : (0, r.jsx)(T.Z, {
     targetElementRef: c,
     userId: t.userId,
     guildId: a,
@@ -129,7 +129,7 @@ function B(e) {
           (0, d.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("79695"), n.e("98783"), n.e("6915"), n.e("8982"), n.e("7717"), n.e("20037")]).then(n.bind(n, 757387));
+            } = await Promise.all([n.e("79695"), n.e("98783"), n.e("6915"), n.e("8982"), n.e("7717"), n.e("46231")]).then(n.bind(n, 757387));
             return t => (0, r.jsx)(e, U(k({}, t), {
               user: _,
               guildId: a,
@@ -160,7 +160,7 @@ function Z(e) {
   let f = (0, b.Z)(a),
     p = (0, l.e7)([R.Z], () => {
       let e = R.Z.getGuild(a);
-      return null == e ? null : (0, T.lV)(e)
+      return null == e ? null : (0, S.lV)(e)
     }, [a]),
     h = (0, l.Wu)([C.ZP, P.default], () => {
       let e = C.ZP.getMembers(a),
@@ -189,13 +189,13 @@ function Z(e) {
   return (0, r.jsx)(c.d.Provider, {
     value: true,
     children: (0, r.jsx)("div", U(k({
-      className: L.rolePopout,
+      className: x.rolePopout,
       ref: d
     }, t), {
       children: (0, r.jsxs)(u.Ttm, {
-        className: L.roleScroller,
+        className: x.roleScroller,
         children: [(0, r.jsx)(g.Z, {
-          className: L.roleHeader,
+          className: x.roleHeader,
           "aria-label": D.intl.formatToPlainString(D.t.Uaqbke, {
             title: m.name,
             count: y.length
@@ -205,7 +205,7 @@ function Z(e) {
             children: O
           })
         }), y, null == E || E <= y.length ? null : (0, r.jsx)(g.Z, {
-          className: L.roleHeader,
+          className: x.roleHeader,
           children: D.intl.formatToPlainString(D.t["9oMmZC"], {
             count: E - y.length
           })
@@ -225,16 +225,16 @@ function F(e) {
     inlinePreview: d = false
   } = e, {
     analyticsLocations: f
-  } = (0, m.ZP)(h.Z.ROLE_MENTION), _ = (0, l.e7)([p.Z], () => p.Z.roleStyle), g = (0, l.e7)([N.Z], () => null == o || null == t ? null : N.Z.getRole(o, t)), E = (0, I.yH)(o, g), b = !d && null != g && !(0, v.Gr)(g), S = b && "dot" === _, T = b && "username" === _, A = E && null != g ? g.colorStrings : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, U(k({
+  } = (0, m.ZP)(h.Z.ROLE_MENTION), _ = (0, l.e7)([p.Z], () => p.Z.roleStyle), g = (0, l.e7)([N.Z], () => null == o || null == t ? null : N.Z.getRole(o, t)), E = (0, I.yH)(o, g), b = !d && null != g && !(0, v.Gr)(g), T = b && "dot" === _, S = b && "username" === _, A = E && null != g ? g.colorStrings : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, U(k({
     ref: C,
-    className: L.roleMention,
-    color: T ? g.color : null,
-    roleColors: T ? A : null
+    className: x.roleMention,
+    color: S ? g.color : null,
+    roleColors: S ? A : null
   }, e), {
-    children: [S && null != g.color && (0, r.jsx)(u.FhE, {
+    children: [T && null != g.color && (0, r.jsx)(u.FhE, {
       color: (0, s.Rf)(g.color),
       colors: A,
-      className: x.roleDot,
+      className: L.roleDot,
       background: false,
       tooltip: false
     }), c]

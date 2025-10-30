@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk168524 = require("./168524.js"),
   Chunk715318 = require("./715318.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk488463 = require("./488463.js");
+  Chunk35379 = require("./35379.js");
 
 function O(e) {
   let {
@@ -96,7 +96,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   var t;
   let {
     detectedGame: n,
@@ -130,7 +130,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     application: t
   } = e, n = (0, l.e7)([_.Z], () => _.Z.getMute(t.id)), a = i.useMemo(() => n ? b.intl.string(b.t.tpvw4T) : b.intl.string(b.t["6EwEwp"]), [n]);
@@ -187,14 +187,14 @@ function A(e) {
     className: o()(y.container, a),
     children: [(0, r.jsx)(O, {
       detectedGame: n
-    }), (0, r.jsx)(T, {
+    }), (0, r.jsx)(S, {
       application: t
     }), (0, r.jsx)(v, {
       application: t
     }), (0, r.jsx)(I, {
       application: t,
       detectedGame: n
-    }), (0, r.jsx)(S, {
+    }), (0, r.jsx)(T, {
       application: t,
       detectedGame: n,
       openFullGameProfile: c

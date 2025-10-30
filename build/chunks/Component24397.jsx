@@ -27,9 +27,9 @@ var Chunk793030 = require("./793030.js"),
   Chunk761652 = require("./761652.js"),
   Chunk689079 = require("./689079.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk793872 = require("./793872.js");
+  Chunk708854 = require("./708854.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,7 +45,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -160,7 +160,7 @@ let P = {
         }
       },
       key: "commands",
-      headerClassName: d ? S.legacyInputCommandHeader : null,
+      headerClassName: d ? T.legacyInputCommandHeader : null,
       headerTrailingContent: d && (0, r.jsx)(i.Avr, {
         size: "xs",
         onClick: N,

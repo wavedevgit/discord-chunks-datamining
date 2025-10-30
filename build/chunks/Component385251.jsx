@@ -21,7 +21,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk355758 = require("./355758.js"),
+  Chunk254972 = require("./254972.js"),
   Chunk22767 = require("./22767.js");
 
 function O(e, t, n) {
@@ -57,12 +57,12 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = {
+let S = {
   page: Chunk981631.ZY5.USER_SETTINGS,
   section: Chunk981631.jXE.SETTINGS_PREMIUM,
   object: Chunk981631.qAy.CARD
@@ -153,8 +153,8 @@ let N = function(e) {
     (0, i.ZDy)(async () => {
       let {
         PremiumBrandRefreshSubscriptionCancellationModal: i
-      } = await Promise.all([n.e("17938"), n.e("69432"), n.e("26526"), n.e("46573")]).then(n.bind(n, 48813));
-      return n => (0, r.jsx)(i, S(v({}, n), {
+      } = await Promise.all([n.e("17938"), n.e("69432"), n.e("26526"), n.e("60088")]).then(n.bind(n, 48813));
+      return n => (0, r.jsx)(i, T(v({}, n), {
         premiumSubscription: t,
         analyticsLocation: _,
         analyticsLocations: N,
@@ -175,7 +175,7 @@ let N = function(e) {
       className: b.activeSubButtons,
       children: [(0, r.jsx)(i.aML, {
         text: n,
-        children: n => (0, r.jsx)(i.Button, S(v({}, n), {
+        children: n => (0, r.jsx)(i.Button, T(v({}, n), {
           variant: "expressive",
           disabled: e,
           text: E.intl.string(E.t["dylp/7"]),
@@ -184,7 +184,7 @@ let N = function(e) {
             (0, s.Z)({
               analyticsLocations: N,
               analyticsLocation: _,
-              analyticsObject: T,
+              analyticsObject: S,
               subscription: t
             })
           }
@@ -197,7 +197,7 @@ let N = function(e) {
         onClick: R
       })]
     })
-  }, D = d.ZP.getPlanIdFromInvoice(t, c), L = (0, p.eQ)(null == I ? true : I.expires_at);
+  }, D = d.ZP.getPlanIdFromInvoice(t, c), x = (0, p.eQ)(null == I ? true : I.expires_at);
   return (0, l.Q0)(D) ? null : (0, r.jsx)("div", {
     className: b.churnDiscountBannerBackground,
     children: (0, r.jsx)(i.$1m, {
@@ -215,7 +215,7 @@ let N = function(e) {
             className: b.churnDiscountBannerExpiryDate,
             variant: "text-sm/medium",
             color: "text-primary",
-            children: null != I && L
+            children: null != I && x
           })]
         }), (0, r.jsx)("div", {
           className: b.selectPlanDivider

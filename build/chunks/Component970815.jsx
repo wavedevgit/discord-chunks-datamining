@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk317257 = require("./317257.js"),
   Chunk583478 = require("./583478.jsx"),
   Chunk976845 = require("./976845.jsx"),
-  Chunk647917 = require("./647917.js");
+  Chunk646855 = require("./646855.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,7 +38,7 @@ function p(e) {
   return e
 }
 let h = () => (0, Chunk951288.jsx)("img", {
-    className: Chunk647917.notificationBadge,
+    className: Chunk646855.notificationBadge,
     src: require("./808824.js"),
     alt: ""
   }),
@@ -55,15 +55,15 @@ let h = () => (0, Chunk951288.jsx)("img", {
       disabled: O,
       isInModalOverlay: v,
       className: I
-    } = e, [S, T] = (0, i.useState)(false), A = (0, i.useMemo)(() => g(_, S), [_, S]), [C, N] = (0, i.useState)(false), [R, P] = (0, i.useState)(false), [w, D] = (0, i.useState)(.9 * l.D2), L = null === a;
+    } = e, [T, S] = (0, i.useState)(false), A = (0, i.useMemo)(() => g(_, T), [_, T]), [C, N] = (0, i.useState)(false), [R, P] = (0, i.useState)(false), [w, D] = (0, i.useState)(.9 * l.D2), x = null === a;
     (0, i.useEffect)(() => {
-      L && !C && (N(true), setTimeout(() => {
+      x && !C && (N(true), setTimeout(() => {
         P(true)
       }, 500))
-    }, [L, N, C]), (0, i.useEffect)(() => {
-      R && !L && N(false)
-    }, [L, R]);
-    let x = L || C,
+    }, [x, N, C]), (0, i.useEffect)(() => {
+      R && !x && N(false)
+    }, [x, R]);
+    let L = x || C,
       M = C ? null : a,
       [k, j] = (0, i.useState)(null),
       U = (0, i.useRef)(null),
@@ -80,30 +80,30 @@ let h = () => (0, Chunk951288.jsx)("img", {
         onSetAnimationDurationMS: D
       };
     return (0, r.jsx)(s.P3F, {
-      onClick: x ? true : b,
+      onClick: L ? true : b,
       className: o()(f.clickable, {
         [f.disabled]: O
       }),
       id: null != n ? n : m,
       children: (0, r.jsxs)("span", {
         onMouseDown: y,
-        onMouseEnter: O ? true : () => T(true),
-        onMouseLeave: O ? true : () => T(false),
+        onMouseEnter: O ? true : () => S(true),
+        onMouseLeave: O ? true : () => S(false),
         ref: t,
         className: o()(f.container, A, I, {
-          [f.containerLoading]: x,
+          [f.containerLoading]: L,
           [f.inModalOverlay]: v,
           [f.disabled]: O
         }),
         children: [(0, r.jsx)("div", {
-          className: o()(f.orbsLottieContainer, x ? f.orbIconloading : true),
+          className: o()(f.orbsLottieContainer, L ? f.orbIconloading : true),
           children: (0, r.jsx)(d.ZP, p({}, Z))
         }), (0, r.jsx)(u.Z, {
           value: M,
           onValueChange: B,
           onValueReached: G,
           targetTotalCounterTime: w,
-          className: x ? f.counterLoading : true
+          className: L ? f.counterLoading : true
         }), E && (0, r.jsx)(h, {})]
       })
     })

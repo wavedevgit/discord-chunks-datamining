@@ -87,14 +87,14 @@ function I() {
   A(), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = false, b.lastFetchSuccessful = false
 }
 
-function S(e) {
+function T(e) {
   let {
     userTrialOffer: t
   } = e;
   null != t ? b.userTrialOffers[t.trial_id] = t : b.userTrialOffers = {}, b.userOffersLastFetchedAtDate = Date.now()
 }
 
-function T(e) {
+function S(e) {
   let {
     userTrialOffer: t,
     userDiscount: n,
@@ -225,9 +225,9 @@ _(w, "displayName", "UserOfferStore"), _(w, "persistKey", "UserOfferStore"), _(w
 let D = new w(Chunk570140.Z, {
   BILLING_USER_OFFER_FETCH_START: y,
   BILLING_USER_TRIAL_OFFER_FETCH_SUCCESS: O,
-  BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: S,
+  BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: T,
   BILLING_USER_OFFER_FETCH_SUCCESS: v,
-  BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS: T,
+  BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS: S,
   BILLING_USER_OFFER_FETCH_FAIL: I,
   BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: R,
   BILLING_PAYMENT_SOURCE_UPDATE_SUCCESS: R,

@@ -2,7 +2,7 @@
 /** chunk id: 11868, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Qt: () => L,
+  Qt: () => x,
   ZP: () => j
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk139712 = require("./139712.jsx"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk182279 = require("./182279.js");
+  Chunk98435 = require("./98435.js");
 let w = (e, t) => n => {
     n.stopPropagation(), u.default.selectVoiceChannel(e.channel_id, false), null == t || t(n)
   },
@@ -40,7 +40,7 @@ let w = (e, t) => n => {
     let r = p.Z.getChannel(e.channel_id);
     null != r && (n.stopPropagation(), (0, _.Cq)(r), null == t || t(n))
   },
-  L = (e, t) => {
+  x = (e, t) => {
     switch (null == e ? true : e.entity_type) {
       case N.WX.STAGE_INSTANCE:
         return D(e, t);
@@ -49,7 +49,7 @@ let w = (e, t) => n => {
     }
     return () => {}
   },
-  x = (e, t) => t && [N.WX.STAGE_INSTANCE, N.WX.VOICE].includes(null == e ? true : e.entity_type),
+  L = (e, t) => t && [N.WX.STAGE_INSTANCE, N.WX.VOICE].includes(null == e ? true : e.entity_type),
   M = Chunk647438.memo(function(e) {
     var t;
     let {
@@ -64,7 +64,7 @@ let w = (e, t) => n => {
     }, [n]), p = (0, A.u)(a, o), g = i.useCallback(e => {
       u && null != a && (e.stopPropagation(), (0, c.Bk)(a))
     }, [u, a]), E = i.useCallback(e => {
-      L(a)(e)
+      x(a)(e)
     }, [a]);
     if (null == _) return null;
     let y = null == p ? true : p.IconComponent,
@@ -105,7 +105,7 @@ let w = (e, t) => n => {
           })]
         }), (0, r.jsx)("div", {
           className: P.channelInfoContainer,
-          children: x(a, u) ? (0, r.jsx)(l.P3F, {
+          children: L(a, u) ? (0, r.jsx)(l.P3F, {
             className: P.channelLocationLink,
             onClick: E,
             children: O
@@ -183,10 +183,10 @@ let w = (e, t) => n => {
       }),
       children: (0, r.jsxs)(l.P3F, {
         onClick: b,
-        children: [null != n.image && (0, r.jsx)(S.Z, {
+        children: [null != n.image && (0, r.jsx)(T.Z, {
           source: (0, I.Z)(n),
           className: P.banner
-        }), (0, r.jsx)(T.ZP, {
+        }), (0, r.jsx)(S.ZP, {
           name: n.name,
           description: null != (t = n.description) ? t : true,
           descriptionClassName: P.eventDescription,

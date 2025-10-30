@@ -15,7 +15,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk585483 = require("./585483.js"),
   Chunk872801 = require("./872801.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk793906 = require("./793906.js");
+  Chunk305857 = require("./305857.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -97,7 +97,7 @@ function I(e, t, n, r) {
   }
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   return {
     top: e.top - n,
     left: e.left - t,
@@ -108,7 +108,7 @@ function S(e, t, n) {
   }
 }
 
-function T(e) {
+function S(e) {
   switch (e) {
     case "top":
       return "bottom";
@@ -275,7 +275,7 @@ class R extends(r = Chunk647438.Component) {
   calculatePositionStyle(e, t, n, r) {
     let {
       spacing: i = 0
-    } = this.props, a = C(this.props), o = n.getBoundingClientRect(), s = S(a, o.left, o.top);
+    } = this.props, a = C(this.props), o = n.getBoundingClientRect(), s = T(a, o.left, o.top);
     switch (e) {
       case "top":
         return this.getHorizontalAlignmentStyle(s, t, n, {
@@ -334,7 +334,7 @@ class R extends(r = Chunk647438.Component) {
       d = null,
       f = 0;
     if (exports && s < 0) {
-      let t = T(module),
+      let t = S(module),
         i = this.calculatePositionStyle(exports, require, r);
       d = Chunk951288.style, f = Chunk951288.nudge;
       let a = I(exports, Chunk585483, require, r);
@@ -346,7 +346,7 @@ class R extends(r = Chunk647438.Component) {
         let i, a = Chunk120356.position;
         if ((i = "top" === Chunk647438 || "bottom" === Chunk647438 ? "overlap_vertical" : "left" === Chunk647438 || "right" === Chunk647438 ? "overlap_horizontal" : Chunk647438) !== module && Chunk951288 !== exports) {
           let e = this.calculatePositionStyle(Chunk951288, require, r, Chunk647438),
-            t = I(T(Chunk647438), module.style, require, r);
+            t = I(S(Chunk647438), module.style, require, r);
           exports > Chunk512722 && (o = m({
             position: Chunk647438
           }, module), l = exports)
@@ -394,8 +394,8 @@ class R extends(r = Chunk647438.Component) {
     } = this.state;
     return (0, Chunk951288.jsx)("div", {
       className: s()({
-        [Chunk793906.clickTrapContainer]: true,
-        [Chunk793906.trapClicks]: Chunk120356
+        [Chunk305857.clickTrapContainer]: true,
+        [Chunk305857.trapClicks]: Chunk120356
       }),
       children: (0, Chunk951288.jsx)(Chunk793030.C1Q, {
         children: o => {

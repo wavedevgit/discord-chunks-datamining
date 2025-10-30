@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk787025 = require("./787025.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk295880 = require("./295880.js");
+  Chunk563630 = require("./563630.js");
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,9 +77,9 @@ function D(e, t) {
   }), e
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
-  var n, r, i = x(e, t);
+  var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -87,7 +87,7 @@ function L(e, t) {
   return i
 }
 
-function x(e, t) {
+function L(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -132,7 +132,7 @@ function j(e) {
   var {
     guild: t,
     application: n
-  } = e, a = L(e, ["guild", "application"]);
+  } = e, a = x(e, ["guild", "application"]);
   let {
     onClose: o
   } = a, s = i.useCallback(() => {
@@ -152,7 +152,7 @@ function j(e) {
         application_id: n.id
       })
     }))
-  }, [null == n ? true : n.id, o, l]), _ = (0, u.e7)([y.Z, E.Z], () => E.Z.getChannel(y.Z.getChannelId())), p = (0, u.e7)([b.Z], () => b.Z.can(A.Plq.SEND_MESSAGES, _)), v = null != t, S = null == t && p && (!d || null != l), N = [];
+  }, [null == n ? true : n.id, o, l]), _ = (0, u.e7)([y.Z, E.Z], () => E.Z.getChannel(y.Z.getChannelId())), p = (0, u.e7)([b.Z], () => b.Z.can(A.Plq.SEND_MESSAGES, _)), v = null != t, T = null == t && p && (!d || null != l), N = [];
   return (null != t || null != o) && (null != o && N.push({
     variant: "secondary",
     text: C.intl.string(C.t.cpT0Cq),
@@ -163,11 +163,11 @@ function j(e) {
       guildName: null == t ? true : t.name
     }),
     onClick: s
-  }), S && N.push({
+  }), T && N.push({
     variant: "primary",
     text: C.intl.string(C.t["0cCDKP"]),
     onClick: f
-  })), (0, r.jsx)(T.j, D(P({}, a), {
+  })), (0, r.jsx)(S.j, D(P({}, a), {
     actions: N,
     children: (0, r.jsx)(U, P({
       guild: t,
@@ -180,7 +180,7 @@ function U(e) {
   var {
     guild: t,
     application: n
-  } = e, a = L(e, ["guild", "application"]);
+  } = e, a = x(e, ["guild", "application"]);
   let o = C.intl.string(C.t.se5gLj);
   i.useEffect(() => {
     O.default.track(A.rMx.OAUTH2_AUTHORIZE_SUCCESS_VIEWED, {
@@ -207,7 +207,7 @@ function U(e) {
 function G(e) {
   var {
     application: t
-  } = e, n = L(e, ["application"]);
+  } = e, n = x(e, ["application"]);
   let {
     onClose: a
   } = n;
@@ -221,7 +221,7 @@ function G(e) {
       application_id: t.id
     })
   }, [a, t.id]);
-  return (0, r.jsx)(T.j, D(P({}, n), {
+  return (0, r.jsx)(S.j, D(P({}, n), {
     actions: [{
       variant: "primary",
       text: C.intl.string(C.t["31Bci5"]),
@@ -260,7 +260,7 @@ function G(e) {
 }
 
 function B(e) {
-  return (0, r.jsx)(T.j, D(P({}, e), {
+  return (0, r.jsx)(S.j, D(P({}, e), {
     title: C.intl.string(C.t.j2d6Km),
     subtitle: C.intl.string(C.t["/B7kXy"]),
     actions: [{
@@ -300,14 +300,14 @@ function V(e) {
   } = e;
   i.useEffect(() => {
     if (null == a || "" === a.search) return;
-    let e = null != document.referrer && "" !== document.referrer ? S.Z.toURLSafe(document.referrer) : null;
+    let e = null != document.referrer && "" !== document.referrer ? T.Z.toURLSafe(document.referrer) : null;
     (null == e || e.host !== window.location.host || e.pathname !== A.Z5c.OAUTH2_AUTHORIZE) && (0, m.uL)(A.Z5c.INDEX)
   }, [a]);
   let o = null != a ? (0, s.parse)(a.search) : {},
     l = null != (n = null != (t = o.error_description) ? t : o.error) ? n : C.intl.string(C.t.mqn873);
-  return (0, r.jsx)(T.G, {
+  return (0, r.jsx)(S.G, {
     removeChildWrapper: true,
-    children: (0, r.jsx)(T.j, {
+    children: (0, r.jsx)(S.j, {
       transitionState: c.Dvm.ENTERED,
       hideHeader: true,
       children: (0, r.jsx)(Z, {

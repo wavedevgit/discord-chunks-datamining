@@ -22,8 +22,8 @@ var f = 0,
   O = 19,
   v = 573,
   I = 15,
-  S = 16,
-  T = 7,
+  T = 16,
+  S = 7,
   A = 256,
   C = 16,
   N = 17,
@@ -31,13 +31,13 @@ var f = 0,
   P = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 0],
   w = [0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13],
   D = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7],
-  L = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15],
-  x = 512,
+  x = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15],
+  L = 512,
   M = Array(576);
 d(M);
 var k = Array(2 * y);
 d(k);
-var j = Array(x);
+var j = Array(L);
 d(j);
 var U = Array(m - h + 1);
 d(U);
@@ -62,7 +62,7 @@ function H(e, t) {
 }
 
 function Y(e, t, n) {
-  e.bi_valid > S - n ? (e.bi_buf |= t << e.bi_valid & 65535, H(e, e.bi_buf), e.bi_buf = t >> S - e.bi_valid, e.bi_valid += n - S) : (e.bi_buf |= t << e.bi_valid & 65535, e.bi_valid += n)
+  e.bi_valid > T - n ? (e.bi_buf |= t << e.bi_valid & 65535, H(e, e.bi_buf), e.bi_buf = t >> T - e.bi_valid, e.bi_valid += n - T) : (e.bi_buf |= t << e.bi_valid & 65535, e.bi_valid += n)
 }
 
 function W(e, t, n) {
@@ -124,7 +124,7 @@ function Q() {
   for (; module <= 279;) M[2 * module + 1] = 7, module++, l[7]++;
   for (; module <= 287;) M[2 * module + 1] = 8, module++, l[8]++;
   for (X(M, b + 1, l), e = 0; module < y; module++) k[2 * module + 1] = 5, k[2 * module] = K(module, 5);
-  r = new Z(M, P, E + 1, b, I), i = new Z(k, w, 0, y, I), a = new Z([], D, 0, O, T)
+  r = new Z(M, P, E + 1, b, I), i = new Z(k, w, 0, y, I), a = new Z([], D, 0, O, S)
 }
 
 function J(e) {
@@ -201,13 +201,13 @@ function eo(e, t, n) {
 
 function es(e) {
   var t;
-  for (ea(e, e.dyn_ltree, e.l_desc.max_code), ea(e, e.dyn_dtree, e.d_desc.max_code), ei(e, e.bl_desc), t = O - 1; t >= 3 && 0 === e.bl_tree[2 * L[t] + 1]; t--);
+  for (ea(e, e.dyn_ltree, e.l_desc.max_code), ea(e, e.dyn_dtree, e.d_desc.max_code), ei(e, e.bl_desc), t = O - 1; t >= 3 && 0 === e.bl_tree[2 * x[t] + 1]; t--);
   return e.opt_len += 3 * (t + 1) + 5 + 5 + 4, t
 }
 
 function el(e, t, n, r) {
   var i;
-  for (Y(e, t - 257, 5), Y(e, n - 1, 5), Y(e, r - 4, 4), i = 0; i < r; i++) Y(e, e.bl_tree[2 * L[i] + 1], 3);
+  for (Y(e, t - 257, 5), Y(e, n - 1, 5), Y(e, r - 4, 4), i = 0; i < r; i++) Y(e, e.bl_tree[2 * x[i] + 1], 3);
   eo(e, e.dyn_ltree, t - 1), eo(e, e.dyn_dtree, n - 1)
 }
 

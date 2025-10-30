@@ -32,8 +32,8 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let S = null,
-  T = new Map,
+let T = null,
+  S = new Map,
   A = new Map,
   C = 10,
   N = 3;
@@ -86,7 +86,7 @@ function D(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     searchContext: t,
     query: n,
@@ -105,11 +105,11 @@ function L(e) {
   }
 }
 
-function x(e) {
+function L(e) {
   let {
     id: t
   } = e, n = A.get(t);
-  null != n && (n.context.destroy(), n.results = [], A.delete(t)), T.delete(t), S = null
+  null != n && (n.context.destroy(), n.results = [], A.delete(t)), S.delete(t), T = null
 }
 
 function M(e) {
@@ -124,7 +124,7 @@ function k(e) {
 function j(e, t) {
   let {
     results: n
-  } = t, r = (0, E.Tm)(e), i = A.get(r), a = T.get(r);
+  } = t, r = (0, E.Tm)(e), i = A.get(r), a = S.get(r);
   if (null == i || null == a || !k(a.mode)) return;
   i.results = U(n, a.mode.type === O.Sap.FILTER ? C : N);
   let {
@@ -132,7 +132,7 @@ function j(e, t) {
     mode: s,
     tokens: l,
     cursorScope: c
-  } = a, u = K(e, s, l), d = L({
+  } = a, u = K(e, s, l), d = x({
     searchContext: e,
     query: o,
     mode: s,
@@ -140,7 +140,7 @@ function j(e, t) {
     cursorScope: c,
     autocompletes: u
   });
-  T.set(r, d), en.emitChange()
+  S.set(r, d), en.emitChange()
 }
 
 function U(e) {
@@ -160,7 +160,7 @@ function U(e) {
 }
 
 function G(e) {
-  a()(S, e) || (S = e, (0, E.WU)())
+  a()(T, e) || (T = e, (0, E.WU)())
 }
 
 function B(e) {
@@ -180,7 +180,7 @@ function Z(e) {
   let a = (0, E.cl)(r),
     o = (0, E.qc)(i, r),
     s = (0, E.Tm)(n),
-    l = T.get(s),
+    l = S.get(s),
     c = true;
   if (null != l && a === l.query && (null == l.mode || l.mode.filter === o.filter)) t = l.autocompletes, c = false;
   else if (k(o)) {
@@ -202,7 +202,7 @@ function Z(e) {
     let e = A.get(s);
     null != e && (e.context.clearQuery(), e.results = []), t = K(n, o, r)
   }
-  let f = L({
+  let f = x({
     searchContext: n,
     query: a,
     mode: o,
@@ -210,7 +210,7 @@ function Z(e) {
     cursorScope: i,
     autocompletes: t
   });
-  return T.set(s, f), c
+  return S.set(s, f), c
 }
 
 function F(e) {
@@ -365,7 +365,7 @@ function z() {
 }
 
 function q(e) {
-  let t = T.get(e);
+  let t = S.get(e);
   if (null == t) return;
   let {
     searchContext: n,
@@ -378,7 +378,7 @@ function q(e) {
   s.forEach(e => {
     e.group !== O.rtL.HISTORY && l.push(e)
   });
-  let c = L({
+  let c = x({
     searchContext: n,
     query: r,
     mode: i,
@@ -386,7 +386,7 @@ function q(e) {
     cursorScope: o,
     autocompletes: l
   });
-  T.set(e, c)
+  S.set(e, c)
 }
 
 function X(e) {
@@ -397,19 +397,19 @@ function X(e) {
 }
 
 function Q() {
-  for (let e of T.keys()) q(module)
+  for (let e of S.keys()) q(module)
 }
 
 function J(e) {
   let t = (0, E.Tm)(e),
-    n = T.get(t);
+    n = S.get(t);
   if (null == n) returnfalse;
   let {
     query: r,
     mode: i,
     tokens: a,
     cursorScope: o
-  } = n, s = L({
+  } = n, s = x({
     searchContext: e,
     query: r,
     mode: i,
@@ -417,15 +417,15 @@ function J(e) {
     cursorScope: o,
     autocompletes: K(e, i, a)
   });
-  T.set(t, s)
+  S.set(t, s)
 }
 
 function $() {
-  return null != S && J(S)
+  return null != T && J(T)
 }
 
 function ee() {
-  return null != S && J(S)
+  return null != T && J(T)
 }
 class et extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -434,17 +434,17 @@ class et extends(r = Chunk442837.ZP.Store) {
   getState(e) {
     var t;
     let n = (0, E.Tm)(e);
-    return null != (t = T.get(n)) ? t : D(e)
+    return null != (t = S.get(n)) ? t : D(e)
   }
   getSelectedSearchContext() {
-    return S
+    return T
   }
 }
 I(et, "displayName", "SearchAutocompleteStore");
 let en = new et(Chunk570140.Z, {
     SEARCH_AUTOCOMPLETE_INITIALIZE: B,
     SEARCH_AUTOCOMPLETE_QUERY_UPDATE: Z,
-    SEARCH_EDITOR_STATE_CLEAR: x,
+    SEARCH_EDITOR_STATE_CLEAR: L,
     CHANNEL_CREATE: z,
     CHANNEL_DELETE: z,
     STREAMER_MODE_UPDATE: $,

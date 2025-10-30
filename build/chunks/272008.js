@@ -16,7 +16,7 @@ require.d(exports, {
   gU: () => ee,
   gl: () => Z,
   is: () => D,
-  it: () => L,
+  it: () => x,
   lL: () => $,
   lx: () => X,
   m0: () => M,
@@ -25,7 +25,7 @@ require.d(exports, {
   qm: () => q,
   w: () => Q,
   wF: () => j,
-  xw: () => x
+  xw: () => L
 }), require("./415506.js");
 var Chunk990547 = require("./990547.js"),
   Chunk544891 = require("./544891.js"),
@@ -94,7 +94,7 @@ async function w(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   try {
     let n = (await i.tn.post({
-      url: S.ANM.QUEST_ON_CONSOLE_START(e),
+      url: T.ANM.QUEST_ON_CONSOLE_START(e),
       query: t ? {
         preview: t
       } : true,
@@ -114,12 +114,12 @@ async function w(e) {
     if (429 === e.status) return {
       errorHints: [{
         type: b.HW.RATE_LIMITED,
-        message: T.intl.string(T.t.Whhv4w),
+        message: S.intl.string(S.t.Whhv4w),
         connected_account_id: "",
         connected_account_type: ""
       }]
     };
-    let t = null != (n = e.getAnyErrorMessage()) ? n : T.intl.string(T.t.xSCvBf);
+    let t = null != (n = e.getAnyErrorMessage()) ? n : S.intl.string(S.t.xSCvBf);
     return {
       errorHints: [{
         type: b.HW.GENERIC,
@@ -135,17 +135,17 @@ async function w(e) {
 }
 async function D(e) {
   await i.tn.post({
-    url: S.ANM.QUEST_ON_CONSOLE_STOP(e),
+    url: T.ANM.QUEST_ON_CONSOLE_STOP(e),
     rejectWithError: false
   })
 }
-async function L() {
+async function x() {
   await Chunk544891.tn.del({
     url: Chunk981631.ANM.QUESTS_RESET_RECENT_QUEST_COMPLETIONS,
     rejectWithError: false
   })
 }
-async function x() {
+async function L() {
   if (!Chunk569984.Z.isFetchingCurrentQuests) {
     Chunk570140.Z.dispatch({
       type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
@@ -190,7 +190,7 @@ async function M(e) {
   try {
     var l;
     let e = await _.Z.post({
-      url: S.ANM.QUESTS_HEARTBEAT(t),
+      url: T.ANM.QUESTS_HEARTBEAT(t),
       body: {
         stream_key: n,
         application_id: i,
@@ -249,7 +249,7 @@ async function U(e, t) {
   try {
     let n = (0, g.jY)(t.questContent),
       r = await i.tn.post({
-        url: S.ANM.QUESTS_ENROLL(e),
+        url: T.ANM.QUESTS_ENROLL(e),
         body: R(C({
           location: t.questContent
         }, (0, g.qe)(e, t.questContent)), {
@@ -283,7 +283,7 @@ async function G(e, t, n) {
     try {
       let r = (0, g.jY)(n),
         o = await i.tn.post({
-          url: S.ANM.QUESTS_CLAIM_REWARD(e),
+          url: T.ANM.QUESTS_CLAIM_REWARD(e),
           body: R(C({
             platform: t,
             location: n
@@ -319,7 +319,7 @@ async function B(e) {
     });
     try {
       let t = await i.tn.get({
-        url: S.ANM.QUESTS_REWARD_CODE(e),
+        url: T.ANM.QUESTS_REWARD_CODE(e),
         rejectWithError: false
       });
       a.Z.dispatch({
@@ -347,7 +347,7 @@ async function Z(e, t) {
     });
     try {
       let n = await i.tn.post({
-        url: S.ANM.QUESTS_DISMISS_CONTENT(e, t),
+        url: T.ANM.QUESTS_DISMISS_CONTENT(e, t),
         body: C({}, (0, g.qe)(e, t)),
         rejectWithError: false
       });
@@ -375,7 +375,7 @@ async function V(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1;
   try {
     let n = await i.tn.post({
-      url: S.ANM.QUESTS_PREVIEW_COMPLETE(e),
+      url: T.ANM.QUESTS_PREVIEW_COMPLETE(e),
       body: {
         percent: t
       },
@@ -396,7 +396,7 @@ async function V(e) {
 async function H(e) {
   try {
     let t = await i.tn.del({
-      url: S.ANM.QUESTS_PREVIEW_STATUS(e),
+      url: T.ANM.QUESTS_PREVIEW_STATUS(e),
       body: {},
       rejectWithError: false
     });
@@ -418,7 +418,7 @@ async function Y(e) {
       type: "QUESTS_DOCK_RESET_SOFT_DISMISSAL"
     });
     let t = await i.tn.del({
-      url: S.ANM.QUESTS_PREVIEW_DISMISSIBILITY(e),
+      url: T.ANM.QUESTS_PREVIEW_DISMISSIBILITY(e),
       body: {},
       rejectWithError: false
     });
@@ -497,7 +497,7 @@ async function Q(e, t) {
     let o = await (0, l.Gg)(),
       E = await (0, s.Gy)(),
       y = (await i.tn.get({
-        url: S.ANM.QUEST_FETCH_QUEST_TO_DELIVER(e, null == o ? true : o.uuid, E.uuid),
+        url: T.ANM.QUEST_FETCH_QUEST_TO_DELIVER(e, null == o ? true : o.uuid, E.uuid),
         rejectWithError: false
       })).body,
       O = y.quest,
@@ -523,7 +523,7 @@ async function Q(e, t) {
         wasSuccessful: true,
         adRequestId: String(y.request_id)
       }), null == v) return;
-    e === b.Ok.DESKTOP_ACCOUNT_PANEL_AREA && h.Z.startTracking(v.id), f.default.track(S.rMx.QUEST_DECISION_RECEIVED, R(C({}, (0, u.Z)()), {
+    e === b.Ok.DESKTOP_ACCOUNT_PANEL_AREA && h.Z.startTracking(v.id), f.default.track(T.rMx.QUEST_DECISION_RECEIVED, R(C({}, (0, u.Z)()), {
       quest_id: v.id,
       caller_source: t,
       ad_request_id: String(y.request_id)
@@ -531,7 +531,7 @@ async function Q(e, t) {
   } catch (n) {
     m.Z.recordQuestRequestApiResponse("/quests/decision", {
       wasSuccessful: false
-    }), f.default.track(S.rMx.QUEST_DECISION_ROUNDTRIP_ERROR, R(C({}, (0, u.Z)()), {
+    }), f.default.track(T.rMx.QUEST_DECISION_ROUNDTRIP_ERROR, R(C({}, (0, u.Z)()), {
       reason: null != (E = null == n ? true : n.message) ? E : null,
       api_error: new o.Z(n).getAnyErrorMessage(),
       caller_source: t
@@ -545,7 +545,7 @@ async function Q(e, t) {
 async function J(e, t) {
   var n;
   await _.Z.post({
-    url: S.ANM.QUESTS_VIDEO_PROGRESS(e),
+    url: T.ANM.QUESTS_VIDEO_PROGRESS(e),
     body: {
       timestamp: t
     },
@@ -590,7 +590,7 @@ async function $(e, t) {
 }
 async function ee(e) {
   let t = await i.tn.get({
-    url: S.ANM.QUEST(e),
+    url: T.ANM.QUEST(e),
     rejectWithError: false
   });
   return (0, g.q6)(t.body)
@@ -603,7 +603,7 @@ async function et(e) {
     });
     try {
       let t = await i.tn.get({
-        url: S.ANM.QUEST_PREVIEW(e),
+        url: T.ANM.QUEST_PREVIEW(e),
         rejectWithError: false
       });
       a.Z.dispatch({

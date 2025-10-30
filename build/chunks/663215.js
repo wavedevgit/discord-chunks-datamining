@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   FS: () => A,
-  ZP: () => T
+  ZP: () => S
 }), require("./388685.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -106,7 +106,7 @@ function I(e, t, n) {
   })
 }
 
-function S(e, t) {
+function T(e, t) {
   var n;
   let r = null != (n = t.get(E.X8)) ? n : E.Hy;
   e.push({
@@ -118,10 +118,10 @@ function S(e, t) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     filterOutEmptyCurrentGuild: t = false
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = arguments.length > 2 && true !== arguments[2] && arguments[2], o = (0, i.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.isPremium(o, b.PremiumTypes.TIER_2), [E, y, T] = (0, i.Wu)([p.Z], () => [p.Z.getSounds(), p.Z.getFavorites(), p.Z.isFetching()]), A = (0, g.t)(), N = (0, m.h)(e, false), R = (0, i.Wu)([s.Z], () => {
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = arguments.length > 2 && true !== arguments[2] && arguments[2], o = (0, i.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.isPremium(o, b.PremiumTypes.TIER_2), [E, y, S] = (0, i.Wu)([p.Z], () => [p.Z.getSounds(), p.Z.getFavorites(), p.Z.isFetching()]), A = (0, g.t)(), N = (0, m.h)(e, false), R = (0, i.Wu)([s.Z], () => {
     let e = [];
     return N.forEach(t => {
       let n = s.Z.getGuild(t);
@@ -133,8 +133,8 @@ function T(e) {
     } = (0, a.Gw)(w);
     return e
   }, [w]), {
-    canSeeRecentlyHeard: L,
-    canSeeFrequentlyPlayed: x
+    canSeeRecentlyHeard: x,
+    canSeeFrequentlyPlayed: L
   } = (0, f.k)({
     location: "soundboard-useSoundGrid",
     autoTrackExposure: true
@@ -143,10 +143,10 @@ function T(e) {
     let e = 0,
       r = 0,
       i = [];
-    return n ? (S(i, E), {
+    return n ? (T(i, E), {
       categories: i,
       allSounds: E,
-      isFetching: T,
+      isFetching: S,
       soundCounts: {
         favoriteSoundCount: 0,
         unlockedCustomSoundCount: 0,
@@ -159,13 +159,13 @@ function T(e) {
       potentialSoundIdsForSection: Array.from(y),
       sectionType: h.bg.FAVORITES,
       sortSoundsFn: g.l
-    }), L && O({
+    }), x && O({
       sections: i,
       guildIds: N,
       allSounds: E,
       potentialSoundIdsForSection: k,
       sectionType: h.bg.RECENTLY_HEARD
-    }), x && O({
+    }), L && O({
       sections: i,
       guildIds: N,
       allSounds: E,
@@ -176,26 +176,26 @@ function T(e) {
       allSounds: E,
       filterOutEmptyCurrentGuild: t,
       sortSoundsFn: A
-    }), P || S(i, E), v({
+    }), P || T(i, E), v({
       sections: i,
       guilds: R,
       currentGuildId: null == w ? true : w.id,
       allSounds: E,
       hasNitro: u,
       sortSoundsFn: A
-    }), P && S(i, E), i.forEach(t => {
+    }), P && T(i, E), i.forEach(t => {
       t.categoryInfo.type === h.bg.GUILD && (t.categoryInfo.isNitroLocked ? r += t.items.length : e += t.items.length)
     }), {
       categories: i,
       allSounds: E,
-      isFetching: T,
+      isFetching: S,
       soundCounts: {
         favoriteSoundCount: y.size,
         unlockedCustomSoundCount: e,
         lockedCustomSoundCount: r
       }
     })
-  }, [N, E, y, k, M, x, L, w, D, t, P, R, n, T, u, A])
+  }, [N, E, y, k, M, L, x, w, D, t, P, R, n, S, u, A])
 }
 
 function A(e, t, n) {

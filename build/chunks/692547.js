@@ -2,7 +2,7 @@
 /** chunk id: 692547, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk688619 = require("./688619.js"),
   i = require.n(Chunk688619),
@@ -32,19 +32,19 @@ let {
 } = Chunk915840.V, {
   Shadows: I
 } = Chunk868858.V, {
-  Spacing: S
+  Spacing: T
 } = Chunk897710.V, {
-  Modules: T
+  Modules: S
 } = Chunk387117.V, {
   Layout: A,
   Space: C
 } = Chunk196548.VV, N = l()(y, e => i()(e)), R = {
   themes: E,
-  modules: T,
+  modules: S,
   colors: l()(b, (e, t) => {
     let n = t;
     return {
-      css: L(n),
+      css: x(n),
       resolve(t) {
         var r, i, a, o, s, l, c;
         let u = e[t.theme],
@@ -71,7 +71,7 @@ let {
     let n = t,
       r = N[n];
     return {
-      css: L(n),
+      css: x(n),
       resolve(e) {
         var t;
         return P(r, null != (t = null == e ? true : e.saturation) ? t : 1)
@@ -79,7 +79,7 @@ let {
     }
   }),
   shadows: l()(I, (e, t) => ({
-    css: L(t),
+    css: x(t),
     resolve: t => ({
       boxShadow: e[t.theme].boxShadow,
       filter: e[t.theme].filter,
@@ -87,7 +87,7 @@ let {
     })
   })),
   radii: Chunk949180.w,
-  spacing: l()(S, e => "".concat(e, "px")),
+  spacing: l()(T, e => "".concat(e, "px")),
   layout: l()(A, e => "number" == typeof e ? "".concat(e, "px") : e),
   space: l()(C, e => ({
     css: e.css,
@@ -138,9 +138,9 @@ function D(e) {
   return e.toLowerCase().replace(/_/g, "-")
 }
 
-function L(e, t) {
+function x(e, t) {
   let n = null != t ? D(t) : null,
     r = D(e);
   return "var(--".concat([n, r].filter(Boolean).join("-"), ")")
 }
-let x = R
+let L = R

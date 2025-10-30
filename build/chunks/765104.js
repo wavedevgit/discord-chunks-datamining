@@ -65,8 +65,8 @@ function R(e, t) {
 let P = {},
   w = {},
   D = {},
-  L = [],
-  x = {},
+  x = [],
+  L = {},
   M = {
     status: "ok",
     lastRequest: null,
@@ -128,16 +128,16 @@ class Z extends(s = Chunk442837.ZP.PersistedStore) {
     if (null != t) {
       let e = null != (n = null == i ? true : i.summaryIdLastRequestedAt) ? n : 0,
         r = Date.now() - e;
-      return t !== (null == i ? true : i.summaryId) || r > T.cS
+      return t !== (null == i ? true : i.summaryId) || r > S.cS
     }
     let o = null != (r = null == i ? true : i.lastReceivedAt) ? r : 0;
     return !(null == i ? true : i.fetching) && 0 === o
   }
   channelAffinities() {
-    return L
+    return x
   }
   channelAffinitiesById() {
-    return x
+    return L
   }
   channelAffinitiesStatus() {
     return M
@@ -152,7 +152,7 @@ class Z extends(s = Chunk442837.ZP.PersistedStore) {
       withUnreads: r,
       numChannels: i = G
     } = e, a = [];
-    return t && (a = a.concat(k)), n && (a = a.concat(L.map(e => e.channel_id))), r && (a = a.filter(e => {
+    return t && (a = a.concat(k)), n && (a = a.concat(x.map(e => e.channel_id))), r && (a = a.filter(e => {
       let t = m.Z.getChannel(e);
       return null != t && !y.ZP.isChannelMuted(t.guild_id, e) && E.ZP.hasUnread(e)
     })), (a = a.filter(e => {
@@ -190,7 +190,7 @@ let V = new Z(Chunk570140.Z, {
       receivedAt: o
     } = e;
     if (null != r && Object.keys(r).length > 0) {
-      let e = (0, S.b)(r, i),
+      let e = (0, T.b)(r, i),
         n = [...null != (t = P[i]) ? t : []],
         a = n.findIndex(t => t.id === (null == e ? true : e.id));
       a > false ? n[a] = e : n.push(e), P[i] = n
@@ -224,7 +224,7 @@ let V = new Z(Chunk570140.Z, {
       channelId: n,
       error: r,
       receivedAt: i
-    } = e, a = t.filter(e => Object.keys(e).length > 0).map(e => (0, S.b)(e, n));
+    } = e, a = t.filter(e => Object.keys(e).length > 0).map(e => (0, T.b)(e, n));
     if (null != o && o.channelId === n && !a.some(e => e.id === (null == o ? true : o.summaryId))) {
       var s;
       let e = (null != (s = P[n]) ? s : []).find(e => e.id === (null == o ? true : o.summaryId));
@@ -295,13 +295,13 @@ let V = new Z(Chunk570140.Z, {
       error: r
     } = e;
     if (null != r) {
-      L = [], x = {}, M = R(C({}, M), {
+      x = [], L = {}, M = R(C({}, M), {
         status: "error",
         lastResponse: Date.now()
       });
       return
     }
-    L = null != n ? n : [], x = null != (t = null == n ? true : n.reduce((e, t) => (e[t.channel_id] = t.affinity, e), {})) ? t : {}, M = R(C({}, M), {
+    x = null != n ? n : [], L = null != (t = null == n ? true : n.reduce((e, t) => (e[t.channel_id] = t.affinity, e), {})) ? t : {}, M = R(C({}, M), {
       status: "ok",
       lastResponse: Date.now()
     })
@@ -330,7 +330,7 @@ let V = new Z(Chunk570140.Z, {
         channelIds: i
       }
     } = e, a = c().toPairs(t).reduce((e, t) => {
-      let [n, r] = t, i = c().chain(r.map(e => (0, S.b)(e, n))).sortBy(e => I.default.extractTimestamp(e.startId)).takeRight(U).reverse().filter(e => Object.keys(e).length > 0).value();
+      let [n, r] = t, i = c().chain(r.map(e => (0, T.b)(e, n))).sortBy(e => I.default.extractTimestamp(e.startId)).takeRight(U).reverse().filter(e => Object.keys(e).length > 0).value();
       return e[n] = i, e
     }, {}), o = i.reduce((e, t) => {
       var i;
@@ -353,7 +353,7 @@ let V = new Z(Chunk570140.Z, {
       channel_id: i,
       summaries: a,
       guild_id: o
-    } = e, s = Date.now(), l = c().chain(a).sortBy(e => I.default.extractTimestamp(e.start_id)).filter(e => Object.keys(e).length > 0).map(e => (0, S.b)(e, i)).reverse().value(), u = null != (n = P[i]) ? n : [], d = c().chain(l).concat(u).sortBy(e => I.default.extractTimestamp(e.startId)).takeRight(U).uniqBy("id").reverse().value();
+    } = e, s = Date.now(), l = c().chain(a).sortBy(e => I.default.extractTimestamp(e.start_id)).filter(e => Object.keys(e).length > 0).map(e => (0, T.b)(e, i)).reverse().value(), u = null != (n = P[i]) ? n : [], d = c().chain(l).concat(u).sortBy(e => I.default.extractTimestamp(e.startId)).takeRight(U).uniqBy("id").reverse().value();
     P[i] = d, w[i] = R(C({}, w[i]), {
       error: true,
       fetching: null != (r = null == (t = w[i]) ? true : t.fetching) && r,

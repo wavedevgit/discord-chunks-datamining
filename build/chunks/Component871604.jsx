@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -71,7 +71,7 @@ function R(e) {
   var {
     user: t,
     closePopout: n
-  } = e, T = C(e, ["user", "closePopout"]);
+  } = e, S = C(e, ["user", "closePopout"]);
   let N = i.useRef(null),
     R = (0, a.e7)([y.Z], () => {
       var e;
@@ -80,7 +80,7 @@ function R(e) {
     P = (0, a.e7)([h.Z, p.Z], () => p.Z.getChannel(h.Z.getChannelId())),
     w = (0, s.Z)(P),
     D = t.id,
-    L = i.useCallback(() => {
+    x = i.useCallback(() => {
       if (null != R)
         if (w) {
           let e = h.Z.getCurrentlySelectedChannelId(),
@@ -95,7 +95,7 @@ function R(e) {
           applicationId: R.id
         }, R))
     }, [R, w, D, null == P ? true : P.guild_id, n]),
-    x = w ? S.intl.string(S.t["Cia+A8"]) : S.intl.string(S.t.NgXl3C);
+    L = w ? T.intl.string(T.t["Cia+A8"]) : T.intl.string(T.t.NgXl3C);
   if (null == R || !(0, d.Eb)(R)) return null;
   let {
     customInstallUrl: M
@@ -109,12 +109,12 @@ function R(e) {
       return (0, r.jsx)(o.v2r, {
         navId: "user-bot-profile-add-app",
         onClose: t,
-        "aria-label": S.intl.string(S.t.dbkxVm),
+        "aria-label": T.intl.string(T.t.dbkxVm),
         onSelect: true,
         children: (0, r.jsx)(o.kSQ, {
           children: (0, r.jsx)(o.sNh, {
             id: "copy",
-            label: S.intl.string(S.t.XWDihq),
+            label: T.intl.string(T.t.XWDihq),
             action: () => (0, g.JG)((0, u.J)(R))
           })
         })
@@ -127,17 +127,17 @@ function R(e) {
       return (0, r.jsx)(v.O1, A({
         buttonRef: N,
         action: "PRESS_ADD_APP",
-        text: x,
+        text: L,
         icon: j,
         onContextMenu: t,
-        onClick: L
-      }, n, T))
+        onClick: x
+      }, n, S))
     }
   }) : (0, r.jsx)(v.O1, A({
     action: "PRESS_ADD_APP",
-    text: x,
+    text: L,
     icon: j,
-    onClick: L,
+    onClick: x,
     variant: "primary"
-  }, T))
+  }, S))
 }

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk914933 = require("./914933.js");
+  Chunk554165 = require("./554165.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,7 +66,7 @@ function v(e) {
     theme: a,
     content: E = m.intl.string(m.t["6OSasb"]),
     className: y
-  } = e, v = (0, s.e7)([_.default], () => _.default.getCurrentUser()), I = p.ZP.useName(t, null, v), S = (0, c.Kz)(n), T = i.useMemo(() => (0, u.e5)(O(b({}, (0, d.ZP)({
+  } = e, v = (0, s.e7)([_.default], () => _.default.getCurrentUser()), I = p.ZP.useName(t, null, v), T = (0, c.Kz)(n), S = i.useMemo(() => (0, u.e5)(O(b({}, (0, d.ZP)({
     channelId: "0",
     content: E,
     tts: true,
@@ -89,8 +89,8 @@ function v(e) {
       children: (0, r.jsx)(f.Z, {
         hideTimestamp: true,
         author: A,
-        roleIcon: S,
-        message: T,
+        roleIcon: T,
+        message: S,
         isGroupStart: true,
         disableInteraction: true
       })

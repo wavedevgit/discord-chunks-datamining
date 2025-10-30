@@ -2,7 +2,7 @@
 /** chunk id: 675297, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => S
+  H: () => T
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -47,23 +47,23 @@ function v(e) {
 }
 let I = 600;
 
-function S(e) {
+function T(e) {
   let {
     guildProductListing: t,
     guildId: n,
     location: O,
-    shouldShowFullDescriptionButton: S = true,
-    hideRoleTag: T = false,
+    shouldShowFullDescriptionButton: T = true,
+    hideRoleTag: S = false,
     lineClamp: A = 1,
     cardWidth: C,
     cardHeight: N,
     thumbnailHeight: R,
     descriptionTextVariant: P = "text-sm/normal",
     showOpaqueBackground: w = false
-  } = e, D = (0, i.e7)([u.Z], () => u.Z.getGuild(n), [n]), L = (0, i.e7)([c.Z], () => {
+  } = e, D = (0, i.e7)([u.Z], () => u.Z.getGuild(n), [n]), x = (0, i.e7)([c.Z], () => {
     var e;
     return c.Z.getRole(n, null != (e = null == t ? true : t.role_id) ? e : y.lds)
-  }), x = (0, o.U)(t, I), M = (0, m.C)(t), k = (0, f.SO)(D), {
+  }), L = (0, o.U)(t, I), M = (0, m.C)(t), k = (0, f.SO)(D), {
     shouldHideGuildPurchaseEntryPoints: j
   } = (0, l.uP)(n), U = (0, m.k)(t), G = (0, E.Z)({
     guildId: n,
@@ -104,19 +104,19 @@ function S(e) {
       onTestDownload: () => {}
     });
   return (0, r.jsx)(h.Z, {
-    imageUrl: x,
+    imageUrl: L,
     name: t.name,
     description: t.description,
     formattedPrice: U,
-    role: L,
+    role: x,
     ctaComponent: (0, r.jsx)(a.zxk, v({}, G)),
     productType: M,
-    shouldShowFullDescriptionButton: S,
+    shouldShowFullDescriptionButton: T,
     onShowFullDescription: B,
     onTapCard: B,
     actionMenu: H,
     showOpaqueBackground: w,
-    hideRoleTag: T,
+    hideRoleTag: S,
     lineClamp: A,
     cardWidth: C,
     cardHeight: N,

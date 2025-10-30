@@ -115,14 +115,14 @@ function v(e, t) {
 }
 
 function I(e) {
-  S(e), e.p.forEach(A), e.p = null
-}
-
-function S(e) {
-  e === G && (G = e.l)
+  T(e), e.p.forEach(A), e.p = null
 }
 
 function T(e) {
+  e === G && (G = e.l)
+}
+
+function S(e) {
   return G = {
     p: [],
     l: G,
@@ -194,11 +194,11 @@ function D(e, t) {
     }
 }
 
-function L(e) {
-  e.P || (e.P = true, e.l && L(e.l))
+function x(e) {
+  e.P || (e.P = true, e.l && x(e.l))
 }
 
-function x(e) {
+function L(e) {
   e.o || (e.o = h(e.t))
 }
 
@@ -288,7 +288,7 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
         return i ? "value" in i ? i.value : null == (r = i.get) ? true : r.call(e.k) : true
       }(e, n, t);
       var r = n[t];
-      return e.I || !a(r) ? r : r === w(e.t, t) ? (x(e), e.o[t] = M(e.A.h, r, e)) : r
+      return e.I || !a(r) ? r : r === w(e.t, t) ? (L(e), e.o[t] = M(e.A.h, r, e)) : r
     },
     has: function(e, t) {
       return t in p(e)
@@ -304,12 +304,12 @@ var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
           a = null == i ? true : i[W];
         if (a && a.t === n) return e.o[t] = n, e.R[t] = false, true;
         if (d(n, i) && (true !== n || l(e.t, t))) returntrue;
-        x(e), L(e)
+        L(e), x(e)
       }
       return e.o[t] === n && (true !== n || t in e.o) || Number.isNaN(n) && Number.isNaN(e.o[t]) || (e.o[t] = n, e.R[t] = true), true
     },
     deleteProperty: function(e, t) {
-      return true !== w(e.t, t) || t in e.t ? (e.R[t] = false, x(e), L(e)) : delete e.R[t], e.o && delete e.o[t], true
+      return true !== w(e.t, t) || t in e.t ? (e.R[t] = false, L(e), x(e)) : delete e.R[t], e.o && delete e.o[t], true
     },
     getOwnPropertyDescriptor: function(e, t) {
       var n = p(e),
@@ -360,13 +360,13 @@ var ee = new(function() {
           }
         }
         if ("function" != typeof n && r(6), true !== i && "function" != typeof i && r(7), a(e)) {
-          var c = T(t),
+          var c = S(t),
             u = M(t, e, true),
             d = true;
           try {
             o = n(u), d = false
           } finally {
-            d ? I(c) : S(c)
+            d ? I(c) : T(c)
           }
           return "undefined" != typeof Promise && o instanceof Promise ? o.then(function(e) {
             return v(c, i), C(e, c)
@@ -401,9 +401,9 @@ var ee = new(function() {
     var t = module.prototype;
     return exports.createDraft = function(e) {
       a(e) || r(8), i(e) && (e = k(e));
-      var t = T(this),
+      var t = S(this),
         n = M(this, e, true);
-      return n[W].C = true, S(t), n
+      return n[W].C = true, T(t), n
     }, exports.finishDraft = function(e, t) {
       var n = (e && e[W]).A;
       return v(n, t), C(true, n)

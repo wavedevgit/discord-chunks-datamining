@@ -6,8 +6,8 @@ require.d(exports, {
   Y0: () => P,
   YA: () => k,
   fM: () => R,
-  hz: () => L,
-  mz: () => x,
+  hz: () => x,
+  mz: () => L,
   ol: () => M,
   xB: () => w
 });
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk602091 = require("./602091.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk818033 = require("./818033.js");
+  Chunk822054 = require("./822054.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,13 +63,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -90,9 +90,9 @@ var C = function(e) {
   return e.SMALL = "small", e.MEDIUM = "medium", e.LARGE = "large", e.DYNAMIC = "dynamic", e
 }({});
 let N = Object.freeze({
-  small: Chunk818033.small,
-  medium: Chunk818033.medium,
-  large: Chunk818033.large,
+  small: Chunk822054.small,
+  medium: Chunk822054.medium,
+  large: Chunk822054.large,
   dynamic: null
 });
 var R = function(e) {
@@ -113,7 +113,7 @@ function P(e) {
       animation: A = "default",
       parentComponent: C
     } = e,
-    R = T(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]);
+    R = S(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]);
   let P = n === g.Dv.ENTERING || n === g.Dv.ENTERED;
   i.useContext(h.Z)({
     type: l.ImpressionTypes.PAGE,
@@ -133,28 +133,28 @@ function P(e) {
       clamp: true
     },
     onRest: O
-  }, "animate-always"), L = i.useRef(null), x = null != R["aria-label"], M = null != R["aria-labelledby"], k = i.useId(), j = null != (t = R["aria-labelledby"]) ? t : k, U = i.useMemo(() => ({
+  }, "animate-always"), x = i.useRef(null), L = null != R["aria-label"], M = null != R["aria-labelledby"], k = i.useId(), j = null != (t = R["aria-labelledby"]) ? t : k, U = i.useMemo(() => ({
     headerId: j,
     headerIdIsManaged: M
   }), [j, M]);
   return (0, r.jsx)(g.zM.Provider, {
     value: U,
-    children: (0, r.jsx)(_.V, S(v({
+    children: (0, r.jsx)(_.V, T(v({
       className: y.focusLock,
       role: f,
       returnRef: I,
       impressionType: l.ImpressionTypes.MODAL,
-      "aria-labelledby": x ? true : U.headerId
+      "aria-labelledby": L ? true : U.headerId
     }, R), {
       children: (0, r.jsx)(s.animated.div, {
         className: o()(p, y.root, N[u], {
           [y.fullscreenOnMobile]: m,
           [y.rootWithShadow]: !b
         }),
-        ref: L,
+        ref: x,
         style: D,
         children: (0, r.jsx)(d.JcV, {
-          containerRef: L,
+          containerRef: x,
           children: a
         })
       })
@@ -194,14 +194,14 @@ function D(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     className: t,
     children: n,
     scrollerRef: i,
     scrollbarType: a
-  } = e, s = T(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = D(a);
-  return (0, r.jsx)(l, S(v({
+  } = e, s = S(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = D(a);
+  return (0, r.jsx)(l, T(v({
     "data-migration-pending": true,
     className: o()(y.content, t),
     ref: i
@@ -212,7 +212,7 @@ function L(e) {
   }))
 }
 
-function x(e) {
+function L(e) {
   var t, n, i, a, s;
   return (0, r.jsx)(m.Z, {
     grow: 0,
@@ -257,7 +257,7 @@ function k(e) {
   var {
     className: t,
     scrollerRef: n
-  } = e, i = T(e, ["className", "scrollerRef"]);
+  } = e, i = S(e, ["className", "scrollerRef"]);
   return (0, r.jsx)(d.Tvr, v({
     className: t,
     ref: n

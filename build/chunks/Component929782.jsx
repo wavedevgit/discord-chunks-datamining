@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   enable: () => C,
-  isNotSupported: () => T,
+  isNotSupported: () => S,
   trackToggleSelfDeaf: () => R,
   trackToggleSelfMute: () => N
 });
@@ -65,7 +65,7 @@ function v(e, t) {
 }
 let I = new Chunk710845.Z("AudioActionCreators");
 
-function S() {
+function T() {
   (0, Chunk481060.ZDy)(async () => {
     let {
       default: e
@@ -76,12 +76,12 @@ function S() {
   })
 }
 
-function T() {
+function S() {
   return !Chunk131951.Z.isSupported() && ((0, Chunk481060.h7j)(e => (0, r.jsx)(a.ConfirmModal, v(y({
     header: E.intl.string(E.t.ilMTy0),
     confirmText: E.intl.string(E.t["BK8LK+"]),
     cancelText: E.intl.string(E.t["ETE/oC"]),
-    onConfirm: S,
+    onConfirm: T,
     confirmButtonColor: i.zx.Colors.BRAND
   }, e), {
     children: (0, r.jsx)(a.Text, {
@@ -100,7 +100,7 @@ function A(e) {
 
 function C() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  return T() ? Promise.resolve(false) : (Chunk626135.default.track(Chunk981631.rMx.PERMISSIONS_REQUESTED, {
+  return S() ? Promise.resolve(false) : (Chunk626135.default.track(Chunk981631.rMx.PERMISSIONS_REQUESTED, {
     type: "audio"
   }), Chunk131951.Z.getMediaEngine().enable().then(() => {
     Chunk570140.Z.dispatch({

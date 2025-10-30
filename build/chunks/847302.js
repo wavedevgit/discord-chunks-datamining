@@ -18,7 +18,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk887490 = require("./887490.js");
 let _ = /(@[^@#]+(?:#0|#\d{4}))|(@[^\s\t@#:]+)(?=[\s\t@:])|(:[a-zA-Z0-9_~]+:)|(#"(?:\ |\\\\|\\"|(?!")\w)+")|(#[^\s\t@#:]+(?=[\s\t@#:]))/g,
   p = new Set(["emoji", "customEmoji", "textMention", "userMention", "roleMention", "channelMention", "staticRouteLink", "soundboard", "timestamp", "gameMention"]),
-  h = new Set(["gameMentionInput"]),
+  h = new Set(["gameMentionInput", "timestampMentionInput"]),
   m = new Set(["line", "blockQuote"]),
   g = new Set(["applicationCommandOption"]);
 
@@ -93,7 +93,7 @@ function O(e, t, n, r) {
           path: f.C0.child(i, 0),
           offset: 0
         };
-      (n || null != r && T(e, a, l, r)) && (d.Q.voidToText(e, (0, u.sg)(s, {
+      (n || null != r && S(e, a, l, r)) && (d.Q.voidToText(e, (0, u.sg)(s, {
         mode: "plain",
         preventEmojiSurrogates: true
       }), i), o = true)
@@ -213,6 +213,14 @@ function v(e, t, n, r) {
           }]
         };
         break;
+      case "timestampMentionInput":
+        l = {
+          type: "timestampMentionInput",
+          children: [{
+            text: u.data.content
+          }]
+        };
+        break;
       default:
         continue
     }
@@ -239,7 +247,7 @@ function I(e, t, n, r, i) {
         _.lastIndex = u.index + 1;
         continue
       }
-      if (T(e, o, {
+      if (S(e, o, {
           path: p,
           offset: u.index
         }, i)) continue;
@@ -250,12 +258,12 @@ function I(e, t, n, r, i) {
         node: a
       }) : _.lastIndex = u.index + 1
     }
-    for (let t of h.reverse()) S(e, [d, f.C0.child(o, c)], t.index, t.length, t.node), l = true
+    for (let t of h.reverse()) T(e, [d, f.C0.child(o, c)], t.index, t.length, t.node), l = true
   }
   return l
 }
 
-function S(e, t, n, r, a) {
+function T(e, t, n, r, a) {
   let [o, s] = t, l = {
     path: s,
     offset: n
@@ -269,7 +277,7 @@ function S(e, t, n, r, a) {
   })
 }
 
-function T(e, t, n, r) {
+function S(e, t, n, r) {
   let i = 0;
   for (let [r, a] of f.bN.nodes(e, {
       at: {

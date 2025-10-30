@@ -2,7 +2,7 @@
 /** chunk id: 241085, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk292419 = require("./292419.js"),
   Chunk756043 = require("./756043.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk975279 = require("./975279.js");
+  Chunk319194 = require("./319194.js");
 
 function P(e) {
   let {
@@ -93,7 +93,7 @@ function P(e) {
 
 function w() {
   return (0, Chunk951288.jsxs)("div", {
-    className: o()(Chunk975279.mainWrapper, Chunk975279.mainBody),
+    className: o()(Chunk319194.mainWrapper, Chunk319194.mainBody),
     children: [(0, Chunk951288.jsx)(Chunk481060.owK, {
       color: Chunk481060.TVs.colors.ICON_PRIMARY,
       size: "refresh_sm"
@@ -144,12 +144,12 @@ function D(e) {
   }, n.id)
 }
 
-function L(e) {
+function x(e) {
   var t;
   let {
     minValues: n,
     maxValues: a
-  } = e, s = i.useRef(null), u = i.useRef(null), [h, m] = i.useState(false), g = (0, T.CJ)();
+  } = e, s = i.useRef(null), u = i.useRef(null), [h, m] = i.useState(false), g = (0, S.CJ)();
   l()(null != g, "FileUploadActionComponent must be used within a ComponentStateContextProvider");
   let E = g.channelId;
   l()(null != E, "FileUploadActionComponent must be used inside a channel");
@@ -157,8 +157,8 @@ function L(e) {
   l()(null != O, "FileUploadActionComponent requires modalCustomId from context");
   let {
     uploadIds: v,
-    setUploadIds: L,
-    currentUploads: x,
+    setUploadIds: x,
+    currentUploads: L,
     error: M
   } = (0, C.t)(e), k = (0, c.e7)([b.Z], () => b.Z.getBasicChannel(E));
   l()(null != k, "FileUploadActionComponent requires a valid channel");
@@ -178,7 +178,7 @@ function L(e) {
           maxValues: a
         })
       });
-      if ((0, S.Bf)(e, k.guild_id)) return (0, I.G)(k, e);
+      if ((0, T.Bf)(e, k.guild_id)) return (0, I.G)(k, e);
       let n = e.map(e => {
         let n = (0, A.VD)(O),
           r = {
@@ -195,8 +195,8 @@ function L(e) {
           allowOptimization: false
         }), n
       });
-      L(v.concat(n))
-    }, [v, a, k, L, O, E]),
+      x(v.concat(n))
+    }, [v, a, k, x, O, E]),
     B = i.useCallback(e => {
       var t, n;
       e.preventDefault(), m(false), G(Array.from(null != (n = null == (t = e.dataTransfer) ? true : t.files) ? n : []), "drag_drop")
@@ -206,15 +206,15 @@ function L(e) {
       G(Array.from(null != (t = e.currentTarget.files) ? t : []), "file_picker"), e.currentTarget.value = ""
     },
     F = e => {
-      d.Z.remove(E, e, y.d.InteractionModal), L(v.filter(t => t !== e))
+      d.Z.remove(E, e, y.d.InteractionModal), x(v.filter(t => t !== e))
     };
   return (i.useEffect(() => {
     let e = u.current;
     return null == e || e.addEventListener("dragover", j), null == e || e.addEventListener("dragleave", U), null == e || e.addEventListener("drop", B), () => {
       null == e || e.removeEventListener("dragover", j), null == e || e.removeEventListener("dragleave", U), null == e || e.removeEventListener("drop", B)
     }
-  }, [j, U, B]), 1 === a && 1 === x.length) ? (0, r.jsx)(D, {
-    upload: x[0],
+  }, [j, U, B]), 1 === a && 1 === L.length) ? (0, r.jsx)(D, {
+    upload: L[0],
     handleRemoveFile: F,
     singleFileInput: true
   }) : (0, r.jsxs)("div", {
@@ -229,9 +229,9 @@ function L(e) {
       minValues: n,
       maxValues: a,
       guildId: k.guild_id
-    }), x.length > 0 && (0, r.jsx)("div", {
+    }), L.length > 0 && (0, r.jsx)("div", {
       className: R.files,
-      children: x.map(e => (0, r.jsx)(D, {
+      children: L.map(e => (0, r.jsx)(D, {
         upload: e,
         handleRemoveFile: F
       }, e.id))

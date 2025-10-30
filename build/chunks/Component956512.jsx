@@ -24,10 +24,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk709054 = require("./709054.js"),
   Chunk915553 = require("./915553.js"),
   Chunk967249 = require("./967249.js"),
-  Chunk978967 = require("./978967.js"),
+  Chunk249280 = require("./249280.js"),
   Chunk388032 = require("./388032.jsx");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -69,7 +69,7 @@ function C(e, t) {
 function N(e) {
   let {
     currentUserId: t,
-    message: S,
+    message: T,
     application: A,
     channel: N,
     analyticsLocations: R,
@@ -77,8 +77,8 @@ function N(e) {
   } = e, {
     staticBannerSrc: w,
     videoBannerSrc: D,
-    bannerAspectRatio: L
-  } = (0, d.E)(A), x = g.ZP.getApplicationIconURL({
+    bannerAspectRatio: x
+  } = (0, d.E)(A), L = g.ZP.getApplicationIconURL({
     id: A.id,
     icon: A.icon
   }), M = (0, i.e7)([f.ZP, h.Z], () => f.ZP.getVisibleRunningGames().find(e => {
@@ -88,8 +88,8 @@ function N(e) {
     if (t === A.id) returntrue;
     let n = h.Z.getGameByApplication(A);
     return null != n && t === n.id
-  })), k = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()), j = (0, i.e7)([m.Z], () => m.Z.getChannelId()), U = b.default.extractTimestamp(S.id) + y.O < Date.now(), G = (0, r.jsx)(r.Fragment, {
-    children: (0, o._0)(S, N, t)
+  })), k = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()), j = (0, i.e7)([m.Z], () => m.Z.getChannelId()), U = b.default.extractTimestamp(T.id) + y.O < Date.now(), G = (0, r.jsx)(r.Fragment, {
+    children: (0, o._0)(T, N, t)
   }), {
     newestAnalyticsLocation: B
   } = (0, l.ZP)(R, s.Z.REQUEST_TO_STREAM_INVITE_EMBED), Z = I.intl.string(v.default["5+172e"]), F = false;
@@ -98,10 +98,10 @@ function N(e) {
     title: A.name,
     staticBannerSrc: w,
     videoBannerSrc: D,
-    bannerAspectRatio: L,
-    iconSrc: null != x ? x : true,
+    bannerAspectRatio: x,
+    iconSrc: null != L ? L : true,
     info: G,
-    actions: S.author.id === t ? [] : [{
+    actions: T.author.id === t ? [] : [{
       label: Z,
       trackingArea: u.j_.STREAM,
       disabled: F,
@@ -109,8 +109,8 @@ function N(e) {
         null != M && ((0, E.isWindows)() ? (0, _.Z)(M.pid) : (0, a.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("38697"), n.e("4093"), n.e("47863"), n.e("65174")]).then(n.bind(n, 60594));
-          return t => (0, r.jsx)(e, C(T({}, t), {
+          } = await Promise.all([n.e("38697"), n.e("4093"), n.e("33840"), n.e("53448")]).then(n.bind(n, 60594));
+          return t => (0, r.jsx)(e, C(S({}, t), {
             analyticsLocation: B
           }))
         }))
@@ -121,7 +121,7 @@ function N(e) {
       linkType: O.U.REQUEST_TO_STREAM,
       guildId: N.guild_id,
       channelId: N.id,
-      messageId: S.id,
+      messageId: T.id,
       onView: P
     }
   })

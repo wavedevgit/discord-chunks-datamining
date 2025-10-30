@@ -10,8 +10,8 @@ require.d(exports, {
   d9: () => N,
   dF: () => v,
   dX: () => D,
-  iF: () => S,
-  kl: () => T,
+  iF: () => T,
+  kl: () => S,
   p3: () => b,
   wC: () => E
 }), require("./997841.js"), require("./388685.js"), require("./539854.js"), require("./472816.js"), require("./794429.js");
@@ -88,14 +88,14 @@ function v(e, t, n) {
 }
 
 function I(e) {
-  return S(o.Z.getChannel(e))
+  return T(o.Z.getChannel(e))
 }
 
-function S(e) {
+function T(e) {
   return null != e && !!(0, _.s)(e.guild_id, e.id) && (e.isForumChannel() ? f.Uu(p.Plq.SEND_MESSAGES_IN_THREADS, e) : f.Uu(p.Plq.SEND_MESSAGES, e))
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : () => true,
     i = C(e, t, e => e.id, r);
   return n.forEach(t => {
@@ -114,7 +114,7 @@ function T(e, t, n) {
 function A(e, t) {
   return e.filter(e => {
     var n;
-    return S(null == (n = t[e]) ? true : n.channel)
+    return T(null == (n = t[e]) ? true : n.channel)
   })
 }
 
@@ -156,7 +156,7 @@ function P(e, t) {
       r = [],
       i = [],
       a = {};
-    for (let e of n[s.sH])(0, _.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (a[e.channel.id] = e, r.push(e.channel), S(e.channel) && i.push(e.channel.id));
+    for (let e of n[s.sH])(0, _.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (a[e.channel.id] = e, r.push(e.channel), T(e.channel) && i.push(e.channel.id));
     return [i, r]
   }, [e, t], R)
 }

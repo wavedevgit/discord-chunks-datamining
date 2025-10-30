@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk419061 = require("./419061.js"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk536537 = require("./536537.js");
+  Chunk257702 = require("./257702.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -64,9 +64,9 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,7 +74,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -95,7 +95,7 @@ function N(e) {
     size: t,
     isMobile: n,
     isTyping: i
-  } = e, a = S(e, ["size", "isMobile", "isTyping"]);
+  } = e, a = T(e, ["size", "isMobile", "isTyping"]);
   let o = (0, g.UC)(t),
     s = o.status * (n && !i ? g.EW : 1),
     l = o.status * (i ? g.D6 : 1),
@@ -284,7 +284,7 @@ function D(e, t, n) {
   })
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   let {
     size: r,
     status: i,
@@ -300,7 +300,7 @@ function L(e, t, n) {
   }
 }
 
-function x(e, t, n, i) {
+function L(e, t, n, i) {
   let a = D(n, i, t, false),
     o = (0, u.lm)(i, e);
   if (!t) {
@@ -352,7 +352,7 @@ function k(e, t, n, i, a) {
       })
     })
   }
-  let s = L(a, false, false);
+  let s = x(a, false, false);
   return (0, r.jsx)("rect", {
     x: s.avatarCutoutX,
     y: 0 - a.stroke,
@@ -369,7 +369,7 @@ function j(e, t, n, i) {
     status: a,
     isMobile: o,
     isTyping: s
-  } = n, l = t.size - t.status - t.offset, c = t.offset, u = L(t, o, s);
+  } = n, l = t.size - t.status - t.offset, c = t.offset, u = x(t, o, s);
   return (0, r.jsxs)("mask", {
     id: e,
     width: t.size,
@@ -421,7 +421,7 @@ function G(e) {
       avatarTooltipText: s
     } = i,
     l = e.size - e.status - e.offset - e.stroke,
-    c = L(e, t, n),
+    c = x(e, t, n),
     u = l,
     d = 0,
     _ = c.avatarCutoutWidth,
@@ -473,7 +473,7 @@ function B(e) {
     isTyping: r,
     size: i
   } = e, a = n && !r && t === h.Skl.ONLINE, o = (0, g.UC)(i);
-  return O({}, L(o, a, r), (0, u.Dk)({
+  return O({}, x(o, a, r), (0, u.Dk)({
     status: t,
     size: o.status,
     isMobile: a,
@@ -502,11 +502,11 @@ function Z(e) {
     isTyping: O = false,
     avatarDecoration: v,
     typingOffset: I,
-    specs: S
-  } = e, T = {
+    specs: T
+  } = e, S = {
     width: (0, g.px)(n),
     height: (0, g.px)(n)
-  }, A = null == p || h ? true : R(p, E, y), C = S.size * m.hs, N = P(E, n, y, O), w = null != v && (0, r.jsx)("svg", {
+  }, A = null == p || h ? true : R(p, E, y), C = T.size * m.hs, N = P(E, n, y, O), w = null != v && (0, r.jsx)("svg", {
     width: C + I,
     height: C,
     viewBox: "0 0 ".concat(C + I, " ").concat(C),
@@ -531,7 +531,7 @@ function Z(e) {
   });
   return null != i || null != a ? (0, r.jsxs)(l.P3F, {
     className: o()(b.wrapper, b.pointer, f),
-    style: T,
+    style: S,
     onClick: i,
     tabIndex: _,
     onContextMenu: c,
@@ -544,7 +544,7 @@ function Z(e) {
     children: [t, w]
   }) : (0, r.jsxs)("div", {
     className: o()(b.wrapper, f),
-    style: T,
+    style: S,
     onContextMenu: null != c ? c : true,
     onMouseEnter: null != u ? u : true,
     onMouseLeave: null != d ? d : true,
@@ -587,19 +587,19 @@ function V(e) {
     isSpeaking: E = false,
     statusTooltip: y = false,
     statusTooltipDelay: v,
-    statusBackdropColor: S,
-    "aria-hidden": T = false,
+    statusBackdropColor: T,
+    "aria-hidden": S = false,
     "aria-label": A,
     imageClassName: C,
     ref: N,
     CutoutIcon: R,
     avatarTooltipAsset: P,
-    avatarTooltipText: L,
+    avatarTooltipText: x,
     avatarTooltipTitle: M
   } = e, k = n !== h.Skl.UNKNOWN ? n : null, B = (0, g.UC)(a), V = null != k ? Math.ceil((B.status * g.D6 - B.status) / 2) : 0, H = B.size + V, Y = (0, u.vj)(k, s), W = i.useId();
   return (0, r.jsx)(Z, I(O({}, e), {
     ariaLabel: A,
-    ariaHidden: T,
+    ariaHidden: S,
     status: k,
     specs: B,
     typingOffset: V,
@@ -626,7 +626,7 @@ function V(e) {
           isSpeaking: E,
           className: C
         })
-      }), null != k && null != S ? x(S, l, B, k) : null, null != k ? (0, r.jsx)(d.aM, {
+      }), null != k && null != T ? L(T, l, B, k) : null, null != k ? (0, r.jsx)(d.aM, {
         "data-migration-pending": true,
         text: y ? (0, p.u5)(k) : null,
         "aria-label": false,
@@ -647,7 +647,7 @@ function V(e) {
         })
       }) : null, null != R && U(B, R), null != M && G(B, l, f, {
         avatarTooltipTitle: M,
-        avatarTooltipText: L
+        avatarTooltipText: x
       }, P)]
     })
   }))
@@ -681,19 +681,19 @@ function W(e) {
     size: E,
     src: y,
     status: v,
-    statusColor: T,
+    statusColor: S,
     statusTooltip: R = false,
     statusTooltipDelay: P,
     statusBackdropColor: w,
     "aria-hidden": D = false,
-    "aria-label": L,
+    "aria-label": x,
     imageClassName: M,
     pulseStatusIcon: j,
     CutoutIcon: V,
     avatarTooltipAsset: W,
     avatarTooltipText: K,
     avatarTooltipTitle: z
-  } = e, q = (0, u.vj)(v, T), X = i.useId(), Q = i.useId(), [J] = i.useState(() => O({
+  } = e, q = (0, u.vj)(v, S), X = i.useId(), Q = i.useId(), [J] = i.useState(() => O({
     fill: a
   }, B({
     size: E,
@@ -718,7 +718,7 @@ function W(e) {
     avatarCutoutHeight: ei,
     avatarCutoutRadius: ea,
     fill: eo
-  } = ee, es = S(ee, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), el = (0, g.px)(E), ec = (0, g.UC)(E), eu = ec.status * g.D6, ed = ec.status * g.EW, ef = null != v ? (ec.status * g.D6 - ec.status) / 2 : 0, e_ = ec.size + Math.ceil(ef), [ep, eh, em] = (0, l.q_F)({
+  } = ee, es = T(ee, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), el = (0, g.px)(E), ec = (0, g.UC)(E), eu = ec.status * g.D6, ed = ec.status * g.EW, ef = null != v ? (ec.status * g.D6 - ec.status) / 2 : 0, e_ = ec.size + Math.ceil(ef), [ep, eh, em] = (0, l.q_F)({
     config: {
       tension: 450,
       friction: 20,
@@ -736,7 +736,7 @@ function W(e) {
     }] : []
   }, C() ? "animate-always" : "animate-never", [j, v]);
   return (0, r.jsx)(Z, I(O({}, e), {
-    ariaLabel: L,
+    ariaLabel: x,
     ariaHidden: D,
     typingOffset: ef,
     specs: ec,
@@ -776,7 +776,7 @@ function W(e) {
           isSpeaking: m,
           className: M
         })
-      }), null != w && x(w, f, ec, v), (0, r.jsx)(d.aM, {
+      }), null != w && L(w, f, ec, v), (0, r.jsx)(d.aM, {
         "data-migration-pending": true,
         text: R ? (0, p.u5)(v) : null,
         "aria-label": false,
@@ -825,7 +825,7 @@ let z = Chunk647438.memo(function(e) {
   var {
     statusColor: t,
     status: n
-  } = e, a = S(e, ["statusColor", "status"]);
+  } = e, a = T(e, ["statusColor", "status"]);
   let {
     isMobile: o = false,
     isTyping: s = false

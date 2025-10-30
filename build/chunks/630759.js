@@ -6,8 +6,8 @@ require.d(exports, {
   LO: () => D,
   TQ: () => w,
   UB: () => H,
-  ZU: () => L,
-  Zn: () => x,
+  ZU: () => x,
+  Zn: () => L,
   aZ: () => R,
   bo: () => M,
   fz: () => W,
@@ -57,7 +57,7 @@ function P() {
 }
 
 function w(e, t, n, r, i) {
-  n ? O.Z.createSecureFramesVerifiedKey(e, t) : O.Z.createSecureFramesTransientKey(e, t), (0, S.M1)({
+  n ? O.Z.createSecureFramesVerifiedKey(e, t) : O.Z.createSecureFramesTransientKey(e, t), (0, T.M1)({
     channelId: r,
     userId: e,
     analyticsLocation: i
@@ -71,17 +71,17 @@ function D(e, t, n) {
   } else O.Z.deleteSecureFramesTransientKey(e)
 }
 
-function L(e, t) {
+function x(e, t) {
   I.Z.openSecureFramesUpdateConfirmation({
     title: C.intl.string(C.t.hdL152),
     subtitle: C.intl.string(C.t["8VGYKg"]),
     onConfirm: () => {
-      O.Z.deleteSecureFramesVerifiedKey(e, t), (0, S.Pn)()
+      O.Z.deleteSecureFramesVerifiedKey(e, t), (0, T.Pn)()
     }
   })
 }
 
-function x(e) {
+function L(e) {
   let t = h.default.getUser(e),
     n = y.ZP.getName(t);
   I.Z.openSecureFramesUpdateConfirmation({
@@ -90,7 +90,7 @@ function x(e) {
     }),
     subtitle: C.intl.string(C.t.F1BQK3),
     onConfirm: () => {
-      O.Z.deleteSecureFramesUserVerifiedKeys(e), (0, S.DF)()
+      O.Z.deleteSecureFramesUserVerifiedKeys(e), (0, T.DF)()
     }
   })
 }
@@ -211,7 +211,7 @@ async function V(e) {
       key: n
     } = await j(e),
     r = await G(t, n, e);
-  return r || (0, S.KA)(e), r
+  return r || (0, T.KA)(e), r
 }
 
 function H(e, t) {
@@ -237,11 +237,11 @@ function Y(e) {
     channelId: n,
     nickname: r
   } = e;
-  (0, S.CW)({
+  (0, T.CW)({
     userId: t,
     channelId: n,
-    keyVersion: T.GB,
-    reason: T.Xe.OTHER_USER_INCONSISTENT_KEYS
+    keyVersion: S.GB,
+    reason: S.Xe.OTHER_USER_INCONSISTENT_KEYS
   }), u.Z.show({
     title: C.intl.string(C.t.mznLyR),
     body: C.intl.format(C.t.WY6IKb, {

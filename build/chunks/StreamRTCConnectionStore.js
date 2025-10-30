@@ -25,7 +25,7 @@ var i, Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk70722 = require("./70722.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let T = {},
+let S = {},
   A = {},
   C = {},
   N = {},
@@ -42,7 +42,7 @@ let T = {},
   w = Chunk981631.hVg.THEATRE,
   D = {};
 
-function L(e, t, n, i) {
+function x(e, t, n, i) {
   return o()(null != r, "Creating RTCConnection without session."), new _.Z({
     sessionId: r,
     streamKey: e,
@@ -55,18 +55,18 @@ function L(e, t, n, i) {
   })
 }
 
-function x() {
+function L() {
   l().forEach(D, (e, t) => {
     e.destroy(e.isOwner ? "sender-disconnect" : "receiver-disconnect"), delete D[t], delete P[t]
   })
 }
 
 function M(e) {
-  r = e.sessionId, x()
+  r = e.sessionId, L()
 }
 
 function k() {
-  r = null, x()
+  r = null, L()
 }
 
 function j(e) {
@@ -86,7 +86,7 @@ function j(e) {
     channelId: r,
     ownerId: E.default.getId()
   });
-  if (T[d] = {
+  if (S[d] = {
       appContext: i,
       analyticsLocations: u
     }, l().forEach(D, e => {
@@ -114,7 +114,7 @@ function U(e) {
     appContext: t,
     streamKey: n
   } = e;
-  T[n] = {
+  S[n] = {
     appContext: t,
     analyticsLocations: true
   }, l().forEach(D, e => {
@@ -141,12 +141,12 @@ function G(e) {
       streamRegion: i,
       streamApplication: A[t],
       streamSourceType: Q(N[t]),
-      actionContext: null == (l = T[t]) ? true : l.appContext,
+      actionContext: null == (l = S[t]) ? true : l.appContext,
       numViewers: null != a ? a.length : 0,
       goLiveModalDurationMs: R[t],
-      analyticsLocations: null == (c = T[t]) ? true : c.analyticsLocations
+      analyticsLocations: null == (c = S[t]) ? true : c.analyticsLocations
     });
-    o = L(t, n, r, e), D[t] = o
+    o = x(t, n, r, e), D[t] = o
   }
   delete P[t], d.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
@@ -341,7 +341,7 @@ class J extends(i = Chunk442837.ZP.Store) {
     return null == r ? true : r.get(t)
   }
 }
-S(J, "displayName", "StreamRTCConnectionStore");
+T(J, "displayName", "StreamRTCConnectionStore");
 let $ = new J(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : {
   CONNECTION_OPEN: M,
   CONNECTION_CLOSED: k,

@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk359135 = require("./359135.js"),
   Chunk516817 = require("./516817.jsx"),
-  Chunk81298 = require("./81298.js");
+  Chunk386841 = require("./386841.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,8 +83,8 @@ let E = function(e) {
       hovered: O,
       selected: v,
       muted: I,
-      to: S,
-      avatarClassName: T,
+      to: T,
+      avatarClassName: S,
       selectedClassName: A,
       innerClassName: C,
       wrapContent: N,
@@ -96,10 +96,10 @@ let E = function(e) {
     [d.selected]: v,
     [d.highlighted]: R,
     [null != A ? A : ""]: v,
-    [d.clickable]: !v && (null != S || null != y)
+    [d.clickable]: !v && (null != T || null != y)
   }), w["aria-selected"] = null != (t = w["aria-selected"]) ? t : v;
   let D = i.useRef(null),
-    L = (0, r.jsxs)("div", {
+    x = (0, r.jsxs)("div", {
       className: o()(d.childContainer, {
         [d.nameplated]: null != p
       }),
@@ -116,7 +116,7 @@ let E = function(e) {
           [d.wrappedLayout]: N
         }),
         children: [(0, r.jsx)("div", {
-          className: o()(d.avatar, T),
+          className: o()(d.avatar, S),
           children: a
         }), (0, r.jsxs)("div", {
           className: d.content,
@@ -138,14 +138,14 @@ let E = function(e) {
         }) : null]
       })]
     });
-  return null != S ? (0, r.jsx)(l.tEY, h(_({}, P), {
+  return null != T ? (0, r.jsx)(l.tEY, h(_({}, P), {
     children: (0, r.jsx)(s.rU, h(_({
-      to: S,
+      to: T,
       onClick: y
     }, w), {
       role: "listitem",
       ref: n,
-      children: L
+      children: x
     }))
   })) : null != y ? (0, r.jsx)(l.P3F, h(_({
     onClick: y,
@@ -153,12 +153,12 @@ let E = function(e) {
   }, w), {
     role: "listitem",
     innerRef: n,
-    children: L
+    children: x
   })) : (0, r.jsx)(l.tEY, h(_({}, P), {
     children: (0, r.jsx)("div", h(_({}, w), {
       role: "listitem",
       ref: n,
-      children: L
+      children: x
     }))
   }))
 }

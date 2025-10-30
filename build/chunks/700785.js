@@ -16,7 +16,7 @@ require.d(exports, {
   r6: () => F,
   uB: () => U,
   we: () => Y,
-  ym: () => L
+  ym: () => x
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -40,7 +40,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,14 +49,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -68,9 +68,9 @@ let A = Chunk149765.vB(0),
   P = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.SEND_MESSAGES, Chunk981631.Plq.CONNECT, Chunk981631.Plq.SPEAK, Chunk981631.Plq.STREAM, Chunk981631.Plq.USE_EMBEDDED_ACTIVITIES, Chunk981631.Plq.USE_EXTERNAL_APPS, Chunk981631.Plq.USE_EXTERNAL_EMOJIS, Chunk981631.Plq.USE_EXTERNAL_SOUNDS, Chunk981631.Plq.USE_EXTERNAL_STICKERS, Chunk981631.Plq.USE_SOUNDBOARD, Chunk981631.Plq.USE_VAD),
   w = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.READ_MESSAGE_HISTORY),
   D = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.READ_MESSAGE_HISTORY, Chunk981631.Plq.CHANGE_NICKNAME),
-  L = Chunk149765.$e(Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.ADMINISTRATOR, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.MANAGE_NICKNAMES, Chunk981631.Plq.CREATE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_WEBHOOKS, Chunk981631.Plq.VIEW_AUDIT_LOG);
+  x = Chunk149765.$e(Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.ADMINISTRATOR, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.MANAGE_NICKNAMES, Chunk981631.Plq.CREATE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_WEBHOOKS, Chunk981631.Plq.VIEW_AUDIT_LOG);
 
-function x(e, t, n) {
+function L(e, t, n) {
   let r = !(arguments.length > 3) || true === arguments[3] || arguments[3];
   if (r && t.mfaLevel === I.BpS.ELEVATED && n === h.default.getId()) {
     var i;
@@ -109,14 +109,14 @@ function k(e) {
     lurkerPermissionsMask: c = R
   } = e;
   if (l) return M(r.id, n, A, i);
-  let d = (o = null != o ? T({}, E.Z.getUnsafeMutableRoles(r.id), o) : E.Z.getUnsafeMutableRoles(r.id))[(0, _.lV)(r)],
+  let d = (o = null != o ? S({}, E.Z.getUnsafeMutableRoles(r.id), o) : E.Z.getUnsafeMutableRoles(r.id))[(0, _.lV)(r)],
     f = null != d ? d.permissions : N;
   if (null != n)
     for (let e = 0; e < n.roles.length; e++) {
       let t = o[n.roles[e]];
       true !== t && (f = a.IH(f, t.permissions))
     }
-  return f = a.e$(f, I.Plq.ADMINISTRATOR) ? C : M(r.id, n, f, i), (u.Z.isLurking(r.id) || (null == n ? true : n.isPending)) && (f = a.hX(f, c)), g.ZP.isCurrentUserGuest(r.id) && (f = a.hX(f, P)), x(f, r, t, s)
+  return f = a.e$(f, I.Plq.ADMINISTRATOR) ? C : M(r.id, n, f, i), (u.Z.isLurking(r.id) || (null == n ? true : n.isPending)) && (f = a.hX(f, c)), g.ZP.isCurrentUserGuest(r.id) && (f = a.hX(f, P)), L(f, r, t, s)
 }
 
 function j(e) {
@@ -143,7 +143,7 @@ function j(e) {
         excludeGuildPermissions: s
       }), false)
     }
-    l = null != (c = r.computeLurkerPermissionsAllowList()) ? c : l, i = null != i ? T({}, r.permissionOverwrites, i) : r.permissionOverwrites;
+    l = null != (c = r.computeLurkerPermissionsAllowList()) ? c : l, i = null != i ? S({}, r.permissionOverwrites, i) : r.permissionOverwrites;
     let e = r.getGuildId();
     t = null != e ? b.Z.getGuild(e) : null
   } else i = null != i ? i : {}, t = r;
@@ -202,12 +202,12 @@ function U(e) {
         excludeGuildPermissions: p
       }), t)
     }
-    E = null != (r = o.computeLurkerPermissionsAllowList()) ? r : E, s = null != s ? T({}, o.permissionOverwrites, s) : o.permissionOverwrites;
+    E = null != (r = o.computeLurkerPermissionsAllowList()) ? r : E, s = null != s ? S({}, o.permissionOverwrites, s) : o.permissionOverwrites;
     let e = o.getGuildId();
     i = null != e ? b.Z.getGuild(e) : null
   } else s = null != s ? s : {}, i = o;
   if (null == i) return A;
-  if (!(h === (null == (t = y.default.getCurrentUser()) ? true : t.id) && c.Z.isViewingRoles(i.id)) && (0, _.eM)(i, h)) return x(C, i, h, u);
+  if (!(h === (null == (t = y.default.getCurrentUser()) ? true : t.id) && c.Z.isViewingRoles(i.id)) && (0, _.eM)(i, h)) return L(C, i, h, u);
   let O = g.ZP.getMember(i.id, h);
   return k({
     userId: h,
@@ -231,8 +231,8 @@ function B(e, t) {
     guild_id: n
   } = e;
   if (null == t || null == n || n !== t.guild_id) returnfalse;
-  let r = T({}, e.permissionOverwrites),
-    i = T({}, t.permissionOverwrites);
+  let r = S({}, e.permissionOverwrites),
+    i = S({}, t.permissionOverwrites);
   return null == r[n] && (r[n] = Y(n)), null == i[n] && (i[n] = Y(n)), Object.keys(r).length === Object.keys(i).length && !Object.keys(r).some(e => {
     let t = r[e],
       n = i[e];

@@ -314,8 +314,8 @@ class g extends Chunk47770.Z {
       }), this.decryptionFailures = e.transport.decryptionFailures, this.routingFailures = e.transport.routingFailures, this.appendTargetRates(this.outboundStats, e.transport.availableOutgoingBitrate, r), i().forEach(e.rtp.inbound, (t, n) => {
         i().forEach(t, t => {
           if ("audio" === t.type) {
-            var r, a, o, s, l, c, u, d, _, p, h, m, g, E, b, y, O, v, I, S;
-            let T = null != (r = e.transport.ping) ? r : 0,
+            var r, a, o, s, l, c, u, d, _, p, h, m, g, E, b, y, O, v, I, T;
+            let S = null != (r = e.transport.ping) ? r : 0,
               A = t.packetsReceived,
               C = t.packetsLost,
               N = t.bytesReceived,
@@ -323,14 +323,14 @@ class g extends Chunk47770.Z {
               P = null != (a = t.fecPacketsReceived) ? a : 0,
               w = null != (o = t.fecPacketsDiscarded) ? o : 0,
               D = null != (s = t.jitterBuffer) ? s : 0,
-              L = {
+              x = {
                 audioJitterBuffer: t.audioJitterBuffer,
                 audioJitterTarget: t.audioJitterTarget,
                 audioJitterDelay: t.audioJitterDelay,
                 relativeReceptionDelay: t.relativeReceptionDelay,
                 relativePlayoutDelay: t.relativePlayoutDelay
               },
-              x = {
+              L = {
                 silent: t.opSilence,
                 normal: t.opNormal,
                 merged: t.opMerge,
@@ -355,7 +355,7 @@ class g extends Chunk47770.Z {
                 o = 0,
                 s = e.mosBuckets,
                 l = null != (m = e.decryptFailureBeforeSuccessCount) ? m : M.decryptSuccessCount > 0 ? M.decryptFailureCount : true;
-              r > 0 && a >= 0 && (o = this.calculateMos(T + D, i().clamp(a / (r + a), 0, 1)), s[Math.floor(o)]++), this.inboundStats[n] = f({
+              r > 0 && a >= 0 && (o = this.calculateMos(S + D, i().clamp(a / (r + a), 0, 1)), s[Math.floor(o)]++), this.inboundStats[n] = f({
                 packetsReceived: A,
                 bytesReceived: N,
                 packetsLost: C,
@@ -366,14 +366,14 @@ class g extends Chunk47770.Z {
                 mosSum: e.mosSum + o,
                 mosCount: e.mosCount + +(o > 0),
                 mosBuckets: s,
-                bufferStats: L,
-                frameOpStats: x,
+                bufferStats: x,
+                frameOpStats: L,
                 decryptFailureBeforeSuccessCount: l
               }, M), this.periodicInboundStats[n] = {
                 previousTimestampMs: this.periodicInboundStats[n].previousTimestampMs,
                 previous: this.periodicInboundStats[n].previous,
                 currentTimestampMs: performance.now(),
-                current: x,
+                current: L,
                 accelerateRateSum: this.periodicInboundStats[n].accelerateRateSum + (null != (g = t.accelerateRate) ? g : 0),
                 expandRateSum: this.periodicInboundStats[n].expandRateSum + (null != (E = t.expandRate) ? E : 0),
                 preemptiveExpandRateSum: this.periodicInboundStats[n].preemptiveExpandRateSum + (null != (b = t.preemptiveExpandRate) ? b : 0),
@@ -391,17 +391,17 @@ class g extends Chunk47770.Z {
               mosSum: 0,
               mosCount: 0,
               mosBuckets: [0, 0, 0, 0, 0],
-              bufferStats: L,
-              frameOpStats: x
+              bufferStats: x,
+              frameOpStats: L
             }, M), this.periodicInboundStats[n] = {
               previousTimestampMs: performance.now(),
-              previous: x,
+              previous: L,
               currentTimestampMs: performance.now(),
-              current: x,
+              current: L,
               accelerateRateSum: null != (O = t.accelerateRate) ? O : 0,
               expandRateSum: null != (v = t.expandRate) ? v : 0,
               preemptiveExpandRateSum: null != (I = t.preemptiveExpandRate) ? I : 0,
-              speechExpandRateSum: null != (S = t.speechExpandRate) ? S : 0,
+              speechExpandRateSum: null != (T = t.speechExpandRate) ? T : 0,
               numRateSamples: 1
             }
           }

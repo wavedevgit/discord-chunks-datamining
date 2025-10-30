@@ -116,13 +116,13 @@ function I(e) {
   return d.yqN.FONT_SIZES.indexOf(e) >= 0 ? e : d.yqN.FONT_SIZE_DEFAULT
 }
 
-function S(e) {
+function T(e) {
   let t = I(e.fontSize);
   if (t > d.yqN.FONT_SIZE_MAX || t < d.yqN.FONT_SIZE_MIN || O.fontSize === t) returnfalse;
   (O = p({}, O)).fontSize = t
 }
 
-function T(e) {
+function S(e) {
   if (e.zoom < d.yqN.ZOOM_MIN || e.zoom > d.yqN.ZOOM_MAX || O.zoom === e.zoom) returnfalse;
   (O = p({}, O)).zoom = e.zoom, u.Z.setZoomFactor(O.zoom)
 }
@@ -160,11 +160,11 @@ function D(e) {
   (O = p({}, O)).saturation = e.saturation
 }
 
-function L() {
+function x() {
   (O = p({}, O)).desaturateUserColors = !O.desaturateUserColors
 }
 
-function x(e) {
+function L(e) {
   O.roleStyle = e.roleStyle
 }
 
@@ -457,15 +457,15 @@ _(Q, "displayName", "AccessibilityStore"), _(Q, "persistKey", "AccessibilityStor
   enableCustomCursor: true
 })]);
 let J = new Q(Chunk570140.Z, {
-  ACCESSIBILITY_SET_FONT_SIZE: S,
-  ACCESSIBILITY_SET_ZOOM: T,
+  ACCESSIBILITY_SET_FONT_SIZE: T,
+  ACCESSIBILITY_SET_ZOOM: S,
   ACCESSIBILITY_RESET_TO_DEFAULT: A,
   ACCESSIBILITY_KEYBOARD_MODE_ENABLE: C,
   ACCESSIBILITY_KEYBOARD_MODE_DISABLE: N,
   ACCESSIBILITY_COLORBLIND_TOGGLE: R,
   ACCESSIBILITY_LOW_CONTRAST_TOGGLE: P,
   ACCESSIBILITY_SET_SATURATION: D,
-  ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: L,
+  ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: x,
   ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: H,
   ACCESSIBILITY_SYSTEM_PREFERS_CONTRAST_CHANGED: Z,
   ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED: U,
@@ -474,7 +474,7 @@ let J = new Q(Chunk570140.Z, {
   ACCESSIBILITY_SET_SYNC_FORCED_COLORS: w,
   ACCESSIBILITY_SET_ALWAYS_SHOW_LINK_DECORATIONS: F,
   ACCESSIBILITY_SET_ENABLE_CUSTOM_CURSOR: V,
-  ACCESSIBILITY_SET_ROLE_STYLE: x,
+  ACCESSIBILITY_SET_ROLE_STYLE: L,
   ACCESSIBILITY_SET_DISPLAY_NAME_STYLES_ENABLED: M,
   ACCESSIBILITY_FORCED_COLORS_MODAL_SEEN: Y,
   KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN: W,

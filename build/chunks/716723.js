@@ -31,10 +31,10 @@ function E(e, t, n) {
     {
       isInvalid: v,
       validationErrors: I,
-      validationDetails: S
+      validationDetails: T
     } = t.displayValidation,
     {
-      labelProps: T,
+      labelProps: S,
       fieldProps: A,
       descriptionProps: C,
       errorMessageProps: N
@@ -52,11 +52,11 @@ function E(e, t, n) {
     D = t.formatValue(w, {
       month: "long"
     }),
-    L = D ? O.format("selectedDateDescription", {
+    x = D ? O.format("selectedDateDescription", {
       date: D
     }) : "",
-    x = (0, l.P)(L),
-    M = [x["aria-describedby"], A["aria-describedby"]].filter(Boolean).join(" ") || true,
+    L = (0, l.P)(x),
+    M = [L["aria-describedby"], A["aria-describedby"]].filter(Boolean).join(" ") || true,
     k = (0, c.z)(e),
     j = (0, m.useMemo)(() => (0, o.E7)(n), [n]),
     U = (0, m.useRef)(false),
@@ -80,7 +80,7 @@ function E(e, t, n) {
       }
     });
   return {
-    groupProps: (0, u.d)(k, R, A, x, G, {
+    groupProps: (0, u.d)(k, R, A, L, G, {
       role: "group",
       "aria-disabled": e.isDisabled || null,
       "aria-labelledby": P,
@@ -93,7 +93,7 @@ function E(e, t, n) {
       }
     }),
     labelProps: {
-      ...T,
+      ...S,
       onClick: () => {
         j.focusFirst()
       }
@@ -123,7 +123,7 @@ function E(e, t, n) {
     descriptionProps: C,
     errorMessageProps: N,
     buttonProps: {
-      ...x,
+      ...L,
       id: E,
       "aria-haspopup": "dialog",
       "aria-label": O.format("calendar"),
@@ -154,6 +154,6 @@ function E(e, t, n) {
     },
     isInvalid: v,
     validationErrors: I,
-    validationDetails: S
+    validationDetails: T
   }
 }

@@ -34,9 +34,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk856768 = require("./856768.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk813709 = require("./813709.js");
+  Chunk192201 = require("./192201.js");
 
-function x(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,7 +52,7 @@ function M(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -111,7 +111,7 @@ function Z(e) {
   let {
     selectedGuild: a
   } = e, {
-    analyticsLocations: x
+    analyticsLocations: L
   } = (0, _.ZP)(d.Z.USER_SETTINGS_GUILD_PROFILE), k = (0, s.e7)([I.default], () => {
     let e = I.default.getCurrentUser();
     return o()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
@@ -145,11 +145,11 @@ function Z(e) {
     location: "GuildIdentitySettingsPage"
   });
   return F ? (0, r.jsx)(u.Z, {}) : Z ? (0, r.jsxs)(_.Gt, {
-    value: x,
+    value: L,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: D.intl.format(D.t["/PTB2E"], {
-        helpCenterLink: S.Z.getArticleURL(w.BhN.GUILD_PROFILES)
+        helpCenterLink: T.Z.getArticleURL(w.BhN.GUILD_PROFILES)
       })
     }), null != a ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(P.Z, {
@@ -160,7 +160,7 @@ function Z(e) {
       }), (0, r.jsx)(g.Z, {
         profilePreviewTitle: (0, r.jsx)(l.Heading, {
           variant: "heading-md/medium",
-          className: L.profilePreviewTitle,
+          className: x.profilePreviewTitle,
           children: D.intl.formatToPlainString(D.t.Tc0slG, {
             guildName: null == a ? true : a.name
           })
@@ -170,7 +170,7 @@ function Z(e) {
           pendingDisplayNameStyles: X,
           user: k,
           guild: a,
-          canUsePremiumCustomization: T.ZP.canUsePremiumProfileCustomization(k),
+          canUsePremiumCustomization: S.ZP.canUsePremiumProfileCustomization(k),
           onUpsellClick: B
         })),
         nameplatePreview: Q ? (0, r.jsx)(h.Z, j(M({}, K), {

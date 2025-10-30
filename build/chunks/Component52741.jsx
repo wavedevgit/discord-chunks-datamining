@@ -22,7 +22,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk504865 = require("./504865.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk560230 = require("./560230.js");
+  Chunk40747 = require("./40747.js");
 
 function O(e) {
   var t;
@@ -49,14 +49,14 @@ function v(e) {
     showYearlyPrice: m,
     priceOptions: v,
     textVariant: I,
-    className: S,
-    isApplicationHome: T,
+    className: T,
+    isApplicationHome: S,
     enablePremiumBrandRefresh: A,
     headerClassName: C,
     headingVariant: N = "heading-md/normal",
     headingColor: R
-  } = e, P = (0, l.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), w = (0, l.e7)([u.default], () => u.default.getCurrentUser()), D = (0, _.t7)(), L = (0, _.lr)(), x = n === E.PremiumTypes.TIER_0 ? E.Si.TIER_0 : E.Si.TIER_2, M = (null == P ? true : P.hasActiveTrial) ? null == w ? true : w.premiumType : D ? E.PremiumTypes.TIER_2 : null, k = (0, h.N)(), j = (0, p.Ng)(), U = null == k ? true : k.subscription_trial;
-  if (!T && !t && null != M && n === M && null != P && null != P.planIdFromItems) {
+  } = e, P = (0, l.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), w = (0, l.e7)([u.default], () => u.default.getCurrentUser()), D = (0, _.t7)(), x = (0, _.lr)(), L = n === E.PremiumTypes.TIER_0 ? E.Si.TIER_0 : E.Si.TIER_2, M = (null == P ? true : P.hasActiveTrial) ? null == w ? true : w.premiumType : D ? E.PremiumTypes.TIER_2 : null, k = (0, h.N)(), j = (0, p.Ng)(), U = null == k ? true : k.subscription_trial;
+  if (!S && !t && null != M && n === M && null != P && null != P.planIdFromItems) {
     let e = null != P.trialEndsAt ? s()(null == P ? true : P.trialEndsAt).diff(s()(), "d") : 0,
       t = E.GP[P.planIdFromItems],
       n = f.ZP.formatPriceString(f.ZP.getDefaultPrice(t.id), t.interval),
@@ -66,12 +66,12 @@ function v(e) {
           remainingTime: e,
           price: n
         }) : P.planIdFromItems === E.Xh.PREMIUM_YEAR_TIER_2 ? b.intl.format(b.t["+qqh6g"], {
-          percent: null != (t = null == L ? true : L.percentage) ? t : E.Bo,
+          percent: null != (t = null == x ? true : x.percentage) ? t : E.Bo,
           regularPrice: n
         }) : b.intl.formatToPlainString(b.t["3ZiutU"], {
-          percent: null != (r = null == L ? true : L.percentage) ? r : E.M_,
+          percent: null != (r = null == x ? true : x.percentage) ? r : E.M_,
           regularPrice: n,
-          numMonths: null != (i = null == L ? true : L.duration) ? i : E.rt
+          numMonths: null != (i = null == x ? true : x.duration) ? i : E.rt
         })
       };
     return (0, r.jsx)(c.Heading, {
@@ -81,7 +81,7 @@ function v(e) {
       children: i()
     })
   }
-  if (!T && !t && i) {
+  if (!S && !t && i) {
     let e = f.ZP.formatPriceString(f.ZP.getDefaultPrice(n === E.PremiumTypes.TIER_0 ? E.Xh.PREMIUM_MONTH_TIER_0 : E.Xh.PREMIUM_MONTH_TIER_2), E.rV.MONTH);
     if (o === E.C.PREMIUM_TRIAL) {
       var G, B, Z, F;
@@ -113,21 +113,21 @@ function v(e) {
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g.Z, {
-      subscriptionTier: x,
+      subscriptionTier: L,
       isGift: t,
-      className: null != S ? S : y.price,
+      className: null != T ? T : y.price,
       priceOptions: v,
       variant: I,
-      isApplicationHome: T,
+      isApplicationHome: S,
       enablePremiumBrandRefresh: A
     }), m && (0, r.jsx)(g.Z, {
-      subscriptionTier: x,
+      subscriptionTier: L,
       interval: E.rV.YEAR,
-      className: null != S ? S : y.price,
+      className: null != T ? T : y.price,
       isGift: t,
       priceOptions: v,
       variant: I,
-      isApplicationHome: T,
+      isApplicationHome: S,
       enablePremiumBrandRefresh: A
     })]
   })

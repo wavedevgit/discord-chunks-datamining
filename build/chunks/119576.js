@@ -7,7 +7,7 @@ require.d(exports, {
   GW: () => l,
   Go: () => I,
   I4: () => g,
-  JB: () => L,
+  JB: () => x,
   KX: () => R,
   NM: () => s,
   Qq: () => b,
@@ -95,8 +95,8 @@ function v(e) {
 function I(e) {
   return e.replace(/start|end/g, e => d[e])
 }
-let S = ["left", "right"],
-  T = ["right", "left"],
+let T = ["left", "right"],
+  S = ["right", "left"],
   A = ["top", "bottom"],
   C = ["bottom", "top"];
 
@@ -104,8 +104,8 @@ function N(e, t, n) {
   switch (e) {
     case "top":
     case "bottom":
-      if (n) return t ? T : S;
-      return t ? S : T;
+      if (n) return t ? S : T;
+      return t ? T : S;
     case "left":
     case "right":
       return t ? A : C;
@@ -143,7 +143,7 @@ function D(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   let {
     x: t,
     y: n,

@@ -6,10 +6,10 @@ require.d(exports, {
   Go: () => H,
   JC: () => M,
   NU: () => G,
-  Nk: () => x,
+  Nk: () => L,
   R9: () => j,
   RN: () => F,
-  Wl: () => L,
+  Wl: () => x,
   XO: () => D,
   Xn: () => z,
   bb: () => W,
@@ -99,7 +99,7 @@ function w(e, t, n) {
         decoration: "never"
       })),
       o = "<@".concat(e, ">");
-    E.S.dispatchToLastSubscribed(T.CkL.INSERT_TEXT, {
+    E.S.dispatchToLastSubscribed(S.CkL.INSERT_TEXT, {
       plainText: a,
       rawText: o
     }), l.Z.startTyping(t)
@@ -111,12 +111,12 @@ function D(e, t, n, r) {
   return w(e.author.id, t.id, i)
 }
 
-function L(e, t, n, r) {
+function x(e, t, n, r) {
   let i = P("referencedUsernameProfile", n, r);
   return w(null == e ? true : e.author.id, t.id, i)
 }
 
-function x(e, t, n, r) {
+function L(e, t, n, r) {
   let i = P("interactionUsernameProfile", n, r);
   return w(null == e ? true : e.user.id, t.id, i)
 }
@@ -150,7 +150,7 @@ function B(e, t, a, s) {
   } = t, {
     id: u,
     flags: d
-  } = e, f = (0, b.yE)(d, T.iLy.EPHEMERAL), _ = (0, c.bp)();
+  } = e, f = (0, b.yE)(d, S.iLy.EPHEMERAL), _ = (0, c.bp)();
   return i.useCallback((e, t) => {
     if (f) return;
     if (!y.isPlatformEmbedded) {
@@ -167,7 +167,7 @@ function B(e, t, a, s) {
     }), (0, o.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("93375"), n.e("38342"), n.e("37220"), n.e("26503"), n.e("73826")]).then(n.bind(n, 225138));
+      } = await Promise.all([n.e("93375"), n.e("38342"), n.e("37220"), n.e("26503"), n.e("98444")]).then(n.bind(n, 225138));
       return n => (0, r.jsx)(e, R(C({}, n), {
         message: c,
         channel: i,
@@ -231,10 +231,10 @@ function Y(e) {
   } = e, o = n.author.id, s = "".concat(t, ":").concat(o), l = i.useRef(r), c = q(n, a), [u, d] = i.useState(r);
   l.current = u || l.current;
   let f = i.useCallback(e => {
-      (0, _.T6)(), u || (E.S.dispatchKeyed(T.LPv.ANIMATE_CHAT_AVATAR, s, true), c(e), d(true))
+      (0, _.T6)(), u || (E.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, s, true), c(e), d(true))
     }, [u, s, c]),
     p = i.useCallback(() => {
-      E.S.dispatchKeyed(T.LPv.ANIMATE_CHAT_AVATAR, s, false), d(false)
+      E.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, s, false), d(false)
     }, [s]);
   return {
     hasHovered: l.current,
@@ -267,7 +267,7 @@ function K(e, t) {
     let {
       messageReference: n
     } = e;
-    (null == t || (0, S.Z)(t)) && s.Z.jumpToMessage({
+    (null == t || (0, T.Z)(t)) && s.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.message_id,
       flash: true,

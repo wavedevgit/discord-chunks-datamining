@@ -22,7 +22,7 @@ var Chunk278074 = require("./278074.js"),
   Chunk987209 = require("./987209.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk610868 = require("./610868.js"),
+  Chunk552044 = require("./552044.js"),
   Chunk241822 = require("./241822.js");
 
 function v(e, t, n) {
@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -78,7 +78,7 @@ function C(e) {
   });
   return (0, r.jsx)("div", {
     className: y.giftMainAnimationWrapper,
-    children: (0, r.jsx)(A, T(I({}, i), {
+    children: (0, r.jsx)(A, S(I({}, i), {
       avatarDecoration: n,
       src: a,
       className: y.avatar,

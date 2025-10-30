@@ -43,8 +43,8 @@ let E = [],
   O = null,
   v = null,
   I = false,
-  S = false,
-  T = null,
+  T = false,
+  S = null,
   A = false,
   C = null;
 
@@ -146,7 +146,7 @@ function N(e, t) {
         userIds: e
       })
     })
-  }), O = new c.Z(f.default.getId(), t), v = null, I = false, S = false, a
+  }), O = new c.Z(f.default.getId(), t), v = null, I = false, T = false, a
 }
 
 function R() {
@@ -181,12 +181,12 @@ function D(e) {
   }, false)
 }
 
-function L(e) {
+function x(e) {
   if (null == r || null != e.guildId && e.guildId !== r.guildId || null != e.channelId && e.channelId !== r.getNextChannelId()) returnfalse;
   r.connect(e.endpoint, e.token)
 }
 
-function x() {
+function L() {
   b = null
 }
 
@@ -231,7 +231,7 @@ function B(e) {
 }
 
 function Z(e) {
-  return e.state === p.hes.RTC_CONNECTED && (S = true), true
+  return e.state === p.hes.RTC_CONNECTED && (T = true), true
 }
 
 function F(e) {
@@ -251,7 +251,7 @@ function H(e) {
       let [t, n] = e;
       return "any" !== t && 0 !== n
     })) returnfalse;
-  T = performance.now()
+  S = performance.now()
 }
 
 function Y(e) {
@@ -347,7 +347,7 @@ class z extends(a = Chunk442837.ZP.Store) {
     return I
   }
   getWasEverRtcConnected() {
-    return S
+    return T
   }
   getUserIds() {
     return null == r ? true : r.getUserIds()
@@ -366,7 +366,7 @@ class z extends(a = Chunk442837.ZP.Store) {
     return null == t ? true : t.get(e)
   }
   getLastNonZeroRemoteVideoSinkWantsTime() {
-    return T
+    return S
   }
   getWasMoved() {
     return A
@@ -388,9 +388,9 @@ let q = new z(Chunk570140.Z, __OVERLAY__ ? {} : {
   VOICE_STATE_UPDATES: D,
   VOICE_CHANNEL_SELECT: G,
   AUDIO_SET_NOISE_CANCELLATION: F,
-  VOICE_SERVER_UPDATE: L,
-  CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: x,
-  REMOTE_SESSION_CONNECT: x,
+  VOICE_SERVER_UPDATE: x,
+  CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: L,
+  REMOTE_SESSION_CONNECT: L,
   CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: M,
   GUILD_DELETE: k,
   CHANNEL_DELETE: U,

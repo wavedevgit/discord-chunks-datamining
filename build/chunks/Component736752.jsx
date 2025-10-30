@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk801461 = require("./801461.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk343396 = require("./343396.js");
+  Chunk719766 = require("./719766.js");
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -107,7 +107,7 @@ class K extends Chunk647438.PureComponent {
         children: Chunk388032.intl.string(Chunk388032.t.tuGzBT)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        className: Chunk343396.inlineNoticeText,
+        className: Chunk719766.inlineNoticeText,
         children: Chunk388032.intl.string(Chunk388032.t.NAzplE)
       }), (0, Chunk951288.jsx)(Chunk418632.Z, {
         size: "sm",
@@ -120,7 +120,7 @@ class K extends Chunk647438.PureComponent {
         children: Chunk388032.intl.string(Chunk388032.t["/3qnL/"])
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        className: Chunk343396.inlineNoticeText,
+        className: Chunk719766.inlineNoticeText,
         children: Chunk388032.intl.string(Chunk388032.t.qKs3vg)
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "secondary",
@@ -136,7 +136,7 @@ class K extends Chunk647438.PureComponent {
       children: (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-sm/normal",
         children: [Chunk388032.intl.format(Chunk388032.t.pdYZyg, {}), " ", "", (0, Chunk951288.jsx)(Chunk690221.Z, {
-          className: Chunk343396.noticeTextButton,
+          className: Chunk719766.noticeTextButton,
           onClick: () => (0, Chunk303172.Z)(Chunk801461.Kq.USER_SETTINGS),
           children: Chunk388032.intl.string(Chunk388032.t.LhlgY9)
         })]
@@ -154,7 +154,7 @@ class K extends Chunk647438.PureComponent {
       currentUser: t
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk481060.C3N, {
-      className: Chunk343396.userSettingsSecurity,
+      className: Chunk719766.userSettingsSecurity,
       label: Chunk388032.intl.string(Chunk388032.t.pKSjEj),
       children: [exports.mfaEnabled ? (0, Chunk951288.jsx)(Chunk481060.Wn, {
         icon: Chunk481060.mBM,
@@ -294,7 +294,7 @@ class K extends Chunk647438.PureComponent {
       children: (0, Chunk951288.jsx)(Chunk526156.Z, {
         parentSetting: Chunk726985.s6.ACCOUNT,
         settingsSection: Chunk981631.oAB.ACCOUNT,
-        panelClassName: Chunk343396.tabPanel,
+        panelClassName: Chunk719766.tabPanel,
         onTabChange: e => {
           C.default.track(U.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
             target_tab_name: e === j.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"

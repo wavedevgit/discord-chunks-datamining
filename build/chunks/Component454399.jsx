@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk102725 = require("./102725.js"),
   Chunk342134 = require("./342134.js"),
   Chunk966327 = require("./966327.js"),
-  Chunk890955 = require("./890955.js");
+  Chunk638787 = require("./638787.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,8 +84,8 @@ function O(e) {
     asContainer: O = false,
     element: v = "span",
     position: I = "top",
-    align: S = "center",
-    spacing: T,
+    align: T = "center",
+    spacing: S,
     caretConfig: A,
     layerContext: C,
     targetElementRef: N,
@@ -93,24 +93,24 @@ function O(e) {
   } = e, P = b(e, ["children", "title", "body", "asset", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "positionKey"]);
   let w = (0, _.c)(N),
     D = i.useId(),
-    L = null != h && ("string" != typeof h || "" !== h),
-    x = i.useMemo(() => (0, r.jsxs)("div", {
+    x = null != h && ("string" != typeof h || "" !== h),
+    L = i.useMemo(() => (0, r.jsxs)("div", {
       className: p.richTooltipContent,
       children: [null != y && (0, r.jsx)("div", {
         className: p.assetContainer,
         children: y
       }), (0, r.jsxs)("div", {
         className: p.textContent,
-        children: [L && (0, r.jsx)(o.Text, {
+        children: [x && (0, r.jsx)(o.Text, {
           variant: "text-sm/bold",
           children: h
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
-          color: L ? "text-secondary" : "text-primary",
+          color: x ? "text-secondary" : "text-primary",
           children: g
         })]
       })]
-    }), [y, h, g, L]),
+    }), [y, h, g, x]),
     {
       isVisible: M,
       triggerProps: k
@@ -159,10 +159,10 @@ function O(e) {
       isRendered: true,
       targetElementRef: w.targetElementRef,
       id: D,
-      content: x,
+      content: L,
       position: I,
-      align: S,
-      spacing: T,
+      align: T,
+      spacing: S,
       caretConfig: A,
       layerContext: null != C ? C : s.nz,
       animationStyle: e,
@@ -171,9 +171,9 @@ function O(e) {
     })
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [t, null != x ? (0, r.jsx)(a.n, {
+    children: [t, null != L ? (0, r.jsx)(a.n, {
       id: D,
-      children: x
+      children: L
     }) : null, G]
   })
 }

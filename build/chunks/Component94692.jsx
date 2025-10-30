@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk424218 = require("./424218.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk901650 = require("./901650.js");
+  Chunk578766 = require("./578766.js");
 
 function p(t, e, s) {
   return e in t ? Object.defineProperty(t, e, {
@@ -86,10 +86,10 @@ class m extends Chunk647438.PureComponent {
       installationPathsMetadata: e
     } = this.props;
     return null != exports[module] && false === exports[module].hasPermission ? (0, Chunk951288.jsx)("div", {
-      className: Chunk901650.error,
+      className: Chunk578766.error,
       children: Chunk388032.intl.string(Chunk388032.t.cEUT8B)
     }) : this.hasEnoughDiskSpace(module) ? null : (0, Chunk951288.jsx)("div", {
-      className: Chunk901650.error,
+      className: Chunk578766.error,
       children: Chunk388032.intl.string(Chunk388032.t["duXbE/"])
     })
   }

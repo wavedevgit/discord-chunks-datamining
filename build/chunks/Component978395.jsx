@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk116649 = require("./116649.js");
+  Chunk593540 = require("./593540.js");
 
 function M(e) {
   let {
@@ -60,7 +60,7 @@ function M(e) {
   }), q = (null == M ? true : M.widgets) != null && M.widgets.length > 0, X = z && q, Q = (0, d.I5)(n);
   return (0, r.jsxs)(a.Ttm, {
     fade: true,
-    className: x.body,
+    className: L.body,
     children: [(0, r.jsx)(I.Z, {
       user: t,
       guildId: null == k ? true : k.id,
@@ -80,7 +80,7 @@ function M(e) {
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(g.Z, {
           userId: t.id
-        }), !Y && (0, r.jsx)(S.Z, {
+        }), !Y && (0, r.jsx)(T.Z, {
           userId: t.id,
           isVisible: j,
           onOpenProfile: U
@@ -108,9 +108,9 @@ function M(e) {
         section: e
       })
     }), t.isProvisional ? (0, r.jsx)(v.Z.Overlay, {
-      className: x.card,
+      className: L.card,
       children: (0, r.jsx)(y.Z, {
-        heading: L.intl.string(L.t.Iyka0U),
+        heading: x.intl.string(x.t.Iyka0U),
         headingIcon: (0, r.jsx)(a.Mgn, {
           size: "xxs",
           color: a.TVs.colors.HEADER_PRIMARY
@@ -125,7 +125,7 @@ function M(e) {
       bio: null == M ? true : M.bio,
       hidePersonalInformation: Y,
       onClose: B
-    }), X && (0, r.jsx)(T.Z, {
+    }), X && (0, r.jsx)(S.Z, {
       widgets: null == M ? true : M.widgets,
       onClick: () => {
         null == U || U({

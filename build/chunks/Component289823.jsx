@@ -2,7 +2,7 @@
 /** chunk id: 289823, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk3682 = require("./3682.js"),
-  Chunk647718 = require("./647718.js");
+  Chunk708311 = require("./708311.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -188,10 +188,10 @@ let I = {
   }
 };
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t ? I[n].typing : e ? I[n].status : I[n].default
 }
-let T = function(e) {
+let S = function(e) {
   var {
     backSrc: t,
     frontSrc: n,
@@ -206,13 +206,13 @@ let T = function(e) {
   } = c.ny6[a], {
     statusCoords: y,
     frontAvatarOffsetPx: I,
-    frontAvatarSizePx: T,
+    frontAvatarSizePx: S,
     backAvatarSizePx: A
   } = i.useMemo(() => {
     var e;
     let t = "".concat(b, "-").concat(s);
     return null != (e = g[t]) ? e : E(a, s, t)
-  }, [b, s, a]), C = S(null != l, s, a);
+  }, [b, s, a]), C = T(null != l, s, a);
   return (0, r.jsxs)("div", {
     style: p({
       width: b,
@@ -238,7 +238,7 @@ let T = function(e) {
         },
         children: (0, r.jsx)(v, {
           src: n,
-          size: T,
+          size: S,
           isTyping: s,
           status: l
         })

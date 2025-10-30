@@ -14,8 +14,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk984370 = require("./984370.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk413140 = require("./413140.js"),
-  Chunk430864 = require("./430864.js");
+  Chunk323129 = require("./323129.js"),
+  Chunk602009 = require("./602009.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,7 +51,7 @@ class j extends Chunk647438.Component {
     let t = null != module.topic && module.topic.length > 0;
     return null != module.linkedLobby || exports ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk984370.Z.Divider, {}), (0, Chunk951288.jsxs)("div", {
-        className: a()(Chunk413140.topic, Chunk413140.expandable, Chunk430864.markup),
+        className: a()(Chunk323129.topic, Chunk323129.expandable, Chunk602009.markup),
         onMouseDown: this.onMouseDown,
         onMouseMove: this.onMouseMove,
         onMouseUp: this.onMouseUp,
@@ -60,7 +60,7 @@ class j extends Chunk647438.Component {
         children: [(0, Chunk951288.jsx)(Chunk481060.P3F, {
           onClick: this.handleClick,
           "aria-label": Chunk388032.intl.string(Chunk388032.t.mKwsSp),
-          className: Chunk413140.topicClickTarget
+          className: Chunk323129.topicClickTarget
         }), null == module.linkedLobby || exports ? Chunk454585.Z.parseTopic(module.topic, true, {
           channelId: module.id
         }) : Chunk388032.intl.string(Chunk388032.t["XJVlf/"])]
@@ -94,7 +94,7 @@ class j extends Chunk647438.Component {
       (0, c.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("57804"), n.e("49049"), n.e("89250"), n.e("62856"), n.e("66201"), n.e("91315"), n.e("30474"), n.e("91053"), n.e("24783"), n.e("30442")]).then(n.bind(n, 439635));
+        } = await Promise.all([n.e("57804"), n.e("49049"), n.e("89250"), n.e("62856"), n.e("66201"), n.e("91315"), n.e("30474"), n.e("63962"), n.e("24783"), n.e("15261")]).then(n.bind(n, 439635));
         return n => (0, l.jsx)(e, function(e, t) {
           return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);

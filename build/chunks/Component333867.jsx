@@ -2,7 +2,7 @@
 /** chunk id: 333867, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -78,14 +78,14 @@ let O = "payment-modal",
   v = "gift-payment-modal",
   I = new Set([Chunk409813.h8.REVIEW, Chunk409813.h8.CONFIRM, Chunk409813.h8.GIFT_CUSTOMIZATION]);
 
-function S(e) {
+function T(e) {
   let t, {
       skuId: f,
       isGift: h = false,
       giftMessage: g,
       giftingOrigin: y,
-      onClose: S,
-      onComplete: T,
+      onClose: T,
+      onComplete: S,
       analyticsLocations: A,
       analyticsObject: C,
       giftRecipient: N,
@@ -96,9 +96,9 @@ function S(e) {
     D = e => {
       t = e
     },
-    L = h ? v : O,
-    x = u.default.getCurrentUser();
-  if (!(null == x ? true : x.verified)) return void(0, a.ZDy)(async () => {
+    x = h ? v : O,
+    L = u.default.getCurrentUser();
+  if (!(null == L ? true : L.verified)) return void(0, a.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("88470"), n.e("20102")]).then(n.bind(n, 444688));
@@ -108,7 +108,7 @@ function S(e) {
       } = t, i = b(t, ["onClose"]);
       return (0, r.jsx)(e, E(m({}, i), {
         onClose: () => {
-          n(), null == S || S(false)
+          n(), null == T || T(false)
         }
       }))
     }
@@ -131,16 +131,16 @@ function S(e) {
       analyticsLocations: A,
       giftRecipient: N,
       onClose: e => {
-        t(), null == S || S(e)
+        t(), null == T || T(e)
       },
       onComplete: () => {
-        P = true, null == T || T()
+        P = true, null == S || S()
       },
       returnRef: n,
       onStepChange: D
     }))
   }, {
-    modalKey: L,
+    modalKey: x,
     onCloseCallback: () => {
       P || d.default.track(p.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: w,
@@ -149,12 +149,12 @@ function S(e) {
         is_gift: h,
         sku_id: f,
         location_stack: A
-      }), (0, s.fw)(), (0, l.p)(), null == S || S(P), P && (0, c.qg)({
+      }), (0, s.fw)(), (0, l.p)(), null == T || T(P), P && (0, c.qg)({
         variantsReturnStyle: R
       })
     },
     onCloseRequest: () => {
-      null != t && I.has(t) && (0, a.Mr3)(L)
+      null != t && I.has(t) && (0, a.Mr3)(x)
     }
   })
 }

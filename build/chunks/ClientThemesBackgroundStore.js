@@ -25,7 +25,7 @@ var a, Chunk442837 = require("./442837.js"),
   Chunk469115 = require("./469115.js"),
   Chunk874893 = require("./874893.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -71,12 +71,12 @@ let A = true,
 function D() {
   A && (r = true), C = false
 }
-let L = () => {
+let x = () => {
     let e = !Chunk74538.ZP.canUseClientThemes(Chunk594174.default.getCurrentUser());
     if (module === A) returnfalse;
     A = module
   },
-  x = () => {
+  L = () => {
     if (!Chunk238514.Z.shouldSync("appearance")) returnfalse;
     let e = Chunk695346.L1.getSetting().backgroundGradientPresetId;
     if (null == module) {
@@ -101,7 +101,7 @@ let L = () => {
   };
 class k extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (r = (null == e ? true : e.gradientPresetId) != null ? I.qt[e.gradientPresetId] : true), this.waitFor(g.Z, u.Z, f.Z, _.ZP, h.Z, E.default), this.syncWith([E.default], L), this.syncWith([u.Z], x)
+    null != e && (r = (null == e ? true : e.gradientPresetId) != null ? I.qt[e.gradientPresetId] : true), this.waitFor(g.Z, u.Z, f.Z, _.ZP, h.Z, E.default), this.syncWith([E.default], x), this.syncWith([u.Z], L)
   }
   getState() {
     return A ? {} : {
@@ -124,7 +124,7 @@ class k extends(a = Chunk442837.ZP.PersistedStore) {
     return i
   }
   constructor(...e) {
-    super(...e), T(this, "migrations", [e => {
+    super(...e), S(this, "migrations", [e => {
       var t;
       return {
         gradientPresetId: null == e || null == (t = e.gradientPreset) ? true : t.id
@@ -132,7 +132,7 @@ class k extends(a = Chunk442837.ZP.PersistedStore) {
     }])
   }
 }
-T(k, "displayName", "ClientThemesBackgroundStore"), T(k, "persistKey", "ClientThemesBackgroundStore");
+S(k, "displayName", "ClientThemesBackgroundStore"), S(k, "persistKey", "ClientThemesBackgroundStore");
 let j = new k(Chunk570140.Z, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: N,
   UPDATE_MOBILE_PENDING_THEME_INDEX: R,

@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk553330 = require("./553330.js");
+  Chunk805201 = require("./805201.js");
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -97,17 +97,17 @@ function W(e) {
     tryItOutBanner: J,
     tryItOutProfileEffect: $,
     tryItOutAvatarDecoration: ee
-  } = (0, a.cj)([T.Z], () => {
-    let e = T.Z.getAllPending(),
-      t = T.Z.getErrors();
-    return Y(V({}, e, T.Z.getAllTryItOut()), {
+  } = (0, a.cj)([S.Z], () => {
+    let e = S.Z.getAllPending(),
+      t = S.Z.getErrors();
+    return Y(V({}, e, S.Z.getAllTryItOut()), {
       errors: t
     })
   }), et = (0, p.Z)($), {
     preset: en,
     onShuffle: er
   } = (0, g.Z)(), ei = i.useRef(null);
-  (0, S.Z)(ei, G.Y_.TRY_IT_OUT);
+  (0, T.Z)(ei, G.Y_.TRY_IT_OUT);
   let {
     analyticsLocations: ea,
     newestAnalyticsLocation: eo,
@@ -185,7 +185,7 @@ function W(e) {
             onThemeColorsChange: I.rf,
             showPremiumIcon: false,
             preventDisabled: true
-          }), (0, r.jsx)(L.Z, {
+          }), (0, r.jsx)(x.Z, {
             className: Z.customizationSection,
             isTryItOutFlow: true,
             showRemoveBannerButton: null != J,
@@ -206,7 +206,7 @@ function W(e) {
           }, "decoration"), (0, r.jsx)(w.Z, {
             user: F,
             className: Z.customizationSection
-          }), (0, r.jsx)(x.Z, {
+          }), (0, r.jsx)(L.Z, {
             className: Z.customizationSection,
             isTryItOutFlow: true,
             initialSelectedEffect: et,

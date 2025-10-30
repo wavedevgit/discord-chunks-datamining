@@ -24,10 +24,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk216701 = require("./216701.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk530815 = require("./530815.js");
-let S = 60;
+  Chunk236426 = require("./236426.js");
+let T = 60;
 
-function T(e) {
+function S(e) {
   let {
     action: t
   } = e, n = (0, l.e7)([_.Z], () => _.Z.getChannel(t.channelId)), i = (0, d.ZP)(n, true);
@@ -95,7 +95,7 @@ function C(e) {
       delay: 400
     }).start()
   }, [b, D, R, O]);
-  let L = i.useCallback(() => {
+  let x = i.useCallback(() => {
     null != y && (0, m.gp)(f, y.channelId)
   }, [f, y]);
   return null == h || C && !R ? null : (0, r.jsx)("div", {
@@ -104,12 +104,12 @@ function C(e) {
       style: {
         marginBottom: D.interpolate({
           inputRange: [0, 1],
-          outputRange: [-S, 0]
+          outputRange: [-T, 0]
         })
       },
       children: (0, r.jsxs)(c.P3F, {
         className: o()(I.banner, I.clickable),
-        onClick: L,
+        onClick: x,
         children: [(0, r.jsx)(A, {
           channelId: y.channelId,
           emojiId: null == (t = y.emoji) ? true : t.id,
@@ -122,7 +122,7 @@ function C(e) {
             children: v.intl.format(v.t["/beONw"], {
               step: y.title
             })
-          }), (0, r.jsx)(T, {
+          }), (0, r.jsx)(S, {
             action: y
           })]
         }), (0, r.jsx)("div", {
@@ -139,7 +139,7 @@ function C(e) {
       style: {
         marginBottom: w.interpolate({
           inputRange: [0, 1],
-          outputRange: [-S, 0]
+          outputRange: [-T, 0]
         })
       },
       children: [(0, r.jsx)(A, {

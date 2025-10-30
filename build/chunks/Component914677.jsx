@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk780384 = require("./780384.js"),
   Chunk410030 = require("./410030.js"),
   Chunk119269 = require("./119269.jsx"),
-  Chunk106742 = require("./106742.js");
+  Chunk458368 = require("./458368.js");
 let c = "0.3",
   u = "0.2",
   d = "var(--premium-tier-2-purple)",
@@ -67,8 +67,8 @@ let c = "0.3",
     let O = (0, o.ZP)(),
       v = (0, a.ap)(O),
       I = (1 - b / 100) * E,
-      S = m(f),
-      T = h(f, v),
+      T = m(f),
+      S = h(f, v),
       A = null != _ ? _ : g(v, f);
     return (0, r.jsxs)("div", {
       className: l.circleContainer,
@@ -82,8 +82,8 @@ let c = "0.3",
           r: "".concat(p),
           cx: "50%",
           cy: "50%",
-          stroke: S,
-          strokeOpacity: T
+          stroke: T,
+          strokeOpacity: S
         }), (0, r.jsx)("circle", {
           stroke: A,
           strokeWidth: d,

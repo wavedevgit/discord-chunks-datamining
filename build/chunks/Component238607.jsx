@@ -56,8 +56,8 @@ function m(e) {
   });
   if (null == y) return null;
   let {
-    isJoining: S,
-    handleJoinRequest: T,
+    isJoining: T,
+    handleJoinRequest: S,
     buttonCTA: A,
     tooltip: C,
     isEnabled: N,
@@ -70,12 +70,12 @@ function m(e) {
       icon: R ? a.YVR : a.iWm,
       text: A,
       disabled: !N,
-      loading: S,
+      loading: T,
       fullWidth: E !== p.l.MODAL_V2,
       onClick: e => {
         e.stopPropagation(), null == m || m({
           action: R ? "PRESS_JOIN_BUTTON" : "PRESS_ASK_TO_JOIN_BUTTON"
-        }), T()
+        }), S()
       }
     })
   })

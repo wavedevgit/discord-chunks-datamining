@@ -2,7 +2,7 @@
 /** chunk id: 920557, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => L
+  K: () => x
 }), require("./388685.js"), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk139256 = require("./139256.jsx"),
   Chunk294608 = require("./294608.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk390840 = require("./390840.js");
+  Chunk525799 = require("./525799.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,9 +46,9 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -56,7 +56,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -76,11 +76,11 @@ function R(e) {
   } = e, l = (0, _.Dt)(), {
     channelId: c,
     messageId: u
-  } = (0, b.pE)(), [g, E] = i.useState(""), [y, v] = i.useState(false), I = "" !== g && y, S = i.useCallback(() => {
+  } = (0, b.pE)(), [g, E] = i.useState(""), [y, v] = i.useState(false), I = "" !== g && y, T = i.useCallback(() => {
     E((0, m.e1)(u, c, o))
-  }, [u, c, o]), T = i.useCallback(() => {
-    S(), v(true)
-  }, [S]), A = i.useCallback(() => {
+  }, [u, c, o]), S = i.useCallback(() => {
+    T(), v(true)
+  }, [T]), A = i.useCallback(() => {
     v(false)
   }, []), C = i.useCallback(() => {
     (0, h.n)({
@@ -90,10 +90,10 @@ function R(e) {
     })
   }, [c, u, o]);
   return i.useEffect(() => {
-    if (y) return p.Z.addReactChangeListener(S), () => {
-      p.Z.removeReactChangeListener(S)
+    if (y) return p.Z.addReactChangeListener(T), () => {
+      p.Z.removeReactChangeListener(T)
     }
-  }, [y, S]), (0, r.jsxs)("div", {
+  }, [y, T]), (0, r.jsxs)("div", {
     className: O.votesData,
     children: [a ? (0, r.jsxs)(r.Fragment, {
       children: ["" !== g ? (0, r.jsx)(d.u, {
@@ -106,9 +106,9 @@ function R(e) {
         forceOpen: I,
         "aria-label": false,
         children: (0, r.jsx)(f.Avr, {
-          onMouseEnter: T,
+          onMouseEnter: S,
           onMouseLeave: A,
-          onFocus: T,
+          onFocus: S,
           onBlur: A,
           onClick: C,
           "aria-describedby": I ? l : true,
@@ -117,9 +117,9 @@ function R(e) {
           textVariant: "text-xs/semibold"
         })
       }) : (0, r.jsx)(f.Avr, {
-        onMouseEnter: T,
+        onMouseEnter: S,
         onMouseLeave: A,
-        onFocus: T,
+        onFocus: S,
         onBlur: A,
         onClick: C,
         text: n,
@@ -244,13 +244,13 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   var {
     isExpired: t,
     answersInteraction: n,
     canShowVoteCounts: i,
     canTapAnswers: a
-  } = e, o = S(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
+  } = e, o = T(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
   return (0, r.jsx)(E.$e, I({
     className: O.answersContainer,
     answerClassName: O.answer,

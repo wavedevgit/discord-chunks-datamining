@@ -37,7 +37,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,7 +62,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -111,7 +111,7 @@ function w(e, t) {
     o = i.useCallback(t => {
       var n;
       let r = (0, v.Z)(e, t, null != a.modal ? "modal" : "message");
-      return null == (n = a.setValidationErrors) || n.call(a, t => A(S({}, t), {
+      return null == (n = a.setValidationErrors) || n.call(a, t => A(T({}, t), {
         [e.id]: r
       })), null == r
     }, [e, a]);
@@ -161,7 +161,7 @@ function D(e, t, n, r) {
   }
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   let r = (0, a.e7)([O.Z], () => O.Z.getInteractionComponentState(e.customId, t.id)),
     {
       error: s,
@@ -184,7 +184,7 @@ function L(e, t, n) {
   }
 }
 
-function x(e) {
+function L(e) {
   return () => {
     throw Error("".concat(e, " does not support state"))
   }
@@ -217,7 +217,7 @@ function j(e) {
       getParents: e => (0, y.cd)(n.components, e)
     };
     if (null != a) return {
-      useComponentState: L.bind(null, a),
+      useComponentState: x.bind(null, a),
       channelId: a.channelId,
       containerId: a.customId,
       modal: a,
@@ -227,7 +227,7 @@ function j(e) {
       getParents: e => (0, y.cd)(a.components, e)
     };
     if (null != o) return {
-      useComponentState: x("ApplicationWidget"),
+      useComponentState: L("ApplicationWidget"),
       containerId: R(o),
       applicationWidget: o,
       validators: s,

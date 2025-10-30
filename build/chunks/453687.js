@@ -54,9 +54,9 @@ function f(e, t, n) {
     O = (0, i.Z)(e),
     v = !O && (null == n ? true : n.hasTimestamp) !== false,
     I = !O,
-    S = l(e, t),
-    T = s(e),
-    A = u ? T : S,
+    T = l(e, t),
+    S = s(e),
+    A = u ? S : T,
     C = I ? "".concat(A, " ").concat(r.Z0) : "";
   if (y) {
     let t = o(e);

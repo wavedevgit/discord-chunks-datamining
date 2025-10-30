@@ -86,7 +86,7 @@ function I(e) {
   a.add(r), y.set(i, a), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
 }
 
-function S(e) {
+function T(e) {
   var t;
   let n = v(e),
     r = h.get(n);
@@ -96,7 +96,7 @@ function S(e) {
   null == (t = y.get(r.saveData.channelId)) || t.delete(i), b.delete(i), E.delete(i), g = Date.now()
 }
 
-function T() {
+function S() {
   m = true
 }
 
@@ -122,7 +122,7 @@ function R(e) {
   let {
     savedMessageData: t
   } = e;
-  return S(t)
+  return T(t)
 }
 
 function P(e) {
@@ -160,7 +160,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     message: t
   } = e;
@@ -175,7 +175,7 @@ function L(e) {
   i.message = (0, s.wi)(r.message, t), h.set(n, i)
 }
 
-function x() {
+function L() {
   if (0 === b.size || m) returnfalse;
   m = true
 }
@@ -272,23 +272,23 @@ class B extends(r = Chunk442837.ZP.Store) {
 }
 u(B, "displayName", "SavedMessagesStore");
 let Z = new B(Chunk570140.Z, {
-  POST_CONNECTION_OPEN: T,
+  POST_CONNECTION_OPEN: S,
   LOGOUT: A,
   SAVED_MESSAGES_UPDATE: C,
   SAVED_MESSAGE_CREATE: N,
   SAVED_MESSAGE_DELETE: R,
   MESSAGE_DELETE: w,
   MESSAGE_DELETE_BULK: D,
-  MESSAGE_UPDATE: L,
-  GUILD_CREATE: x,
-  GUILD_UPDATE: x,
-  GUILD_DELETE: x,
+  MESSAGE_UPDATE: x,
+  GUILD_CREATE: L,
+  GUILD_UPDATE: L,
+  GUILD_DELETE: L,
   CHANNEL_CREATE: M,
   CHANNEL_UPDATES: k,
   CHANNEL_DELETE: j,
   GUILD_MEMBER_UPDATE: U,
-  GUILD_ROLE_CREATE: x,
-  GUILD_ROLE_UPDATE: x,
-  GUILD_ROLE_DELETE: x,
+  GUILD_ROLE_CREATE: L,
+  GUILD_ROLE_UPDATE: L,
+  GUILD_ROLE_DELETE: L,
   MESSAGE_REMINDER_DUE: G
 })

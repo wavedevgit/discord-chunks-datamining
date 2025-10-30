@@ -38,8 +38,8 @@ function f(e) {
   }, {
     disable: !E || !p,
     autoTrackExposure: true
-  }).enabled, S = (0, i.O)(v, d, I);
+  }).enabled, T = (0, i.O)(v, d, I);
   return r.useEffect(() => () => {
     c.Z.handleMessageLostVisibility(b, c.k.ANNOUNCEMENT)
-  }, [b]), S
+  }, [b]), T
 }

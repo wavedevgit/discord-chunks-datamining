@@ -29,10 +29,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk740508 = require("./740508.js"),
-  Chunk315091 = require("./315091.js"),
-  Chunk149715 = require("./149715.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk313911 = require("./313911.js"),
+  Chunk285236 = require("./285236.js"),
+  Chunk465106 = require("./465106.js"),
+  Chunk10198 = require("./10198.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -43,7 +43,7 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function L(e) {
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,7 +68,7 @@ function x(e, t) {
 }
 
 function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -137,12 +137,12 @@ function Z(e) {
     isSubgame: O = false,
     parentGame: v
   } = e, I = (0, s.cj)([_.ZP, E.Z, b.Z], () => (0, _.FZ)(t, _.ZP, E.Z, b.Z)), {
-    canToggleDetection: S,
+    canToggleDetection: T,
     isCurrentGameDetectionEnabled: R
   } = (0, s.cj)([_.ZP], () => ({
     canToggleDetection: null == v || _.ZP.isDetectionEnabled(v),
     isCurrentGameDetectionEnabled: _.ZP.isDetectionEnabled(I)
-  })), w = (0, s.e7)([_.ZP], () => _.ZP.getVisibleGame()), [D, x] = i.useState(false), k = i.useMemo(() => (0, g.le)(I) ? O ? I.gameName : C.intl.formatToPlainString(C.t.G6BGdx, {
+  })), w = (0, s.e7)([_.ZP], () => _.ZP.getVisibleGame()), [D, L] = i.useState(false), k = i.useMemo(() => (0, g.le)(I) ? O ? I.gameName : C.intl.formatToPlainString(C.t.G6BGdx, {
     subgameName: I.gameName
   }) : I.name, [I, O]), [G, B] = i.useState(null != k ? k : "???"), F = o()(P.flexCenter, {
     [N.game]: !a,
@@ -175,7 +175,7 @@ function Z(e) {
       let {
         Modal: e
       } = await Promise.resolve().then(n.bind(n, 793030));
-      return t => (0, r.jsx)(e, M(L({}, t), {
+      return t => (0, r.jsx)(e, M(x({}, t), {
         title: C.intl.formatToPlainString(C.t.PZ4fKc, {
           platform: k
         }),
@@ -200,20 +200,20 @@ function Z(e) {
   function z() {
     if (D) return;
     let e = null != I.id ? E.Z.getDetectableGame(I.id) : null;
-    y.default.track(T.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
+    y.default.track(S.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? true : e.id,
       game_name: (0, g.le)(I) ? I.gameName : I.name
-    }), x(true), (0, c.ZDy)(async () => {
+    }), L(true), (0, c.ZDy)(async () => {
       let {
         default: t
       } = await n.e("82077").then(n.bind(n, 953848));
       return n => {
         var i, a, o;
-        return (0, r.jsx)(t, M(L({}, n), {
+        return (0, r.jsx)(t, M(x({}, n), {
           detectedActivity: {
             name: null != (i = I.name) ? i : "",
             application_id: null != (o = null != (a = null == e ? true : e.id) ? a : I.id) ? o : true,
-            type: T.IIU.PLAYING
+            type: S.IIU.PLAYING
           },
           onSubmitted: () => {}
         }))
@@ -230,7 +230,7 @@ function Z(e) {
       }), (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         text: C.intl.string(C.t["4PJP5p"]),
-        children: e => (0, r.jsx)(h.Z, M(L({
+        children: e => (0, r.jsx)(h.Z, M(x({
           className: N.gameVerifiedIcon,
           size: U,
           color: l.Z.unsafe_rawColors.BRAND_500.css
@@ -288,7 +288,7 @@ function Z(e) {
     }), i = t ? (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
       text: C.intl.string(C.t.Vfw2L5),
-      children: e => (0, r.jsx)("i", L({
+      children: e => (0, r.jsx)("i", x({
         className: N.overlayWarningIcon
       }, e))
     }) : null;
@@ -297,7 +297,7 @@ function Z(e) {
       children: [i, (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         text: C.intl.string(C.t["1+O+Tu"]),
-        children: t => (0, r.jsx)(c.P3F, M(L({}, t), {
+        children: t => (0, r.jsx)(c.P3F, M(x({}, t), {
           "aria-label": C.intl.string(C.t["1+O+Tu"]),
           className: N.toggleIcon,
           onClick: () => W(!e),
@@ -310,7 +310,7 @@ function Z(e) {
   function J() {
     let {
       detectable: e
-    } = I, t = e && S ? (0, r.jsx)(c.tEF, {
+    } = I, t = e && T ? (0, r.jsx)(c.tEF, {
       size: "md",
       color: "currentColor",
       className: N.toggleIconOn,
@@ -318,7 +318,7 @@ function Z(e) {
     }) : (0, r.jsx)(c.kZF, {
       size: "md",
       color: "currentColor",
-      className: S ? N.toggleIconOff : N.toggleIconInactive,
+      className: T ? N.toggleIconOff : N.toggleIconInactive,
       colorClass: N.fill
     });
     return (0, r.jsx)("div", {
@@ -326,7 +326,7 @@ function Z(e) {
       children: (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         text: C.intl.string(C.t.QmitzM),
-        children: e => S ? (0, r.jsx)(c.P3F, M(L({}, e), {
+        children: e => T ? (0, r.jsx)(c.P3F, M(x({}, e), {
           "aria-label": C.intl.string(C.t.QmitzM),
           className: N.toggleIcon,
           onClick: K,
@@ -342,7 +342,7 @@ function Z(e) {
       children: (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         text: C.intl.string(C.t["y0B+lo"]),
-        children: e => (0, r.jsx)(c.P3F, M(L({}, e), {
+        children: e => (0, r.jsx)(c.P3F, M(x({}, e), {
           "aria-label": C.intl.string(C.t["y0B+lo"]),
           className: N.toggleIcon,
           onClick: z,
@@ -390,14 +390,14 @@ function Z(e) {
 
 function F() {
   return (0, Chunk951288.jsx)("div", {
-    className: o()(Chunk149715.flexCenter, Chunk740508.notDetected, Chunk740508.activeGame),
+    className: o()(Chunk465106.flexCenter, Chunk313911.notDetected, Chunk313911.activeGame),
     children: (0, Chunk951288.jsxs)("div", {
-      className: o()(Chunk740508.gameNameLastPlayed, Chunk149715.vertical),
+      className: o()(Chunk313911.gameNameLastPlayed, Chunk465106.vertical),
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk740508.gameName,
+        className: Chunk313911.gameName,
         children: Chunk388032.intl.string(Chunk388032.t.H68X9x)
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk740508.lastPlayed,
+        className: Chunk313911.lastPlayed,
         children: Chunk388032.intl.string(Chunk388032.t.T5Ilmw)
       })]
     })
@@ -458,7 +458,7 @@ let H = (0, Chunk251625.oH)(function() {
         }, (0, _.rH)(e)))
       })
     }
-    return i.useEffect(() => ((0, p.Ky)(), p.P7), []), (0, r.jsxs)(S.Z, {
+    return i.useEffect(() => ((0, p.Ky)(), p.P7), []), (0, r.jsxs)(T.Z, {
       title: n ? C.intl.string(C.t.AVDyEj) : null,
       className: t,
       children: [null != l ? (0, r.jsx)(Z, {
@@ -482,7 +482,7 @@ let H = (0, Chunk251625.oH)(function() {
           },
           align: "center",
           position: "bottom",
-          children: e => (0, r.jsx)(c.Avr, M(L({}, e), {
+          children: e => (0, r.jsx)(c.Avr, M(x({}, e), {
             buttonRef: h,
             variant: "primary",
             textVariant: "text-sm/medium",

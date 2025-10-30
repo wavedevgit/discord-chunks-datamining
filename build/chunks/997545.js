@@ -2,7 +2,7 @@
 /** chunk id: 997545, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js"), require("./415506.js"), require("./49124.js"), require("./642613.js"), require("./35282.js"), require("./539854.js");
 var Chunk595182 = require("./595182.js"),
   i = require.n(Chunk595182),
@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,13 +75,13 @@ function w(e) {
 function D(e) {
   return null != e && 0 !== e ? e + 1 : 0
 }
-class L extends Chunk839548.Z {
+class x extends Chunk839548.Z {
   static create(e, t, n) {
-    let r = new L(e, t, true);
+    let r = new x(e, t, true);
     return r.initialize(n), r
   }
   static createReplay(e, t) {
-    let n = new L(e, "0", true),
+    let n = new x(e, "0", true),
       r = (0, b.zS)();
     n.initializeStreamParameters([{
       type: O.Tr.VIDEO,
@@ -181,11 +181,11 @@ class L extends Chunk839548.Z {
               mode: this.chooseEncryptionMode(e.modes, r),
               codecs: this.codecs
             }), this.on(m.Sh.Stats, this.handleStats);
-            let S = this.getUserOptions();
-            for (let e of (S.forEach(e => {
+            let T = this.getUserOptions();
+            for (let e of (T.forEach(e => {
                 var t, n;
                 return this.logger.info("Creating user: ".concat(e.id, " with audio SSRC: ").concat(e.ssrc, " and video SSRCs: ").concat(null != (n = null == (t = e.videoSsrcs) ? true : t.join(",")) ? n : 0))
-              }), this.mergeUsers(S), this.emit(m.Sh.RemoteStreamsReady, S.length), Object.keys(this.localSpeakingFlags))) e !== this.userId && this.setSpeakingFlags(e, this.localSpeakingFlags[e])
+              }), this.mergeUsers(T), this.emit(m.Sh.RemoteStreamsReady, T.length), Object.keys(this.localSpeakingFlags))) e !== this.userId && this.setSpeakingFlags(e, this.localSpeakingFlags[e])
           })
         })
       };
@@ -644,7 +644,7 @@ class L extends Chunk839548.Z {
         let r = e.findIndex(e => e.rid === t.rid);
         if (false === r) return void n(Error("Invalid rid"));
         let i = [];
-        l()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = S({}, e[r]), i.push(S({}, e[r]))), this.conn.setTransportOptions({
+        l()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = T({}, e[r]), i.push(T({}, e[r]))), this.conn.setTransportOptions({
           streamParameters: i
         })
       }
@@ -762,7 +762,7 @@ class L extends Chunk839548.Z {
       };
       this.experimentFlags.has(O.V8.RESET_DECODER_ON_ERRORS) && (n.params["reset-on-errors"] = "1"), this.experimentFlags.has(O.V8.SOFTWARE_FALLBACK_ON_ERRORS) && (n.params["fallback-after-errors"] = "3"), this.experimentFlags.has(O.V8.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS) && (n.params["fallback-on-consecutive-errors"] = "1"), this.experimentFlags.has(O.V8.SIGNAL_AV1_HARDWARE_DECODE) && (n.params["hardware-av1-decode"] = "1");
       let r = this.hardwareH264 && this.useElectronVideo ? "1" : "0";
-      n.params["hardware-h264"] = r, c.push(n), o.name === t && (u = A(S({}, n), {
+      n.params["hardware-h264"] = r, c.push(n), o.name === t && (u = A(T({}, n), {
         params: this.getCodecParams(o.name, false)
       }), this.experimentFlags.has(O.V8.VIDEOTOOLBOX_RATE_CONTROL) && (u.params["fixed-rate-presentation-timestamps"] = "1"), u.params["hardware-h264"] = r)
     }
@@ -777,7 +777,7 @@ class L extends Chunk839548.Z {
     return this.keyframeInterval > 0 && this.clipsKeyFrameInterval > 0 ? Math.min(this.keyframeInterval, this.clipsKeyFrameInterval) : Math.max(this.keyframeInterval, this.clipsKeyFrameInterval)
   }
   getConnectionTransportOptions() {
-    let e = A(S({
+    let e = A(T({
       selfMute: this.selfMute,
       inputMode: Chunk149396.GO[this.inputMode],
       inputModeOptions: this.createInputModeOptions(),
@@ -894,7 +894,7 @@ class L extends Chunk839548.Z {
         i.forEach((t, n) => {
           if (t.rid === e.rid) {
             let r = this.simulcastLQDisabledSsrc !== e.ssrc && e.active;
-            i[n] = A(S({}, t), {
+            i[n] = A(T({}, t), {
               ssrc: e.ssrc,
               rtxSsrc: e.rtxSsrc,
               active: r

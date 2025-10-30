@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk879048 = require("./879048.js");
+  Chunk189730 = require("./189730.js");
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,8 +69,8 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = 10,
-  x = 20,
+let x = 10,
+  L = 20,
   M = 15,
   k = 4,
   j = 5,
@@ -80,13 +80,13 @@ let L = 10,
 function B(e) {
   var t;
   let n = {
-      [T.S7.PACKAGE_ACTION_ADVENTURE]: C.t.PYFVdf,
-      [T.S7.PACKAGE_RPG_MMO]: C.t.rFQo2F,
-      [T.S7.PACKAGE_RACING_SPORTS]: C.t.zDRa6g,
-      [T.S7.PACKAGE_SANDBOX_CREATIVE]: C.t.vz9U2Q,
-      [T.S7.PACKAGE_FAMILY_FRIENDLY]: C.t.IOiAE0,
-      [T.S7.PACKAGE_HOLIDAY_SEASON]: C.t.cJPqvD,
-      [T.S7.PACKAGE_NEW_YEARS]: C.t.S0w2mv
+      [S.S7.PACKAGE_ACTION_ADVENTURE]: C.t.PYFVdf,
+      [S.S7.PACKAGE_RPG_MMO]: C.t.rFQo2F,
+      [S.S7.PACKAGE_RACING_SPORTS]: C.t.zDRa6g,
+      [S.S7.PACKAGE_SANDBOX_CREATIVE]: C.t.vz9U2Q,
+      [S.S7.PACKAGE_FAMILY_FRIENDLY]: C.t.IOiAE0,
+      [S.S7.PACKAGE_HOLIDAY_SEASON]: C.t.cJPqvD,
+      [S.S7.PACKAGE_NEW_YEARS]: C.t.S0w2mv
     },
     r = e.config.features.find(e => e in n),
     i = null != (t = null != r ? n[r] : null) ? t : C.t["D+DkEH"];
@@ -151,7 +151,7 @@ let Z = e => {
       }), await (0, c.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("89311"), n.e("83123")]).then(n.bind(n, 644941));
+        } = await Promise.all([n.e("89311"), n.e("20074")]).then(n.bind(n, 644941));
         return t => (0, r.jsx)(e, P({
           applicationId: o.applicationId,
           source: h.m1.GameSheet,
@@ -160,7 +160,7 @@ let Z = e => {
       }, {
         onCloseCallback: _
       }), u()
-    }, S = i.useCallback(e => {
+    }, T = i.useCallback(e => {
       if (null == b.current || E) return;
       let t = b.current.getBoundingClientRect(),
         n = e.clientX - t.left,
@@ -170,7 +170,7 @@ let Z = e => {
         o = -((r - a) / a * M),
         s = (n - i) / i * M;
       b.current.style.transform = "rotateX(".concat(o, "deg) rotateY(").concat(s, "deg)")
-    }, [E]), T = i.useCallback(() => {
+    }, [E]), S = i.useCallback(() => {
       null == b.current || E || (b.current.style.transform = "rotateX(0deg) rotateY(0deg)")
     }, [E]);
     return (0, r.jsx)(s.u, {
@@ -178,8 +178,8 @@ let Z = e => {
       children: (0, r.jsx)(c.P3F, {
         className: N.gameClickable,
         onClick: I,
-        onMouseMove: S,
-        onMouseLeave: T,
+        onMouseMove: T,
+        onMouseLeave: S,
         children: (0, r.jsx)("div", {
           ref: b,
           className: N.coverArtContainer,
@@ -236,7 +236,7 @@ function H(e) {
   }, [o]);
   let g = (0, a.e7)([p.Z], () => o.some(e => p.Z.isFetching(e))),
     E = (0, a.e7)([p.Z], () => o.some(e => p.Z.didFetchingFail(e))),
-    y = (0, a.Wu)([p.Z], () => o.map(e => p.Z.getGame(e)).filter(e => null != e).filter(e => (0, m.z6)(e.applicationId)).slice(0, L)),
+    y = (0, a.Wu)([p.Z], () => o.map(e => p.Z.getGame(e)).filter(e => null != e).filter(e => (0, m.z6)(e.applicationId)).slice(0, x)),
     O = i.useMemo(() => {
       let e = y.length;
       return e <= k ? k - e : e === j ? 0 : e <= U ? U - e : G - e
@@ -244,7 +244,7 @@ function H(e) {
   if (i.useEffect(() => {
       E && (b.default.track(A.rMx.QUEST_GAME_SHEET_ERROR, {
         quest_id: t.id,
-        error_type: S.n.FETCH_FAILED
+        error_type: T.n.FETCH_FAILED
       }), s(), (0, c.ZDy)(async () => {
         let {
           default: e
@@ -252,7 +252,7 @@ function H(e) {
         return t => (0, r.jsx)(e, P({}, t))
       }))
     }, [E, t.id, s]), g && !E) {
-    let e = Math.min(o.length, L);
+    let e = Math.min(o.length, x);
     return (0, r.jsxs)("div", {
       className: N.container,
       children: [(0, r.jsx)(Z, {
@@ -309,9 +309,9 @@ function Y(e) {
   }, I = () => {
     if (_) return o.F;
     null == l || l()
-  }, S = () => {
-    p(true)
   }, T = () => {
+    p(true)
+  }, S = () => {
     p(false)
   };
   return (0, r.jsx)(c.yRy, {
@@ -327,15 +327,15 @@ function Y(e) {
         onClose: t,
         sourceQuestContent: d,
         impressionRef: f,
-        onGameProfileModalOpen: S,
-        onGameProfileModalClose: T
+        onGameProfileModalOpen: T,
+        onGameProfileModalClose: S
       })
     },
     onRequestOpen: v,
     onRequestClose: I,
     position: b,
     align: O,
-    spacing: x,
+    spacing: L,
     scrollBehavior: "close",
     ignoreModalClicks: true,
     children: e => a(e, m)

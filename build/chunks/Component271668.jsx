@@ -31,11 +31,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk689079 = require("./689079.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk57507 = require("./57507.js"),
+  Chunk587222 = require("./587222.js"),
   Chunk239840 = require("./239840.js");
 let D = 512,
-  L = 7,
-  x = 56,
+  x = 7,
+  L = 56,
   M = 16,
   k = 32,
   j = 20,
@@ -72,7 +72,7 @@ let D = 512,
         applicationCommands: !a
       },
       options: {
-        placeholderCount: L,
+        placeholderCount: x,
         limit: C.tn,
         includeFrecency: true
       },
@@ -91,7 +91,7 @@ let D = 512,
       scrollOffset: j,
       searchQuery: ""
     }), er = e => {
-      let t = q.length * (k + M) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? L : 0)) * x - D;
+      let t = q.length * (k + M) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? x : 0)) * L - D;
       Q && e + U > t && ee(), en(e), B(), l.current = e
     }, ei = i.useRef(er);
     i.useEffect(() => {
@@ -140,7 +140,7 @@ let D = 512,
       },
       onMoveSelection: e => {
         if (0 === J.length) returntrue;
-        let t = Q ? L : 0,
+        let t = Q ? x : 0,
           n = J.length + t,
           r = null == Z ? 0 : Z + e;
         return r >= n ? r = n - 1 : r < 0 && (r = 0), V(r), W(true), true
@@ -189,7 +189,7 @@ let D = 512,
         let a = X[t.sectionIndex],
           o = a.data[t.sectionRowIndex],
           s = "".concat(a.section.id, ":").concat(null != (i = null == o ? true : o.id) ? i : e);
-        if (null == o || a.section.id !== o.applicationId && a.section.id !== C.bi.FRECENCY || o.inputType === v.iw.PLACEHOLDER) return (0, r.jsx)(T.Z, {}, s);
+        if (null == o || a.section.id !== o.applicationId && a.section.id !== C.bi.FRECENCY || o.inputType === v.iw.PLACEHOLDER) return (0, r.jsx)(S.Z, {}, s);
         let l = z.find(e => e.id === o.applicationId);
         return (0, r.jsx)(f.ZP.NewCommand, {
           index: e,
@@ -213,7 +213,7 @@ let D = 512,
       className: P.outerWrapper,
       innerClassName: P.wrapper,
       onMouseDown: F,
-      children: [(0, r.jsx)(S.Z, {
+      children: [(0, r.jsx)(T.Z, {
         className: P.rail,
         channel: n,
         sections: z,
@@ -231,7 +231,7 @@ let D = 512,
         renderSectionHeader: ec,
         rowCount: q.length,
         rowCountBySection: eo,
-        rowHeight: x,
+        rowHeight: L,
         sectionHeaderHeight: k,
         sectionMarginBottom: ea,
         ref: H,

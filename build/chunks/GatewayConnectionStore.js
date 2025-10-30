@@ -42,8 +42,8 @@ Chunk955132.Wb.dispatcher.getDispatchHandler = Chunk344651.Z;
 let P = new Chunk710845.Z("ConnectionStore"),
   w = 100,
   D = 0,
-  L = null,
-  x = true,
+  x = null,
+  L = true,
   M = null,
   k = null;
 
@@ -61,12 +61,12 @@ function G() {
   }), !!Chunk955132.Wb.isSessionEstablished() && (Chunk955132.Wb.close(), Chunk955132.Wb.connect())
 }
 async function B(e) {
-  D = Date.now(), L = e.sessionId, I.RR.handleConnectionOpen();
+  D = Date.now(), x = e.sessionId, I.RR.handleConnectionOpen();
   let t = {},
     n = E.Z.getVoiceChannelId();
   if (null != n) {
     var r, i, a, o, s, c, u, d;
-    if ((null == (s = window) || null == (o = s.performance) || null == (a = o.getEntriesByType) || null == (i = a.call(o, "navigation")) || null == (r = i[0]) ? true : r.type) !== "reload" && (null == (c = await (null == R || null == (d = R.processUtils) || null == (u = d.getLastCrash) ? true : u.call(d))) ? true : c.rendererCrashReason) == null && x) m.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
+    if ((null == (s = window) || null == (o = s.performance) || null == (a = o.getEntriesByType) || null == (i = a.call(o, "navigation")) || null == (r = i[0]) ? true : r.type) !== "reload" && (null == (c = await (null == R || null == (d = R.processUtils) || null == (u = d.getLastCrash) ? true : u.call(d))) ? true : c.rendererCrashReason) == null && L) m.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
     else {
       let e = p.Z.getChannel(n);
       null != e && (t = {
@@ -75,7 +75,7 @@ async function B(e) {
       })
     }
   }
-  I.GC.update(t, true), x = false, k = null
+  I.GC.update(t, true), L = false, k = null
 }
 
 function Z() {
@@ -94,7 +94,7 @@ function H(e) {
   return I.GC.update({
     guildId: e.guildId,
     channelId: e.channelId
-  }), k = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, O.isIOS)() && M === A.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(true) : I.Wb.isClosed() && (S.Y(false), I.Wb.connect())), false
+  }), k = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, O.isIOS)() && M === A.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(true) : I.Wb.isClosed() && (T.Y(false), I.Wb.connect())), false
 }
 
 function Y() {
@@ -112,7 +112,7 @@ function K(e) {
   } = e;
   return t.reduce((e, t) => {
     if (f.default.getId() !== t.userId) return e;
-    if (t.sessionId === L) {
+    if (t.sessionId === x) {
       if (null != k) return P.verbose("Ignoring voice state for own session due to VSU lock on channel:", k), e;
       I.GC.setState({
         guildId: t.guildId,
@@ -165,7 +165,7 @@ function Q(e) {
 }
 
 function J(e) {
-  return (0, O.isIOS)() ? (f.default.isAuthenticated() && (M === A.$7l.INACTIVE && e.state === A.$7l.BACKGROUND && null == I.GC.channelId ? I.Wb.close(true) : M === A.$7l.BACKGROUND && e.state === A.$7l.ACTIVE && I.Wb.isClosed() && (S.Y(false), I.Wb.connect())), M = e.state) : e.state === A.$7l.ACTIVE && (S.Y(false), f.default.isAuthenticated() && I.Wb.resetBackoff("App state is active")), false
+  return (0, O.isIOS)() ? (f.default.isAuthenticated() && (M === A.$7l.INACTIVE && e.state === A.$7l.BACKGROUND && null == I.GC.channelId ? I.Wb.close(true) : M === A.$7l.BACKGROUND && e.state === A.$7l.ACTIVE && I.Wb.isClosed() && (T.Y(false), I.Wb.connect())), M = e.state) : e.state === A.$7l.ACTIVE && (T.Y(false), f.default.isAuthenticated() && I.Wb.resetBackoff("App state is active")), false
 }
 
 function $() {

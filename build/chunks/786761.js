@@ -61,19 +61,19 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = new Chunk598077.Z({
+let S = new Chunk598077.Z({
   id: "???",
   username: "???"
 });
 
 function A(e) {
   var t;
-  return null == e.author ? T : null != e.webhook_id ? new d.Z(e.author) : null != (t = p.default.getUser(e.author.id)) ? t : new d.Z(e.author)
+  return null == e.author ? S : null != e.webhook_id ? new d.Z(e.author) : null != (t = p.default.getUser(e.author.id)) ? t : new d.Z(e.author)
 }
 
 function C(e) {
@@ -82,11 +82,11 @@ function C(e) {
 
 function N(e) {
   var t;
-  return new u.pi(S(v({}, e), {
+  return new u.pi(T(v({}, e), {
     timestamp: new Date(e.timestamp),
     editedTimestamp: null != e.edited_timestamp ? new Date(e.edited_timestamp) : null,
     attachments: D(e),
-    embeds: x(e),
+    embeds: L(e),
     components: (0, o.uZ)(null != (t = e.components) ? t : []),
     codedLinks: y.V$x.NON_PARSED.has(e.type) ? [] : (0, a.ZP)(e.content)
   }))
@@ -100,32 +100,32 @@ function R(e) {
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     O = N(e),
     I = null != (i = null == (t = e.mentions) ? true : t.map(e => e.id)) ? i : [],
-    T = null != (a = e.mention_roles) ? a : [],
+    S = null != (a = e.mention_roles) ? a : [],
     R = null != (o = e.mention_channels) ? o : [],
     P = null != (l = e.mention_games) ? l : [],
     w = e.message_reference,
     D = A(e),
-    x = null,
+    L = null,
     j = null == e ? true : e.gift_info,
     U = e.gifting_prompt,
     G = null != e.interaction ? c.Z.createFromServer(e.interaction) : null,
     B = e.type === y.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
     Z = e.content;
-  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (p = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, Z = ""), C(e)) ? S(v({}, x), {
+  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (p = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, Z = ""), C(e)) ? T(v({}, L), {
     id: e.id,
     channel_id: e.channel_id,
     type: y.uaV.DEFAULT,
     author: D,
     timestamp: O.timestamp,
     isUnsupported: true
-  }) : S(v({}, e, x, O.toJS()), {
+  }) : T(v({}, e, L, O.toJS()), {
     author: D,
     webhookId: e.webhook_id,
     blocked: _.Z.isBlockedForMessage(e) || null != B && _.Z.isBlocked(B),
     ignored: _.Z.isIgnoredForMessage(e) || null != B && _.Z.isIgnored(B),
     mentionEveryone: e.mention_everyone,
     mentions: I,
-    mentionRoles: T,
+    mentionRoles: S,
     mentionChannels: R,
     mentionGames: P,
     messageReference: w,
@@ -134,13 +134,13 @@ function R(e) {
       channelId: e.channel_id,
       mentionEveryone: null != (d = e.mention_everyone) && d,
       mentionUsers: I,
-      mentionRoles: T,
+      mentionRoles: S,
       mentionGames: P.map(e => e.id)
     }),
     giftCodes: (0, m.Fp)(e) ? (0, m.Q_)(null == e ? true : e.embeds[0].url) : (0, m.Q_)(e.content),
     content: Z,
     referralTrialOfferId: p,
-    call: L(e.call, O.timestamp),
+    call: x(e.call, O.timestamp),
     messageSnapshots: k(e),
     reactions: M(null != h ? h : e.reactions, e.poll),
     interaction: G,
@@ -157,7 +157,7 @@ function R(e) {
 }
 
 function P(e, t) {
-  return null != t.edited_timestamp ? S(v({}, t), {
+  return null != t.edited_timestamp ? T(v({}, t), {
     reactions: e.reactions,
     interaction_data: e.interaction_data
   }) : v({}, e, t)
@@ -170,7 +170,7 @@ function w(e, t) {
   });
   let n = e,
     r = false;
-  if (null != t.call && (n = n.set("call", L(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", D(t))), null != t.application && (n = n.set("application", t.application)), null != t.activity && (n = n.set("activity", t.activity)), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", x(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", k(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new d.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, o.uZ)(t.components))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
+  if (null != t.call && (n = n.set("call", x(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", D(t))), null != t.application && (n = n.set("application", t.application)), null != t.activity && (n = n.set("activity", t.activity)), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", L(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", k(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new d.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, o.uZ)(t.components))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
     var i;
     n = n.set("reactions", M(null != (i = e.reactions) ? i : t.reactions))
   }
@@ -181,12 +181,12 @@ function w(e, t) {
 }
 
 function D(e) {
-  return null == e.attachments ? [] : e.attachments.map(e => S(v({}, e), {
+  return null == e.attachments ? [] : e.attachments.map(e => T(v({}, e), {
     spoiler: e.filename.startsWith(b._j)
   }))
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null != e) {
     let n = null != e.ended_timestamp ? i()(new Date(e.ended_timestamp)) : null,
       r = null != n ? i().duration(n.diff(t)) : null;
@@ -199,7 +199,7 @@ function L(e, t) {
   return null
 }
 
-function x(e) {
+function L(e) {
   if (null == e.embeds) return [];
   let t = e.embeds.map(t => (0, h.kC)(e.channel_id, e.id, t));
   return (0, h.o3)(t)

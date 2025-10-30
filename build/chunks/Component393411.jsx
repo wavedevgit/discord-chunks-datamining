@@ -37,7 +37,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk965406 = require("./965406.js");
+  Chunk587277 = require("./587277.js");
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -95,29 +95,29 @@ function F(e) {
     discountAmount: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(x.banner, o),
+    className: a()(L.banner, o),
     children: [(0, r.jsx)("div", {
-      className: x.bannerBackgroundImage
+      className: L.bannerBackgroundImage
     }), (0, r.jsxs)("div", {
-      className: x.detailsContainer,
+      className: L.detailsContainer,
       children: [(0, r.jsx)("div", {
-        className: x.image
+        className: L.image
       }), (0, r.jsxs)("div", {
-        className: x.details,
+        className: L.details,
         children: [(0, r.jsxs)("div", {
-          className: x.headerLabel,
+          className: L.headerLabel,
           children: [t, s && null != l && (0, r.jsx)(N.Cy, {
-            text: L.intl.formatToPlainString(L.t.iiLbvu, {
+            text: x.intl.formatToPlainString(x.t.iiLbvu, {
               percent: l
             }),
-            className: x.discountPill,
+            className: L.discountPill,
             colorOptions: N.VE.PREMIUM_TIER_2_WHITE_FILL,
             isPillOnBorder: false
           })]
         }), n]
       })]
     }), (0, r.jsx)("div", {
-      className: x.buttons,
+      className: L.buttons,
       children: i
     })]
   })
@@ -133,24 +133,24 @@ function V(e) {
     discountAmount: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(x.banner, o, x.repositioned),
+    className: a()(L.banner, o, L.repositioned),
     children: [(0, r.jsx)("div", {
-      className: x.bannerBackgroundImage
+      className: L.bannerBackgroundImage
     }), (0, r.jsx)("div", {
-      className: x.detailsContainer,
+      className: L.detailsContainer,
       children: (0, r.jsx)("div", {
-        className: x.details,
+        className: L.details,
         children: (0, r.jsxs)("div", {
-          className: x.headerLabel,
+          className: L.headerLabel,
           children: [(0, r.jsx)("div", {
-            className: x.image
+            className: L.image
           }), (0, r.jsxs)("div", {
-            className: x.headerColumnB,
+            className: L.headerColumnB,
             children: [t, s && null != l && (0, r.jsx)(N.Cy, {
-              text: L.intl.formatToPlainString(L.t.iiLbvu, {
+              text: x.intl.formatToPlainString(x.t.iiLbvu, {
                 percent: l
               }),
-              className: x.discountPill,
+              className: L.discountPill,
               colorOptions: N.VE.PREMIUM_TIER_2_WHITE_FILL,
               isPillOnBorder: false
             }), n]
@@ -158,7 +158,7 @@ function V(e) {
         })
       })
     }), (0, r.jsx)("div", {
-      className: x.buttons,
+      className: L.buttons,
       children: i
     })]
   })
@@ -166,12 +166,12 @@ function V(e) {
 
 function H() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk965406.wordMark,
+    className: Chunk587277.wordMark,
     children: [(0, Chunk951288.jsx)(Chunk754347.Z, {
-      className: Chunk965406.discordWordmark,
+      className: Chunk587277.discordWordmark,
       "aria-label": Chunk388032.intl.string(Chunk388032.t.FSOz78)
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk965406.classicWordmark
+      className: Chunk587277.classicWordmark
     })]
   })
 }
@@ -183,11 +183,11 @@ function Y() {
   return (0, Chunk951288.jsx)(F, {
     wordMark: (0, Chunk951288.jsx)(H, {}),
     subscriptionInfo: (0, Chunk951288.jsx)("div", {
-      className: Chunk965406.planInfo,
+      className: Chunk587277.planInfo,
       children: Chunk388032.intl.string(Chunk388032.t.R0GJL2)
     }),
     buttons: (0, Chunk951288.jsx)(Chunk987997.Z, {
-      className: Chunk965406.toolsButton,
+      className: Chunk587277.toolsButton,
       onClick: () => (0, Chunk963249.Z)({
         subscriptionTier: Chunk474936.Si.TIER_1,
         analyticsLocations: module,
@@ -196,7 +196,7 @@ function Y() {
       text: Chunk388032.intl.string(Chunk388032.t["/ygMUY"])
     }),
     statusClasses: {
-      [Chunk965406.tier1]: true
+      [Chunk587277.tier1]: true
     }
   })
 }
@@ -222,9 +222,9 @@ let W = function(e) {
   w.pj.has(i.planId) && D.JwP.ALL_PAUSEABLE.has(i.status) && !K || (z = false);
   let q = (0, C.Ng)(),
     X = null == q || null == (t = q.discount) ? true : t.amount,
-    Q = (0, S.t7)(),
-    J = (0, S.lr)(),
-    $ = (0, T.W)(),
+    Q = (0, T.t7)(),
+    J = (0, T.lr)(),
+    $ = (0, S.W)(),
     ee = () => {
       (i.status === D.O0b.ACTIVE || i.status === D.O0b.PAST_DUE || i.status === D.O0b.PAUSED) && er(P.R.PAUSE_SELECT)
     },
@@ -238,7 +238,7 @@ let W = function(e) {
       (0, c.ZDy)(async () => {
         let {
           PremiumBrandRefreshSubscriptionCancellationModal: t
-        } = await Promise.all([n.e("17938"), n.e("69432"), n.e("26526"), n.e("46573")]).then(n.bind(n, 48813));
+        } = await Promise.all([n.e("17938"), n.e("69432"), n.e("26526"), n.e("60088")]).then(n.bind(n, 48813));
         return n => (0, r.jsx)(t, U(k({}, n), {
           premiumSubscription: i,
           analyticsLocation: M,
@@ -287,8 +287,8 @@ let W = function(e) {
       er(P.R.WHAT_YOU_LOSE)
     },
     el = e => (s()(null != o, "Expected renewalInvoicePreview"), (0, r.jsx)("div", {
-      className: x.planInfo,
-      children: $ ? L.intl.format(L.t["/SfHwl"], {
+      className: L.planInfo,
+      children: $ ? x.intl.format(x.t["/SfHwl"], {
         weeks: 1
       }) : (0, O.qV)({
         planId: e,
@@ -312,7 +312,7 @@ let W = function(e) {
             variant: "overlay-primary",
             size: "sm",
             loading: N,
-            text: L.intl.string(L.t.obRG6Y).toLocaleUpperCase()
+            text: x.intl.string(x.t.obRG6Y).toLocaleUpperCase()
           })
         })
       }
@@ -321,30 +321,30 @@ let W = function(e) {
         let e = O.ZP.isSwitchingPlansDisabled(i),
           t = O.ZP.getSwitchingPlansDisabledMessage(i);
         return (0, r.jsxs)("div", {
-          className: x.toolsButtons,
+          className: L.toolsButtons,
           children: [z ? (0, r.jsx)("div", {
-            className: x.secondaryBannerTextButtonContainerWithPause,
+            className: L.secondaryBannerTextButtonContainerWithPause,
             children: (0, r.jsx)(c.Avr, {
               variant: "always-white",
               disabled: N,
               onClick: ee,
               size: "sm",
-              text: L.intl.string(L.t.eFlYVA)
+              text: x.intl.string(x.t.eFlYVA)
             })
           }) : (0, r.jsx)("div", {
-            className: x.secondaryBannerTextButtonContainer,
+            className: L.secondaryBannerTextButtonContainer,
             children: (0, r.jsx)(c.Avr, {
               variant: "always-white",
               onClick: et,
               disabled: N,
               size: "sm",
-              text: L.intl.string(L.t["ETE/oC"])
+              text: x.intl.string(x.t["ETE/oC"])
             })
           }), (0, r.jsx)(l.u, {
             text: t,
             asContainer: true,
             children: (0, r.jsx)(R.Z, {
-              className: a()(x.toolsButton, x.premiumSettingsPushButton),
+              className: a()(L.toolsButton, L.premiumSettingsPushButton),
               disabled: e,
               onClick: () => {
                 (0, h.Z)({
@@ -354,18 +354,18 @@ let W = function(e) {
                   subscription: i
                 })
               },
-              text: L.intl.string(L.t["dylp/7"])
+              text: x.intl.string(x.t["dylp/7"])
             })
           })]
         })
       }
       if (O.ZP.isBaseSubscriptionCanceled(i)) return (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: x.toolsButton,
+        className: L.toolsButton,
         children: (0, r.jsx)(c.Button, {
           variant: "overlay-primary",
           size: "sm",
-          text: L.intl.string(L.t.iIvF2z),
+          text: x.intl.string(x.t.iIvF2z),
           loading: N,
           onClick: ei
         })
@@ -377,27 +377,27 @@ let W = function(e) {
             size: "sm",
             onClick: en,
             loading: N,
-            text: L.intl.string(L.t["ETE/oC"])
+            text: x.intl.string(x.t["ETE/oC"])
           });
         case D.O0b.PAUSE_PENDING:
           return (0, r.jsxs)("div", {
-            className: x.toolsButtons,
+            className: L.toolsButtons,
             children: [(0, r.jsx)("div", {
-              className: x.secondaryBannerTextButtonContainer,
+              className: L.secondaryBannerTextButtonContainer,
               children: (0, r.jsx)(c.Avr, {
                 variant: "always-white",
                 disabled: N,
                 onClick: et,
                 size: "sm",
-                text: L.intl.string(L.t.cM1H0K)
+                text: x.intl.string(x.t.cM1H0K)
               })
             }), (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
-              className: x.toolsButton,
+              className: L.toolsButton,
               children: (0, r.jsx)(c.Button, {
                 variant: "overlay-primary",
                 size: "sm",
-                text: L.intl.string(L.t.TgV5Qf),
+                text: x.intl.string(x.t.TgV5Qf),
                 loading: N,
                 onClick: ea
               })
@@ -409,29 +409,29 @@ let W = function(e) {
             durations: n
           } = (0, I.AT)(i);
           return (0, r.jsxs)("div", {
-            className: x.toolsButtons,
+            className: L.toolsButtons,
             children: [(0, r.jsx)("div", {
-              className: x.secondaryBannerTextButtonContainer,
+              className: L.secondaryBannerTextButtonContainer,
               children: n.length > 0 ? (0, r.jsx)(c.Avr, {
                 variant: "always-white",
                 onClick: eo,
                 disabled: N,
                 size: "sm",
-                text: L.intl.string(L.t.jNHWt6)
+                text: x.intl.string(x.t.jNHWt6)
               }) : (0, r.jsx)(c.Avr, {
                 variant: "always-white",
                 onClick: es,
                 disabled: N,
                 size: "sm",
-                text: L.intl.string(L.t.cM1H0K)
+                text: x.intl.string(x.t.cM1H0K)
               })
             }), (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
-              className: x.toolsButton,
+              className: L.toolsButton,
               children: (0, r.jsx)(c.Button, {
                 variant: "overlay-primary",
                 size: "sm",
-                text: L.intl.string(L.t.zpi5pg),
+                text: x.intl.string(x.t.zpi5pg),
                 loading: N,
                 onClick: ea
               })
@@ -447,24 +447,24 @@ let W = function(e) {
   let ed = O.ZP.getStatusFromInvoice(i, o),
     ef = O.ZP.getPremiumType(eu),
     e_ = {
-      [x.tier0]: ef === w.PremiumTypes.TIER_0,
-      [x.tier1]: ef === w.PremiumTypes.TIER_1,
-      [x.tier2]: ef === w.PremiumTypes.TIER_2,
-      [x.canceled]: ed === D.O0b.CANCELED,
-      [x.pausePending]: ed === D.O0b.PAUSE_PENDING,
-      [x.paused]: ed === D.O0b.PAUSED && !K,
-      [x.failedPayment]: (0, O.zV)(ed)
+      [L.tier0]: ef === w.PremiumTypes.TIER_0,
+      [L.tier1]: ef === w.PremiumTypes.TIER_1,
+      [L.tier2]: ef === w.PremiumTypes.TIER_2,
+      [L.canceled]: ed === D.O0b.CANCELED,
+      [L.pausePending]: ed === D.O0b.PAUSE_PENDING,
+      [L.paused]: ed === D.O0b.PAUSED && !K,
+      [L.failedPayment]: (0, O.zV)(ed)
     },
     ep = null;
   switch (ef) {
     case w.PremiumTypes.TIER_0:
       ep = (0, r.jsxs)("div", {
-        className: x.wordMark,
+        className: L.wordMark,
         children: [(0, r.jsx)(b.Z, {
-          className: x.discordWordmark,
-          "aria-label": L.intl.string(L.t["t9uG/o"])
+          className: L.discordWordmark,
+          "aria-label": x.intl.string(x.t["t9uG/o"])
         }), (0, r.jsx)("div", {
-          className: x.basicWordmark
+          className: L.basicWordmark
         })]
       });
       break;
@@ -473,8 +473,8 @@ let W = function(e) {
       break;
     case w.PremiumTypes.TIER_2:
       ep = (0, r.jsx)(E.Z, {
-        className: x.planName,
-        "aria-label": L.intl.string(L.t.lpNrPu)
+        className: L.planName,
+        "aria-label": x.intl.string(x.t.lpNrPu)
       })
   }
   let eh = Z.includes(i.status) && !K ? V : F;

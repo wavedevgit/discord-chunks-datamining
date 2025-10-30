@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk120230 = require("./120230.js");
+  Chunk772530 = require("./772530.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,12 +62,12 @@ function O() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk481060.EFr.SIZE_24;
   switch (module) {
     case Chunk481060.EFr.SIZE_16:
-      return Chunk120230.size16;
+      return Chunk772530.size16;
     case Chunk481060.EFr.SIZE_20:
-      return Chunk120230.size20;
+      return Chunk772530.size20;
     case Chunk481060.EFr.SIZE_24:
     default:
-      return Chunk120230.size24
+      return Chunk772530.size24
   }
 }
 
@@ -91,8 +91,8 @@ function I(e) {
     channelId: g,
     className: b,
     size: I = u.EFr.SIZE_24,
-    overflowCountVariant: S,
-    overflowCountColor: T = "interactive-normal",
+    overflowCountVariant: T,
+    overflowCountColor: S = "interactive-normal",
     overflowCountClassName: A,
     hideOverflowCount: C = false,
     disableUsernameTooltip: N = false,
@@ -100,13 +100,13 @@ function I(e) {
     onClickOverflow: P,
     onFocusOverflow: w,
     onUserClick: D,
-    onUserPopoutRequestClose: L,
-    "aria-label": x,
+    onUserPopoutRequestClose: x,
+    "aria-label": L,
     "aria-labelledby": M,
     "aria-hidden": k
   } = e, [j, U] = i.useState(false), G = O(I), B = i.useRef(null), Z = t.length - a, F = Z + 1, V = Z > 0 && !C && !k, H = () => (0, r.jsx)(u.VqE, {
     className: m.popoutWrapper,
-    "aria-label": x,
+    "aria-label": L,
     "aria-labelledby": M,
     children: (0, r.jsx)(u.Ttm, {
       className: m.scroller,
@@ -118,7 +118,7 @@ function I(e) {
         disablePopout: "function" == typeof R ? R(e.id) : R,
         onClick: D,
         onPopoutRequestClose: () => {
-          U(false), null == L || L()
+          U(false), null == x || x()
         },
         onContextMenu: t => (0, d.jW)(t, async () => {
           let {
@@ -170,7 +170,7 @@ function I(e) {
     })
   }, W = () => {
     if (!V) return null;
-    let e = null != S ? S : v(I);
+    let e = null != T ? T : v(I);
     return (0, r.jsx)(u.yRy, {
       targetElementRef: B,
       renderPopout: H,
@@ -189,7 +189,7 @@ function I(e) {
         }),
         children: (0, r.jsx)(u.Text, {
           variant: e,
-          color: T,
+          color: S,
           children: F > 99 ? ">99" : "+".concat(F)
         })
       }))
@@ -197,7 +197,7 @@ function I(e) {
   };
   return t.length <= 0 ? null : (0, r.jsxs)("div", {
     role: "group",
-    "aria-label": x,
+    "aria-label": L,
     "aria-labelledby": M,
     className: o()(b, m.avatars),
     "aria-hidden": k,

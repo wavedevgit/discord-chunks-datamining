@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk74538 = require("./74538.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk209857 = require("./209857.js");
+  Chunk973812 = require("./973812.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,8 +67,8 @@ class y extends Chunk647438.Component {
       showPricingLink: O,
       showWithdrawalWaiver: v,
       isTrial: I,
-      inReverseTrial: S,
-      isDiscount: T,
+      inReverseTrial: T,
+      isDiscount: S,
       subscriptionPlan: A,
       finePrintClassname: C
     } = this.props, {
@@ -79,16 +79,16 @@ class y extends Chunk647438.Component {
       className: Chunk442837,
       children: [v && (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
-        className: Chunk209857.formTitle,
+        className: Chunk973812.formTitle,
         children: Chunk388032.intl.string(Chunk388032.t.Ogvn5o)
       }), null != module && (Chunk120356 || !Chunk647438) ? (0, Chunk951288.jsx)(Chunk755721.$q, {
         type: Chunk755721.M0.INVERTED,
         value: N,
         onChange: this.handleToggleEULAAcceptance,
         disabled: Chunk512722,
-        className: Chunk209857.checkbox,
+        className: Chunk973812.checkbox,
         children: (0, Chunk951288.jsx)("div", {
-          className: Chunk209857.checkboxLabel,
+          className: Chunk973812.checkboxLabel,
           children: Chunk388032.intl.format(Chunk388032.t.IodJKT, {
             applicationName: exports,
             onClick: t => {
@@ -104,7 +104,7 @@ class y extends Chunk647438.Component {
           })
         })
       }) : null, null == y ? null : (0, Chunk951288.jsx)("div", {
-        className: o()(Chunk209857.finePrint, C),
+        className: o()(Chunk973812.finePrint, C),
         children: y
       }), v ? (0, Chunk951288.jsxs)("div", {
         className: Chunk442837,
@@ -113,17 +113,17 @@ class y extends Chunk647438.Component {
           value: R,
           onChange: this.handleToggleEUWithdralWaiverAcceptance,
           disabled: Chunk512722,
-          className: o()(Chunk209857.checkbox, Chunk850840),
+          className: o()(Chunk973812.checkbox, Chunk850840),
           children: (0, Chunk951288.jsx)("div", {
-            className: o()(Chunk209857.checkboxLabel, E),
+            className: o()(Chunk973812.checkboxLabel, E),
             children: Chunk388032.intl.string(Chunk388032.t["DFCVN+"])
           })
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk209857.finePrint,
+          className: Chunk973812.finePrint,
           children: Chunk388032.intl.string(Chunk388032.t.jhu6zm)
         })]
       }) : null, O && (0, Chunk951288.jsxs)("div", {
-        className: Chunk209857.finePrint,
+        className: Chunk973812.finePrint,
         children: ["*", Chunk388032.intl.format(Chunk388032.t["5zmY3F"], {
           documentationLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.LOCALIZED_PRICING)
         })]
@@ -136,7 +136,7 @@ class y extends Chunk647438.Component {
           cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),
           paidServiceTermsArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })
-      }), S && null != A && (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), T && null != A && (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: Chunk388032.intl.format(Chunk388032.t.Oo2FeS, {
@@ -145,7 +145,7 @@ class y extends Chunk647438.Component {
           cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),
           paidServiceTermsArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })
-      }), T && null != A && (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), S && null != A && (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: Chunk388032.intl.format(Chunk388032.t["Z2c+aV"], {

@@ -60,8 +60,8 @@ function v(e, t) {
   }), e
 }
 let I = 300,
-  S = 2e3,
-  T = e => "AudioContextSettingsMigrated:".concat(e),
+  T = 2e3,
+  S = e => "AudioContextSettingsMigrated:".concat(e),
   A = e => e === E.Yn.STREAM ? a.h.STREAM : a.h.USER;
 
 function C(e, t, n) {
@@ -95,7 +95,7 @@ function R(e) {
 }
 
 function P() {
-  Chunk433517.K.get(T(Chunk314897.default.getId())) || Chunk675478.hW.updateAsync("audioContextSettings", e => {
+  Chunk433517.K.get(S(Chunk314897.default.getId())) || Chunk675478.hW.updateAsync("audioContextSettings", e => {
     let t = false;
     for (let [n, r] of Object.entries(_.Z.getState().settingsByContext)) {
       let i = (0, m.z)(n);
@@ -121,7 +121,7 @@ function P() {
         null == a[n] && (t = true, a[n] = r)
       }
     }
-    return s.K.set(T(f.default.getId()), true), t
+    return s.K.set(S(f.default.getId()), true), t
   }, Chunk675478.fy.AUTOMATED)
 }
 
@@ -137,26 +137,26 @@ function w(e, t, n, r) {
 function D() {
   P()
 }
-let L = i().debounce(() => {
+let x = i().debounce(() => {
   U()
-}, S);
+}, T);
 
-function x(e, t, n) {
+function L(e, t, n) {
   (0, h.RF)(e, t, {
     volume: n
-  }), L()
+  }), x()
 }
 
 function M(e, t, n) {
   (0, h.RF)(e, t, {
     muted: n
-  }), L.cancel(), U()
+  }), x.cancel(), U()
 }
 
 function k(e, t, n) {
   (0, h.RF)(e, t, {
     soundboardMuted: n
-  }), L.cancel(), U()
+  }), x.cancel(), U()
 }
 let j = i().debounce(Chunk254238.On, 500, {
   maxWait: 500
@@ -185,7 +185,7 @@ function G(e) {
   null != i && j(i, n, t, {
     muted: _.Z.isLocalMute(n, t),
     volume: r
-  }), x(t, n, r)
+  }), L(t, n, r)
 }
 
 function B(e) {

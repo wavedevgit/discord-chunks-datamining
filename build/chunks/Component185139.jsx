@@ -21,7 +21,7 @@ var Chunk122289 = require("./122289.js"),
   Chunk70956 = require("./70956.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk987954 = require("./987954.js");
+  Chunk397519 = require("./397519.js");
 let y = new Set([Chunk409813.h8.SKU_SELECT, Chunk409813.h8.AWAITING_AUTHENTICATION, Chunk409813.h8.AWAITING_PURCHASE_TOKEN_AUTH, Chunk409813.h8.CONFIRM]);
 
 function O(e) {
@@ -32,8 +32,8 @@ function O(e) {
     overrideKey: O,
     paymentError: v,
     header: I,
-    footer: S,
-    isGift: T = false,
+    footer: T,
+    isGift: S = false,
     giftMessage: A = E.intl.string(E.t["DrgnS+"]),
     hideBreadcrumbs: C = false,
     isLoading: N = false,
@@ -41,12 +41,12 @@ function O(e) {
     purchaseErrorBlockRef: P,
     planError: w,
     onScroll: D,
-    scrollerClassName: L,
-    hasCurrencies: x = false
+    scrollerClassName: x,
+    hasCurrencies: L = false
   } = e, M = null;
   null != v && null == (0, p.ly)(v) ? M = v : null != R ? M = R : null != w && (M = w);
   let k = null != M ? M.message : "";
-  null != M && M instanceof d.HF && (M.code === f.SM.CARD_DECLINED && x && (k += " ".concat(E.intl.string(E.t.iWvwQS))), M.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (k = E.intl.string(E.t.ypuSd8)), M.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (k = E.intl.string(E.t.mXMmWE)));
+  null != M && M instanceof d.HF && (M.code === f.SM.CARD_DECLINED && L && (k += " ".concat(E.intl.string(E.t.iWvwQS))), M.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (k = E.intl.string(E.t.ypuSd8)), M.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (k = E.intl.string(E.t.mXMmWE)));
   let {
     stripe: j
   } = (0, _.JL)();
@@ -67,7 +67,7 @@ function O(e) {
     stripe: j,
     children: [I, (0, r.jsxs)("div", {
       className: s()("paymentModalContent", b.content),
-      children: [T && n !== p.h8.CONFIRM ? (0, r.jsx)(u.Z, {
+      children: [S && n !== p.h8.CONFIRM ? (0, r.jsx)(u.Z, {
         className: b.paymentNote,
         iconSize: u.Z.Sizes.SMALL,
         icon: c.OgN,
@@ -104,11 +104,11 @@ function O(e) {
           sideMargin: 20,
           children: (0, r.jsx)(c.h21, {
             onScroll: D,
-            className: s()(b.scroller, L),
+            className: s()(b.scroller, x),
             children: o
           })
         })]
       })]
-    }), S]
+    }), T]
   })
 }

@@ -56,12 +56,12 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = e => {
+let S = e => {
   let t = c.Z.getChannel(e);
   return null == t ? true : t.getGuildId()
 };
@@ -172,11 +172,11 @@ function D(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   return null != e ? w(e) : D("#".concat(y.intl.string(y.t.J90oLW)))
 }
 
-function x() {
+function L() {
   return C({
     name: Chunk388032.intl.string(Chunk388032.t.zLZPmk).toLowerCase(),
     type: Chunk981631.d4z.UNKNOWN,
@@ -194,7 +194,7 @@ function M(e, t, n, r, i) {
     messageId: n,
     originalLink: i,
     inContent: null == a || o ? null : [A(a)],
-    content: [x()]
+    content: [L()]
   }
 }
 
@@ -246,12 +246,12 @@ function j(e, t, n, r) {
     },
     a = u.Z.getGuild(e.guildId);
   if (null == a)
-    if (e.isDm) return S(v({}, i), {
+    if (e.isDm) return T(v({}, i), {
       guildId: b.ME,
       inContent: [C(e)],
       content: [R(false)]
     });
-    else return L(r);
+    else return x(r);
   let o = e.guildId === n;
   return v({}, i, k(a, e, o, null != t))
 }
@@ -266,7 +266,7 @@ let U = {
         id: r
       };
       let i = P(r, n.mentionChannels);
-      return null == i ? M(null, r, null, T(n.channelId)) : j(i, null, T(n.channelId))
+      return null == i ? M(null, r, null, S(n.channelId)) : j(i, null, S(n.channelId))
     }
   },
   G = {
@@ -285,7 +285,7 @@ let U = {
           o = e[3];
         if (null == a) return w(r);
         let s = P(a, null);
-        return null == s ? M(i, a, o, T(n.channelId), r) : j(s, o, T(n.channelId), r)
+        return null == s ? M(i, a, o, S(n.channelId), r) : j(s, o, S(n.channelId), r)
       }
     },
     mediaPostLink: {
@@ -300,9 +300,9 @@ let U = {
           s = e[4];
         if (null == a || null == o) return w(r);
         let l = P(o, null);
-        if (null != l) return j(l, s, T(n.channelId), r);
+        if (null != l) return j(l, s, S(n.channelId), r);
         let c = P(a, null);
-        return null != c ? j(c, s, T(n.channelId), r) : M(i, a, s, T(n.channelId), r)
+        return null != c ? j(c, s, S(n.channelId), r) : M(i, a, s, S(n.channelId), r)
       }
     }
   }

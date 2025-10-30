@@ -68,7 +68,7 @@ module.exports = function(e) {
       keywords: E,
       contains: []
     },
-    S = {
+    T = {
       begin: ".?html`",
       end: "",
       starts: {
@@ -78,7 +78,7 @@ module.exports = function(e) {
         subLanguage: "xml"
       }
     },
-    T = {
+    S = {
       begin: ".?css`",
       end: "",
       starts: {
@@ -133,7 +133,7 @@ module.exports = function(e) {
         }]
       }), e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]
     },
-    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, T, A, C, {
+    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, C, {
       match: /\$\d+/
     }, v];
   I.contains = R.concat({
@@ -158,7 +158,7 @@ module.exports = function(e) {
       keywords: E,
       contains: w
     },
-    L = {
+    x = {
       variants: [{
         match: [/class/, /\s+/, d, /\s+/, /extends/, /\s+/, c.concat(d, "(", c.concat(/\./, d), ")*")],
         scope: {
@@ -175,7 +175,7 @@ module.exports = function(e) {
         }
       }]
     },
-    x = {
+    L = {
       relevance: 0,
       match: c.either(/\bJSON/, /\b[A-Z][a-z]+([A-Z][a-z]*|\d)*/, /\b[A-Z]{2,}([A-Z][a-z]+|\d)+([A-Z][a-z]*)*/, /\b[A-Z]{2,}[a-z]+([A-Z][a-z]+|\d)*([A-Z][a-z]*)*/),
       className: "title.class",
@@ -251,16 +251,16 @@ module.exports = function(e) {
     keywords: E,
     exports: {
       PARAMS_CONTAINS: w,
-      CLASS_REFERENCE: x
+      CLASS_REFERENCE: L
     },
     illegal: /#(?![$_A-z])/,
     contains: [e.SHEBANG({
       label: "shebang",
       binary: "node",
       relevance: 5
-    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, T, A, C, N, {
+    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, C, N, {
       match: /\$\d+/
-    }, v, x, {
+    }, v, L, {
       scope: "attr",
       match: d + c.lookahead(":"),
       relevance: 0
@@ -338,7 +338,7 @@ module.exports = function(e) {
         1: "title.function"
       },
       contains: [D]
-    }, G, j, L, Z, {
+    }, G, j, x, Z, {
       match: /\$[(.]/
     }]
   }

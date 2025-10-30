@@ -93,7 +93,7 @@ function I(e, t) {
   }
 }
 
-function S(e) {
+function T(e) {
   return null != e ? v(f.ZP.getGuildIconURL({
     id: e.id,
     icon: e.icon,
@@ -101,9 +101,9 @@ function S(e) {
   })) : true
 }
 
-function T(e) {
+function S(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    n = S(e),
+    n = T(e),
     r = g.Z5c.CHANNEL(e.id),
     i = [{
       id: r,
@@ -168,7 +168,7 @@ function C(e) {
 
 function N() {
   if (!b()) return;
-  let e = Chunk430824.Z.getGuildsArray().map(e => T(e)),
+  let e = Chunk430824.Z.getGuildsArray().map(e => S(e)),
     t = [],
     n = Chunk592125.Z.getMutablePrivateChannels();
   for (let e in require) {
@@ -200,7 +200,7 @@ function P(e) {
         l = r[n];
       if (null != l) l.push(o);
       else {
-        let i = S(e),
+        let i = T(e),
           a = [o];
         t.push({
           id: n,
@@ -232,7 +232,7 @@ class w extends Chunk147913.Z {
     if (!b() || !l.Z.can(g.Plq.VIEW_CHANNEL, n)) return;
     let r = s.Z.getGuild(n.guild_id);
     if (null == r && null != n.guild_id) return;
-    let i = S(r);
+    let i = T(r);
     h.Z.indexDomains([{
       id: null != (t = null == r ? true : r.id) ? t : g.ME,
       items: [I(n, r)],
@@ -258,7 +258,7 @@ class w extends Chunk147913.Z {
     } = e;
     if (b()) {
       let e = s.Z.getGuild(t.id);
-      null != e ? h.Z.indexDomains([T(e, "GUILD_UPDATE" === n)]) : h.Z.deleteSearchDomains([t.id])
+      null != e ? h.Z.indexDomains([S(e, "GUILD_UPDATE" === n)]) : h.Z.deleteSearchDomains([t.id])
     }
   }
   handleGuildDelete(e) {

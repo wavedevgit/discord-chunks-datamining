@@ -89,17 +89,17 @@ function I(e) {
   let {
     application: t
   } = e;
-  T(t)
-}
-
-function S(e) {
-  let {
-    application: t
-  } = e;
-  T(t)
+  S(t)
 }
 
 function T(e) {
+  let {
+    application: t
+  } = e;
+  S(t)
+}
+
+function S(e) {
   b(o.ZP.createFromServer(e))
 }
 
@@ -179,7 +179,7 @@ function D(e) {
   }))
 }
 
-function L(e) {
+function x(e) {
   let {
     applicationIds: t
   } = e, n = false;
@@ -190,7 +190,7 @@ function L(e) {
   return n
 }
 
-function x(e) {
+function L(e) {
   let {
     entitlements: t
   } = e, n = false;
@@ -352,15 +352,15 @@ let K = new W(Chunk570140.Z, {
   LOGOUT: y,
   OVERLAY_INITIALIZE: O,
   APPLICATION_FETCH: v,
-  APPLICATION_FETCH_SUCCESS: S,
+  APPLICATION_FETCH_SUCCESS: T,
   APPLICATION_FETCH_FAIL: C,
   APPLICATIONS_FETCH: N,
   APPLICATIONS_FETCH_SUCCESS: P,
-  APPLICATIONS_FETCH_FAIL: L,
+  APPLICATIONS_FETCH_FAIL: x,
   APPLICATION_UPDATE: I,
-  APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: x,
-  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: x,
-  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: x,
+  APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: L,
+  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: L,
+  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: L,
   GUILD_APPLICATIONS_FETCH_SUCCESS: M,
   BILLING_PAYMENTS_FETCH_SUCCESS: k,
   PAYMENT_UPDATE: j,

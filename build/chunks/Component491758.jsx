@@ -25,9 +25,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk37113 = require("./37113.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk556865 = require("./556865.js");
+  Chunk298291 = require("./298291.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -72,14 +72,14 @@ function R() {
     remindersEnabled: t,
     decoupledClipsEnabled: n,
     clipsLength: a,
-    clipsQuality: T
+    clipsQuality: S
   } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()), C = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()), R = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)), P = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_SCREENSHOT, true)), w = Chunk435064.Z.isDecoupledGameClippingEnabled(), D = (0, Chunk779618.Z)(Chunk131951.Z), {
-    showClipsHeaderEntrypoint: L
+    showClipsHeaderEntrypoint: x
   } = Chunk924557.NV.useExperiment({
     location: "clips_recording_settings"
   }, {
     autoTrackExposure: false
-  }), x = (0, Chunk924557.PP)();
+  }), L = (0, Chunk924557.PP)();
   o()(null != R, "Save clip keybind unset"), o()(null != P, "Save screenshot keybind unset");
   let M = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
     k = Chunk647438.useMemo(() => [{
@@ -173,7 +173,7 @@ function R() {
           trackAnalytics: true
         })
       })]
-    }), L && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), x && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t["3zwNf6"]),
         description: Chunk388032.intl.string(Chunk388032.t.m4Cjj9),
@@ -191,38 +191,38 @@ function R() {
       }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
         onChange: e => b.yi({
           resolution: e,
-          frameRate: T.frameRate
+          frameRate: S.frameRate
         }),
         label: Chunk388032.intl.string(Chunk388032.t.aFudZJ),
         description: Chunk388032.intl.string(Chunk388032.t.nIrkW5),
-        value: T.resolution,
+        value: S.resolution,
         options: j
       }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
         onChange: e => b.yi({
-          resolution: T.resolution,
+          resolution: S.resolution,
           frameRate: e
         }),
         label: Chunk388032.intl.string(Chunk388032.t["2wScL1"]),
         description: Chunk388032.intl.string(Chunk388032.t["Rf9+fy"]),
-        value: T.frameRate,
+        value: S.frameRate,
         options: U
       }), (0, Chunk951288.jsx)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t.pf54EU),
         description: Chunk388032.intl.string(Chunk388032.t["QyB/jK"]),
         layout: "horizontal",
         children: (0, Chunk951288.jsx)("div", {
-          className: Chunk556865.keyRecorder,
+          className: Chunk298291.keyRecorder,
           children: (0, Chunk951288.jsx)(Chunk825209.Z, {
             defaultValue: R.shortcut,
             onChange: G
           })
         })
-      }), x && (0, Chunk951288.jsx)(Chunk481060.gNt, {
+      }), L && (0, Chunk951288.jsx)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t["0U/hj7"]),
         description: Chunk388032.intl.string(Chunk388032.t["5zxkdo"]),
         layout: "horizontal",
         children: (0, Chunk951288.jsx)("div", {
-          className: Chunk556865.keyRecorder,
+          className: Chunk298291.keyRecorder,
           children: (0, Chunk951288.jsx)(Chunk825209.Z, {
             defaultValue: P.shortcut,
             onChange: B

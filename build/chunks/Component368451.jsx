@@ -2,7 +2,7 @@
 /** chunk id: 368451, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk970184 = require("./970184.jsx"),
   Chunk280501 = require("./280501.js"),
   Chunk292419 = require("./292419.js"),
-  Chunk219879 = require("./219879.js");
+  Chunk49739 = require("./49739.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -137,7 +137,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     type: t,
     options: n,
@@ -145,27 +145,27 @@ function S(e) {
     maxValues: s,
     minValues: u,
     disabled: g
-  } = e, b = (0, h.Wo)(e), S = i.useMemo(() => n.filter(e => e.default).map(e => e.value), [n]), T = (0, _.CJ)();
-  l()(null != T, "StringSelectActionComponent must be rendered inside a ComponentStateContext");
+  } = e, b = (0, h.Wo)(e), T = i.useMemo(() => n.filter(e => e.default).map(e => e.value), [n]), S = (0, _.CJ)();
+  l()(null != S, "StringSelectActionComponent must be rendered inside a ComponentStateContext");
   let {
     state: A,
     executeStateUpdate: C,
     visualState: N,
     isDisabled: R,
     error: P
-  } = T.useComponentState(e, S.length > 0 ? {
+  } = S.useComponentState(e, T.length > 0 ? {
     type: t,
-    values: S
-  } : true), w = null != T.modal, D = s > 1, L = N === p.gH.LOADING, [x, M] = i.useState(false), [k, j] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(k), B = i.useMemo(() => n.some(e => null != e.emoji), [n]);
+    values: T
+  } : true), w = null != S.modal, D = s > 1, x = N === p.gH.LOADING, [L, M] = i.useState(false), [k, j] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(k), B = i.useMemo(() => n.some(e => null != e.emoji), [n]);
   i.useEffect(() => {
     if ((null == A ? true : A.type) === d.re.STRING_SELECT) {
       let e = new Set(A.values);
       j(e), G(e)
     } else {
-      let e = new Set(S);
+      let e = new Set(T);
       j(e), G(e)
     }
-  }, [a, S, A]);
+  }, [a, T, A]);
   let Z = i.useCallback(() => {
     U !== k && C({
       type: d.re.STRING_SELECT,
@@ -173,8 +173,8 @@ function S(e) {
     }) && G(k)
   }, [k, U, G, C]);
   i.useEffect(() => {
-    !x && (k.size === U.size && Array.from(U).every(e => k.has(e)) || Z())
-  }, [x, k, U, Z]);
+    !L && (k.size === U.size && Array.from(U).every(e => k.has(e)) || Z())
+  }, [L, k, U, Z]);
   let F = c.UNb;
   D ? F = c.gzz : 0 === u && (F = c.s6k);
   let V = (0, c.cYr)({
@@ -186,7 +186,7 @@ function S(e) {
     children: [(0, r.jsx)("div", {
       className: m.container,
       children: (0, r.jsx)(c.PhF, E({
-        isProcessing: L,
+        isProcessing: x,
         isDisabled: g || N === p.gH.DISABLED || R,
         className: o()(m.select, {
           [m.inModal]: w

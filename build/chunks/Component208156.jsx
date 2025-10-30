@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk953101 = require("./953101.js"),
   Chunk701488 = require("./701488.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk702255 = require("./702255.js");
+  Chunk40037 = require("./40037.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,22 +69,22 @@ function v(e) {
     queryParams: E,
     allowPopups: y = false,
     referrerPolicy: v = "origin"
-  } = e, I = (0, f.sU)({}), S = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), A = (0, _.Z)(T, g, null == I ? window : I), C = O(b({}, E), {
-    frame_id: S,
+  } = e, I = (0, f.sU)({}), T = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), S = i.useRef(null), A = (0, _.Z)(S, g, null == I ? window : I), C = O(b({}, E), {
+    frame_id: T,
     platform: h.S4.DESKTOP
   }), [N, R] = i.useState(false), P = u.Z.theme, w = b({}, a);
 
   function D(e) {
     var n;
-    null == o || o(e.target), T.current = e.target, A(true), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, C], null != t ? t : "")
+    null == o || o(e.target), S.current = e.target, A(true), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, C], null != t ? t : "")
   }
   return P === m.BRd.LIGHT ? w.colorScheme = "light" : w.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
-    id: S
+    id: T
   }), () => {
     d.S.dispatch(m.CkL.IFRAME_UNMOUNT, {
-      id: S
+      id: T
     })
-  }), [S]), i.useEffect(() => {
+  }), [T]), i.useEffect(() => {
     let e = e => {
       let {
         resizing: t

@@ -42,7 +42,7 @@ var Chunk98278 = require("./98278.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -51,14 +51,14 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -198,7 +198,7 @@ function Z(e) {
     quest: n
   }), A = (0, E.Rf)(n), N = i.useCallback(() => {
     (0, u.$)()
-  }, []), L = i.useCallback(() => {
+  }, []), x = i.useCallback(() => {
     (0, d.Y)({
       pageType: P.ZY5.GLOBAL_DISCOVERY_QUESTS,
       sectionType: P.jXE.QUEST_TILE_CTA,
@@ -247,7 +247,7 @@ function Z(e) {
               questContentPosition: s,
               questContentRowIndex: f,
               sourceQuestContent: O
-            }), b ? (0, T.R)(R.dr.QUEST_HOME_DESKTOP) ? await (0, C.enrollAndStartVideoQuestWithErrorHandling)(n, {
+            }), b ? (0, S.R)(R.dr.QUEST_HOME_DESKTOP) ? await (0, C.enrollAndStartVideoQuestWithErrorHandling)(n, {
               questContent: o,
               questContentCTA: t,
               sourceQuestContent: O,
@@ -265,7 +265,7 @@ function Z(e) {
               questContent: o,
               sourceQuestContent: O,
               sourceQuestContentCTA: p.jZ.ACCEPT_QUEST
-            })) : G && ((0, T.R)(R.dr.QUEST_HOME_DESKTOP) ? await (0, g.AH)(n.id, {
+            })) : G && ((0, S.R)(R.dr.QUEST_HOME_DESKTOP) ? await (0, g.AH)(n.id, {
               questContent: o,
               questContentCTA: t,
               questContentPosition: s,
@@ -337,15 +337,15 @@ function Z(e) {
           tooltipText: null,
           onClick: v
         };
-        if ((0, S.i)("useCtaConfig")) return {
+        if ((0, T.i)("useCtaConfig")) return {
           tooltipText: null,
           onClick: v,
           text: (0, m.wj)(n.config) ? D.intl.string(D.t.bAGFz3) : D.intl.string(D.t.vTgCWx)
         };
-        if (a) return k(x({}, i), {
+        if (a) return k(L({}, i), {
           text: D.intl.string(D.t.MAS7uK)
         });
-        if ((0, m.vQ)(n.config)) return k(x({}, i), {
+        if ((0, m.vQ)(n.config)) return k(L({}, i), {
           text: D.intl.string(D.t.vTgCWx)
         });
         if ((0, m.Bg)(n.config)) return {
@@ -356,13 +356,13 @@ function Z(e) {
         else if ((0, m.xN)(n.config)) return {
           tooltipText: null,
           text: D.intl.string(D.t.WYchde),
-          onClick: L
+          onClick: x
         };
-        return k(x({}, i), {
+        return k(L({}, i), {
           text: D.intl.string(D.t.bAGFz3)
         })
     }
-  }, [r, b, I, _, v, a, n, o, s, f, M, A, N, L, y, U, O, Z, G])
+  }, [r, b, I, _, v, a, n, o, s, f, M, A, N, x, y, U, O, Z, G])
 }
 
 function F() {

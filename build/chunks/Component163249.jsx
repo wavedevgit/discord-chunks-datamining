@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 163249, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk714939 = require("./714939.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk203552 = require("./203552.js");
+  Chunk22168 = require("./22168.js");
 
 function f(e) {
   let {
@@ -75,7 +75,7 @@ function h(e) {
 
 function b() {
   let e = Chunk647438.useMemo(() => [{
-      backgroundClass: Chunk203552.bannerClubs,
+      backgroundClass: Chunk22168.bannerClubs,
       username: "Wumpus#0000",
       avatar: require("./91055.js"),
       roles: [
@@ -101,7 +101,7 @@ function b() {
         }]
       ]
     }, {
-      backgroundClass: Chunk203552.bannerGaming,
+      backgroundClass: Chunk22168.bannerGaming,
       username: "Graggle#0000",
       avatar: require("./507003.js"),
       roles: [
@@ -127,7 +127,7 @@ function b() {
         }]
       ]
     }, {
-      backgroundClass: Chunk203552.bannerHobbies,
+      backgroundClass: Chunk22168.bannerHobbies,
       username: "Mallow#0000",
       avatar: require("./552557.js"),
       roles: [
@@ -162,7 +162,7 @@ function b() {
     let e = setTimeout(() => Chunk120356((exports + 1) % a.current.length), 6332);
     return () => clearTimeout(module)
   }, [exports]), (0, Chunk951288.jsx)("div", {
-    className: Chunk203552.bannerContainer,
+    className: Chunk22168.bannerContainer,
     "aria-hidden": true,
     children: module.map((e, n) => (0, r.jsx)(h, {
       guild: e,

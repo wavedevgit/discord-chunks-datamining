@@ -63,8 +63,8 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = "SelectedChannelStore",
-  x = 3e5,
+let x = "SelectedChannelStore",
+  L = 3e5,
   M = 6e4,
   k = {},
   j = {},
@@ -76,7 +76,7 @@ function B(e) {
 }
 
 function Z() {
-  __OVERLAY__ || Chunk433517.K.set(L, {
+  __OVERLAY__ || Chunk433517.K.set(x, {
     selectedChannelId: a,
     selectedVoiceChannelId: s,
     lastChannelFollowingDestination: o,
@@ -121,13 +121,13 @@ function Y() {
   }), exports.forEach(e => {
     let t = k[e.id];
     null == U[e.id] && V(e.id, t)
-  }), null != l && Date.now() - l >= x && (s = null, e = true), module
+  }), null != l && Date.now() - l >= L && (s = null, e = true), module
 }
 
 function W(e) {
   if (r = e.sessionId, null != s) {
     let e = O.Z.getChannel(s);
-    null != e && T.Z.can(_.$e(C.Plq.VIEW_CHANNEL, C.Plq.CONNECT), e) || (s = null)
+    null != e && S.Z.can(_.$e(C.Plq.VIEW_CHANNEL, C.Plq.CONNECT), e) || (s = null)
   }
   Y() && Z()
 }
@@ -247,7 +247,7 @@ function er(e) {
 }
 
 function ei() {
-  k = {}, a = null, i = true, U = {}, o = {}, s = null, Chunk433517.K.remove(L)
+  k = {}, a = null, i = true, U = {}, o = {}, s = null, Chunk433517.K.remove(x)
 }
 
 function ea(e) {
@@ -266,7 +266,7 @@ class eo extends(u = Chunk442837.ZP.Store) {
   initialize() {
     if (!__OVERLAY__) {
       var e, t;
-      let n = null != (e = Chunk433517.K.get(L)) ? module : {
+      let n = null != (e = Chunk433517.K.get(x)) ? module : {
         selectedChannelId: a,
         selectedVoiceChannelId: s,
         lastChannelFollowingDestination: o,

@@ -57,7 +57,7 @@ function I() {
   m.clear(), E.clear(), g.clear(), b.clear(), y = null
 }
 
-function S(e) {
+function T(e) {
   let {
     guild: {
       id: t
@@ -68,7 +68,7 @@ function S(e) {
   n.delete(t), y = n
 }
 
-function T(e) {
+function S(e) {
   let {
     guild: {
       id: t
@@ -134,9 +134,9 @@ p(N, "displayName", "SubscriptionRoleStore");
 let R = new N(Chunk570140.Z, {
   CONNECTION_OPEN: I,
   LOGOUT: I,
-  GUILD_CREATE: T,
-  GUILD_DELETE: S,
-  GUILD_UPDATE: T,
+  GUILD_CREATE: S,
+  GUILD_DELETE: T,
+  GUILD_UPDATE: S,
   GUILD_ROLE_CREATE: A,
   GUILD_ROLE_UPDATE: A,
   GUILD_ROLE_DELETE: A,

@@ -34,8 +34,8 @@ let d = {},
   O = false,
   v = null,
   I = Chunk800530.bK.DIDNT_VIOLATE_POLICY,
-  S = "",
   T = "",
+  S = "",
   A = "",
   C = 0,
   N = null,
@@ -47,7 +47,7 @@ function D(e) {
   p = true
 }
 
-function L(e) {
+function x(e) {
   let {
     classifications: t,
     accountStanding: n,
@@ -56,10 +56,10 @@ function L(e) {
     username: o,
     appealEligibility: s
   } = e;
-  d = a()(t, "id"), _ = n, E = r, b = i, p = false, h = true, m = null, T = o, y = s
+  d = a()(t, "id"), _ = n, E = r, b = i, p = false, h = true, m = null, S = o, y = s
 }
 
-function x(e) {
+function L(e) {
   let {
     error: t
   } = e;
@@ -78,7 +78,7 @@ function k(e) {
     username: i,
     isAppealEligible: a
   } = e;
-  d[t.id] = t, f[t.id] = l.OY.SUCCESS, _ = n, p = false, m = null, E = r, b = a, h = true, T = i
+  d[t.id] = t, f[t.id] = l.OY.SUCCESS, _ = n, p = false, m = null, E = r, b = a, h = true, S = i
 }
 
 function j(e) {
@@ -97,7 +97,7 @@ function U(e) {
 }
 
 function G() {
-  g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, S = ""
+  g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, T = ""
 }
 
 function B(e) {
@@ -111,7 +111,7 @@ function Z(e) {
   let {
     userInput: t
   } = e;
-  S = t
+  T = t
 }
 
 function F(e) {
@@ -193,7 +193,7 @@ function $(e) {
 function ee() {
   p = false, d = {}, _ = {
     state: Chunk531441.Sn.ALL_GOOD
-  }, g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, S = "", y = []
+  }, g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, T = "", y = []
 }
 class et extends(r = Chunk442837.ZP.Store) {
   isFetching() {
@@ -233,7 +233,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return I
   }
   getFreeTextAppealReason() {
-    return S
+    return T
   }
   getIsSubmitting() {
     return O
@@ -242,7 +242,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return v
   }
   getUsername() {
-    return T
+    return S
   }
   getAgeVerificationWebviewUrl() {
     return A
@@ -266,8 +266,8 @@ class et extends(r = Chunk442837.ZP.Store) {
 u(et, "displayName", "SafetyHubStore");
 let en = new et(Chunk570140.Z, {
   SAFETY_HUB_FETCH_START: D,
-  SAFETY_HUB_FETCH_SUCCESS: L,
-  SAFETY_HUB_FETCH_FAILURE: x,
+  SAFETY_HUB_FETCH_SUCCESS: x,
+  SAFETY_HUB_FETCH_FAILURE: L,
   SAFETY_HUB_FETCH_CLASSIFICATION_START: M,
   SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS: k,
   SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE: j,

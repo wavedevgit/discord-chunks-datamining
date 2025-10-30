@@ -60,8 +60,8 @@ function v(e, t) {
   }), e
 }
 let I = window.DiscordNative,
-  S = new Set(["jpg", "jpeg", "png"]),
-  T = new Set(["jpg", "jpeg", "png", "webp", "gif", "tiff", "bmp", "avif"]),
+  T = new Set(["jpg", "jpeg", "png"]),
+  S = new Set(["jpg", "jpeg", "png", "webp", "gif", "tiff", "bmp", "avif"]),
   A = e => e.startsWith("image/"),
   C = 5,
   N = null,
@@ -70,8 +70,8 @@ let I = window.DiscordNative,
   w = {};
 null != I && (N = I.remoteApp.getVersion().split(".").map(e => parseInt(e)), P = null == (r = (i = I.remoteApp).getModuleVersions) ? true : r.call(i), R = null == (a = (o = I.remoteApp).getBuildNumber) ? true : a.call(o));
 let D = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]),
-  L = false,
-  x = "lastImageSaveDirectory",
+  x = false,
+  L = "lastImageSaveDirectory",
   M = /[<>:"/\\|?*@]/g,
   k = /(\.[a-zA-Z0-9]+):[^.]*$/,
   j = /(\.[a-zA-Z0-9]+)%3A.+$/,
@@ -240,12 +240,12 @@ let q = {
     getVoiceEngine() {
       if (__OVERLAY__) throw Error("cannot require discord_voice in overlay");
       let e = this.requireModule("discord_voice");
-      return L || (0, Chunk579092.Bl)((t, n, r) => {
+      return x || (0, Chunk579092.Bl)((t, n, r) => {
         e.consoleLog(n, "[".concat(t, "] ").concat(r))
-      }), L = true, module
+      }), x = true, module
     },
     getDiscordUtils() {
-      if (!L) try {
+      if (!x) try {
         this.getVoiceEngine()
       } catch (e) {}
       return this.requireModule("discord_utils")
@@ -323,7 +323,7 @@ let q = {
       l()(h.isPlatformEmbedded, "Copy image method called outside native app"), l()("function" == typeof I.clipboard.copyImage, "Copy image not supported");
       let n = await V(e),
         r = K(e, t),
-        i = null != r && S.has(r) ? "image.".concat(r) : e;
+        i = null != r && T.has(r) ? "image.".concat(r) : e;
       I.clipboard.copyImage(E.from(n), i)
     },
     async copyImageBlob(e, t) {
@@ -333,7 +333,7 @@ let q = {
     canSaveImage(e, t) {
       if (null == e || !h.isPlatformEmbedded) returnfalse;
       let n = K(e, t);
-      return null == n || T.has(n)
+      return null == n || S.has(n)
     },
     async saveImage(e, t, n) {
       var r, i, a;
@@ -356,7 +356,7 @@ let q = {
       }
       let _ = await V(e),
         p = E.from(_),
-        g = f.K.get(x);
+        g = f.K.get(L);
       if ("string" != typeof g && (g = true), "function" == typeof I.fileManager.saveWithDialog2) {
         if (null == (o = await I.fileManager.saveWithDialog2(p, u, null != g ? g : true))) return "errored";
         if (o.canceledByUser) return "canceled";
@@ -366,7 +366,7 @@ let q = {
       } catch (e) {
         return "errored"
       }
-      return null == s || "" === s ? "errored" : (f.K.set(x, s), "saved")
+      return null == s || "" === s ? "errored" : (f.K.set(L, s), "saved")
     },
     async saveFile(e, t) {
       var n;
@@ -407,7 +407,7 @@ let q = {
       if (!Chunk358085.isPlatformEmbedded || "function" != typeof I.clipboard.copyImage) returnfalse;
       if (null != module) {
         let t = K(module, true);
-        if (null != exports && !S.has(exports)) returnfalse
+        if (null != exports && !T.has(exports)) returnfalse
       }
       returntrue
     },

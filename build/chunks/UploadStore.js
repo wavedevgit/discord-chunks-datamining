@@ -2,7 +2,7 @@
 /** chunk id: 62817, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./35282.js"), require("./388685.js"), require("./358797.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -97,18 +97,18 @@ function I(e) {
     channelId: t,
     file: n
   } = e;
-  T(t, n)
+  S(t, n)
 }
 
-function S(e) {
+function T(e) {
   let {
     channelId: t,
     file: n
   } = e;
-  T(t, n)
+  S(t, n)
 }
 
-function T(e, t) {
+function S(e, t) {
   let n = f[e];
   if (null == n) returnfalse;
   f[e] = n.map(e => e.id === t.id ? l({}, e, t) : e);
@@ -161,7 +161,7 @@ function P(e) {
     var i;
     null != (i = r.nonce) || r.id
   }
-  T(t, n)
+  S(t, n)
 }
 
 function w(e) {
@@ -190,11 +190,11 @@ class D extends(r = Chunk442837.ZP.Store) {
   }
 }
 s(D, "displayName", "UploadStore");
-let L = new D(Chunk570140.Z, {
+let x = new D(Chunk570140.Z, {
   CONNECTION_OPEN: y,
   LOGOUT: O,
   UPLOAD_START: v,
-  UPLOAD_COMPRESSION_PROGRESS: S,
+  UPLOAD_COMPRESSION_PROGRESS: T,
   UPLOAD_PROGRESS: I,
   UPLOAD_COMPLETE: A,
   UPLOAD_FAIL: C,

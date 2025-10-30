@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk436444 = require("./436444.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk228103 = require("./228103.js");
+  Chunk581363 = require("./581363.js");
 let h = 200,
   m = 250,
   g = 36,
@@ -81,9 +81,9 @@ function O(e) {
     guild: t
   } = e, n = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [s, h] = i.useState(false), [g, E] = i.useState(0), O = i.useRef(null), v = s || n, {
     fillFactor: I,
-    totalAvailableBoostsCount: S
+    totalAvailableBoostsCount: T
   } = i.useMemo(() => (0, c.Hl)(t), [t]), {
-    progressBarFillWidthFactor: T,
+    progressBarFillWidthFactor: S,
     isProgressBarAnimationComplete: A,
     setShouldFireConfetti: C,
     shouldFireConfetti: N,
@@ -93,7 +93,7 @@ function O(e) {
     isRevealed: v,
     useReducedMotion: n,
     premiumTier: t.premiumTier,
-    guildBoostCount: S
+    guildBoostCount: T
   });
   return i.useEffect(() => {
     let e = window.setTimeout(() => {
@@ -105,11 +105,11 @@ function O(e) {
   }, []), (0, r.jsxs)("div", {
     className: p.progressBar,
     role: "progressbar",
-    "aria-valuenow": S,
+    "aria-valuenow": T,
     "aria-valuetext": t.premiumTier === f.Eu4.NONE ? _.intl.formatToPlainString(_.t.Ukqm9v, {
-      numSubscriptionsApplied: S
+      numSubscriptionsApplied: T
     }) : _.intl.formatToPlainString(_.t.qWunaU, {
-      numSubscriptionsApplied: S,
+      numSubscriptionsApplied: T,
       tierName: (0, c.nW)(t.premiumTier, {
         useLevels: false
       })
@@ -119,7 +119,7 @@ function O(e) {
       children: [(0, r.jsx)(a.animated.div, {
         className: p.progressBarFill,
         style: {
-          width: T.to({
+          width: S.to({
             range: [0, 1],
             output: [0, 100]
           }).to(e => "".concat(e, "%"))
@@ -135,7 +135,7 @@ function O(e) {
       setShouldFireConfetti: C,
       tier: e,
       tierMarkerAnimationPosition: R,
-      totalAvailableBoostsCount: S,
+      totalAvailableBoostsCount: T,
       children: (0, c.nW)(e)
     }, e)), (0, r.jsx)(u.Z, {
       confettiCount: g,

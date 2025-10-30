@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk699682 = require("./699682.js"),
   Chunk793903 = require("./793903.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk430723 = require("./430723.js");
+  Chunk827221 = require("./827221.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,14 +77,14 @@ function I(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let S = {
+let T = {
   mass: 1,
   tension: 300,
   friction: 28,
   clamp: true
 };
 
-function T(e, t) {
+function S(e, t) {
   return null == e ? null : e.index > t.index ? "backwards" : e.index < t.index ? "forwards" : null
 }
 
@@ -122,18 +122,18 @@ function N(e) {
   });
   let R = I.activeSlide,
     P = (0, p.Z)(I.activeSlide),
-    w = null != (t = I.directionOverride) ? t : T(null != P ? C[P] : null, C[R]),
+    w = null != (t = I.directionOverride) ? t : S(null != P ? C[P] : null, C[R]),
     {
       reducedMotion: D
     } = i.useContext(d.Sfi),
-    L = i.useContext(h.Z),
-    x = C[R].impressionName,
+    x = i.useContext(h.Z),
+    L = C[R].impressionName,
     M = O(b({}, C[R].impressionProperties), {
       location_stack: N
     });
-  L({
+  x({
     type: l.ImpressionTypes.MODAL,
-    name: x,
+    name: L,
     properties: M,
     _stackContext: {
       isSlide: true
@@ -143,7 +143,7 @@ function N(e) {
     ref: k,
     width: j = 0,
     height: U = 0
-  } = (0, _.ZP)(R), G = b({}, S, I.springConfig, D.enabled ? {
+  } = (0, _.ZP)(R), G = b({}, T, I.springConfig, D.enabled ? {
     clamp: true
   } : null), B = (0, f.q_F)({
     width: null != (n = I.width) ? n : j,

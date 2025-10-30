@@ -2,7 +2,7 @@
 /** chunk id: 810097, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => T,
+  ZP: () => S,
   _1: () => O,
   jd: () => v
 });
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk510659 = require("./510659.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk734623 = require("./734623.js");
+  Chunk877912 = require("./877912.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,13 +66,13 @@ let O = 2700,
     [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t.TKdBC8),
     [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.bSe71F)
   },
-  S = {
+  T = {
     [Chunk228168.n_.AVATAR]: () => Chunk388032.intl.string(Chunk388032.t.xvN0fV),
     [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t["C/vzS7"]),
     [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.ObfsSj)
   };
 
-function T(e) {
+function S(e) {
   let {
     user: t,
     sourceType: n,
@@ -81,7 +81,7 @@ function T(e) {
     interactionSourceId: b,
     targetRef: O,
     onAction: v,
-    renderMoreButtonPopout: T
+    renderMoreButtonPopout: S
   } = e, A = i.useRef(null), C = (0, s.e7)([d.default], () => d.default.getId() === t.id), N = (0, f.Z)(t.id), {
     onInteraction: R,
     onInteractionPopoutTargetRefChange: P
@@ -146,14 +146,14 @@ function T(e) {
       children: (0, r.jsx)(u.zx, {
         onClick: D,
         className: m.button,
-        "aria-label": S[n](),
+        "aria-label": T[n](),
         "aria-haspopup": "dialog",
         children: (0, r.jsx)(c.n$P, {
           size: "xs",
           className: m.icon
         })
       })
-    }), null == T ? true : T(e => {
+    }), null == S ? true : S(e => {
       let t = () => {
         var t;
         P(A), null == (t = e.onClick) || t.call(e)

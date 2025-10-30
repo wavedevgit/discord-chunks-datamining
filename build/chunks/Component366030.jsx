@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk852529 = require("./852529.js");
+  Chunk953605 = require("./953605.js");
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -190,14 +190,14 @@ function V(e) {
     guildId: d
   } = e;
   i.useEffect(() => {
-    T.default.track(L.rMx.PASSPORT_ROLE_POPOUT_VIEWED, U({
+    S.default.track(x.rMx.PASSPORT_ROLE_POPOUT_VIEWED, U({
       other_user_id: s,
       role_id: l
     }, (0, b.JS)(u), (0, b.hH)(d)))
   }, [s, l, u, d]);
-  let f = (0, c.e7)([S.ZP], () => {
+  let f = (0, c.e7)([T.ZP], () => {
     var e, t;
-    return null != (t = null == (e = S.ZP.getSelfMember(d)) ? true : e.roles.includes(l)) && t
+    return null != (t = null == (e = T.ZP.getSelfMember(d)) ? true : e.roles.includes(l)) && t
   }, [d, l]);
   return t = 1 === o.length && 1 === o[0].length ? M.intl.string(M.t.jDym4E) : 1 === o.length ? M.intl.format(M.t["0eBj3x"], {}) : M.intl.format(M.t.D7uftB, {}), (0, r.jsxs)("div", {
     className: k.popout,
@@ -265,7 +265,7 @@ function H(e) {
             guildId: a.id,
             channelId: s.id,
             roleId: u.id,
-            subsection: x.Tb.CONNECTIONS,
+            subsection: L.Tb.CONNECTIONS,
             sourceAnalyticsLocations: l
           }), i()
         }

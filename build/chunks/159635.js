@@ -62,8 +62,8 @@
             }
             if (null == c || null == u) throw Error("Could not find a matching rule for the below content. The rule with highest `order` should always match content provided to it. Check the definition of `match` for '" + a[a.length - 1] + "'. It seems to not match the following source:\n" + t);
             if (u.index) throw Error("`match` must return a capture starting at index 0 (the current parse index). Did you forget a ^ at the start of the RegExp?");
-            var S = c.parse(u, d, r);
-            Array.isArray(S) ? Array.prototype.push.apply(i, S) : (null == S.type && (S.type = l), i.push(S)), r.prevCapture = u, t = t.substring(r.prevCapture[0].length)
+            var T = c.parse(u, d, r);
+            Array.isArray(T) ? Array.prototype.push.apply(i, T) : (null == T.type && (T.type = l), i.push(T)), r.prevCapture = u, t = t.substring(r.prevCapture[0].length)
           }
           return i
         },
@@ -162,16 +162,16 @@
       return {}
     },
     I = "(?:[*+-]|\\d+\\.)",
-    S = "( *)(" + I + ") +",
-    T = RegExp("^" + S),
-    A = RegExp(S + "[^\\n]*(?:\\n(?!\\1" + I + " )[^\\n]*)*(\n|$)", "gm"),
+    T = "( *)(" + I + ") +",
+    S = RegExp("^" + T),
+    A = RegExp(T + "[^\\n]*(?:\\n(?!\\1" + I + " )[^\\n]*)*(\n|$)", "gm"),
     C = /\n{2,}$/,
     N = /^ (?= *`)|(` *) $/g,
     R = C,
     P = / *\n+$/,
     w = RegExp("^( *)(" + I + ") [\\s\\S]+?(?:\n{2,}(?! )(?!\\1" + I + " )\\n*|\\s*\n*$)"),
     D = /(?:^|\n)( *)$/,
-    L = function() {
+    x = function() {
       var e = /^ *\| *| *\| *$/g,
         t = / *$/,
         n = /^ *-+: *$/,
@@ -221,7 +221,7 @@
         NPTABLE_REGEX: /^ *(\S.*\|.*)\n *([-:]+ *\|[-| :]*)\n((?:.*\|.*(?:\n|$))*)\n*/
       }
     }(),
-    x = "(?:\\[[^\\]]*\\]|[^\\[\\]]|\\](?=[^\\[]*\\]))*",
+    L = "(?:\\[[^\\]]*\\]|[^\\[\\]]|\\](?=[^\\[]*\\]))*",
     M = "\\s*<?((?:\\([^)]*\\)|[^\\s\\\\]|\\\\.)*?)>?(?:\\s+['\"]([\\s\\S]*?)['\"])?\\s*",
     k = /mailto:/i,
     j = function(e, t, n) {
@@ -285,8 +285,8 @@
       },
       nptable: {
         order: G++,
-        match: s(L.NPTABLE_REGEX),
-        parse: L.parseNpTable,
+        match: s(x.NPTABLE_REGEX),
+        parse: x.parseNpTable,
         react: null,
         html: null
       },
@@ -388,9 +388,9 @@
             ordered: i,
             start: a,
             items: o.map(function(e, r) {
-              var i, a = T.exec(e),
+              var i, a = S.exec(e),
                 l = RegExp("^ {1," + (a ? a[0].length : 0) + "}", "gm"),
-                c = e.replace(l, "").replace(T, ""),
+                c = e.replace(l, "").replace(S, ""),
                 u = r === o.length - 1,
                 d = false !== c.indexOf("\n\n") || u && s;
               s = d;
@@ -448,8 +448,8 @@
       },
       table: {
         order: G++,
-        match: s(L.TABLE_REGEX),
-        parse: L.parseTable,
+        match: s(x.TABLE_REGEX),
+        parse: x.parseTable,
         react: function(e, t, n) {
           var r = function(t) {
               return null == e.align[t] ? {} : {
@@ -621,7 +621,7 @@
       link: {
         order: G++,
         requiredFirstCharacters: ["["],
-        match: o(RegExp("^\\[(" + x + ")\\]\\(" + M + "\\)")),
+        match: o(RegExp("^\\[(" + L + ")\\]\\(" + M + "\\)")),
         parse: function(e, t, n) {
           return {
             content: t(e[1], n),
@@ -646,7 +646,7 @@
       },
       image: {
         order: G++,
-        match: o(RegExp("^!\\[(" + x + ")\\]\\(" + M + "\\)")),
+        match: o(RegExp("^!\\[(" + L + ")\\]\\(" + M + "\\)")),
         parse: function(e, t, n) {
           return {
             alt: e[1],
@@ -671,7 +671,7 @@
       },
       reflink: {
         order: G++,
-        match: o(RegExp("^\\[(" + x + ")\\]\\s*\\[([^\\]]*)\\]")),
+        match: o(RegExp("^\\[(" + L + ")\\]\\s*\\[([^\\]]*)\\]")),
         parse: function(e, t, n) {
           return j(e, n, {
             type: "link",
@@ -683,7 +683,7 @@
       },
       refimage: {
         order: G++,
-        match: o(RegExp("^!\\[(" + x + ")\\]\\s*\\[([^\\]]*)\\]")),
+        match: o(RegExp("^!\\[(" + L + ")\\]\\s*\\[([^\\]]*)\\]")),
         parse: function(e, t, n) {
           return j(e, n, {
             type: "image",

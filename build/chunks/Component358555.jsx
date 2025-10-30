@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk267642 = require("./267642.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk566588 = require("./566588.js");
+  Chunk785290 = require("./785290.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,7 +62,7 @@ function I(e, t) {
   }), e
 }
 
-function S(e) {
+function T(e) {
   let {
     guild: t,
     isBannerVisible: n,
@@ -116,7 +116,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     guild: t,
     disableColor: n,
@@ -159,14 +159,14 @@ function A(e) {
     guild: t,
     disableBoostClick: n
   } = e, i = false;
-  return (0, l.Z)(t) ? (0, r.jsx)(T, {
+  return (0, l.Z)(t) ? (0, r.jsx)(S, {
     guild: t,
     disableColor: false,
     disableBoostClick: n
-  }) : t.features.has(g.GuildFeatures.VERIFIED) || t.features.has(g.GuildFeatures.PARTNERED) ? (0, r.jsx)(T, {
+  }) : t.features.has(g.GuildFeatures.VERIFIED) || t.features.has(g.GuildFeatures.PARTNERED) ? (0, r.jsx)(S, {
     guild: t,
     disableColor: !i
-  }) : (0, r.jsx)(S, {
+  }) : (0, r.jsx)(T, {
     guild: t,
     isBannerVisible: i,
     disableBoostClick: n

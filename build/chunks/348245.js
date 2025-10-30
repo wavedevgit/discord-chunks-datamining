@@ -55,7 +55,7 @@ function w(e) {
   let d = b.Z.getChannel(n);
   if ((null == d ? true : d.type) === A.d4z.GUILD_STORE || (null == d ? true : d.type) != null && A.TPd.GUILD_THREADS_ONLY.has(d.type)) return;
   let p = f.Z.getOrCreate(n);
-  p.some(T.k5) && (P.log("Found expired attachment link, clearing messages"), f.Z.clear(n), p = f.Z.getOrCreate(n)), null != p.jumpTargetId && null == r && (p = p.mutate({
+  p.some(S.k5) && (P.log("Found expired attachment link, clearing messages"), f.Z.clear(n), p = f.Z.getOrCreate(n)), null != p.jumpTargetId && null == r && (p = p.mutate({
     jumpTargetId: null,
     jumped: false,
     jumpType: u.SR.ANIMATED
@@ -76,7 +76,7 @@ function w(e) {
       avoidInitialScroll: l
     });
     else {
-      if ((null == d ? true : d.isThread()) && x(n)) return P.log("Jumping to start of thread ".concat(d.id)), c.Z.fetchMessages({
+      if ((null == d ? true : d.isThread()) && L(n)) return P.log("Jumping to start of thread ".concat(d.id)), c.Z.fetchMessages({
         channelId: n,
         limit: A.AQB,
         jump: {
@@ -113,19 +113,19 @@ function w(e) {
     }
 }
 let D = 90 * Chunk70956.Z.Millis.DAY,
-  L = "viewedThreadIds";
+  x = "viewedThreadIds";
 
-function x(e) {
+function L(e) {
   if (O.ZP.hasOpenedThread(e)) returnfalse;
   if (null == i) {
     var t;
-    i = null != (t = o.K.get(L, {})) ? t : {}
+    i = null != (t = o.K.get(x, {})) ? t : {}
   }
   if (e in i) returnfalse;
   i[e] = Date.now();
   let n = Date.now() - D;
   for (let e in i) i[e] < n && delete i[e];
-  return o.K.set(L, i), true
+  return o.K.set(x, i), true
 }
 
 function M(e) {
@@ -285,7 +285,7 @@ function K(e) {
   } = e;
   if (a) return;
   let o = null != (t = W[n]) ? t : 0;
-  if (Date.now() - o < 10 * S.Z.Millis.SECOND) return;
+  if (Date.now() - o < 10 * T.Z.Millis.SECOND) return;
   W[n] = Date.now();
   let s = v.Z.getChannelId(),
     l = E.ZP.getCurrentSidebarChannelId(s),

@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 15647 **/
 /** chunk id: 311352, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk39604 = require("./39604.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk611372 = require("./611372.js");
+  Chunk909631 = require("./909631.js");
 
 function j(e) {
   (0, s.jW)(e, async () => {
@@ -118,16 +118,16 @@ let C = e => {
         isAtMaxSavingClipsOperations: Chunk435064.Z.getIsAtMaxSaveClipOperations()
       })),
       v = (0, Chunk399606.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP));
-    if (!(Chunk704215 && Chunk239091) || null == Chunk611372 || require) return null;
-    let E = Chunk13140.BB(Chunk611372.shortcut, true);
+    if (!(Chunk704215 && Chunk239091) || null == Chunk909631 || require) return null;
+    let E = Chunk13140.BB(Chunk909631.shortcut, true);
     return (0, Chunk951288.jsx)(C, {
       keybindString: E,
       targetElementRef: module,
       children: (0, Chunk951288.jsx)(Chunk870569.Z, {
         ref: module,
         disabled: Chunk765585,
-        tooltipText: null != Chunk611372 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.HIMcv1, {
-          hotkey: Chunk13140.BB(null == Chunk611372 ? true : Chunk611372.shortcut, true)
+        tooltipText: null != Chunk909631 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.HIMcv1, {
+          hotkey: Chunk13140.BB(null == Chunk909631 ? true : Chunk909631.shortcut, true)
         }) : Chunk388032.intl.string(Chunk388032.t.s52pju),
         onClick: () => {
           (0, Chunk39604.br)(), (0, Chunk522651.v)(exports, Chunk522651.d.CLIP)

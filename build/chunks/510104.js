@@ -29,9 +29,9 @@ function f(e, t) {
     O = true === y ? l.k5 : y,
     v = n.altBoundary,
     I = true !== v && v,
-    S = n.padding,
-    T = true === S ? 0 : S,
-    A = (0, u.Z)("number" != typeof T ? T : (0, d.Z)(T, l.mv)),
+    T = n.padding,
+    S = true === T ? 0 : T,
+    A = (0, u.Z)("number" != typeof S ? S : (0, d.Z)(S, l.mv)),
     C = O === l.k5 ? l.YP : l.k5,
     N = e.rects.popper,
     R = e.elements[I ? C : O],
@@ -43,13 +43,13 @@ function f(e, t) {
       strategy: "absolute",
       placement: _
     }),
-    L = (0, s.Z)(Object.assign({}, N, D)),
-    x = O === l.k5 ? L : w,
+    x = (0, s.Z)(Object.assign({}, N, D)),
+    L = O === l.k5 ? x : w,
     M = {
-      top: P.top - x.top + A.top,
-      bottom: x.bottom - P.bottom + A.bottom,
-      left: P.left - x.left + A.left,
-      right: x.right - P.right + A.right
+      top: P.top - L.top + A.top,
+      bottom: L.bottom - P.bottom + A.bottom,
+      left: P.left - L.left + A.left,
+      right: L.right - P.right + A.right
     },
     k = e.modifiersData.offset;
   if (O === l.k5 && k) {

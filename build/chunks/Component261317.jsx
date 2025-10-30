@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 261317, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -30,12 +30,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk131085 = require("./131085.js"),
-  Chunk562915 = require("./562915.js"),
+  Chunk572073 = require("./572073.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk764009 = require("./764009.js");
+  Chunk565744 = require("./565744.js");
 let Z = function() {
   var e, t, n, Z;
-  (0, Chunk388032.useSyncMessages)(Chunk562915.messagesLoader);
+  (0, Chunk388032.useSyncMessages)(Chunk572073.messagesLoader);
   let {
     enabled: R
   } = Chunk892803.Z.useConfig({
@@ -51,7 +51,7 @@ let Z = function() {
     }, []), Chunk647438.useEffect(() => {
       k === Chunk314852.a.NOT_FETCHED && L()
     }, [L, k]), k !== Chunk314852.a.FETCHED) return (0, Chunk951288.jsx)("div", {
-    className: Chunk764009.spinnerContainer,
+    className: Chunk565744.spinnerContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });
   if (null == D || null == A) return null;
@@ -66,7 +66,7 @@ let Z = function() {
     },
     z = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk196902.Z, {
-        className: Chunk764009.section,
+        className: Chunk565744.section,
         guildId: D.id,
         isDisabled: U,
         tag: null != (Z = A.tag) ? Z : "",
@@ -74,11 +74,11 @@ let Z = function() {
         primaryColor: F,
         secondaryColor: H
       }), (0, Chunk951288.jsx)(Chunk910494.Z, {
-        className: Chunk764009.section,
+        className: Chunk565744.section,
         selectedBadge: B,
         guildId: D.id
       }), (0, Chunk951288.jsx)(Chunk423087.Z, {
-        className: Chunk764009.section,
+        className: Chunk565744.section,
         guildId: D.id,
         badge: B,
         primaryColor: F,
@@ -87,19 +87,19 @@ let Z = function() {
     });
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
-      className: Chunk764009.title,
+      className: Chunk565744.title,
       variant: "heading-lg/semibold",
-      children: Chunk388032.intl.string(Chunk562915.default.mf2OwH)
+      children: Chunk388032.intl.string(Chunk572073.default.mf2OwH)
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk764009.container,
+      className: Chunk565744.container,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk764009.leftContent,
+        className: Chunk565744.leftContent,
         children: [(0, Chunk951288.jsxs)("div", {
-          className: Chunk764009.descriptionContainer,
+          className: Chunk565744.descriptionContainer,
           children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/medium",
             color: "text-secondary",
-            children: Chunk388032.intl.format(Chunk562915.default["655Uny"], {
+            children: Chunk388032.intl.format(Chunk572073.default["655Uny"], {
               onClickServerProfile: () => {
                 Chunk434404.Z.setSection(Chunk981631.pNK.PROFILE)
               },
@@ -108,22 +108,22 @@ let Z = function() {
               }
             })
           }), !G && (0, Chunk951288.jsx)(Chunk494620.Z, {
-            className: Chunk764009.privateProfileWarning,
+            className: Chunk565744.privateProfileWarning,
             children: (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-xs/medium",
-              children: Chunk388032.intl.format(Chunk562915.default.CRbkIz, {
+              children: Chunk388032.intl.format(Chunk572073.default.CRbkIz, {
                 onClickEditSetting: () => Chunk434404.Z.setSection(Chunk981631.pNK.PROFILE, Chunk981631.KsC.PROFILE_VISIBILITY)
               })
             })
           })]
         }), M ? (0, Chunk951288.jsxs)("div", {
-          className: Chunk764009.enableSwitchContainer,
+          className: Chunk565744.enableSwitchContainer,
           children: [(0, Chunk951288.jsx)("label", {
             htmlFor: "enable-server-tag",
             children: (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-md/semibold",
               color: "header-primary",
-              children: Chunk388032.intl.string(Chunk562915.default["1zams8"])
+              children: Chunk388032.intl.string(Chunk572073.default["1zams8"])
             })
           }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
             id: "enable-server-tag",
@@ -143,7 +143,7 @@ let Z = function() {
             }
           })]
         }) : (0, Chunk951288.jsx)("div", {
-          className: Chunk764009.boostingLinkContainer,
+          className: Chunk565744.boostingLinkContainer,
           children: R ? (0, Chunk951288.jsx)(Chunk465682.v, {
             onClick: W
           }) : (0, Chunk951288.jsx)(Chunk585961.P, {
@@ -151,12 +151,12 @@ let Z = function() {
           })
         }), U ? (0, Chunk951288.jsx)(Chunk481060.nuw, {
           children: (0, Chunk951288.jsx)("div", {
-            className: Chunk764009.disabledForm,
+            className: Chunk565744.disabledForm,
             children: z
           })
         }) : z]
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk764009.sidebarContainer,
+        className: Chunk565744.sidebarContainer,
         children: [(0, Chunk951288.jsx)(Chunk978088.Z, {
           guildId: D.id,
           tag: A.tag,

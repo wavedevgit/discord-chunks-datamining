@@ -26,13 +26,13 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function S(e) {
+function T(e) {
   var t;
   let n = c.Z.getConnectionStats(e);
   return null == n ? null : null != (t = n.stats.rtp.outbound.find(e => "video" === e.type)) ? t : null
 }
 
-function T(e, t) {
+function S(e, t) {
   var n;
   if (null == t) return null;
   let r = c.Z.getConnectionStats(e);
@@ -42,7 +42,7 @@ function T(e, t) {
 }
 
 function A(e, t, n) {
-  return e ? S(t) : T(t, n)
+  return e ? T(t) : S(t, n)
 }
 
 function C(e) {
@@ -80,12 +80,12 @@ function P(e) {
 
 function w(e, t, n) {
   var r, i, a, o;
-  return e ? null != (i = null == (r = S(t)) ? true : r.frameRateEncode) ? i : null : null != (o = null == (a = T(t, n)) ? true : a.frameRateDecode) ? o : null
+  return e ? null != (i = null == (r = T(t)) ? true : r.frameRateEncode) ? i : null : null != (o = null == (a = S(t, n)) ? true : a.frameRateDecode) ? o : null
 }
 
 function D(e, t) {
   var n, r, c, h, D;
-  let L, x = (0, O.hp)(e),
+  let x, L = (0, O.hp)(e),
     M = P(t),
     k = d.Z.getChannel(M),
     j = "streamKey" in t ? t.streamKey : true,
@@ -116,18 +116,18 @@ function D(e, t) {
       exe: ea,
       distributor: eo
     } = (0, s.G8)(ee),
-    es = x.isErrorOutbound,
+    es = L.isErrorOutbound,
     el = null != U ? U : I.Yn.DEFAULT,
     ec = null != Q ? Q.ownerId : X,
     eu = null != J ? null == J ? true : J.getVoiceParticipantType() : es ? "sender" : "receiver",
     ed = null != (r = null == $ ? true : $.getMediaEngineConnectionId()) ? r : null;
-  L = null != j && null != Q ? es ? null == $ || null == (c = $.getOutboundStats()) ? true : c.find(e => e.quality === I.y7) : null == $ ? true : $.getInboundStats(Q.ownerId) : es ? null != (D = i().maxBy(null != (h = null == $ ? true : $.getOutboundStats()) ? h : [], e => e.num_frames)) ? D : null : null != ec ? null == $ ? true : $.getInboundStats(ec) : null, (0, g.q)().then(t => {
-    var n, r, i, s, l, c, u, d, h, m, g, O, P, D, j, X, ee, ef, e_, ep, eh, em, eg, eE, eb, ey, eO, ev, eI, eS, eT, eA, eC, eN, eR, eP, ew, eD, eL, ex, eM, ek, ej, eU, eG, eB, eZ, eF, eV;
+  x = null != j && null != Q ? es ? null == $ || null == (c = $.getOutboundStats()) ? true : c.find(e => e.quality === I.y7) : null == $ ? true : $.getInboundStats(Q.ownerId) : es ? null != (D = i().maxBy(null != (h = null == $ ? true : $.getOutboundStats()) ? h : [], e => e.num_frames)) ? D : null : null != ec ? null == $ ? true : $.getInboundStats(ec) : null, (0, g.q)().then(t => {
+    var n, r, i, s, l, c, u, d, h, m, g, O, P, D, j, X, ee, ef, e_, ep, eh, em, eg, eE, eb, ey, eO, ev, eI, eT, eS, eA, eC, eN, eR, eP, ew, eD, ex, eL, eM, ek, ej, eU, eG, eB, eZ, eF, eV;
     let eH = {
       error_name: e.valueOf(),
-      error_code: x.errorCode,
-      error_severity: x.severity,
-      error_category: x.category,
+      error_code: L.errorCode,
+      error_severity: L.severity,
+      error_category: L.category,
       underlying_error: null != G ? G : null,
       error_message: null != B ? B : null,
       guild_id: null != (D = null == k ? true : k.guild_id) ? D : null,
@@ -143,17 +143,17 @@ function D(e, t) {
       hostname: null != (eh = _.Z.getHostname()) ? eh : null,
       duration: null != (em = null == $ ? true : $.getDurationSeconds()) ? em : null,
       participant_type: null != eu ? eu : null,
-      num_frames: null != (eg = null == L ? true : L.num_frames) ? eg : 0,
-      num_packets: null != (eE = null == L ? true : L.num_packets) ? eE : 0,
-      num_bytes: null != (eb = null == L ? true : L.num_bytes) ? eb : 0,
+      num_frames: null != (eg = null == x ? true : x.num_frames) ? eg : 0,
+      num_packets: null != (eE = null == x ? true : x.num_packets) ? eE : 0,
+      num_bytes: null != (eb = null == x ? true : x.num_bytes) ? eb : 0,
       num_packets_lost: null != (ey = null == (i = A(es, ed, ec)) ? true : i.packetsLost) ? ey : 0,
       video_codec: null != (eO = null != V ? V : (0, a.bU)(null == (s = A(es, ed, ec)) ? true : s.codec.name)) ? eO : null,
-      video_encoder: null != (ev = null != H ? H : (0, a.lG)(null == (l = S(ed)) ? true : l.encoderImplementationName)) ? ev : null,
-      video_decoder: null != (eI = null != Y ? Y : (0, a.z_)(null == (c = T(ed, ec)) ? true : c.decoderImplementationName)) ? eI : null,
+      video_encoder: null != (ev = null != H ? H : (0, a.lG)(null == (l = T(ed)) ? true : l.encoderImplementationName)) ? ev : null,
+      video_decoder: null != (eI = null != Y ? Y : (0, a.z_)(null == (c = S(ed, ec)) ? true : c.decoderImplementationName)) ? eI : null,
       audio_capture_sample_rate_mismatch_percent: null != W ? W : null,
       incoming_video_stopped_for_occlusion: !o.w.isIncomingVideoEnabled(),
-      bitrate: null != (eS = null == (u = A(es, ed, ec)) ? true : u.bitrate) ? eS : null,
-      target_bitrate: es && null != (eT = null == (d = S(ed)) ? true : d.bitrateTarget) ? eT : null,
+      bitrate: null != (eT = null == (u = A(es, ed, ec)) ? true : u.bitrate) ? eT : null,
+      target_bitrate: es && null != (eS = null == (d = T(ed)) ? true : d.bitrateTarget) ? eS : null,
       fps: null != (eA = w(es, el, ec)) ? eA : null,
       target_fps: el === I.Yn.STREAM && es ? en : null,
       sender_user_id: null != (eC = null == Q ? true : Q.ownerId) ? eC : null,
@@ -169,8 +169,8 @@ function D(e, t) {
       share_application_distributor: null != eo ? eo : null,
       cpu_brand: null != (ew = null == t ? true : t.cpu_brand) ? ew : null,
       cpu_vendor: null != (eD = null == t ? true : t.cpu_vendor) ? eD : null,
-      cpu_memory: null != (eL = null == t ? true : t.cpu_memory) ? eL : null,
-      gpu_brand: null != (ex = null == t ? true : t.gpu_brand) ? ex : null,
+      cpu_memory: null != (ex = null == t ? true : t.cpu_memory) ? ex : null,
+      gpu_brand: null != (eL = null == t ? true : t.gpu_brand) ? eL : null,
       gpu_count: null != (eM = null == t ? true : t.gpu_count) ? eM : null,
       gpu_memory: null != (ek = null == t ? true : t.gpu_memory) ? ek : null,
       gpu_device_vendor_id: null != (ej = null == t ? true : t.gpu_device_vendor_id) ? ej : null,

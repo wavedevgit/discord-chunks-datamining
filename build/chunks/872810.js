@@ -10,8 +10,8 @@ require.d(exports, {
   g: () => k,
   iV: () => M,
   n9: () => U,
-  pR: () => x,
-  rn: () => L,
+  pR: () => L,
+  rn: () => x,
   tK: () => w,
   xc: () => G
 });
@@ -71,7 +71,7 @@ function P(e, t, n) {
     streamType: null != e ? A.lo.GUILD : A.lo.CALL,
     guildId: e,
     channelId: t,
-    appContext: __OVERLAY__ ? T.IlC.OVERLAY : T.IlC.APP
+    appContext: __OVERLAY__ ? S.IlC.OVERLAY : S.IlC.APP
   }, n))
 }
 
@@ -89,7 +89,7 @@ function D(e, t) {
   return i()(null != n, "Cannot join a null voice channel"), !b.Z.isInChannel(t) && (0, y.rY)(n, b.Z, g.Z)
 }
 
-function L(e, t) {
+function x(e, t) {
   let {
     defaultWatchMultipleStreams: n
   } = (0, c.$)({
@@ -112,10 +112,10 @@ function L(e, t) {
     type: "STREAM_WATCH",
     streamKey: a,
     allowMultiple: o || n
-  }), o || null != t && t.noFocus || S.Z.selectParticipant(e.channelId, a)
+  }), o || null != t && t.noFocus || T.Z.selectParticipant(e.channelId, a)
 }
 
-function x(e, t) {
+function L(e, t) {
   s.Z.dispatch({
     type: "STREAM_UPDATE_SELF_HIDDEN",
     channelId: e,
@@ -129,8 +129,8 @@ function M(e, t) {
     channelId: r
   } = e;
   if (null != n && D(n, r)) return;
-  L(e, t);
-  let i = f.Z.getWindowOpen(T.KJ3.CHANNEL_CALL_POPOUT),
+  x(e, t);
+  let i = f.Z.getWindowOpen(S.KJ3.CHANNEL_CALL_POPOUT),
     a = E.Z.getVoiceChannelId();
   i && a === r || (0, d.Z)(e)
 }
@@ -141,7 +141,7 @@ function k(e) {
   n && j(e, t), s.Z.dispatch({
     type: "STREAM_STOP",
     streamKey: e,
-    appContext: __OVERLAY__ ? T.IlC.OVERLAY : T.IlC.APP
+    appContext: __OVERLAY__ ? S.IlC.OVERLAY : S.IlC.APP
   })
 }
 
@@ -167,7 +167,7 @@ async function U(e, t, n) {
   });
   try {
     let e = await o.tn.get({
-      url: T.ANM.STREAM_PREVIEW(r),
+      url: S.ANM.STREAM_PREVIEW(r),
       query: {
         version: Date.now()
       },
@@ -191,7 +191,7 @@ async function U(e, t, n) {
 async function G(e) {
   try {
     await I.Z.post({
-      url: T.ANM.STREAM_NOTIFY(e),
+      url: S.ANM.STREAM_NOTIFY(e),
       oldFormErrors: true,
       trackedActionData: {
         event: a.NetworkActionNames.STREAM_NOTIFY
@@ -209,7 +209,7 @@ function B(e) {
 
 function Z(e, t) {
   o.tn.patch({
-    url: T.ANM.STREAM(e),
+    url: S.ANM.STREAM(e),
     body: {
       region: t
     },

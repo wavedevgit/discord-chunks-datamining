@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk153066 = require("./153066.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk855364 = require("./855364.js");
+  Chunk21874 = require("./21874.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,13 +57,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -114,7 +114,7 @@ function N(e) {
     showActions: E = true,
     hideHeader: y = false,
     showChannelDetails: O = false
-  } = e, I = T(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]);
+  } = e, I = S(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]);
   let A = (0, a.e7)([m.Z, p.Z], () => {
       var e;
       return p.Z.getChannel(null == (e = m.Z.getVoiceStateForUser(n.id)) ? true : e.channelId)
@@ -127,7 +127,7 @@ function N(e) {
       return (0, o.Z)(t, b.xjy.EMBEDDED) ? h.Z.getGuild(null == (e = p.Z.getChannel(null == (r = m.Z.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != P ? h.Z.getGuild(P.getGuildId()) : null
     }),
     D = (0, a.e7)([h.Z], () => null != R ? h.Z.getGuild(R.guildId) : null),
-    L = (0, a.e7)([c.Z], () => {
+    x = (0, a.e7)([c.Z], () => {
       if (null != t)
         if (null != t.application_id) return c.Z.getApplication(t.application_id);
         else return c.Z.getApplicationByName(t.name);
@@ -138,15 +138,15 @@ function N(e) {
       source: "UserActivity",
       other_user_id: n.id
     }, (0, u.Z)(null == P ? true : P.id)))
-  }, [null == t ? true : t.type, N, P, n.id]), (null == t ? true : t.type) !== b.IIU.HANG_STATUS || N) ? (0, r.jsx)(s.Z, S(v({}, I), {
+  }, [null == t ? true : t.type, N, P, n.id]), (null == t ? true : t.type) !== b.IIU.HANG_STATUS || N) ? (0, r.jsx)(s.Z, T(v({}, I), {
     activity: t,
     user: n,
-    application: L,
+    application: x,
     hideHeader: y,
     activityGuild: null != w ? w : D,
     showChannelDetails: O,
     channel: O ? A : true,
-    renderActions: E ? () => (0, r.jsx)(C, S(v({}, I), {
+    renderActions: E ? () => (0, r.jsx)(C, T(v({}, I), {
       applicationStream: R,
       activity: t,
       user: n

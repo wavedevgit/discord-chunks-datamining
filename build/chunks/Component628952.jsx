@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk473608 = require("./473608.jsx"),
   Chunk29121 = require("./29121.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk855646 = require("./855646.js");
+  Chunk942501 = require("./942501.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -70,20 +70,20 @@ let C = e => {
     price: a,
     onSelect: s,
     shouldDisplayHeader: I = false,
-    className: T,
+    className: S,
     hideProfilePreview: C = false
   } = e, {
     product: N
   } = (0, m.T)(t, true), {
     giftRecipient: R,
     giftRecipientError: P
-  } = (0, f.wD)(), w = (0, u.e7)([h.default], () => h.default.getCurrentUser()), D = (0, y.kd)(N), L = i.useRef(null);
+  } = (0, f.wD)(), w = (0, u.e7)([h.default], () => h.default.getCurrentUser()), D = (0, y.kd)(N), x = i.useRef(null);
   if (null == N) return null;
-  let [x] = N.items;
-  l()(null != x, "Product item should not be empty");
+  let [L] = N.items;
+  l()(null != L, "Product item should not be empty");
   let M = () => {
       if ((null == N ? true : N.type) === c.Z.BUNDLE) return null;
-      switch (x.type) {
+      switch (L.type) {
         case c.Z.AVATAR_DECORATION:
           return O.intl.string(O.t["7v0T9P"]);
         case c.Z.PROFILE_EFFECT:
@@ -94,33 +94,33 @@ let C = e => {
           return null
       }
     },
-    k = null != R && R.id !== (null == w ? true : w.id) && N.type !== c.Z.BUNDLE && x.type !== c.Z.NAMEPLATE && !C,
+    k = null != R && R.id !== (null == w ? true : w.id) && N.type !== c.Z.BUNDLE && L.type !== c.Z.NAMEPLATE && !C,
     j = () => {
       null != t && null != s && s(t)
     };
   return (0, r.jsxs)("div", {
-    className: T,
+    className: S,
     children: [I && (0, r.jsx)("div", {
       className: v.previewTitleContainer,
       children: (0, r.jsx)(d.gNt, {
         label: O.intl.string(O.t.PpoJzt),
         children: k && (0, r.jsx)(d.yRy, {
-          targetElementRef: L,
+          targetElementRef: x,
           preload: () => (0, p.Z)(R.id, R.getAvatarURL(null, 80)),
-          renderPopout: e => (0, r.jsx)(_.Z, A(S({}, e), {
+          renderPopout: e => (0, r.jsx)(_.Z, A(T({}, e), {
             user: R,
             pendingAvatar: R.getAvatarURL(null, (0, d.pxk)(d.EFr.SIZE_80)),
-            pendingAvatarDecoration: (0, g.M)(x) ? x : null,
-            pendingProfileEffect: (0, E.H)(x) ? x : null,
+            pendingAvatarDecoration: (0, g.M)(L) ? L : null,
+            pendingProfileEffect: (0, E.H)(L) ? L : null,
             canUsePremiumCustomization: true,
             disabledInputs: true,
             hideExampleButton: true
           })),
           align: "center",
           position: "right",
-          children: e => (0, r.jsx)(d.P3F, A(S({}, e), {
+          children: e => (0, r.jsx)(d.P3F, A(T({}, e), {
             className: v.previewLink,
-            innerRef: L,
+            innerRef: x,
             children: (0, r.jsx)(d.Text, {
               variant: "text-xs/medium",
               color: "text-link",

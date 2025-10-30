@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk612232 = require("./612232.js");
+  Chunk180568 = require("./180568.js");
 let A = ">=10.0.22000",
   C = /\{65E8773D-8F56-11D0-A3B9-00A0C9223196\}/i,
   N = "{E5323777-F976-4f5b-9B55-B94699C46E44}";
@@ -48,7 +48,7 @@ function w() {
       exports(true)
     }) : (module.stop(), exports(false)), () => module.stop()
   }, [require]), module) ? (0, Chunk951288.jsx)("div", {
-    className: Chunk612232.filterLoadingIndicator,
+    className: Chunk180568.filterLoadingIndicator,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   }) : null
 }
@@ -69,20 +69,20 @@ function D(e) {
     analyticsLocations: N
   } = (0, f.ZP)(), {
     id: w
-  } = (0, p.p6)(I.h7.VIDEO_INPUT), D = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), L = m.qF.useSetting();
+  } = (0, p.p6)(I.h7.VIDEO_INPUT), D = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), x = m.qF.useSetting();
   return (0, r.jsxs)(c.Kqy, {
     gap: 20,
     children: [d(w), E.Z.isEnabled() ? null : (0, r.jsx)(c.Text, {
-      className: T.permissionWarning,
+      className: S.permissionWarning,
       color: "interactive-normal",
       variant: "text-sm/normal",
-      children: S.intl.format(S.t.stagfJ, {
+      children: T.intl.format(T.t.stagfJ, {
         onEnableClick: () => u.Z.enable(true)
       })
     }), y ? null : (0, r.jsx)(c.rsf, {
-      label: S.intl.string(S.t["3Ppr1h"]),
-      description: S.intl.string(S.t.WNbX4O),
-      checked: L,
+      label: T.intl.string(T.t["3Ppr1h"]),
+      description: T.intl.string(T.t.WNbX4O),
+      checked: x,
       onChange: e => {
         m.qF.updateSetting(e), b.default.track(O.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e
@@ -91,8 +91,8 @@ function D(e) {
     }), !t && (0, r.jsx)(h.F, {
       setting: v.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
       children: (0, r.jsx)(_.j, {
-        label: n ? true : S.intl.string(S.t.FsQ3OR),
-        helperText: !i && R() ? S.intl.format(S.t.aJYgRt, {
+        label: n ? true : T.intl.string(T.t.FsQ3OR),
+        helperText: !i && R() ? T.intl.format(T.t.aJYgRt, {
           onCameraSettingsClick: () => {
             null == C || C(), window.open(P(w)), b.default.track(O.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
               location_stack: N
@@ -107,7 +107,7 @@ function D(e) {
     }), (0, r.jsx)(h.F, {
       setting: v.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
       children: (0, r.jsx)(g.Z, {
-        className: T.spacingTop24,
+        className: S.spacingTop24,
         onLearnMore: a,
         selectedBackgroundOption: o,
         onSelectBackgroundOption: l,

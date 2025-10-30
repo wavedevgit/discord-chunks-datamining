@@ -43,8 +43,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk526761 = require("./526761.js"),
   Chunk332325 = require("./332325.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk531421 = require("./531421.js"),
-  Chunk352609 = require("./352609.js"),
+  Chunk24864 = require("./24864.js"),
+  Chunk593082 = require("./593082.js"),
   Chunk660372 = require("./660372.js"),
   Chunk926433 = require("./926433.js"),
   Chunk302036 = require("./302036.js"),
@@ -83,7 +83,7 @@ let ey = () => {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, Chunk410030.ZP)(), n = (0, Chunk424218.BU)(Chunk474936.Uq / 1024, {
     useKibibytes: true
-  }), eb = (0, Chunk399606.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), ey = null != eb ? Chunk74538.ZP.getPremiumPlanItem(eb) : null, eO = (null != ey ? Chunk74538.ZP.getSkuIdForPlan(ey.planId) : null) === Chunk474936.Si.TIER_2, ev = Chunk594174.default.getCurrentUser(), eI = (0, Chunk74538.I5)(ev, Chunk474936.PremiumTypes.TIER_2), eS = (0, Chunk74538.I5)(ev, Chunk474936.PremiumTypes.TIER_0), eT = (0, Chunk779618.Z)(Chunk131951.Z), {
+  }), eb = (0, Chunk399606.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), ey = null != eb ? Chunk74538.ZP.getPremiumPlanItem(eb) : null, eO = (null != ey ? Chunk74538.ZP.getSkuIdForPlan(ey.planId) : null) === Chunk474936.Si.TIER_2, ev = Chunk594174.default.getCurrentUser(), eI = (0, Chunk74538.I5)(ev, Chunk474936.PremiumTypes.TIER_2), eT = (0, Chunk74538.I5)(ev, Chunk474936.PremiumTypes.TIER_0), eS = (0, Chunk779618.Z)(Chunk131951.Z), {
     isFractionalPremiumActive: eA
   } = (0, Chunk975298.Z)(), eC = null != eb && eb.hasPremiumAtLeast(Chunk474936.PremiumTypes.TIER_2), eN = (0, Chunk266454.Nj)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eR = (0, Chunk594928.cL)({
     location: "usePremiumPerksCards"
@@ -100,13 +100,13 @@ let ey = () => {
       section: Chunk981631.oAB.GUILD_BOOSTING,
       analyticsLocations: module
     })
-  }, eL = () => {
+  }, ex = () => {
     (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
       section: Chunk981631.oAB.VOICE,
       subsection: Chunk526761.GA,
       analyticsLocations: module
     })
-  }, ex = () => {
+  }, eL = () => {
     (0, Chunk703656.uL)(Chunk981631.Z5c.COLLECTIBLES_SHOP)
   }, eM = () => {
     (0, Chunk547972.Z)(Chunk332325.Z.CLIPS, {
@@ -152,9 +152,9 @@ let ey = () => {
       title: Chunk388032.intl.string(Chunk388032.t.z2jK6X),
       subtitle: Chunk388032.intl.string(Chunk388032.t["hxy0/R"]),
       description: Chunk388032.intl.string(Chunk388032.t.Z6v86b),
-      descriptionCta: eT ? Chunk388032.intl.string(Chunk388032.t.jVcuVY) : Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
+      descriptionCta: eS ? Chunk388032.intl.string(Chunk388032.t.jVcuVY) : Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
       pillText: Chunk388032.intl.string(Chunk388032.t.EYxi0o),
-      onCtaClick: eT ? eM : ej,
+      onCtaClick: eS ? eM : ej,
       perkImage: Chunk766491
     } : {
       name: "clips",
@@ -198,7 +198,7 @@ let ey = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t["7ZCYvC"]),
       description: Chunk388032.intl.string(Chunk388032.t.mUT8bO),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
-      onCtaClick: eL,
+      onCtaClick: ex,
       perkImage: Chunk132015
     } : {
       name: "entranceSounds",
@@ -213,7 +213,7 @@ let ey = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t["7ZCYvC"]),
       description: Chunk388032.intl.string(Chunk388032.t.mUT8bO),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
-      onCtaClick: eL,
+      onCtaClick: ex,
       perkImage: Chunk142416
     } : {
       name: "entranceSoundsSeeAllVariation",
@@ -273,7 +273,7 @@ let ey = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.opgqDZ),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSd"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: ex,
+      onCtaClick: eL,
       perkImage: Chunk498730
     },
     specialMemberPricingSeeAllVariant: {
@@ -282,7 +282,7 @@ let ey = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.opgqDZ),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSd"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: ex,
+      onCtaClick: eL,
       perkImage: Chunk498730
     },
     specialShopPerks: {
@@ -291,7 +291,7 @@ let ey = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.chRZiX),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSd"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: ex,
+      onCtaClick: eL,
       perkImage: Chunk498730
     },
     superReactions: {
@@ -375,9 +375,9 @@ let ey = () => {
       title: Chunk388032.intl.string(Chunk388032.t.XQCSri),
       subtitle: Chunk388032.intl.string(Chunk388032.t.HC5wVV),
       description: Chunk388032.intl.string(Chunk388032.t.ee7wQ7),
-      descriptionCta: eI || eS ? Chunk388032.intl.string(Chunk388032.t.y9TxXV) : Chunk388032.intl.string(Chunk388032.t.d8o6lc),
-      isPremiumGetCta: !(eI || eS),
-      onCtaClick: eI || eS ? ek : true,
+      descriptionCta: eI || eT ? Chunk388032.intl.string(Chunk388032.t.y9TxXV) : Chunk388032.intl.string(Chunk388032.t.d8o6lc),
+      isPremiumGetCta: !(eI || eT),
+      onCtaClick: eI || eT ? ek : true,
       perkImage: Chunk607762
     },
     referralProgram: {
@@ -415,8 +415,8 @@ let ey = () => {
     },
     customThemes: {
       name: "customThemes",
-      title: Chunk388032.intl.string(Chunk531421.default["76L4b7"]),
-      subtitle: Chunk388032.intl.string(Chunk531421.default.i3n50h),
+      title: Chunk388032.intl.string(Chunk24864.default["76L4b7"]),
+      subtitle: Chunk388032.intl.string(Chunk24864.default.i3n50h),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
       onCtaClick: () => {
         (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME)
@@ -434,8 +434,8 @@ let ey = () => {
     },
     displayNameStyles: {
       name: "displayNameStyles",
-      title: Chunk388032.intl.string(Chunk352609.default.ABtBDQ),
-      subtitle: Chunk388032.intl.string(Chunk352609.default.jhmU5E),
+      title: Chunk388032.intl.string(Chunk593082.default.ABtBDQ),
+      subtitle: Chunk388032.intl.string(Chunk593082.default.jhmU5E),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
       onCtaClick: eB,
       canReveal: eR,

@@ -60,14 +60,14 @@ let O = new Set,
   v = {},
   I = {};
 
-function S(e) {
+function T(e) {
   v = a().omitBy(v, t => {
     let n = t.guildId === e;
     return n && delete I[t.parentId], n
   })
 }
 
-function T(e) {
+function S(e) {
   v = a().omitBy(v, t => t.parentId === e), delete I[e]
 }
 
@@ -121,7 +121,7 @@ function D(e) {
   I = {}, O.clear(), e.guilds.forEach(N)
 }
 
-function L(e) {
+function x(e) {
   let {
     threadMessages: t
   } = e;
@@ -133,7 +133,7 @@ function L(e) {
   }
 }
 
-function x(e) {
+function L(e) {
   let {
     guild: t
   } = e;
@@ -144,7 +144,7 @@ function M(e) {
   let {
     guild: t
   } = e;
-  S(t.id)
+  T(t.id)
 }
 
 function k(e) {
@@ -195,7 +195,7 @@ function B(e) {
   let {
     channel: t
   } = e;
-  T(t.id)
+  S(t.id)
 }
 
 function Z(e) {
@@ -317,8 +317,8 @@ class q extends(r = Chunk442837.ZP.Store) {
 g(q, "displayName", "ThreadMessageStore");
 let X = new q(Chunk570140.Z, {
   CONNECTION_OPEN: D,
-  OVERLAY_INITIALIZE: L,
-  GUILD_CREATE: x,
+  OVERLAY_INITIALIZE: x,
+  GUILD_CREATE: L,
   GUILD_DELETE: M,
   THREAD_CREATE: k,
   THREAD_UPDATE: k,

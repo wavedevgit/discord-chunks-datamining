@@ -63,19 +63,19 @@ let y = false,
   O = {},
   v = {},
   I = new Set,
-  S = {},
   T = {},
+  S = {},
   A = false;
 
 function C() {
   Chunk433517.K.set(E, g(h({}, b()), {
-    activeLaunchOptionIds: T
+    activeLaunchOptionIds: S
   }))
 }
 
 function N() {
   Chunk433517.K.set(E, g(h({}, b()), {
-    activeLibraryApplicationBranchIds: S
+    activeLibraryApplicationBranchIds: T
   }))
 }
 
@@ -104,7 +104,7 @@ function D(e) {
   R(t)
 }
 
-function L(e) {
+function x(e) {
   let {
     applicationId: t,
     branchId: n,
@@ -113,7 +113,7 @@ function L(e) {
   null != a && !a.isHidden() && u.yE(r, _.eHb.HIDDEN) && (A = true), I.add(i)
 }
 
-function x(e) {
+function L(e) {
   let {
     libraryApplication: t
   } = e, n = c.Z.createFromServer(t), r = (0, d.Tu)(n.id, n.branchId);
@@ -126,7 +126,7 @@ function M(e) {
     branchId: n,
     launchOptionId: r
   } = e;
-  T[(0, d.Tu)(t, n)] = r, C()
+  S[(0, d.Tu)(t, n)] = r, C()
 }
 
 function k(e) {
@@ -134,8 +134,8 @@ function k(e) {
     applicationId: t,
     branchId: n
   } = e;
-  if (S[t] === n) returnfalse;
-  S[t] = n, N()
+  if (T[t] === n) returnfalse;
+  T[t] = n, N()
 }
 
 function j(e) {
@@ -169,7 +169,7 @@ class F extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default);
     let e = Chunk433517.K.get(E);
-    null != module && (null == module.activeLaunchOptionIds ? C() : T = module.activeLaunchOptionIds, null == module.activeLibraryApplicationBranchIds ? N() : S = module.activeLibraryApplicationBranchIds)
+    null != module && (null == module.activeLaunchOptionIds ? C() : S = module.activeLaunchOptionIds, null == module.activeLibraryApplicationBranchIds ? N() : T = module.activeLibraryApplicationBranchIds)
   }
   get libraryApplications() {
     return G(e => !e.isHidden())
@@ -192,7 +192,7 @@ class F extends(r = Chunk442837.ZP.Store) {
   }
   getActiveLibraryApplication(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = S[e];
+      n = T[e];
     if (null != n) {
       var r;
       let i = (0, d.Tu)(e, n),
@@ -210,7 +210,7 @@ class F extends(r = Chunk442837.ZP.Store) {
     return I.has((0, d.Tu)(e, t))
   }
   getActiveLaunchOptionId(e, t) {
-    return T[(0, d.Tu)(e, t)]
+    return S[(0, d.Tu)(e, t)]
   }
   get fetched() {
     return y
@@ -232,9 +232,9 @@ let V = new F(Chunk570140.Z, {
   LOGOUT: P,
   LIBRARY_FETCH_SUCCESS: w,
   SKU_PURCHASE_SUCCESS: D,
-  LIBRARY_APPLICATION_FLAGS_UPDATE_START: L,
-  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: x,
-  LIBRARY_APPLICATION_UPDATE: x,
+  LIBRARY_APPLICATION_FLAGS_UPDATE_START: x,
+  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: L,
+  LIBRARY_APPLICATION_UPDATE: L,
   LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE: M,
   LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: k,
   LIBRARY_APPLICATIONS_TEST_MODE_ENABLED: j,

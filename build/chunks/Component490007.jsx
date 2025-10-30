@@ -1,4 +1,4 @@
-/** Chunk was on 39297 **/
+/** Chunk was on 87665 **/
 /** chunk id: 490007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -12,8 +12,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk488922 = require("./488922.jsx"),
   Chunk191767 = require("./191767.jsx"),
   Chunk595925 = require("./595925.jsx"),
-  Chunk451429 = require("./451429.js"),
-  Chunk226800 = require("./226800.js");
+  Chunk866403 = require("./866403.js"),
+  Chunk744769 = require("./744769.js");
 let h = [{
     id: "virtual-currency",
     name: "Virtual Current (Orb) Components"
@@ -33,9 +33,9 @@ let h = [{
 function g() {
   let [e, t] = Chunk647438.useState("virtual-currency"), n = Chunk647438.useMemo(() => x[module], [module]);
   return (0, Chunk951288.jsxs)("div", {
-    className: i()(Chunk451429.panel, Chunk226800.container),
+    className: i()(Chunk866403.panel, Chunk744769.container),
     children: [(0, Chunk951288.jsx)(Chunk481060.njP, {
-      className: Chunk226800.tabBar,
+      className: Chunk744769.tabBar,
       selectedItem: module,
       onItemSelect: exports,
       look: "brand",
@@ -47,7 +47,7 @@ function g() {
       }, e.id))
     }), (0, Chunk951288.jsx)(Chunk793030.w0Z, {
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk226800.content,
+        className: Chunk744769.content,
         children: (0, Chunk951288.jsx)(require, {})
       })
     })]

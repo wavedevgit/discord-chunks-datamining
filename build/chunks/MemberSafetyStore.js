@@ -50,7 +50,7 @@ function I(e) {
   O(t.id, n.isInitialized)
 }
 
-function S(e) {
+function T(e) {
   let {
     guild: {
       id: t
@@ -59,7 +59,7 @@ function S(e) {
   O(t)
 }
 
-function T() {
+function S() {
   returnfalse
 }
 
@@ -125,7 +125,7 @@ function D(e) {
   return r.updateMembersByMemberIds(i)
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t,
     addedMembers: n
@@ -139,7 +139,7 @@ function L(e) {
   return r.updateMembersByMemberIds(i)
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     members: n
@@ -405,10 +405,10 @@ let J = new Q(Chunk570140.Z, {
   CACHE_LOADED: Z,
   PASSIVE_UPDATE_V2: V,
   GUILD_CREATE: I,
-  GUILD_DELETE: S,
+  GUILD_DELETE: T,
   GUILD_MEMBERS_CHUNK_BATCH: C,
-  GUILD_MEMBER_ADD: T,
-  GUILD_MEMBER_UPDATE: T,
+  GUILD_MEMBER_ADD: S,
+  GUILD_MEMBER_UPDATE: S,
   GUILD_MEMBER_UPDATE_LOCAL: N,
   GUILD_MEMBER_REMOVE: R,
   GUILD_ROLE_UPDATE: P,
@@ -417,8 +417,8 @@ let J = new Q(Chunk570140.Z, {
   GUILD_ROLE_MEMBER_REMOVE: w,
   GUILD_ROLE_MEMBER_ADD: w,
   THREAD_MEMBER_LIST_UPDATE: D,
-  THREAD_MEMBERS_UPDATE: L,
-  LOAD_ARCHIVED_THREADS_SUCCESS: x,
+  THREAD_MEMBERS_UPDATE: x,
+  LOAD_ARCHIVED_THREADS_SUCCESS: L,
   LOAD_FORUM_POSTS: M,
   INITIALIZE_MEMBER_SAFETY_STORE: H,
   MEMBER_SAFETY_NEW_MEMBER_TIMESTAMP_REFRESH: Y,

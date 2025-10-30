@@ -88,8 +88,8 @@ function g(e) {
     setDevice: y,
     getLabel: O,
     getLocation: v
-  } = m(t), [I, S] = i.useState(f), T = v(n[n.length - 1]), [A, C] = (0, l.Ls)(t, {
-    location: T
+  } = m(t), [I, T] = i.useState(f), S = v(n[n.length - 1]), [A, C] = (0, l.Ls)(t, {
+    location: S
   }), N = I ? A.concat(C) : A, {
     id: R,
     name: P
@@ -118,29 +118,29 @@ function g(e) {
         })
       }
     }, null == b ? true : b(o)), "".concat(t, "-").concat(o))
-  }), L = (0, r.jsx)(a.sNh, {
+  }), x = (0, r.jsx)(a.sNh, {
     id: "SHOW_MORE",
     label: d.intl.string(d.t.E99UMh),
     dontCloseOnAction: true,
     action: () => {
-      S(true), s.default.track(c.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
+      T(true), s.default.track(c.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
         device_type: t,
-        location: T,
+        location: S,
         shown_device_count: A.length,
         hidden_device_count: C.length,
         location_stack: n
       })
     }
-  }), x = !I && (null == C ? true : C.length) > 0;
+  }), L = !I && (null == C ? true : C.length) > 0;
   return o ? (0, r.jsxs)(a.sNh, h(_({
     id: "".concat(t, "-devices"),
     label: O(),
     subtext: P
   }, E), {
-    children: [D, x && L]
+    children: [D, L && x]
   })) : (0, r.jsxs)(a.kSQ, h(_({
     label: O()
   }, g), {
-    children: [D, x && L]
+    children: [D, L && x]
   }))
 }

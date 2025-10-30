@@ -332,7 +332,7 @@ let i = {
   },
   UserSettingsManager: {
     actions: ["POST_CONNECTION_OPEN", "OVERLAY_INITIALIZE", "USER_SETTINGS_PROTO_UPDATE"],
-    inlineRequire: () => require("./151742.js").Z
+    inlineRequire: () => require("./894247.js").Z
   },
   VoiceChannelSettingsManager: {
     actions: ["CHANNEL_UPDATES", "VOICE_STATE_UPDATES"],

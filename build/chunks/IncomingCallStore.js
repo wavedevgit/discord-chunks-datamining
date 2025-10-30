@@ -32,8 +32,8 @@ let E = "IncomingCallStore",
   O = 10,
   v = new Set,
   I = [],
-  S = new Map,
-  T = new Set,
+  T = new Map,
+  S = new Set,
   A = false;
 
 function C() {
@@ -45,8 +45,8 @@ function C() {
 }
 
 function N(e) {
-  if (null == e || null == S.get(e)) returnfalse;
-  S.delete(e), (T = new Set(T)).delete(e)
+  if (null == e || null == T.get(e)) returnfalse;
+  T.delete(e), (S = new Set(S)).delete(e)
 }
 
 function R(e) {
@@ -59,21 +59,21 @@ function R(e) {
       location: "IncomingCallCreate"
     }).enabled) returnfalse;
   let r = n.includes(f.default.getId());
-  if (!T.has(t) && r) {
+  if (!S.has(t) && r) {
     let e = _.Z.getChannel(t);
     if (null == e) returnfalse;
-    let n = O * T.size,
+    let n = O * S.size,
       {
         x: r,
         y: i
       } = C();
-    return S.set(t, {
+    return T.set(t, {
       channel: e,
       x: r + n,
       y: i + n
-    }), void(T = new Set(T)).add(t)
+    }), void(S = new Set(S)).add(t)
   }
-  return !!T.has(t) && !r && N(t)
+  return !!S.has(t) && !r && N(t)
 }
 
 function P(e) {
@@ -104,20 +104,20 @@ function D(e) {
   }, o.K.set(E, r), false
 }
 
-function L(e) {
+function x(e) {
   let {
     channel: t
   } = e;
   return N(t.id)
 }
 
-function x() {
+function L() {
   A = Chunk885110.Z.getStatus() === Chunk981631.Skl.DND || Chunk695346.QZ.getSetting()
 }
 
 function M() {
   let e = Chunk314897.default.getId();
-  T.forEach(t => {
+  S.forEach(t => {
     var n;
     let r = t;
     null != (null == (n = _.Z.getChannel(r)) ? true : n.guild_id) && (l.Z.getGuildRingingUsers(r).has(e) || N(r))
@@ -125,19 +125,19 @@ function M() {
 }
 class k extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk358221.Z, Chunk592125.Z, Chunk885110.Z, Chunk581883.Z, Chunk451478.Z), this.syncWith([Chunk885110.Z], x), this.syncWith([Chunk581883.Z], x), this.syncWith([Chunk358221.Z], M)
+    this.waitFor(Chunk314897.default, Chunk358221.Z, Chunk592125.Z, Chunk885110.Z, Chunk581883.Z, Chunk451478.Z), this.syncWith([Chunk885110.Z], L), this.syncWith([Chunk581883.Z], L), this.syncWith([Chunk358221.Z], M)
   }
   getIncomingCalls() {
-    return A ? I : Array.from(S.values())
+    return A ? I : Array.from(T.values())
   }
   getIncomingCallChannelIds() {
-    return A ? v : T
+    return A ? v : S
   }
   getFirstIncomingCallId() {
-    return A ? null : T.values().next().value
+    return A ? null : S.values().next().value
   }
   hasIncomingCalls() {
-    return !A && T.size > 0
+    return !A && S.size > 0
   }
 }
 g(k, "displayName", "IncomingCallStore");
@@ -149,5 +149,5 @@ let j = new k(Chunk570140.Z, {
   GUILD_RING_STOP: P,
   VOICE_CHANNEL_SELECT: w,
   INCOMING_CALL_MOVE: D,
-  CHANNEL_DELETE: L
+  CHANNEL_DELETE: x
 })

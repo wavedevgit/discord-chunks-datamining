@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   J9: () => Chunk357280.J,
-  Jt: () => x,
+  Jt: () => L,
   K0: () => P,
   Pd: () => g,
   f$: () => Chunk343817.f$,
@@ -103,7 +103,7 @@ function E(e, t, n, r, o) {
     null == (n = t.onRequestProgress) || n.call(t, e)
   });
   let y = () => {
-    t.backoff = null != t.backoff ? t.backoff : new a.Z, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => L(t.url).then(() => E(e, t, n, r, o)))
+    t.backoff = null != t.backoff ? t.backoff : new a.Z, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => x(t.url).then(() => E(e, t, n, r, o)))
   };
   null == w || null == (d = w.prepareRequest) || d.call(w, b), b.ok(e => null != e.status), b.then(i => {
     var a, c, u;
@@ -228,14 +228,14 @@ function I(e, t, n) {
     null != a ? (h.verbose("makeRequest: queueing request for ", t.url), a.queue.push(E.bind(null, e, t, r, i, n))) : E(e, t, r, i, n)
   })
 }
-let S = I.bind(null, "get"),
-  T = I.bind(null, "post"),
+let T = I.bind(null, "get"),
+  S = I.bind(null, "post"),
   A = I.bind(null, "put"),
   C = I.bind(null, "patch"),
   N = I.bind(null, "del"),
   R = {
-    get: S,
-    post: T,
+    get: T,
+    post: S,
     put: A,
     patch: C,
     del: N
@@ -248,7 +248,7 @@ if (require.g.isServerRendering) {
     body: null,
     text: ""
   });
-  S = module, T = module, A = module, C = module, N = module
+  T = module, S = module, A = module, C = module, N = module
 }
 
 function P() {
@@ -260,10 +260,10 @@ let w = null;
 function D(e) {
   w = e
 }
-let L = () => Promise.resolve();
+let x = () => Promise.resolve();
 
-function x(e) {
-  L = e
+function L(e) {
+  x = e
 }
 
 function M(e) {

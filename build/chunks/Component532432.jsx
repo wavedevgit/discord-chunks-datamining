@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk486324 = require("./486324.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk801292 = require("./801292.js");
+  Chunk190575 = require("./190575.js");
 let h = [{
   name: "gif",
   extensions: ["gif"]
@@ -35,16 +35,16 @@ function m(e) {
     forcedDivider: v,
     withHighlight: I = false
   } = e, {
-    newestAnalyticsLocation: S
-  } = (0, c.ZP)(), T = I ? l.gtL : s.zx, A = i.useCallback(() => {
+    newestAnalyticsLocation: T
+  } = (0, c.ZP)(), S = I ? l.gtL : s.zx, A = i.useCallback(() => {
     (0, u.$r)({
       uploadType: f.pC.AVATAR,
-      analyticsSource: S,
+      analyticsSource: T,
       filters: O ? h : true,
       guildId: E,
       isTryItOutFlow: O
     })
-  }, [E, S, O]);
+  }, [E, T, O]);
   return (0, r.jsx)(d.Z, {
     className: b,
     title: m,
@@ -53,7 +53,7 @@ function m(e) {
     forcedDivider: v,
     children: (0, r.jsxs)("div", {
       className: p.buttonsContainer,
-      children: [(0, r.jsx)(T, {
+      children: [(0, r.jsx)(S, {
         className: o()({
           [p.buttonHighlighted]: I
         }),

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   ZP: () => ec,
-  Zb: () => T,
-  sH: () => S
+  Zb: () => S,
+  sH: () => T
 }), require("./642613.js"), require("./539854.js"), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -34,8 +34,8 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let S = "SELECTABLE",
-  T = "VOCAL",
+let T = "SELECTABLE",
+  S = "VOCAL",
   A = null,
   C = {},
   N = {},
@@ -50,15 +50,15 @@ let S = "SELECTABLE",
       name: "Uncategorized"
     })
   },
-  L = k(Chunk981631.kod),
-  x = [],
+  x = k(Chunk981631.kod),
+  L = [],
   M = {};
 
 function k(e) {
   return {
     id: e,
-    [S]: [],
     [T]: [],
+    [S]: [],
     [v.d4z.GUILD_CATEGORY]: [D],
     count: 0
   }
@@ -79,11 +79,11 @@ function U(e, t) {
 }
 
 function G(e) {
-  e[S].sort(U), e[T].sort(U), e[v.d4z.GUILD_CATEGORY].sort(U)
+  e[T].sort(U), e[S].sort(U), e[v.d4z.GUILD_CATEGORY].sort(U)
 }
 
 function B(e) {
-  return (0, _.r8)(e) ? S : (0, _.bw)(e) ? T : e
+  return (0, _.r8)(e) ? T : (0, _.bw)(e) ? S : e
 }
 
 function Z() {
@@ -137,7 +137,7 @@ function Y(e) {
 function W(e) {
   let t = N[e.id] = {},
     n = {};
-  e[S].forEach(e => {
+  e[T].forEach(e => {
     let {
       channel: r
     } = e, i = (0, u.F6)(r, O.default, y.Z), a = Object.prototype.hasOwnProperty.call(n, i) ? n[i] : null;
@@ -225,7 +225,7 @@ function et(e, t) {
   let r = C[t];
   null == r && (r = Y(t));
   let {
-    [S]: i, [T]: a
+    [T]: i, [S]: a
   } = r;
   for (let {
       channel: t
@@ -291,7 +291,7 @@ class el extends(r = Chunk442837.ZP.Store) {
     return C
   }
   getChannels(e) {
-    return null != e ? j(e) : L
+    return null != e ? j(e) : x
   }
   getFirstChannelOfType(e, t, n) {
     let r = this.getChannels(e)[n].find(t);
@@ -300,7 +300,7 @@ class el extends(r = Chunk442837.ZP.Store) {
   getFirstChannel(e, t) {
     var n;
     let r = arguments.length > 2 && true !== arguments[2] && arguments[2];
-    return null != (n = this.getFirstChannelOfType(e, t, S)) ? n : r ? this.getFirstChannelOfType(e, t, T) : null
+    return null != (n = this.getFirstChannelOfType(e, t, T)) ? n : r ? this.getFirstChannelOfType(e, t, S) : null
   }
   getDefaultChannel(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
@@ -313,7 +313,7 @@ class el extends(r = Chunk442837.ZP.Store) {
     return this.getFirstChannel(e, e => b.Z.can(n, e.channel) && !e.channel.nsfw, t)
   }
   getSelectableChannelIds(e) {
-    return this.getChannels(e)[S].map(e => {
+    return this.getChannels(e)[T].map(e => {
       let {
         channel: t
       } = e;
@@ -321,10 +321,10 @@ class el extends(r = Chunk442837.ZP.Store) {
     })
   }
   getSelectableChannels(e) {
-    return this.getChannels(e)[S]
+    return this.getChannels(e)[T]
   }
   getVocalChannelIds(e) {
-    return this.getChannels(e)[T].map(e => {
+    return this.getChannels(e)[S].map(e => {
       let {
         channel: t
       } = e;
@@ -338,7 +338,7 @@ class el extends(r = Chunk442837.ZP.Store) {
         channel: t
       } = e;
       return t.id
-    })) ? n : x
+    })) ? n : L
   }
   hasSelectableChannel(e, t) {
     return this.getSelectableChannelIds(e).includes(t)

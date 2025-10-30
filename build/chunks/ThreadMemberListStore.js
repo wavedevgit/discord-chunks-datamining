@@ -149,7 +149,7 @@ function I(e) {
   }), null == (n = e.removedMemberIds) || n.forEach(t => y[e.id].removeUserId(t))
 }
 
-function S(e) {
+function T(e) {
   let {
     threadId: t,
     guildId: n,
@@ -158,7 +158,7 @@ function S(e) {
   null != a && (y[t] = new O(n, a, t), y[t].rebuild(r.map(e => e.user_id)))
 }
 
-function T(e) {
+function S(e) {
   return N(e.user.id)
 }
 
@@ -228,7 +228,7 @@ function D(e) {
   delete y[t.id]
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t
   } = e, n = false;
@@ -236,7 +236,7 @@ function L(e) {
   return n
 }
 
-function x(e) {
+function L(e) {
   let {
     channels: t
   } = e, n = new Set(t.map(e => e.id)), r = false;
@@ -277,16 +277,16 @@ let k = new M(Chunk570140.Z, {
   THREAD_MEMBERS_UPDATE: I,
   THREAD_UPDATE: w,
   THREAD_DELETE: D,
-  CHANNEL_UPDATES: x,
-  THREAD_MEMBER_LIST_UPDATE: S,
-  USER_UPDATE: T,
+  CHANNEL_UPDATES: L,
+  THREAD_MEMBER_LIST_UPDATE: T,
+  USER_UPDATE: S,
   PRESENCE_UPDATES: A,
-  GUILD_MEMBER_ADD: T,
-  GUILD_MEMBER_UPDATE: T,
-  GUILD_MEMBER_REMOVE: T,
+  GUILD_MEMBER_ADD: S,
+  GUILD_MEMBER_UPDATE: S,
+  GUILD_MEMBER_REMOVE: S,
   PRESENCES_REPLACE: R,
   GUILD_MEMBERS_CHUNK_BATCH: P,
-  GUILD_ROLE_UPDATE: L,
-  GUILD_ROLE_DELETE: L,
+  GUILD_ROLE_UPDATE: x,
+  GUILD_ROLE_DELETE: x,
   PASSIVE_UPDATE_V2: C
 })

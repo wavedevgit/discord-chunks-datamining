@@ -25,9 +25,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk671955 = require("./671955.js"),
-  Chunk66856 = require("./66856.js");
+  Chunk111886 = require("./111886.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -73,15 +73,15 @@ function P(e) {
     displayProfile: n,
     guildId: a,
     channelId: h,
-    themeType: T,
+    themeType: S,
     animateOnHover: C,
     onOpenProfile: P,
     className: w,
     previewStatus: D
   } = e, {
-    theme: L
+    theme: x
   } = (0, b.z)(), {
-    analyticsLocations: x
+    analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: M
   } = (0, m.KZ)(), k = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.PremiumTypes.TIER_2), j = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
@@ -92,7 +92,7 @@ function P(e) {
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(G) ? O.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), F = true !== D ? D : B, V = [I.l.MODAL, I.l.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(S.avatar, w), {
+  })), F = true !== D ? D : B, V = [I.l.MODAL, I.l.MODAL_V2].includes(S) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(T.avatar, w), {
     avatarDecorationSrc: Y,
     avatarSrc: W,
     eventHandlers: K
@@ -106,9 +106,9 @@ function P(e) {
     avatarDecoration: Y,
     size: V,
     "aria-label": t.username,
-    imageClassName: null != P ? S.overlay : true,
+    imageClassName: null != P ? T.overlay : true,
     status: j ? O.Skl.UNKNOWN : F,
-    statusBackdropColor: k && !j ? (0, l.QFD)(L) : true,
+    statusBackdropColor: k && !j ? (0, l.QFD)(x) : true,
     isMobile: Z,
     statusTooltip: true,
     statusTooltipDelay: y.vB
@@ -117,14 +117,14 @@ function P(e) {
     className: H,
     children: z
   })) : (0, r.jsx)(l.P3F, N(A({}, K), {
-    className: o()(H, S.clickable),
+    className: o()(H, T.clickable),
     focusProps: {
-      ringClassName: S.focusRing
+      ringClassName: T.focusRing
     },
     onClick: () => {
       M({
         action: "PRESS_VIEW_PROFILE",
-        analyticsLocations: x
+        analyticsLocations: L
       }), null == P || P()
     },
     children: z

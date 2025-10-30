@@ -20,13 +20,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk583901 = require("./583901.jsx"),
   Chunk576157 = require("./576157.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk531421 = require("./531421.js"),
+  Chunk24864 = require("./24864.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk279457 = require("./279457.js");
+  Chunk617385 = require("./617385.js");
 
 function v() {
   return (0, Chunk951288.jsxs)("svg", {
-    className: Chunk279457.newRing,
+    className: Chunk617385.newRing,
     width: "68",
     height: "68",
     viewBox: "0 0 68 68",
@@ -68,8 +68,8 @@ function I(e) {
     return null == (t = p.Z.settings.appearance) || null == (e = t.clientThemeSettings) ? true : e.customUserThemeSettings
   }), {
     shouldShowNewBadge: I,
-    markNewBadgeAsDismissed: S
-  } = (0, g.w)(), T = (0, _.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), A = (0, d.ZP)(), C = (0, u.wjy)(A) ? O.darkOverlay : O.lightOverlay, N = null != a && null != a.colors && a.colors.length > 0, R = (0, l.e7)([h.Z], () => h.Z.getSavedCustomTheme()), P = N, w = N || null != R, D = i.useMemo(() => {
+    markNewBadgeAsDismissed: T
+  } = (0, g.w)(), S = (0, _.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), A = (0, d.ZP)(), C = (0, u.wjy)(A) ? O.darkOverlay : O.lightOverlay, N = null != a && null != a.colors && a.colors.length > 0, R = (0, l.e7)([h.Z], () => h.Z.getSavedCustomTheme()), P = N, w = N || null != R, D = i.useMemo(() => {
     let e, t;
     if (N) e = a.colors, t = a.gradientAngle;
     else {
@@ -80,9 +80,9 @@ function I(e) {
     return e.length > 1 && (n = "linear-gradient(".concat(t, "deg, ").concat(e.join(", "), ")")), {
       background: "var(--background-gradient), ".concat(n)
     }
-  }, [N, a, R]), L = (0, f.Sl)(E.Il.WHITE).hex, x = (0, f.Sl)(E.Il.RED_430).hex, M = w ? L : true, k = i.useCallback(() => {
-    I && S(), null == n || n()
-  }, [I, S, n]);
+  }, [N, a, R]), x = (0, f.Sl)(E.Il.WHITE).hex, L = (0, f.Sl)(E.Il.RED_430).hex, M = w ? x : true, k = i.useCallback(() => {
+    I && T(), null == n || n()
+  }, [I, T, n]);
   return (0, r.jsxs)("div", {
     className: O.badgeContainer,
     children: [(0, r.jsxs)(m.S4, {
@@ -94,7 +94,7 @@ function I(e) {
       showBadge: false,
       showLockedBadge: false,
       style: D,
-      children: [!T && !w && (0, r.jsx)(v, {}), (0, r.jsx)("div", {
+      children: [!S && !w && (0, r.jsx)(v, {}), (0, r.jsx)("div", {
         className: O.borderOverlay
       }), (0, r.jsx)(s.V3v, {
         color: M,
@@ -103,7 +103,7 @@ function I(e) {
     }), I && (0, r.jsx)(u.IGR, {
       className: O.newBadge,
       text: y.intl.string(y.t.y2b7CA),
-      color: x
+      color: L
     })]
   })
 }

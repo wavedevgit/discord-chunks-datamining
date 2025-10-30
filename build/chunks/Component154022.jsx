@@ -45,8 +45,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk611480 = require("./611480.js"),
   Chunk653477 = require("./653477.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk352609 = require("./352609.js"),
-  Chunk953752 = require("./953752.js"),
+  Chunk593082 = require("./593082.js"),
+  Chunk133991 = require("./133991.js"),
   Chunk328756 = require("./328756.js");
 
 function K(e, t, n) {
@@ -167,7 +167,7 @@ function en(e) {
           variant: "text-md/normal",
           children: V.intl.format(V.t.DHpTjT, {
             onAppearanceClick() {
-              (0, j.openUserSettings)(L.n.APPEARANCE_PANEL, {
+              (0, j.openUserSettings)(x.n.APPEARANCE_PANEL, {
                 section: B.oAB.APPEARANCE
               })
             }
@@ -195,16 +195,16 @@ function er() {
     });
   return (0, Chunk951288.jsx)(Chunk481060.Rny, {
     children: (0, Chunk951288.jsxs)(Chunk481060.Zbd, {
-      className: Chunk953752.preview,
+      className: Chunk133991.preview,
       "aria-hidden": true,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk953752.previewHeader,
+        className: Chunk133991.previewHeader,
         children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t["2RHHgz"])
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk953752.previewAvatars,
+          className: Chunk133991.previewAvatars,
           children: [Chunk981631.Skl.ONLINE, Chunk981631.Skl.DND, Chunk981631.Skl.IDLE].map(e => (0, r.jsx)(c.Xo$, {
             "aria-label": V.intl.string(V.t.lqaIxI),
             src: W,
@@ -213,7 +213,7 @@ function er() {
           }, e))
         })]
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk953752.previewMessage,
+        className: Chunk133991.previewMessage,
         children: (0, Chunk951288.jsx)(Chunk753206.Z, {
           compact: module,
           author: X(z({}, (0, Chunk739566.ZH)(exports)), {
@@ -358,8 +358,8 @@ function eu() {
     })
   }
   return (0, Chunk951288.jsx)(Chunk481060.rsf, {
-    label: Chunk388032.intl.string(Chunk352609.default["2gFUEw"]),
-    description: Chunk388032.intl.format(Chunk352609.default.L8U56h, {
+    label: Chunk388032.intl.string(Chunk593082.default["2gFUEw"]),
+    description: Chunk388032.intl.format(Chunk593082.default.L8U56h, {
       onClickOpenModal() {
         (0, Chunk829716.I)({
           analyticsLocations: exports
@@ -454,7 +454,7 @@ function e_() {
   return (0, Chunk951288.jsx)("div", {
     ref: Chunk627845,
     title: Chunk388032.intl.string(Chunk388032.t.e3TR1b),
-    className: Chunk953752.reducedMotion,
+    className: Chunk133991.reducedMotion,
     children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
       label: Chunk388032.intl.string(Chunk388032.t.e3TR1b),
       description: Chunk388032.intl.format(Chunk388032.t["2l9U2j"], {
@@ -604,7 +604,7 @@ function em() {
             }) : e % 1 == 0 ? "" : true,
             "aria-labelledby": $
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk953752.ttsPreviewWrapper,
+            className: Chunk133991.ttsPreviewWrapper,
             children: (0, Chunk951288.jsx)(Chunk481060.Button, {
               size: "sm",
               icon: require ? Chunk481060.fpf : Chunk481060.o1U,

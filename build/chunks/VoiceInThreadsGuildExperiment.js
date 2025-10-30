@@ -4,11 +4,11 @@
 require.d(exports, {
   $R: () => D,
   C7: () => C,
-  Ek: () => S,
+  Ek: () => T,
   Gu: () => B,
   JQ: () => A,
   NE: () => b,
-  RG: () => L,
+  RG: () => x,
   Xb: () => k,
   Xu: () => O,
   Y: () => G,
@@ -17,7 +17,7 @@ require.d(exports, {
   kn: () => w,
   tM: () => E,
   tc: () => P,
-  xl: () => x,
+  xl: () => L,
   yw: () => U
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
@@ -78,12 +78,12 @@ function I(e, t, n) {
   return !(__OVERLAY__ || !e || !d.uC.has(t.type) || null != n && (n.hasFlag(g.iLy.HAS_THREAD) || (0, u.Z)(n))) && true
 }
 
-function S(e) {
+function T(e) {
   let t = (0, o.e7)([_.Z], () => _.Z.getChannel(h.default.castMessageIdAsChannelId(e.id)), [e]);
-  return T((0, o.e7)([p.Z], () => p.Z.can(g.Plq.VIEW_CHANNEL, t), [t]), e, t)
+  return S((0, o.e7)([p.Z], () => p.Z.can(g.Plq.VIEW_CHANNEL, t), [t]), e, t)
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   return !!t.hasFlag(g.iLy.HAS_THREAD) && null != n && !!e
 }
 
@@ -136,12 +136,12 @@ function D(e) {
   return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null == (t = e.threadMetadata) ? true : t.locked) !== true && n)
 }
 
-function L(e) {
+function x(e) {
   var t;
   return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null == (t = e.threadMetadata) ? true : t.locked) !== true && p.Z.can(g.Plq.SEND_MESSAGES_IN_THREADS, e))
 }
 
-function x(e) {
+function L(e) {
   let t = p.Z.can(g.Plq.MANAGE_THREADS, e);
   return e.isArchivedLockedThread() && !t
 }

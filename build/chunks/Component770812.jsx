@@ -21,7 +21,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk454615 = require("./454615.js");
+  Chunk610360 = require("./610360.js");
 let y = () => {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk780384.ap)(module) ? require("./537381.js") : require("./341048.js")
@@ -50,11 +50,11 @@ function O(e) {
       })
     },
     I = (0, a.e7)([_.Z], () => _.Z.getGuild(n)),
-    S = (0, a.e7)([p.Z], () => null != n && p.Z.getUserSubscriptionRoles(n).size > 0),
-    T = S ? E.intl.string(E.t.GoLM9z) : E.intl.formatToPlainString(E.t["h0u/Hi"], {
+    T = (0, a.e7)([p.Z], () => null != n && p.Z.getUserSubscriptionRoles(n).size > 0),
+    S = T ? E.intl.string(E.t.GoLM9z) : E.intl.formatToPlainString(E.t["h0u/Hi"], {
       serverName: null == I ? true : I.name
     }),
-    A = S ? E.intl.string(E.t.PjZ7Db) : E.intl.string(E.t.p8FG1D);
+    A = T ? E.intl.string(E.t.PjZ7Db) : E.intl.string(E.t.p8FG1D);
   return (0, r.jsxs)("div", {
     className: b.container,
     children: [(0, r.jsx)("div", {
@@ -88,7 +88,7 @@ function O(e) {
         color: "header-secondary",
         variant: "text-md/normal",
         className: b.description,
-        children: T
+        children: S
       }), (0, r.jsx)(s.LZC, {
         size: 24
       }), (0, r.jsx)(h.Z, {

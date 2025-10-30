@@ -51,9 +51,9 @@ function v(e) {
     viewProfileItem: y,
     onCloseProfile: v
   } = e, I = i.useRef(null), {
-    trackUserProfileAction: S
+    trackUserProfileAction: T
   } = (0, m.KZ)(), {
-    analyticsLocations: T,
+    analyticsLocations: S,
     newestAnalyticsLocation: A
   } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), C = c.J.useExperiment({
     location: "UserSettingsAuthedApps"
@@ -64,9 +64,9 @@ function v(e) {
     application: null != R ? R : true,
     guildId: n,
     onItemClick: () => {
-      S({
+      T({
         action: "MANAGE_APP",
-        analyticsLocations: T
+        analyticsLocations: S
       }), null == v || v()
     }
   }), w = (0, p.Z)({
@@ -74,53 +74,53 @@ function v(e) {
     guildId: n,
     location: A,
     color: "danger",
-    onBlock: () => S({
+    onBlock: () => T({
       action: "BLOCK",
-      analyticsLocations: T
+      analyticsLocations: S
     }),
-    onUnblock: () => S({
+    onUnblock: () => T({
       action: "UNBLOCK",
-      analyticsLocations: T
+      analyticsLocations: S
     })
   }), D = (0, h.Z)({
     user: t,
     guildId: n,
     location: A,
-    onIgnore: () => S({
+    onIgnore: () => T({
       action: "IGNORE",
-      analyticsLocations: T
+      analyticsLocations: S
     }),
-    onUnignore: () => S({
+    onUnignore: () => T({
       action: "UNIGNORE",
-      analyticsLocations: T
+      analyticsLocations: S
     })
-  }), L = (0, d.Z)({
+  }), x = (0, d.Z)({
     applicationId: null == R ? true : R.id,
     user: t,
     guildId: n,
-    onSubmit: () => S({
+    onSubmit: () => T({
       action: "REPORT",
-      analyticsLocations: T
+      analyticsLocations: S
     }),
     color: "danger"
-  }), x = (0, f.Z)({
+  }), L = (0, f.Z)({
     id: null == R ? true : R.id,
     label: b.intl.string(b.t["+NP/b2"]),
-    onSuccess: () => S({
+    onSuccess: () => T({
       action: "COPY_APP_ID",
-      analyticsLocations: T
+      analyticsLocations: S
     })
   }), M = [
     [y], C ? [P] : [],
-    [D, w, L],
+    [D, w, x],
     [(0, u.Z)({
       application: R,
       label: b.intl.string(b.t.WqhZss),
-      onSuccess: () => S({
+      onSuccess: () => T({
         action: "COPY_APP_LINK",
-        analyticsLocations: T
+        analyticsLocations: S
       })
-    }), x]
+    }), L]
   ];
   return M.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
     targetElementRef: I,

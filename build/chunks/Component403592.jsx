@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk374450 = require("./374450.js");
+  Chunk854835 = require("./854835.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,12 +56,12 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = 104,
+let S = 104,
   A = 16;
 
 function C(e) {
@@ -80,19 +80,19 @@ function C(e) {
     null != e && (e.onload = () => {
       let t = Math.max(.66, Math.min(e.naturalWidth / e.naturalHeight, 4));
       1 === t ? p({
-        width: T,
-        height: T
+        width: S,
+        height: S
       }) : t > 1 ? p({
-        width: T * t,
+        width: S * t,
         height: true
       }) : p({
         width: true,
-        height: T / t
+        height: S / t
       }), f(true)
     })
   }, []);
   let m = (0, u.Z)(h),
-    g = Math.max(16, (A + T - (null != (t = null == m ? true : m.width) ? t : 0)) / 2);
+    g = Math.max(16, (A + S - (null != (t = null == m ? true : m.width) ? t : 0)) / 2);
   return (0, r.jsx)("img", {
     ref: h,
     src: l,
@@ -103,11 +103,11 @@ function C(e) {
     alt: "",
     style: {
       width: null != (n = _.width) ? n : "initial",
-      maxHeight: null != (a = _.height) ? a : T,
+      maxHeight: null != (a = _.height) ? a : S,
       height: "unset",
       marginLeft: g,
       marginRight: g,
-      marginTop: null != _.height ? T - _.height - 33 : false
+      marginTop: null != _.height ? S - _.height - 33 : false
     }
   })
 }
@@ -117,8 +117,8 @@ class N extends Chunk647438.Component {
     return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk951288.jsx)(C, {
       file: this.props.upload.item.file
     }) : (0, Chunk951288.jsx)("div", {
-      className: o()(Chunk374450.icon, {
-        [Chunk374450[null != (e = this.props.upload.classification) ? module : ""]]: true
+      className: o()(Chunk854835.icon, {
+        [Chunk854835[null != (e = this.props.upload.classification) ? module : ""]]: true
       })
     })
   }
@@ -153,30 +153,30 @@ class R extends Chunk647438.Component {
       "aria-label": Chunk388032.intl.string(Chunk388032.t["3AS4UM"]),
       size: Chunk481060.CgR.DYNAMIC,
       transitionState: exports,
-      className: Chunk374450.uploadModal,
+      className: Chunk854835.uploadModal,
       parentComponent: "UploadAttachment",
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk374450.inner,
+        className: Chunk854835.inner,
         children: [(0, Chunk951288.jsxs)("div", {
-          className: o()(Chunk374450.file, {
-            [Chunk374450.expandable]: module.isImage
+          className: o()(Chunk854835.file, {
+            [Chunk854835.expandable]: module.isImage
           }),
           children: [(0, Chunk951288.jsx)(N, {
             upload: module
           }), (0, Chunk951288.jsxs)("div", {
-            className: Chunk374450.description,
+            className: Chunk854835.description,
             children: [(0, Chunk951288.jsx)("div", {
-              className: Chunk374450.filename,
+              className: Chunk854835.filename,
               children: module.showLargeMessageDialog ? Chunk388032.intl.formatToPlainString(Chunk388032.t.QWQxtC, {
                 maxLength: require
               }) : module.filename
             }), module.showLargeMessageDialog ? (0, Chunk951288.jsx)("div", {
-              className: Chunk374450.subtitle,
+              className: Chunk854835.subtitle,
               children: Chunk388032.intl.string(Chunk388032.t.Plcu02)
             }) : null]
           })]
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk374450.form,
+          className: Chunk854835.form,
           children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
             gap: 24,
             children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
@@ -211,9 +211,9 @@ class R extends Chunk647438.Component {
           })
         })]
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk374450.footer,
+        className: Chunk854835.footer,
         children: (0, Chunk951288.jsxs)("div", {
-          className: o()(Chunk374450.hasSpoilers, Chunk374450.footerRightAlign),
+          className: o()(Chunk854835.hasSpoilers, Chunk854835.footerRightAlign),
           children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
             type: "button",
             look: Chunk755721.zx.Looks.LINK,
@@ -262,7 +262,7 @@ class R extends Chunk647438.Component {
       }), t()
     });
     let s = e.ignoreDraft ? "" : p.Z.getDraft(this.props.channelId, e.draftType);
-    this.state = S(v({}, (0, f.eK)(s)), {
+    this.state = T(v({}, (0, f.eK)(s)), {
       textFocused: true,
       hasSpoiler: null != (i = null == (t = e.upload) ? true : t.spoiler) && i,
       filename: null != (a = null == (n = e.upload) ? true : n.filename) ? a : "",
@@ -274,7 +274,7 @@ class R extends Chunk647438.Component {
 
 function P(e) {
   let t = (0, _.Z)();
-  return e.upload.item.platform !== d.ow.WEB ? null : (0, r.jsx)(R, S(v({}, e), {
+  return e.upload.item.platform !== d.ow.WEB ? null : (0, r.jsx)(R, T(v({}, e), {
     file: e.upload.item.file,
     messageMaxLength: t
   }))

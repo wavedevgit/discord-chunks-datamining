@@ -2,7 +2,7 @@
 /** chunk id: 877481, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./415506.js"), require("./388685.js");
 var Chunk274616 = require("./274616.js"),
   Chunk710845 = require("./710845.js"),
@@ -60,8 +60,8 @@ let y = new Chunk710845.Z("Games"),
   O = {},
   v = 0,
   I = null,
-  S = 250,
-  T = 12e4,
+  T = 250,
+  S = 12e4,
   A = 36e5;
 
 function C() {
@@ -112,8 +112,8 @@ function w(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 0;
   if (e()) return void t();
   setTimeout(() => {
-    r * S <= T ? w(e, t, n, r + 1) : n()
-  }, S)
+    r * T <= S ? w(e, t, n, r + 1) : n()
+  }, T)
 }
 
 function D(e) {
@@ -121,7 +121,7 @@ function D(e) {
     null == _.Z.safeParseWithQuery(e.launchTarget) ? n(Error("Failed to parse launch target. ".concat(e.launchTarget))) : (window.open(e.launchTarget), t([]))
   })
 }
-let L = {
+let x = {
   waitSubscribed: (e, t) => new Promise((n, r) => w(() => o.Z.isSubscribed(e, t), n, r)),
   waitConnected(e) {
     return new Promise(w.bind(this, () => l.Z.isConnected(e)))

@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 63962 **/
 /** chunk id: 9145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Y
@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk918559 = require("./918559.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk33985 = require("./33985.js");
+  Chunk322678 = require("./322678.js");
 
 function V(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -65,8 +65,8 @@ function V(e) {
 }
 let z = Chunk884338.u8.SIZE_32,
   W = {
-    [Chunk918559.MI.NO_CHAT]: Chunk33985.noChat,
-    [Chunk918559.MI.RESIZABLE]: Chunk33985.resizable
+    [Chunk918559.MI.NO_CHAT]: Chunk322678.noChat,
+    [Chunk918559.MI.RESIZABLE]: Chunk322678.resizable
   };
 
 function Y(e) {

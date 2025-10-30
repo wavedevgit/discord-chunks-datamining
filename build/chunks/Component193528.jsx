@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk654904 = require("./654904.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk707892 = require("./707892.js");
+  Chunk472564 = require("./472564.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -85,12 +85,12 @@ function I(e) {
     disabled: b,
     label: v,
     colorPickerMiddle: I,
-    colorPickerFooter: S,
-    showEyeDropper: T
-  } = e, A = i.useRef(null), C = (0, u.dQu)(c.Z.colors.BACKGROUND_BASE_LOW).hex(), N = c.Z.colors.BACKGROUND_ACCENT.css, R = (0, _.DP)(a), P = (0, l.Rf)(a), w = P === C ? N : P, D = (0, f.Lq)(R ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), L = (0, d.Z)(I), x = (0, d.Z)(S), [M, k] = i.useState((0, s.Z)());
+    colorPickerFooter: T,
+    showEyeDropper: S
+  } = e, A = i.useRef(null), C = (0, u.dQu)(c.Z.colors.BACKGROUND_BASE_LOW).hex(), N = c.Z.colors.BACKGROUND_ACCENT.css, R = (0, _.DP)(a), P = (0, l.Rf)(a), w = P === C ? N : P, D = (0, f.Lq)(R ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), x = (0, d.Z)(I), L = (0, d.Z)(T), [M, k] = i.useState((0, s.Z)());
   return i.useEffect(() => {
-    (L !== I || x !== S) && k((0, s.Z)())
-  }, [S, I, x, L]), (0, r.jsx)(u.yRy, {
+    (x !== I || L !== T) && k((0, s.Z)())
+  }, [T, I, L, x]), (0, r.jsx)(u.yRy, {
     targetElementRef: A,
     positionKey: M,
     renderPopout: e => (0, r.jsx)(u.Z$W, y(E({}, e), {
@@ -98,8 +98,8 @@ function I(e) {
       onChange: t,
       suggestedColors: g,
       middle: I,
-      footer: S,
-      showEyeDropper: T
+      footer: T,
+      showEyeDropper: S
     })),
     onRequestClose: n,
     children: e => {

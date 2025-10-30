@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk765400 = require("./765400.jsx"),
   Chunk916001 = require("./916001.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk833398 = require("./833398.js");
+  Chunk514826 = require("./514826.js");
 
 function _(e) {
   let {
@@ -87,8 +87,8 @@ function h(e) {
     actionMenu: O,
     showOpaqueBackground: v = false,
     hideRoleTag: I = false,
-    lineClamp: S = 1,
-    cardWidth: T = 332,
+    lineClamp: T = 1,
+    cardWidth: S = 332,
     cardHeight: A,
     thumbnailHeight: C = 187,
     descriptionTextVariant: N = "text-sm/normal",
@@ -121,7 +121,7 @@ function h(e) {
           children: (0, r.jsx)(l.Z, {
             variant: N,
             color: "text-muted",
-            lineClamp: S,
+            lineClamp: T,
             text: i
           })
         }), g && (0, r.jsx)(p, {
@@ -160,7 +160,7 @@ function h(e) {
     children: D
   }) : (0, r.jsx)("div", {
     style: {
-      width: T,
+      width: S,
       height: A
     },
     children: (0, r.jsx)(o.kL8, {

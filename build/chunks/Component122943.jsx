@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk532657 = require("./532657.jsx"),
   Chunk556638 = require("./556638.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk80568 = require("./80568.js");
+  Chunk666998 = require("./666998.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,7 +61,7 @@ function I(e, t) {
   }), e
 }
 
-function S(e) {
+function T(e) {
   let {
     channel: t,
     textVariant: n,
@@ -70,12 +70,12 @@ function S(e) {
     hideText: m = false,
     hideTooltip: y = false,
     canTruncate: v = true,
-    showChannelName: S = false
-  } = e, T = (0, s.vjg)(s.Skl.ONLINE), A = (0, u.ZP)(t), C = t.isDM() || t.isGroupDM(), {
+    showChannelName: T = false
+  } = e, S = (0, s.vjg)(s.Skl.ONLINE), A = (0, u.ZP)(t), C = t.isDM() || t.isGroupDM(), {
     enableTopNavButton: N
   } = (0, d.Cq)({
     location: "VoiceActivityStatus"
-  }), R = !N && S, {
+  }), R = !N && T, {
     analyticsLocations: P
   } = (0, l.ZP)(), w = i.useCallback(() => {
     (0, p.A)({
@@ -85,7 +85,7 @@ function S(e) {
     })
   }, [P, t.id]), D = () => y || C ? (0, r.jsx)(_.Z, {
     size: "custom",
-    color: T,
+    color: S,
     channel: t,
     className: o()(b.icon, f)
   }) : (0, r.jsx)(s.aML, {
@@ -98,23 +98,23 @@ function S(e) {
     onTooltipShow: w,
     children: e => (0, r.jsx)(_.Z, I(O({}, e), {
       size: "custom",
-      color: T,
+      color: S,
       channel: t,
       className: o()(b.icon, f)
     }))
-  }), L = () => N ? A : C ? E.intl.string(E.t["9FaEzi"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCN) : E.intl.string(E.t.msxteM);
+  }), x = () => N ? A : C ? E.intl.string(E.t["9FaEzi"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCN) : E.intl.string(E.t.msxteM);
   return (0, r.jsxs)(r.Fragment, {
     children: [D(), !m && (0, r.jsxs)(h.Z, {
       variant: n,
       className: a,
       canTruncate: v,
       hideTooltip: y,
-      children: [L(), R && null != A && " (".concat(A, ")")]
+      children: [x(), R && null != A && " (".concat(A, ")")]
     })]
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     channel: t,
     textVariant: n,
@@ -128,7 +128,7 @@ function T(e) {
     enableTopNavButton: O
   } = (0, d.Cq)({
     location: "VoiceActivityStatusWithCombinedTooltip"
-  }), v = O && null != g ? g : y ? E.intl.string(E.t["9FaEzi"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCN) : E.intl.string(E.t.msxteM), I = null == g || O ? v : "".concat(v, " (").concat(g, ")"), S = p ? I : v;
+  }), v = O && null != g ? g : y ? E.intl.string(E.t["9FaEzi"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCN) : E.intl.string(E.t.msxteM), I = null == g || O ? v : "".concat(v, " (").concat(g, ")"), T = p ? I : v;
   return (0, r.jsx)(m.Z, {
     icon: (0, r.jsx)(_.Z, {
       size: "custom",
@@ -136,7 +136,7 @@ function T(e) {
       channel: t,
       className: o()(b.icon, a)
     }),
-    text: S,
+    text: T,
     tooltipText: c ? true : I,
     textVariant: n,
     textClassName: i,
@@ -150,5 +150,5 @@ function T(e) {
 function A(e) {
   return (0, f.b)({
     location: "VoiceActivityStatusExperimentWrapper"
-  }) ? (0, r.jsx)(T, O({}, e)) : (0, r.jsx)(S, O({}, e))
+  }) ? (0, r.jsx)(S, O({}, e)) : (0, r.jsx)(T, O({}, e))
 }

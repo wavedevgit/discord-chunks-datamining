@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk224724 = require("./224724.js"),
   Chunk732380 = require("./732380.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk530401 = require("./530401.js");
+  Chunk792771 = require("./792771.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,7 +66,7 @@ function O(e) {
     fullWidth: g,
     appContext: y,
     onClose: O
-  } = e, v = (0, a.e7)([c.default], () => c.default.getId() === t.id), I = (0, a.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), S = (0, a.e7)([_.Z], () => _.Z.hasSaveablePendingChanges()), T = (0, l.Z)({
+  } = e, v = (0, a.e7)([c.default], () => c.default.getId() === t.id), I = (0, a.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), T = (0, a.e7)([_.Z], () => _.Z.hasSaveablePendingChanges()), S = (0, l.Z)({
     guild: I
   }), A = (0, l.Z)({}), {
     trackUserProfileAction: C
@@ -79,7 +79,7 @@ function O(e) {
     fullWidth: g,
     variant: "primary",
     onClick: () => {
-      if (S) return void f.Z.notifyPendingWidgets();
+      if (T) return void f.Z.notifyPendingWidgets();
       null == O || O(), A(), (0, s.i)(y)
     }
   }) : (0, r.jsx)(o.yRy, {
@@ -103,7 +103,7 @@ function O(e) {
           action: () => {
             C({
               action: "EDIT_GUILD_PROFILE"
-            }), T(), (0, s.i)(y)
+            }), S(), (0, s.i)(y)
           }
         }), (0, r.jsx)(o.sNh, {
           id: "edit-main-profile",
@@ -129,7 +129,7 @@ function O(e) {
         fullWidth: g,
         variant: "primary",
         onClick: () => {
-          if (S) return void f.Z.notifyPendingWidgets();
+          if (T) return void f.Z.notifyPendingWidgets();
           null == t || t()
         }
       }, n))

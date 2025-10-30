@@ -5,7 +5,7 @@ require.d(exports, {
   $z: () => R,
   BH: () => C,
   BO: () => w,
-  D7: () => x,
+  D7: () => L,
   Dd: () => N,
   Ft: () => D,
   TK: () => B,
@@ -118,7 +118,7 @@ function I(e) {
   return null == e ? true : e.map(e => {
     var t, n;
     let r = O(b({}, e), {
-      choices: S(e.choices),
+      choices: T(e.choices),
       options: I(e.options),
       serverLocalizedName: e.name_localized,
       displayName: null != (t = e.name_localized) ? t : e.name,
@@ -136,7 +136,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   return null == e ? true : e.map(e => {
     var t;
     return O(b({}, e), {
@@ -145,7 +145,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   var t, n;
   let {
     rootCommand: r,
@@ -172,7 +172,7 @@ function T(e) {
   let l = [];
   if (null == i.options) return l;
   let c = i.options.filter(e => e.type === u.jw.SUB_COMMAND_GROUP);
-  for (let e = 0; e < c.length; e++) l.push(...T({
+  for (let e = 0; e < c.length; e++) l.push(...S({
     rootCommand: r,
     command: c[e],
     applicationId: a,
@@ -205,7 +205,7 @@ function T(e) {
 }
 
 function A(e, t) {
-  return l().flatMap(e, e => (o()(null != e.id, "Missing command id"), T({
+  return l().flatMap(e, e => (o()(null != e.id, "Missing command id"), S({
     rootCommand: e,
     command: e,
     applicationId: e.application_id,
@@ -237,7 +237,8 @@ function R(e) {
     canMentionUsers: t || r,
     canMentionRoles: t || i,
     canMentionAnyGuildUser: r,
-    canMentionNonMentionableRoles: i
+    canMentionNonMentionableRoles: i,
+    canMentionOtherGlobals: t
   }
 }
 
@@ -258,14 +259,14 @@ function D(e) {
   if (n.ownerId === r.userId || t.can(g.Pl.ADMINISTRATOR, n)) returntrue;
   let s = n.id;
   if (null != a) {
-    let e = L(r, s, a);
+    let e = x(r, s, a);
     if ("boolean" == typeof e) return e
   }
-  let l = L(r, s, i);
+  let l = x(r, s, i);
   return ("boolean" != typeof l || !!l) && (null == o || !c.fS(o, w) && t.can(o, n))
 }
 
-function L(e, t, n) {
+function x(e, t, n) {
   let r = n[(0, f.rE)(e.userId, p.Kw.USER)];
   if (null != r) return r.permission;
   let i = false;
@@ -278,7 +279,7 @@ function L(e, t, n) {
   return null != a ? a.permission : null
 }
 
-function x(e) {
+function L(e) {
   switch (e) {
     case p.bB.CHAT:
     case p.bB.APPLICATION_LAUNCHER:

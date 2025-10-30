@@ -15,7 +15,7 @@ require.d(exports, {
   BQ: () => eN,
   C2: () => ej,
   Cn: () => ea,
-  D7: () => eL,
+  D7: () => ex,
   DZ: () => ev,
   F8: () => em,
   G0: () => ts,
@@ -37,20 +37,20 @@ require.d(exports, {
   S: () => ei,
   S6: () => J,
   Tc: () => e1,
-  UE: () => ex,
+  UE: () => eL,
   Ub: () => v,
   Uj: () => eC,
-  V3: () => e2,
+  V3: () => e3,
   Vr: () => eO,
   Wl: () => tf,
   Wt: () => ez,
   XP: () => t_,
   YA: () => eG,
   Yc: () => e0,
-  Z5: () => e3,
+  Z5: () => e2,
   Zk: () => K,
   Zs: () => X,
-  a9: () => eT,
+  a9: () => eS,
   aQ: () => eM,
   am: () => eW,
   d$: () => Q,
@@ -58,13 +58,13 @@ require.d(exports, {
   dJ: () => M,
   dN: () => eb,
   eD: () => eR,
-  eW: () => T,
+  eW: () => S,
   ej: () => eZ,
   ex: () => eP,
   fY: () => tl,
   fw: () => tr,
   h4: () => tm,
-  ht: () => eS,
+  ht: () => eT,
   iF: () => ep,
   iR: () => G,
   jm: () => eU,
@@ -89,7 +89,7 @@ require.d(exports, {
   qb: () => eg,
   qt: () => th,
   r3: () => eD,
-  rs: () => S,
+  rs: () => T,
   sB: () => e6,
   uX: () => ec,
   up: () => eH,
@@ -256,11 +256,11 @@ function I(e, t, n, i, a) {
   r.installLogCallback(e, t, n, i, a)
 }
 
-function S(e, t) {
+function T(e, t) {
   return r.rustMultiply(e, t)
 }
 
-function T() {
+function S() {
   return r.initLibdiscore()
 }
 
@@ -285,15 +285,15 @@ function P(e, t, n, i) {
 }
 let w = ["bytes"],
   D = ["omit", "same-origin", "include"],
-  L = ["same-origin", "no-cors", "cors", "navigate"],
-  x = "undefined" == typeof FinalizationRegistry ? {
+  x = ["same-origin", "no-cors", "cors", "navigate"],
+  L = "undefined" == typeof FinalizationRegistry ? {
     register: () => {},
     unregister: () => {}
   } : new FinalizationRegistry(e => r.__wbg_blockeddomainsstore_free(e >>> 0, 1));
 class M {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, x.unregister(this), module
+    return this.__wbg_ptr = 0, L.unregister(this), module
   }
   free() {
     let e = this.__destroy_into_raw();
@@ -626,11 +626,11 @@ function eI(e, t) {
   }
 }
 
-function eS() {
+function eT() {
   return {}
 }
 
-function eT() {
+function eS() {
   return []
 }
 
@@ -668,13 +668,13 @@ function eD() {
   }, arguments)
 }
 
-function eL() {
+function ex() {
   return u(function(e) {
     return new Blob(e)
   }, arguments)
 }
 
-function ex(e) {
+function eL(e) {
   return e.next
 }
 
@@ -755,7 +755,7 @@ function eQ(e, t, n) {
 }
 
 function eJ(e, t) {
-  e.mode = L[t]
+  e.mode = x[t]
 }
 
 function e$(e, t) {
@@ -770,12 +770,12 @@ function e1(e) {
   return e.signal
 }
 
-function e3() {
+function e2() {
   let e = "undefined" == typeof global ? null : global;
   return d(module) ? 0 : c(module)
 }
 
-function e2() {
+function e3() {
   let e = "undefined" == typeof globalThis ? null : globalThis;
   return d(module) ? 0 : c(module)
 }

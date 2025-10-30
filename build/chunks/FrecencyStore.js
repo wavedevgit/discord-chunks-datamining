@@ -73,18 +73,18 @@ let y = 10,
     numFrequentlyItems: v,
     maxSamples: y
   }),
-  S = null,
-  T = null;
+  T = null,
+  S = null;
 
 function A(e) {
   let {
     guildId: t,
     channelId: n
   } = e, r = false;
-  return n !== S && (S = null != n ? n : null, null != n && p.Xyh.test(n) && (r = true, I.track(n), R.pendingUsages.push({
+  return n !== T && (T = null != n ? n : null, null != n && p.Xyh.test(n) && (r = true, I.track(n), R.pendingUsages.push({
     key: n,
     timestamp: Date.now()
-  }))), t !== T && (T = null != t ? t : null, null != t && p.Xyh.test(t) && (r = true, I.track(t), R.pendingUsages.push({
+  }))), t !== S && (S = null != t ? t : null, null != t && p.Xyh.test(t) && (r = true, I.track(t), R.pendingUsages.push({
     key: t,
     timestamp: Date.now()
   }))), r

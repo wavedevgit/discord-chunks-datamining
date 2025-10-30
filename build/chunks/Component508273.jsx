@@ -24,9 +24,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk358595 = require("./358595.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk492681 = require("./492681.js");
-let S = 292,
-  T = 36,
+  Chunk69643 = require("./69643.js");
+let T = 292,
+  S = 36,
   A = 48;
 
 function C(e) {
@@ -39,19 +39,19 @@ function C(e) {
   } = e, f = i.useRef(null), [p, m] = i.useState(true), [C, R] = i.useState(false), P = t.state === O.r2o.ACCEPTING, w = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
-    R((null != (t = null == (e = f.current) ? true : e.clientHeight) ? t : 0) > S)
+    R((null != (t = null == (e = f.current) ? true : e.clientHeight) ? t : 0) > T)
   }, [R]);
   let D = (0, _.PC)(t),
-    L = i.useCallback(() => {
+    x = i.useCallback(() => {
       C && p && m(false)
     }, [p, C]),
-    x = i.useCallback(() => {
+    L = i.useCallback(() => {
       C && (p || m(true))
     }, [p, C]),
     M = i.useMemo(() => {
       var e;
       return C && (null == (e = f.current) ? true : e.clientHeight) != null ? {
-        height: p ? S : f.current.clientHeight + T + A,
+        height: p ? T : f.current.clientHeight + S + A,
         transition: w ? true : "height 0.2s ease"
       } : {}
     }, [p, C, w]);
@@ -59,7 +59,7 @@ function C(e) {
     className: o()(I.guildInviteContainer, {
       [I.clickable]: C && p
     }),
-    onClick: L,
+    onClick: x,
     style: M,
     "aria-label": v.intl.string(v.t.dcl9MQ),
     children: [(0, r.jsxs)("div", {
@@ -84,7 +84,7 @@ function C(e) {
         textVariant: "text-xs/medium",
         variant: "secondary",
         size: "sm",
-        onClick: x,
+        onClick: L,
         text: v.intl.string(v.t.xdCLeM)
       })
     }) : null, (0, r.jsxs)("div", {

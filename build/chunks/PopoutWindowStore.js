@@ -60,9 +60,9 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -70,7 +70,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -84,9 +84,9 @@ let A = new Chunk710845.Z("PopoutWindowStore"),
   P = {},
   w = {},
   D = new Set,
-  L = "app-mount",
-  x = () => $.emitChange(),
-  M = s().debounce(x, 150),
+  x = "app-mount",
+  L = () => $.emitChange(),
+  M = s().debounce(L, 150),
   k = false;
 
 function j(e, t) {
@@ -116,7 +116,7 @@ function U(e) {
 function G(e) {
   A.info("Unmounting popout window", e);
   let t = R[e];
-  a()(null != t, "Popout window was null during unmount"), t.removeEventListener("focus", x), t.removeEventListener("blur", x), t.removeEventListener("resize", M);
+  a()(null != t, "Popout window was null during unmount"), t.removeEventListener("focus", L), t.removeEventListener("blur", L), t.removeEventListener("resize", M);
   let n = P[e];
   a()(null != n, "Window root was null while unmounting"), n.unmount(), delete R[e], delete N[e], delete w[e], delete P[e]
 }
@@ -140,8 +140,8 @@ function F(e) {
     n = w[e];
   if (null == t) return void A.warn("Failed to open window", e);
   let r = t.document;
-  (0, g.uF)(r, x), t.addEventListener("focus", x), t.addEventListener("blur", x), t.addEventListener("resize", M), k ? j(e, t) : Z(e, t);
-  let i = (0, l.createRoot)(r.getElementById(L));
+  (0, g.uF)(r, L), t.addEventListener("focus", L), t.addEventListener("blur", L), t.addEventListener("resize", M), k ? j(e, t) : Z(e, t);
+  let i = (0, l.createRoot)(r.getElementById(x));
   a()(null != i, "No render target for popout!"), P[e] = i, i.render(n(e))
 }
 
@@ -161,7 +161,7 @@ function V(e) {
     defaultWidth: s,
     defaultHeight: l,
     defaultAlwaysOnTop: c = false
-  } = n, u = S(n, ["defaultWidth", "defaultHeight", "defaultAlwaysOnTop"]), d = I(O({}, u), {
+  } = n, u = T(n, ["defaultWidth", "defaultHeight", "defaultAlwaysOnTop"]), d = I(O({}, u), {
     width: null != s ? s : u.width,
     height: null != l ? l : u.height
   }), p = c, g = C[t];
@@ -303,7 +303,7 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
   isWindowFullScreen(e) {
     var t, n;
     let r = R[e];
-    return (null == r || null == (n = r.document) || null == (t = n.fullscreenElement) ? true : t.id) === L
+    return (null == r || null == (n = r.document) || null == (t = n.fullscreenElement) ? true : t.id) === x
   }
   unmountWindow(e) {
     return this.isWindowFullyInitialized(e) || A.warn("Attempted to unmount partially initialized window ".concat(e)), Y(e)

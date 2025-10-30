@@ -2,7 +2,7 @@
 /** chunk id: 776031, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -61,7 +61,7 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   (0, o.ZDy)(async () => {
     let {
       default: e
@@ -74,12 +74,12 @@ function S(e, t) {
   })
 }
 
-function T(e, t) {
+function S(e, t) {
   let {
     preset: n,
     resolution: y,
     fps: v,
-    soundshareEnabled: T
+    soundshareEnabled: S
   } = (0, a.cj)([u.Z], () => u.Z.getState()), A = (0, a.e7)([_.Z], () => _.Z.getGoLiveSource()), C = (0, a.e7)([h.default], () => h.default.getCurrentUser()), N = (0, a.e7)([f.Z], () => {
     var t;
     return null == (t = f.Z.getGuild(null == e ? true : e.guildId)) ? true : t.premiumTier
@@ -98,20 +98,20 @@ function T(e, t) {
         };
         null != A.desktopSource ? e.desktopSettings = {
           sourceId: A.desktopSource.id,
-          sound: T
+          sound: S
         } : null != A.cameraSource && (e.cameraSettings = {
           videoDeviceGuid: A.cameraSource.videoDeviceGuid,
           audioDeviceGuid: A.cameraSource.audioDeviceGuid
         }), s.Z.setGoLiveSource(e)
       }
-    } else S(t, I(O({}, R), {
+    } else T(t, I(O({}, R), {
       object: m.qAy.RADIO_ITEM,
       objectType: i
     }))
-  }, [t, R, T, A]);
+  }, [t, R, S, A]);
   if (null == e) return null;
   let D = n === g.ApplicationStreamPresets.PRESET_DOCUMENTS ? g.ApplicationStreamFPS.FPS_30 : v,
-    L = g.af.map(e => {
+    x = g.af.map(e => {
       let {
         value: t,
         label: n
@@ -124,7 +124,7 @@ function T(e, t) {
         action: () => w(i, y, t, m.AnalyticsObjectTypes.RESOLUTION)
       }, "stream-settings-fps-".concat(t))
     }),
-    x = g.km.map(e => {
+    L = g.km.map(e => {
       let {
         value: t,
         label: n
@@ -140,10 +140,10 @@ function T(e, t) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.kSQ, {
       label: b.intl.string(b.t.SkkeIt),
-      children: L
+      children: x
     }), (0, r.jsx)(o.kSQ, {
       label: b.intl.string(b.t.rHyPXg),
-      children: x
+      children: L
     })]
   })
 }

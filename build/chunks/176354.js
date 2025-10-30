@@ -2,10 +2,10 @@
 /** chunk id: 176354, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B6: () => S,
+  B6: () => T,
   ZP: () => I,
   nY: () => A,
-  qc: () => T
+  qc: () => S
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./539854.js");
 var Chunk738774 = require("./738774.js"),
   Chunk906411 = require("./906411.js"),
@@ -130,11 +130,11 @@ let I = {
   isFileTooBig: e => e.size > m,
   isDataTooBig: e => (0, f.QB)(e) > h.h_
 };
-async function S(e) {
+async function T(e) {
   return await d.Z.getEmojiColors(e)
 }
 
-function T(e) {
+function S(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 32,
     {
       id: n,

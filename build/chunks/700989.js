@@ -34,23 +34,23 @@ function E(e, t, n) {
     sensitivity: "base"
   }), {
     direction: I
-  } = (0, p.j)(), S = t.selectionManager.disabledBehavior, T = (0, m.useMemo)(() => E || new(0, a.x)({
+  } = (0, p.j)(), T = t.selectionManager.disabledBehavior, S = (0, m.useMemo)(() => E || new(0, a.x)({
     collection: t.collection,
     disabledKeys: t.disabledKeys,
-    disabledBehavior: S,
+    disabledBehavior: T,
     ref: n,
     direction: I,
     collator: v,
     layoutDelegate: y,
     layout: O
-  }), [E, t.collection, t.disabledKeys, S, n, I, v, y, O]), A = (0, l.Me)(e.id);
+  }), [E, t.collection, t.disabledKeys, T, n, I, v, y, O]), A = (0, l.Me)(e.id);
   r._e.set(t, A);
   let {
     gridProps: C
   } = (0, s.N)({
     ...e,
     id: A,
-    keyboardDelegate: T
+    keyboardDelegate: S
   }, t, n);
   b && (C["aria-rowcount"] = t.collection.size + t.collection.headerRows.length), (0, f.OV)() && "expandedKeys" in t && (C.role = "treegrid");
   let {

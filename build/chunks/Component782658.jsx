@@ -2,7 +2,7 @@
 /** chunk id: 782658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,22 +35,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk723359 = require("./723359.js");
 
-function L(e) {
+function x(e) {
   let {
     code: t,
     message: n,
-    getAcceptInviteContext: L
+    getAcceptInviteContext: x
   } = e, {
-    invite: x,
+    invite: L,
     inviteError: M
   } = (0, a.cj)([y.Z], () => ({
     invite: y.Z.getInvite(t),
     inviteError: y.Z.getInviteError(t)
-  }), [t]), k = null == x;
+  }), [t]), k = null == L;
   i.useEffect(() => {
     k && o.ZP.resolveInvite(t)
   }, [t, k]);
-  let j = null != x ? x : {
+  let j = null != L ? L : {
       state: w.r2o.RESOLVING,
       code: ""
     },
@@ -58,7 +58,7 @@ function L(e) {
       analyticsLocations: U
     } = (0, u.ZP)(),
     G = (0, d.v)(),
-    B = (0, a.e7)([b.Z], () => (null == x ? true : x.guild) != null ? b.Z.getGuild(x.guild.id) : null, [x]),
+    B = (0, a.e7)([b.Z], () => (null == L ? true : L.guild) != null ? b.Z.getGuild(L.guild.id) : null, [L]),
     Z = (0, a.e7)([E.default], () => E.default.getId()),
     F = (0, a.e7)([_.ZP], () => {
       var e;
@@ -68,8 +68,8 @@ function L(e) {
       null != j.channel && o.ZP.transitionToInviteSync(j)
     },
     H = () => {
-      if (null == B && (null == x ? true : x.guild) != null) {
-        let e = O.Qs(x.guild);
+      if (null == B && (null == L ? true : L.guild) != null) {
+        let e = O.Qs(L.guild);
         if ((0, c.bN)() && (0, c.Yt)(e)) return void(0, l.mN)(D.L0.NSFW_SERVER_INVITE_EMBED)
       }(0, m.yU)() ? (0, g.Z)({
         analyticsSource: {
@@ -82,7 +82,7 @@ function L(e) {
         analyticsLocations: U
       }) : o.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: t,
-        context: L("Invite Button Embed")
+        context: x("Invite Button Embed")
       })
     },
     Y = (0, r.jsx)(A.Z, {
@@ -114,7 +114,7 @@ function L(e) {
     default:
       switch ((0, h.VR)(j)) {
         case h.wx.GROUP_DM:
-          Y = (0, r.jsx)(T.Z, {
+          Y = (0, r.jsx)(S.Z, {
             onTransitionToInviteChannel: V,
             onAcceptInstantInvite: H,
             currentUserId: Z,
@@ -123,10 +123,10 @@ function L(e) {
           });
           break;
         case h.wx.FRIEND:
-          Y = (0, r.jsx)(S.Z, {
+          Y = (0, r.jsx)(T.Z, {
             invite: j,
             message: n,
-            getAcceptInviteContext: L
+            getAcceptInviteContext: x
           });
           break;
         default:
@@ -155,7 +155,7 @@ function L(e) {
           if ((0, h.P1)(j)) {
             Y = (0, r.jsx)(v.Z, {
               invite: j,
-              getAcceptInviteContext: L,
+              getAcceptInviteContext: x,
               message: n
             });
             break

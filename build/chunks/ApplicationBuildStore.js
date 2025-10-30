@@ -32,8 +32,8 @@ function O(e, t, n) {
 }
 let v = new Set,
   I = {},
-  S = new Set,
-  T = {},
+  T = new Set,
+  S = {},
   A = new Set,
   C = {},
   N = 10 * Chunk70956.Z.Millis.MINUTE,
@@ -45,11 +45,11 @@ function D(e) {
   w.start(e + Math.random() * N, c.o)
 }
 
-function L() {
-  return !Chunk695346.bm.getSetting() && (D(R), x())
+function x() {
+  return !Chunk695346.bm.getSetting() && (D(R), L())
 }
 
-function x() {
+function L() {
   if (!(0, Chunk804739.Q)() || Chunk695346.bm.getSetting()) returnfalse;
   let e = Chunk283595.Z.entitledBranchIds,
     t = [];
@@ -103,7 +103,7 @@ function U(e) {
       return t
     }),
     o = i.id;
-  S.delete(n), I[n] = {
+  T.delete(n), I[n] = {
     id: o,
     applicationId: t,
     branchId: n,
@@ -116,14 +116,14 @@ function G(e) {
   let {
     branchId: t
   } = e;
-  v.delete(t), S.add(t)
+  v.delete(t), T.add(t)
 }
 
 function B(e) {
   let {
     buildId: t
   } = e;
-  T.hasOwnProperty(t) || (T[t] = null)
+  S.hasOwnProperty(t) || (S[t] = null)
 }
 
 function Z(e) {
@@ -131,14 +131,14 @@ function Z(e) {
     buildId: t,
     sizeKB: n
   } = e;
-  T[t] = n
+  S[t] = n
 }
 
 function F(e) {
   let {
     buildId: t
   } = e;
-  null == T[t] && delete T[t]
+  null == S[t] && delete S[t]
 }
 
 function V(e) {
@@ -185,7 +185,7 @@ function W(e) {
 }
 class K extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk283595.Z], x), this.waitFor(Chunk812206.Z, Chunk417363.Z, Chunk391690.Z, Chunk283595.Z, Chunk581883.Z)
+    this.syncWith([Chunk283595.Z], L), this.waitFor(Chunk812206.Z, Chunk417363.Z, Chunk391690.Z, Chunk283595.Z, Chunk581883.Z)
   }
   getTargetBuildId(e, t) {
     return null == I[t] ? null : I[t].id
@@ -194,21 +194,21 @@ class K extends(r = Chunk442837.ZP.Store) {
     return null == I[t] ? null : I[t].manifestIds
   }
   hasNoBuild(e, t) {
-    return S.has(t)
+    return T.has(t)
   }
   isFetching(e, t) {
     return v.has(t)
   }
   needsToFetchBuildSize(e) {
-    return !T.hasOwnProperty(e)
+    return !S.hasOwnProperty(e)
   }
   getBuildSize(e) {
-    return T[e]
+    return S[e]
   }
 }
 O(K, "displayName", "ApplicationBuildStore");
 let z = new K(Chunk570140.Z, {
-  CONNECTION_OPEN: L,
+  CONNECTION_OPEN: x,
   GAMES_DATABASE_UPDATE: M,
   APPLICATION_BUILD_FETCH_START: j,
   APPLICATION_BUILD_FETCH_SUCCESS: U,

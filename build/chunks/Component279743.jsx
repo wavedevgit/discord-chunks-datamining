@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk663389 = require("./663389.js"),
-  Chunk334709 = require("./334709.js");
+  Chunk869054 = require("./869054.js");
 let p = 200,
   h = 200;
 
@@ -46,9 +46,9 @@ function m(e) {
     targetBorderColor: b,
     targetColor: g,
     animationDelay: u
-  }, S = i.useRef(I);
+  }, T = i.useRef(I);
   return i.useEffect(() => {
-    S.current = I
+    T.current = I
   }), i.useEffect(() => {
     let {
       startColor: e,
@@ -57,7 +57,7 @@ function m(e) {
       targetBorderColor: r,
       targetColor: i,
       animationDelay: a
-    } = S.current, {
+    } = T.current, {
       useReducedMotion: o
     } = d.Z, s = o ? 0 : p, c = a + p + h;
     v({

@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk402197 = require("./402197.js"),
+  Chunk310380 = require("./310380.js"),
   Chunk917062 = require("./917062.js"),
   Chunk579273 = require("./579273.js"),
   Chunk38874 = require("./38874.js"),
@@ -64,7 +64,7 @@ let I = function(e) {
         hasActivePromotion: true
       })]
     }),
-    S = () => (0, r.jsx)(u.O, {
+    T = () => (0, r.jsx)(u.O, {
       newLocations: [c.Z.PREMIUM_SETTINGS],
       children: (0, r.jsxs)("div", {
         className: g.settingsBanner,
@@ -109,7 +109,7 @@ let I = function(e) {
         })]
       })
     }),
-    T = () => (0, r.jsx)(u.O, {
+    S = () => (0, r.jsx)(u.O, {
       newLocations: [c.Z.PREMIUM_MARKETING_PAGE_BANNER],
       children: (0, r.jsxs)("div", {
         className: g.applicationHomeBanner,
@@ -159,5 +159,5 @@ let I = function(e) {
         })]
       })
     });
-  return "APPLICATION_NITRO_HOME" === t ? (0, r.jsx)(T, {}) : "SETTINGS" === t ? (0, r.jsx)(S, {}) : (0, r.jsx)(I, {})
+  return "APPLICATION_NITRO_HOME" === t ? (0, r.jsx)(S, {}) : "SETTINGS" === t ? (0, r.jsx)(T, {}) : (0, r.jsx)(I, {})
 }

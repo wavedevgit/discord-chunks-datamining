@@ -35,7 +35,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,7 +60,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -88,14 +88,14 @@ function R(e) {
   let {
     initialPlanId: i,
     followupSKUInfo: I,
-    onClose: T,
+    onClose: S,
     onComplete: N,
     onSubscriptionConfirmation: R,
     analyticsLocations: P,
     analyticsObject: w,
     analyticsLocation: D,
-    analyticsSourceLocation: L,
-    confirmationFooter: x,
+    analyticsSourceLocation: x,
+    confirmationFooter: L,
     paymentModalBanner: M,
     isGift: k = false,
     giftMessage: j,
@@ -115,12 +115,12 @@ function R(e) {
   return (0, s.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("17938"), n.e("94758"), n.e("84992"), n.e("31029")]).then(n.bind(n, 7305));
+    } = await Promise.all([n.e("17938"), n.e("94758"), n.e("84992"), n.e("10065")]).then(n.bind(n, 7305));
     return t => {
       var {
         onClose: n
       } = t, a = C(t, ["onClose"]);
-      return (0, r.jsx)(e, A(S({}, a), {
+      return (0, r.jsx)(e, A(T({}, a), {
         loadId: Q,
         subscriptionTier: B,
         skuId: et,
@@ -135,7 +135,7 @@ function R(e) {
           if (en) return;
           en = true, g.S.dispatch(O.CkL.PREMIUM_PAYMENT_MODAL_CLOSED);
           let r = () => {
-            n(), null == T || T(e), e && (null == R || R(), (0, p.M)(k, $, t) && g.S.dispatch(O.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
+            n(), null == S || S(e), e && (null == R || R(), (0, p.M)(k, $, t) && g.S.dispatch(O.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
               type: "PREMIUM_PAYMENT_MODAL_CLOSE",
               didSucceed: e
             })
@@ -151,8 +151,8 @@ function R(e) {
         analyticsLocations: P,
         analyticsObject: w,
         analyticsLocation: D,
-        analyticsSourceLocation: L,
-        confirmationFooter: x,
+        analyticsSourceLocation: x,
+        confirmationFooter: L,
         paymentModalBanner: M,
         trialId: Z,
         postSuccessGuild: F,
@@ -178,14 +178,14 @@ function R(e) {
         load_id: Q,
         payment_type: O.Zuq[O.GZQ.SUBSCRIPTION],
         location: null != D ? D : w,
-        source: L,
+        source: x,
         subscription_type: O.NYc.PREMIUM,
         is_gift: k,
         sku_id: et,
         eligible_for_trial: null != Z,
         application_id: H,
         location_stack: P
-      }), (0, u.fw)(), (0, c.fw)(), (0, d.p)(), null == T || T(X), X && (null == R || R())
+      }), (0, u.fw)(), (0, c.fw)(), (0, d.p)(), null == S || S(X), X && (null == R || R())
     }
   })
 }

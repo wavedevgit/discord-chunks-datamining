@@ -2,7 +2,7 @@
 /** chunk id: 434624, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => S
+  l: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,8 +15,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk56314 = require("./56314.js"),
   Chunk566006 = require("./566006.js"),
   Chunk287151 = require("./287151.jsx"),
-  Chunk127947 = require("./127947.js"),
-  Chunk893973 = require("./893973.js");
+  Chunk487111 = require("./487111.js"),
+  Chunk639543 = require("./639543.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -87,8 +87,8 @@ let v = Chunk647438.memo(function(e) {
       burst_colors: O,
       readOnly: v,
       isLurking: I,
-      isGuest: S,
-      isPendingMember: T,
+      isGuest: T,
+      isPendingMember: S,
       type: A,
       emojiSize: C
     } = e,
@@ -97,8 +97,8 @@ let v = Chunk647438.memo(function(e) {
     P = (0, d.v)(N && null != O ? O : []),
     w = i ? h : p,
     D = N ? y : g,
-    L = (0, u.y)(D, _.aO),
-    x = {};
+    x = (0, u.y)(D, _.aO),
+    L = {};
   if (N && null != P) {
     var M;
     let {
@@ -106,19 +106,19 @@ let v = Chunk647438.memo(function(e) {
       backgroundColor: r,
       opacity: i
     } = P, a = null != (M = (0, l.wK)(null != r ? r : "", i)) ? M : "";
-    R && (x.borderColor = r), x.background = a, t = e, n = e
+    R && (L.borderColor = r), L.background = a, t = e, n = e
   }
   let k = {
-    minWidth: L,
+    minWidth: x,
     color: t,
     borderColor: n
   };
   return (0, r.jsxs)("div", {
     className: o()(w.reaction, w.reactionInner, m, {
       [w.reactionMe]: R,
-      [w.reactionReadOnly]: v && !I && !T && !S
+      [w.reactionReadOnly]: v && !I && !S && !T
     }),
-    style: x,
+    style: L,
     children: [(0, r.jsx)(c.Z, {
       className: o()({
         [w.hideEmoji]: a
@@ -139,7 +139,7 @@ function I(e) {
   var t;
   return "".concat(e.type === f.O.BURST ? "burst:" : "").concat(null != (t = e.emoji.id) ? t : 0, ":").concat(e.emoji.name)
 }
-let S = Chunk647438.memo(function(e) {
+let T = Chunk647438.memo(function(e) {
   var {
     showImmediate: t,
     reactions: n

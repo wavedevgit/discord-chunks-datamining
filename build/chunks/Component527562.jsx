@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk878184 = require("./878184.jsx"),
   Chunk798476 = require("./798476.jsx"),
   Chunk423252 = require("./423252.jsx"),
-  Chunk626807 = require("./626807.js");
+  Chunk189690 = require("./189690.js");
 let E = 50001;
 
 function b(e) {
@@ -33,7 +33,7 @@ function b(e) {
     guildProfile: O,
     fetchGuildProfile: v,
     fetchStatus: I
-  } = (0, _.u)(t), S = (0, s.e7)([f.Z], () => f.Z.getErrorCode(t)), T = i.useRef(null), A = i.useCallback(() => {
+  } = (0, _.u)(t), T = (0, s.e7)([f.Z], () => f.Z.getErrorCode(t)), S = i.useRef(null), A = i.useCallback(() => {
     v(true)
   }, [v]);
   i.useEffect(() => {
@@ -41,12 +41,12 @@ function b(e) {
   }, [v]), i.useEffect(() => {
     (0, d.vb)(t, y)
   }, [t, y]), i.useEffect(() => {
-    null == a || a(null == T ? true : T.current)
-  }, [T, a]);
+    null == a || a(null == S ? true : S.current)
+  }, [S, a]);
   let C = i.useMemo(() => I === f.a.NOT_FETCHED || I === f.a.FETCHING ? (0, r.jsx)("div", {
     className: o()(g.container, g.spinnerContainer),
     children: (0, r.jsx)(l.$jN, {})
-  }) : null == O && S === E ? (0, r.jsx)("div", {
+  }) : null == O && T === E ? (0, r.jsx)("div", {
     className: g.container,
     children: (0, r.jsx)(m.Z, {
       guildId: t,
@@ -64,9 +64,9 @@ function b(e) {
       profile: O,
       onClose: b
     })
-  }), [I, O, S, t, n, A, b]);
+  }), [I, O, T, t, n, A, b]);
   return (0, r.jsx)(l.VqE, {
-    ref: T,
+    ref: S,
     "aria-label": null == O ? true : O.name,
     children: C
   })

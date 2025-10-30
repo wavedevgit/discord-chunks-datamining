@@ -31,8 +31,8 @@ let E = "GameStoreReportedGames",
   O = new Chunk642047.Z,
   v = {},
   I = {},
-  S = null != (i = Chunk433517.K.get(E)) ? i : {},
-  T = "",
+  T = null != (i = Chunk433517.K.get(E)) ? i : {},
+  S = "",
   A = null;
 
 function C(e) {
@@ -95,22 +95,22 @@ function D() {
   r = false
 }
 
-function L(e) {
+function x(e) {
   let {
     games: t,
     etag: n
   } = e;
-  for (let e of (null != n && T !== n && (O.clear(), v = {}, I = {}, T = n), t)) R(C(e));
+  for (let e of (null != n && S !== n && (O.clear(), v = {}, I = {}, S = n), t)) R(C(e));
   r = true, A = Date.now()
 }
-class x extends(a = Chunk442837.ZP.PersistedStore) {
+class L extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    null != e && (null != e.detectableGamesEtag && (T = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => R(e)))
+    null != e && (null != e.detectableGamesEtag && (S = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => R(e)))
   }
   getState() {
     return (0, Chunk358085.isDesktop)() ? {
-      detectableGamesEtag: T,
+      detectableGamesEtag: S,
       detectableGames: O.values()
     } : {
       detectableGamesEtag: "",
@@ -149,7 +149,7 @@ class x extends(a = Chunk442837.ZP.PersistedStore) {
     returntrue === r
   }
   get detectableGamesEtag() {
-    return T
+    return S
   }
   get lastFetched() {
     return A
@@ -179,14 +179,14 @@ class x extends(a = Chunk442837.ZP.PersistedStore) {
   }
   shouldReport(e) {
     let t = null != this.getGameByName(e),
-      n = null != S[e];
+      n = null != T[e];
     return f.G6.getSetting() && !r && !(t || n)
   }
   markGameReported(e) {
-    S[e] = true, s.K.set(E, S)
+    T[e] = true, s.K.set(E, T)
   }
 }
-g(x, "displayName", "GameStore"), g(x, "persistKey", "GameStore"), g(x, "migrations", [e => {
+g(L, "displayName", "GameStore"), g(L, "persistKey", "GameStore"), g(L, "migrations", [e => {
   var t, n;
   return null == e ? {
     detectableGamesEtag: "",
@@ -202,9 +202,9 @@ g(x, "displayName", "GameStore"), g(x, "persistKey", "GameStore"), g(x, "migrati
   detectableGamesEtag: "",
   detectableGames: []
 })]);
-let M = new x(Chunk570140.Z, {
+let M = new L(Chunk570140.Z, {
   OVERLAY_INITIALIZE: P,
   GAMES_DATABASE_FETCH: w,
   GAMES_DATABASE_FETCH_FAIL: D,
-  GAMES_DATABASE_UPDATE: L
+  GAMES_DATABASE_UPDATE: x
 })

@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk892001 = require("./892001.js"),
   Chunk280885 = require("./280885.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk108670 = require("./108670.js");
+  Chunk191835 = require("./191835.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,15 +66,15 @@ let E = 57.75,
       context: b
     } = (0, c.KZ)(), {
       analyticsLocations: y
-    } = (0, l.ZP)(), [O, v] = i.useState(false), [I, S] = i.useState(false), T = i.useRef(null), A = e => {
-      T.current = e, null != e && (v(!I && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > E && S(true))
+    } = (0, l.ZP)(), [O, v] = i.useState(false), [I, T] = i.useState(false), S = i.useRef(null), A = e => {
+      S.current = e, null != e && (v(!I && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > E && T(true))
     }, C = () => {
       null == n || n(), (0, u.openUserProfileModal)(g(h({}, b), {
         userId: t.id,
         sourceAnalyticsLocations: y
       }))
     }, N = e => {
-      null == T.current || T.current.contains(e.relatedTarget) || (T.current.scrollTop = 0)
+      null == S.current || S.current.contains(e.relatedTarget) || (S.current.scrollTop = 0)
     };
     return p || null == a || "" === a ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {

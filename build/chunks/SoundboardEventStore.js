@@ -59,10 +59,10 @@ function v(e, t) {
   }), e
 }
 let I = [],
-  S = new(s())({
+  T = new(s())({
     max: Chunk710111.zb
   }),
-  T = new Chunk704907.Z({
+  S = new Chunk704907.Z({
     computeBonus: () => 100,
     lookupKey: e => p.Z.getSoundById(e),
     afterCompute: () => {},
@@ -85,20 +85,20 @@ function C(e) {
     soundId: n,
     userId: r
   } = e;
-  if (!x()) return;
+  if (!L()) return;
   let i = n.toString();
   r !== (null == (t = f.default.getCurrentUser()) ? true : t.id) && P(i) && N(i)
 }
 
 function N(e) {
-  S.set(e, e)
+  T.set(e, e)
 }
 
 function R(e) {
-  T.track(e), I.push({
+  S.track(e), I.push({
     key: e,
     timestamp: Date.now()
-  }), T.compute()
+  }), S.compute()
 }
 
 function P(e) {
@@ -117,10 +117,10 @@ function D() {
   var e;
   if (!M()) return;
   let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) ? true : module.playedSounds;
-  T.overwriteHistory(w(null != exports ? exports : {}), I)
+  S.overwriteHistory(w(null != exports ? exports : {}), I)
 }
 
-function L(e) {
+function x(e) {
   let {
     settings: {
       type: t
@@ -130,7 +130,7 @@ function L(e) {
   M() && t === E.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (I = [])
 }
 
-function x() {
+function L() {
   return (0, Chunk164878.v)({
     location: "soundboard_event_store",
     autoTrackExposure: false
@@ -142,11 +142,11 @@ function M() {
 }
 class k extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(p.Z, d.Z, f.default), (null == e ? true : e.recentlyHeardCache) != null && S.load(e.recentlyHeardCache), (null == e ? true : e.playedEventsPendingFlush) != null && (I = e.playedEventsPendingFlush), this.syncWith([d.Z], D)
+    this.waitFor(p.Z, d.Z, f.default), (null == e ? true : e.recentlyHeardCache) != null && T.load(e.recentlyHeardCache), (null == e ? true : e.playedEventsPendingFlush) != null && (I = e.playedEventsPendingFlush), this.syncWith([d.Z], D)
   }
   getState() {
     return {
-      recentlyHeardCache: S.dump(),
+      recentlyHeardCache: T.dump(),
       playedEventsPendingFlush: I
     }
   }
@@ -154,18 +154,18 @@ class k extends(r = Chunk442837.ZP.PersistedStore) {
     return I.length > 0
   }
   get playedSoundHistory() {
-    return T.usageHistory
+    return S.usageHistory
   }
   get recentlyHeardSoundIds() {
-    return S.values()
+    return T.values()
   }
   get frecentlyPlayedSounds() {
-    return T.frequently
+    return S.frequently
   }
 }
 b(k, "displayName", "SoundboardEventStore"), b(k, "persistKey", "SoundboardEventStore");
 let j = new k(Chunk570140.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: A,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: C,
-  USER_SETTINGS_PROTO_UPDATE: L
+  USER_SETTINGS_PROTO_UPDATE: x
 })

@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk698305 = require("./698305.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk391022 = require("./391022.js");
+  Chunk589687 = require("./589687.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,7 +72,7 @@ function O(e) {
     newestAnalyticsLocation: E
   } = (0, a.ZP)(), {
     trackUserProfileAction: O
-  } = (0, d.KZ)(), [v, I] = i.useState(""), [S, T] = i.useState((0, s.JM)(v)), A = i.useRef(false), C = i.useMemo(() => b(g({}, o.Ie.USER_PROFILE), {
+  } = (0, d.KZ)(), [v, I] = i.useState(""), [T, S] = i.useState((0, s.JM)(v)), A = i.useRef(false), C = i.useMemo(() => b(g({}, o.Ie.USER_PROFILE), {
     disableAutoFocus: m
   }), [m]);
   return (0, r.jsx)(l.ZP, {
@@ -84,9 +84,9 @@ function O(e) {
     }),
     channel: y,
     textValue: v,
-    richValue: S,
+    richValue: T,
     onChange: (e, t, n) => {
-      t !== v && (I(t), T(n))
+      t !== v && (I(t), S(n))
     },
     focused: A.current,
     onFocus: () => {

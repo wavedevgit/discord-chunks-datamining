@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk866442 = require("./866442.js"),
   Chunk481060 = require("./481060.js"),
   Chunk779699 = require("./779699.jsx"),
-  Chunk831418 = require("./831418.js");
+  Chunk780525 = require("./780525.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -87,9 +87,9 @@ let g = e => {
     colorStrings: null != _ ? _ : null,
     roleStyle: "username",
     animateGradient: y
-  }), S = i.useCallback(e => {
+  }), T = i.useCallback(e => {
     O(true), null == g || g(e)
-  }, [O, g]), T = i.useCallback(e => {
+  }, [O, g]), S = i.useCallback(e => {
     O(false), null == E || E(e)
   }, [O, E]), A = {};
   return null != d && (A = {
@@ -102,8 +102,8 @@ let g = e => {
       [u.wrapper]: true,
       interactive: b.onClick
     }),
-    onMouseEnter: S,
-    onMouseLeave: T,
+    onMouseEnter: T,
+    onMouseLeave: S,
     style: A,
     tabIndex: null != b.onClick ? 0 : false,
     children: null != m ? (0, r.jsx)(c.Z, {

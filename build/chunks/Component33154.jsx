@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk41776 = require("./41776.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk576385 = require("./576385.js"),
+  Chunk29030 = require("./29030.js"),
   h = function(e) {
     return e[e.CHAT = 0] = "CHAT", e[e.REACTIONS = 1] = "REACTIONS", e
   }({});
@@ -43,7 +43,7 @@ let m = e => {
       return (0, u.vE)(t)
   }
   if (null == v) return null;
-  let S = async () => {
+  let T = async () => {
     y(true);
     try {
       await l.Z.joinGuild(h.id, {
@@ -76,7 +76,7 @@ let m = e => {
           variant: "primary",
           text: _.intl.string(_.t["9VLmlZ"]),
           buttonRef: g,
-          onClick: S,
+          onClick: T,
           loading: b
         }), (0, r.jsx)(o.zx, {
           onClick: m,

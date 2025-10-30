@@ -3,14 +3,14 @@
 "use strict";
 require.d(exports, {
   E2: () => A,
-  Kp: () => L,
+  Kp: () => x,
   LI: () => b,
   MH: () => D,
   Qr: () => E,
-  _p: () => T,
+  _p: () => S,
   f0: () => v,
   iB: () => O,
-  jV: () => S,
+  jV: () => T,
   k0: () => N,
   lW: () => P,
   lx: () => y,
@@ -26,7 +26,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk914788 = require("./914788.js"),
   Chunk277537 = require("./277537.js"),
   Chunk292352 = require("./292352.js"),
-  Chunk602698 = require("./602698.js"),
+  Chunk382402 = require("./382402.js"),
   Chunk388032 = require("./388032.jsx");
 let f = 60,
   _ = 3600,
@@ -34,9 +34,9 @@ let f = 60,
   h = 172800,
   m = 604800,
   g = () => ({
-    today: Chunk388032.intl.string(Chunk602698.default.VjIAQQ),
-    yesterday: Chunk388032.intl.string(Chunk602698.default["2a8xHY"]),
-    days: Chunk602698.default.Xt6oND
+    today: Chunk388032.intl.string(Chunk382402.default.VjIAQQ),
+    yesterday: Chunk388032.intl.string(Chunk382402.default["2a8xHY"]),
+    days: Chunk382402.default.Xt6oND
   }),
   E = e => e ? {
     today: d.intl.string(u.default["2AtcIs"]),
@@ -72,11 +72,11 @@ let f = 60,
   O = e => e.display_type === c.MY.USER_ADD || e.display_type === c.MY.USER_INTERACTION || e.display_type === c.MY.USER_CALLED,
   v = e => e.display_type === c.MY.GUILD_ADD || e.display_type === c.MY.GUILD_INTERACTION,
   I = e => e.display_type === c.MY.PURCHASES,
-  S = e => {
+  T = e => {
     for (let t of Object.values(c.MY))
       if (t.toString() === e) return t
   },
-  T = e => {
+  S = e => {
     let t = A(e);
     return 0 === t.size ? [] : Array.from(t.entries()).sort((e, t) => e[1].priority - t[1].priority)
   },
@@ -102,7 +102,7 @@ let f = 60,
       n = (0, Chunk277537.vE)("settings-controls");
     return (null == module ? true : module.nsfwAllowed) === false && exports && require
   },
-  L = (e, t) => t > 0 && 0 === e ? d.intl.formatToPlainString(u.default["L/Cj7S"], {
+  x = (e, t) => t > 0 && 0 === e ? d.intl.formatToPlainString(u.default["L/Cj7S"], {
     callCount: t
   }) : e > 0 && 0 === t ? d.intl.formatToPlainString(u.default["6X1F0i"], {
     messageCount: e

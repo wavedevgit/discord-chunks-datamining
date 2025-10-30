@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk360920 = require("./360920.jsx"),
-  Chunk301106 = require("./301106.js");
+  Chunk774262 = require("./774262.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,10 +66,10 @@ let d = e => {
     onMouseLeave: O,
     buttonProps: v,
     "aria-label": I,
-    "aria-describedby": S,
-    ref: T,
+    "aria-describedby": T,
+    ref: S,
     buttonRef: A
-  } = e, C = i.useRef(null), N = null != T ? T : C;
+  } = e, C = i.useRef(null), N = null != S ? S : C;
   return (0, r.jsxs)(t, {
     ref: N,
     className: s,
@@ -88,7 +88,7 @@ let d = e => {
       }, d),
       className: o.focusTarget,
       "aria-label": I,
-      "aria-describedby": S,
+      "aria-describedby": T,
       onClick: e => {
         e.stopPropagation(), null == f || f(e)
       },

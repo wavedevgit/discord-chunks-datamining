@@ -2,7 +2,7 @@
 /** chunk id: 13245, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js"), require("./415506.js");
 var Chunk772848 = require("./772848.js"),
   Chunk570140 = require("./570140.js"),
@@ -300,7 +300,7 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
           right: 0,
           bottom: 0
         },
-        S = {
+        T = {
           width: 0,
           height: 0
         };
@@ -319,14 +319,14 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
               y = (0, p.vS)(r, i, f), v = (0, p.w_)(i, f), (0, m.E9)(n);
               break;
             case g.Odu.GUILDS_TEXT:
-              I = (0, p.vS)(r, i, f), S = (0, p.w_)(i, f), (0, m.E9)(n)
+              I = (0, p.vS)(r, i, f), T = (0, p.w_)(i, f), (0, m.E9)(n)
           }
         }), e) {
-        let e = "auto" === S.width ? l.minSize.width : S.width;
+        let e = "auto" === T.width ? l.minSize.width : T.width;
         e -= c.minSize.width;
-        let [n, i] = (0, p.o4)(I, O(b({}, S), {
+        let [n, i] = (0, p.o4)(I, O(b({}, T), {
           width: c.minSize.width
-        }), f), [a, o] = (0, p.uq)(I, O(b({}, S), {
+        }), f), [a, o] = (0, p.uq)(I, O(b({}, T), {
           width: e
         }), f, {
           x: 10,
@@ -443,4 +443,4 @@ let v = new Chunk710845.Z("OverlayActionCreators"),
       })
     }
   },
-  S = I
+  T = I

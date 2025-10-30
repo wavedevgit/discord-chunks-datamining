@@ -63,8 +63,8 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = null,
-  x = {},
+let x = null,
+  L = {},
   M = null;
 
 function k() {
@@ -124,7 +124,7 @@ function F(e) {
     }), true;
     {
       let t = b.default.getSessionId();
-      return n === b.default.getId() && a !== t && null != S.Z.getChannelId() ? e : U(n, r) || e
+      return n === b.default.getId() && a !== t && null != T.Z.getChannelId() ? e : U(n, r) || e
     }
   }, false)
 }
@@ -135,7 +135,7 @@ function V(e) {
   } = e, n = (0, p.my)(t);
   r.delete(t), r.set(t, D(P({}, n), {
     state: C.jm8.CONNECTING
-  })), n.ownerId === b.default.getId() && (x[n.channelId] = false)
+  })), n.ownerId === b.default.getId() && (L[n.channelId] = false)
 }
 
 function H(e) {
@@ -259,9 +259,9 @@ function Q(e) {
     id: t,
     channelId: n
   } = e;
-  L = t, Array.from(r.values()).forEach(e => {
-    (0, p.V9)(e) !== L && e.state === C.jm8.ENDED && G((0, p.V9)(e))
-  }), null != t && (0, p.DB)(t) && t.includes(b.default.getId()) && (x[n] = false)
+  x = t, Array.from(r.values()).forEach(e => {
+    (0, p.V9)(e) !== x && e.state === C.jm8.ENDED && G((0, p.V9)(e))
+  }), null != t && (0, p.DB)(t) && t.includes(b.default.getId()) && (L[n] = false)
 }
 
 function J(e) {
@@ -289,7 +289,7 @@ function J(e) {
   } else s.state === C.jm8.FAILED && o === C.si2.USER_REQUESTED && (l = C.jm8.FAILED);
   r.set(t, D(P({}, s), {
     state: l
-  })), l === C.jm8.ENDED && L !== t && G(t)
+  })), l === C.jm8.ENDED && x !== t && G(t)
 }
 
 function $(e) {
@@ -329,7 +329,7 @@ function et(e) {
     channelId: t,
     selfStreamHidden: n
   } = e;
-  (0, p.DB)(L) && (null == L ? true : L.includes(b.default.getId())) && false === x[t] && true === n && (L = null), x[t] = n
+  (0, p.DB)(x) && (null == x ? true : x.includes(b.default.getId())) && false === L[t] && true === n && (x = null), L[t] = n
 }
 
 function en(e) {
@@ -352,16 +352,16 @@ function ei(e) {
 k();
 class ea extends(c = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.syncWith([I.Z], () => true), this.waitFor(b.default, y.Z, I.Z, S.Z, _.ZP, T.Z), (null == e ? true : e.selfStreamParticipantsHidden) !== true && Object.assign(x, null == e ? true : e.selfStreamParticipantsHidden)
+    this.syncWith([I.Z], () => true), this.waitFor(b.default, y.Z, I.Z, T.Z, _.ZP, S.Z), (null == e ? true : e.selfStreamParticipantsHidden) !== true && Object.assign(L, null == e ? true : e.selfStreamParticipantsHidden)
   }
   getState() {
     return {
-      selfStreamParticipantsHidden: x
+      selfStreamParticipantsHidden: L
     }
   }
   isSelfStreamHidden(e) {
     var t;
-    return null != (t = x[e]) && t
+    return null != (t = L[e]) && t
   }
   getLastActiveStream() {
     var e;

@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk606318 = require("./606318.js"),
   Chunk402235 = require("./402235.js"),
   Chunk485386 = require("./485386.js"),
-  Chunk724913 = require("./724913.js");
+  Chunk136907 = require("./136907.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,8 +84,8 @@ let O = function(e) {
     childrenRepliedMessage: O,
     childrenExecutedCommand: v,
     childrenHeader: I,
-    childrenSystemMessage: S,
-    childrenButtons: T,
+    childrenSystemMessage: T,
+    childrenButtons: S,
     childrenMessageContent: A,
     childrenAccessories: C,
     messageRef: N,
@@ -98,16 +98,16 @@ let O = function(e) {
     hasThread: P,
     isSystemMessage: w,
     hasReply: D,
-    author: L,
-    onMouseEnter: x,
+    author: x,
+    onMouseEnter: L,
     onMouseLeave: M
   } = e, k = b(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
-  let j = (0, s.e7)([_.Z], () => (null == L ? true : L.guildId) == null || (null == L ? true : L.colorRoleId) == null ? null : _.Z.getRole(L.guildId, L.colorRoleId)),
-    U = (0, f.yH)(null == L ? true : L.guildId, j) && (0, d.S2)(L),
+  let j = (0, s.e7)([_.Z], () => (null == x ? true : x.guildId) == null || (null == x ? true : x.colorRoleId) == null ? null : _.Z.getRole(x.guildId, x.colorRoleId)),
+    U = (0, f.yH)(null == x ? true : x.guildId, j) && (0, d.S2)(x),
     [G, B] = i.useState(false),
     Z = i.useCallback(e => {
-      B(true), null == x || x(e)
-    }, [x]),
+      B(true), null == L || L(e)
+    }, [L]),
     F = i.useCallback(e => {
       B(false), null == M || M(e)
     }, [M]),
@@ -123,7 +123,7 @@ let O = function(e) {
         children: (0, r.jsxs)("div", E(m({
           className: o()(t, {
             [p.gradient]: U,
-            [p.withDisplayNameStyles]: V && (null == L ? true : L.displayNameStyles) != null && (null == L ? true : L.guildId) == null,
+            [p.withDisplayNameStyles]: V && (null == x ? true : x.displayNameStyles) != null && (null == x ? true : x.guildId) == null,
             [p.wrapper]: true,
             [p.contentOnly]: a,
             [p.compact]: n,
@@ -141,10 +141,10 @@ let O = function(e) {
           onMouseLeave: F,
           children: [O, v, (0, r.jsxs)("div", {
             className: p.contents,
-            children: [S, I, null == S && A]
-          }), C, null != T ? (0, r.jsx)("div", {
+            children: [T, I, null == T && A]
+          }), C, null != S ? (0, r.jsx)("div", {
             className: p.buttonContainer,
-            children: T
+            children: S
           }) : null]
         }))
       }))

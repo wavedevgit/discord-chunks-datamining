@@ -33,10 +33,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk359739 = require("./359739.js"),
-  Chunk611344 = require("./611344.js");
+  Chunk561965 = require("./561965.js"),
+  Chunk469059 = require("./469059.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,21 +45,21 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
 }
 let M = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, r.jsx)(j, x({}, e)),
+  renderStep: e => (0, r.jsx)(j, L({}, e)),
   options: {
     isLargeModal: true,
     useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+b"])
@@ -75,7 +75,7 @@ function k(e) {
     loading: s = false
   } = e, {
     hasPaymentSources: l
-  } = (0, T.JL)(), c = l ? A.h8.REVIEW : A.h8.ADD_PAYMENT_STEPS;
+  } = (0, S.JL)(), c = l ? A.h8.REVIEW : A.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Button, {
       onClick: () => t(c),
@@ -98,18 +98,18 @@ function j(e) {
     giftRecipientError: g,
     setGiftRecipientError: b,
     validatingGiftRecipient: A,
-    giftRecipient: L,
-    recommendedGiftSkuIds: x,
+    giftRecipient: x,
+    recommendedGiftSkuIds: L,
     giftingOrigin: M,
     setValidatingGiftRecipient: j
-  } = (0, S.wD)(), {
+  } = (0, T.wD)(), {
     selectedSkuId: B,
     setSelectedSkuId: Z,
     selectedSkuPricePreview: F,
     paymentSourceId: V,
     skuPricePreviewsById: H,
     skusById: Y
-  } = (0, T.JL)(), W = (0, i.e7)([y.default], () => y.default.getCurrentUser()), {
+  } = (0, S.JL)(), W = (0, i.e7)([y.default], () => y.default.getCurrentUser()), {
     enabled: K,
     giftRecommendationAlgorithm: z
   } = p.G.useExperiment({
@@ -120,14 +120,14 @@ function j(e) {
     j(true), null != g && b(), await (0, c.B1)(e.id, t) || b(P.intl.string(P.t["4kgVqQ"])), j(false)
   };
   (0, o.ZP)(() => {
-    null != B && null != L && (v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != B && null != x && (v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: B
-    }), Q(L, B))
+    }), Q(x, B))
   });
   let J = e => {
       v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
-      }), null != L && Q(L, e), Z(e)
+      }), null != x && Q(x, e), Z(e)
     },
     $ = e => {
       let t = H[e],
@@ -162,7 +162,7 @@ function j(e) {
         color: "header-secondary",
         className: w.selectGiftTitle,
         children: X.toLocaleUpperCase()
-      }), x.map(e => $(e)), (0, r.jsx)(U, {
+      }), L.map(e => $(e)), (0, r.jsx)(U, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
@@ -175,7 +175,7 @@ function j(e) {
       if (q) return (0, r.jsxs)("div", {
         className: w.bodyColumnRight,
         children: [(0, r.jsx)(E.s, {
-          giftRecipient: L
+          giftRecipient: x
         }), (0, r.jsx)(m.q, {
           isShopGift: true,
           className: D.adjustedGiftMainAnimation,
@@ -193,7 +193,7 @@ function j(e) {
       return M === R.Wt.USER_PROFILE_WISHLIST || M === R.Wt.DM_CHANNEL_WISHLIST ? (0, r.jsxs)("div", {
         className: w.bodyColumnRight,
         children: [(0, r.jsx)(E.s, {
-          giftRecipient: L
+          giftRecipient: x
         }), ee(), null != e && null != B && (0, r.jsx)(d.Z, {
           skuId: B,
           price: e,
@@ -234,7 +234,7 @@ function j(e) {
         children: (0, r.jsx)(k, {
           onStepChange: t,
           onBackClick: n,
-          disabled: null != g || null == L || L.id === (null == W ? true : W.id) || s.length > R.$n,
+          disabled: null != g || null == x || x.id === (null == W ? true : W.id) || s.length > R.$n,
           loading: A
         })
       })

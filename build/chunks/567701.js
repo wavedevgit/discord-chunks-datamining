@@ -22,8 +22,8 @@
     O = "wearable",
     v = "embedded",
     I = 500,
-    S = "Amazon",
-    T = "Apple",
+    T = "Amazon",
+    S = "Apple",
     A = "ASUS",
     C = "BlackBerry",
     N = "Browser",
@@ -31,8 +31,8 @@
     P = "Firefox",
     w = "Google",
     D = "Huawei",
-    L = "LG",
-    x = "Microsoft",
+    x = "LG",
+    L = "Microsoft",
     M = "Motorola",
     k = "Opera",
     j = "Samsung",
@@ -272,15 +272,15 @@
           [_, E]
         ],
         [/(?:\/|\()(ip(?:hone|od)[\w, ]*)(?:\/|;)/i],
-        [d, [p, T],
+        [d, [p, S],
           [_, E]
         ],
         [/\((ipad);[-\w\),; ]+apple/i, /applecoremedia\/[\w\.]+ \((ipad)/i, /\b(ipad)\d\d?,\d\d?[;\]].+ios/i],
-        [d, [p, T],
+        [d, [p, S],
           [_, b]
         ],
         [/(macintosh);/i],
-        [d, [p, T]],
+        [d, [p, S]],
         [/\b(sh-?[altvz]?\d\d[a-ekm]?)/i],
         [d, [p, U],
           [_, E]
@@ -334,11 +334,11 @@
           [_, b]
         ],
         [/((?=lg)?[vl]k\-?\d{3}) bui| 3\.[-\w; ]{10}lg?-([06cv9]{3,4})/i],
-        [d, [p, L],
+        [d, [p, x],
           [_, b]
         ],
         [/(lm(?:-?f100[nv]?|-[\w\.]+)(?= bui|\))|nexus [45])/i, /\blg[-e;\/ ]+((?!browser|netcast|android tv)\w+)/i, /\blg-?([\d\w]+) bui/i],
-        [d, [p, L],
+        [d, [p, x],
           [_, E]
         ],
         [/(ideatab[-\w ]+)/i, /lenovo ?(s[56]000[-\w]+|tab(?:[\w ]+)|yt[-\d\w]{6}|tb[-\d\w]{6})/i],
@@ -374,13 +374,13 @@
           [_, E]
         ],
         [/(alexa)webm/i, /(kf[a-z]{2}wi|aeo(?!bc)\w\w)( bui|\))/i, /(kf[a-z]+)( bui|\)).+silk\//i],
-        [d, [p, S],
+        [d, [p, T],
           [_, b]
         ],
         [/((?:sd|kf)[0349hijorstuw]+)( bui|\)).+silk\//i],
         [
           [d, /(.+)/g, "Fire Phone $1"],
-          [p, S],
+          [p, T],
           [_, E]
         ],
         [/(playbook);[-\w\),; ]+(rim)/i],
@@ -449,7 +449,7 @@
         [/(imo) (tab \w+)/i, /(kobo)\s(ereader|touch)/i, /(archos) (gamepad2?)/i, /(hp).+(touchpad(?!.+tablet)|tablet)/i, /(kindle)\/([\w\.]+)/i, /(nook)[\w ]+build\/(\w+)/i, /(dell) (strea[kpr\d ]*[\dko])/i, /(le[- ]+pan)[- ]+(\w{1,9}) bui/i, /(trinity)[- ]*(t\d{3}) bui/i, /(gigaset)[- ]+(q\w{1,9}) bui/i, /(vodafone) ([\w ]+)(?:\)| bui)/i],
         [p, d, [_, b]],
         [/(surface duo)/i],
-        [d, [p, x],
+        [d, [p, L],
           [_, b]
         ],
         [/droid [\d\.]+; (fp\du?)(?: b|\))/i],
@@ -549,7 +549,7 @@
         [/(kin\.[onetw]{3})/i],
         [
           [d, /\./g, " "],
-          [p, x],
+          [p, L],
           [_, E]
         ],
         [/droid.+; (cc6666?|et5[16]|mc[239][23]x?|vc8[03]x?)\)/i],
@@ -570,11 +570,11 @@
         ],
         [/(nux; netcast.+smarttv|lg (netcast\.tv-201\d|android tv))/i],
         [
-          [p, L],
+          [p, x],
           [_, y]
         ],
         [/(apple) ?tv/i],
-        [p, [d, T + " TV"],
+        [p, [d, S + " TV"],
           [_, y]
         ],
         [/crkey/i],
@@ -584,7 +584,7 @@
           [_, y]
         ],
         [/droid.+aft(\w+)( bui|\))/i],
-        [d, [p, S],
+        [d, [p, T],
           [_, y]
         ],
         [/\(dtv[\);].+(aquos)/i, /(aquos-tv[\w ]+)\)/i],
@@ -622,7 +622,7 @@
           [_, g]
         ],
         [/\b(xbox(?: one)?(?!; xbox))[\); ]/i],
-        [d, [p, x],
+        [d, [p, L],
           [_, g]
         ],
         [/\b(sm-[lr]\d\d[05][fnuw]?s?)\b/i],
@@ -632,7 +632,7 @@
         [/((pebble))app/i],
         [p, d, [_, O]],
         [/(watch)(?: ?os[,\/]|\d,\d\/)[\d\.]+/i],
-        [d, [p, T],
+        [d, [p, S],
           [_, O]
         ],
         [/droid.+; (glass) \d/i],
@@ -656,7 +656,7 @@
         [/(tesla)(?: qtcarbrowser|\/[-\w\.]+)/i],
         [p, [_, v]],
         [/(aeobc)\b/i],
-        [d, [p, S],
+        [d, [p, T],
           [_, v]
         ],
         [/droid .+?; ([^;]+?)(?: bui|; wv\)|\) applew).+? mobile safari/i],

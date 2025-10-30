@@ -54,7 +54,7 @@ function O(e) {
     hideText: O = false,
     hideTooltip: v = false,
     canTruncate: I = true
-  } = e, S = (0, a.e7)([f.Z], () => f.Z.getChannel(t.channelId)), T = (0, u.ZP)(S), {
+  } = e, T = (0, a.e7)([f.Z], () => f.Z.getChannel(t.channelId)), S = (0, u.ZP)(T), {
     analyticsLocations: A
   } = (0, l.ZP)(), C = i.useCallback(() => {
     (0, _.A)({
@@ -69,13 +69,13 @@ function O(e) {
     P = null != R ? N ? R : E.intl.format(E.t["0wJXSh"], {
       name: R
     }) : E.intl.string(E.t.eXan7B),
-    w = !v && null != S && null != T;
+    w = !v && null != T && null != S;
   return (0, r.jsxs)(r.Fragment, {
     children: [!y && (0, r.jsx)(p.Z, {
       icon: o.ARS,
-      tooltipText: w ? T : true,
+      tooltipText: w ? S : true,
       tooltipAriaLabel: w ? (0, c.ZP)({
-        channel: S
+        channel: T
       }) : true,
       className: b,
       onTooltipShow: w ? C : true
@@ -101,13 +101,13 @@ function v(e) {
     hideTooltip: h = false,
     canTruncate: g = true,
     showChannelName: b = false
-  } = e, y = (0, a.e7)([f.Z], () => f.Z.getChannel(t.channelId)), O = (0, u.ZP)(y), v = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name, I = (0, s.R)("formatActivityString"), S = null != v ? I ? v : E.intl.format(E.t["0wJXSh"], {
+  } = e, y = (0, a.e7)([f.Z], () => f.Z.getChannel(t.channelId)), O = (0, u.ZP)(y), v = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name, I = (0, s.R)("formatActivityString"), T = null != v ? I ? v : E.intl.format(E.t["0wJXSh"], {
     name: v
-  }) : E.intl.string(E.t.eXan7B), T = null != v ? I ? v : E.intl.formatToPlainString(E.t["0wJXSh"], {
+  }) : E.intl.string(E.t.eXan7B), S = null != v ? I ? v : E.intl.formatToPlainString(E.t["0wJXSh"], {
     name: v
   }) : E.intl.string(E.t.eXan7B), A = null != O ? (0, r.jsxs)(r.Fragment, {
-    children: [S, " (", O, ")"]
-  }) : S, C = b ? A : S, N = null != O ? "".concat(T, " (").concat(O, ")") : T;
+    children: [T, " (", O, ")"]
+  }) : T, C = b ? A : T, N = null != O ? "".concat(S, " (").concat(O, ")") : S;
   return (0, r.jsx)(m.Z, {
     icon: d ? true : (0, r.jsx)(p.Z, {
       icon: o.ARS,

@@ -40,9 +40,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk531421 = require("./531421.js"),
+  Chunk24864 = require("./24864.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk882741 = require("./882741.js");
+  Chunk330749 = require("./330749.js");
 let F = 0,
   V = 5e3;
 
@@ -73,17 +73,17 @@ function Y(e) {
 
 function W() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk882741.headerContainer,
+    className: Chunk330749.headerContainer,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/bold",
-      children: Chunk388032.intl.string(Chunk531421.default.AsmU85)
+      children: Chunk388032.intl.string(Chunk24864.default.AsmU85)
     }), (0, Chunk951288.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t["5AFxuK"]),
       children: (0, Chunk951288.jsx)(Chunk481060.SrA, {
         size: "custom",
         height: 20,
         width: 20,
-        colorClass: Chunk882741.nitroIcon
+        colorClass: Chunk330749.nitroIcon
       })
     }), (0, Chunk951288.jsx)(Y, {})]
   })
@@ -362,7 +362,7 @@ function et(e) {
   } = e, s = (0, y.m)(U.PremiumTypes.TIER_2), c = (null == (t = (0, g.oq)().metadata) ? true : t.from) === g.tE.SHARE_MESSAGE;
   (0, D.hf)(s, h.Z.CUSTOM_THEMES_EDITOR);
   let u = () => {
-      (0, D.Vb)(), (0, E.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == a ? true : a.from) === g.tE.SETTING ? ((0, S.openUserSettings)(I.n.APPEARANCE_PANEL, {
+      (0, D.Vb)(), (0, E.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == a ? true : a.from) === g.tE.SETTING ? ((0, T.openUserSettings)(I.n.APPEARANCE_PANEL, {
         section: k.oAB.APPEARANCE
       }), (0, g.Ll)()) : (null == a ? true : a.from) === g.tE.CLIENT_THEMES_EDITOR ? (0, g.XO)(g.wh.CLIENT_THEMES) : (0, g.Ll)()
     },
@@ -372,14 +372,14 @@ function et(e) {
   return (0, r.jsx)("div", {
     className: f,
     children: s ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(x.q, {}), (0, r.jsx)(d.zxk, {
+      children: [(0, r.jsx)(L.q, {}), (0, r.jsx)(d.zxk, {
         variant: "secondary",
         onClick: u,
         text: B.intl.string(B.t["13/7kX"])
       }), (0, r.jsx)($, {
         disabled: !i,
         onApply: () => {
-          c && T.default.track(k.rMx.CUSTOM_THEME_SHARE_APPLIED, {}), n()
+          c && S.default.track(k.rMx.CUSTOM_THEME_SHARE_APPLIED, {}), n()
         }
       })]
     }) : (0, r.jsxs)(r.Fragment, {
@@ -412,40 +412,40 @@ function en(e) {
     location: "ClientThemeColorPickerTools"
   }).enabled, b = w.y.useConfig({
     location: "CustomThemesEditorV2"
-  }).enabled, y = (0, N.jJ)(), I = (0, N.SK)(), S = i.useRef(false), {
-    colors: T,
+  }).enabled, y = (0, N.jJ)(), I = (0, N.SK)(), T = i.useRef(false), {
+    colors: S,
     chassisMixAmount: C,
-    gradientAngle: x,
+    gradientAngle: L,
     setColors: k,
     setChassisMixAmount: U,
     setGradientAngle: F
-  } = (0, A.Ig)(), [V, H] = i.useState(null != (t = T[0]) ? t : A.Dp), Y = (0, s.e7)([v.Z], () => v.Z.theme), W = (0, E.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
+  } = (0, A.Ig)(), [V, H] = i.useState(null != (t = S[0]) ? t : A.Dp), Y = (0, s.e7)([v.Z], () => v.Z.theme), W = (0, E.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
     analyticsLocations: z
   } = (0, m.ZP)(h.Z.CUSTOM_THEMES_EDITOR), q = (0, s.e7)([R.Z], () => R.Z.getSavedCustomTheme()), $ = async () => {
-    S.current = true, await (0, _.ZI)({
+    T.current = true, await (0, _.ZI)({
       theme: Y,
       customUserThemeSettings: {
-        colors: T,
+        colors: S,
         gradientColorStops: [],
-        gradientAngle: x,
+        gradientAngle: L,
         baseMix: C
       }
-    }), (0, D.u7)(T, C, x, Y, z), null == a || a(j.L.TAKE_ACTION), W || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
+    }), (0, D.u7)(S, C, L, Y, z), null == a || a(j.L.TAKE_ACTION), W || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
   }, en = () => {
     y(N._m.RESET_BUTTON), (0, D.uf)()
-  }, er = T.length > 0;
+  }, er = S.length > 0;
   return (i.useEffect(() => () => {
-    S.current || y(N._m.EDITOR_CLOSE)
+    T.current || y(N._m.EDITOR_CLOSE)
   }, [y]), (0, p.ZP)(() => {
     if (!o) {
       var e;
-      let t = (null != (e = null == T ? true : T.length) ? e : 0) > 0,
+      let t = (null != (e = null == S ? true : S.length) ? e : 0) > 0,
         n = null != q;
       !t && n && b ? (A.Ig.getState().setAll({
         colors: q.colors,
         gradientAngle: q.gradient_angle,
         chassisMixAmount: q.base_mix
-      }), (0, N.Bv)(q.base_theme)) : (0, N.lT)(T, V, k)
+      }), (0, N.Bv)(q.base_theme)) : (0, N.lT)(S, V, k)
     }
   }), u) ? (0, r.jsxs)("div", {
     className: c ? Z.mobileContainer : Z.container,
@@ -469,12 +469,12 @@ function en(e) {
             variant: "text-sm/semibold",
             color: "text-secondary",
             children: B.intl.string(G.default.uSL2Gy)
-          }), (0, r.jsx)(L.U, {
+          }), (0, r.jsx)(x.U, {
             onChange: e => {
-              H(e), 0 === T.length && (0, N.lT)(T, e, k)
+              H(e), 0 === S.length && (0, N.lT)(S, e, k)
             },
             value: V,
-            colors: T,
+            colors: S,
             setColors: k
           })]
         }), (0, r.jsxs)("div", {
@@ -483,13 +483,13 @@ function en(e) {
             variant: "text-sm/semibold",
             color: "text-secondary",
             children: B.intl.string(G.default.F1t0c8)
-          }), T.length > 1 && (0, r.jsx)(X, {
-            gradientAngle: x,
+          }), S.length > 1 && (0, r.jsx)(X, {
+            gradientAngle: L,
             setGradientAngle: F
           }), (0, r.jsx)(Q, {
             chassisMixAmount: C,
             setChassisMixAmount: e => {
-              U(e), 0 === T.length && (0, N.lT)(T, V, k)
+              U(e), 0 === S.length && (0, N.lT)(S, V, k)
             }
           })]
         }), (0, r.jsxs)("div", {

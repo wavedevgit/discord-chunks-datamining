@@ -69,13 +69,13 @@ let j = {
       appName: W,
       activity: K,
       embeddedActivity: z
-    } = (0, x.n)(y), {
+    } = (0, L.n)(y), {
       primaryColor: q,
       secondaryColor: X
     } = (0, R.Z)(null == V ? true : V.src), Q = (0, o.e7)([E.default], () => E.default.locale), {
       streamPreviewUrl: J,
       stream: $
-    } = (0, S.Z)(y), {
+    } = (0, T.Z)(y), {
       displayParticipants: ee,
       participant1: et,
       participant2: en,
@@ -95,7 +95,7 @@ let j = {
         applicationImageSrc: null == V ? true : V.src,
         avatarSrcs: ee.map(e => e.getAvatarURL(b.guild_id, 128)),
         description: t,
-        timestamp: (0, T.yh)(y, Q),
+        timestamp: (0, S.yh)(y, Q),
         colors: [q, X],
         channelId: e
       })
@@ -109,12 +109,12 @@ let j = {
       }),
       e_ = null == $ ? (0, r.jsx)(D.wG, {
         channel: b,
-        headerIcons: null == ea ? null : (0, r.jsx)(L.Z, {
+        headerIcons: null == ea ? null : (0, r.jsx)(x.Z, {
           onClick: es,
           Icon: ea,
           "aria-label": k.intl.string(k.t.YR4cHH)
         }),
-        userDescription: (0, T.kr)(y) ? k.t.vPg1JT : k.t.rPqqts,
+        userDescription: (0, S.kr)(y) ? k.t.vPg1JT : k.t.rPqqts,
         title: W,
         subtitle: Y,
         badges: ef,

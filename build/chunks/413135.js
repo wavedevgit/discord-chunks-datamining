@@ -156,17 +156,17 @@ function I(e, t, n, r, i) {
   else if (n < 0)
     if (!i) return false;
     else n = 0;
-  if ("string" == typeof t && (t = c.from(t, r)), c.isBuffer(t)) return 0 === t.length ? false : S(e, t, n, r, i);
+  if ("string" == typeof t && (t = c.from(t, r)), c.isBuffer(t)) return 0 === t.length ? false : T(e, t, n, r, i);
   if ("number" == typeof t) {
     if (t &= 255, "function" == typeof Uint8Array.prototype.indexOf)
       if (i) return Uint8Array.prototype.indexOf.call(e, t, n);
       else return Uint8Array.prototype.lastIndexOf.call(e, t, n);
-    return S(e, [t], n, r, i)
+    return T(e, [t], n, r, i)
   }
   throw TypeError("val must be string, number or Buffer")
 }
 
-function S(e, t, n, r, i) {
+function T(e, t, n, r, i) {
   var a, o = 1,
     s = e.length,
     l = t.length;
@@ -195,7 +195,7 @@ function S(e, t, n, r, i) {
   return false
 }
 
-function T(e, t, n, r) {
+function S(e, t, n, r) {
   n = Number(n) || 0;
   var i = e.length - n;
   r ? (r = Number(r)) > i && (r = i) : r = i;
@@ -254,7 +254,7 @@ function D(e, t, n) {
     }
     null === u ? (u = 65533, d = 1) : u > 65535 && (u -= 65536, r.push(u >>> 10 & 1023 | 55296), u = 56320 | 1023 & u), r.push(u), i += d
   }
-  return x(r)
+  return L(r)
 }
 r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
   try {
@@ -379,7 +379,7 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
   r || (r = "utf8");
   for (var a = false;;) switch (r) {
     case "hex":
-      return T(this, e, t, n);
+      return S(this, e, t, n);
     case "utf8":
     case "utf-8":
       return A(this, e, t, n);
@@ -405,12 +405,12 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
     data: Array.prototype.slice.call(this._arr || this, 0)
   }
 };
-var L = 4096;
+var x = 4096;
 
-function x(e) {
+function L(e) {
   var t = e.length;
-  if (t <= L) return String.fromCharCode.apply(String, e);
-  for (var n = "", r = 0; r < t;) n += String.fromCharCode.apply(String, e.slice(r, r += L));
+  if (t <= x) return String.fromCharCode.apply(String, e);
+  for (var n = "", r = 0; r < t;) n += String.fromCharCode.apply(String, e.slice(r, r += x));
   return n
 }
 

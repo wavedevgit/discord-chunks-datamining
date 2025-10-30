@@ -8,11 +8,11 @@ require.d(exports, {
   Dx: () => N,
   R: () => k,
   TB: () => w,
-  XE: () => x,
+  XE: () => L,
   hs: () => D,
   w: () => C,
   xR: () => M,
-  xU: () => L,
+  xU: () => x,
   xz: () => j
 }), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
@@ -70,14 +70,14 @@ let y = false,
       o.Z.unsubscribe(e, n), setTimeout(t, 0)
     };
     o.Z.subscribe(e, n)
-  }), S = () => {
+  }), T = () => {
     if (!Chunk763296.Z.shouldFetchDefaultSounds()) return Promise.resolve();
     Chunk570140.Z.dispatch({
       type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS"
     });
     let e = I("SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS");
     return (0, Chunk771784.sI)("maybeFetchDefaultSounds") && v(), O(), module
-  }, T = () => {
+  }, S = () => {
     let e = (0, Chunk174470.D)();
     if (0 === module.length) return Promise.resolve();
     let t = I("SOUNDBOARD_SOUNDS_RECEIVED");
@@ -101,7 +101,7 @@ let y = false,
     let e = performance.now(),
       t = !y;
     y = true;
-    let n = await Promise.all([S(), T(), A()]);
+    let n = await Promise.all([T(), S(), A()]);
     if (exports) {
       let t = performance.now() - module;
       Chunk626135.default.track(Chunk981631.rMx.EXPRESSION_PICKER_SOUNDBOARD_SOUNDS_LOADED, {
@@ -173,7 +173,7 @@ function D(e) {
     t.soundIds = t.soundIds.filter(t => t !== e)
   }, E.fy.INFREQUENT_USER_ACTION)
 }
-async function L(e, t) {
+async function x(e, t) {
   try {
     let n = await a.tn.get({
       url: g.ANM.SOUNDBOARD_SOUND_GUILD_DATA(e, t),
@@ -185,7 +185,7 @@ async function L(e, t) {
   }
 }
 
-function x(e, t, n) {
+function L(e, t, n) {
   o.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY",
     sound: t,

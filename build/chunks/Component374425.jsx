@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk217588 = require("./217588.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk205844 = require("./205844.js");
+  Chunk614115 = require("./614115.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,8 +60,8 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
-  T = e => {
+let T = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
+  S = e => {
     null != e && c.ZP.trackWithMetadata(g.rMx.EXPRESSION_TOOLTIP_VIEWED, {
       type: E.cd.STICKER_IN_MESSAGE_HOVER,
       expression_id: e.id,
@@ -109,7 +109,7 @@ let S = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
             __unsupportedReactNodeAsText: (0, d.Y)(A),
             "aria-label": false,
             onTooltipShow: () => {
-              T(y)
+              S(y)
             },
             children: (0, r.jsx)(s.P3F, {
               innerRef: c,
@@ -120,7 +120,7 @@ let S = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
               tag: "span",
               children: (0, r.jsx)(h.Z, {
                 isInteracting: o,
-                size: S,
+                size: T,
                 sticker: null != y ? y : t
               })
             })

@@ -44,15 +44,15 @@ function _(e) {
     O = true === y ? 0 : y,
     v = p.y,
     I = true === v ? 0 : v,
-    S = "function" == typeof E ? E({
+    T = "function" == typeof E ? E({
       x: O,
       y: I
     }) : {
       x: O,
       y: I
     };
-  O = S.x, I = S.y;
-  var T = p.hasOwnProperty("x"),
+  O = T.x, I = T.y;
+  var S = p.hasOwnProperty("x"),
     A = p.hasOwnProperty("y"),
     C = r.t$,
     N = r.we,
@@ -63,17 +63,17 @@ function _(e) {
       D = "clientWidth";
     P === (0, a.Z)(l) && (P = (0, o.Z)(l), "static" !== (0, s.Z)(P).position && "absolute" === h && (w = "scrollHeight", D = "scrollWidth")), (u === r.we || (u === r.t$ || u === r.F2) && _ === r.ut) && (N = r.I, I -= (b && P === R && R.visualViewport ? R.visualViewport.height : P[w]) - c.height, I *= m ? 1 : false), (u === r.t$ || (u === r.we || u === r.I) && _ === r.ut) && (C = r.F2, O -= (b && P === R && R.visualViewport ? R.visualViewport.width : P[D]) - c.width, O *= m ? 1 : false)
   }
-  var L = Object.assign({
+  var x = Object.assign({
       position: h
     }, g && d),
-    x = true === E ? f({
+    L = true === E ? f({
       x: O,
       y: I
     }, (0, a.Z)(l)) : {
       x: O,
       y: I
     };
-  return (O = x.x, I = x.y, m) ? Object.assign({}, L, ((n = {})[N] = A ? "0" : "", n[C] = T ? "0" : "", n.transform = 1 >= (R.devicePixelRatio || 1) ? "translate(" + O + "px, " + I + "px)" : "translate3d(" + O + "px, " + I + "px, 0)", n)) : Object.assign({}, L, ((t = {})[N] = A ? I + "px" : "", t[C] = T ? O + "px" : "", t.transform = "", t))
+  return (O = L.x, I = L.y, m) ? Object.assign({}, x, ((n = {})[N] = A ? "0" : "", n[C] = S ? "0" : "", n.transform = 1 >= (R.devicePixelRatio || 1) ? "translate(" + O + "px, " + I + "px)" : "translate3d(" + O + "px, " + I + "px, 0)", n)) : Object.assign({}, x, ((t = {})[N] = A ? I + "px" : "", t[C] = S ? O + "px" : "", t.transform = "", t))
 }
 let p = {
   name: "computeStyles",

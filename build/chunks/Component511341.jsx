@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk396579 = require("./396579.js");
+  Chunk938365 = require("./938365.js");
 let O = e => {
   let {
     emoji: t,
@@ -61,9 +61,9 @@ function v(e) {
     sourceDetails: b,
     setPopoutRef: v,
     onAction: I,
-    onClose: S
+    onClose: T
   } = e, {
-    resetInteraction: T,
+    resetInteraction: S,
     setInteractionToast: A
   } = (0, f.Xo)(), {
     theme: C
@@ -72,12 +72,12 @@ function v(e) {
     null == v || v(null == P ? true : P.current)
   }, [P, v]), i.useEffect(() => {
     let e = e => {
-      e.key === E.vn.ESCAPE && (e.stopPropagation(), T())
+      e.key === E.vn.ESCAPE && (e.stopPropagation(), S())
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
     }
-  }, [S, T]);
+  }, [T, S]);
   let w = async e => {
     if (null == e) return;
     _ === h.n_.AVATAR ? I({
@@ -115,7 +115,7 @@ function v(e) {
         emoji: t,
         willClose: n
       } = e;
-      await w(t), n && (T(), null == S || S())
+      await w(t), n && (S(), null == T || T())
     },
     pickerIntention: m.Hz.PROFILE
   })

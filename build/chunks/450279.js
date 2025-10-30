@@ -169,14 +169,14 @@ function u(e, t, n, i, o) {
       }))
     }
   }
-  let S = "firefox" === (null != (_ = platform.name) ? _ : "unknown").toLowerCase() && 142 === parseInt(null != (p = platform.version) ? p : "", 10),
-    T = (null != (h = O.currentRoundTripTime) ? h : 0) * (S ? 1 : 1e3);
+  let T = "firefox" === (null != (_ = platform.name) ? _ : "unknown").toLowerCase() && 142 === parseInt(null != (p = platform.version) ? p : "", 10),
+    S = (null != (h = O.currentRoundTripTime) ? h : 0) * (T ? 1 : 1e3);
   return {
     transport: {
       availableOutgoingBitrate: null != (m = O.availableOutgoingBitrate) ? m : 0,
       bytesReceived: O.bytesReceived,
       bytesSent: O.bytesSent,
-      ping: T
+      ping: S
     },
     rtp: {
       inbound: I,

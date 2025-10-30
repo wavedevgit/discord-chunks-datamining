@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk636235 = require("./636235.js");
+  Chunk432073 = require("./432073.js");
 
 function v(e) {
   let {
@@ -33,7 +33,7 @@ function v(e) {
     themeType: v
   } = (0, m.z)(), {
     analyticsLocations: I
-  } = (0, c.ZP)(), S = (0, p.W)(t), T = (0, u.ZP)(t, true), A = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), C = i.useMemo(() => null == A || "" === A ? null : _.Z.parseVoiceChannelStatus(A, true, {
+  } = (0, c.ZP)(), T = (0, p.W)(t), S = (0, u.ZP)(t, true), A = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), C = i.useMemo(() => null == A || "" === A ? null : _.Z.parseVoiceChannelStatus(A, true, {
     channelId: t.id
   }), [A, t.id]);
   i.useEffect(() => {
@@ -51,7 +51,7 @@ function v(e) {
       sourceAnalyticsLocations: I
     })
   };
-  return T && S ? (0, r.jsxs)(l.P3F, {
+  return S && T ? (0, r.jsxs)(l.P3F, {
     className: O.clickable,
     onClick: N,
     children: [(0, r.jsx)(g.Z, {

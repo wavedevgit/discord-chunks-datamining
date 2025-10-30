@@ -58,10 +58,10 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk975900 = require("./975900.js"),
-  Chunk127947 = require("./127947.js"),
-  Chunk893973 = require("./893973.js"),
-  Chunk827610 = require("./827610.js");
+  Chunk702417 = require("./702417.js"),
+  Chunk487111 = require("./487111.js"),
+  Chunk639543 = require("./639543.js"),
+  Chunk430534 = require("./430534.js");
 
 function ea(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -108,7 +108,7 @@ let ec = 12,
   e_ = 750;
 
 function ep(e, t, n) {
-  (0, h.h7j)(e => (0, i.jsx)(x.default, el(eo({}, e), {
+  (0, h.h7j)(e => (0, i.jsx)(L.default, el(eo({}, e), {
     message: t,
     selectedReaction: n
   })))
@@ -156,8 +156,8 @@ class em extends(r = Chunk647438.PureComponent) {
         useChatFontScaling: y,
         message: v,
         hideEmoji: I,
-        animationStartPosition: S,
-        emojiSize: T
+        animationStartPosition: T,
+        emojiSize: S
       } = this.props,
       {
         shouldShowTooltip: A,
@@ -165,14 +165,14 @@ class em extends(r = Chunk647438.PureComponent) {
         reactionRef: N,
         tooltipPositionKey: P
       } = this.state,
-      w = Chunk436774 ? Chunk893973 : Chunk127947,
+      w = Chunk436774 ? Chunk639543 : Chunk487111,
       D = {
         transform: [{
           scale: this.scale
         }],
         opacity: this.opacity
       },
-      x = Chunk120356 ? r : require;
+      L = Chunk120356 ? r : require;
     if (Chunk120356 && null != Chunk647438) {
       var M;
       let {
@@ -216,7 +216,7 @@ class em extends(r = Chunk647438.PureComponent) {
               className: w.reactionInner,
               onClick: this.handleClick,
               "aria-disabled": u,
-              "aria-label": (0, L.iD)(this.isMe(), x, c, o),
+              "aria-label": (0, x.iD)(this.isMe(), L, c, o),
               "aria-pressed": this.isMe(),
               children: [(0, i.jsx)("div", {
                 className: s()({
@@ -230,7 +230,7 @@ class em extends(r = Chunk647438.PureComponent) {
                   children: [j && (0, i.jsx)(O.Z, {
                     messageId: v.id,
                     emoji: c,
-                    startPosition: S,
+                    startPosition: T,
                     targetPosition: k
                   }), U && (0, i.jsx)(Q.Z, {
                     count: r,
@@ -247,16 +247,16 @@ class em extends(r = Chunk647438.PureComponent) {
                   }),
                   emojiId: c.id,
                   emojiName: c.name,
-                  size: T,
+                  size: S,
                   animated: c.animated
                 })]
               }), l ? null : (0, i.jsx)(E.Z, {
                 className: w.reactionCount,
-                value: x,
+                value: L,
                 color: e,
                 digitWidth: ec
               }), (0, i.jsx)(R.Z, {
-                count: x,
+                count: L,
                 reactionRef: N
               })]
             }))
@@ -299,7 +299,7 @@ class em extends(r = Chunk647438.PureComponent) {
         analytics: {
           type: $.cd.BURST_REACTION_UPSELL,
           page: (null == c ? true : c.getGuildId()) != null ? J.ZY5.GUILD_CHANNEL : J.ZY5.DM_CHANNEL,
-          section: null != c ? (0, L.s4)(c) : true,
+          section: null != c ? (0, x.s4)(c) : true,
           object: J.qAy.EMOJI_REACTION_UPSELL
         }
       });
@@ -520,7 +520,7 @@ class em extends(r = Chunk647438.PureComponent) {
         type: $.cd.BURST_REACTION_UPSELL,
         location: {
           page: (null == i ? true : i.getGuildId()) != null ? J.ZY5.GUILD_CHANNEL : J.ZY5.DM_CHANNEL,
-          section: (0, L.s4)(i),
+          section: (0, x.s4)(i),
           object: J.qAy.EMOJI_REACTION_TOOLTIP_UPSELL
         }
       })
@@ -536,7 +536,7 @@ let eg = Chunk647438.memo(e => {
       burst_colors: n,
       message: r,
       emoji: a
-    } = e, o = t === Y.O.BURST, s = (0, S.v)(o && null != n ? n : []), l = (0, _.e7)([H.Z], () => true !== H.Z.getEffectForEmojiId(r.getChannelId(), r.id, a)), c = (0, _.e7)([g.Z], () => g.Z.useReducedMotion), u = M.Yk.useSetting(), d = B.default.getCurrentUser(), f = (0, V.I5)(d), p = (0, _.e7)([H.Z], () => H.Z.getReactionPickerAnimation(r.id, a.name, a.id)), h = o && (l || null != p);
+    } = e, o = t === Y.O.BURST, s = (0, T.v)(o && null != n ? n : []), l = (0, _.e7)([H.Z], () => true !== H.Z.getEffectForEmojiId(r.getChannelId(), r.id, a)), c = (0, _.e7)([g.Z], () => g.Z.useReducedMotion), u = M.Yk.useSetting(), d = B.default.getCurrentUser(), f = (0, V.I5)(d), p = (0, _.e7)([H.Z], () => H.Z.getReactionPickerAnimation(r.id, a.name, a.id)), h = o && (l || null != p);
     return (0, i.jsx)(em, el(eo({}, e), {
       colors: s,
       isBurstReaction: o,
@@ -605,7 +605,7 @@ let eg = Chunk647438.memo(e => {
       return {
         joinedEmojiSourceGuild: (null == e ? true : e.type) === I.B.GUILD ? j.Z.getGuild(null == e ? true : e.guildId) : true
       }
-    }), [u, d] = a.useState(true), [f, p] = a.useState(true), [m, g] = a.useState(null), [E, b] = a.useState(false), [y, O] = a.useState(false), [S, A] = a.useState(false), C = null != c, N = null != (t = null == u ? true : u.isDiscoverable()) && t, R = G.Z.getGuildId(), P = null != R && (R === (null == u ? true : u.id) || R === (null == c ? true : c.id)), w = B.default.getCurrentUser(), D = (0, W.a)({
+    }), [u, d] = a.useState(true), [f, p] = a.useState(true), [m, g] = a.useState(null), [E, b] = a.useState(false), [y, O] = a.useState(false), [T, A] = a.useState(false), C = null != c, N = null != (t = null == u ? true : u.isDiscoverable()) && t, R = G.Z.getGuildId(), P = null != R && (R === (null == u ? true : u.id) || R === (null == c ? true : c.id)), w = B.default.getCurrentUser(), D = (0, W.a)({
       sourceType: m,
       expressionSourceApplication: null != f ? f : null,
       isPremium: V.ZP.isPremium(w),
@@ -618,26 +618,26 @@ let eg = Chunk647438.memo(e => {
       shouldHideRoleSubscriptionCTA: false
     });
     if (a.useEffect(() => {
-        E && !S && (async () => {
+        E && !T && (async () => {
           r(), O(true);
-          let e = null != n ? await (0, T.Fi)(n) : null;
+          let e = null != n ? await (0, S.Fi)(n) : null;
           if (null != e) switch (g(e.type), e.type) {
-            case T.w6.APPLICATION:
+            case S.w6.APPLICATION:
               p(e.application);
               break;
-            case T.w6.GUILD:
+            case S.w6.GUILD:
               d(e.guild)
           } else d(null);
           O(false), A(true), r()
         })()
-      }, [n, E, S, r]), C) return null;
-    let L = () => {
+      }, [n, E, T, r]), C) return null;
+    let x = () => {
         b(!E)
       },
-      x = () => {
+      L = () => {
         let e = ee.intl.string(ee.t["Igv+LS"]);
         return (0, i.jsxs)(h.P3F, {
-          onClick: L,
+          onClick: x,
           className: et.reactionEmojiDetailsClickable,
           children: [(0, i.jsx)(h.Text, {
             variant: "text-sm/normal",
@@ -664,7 +664,7 @@ let eg = Chunk647438.memo(e => {
         })]
       });
     return (0, i.jsxs)("div", {
-      children: [M ? k() : x(), y ? (0, i.jsx)(z.SE, {
+      children: [M ? k() : L(), y ? (0, i.jsx)(z.SE, {
         className: et.emojiDetailsLoader
       }) : M && (0, i.jsx)(eE, {
         emojiId: n,

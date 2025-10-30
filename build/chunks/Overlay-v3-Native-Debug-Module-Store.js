@@ -33,11 +33,11 @@ let g = new Chunk579092.Yd("OverlayV3NativeClickZoneStore"),
   v = {},
   I = false;
 
-function S(e) {
+function T(e) {
   return !a()(e, y)
 }
 
-function T(e) {
+function S(e) {
   let t = setTimeout(() => {
     R(t)
   }, E);
@@ -59,8 +59,8 @@ function A(e, t) {
   if (null == b) return void g.error("Overlay module not found");
   let r = null != (n = null == b ? true : b.getLastAssociatedPID()) ? n : u.UNSET_PID;
   try {
-    let n = T(e);
-    S(e) && (0, d.bs)(r, "capture_zones_set", {
+    let n = S(e);
+    T(e) && (0, d.bs)(r, "capture_zones_set", {
       source: t,
       capture_zones: n,
       rawZones: e
@@ -103,11 +103,11 @@ function D() {
   0 !== y.length && (O = [...y], y = [], A([], "store_click_zones"))
 }
 
-function L() {
+function x() {
   y.length > 0 || A(y = [...O], "refresh_click_zones")
 }
 
-function x(e, t, n, r) {
+function L(e, t, n, r) {
   let i = c.Z.getWindow(h.$J);
   if (null == i) return;
   let a = Math.ceil(n * i.innerWidth),
@@ -140,7 +140,7 @@ function j() {
 }
 
 function U() {
-  return null == (b = Chunk509140.Z.getNativeModule()) || !!I || (I = true, b.setCaptureZoneCallback(x), true)
+  return null == (b = Chunk509140.Z.getNativeModule()) || !!I || (I = true, b.setCaptureZoneCallback(L), true)
 }
 
 function G() {
@@ -151,7 +151,7 @@ function B(e) {
   let {
     pid: t
   } = e;
-  return 0 === t ? D() : L(), true
+  return 0 === t ? D() : x(), true
 }
 class Z extends(r = Chunk442837.ZP.Store) {
   initialize() {

@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk358085 = require("./358085.js"),
   Chunk288406 = require("./288406.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk999642 = require("./999642.js");
+  Chunk39162 = require("./39162.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -95,7 +95,7 @@ let R = (e, t) => "".concat(e, ":").concat(t),
       rowIndex: m,
       size: b,
       surrogateCodePoint: I,
-      allowAnimatedEmoji: T,
+      allowAnimatedEmoji: S,
       selectedItemClassName: N,
       inNitroLockedSection: R
     } = e, P = C(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
@@ -109,9 +109,9 @@ let R = (e, t) => "".concat(e, ":").concat(t),
           names: e
         }) : e
       },
-      L = d && !R;
+      x = d && !R;
     return (0, r.jsx)(l.tEY, {
-      children: (0, r.jsx)("button", A(S({}, P), {
+      children: (0, r.jsx)("button", A(T({}, P), {
         className: o()(v.emojiItem, {
           [v.emojiItemLarge]: a,
           [v.emojiItemMedium]: c,
@@ -132,8 +132,8 @@ let R = (e, t) => "".concat(e, ":").concat(t),
           emoji: n,
           size: b,
           surrogateCodePoint: I,
-          allowAnimatedEmoji: T,
-          isLocked: L
+          allowAnimatedEmoji: S,
+          isLocked: x
         })
       }))
     })
@@ -151,12 +151,12 @@ function w(e) {
     isScrolling: y,
     isUsingKeyboardNavigation: v,
     showEmojiFavoriteTooltip: I,
-    surrogateCodePoint: T,
+    surrogateCodePoint: S,
     selectedItemClassName: N,
     getEmojiItemProps: w,
     isMediumSize: D,
-    isLargeSize: L,
-    pulseItemKey: x,
+    isLargeSize: x,
+    pulseItemKey: L,
     allowAnimatedEmoji: M,
     setPulseItemKey: k,
     messageId: j,
@@ -182,7 +182,7 @@ function w(e) {
       let {
         default: e
       } = await n.e("39010").then(n.bind(n, 269254));
-      return t => (0, r.jsx)(e, S({}, t))
+      return t => (0, r.jsx)(e, T({}, t))
     })
   }, $ = function() {
     var e;
@@ -194,18 +194,18 @@ function w(e) {
       tabIndex: c,
       onFocus: u
     } = s, d = C(s, ["ref", "tabIndex", "onFocus"]);
-    return (0, i.createElement)("li", A(S({}, d), {
+    return (0, i.createElement)("li", A(T({}, d), {
       key: a,
       ref: Y
     }), Z !== R(q, f) && (0, r.jsx)(P, {
       ref: l,
       emoji: W,
       isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(W),
-      isLargeSize: L,
+      isLargeSize: x,
       isMediumSize: D,
       isInspected: o,
       isDisabled: z,
-      showPulse: x === a,
+      showPulse: L === a,
       allowAnimatedEmoji: M,
       onFocus: null != u ? u : Q,
       onMouseMove: Q,
@@ -224,7 +224,7 @@ function w(e) {
       columnIndex: q,
       rowIndex: f,
       size: K,
-      surrogateCodePoint: T,
+      surrogateCodePoint: S,
       selectedItemClassName: N,
       inNitroLockedSection: B
     }))

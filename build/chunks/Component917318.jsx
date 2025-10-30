@@ -13,16 +13,16 @@ var Chunk275726 = require("./275726.js"),
   Chunk942951 = require("./942951.jsx"),
   Chunk834129 = require("./834129.jsx"),
   Chunk594174 = require("./594174.js"),
-  Chunk43617 = require("./43617.js"),
+  Chunk68468 = require("./68468.js"),
   Chunk388032 = require("./388032.jsx");
 let _ = {
-    [Chunk275726.u.REPORT_TO_MOD_BAN_USER]: () => Chunk43617.default.komFTv,
-    [Chunk275726.u.REPORT_TO_MOD_KICK_USER]: () => Chunk43617.default.FAJmJV,
-    [Chunk275726.u.REPORT_TO_MOD_TIMEOUT_USER]: () => Chunk43617.default["90r/sR"]
+    [Chunk275726.u.REPORT_TO_MOD_BAN_USER]: () => Chunk68468.default.komFTv,
+    [Chunk275726.u.REPORT_TO_MOD_KICK_USER]: () => Chunk68468.default.FAJmJV,
+    [Chunk275726.u.REPORT_TO_MOD_TIMEOUT_USER]: () => Chunk68468.default["90r/sR"]
   },
   p = {
-    [Chunk275726.u.REPORT_TO_MOD_DELETED_MESSAGE]: () => Chunk43617.default["4023i8"],
-    [Chunk275726.u.REPORT_TO_MOD_CLOSED_REPORT]: () => Chunk43617.default.UE81zV
+    [Chunk275726.u.REPORT_TO_MOD_DELETED_MESSAGE]: () => Chunk68468.default["4023i8"],
+    [Chunk275726.u.REPORT_TO_MOD_CLOSED_REPORT]: () => Chunk68468.default.UE81zV
   };
 
 function h(e) {
@@ -71,9 +71,9 @@ function m(e) {
     channelId: E,
     guildId: i.guild_id,
     messageId: n.id
-  })(v), S = null != (t = _[m]) ? t : null;
-  if (null == S) return null;
-  let T = f.intl.format(S(), {
+  })(v), T = null != (t = _[m]) ? t : null;
+  if (null == T) return null;
+  let S = f.intl.format(T(), {
     actorName: g.nick,
     actorHook: O,
     targetName: null == v ? true : v.nick,
@@ -85,7 +85,7 @@ function m(e) {
     }),
     timestamp: n.timestamp,
     compact: o,
-    children: T
+    children: S
   })
 }
 

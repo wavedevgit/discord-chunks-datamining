@@ -2,7 +2,7 @@
 /** chunk id: 680295, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T,
+  Z: () => S,
   n: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk142145 = require("./142145.jsx"),
   Chunk710867 = require("./710867.jsx"),
   Chunk312904 = require("./312904.js"),
-  Chunk107225 = require("./107225.js");
+  Chunk341225 = require("./341225.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,13 +58,13 @@ let I = e => {
       profileEffectConfig: E,
       noBorderRadius: O = false,
       introDelay: v = f.lG
-    } = e, I = i.useRef(null), [S, T] = i.useState([]);
+    } = e, I = i.useRef(null), [T, S] = i.useState([]);
     (0, b.Z)(E);
     let [A, C] = i.useState(0), [N, R] = i.useState(0), {
       accessibilityLabel: P
     } = E, [w, D] = i.useState(-v), {
-      stop: L,
-      reset: x,
+      stop: x,
+      reset: L,
       ticking: M
     } = (0, p.Z)(e => {
       D(t => t + e)
@@ -72,19 +72,19 @@ let I = e => {
     i.useEffect(() => {
       k.current = v
     }), i.useEffect(() => {
-      D(-k.current), T((0, m.H)(E.effects))
+      D(-k.current), S((0, m.H)(E.effects))
     }, [E]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
-      S.forEach(n => {
+      T.forEach(n => {
         let r = n.start + n.duration;
         r > e && (e = r), n.loop && n.start < t && (t = n.start)
       }), C(t), R(e)
-    }, [R, S]);
+    }, [R, T]);
     let [j, U] = i.useState(false);
     return i.useEffect(() => {
-      true === u || l || (L(), D(0)), !l && j && M.current && (L(), D(0)), a && l && !M.current && (x(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? D(d === _.Q.FromStart ? 0 : A) : D(0))
-    }, [l, j, A, a, L, x, M, E.animationType, u, d]), (0, r.jsx)("div", {
+      true === u || l || (x(), D(0)), !l && j && M.current && (x(), D(0)), a && l && !M.current && (L(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? D(d === _.Q.FromStart ? 0 : A) : D(0))
+    }, [l, j, A, a, x, L, M, E.animationType, u, d]), (0, r.jsx)("div", {
       ref: I,
       className: o()(y.profileEffects, {
         [y.hovered]: l && c
@@ -93,7 +93,7 @@ let I = e => {
       role: "img",
       children: (0, r.jsx)("div", {
         className: O ? y.innerNoRadius : y.inner,
-        children: S.map((e, i) => {
+        children: T.map((e, i) => {
           if (!M.current && E.animationType === s.y.ANIMATION_TYPE_PERSISTENT && null != E.staticFrameSrc && 0 === i && true === u) {
             var a, o, l, c;
             let {
@@ -126,7 +126,7 @@ let I = e => {
       })
     })
   },
-  S = e => {
+  T = e => {
     let {
       config: t,
       useThumbnail: n,
@@ -159,7 +159,7 @@ let I = e => {
       })
     })
   },
-  T = e => {
+  S = e => {
     let t = (0, d.n)(),
       n = (0, l.e7)([c.Z], () => c.Z.useReducedMotion),
       [a, o] = i.useState(false),
@@ -167,7 +167,7 @@ let I = e => {
       _ = (0, u.ex)(null == f ? true : f.config),
       p = (0, m.C)(null == f ? true : f.config),
       g = null != _ ? _ : p;
-    return null != f && null != g && (t || e.shopPreview || f.config.animationType !== s.y.ANIMATION_TYPE_INTERMITTENT) ? !t && e.shopPreview || !t && f.config.animationType === s.y.ANIMATION_TYPE_PERSISTENT || n || false === e.autoPlay && false === e.isHovering ? (0, r.jsx)(S, {
+    return null != f && null != g && (t || e.shopPreview || f.config.animationType !== s.y.ANIMATION_TYPE_INTERMITTENT) ? !t && e.shopPreview || !t && f.config.animationType === s.y.ANIMATION_TYPE_PERSISTENT || n || false === e.autoPlay && false === e.isHovering ? (0, r.jsx)(T, {
       useThumbnail: e.useThumbnail,
       config: g,
       bannerAdjustment: e.bannerAdjustment,

@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk237872 = require("./237872.jsx"),
   Chunk562618 = require("./562618.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk254477 = require("./254477.js");
+  Chunk929618 = require("./929618.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,8 +83,8 @@ function O(e) {
       },
       size: v = "md",
       onStepChange: I,
-      onRequestClose: S,
-      popoverRef: T,
+      onRequestClose: T,
+      popoverRef: S,
       shouldShow: A
     } = e,
     C = b(e, ["steps", "caretConfig", "size", "onStepChange", "onRequestClose", "popoverRef", "shouldShow"]);
@@ -98,14 +98,14 @@ function O(e) {
     w = N + 1 === y.length,
     D = i.useCallback(() => {
       var e;
-      null == P || null == (e = P.onCta) || e.call(P), w ? null == S || S() : R(e => e + 1)
-    }, [P, w, S]),
-    L = i.useCallback(() => {
-      null == S || S()
-    }, [S]),
+      null == P || null == (e = P.onCta) || e.call(P), w ? null == T || T() : R(e => e + 1)
+    }, [P, w, T]),
     x = i.useCallback(() => {
-      null == S || S()
-    }, [S]);
+      null == T || T()
+    }, [T]),
+    L = i.useCallback(() => {
+      null == T || T()
+    }, [T]);
   if (!A || null == P) return null;
   let M = m({
     text: null != (a = null == (t = P.action) ? true : t.text) ? a : w ? _.intl.string(_.t.i4jeWR) : _.intl.string(_.t.PDTjLN),
@@ -114,12 +114,12 @@ function O(e) {
   }, P.action);
   return (0, r.jsx)(c.m, E(m({}, C), {
     shouldShow: A,
-    onRequestClose: L,
+    onRequestClose: x,
     gradientColor: P.gradientColor,
     children: (0, r.jsxs)("div", {
-      ref: T,
+      ref: S,
       children: [(0, r.jsx)(d.u, {
-        onClick: x,
+        onClick: L,
         variant: null != P.gradientColor ? "color-mix" : true
       }), null != P.graphic && (0, r.jsx)("div", {
         className: o()(p.graphic, {

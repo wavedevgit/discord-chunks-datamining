@@ -114,7 +114,7 @@ function I(e) {
   return null != a && a.length > 0 && a.forEach(e => s.delete(e)), i ? s.add(r) : s.delete(r), o.onboardingResponses = s, true
 }
 
-function S(e) {
+function T(e) {
   let {
     guildId: t,
     roles: n,
@@ -127,7 +127,7 @@ function S(e) {
     return null != r && (e[n] = r), e
   }, {})), null != r && i.type === d.z.NEW_MEMBER && (i.memberOptions.flags = r), true)
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk485386.Z)
   }
@@ -200,12 +200,12 @@ class T extends(r = Chunk442837.ZP.Store) {
     }
   }
 }
-p(T, "displayName", "ImpersonateStore");
-let A = new T(Chunk570140.Z, {
+p(S, "displayName", "ImpersonateStore");
+let A = new S(Chunk570140.Z, {
   IMPERSONATE_UPDATE: b,
   IMPERSONATE_STOP: y,
   GUILD_ROLE_DELETE: O,
   USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: v,
   GUILD_ONBOARDING_SELECT_OPTION: I,
-  GUILD_MEMBER_UPDATE_LOCAL: S
+  GUILD_MEMBER_UPDATE_LOCAL: T
 })

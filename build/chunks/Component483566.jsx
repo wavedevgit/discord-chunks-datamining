@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk22202 = require("./22202.jsx"),
   Chunk777207 = require("./777207.jsx"),
   Chunk590154 = require("./590154.js"),
-  Chunk877222 = require("./877222.js");
+  Chunk545150 = require("./545150.js");
 
 function _(e, t) {
   if (null == e) return {};
@@ -107,15 +107,15 @@ function g(e) {
     badge: O,
     icon: v = null,
     interactiveLabel: I = false,
-    ref: S
-  } = e, T = h(e), {
+    ref: T
+  } = e, S = h(e), {
     labelId: A,
     controlId: C,
     errorMessageId: N,
     describedById: R,
     helperTextId: P,
     descriptionId: w
-  } = T, D = "group" === b || "radiogroup" === b, L = D ? "span" : "label", x = D ? "fieldset" : "div", M = D ? (0, r.jsx)("legend", {
+  } = S, D = "group" === b || "radiogroup" === b, x = D ? "span" : "label", L = D ? "fieldset" : "div", M = D ? (0, r.jsx)("legend", {
     id: A,
     children: (0, r.jsx)(s.n, {
       children: t
@@ -124,7 +124,7 @@ function g(e) {
     "aria-hidden": D,
     "data-interactive": I,
     id: A,
-    tag: L,
+    tag: x,
     variant: "text-md/medium",
     color: "text-primary",
     htmlFor: C,
@@ -147,10 +147,10 @@ function g(e) {
     }) : null]
   }) : null;
   return (0, r.jsx)(d.z.Provider, {
-    value: T,
-    children: (0, r.jsxs)(x, {
+    value: S,
+    children: (0, r.jsxs)(L, {
       role: b,
-      ref: S,
+      ref: T,
       className: f.container,
       "data-layout": y,
       "data-disabled": a,
@@ -169,7 +169,7 @@ function g(e) {
         })]
       }) : null, (0, r.jsxs)("div", {
         className: f.control,
-        children: ["function" == typeof _ ? _(T) : _, (0, r.jsx)(E, {
+        children: ["function" == typeof _ ? _(S) : _, (0, r.jsx)(E, {
           successMessage: m,
           errorMessage: p,
           helperText: c,

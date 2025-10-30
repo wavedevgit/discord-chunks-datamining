@@ -2,7 +2,7 @@
 /** chunk id: 920888, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,8 +16,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk434624 = require("./434624.jsx"),
   Chunk287151 = require("./287151.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk127947 = require("./127947.js"),
-  Chunk893973 = require("./893973.js");
+  Chunk487111 = require("./487111.js"),
+  Chunk639543 = require("./639543.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -64,7 +64,7 @@ let O = (e, t) => null == e && null == t || e === t,
     let n = v(e, t);
     return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
   };
-class S extends Chunk647438.PureComponent {
+class T extends Chunk647438.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let n = e.message.reactions.length;
     return 0 === t.reactionsCount && n > 0 ? {
@@ -89,12 +89,12 @@ class S extends Chunk647438.PureComponent {
       reactionClassName: O,
       useChatFontScaling: v,
       forceHideReactionCreates: I,
-      remainingReactions: S,
-      combinedReactions: T,
+      remainingReactions: T,
+      combinedReactions: S,
       visibleReactionsCount: A
     } = this.props, {
       disableTransitionAppear: C
-    } = this.state, N = v ? Chunk893973 : Chunk127947, R = A > 0;
+    } = this.state, N = v ? Chunk639543 : Chunk487111, R = A > 0;
     if (!R && !y) return null;
     let P = y || R;
     return (0, Chunk951288.jsxs)(Chunk215569.W, {
@@ -111,7 +111,7 @@ class S extends Chunk647438.PureComponent {
         isHovered: false
       }),
       children: [(0, Chunk951288.jsx)(Chunk434624.l, {
-        reactions: T,
+        reactions: S,
         message: module,
         readOnly: require,
         isLurking: Chunk647438,
@@ -120,7 +120,7 @@ class S extends Chunk647438.PureComponent {
         isForumToolbar: g,
         useChatFontScaling: v,
         className: O
-      }), S > 0 && (0, Chunk951288.jsx)(Chunk481060.P3F, {
+      }), T > 0 && (0, Chunk951288.jsx)(Chunk481060.P3F, {
         onClick: t => {
           t.stopPropagation(), (0, _.op)(E, e)
         },
@@ -129,7 +129,7 @@ class S extends Chunk647438.PureComponent {
         children: (0, Chunk951288.jsxs)(Chunk481060.Text, {
           className: N.reactionInner,
           variant: "text-sm/normal",
-          children: ["+", S]
+          children: ["+", T]
         })
       }), !exports && !I && (0, Chunk951288.jsx)(Chunk60174.X, {
         tabIndex: P || this.state.isHovered ? 0 : false,
@@ -151,7 +151,7 @@ class S extends Chunk647438.PureComponent {
     })
   }
 }
-let T = e => {
+let S = e => {
   let {
     message: t,
     maxReactions: n,
@@ -178,7 +178,7 @@ let T = e => {
       remainingReactions: o
     }
   }, [a, n, t.reactions]);
-  return (0, r.jsx)(S, y(E({}, e), {
+  return (0, r.jsx)(T, y(E({}, e), {
     visibleReactionsCount: l,
     combinedReactions: o,
     remainingReactions: s

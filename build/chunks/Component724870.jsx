@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   h: () => v,
-  m: () => S
+  m: () => T
 }), require("./997841.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -74,8 +74,8 @@ function v(e) {
     skuId: y,
     guildId: v,
     reviewWarningMessage: I,
-    applicationId: S,
-    showBenefitsFirst: T,
+    applicationId: T,
+    showBenefitsFirst: S,
     onComplete: A,
     forcesTransitionToGuild: C
   } = e, N = (0, o.Z)(), R = false;
@@ -86,11 +86,11 @@ function v(e) {
       getApplicationPaymentSteps: s
     } = await n.e("86513").then(n.bind(n, 759386)), c = s({
       guildId: v,
-      showBenefitsFirst: T
+      showBenefitsFirst: S
     });
     return n => (0, r.jsx)(e, {
       loadId: N,
-      applicationId: S,
+      applicationId: T,
       activeSubscription: i,
       stepConfigs: c,
       skuIDs: [y],
@@ -106,7 +106,7 @@ function v(e) {
             renderHeader: _,
             planGroup: E,
             reviewWarningMessage: I,
-            applicationId: S,
+            applicationId: T,
             guildId: null != v ? v : true,
             onComplete: () => {
               R = true, null == A || A()
@@ -124,7 +124,7 @@ function v(e) {
         location: null != l ? l : a,
         is_gift: false,
         sku_id: y,
-        application_id: S,
+        application_id: T,
         location_stack: d
       }), (0, c.fw)(), (0, u.p)())
     },
@@ -135,7 +135,7 @@ let I = async (e, t) => {
   let n = (await (0, l.yD)(e)).filter(e => null == e.ends_at || new Date(e.ends_at) > new Date).find(e => e.sku_id === t);
   a()(null == n, "User already has an active subscription to this SKU")
 };
-async function S(e) {
+async function T(e) {
   var t;
   let {
     applicationId: n,

@@ -22,7 +22,7 @@ var Chunk230367 = require("./230367.js"),
     return e[e.ENABLED = 0] = "ENABLED", e[e.DISABLED = 1] = "DISABLED", e
   }({}),
   _ = function(e) {
-    return e[e.FULL = 0] = "FULL", e[e.DEPRECATED_FORCE_DEFAULT = 1] = "DEPRECATED_FORCE_DEFAULT", e[e.DEPRECATED_OVERRIDE_ONLY = 2] = "DEPRECATED_OVERRIDE_ONLY", e[e.FORCE_CONTROL = 3] = "FORCE_CONTROL", e[e.OVERRIDES_ONLY = 4] = "OVERRIDES_ONLY", e[e.OFF = 5] = "OFF", e
+    return e[e.FULL = 0] = "FULL", e[e.FORCE_CONTROL = 3] = "FORCE_CONTROL", e[e.OVERRIDES_ONLY = 4] = "OVERRIDES_ONLY", e[e.OFF = 5] = "OFF", e
   }({}),
   p = function(e) {
     return e[e.DEFAULT = 0] = "DEFAULT", e[e.HOLDOUT = 1] = "HOLDOUT", e
@@ -164,7 +164,7 @@ class E extends Chunk495852.C {
           a.engineFeatureFlags.push(e.string());
           break;
         case 30:
-          a.debugConfig = S.internalBinaryRead(e, e.uint32(), n, a.debugConfig);
+          a.debugConfig = T.internalBinaryRead(e, e.uint32(), n, a.debugConfig);
           break;
         case 31:
           a.expectedEndDate = c.E.internalBinaryRead(e, e.uint32(), n, a.expectedEndDate);
@@ -193,7 +193,7 @@ class E extends Chunk495852.C {
       t.join()
     }
     for (let n = 0; n < e.engineFeatureFlags.length; n++) t.tag(29, r.TD.LengthDelimited).string(e.engineFeatureFlags[n]);
-    e.debugConfig && S.internalBinaryWrite(e.debugConfig, t.tag(30, r.TD.LengthDelimited).fork(), n).join(), e.expectedEndDate && c.E.internalBinaryWrite(e.expectedEndDate, t.tag(31, r.TD.LengthDelimited).fork(), n).join();
+    e.debugConfig && T.internalBinaryWrite(e.debugConfig, t.tag(30, r.TD.LengthDelimited).fork(), n).join(), e.expectedEndDate && c.E.internalBinaryWrite(e.expectedEndDate, t.tag(31, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -347,7 +347,7 @@ class E extends Chunk495852.C {
       no: 30,
       name: "debug_config",
       kind: "message",
-      T: () => S
+      T: () => T
     }, {
       no: 31,
       name: "expected_end_date",
@@ -595,4 +595,4 @@ class I extends Chunk495852.C {
     }])
   }
 }
-let S = new I
+let T = new I

@@ -26,9 +26,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk755733 = require("./755733.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk421156 = require("./421156.js");
+  Chunk830445 = require("./830445.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,7 +44,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -75,7 +75,7 @@ function R(e) {
     challenge: c,
     showAccountSettingsButton: h = false,
     initialSlide: y = O.x.INIT
-  } = e, T = (0, u.Dt)(), [A, C] = i.useState(I.intl.string(I.t["I/sJtJ"])), [N, R] = i.useState(false), [P, w] = i.useState(y), [D, L] = i.useState(""), [x, M] = i.useState(null), k = async () => {
+  } = e, S = (0, u.Dt)(), [A, C] = i.useState(I.intl.string(I.t["I/sJtJ"])), [N, R] = i.useState(false), [P, w] = i.useState(y), [D, x] = i.useState(""), [L, M] = i.useState(null), k = async () => {
     let e;
     w(O.x.REGISTER);
     let t = m.isPlatformEmbedded && E.ZP.supportsFeature(v.eRX.WEBAUTHN) ? E.ZP.webAuthnRegister(c) : a.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
@@ -85,22 +85,22 @@ function R(e) {
       g.Z.captureException(e), M(I.intl.string(I.t.xSCvBf)), w(O.x.INIT);
       return
     }
-    L(e), w(O.x.NAME)
+    x(e), w(O.x.NAME)
   };
   return (0, r.jsxs)(l.Y0X, {
     transitionState: t,
-    "aria-labelledby": T,
+    "aria-labelledby": S,
     parentComponent: "UserSettingsWebAuthn",
     children: [(0, r.jsxs)(l.xBx, {
-      className: S.header,
+      className: T.header,
       separator: false,
       children: [(0, r.jsxs)(l.Heading, {
-        id: T,
+        id: S,
         variant: "heading-lg/semibold",
         children: [P === O.x.INIT && I.intl.string(I.t.vrOCCk), P === O.x.REGISTER && I.intl.string(I.t.wePEBF), P === O.x.NAME && I.intl.string(I.t["cY/IOu"]), P === O.x.SUCCESS && d.Z.parse(I.intl.string(I.t.FXC7ZC))]
       }), (0, r.jsx)(l.olH, {
         onClick: o,
-        className: S.modalCloseButton
+        className: T.modalCloseButton
       })]
     }), (0, r.jsxs)(l.MyZ, {
       activeSlide: P,
@@ -108,18 +108,18 @@ function R(e) {
       children: [(0, r.jsxs)(l.Mi4, {
         id: O.x.INIT,
         children: [(0, r.jsxs)(l.hzk, {
-          className: S.content,
+          className: T.content,
           children: [(0, r.jsx)("div", {
-            className: S.icon,
+            className: T.icon,
             children: (0, r.jsx)("img", {
               alt: "",
               src: n(773072)
             })
           }), (0, r.jsx)("div", {
-            children: null != x && (0, r.jsx)(l.Text, {
+            children: null != L && (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
               color: "status-danger",
-              children: x
+              children: L
             })
           }), (0, r.jsx)("div", {
             children: (0, r.jsx)(l.Text, {
@@ -137,9 +137,9 @@ function R(e) {
       }), (0, r.jsxs)(l.Mi4, {
         id: O.x.REGISTER,
         children: [(0, r.jsxs)(l.hzk, {
-          className: S.content,
+          className: T.content,
           children: [(0, r.jsx)("div", {
-            className: S.icon,
+            className: T.icon,
             children: (0, r.jsx)("img", {
               alt: "",
               src: n(773072)
@@ -168,9 +168,9 @@ function R(e) {
             })
           },
           children: [(0, r.jsxs)(l.hzk, {
-            className: S.content,
+            className: T.content,
             children: [(0, r.jsx)("div", {
-              className: S.icon,
+              className: T.icon,
               children: (0, r.jsx)("img", {
                 alt: "",
                 src: n(637163)
@@ -190,7 +190,7 @@ function R(e) {
               })]
             })]
           }), (0, r.jsx)(l.mzw, {
-            className: S.footer,
+            className: T.footer,
             children: (0, r.jsxs)(l.ButtonGroup, {
               direction: "horizontal-reverse",
               children: [(0, r.jsx)(l.Button, {
@@ -211,9 +211,9 @@ function R(e) {
       }), (0, r.jsxs)(l.Mi4, {
         id: O.x.SUCCESS,
         children: [(0, r.jsxs)(l.hzk, {
-          className: S.content,
+          className: T.content,
           children: [(0, r.jsx)("div", {
-            className: S.icon,
+            className: T.icon,
             children: (0, r.jsx)("img", {
               alt: "",
               src: n(637163)
@@ -225,7 +225,7 @@ function R(e) {
             })
           })]
         }), (0, r.jsx)(l.mzw, {
-          className: S.footer,
+          className: T.footer,
           children: (0, r.jsxs)(l.ButtonGroup, {
             direction: "horizontal-reverse",
             children: [(0, r.jsx)(l.Button, {
@@ -319,9 +319,9 @@ function w() {
     label: Chunk388032.intl.string(Chunk388032.t.y7SXYX),
     description: Chunk388032.intl.string(Chunk388032.t.TMukAN),
     children: [module.length > 0 && (0, Chunk951288.jsx)("div", {
-      className: Chunk421156.credentialList,
+      className: Chunk830445.credentialList,
       children: module.map(e => (0, r.jsxs)("div", {
-        className: S.credentialItem,
+        className: T.credentialItem,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
           children: e.name
@@ -335,11 +335,11 @@ function w() {
             })))
           },
           "aria-label": I.intl.string(I.t["+nrTbK"]),
-          innerClassName: S.credentialOptions,
+          innerClassName: T.credentialOptions,
           children: (0, r.jsx)(l.Huf, {
             size: "md",
-            className: S.__invalid_overflowIcon,
-            colorClass: S.__invalid_overflowIconFg,
+            className: T.__invalid_overflowIcon,
+            colorClass: T.__invalid_overflowIconFg,
             "aria-hidden": true
           })
         })]

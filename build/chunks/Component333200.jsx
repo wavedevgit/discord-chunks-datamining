@@ -9,7 +9,7 @@ require("./647438.js");
 var Chunk496600 = require("./496600.jsx"),
   Chunk713072 = require("./713072.jsx"),
   Chunk345729 = require("./345729.js"),
-  Chunk680765 = require("./680765.js");
+  Chunk484050 = require("./484050.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -86,8 +86,8 @@ function p(e) {
     required: O,
     onQueryChange: v,
     onKeyDown: I,
-    onFocus: S,
-    onBlur: T
+    onFocus: T,
+    onBlur: S
   } = b, {
     isOpen: A,
     setIsOpen: C,
@@ -113,9 +113,9 @@ function p(e) {
       errorMessage: h,
       successMessage: m,
       wrapTags: g,
-      onBlur: T,
+      onBlur: S,
       onQueryChange: v,
-      onFocus: S,
+      onFocus: T,
       onKeyDown: I,
       showChevronButton: true,
       ref: N.setReference

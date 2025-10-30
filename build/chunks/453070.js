@@ -7,10 +7,10 @@ require.d(exports, {
   Pq: () => v,
   RJ: () => P,
   Sd: () => M,
-  XW: () => x,
-  el: () => S,
+  XW: () => L,
+  el: () => T,
   fP: () => A,
-  fQ: () => T,
+  fQ: () => S,
   t$: () => I
 }), require("./539854.js"), require("./388685.js"), require("./290780.js");
 var Chunk647438 = require("./647438.js"),
@@ -43,7 +43,7 @@ let v = e => {
     let t = o.Wp.useSetting();
     return (0, b.WD)(t, e)
   },
-  S = e => {
+  T = e => {
     let {
       collapsedStickersCategories: t,
       filteredStickers: n,
@@ -74,9 +74,9 @@ let v = e => {
             v = d.findIndex(e => e.type === E.Ih.RECENT),
             I = t.length;
           null != i && s === i.id && o && t.length < (0, f.A3)(i.premiumTier) && I++;
-          let S = Math.ceil(I / e);
-          p[g] = r ? 0 : S;
-          for (let a = 0; a < S; a++) {
+          let T = Math.ceil(I / e);
+          p[g] = r ? 0 : T;
+          for (let a = 0; a < T; a++) {
             let o = a * e,
               s = o + e,
               l = t.slice(o, s).map((e, t) => ({
@@ -114,7 +114,7 @@ let v = e => {
       }
     }, [t, n, i, o, s, u, d])
   },
-  T = e => true,
+  S = e => true,
   A = () => {
     Chunk647438.useEffect(() => {
       (0, Chunk268350.$p)()
@@ -189,7 +189,7 @@ function D() {
   let e = w();
   return (0, Chunk442837.Wu)([Chunk926491.Z], () => module.map(e => g.Z.getStickerById(e)).filter(e => true !== e), [module])
 }
-let L = e => {
+let x = e => {
     let t = P(),
       {
         packs: n,
@@ -222,7 +222,7 @@ let L = e => {
       }, ...s, ...i]
     }, [n, t, a, s, o, e])
   },
-  x = function(e) {
+  L = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = (0, i.e7)([g.Z], () => g.Z.getStickerById(e.id)),
       [a, o] = r.useState(true),
@@ -258,6 +258,6 @@ let L = e => {
     }, [t]), c) ? [e, s] : [null != n ? n : null, s]
   },
   M = e => {
-    let t = L(e);
+    let t = x(e);
     return r.useMemo(() => t.filter(e => e.type === E.Ih.EMPTY_GUILD_UPSELL || e.stickers.length > 0, []), [t])
   }

@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk648613 = require("./648613.jsx"),
   Chunk433390 = require("./433390.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk402623 = require("./402623.js");
+  Chunk664838 = require("./664838.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -85,8 +85,8 @@ let y = function(e) {
     onSubscribeModalClose: O,
     premiumModalAnalyticsLocation: v,
     showIcon: I = true,
-    disableShine: S,
-    applicationId: T,
+    disableShine: T,
+    applicationId: S,
     shinyButtonClassName: A,
     showGradient: C = false,
     confirmationFooter: N,
@@ -94,8 +94,8 @@ let y = function(e) {
     color: P,
     iconColor: w = "currentColor"
   } = e, D = E(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "paymentModalBanner", "color", "iconColor"]);
-  let L = (0, o.e7)([c.Z], () => c.Z.isFocused()),
-    x = (0, d.Z)({
+  let x = (0, o.e7)([c.Z], () => c.Z.isFocused()),
+    L = (0, d.Z)({
       subscriptionTier: t,
       buttonTextOverride: null == m ? true : m.textOverride,
       defaultTextOverride: null == m ? true : m.subscribeText
@@ -106,7 +106,7 @@ let y = function(e) {
       postSuccessGuild: y,
       onSubscribeModalClose: O,
       premiumModalAnalyticsLocation: v,
-      applicationId: T,
+      applicationId: S,
       confirmationFooter: N,
       paymentModalBanner: R
     };
@@ -120,7 +120,7 @@ let y = function(e) {
         } = o;
         return (0, r.jsxs)(l.gtL, g(h({
           "data-migration-pending": true,
-          disabled: x.disabled,
+          disabled: L.disabled,
           onClick: c,
           innerClassName: _.premiumSubscribeButton,
           color: n,
@@ -131,7 +131,7 @@ let y = function(e) {
             [_.tier1Gradient]: C && t === f.Si.TIER_1
           }, p),
           buttonShineClassName: "buttonShineClassName" in D ? D.buttonShineClassName : n === s.Tt.BRAND_INVERTED ? _.brandShine : true,
-          pauseAnimation: !L || S
+          pauseAnimation: !x || T
         }, D, e), {
           children: [I && (0, r.jsx)(l.SrA, {
             size: "md",
@@ -139,15 +139,15 @@ let y = function(e) {
             className: a()(_.premiumIcon, b)
           }), (0, r.jsx)("span", {
             className: a()(_.buttonText, null == m ? true : m.textClassName),
-            children: x.buttonText
+            children: L.buttonText
           })]
         }))
       }
     }))
   }
-  return null != x.buttonTooltipText ? (0, r.jsx)(l.aML, {
+  return null != L.buttonTooltipText ? (0, r.jsx)(l.aML, {
     "data-migration-pending": true,
-    text: x.buttonTooltipText,
+    text: L.buttonTooltipText,
     children: k
   }) : k()
 }

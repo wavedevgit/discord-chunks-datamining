@@ -2,7 +2,7 @@
 /** chunk id: 199857, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./539854.js"), require("./415506.js"), require("./388685.js"), require("./49124.js"), require("./290780.js"), require("./35282.js");
 var r, Chunk74514 = require("./74514.js"),
   a = require.n(Chunk74514),
@@ -35,7 +35,7 @@ let y = 10,
 function I(e, t) {
   e.sender.replaceTrack(t), e.direction = null != t ? "sendrecv" : "recvonly"
 }
-class S extends Chunk912095.Z {
+class T extends Chunk912095.Z {
   destroy() {
     super.destroy(), "closed" !== this.signalingState && this.pc.close()
   }

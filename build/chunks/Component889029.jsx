@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk40086 = require("./40086.js");
+  Chunk459289 = require("./459289.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,7 +53,7 @@ function b() {
     enableContentProtection: v
   } = (0, Chunk442837.cj)([Chunk246946.Z], () => E({}, Chunk246946.Z.getSettings())), I = () => (0, Chunk951288.jsxs)(Chunk481060.Zbd, {
     type: Chunk481060.Zbd.Types.PRIMARY,
-    className: Chunk40086.noticeCard,
+    className: Chunk459289.noticeCard,
     children: [(0, Chunk951288.jsxs)("div", {
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/medium",
@@ -69,16 +69,16 @@ function b() {
       width: 184,
       height: 110,
       alt: "",
-      className: Chunk40086.noticeImage
+      className: Chunk459289.noticeImage
     })]
-  }), S = () => {
+  }), T = () => {
     if (Chunk358085.isPlatformEmbedded) return (0, Chunk951288.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t["PKDAJ/"]),
       description: Chunk388032.intl.string(Chunk388032.t.ZPi4lM),
       checked: exports,
-      onChange: e => T("autoToggle", e)
+      onChange: e => S("autoToggle", e)
     })
-  }, T = (e, t) => {
+  }, S = (e, t) => {
     o.Z.update({
       [e]: t
     })
@@ -104,19 +104,19 @@ function b() {
               onClick: A
             }),
             checked: module,
-            onChange: e => T("enabled", e)
-          }), S(), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
+            onChange: e => S("enabled", e)
+          }), T(), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
         })
       }), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
         label: Chunk388032.intl.string(Chunk388032.t["+1H47t"]),
-        className: Chunk40086.sectionLabel,
+        className: Chunk459289.sectionLabel,
         children: [(0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
           children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t.UpQziA),
             description: Chunk388032.intl.string(Chunk388032.t["+9Lra7"]),
             checked: b,
-            onChange: e => T("hidePersonalInformation", e)
+            onChange: e => S("hidePersonalInformation", e)
           })
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
@@ -124,7 +124,7 @@ function b() {
             label: Chunk388032.intl.string(Chunk388032.t.q7WNGv),
             description: Chunk388032.intl.string(Chunk388032.t.m7mS2U),
             checked: g,
-            onChange: e => T("hideInstantInvites", e)
+            onChange: e => S("hideInstantInvites", e)
           })
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_DISABLE_SOUNDS,
@@ -132,7 +132,7 @@ function b() {
             label: Chunk388032.intl.string(Chunk388032.t.o56OZu),
             description: Chunk388032.intl.string(Chunk388032.t.eAkaik),
             checked: y,
-            onChange: e => T("disableSounds", e)
+            onChange: e => S("disableSounds", e)
           })
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
@@ -140,7 +140,7 @@ function b() {
             label: Chunk388032.intl.string(Chunk388032.t.qmYiYd),
             description: Chunk388032.intl.string(Chunk388032.t["ZAmpQ/"]),
             checked: O,
-            onChange: e => T("disableNotifications", e)
+            onChange: e => S("disableNotifications", e)
           })
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
@@ -148,7 +148,7 @@ function b() {
             label: Chunk388032.intl.string(Chunk388032.t["iA81+a"]),
             description: Chunk388032.intl.string(Chunk388032.t.P4vj0h),
             checked: v,
-            onChange: e => T("enableContentProtection", e)
+            onChange: e => S("enableContentProtection", e)
           })
         })]
       })]

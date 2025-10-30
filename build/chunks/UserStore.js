@@ -38,7 +38,7 @@ let O = {},
   v = 0,
   I = "47835198259242069";
 
-function S(e, t, n) {
+function T(e, t, n) {
   let r = O[e];
   if (null == r) returnfalse;
   let i = r;
@@ -47,7 +47,7 @@ function S(e, t, n) {
   return a && v++, a
 }
 
-function T(e, t) {
+function S(e, t) {
   let n = O[e];
   return !(null == n || (0, c.d)(n.primaryGuild, t.primary_guild)) && (null == n.primaryGuild || null != t.primary_guild) && (n.primaryGuild = (0, c.l)(t.primary_guild), O[n.id] = n, v++, true)
 }
@@ -135,7 +135,7 @@ function D(e, t) {
   }
 }
 
-function L(e, t) {
+function x(e, t) {
   var n, r, i, a, o;
   null != e.author && "SENDING" !== e.state && N(e.author) && R(e.author, t), null == (n = e.mentions) || n.forEach(e => {
     N(e) && R(e, t)
@@ -152,7 +152,7 @@ function L(e, t) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     user: t,
     users: n,
@@ -162,7 +162,7 @@ function x(e) {
     R(e)
   }), r.forEach(e => {
     e.members.forEach(t => {
-      S(t.user.id, e.id, t.avatar), T(t.user.id, t.user)
+      T(t.user.id, e.id, t.avatar), S(t.user.id, t.user)
     })
   }), null != O[m.default.getId()] && (O[I] = new _.Z({
     id: I,
@@ -180,7 +180,7 @@ function M(e) {
   } = e;
   t.forEach(e => {
     e.members.forEach(t => {
-      S(t.user.id, e.id, t.avatar), T(t.user.id, t.user)
+      T(t.user.id, e.id, t.avatar), S(t.user.id, t.user)
     })
   }), null == n || n.forEach(e => {
     var t;
@@ -233,7 +233,7 @@ function F(e) {
   let {
     messages: t
   } = e;
-  return t.forEach(e => L(e, true)), false
+  return t.forEach(e => x(e, true)), false
 }
 
 function V(e) {
@@ -244,7 +244,7 @@ function V(e) {
     let {
       message: t
     } = e;
-    return L(t, true)
+    return x(t, true)
   }), false
 }
 
@@ -252,7 +252,7 @@ function H(e) {
   let {
     mostRecentMessages: t
   } = e;
-  return null == t || t.forEach(e => L(e, false)), false
+  return null == t || t.forEach(e => x(e, false)), false
 }
 
 function Y(e) {
@@ -266,7 +266,7 @@ function Y(e) {
     } = e;
     t.forEach(e => {
       e.forEach(e => {
-        L(e, true)
+        x(e, true)
       })
     }), n.forEach(e => {
       if (e.type === E.d4z.DM || e.type === E.d4z.GROUP_DM) {
@@ -282,7 +282,7 @@ function W(e) {
     firstMessages: t,
     owners: n
   } = e;
-  null != t && t.forEach(e => L(e, true)), null != n && n.forEach(e => R(e.user, true))
+  null != t && t.forEach(e => x(e, true)), null != n && n.forEach(e => R(e.user, true))
 }
 
 function K(e) {
@@ -295,7 +295,7 @@ function K(e) {
       most_recent_message: n,
       owner: r
     } = e;
-    null != t && L(t, true), null != n && L(n, true), null != r && null != r.user && R(r.user, true)
+    null != t && x(t, true), null != n && x(n, true), null != r && null != r.user && R(r.user, true)
   })
 }
 
@@ -307,7 +307,7 @@ function z(e) {
     let {
       message_preview: t
     } = e;
-    null != t && L(t, true)
+    null != t && x(t, true)
   })
 }
 
@@ -324,7 +324,7 @@ function q(e) {
     if (null == t) return;
     R(t);
     let i = null == r ? true : r.avatar;
-    null != i && S(t.id, n, i)
+    null != i && T(t.id, n, i)
   })
 }
 
@@ -348,7 +348,7 @@ function J(e) {
   let {
     message: t
   } = e;
-  if (L(t, true), null != t.flags && p.yE(t.flags, E.iLy.URGENT)) {
+  if (x(t, true), null != t.flags && p.yE(t.flags, E.iLy.URGENT)) {
     let e = O[m.default.getId()];
     return null != e && (O[m.default.getId()] = e.set("flags", p.mB(e.flags, E.xW$.HAS_UNREAD_URGENT_MESSAGES, true)), true)
   }
@@ -418,7 +418,7 @@ function eo(e) {
 
 function es(e) {
   let t = R(e.user);
-  return S(e.user.id, e.guildId, e.avatar) || t
+  return T(e.user.id, e.guildId, e.avatar) || t
 }
 
 function el(e) {
@@ -430,7 +430,7 @@ function el(e) {
       var n;
       let t = null == (n = e.item.member) ? true : n.user;
       if (null == t) continue;
-      T(t.id, t)
+      S(t.id, t)
     } returnfalse
 }
 
@@ -440,14 +440,14 @@ function ec(e) {
   } = e, n = false;
   for (let e of t) n = e.members.reduce((t, n) => {
     let r = R(n.user);
-    return S(n.user.id, e.guildId, n.avatar) || r || t
+    return T(n.user.id, e.guildId, n.avatar) || r || t
   }, false) || n;
   return n
 }
 
 function eu(e) {
   let t = false;
-  for (let n of e.members) R(n.user) && (t = true), S(n.user.id, e.guildId, n.avatar) && (t = true);
+  for (let n of e.members) R(n.user) && (t = true), T(n.user.id, e.guildId, n.avatar) && (t = true);
   return t
 }
 
@@ -497,7 +497,7 @@ function ep(e) {
       avatar: i,
       discriminator: a,
       bot: o
-    }), S(n, t.id, s)
+    }), T(n, t.id, s)
   })
 }
 
@@ -565,7 +565,7 @@ function eI(e) {
   return null != n && (i = i || R(n)), null != r && (i = i || R(r)), i
 }
 
-function eS(e) {
+function eT(e) {
   let {
     users: t,
     familyCenterTeenActivity: n
@@ -575,7 +575,7 @@ function eS(e) {
   return [...t, ...r].reduce((e, t) => R(t) || e, false)
 }
 
-function eT(e) {
+function eS(e) {
   let {
     users: t
   } = e;
@@ -621,7 +621,7 @@ function eP(e) {
     messageItems: t
   } = e;
   t.forEach(e => {
-    null != e.message && L(e.message, true)
+    null != e.message && x(e.message, true)
   }, false)
 }
 
@@ -637,14 +637,14 @@ function eD(e) {
   return null != t && (O[m.default.getId()] = t.set("ageVerificationStatus", i.F$.CLIENT_ONLY_PENDING), true)
 }
 
-function eL(e) {
+function ex(e) {
   let {
     status: t
   } = e, n = O[m.default.getId()];
   return null != n && n.ageVerificationStatus === i.F$.CLIENT_ONLY_PENDING && (O[m.default.getId()] = n.set("ageVerificationStatus", t), true)
 }
 
-function ex(e) {
+function eL(e) {
   let {
     resolved: t
   } = e;
@@ -715,7 +715,7 @@ class ek extends Chunk750041.Z {
   }
   constructor() {
     super({
-      CONNECTION_OPEN: x,
+      CONNECTION_OPEN: L,
       CONNECTION_OPEN_SUPPLEMENTAL: M,
       UPDATE_CLIENT_PREMIUM_TYPE: Z,
       OVERLAY_INITIALIZE: j,
@@ -769,8 +769,8 @@ class ek extends Chunk750041.Z {
       LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS: z,
       PASSIVE_UPDATE_V2: eu,
       LOCAL_MESSAGES_LOADED: ed,
-      FAMILY_CENTER_INITIAL_LOAD: eS,
-      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: eT,
+      FAMILY_CENTER_INITIAL_LOAD: eT,
+      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: eS,
       FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: eC,
       FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: eN,
       FAMILY_CENTER_REQUEST_LINK_SUCCESS: eA,
@@ -778,8 +778,8 @@ class ek extends Chunk750041.Z {
       LOAD_ICYMI_HYDRATED: eP,
       EMBEDDED_ACTIVITY_UPDATE_V2: ew,
       INITIATE_AGE_VERIFICATION: eD,
-      CLOSE_AGE_VERIFICATION_MODAL: eL,
-      INTERACTION_MODAL_CREATE: ex
+      CLOSE_AGE_VERIFICATION_MODAL: ex,
+      INTERACTION_MODAL_CREATE: eL
     })
   }
 }

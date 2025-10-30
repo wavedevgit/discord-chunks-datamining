@@ -59,7 +59,7 @@ function E(e, t, n) {
   let i = arguments.length > 3 && true !== arguments[3] && arguments[3],
     d = (0, a.e7)([o.Z], () => o.Z.hasLoadedExperiments),
     _ = (0, a.e7)([l.Z], () => l.Z.skipNumCategories),
-    [E, b, y, O, v, I, S, T] = (0, a.Wu)([c.Z], () => {
+    [E, b, y, O, v, I, T, S] = (0, a.Wu)([c.Z], () => {
       var t, n;
       return [c.Z.getShopBlocks(e), null != (t = c.Z.getLastSuccessfulFetch(e)) ? t : 0, null != (n = c.Z.getLastErrorTimestamp(e)) ? n : 0, c.Z.getLastFetchOptions(e), c.Z.getFetchShopHomeError(e), c.Z.getIsFetchingShopHome(e), c.Z.getHasKnownStaleData(e), c.Z.getShopHomeConfigOverride()]
     }),
@@ -67,17 +67,17 @@ function E(e, t, n) {
       variantsReturnStyle: g,
       includePopularPicks: true,
       includeDynamicBlocks: true,
-      shopHomeConfig: T,
+      shopHomeConfig: S,
       skipNumCategories: _
-    }), [t, T, _]),
+    }), [t, S, _]),
     C = (0, r.useMemo)(() => !(0, s.oc)(O, A), [O, A]),
     N = (0, u.J)(E, null != I && I, i),
     R = (0, r.useMemo)(() => !N && Date.now() - b < h, [b, N]);
   return (0, r.useEffect)(() => {
     if (!d || I) return;
     let t = Date.now() - y < m;
-    (null == v || !t) && (C || !R || S) && (0, s.Ov)(e, A, n)
-  }, [d, I, v, y, R, S, C, A, e, n]), {
+    (null == v || !t) && (C || !R || T) && (0, s.Ov)(e, A, n)
+  }, [d, I, v, y, R, T, C, A, e, n]), {
     isFetchingShopHome: I,
     fetchShopHomeError: v,
     shopBlocks: E,

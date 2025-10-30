@@ -22,7 +22,7 @@ var Chunk620014 = require("./620014.js"),
   Chunk822480 = require("./822480.js"),
   Chunk58834 = require("./58834.js"),
   Chunk453342 = require("./453342.js"),
-  T = 1,
+  S = 1,
   A = 2,
   C = 4,
   N = "[object Arguments]",
@@ -30,8 +30,8 @@ var Chunk620014 = require("./620014.js"),
   P = "[object Boolean]",
   w = "[object Date]",
   D = "[object Error]",
-  L = "[object Function]",
-  x = "[object GeneratorFunction]",
+  x = "[object Function]",
+  L = "[object GeneratorFunction]",
   M = "[object Map]",
   k = "[object Number]",
   j = "[object Object]",
@@ -54,7 +54,7 @@ var Chunk620014 = require("./620014.js"),
   ee = {};
 
 function et(e, t, n, R, P, w) {
-  var D, M = t & T,
+  var D, M = t & S,
     k = t & A,
     U = t & C;
   if (n && (D = P ? n(e, R, P, w) : n(e)), true !== D) return D;
@@ -64,7 +64,7 @@ function et(e, t, n, R, P, w) {
     if (D = h(e), !M) return c(e, D)
   } else {
     var B = p(e),
-      Z = B == L || B == x;
+      Z = B == x || B == L;
     if (b(e)) return l(e, M);
     if (B == j || B == N || Z && !P) {
       if (D = k || Z ? {} : g(e), !M) return k ? d(e, s(D, e)) : u(e, o(D, e))
@@ -81,10 +81,10 @@ function et(e, t, n, R, P, w) {
   }) : y(e) && e.forEach(function(r, i) {
     D.set(i, et(r, t, n, i, e, w))
   });
-  var V = U ? k ? _ : f : k ? S : I,
+  var V = U ? k ? _ : f : k ? T : I,
     H = G ? true : V(e);
   return i(H || e, function(r, i) {
     H && (r = e[i = r]), a(D, i, et(r, t, n, i, e, w))
   }), D
 }
-ee[N] = ee[R] = ee[V] = ee[H] = ee[P] = ee[w] = ee[Y] = ee[W] = ee[K] = ee[z] = ee[q] = ee[M] = ee[k] = ee[j] = ee[U] = ee[G] = ee[B] = ee[Z] = ee[X] = ee[Q] = ee[J] = ee[$] = true, ee[D] = ee[L] = ee[F] = false, module.exports = et
+ee[N] = ee[R] = ee[V] = ee[H] = ee[P] = ee[w] = ee[Y] = ee[W] = ee[K] = ee[z] = ee[q] = ee[M] = ee[k] = ee[j] = ee[U] = ee[G] = ee[B] = ee[Z] = ee[X] = ee[Q] = ee[J] = ee[$] = true, ee[D] = ee[x] = ee[F] = false, module.exports = et

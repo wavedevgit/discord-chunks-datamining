@@ -38,8 +38,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk702952 = require("./702952.js"),
-  Chunk186880 = require("./186880.js");
+  Chunk44149 = require("./44149.js"),
+  Chunk533362 = require("./533362.js");
 
 function M(e) {
   let {
@@ -47,8 +47,8 @@ function M(e) {
     isExpanded: n
   } = e;
   return (0, r.jsx)(y.Z, {
-    iconClassName: a()(L.arrowIcon, {
-      [L.arrowIconExpanded]: n
+    iconClassName: a()(x.arrowIcon, {
+      [x.arrowIconExpanded]: n
     }),
     onClick: t,
     iconComponent: s.CJ0,
@@ -68,7 +68,7 @@ function k(e) {
     idle: M,
     selectedParticipant: k,
     embeddedActivity: j
-  } = e, U = (0, p.bp)() === P.IlC.POPOUT, G = (0, o.e7)([T.Z], () => T.Z.isVideoEnabled()), B = (0, o.e7)([T.Z], () => Object.values(T.Z.getVideoDevices())[0]), Z = false === (null == (t = null == B ? true : B.disabled) || t), F = (0, u.Z)([s])[0], V = (0, m.Z)(a), {
+  } = e, U = (0, p.bp)() === P.IlC.POPOUT, G = (0, o.e7)([S.Z], () => S.Z.isVideoEnabled()), B = (0, o.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), Z = false === (null == (t = null == B ? true : B.disabled) || t), F = (0, u.Z)([s])[0], V = (0, m.Z)(a), {
     parentAnalyticsLocation: H
   } = (0, c.ZP)(), Y = e => {
     (0, f.v)(H, f.d.CAMERA, e), l.Z.setVideoEnabled(e)
@@ -82,12 +82,12 @@ function k(e) {
     })
   };
   return (0, r.jsxs)("div", {
-    className: x.videoControls,
+    className: L.videoControls,
     onMouseMove: I,
     onMouseDown: y,
     onMouseLeave: N,
     children: [(0, r.jsx)("div", {
-      className: x.topControls,
+      className: L.topControls,
       children: (0, r.jsx)(b.r, {
         idle: M,
         title: null != (i = null != (n = null == F ? true : F.name) ? n : null == a ? true : a.name) ? i : "",
@@ -95,14 +95,14 @@ function k(e) {
         preventIdleComponent: E.Z
       })
     }), (0, r.jsxs)("div", {
-      className: x.bottomControls,
+      className: L.bottomControls,
       children: [(0, r.jsxs)(_.Z, {
         grow: 0,
         shrink: 1,
         basis: "50%",
         align: _.Z.Align.CENTER,
-        children: [(0, r.jsx)(S.C, {
-          className: L.leftPipIcon,
+        children: [(0, r.jsx)(T.C, {
+          className: x.leftPipIcon,
           enabled: G,
           cameraUnavailable: !Z,
           hasPermission: V,
@@ -112,7 +112,7 @@ function k(e) {
           children: (0, r.jsx)(d.Z, {
             channelId: a.id,
             guildId: a.getGuildId(),
-            className: x.__invalid_leftTrayIcon,
+            className: L.__invalid_leftTrayIcon,
             participant: k,
             compact: true
           })
@@ -124,14 +124,14 @@ function k(e) {
         basis: "50%",
         align: _.Z.Align.CENTER,
         children: [U || (0, A.R)() ? null : (0, r.jsx)(v.Z, {
-          className: L.rightPipIcon,
+          className: x.rightPipIcon,
           popoutOpen: false,
           onOpenPopout: K,
           onClosePopout: w.Vq
         }), (0, r.jsx)(O.Z, {
           applicationId: s,
           location: j.location,
-          className: L.rightPipIcon
+          className: x.rightPipIcon
         })]
       })]
     })]
@@ -152,13 +152,13 @@ function j(e) {
     embeddedActivity: h
   } = e, m = (0, u.Z)([o])[0];
   return (0, r.jsxs)(s.P3F, {
-    className: a()(x.videoControls, x.videoControlsTextActivity),
+    className: a()(L.videoControls, L.videoControlsTextActivity),
     onMouseMove: c,
     onMouseDown: l,
     onMouseLeave: d,
     onDoubleClick: f,
     children: [(0, r.jsx)("div", {
-      className: x.topControls,
+      className: L.topControls,
       children: (0, r.jsx)(b.r, {
         idle: _,
         title: null != (n = null != (t = null == m ? true : m.name) ? t : null == i ? true : i.name) ? n : "",
@@ -166,17 +166,17 @@ function j(e) {
         preventIdleComponent: E.Z
       })
     }), (0, r.jsxs)("div", {
-      className: x.bottomControls,
+      className: L.bottomControls,
       children: [(0, r.jsx)(N.ZP, {
         renderIcon: false,
         users: p,
         size: 24,
         max: 3,
-        className: L.__invalid_userSummaryContainer
+        className: x.__invalid_userSummaryContainer
       }), (0, r.jsx)(O.Z, {
         applicationId: o,
         location: h.location,
-        iconClassName: L.leaveActivityIcon,
+        iconClassName: x.leaveActivityIcon,
         isActive: true
       })]
     })]
@@ -192,7 +192,7 @@ function U(e) {
   return i ? (0, r.jsx)(I.Z, {
     channelId: t,
     isParticipantsOpen: n,
-    className: L.participantsButton
+    className: x.participantsButton
   }) : null
 }
 
@@ -212,18 +212,18 @@ function G(e) {
     embeddedActivity: g
   } = e, y = (0, u.Z)([d])[0];
   return (0, r.jsx)("div", {
-    className: L.pipHeader,
+    className: x.pipHeader,
     onMouseMove: o,
     onMouseDown: i,
     onMouseLeave: l,
     children: (0, r.jsxs)("div", {
-      className: a()(x.topControls, L.pipHeaderContent, {
-        [L.pipHeaderContentOpen]: c
+      className: a()(L.topControls, x.pipHeaderContent, {
+        [x.pipHeaderContentOpen]: c
       }),
       children: [!c && (0, r.jsx)(s.xhG, {
         size: "xxs",
         color: "currentColor",
-        className: L.menuIcon
+        className: x.menuIcon
       }), c && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(b.r, {
           idle: !c,
@@ -231,14 +231,14 @@ function G(e) {
           onJumpToChannel: _,
           preventIdleComponent: E.Z
         }), (0, r.jsxs)("div", {
-          className: L.pipHeaderButtonsRight,
+          className: x.pipHeaderButtonsRight,
           children: [m ? null : (0, r.jsx)(M, {
             isExpanded: h,
             onClick: p
           }), (0, r.jsx)(O.Z, {
             applicationId: d,
             location: g.location,
-            iconClassName: L.leaveActivityIcon
+            iconClassName: x.leaveActivityIcon
           })]
         })]
       })]

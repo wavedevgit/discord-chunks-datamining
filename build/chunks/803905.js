@@ -4,7 +4,7 @@
 require.d(exports, {
   $0: () => N,
   AN: () => M,
-  Ct: () => T,
+  Ct: () => S,
   EQ: () => G,
   Ej: () => I,
   ME: () => h,
@@ -12,9 +12,9 @@ require.d(exports, {
   O8: () => P,
   Pl: () => v,
   Uw: () => D,
-  ZE: () => x,
+  ZE: () => L,
   _G: () => y,
-  _O: () => S,
+  _O: () => T,
   _y: () => m,
   do: () => k,
   g7: () => R,
@@ -28,7 +28,7 @@ require.d(exports, {
   uw: () => A,
   wN: () => U,
   zZ: () => j,
-  zm: () => L
+  zm: () => x
 }), require("./49124.js");
 var Chunk848246 = require("./848246.js"),
   Chunk710845 = require("./710845.js"),
@@ -69,8 +69,8 @@ let _ = new f(Chunk848246.q.ANIMATED_EMOJIS),
   O = new f(Chunk848246.q.PREMIUM_GUILD_MEMBER_PROFILE),
   v = new f("profileBadges"),
   I = new f(Chunk848246.q.PROFILE_PREMIUM_FEATURES, "custom banner and avatar decoration"),
-  S = new f("collectibles"),
-  T = new f("appIcons"),
+  T = new f("collectibles"),
+  S = new f("appIcons"),
   A = new f(Chunk848246.q.CLIENT_THEMES),
   C = new f("boostDiscount"),
   N = new f("freeBoosts"),
@@ -78,8 +78,8 @@ let _ = new f(Chunk848246.q.ANIMATED_EMOJIS),
   P = new f(Chunk848246.q.STREAM_HIGH_QUALITY),
   w = new f(Chunk848246.q.CUSTOM_NOTIFICATION_SOUNDS),
   D = new f("fancyVoiceChannelReactions"),
-  L = new f("installPremiumApplications"),
-  x = new f("redeemPremiumPerks"),
+  x = new f("installPremiumApplications"),
+  L = new f("redeemPremiumPerks"),
   M = new f(Chunk848246.q.VIDEO_FILTER_ASSETS);
 new Chunk533293.Z(Chunk848246.q.INCREASED_FILE_UPLOAD_SIZE, Chunk380684.h);
 let k = new f(Chunk848246.q.INCREASED_GUILD_LIMIT),
@@ -87,9 +87,9 @@ let k = new f(Chunk848246.q.INCREASED_GUILD_LIMIT),
   U = new f("increasedVideoUploadQuality"),
   G = new f("uploadLargeFiles"),
   B = Object.freeze({
-    [Chunk474936.Si.TIER_0]: new Chunk575691.Z(Chunk474936.Si.TIER_0, [_, p, h, v, M, U, G, T]),
-    [Chunk474936.Si.TIER_1]: new Chunk575691.Z(Chunk474936.Si.TIER_1, [_, p, b, y, v, C, R, D, U, G, T]),
-    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [_, p, h, m, g, b, y, O, v, I, A, C, N, R, P, D, L, x, M, k, j, U, G, T, S, w, E])
+    [Chunk474936.Si.TIER_0]: new Chunk575691.Z(Chunk474936.Si.TIER_0, [_, p, h, v, M, U, G, S]),
+    [Chunk474936.Si.TIER_1]: new Chunk575691.Z(Chunk474936.Si.TIER_1, [_, p, b, y, v, C, R, D, U, G, S]),
+    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [_, p, h, m, g, b, y, O, v, I, A, C, N, R, P, D, x, L, M, k, j, U, G, S, T, w, E])
   }),
   Z = [C, N];
 

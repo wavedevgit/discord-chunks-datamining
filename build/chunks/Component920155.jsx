@@ -2,7 +2,7 @@
 /** chunk id: 920155, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => T
+  m: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk945909 = require("./945909.js"),
   Chunk866577 = require("./866577.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk254477 = require("./254477.js");
+  Chunk929618 = require("./929618.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,9 +76,9 @@ function O(e, t) {
 }
 let v = 10,
   I = 4,
-  S = Chunk231338.Vq;
+  T = Chunk231338.Vq;
 
-function T(e) {
+function S(e) {
   var t;
   let {
     children: n,
@@ -87,11 +87,11 @@ function T(e) {
     onRequestClose: m,
     position: E = "top",
     align: O = "center",
-    hasVideo: T = false,
+    hasVideo: S = false,
     gradientColor: A,
     onPositionChange: C,
     scrollBehavior: N = "sticky"
-  } = e, [R, P] = i.useState(p), [w, D] = i.useState(E), L = i.useRef(E), x = (0, c.e7)([d.Z], () => d.Z.getLayers()), M = null != (t = x[x.length - 1]) ? t : "base", k = i.useMemo(() => {
+  } = e, [R, P] = i.useState(p), [w, D] = i.useState(E), x = i.useRef(E), L = (0, c.e7)([d.Z], () => d.Z.getLayers()), M = null != (t = L[L.length - 1]) ? t : "base", k = i.useMemo(() => {
     var e, t;
     return null == a.current || (null != (t = null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) ? t : "base") === M
   }, [a, M]);
@@ -111,13 +111,13 @@ function T(e) {
         setPopoutRef: t,
         position: i
       } = e, a = y(e, ["setPopoutRef", "position"]);
-      return null != i && i !== L.current && (L.current = i, D(i), null == C || C(i)), U((e, i) => {
+      return null != i && i !== x.current && (x.current = i, D(i), null == C || C(i)), U((e, i) => {
         if (!i) return null;
         let c = (0, r.jsx)(l.VqE, b(g({}, a), {
           setDialogRef: t,
           modal: false,
           className: o()(null != A ? h.popoverContentWithGradient : h.popover, {
-            [h["popover--video"]]: T
+            [h["popover--video"]]: S
           }),
           returnRef: true,
           children: n
@@ -151,6 +151,6 @@ function T(e) {
     ignoreModalClicks: true,
     scrollBehavior: N,
     renderPopout: G,
-    children: S
+    children: T
   })
 }

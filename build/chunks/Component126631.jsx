@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk100077 = require("./100077.js");
+  Chunk765725 = require("./765725.js");
 let g = (0, Chunk313201.hQ)(),
   E = (0, Chunk131704.createChannelRecord)({
     id: "1",
@@ -34,10 +34,10 @@ function y(e) {
     placeholder: y,
     currentBio: O,
     disabled: v = false
-  } = e, [I, S] = i.useState(null != f ? f : O), [T, A] = i.useState((0, s.JM)(I)), C = i.useRef(false);
+  } = e, [I, T] = i.useState(null != f ? f : O), [S, A] = i.useState((0, s.JM)(I)), C = i.useRef(false);
 
   function N(e, t, n) {
-    t !== I && (S(t), A(n), c(t))
+    t !== I && (T(t), A(n), c(t))
   }
 
   function R() {
@@ -51,7 +51,7 @@ function y(e) {
   i.useEffect(() => {
     if (true === f) {
       let e = (0, s.JM)(O);
-      S(O), A(e)
+      T(O), A(e)
     }
   }, [f, O]);
   let P = (0, u.wy)("AboutMeSection");
@@ -71,7 +71,7 @@ function y(e) {
       placeholder: y,
       channel: E,
       textValue: I,
-      richValue: T,
+      richValue: S,
       emojiPickerCloseOnModalOuterClick: P,
       parentModalKey: P ? d.USER_SETTINGS_MODAL_KEY : true,
       type: o.Ie.PROFILE_BIO_INPUT,
