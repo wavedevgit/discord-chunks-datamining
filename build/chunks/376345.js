@@ -48,7 +48,7 @@ let O = {
       }
     }
     return {
-      shadowOffset: t(e => e.shadowOffset),
+      shadowOffset: t((e, t) => t ? true : e.shadowOffset),
       shadowColor: t((e, t) => t ? e.shadowColorAndroid : e.shadowColor),
       shadowOpacity: t(e => e.shadowOpacity),
       shadowRadius: t(e => e.shadowRadius),
