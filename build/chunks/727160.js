@@ -24,10 +24,10 @@ let r = (0, require("./427164.js").le)({
       use_ad_session_id: true
     },
     4: {
-      use_ad_session_id: false
+      use_ad_session_id: true
     },
     5: {
-      use_ad_session_id: false
+      use_ad_session_id: true
     }
   }
 })
