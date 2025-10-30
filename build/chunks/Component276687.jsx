@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
-  Chunk852860 = require("./852860.jsx"),
+  Chunk796027 = require("./796027.jsx"),
   Chunk999382 = require("./999382.js"),
   Chunk524329 = require("./524329.js"),
   Chunk575258 = require("./575258.js"),
@@ -19,7 +19,7 @@ let d = () => {
     submitting: t,
     welcomeSettings: n
   } = (0, Chunk442837.e7)([Chunk575258.Z], () => Chunk575258.Z.getSettingsProps());
-  return null == module ? null : (0, Chunk951288.jsx)(Chunk852860.Z, {
+  return null == module ? null : (0, Chunk951288.jsx)(Chunk796027.Z, {
     onSave: () => (0, Chunk524329.Es)(module.id, require),
     onReset: Chunk524329.Xb,
     submitting: exports,

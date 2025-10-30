@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk796027 = require("./796027.jsx"),
   Chunk809206 = require("./809206.js"),
-  Chunk852860 = require("./852860.jsx"),
   Chunk321114 = require("./321114.js"),
   Chunk164946 = require("./164946.js"),
   Chunk350327 = require("./350327.js"),
@@ -28,17 +28,17 @@ function g() {
       var e, t, n, r, i;
       g(true);
       let a = Chunk25990.Z.getAllPending(),
-        s = (0, Chunk164946.ED)(Chunk442837),
+        o = (0, Chunk164946.ED)(Chunk442837),
         m = (0, Chunk164946.g9)(Chunk442837),
         E = (0, Chunk164946.jE)(Chunk442837),
         b = true;
-      if (Object.keys(Chunk852860).length > 0) {
-        let r = await (0, Chunk809206.Mn)(Chunk852860);
+      if (Object.keys(Chunk796027).length > 0) {
+        let r = await (0, Chunk809206.Mn)(Chunk796027);
         if (b = b && null != (t = null == Chunk951288 ? true : Chunk951288.ok) && exports, null == Chunk951288 ? true : Chunk951288.ok) {
           let e = Chunk951288.body;
           true !== Chunk442837.pendingAvatar && (0, Chunk330055.Z)({
             avatarHash: module.avatar,
-            avatarId: Chunk852860.avatarId,
+            avatarId: Chunk796027.avatarId,
             avatarAssetOrigin: null == (n = Chunk442837.pendingAvatar) ? true : require.assetOrigin
           }), (0, Chunk809206.si)()
         } else(null == Chunk951288 || null == (e = Chunk951288.body) ? true : module.username) != null && (0, Chunk155433.P)()
@@ -66,7 +66,7 @@ function g() {
     y = Chunk647438.useCallback(() => {
       (0, Chunk809206.W3)()
     }, []);
-  return (0, Chunk951288.jsx)(Chunk852860.Z, {
+  return (0, Chunk951288.jsx)(Chunk796027.Z, {
     submitting: require,
     onSave: b,
     onReset: y,

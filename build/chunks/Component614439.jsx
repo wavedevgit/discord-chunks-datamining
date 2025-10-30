@@ -9,10 +9,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk345074 = require("./345074.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk796027 = require("./796027.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk484614 = require("./484614.jsx"),
-  Chunk852860 = require("./852860.jsx"),
   Chunk688465 = require("./688465.jsx"),
   Chunk970061 = require("./970061.jsx"),
   Chunk456268 = require("./456268.js"),
@@ -42,7 +42,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       guild: Chunk999382.Z.getGuild(),
       guildMetadata: Chunk999382.Z.getMetadata()
     }));
-    return (0, Chunk951288.jsx)(Chunk852860.Z, {
+    return (0, Chunk951288.jsx)(Chunk796027.Z, {
       submitting: require,
       onReset: () => {
         null != module && Chunk434404.Z.init(module.id)
@@ -69,16 +69,16 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
   w = () => {
     var e;
     let t = Chunk647438.useRef(null),
-      d = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
+      s = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
       [P, w] = Chunk647438.useState(false);
     Chunk647438.useEffect(() => {
-      P || null == Chunk852860 || ((0, Chunk456268.le)(), (0, Chunk456268.aC)(Chunk852860.id), (0, Chunk456268.i3)(Chunk852860.id), w(true))
-    }, [Chunk852860, P]);
+      P || null == Chunk796027 || ((0, Chunk456268.le)(), (0, Chunk456268.aC)(Chunk796027.id), (0, Chunk456268.i3)(Chunk796027.id), w(true))
+    }, [Chunk796027, P]);
     let {
       canManageGuild: Z
     } = (0, Chunk442837.cj)([Chunk496675.Z], () => ({
-      canManageGuild: Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, Chunk852860)
-    })), R = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.isGuildMetadataLoaded()), D = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getMetadata() : null), A = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 && (null == D ? true : D.isPublished) ? Chunk999382.Z.getSlug() : null), [L, k] = Chunk647438.useState([true]), [G, M] = Chunk647438.useState(true), [U, B] = Chunk647438.useState([false]), [F, H] = Chunk647438.useState([""]);
+      canManageGuild: Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, Chunk796027)
+    })), R = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.isGuildMetadataLoaded()), D = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk796027 ? Chunk999382.Z.getMetadata() : null), A = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk796027 && (null == D ? true : D.isPublished) ? Chunk999382.Z.getSlug() : null), [L, k] = Chunk647438.useState([true]), [G, M] = Chunk647438.useState(true), [U, B] = Chunk647438.useState([false]), [F, H] = Chunk647438.useState([""]);
     Chunk647438.useEffect(() => {
       if (null !== D) {
         let e = [],
@@ -102,8 +102,8 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         }), H(exports), k(module), M(module.every(e => true === e))
       }
     }, [D]);
-    let W = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getErrors() : null);
-    if (null == Chunk852860 || null == D) return null;
+    let W = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk796027 ? Chunk999382.Z.getErrors() : null);
+    if (null == Chunk796027 || null == D) return null;
     let z = e => {
         v.Z.updateGuild({
           discoverySplash: e
@@ -111,8 +111,8 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       },
       V = e => {
         let t = () => {
-          (0, m.W1)(d.id, e), e ? (0, m.Vv)({
-            guildId: d.id,
+          (0, m.W1)(s.id, e), e ? (0, m.Vv)({
+            guildId: s.id,
             primaryCategoryId: D.primaryCategoryId,
             keywords: D.keywords,
             emojiDiscoverabilityEnabled: D.emojiDiscoverabilityEnabled,
@@ -123,7 +123,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             socialLinks: D.socialLinks,
             about: D.about
           }) : (0, m.Vv)({
-            guildId: d.id,
+            guildId: s.id,
             primaryCategoryId: D.primaryCategoryId,
             keywords: D.keywords,
             emojiDiscoverabilityEnabled: D.emojiDiscoverabilityEnabled,
@@ -133,13 +133,13 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             reasonsToJoin: D.reasonsToJoin,
             socialLinks: D.socialLinks,
             about: D.about
-          }), v.Z.saveGuild(d.id, {
-            discoverySplash: d.discoverySplash,
-            description: d.description
+          }), v.Z.saveGuild(s.id, {
+            discoverySplash: s.discoverySplash,
+            description: s.description
           })
         };
         if (e) return void t();
-        null != d.vanityURLCode ? n.e("95999").then(n.bind(n, 976540)).then(e => {
+        null != s.vanityURLCode ? n.e("95999").then(n.bind(n, 976540)).then(e => {
           e.default.open(t)
         }) : t()
       },
@@ -154,10 +154,10 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         title: Chunk388032.intl.string(Chunk388032.t["/SWsH3"]),
         items: [{
           description: Chunk388032.intl.string(Chunk388032.t.DU8jF2),
-          completed: null !== Chunk852860.discoverySplash && "" !== Chunk852860.discoverySplash
+          completed: null !== Chunk796027.discoverySplash && "" !== Chunk796027.discoverySplash
         }, {
           description: Chunk388032.intl.string(Chunk388032.t.SW5OH6),
-          completed: null !== Chunk852860.description && "" !== Chunk852860.description
+          completed: null !== Chunk796027.description && "" !== Chunk796027.description
         }, {
           description: Chunk388032.intl.string(Chunk388032.t.m3b3WL),
           completed: null !== D.about && D.about.length >= 300 && D.about.length <= 2400
@@ -224,16 +224,16 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         })]
                       })
                     })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (() => {
-                      if (null != Chunk852860) return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+                      if (null != Chunk796027) return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
                         children: [(0, Chunk951288.jsx)(Chunk718157.E, {
                           label: Chunk388032.intl.string(Chunk388032.t.GjPpSu),
                           description: Chunk388032.intl.string(Chunk388032.t.MVXonM),
-                          guildId: Chunk852860.id,
+                          guildId: Chunk796027.id,
                           guildMetadata: D,
                           isDisabled: !Z
                         }), (0, Chunk951288.jsx)(Chunk450474.Z, {
                           label: Chunk388032.intl.string(Chunk388032.t.oOPlPA),
-                          guild: Chunk852860,
+                          guild: Chunk796027,
                           guildMetadata: D,
                           disabled: !Z
                         }), (null == W ? true : W.category) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -244,7 +244,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         }) : null]
                       })
                     })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (() => {
-                      if (null != Chunk852860) return (0, Chunk951288.jsx)(Chunk481060.gNt, {
+                      if (null != Chunk796027) return (0, Chunk951288.jsx)(Chunk481060.gNt, {
                         label: Chunk388032.intl.string(Chunk388032.t["8bT/Cu"]),
                         description: Chunk388032.intl.string(Chunk388032.t.WCWT7A),
                         errorMessage: (null == W ? true : W.discovery_splash) != null ? W.discovery_splash : true,
@@ -252,9 +252,9 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
                           gap: 16,
                           children: [(0, Chunk951288.jsx)(Chunk208567.Z, {
-                            image: Chunk852860.discoverySplash,
+                            image: Chunk796027.discoverySplash,
                             makeURL: e => x.ZP.getGuildDiscoverySplashURL({
-                              id: d.id,
+                              id: s.id,
                               splash: e,
                               size: 512 * (0, p.x_)()
                             }),
@@ -276,7 +276,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.Kx8, {
                       label: Chunk388032.intl.string(Chunk388032.t["RSfm+i"]),
                       description: Chunk388032.intl.string(Chunk388032.t.IBi6hz),
-                      value: null !== Chunk852860.description ? Chunk852860.description : "",
+                      value: null !== Chunk796027.description ? Chunk796027.description : "",
                       placeholder: Chunk388032.intl.string(Chunk388032.t.rFa9Ui),
                       onChange: e => {
                         var t;
@@ -299,7 +299,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         children: (0, Chunk951288.jsx)(Chunk328159.Z, {
                           reasonMinLength: 10,
                           reasonMaxLength: 128,
-                          guildId: Chunk852860.id,
+                          guildId: Chunk796027.id,
                           reasons: module
                         })
                       })
@@ -312,7 +312,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       value: D.about,
                       placeholder: Chunk388032.intl.string(Chunk388032.t.TduTbs),
                       onChange: e => {
-                        (0, m.mA)(d.id, e)
+                        (0, m.mA)(s.id, e)
                       },
                       minLength: 300,
                       maxLength: 2400,
@@ -332,7 +332,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           onFocus: () => q(t, true),
                           onMouseOut: () => q(t, false),
                           onBlur: () => q(t, false),
-                          children: [(0, r.jsx)(o.q4e, {
+                          children: [(0, r.jsx)(c.q4e, {
                             className: D.isPublished ? S.socialLinksDropdownMax : S.socialLinksDropdownMin,
                             options: (e => {
                               let t = Object.entries(E.z).filter(e => !F.includes(e[1].presentation)).map(e => ({
@@ -350,16 +350,16 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                               let n = [...D.socialLinks],
                                 r = [...F],
                                 i = [...L];
-                              r[t] = e, n[t] = E.z[e].baseUrl, i[t] = true, k(i), H(r), M(i.every(e => true === e)), (0, m.t$)(d.id, n)
+                              r[t] = e, n[t] = E.z[e].baseUrl, i[t] = true, k(i), H(r), M(i.every(e => true === e)), (0, m.t$)(s.id, n)
                             })(e, t),
                             isDisabled: !Z
-                          }), (0, r.jsx)(o.oil, {
+                          }), (0, r.jsx)(c.oil, {
                             value: e.replace(null != l ? l : "", ""),
                             onChange: e => ((e, t) => {
                               let n = [...D.socialLinks],
                                 r = n[t],
                                 i = e;
-                              0 === r.length && i.length > 1 && false === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, m.t$)(d.id, n))
+                              0 === r.length && i.length > 1 && false === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, m.t$)(s.id, n))
                             })("".concat(l).concat(e), t),
                             placeholder: null != l ? true : I.intl.string(I.t.Q6o4pJ),
                             maxLength: 150,
@@ -367,7 +367,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                             fullWidth: true,
                             leading: l,
                             trailing: Z ? {
-                              icon: o.XHJ,
+                              icon: c.XHJ,
                               "aria-label": I.intl.string(I.t.N86XcP),
                               onClick: () => (e => {
                                 let t = [...U];
@@ -377,7 +377,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                 let r = [...F];
                                 r.splice(e, 1), H(r);
                                 let i = [...D.socialLinks];
-                                i.splice(e, 1), (0, m.t$)(d.id, i)
+                                i.splice(e, 1), (0, m.t$)(s.id, i)
                               })(t)
                             } : true
                           })]
@@ -393,7 +393,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         onClick: () => {
                           if (D.socialLinks.length < 9) {
                             let e = [...D.socialLinks];
-                            (0, Chunk456268.t$)(Chunk852860.id, module.concat("")), H(F.concat(""))
+                            (0, Chunk456268.t$)(Chunk796027.id, module.concat("")), H(F.concat(""))
                           }
                         },
                         disabled: !Z || D.socialLinks.length >= 9

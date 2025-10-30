@@ -8,9 +8,9 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk796027 = require("./796027.jsx"),
   Chunk194983 = require("./194983.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk852860 = require("./852860.jsx"),
   Chunk977258 = require("./977258.js"),
   Chunk45966 = require("./45966.js"),
   Chunk473403 = require("./473403.jsx"),
@@ -37,29 +37,29 @@ var Chunk951288 = require("./951288.js"),
 function w(e) {
   let {
     guild: t
-  } = e, o = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, O.Z)(t), b = (0, l.e7)([v.Z], () => v.Z.editedDefaultChannelIds), x = h.filter(e => !b.has(e.id)), [_, C] = i.useState(false);
+  } = e, a = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, O.Z)(t), b = (0, l.e7)([v.Z], () => v.Z.editedDefaultChannelIds), x = h.filter(e => !b.has(e.id)), [_, C] = i.useState(false);
   return (i.useEffect(() => {
-    f || o || (0, m.S)(t.id)
-  }, [t.id, f, o]), _ || 0 === x.length) ? null : (0, r.jsxs)("div", {
+    f || a || (0, m.S)(t.id)
+  }, [t.id, f, a]), _ || 0 === x.length) ? null : (0, r.jsxs)("div", {
     className: T.recommendations,
-    children: [(0, r.jsx)(s.Text, {
+    children: [(0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "header-primary",
       children: S.intl.string(S.t.NN7rD3)
     }), (0, r.jsxs)("div", {
       className: T.recsSubheader,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: S.intl.string(S.t["3Uuql+"])
-      }), (0, r.jsxs)(s.P3F, {
+      }), (0, r.jsxs)(o.P3F, {
         className: T.dismissAll,
         onClick: () => C(true),
-        children: [(0, r.jsx)(s.dz2, {
+        children: [(0, r.jsx)(o.dz2, {
           size: "xxs",
           color: "currentColor",
           className: T.checkmark
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(o.Text, {
           className: T.dismissAllText,
           variant: "text-xs/medium",
           color: "text-brand",
@@ -78,9 +78,9 @@ function w(e) {
               children: [(0, r.jsx)(u._W, {
                 channel: e,
                 guild: t
-              }), (0, r.jsx)(a.Z, {
+              }), (0, r.jsx)(s.Z, {
                 className: T.__invalid_name,
-                children: (0, r.jsx)(s.Text, {
+                children: (0, r.jsx)(o.Text, {
                   className: T.__invalid_channelText,
                   variant: "text-md/medium",
                   lineClamp: 1,
@@ -88,9 +88,9 @@ function w(e) {
                   children: e.name
                 })
               })]
-            }), null != e.topic && e.topic.length > 0 ? (0, r.jsx)(a.Z, {
+            }), null != e.topic && e.topic.length > 0 ? (0, r.jsx)(s.Z, {
               className: P.markup,
-              children: (0, r.jsx)(s.Text, {
+              children: (0, r.jsx)(o.Text, {
                 className: T.topic,
                 variant: "text-xs/normal",
                 children: g.Z.parseTopic(e.topic, true, {
@@ -98,20 +98,20 @@ function w(e) {
                 })
               })
             }, "topic") : null]
-          }), (0, c.s)(t.id, e.id) ? (0, r.jsx)(s.Button, {
+          }), (0, c.s)(t.id, e.id) ? (0, r.jsx)(o.Button, {
             size: "sm",
             variant: "primary",
             text: S.intl.string(S.t.OYkgVk),
             onClick: () => (0, j.pt)(e.id)
-          }) : (0, r.jsx)(s.Button, {
+          }) : (0, r.jsx)(o.Button, {
             size: "sm",
             variant: "secondary",
             text: S.intl.string(S.t.zA9d1J),
-            icon: s.mBM,
+            icon: o.mBM,
             iconPosition: "start",
             onClick: () => {
               var i;
-              return i = e.id, void(0, s.ZDy)(async () => {
+              return i = e.id, void(0, o.ZDy)(async () => {
                 let {
                   default: e
                 } = await n.e("35641").then(n.bind(n, 89216));
@@ -164,7 +164,7 @@ function w(e) {
 function Z(e) {
   let {
     saveOnClose: t = false
-  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), o = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([C.Z], () => C.Z.advancedMode), g = i.useRef(null), [m, p] = i.useState(false), v = i.useRef(n);
+  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), s = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([C.Z], () => C.Z.advancedMode), g = i.useRef(null), [m, p] = i.useState(false), v = i.useRef(n);
   return (i.useEffect(() => {
     v.current = n
   }), i.useEffect(() => {
@@ -180,11 +180,11 @@ function Z(e) {
         }).catch(() => {})
       }
     }
-  }, [t, u]), null == n) ? null : a ? (0, r.jsx)(s.$jN, {}) : (0, r.jsxs)("div", {
+  }, [t, u]), null == n) ? null : a ? (0, r.jsx)(o.$jN, {}) : (0, r.jsxs)("div", {
     className: T.columns,
     children: [(0, r.jsxs)("div", {
       className: T.channelBrowser,
-      children: [(0, r.jsx)(s.P3F, {
+      children: [(0, r.jsx)(o.P3F, {
         className: T.collapseButton,
         onClick: () => p(e => !e),
         children: (0, r.jsx)(b.Z, {
@@ -192,11 +192,11 @@ function Z(e) {
           height: 16,
           width: 16
         })
-      }), (0, r.jsx)(s.Heading, {
+      }), (0, r.jsx)(o.Heading, {
         className: T.header,
         variant: "heading-lg/extrabold",
         children: S.intl.string(S.t["4GSygh"])
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: S.intl.string(S.t.Kq7FAS)
@@ -210,17 +210,17 @@ function Z(e) {
           className: T.channelBrowserOuter,
           guild: n,
           categories: c,
-          channels: o,
+          channels: s,
           hasSidebar: false
         })]
       }), u && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: T.largeSeparator
-        }), (0, r.jsx)(s.Heading, {
+        }), (0, r.jsx)(o.Heading, {
           className: T.prejoinHeader,
           variant: "heading-lg/extrabold",
           children: S.intl.string(S.t.g2RnpV)
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(o.Text, {
           className: T.prejoinSubHeader,
           variant: "text-sm/normal",
           color: "header-secondary",
@@ -251,7 +251,7 @@ function R() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild),
     t = (0, Chunk442837.e7)([Chunk889369.Z], () => Chunk889369.Z.submitting),
     n = (0, Chunk442837.e7)([Chunk208665.Z], () => Chunk208665.Z.advancedMode);
-  return null == module ? null : (0, Chunk951288.jsx)(Chunk852860.Z, {
+  return null == module ? null : (0, Chunk951288.jsx)(Chunk796027.Z, {
     onSave: () => {
       (0, Chunk743475.DO)(module).then(() => {
         require && (0, Chunk570961.rS)(module, {

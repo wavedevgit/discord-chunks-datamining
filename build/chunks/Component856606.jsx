@@ -11,6 +11,7 @@ var Chunk951288 = require("./951288.js"),
   s = require.n(Chunk392711),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk796027 = require("./796027.jsx"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
@@ -18,7 +19,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk741361 = require("./741361.js"),
   Chunk239091 = require("./239091.js"),
   Chunk668390 = require("./668390.jsx"),
-  Chunk852860 = require("./852860.jsx"),
   Chunk911969 = require("./911969.js"),
   Chunk410030 = require("./410030.js"),
   Chunk607070 = require("./607070.js"),
@@ -96,7 +96,7 @@ let Y = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
       (0, Chunk741361.hw)(module.id, exports)
     }
   }
-})(Chunk852860.Z);
+})(Chunk796027.Z);
 
 function J(e) {
   let {
@@ -108,7 +108,7 @@ function J(e) {
   if (null == n || null == l || null == t) return null;
   let {
     guild_id: c,
-    id: p
+    id: d
   } = n, m = () => {
     var e;
     if (null == R.Z.getGuild(c)) return "";
@@ -133,7 +133,7 @@ function J(e) {
           allow: l,
           deny: r
         })
-      }))(0, g.kY)(n, t.id, l, r);
+      }))(0, p.kY)(n, t.id, l, r);
     else {
       let e;
       if (t.type === b.BN.MEMBER) {
@@ -166,20 +166,20 @@ function J(e) {
       onChange: f,
       permissionRender: x,
       className: F.permissionsForm
-    }, n)), c === t.id ? null : (0, i.jsx)(d.Button, {
+    }, n)), c === t.id ? null : (0, i.jsx)(u.Button, {
       variant: "critical-secondary",
       text: W.intl.format(W.t.txPV7k, {
         name: m()
       }),
       onClick: () => {
         let e = m();
-        u.Z.show({
+        h.Z.show({
           title: W.intl.string(W.t.GuPYQB),
           body: W.intl.format(W.t.xERCnZ, {
             name: e
           }),
           cancelText: W.intl.string(W.t["ETE/oC"]),
-          onConfirm: () => h.Z.clearPermissionOverwrite(p, t.id)
+          onConfirm: () => g.Z.clearPermissionOverwrite(d, t.id)
         })
       }
     })]
@@ -194,26 +194,26 @@ function X(e) {
   } = e, r = l.getAvatarURL(t, 32), s = D.ZP.getNickname(t, n, l), a = H.ZP.useUserTag(l), o = null, c = null;
   return o = null != s ? s : l.hasAvatarForGuild(t) ? l.username : a, (null != s || l.hasAvatarForGuild(t)) && (c = (0, i.jsxs)("div", {
     className: F.userRowSubText,
-    children: [l.hasAvatarForGuild(t) ? (0, i.jsx)(d.qEK, {
+    children: [l.hasAvatarForGuild(t) ? (0, i.jsx)(u.qEK, {
       className: F.userRowSubAvatar,
-      size: d.EFr.SIZE_16,
+      size: u.EFr.SIZE_16,
       src: l.getAvatarURL(true, 16),
       "aria-label": l.username
-    }) : null, (0, i.jsx)(d.Text, {
+    }) : null, (0, i.jsx)(u.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       children: a
     })]
   })), (0, i.jsxs)("div", {
     className: F.inline,
-    children: [(0, i.jsx)(d.qEK, {
-      size: d.EFr.SIZE_32,
+    children: [(0, i.jsx)(u.qEK, {
+      size: u.EFr.SIZE_32,
       src: r,
       "aria-label": l.username,
       className: F.userRowAvatar
     }), (0, i.jsxs)("div", {
       className: F.userRowText,
-      children: [(0, i.jsx)(d.Text, {
+      children: [(0, i.jsx)(u.Text, {
         className: F.userRowText,
         variant: "text-md/normal",
         children: o
@@ -275,24 +275,24 @@ function $() {
       permissionOverwrites: r,
       selectedOverwriteId: a
     } = (0, Chunk442837.cj)([Chunk277053.Z], () => Chunk277053.Z),
-    f = null == exports ? true : exports.getGuildId(),
+    c = null == exports ? true : exports.getGuildId(),
     {
       guild: v,
       sortedGuildRoles: C
     } = (0, Chunk442837.cj)([Chunk430824.Z, Chunk485386.Z], () => {
-      let e = null != Chunk852860 ? Chunk430824.Z.getGuild(Chunk852860) : true,
+      let e = null != Chunk796027 ? Chunk430824.Z.getGuild(Chunk796027) : true,
         t = null != module ? Chunk485386.Z.getSortedRoles(module.id) : true;
       return {
         guild: module,
         sortedGuildRoles: exports
       }
-    }, [Chunk852860]),
-    S = (0, Chunk188857.Z)(Chunk852860, Chunk392711),
+    }, [Chunk796027]),
+    S = (0, Chunk188857.Z)(Chunk796027, Chunk392711),
     N = (0, Chunk410030.ZP)(),
     Z = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.roleStyle),
     w = Chunk647438.useCallback((e, l) => {
       if (null == t) return null;
-      (0, p.jW)(e, async () => {
+      (0, m.jW)(e, async () => {
         let {
           id: e,
           role: r,
@@ -304,13 +304,13 @@ function $() {
           id: e,
           role: r,
           handleDeletePermission: o ? true : () => {
-            u.Z.show({
+            h.Z.show({
               title: W.intl.string(W.t.GuPYQB),
               body: W.intl.format(W.t.xERCnZ, {
                 name: s
               }),
               cancelText: W.intl.string(W.t["ETE/oC"]),
-              onConfirm: () => h.Z.clearPermissionOverwrite(t.id, e)
+              onConfirm: () => g.Z.clearPermissionOverwrite(t.id, e)
             })
           }
         }))
@@ -332,18 +332,18 @@ function $() {
       })
     },
     P = (e, n) => {
-      h.Z.updatePermissionOverwrite(t.id, {
+      g.Z.updatePermissionOverwrite(t.id, {
         id: e,
         type: n,
         allow: B.Hn,
         deny: B.Hn
-      }).then(() => (0, g.Aj)(e))
+      }).then(() => (0, p.Aj)(e))
     };
   null != Chunk392711 && null == Chunk392711[Chunk940639.id] && (Chunk392711[Chunk940639.id] = Chunk700785.we(Chunk940639.id));
   let I = Chunk627050.filter(e => {
       var t;
       return (null == (t = r[e.id]) ? true : t.type) === b.BN.ROLE
-    }).map(e => (0, i.jsx)(m.Z, {
+    }).map(e => (0, i.jsx)(f.Z, {
       theme: N,
       roleStyle: Z,
       id: e.id,
@@ -360,7 +360,7 @@ function $() {
     }, "".concat(a, "-").concat(e.id))),
     L = s()(Chunk722252).sortBy(e => e.username.toLowerCase()).map(e => {
       let t = e.getAvatarURL(v.id, 24);
-      return (0, i.jsx)(m.Z, {
+      return (0, i.jsx)(f.Z, {
         id: e.id,
         guild: v,
         theme: N,
@@ -374,8 +374,8 @@ function $() {
         }),
         children: (0, i.jsxs)("div", {
           className: F.inline,
-          children: [(0, i.jsx)(d.qEK, {
-            size: d.EFr.SIZE_20,
+          children: [(0, i.jsx)(u.qEK, {
+            size: u.EFr.SIZE_20,
             src: t,
             "aria-label": e.username,
             className: F.xsmallAvatar
@@ -401,7 +401,7 @@ function $() {
           position: "bottom",
           autoInvert: false,
           clickTrap: true,
-          children: n => (0, i.jsx)(d.njP.Header, q(z({
+          children: n => (0, i.jsx)(u.njP.Header, q(z({
             ref: e
           }, n), {
             children: (0, i.jsxs)("div", {

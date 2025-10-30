@@ -7,10 +7,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk692547 = require("./692547.js"),
   Chunk215569 = require("./215569.js"),
+  Chunk796027 = require("./796027.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk749210 = require("./749210.js"),
-  Chunk852860 = require("./852860.jsx"),
   Chunk367907 = require("./367907.js"),
   Chunk314897 = require("./314897.js"),
   Chunk626135 = require("./626135.js"),
@@ -61,8 +61,8 @@ function y(e) {
     clearSelection: H
   } = (0, f.Z)(t), _ = O.size > 0, w = async (e, t, n, r) => {
     try {
-      let l = await c.Z.banMultipleUsers(e, t, n, r);
-      (0, s.showToast)((0, s.createToast)(g.intl.string(g.t.AsCe5I), s.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, v(x({}, (0, d.hH)(e)), {
+      let l = await u.Z.banMultipleUsers(e, t, n, r);
+      (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.AsCe5I), c.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, v(x({}, (0, d.hH)(e)), {
         action_type: b.jQ.BAN,
         target_user_ids: [...O],
         mod_user_id: C.default.getId(),
@@ -70,36 +70,36 @@ function y(e) {
         location
       }))
     } catch (e) {
-      (0, s.showToast)((0, s.createToast)(g.intl.string(g.t.mICAWY), s.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.mICAWY), c.ToastType.FAILURE))
     }
     H()
   }, S = l.useCallback(() => {
     H()
   }, [H]), Z = (0, r.jsxs)("span", {
     className: j.messageContainer,
-    children: [(0, r.jsx)(s.tBG, {
+    children: [(0, r.jsx)(c.tBG, {
       size: "custom",
       width: 24,
       height: 24,
-      color: (0, s.dQu)(i.Z.unsafe_rawColors.PRIMARY_500).hex()
-    }), (0, r.jsx)(s.Text, {
+      color: (0, c.dQu)(i.Z.unsafe_rawColors.PRIMARY_500).hex()
+    }), (0, r.jsx)(c.Text, {
       variant: "heading-md/bold",
       color: "text-default",
       children: g.intl.format(g.t.TstoSZ, {
         count: O.size
       })
-    }), (0, r.jsx)(s.Avr, {
+    }), (0, r.jsx)(c.Avr, {
       text: g.intl.string(g.t.yW6ZdE),
       onClick: S
     })]
   }), N = (0, r.jsxs)("span", {
     className: j.buttonContainer,
-    children: [(0, r.jsx)(s.pgN, {
+    children: [(0, r.jsx)(c.pgN, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(c.Text, {
       variant: "text-sm/semibold",
       color: "currentColor",
       children: g.intl.string(g.t["2a50fF"])
@@ -108,15 +108,15 @@ function y(e) {
   return y ? (0, r.jsx)(o.W, {
     component: "div",
     className: j.saveNoticeContainer,
-    children: _ && (0, r.jsx)(s.oXn, {
-      children: (0, r.jsx)(u.Z, {
+    children: _ && (0, r.jsx)(c.oXn, {
+      children: (0, r.jsx)(a.Z, {
         onSave: () => {
           m.default.track(h.rMx.BULK_MODERATION_ACTION_STARTED, v(x({}, (0, d.hH)(t)), {
             action_type: b.jQ.BAN,
             target_user_ids: [...O],
             mod_user_id: C.default.getId(),
             location
-          })), (0, s.ZDy)(async () => {
+          })), (0, c.ZDy)(async () => {
             let {
               default: e
             } = await n.e("10533").then(n.bind(n, 497880));
@@ -129,7 +129,7 @@ function y(e) {
           })
         },
         onSaveText: N,
-        onSaveButtonColor: a.Tt.RED,
+        onSaveButtonColor: s.Tt.RED,
         message: Z
       })
     })

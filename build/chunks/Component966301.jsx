@@ -8,8 +8,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk796027 = require("./796027.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk852860 = require("./852860.jsx"),
   Chunk471445 = require("./471445.js"),
   Chunk45966 = require("./45966.js"),
   Chunk637853 = require("./637853.js"),
@@ -29,19 +29,19 @@ function C(e) {
   let {
     guildId: t,
     prompts: n
-  } = e, s = (0, l.e7)([g.Z], () => g.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...s]), m = c.length, p = c.length + u.length, f = m / p * 100, h = Math.max(Math.ceil(85 * p / 100) - m, 0), [b, x] = i.useState(false), j = b ? a.CJ0 : a.u04;
+  } = e, a = (0, l.e7)([g.Z], () => g.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...a]), m = c.length, p = c.length + u.length, f = m / p * 100, h = Math.max(Math.ceil(85 * p / 100) - m, 0), [b, x] = i.useState(false), j = b ? s.CJ0 : s.u04;
   return (0, r.jsxs)("div", {
     className: _.channelCoverage,
-    children: [(0, r.jsxs)(a.P3F, {
+    children: [(0, r.jsxs)(s.P3F, {
       className: _.coverageHeader,
       onClick: () => x(!b),
       children: [(0, r.jsxs)("div", {
         className: _.warningTextContainer,
-        children: [f <= 85 && (0, r.jsx)(a.Mgn, {
+        children: [f <= 85 && (0, r.jsx)(s.Mgn, {
           size: "xs",
           color: "currentColor",
           className: _.warning
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(s.Text, {
           className: _.coverageTitle,
           variant: "text-xs/medium",
           color: "text-muted",
@@ -51,7 +51,7 @@ function C(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: _.progressContainer,
-        children: [(0, r.jsx)(a.Exd, {
+        children: [(0, r.jsx)(s.Exd, {
           className: _.coverageProgress,
           foregroundColor: f > 85 ? "var(--status-positive)" : "var(--status-warning)",
           percent: f
@@ -63,7 +63,7 @@ function C(e) {
       })]
     }), b ? (0, r.jsxs)("div", {
       className: _.channelCoverageDetails,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
         children: v.intl.string(v.t["0FM4i+"])
@@ -71,10 +71,10 @@ function C(e) {
         className: _.channels,
         children: u.map(e => {
           var t;
-          let n = null != (t = (0, o.KS)(e)) ? t : a.VL1;
+          let n = null != (t = (0, o.KS)(e)) ? t : s.VL1;
           return (0, r.jsx)("div", {
             className: _.channelPill,
-            children: (0, r.jsxs)(a.Text, {
+            children: (0, r.jsxs)(s.Text, {
               className: _.channel,
               variant: "text-xs/normal",
               color: "interactive-active",
@@ -88,17 +88,17 @@ function C(e) {
       }), (0, r.jsx)("div", {
         className: _.channelCoverageHint,
         children: h > 0 ? (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(a.Mgn, {
+          children: [(0, r.jsx)(s.Mgn, {
             size: "xs",
             color: "currentColor"
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(s.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             children: v.intl.format(v.t.sX8890, {
               numChannels: h
             })
           })]
-        }) : (0, r.jsx)(a.Text, {
+        }) : (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
           children: v.intl.string(v.t.o4s29v)
@@ -122,9 +122,9 @@ function y(e) {
   let {
     guild: t,
     saveOnClose: n
-  } = e, s = (0, l.e7)([c.Z], () => c.Z.isLoading()), o = (0, l.e7)([f.Z], () => f.Z.editedOnboardingPrompts), d = (0, l.e7)([f.Z], () => f.Z.advancedMode), u = i.useRef(false);
+  } = e, a = (0, l.e7)([c.Z], () => c.Z.isLoading()), o = (0, l.e7)([f.Z], () => f.Z.editedOnboardingPrompts), d = (0, l.e7)([f.Z], () => f.Z.advancedMode), u = i.useRef(false);
   i.useEffect(() => {
-    s || u.current || (u.current = true, d || 0 !== o.length || (0, p.tS)(t, [(0, j.ae)()], false))
+    a || u.current || (u.current = true, d || 0 !== o.length || (0, p.tS)(t, [(0, j.ae)()], false))
   });
   let g = i.useRef(t);
   if (i.useEffect(() => {
@@ -142,29 +142,29 @@ function y(e) {
     } catch (e) {}
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.Heading, {
+    children: [(0, r.jsx)(s.Heading, {
       className: _.header,
       variant: "heading-lg/extrabold",
       children: d ? v.intl.string(v.t.AGjtFv) : v.intl.string(v.t.dqCzoT)
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: v.intl.string(v.t["q/6MLL"])
     }), (0, r.jsxs)("div", {
       className: _.links,
-      children: [(0, r.jsx)(a.Anchor, {
+      children: [(0, r.jsx)(s.Anchor, {
         target: "_blank",
         href: x.EYA.GUILD_ONBOARDING_EXAMPLES,
-        children: (0, r.jsx)(a.Text, {
+        children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-link",
           children: v.intl.string(v.t.Ok55Kh)
         })
       }), (0, r.jsx)("div", {
         className: _.dot
-      }), (0, r.jsx)(a.Anchor, {
+      }), (0, r.jsx)(s.Anchor, {
         onClick: O,
-        children: (0, r.jsx)(a.Text, {
+        children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-link",
           children: v.intl.string(v.t["6gsjdM"])
@@ -179,7 +179,7 @@ function y(e) {
       prompts: o
     }), (0, r.jsx)("div", {
       className: _.prompts,
-      children: s ? (0, r.jsx)(a.$jN, {}) : (0, r.jsx)(b.Z, {
+      children: a ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(b.Z, {
         postjoinOnly: d,
         guildId: t.id
       })
@@ -190,7 +190,7 @@ function y(e) {
 function E() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
     t = (0, Chunk442837.e7)([Chunk208665.Z], () => Chunk208665.Z.submitting);
-  return null == module ? null : (0, Chunk951288.jsx)(Chunk852860.Z, {
+  return null == module ? null : (0, Chunk951288.jsx)(Chunk796027.Z, {
     onSave: () => {
       try {
         (0, Chunk570961.rS)(module)

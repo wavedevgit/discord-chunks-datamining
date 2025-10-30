@@ -11,10 +11,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk433517 = require("./433517.js"),
+  Chunk796027 = require("./796027.jsx"),
   Chunk28664 = require("./28664.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk852860 = require("./852860.jsx"),
   Chunk493773 = require("./493773.js"),
   Chunk933557 = require("./933557.js"),
   Chunk769654 = require("./769654.js"),
@@ -77,7 +77,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       })),
       l = Object.keys(Chunk647438),
       s = Chunk345074.length > 0 ? Chunk345074[0] : null;
-    return e = "rules_channel_id" === Chunk544891 ? Chunk388032.intl.string(Chunk388032.t["7IrBYt"]) : null != Chunk544891 ? Chunk647438[Chunk544891] : true, (0, Chunk951288.jsx)(Chunk852860.Z, {
+    return e = "rules_channel_id" === Chunk544891 ? Chunk388032.intl.string(Chunk388032.t["7IrBYt"]) : null != Chunk544891 ? Chunk647438[Chunk544891] : true, (0, Chunk951288.jsx)(Chunk796027.Z, {
       submitting: require,
       onReset: () => {
         null != exports && Chunk434404.Z.init(exports.id)
@@ -100,7 +100,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       discoveryEnabled: t,
       onboardingEnabled: n,
       guild: l
-    } = e, [c, g] = i.useState(true === o.K.get(Z)), p = (0, a.e7)([b.Z], () => {
+    } = e, [c, d] = i.useState(true === o.K.get(Z)), p = (0, a.e7)([b.Z], () => {
       var e;
       return null != (e = b.Z.getMemberCount(l.id)) ? e : 0
     }), [h, j] = i.useState(false);
@@ -135,24 +135,24 @@ let Z = "dismissedCommunityFeaturesUpsell",
           width: 60,
           className: S.upsellImage
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(u.Heading, {
+          children: [(0, r.jsx)(g.Heading, {
             variant: "heading-md/semibold",
             className: S.upsellHeader,
             children: I.intl.string(I.t["pR/Bge"])
-          }), (0, r.jsx)(u.Text, {
+          }), (0, r.jsx)(g.Text, {
             variant: "text-sm/normal",
             children: I.intl.string(I.t["V+Yo1l"])
           })]
         })]
-      }), (0, r.jsx)(d.zx, {
+      }), (0, r.jsx)(u.zx, {
         "aria-label": I.intl.string(I.t.cpT0Cq),
-        look: d.zx.Looks.BLANK,
-        size: d.zx.Sizes.NONE,
+        look: u.zx.Looks.BLANK,
+        size: u.zx.Sizes.NONE,
         className: S.upsellClose,
         onClick: () => {
-          o.K.set(Z, true), g(true)
+          o.K.set(Z, true), d(true)
         },
-        children: (0, r.jsx)(u.Dio, {
+        children: (0, r.jsx)(g.Dio, {
           size: "md",
           color: "currentColor"
         })
@@ -161,7 +161,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         children: [_ && (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: S.upsellButton,
-          children: (0, r.jsx)(u.Button, {
+          children: (0, r.jsx)(g.Button, {
             variant: "primary",
             size: "sm",
             text: I.intl.string(I.t.iF1Asi),
@@ -170,7 +170,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         }), n ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: S.upsellButton,
-          children: (0, r.jsx)(u.Button, {
+          children: (0, r.jsx)(g.Button, {
             variant: "primary",
             size: "sm",
             text: I.intl.string(I.t["S/Dfid"]),
@@ -181,7 +181,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         }), t ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: S.upsellButton,
-          children: (0, r.jsx)(u.Button, {
+          children: (0, r.jsx)(g.Button, {
             variant: "secondary",
             size: "sm",
             text: I.intl.string(I.t["0kmJdw"]),
@@ -192,7 +192,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: S.upsellButton,
-          children: (0, r.jsx)(u.Button, {
+          children: (0, r.jsx)(g.Button, {
             variant: "secondary",
             size: "sm",
             text: I.intl.string(I.t.BQIYTb),
@@ -214,8 +214,8 @@ let Z = "dismissedCommunityFeaturesUpsell",
         isGuildAdmin: Chunk496675.Z.can(Chunk981631.Plq.ADMINISTRATOR, module)
       })),
       s = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != module ? Chunk984933.ZP.getChannels(module.id) : null),
-      d = Chunk647438.useMemo(Chunk929834.jb, []),
-      g = true !== Chunk433517.K.get(Z);
+      c = Chunk647438.useMemo(Chunk929834.jb, []),
+      u = true !== Chunk433517.K.get(Z);
     if (null == module) return null;
     let m = [];
     null != Chunk544891 && Chunk544891[Chunk984933.sH].forEach(e => {
@@ -246,7 +246,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.nRtNqn)
-      }), Chunk852860 ? (0, Chunk951288.jsx)(D, {
+      }), Chunk755721 ? (0, Chunk951288.jsx)(D, {
         discoveryEnabled: module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE),
         onboardingEnabled: module.features.has(Chunk981631.GuildFeatures.GUILD_ONBOARDING),
         guild: module
@@ -291,7 +291,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         label: Chunk388032.intl.string(Chunk388032.t.pO60fy),
         description: Chunk388032.intl.string(Chunk388032.t.aIR73T),
         value: module.preferredLocale,
-        options: Chunk755721,
+        options: Chunk796027,
         onChange: e => {
           C.Z.updateGuild({
             preferredLocale: e
@@ -321,30 +321,30 @@ let Z = "dismissedCommunityFeaturesUpsell",
             size: "sm",
             text: Chunk388032.intl.string(Chunk388032.t.c1BmbC),
             onClick: () => {
-              module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE) && module.features.has(Chunk981631.GuildFeatures.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
+              module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE) && module.features.has(Chunk981631.GuildFeatures.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(g.ConfirmModal, w(P({}, e), {
                 header: I.intl.string(I.t.iBnVHc),
                 confirmText: I.intl.string(I.t["cY+Oob"]),
                 cancelText: I.intl.string(I.t.oEAioF),
                 onConfirm: f,
-                children: (0, r.jsx)(u.Text, {
+                children: (0, r.jsx)(g.Text, {
                   variant: "text-sm/normal",
                   children: I.intl.string(I.t["P+Sh8V"])
                 })
-              }))) : module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
+              }))) : module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(g.ConfirmModal, w(P({}, e), {
                 header: I.intl.string(I.t.iBnVHc),
                 confirmText: I.intl.string(I.t["cY+Oob"]),
                 cancelText: I.intl.string(I.t.oEAioF),
                 onConfirm: f,
-                children: (0, r.jsx)(u.Text, {
+                children: (0, r.jsx)(g.Text, {
                   variant: "text-sm/normal",
                   children: I.intl.string(I.t["eMx/uZ"])
                 })
-              }))) : module.features.has(Chunk981631.GuildFeatures.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
+              }))) : module.features.has(Chunk981631.GuildFeatures.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(g.ConfirmModal, w(P({}, e), {
                 header: I.intl.string(I.t.iBnVHc),
                 confirmText: I.intl.string(I.t["cY+Oob"]),
                 cancelText: I.intl.string(I.t.oEAioF),
                 onConfirm: f,
-                children: (0, r.jsx)(u.Text, {
+                children: (0, r.jsx)(g.Text, {
                   variant: "text-sm/normal",
                   children: I.intl.string(I.t.l1wLeX)
                 })

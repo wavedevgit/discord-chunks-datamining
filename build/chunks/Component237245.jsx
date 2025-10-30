@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk796027 = require("./796027.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk852860 = require("./852860.jsx"),
   Chunk881052 = require("./881052.js"),
   Chunk456268 = require("./456268.js"),
   Chunk863249 = require("./863249.js"),
@@ -173,7 +173,7 @@ function N(e) {
     }
     if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? true : e.some(e => (0, g._C)(e)))) return void R(O.intl.string(O.t.HGVrI3));
     (e => {
-      if (D && A > 0 && l.joinType !== j.A.APPLY) return (0, a.ZDy)(async () => {
+      if (D && A > 0 && l.joinType !== j.A.APPLY) return (0, s.ZDy)(async () => {
         let {
           default: t
         } = await n.e("55009").then(n.bind(n, 826390));
@@ -185,7 +185,7 @@ function N(e) {
       });
       e()
     })(e => (e => {
-      if (l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED) return void(0, a.ZDy)(async () => {
+      if (l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED) return void(0, s.ZDy)(async () => {
         let {
           default: t
         } = await n.e("67376").then(n.bind(n, 207252));
@@ -197,7 +197,7 @@ function N(e) {
       e()
     })(() => B(e)))
   }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, W = null != N.description && I.primaryCategoryId !== C.o3 && I.keywords.length > 0;
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(a.Z, {
     message: H ? O.intl.string(O.t.V2G2Yr) : true,
     onSaveText: H ? O.intl.string(O.t["qjtt/p"]) : true,
     submitting: P,
@@ -218,7 +218,7 @@ function I() {
   })), {
     settingsGuild: n,
     settingsMetadata: i,
-    originalGuild: a,
+    originalGuild: s,
     guildProfile: o
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => {
     let {
@@ -234,7 +234,7 @@ function I() {
       guildProfile: Chunk951288
     }
   });
-  return null == module || null == require ? null : module.joinType === Chunk384632.A.DISCOVERABLE && module.settingsView === Chunk386885.U.INELIGIBLE ? (0, Chunk951288.jsx)(Chunk852860.Z, {
+  return null == module || null == require ? null : module.joinType === Chunk384632.A.DISCOVERABLE && module.settingsView === Chunk386885.U.INELIGIBLE ? (0, Chunk951288.jsx)(Chunk796027.Z, {
     message: Chunk388032.intl.string(Chunk388032.t.TEXwRt),
     onReset: () => Chunk434404.Z.init(require.id, Chunk981631.pNK.ACCESS)
   }) : (0, Chunk951288.jsx)(N, {

@@ -7,10 +7,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
   Chunk215569 = require("./215569.js"),
+  Chunk796027 = require("./796027.jsx"),
   Chunk159691 = require("./159691.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk852860 = require("./852860.jsx"),
   Chunk313201 = require("./313201.js"),
   Chunk944163 = require("./944163.js"),
   Chunk266395 = require("./266395.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk592286 = require("./592286.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk184326 = require("./184326.js");
-let b = () => (0, Chunk951288.jsx)(Chunk852860.Z, {
+let b = () => (0, Chunk951288.jsx)(Chunk796027.Z, {
     submitting: false,
     message: Chunk388032.intl.string(Chunk388032.t["8g514U"]),
     onReset: () => {
@@ -36,8 +36,8 @@ let b = () => (0, Chunk951288.jsx)(Chunk852860.Z, {
     let {
       transitionState: t,
       guildId: n,
-      onClose: o,
-      onComplete: u,
+      onClose: a,
+      onComplete: c,
       inviteKey: g,
       isPreview: p = false
     } = e, j = (0, f.rb)(e => e.shouldShowWarning), {
@@ -45,17 +45,17 @@ let b = () => (0, Chunk951288.jsx)(Chunk852860.Z, {
       hasFetched: _
     } = (0, h.ng)(n, p, g), O = (0, d.Dt)();
     return (l.useEffect(() => {
-      _ && C === m.t && o()
-    }, [_, o, C]), C === m.t) ? null : (0, r.jsxs)(r.Fragment, {
+      _ && C === m.t && a()
+    }, [_, a, C]), C === m.t) ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(i.IX, {
         transitionState: t,
         "aria-labelledby": O,
         size: "xl",
-        onClose: o,
+        onClose: a,
         children: [(0, r.jsx)("div", {
           className: v.closeButton,
-          children: (0, r.jsx)(a.PZ7, {
-            onClick: () => o(false)
+          children: (0, r.jsx)(o.PZ7, {
+            onClick: () => a(false)
           })
         }), (0, r.jsx)("div", {
           className: v.container,
@@ -63,13 +63,13 @@ let b = () => (0, Chunk951288.jsx)(Chunk852860.Z, {
             verificationForm: C,
             headerId: O,
             guildId: n,
-            onClose: o,
-            onComplete: u,
+            onClose: a,
+            onComplete: c,
             isPreview: p
           })
         })]
       }), (0, r.jsx)(s.W, {
-        children: true === j && (0, r.jsx)(c.oXn, {
+        children: true === j && (0, r.jsx)(u.oXn, {
           className: v.notice,
           children: (0, r.jsx)(b, {})
         })
