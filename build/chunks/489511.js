@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 203872, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 489511, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   R: () => d
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk647438 = require("./647438.js"),
   Chunk522942 = require("./522942.js"),
   Chunk342905 = require("./342905.js"),
-  Chunk242824 = require("./242824.js"),
+  Chunk271631 = require("./271631.js"),
   Chunk352609 = require("./352609.js"),
   Chunk388032 = require("./388032.jsx");
 let c = {
@@ -28,7 +28,7 @@ let c = {
   };
 
 function d(e) {
-  let t = (0, o.P)(e);
+  let t = (0, o.Z)(e);
   return r.useMemo(() => {
     var n, r;
     return {

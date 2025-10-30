@@ -18,10 +18,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk302221 = require("./302221.js"),
   Chunk594928 = require("./594928.js"),
+  Chunk489511 = require("./489511.js"),
   Chunk181430 = require("./181430.js"),
   Chunk821795 = require("./821795.js"),
   Chunk760692 = require("./760692.js"),
-  Chunk203872 = require("./203872.js"),
   Chunk7284 = require("./7284.js"),
   Chunk492333 = require("./492333.js");
 let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
@@ -30,7 +30,7 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
     let {
       userName: n,
       displayNameStyles: a,
-      effectDisplayType: s = E.F.STATIC,
+      effectDisplayType: s = b.F.STATIC,
       inProfile: S = false,
       textClassName: A,
       loop: C = false,
@@ -50,24 +50,24 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       includeNonProfile: x
     } = m.fN.useExperiment({
       location: "useDisplayNameStylesFont"
-    }), M = (0, g.Y)({
+    }), M = (0, E.Y)({
       location: "UserNameWithEffects"
-    }), k = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), j = null != (t = null == a ? true : a.effectId) ? t : c.m.SOLID, U = (0, y.R)(j), G = (0, _.qgQ)(n), B = (0, f.EJ)(G, j === c.m.TOON ? v.emoji : true), Z = i.useMemo(() => null != a && M ? a.colors.map(e => (0, h.wh)({
+    }), k = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), j = null != (t = null == a ? true : a.effectId) ? t : c.m.SOLID, U = (0, g.R)(j), G = (0, _.qgQ)(n), B = (0, f.EJ)(G, j === c.m.TOON ? v.emoji : true), Z = i.useMemo(() => null != a && M ? a.colors.map(e => (0, h.wh)({
       foreground: o()(e),
       background: j === c.m.TOON ? o()("#333") : o()(k),
       ratio: U.minContrastRatio,
       saturationFactor: L
     }).hex()) : [], [a, M, j, U.minContrastRatio, L, k]);
     if (!M || !S && !x || null == a) return n;
-    let F = (0, b.K)(j, Z, {
+    let F = (0, y.K)(j, Z, {
         shouldWrap: N,
         fontOpacity: I.includes(a.fontId) ? R : 1
       }),
       V = T(j);
     return (0, r.jsxs)("div", {
       className: l()(v.container, w, A, {
-        [v.showEffect]: s !== E.F.PLAIN,
-        [v.animated]: s === E.F.ANIMATED && !D,
+        [v.showEffect]: s !== b.F.PLAIN,
+        [v.animated]: s === b.F.ANIMATED && !D,
         [v.loop]: C,
         [v.inProfile]: S
       }),

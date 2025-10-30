@@ -9,9 +9,9 @@ var Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk489511 = require("./489511.js"),
   Chunk821795 = require("./821795.js"),
   Chunk892567 = require("./892567.jsx"),
-  Chunk203872 = require("./203872.js"),
   Chunk660662 = require("./660662.js"),
   Chunk352609 = require("./352609.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -52,15 +52,15 @@ function x(e) {
     effectId: t,
     selected: n,
     onClick: o
-  } = e, i = (0, d.R)(t);
+  } = e, i = (0, s.R)(t);
   return (0, l.jsx)(a.P3F, {
     className: r()(g.effectContainer, {
       [g.selected]: n
     }),
     onClick: o,
-    children: (0, l.jsx)(c.Z, {
+    children: (0, l.jsx)(d.Z, {
       userName: i.name,
-      effectDisplayType: s.F.STATIC,
+      effectDisplayType: c.F.STATIC,
       displayNameStyles: i.previewStyles,
       textClassName: g.effectText,
       inProfile: true

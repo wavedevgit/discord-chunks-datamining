@@ -24,7 +24,7 @@ function h(e) {
     className: h
   } = e, {
     analyticsLocations: p
-  } = (0, c.ZP)(), O = async () => {
+  } = (0, c.ZP)(), I = async () => {
     try {
       await o.Z.removeSkuFromWishlist(r, t.skuId, p)
     } catch (e) {
@@ -34,7 +34,7 @@ function h(e) {
   return (0, n.jsx)(s.u, {
     text: f.intl.string(f.t.jTW016),
     children: (0, n.jsx)(a.P3F, {
-      onClick: O,
+      onClick: I,
       "aria-label": f.intl.string(f.t.jTW016),
       className: l()(h, m.clickable),
       children: (0, n.jsx)(a.XHJ, {

@@ -41,17 +41,17 @@ function v(e) {
     size: o.EFr.SIZE_48,
     "aria-label": _
   }) : null, R = (0, i.jsx)("div", {
-    className: I.cardStateIconWrapper,
+    className: O.cardStateIconWrapper,
     children: (0, i.jsx)(o.sV5, {
       size: "custom",
       color: o.TVs.colors.WHITE,
       width: 38,
       height: 38,
-      className: a()(I.cardStateIcon, I.checkmark),
-      "aria-label": O.intl.string(O.t.L5Pt9L)
+      className: a()(O.cardStateIcon, O.checkmark),
+      "aria-label": I.intl.string(I.t.L5Pt9L)
     })
   }), F = (0, i.jsx)("div", {
-    className: I.overlay,
+    className: O.overlay,
     children: (0, i.jsx)(o.Button, {
       focusProps: {
         ringTarget: T
@@ -74,13 +74,13 @@ function v(e) {
     }), b()
   }, G = (0, i.jsxs)("div", {
     ref: y,
-    className: I.container,
+    className: O.container,
     children: [(0, i.jsxs)("div", {
       ref: T,
-      className: a()(I.card, {
-        [I.isOwned]: w,
-        [I.smallCard]: "gifting_flow" === s,
-        [I.largeCard]: "profile_modal" === s
+      className: a()(O.card, {
+        [O.isOwned]: w,
+        [O.smallCard]: "gifting_flow" === s,
+        [O.largeCard]: "profile_modal" === s
       }),
       onClick: A,
       children: [(0, i.jsx)(o.nn4, {
@@ -88,7 +88,7 @@ function v(e) {
           children: P
         })
       }), (0, i.jsx)("div", {
-        className: I.cardPreview,
+        className: O.cardPreview,
         children: v()
       }), w && R, "profile_modal" === s ? F : (0, i.jsx)(o.P3F, {
         "aria-label": j,
@@ -103,12 +103,12 @@ function v(e) {
       iconSize: "sm",
       item: t,
       wishlistId: r,
-      className: I.removeItemButton
+      className: O.removeItemButton
     })]
   });
   return C ? (0, i.jsx)(c.i_, {
     asContainer: true,
-    title: O.intl.formatToPlainString(O.t.TL4ktE, {
+    title: I.intl.formatToPlainString(I.t.TL4ktE, {
       username: _
     }),
     body: t.skuName,

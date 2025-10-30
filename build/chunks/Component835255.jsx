@@ -140,7 +140,7 @@ function A(e) {
     analyticsLocations: G
   } = (0, h.ZP)(), D = (0, a.TH)(), W = i.useRef(null), {
     isHoveringOrFocusing: H
-  } = (0, g.Z)(W), [M] = (0, u.Wu)([b.Z], () => [b.Z.hasSentGift(F.skuId, l.id)], [F.skuId, l.id]), U = M || true === F.isOwned, z = F.collectiblesItem.type, B = (() => {
+  } = (0, g.Z)(W), [M] = (0, u.Wu)([b.Z], () => [b.Z.hasSentGift(F.skuId, l.id)], [F.skuId, l.id]), U = M || true === F.isOwned, z = F.collectiblesItem.type, Y = (() => {
     switch (z) {
       case c.Z.AVATAR_DECORATION:
         return L.intl.formatToPlainString(L.t.IQQYef, {
@@ -157,7 +157,7 @@ function A(e) {
       default:
         (0, S.vE)(z)
     }
-  })(), V = A || U ? L.intl.string(L.t.FdGl5A) : L.intl.string(L.t.ilhtIa), Y = A || U ? true : f.OgN, K = i.useCallback(() => {
+  })(), B = A || U ? L.intl.string(L.t.FdGl5A) : L.intl.string(L.t.ilhtIa), V = A || U ? true : f.OgN, q = i.useCallback(() => {
     let e = D.pathname.startsWith(T.Z5c.COLLECTIBLES_SHOP);
     if (A || U) {
       let t = !A && U;
@@ -165,10 +165,10 @@ function A(e) {
         let e = p.Z.getProduct(F.skuId),
           r = p.Z.getCategoryForProduct(F.skuId);
         if (null != e && null != r) {
-          t || (0, x.closeUserProfileModal)(), (0, O.T)({
+          t || (0, x.closeUserProfileModal)(), (0, I.T)({
             product: e,
             category: r,
-            shouldCheckoutWithOrbs: (0, I.oQ)({
+            shouldCheckoutWithOrbs: (0, O.oQ)({
               product: e
             }),
             analyticsLocations: G,
@@ -189,7 +189,7 @@ function A(e) {
       giftRecipient: l,
       variantsReturnStyle: o.v.VARIANTS_GROUP
     })
-  }, [D.pathname, F.skuId, G, A, U, l, Z]), q = i.useCallback(() => s ? C === j.lr.WISHLIST ? (0, n.jsx)("div", {
+  }, [D.pathname, F.skuId, G, A, U, l, Z]), K = i.useCallback(() => s ? C === j.lr.WISHLIST ? (0, n.jsx)("div", {
     className: _.itemIcon,
     children: (0, n.jsx)(d.u, {
       text: L.intl.formatToPlainString(L.t.p3RmJF, {
@@ -209,7 +209,7 @@ function A(e) {
     children: (0, n.jsx)(d.u, {
       text: L.intl.string(L.t.Ig6VDH),
       position: "top",
-      children: (0, n.jsx)(f.EOn, {
+      children: (0, n.jsx)(f.YqE, {
         size: "custom",
         width: 20,
         height: 20,
@@ -242,13 +242,13 @@ function A(e) {
     return e
   }({}, R), r = r = {
     cardRef: W,
-    accessibleLabel: B,
-    onCardClick: K,
-    buttonCTALabel: V,
-    buttonIcon: Y,
+    accessibleLabel: Y,
+    onCardClick: q,
+    buttonCTALabel: B,
+    buttonIcon: V,
     isOwned: U,
     renderItemPreview: Q,
-    renderSourceIcon: q
+    renderSourceIcon: K
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

@@ -26,12 +26,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk51144 = require("./51144.js"),
   Chunk364747 = require("./364747.js"),
   Chunk131016 = require("./131016.js"),
+  Chunk489511 = require("./489511.js"),
   Chunk579346 = require("./579346.jsx"),
   Chunk438759 = require("./438759.jsx"),
   Chunk512070 = require("./512070.jsx"),
   Chunk299939 = require("./299939.jsx"),
   Chunk305813 = require("./305813.jsx"),
-  Chunk203872 = require("./203872.js"),
   Chunk981631 = require("./981631.js"),
   Chunk352609 = require("./352609.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -51,7 +51,7 @@ function w(e) {
     userDisplayNameStyles: q,
     guildDisplayNameStyles: K,
     pendingDisplayNameStyles: X
-  } = (0, x.mD)(H, G), V = true !== X ? X : null != K ? K : q, [W, $] = o.useState(null != (n = null == V ? true : V.fontId) ? n : a.C.DEFAULT), [J, Q] = o.useState(null != (w = null == V ? true : V.effectId) ? w : i.m.SOLID), ee = (0, D.R)(J), et = (0, D.R)(i.m.GRADIENT), en = null != (B = null == V ? true : V.colors) ? B : [], [el, eo] = o.useState(en.length > 0 && J !== i.m.GRADIENT ? en[0] : ee.defaultColors[0]), [er, ei] = o.useState(en.length > 0 && J === i.m.GRADIENT ? en : et.defaultColors);
+  } = (0, x.mD)(H, G), V = true !== X ? X : null != K ? K : q, [W, $] = o.useState(null != (n = null == V ? true : V.fontId) ? n : a.C.DEFAULT), [J, Q] = o.useState(null != (w = null == V ? true : V.effectId) ? w : i.m.SOLID), ee = (0, y.R)(J), et = (0, y.R)(i.m.GRADIENT), en = null != (B = null == V ? true : V.colors) ? B : [], [el, eo] = o.useState(en.length > 0 && J !== i.m.GRADIENT ? en[0] : ee.defaultColors[0]), [er, ei] = o.useState(en.length > 0 && J === i.m.GRADIENT ? en : et.defaultColors);
   (0, f.Z)({
     type: r.ImpressionTypes.POPOUT,
     name: r.ImpressionNames.DISPLAY_NAME_STYLES_MODAL
@@ -118,23 +118,23 @@ function w(e) {
                 variant: "heading-lg/semibold",
                 children: I.intl.string(A.default.ZPMAlX)
               })
-            }), (0, l.jsx)(O.Z, {
+            }), (0, l.jsx)(T.Z, {
               selectedFontId: W,
               setSelectedFontId: $,
               displayName: z,
               className: L.selectionSubSection
-            }), (0, l.jsx)(k.Z, {
+            }), (0, l.jsx)(O.Z, {
               selectedEffectId: J,
               setSelectedEffectId: ep,
               className: L.selectionSubSection
-            }), (0, l.jsx)(y.Z, {
+            }), (0, l.jsx)(k.Z, {
               selectedColors: es,
               setSelectedColors: em,
               selectedEffectId: J,
               className: L.selectionSubSection,
               defaultColor: ee.defaultColors[0]
             })]
-          }), (0, l.jsx)(E.Z, {
+          }), (0, l.jsx)(D.Z, {
             user: H,
             guild: U,
             displayName: z,
@@ -143,7 +143,7 @@ function w(e) {
             selectedColors: J === i.m.SOLID && (0, c.E)(es, ee.defaultColors) ? [] : es,
             onClose: Y
           })]
-        }), (0, l.jsx)(T.B, {
+        }), (0, l.jsx)(E.B, {
           onApply: ed,
           onSurpriseMe: eu,
           onClose: Y,
