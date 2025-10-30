@@ -199,7 +199,8 @@ function j(e) {
           price: e,
           className: w.giftPreview,
           isSelected: true,
-          shouldDisplayHeader: true
+          shouldDisplayHeader: true,
+          hideProfilePreview: M === R.Wt.DM_CHANNEL_WISHLIST
         }), (0, r.jsx)(G, {
           handleClose: n,
           selectedSkuId: B

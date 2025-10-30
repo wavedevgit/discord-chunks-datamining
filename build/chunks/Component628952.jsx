@@ -70,19 +70,20 @@ let C = e => {
     price: a,
     onSelect: s,
     shouldDisplayHeader: I = false,
-    className: T
+    className: T,
+    hideProfilePreview: C = false
   } = e, {
-    product: C
+    product: N
   } = (0, m.T)(t, true), {
-    giftRecipient: N,
-    giftRecipientError: R
-  } = (0, f.wD)(), P = (0, u.e7)([h.default], () => h.default.getCurrentUser()), w = (0, y.kd)(C), D = i.useRef(null);
-  if (null == C) return null;
-  let [L] = C.items;
-  l()(null != L, "Product item should not be empty");
-  let x = () => {
-      if ((null == C ? true : C.type) === c.Z.BUNDLE) return null;
-      switch (L.type) {
+    giftRecipient: R,
+    giftRecipientError: P
+  } = (0, f.wD)(), w = (0, u.e7)([h.default], () => h.default.getCurrentUser()), D = (0, y.kd)(N), L = i.useRef(null);
+  if (null == N) return null;
+  let [x] = N.items;
+  l()(null != x, "Product item should not be empty");
+  let M = () => {
+      if ((null == N ? true : N.type) === c.Z.BUNDLE) return null;
+      switch (x.type) {
         case c.Z.AVATAR_DECORATION:
           return O.intl.string(O.t["7v0T9P"]);
         case c.Z.PROFILE_EFFECT:
@@ -93,8 +94,8 @@ let C = e => {
           return null
       }
     },
-    M = null != N && N.id !== (null == P ? true : P.id) && C.type !== c.Z.BUNDLE && L.type !== c.Z.NAMEPLATE,
-    k = () => {
+    k = null != R && R.id !== (null == w ? true : w.id) && N.type !== c.Z.BUNDLE && x.type !== c.Z.NAMEPLATE && !C,
+    j = () => {
       null != t && null != s && s(t)
     };
   return (0, r.jsxs)("div", {
@@ -103,14 +104,14 @@ let C = e => {
       className: v.previewTitleContainer,
       children: (0, r.jsx)(d.gNt, {
         label: O.intl.string(O.t.PpoJzt),
-        children: M && (0, r.jsx)(d.yRy, {
-          targetElementRef: D,
-          preload: () => (0, p.Z)(N.id, N.getAvatarURL(null, 80)),
+        children: k && (0, r.jsx)(d.yRy, {
+          targetElementRef: L,
+          preload: () => (0, p.Z)(R.id, R.getAvatarURL(null, 80)),
           renderPopout: e => (0, r.jsx)(_.Z, A(S({}, e), {
-            user: N,
-            pendingAvatar: N.getAvatarURL(null, (0, d.pxk)(d.EFr.SIZE_80)),
-            pendingAvatarDecoration: (0, g.M)(L) ? L : null,
-            pendingProfileEffect: (0, E.H)(L) ? L : null,
+            user: R,
+            pendingAvatar: R.getAvatarURL(null, (0, d.pxk)(d.EFr.SIZE_80)),
+            pendingAvatarDecoration: (0, g.M)(x) ? x : null,
+            pendingProfileEffect: (0, E.H)(x) ? x : null,
             canUsePremiumCustomization: true,
             disabledInputs: true,
             hideExampleButton: true
@@ -119,47 +120,47 @@ let C = e => {
           position: "right",
           children: e => (0, r.jsx)(d.P3F, A(S({}, e), {
             className: v.previewLink,
-            innerRef: D,
+            innerRef: L,
             children: (0, r.jsx)(d.Text, {
               variant: "text-xs/medium",
               color: "text-link",
               children: O.intl.string(O.t["2GnJQL"])
             })
           }))
-        }, N.id)
+        }, R.id)
       })
     }), (0, r.jsxs)(d.P3F, {
       tag: "div",
-      onClick: k,
+      onClick: j,
       className: o()(v.previewContainer, {
-        [v.previewContainerSelected]: n && null == R,
-        [v.previewContainerError]: n && null != R
+        [v.previewContainerSelected]: n && null == P,
+        [v.previewContainerError]: n && null != P
       }),
       children: [(0, r.jsxs)("div", {
         className: v.giftInfoContainer,
         children: [(0, r.jsx)(b.O, {
-          product: C,
+          product: N,
           fallbackLabel: null
         }), (0, r.jsxs)("div", {
           className: v.previewTextContainer,
           children: [(0, r.jsx)(d.Text, {
             variant: "text-md/semibold",
-            children: w
+            children: D
           }), (0, r.jsx)(d.Heading, {
             variant: "heading-sm/medium",
             color: "header-secondary",
-            children: x()
+            children: M()
           })]
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/semibold",
           children: a
         })]
-      }), n && null != R && (0, r.jsx)("div", {
+      }), n && null != P && (0, r.jsx)("div", {
         className: v.recipientError,
         children: (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "status-danger",
-          children: R
+          children: P
         })
       })]
     })]
