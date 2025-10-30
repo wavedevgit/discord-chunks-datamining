@@ -148,7 +148,7 @@ function eE() {
       render: () => (0, Chunk951288.jsx)(Chunk633001.Z, {})
     }), module.push({
       id: "generated_test_user",
-      name: "Generated Test User",
+      name: "Generated Test Users",
       group: Chunk621060.v0.DEVELOPMENT,
       render: () => (0, Chunk951288.jsx)(Chunk691175.Z, {})
     }), module.push({
