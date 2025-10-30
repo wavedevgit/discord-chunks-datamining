@@ -97,7 +97,7 @@ let v = "default",
       yellDetector: true,
       whisperTranscription: true
     },
-    autoClipPhrases: []
+    autoClipPhrases: ["clip", "flip that", "flip it"]
   },
   k = {
     clipsSettings: M,
@@ -544,7 +544,11 @@ E(ed, "displayName", "ClipsStore"), E(ed, "persistKey", "ClipsStore"), E(ed, "mi
     }),
     clipDecisionEngineConfig: null != (a = e.clipDecisionEngineConfig) ? a : (0, f.P_)()
   })
-}]);
+}, e => O(b({}, e), {
+  clipsSettings: O(b({}, e.clipsSettings), {
+    autoClipPhrases: 0 === e.clipsSettings.autoClipPhrases.length ? M.autoClipPhrases : e.clipsSettings.autoClipPhrases
+  })
+})]);
 let ef = new ed(Chunk570140.Z, {
     CLIPS_SETTINGS_UPDATE: B,
     CLIPS_ENGINE_CONFIG_UPDATE: Z,
