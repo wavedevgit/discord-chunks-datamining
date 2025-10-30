@@ -220,9 +220,9 @@ function A(e) {
   }) : null : null, [l, C, s]), Q = i.useCallback(() => (0, n.jsx)(y.Z, {
     item: F,
     profileOwner: s,
-    isHighlighted: !U && H,
+    isHighlighted: H,
     surface: R.surface
-  }), [F, s, U, H, R.surface]);
+  }), [F, s, H, R.surface]);
   return (0, n.jsx)(E.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
