@@ -7,11 +7,11 @@ require.d(exports, {
   Il: () => S,
   Jf: () => R,
   SA: () => L,
+  SV: () => A,
   Um: () => C,
   eu: () => P,
   hW: () => x,
   lY: () => N,
-  pk: () => A,
   qB: () => D
 }), require("./953529.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
@@ -118,17 +118,19 @@ let I = async (e, t) => {
     type: "STICKER_FETCH_SUCCESS",
     sticker: t
   })
-}, A = async e => {
+}, A = async (e, t) => {
   let {
-    body: t
+    body: n
   } = await a.tn.get({
     url: m.ANM.GUILD_STICKER_PACKS(e),
-    rejectWithError: false
+    rejectWithError: false,
+    signal: t
   });
   o.Z.dispatch({
     type: "GUILD_STICKERS_FETCH_SUCCESS",
     guildId: e,
-    stickers: t.map(e => null != e.user ? v(y({}, e), {
+    stickers: n.map(e => null != e.user ? v(y({}, e), {
+      user_id: e.user.id,
       user: new d.Z(e.user)
     }) : e)
   })
@@ -138,10 +140,11 @@ let I = async (e, t) => {
     rejectWithError: false
   })
 }, N = async e => {
+  var t;
   let {
-    guildId: t
-  } = e, n = await a.tn.post({
-    url: m.ANM.GUILD_STICKER_PACKS(t),
+    guildId: n
+  } = e, r = await a.tn.post({
+    url: m.ANM.GUILD_STICKER_PACKS(n),
     body: "web" === e.platform ? e.body : true,
     fields: "mobile" === e.platform ? [{
       name: "name",
@@ -165,11 +168,11 @@ let I = async (e, t) => {
   });
   return o.Z.dispatch({
     type: "GUILD_STICKERS_CREATE_SUCCESS",
-    guildId: t,
-    sticker: v(y({}, n.body), {
-      user: _.default.getCurrentUser()
+    guildId: n,
+    sticker: v(y({}, r.body), {
+      user_id: null == (t = _.default.getCurrentUser()) ? true : t.id
     })
-  }), n.body
+  }), r.body
 }, R = async (e, t, n) => (await a.tn.patch({
   url: m.ANM.GUILD_STICKER(e, t),
   body: n,

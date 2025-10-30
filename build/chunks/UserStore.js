@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   ASSISTANT_WUMPUS_VOICE_USER: () => I,
-  default: () => ek,
+  default: () => ej,
   mergeUser: () => R,
   transformUser: () => C,
   users: () => O
@@ -650,21 +650,28 @@ function ex(e) {
   } = e;
   return w(t, true)
 }
-class eM extends Chunk750041.Z {
+
+function eM(e) {
+  let {
+    stickers: t
+  } = e;
+  return t.reduce((e, t) => null != t.user && R(t.user) || e, false)
+}
+class ek extends Chunk750041.Z {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk502087.Z)
   }
   takeSnapshot() {
     let e = this.getCurrentUser();
     return {
-      version: eM.LATEST_SNAPSHOT_VERSION,
+      version: ek.LATEST_SNAPSHOT_VERSION,
       data: {
         users: [module].filter(Chunk823379.lm)
       }
     }
   }
   handleLoadCache(e) {
-    let t = this.readSnapshot(eM.LATEST_SNAPSHOT_VERSION);
+    let t = this.readSnapshot(ek.LATEST_SNAPSHOT_VERSION);
     if (null != t)
       for (let e of t.users) O[e.id] = new _.Z(e);
     if (null != e.users)
@@ -733,6 +740,7 @@ class eM extends Chunk750041.Z {
       GUILD_BAN_REMOVE: ea,
       CHANNEL_RECIPIENT_ADD: eo,
       CHANNEL_RECIPIENT_REMOVE: eo,
+      GUILD_STICKERS_FETCH_SUCCESS: eM,
       GUILD_JOIN_REQUEST_CREATE: eI,
       GUILD_JOIN_REQUEST_UPDATE: eI,
       GUILD_MEMBER_ADD: es,
@@ -775,5 +783,5 @@ class eM extends Chunk750041.Z {
     })
   }
 }
-y(eM, "displayName", "UserStore"), y(eM, "LATEST_SNAPSHOT_VERSION", 1);
-let ek = new eM
+y(ek, "displayName", "UserStore"), y(ek, "LATEST_SNAPSHOT_VERSION", 1);
+let ej = new ek
