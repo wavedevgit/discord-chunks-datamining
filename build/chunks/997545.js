@@ -522,27 +522,29 @@ class L extends Chunk839548.Z {
           useLoopback: r,
           useVideoHook: i,
           useGraphicsCaptureApiLevel: a,
-          useGraphicsCapture: o,
-          useQuartzCapturer: s,
-          allowScreenCaptureKit: l,
-          videoHookStaleFrameTimeoutMs: c,
-          graphicsCaptureStaleFrameTimeoutMs: u,
-          hdrCaptureMode: d
+          useCaptureDeviceForEncode: o,
+          useGraphicsCapture: s,
+          useQuartzCapturer: l,
+          allowScreenCaptureKit: c,
+          videoHookStaleFrameTimeoutMs: u,
+          graphicsCaptureStaleFrameTimeoutMs: d,
+          hdrCaptureMode: f
         } = e.desktopDescription;
         this.setSoundshareSource(n, r);
-        let [f, _] = null != t ? t.split(":") : ["", ""];
-        null != t ? this.logger.info("capturing desktop (type: ".concat(f, ", handle: ").concat(_, ", use-video-hook: ").concat(i.toString(), ", use-graphics-capture: ").concat(null == o ? true : o.toString(), ", use-graphics-capture-api-level: ").concat(null == a ? true : a.toString(), ").")) : this.logger.info("capturing desktop (type: <stop>)."), null != this.conn.setDesktopSourceWithOptions ? null != t ? this.conn.setDesktopSourceWithOptions({
-          type: f,
-          sourceId: _,
+        let [_, p] = null != t ? t.split(":") : ["", ""];
+        null != t ? this.logger.info("capturing desktop (type: ".concat(_, ", handle: ").concat(p, ", use-video-hook: ").concat(i.toString(), ", use-graphics-capture: ").concat(null == s ? true : s.toString(), ", use-graphics-capture-api-level: ").concat(null == a ? true : a.toString(), ", use-capture-device-for-encode: ").concat(null == o ? true : o.toString(), ").")) : this.logger.info("capturing desktop (type: <stop>)."), null != this.conn.setDesktopSourceWithOptions ? null != t ? this.conn.setDesktopSourceWithOptions({
+          type: _,
+          sourceId: p,
           useVideoHook: i,
-          useGraphicsCapture: o,
+          useGraphicsCapture: s,
           useGraphicsCaptureApiLevel: a,
-          useQuartzCapturer: s,
-          allowScreenCaptureKit: l,
-          videoHookStaleFrameTimeoutMs: c,
-          graphicsCaptureStaleFrameTimeoutMs: u,
-          hdrCaptureMode: d
-        }) : this.conn.clearDesktopSource() : this.conn.setDesktopSource("wumpus-".concat(_), i, f)
+          useCaptureDeviceForEncode: o,
+          useQuartzCapturer: l,
+          allowScreenCaptureKit: c,
+          videoHookStaleFrameTimeoutMs: u,
+          graphicsCaptureStaleFrameTimeoutMs: d,
+          hdrCaptureMode: f
+        }) : this.conn.clearDesktopSource() : this.conn.setDesktopSource("wumpus-".concat(p), i, _)
       } else if (null != e.cameraDescription) {
         let {
           videoDeviceGuid: t,
