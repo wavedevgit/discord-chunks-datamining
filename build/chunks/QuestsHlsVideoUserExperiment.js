@@ -27,4 +27,4 @@ let i = (0, Chunk818083.B)({
       }
     }]
   }),
-  a = (e, t) => (0, l.J)(i, o.S7.VIDEO_QUEST_FORCE_HLS_VIDEO, e, t)
+  a = (e, t) => (0, o.J)(i, l.S7.VIDEO_QUEST_FORCE_HLS_VIDEO, e, t)

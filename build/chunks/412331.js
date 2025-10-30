@@ -1,5 +1,5 @@
-/** Chunk was on 89828 **/
-/** chunk id: 412331, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 73155 **/
+/** chunk id: 412331, original params: e,o,t (module,exports,require) **/
 module.exports = {
   cont: "cont__370d1",
   hitboxArea: "hitboxArea__370d1",

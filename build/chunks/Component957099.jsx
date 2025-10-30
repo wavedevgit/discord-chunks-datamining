@@ -13,26 +13,26 @@ let a = e => {
       size: c = "md",
       width: u,
       height: d,
-      color: m = l.Z.colors.INTERACTIVE_NORMAL
+      color: m = o.Z.colors.INTERACTIVE_NORMAL
     } = e,
-    f = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
-      var n, r, l = function(e, t) {
+      var n, r, o = function(e, t) {
         if (null == e) return {};
-        var n, r, l = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-        return l
+        var n, r, o = {},
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+        return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
-      return l
+      return o
     }(e, ["size", "width", "height", "color"]);
-  let p = (0, o.m)(c),
-    v = null != (a = null == p ? true : p.width) ? a : u,
-    g = null != (s = null == p ? true : p.height) ? s : d;
+  let f = (0, l.m)(c),
+    v = null != (a = null == f ? true : f.width) ? a : u,
+    E = null != (s = null == f ? true : f.height) ? s : d;
   return (0, r.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -50,10 +50,10 @@ let a = e => {
       })
     }
     return e
-  }({}, (0, i.Z)(f)), n = n = {
+  }({}, (0, i.Z)(p)), n = n = {
     xmlns: "http://www.w3.org/2000/svg",
     width: v,
-    height: g,
+    height: E,
     fill: "none",
     viewBox: "0 0 32 32",
     children: [(0, r.jsx)("path", {

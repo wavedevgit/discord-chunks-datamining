@@ -7,15 +7,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk31336 = require("./31336.js"),
-  Chunk678717 = require("./678717.jsx"),
   Chunk252899 = require("./252899.jsx"),
+  Chunk682475 = require("./682475.jsx"),
   Chunk478057 = require("./478057.jsx"),
   Chunk665149 = require("./665149.jsx");
 
 function d(e) {
   let {
     onClose: t
-  } = e, n = (0, s.useDevToolsTabConfig)(), i = (0, o.F)(n, a.d8), u = (0, c.Z)();
+  } = e, n = (0, o.F)(), i = (0, s.F)(n, a.d8), u = (0, c.Z)();
   return (0, r.jsxs)(l.v2r, {
     onSelect: () => {},
     navId: "devtools-popout",

@@ -3,7 +3,7 @@
 require.d(exports, {
   G6: () => m,
   JC: () => u,
-  PW: () => p,
+  PW: () => f,
   yv: () => d
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
@@ -23,26 +23,26 @@ function d(e) {
 
 function m(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 2e3,
-    [l, o] = (0, r.useState)(e),
+    [o, l] = (0, r.useState)(e),
     i = (0, r.useRef)(null);
   return (0, r.useEffect)(() => () => {
     null != i.current && clearTimeout(i.current)
-  }, [e]), [l, () => {
-    o(t), null != i.current && clearTimeout(i.current), i.current = setTimeout(() => {
-      o(e)
+  }, [e]), [o, () => {
+    l(t), null != i.current && clearTimeout(i.current), i.current = setTimeout(() => {
+      l(e)
     }, n)
   }]
 }
-async function f(e) {
+async function p(e) {
   try {
     var t;
     let n = (0, i.zO)(e);
-    if (null == n || n.type !== o.g.INVITE) returnfalse;
+    if (null == n || n.type !== l.g.INVITE) returnfalse;
     let r = a.Z.getInvite(n.code);
     if (null == r) {
       let {
         invite: e
-      } = await l.ZP.resolveInvite(n.code, "Markdown Link");
+      } = await o.ZP.resolveInvite(n.code, "Markdown Link");
       r = e
     }
     if (null == r) returnfalse;
@@ -53,10 +53,10 @@ async function f(e) {
     returnfalse
   }
 }
-async function p(e) {
+async function f(e) {
   try {
     if (c.Z.isDiscordUrl(e)) returntrue;
-    return await f(e)
+    return await p(e)
   } catch (e) {
     returnfalse
   }

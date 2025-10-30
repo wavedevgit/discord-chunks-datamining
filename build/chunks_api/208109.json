@@ -1,1 +1,0 @@
-{"id":"208109","type":"experiment","data":{"id":"2025-01_video_quests_end_card_cta_v2","kind":"user","label":"Video Quests End Card CTA V2","defaultConfig":{"enabled":false},"treatments":[{"id":0,"label":"Control","config":{"enabled":false}},{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"32249"}}

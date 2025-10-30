@@ -18,12 +18,12 @@ function d(e) {
     quest: n,
     onClose: d
   } = e, m = (0, s.km)(e => e.transcript);
-  l.useEffect(() => {
-    let e = (0, c.z0)(n, o.X.WATCH_VIDEO, c.n1.VIDEO, c.O.TRANSCRIPT);
-    (null == m || m.questId !== n.id || m.fetchStatus === s.iF.NONE || m.fetchStatus === s.iF.SUCCESS && (null == e ? true : e.url) !== m.url) && (0, a.lL)(n, o.X.WATCH_VIDEO)
+  o.useEffect(() => {
+    let e = (0, c.z0)(n, l.X.WATCH_VIDEO, c.n1.VIDEO, c.O.TRANSCRIPT);
+    (null == m || m.questId !== n.id || m.fetchStatus === s.iF.NONE || m.fetchStatus === s.iF.SUCCESS && (null == e ? true : e.url) !== m.url) && (0, a.lL)(n, l.X.WATCH_VIDEO)
   }, [m, n]);
-  let f = (null == m ? true : m.questId) === n.id && (null == m ? true : m.fetchStatus) === s.iF.SUCCESS && null != (t = m.text) ? t : "",
-    p = l.useMemo(() => f.split("\n").map(e => e.trim()).filter(e => e.length > 0), [f]);
+  let p = (null == m ? true : m.questId) === n.id && (null == m ? true : m.fetchStatus) === s.iF.SUCCESS && null != (t = m.text) ? t : "",
+    f = o.useMemo(() => p.split("\n").map(e => e.trim()).filter(e => e.length > 0), [p]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: u.transcriptHeader,
@@ -52,7 +52,7 @@ function d(e) {
           }) : (0, r.jsx)(i.Heading, {
             variant: "heading-md/normal",
             color: "text-muted",
-            children: p.map((e, t) => (0, r.jsx)("p", {
+            children: f.map((e, t) => (0, r.jsx)("p", {
               children: e
             }, t))
           })

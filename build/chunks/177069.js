@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk427164 = require("./427164.js"),
   Chunk480218 = require("./480218.js");
-let o = (0, Chunk427164.le)({
+let l = (0, Chunk427164.le)({
   name: "2025-09-video-qoe-metrics-tracking",
   kind: "user",
   defaultConfig: {
@@ -26,14 +26,14 @@ function i(e) {
     location: t
   } = e, {
     isInHoldout: n
-  } = l._.getCurrentConfig({
+  } = o._.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: true
   });
   return n ? {
     externalAnalyticsEnabled: false
-  } : o.getConfig({
+  } : l.getConfig({
     location: t
   })
 }
