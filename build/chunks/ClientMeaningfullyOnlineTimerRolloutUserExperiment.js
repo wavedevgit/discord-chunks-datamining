@@ -9,13 +9,22 @@ let r = (0, require("./818083.js").B)({
   id: "2025-10_client_meaningfully_online_timer_rollout",
   label: "Friend Online Timer Rollout",
   defaultConfig: {
-    useOnlineTimer: false
+    useOnlineTimer: false,
+    useTestTimerDuration: false
   },
   treatments: [{
     id: 1,
     label: "Use online timer",
     config: {
-      useOnlineTimer: true
+      useOnlineTimer: true,
+      useTestTimerDuration: false
+    }
+  }, {
+    id: 2,
+    label: "Use test timer duration",
+    config: {
+      useOnlineTimer: true,
+      useTestTimerDuration: true
     }
   }]
 })

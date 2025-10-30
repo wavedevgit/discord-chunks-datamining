@@ -16,14 +16,14 @@ let d = e => {
     product: t,
     onSuccess: d,
     onError: p
-  } = e, [f, b] = r.useState(false), {
+  } = e, [b, f] = r.useState(false), {
     firstAvatarDecoration: y,
     firstProfileEffect: O,
     firstNameplate: v
-  } = (0, c.Rj)(t), g = (0, s.x6)(t) ? u.intl.string(u.t.tf1ZZ4) : t.type === l.Z.AVATAR_DECORATION ? u.intl.string(u.t.zOA4ax) : t.type === l.Z.NAMEPLATE ? u.intl.string(u.t.gOzMvx) : u.intl.string(u.t.SWm2ai);
+  } = (0, c.Rj)(t), m = (0, s.x6)(t) ? u.intl.string(u.t.tf1ZZ4) : t.type === l.Z.AVATAR_DECORATION ? u.intl.string(u.t.zOA4ax) : t.type === l.Z.NAMEPLATE ? u.intl.string(u.t.gOzMvx) : u.intl.string(u.t.SWm2ai);
   return {
     handleUseNow: r.useCallback(async () => {
-      b(true);
+      f(true);
       let e = {};
       try {
         if (null != y && (e.avatarDecoration = y), null != O) {
@@ -41,7 +41,7 @@ let d = e => {
             popToast: l,
             showToast: a
           } = await Promise.resolve().then(n.bind(n, 481060));
-          l(), a(r(g, t.MESSAGE, {
+          l(), a(r(m, t.MESSAGE, {
             duration: 6e3,
             position: e.TOP
           }))
@@ -50,9 +50,9 @@ let d = e => {
       } catch (e) {
         null == p || p(e)
       } finally {
-        b(false)
+        f(false)
       }
-    }, [y, O, v, d, g, p]),
-    isApplying: f
+    }, [y, O, v, d, m, p]),
+    isApplying: b
   }
 }

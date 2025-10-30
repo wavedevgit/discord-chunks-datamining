@@ -21,20 +21,20 @@ function d(e) {
     surface: f = o.Y.PROFILE_MODAL
   } = e, m = t.collectiblesItem;
   switch (m.type) {
-    case n.Z.PROFILE_EFFECT:
-      return (0, i.jsx)("div", {
+    case i.Z.PROFILE_EFFECT:
+      return (0, n.jsx)("div", {
         className: u.profileEffectPreview,
-        children: (0, i.jsx)(c.Z, {
+        children: (0, n.jsx)(c.Z, {
           skuId: m.skuId,
           isHighlighted: d,
           isPurchased: false,
           removeSetHeight: true
         })
       });
-    case n.Z.AVATAR_DECORATION:
-      return (0, i.jsx)("div", {
+    case i.Z.AVATAR_DECORATION:
+      return (0, n.jsx)("div", {
         className: u.avatarDecorationPreview,
-        children: (0, i.jsx)(s.R, {
+        children: (0, n.jsx)(s.R, {
           item: m,
           user: r,
           isHighlighted: d,
@@ -42,12 +42,12 @@ function d(e) {
           avatarSize: l.EFr.SIZE_80
         })
       });
-    case n.Z.NAMEPLATE:
-      return (0, i.jsxs)("div", {
+    case i.Z.NAMEPLATE:
+      return (0, n.jsxs)("div", {
         className: u.nameplatePreview,
-        children: [(0, i.jsx)("div", {
+        children: [(0, n.jsx)("div", {
           className: u.nameplateTopLeft,
-          children: (0, i.jsx)(a.Z, {
+          children: (0, n.jsx)(a.Z, {
             user: r,
             nameplate: m,
             isHighlighted: d,
@@ -57,10 +57,10 @@ function d(e) {
             nameplatePreviewSize: "default",
             width: f === o.Y.GIFTING_FLOW ? 136 : 200
           })
-        }), (0, i.jsx)("div", {
+        }), (0, n.jsx)("div", {
           className: u.nameplateBottomRight,
           "aria-hidden": true,
-          children: (0, i.jsx)(a.Z, {
+          children: (0, n.jsx)(a.Z, {
             user: r,
             nameplate: m,
             isHighlighted: d,

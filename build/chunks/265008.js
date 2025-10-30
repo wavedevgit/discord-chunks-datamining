@@ -2,7 +2,7 @@
 /** chunk id: 265008, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => O
 }), require("./388685.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -23,15 +23,22 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = .5 * Chunk70956.Z.Millis.MINUTE;
+let p = 5 * Chunk70956.Z.Millis.MINUTE,
+  h = .5 * Chunk70956.Z.Millis.MINUTE;
 
-function h() {
+function m() {
   return Chunk290505.Z.getCurrentConfig({
     location: "FriendOnlineTimer"
   }).useOnlineTimer
 }
-async function m() {
-  if (h()) try {
+
+function g() {
+  return Chunk290505.Z.getCurrentConfig({
+    location: "FriendOnlineTimer"
+  }).useTestTimerDuration ? h : p
+}
+async function E() {
+  if (m()) try {
     await Chunk544891.tn.post({
       url: Chunk981631.ANM.USER_MEANINGFULLY_ONLINE,
       rejectWithError: true
@@ -48,10 +55,10 @@ async function m() {
   }
 }
 
-function g(e) {
+function b(e) {
   return [f.Sk.ONLINE, f.Sk.STREAMING].includes(e)
 }
-class E extends Chunk147913.Z {
+class y extends Chunk147913.Z {
   _initialize() {}
   _terminate() {
     this.clear()
@@ -64,12 +71,12 @@ class E extends Chunk147913.Z {
       CONNECTION_INTERRUPTED: () => this.clear(),
       SELF_PRESENCE_STORE_UPDATE: () => this.start()
     }), _(this, "start", () => {
-      h() && u.Z.isCooldownElapsed() && null == this.timerId && g(o.Z.getStatus()) && (this.timerId = setTimeout(() => {
-        this.timerId = null, g(o.Z.getStatus()) && u.Z.isCooldownElapsed() && m()
-      }, p))
+      m() && u.Z.isCooldownElapsed() && null == this.timerId && b(o.Z.getStatus()) && (this.timerId = setTimeout(() => {
+        this.timerId = null, b(o.Z.getStatus()) && u.Z.isCooldownElapsed() && E()
+      }, g()))
     }), _(this, "clear", () => {
       null != this.timerId && (clearTimeout(this.timerId), this.timerId = null)
     })
   }
 }
-let b = new E
+let O = new y

@@ -20,7 +20,7 @@ function p(e) {
     defaultCategory: _,
     onCategoryChange: h,
     className: m
-  } = e, [f, x] = i.useState(_), [g, j] = i.useState(null), b = (0, s.Z)(), L = i.useMemo(() => [{
+  } = e, [f, x] = i.useState(_), [g, b] = i.useState(null), j = (0, s.Z)(), L = i.useMemo(() => [{
     name: c.intl.string(c.t["6Zuivx"]),
     value: d.KN.Trick,
     key: "Trick",
@@ -28,8 +28,8 @@ function p(e) {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => j(d.KN.Trick),
-    onMouseLeave: () => j(null)
+    onMouseEnter: () => b(d.KN.Trick),
+    onMouseLeave: () => b(null)
   }, {
     name: c.intl.string(c.t["2UeOlY"]),
     value: d.KN.Treat,
@@ -38,25 +38,25 @@ function p(e) {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => j(d.KN.Treat),
-    onMouseLeave: () => j(null)
-  }], []), y = i.useCallback(e => {
+    onMouseEnter: () => b(d.KN.Treat),
+    onMouseLeave: () => b(null)
+  }], []), v = i.useCallback(e => {
     x(e.value), h(e.value)
-  }, [h]), v = null == b || null == (n = b.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, S = null == b || null == (p = b.segmentedControlAnimations) || null == (a = p.treat) ? true : a.getAnimationData;
+  }, [h]), y = null == j || null == (n = j.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, S = null == j || null == (p = j.segmentedControlAnimations) || null == (a = p.treat) ? true : a.getAnimationData;
   return (0, r.jsxs)("div", {
     className: l()(u.container, m),
     children: [(0, r.jsx)(C.w, {
       options: L,
       value: f,
-      onChange: y
-    }), g === d.KN.Trick && null != v && (0, r.jsx)("div", {
+      onChange: v
+    }), g === d.KN.Trick && null != y && (0, r.jsx)("div", {
       className: l()(u.animationOverlay, u.trickAnimation),
       children: (0, r.jsx)(o.Fmz, {
         shouldAnimate: true,
         loop: true,
         autoplay: true,
         className: u.lottieAnimation,
-        importData: v,
+        importData: y,
         renderer: o.Fmz.Renderers.SVG,
         versionKey: +(g === d.KN.Trick)
       })

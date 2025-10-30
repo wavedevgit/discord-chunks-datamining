@@ -3,7 +3,7 @@
 require.d(exports, {
   A3: () => N,
   f4: () => A,
-  f9: () => w,
+  f9: () => I,
   gY: () => S
 });
 var Chunk951288 = require("./951288.js"),
@@ -94,16 +94,16 @@ let P = e => {
       variant: "active",
       type: "submit",
       "data-testid": "submitButton",
-      text: m.intl.string(m.t.wmcDyu)
+      text: g.intl.string(g.t.wmcDyu)
     }, s);
     return null === n ? (0, r.jsx)(a.aML, {
       "data-migration-pending": true,
-      text: m.intl.string(m.t["c/rcUu"]),
+      text: g.intl.string(g.t["c/rcUu"]),
       children: e => (0, r.jsx)(l.zxk, x(j({}, e, c), {
         disabled: true
       }))
     }) : null === t || n > t ? (0, r.jsx)(a.aML, {
-      text: m.intl.string(m.t.keFvXM),
+      text: g.intl.string(g.t.keFvXM),
       children: e => (0, r.jsx)(l.zxk, x(j({}, e, c), {
         disabled: true
       }))
@@ -118,7 +118,7 @@ let P = e => {
       skuId: n
     } = e, {
       skusById: l
-    } = (0, f.Z)({
+    } = (0, b.Z)({
       applicationId: (0, O.N)(n),
       skuIDs: [n],
       isGift: false,
@@ -130,7 +130,7 @@ let P = e => {
         type: a.$jN.Type.PULSING_ELLIPSIS,
         className: h.purchaseDetailsSpinner
       })
-    }) : (0, r.jsx)(b.E, {
+    }) : (0, r.jsx)(f.E, {
       sku: i,
       value: (0, r.jsx)(P, {
         orbAmount: t
@@ -142,13 +142,13 @@ let P = e => {
       orbBalance: t
     } = e;
     return (0, r.jsx)(a.gNt, {
-      label: m.intl.string(m.t["mmDvV+"]),
+      label: g.intl.string(g.t["mmDvV+"]),
       children: (0, r.jsxs)(a.UPk, {
         className: h.paymentSourceItem,
         children: [(0, r.jsx)(a.Text, {
           className: h.displayFlex,
           variant: "text-md/medium",
-          children: m.intl.string(m.t.y0WGqP)
+          children: g.intl.string(g.t.y0WGqP)
         }), (0, r.jsx)(a.Text, {
           className: h.displayFlex,
           variant: "text-md/medium",
@@ -165,7 +165,7 @@ let P = e => {
     } = e;
     if (null == t) return;
     let n = "";
-    return n = t.code === s.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE ? m.intl.string(m.t.keFvXM) : t.code === s.SM.ALREADY_PURCHASED ? m.intl.string(m.t.m371Mx) : m.intl.string(m.t.fqJZ11), (0, r.jsx)(a.M14, {
+    return n = t.code === s.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE ? g.intl.string(g.t.keFvXM) : t.code === s.SM.ALREADY_PURCHASED ? g.intl.string(g.t.m371Mx) : g.intl.string(g.t.fqJZ11), (0, r.jsx)(a.M14, {
       type: "critical",
       children: n
     })
@@ -178,7 +178,7 @@ let P = e => {
       skuId: t,
       isOrbsPurchase: true
     }) ? (0, r.jsx)(p.Z, {
-      message: m.intl.format(m.t.fsOXXO, {})
+      message: g.intl.format(g.t.fsOXXO, {})
     }) : null
   },
   N = e => {
@@ -190,7 +190,7 @@ let P = e => {
     return (0, r.jsxs)("div", {
       className: h.stepBody,
       children: [(0, r.jsx)(a.gNt, {
-        label: m.intl.string(m.t.sail9P),
+        label: g.intl.string(g.t.sail9P),
         children: (0, r.jsx)(_, {
           skuId: t,
           orbPriceAmount: n
@@ -199,16 +199,16 @@ let P = e => {
         orbBalance: l
       }), (0, r.jsx)(o.Z, {
         forceShow: true,
-        onChange: g.dG4,
+        onChange: m.dG4,
         finePrint: (0, r.jsx)(i.Z, {
           isOrbCheckout: true,
           skuId: t,
-          purchaseType: g.GZQ.ONE_TIME
+          purchaseType: m.GZQ.ONE_TIME
         })
       })]
     })
   },
-  w = e => {
+  I = e => {
     let {
       orbPriceAmount: t,
       orbBalance: n,

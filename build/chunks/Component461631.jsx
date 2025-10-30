@@ -20,7 +20,7 @@ function h(e) {
   let {
     item: t,
     wishlistId: r,
-    iconSize: n = "refresh_sm",
+    iconSize: i = "refresh_sm",
     className: h
   } = e, {
     analyticsLocations: p
@@ -31,14 +31,14 @@ function h(e) {
       (0, u.L$)(d.qb.SOMETHING_WENT_WRONG)
     }
   };
-  return (0, i.jsx)(s.u, {
+  return (0, n.jsx)(s.u, {
     text: f.intl.string(f.t.jTW016),
-    children: (0, i.jsx)(a.P3F, {
+    children: (0, n.jsx)(a.P3F, {
       onClick: O,
       "aria-label": f.intl.string(f.t.jTW016),
       className: l()(h, m.clickable),
-      children: (0, i.jsx)(a.XHJ, {
-        size: n,
+      children: (0, n.jsx)(a.XHJ, {
+        size: i,
         className: m.icon,
         color: a.TVs.colors.ICON_FEEDBACK_CRITICAL
       })

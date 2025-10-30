@@ -4,7 +4,7 @@ require.d(exports, {
   Y: () => g,
   Z: () => v
 });
-var i, Chunk951288 = require("./951288.js"),
+var n, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
@@ -18,13 +18,13 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk232644 = require("./232644.js"),
-  g = ((i = {}).GIFTING_FLOW = "gifting_flow", i.PROFILE_MODAL = "profile_modal", i.PROFILE_SIDEBAR = "profile_sidebar", i);
+  g = ((n = {}).GIFTING_FLOW = "gifting_flow", n.PROFILE_MODAL = "profile_modal", n.PROFILE_SIDEBAR = "profile_sidebar", n);
 
 function v(e) {
   let {
     item: t,
     wishlistId: r,
-    isOwner: i,
+    isOwner: n,
     surface: s = "profile_modal",
     cardRef: g,
     renderItemPreview: v,
@@ -36,13 +36,13 @@ function v(e) {
     renderSourceIcon: x
   } = e, y = l.useRef(null), E = l.useRef(null), T = null != g ? g : E, {
     analyticsLocations: N
-  } = (0, u.ZP)(), k = i && true === t.isOwned && null != t.gifterUserId, L = null != t.gifterUserId ? d.default.getUser(t.gifterUserId) : null, _ = null != L ? f.ZP.getName(L) : null, C = k && null != L && null != _ && "" !== _, Z = C ? (0, n.jsx)(o.qEK, {
+  } = (0, u.ZP)(), k = n && true === t.isOwned && null != t.gifterUserId, L = null != t.gifterUserId ? d.default.getUser(t.gifterUserId) : null, _ = null != L ? f.ZP.getName(L) : null, C = k && null != L && null != _ && "" !== _, Z = C ? (0, i.jsx)(o.qEK, {
     src: L.getAvatarURL(true, 48),
     size: o.EFr.SIZE_48,
     "aria-label": _
-  }) : null, R = (0, n.jsx)("div", {
+  }) : null, R = (0, i.jsx)("div", {
     className: I.cardStateIconWrapper,
-    children: (0, n.jsx)(o.sV5, {
+    children: (0, i.jsx)(o.sV5, {
       size: "custom",
       color: o.TVs.colors.WHITE,
       width: 38,
@@ -50,9 +50,9 @@ function v(e) {
       className: a()(I.cardStateIcon, I.checkmark),
       "aria-label": O.intl.string(O.t.L5Pt9L)
     })
-  }), F = (0, n.jsx)("div", {
+  }), F = (0, i.jsx)("div", {
     className: I.overlay,
-    children: (0, n.jsx)(o.Button, {
+    children: (0, i.jsx)(o.Button, {
       focusProps: {
         ringTarget: T
       },
@@ -72,10 +72,10 @@ function v(e) {
       skuId: t.skuId,
       analyticsLocations: N
     }), b()
-  }, G = (0, n.jsxs)("div", {
+  }, G = (0, i.jsxs)("div", {
     ref: y,
     className: I.container,
-    children: [(0, n.jsxs)("div", {
+    children: [(0, i.jsxs)("div", {
       ref: T,
       className: a()(I.card, {
         [I.isOwned]: w,
@@ -83,14 +83,14 @@ function v(e) {
         [I.largeCard]: "profile_modal" === s
       }),
       onClick: A,
-      children: [(0, n.jsx)(o.nn4, {
-        children: (0, n.jsx)(o.H, {
+      children: [(0, i.jsx)(o.nn4, {
+        children: (0, i.jsx)(o.H, {
           children: P
         })
-      }), (0, n.jsx)("div", {
+      }), (0, i.jsx)("div", {
         className: I.cardPreview,
         children: v()
-      }), w && R, "profile_modal" === s ? F : (0, n.jsx)(o.P3F, {
+      }), w && R, "profile_modal" === s ? F : (0, i.jsx)(o.P3F, {
         "aria-label": j,
         focusProps: {
           ringTarget: T
@@ -99,14 +99,14 @@ function v(e) {
           e.stopPropagation(), A()
         }
       })]
-    }), null != x && x(), i && null != r && (0, n.jsx)(h.Z, {
+    }), null != x && x(), n && null != r && (0, i.jsx)(h.Z, {
       iconSize: "sm",
       item: t,
       wishlistId: r,
       className: I.removeItemButton
     })]
   });
-  return C ? (0, n.jsx)(c.i_, {
+  return C ? (0, i.jsx)(c.i_, {
     asContainer: true,
     title: O.intl.formatToPlainString(O.t.TL4ktE, {
       username: _

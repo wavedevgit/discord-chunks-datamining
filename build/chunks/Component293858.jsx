@@ -28,13 +28,13 @@ function L(e) {
       handleClose: n,
       planGroup: a,
       onSubscriptionConfirmation: L,
-      renderPurchaseConfirmation: y,
-      postSuccessGuild: v,
+      renderPurchaseConfirmation: v,
+      postSuccessGuild: y,
       followupSKUInfo: S,
-      continueSessionToInitialStep: w
+      continueSessionToInitialStep: I
     } = e,
     {
-      activeSubscription: I,
+      activeSubscription: w,
       paymentSources: O,
       paymentSourceId: P,
       selectedPlan: E,
@@ -49,8 +49,8 @@ function L(e) {
       giftRecipient: N,
       giftCode: R,
       hasSentMessage: F,
-      isSendingMessage: G,
-      sendGiftMessage: H,
+      isSendingMessage: H,
+      sendGiftMessage: G,
       claimableRewards: U,
       selectedGiftingPromotionReward: D
     } = (0, _.wD)(),
@@ -68,27 +68,27 @@ function L(e) {
     n(), null == L || L()
   }, [n, L]);
   i.useEffect(() => {
-    !Z || null == N || null == R || F || G || (0, u.pO)(N) || H({
+    !Z || null == N || null == R || F || H || (0, u.pO)(N) || G({
       onSubscriptionConfirmation: L
     })
-  }, [H, Z, N, R, F, G, L]), i.useEffect(() => {
+  }, [G, Z, N, R, F, H, L]), i.useEffect(() => {
     null != K && null != K.reminderNotice && W && (0, s.wH)(o.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
-      dismissAction: b.L.INDIRECT_ACTION
+      dismissAction: j.L.INDIRECT_ACTION
     })
   }, [K, W]);
-  let X = null != w ? c.PI.DEEPLINK_TO_DESKTOP_APP : true;
-  if (null != y) t = y(E, Q, M);
+  let X = null != I ? c.PI.DEEPLINK_TO_DESKTOP_APP : true;
+  if (null != v) t = v(E, Q, M);
   else if (Z) t = (0, r.jsx)(c.TB, {
     planId: E.id,
     onClose: Q
   });
   else {
     let e = A.current === E.id ? {
-      postSuccessGuild: v
+      postSuccessGuild: y
     } : {
       followupSKUInfo: S,
       startingPremiumSubscriptionPlanId: A.current,
-      isDowngrade: null != I && (0, p.GY)(I, E.id, a)
+      isDowngrade: null != w && (0, p.GY)(w, E.id, a)
     };
     t = (0, r.jsx)(c.ZP, function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -118,7 +118,7 @@ function L(e) {
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(f.C3, {
-      children: [(0, r.jsx)(j.Z, {}), t]
+      children: [(0, r.jsx)(b.Z, {}), t]
     }), null != z && z, J && null != V && (0, r.jsx)(x.Z, {
       onClose: Q,
       selectedPromotionalDecoPurchaseRecord: V,

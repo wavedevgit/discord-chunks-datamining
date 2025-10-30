@@ -34,14 +34,14 @@ function L(e) {
     startedPaymentFlowWithPaymentSourcesRef: C,
     setSelectedPlanId: c,
     priceOptions: u,
-    defaultPlanId: j
+    defaultPlanId: b
   } = (0, h.JL)(), {
-    isGift: b,
+    isGift: j,
     claimableRewards: L
-  } = (0, _.wD)(), v = b && null != L && L.length > 0, S = (0, d.N)(i), w = (0, o.Nx)(), I = (0, s.Z)({
+  } = (0, _.wD)(), y = j && null != L && L.length > 0, S = (0, d.N)(i), I = (0, o.Nx)(), w = (0, s.Z)({
     location: "PremiumPaymentSelect"
   });
-  return (0, r.jsx)(y, {
+  return (0, r.jsx)(v, {
     selectSku: e => (function(e) {
       let {
         activeSubscription: t,
@@ -79,22 +79,22 @@ function L(e) {
       newSkuId: e,
       setSelectedSkuId: a,
       handleStepChange: t,
-      isGift: b,
+      isGift: j,
       userTrialOffer: S,
       startedPaymentFlowWithPaymentSources: C.current,
       setSelectedPlanId: c,
-      defaultPlanId: j
+      defaultPlanId: b
     }),
     onClose: n,
-    isGift: b,
-    inOfferExperience: w,
+    isGift: j,
+    inOfferExperience: I,
     priceOptions: u,
-    showPromotionalGiftBanner: v,
-    enablePremiumBrandRefresh: I
+    showPromotionalGiftBanner: y,
+    enablePremiumBrandRefresh: w
   })
 }
 
-function y(e) {
+function v(e) {
   let {
     selectSku: t,
     onClose: n,
@@ -111,19 +111,19 @@ function y(e) {
     isGift: i
   }), x = f ? (0, r.jsx)(l.Heading, {
     variant: "heading-lg/bold",
-    children: j.intl.string(j.t["wg/30i"])
+    children: b.intl.string(b.t["wg/30i"])
   }) : h ? (0, r.jsx)(l.Heading, {
     variant: "heading-lg/bold",
-    children: j.intl.string(j.t["r+SebU"])
+    children: b.intl.string(b.t["r+SebU"])
   }) : (0, r.jsx)(l.Heading, {
     variant: "heading-md/semibold",
-    children: j.intl.string(j.t["r+SebU"])
+    children: b.intl.string(b.t["r+SebU"])
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.xBx, {
       "data-migration-pending": true,
-      className: a()(b.skuSelectModalHeader, {
-        [b.premiumBrandRefreshHeader]: h
+      className: a()(j.skuSelectModalHeader, {
+        [j.premiumBrandRefreshHeader]: h
       }),
       separator: false,
       children: (0, r.jsxs)(l.Kqy, {
@@ -131,18 +131,18 @@ function y(e) {
         justify: "space-between",
         children: [x, (0, r.jsx)(l.olH, {
           "data-migration-pending": true,
-          className: b.close,
-          innerClassName: b.closeInner,
+          className: j.close,
+          innerClassName: j.closeInner,
           onClick: n
         })]
       })
     }), (0, r.jsx)(l.hzk, {
       "data-migration-pending": true,
-      className: a()(b.skuSelectModalContent, {
-        [b.modalSize]: !h,
-        [b.modalPadding]: o && !h,
-        [b.premiumBrandRefreshContent]: h,
-        [b.wishlistModalSize]: f
+      className: a()(j.skuSelectModalContent, {
+        [j.modalSize]: !h,
+        [j.modalPadding]: o && !h,
+        [j.premiumBrandRefreshContent]: h,
+        [j.wishlistModalSize]: f
       }),
       children: null != m && f ? (0, r.jsx)(c.Z, {
         onSelectSku: e => t((0, p.Wz)(e)),

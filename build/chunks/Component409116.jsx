@@ -1,7 +1,7 @@
 /** Chunk was on 72740 **/
 /** chunk id: 409116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => f
+  F: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk239051 = require("./239051.js");
-let f = e => {
+let b = e => {
     let {
       price: t,
       nitroIconType: n,
@@ -27,7 +27,7 @@ let f = e => {
     return t.currency === u.pK.DISCORD_ORB ? (0, r.jsx)(y, {
       orbAmount: t.amount,
       className: a
-    }) : (0, r.jsx)(b, {
+    }) : (0, r.jsx)(f, {
       price: t,
       nitroIconType: n,
       nitroIconSize: l,
@@ -37,7 +37,7 @@ let f = e => {
       variant: s
     })
   },
-  b = e => {
+  f = e => {
     let {
       price: {
         amount: t,
@@ -45,19 +45,19 @@ let f = e => {
       },
       nitroIconType: l,
       nitroIconSize: u = "md",
-      className: f,
-      discountOfferAmount: b,
+      className: b,
+      discountOfferAmount: f,
       discount: y = c.f_,
       variant: O = "heading-md/semibold"
-    } = e, v = null != b, g = (0, s.qr)(t, n), m = y !== c.f_ && y.discountPercentage >= 5 && !v ? (0, r.jsxs)(r.Fragment, {
+    } = e, v = null != f, m = (0, s.qr)(t, n), g = y !== c.f_ && y.discountPercentage >= 5 && !v ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.nn4, {
         children: d.intl.format(d.t.niC6DK, {
-          price: g,
+          price: m,
           discountPercentage: y.discountPercentage
         })
       }), (0, r.jsx)("span", {
         "aria-hidden": true,
-        children: g
+        children: m
       }), (0, r.jsxs)(o.Text, {
         variant: O,
         color: "text-feedback-positive",
@@ -68,21 +68,21 @@ let f = e => {
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.nn4, {
         children: d.intl.format(d.t["6C36MF"], {
-          price: g
+          price: m
         })
       }), (0, r.jsx)("span", {
         "aria-hidden": true,
         className: a()({
           [p.priceStrikethrough]: v
-        }, f),
-        children: g
+        }, b),
+        children: m
       })]
     });
     return (0, r.jsxs)(o.Text, {
       variant: O,
       className: a()({
         [p.discountBackgroundColor]: v
-      }, p.container, f),
+      }, p.container, b),
       children: ["tooltip" === l ? (0, r.jsx)(i.u, {
         text: d.intl.string(d.t.MPFyJ5),
         "aria-label": d.intl.string(d.t.X3Ekj8),
@@ -95,17 +95,17 @@ let f = e => {
         size: u,
         color: "currentColor",
         className: p.icon
-      }) : null, m, v && (0, r.jsxs)(o.Heading, {
+      }) : null, g, v && (0, r.jsxs)(o.Heading, {
         variant: "heading-md/semibold",
         className: p.discountPill,
         children: [(0, r.jsx)(o.nn4, {
           children: d.intl.format(d.t.rItDbx, {
-            discountOfferAmount: b
+            discountOfferAmount: f
           })
         }), (0, r.jsx)("span", {
           "aria-hidden": true,
           children: d.intl.formatToPlainString(d.t.AYcXGW, {
-            discountOfferAmount: b
+            discountOfferAmount: f
           })
         })]
       })]

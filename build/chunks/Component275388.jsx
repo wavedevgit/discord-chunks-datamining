@@ -20,7 +20,7 @@ let s = "orb-checkout-payment-modal-key",
       analyticsSourceLocation: u,
       onCloseCallback: d,
       onCheckoutSuccess: p
-    } = e, f = function(e, t) {
+    } = e, b = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
         if (null == e) return {};
@@ -35,7 +35,7 @@ let s = "orb-checkout-payment-modal-key",
       }
       return l
     }(e, ["skuId", "analyticsLocations", "analyticsSourceLocation", "onCloseCallback", "onCheckoutSuccess"]);
-    let b = false,
+    let f = false,
       y = (0, l.Z)();
     return (0, a.ZDy)(async () => {
       let {
@@ -65,9 +65,9 @@ let s = "orb-checkout-payment-modal-key",
           analyticsLocations: c,
           analyticsSourceLocation: u,
           onCheckoutSuccess: e => {
-            b || p(e), b = true
+            f || p(e), f = true
           }
-        }, f, n), a = a = {
+        }, b, n), a = a = {
           loadId: y
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
@@ -83,7 +83,7 @@ let s = "orb-checkout-payment-modal-key",
     }, {
       onCloseCallback: d,
       onCloseRequest() {
-        b || (0, i._Y)(o.rMx.PAYMENT_FLOW_CANCELED, {
+        f || (0, i._Y)(o.rMx.PAYMENT_FLOW_CANCELED, {
           loadId: y,
           skuId: t,
           analyticsLocations: c,

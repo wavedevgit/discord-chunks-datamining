@@ -25,11 +25,11 @@ let m = e => {
     onSelect: f,
     productName: x,
     a11yLabel: g,
-    selectedSkuId: j,
-    category: b
+    selectedSkuId: b,
+    category: j
   } = e, L = i.useRef(null), {
-    isHoveringOrFocusing: y
-  } = (0, c.Z)(L), v = !m && y, S = (0, C.ZP)(), w = (0, s.wj)(S), I = {
+    isHoveringOrFocusing: v
+  } = (0, c.Z)(L), y = !m && v, S = (0, C.ZP)(), I = (0, s.wj)(S), w = {
     type: o.Z.AVATAR_DECORATION,
     label: g,
     asset: n
@@ -41,21 +41,21 @@ let m = e => {
       onClick: () => {
         null == t || null == f || m || f(t)
       },
-      className: l()(w ? h.shopCardDark : h.shopCard, {
+      className: l()(I ? h.shopCardDark : h.shopCard, {
         [h.shopCardAnimation]: !m,
-        [w ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: v,
-        [h.shopCardSelected]: j === t
+        [I ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: y,
+        [h.shopCardSelected]: b === t
       }),
       children: [(0, r.jsx)("div", {
         className: l()(h.preview, {
-          [h.previewTrick]: b === u.KN.Trick,
-          [h.previewTreat]: b === u.KN.Treat,
+          [h.previewTrick]: j === u.KN.Trick,
+          [h.previewTreat]: j === u.KN.Treat,
           [h.shopCardClaimed]: m
         }),
         children: (0, r.jsx)(p.R, {
-          item: I,
+          item: w,
           user: a,
-          isHighlighted: v,
+          isHighlighted: y,
           avatarSize: d.EFr.SIZE_120,
           isPurchased: m
         })

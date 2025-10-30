@@ -4,17 +4,18 @@
 require.d(exports, {
   B1: () => B,
   F$: () => M,
-  Ov: () => F,
-  R2: () => Z,
+  Ov: () => V,
+  R2: () => F,
   Sm: () => w,
+  _o: () => Z,
   fK: () => G,
-  fi: () => V,
+  fi: () => H,
   jr: () => j,
   lW: () => U,
   mK: () => P,
   oK: () => D,
   oc: () => x,
-  p8: () => H,
+  p8: () => Y,
   qg: () => k
 }), require("./388685.js"), require("./49124.js");
 var Chunk561842 = require("./561842.js"),
@@ -248,7 +249,20 @@ let P = e => {
     } catch (e) {
       return (0, S.G)(new l.Hx(e)), false
     }
-  }, Z = async e => {
+  }, Z = async (e, t) => {
+    try {
+      return (await o.tn.get({
+        url: T.ANM.COLLECTIBLES_VALID_GIFT_RECIPIENTS_BATCH,
+        query: {
+          sku_ids: t,
+          recipient_id: e
+        },
+        rejectWithError: true
+      })).body
+    } catch (e) {
+      return (0, S.G)(new l.Hx(e)), {}
+    }
+  }, F = async e => {
     let {
       release: t = i.P.PROD
     } = e;
@@ -274,7 +288,7 @@ let P = e => {
         type: "COLLECTIBLES_MARKETING_FETCH_FAILURE"
       })
     }
-  }, F = async (e, t, n) => {
+  }, V = async (e, t, n) => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SHOP_HOME_FETCH",
       tab: e,
@@ -313,12 +327,12 @@ let P = e => {
         error: t
       })
     }
-  }, V = e => {
+  }, H = e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SET_SHOP_HOME_CONFIG_OVERRIDE",
       shopHomeConfigOverride: e
     })
-  }, H = e => {
+  }, Y = e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SKIP_NUM_CATEGORIES",
       skipNumCategories: e
