@@ -30,7 +30,7 @@ function p(e) {
       let l = t[i],
         a = 3 === e.length && t.length > 4;
       !l.isOwned && (0, s.Q)(l) && (0 === e.length && (r = l), e.push((0, c.c)(l, {
-        moreCount: a ? t.length - 4 : true,
+        moreCount: a ? t.length - 4 + 1 : true,
         profileOwner: n,
         analyticsLocations: h,
         onViewWishlist: p
