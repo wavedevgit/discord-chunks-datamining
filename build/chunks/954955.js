@@ -38,16 +38,16 @@ module.exports = function(e, t, n) {
 
   function I() {
     var e = i();
-    if (v(e)) return T(e);
+    if (v(e)) return S(e);
     _ = setTimeout(I, O(e))
   }
 
-  function T(e) {
+  function S(e) {
     return (_ = true, E && c) ? b(e) : (c = u = true, f)
   }
 
-  function S() {
-    return true === _ ? f : T(i())
+  function T() {
+    return true === _ ? f : S(i())
   }
 
   function A() {
@@ -61,5 +61,5 @@ module.exports = function(e, t, n) {
   }
   return t = a(t) || 0, r(n) && (m = !!n.leading, d = (g = "maxWait" in n) ? s(a(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), A.cancel = function() {
     true !== _ && clearTimeout(_), h = 0, c = p = u = _ = true
-  }, A.flush = S, A
+  }, A.flush = T, A
 }

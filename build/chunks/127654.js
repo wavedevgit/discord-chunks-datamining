@@ -2,8 +2,8 @@
 /** chunk id: 127654, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => T,
-  d: () => S
+  G: () => S,
+  d: () => T
 }), require("./388685.js"), require("./415506.js");
 var Chunk475179 = require("./475179.js"),
   Chunk904245 = require("./904245.js"),
@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let r = _.default.getCurrentUser(),
     i = e.guild_id,
     a = h.dg(i),
@@ -83,7 +83,7 @@ function T(e, t, n) {
     })
   })
 }
-async function S(e, t, n) {
+async function T(e, t, n) {
   let {
     filesMetadata: c,
     requireConfirm: _ = true,
@@ -94,13 +94,13 @@ async function S(e, t, n) {
   if (e.length < 1) return;
   if (null != c && c.length !== e.length) throw Error("Unexpected mismatch between files and file metadata");
   let v = t.getGuildId(),
-    S = Array.from(e),
-    A = S.map(e => ({
+    T = Array.from(e),
+    A = T.map(e => ({
       originalContentType: e.type,
       preCompressionSize: e.size
     }));
-  if (await Promise.resolve(), (0, g.Bf)(S, v)) return void T(t, S);
-  if (f.Z.getUploadCount(t.id, n) + S.length > E.dN1) {
+  if (await Promise.resolve(), (0, g.Bf)(T, v)) return void S(t, T);
+  if (f.Z.getUploadCount(t.id, n) + T.length > E.dN1) {
     (0, o.openUploadError)({
       title: O.intl.string(O.t.wOr6hB),
       help: O.intl.formatToPlainString(O.t["qqyp/e"], {
@@ -108,12 +108,12 @@ async function S(e, t, n) {
       })
     }), p.default.track(E.rMx.UPLOAD_FILE_LIMIT_ERROR, {
       existing_count: f.Z.getUploadCount(t.id, n),
-      new_count: S.length
+      new_count: T.length
     });
     return
   }
   if (t.type !== E.d4z.GUILD_VOICE && t.type !== E.d4z.GUILD_STAGE_VOICE || u.Z.getChatOpen(t.id) || r.Z.updateChatOpen(t.id, true), _) {
-    let e = S.map((e, t) => I({
+    let e = T.map((e, t) => I({
       file: e,
       platform: l.ow.WEB,
       isThumbnail: m,
@@ -127,7 +127,7 @@ async function S(e, t, n) {
       draftType: n
     })
   } else {
-    let e = S.map((e, n) => {
+    let e = T.map((e, n) => {
       let r = null != c ? c[n] : {};
       return new s.nH(I({
         file: e,

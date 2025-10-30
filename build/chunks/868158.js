@@ -2,11 +2,11 @@
 /** chunk id: 868158, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Eb: () => w,
+  Eb: () => D,
   Fx: () => k,
   IM: () => L,
   J2: () => F,
-  r$: () => D
+  r$: () => w
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -60,13 +60,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -88,18 +88,18 @@ let C = new Chunk710845.Z("ReadyPayloadUtils"),
   R = null,
   P = {};
 
-function D(e, t) {
+function w(e, t) {
   var n, {
       guilds: r,
       merged_members: i,
       merged_presences: a
     } = e,
-    o = S(e, ["guilds", "merged_members", "merged_presences"]);
+    o = T(e, ["guilds", "merged_members", "merged_presences"]);
   let s = j(P, null == a ? true : a.friends),
     l = null != (n = null == r ? true : r.map((e, t) => {
       let n = j(P, null == a ? true : a.guilds[t]),
         r = j(P, null == i ? true : i[t]);
-      return T(v({}, e), {
+      return S(v({}, e), {
         unavailable: true === e.voice_states,
         presences: n,
         members: r
@@ -113,13 +113,13 @@ function D(e, t) {
       voice_states: e.voice_states,
       unavailable: false
     }));
-  return null != c && l.push(c), P = {}, T(v({}, o), {
+  return null != c && l.push(c), P = {}, S(v({}, o), {
     presences: s,
     guilds: l
   })
 }
 
-function w() {
+function D() {
   let e = Chunk287328.Z.database(),
     t = (0, Chunk768433.O)() ? Chunk406966.Z.getCommittedVersions() : Promise.resolve({});
   return Promise.all([exports, (0, Chunk768433.O)() ? Chunk591526.Z.getGuildIds() : Promise.resolve(new Set), null != module ? Chunk795513.Z.okAsync(module) : Promise.resolve(false)]).then(e => {
@@ -140,7 +140,7 @@ function L(e, t, n) {
       merged_members: c,
       guilds: u
     } = e,
-    d = S(e, ["users", "relationships", "private_channels", "merged_members", "guilds"]);
+    d = T(e, ["users", "relationships", "private_channels", "merged_members", "guilds"]);
   G(n);
   let f = j(P = o().keyBy(a, e => e.id), s);
   null == l || l.forEach(e => {
@@ -149,7 +149,7 @@ function L(e, t, n) {
   });
   let _ = null != (r = null == u ? true : u.map((e, t) => true === e.unavailable ? e : (e.members = j(P, null == c ? true : c[t]), Z(e)))) ? r : [],
     p = x(t, u, e => Z(e));
-  return null != p && _.push(p), T(v({}, d), {
+  return null != p && _.push(p), S(v({}, d), {
     users: a,
     presences: [],
     relationships: f,

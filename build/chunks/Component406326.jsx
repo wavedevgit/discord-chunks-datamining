@@ -84,8 +84,8 @@ function E(e) {
     }
     return null
   }, [t.type, N]), [L, M] = i.useState(null), k = i.useMemo(() => h ? [] : [s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [h]), [U, G] = (0, u.US)(k), H = U === s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, F = i.useCallback(e => {
-    null != e && G(j.L.USER_DISMISS), M(e)
-  }, [G]), B = i.useCallback(e => {
+    null != e && H && G(j.L.USER_DISMISS), M(e)
+  }, [G, H]), B = i.useCallback(e => {
     G("user:explicit" === e ? j.L.USER_DISMISS : j.L.AUTO_DISMISS)
   }, [G]), V = i.useCallback(() => {
     F(null), (0, d.ZDy)(async () => {
@@ -304,9 +304,9 @@ function w(e) {
           })
         })
       }
-      p.rR.updateSetting(e)
+      s(null), p.rR.updateSetting(e)
     }
-  }, [n, l, f]), m = i.useMemo(() => ({
+  }, [f, s, n, l]), m = i.useMemo(() => ({
     align: "end"
   }), []);
   return (0, r.jsxs)(r.Fragment, {
@@ -380,7 +380,9 @@ function A(e) {
   }, {
     label: v.intl.string(v.t.q8gB52),
     value: O.QIO.MOST_RELEVANT
-  }], []);
+  }], []), c = i.useCallback(e => {
+    a(null), n(e)
+  }, [a, n]);
   return (0, r.jsx)(d.yRy, {
     targetElementRef: s,
     shouldShow: l,
@@ -390,28 +392,28 @@ function A(e) {
     onRequestClose: () => a(null),
     renderPopout: e => {
       let {
-        closePopout: i
+        closePopout: n
       } = e;
       return (0, r.jsx)(d.v2r, {
         navId: "search-result-sort-menu",
-        onClose: i,
+        onClose: n,
         "aria-label": v.intl.string(v.t.utp2hS),
         onSelect: () => a(null),
         children: (0, r.jsx)(d.kSQ, {
           children: o.map(e => {
             let {
-              label: i,
-              value: l
+              label: n,
+              value: i
             } = e;
             return (0, r.jsx)(d.k5B, {
               group: "sort-by",
-              id: "sort-by-option-".concat(l),
-              label: i,
-              action: () => n(l),
-              checked: t === l
-            }, l)
+              id: "sort-by-option-".concat(i),
+              label: n,
+              action: () => c(i),
+              checked: t === i
+            }, i)
           })
-        })
+        }, "sort-by")
       })
     },
     children: e => (0, r.jsx)(d.hU, S(I({}, e), {

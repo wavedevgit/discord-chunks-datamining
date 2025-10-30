@@ -70,8 +70,8 @@ function b(e) {
     "aria-label": O,
     dismissable: v = true,
     onClose: I,
-    contentOutsideContainer: T,
-    trackingProps: S,
+    contentOutsideContainer: S,
+    trackingProps: T,
     children: A
   } = e, C = i.useId(), N = i.useMemo(() => ({
     id: C,
@@ -87,8 +87,8 @@ function b(e) {
       "aria-label": O,
       "aria-labelledby": null != O ? true : N.headingId,
       returnRef: b,
-      trackingProps: E(m({}, S), {
-        impressionType: null != (t = null == S ? true : S.impressionType) ? t : l.ImpressionTypes.MODAL
+      trackingProps: E(m({}, T), {
+        impressionType: null != (t = null == T ? true : T.impressionType) ? t : l.ImpressionTypes.MODAL
       }),
       children: (0, r.jsx)(u.y, {
         forceLevel: 1,
@@ -96,7 +96,7 @@ function b(e) {
           className: o()(p.outerContainer, {
             [p.fullScreenOnMobile]: g
           }),
-          children: [T, (0, r.jsx)(s.animated.div, {
+          children: [S, (0, r.jsx)(s.animated.div, {
             "data-mana-component": "modal",
             className: o()(p.container, p["size-".concat(_)], p["padding-size-".concat(h)]),
             style: R,

@@ -30,9 +30,9 @@ function I(e) {
     analyticsLocations: n
   } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([g.Z], () => g.Z.hasConsented(b.pjP.PERSONALIZATION)) ? [] : [s.z.NOW_PLAYING_CONSENT_CARD], I = m.o.useConfig({
     location: "nowplaying"
-  }).demureActivityCards, v = m.o.useConfig({
+  }).demureActivityCards, y = m.o.useConfig({
     location: "nowplaying"
-  }).friendsTab, y = (0, p.Dt)();
+  }).friendsTab, v = (0, p.Dt)();
   return (0, r.jsx)(d.Gt, {
     value: n,
     children: (0, r.jsx)(c.Z, {
@@ -42,7 +42,7 @@ function I(e) {
           [O.refreshActiveNow]: I,
           "refresh-active-now": I
         }),
-        "aria-labelledby": y,
+        "aria-labelledby": v,
         children: (0, r.jsx)(o.Ttm, {
           className: l()(O.scroller, {
             [O.standalone]: t
@@ -51,10 +51,10 @@ function I(e) {
             className: l()({
               [O.standaloneContainer]: t
             }),
-            children: [v ? null : (0, r.jsx)(o.Heading, {
+            children: [y ? null : (0, r.jsx)(o.Heading, {
               variant: "heading-lg/semibold",
               className: O.header,
-              id: y,
+              id: v,
               children: E.intl.string(E.t.F4Zggw)
             }), (0, r.jsx)(f.ZP, {
               contentTypes: i,

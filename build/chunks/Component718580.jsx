@@ -77,14 +77,14 @@ function I(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let T = {
+let S = {
   mass: 1,
   tension: 300,
   friction: 28,
   clamp: true
 };
 
-function S(e, t) {
+function T(e, t) {
   return null == e ? null : e.index > t.index ? "backwards" : e.index < t.index ? "forwards" : null
 }
 
@@ -122,9 +122,9 @@ function N(e) {
   });
   let R = I.activeSlide,
     P = (0, p.Z)(I.activeSlide),
-    D = null != (t = I.directionOverride) ? t : S(null != P ? C[P] : null, C[R]),
+    w = null != (t = I.directionOverride) ? t : T(null != P ? C[P] : null, C[R]),
     {
-      reducedMotion: w
+      reducedMotion: D
     } = i.useContext(d.Sfi),
     L = i.useContext(h.Z),
     x = C[R].impressionName,
@@ -143,7 +143,7 @@ function N(e) {
     ref: k,
     width: j = 0,
     height: U = 0
-  } = (0, _.ZP)(R), G = b({}, T, I.springConfig, w.enabled ? {
+  } = (0, _.ZP)(R), G = b({}, S, I.springConfig, D.enabled ? {
     clamp: true
   } : null), B = (0, f.q_F)({
     width: null != (n = I.width) ? n : j,
@@ -167,7 +167,7 @@ function N(e) {
       } = t;
       n === R && null != I.onSlideReady && I.onSlideReady(n)
     }
-  }, null == P ? "animate-never" : "respect-motion-settings"), F = (0, c.Z)(D), {
+  }, null == P ? "animate-never" : "respect-motion-settings"), F = (0, c.Z)(w), {
     width: V,
     centered: H = true
   } = I, Y = u.tq && !I.shouldUseMediaQueriesForSizing ? "100%" : B.width.to(e => "string" == typeof e ? e : Math.round(e)), W = u.tq && !I.shouldUseMediaQueriesForSizing ? "100%" : B.height.to(e => Math.round(e)), K = u.tq ? {} : H ? {
@@ -202,7 +202,7 @@ function N(e) {
           display: E,
           flexDirection: "column",
           backfaceVisibility: "hidden"
-        }, q, K, w.enabled ? a : b({
+        }, q, K, D.enabled ? a : b({
           left: e.value.to(A("left", F)),
           right: e.value.to(A("right", F))
         }, y && a)),

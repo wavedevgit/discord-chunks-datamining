@@ -83,22 +83,22 @@ let E = function(e) {
       hovered: O,
       selected: v,
       muted: I,
-      to: T,
-      avatarClassName: S,
+      to: S,
+      avatarClassName: T,
       selectedClassName: A,
       innerClassName: C,
       wrapContent: N,
       highlighted: R,
       focusProps: P
     } = e,
-    D = m(e, ["ref", "avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
-  D.className = o()(D.className, d.container, {
+    w = m(e, ["ref", "avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
+  w.className = o()(w.className, d.container, {
     [d.selected]: v,
     [d.highlighted]: R,
     [null != A ? A : ""]: v,
-    [d.clickable]: !v && (null != T || null != y)
-  }), D["aria-selected"] = null != (t = D["aria-selected"]) ? t : v;
-  let w = i.useRef(null),
+    [d.clickable]: !v && (null != S || null != y)
+  }), w["aria-selected"] = null != (t = w["aria-selected"]) ? t : v;
+  let D = i.useRef(null),
     L = (0, r.jsxs)("div", {
       className: o()(d.childContainer, {
         [d.nameplated]: null != p
@@ -107,16 +107,16 @@ let E = function(e) {
         nameplate: p,
         hovered: O,
         selected: v,
-        content: w,
+        content: D,
         placement: c.i.MEMBER_LIST
       }), (0, r.jsxs)("div", {
-        ref: w,
+        ref: D,
         className: o()(C, d.layout, {
           [d.muted]: !v && I,
           [d.wrappedLayout]: N
         }),
         children: [(0, r.jsx)("div", {
-          className: o()(d.avatar, S),
+          className: o()(d.avatar, T),
           children: a
         }), (0, r.jsxs)("div", {
           className: d.content,
@@ -138,11 +138,11 @@ let E = function(e) {
         }) : null]
       })]
     });
-  return null != T ? (0, r.jsx)(l.tEY, h(_({}, P), {
+  return null != S ? (0, r.jsx)(l.tEY, h(_({}, P), {
     children: (0, r.jsx)(s.rU, h(_({
-      to: T,
+      to: S,
       onClick: y
-    }, D), {
+    }, w), {
       role: "listitem",
       ref: n,
       children: L
@@ -150,12 +150,12 @@ let E = function(e) {
   })) : null != y ? (0, r.jsx)(l.P3F, h(_({
     onClick: y,
     focusProps: P
-  }, D), {
+  }, w), {
     role: "listitem",
     innerRef: n,
     children: L
   })) : (0, r.jsx)(l.tEY, h(_({}, P), {
-    children: (0, r.jsx)("div", h(_({}, D), {
+    children: (0, r.jsx)("div", h(_({}, w), {
       role: "listitem",
       ref: n,
       children: L

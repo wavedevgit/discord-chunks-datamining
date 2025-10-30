@@ -49,8 +49,8 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       undismissable: E,
       onDismissed: O,
       onClick: I,
-      cta: v,
-      ctaColor: y
+      cta: y,
+      ctaColor: v
     } = e;
     i.useEffect(() => {
       _(f.rMx.CHANNEL_NOTICE_VIEWED, {
@@ -59,7 +59,7 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       })
     }, [t.id, d]);
     let C = null;
-    "function" == typeof v ? C = v() : null != v && (C = (0, r.jsx)(s.zx, {
+    "function" == typeof y ? C = y() : null != y && (C = (0, r.jsx)(s.zx, {
       className: h.btn,
       size: s.zx.Sizes.SMALL,
       onClick: () => {
@@ -70,8 +70,8 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
         }), null == I || I()
       },
       fullWidth: true,
-      color: y,
-      children: v
+      color: v,
+      children: y
     }));
     let S = null != p ? "".concat(p, "px") : "16px";
     return (0, r.jsxs)("div", {

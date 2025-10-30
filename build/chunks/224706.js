@@ -43,7 +43,7 @@ function k(e) {
     applicationId: t,
     secret: n,
     channelId: r,
-    intent: i = D.Ws.PLAY,
+    intent: i = w.Ws.PLAY,
     embedded: a = false,
     source: o,
     locationObject: s,
@@ -77,7 +77,7 @@ function k(e) {
     source: o,
     locationObject: s,
     analyticsLocations: c
-  }).then(e => 0 === e ? null : T.Z.waitConnected(t).then(() => Promise.race([T.Z.waitSubscribed(t, P.zMe.ACTIVITY_JOIN)]))).then(() => {
+  }).then(e => 0 === e ? null : S.Z.waitConnected(t).then(() => Promise.race([S.Z.waitSubscribed(t, P.zMe.ACTIVITY_JOIN)]))).then(() => {
     l.Z.dispatch({
       type: "ACTIVITY_JOIN",
       applicationId: t,
@@ -160,10 +160,10 @@ async function G(e) {
     if (null == e) throw Error("Missing dispatch game when launching");
     let i = y.Z.getLibraryApplication(t, n);
     if (null == i) throw Error("Missing library application when launching");
-    d = U(t).then(t => T.Z.launchDispatchApplication(e, t, g.default.locale, i.getBranchName(), r))
+    d = U(t).then(t => S.Z.launchDispatchApplication(e, t, g.default.locale, i.getBranchName(), r))
   } else {
     let e = u.Z.getApplication(t);
-    d = null != e ? T.Z.launch(e) : T.Z.launchGame(t)
+    d = null != e ? S.Z.launch(e) : S.Z.launchGame(t)
   }
   let f = Error("game not found");
   return null != d ? (l.Z.dispatch({
@@ -180,7 +180,7 @@ async function G(e) {
       pids: e
     })
   }).catch(e => {
-    R.Z.show(P.kVF.LAUNCH_GAME_FAILURE, w.intl.string(w.t.YZEBdj)), l.Z.dispatch({
+    R.Z.show(P.kVF.LAUNCH_GAME_FAILURE, D.intl.string(D.t.YZEBdj)), l.Z.dispatch({
       type: "GAME_LAUNCH_FAIL",
       applicationId: t,
       error: f
@@ -355,7 +355,7 @@ let B = {
       url: P.ANM.UNVERIFIED_APPLICATIONS,
       body: {
         name: t,
-        os: (0, S.getPlatformName)(),
+        os: (0, T.getPlatformName)(),
         icon: n,
         distributor_application: j(i, a),
         executable: c,
@@ -408,7 +408,7 @@ let B = {
       applicationId: r,
       channelId: i,
       messageId: a,
-      intent: o = D.Ws.PLAY,
+      intent: o = w.Ws.PLAY,
       embedded: s = false,
       source: c,
       locationObject: u,
@@ -429,7 +429,7 @@ let B = {
       remotePartyId: f
     });
     try {
-      let e = (0, S.platformPrefersDeepLink)(),
+      let e = (0, T.platformPrefersDeepLink)(),
         l = await C.Z.getJoinSecret(t, n, r, i, a);
       return null == f && k({
         applicationId: r,

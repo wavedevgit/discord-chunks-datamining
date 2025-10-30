@@ -197,12 +197,12 @@ function Z(e) {
               })]
             }), (0, r.jsxs)("div", {
               className: k.header,
-              children: [(0, r.jsx)(T.Z, {
+              children: [(0, r.jsx)(S.Z, {
                 user: n,
                 displayProfile: en,
                 guildId: G,
                 themeType: x.l.POPOUT
-              }), (0, r.jsx)(S.Z, {
+              }), (0, r.jsx)(T.Z, {
                 userId: n.id,
                 className: k.toast,
                 onClose: Y
@@ -213,7 +213,7 @@ function Z(e) {
                 channelId: Z,
                 themeType: x.l.POPOUT,
                 onOpenProfile: K ? true : ed
-              }), (0, r.jsx)(D.Z, {
+              }), (0, r.jsx)(w.Z, {
                 ref: es,
                 user: n,
                 guildId: G,
@@ -222,7 +222,7 @@ function Z(e) {
                 onCloseProfile: Y,
                 prompt: ec ? eu : null
               })]
-            }), (0, r.jsx)(w.Z, {
+            }), (0, r.jsx)(D.Z, {
               user: n,
               currentUser: j,
               displayProfile: en,

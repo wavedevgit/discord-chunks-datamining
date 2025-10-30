@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   B0: () => R,
-  Hc: () => w,
+  Hc: () => D,
   J8: () => L,
   Q6: () => N,
   V9: () => k,
-  WD: () => D,
-  Zt: () => T,
+  WD: () => w,
+  Zt: () => S,
   Zv: () => A,
   _V: () => C,
   cv: () => M,
@@ -34,13 +34,13 @@ let {
   PROJECT_ENV: g,
   ASSET_ENDPOINT: E,
   CDN_HOST: b
-} = window.GLOBAL_ENV, y = Object.values(Chunk373228.og), O = decodeURIComponent(Chunk981631.ANM.STICKER_ASSET("[\\d]+", "(".concat(y.join("|"), ")"))), v = RegExp("(".concat(location.protocol).concat(E, "|").concat(location.protocol).concat(m, ")(").concat(O, ")"), "ig"), I = RegExp("".concat(location.protocol).concat(h, "(").concat(O, ")"), "ig"), T = e => {
+} = window.GLOBAL_ENV, y = Object.values(Chunk373228.og), O = decodeURIComponent(Chunk981631.ANM.STICKER_ASSET("[\\d]+", "(".concat(y.join("|"), ")"))), v = RegExp("(".concat(location.protocol).concat(E, "|").concat(location.protocol).concat(m, ")(").concat(O, ")"), "ig"), I = RegExp("".concat(location.protocol).concat(h, "(").concat(O, ")"), "ig"), S = e => {
   if (null != e.cover_sticker_id) {
     let t = e.stickers.find(t => t.id === e.cover_sticker_id);
     if (null != t) return t
   }
   return e.stickers[0]
-}, S = e => {
+}, T = e => {
   switch (e) {
     case f.u3.PNG:
       return l.$k ? f.og.WEBP : f.og.PNG;
@@ -67,7 +67,7 @@ let {
     default:
       throw Error("Unexpected file type: ".concat(e))
   }
-}, C = e => null == e ? null : "".concat(e.name, ".").concat(S(e.format_type)), N = function(e) {
+}, C = e => null == e ? null : "".concat(e.name, ".").concat(T(e.format_type)), N = function(e) {
   let {
     isPreview: t = false,
     size: n = _.lE
@@ -75,7 +75,7 @@ let {
   if (null == e.format_type) return null;
   let a = e.format_type;
   e.format_type === f.u3.GIF && t && (a = f.u3.PNG);
-  let o = S(a),
+  let o = T(a),
     s = p.ANM.STICKER_ASSET(e.id, o),
     l = (0, r.W)({
       location: "sticker_url"
@@ -93,8 +93,8 @@ let {
   id: e.id,
   name: e.name,
   stickers: e.stickers,
-  previewSticker: T(e)
-}), D = (e, t) => e === _.yr.ANIMATE_ON_INTERACTION ? t : e !== _.yr.NEVER_ANIMATE, w = (e, t, n, r) => {
+  previewSticker: S(e)
+}), w = (e, t) => e === _.yr.ANIMATE_ON_INTERACTION ? t : e !== _.yr.NEVER_ANIMATE, D = (e, t, n, r) => {
   if (s.Z.getUploadCount(n, r) > 0) returntrue;
   let i = u.Z.getStickerPreview(n, r);
   if (null != i && i.length > 0) returntrue;

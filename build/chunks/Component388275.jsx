@@ -1,4 +1,4 @@
-/** Chunk was on 9797 **/
+/** Chunk was on 33648 **/
 /** chunk id: 388275, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _: () => f
@@ -21,35 +21,35 @@ function f(e) {
     message: t,
     canSend: n,
     selectedDestinations: f,
-    onSend: _,
-    inputValue: w,
-    setInputValue: p
-  } = e, b = (0, o.Z)(), v = (0, u.nm)(f), x = (0, d.Ad)(), {
-    textValue: y,
-    richValue: C
-  } = w, [O, P] = l.useState(false), S = l.useCallback(() => P(true), []), j = l.useCallback(() => P(false), []), E = l.useCallback((e, n, a) => {
-    p({
+    onSend: p,
+    inputValue: v,
+    setInputValue: w
+  } = e, b = (0, o.Z)(), x = (0, c.nm)(f), y = (0, d.Ad)(), {
+    textValue: C,
+    richValue: O
+  } = v, [j, _] = a.useState(false), S = a.useCallback(() => _(true), []), T = a.useCallback(() => _(false), []), E = a.useCallback((e, n, l) => {
+    w({
       textValue: n,
-      richValue: a
-    }), r.Z.saveDraft(t.channel_id, n, c.d.ForwardContextMessage), x(t.channel_id, t.id)
-  }, [x, t, p]), T = l.useCallback(() => {
-    r.Z.clearDraft(t.channel_id, c.d.ForwardContextMessage), _(y)
-  }, [t.channel_id, _, y]), I = l.useCallback(() => (!n || y.length > b || T(), Promise.resolve({
+      richValue: l
+    }), null != t && (r.Z.saveDraft(t.channel_id, n, u.d.ForwardContextMessage), y(t.channel_id, t.id))
+  }, [y, t, w]), P = a.useCallback(() => {
+    null != t && (r.Z.clearDraft(t.channel_id, u.d.ForwardContextMessage), p(C))
+  }, [t, p, C]), D = a.useCallback(() => (!n || C.length > b || P(), Promise.resolve({
     shouldClear: false,
     shouldRefocus: true
-  })), [T, y, b, n]);
-  return (0, a.jsx)(s.ZP, {
+  })), [P, C, b, n]);
+  return (0, l.jsx)(s.ZP, {
     innerClassName: g.messageInput,
     onChange: E,
     placeholder: m.intl.string(m.t.ZroO3G),
-    channel: v,
-    textValue: y,
-    richValue: C,
+    channel: x,
+    textValue: C,
+    richValue: O,
     type: i.Ie.FORWARD_MESSAGE_INPUT,
-    onBlur: j,
+    onBlur: T,
     onFocus: S,
-    focused: O,
-    onSubmit: I,
+    focused: j,
+    onSubmit: D,
     parentModalKey: h.so,
     autoCompletePosition: "bottom",
     emojiPickerCloseOnModalOuterClick: true,

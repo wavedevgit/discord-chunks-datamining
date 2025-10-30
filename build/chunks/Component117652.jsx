@@ -75,7 +75,7 @@ function k(e) {
     loading: s = false
   } = e, {
     hasPaymentSources: l
-  } = (0, S.JL)(), c = l ? A.h8.REVIEW : A.h8.ADD_PAYMENT_STEPS;
+  } = (0, T.JL)(), c = l ? A.h8.REVIEW : A.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Button, {
       onClick: () => t(c),
@@ -102,14 +102,14 @@ function j(e) {
     recommendedGiftSkuIds: x,
     giftingOrigin: M,
     setValidatingGiftRecipient: j
-  } = (0, T.wD)(), {
+  } = (0, S.wD)(), {
     selectedSkuId: B,
     setSelectedSkuId: Z,
     selectedSkuPricePreview: F,
     paymentSourceId: V,
     skuPricePreviewsById: H,
     skusById: Y
-  } = (0, S.JL)(), W = (0, i.e7)([y.default], () => y.default.getCurrentUser()), {
+  } = (0, T.JL)(), W = (0, i.e7)([y.default], () => y.default.getCurrentUser()), {
     enabled: K,
     giftRecommendationAlgorithm: z
   } = p.G.useExperiment({
@@ -143,7 +143,7 @@ function j(e) {
         price: a,
         isSelected: e === B,
         onSelect: e => J(e),
-        className: D.recommendedGiftPreview
+        className: w.recommendedGiftPreview
       }, e)
     },
     ee = () => (0, r.jsx)(h.Z, {
@@ -152,34 +152,34 @@ function j(e) {
       pendingText: s,
       currentText: s,
       disableThemedBackground: true,
-      className: D.customGiftMessageWrapper,
-      innerClassName: D.customGiftMessage
+      className: w.customGiftMessageWrapper,
+      innerClassName: w.customGiftMessage
     }),
     et = () => q ? (0, r.jsxs)("div", {
-      className: D.bodyColumnLeft,
+      className: w.bodyColumnLeft,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/bold",
         color: "header-secondary",
-        className: D.selectGiftTitle,
+        className: w.selectGiftTitle,
         children: X.toLocaleUpperCase()
       }), x.map(e => $(e)), (0, r.jsx)(U, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
-      className: D.bodyColumnMiddle,
+      className: w.bodyColumnMiddle,
       children: (0, r.jsx)(m.q, {
         isShopGift: true
       })
     }),
     en = () => {
       if (q) return (0, r.jsxs)("div", {
-        className: D.bodyColumnRight,
+        className: w.bodyColumnRight,
         children: [(0, r.jsx)(E.s, {
           giftRecipient: L
         }), (0, r.jsx)(m.q, {
           isShopGift: true,
-          className: w.adjustedGiftMainAnimation,
-          optionsContainerClassName: w.adjustedGiftBoxOptionContainer
+          className: D.adjustedGiftMainAnimation,
+          optionsContainerClassName: D.adjustedGiftBoxOptionContainer
         }), ee()]
       });
       let e = (0, u.v5)({
@@ -191,13 +191,13 @@ function j(e) {
         formatPrice: I.T4
       });
       return M === R.Wt.USER_PROFILE_WISHLIST || M === R.Wt.DM_CHANNEL_WISHLIST ? (0, r.jsxs)("div", {
-        className: D.bodyColumnRight,
+        className: w.bodyColumnRight,
         children: [(0, r.jsx)(E.s, {
           giftRecipient: L
         }), ee(), null != e && null != B && (0, r.jsx)(d.Z, {
           skuId: B,
           price: e,
-          className: D.giftPreview,
+          className: w.giftPreview,
           isSelected: true,
           shouldDisplayHeader: true
         }), (0, r.jsx)(G, {
@@ -205,15 +205,15 @@ function j(e) {
           selectedSkuId: B
         })]
       }) : (0, r.jsxs)("div", {
-        className: D.bodyColumnRight,
+        className: w.bodyColumnRight,
         children: [(0, r.jsx)(f.Z, {
           selectedSkuId: B,
-          className: D.sendTo,
+          className: w.sendTo,
           validateSelectedGift: Q
         }), ee(), null != e && (0, r.jsx)(d.Z, {
           skuId: B,
           price: e,
-          className: D.giftPreview,
+          className: w.giftPreview,
           isSelected: true,
           shouldDisplayHeader: true
         })]
@@ -222,7 +222,7 @@ function j(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(C.C3, {
       children: (0, r.jsxs)("div", {
-        className: D.stepBody,
+        className: w.stepBody,
         children: [et(), en()]
       })
     }), (0, r.jsx)(C.O3, {
@@ -257,11 +257,11 @@ function U(e) {
   return (0, r.jsx)(a.P3F, {
     onClick: i,
     children: (0, r.jsxs)("div", {
-      className: D.navigateToShopButton,
+      className: w.navigateToShopButton,
       children: [(0, r.jsxs)("div", {
-        className: D.navigateToShopBody,
+        className: w.navigateToShopBody,
         children: [(0, r.jsx)("div", {
-          className: D.shopIcon,
+          className: w.shopIcon,
           children: (0, r.jsx)(a.EOn, {
             size: "custom",
             width: 18,
@@ -269,7 +269,7 @@ function U(e) {
             color: "var(--header-primary)"
           })
         }), (0, r.jsxs)("div", {
-          className: D.navigateToShopTextWrapper,
+          className: w.navigateToShopTextWrapper,
           children: [(0, r.jsx)(a.Text, {
             color: "header-primary",
             variant: "text-md/semibold",

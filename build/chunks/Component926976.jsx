@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 926976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -53,7 +53,7 @@ function P(e) {
     children: t
   } = e;
   return (0, a.jsx)(u.zJl, {
-    className: O.customPropertiesContainer,
+    className: T.customPropertiesContainer,
     children: (0, a.jsx)("dl", {
       children: t
     })
@@ -72,16 +72,16 @@ function I(e) {
       return () => clearTimeout(e)
     }
   }, [i]), (0, a.jsxs)("div", {
-    className: O.customProperty,
+    className: T.customProperty,
     children: [(0, a.jsx)("dt", {
-      className: O.customPropertiesName,
+      className: T.customPropertiesName,
       children: t
     }), (0, a.jsx)("dd", {
       children: n
     }), (0, a.jsx)(u.P3F, {
       tag: "span",
-      className: O.copyPropertyButton,
-      onClick: () => (0, g.JG)(JSON.stringify(l), () => o(true)),
+      className: T.copyPropertyButton,
+      onClick: () => (0, f.JG)(JSON.stringify(l), () => o(true)),
       children: i ? (0, a.jsx)(u.kmB, {
         color: "currentColor",
         size: "sm"
@@ -107,20 +107,20 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
         },
         onClose: o,
         filteredEvents: c
-      } = e, d = f.default.getUser(l), h = s()(r);
+      } = e, d = g.default.getUser(l), h = s()(r);
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(p.ZP, {
-          className: i()(T.headerBar, O.subPanelHeaderBar),
+          className: i()(O.headerBar, T.subPanelHeaderBar),
           children: [(0, a.jsx)(p.ZP.Icon, {
             icon: u.IeX,
             tooltip: t
           }), (0, a.jsxs)(p.ZP.Title, {
-            wrapperClassName: O.headerTitle,
+            wrapperClassName: T.headerTitle,
             children: [t, (0, a.jsx)(u.P3F, {
               tag: "span",
-              className: O.copyEventButton,
-              onClick: () => (0, g.JG)(t),
+              className: T.copyEventButton,
+              onClick: () => (0, f.JG)(t),
               children: (0, a.jsx)(u.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -130,7 +130,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
             icon: u.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, g.JG)(JSON.stringify(function(e) {
+              (0, f.JG)(JSON.stringify(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     a = Object.keys(n);
@@ -160,7 +160,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
             onClick: o
           })]
         }), (0, a.jsxs)(_.E, {
-          className: O.commonProperties,
+          className: T.commonProperties,
           children: [(0, a.jsx)(_.Z9, {
             name: "Timestamp (local)",
             copyValue: r.toISOString(),
@@ -210,7 +210,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
                 children: null != r ? (0, a.jsx)("code", {
                   children: JSON.stringify(r)
                 }) : (0, a.jsx)("code", {
-                  className: O.emptyProperty,
+                  className: T.emptyProperty,
                   children: "null"
                 })
               }, n), null !== l && null !== l.average && (0, a.jsx)(I, {
@@ -276,13 +276,13 @@ function D() {
       p(e)
     }, []);
   (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, A, [Chunk120356]);
-  let f = Chunk129861.filter(e => {
+  let g = Chunk129861.filter(e => {
       for (let t of o)
         if (R[t].filter(e)) returntrue;
       returnfalse
     }),
-    [g, b] = Chunk647438.useState(true),
-    _ = Chunk594174.find(e => e.key === g),
+    [f, b] = Chunk647438.useState(true),
+    _ = Chunk594174.find(e => e.key === f),
     {
       TabBar: P,
       renderSelectedTab: I
@@ -314,7 +314,7 @@ function D() {
         children: Object.entries(R).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(u.P3F, {
-            className: i()(O.filter, o.includes(t) && O.activeFilter),
+            className: i()(T.filter, o.includes(t) && T.activeFilter),
             onClick: () => {
               s(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },

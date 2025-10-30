@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -68,11 +68,11 @@ let C = 50,
   R = .1,
   P = 0;
 
-function D(e) {
+function w(e) {
   return (null != e ? e : v.Qx) / v.Qx
 }
 
-function w(e) {
+function D(e) {
   return null != e && 0 !== e ? e + 1 : 0
 }
 class L extends Chunk839548.Z {
@@ -181,11 +181,11 @@ class L extends Chunk839548.Z {
               mode: this.chooseEncryptionMode(e.modes, r),
               codecs: this.codecs
             }), this.on(m.Sh.Stats, this.handleStats);
-            let T = this.getUserOptions();
-            for (let e of (T.forEach(e => {
+            let S = this.getUserOptions();
+            for (let e of (S.forEach(e => {
                 var t, n;
                 return this.logger.info("Creating user: ".concat(e.id, " with audio SSRC: ").concat(e.ssrc, " and video SSRCs: ").concat(null != (n = null == (t = e.videoSsrcs) ? true : t.join(",")) ? n : 0))
-              }), this.mergeUsers(T), this.emit(m.Sh.RemoteStreamsReady, T.length), Object.keys(this.localSpeakingFlags))) e !== this.userId && this.setSpeakingFlags(e, this.localSpeakingFlags[e])
+              }), this.mergeUsers(S), this.emit(m.Sh.RemoteStreamsReady, S.length), Object.keys(this.localSpeakingFlags))) e !== this.userId && this.setSpeakingFlags(e, this.localSpeakingFlags[e])
           })
         })
       };
@@ -233,7 +233,7 @@ class L extends Chunk839548.Z {
           ssrc: t,
           videoSsrc: r,
           videoSsrcs: n,
-          rtxSsrc: w(r),
+          rtxSsrc: D(r),
           mute: this.getLocalMute(e),
           volume: this.getLocalVolume(e)
         };
@@ -294,7 +294,8 @@ class L extends Chunk839548.Z {
   setClipRecordUser(e, t, n) {
     if (!this.destroyed) {
       var r, i;
-      null == (r = (i = this.conn).setClipRecordUser) || r.call(i, e, (this.context === v.Yn.STREAM ? "application" : "user").concat("audio" === t ? "Audio" : "Video"), n)
+      let a;
+      a = "soundboard" === t ? "soundboardAudio" : (this.context === v.Yn.STREAM ? "application" : "user").concat("audio" === t ? "Audio" : "Video"), null == (r = (i = this.conn).setClipRecordUser) || r.call(i, e, a, n)
     }
   }
   setClipsKeyFrameInterval(e) {
@@ -320,7 +321,7 @@ class L extends Chunk839548.Z {
   }
   getLocalVolume(e) {
     let t = this.localVolumes[e];
-    return null == t && (t = this.context === v.Yn.DEFAULT ? v.Qx : v.Yh), D(t)
+    return null == t && (t = this.context === v.Yn.DEFAULT ? v.Qx : v.Yh), w(t)
   }
   setLocalVolume(e, t) {
     this.localVolumes[e] = t;
@@ -592,7 +593,7 @@ class L extends Chunk839548.Z {
       c = false !== l && this.videoStreamParameters.length > l,
       u = this.videoQualityManager.shouldEnableGoliveSimulcastForHqQuality(i),
       d = c && this.videoStreamParameters[l].active !== u;
-    c && (this.videoStreamParameters[l].active = u, this.simulcastLQDisabledSsrc = u ? true : this.videoStreamParameters[l].ssrc), (o || d) && (this.emit(m.Sh.Video, this.userId, null, this.audioSSRC, this.videoStreamParameters[s].ssrc, w(this.videoStreamParameters[s].ssrc), this.videoStreamParameters), this.conn.setTransportOptions(this.applyQualityConstraints().constraints))
+    c && (this.videoStreamParameters[l].active = u, this.simulcastLQDisabledSsrc = u ? true : this.videoStreamParameters[l].ssrc), (o || d) && (this.emit(m.Sh.Video, this.userId, null, this.audioSSRC, this.videoStreamParameters[s].ssrc, D(this.videoStreamParameters[s].ssrc), this.videoStreamParameters), this.conn.setTransportOptions(this.applyQualityConstraints().constraints))
   }
   setSDP(e) {}
   setRemoteVideoSinkWants(e) {
@@ -641,7 +642,7 @@ class L extends Chunk839548.Z {
         let r = e.findIndex(e => e.rid === t.rid);
         if (false === r) return void n(Error("Invalid rid"));
         let i = [];
-        l()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = T({}, e[r]), i.push(T({}, e[r]))), this.conn.setTransportOptions({
+        l()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = S({}, e[r]), i.push(S({}, e[r]))), this.conn.setTransportOptions({
           streamParameters: i
         })
       }
@@ -673,7 +674,7 @@ class L extends Chunk839548.Z {
         ssrc: this.remoteAudioSSRCs[e],
         videoSsrc: t,
         videoSsrcs: this.remoteVideoSSRCs[e],
-        rtxSsrc: w(t),
+        rtxSsrc: D(t),
         mute: this.getLocalMute(e),
         volume: this.getLocalVolume(e)
       }
@@ -759,7 +760,7 @@ class L extends Chunk839548.Z {
       };
       this.experimentFlags.has(O.V8.RESET_DECODER_ON_ERRORS) && (n.params["reset-on-errors"] = "1"), this.experimentFlags.has(O.V8.SOFTWARE_FALLBACK_ON_ERRORS) && (n.params["fallback-after-errors"] = "3"), this.experimentFlags.has(O.V8.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS) && (n.params["fallback-on-consecutive-errors"] = "1"), this.experimentFlags.has(O.V8.SIGNAL_AV1_HARDWARE_DECODE) && (n.params["hardware-av1-decode"] = "1");
       let r = this.hardwareH264 && this.useElectronVideo ? "1" : "0";
-      n.params["hardware-h264"] = r, c.push(n), o.name === t && (u = A(T({}, n), {
+      n.params["hardware-h264"] = r, c.push(n), o.name === t && (u = A(S({}, n), {
         params: this.getCodecParams(o.name, false)
       }), this.experimentFlags.has(O.V8.VIDEOTOOLBOX_RATE_CONTROL) && (u.params["fixed-rate-presentation-timestamps"] = "1"), u.params["hardware-h264"] = r)
     }
@@ -774,7 +775,7 @@ class L extends Chunk839548.Z {
     return this.keyframeInterval > 0 && this.clipsKeyFrameInterval > 0 ? Math.min(this.keyframeInterval, this.clipsKeyFrameInterval) : Math.max(this.keyframeInterval, this.clipsKeyFrameInterval)
   }
   getConnectionTransportOptions() {
-    let e = A(T({
+    let e = A(S({
       selfMute: this.selfMute,
       inputMode: Chunk149396.GO[this.inputMode],
       inputModeOptions: this.createInputModeOptions(),
@@ -891,14 +892,14 @@ class L extends Chunk839548.Z {
         i.forEach((t, n) => {
           if (t.rid === e.rid) {
             let r = this.simulcastLQDisabledSsrc !== e.ssrc && e.active;
-            i[n] = A(T({}, t), {
+            i[n] = A(S({}, t), {
               ssrc: e.ssrc,
               rtxSsrc: e.rtxSsrc,
               active: r
             })
           }
         })
-      }) : t > 0 ? (i[0].active = true, i[0].ssrc = t, i[0].rtxSsrc = w(t)) : i[0].active = false : t > 0 && (true !== this.remoteVideoSSRCs[e] ? this.remoteVideoSSRCs[e].includes(t) || (this.remoteVideoSSRCs[e] = [...this.remoteVideoSSRCs[e], t]) : this.remoteVideoSSRCs[e] = [t]), this.videoStreamParameters = i, this.emit(m.Sh.Video, e, null != n && "" !== n ? n : null, e === this.userId ? this.audioSSRC : this.remoteAudioSSRCs[e], t, w(t), this.videoStreamParameters)
+      }) : t > 0 ? (i[0].active = true, i[0].ssrc = t, i[0].rtxSsrc = D(t)) : i[0].active = false : t > 0 && (true !== this.remoteVideoSSRCs[e] ? this.remoteVideoSSRCs[e].includes(t) || (this.remoteVideoSSRCs[e] = [...this.remoteVideoSSRCs[e], t]) : this.remoteVideoSSRCs[e] = [t]), this.videoStreamParameters = i, this.emit(m.Sh.Video, e, null != n && "" !== n ? n : null, e === this.userId ? this.audioSSRC : this.remoteAudioSSRCs[e], t, D(t), this.videoStreamParameters)
     }), I(this, "handleFirstFrame", (e, t, n) => {
       this.emit(m.Sh.FirstFrame, e, t, n)
     }), I(this, "handleFirstFrameStats", e => {

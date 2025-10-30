@@ -2,7 +2,7 @@
 /** chunk id: 920155, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => S
+  m: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -76,9 +76,9 @@ function O(e, t) {
 }
 let v = 10,
   I = 4,
-  T = Chunk231338.Vq;
+  S = Chunk231338.Vq;
 
-function S(e) {
+function T(e) {
   var t;
   let {
     children: n,
@@ -87,11 +87,11 @@ function S(e) {
     onRequestClose: m,
     position: E = "top",
     align: O = "center",
-    hasVideo: S = false,
+    hasVideo: T = false,
     gradientColor: A,
     onPositionChange: C,
     scrollBehavior: N = "sticky"
-  } = e, [R, P] = i.useState(p), [D, w] = i.useState(E), L = i.useRef(E), x = (0, c.e7)([d.Z], () => d.Z.getLayers()), M = null != (t = x[x.length - 1]) ? t : "base", k = i.useMemo(() => {
+  } = e, [R, P] = i.useState(p), [w, D] = i.useState(E), L = i.useRef(E), x = (0, c.e7)([d.Z], () => d.Z.getLayers()), M = null != (t = x[x.length - 1]) ? t : "base", k = i.useMemo(() => {
     var e, t;
     return null == a.current || (null != (t = null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) ? t : "base") === M
   }, [a, M]);
@@ -103,7 +103,7 @@ function S(e) {
     },
     U = (0, _.i)({
       shouldShow: p,
-      caretPosition: (0, f.z)(D),
+      caretPosition: (0, f.z)(w),
       onExitComplete: j
     }),
     G = e => {
@@ -111,13 +111,13 @@ function S(e) {
         setPopoutRef: t,
         position: i
       } = e, a = y(e, ["setPopoutRef", "position"]);
-      return null != i && i !== L.current && (L.current = i, w(i), null == C || C(i)), U((e, i) => {
+      return null != i && i !== L.current && (L.current = i, D(i), null == C || C(i)), U((e, i) => {
         if (!i) return null;
         let c = (0, r.jsx)(l.VqE, b(g({}, a), {
           setDialogRef: t,
           modal: false,
           className: o()(null != A ? h.popoverContentWithGradient : h.popover, {
-            [h["popover--video"]]: S
+            [h["popover--video"]]: T
           }),
           returnRef: true,
           children: n
@@ -138,7 +138,7 @@ function S(e) {
     targetElementRef: a,
     shouldShow: R,
     onRequestClose: m,
-    position: D,
+    position: w,
     align: O,
     spacing: v + I,
     layerContext: true,
@@ -146,11 +146,11 @@ function S(e) {
     popoutKey: true,
     fixed: false,
     autoInvert: true,
-    nudgeAlignIntoViewport: "top" === D || "bottom" === D,
+    nudgeAlignIntoViewport: "top" === w || "bottom" === w,
     closeOnClickOutside: false,
     ignoreModalClicks: true,
     scrollBehavior: N,
     renderPopout: G,
-    children: T
+    children: S
   })
 }

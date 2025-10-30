@@ -17,16 +17,16 @@ var Chunk48657 = require("./48657.js"),
       f = 7 === e,
       _ = 5 === e || d;
     return function(p, h, m, g) {
-      for (var E, b, y = o(p), O = a(y), v = s(O), I = r(h, m), T = 0, S = g || l, A = t ? S(p, v) : n || f ? S(p, 0) : true; v > T; T++)
-        if ((_ || T in O) && (b = I(E = O[T], T, y), e))
-          if (t) A[T] = b;
+      for (var E, b, y = o(p), O = a(y), v = s(O), I = r(h, m), S = 0, T = g || l, A = t ? T(p, v) : n || f ? T(p, 0) : true; v > S; S++)
+        if ((_ || S in O) && (b = I(E = O[S], S, y), e))
+          if (t) A[S] = b;
           else if (b) switch (e) {
         case 3:
           returntrue;
         case 5:
           return E;
         case 6:
-          return T;
+          return S;
         case 2:
           c(A, E)
       } else switch (e) {

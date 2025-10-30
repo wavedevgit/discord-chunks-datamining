@@ -40,8 +40,8 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 let P = 512,
-  D = 1e3;
-class w extends Chunk647438.PureComponent {
+  w = 1e3;
+class D extends Chunk647438.PureComponent {
   componentWillUnmount() {
     this._copyModeTimeout.stop()
   }
@@ -100,11 +100,11 @@ class w extends Chunk647438.PureComponent {
         giftCode: t,
         sku: n
       } = this.props;
-      (0, T.dM)(t, n), (0, I.JG)(e, () => this.setState({
+      (0, S.dM)(t, n), (0, I.JG)(e, () => this.setState({
         copyMode: u.uA3.SUCCESS
       }), () => this.setState({
         copyMode: u.uA3.ERROR
-      })), this._copyModeTimeout.start(D, () => {
+      })), this._copyModeTimeout.start(w, () => {
         this.setState({
           copyMode: u.uA3.DEFAULT
         })
@@ -208,7 +208,7 @@ class L extends Chunk647438.PureComponent {
         children: Chunk442837 ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
           className: Chunk669255.spinner
         }) : (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-          children: [require.length < module.length ? this.renderGenerateGiftCodeRow() : null, require.map(e => (0, r.jsx)(w, {
+          children: [require.length < module.length ? this.renderGenerateGiftCodeRow() : null, require.map(e => (0, r.jsx)(D, {
             giftCode: e,
             sku: o,
             hideCode: l
@@ -261,7 +261,7 @@ let x = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk246946.Z, Chunk82142.Z,
     isFetching: E.Z.getUserGiftCodesFetchingForSKUAndPlan(t, n),
     loadedAt: E.Z.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
     application: _.Z.getApplication(i.applicationId),
-    subscriptionPlan: null != n ? (0, S.oE)(n) : null,
+    subscriptionPlan: null != n ? (0, T.oE)(n) : null,
     giftCodes: a
   }
 })(L)

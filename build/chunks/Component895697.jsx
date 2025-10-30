@@ -38,8 +38,8 @@ function R(e) {
     currentUser: n,
     displayProfile: R,
     guild: P,
-    isHoveringOrFocusing: D,
-    onOpenProfile: w,
+    isHoveringOrFocusing: w,
+    onOpenProfile: D,
     channelId: L,
     onClose: x
   } = e, M = c.ZP.getName(null == P ? true : P.id, L, t), k = (0, i.e7)([u.Z], () => {
@@ -54,12 +54,12 @@ function R(e) {
     children: [(0, r.jsx)(E.Z, {
       user: t,
       guildId: null == P ? true : P.id,
-      onOpenProfile: w,
+      onOpenProfile: D,
       nickname: M,
       pronouns: null == R ? true : R.pronouns,
       tags: (0, r.jsx)(_.Z, {
         displayProfile: R,
-        themeType: S.l.POPOUT,
+        themeType: T.l.POPOUT,
         onClose: x
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
@@ -67,13 +67,13 @@ function R(e) {
           userId: t.id
         }), !U && (0, r.jsx)(O.Z, {
           userId: t.id,
-          isVisible: D,
-          onOpenProfile: w
+          isVisible: w,
+          onOpenProfile: D
         })]
       })
-    }), (0, r.jsx)(T.Z, {
+    }), (0, r.jsx)(S.Z, {
       user: t,
-      onOpenProfile: e => null == w ? true : w({
+      onOpenProfile: e => null == D ? true : D({
         section: e
       })
     }), (0, r.jsxs)("div", {
@@ -96,7 +96,7 @@ function R(e) {
       user: t,
       currentUser: n,
       guildId: null == P ? true : P.id,
-      onOpenUserProfileModal: w,
+      onOpenUserProfileModal: D,
       onClose: x
     }) : (0, r.jsx)(p.Z, {
       user: t,

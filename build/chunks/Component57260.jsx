@@ -26,11 +26,11 @@ function f(e) {
   } = (0, c.ZP)(), {
     ref: v,
     height: I = 0
-  } = (0, c.ZP)(), T = (0, l.q_F)({
+  } = (0, c.ZP)(), S = (0, l.q_F)({
     height: b ? O + I : I,
     config: s.config.stiff,
     onRest: () => E(true)
-  }, h ? "animate-never" : "respect-motion-settings"), S = i.useCallback(() => {
+  }, h ? "animate-never" : "respect-motion-settings"), T = i.useCallback(() => {
     p(!_)
   }, [_, p]);
   return i.useLayoutEffect(() => {
@@ -46,14 +46,14 @@ function f(e) {
       className: o()(u.contentExpandContainer, {
         [u.showOverflow]: b && g
       }),
-      style: T,
+      style: S,
       children: [(0, r.jsx)("div", {
         ref: v,
         className: o()(u.header, {
           [u.toggled]: b
         }),
         children: t({
-          onClick: S
+          onClick: T
         })
       }), (0, r.jsx)(l.Rny, {
         enabled: !b,

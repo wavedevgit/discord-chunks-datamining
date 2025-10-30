@@ -137,9 +137,9 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: Chunk117554.textCell,
     render(e) {
       let t;
-      return t = e.isRunning ? x.intl.string(x.t.Md326p) : e.isNew ? x.intl.string(x.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(v.ZP, {
+      return t = e.isRunning ? x.intl.string(x.t.Md326p) : e.isNew ? x.intl.string(x.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(y.ZP, {
         end: e.lastPlayed,
-        location: v.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
+        location: y.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
       }) : x.intl.string(x.t.EoWLru), (0, i.jsx)(E.Z, {
         align: E.Z.Align.CENTER,
         className: s()({
@@ -434,10 +434,10 @@ function H(e) {
       applicationViewItems: r,
       filterQuery: a,
       fetched: s
-    } = (0, c.cj)([y.Z], () => ({
-      applicationViewItems: y.Z.sortedFilteredLibraryApplicationViewItems,
-      filterQuery: y.Z.applicationFilterQuery,
-      fetched: y.Z.hasFetchedApplications
+    } = (0, c.cj)([v.Z], () => ({
+      applicationViewItems: v.Z.sortedFilteredLibraryApplicationViewItems,
+      filterQuery: v.Z.applicationFilterQuery,
+      fetched: v.Z.hasFetchedApplications
     })),
     {
       sortKey: u,

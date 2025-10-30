@@ -5,8 +5,8 @@ require.d(exports, {
   $Y: () => v,
   JK: () => b,
   Je: () => y,
-  T9: () => S,
-  UE: () => T,
+  T9: () => T,
+  UE: () => S,
   Xx: () => I,
   mm: () => O,
   qY: () => E
@@ -124,7 +124,7 @@ async function I(e, t, n) {
   })
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let i = o.Z.getGuild(e);
   if (null == i || !s.Z.can(_.Plq.MANAGE_GUILD, i)) return;
   let l = () => {
@@ -139,7 +139,7 @@ function T(e, t, n) {
   (0, f.UV)(l)
 }
 
-function S(e) {
+function T(e) {
   i.Z.dispatch({
     type: "AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS",
     guildId: e

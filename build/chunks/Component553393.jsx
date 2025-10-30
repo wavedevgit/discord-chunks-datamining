@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk85468 = require("./85468.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,7 +50,7 @@ function L(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -60,7 +60,7 @@ let x = "8px",
   k = 222;
 
 function j(e) {
-  var t, I, w, j, U;
+  var t, I, D, j, U;
   let {
     quest: G,
     memberListItemRef: B,
@@ -77,7 +77,7 @@ function j(e) {
     quest: G,
     questContent: y.jn.MEMBERS_LIST,
     sourceQuestContent: y.jn.MEMBERS_LIST
-  }), q = (null == G || null == (t = G.userStatus) ? true : t.claimedAt) != null, X = (null == G || null == (I = G.userStatus) ? true : I.enrolledAt) != null, Q = (null == G || null == (w = G.userStatus) ? true : w.completedAt) != null, J = (0, s.e7)([m.Z], () => m.Z.getState().theme), $ = (0, c.wj)(J) ? R.BR.DARK : R.BR.LIGHT, ee = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
+  }), q = (null == G || null == (t = G.userStatus) ? true : t.claimedAt) != null, X = (null == G || null == (I = G.userStatus) ? true : I.enrolledAt) != null, Q = (null == G || null == (D = G.userStatus) ? true : D.completedAt) != null, J = (0, s.e7)([m.Z], () => m.Z.getState().theme), $ = (0, c.wj)(J) ? R.BR.DARK : R.BR.LIGHT, ee = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
     ref: et,
     height: en
   } = (0, _.ZP)(), [er, ei] = i.useState(ee), ea = (0, h.Aq)(), eo = (0, o.eg)();
@@ -130,7 +130,7 @@ function j(e) {
         questContentCTA: E.jZ.OPEN_DISCLOSURE,
         trackGuildAndChannelMetadata: true,
         sourceQuestContent: y.jn.MEMBERS_LIST
-      }), (0, S.openDisclosureModal)(G, {
+      }), (0, T.openDisclosureModal)(G, {
         content: y.jn.MEMBERS_LIST,
         ctaContent: E.jZ.OPEN_DISCLOSURE,
         sourceQuestContent: y.jn.MEMBERS_LIST
@@ -143,7 +143,7 @@ function j(e) {
         questContentCTA: E.jZ.LEARN_MORE,
         trackGuildAndChannelMetadata: true,
         sourceQuestContent: y.jn.MEMBERS_LIST
-      }), (0, S.navigateToQuestHome)({
+      }), (0, T.navigateToQuestHome)({
         fromContent: y.jn.MEMBERS_LIST,
         questId: G.id
       })
@@ -209,7 +209,7 @@ function j(e) {
       Y.current = e
     },
     "aria-expanded": er,
-    className: D.wrapper,
+    className: w.wrapper,
     style: {
       width: null != (U = null == (j = B.current) ? true : j.clientWidth) ? U : k,
       height: es.height,
@@ -220,53 +220,53 @@ function j(e) {
       ref: e => {
         et.current = e
       },
-      className: D.container,
+      className: w.container,
       style: {
         borderRadius: eu
       },
       children: [(0, r.jsxs)("div", {
-        className: D.top,
+        className: w.top,
         children: [(0, r.jsxs)("div", {
-          className: D.left,
+          className: w.left,
           children: [(0, r.jsx)(u.Heading, {
             variant: "heading-sm/semibold",
             children: em.headerText
           }), (0, r.jsxs)(u.P3F, {
-            className: D.help,
+            className: w.help,
             onClick: e => {
               ec(), e_(e)
             },
             children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/medium",
               color: "text-muted",
-              className: D.helpText,
+              className: w.helpText,
               children: P.intl.format(P.t["Lm8/mH"], {
                 gamePublisher: G.config.messages.gamePublisher
               })
             }), (0, r.jsx)(u.idN, {
               size: "custom",
-              className: D.helpIcon,
+              className: w.helpIcon,
               width: M,
               height: M,
               color: u.TVs.colors.INTERACTIVE_NORMAL
             })]
           })]
         }), (0, r.jsx)("div", {
-          className: D.right,
+          className: w.right,
           children: (0, r.jsxs)("div", {
-            className: D.imgWrapper,
+            className: w.imgWrapper,
             children: [el((e, t) => t && (0, r.jsx)(a.animated.div, {
               style: e,
-              className: D.imgUnderlay
+              className: w.imgUnderlay
             })), "game" === em.tileAssetType && (0, r.jsx)("img", {
               alt: P.intl.formatToPlainString(P.t.IskzPg, {
                 gameTitle: G.config.messages.gameTitle,
                 gamePublisher: G.config.messages.gamePublisher
               }),
-              className: D.assetTile,
+              className: w.assetTile,
               src: (0, v.fh)(G, v.eC.GAME_TILE, $).url
-            }), "reward" === em.tileAssetType && (0, r.jsx)(T.Z, {
-              className: D.assetTile,
+            }), "reward" === em.tileAssetType && (0, r.jsx)(S.Z, {
+              className: w.assetTile,
               quest: G,
               questContent: y.jn.MEMBERS_LIST,
               learnMoreStyle: "icon",

@@ -50,7 +50,7 @@ require.d(exports, {
   Z5: () => e3,
   Zk: () => K,
   Zs: () => X,
-  a9: () => eS,
+  a9: () => eT,
   aQ: () => eM,
   am: () => eW,
   d$: () => Q,
@@ -58,13 +58,13 @@ require.d(exports, {
   dJ: () => M,
   dN: () => eb,
   eD: () => eR,
-  eW: () => S,
+  eW: () => T,
   ej: () => eZ,
   ex: () => eP,
   fY: () => tl,
   fw: () => tr,
   h4: () => tm,
-  ht: () => eT,
+  ht: () => eS,
   iF: () => ep,
   iR: () => G,
   jm: () => eU,
@@ -88,8 +88,8 @@ require.d(exports, {
   qJ: () => Y,
   qb: () => eg,
   qt: () => th,
-  r3: () => ew,
-  rs: () => T,
+  r3: () => eD,
+  rs: () => S,
   sB: () => e6,
   uX: () => ec,
   up: () => eH,
@@ -105,7 +105,7 @@ require.d(exports, {
   yR: () => et,
   yg: () => ee,
   yu: () => ef,
-  z3: () => eD,
+  z3: () => ew,
   z9: () => e_,
   zF: () => eV,
   zr: () => td
@@ -256,11 +256,11 @@ function I(e, t, n, i, a) {
   r.installLogCallback(e, t, n, i, a)
 }
 
-function T(e, t) {
+function S(e, t) {
   return r.rustMultiply(e, t)
 }
 
-function S() {
+function T() {
   return r.initLibdiscore()
 }
 
@@ -283,8 +283,8 @@ function R(e, t, n) {
 function P(e, t, n, i) {
   r.closure575_externref_shim(e, t, n, i)
 }
-let D = ["bytes"],
-  w = ["omit", "same-origin", "include"],
+let w = ["bytes"],
+  D = ["omit", "same-origin", "include"],
   L = ["same-origin", "no-cors", "cors", "navigate"],
   x = "undefined" == typeof FinalizationRegistry ? {
     register: () => {},
@@ -350,7 +350,7 @@ class G {
     r.__wbg_intounderlyingbytesource_free(module, 0)
   }
   get type() {
-    return D[r.intounderlyingbytesource_type(this.__wbg_ptr)]
+    return w[r.intounderlyingbytesource_type(this.__wbg_ptr)]
   }
   get autoAllocateChunkSize() {
     return r.intounderlyingbytesource_autoAllocateChunkSize(this.__wbg_ptr) >>> 0
@@ -626,11 +626,11 @@ function eI(e, t) {
   }
 }
 
-function eT() {
+function eS() {
   return {}
 }
 
-function eS() {
+function eT() {
   return []
 }
 
@@ -656,13 +656,13 @@ function eP(e, t, n) {
   return new Uint8Array(e, t >>> 0, n >>> 0)
 }
 
-function eD() {
+function ew() {
   return u(function(e, t) {
     return new Response(e, t)
   }, arguments)
 }
 
-function ew() {
+function eD() {
   return u(function(e, t, n) {
     return new Request(l(e, t), n)
   }, arguments)
@@ -739,7 +739,7 @@ function eK(e, t) {
 }
 
 function ez(e, t) {
-  e.credentials = w[t]
+  e.credentials = D[t]
 }
 
 function eq(e, t) {

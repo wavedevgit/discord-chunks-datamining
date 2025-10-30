@@ -122,13 +122,13 @@ module.exports = function(e) {
     I = {
       variants: [e.BINARY_NUMBER_MODE, e.C_NUMBER_MODE]
     },
-    T = {
+    S = {
       scope: "string",
       begin: /"/,
       end: /"/,
       contains: [e.BACKSLASH_ESCAPE]
     },
-    S = {
+    T = {
       scope: "string",
       begin: /@"/,
       end: /"/,
@@ -181,11 +181,11 @@ module.exports = function(e) {
       }, C],
       relevance: 2
     },
-    D = {
+    w = {
       scope: "string",
       match: i(/'/, o(/[^\\']/, /\\(?:.|\d{3}|x[a-fA-F\d]{2}|u[a-fA-F\d]{4}|U[a-fA-F\d]{8})/), /'/)
     };
-  return C.contains = [R, N, S, T, D, n, c, d, E, O, v, I, _, h], {
+  return C.contains = [R, N, T, S, w, n, c, d, E, O, v, I, _, h], {
     name: "F#",
     aliases: ["fs", "f#"],
     keywords: l,
@@ -194,13 +194,13 @@ module.exports = function(e) {
       "computation-expression": "keyword"
     },
     contains: [n, {
-      variants: [P, R, N, A, S, T, D]
+      variants: [P, R, N, A, T, S, w]
     }, c, d, y, {
       scope: "meta",
       begin: /\[</,
       end: />\]/,
       relevance: 2,
-      contains: [d, A, S, T, D, I]
+      contains: [d, A, T, S, w, I]
     }, b, E, O, v, I, _, h]
   }
 }

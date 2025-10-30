@@ -117,15 +117,15 @@ let W = e => {
     duration: n
   } = e, r = null != t ? H(t) : B, i = null != n ? H(n) : B;
   return r = r.padStart(i.length, "0"), (0, a.jsxs)("div", {
-    className: w.durationTimeWrapper,
+    className: D.durationTimeWrapper,
     children: [(0, a.jsx)("span", {
-      className: w.durationTimeDisplay,
+      className: D.durationTimeDisplay,
       children: r
     }), (0, a.jsx)("span", {
-      className: w.durationTimeSeparator,
+      className: D.durationTimeSeparator,
       children: "/"
     }), (0, a.jsx)("span", {
-      className: w.durationTimeDisplay,
+      className: D.durationTimeDisplay,
       children: i
     })]
   })
@@ -251,7 +251,7 @@ class K extends(r = Chunk647438.Component) {
           minValue: 0,
           maxValue: 1,
           currentWindow: window,
-          onValueChange: e => o(e, S.Z.Types.VOLUME),
+          onValueChange: e => o(e, T.Z.Types.VOLUME),
           onToggleMute: Chunk392711,
           onVolumeShow: u,
           onVolumeHide: Chunk374470,
@@ -283,23 +283,23 @@ function z(e) {
     hideDownloadButton: s
   } = e;
   return (0, a.jsxs)("div", {
-    className: w.audioMetadata,
+    className: D.audioMetadata,
     children: [(0, a.jsxs)("div", {
-      className: w.metadataContent,
+      className: D.metadataContent,
       children: [i ? t : (0, a.jsx)(m.Z, {
         href: r,
-        className: w.metadataDownload,
-        iconClassName: w.metadataIcon,
+        className: D.metadataDownload,
+        iconClassName: D.metadataIcon,
         mimeType: o,
         fileName: t
       }), (0, a.jsx)("div", {
-        className: w.metadataSize,
+        className: D.metadataSize,
         children: n
       })]
     }), !s && (0, a.jsx)(m.Z, {
       href: r,
-      className: w.metadataDownload,
-      iconClassName: w.metadataIcon,
+      className: D.metadataDownload,
+      iconClassName: D.metadataIcon,
       mimeType: o
     })]
   })
@@ -576,8 +576,8 @@ class J extends(i = Chunk647438.PureComponent) {
     } = this.playPausePopRef;
     if (null == u) return;
     a && !t.playing ? (this.play(), this.handleMouseMove(), this.handleUIUpdate(), t.hasClickedPlay && (null == d || d.pop(a))) : !a && t.playing && (u.pause(), null == d || d.pop(a), null == n || n()), a && null == this._analytics.metadata.hasValidFrame && this.checkVideoDecodability();
-    let f = (0, T.fn)(u.parentNode, u);
-    o && !t.fullscreen && null != f ? ((0, T.Dj)(f), f.addEventListener(T.NO, this.handleFullScreenExit)) : !o && t.fullscreen && null != f && (f.removeEventListener(T.NO, this.handleFullScreenExit), (0, T.Pr)(f, f.ownerDocument)), l === S.Z.Types.DURATION && t.dragging !== S.Z.Types.DURATION && a ? u.pause() : l !== S.Z.Types.DURATION && t.dragging === S.Z.Types.DURATION && a && u.play(), s !== t.muted && (u.muted = s, null == i || i(s)), c !== t.volume && (u.volume = c, null == r || r(c))
+    let f = (0, S.fn)(u.parentNode, u);
+    o && !t.fullscreen && null != f ? ((0, S.Dj)(f), f.addEventListener(S.NO, this.handleFullScreenExit)) : !o && t.fullscreen && null != f && (f.removeEventListener(S.NO, this.handleFullScreenExit), (0, S.Pr)(f, f.ownerDocument)), l === T.Z.Types.DURATION && t.dragging !== T.Z.Types.DURATION && a ? u.pause() : l !== T.Z.Types.DURATION && t.dragging === T.Z.Types.DURATION && a && u.play(), s !== t.muted && (u.muted = s, null == i || i(s)), c !== t.volume && (u.volume = c, null == r || r(c))
   }
   componentWillUnmount() {
     this._unmounted = true;
@@ -915,8 +915,8 @@ class J extends(i = Chunk647438.PureComponent) {
         current: e
       } = this.mediaRef;
       if (null == e) return;
-      let t = (0, T.fn)(e.parentNode, e);
-      null != t && (0, T.rB)(t, null == t ? true : t.ownerDocument) || this.setState({
+      let t = (0, S.fn)(e.parentNode, e);
+      null != t && (0, S.rB)(t, null == t ? true : t.ownerDocument) || this.setState({
         fullscreen: false
       })
     }), x(this, "toggleFullscreen", () => {
@@ -946,8 +946,8 @@ class J extends(i = Chunk647438.PureComponent) {
       let {
         current: n
       } = this.mediaRef;
-      if (t === S.Z.Types.DURATION) null != n && isFinite(n.duration) && this.setTime(n.duration * e, false);
-      else if (t === S.Z.Types.VOLUME) {
+      if (t === T.Z.Types.DURATION) null != n && isFinite(n.duration) && this.setTime(n.duration * e, false);
+      else if (t === T.Z.Types.VOLUME) {
         let t = (0, I.A)(e, 1);
         0 === t ? this.setState({
           muted: true,

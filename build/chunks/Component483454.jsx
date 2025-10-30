@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -158,7 +158,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       children: t
     })
   },
-  D = Chunk647438.memo(function(e) {
+  w = Chunk647438.memo(function(e) {
     var {
       options: t,
       renderAsStandaloneElement: n,
@@ -194,7 +194,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       }), u]
     }) : u
   }),
-  w = e => {
+  D = e => {
     let {
       step: t,
       billingAddressInfo: n,
@@ -218,13 +218,13 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
           [O.cardElementContainer]: u === y.He.CARD,
           [O.customPaymentElementContainer]: u === y.He.PAYPAL
         }),
-        children: (0, r.jsx)(R, S(I({}, o), {
+        children: (0, r.jsx)(R, T(I({}, o), {
           step: t,
           analyticsContext: _
         }))
       }), (0, r.jsx)("div", {
         className: s()(O.addressElementContainer, m ? O.visible : [O.hidden, O.rightToLeftEntry]),
-        children: (0, r.jsx)(D, S(I({}, l), {
+        children: (0, r.jsx)(w, T(I({}, l), {
           internalKey: d,
           renderAsStandaloneElement: u === y.He.PAYMENT_REQUEST,
           billingAddressInfo: n
@@ -254,7 +254,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
     return o || null != s || null == l ? (0, r.jsx)(L, {}) : (0, r.jsx)(a.Elements, {
       stripe: l,
       options: I({}, i),
-      children: (0, r.jsx)(w, I({}, n))
+      children: (0, r.jsx)(D, I({}, n))
     })
   },
   M = ["applePay", "googlePay", "link"],
@@ -314,10 +314,10 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
         u.Z.unsubscribe("BRAINTREE_TOKENIZE_PAYPAL_FAIL_WINDOW_CLOSED", e)
       }
     }, [I, r]);
-    let T = i.useCallback(() => {
+    let S = i.useCallback(() => {
         m(null)
       }, []),
-      [S, A] = i.useState(true);
+      [T, A] = i.useState(true);
     return {
       shouldRenderPaymentElement: b,
       stripePaymentElementProps: O,
@@ -328,8 +328,8 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       paymentElementSelectedType: h,
       setPaymentElementSelectedType: m,
       handlePaymentElementStep: I,
-      onBackFromPaymentElement: T,
-      addressElementKey: S,
+      onBackFromPaymentElement: S,
+      addressElementKey: T,
       remountAddressElement: i.useCallback(() => {
         A(Date.now().toString())
       }, [])

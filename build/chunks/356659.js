@@ -2,32 +2,35 @@
 /** chunk id: 356659, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  $O: () => u,
   Bg: () => _,
   D5: () => l,
-  D_: () => c,
-  EF: () => f,
-  G$: () => u,
-  HW: () => E,
+  Fv: () => c,
+  G$: () => d,
   Hp: () => g,
   JO: () => S,
-  Kw: () => C,
-  MG: () => y,
+  Kw: () => A,
+  MG: () => b,
   OT: () => a,
-  Qr: () => v,
-  Ut: () => O,
+  Qr: () => O,
+  SU: () => P,
+  Ut: () => y,
   WM: () => p,
   X9: () => s,
-  XH: () => b,
+  XH: () => E,
+  b0: () => D,
   dJ: () => o,
-  f_: () => I,
-  i$: () => P,
-  jF: () => d,
-  ji: () => R,
-  jp: () => N,
-  mg: () => m,
+  f_: () => v,
+  i$: () => R,
+  jF: () => f,
+  ji: () => N,
+  jp: () => C,
   nU: () => h,
-  wD: () => T,
-  yl: () => A
+  qb: () => w,
+  rI: () => m,
+  wD: () => I,
+  yl: () => T,
+  zh: () => L
 });
 var Chunk710845 = require("./710845.js"),
   Chunk70956 = require("./70956.js"),
@@ -38,31 +41,36 @@ var Chunk710845 = require("./710845.js"),
     return e[e.ALL = 0] = "ALL", e[e.FRIENDS = 1] = "FRIENDS", e
   }({}),
   s = function(e) {
-    return e.DECOUPLED = "decoupled", e.VIEWER = "viewer", e.STREAMER = "streamer", e
+    return e.DECOUPLED = "decoupled", e.VIEWER = "viewer", e.STREAMER = "streamer", e.VOICE = "voice", e
   }({}),
   l = function(e) {
     return e[e.Error = 0] = "Error", e[e.Disabled = 1] = "Disabled", e[e.Enabled = 2] = "Enabled", e
   }({});
 let c = "alt+c",
-  u = 6 * Chunk70956.Z.Millis.SECOND,
-  d = new Chunk710845.Z("Clips"),
-  f = e => "Discord_Clip_".concat(e, ".mp4"),
-  _ = 3,
+  u = "f12",
+  d = 6 * Chunk70956.Z.Millis.SECOND,
+  f = new Chunk710845.Z("Clips"),
+  _ = 4,
   p = 2,
   h = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/,
   m = /(NVIDIA GeForce (RTX (20|30|40|50).*))|(.*Radeon RX (57|58|59|6|7|9).*)/,
   g = .1,
-  E = 25,
-  b = 0,
-  y = 200,
-  O = "clips-edit",
-  v = "clips-gallery",
-  I = 640,
-  T = 360,
+  E = 0,
+  b = 200,
+  y = "clips-edit",
+  O = "clips-gallery",
+  v = 640,
+  I = 360,
   S = 100,
-  A = e => "Clip - ".concat(new Date(e).toLocaleString()),
-  C = 15,
-  N = 3e4,
-  R = 30,
-  P = 10;
-Chunk70956.Z.Millis.DAY
+  T = e => "Clip - ".concat(new Date(e).toLocaleString()),
+  A = 15,
+  C = 3e4,
+  N = 30,
+  R = 10;
+Chunk70956.Z.Millis.DAY;
+let P = 20,
+  w = 1,
+  D = 50;
+var L = function(e) {
+  return e.ALL = ":all", e.APPLICATION = ":application", e.VOICE = ":voice", e.SOUNDBOARD = ":soundboard", e
+}({})

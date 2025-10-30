@@ -9,8 +9,8 @@ require.d(exports, {
   aT: () => ex,
   ae: () => ev,
   bL: () => ey,
-  hJ: () => eS,
-  iV: () => eD,
+  hJ: () => eT,
+  iV: () => ew,
   jx: () => eC,
   oR: () => eR,
   qz: () => eN,
@@ -225,7 +225,7 @@ function eI(e) {
   }, [n, r, a, t, l, s, o])
 }
 
-function eT(e, t) {
+function eS(e, t) {
   return i.useCallback((n, r, i) => {
     let a = e.current;
     null != n && null != a && (W.default.track(el.rMx.SOUNDMOJI_SELECT, {
@@ -238,7 +238,7 @@ function eT(e, t) {
   }, [e, t.id, t.guild_id])
 }
 
-function eS(e, t) {
+function eT(e, t) {
   let n = i.useCallback(() => {
       t || (0, C.RO)(eu.X1.EMOJI, e)
     }, [t, e]),
@@ -339,7 +339,7 @@ function eP(e, t, n, r) {
   }, s)
 }
 
-function eD(e, t) {
+function ew(e, t) {
   let [n, r] = (0, C.Iu)(e => [e.activeView, e.activeViewType], u.X), a = (0, _.e7)([O.Z], () => O.Z.shouldShowPopup() && O.Z.activeViewType() === e);
   i.useEffect(() => () => {
     (0, C._Q)(e)
@@ -356,7 +356,7 @@ function eD(e, t) {
   }
 }
 
-function ew(e, t, n) {
+function eD(e, t, n) {
   let r = i.useCallback(() => {
     var r, i;
     return !!(!n && (null == (r = t.current) ? true : r.onTabOrEnter(false))) || (null == (i = e.current) ? true : i.onTabOrEnter(false)) || false
@@ -378,7 +378,7 @@ function eL(e, t) {
   let [n, r] = i.useState(null), a = i.useCallback(() => {
     var e, n;
     let i, a = null == (e = t.current) ? true : e.getSlateEditor();
-    null != a && (i = null == (n = eo.bN.getSelectedParentOfType(a, S.un)) ? true : n[0].type), r(null != i ? i : null)
+    null != a && (i = null == (n = eo.bN.getSelectedParentOfType(a, T.un)) ? true : n[0].type), r(null != i ? i : null)
   }, [t]);
   return i.useEffect(() => (e.on("selection-changed", a), a(), () => {
     e.off("selection-changed", a)
@@ -388,7 +388,7 @@ let ex = e => {
     let {
       enabled: t,
       onlyExactMatch: n
-    } = (0, D.zM)("ChannelTextAreaContainer", {
+    } = (0, w.zM)("ChannelTextAreaContainer", {
       autoTrackExposure: false
     }), [r, a] = i.useState(true), o = i.useRef(null);
     return i.useLayoutEffect(() => {
@@ -417,11 +417,11 @@ function ek(e, t) {
     textValue: f,
     richValue: h,
     className: O,
-    innerClassName: S,
+    innerClassName: T,
     editorClassName: C,
     id: R,
     required: P,
-    disabled: D,
+    disabled: w,
     placeholder: x,
     accessibilityLabel: M,
     channel: k,
@@ -487,7 +487,7 @@ function ek(e, t) {
     canAttachFiles: e7,
     canCreateThreads: e9,
     canEveryoneSendMessages: te
-  } = eP(k, j, e2, D), tt = j.toolbarType === Q.OW.STATIC, tn = !G.dN.useSetting() && !(0, q.isAndroidWeb)() && null != window.ResizeObserver, tr = !tn || !(null == (n = j.commands) ? true : n.enabled) || !U || f !== ec.GI, ti = (0, w.Z)(), {
+  } = eP(k, j, e2, w), tt = j.toolbarType === Q.OW.STATIC, tn = !G.dN.useSetting() && !(0, q.isAndroidWeb)() && null != window.ResizeObserver, tr = !tn || !(null == (n = j.commands) ? true : n.enabled) || !U || f !== ec.GI, ti = (0, D.Z)(), {
     fontSize: ta
   } = (0, _.cj)([g.Z], () => ({
     fontSize: g.Z.fontSize
@@ -497,7 +497,7 @@ function ek(e, t) {
     var r;
     t === ec.GI && "" === ts.current && (null == (r = j.commands) ? true : r.enabled) && (null == eY || eY()), null == W || W(e, t, n)
   }, [W, eY, null == (a = j.commands) ? true : a.enabled]);
-  eS(j, e6);
+  eT(j, e6);
   let {
     eventEmitter: tc,
     handleEditorSelectionChanged: tu
@@ -516,22 +516,22 @@ function ek(e, t) {
     channelId: k.id,
     chatInputType: j,
     submit: eu
-  }), ty = eT(eQ, k), tO = i.useCallback(() => {
+  }), ty = eS(eQ, k), tO = i.useCallback(() => {
     var e;
     return null == e$ || null == (e = e$.current) ? true : e.hide()
   }, []), {
     editorHeight: tv,
     handleResize: tI
   } = eR(K), {
-    handleTab: tT,
-    handleEnter: tS,
+    handleTab: tS,
+    handleEnter: tT,
     handleMoveSelection: tA
-  } = ew(tp, eX, tr), {
+  } = eD(tp, eX, tr), {
     expressionPickerView: tC,
     shouldHideExpressionPicker: tN,
     handleOuterClick: tR
-  } = eD(j, eQ), tP = eL(tc, eQ), tD = ex(f), {
-    currentAutocompleteType: tw,
+  } = ew(j, eQ), tP = eL(tc, eQ), tw = ex(f), {
+    currentAutocompleteType: tD,
     handleAutocompleteVisibilityChange: tL
   } = eM();
   (0, X.S)(tc, k.guild_id, k.id);
@@ -597,7 +597,7 @@ function ek(e, t) {
         }), (0, r.jsxs)("div", {
           ref: eJ,
           onScroll: tO,
-          className: o()(S, {
+          className: o()(T, {
             [ed.scrollableContainer]: true,
             [ed.themedBackground]: !eF,
             [ed.hasStackedBar]: tG.stacked.length > 0
@@ -646,8 +646,8 @@ function ek(e, t) {
                 onFocus: ee,
                 onKeyDown: eo,
                 onSubmit: tf,
-                onTab: tT,
-                onEnter: tS,
+                onTab: tS,
+                onEnter: tT,
                 onMoveSelection: tA,
                 onSelectionChanged: tu,
                 onMaybeShowAutocomplete: th,
@@ -656,8 +656,8 @@ function ek(e, t) {
                 fontSize: ta,
                 spellcheckEnabled: to,
                 canOnlyUseTextCommands: tx,
-                isEditorIdle: tD,
-                currentAutocompleteType: tw,
+                isEditorIdle: tw,
+                currentAutocompleteType: tD,
                 className: o()({
                   [ed.textAreaThreadCreation]: j === Q.Ie.THREAD_CREATION,
                   [ed.profileBioInput]: j === Q.Ie.PROFILE_BIO_INPUT,
@@ -672,7 +672,7 @@ function ek(e, t) {
           ref: eX,
           channel: k,
           canOnlyUseTextCommands: tx
-        }), (0, r.jsx)(T.Z, {
+        }), (0, r.jsx)(S.Z, {
           ref: tp,
           channel: k,
           canMentionRoles: ep,
@@ -683,7 +683,7 @@ function ek(e, t) {
           canSendSoundmoji: null == (u = j.soundmoji) ? true : u.allowSending,
           textValue: f,
           focused: U,
-          isEditorIdle: tD,
+          isEditorIdle: tw,
           expressionPickerView: tC,
           type: j,
           targetRef: eq,

@@ -189,14 +189,14 @@ function I(e) {
   }))
 }
 
-function T(e) {
+function S(e) {
   let {
     channel: t
   } = e;
   t.type === s.d4z.GUILD_ANNOUNCEMENT && null != t.guild_id && _.delete(t.guild_id)
 }
 
-function S(e) {
+function T(e) {
   let {
     guildId: t,
     enabled: n
@@ -253,8 +253,8 @@ let N = new C(Chunk570140.Z, {
   MEMBER_VERIFICATION_FORM_UPDATE: v,
   INVITE_RESOLVE_SUCCESS: I,
   INSTANT_INVITE_CREATE_SUCCESS: I,
-  CHANNEL_CREATE: T,
-  GUILD_SETTINGS_SET_WIDGET: S,
+  CHANNEL_CREATE: S,
+  GUILD_SETTINGS_SET_WIDGET: T,
   GUILD_UPDATE: A,
   GUILD_PROFILE_UPDATE_VISIBILITY: E,
   GUILD_PROFILE_UPDATE_VISIBILITY_SUCCESS: O,

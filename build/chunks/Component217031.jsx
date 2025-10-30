@@ -234,55 +234,56 @@ function U(e) {
     selectedDestinations: s,
     handleToggleDestination: a,
     disableSelection: u,
-    rowClassName: c
-  } = e, o = r.useMemo(() => {
+    rowClassName: c,
+    validateDestination: o
+  } = e, d = r.useMemo(() => {
     var e;
     return null != (e = null == s ? true : s.map(y.hC)) ? e : []
-  }, [s]), d = r.useCallback(e => {
+  }, [s]), f = r.useCallback(e => {
     let {
       section: r,
       row: s
     } = e;
-    if (null == i || r > 0) return;
+    if (r > 0) return;
     let {
-      type: d,
-      record: f
+      type: f,
+      record: m
     } = t[s];
-    if (d === h.h8.HEADER) return;
-    let m = d === h.h8.USER ? {
+    if (f === h.h8.HEADER) return;
+    let b = f === h.h8.USER ? {
         type: "user",
-        id: f.id
+        id: m.id
       } : {
         type: "channel",
-        id: f.id
+        id: m.id
       },
-      b = (0, y.hC)(m),
-      g = (0, _.HY)(n, i, f),
-      p = o.includes(b),
-      E = {
-        key: b,
+      g = (0, y.hC)(b),
+      p = (0, _.HY)(n, i, m, o),
+      E = d.includes(g),
+      S = {
+        key: g,
         message: n,
-        destination: m,
-        subLabel: null != g ? g.label : true,
-        disabled: u && !p || null != g,
-        selected: p,
+        destination: b,
+        subLabel: null != p ? p.label : true,
+        disabled: u && !E || null != p,
+        selected: E,
         onPressDestination: a,
         "aria-posinset": s + 1,
         "aria-setsize": t.length,
         className: c
       };
-    return d === h.h8.USER ? (0, l.jsx)(w, M({
-      user: f
-    }, E)) : d === h.h8.GROUP_DM ? (0, l.jsx)(D, M({
-      channel: f
-    }, E)) : d === h.h8.TEXT_CHANNEL || d === h.h8.VOICE_CHANNEL ? (0, l.jsx)(R, M({
-      channel: f
-    }, E)) : void(0, O.vE)(d)
-  }, [u, a, n, i, t, o, c]);
+    return f === h.h8.USER ? (0, l.jsx)(w, M({
+      user: m
+    }, S)) : f === h.h8.GROUP_DM ? (0, l.jsx)(D, M({
+      channel: m
+    }, S)) : f === h.h8.TEXT_CHANNEL || f === h.h8.VOICE_CHANNEL ? (0, l.jsx)(R, M({
+      channel: m
+    }, S)) : void(0, O.vE)(f)
+  }, [u, a, n, i, t, d, c, o]);
   return {
     sections: [t.length],
     sectionHeight: 0,
     rowHeight: 48,
-    renderRow: d
+    renderRow: f
   }
 }

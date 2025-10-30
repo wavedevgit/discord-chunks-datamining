@@ -4,12 +4,12 @@
 require.d(exports, {
   O9: () => y,
   OK: () => R,
-  Yz: () => T,
+  Yz: () => S,
   aL: () => E,
   hi: () => O,
   s2: () => v,
   sU: () => N,
-  wt: () => S
+  wt: () => T
 }), require("./415506.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -77,7 +77,7 @@ function I(e) {
     }))
   }), d.ZP.InputEventServiceSetAllowed(true))
 }
-async function T(e) {
+async function S(e) {
   if (c.isPlatformEmbedded && E()) try {
     await d.ZP.DoesSystemServiceHaveUpdate() && await d.ZP.UpdateSystemService(), I(e)
   } catch (e) {
@@ -88,7 +88,7 @@ async function T(e) {
     }), m.error("System service initialization failed", e), e
   }
 }
-async function S() {
+async function T() {
   Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.InputEventServiceSetAllowed(false), await Chunk570140.Z.dispatch({
     type: "SYSTEM_SERVICE_INITIALIZE",
     inputServiceStatus: {
@@ -169,7 +169,7 @@ async function N(e) {
 async function R(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   if (c.isPlatformEmbedded) try {
-    await S(), await d.ZP.UninstallSystemService(), m.info("System service uninstalled."), C((0, i.createToast)(h.intl.string(h.t.dThS5H), i.ToastType.SUCCESS), t), l.default.track(p.rMx.SYSTEM_SERVICE_UNINSTALL_ATTEMPTED, {
+    await T(), await d.ZP.UninstallSystemService(), m.info("System service uninstalled."), C((0, i.createToast)(h.intl.string(h.t.dThS5H), i.ToastType.SUCCESS), t), l.default.track(p.rMx.SYSTEM_SERVICE_UNINSTALL_ATTEMPTED, {
       success: true,
       source: e
     })

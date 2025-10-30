@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk180964 = require("./180964.js"),
   Chunk730440 = require("./730440.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,7 +46,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -108,7 +108,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
       })
     })
   },
-  D = () => Object.entries(M).map(e => {
+  w = () => Object.entries(M).map(e => {
     let [t, n] = e;
     return (0, r.jsx)("div", {
       className: v.promoCardContainer,
@@ -146,7 +146,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
       })
     }, t)
   }),
-  w = e => {
+  D = e => {
     let {
       promotionRecurrences: t
     } = e, [n, o] = i.useState(t.length > 1), [l, c] = i.useState([]);
@@ -312,7 +312,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
         let e = new Date,
           t = new Date(e.getFullYear(), e.getMonth() + 1, 0).getDate(),
           n = e.getDate() / t * 100;
-        return l ? (0, r.jsx)(D, {}) : (0, r.jsxs)("div", {
+        return l ? (0, r.jsx)(w, {}) : (0, r.jsxs)("div", {
           className: v.container,
           children: [(0, r.jsx)("div", {
             className: v.progressHeader,
@@ -329,7 +329,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
             className: v.cards,
             children: Object.entries(u).map(e => {
               let [t, n] = e;
-              return (0, r.jsx)(w, {
+              return (0, r.jsx)(D, {
                 promotionRecurrences: n
               }, t)
             })

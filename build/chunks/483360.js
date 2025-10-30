@@ -125,15 +125,15 @@ let eb = new Chunk710845.Z("AutocompleteUtils"),
   eO = 8,
   ev = 7,
   eI = 5,
-  eT = 3,
-  eS = 1,
+  eS = 3,
+  eT = 1,
   eA = 1,
   eC = 3,
   eN = 5,
   eR = 3,
   eP = 11,
-  eD = 6,
-  ew = 8,
+  ew = 6,
+  eD = 8,
   eL = 1,
   ex = 1e3,
   eM = .2,
@@ -214,8 +214,8 @@ function eq(e, t) {
       return ev
     }
     if (r.test(e)) return eI;
-    if (ez(i, e)) return eT;
-    if (o && a()(i, e)) return eS
+    if (ez(i, e)) return eS;
+    if (o && a()(i, e)) return eT
   } catch (e) {
     eb.error(e)
   }
@@ -243,7 +243,7 @@ function eJ(e) {
     boosters: s
   } = e, l = X.default.getUsers(), c = q.Z.getGuildId(), u = t.toLocaleLowerCase(), d = (0, eo.Fv)(u), _ = [], p = [], h = n.length, m = 0, g = 0;
   for (; m < h;) {
-    var E, b, y, O, v, I, T, S, A;
+    var E, b, y, O, v, I, S, T, A;
     let e, r, f = n[m];
     f instanceof M.Z ? (r = f, e = null == (b = Z.ZP.getNick(c, r.id)) ? true : b.toLocaleLowerCase()) : (e = null == (y = f.nick) ? true : y.toLocaleLowerCase(), r = l[f.userId]);
     let h = null == (E = es.ZP.getGlobalName(r)) ? true : E.toLocaleLowerCase();
@@ -262,14 +262,14 @@ function eJ(e) {
       }) : l.substring(0, d.length) === d || (null == f ? true : f.substring(0, d.length)) === d || (null == E ? true : E.substring(0, d.length)) === d ? _.push({
         type: ec.h8.USER,
         record: r,
-        score: eY(eS, null == s ? true : s[r.id]),
+        score: eY(eT, null == s ? true : s[r.id]),
         comparator: null != (I = null != h ? h : e) ? I : n,
-        sortable: null != (T = null != m ? m : c) ? T : i
+        sortable: null != (S = null != m ? m : c) ? S : i
       }) : g < ej && (a()(u, i) || a()(d, l) || null != c && a()(u, c) || null != f && a()(d, f) || null != m && a()(u, m) || null != E && a()(d, E)) && (p.push({
         type: ec.h8.USER,
         record: r,
-        score: eY(eS, null == s ? true : s[r.id]),
-        comparator: null != (S = null != h ? h : e) ? S : n,
+        score: eY(eT, null == s ? true : s[r.id]),
+        comparator: null != (T = null != h ? h : e) ? T : n,
         sortable: null != (A = null != m ? m : c) ? A : i
       }), g += 1)
     }
@@ -283,12 +283,12 @@ function e$(e) {
     case R.MO.STICKER_NAME:
       return eP;
     case R.MO.CORRELATED_EMOJI:
-      return eD;
+      return ew;
     case R.MO.TAG:
       return eL;
     case R.MO.GUILD_NAME:
     case R.MO.PACK_NAME:
-      return ew;
+      return eD;
     default:
       return 1
   }
@@ -563,9 +563,9 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
               let e = e4(n, t, false);
               0 !== e && (c += .5 * e)
             }
-            c = Math.min(ev - eS, c)
+            c = Math.min(ev - eT, c)
           }
-          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e3(l, e.type) && (c = Math.max(c - eA, eS / 2)), e.isThread() && (e.isActiveThread() || (c -= eC), D.Z.hasJoined(e.id) || (c -= eN)), c = Math.min(c + Math.min(null != (O = U.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= ev ? ey : ev), b.push({
+          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e3(l, e.type) && (c = Math.max(c - eA, eT / 2)), e.isThread() && (e.isActiveThread() || (c -= eC), w.Z.hasJoined(e.id) || (c -= eN)), c = Math.min(c + Math.min(null != (O = U.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= ev ? ey : ev), b.push({
             type: (0, L.bw)(e.type) ? ec.h8.VOICE_CHANNEL : ec.h8.TEXT_CHANNEL,
             record: e,
             score: eY(c, d[e.id]),
@@ -1006,7 +1006,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         maxCount: i = el.rnv,
         matchComparator: a
       } = e;
-      return w.DZ.loadIfNecessary(), {
+      return D.DZ.loadIfNecessary(), {
         emojis: m.ZP.searchWithoutFetchingLatest({
           channel: n,
           query: t,
@@ -1022,7 +1022,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         i = X.default.getCurrentUser(),
         a = new Set,
         o = [];
-      for (let s of (w.DZ.loadIfNecessary(), e)) {
+      for (let s of (D.DZ.loadIfNecessary(), e)) {
         if ("" === s) continue;
         let e = s.toLocaleLowerCase(),
           l = (0, eo._I)(e),
@@ -1054,11 +1054,11 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
     },
     querySoundmoji(e, t) {
       let n = X.default.getCurrentUser();
-      T.Z.isFetching() || T.Z.hasFetchedAllSounds() || (0, I.w)(), w.DZ.loadIfNecessary();
-      let r = Array.from(T.Z.getSounds().values()).reduce((e, n) => (n.forEach(n => {
+      S.Z.isFetching() || S.Z.hasFetchedAllSounds() || (0, I.w)(), D.DZ.loadIfNecessary();
+      let r = Array.from(S.Z.getSounds().values()).reduce((e, n) => (n.forEach(n => {
         (0, v.Z)(n, null == t ? true : t.guild_id, null == t ? true : t.id) && e.push(n)
       }), e), []);
-      return (0, S.cK)(e, r, n, t)
+      return (0, T.cK)(e, r, n, t)
     },
     queryGames(e) {
       let t = g.ZP.getRunningVerifiedApplicationIds();
@@ -1131,8 +1131,8 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
           y = o.username.toLocaleLowerCase(),
           O = (0, eo._I)(y),
           v = (0, eo.Fv)(O),
-          [I, T] = eQ(t),
-          [S, A] = eQ(f),
+          [I, S] = eQ(t),
+          [T, A] = eQ(f),
           [C, N] = eQ(E),
           R = [
             [y, y],
@@ -1140,7 +1140,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
             [t, t],
             [I, t],
             [f, f],
-            [S, f],
+            [T, f],
             [E, E],
             [C, E]
           ].filter(e => null != e[0] && null != e[1]);
@@ -1160,7 +1160,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
               continue c
             } for (let [e, n] of [
               [v, y],
-              [T, t],
+              [S, t],
               [A, f],
               [N, E]
             ])

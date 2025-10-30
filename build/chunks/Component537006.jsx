@@ -2,7 +2,7 @@
 /** chunk id: 537006, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -48,7 +48,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     tiny: t,
     isPremiumUser: n,
@@ -71,7 +71,7 @@ function D(e) {
         icon: u.SrA,
         text: N.intl.string(N.t["0Q61kF"]),
         onClick: () => {
-          (0, E.uL)(T.Z5c.APPLICATION_STORE), null == i || i()
+          (0, E.uL)(S.Z5c.APPLICATION_STORE), null == i || i()
         }
       }) : (0, r.jsx)(g.Z, {
         onClick: () => {
@@ -84,7 +84,7 @@ function D(e) {
         },
         subscriptionTier: A.Si.TIER_2,
         premiumModalAnalyticsLocation: {
-          section: T.jXE.USER_PROFILE
+          section: S.jXE.USER_PROFILE
         },
         className: R.matchManaColors,
         size: t ? c.zx.Sizes.TINY : c.zx.Sizes.SMALL,
@@ -113,7 +113,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     isPremiumUser: t,
     onInteraction: n,
@@ -136,13 +136,13 @@ function w(e) {
     v = (0, r.jsx)(P, {
       onClose: () => {
         (0, h.Q3)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS, {
-          dismissAction: S.L.USER_DISMISS,
+          dismissAction: T.L.USER_DISMISS,
           guildId: E,
           forceTrack: true
         })
       }
     }),
-    I = (0, r.jsx)(D, {
+    I = (0, r.jsx)(w, {
       isPremiumUser: t,
       onInteraction: n,
       tiny: f

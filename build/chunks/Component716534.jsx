@@ -60,7 +60,7 @@ function X(e, t, n) {
     let {
       intervalType: e,
       intervalCount: o
-    } = P.ZP.getIntervalForInvoice(t), s = (0, D.og)((0, D.T4)(t.total, t.currency), e, o), l = null != n ? n : t.subscriptionPeriodEnd;
+    } = P.ZP.getIntervalForInvoice(t), s = (0, w.og)((0, w.T4)(t.total, t.currency), e, o), l = null != n ? n : t.subscriptionPeriodEnd;
     r = z.intl.format(z.t.ZzmrTk, {
       termsURL: W.EYA.TERMS,
       paidURL: W.EYA.PAID_TERMS,
@@ -106,23 +106,23 @@ function Q(e) {
       selectedSkuId: eO,
       defaultPlanId: ev,
       isPremium: eI,
-      startedPaymentFlowWithPaymentSourcesRef: eT,
-      setInvoicePreview: eS,
+      startedPaymentFlowWithPaymentSourcesRef: eS,
+      setInvoicePreview: eT,
       contextMetadata: eA,
       inReverseTrial: eC,
       setPurchaseError: eN,
       hasPaymentSources: eR,
       enablePremiumBrandRefresh: eP,
-      premiumBrandRefreshBackgroundClassName: eD
+      premiumBrandRefreshBackgroundClassName: ew
     } = (0, b.JL)(),
     {
-      isGift: ew,
+      isGift: eD,
       giftRecipient: eL,
       selectedGiftStyle: ex
     } = (0, E.wD)(),
     eM = (0, x.Ng)(),
     ek = null == eM || null == (t = eM.discount) ? true : t.plan_ids.some(e => Y.GP[e].skuId === eO),
-    ej = !ew && null != eM && null != eO && ek,
+    ej = !eD && null != eM && null != eO && ek,
     eU = (0, u.e7)([A.Z], () => A.Z.get(J));
   l()(null != eU, "Missing plan");
   let eG = [{
@@ -136,7 +136,7 @@ function Q(e) {
     [eH, eY] = (0, L.ED)({
       items: eG,
       renewal: false,
-      preventFetch: eC || ew || eB,
+      preventFetch: eC || eD || eB,
       applyEntitlements: true,
       paymentSourceId: et.paymentSourceId,
       currency: et.currency,
@@ -147,7 +147,7 @@ function Q(e) {
       subscriptionId: null == ey ? true : ey.id,
       items: eG,
       renewal: true,
-      preventFetch: ew || eB,
+      preventFetch: eD || eB,
       trialId: ec,
       paymentSourceId: et.paymentSourceId,
       currency: et.currency,
@@ -170,28 +170,28 @@ function Q(e) {
       skuId: eO,
       subscriptionPlanId: J,
       currency: et.currency,
-      preventFetch: !ew || eB,
+      preventFetch: !eD || eB,
       loadId: eA.loadId
     }),
-    eJ = ew && (0, R.pO)(eL),
+    eJ = eD && (0, R.pO)(eL),
     e$ = null != (a = null != (n = null != eY ? eY : eK) ? n : eq) ? a : eQ;
   i.useEffect(() => {
     eN(e$)
   }, [e$, eN]);
-  let e0 = (0, u.e7)([T.Z], () => T.Z.enabled),
+  let e0 = (0, u.e7)([S.Z], () => S.Z.enabled),
     e1 = et.paymentSourceId,
     e3 = (0, I.$)(ee, e1),
     {
       hasEntitlements: e2,
       entitlements: e4
-    } = (0, V.H)(eU.id, ew),
+    } = (0, V.H)(eU.id, eD),
     e8 = (0, P.Ap)(et.paymentSourceId),
     e5 = (0, O.sE)(ec, e1, J),
     e6 = (0, v.Kp)({
       isTrial: em,
-      isGift: ew,
+      isGift: eD,
       selectedSkuId: eO,
-      startedPaymentFlowWithPaymentSources: eT.current,
+      startedPaymentFlowWithPaymentSources: eS.current,
       inReverseTrial: eC
     }),
     [e7, e9] = i.useState(null == eH ? true : eH.subscriptionPeriodEnd);
@@ -214,11 +214,11 @@ function Q(e) {
     tr = (0, v.$g)(e6, eH, eU),
     ti = i.useMemo(() => em && null != eH ? eH : eC && null != eW ? eW : true, [eC, em, eH, eW]);
   if (i.useEffect(() => {
-      ew ? eS(eX) : eS(eH)
-    }, [ew, eS, eX, eH]), null != e$);
-  else if (ew && null != eX) Q = (0, r.jsx)(F.e9, {
+      eD ? eT(eX) : eT(eH)
+    }, [eD, eT, eX, eH]), null != e$);
+  else if (eD && null != eX) Q = (0, r.jsx)(F.e9, {
     plan: eU,
-    className: o()(q.invoice, eD),
+    className: o()(q.invoice, ew),
     isPrepaidPaymentSource: e8,
     isCustomGift: eJ,
     invoicePreview: eX
@@ -227,7 +227,7 @@ function Q(e) {
     children: [(0, r.jsx)(k.UN, {
       negativeMarginTop: !eC
     }), (0, r.jsxs)(k.aO, {
-      className: o()(q.invoice, eD),
+      className: o()(q.invoice, ew),
       children: [(0, r.jsxs)("div", {
         className: q.trialPriceLine,
         children: [(0, r.jsx)(f.Text, {
@@ -236,7 +236,7 @@ function Q(e) {
         }), (0, r.jsx)(f.Text, {
           variant: "text-md/normal",
           children: z.intl.format(z.t.hXcaLT, {
-            price: (0, D.T4)(0, ti.currency, {
+            price: (0, w.T4)(0, ti.currency, {
               minimumFractionDigits: 0,
               maximumFractionDigits: 0
             })
@@ -261,7 +261,7 @@ function Q(e) {
         fractionalPremiumInfo: te,
         enablePremiumBrandRefresh: eP
       }), (0, r.jsxs)(k.aO, {
-        className: o()(q.invoice, eD),
+        className: o()(q.invoice, ew),
         children: [(0, r.jsx)(k.Z9, {
           children: z.intl.string(z.t["2eh+Co"])
         }), (0, r.jsx)(F.Lu, {
@@ -280,7 +280,7 @@ function Q(e) {
       })]
     })
   }
-  let ta = c.M.EEA_COUNTRIES.has(S.Z.ipCountryCodeWithFallback),
+  let ta = c.M.EEA_COUNTRIES.has(T.Z.ipCountryCodeWithFallback),
     {
       checkboxLabel: to,
       checkboxClassname: ts,
@@ -289,7 +289,7 @@ function Q(e) {
     tc = z.intl.formatToPlainString(z.t["sBpy9/"], {
       planName: eU.name
     });
-  ew && !eJ ? tc = z.intl.string(z.t.J5a0eb) : ew && eJ ? tc = "" : (0, P.PV)(eU.id) && (tc = P.ZP.getBillingReviewSubheader(null, eU));
+  eD && !eJ ? tc = z.intl.string(z.t.J5a0eb) : eD && eJ ? tc = "" : (0, P.PV)(eU.id) && (tc = P.ZP.getBillingReviewSubheader(null, eU));
   let tu = null != eV && eV.length > 0 && (e1 === C.c || null === e3) && eR ? B.w.SELECT_PAYMENT_METHOD : true;
   return e5 ? null : (0, r.jsxs)("div", {
     className: q.stepBody,
@@ -334,7 +334,7 @@ function Q(e) {
       children: tc
     }), eJ && null != ex && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(G.Z, {
-        defaultAnimationState: w.SR.LOOP,
+        defaultAnimationState: D.SR.LOOP,
         giftStyle: ex,
         shouldAnimate: true,
         className: q.giftMainAnimation
@@ -387,10 +387,10 @@ function Q(e) {
           hide: em || eg,
           subscriptionPlan: eU,
           renewalInvoice: eW,
-          isGift: ew,
+          isGift: eD,
           paymentSourceType: e3,
           isEmbeddedIAP: eb,
-          basePrice: (0, P.aS)(eU.id, false, ew, et)
+          basePrice: (0, P.aS)(eU.id, false, eD, et)
         }),
         showPricingLink: eU.currency !== K.pK.USD,
         showWithdrawalWaiver: ta,
@@ -399,7 +399,7 @@ function Q(e) {
         inReverseTrial: eC,
         isDiscount: eg,
         subscriptionPlan: eU,
-        isGift: ew
+        isGift: eD
       })
     })]
   })

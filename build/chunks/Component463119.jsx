@@ -120,12 +120,12 @@ let M = e => {
         analyticsLocations: E
       } = (0, h.ZP)(b),
       [O, I] = i.useState(false),
-      y = i.useCallback(() => {
-        true !== s && s(), true !== o && (0, v.mK)({
+      v = i.useCallback(() => {
+        true !== s && s(), true !== o && (0, y.mK)({
           tab: o,
           analyticsLocations: E,
           analyticsSource: b
-        }), I(true), (0, v.Sm)({
+        }), I(true), (0, y.Sm)({
           analyticsSource: b,
           analyticsLocations: E
         })
@@ -141,7 +141,7 @@ let M = e => {
       }, _, g), {
         onMouseEnter: u,
         onMouseLeave: p,
-        onClick: y,
+        onClick: v,
         children: f
       }))]
     })
@@ -182,8 +182,8 @@ let M = e => {
   }),
   H = e => {
     let t, n;
-    var l, s, u, d, m, h, g, _, b, E, O, v, {
-        displayOptions: y
+    var l, s, u, d, m, h, g, _, b, E, O, y, {
+        displayOptions: v
       } = e,
       C = D(e, ["displayOptions"]);
     let S = (0, a.e7)([f.Z], () => f.Z.useReducedMotion),
@@ -191,19 +191,19 @@ let M = e => {
       [j, P] = i.useState(false),
       x = (0, p.ZP)(),
       A = (0, o.wj)(x);
-    j ? A ? (t = null == (l = y.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = y.entrypointBackgroundStyle) || null == (s = u.hovered) ? true : s.dark) : (t = null == (d = y.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (h = y.entrypointBackgroundStyle) || null == (m = h.hovered) ? true : m.light) : A ? (t = null == (g = y.entryPointBackgroundAssets) ? true : g.srcDark, n = null == (b = y.entrypointBackgroundStyle) || null == (_ = b.resting) ? true : _.dark) : (t = null == (E = y.entryPointBackgroundAssets) ? true : E.srcLight, n = null == (v = y.entrypointBackgroundStyle) || null == (O = v.resting) ? true : O.light);
+    j ? A ? (t = null == (l = v.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = v.entrypointBackgroundStyle) || null == (s = u.hovered) ? true : s.dark) : (t = null == (d = v.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (h = v.entrypointBackgroundStyle) || null == (m = h.hovered) ? true : m.light) : A ? (t = null == (g = v.entryPointBackgroundAssets) ? true : g.srcDark, n = null == (b = v.entrypointBackgroundStyle) || null == (_ = b.resting) ? true : _.dark) : (t = null == (E = v.entryPointBackgroundAssets) ? true : E.srcLight, n = null == (y = v.entrypointBackgroundStyle) || null == (O = y.resting) ? true : O.light);
     let k = i.useCallback(e => {
-        y.assetIds.length > 0 && N(e => (e + 1) % y.assetIds.length), P(true), null == e || e()
-      }, [y.assetIds.length]),
+        v.assetIds.length > 0 && N(e => (e + 1) % v.assetIds.length), P(true), null == e || e()
+      }, [v.assetIds.length]),
       G = i.useCallback(e => {
         P(false), null == e || e()
       }, []),
-      H = y.title();
+      H = v.title();
     return (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
       text: (0, r.jsx)(B, {
-        displayOptions: y,
-        assetId: y.assetIds[T],
+        displayOptions: v,
+        assetId: v.assetIds[T],
         reducedMotion: S
       }),
       tooltipClassName: w.marketingBadgeTooltip,
@@ -213,9 +213,9 @@ let M = e => {
       hideOnClick: false,
       "aria-label": "string" == typeof H ? H : Z.intl.string(Z.t.rSXaxY),
       children: e => (0, r.jsxs)(U, R(L(R(L({
-        className: null != y.entryPointClassName ? (0, I.l)(w, y.entryPointClassName) : true
+        className: null != v.entryPointClassName ? (0, I.l)(w, v.entryPointClassName) : true
       }, C), {
-        icon: y.entryPointIcon
+        icon: v.entryPointIcon
       }), e), {
         onMouseEnter: () => k(e.onMouseEnter),
         onMouseLeave: () => G(e.onMouseLeave),
@@ -231,7 +231,7 @@ let M = e => {
             "aria-hidden": true
           })
         }), (0, r.jsx)(M, {
-          color: y.badgeColor
+          color: v.badgeColor
         })]
       }))
     })

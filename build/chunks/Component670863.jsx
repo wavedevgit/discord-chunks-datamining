@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -107,11 +107,11 @@ function R(e) {
     onSelectDevice: y,
     hideDeviceTypeIcon: I = false,
     label: A
-  } = e, R = S(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon", "label"]);
+  } = e, R = T(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon", "label"]);
   let {
     setDevice: P,
-    Icon: D,
-    getCanSetDevice: w,
+    Icon: w,
+    getCanSetDevice: D,
     getWarningMessage: L,
     getLocation: x
   } = N(t), {
@@ -120,7 +120,7 @@ function R(e) {
     location: G
   }), {
     id: F
-  } = (0, E.p6)(t), V = null != _ ? _ : F, H = (0, s.e7)([h.Z], () => w(h.Z)), {
+  } = (0, E.p6)(t), V = null != _ ? _ : F, H = (0, s.e7)([h.Z], () => D(h.Z)), {
     showDeviceSelectionImprovements: Y
   } = (0, g.V)({
     location: "".concat(G, "/SingleSelectDevices")
@@ -170,7 +170,7 @@ function R(e) {
       }),
       children: [!I && (0, r.jsx)("div", {
         className: v.deviceIcon,
-        children: (0, r.jsx)(D, {
+        children: (0, r.jsx)(w, {
           size: "custom",
           width: 20,
           height: 20,
@@ -220,7 +220,7 @@ function R(e) {
     }
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.q4e, T({
+    children: [(0, r.jsx)(c.q4e, S({
       label: A,
       value: V,
       onChange: K,

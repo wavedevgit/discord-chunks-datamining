@@ -7,11 +7,11 @@ require.d(exports, {
   EJ: () => N,
   Ee: () => y,
   Hh: () => C,
-  II: () => T,
+  II: () => S,
   MC: () => I,
   Vj: () => v,
-  ZP: () => D,
-  gO: () => S,
+  ZP: () => w,
+  gO: () => T,
   i_: () => A,
   jQ: () => R,
   qE: () => O,
@@ -115,7 +115,7 @@ let I = e => {
   })
 };
 I.Sizes = Chunk481060.EFr;
-let T = e => {
+let S = e => {
     let {
       label: t,
       error: n,
@@ -159,7 +159,7 @@ let T = e => {
       children: v
     }) : v
   },
-  S = e => {
+  T = e => {
     let {
       className: t,
       children: n
@@ -262,7 +262,7 @@ let T = e => {
     let {
       className: t
     } = e;
-    return (0, r.jsxs)(S, {
+    return (0, r.jsxs)(T, {
       className: t,
       children: [(0, r.jsx)(o.Button, {
         text: h.intl.format(h.t.JoS1i3, {
@@ -279,7 +279,7 @@ let T = e => {
       })]
     })
   },
-  D = e => {
+  w = e => {
     let {
       className: t,
       contentClassName: n,

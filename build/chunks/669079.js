@@ -63,16 +63,16 @@ let y = ["discordapp.com/gifts", "discord.com/gifts"],
   O = 3,
   v = [Chunk226951.Z.escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...y.map(e => _.Z.escape(e))].join("|"),
   I = RegExp("(?: |^|https?://)(?:".concat(v, ")/([a-z0-9-]+)"), "gi"),
-  T = [...["discord.com/billing/promotions", "promos.discord.gg"].map(e => _.Z.escape(e))].join("|"),
-  S = RegExp("(?: |^|https?://)(?:".concat(T, ")(/|(/)?\\?code=)([a-z0-9-]+)"), "gi"),
+  S = [...["discord.com/billing/promotions", "promos.discord.gg"].map(e => _.Z.escape(e))].join("|"),
+  T = RegExp("(?: |^|https?://)(?:".concat(S, ")(/|(/)?\\?code=)([a-z0-9-]+)"), "gi"),
   A = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789",
   C = (e, t) => Array(t).fill(true).map(() => "[".concat(A, "]{").concat(e, "}")).join("-?"),
   N = C(4, 4),
   R = C(4, 6),
   P = C(5, 3),
-  D = "WUMP-?",
-  w = [N, R, P, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
-  L = new RegExp("^(".concat(D, ")?(").concat(w, ")$")),
+  w = "WUMP-?",
+  D = [N, R, P, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
+  L = new RegExp("^(".concat(w, ")?(").concat(D, ")$")),
   x = "-";
 var M = function(e) {
   return e[e.DEFAULT = 0] = "DEFAULT", e[e.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", e[e.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD = 2] = "CUSTOM_MESSAGE_EMOJI_SOUNDBOARD", e
@@ -107,7 +107,7 @@ let Z = e => {
     if (null == e) return [];
     let n = new Set;
     for (; null != (t = I.exec(e)) && n.size < O;) n.add(B(t[1]));
-    for (; null != (t = S.exec(e)) && n.size < O;) n.add(B(t[t.length - 1]));
+    for (; null != (t = T.exec(e)) && n.size < O;) n.add(B(t[t.length - 1]));
     return Array.from(n)
   };
 

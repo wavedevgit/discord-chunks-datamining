@@ -1,7 +1,7 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 383036, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk832149 = require("./832149.jsx"),
   Chunk215023 = require("./215023.js"),
   Chunk277790 = require("./277790.js");
-let f = e => {
+let g = e => {
     let [t, n] = r.useState(0);
     return r.useLayoutEffect(() => {
       let e = d.Z.getPurchase;
@@ -42,33 +42,33 @@ let f = e => {
       return e
     }({}, e), t)
   },
-  g = () => {
+  f = () => {
     let e = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
       t = (0, Chunk399606.e7)([Chunk597688.Z], () => Chunk597688.Z.categories),
       n = (0, Chunk399606.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
       m = (0, Chunk399606.e7)([Chunk597688.Z], () => Chunk597688.Z.lastSuccessfulFetch),
-      g = exports.size > 0 && require.size > 0 && null != Chunk709999,
+      f = exports.size > 0 && require.size > 0 && null != Chunk709999,
       {
         isFetching: b,
         categories: v
       } = (0, Chunk223143.ZP)({
         logPerf: false,
         stalePurchasesOK: true,
-        noOp: g
+        noOp: f
       }),
-      j = g ? exports : v,
-      _ = g || !b && j.size > 0,
+      j = f ? exports : v,
+      _ = f || !b && j.size > 0,
       [y, C] = Chunk647438.useState(""),
       [S, E] = Chunk647438.useState(null),
-      [O, T] = Chunk647438.useState(null);
+      [T, O] = Chunk647438.useState(null);
     return (Chunk647438.useEffect(() => {
       if ("" === y.trim() || !_) {
-        E(null), T(null);
+        E(null), O(null);
         return
       }
       let e = Chunk597688.Z.getProduct(y),
         t = Chunk597688.Z.getCategoryForProduct(y);
-      null != module && null != exports ? (E(module), T(exports)) : (E(null), T(null))
+      null != module && null != exports ? (E(module), O(exports)) : (E(null), O(null))
     }, [y, _]), b) ? (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: "Loading categories and collectibles..."
@@ -111,12 +111,12 @@ let f = e => {
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Product Preview"
-        }), null != S && null != O ? (0, Chunk951288.jsxs)("div", {
+        }), null != S && null != T ? (0, Chunk951288.jsxs)("div", {
           className: Chunk277790.previewContainer,
-          children: [(0, Chunk951288.jsx)(f, {
+          children: [(0, Chunk951288.jsx)(g, {
             product: S,
             user: module,
-            category: O,
+            category: T,
             tab: Chunk215023.AW.HOME
           }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",

@@ -2,9 +2,9 @@
 /** chunk id: 665906, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $R: () => w,
+  $R: () => D,
   C7: () => C,
-  Ek: () => T,
+  Ek: () => S,
   Gu: () => B,
   JQ: () => A,
   NE: () => b,
@@ -14,7 +14,7 @@ require.d(exports, {
   Y: () => G,
   cD: () => v,
   ki: () => y,
-  kn: () => D,
+  kn: () => w,
   tM: () => E,
   tc: () => P,
   xl: () => x,
@@ -78,12 +78,12 @@ function I(e, t, n) {
   return !(__OVERLAY__ || !e || !d.uC.has(t.type) || null != n && (n.hasFlag(g.iLy.HAS_THREAD) || (0, u.Z)(n))) && true
 }
 
-function T(e) {
+function S(e) {
   let t = (0, o.e7)([_.Z], () => _.Z.getChannel(h.default.castMessageIdAsChannelId(e.id)), [e]);
-  return S((0, o.e7)([p.Z], () => p.Z.can(g.Plq.VIEW_CHANNEL, t), [t]), e, t)
+  return T((0, o.e7)([p.Z], () => p.Z.can(g.Plq.VIEW_CHANNEL, t), [t]), e, t)
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   return !!t.hasFlag(g.iLy.HAS_THREAD) && null != n && !!e
 }
 
@@ -124,13 +124,13 @@ function P(e) {
   return R(e, t, n)
 }
 
-function D(e) {
+function w(e) {
   let t = N(e, p.Z),
     n = j(e);
   return R(e, t, n)
 }
 
-function w(e) {
+function D(e) {
   var t;
   let n = (0, o.e7)([p.Z], () => null != e && p.Z.can(g.Plq.SEND_MESSAGES_IN_THREADS, e));
   return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null == (t = e.threadMetadata) ? true : t.locked) !== true && n)
@@ -172,7 +172,7 @@ function U(e) {
 function G(e) {
   let t = (0, c.Z)(),
     n = (0, o.e7)([p.Z], () => p.Z.can(g.Plq.CONNECT, e)),
-    r = w(e),
+    r = D(e),
     i = E.useExperiment({
       guildId: e.guild_id,
       location: "e791ea_1"

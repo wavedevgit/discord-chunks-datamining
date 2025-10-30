@@ -73,32 +73,32 @@ function O(e) {
   } = e, {
     contextMetadata: v,
     step: I,
-    paymentSources: T,
-    paymentSourceId: S,
+    paymentSources: S,
+    paymentSourceId: T,
     setPaymentSourceId: A,
     purchaseError: C,
     setPurchaseError: N,
     purchaseErrorBlockRef: R,
     paymentAuthenticationState: P,
-    selectedSkuId: D,
-    activeSubscription: w,
+    selectedSkuId: w,
+    activeSubscription: D,
     previousStepRef: L,
     setPurchaseState: x,
     paymentElementsEnabled: M
   } = (0, d.JL)(), {
     isGift: k
   } = (0, u.wD)(), j = b(g({}, (0, s.fL)()), {
-    paymentSources: T,
-    paymentSourceId: S,
+    paymentSources: S,
+    paymentSourceId: T,
     setPaymentSourceId: A,
     purchaseError: C,
     setPurchaseError: N,
     purchaseErrorBlockRef: R,
     paymentAuthenticationState: P,
-    selectedSkuId: D,
+    selectedSkuId: w,
     isGift: k
-  }), U = (0, o.N)(m), G = !k && null != U && null != D && h.nG[U.trial_id].skus.includes(D), B = () => {
-    c(Object.values(T).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
+  }), U = (0, o.N)(m), G = !k && null != U && null != w && h.nG[U.trial_id].skus.includes(w), B = () => {
+    c(Object.values(S).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
       trackedFromStep: M ? f.h8.PAYMENT_ELEMENT : f.h8.PAYMENT_TYPE
     })
   }, Z = null != E ? E : B;
@@ -135,7 +135,7 @@ function O(e) {
       }))
     },
     isEligibleForTrial: G,
-    allowDesktopRedirectPurchase: y(D, k, w),
+    allowDesktopRedirectPurchase: y(w, k, D),
     continueSessionToInitialStep: O
   })
 }

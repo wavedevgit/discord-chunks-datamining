@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 107606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -26,10 +26,10 @@ function b() {
   let C = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     S = Chunk695346.L1.useSetting(),
     E = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
-    O = S.backgroundGradientPresetId,
-    T = (0, Chunk442837.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
-    N = (0, Chunk884697.Ad)(T),
-    P = (0, Chunk884697.jT)(T),
+    T = S.backgroundGradientPresetId,
+    O = (0, Chunk442837.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
+    N = (0, Chunk884697.Ad)(O),
+    P = (0, Chunk884697.jT)(O),
     I = null == C || null == (e = C.avatarDecoration) ? true : module.skuId,
     w = null == C || null == (n = C.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
     k = null != I && null != (v = N.find(e => e.skuId === I)) ? v : null,
@@ -37,8 +37,8 @@ function b() {
     A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == k ? true : k.skuId)),
     D = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == R ? true : R.skuId)),
     Z = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
-    M = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),
-    L = Chunk695346.YC.useSetting();
+    L = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),
+    M = Chunk695346.YC.useSetting();
   return (0, Chunk176038.ub)(), (0, Chunk951288.jsxs)("div", {
     className: Chunk685960.container,
     children: [(0, Chunk951288.jsxs)("div", {
@@ -73,7 +73,7 @@ function b() {
         children: ["Theme: ", E]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Client Theme ID:", " ", null != O ? null == (b = Chunk469115.qt[O]) ? true : b.getName() : "None"]
+        children: ["Client Theme ID:", " ", null != T ? null == (b = Chunk469115.qt[T]) ? true : b.getName() : "None"]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Avatar Decoration: ", null != (_ = null == A ? true : A.name) ? _ : "None"]
@@ -85,10 +85,10 @@ function b() {
         children: ["Font Size: ", Z, "px"]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Message Spacing: ", M]
+        children: ["Message Spacing: ", L]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["UI Density: ", L, " (", function(e) {
+        children: ["UI Density: ", M, " (", function(e) {
           switch (e) {
             case l.Pi.COMPACT:
               return "Compact";
@@ -101,7 +101,7 @@ function b() {
             default:
               return "Unknown"
           }
-        }(L), ")"]
+        }(M), ")"]
       })]
     })]
   })

@@ -35,8 +35,8 @@ function f(e, t) {
     editorRef: O,
     onSendMessage: v,
     onSendSticker: I,
-    setValue: T,
-    isEditorIdle: S,
+    setValue: S,
+    isEditorIdle: T,
     currentFullWord: A
   } = e, {
     query: C
@@ -58,7 +58,7 @@ function f(e, t) {
     sendMessage: v,
     sendSticker: I,
     currentFullWord: A,
-    isEditorIdle: S,
+    isEditorIdle: T,
     currentAutocompleteType: null != (r = null == C ? true : C.type) ? r : null,
     insertText: function(e, t) {
       var n;
@@ -66,7 +66,7 @@ function f(e, t) {
       null == (n = O.current) || n.insertAutocomplete(e, null != t ? t : e, r)
     },
     replaceText: (e, t) => {
-      T(e, null != t ? t : (0, s.JM)(e))
+      S(e, null != t ? t : (0, s.JM)(e))
     },
     insertAutocompleteInput: e => {
       var t;

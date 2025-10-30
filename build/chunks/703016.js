@@ -120,7 +120,7 @@ function V(e) {
   if (c || E.Z.isSelfDeaf()) returnfalse;
   let u = h.Z.getChannel(s);
   if (null == u) returnfalse;
-  let d = v.Z.getChannelId(),
+  let d = y.Z.getChannelId(),
     _ = m.ZP.getCurrentSidebarChannelId(d),
     b = s === d || s === _,
     C = p.OW.getSetting() && o.tts && b,
@@ -130,7 +130,7 @@ function V(e) {
     if (A.indexOf(o.id) >= 0) returnfalse;
     A.unshift(o.id) > 10 && A.pop();
     let e = u.getGuildId();
-    if (null != e && y.ZP.getMutedChannels(e).has(s)) returnfalse;
+    if (null != e && v.ZP.getMutedChannels(e).has(s)) returnfalse;
     let t = null != (l = null != (i = g.ZP.getNick(e, null == (n = o.author) ? true : n.id)) ? i : S.ZP.getName(o.author)) ? l : "",
       c = o.type === P.uaV.REPLY ? null == (r = o.referenced_message) ? true : r.author : null,
       d = null != c ? null != (a = g.ZP.getNick(e, null == c ? true : c.id)) ? a : S.ZP.getName(c) : null;

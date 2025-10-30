@@ -6,9 +6,9 @@ require.d(exports, {
   Mo: () => C,
   QG: () => N,
   XQ: () => I,
-  _U: () => D,
+  _U: () => w,
   dM: () => R,
-  k$: () => T
+  k$: () => S
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   Chunk524437 = require("./524437.js"),
@@ -100,7 +100,7 @@ function I(e, t, n, r) {
   }))
 }
 
-function T(e, t, n, r) {
+function S(e, t, n, r) {
   if (null == e) return;
   if (c.Z.isFullServerPreview(e)) {
     (0, l.zS)(e, n ? [t] : [], n ? [] : [t]), (0, l.aq)(e, {
@@ -142,7 +142,7 @@ function T(e, t, n, r) {
     location: r
   }))
 }
-async function S(e, t) {
+async function T(e, t) {
   if (null == e || c.Z.isFullServerPreview(e)) return;
   let n = {
     channel_overrides: t
@@ -155,7 +155,7 @@ async function S(e, t) {
     updates: t
   })
 }
-let A = (0, Chunk392711.debounce)((e, t) => S(e, t), 1e3);
+let A = (0, Chunk392711.debounce)((e, t) => T(e, t), 1e3);
 
 function C(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
@@ -216,7 +216,7 @@ function P(e) {
   (0, d.PS)(e, e => (!(0, h.yE)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_CLEARED) || !!(0, h.yE)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_SHOWN)) && (e.guildOnboardingProgress = (0, h.pj)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_CLEARED), e.guildOnboardingProgress = (0, h.mB)(e.guildOnboardingProgress, i.nI.GUILD_NOTICE_SHOWN, false), true), d.fy.INFREQUENT_USER_ACTION)
 }
 
-function D(e, t) {
+function w(e, t) {
   a.Z.dispatch({
     type: "DISMISS_FAVORITE_SUGGESTION",
     guildId: e,

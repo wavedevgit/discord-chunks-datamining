@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   aM: () => j,
-  gq: () => w,
+  gq: () => D,
   jS: () => U,
-  r6: () => S
+  r6: () => T
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -64,7 +64,7 @@ function v(e, t) {
 
 function I(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,14 +72,14 @@ function I(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var S = function(e) {
+var T = function(e) {
   return e.PRIMARY = "primary", e.GREY = "grey", e.BRAND = "brand", e.GREEN = "green", e.RED = "red", e
 }({});
 let A = 16,
@@ -100,7 +100,7 @@ let A = 16,
     red: Chunk855711.tooltipRed
   });
 
-function D(e, t, n) {
+function w(e, t, n) {
   let r = "left" === e || "right" === e,
     i = r ? "top" : "left",
     a = r ? "top" : "left",
@@ -111,7 +111,7 @@ function D(e, t, n) {
     [i]: "calc(".concat(s, " + ").concat(l, "px)")
   }
 }
-let w = e => {
+let D = e => {
     let {
       targetElementRef: t,
       align: n = "center",
@@ -153,10 +153,10 @@ let w = e => {
           "data-mtctest-ignore": v,
           children: [(0, i.jsx)("div", {
             className: s()(E.tooltipPointer, E.tooltipPointerBg, b),
-            style: D(null != t ? t : r, n, _)
+            style: w(null != t ? t : r, n, _)
           }), (0, i.jsx)("div", {
             className: s()(E.tooltipPointer, b),
-            style: D(null != t ? t : r, n, _)
+            style: w(null != t ? t : r, n, _)
           }), (0, i.jsx)("div", {
             className: s()(E.tooltipContent, {
               [E.tooltipContentAllowOverflow]: m
@@ -195,7 +195,7 @@ let w = e => {
       enter: M,
       leave: s.enabled ? x : L,
       onRest: n
-    }, "animate-always")((e, t) => t ? (0, i.jsx)(w, y({
+    }, "animate-always")((e, t) => t ? (0, i.jsx)(D, y({
       animationStyle: e,
       targetElementRef: r
     }, o)) : null)
@@ -340,7 +340,7 @@ class j extends(r = Chunk647438.Component) {
     })
   }
 }
-b(j, "Colors", S), b(j, "defaultProps", {
+b(j, "Colors", T), b(j, "defaultProps", {
   hideOnClick: true,
   position: "top",
   color: "primary",

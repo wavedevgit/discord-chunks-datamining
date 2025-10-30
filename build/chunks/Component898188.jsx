@@ -25,9 +25,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk530815 = require("./530815.js");
-let T = 60;
+let S = 60;
 
-function S(e) {
+function T(e) {
   let {
     action: t
   } = e, n = (0, l.e7)([_.Z], () => _.Z.getChannel(t.channelId)), i = (0, d.ZP)(n, true);
@@ -74,27 +74,27 @@ function C(e) {
   } = e, {
     channelAction: h,
     completed: b
-  } = (0, E.P3)(f, _), y = (0, E.K_)(f, null == h ? true : h.channelId), O = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), C = (null == h ? true : h.actionType) === g.NewMemberActionTypes.VIEW, N = (0, c.dQu)(c.TVs.colors.WHITE), [R, P] = i.useState(false), [D] = i.useState(new s.Z.Value(0)), [w] = i.useState(new s.Z.Value(0));
+  } = (0, E.P3)(f, _), y = (0, E.K_)(f, null == h ? true : h.channelId), O = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), C = (null == h ? true : h.actionType) === g.NewMemberActionTypes.VIEW, N = (0, c.dQu)(c.TVs.colors.WHITE), [R, P] = i.useState(false), [w] = i.useState(new s.Z.Value(0)), [D] = i.useState(new s.Z.Value(0));
   i.useEffect(() => {
-    b ? s.Z.timing(D, {
+    b ? s.Z.timing(w, {
       toValue: 0,
       duration: O ? 1 : 350,
       easing: s.Z.Easing.quad,
       delay: 500 * !C
-    }).start(() => P(true)) : s.Z.timing(D, {
+    }).start(() => P(true)) : s.Z.timing(w, {
       toValue: 1,
       duration: O ? 1 : 350,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [b, D, C, O]), i.useEffect(() => {
-    b && R && s.Z.timing(w, {
+  }, [b, w, C, O]), i.useEffect(() => {
+    b && R && s.Z.timing(D, {
       toValue: 1,
       duration: 350 * !O,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [b, w, R, O]);
+  }, [b, D, R, O]);
   let L = i.useCallback(() => {
     null != y && (0, m.gp)(f, y.channelId)
   }, [f, y]);
@@ -102,9 +102,9 @@ function C(e) {
     className: o()(I.container, p),
     children: R && null != y ? (0, r.jsx)(s.Z.div, {
       style: {
-        marginBottom: w.interpolate({
+        marginBottom: D.interpolate({
           inputRange: [0, 1],
-          outputRange: [-T, 0]
+          outputRange: [-S, 0]
         })
       },
       children: (0, r.jsxs)(c.P3F, {
@@ -122,7 +122,7 @@ function C(e) {
             children: v.intl.format(v.t["/beONw"], {
               step: y.title
             })
-          }), (0, r.jsx)(S, {
+          }), (0, r.jsx)(T, {
             action: y
           })]
         }), (0, r.jsx)("div", {
@@ -137,9 +137,9 @@ function C(e) {
     }) : (0, r.jsxs)(s.Z.div, {
       className: I.banner,
       style: {
-        marginBottom: D.interpolate({
+        marginBottom: w.interpolate({
           inputRange: [0, 1],
-          outputRange: [-T, 0]
+          outputRange: [-S, 0]
         })
       },
       children: [(0, r.jsx)(A, {

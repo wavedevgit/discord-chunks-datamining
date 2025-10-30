@@ -146,7 +146,7 @@ function J(e) {
   let E = X(t),
     b = Q(n);
   a = null == a ? M.FC : a, s = null == s ? M.rs : s;
-  let [y, O] = i.useState(true), [v, T] = i.useState(false), S = h === j.hV.MOSAIC || true === p, A = (y || v) && !f && N.H1.getSetting() && null != l && "" !== l && true !== _, C = e => {
+  let [y, O] = i.useState(true), [v, S] = i.useState(false), T = h === j.hV.MOSAIC || true === p, A = (y || v) && !f && N.H1.getSetting() && null != l && "" !== l && true !== _, C = e => {
     let {
       altText: t
     } = e;
@@ -180,7 +180,7 @@ function J(e) {
       renderLinkComponent: er,
       renderOverlayContent: u,
       volume: a
-    })), null != c && c(), S && A && (0, r.jsx)("div", {
+    })), null != c && c(), T && A && (0, r.jsx)("div", {
       className: F.mediaMosaicVideoAltTextContainer,
       children: (0, r.jsx)(d.yRy, {
         targetElementRef: R,
@@ -194,8 +194,8 @@ function J(e) {
             type: "button",
             ref: R,
             "aria-label": Z.intl.string(Z.t.fSiQ3A),
-            onMouseEnter: () => T(true),
-            onMouseLeave: () => T(false),
+            onMouseEnter: () => S(true),
+            onMouseLeave: () => S(false),
             className: o()(F.mediaMosaicAltText, {
               [F.mediaMosaicVideoAltText]: true,
               [F.reducedSize]: m
@@ -204,7 +204,7 @@ function J(e) {
           }))
         })
       })
-    }), !S && A && (0, r.jsx)("span", {
+    }), !T && A && (0, r.jsx)("span", {
       className: F.altText,
       children: l
     })]
@@ -333,7 +333,7 @@ function ei(e) {
     renderAdjacentContent: t
   } = e, n = K(e, ["renderAdjacentContent"]);
   return (0, r.jsxs)(i.Fragment, {
-    children: [(0, r.jsx)(T.Z, H({}, n)), null != t && t()]
+    children: [(0, r.jsx)(S.Z, H({}, n)), null != t && t()]
   })
 }
 
@@ -495,7 +495,7 @@ function ef(e) {
     scrollManager: h
   } = e, {
     disableInteractions: E
-  } = i.useContext(b.G), [y, v] = i.useState(null), I = i.useRef(null), [T, N] = i.useState(null), R = i.useRef(null), M = (0, u.Wu)([A.Z], () => {
+  } = i.useContext(b.G), [y, v] = i.useState(null), I = i.useRef(null), [S, N] = i.useState(null), R = i.useRef(null), M = (0, u.Wu)([A.Z], () => {
     var e;
     return null != (e = A.Z.summaries(s.id)) ? e : []
   }, [s]), j = (0, g.Z)(M);
@@ -511,13 +511,13 @@ function ef(e) {
       channel_type: s.type
     })
   }, [M, j, s.guild_id, s.id, s.type]);
-  let B = (0, u.e7)([D.default], () => {
+  let B = (0, u.e7)([w.default], () => {
       var e;
       return null != (e = null == M ? true : M.map(e => {
         var t;
         return null == (t = e.people) ? true : t.map(e => {
           var t;
-          return null != (t = D.default.getUser(e)) ? t : null
+          return null != (t = w.default.getUser(e)) ? t : null
         }).filter(x.lm)
       })) ? e : []
     }, [M], ep),
@@ -529,7 +529,7 @@ function ef(e) {
       v(null != (t = null == e ? true : e.id) ? t : null)
     }, 64), [v]),
     W = i.useMemo(() => l().throttle(() => {
-      (0, S.yK)(null)
+      (0, T.yK)(null)
     }, 1200, {
       trailing: false
     }), []),
@@ -554,7 +554,7 @@ function ef(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : G.DZ.PILL_DROPDOWN,
         n = M[e];
       if (null == n) return;
-      (0, S.wv)(s.id, n.id), (0, S.yK)(s.id, n.id);
+      (0, T.wv)(s.id, n.id), (0, T.yK)(s.id, n.id);
       let r = () => {
         h.removeScrollCompleteCallback(r), setTimeout(() => {
           h.addAutomaticAnchorCallback(K, false)
@@ -582,13 +582,13 @@ function ef(e) {
       null != n && N(n)
     }, []);
   i.useEffect(() => {
-    if (null != T && z) {
+    if (null != S && z) {
       var e;
       null == (e = R.current) || e.scrollTo({
-        top: T
+        top: S
       })
     }
-  }, [T, z]);
+  }, [S, z]);
   let $ = i.useCallback(e => {
     var t;
     (0, c.kK)(e.target) && (null == (t = I.current) ? true : t.contains(e.target)) || (z && L.default.track(U.rMx.SUMMARIES_TOPICS_PILL_TOGGLED, {
@@ -606,7 +606,7 @@ function ef(e) {
   i.useEffect(() => (h.addAutomaticAnchorCallback(K), () => {
     h.removeAutomaticAnchorCallback(K)
   }), [h, K]), i.useEffect(() => {
-    (0, S.G1)(s.id)
+    (0, T.G1)(s.id)
   }, [s.id]), i.useEffect(() => (document.addEventListener("mousedown", $), () => {
     document.removeEventListener("mousedown", $)
   }), [$]);
@@ -661,10 +661,10 @@ function ef(e) {
             variant: "text-sm/medium",
             className: o()(F.newTopicsBarCompact, F.newTopicsBarText),
             children: er
-          }), (0, r.jsx)(w.Z, {
+          }), (0, r.jsx)(D.Z, {
             width: 16,
             height: 16,
-            direction: w.Z.Directions.DOWN,
+            direction: D.Z.Directions.DOWN,
             className: F.newTopicsBarCaret
           })]
         })
@@ -738,7 +738,7 @@ function eh(e) {
     scrollManager: _
   } = e, {
     disableInteractions: p
-  } = i.useContext(b.G), [h, E] = i.useState(null), y = i.useRef(null), [v, I] = i.useState(null), T = i.useRef(null), N = (0, u.Wu)([A.Z], () => {
+  } = i.useContext(b.G), [h, E] = i.useState(null), y = i.useRef(null), [v, I] = i.useState(null), S = i.useRef(null), N = (0, u.Wu)([A.Z], () => {
     var e;
     return null != (e = A.Z.summaries(s.id)) ? e : []
   }, [s]), R = (0, g.Z)(N);
@@ -754,13 +754,13 @@ function eh(e) {
       channel_type: s.type
     })
   }, [N, R, s.guild_id, s.id, s.type]);
-  let P = (0, u.e7)([D.default], () => {
+  let P = (0, u.e7)([w.default], () => {
       var e;
       return null != (e = null == N ? true : N.map(e => {
         var t;
         return null == (t = e.people) ? true : t.map(e => {
           var t;
-          return null != (t = D.default.getUser(e)) ? t : null
+          return null != (t = w.default.getUser(e)) ? t : null
         }).filter(x.lm)
       })) ? e : []
     }, [N], ep),
@@ -774,7 +774,7 @@ function eh(e) {
       E(null != (t = null == e ? true : e.id) ? t : null)
     }, 64), [E]),
     H = i.useMemo(() => l().throttle(() => {
-      (0, S.yK)(null)
+      (0, T.yK)(null)
     }, 1200, {
       trailing: false
     }), []),
@@ -799,7 +799,7 @@ function eh(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : G.DZ.PILL_DROPDOWN,
         n = N[e];
       if (null == n) return;
-      (0, S.wv)(s.id, n.id), (0, S.yK)(s.id, n.id);
+      (0, T.wv)(s.id, n.id), (0, T.yK)(s.id, n.id);
       let r = () => {
         _.removeScrollCompleteCallback(r), setTimeout(() => {
           _.addAutomaticAnchorCallback(Y, false)
@@ -829,13 +829,13 @@ function eh(e) {
     J = i.useCallback(e => {
       var t;
       K(e);
-      let n = null == (t = T.current) ? true : t.scrollTop;
+      let n = null == (t = S.current) ? true : t.scrollTop;
       null != n && I(n)
     }, []);
   i.useEffect(() => {
     if (null != v && W) {
       var e;
-      null == (e = T.current) || e.scrollTo({
+      null == (e = S.current) || e.scrollTo({
         top: v
       })
     }
@@ -857,7 +857,7 @@ function eh(e) {
   i.useEffect(() => (_.addAutomaticAnchorCallback(Y), () => {
     _.removeAutomaticAnchorCallback(Y)
   }), [_, Y]), i.useEffect(() => {
-    (0, S.G1)(s.id)
+    (0, T.G1)(s.id)
   }, [s.id]), i.useEffect(() => (document.addEventListener("mousedown", $), () => {
     document.removeEventListener("mousedown", $)
   }), [$]);
@@ -892,10 +892,10 @@ function eh(e) {
             className: F.topicsPillTextTitle,
             variant: "text-sm/medium",
             children: et
-          }), (0, r.jsx)(w.Z, {
+          }), (0, r.jsx)(D.Z, {
             width: 16,
             height: 16,
-            direction: w.Z.Directions.DOWN,
+            direction: D.Z.Directions.DOWN,
             className: F.topicsPillDropdownCaret
           })]
         })
@@ -907,10 +907,10 @@ function eh(e) {
           className: o()(F.topicsPillCaret, F.topicsCaretLeft, {
             [F.topicsPillCaretDisabled]: null == B
           }),
-          children: (0, r.jsx)(w.Z, {
+          children: (0, r.jsx)(D.Z, {
             width: 16,
             height: 16,
-            direction: w.Z.Directions.UP
+            direction: D.Z.Directions.UP
           })
         }), (0, r.jsx)(d.P3F, {
           "aria-label": Z.intl.string(Z.t["58KOoF"]),
@@ -918,10 +918,10 @@ function eh(e) {
           className: o()(F.topicsPillCaret, F.topicsCaretRight, {
             [F.topicsPillCaretDisabled]: null == j
           }),
-          children: (0, r.jsx)(w.Z, {
+          children: (0, r.jsx)(D.Z, {
             width: 16,
             height: 16,
-            direction: w.Z.Directions.DOWN
+            direction: D.Z.Directions.DOWN
           })
         })]
       })]
@@ -955,7 +955,7 @@ function eh(e) {
           })
         })]
       }), (0, r.jsx)(d.Ttm, {
-        ref: T,
+        ref: S,
         className: F.topicsScroller,
         fade: true,
         children: ee

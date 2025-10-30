@@ -28,9 +28,9 @@ function b(e, t) {
   } = e, [b, y] = i.useState(false), O = (0, l.e7)([f.Z], () => {
     var e, t;
     return b && Object.values(null != (t = null == (e = f.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? true : e.gifs) ? t : {}).length <= 2
-  }), [v, I, T] = (0, d.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), S = i.useRef(0), A = i.useCallback(() => {
-    y(true), clearTimeout(S.current), S.current = setTimeout(() => {
-      y(false), S.current = 0
+  }), [v, I, S] = (0, d.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), T = i.useRef(0), A = i.useCallback(() => {
+    y(true), clearTimeout(T.current), T.current = setTimeout(() => {
+      y(false), T.current = 0
     }, 2e3)
   }, []);
   (0, _.yp)({
@@ -46,7 +46,7 @@ function b(e, t) {
       play: P
     } = (0, c.V)();
   if (n) return null;
-  let D = v === m.X1.GIF && I === a;
+  let w = v === m.X1.GIF && I === a;
   return (0, r.jsx)(u.u, {
     text: O ? g.intl.string(g.t.mE2e8A) : null,
     forceOpen: true,
@@ -60,12 +60,12 @@ function b(e, t) {
         onClick: () => {
           C(), P()
         },
-        isActive: D,
+        isActive: w,
         pulse: b,
         "aria-label": g.intl.string(g.t.PtVpk2),
-        "aria-expanded": D,
+        "aria-expanded": w,
         "aria-haspopup": "dialog",
-        "aria-controls": T,
+        "aria-controls": S,
         children: (0, r.jsx)(N, {
           size: "refresh_sm",
           color: "currentColor"

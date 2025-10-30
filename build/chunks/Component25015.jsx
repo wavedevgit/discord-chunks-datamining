@@ -28,18 +28,18 @@ function g(e, t) {
     allowHeading: O = false,
     allowList: v = false,
     allowLinks: I = false,
-    allowDevLinks: T = false,
-    previewLinkTarget: S = false,
+    allowDevLinks: S = false,
+    previewLinkTarget: T = false,
     viewingChannelId: A
   } = t, C = (0, o.p)(), N = a.d.useExperiment({
     location: "useMessageRenderedContent"
   }).enabled, R = (0, f.o)({
     location: "useMessageRenderedContent"
-  }), [P, D] = i.useState(false), w = i.useCallback(e => {
-    e && D(true)
+  }), [P, w] = i.useState(false), D = i.useCallback(e => {
+    e && w(true)
   }, []);
   return i.useEffect(() => {
-    D(false)
+    w(false)
   }, [e.content]), i.useMemo(() => {
     if (null != e.customRenderedContent) return e.customRenderedContent;
     if (e.isUnsupported) return {
@@ -65,7 +65,7 @@ function g(e, t) {
             channelId: e.channel_id,
             viewingChannelId: A,
             guildId: (0, l.k)(e),
-            setHasSpoilerEmbeds: w
+            setHasSpoilerEmbeds: D
           },
           children: (0, r.jsx)(m, {
             content: e.content
@@ -81,11 +81,11 @@ function g(e, t) {
       allowHeading: O,
       allowList: v,
       allowLinks: I,
-      allowDevLinks: T,
-      previewLinkTarget: S,
+      allowDevLinks: S,
+      previewLinkTarget: T,
       shouldFilterKeywords: C,
       viewingChannelId: A,
       allowGameMentions: N
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, g, E, b, y, O, v, I, S, C, T, A, R.enabled, N, P])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, g, E, b, y, O, v, I, T, C, S, A, R.enabled, N, P])
 }

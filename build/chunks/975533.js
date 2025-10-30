@@ -47,7 +47,7 @@ function L(e, t, n) {
     let e = A._M,
       {
         pttLatchingEnabled: t = false
-      } = v.Z.getModeOptions(l);
+      } = y.Z.getModeOptions(l);
     if (!n.latched && true === t && i < n.pressedTime + e) {
       n.latched = true;
       return
@@ -59,7 +59,7 @@ function L(e, t, n) {
   let s = a.get(t);
   null == s && (s = new Set, a.set(t, s)), e ? s.add(n.id) : s.delete(n.id);
   let o = s.size > 0;
-  v.Z.getMediaEngine().eachConnection(e => e.setForceAudioInput(o, t), l)
+  y.Z.getMediaEngine().eachConnection(e => e.setForceAudioInput(o, t), l)
 }
 let R = {
     [Chunk981631.kg4.TOGGLE_PRIORITY_SPEAKER]: {
@@ -72,7 +72,7 @@ let R = {
     },
     [Chunk981631.kg4.PUSH_TO_TALK]: {
       onTrigger(e, t) {
-        v.Z.getMode(t.context) === x.pM4.PUSH_TO_TALK && (R[x.kg4.PUSH_TO_TALK].isPressed = e, L(e, false, t))
+        y.Z.getMode(t.context) === x.pM4.PUSH_TO_TALK && (R[x.kg4.PUSH_TO_TALK].isPressed = e, L(e, false, t))
       },
       keyEvents: {
         keyup: true,
@@ -82,7 +82,7 @@ let R = {
     },
     [Chunk981631.kg4.PUSH_TO_TALK_PRIORITY]: {
       onTrigger(e, t) {
-        (v.Z.getMode() === x.pM4.PUSH_TO_TALK || P.Z.getCurrentConfig({
+        (y.Z.getMode() === x.pM4.PUSH_TO_TALK || P.Z.getCurrentConfig({
           location: "keybinds"
         }).onPTTKeybind) && (R[x.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, L(e, true, t))
       },
@@ -94,7 +94,7 @@ let R = {
     },
     [Chunk981631.kg4.VAD_PRIORITY]: {
       onTrigger(e, t) {
-        v.Z.getMode() === x.pM4.VOICE_ACTIVITY && P.Z.getCurrentConfig({
+        y.Z.getMode() === x.pM4.VOICE_ACTIVITY && P.Z.getCurrentConfig({
           location: "keybinds"
         }).separateKeybind && (R[x.kg4.VAD_PRIORITY].isPressed = e, L(e, true, t))
       },
@@ -106,7 +106,7 @@ let R = {
     },
     [Chunk981631.kg4.PUSH_TO_MUTE]: {
       onTrigger(e) {
-        v.Z.getMode() === x.pM4.VOICE_ACTIVITY && (R[x.kg4.PUSH_TO_MUTE].isPressed = e, i.Z.setTemporarySelfMute(e))
+        y.Z.getMode() === x.pM4.VOICE_ACTIVITY && (R[x.kg4.PUSH_TO_MUTE].isPressed = e, i.Z.setTemporarySelfMute(e))
       },
       keyEvents: {
         keyup: true,
@@ -251,7 +251,16 @@ let R = {
     },
     [Chunk981631.kg4.SAVE_CLIP]: {
       onTrigger: () => {
-        (0, Chunk924557.ln)() && (Chunk626135.default.track(Chunk981631.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, Chunk39604.C1)())
+        (0, Chunk924557.ln)() && (Chunk626135.default.track(Chunk981631.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, Chunk39604.br)())
+      },
+      keyEvents: {
+        keyup: false,
+        keydown: true
+      }
+    },
+    [Chunk981631.kg4.SAVE_SCREENSHOT]: {
+      onTrigger: () => {
+        (0, Chunk924557.ln)() && (0, Chunk924557.iL)() && (Chunk626135.default.track(Chunk981631.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, Chunk39604.ZW)())
       },
       keyEvents: {
         keyup: false,

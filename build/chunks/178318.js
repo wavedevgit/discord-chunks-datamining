@@ -36,8 +36,8 @@ try {
   } catch (e) {}
 }
 let I = Chunk998502.ZP.requireModule("discord_rpc").RPCWebSocket,
-  v = window.GLOBAL_ENV.MARKETING_ENDPOINT,
-  y = new Chunk710845.Z("RPCServer:WSS"),
+  y = window.GLOBAL_ENV.MARKETING_ENDPOINT,
+  v = new Chunk710845.Z("RPCServer:WSS"),
   C = [];
 
 function S(e) {
@@ -49,7 +49,7 @@ function T() {
     t = module > 0 ? true : () => {
       if (!S(i.listening)) return;
       let e = i.address().port;
-      y.info("Starting on ".concat(module)), Chunk570140.Z.dispatch({
+      v.info("Starting on ".concat(module)), Chunk570140.Z.dispatch({
         type: "RPC_SERVER_READY",
         port: module
       })
@@ -89,7 +89,7 @@ function j(e, t, n, r) {
 }
 class P extends Chunk76238.Z {
   send(e) {
-    (u.default.isLoggingOverlayEvents || e.cmd !== b.Etm.OVERLAY && e.evt !== b.zMe.OVERLAY) && y.info("Socket Emit: ".concat(this.id), (0, m.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
+    (u.default.isLoggingOverlayEvents || e.cmd !== b.Etm.OVERLAY && e.evt !== b.zMe.OVERLAY) && v.info("Socket Emit: ".concat(this.id), (0, m.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
       binary: true
     }) : this._socket.send(JSON.stringify(e))
   }
@@ -108,7 +108,7 @@ class P extends Chunk76238.Z {
 }
 class x extends Chunk76238.Z {
   send(e) {
-    (u.default.isLoggingOverlayEvents || e.cmd !== b.Etm.OVERLAY) && y.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
+    (u.default.isLoggingOverlayEvents || e.cmd !== b.Etm.OVERLAY) && v.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
   }
   close(e, t) {
     this._closeCallback(t, e)
@@ -136,7 +136,7 @@ class A extends Chunk836560.EventEmitter {
             protocol: i,
             host: l
           } = null != (r = d.Z.toURLSafe(null != (e = n.get("callback")) ? e : "")) ? r : {};
-          i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", v), t.writeHead(301), t.end()
+          i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", y), t.writeHead(301), t.end()
         },
         o = new x(!l ? s : N.bind(null, e, t), !l ? s : j.bind(null, e, t, 400), Number(n.get("v")), i);
       if (l)(0, g.em)(o, S(e.headers).origin, n.get("client_id")).then(() => {
@@ -167,8 +167,8 @@ class A extends Chunk836560.EventEmitter {
       e.close(t.code, t.message);
       return
     }
-    y.info("Socket Opened: ".concat(r.id)), e.on("error", e => y.error("WS Error: ".concat(e.message))), e.on("close", (e, t) => {
-      y.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), s().remove(C, e => e === r), this.emit("disconnect", r)
+    v.info("Socket Opened: ".concat(r.id)), e.on("error", e => v.error("WS Error: ".concat(e.message))), e.on("close", (e, t) => {
+      v.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), s().remove(C, e => e === r), this.emit("disconnect", r)
     }), (0, g.em)(r, l, i.get("client_id")).then(() => {
       C.push(r), e.on("message", e => this.handleMessage(r, e)), this.emit("connect", r)
     }).catch(e => {
@@ -188,14 +188,14 @@ class A extends Chunk836560.EventEmitter {
     } catch (t) {
       e.close(b.$VG.CLOSE_UNSUPPORTED, "Payload not ".concat(e.encoding));
       return
-    }(u.default.isLoggingOverlayEvents || n.cmd !== b.Etm.OVERLAY) && y.info("Socket Message: ".concat(e.id), (0, m.Z)(n)), this.emit("request", e, n)
+    }(u.default.isLoggingOverlayEvents || n.cmd !== b.Etm.OVERLAY) && v.info("Socket Message: ".concat(e.id), (0, m.Z)(n)), this.emit("request", e, n)
   }
   constructor() {
     var e;
     super();
     let t = 0;
     (i = I.http.createServer()).on("error", e => {
-      y.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => T(++t), 1e3)
+      v.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => T(++t), 1e3)
     }), i.on("request", this.handleRequest.bind(this)), T(exports);
     let n = {
       instanceId: null != (e = i.instanceId) ? module : 0,

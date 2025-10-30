@@ -71,7 +71,7 @@ function j(e) {
               markAsDismissed: l
             });
           case a.z.CHANNEL_NOTICE_QUICKSWITCHER:
-            return (0, r.jsx)(v.Z, {
+            return (0, r.jsx)(y.Z, {
               guild: n,
               markAsDismissed: l
             });
@@ -100,32 +100,32 @@ let P = e => {
   let {
     guild: t
   } = e;
-  switch ((0, y.Z)(t)) {
-    case y.R.ENABLE_PUBLIC_GUILD:
+  switch ((0, v.Z)(t)) {
+    case v.R.ENABLE_PUBLIC_GUILD:
       return (0, r.jsx)(_.Z, {
         guild: t
       });
-    case y.R.MAX_MEMBER_COUNT:
+    case v.R.MAX_MEMBER_COUNT:
       return (0, r.jsx)(I.Z, {
         guild: t
       });
-    case y.R.GUILD_LIVE_CHANNEL:
+    case v.R.GUILD_LIVE_CHANNEL:
       return (0, r.jsx)(p.ZP, {
         guild: t
       });
-    case y.R.GUILD_MFA_WARNING:
+    case v.R.GUILD_MFA_WARNING:
       return (0, r.jsx)(E.Z, {
         guild: t
       });
-    case y.R.COMMANDS_MIGRATION:
+    case v.R.COMMANDS_MIGRATION:
       return (0, r.jsx)(h.Z, {
         guild: t
       });
-    case y.R.APPLICATION_SUBSCRIPTION_EXPIRATION:
+    case v.R.APPLICATION_SUBSCRIPTION_EXPIRATION:
       return (0, r.jsx)(g.Z, {
         guild: t
       });
-    case y.R.HUB_STUDY_ROOM:
+    case v.R.HUB_STUDY_ROOM:
       return (0, r.jsx)(m.Z, {
         guild: t
       })

@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk534887 = require("./534887.js");
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,7 +41,7 @@ function D(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let w = o().throttle(() => {
+let D = o().throttle(() => {
     Chunk797614.Z.increment({
       name: Chunk286379.V.APP_CRASHED,
       tags: ["reason:".concat(Chunk818405.v.UNHANDLED_JS_ERROR), "level:".concat(Chunk587158.c.FATAL)]
@@ -60,27 +60,27 @@ function x(e) {
     onDisable: c,
     onCrashDisabled: u
   } = e, _ = i.useMemo(() => new s.SpringValue(1), []), m = i.useRef(null), [g, y] = i.useState(false), [O, v] = i.useState(false), I = (0, d.e7)([E.default], () => E.default.getCurrentUser());
-  (0, h.ZP)(() => (m.current = setTimeout(T, L), p.Z.track(N.rMx.NOTIFICATION_VIEWED, {
+  (0, h.ZP)(() => (m.current = setTimeout(S, L), p.Z.track(N.rMx.NOTIFICATION_VIEWED, {
     notif_type: C.n0.OverlayCrashed
   }), () => {
     null != m.current && clearTimeout(m.current)
   }));
-  let T = i.useCallback(() => {
+  let S = i.useCallback(() => {
       _.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == o || o(), null == u || u()
     }, [_, o, u]),
-    D = i.useCallback(e => {
+    w = i.useCallback(e => {
       O || (v(true), null == o || o(), p.Z.track(N.rMx.NOTIFICATION_CLICKED, {
         notif_type: C.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => null == l ? true : l(), 200))
     }, [o, l, O]),
-    w = i.useCallback(e => {
+    D = i.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (y(true), null != m.current && clearTimeout(m.current)) : y(false)
     }, [y]),
     x = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
-    M = (0, d.e7)([S.Z], () => S.Z.getFocusedRunningGame()),
+    M = (0, d.e7)([T.Z], () => T.Z.getFocusedRunningGame()),
     k = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
@@ -117,8 +117,8 @@ function x(e) {
       height: 40,
       className: P.notificationIcon
     }),
-    onNotificationClick: w,
-    onConfirmClick: D,
+    onNotificationClick: D,
+    onConfirmClick: w,
     onCancelClick: null != M ? x : true,
     onDismissClick: o,
     expand: true,
@@ -154,7 +154,7 @@ class M extends Chunk647438.PureComponent {
       error_stack: e.stack,
       sentry_issue_id: i,
       error_level: "fatal"
-    }), w(), this.pid = r
+    }), D(), this.pid = r
   }
   render() {
     let {
@@ -198,11 +198,11 @@ class M extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), D(this, "state", {
+    super(...e), w(this, "state", {
       error: null,
       showError: true,
       info: null
-    }), D(this, "pid", null)
+    }), w(this, "pid", null)
   }
 }
 let k = M

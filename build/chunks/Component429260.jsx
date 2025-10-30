@@ -2,8 +2,8 @@
 /** chunk id: 429260, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => E,
-  eH: () => P,
-  wY: () => _
+  eH: () => Z,
+  wY: () => P
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -27,9 +27,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk43617 = require("./43617.js");
 
 function E(e) {
-  let t = (0, i.e7)([O.Z], () => O.Z.getGuildId()),
+  let t = (0, i.e7)([y.Z], () => y.Z.getGuildId()),
     n = (0, p.Q_)(t);
-  return (0, m.a4)(e) ? (0, r.jsx)(a.sNh, {
+  return (0, h.a4)(e) ? (0, r.jsx)(a.sNh, {
     id: "report",
     label: n ? v.intl.string(v.t.n5EBAJ) : v.intl.string(v.t.GwbdGe),
     action: () => (0, f.ak)(e, "web_message_context_menu"),
@@ -56,19 +56,19 @@ function S() {
   })
 }
 
-function _(e) {
+function P(e) {
   let t = (0, i.e7)([g.Z], () => g.Z.hasReportedMessage(e.channel_id, e.id)),
     n = (0, b.sP)(e);
   return ((0, o.zq)(() => {
     n && (0, u.Q3)(l.z.REPORT_TO_MOD_NEW_TAG, {
-      dismissAction: h.L.AUTO_DISMISS
+      dismissAction: m.L.AUTO_DISMISS
     })
   }), n) ? (0, r.jsx)(a.sNh, {
     id: "report-to-mod",
     label: t ? v.intl.string(j.default["8wsdng"]) : v.intl.string(j.default["1D+vqy"]),
     action: () => {
       (0, u.Q3)(l.z.REPORT_TO_MOD_NEW_TAG, {
-        dismissAction: h.L.USER_DISMISS
+        dismissAction: m.L.USER_DISMISS
       }), (0, f.tV)(e)
     },
     icon: (0, r.jsx)(S, {}),
@@ -76,10 +76,10 @@ function _(e) {
   }) : null
 }
 
-function P(e) {
+function Z(e) {
   let t = (0, i.e7)([c.ZP], () => c.ZP.get("iar_testing")),
-    n = (0, i.e7)([y.default], () => y.default.getCurrentUser());
-  return (0, m.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.sNh, {
+    n = (0, i.e7)([O.default], () => O.default.getCurrentUser());
+  return (0, h.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.sNh, {
     id: "staff-test-message-report",
     label: "[STAFF] Test Message Report",
     action: () => (0, f.Jw)(e, "web_message_context_menu"),

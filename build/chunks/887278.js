@@ -3,8 +3,9 @@
 "use strict";
 require.d(exports, {
   $1: () => b,
-  YT: () => v,
-  pn: () => I
+  YT: () => S,
+  pn: () => T,
+  u2: () => A
 }), require("./415506.js");
 var Chunk570140 = require("./570140.js"),
   Chunk923928 = require("./923928.js"),
@@ -67,15 +68,19 @@ function b() {
   var e;
   return !(null === Chunk998502.ZP || true === Chunk998502.ZP || null == (e = Chunk998502.ZP.isModuleVersionAtLeast) ? true : module.call(Chunk998502.ZP, "discord_hook", E))
 }
-async function y() {
+let y = null;
+async function O() {
   if (!(0, Chunk358085.isWindows)()) return Promise.reject(Error("Hook is only available on Windows"));
   if (b()) return Promise.reject(Error("Hook module is too old"));
   await Chunk998502.ZP.ensureModule("discord_hook");
   let e = await Chunk998502.ZP.requireModule("discord_hook");
-  return O(module), module
+  return I(module), module
+}
+async function v() {
+  return null != y ? y : y = await O()
 }
 
-function O(e) {
+function I(e) {
   if (null == e.setFlags) return;
   let t = 0,
     n = f.Z.getCurrentConfig({
@@ -88,8 +93,8 @@ function O(e) {
   null != r && (r.isStaff() || n.enableCrashTrigger) && (console.log("Hook: Enabling crash trigger."), t |= 2), e.setFlags(t)
 }
 
-function v(e, t) {
-  return y().then(n => {
+function S(e, t) {
+  return O().then(n => {
     var l;
     let u = null == (l = o.ZP.getGameForPID(e)) ? true : l.name,
       d = s.Z.getGameByName(u),
@@ -114,8 +119,12 @@ function v(e, t) {
   })
 }
 
-function I(e) {
-  return y().then(t => {
+function T(e) {
+  return O().then(t => {
     t.cancelAttachToProcess(e)
   })
+}
+
+function A() {
+  return v().then(e => null != e.findSteamProcess ? e.findSteamProcess() : null).catch(() => null)
 }

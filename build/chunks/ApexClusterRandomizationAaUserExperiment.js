@@ -8,7 +8,7 @@ require.d(exports, {
   Fe: () => I,
   I1: () => m,
   J9: () => c,
-  Jg: () => T,
+  Jg: () => S,
   L$: () => s,
   OP: () => R,
   Pv: () => f,
@@ -26,7 +26,7 @@ require.d(exports, {
   ur: () => _,
   xs: () => A,
   yR: () => y,
-  zk: () => S
+  zk: () => T
 });
 var Chunk722733 = require("./722733.js"),
   Chunk987170 = require("./987170.js"),
@@ -319,7 +319,7 @@ let o = (0, Chunk987170.Z)({
     }],
     commonTriggerPoint: Chunk987338.$P.PAYMENT_FLOW_STARTED
   }),
-  T = (0, Chunk987170.Z)({
+  S = (0, Chunk987170.Z)({
     id: "2025-07_apex_aa_validation__clientside__collectiblesshopopen__simple",
     kind: "user",
     label: "Apex AA Validation Collectibles Shop Open Simple",
@@ -335,7 +335,7 @@ let o = (0, Chunk987170.Z)({
     }],
     commonTriggerPoint: Chunk987338.$P.COLLECTIBLES_SHOP_OPEN
   }),
-  S = (0, Chunk987170.Z)({
+  T = (0, Chunk987170.Z)({
     id: "2025-07_apex_aa_validation__clientside__collectiblesshopopen__hqdtesters",
     kind: "user",
     label: "Apex AA Validation Collectibles Shop Open HQDTesters",

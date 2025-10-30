@@ -31,8 +31,8 @@ function O(e) {
       onTransitionToInviteChannel: v,
       onAcceptInstantInvite: I
     } = e,
-    T = O === a.author.id,
-    S = n.state === E.r2o.ACCEPTING,
+    S = O === a.author.id,
+    T = n.state === E.r2o.ACCEPTING,
     A = (0, l.e7)([p.Z], () => null != n.channel ? p.Z.getChannel(n.channel.id) : null, [n]);
   o()(null == A || A.isPrivate(), "must be a private channel");
   let {
@@ -59,11 +59,11 @@ function O(e) {
   }
   let P = A.name;
   (null == P || "" === P) && (P = t.length > 0 ? t.filter(m.lm).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRF));
-  let D = b.intl.string(b.t.XpeFYr),
-    w = "active";
-  N && (D = b.intl.string(b.t.cEnaWx), w = "secondary");
+  let w = b.intl.string(b.t.XpeFYr),
+    D = "active";
+  N && (w = b.intl.string(b.t.cEnaWx), D = "secondary");
   let L = b.intl.string(b.t["3p3/BK"]);
-  return T && (L = b.intl.string(b.t.qmtuXE)), (0, r.jsxs)(f.Z, {
+  return S && (L = b.intl.string(b.t.qmtuXE)), (0, r.jsxs)(f.Z, {
     children: [(0, r.jsx)(f.Z.Header, {
       text: L
     }), (0, r.jsxs)(f.Z.Body, {
@@ -81,10 +81,10 @@ function O(e) {
         })]
       }), (0, r.jsx)(s.zxk, {
         onClick: R,
-        loading: S,
+        loading: T,
         disabled: N,
-        variant: w,
-        text: D,
+        variant: D,
+        text: w,
         fullWidth: true
       })]
     })]

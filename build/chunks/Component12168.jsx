@@ -2,7 +2,7 @@
 /** chunk id: 12168, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w,
+  Z: () => D,
   u: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk295907 = require("./295907.js"),
   Chunk339051 = require("./339051.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -113,7 +113,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     otherAccessories: t,
     isEmojiPickerExpanded: n,
@@ -137,7 +137,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     channel: t,
     title: n,
@@ -148,9 +148,9 @@ function w(e) {
     onExpandedToggle: p,
     emojiSearchProps: m,
     recentlyUsedEmojis: b,
-    analyticsOverride: T,
+    analyticsOverride: S,
     ref: A
-  } = e, w = (0, d.Dt)(), [L, x] = i.useState(false), M = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...M, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
+  } = e, D = (0, d.Dt)(), [L, x] = i.useState(false), M = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...M, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: N
@@ -171,20 +171,20 @@ function w(e) {
       null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? j(true) : j(!L))
     };
   return (0, r.jsxs)(c.VqE, {
-    "aria-labelledby": w,
+    "aria-labelledby": D,
     ref: A,
     children: [(0, r.jsx)(c.y5t, {
       forceLevel: 2,
       children: (0, r.jsx)(c.nn4, {
         children: (0, r.jsx)(c.H, {
-          id: w,
+          id: D,
           children: n
         })
       })
     }), (0, r.jsxs)("div", {
       className: I.container,
       children: [(0, r.jsx)(h.Z, {
-        analyticsOverride: T,
+        analyticsOverride: S,
         channel: t,
         className: o()(I.animatedPicker, {
           [I.animatedPickerTall]: L
@@ -197,8 +197,8 @@ function w(e) {
         shouldHidePickerActions: !L,
         wrapper: "div",
         pickerIntention: N,
-        searchProps: C(S({}, m), {
-          accessory: (0, r.jsx)(D, {
+        searchProps: C(T({}, m), {
+          accessory: (0, r.jsx)(w, {
             otherAccessories: null == m ? true : m.accessory,
             isEmojiPickerExpanded: L,
             onSetExpanded: j,

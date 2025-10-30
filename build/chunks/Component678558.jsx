@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk132810 = require("./132810.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -87,12 +87,12 @@ let P = e => {
     analyticsLocation: t,
     analyticsSourceLocation: n,
     guild: a,
-    buttonText: T,
+    buttonText: S,
     targetBoostedGuildTier: A,
     onClose: R = () => {},
     closeLayer: P = () => {},
-    pauseAnimation: D = false,
-    applicationId: w,
+    pauseAnimation: w = false,
+    applicationId: D,
     handleSubscribeModalClose: L,
     withHighlight: x = false,
     icon: M,
@@ -121,13 +121,13 @@ let P = e => {
         onClose: R,
         closeLayer: P,
         inPopout: B,
-        applicationId: w,
+        applicationId: D,
         handleSubscribeModalClose: L,
         intent: k
       }), F(false)
     }, q = g.Z.getPremiumTypeSubscription(), X = (0, r.jsxs)("div", {
       className: I.button,
-      children: [M, null != T ? T : v.intl.string(v.t.gKmQ1G)]
+      children: [M, null != S ? S : v.intl.string(v.t.gKmQ1G)]
     }), Q = false;
   return ((Q = null !== q && !(Y.length > 0) && (null == q ? true : q.isPausedOrPausePending) && V === O.a$.NONE) && (X = (0, r.jsxs)("div", {
     className: I.button,
@@ -142,17 +142,17 @@ let P = e => {
       icon: d.mBM,
       iconPosition: "start",
       disabled: true,
-      text: null != T ? T : v.intl.string(v.t.gKmQ1G)
+      text: null != S ? S : v.intl.string(v.t.gKmQ1G)
     })
   }) : (0, r.jsx)(l.Z, {
     text: K,
     "aria-label": false,
-    children: e => (0, r.jsx)(d.gtL, C(S(C(S({
+    children: e => (0, r.jsx)(d.gtL, C(T(C(T({
       "data-migration-pending": true
     }, e), {
       disabled: true,
       size: u.zx.Sizes.SMALL,
-      pauseAnimation: D
+      pauseAnimation: w
     }), U), {
       children: X
     }))
@@ -160,9 +160,9 @@ let P = e => {
     variant: "expressive",
     disabled: Q,
     loading: Z,
-    text: null != T ? T : v.intl.string(v.t.gKmQ1G),
+    text: null != S ? S : v.intl.string(v.t.gKmQ1G),
     onClick: z
-  }) : (0, r.jsx)(d.gtL, C(S({
+  }) : (0, r.jsx)(d.gtL, C(T({
     "data-migration-pending": true,
     size: u.zx.Sizes.SMALL
   }, U), {
@@ -171,7 +171,7 @@ let P = e => {
     }),
     submitting: Z,
     onClick: z,
-    pauseAnimation: D,
+    pauseAnimation: w,
     children: X
   }))
 }

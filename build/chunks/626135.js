@@ -72,13 +72,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -101,8 +101,8 @@ let C = {
   N = Chunk647438.createContext(C),
   R = {},
   P = 1e4,
-  D = 6e4,
-  w = 12e4,
+  w = 6e4,
+  D = 12e4,
   L = 3e5,
   x = 9e5,
   M = 36e5,
@@ -124,7 +124,7 @@ let F = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.APP_BACKGROUND]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.ACK_MESSAGES]: e => e.location_object_type === g.AnalyticsObjectTypes.ACK_MANUAL ? true : {
@@ -156,7 +156,7 @@ let F = {
     throttleKeys: e => [e.server]
   },
   [Chunk981631.rMx.ACTIVITY_UPDATED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.application_id],
     deduplicate: true
   },
@@ -185,7 +185,7 @@ let F = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.KEYBOARD_SHORTCUT_USED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => {
       var t;
       return [e.shortcut_name, e.location_object, ...null != (t = e.source_class_list) ? t : []]
@@ -200,7 +200,7 @@ let F = {
     throttleKeys: e => [e.type]
   },
   [Chunk981631.rMx.ROLE_PAGE_VIEWED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.role_id, e.tab_opened]
   },
   [Chunk981631.rMx.VIDEO_INPUT_INITIALIZED]: {
@@ -242,11 +242,11 @@ let F = {
     throttleKeys: e => [e.banner_type, e.channel_id]
   },
   [Chunk981631.rMx.PREMIUM_UPSELL_VIEWED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.type]
   },
   [Chunk981631.rMx.FORUM_CHANNEL_SEARCHED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.FORUM_CHANNEL_SCROLLED]: {
@@ -254,11 +254,11 @@ let F = {
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.user_id]
   },
   [Chunk981631.rMx.MEDIA_VIEWER_SESSION_COMPLETED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.SUMMARIES_UNREAD_BAR_VIEWED]: {
@@ -286,7 +286,7 @@ let F = {
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
@@ -328,7 +328,7 @@ let F = {
     throttleKeys: e => [e.channel_id, e.message_id]
   },
   [Chunk981631.rMx.OPEN_MODAL]: e => e.type === g.jXE.MEDIA_VIEWER ? {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.type]
   } : true,
   [Chunk981631.rMx.MODERATOR_QUEUE_ACTION]: {
@@ -406,13 +406,13 @@ function q(e) {
     let {
       location: e
     } = a;
-    a = v({}, S(a, ["location"]), V(e))
+    a = v({}, T(a, ["location"]), V(e))
   }
   if (null != a.source) {
     let {
       source: e
     } = a;
-    a = v({}, S(a, ["source"]), H(e))
+    a = v({}, T(a, ["source"]), H(e))
   }
   a.client_performance_cpu = h.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = h.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = h.Z.getCPUCoreCount(), a.accessibility_features = Y(), a.rendered_locale = y.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - U) / 1e3);
   let o = h.Z.getProcessUptime();
@@ -490,7 +490,7 @@ function es(e, t) {
 function el() {
   return (0, Chunk772848.Z)()
 }
-let ec = T(v({}, Chunk990547), {
+let ec = S(v({}, Chunk990547), {
   getCampaignParams: Chunk990547.getCampaignParams,
   setSystemAccessibilityFeatures: W,
   expandEventProperties: q,

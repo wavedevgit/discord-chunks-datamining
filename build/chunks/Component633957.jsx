@@ -47,7 +47,7 @@ function B(e) {
   let l, {
       application: d,
       channelId: I,
-      guildId: D,
+      guildId: w,
       message: L
     } = e,
     {
@@ -56,7 +56,7 @@ function B(e) {
     F = (0, u.O)(),
     V = (0, s.e7)([A.Z], () => A.Z.getChannel(I), [I]),
     H = (null == V || null == (t = V.isThread) ? true : t.call(V)) ? null == V ? true : V.parent_id : I,
-    Y = (0, s.e7)([S.default], () => S.default.getId()),
+    Y = (0, s.e7)([T.default], () => T.default.getId()),
     {
       embeddedActivity: W,
       currentEmbeddedActivity: K,
@@ -67,7 +67,7 @@ function B(e) {
       activityLaunchState: f.ZP.getLaunchState(d.id, null != H ? H : true)
     }), [H, d.id]),
     q = null == W ? true : W.userIds,
-    X = (0, s.Wu)([N.default], () => Array.from(null != q ? q : []).map(e => N.default.getUser(e)).filter(w.lm), [q]),
+    X = (0, s.Wu)([N.default], () => Array.from(null != q ? q : []).map(e => N.default.getUser(e)).filter(D.lm), [q]),
     Q = (0, s.e7)([C.Z], () => {
       if (null == q) return null;
       for (let e of q) {
@@ -78,7 +78,7 @@ function B(e) {
     }, [d.id, q]),
     J = null == Q ? true : Q.details,
     $ = i.useMemo(() => {
-      let e = new T.ZP(d);
+      let e = new S.ZP(d);
       return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.wT), e
     }, [d]),
     ee = (0, h.s5)({
@@ -187,7 +187,7 @@ function B(e) {
           })]
         }), ec > 0 && (0, r.jsx)(y.K, {
           activityUsers: X,
-          guildId: D,
+          guildId: w,
           activityText: ed.text
         })]
       })
@@ -197,7 +197,7 @@ function B(e) {
     trackingConfig: {
       id: d.id,
       linkType: j.U.ACTIVITY_INSTANCE,
-      guildId: D,
+      guildId: w,
       channelId: I,
       messageId: L.id
     }
@@ -209,8 +209,8 @@ let Z = Chunk647438.memo(e => {
   } = e, [n, r] = i.useState(0), a = (0, L.n)(), o = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === a || o;
   return i.useEffect(() => {
     let e = new l.Xp;
-    return e.start(c ? 15 * D.Z.Millis.SECOND : D.Z.Millis.SECOND, () => {
-      r((new Date().getTime() - t) / D.Z.Millis.SECOND)
+    return e.start(c ? 15 * w.Z.Millis.SECOND : w.Z.Millis.SECOND, () => {
+      r((new Date().getTime() - t) / w.Z.Millis.SECOND)
     }), () => e.stop()
   }, [c, t]), (0, I.m)(n)
 });

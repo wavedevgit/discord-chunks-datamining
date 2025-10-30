@@ -46,17 +46,17 @@ function d(e, t) {
 function u(e, t) {
   return {
     trackView() {
-      let n = o.default.isInstanceLocked() ? s.Sbl.LOCKED_OVERLAY : s.Sbl.UNLOCKED_OVERLAY;
-      i.Z.track(s.rMx.NOTIFICATION_VIEWED, d(c({}, t), {
+      let n = o.default.isInstanceLocked() ? a.Sbl.LOCKED_OVERLAY : a.Sbl.UNLOCKED_OVERLAY;
+      i.Z.track(a.rMx.NOTIFICATION_VIEWED, d(c({}, t), {
         location: n
-      })), i.Z.notificationEvent(e, a.bv.Viewed)
+      })), i.Z.notificationEvent(e, s.bv.Viewed)
     },
     trackClick(n) {
-      let r = o.default.isInstanceLocked() ? s.Sbl.LOCKED_OVERLAY : s.Sbl.UNLOCKED_OVERLAY;
-      i.Z.track(s.rMx.NOTIFICATION_CLICKED, d(c({}, t), {
+      let r = o.default.isInstanceLocked() ? a.Sbl.LOCKED_OVERLAY : a.Sbl.UNLOCKED_OVERLAY;
+      i.Z.track(a.rMx.NOTIFICATION_CLICKED, d(c({}, t), {
         location: r,
         action_type: n
-      })), i.Z.notificationEvent(e, a.bv.Clicked)
+      })), i.Z.notificationEvent(e, s.bv.Clicked)
     }
   }
 }

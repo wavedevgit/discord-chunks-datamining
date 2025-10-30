@@ -36,7 +36,7 @@ function E(e, t, n) {
   }, [m, E]), {
     validInviteKey: v,
     isBypassInvite: I,
-    inviteRoles: T
+    inviteRoles: S
   } = (0, a.cj)([d.Z], () => {
     var e;
     let t = null != n ? n : d.Z.getInviteKeyForGuildId(m),
@@ -50,20 +50,20 @@ function E(e, t, n) {
       isBypassInvite: (0, _.yE)(null != (e = r.flags) ? e : 0, i.$.IS_APPLICATION_BYPASS),
       inviteRoles: r.roles
     }
-  }, [m, n]), S = (0, s.Z)(), A = r.useMemo(() => {
+  }, [m, n]), T = (0, s.Z)(), A = r.useMemo(() => {
     if (O) {
-      if ("INVITE" === t && null != T && T.length > 0 && null != y) {
+      if ("INVITE" === t && null != S && S.length > 0 && null != y) {
         var n;
         let e = c.ZP.getMember(m, y.id),
           t = new Set(null != (n = null == e ? true : e.roles) ? n : []);
-        if (T.some(e => !t.has(e.id))) return 6
+        if (S.some(e => !t.has(e.id))) return 6
       }
       let r = null == y ? true : y.primaryGuild,
         i = (null == r ? true : r.identityGuildId) === m && (null == r ? true : r.identityEnabled) === true;
       return "INVITE" !== t && null != e.tag && !i && null != b && (0, o.up)(b) ? 1 : 0
     }
-    return S.includes(m) ? 2 : (null == g ? true : g.includes(h.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == g ? true : g.includes(h.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && (null != v || e.visibility === p.k.PUBLIC_WITH_RECRUITMENT) && !I ? 3 : null != v ? 5 : (null == g ? true : g.includes(h.GuildFeatures.DISCOVERABLE)) ? 4 : null
-  }, [O, S, m, g, v, e.visibility, e.tag, I, t, b, T, y]);
+    return T.includes(m) ? 2 : (null == g ? true : g.includes(h.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == g ? true : g.includes(h.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && (null != v || e.visibility === p.k.PUBLIC_WITH_RECRUITMENT) && !I ? 3 : null != v ? 5 : (null == g ? true : g.includes(h.GuildFeatures.DISCOVERABLE)) ? 4 : null
+  }, [O, T, m, g, v, e.visibility, e.tag, I, t, b, S, y]);
   return {
     guildId: m,
     ctaType: A,

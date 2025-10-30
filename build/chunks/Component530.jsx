@@ -32,8 +32,8 @@ function E(e) {
     pendingDisplayNameStyles: O,
     pronouns: v,
     className: I,
-    tagClassName: T,
-    isTryItOut: S,
+    tagClassName: S,
+    isTryItOut: T,
     onOpenProfile: A,
     onClose: C,
     nicknameVariant: N = "heading-lg/bold"
@@ -42,14 +42,14 @@ function E(e) {
     className: g.clickableUsername,
     "aria-label": m.intl.string(m.t["+Xp3hq"]),
     children: e
-  }), P = null != v && v.length > 0, D = (0, c.D)(t), w = (0, d.Z)({
+  }), P = null != v && v.length > 0, w = (0, c.D)(t), D = (0, d.Z)({
     userId: t.id,
     guildId: n,
     pendingDisplayNameStyles: O
-  }), L = null != w;
+  }), L = null != D;
   return (0, r.jsxs)("div", {
     className: a()(g.container, {
-      [g.bot]: null != D
+      [g.bot]: null != w
     }, I),
     children: [(0, r.jsxs)("div", {
       className: g.usernameRow,
@@ -57,7 +57,7 @@ function E(e) {
         variant: N,
         children: (0, r.jsx)(_.Z, {
           userName: b,
-          displayNameStyles: w,
+          displayNameStyles: D,
           effectDisplayType: f.F.ANIMATED,
           textClassName: g.nicknameWithDisplayNameStyles,
           shouldWrap: true,
@@ -69,8 +69,8 @@ function E(e) {
         className: g.nickname,
         variant: N,
         children: b
-      })), null != D && (0, r.jsx)(u.Z, {
-        type: D,
+      })), null != w && (0, r.jsx)(u.Z, {
+        type: w,
         verified: t.isVerifiedBot()
       }), null != y && (0, r.jsx)("div", {
         className: g.nicknameIcons,
@@ -79,14 +79,14 @@ function E(e) {
     }), (0, r.jsxs)("div", {
       className: a()(g.tags, {
         [g.pronouns]: P,
-        [g.bot]: null != D
+        [g.bot]: null != w
       }),
       children: [!t.isProvisional && R((0, r.jsx)(l.Z, {
         user: t,
         usernameIcon: i,
         forceUsername: true,
-        forcePomelo: S,
-        className: a()(g.userTag, T),
+        forcePomelo: T,
+        className: a()(g.userTag, S),
         usernameClass: g.userTagUsername,
         discriminatorClass: g.userTagDiscriminator,
         hideBotTag: true
@@ -99,7 +99,7 @@ function E(e) {
           text: m.intl.string(m.t.GI2A8C),
           delay: h.vB,
           children: (0, r.jsx)(s.Text, {
-            className: a()(g.pronounsText, T),
+            className: a()(g.pronounsText, S),
             variant: "text-sm/medium",
             color: "header-primary",
             children: v

@@ -25,11 +25,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk36190 = require("./36190.js");
-let T = (0, Chunk131704.createChannelRecord)({
+let S = (0, Chunk131704.createChannelRecord)({
     id: "1",
     type: Chunk106351.d.DM
   }),
-  S = e => {
+  T = e => {
     let {
       input: t,
       username: n,
@@ -85,9 +85,9 @@ function C(e) {
     entry: R
   } = e, {
     resetInteraction: P,
-    setInteractionToast: D
+    setInteractionToast: w
   } = (0, g.Xo)(), {
-    primaryColor: w
+    primaryColor: D
   } = (0, b.z)(), [L, x] = i.useState(""), [M, k] = i.useState((0, u.JM)(L)), j = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
     e.key === O.vn.ESCAPE && (e.stopPropagation(), P())
   }, [P]);
@@ -103,13 +103,13 @@ function C(e) {
     }) : C({
       action: "SEND_REPLY_ACTIVITY"
     });
-    let n = S({
+    let n = T({
       input: e,
       username: h.ZP.getName(t),
       sourceType: s,
       sourceDetails: f
     });
-    D(null);
+    w(null);
     try {
       await (0, m.Z)({
         userId: t.id,
@@ -120,7 +120,7 @@ function C(e) {
         entry: R
       })
     } catch (e) {}
-    D(y.P.REPLY)
+    w(y.P.REPLY)
   }, Z = {
     [I.status]: s === y.n_.STATUS,
     [I.avatar]: s === y.n_.AVATAR,
@@ -131,7 +131,7 @@ function C(e) {
     onKeyDown: G,
     children: (0, r.jsx)("div", {
       className: o()(I.container, Z, {
-        [I.customProfileTheme]: null != w
+        [I.customProfileTheme]: null != D
       }),
       children: (0, r.jsx)(d.ZP, {
         parentModalKey: E,
@@ -143,7 +143,7 @@ function C(e) {
         placeholder: v.intl.formatToPlainString(A(s), {
           username: p.ZP.getName(n, a, t)
         }),
-        channel: T,
+        channel: S,
         textValue: L,
         richValue: M,
         onChange: (e, t, n) => {

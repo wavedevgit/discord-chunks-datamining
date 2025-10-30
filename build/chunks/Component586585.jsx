@@ -98,7 +98,7 @@ let E = e => {
       onPrimary: v
     } = e, {
       premiumBrandRefreshBackgroundClassName: I
-    } = (0, c.JL)(), T = () => {
+    } = (0, c.JL)(), S = () => {
       if (null == _ || null == g) return null;
       let e = {
         primaryIcon: f,
@@ -116,7 +116,7 @@ let E = e => {
       }) : (0, r.jsx)(E, m(p({}, e), {
         onPrimary: v
       }))
-    }, S = () => null == t ? null : (0, r.jsx)(o.Avr, {
+    }, T = () => null == t ? null : (0, r.jsx)(o.Avr, {
       text: null != n ? n : d.intl.string(d.t["13/7kX"]),
       onClick: t,
       variant: "secondary"
@@ -131,8 +131,8 @@ let E = e => {
         align: "center",
         gap: 0,
         padding: 0,
-        children: [T(), (0, r.jsx)(u.Z, {})]
-      }), S()]
+        children: [S(), (0, r.jsx)(u.Z, {})]
+      }), T()]
     })
   };
 b.CTAType = g;

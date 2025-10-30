@@ -26,11 +26,11 @@ function p(e) {
     notifType: m
   } = function(e, t) {
     if (t.type === d.nc.NEWS) {
-      var n, i, r, o, l, s, a, c;
+      var n, i, r, o, l, a, s, c;
       return {
         icon: null != (l = null == (n = t.news) ? true : n.icon) ? l : e.icon,
-        title: null != (s = null == (i = t.news) ? true : i.title) ? s : e.title,
-        body: null != (a = null == (r = t.news) ? true : r.body) ? a : e.body,
+        title: null != (a = null == (i = t.news) ? true : i.title) ? a : e.title,
+        body: null != (s = null == (r = t.news) ? true : r.body) ? s : e.body,
         hint: null != (c = null == (o = t.news) ? true : o.hint) ? c : e.hint,
         notifType: null != t.news ? d.n0.NewsNudge : e.notifType
       }
@@ -43,8 +43,8 @@ function p(e) {
     hint: h,
     notifType: d.n0.WelcomeNudge
   }, e), {
-    trackView: y,
-    trackClick: O
+    trackView: _,
+    trackClick: y
   } = (0, c.R)(m, {
     notif_type: m
   });
@@ -61,13 +61,13 @@ function p(e) {
       children: u.intl.string(u.t["9MyuT0"])
     }),
     onNotificationShow: () => {
-      y()
+      _()
     },
     onNotificationClick: (e, n) => {
-      O("unlock"), t === d.nc.NEWS && r.Z.updateNotificationStatus(n), l.default.isOverlayOOPEnabledForPid((0, a.getPID)()) ? r.Z.setInputLocked(false, (0, a.getPID)()) : s.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
+      y("unlock"), t === d.nc.NEWS && r.Z.updateNotificationStatus(n), l.default.isOverlayOOPEnabledForPid((0, s.getPID)()) ? r.Z.setInputLocked(false, (0, s.getPID)()) : a.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
-      O("dismiss")
+      y("dismiss")
     }
   }
 }

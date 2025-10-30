@@ -206,15 +206,16 @@ class Y extends Chunk647438.PureComponent {
       overlaySupported: e,
       canGoLive: t,
       allowSoundboard: n,
-      enableClips: r
-    } = this.props, i = Chunk577153.Z.getCurrentConfig({
+      enableClips: r,
+      enableScreenshotKeybind: i
+    } = this.props, a = Chunk577153.Z.getCurrentConfig({
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: false
     }).separateKeybind ? [{
       value: Chunk981631.kg4.VAD_PRIORITY,
       label: Chunk388032.intl.string(Chunk388032.t["49d6Nd"])
-    }] : [], a = [{
+    }] : [], o = [{
       value: Chunk981631.kg4.UNASSIGNED,
       label: Chunk388032.intl.string(Chunk388032.t["0Uh579"])
     }, {
@@ -226,7 +227,7 @@ class Y extends Chunk647438.PureComponent {
     }, {
       value: Chunk981631.kg4.PUSH_TO_MUTE,
       label: Chunk388032.intl.string(Chunk388032.t.hSCRqd)
-    }, ...Chunk647438, {
+    }, ...Chunk120356, {
       value: Chunk981631.kg4.TOGGLE_MUTE,
       label: Chunk388032.intl.string(Chunk388032.t.PlkYKD)
     }, {
@@ -239,19 +240,19 @@ class Y extends Chunk647438.PureComponent {
       value: Chunk981631.kg4.TOGGLE_STREAMER_MODE,
       label: Chunk388032.intl.string(Chunk388032.t.BK0Ncc)
     }];
-    return (0, Chunk365023.l)() && Chunk120356.push({
+    return (0, Chunk365023.l)() && o.push({
       value: Chunk981631.kg4.TOGGLE_CAMERA,
       label: Chunk388032.intl.string(Chunk388032.t.hf8JVT)
-    }), module && (Chunk120356.push({
+    }), module && (o.push({
       value: Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK,
       label: Chunk388032.intl.string(Chunk388032.t.VsAZcC)
-    }), Chunk120356.push({
+    }), o.push({
       value: Chunk981631.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
       label: Chunk388032.intl.string(Chunk388032.t.hurHWo)
-    })), exports && ((0, Chunk358085.isWindows)() || Chunk131951.Z.getUseSystemScreensharePicker()) && Chunk120356.push({
+    })), exports && ((0, Chunk358085.isWindows)() || Chunk131951.Z.getUseSystemScreensharePicker()) && o.push({
       value: Chunk981631.kg4.TOGGLE_GO_LIVE_STREAMING,
       label: Chunk388032.intl.string(Chunk388032.t.ybdjJD)
-    }), (0, Chunk358085.isDesktop)() && (Chunk120356.push({
+    }), (0, Chunk358085.isDesktop)() && (o.push({
       value: Chunk981631.kg4.NAVIGATE_BACK,
       label: Chunk388032.intl.string(Chunk388032.t.gRSaOa)
     }, {
@@ -263,23 +264,27 @@ class Y extends Chunk647438.PureComponent {
     }, {
       value: Chunk981631.kg4.DISCONNECT_FROM_VOICE_CHANNEL,
       label: Chunk388032.intl.string(Chunk388032.t.CV7mT7)
-    }), require && Chunk120356.push({
+    }), require && o.push({
       value: Chunk981631.kg4.SOUNDBOARD,
       label: Chunk388032.intl.string(Chunk388032.t.yPH4xm)
     }, {
       value: Chunk981631.kg4.SOUNDBOARD_HOLD,
       label: Chunk388032.intl.string(Chunk388032.t["1xFbP/"])
-    }), Chunk951288 && Chunk120356.push({
+    }), Chunk951288 && (o.push({
       value: Chunk981631.kg4.SAVE_CLIP,
       label: Chunk388032.intl.string(Chunk388032.t.U4URzP)
-    })), Chunk120356
+    }), Chunk647438 && o.push({
+      value: Chunk981631.kg4.SAVE_SCREENSHOT,
+      label: Chunk388032.intl.string(Chunk388032.t["+WloFH"])
+    }))), o
   }
   get keybindDescriptions() {
     let {
       overlaySupported: e,
       canGoLive: t,
-      enableClips: n
-    } = this.props, r = {
+      enableClips: n,
+      enableScreenshotKeybind: r
+    } = this.props, i = {
       [Chunk981631.kg4.UNASSIGNED]: Chunk388032.intl.string(Chunk388032.t.rvlNLv),
       [Chunk981631.kg4.PUSH_TO_MUTE]: Chunk388032.intl.string(Chunk388032.t.xtESim),
       [Chunk981631.kg4.PUSH_TO_TALK]: Chunk388032.intl.string(Chunk388032.t.wTcBSy),
@@ -293,7 +298,7 @@ class Y extends Chunk647438.PureComponent {
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: false
-    }).separateKeybind && (Chunk951288[Chunk981631.kg4.VAD_PRIORITY] = Chunk388032.intl.string(Chunk388032.t.rSe8IZ)), (0, Chunk365023.l)() && (Chunk951288[Chunk981631.kg4.TOGGLE_CAMERA] = Chunk388032.intl.string(Chunk388032.t.v1JBtL)), module && (Chunk951288[Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = Chunk388032.intl.string(Chunk388032.t.IoP5vc)), exports && (0, Chunk358085.isWindows)() && (Chunk951288[Chunk981631.kg4.TOGGLE_GO_LIVE_STREAMING] = Chunk388032.intl.string(Chunk388032.t.s4C238)), (0, Chunk358085.isDesktop)() && (Chunk951288[Chunk981631.kg4.NAVIGATE_BACK] = Chunk388032.intl.string(Chunk388032.t.nKDlEt), Chunk951288[Chunk981631.kg4.NAVIGATE_FORWARD] = Chunk388032.intl.string(Chunk388032.t.DK0FFk), Chunk951288[Chunk981631.kg4.SOUNDBOARD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t["5wJefL"]) : Chunk388032.intl.string(Chunk388032.t.gzjsSP), Chunk951288[Chunk981631.kg4.SOUNDBOARD_HOLD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t.RRkZc9) : Chunk388032.intl.string(Chunk388032.t.laNlTl), require && (Chunk951288[Chunk981631.kg4.SAVE_CLIP] = Chunk388032.intl.string(Chunk388032.t.z3Wbam))), Chunk951288
+    }).separateKeybind && (Chunk647438[Chunk981631.kg4.VAD_PRIORITY] = Chunk388032.intl.string(Chunk388032.t.rSe8IZ)), (0, Chunk365023.l)() && (Chunk647438[Chunk981631.kg4.TOGGLE_CAMERA] = Chunk388032.intl.string(Chunk388032.t.v1JBtL)), module && (Chunk647438[Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = Chunk388032.intl.string(Chunk388032.t.IoP5vc)), exports && (0, Chunk358085.isWindows)() && (Chunk647438[Chunk981631.kg4.TOGGLE_GO_LIVE_STREAMING] = Chunk388032.intl.string(Chunk388032.t.s4C238)), (0, Chunk358085.isDesktop)() && (Chunk647438[Chunk981631.kg4.NAVIGATE_BACK] = Chunk388032.intl.string(Chunk388032.t.nKDlEt), Chunk647438[Chunk981631.kg4.NAVIGATE_FORWARD] = Chunk388032.intl.string(Chunk388032.t.DK0FFk), Chunk647438[Chunk981631.kg4.SOUNDBOARD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t["5wJefL"]) : Chunk388032.intl.string(Chunk388032.t.gzjsSP), Chunk647438[Chunk981631.kg4.SOUNDBOARD_HOLD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t.RRkZc9) : Chunk388032.intl.string(Chunk388032.t.laNlTl), require && (Chunk647438[Chunk981631.kg4.SAVE_CLIP] = Chunk388032.intl.string(Chunk388032.t.z3Wbam), Chunk951288 && (Chunk647438[Chunk981631.kg4.SAVE_SCREENSHOT] = Chunk388032.intl.string(Chunk388032.t.m0zd57)))), Chunk647438
   }
   renderKeybinds(e) {
     return e.map((t, n) => (0, r.jsxs)(i.Fragment, {
@@ -322,9 +327,10 @@ class Y extends Chunk647438.PureComponent {
     })
   }
   render() {
-    let e = this.props.enableClips,
-      t = l()(this.props.keybinds).reject(e => e.managed && ![w.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, w.kg4.SAVE_CLIP].includes(e.action)).reject(t => !e && t.action === w.kg4.SAVE_CLIP).reject(e => !this.props.allowSoundboard && (e.action === w.kg4.SOUNDBOARD || e.action === w.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => true === e.managed ? false : 0).value(),
-      n = V();
+    let {
+      enableClips: e,
+      enableScreenshotKeybind: t
+    } = this.props, n = l()(this.props.keybinds).reject(e => e.managed && ![D.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, D.kg4.SAVE_CLIP, D.kg4.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === D.kg4.SAVE_CLIP || t.action === D.kg4.SAVE_SCREENSHOT)).reject(e => !t && e.action === D.kg4.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === D.kg4.SOUNDBOARD || e.action === D.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => true === e.managed ? false : 0).value(), a = V();
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk273313.Z, {
         title: Chunk388032.intl.string(Chunk388032.t.T9DA2K),
@@ -343,7 +349,7 @@ class Y extends Chunk647438.PureComponent {
           }), (0, Chunk951288.jsx)(Chunk825655.Z, {
             className: Chunk894462.systemServiceUpsell,
             sourcePage: "keybinds"
-          }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), this.renderKeybinds(exports), this.renderEmpty(exports)]
+          }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), this.renderKeybinds(require), this.renderEmpty(require)]
         }) : (0, Chunk951288.jsx)(Chunk481060.Wn, {
           messageType: Chunk481060.QYI.INFO,
           className: Chunk894462.browserNotice,
@@ -375,11 +381,11 @@ class Y extends Chunk647438.PureComponent {
         }), (0, Chunk951288.jsx)(F, {
           children: e => (0, r.jsx)(r.Fragment, {
             children: e.map((e, t) => {
-              let a = (0, m.UD)(e),
+              let n = (0, m.UD)(e),
                 o = (0, m.U6)(e),
-                s = n[e];
+                s = a[e];
               return (0, r.jsx)(d.C3N, {
-                label: a,
+                label: n,
                 description: o,
                 children: (0, r.jsx)("div", {
                   className: M.defaultKeybindGroup,
@@ -417,13 +423,15 @@ function W() {
     t = (0, Chunk442837.e7)([Chunk131951.Z], () => (0, Chunk74299.Z)(Chunk131951.Z)),
     n = (0, Chunk442837.e7)([Chunk509140.Z], () => Chunk509140.Z.isSupported),
     i = (0, Chunk924557.Go)(),
-    a = (0, Chunk526665.wy)("UserSettingsKeybindsConnected");
+    a = (0, Chunk924557.PP)(),
+    o = (0, Chunk526665.wy)("UserSettingsKeybindsConnected");
   return (0, Chunk951288.jsx)(Y, {
     keybinds: module,
     canGoLive: exports,
     overlaySupported: require,
     allowSoundboard: (0, Chunk358085.isWindows)(),
     enableClips: Chunk647438,
-    isUserSettingsRedesignEnabled: Chunk120356
+    enableScreenshotKeybind: Chunk120356,
+    isUserSettingsRedesignEnabled: o
   })
 }

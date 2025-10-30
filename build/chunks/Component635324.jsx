@@ -10,7 +10,7 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
   var {
     clientId: t,
     authorizeProps: {
-      authorizations: a,
+      authorizations: s,
       permissions: c
     }
   } = e, d = function(e, t) {
@@ -40,7 +40,7 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
       location: n
     })
   }
-  let p = s.Hn;
+  let p = a.Hn;
   try {
     p = r.vB(null != c ? c : 0)
   } catch (e) {}(0, o.ZDy)(async () => {
@@ -67,7 +67,7 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
         }
         return e
       }({}, t, d), r = r = {
-        authorizations: new Map(a),
+        authorizations: new Map(s),
         permissions: p,
         callback: h
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

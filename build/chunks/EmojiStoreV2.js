@@ -102,7 +102,7 @@ class J {
   }
   isUsable(e) {
     if (0 === e.roles.length) returntrue;
-    let t = S.ZP.getMember(this.id, this._userId);
+    let t = T.ZP.getMember(this.id, this._userId);
     return null != t && !!(t.roles.some(t => e.roles.includes(t)) || (0, y.yH)(e))
   }
   emojiIds() {
@@ -402,12 +402,12 @@ function eI(e) {
   er = +!!e.guilds.every(e => null != e.emojis.items), eO()
 }
 
-function eT(e) {
+function eS(e) {
   for (let t in eb(), e.emojis) ev(t);
   er = 1, eO()
 }
 
-function eS() {
+function eT() {
   Q.pendingUsages = [], Q.emojiReactionPendingUsages = []
 }
 
@@ -437,7 +437,7 @@ function eP(e) {
   ey(t.id), es.delete(t.id), eO()
 }
 
-function eD(e) {
+function ew(e) {
   var t;
   let {
     guildId: n,
@@ -446,7 +446,7 @@ function eD(e) {
   r.id === (null == (t = P.default.getCurrentUser()) ? true : t.id) && (ev(n), eO())
 }
 
-function ew(e) {
+function eD(e) {
   if (!e.optimistic) returnfalse;
   let t = null != e.emoji.id && "0" !== e.emoji.id ? e.emoji : G.ZP.getByName(G.ZP.convertSurrogateToName(e.emoji.name, false));
   if (null == t) returnfalse;
@@ -454,9 +454,9 @@ function ew(e) {
 }
 
 function eL(e, t) {
-  if (s().isEmpty(e) && s().isEmpty(Q.pendingUsages) && T.Z.hasLoaded(Y.yP.FRECENCY_AND_FAVORITES_SETTINGS))
+  if (s().isEmpty(e) && s().isEmpty(Q.pendingUsages) && S.Z.hasLoaded(Y.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["thumbsup", "eyes", "laughing", "watermelon", "fork_and_knife", "yum", "weary", "tired_face", "poop", "100"]) eg.track(e);
-  if (s().isEmpty(t) && s().isEmpty(Q.emojiReactionPendingUsages) && T.Z.hasLoaded(Y.yP.FRECENCY_AND_FAVORITES_SETTINGS))
+  if (s().isEmpty(t) && s().isEmpty(Q.emojiReactionPendingUsages) && S.Z.hasLoaded(Y.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["100", "100", "thumbsup", "thumbsup", "thumbsdown", "thumbsdown", "heart", "point_up", "eyes", "weary", "laughing", "white_check_mark", "x"]) eE.track(e)
 }
 
@@ -552,7 +552,7 @@ function eZ(e) {
 }
 class eF extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(E.Z, S.ZP, A.Z, C.Z, N.Z, I.default, U.Z, R.ZP, O.Z, B.Z, T.Z, P.default), null != e && (null != e.pendingUsages && (Q.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (Q.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (Q.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([T.Z], ex)
+    this.waitFor(E.Z, T.ZP, A.Z, C.Z, N.Z, I.default, U.Z, R.ZP, O.Z, B.Z, S.Z, P.default), null != e && (null != e.pendingUsages && (Q.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (Q.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (Q.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([S.Z], ex)
   }
   getState() {
     return Q
@@ -644,7 +644,7 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
     let d = null != n ? n.getGuildId() : null,
       f = em.get(d),
       _ = f.nameMatchesChain(t).reduce((e, t) => {
-        let r = w.ZP.getEmojiUnavailableReason({
+        let r = D.ZP.getEmojiUnavailableReason({
           emoji: t,
           channel: n,
           intention: a,
@@ -685,17 +685,17 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
 }
 W(eF, "displayName", "EmojiStore"), W(eF, "persistKey", "EmojiStoreV2"), W(eF, "migrations", [e => K({}, e)]);
 let eV = new eF(Chunk570140.Z, {
-  LOGOUT: eS,
+  LOGOUT: eT,
   BACKGROUND_SYNC: eA,
   CONNECTION_OPEN: eI,
-  OVERLAY_INITIALIZE: eT,
+  OVERLAY_INITIALIZE: eS,
   CACHED_EMOJIS_LOADED: ef,
-  GUILD_MEMBER_UPDATE: eD,
+  GUILD_MEMBER_UPDATE: ew,
   GUILD_CREATE: eC,
   GUILD_UPDATE: eN,
   GUILD_EMOJIS_UPDATE: eR,
   GUILD_DELETE: eP,
-  MESSAGE_REACTION_ADD: ew,
+  MESSAGE_REACTION_ADD: eD,
   EMOJI_TRACK_USAGE: ek,
   USER_SETTINGS_PROTO_UPDATE: eM,
   GUILD_ROLE_CREATE: eG,

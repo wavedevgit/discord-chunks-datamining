@@ -68,8 +68,8 @@ function I(e) {
     return null == (t = p.Z.settings.appearance) || null == (e = t.clientThemeSettings) ? true : e.customUserThemeSettings
   }), {
     shouldShowNewBadge: I,
-    markNewBadgeAsDismissed: T
-  } = (0, g.w)(), S = (0, _.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), A = (0, d.ZP)(), C = (0, u.wjy)(A) ? O.darkOverlay : O.lightOverlay, N = null != a && null != a.colors && a.colors.length > 0, R = (0, l.e7)([h.Z], () => h.Z.getSavedCustomTheme()), P = N, D = N || null != R, w = i.useMemo(() => {
+    markNewBadgeAsDismissed: S
+  } = (0, g.w)(), T = (0, _.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), A = (0, d.ZP)(), C = (0, u.wjy)(A) ? O.darkOverlay : O.lightOverlay, N = null != a && null != a.colors && a.colors.length > 0, R = (0, l.e7)([h.Z], () => h.Z.getSavedCustomTheme()), P = N, w = N || null != R, D = i.useMemo(() => {
     let e, t;
     if (N) e = a.colors, t = a.gradientAngle;
     else {
@@ -80,9 +80,9 @@ function I(e) {
     return e.length > 1 && (n = "linear-gradient(".concat(t, "deg, ").concat(e.join(", "), ")")), {
       background: "var(--background-gradient), ".concat(n)
     }
-  }, [N, a, R]), L = (0, f.Sl)(E.Il.WHITE).hex, x = (0, f.Sl)(E.Il.RED_430).hex, M = D ? L : true, k = i.useCallback(() => {
-    I && T(), null == n || n()
-  }, [I, T, n]);
+  }, [N, a, R]), L = (0, f.Sl)(E.Il.WHITE).hex, x = (0, f.Sl)(E.Il.RED_430).hex, M = w ? L : true, k = i.useCallback(() => {
+    I && S(), null == n || n()
+  }, [I, S, n]);
   return (0, r.jsxs)("div", {
     className: O.badgeContainer,
     children: [(0, r.jsxs)(m.S4, {
@@ -90,11 +90,11 @@ function I(e) {
       isSelected: false,
       showSelectionCircle: P,
       name: y.intl.string(b.default.KSBBpC),
-      className: o()(O.container, D && C, t && O.disabled),
+      className: o()(O.container, w && C, t && O.disabled),
       showBadge: false,
       showLockedBadge: false,
-      style: w,
-      children: [!S && !D && (0, r.jsx)(v, {}), (0, r.jsx)("div", {
+      style: D,
+      children: [!T && !w && (0, r.jsx)(v, {}), (0, r.jsx)("div", {
         className: O.borderOverlay
       }), (0, r.jsx)(s.V3v, {
         color: M,

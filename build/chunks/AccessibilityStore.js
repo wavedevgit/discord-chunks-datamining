@@ -116,13 +116,13 @@ function I(e) {
   return d.yqN.FONT_SIZES.indexOf(e) >= 0 ? e : d.yqN.FONT_SIZE_DEFAULT
 }
 
-function T(e) {
+function S(e) {
   let t = I(e.fontSize);
   if (t > d.yqN.FONT_SIZE_MAX || t < d.yqN.FONT_SIZE_MIN || O.fontSize === t) returnfalse;
   (O = p({}, O)).fontSize = t
 }
 
-function S(e) {
+function T(e) {
   if (e.zoom < d.yqN.ZOOM_MIN || e.zoom > d.yqN.ZOOM_MAX || O.zoom === e.zoom) returnfalse;
   (O = p({}, O)).zoom = e.zoom, u.Z.setZoomFactor(O.zoom)
 }
@@ -152,11 +152,11 @@ function P() {
   (O = p({}, O)).lowContrastMode = !O.lowContrastMode
 }
 
-function D(e) {
+function w(e) {
   O.syncForcedColors = e.syncForcedColors
 }
 
-function w(e) {
+function D(e) {
   (O = p({}, O)).saturation = e.saturation
 }
 
@@ -457,21 +457,21 @@ _(Q, "displayName", "AccessibilityStore"), _(Q, "persistKey", "AccessibilityStor
   enableCustomCursor: true
 })]);
 let J = new Q(Chunk570140.Z, {
-  ACCESSIBILITY_SET_FONT_SIZE: T,
-  ACCESSIBILITY_SET_ZOOM: S,
+  ACCESSIBILITY_SET_FONT_SIZE: S,
+  ACCESSIBILITY_SET_ZOOM: T,
   ACCESSIBILITY_RESET_TO_DEFAULT: A,
   ACCESSIBILITY_KEYBOARD_MODE_ENABLE: C,
   ACCESSIBILITY_KEYBOARD_MODE_DISABLE: N,
   ACCESSIBILITY_COLORBLIND_TOGGLE: R,
   ACCESSIBILITY_LOW_CONTRAST_TOGGLE: P,
-  ACCESSIBILITY_SET_SATURATION: w,
+  ACCESSIBILITY_SET_SATURATION: D,
   ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: L,
   ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: H,
   ACCESSIBILITY_SYSTEM_PREFERS_CONTRAST_CHANGED: Z,
   ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED: U,
   ACCESSIBILITY_SYSTEM_PREFERS_CROSSFADES_CHANGED: G,
   ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION: B,
-  ACCESSIBILITY_SET_SYNC_FORCED_COLORS: D,
+  ACCESSIBILITY_SET_SYNC_FORCED_COLORS: w,
   ACCESSIBILITY_SET_ALWAYS_SHOW_LINK_DECORATIONS: F,
   ACCESSIBILITY_SET_ENABLE_CUSTOM_CURSOR: V,
   ACCESSIBILITY_SET_ROLE_STYLE: x,

@@ -24,17 +24,17 @@ let m = function(e) {
     loading: E,
     isRefreshing: O,
     handleOnRefresh: I,
-    viewabilityConfigCallbackPairs: v
+    viewabilityConfigCallbackPairs: y
   } = (0, u.a)({
     showDot: m,
     notificationItem: n
-  }), y = (0, o.G)();
+  }), v = (0, o.G)();
   i.useEffect(() => () => {
-    y()
-  }, [y]);
+    v()
+  }, [v]);
   let C = (0, l.e7)([a.Z], () => a.Z.hasNewContent(), []),
     S = (0, l.e7)([a.Z], () => a.Z.isHydrating(), []),
-    T = i.useMemo(() => v[0].onViewableItemsChanged, [v]),
+    T = i.useMemo(() => y[0].onViewableItemsChanged, [y]),
     {
       registerItemRef: N
     } = (0, p.m)(b, T, t),

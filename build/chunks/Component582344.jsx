@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 582344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -24,10 +24,10 @@ function h() {
     dailyCapReached: Chunk68985.Z.hasUserHitDCCap(),
     dailyCapOverridden: Chunk68985.Z.dailyCapOverridden,
     newUserMinAgeRequiredOverridden: Chunk68985.Z.newUserMinAgeRequiredOverridden
-  })), [h, x] = Chunk647438.useState(""), [f, g] = Chunk647438.useState(20), b = Chunk647438.useMemo(() => Object.keys(Chunk704215.z).filter(e => e.toLowerCase().includes(h.toLowerCase())).reverse(), [h]), v = Chunk647438.useCallback(e => {
+  })), [h, x] = Chunk647438.useState(""), [g, f] = Chunk647438.useState(20), b = Chunk647438.useMemo(() => Object.keys(Chunk704215.z).filter(e => e.toLowerCase().includes(h.toLowerCase())).reverse(), [h]), v = Chunk647438.useCallback(e => {
     let t = e.currentTarget;
-    t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && f < b.length && g(e => e + 100)
-  }, [f, b.length]);
+    t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && g < b.length && f(e => e + 100)
+  }, [g, b.length]);
   return (0, Chunk951288.jsx)(Chunk481060.h21, {
     onScroll: v,
     children: (0, Chunk951288.jsxs)("div", {
@@ -63,7 +63,7 @@ function h() {
           onChange: x,
           onClear: () => x("")
         }), (0, Chunk951288.jsx)(Chunk699867.Z, {
-          items: b.slice(0, f)
+          items: b.slice(0, g)
         })]
       })]
     })

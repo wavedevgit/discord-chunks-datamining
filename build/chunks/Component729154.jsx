@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 729154, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   x: () => x
@@ -26,14 +26,14 @@ let x = e => {
       renewalInvoice: m,
       renewalInvoiceDetails: p,
       errorOnCancel: x,
-      errorOnRedeem: g,
+      errorOnRedeem: f,
       setActiveStep: b,
       activeStep: v
     } = e, {
       analyticsLocations: j
-    } = (0, i.ZP)(l.Z.USER_SETTINGS), [_, y] = r.useState(f(v));
+    } = (0, i.ZP)(l.Z.USER_SETTINGS), [_, y] = r.useState(g(v));
     return (0, r.useEffect)(() => {
-      y(f(v))
+      y(g(v))
     }, [v]), (0, a.jsx)(u.CancellationContext.Provider, {
       value: {
         setStep: b,
@@ -60,7 +60,7 @@ let x = e => {
         }),
         applyOffer: () => new Promise((e, t) => {
           setTimeout(() => {
-            if (g) return void t();
+            if (f) return void t();
             e()
           }, 1e3)
         }),
@@ -70,7 +70,7 @@ let x = e => {
       children: _
     })
   },
-  f = e => {
+  g = e => {
     switch (e) {
       case d.R.DISCOUNT_APPLIED:
         return (0, a.jsx)(c.i, {});

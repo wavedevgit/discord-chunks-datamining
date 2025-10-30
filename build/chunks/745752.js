@@ -94,9 +94,9 @@ async function O(e) {
   if (null == a || !a.features.has(_.GuildFeatures.GUILD_ONBOARDING)) return Promise.resolve();
   let c = d.Z.shouldFetchPrompts(e),
     f = d.Z.getOnboardingPrompts(e);
-  if (!c && f.length > 0) return f.every(e => !e.inOnboarding) ? T(e) : i || v(e), Promise.resolve();
+  if (!c && f.length > 0) return f.every(e => !e.inOnboarding) ? S(e) : i || v(e), Promise.resolve();
   let h = await y(e);
-  return Array.isArray(h) && h.every(e => !e.inOnboarding) ? (T(e), Promise.resolve()) : (i || v(e), h)
+  return Array.isArray(h) && h.every(e => !e.inOnboarding) ? (S(e), Promise.resolve()) : (i || v(e), h)
 }
 
 function v(e) {
@@ -107,7 +107,7 @@ function v(e) {
 }
 let I = false;
 
-function T(e) {
+function S(e) {
   c.default.track(_.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(m({}, (0, a.hH)(e)), {
     step: I,
     required: true

@@ -28,12 +28,12 @@ let u = (e, t, n) => {
     } = e, {
       joinedEmojiSourceGuildRecord: s,
       emoji: d
-    } = (0, i.cj)([o.ZP, a.Z], () => u(o.ZP, a.Z, t)), f = null != s, _ = null != s && s.features.has(c.GuildFeatures.DISCOVERABLE), p = (!f || _) && null != t, [h, m] = r.useState(p), [g, E] = r.useState(null), b = null != s ? l.JO.createFromGuildRecord(s) : null, [y, O] = r.useState(b), [v, I] = r.useState(null), T = r.useRef(n);
+    } = (0, i.cj)([o.ZP, a.Z], () => u(o.ZP, a.Z, t)), f = null != s, _ = null != s && s.features.has(c.GuildFeatures.DISCOVERABLE), p = (!f || _) && null != t, [h, m] = r.useState(p), [g, E] = r.useState(null), b = null != s ? l.JO.createFromGuildRecord(s) : null, [y, O] = r.useState(b), [v, I] = r.useState(null), S = r.useRef(n);
     return r.useEffect(() => {
-      T.current = n
+      S.current = n
     }), r.useEffect(() => {
       var e, n;
-      null == (e = T.current) || e.call(T);
+      null == (e = S.current) || e.call(S);
       let r = async () => {
         var e;
         let n = null != t ? await (0, l.Fi)(t) : null;
@@ -44,10 +44,10 @@ let u = (e, t, n) => {
           case l.w6.GUILD:
             O(n.guild)
         }
-        m(false), null == (e = T.current) || e.call(T)
+        m(false), null == (e = S.current) || e.call(S)
       };
       if (p) return void r();
-      null == (n = T.current) || n.call(T)
+      null == (n = S.current) || n.call(S)
     }, [t, p]), {
       expressionSourceGuild: y,
       expressionSourceApplication: v,

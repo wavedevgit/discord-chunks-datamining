@@ -37,7 +37,7 @@ function g(e) {
   } = e, {
     trackView: n,
     trackClick: r
-  } = (0, s.R)(d.n0.KeybindIndicatorsNotification, {
+  } = (0, a.R)(d.n0.KeybindIndicatorsNotification, {
     notif_type: d.n0.KeybindIndicatorsNotification
   });
   return {

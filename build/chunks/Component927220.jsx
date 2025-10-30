@@ -31,9 +31,9 @@ let T = (0, Chunk112724.Z)(function(e) {
     width: t
   } = e, n = (0, _.b5)("ICYMIPage", false);
   i.useEffect(() => {
-    n || (0, s.uL)(v.Z5c.ME)
+    n || (0, s.uL)(y.Z5c.ME)
   }, [n]), i.useLayoutEffect(() => {
-    n && u.Y(v.Z5c.ICYMI)
+    n && u.Y(y.Z5c.ICYMI)
   }, [n]), (0, p.ZP)(() => {
     n && (0, h.e)("icymi")
   });
@@ -41,7 +41,7 @@ let T = (0, Chunk112724.Z)(function(e) {
     d = (0, o.e7)([b.Z], () => b.Z.isRefreshing()),
     T = i.useRef(null);
   (0, f.Tt)({
-    location: y.intl.string(y.t["jnXV/V"])
+    location: v.intl.string(v.t["jnXV/V"])
   });
   let [N, j] = i.useState(false);
   i.useEffect(() => {
@@ -63,9 +63,9 @@ let T = (0, Chunk112724.Z)(function(e) {
       location: "icymi page"
     }).enabled,
     A = i.useCallback(async e => {
-      e.metaKey && x ? await (0, E.ye)(v.qAy.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON) : await P()
+      e.metaKey && x ? await (0, E.ye)(y.qAy.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON) : await P()
     }, [P, x]),
-    Z = N && x ? y.intl.string(y.t.YplSn2) : y.intl.string(y.t.wzzjk9);
+    Z = N && x ? v.intl.string(v.t.YplSn2) : v.intl.string(v.t.wzzjk9);
   return n ? (0, r.jsxs)("div", {
     className: a()(S.chat, C.container),
     children: [(0, r.jsx)(c.f6W, {
@@ -83,11 +83,11 @@ let T = (0, Chunk112724.Z)(function(e) {
           icon: c.qOE,
           "aria-hidden": true
         }), (0, r.jsx)(m.Z.Title, {
-          children: y.intl.string(y.t["jnXV/V"])
+          children: v.intl.string(v.t["jnXV/V"])
         }), (0, r.jsx)(m.Z.Title, {
           children: (0, r.jsx)("p", {
             className: C.preAlphaText,
-            children: y.intl.string(y.t.Ac2OZA)
+            children: v.intl.string(v.t.Ac2OZA)
           })
         })]
       })

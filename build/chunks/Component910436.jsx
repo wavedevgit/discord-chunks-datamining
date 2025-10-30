@@ -28,8 +28,8 @@ function I(e) {
     party: t,
     onChannelContextMenu: n,
     quest: I
-  } = e, v = (0, b.L)(), {
-    voiceChannels: y,
+  } = e, y = (0, b.L)(), {
+    voiceChannels: v,
     currentActivities: C,
     partiedMembers: S,
     applicationStreams: T,
@@ -44,7 +44,7 @@ function I(e) {
   for (let {
       activity: e
     }
-    of(y.length > 0 && y.forEach(e => {
+    of(v.length > 0 && v.forEach(e => {
       let {
         members: t,
         channel: i,
@@ -71,7 +71,7 @@ function I(e) {
         x(t);
         break
       }
-    } return T.length > 0 && v && T.forEach(e => {
+    } return T.length > 0 && y && T.forEach(e => {
     let {
       stream: t,
       streamUser: n,
@@ -87,7 +87,7 @@ function I(e) {
       }
     }, "application-stream-".concat(t.ownerId)))
   }), C.forEach((e, t) => {
-    var n, i, l, p, g, b, v, T, P;
+    var n, i, l, p, g, b, y, T, P;
     let {
       activity: A,
       game: Z,
@@ -109,7 +109,7 @@ function I(e) {
       }, "game-".concat(null != (n = A.session_id) ? n : t, "-").concat(null != (i = A.application_id) ? i : t)));
       else if ((0, s.Z)(A)) {
       let e = new Set(w.map(e => e.id)),
-        t = null == (l = y.find(e => null != e)) ? true : l.channel;
+        t = null == (l = v.find(e => null != e)) ? true : l.channel;
       null != t && x((0, r.jsx)(_.Z.EmbeddedActivitySection, {
         activity: A,
         participants: e,
@@ -124,7 +124,7 @@ function I(e) {
       user: L
     }, "rich-presence-".concat(null != (g = A.session_id) ? g : t, "-").concat(L.id)));
     else if ((0, u.Z)(A)) {
-      let e = y.length > 0 && y[0].members.length > 1,
+      let e = v.length > 0 && v[0].members.length > 1,
         n = w.length > 1;
       x((0, r.jsx)(_.Z.TwitchSection, {
         guildId: null == N ? true : N.id,
@@ -142,7 +142,7 @@ function I(e) {
       },
       getAssetImage: h.xF,
       members: w
-    }, "spotify-".concat(null != (v = A.session_id) ? v : t, "-").concat(L.id))) : (null != A.assets || (0, a.Z)(A)) && x((0, r.jsx)(_.Z.RichPresenceSection, {
+    }, "spotify-".concat(null != (y = A.session_id) ? y : t, "-").concat(L.id))) : (null != A.assets || (0, a.Z)(A)) && x((0, r.jsx)(_.Z.RichPresenceSection, {
       activity: A,
       getAssetImage: h.xF,
       user: L

@@ -86,8 +86,8 @@ let E = Object.fromEntries(Object.keys(Chunk692547.Z.colors).map(e => [l()(e), e
       O = m(e, ["variant", "tag", "selectable", "className", "lineClamp", "color", "tabularNumbers", "scaleFontToUserSetting"]);
     let v = s,
       I = "",
-      T = {};
-    if (null != p && (1 === p ? I = u.lineClamp1 : (I = u.lineClamp2Plus, T = {
+      S = {};
+    if (null != p && (1 === p ? I = u.lineClamp1 : (I = u.lineClamp2Plus, S = {
         lineClamp: p,
         WebkitLineClamp: p
       })), true !== g) switch (g) {
@@ -103,9 +103,9 @@ let E = Object.fromEntries(Object.keys(Chunk692547.Z.colors).map(e => [l()(e), e
       default:
         n = null == (i = c.Z.colors[E[g]]) ? true : i.css
     }
-    let S = _({
+    let T = _({
       color: n
-    }, T, O.style);
+    }, S, O.style);
     return (0, r.jsx)(v, h(_({
       ref: t,
       className: o()({
@@ -115,7 +115,7 @@ let E = Object.fromEntries(Object.keys(Chunk692547.Z.colors).map(e => [l()(e), e
         [d.fontScaling]: y
       }, I, d[a], f)
     }, O), {
-      style: Object.values(S).filter(Boolean).length > 0 ? S : true,
+      style: Object.values(T).filter(Boolean).length > 0 ? T : true,
       "data-text-variant": a
     }))
   })

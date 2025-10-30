@@ -23,7 +23,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,7 +39,7 @@ function C(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
@@ -91,7 +91,7 @@ class P extends Chunk81825.Z {
   }
   constructor(e) {
     var t;
-    super(), y(this, "key", true), y(this, "userId", true), y(this, "type", true), y(this, "status", true), y(this, "isMobile", true), y(this, "activities", true), y(this, "applicationStream", true), y(this, "user", true), y(this, "usernameLower", true), y(this, "mutualGuildsLength", true), y(this, "mutualGuilds", true), y(this, "nickname", true), y(this, "spam", true), y(this, "giftIntentType", true), y(this, "ignoredUser", true), y(this, "applicationId", true), y(this, "isGameRelationship", true), this.key = e.key, this.userId = e.userId, this.type = e.type, this.status = e.status, this.activities = e.activities, this.applicationStream = e.applicationStream, this.user = e.user, this.isMobile = e.isMobile, this.usernameLower = e.usernameLower, this.mutualGuildsLength = e.mutualGuildsLength, this.mutualGuilds = e.mutualGuilds, this.nickname = e.nickname, this.spam = e.spam, this.giftIntentType = e.giftIntentType, this.ignoredUser = e.ignoredUser, this.applicationId = e.applicationId, this.isGameRelationship = null != (t = e.isGameRelationship) && t
+    super(), v(this, "key", true), v(this, "userId", true), v(this, "type", true), v(this, "status", true), v(this, "isMobile", true), v(this, "activities", true), v(this, "applicationStream", true), v(this, "user", true), v(this, "usernameLower", true), v(this, "mutualGuildsLength", true), v(this, "mutualGuilds", true), v(this, "nickname", true), v(this, "spam", true), v(this, "giftIntentType", true), v(this, "ignoredUser", true), v(this, "applicationId", true), v(this, "isGameRelationship", true), this.key = e.key, this.userId = e.userId, this.type = e.type, this.status = e.status, this.activities = e.activities, this.applicationStream = e.applicationStream, this.user = e.user, this.isMobile = e.isMobile, this.usernameLower = e.usernameLower, this.mutualGuildsLength = e.mutualGuildsLength, this.mutualGuilds = e.mutualGuilds, this.nickname = e.nickname, this.spam = e.spam, this.giftIntentType = e.giftIntentType, this.ignoredUser = e.ignoredUser, this.applicationId = e.applicationId, this.isGameRelationship = null != (t = e.isGameRelationship) && t
   }
 }
 class x {
@@ -109,7 +109,7 @@ class x {
           ignoredUser: E.Z.isIgnored(n),
           giftIntentType: r === I.OGo.FRIEND && m.Z.isTopAffinityFriendAnniversary({
             userId: n
-          }) ? v.hX.FRIEND_ANNIVERSARY : true,
+          }) ? y.hX.FRIEND_ANNIVERSARY : true,
           applicationId: E.Z.getOriginApplicationId(n)
         }))
       }),
@@ -193,7 +193,7 @@ class x {
     }), module
   }
   constructor(e = []) {
-    y(this, "_rows", true), this._rows = e
+    v(this, "_rows", true), this._rows = e
   }
 }
 let A = true,
@@ -235,7 +235,7 @@ class B extends(r = Chunk442837.ZP.Store) {
     }
   }
 }
-y(B, "displayName", "FriendsStore");
+v(B, "displayName", "FriendsStore");
 let H = new B(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     k()

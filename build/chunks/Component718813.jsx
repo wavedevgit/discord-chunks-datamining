@@ -219,7 +219,7 @@ class k extends(r = Chunk647438.PureComponent) {
           case O.S9g.COMPONENT_PLAYGROUND:
             return "Component Playground";
           case O.S9g.CHECKPOINT:
-            return I.intl.string(v.default["CdU/PF"]);
+            return I.intl.string(y.default["CdU/PF"]);
           default:
             return ""
         }
@@ -305,7 +305,7 @@ class U extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsx)(Chunk481060.f6W, {
       theme: this.props.sidebarTheme,
       children: e => (0, i.jsx)("div", {
-        className: s()(y.bg, e)
+        className: s()(v.bg, e)
       })
     })
   }

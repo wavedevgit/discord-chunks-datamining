@@ -42,18 +42,18 @@ function v() {
   let v = Chunk430824.Z.getGuild(y.getGuildId());
   if (null == v || !v.features.has(Chunk981631.GuildFeatures.DISCOVERABLE)) return null;
   let I = (0, Chunk750154.Lw)(y, Chunk19780),
-    T = (null == O || null == (e = O.party) ? true : module.id) === I ? O : null,
-    S = Chunk565799.Z.getMutableParticipants(y.id, Chunk501655.pV.SPEAKER),
-    A = S.filter(e => e.type === p.Ui.STREAM).length,
-    C = S.length - A,
+    S = (null == O || null == (e = O.party) ? true : module.id) === I ? O : null,
+    T = Chunk565799.Z.getMutableParticipants(y.id, Chunk501655.pV.SPEAKER),
+    A = T.filter(e => e.type === p.Ui.STREAM).length,
+    C = T.length - A,
     N = Chunk565799.Z.getParticipantCount(Chunk570140) - A,
-    R = (null == T || null == (t = T.party) ? true : exports.size) != null ? T.party.size[1] : 0;
+    R = (null == S || null == (t = S.party) ? true : exports.size) != null ? S.party.size[1] : 0;
   return {
     application_id: Chunk157925.gD,
     name: null != (i = null != (r = Chunk19780.topic) ? r : y.topic) ? Chunk348327 : y.name,
     type: (0, Chunk368442.xJ)(y.id) ? Chunk981631.IIU.WATCHING : Chunk981631.IIU.LISTENING,
     timestamps: {
-      start: null != (a = null == T || null == (n = T.timestamps) ? true : require.start) ? a : new Date().getTime()
+      start: null != (a = null == S || null == (n = S.timestamps) ? true : require.start) ? a : new Date().getTime()
     },
     assets: {
       small_image: null != (o = v.icon) ? Chunk442837 : true,
@@ -71,7 +71,7 @@ function I() {
   return !a()(module, O) && (O = module, true)
 }
 
-function T(e) {
+function S(e) {
   let {
     voiceStates: t
   } = e;
@@ -80,7 +80,7 @@ function T(e) {
   null != n && null != t.find(e => e.channelId === n.channelId) && I()
 }
 
-function S(e) {
+function T(e) {
   var t, n, r;
   let {
     state: i
@@ -102,6 +102,6 @@ let C = new A(Chunk570140.Z, {
   STAGE_INSTANCE_UPDATE: I,
   STAGE_INSTANCE_DELETE: I,
   VOICE_CHANNEL_SELECT: I,
-  RTC_CONNECTION_STATE: S,
-  VOICE_STATE_UPDATES: T
+  RTC_CONNECTION_STATE: T,
+  VOICE_STATE_UPDATES: S
 })

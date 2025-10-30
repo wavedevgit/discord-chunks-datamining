@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk569319 = require("./569319.js");
 
-function w(e) {
+function D(e) {
   let {
     premiumSubscription: t,
     fractionalPremiumInfo: n,
@@ -47,7 +47,7 @@ function w(e) {
   });
   t.isPurchasedExternally && null != t.paymentGateway ? c = P.intl.format(P.t.HbpFLg, {
     paymentGatewayName: R.Vz[t.paymentGateway],
-    subscriptionManagementLink: (0, S.JE)(t.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
+    subscriptionManagementLink: (0, T.JE)(t.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
   }) : t.isPausedForFractionalPremium ? c = P.intl.format(P.t.Hzqe6y, {
     expirationDate: n.endsAt.toDate()
   }) : i && (c = P.intl.format(P.t.gXSnul, {
@@ -70,9 +70,9 @@ function w(e) {
     title: u,
     actions: d,
     children: (0, r.jsxs)("div", {
-      className: D.body,
+      className: w.body,
       children: [(0, r.jsx)("div", {
-        className: D.cancelImage
+        className: w.cancelImage
       }), (0, r.jsx)("div", {
         children: c
       })]
@@ -82,19 +82,19 @@ function w(e) {
 
 function L() {
   let e = Object.values(Chunk314884.Z.boostSlots),
-    t = o().sortBy(module.filter(e => !(0, T.tl)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0];
+    t = o().sortBy(module.filter(e => !(0, S.tl)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0];
   return null != exports ? exports.id : null
 }
 async function x(e, t, n, r) {
   let i = null != r ? r : L();
   if (null == i) throw Error("No slot to cancel");
-  let a = (0, S.MY)(e, t);
+  let a = (0, T.MY)(e, t);
   await (0, d.pD)(i), await (0, u.Mg)(e, {
     items: a
   }, {
     amount: 0,
     currency: e.currency
-  }, (0, S.UX)(a, e.currency, e.paymentSourceId), n)
+  }, (0, T.UX)(a, e.currency, e.paymentSourceId), n)
 }
 
 function M(e) {
@@ -106,7 +106,7 @@ function M(e) {
     onBack: d,
     onNext: p,
     onClose: O
-  } = e, [I, T] = i.useState(false), [R, w] = i.useState(null), [L, M] = i.useMemo(() => {
+  } = e, [I, S] = i.useState(false), [R, D] = i.useState(null), [L, M] = i.useMemo(() => {
     try {
       return [(0, g.g)(o, false), false]
     } catch (e) {
@@ -127,7 +127,7 @@ function M(e) {
     let e = v.Z.get(o.planId);
     return {
       premiumSubscriptionPlan: e,
-      premiumGuildPlan: null != e ? v.Z.getForSkuAndInterval((0, S.Wz)(N.Si.GUILD), e.interval, e.intervalCount) : null
+      premiumGuildPlan: null != e ? v.Z.getForSkuAndInterval((0, T.Wz)(N.Si.GUILD), e.interval, e.intervalCount) : null
     }
   }), {
     analyticsLocations: G
@@ -138,7 +138,7 @@ function M(e) {
     paymentSourceId: o.paymentSourceId,
     analyticsLocations: G,
     analyticsLocation: f.Z.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW
-  }), Z = null != U ? (0, S.Zx)(o, null != (a = null == (t = L[0]) ? true : t.quantity) ? a : 0, U.id) : null, [F] = (0, m.ED)({
+  }), Z = null != U ? (0, T.Zx)(o, null != (a = null == (t = L[0]) ? true : t.quantity) ? a : 0, U.id) : null, [F] = (0, m.ED)({
     subscriptionId: o.id,
     items: Z,
     renewal: true,
@@ -179,9 +179,9 @@ function M(e) {
       onClose: O
     }), (0, r.jsxs)(c.hzk, {
       "data-migration-pending": true,
-      className: D.body,
+      className: w.body,
       children: [null !== R && (0, r.jsx)("div", {
-        className: D.error,
+        className: w.error,
         children: (0, r.jsx)(c.M14, {
           type: "critical",
           children: R
@@ -189,7 +189,7 @@ function M(e) {
       }), (0, r.jsx)("div", {
         children: z
       }), (0, r.jsxs)(E.aO, {
-        className: D.invoiceTable,
+        className: w.invoiceTable,
         children: [(0, r.jsx)(E.Z9, {
           children: P.intl.string(P.t.iqhIp4)
         }), (0, r.jsx)(E.B1, {
@@ -197,7 +197,7 @@ function M(e) {
             subscriptionCount: 1
           }),
           value: (0, A.og)((0, A.T4)(Y, o.currency), W, K),
-          className: D.invoiceCancelRow
+          className: w.invoiceCancelRow
         }), null != Z && Z.length > 0 ? (0, r.jsxs)("div", {
           children: [(0, r.jsx)(E.UN, {}), (0, r.jsx)(y.nd, {
             premiumSubscription: o,
@@ -216,9 +216,9 @@ function M(e) {
         disabled: I,
         onClick: async () => {
           try {
-            T(true), w(null), await x(o, L, G, s), p()
+            S(true), D(null), await x(o, L, G, s), p()
           } catch (e) {
-            w(P.intl.string(P.t["5mlOCW"])), T(false)
+            D(P.intl.string(P.t["5mlOCW"])), S(false)
           }
         }
       }), (0, r.jsx)(b.Z, {
@@ -248,9 +248,9 @@ function k(e) {
     title: P.intl.string(P.t["fZzV/B"]),
     actions: l,
     children: (0, r.jsxs)("div", {
-      className: D.body,
+      className: w.body,
       children: [(0, r.jsx)("div", {
-        className: D.cancelImage
+        className: w.cancelImage
       }), (0, r.jsx)("div", {
         children: P.intl.format(P.t["H+z0ns"], {
           endDate: o
@@ -281,7 +281,7 @@ function j(e) {
   });
   else switch (h) {
     case 1:
-      t = (0, r.jsx)(w, {
+      t = (0, r.jsx)(D, {
         premiumSubscription: s,
         fractionalPremiumInfo: d,
         isInventory: null == n.premiumGuildSubscription,

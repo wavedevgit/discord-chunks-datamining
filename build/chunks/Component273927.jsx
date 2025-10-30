@@ -2,7 +2,7 @@
 /** chunk id: 273927, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  GF: () => S,
+  GF: () => T,
   ZP: () => C,
   yo: () => A
 }), require("./388685.js");
@@ -97,7 +97,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     setting: t,
     userIds: n,
@@ -136,9 +136,9 @@ function T(e) {
   })
 }
 
-function S() {
+function T() {
   let e = (0, Chunk442837.Wu)([Chunk699516.Z], () => Chunk699516.Z.getBlockedIDs());
-  return (0, Chunk951288.jsx)(T, {
+  return (0, Chunk951288.jsx)(S, {
     setting: Chunk726985.s6.BLOCKED_USERS,
     userIds: module,
     listType: "blocked"
@@ -147,7 +147,7 @@ function S() {
 
 function A() {
   let e = (0, Chunk442837.Wu)([Chunk699516.Z], () => Chunk699516.Z.getIgnoredIDs());
-  return (0, Chunk951288.jsx)(T, {
+  return (0, Chunk951288.jsx)(S, {
     setting: Chunk726985.s6.IGNORED_USERS,
     userIds: module,
     listType: "ignored"
@@ -164,6 +164,6 @@ function C() {
       description: Chunk388032.intl.format(Chunk388032.t["0aNQo9"], {
         helpArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
       })
-    }), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)(A, {})]
+    }), (0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)(A, {})]
   })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 790527, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -63,11 +63,11 @@ function P(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   var t, n, a, {
       title: R,
-      type: D,
-      guildBoostProps: w,
+      type: w,
+      guildBoostProps: D,
       analyticsSource: L,
       analyticsLocation: x,
       body: M,
@@ -105,7 +105,7 @@ function D(e) {
       footerClassName: e_
     } = e,
     ep = N(e, ["title", "type", "guildBoostProps", "analyticsSource", "analyticsLocation", "body", "context", "glowUp", "modalClassName", "modalContentClassName", "artContainerClassName", "artClassName", "headerClassName", "bodyClassName", "transitionState", "onClose", "onSubscribeClick", "onSubscribeFinish", "onSecondaryClick", "secondaryCTA", "secondaryCTAClassName", "subscribeButtonText", "showNewBadge", "showBetaBadge", "enableArtBoxShadow", "subscriptionTier", "isLoading", "hideBackButton", "backButtonText", "showEnhancedUpsell", "useSubscribeButtonGradient", "subscribeButtonClassname", "hidePremiumOfferUpsell", "children", "LeadingComponent", "backgroundElements", "smallText", "footerClassName"]);
-  let eh = null != w,
+  let eh = null != D,
     em = (0, b.N)(),
     eg = (0, E.Ng)(),
     eE = !el && ((null == em || null == (t = em.subscription_trial) ? true : t.sku_id) === et || (0, E.Wp)(eg, et)) && !eh,
@@ -116,8 +116,8 @@ function D(e) {
       analyticsLocation: x,
       analyticsLocations: eb,
       analyticsSource: L,
-      guildBoostProps: w,
-      type: D
+      guildBoostProps: D,
+      type: w
     },
     eO = i.useRef(ey);
   i.useEffect(() => {
@@ -131,13 +131,13 @@ function D(e) {
       guildBoostProps: r,
       type: i
     } = eO.current;
-    eh ? h.default.track(T.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
+    eh ? h.default.track(S.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
       type: "".concat(i, " - Tier ").concat(null == r ? true : r.boostedGuildTier),
       guild_id: null == r ? true : r.guild.id,
       channel_id: null == r ? true : r.channelId,
       location: e,
       location_stack: t
-    }) : h.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
+    }) : h.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
       type: i,
       source: n,
       location: e,
@@ -146,18 +146,18 @@ function D(e) {
     })
   }, [eh, et, en]);
   let ev = (0, s.e7)([g.Z], () => g.Z.affinities),
-    eI = ev.length > 1 && P(D),
-    eT = (0, s.e7)([g.Z], () => g.Z.hasFetched);
+    eI = ev.length > 1 && P(w),
+    eS = (0, s.e7)([g.Z], () => g.Z.hasFetched);
   i.useEffect(() => {
-    eT || u.MH()
-  }, [eT]);
-  let eS = () => {
+    eS || u.MH()
+  }, [eS]);
+  let eT = () => {
       if (eh) return (0, r.jsx)(p.Z, {
         analyticsLocation: x,
-        guild: w.guild,
+        guild: D.guild,
         onClose: Y
       });
-      let e = ea ? S.intl.string(S.t.pj0XBN) : true;
+      let e = ea ? T.intl.string(T.t.pj0XBN) : true;
       if (eE)
         if (null != em) {
           var t, n;
@@ -165,7 +165,7 @@ function D(e) {
             intervalType: null == em || null == (t = em.subscription_trial) ? true : t.interval,
             intervalCount: null == em || null == (n = em.subscription_trial) ? true : n.interval_count
           })
-        } else null != eg && (e = S.intl.formatToPlainString(S.t.bkQ4bH, {
+        } else null != eg && (e = T.intl.formatToPlainString(T.t.bkQ4bH, {
           percent: eg.discount.amount
         }));
       return (0, r.jsx)(y.Z, {
@@ -209,7 +209,7 @@ function D(e) {
       className: o()(ea ? A.enhancedContent : A.content, !eE && G),
       children: en ? (0, r.jsx)(c.$jN, {}) : eE ? (0, r.jsx)(O.ZP, {
         onClose: Y,
-        type: D,
+        type: w,
         subscriptionTier: null != (a = null == em || null == (n = em.subscription_trial) ? true : n.sku_id) ? a : I.Si.TIER_2,
         headingText: R,
         context: k,
@@ -257,11 +257,11 @@ function D(e) {
           color: ea ? l.zx.Colors.CUSTOM : l.zx.Colors.PRIMARY,
           look: l.zx.Looks.LINK,
           children: q
-        }) : null, eS()]
+        }) : null, eT()]
       }), !er && !ea && (0, r.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
-        text: null != ei ? ei : S.intl.string(S.t["13/7kX"]),
+        text: null != ei ? ei : T.intl.string(T.t["13/7kX"]),
         onClick: Y
       })]
     }), ea ? (0, r.jsx)(c.olH, {

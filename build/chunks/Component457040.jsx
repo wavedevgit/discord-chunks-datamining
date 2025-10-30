@@ -130,13 +130,13 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       } = null != ep ? ep : {},
       ey = eE.length + eb.length,
       eO = i.useCallback(e => {
-        "" === ea ? (0, S.On)(e) : (0, S.Yk)(e, ea, ey), v(e.sticker, N.V0.STICKER_PICKER)
+        "" === ea ? (0, T.On)(e) : (0, T.Yk)(e, ea, ey), v(e.sticker, N.V0.STICKER_PICKER)
       }, [v, ea, ey]),
       ev = null != eu && eu > V,
       {
         rowCount: eI,
-        rowCountBySection: eT,
-        stickersGrid: eS,
+        rowCountBySection: eS,
+        stickersGrid: eT,
         gutterWidth: eA,
         columnCounts: eC
       } = (0, A.el)({
@@ -167,19 +167,19 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             });
             break;
           case N.al.STICKER:
-            null != e.sticker && (0, T.kl)(e.sticker, e_, c) && eO(e)
+            null != e.sticker && (0, S.kl)(e.sticker, e_, c) && eO(e)
         }
       }, [Z, e_, c, eO]),
       {
         getItemProps: eR,
         getRowProps: eP,
-        gridContainerProps: eD,
-        handleGridContainerKeyDown: ew,
+        gridContainerProps: ew,
+        handleGridContainerKeyDown: eD,
         isUsingKeyboardNavigation: eL
       } = (0, R.t)({
         columnCounts: eC,
         stickersListRef: ee,
-        stickersGrid: eS,
+        stickersGrid: eT,
         onGridItemSelect: eN,
         store: p.ZN,
         setInspectedStickerPosition: p.ZN.setInspectedExpressionPosition,
@@ -196,7 +196,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       let r = 0;
       null != eg && [...eg.values()].forEach(e => {
         r += e.length
-      }), (0, S.ev)({
+      }), (0, T.ev)({
         containerWidth: o,
         favoriteStickers: eh,
         frequentlyUsedStickers: em,
@@ -205,7 +205,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       })
     };
     i.useEffect(() => {
-      "" === es.current && "" !== ea && (0, S.n8)(), es.current = ea
+      "" === es.current && "" !== ea && (0, T.n8)(), es.current = ea
     }, [ea]), i.useEffect(() => {
       0 === ey ? et(ea) : en(ea, ey, eo)
     }, [ea, ey, eo]), i.useLayoutEffect(() => {
@@ -223,11 +223,11 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         className: U.header,
         children: (0, r.jsx)(L.Z, {
           ref: er,
-          onKeyDown: ew,
+          onKeyDown: eD,
           stickersListRef: ee,
           channel: c
         })
-      }), ec ? (0, r.jsx)(D.Z, {
+      }), ec ? (0, r.jsx)(w.Z, {
         className: U.emptyState,
         onClose: G
       }) : (0, r.jsxs)(r.Fragment, {
@@ -235,8 +235,8 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           ref: X,
           className: U.listWrapper,
           id: k.Vr
-        }, eD), {
-          children: null != eu ? (0, r.jsx)(w.Z, {
+        }, ew), {
+          children: null != eu ? (0, r.jsx)(D.Z, {
             ref: ee,
             collapsedStickersCategories: ef,
             filteredStickers: ep,
@@ -247,9 +247,9 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             isUsingKeyboardNavigation: eL,
             onSelectSticker: eO,
             rowCount: eI,
-            rowCountBySection: eT,
+            rowCountBySection: eS,
             stickersCategories: el,
-            stickersGrid: eS,
+            stickersGrid: eT,
             channel: c
           }) : null
         })), (0, r.jsx)(P.Z, {

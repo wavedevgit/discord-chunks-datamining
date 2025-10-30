@@ -32,7 +32,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk504333 = require("./504333.js"),
   Chunk982710 = require("./982710.js");
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,14 +41,14 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -116,7 +116,7 @@ function U(e) {
         var {
           ref: t
         } = e, a = M(e, ["ref"]);
-        return (0, i.jsx)(b.Z, x(w({
+        return (0, i.jsx)(b.Z, x(D({
           className: R.verticalFit,
           currentPageIndex: c,
           onChangePage: E,
@@ -127,7 +127,7 @@ function U(e) {
           children: (0, i.jsx)(f.Den, {
             className: R.bottomDivider,
             ref: l,
-            children: m.map((e, t) => (0, i.jsx)(T.Z, {
+            children: m.map((e, t) => (0, i.jsx)(S.Z, {
               className: s()(R.paymentRow, R.bottomDivider),
               payment: e,
               locale: n,
@@ -201,7 +201,7 @@ class G extends(r = Chunk647438.PureComponent) {
     }) : null
   }
   constructor(...e) {
-    super(...e), D(this, "scrollerRef", a.createRef())
+    super(...e), w(this, "scrollerRef", a.createRef())
   }
 }
 
@@ -229,16 +229,16 @@ function Z(e) {
     })), [t]),
     s = (0, d.Wu)([O.Z], () => O.Z.getPlanIdsForSkus(Array.from(o))),
     l = a.useCallback(() => s.length === r.size, [s, r]),
-    c = a.useMemo(() => t.filter(e => e.currency !== S.pKx.DISCORD_ORB), [t]);
+    c = a.useMemo(() => t.filter(e => e.currency !== T.pKx.DISCORD_ORB), [t]);
   return a.useEffect(() => {
     l() || _.Z.wait(() => {
       o.forEach(e => (0, m.GZ)(e, true, true, true, true))
     })
-  }, [l, o]), (0, i.jsx)(G, x(w({}, e), {
+  }, [l, o]), (0, i.jsx)(G, x(D({}, e), {
     payments: c,
     subscription: n
   }))
 }
-D(G, "defaultProps", {
+w(G, "defaultProps", {
   compactMode: false
 })

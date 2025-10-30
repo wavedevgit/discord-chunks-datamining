@@ -38,7 +38,7 @@ let O = {},
   v = 0,
   I = "47835198259242069";
 
-function T(e, t, n) {
+function S(e, t, n) {
   let r = O[e];
   if (null == r) returnfalse;
   let i = r;
@@ -47,7 +47,7 @@ function T(e, t, n) {
   return a && v++, a
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = O[e];
   return !(null == n || (0, c.d)(n.primaryGuild, t.primary_guild)) && (null == n.primaryGuild || null != t.primary_guild) && (n.primaryGuild = (0, c.l)(t.primary_guild), O[n.id] = n, v++, true)
 }
@@ -103,7 +103,7 @@ function R(e) {
   let t, n = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     r = O[e.id],
     i = true !== e.id && e.id === m.default.getId();
-  if (null == r) true !== (t = (r = new _.Z(e)).premiumType) && i && (r.premiumType = D((0, f.QI)(r), r.premiumType));
+  if (null == r) true !== (t = (r = new _.Z(e)).premiumType) && i && (r.premiumType = w((0, f.QI)(r), r.premiumType));
   else if (n) {
     var a;
     let n = C(e);
@@ -116,18 +116,18 @@ function R(e) {
 function P(e) {
   var t;
   let n = null != (t = e.premium_type) ? t : e.premiumType,
-    r = D((0, f.VR)(e), n);
+    r = w((0, f.VR)(e), n);
   return true !== e.premiumType ? e.premiumType = r : true !== e.premium_type && (e.premium_type = r), e
 }
 
-function D(e, t) {
+function w(e, t) {
   if (!e) return t;
   let n = u.Z.getPremiumTypeOverride(),
     r = u.Z.getPremiumTypeActual();
   return n === b.F_ ? r : n
 }
 
-function w(e, t) {
+function D(e, t) {
   if ((null == e ? true : e.users) == null) returnfalse;
   for (let n in e.users) {
     let r = e.users[n];
@@ -144,7 +144,7 @@ function L(e, t) {
     null == (n = e.clip_participants) || n.forEach(e => {
       N(e) && R(e, t)
     })
-  }), w(e.resolved, t), (null == (o = e.interaction_metadata) ? true : o.user) != null && N(e.interaction_metadata.user) && R(e.interaction_metadata.user, t), null != e.message_snapshots && e.message_snapshots.forEach(e => {
+  }), D(e.resolved, t), (null == (o = e.interaction_metadata) ? true : o.user) != null && N(e.interaction_metadata.user) && R(e.interaction_metadata.user, t), null != e.message_snapshots && e.message_snapshots.forEach(e => {
     var n, r, i, a, o, s, l;
     (null == (r = e.moderator_report) || null == (n = r.reported_member) ? true : n.user) != null && R(e.moderator_report.reported_member.user, t), (null == (a = e.moderator_report) || null == (i = a.reporting_member) ? true : i.user) != null && R(e.moderator_report.reporting_member.user, t), Object.values(null != (l = null == (s = e.message) || null == (o = s.resolved) ? true : o.users) ? l : {}).forEach(e => {
       N(e) && R(e, t)
@@ -162,7 +162,7 @@ function x(e) {
     R(e)
   }), r.forEach(e => {
     e.members.forEach(t => {
-      T(t.user.id, e.id, t.avatar), S(t.user.id, t.user)
+      S(t.user.id, e.id, t.avatar), T(t.user.id, t.user)
     })
   }), null != O[m.default.getId()] && (O[I] = new _.Z({
     id: I,
@@ -180,7 +180,7 @@ function M(e) {
   } = e;
   t.forEach(e => {
     e.members.forEach(t => {
-      T(t.user.id, e.id, t.avatar), S(t.user.id, t.user)
+      S(t.user.id, e.id, t.avatar), T(t.user.id, t.user)
     })
   }), null == n || n.forEach(e => {
     var t;
@@ -324,7 +324,7 @@ function q(e) {
     if (null == t) return;
     R(t);
     let i = null == r ? true : r.avatar;
-    null != i && T(t.id, n, i)
+    null != i && S(t.id, n, i)
   })
 }
 
@@ -418,7 +418,7 @@ function eo(e) {
 
 function es(e) {
   let t = R(e.user);
-  return T(e.user.id, e.guildId, e.avatar) || t
+  return S(e.user.id, e.guildId, e.avatar) || t
 }
 
 function el(e) {
@@ -430,7 +430,7 @@ function el(e) {
       var n;
       let t = null == (n = e.item.member) ? true : n.user;
       if (null == t) continue;
-      S(t.id, t)
+      T(t.id, t)
     } returnfalse
 }
 
@@ -440,14 +440,14 @@ function ec(e) {
   } = e, n = false;
   for (let e of t) n = e.members.reduce((t, n) => {
     let r = R(n.user);
-    return T(n.user.id, e.guildId, n.avatar) || r || t
+    return S(n.user.id, e.guildId, n.avatar) || r || t
   }, false) || n;
   return n
 }
 
 function eu(e) {
   let t = false;
-  for (let n of e.members) R(n.user) && (t = true), T(n.user.id, e.guildId, n.avatar) && (t = true);
+  for (let n of e.members) R(n.user) && (t = true), S(n.user.id, e.guildId, n.avatar) && (t = true);
   return t
 }
 
@@ -497,7 +497,7 @@ function ep(e) {
       avatar: i,
       discriminator: a,
       bot: o
-    }), T(n, t.id, s)
+    }), S(n, t.id, s)
   })
 }
 
@@ -565,7 +565,7 @@ function eI(e) {
   return null != n && (i = i || R(n)), null != r && (i = i || R(r)), i
 }
 
-function eT(e) {
+function eS(e) {
   let {
     users: t,
     familyCenterTeenActivity: n
@@ -575,7 +575,7 @@ function eT(e) {
   return [...t, ...r].reduce((e, t) => R(t) || e, false)
 }
 
-function eS(e) {
+function eT(e) {
   let {
     users: t
   } = e;
@@ -625,14 +625,14 @@ function eP(e) {
   }, false)
 }
 
-function eD(e) {
+function ew(e) {
   let {
     participants: t
   } = e;
   return t.reduce((e, t) => (0, a.Z)(t) && R(t.member.user) || e, false)
 }
 
-function ew(e) {
+function eD(e) {
   let {} = e, t = O[m.default.getId()];
   return null != t && (O[m.default.getId()] = t.set("ageVerificationStatus", i.F$.CLIENT_ONLY_PENDING), true)
 }
@@ -648,7 +648,7 @@ function ex(e) {
   let {
     resolved: t
   } = e;
-  return w(t, true)
+  return D(t, true)
 }
 
 function eM(e) {
@@ -769,15 +769,15 @@ class ek extends Chunk750041.Z {
       LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS: z,
       PASSIVE_UPDATE_V2: eu,
       LOCAL_MESSAGES_LOADED: ed,
-      FAMILY_CENTER_INITIAL_LOAD: eT,
-      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: eS,
+      FAMILY_CENTER_INITIAL_LOAD: eS,
+      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: eT,
       FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: eC,
       FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: eN,
       FAMILY_CENTER_REQUEST_LINK_SUCCESS: eA,
       MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eR,
       LOAD_ICYMI_HYDRATED: eP,
-      EMBEDDED_ACTIVITY_UPDATE_V2: eD,
-      INITIATE_AGE_VERIFICATION: ew,
+      EMBEDDED_ACTIVITY_UPDATE_V2: ew,
+      INITIATE_AGE_VERIFICATION: eD,
       CLOSE_AGE_VERIFICATION_MODAL: eL,
       INTERACTION_MODAL_CREATE: ex
     })

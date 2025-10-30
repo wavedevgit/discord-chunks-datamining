@@ -111,7 +111,7 @@ function x(e) {
     }),
     k = null != (t = O.getGuildId()) ? t : true,
     U = x.getAvatarURL(O.guild_id, 24),
-    G = null != A ? A : v.ZP.getName(x),
+    G = null != A ? A : y.ZP.getName(x),
     {
       icon: B,
       colorize: H,
@@ -186,7 +186,7 @@ function x(e) {
         onContextMenu: z,
         focusProps: j,
         children: (0, r.jsx)(b.Z, {
-          shakeLocation: y.oZ.VOICE_USER,
+          shakeLocation: v.oZ.VOICE_USER,
           isShaking: M,
           children: (0, r.jsx)("div", {
             className: a()(S.avatar, {

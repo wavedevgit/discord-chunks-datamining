@@ -22,10 +22,10 @@ function u(e) {
   let {
     value: t,
     action: n,
-    shouldShow: a
+    shouldShow: s
   } = e, u = (0, r.e7)([l.ZP], () => l.ZP.getKeybindForAction(n, false, true));
-  if (null == u || !a) return null;
-  let h = s.BB(u.shortcut),
+  if (null == u || !s) return null;
+  let h = a.BB(u.shortcut),
     p = d[n],
     f = t ? p.slash : p.default;
   return (0, i.jsxs)("div", {

@@ -132,7 +132,7 @@ let L = function(e) {
           isFocused: L
         }), t);
       case S.pJs.SUGGESTIONS:
-        return (0, r.jsx)(y.Z, P(j({}, n), {
+        return (0, r.jsx)(v.Z, P(j({}, n), {
           isFocused: L
         }), t);
       case S.pJs.ONLINE:
@@ -203,7 +203,7 @@ let L = function(e) {
       }(A, Y[e].length, e);
       return A === S.pJs.PENDING && 0 === e ? (0, r.jsxs)("div", {
         className: N.sectionTitle,
-        children: [(0, r.jsx)(v.Z, {
+        children: [(0, r.jsx)(y.Z, {
           id: t,
           title: n
         }), q && (0, r.jsx)("div", {
@@ -217,7 +217,7 @@ let L = function(e) {
         })]
       }, n) : (0, r.jsx)("div", {
         className: N.sectionTitle,
-        children: (0, r.jsx)(v.Z, {
+        children: (0, r.jsx)(y.Z, {
           id: t,
           title: n
         })

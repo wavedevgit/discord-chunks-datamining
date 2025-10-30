@@ -62,14 +62,14 @@ function P(e, t) {
   return n
 }
 
-function D(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var w = function(e) {
+var D = function(e) {
   return e.PLAY = "play", e.NOW_PLAYING = "now_playing", e.INSTALL = "install", e.UPDATE = "update", e.PAUSED = "paused", e.LOCATE = "locate", e.UNINSTALLING = "uninstalling", e.QUEUED = "queued", e.DOWNLOADING = "downloading", e.UNSUPPORTED_OS = "unsupported_os", e.ADD_TO_LIBRARY = "add_to_library", e.PREORDER_WAIT = "preorder_wait", e
-}(w || {});
+}(D || {});
 let L = Object.freeze({
     [Chunk981631.apO.PLAY]: "play",
     [Chunk981631.apO.INSTALL]: "install",
@@ -88,7 +88,7 @@ function M(e) {
 }
 class k extends(r = Chunk647438.Component) {
   get analyticsLocation() {
-    return D(R({}, this.props.analyticsContext.location), {
+    return w(R({}, this.props.analyticsContext.location), {
       object: Chunk981631.qAy.BUTTON_CTA
     })
   }
@@ -237,7 +237,7 @@ class k extends(r = Chunk647438.Component) {
         let {
           libraryApplication: e
         } = this.props;
-        await d.h(e.id, e.branchId, e.getFlags() & ~S.eHb.HIDDEN), (0, p.uL)(S.Z5c.APPLICATION_LIBRARY)
+        await d.h(e.id, e.branchId, e.getFlags() & ~T.eHb.HIDDEN), (0, p.uL)(T.Z5c.APPLICATION_LIBRARY)
       } catch (e) {
         new _.Z("LibraryApplicationButton").error(e)
       }
@@ -269,7 +269,7 @@ function j(e) {
   let {
     libraryApplication: t
   } = e, n = (0, f.O)(), [r, a] = (0, o.Wu)([E.Z, b.Z], () => [(0, m.i)(t, E.Z, b.Z), E.Z.getState(t.id, t.branchId)], [t]), s = (0, o.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), l = (0, o.e7)([h.Z], () => h.Z.hasNoBuild(t.id, t.branchId), [t]);
-  return (0, i.jsx)(k, D(R({}, e), {
+  return (0, i.jsx)(k, w(R({}, e), {
     analyticsContext: n,
     actionState: r,
     dispatchState: a,
@@ -283,4 +283,4 @@ N(k, "defaultProps", {
   hideProgress: false,
   isPlayShiny: false,
   tooltipPosition: "top"
-}), N(k, "ButtonStates", w)
+}), N(k, "ButtonStates", D)

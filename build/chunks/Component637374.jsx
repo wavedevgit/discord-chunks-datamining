@@ -344,7 +344,7 @@ class q extends Chunk647438.Component {
         }
       })
     }), V(this, "handleVerificationClick", e => {
-      e.stopPropagation(), e.preventDefault(), (0, S.openUserSettings)(T.n.ACCOUNT_PANEL, {
+      e.stopPropagation(), e.preventDefault(), (0, T.openUserSettings)(S.n.ACCOUNT_PANEL, {
         section: G.oAB.ACCOUNT
       })
     }), V(this, "handleAccept", e => {
@@ -379,7 +379,7 @@ class q extends Chunk647438.Component {
       let {
         giftCode: t
       } = this.props;
-      null != t && t.isSubscription && (e.preventDefault(), (0, S.openUserSettings)(T.n.NITRO_PANEL, {
+      null != t && t.isSubscription && (e.preventDefault(), (0, T.openUserSettings)(S.n.NITRO_PANEL, {
         section: G.oAB.PREMIUM
       }))
     }), V(this, "handleClaimPromotion", e => {
@@ -405,7 +405,7 @@ class q extends Chunk647438.Component {
         });
       return (0, r.jsxs)("div", {
         className: i,
-        children: [n && (0, r.jsx)(w.Z, {
+        children: [n && (0, r.jsx)(D.Z, {
           className: F.headerIcon
         }), null != e.giftStyle && (0, r.jsx)(y.Z, {
           defaultAnimationState: e.redeemed ? E.SR.LOOP : E.SR.IDLE,
@@ -422,7 +422,7 @@ let X = (0, Chunk112724.Z)((0, Chunk730749.Z)(q)),
       code: t,
       author: n,
       currentUser: r
-    } = e, i = C.Z.get(t), a = null != i ? D.Z.get(i.skuId) : null, o = null != i && null != i.userId ? R.default.getUser(i.userId) : null;
+    } = e, i = C.Z.get(t), a = null != i ? w.Z.get(i.skuId) : null, o = null != i && null != i.userId ? R.default.getUser(i.userId) : null;
     return {
       sku: a,
       giftCode: i,

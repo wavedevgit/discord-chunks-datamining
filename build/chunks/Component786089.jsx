@@ -125,9 +125,9 @@ let j = (0, Chunk647438.memo)(function(e) {
           user: B,
           guildId: null
         })
-      }), q ? (0, r.jsx)(v.Z, {
+      }), q ? (0, r.jsx)(y.Z, {
         className: N.image
-      }) : Q ? (0, r.jsx)(y.Z, {
+      }) : Q ? (0, r.jsx)(v.Z, {
         className: N.image
       }) : et.isAnimated ? (0, r.jsx)(h.Z, {
         className: N.assetBlurred,

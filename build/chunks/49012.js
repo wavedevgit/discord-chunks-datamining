@@ -33,7 +33,7 @@ var Chunk159635 = require("./159635.js"),
 
 function N(e, t) {
   var n;
-  let r = E.Z.getChannel(T.Z.getChannelId());
+  let r = E.Z.getChannel(S.Z.getChannelId());
   return (null == r || r.type !== A.d4z.DM || !!I.Z.isFriend(null != (n = r.getRecipientId()) ? n : "")) && e === t
 }
 
@@ -41,12 +41,12 @@ function R(e, t) {
   let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
     I = arguments.length > 3 ? arguments[3] : true,
     {
-      trusted: T,
+      trusted: S,
       onClick: N,
       onConfirm: R,
       onCancel: P,
-      shouldConfirm: D,
-      messageId: w,
+      shouldConfirm: w,
+      messageId: D,
       channelId: L
     } = e,
     x = i().sanitizeUrl(e.href);
@@ -69,12 +69,12 @@ function R(e, t) {
   }
   let k = null,
     j = false,
-    U = w,
+    U = D,
     G = L,
     B = null;
-  if (null != w && null != L) {
+  if (null != D && null != L) {
     var Z, F, V;
-    let e = v.Z.getMessage(L, w),
+    let e = v.Z.getMessage(L, D),
       t = E.Z.getBasicChannel(L);
     k = null != (V = null == t ? true : t.guild_id) ? V : null;
     let n = b.Z.getGuild(k),
@@ -87,11 +87,11 @@ function R(e, t) {
   if (null != L) {
     let e = E.Z.getChannel(L),
       t = b.Z.getGuild(null == e ? true : e.getGuildId());
-    null != e && null != t && t.features.has(A.GuildFeatures.DISCOVERABLE) && S.default.track(A.rMx.URL_CLICKED, {
+    null != e && null != t && t.features.has(A.GuildFeatures.DISCOVERABLE) && T.default.track(A.rMx.URL_CLICKED, {
       url_domain: (0, O.F)(M),
       guild_id: t.id,
       channel_id: e.id
-    }), (0, u.Z)(L) && S.default.track(A.rMx.CHANGE_LOG_CTA_CLICKED, {
+    }), (0, u.Z)(L) && T.default.track(A.rMx.CHANGE_LOG_CTA_CLICKED, {
       cta_type: "inline_link",
       target: M
     })
@@ -130,10 +130,10 @@ function R(e, t) {
     null == t || t.preventDefault(), d.Z.show(M);
     return
   }
-  let W = "function" == typeof T ? T() : T,
+  let W = "function" == typeof S ? S() : S,
     K = (0, O.E)(M),
     z = "http:" !== K && "https:" !== K;
-  if (!z && (W || y.Z.isTrustedDomain(M)) || z && y.Z.isTrustedProtocol(M)) return void(null == t || null != D && D ? H() : j && _.Z.trackAnnouncementMessageLinkClicked({
+  if (!z && (W || y.Z.isTrustedDomain(M)) || z && y.Z.isTrustedProtocol(M)) return void(null == t || null != w && w ? H() : j && _.Z.trackAnnouncementMessageLinkClicked({
     messageId: U,
     channelId: L,
     guildId: k,

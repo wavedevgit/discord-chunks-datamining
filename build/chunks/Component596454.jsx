@@ -62,7 +62,7 @@ function v(e, t) {
 
 function I(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -70,7 +70,7 @@ function I(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -78,7 +78,7 @@ function T(e, t) {
   return i
 }
 require("./54453.js");
-let S = __OVERLAY__ ? () => (0, Chunk442837.e7)([Chunk237997.default], () => Chunk237997.default.isInstanceFocused()) : Chunk506071.n;
+let T = __OVERLAY__ ? () => (0, Chunk442837.e7)([Chunk237997.default], () => Chunk237997.default.isInstanceFocused()) : Chunk506071.n;
 
 function A(e) {
   var t, n, {
@@ -90,14 +90,14 @@ function A(e) {
       channelId: g,
       messageId: b,
       animated: O,
-      size: T = "default",
+      size: S = "default",
       isInteracting: A = false,
       shouldAnimate: C,
       onMouseEnter: N,
       onMouseLeave: R,
       canSelect: P = true,
-      autoplay: D,
-      registerInnerRef: w,
+      autoplay: w,
+      registerInnerRef: D,
       registerAnimatedElementRef: L,
       surrogate: x
     } = e,
@@ -105,7 +105,7 @@ function A(e) {
   let [k, j] = i.useState(false), [U, G] = i.useState(true), B = i.useRef(true), {
     triggerAnimation: Z,
     untriggerAnimation: F
-  } = i.useContext(u.Rm), V = _.Yk.useSetting(), H = S(), Y = null == D ? V : D, W = E.kV[T], K = i.useRef(null), z = i.useMemo(() => {
+  } = i.useContext(u.Rm), V = _.Yk.useSetting(), H = T(), Y = null == w ? V : w, W = E.kV[S], K = i.useRef(null), z = i.useMemo(() => {
     if (null != a) return a;
     if (null != f) {
       let e = true === C && Y;
@@ -133,21 +133,21 @@ function A(e) {
     };
     return y(v(y({}, M), {
       className: o()("emoji", c, {
-        jumboable: "jumbo" === T
+        jumboable: "jumbo" === S
       }),
       onError: q,
       onMouseEnter: X,
       onMouseLeave: Q,
       "data-type": "emoji"
     }), e)
-  }, [c, f, p, X, Q, q, M, T]);
+  }, [c, f, p, X, Q, q, M, S]);
   i.useEffect(() => () => {
     var e;
     return null == (e = B.current) ? true : e.call(B)
   }, []);
   let $ = i.useCallback(e => {
-      K.current = e, null == w || w(e), null == L || L(e)
-    }, [w, L]),
+      K.current = e, null == D || D(e), null == L || L(e)
+    }, [D, L]),
     ee = (0, l.Z)(K);
   return null == z || "" === z ? (0, r.jsx)("span", v(y({}, J), {
     ref: $,

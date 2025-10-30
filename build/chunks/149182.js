@@ -17,7 +17,7 @@
 
   function d(e, t, n, r) {
     var i = Object.create((t && t.prototype instanceof E ? t : E).prototype);
-    return i._invoke = C(e, n, new D(r || [])), i
+    return i._invoke = C(e, n, new w(r || [])), i
   }
 
   function f(e, t, n) {
@@ -49,11 +49,11 @@
     return this
   };
   var v = Object.getPrototypeOf,
-    I = v && v(v(w([])));
+    I = v && v(v(D([])));
   I && I !== r && i.call(I, o) && (O = I);
-  var T = y.prototype = E.prototype = Object.create(O);
+  var S = y.prototype = E.prototype = Object.create(O);
 
-  function S(e) {
+  function T(e) {
     ["next", "throw", "return"].forEach(function(t) {
       e[t] = function(e) {
         return this._invoke(t, e)
@@ -156,13 +156,13 @@
     t.type = "normal", delete t.arg, e.completion = t
   }
 
-  function D(e) {
+  function w(e) {
     this.tryEntries = [{
       tryLoc: "root"
     }], e.forEach(R, this), this.reset(true)
   }
 
-  function w(e) {
+  function D(e) {
     if (e) {
       var t = e[o];
       if (t) return t.call(e);
@@ -188,25 +188,25 @@
       done: true
     }
   }
-  b.prototype = T.constructor = y, y.constructor = b, y[l] = b.displayName = "GeneratorFunction", u.isGeneratorFunction = function(e) {
+  b.prototype = S.constructor = y, y.constructor = b, y[l] = b.displayName = "GeneratorFunction", u.isGeneratorFunction = function(e) {
     var t = "function" == typeof e && e.constructor;
     return !!t && (t === b || "GeneratorFunction" === (t.displayName || t.name))
   }, u.mark = function(e) {
-    return Object.setPrototypeOf ? Object.setPrototypeOf(e, y) : (e.__proto__ = y, l in e || (e[l] = "GeneratorFunction")), e.prototype = Object.create(T), e
+    return Object.setPrototypeOf ? Object.setPrototypeOf(e, y) : (e.__proto__ = y, l in e || (e[l] = "GeneratorFunction")), e.prototype = Object.create(S), e
   }, u.awrap = function(e) {
     return {
       __await: e
     }
-  }, S(A.prototype), A.prototype[s] = function() {
+  }, T(A.prototype), A.prototype[s] = function() {
     return this
   }, u.AsyncIterator = A, u.async = function(e, t, n, r) {
     var i = new A(d(e, t, n, r));
     return u.isGeneratorFunction(t) ? i : i.next().then(function(e) {
       return e.done ? e.value : i.next()
     })
-  }, S(T), T[l] = "Generator", T[o] = function() {
+  }, T(S), S[l] = "Generator", S[o] = function() {
     return this
-  }, T.toString = function() {
+  }, S.toString = function() {
     return "[object Generator]"
   }, u.keys = function(e) {
     var t = [];
@@ -219,8 +219,8 @@
         }
         return n.done = true, n
       }
-  }, u.values = w, D.prototype = {
-    constructor: D,
+  }, u.values = D, w.prototype = {
+    constructor: w,
     reset: function(e) {
       if (this.prev = 0, this.next = 0, this.sent = this._sent = n, this.done = false, this.delegate = null, this.method = "next", this.arg = n, this.tryEntries.forEach(P), !e)
         for (var t in this) "t" === t.charAt(0) && i.call(this, t) && !isNaN(+t.slice(1)) && (this[t] = n)
@@ -294,7 +294,7 @@
     },
     delegateYield: function(e, t, r) {
       return this.delegate = {
-        iterator: w(e),
+        iterator: D(e),
         resultName: t,
         nextLoc: r
       }, "next" === this.method && (this.arg = n), g

@@ -2,7 +2,7 @@
 /** chunk id: 641409, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -50,10 +50,10 @@ let b = {
     trailing: true
   });
 
-function T(e) {
+function S(e) {
   return e.displayName
 }
-let S = {
+let T = {
   stores: [Chunk998698.Z, Chunk174212.Z],
   showEmpty: true,
   matches(e, t, n, r, i) {
@@ -136,7 +136,7 @@ let S = {
       index: n,
       options: r
     } = e, i = t[n];
-    return r.insertText(T(i)), {
+    return r.insertText(S(i)), {
       type: p.z2.CHOICE
     }
   }

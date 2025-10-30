@@ -84,15 +84,15 @@ function O(e) {
     asContainer: O = false,
     element: v = "span",
     position: I = "top",
-    align: T = "center",
-    spacing: S,
+    align: S = "center",
+    spacing: T,
     caretConfig: A,
     layerContext: C,
     targetElementRef: N,
     positionKey: R
   } = e, P = b(e, ["children", "title", "body", "asset", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "positionKey"]);
-  let D = (0, _.c)(N),
-    w = i.useId(),
+  let w = (0, _.c)(N),
+    D = i.useId(),
     L = null != h && ("string" != typeof h || "" !== h),
     x = i.useMemo(() => (0, r.jsxs)("div", {
       className: p.richTooltipContent,
@@ -115,7 +115,7 @@ function O(e) {
       isVisible: M,
       triggerProps: k
     } = (0, d.l)(m({
-      targetElementRef: D.targetElementRef
+      targetElementRef: w.targetElementRef
     }, P)),
     j = null != R ? R : "".concat((0, u.Sw)(null != h ? h : ""), "|").concat((0, u.Sw)(g)),
     U = (0, f.Q)({
@@ -127,7 +127,7 @@ function O(e) {
         let t = e.target;
         if (null != t) {
           var n;
-          let e = (0, u.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, w);
+          let e = (0, u.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, D);
           t.setAttribute("aria-describedby", e)
         }
       }),
@@ -136,7 +136,7 @@ function O(e) {
         if (null != t) {
           let e = t.getAttribute("aria-describedby");
           if (null != e) {
-            let n = e.split(" ").filter(e => e !== w);
+            let n = e.split(" ").filter(e => e !== D);
             n.length > 0 ? t.setAttribute("aria-describedby", n.join(" ")) : t.removeAttribute("aria-describedby")
           }
         }
@@ -146,23 +146,23 @@ function O(e) {
       tag: v,
       children: n,
       triggerHandlers: e,
-      triggerRef: D.triggerRef
+      triggerRef: w.triggerRef
     })
   } else {
     if (!i.isValidElement(n)) return null;
-    t = (0, u.C9)(n, k, w, D.triggerRef)
+    t = (0, u.C9)(n, k, D, w.triggerRef)
   }
   let G = U((e, t) => t ? (0, r.jsx)(c.pn, {
     isRichTooltip: true,
     children: (0, r.jsx)(l.N, {
       isVisible: M,
       isRendered: true,
-      targetElementRef: D.targetElementRef,
-      id: w,
+      targetElementRef: w.targetElementRef,
+      id: D,
       content: x,
       position: I,
-      align: T,
-      spacing: S,
+      align: S,
+      spacing: T,
       caretConfig: A,
       layerContext: null != C ? C : s.nz,
       animationStyle: e,
@@ -172,7 +172,7 @@ function O(e) {
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
     children: [t, null != x ? (0, r.jsx)(a.n, {
-      id: w,
+      id: D,
       children: x
     }) : null, G]
   })

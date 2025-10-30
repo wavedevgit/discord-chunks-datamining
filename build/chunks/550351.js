@@ -2,56 +2,115 @@
 /** chunk id: 550351, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
-});
+  Z: () => b
+}), require("./388685.js");
 var Chunk594190 = require("./594190.js"),
   Chunk569545 = require("./569545.js"),
   Chunk199902 = require("./199902.js"),
   Chunk314897 = require("./314897.js"),
+  Chunk592125 = require("./592125.js"),
   Chunk158776 = require("./158776.js"),
   Chunk19780 = require("./19780.js"),
+  Chunk885110 = require("./885110.js"),
   Chunk979651 = require("./979651.js"),
   Chunk709054 = require("./709054.js"),
+  Chunk894694 = require("./894694.js"),
   Chunk356659 = require("./356659.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
-  var t, n;
+function g(e) {
+  if (null != e) return {
+    state: e.state,
+    details: e.details,
+    timestamps: e.timestamps,
+    party: null != e.party ? {
+      id: e.party.id,
+      size: e.party.size
+    } : true
+  }
+}
+
+function E(e) {
+  var t, n, d;
   if (null != e) {
     let {
       ownerId: t
     } = i.my(e);
     if (t !== o.default.getId()) {
-      let e = s.Z.getActivities(t).find(e => e.type === f.IIU.PLAYING);
+      let e = l.Z.getActivities(t).find(e => e.type === h.IIU.PLAYING);
       return {
         sourceName: null == e ? true : e.name,
-        sourceApplicationId: null == e ? true : e.application_id
+        sourceApplicationId: null == e ? true : e.application_id,
+        activity: g(e)
       }
     }
   }
-  let l = a.Z.getStreamerActiveStreamMetadata(),
-    c = null == l ? true : l.pid,
-    u = null != l ? null != c ? r.ZP.getGameForPID(c) : null : r.ZP.getVisibleGame();
+  let f = a.Z.getStreamerActiveStreamMetadata(),
+    _ = null == f ? true : f.pid,
+    p = null == f ? true : f.sourceName,
+    m = (() => {
+      if (null == f) return r.ZP.getVisibleGame();
+      {
+        let e = null != _ ? r.ZP.getGameForPID(_) : null,
+          t = null != p ? r.ZP.getGameForName(p) : null;
+        return null != e ? e : t
+      }
+    })(),
+    E = null != (t = null == f ? true : f.id) ? t : null == m ? true : m.id,
+    b = null != (n = null == f ? true : f.sourceName) ? n : null == m ? true : m.name,
+    y = c.Z.getChannelId(),
+    O = null == b && null != y;
+  if (O) {
+    let e = null != y ? s.Z.getChannel(y) : null;
+    b = null != (d = null == e ? true : e.name) ? d : ""
+  }
   return {
-    sourceName: null != (t = null == l ? true : l.sourceName) ? t : null == u ? true : u.name,
-    sourceApplicationId: null != (n = null == l ? true : l.id) ? n : null == u ? true : u.id
+    sourceName: b,
+    sourceApplicationId: E,
+    activity: g(u.Z.getPrimaryActivity()),
+    isVoiceOnly: O
   }
 }
 
-function h(e) {
-  let {
-    sourceName: t,
-    sourceApplicationId: n
-  } = p(e), r = l.Z.getChannelId(), i = [o.default.getId()];
-  return null != r && (i = Object.keys(c.Z.getVoiceStatesForChannel(r))), {
-    id: u.default.fromTimestamp(Date.now()),
-    version: d.Bg,
-    applicationName: null != t ? t : _.intl.string(_.t.qtSJxb),
-    applicationId: n,
-    users: i,
-    clipMethod: "manual",
+function b(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "manual",
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : _.NJ.CLIP,
+    r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : [],
+    i = arguments.length > 4 ? arguments[4] : true,
+    {
+      sourceName: a,
+      sourceApplicationId: s,
+      activity: l,
+      isVoiceOnly: u
+    } = E(e),
+    h = c.Z.getChannelId(),
+    g = c.Z.getGuildId(),
+    b = new Set([o.default.getId()]);
+  null != h && (b = b.union(new Set(Object.keys(d.Z.getVoiceStatesForChannel(h)))));
+  let y = "auto" === t;
+  r.forEach(e => {
+    let {
+      signal: t
+    } = e;
+    "userId" in t && null != t.userId && b.add(t.userId)
+  });
+  let O = u && n === _.NJ.CLIP ? _.NJ.VOICE_CLIP : n;
+  return {
+    id: f.default.fromTimestamp(Date.now()),
+    version: p.Bg,
+    applicationName: null != a ? a : m.intl.string(m.t.qtSJxb),
+    applicationId: s,
+    activity: l,
+    users: Array.from(b),
+    clipMethod: t,
+    isTemporary: y,
+    guildId: null != g ? g : true,
+    channelId: null != h ? h : true,
+    timeline: r,
+    decision: i,
     length: 0,
-    thumbnail: ""
+    thumbnail: "",
+    type: O
   }
 }

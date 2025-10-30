@@ -32,8 +32,8 @@ let g = "33kozedd0zs6fbauka98psnc7zwom2s",
   O = "https://api.twitch.tv/helix",
   v = /live_user_(.*)-\{width\}/,
   I = 128,
-  T = null,
-  S = 0,
+  S = null,
+  T = 0,
   A = null,
   C = new Set,
   N = {};
@@ -54,7 +54,7 @@ function P(e, t, n) {
     rejectWithError: false
   })
 }
-async function D(e, t) {
+async function w(e, t) {
   var n;
   let r = N[e];
   if (null != r) return r;
@@ -67,12 +67,12 @@ async function D(e, t) {
   }, t), a = null == (n = i[0]) ? true : n.name;
   return N[e] = a, a
 }
-class w {
+class D {
   start() {
     this._started || (this._started = true, Chunk553795.Z.isFetching() ? Chunk457330.Z.fetch() : this._check())
   }
   stop() {
-    this._started = false, A = null, S = 0, null != this._nextCheck && clearTimeout(this._nextCheck), Chunk570140.Z.dispatch({
+    this._started = false, A = null, T = 0, null != this._nextCheck && clearTimeout(this._nextCheck), Chunk570140.Z.dispatch({
       type: "STREAMING_UPDATE",
       stream: null
     })
@@ -97,7 +97,7 @@ class w {
         title: c
       } = o, f = {
         large_image: null != s && null != (r = (0, d.f)(h.ABu.TWITCH, s)) ? r : true
-      }, _ = await D(l, t), p = u.Z.get(h.ABu.TWITCH), m = null != (i = R(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : true, E = null != _ && "" !== _ ? _.slice(0, I) : true;
+      }, _ = await w(l, t), p = u.Z.get(h.ABu.TWITCH), m = null != (i = R(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : true, E = null != _ && "" !== _ ? _.slice(0, I) : true;
       return {
         url: null == (n = p.getPlatformUserUrl) ? true : n.call(p, {
           id: e.id,
@@ -163,7 +163,7 @@ class w {
     null != this._nextCheck && clearTimeout(this._nextCheck);
     let t = [Chunk981631.ABu.TWITCH],
       n = Date.now();
-    S <= require && (exports.push(Chunk981631.ABu.YOUTUBE), S = require + y), Promise.allSettled(module.filter(e => t.includes(e.type)).map(e => e.type === h.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
+    T <= require && (exports.push(Chunk981631.ABu.YOUTUBE), T = require + y), Promise.allSettled(module.filter(e => t.includes(e.type)).map(e => e.type === h.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
       if (this._started) {
         var t;
         let n = null == (t = e.find(e => "fulfilled" === e.status && null != e.value)) ? true : t.value;
@@ -182,7 +182,7 @@ class w {
     m(this, "_nextCheck", true), m(this, "_started", true), this._started = false
   }
 }
-let L = new w;
+let L = new D;
 
 function x() {
   Chunk246946.Z.enabled ? L.start() : L.stop()
@@ -190,15 +190,15 @@ function x() {
 
 function M(e) {
   var t;
-  if (a()(e.stream, T)) returnfalse;
-  T = null != (t = e.stream) ? t : null
+  if (a()(e.stream, S)) returnfalse;
+  S = null != (t = e.stream) ? t : null
 }
 class k extends(r = Chunk442837.ZP.Store) {
   initialize() {
     x(), this.waitFor(Chunk553795.Z, Chunk246946.Z), this.syncWith([Chunk246946.Z], x)
   }
   getStream() {
-    return T
+    return S
   }
 }
 m(k, "displayName", "ExternalStreamingStore");

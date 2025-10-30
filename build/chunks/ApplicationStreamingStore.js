@@ -47,7 +47,7 @@ function P(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function D(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -124,7 +124,7 @@ function F(e) {
     }), true;
     {
       let t = b.default.getSessionId();
-      return n === b.default.getId() && a !== t && null != T.Z.getChannelId() ? e : U(n, r) || e
+      return n === b.default.getId() && a !== t && null != S.Z.getChannelId() ? e : U(n, r) || e
     }
   }, false)
 }
@@ -133,7 +133,7 @@ function V(e) {
   let {
     streamKey: t
   } = e, n = (0, p.my)(t);
-  r.delete(t), r.set(t, w(P({}, n), {
+  r.delete(t), r.set(t, D(P({}, n), {
     state: C.jm8.CONNECTING
   })), n.ownerId === b.default.getId() && (x[n.channelId] = false)
 }
@@ -195,7 +195,7 @@ function W(e) {
   let a = false;
   for (let e in o) {
     let t = r.get(e);
-    null != t && (r.set(e, w(P({}, t), {
+    null != t && (r.set(e, D(P({}, t), {
       state: C.jm8.FAILED,
       endReason: n,
       errorCode: i
@@ -238,7 +238,7 @@ function q(e) {
     viewerIds: i,
     paused: o
   } = e;
-  r.set(t, w(P({}, (0, p.my)(t)), {
+  r.set(t, D(P({}, (0, p.my)(t)), {
     state: o ? C.jm8.PAUSED : C.jm8.ACTIVE
   })), a[t] = {
     streamKey: t,
@@ -287,7 +287,7 @@ function J(e) {
       n(e)
     }), l = C.jm8.ENDED
   } else s.state === C.jm8.FAILED && o === C.si2.USER_REQUESTED && (l = C.jm8.FAILED);
-  r.set(t, w(P({}, s), {
+  r.set(t, D(P({}, s), {
     state: l
   })), l === C.jm8.ENDED && L !== t && G(t)
 }
@@ -297,7 +297,7 @@ function $(e) {
     streamKey: t
   } = e, n = r.get(t);
   if (null == n) returnfalse;
-  r.set(t, w(P({}, n), {
+  r.set(t, D(P({}, n), {
     state: C.jm8.FAILED
   }))
 }
@@ -319,7 +319,7 @@ function ee(e) {
       a = C.jm8.ACTIVE
   }
   if (a === i.state) returnfalse;
-  r.set(t, w(P({}, i), {
+  r.set(t, D(P({}, i), {
     state: a
   }))
 }
@@ -352,7 +352,7 @@ function ei(e) {
 k();
 class ea extends(c = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.syncWith([I.Z], () => true), this.waitFor(b.default, y.Z, I.Z, T.Z, _.ZP, S.Z), (null == e ? true : e.selfStreamParticipantsHidden) !== true && Object.assign(x, null == e ? true : e.selfStreamParticipantsHidden)
+    this.syncWith([I.Z], () => true), this.waitFor(b.default, y.Z, I.Z, S.Z, _.ZP, T.Z), (null == e ? true : e.selfStreamParticipantsHidden) !== true && Object.assign(x, null == e ? true : e.selfStreamParticipantsHidden)
   }
   getState() {
     return {

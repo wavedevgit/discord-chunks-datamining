@@ -104,7 +104,7 @@ function y(e) {
   } = e, {
     imageSize: v,
     smallImageSize: I,
-    mask: T
+    mask: S
   } = E[y];
   if (null == i) return (0, r.jsx)(l.f, {
     src: true,
@@ -113,7 +113,7 @@ function y(e) {
     className: a()(d.contentImage, m[null != p ? p : "default"], O),
     constrain: "width"
   });
-  let S = (0, r.jsx)(l.f, {
+  let T = (0, r.jsx)(l.f, {
     src: i.src,
     alt: null != (n = null != (t = i.alt) ? t : i.text) ? n : u.intl.string(u.t["2B/phM"]),
     size: v,
@@ -131,13 +131,13 @@ function y(e) {
           href: i.url,
           children: null != f ? (0, r.jsx)(s.ZP, h(_({}, e), {
             className: d.imageContainer,
-            mask: T,
+            mask: S,
             width: v,
             height: v,
-            children: S
+            children: T
           })) : (0, r.jsx)("div", h(_({}, e), {
             className: d.imageContainer,
-            children: S
+            children: T
           }))
         })
       })

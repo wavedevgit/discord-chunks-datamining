@@ -71,12 +71,12 @@ function m(e) {
     return (null == (e = l.default.getCurrentUser()) ? true : e.id) === O
   }, [O]), {
     isIgnored: I,
-    isBlocked: T
+    isBlocked: S
   } = (0, i.cj)([s.Z], () => ({
     isIgnored: s.Z.isIgnored(O),
     isBlocked: s.Z.isBlocked(O)
   }), [O]);
-  return v || T ? null : (0, r.jsx)(a.sNh, {
+  return v || S ? null : (0, r.jsx)(a.sNh, {
     id: "ignore",
     color: "default",
     label: I ? u.intl.string(u.t["8wXU9B"]) : (0, r.jsx)("div", {

@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk507694 = require("./507694.js");
 
-function v(e) {
+function y(e) {
   var t;
   let {
     user: n,
@@ -66,7 +66,7 @@ function v(e) {
   })
 }
 
-function y(e) {
+function v(e) {
   let {
     userId: t,
     applicationId: n,
@@ -170,12 +170,12 @@ function T(e) {
         applicationId: s
       }), (0, r.jsx)("div", {
         className: I.actions,
-        children: n === E.OGo.PENDING_INCOMING ? (0, r.jsx)(v, {
+        children: n === E.OGo.PENDING_INCOMING ? (0, r.jsx)(y, {
           user: t,
           applicationId: s,
           isGameRelationship: c,
           active: e
-        }) : (0, r.jsx)(y, {
+        }) : (0, r.jsx)(v, {
           userId: t.id,
           applicationId: s,
           isGameRelationship: c,

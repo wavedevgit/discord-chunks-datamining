@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   $R: () => b,
-  GA: () => T,
+  GA: () => S,
   I: () => A,
   UE: () => E,
   Wq: () => y,
   ZB: () => g,
   jz: () => I,
-  rU: () => S,
+  rU: () => T,
   sK: () => v,
   wK: () => C
 }), require("./997841.js"), require("./388685.js");
@@ -106,7 +106,7 @@ function y(e, t, n, a, o) {
       }
     },
     h = _(n),
-    g = _(T(e), t),
+    g = _(S(e), t),
     E = O(h, g, "RETURN_PREVIOUS_WHEN_CHANGED"),
     y = null != (s = E("guild_flags")) ? s : 0,
     v = (null != (d = g.guild_flags) ? d : 0) ^ y,
@@ -147,8 +147,8 @@ function I(e) {
     applicationId: E,
     change: y,
     previous: I,
-    label: T,
-    location: S
+    label: S,
+    location: T
   } = e, C = function(e) {
     var t, n;
     let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
@@ -162,14 +162,14 @@ function I(e) {
       channel_message_notification_settings: a,
       channel_muted_until: v(r.mute_config)
     }
-  }, N = C(I), R = C(A(h, g), y), P = O(N, R, "RETURN_PREVIOUS_WHEN_CHANGED"), D = a.Z.getChannel(g), w = null != (n = P("channel_flags")) ? n : 0, L = (null != (s = R.channel_flags) ? s : 0) ^ w, x = 0 === (0, l.M1)(L, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), M = null != (d = null == (t = o.Z.getLastMessage(g)) ? true : t.type) ? d : null;
+  }, N = C(I), R = C(A(h, g), y), P = O(N, R, "RETURN_PREVIOUS_WHEN_CHANGED"), w = a.Z.getChannel(g), D = null != (n = P("channel_flags")) ? n : 0, L = (null != (s = R.channel_flags) ? s : 0) ^ D, x = 0 === (0, l.M1)(L, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), M = null != (d = null == (t = o.Z.getLastMessage(g)) ? true : t.type) ? d : null;
   r.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, m(p({}, R, i.Z.getStats(h)), {
-    location: S,
+    location: T,
     guild_id: h,
     channel_id: g,
     update_type: _,
-    label: T,
-    parent_id: null != D ? D.parent_id : null,
+    label: S,
+    parent_id: null != w ? w.parent_id : null,
     channel_flags_old: P("channel_flags"),
     channel_is_muted_old: P("channel_is_muted"),
     channel_muted_until_old: P("channel_muted_until"),
@@ -181,7 +181,7 @@ function I(e) {
   }))
 }
 
-function T(e) {
+function S(e) {
   let t = s.ZP.isMuted(e),
     n = s.ZP.getMuteConfig(e);
   return {
@@ -197,9 +197,9 @@ function T(e) {
   }
 }
 
-function S(e) {
+function T(e) {
   let t = new Map;
-  return e.forEach(e => t.set(e, T(e))), t
+  return e.forEach(e => t.set(e, S(e))), t
 }
 
 function A(e, t) {

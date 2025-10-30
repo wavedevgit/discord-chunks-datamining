@@ -84,7 +84,7 @@ function I(e) {
   delete h[t]
 }
 
-function T(e) {
+function S(e) {
   let {
     channel: {
       guild_id: t
@@ -94,7 +94,7 @@ function T(e) {
   h[t] = true, p === t && y(t)
 }
 
-function S(e) {
+function T(e) {
   let {
     channels: t
   } = e, n = false;
@@ -139,7 +139,7 @@ function P(e) {
   return null == t && null != m ? R(c.Z.getChannel(m), null) : R(c.Z.getChannel(t), t)
 }
 
-function D(e) {
+function w(e) {
   let {
     voiceStates: t
   } = e;
@@ -152,7 +152,7 @@ function D(e) {
   }, false)
 }
 
-function w(e) {
+function D(e) {
   let {
     guildId: t
   } = e;
@@ -178,16 +178,16 @@ class M extends(r = Chunk442837.ZP.Store) {
 }
 _(M, "displayName", "GuildCategoryStore");
 let k = new M(Chunk570140.Z, {
-  CHANNEL_SELECT: w,
+  CHANNEL_SELECT: D,
   CONNECTION_OPEN: O,
   OVERLAY_INITIALIZE: O,
   CACHE_LOADED_LAZY: O,
   GUILD_CREATE: v,
   GUILD_UPDATE: v,
   GUILD_DELETE: I,
-  CHANNEL_CREATE: T,
-  CHANNEL_DELETE: T,
-  CHANNEL_UPDATES: S,
+  CHANNEL_CREATE: S,
+  CHANNEL_DELETE: S,
+  CHANNEL_UPDATES: T,
   GUILD_MEMBER_UPDATE: A,
   CURRENT_USER_UPDATE: C,
   GUILD_ROLE_CREATE: N,
@@ -196,5 +196,5 @@ let k = new M(Chunk570140.Z, {
   IMPERSONATE_UPDATE: N,
   IMPERSONATE_STOP: N,
   VOICE_CHANNEL_SELECT: P,
-  VOICE_STATE_UPDATES: D
+  VOICE_STATE_UPDATES: w
 })

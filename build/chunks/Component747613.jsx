@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk330580 = require("./330580.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -83,8 +83,8 @@ function R(e, t) {
   return i
 }
 let P = 20,
-  D = 125,
-  w = (0, Chunk313201.hQ)(),
+  w = 125,
+  D = (0, Chunk313201.hQ)(),
   L = Chunk336317.Z.convert.fromCodePoint("1f44f"),
   x = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
   M = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
@@ -119,7 +119,7 @@ let j = e => {
       },
       delay: a
     }, "animate-always");
-    return (0, r.jsx)(_.P3F, C(S({}, s), {
+    return (0, r.jsx)(_.P3F, C(T({}, s), {
       role: "option",
       "aria-selected": 0 === o,
       onClick: () => i(n),
@@ -127,7 +127,7 @@ let j = e => {
       children: (0, r.jsx)(c.animated.div, {
         "aria-label": k(n),
         className: I.diversityEmojiItemImage,
-        style: S({
+        style: T({
           backgroundImage: 'url("'.concat(l, '")')
         }, d)
       })
@@ -144,7 +144,7 @@ let j = e => {
         height: M
       },
       config: {
-        duration: D
+        duration: w
       }
     });
     i.useEffect(() => {
@@ -158,7 +158,7 @@ let j = e => {
           var {
             ref: n
           } = e, i = N(e, ["ref"]);
-          return (0, r.jsx)(c.animated.div, C(S({}, i), {
+          return (0, r.jsx)(c.animated.div, C(T({}, i), {
             id: t,
             ref: n,
             className: I.diversitySelectorOptions,
@@ -199,7 +199,7 @@ let j = e => {
         "aria-label": v.intl.string(v.t.pAVHxa),
         "aria-haspopup": true,
         "aria-expanded": l,
-        "aria-controls": w,
+        "aria-controls": D,
         tabIndex: l ? false : 0,
         children: (0, r.jsx)("div", {
           className: I.diversityEmojiItemImage,
@@ -210,7 +210,7 @@ let j = e => {
       }), l ? (0, r.jsx)("div", {
         onKeyDown: m,
         children: (0, r.jsx)(U, {
-          id: w,
+          id: D,
           selectedSurrogate: n,
           onClick: g
         })

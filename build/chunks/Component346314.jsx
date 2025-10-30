@@ -88,14 +88,14 @@ function O(e) {
     animateRoleGradient: E,
     variant: b,
     displayNameStylesFont: y = ""
-  } = e, O = i.useContext(u.d), [v, I] = i.useState(false), T = i.useCallback(() => {
+  } = e, O = i.useContext(u.d), [v, I] = i.useState(false), S = i.useCallback(() => {
     I(true)
-  }, []), S = i.useCallback(() => {
+  }, []), T = i.useCallback(() => {
     I(false)
   }, []), A = "username" === t, C = "dot" === t, N = null != c && null != c.primaryColor && null != c.secondaryColor, R = A && N, {
     gradientStyle: P,
-    gradientClassname: D,
-    gradientGlowClassname: w
+    gradientClassname: w,
+    gradientGlowClassname: D
   } = (0, f.Ic)({
     colorStrings: c,
     roleStyle: "username",
@@ -103,11 +103,11 @@ function O(e) {
   }), L = (0, f.EJ)(n), x = {
     className: o()(p.name, g, y, {
       [p.username]: A,
-      [D]: R
+      [w]: R
     }),
     children: L
   }, M = {
-    className: o()(p.nameGlow, w, y),
+    className: o()(p.nameGlow, D, y),
     children: n
   }, k = C ? (0, r.jsx)(_.F, {
     color: a,
@@ -118,8 +118,8 @@ function O(e) {
   }) : null;
   return (0, r.jsxs)("span", {
     className: o()(h, p.container),
-    onMouseEnter: T,
-    onMouseLeave: S,
+    onMouseEnter: S,
+    onMouseLeave: T,
     children: ["left" === d && k, (0, r.jsxs)("span", {
       className: p.nameContainer,
       style: m({

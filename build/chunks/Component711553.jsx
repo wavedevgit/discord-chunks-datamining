@@ -21,22 +21,22 @@ let h = function(e) {
       onDragStart: f
     } = e,
     g = r.useRef(null);
-  return t = null != n ? (0, i.jsxs)(a.ZP.Bar, {
+  return t = null != n ? (0, i.jsxs)(s.ZP.Bar, {
     className: l()(u.header, u.draggableStartArea),
     onMouseDown: f,
-    children: [(0, i.jsx)(a.ZP.Content, {
+    children: [(0, i.jsx)(s.ZP.Content, {
       className: l()(u.headerTitle, u.draggableStartArea),
       dynamicSize: true,
       children: n
-    }), (0, i.jsx)(a.ZP.Content, {
-      children: (0, i.jsx)(s.yRy, {
+    }), (0, i.jsx)(s.ZP.Content, {
+      children: (0, i.jsx)(a.yRy, {
         targetElementRef: g,
         position: "right",
         renderPopout: null != p ? p : c.dG4,
         autoInvert: false,
         children: e => {
           var t, n;
-          return (0, i.jsx)(a.ZP.Icon, (t = function(e) {
+          return (0, i.jsx)(s.ZP.Icon, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 i = Object.keys(n);
@@ -54,7 +54,7 @@ let h = function(e) {
             }
             return e
           }({}, e), n = n = {
-            icon: s.ewm,
+            icon: a.ewm,
             label: d.intl.string(d.t["3D5yo/"]),
             ref: g
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

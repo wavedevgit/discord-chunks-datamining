@@ -60,22 +60,22 @@ function E(e) {
       step: O,
       stepConfigs: v,
       setBodyNode: I,
-      setFooterNode: T,
-      setModalOverlayNode: S,
+      setFooterNode: S,
+      setModalOverlayNode: T,
       setReadySlideId: A,
       premiumBrandRefreshBackgroundClassName: C,
       selectedSkuId: N,
       isDisplayingWowMomentConfirmation: R,
       isGift: P
     } = (0, d.JL)(),
-    D = null != N && N in _.y7,
-    w = v.find(e => e.key === O);
+    w = null != N && N in _.y7,
+    D = v.find(e => e.key === O);
   i.useEffect(() => {
-    S(null)
-  }, [O, S]), l()(null != w, "Unknown step for current payment flow.");
-  let L = null != (c = null == w || null == (t = w.options) ? true : t.hideSlider) && c,
-    x = null == w || null == (n = w.options) ? true : n.bodyClassName,
-    M = null == w || null == (a = w.options) ? true : a.sliderBodyClassName;
+    T(null)
+  }, [O, T]), l()(null != D, "Unknown step for current payment flow.");
+  let L = null != (c = null == D || null == (t = D.options) ? true : t.hideSlider) && c,
+    x = null == D || null == (n = D.options) ? true : n.bodyClassName,
+    M = null == D || null == (a = D.options) ? true : a.sliderBodyClassName;
   switch (true !== b && b && (M = p.sliderBodyLarge), O) {
     case f.h8.ADD_PAYMENT_STEPS:
       m = 408;
@@ -84,15 +84,15 @@ function E(e) {
       m = 392;
       break;
     case f.h8.PLAN_SELECT:
-      D && !P && (m = "100%")
+      w && !P && (m = "100%")
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [null == (h = null == w || null == (s = w.options) ? true : s.renderHeader) || h ? E : null, w.renderStep(y), null == O || L ? null : (0, r.jsxs)(r.Fragment, {
+    children: [null == (h = null == D || null == (s = D.options) ? true : s.renderHeader) || h ? E : null, D.renderStep(y), null == O || L ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
         "data-migration-pending": true,
         className: o()(x, p.body, C, {
           [p.reviewStep]: O === f.h8.REVIEW,
-          [p.addPaymentStepForPremium]: O === f.h8.ADD_PAYMENT_STEPS && D
+          [p.addPaymentStepForPremium]: O === f.h8.ADD_PAYMENT_STEPS && w
         }),
         children: (0, r.jsx)(u.MyZ, {
           activeSlide: O,
@@ -113,10 +113,10 @@ function E(e) {
           }, e.key))
         })
       }), (0, r.jsx)("div", {
-        ref: e => T(e)
+        ref: e => S(e)
       }), (0, r.jsx)("div", {
         ref: e => {
-          S(e)
+          T(e)
         }
       })]
     })]

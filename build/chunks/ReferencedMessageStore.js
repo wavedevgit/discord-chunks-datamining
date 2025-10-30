@@ -142,7 +142,7 @@ function I(e) {
   return O(Object.values(t), e => O(Object.values(e), e => y(e)))
 }
 
-function T(e) {
+function S(e) {
   let {
     data: t
   } = e;
@@ -154,7 +154,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     message: t
   } = e;
@@ -203,7 +203,7 @@ function P(e, t) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     id: t,
     channelId: n
@@ -211,7 +211,7 @@ function D(e) {
   return P(n, t)
 }
 
-function w(e) {
+function D(e) {
   let {
     ids: t,
     channelId: n
@@ -274,16 +274,16 @@ let U = new j(Chunk570140.Z, {
   LOCAL_MESSAGES_LOADED: v,
   LOAD_MESSAGES_SUCCESS: v,
   LOAD_MESSAGES_AROUND_SUCCESS: v,
-  SEARCH_MESSAGES_SUCCESS: T,
-  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: T,
+  SEARCH_MESSAGES_SUCCESS: S,
+  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: S,
   LOAD_THREADS_SUCCESS: M,
   LOAD_ARCHIVED_THREADS_SUCCESS: M,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: A,
   LOAD_FORUM_POSTS: k,
-  MESSAGE_CREATE: S,
+  MESSAGE_CREATE: T,
   MESSAGE_UPDATE: C,
-  MESSAGE_DELETE: D,
-  MESSAGE_DELETE_BULK: w,
+  MESSAGE_DELETE: w,
+  MESSAGE_DELETE_BULK: D,
   CREATE_PENDING_REPLY: L,
   CHANNEL_DELETE: N,
   THREAD_DELETE: N,

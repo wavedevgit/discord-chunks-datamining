@@ -40,7 +40,7 @@ let C = {},
   R = {},
   P = 0;
 
-function D(e) {
+function w(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = C[e];
   if (null != n) return n;
@@ -54,7 +54,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   var t;
   let n = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     r = I.default.getCurrentUser();
@@ -63,7 +63,7 @@ function w(e) {
   if (null == i) return b.Hn;
   let o = i.getGuildId(),
     s = null != o && (u.Z.isLurking(o) || (null == (t = O.ZP.getMember(o, r.id)) ? true : t.isPending));
-  return !i.isScheduledForDeletion() && !s && a().isEmpty(i.permissionOverwrites) && null != o ? D(o) : b.uB({
+  return !i.isScheduledForDeletion() && !s && a().isEmpty(i.permissionOverwrites) && null != o ? w(o) : b.uB({
     user: r,
     context: i,
     checkElevated: n
@@ -73,7 +73,7 @@ function w(e) {
 function L(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = N[e];
-  return null != n ? n : N[e] = w(e, t)
+  return null != n ? n : N[e] = D(e, t)
 }
 
 function x(e) {
@@ -229,7 +229,7 @@ function Q(e, t, n, r) {
       return null == i ? b.Hn : b.Og(e, Q(i, t, n, r), f.Z.hasJoined(e.id))
     }
     i = L(e.id)
-  } else(0, E.lM)(e) && (i = D(e.id));
+  } else(0, E.lM)(e) && (i = w(e.id));
   return true !== t || true !== n || true !== r ? b.uB({
     user: I.default.getCurrentUser(),
     context: e,
@@ -244,36 +244,36 @@ class J extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk592125.Z, Chunk271383.ZP, Chunk430824.Z, Chunk160404.Z, Chunk569471.Z, Chunk41776.Z, Chunk427679.Z, Chunk594174.default)
   }
   getChannelPermissions(e) {
-    return p.Ec.has(e.type) ? w(e.id) : L(e.id)
+    return p.Ec.has(e.type) ? D(e.id) : L(e.id)
   }
   getGuildPermissions(e) {
-    return D(e.id)
+    return w(e.id)
   }
   getGuildPermissionProps(e) {
     let t = I.default.getCurrentUser();
     return {
-      canManageGuild: this.can(T.Plq.MANAGE_GUILD, e),
-      canManageChannels: this.can(T.Plq.MANAGE_CHANNELS, e),
-      canManageRoles: this.can(T.Plq.MANAGE_ROLES, e),
-      canManageBans: this.can(T.Plq.BAN_MEMBERS, e),
-      canManageNicknames: this.can(T.Plq.MANAGE_NICKNAMES, e),
-      canManageGuildExpressions: this.can(T.Plq.MANAGE_GUILD_EXPRESSIONS, e) || this.can(T.Plq.CREATE_GUILD_EXPRESSIONS, e),
-      canViewAuditLog: this.can(T.Plq.VIEW_AUDIT_LOG, e),
-      canViewAuditLogV2: this.can(T.Plq.VIEW_AUDIT_LOG, e),
-      canManageWebhooks: this.can(T.Plq.MANAGE_WEBHOOKS, e),
-      canViewGuildAnalytics: this.can(T.Plq.VIEW_GUILD_ANALYTICS, e),
+      canManageGuild: this.can(S.Plq.MANAGE_GUILD, e),
+      canManageChannels: this.can(S.Plq.MANAGE_CHANNELS, e),
+      canManageRoles: this.can(S.Plq.MANAGE_ROLES, e),
+      canManageBans: this.can(S.Plq.BAN_MEMBERS, e),
+      canManageNicknames: this.can(S.Plq.MANAGE_NICKNAMES, e),
+      canManageGuildExpressions: this.can(S.Plq.MANAGE_GUILD_EXPRESSIONS, e) || this.can(S.Plq.CREATE_GUILD_EXPRESSIONS, e),
+      canViewAuditLog: this.can(S.Plq.VIEW_AUDIT_LOG, e),
+      canViewAuditLogV2: this.can(S.Plq.VIEW_AUDIT_LOG, e),
+      canManageWebhooks: this.can(S.Plq.MANAGE_WEBHOOKS, e),
+      canViewGuildAnalytics: this.can(S.Plq.VIEW_GUILD_ANALYTICS, e),
       canAccessMembersPage: this.canAccessMemberSafetyPage(e),
-      isGuildAdmin: this.can(T.Plq.ADMINISTRATOR, e),
+      isGuildAdmin: this.can(S.Plq.ADMINISTRATOR, e),
       isOwner: null != t && (0, h.eM)(e, t),
       isOwnerWithRequiredMfaLevel: null != t && (0, h.yn)(e, t),
       guild: e
     }
   }
   canAccessMemberSafetyPage(e) {
-    return o.Db(D(e.id), S.N)
+    return o.Db(w(e.id), T.N)
   }
   canAccessGuildSettings(e) {
-    return o.Db(D(e.id), b.ym)
+    return o.Db(w(e.id), b.ym)
   }
   canWithPartialContext(e, t) {
     return "channelId" in t && "string" == typeof t.channelId ? this.can(e, y.Z.getChannel(t.channelId)) : "guildId" in t && "string" == typeof t.guildId && this.can(e, v.Z.getGuild(t.guildId))
@@ -311,7 +311,7 @@ class J extends(r = Chunk442837.ZP.Store) {
   }
   canImpersonateRole(e, t) {
     let n = this.getHighestRole(e),
-      r = this.can(T.Plq.MANAGE_GUILD, e) && this.can(T.Plq.MANAGE_ROLES, e),
+      r = this.can(S.Plq.MANAGE_GUILD, e) && this.can(S.Plq.MANAGE_ROLES, e),
       i = this.isRoleHigher(e, n, t);
     return r && (i || t.id === (null == n ? true : n.id))
   }

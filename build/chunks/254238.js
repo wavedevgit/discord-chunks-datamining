@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   LO: () => N,
-  On: () => S,
+  On: () => T,
   Vv: () => I,
-  _: () => T,
+  _: () => S,
   bp: () => R,
   ef: () => v,
   s6: () => O,
-  sh: () => w
+  sh: () => D
 }), require("./539854.js"), require("./388685.js");
 var Chunk434179 = require("./434179.js"),
   Chunk771649 = require("./771649.js"),
@@ -63,7 +63,7 @@ async function O() {
     type: "REMOTE_SESSION_DISCONNECT"
   });
   let n = [];
-  ((null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION || (null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION_STAGING) && (null == module ? true : module.commandId) != null && (null == module ? true : module.deviceId) != null && require.push(D(module.type, module.deviceId, module.commandId)), null != exports && require.push(C(exports));
+  ((null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION || (null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION_STAGING) && (null == module ? true : module.commandId) != null && (null == module ? true : module.deviceId) != null && require.push(w(module.type, module.deviceId, module.commandId)), null != exports && require.push(C(exports));
   try {
     await Promise.all(require)
   } catch (e) {
@@ -97,7 +97,7 @@ function I(e, t) {
   }), y("VOICE_STATE_UPDATE", e)
 }
 
-function T(e) {
+function S(e) {
   o.Z.dispatch({
     type: "REMOTE_COMMAND",
     sessionId: e,
@@ -107,7 +107,7 @@ function T(e) {
   }), y("DISCONNECT", e), O()
 }
 
-function S(e, t, n, r) {
+function T(e, t, n, r) {
   let i = (0, l.z)(n);
   null != i && (o.Z.dispatch({
     type: "REMOTE_COMMAND",
@@ -211,7 +211,7 @@ async function P(e, t, n, i) {
     commandId: l
   }), l
 }
-async function D(e, t, n) {
+async function w(e, t, n) {
   o.Z.dispatch({
     type: "GAME_CONSOLE_DEVICE_CANCEL_COMMAND_START",
     platform: e,
@@ -239,7 +239,7 @@ async function D(e, t, n) {
     commandId: n
   })
 }
-async function w(e, t, n) {
+async function D(e, t, n) {
   await _.Z.maybeShowPTTAlert(e), await O();
   let r = await A();
   await P(e, t, n, r), (0, h.Z)(n.id, e)

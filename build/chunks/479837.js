@@ -29,9 +29,9 @@ function _() {
     I = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.id;
   if (null == O || null == I) return;
   let {
-    reachedLimit: v
+    reachedLimit: y
   } = (0, Chunk829750.t)(O);
-  if (!v) {
+  if (!y) {
     if (O.isGuildStageVoice()) {
       let e = Chunk565799.Z.getMutableParticipants(O.id, Chunk501655.pV.SPEAKER),
         t = null == module ? true : module.find(e => {

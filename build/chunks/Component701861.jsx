@@ -125,7 +125,7 @@ class P extends Chunk647438.PureComponent {
       onClick: this.handleOpenPrivateChannel,
       children: t => (0, r.jsxs)("div", {
         className: T.listItemContents,
-        children: [(0, r.jsx)(v.Z, {
+        children: [(0, r.jsx)(y.Z, {
           user: e,
           status: l,
           isMobile: a,
@@ -144,7 +144,7 @@ class P extends Chunk647438.PureComponent {
           children: [null != c && (0, r.jsx)(p.Z, {
             recipientUser: e,
             giftIntentType: c,
-            analyticsPage: y.ZY5.FRIENDS_LIST,
+            analyticsPage: v.ZY5.FRIENDS_LIST,
             shouldHighlight: t
           }), (0, r.jsx)(E.Z, {
             icon: o.kBi,
@@ -169,8 +169,8 @@ class P extends Chunk647438.PureComponent {
         user: t
       } = this.props;
       e.stopPropagation();
-      let n = a().find(m.Z.getMutablePrivateChannels(), e => e.type === y.d4z.DM && e.getRecipientId() === t.id);
-      null != n ? (0, f.uL)(y.Z5c.CHANNEL(y.ME, n.id)) : u.Z.openPrivateChannel({
+      let n = a().find(m.Z.getMutablePrivateChannels(), e => e.type === v.d4z.DM && e.getRecipientId() === t.id);
+      null != n ? (0, f.uL)(v.Z5c.CHANNEL(v.ME, n.id)) : u.Z.openPrivateChannel({
         recipientIds: t.id
       })
     }), N(this, "handleOpenActionsMenu", e => {

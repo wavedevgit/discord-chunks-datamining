@@ -369,7 +369,21 @@ let i = {
   },
   ClipsManager: {
     actions: ["RTC_CONNECTION_FLAGS", "RTC_CONNECTION_STATE", "POST_CONNECTION_OPEN", "RTC_CONNECTION_USERS_MERGED", "CLIPS_ALLOW_VOICE_RECORDING_UPDATE", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAME_TOGGLE_DETECTION", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO"],
-    inlineRequire: () => require("./220122.js").Z
+    inlineRequire: () => require("./220122.js").Z,
+    neverLoadBeforeConnectionOpen: true
+  },
+  ClipDecisionEngineManager: {
+    actions: ["CLIPS_SIGNAL_CREATED", "CLIPS_ENGINE_CONFIG_UPDATE", "SPEAKING", "GUILD_SOUNDBOARD_SOUND_PLAY_START", "GUILD_SOUNDBOARD_SOUND_PLAY_END", "VOICE_CHANNEL_SELECT"],
+    inlineRequire: () => require("./460779.js").Z
+  },
+  ClipsSignalManager: {
+    actions: ["RUNNING_GAMES_CHANGE", "CLIPS_SETTINGS_UPDATE", "VOICE_CHANNEL_SELECT", "VOICE_STATE_UPDATES"],
+    inlineRequire: () => require("./269278.js").Z
+  },
+  DistributedClipsManager: {
+    actions: ["MESSAGE_CREATE", "CLIPS_REMOTE_TRIGGER"],
+    inlineRequire: () => require("./663879.js").Z,
+    neverLoadBeforeConnectionOpen: true
   },
   CustomCallSoundsManager: {
     actions: ["RTC_CONNECTION_STATE", "SOUNDBOARD_MUTE_JOIN_SOUND", "VOICE_STATE_UPDATES"],

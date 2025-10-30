@@ -108,10 +108,10 @@ function K(e) {
     activity: i,
     entry: et,
     analyticsLocations: $
-  }), er = (0, T.Z)({
+  }), er = (0, S.Z)({
     userId: t.id,
     onAction: en
-  }), ei = (0, S.Z)(i), ea = null != ei.text && "" !== ei.text, {
+  }), ei = (0, T.Z)(i), ea = null != ei.text && "" !== ei.text, {
     largeImage: eo,
     smallImage: es
   } = (0, p.FO)(i, V), el = (0, j.Z)({
@@ -319,13 +319,13 @@ function K(e) {
   });
   return (0, r.jsx)(_.Gt, {
     value: $,
-    children: (0, r.jsxs)(D.Z, {
+    children: (0, r.jsxs)(w.Z, {
       ref: er,
       className: a()(F.card, z),
       onAction: en,
       onClose: q,
       "aria-labelledby": ea ? "".concat(J, " ").concat(Q) : Q,
-      children: [(0, r.jsx)(w.Z, W(H({
+      children: [(0, r.jsx)(D.Z, W(H({
         textId: J,
         tags: ec()
       }, ei), {

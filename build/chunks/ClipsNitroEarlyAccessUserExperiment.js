@@ -3,9 +3,13 @@
 "use strict";
 require.d(exports, {
   Go: () => d,
+  NS: () => m,
   NV: () => l,
+  PP: () => p,
   Zq: () => f,
-  ln: () => u
+  iL: () => _,
+  ln: () => u,
+  n7: () => h
 });
 var Chunk818083 = require("./818083.js"),
   Chunk441167 = require("./441167.js"),
@@ -21,7 +25,10 @@ let l = (0, Chunk818083.B)({
     defaultConfig: {
       enableClips: false,
       ignorePlatformRestriction: false,
-      showClipsHeaderEntrypoint: false
+      showClipsHeaderEntrypoint: false,
+      enableScreenshotKeybind: false,
+      enableVoiceOnlyClips: false,
+      enableAdvancedSignals: false
     },
     treatments: [{
       id: 1,
@@ -29,7 +36,10 @@ let l = (0, Chunk818083.B)({
       config: {
         enableClips: true,
         ignorePlatformRestriction: false,
-        showClipsHeaderEntrypoint: true
+        showClipsHeaderEntrypoint: true,
+        enableScreenshotKeybind: false,
+        enableVoiceOnlyClips: false,
+        enableAdvancedSignals: false
       }
     }, {
       id: 2,
@@ -37,7 +47,10 @@ let l = (0, Chunk818083.B)({
       config: {
         enableClips: true,
         ignorePlatformRestriction: false,
-        showClipsHeaderEntrypoint: true
+        showClipsHeaderEntrypoint: true,
+        enableScreenshotKeybind: false,
+        enableVoiceOnlyClips: false,
+        enableAdvancedSignals: false
       }
     }, {
       id: 99,
@@ -45,7 +58,10 @@ let l = (0, Chunk818083.B)({
       config: {
         enableClips: true,
         ignorePlatformRestriction: true,
-        showClipsHeaderEntrypoint: true
+        showClipsHeaderEntrypoint: true,
+        enableScreenshotKeybind: true,
+        enableVoiceOnlyClips: true,
+        enableAdvancedSignals: true
       }
     }]
   }),
@@ -56,7 +72,10 @@ let l = (0, Chunk818083.B)({
     defaultConfig: {
       enableClips: false,
       enablePremiumEarlyAccessAnnouncementCoachmark: false,
-      enablePremiumEarlyAccessGoLiveRoadblock: false
+      enablePremiumEarlyAccessGoLiveRoadblock: false,
+      enableScreenshotKeybind: false,
+      enableVoiceOnlyClips: false,
+      enableAdvancedSignals: false
     },
     treatments: [{
       id: 1,
@@ -64,7 +83,10 @@ let l = (0, Chunk818083.B)({
       config: {
         enableClips: false,
         enablePremiumEarlyAccessAnnouncementCoachmark: true,
-        enablePremiumEarlyAccessGoLiveRoadblock: true
+        enablePremiumEarlyAccessGoLiveRoadblock: true,
+        enableScreenshotKeybind: false,
+        enableVoiceOnlyClips: false,
+        enableAdvancedSignals: false
       }
     }, {
       id: 2,
@@ -72,7 +94,10 @@ let l = (0, Chunk818083.B)({
       config: {
         enableClips: true,
         enablePremiumEarlyAccessAnnouncementCoachmark: true,
-        enablePremiumEarlyAccessGoLiveRoadblock: false
+        enablePremiumEarlyAccessGoLiveRoadblock: false,
+        enableScreenshotKeybind: false,
+        enableVoiceOnlyClips: false,
+        enableAdvancedSignals: false
       }
     }]
   });
@@ -138,4 +163,48 @@ let f = e => {
     autoTrackExposure: t && n
   });
   return !!n && r
+};
+
+function _() {
+  let {
+    enableScreenshotKeybind: e
+  } = l.getCurrentConfig({
+    location: "isScreenshotKeybindEnabled"
+  }, {
+    autoTrackExposure: false
+  });
+  return module
+}
+
+function p() {
+  let {
+    enableScreenshotKeybind: e
+  } = l.useExperiment({
+    location: "useScreenshotKeybindEnabled"
+  }, {
+    autoTrackExposure: false
+  });
+  return module
+}
+
+function h() {
+  let {
+    enableVoiceOnlyClips: e
+  } = l.getCurrentConfig({
+    location: "areVoiceOnlyClipsEnabled"
+  }, {
+    autoTrackExposure: false
+  });
+  return module
+}
+
+function m() {
+  let {
+    enableAdvancedSignals: e
+  } = l.getCurrentConfig({
+    location: "areAdvancedSignalsEnabled"
+  }, {
+    autoTrackExposure: false
+  });
+  return module
 }

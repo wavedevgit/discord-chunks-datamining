@@ -67,15 +67,15 @@ function p(e) {
     renderRow: O,
     renderSection: v,
     renderSectionHeader: I,
-    renderSectionFooter: T,
-    renderInspector: S,
+    renderSectionFooter: S,
+    renderInspector: T,
     renderEmptySearchState: A,
     renderCategoryList: C,
     renderHeaderAccessories: N,
     rowHeight: R,
     sectionHeaderHeight: P,
-    sectionFooterHeight: D,
-    itemNodeWidth: w,
+    sectionFooterHeight: w,
+    itemNodeWidth: D,
     listPaddingRight: L,
     itemNodeMargin: x,
     listPadding: M,
@@ -98,7 +98,7 @@ function p(e) {
     collapsedCategories: n,
     gridWidth: W,
     listPaddingRight: L,
-    itemNodeWidth: w,
+    itemNodeWidth: D,
     itemNodeMargin: x
   }), {
     getItemProps: J,
@@ -119,10 +119,10 @@ function p(e) {
     rowIndex: e,
     totalRowCount: z,
     sectionIndex: t.sectionIndex
-  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, Q, en, O, f, z]), ei = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), ea = i.useCallback(e => null == T ? true : T(t[e], e), [t, T]), eo = i.useCallback(() => {
+  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, Q, en, O, f, z]), ei = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), ea = i.useCallback(e => null == S ? true : S(t[e], e), [t, S]), eo = i.useCallback(() => {
     var e;
-    return null == S ? true : S(null == K || null == (e = K[Y.rowIndex]) ? true : e[Y.columnIndex])
-  }, [K, Y.columnIndex, Y.rowIndex, S]);
+    return null == T ? true : T(null == K || null == (e = K[Y.rowIndex]) ? true : e[Y.columnIndex])
+  }, [K, Y.columnIndex, Y.rowIndex, T]);
   i.useEffect(() => {
     h(H)
   }, [h, H]), i.useEffect(() => {
@@ -166,14 +166,14 @@ function p(e) {
           renderRow: er,
           renderSection: v,
           renderSectionHeader: null != I ? ei : true,
-          renderSectionFooter: null != T ? ea : true,
-          renderInspector: null != S ? eo : true,
+          renderSectionFooter: null != S ? ea : true,
+          renderInspector: null != T ? eo : true,
           renderEmptySearchState: A,
           rowCount: z,
           rowCountBySection: q,
           rowHeight: R,
           sectionHeaderHeight: P,
-          sectionFooterHeight: D,
+          sectionFooterHeight: w,
           renderUpsell: G,
           onScroll: m
         }) : null

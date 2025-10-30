@@ -5,7 +5,7 @@ require.d(exports, {
   G6: () => I,
   hY: () => g,
   og: () => v,
-  rO: () => T,
+  rO: () => S,
   vu: () => _
 });
 var r, i, a, o, s, l, Chunk525654 = require("./525654.js"),
@@ -47,7 +47,7 @@ function I() {
   return false !== exports.indexOf("safari") && false === exports.indexOf("chrome") && false !== exports.indexOf("version/")
 }
 
-function T() {
+function S() {
   var e;
   let t = window.navigator,
     n = (null == (e = exports.mediaCapabilities) ? true : module.decodingInfo) != null;

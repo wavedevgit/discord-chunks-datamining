@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 213713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -117,20 +117,20 @@ function A() {
       var e, t, n;
       return parseInt(R) > 0 ? R : null != (n = null == (e = Chunk77498.Z.getGameByName(R)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(R)) ? true : exports.id
     }, [R]),
-    M = (0, Chunk168524.Z)({
+    L = (0, Chunk168524.Z)({
       applicationId: Z,
       location: "DevToolsContentInventory",
       source: Chunk810568.m1.DevTools
     }),
-    L = Object.entries(null != (t = Chunk433517.K.get("GameProfileModal")) ? exports : {}).filter(e => {
+    M = Object.entries(null != (t = Chunk433517.K.get("GameProfileModal")) ? exports : {}).filter(e => {
       let [t, n] = e;
       return n
     }).map(e => {
       let [t] = e;
       return t
     }),
-    U = (0, Chunk835473.Z)(L).filter(Chunk823379.lm),
-    F = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
+    U = (0, Chunk835473.Z)(M).filter(Chunk823379.lm),
+    B = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
   return (0, Chunk951288.jsx)("div", {
     className: Chunk451429.panel,
     children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
@@ -207,10 +207,10 @@ function A() {
           placeholder: "App ID or full name",
           onChange: e => (0 === e.length || e.length >= 18) && A(e),
           onKeyDown: e => {
-            "Enter" === e.key && (R === e.currentTarget.value ? null == M || M(e) : A(e.currentTarget.value))
+            "Enter" === e.key && (R === e.currentTarget.value ? null == L || L(e) : A(e.currentTarget.value))
           },
-          error: R.length > 0 && null == M ? "No game profile for ".concat(null != Z ? Z : R + " - try by id", ".") : true,
-          successMessage: null != M ? "Game profile found" : true
+          error: R.length > 0 && null == L ? "No game profile for ".concat(null != Z ? Z : R + " - try by id", ".") : true,
+          successMessage: null != L ? "Game profile found" : true
         }), (0, Chunk951288.jsx)("ul", {
           children: U.map(e => (0, a.jsx)("li", {
             children: (0, a.jsx)(D, {
@@ -231,7 +231,7 @@ function A() {
             label: e,
             value: e
           })),
-          isSelected: e => e === F,
+          isSelected: e => e === B,
           select: function(e) {
             h.Z.dispatch({
               type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",

@@ -47,7 +47,7 @@ function I() {
   v.clear()
 }
 
-function T(e) {
+function S(e) {
   var t, n;
   let r = null != (n = null != (t = h.ZP.lastMessageId(e.id)) ? t : e.lastMessageId) ? n : e.id,
     i = e.isMessageRequestTimestamp;
@@ -59,8 +59,8 @@ function T(e) {
   return r
 }
 
-function S(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(e);
+function T(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : S(e);
   return {
     channelId: e.id,
     lastMessageId: t,
@@ -71,7 +71,7 @@ function S(e) {
 
 function A() {
   v.clear(), Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
-    v.set(e.id, S(e))
+    v.set(e.id, T(e))
   })
 }
 
@@ -80,7 +80,7 @@ function C(e) {
     channel: t
   } = e;
   if (!(0, f.hv)(t.type) || t.id === c.V) returnfalse;
-  v.set(t.id, S(t))
+  v.set(t.id, T(t))
 }
 
 function N(e) {
@@ -88,7 +88,7 @@ function N(e) {
     channels: t
   } = e;
   t.forEach(e => {
-    ((0, f.hv)(e.type) || v.has(e.id)) && v.set(e.id, S(e))
+    ((0, f.hv)(e.type) || v.has(e.id)) && v.set(e.id, T(e))
   })
 }
 
@@ -106,17 +106,17 @@ function P(e) {
   } = e;
   if (!v.has(t)) returnfalse;
   let r = _.Z.getChannel(t);
-  return null != r && v.set(t, S(r, n.id))
+  return null != r && v.set(t, T(r, n.id))
 }
 
-function D(e) {
+function w(e) {
   let t = e.guild.id;
   return v.delete(t)
 }
 
-function w() {
+function D() {
   let e = Chunk592125.Z.getMutablePrivateChannels();
-  for (let t in module) v.set(exports, S(module[exports]))
+  for (let t in module) v.set(exports, T(module[exports]))
 }
 let L = (() => {
   let e = [],
@@ -164,12 +164,12 @@ let M = new x(Chunk570140.Z, {
   CONNECTION_OPEN: A,
   CONNECTION_OPEN_SUPPLEMENTAL: A,
   OVERLAY_INITIALIZE: A,
-  CACHE_LOADED: w,
-  CACHE_LOADED_LAZY: w,
+  CACHE_LOADED: D,
+  CACHE_LOADED_LAZY: D,
   CHANNEL_UPDATES: N,
   CHANNEL_CREATE: C,
   CHANNEL_DELETE: R,
   MESSAGE_CREATE: P,
-  GUILD_CREATE: D,
+  GUILD_CREATE: w,
   LOGOUT: I
 })

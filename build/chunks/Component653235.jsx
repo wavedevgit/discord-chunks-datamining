@@ -2,7 +2,7 @@
 /** chunk id: 653235, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk774802 = require("./774802.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -120,14 +120,14 @@ class P extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), T(this, "_masonryRef", i.createRef()), T(this, "state", {
+    super(...e), S(this, "_masonryRef", i.createRef()), S(this, "state", {
       favoritesTile: R(this.props.favorites),
       selectedIndex: {
         column: 0,
         row: 0
       },
       focusedId: null
-    }), T(this, "handleFocus", e => {
+    }), S(this, "handleFocus", e => {
       let {
         current: t
       } = this._masonryRef;
@@ -139,19 +139,19 @@ class P extends Chunk647438.PureComponent {
       }), this.setState({
         focusedId: e
       }))
-    }), T(this, "handleSelect", e => {
+    }), S(this, "handleSelect", e => {
       let {
         onSelectItem: t
       } = this.props, n = this.getData().find(t => t.name === e);
       null != n && null != t && t(n.type, n.name)
-    }), T(this, "getItemKey", (e, t) => {
+    }), S(this, "getItemKey", (e, t) => {
       if (e > 0) return null;
       let n = this.getData()[t];
       return null != n ? n.name : null
-    }), T(this, "memoizedData", (0, m.oH)(function(e, t) {
+    }), S(this, "memoizedData", (0, m.oH)(function(e, t) {
       let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
       return n ? [...t] : [e, ...t]
-    })), T(this, "renderItem", (e, t, n, i) => {
+    })), S(this, "renderItem", (e, t, n, i) => {
       if (e > 0) return null;
       let a = this.getData()[t];
       if (null == a) return;
@@ -175,7 +175,7 @@ class P extends Chunk647438.PureComponent {
         imagePool: s,
         videoPool: l
       }, i)
-    }), T(this, "renderContent", (e, t, n) => {
+    }), S(this, "renderContent", (e, t, n) => {
       let {
         className: i,
         trendingCategories: a
@@ -196,12 +196,12 @@ class P extends Chunk647438.PureComponent {
         sections: [this.getData().length],
         chunkSize: 50
       })
-    }), T(this, "getItemGrid", () => {
+    }), S(this, "getItemGrid", () => {
       let {
         current: e
       } = this._masonryRef;
       return null != e ? e.getItemGrid() : []
-    }), T(this, "getCoordsMap", () => {
+    }), S(this, "getCoordsMap", () => {
       let {
         current: e
       } = this._masonryRef;
@@ -210,11 +210,11 @@ class P extends Chunk647438.PureComponent {
   }
 }
 
-function D(e) {
+function w(e) {
   let t = (0, c.e7)([h.Z], () => h.Z.getTrendingCategories()),
     n = (0, g.gG)(),
     i = (0, y.PY)();
-  return (0, r.jsx)(P, C(S({}, e, i), {
+  return (0, r.jsx)(P, C(T({}, e, i), {
     trendingCategories: t,
     favorites: n
   }))

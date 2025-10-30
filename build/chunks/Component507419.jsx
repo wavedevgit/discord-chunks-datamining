@@ -18,38 +18,38 @@ let m = Chunk647438.memo(function(e) {
     sound: n,
     volume: t,
     disabled: m
-  } = e, [g, h] = l.useState(false), p = l.useRef(null), {
-    file: b,
-    audio: y,
-    loadAudioFromFile: v
-  } = (0, s.p)(), x = l.useMemo(() => (0, i.Z)(n.soundId), [n]);
-  return l.useEffect(() => {
-    null == p.current && (p.current = (0, u.XG)(x, n.name).then(v))
-  }, [x, v, n.name]), (0, a.jsxs)("div", {
+  } = e, [g, h] = a.useState(false), v = a.useRef(null), {
+    file: p,
+    audio: b,
+    loadAudioFromFile: y
+  } = (0, o.p)(), j = a.useMemo(() => (0, r.Z)(n.soundId), [n]);
+  return a.useEffect(() => {
+    null == v.current && (v.current = (0, u.XG)(j, n.name).then(y))
+  }, [j, y, n.name]), (0, l.jsxs)("div", {
     className: f.previewContainer,
-    children: [(0, a.jsx)(r.P3F, {
+    children: [(0, l.jsx)(i.P3F, {
       onClick: m ? true : function() {
-        null != y && (y.paused ? (y.volume = (0, o.Z)(t), y.currentTime = 0, y.play(), h(true), y.addEventListener("ended", () => h(false), {
+        null != b && (b.paused ? (b.volume = (0, s.Z)(t), b.currentTime = 0, b.play(), h(true), b.addEventListener("ended", () => h(false), {
           once: true
-        })) : (y.pause(), h(false)))
+        })) : (b.pause(), h(false)))
       },
       className: f.playButton,
       "aria-label": g ? d.intl.string(d.t.hHBkuG) : d.intl.string(d.t.RscU7I),
-      children: g ? (0, a.jsx)(r.wNq, {
+      children: g ? (0, l.jsx)(i.wNq, {
         size: "xs",
         color: "currentColor",
         className: f.playIcon
-      }) : (0, a.jsx)(r.o1U, {
+      }) : (0, l.jsx)(i.o1U, {
         size: "xs",
         color: "currentColor",
         className: f.playIcon
       })
-    }), (0, a.jsx)("div", {
+    }), (0, l.jsx)("div", {
       className: f.waveformContainer,
-      children: (0, a.jsx)(c.Z, {
+      children: (0, l.jsx)(c.Z, {
         className: f.waveform,
-        file: b,
-        audio: y
+        file: p,
+        audio: b
       })
     })]
   })

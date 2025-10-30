@@ -2,7 +2,7 @@
 /** chunk id: 503089, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $x: () => S,
+  $x: () => T,
   ZP: () => P,
   d7: () => C,
   w6: () => A
@@ -63,12 +63,12 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = Object.freeze({
+let S = Object.freeze({
     shouldPreventNavigation: false,
     onPreventNavigation: null,
     sidebarOpen: true
   }),
-  S = 1.4,
+  T = 1.4,
   A = 15,
   C = 2;
 
@@ -113,7 +113,7 @@ class R extends Chunk647438.PureComponent {
     let {
       section: t
     } = e;
-    t !== this.props.section && (this._intensity = S)
+    t !== this.props.section && (this._intensity = T)
   }
   componentWillUnmount() {
     this._unmounted = true, this._subscribedStores.forEach(e => e.removeChangeListener(this.handleNoticeStoreUpdate)), this.props.sections.forEach(e => {
@@ -134,7 +134,7 @@ class R extends Chunk647438.PureComponent {
     return null != require && require.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (Chunk585483.S.dispatch(Chunk981631.CkL.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
-    }), this._intensity = Math.min(this._intensity + C, A), Chunk585483.S.dispatch(Chunk981631.CkL.EMPHASIZE_NOTICE), false) : (this._intensity = S, true)
+    }), this._intensity = Math.min(this._intensity + C, A), Chunk585483.S.dispatch(Chunk981631.CkL.EMPHASIZE_NOTICE), false) : (this._intensity = T, true)
   }
   renderSidebar(e) {
     let {
@@ -227,7 +227,7 @@ class R extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), y(this, "_unmounted", false), y(this, "_intensity", S), y(this, "_subscribedStores", []), y(this, "scrollerRef", i.createRef()), y(this, "state", I(O({}, T), {
+    super(...e), y(this, "_unmounted", false), y(this, "_intensity", T), y(this, "_subscribedStores", []), y(this, "scrollerRef", i.createRef()), y(this, "state", I(O({}, S), {
       sidebarOpen: this.props.section !== g.oAB.SUBSCRIPTIONS && this.props.section !== g.oAB.PROFILE_CUSTOMIZATION
     })), y(this, "setPreventNavigation", (e, t) => {
       this.setState({
@@ -249,7 +249,7 @@ class R extends Chunk647438.PureComponent {
         } = null != (r = n.find(t => e === t.section)) ? r : {}, a = null != i ? i.stores : null;
         null != a && a.forEach(e => {
           this._subscribedStores.includes(e) || (e.addChangeListener(this.handleNoticeStoreUpdate), this._subscribedStores.push(e))
-        }), this.setState(I(O({}, T), {
+        }), this.setState(I(O({}, S), {
           sidebarOpen: false
         }))
       };
@@ -265,7 +265,7 @@ class R extends Chunk647438.PureComponent {
         null == e || e()
       }
     }), y(this, "handleNoticeStoreUpdate", () => {
-      this._unmounted || (this._intensity = S, this.forceUpdate())
+      this._unmounted || (this._intensity = T, this.forceUpdate())
     }), y(this, "renderSettingsSectionTabBarItem", (e, t, n) => {
       let {
         section: i,

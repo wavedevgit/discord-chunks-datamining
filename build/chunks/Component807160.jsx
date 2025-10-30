@@ -192,7 +192,7 @@ function ef(e) {
   } = e, r = (0, y.hO)(t, n, {
     requireCurrentGuild: false
   }), o = (0, v.C)(r), s = (0, f.e7)([L.Z], () => L.Z.getGuild(t)), l = (null == r ? true : r.role_id) != null && (null == r ? true : r.attachments_count) === 0 ? K.intl.string(K.t.H11qcT) : o, c = a.useCallback(async () => {
-    (null == s ? true : s.features.has(H.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? await (0, S.Z)(H.Z5c.GUILD_PRODUCT(t, n)) : await (0, S.Z)(H.Z5c.CHANNEL(t)), (0, P.default)()
+    (null == s ? true : s.features.has(H.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? await (0, T.Z)(H.Z5c.GUILD_PRODUCT(t, n)) : await (0, T.Z)(H.Z5c.CHANNEL(t)), (0, P.default)()
   }, [s, t, n]);
   return (0, i.jsxs)(i.Fragment, {
     children: [null != l && (0, i.jsx)(ed, {
@@ -215,7 +215,7 @@ function e_(e) {
     guildProductListingId: a
   } = e, o = (0, y.hO)(r, a, {
     requireCurrentGuild: false
-  }), s = (0, f.e7)([O.Z], () => O.Z.getGuildProductFetchState(a) === O.M.FETCHING), l = null == o ? true : o.role_id, c = (0, f.e7)([w.Z], () => null != l ? w.Z.getRole(r, l) : true, [r, l]), u = (0, T.Z)({
+  }), s = (0, f.e7)([O.Z], () => O.Z.getGuildProductFetchState(a) === O.M.FETCHING), l = null == o ? true : o.role_id, c = (0, f.e7)([D.Z], () => null != l ? D.Z.getRole(r, l) : true, [r, l]), u = (0, S.Z)({
     guildId: r,
     productId: a
   }), d = (null != (n = null == o || null == (t = o.attachments) ? true : t.length) ? n : 0) > 0, h = null != c;

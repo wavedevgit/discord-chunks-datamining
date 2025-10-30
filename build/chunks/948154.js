@@ -69,9 +69,9 @@ function v(e) {
     feature: p.Lr
   })
 }
-let I = (0, Chunk392711.throttle)(S, O);
+let I = (0, Chunk392711.throttle)(T, O);
 
-function T(e) {
+function S(e) {
   let t = _.Z.getChannelInfoMap(),
     n = [];
   for (let i of e) {
@@ -89,7 +89,7 @@ function T(e) {
   }
   return n
 }
-async function S(e) {
+async function T(e) {
   var t, {
       preload: n = false
     } = e,
@@ -97,7 +97,7 @@ async function S(e) {
   let a = Date.now(),
     o = _.Z.getNotifyingChannelIds();
   if (null == o) return;
-  let s = n ? [] : T(o),
+  let s = n ? [] : S(o),
     c = l.ZP.getMentions(),
     u = null != c && c.length > 0 ? c[c.length - 1].id : null,
     d = false;

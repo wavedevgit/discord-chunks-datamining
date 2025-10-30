@@ -57,7 +57,7 @@ let p = function(e) {
     scrollToStart: b,
     scrollToEnd: E,
     setFocus: O
-  }), v = i.useMemo(() => t.map(e => e.length), [t]);
+  }), y = i.useMemo(() => t.map(e => e.length), [t]);
   return (0, r.jsx)(a.bG, {
     navigator: I,
     children: (0, r.jsx)(a.SJ, {
@@ -106,7 +106,7 @@ let p = function(e) {
             rowHeight: u.NV,
             renderSection: h,
             sectionHeight: u.aS,
-            sections: v,
+            sections: y,
             className: d.peopleList
           }, n)), f]
         })

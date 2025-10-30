@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 916790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -77,7 +77,7 @@ let w = [{
     } = e, r = c()(n.createdAt);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)(_.E, {
-        className: O.actionProperties,
+        className: T.actionProperties,
         children: [(0, a.jsx)(_.Z9, {
           name: "Created at",
           children: (0, a.jsx)("time", {
@@ -90,7 +90,7 @@ let w = [{
           children: [N(n.totalTime), " ms"]
         })]
       }), (0, a.jsx)(m.zJl, {
-        className: O.inspectorContainer,
+        className: T.inspectorContainer,
         children: (0, a.jsx)(j.Z, {
           data: n.action
         })
@@ -118,8 +118,8 @@ function k(e) {
   } = e, l = r.useMemo(() => t.error ? [...w, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(g.Z, {
-        className: O.errorIcon
+      children: [(0, a.jsx)(f.Z, {
+        className: T.errorIcon
       }), "Error"]
     }),
     group: S.v0.NONE,
@@ -129,18 +129,18 @@ function k(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: i()(O.errorToolbar, T.toolbar),
+          className: i()(T.errorToolbar, O.toolbar),
           children: (0, a.jsx)("div", {
-            className: T.toolbarGroup,
+            className: O.toolbarGroup,
             children: (0, a.jsx)(u.zx, {
-              className: T.toolbarButton,
+              className: O.toolbarButton,
               size: u.zx.Sizes.MIN,
               onClick: () => console.error(t.error),
               children: "Log to Console"
             })
           })
         }), (0, a.jsx)(m.zJl, {
-          className: O.inspectorContainer,
+          className: T.inspectorContainer,
           children: (0, a.jsx)(j.Z, {
             data: t.error
           })
@@ -154,17 +154,17 @@ function k(e) {
     tabs: l
   }, [l]);
   return (0, a.jsxs)(y.Z, {
-    className: O.subPanel,
+    className: T.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(o, {}), (0, a.jsxs)(h.ZP, {
-      className: i()(T.headerBar, O.subPanelHeaderBar),
+      className: i()(O.headerBar, T.subPanelHeaderBar),
       children: [(0, a.jsx)(h.ZP.Icon, {
         icon: m.xVZ,
         tooltip: t.name
       }), (0, a.jsx)(h.ZP.Title, {
-        wrapperClassName: i()(T.headerTitle, T.dispatcherHeader),
-        className: T.headerTitleText,
+        wrapperClassName: i()(O.headerTitle, O.dispatcherHeader),
+        className: O.headerTitleText,
         children: t.name
       }), (0, a.jsx)(h.ZP.Icon, {
         icon: m.TIy,
@@ -195,8 +195,8 @@ let R = [{
         actionLog: t
       } = e;
       return (0, a.jsxs)(a.Fragment, {
-        children: [t.error && (0, a.jsx)(g.Z, {
-          className: O.errorIcon
+        children: [t.error && (0, a.jsx)(f.Z, {
+          className: T.errorIcon
         }), t.name]
       })
     }
@@ -249,7 +249,7 @@ function D() {
     })).toReversed(), [Chunk120356]),
     [c, u] = Chunk647438.useState(Chunk913527),
     [h, x] = Chunk647438.useState(Chunk913527),
-    [g, b] = Chunk647438.useState(false),
+    [f, b] = Chunk647438.useState(false),
     [v, j] = Chunk647438.useState(),
     _ = Chunk647438.useCallback(e => {
       x(e)

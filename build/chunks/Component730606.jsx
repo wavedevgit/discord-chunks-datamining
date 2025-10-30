@@ -4,7 +4,7 @@
 require.d(exports, {
   Qk: () => C,
   WG: () => P,
-  ZP: () => D
+  ZP: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -105,7 +105,7 @@ function P(e, t) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     items: t,
     onIndexChange: n,
@@ -121,14 +121,14 @@ function D(e) {
   i.useEffect(() => {
     let e = () => P(p.current + 1),
       t = () => P(p.current - 1);
-    return h.S.subscribe(T.CkL.MODAL_CAROUSEL_NEXT, e), h.S.subscribe(T.CkL.MODAL_CAROUSEL_PREV, t), () => {
-      h.S.unsubscribe(T.CkL.MODAL_CAROUSEL_NEXT, e), h.S.unsubscribe(T.CkL.MODAL_CAROUSEL_PREV, t)
+    return h.S.subscribe(S.CkL.MODAL_CAROUSEL_NEXT, e), h.S.subscribe(S.CkL.MODAL_CAROUSEL_PREV, t), () => {
+      h.S.unsubscribe(S.CkL.MODAL_CAROUSEL_NEXT, e), h.S.unsubscribe(S.CkL.MODAL_CAROUSEL_PREV, t)
     }
   }, [P, C]);
-  let D = t[f],
-    w = (0, d.g4)({
+  let w = t[f],
+    D = (0, d.g4)({
       type: c.l.GenericMedia,
-      media: D
+      media: w
     }, l),
     L = u ? e => {
       e.stopPropagation(), e.preventDefault()
@@ -139,17 +139,17 @@ function D(e) {
       children: e => x ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(v.Z, {
           onClick: e => {
-            e.stopPropagation(), h.S.dispatch(T.CkL.MODAL_CAROUSEL_PREV)
+            e.stopPropagation(), h.S.dispatch(S.CkL.MODAL_CAROUSEL_PREV)
           },
           icon: s.j9r,
-          tooltip: S.intl.string(S.t.vgfxaA),
+          tooltip: T.intl.string(T.t.vgfxaA),
           className: o()(A.navPrev, e)
         }), (0, r.jsx)(v.Z, {
           onClick: e => {
-            e.stopPropagation(), h.S.dispatch(T.CkL.MODAL_CAROUSEL_NEXT)
+            e.stopPropagation(), h.S.dispatch(S.CkL.MODAL_CAROUSEL_NEXT)
           },
           icon: s.d4D,
-          tooltip: S.intl.string(S.t.XiOHRX),
+          tooltip: T.intl.string(T.t.XiOHRX),
           className: o()(A.navNext, e)
         })]
       }) : true
@@ -157,10 +157,10 @@ function D(e) {
       items: t,
       currentIndex: f,
       children: (e, t) => (0, r.jsx)(R, {
-        isObscured: !m && w,
-        src: D.url,
+        isObscured: !m && D,
+        src: w.url,
         children: n => (0, r.jsx)(I.ZP, {
-          media: D,
+          media: w,
           maxWidth: e,
           maxHeight: t,
           obscured: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 120786, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => _
@@ -58,7 +58,7 @@ let j = () => {
       })
     }, [l]);
     return (0, a.jsxs)("div", {
-      className: i()(f.container, g.baseCardOutline),
+      className: i()(g.container, f.baseCardOutline),
       children: [(0, a.jsx)(j, {}), (0, a.jsx)(s.zxk, {
         text: t,
         variant: "primary",
@@ -66,16 +66,16 @@ let j = () => {
         onClick: n,
         fullWidth: true
       }), (0, a.jsxs)("div", {
-        className: f.linkContainer,
+        className: g.linkContainer,
         children: [true !== o && (0, a.jsxs)(c.Text, {
           variant: "text-xs/normal",
-          className: f.linkPreText,
+          className: g.linkPreText,
           children: [o, "\xa0"]
         }), (0, a.jsx)(c.Anchor, {
           target: "_blank",
           rel: "author",
           href: m.Z.getArticleURL(h.BhN.ORBS_FAQ),
-          className: f.learnMoreLink,
+          className: g.learnMoreLink,
           onClick: u,
           children: d
         })]

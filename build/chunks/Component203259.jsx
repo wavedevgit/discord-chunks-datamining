@@ -1,47 +1,70 @@
 /** Chunk was on 1272 **/
 /** chunk id: 203259, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => p
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk755721 = require("./755721.js"),
-  Chunk481060 = require("./481060.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk907862 = require("./907862.js"),
+  Chunk435064 = require("./435064.js"),
+  Chunk894694 = require("./894694.js"),
   Chunk39604 = require("./39604.js"),
-  Chunk176127 = require("./176127.jsx"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk703849 = require("./703849.js");
+  Chunk572720 = require("./572720.js"),
+  Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function p(e) {
   let {
     onOpenClipsGallery: t,
     clipIconRef: n,
-    lastClipsSession: u
-  } = e;
-  return (0, r.jsxs)(l.gqK, {
-    tooltipClassName: c.reminderTooltip,
-    tooltipContentClassName: c.tooltipContent,
+    lastClipsSession: p
+  } = e, f = (0, l.e7)([s.Z], () => {
+    var e;
+    let t = null == (e = s.Z.getLastClipsSession()) ? true : e.newClipIds;
+    return null == t ? null : s.Z.getClips().filter(e => t.includes(e.id))[0]
+  }), m = (0, u.l)(f), h = i.useCallback(() => {
+    (0, c.eL)()
+  }, []);
+  return null == f ? null : f.type !== o.NJ.SCREENSHOT && f.type !== o.NJ.VOICE_CLIP && null != m ? (0, r.jsx)(a.Mb, {
     targetElementRef: {
       current: n
     },
     position: "bottom",
-    color: l.r6K.PRIMARY,
-    children: [(0, r.jsx)(s.Z, {}), (0, r.jsx)(l.Heading, {
-      variant: "heading-md/extrabold",
-      children: o.intl.format(o.t["+qxkzC"], {
-        count: u.newClipIds.length
-      })
-    }), (0, r.jsxs)("div", {
-      className: c.buttonContainer,
-      children: [(0, r.jsx)(i.zx, {
-        color: i.zx.Colors.TRANSPARENT,
-        onClick: a.eL,
-        children: o.intl.string(o.t.WAI6xu)
-      }), (0, r.jsx)(l.Button, {
-        variant: "primary",
-        text: o.intl.string(o.t.tQPBml),
-        onClick: t
-      })]
-    })]
+    title: d.intl.string(d.t.JugHO7),
+    body: d.intl.format(d.t["+qxkzC"], {
+      count: p.newClipIds.length
+    }),
+    assetUrl: m,
+    disableMediaViewer: true,
+    caretConfig: {
+      position: "top",
+      align: "center"
+    },
+    action: {
+      text: d.intl.string(d.t.tQPBml),
+      onClick: t
+    },
+    onRequestClose: h
+  }) : (0, r.jsx)(a.J2, {
+    targetElementRef: {
+      current: n
+    },
+    position: "bottom",
+    title: d.intl.string(d.t.JugHO7),
+    body: d.intl.format(d.t["+qxkzC"], {
+      count: p.newClipIds.length
+    }),
+    graphic: null != f.thumbnail ? {
+      type: "image",
+      src: f.thumbnail
+    } : true,
+    caretConfig: {
+      align: "center"
+    },
+    actions: [{
+      text: d.intl.string(d.t.tQPBml),
+      onClick: t
+    }],
+    onRequestClose: h
   })
 }

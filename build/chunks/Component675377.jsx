@@ -236,7 +236,7 @@ function K(e) {
       (0, g.ZDy)(async () => {
         let {
           default: e
-        } = await n.e("56035").then(n.bind(n, 758961));
+        } = await Promise.all([n.e("56035"), n.e("87262")]).then(n.bind(n, 758961));
         return n => (0, r.jsx)(e, U(M({}, n), {
           guildId: t.id
         }))
@@ -396,7 +396,7 @@ function Y(e) {
           e.stopPropagation(), (0, g.ZDy)(async () => {
             let {
               default: e
-            } = await n.e("56035").then(n.bind(n, 758961));
+            } = await Promise.all([n.e("56035"), n.e("87262")]).then(n.bind(n, 758961));
             return n => (0, r.jsx)(e, U(M({}, n), {
               guildId: o.id,
               existingSound: t

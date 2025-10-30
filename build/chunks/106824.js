@@ -161,26 +161,26 @@ class g extends Chunk836560.EventEmitter {
     f.allowSoundmoji = f.allowSoundmoji ? v : f.allowSoundmoji;
     let {
       results: I,
-      metadata: T
-    } = E.queryResults(this.props.channel, this.props.guild, b, f, y), S = 0;
-    for (let e of Object.values(I)) Array.isArray(module) && (S += module.length);
+      metadata: S
+    } = E.queryResults(this.props.channel, this.props.guild, b, f, y), T = 0;
+    for (let e of Object.values(I)) Array.isArray(module) && (T += module.length);
     let A = true === I.isLoading,
-      C = this.shouldShow(S, A, E),
+      C = this.shouldShow(T, A, E),
       N = this.state.selectedIndex;
-    !C || A ? N = null : null != N && N >= S && (N = S - 1);
+    !C || A ? N = null : null != N && N >= T && (N = T - 1);
     let R = null != this.props.guild && Chunk627050.N.getCurrentConfig({
       guildId: this.props.guild.id,
       location: "mention autocomplete"
     }, {
       autoTrackExposure: true
     }).enabled;
-    C && !this.state.isVisible && (0, Chunk376918.a7)(g, this.props.channel, T, R), this.setState({
+    C && !this.state.isVisible && (0, Chunk376918.a7)(g, this.props.channel, S, R), this.setState({
       query: {
         type: g,
         typeInfo: E,
         queryText: b,
         results: I,
-        resultCount: S,
+        resultCount: T,
         options: f,
         isLoading: A
       },

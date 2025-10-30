@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   C: () => v,
-  Z: () => D
+  Z: () => w
 }), require("./35282.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -73,18 +73,18 @@ let y = 10,
     numFrequentlyItems: v,
     maxSamples: y
   }),
-  T = null,
-  S = null;
+  S = null,
+  T = null;
 
 function A(e) {
   let {
     guildId: t,
     channelId: n
   } = e, r = false;
-  return n !== T && (T = null != n ? n : null, null != n && p.Xyh.test(n) && (r = true, I.track(n), R.pendingUsages.push({
+  return n !== S && (S = null != n ? n : null, null != n && p.Xyh.test(n) && (r = true, I.track(n), R.pendingUsages.push({
     key: n,
     timestamp: Date.now()
-  }))), t !== S && (S = null != t ? t : null, null != t && p.Xyh.test(t) && (r = true, I.track(t), R.pendingUsages.push({
+  }))), t !== T && (T = null != t ? t : null, null != t && p.Xyh.test(t) && (r = true, I.track(t), R.pendingUsages.push({
     key: t,
     timestamp: Date.now()
   }))), r
@@ -143,7 +143,7 @@ class P extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 m(P, "displayName", "FrecencyStore"), m(P, "persistKey", "FrecencyStore");
-let D = new P(Chunk570140.Z, {
+let w = new P(Chunk570140.Z, {
   CHANNEL_SELECT: A,
   VOICE_CHANNEL_SELECT: A,
   USER_SETTINGS_PROTO_UPDATE: C

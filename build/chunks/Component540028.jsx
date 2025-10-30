@@ -2,7 +2,7 @@
 /** chunk id: 540028, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -61,7 +61,7 @@ function I(e, t) {
   }), e
 }
 
-function T(e) {
+function S(e) {
   let {
     closePopout: t,
     idle: n,
@@ -81,7 +81,7 @@ function T(e) {
     null != t && t.type !== g.fO.ACTIVITY && l.Z.selectParticipant(o, t.id)
   }
 
-  function T(e) {
+  function S(e) {
     if (e.pipWindow.component === m.NYg.ACTIVITY && null != b) {
       var t;
       let e = null == (t = d.Z.getApplication(b.applicationId)) ? true : t.name;
@@ -94,7 +94,7 @@ function T(e) {
     })
   }
 
-  function S() {
+  function T() {
     let e = [],
       t = i.find(e => e.component === m.NYg.VIDEO);
     return null != t && v.forEach(n => {
@@ -112,7 +112,7 @@ function T(e) {
     var t;
     let n = e.pipWindow.id,
       i = null == (t = e.participant) ? true : t.id,
-      a = T(e),
+      a = S(e),
       o = "".concat(n).concat(null != i ? i : "");
     return (0, r.jsx)(s.sNh, {
       id: o,
@@ -125,10 +125,10 @@ function T(e) {
     "aria-label": "switch PIP",
     onClose: t,
     onSelect: h,
-    children: S().map(A)
+    children: T().map(A)
   })
 }
-let S = function(e) {
+let T = function(e) {
   let {
     voiceChannelId: t,
     idle: n
@@ -139,7 +139,7 @@ let S = function(e) {
   return d || f ? null : (0, r.jsx)(s.yRy, {
     targetElementRef: l,
     position: "bottom",
-    renderPopout: e => (0, r.jsx)(T, O({
+    renderPopout: e => (0, r.jsx)(S, O({
       voiceChannelId: t,
       pipWindows: c,
       idle: n

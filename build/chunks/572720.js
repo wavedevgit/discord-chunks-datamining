@@ -1,11 +1,11 @@
-/** Chunk was on 57478 **/
-/** chunk id: 572720, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 69311 **/
+/** chunk id: 572720, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  l: () => r
+  l: () => a
 });
 var Chunk647438 = require("./647438.js"),
   Chunk579806 = require("./579806.js");
 
-function r(e) {
-  return (0, l.useMemo)(() => null == a.Z.clips.getClipProtocolURLFromPath ? null : a.Z.clips.getClipProtocolURLFromPath(e.filepath), [e.filepath])
+function a(e) {
+  return (0, n.useMemo)(() => null == e || null == c.Z.clips.getClipProtocolURLFromPath ? null : c.Z.clips.getClipProtocolURLFromPath(e.filepath), [e])
 }

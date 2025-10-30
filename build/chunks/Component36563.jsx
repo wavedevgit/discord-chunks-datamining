@@ -91,15 +91,15 @@ function I(e) {
     channelId: g,
     className: b,
     size: I = u.EFr.SIZE_24,
-    overflowCountVariant: T,
-    overflowCountColor: S = "interactive-normal",
+    overflowCountVariant: S,
+    overflowCountColor: T = "interactive-normal",
     overflowCountClassName: A,
     hideOverflowCount: C = false,
     disableUsernameTooltip: N = false,
     disableUserPopout: R = false,
     onClickOverflow: P,
-    onFocusOverflow: D,
-    onUserClick: w,
+    onFocusOverflow: w,
+    onUserClick: D,
     onUserPopoutRequestClose: L,
     "aria-label": x,
     "aria-labelledby": M,
@@ -116,7 +116,7 @@ function I(e) {
         channelId: g,
         nick: _.ZP.getNickname(s, g, e),
         disablePopout: "function" == typeof R ? R(e.id) : R,
-        onClick: w,
+        onClick: D,
         onPopoutRequestClose: () => {
           U(false), null == L || L()
         },
@@ -170,7 +170,7 @@ function I(e) {
     })
   }, W = () => {
     if (!V) return null;
-    let e = null != T ? T : v(I);
+    let e = null != S ? S : v(I);
     return (0, r.jsx)(u.yRy, {
       targetElementRef: B,
       renderPopout: H,
@@ -180,7 +180,7 @@ function I(e) {
       children: t => (0, r.jsx)(u.P3F, y(E({}, t), {
         innerRef: B,
         className: o()(m.overflow, G, A),
-        onFocus: D,
+        onFocus: w,
         onClick: e => {
           null == P || P(e), U(true)
         },
@@ -189,7 +189,7 @@ function I(e) {
         }),
         children: (0, r.jsx)(u.Text, {
           variant: e,
-          color: S,
+          color: T,
           children: F > 99 ? ">99" : "+".concat(F)
         })
       }))

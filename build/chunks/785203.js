@@ -30,8 +30,8 @@ function _(e) {
     {
       enableStudyGroup: I
     } = (0, c.s)(e),
-    v = O.length > 0,
-    y = I && !(null == e ? true : e.features.has(h.GuildFeatures.HUB)),
+    y = O.length > 0,
+    v = I && !(null == e ? true : e.features.has(h.GuildFeatures.HUB)),
     C = (0, o.Vm)(n);
   if (i.useEffect(() => {
       a.Z.getGuildEventsForCurrentUser(n)
@@ -40,7 +40,7 @@ function _(e) {
   if (_ || null != C) return 2;
   if (b) return 3;
   if (E) return 4;
-  else if (v) return 5;
-  else if (y) return 6;
+  else if (y) return 5;
+  else if (v) return 6;
   return null
 }

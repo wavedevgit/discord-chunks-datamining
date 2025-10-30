@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -97,7 +97,7 @@ class C extends Chunk647438.Component {
         return (0, r.jsx)(u.u, {
           asContainer: true,
           text: y.intl.string(y.t.lfIHs4),
-          children: (0, r.jsxs)(d.P3F, A(T({}, e), {
+          children: (0, r.jsxs)(d.P3F, A(S({}, e), {
             innerRef: this.ref,
             tabIndex: a,
             onClick: e => {
@@ -108,7 +108,7 @@ class C extends Chunk647438.Component {
             className: o()(l.reactionBtn, {
               [l.active]: s
             }, t),
-            children: [(0, r.jsx)(d.EO4, T({}, c)), n]
+            children: [(0, r.jsx)(d.EO4, S({}, c)), n]
           }))
         })
       }

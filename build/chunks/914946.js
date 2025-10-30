@@ -113,8 +113,8 @@ function H(e, t) {
     })
   })), Promise.all(n).then(() => {
     var n;
-    let i = (!e.isNSFW() || (null == (n = v.default.getCurrentUser()) ? true : n.nsfwAllowed) === true) && t ? O.Z.getMessages(e.id).toArray().map(V) : [],
-      l = Object.values(y.Z.getVoiceStatesForChannel(e.id)).map(t => F(r, e.id, t));
+    let i = (!e.isNSFW() || (null == (n = y.default.getCurrentUser()) ? true : n.nsfwAllowed) === true) && t ? O.Z.getMessages(e.id).toArray().map(V) : [],
+      l = Object.values(v.Z.getVoiceStatesForChannel(e.id)).map(t => F(r, e.id, t));
     return {
       id: e.id,
       name: e.name,
@@ -167,7 +167,7 @@ function F(e, t, n) {
     selfDeaf: a,
     suppress: s,
     userId: o
-  } = n, c = v.default.getUser(o);
+  } = n, c = y.default.getUser(o);
   if (null == c) throw Error("Invalid user id: ".concat(o));
   return {
     nick: S.ZP.getName(e, t, c),

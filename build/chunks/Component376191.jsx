@@ -23,7 +23,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk81471 = require("./81471.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk79072 = require("./79072.js");
-let v = e => {
+let y = e => {
     let {
       userId: t
     } = e, n = (0, b.O)(t);
@@ -49,7 +49,7 @@ let v = e => {
       })]
     })
   },
-  y = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
+  v = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
 function C(e) {
   var t;
@@ -65,7 +65,7 @@ function C(e) {
     onlyAnimateOnHoverOrFocus: true
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(y, {
+    children: [(0, r.jsx)(v, {
       className: I.avatar,
       src: (0, f.x)(n, 40, C),
       avatarDecoration: T,
@@ -93,7 +93,7 @@ function C(e) {
           channel: n
         }),
         forceHover: u,
-        children: (0, r.jsx)(v, {
+        children: (0, r.jsx)(y, {
           userId: l.id
         })
       })]

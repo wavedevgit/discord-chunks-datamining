@@ -91,7 +91,7 @@ var O = function(e, t) {
       "data-offset-key": u.encode(_, 0, 0)
     }, f)), n
   },
-  T = function(e, t) {
+  S = function(e, t) {
     var n = t.get(e.getType()) || t.get("unstyled"),
       r = n.wrapper;
     return {
@@ -99,7 +99,7 @@ var O = function(e, t) {
       wrapperTemplate: r
     }
   },
-  S = function(e, t) {
+  T = function(e, t) {
     var n = t(e);
     return n ? {
       CustomComponent: n.component,
@@ -175,9 +175,9 @@ module.exports = function(e) {
     r.children.size && (N = r.children.reduce(function(n, r) {
       var i = u.encode(r, 0, 0),
         c = f.getBlockForKey(r),
-        _ = S(c, o),
+        _ = T(c, o),
         m = _.CustomComponent || t,
-        g = T(c, a),
+        g = S(c, a),
         E = g.Element,
         b = g.wrapperTemplate,
         y = A(c, p, i, l, _, null),
@@ -191,11 +191,11 @@ module.exports = function(e) {
     }, []));
     var R = r.getKey(),
       P = u.encode(R, 0, 0),
-      D = S(r, o),
-      w = D.CustomComponent,
-      L = null != w ? d.createElement(w, i({}, this.props, {
+      w = T(r, o),
+      D = w.CustomComponent,
+      L = null != D ? d.createElement(D, i({}, this.props, {
         tree: h.getBlockTree(R),
-        blockProps: D.customProps,
+        blockProps: w.customProps,
         offsetKey: P,
         block: r
       })) : d.createElement(c, {
@@ -212,8 +212,8 @@ module.exports = function(e) {
         tree: C
       });
     if (r.getParentKey()) return L;
-    var x = T(r, a).Element,
-      M = A(r, p, P, l, D, this.wrapperRef);
+    var x = S(r, a).Element,
+      M = A(r, p, P, l, w, this.wrapperRef);
     return d.createElement(x, M, L)
   }, t
 }(Chunk647438.Component)

@@ -523,7 +523,7 @@ eO.Header = eE, eO.Body = e => {
           let {
             timestamps: e
           } = o;
-          return null == e || !(0, I.Z)(o) || (0, v.Z)(o) ? null : ec((0, O.Z)(o) ? (0, i.jsx)(eu, {
+          return null == e || !(0, I.Z)(o) || (0, y.Z)(o) ? null : ec((0, O.Z)(o) ? (0, i.jsx)(eu, {
             timestamps: e
           }) : (0, i.jsx)(B.ZP, {
             start: e.start,
@@ -607,7 +607,7 @@ eO.Header = eE, eO.Body = e => {
       assets: d,
       application_id: p
     } = r;
-  if (null != d && (0, y.Z)(r)) {
+  if (null != d && (0, v.Z)(r)) {
     var m;
     t = (0, i.jsx)(R.Z, {
       className: ea.twitchSectionPreviewWrapper,

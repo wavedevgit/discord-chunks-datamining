@@ -72,9 +72,9 @@ class D extends Chunk647438.PureComponent {
   renderChannelLink(e) {
     let {
       guild: t
-    } = this.props, n = (0, p.F6)(e, E.default, b.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, o = null != t ? t.id : j.ME;
-    return (0, i.jsx)(s.rU, {
-      to: j.Z5c.CHANNEL(o),
+    } = this.props, n = (0, p.F6)(e, E.default, b.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, o = null != t ? t.id : C.ME;
+    return (0, i.jsx)(a.rU, {
+      to: C.Z5c.CHANNEL(o),
       onClick: t => {
         t.stopPropagation(), u.Z.channelListScrollTo(o, e.id)
       },
@@ -91,8 +91,8 @@ class D extends Chunk647438.PureComponent {
       pinned: n,
       lobbyId: r,
       channel: o,
-      quality: s,
-      lastPing: a,
+      quality: a,
+      lastPing: s,
       hasVideo: d,
       connectionState: u,
       deaf: h,
@@ -113,10 +113,10 @@ class D extends Chunk647438.PureComponent {
             position: "top",
             children: e => (0, i.jsx)(c.P3F, T(N({}, e), {
               innerRef: this.rtcConnectionStatusRef,
-              children: (0, i.jsx)(O.Z, {
+              children: (0, i.jsx)(y.Z, {
                 channelId: o.id,
-                quality: s,
-                lastPing: a,
+                quality: a,
+                lastPing: s,
                 hasVideo: d,
                 state: u,
                 children: this.renderChannelLink(o)
@@ -165,7 +165,7 @@ class D extends Chunk647438.PureComponent {
       let {
         lobbyId: t
       } = this.props;
-      return (0, i.jsx)(y.Z, {
+      return (0, i.jsx)(_.Z, {
         channelId: e,
         lobbyId: t,
         isOverlay: true
@@ -194,16 +194,16 @@ function k(e) {
     }
     return r
   }(e, ["context", "lobbyId", "channel"]);
-  let l = (0, a.e7)([_.Z], () => _.Z.getGuild(null == r ? true : r.getGuildId())),
-    s = (0, a.e7)([S.Z], () => null != r && S.Z.hasVideo(r.id)),
-    [c, d] = (0, a.Wu)([v.Z], () => [v.Z.isSelfMute(t) || v.Z.isSelfMutedTemporarily(t), v.Z.isSelfDeaf(t)]),
-    [u, h, p] = (0, a.Wu)([x.Z], () => [x.Z.getConnectionState(n), x.Z.getLastPing(n), x.Z.getQuality(n)]);
+  let l = (0, s.e7)([O.Z], () => O.Z.getGuild(null == r ? true : r.getGuildId())),
+    a = (0, s.e7)([S.Z], () => null != r && S.Z.hasVideo(r.id)),
+    [c, d] = (0, s.Wu)([v.Z], () => [v.Z.isSelfMute(t) || v.Z.isSelfMutedTemporarily(t), v.Z.isSelfDeaf(t)]),
+    [u, h, p] = (0, s.Wu)([x.Z], () => [x.Z.getConnectionState(n), x.Z.getLastPing(n), x.Z.getQuality(n)]);
   return (0, i.jsx)(D, T(N({}, o), {
     context: t,
     lobbyId: n,
     channel: r,
     guild: l,
-    hasVideo: s,
+    hasVideo: a,
     mute: c,
     deaf: d,
     connectionState: u,

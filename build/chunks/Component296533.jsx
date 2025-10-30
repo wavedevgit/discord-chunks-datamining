@@ -35,7 +35,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,7 +60,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -147,7 +147,7 @@ function P(e) {
     hasCancelableGuildBoostSlot: d,
     showAltText: f,
     isLastGuildBoostSlot: p
-  } = e, h = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), E = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), b = i.useMemo(() => null != E && E > new Date, [E]), y = (0, _.tl)(n), I = (0, c.Z)(), S = i.useRef(null);
+  } = e, h = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), E = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), b = i.useMemo(() => null != E && E > new Date, [E]), y = (0, _.tl)(n), I = (0, c.Z)(), T = i.useRef(null);
 
   function C(e) {
     let {
@@ -183,12 +183,12 @@ function P(e) {
           fractionalPremiumInfo: I
         })
       }), (0, r.jsx)(s.yRy, {
-        targetElementRef: S,
+        targetElementRef: T,
         renderPopout: C,
         position: "right",
         align: "center",
-        children: e => (0, r.jsx)(s.P3F, A(T({}, e), {
-          innerRef: S,
+        children: e => (0, r.jsx)(s.P3F, A(S({}, e), {
+          innerRef: T,
           "aria-label": O.intl.string(O.t.PdRCRg),
           className: v.boostSlotMenuIcon,
           children: (0, r.jsx)(s.Huf, {
@@ -203,7 +203,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     guildId: t,
     guildBoostSlotRecords: n,
@@ -227,7 +227,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     guildId: t,
     appliedGuildBoosts: n,
@@ -277,7 +277,7 @@ function L(e) {
     className: v.wrapper,
     children: [(0, r.jsx)("div", {
       className: v.container,
-      children: h.default.keys(a).map(e => (0, r.jsx)(w, {
+      children: h.default.keys(a).map(e => (0, r.jsx)(D, {
         guildId: e,
         premiumSubscription: n,
         appliedGuildBoosts: a[e]
@@ -324,7 +324,7 @@ function x(e) {
     className: v.wrapper,
     children: [(0, r.jsx)("div", {
       className: v.container,
-      children: h.default.keys(s).map(e => (0, r.jsx)(D, {
+      children: h.default.keys(s).map(e => (0, r.jsx)(w, {
         guildId: e,
         guildBoostSlotRecords: s[e],
         premiumSubscription: n,

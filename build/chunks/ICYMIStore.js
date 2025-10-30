@@ -102,7 +102,7 @@ let M = +Chunk70956.Z.Millis.DAY,
   em = 0;
 
 function eh(e, t) {
-  if (Date.now() - B > 6 * y.Z.Millis.HOUR) {
+  if (Date.now() - B > 6 * v.Z.Millis.HOUR) {
     let n = new Set(e.map(e => e.id));
     return t.slice(0, 20).filter(e => n.has(e.id)).length >= 3
   }
@@ -180,7 +180,7 @@ function eO(e) {
               let e = h.Z.getChannel(r.channel_id);
               if (!E.Z.can(Z.Plq.VIEW_CHANNEL, e)) continue
             }
-            if ((0, d.BQ)(r, 2 * y.Z.Seconds.DAY) || (0, d.xt)(r)) {
+            if ((0, d.BQ)(r, 2 * v.Z.Seconds.DAY) || (0, d.xt)(r)) {
               var n;
               if (null == Y[r.id] && (Y[r.id] = {
                   id: r.id,
@@ -269,19 +269,19 @@ function eI(e) {
   ]
 }
 
-function ev(e, t) {
+function ey(e, t) {
   let n = [],
     r = new Set(U.map(e => e.id));
   for (let i of e) !(i.type === P.Ni.RECOMMENDED_GUILDS || r.has(i.id)) && null == x.Z.getReadTimestamp(i.id) && (i.type !== P.Ni.MESSAGE || (0, A.$U)(i.data.channel_id, i.data.message_id) && i.data.channel_id !== t) && (i.type !== P.Ni.SUMMARY || (0, A.$U)(i.data.channel_id, i.data.summary_id) && i.data.channel_id !== t) && n.push(i);
   return n
 }
 
-function ey(e, t) {
+function ev(e, t) {
   return e.filter(e => !(0, A._e)(e) || e.data.channel_id !== t)
 }
 
 function eC(e, t) {
-  (0, A.jv)(t) === A.aL.MUTED && (U = ey(U, e), er = ey(er, e), ei = ey(ei, e), H = ey(H, e), V = ey(V, e))
+  (0, A.jv)(t) === A.aL.MUTED && (U = ev(U, e), er = ev(er, e), ei = ev(ei, e), H = ev(H, e), V = ev(V, e))
 }
 
 function eS(e, t) {
@@ -314,12 +314,12 @@ function ej(e) {
   });
   let i = X,
     [l, a] = eI(H);
-  if (V = ev(l, t), X = $ ? i && V.length >= P.Lb : i && eh(r, H), 0 === n.length && i === X) returnfalse;
+  if (V = ey(l, t), X = $ ? i && V.length >= P.Lb : i && eh(r, H), 0 === n.length && i === X) returnfalse;
   0 !== n.length && (er = r, ei = [...ei, ...n])
 }
 class eP extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(m.default, h.Z, s.Z, u.Z, g.Z, d.ZP, _.Z, j.Z, x.Z, b.Z, E.Z, O.ZP, I.Z, v.ZP), null != e) {
+    if (this.waitFor(m.default, h.Z, s.Z, u.Z, g.Z, d.ZP, _.Z, j.Z, x.Z, b.Z, E.Z, O.ZP, I.Z, y.ZP), null != e) {
       var t, n, r, i, l, a, o;
       (U = null != (t = e.dehydratedItems) ? t : []).forEach(e => {
         z[e.id] = e
@@ -495,7 +495,7 @@ let ex = new eP(Chunk570140.Z, {
       feed_item_ids: H.map(e => e.id)
     };
     let [a, s] = eI(H);
-    if (V = ev(a), !$ || 0 === Q || i) Q = 0, !ed && eh(a, H) ? (X = true, J = true) : X = false, eO({
+    if (V = ey(a), !$ || 0 === Q || i) Q = 0, !ed && eh(a, H) ? (X = true, J = true) : X = false, eO({
       newUnread: a,
       newRead: s
     });
@@ -704,13 +704,13 @@ let ex = new eP(Chunk570140.Z, {
     let l = h.Z.getChannel(n);
     if (null == l || l.type !== Z.d4z.GUILD_TEXT) returnfalse;
     let a = null == (t = K[l.guild_id]) ? true : t[n];
-    if (null != a && (0, A.jv)(a) === A.aL.MUTED || v.ZP.isChannelMuted(l.guild_id, n) || 0 === r.length) returnfalse;
-    let s = r.filter(e => S.default.age(e.id) < y.Z.Millis.HOUR && (e.type === Z.uaV.DEFAULT || e.type === Z.uaV.REPLY)).slice(0, 3).reverse();
+    if (null != a && (0, A.jv)(a) === A.aL.MUTED || y.ZP.isChannelMuted(l.guild_id, n) || 0 === r.length) returnfalse;
+    let s = r.filter(e => S.default.age(e.id) < v.Z.Millis.HOUR && (e.type === Z.uaV.DEFAULT || e.type === Z.uaV.REPLY)).slice(0, 3).reverse();
     if (s.length < 3 || s.filter(e => {
         var t;
         return null == (t = e.author) ? true : t.bot
       }).length / s.length > .5) returnfalse;
-    let o = Math.floor(Date.now() / (2 * y.Z.Millis.HOUR)) % 24,
+    let o = Math.floor(Date.now() / (2 * v.Z.Millis.HOUR)) % 24,
       c = "".concat(l.id, "-").concat(o),
       u = {
         id: c,

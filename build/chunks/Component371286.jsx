@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 371286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -19,7 +19,7 @@ function u(e) {
     subheading: u,
     children: m,
     height: p
-  } = e, h = (0, o.Dt)(), x = r.useRef(null), f = (0, i.q_F)({
+  } = e, h = (0, o.Dt)(), x = r.useRef(null), g = (0, i.q_F)({
     from: {
       transform: "translate3d(-110%, 0, 0)",
       height: p
@@ -39,7 +39,7 @@ function u(e) {
   });
   return (0, a.jsx)(l.animated.div, {
     className: d.container,
-    style: f,
+    style: g,
     children: (0, a.jsxs)("aside", {
       "aria-labelledby": h,
       className: d.content,

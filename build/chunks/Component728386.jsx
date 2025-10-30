@@ -64,7 +64,7 @@ function E(e, t) {
   }, [a]), {
     Component: v,
     events: I,
-    play: T
+    play: S
   } = (0, l.z)();
   return n ? null : (0, r.jsx)("div", {
     className: o()(d.CT, _.buttonContainer),
@@ -73,7 +73,7 @@ function E(e, t) {
       className: o()(_.button, _.stickerButton)
     }, I), {
       onClick: () => {
-        O(), T()
+        O(), S()
       },
       isActive: b,
       "aria-label": f.intl.string(f.t.rZpidU),

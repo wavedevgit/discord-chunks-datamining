@@ -73,13 +73,13 @@ function v(e) {
 }
 let I = e => g.get(e);
 
-function T(e, {
+function S(e, {
   blocked: t
 } = {}) {
   let n = indexedDB.deleteDatabase(e);
   return t && (n.onblocked = e => t(e.oldVersion, e)), v(n).then(() => {})
 }
-let S = ["get", "getKey", "getAll", "getAllKeys", "count"],
+let T = ["get", "getKey", "getAll", "getAllKeys", "count"],
   A = ["put", "add", "delete", "clear"],
   C = new Map;
 
@@ -89,7 +89,7 @@ function N(e, t) {
   let n = t.replace(/FromIndex$/, ""),
     r = t !== n,
     i = A.includes(n);
-  if (!(n in (r ? IDBIndex : IDBObjectStore).prototype) || !i && !S.includes(n)) return;
+  if (!(n in (r ? IDBIndex : IDBObjectStore).prototype) || !i && !T.includes(n)) return;
   let a = async function(e, ...t) {
     let a = this.transaction(e, i ? "readwrite" : "readonly"),
       o = a.store;
@@ -104,14 +104,14 @@ b(e => ({
 }));
 let R = ["continue", "continuePrimaryKey", "advance"],
   P = {},
-  D = new WeakMap,
   w = new WeakMap,
+  D = new WeakMap,
   L = {
     get(e, t) {
       if (!R.includes(t)) return e[t];
       let n = P[t];
       return n || (n = P[t] = function(...e) {
-        D.set(this, w.get(this)[t](...e))
+        w.set(this, D.get(this)[t](...e))
       }), n
     }
   };
@@ -119,7 +119,7 @@ async function* x(...e) {
   let t = this;
   if (t instanceof IDBCursor || (t = await t.openCursor(...e)), !t) return;
   let n = new Proxy(t, L);
-  for (w.set(n, t), g.set(n, I(t)); t;) yield n, t = await (D.get(n) || t.continue()), D.delete(n)
+  for (D.set(n, t), g.set(n, I(t)); t;) yield n, t = await (w.get(n) || t.continue()), w.delete(n)
 }
 
 function M(e, t) {
@@ -411,7 +411,7 @@ let ep = (e, t) => {
       })
     }))
   };
-(async () => ec() && Promise.allSettled([T("replayStorage"), T("sprig.replay")]))();
+(async () => ec() && Promise.allSettled([S("replayStorage"), S("sprig.replay")]))();
 let ev = new class {
     openDB() {
       return function(e, t, {
@@ -452,7 +452,7 @@ let ev = new class {
     }
     async deleteDB() {
       try {
-        await T("sprigReplay")
+        await S("sprigReplay")
       } catch {}
     }
     async bulkAdd(e, t) {
@@ -554,26 +554,26 @@ let ev = new class {
     }
   },
   eI = [],
-  eT, eS, eA, eC, eN, eR, eP = [],
-  eD = false,
-  ew = 0,
+  eS, eT, eA, eC, eN, eR, eP = [],
+  ew = false,
+  eD = 0,
   eL = false,
   ex = false,
   eM = [],
   ek = false,
-  ej = () => eL && !eD && Date.now() <= eA,
+  ej = () => eL && !ew && Date.now() <= eA,
   eU = ({
     apiUrl: e,
     config: t,
     triggerSnapshot: n,
     forceInit: r = false
   }) => {
-    eL && !r || (l.a.isStorageAvailable ? (eP = [], eM.splice(0), eI.splice(0), ew = 0, eN = n, eS = e, eT = {
+    eL && !r || (l.a.isStorageAvailable ? (eP = [], eM.splice(0), eI.splice(0), eD = 0, eN = n, eT = e, eS = {
       responseGroupUuid: t.responseGroupUuid,
       surveyId: t.surveyId,
       userAgent: t.userAgent,
       sdkVersion: t.sdkVersion
-    }, eC = t.maxDurationSeconds, eH(), eL || (eR = window.setInterval(eF, 500)), eL = true) : eD = true)
+    }, eC = t.maxDurationSeconds, eH(), eL || (eR = window.setInterval(eF, 500)), eL = true) : ew = true)
   },
   eG = [_.Drag, _.Input, _.MediaInteraction, _.MouseInteraction, _.MouseMove, _.Scroll, _.Selection, _.TouchMove],
   eB = e => e.type === f.Custom || e.type === f.IncrementalSnapshot && eG.includes(e.data.source),
@@ -587,14 +587,14 @@ let ev = new class {
     if (eP.length || ek) return;
     ek = true;
     let e = await ez();
-    if (!module) return void(eD = true);
+    if (!module) return void(ew = true);
     eM.splice(0, module.length).forEach(t => t(e.shift())), module.forEach(e => eP.push(e)), ek = false
   }, eH = () => {
     let e = Chunk555256.a.getItem("sprig.alwayson.info");
     if (module) {
       Chunk555256.b.info("Read stored session state", module);
       let t = JSON.parse(module);
-      eD = exports.disabled, eT = exports.metadata, eP = exports.uploadUrls, ew = exports.currentIndex, eA = exports.expirationTimestamp, exports.pendingEventTimestamp && (Chunk555256.b.info(`Uploading with pending timestamp: ${exports.pendingEventTimestamp}`), eY(exports.pendingEventTimestamp))
+      ew = exports.disabled, eS = exports.metadata, eP = exports.uploadUrls, eD = exports.currentIndex, eA = exports.expirationTimestamp, exports.pendingEventTimestamp && (Chunk555256.b.info(`Uploading with pending timestamp: ${exports.pendingEventTimestamp}`), eY(exports.pendingEventTimestamp))
     } else eA = 1e3 * eC + Date.now()
   }, eY = async e => {
     let t = Date.now(),
@@ -609,7 +609,7 @@ let ev = new class {
       if (!n.ok) throw Error(`Error ${t}`);
       return n
     } catch {
-      eD = true
+      ew = true
     }
   }, eK = async (e, t) => {
     if (!ej() || !e) return;
@@ -629,13 +629,13 @@ let ev = new class {
     let {
       surveyId: e,
       responseGroupUuid: t
-    } = eT, n = {
+    } = eS, n = {
       responseGroupUuid: exports,
       surveyId: module,
-      index: ew + 1
+      index: eD + 1
     };
     Chunk555256.b.info("Fetching always-on upload urls", require);
-    let r = await eW(() => (0, Chunk555256.s)(`${eS}/sdk/1/replayUrls`, {
+    let r = await eW(() => (0, Chunk555256.s)(`${eT}/sdk/1/replayUrls`, {
       method: "POST",
       body: JSON.stringify(require),
       headers: (0, Chunk555256.g)(window.UserLeap)
@@ -655,15 +655,15 @@ let ev = new class {
   }, eX = e => {
     var t, n, r;
     let i = e.length ? e[e.length - 1].timestamp : Date.now(),
-      a = ew,
+      a = eD,
       o = (null == (n = null == (t = window.UserLeap) ? true : t.config) ? true : n.customMetadata) ?? (null == (r = window.__cfg) ? true : r.customMetadata);
-    ew++, e.push({
+    eD++, e.push({
       timestamp: i,
       type: f.Custom,
       data: {
         tag: "Sprig_Meta",
         payload: {
-          ...eT,
+          ...eS,
           index: a,
           visitorId: window.UserLeap.visitorId ?? "",
           timestamp: i,
@@ -685,10 +685,10 @@ window.addEventListener("beforeunload", async () => {
     let e;
     eI.length && (e = eI[0].timestamp);
     let t = {
-      disabled: eD,
-      metadata: eT,
+      disabled: ew,
+      metadata: eS,
       uploadUrls: eP,
-      currentIndex: ew,
+      currentIndex: eD,
       pendingEventTimestamp: module,
       expirationTimestamp: eA
     };

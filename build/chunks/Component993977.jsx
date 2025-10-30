@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 993977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -82,7 +82,7 @@ function I(e) {
     }), i]
   })
 }
-class v extends Chunk647438.PureComponent {
+class y extends Chunk647438.PureComponent {
   handleToggleShortcutDesktop(e) {
     c.Xc.updateSetting(e)
   }
@@ -139,11 +139,11 @@ class v extends Chunk647438.PureComponent {
   }
 }
 
-function y() {
+function v() {
   let e = {
     installShortcutDesktop: Chunk695346.Xc.useSetting(),
     installShortcutStartMenu: Chunk695346.Pe.useSetting(),
     hiddenLibraryApplicationViewItems: (0, Chunk442837.e7)([Chunk490983.Z], () => Chunk490983.Z.hiddenLibraryApplicationViewItems)
   };
-  return (0, Chunk951288.jsx)(v, O({}, module))
+  return (0, Chunk951288.jsx)(y, O({}, module))
 }

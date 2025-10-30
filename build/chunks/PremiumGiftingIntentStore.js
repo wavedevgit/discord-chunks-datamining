@@ -51,8 +51,8 @@ function I() {
     friendsTabBadgeLastDismissedTime: null
   }
 }
-let T = I(),
-  S = [],
+let S = I(),
+  T = [],
   A = new Set,
   C = {},
   N = null;
@@ -71,7 +71,7 @@ function P(e) {
   return !R(e, e.getFullYear()) && R(e, new Date().getFullYear())
 }
 
-function D() {
+function w() {
   if (null != N) return void K(N);
   if (x(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
   let {
@@ -83,35 +83,35 @@ function D() {
   });
   if (module) {
     for (let e of Chunk699516.Z.getFriendIDs()) {
-      if (S.length >= b) break;
+      if (T.length >= b) break;
       let t = Chunk699516.Z.getSince(module),
         n = Chunk752048.Z.getUserAffinity(module);
       if (!Chunk699516.Z.isIgnored(module) && null != require && require.communicationProbability > 0 && null != exports) {
         let n = new Date(exports);
-        P(require) && (S.push(module), C[module] = {
+        P(require) && (T.push(module), C[module] = {
           friendsSince: require
         })
       }
     }
-    S.sort((e, t) => {
+    T.sort((e, t) => {
       let n = d.Z.getUserAffinity(e),
         r = d.Z.getUserAffinity(t),
         i = null != n ? n.communicationProbability : 0;
       return (null != r ? r.communicationProbability : 0) - i
-    }), A = new Set(S.slice(0, E))
+    }), A = new Set(T.slice(0, E))
   }
 }
 
-function w(e) {
+function D(e) {
   return Math.round(s()().diff(e, "years", true))
 }
 
 function L() {
-  return Array.from(A).some(e => !T.lastShownFriendsListGiftIntents.includes(e))
+  return Array.from(A).some(e => !S.lastShownFriendsListGiftIntents.includes(e))
 }
 
 function x() {
-  S.length = 0, A.clear(), C = {}
+  T.length = 0, A.clear(), C = {}
 }
 
 function M() {
@@ -119,11 +119,11 @@ function M() {
 }
 
 function k() {
-  T = I(), x()
+  S = I(), x()
 }
 
 function j() {
-  T.lastShownFriendsListGiftIntents = Array.from(A)
+  S.lastShownFriendsListGiftIntents = Array.from(A)
 }
 
 function U(e) {
@@ -134,7 +134,7 @@ function U(e) {
 }
 
 function G() {
-  T.friendsTabBadgeLastDismissedTime = Date.now()
+  S.friendsTabBadgeLastDismissedTime = Date.now()
 }
 
 function B(e) {
@@ -145,26 +145,26 @@ function B(e) {
 }
 
 function Z(e) {
-  null == T.messageGiftIntentLastShownMap[e] && (T.messageGiftIntentLastShownMap[e] = Date.now())
+  null == S.messageGiftIntentLastShownMap[e] && (S.messageGiftIntentLastShownMap[e] = Date.now())
 }
 
 function F() {
-  for (let e in T.messageGiftIntentLastShownMap) {
-    let t = T.messageGiftIntentLastShownMap[module];
-    Date.now() - exports > v && delete T.messageGiftIntentLastShownMap[module]
+  for (let e in S.messageGiftIntentLastShownMap) {
+    let t = S.messageGiftIntentLastShownMap[module];
+    Date.now() - exports > v && delete S.messageGiftIntentLastShownMap[module]
   }
 }
 
 function V() {
-  T.lastShownFriendsListGiftIntents = []
+  S.lastShownFriendsListGiftIntents = []
 }
 
 function H() {
-  T.messageGiftIntentLastShownMap = {}
+  S.messageGiftIntentLastShownMap = {}
 }
 
 function Y() {
-  T.friendsTabBadgeLastDismissedTime = null
+  S.friendsTabBadgeLastDismissedTime = null
 }
 
 function W(e) {
@@ -172,7 +172,7 @@ function W(e) {
     total: t
   } = e;
   if (null == t) {
-    N = null, D();
+    N = null, w();
     return
   }
   K(t)
@@ -194,21 +194,21 @@ function K(e) {
     let t = _.Z.getSince(e);
     if (null != t) {
       let n = new Date(t);
-      S.push(e), C[e] = {
+      T.push(e), C[e] = {
         friendsSince: n
       }
     }
-  }), A = new Set(S.slice(0, E))
+  }), A = new Set(T.slice(0, E))
 }
 class z extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    T = I(), null != e && (T.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, T.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), T.messageGiftIntentLastShownMap = g({}, e.messageGiftIntentLastShownMap)), this.syncWith([_.Z, d.Z, f.Z, u.Z], D), F()
+    S = I(), null != e && (S.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, S.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), S.messageGiftIntentLastShownMap = g({}, e.messageGiftIntentLastShownMap)), this.syncWith([_.Z, d.Z, f.Z, u.Z], w), F()
   }
   getState() {
-    return T
+    return S
   }
   getFriendAnniversaries() {
-    return S
+    return T
   }
   isTopAffinityFriendAnniversary(e) {
     let {
@@ -224,15 +224,15 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
   }
   canShowFriendsTabBadge() {
     var e;
-    let t = null != (e = T.friendsTabBadgeLastDismissedTime) ? module : 0;
+    let t = null != (e = S.friendsTabBadgeLastDismissedTime) ? module : 0;
     return !(Date.now() - exports <= O) && L()
   }
   getFriendAnniversaryYears(e) {
     let t = C[e];
-    return null == t ? 0 : w(t.friendsSince)
+    return null == t ? 0 : D(t.friendsSince)
   }
   isGiftIntentMessageInCooldown(e) {
-    return null != T.messageGiftIntentLastShownMap[e]
+    return null != S.messageGiftIntentLastShownMap[e]
   }
   getDevToolTotalFriendAnniversaries() {
     return N

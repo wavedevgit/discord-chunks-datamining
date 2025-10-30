@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -70,9 +70,9 @@ function C(e) {
     channel: f,
     members: b,
     guildId: I,
-    unread: S,
+    unread: T,
     onClick: C
-  } = e, [N, R] = i.useState(false), P = (0, u.Ye)(h.default.extractTimestamp(t.startId)), D = (0, a.e7)([m.Z], () => m.Z.summaryFeedback(t)), w = (e, n) => {
+  } = e, [N, R] = i.useState(false), P = (0, u.Ye)(h.default.extractTimestamp(t.startId)), w = (0, a.e7)([m.Z], () => m.Z.summaryFeedback(t)), D = (e, n) => {
     e.stopPropagation(), (0, g.Z)({
       summary: t,
       channel: f,
@@ -83,7 +83,7 @@ function C(e) {
       let {
         default: e
       } = await n.e("12891").then(n.bind(n, 519620));
-      return n => (0, r.jsx)(e, A(T({}, n), {
+      return n => (0, r.jsx)(e, A(S({}, n), {
         summary: t
       }))
     })
@@ -96,7 +96,7 @@ function C(e) {
     onMouseLeave: () => R(false),
     children: [(0, r.jsx)(c.Z, {
       hovered: N,
-      unread: S,
+      unread: T,
       className: v.unreadPill
     }), (0, r.jsx)("div", {
       className: v.rowHeader,
@@ -138,17 +138,17 @@ function C(e) {
           })]
         })]
       })
-    }), N && !D && (0, r.jsxs)("div", {
+    }), N && !w && (0, r.jsxs)("div", {
       className: v.feedbackContainer,
       children: [(0, r.jsx)(o.P3F, {
-        onClick: e => w(e, O.aZ.GOOD),
+        onClick: e => D(e, O.aZ.GOOD),
         children: (0, r.jsx)(p.Z, {
           className: v.thumbIcon,
           width: 12,
           height: 12
         })
       }), (0, r.jsx)(o.P3F, {
-        onClick: e => w(e, O.aZ.BAD),
+        onClick: e => D(e, O.aZ.BAD),
         children: (0, r.jsx)(_.Z, {
           className: v.thumbIcon,
           width: 12,

@@ -107,21 +107,21 @@ function g(e) {
     badge: O,
     icon: v = null,
     interactiveLabel: I = false,
-    ref: T
-  } = e, S = h(e), {
+    ref: S
+  } = e, T = h(e), {
     labelId: A,
     controlId: C,
     errorMessageId: N,
     describedById: R,
     helperTextId: P,
-    descriptionId: D
-  } = S, w = "group" === b || "radiogroup" === b, L = w ? "span" : "label", x = w ? "fieldset" : "div", M = w ? (0, r.jsx)("legend", {
+    descriptionId: w
+  } = T, D = "group" === b || "radiogroup" === b, L = D ? "span" : "label", x = D ? "fieldset" : "div", M = D ? (0, r.jsx)("legend", {
     id: A,
     children: (0, r.jsx)(s.n, {
       children: t
     })
   }) : null, k = null != t && "" !== t, j = null != l && "" !== l, U = k ? (0, r.jsxs)(u.x, {
-    "aria-hidden": w,
+    "aria-hidden": D,
     "data-interactive": I,
     id: A,
     tag: L,
@@ -147,15 +147,15 @@ function g(e) {
     }) : null]
   }) : null;
   return (0, r.jsx)(d.z.Provider, {
-    value: S,
+    value: T,
     children: (0, r.jsxs)(x, {
       role: b,
-      ref: T,
+      ref: S,
       className: f.container,
       "data-layout": y,
       "data-disabled": a,
-      "aria-describedby": w ? R : true,
-      disabled: w ? a : true,
+      "aria-describedby": D ? R : true,
+      disabled: D ? a : true,
       children: [M, k || j ? (0, r.jsxs)("div", {
         className: f.labelContainer,
         children: [n ? (0, r.jsx)(s.n, {
@@ -164,12 +164,12 @@ function g(e) {
           variant: "text-sm/normal",
           color: "text-secondary",
           className: f.description,
-          id: D,
+          id: w,
           children: l
         })]
       }) : null, (0, r.jsxs)("div", {
         className: f.control,
-        children: ["function" == typeof _ ? _(S) : _, (0, r.jsx)(E, {
+        children: ["function" == typeof _ ? _(T) : _, (0, r.jsx)(E, {
           successMessage: m,
           errorMessage: p,
           helperText: c,

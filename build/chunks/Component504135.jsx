@@ -68,15 +68,15 @@ function E(e) {
     hasSubmenu: O,
     disabled: v,
     isFocused: I,
-    menuItemProps: T,
-    action: S,
+    menuItemProps: S,
+    action: T,
     onClose: A,
     onFocus: C,
     className: N,
     focusedClassName: R,
     subMenuIconClassName: P,
-    dontCloseOnActionIfHoldingShiftKey: D,
-    dontCloseOnAction: w,
+    dontCloseOnActionIfHoldingShiftKey: w,
+    dontCloseOnAction: D,
     iconProps: L
   } = e, {
     onSelect: x,
@@ -85,9 +85,9 @@ function E(e) {
     var t;
     if (null == M || M({
         type: c.U.DEFAULT
-      }), null == S) returnfalse;
-    e.shiftKey && D || w || A(), e.persist(), null == x || x(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => S(e))
-  }, [S, A, x, D, w, M]);
+      }), null == T) returnfalse;
+    e.shiftKey && w || D || A(), e.persist(), null == x || x(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => T(e))
+  }, [T, A, x, w, D, M]);
   return i.useEffect(() => {
     I && ((0, u.F)(k), null == C || C())
   }, [I, C]), (0, r.jsxs)(s.P3F, g(h({
@@ -99,7 +99,7 @@ function E(e) {
     }),
     onClick: v ? true : j,
     "aria-disabled": v
-  }, T), {
+  }, S), {
     "data-menu-item": "true",
     children: [null != p && (0, r.jsx)("div", {
       className: o()(_.iconContainerLeft, {

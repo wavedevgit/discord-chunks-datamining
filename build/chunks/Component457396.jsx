@@ -55,7 +55,7 @@ var Chunk951288 = require("./951288.js"),
 let J = e => {
     let {
       selected: t
-    } = e, n = (0, s.e7)([E.default], () => E.default.getCurrentUser()), r = (0, s.e7)([O.Z], () => O.Z.getPremiumTypeSubscription()), i = (0, Z.N)(), l = (0, A.Ng)(), a = (0, S.Vi)(), o = (0, F.V)(), c = (0, y.Qo)(n, r), u = (0, s.e7)([C.Z], () => C.Z.getCreatedAtOverride()), d = t || null != i || null != l || a || null != o || c, p = null != u ? u : null == n ? true : n.createdAt;
+    } = e, n = (0, s.e7)([E.default], () => E.default.getCurrentUser()), r = (0, s.e7)([O.Z], () => O.Z.getPremiumTypeSubscription()), i = (0, Z.N)(), l = (0, A.Ng)(), a = (0, S.Vi)(), o = (0, F.V)(), c = (0, v.Qo)(n, r), u = (0, s.e7)([C.Z], () => C.Z.getCreatedAtOverride()), d = t || null != i || null != l || a || null != o || c, p = null != u ? u : null == n ? true : n.createdAt;
     return d || null != n && null != p && Date.now() - p.getTime() > 12096e5
   },
   X = e => {
@@ -87,8 +87,8 @@ let J = e => {
         variant: eo,
         hasNitroTabBadgeOfferReminder: ec
       } = (0, N.ZP)("PremiumDiscountEndingNotice"),
-      eu = (0, y.Qo)(ea, es),
-      ed = (0, y.M5)(ea, W.PremiumTypes.TIER_2),
+      eu = (0, v.Qo)(ea, es),
+      ed = (0, v.M5)(ea, W.PremiumTypes.TIER_2),
       ep = (0, l.JA)("nitro"),
       ef = (0, Z.N)(),
       em = (0, A.Ng)(),
@@ -101,9 +101,9 @@ let J = e => {
       eE = (0, F.V)(),
       eO = (0, M.eW)(),
       eI = (0, D._h)(),
-      ev = (0, z.Kn)(),
-      ey = I.Z.getAlmostExpiringTrialOffers([W.Si.TIER_2]),
-      eC = ec && ey.length > 0 && null != ef && null != ef.expires_at,
+      ey = (0, z.Kn)(),
+      ev = I.Z.getAlmostExpiringTrialOffers([W.Si.TIER_2]),
+      eC = ec && ev.length > 0 && null != ef && null != ef.expires_at,
       eS = I.Z.getAlmostExpiringDiscountOffers([W.Si.TIER_2]),
       eT = ec && eS.length > 0 && null != em && null != em.expires_at,
       eN = null != eh && null != es && es.status === q.O0b.CANCELED,
@@ -138,7 +138,7 @@ let J = e => {
         selected: et
       })) return null;
     let eY = () => {
-      eA === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eZ(K.L.TAKE_ACTION), v.default.track(q.rMx.NITRO_TAB_VISITED, {
+      eA === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eZ(K.L.TAKE_ACTION), y.default.track(q.rMx.NITRO_TAB_VISITED, {
         badge_decorator: C,
         has_premium: eu
       }), null != eU && eG(K.L.USER_DISMISS), null != eF && ez(K.L.USER_DISMISS)
@@ -167,7 +167,7 @@ let J = e => {
       type: "new",
       variant: "expressive"
     }), C = 4, eY = () => {
-      v.default.track(q.rMx.NITRO_TAB_VISITED, {
+      y.default.track(q.rMx.NITRO_TAB_VISITED, {
         badge_decorator: C,
         has_premium: eu
       }), eG(K.L.USER_DISMISS)
@@ -187,7 +187,7 @@ let J = e => {
       isTabSelected: et,
       includesAmountOff: false,
       shouldShowOfferReminder: eT
-    }), C = 3) : null == ef || eL ? ev ? (n = (0, r.jsx)(H.l, {
+    }), C = 3) : null == ef || eL ? ey ? (n = (0, r.jsx)(H.l, {
       isSelected: et,
       onSelect: () => (0, g.Q3)(o.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
         dismissAction: K.L.TAKE_ACTION
@@ -207,7 +207,7 @@ let J = e => {
       badgeCopy: Q.intl.string(Q.t.RDE0Sc),
       offerExpiresAt: null
     }), C = 4, eY = () => {
-      v.default.track(q.rMx.NITRO_TAB_VISITED, {
+      y.default.track(q.rMx.NITRO_TAB_VISITED, {
         badge_decorator: C,
         has_premium: eu
       }), (0, M.ZL)()
@@ -252,7 +252,7 @@ let J = e => {
     })(Object($)).forEach(function(e) {
       Object.defineProperty(X, e, Object.getOwnPropertyDescriptor($, e))
     }), X));
-    return ev ? (0, r.jsx)(H.C, {
+    return ey ? (0, r.jsx)(H.C, {
       children: eW
     }) : eN && eB === o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === C ? (0, r.jsx)(k.Z, {
       targetElementRef: en,

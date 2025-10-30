@@ -60,21 +60,21 @@ function u(e, t, n, r, o, s) {
   if (true === i.Z.typeSizes[O] || !s && true === a.ZP[t][y]) return;
   d(O, v) ? l = f(e, c = r + b, O, v, o) : (c = i.Z.getLongAt(e, r + b, o), l = _(e, n, c, O, v) ? f(e, n + c, O, v, o, y === u) : "<faulty value>"), O === i.Z.tagTypes.ASCII && (l = h(l = p(l)));
   let I = `undefined-${y}`,
-    T = l;
+    S = l;
   if (true !== a.ZP[t][y])
     if (true !== a.ZP[t][y].name && true !== a.ZP[t][y].description) {
       I = a.ZP[t][y].name;
       try {
-        T = a.ZP[t][y].description(l)
+        S = a.ZP[t][y].description(l)
       } catch (e) {
-        T = m(l)
+        S = m(l)
       }
-    } else O === i.Z.tagTypes.RATIONAL || O === i.Z.tagTypes.SRATIONAL ? (I = a.ZP[t][y], T = "" + l[0] / l[1]) : (I = a.ZP[t][y], T = m(l));
+    } else O === i.Z.tagTypes.RATIONAL || O === i.Z.tagTypes.SRATIONAL ? (I = a.ZP[t][y], S = "" + l[0] / l[1]) : (I = a.ZP[t][y], S = m(l));
   return {
     id: y,
     name: I,
     value: l,
-    description: T,
+    description: S,
     __offset: c
   }
 }

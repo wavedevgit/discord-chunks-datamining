@@ -7,12 +7,12 @@ require.d(exports, {
   Ev: () => s,
   Fu: () => h,
   GM: () => L,
-  Gu: () => D,
+  Gu: () => w,
   JT: () => p,
   K8: () => O,
-  OF: () => w,
+  OF: () => D,
   P9: () => b,
-  Pc: () => S,
+  Pc: () => T,
   S4: () => I,
   Si: () => g,
   Ws: () => v,
@@ -27,7 +27,7 @@ require.d(exports, {
   um: () => A,
   wP: () => P,
   wT: () => R,
-  xK: () => T
+  xK: () => S
 }), require("./388685.js");
 var Chunk911969 = require("./911969.js"),
   Chunk981631 = require("./981631.js");
@@ -59,10 +59,10 @@ var O = function(e) {
   I = function(e) {
     return e.DESKTOP = "desktop", e.MOBILE = "mobile", e
   }({}),
-  T = function(e) {
+  S = function(e) {
     return e[e.UNLOCKED = 1] = "UNLOCKED", e[e.PORTRAIT = 2] = "PORTRAIT", e[e.LANDSCAPE = 3] = "LANDSCAPE", e
   }({});
-let S = new Set([c, u, d, f]),
+let T = new Set([c, u, d, f]),
   A = new Set([u, d, f]);
 var C = function(e) {
   return e[e.FOCUSED = 0] = "FOCUSED", e[e.PIP = 1] = "PIP", e[e.GRID = 2] = "GRID", e
@@ -92,8 +92,8 @@ let N = {
     supported_locales: []
   },
   P = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
-  D = [...P, Chunk981631.d4z.GUILD_VOICE],
-  w = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
+  w = [...P, Chunk981631.d4z.GUILD_VOICE],
+  D = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
 var L = function(e) {
   return e.NORMAL = "normal", e.FULL_SCREEN = "full-screen", e
 }({});

@@ -89,7 +89,7 @@ function I(e) {
   }, i)
 }
 
-function T(e) {
+function S(e) {
   let t, {
       quest: n,
       taskDetails: r,
@@ -113,7 +113,7 @@ function T(e) {
   }, i)
 }
 
-function S(e) {
+function T(e) {
   let t, {
       quest: n,
       taskDetails: r,
@@ -240,7 +240,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -273,7 +273,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -286,7 +286,7 @@ function w(e) {
     onGameSheetOpened: d,
     onGameSheetClosed: f
   } = e, _ = (0, s.I5)(c, h.PremiumTypes.TIER_2), p = (0, l.Kr)(t.config), m = (0, l.$J)(t) && (0, l.$H)(t);
-  if ((0, l.Pb)(t)) return D({
+  if ((0, l.Pb)(t)) return w({
     quest: t,
     taskDetails: n,
     sourceQuestContent: a,
@@ -302,14 +302,14 @@ function w(e) {
     hasNitro: _,
     collectibleRewardDuration: p
   });
-  if ((0, l.$J)(t)) return T({
+  if ((0, l.$J)(t)) return S({
     quest: t,
     taskDetails: n,
     withoutMarkdown: o,
     hasNitro: _,
     collectibleRewardDuration: p
   });
-  if ((0, l.$H)(t)) return S({
+  if ((0, l.$H)(t)) return T({
     quest: t,
     taskDetails: n,
     withoutMarkdown: o,
@@ -341,7 +341,7 @@ function w(e) {
 
 function L(e) {
   var t;
-  return w(y(E({}, e), {
+  return D(y(E({}, e), {
     currentUser: null != (t = e.currentUser) ? t : a.default.getCurrentUser(),
     popoutTargetElementRef: e.popoutTargetElementRef,
     onGameSheetOpened: e.onGameSheetOpened,

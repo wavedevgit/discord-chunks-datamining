@@ -15,23 +15,23 @@ let d = Chunk647438.memo(function(e) {
   let {
     sound: n,
     volume: t,
-    disabled: l = false,
+    disabled: a = false,
     onChange: d
   } = e, {
     file: f
-  } = (0, o.p)();
-  return (0, a.jsx)(r.gNt, {
+  } = (0, s.p)();
+  return (0, l.jsx)(i.gNt, {
     label: u.intl.string(u.t.CCRKNz),
-    children: (0, a.jsxs)("div", {
+    children: (0, l.jsxs)("div", {
       className: c.fakeInput,
-      children: [null != n && (0, a.jsx)(s.Z, {
+      children: [null != n && (0, l.jsx)(o.Z, {
         sound: n,
         volume: t,
-        disabled: l
-      }), null == n && null != f && (0, a.jsx)(i.Z, {
+        disabled: a
+      }), null == n && null != f && (0, l.jsx)(r.Z, {
         className: c.audioTrimmer,
         volume: t,
-        disabled: l,
+        disabled: a,
         onChange: d
       })]
     })

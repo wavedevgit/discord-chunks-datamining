@@ -58,8 +58,8 @@ function P(e) {
     currentUser: n,
     guildId: N,
     channelId: P,
-    messageId: D,
-    roleId: w,
+    messageId: w,
+    roleId: D,
     openedAt: L,
     closePopout: x,
     setPopoutRef: M,
@@ -73,8 +73,8 @@ function P(e) {
     userId: t.id,
     guildId: N,
     channelId: P,
-    messageId: D,
-    roleId: w
+    messageId: w,
+    roleId: D
   }), Z = (0, h.ZP)(t.id, N), F = (0, a.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), V = i.useRef(null), {
     isHoveringOrFocusing: H
   } = (0, u.Z)(V);
@@ -121,7 +121,7 @@ function P(e) {
         }), (0, r.jsxs)(b.Z, {
           user: t,
           displayProfile: Z,
-          themeType: S.l.POPOUT,
+          themeType: T.l.POPOUT,
           children: [(0, r.jsx)(O.Z, {
             children: (0, r.jsx)(y.Z, {
               user: t,
@@ -135,17 +135,17 @@ function P(e) {
               user: t,
               displayProfile: Z,
               guildId: N,
-              themeType: S.l.POPOUT
+              themeType: T.l.POPOUT
             }), (0, r.jsx)(g.Z, {
               user: t,
               displayProfile: Z,
               guildId: N,
               channelId: P,
-              themeType: S.l.POPOUT,
+              themeType: T.l.POPOUT,
               onOpenProfile: k ? true : Y
             }), (0, r.jsx)(v.Z, {
               user: t,
-              themeType: S.l.POPOUT,
+              themeType: T.l.POPOUT,
               onCloseProfile: x,
               disableToolbar: true
             })]
@@ -158,7 +158,7 @@ function P(e) {
             onOpenProfile: k ? true : Y,
             channelId: P,
             onClose: x
-          }), (0, r.jsx)(T.Z, {
+          }), (0, r.jsx)(S.Z, {
             user: t,
             guildId: N,
             channelId: P,

@@ -27,18 +27,18 @@ let O = function(e) {
   let {
     mobile: t
   } = e, n = (0, i.e7)([p.Z], () => p.Z.getLayers().includes(E.S9g.USER_SETTINGS)), O = (0, i.e7)([h.default], () => m.ZP.canUseClientThemes(h.default.getCurrentUser())), v = (0, i.e7)([s.Z], () => s.Z.isCoachmark), I = (0, l.g)(), {
-    activePanel: T,
-    metadata: S
+    activePanel: S,
+    metadata: T
   } = (0, g.oq)(), A = [];
-  !n && null == T && (v && !O && A.push(a.z.CLIENT_THEMES_COACHMARK), I && A.push(a.z.CUSTOM_THEME_COACHMARK));
+  !n && null == S && (v && !O && A.push(a.z.CLIENT_THEMES_COACHMARK), I && A.push(a.z.CUSTOM_THEME_COACHMARK));
   let [C, N] = (0, _.US)(A, b.R.SIDEBAR, true), R = C === a.z.CLIENT_THEMES_COACHMARK, P = C === a.z.CUSTOM_THEME_COACHMARK;
   if ((0, u.HA)(I, C), n) return null;
-  let D = T === g.wh.CLIENT_THEMES || R,
-    w = T === g.wh.APP_ICON,
-    L = T === g.wh.CUSTOM_THEME || P;
-  if (!(D || w || L)) return null;
+  let w = S === g.wh.CLIENT_THEMES || R,
+    D = S === g.wh.APP_ICON,
+    L = S === g.wh.CUSTOM_THEME || P;
+  if (!(w || D || L)) return null;
   let x = () => (0, r.jsxs)(r.Fragment, {
-    children: [D && (0, r.jsx)(c.Z, {
+    children: [w && (0, r.jsx)(c.Z, {
       markAsDismissed: R ? N : () => {
         (0, f.Q3)(a.z.CLIENT_THEMES_COACHMARK, {
           dismissAction: b.L.INDIRECT_ACTION,
@@ -46,11 +46,11 @@ let O = function(e) {
         })
       },
       showClientThemesCoachmark: R
-    }), w && (0, r.jsx)(o.Z, {
+    }), D && (0, r.jsx)(o.Z, {
       isCoachmark: false,
       markAsDismissed: N
     }), L && (0, r.jsx)(d.Z, {
-      metadata: null != S ? S : {},
+      metadata: null != T ? T : {},
       markAsDismissed: N,
       isCoachmark: P,
       isMobile: t

@@ -97,8 +97,8 @@ class v {
   }
 }
 let I = v.empty(),
-  T = false,
-  S = null;
+  S = false,
+  T = null;
 
 function A(e, t, n) {
   return "".concat(e, ":").concat(t, ":").concat(n)
@@ -119,7 +119,7 @@ function N() {
 }
 
 function R() {
-  null != S && (S.destroy(), S = null)
+  null != T && (T.destroy(), T = null)
 }
 
 function P(e) {
@@ -127,11 +127,11 @@ function P(e) {
   h = null != (t = e.section) ? t : p
 }
 
-function D() {
+function w() {
   R()
 }
 
-function w(e) {
+function D(e) {
   null != e.channelId && (N(), g.clear())
 }
 
@@ -226,7 +226,7 @@ function G(e) {
   } = e, n = l.Z.getMediaEngine();
   if (R(), !n.supports(d.AN.CONNECTION_REPLAY) || 0 === t.length) return;
   let r = n.createReplayConnection(d.Yn.DEFAULT, t);
-  null != r && (S = r, r.on(a.Sh.Video, (e, t, n, i, a) => {
+  null != r && (T = r, r.on(a.Sh.Video, (e, t, n, i, a) => {
     o.Z.dispatch({
       type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT",
       mediaEngineConnectionId: r.mediaEngineConnectionId,
@@ -245,7 +245,7 @@ function Z(e) {
   let {
     value: t
   } = e;
-  T = t
+  S = t
 }
 
 function F(e) {
@@ -294,7 +294,7 @@ class V extends(r = Chunk442837.ZP.Store) {
     return I
   }
   shouldRecordNextConnection() {
-    return T
+    return S
   }
   getSimulcastDebugOverride(e, t) {
     let n = O(e, t);
@@ -304,14 +304,14 @@ class V extends(r = Chunk442837.ZP.Store) {
 f(V, "displayName", "RTCDebugStore");
 let H = new V(Chunk570140.Z, {
   RTC_DEBUG_MODAL_OPEN: P,
-  RTC_DEBUG_MODAL_CLOSE: D,
+  RTC_DEBUG_MODAL_CLOSE: w,
   RTC_DEBUG_MODAL_SET_SECTION: x,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,
   RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: B,
   RTC_DEBUG_SET_RECORDING_FLAG: Z,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F,
-  VOICE_CHANNEL_SELECT: w,
+  VOICE_CHANNEL_SELECT: D,
   RTC_CONNECTION_VIDEO: L,
   MEDIA_ENGINE_CONNECTION_STATS: k
 })

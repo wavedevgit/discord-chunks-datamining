@@ -116,8 +116,8 @@ function h(e) {
     onButtonPress: O,
     listType: v = "icon",
     index: I,
-    noInset: T = false
-  } = e, S = null != p ? (0, r.jsx)(o.Button, {
+    noInset: S = false
+  } = e, T = null != p ? (0, r.jsx)(o.Button, {
     variant: h,
     size: m,
     text: p,
@@ -130,7 +130,7 @@ function h(e) {
   }) : true;
   return (0, r.jsxs)("div", {
     className: a()(s.row, {
-      [s.noInset]: T
+      [s.noInset]: S
     }),
     children: [(0, r.jsxs)(o.Kqy, {
       direction: "horizontal",
@@ -159,7 +159,7 @@ function h(e) {
           children: c
         })]
       })]
-    }), S]
+    }), T]
   })
 }
 

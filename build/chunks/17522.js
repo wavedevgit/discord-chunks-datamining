@@ -169,18 +169,18 @@ function Z({
     ...v
   } = e, I = (0, x.useContext)(k);
   t = (0, R.B)((0, x.useMemo)(() => (0, P.l)(t, null == I ? true : I.tableRef), [t, null == I ? true : I.tableRef]));
-  let T = (0, h.o)({
+  let S = (0, h.o)({
       ...v,
       collection: r,
       children: true,
       UNSAFE_selectionState: n
     }),
-    S = (0, h.w)(T, O),
+    T = (0, h.w)(S, O),
     {
       isVirtualized: A,
       layoutDelegate: C,
       dropTargetDelegate: N,
-      CollectionRoot: w
+      CollectionRoot: D
     } = (0, x.useContext)(a.Qk),
     {
       dragAndDropHooks: L
@@ -191,8 +191,8 @@ function Z({
       ...v,
       layoutDelegate: C,
       isVirtualized: A
-    }, S, t),
-    j = S.selectionManager,
+    }, T, t),
+    j = T.selectionManager,
     B = !!(null == L ? true : L.useDraggableCollectionState),
     Z = !!(null == L ? true : L.useDroppableCollectionState);
   (0, x.useRef)(B), (0, x.useRef)(Z), (0, x.useEffect)(() => {}, [B, Z]);
@@ -201,7 +201,7 @@ function Z({
     Y = (0, x.useRef)(null);
   if (B && L) {
     u = L.useDraggableCollectionState({
-      collection: S.collection,
+      collection: T.collection,
       selectionManager: j,
       preview: L.renderDragPreview ? Y : true
     }), L.useDraggableCollection({}, u, t);
@@ -212,11 +212,11 @@ function Z({
   }
   if (Z && L) {
     d = L.useDroppableCollectionState({
-      collection: S.collection,
+      collection: T.collection,
       selectionManager: j
     });
     let e = new(0, g.d)({
-        collection: S.collection,
+        collection: T.collection,
         disabledKeys: j.disabledKeys,
         disabledBehavior: j.disabledBehavior,
         ref: t,
@@ -242,23 +242,23 @@ function Z({
       isDropTarget: V,
       isFocused: K,
       isFocusVisible: z,
-      state: S
+      state: T
     }
   }), X = !!(B && !(null == u ? true : u.isDisabled)), Q = q.style, J = null;
   I && (J = I.useTableColumnResizeState({
     tableWidth: I.tableWidth
-  }, S), A || (Q = {
+  }, T), A || (Q = {
     ...Q,
     tableLayout: "fixed",
     width: "fit-content"
   }));
   let $ = F("table"),
-    ee = (0, D.z)(e, {
+    ee = (0, w.z)(e, {
       global: true
     });
   return x.createElement(o.zt, {
     values: [
-      [U, S],
+      [U, T],
       [G, J],
       [s.Ed, {
         dragAndDropHooks: L,
@@ -281,8 +281,8 @@ function Z({
     "data-drop-target": V || true,
     "data-focused": K || true,
     "data-focus-visible": z || true
-  }, x.createElement(c.y, null, x.createElement(w, {
-    collection: S.collection,
+  }, x.createElement(c.y, null, x.createElement(D, {
+    collection: T.collection,
     scrollRef: null != (l = null == I ? true : I.scrollRef) ? l : t,
     persistedKeys: (0, s.y)(j, L, d)
   })))), H)
@@ -329,7 +329,7 @@ let Y = (0, Chunk785894.IW)(H, (e, t) => {
       }
     });
   return x.createElement(i, {
-    ...(0, y.d)((0, D.z)(e, {
+    ...(0, y.d)((0, w.z)(e, {
       global: true
     }), a, s),
     ...c,
@@ -358,7 +358,7 @@ function W({
     }, n, t),
     {
       checkboxProps: c
-    } = (0, T.j)(n),
+    } = (0, S.j)(n),
     u = F("tr");
   return x.createElement(u, {
     ...l,
@@ -387,7 +387,7 @@ let z = (0, Chunk785894.G5)(K, (e, t, n) => {
       } = (0, x.useContext)(a.Qk),
       {
         columnHeaderProps: u
-      } = (0, S.W)({
+      } = (0, T.W)({
         node: n,
         isVirtualized: c
       }, l, s),
@@ -430,11 +430,11 @@ let z = (0, Chunk785894.G5)(K, (e, t, n) => {
       width: p.getColumnWidth(n.key)
     });
     let I = F("th"),
-      T = (0, D.z)(e, {
+      S = (0, w.z)(e, {
         global: true
       });
-    return delete T.id, x.createElement(I, {
-      ...(0, y.d)(T, u, _, m),
+    return delete S.id, x.createElement(I, {
+      ...(0, y.d)(S, u, _, m),
       ...b,
       style: O,
       ref: s,
@@ -508,11 +508,11 @@ let Q = (0, Chunk785894.IW)(X, (e, t) => {
   }
   let {
     rowGroupProps: I
-  } = (0, O.LA)(), T = F("tbody"), S = (0, D.z)(e, {
+  } = (0, O.LA)(), S = F("tbody"), T = (0, w.z)(e, {
     global: true
   });
-  return x.createElement(T, {
-    ...(0, y.d)(S, g, I),
+  return x.createElement(S, {
+    ...(0, y.d)(T, g, I),
     ref: t,
     "data-empty": h || true
   }, _ && x.createElement(ea, null), x.createElement(u, {
@@ -553,12 +553,12 @@ let $ = (0, Chunk785894.IW)(J, (e, t, n) => {
     }, f, d),
     {
       isFocused: I,
-      isFocusVisible: S,
+      isFocusVisible: T,
       focusProps: N
     } = (0, E.F)(),
     {
       isFocusVisible: P,
-      focusProps: w
+      focusProps: D
     } = (0, E.F)({
       within: true
     }),
@@ -573,7 +573,7 @@ let $ = (0, Chunk785894.IW)(J, (e, t, n) => {
     }),
     {
       checkboxProps: k
-    } = (0, T.M)({
+    } = (0, S.M)({
       key: n.key
     }, f);
   p && _ && (c = _.useDraggableItem({
@@ -608,7 +608,7 @@ let $ = (0, Chunk785894.IW)(J, (e, t, n) => {
         ...O,
         isHovered: M,
         isFocused: I,
-        isFocusVisible: S,
+        isFocusVisible: T,
         selectionMode: f.selectionManager.selectionMode,
         selectionBehavior: f.selectionManager.selectionBehavior,
         isDragging: Z,
@@ -619,7 +619,7 @@ let $ = (0, Chunk785894.IW)(J, (e, t, n) => {
     }),
     W = F("tr"),
     K = F("td"),
-    z = (0, D.z)(e, {
+    z = (0, w.z)(e, {
       global: true
     });
   return delete z.id, delete z.onClick, x.createElement(x.Fragment, null, u && !u.isHidden && x.createElement(W, {
@@ -639,13 +639,13 @@ let $ = (0, Chunk785894.IW)(J, (e, t, n) => {
     ...u.dropIndicatorProps,
     ref: j
   }))), x.createElement(W, {
-    ...(0, y.d)(z, Y, b, N, L, null == c ? true : c.dragProps, w),
+    ...(0, y.d)(z, Y, b, N, L, null == c ? true : c.dragProps, D),
     ref: d,
     "data-disabled": O.isDisabled || true,
     "data-selected": O.isSelected || true,
     "data-hovered": M || true,
     "data-focused": O.isFocused || true,
-    "data-focus-visible": S || true,
+    "data-focus-visible": T || true,
     "data-pressed": O.isPressed || true,
     "data-dragging": Z || true,
     "data-drop-target": (null == u ? true : u.isDropTarget) || true,
@@ -725,7 +725,7 @@ let et = (0, Chunk785894.G5)(ee, (e, t, n) => {
       isHovered: m,
       id: n.key
     }
-  }), b = F("td"), O = (0, D.z)(e, {
+  }), b = F("td"), O = (0, w.z)(e, {
     global: true
   });
   return delete O.id, x.createElement(b, {
@@ -774,7 +774,7 @@ function er(e, t) {
     }
   }), u = F("tr"), d = F("td");
   return x.createElement(u, {
-    ...(0, D.z)(e, {
+    ...(0, w.z)(e, {
       global: true
     }),
     ...c,
@@ -855,7 +855,7 @@ function ea() {
       sentinelRef: f,
       scrollOffset: c
     }), [l, c, null == r ? true : r.collection]);
-  (0, w.B)(_, f);
+  (0, D.B)(_, f);
   let p = (0, o.aX)({
       ...u,
       id: true,
@@ -889,7 +889,7 @@ function ea() {
       width: 1
     }
   }))), s && p.children && x.createElement(h, {
-    ...(0, y.d)((0, D.z)(e, {
+    ...(0, y.d)((0, w.z)(e, {
       global: true
     }), g),
     ...p,

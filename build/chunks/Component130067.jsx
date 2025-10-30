@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk953620 = require("./953620.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -135,7 +135,7 @@ class N extends Chunk647438.PureComponent {
       volume: y
     } = this.state, O = module && !Chunk19780 ? Chunk388032.intl.string(Chunk388032.t["9viE2A"]) : null;
     Chunk19780 && module && !Chunk46973 && this._micTestStop();
-    let T = Chunk392711.length >= Chunk120356.length ? Chunk392711 : Chunk120356;
+    let S = Chunk392711.length >= Chunk120356.length ? Chunk392711 : Chunk120356;
     return (0, Chunk951288.jsx)("div", {
       className: o()(Chunk953620.container, Chunk131951),
       children: (0, Chunk951288.jsx)(Chunk481060.gNt, {
@@ -154,7 +154,7 @@ class N extends Chunk647438.PureComponent {
                 size: Chunk755721.zx.Sizes.SMALL,
                 className: l,
                 color: Chunk442837,
-                children: T
+                children: S
               }), (0, Chunk951288.jsx)("div", {
                 className: Chunk953620.buttonSizerSpacer
               })]
@@ -185,14 +185,14 @@ class N extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), T(this, "_initTimeout", new d.V7), T(this, "_silenceTimeout", new d.V7), T(this, "_messageTimeout", new d.V7), T(this, "_micTestStartTime", true), T(this, "state", {
+    super(...e), S(this, "_initTimeout", new d.V7), S(this, "_silenceTimeout", new d.V7), S(this, "_messageTimeout", new d.V7), S(this, "_micTestStartTime", true), S(this, "state", {
       volume: C,
       isMicTesting: false,
       isDetectingInput: true,
       didDeafenUser: false
-    }), T(this, "setupVoiceActivity", () => {
+    }), S(this, "setupVoiceActivity", () => {
       E.Z.getMediaEngine().on(u.aB.VoiceActivity, this.handleVoiceActivity)
-    }), T(this, "handleVoiceActivity", e => {
+    }), S(this, "handleVoiceActivity", e => {
       let {
         isMicTesting: t
       } = this.state;
@@ -210,7 +210,7 @@ class N extends Chunk647438.PureComponent {
         volume: e,
         isDetectingInput: true
       })
-    }), T(this, "handleToggleMicTest", () => {
+    }), S(this, "handleToggleMicTest", () => {
       this.state.isMicTesting ? this._micTestStop() : this._micTestStart()
     })
   }
@@ -264,7 +264,7 @@ function R(e) {
     ref: h,
     width: g
   } = (0, m.ZP)();
-  return (0, r.jsx)(N, S({
+  return (0, r.jsx)(N, T({
     isVoiceConnected: p,
     inputVolume: u,
     outputVolume: d,

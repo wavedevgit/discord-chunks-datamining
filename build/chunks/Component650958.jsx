@@ -88,12 +88,12 @@ function g(e) {
     setDevice: y,
     getLabel: O,
     getLocation: v
-  } = m(t), [I, T] = i.useState(f), S = v(n[n.length - 1]), [A, C] = (0, l.Ls)(t, {
-    location: S
+  } = m(t), [I, S] = i.useState(f), T = v(n[n.length - 1]), [A, C] = (0, l.Ls)(t, {
+    location: T
   }), N = I ? A.concat(C) : A, {
     id: R,
     name: P
-  } = (0, l.p6)(t), D = null != p ? p : R, w = N.map(e => {
+  } = (0, l.p6)(t), w = null != p ? p : R, D = N.map(e => {
     let i, {
         id: o,
         disabled: s,
@@ -110,7 +110,7 @@ function g(e) {
         variant: "text-xs/normal",
         children: i
       }),
-      checked: o === D,
+      checked: o === w,
       action: () => {
         var e;
         (null == (e = null == u ? true : u(o)) || e) && y(o, {
@@ -123,9 +123,9 @@ function g(e) {
     label: d.intl.string(d.t.E99UMh),
     dontCloseOnAction: true,
     action: () => {
-      T(true), s.default.track(c.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
+      S(true), s.default.track(c.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
         device_type: t,
-        location: S,
+        location: T,
         shown_device_count: A.length,
         hidden_device_count: C.length,
         location_stack: n
@@ -137,10 +137,10 @@ function g(e) {
     label: O(),
     subtext: P
   }, E), {
-    children: [w, x && L]
+    children: [D, x && L]
   })) : (0, r.jsxs)(a.kSQ, h(_({
     label: O()
   }, g), {
-    children: [w, x && L]
+    children: [D, x && L]
   }))
 }

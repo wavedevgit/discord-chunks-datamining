@@ -1,256 +1,209 @@
-/** Chunk was on 99617 **/
+/** Chunk was on 25881 **/
 /** chunk id: 502801, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => E
-}), require("./539854.js"), require("./642613.js"), require("./388685.js");
+  default: () => W
+}), require("./539854.js"), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
-  Chunk442837 = require("./442837.js"),
+  o = require.n(Chunk120356),
   Chunk952265 = require("./952265.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk493683 = require("./493683.js"),
-  Chunk700582 = require("./700582.jsx"),
-  Chunk100527 = require("./100527.js"),
-  Chunk906732 = require("./906732.jsx"),
-  Chunk933557 = require("./933557.js"),
-  Chunk471445 = require("./471445.js"),
-  Chunk734307 = require("./734307.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk686546 = require("./686546.jsx"),
+  Chunk930864 = require("./930864.jsx"),
+  Chunk124347 = require("./124347.jsx"),
+  Chunk957730 = require("./957730.js"),
   Chunk359110 = require("./359110.js"),
-  Chunk752048 = require("./752048.js"),
-  Chunk210887 = require("./210887.js"),
+  Chunk987509 = require("./987509.js"),
   Chunk131704 = require("./131704.js"),
-  Chunk699516 = require("./699516.js"),
-  Chunk944486 = require("./944486.js"),
-  Chunk914010 = require("./914010.js"),
-  Chunk594174 = require("./594174.js"),
-  Chunk186523 = require("./186523.jsx"),
-  Chunk553826 = require("./553826.jsx"),
+  Chunk592125 = require("./592125.js"),
+  Chunk703558 = require("./703558.js"),
+  Chunk626135 = require("./626135.js"),
   Chunk823379 = require("./823379.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk127654 = require("./127654.js"),
+  Chunk894694 = require("./894694.js"),
+  Chunk61994 = require("./61994.js"),
+  Chunk39604 = require("./39604.js"),
   Chunk407316 = require("./407316.js"),
-  Chunk937784 = require("./937784.jsx"),
+  Chunk356659 = require("./356659.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk413797 = require("./413797.js"),
-  Chunk138715 = require("./138715.js"),
-  Chunk979770 = require("./979770.js");
+  Chunk698755 = require("./698755.js");
 
-function T(e) {
+function k(e) {
+  var t;
   let {
-    channel: t,
-    ChannelIcon: n,
-    selected: l,
-    onClick: a
-  } = e, r = (0, g.ZP)(t);
-  return (0, i.jsxs)(c.P3F, {
-    className: k.channelRow,
-    onClick: () => a(t.id),
-    children: [l ? (0, i.jsx)(N.Z, {
-      className: k.radioIcon
-    }) : (0, i.jsx)(y.Z, {
-      className: k.radioIcon
-    }), (0, i.jsx)(n, {
-      className: k.icon,
-      size: "xs",
-      color: "currentColor"
-    }), (0, i.jsx)(c.Text, {
-      variant: "text-md/medium",
-      color: "interactive-active",
-      children: r
+    clips: n
+  } = e, r = n[0], i = r.thumbnail, l = null;
+  return "" !== i && (l = (0, a.jsx)("div", {
+    className: o()(R.attachmentPreview, R.attachmentPreviewVideo),
+    children: (0, a.jsx)(d.ZP, {
+      className: R.thumbnail,
+      src: i,
+      width: 56,
+      height: 56
+    })
+  }), n.length > 1 && (l = (0, a.jsxs)("div", {
+    className: R.attachmentPreviewOverflow,
+    children: [(0, a.jsx)(u.ZP, {
+      mask: u.ZP.Masks.FORWARD_ATTACHMENT_PILE_OVERFLOW,
+      width: 56,
+      height: 56,
+      children: l
+    }), (0, a.jsxs)(c.Text, {
+      className: R.overflowCount,
+      variant: "text-xs/semibold",
+      color: "text-default",
+      children: ["+", n.length - 1]
     })]
-  })
-}
-
-function A(e) {
-  let {
-    guildId: t,
-    selectedChannelId: n,
-    onSelectChannelId: a
-  } = e, d = (0, s.e7)([S.Z], () => S.Z.getChannelId()), {
-    guildChannels: o
-  } = (0, s.cj)([f.Z], () => f.Z.getGuildWithoutChangingGuildActionRows(t)), u = l.useMemo(() => {
-    let e = [];
-    return o.forEachChannel(t => {
-      false !== (0, L.W)(t.id) && ((0, p.r8)(t.type) || (0, p.bw)(t.type)) && e.push(t)
-    }), e.sort((e, t) => e.id === d ? false : +(t.id === d))
-  }, [o, d]);
-  return 0 === u.length ? null : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)("div", {
-      className: r()(k.divider, k.bottomDivider)
-    }), (0, i.jsx)(c.Text, {
-      variant: "eyebrow",
-      color: "interactive-normal",
-      className: k.contentPadding,
-      children: R.intl.string(R.t.SOtDeZ)
-    }), (0, i.jsx)(c.aVo, {
-      sections: [u.length],
-      sectionHeight: 0,
-      renderRow: e => {
-        let {
-          section: t,
-          row: l
-        } = e;
-        if (t > 0) return null;
-        let r = u[l],
-          s = (0, _.KS)(r);
-        return null == s ? null : (0, i.jsx)(T, {
-          channel: r,
-          ChannelIcon: s,
-          selected: n === r.id,
-          onClick: a
-        }, r.id)
-      },
-      rowHeight: (e, t) => e > 0 ? 0 : 56 * (null != u[t]),
-      renderSection: () => null,
-      className: r()(k.channelList, k.contentPadding),
-      fade: true
-    })]
-  })
-}
-
-function B(e) {
-  let {
-    friends: t,
-    searchQuery: n,
-    disabled: a,
-    onShareClip: d
-  } = e, u = l.useMemo(() => 0 === n.length ? t : t.filter(e => e.username.toLowerCase().includes(n.toLowerCase())), [t, n]), m = (0, s.e7)([j.Z], () => j.Z.theme);
-  return 0 === u.length ? (0, i.jsxs)(c.ubH, {
-    theme: m,
-    className: k.emptyStateContainer,
-    children: [(0, i.jsx)(c.oxh, {
-      width: 415,
-      height: 75,
-      lightSrc: H,
-      darkSrc: D
-    }), (0, i.jsx)(c.OZU, {
-      note: R.intl.string(R.t["+Zg0lW"])
-    })]
-  }) : (0, i.jsx)(c.aVo, {
-    sections: [u.length],
-    sectionHeight: 0,
-    renderRow: e => {
-      let {
-        section: t,
-        row: n
-      } = e;
-      if (t > 0) return null;
-      let l = u[n],
-        r = u[n].username;
-      return (0, i.jsxs)("div", {
-        className: k.userRow,
-        children: [(0, i.jsx)(h.Z, {
-          user: l
-        }), (0, i.jsx)(c.Text, {
-          className: k.username,
-          variant: "text-md/normal",
-          children: r
-        }), (0, i.jsx)(o.zx, {
-          disabled: a,
-          onClick: () => d(l.id),
-          className: k.__invalid_friendShareButton,
-          look: o.iL.OUTLINED,
-          size: o.Ph.SMALL,
-          color: o.Tt.BRAND,
-          children: (0, i.jsx)(c.Text, {
-            variant: "text-sm/medium",
-            children: R.intl.string(R.t.RDE0Sc)
+  }))), (0, a.jsxs)("div", {
+    className: R.forwardPreview,
+    children: [(0, a.jsx)("div", {
+      className: R.contentWrapper,
+      children: (0, a.jsxs)("div", {
+        className: R.attachmentRow,
+        children: [(0, a.jsx)(c.g8d, {
+          size: "custom",
+          width: 20,
+          color: c.TVs.colors.TEXT_LOW_CONTRAST
+        }), (0, a.jsx)(c.Text, {
+          variant: "text-md/medium",
+          color: "text-low-contrast",
+          children: 1 === n.length ? null != (t = r.name) ? t : L.intl.string(L.t.Cyxddp) : L.intl.formatToPlainString(L.t.SJ6pPX, {
+            count: n.length
           })
         })]
-      }, l.id)
-    },
-    rowHeight: (e, t) => e > 0 ? 0 : 52 * (null != u[t]),
-    renderSection: () => null,
-    className: r()(k.friendsList, k.contentPadding),
-    fade: true
+      })
+    }), l]
   })
 }
 
-function E(e) {
-  let {
-    clip: t,
-    editMetadata: n,
-    transitionState: a,
-    onClose: o
-  } = e, [h, g] = l.useState(""), [_, f] = l.useState(false), [j, p] = l.useState(null), S = (0, s.Wu)([C.Z], () => C.Z.getFriendIDs()), y = (0, s.Wu)([b.Z, w.default], () => S.map(e => w.default.getUser(e)).filter(I.lm).sort((e, t) => {
-    var n, i, l, a;
-    return (null != (l = null == (n = b.Z.getUserAffinity(t.id)) ? true : n.communicationProbability) ? l : 0) - (null != (a = null == (i = b.Z.getUserAffinity(e.id)) ? true : i.communicationProbability) ? a : 0)
-  }), [S]), N = (0, s.e7)([Z.Z], () => Z.Z.getGuildId()), {
-    analyticsLocations: L
-  } = (0, x.ZP)(m.Z.CLIPS_SHARE_MODAL);
-  async function D(e) {
-    let i = null != e ? e : j;
-    if (null != i) {
-      f(true);
-      try {
-        await (0, P.e)(t, {
-          channelId: i,
-          editMetadata: n,
-          analyticsLocations: L
-        }), null == e && (0, v.Kh)(i), d.pT()
-      } catch (e) {} finally {
-        f(false)
+function W(e) {
+  var t, n, {
+      clips: i,
+      analyticsLocations: o,
+      onClose: u
+    } = e,
+    d = function(e, t) {
+      if (null == e) return {};
+      var n, a, r = function(e, t) {
+        if (null == e) return {};
+        var n, a, r = {},
+          i = Object.keys(e);
+        for (a = 0; a < i.length; a++) n = i[a], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        return r
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var i = Object.getOwnPropertySymbols(e);
+        for (a = 0; a < i.length; a++) n = i[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
+      return r
+    }(e, ["clips", "analyticsLocations", "onClose"]);
+  let R = r.useCallback(async (e, t, n) => {
+      let {
+        withMessage: a,
+        transitionToDestination: r,
+        closeAfterSend: p
+      } = t;
+      n(true);
+      try {
+        let t = [],
+          b = [];
+        for (let e of i) {
+          var d;
+          let n = await (0, x.rO)(e),
+            a = null != (d = e.name) ? d : (0, I.yl)(O.default.extractTimestamp(e.id)),
+            r = (0, j.Z)(a);
+          if (e.type === P.NJ.CLIP || e.type === P.NJ.VOICE_CLIP) {
+            let a = "".concat("" !== r ? r : "clip", ".mp4");
+            t.push(new File([n], a, {
+              type: "video/mp4"
+            })), b.push({
+              clip: e
+            })
+          } else if (e.type === P.NJ.SCREENSHOT) {
+            let e = "".concat("" !== r ? r : "screenshot", ".jpeg");
+            t.push(new File([n], e, {
+              type: "image/jpeg"
+            })), b.push({})
+          }
+        }
+        let R = (await Promise.all(e.map(f.qx))).filter(g.lm).filter(e => (0, T.W)(e));
+        if (0 === R.length) {
+          (0, c.showToast)((0, c.createToast)(L.intl.string(L.t.iufib1), c.ToastType.FAILURE)), n(false);
+          return
+        }
+        for (let e of (p && u(), R)) {
+          let n = m.Z.getChannel(e);
+          if (null != n) {
+            for (let e of ((0, v.d)(t, n, w.d.ChannelMessage, {
+                filesMetadata: b,
+                origin: "unknown:clip_share",
+                requireConfirm: false
+              }), i)) y.default.track(C.rMx.CLIP_SHARED, {
+              location_stack: o,
+              guild_id: n.guild_id,
+              channel_id: n.id,
+              channel_type: n.type,
+              application_id: e.applicationId,
+              clip_id: e.id
+            });
+            null != a && "" !== a.trim() && await s.Z.sendMessage(n.id, h.ZP.parse(n, a), false, {
+              location: S.dy.FORWARDING
+            })
+          }
+        }
+        r && 1 === R.length && ((0, _.Kh)(R[0], {
+          openTextInVoiceIfVoiceChannel: true
+        }), l.pT())
+      } catch (e) {
+        (0, c.showToast)((0, c.createToast)(L.intl.string(L.t.iufib1), c.ToastType.FAILURE))
+      } finally {
+        n(false)
+      }
+    }, [i, o, u]),
+    W = r.useCallback(e => {
+      if (e instanceof b.Sf && !(0, T.W)(e.id)) return {
+        label: L.intl.string(L.t.iufib1)
+      }
+    }, []);
+  return (0, a.jsx)(p.ForwardModal, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        a = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), a.forEach(function(t) {
+        var a;
+        a = n[t], t in e ? Object.defineProperty(e, t, {
+          value: a,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = a
+      })
     }
-  }
-  async function H(e) {
-    let t = await u.Z.openPrivateChannel({
-      recipientIds: e
-    });
-    await D(t)
-  }
-  return (0, i.jsxs)(c.Y0X, {
-    size: c.CgR.SMALL,
-    transitionState: a,
-    parentComponent: "ClipsShareModal",
-    children: [(0, i.jsx)(c.Heading, {
-      className: r()(k.title, k.contentPadding),
-      variant: "heading-lg/semibold",
-      color: "interactive-active",
-      children: R.intl.string(R.t["6EcIlH"])
-    }), (0, i.jsx)(c.Text, {
-      variant: "text-md/normal",
-      color: "text-default",
-      className: r()(k.subtitle, k.contentPadding),
-      children: R.intl.string(R.t.Ey7mOU)
-    }), (0, i.jsx)("div", {
-      className: k.searchBar,
-      children: (0, i.jsx)(c.E1j, {
-        query: h,
-        onChange: g,
-        onClear: function() {
-          g("")
-        },
-        placeholder: R.intl.string(R.t.CmSHYx)
-      })
-    }), (0, i.jsx)("div", {
-      className: r()(k.divider, k.topDivider)
-    }), (0, i.jsx)(B, {
-      searchQuery: h,
-      friends: y,
-      onShareClip: H,
-      disabled: _
-    }), null != N && (0, i.jsx)(A, {
-      guildId: N,
-      selectedChannelId: j,
-      onSelectChannelId: p
-    }), (0, i.jsx)(c.mzw, {
-      children: (0, i.jsxs)(c.ButtonGroup, {
-        direction: "horizontal-reverse",
-        children: [(0, i.jsx)(c.Button, {
-          variant: "primary",
-          text: R.intl.string(R.t.I8lglT),
-          disabled: null == j,
-          loading: _,
-          onClick: () => D()
-        }), (0, i.jsx)(c.Button, {
-          variant: "secondary",
-          text: R.intl.string(R.t["13/7kX"]),
-          loading: _,
-          onClick: o
-        })]
-      })
-    })]
-  })
+    return e
+  }({}, d), n = n = {
+    onClose: u,
+    customTitle: L.intl.string(L.t.I8lglT),
+    customSubtitle: L.intl.string(L.t.Ey7mOU),
+    customPreview: (0, a.jsx)(k, {
+      clips: i
+    }),
+    customSendHandler: R,
+    customValidateDestination: W
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var a = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, a)
+    }
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+  }), t))
 }

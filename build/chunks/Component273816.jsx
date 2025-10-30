@@ -51,8 +51,8 @@ function O(e) {
     [V, z] = r.useState(true),
     [U, W] = r.useState(true),
     [G, F] = r.useState(true),
-    [H, Y] = r.useState(true),
-    [B, Q] = r.useState(true);
+    [H, B] = r.useState(true),
+    [Y, Q] = r.useState(true);
   return t && !n ? null : (0, i.jsxs)("div", {
     className: o()(y.panelGroup, !l && y.rightAligned),
     children: [(V || !t) && (0, i.jsxs)("div", {
@@ -124,7 +124,7 @@ function O(e) {
         className: y.measurementCheckbox,
         children: (0, i.jsx)(u.rsf, {
           checked: H,
-          onChange: e => Y(e)
+          onChange: e => B(e)
         })
       }), (0, i.jsxs)(u.Text, {
         variant: "text-md/normal",
@@ -137,12 +137,12 @@ function O(e) {
           children: N.current.toFixed(0)
         })]
       })]
-    }), (B || !t) && (0, i.jsxs)("div", {
+    }), (Y || !t) && (0, i.jsxs)("div", {
       className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: y.measurementCheckbox,
         children: (0, i.jsx)(u.rsf, {
-          checked: B,
+          checked: Y,
           onChange: e => Q(e)
         })
       }), (0, i.jsx)(s.u, {

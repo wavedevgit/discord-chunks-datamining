@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Fh: () => A,
-  Ls: () => S,
-  p6: () => T,
+  Ls: () => T,
+  p6: () => S,
   rX: () => v
 }), require("./704826.js"), require("./35282.js"), require("./413496.js"), require("./433524.js");
 var Chunk647438 = require("./647438.js"),
@@ -119,7 +119,7 @@ function I(e) {
   }, [e, n])
 }
 
-function T(e) {
+function S(e) {
   let t = I(e),
     {
       getCurrentDeviceId: n
@@ -127,7 +127,7 @@ function T(e) {
   return t[(0, a.e7)([l.Z], () => n(l.Z))]
 }
 
-function S(e, t) {
+function T(e, t) {
   let {
     location: n
   } = t, {
@@ -138,7 +138,7 @@ function S(e, t) {
     getAllDeviceIdsSortedByFrecency: u
   } = b(e), p = (0, o.Z)((0, a.Wu)([d.Z], () => u(d.Z))), {
     id: h
-  } = T(e);
+  } = S(e);
   return (0, r.useMemo)(() => {
     let t = e => e.map(e => l[e]).filter(c.lm),
       n = Object.keys(l),

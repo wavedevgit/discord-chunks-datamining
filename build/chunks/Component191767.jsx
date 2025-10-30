@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 191767, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => A
@@ -100,7 +100,7 @@ async function k(e) {
 }
 
 function R() {
-  let [e, t] = Chunk647438.useState(false), [n, l] = Chunk647438.useState(false), [i, o] = Chunk647438.useState(false), [c, h] = Chunk647438.useState(null), [x, f] = Chunk647438.useState(null), [g, b] = Chunk647438.useState(null), [v, _] = Chunk647438.useState(false), y = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.paymentSources), S = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), O = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.defaultPaymentSourceId);
+  let [e, t] = Chunk647438.useState(false), [n, l] = Chunk647438.useState(false), [i, o] = Chunk647438.useState(false), [c, h] = Chunk647438.useState(null), [x, g] = Chunk647438.useState(null), [f, b] = Chunk647438.useState(null), [v, _] = Chunk647438.useState(false), y = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.paymentSources), S = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), T = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.defaultPaymentSourceId);
   Chunk647438.useEffect(() => {
     Chunk981631 || (0, Chunk355467.tZ)()
   }, [Chunk981631]), Chunk647438.useEffect(() => {
@@ -254,7 +254,7 @@ function A() {
         color: "text-feedback-info",
         className: Chunk306197.labelSpacing,
         children: "Payment-method-specific components and views may not appear for you unless your browser is supported for that payment method and they have been configured on your browser."
-      }), (0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(B, {}), (0, Chunk951288.jsx)(q, {})]
+      }), (0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(F, {}), (0, Chunk951288.jsx)(q, {})]
     })
   })
 }
@@ -294,12 +294,12 @@ function Z() {
       children: "Payment Request Components - Google Pay"
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "Google Pay - Default View",
-      children: (0, Chunk951288.jsx)(M, {
+      children: (0, Chunk951288.jsx)(L, {
         paymentRequestWallet: "googlePay"
       })
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "Google Pay - Connector View",
-      children: (0, Chunk951288.jsx)(M, {
+      children: (0, Chunk951288.jsx)(L, {
         paymentRequestWallet: "googlePay",
         renderConnectorView: true
       })
@@ -313,12 +313,12 @@ function Z() {
       children: "Payment Request Components - Apple Pay"
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "Apple Pay - Default View",
-      children: (0, Chunk951288.jsx)(M, {
+      children: (0, Chunk951288.jsx)(L, {
         paymentRequestWallet: "applePay"
       })
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "Apple Pay - Connector View",
-      children: (0, Chunk951288.jsx)(M, {
+      children: (0, Chunk951288.jsx)(L, {
         renderConnectorView: true,
         paymentRequestWallet: "applePay"
       })
@@ -331,10 +331,10 @@ function Z() {
   })
 }
 
-function M(e) {
+function L(e) {
   let t = r.useRef(null),
     n = {
-      paymentLabel: O.intl.string(O.t.ZURqX0),
+      paymentLabel: T.intl.string(T.t.ZURqX0),
       paymentRequestRef: t,
       onStripePaymentMethodReceived: () => {},
       onPaymentRequestFailure: () => {},
@@ -350,22 +350,22 @@ function M(e) {
   return e.renderStepBody ? (0, a.jsx)(v.t, P({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, a.jsx)(x.Ch, P({}, n, e)) : (0, a.jsx)(x.Tr, P({}, n, e))
 }
 
-function L(e) {
+function M(e) {
   let {
     children: t,
     footer: n,
     className: r
   } = e;
   return (0, a.jsx)("div", {
-    className: o()(N.root, N.focusLock, N.small, N.rootWithShadow, T.modal, r),
-    "aria-label": O.intl.string(O.t.eQ2bLp),
+    className: o()(N.root, N.focusLock, N.small, N.rootWithShadow, O.modal, r),
+    "aria-label": T.intl.string(T.t.eQ2bLp),
     children: (0, a.jsxs)("form", {
-      className: T.form,
+      className: O.form,
       onSubmit: e => {
         e.preventDefault()
       },
       children: [(0, a.jsx)(u.hzk, {
-        className: T.scrollerContent,
+        className: O.scrollerContent,
         children: t
       }), n]
     })
@@ -376,15 +376,15 @@ function U(e) {
   let {
     paymentRequestWallet: t
   } = e, n = r.useRef(null), [l, i] = r.useState(false);
-  return (0, a.jsx)(L, {
+  return (0, a.jsx)(M, {
     footer: (0, a.jsx)(b.Z, {
       primaryCTA: b.Z.CTAType.CONTINUE,
-      primaryText: O.intl.string("applePay" === t ? O.t.WoXvJL : O.t.wnVVr0),
+      primaryText: T.intl.string("applePay" === t ? T.t.WoXvJL : T.t.wnVVr0),
       primaryDisabled: !l,
       onPrimary: () => void(null != n.current && n.current.show()),
       onBack: () => {}
     }),
-    children: (0, a.jsx)(M, {
+    children: (0, a.jsx)(L, {
       renderConnectorView: true,
       renderStepBody: true,
       paymentRequestWallet: t,
@@ -394,20 +394,20 @@ function U(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     children: t
   } = e;
-  return (0, a.jsx)(L, {
-    className: T.choosePaymentTypeModal,
+  return (0, a.jsx)(M, {
+    className: O.choosePaymentTypeModal,
     children: (0, a.jsx)("div", {
-      className: T.choosePaymentTypeContainer,
+      className: O.choosePaymentTypeContainer,
       children: t
     })
   })
 }
 
-function B() {
+function F() {
   let e = {
     onChooseType: () => {},
     onStripePaymentMethodReceived: e => {
@@ -421,7 +421,7 @@ function B() {
       children: "Choose Payment Source Type Component"
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "All Payment Request Wallets Enabled",
-      children: (0, Chunk951288.jsx)(F, {
+      children: (0, Chunk951288.jsx)(B, {
         children: (0, Chunk951288.jsx)(Chunk801937.Z, I(P({}, module), {
           onChooseType: () => {},
           paymentRequestWallets: ["googlePay", "applePay"]
@@ -429,7 +429,7 @@ function B() {
       })
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "No Payment Wallets Enabled",
-      children: (0, Chunk951288.jsx)(F, {
+      children: (0, Chunk951288.jsx)(B, {
         children: (0, Chunk951288.jsx)(Chunk801937.Z, I(P({}, module), {
           onChooseType: () => {},
           paymentRequestWallets: []
@@ -437,7 +437,7 @@ function B() {
       })
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "Is Eligible for Trial",
-      children: (0, Chunk951288.jsx)(F, {
+      children: (0, Chunk951288.jsx)(B, {
         children: (0, Chunk951288.jsx)(Chunk801937.Z, I(P({}, module), {
           isEligibleForTrial: true,
           onChooseType: () => {},
@@ -446,7 +446,7 @@ function B() {
       })
     }), (0, Chunk951288.jsx)(Chunk237012.E_, {
       label: "Only Stripe Card Enabled",
-      children: (0, Chunk951288.jsx)(F, {
+      children: (0, Chunk951288.jsx)(B, {
         children: (0, Chunk951288.jsx)(Chunk801937.Z, I(P({}, module), {
           onChooseType: () => {},
           paymentRequestWallets: [],
@@ -463,7 +463,7 @@ let G = {
     APPLE_AND_GPAY_DISABLED: "Express Checkout Element - Google Pay and Apple Pay Disabled",
     CONFIGURABLE: "Express Checkout Element - Configurable"
   },
-  z = {
+  H = {
     GPAY_FILTERED: {
       wallets: {
         googlePay: "always",
@@ -483,7 +483,7 @@ let G = {
       }
     }
   },
-  H = {
+  z = {
     appearance: {
       theme: "flat",
       variables: {
@@ -506,9 +506,9 @@ let G = {
   W = e => true !== e ? JSON.stringify(e, null, 2) : "undefined";
 
 function K() {
-  let [e, t] = Chunk647438.useState(W(H)), [n, i] = Chunk647438.useState(H), [o, s] = Chunk647438.useState(W(V)), [c, m] = Chunk647438.useState(V), [p, h] = Chunk647438.useState(null), [x, g] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk237012.DS, {
+  let [e, t] = Chunk647438.useState(W(z)), [n, i] = Chunk647438.useState(z), [o, s] = Chunk647438.useState(W(V)), [c, m] = Chunk647438.useState(V), [p, h] = Chunk647438.useState(null), [x, f] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk237012.DS, {
     errorLabel: G.CONFIGURABLE,
-    elementOptions: H,
+    elementOptions: z,
     children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
       onConfirm: e => {
         console.log("ExpressCheckoutElement onConfirm event: ", e)
@@ -636,18 +636,18 @@ function q() {
         children: (0, a.jsxs)("div", {
           children: [(0, a.jsx)(u.Text, {
             variant: "text-md/normal",
-            className: T.labelSpacing,
+            className: O.labelSpacing,
             children: "expressCheckoutElement.options:"
-          }), (0, a.jsx)(f.Z, {
-            className: T.markdown,
-            children: "".concat("``").concat(W(z[e]), " ").concat("``")
+          }), (0, a.jsx)(g.Z, {
+            className: O.markdown,
+            children: "".concat("``").concat(W(H[e]), " ").concat("``")
           }), (0, a.jsx)(C.DS, {
             errorLabel: t,
             children: (0, a.jsx)(l.ExpressCheckoutElement, {
               onConfirm: e => {
                 console.log("ExpressCheckoutElement onConfirm event: ", e)
               },
-              options: z[e]
+              options: H[e]
             })
           })]
         })

@@ -11,7 +11,7 @@ require.d(exports, {
   I: () => eM,
   J2: () => Y,
   Jf: () => eI,
-  KX: () => ew,
+  KX: () => eD,
   MP: () => eX,
   N8: () => eQ,
   OH: () => eL,
@@ -20,7 +20,7 @@ require.d(exports, {
   SU: () => e$,
   Wi: () => ep,
   _Q: () => ex,
-  _s: () => eD,
+  _s: () => ew,
   aV: () => ez,
   bA: () => eu,
   e5: () => el,
@@ -33,10 +33,10 @@ require.d(exports, {
   me: () => eU,
   qI: () => eZ,
   qb: () => eG,
-  t5: () => eS,
+  t5: () => eT,
   tP: () => e_,
   tR: () => ec,
-  uA: () => eT,
+  uA: () => eS,
   vf: () => eV,
   z: () => ey,
   z1: () => eq,
@@ -406,12 +406,12 @@ let eO = 1,
 function eI(e) {
   return r.useMemo(() => (0, C.b7)(e), [e])
 }
-let eT = e => {
+let eS = e => {
   let {
     quest: t,
     questContent: n,
     sourceQuestContent: r
-  } = e, i = eD({
+  } = e, i = ew({
     quest: t
   }), a = (0, A.WD)();
   return () => {
@@ -419,24 +419,24 @@ let eT = e => {
       quest: t
     }, {
       content: n,
-      ctaContent: S.jZ.CONNECT_CONSOLE_LINK,
+      ctaContent: T.jZ.CONNECT_CONSOLE_LINK,
       impressionId: null == a ? true : a.getId(),
       sourceQuestContent: r
     }) : (0, C.V$)({
       quest: t
     }, {
       content: n,
-      ctaContent: S.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
+      ctaContent: T.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
       impressionId: null == a ? true : a.getId(),
       sourceQuestContent: r
     })
   }
 };
 
-function eS(e, t, n, r) {
+function eT(e, t, n, r) {
   let {
     targetMinutes: i
-  } = ev(e), a = eI(e), o = eT({
+  } = ev(e), a = eI(e), o = eS({
     quest: e,
     questContent: n,
     sourceQuestContent: r
@@ -586,7 +586,7 @@ let eP = e => {
       errorHints: o
     }
   },
-  eD = e => {
+  ew = e => {
     let {
       quest: t
     } = e, {
@@ -594,7 +594,7 @@ let eP = e => {
     } = eR(), r = ey(t), i = 0 === n.length;
     return (0, C.$J)(t) && i && !r
   },
-  ew = () => {
+  eD = () => {
     let {
       xboxAccounts: e,
       playstationAccounts: t
@@ -748,7 +748,7 @@ function eZ(e) {
     questId: a
   } = e, o = r.useRef(null);
   r.useEffect(() => {
-    null != a && o.current !== t && ((0, S.Ic)({
+    null != a && o.current !== t && ((0, T.Ic)({
       mode: t,
       prevMode: o.current,
       questContent: n,
@@ -757,7 +757,7 @@ function eZ(e) {
     }), o.current = t)
   }, [a, n, t, i]), r.useEffect(() => {
     if (null != a) return () => {
-      (0, S.Ic)({
+      (0, T.Ic)({
         mode: null,
         prevMode: o.current,
         questContent: n,
@@ -848,7 +848,7 @@ function eY(e) {
     i = (0, C._p)(e),
     a = (0, C.f$)(e),
     o = (0, c.e7)([E.default], () => E.default.getCurrentUser()),
-    s = (0, T.I5)(o, B.PremiumTypes.TIER_2);
+    s = (0, S.I5)(o, B.PremiumTypes.TIER_2);
   if (null == n) return Z.intl.formatToPlainString(Z.t.l9uXL8, {
     decorationName: t
   });

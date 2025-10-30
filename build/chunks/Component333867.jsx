@@ -2,7 +2,7 @@
 /** chunk id: 333867, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -78,22 +78,22 @@ let O = "payment-modal",
   v = "gift-payment-modal",
   I = new Set([Chunk409813.h8.REVIEW, Chunk409813.h8.CONFIRM, Chunk409813.h8.GIFT_CUSTOMIZATION]);
 
-function T(e) {
+function S(e) {
   let t, {
       skuId: f,
       isGift: h = false,
       giftMessage: g,
       giftingOrigin: y,
-      onClose: T,
-      onComplete: S,
+      onClose: S,
+      onComplete: T,
       analyticsLocations: A,
       analyticsObject: C,
       giftRecipient: N,
       variantsReturnStyle: R
     } = e,
     P = false,
-    D = (0, i.Z)(),
-    w = e => {
+    w = (0, i.Z)(),
+    D = e => {
       t = e
     },
     L = h ? v : O,
@@ -108,7 +108,7 @@ function T(e) {
       } = t, i = b(t, ["onClose"]);
       return (0, r.jsx)(e, E(m({}, i), {
         onClose: () => {
-          n(), null == T || T(false)
+          n(), null == S || S(false)
         }
       }))
     }
@@ -123,7 +123,7 @@ function T(e) {
       returnRef: n
     } = e, i = b(e, ["onClose", "returnRef"]);
     return (0, r.jsx)(_.Z, E(m({}, i), {
-      loadId: D,
+      loadId: w,
       skuId: f,
       isGift: h,
       giftMessage: g,
@@ -131,25 +131,25 @@ function T(e) {
       analyticsLocations: A,
       giftRecipient: N,
       onClose: e => {
-        t(), null == T || T(e)
+        t(), null == S || S(e)
       },
       onComplete: () => {
-        P = true, null == S || S()
+        P = true, null == T || T()
       },
       returnRef: n,
-      onStepChange: w
+      onStepChange: D
     }))
   }, {
     modalKey: L,
     onCloseCallback: () => {
       P || d.default.track(p.rMx.PAYMENT_FLOW_CANCELED, {
-        load_id: D,
+        load_id: w,
         payment_type: p.Zuq[p.GZQ.ONE_TIME],
         location: C,
         is_gift: h,
         sku_id: f,
         location_stack: A
-      }), (0, s.fw)(), (0, l.p)(), null == T || T(P), P && (0, c.qg)({
+      }), (0, s.fw)(), (0, l.p)(), null == S || S(P), P && (0, c.qg)({
         variantsReturnStyle: R
       })
     },

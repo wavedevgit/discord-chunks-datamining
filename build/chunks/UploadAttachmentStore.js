@@ -91,7 +91,7 @@ function I(e) {
   }), b(t, r, i)
 }
 
-function T(e) {
+function S(e) {
   let {
     channelId: t,
     id: n,
@@ -104,7 +104,7 @@ function T(e) {
   b(t, s, l)
 }
 
-function S(e) {
+function T(e) {
   let {
     channelId: t,
     id: n,
@@ -165,11 +165,11 @@ p(R, "displayName", "UploadAttachmentStore");
 let P = new R(Chunk570140.Z, {
   UPLOAD_ATTACHMENT_POP_FILE: y,
   UPLOAD_ATTACHMENT_ADD_FILES: O,
-  UPLOAD_ATTACHMENT_UPDATE_FILE: T,
+  UPLOAD_ATTACHMENT_UPDATE_FILE: S,
   UPLOAD_ATTACHMENT_REMOVE_FILE: v,
   UPLOAD_ATTACHMENT_REMOVE_FILES: I,
   UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: C,
   UPLOAD_ATTACHMENT_SET_UPLOADS: A,
-  UPLOAD_ATTACHMENT_SET_FILE: S,
+  UPLOAD_ATTACHMENT_SET_FILE: T,
   SIDEBAR_CLOSE: N
 })

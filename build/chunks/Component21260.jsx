@@ -130,7 +130,7 @@ function m(e) {
   }), v = i.useCallback(e => (0, r.jsx)(_, {
     items: e,
     renderItem: a
-  }), [a]), I = null != m ? m : v, T = i.useMemo(() => n.slice(0, b + 1), [n, b]), S = i.useMemo(() => n.slice(b + 1), [n, b]);
+  }), [a]), I = null != m ? m : v, S = i.useMemo(() => n.slice(0, b + 1), [n, b]), T = i.useMemo(() => n.slice(b + 1), [n, b]);
   return (0, r.jsxs)("div", {
     className: o()(t, u.items),
     ref: g,
@@ -151,6 +151,6 @@ function m(e) {
           count: Number("1".concat(n.length))
         }))
       })]
-    }), T.map(a), S.length > 0 && I(S)]
+    }), S.map(a), T.length > 0 && I(T)]
   })
 }

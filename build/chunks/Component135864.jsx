@@ -35,7 +35,7 @@ function S(e) {
     location: "GlobalDiscoverySidebar"
   }, {
     autoTrackExposure: true
-  }), l = _.Z.useField("selectedTab"), y = i.useMemo(() => (function(e, t) {
+  }), l = _.Z.useField("selectedTab"), v = i.useMemo(() => (function(e, t) {
     switch (e) {
       case O.GlobalDiscoveryTab.SERVERS:
         return (0, r.jsx)(o.QTo, {
@@ -59,7 +59,7 @@ function S(e) {
           client_ad_session_id: (0, u.Gy)().uuid
         }), (0, E.transitionToGlobalDiscovery)({
           tab: O.GlobalDiscoveryTab.QUESTS,
-          location: v.dr.DISCOVERY_SIDEBAR,
+          location: y.dr.DISCOVERY_SIDEBAR,
           questContent: s.j.DISCOVERY_SIDEBAR
         });
       case O.GlobalDiscoveryTab.APPS:
@@ -95,7 +95,7 @@ function S(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: C.navItemIcon,
-      children: y
+      children: v
     }), (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "none",

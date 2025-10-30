@@ -85,7 +85,7 @@ function W(e, t) {
 }
 
 function K(e) {
-  D.Z.requestPermission(t => {
+  w.Z.requestPermission(t => {
     let n = t ? G.$Ab.ENABLED : G.$Ab.BLOCKED;
     d.default.setPermissionsState(n, e)
   })
@@ -116,7 +116,7 @@ function q(e) {
     disableAllSounds: n,
     notifyMessagesInSelectedChannel: a
   } = e, o = i.useRef(null), s = (0, b.p)(), l = i.useCallback((e, t) => {
-    t.stopPropagation(), t.preventDefault(), null != o.current && o.current.stop(), o.current = (0, T.GN)(e)
+    t.stopPropagation(), t.preventDefault(), null != o.current && o.current.stop(), o.current = (0, S.GN)(e)
   }, []), c = i.useCallback((e, n) => {
     let r = t.filter(t => t !== e);
     n || r.push(e), d.default.setDisabledSounds(r)

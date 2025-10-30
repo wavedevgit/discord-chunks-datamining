@@ -18,16 +18,16 @@ var Chunk26151 = require("./26151.js"),
   Chunk388032 = require("./388032.jsx");
 
 function m(e) {
-  let t = (0, s.F6)(e, u.default, d.Z),
+  let t = (0, a.F6)(e, u.default, d.Z),
     n = g.intl.string(g.t.ssrVzG),
     m = (0, l.x)(e),
-    y = (0, c.Z)(e),
+    _ = (0, c.Z)(e),
     {
-      trackView: O,
-      trackClick: _
+      trackView: y,
+      trackClick: O
     } = (0, h.R)(f.n0.IncomingCall, {
       notif_type: f.n0.IncomingCall,
-      notif_user_id: y,
+      notif_user_id: _,
       guild_id: e.guild_id,
       channel_id: e.id,
       channel_type: e.type
@@ -36,11 +36,11 @@ function m(e) {
     icon: m,
     title: t,
     body: n,
-    hint: e => (0, a.QR)(e, (0, h.P)(), g.t.Odi54y),
+    hint: e => (0, s.QR)(e, (0, h.P)(), g.t.Odi54y),
     confirmText: g.intl.string(g.t["0D/6Rz"]),
     cancelText: g.intl.string(g.t.BVN4pL),
     onNotificationShow: () => {
-      O()
+      y()
     },
     onConfirmClick: () => {
       if (p.TPd.CALLABLE.has(e.type)) r.Z.callPrivateChannel(e.id);
@@ -48,7 +48,7 @@ function m(e) {
         if (e.type !== p.d4z.GUILD_VOICE) return;
         o.default.selectVoiceChannel(e.id)
       }
-      _("join"), r.Z.track(p.rMx.VOICE_CHANNEL_SELECTED, {
+      O("join"), r.Z.track(p.rMx.VOICE_CHANNEL_SELECTED, {
         location: "Overlay Notificaiton",
         guild_id: e.guild_id,
         channel_id: e.id,
@@ -56,10 +56,10 @@ function m(e) {
       })
     },
     onCancelClick: () => {
-      i.Z.stopRinging(e.id), _("decline")
+      i.Z.stopRinging(e.id), O("decline")
     },
     onDismissClick: () => {
-      _("dismiss")
+      O("dismiss")
     }
   }
 }

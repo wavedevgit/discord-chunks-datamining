@@ -1,113 +1,171 @@
-/** Chunk was on 61526 **/
+/** Chunk was on 98920 **/
 /** chunk id: 673462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => g
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
   Chunk98650 = require("./98650.js"),
   Chunk70097 = require("./70097.jsx"),
-  Chunk285006 = require("./285006.js");
+  Chunk894694 = require("./894694.js"),
+  Chunk367825 = require("./367825.jsx"),
+  Chunk129697 = require("./129697.jsx"),
+  Chunk115559 = require("./115559.jsx"),
+  Chunk356659 = require("./356659.js"),
+  Chunk285006 = require("./285006.js"),
+  Chunk491836 = require("./491836.js");
 
-function u(e) {
+function f(e, t) {
+  let {
+    applicationAudioEnabled: n,
+    voiceAudioEnabled: l,
+    soundboardAudioEnabled: a,
+    isVoiceClip: i
+  } = t;
+  if (!i && n && l && a)
+    if (e.includes(m.zh.ALL)) returnfalse;
+    else returntrue;
+  return e.includes(m.zh.APPLICATION) ? !n : e.includes(m.zh.VOICE) ? !l : !e.includes(m.zh.SOUNDBOARD) || !a
+}
+
+function v(e) {
   let {
     setRef: t,
     audioTrackLabel: n,
-    src: l,
-    muted: i
-  } = e, o = r.useCallback(e => {
+    src: i,
+    muted: r
+  } = e, s = a.useCallback(e => {
     t(e, n)
-  }, [t, n]), u = r.useCallback(e => {
+  }, [t, n]), o = a.useCallback(e => {
     Object.values(e.currentTarget.audioTracks).forEach(e => {
       e.enabled = n === e.label
     })
   }, [n]);
-  return (0, a.jsx)("audio", {
+  return (0, l.jsx)("audio", {
     id: "ClipsPlayerAudioTrack:".concat(n),
-    className: s.hidden,
-    ref: o,
-    src: l,
-    muted: i,
+    ref: s,
+    src: null != i ? i : true,
+    muted: r,
     preload: "auto",
-    onLoadedMetadata: u
+    className: p.hidden,
+    onLoadedMetadata: o
   })
 }
-let c = Chunk647438.forwardRef(function(e, t) {
+let g = Chunk647438.forwardRef(function(e, t) {
   let {
-    src: n,
-    audioSrc: c,
-    applicationAudioEnabled: d,
-    voiceAudioEnabled: m,
-    isLoading: p,
-    onDoneLoading: f,
-    startTime: v = 0,
-    endTime: h
-  } = e, g = r.useRef({}), [x, b] = r.useState([]), j = r.useRef(false), y = r.useCallback(() => {
-    let e = g.current.main;
+    clip: n,
+    applicationAudioEnabled: g,
+    voiceAudioEnabled: b,
+    soundboardAudioEnabled: j
+  } = e, {
+    cropStart: x,
+    cropEnd: y,
+    setVideoPlayerRef: C,
+    videoURL: k,
+    audioURL: N
+  } = (0, d.D)(), E = a.useRef({}), w = a.useRef(false), [S, I] = a.useState([]), O = a.useCallback(() => {
+    let e = E.current.main;
     if (null == e) return;
-    let t = (0, l.round)(e.currentTime, 3),
-      n = (0, l.round)(v, 3);
-    if (t >= (null != h ? (0, l.round)(h, 3) : (0, l.round)(e.duration, 3)) || t < n) {
-      for (let e of Object.values(g.current)) null != e && (e.currentTime = v);
+    let t = (0, i.round)(e.currentTime, 3),
+      n = (0, i.round)(x, 3);
+    if (t >= (null != y ? (0, i.round)(y, 3) : (0, i.round)(e.duration, 3)) || t < n) {
+      for (let e of Object.values(E.current)) null != e && (e.currentTime = x);
       returntrue
     }
-  }, [v, h]);
-  (0, i.Z)(() => {
-    j.current && y() && _()
+  }, [x, y]), T = a.useCallback(e => {
+    let t = [];
+    for (let n of Object.values(e.currentTarget.audioTracks)) n.label.includes(m.zh.APPLICATION) ? n.enabled = true : n.label.includes(m.zh.VOICE) || n.label.includes(m.zh.SOUNDBOARD) ? (n.enabled = false, t.includes(n.label) || t.push(n.label)) : n.enabled = false;
+    I(t)
+  }, []);
+  (0, r.Z)(() => {
+    w.current && O() && R()
   });
-  let _ = r.useCallback(() => {
-      for (let e of (j.current = true, y(), Object.values(g.current))) null != e && e.play()
-    }, [y]),
-    w = r.useCallback(() => {
-      for (let e of Object.values(g.current)) null != e && e.pause()
+  let R = a.useCallback(() => {
+      for (let e of (w.current = true, O(), Object.values(E.current))) null != e && e.play()
+    }, [O]),
+    P = a.useCallback(() => {
+      for (let e of Object.values(E.current)) null != e && e.pause()
     }, []),
-    C = r.useCallback(e => {
+    A = a.useCallback(e => {
       var t;
-      for (let n of ((null == (t = g.current.main) ? true : t.paused) && (j.current = false), Object.values(g.current))) null != n && (n.currentTime = e)
+      for (let n of ((null == (t = E.current.main) ? true : t.paused) && (w.current = false), Object.values(E.current))) null != n && (n.currentTime = e)
     }, []),
-    k = r.useCallback(() => {
+    L = a.useCallback(() => {
       var e;
-      (null == (e = g.current.main) ? true : e.paused) ? _(): w()
-    }, [_, w]),
-    P = r.useCallback(e => {
-      g.current.main = e
+      (null == (e = E.current.main) ? true : e.paused) ? R(): P()
+    }, [R, P]),
+    M = a.useCallback(e => {
+      E.current.main = e
     }, []),
-    O = r.useCallback(e => {
-      let t = [];
-      for (let n of Object.values(e.currentTarget.audioTracks)) n.label.includes(":application") ? n.enabled = true : n.label.includes(":voice") ? (n.enabled = false, t.includes(n.label) || t.push(n.label)) : n.enabled = false;
-      b(t)
-    }, []),
-    S = r.useCallback((e, t) => {
-      g.current[t] = e
+    D = a.useCallback((e, t) => {
+      E.current[t] = e
     }, []);
-  return (r.useImperativeHandle(t, () => ({
-    play: _,
-    seek: C,
-    pause: w,
-    videoElement: g.current.main
-  })), null == n) ? null : (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(o.Z, {
-      onClick: k,
-      className: p ? s.hidden : s.displayVideo,
-      ref: P,
-      src: n,
-      muted: true,
-      onLoadedData: f,
-      preload: "auto"
-    }), (0, a.jsx)("audio", {
-      id: "ClipsPlayerAudioTrack:application",
-      src: c,
-      muted: !d,
+  a.useImperativeHandle(t, () => {
+    let e = {
+      play: R,
+      seek: A,
+      pause: P,
+      videoElement: E.current.main
+    };
+    return C(e), e
+  }, [R, A, P, C]);
+  let U = a.useCallback(() => {
+    A(x)
+  }, [A, x]);
+  if (null == k) return null;
+  let Z = n.type === o.NJ.VOICE_CLIP;
+  return (0, l.jsxs)("div", {
+    className: h.clipsPlayer,
+    children: [Z ? (0, l.jsxs)(l.Fragment, {
+      children: [(0, l.jsx)("audio", {
+        ref: M,
+        src: k,
+        muted: true,
+        preload: "auto"
+      }), (0, l.jsx)(u.Z, {
+        className: h.displayVideo
+      })]
+    }) : (0, l.jsx)(s.Z, {
+      onClick: L,
+      className: h.displayVideo,
+      ref: M,
+      src: k,
+      muted: f(":all", {
+        applicationAudioEnabled: g,
+        voiceAudioEnabled: b,
+        soundboardAudioEnabled: j,
+        isVoiceClip: Z
+      }),
       preload: "auto",
-      className: s.hidden,
-      ref: e => S(e, "application"),
-      onLoadedMetadata: O
-    }), x.map(e => (0, a.jsx)(u, {
+      onLoadedData: U
+    }), (0, l.jsx)(c.i, {
+      soundboardAudioEnabled: j,
+      voiceAudioEnabled: b,
+      clip: n
+    }), (0, l.jsx)("audio", {
+      id: "ClipsPlayerAudioTrack:application",
+      src: null != N ? N : true,
+      muted: f(":application", {
+        applicationAudioEnabled: g,
+        voiceAudioEnabled: b,
+        soundboardAudioEnabled: j,
+        isVoiceClip: Z
+      }),
+      className: p.hidden,
+      preload: "auto",
+      ref: e => D(e, "main:application"),
+      onLoadedMetadata: T
+    }), S.map(e => (0, l.jsx)(v, {
+      setRef: D,
       audioTrackLabel: e,
-      setRef: S,
-      src: c,
-      muted: !m
+      src: N,
+      muted: f(e, {
+        applicationAudioEnabled: g,
+        voiceAudioEnabled: b,
+        soundboardAudioEnabled: j,
+        isVoiceClip: Z
+      })
     }, e))]
   })
 })

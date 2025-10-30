@@ -75,7 +75,7 @@ let j = {
     } = (0, R.Z)(null == V ? true : V.src), Q = (0, o.e7)([E.default], () => E.default.locale), {
       streamPreviewUrl: J,
       stream: $
-    } = (0, T.Z)(y), {
+    } = (0, S.Z)(y), {
       displayParticipants: ee,
       participant1: et,
       participant2: en,
@@ -95,26 +95,26 @@ let j = {
         applicationImageSrc: null == V ? true : V.src,
         avatarSrcs: ee.map(e => e.getAvatarURL(b.guild_id, 128)),
         description: t,
-        timestamp: (0, S.yh)(y, Q),
+        timestamp: (0, T.yh)(y, Q),
         colors: [q, X],
         channelId: e
       })
     }, [null == V ? true : V.src, b, ee, y, Q, er, et, en, q, X, H]);
     if (null == H) return null;
-    let ef = (0, r.jsx)(D.Gk, {
-        location: null == J ? D.Gt.POPOUT : D.Gt.STREAMING_POPOUT,
+    let ef = (0, r.jsx)(w.Gk, {
+        location: null == J ? w.Gt.POPOUT : w.Gt.STREAMING_POPOUT,
         children: P.W.map((e, t) => (0, r.jsx)(e, {
           entry: y
         }, t))
       }),
-      e_ = null == $ ? (0, r.jsx)(w.wG, {
+      e_ = null == $ ? (0, r.jsx)(D.wG, {
         channel: b,
         headerIcons: null == ea ? null : (0, r.jsx)(L.Z, {
           onClick: es,
           Icon: ea,
           "aria-label": k.intl.string(k.t.YR4cHH)
         }),
-        userDescription: (0, S.kr)(y) ? k.t.vPg1JT : k.t.rPqqts,
+        userDescription: (0, T.kr)(y) ? k.t.vPg1JT : k.t.rPqqts,
         title: W,
         subtitle: Y,
         badges: ef,
@@ -122,7 +122,7 @@ let j = {
         disableGameProfileLinks: U,
         onUserPopoutClosed: Z,
         trackRankingItemInteraction: F
-      }) : (0, r.jsx)(w.jL, {
+      }) : (0, r.jsx)(D.jL, {
         channel: b,
         title: y.extra.game_name,
         subtitle: Y,
@@ -149,9 +149,9 @@ let j = {
         variant: "primary",
         icon: s.tEF
       }, "watch") : null, ep].filter(O.lm);
-    return (0, r.jsxs)(w.yR, {
-      children: [e_, (0, r.jsx)(w.St, {
-        children: (0, r.jsx)(w.WT, {
+    return (0, r.jsxs)(D.yR, {
+      children: [e_, (0, r.jsx)(D.St, {
+        children: (0, r.jsx)(D.WT, {
           onReaction: G,
           onVoiceChannelPreview: B,
           user: H,

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   ZP: () => ec,
-  Zb: () => S,
-  sH: () => T
+  Zb: () => T,
+  sH: () => S
 }), require("./642613.js"), require("./539854.js"), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -34,15 +34,15 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let T = "SELECTABLE",
-  S = "VOCAL",
+let S = "SELECTABLE",
+  T = "VOCAL",
   A = null,
   C = {},
   N = {},
   R = {},
   P = null,
-  D = {},
-  w = {
+  w = {},
+  D = {
     comparator: false,
     channel: (0, Chunk131704.createChannelRecord)({
       id: Chunk981631.Sc2,
@@ -57,9 +57,9 @@ let T = "SELECTABLE",
 function k(e) {
   return {
     id: e,
-    [T]: [],
     [S]: [],
-    [v.d4z.GUILD_CATEGORY]: [w],
+    [T]: [],
+    [v.d4z.GUILD_CATEGORY]: [D],
     count: 0
   }
 }
@@ -79,11 +79,11 @@ function U(e, t) {
 }
 
 function G(e) {
-  e[T].sort(U), e[S].sort(U), e[v.d4z.GUILD_CATEGORY].sort(U)
+  e[S].sort(U), e[T].sort(U), e[v.d4z.GUILD_CATEGORY].sort(U)
 }
 
 function B(e) {
-  return (0, _.r8)(e) ? T : (0, _.bw)(e) ? S : e
+  return (0, _.r8)(e) ? S : (0, _.bw)(e) ? T : e
 }
 
 function Z() {
@@ -121,23 +121,23 @@ function V(e) {
     let r = n.channel;
     if (e.count += 1, _.zS.has(r.type) && !b.Z.can(v.Plq.VIEW_CHANNEL, r) && !c.Z.isChannelGated(r.guild_id, r.id) && r.id !== P) return;
     let i = B(r.type);
-    r.type === v.d4z.GUILD_DIRECTORY && (null == D[t] && (D[t] = []), D[t].push(n)), null != e[i] && e[i].push(n)
+    r.type === v.d4z.GUILD_DIRECTORY && (null == w[t] && (w[t] = []), w[t].push(n)), null != e[i] && e[i].push(n)
   }), e
 }
 
 function H() {
-  C = {}, D = {}, N = {}, R = {}, null != A && Y(A)
+  C = {}, w = {}, N = {}, R = {}, null != A && Y(A)
 }
 
 function Y(e) {
   let t = k(e);
-  return C[e] = t, D[e] = [], V(t), G(t), W(t), en(e), t
+  return C[e] = t, w[e] = [], V(t), G(t), W(t), en(e), t
 }
 
 function W(e) {
   let t = N[e.id] = {},
     n = {};
-  e[T].forEach(e => {
+  e[S].forEach(e => {
     let {
       channel: r
     } = e, i = (0, u.F6)(r, O.default, y.Z), a = Object.prototype.hasOwnProperty.call(n, i) ? n[i] : null;
@@ -164,7 +164,7 @@ function z(e) {
       id: t
     }
   } = e;
-  return delete C[t], delete N[t], delete R[t], delete D[t], true
+  return delete C[t], delete N[t], delete R[t], delete w[t], true
 }
 
 function q(e) {
@@ -225,7 +225,7 @@ function et(e, t) {
   let r = C[t];
   null == r && (r = Y(t));
   let {
-    [T]: i, [S]: a
+    [S]: i, [T]: a
   } = r;
   for (let {
       channel: t
@@ -300,7 +300,7 @@ class el extends(r = Chunk442837.ZP.Store) {
   getFirstChannel(e, t) {
     var n;
     let r = arguments.length > 2 && true !== arguments[2] && arguments[2];
-    return null != (n = this.getFirstChannelOfType(e, t, T)) ? n : r ? this.getFirstChannelOfType(e, t, S) : null
+    return null != (n = this.getFirstChannelOfType(e, t, S)) ? n : r ? this.getFirstChannelOfType(e, t, T) : null
   }
   getDefaultChannel(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
@@ -313,7 +313,7 @@ class el extends(r = Chunk442837.ZP.Store) {
     return this.getFirstChannel(e, e => b.Z.can(n, e.channel) && !e.channel.nsfw, t)
   }
   getSelectableChannelIds(e) {
-    return this.getChannels(e)[T].map(e => {
+    return this.getChannels(e)[S].map(e => {
       let {
         channel: t
       } = e;
@@ -321,10 +321,10 @@ class el extends(r = Chunk442837.ZP.Store) {
     })
   }
   getSelectableChannels(e) {
-    return this.getChannels(e)[T]
+    return this.getChannels(e)[S]
   }
   getVocalChannelIds(e) {
-    return this.getChannels(e)[S].map(e => {
+    return this.getChannels(e)[T].map(e => {
       let {
         channel: t
       } = e;
@@ -333,7 +333,7 @@ class el extends(r = Chunk442837.ZP.Store) {
   }
   getDirectoryChannelIds(e) {
     var t, n;
-    return null != (n = null == (t = D[e]) ? true : t.map(e => {
+    return null != (n = null == (t = w[e]) ? true : t.map(e => {
       let {
         channel: t
       } = e;

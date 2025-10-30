@@ -2,7 +2,7 @@
 /** chunk id: 800927, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./804061.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -60,7 +60,7 @@ let d = /\n{2,}$/,
   O = 1,
   v = 1e9,
   I = e => e.map(e => ("text" === e.type && null != e.content && (e.content = e.content.replace(/\n+\s*$/, "")), e)),
-  T = u(l({}, o().defaultRules.list), {
+  S = u(l({}, o().defaultRules.list), {
     requiredFirstCharacters: " *-0123456789".split(""),
     match: (e, t) => {
       if (!t.allowList || t._listLevel >= y + 1) return null;
@@ -81,15 +81,15 @@ let d = /\n{2,}$/,
         b = RegExp("^ {1," + f + "}", "gm"),
         y = s.match(E);
       i()(null != y, "markup list items can not be parsed.");
-      let T = false;
+      let S = false;
       return {
         ordered: a,
         start: o,
         items: y.map((e, r) => {
           let i, a = e.replace(h, "").replace(b, ""),
             o = r === y.length - 1,
-            s = false !== a.indexOf("\n\n") || o && T;
-          T = s;
+            s = false !== a.indexOf("\n\n") || o && S;
+          S = s;
           let c = n.inline,
             d = n._list,
             f = n._listLevel;

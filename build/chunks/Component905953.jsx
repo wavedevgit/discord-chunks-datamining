@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 905953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -30,11 +30,11 @@ function b(e) {
   } = (0, u.G)(), {
     fetched: S,
     hasAlreadyLinked: E,
-    canStartAuthorization: O,
-    startAuthorization: T
+    canStartAuthorization: T,
+    startAuthorization: O
   } = (0, s.F)(C), N = (0, m.ZP)(_), P = null == N || null == (t = N.widgets) ? true : t.some(e => e instanceof d.q && e.applicationId === (null == C ? true : C.id));
   return null != y && null != y.edit_profile_upsell_image && null != C && S ? (0, a.jsx)(c.ZP, {
-    contentTypes: E ? P ? [] : [i.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : O ? [i.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+    contentTypes: E ? P ? [] : [i.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : T ? [i.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,
@@ -50,27 +50,27 @@ function b(e) {
           type: "image",
           src: y.edit_profile_upsell_image
         },
-        title: g.intl.format(g.t.TXDztH, {
+        title: f.intl.format(f.t.TXDztH, {
           applicationName: C.name
         }),
-        body: l ? g.intl.string(g.t["63Kso0"]) : g.intl.string(g.t.HwXoeC),
+        body: l ? f.intl.string(f.t["63Kso0"]) : f.intl.string(f.t.HwXoeC),
         actions: [l ? {
-          text: g.intl.string(g.t.VSLDly),
+          text: f.intl.string(f.t.VSLDly),
           onClick: () => {
             j(true), (0, p.openUserProfileModal)({
               userId: _,
-              section: f.oh.WIDGETS
+              section: g.oh.WIDGETS
             }).then(() => {
               r(x.L.TAKE_ACTION), b()
             }).finally(() => j(false))
           },
           loading: v
         } : {
-          text: g.intl.string(g.t["DSJi3+"]),
+          text: f.intl.string(f.t["DSJi3+"]),
           onClick: () => {
-            T(), j(true), (0, p.openUserProfileModal)({
+            O(), j(true), (0, p.openUserProfileModal)({
               userId: _,
-              section: f.oh.WIDGETS
+              section: g.oh.WIDGETS
             }).then(() => {
               r(x.L.TAKE_ACTION), b()
             }).finally(() => j(false))

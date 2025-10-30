@@ -1,15 +1,16 @@
-/** Chunk was on 57478 **/
-/** chunk id: 407316, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 407316, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  W: () => i
+  W: () => o
 });
 var Chunk592125 = require("./592125.js"),
   Chunk496675 = require("./496675.js"),
   Chunk981631 = require("./981631.js");
 
-function i(e) {
-  let t = l.Z.getChannel(e),
+function o(e) {
+  let t = r.Z.getChannel(e),
     n = null == t ? true : t.isPrivate(),
-    i = null == t ? true : t.isForumChannel();
-  return n || a.Z.can(r.Plq.ATTACH_FILES, t) && a.Z.can(r.Plq.SEND_MESSAGES, t) && !i
+    o = null == t ? true : t.isForumChannel();
+  return n || i.Z.can(a.Plq.ATTACH_FILES, t) && i.Z.can(a.Plq.SEND_MESSAGES, t) && !o
 }

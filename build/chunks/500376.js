@@ -35,7 +35,7 @@ function u(e) {
     v = (0, l.q)(c(r.Z), "@react-aria/spinbutton"),
     I = () => clearTimeout(t.current);
   (0, a.useEffect)(() => () => I(), []);
-  let T = e => {
+  let S = e => {
       if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey && !p && !e.nativeEvent.isComposing) switch (e.key) {
         case "PageUp":
           if (g) {
@@ -62,16 +62,16 @@ function u(e) {
           O && (e.preventDefault(), null == O || O())
       }
     },
-    S = (0, a.useRef)(false),
+    T = (0, a.useRef)(false),
     A = () => {
-      S.current = true
+      T.current = true
     },
     C = () => {
-      S.current = false
+      T.current = false
     },
     N = "" === u ? v.format("Empty") : (u || `${n}`).replace("-", "−");
   (0, a.useEffect)(() => {
-    S.current && ((0, i.gb)("assertive"), (0, i.xQ)(N, "assertive"))
+    T.current && ((0, i.gb)("assertive"), (0, i.xQ)(N, "assertive"))
   }, [N]);
   let R = (0, o.i)(e => {
       I(), null == m || m(), t.current = window.setTimeout(() => {
@@ -83,11 +83,11 @@ function u(e) {
         (true === d || isNaN(d) || true === n || isNaN(n) || n > d) && P(60)
       }, e)
     }),
-    D = e => {
+    w = e => {
       e.preventDefault()
     },
     {
-      addGlobalListener: w,
+      addGlobalListener: D,
       removeAllGlobalListeners: L
     } = (0, s.x)();
   return {
@@ -100,13 +100,13 @@ function u(e) {
       "aria-disabled": _ || true,
       "aria-readonly": p || true,
       "aria-required": h || true,
-      onKeyDown: T,
+      onKeyDown: S,
       onFocus: A,
       onBlur: C
     },
     incrementButtonProps: {
       onPressStart: () => {
-        R(400), w(window, "contextmenu", D)
+        R(400), D(window, "contextmenu", w)
       },
       onPressEnd: () => {
         I(), L()
@@ -116,7 +116,7 @@ function u(e) {
     },
     decrementButtonProps: {
       onPressStart: () => {
-        P(400), w(window, "contextmenu", D)
+        P(400), D(window, "contextmenu", w)
       },
       onPressEnd: () => {
         I(), L()

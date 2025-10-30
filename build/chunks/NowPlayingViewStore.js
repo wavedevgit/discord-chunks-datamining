@@ -110,7 +110,7 @@ function er(e) {
 
 function ei(e) {
   return null == J[e] && (J = F(B({}, J), {
-    [e]: new S.Z({
+    [e]: new T.Z({
       url: e
     })
   })), J[e]
@@ -121,7 +121,7 @@ function ea(e) {
 }
 
 function eo(e) {
-  if ((0, d.Z)(e)) return T.r9;
+  if ((0, d.Z)(e)) return S.r9;
   if ((0, f.Z)(e)) return er(e.name);
   let t = null != e.application_id ? m.Z.getApplication(e.application_id) : null;
   return null != t ? t : (0, _.Z)(e) && null != e.url ? ei(e.url) : (null != e.application_id && ea(e.application_id), t)
@@ -133,12 +133,12 @@ function es(e) {
     tags: {
       source: "ACTIVITIES"
     }
-  }), null) : e === T.XB ? T.r9 : e.startsWith(A.H) ? er(e.slice(A.H.length)) : e.startsWith(S._) ? ei(e.slice(S._.length)) : (ea(e), null)
+  }), null) : e === S.XB ? S.r9 : e.startsWith(A.H) ? er(e.slice(A.H.length)) : e.startsWith(T._) ? ei(e.slice(T._.length)) : (ea(e), null)
 }
 
 function el(e) {
   let t = k.Z.getVoiceStateForUser(e);
-  return (null == t ? true : t.channelId) != null && w.Z.canWithPartialContext(U.Plq.VIEW_CHANNEL, {
+  return (null == t ? true : t.channelId) != null && D.Z.canWithPartialContext(U.Plq.VIEW_CHANNEL, {
     channelId: t.channelId
   }) ? t.channelId : null
 }
@@ -173,7 +173,7 @@ function ef(e, t, n) {
     g = false,
     E = [];
   for (let e of s) {
-    var S, A, R, x;
+    var T, A, R, x;
     let t = C.Z.getAnyStreamForUser(e.id),
       n = N.Z.getChannel(null == t ? true : t.channelId);
     if ((0, p.Y3)(n)) continue;
@@ -185,7 +185,7 @@ function ef(e, t, n) {
       }), null == r) continue;
     let o = (0, b.Z)(r);
     if (null == o) continue;
-    g = o === T.XB;
+    g = o === S.XB;
     let d = es(o);
     if ((0, u.Z)(r)) {
       let t = (0, l.a)();
@@ -198,8 +198,8 @@ function ef(e, t, n) {
           isActivitiesEnabledForCurrentPlatform: t,
           ChannelStore: N.Z,
           VoiceStateStore: k.Z,
-          PermissionStore: w.Z,
-          GuildStore: D.Z
+          PermissionStore: D.Z,
+          GuildStore: w.Z
         }) !== c.Fw.CAN_JOIN) continue
     }
     if (!y.JE(r) || null == d || m.has(d.id)) continue;
@@ -217,7 +217,7 @@ function ef(e, t, n) {
       game: d,
       activity: r,
       activityUser: e,
-      startedPlayingTime: null != (x = null == r || null == (S = r.timestamps) ? true : S.start) ? x : null == r ? true : r.created_at,
+      startedPlayingTime: null != (x = null == r || null == (T = r.timestamps) ? true : T.start) ? x : null == r ? true : r.created_at,
       playingMembers: O
     })
   }
@@ -229,7 +229,7 @@ function ef(e, t, n) {
     let t = el(e.id),
       n = N.Z.getChannel(t),
       i = null != n ? n.getGuildId() : null,
-      o = D.Z.getGuild(i);
+      o = w.Z.getGuild(i);
     if (Z.has(i) && B.has(t) || null == n || null == o || n.id === o.afkChannelId) null == n && (r = null, U = true);
     else {
       let e = k.Z.getVoiceStatesForChannel(n.id),
@@ -348,11 +348,11 @@ let eI = a().throttle(() => {
   ev(), eR.emitChange()
 }, W);
 
-function eT() {
+function eS() {
   return !!eO() && (eI(), false)
 }
 
-function eS() {
+function eT() {
   K = false, q = [], X = [], $.clear()
 }
 
@@ -365,7 +365,7 @@ function eC() {
 }
 class eN extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk594174.default, Chunk812206.Z, Chunk158776.Z, Chunk831506.Z, Chunk979651.Z, Chunk199902.Z, Chunk699516.Z, Chunk480294.Z, Chunk752048.Z], eT), this.waitFor(Chunk812206.Z, Chunk199902.Z, Chunk592125.Z, Chunk480294.Z, Chunk831506.Z, Chunk38618.Z, Chunk430824.Z, Chunk496675.Z, Chunk158776.Z, Chunk699516.Z, Chunk752048.Z, Chunk594174.default, Chunk979651.Z)
+    this.syncWith([Chunk594174.default, Chunk812206.Z, Chunk158776.Z, Chunk831506.Z, Chunk979651.Z, Chunk199902.Z, Chunk699516.Z, Chunk480294.Z, Chunk752048.Z], eS), this.waitFor(Chunk812206.Z, Chunk199902.Z, Chunk592125.Z, Chunk480294.Z, Chunk831506.Z, Chunk38618.Z, Chunk430824.Z, Chunk496675.Z, Chunk158776.Z, Chunk699516.Z, Chunk752048.Z, Chunk594174.default, Chunk979651.Z)
   }
   get currentActivityParties() {
     return q
@@ -382,7 +382,7 @@ class eN extends(r = Chunk442837.ZP.Store) {
 }
 G(eN, "displayName", "NowPlayingViewStore");
 let eR = new eN(Chunk570140.Z, {
-    LOGOUT: eS,
+    LOGOUT: eT,
     NOW_PLAYING_MOUNTED: eA,
     NOW_PLAYING_UNMOUNTED: eC
   }),

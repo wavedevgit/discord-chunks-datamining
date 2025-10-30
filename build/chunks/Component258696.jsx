@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk728386 = require("./728386.jsx"),
   Chunk564355 = require("./564355.js");
 
-function S(e) {
+function T(e) {
   let {
     disabled: t,
     channel: n
@@ -50,8 +50,8 @@ function A(e) {
     channel: N,
     handleSubmit: R,
     isEmpty: P,
-    showAllButtons: D,
-    children: w
+    showAllButtons: w,
+    children: D
   } = e, L = (0, o.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), x = C(N.id, O, P), {
     activeCommand: M,
     activeCommandOption: k
@@ -65,26 +65,26 @@ function A(e) {
   }, {
     autoTrackExposure: false
   }), U = [], G = !N.isDM() || true === N.recipients || N.recipients.length > 1, B = (0, o.e7)([h.default], () => G ? null : h.default.getUser(N.recipients[0])), Z = (0, d.Nt)() && (null == (t = O.confetti) ? true : t.button) != null;
-  return (a.tq || ((null == (_ = O.gifts) ? true : _.button) != null && null == M && !j && (null == B || m.ZP.isPremiumEligible(B)) && U.push((0, r.jsx)(S, {
+  return (a.tq || ((null == (_ = O.gifts) ? true : _.button) != null && null == M && !j && (null == B || m.ZP.isPremiumEligible(B)) && U.push((0, r.jsx)(T, {
     disabled: A,
     channel: N
-  }, "gift")), (null == (p = O.gifs) ? true : p.button) != null && null == M && D && U.push((0, r.jsx)(E.Z, {
+  }, "gift")), (null == (p = O.gifs) ? true : p.button) != null && null == M && w && U.push((0, r.jsx)(E.Z, {
     disabled: A,
     type: O
   }, "gif")), Z && null == M && U.push((0, r.jsx)(b.Z, {
     disabled: A,
     channel: N
-  }, "confetti")), !Z && (null == (y = O.stickers) ? true : y.button) != null && null == M && D && U.push((0, r.jsx)(I.Z, {
+  }, "confetti")), !Z && (null == (y = O.stickers) ? true : y.button) != null && null == M && w && U.push((0, r.jsx)(I.Z, {
     disabled: A,
     type: O
   }, "sticker"))), (null == (n = O.emojis) ? true : n.button) != null && (null == M || null != k && k.type !== s.jw.ATTACHMENT) && U.push((0, r.jsx)(g.Z, {
     disabled: A,
     type: O
-  }, "emoji")), null != w && U.push(w), (null == (i = O.submit) ? true : i.button) != null && ((null == (f = O.submit) ? true : f.ignorePreference) || L) && U.push((0, r.jsx)(v.Z, {
+  }, "emoji")), null != D && U.push(D), (null == (i = O.submit) ? true : i.button) != null && ((null == (f = O.submit) ? true : f.ignorePreference) || L) && U.push((0, r.jsx)(v.Z, {
     onClick: R,
     disabled: A || x
   }, "submit")), 0 === U.length) ? null : (0, r.jsx)("div", {
-    className: T.buttons,
+    className: S.buttons,
     children: U
   })
 }

@@ -64,7 +64,7 @@ let y = function(e) {
     name: "",
     country: "",
     postalCode: ""
-  }), [T, S] = i.useState({}), [A, C] = i.useState({}), {
+  }), [S, T] = i.useState({}), [A, C] = i.useState({}), {
     setFocusLockDisabled: N
   } = i.useContext(s.M);
   i.useEffect(() => () => {
@@ -79,21 +79,21 @@ let y = function(e) {
       [e]: t
     }))
   }
-  let D = i.useCallback(function() {
+  let w = i.useCallback(function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
       t = {};
-    return (e || T.name) && "" === v.name && (t.name = _.intl.string(_.t.lIkVsi)), t
-  }, [T, v]);
+    return (e || S.name) && "" === v.name && (t.name = _.intl.string(_.t.lIkVsi)), t
+  }, [S, v]);
 
-  function w() {
-    C(D())
+  function D() {
+    C(w())
   }
   i.useEffect(() => {
-    let e = y.cardNumber && y.cardExpiry && y.cardCvc && 0 === Object.keys(D(true)).length;
+    let e = y.cardNumber && y.cardExpiry && y.cardCvc && 0 === Object.keys(w(true)).length;
     a.current({
       name: v.name
     }, !!e)
-  }, [y, v, D]);
+  }, [y, v, w]);
   let L = [{
     fields: [{
       id: "card-number",
@@ -149,11 +149,11 @@ let y = function(e) {
   function x(e, t) {
     if ("name" !== t && "country" !== t && "postalCode" !== t) return;
     let n = g({}, v),
-      r = g({}, T),
+      r = g({}, S),
       i = {
         name: A.name
       };
-    T[t] || "" === e || (r[t] = true), n[t] = e, r[t] && "" === e ? "name" === t && (i.name = _.intl.string(_.t.lIkVsi)) : delete i[t], I(n), S(r), C(i)
+    S[t] || "" === e || (r[t] = true), n[t] = e, r[t] && "" === e ? "name" === t && (i.name = _.intl.string(_.t.lIkVsi)) : delete i[t], I(n), T(r), C(i)
   }
 
   function M() {
@@ -201,7 +201,7 @@ let y = function(e) {
       formError: n,
       values: v,
       onFieldChange: x,
-      onFieldBlur: w
+      onFieldBlur: D
     })]
   })
 }

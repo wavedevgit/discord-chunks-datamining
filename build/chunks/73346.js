@@ -52,8 +52,8 @@ function I(e) {
   return e
 }
 require("./388032.jsx"), l().shim();
-let T = !Chunk873546.tq && !Chunk873546.Em && false !== (0, Chunk526167.vu)(),
-  S = 3;
+let S = !Chunk873546.tq && !Chunk873546.Em && false !== (0, Chunk526167.vu)(),
+  T = 3;
 
 function A(e, t) {
   let {
@@ -89,7 +89,7 @@ function C(e, t, n, r) {
     default:
       r = "webp"
   }
-  "webp" !== r || T || (r = "png");
+  "webp" !== r || S || (r = "png");
   let s = "string" == typeof t ? t : t.id,
     l = i = "https:";
   return a = null != o ? "".concat(l, "//").concat(o, "/app-assets/").concat(e, "/store/").concat(s, ".").concat(r) : "".concat(l).concat(window.GLOBAL_ENV.API_ENDPOINT).concat(O.ANM.STORE_ASSET(e, s, r)), null != n && (a += "?size=".concat((0, f.oO)(n * (0, f.x_)()))), a
@@ -135,7 +135,7 @@ function P(e, t, n) {
   return null == r || null == r.primarySkuId ? null : n.get(r.primarySkuId)
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   var r;
   let i = null != (r = n.getNowPlaying(e)) ? r : {},
     a = y.default.keys(i).map(e => {
@@ -151,7 +151,7 @@ function D(e, t, n) {
   }
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   let r = n.getStatisticsForApplication(e);
   if (null == r) return null;
   let i = r.map(e => {
@@ -174,7 +174,7 @@ function x(e, t, n, r, a) {
   let s = o.applicationId,
     l = [],
     c = [],
-    u = D(s, n, r);
+    u = w(s, n, r);
   null != u && (l.push(u), c = u.userInfo.map(e => {
     let {
       user: t
@@ -185,7 +185,7 @@ function x(e, t, n, r, a) {
   if (null != d) {
     let e = d.map(e => e.user_id);
     if (i().difference(e, c).length > 0) {
-      let e = w(s, n, a);
+      let e = D(s, n, a);
       null != e && l.push(e)
     }
   }
@@ -202,7 +202,7 @@ function k(e, t, n) {
     type: O.AzA.HAS_FREE_PREMIUM_CONTENT
   });
   let s = r.releaseDate;
-  return null != s && o()().diff(s, "months") < S && (r.accessType === O.kGb.EARLY_ACCESS ? a.push({
+  return null != s && o()().diff(s, "months") < T && (r.accessType === O.kGb.EARLY_ACCESS ? a.push({
     type: O.AzA.EARLY_ACCESS,
     releaseDate: s
   }) : a.push({

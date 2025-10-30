@@ -67,15 +67,15 @@ async function y(e) {
     isGift: O,
     baseAnalyticsData: v,
     analyticsLocation: I,
-    analyticsLocations: T,
-    flowStartTime: S,
+    analyticsLocations: S,
+    flowStartTime: T,
     subscriptionPlan: A,
     planGroup: C,
     trialId: N,
     priceOptions: R,
     paymentSource: P,
-    isPrepaidPaymentPastDue: D,
-    openInvoiceId: w,
+    isPrepaidPaymentPastDue: w,
+    openInvoiceId: D,
     premiumSubscription: L,
     onNext: x,
     metadata: M,
@@ -96,7 +96,7 @@ async function y(e) {
         tax: null == F ? true : F.tax,
         expected_amount: null == F ? true : F.total,
         expected_currency: null == F ? true : F.currency,
-        duration_ms: Date.now() - S
+        duration_ms: Date.now() - T
       })), E) return;
     if (U === p.GZQ.ONE_TIME) i()(null != k, "SKU must exist and be fetched."), i()(null != j, "SKUPricePreview must exist."), e = await (0, c.ZZ)(k.applicationId, k.id, {
       expectedAmount: j.amount,
@@ -131,17 +131,17 @@ async function y(e) {
           giftInfoOptions: Z,
           orderId: V
         })
-      } else if (D && null != w && null != P && null != L) e = p.Uk1.has(P.type) ? await (0, o.G)(L, w, P, R.currency) : await (0, o.Mg)(L, {
+      } else if (w && null != D && null != P && null != L) e = p.Uk1.has(P.type) ? await (0, o.G)(L, D, P, R.currency) : await (0, o.Mg)(L, {
         paymentSource: P,
         currency: R.currency
-      }, t, n, T, I, B);
+      }, t, n, S, I, B);
       else if (null != L) {
         let r = (0, f.al)(L, A.id, 1, new Set(C)),
           i = {
             paymentSource: P,
             currency: R.currency
           };
-        L.status === p.O0b.PAUSED && (i.status = p.O0b.ACTIVE), L.isPausedAllowsResumeButNotUpdates || (i.items = r), e = await (0, o.Mg)(L, i, t, n, T, I, B)
+        L.status === p.O0b.PAUSED && (i.status = p.O0b.ACTIVE), L.isPausedAllowsResumeButNotUpdates || (i.items = r), e = await (0, o.Mg)(L, i, t, n, S, I, B)
       } else e = await (0, l.Ld)({
         planId: A.id,
         currency: R.currency,
@@ -161,7 +161,7 @@ async function y(e) {
       payment_error_code: null == e ? true : e.code,
       payment_source_id: null == P ? true : P.id,
       payment_source_type: null == P ? true : P.type,
-      duration_ms: Date.now() - S
+      duration_ms: Date.now() - T
     }))
   } finally {
     E || r(false)

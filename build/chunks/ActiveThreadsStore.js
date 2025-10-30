@@ -2,7 +2,7 @@
 /** chunk id: 344185, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -96,14 +96,14 @@ function I(e) {
   E(t.id), b(t)
 }
 
-function T(e) {
+function S(e) {
   let {
     guild: t
   } = e;
   E(t.id)
 }
 
-function S(e) {
+function T(e) {
   var t, n;
   let {
     channel: r
@@ -157,7 +157,7 @@ function R(e) {
   h[t.guild_id] = f({}, h[t.guild_id]), delete h[t.guild_id][t.id]
 }
 let P = {};
-class D extends(r = Chunk442837.ZP.Store) {
+class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z)
   }
@@ -184,14 +184,14 @@ class D extends(r = Chunk442837.ZP.Store) {
     return m.has(e)
   }
 }
-d(D, "displayName", "ActiveThreadsStore");
-let w = new D(Chunk570140.Z, {
+d(w, "displayName", "ActiveThreadsStore");
+let D = new w(Chunk570140.Z, {
   CONNECTION_OPEN: O,
   OVERLAY_INITIALIZE: v,
   GUILD_CREATE: I,
-  GUILD_DELETE: T,
-  THREAD_CREATE: S,
-  THREAD_UPDATE: S,
+  GUILD_DELETE: S,
+  THREAD_CREATE: T,
+  THREAD_UPDATE: T,
   THREAD_LIST_SYNC: A,
   THREAD_DELETE: N,
   CHANNEL_DELETE: R

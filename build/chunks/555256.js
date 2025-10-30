@@ -7,7 +7,7 @@ require.d(exports, {
   E: () => d,
   P: () => ee,
   S: () => u,
-  a: () => S,
+  a: () => T,
   b: () => g,
   c: () => Y,
   d: () => en,
@@ -242,7 +242,7 @@ let O = new y,
     var t;
     return (null == (t = window.UserLeap) ? true : t.forceDirectEmbed) || "web" !== e
   };
-class T {
+class S {
   constructor(e) {
     l(this, "storage"), l(this, "tempStorage", {}), l(this, "isStorageAvailable");
     try {
@@ -282,8 +282,8 @@ class T {
     this.isStorageAvailable && this.storage ? this.storage.clear() : this.tempStorage = {}
   }
 }
-let S = new T("sessionStorage"),
-  A = new T("localStorage");
+let T = new S("sessionStorage"),
+  A = new S("localStorage");
 class C {
   constructor(e) {
     l(this, "payload"), l(this, "promise"), l(this, "reject", () => {}), l(this, "resolve", () => {}), this.payload = e, this.promise = new Promise((e, t) => {
@@ -304,8 +304,8 @@ let N = {
     let e = [];
     return N.replay && module.push("replay"), module.join(",")
   },
-  D = 10,
-  w = false,
+  w = 10,
+  D = false,
   L = "",
   x = false,
   M = false,
@@ -316,7 +316,7 @@ let N = {
     null != (t = null == e ? true : e.blockedURI) && t.includes(window.UserLeap._API_URL) && (M = true, console.warn(`[Sprig] ${e.blockedURI} is blocked by Content-Security-Policy`))
   },
   G = (e = "") => {
-    w = true, L = e
+    D = true, L = e
   };
 
 function B(e = {}) {
@@ -357,13 +357,13 @@ let Z = async ({
     ok: false,
     reportError: false
   };
-  if (w) return console.info(`UserLeap - ${L}`), s;
+  if (D) return console.info(`UserLeap - ${L}`), s;
   try {
     let t = await fetch(e, a);
     if (429 === t.status) {
       if (!x && !r || i) {
         x = true;
-        let n = t.headers.has("ratelimit-reset") ? Number(t.headers.get("ratelimit-reset")) : D;
+        let n = t.headers.has("ratelimit-reset") ? Number(t.headers.get("ratelimit-reset")) : w;
         return await v(1e3 * n), F(e, {
           ...a,
           shouldDropOnRateLimit: r,

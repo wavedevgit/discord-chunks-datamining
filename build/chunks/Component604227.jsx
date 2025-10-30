@@ -75,8 +75,8 @@ function O(e) {
   var t, n, i, o, s;
   let {
     compact: _ = false
-  } = e, m = (0, d.Dt)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "463371", v = "eddd28c3c7ba947fb6f953d0622d99c04384dd19".substring(0, 7), I = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), T = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), S = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), A = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, C = y(), N = [E, O, "(".concat(v, ")")];
-  return (null != I && (N.push("Host ".concat(I)), null != S && N.push(S.toLowerCase()), null != T && N.push("(".concat(T, ")"))), N.push("Build Override: ".concat(null != A ? A.id : "N/A")), null != C && N.push(C), _) ? (0, r.jsxs)(r.Fragment, {
+  } = e, m = (0, d.Dt)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "463375", v = "8bff75f62189a25a93e85138cead27deb3768d8b".substring(0, 7), I = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), S = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), T = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), A = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, C = y(), N = [E, O, "(".concat(v, ")")];
+  return (null != I && (N.push("Host ".concat(I)), null != T && N.push(T.toLowerCase()), null != S && N.push("(".concat(S, ")"))), N.push("Build Override: ".concat(null != A ? A.id : "N/A")), null != C && N.push(C), _) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z, {
       copyValue: N.join(" "),
       text: p.intl.string(p.t["9Al4Qd"]),
@@ -100,11 +100,11 @@ function O(e) {
             tag: "span",
             variant: "text-xxs/normal",
             color: "text-muted",
-            children: [I, null != S && (0, r.jsxs)("span", {
+            children: [I, null != T && (0, r.jsxs)("span", {
               className: h.appArch,
-              children: [" ", S.toLowerCase()]
-            }), null != T && (0, r.jsxs)("span", {
-              children: [" (", T, ")"]
+              children: [" ", T.toLowerCase()]
+            }), null != S && (0, r.jsxs)("span", {
+              children: [" (", S, ")"]
             })]
           })]
         }), null != A && (0, r.jsx)(l.Text, {
@@ -157,11 +157,11 @@ function O(e) {
               className: h.line,
               variant: "text-xs/normal",
               color: "text-muted",
-              children: ["Host ", I, " ", null != S ? (0, r.jsxs)("span", {
+              children: ["Host ", I, " ", null != T ? (0, r.jsxs)("span", {
                 className: h.appArch,
-                children: [S.toLowerCase(), " "]
-              }) : null, null != T ? (0, r.jsxs)("span", {
-                children: ["(", T, ")"]
+                children: [T.toLowerCase(), " "]
+              }) : null, null != S ? (0, r.jsxs)("span", {
+                children: ["(", S, ")"]
               }) : null]
             }), " "]
           }) : null, null != C ? (0, r.jsx)(l.Text, {

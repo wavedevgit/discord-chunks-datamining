@@ -67,8 +67,8 @@ class y extends Chunk647438.Component {
       showPricingLink: O,
       showWithdrawalWaiver: v,
       isTrial: I,
-      inReverseTrial: T,
-      isDiscount: S,
+      inReverseTrial: S,
+      isDiscount: T,
       subscriptionPlan: A,
       finePrintClassname: C
     } = this.props, {
@@ -136,7 +136,7 @@ class y extends Chunk647438.Component {
           cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),
           paidServiceTermsArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })
-      }), T && null != A && (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), S && null != A && (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: Chunk388032.intl.format(Chunk388032.t.Oo2FeS, {
@@ -145,7 +145,7 @@ class y extends Chunk647438.Component {
           cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),
           paidServiceTermsArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })
-      }), S && null != A && (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), T && null != A && (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: Chunk388032.intl.format(Chunk388032.t["Z2c+aV"], {

@@ -61,9 +61,9 @@ function I(e, t) {
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,7 +71,7 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -86,16 +86,16 @@ let A = e => {
   } = e, {
     giftRecipient: y,
     selectedGiftStyle: v,
-    setSelectedGiftStyle: S,
+    setSelectedGiftStyle: T,
     emojiConfetti: A,
     soundEffect: C,
     setEmojiConfetti: N,
     setSoundEffect: R
-  } = (0, c.wD)(), [P, D] = i.useState(false), w = i.useRef(null), L = (0, s.Jb)({
+  } = (0, c.wD)(), [P, w] = i.useState(false), D = i.useRef(null), L = (0, s.Jb)({
     orientation: "horizontal"
   }), {
     ref: x
-  } = L, M = T(L, ["ref"]), k = (0, d.MY)(y, t), j = k === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = k !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.Z)({
+  } = L, M = S(L, ["ref"]), k = (0, d.MY)(y, t), j = k === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = k !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.Z)({
     location: "GiftAnimationOptions"
   }), Z = e => {
     null != R && R(null == e ? true : e)
@@ -125,7 +125,7 @@ let A = e => {
       tabIndex: null != v || P ? true : 0,
       onFocus: e => {
         var t;
-        e.target === e.currentTarget && (null == (t = w.current) || t.focus())
+        e.target === e.currentTarget && (null == (t = D.current) || t.focus())
       },
       className: o()(b.giftBoxOptionContainer, a),
       "aria-label": E.intl.string(E.t.v54NrN),
@@ -134,10 +134,10 @@ let A = e => {
       children: null != G && !B && G.map((e, t) => (0, r.jsx)(g.m, {
         isSelected: v === e,
         giftStyle: e,
-        setSelectedGiftStyle: S,
-        ref: 0 === t ? w : null,
-        onFocus: () => D(true),
-        onBlur: () => D(false)
+        setSelectedGiftStyle: T,
+        ref: 0 === t ? D : null,
+        onFocus: () => w(true),
+        onBlur: () => w(false)
       }, e))
     })), (0, r.jsx)("div", {
       className: b.__invalid_selectPlanDivider

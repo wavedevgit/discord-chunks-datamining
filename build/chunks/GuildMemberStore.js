@@ -68,8 +68,8 @@ function R(e, t) {
   }), e
 }
 let P = new Chunk710845.Z("GuildMemberStore"),
-  D = {},
   w = {},
+  D = {},
   L = {},
   x = {},
   M = {},
@@ -167,11 +167,11 @@ function X(e) {
     displayNameStyles: v
   } = e, {
     colorString: I,
-    colorStrings: T,
+    colorStrings: S,
     colorRoleId: A,
     iconRoleId: N,
     hoistRoleId: P,
-    highestRoleId: w
+    highestRoleId: D
   } = q(l, c), x = {
     userId: r,
     nick: i,
@@ -180,11 +180,11 @@ function X(e) {
     avatarDecoration: s,
     roles: c,
     colorString: I,
-    colorStrings: T,
+    colorStrings: S,
     colorRoleId: A,
     iconRoleId: N,
     hoistRoleId: P,
-    highestRoleId: w,
+    highestRoleId: D,
     premiumSince: u,
     isPending: d,
     joinedAt: f,
@@ -195,7 +195,7 @@ function X(e) {
     collectibles: b,
     displayNameStyles: v
   };
-  if ((0, g.yE)(null != (t = x.flags) ? t : 0, S.q.IS_GUEST) && (x.flags = (0, g.pj)(null != (n = x.flags) ? n : 0, S.q.BYPASSES_VERIFICATION)), null == D[a]) return x;
+  if ((0, g.yE)(null != (t = x.flags) ? t : 0, T.q.IS_GUEST) && (x.flags = (0, g.pj)(null != (n = x.flags) ? n : 0, T.q.BYPASSES_VERIFICATION)), null == w[a]) return x;
   if (r === O.default.getId())
     if (m.Z.isViewingRoles(a) || m.Z.isFullServerPreview(a)) {
       let e = m.Z.getViewingRoles(a);
@@ -207,7 +207,7 @@ function X(e) {
 }
 
 function Q(e) {
-  k ? k = false : (D = {}, w = {}), M = {}, $(e)
+  k ? k = false : (w = {}, D = {}), M = {}, $(e)
 }
 
 function J(e) {
@@ -233,7 +233,7 @@ function ee(e) {
   let {
     guildMembers: t
   } = e;
-  D = C({}, t), w = {}
+  w = C({}, t), D = {}
 }
 
 function et(e) {
@@ -241,7 +241,7 @@ function et(e) {
     guildMembers: t,
     guilds: n
   } = e;
-  k = true, D = C({}, t), w = {}, x = {}, er(n)
+  k = true, w = C({}, t), D = {}, x = {}, er(n)
 }
 
 function en(e) {
@@ -255,8 +255,8 @@ function er(e) {
   for (let t of e)
     if (null != t.member && (null == x[t.id] ? x[t.id] = t.member : x[t.id] = R(C({}, t.member), {
         roles: t.member.roles
-      }), null != D[t.id])) {
-      let e = D[t.id];
+      }), null != w[t.id])) {
+      let e = w[t.id];
       null != e[t.member.userId] && (e[t.member.userId] = R(C({}, e[t.member.userId]), {
         roles: t.member.roles
       }))
@@ -265,10 +265,10 @@ function er(e) {
 
 function ei(e) {
   var t, n;
-  if (null == e.guildId || null == T.Z.getGuild(e.guildId)) returnfalse;
-  k = true, D[e.guildId] = null != (t = D[e.guildId]) ? t : {};
+  if (null == e.guildId || null == S.Z.getGuild(e.guildId)) returnfalse;
+  k = true, w[e.guildId] = null != (t = w[e.guildId]) ? t : {};
   let r = false;
-  for (let t of (k = true, D[e.guildId] = null != (n = D[e.guildId]) ? n : {}, e.members)) null == D[e.guildId][t.userId] && (r = true, D[e.guildId][t.userId] = t);
+  for (let t of (k = true, w[e.guildId] = null != (n = w[e.guildId]) ? n : {}, e.members)) null == w[e.guildId][t.userId] && (r = true, w[e.guildId][t.userId] = t);
   return r
 }
 
@@ -289,9 +289,9 @@ function ea(e) {
     flags: p,
     collectibles: h,
     displayNameStyles: m
-  } = e, g = D[n];
+  } = e, g = w[n];
   if (null == g) returnfalse;
-  let E = T.Z.getGuild(n);
+  let E = S.Z.getGuild(n);
   if (null == E) return P.warn("Guild ".concat(n, " not found during GUILD_MEMBER_UPDATE.")), false;
   g[r.id] = X({
     userId: r.id,
@@ -318,9 +318,9 @@ function eo(e) {
     guildId: t,
     userId: n,
     roleId: r
-  } = e, i = D[t];
+  } = e, i = w[t];
   if (null == i) returnfalse;
-  let a = T.Z.getGuild(t);
+  let a = S.Z.getGuild(t);
   if (null == a) return P.warn("Guild ".concat(t, " not found during GUILD_MEMBER_UPDATE.")), false;
   let o = i[n];
   if (null == o || o.roles.includes(r)) returnfalse;
@@ -334,9 +334,9 @@ function es(e) {
     guildId: t,
     userId: n,
     roleId: r
-  } = e, i = D[t];
+  } = e, i = w[t];
   if (null == i) returnfalse;
-  let a = T.Z.getGuild(t);
+  let a = S.Z.getGuild(t);
   if (null == a) return P.warn("Guild ".concat(t, " not found during GUILD_MEMBER_UPDATE.")), false;
   let o = i[n];
   if (null == o || !o.roles.includes(r)) returnfalse;
@@ -349,9 +349,9 @@ function el(e) {
   let {
     guildMember: t,
     guildId: n
-  } = e, r = D[n];
+  } = e, r = w[n];
   if (null == r) returnfalse;
-  let i = T.Z.getGuild(n);
+  let i = S.Z.getGuild(n);
   if (null == i) return P.warn("Guild ".concat(n, " not found during GUILD_MEMBER_UPDATE.")), false;
   r[t.user.id] = X({
     userId: t.user.id,
@@ -423,9 +423,9 @@ function ep(e) {
 }
 
 function eh(e, t) {
-  let n = D[e];
+  let n = w[e];
   if (null == n) returnfalse;
-  let r = T.Z.getGuild(e);
+  let r = S.Z.getGuild(e);
   return null == r ? (P.warn("Guild ".concat(e, " not found during batchUpdateGuildMembers.")), false) : (t.forEach(t => {
     var i;
     let a = n[t.user.id];
@@ -484,7 +484,7 @@ function eb(e) {
 }
 
 function ey(e, t) {
-  let n = D[e];
+  let n = w[e];
   if (null == n || null == n[t]) returnfalse;
   delete n[t], V(e, t), U++
 }
@@ -505,10 +505,10 @@ function ev(e, t) {
 
 function eI(e) {
   let t = e.id;
-  t in D || (D[e.id] = {});
-  let n = T.Z.getGuild(t);
+  t in w || (w[e.id] = {});
+  let n = S.Z.getGuild(t);
   if (null == n) returnfalse;
-  let r = D[t];
+  let r = w[t];
   for (let a of e.members) {
     var i;
     let o = a.user.id,
@@ -536,17 +536,17 @@ function eI(e) {
   returntrue
 }
 
-function eT(e) {
+function eS(e) {
   let {
     guild: t
   } = e;
-  delete D[t.id], delete w[t.id], V(t.id)
+  delete w[t.id], delete D[t.id], V(t.id)
 }
 
-function eS(e) {
-  let t = D[e.guildId];
+function eT(e) {
+  let t = w[e.guildId];
   if (null == t) returnfalse;
-  let n = T.Z.getGuild(e.guildId);
+  let n = S.Z.getGuild(e.guildId);
   if (null == n) return P.warn("Guild ".concat(e.guildId, " not found during ").concat(e.type, ".")), false;
   let r = O.default.getId();
   for (let i of y.default.keys(t)) {
@@ -581,9 +581,9 @@ function eA(e) {
     addedRoleIds: s,
     removedRoleIds: l,
     flags: c
-  } = e, u = O.default.getId(), d = D[i], f = null != d ? d[u] : null;
+  } = e, u = O.default.getId(), d = w[i], f = null != d ? d[u] : null;
   if (null == f) returnfalse;
-  let _ = T.Z.getGuild(i);
+  let _ = S.Z.getGuild(i);
   if (null == _) returnfalse;
   let p = null != (t = B[i]) ? t : {};
   B[i] = {
@@ -618,9 +618,9 @@ function eC(e) {
 function eN(e) {
   let {
     guildId: t
-  } = e, n = D[t];
+  } = e, n = w[t];
   if (null == n) returnfalse;
-  let r = T.Z.getGuild(t);
+  let r = S.Z.getGuild(t);
   if (null == r) return P.warn("Guild ".concat(t, " not found during IMPERSONATE_UPDATE.")), false;
   let i = O.default.getId(),
     a = n[i];
@@ -666,7 +666,7 @@ function eP(e, t) {
   }), eR(e.resolved, t) || r
 }
 
-function eD(e) {
+function ew(e) {
   let {
     message: t,
     guildId: n
@@ -674,7 +674,7 @@ function eD(e) {
   return eP(t, n)
 }
 
-function ew(e) {
+function eD(e) {
   let t = v.Z.getChannel(e.channel_id);
   eP(e, null == t ? true : t.guild_id)
 }
@@ -683,7 +683,7 @@ function eL(e) {
   let {
     messages: t
   } = e;
-  t.forEach(e => ew(e))
+  t.forEach(e => eD(e))
 }
 
 function ex(e) {
@@ -694,7 +694,7 @@ function ex(e) {
     let {
       message: t
     } = e;
-    return ew(t)
+    return eD(t)
   })
 }
 
@@ -733,10 +733,10 @@ class eU extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk485386.Z, Chunk430824.Z, Chunk160404.Z)
   }
   getMutableAllGuildsAndMembers() {
-    return D
+    return w
   }
   memberOf(e) {
-    return a()(D).toPairs().filter(t => {
+    return a()(w).toPairs().filter(t => {
       let [n, r] = t;
       return null != r[e]
     }).map(e => {
@@ -746,9 +746,9 @@ class eU extends(r = Chunk442837.ZP.Store) {
   }
   getNicknameGuildsMapping(e) {
     let t = {};
-    for (let r in D) {
+    for (let r in w) {
       var n;
-      let i = null == (n = D[r][e]) ? true : n.nick;
+      let i = null == (n = w[r][e]) ? true : n.nick;
       null != i && (Object.prototype.hasOwnProperty.call(t, i) || (t[i] = []), t[i].push(r))
     }
     return t
@@ -758,35 +758,35 @@ class eU extends(r = Chunk442837.ZP.Store) {
   }
   isMember(e, t) {
     if (null == e || null == t) returnfalse;
-    let n = D[e];
+    let n = w[e];
     return null != n && null != n[t]
   }
   isGuestOrLurker(e, t) {
     var n;
     if (null == e || null == t) returnfalse;
-    let r = D[e];
+    let r = w[e];
     return null != r && (null == (n = r[t]) ? true : n.joinedAt) == null
   }
   isCurrentUserGuest(e) {
     if (null == e) returnfalse;
     let t = O.default.getId(),
-      n = D[e];
+      n = w[e];
     if (null == n || null == n[t]) returnfalse;
     let r = n[t].flags;
-    return null != r && (0, g.yE)(r, S.q.IS_GUEST)
+    return null != r && (0, g.yE)(r, T.q.IS_GUEST)
   }
   getMemberIds(e) {
     if (null == e) return [];
-    let t = D[e];
+    let t = w[e];
     return null == t ? [] : y.default.keys(t)
   }
   getMembers(e) {
     if (null == e) return [];
-    let t = D[e];
+    let t = w[e];
     return null == t ? [] : Object.values(t)
   }
   getTrueMember(e, t) {
-    let n = D[e];
+    let n = w[e];
     return null != n ? n[t] : null
   }
   getMember(e, t) {
@@ -801,12 +801,12 @@ class eU extends(r = Chunk442837.ZP.Store) {
     return this.getMember(e, O.default.getId())
   }
   getSelfMemberJoinedAt(e) {
-    let t = w[e];
+    let t = D[e];
     if (null != t) return t;
     let n = this.getSelfMember(e);
     if (null == n || null == n.joinedAt) return null;
     let r = new Date(n.joinedAt);
-    return w[e] = r, r
+    return D[e] = r, r
   }
   getCachedSelfMember(e) {
     var t;
@@ -845,7 +845,7 @@ let eG = new eU(Chunk570140.Z, {
   CACHE_LOADED: et,
   CACHE_LOADED_LAZY: en,
   GUILD_CREATE: eO,
-  GUILD_DELETE: eT,
+  GUILD_DELETE: eS,
   GUILD_MEMBER_ADD: ea,
   GUILD_MEMBER_UPDATE: ea,
   GUILD_MEMBER_UPDATE_LOCAL: eA,
@@ -856,8 +856,8 @@ let eG = new eU(Chunk570140.Z, {
   THREAD_MEMBERS_UPDATE: ep,
   LOAD_ARCHIVED_THREADS_SUCCESS: ef,
   LOAD_FORUM_POSTS: e_,
-  GUILD_ROLE_UPDATE: eS,
-  GUILD_ROLE_DELETE: eS,
+  GUILD_ROLE_UPDATE: eT,
+  GUILD_ROLE_DELETE: eT,
   GUILD_ROLE_MEMBER_REMOVE: es,
   GUILD_ROLE_MEMBER_ADD: eo,
   GUILD_MEMBER_PROFILE_UPDATE: el,
@@ -866,8 +866,8 @@ let eG = new eU(Chunk570140.Z, {
   PASSIVE_UPDATE_V2: eu,
   CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES: eC,
   LOCAL_MESSAGES_LOADED: ei,
-  MESSAGE_CREATE: eD,
-  MESSAGE_UPDATE: eD,
+  MESSAGE_CREATE: ew,
+  MESSAGE_UPDATE: ew,
   LOAD_MESSAGES_SUCCESS: eL,
   LOAD_MESSAGES_AROUND_SUCCESS: eL,
   LOAD_RECENT_MENTIONS_SUCCESS: eL,

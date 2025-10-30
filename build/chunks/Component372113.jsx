@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk997267 = require("./997267.js");
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,14 +42,14 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -152,7 +152,7 @@ function U(e) {
     questContent: a,
     questContentPosition: o,
     sourceQuestContent: l
-  } = e, c = n >= g.OH.COMPLETED, f = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), _ = (0, s.e7)([E.Z], () => E.Z.isEnrolling(t.id)), p = (0, m.q8)(t), h = (0, m.Vl)(t), b = (0, S.Ks)({
+  } = e, c = n >= g.OH.COMPLETED, f = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), _ = (0, s.e7)([E.Z], () => E.Z.isEnrolling(t.id)), p = (0, m.q8)(t), h = (0, m.Vl)(t), b = (0, T.Ks)({
     progressState: n,
     quest: t,
     questContent: a,
@@ -171,7 +171,7 @@ function U(e) {
       return y ? (0, r.jsx)(G, {
         ctaConfig: b,
         tooltipProps: e
-      }) : (0, r.jsx)(u.Button, x(w({}, e), {
+      }) : (0, r.jsx)(u.Button, x(D({}, e), {
         fullWidth: true,
         variant: "primary",
         disabled: null == b.onClick,
@@ -197,7 +197,7 @@ function G(e) {
     className: o()({
       [P.fullWidthShinyCtaButtonWrapper]: d
     }),
-    children: (0, r.jsx)(u.gtL, x(w({}, a), {
+    children: (0, r.jsx)(u.gtL, x(D({}, a), {
       "data-migration-pending": true,
       fullWidth: true,
       wrapperClassName: P.ctaButtonWrapper,
@@ -206,7 +206,7 @@ function G(e) {
       onClick: null != (t = i.onClick) ? t : true,
       children: i.text
     }))
-  }) : (0, r.jsx)(u.Button, x(w({}, a), {
+  }) : (0, r.jsx)(u.Button, x(D({}, a), {
     fullWidth: true,
     variant: "primary",
     disabled: null == i.onClick,
@@ -224,26 +224,26 @@ let B = e => {
     isQuestExpired: _,
     isExpanded: p,
     isAnimating: y,
-    contentPosition: S,
+    contentPosition: T,
     sourceQuestContent: A
-  } = e, N = (0, g._Q)(n), D = (0, g.B6)(null == (t = n.userStatus) ? true : t.completedAt, {
+  } = e, N = (0, g._Q)(n), w = (0, g.B6)(null == (t = n.userStatus) ? true : t.completedAt, {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), w = N >= g.OH.ACCEPTED, L = N >= g.OH.COMPLETED, x = (0, m.Xv)(n.config), G = p || y, B = (0, g.t5)(n, C.dr.QUESTS_CARD, a, A), Z = (0, h.O5)(), F = i.useMemo(() => v.r.build(n.config), [n.config]), V = (0, g.Rf)(n), H = (0, O.DD)({
+  }), D = N >= g.OH.ACCEPTED, L = N >= g.OH.COMPLETED, x = (0, m.Xv)(n.config), G = p || y, B = (0, g.t5)(n, C.dr.QUESTS_CARD, a, A), Z = (0, h.O5)(), F = i.useMemo(() => v.r.build(n.config), [n.config]), V = (0, g.Rf)(n), H = (0, O.DD)({
     quest: n,
     taskDetails: V,
     location: C.dr.QUESTS_CARD,
     questContent: b.jn.QUESTS_EMBED,
     sourceQuestContent: A
   }), Y = (0, s.e7)([E.Z], () => null != E.Z.questEnrollmentBlockedUntil, []), W = () => {
-    (0, T.navigateToQuestHome)({
+    (0, S.navigateToQuestHome)({
       fromContent: a,
       questId: n.id
     }), Z({
       questId: n.id,
       questContent: a,
-      questContentPosition: S,
+      questContentPosition: T,
       questContentCTA: h.jZ.LEARN_MORE,
       sourceQuestContent: A
     })
@@ -280,14 +280,14 @@ let B = e => {
             location: C.dr.QUESTS_CARD,
             quest: n,
             questContent: a,
-            questContentPosition: S,
+            questContentPosition: T,
             sourceQuestContent: A
           })]
         })
       }), (0, r.jsxs)("div", {
         className: P.taskDetails,
         children: [(0, r.jsx)(u.Text, {
-          variant: M(a, c, w),
+          variant: M(a, c, D),
           className: P.taskInstructions,
           children: _ ? R.intl.formatToPlainString(R.t["ge+AJp"], {
             questName: n.config.messages.questName
@@ -301,7 +301,7 @@ let B = e => {
             isQuestExpired: _,
             sharedQuestFields: F,
             collectibleQuestRewardDescription: H,
-            formattedCompletionDate: D
+            formattedCompletionDate: w
           })
         })]
       }), Y ? (0, r.jsxs)(u.ButtonGroup, {
@@ -314,7 +314,7 @@ let B = e => {
           text: R.intl.string(R.t.V293qn)
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
-          onClick: () => (0, T.openQuestMinorEnrollmentBlockModal)(n, a, A),
+          onClick: () => (0, S.openQuestMinorEnrollmentBlockModal)(n, a, A),
           text: R.intl.string(R.t.vY9GgG)
         })]
       }) : (0, r.jsxs)(u.ButtonGroup, {

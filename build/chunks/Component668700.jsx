@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   W: () => I,
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -28,26 +28,26 @@ var Chunk442837 = require("./442837.js"),
   Chunk704543 = require("./704543.js");
 let I = 3;
 
-function T(e) {
+function S(e) {
   let {
     user: t,
     guild: n,
-    channel: T,
-    onAction: S,
+    channel: S,
+    onAction: T,
     onClose: A
   } = e, {
     themeType: C
-  } = (0, g.z)(), N = (0, h.Z)(T), R = (0, u.ZP)(T), {
+  } = (0, g.z)(), N = (0, h.Z)(S), R = (0, u.ZP)(S), {
     canViewChannel: P,
-    canConnect: D
+    canConnect: w
   } = (0, i.cj)([p.Z], () => ({
-    canViewChannel: p.Z.can(b.Plq.VIEW_CHANNEL, T),
-    canConnect: T.isPrivate() || p.Z.can(b.Plq.CONNECT, T)
+    canViewChannel: p.Z.can(b.Plq.VIEW_CHANNEL, S),
+    canConnect: S.isPrivate() || p.Z.can(b.Plq.CONNECT, S)
   }));
   if (!P) return null;
-  let w = () => {
+  let D = () => {
       let e = e => {
-        e.stopPropagation(), (0, _.X)(n.id), null == S || S({
+        e.stopPropagation(), (0, _.X)(n.id), null == T || T({
           action: "OPEN_VOICE_GUILD"
         }), null == A || A()
       };
@@ -64,7 +64,7 @@ function T(e) {
       })
     },
     L = () => {
-      if (!D) return (0, r.jsx)(l.Text, {
+      if (!w) return (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
         lineClamp: 1,
@@ -73,7 +73,7 @@ function T(e) {
         })
       });
       let e = e => {
-        e.stopPropagation(), c.default.selectVoiceChannel(T.id), (0, f.Kh)(T.id), null == S || S({
+        e.stopPropagation(), c.default.selectVoiceChannel(S.id), (0, f.Kh)(S.id), null == T || T({
           action: "OPEN_VOICE_CHANNEL"
         }), null == A || A()
       };
@@ -96,13 +96,13 @@ function T(e) {
       className: v.voiceChannelDivider
     }), (0, r.jsxs)("div", {
       className: v.voiceChannel,
-      children: [w(), (0, r.jsx)(l.Fbu, {
+      children: [D(), (0, r.jsx)(l.Fbu, {
         size: "xxs",
         color: l.TVs.colors.TEXT_SECONDARY
       }), (0, r.jsxs)("div", {
         className: v.voiceChannelText,
         children: [(0, r.jsx)(E.Z, {
-          channel: T,
+          channel: S,
           size: "xxs",
           color: l.TVs.colors.TEXT_SECONDARY,
           className: v.voiceIcon
@@ -110,13 +110,13 @@ function T(e) {
       }), (0, r.jsx)(o.Z, {
         users: N,
         guildId: n.id,
-        channelId: T.id,
+        channelId: S.id,
         maxUsers: I,
         size: l.EFr.SIZE_16,
         overflowCountColor: "text-secondary",
         overflowCountClassName: v.voiceChannelOverflowCount,
         onClickOverflow: e => {
-          e.stopPropagation(), null == S || S({
+          e.stopPropagation(), null == T || T({
             action: "PRESS_VOICE_CHANNEL_AVATARS"
           })
         },

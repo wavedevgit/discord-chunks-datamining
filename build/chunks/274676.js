@@ -36,13 +36,13 @@ function u(e) {
   return !!r() && "undefined" != typeof ShadowRoot && (e instanceof ShadowRoot || e instanceof a(e).ShadowRoot)
 }
 require.d(exports, {
-  Dx: () => S,
+  Dx: () => T,
   Jj: () => a,
   Kx: () => R,
   Lw: () => A,
   Ow: () => C,
   Pf: () => v,
-  Py: () => T,
+  Py: () => S,
   Re: () => c,
   Ze: () => p,
   Zq: () => u,
@@ -63,7 +63,7 @@ function f(e) {
     overflowX: n,
     overflowY: r,
     display: i
-  } = S(e);
+  } = T(e);
   return /auto|scroll|overlay|hidden|clip/.test(t + r + n) && !d.has(i)
 }
 let _ = new Set(["table", "td", "th"]);
@@ -88,13 +88,13 @@ let g = ["transform", "translate", "scale", "rotate", "perspective"],
 
 function y(e) {
   let t = v(),
-    n = l(e) ? S(e) : e;
+    n = l(e) ? T(e) : e;
   return g.some(e => !!n[e] && "none" !== n[e]) || !!n.containerType && "normal" !== n.containerType || !t && !!n.backdropFilter && "none" !== n.backdropFilter || !t && !!n.filter && "none" !== n.filter || E.some(e => (n.willChange || "").includes(e)) || b.some(e => (n.contain || "").includes(e))
 }
 
 function O(e) {
   let t = C(e);
-  for (; c(t) && !T(t);) {
+  for (; c(t) && !S(t);) {
     if (y(t)) return t;
     if (m(t)) break;
     t = C(t)
@@ -107,11 +107,11 @@ function v() {
 }
 let I = new Set(["html", "body", "#document"]);
 
-function T(e) {
+function S(e) {
   return I.has(i(e))
 }
 
-function S(e) {
+function T(e) {
   return a(e).getComputedStyle(e)
 }
 
@@ -133,7 +133,7 @@ function C(e) {
 
 function N(e) {
   let t = C(e);
-  return T(t) ? e.ownerDocument ? e.ownerDocument.body : e.body : c(t) && f(t) ? t : N(t)
+  return S(t) ? e.ownerDocument ? e.ownerDocument.body : e.body : c(t) && f(t) ? t : N(t)
 }
 
 function R(e, t, n) {

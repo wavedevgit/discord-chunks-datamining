@@ -9,7 +9,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk304809 = require("./304809.js"),
   Chunk586826 = require("./586826.js"),
   Chunk943351 = require("./943351.js");
-let s = new Worker(new URL("/assets/" + require.u("14315"), require.b)),
+let o = new Worker(new URL("/assets/" + require.u("14315"), require.b)),
   u = (0, Chunk304809.N)();
 async function c(e) {
   if (null == u) throw Error("Failed to create audio context");
@@ -18,63 +18,63 @@ async function c(e) {
 }
 
 function d(e) {
-  let [n, t] = a.useState(null), [l, r] = a.useState(null);
-  return a.useEffect(() => {
+  let [n, t] = l.useState(null), [a, i] = l.useState(null);
+  return l.useEffect(() => {
     if (null == e) return;
-    let n = (0, o.hp)(e);
-    n !== l && (r(n), t(null), c(e).then(t))
-  }, [l, e]), n
+    let n = (0, s.hp)(e);
+    n !== a && (i(n), t(null), c(e).then(t))
+  }, [a, e]), n
 }
 let f = function(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
-      a = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      l = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
       return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), a.forEach(function(n) {
-      var a;
-      a = t[n], n in e ? Object.defineProperty(e, n, {
-        value: a,
+    }))), l.forEach(function(n) {
+      var l;
+      l = t[n], n in e ? Object.defineProperty(e, n, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[n] = a
+      }) : e[n] = l
     })
   }
   return e
 }({}, Chunk943351.nl);
 
 function m(e, n, t) {
-  let [r, u] = a.useState(null), [c, d] = a.useState(null), [m, g] = a.useState(1), {
+  let [i, u] = l.useState(null), [c, d] = l.useState(null), [m, g] = l.useState(1), {
     setMaxVolume: h
-  } = (0, i.p)(), p = a.useCallback((e, n) => {
-    var a;
-    d(null), (a = n.offsetWidth, new Promise(n => {
-      let r = (0, l.Z)(),
-        i = e => {
+  } = (0, r.p)(), v = l.useCallback((e, n) => {
+    var l;
+    d(null), (l = n.offsetWidth, new Promise(n => {
+      let i = (0, a.Z)(),
+        r = e => {
           let {
             data: {
               waveform: t,
-              id: a,
-              normalizedVolumeMultipler: l
+              id: l,
+              normalizedVolumeMultipler: a
             }
           } = e;
-          r === a && (n(t), g(l)), null == s || s.removeEventListener("message", i)
+          i === l && (n(t), g(a)), null == o || o.removeEventListener("message", r)
         };
-      null == s || s.addEventListener("message", i), null == s || s.postMessage({
-        id: r,
+      null == o || o.addEventListener("message", r), null == o || o.postMessage({
+        id: i,
         options: t,
         config: f,
-        width: a,
+        width: l,
         rawBufferData: e
       })
     })).then(d)
   }, [t]);
-  return a.useEffect(() => {
+  return l.useEffect(() => {
     if (null == e || null == n) return;
-    let a = (0, o.V3)(e, t);
-    r !== a && (u(a), p(e, n))
-  }, [e, p, n, t, r]), a.useEffect(() => {
+    let l = (0, s.V3)(e, t);
+    i !== l && (u(l), v(e, n))
+  }, [e, v, n, t, i]), l.useEffect(() => {
     h(m)
   }, [m, h]), c
 }

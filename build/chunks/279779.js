@@ -58,7 +58,7 @@ function I(e) {
   }), t
 }
 
-function T(e, t) {
+function S(e, t) {
   let n = [];
   return e.forEach(e => {
     let r = O(e.user);
@@ -66,7 +66,7 @@ function T(e, t) {
   }), n
 }
 
-function S(e) {
+function T(e) {
   var t;
   let {
     message: n,
@@ -255,7 +255,7 @@ class C extends Chunk147913.Z {
         guilds: t
       } = e;
       setTimeout(() => {
-        let e = i().flatMap(t, e => T(e.members, e.id)),
+        let e = i().flatMap(t, e => S(e.members, e.id)),
           n = i().flatMap(t, e => {
             var t;
             let n = [];
@@ -298,12 +298,12 @@ class C extends Chunk147913.Z {
       } = e, {
         members: n
       } = t;
-      this.updateUsers(T(n, t.id), "guild_create")
+      this.updateUsers(S(n, t.id), "guild_create")
     }), b(this, "_handleGuildMembersChunkBatch", e => {
       let {
         chunks: t
       } = e, n = [];
-      for (let e of t) n.push(...T(e.members, e.guildId));
+      for (let e of t) n.push(...S(e.members, e.guildId));
       this.updateUsers(n, "guild_members_chunk_batch")
     }), b(this, "_handleGuildMemberUpdate", e => {
       let {
@@ -313,7 +313,7 @@ class C extends Chunk147913.Z {
       } = e, i = O(n);
       null != i && (v(i, t, r), this.updateUsers([i], "guild_member_update"))
     }), b(this, "_handlePassiveUpdateV2", e => {
-      this.updateUsers(T(e.members, e.guildId), "passive_update_v2")
+      this.updateUsers(S(e.members, e.guildId), "passive_update_v2")
     }), b(this, "_handleRelationshipAdd", e => {
       let t = O(e.relationship.user);
       this.updateUsers([t], "relationship_add")
@@ -359,7 +359,7 @@ class C extends Chunk147913.Z {
       if (null == n) return;
       let r = [];
       n.forEach(e => {
-        S({
+        T({
           message: e,
           nicknameContextId: t
         }).forEach(e => r.push(e))
@@ -375,18 +375,18 @@ class C extends Chunk147913.Z {
           most_recent_message: i,
           owner: a
         } = e;
-        null != n && S({
+        null != n && T({
           message: n,
           nicknameContextId: t
-        }).forEach(e => r.push(e)), null != i && S({
+        }).forEach(e => r.push(e)), null != i && T({
           message: i,
           nicknameContextId: t
-        }).forEach(e => r.push(e)), null != a && T([a], t).forEach(e => r.push(e))
+        }).forEach(e => r.push(e)), null != a && S([a], t).forEach(e => r.push(e))
       }), this.updateUsers(r, "load_forum_posts")
     }), b(this, "_handleLoadMessagesSuccess", e => {
       let {
         messages: t
-      } = e, n = t.flatMap(e => S({
+      } = e, n = t.flatMap(e => T({
         message: e
       }));
       this.updateUsers(n, "load_messages_success")
@@ -398,7 +398,7 @@ class C extends Chunk147913.Z {
         let {
           message: t
         } = e;
-        S({
+        T({
           message: t
         }).forEach(e => n.push(e))
       }), this.updateUsers(n, "load_pinned_messages_success")
@@ -412,7 +412,7 @@ class C extends Chunk147913.Z {
         } = e;
         t.forEach(e => {
           e.forEach(e => {
-            S({
+            T({
               message: e
             }).forEach(e => n.push(e))
           })
@@ -426,18 +426,18 @@ class C extends Chunk147913.Z {
         owners: i
       } = e, a = [];
       null == n || n.forEach(e => {
-        S({
+        T({
           message: e,
           nicknameContextId: t
         }).forEach(e => a.push(e))
       }), null == r || r.forEach(e => {
-        S({
+        T({
           message: e,
           nicknameContextId: t
         }).forEach(e => a.push(e))
-      }), null != i && T(i, t).forEach(e => a.push(e)), this.updateUsers(a, "load_threads_success")
+      }), null != i && S(i, t).forEach(e => a.push(e)), this.updateUsers(a, "load_threads_success")
     }), b(this, "_handleMessageCreateOrUpdate", e => {
-      let t = S({
+      let t = T({
         message: e.message
       });
       this.updateUsers(t, "message_create_or_update")

@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 620799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -20,13 +20,13 @@ function h(e) {
     targetElementRef: t,
     markAsDismissed: n,
     children: h
-  } = e, x = (0, r.e7)([s.default], () => s.default.getId()), f = (0, r.e7)([i.Z], () => i.Z.useReducedMotion), g = (0, c.bg)({
+  } = e, x = (0, r.e7)([s.default], () => s.default.getId()), g = (0, r.e7)([i.Z], () => i.Z.useReducedMotion), f = (0, c.bg)({
     location: "GameWidgetsPopover"
   });
   return (0, a.jsxs)(a.Fragment, {
     children: [h, (0, a.jsx)(l.J2, {
       targetElementRef: t,
-      badge: g ? {
+      badge: f ? {
         type: "early_access",
         variant: "expressive"
       } : true,
@@ -37,7 +37,7 @@ function h(e) {
       },
       graphic: {
         type: "image",
-        src: f ? "https://cdn.discordapp.com/assets/content/1b55390a202dcca3843b6c9205af0379cfa072f34d8b9217bce04aba4d373e5b.png" : "https://cdn.discordapp.com/assets/content/fdb6d4e8a2f01f917d2025a8ca58ebd55e4eada92df1d5386f73d91d6acad1f9.png"
+        src: g ? "https://cdn.discordapp.com/assets/content/1b55390a202dcca3843b6c9205af0379cfa072f34d8b9217bce04aba4d373e5b.png" : "https://cdn.discordapp.com/assets/content/fdb6d4e8a2f01f917d2025a8ca58ebd55e4eada92df1d5386f73d91d6acad1f9.png"
       },
       position: "top",
       align: "left",

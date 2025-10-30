@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -81,13 +81,13 @@ function C(e, t) {
   return i
 }
 let N = Chunk647438.forwardRef(function(e, t) {
-  var a, v, T;
+  var a, v, S;
   let C, {
       canRemove: N,
       className: R,
       role: P,
-      onRemove: D,
-      guildId: w,
+      onRemove: w,
+      guildId: D,
       disableBorderColor: L,
       onMouseDown: x
     } = e,
@@ -99,7 +99,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
     U = (0, g.p9)({
       roleId: P.id,
       size: 16,
-      guildId: w
+      guildId: D
     }),
     G = (0, c.e7)([h.Z], () => h.Z.roleStyle),
     B = (null == (a = P.tags) ? true : a.guild_connections) === null,
@@ -108,7 +108,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
         let {
           default: e
         } = await n.e("5396").then(n.bind(n, 999588));
-        return t => (0, r.jsx)(e, S(I({}, t), {
+        return t => (0, r.jsx)(e, T(I({}, t), {
           id: P.id,
           label: y.intl.string(y.t.sMsaLg)
         }))
@@ -116,11 +116,11 @@ let N = Chunk647438.forwardRef(function(e, t) {
     }, [P.id]),
     F = (0, _.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
     V = null != (v = P.colorString) ? v : F,
-    H = null != (T = (0, l.wK)(V, .6)) ? T : true,
+    H = null != (S = (0, l.wK)(V, .6)) ? S : true,
     Y = u.Z.unsafe_rawColors.WHITE_500.css,
     W = (0, l._i)(V);
   null != W && .3 > (0, l.Bd)(W) && (Y = u.Z.unsafe_rawColors.PRIMARY_630.css);
-  let K = (0, E._f)(w, P, P.colorStrings);
+  let K = (0, E._f)(D, P, P.colorStrings);
   C = B ? (0, r.jsx)(m.Z, {
     className: O.roleFlowerStar,
     iconClassName: N ? O.roleVerifiedIcon : true,
@@ -148,7 +148,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
       text: y.intl.string(y.t.u3RVsH),
       children: (0, r.jsxs)(_.P3F, {
         className: o()(O.roleRemoveButtonCanRemove, O.roleRemoveButton),
-        onClick: D,
+        onClick: w,
         tabIndex: k,
         focusProps: {
           focusClassName: O.roleRemoveIconFocused
@@ -177,7 +177,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
       children: C
     });
   return (0, r.jsx)(_.tEY, {
-    children: (0, r.jsxs)("div", S(I({
+    children: (0, r.jsxs)("div", T(I({
       ref: t,
       className: o()(O.role, R),
       style: z,
@@ -186,7 +186,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
       "aria-label": P.name,
       tabIndex: k
     }, j), {
-      children: [q(), null != U ? (0, r.jsx)(b.Z, S(I({
+      children: [q(), null != U ? (0, r.jsx)(b.Z, T(I({
         className: O.roleIcon
       }, U), {
         enableTooltip: false

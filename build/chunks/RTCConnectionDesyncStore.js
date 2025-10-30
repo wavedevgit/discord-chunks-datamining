@@ -2,7 +2,7 @@
 /** chunk id: 878884, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk46973 = require("./46973.js"),
@@ -64,7 +64,7 @@ function I(e) {
   return t || n || r
 }
 
-function T() {
+function S() {
   var e;
   let t = Chunk19780.Z.getChannelId();
   if (null == exports) returnfalse;
@@ -77,12 +77,12 @@ function T() {
   }), r
 }
 
-function S() {
+function T() {
   b.clear(), y.clear(), O.clear()
 }
 
 function A() {
-  S()
+  T()
 }
 
 function C(e) {
@@ -91,7 +91,7 @@ function C(e) {
     context: n
   } = e;
   if (n !== a.Yn.DEFAULT || t !== m.hes.DISCONNECTED) returnfalse;
-  S()
+  T()
 }
 
 function N(e) {
@@ -128,9 +128,9 @@ function P(e) {
   } = e;
   return n === a.Yn.DEFAULT && I(t)
 }
-class D extends(r = Chunk442837.ZP.Store) {
+class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk979651.Z, Chunk594174.default, Chunk592125.Z, Chunk19780.Z), this.syncWith([Chunk594174.default], T)
+    this.waitFor(Chunk979651.Z, Chunk594174.default, Chunk592125.Z, Chunk19780.Z), this.syncWith([Chunk594174.default], S)
   }
   get desyncedVoiceStatesCount() {
     return b.size()
@@ -145,10 +145,10 @@ class D extends(r = Chunk442837.ZP.Store) {
     return y.values()
   }
 }
-E(D, "displayName", "RTCConnectionDesyncStore");
-let w = new D(Chunk570140.Z, {
+E(w, "displayName", "RTCConnectionDesyncStore");
+let D = new w(Chunk570140.Z, {
   CONNECTION_OPEN: A,
-  VOICE_CHANNEL_SELECT: S,
+  VOICE_CHANNEL_SELECT: T,
   RTC_CONNECTION_STATE: C,
   VOICE_STATE_UPDATES: N,
   RTC_CONNECTION_CLIENT_CONNECT: R,

@@ -1,10 +1,10 @@
-/** Chunk was on 9797 **/
+/** Chunk was on 33648 **/
 /** chunk id: 859155, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
 }), require("./415506.js");
 var Chunk991637 = require("./991637.js"),
-  l = require.n(Chunk991637),
+  a = require.n(Chunk991637),
   Chunk388123 = require("./388123.js"),
   Chunk904245 = require("./904245.js"),
   Chunk797394 = require("./797394.js"),
@@ -15,12 +15,12 @@ var Chunk991637 = require("./991637.js"),
   Chunk959517 = require("./959517.js");
 let m = {
     async sendForward(e, t, n) {
-      let a = c.Z.getChannel(t),
-        l = c.Z.getChannel(e.channel_id),
-        m = (null == n ? true : n.isICYMIGameContentForwarding) ? s.KF : null == l ? true : l.guild_id;
-      if (null == l && null == m) throw Error("Unable to find original channel for message");
-      if (null == a) throw Error("Unable to find destination channel for message");
-      let g = o.ZP.parse(a, ""),
+      let l = u.Z.getChannel(t),
+        a = u.Z.getChannel(e.channel_id),
+        m = (null == n ? true : n.isICYMIGameContentForwarding) ? s.KF : null == a ? true : a.guild_id;
+      if (null == a && null == m) throw Error("Unable to find original channel for message");
+      if (null == l) throw Error("Unable to find destination channel for message");
+      let g = o.ZP.parse(l, ""),
         f = {
           guild_id: m,
           channel_id: e.channel_id,
@@ -31,14 +31,14 @@ let m = {
             embed_indices: n.onlyEmbedIndices
           } : true
         };
-      await i.Z.sendMessage(a.id, g, false, {
+      await i.Z.sendMessage(l.id, g, false, {
         messageReference: f,
         location: h.dy.FORWARDING,
         eagerDispatch: false
-      }), (null == n ? true : n.withMessage) == null || (0, d.pU)(a, u.Z) || await i.Z.sendMessage(a.id, o.ZP.parse(a, n.withMessage), false, {
+      }), (null == n ? true : n.withMessage) == null || (0, d.pU)(l, c.Z) || await i.Z.sendMessage(l.id, o.ZP.parse(l, n.withMessage), false, {
         location: h.dy.FORWARDING
       })
     },
-    sendForwards: (e, t, n) => l()(t.map(t => m.sendForward(e, t, n)))
+    sendForwards: (e, t, n) => a()(t.map(t => m.sendForward(e, t, n)))
   },
   g = m

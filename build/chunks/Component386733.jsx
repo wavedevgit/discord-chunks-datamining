@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120472 = require("./120472.js"),
   Chunk691766 = require("./691766.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -113,7 +113,7 @@ let R = e => {
       })]
     })
   },
-  D = e => {
+  w = e => {
     let {
       userRecords: t
     } = e, n = t.length, i = n < 1 ? null : t[0], a = n < 2 ? null : t[1], o = n < 3 ? null : t[2];
@@ -137,7 +137,7 @@ let R = e => {
       })]
     })
   },
-  w = e => {
+  D = e => {
     let {
       analyticsLocations: t
     } = e;
@@ -165,7 +165,7 @@ let R = e => {
     n.forEach(e => {
       e === m.Fe.REDEEMED && p.redeemed++, e === m.Fe.CONVERTED && (p.redeemed++, p.converted++)
     });
-    let S = p.sent === E.Q,
+    let T = p.sent === E.Q,
       A = h.Z.getArticleURL(O.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: C
@@ -187,9 +187,9 @@ let R = e => {
             variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
             className: I.expandedProgressBarHeader,
             children: (0, y.$s)({
-              hasSentAll: S
+              hasSentAll: T
             })
-          }), (0, r.jsx)(D, {
+          }), (0, r.jsx)(w, {
             userRecords: f
           }), (0, r.jsx)(c.Text, {
             variant: t ? "text-sm/normal" : "text-lg/medium",
@@ -205,17 +205,17 @@ let R = e => {
               "data-migration-pending": true,
               className: I.expandedProgressBarSelectFriendsCTA,
               color: l.Tt.CUSTOM,
-              onClick: () => w({
+              onClick: () => D({
                 analyticsLocations: C
               }),
               onlyShineOnHover: true,
               children: (0, r.jsxs)("div", {
                 className: I.expandedProgressBarSelectFriendsCTAInner,
                 children: [(0, r.jsx)("img", {
-                  src: T,
+                  src: S,
                   alt: "",
                   className: I.expandedProgressBarSelectFriendsIcon
-                }), S ? v.intl.string(v.t.SY9tyI) : v.intl.string(v.t.Lm2nFc)]
+                }), T ? v.intl.string(v.t.SY9tyI) : v.intl.string(v.t.Lm2nFc)]
               })
             })
           })]

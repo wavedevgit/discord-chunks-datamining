@@ -63,16 +63,16 @@ function P(e, t) {
   return n
 }
 
-function D(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e) {
+function D(e) {
   return (0, r.jsx)(v.Z, {
     className: C.button,
-    "aria-label": S.intl.string(S.t.Z1RnTk),
+    "aria-label": T.intl.string(T.t.Z1RnTk),
     isActive: false,
     noHover: true,
     onClick: e.onClick,
@@ -95,9 +95,9 @@ function L(e) {
     var t;
     i(), null == (t = e.onClick) || t.call(e)
   };
-  return (0, r.jsx)(v.Z, D(R({
+  return (0, r.jsx)(v.Z, w(R({
     className: C.button,
-    "aria-label": S.intl.string(S.t.Z1RnTk),
+    "aria-label": T.intl.string(T.t.Z1RnTk),
     isActive: false,
     noHover: true,
     onClick: a
@@ -129,9 +129,9 @@ function M(e) {
     channel: l
   } = e, {
     analyticsLocations: E
-  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [v, S] = i.useState(false), C = (0, a.e7)([m.Z], () => !(null === m.Z || true === m.Z ? true : m.Z.hasLayers())), N = (0, a.e7)([g.default], () => g.default.getCurrentUser()), R = null != N ? b.default.age(N.id) : 0, {
+  } = (0, u.ZP)(c.Z.GIFT_BUTTON), [v, T] = i.useState(false), C = (0, a.e7)([m.Z], () => !(null === m.Z || true === m.Z ? true : m.Z.hasLayers())), N = (0, a.e7)([g.default], () => g.default.getCurrentUser()), R = null != N ? b.default.age(N.id) : 0, {
     giftBoxAnimation: P,
-    trinketsAnimation: D
+    trinketsAnimation: w
   } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, M = null != n.firstTimeNotice && !s && C && R >= x, [k, j] = (0, f.XR)(M ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), U = null != k, G = v || U, B = (0, y.Ft)(l), Z = (0, p.IH)();
   if (s) return null;
   let F = () => {
@@ -149,14 +149,14 @@ function M(e) {
       })
     },
     V = () => {
-      S(false), j(T.L.TAKE_ACTION), F()
+      T(false), j(S.L.TAKE_ACTION), F()
     },
-    H = true !== P ? (0, r.jsx)(w, {
+    H = true !== P ? (0, r.jsx)(D, {
       config: P,
       hovered: G,
       onClick: V
-    }) : true !== D && Z ? (0, r.jsx)(L, {
-      config: D,
+    }) : true !== w && Z ? (0, r.jsx)(L, {
+      config: w,
       hovered: G,
       onClick: V
     }) : (0, r.jsx)(O.Z, {
@@ -166,13 +166,13 @@ function M(e) {
   return (0, r.jsx)("div", {
     className: A.container,
     onMouseEnter: () => {
-      v || S(true)
+      v || T(true)
     },
     onMouseLeave: () => {
-      S(false)
+      T(false)
     },
     children: true !== n.firstTimeNotice && U ? (0, r.jsx)(h.Z, {
-      onComplete: () => S(false),
+      onComplete: () => T(false),
       onCheckItOutClick: F,
       markAsDismissed: j,
       config: n.firstTimeNotice,

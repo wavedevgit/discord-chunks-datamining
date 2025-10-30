@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   AG: () => R,
-  Z$: () => w,
+  Z$: () => D,
   jH: () => P,
   zH: () => L
 }), require("./388685.js");
@@ -79,8 +79,8 @@ function I(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let T = Chunk647438.lazy(() => Promise.all([require.e("3115"), require.e("28102")]).then(require.bind(require, 534828))),
-  S = 7,
+let S = Chunk647438.lazy(() => Promise.all([require.e("3115"), require.e("28102")]).then(require.bind(require, 534828))),
+  T = 7,
   A = () => Promise.resolve();
 
 function C(e) {
@@ -101,14 +101,14 @@ function N(e) {
     gradientStart: y,
     gradientEnd: v,
     gradientDegrees: I = 180
-  } = e, T = (0, s.JA)("color-".concat(t)), S = {};
+  } = e, S = (0, s.JA)("color-".concat(t)), T = {};
   if (m && null != y && null != v) {
     let e = (0, c.Rf)(y),
       t = (0, c.Rf)(v);
-    S = {
+    T = {
       background: "linear-gradient(".concat(I, "deg, ").concat(e, ", ").concat(t, ")")
     }
-  } else S = {
+  } else T = {
     backgroundColor: null != t ? (0, c.Rf)(t) : d.backgroundColor
   };
   let A = m ? y : t,
@@ -140,9 +140,9 @@ function N(e) {
         start: y,
         end: v
       } : t),
-      style: b({}, d, S),
-      "aria-label": null != E ? E : m ? "Gradient ".concat(y, "-").concat(v) : S.backgroundColor
-    }, T), {
+      style: b({}, d, T),
+      "aria-label": null != E ? E : m ? "Gradient ".concat(y, "-").concat(v) : T.backgroundColor
+    }, S), {
       children: [i ? (0, r.jsx)(f.vdY, {
         size: "custom",
         className: g.colorPickerDropper,
@@ -190,7 +190,7 @@ class P extends Chunk647438.PureComponent {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     value: t,
     eagerUpdate: n = false,
@@ -202,7 +202,7 @@ function D(e) {
     showEyeDropper: E,
     wrapperComponentType: y,
     className: v
-  } = e, I = (0, _.Z)(), A = C(t), N = null != A ? A : 0, R = (0, c.Rf)(N), P = (0, c.O)(N), [D, w] = i.useState({
+  } = e, I = (0, _.Z)(), A = C(t), N = null != A ? A : 0, R = (0, c.Rf)(N), P = (0, c.O)(N), [w, D] = i.useState({
     current: N,
     pending: {
       hex: R,
@@ -211,10 +211,10 @@ function D(e) {
     input: R
   });
   i.useEffect(() => {
-    if (null == A || A === D.current) return;
+    if (null == A || A === w.current) return;
     let e = (0, c.Rf)(A),
       t = (0, c.O)(A);
-    w({
+    D({
       current: A,
       pending: {
         hex: e,
@@ -222,15 +222,15 @@ function D(e) {
       },
       input: e
     })
-  }, [A, D]), i.useEffect(() => s, [s]);
+  }, [A, w]), i.useEffect(() => s, [s]);
   let L = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
-      if (!(0, c.FX)(t)) return void w(e => O(b({}, e), {
+      if (!(0, c.FX)(t)) return void D(e => O(b({}, e), {
         input: t
       }));
       let n = (0, c._i)(t),
         r = (0, c.O)(n);
-      w({
+      D({
         current: n,
         pending: {
           hex: t,
@@ -247,7 +247,7 @@ function D(e) {
         L(e)
       } catch (e) {}
     }, M = i.useCallback(e => {
-      w(t => O(b({}, t), {
+      D(t => O(b({}, t), {
         pending: e,
         input: e.hex
       })), n && a((0, c._i)(e.hex))
@@ -256,7 +256,7 @@ function D(e) {
     }, j = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.Suspense, {
         fallback: null,
-        children: (0, r.jsx)(T, {
+        children: (0, r.jsx)(S, {
           onChange: M,
           onChangeComplete: e => {
             let {
@@ -264,12 +264,12 @@ function D(e) {
             } = e;
             return k(t)
           },
-          color: D.pending.hsl
+          color: w.pending.hsl
         })
       }), p, (0, r.jsx)(f.oil, {
-        value: D.input.slice(1),
+        value: w.input.slice(1),
         onChange: L,
-        maxLength: S - 1,
+        maxLength: T - 1,
         leading: "#",
         trailing: E && null != I ? {
           icon: f.ilE,
@@ -294,7 +294,7 @@ function D(e) {
     children: j
   })
 }
-let w = Chunk647438.memo(D);
+let D = Chunk647438.memo(w);
 
 function L(e) {
   let {
@@ -313,7 +313,7 @@ function L(e) {
     renderGradientCustomButton: E,
     gradientDegrees: y,
     allowBlackCustomColor: I
-  } = e, T = e => (0, r.jsx)("div", {
+  } = e, S = e => (0, r.jsx)("div", {
     className: g.colorPickerRow,
     children: m ? e.map(e => (0, r.jsx)(N, {
       gradientStart: e.start,
@@ -332,7 +332,7 @@ function L(e) {
       disabled: d,
       isGradient: false
     }, e))
-  }), S = a.slice(0, a.length / 2), C = a.slice(a.length / 2, a.length), R = (0, l.ZP)({
+  }), T = a.slice(0, a.length / 2), C = a.slice(a.length / 2, a.length), R = (0, l.ZP)({
     id: "color-picker",
     isEnabled: true,
     scrollToStart: A,
@@ -378,7 +378,7 @@ function L(e) {
               disabled: d
             })
           }), (0, r.jsxs)("div", {
-            children: [T(S), T(C)]
+            children: [S(T), S(C)]
           })]
         }))
       }

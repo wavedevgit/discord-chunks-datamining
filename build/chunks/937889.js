@@ -117,7 +117,7 @@ function E(e, t, n) {
     messageId: t.id,
     channelId: t.channel_id,
     authorId: null == (r = t.author) ? true : r.id
-  }) : f, true, m(t, n), (e, n) => (Array.isArray(e) || (e = [e]), o && (e = N(e, (null != u ? u : t).embeds)), s || (e = I(e, n)), e = b(e), t.embeds.length > 0 && (d = S(e, n)), s && (e = R(e)), null != l && (e = l(e, n)), e));
+  }) : f, true, m(t, n), (e, n) => (Array.isArray(e) || (e = [e]), o && (e = N(e, (null != u ? u : t).embeds)), s || (e = I(e, n)), e = b(e), t.embeds.length > 0 && (d = T(e, n)), s && (e = R(e)), null != l && (e = l(e, n)), e));
   return {
     hasSpoilerEmbeds: d,
     content: _
@@ -164,10 +164,10 @@ function v(e, t, n) {
 }
 
 function I(e, t) {
-  return t ? T(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = T(e[0].content)), e)
+  return t ? S(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = S(e[0].content)), e)
 }
 
-function T(e) {
+function S(e) {
   if (e.some(e => "emoji" !== e.type && "customEmoji" !== e.type && "soundboard" !== e.type && ("string" != typeof e.content || "" !== e.content.trim()))) return e;
   let t = 0;
   return e.forEach(e => {
@@ -177,7 +177,7 @@ function T(e) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   return t ? C(e) : "paragraph" === e[0].type && e[0].content instanceof Array && C(e[0].content)
 }
 

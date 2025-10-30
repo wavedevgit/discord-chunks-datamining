@@ -2,7 +2,7 @@
 /** chunk id: 607841, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./539854.js"), require("./388685.js");
 var Chunk147913 = require("./147913.js"),
   Chunk43267 = require("./43267.js"),
@@ -93,7 +93,7 @@ function I(e, t) {
   }
 }
 
-function T(e) {
+function S(e) {
   return null != e ? v(f.ZP.getGuildIconURL({
     id: e.id,
     icon: e.icon,
@@ -101,9 +101,9 @@ function T(e) {
   })) : true
 }
 
-function S(e) {
+function T(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    n = T(e),
+    n = S(e),
     r = g.Z5c.CHANNEL(e.id),
     i = [{
       id: r,
@@ -168,7 +168,7 @@ function C(e) {
 
 function N() {
   if (!b()) return;
-  let e = Chunk430824.Z.getGuildsArray().map(e => S(e)),
+  let e = Chunk430824.Z.getGuildsArray().map(e => T(e)),
     t = [],
     n = Chunk592125.Z.getMutablePrivateChannels();
   for (let e in require) {
@@ -200,7 +200,7 @@ function P(e) {
         l = r[n];
       if (null != l) l.push(o);
       else {
-        let i = T(e),
+        let i = S(e),
           a = [o];
         t.push({
           id: n,
@@ -211,7 +211,7 @@ function P(e) {
     } else n.push(a.id);
   t.length > 0 && h.Z.indexDomains(t), n.length > 0 && h.Z.deleteSearchItems(n)
 }
-class D extends Chunk147913.Z {
+class w extends Chunk147913.Z {
   handleInit() {
     C(Chunk944486.Z.getCurrentlySelectedChannelId()), y() && Chunk495527.Z.clearSearchIndex(), b() && N()
   }
@@ -232,7 +232,7 @@ class D extends Chunk147913.Z {
     if (!b() || !l.Z.can(g.Plq.VIEW_CHANNEL, n)) return;
     let r = s.Z.getGuild(n.guild_id);
     if (null == r && null != n.guild_id) return;
-    let i = T(r);
+    let i = S(r);
     h.Z.indexDomains([{
       id: null != (t = null == r ? true : r.id) ? t : g.ME,
       items: [I(n, r)],
@@ -258,7 +258,7 @@ class D extends Chunk147913.Z {
     } = e;
     if (b()) {
       let e = s.Z.getGuild(t.id);
-      null != e ? h.Z.indexDomains([S(e, "GUILD_UPDATE" === n)]) : h.Z.deleteSearchDomains([t.id])
+      null != e ? h.Z.indexDomains([T(e, "GUILD_UPDATE" === n)]) : h.Z.deleteSearchDomains([t.id])
     }
   }
   handleGuildDelete(e) {
@@ -306,4 +306,4 @@ class D extends Chunk147913.Z {
     })
   }
 }
-let w = new D
+let D = new w

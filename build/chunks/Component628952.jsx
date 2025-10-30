@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -70,13 +70,13 @@ let C = e => {
     price: a,
     onSelect: s,
     shouldDisplayHeader: I = false,
-    className: S
+    className: T
   } = e, {
     product: C
   } = (0, m.T)(t, true), {
     giftRecipient: N,
     giftRecipientError: R
-  } = (0, f.wD)(), P = (0, u.e7)([h.default], () => h.default.getCurrentUser()), D = (0, y.kd)(C), w = i.useRef(null);
+  } = (0, f.wD)(), P = (0, u.e7)([h.default], () => h.default.getCurrentUser()), w = (0, y.kd)(C), D = i.useRef(null);
   if (null == C) return null;
   let [L] = C.items;
   l()(null != L, "Product item should not be empty");
@@ -98,15 +98,15 @@ let C = e => {
       null != t && null != s && s(t)
     };
   return (0, r.jsxs)("div", {
-    className: S,
+    className: T,
     children: [I && (0, r.jsx)("div", {
       className: v.previewTitleContainer,
       children: (0, r.jsx)(d.gNt, {
         label: O.intl.string(O.t.PpoJzt),
         children: M && (0, r.jsx)(d.yRy, {
-          targetElementRef: w,
+          targetElementRef: D,
           preload: () => (0, p.Z)(N.id, N.getAvatarURL(null, 80)),
-          renderPopout: e => (0, r.jsx)(_.Z, A(T({}, e), {
+          renderPopout: e => (0, r.jsx)(_.Z, A(S({}, e), {
             user: N,
             pendingAvatar: N.getAvatarURL(null, (0, d.pxk)(d.EFr.SIZE_80)),
             pendingAvatarDecoration: (0, g.M)(L) ? L : null,
@@ -117,9 +117,9 @@ let C = e => {
           })),
           align: "center",
           position: "right",
-          children: e => (0, r.jsx)(d.P3F, A(T({}, e), {
+          children: e => (0, r.jsx)(d.P3F, A(S({}, e), {
             className: v.previewLink,
-            innerRef: w,
+            innerRef: D,
             children: (0, r.jsx)(d.Text, {
               variant: "text-xs/medium",
               color: "text-link",
@@ -144,7 +144,7 @@ let C = e => {
           className: v.previewTextContainer,
           children: [(0, r.jsx)(d.Text, {
             variant: "text-md/semibold",
-            children: D
+            children: w
           }), (0, r.jsx)(d.Heading, {
             variant: "heading-sm/medium",
             color: "header-secondary",

@@ -102,7 +102,7 @@ let Z = () => {
     let a = (0, E.Px)(n);
     return (0, r.jsx)("img", {
       src: t,
-      className: w.logo,
+      className: D.logo,
       alt: a
     })
   },
@@ -113,18 +113,18 @@ let Z = () => {
       column2: i
     } = e;
     return (0, r.jsxs)("tr", {
-      className: o()(w.headerRow, w.rowBottomBorder, w.topBorderRadius),
+      className: o()(D.headerRow, D.rowBottomBorder, D.topBorderRadius),
       children: [(0, r.jsx)("th", {
         scope: "col",
-        className: w.headerLabelCell,
+        className: D.headerLabelCell,
         children: t
       }), (0, r.jsx)("th", {
         scope: "col",
-        className: w.headerCell,
+        className: D.headerCell,
         children: n
       }), (0, r.jsx)("th", {
         scope: "col",
-        className: o()(w.headerCell, w.topBorderRadius),
+        className: o()(D.headerCell, D.topBorderRadius),
         children: i
       })]
     })
@@ -141,27 +141,27 @@ let Z = () => {
       shortRow: u = false
     } = e;
     return (0, r.jsxs)("tr", {
-      className: o()(w.row, {
-        [w.wideRow]: c,
-        [w.topBorderRadius]: s,
-        [w.bottomBorderRadius]: l,
-        [w.rowBottomBorder]: a,
-        [w.shortRow]: u
+      className: o()(D.row, {
+        [D.wideRow]: c,
+        [D.topBorderRadius]: s,
+        [D.bottomBorderRadius]: l,
+        [D.rowBottomBorder]: a,
+        [D.shortRow]: u
       }),
       children: [(0, r.jsx)("th", {
         scope: "row",
-        className: w.labelCell,
+        className: D.labelCell,
         children: t
       }), (0, r.jsx)("td", {
-        className: o()(w.cell, {
-          [w.buttonsCell]: c
+        className: o()(D.cell, {
+          [D.buttonsCell]: c
         }),
         children: n
       }), (0, r.jsx)("td", {
-        className: o()(w.cell, {
-          [w.topBorderRadius]: s,
-          [w.bottomBorderRadius]: l,
-          [w.buttonsCell]: c
+        className: o()(D.cell, {
+          [D.topBorderRadius]: s,
+          [D.bottomBorderRadius]: l,
+          [D.buttonsCell]: c
         }),
         children: i
       })]
@@ -204,10 +204,10 @@ let Z = () => {
         location: "PlanComparisonTable"
       });
     if (!G || !W) return null;
-    let eu = ec ? D.intl.string(D.t.XXENra) : D.intl.string(D.t.ED4UVD),
+    let eu = ec ? w.intl.string(w.t.XXENra) : w.intl.string(w.t.ED4UVD),
       ed = {
         label: (0, r.jsx)(u.Heading, {
-          className: w.__invalid_textColor,
+          className: D.__invalid_textColor,
           variant: "heading-lg/extrabold",
           children: eu
         }),
@@ -229,35 +229,35 @@ let Z = () => {
     }) : es.push({
       label: null,
       column1: (0, r.jsxs)(r.Fragment, {
-        children: [J === P.Si.TIER_2 || el ? (0, r.jsx)(S.Z, {
-          className: w.button,
+        children: [J === P.Si.TIER_2 || el ? (0, r.jsx)(T.Z, {
+          className: D.button,
           subscriptionTier: P.Si.TIER_0,
           showIcon: false,
           look: c.iL.OUTLINED,
           color: z ? c.Tt.BRAND : c.Tt.WHITE
-        }) : (0, r.jsx)(S.Z, {
-          className: w.button,
+        }) : (0, r.jsx)(T.Z, {
+          className: D.button,
           subscriptionTier: P.Si.TIER_0,
           showIcon: false
-        }), $ === P.PremiumTypes.TIER_2 || null != J ? null : (0, r.jsx)(T.Z, {
-          className: w.button,
+        }), $ === P.PremiumTypes.TIER_2 || null != J ? null : (0, r.jsx)(S.Z, {
+          className: D.button,
           subscriptionTier: P.Si.TIER_0
         })]
       }),
       column2: (0, r.jsxs)(r.Fragment, {
-        children: [J === P.Si.TIER_0 ? (0, r.jsx)(S.Z, {
-          className: w.button,
+        children: [J === P.Si.TIER_0 ? (0, r.jsx)(T.Z, {
+          className: D.button,
           subscriptionTier: P.Si.TIER_2,
           showIcon: false,
           look: c.iL.OUTLINED,
           color: z ? c.Tt.BRAND : c.Tt.WHITE
-        }) : (0, r.jsx)(S.Z, {
-          className: w.button,
+        }) : (0, r.jsx)(T.Z, {
+          className: D.button,
           subscriptionTier: P.Si.TIER_2,
           showIcon: false,
           hasActivePromotion: el
-        }), $ === P.PremiumTypes.TIER_0 || null != J ? null : (0, r.jsx)(T.Z, {
-          className: w.button,
+        }), $ === P.PremiumTypes.TIER_0 || null != J ? null : (0, r.jsx)(S.Z, {
+          className: D.button,
           subscriptionTier: P.Si.TIER_2
         })]
       }),
@@ -265,30 +265,30 @@ let Z = () => {
       withBottomBorderRadius: true,
       buttonsRow: null == J
     }), n = x ? null : null != J || null != $ ? (0, r.jsx)(N.Cy, {
-      text: null != J ? D.intl.string(D.t.IBYG5U) : D.intl.string(D.t.ce1v3V),
-      className: w.freeTrialPillWithSparkles,
+      text: null != J ? w.intl.string(w.t.IBYG5U) : w.intl.string(w.t.ce1v3V),
+      className: D.freeTrialPillWithSparkles,
       colorOptions: J === P.Si.TIER_0 ? z ? N.VE.PREMIUM_TIER_0_GRADIENT_FILL : N.VE.PREMIUM_TIER_0_WHITE_FILL : z ? X ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_WHITE_FILL
     }) : el ? (0, r.jsx)(Z, {}) : (0, r.jsx)(F, {});
     let ef = J === P.Si.TIER_0 || $ === P.PremiumTypes.TIER_0 || k === P.PremiumTypes.TIER_0;
     return (0, r.jsx)(_.Gt, {
       value: j,
       children: (0, r.jsxs)("div", {
-        className: o()(w.root, a),
+        className: o()(D.root, a),
         "data-testid": "v2-marketing-page-comparison-table",
         children: [(0, r.jsx)(u.Heading, {
-          className: o()(w.titleText, w.__invalid_textColor),
+          className: o()(D.titleText, D.__invalid_textColor),
           variant: "heading-xxl/extrabold",
-          children: null != L ? L : D.intl.string(D.t.FIbMh9)
+          children: null != L ? L : w.intl.string(w.t.FIbMh9)
         }), (0, r.jsxs)("div", {
-          className: w.tableWrapper,
+          className: D.tableWrapper,
           children: [(0, r.jsx)("div", {
             className: o()(M, {
-              [w.tier0ColumnOuter]: ef,
-              [w.tier2ColumnOuter]: !ef
+              [D.tier0ColumnOuter]: ef,
+              [D.tier2ColumnOuter]: !ef
             }),
             children: !ef && n
           }), (0, r.jsxs)("table", {
-            className: w.table,
+            className: D.table,
             children: [(0, r.jsx)("thead", {
               children: (0, r.jsx)(H, U({}, ed))
             }), (0, r.jsx)("tbody", {

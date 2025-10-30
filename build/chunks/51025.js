@@ -6,13 +6,13 @@ require.d(exports, {
   LO: () => y,
   S1: () => E,
   Wx: () => P,
-  XT: () => D,
+  XT: () => w,
   al: () => N,
   cG: () => O,
   li: () => I,
   ob: () => b,
-  pC: () => T,
-  v4: () => S,
+  pC: () => S,
+  v4: () => T,
   wO: () => A,
   wi: () => R
 }), require("./415506.js");
@@ -127,7 +127,7 @@ function I(e, t, n, r) {
   })
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let r = a.Z.getApplication(e);
   null != r && (f.Z.removeShortcuts(r.name), u.default.track(h.rMx.LIBRARY_UNINSTALL_INITIATED, {
     application_id: r.id,
@@ -141,7 +141,7 @@ function T(e, t, n) {
   })
 }
 
-function S() {
+function T() {
   Chunk830168.Z.resume()
 }
 
@@ -178,7 +178,7 @@ function P(e, t) {
   null != n && f.Z.createShortcuts(l.Xc.getSetting(), l.Pe.getSetting(), n.name, n.id, t.installPath)
 }
 
-function D(e, t) {
+function w(e, t) {
   let i = a.Z.getApplication(e);
   r.tn.post({
     url: h.ANM.LIBRARY_APPLICATION_INSTALLED(e, e),

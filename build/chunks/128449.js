@@ -4,7 +4,7 @@
 require.d(exports, {
   AF: () => O,
   BP: () => E,
-  Cf: () => S,
+  Cf: () => T,
   Gj: () => v,
   Hk: () => d,
   KL: () => y,
@@ -80,10 +80,10 @@ var v = function(e) {
   return e[e.Clans = _] = "Clans", e[e.Hub = f] = "Hub", e[e.Communities = d] = "Communities", e[e.Activity = 1] = "Activity", e[e.Music = 2] = "Music", e[e.Television = 3] = "Television", e[e.Science = 5] = "Science", e[e.Education = 6] = "Education", e
 }({});
 let I = [1, 2, 3, 5, 6],
-  T = ["en-GB"];
+  S = ["en-GB"];
 
-function S() {
-  return (0, Chunk388032.getLanguages)().filter(e => !T.includes(e.code)).map(e => "en-US" === e.code ? l(o({}, e), {
+function T() {
+  return (0, Chunk388032.getLanguages)().filter(e => !S.includes(e.code)).map(e => "en-US" === e.code ? l(o({}, e), {
     name: i.intl.string(i.t.LQLMGP)
   }) : e)
 }

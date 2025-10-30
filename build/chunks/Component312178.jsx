@@ -1,7 +1,7 @@
 /** Chunk was on 63141 **/
 /** chunk id: 312178, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -39,7 +39,7 @@ let E = {
       dragStart: o,
       className: l
     } = e;
-    return (0, i.jsx)(O.Z, {
+    return (0, i.jsx)(y.Z, {
       dragStart: o,
       locked: n,
       pinned: r,
@@ -67,7 +67,7 @@ let E = {
       locked: o,
       pinned: l
     } = e;
-    return (0, i.jsx)(_.Z, {
+    return (0, i.jsx)(O.Z, {
       anchor: n,
       id: t,
       locked: o,
@@ -94,7 +94,7 @@ let E = {
 };
 class S extends Chunk647438.PureComponent {
   componentDidUpdate(e) {
-    this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (s.Z.track(v.rMx.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
+    this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (a.Z.track(v.rMx.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
       lastLayoutUpdate: null
     }))
   }
@@ -108,7 +108,7 @@ class S extends Chunk647438.PureComponent {
         dragging: o
       }
     } = this, l = E[e.type];
-    return null == l ? null : s => l({
+    return null == l ? null : a => l({
       id: e.id,
       locked: i,
       pinned: e.pinned,
@@ -116,7 +116,7 @@ class S extends Chunk647438.PureComponent {
       isPreviewingInGame: r,
       anchor: t,
       size: n,
-      dragStart: s
+      dragStart: a
     })
   }
   render() {
@@ -130,15 +130,15 @@ class S extends Chunk647438.PureComponent {
     } = this.props;
     if (null == module || null == exports) return null;
     let {
-      id: s,
-      pinned: a,
+      id: a,
+      pinned: s,
       zIndex: d,
       size: u,
       anchor: h,
       minSize: f
     } = module, g = (0, Chunk434529.w_)(Chunk237997, require), m = (0, Chunk434529.KR)(Chunk451478, require), {
-      resizeX: O,
-      resizeY: _,
+      resizeX: y,
+      resizeY: O,
       dragAnywhere: v
     } = exports, b = (0, Chunk906037.eM)({
       locked: Chunk647438,
@@ -181,23 +181,23 @@ class S extends Chunk647438.PureComponent {
           layoutSize: o
         },
         state: {
-          lastLayoutUpdate: s
+          lastLayoutUpdate: a
         }
       } = this;
       if (!(0, f.validResolution)(o)) return;
-      let a = (0, p.jL)(n, o),
+      let s = (0, p.jL)(n, o),
         u = (0, p.Ox)(i, o);
       (0, l.Os)(t), (0, l.nv)({
         widgetId: t,
-        anchor: a,
+        anchor: s,
         size: u
       });
       let h = e === c.B.MOVE,
         g = (0, p.PY)(n, o.width, o.height, r.width, r.height);
       this.setState({
         lastLayoutUpdate: {
-          was_resized: null != s && s.was_resized || !h,
-          was_dragged: null != s && s.was_dragged || h,
+          was_resized: null != a && a.was_resized || !h,
+          was_dragged: null != a && a.was_dragged || h,
           widget_type: d.Z.getWidgetType(t),
           window_width: o.width,
           window_height: o.height,
@@ -216,14 +216,14 @@ class S extends Chunk647438.PureComponent {
       let {
         widget: e
       } = this.props;
-      null != e && (e.pinned && s.Z.setPreviewInGameMode(true), this.setState({
+      null != e && (e.pinned && a.Z.setPreviewInGameMode(true), this.setState({
         dragging: true
       }))
     }), b(this, "handleDragEnd", () => {
       let {
         widget: e
       } = this.props;
-      null != e && (e.pinned && s.Z.setPreviewInGameMode(false), this.setState({
+      null != e && (e.pinned && a.Z.setPreviewInGameMode(false), this.setState({
         dragging: false
       }))
     })
@@ -248,7 +248,7 @@ function Z(e, t) {
     layoutSize: t
   }, e)
 }
-let j = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk451478.Z], () => {
+let C = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk451478.Z], () => {
   var e;
   return {
     layout: null != (e = Chunk355863.Z.getLayout(Chunk145597.OVERLAY_LAYOUT_ID)) ? module : true,

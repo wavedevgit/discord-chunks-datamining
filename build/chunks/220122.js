@@ -13,8 +13,9 @@ var Chunk481060 = require("./481060.js"),
   Chunk474639 = require("./474639.js"),
   Chunk435064 = require("./435064.js"),
   Chunk779618 = require("./779618.js"),
-  Chunk39604 = require("./39604.js"),
-  Chunk356659 = require("./356659.js"),
+  Chunk39604 = require("./39604.js");
+require("./460779.js");
+var Chunk356659 = require("./356659.js"),
   Chunk388032 = require("./388032.jsx");
 let h = "CLIPS_IN_CALL_WARNING";
 class m extends Chunk474639.Z {
@@ -67,6 +68,12 @@ class m extends Chunk474639.Z {
     Chunk39604.em({
       clipsEnabled: false,
       trackAnalytics: false
+    })
+  }
+  loadClipsFromStorage() {
+    let e = Chunk435064.Z.getSettings().storageLocation;
+    "" !== module && Chunk39604.jv(module).catch(e => {
+      _.jF.error("Failed to load clips directory on connection open", e)
     })
   }
 }

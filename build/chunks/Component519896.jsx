@@ -30,8 +30,8 @@ function g(e) {
     transitionState: v,
     onHeaderTitleClick: I
   } = e, {
-    data: T
-  } = (0, c.H)(y), S = null == T ? true : T[0], {
+    data: S
+  } = (0, c.H)(y), T = null == S ? true : S[0], {
     data: A
   } = (0, l.Z)(y), C = i.useMemo(() => {
     var e;
@@ -62,7 +62,7 @@ function g(e) {
       appId: g,
       subscriptionType: E,
       skuId: y,
-      subscriptionPlan: S,
+      subscriptionPlan: T,
       state: P
     }),
     children: (0, r.jsx)(m.i, {
@@ -75,7 +75,7 @@ function g(e) {
       }, e.id)) : true,
       description: null != (t = A.description) ? t : true,
       imgSrc: C,
-      title: null != (n = null == S ? true : S.name) ? n : A.summary,
+      title: null != (n = null == T ? true : T.name) ? n : A.summary,
       tag: (0, r.jsx)(o.Z, {
         type: E
       }),

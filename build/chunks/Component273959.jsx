@@ -54,7 +54,7 @@ function N(e) {
       let e = f.Z.getConnectedFrame();
       return {
         application: u.Z.getApplication(null == e ? true : e.applicationId),
-        isFrameInFocusedMode: f.Z.getFrameLayoutMode() === y.U.FOCUSED
+        isFrameInFocusedMode: f.Z.getFrameLayoutMode() === v.U.FOCUSED
       }
     }),
     U = null != M ? I.ZP.getApplicationIconURL({
@@ -80,23 +80,23 @@ function N(e) {
     className: T.guildIcon
   }), t = Z.name) : null != x && (x.isDM() || x.isGroupDM()) ? (t = C.intl.string(C.t.YUU0RF), G = (0, r.jsx)(c.gw7, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.ICYMI) ? (t = C.intl.string(C.t["jnXV/V"]), G = (0, r.jsx)(c.qOE, {
+  })) : N.pathname.startsWith(y.Z5c.ICYMI) ? (t = C.intl.string(C.t["jnXV/V"]), G = (0, r.jsx)(c.qOE, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.GLOBAL_DISCOVERY) ? (t = C.intl.string(C.t["4nEZLk"]), G = (0, r.jsx)(c.Jmo, {
+  })) : N.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (t = C.intl.string(C.t["4nEZLk"]), G = (0, r.jsx)(c.Jmo, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.NITRO_HOME) ? (t = C.intl.string(C.t.Ipxkog), G = (0, r.jsx)(c.SrA, {
+  })) : N.pathname.startsWith(y.Z5c.NITRO_HOME) ? (t = C.intl.string(C.t.Ipxkog), G = (0, r.jsx)(c.SrA, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.COLLECTIBLES_SHOP) ? (t = C.intl.string(C.t.pWG4ze), G = (0, r.jsx)(c.EOn, {
+  })) : N.pathname.startsWith(y.Z5c.COLLECTIBLES_SHOP) ? (t = C.intl.string(C.t.pWG4ze), G = (0, r.jsx)(c.EOn, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.ME_ACTIVITY) ? (t = C.intl.string(C.t.IC5Ann), G = (0, r.jsx)(c.g8d, {
+  })) : N.pathname.startsWith(y.Z5c.ME_ACTIVITY) ? (t = C.intl.string(C.t.IC5Ann), G = (0, r.jsx)(c.g8d, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.ME_DMS) ? (t = C.intl.string(C.t.YUU0RF), G = (0, r.jsx)(c.gw7, {
+  })) : N.pathname.startsWith(y.Z5c.ME_DMS) ? (t = C.intl.string(C.t.YUU0RF), G = (0, r.jsx)(c.gw7, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.FRIENDS) ? (t = C.intl.string(C.t.TdEu5X), G = (0, r.jsx)(c.iFz, {
+  })) : N.pathname.startsWith(y.Z5c.FRIENDS) ? (t = C.intl.string(C.t.TdEu5X), G = (0, r.jsx)(c.iFz, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.FAMILY_CENTER) ? (t = C.intl.string(S.default.RZqaJn), G = (0, r.jsx)(c.BFJ, {
+  })) : N.pathname.startsWith(y.Z5c.FAMILY_CENTER) ? (t = C.intl.string(S.default.RZqaJn), G = (0, r.jsx)(c.BFJ, {
     size: R
-  })) : N.pathname.startsWith(v.Z5c.QUEST_HOME_V2) && (t = C.intl.string(C.t.JALI2K), G = (0, r.jsx)(c.qDn, {
+  })) : N.pathname.startsWith(y.Z5c.QUEST_HOME_V2) && (t = C.intl.string(C.t.JALI2K), G = (0, r.jsx)(c.qDn, {
     size: R
   }));
   let B = i.useCallback(e => {

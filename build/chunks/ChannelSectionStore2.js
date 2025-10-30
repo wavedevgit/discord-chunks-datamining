@@ -4,7 +4,7 @@
 require.d(exports, {
   D5: () => x,
   ZP: () => J,
-  uZ: () => S
+  uZ: () => T
 });
 var r, Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
@@ -57,19 +57,19 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = "message_requests",
+let T = "message_requests",
   A = false,
   C = false,
   N = true,
   R = {},
   P = {},
-  D = false,
-  w = null;
+  w = false,
+  D = null;
 
 function L(e) {
   if (null == e) return null;
@@ -86,13 +86,13 @@ function x(e) {
 
 function M(e) {
   let t = false;
-  D && (D = false, t = true);
+  w && (w = false, t = true);
   let n = L(h.Z.getChannelId());
   return null != n && n in R && (delete R[n], t = true), t && e ? e : !e
 }
 
 function k() {
-  D && Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), C && (C = M(C)), A = M(A)
+  w && Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), C && (C = M(C)), A = M(A)
 }
 
 function j() {
@@ -110,7 +110,7 @@ function G(e) {
     baseChannelId: r,
     details: i
   } = e;
-  D = false;
+  w = false;
   let a = L(r);
   return null != a && (P[n] = {
     type: t,
@@ -134,7 +134,7 @@ function Z(e) {
     channelId: r,
     details: i
   } = e;
-  D = false;
+  w = false;
   let a = L(n);
   if (null == a) returnfalse;
   let o = {
@@ -142,7 +142,7 @@ function Z(e) {
     channelId: r,
     details: i
   };
-  return t === c.tI.VIEW_MOD_REPORT && (o = T(v({}, o), {
+  return t === c.tI.VIEW_MOD_REPORT && (o = S(v({}, o), {
     baseChannelId: n
   })), R[a] = o, true
 }
@@ -153,7 +153,7 @@ function F(e) {
     parentMessageId: n,
     location: r
   } = e;
-  D = false;
+  w = false;
   let i = L(t);
   null != i && (R[i] = {
     type: c.tI.CREATE_THREAD,
@@ -217,9 +217,9 @@ function K(e) {
 }
 
 function z() {
-  let e = null != w && Chunk171900.Z.hasSearchState(w);
-  if (module === D) returnfalse;
-  D = module
+  let e = null != D && Chunk171900.Z.hasSearchState(D);
+  if (module === w) returnfalse;
+  w = module
 }
 
 function q() {
@@ -227,7 +227,7 @@ function q() {
 }
 
 function X(e) {
-  return w = e.searchContextId, z()
+  return D = e.searchContextId, z()
 }
 class Q extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -247,7 +247,7 @@ class Q extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
   getSection(e, t) {
-    if (D) return E.ULH.SEARCH;
+    if (w) return E.ULH.SEARCH;
     let n = L(e);
     return null != n && null != R[n] ? E.ULH.SIDEBAR_CHAT : t && N ? E.ULH.PROFILE : C ? E.ULH.SUMMARIES : A ? E.ULH.MEMBERS : E.ULH.NONE
   }
@@ -260,14 +260,14 @@ class Q extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getCurrentSidebarChannelId(e) {
     let t = L(e);
-    if (null == t || D) return null;
+    if (null == t || w) return null;
     let n = R[t];
     return null == n ? null : n.type === c.tI.VIEW_THREAD || n.type === c.tI.VIEW_CHANNEL || n.type === c.tI.VIEW_MOD_REPORT ? n.channelId : null
   }
   getCurrentSidebarMessageId(e) {
     var t;
     let n = L(e);
-    if (null == n || D) return null;
+    if (null == n || w) return null;
     let r = R[n];
     return null == r ? null : r.type === c.tI.VIEW_THREAD || r.type === c.tI.VIEW_CHANNEL || r.type === c.tI.VIEW_MOD_REPORT ? null == (t = r.details) ? true : t.initialMessageId : null
   }

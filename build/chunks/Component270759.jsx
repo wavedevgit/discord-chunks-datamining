@@ -56,7 +56,7 @@ let A = function(e) {
     d.Y(T.Z5c.FRIENDS), (0, E.e)("friends")
   }, []);
   let _ = (0, o.e7)([O.Z], () => O.Z.theme),
-    A = (0, y.If)(),
+    A = (0, v.If)(),
     {
       section: Z,
       rows: w
@@ -118,7 +118,7 @@ let A = function(e) {
       ariaLabel: j.intl.string(j.t.j0wbE5),
       className: a()(P.item, P.addFriend)
     }],
-    G = v.o.useConfig({
+    G = y.o.useConfig({
       location: "people page"
     }).friendsTab,
     B = null,

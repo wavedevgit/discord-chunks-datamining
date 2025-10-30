@@ -82,20 +82,21 @@ function I(e) {
     body: n,
     assetUrl: g,
     previewUrl: b = g,
-    action: v,
-    caretConfig: I = {
+    disableMediaViewer: v = false,
+    action: I,
+    caretConfig: S = {
       position: "bottom",
       align: "center"
     },
     badge: T,
-    textLink: S,
-    onWatchVideo: A,
-    onRequestClose: C,
-    popoverRef: N
-  } = e, R = O(e, ["title", "body", "assetUrl", "previewUrl", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
-  let P = i.useRef(null),
+    textLink: A,
+    onWatchVideo: C,
+    onRequestClose: N,
+    popoverRef: R
+  } = e, P = O(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
+  let w = i.useRef(null),
     D = (0, a.j1L)(b),
-    w = i.useCallback(() => ({
+    L = i.useCallback(() => ({
       type: "VIDEO",
       url: g,
       proxyUrl: g,
@@ -104,28 +105,28 @@ function I(e) {
       height: 720,
       className: m.media
     }), [g, t]),
-    L = i.useCallback(() => {
-      null !== P.current && P.current.pause(), null == C || C()
-    }, [C]),
     x = i.useCallback(() => {
-      null !== P.current && P.current.pause(), null == C || C()
-    }, [C]),
+      null !== w.current && w.current.pause(), null == N || N()
+    }, [N]),
     M = i.useCallback(() => {
-      null !== P.current && P.current.pause();
-      let e = w();
+      null !== w.current && w.current.pause(), null == N || N()
+    }, [N]),
+    k = i.useCallback(() => {
+      null !== w.current && w.current.pause();
+      let e = L();
       (0, l.K)({
         items: [e],
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: true
-      }), null == C || C(), null == A || A()
-    }, [w, A, C]),
-    k = D ? (0, r.jsx)(a.zsu, {
+      }), null == N || N(), null == C || C()
+    }, [L, C, N]),
+    j = D ? (0, r.jsx)(a.zsu, {
       type: "image",
       src: b
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.Z, {
-        ref: P,
+        ref: w,
         src: b,
         width: 232,
         height: 131,
@@ -135,35 +136,35 @@ function I(e) {
         playsInline: true,
         controls: false,
         preload: "metadata"
-      }), (0, r.jsx)("div", {
+      }), !v && (0, r.jsx)("div", {
         className: m.playButton,
         children: (0, r.jsx)(o.JM1, {
           playing: false,
           size: "sm",
           "aria-label": h.intl.string(p.default.YpT3kk),
-          onClick: M
+          onClick: k
         })
       })]
     });
-  return (0, r.jsx)(c.m, y(E({}, R), {
-    onRequestClose: L,
+  return (0, r.jsx)(c.m, y(E({}, P), {
+    onRequestClose: x,
     hasVideo: true,
     children: (0, r.jsxs)("div", {
-      ref: N,
+      ref: R,
       children: [(0, r.jsx)(_.N, {
-        onClick: x
+        onClick: M
       }), (0, r.jsx)(d.$, {
-        caretConfig: I
+        caretConfig: S
       }), (0, r.jsx)("div", {
         className: m.assetContainer,
-        children: k
+        children: j
       }), (0, r.jsx)(f.Y, {
         title: t,
         body: n,
         badge: T,
-        textLink: S
-      }), null != v ? (0, r.jsx)(u.k, {
-        actions: [v]
+        textLink: A
+      }), null != I ? (0, r.jsx)(u.k, {
+        actions: [I]
       }) : null]
     })
   }))

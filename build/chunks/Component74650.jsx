@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 74650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => x
@@ -21,7 +21,7 @@ function x(e) {
   let {
     markAsDismissed: t,
     onCTA: n
-  } = e, x = (0, r.e7)([s.default], () => s.default.getCurrentUser()), f = (0, c.M5)(x, u.PremiumTypes.TIER_2);
+  } = e, x = (0, r.e7)([s.default], () => s.default.getCurrentUser()), g = (0, c.M5)(x, u.PremiumTypes.TIER_2);
   return (0, a.jsx)("div", {
     className: p.popup,
     children: (0, a.jsxs)("div", {
@@ -47,7 +47,7 @@ function x(e) {
           color: "text-secondary",
           children: m.intl.string(m.t["RSHtF+"])
         })]
-      }), f ? (0, a.jsx)(i.Button, {
+      }), g ? (0, a.jsx)(i.Button, {
         text: m.intl.string(m.t.LhcHi5),
         fullWidth: true,
         onClick: () => {

@@ -69,7 +69,7 @@ function c(e) {
       keywords: E,
       contains: []
     },
-    T = {
+    S = {
       begin: ".?html`",
       end: "",
       starts: {
@@ -79,7 +79,7 @@ function c(e) {
         subLanguage: "xml"
       }
     },
-    S = {
+    T = {
       begin: ".?css`",
       end: "",
       starts: {
@@ -134,7 +134,7 @@ function c(e) {
         }]
       }), e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]
     },
-    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, C, {
+    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, T, A, C, {
       match: /\$\d+/
     }, v];
   I.contains = R.concat({
@@ -144,20 +144,20 @@ function c(e) {
     contains: ["self"].concat(R)
   });
   let P = [].concat(N, I.contains),
-    D = P.concat([{
+    w = P.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
       keywords: E,
       contains: ["self"].concat(P)
     }]),
-    w = {
+    D = {
       className: "params",
       begin: /(\s*)\(/,
       end: /\)/,
       excludeBegin: true,
       excludeEnd: true,
       keywords: E,
-      contains: D
+      contains: w
     },
     L = {
       variants: [{
@@ -201,7 +201,7 @@ function c(e) {
         3: "title.function"
       },
       label: "func.def",
-      contains: [w],
+      contains: [D],
       illegal: /%/
     },
     j = {
@@ -234,7 +234,7 @@ function c(e) {
       },
       contains: [{
         begin: /\(\)/
-      }, w]
+      }, D]
     },
     F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
     V = {
@@ -244,14 +244,14 @@ function c(e) {
         1: "keyword",
         3: "title.function"
       },
-      contains: [w]
+      contains: [D]
     };
   return {
     name: "JavaScript",
     aliases: ["js", "jsx", "mjs", "cjs"],
     keywords: E,
     exports: {
-      PARAMS_CONTAINS: D,
+      PARAMS_CONTAINS: w,
       CLASS_REFERENCE: x
     },
     illegal: /#(?![$_A-z])/,
@@ -259,7 +259,7 @@ function c(e) {
       label: "shebang",
       binary: "node",
       relevance: 5
-    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, C, N, {
+    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, T, A, C, N, {
       match: /\$\d+/
     }, v, x, {
       scope: "attr",
@@ -289,7 +289,7 @@ function c(e) {
             excludeBegin: true,
             excludeEnd: true,
             keywords: E,
-            contains: D
+            contains: w
           }]
         }]
       }, {
@@ -323,7 +323,7 @@ function c(e) {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
       returnBegin: true,
       label: "func.def",
-      contains: [w, e.inherit(e.TITLE_MODE, {
+      contains: [D, e.inherit(e.TITLE_MODE, {
         begin: d,
         className: "title.function"
       })]
@@ -338,7 +338,7 @@ function c(e) {
       className: {
         1: "title.function"
       },
-      contains: [w]
+      contains: [D]
     }, G, j, L, Z, {
       match: /\$[(.]/
     }]

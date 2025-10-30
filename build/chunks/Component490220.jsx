@@ -52,25 +52,25 @@ function p(e) {
     pendingPronouns: O,
     pendingBio: v,
     tryItOutThemeColors: I,
-    tryItOutAvatar: T,
-    tryItOutBanner: S,
+    tryItOutAvatar: S,
+    tryItOutBanner: T,
     tryItOutAvatarDecoration: A,
     tryItOutDisplayNameStyles: C
   } = (0, a.cj)([c.Z], () => _({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), N = (0, l.SD)({
     userId: f.id,
-    image: null != T ? T : g
+    image: null != S ? S : g
   }), R = (0, s.Z)(A, false);
   return (0, r.jsx)(u.Z, {
     containerClassName: h,
     user: f,
     pendingPronouns: O,
     pendingBio: v,
-    pendingBanner: null != (t = null != S ? S : E) ? t : n(466045),
+    pendingBanner: null != (t = null != T ? T : E) ? t : n(466045),
     pendingDisplayNameStyles: null != C ? C : b,
     pendingAvatar: N,
     pendingThemeColors: null != I ? I : y,
     pendingAvatarDecoration: R,
-    avatarClassName: null != T || null != g || m.enabled ? true : d.spinningAvatar,
+    avatarClassName: null != S || null != g || m.enabled ? true : d.spinningAvatar,
     canUsePremiumCustomization: true,
     isTryItOutFlow: true,
     disabledInputs: p,

@@ -49,7 +49,7 @@ function M(e) {
   } = e;
   return n ? (0, r.jsx)(_.R, {
     focusSectionProps: i
-  }) : (0, r.jsx)(y.d, {
+  }) : (0, r.jsx)(v.d, {
     withFastTravel: t,
     focusSectionProps: i
   })
@@ -74,7 +74,7 @@ let k = Chunk647438.memo(function() {
   } = (0, Chunk719961.T)({
     location: "AppTitleBar"
   }), {
-    hasBugReporterAccess: y
+    hasBugReporterAccess: v
   } = Chunk174556.Z.useExperiment({
     location: "HeaderBar"
   }, {
@@ -162,7 +162,7 @@ let k = Chunk647438.memo(function() {
               return n
             })(Object(a)).forEach(function(e) {
               Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
-            }), i)), y ? (0, r.jsxs)(r.Fragment, {
+            }), i)), v ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(I.H, {
                 focusSectionProps: "HELP" === V ? e : true,
                 className: F
@@ -172,7 +172,7 @@ let k = Chunk647438.memo(function() {
             }) : (0, r.jsx)(O.Z, {
               focusSectionProps: "HELP" === V ? e : true,
               className: F
-            }), (0, r.jsx)(v.Z, {
+            }), (0, r.jsx)(y.Z, {
               className: F
             })]
           })

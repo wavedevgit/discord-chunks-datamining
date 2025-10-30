@@ -2,7 +2,7 @@
 /** chunk id: 903250, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,11 +37,11 @@ let P = (e, t) => {
       buttonClassName: i,
       subscriptionTier: a,
       isDarkMode: P,
-      isEligibleForBogoPromotion: D,
-      videoRef: w
+      isEligibleForBogoPromotion: w,
+      videoRef: D
     } = e, {
       analyticsLocations: L
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), x = (0, g._O)(), M = (0, m.Nx)(), k = (0, s.e7)([h.Z], () => h.Z.affinities), j = (0, E.Z)(), U = null != j, G = P ? l.Tt.WHITE : l.Tt.BRAND, B = k.length > 0, Z = S.intl.string(S.t.YCZldK), F = (0, p.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), x = (0, g._O)(), M = (0, m.Nx)(), k = (0, s.e7)([h.Z], () => h.Z.affinities), j = (0, E.Z)(), U = null != j, G = P ? l.Tt.WHITE : l.Tt.BRAND, B = k.length > 0, Z = T.intl.string(T.t.YCZldK), F = (0, p.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
     return (0, r.jsx)(f.Gt, {
       value: L,
       children: (0, r.jsxs)("div", {
@@ -83,7 +83,7 @@ let P = (e, t) => {
               buttonClassName: i,
               isApplicationHome: true,
               isDarkMode: P,
-              isEligibleForBogoPromotion: D
+              isEligibleForBogoPromotion: w
             }), (0, r.jsx)(v._O, {
               variant: "text-sm/normal",
               withBottomMargin: false,
@@ -99,14 +99,14 @@ let P = (e, t) => {
             poster: N.Z,
             loop: true,
             className: A.heroHeadingV2Art,
-            ref: w,
+            ref: D,
             children: (0, r.jsx)("source", {
               src: F ? C.Z : R.Z,
-              type: F ? T.m.MP4 : T.m.WEBM
+              type: F ? S.m.MP4 : S.m.WEBM
             })
           })
         })]
       })
     })
   },
-  D = Chunk647438.forwardRef(P)
+  w = Chunk647438.forwardRef(P)

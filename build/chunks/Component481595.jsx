@@ -95,11 +95,11 @@ function U(e) {
     eo = null != Z ? Z : I.c,
     es = null != ea ? ea[eo] : null;
   o()(null != er, "SKU must exist and be fetched."), o()(null != U, "Application must exist.");
-  let el = (0, l.e7)([h.Z, T.Z], () => T.Z.inTestModeForApplication(U.id) || h.Z.inDevModeForApplication(U.id), [U.id]),
+  let el = (0, l.e7)([h.Z, S.Z], () => S.Z.inTestModeForApplication(U.id) || h.Z.inDevModeForApplication(U.id), [U.id]),
     ec = (0, l.e7)([y.Z], () => y.Z.enabled),
     eu = s.M.EEA_COUNTRIES.has(O.Z.ipCountryCodeWithFallback),
     ed = G === P.A.PURCHASING || G === P.A.COMPLETED,
-    ef = (0, D.m)(B, Z),
+    ef = (0, w.m)(B, Z),
     e_ = null != ef ? ef.type : null;
   i.useEffect(() => {
     en && Z === et && et !== I.c && null == es && (0, u.x2)(er.applicationId, er.id, et, {
@@ -118,13 +118,13 @@ function U(e) {
     children: [(0, r.jsx)(E.Y, {
       paymentRestrictionBannerType: ep
     }), el ? (0, r.jsx)(f.Z, {
-      icon: (0, c.GSL)(S.Z),
+      icon: (0, c.GSL)(T.Z),
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.WARNING,
       className: k.errorBlock,
       children: M.intl.string(M.t.OvMyMd)
     }, "TEST_MODE") : null, (0, A.yE)(U.flags, x.udG.EMBEDDED) && q === h.O.ERROR ? (0, r.jsx)(f.Z, {
-      icon: (0, c.GSL)(S.Z),
+      icon: (0, c.GSL)(T.Z),
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.ERROR,
       className: k.errorBlock,
@@ -133,7 +133,7 @@ function U(e) {
       application: U,
       sku: er,
       isEmbeddedIAP: W
-    }), em && (0, r.jsx)(w.Z, {
+    }), em && (0, r.jsx)(D.Z, {
       sku: er
     }), null != $ ? (0, r.jsx)(b.s, {
       giftRecipient: $

@@ -225,13 +225,13 @@ let v = new Chunk710845.Z("MarkdownToSlate"),
       after: ""
     }
   },
-  T = new Set(["*", "_", "\\"]),
-  S = {},
+  S = new Set(["*", "_", "\\"]),
+  T = {},
   A = {};
 for (let e in Chunk428595.Z.RULES) {
   if (!(module in I)) throw Error("Slate: Unknown markdown rule: ".concat(module, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
   let t = I[module];
-  "skip" !== exports.type && (S[module] = C(Chunk428595.Z.RULES[module])), "skip" !== exports.type && "inlineObject" !== exports.type && (A[module] = C("text" === module ? Chunk594199.ZP : Chunk428595.Z.RULES[module]))
+  "skip" !== exports.type && (T[module] = C(Chunk428595.Z.RULES[module])), "skip" !== exports.type && "inlineObject" !== exports.type && (A[module] = C("text" === module ? Chunk594199.ZP : Chunk428595.Z.RULES[module]))
 }
 
 function C(e) {
@@ -296,10 +296,10 @@ let R = {
     }
   },
   P = /(-# +)/,
-  D = (0, Chunk364458.Z)([S, R]),
-  w = (0, Chunk364458.Z)([A, R]),
-  L = Chunk25209._p(D),
-  x = Chunk25209._p(w),
+  w = (0, Chunk364458.Z)([T, R]),
+  D = (0, Chunk364458.Z)([A, R]),
+  L = Chunk25209._p(w),
+  x = Chunk25209._p(D),
   M = {
     max: 1 / 0,
     maxAge: +Chunk70956.Z.Millis.MINUTE,
@@ -593,13 +593,13 @@ function W(e, t) {
 }
 
 function K(e, t, n) {
-  if (t.split("").some(e => T.has(e))) return v.error(e), n;
+  if (t.split("").some(e => S.has(e))) return v.error(e), n;
   throw Error(e)
 }
 
 function z(e, t, n, r) {
   for (; n < r;)
-    if (T.has(t[n])) n = H(e, t, t[n], n, "syntaxBefore"), n = W(t, n);
+    if (S.has(t[n])) n = H(e, t, t[n], n, "syntaxBefore"), n = W(t, n);
     else break;
   return n
 }

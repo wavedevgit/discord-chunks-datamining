@@ -27,16 +27,16 @@ let p = (0, Chunk460181.uk)("poggermode_applause", Chunk474873.Z.getSoundpack())
   I = () => {
     b || (p.loop(), b = true)
   },
-  T = () => {
+  S = () => {
     p.stop(), b = false
   },
-  S = () => {
+  T = () => {
     let e = Chunk351780.Z.isEnabled(),
       t = Chunk351780.Z.comboSoundsEnabled;
     return !!module && !!exports && null != Chunk944486.Z.getChannelId()
   },
   A = () => {
-    if (0 === O.length || !S() || y) return;
+    if (0 === O.length || !T() || y) return;
     y = true;
     let [e, t] = O[O.length - 1];
     (0, Chunk460181.GN)(module, exports), v = setTimeout(C, E)
@@ -66,24 +66,24 @@ class R extends Chunk317770.Z {
     let {
       userId: t
     } = e;
-    s.default.getId() === t && T()
+    s.default.getId() === t && S()
   }
   stopAudio() {
-    T()
+    S()
   }
   startAudio() {
     var e;
-    if (!S()) return;
+    if (!T()) return;
     let t = Chunk944486.Z.getChannelId();
     if (null == exports) return;
     let n = Chunk314897.default.getId(),
       r = Chunk111583.Z.isTyping(exports, require),
       i = Chunk843693.ZP.getUserCombo(require, exports),
       a = null != (e = null == Chunk317770 ? true : Chunk317770.multiplier) ? module : 1;
-    Chunk570140 && Chunk460181 >= h ? I() : T()
+    Chunk570140 && Chunk460181 >= h ? I() : S()
   }
   playAchievementUnlockSound() {
-    S() && N("poggermode_achievement_unlock")
+    T() && N("poggermode_achievement_unlock")
   }
 }
 let P = new R

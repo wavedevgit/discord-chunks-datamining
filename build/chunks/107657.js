@@ -1,11 +1,13 @@
-/** Chunk was on 61526 **/
-/** chunk id: 107657, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 77744 **/
+/** chunk id: 107657, original params: e,i,r (module,exports,require) **/
 module.exports = {
   centeringWrapper: "centeringWrapper__10841",
+  timelineWrapper: "timelineWrapper__10841",
+  timelineHeader: "timelineHeader__10841",
   timelineContainer: "timelineContainer__10841",
   playPauseButtonWrapper: "playPauseButtonWrapper__10841",
-  playPauseIcon: "playPauseIcon__10841",
   timeline: "timeline__10841",
+  waveform: "waveform__10841",
   timelineDragging: "timelineDragging__10841",
   timelineVideo: "timelineVideo__10841",
   timelineBackground: "timelineBackground__10841",
@@ -22,7 +24,14 @@ module.exports = {
   cropLeftArrow: "cropLeftArrow__10841 cropArrow__10841",
   cropRightArrow: "cropRightArrow__10841 cropArrow__10841",
   timePillContainer: "timePillContainer__10841",
-  playPauseButton: "playPauseButton__10841",
   char: "char__10841",
-  slashCharacter: "slashCharacter__10841 char__10841"
+  slashCharacter: "slashCharacter__10841 char__10841",
+  numberTimeline: "numberTimeline__10841",
+  numberTimelineTrack: "numberTimelineTrack__10841",
+  timeNotch: "timeNotch__10841",
+  timeNotchTick: "timeNotchTick__10841",
+  timeNotchLabel: "timeNotchLabel__10841",
+  timeSubNotch: "timeSubNotch__10841",
+  timeSubNotchTick: "timeSubNotchTick__10841",
+  timelineIcon: "timelineIcon__10841"
 }

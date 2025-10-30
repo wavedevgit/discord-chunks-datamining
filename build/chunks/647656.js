@@ -89,15 +89,15 @@ let b = ["1402418171662569542"],
         }), Promise.resolve(E);
         let I = {};
         E.name || (E.name = a.application.name);
-        let v = a.application.id;
-        E.application_id = v;
-        let y = a.transport === g.He.POST_MESSAGE;
-        E.platform = y ? _.M7m.EMBEDDED : _.M7m.DESKTOP;
-        let C = c.Z.getApplication(null != v ? v : true),
+        let y = a.application.id;
+        E.application_id = y;
+        let v = a.transport === g.He.POST_MESSAGE;
+        E.platform = v ? _.M7m.EMBEDDED : _.M7m.DESKTOP;
+        let C = c.Z.getApplication(null != y ? y : true),
           S = null != (r = E.instance) && r,
           T = null == (t = E.party) ? true : t.privacy;
         delete E.instance, null == (n = E.party) || delete n.privacy;
-        let N = (0, o.S)(E, S, y, null != C && (0, u.g)(C) && y, T);
+        let N = (0, o.S)(E, S, v, null != C && (0, u.g)(C) && v, T);
         N > 0 && (E.flags = N);
         let {
           assets: j,

@@ -37,7 +37,7 @@ function x(e, t, n, r) {
       l = new a.Fh(e, () => {
         let e = t(),
           l = n(i, e);
-        null == l || v.Z.isSoundDisabled(l) || (0, f.GN)(l, null != r ? r : .4), i = e
+        null == l || y.Z.isSoundDisabled(l) || (0, f.GN)(l, null != r ? r : .4), i = e
       });
     return l.attach("useSound"), () => l.detach()
   })

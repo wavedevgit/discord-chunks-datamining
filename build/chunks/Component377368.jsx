@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 377368, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -31,7 +31,7 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class v extends Chunk131468.Z {
+class y extends Chunk131468.Z {
   _initialize() {
     super._initialize(), __OVERLAY__ || Chunk570140.Z.subscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest)
   }
@@ -103,4 +103,4 @@ class v extends Chunk131468.Z {
     })
   }
 }
-let y = new v
+let v = new y

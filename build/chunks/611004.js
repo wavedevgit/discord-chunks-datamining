@@ -104,7 +104,7 @@ function I(e, t) {
   o = s.lv(c, o, _.ZP), o = s.iK(0 + t.length, o), p.Z.updateSearchEditorState(e, o)
 }
 
-function T(e, t) {
+function S(e, t) {
   let n = v(e);
   if (null == n) return;
   let r = n.endsWith(" ") ? n + t : n + " " + t;
@@ -115,7 +115,7 @@ function T(e, t) {
   })
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = (0, u.kG)(t),
     r = [];
   n.forEach(t => {
@@ -132,7 +132,7 @@ function A(e, t, n) {
   let r = (0, u.Tm)(e),
     i = h.Z.getEditorState(r);
   if (null == i) return;
-  let a = S(t, s.Sq(i));
+  let a = T(t, s.Sq(i));
   I(t, a = a.trim());
   let o = h.Z.getSearchMode(r);
   p.Z.updateSearchMode(t, null != o ? o : g.o), c.Z.clearSearchMessages(r), p.Z.clearSearchEditorState(e), n(a)
@@ -151,7 +151,7 @@ let N = {
   cleanUpSearchState: b,
   fetchMessages: O,
   setSearchInputText: I,
-  appendToSearchInputText: T,
+  appendToSearchInputText: S,
   getSearchInputText: v,
   ensureSearchInputDecorators: function(e) {
     let t, n = (0, u.Tm)(e),

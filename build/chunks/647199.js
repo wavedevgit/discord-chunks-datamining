@@ -56,8 +56,8 @@ class I {
     null != n.clientX && null != n.clientY && (d = n.clientX, f = n.clientY), o && (null != d && null != f ? (c = d - o.left, u = f - o.top) : (c = o.width / 2, u = o.height / 2)), this.type = e, this.pointerType = t, this.target = n.currentTarget, this.shiftKey = n.shiftKey, this.metaKey = n.metaKey, this.ctrlKey = n.ctrlKey, this.altKey = n.altKey, this.x = c, this.y = u
   }
 }
-let T = Symbol("linkClicked"),
-  S = "react-aria-pressable-style",
+let S = Symbol("linkClicked"),
+  T = "react-aria-pressable-style",
   A = "data-react-aria-pressable";
 
 function C(e) {
@@ -71,7 +71,7 @@ function C(e) {
     isDisabled: u,
     isPressed: v,
     preventFocusOnPress: C,
-    shouldCancelOnPointerExit: D,
+    shouldCancelOnPointerExit: w,
     allowTextSelectionOnPress: L,
     ref: x,
     ...M
@@ -127,7 +127,7 @@ function C(e) {
       t.disposables = []
     }
   }), Y = (0, f.i)(e => {
-    D && H(e)
+    w && H(e)
   }), W = (0, f.i)(e => {
     u || null == l || l(e)
   }), K = (0, f.i)((e, t) => {
@@ -141,7 +141,7 @@ function C(e) {
         onKeyDown(t) {
           if (R(t.nativeEvent, t.currentTarget) && (0, _.bE)(t.currentTarget, (0, _.NI)(t.nativeEvent))) {
             var r;
-            w((0, _.NI)(t.nativeEvent), t.key) && t.preventDefault();
+            D((0, _.NI)(t.nativeEvent), t.key) && t.preventDefault();
             let i = true;
             if (!e.isPressed && !t.repeat) {
               e.target = t.currentTarget, e.isPressed = true, e.pointerType = "keyboard", i = Z(t, "keyboard");
@@ -175,10 +175,10 @@ function C(e) {
       n = t => {
         var n, r, i;
         if (e.isPressed && e.target && R(t, e.target)) {
-          w((0, _.NI)(t), t.key) && t.preventDefault();
+          D((0, _.NI)(t), t.key) && t.preventDefault();
           let n = (0, _.NI)(t),
             i = (0, _.bE)(e.target, (0, _.NI)(t));
-          F(P(e.target, t), "keyboard", i), i && K(t, e.target), B(), "Enter" !== t.key && N(e.target) && (0, _.bE)(e.target, n) && !t[T] && (t[T] = true, (0, g.nG)(e.target, t, false)), e.isPressed = false, null == (r = e.metaKeyEvents) || r.delete(t.key)
+          F(P(e.target, t), "keyboard", i), i && K(t, e.target), B(), "Enter" !== t.key && N(e.target) && (0, _.bE)(e.target, n) && !t[S] && (t[S] = true, (0, g.nG)(e.target, t, false)), e.isPressed = false, null == (r = e.metaKeyEvents) || r.delete(t.key)
         } else if ("Meta" === t.key && (null == (n = e.metaKeyEvents) ? true : n.size)) {
           let t = e.metaKeyEvents;
           for (let n of (e.metaKeyEvents = true, t.values())) null == (i = e.target) || i.dispatchEvent(new KeyboardEvent("keyup", n))
@@ -238,9 +238,9 @@ function C(e) {
   return (0, y.useEffect)(() => {
     if (!x) return;
     let e = (0, p.r3)(x.current);
-    if (!e || !e.head || e.getElementById(S)) return;
+    if (!e || !e.head || e.getElementById(T)) return;
     let t = e.createElement("style");
-    t.id = S, t.textContent = `
+    t.id = T, t.textContent = `
 @layer {
   [${A}] {
     touch-action: pan-x pan-y pinch-zoom;
@@ -288,12 +288,12 @@ function P(e, t) {
   }
 }
 
-function D(e) {
+function w(e) {
   return !(e instanceof HTMLInputElement) && (e instanceof HTMLButtonElement ? "submit" !== e.type && "reset" !== e.type : !N(e))
 }
 
-function w(e, t) {
-  return e instanceof HTMLInputElement ? !x(e, t) : D(e)
+function D(e, t) {
+  return e instanceof HTMLInputElement ? !x(e, t) : w(e)
 }
 let L = new Set(["checkbox", "radio", "range", "color", "file", "image", "button", "submit", "reset"]);
 

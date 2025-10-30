@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 87454, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -18,9 +18,9 @@ let d = Chunk647438.memo(function(e) {
   } = e, u = l.z[n], {
     isDismissed: m,
     handleToggleDismissState: p
-  } = (0, c.Z)(u), [h, x] = r.useState(false), f = r.useCallback(() => {
+  } = (0, c.Z)(u), [h, x] = r.useState(false), g = r.useCallback(() => {
     null == d || d(n), p()
-  }, [d, p, n]), g = r.useCallback(e => {
+  }, [d, p, n]), f = r.useCallback(e => {
     e.preventDefault(), x(true), navigator.clipboard.writeText(n.toLowerCase())
   }, [n]);
   return (0, a.jsxs)(a.Fragment, {
@@ -32,7 +32,7 @@ let d = Chunk647438.memo(function(e) {
         size: "sm",
         variant: "icon-only",
         icon: h ? i.C2q : i.zTD,
-        onClick: g,
+        onClick: f,
         "aria-label": h ? "Copied" : "Copy"
       }), (0, a.jsx)(i.rsf, {
         label: "".concat(n.toLowerCase(), " (").concat(l.z[n], ")"),
@@ -54,7 +54,7 @@ let d = Chunk647438.memo(function(e) {
           return (true !== s && "0" !== s && r.push("last_dismissed_object_id: ".concat(s)), 0 === r.length) ? null : r.join(", ")
         }(u) : null,
         checked: m,
-        onChange: f
+        onChange: g
       })]
     }), (0, a.jsx)(i.izJ, {})]
   })

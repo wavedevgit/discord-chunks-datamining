@@ -56,12 +56,12 @@ let g = 200,
     [Chunk981631.VD2.BOTTOM_RIGHT]: Chunk347469.y.HORIZONTAL_LEFT
   };
 
-function T(e, t) {
+function S(e, t) {
   let n = Math.round(e / E) * E;
   return (0, l.clamp)(n, t.minWidth, t.maxWidth)
 }
 
-function S(e) {
+function T(e) {
   let {
     resizableNode: t,
     onResize: n,
@@ -236,7 +236,7 @@ class A extends(r = Chunk647438.PureComponent) {
         ref: this.handleSetInnerDivRef,
         style: Chunk981631,
         children: this.props.children
-      }), null != Chunk347469 ? (0, Chunk951288.jsx)(S, {
+      }), null != Chunk347469 ? (0, Chunk951288.jsx)(T, {
         onResize: this.handleResize,
         onResizeEnd: this.handleResizeEnd,
         resizableNode: this._innerDivRef,
@@ -259,7 +259,7 @@ class A extends(r = Chunk647438.PureComponent) {
         resizeConfig: i
       } = this.props;
       if (null == i) return;
-      let a = T(r - (t + n), i);
+      let a = S(r - (t + n), i);
       this.getWidth() > a && (this._width = a, null == e || e(a))
     }), h(this, "handleSetInnerDivRef", e => {
       this._innerDivRef.current = e;
@@ -280,7 +280,7 @@ class A extends(r = Chunk647438.PureComponent) {
         resizeConfig: n
       } = this.props;
       if (null == n) return;
-      let r = T(e, n);
+      let r = S(e, n);
       this._width = r, null == t || t(r), this.setState({
         isResizing: false
       }), this.ensureWidth()
@@ -330,8 +330,8 @@ let C = e => {
       roundCorners: E,
       resizeConfig: v,
       className: I,
-      getDockedRectPositionY: T
-    } = e, [S, C] = a.useState(false), N = a.useMemo(() => null == t ? null : n.map(e => {
+      getDockedRectPositionY: S
+    } = e, [T, C] = a.useState(false), N = a.useMemo(() => null == t ? null : n.map(e => {
       if (e.id !== t.id && e.component !== f.NYg.ACTIVITY && e.component !== f.NYg.FRAME) return null;
       let n = "string" == typeof e.component ? h[e.component] : e.component;
       return (0, i.jsx)(n, m({
@@ -341,7 +341,7 @@ let C = e => {
       C(true)
     }, []), P = a.useCallback(() => {
       C(false)
-    }, []), D = a.useMemo(() => n.some(e => e.component === f.NYg.ACTIVITY), [n]), w = a.useMemo(() => n.some(e => e.component === f.NYg.FRAME), [n]);
+    }, []), w = a.useMemo(() => n.some(e => e.component === f.NYg.ACTIVITY), [n]), D = a.useMemo(() => n.some(e => e.component === f.NYg.FRAME), [n]);
     return null == t ? (0, i.jsx)(d.ZP, {
       children: (0, i.jsx)("div", {
         className: p.pictureInPicture
@@ -349,7 +349,7 @@ let C = e => {
     }) : (0, i.jsx)(d.ZP, {
       children: (0, i.jsx)("div", {
         className: s()(p.pictureInPicture, {
-          [p.dragging]: S
+          [p.dragging]: T
         }, I),
         children: (0, i.jsx)(A, {
           appContext: g,
@@ -364,13 +364,13 @@ let C = e => {
           maxY: l,
           width: r,
           dockedRect: _,
-          getDockedRectPositionY: T,
+          getDockedRectPositionY: S,
           edgeOffsetTop: b,
           edgeOffsetBottom: y,
           edgeOffsetLeft: O,
           edgeOffsetRight: b,
           roundCorners: E,
-          resizeConfig: D || w ? true : v,
+          resizeConfig: w || D ? true : v,
           children: N
         })
       })

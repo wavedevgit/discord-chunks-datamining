@@ -31,10 +31,10 @@ function E(e, t, n) {
     {
       isInvalid: v,
       validationErrors: I,
-      validationDetails: T
+      validationDetails: S
     } = t.displayValidation,
     {
-      labelProps: S,
+      labelProps: T,
       fieldProps: A,
       descriptionProps: C,
       errorMessageProps: N
@@ -47,13 +47,13 @@ function E(e, t, n) {
     R = (0, a.H)(t, n),
     P = A["aria-labelledby"] || A.id,
     {
-      locale: D
+      locale: w
     } = (0, h.j)(),
-    w = t.formatValue(D, {
+    D = t.formatValue(w, {
       month: "long"
     }),
-    L = w ? O.format("selectedDateDescription", {
-      date: w
+    L = D ? O.format("selectedDateDescription", {
+      date: D
     }) : "",
     x = (0, l.P)(L),
     M = [x["aria-describedby"], A["aria-describedby"]].filter(Boolean).join(" ") || true,
@@ -93,7 +93,7 @@ function E(e, t, n) {
       }
     }),
     labelProps: {
-      ...S,
+      ...T,
       onClick: () => {
         j.focusFirst()
       }
@@ -154,6 +154,6 @@ function E(e, t, n) {
     },
     isInvalid: v,
     validationErrors: I,
-    validationDetails: T
+    validationDetails: S
   }
 }

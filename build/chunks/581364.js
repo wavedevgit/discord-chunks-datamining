@@ -4,10 +4,10 @@
 require.d(exports, {
   $z: () => R,
   BH: () => C,
-  BO: () => D,
+  BO: () => w,
   D7: () => x,
   Dd: () => N,
-  Ft: () => w,
+  Ft: () => D,
   TK: () => B,
   X0: () => k,
   XA: () => j,
@@ -118,7 +118,7 @@ function I(e) {
   return null == e ? true : e.map(e => {
     var t, n;
     let r = O(b({}, e), {
-      choices: T(e.choices),
+      choices: S(e.choices),
       options: I(e.options),
       serverLocalizedName: e.name_localized,
       displayName: null != (t = e.name_localized) ? t : e.name,
@@ -136,7 +136,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   return null == e ? true : e.map(e => {
     var t;
     return O(b({}, e), {
@@ -145,7 +145,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   var t, n;
   let {
     rootCommand: r,
@@ -172,7 +172,7 @@ function S(e) {
   let l = [];
   if (null == i.options) return l;
   let c = i.options.filter(e => e.type === u.jw.SUB_COMMAND_GROUP);
-  for (let e = 0; e < c.length; e++) l.push(...S({
+  for (let e = 0; e < c.length; e++) l.push(...T({
     rootCommand: r,
     command: c[e],
     applicationId: a,
@@ -205,7 +205,7 @@ function S(e) {
 }
 
 function A(e, t) {
-  return l().flatMap(e, e => (o()(null != e.id, "Missing command id"), S({
+  return l().flatMap(e, e => (o()(null != e.id, "Missing command id"), T({
     rootCommand: e,
     command: e,
     applicationId: e.application_id,
@@ -244,9 +244,9 @@ function R(e) {
 function P(e) {
   return i()(e).subtract(1).toString()
 }
-let D = Chunk149765.vB(0);
+let w = Chunk149765.vB(0);
 
-function w(e) {
+function D(e) {
   let {
     PermissionStore: t,
     guild: n,
@@ -262,7 +262,7 @@ function w(e) {
     if ("boolean" == typeof e) return e
   }
   let l = L(r, s, i);
-  return ("boolean" != typeof l || !!l) && (null == o || !c.fS(o, D) && t.can(o, n))
+  return ("boolean" != typeof l || !!l) && (null == o || !c.fS(o, w) && t.can(o, n))
 }
 
 function L(e, t, n) {

@@ -26,11 +26,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk616922 = require("./616922.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e) {
+function S(e) {
   if (e === a._.WEEK) return I.t.SjOZfm
 }
-let S = (e, t, n, r) => {
-    let i = T(r),
+let T = (e, t, n, r) => {
+    let i = S(r),
       a = f.ZP.getName(t.guild_id, t.id, n),
       o = e.extra.artist.name;
     return I.intl.formatToMarkdownString(i, {
@@ -49,25 +49,25 @@ let S = (e, t, n, r) => {
       onReaction: a,
       onVoiceChannelPreview: f
     } = e, {
-      parent_title: T,
+      parent_title: S,
       provider: C,
       image_url: N
     } = n.extra.media, R = n.extra.artist.name, P = (0, s.e7)([c.default], () => c.default.getUser(n.author_id)), {
-      primaryColor: D,
-      secondaryColor: w
+      primaryColor: w,
+      secondaryColor: D
     } = (0, m.Z)(N), L = (0, _.Nq)(n), x = i.useCallback(() => {
       if (null == t || null == P || !(0, d.Hi)(L, g.y9)) return;
-      let e = S(n, t, P, L);
+      let e = T(n, t, P, L);
       return (0, p.CR)({
         user: P,
         channel: t,
         mediaImageSrc: N,
         artist: R,
         description: e,
-        colors: [D, w],
+        colors: [w, D],
         badges: (0, p.UU)(n)
       })
-    }, [N, R, t, n, D, L, w, P]), M = (0, h.Z)(O.ABu.SPOTIFY);
+    }, [N, R, t, n, w, L, D, P]), M = (0, h.Z)(O.ABu.SPOTIFY);
     if (null == P || !(0, d.Hi)(L, g.y9)) return null;
     let k = () => {
         let e = v.Hw.ALBUM,
@@ -92,7 +92,7 @@ let S = (e, t, n, r) => {
           "aria-label": I.intl.string(I.t["0ZB/XE"])
         }) : null,
         userDescription: I.t.CcVI1T,
-        title: T,
+        title: S,
         subtitle: R,
         badges: (0, r.jsx)(E.Gk, {
           location: E.Gt.POPOUT,

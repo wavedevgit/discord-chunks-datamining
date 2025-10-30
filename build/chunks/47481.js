@@ -77,10 +77,10 @@ function d(e) {
       unreadId: e.id
     }), C = null);
     let N = (0, c.f)(e, p);
-    null != N && _.push({
+    null != N && "before" === N.position && _.push({
       type: u.ys_.MESSAGE,
-      content: N,
-      groupId: N.id
+      content: N.message,
+      groupId: N.message.id
     });
     let A = (null == P ? true : P.type) === u.ys_.MESSAGE ? d : P;
     (0, o.J)(p, A, e) && (n = e.id);
@@ -102,6 +102,10 @@ function d(e) {
       isSummaryDivider: true
     }), null !== I ? (I.content.push(w), w.jumpTarget && (I.hasJumpTarget = true)) : _.push(w), e.isFirstMessageInForumPost(p) && _.push({
       type: u.ys_.FORUM_POST_ACTION_BAR
+    }), null != N && "after" === N.position && _.push({
+      type: u.ys_.MESSAGE,
+      content: N.message,
+      groupId: N.message.id
     }), null != b && e.id === b.endId && b.count > 1 && _.push({
       type: u.ys_.DIVIDER,
       contentKey: b.endId,

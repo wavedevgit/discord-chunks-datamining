@@ -2,7 +2,7 @@
 /** chunk id: 260483, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -105,14 +105,14 @@ function I(e) {
   t.forEach(g)
 }
 
-function T(e) {
+function S(e) {
   let {
     threads: t
   } = e;
   t.forEach(R)
 }
 
-function S(e) {
+function T(e) {
   let {
     channel: t
   } = e;
@@ -164,7 +164,7 @@ function P(e) {
   if (null == t) returnfalse;
   null != e.memberIdsPreview && (t.memberIdsPreview = e.memberIdsPreview), t.memberCount = e.memberCount
 }
-class D extends(r = Chunk442837.ZP.Store) {
+class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z)
   }
@@ -180,21 +180,21 @@ class D extends(r = Chunk442837.ZP.Store) {
     return f
   }
 }
-u(D, "displayName", "ThreadMembersStore");
-let w = new D(Chunk570140.Z, {
+u(w, "displayName", "ThreadMembersStore");
+let D = new w(Chunk570140.Z, {
   CONNECTION_OPEN: E,
   OVERLAY_INITIALIZE: b,
   GUILD_CREATE: y,
   GUILD_DELETE: O,
-  CHANNEL_DELETE: S,
+  CHANNEL_DELETE: T,
   THREAD_CREATE: v,
   THREAD_UPDATE: v,
   THREAD_LIST_SYNC: I,
   THREAD_MEMBERS_UPDATE: P,
   SEARCH_MESSAGES_SUCCESS: N,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: N,
-  LOAD_THREADS_SUCCESS: T,
-  LOAD_ARCHIVED_THREADS_SUCCESS: T,
+  LOAD_THREADS_SUCCESS: S,
+  LOAD_ARCHIVED_THREADS_SUCCESS: S,
   THREAD_DELETE: A,
   LOAD_MESSAGES_SUCCESS: C
 })

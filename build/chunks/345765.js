@@ -33,8 +33,8 @@ let y = 4,
   O = 2 * Chunk70956.Z.Millis.MINUTE,
   v = Chunk206583.YN.GLOBAL_FEED,
   I = 15 * Chunk70956.Z.Millis.MINUTE,
-  T = new Map,
-  S = new Set,
+  S = new Map,
+  T = new Set,
   A = new Map,
   C = null,
   N = (0, Chunk392711.debounce)(Chunk564990.yK, 3e3, {
@@ -54,8 +54,8 @@ function P(e, t) {
   })
 }
 
-function D(e) {
-  if (S.has(e) || e === g.YN.GAME_PROFILE_FEED && (!(0, s._J)("ContentInventoryManager") || true !== m.Z.getFeed(e))) returnfalse;
+function w(e) {
+  if (T.has(e) || e === g.YN.GAME_PROFILE_FEED && (!(0, s._J)("ContentInventoryManager") || true !== m.Z.getFeed(e))) returnfalse;
   if (e === v) {
     if (!(0, _.sA)("ContentInventoryManager") || h.Z.hidden && null != m.Z.getFeed(e) || !d.Z.isFocused() || !l.Z.isConnected()) returnfalse;
     let t = u.Z.getIdleSince();
@@ -64,18 +64,18 @@ function D(e) {
   returntrue
 }
 
-function w(e) {
+function D(e) {
   P(e, {
     loading: false
   });
-  let t = T.get(e);
-  true !== t && (clearTimeout(t), T.delete(e))
+  let t = S.get(e);
+  true !== t && (clearTimeout(t), S.delete(e))
 }
 
 function L() {
   var e;
   let t = null != (e = A.get(v)) ? module : 0;
-  if (exports > 0 && exports <= y || (w(v), !D(v))) return;
+  if (exports > 0 && exports <= y || (D(v), !w(v))) return;
   let n = Chunk146282.Z.getFeed(v);
   if ((null == require ? true : require.refresh_stale_inbox_after_ms) != null && null == C) return;
   let r = (null == require ? true : require.expired_at) == null ? 0 : new Date(require.expired_at).getTime() - Date.now(),
@@ -83,7 +83,7 @@ function L() {
   P(v, {
     loading: false,
     nextFetchDate: new Date(Date.now() + Chunk570140)
-  }), T.set(v, setTimeout(() => x({
+  }), S.set(v, setTimeout(() => x({
     feedId: v,
     feature: Chunk126313.L.INBOX
   }), Chunk570140))
@@ -94,9 +94,9 @@ async function x(e) {
     feature: n,
     force: r = false
   } = e;
-  if (D(t) || r) try {
+  if (w(t) || r) try {
     let e = m.Z.getFeed(t);
-    S.add(t), P(t, {
+    T.add(t), P(t, {
       loading: true
     });
     let r = await (0, p.mt)({
@@ -108,7 +108,7 @@ async function x(e) {
       type: "CONTENT_INVENTORY_SET_FEED",
       feedId: t,
       feed: r
-    }), A.set(t, 0), S.delete(t), P(t, {
+    }), A.set(t, 0), T.delete(t), P(t, {
       loading: false
     }), t === v && (C = null, L())
   } catch (o) {
@@ -116,7 +116,7 @@ async function x(e) {
     let e = null != (i = A.get(t)) ? i : 0;
     if (e < y) {
       let i = f.Z.Millis.MINUTE * Math.pow(2, e) + R(e);
-      T.set(t, setTimeout(() => x({
+      S.set(t, setTimeout(() => x({
         feedId: t,
         feature: n,
         force: r
@@ -125,7 +125,7 @@ async function x(e) {
       type: "CONTENT_INVENTORY_CLEAR_FEED",
       feedId: t
     });
-    S.delete(t)
+    T.delete(t)
   }
 }
 
@@ -138,7 +138,7 @@ function k() {
 }
 
 function j() {
-  w(v)
+  D(v)
 }
 
 function U(e) {
@@ -146,7 +146,7 @@ function U(e) {
     feedId: t,
     feature: n
   } = e;
-  w(t), x({
+  D(t), x({
     feedId: t,
     feature: n,
     force: true

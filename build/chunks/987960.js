@@ -34,34 +34,34 @@ function h(e, t, n) {
   }, t, n), {
     descriptionProps: v,
     ...I
-  } = O, T = t.disabledKeys.has(h.key) || h.props.isDisabled, S = e => {
-    ("Delete" === e.key || "Backspace" === e.key) && (T || (e.preventDefault(), t.selectionManager.isSelected(h.key) ? null == E || E(new Set(t.selectionManager.selectedKeys)) : null == E || E(new Set([h.key]))))
+  } = O, S = t.disabledKeys.has(h.key) || h.props.isDisabled, T = e => {
+    ("Delete" === e.key || "Backspace" === e.key) && (S || (e.preventDefault(), t.selectionManager.isSelected(h.key) ? null == E || E(new Set(t.selectionManager.selectedKeys)) : null == E || E(new Set([h.key]))))
   }, A = (0, u.Kf)();
   "virtual" === A && "undefined" != typeof window && "ontouchstart" in window && (A = "pointer");
   let C = E && ("keyboard" === A || "virtual" === A) ? m.format("removeDescription") : "",
     N = (0, o.P)(C),
     R = h.key === t.selectionManager.focusedKey,
     P = null != t.selectionManager.focusedKey,
-    D = false;
-  T || !R && P || (D = 0);
-  let w = (0, s.z)(h.props),
+    w = false;
+  S || !R && P || (w = 0);
+  let D = (0, s.z)(h.props),
     L = (0, l.fU)(h.props),
     {
       focusableProps: x
     } = (0, d.kc)({
-      isDisabled: T
+      isDisabled: S
     }, n);
   return {
     removeButtonProps: {
       "aria-label": m.format("removeButtonLabel"),
       "aria-labelledby": `${g} ${b.id}`,
-      isDisabled: T,
+      isDisabled: S,
       id: g,
       onPress: () => E ? E(new Set([h.key])) : null
     },
-    rowProps: (0, c.d)(x, b, w, L, {
-      tabIndex: D,
-      onKeyDown: E ? S : true,
+    rowProps: (0, c.d)(x, b, D, L, {
+      tabIndex: w,
+      onKeyDown: E ? T : true,
       "aria-describedby": N["aria-describedby"]
     }),
     gridCellProps: (0, c.d)(y, {

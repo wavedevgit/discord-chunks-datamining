@@ -69,15 +69,15 @@ function O(e) {
     events: v,
     play: I
   } = (0, a.$)(), {
-    enabled: T
+    enabled: S
   } = d.G.useExperiment({
     location: "gift-button"
   }, {
     autoTrackExposure: false
-  }), S = i.type === p.d4z.DM;
+  }), T = i.type === p.d4z.DM;
   if (t) return null;
   let A = () => {
-    T && S && null != b ? (0, s.ZDy)(async () => {
+    S && T && null != b ? (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("59207").then(n.bind(n, 435626));

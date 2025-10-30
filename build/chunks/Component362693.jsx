@@ -1,73 +1,112 @@
-/** Chunk was on 61526 **/
+/** Chunk was on 98920 **/
 /** chunk id: 362693, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk312097 = require("./312097.jsx"),
+  Chunk894694 = require("./894694.js"),
   Chunk673462 = require("./673462.jsx"),
   Chunk826078 = require("./826078.jsx"),
   Chunk917042 = require("./917042.js"),
-  Chunk20437 = require("./20437.js"),
+  Chunk115559 = require("./115559.jsx"),
   Chunk285006 = require("./285006.js");
 
-function d(e) {
+function h(e) {
   let {
-    isLoading: t,
-    onDoneLoading: n,
-    videoURL: d,
-    audioURL: m,
-    transitionState: p
+    transitionState: t,
+    clip: n
   } = e, {
-    videoPlayerRef: f,
-    cropData: v,
     applicationAudioEnabled: h,
-    voiceAudioEnabled: g
-  } = (0, u.S)(), x = r.useCallback(() => {
-    var e;
-    null == (e = f.current) || e.seek(v.start), n()
-  }, [n, v.start, f]);
-  return r.useEffect(() => {
+    voiceAudioEnabled: p,
+    soundboardAudioEnabled: f,
+    cropStart: v,
+    cropEnd: g,
+    videoPlayerRef: b,
+    videoURL: j,
+    audioTracks: x
+  } = (0, d.D)(), y = n.type === s.NJ.SCREENSHOT;
+  a.useEffect(() => {
+    if (!y) return document.addEventListener("keydown", e), () => document.removeEventListener("keydown", e);
+
     function e(e) {
       var t, n;
       if ((null == (t = document.activeElement) ? true : t.tagName) === "INPUT") return;
-      let a = f.current;
+      let l = b.current;
+      if (null == l) return;
+      let a = null == (n = b.current) ? true : n.videoElement;
       if (null == a) return;
-      let r = null == (n = f.current) ? true : n.videoElement;
-      if (null == r) return;
-      let l = (0, s.Z)(r.duration, e.shiftKey),
-        i = false;
+      let i = (0, c.Z)(a.duration, e.shiftKey),
+        r = false;
       switch (e.key) {
         case " ":
-          i = true, r.paused ? a.play() : a.pause();
+          r = true, a.paused ? l.play() : l.pause();
           break;
         case "ArrowLeft":
-          i = true, a.seek(Math.max(r.currentTime - l, v.start));
+          r = true, l.seek(Math.max(v, a.currentTime - i));
           break;
         case "ArrowRight":
-          i = true, a.seek(Math.min(r.currentTime + l, v.end))
+          r = true, l.seek(Math.min(g, a.currentTime + i))
       }
-      i && (e.stopPropagation(), e.preventDefault())
+      r && (e.stopPropagation(), e.preventDefault())
     }
-    return document.addEventListener("keydown", e), () => document.removeEventListener("keydown", e)
-  }, [v.start, v.end, f]), (0, a.jsxs)("div", {
-    className: c.editorPane,
-    children: [(0, a.jsx)("div", {
-      className: c.videoSizer,
-      children: (0, a.jsx)(i.Z, {
-        applicationAudioEnabled: h,
-        voiceAudioEnabled: g,
-        ref: f,
-        audioSrc: m,
-        src: d,
-        isLoading: t,
-        onDoneLoading: x,
-        startTime: v.start,
-        endTime: v.end
+  }, [b, y, n.type, v, g]);
+  let C = a.useMemo(() => x.filter(e => e.trackName.includes(":voice")), [x]),
+    k = a.useCallback(() => {
+      var e;
+      (0, r.K)({
+        items: [{
+          type: "IMAGE",
+          url: n.thumbnail,
+          proxyUrl: n.thumbnail,
+          alt: null != (e = n.name) ? e : ""
+        }],
+        startingIndex: 0,
+        location: "ClipsEditModal"
+      }, "stack")
+    }, [n.thumbnail, n.name]);
+  if (y) {
+    var N;
+    return (0, l.jsx)("div", {
+      className: m.editorPane,
+      children: t !== i.Dvm.ENTERED ? (0, l.jsx)("div", {
+        className: m.spinnerContainer,
+        children: (0, l.jsx)(i.$jN, {})
+      }) : (0, l.jsx)("div", {
+        className: m.editorContent,
+        children: (0, l.jsx)(i.P3F, {
+          className: m.videoSizer,
+          onClick: k,
+          children: (0, l.jsx)("img", {
+            className: m.displayScreenshot,
+            src: n.thumbnail,
+            alt: null != (N = n.name) ? N : ""
+          })
+        })
       })
-    }), !t && p && [l.Dvm.ENTERED, l.Dvm.HIDDEN].includes(p) ? (0, a.jsx)(o.Z, {
-      sourceURL: d
-    }) : null]
+    })
+  }
+  let E = null == j || 0 === x.length || t !== i.Dvm.ENTERED;
+  return (0, l.jsx)("div", {
+    className: m.editorPane,
+    children: E ? (0, l.jsx)("div", {
+      className: m.spinnerContainer,
+      children: (0, l.jsx)(i.$jN, {})
+    }) : (0, l.jsxs)("div", {
+      className: m.editorContent,
+      children: [(0, l.jsx)(o.Z, {
+        applicationAudioEnabled: h,
+        voiceAudioEnabled: p,
+        soundboardAudioEnabled: f,
+        ref: b,
+        clip: n
+      }), (0, l.jsx)(u.Z, {
+        sourceURL: j,
+        clip: n,
+        voiceAudioTracks: C
+      })]
+    })
   })
 }

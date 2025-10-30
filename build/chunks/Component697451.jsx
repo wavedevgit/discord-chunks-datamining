@@ -170,7 +170,7 @@ function H(e, t, n, i, a, o) {
       userId: t.id,
       guildId: null != (l = null == _ ? true : _.guild_id) ? l : ""
     })) ? c : true,
-    T = () => V({
+    S = () => V({
       user: t,
       guildId: _.guild_id,
       guildAvatar: I,
@@ -178,15 +178,15 @@ function H(e, t, n, i, a, o) {
       onContextMenu: 1 === n ? O : b,
       ref: o
     }),
-    S = 1 === n ? g : m;
-  return null != a && null != S && null != o ? (0, r.jsx)(f.yRy, {
+    T = 1 === n ? g : m;
+  return null != a && null != T && null != o ? (0, r.jsx)(f.yRy, {
     targetElementRef: o,
     renderPopout: a,
-    shouldShow: S,
+    shouldShow: T,
     position: "right",
     onRequestClose: v,
-    children: T
-  }) : T()
+    children: S
+  }) : S()
 }
 
 function Y(e, t, n, i, a) {
@@ -309,7 +309,7 @@ function q(e) {
       analyticsLocations: c,
       newestAnalyticsLocation: p
     } = (0, E.ZP)(g.Z.EXECUTED_COMMAND),
-    b = (0, d.e7)([S.default], () => S.default.getCurrentUser()),
+    b = (0, d.e7)([T.default], () => T.default.getCurrentUser()),
     A = i.useRef(null),
     C = i.useRef(null),
     P = i.useMemo(() => (e, t, n) => (l()(null != t, "ExecutedCommand: user cannot be undefined"), l()(null != b, "ExecutedCommand: currentUser cannot be undefined"), l()(null != s, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(I.Z, G(j({}, e), {
@@ -320,17 +320,17 @@ function q(e) {
       messageId: a.id,
       newAnalyticsLocations: n
     }))), [b, s, a.id]),
-    L = i.useMemo(() => e => (l()(null != s, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(D.Z, G(j({}, e), {
+    L = i.useMemo(() => e => (l()(null != s, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(w.Z, G(j({}, e), {
       channel: s,
       messageId: a.id,
       interactionData: a.interactionData
     }))), [s, a.id, a.interactionData]),
     k = (0, O.t0)(a),
-    U = (null == k ? true : k.type) === _.B8.APPLICATION_COMMAND && null != k.target_user ? new T.Z(k.target_user) : null,
+    U = (null == k ? true : k.type) === _.B8.APPLICATION_COMMAND && null != k.target_user ? new S.Z(k.target_user) : null,
     B = (null == k ? true : k.type) === _.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
     Z = (0, R.Sw)(null == (t = a.interaction) ? true : t.user, s),
     F = (0, R.Sw)(U, s),
-    V = i.useMemo(() => e.compact ? (0, w.Z)((0, N.vc)(u()(), "LT")) : null, [e.compact]),
+    V = i.useMemo(() => e.compact ? (0, D.Z)((0, N.vc)(u()(), "LT")) : null, [e.compact]),
     z = (0, h.NX)(s.id),
     q = a.interaction;
   if (null == q || null == Z) return null;

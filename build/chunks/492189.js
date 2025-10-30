@@ -60,7 +60,7 @@ var Chunk98405 = require("./98405.js"),
   },
   $ = function(e) {
     var t;
-    return T(V, e) || "ArrayBuffer" === (t = y(e)) || "SharedArrayBuffer" === t
+    return S(V, e) || "ArrayBuffer" === (t = y(e)) || "SharedArrayBuffer" === t
   },
   ee = function(e, t) {
     return q(e) && !v(t) && t in e && _(+t) && t >= 0
@@ -91,7 +91,7 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
       var n = k(e);
       return n.view[c](t * o + n.byteOffset, true)
     },
-    T = function(e, t, r) {
+    S = function(e, t, r) {
       var i = k(e);
       i.view[d](t * o + i.byteOffset, n ? g(r) : r, true)
     },
@@ -101,7 +101,7 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
           return v(this, t)
         },
         set: function(e) {
-          return T(this, t, e)
+          return S(this, t, e)
         },
         enumerable: true
       })
@@ -110,7 +110,7 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
     return u(e, b), M(function() {
       return O(t) ? $(t) ? true !== r ? new _(t, m(n, o), r) : true !== n ? new _(t, m(n, o)) : new _(t) : q(t) ? L(E, t) : a(C, E, t) : new _(h(t))
     }(), e, E)
-  }), S && S(E, K), N(A(_), function(e) {
+  }), T && T(E, K), N(A(_), function(e) {
     e in E || f(E, e, _[e])
   }), E.prototype = b) : (E = t(function(e, t, n, r) {
     u(e, b);
@@ -134,12 +134,12 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
         length: l,
         view: new H(i)
       }); c < l;) P(e, c++)
-  }), S && S(E, K), b = E.prototype = I(z)), b.constructor !== E && f(b, "constructor", E), U(b).TypedArrayConstructor = E, W && f(b, W, l);
-  var D = E !== _;
+  }), T && T(E, K), b = E.prototype = I(z)), b.constructor !== E && f(b, "constructor", E), U(b).TypedArrayConstructor = E, W && f(b, W, l);
+  var w = E !== _;
   y[l] = E, r({
     global: true,
     constructor: true,
-    forced: D,
+    forced: w,
     sham: !Y
   }, y), X in E || f(E, X, o), X in b || f(b, X, o), R(l)
 }) : module.exports = function() {}

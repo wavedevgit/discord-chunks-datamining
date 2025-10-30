@@ -9,17 +9,17 @@ require.d(exports, {
   RD: () => v,
   Rb: () => u,
   Se: () => m,
-  Sy: () => w,
+  Sy: () => D,
   XE: () => f,
   YB: () => b,
   Yo: () => _,
   ZU: () => N,
-  aq: () => S,
+  aq: () => T,
   dj: () => p,
   eV: () => R,
   hS: () => g,
-  hb: () => D,
-  lj: () => T,
+  hb: () => w,
+  lj: () => S,
   mB: () => E,
   o4: () => c,
   qA: () => y,
@@ -259,13 +259,13 @@ let I = (0, Chunk427164.le)({
   }
 });
 
-function T(e) {
+function S(e) {
   return I.getConfig({
     location: e
   })
 }
 
-function S(e) {
+function T(e) {
   return I.useConfig({
     location: e
   })
@@ -403,14 +403,14 @@ let P = (0, Chunk818083.B)({
   }]
 });
 
-function D(e) {
-  let t = w(e, false);
+function w(e) {
+  let t = D(e, false);
   if (i()(P.definition.defaultConfig, t)) return "control";
   let n = P.definition.treatments.find(e => i()(e.config, t));
   return null == n ? "control" : "treatment-".concat(n.id)
 }
 
-function w(e) {
+function D(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   return P.getCurrentConfig({
     location: e
@@ -420,5 +420,5 @@ function w(e) {
 }
 
 function L() {
-  T("OVERLAY_INITIALIZED"), C("OVERLAY_INITIALIZED"), w("OVERLAY_INITIALIZED")
+  S("OVERLAY_INITIALIZED"), C("OVERLAY_INITIALIZED"), D("OVERLAY_INITIALIZED")
 }

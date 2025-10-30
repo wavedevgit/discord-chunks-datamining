@@ -69,26 +69,26 @@ function I(e) {
   } = (0, h.s)(), {
     experiments: O,
     overridesInfo: I
-  } = (0, _.Q)(), T = i.useMemo(() => null == n ? null : null != g[n] ? g[n] : O[n], [g, O, n]), S = i.useMemo(() => {
+  } = (0, _.Q)(), S = i.useMemo(() => null == n ? null : null != g[n] ? g[n] : O[n], [g, O, n]), T = i.useMemo(() => {
     if (null == n);
     else if (null != E[n]) return E[n];
     else if (null != I[n]) return I[n]
-  }, [E, I, n]), A = s.default.getId(), C = (0, p.a)(T, A), N = i.useMemo(() => null == C || null == T ? null : T.system === d.I.LEGACY ? u.Z.getExperimentBucketName(C.bucket) : T.system === d.I.APEX ? "Variant ".concat(C.variantId) : null, [C, T]), R = (0, a.e7)([l.default], () => {
+  }, [E, I, n]), A = s.default.getId(), C = (0, p.a)(S, A), N = i.useMemo(() => null == C || null == S ? null : S.system === d.I.LEGACY ? u.Z.getExperimentBucketName(C.bucket) : S.system === d.I.APEX ? "Variant ".concat(C.variantId) : null, [C, S]), R = (0, a.e7)([l.default], () => {
     let e = l.default.getCurrentUser();
     return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
   });
-  if (null == n || null == T) return null;
-  let P = (0, f.a)(T).find(e => e.value === c),
-    D = +(null != P),
-    w = null != S && null != P && S.variantId === P.value,
+  if (null == n || null == S) return null;
+  let P = (0, f.a)(S).find(e => e.value === c),
+    w = +(null != P),
+    D = null != T && null != P && T.variantId === P.value,
     L = () => {
-      null != P && (w ? (0, d.rX)(T.system, n, null) : (0, d.rX)(T.system, n, P.value))
+      null != P && (D ? (0, d.rX)(S.system, n, null) : (0, d.rX)(S.system, n, P.value))
     },
     x = (0, r.jsx)(v, {
       url: t
     }),
     M = null;
-  return (1 === D && null != P ? M = (0, r.jsx)(o.Text, {
+  return (1 === w && null != P ? M = (0, r.jsx)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     children: P.label
@@ -114,7 +114,7 @@ function I(e) {
               gap: 0,
               children: [(0, r.jsx)(o.Text, {
                 variant: "text-md/semibold",
-                children: T.title
+                children: S.title
               }), M]
             })]
           }), x]
@@ -122,15 +122,15 @@ function I(e) {
       })
     }), null != P ? (0, r.jsx)(o.Button, {
       fullWidth: true,
-      variant: w ? "critical-primary" : "primary",
-      text: w ? "Clear Treatment ".concat(P.value) : "Apply Treatment ".concat(P.value),
+      variant: D ? "critical-primary" : "primary",
+      text: D ? "Clear Treatment ".concat(P.value) : "Apply Treatment ".concat(P.value),
       onClick: L
     }) : (0, r.jsx)("div", {
       className: m.experimentOverride,
       children: (0, r.jsx)(f.y, {
-        experiment: T,
+        experiment: S,
         experimentId: n,
-        overrideInfo: S
+        overrideInfo: T
       })
     })]
   }) : null

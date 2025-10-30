@@ -41,13 +41,13 @@ function E(e) {
       } = e;
       return t !== n.ownerId
     }).length > 0
-  })), v = (0, i.e7)([p.Z], () => p.Z.getChannel(null == n ? true : n.channelId)), [I, T] = (0, d.wq)(v), S = (0, f.Aq)(), A = null != y && null != n && y.state !== m.jm8.ENDED && y.ownerId === n.ownerId, C = e => {
+  })), v = (0, i.e7)([p.Z], () => p.Z.getChannel(null == n ? true : n.channelId)), [I, S] = (0, d.wq)(v), T = (0, f.Aq)(), A = null != y && null != n && y.state !== m.jm8.ENDED && y.ownerId === n.ownerId, C = e => {
     null != n && (null == E || E(), l.default.selectVoiceChannel(n.channelId), A || (0, c.iV)(n, {
       forceMultiple: e
-    }), S.dispatch(m.CkL.POPOUT_CLOSE), h.S.dispatch(m.CkL.MODAL_CLOSE), s.Z.popAll())
+    }), T.dispatch(m.CkL.POPOUT_CLOSE), h.S.dispatch(m.CkL.MODAL_CLOSE), s.Z.popAll())
   };
   if (null == n) return null;
-  let N = (0, d.P9)(T);
+  let N = (0, d.P9)(S);
   return t ? N = g.intl.string(g.t.XvBdeT) : A && (N = g.intl.string(g.t["JH1SJ+"])), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.Button, {
       size: "sm",

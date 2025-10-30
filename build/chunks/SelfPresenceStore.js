@@ -32,15 +32,15 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let T = false,
-  S = Chunk981631.Skl.ONLINE,
+let S = false,
+  T = Chunk981631.Skl.ONLINE,
   A = Chunk981631.Skl.UNKNOWN,
   C = 0,
   N = [],
   R = [],
   P = false,
-  D = true,
-  w = Object.freeze([]),
+  w = true,
+  D = Object.freeze([]),
   L = Object.freeze([]),
   x = [],
   M = [];
@@ -80,37 +80,37 @@ function G(e) {
 }
 
 function B() {
-  D = true, A = S, Z()
+  w = true, A = T, Z()
 }
 
 function Z() {
   var e;
-  if (C = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0, P = Chunk517100.Z.isAFK(), D) S = A;
-  else if (T) S = Chunk981631.Skl.INVISIBLE;
+  if (C = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0, P = Chunk517100.Z.isAFK(), w) T = A;
+  else if (S) T = Chunk981631.Skl.INVISIBLE;
   else {
     let e = Chunk695346.co.getSetting();
-    S = module !== Chunk981631.Skl.UNKNOWN ? module : Chunk981631.Skl.ONLINE
+    T = module !== Chunk981631.Skl.UNKNOWN ? module : Chunk981631.Skl.ONLINE
   }
-  S === Chunk981631.Skl.ONLINE && C > 0 && (S = Chunk981631.Skl.IDLE);
+  T === Chunk981631.Skl.ONLINE && C > 0 && (T = Chunk981631.Skl.IDLE);
   let t = false,
-    n = D || S === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(G);
+    n = w || T === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(G);
   a()(N, require) || (N = require, R = k(require), t = true);
   let r = Chunk797258.Z.getRemoteActivities();
-  w !== r && (w = r, t = true);
+  D !== r && (D = r, t = true);
   let i = Chunk797258.Z.getHiddenActivities();
-  L !== Chunk348327 && (L = Chunk348327), exports && (M = k(x = s()([...N, ...w.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
+  L !== Chunk348327 && (L = Chunk348327), exports && (M = k(x = s()([...N, ...D.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
 }
 
 function F(e) {
-  return T = e.invisible, Z()
+  return S = e.invisible, Z()
 }
 
 function V() {
-  return T = false, Z()
+  return S = false, Z()
 }
 
 function H() {
-  D = false, A = Chunk981631.Skl.UNKNOWN, Z(), Chunk158776.Z.setCurrentUserOnConnectionOpen(S, x)
+  w = false, A = Chunk981631.Skl.UNKNOWN, Z(), Chunk158776.Z.setCurrentUserOnConnectionOpen(T, x)
 }
 
 function Y() {
@@ -122,14 +122,14 @@ class W extends(r = Chunk442837.ZP.Store) {
   }
   getLocalPresence() {
     return {
-      status: S,
+      status: T,
       since: C,
       activities: R,
       afk: P
     }
   }
   getStatus() {
-    return S
+    return T
   }
   getActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];

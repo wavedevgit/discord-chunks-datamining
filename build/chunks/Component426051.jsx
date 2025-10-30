@@ -32,8 +32,8 @@ function _(e) {
   }, []), I = i.useCallback(() => {
     c.Z.closeChannelSidebar(u.uZ), b && (0, o.Kh)(_.id)
   }, [_.id, b]), {
-    acceptMessageRequest: v,
-    isAcceptLoading: y,
+    acceptMessageRequest: y,
+    isAcceptLoading: v,
     isUserProfileLoading: C,
     isOptimisticAccepted: S
   } = (0, p.m)({
@@ -41,7 +41,7 @@ function _(e) {
     onAcceptSuccess: I,
     onRejectSuccess: O,
     onError: E
-  }), T = y || C, N = T || S;
+  }), T = v || C, N = T || S;
   return (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(f.Z, {
@@ -55,7 +55,7 @@ function _(e) {
         size: "sm",
         text: h.intl.string(h.t.vicfl6),
         onClick: e => {
-          v(_.id), e.stopPropagation()
+          y(_.id), e.stopPropagation()
         },
         disabled: N,
         loading: T

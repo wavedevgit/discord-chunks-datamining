@@ -38,10 +38,10 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
       onUserContextMenu: n,
       onChannelContextMenu: l,
       quest: a
-    } = e, s = i.useRef(null), c = (0, r.jsx)(y.Z, {
+    } = e, s = i.useRef(null), c = (0, r.jsx)(v.Z, {
       party: t,
       onUserContextMenu: n
-    }), d = (0, r.jsx)(v.Z, {
+    }), d = (0, r.jsx)(y.Z, {
       party: t,
       onChannelContextMenu: l,
       quest: a

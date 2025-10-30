@@ -25,9 +25,9 @@ e = require.nmd(module),
       },
       v = 35,
       I = Math.floor,
-      T = String.fromCharCode;
+      S = String.fromCharCode;
 
-    function S(e) {
+    function T(e) {
       throw RangeError(O[e])
     }
 
@@ -50,7 +50,7 @@ e = require.nmd(module),
     function R(e) {
       return A(e, function(e) {
         var t = "";
-        return e > 65535 && (e -= 65536, t += T(e >>> 10 & 1023 | 55296), e = 56320 | 1023 & e), t += T(e)
+        return e > 65535 && (e -= 65536, t += S(e >>> 10 & 1023 | 55296), e = 56320 | 1023 & e), t += S(e)
       }).join("")
     }
 
@@ -58,11 +58,11 @@ e = require.nmd(module),
       return e - 48 < 10 ? e - 22 : e - 65 < 26 ? e - 65 : e - 97 < 26 ? e - 97 : u
     }
 
-    function D(e, t) {
+    function w(e, t) {
       return e + 22 + 75 * (e < 26) - ((0 != t) << 5)
     }
 
-    function w(e, t, n) {
+    function D(e, t, n) {
       var r = 0;
       for (e = n ? I(e / p) : e >> 1, e += I(e / t); e > v * f >> 1; r += u) e = I(e / v);
       return I(r + (v + 1) * e / (e + _))
@@ -74,23 +74,23 @@ e = require.nmd(module),
         y = 0,
         O = m,
         v = h;
-      for ((n = e.lastIndexOf(g)) < 0 && (n = 0), r = 0; r < n; ++r) e.charCodeAt(r) >= 128 && S("not-basic"), E.push(e.charCodeAt(r));
+      for ((n = e.lastIndexOf(g)) < 0 && (n = 0), r = 0; r < n; ++r) e.charCodeAt(r) >= 128 && T("not-basic"), E.push(e.charCodeAt(r));
       for (i = n > 0 ? n + 1 : 0; i < b;) {
-        for (a = y, o = 1, s = u; i >= b && S("invalid-input"), ((l = P(e.charCodeAt(i++))) >= u || l > I((c - y) / o)) && S("overflow"), y += l * o, !(l < (_ = s <= v ? d : s >= v + f ? f : s - v)); s += u) o > I(c / (p = u - _)) && S("overflow"), o *= p;
-        v = w(y - a, t = E.length + 1, 0 == a), I(y / t) > c - O && S("overflow"), O += I(y / t), y %= t, E.splice(y++, 0, O)
+        for (a = y, o = 1, s = u; i >= b && T("invalid-input"), ((l = P(e.charCodeAt(i++))) >= u || l > I((c - y) / o)) && T("overflow"), y += l * o, !(l < (_ = s <= v ? d : s >= v + f ? f : s - v)); s += u) o > I(c / (p = u - _)) && T("overflow"), o *= p;
+        v = D(y - a, t = E.length + 1, 0 == a), I(y / t) > c - O && T("overflow"), O += I(y / t), y %= t, E.splice(y++, 0, O)
       }
       return R(E)
     }
 
     function x(e) {
       var t, n, r, i, a, o, s, l, _, p, E, b, y, O, v, A = [];
-      for (o = 0, b = (e = N(e)).length, t = m, n = 0, a = h; o < b; ++o)(E = e[o]) < 128 && A.push(T(E));
+      for (o = 0, b = (e = N(e)).length, t = m, n = 0, a = h; o < b; ++o)(E = e[o]) < 128 && A.push(S(E));
       for (r = i = A.length, i && A.push(g); r < b;) {
         for (s = c, o = 0; o < b; ++o)(E = e[o]) >= t && E < s && (s = E);
-        for (s - t > I((c - n) / (y = r + 1)) && S("overflow"), n += (s - t) * y, t = s, o = 0; o < b; ++o)
-          if ((E = e[o]) < t && ++n > c && S("overflow"), E == t) {
-            for (l = n, _ = u; !(l < (p = _ <= a ? d : _ >= a + f ? f : _ - a)); _ += u) v = l - p, O = u - p, A.push(T(D(p + v % O, 0))), l = I(v / O);
-            A.push(T(D(l, 0))), a = w(n, y, r == i), n = 0, ++r
+        for (s - t > I((c - n) / (y = r + 1)) && T("overflow"), n += (s - t) * y, t = s, o = 0; o < b; ++o)
+          if ((E = e[o]) < t && ++n > c && T("overflow"), E == t) {
+            for (l = n, _ = u; !(l < (p = _ <= a ? d : _ >= a + f ? f : _ - a)); _ += u) v = l - p, O = u - p, A.push(S(w(p + v % O, 0))), l = I(v / O);
+            A.push(S(w(l, 0))), a = D(n, y, r == i), n = 0, ++r
           }++ n, ++t
       }
       return A.join("")

@@ -88,8 +88,8 @@ function $(e) {
         }
         return e
       }({}, t), r = r = {
-        layoutId: B.$S,
-        version: B.HN
+        layoutId: Y.$S,
+        version: Y.HN
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -217,7 +217,7 @@ function ea(e) {
   }, () => {
     n.removeEventListener("keydown", el), n.removeEventListener("keyup", el), X && (n.removeEventListener("focus", ei), n.removeEventListener("blur", er))
   });
-  let B = r.useRef(null);
+  let Y = r.useRef(null);
   return (0, p.ZP)(() => {
     var e;
     let t = (0, G.pL)(),
@@ -233,28 +233,28 @@ function ea(e) {
       } = (0, P.Rb)("overlay"),
       c = null != (e = x.default.getFocusedPID()) ? e : (0, w.getPID)();
     if (M.default.hasChangedRenderMode(c)) return;
-    let p = V.Z.isNotificationDisabled(Y.n0.WelcomeNudge),
-      h = V.Z.isNotificationDisabled(Y.n0.GoLiveNudge),
-      f = V.Z.isNotificationDisabled(Y.n0.ActivityInvite),
+    let p = V.Z.isNotificationDisabled(B.n0.WelcomeNudge),
+      h = V.Z.isNotificationDisabled(B.n0.GoLiveNudge),
+      f = V.Z.isNotificationDisabled(B.n0.ActivityInvite),
       m = [];
     p || (m.push({
-      type: Y.nc.WELCOME
+      type: B.nc.WELCOME
     }), !h && (a && s ? m.push({
-      type: Y.nc.GO_LIVE_VOICE,
+      type: B.nc.GO_LIVE_VOICE,
       game: t,
       voiceChannelId: n,
       voiceGuild: r
     }) : a && m.push({
-      type: Y.nc.GO_LIVE_NON_VOICE,
+      type: B.nc.GO_LIVE_NON_VOICE,
       game: t
     })), u && !f && m.push({
-      type: Y.nc.CONTENT_INVENTORY,
+      type: B.nc.CONTENT_INVENTORY,
       entries: []
-    })), null != B.current && clearTimeout(B.current), B.current = setTimeout(() => {
+    })), null != Y.current && clearTimeout(Y.current), Y.current = setTimeout(() => {
       d.Z.overlayMounted(...m)
     }, 1e3)
   }), (0, p.zq)(() => {
-    null != B.current && (clearTimeout(B.current), B.current = null)
+    null != Y.current && (clearTimeout(Y.current), Y.current = null)
   }), r.useEffect(() => {
     if (C.S.dispatch(Q.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: true

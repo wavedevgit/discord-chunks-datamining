@@ -97,17 +97,17 @@ function W(e) {
     tryItOutBanner: J,
     tryItOutProfileEffect: $,
     tryItOutAvatarDecoration: ee
-  } = (0, a.cj)([S.Z], () => {
-    let e = S.Z.getAllPending(),
-      t = S.Z.getErrors();
-    return Y(V({}, e, S.Z.getAllTryItOut()), {
+  } = (0, a.cj)([T.Z], () => {
+    let e = T.Z.getAllPending(),
+      t = T.Z.getErrors();
+    return Y(V({}, e, T.Z.getAllTryItOut()), {
       errors: t
     })
   }), et = (0, p.Z)($), {
     preset: en,
     onShuffle: er
   } = (0, g.Z)(), ei = i.useRef(null);
-  (0, T.Z)(ei, G.Y_.TRY_IT_OUT);
+  (0, S.Z)(ei, G.Y_.TRY_IT_OUT);
   let {
     analyticsLocations: ea,
     newestAnalyticsLocation: eo,
@@ -140,10 +140,10 @@ function W(e) {
     }) : B.intl.string(B.t.pj0XBN);
   return W ? (0, r.jsx)(c.Gt, {
     value: ea,
-    children: (0, r.jsxs)(w.Z, {
+    children: (0, r.jsxs)(D.Z, {
       ref: ei,
       className: Z.tryItOutSection,
-      type: w.Y.PREMIUM,
+      type: D.Y.PREMIUM,
       isShown: true,
       hasBackground: true,
       children: [(0, r.jsx)(N.Z, {
@@ -203,7 +203,7 @@ function W(e) {
             className: Z.customizationSection,
             user: F,
             sectionTitle: B.intl.string(B.t["7v0T9P"])
-          }, "decoration"), (0, r.jsx)(D.Z, {
+          }, "decoration"), (0, r.jsx)(w.Z, {
             user: F,
             className: Z.customizationSection
           }), (0, r.jsx)(x.Z, {

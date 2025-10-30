@@ -15,13 +15,13 @@ var Chunk951288 = require("./951288.js"),
 let h = 0,
   p = e => {
     switch (e) {
-      case a._vf.TOP_LEFT:
+      case s._vf.TOP_LEFT:
         return c.intl.string(c.t.xlchpU);
-      case a._vf.TOP_RIGHT:
+      case s._vf.TOP_RIGHT:
         return c.intl.string(c.t["4uHRHH"]);
-      case a._vf.BOTTOM_LEFT:
+      case s._vf.BOTTOM_LEFT:
         return c.intl.string(c.t.ovWFnD);
-      case a._vf.BOTTOM_RIGHT:
+      case s._vf.BOTTOM_RIGHT:
         return c.intl.string(c.t["M/9V75"]);
       default:
         return c.intl.string(c.t.AlY4Za)
@@ -33,27 +33,27 @@ function g(e) {
   let {
     position: t,
     onChange: n
-  } = e, [o] = r.useState(() => "notification-position-selector-".concat(h++)), g = t === a._vf.DISABLED ? c.intl.string(c.t.R6LxVf) : c.intl.formatToPlainString(c.t["XXHDM/"], {
+  } = e, [o] = r.useState(() => "notification-position-selector-".concat(h++)), g = t === s._vf.DISABLED ? c.intl.string(c.t.R6LxVf) : c.intl.formatToPlainString(c.t["XXHDM/"], {
     position: p(t)
   });
   return (0, i.jsxs)("div", {
-    children: [(0, i.jsx)(s.tEY, {
+    children: [(0, i.jsx)(a.tEY, {
       within: true,
       offset: false,
       children: (0, i.jsx)("div", {
         className: l()(d.wrapper, {
-          [d.disabledSelected]: t === a._vf.DISABLED
+          [d.disabledSelected]: t === s._vf.DISABLED
         }),
         children: f.map(e => (0, i.jsxs)("label", {
           className: l()({
             [d.selected]: e === t,
-            [d.disabled]: e === a._vf.DISABLED,
-            [d.topRight]: e === a._vf.TOP_RIGHT,
-            [d.topLeft]: e === a._vf.TOP_LEFT,
-            [d.bottomRight]: e === a._vf.BOTTOM_RIGHT,
-            [d.bottomLeft]: e === a._vf.BOTTOM_LEFT
+            [d.disabled]: e === s._vf.DISABLED,
+            [d.topRight]: e === s._vf.TOP_RIGHT,
+            [d.topLeft]: e === s._vf.TOP_LEFT,
+            [d.bottomRight]: e === s._vf.BOTTOM_RIGHT,
+            [d.bottomLeft]: e === s._vf.BOTTOM_LEFT
           }),
-          children: [p(e), e === a._vf.DISABLED ? (0, i.jsx)(s.t6m, {
+          children: [p(e), e === s._vf.DISABLED ? (0, i.jsx)(a.t6m, {
             size: "md",
             color: "currentColor",
             className: d.disabledIcon
@@ -66,7 +66,7 @@ function g(e) {
           })]
         }, e))
       })
-    }), (0, i.jsx)(s.Text, {
+    }), (0, i.jsx)(a.Text, {
       variant: "text-sm/normal",
       className: u.marginTop8,
       children: g

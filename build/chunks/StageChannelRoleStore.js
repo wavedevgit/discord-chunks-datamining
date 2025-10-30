@@ -65,14 +65,14 @@ function I(e, t) {
   return E[t][e] = r, r
 }
 
-function T(e, t) {
+function S(e, t) {
   var n;
   if (null == t) returnfalse;
   let r = l.Z.getChannel(t);
   return null != r && !!r.isGuildStageVoice() && (null == (n = E[t]) || delete n[e], true)
 }
 
-function S(e, t) {
+function T(e, t) {
   for (let n in E) {
     let r = l.Z.getBasicChannel(n);
     null != r && r.guild_id === t && delete E[n][e]
@@ -105,7 +105,7 @@ function R(e) {
     guildId: t,
     user: n
   } = e;
-  return null != n && null != t && S(n.id, t)
+  return null != n && null != t && T(n.id, t)
 }
 
 function P(e) {
@@ -117,15 +117,15 @@ function P(e) {
       userId: n,
       channelId: r
     } = t;
-    return T(n, r) || e
+    return S(n, r) || e
   }, false)
 }
 
-function D(e) {
+function w(e) {
   return A(e.guildId)
 }
 
-function w() {
+function D() {
   E = {}
 }
 
@@ -167,11 +167,11 @@ class x extends(r = Chunk442837.ZP.Store) {
 g(x, "displayName", "StageChannelRoleStore");
 let M = new x(Chunk570140.Z, {
   CHANNEL_UPDATES: C,
-  CONNECTION_OPEN: w,
+  CONNECTION_OPEN: D,
   GUILD_MEMBER_REMOVE: R,
   GUILD_MEMBER_UPDATE: R,
   GUILD_ROLE_UPDATE: N,
-  PASSIVE_UPDATE_V2: D,
+  PASSIVE_UPDATE_V2: w,
   VOICE_STATE_UPDATES: P,
   GUILD_CREATE: L,
   GUILD_DELETE: L

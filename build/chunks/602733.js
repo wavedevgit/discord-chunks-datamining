@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   UD: () => A,
-  ZL: () => S,
+  ZL: () => T,
   ao: () => C,
   kZ: () => O,
   lr: () => y,
@@ -64,7 +64,7 @@ function I(e) {
   return m.Z.fromServer(t)
 }
 
-function T(e) {
+function S(e) {
   var t, n;
   let r = e.find(e => e.type === i.z.FEED);
   if (null == r) return [];
@@ -77,7 +77,7 @@ function T(e) {
   return o
 }
 
-function S(e) {
+function T(e) {
   let {
     defaultWishlistId: t
   } = (0, o.cj)([f.Z], () => ({
@@ -100,7 +100,7 @@ function S(e) {
   return {
     defaultWishlistId: t,
     wishlist: n,
-    popularCollectiblesProducts: r.useMemo(() => s || null == l || d ? [] : T(l), [s, l, d]),
+    popularCollectiblesProducts: r.useMemo(() => s || null == l || d ? [] : S(l), [s, l, d]),
     isFetchingWishlist: i,
     isFetchingShopHome: !s && d,
     isFetchingCategories: p,

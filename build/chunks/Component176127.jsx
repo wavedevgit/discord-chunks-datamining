@@ -1,7 +1,7 @@
 /** Chunk was on 88647 **/
 /** chunk id: 176127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => d
 }), require("./583741.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,9 +9,11 @@ var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk435064 = require("./435064.js"),
+  Chunk894694 = require("./894694.js"),
+  Chunk367825 = require("./367825.jsx"),
   Chunk538454 = require("./538454.js");
 
-function c() {
+function d() {
   var e, t;
   let n = (0, Chunk442837.Wu)([Chunk435064.Z], () => {
     var e;
@@ -53,9 +55,11 @@ function c() {
       return n
     })(Object(exports)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), module)).map((e, t) => null != e ? (0, r.jsx)("img", {
+    }), module)).map((e, t) => null != e ? e.type === s.NJ.VOICE_CLIP ? (0, r.jsx)(c.Z, {
+      className: u.thumbnail
+    }, e.id) : (0, r.jsx)("img", {
       alt: "",
-      className: s.thumbnail,
+      className: u.thumbnail,
       src: e.thumbnail
     }, e.id) : (0, r.jsx)("div", {}, "placeholder-".concat(t))).reverse()
   })

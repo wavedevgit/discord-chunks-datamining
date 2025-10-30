@@ -70,7 +70,7 @@ function p(e) {
     defaultForumLayout: O,
     defaultTagSetting: v,
     iconEmoji: I,
-    themeColor: T
+    themeColor: S
   } = e;
   i.Z.dispatch({
     type: "CHANNEL_SETTINGS_UPDATE",
@@ -96,7 +96,7 @@ function p(e) {
     defaultForumLayout: O,
     defaultTagSetting: v,
     iconEmoji: I,
-    themeColor: T
+    themeColor: S
   })
 }
 async function h(e, t) {
@@ -117,15 +117,15 @@ async function h(e, t) {
     defaultReactionEmoji: O,
     rtcRegion: v,
     videoQualityMode: I,
-    autoArchiveDuration: T,
-    locked: S,
+    autoArchiveDuration: S,
+    locked: T,
     invitable: A,
     availableTags: C,
     defaultSortOrder: N,
     defaultForumLayout: R,
     defaultTagSetting: P,
-    iconEmoji: D,
-    themeColor: w
+    iconEmoji: w,
+    themeColor: D
   } = t, L = s.Z.getChannel(e);
   return i.Z.dispatch({
     type: "CHANNEL_SETTINGS_SUBMIT"
@@ -147,8 +147,8 @@ async function h(e, t) {
       template: y,
       rtc_region: v,
       video_quality_mode: I,
-      auto_archive_duration: T,
-      locked: S,
+      auto_archive_duration: S,
+      locked: T,
       invitable: A,
       default_reaction_emoji: null != O ? {
         emoji_id: null == O ? true : O.emojiId,
@@ -164,11 +164,11 @@ async function h(e, t) {
       default_sort_order: N,
       default_forum_layout: R,
       default_tag_setting: P,
-      icon_emoji: null != D ? {
-        id: D.id,
-        name: D.name
-      } : null === D ? null : true,
-      theme_color: w
+      icon_emoji: null != w ? {
+        id: w.id,
+        name: w.name
+      } : null === w ? null : true,
+      theme_color: D
     },
     oldFormErrors: true,
     rejectWithError: false

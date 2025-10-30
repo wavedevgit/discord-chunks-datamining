@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk335260 = require("./335260.js");
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,27 +59,27 @@ function E(e, t) {
   } = c.I6[j], {
     isLoading: E,
     saveRule: S,
-    errorMessage: _
+    errorMessage: P
   } = (0, d.w)(), {
-    createNewEditingRule: P
-  } = (0, d.V)(), [Z, T] = i.useState(false), [I, w] = (0, s.I2)(t), {
-    rulesByTriggerType: A,
-    updateRule: N
+    createNewEditingRule: Z
+  } = (0, d.V)(), [_, T] = i.useState(false), [I, N] = (0, s.I2)(t), {
+    rulesByTriggerType: w,
+    updateRule: A
   } = (0, s.pH)(t), x = i.useMemo(() => {
     var e;
-    return null != (e = A[j]) ? e : []
-  }, [A]), D = 0 === x.length, M = n > x.length && !D;
+    return null != (e = w[j]) ? e : []
+  }, [w]), M = 0 === x.length, D = n > x.length && !M;
   if (!i.useMemo(() => (0, u.ze)(t), [t]) || null == e || 0 === e.length || null == t) return null;
   let C = e.split(" "),
     R = C.length;
   try {
-    (0, o.km)(C, O.RH)
+    (0, o.km)(C, y.RH)
   } catch (e) {
     return null
   }
   let L = () => {
       null != t && ((0, a.Zy)(), b.Z.open(t, p.pNK.GUILD_AUTOMOD), setTimeout(() => {
-        P(t, j, {
+        Z(t, j, {
           triggerMetadata: {
             keywordFilter: [e],
             regexPatterns: [],
@@ -91,20 +91,20 @@ function E(e, t) {
     k = async t => {
       var n, r;
       if ((0, a.Zy)(), !await (0, g.XN)(t.name, e)) return;
-      let i = v(h({}, t), {
-        triggerMetadata: v(h({}, t.triggerMetadata), {
+      let i = v(m({}, t), {
+        triggerMetadata: v(m({}, t.triggerMetadata), {
           keywordFilter: [...null != (r = null == (n = t.triggerMetadata) ? true : n.keywordFilter) ? r : [], e]
         })
       });
-      await S(i, x), N(i), null != _ ? (0, l.showToast)((0, l.createToast)(y.intl.string(y.t.wH6L0r), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(y.intl.string(y.t["0rdYm2"]), l.ToastType.SUCCESS))
+      await S(i, x), A(i), null != P ? (0, l.showToast)((0, l.createToast)(O.intl.string(O.t.wH6L0r), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(O.intl.string(O.t["0rdYm2"]), l.ToastType.SUCCESS))
     }, G = (0, r.jsx)(l.sNh, {
       id: "automod-rules-loading",
-      label: y.intl.string(y.t.ZTNur7)
+      label: O.intl.string(O.t.ZTNur7)
     });
   return I || (G = (0, r.jsxs)(r.Fragment, {
-    children: [D && (0, r.jsx)(l.sNh, {
+    children: [M && (0, r.jsx)(l.sNh, {
       id: "add-first-rule",
-      label: y.intl.string(y.t.f72Zqb),
+      label: O.intl.string(O.t.f72Zqb),
       action: L,
       disabled: E
     }), x.map(e => {
@@ -124,7 +124,7 @@ function E(e, t) {
         label: e.name,
         subtext: (0, r.jsx)(l.Text, {
           color: "text-muted",
-          className: m.actionTextHeader,
+          className: h.actionTextHeader,
           variant: "text-xs/normal",
           children: t.slice(2)
         }),
@@ -133,21 +133,21 @@ function E(e, t) {
         disabled: E,
         action: () => k(e)
       }, e.id)
-    }), M && (0, r.jsxs)(r.Fragment, {
+    }), D && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "add-another-rule",
-        label: y.intl.string(y.t["0K5jDE"]),
+        label: O.intl.string(O.t["0K5jDE"]),
         action: L,
         disabled: E
       })]
     })]
   })), (0, r.jsx)(l.sNh, {
     id: "guild-automod-add-selection",
-    label: y.intl.formatToPlainString(y.t.Kkjv1m, {
+    label: O.intl.formatToPlainString(O.t.Kkjv1m, {
       keywordCount: R
     }),
     onFocus: () => {
-      Z || (T(true), w())
+      _ || (T(true), N())
     },
     children: G
   })

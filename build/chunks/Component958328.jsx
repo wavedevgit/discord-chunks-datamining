@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 958328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -26,15 +26,15 @@ function v(e) {
     title: t,
     can: n
   } = e, r = n ? s.dz2 : s.Dio, i = (0, a.jsx)("div", {
-    className: l()(g.iconOuter, n ? g.iconCheck : g.iconCross),
+    className: l()(f.iconOuter, n ? f.iconCheck : f.iconCross),
     children: (0, a.jsx)(r, {
-      className: g.icon
+      className: f.icon
     })
   });
   return (0, a.jsxs)("div", {
-    className: g.scope,
+    className: f.scope,
     children: [i, (0, a.jsx)("div", {
-      className: g.scopeInner,
+      className: f.scopeInner,
       children: (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t
@@ -63,7 +63,7 @@ function j() {
         can: r
       }, t)
     }),
-    O = Object.values(null != S ? S : {}).map(e => {
+    T = Object.values(null != S ? S : {}).map(e => {
       let {
         title: t,
         flag: n
@@ -88,7 +88,7 @@ function j() {
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: null != Chunk120356 ? "Permissions in ".concat(Chunk120356.name) : "No guild selected"
-        }), O]
+        }), T]
       })]
     })
   })

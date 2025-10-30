@@ -32,8 +32,8 @@ function f(e, t) {
   } = t.displayValidation, {
     labelProps: v,
     fieldProps: I,
-    descriptionProps: T,
-    errorMessageProps: S
+    descriptionProps: S,
+    errorMessageProps: T
   } = (0, c.U)({
     ...e,
     labelElementType: "span",
@@ -78,8 +78,8 @@ function f(e, t) {
   return r.H.set(t, {
     name: R,
     form: f,
-    descriptionId: T.id,
-    errorMessageId: S.id,
+    descriptionId: S.id,
+    errorMessageId: T.id,
     validationBehavior: g
   }), {
     radioGroupProps: (0, s.d)(A, {
@@ -95,8 +95,8 @@ function f(e, t) {
       ...C
     }),
     labelProps: v,
-    descriptionProps: T,
-    errorMessageProps: S,
+    descriptionProps: S,
+    errorMessageProps: T,
     isInvalid: b,
     validationErrors: y,
     validationDetails: O

@@ -2,7 +2,7 @@
 /** chunk id: 145016, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -53,8 +53,8 @@ function g(e, t) {
   let {
     oldId: n
   } = t;
-  if (!T.isSampling(e)) returnfalse;
-  T.stopSampling(e, n), T.startSampling(e)
+  if (!S.isSampling(e)) returnfalse;
+  S.stopSampling(e, n), S.startSampling(e)
 }
 
 function E(e) {
@@ -68,15 +68,15 @@ function E(e) {
   let a = null == (t = d.default.getCurrentUser()) ? true : t.id;
   if (null == a) returnfalse;
   let o = r === a ? f.h7.AUDIO_INPUT : f.h7.AUDIO_OUTPUT;
-  if (i === f.Dg.NONE && T.isSampling(o)) T.stopSampling(o);
+  if (i === f.Dg.NONE && S.isSampling(o)) S.stopSampling(o);
   else {
-    if (i === f.Dg.NONE || T.isSampling(o)) returnfalse;
-    T.startSampling(o)
+    if (i === f.Dg.NONE || S.isSampling(o)) returnfalse;
+    S.startSampling(o)
   }
 }
 
 function b() {
-  T.reset()
+  S.reset()
 }
 let y = {
     [Chunk65154.h7.AUDIO_INPUT]: new Chunk379649.G9,
@@ -164,11 +164,11 @@ class I extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 _(I, "displayName", "DeviceFrecencyStore"), _(I, "persistKey", "DeviceFrecencyStore"), _(I, "migrations", [e => a().mapKeys(e, (e, t) => p[t])]);
-let T = new I(Chunk570140.Z, {
+let S = new I(Chunk570140.Z, {
     AUDIO_SET_INPUT_DEVICE: e => g(f.h7.AUDIO_INPUT, e),
     AUDIO_SET_OUTPUT_DEVICE: e => g(f.h7.AUDIO_OUTPUT, e),
     MEDIA_ENGINE_SET_VIDEO_DEVICE: e => g(f.h7.VIDEO_INPUT, e),
     SPEAKING: E,
     RTC_CONNECTION_CLIENT_CONNECT: b
   }),
-  S = T
+  T = S

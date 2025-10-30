@@ -2,7 +2,7 @@
 /** chunk id: 859235, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S,
+  Z: () => T,
   q: () => v
 });
 var Chunk951288 = require("./951288.js"),
@@ -83,7 +83,7 @@ function I(e) {
   e.stopPropagation()
 }
 
-function T(e, t) {
+function S(e, t) {
   let {
     id: n,
     channelId: i,
@@ -92,25 +92,25 @@ function T(e, t) {
     actions: E,
     handleEditModal: O,
     keyboardModeEnabled: v,
-    onKeyDown: T,
-    draftType: S,
+    onKeyDown: S,
+    draftType: T,
     size: A = 1
   } = e, C = (0, s.JA)(n), {
     onFocus: N
   } = C, R = y(C, ["onFocus"]), {
     handleFocus: P,
-    handleBlur: D
-  } = (0, f.b)(N), w = 0 === A, L = null != E, x = e => {
+    handleBlur: w
+  } = (0, f.b)(N), D = 0 === A, L = null != E, x = e => {
     if (v) {
       switch (e.which) {
         case _.yXg.D:
-          e.preventDefault(), c.Z.remove(i, n, S);
+          e.preventDefault(), c.Z.remove(i, n, T);
           return;
         case _.yXg.E:
           null != O && (e.preventDefault(), O(e));
           return;
         case _.yXg.BACKSPACE:
-          e.ctrlKey ? (e.preventDefault(), c.Z.clearAll(i, S)) : (e.preventDefault(), c.Z.remove(i, n, S));
+          e.ctrlKey ? (e.preventDefault(), c.Z.clearAll(i, T)) : (e.preventDefault(), c.Z.remove(i, n, T));
           return;
         case _.yXg.ARROW_UP:
           let t = e.shiftKey || e.altKey || e.ctrlKey || e.metaKey;
@@ -119,13 +119,13 @@ function T(e, t) {
             atEnd: true
           })
       }
-      null == T || T(e)
+      null == S || S(e)
     }
   };
   return (0, r.jsx)(l.tEY, {
     children: (0, r.jsx)("li", b(g({}, R), {
       onFocus: P,
-      onBlur: D,
+      onBlur: w,
       onKeyDown: x,
       className: o()(h.upload, a, {
         [h.sizeClip]: 2 === A
@@ -137,13 +137,13 @@ function T(e, t) {
           className: h.actionBarContainer,
           children: (0, r.jsx)("div", {
             className: o()(h.actionBar, {
-              [h.smallActionBar]: w
+              [h.smallActionBar]: D
             }),
             onContextMenu: I,
             "aria-label": p.intl.string(p.t["8Lu3Du"]),
             children: (0, r.jsx)(u.ZP, {
               className: o()({
-                [h.miniPopover]: w
+                [h.miniPopover]: D
               }),
               children: E
             })
@@ -153,4 +153,4 @@ function T(e, t) {
     }))
   })
 }
-let S = Chunk647438.forwardRef(T)
+let T = Chunk647438.forwardRef(S)

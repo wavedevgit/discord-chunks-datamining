@@ -46,8 +46,8 @@ function j(e) {
     }, []), i.useEffect(() => {
       D && !l.tq && (0, d.M)(t, S.oC.ROLE_SUBSCRIPTIONS)
     }, [t, D]), l.tq && D) {
-    let e = null == n ? v.J.NOT_GUILD_MEMBER : v.J.GUILD_NOT_ELIGIBLE;
-    return (0, r.jsx)(v.z, {
+    let e = null == n ? y.J.NOT_GUILD_MEMBER : y.J.GUILD_NOT_ELIGIBLE;
+    return (0, r.jsx)(y.z, {
       errorType: e
     })
   }
@@ -74,7 +74,7 @@ function j(e) {
             guild: n
           })
         })
-      }) : (0, r.jsx)(y.Z, {})
+      }) : (0, r.jsx)(v.Z, {})
     })]
   })
 }

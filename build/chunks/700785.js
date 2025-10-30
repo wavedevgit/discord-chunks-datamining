@@ -40,7 +40,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,14 +49,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -66,8 +66,8 @@ let A = Chunk149765.vB(0),
   N = Chunk149765.$e(Chunk981631.Plq.CREATE_INSTANT_INVITE, Chunk981631.Plq.CHANGE_NICKNAME, Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.SEND_MESSAGES, Chunk981631.Plq.EMBED_LINKS, Chunk981631.Plq.ATTACH_FILES, Chunk981631.Plq.READ_MESSAGE_HISTORY, Chunk981631.Plq.MENTION_EVERYONE, Chunk981631.Plq.USE_EXTERNAL_EMOJIS, Chunk981631.Plq.USE_EXTERNAL_STICKERS, Chunk981631.Plq.ADD_REACTIONS, Chunk981631.Plq.CREATE_PUBLIC_THREADS, Chunk981631.Plq.CREATE_PRIVATE_THREADS, Chunk981631.Plq.SEND_MESSAGES_IN_THREADS, Chunk981631.Plq.SEND_POLLS, Chunk981631.Plq.CONNECT, Chunk981631.Plq.SPEAK, Chunk981631.Plq.USE_VAD, Chunk981631.Plq.STREAM, Chunk981631.Plq.USE_EMBEDDED_ACTIVITIES, Chunk981631.Plq.USE_SOUNDBOARD, Chunk981631.Plq.REQUEST_TO_SPEAK, Chunk981631.Plq.USE_APPLICATION_COMMANDS, Chunk981631.Plq.CREATE_GUILD_EXPRESSIONS, Chunk981631.Plq.CREATE_EVENTS, Chunk981631.Plq.USE_EXTERNAL_APPS),
   R = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.READ_MESSAGE_HISTORY),
   P = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.SEND_MESSAGES, Chunk981631.Plq.CONNECT, Chunk981631.Plq.SPEAK, Chunk981631.Plq.STREAM, Chunk981631.Plq.USE_EMBEDDED_ACTIVITIES, Chunk981631.Plq.USE_EXTERNAL_APPS, Chunk981631.Plq.USE_EXTERNAL_EMOJIS, Chunk981631.Plq.USE_EXTERNAL_SOUNDS, Chunk981631.Plq.USE_EXTERNAL_STICKERS, Chunk981631.Plq.USE_SOUNDBOARD, Chunk981631.Plq.USE_VAD),
-  D = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.READ_MESSAGE_HISTORY),
-  w = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.READ_MESSAGE_HISTORY, Chunk981631.Plq.CHANGE_NICKNAME),
+  w = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.READ_MESSAGE_HISTORY),
+  D = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.READ_MESSAGE_HISTORY, Chunk981631.Plq.CHANGE_NICKNAME),
   L = Chunk149765.$e(Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.ADMINISTRATOR, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.MANAGE_NICKNAMES, Chunk981631.Plq.CREATE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_WEBHOOKS, Chunk981631.Plq.VIEW_AUDIT_LOG);
 
 function x(e, t, n) {
@@ -92,7 +92,7 @@ function M(e, t, n, r) {
     let o = r[t.userId];
     null != o && (n = a.Od(n, o.deny), n = a.IH(n, o.allow));
     let c = a.e$(n, I.Plq.ADMINISTRATOR);
-    (0, s.EY)(t) && !c && (n = a.hX(n, w)), (0, l.b)(t) && !c && (n = a.hX(n, D))
+    (0, s.EY)(t) && !c && (n = a.hX(n, D)), (0, l.b)(t) && !c && (n = a.hX(n, w))
   }
   return n
 }
@@ -109,7 +109,7 @@ function k(e) {
     lurkerPermissionsMask: c = R
   } = e;
   if (l) return M(r.id, n, A, i);
-  let d = (o = null != o ? S({}, E.Z.getUnsafeMutableRoles(r.id), o) : E.Z.getUnsafeMutableRoles(r.id))[(0, _.lV)(r)],
+  let d = (o = null != o ? T({}, E.Z.getUnsafeMutableRoles(r.id), o) : E.Z.getUnsafeMutableRoles(r.id))[(0, _.lV)(r)],
     f = null != d ? d.permissions : N;
   if (null != n)
     for (let e = 0; e < n.roles.length; e++) {
@@ -143,7 +143,7 @@ function j(e) {
         excludeGuildPermissions: s
       }), false)
     }
-    l = null != (c = r.computeLurkerPermissionsAllowList()) ? c : l, i = null != i ? S({}, r.permissionOverwrites, i) : r.permissionOverwrites;
+    l = null != (c = r.computeLurkerPermissionsAllowList()) ? c : l, i = null != i ? T({}, r.permissionOverwrites, i) : r.permissionOverwrites;
     let e = r.getGuildId();
     t = null != e ? b.Z.getGuild(e) : null
   } else i = null != i ? i : {}, t = r;
@@ -202,7 +202,7 @@ function U(e) {
         excludeGuildPermissions: p
       }), t)
     }
-    E = null != (r = o.computeLurkerPermissionsAllowList()) ? r : E, s = null != s ? S({}, o.permissionOverwrites, s) : o.permissionOverwrites;
+    E = null != (r = o.computeLurkerPermissionsAllowList()) ? r : E, s = null != s ? T({}, o.permissionOverwrites, s) : o.permissionOverwrites;
     let e = o.getGuildId();
     i = null != e ? b.Z.getGuild(e) : null
   } else s = null != s ? s : {}, i = o;
@@ -231,8 +231,8 @@ function B(e, t) {
     guild_id: n
   } = e;
   if (null == t || null == n || n !== t.guild_id) returnfalse;
-  let r = S({}, e.permissionOverwrites),
-    i = S({}, t.permissionOverwrites);
+  let r = T({}, e.permissionOverwrites),
+    i = T({}, t.permissionOverwrites);
   return null == r[n] && (r[n] = Y(n)), null == i[n] && (i[n] = Y(n)), Object.keys(r).length === Object.keys(i).length && !Object.keys(r).some(e => {
     let t = r[e],
       n = i[e];

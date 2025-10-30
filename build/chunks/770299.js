@@ -53,11 +53,11 @@ module.exports = function(e) {
         2: "keyword"
       }
     },
-    T = {
+    S = {
       match: r(/\./, a(...u)),
       relevance: 0
     },
-    S = u.filter(e => "string" == typeof e).concat(["_|0"]),
+    T = u.filter(e => "string" == typeof e).concat(["_|0"]),
     A = {
       variants: [{
         className: "keyword",
@@ -66,10 +66,10 @@ module.exports = function(e) {
     },
     C = {
       $pattern: a(/\b\w+/, /#\w+/),
-      keyword: S.concat(_),
+      keyword: T.concat(_),
       literal: d
     },
-    N = [E, T, A],
+    N = [E, S, A],
     R = [{
       match: r(/\./, a(...p)),
       relevance: 0
@@ -81,7 +81,7 @@ module.exports = function(e) {
       match: /->/,
       relevance: 0
     },
-    D = [P, {
+    w = [P, {
       className: "operator",
       relevance: 0,
       variants: [{
@@ -90,15 +90,15 @@ module.exports = function(e) {
         match: `\\.(\\.|${m})+`
       }]
     }],
-    w = "([0-9]_*)+",
+    D = "([0-9]_*)+",
     L = "([0-9a-fA-F]_*)+",
     x = {
       className: "number",
       relevance: 0,
       variants: [{
-        match: `\\b(${w})(\\.(${w}))?([eE][+-]?(${w}))?\\b`
+        match: `\\b(${D})(\\.(${D}))?([eE][+-]?(${D}))?\\b`
       }, {
-        match: `\\b0x(${L})(\\.(${L}))?([pP][+-]?(${w}))?\\b`
+        match: `\\b0x(${L})(\\.(${L}))?([pP][+-]?(${D}))?\\b`
       }, {
         match: /\b0o([0-7]_*)+\b/
       }, {
@@ -183,7 +183,7 @@ module.exports = function(e) {
           begin: /\(/,
           end: /\)/,
           keywords: I,
-          contains: [...D, x, B]
+          contains: [...w, x, B]
         }]
       }
     }, {
@@ -230,7 +230,7 @@ module.exports = function(e) {
         match: r(y, /\s*:/),
         keywords: "_|0",
         relevance: 0
-      }, ...h, H, ...N, ...R, ...D, x, B, ...W, ...K, z]
+      }, ...h, H, ...N, ...R, ...w, x, B, ...W, ...K, z]
     },
     Q = {
       begin: /</,
@@ -253,7 +253,7 @@ module.exports = function(e) {
           className: "params",
           match: y
         }]
-      }, ...h, ...N, ...D, x, B, ...K, z, X],
+      }, ...h, ...N, ...w, x, B, ...K, z, X],
       endsParent: true,
       illegal: /["']/
     },
@@ -327,7 +327,7 @@ module.exports = function(e) {
   for (let e of B.variants) {
     let t = e.contains.find(e => "interpol" === e.label);
     t.keywords = C;
-    let n = [...N, ...R, ...D, x, B, ...W];
+    let n = [...N, ...R, ...w, x, B, ...W];
     t.contains = [...n, {
       begin: /\(/,
       end: /\)/,
@@ -342,6 +342,6 @@ module.exports = function(e) {
       end: /$/,
       contains: [...h],
       relevance: 0
-    }, H, ...N, ...R, ...D, x, B, ...W, ...K, z, X]
+    }, H, ...N, ...R, ...w, x, B, ...W, ...K, z, X]
   }
 }

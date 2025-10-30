@@ -72,7 +72,7 @@ function y(e) {
   return (0, r.jsx)(d.Z, {
     className: _.actionBarButton,
     onClick: () => {
-      P || ((0, m.v)(n, m.d.CLIP), S ? (0, c.C1)() : (0, c.C1)(y.id))
+      P || ((0, m.v)(n, m.d.CLIP), S ? (0, c.br)() : (0, c.C1)(y.id))
     },
     disabled: P,
     iconComponent: I,

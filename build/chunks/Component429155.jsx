@@ -29,16 +29,16 @@ let f = 20,
       rowCount: O,
       rowCountBySection: v,
       rowHeight: I,
-      sectionHeaderHeight: T,
-      sectionFooterHeight: S,
+      sectionHeaderHeight: S,
+      sectionFooterHeight: T,
       renderUpsell: A,
       onScroll: C
-    } = e, N = i.useRef(false), R = i.useRef(null), P = (0, l.Iu)(e => e.searchQuery), D = a.useStore(e => e.activeCategoryIndex), w = i.useMemo(() => n.map(e => (0, s._O)(e.categoryInfo) ? {
+    } = e, N = i.useRef(false), R = i.useRef(null), P = (0, l.Iu)(e => e.searchQuery), w = a.useStore(e => e.activeCategoryIndex), D = i.useMemo(() => n.map(e => (0, s._O)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
       isNitroLocked: false
     }), [n]), L = (0, u.Qs)({
-      activeCategoryIndex: D,
+      activeCategoryIndex: w,
       isScrolling: N,
       listRef: R,
       onActiveCategoryIndexChange: a.setActiveCategoryIndex,
@@ -48,15 +48,15 @@ let f = 20,
       L(e), p({
         listRef: R,
         searchQuery: P,
-        nitroLockedSectionStates: w,
+        nitroLockedSectionStates: D,
         scrollTop: e
       }), null == C || C(e)
-    }, [L, P, w, C]);
+    }, [L, P, D, C]);
     return i.useEffect(() => {
       null != R.current && x(0)
     }, [x, R]), (0, u.Xs)({
       searchQuery: P,
-      activeCategoryIndex: D,
+      activeCategoryIndex: w,
       listRef: R
     }), i.useImperativeHandle(t, () => ({
       scrollTo: function() {
@@ -107,8 +107,8 @@ let f = 20,
         rowCount: O,
         rowCountBySection: v,
         rowHeight: I,
-        sectionHeaderHeight: T,
-        sectionFooterHeight: S,
+        sectionHeaderHeight: S,
+        sectionFooterHeight: T,
         stickyHeaders: true,
         ref: R
       }), null == A ? true : A(), null == b ? true : b()]

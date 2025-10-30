@@ -301,7 +301,7 @@ class ef extends Chunk647438.PureComponent {
     } = t;
     if (null == l) throw Error("Rendering ApplicationStoreListing without description");
     return (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(y.Z, {
+      children: [(0, r.jsx)(v.Z, {
         tag: "h1",
         children: eo.intl.format(eo.t.tluX4B, {
           name: n.name
@@ -604,15 +604,15 @@ let em = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
   } = e;
   if (null == l) {
     if (null == i) throw Error("Needs applicationId or skuId");
-    t = i, null != (l = null != (n = M.Z.get(i)) ? n.applicationId : null) && (r = v.Z.getApplication(l))
+    t = i, null != (l = null != (n = M.Z.get(i)) ? n.applicationId : null) && (r = y.Z.getApplication(l))
   } else if (null == i) {
     if (null == l) throw Error("Needs applicationId or skuId");
-    null != (r = v.Z.getApplication(l)) && (t = r.destinationSkuId), n = null != t ? M.Z.get(t) : null
+    null != (r = y.Z.getApplication(l)) && (t = r.destinationSkuId), n = null != t ? M.Z.get(t) : null
   }(null == n ? true : n.flags) != null && (0, V.yE)(n.flags, ea.l4R.STICKER) && (n = null);
   let c = null != l && (U.Z.inTestModeForApplication(l) || I.Z.inDevModeForApplication(l));
   return {
     skuId: t,
-    application: null != l ? v.Z.getApplication(l) : null,
+    application: null != l ? y.Z.getApplication(l) : null,
     isFetchingEntitlements: null != l && D.Z.applicationIdsFetching.has(l),
     didFetchEntitlements: null != l && D.Z.applicationIdsFetched.has(l),
     shouldFetchStatistics: s && null != l && L.Z.shouldFetchStatisticsForApplication(l),

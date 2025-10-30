@@ -344,7 +344,7 @@ function ed(e) {
   let {
     voiceChannel: n,
     locked: o
-  } = e, a = r.useRef(null), s = (0, l.e7)([B.Z], () => B.Z.isVideoEnabled()), u = (0, l.e7)([B.Z], () => Object.values(B.Z.getVideoDevices())[0]), h = null == (t = null == u ? true : u.disabled) || t, f = false === h, m = (0, D.Z)(n), g = e => {
+  } = e, a = r.useRef(null), s = (0, l.e7)([Y.Z], () => Y.Z.isVideoEnabled()), u = (0, l.e7)([Y.Z], () => Object.values(Y.Z.getVideoDevices())[0]), h = null == (t = null == u ? true : u.disabled) || t, f = false === h, m = (0, D.Z)(n), g = e => {
     p.Z.setVideoEnabled(e)
   }, y = e => t => {
     e(t), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
@@ -421,7 +421,7 @@ function ep(e) {
     a = r.useRef(null),
     u = (0, l.e7)([X.default], () => X.default.getCurrentUser()),
     c = (0, D.Z)(n),
-    p = (0, l.cj)([B.Z], () => (0, C.Z)(B.Z)),
+    p = (0, l.cj)([Y.Z], () => (0, C.Z)(Y.Z)),
     h = (0, l.e7)([F.Z], () => F.Z.getCurrentUserActiveStream()),
     f = (0, ee.P)({
       pid: (0, q.getPID)(),
@@ -522,7 +522,7 @@ function eh(e) {
   } = e, s = r.useRef(null), c = null != (t = null == o ? true : o.getGuildId()) ? t : null, {
     mute: p,
     suppress: f
-  } = (0, R.Z)(o), m = (0, l.e7)([B.Z], () => B.Z.isDeaf()), y = null == o || p || f || m, {
+  } = (0, R.Z)(o), m = (0, l.e7)([Y.Z], () => Y.Z.isDeaf()), y = null == o || p || f || m, {
     analyticsLocations: O
   } = (0, g.ZP)();
 
@@ -670,7 +670,7 @@ function ef(e) {
 function em(e) {
   let {
     voiceChannel: t
-  } = e, n = (0, l.e7)([Y.Z], () => Y.Z.getGuild(t.getGuildId()), [t]);
+  } = e, n = (0, l.e7)([B.Z], () => B.Z.getGuild(t.getGuildId()), [t]);
   switch (true) {
     case t.isGroupDM() || t.isDM():
     case t.isDM():

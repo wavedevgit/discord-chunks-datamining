@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 427347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -35,7 +35,7 @@ function v(e) {
     (0, u.openUserSettings)(e ? c.n.NOTIFICATIONS_PANEL : c.n.LEGACY_NOTIFICATIONS_SETTINGS_PANEL, {
       section: x.oAB.NOTIFICATIONS,
       analyticsLocations: v
-    }), j(f.L.TAKE_ACTION)
+    }), j(g.L.TAKE_ACTION)
   };
   return n && !m ? (0, a.jsx)(s.ZP, {
     children: (0, a.jsxs)("div", {
@@ -57,11 +57,11 @@ function v(e) {
             variant: "heading-md/bold",
             color: true,
             className: b.specialText,
-            children: g.intl.string(g.t.zUhr3D)
+            children: f.intl.string(f.t.zUhr3D)
           }), (0, a.jsx)(r.Text, {
             variant: "text-xs/normal",
             color: "always-white",
-            children: g.intl.format(g.t.Xw2XUT, {
+            children: f.intl.format(f.t.Xw2XUT, {
               settingsHook: (e, t) => (0, a.jsx)(r.P3F, {
                 tag: "span",
                 className: b.specialTextLink,
@@ -72,7 +72,7 @@ function v(e) {
           })]
         }), (0, a.jsx)(r.P3F, {
           className: b.closeClickable,
-          onClick: () => j(f.L.USER_DISMISS),
+          onClick: () => j(g.L.USER_DISMISS),
           children: (0, a.jsx)(r.Dio, {
             color: "currentColor",
             size: "xs"

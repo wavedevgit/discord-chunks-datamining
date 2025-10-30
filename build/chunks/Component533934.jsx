@@ -185,8 +185,8 @@ let ek = (0, Chunk608787.Un)({
       threadId: c
     } = t.params, u = null != a ? a : true;
     null == u && null != t.params.gameShopPageIndex && (u = eZ.oC.GAME_SHOP);
-    let d = (0, p.e7)([ey.Z], () => ey.Z.getGuild(l)),
-      f = (0, p.e7)([ev.ZP], () => null == l ? null : ev.ZP.getSelfMember(l)),
+    let d = (0, p.e7)([ev.Z], () => ev.Z.getGuild(l)),
+      f = (0, p.e7)([ey.ZP], () => null == l ? null : ey.ZP.getSelfMember(l)),
       m = (0, p.e7)([K.Z], () => {
         if (null == l) return;
         let e = K.Z.getData(l);
@@ -450,7 +450,7 @@ function tl(e) {
     hideChannelList: s,
     isSidebarOpen: o
   } = e;
-  (0, v.t)(true);
+  (0, y.t)(true);
   let c = "app view user trigger debugging";
   I.R6.useExperiment({
     location: c
@@ -504,14 +504,14 @@ function tl(e) {
         width: e
       })
     }, []),
-    S = (0, y.Z)({
+    S = (0, v.Z)({
       minDimension: _.li,
       maxDimension: _.zx,
       resizableDomNodeRef: b,
       onElementResize: E,
       onElementResizeStart: O,
       onElementResizeEnd: C,
-      orientation: y.y.HORIZONTAL_RIGHT,
+      orientation: v.y.HORIZONTAL_RIGHT,
       throttleDuration: 0
     }),
     T = i.useCallback(() => {
@@ -608,7 +608,7 @@ function ta() {
     E = (0, Chunk540059.T)("AppView"),
     O = (0, Chunk267161.useAppSidebarState)(e => !e.isOpen),
     I = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
-    v = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
+    y = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk951288.jsx)("div", {
     className: Chunk822338.container,
     children: (0, Chunk951288.jsx)(Chunk372900.Z.Provider, {

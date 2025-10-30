@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 918714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -44,7 +44,7 @@ function _(e) {
 let y = function(e) {
   let {
     onClose: t
-  } = e, [n, u] = r.useState(null), [h, x] = r.useState(true), [y, C] = r.useState(null), [S, E] = r.useState(false), O = r.useCallback(async () => {
+  } = e, [n, u] = r.useState(null), [h, x] = r.useState(true), [y, C] = r.useState(null), [S, E] = r.useState(false), T = r.useCallback(async () => {
     x(true), C(null);
     try {
       var e;
@@ -66,11 +66,11 @@ let y = function(e) {
         }
       })
     } catch (e) {
-      C(b.intl.string(g.default["/f++3g"]))
+      C(b.intl.string(f.default["/f++3g"]))
     } finally {
       x(false)
     }
-  }, [t]), T = r.useCallback(async e => {
+  }, [t]), O = r.useCallback(async e => {
     if (null !== n) {
       E(true);
       try {
@@ -79,16 +79,16 @@ let y = function(e) {
           flow_id: n.flow_context.flow_id,
           data: e
         };
-        await (0, d.Wl)(t), O()
+        await (0, d.Wl)(t), T()
       } catch (e) {
-        C(b.intl.string(g.default["+QRSxc"]))
+        C(b.intl.string(f.default["+QRSxc"]))
       } finally {
         E(false)
       }
     }
-  }, [n, O]);
+  }, [n, T]);
   (0, i.ZP)(() => {
-    O()
+    T()
   });
   let N = r.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
   return (0, a.jsxs)("div", {
@@ -100,9 +100,9 @@ let y = function(e) {
     }), N ? (0, a.jsx)(s.default, {
       transitionState: l.Dvm.ENTERED,
       entryPoint: o.cU.SAFETY_FLOWS,
-      onClose: f.dG,
+      onClose: g.dG,
       onComplete: async () => {
-        await T({
+        await O({
           type: m.rY.Empty
         })
       },
@@ -149,13 +149,13 @@ let y = function(e) {
                 fullWidth: true,
                 text: b.intl.string(b.t["7NqTJn"]),
                 onClick: () => {
-                  O()
+                  T()
                 }
               })]
             })]
           }), null === y && null != n && (0, a.jsx)(_, {
             task: n,
-            handleSubmit: T,
+            handleSubmit: O,
             disabled: S
           })]
         })

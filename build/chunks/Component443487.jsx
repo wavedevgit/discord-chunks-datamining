@@ -6,9 +6,9 @@ require.d(exports, {
   Zb: () => b,
   cA: () => E,
   e$: () => y,
-  lS: () => T,
+  lS: () => S,
   ll: () => I,
-  xx: () => S
+  xx: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -102,15 +102,15 @@ function v(e) {
     displayParticipants: y,
     participant1: v,
     participant2: I,
-    numOtherParticipants: T
-  } = (0, h.Z)(a, l), S = (0, o.e7)([d.ZP], () => d.ZP.getMember(n, E)), A = (0, c.j)({
+    numOtherParticipants: S
+  } = (0, h.Z)(a, l), T = (0, o.e7)([d.ZP], () => d.ZP.getMember(n, E)), A = (0, c.j)({
     displayNameStyles: null == b ? true : b.displayNameStyles
   }), C = (0, o.e7)([f.Z], () => {
     var e;
-    return (null == S ? true : S.colorRoleId) != null ? null == (e = f.Z.getRole(n, S.colorRoleId)) ? true : e.name : true
-  }, [n, S]), N = (0, u.X7)(n, E, null != (t = null == S ? true : S.colorStrings) ? t : null);
+    return (null == T ? true : T.colorRoleId) != null ? null == (e = f.Z.getRole(n, T.colorRoleId)) ? true : e.name : true
+  }, [n, T]), N = (0, u.X7)(n, E, null != (t = null == T ? true : T.colorStrings) ? t : null);
   if (null == b) return null;
-  let R = null == S ? true : S.colorString,
+  let R = null == T ? true : T.colorString,
     P = p.ZP.getName(n, i, b);
   return (0, r.jsxs)("div", {
     className: g.userSection,
@@ -126,20 +126,20 @@ function v(e) {
       className: g.userName,
       displayNameStylesFont: A,
       "aria-hidden": true
-    }), T > 0 ? (0, r.jsx)("div", {
+    }), S > 0 ? (0, r.jsx)("div", {
       className: g.additionalParticipantBadge,
       "aria-hidden": true,
       children: (0, r.jsxs)(s.Text, {
         variant: "text-xxs/medium",
         color: "text-default",
         className: g.additionalParticipantBadgeText,
-        children: ["+", T]
+        children: ["+", S]
       })
     }) : null, (0, r.jsx)(s.nn4, {
       children: m.intl.format(m.t.rH95Gu, {
         user0: p.ZP.getName(n, i, v),
         user1: p.ZP.getName(n, i, I),
-        countOthers: T,
+        countOthers: S,
         name0Hook: (e, t) => (0, r.jsx)("span", {
           children: e
         }, t),
@@ -167,7 +167,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     children: t,
     className: n
@@ -178,7 +178,7 @@ function T(e) {
   })
 }
 
-function S() {
+function T() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk451419.divider
   })

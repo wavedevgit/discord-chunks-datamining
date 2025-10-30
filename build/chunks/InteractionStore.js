@@ -59,14 +59,14 @@ let E = 5 * Chunk70956.Z.Millis.MINUTE,
   v = {},
   I = {};
 
-function T() {
+function S() {
   y = {}, O = {}, v = {}, I = {}, setInterval(() => {
     let e = Date.now();
     for (let [t, n] of Object.entries(I)) module - require.insertedAt > b && delete I[exports]
   }, E)
 }
 
-function S(e) {
+function T(e) {
   let {
     nonce: t,
     messageId: n,
@@ -145,14 +145,14 @@ function P(e) {
   for (let [e, t] of Object.entries(y)) t.state === _.F.FAILED && j(e)
 }
 
-function D(e) {
+function w(e) {
   let {
     nonce: t
   } = e;
   k(t)
 }
 
-function w(e) {
+function D(e) {
   let {
     application: t,
     nonce: n
@@ -232,16 +232,16 @@ class U extends(a = Chunk442837.ZP.Store) {
 }
 p(U, "displayName", "InteractionStore");
 let G = new U(Chunk570140.Z, {
-  LOGOUT: T,
-  INTERACTION_QUEUE: S,
+  LOGOUT: S,
+  INTERACTION_QUEUE: T,
   INTERACTION_CREATE: A,
   INTERACTION_SUCCESS: C,
   INTERACTION_FAILURE: R,
   MESSAGE_CREATE: N,
   CHANNEL_SELECT: P,
-  INTERACTION_IFRAME_MODAL_CREATE: w,
+  INTERACTION_IFRAME_MODAL_CREATE: D,
   INTERACTION_IFRAME_MODAL_CLOSE: L,
   INTERACTION_IFRAME_MODAL_KEY_CREATE: x,
-  INTERACTION_MODAL_CREATE: D,
+  INTERACTION_MODAL_CREATE: w,
   EMBEDDED_ACTIVITY_UPDATE_V2: M
 })

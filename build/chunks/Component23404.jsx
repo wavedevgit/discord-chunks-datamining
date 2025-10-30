@@ -116,7 +116,7 @@ function A(e) {
       fromContent: h.jn.ACTIVITY_PANEL,
       questId: _.id
     })
-  }, [_.id, b]), U = (0, y.hf)({
+  }, [_.id, b]), U = (0, v.hf)({
     quest: _,
     questContent: h.jn.ACTIVITY_PANEL,
     sourceQuestContent: h.jn.ACTIVITY_PANEL
@@ -146,7 +146,7 @@ function A(e) {
       className: j.utils,
       children: [G ? (0, r.jsx)(x, {
         quest: _
-      }) : (0, r.jsx)(O.Z, {}), (0, r.jsx)(v.r, {
+      }) : (0, r.jsx)(O.Z, {}), (0, r.jsx)(y.r, {
         quest: _,
         questContent: h.jn.ACTIVITY_PANEL,
         shouldShowDisclosure: (null == (l = _.userStatus) ? true : l.enrolledAt) == null,

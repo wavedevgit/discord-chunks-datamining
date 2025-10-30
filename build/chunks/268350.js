@@ -2,9 +2,9 @@
 /** chunk id: 268350, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $p: () => T,
+  $p: () => S,
   FQ: () => I,
-  Il: () => S,
+  Il: () => T,
   Jf: () => R,
   SA: () => L,
   SV: () => A,
@@ -12,7 +12,7 @@ require.d(exports, {
   eu: () => P,
   hW: () => x,
   lY: () => N,
-  qB: () => D
+  qB: () => w
 }), require("./953529.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -82,7 +82,7 @@ let I = async (e, t) => {
     pack: n,
     ingestStickers: t
   }), n
-}, T = async function() {
+}, S = async function() {
   let {
     locale: e = Chunk706454.default.locale
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
@@ -107,7 +107,7 @@ let I = async (e, t) => {
     type: "STICKER_PACKS_FETCH_SUCCESS",
     packs: exports
   })
-}, S = async e => {
+}, T = async e => {
   let {
     body: t
   } = await a.tn.get({
@@ -188,7 +188,7 @@ function P(e, t, n) {
   })
 }
 
-function D(e, t) {
+function w(e, t) {
   o.Z.dispatch({
     type: "CLEAR_STICKER_PREVIEW",
     channelId: e,
@@ -196,12 +196,12 @@ function D(e, t) {
   })
 }
 
-function w(e) {
+function D(e) {
   return f.Z.totalUnavailableGuilds > 0 || !l.Z.isConnected() ? e : e.filter(e => null != h.Z.getStickerById(e))
 }
 
 function L(e) {
-  u.DZ.updateAsync("favoriteStickers", t => (t.stickerIds = w(t.stickerIds), i().size(t.stickerIds) >= g.oX) ? (s.Z.show({
+  u.DZ.updateAsync("favoriteStickers", t => (t.stickerIds = D(t.stickerIds), i().size(t.stickerIds) >= g.oX) ? (s.Z.show({
     title: E.intl.string(E.t["+XYXtZ"]),
     body: E.intl.formatToPlainString(E.t.JaIyFi, {
       count: g.oX
@@ -211,6 +211,6 @@ function L(e) {
 
 function x(e) {
   u.DZ.updateAsync("favoriteStickers", t => {
-    t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = w(t.stickerIds)
+    t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = D(t.stickerIds)
   }, g.fy.INFREQUENT_USER_ACTION)
 }

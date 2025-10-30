@@ -2,8 +2,8 @@
 /** chunk id: 267642, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A3: () => S,
-  FZ: () => T,
+  A3: () => T,
+  FZ: () => S,
   Hl: () => Q,
   Je: () => N,
   Jh: () => x,
@@ -12,10 +12,10 @@ require.d(exports, {
   Qi: () => F,
   Ro: () => O,
   _k: () => G,
-  _p: () => w,
+  _p: () => D,
   aq: () => j,
   cP: () => R,
-  e9: () => D,
+  e9: () => w,
   ee: () => z,
   gZ: () => Z,
   ge: () => L,
@@ -63,11 +63,11 @@ var O = function(e) {
 }({});
 let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, Chunk981631.Eu4.TIER_3],
   I = v.slice().reverse(),
-  T = e => {
+  S = e => {
     var t;
     return e === g.Eu4.NONE ? g.Eu4.TIER_1 : null == (t = B.find(t => t.tier === e)) ? true : t.nextTier
   },
-  S = (e, t) => null != t && t.features.has(g.GuildFeatures.MORE_STICKERS) && e === g.Eu4.TIER_3 ? a.D.MAX_STICKER_SLOTS : b.$8[e],
+  T = (e, t) => null != t && t.features.has(g.GuildFeatures.MORE_STICKERS) && e === g.Eu4.TIER_3 ? a.D.MAX_STICKER_SLOTS : b.$8[e],
   A = e => b.pH[e],
   C = (e, t) => null != t && t.features.has(g.GuildFeatures.MORE_SOUNDBOARD) ? b.w1 : b._k[e],
   N = e => {
@@ -88,7 +88,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     }, {
       title: y.intl.formatToPlainString(y.t["/9p2/g"], {
         adding: A(g.Eu4.TIER_1),
-        total: S(g.Eu4.TIER_1)
+        total: T(g.Eu4.TIER_1)
       }),
       description: y.intl.string(y.t.JfsnDQ),
       icon: 8
@@ -131,7 +131,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     }, {
       title: y.intl.formatToPlainString(y.t["/9p2/g"], {
         adding: A(g.Eu4.TIER_2),
-        total: S(g.Eu4.TIER_2)
+        total: T(g.Eu4.TIER_2)
       }),
       description: y.intl.string(y.t.t4TM28),
       icon: 8
@@ -190,7 +190,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     }, {
       title: y.intl.formatToPlainString(y.t["/9p2/g"], {
         adding: A(g.Eu4.TIER_3),
-        total: S(g.Eu4.TIER_3)
+        total: T(g.Eu4.TIER_3)
       }),
       description: y.intl.string(y.t["+ZI4QZ"]),
       icon: 8
@@ -255,7 +255,7 @@ function P(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   switch (e) {
     case g.Eu4.NONE:
       return y.intl.string(y.t.LcKgJd);
@@ -269,7 +269,7 @@ function D(e) {
       throw Error("Not a valid tier type")
   }
 }
-let w = i().memoize(e => b.HO[g.Eu4.TIER_1].features.includes(e) ? g.Eu4.TIER_1 : b.HO[g.Eu4.TIER_2].features.includes(e) ? g.Eu4.TIER_2 : b.HO[g.Eu4.TIER_3].features.includes(e) ? g.Eu4.TIER_3 : null),
+let D = i().memoize(e => b.HO[g.Eu4.TIER_1].features.includes(e) ? g.Eu4.TIER_1 : b.HO[g.Eu4.TIER_2].features.includes(e) ? g.Eu4.TIER_2 : b.HO[g.Eu4.TIER_3].features.includes(e) ? g.Eu4.TIER_3 : null),
   L = e => e === g.Eu4.NONE ? g.AnalyticsObjectTypes.NONE : e === g.Eu4.TIER_1 ? g.AnalyticsObjectTypes.TIER_1 : e === g.Eu4.TIER_2 ? g.AnalyticsObjectTypes.TIER_2 : e === g.Eu4.TIER_3 ? g.AnalyticsObjectTypes.TIER_3 : null;
 
 function x(e) {
@@ -362,8 +362,8 @@ function F(e, t) {
     r = v.indexOf(t);
   if (false === r) return 0;
   let i = v[r - 1],
-    a = null != i ? S(i) : 0,
-    o = S(t);
+    a = null != i ? T(i) : 0,
+    o = T(t);
   return Math.max(0, n - e.slice(a, o).length)
 }
 

@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   RR: () => A,
-  WW: () => T,
+  WW: () => S,
   bE: () => N,
   n4: () => M,
   q8: () => C,
-  t$: () => S,
+  t$: () => T,
   xl: () => x
 }), require("./415506.js"), require("./388685.js"), require("./781311.js");
 var Chunk683860 = require("./683860.js"),
@@ -67,11 +67,11 @@ function I(e, t) {
   }), e
 }
 
-function T(e) {
+function S(e) {
   return m.Z.getForumChannelSessionId(e)
 }
 
-function S(e) {
+function T(e) {
   switch (e) {
     case r.z.CREATION_DATE:
       return b.SX.CREATION_DATE;
@@ -115,12 +115,12 @@ function P(e) {
   return null == t ? 0 : t.reactions.length
 }
 
-function D(e) {
+function w(e) {
   let t = R(e);
   return null == t ? 0 : t.reactions.reduce((e, t) => e + t.count, 0)
 }
 
-function w(e) {
+function D(e) {
   var t, n;
   let r = l.Z.getChannel(e);
   if (null == r) return [];
@@ -154,7 +154,7 @@ function x(e) {
     forum_channel_can_create_post: u.Z.can(g.Plq.SEND_MESSAGES, s),
     forum_channel_filter_tag_ids: p.Z.getFilterTagIdsAnalytics(),
     forum_channel_sort_order: p.Z.getSortOrderAnalytics(s.id),
-    forum_channel_session_id: null != o ? o : T(s.id),
+    forum_channel_session_id: null != o ? o : S(s.id),
     forum_channel_layout: p.Z.getLayoutAnalytics(s.id),
     forum_channel_default_sort_order: s.defaultSortOrder,
     forum_channel_tag_setting: p.Z.getTagSettingAnalytics(s.id),
@@ -183,9 +183,9 @@ function M(e) {
     thread_approximate_creation_date: f.default.extractTimestamp(_),
     forum_post_id: m.id,
     forum_post_first_message_id: f.default.castChannelIdAsMessageId(m.id),
-    forum_post_num_reactions: D(m.id),
+    forum_post_num_reactions: w(m.id),
     forum_post_num_unique_reactions: P(m.id),
-    forum_post_applied_tag_ids: w(m.id),
+    forum_post_applied_tag_ids: D(m.id),
     forum_post_is_pinned: m.hasFlag(E.zZ.PINNED),
     forum_post_is_new: null == (i = h.Z.getReadStateSnapshotAnalytics(m.id)) ? true : i.isNew,
     forum_post_is_unread: null == (c = h.Z.getReadStateSnapshotAnalytics(m.id)) ? true : c.hasUnreads,

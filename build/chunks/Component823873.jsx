@@ -23,11 +23,11 @@ function b(e) {
   var t, n;
   let {
     eventId: b
-  } = e, E = (0, l.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(b), [b]), O = (0, l.e7)([h.Z], () => h.Z.getGuild(null == E ? true : E.guild_id), [E]), I = (0, l.e7)([m.Z], () => m.Z.getChannel(null == E ? true : E.channel_id), [E]), v = (0, u.zI)(b, null), y = null != E && (0, o.xt)(E), C = null != E ? (0, f.DK)(E) : null, S = (0, d.Z)(null == E ? true : E.guild_id, null == E ? true : E.id, C), T = null == v ? true : v.startTime.toISOString(), {
+  } = e, E = (0, l.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(b), [b]), O = (0, l.e7)([h.Z], () => h.Z.getGuild(null == E ? true : E.guild_id), [E]), I = (0, l.e7)([m.Z], () => m.Z.getChannel(null == E ? true : E.channel_id), [E]), y = (0, u.zI)(b, null), v = null != E && (0, o.xt)(E), C = null != E ? (0, f.DK)(E) : null, S = (0, d.Z)(null == E ? true : E.guild_id, null == E ? true : E.id, C), T = null == y ? true : y.startTime.toISOString(), {
     startDateTimeString: N
-  } = i.useMemo(() => y ? {
+  } = i.useMemo(() => v ? {
     startDateTimeString: g.intl.string(g.t.TxqPQR)
-  } : (0, f.ub)(null != T ? T : new Date().toISOString()), [T, y]), j = null != E ? (0, p.cS)(E) : true, P = null != (t = null == I ? true : I.name) ? t : j, x = null != I ? (0, s.KS)(I) : null;
+  } : (0, f.ub)(null != T ? T : new Date().toISOString()), [T, v]), j = null != E ? (0, p.cS)(E) : true, P = null != (t = null == I ? true : I.name) ? t : j, x = null != I ? (0, s.KS)(I) : null;
   if (null == E || null == O) return null;
   let A = null != E.description && E.description.length > 0;
   return (0, r.jsxs)("div", {
@@ -36,7 +36,7 @@ function b(e) {
       className: _.eventTimeAndUser,
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/semibold",
-        color: y ? "status-positive" : "text-brand",
+        color: v ? "status-positive" : "text-brand",
         children: N
       })
     }), (0, r.jsx)(a.Text, {

@@ -7,9 +7,9 @@ require.d(exports, {
   N1: () => j,
   NY: () => x,
   Ox: () => P,
-  Vq: () => w,
+  Vq: () => D,
   Wf: () => M,
-  cB: () => D,
+  cB: () => w,
   dy: () => N,
   wP: () => R
 });
@@ -83,7 +83,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     id: t,
     guildId: n,
@@ -101,7 +101,7 @@ function D(e) {
           animate: true,
           size: o.EFr.SIZE_16,
           className: A.avatar
-        }), T.ZP.getUserTag(c, {
+        }), S.ZP.getUserTag(c, {
           mode: "username",
           identifiable: u ? "never" : "always"
         }), (0, r.jsx)("span", {
@@ -111,7 +111,7 @@ function D(e) {
       }),
       delay: 750,
       position: "top",
-      "aria-label": T.ZP.getUserTag(c, {
+      "aria-label": S.ZP.getUserTag(c, {
         decoration: "never"
       }),
       asContainer: true,
@@ -124,13 +124,13 @@ function D(e) {
   return f
 }
 
-function w(e) {
+function D(e) {
   let {
     id: t,
     guildId: n
   } = e, a = (0, i.e7)([E.Z], () => null != n ? E.Z.getRole(n, t) : true), s = (0, i.e7)([c.Z], () => c.Z.roleStyle), l = (0, h._f)(n, a, null == a ? true : a.colorStrings);
   if (null == a) return (0, r.jsxs)("span", {
-    children: ["@", S.intl.string(S.t["YV4F/n"])]
+    children: ["@", T.intl.string(T.t["YV4F/n"])]
   });
   let u = null != a.color && 0 !== a.color,
     d = "dot" === s,
@@ -150,10 +150,10 @@ function w(e) {
 function L(e) {
   let {
     id: t
-  } = e, n = (0, i.e7)([m.Z], () => m.Z.getChannel(t)), a = S.intl.string(S.t.zLZPmk).toLowerCase(), o = "text", s = true;
+  } = e, n = (0, i.e7)([m.Z], () => m.Z.getChannel(t)), a = T.intl.string(T.t.zLZPmk).toLowerCase(), o = "text", s = true;
   if (null != n) {
     var l;
-    a = (0, u.YO)(n) ? n.name : S.intl.string(S.t["/YzI63"]), o = (0, u.YO)(n) ? null != (l = (0, v.wl)(n)) ? l : "text" : "locked", s = (0, d.B)(n.type)
+    a = (0, u.YO)(n) ? n.name : T.intl.string(T.t["/YzI63"]), o = (0, u.YO)(n) ? null != (l = (0, v.wl)(n)) ? l : "text" : "locked", s = (0, d.B)(n.type)
   }
   return s ? (0, r.jsx)(_.Z, {
     iconType: o,
@@ -209,6 +209,6 @@ function j(e) {
     })
   }) : null;
   return (0, r.jsxs)(_.Z, {
-    children: [o, null != (t = null == a ? true : a.name) ? t : S.intl.string(S.t["11pdXZ"])]
+    children: [o, null != (t = null == a ? true : a.name) ? t : T.intl.string(T.t["11pdXZ"])]
   })
 }

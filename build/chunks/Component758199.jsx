@@ -68,41 +68,41 @@ function O(e) {
     bannerAspectRatio: O = 0,
     iconSrc: v,
     actions: I = [],
-    trackingConfig: T,
-    onClickContent: S,
+    trackingConfig: S,
+    onClickContent: T,
     onClickBanner: A
   } = e;
-  T = b(T);
+  S = b(S);
   let {
     primaryColor: C,
     secondaryColor: N
-  } = (0, f.Z)(null != v ? v : h), R = "linear-gradient(45deg, ".concat(C, ", ").concat(N, ")"), P = (0, u.e7)([d.Z], () => d.Z.useReducedMotion), D = i.useRef(false), w = (0, l.O)(e => {
-    if (false === D.current && e) {
+  } = (0, f.Z)(null != v ? v : h), R = "linear-gradient(45deg, ".concat(C, ", ").concat(N, ")"), P = (0, u.e7)([d.Z], () => d.Z.useReducedMotion), w = i.useRef(false), D = (0, l.O)(e => {
+    if (false === w.current && e) {
       var t;
-      null == T || null == (t = T.onView) || t.call(T), (0, p.GF)({
-        appId: T.id,
-        linkType: T.linkType,
-        referrerId: T.referrerId,
-        customId: T.activityCustomId,
-        guildId: T.guildId,
-        channelId: T.channelId,
-        messageId: T.messageId
-      }), D.current = true
+      null == S || null == (t = S.onView) || t.call(S), (0, p.GF)({
+        appId: S.id,
+        linkType: S.linkType,
+        referrerId: S.referrerId,
+        customId: S.activityCustomId,
+        guildId: S.guildId,
+        channelId: S.channelId,
+        messageId: S.messageId
+      }), w.current = true
     }
   }, true), L = null != h, x = null != E && false === P, M = L || x, k = 0 === O ? g.bannerAspectRatioBot : g.bannerAspectRatioActivity, j = i.useRef(null), U = i.useCallback(() => {
     let e = j.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), G = i.useMemo(() => !!x && new URL(E).pathname.endsWith(".gif"), [x, E]), B = i.useMemo(() => {
-    if (null != S) return e => {
-      S(e), (0, p.KX)(T.id, T.linkType, p.j_.CONTENT, T.referrerId, T.activityCustomId)
+    if (null != T) return e => {
+      T(e), (0, p.KX)(S.id, S.linkType, p.j_.CONTENT, S.referrerId, S.activityCustomId)
     }
-  }, [S, T]), Z = i.useMemo(() => {
+  }, [T, S]), Z = i.useMemo(() => {
     if (null != A) return e => {
-      A(e), (0, p.KX)(T.id, T.linkType, p.j_.BANNER, T.referrerId, T.activityCustomId)
+      A(e), (0, p.KX)(S.id, S.linkType, p.j_.BANNER, S.referrerId, S.activityCustomId)
     }
-  }, [A, T]);
+  }, [A, S]);
   return (0, r.jsxs)("div", {
-    ref: w,
+    ref: D,
     className: g.embed,
     children: [M && (0, r.jsxs)(y, {
       onClick: Z,
@@ -183,7 +183,7 @@ function O(e) {
                 icon: i,
                 text: n,
                 onClick: e => {
-                  a(e), (0, p.KX)(T.id, T.linkType, u, T.referrerId, T.activityCustomId)
+                  a(e), (0, p.KX)(S.id, S.linkType, u, S.referrerId, S.activityCustomId)
                 },
                 fullWidth: true
               }), null != s && (0, r.jsx)(c.xvT, {

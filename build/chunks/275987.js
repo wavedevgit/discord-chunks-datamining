@@ -78,15 +78,15 @@ module.exports = function(e) {
       c = n.getDecorator();
     return i !== a || o !== s || l !== c || n.mustForceSelection()
   }, n.render = function() {
-    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, o = e.customStyleMap, s = e.customStyleFn, d = e.editorState, h = e.editorKey, m = e.preventScroll, g = e.textDirectionality, E = d.getCurrentContent(), b = d.getSelection(), y = d.mustForceSelection(), O = d.getDecorator(), v = _(d.getDirectionMap()), I = E.getBlocksAsArray(), T = [], S = null, A = null, C = 0; C < I.length; C++) {
+    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, o = e.customStyleMap, s = e.customStyleFn, d = e.editorState, h = e.editorKey, m = e.preventScroll, g = e.textDirectionality, E = d.getCurrentContent(), b = d.getSelection(), y = d.mustForceSelection(), O = d.getDecorator(), v = _(d.getDirectionMap()), I = E.getBlocksAsArray(), S = [], T = null, A = null, C = 0; C < I.length; C++) {
       var N = I[C],
         R = N.getKey(),
         P = N.getType(),
-        D = n(N),
-        w = true,
+        w = n(N),
+        D = true,
         L = true,
         x = true;
-      D && (w = D.component, L = D.props, x = D.editable);
+      w && (D = w.component, L = w.props, x = w.editable);
       var M = g || v.get(R),
         k = c.encode(R, 0, 0),
         j = {
@@ -110,10 +110,10 @@ module.exports = function(e) {
         Z = N.getDepth(),
         F = "";
       if (r && (F = r(N)), "li" === B) {
-        var V = A !== G || null === S || Z > S;
+        var V = A !== G || null === T || Z > T;
         F = f(F, p(P, Z, V, M))
       }
-      var H = w || l,
+      var H = D || l,
         Y = {
           className: F,
           "data-block": true,
@@ -128,18 +128,18 @@ module.exports = function(e) {
       var W = u.createElement(B, Y, u.createElement(H, i({}, j, {
         key: R
       })));
-      T.push({
+      S.push({
         block: W,
         wrapperTemplate: G,
         key: R,
         offsetKey: k
-      }), S = G ? N.getDepth() : null, A = G
+      }), T = G ? N.getDepth() : null, A = G
     }
-    for (var K = [], z = 0; z < T.length;) {
-      var q = T[z];
+    for (var K = [], z = 0; z < S.length;) {
+      var q = S[z];
       if (q.wrapperTemplate) {
         var X = [];
-        do X.push(T[z].block), z++; while (z < T.length && T[z].wrapperTemplate === q.wrapperTemplate);
+        do X.push(S[z].block), z++; while (z < S.length && S[z].wrapperTemplate === q.wrapperTemplate);
         var Q = u.cloneElement(q.wrapperTemplate, {
           key: q.key + "-wrap",
           "data-offset-key": q.offsetKey

@@ -1,7 +1,7 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 120816, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 }), require("./539854.js"), require("./388685.js");
 var a, r, Chunk772848 = require("./772848.js"),
   Chunk756647 = require("./756647.js"),
@@ -14,7 +14,7 @@ let u = 0,
   p = 0,
   h = [],
   x = false;
-class f extends(a = Chunk442837.ZP.Store) {
+class g extends(a = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk906467.Z)
   }
@@ -30,13 +30,13 @@ class f extends(a = Chunk442837.ZP.Store) {
   get trackTriggers() {
     return x
   }
-}(r = "displayName") in f ? Object.defineProperty(f, r, {
+}(r = "displayName") in g ? Object.defineProperty(g, r, {
   value: "AnalyticsLogStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : f[r] = "AnalyticsLogStore";
-let g = new f(Chunk570140.Z, {
+}) : g[r] = "AnalyticsLogStore";
+let f = new g(Chunk570140.Z, {
   TRACK: function(e) {
     let {
       event: t,

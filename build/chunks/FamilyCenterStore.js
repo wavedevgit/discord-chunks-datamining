@@ -60,15 +60,15 @@ let h = null,
   O = null,
   v = L(),
   I = false,
-  T = false,
-  S = null,
+  S = false,
+  T = null,
   A = null,
   C = [],
   N = [],
   R = null,
   P = null,
-  D = {},
-  w = {};
+  w = {},
+  D = {};
 
 function L() {
   var e, t, n, r;
@@ -113,18 +113,18 @@ function U(e, t) {
 }
 
 function G(e) {
-  w = e.reduce((e, t) => {
+  D = e.reduce((e, t) => {
     var n;
     return p(f({}, e), {
       [t.id]: p(f({}, (0, o.dangerouslyConstructGuildRecordFromUntypedObject)(t)), {
         approximateMemberCount: null != (n = t.approximate_member_count) ? n : 0
       })
     })
-  }, w)
+  }, D)
 }
 
 function B(e) {
-  D = e.reduce((e, t) => {
+  w = e.reduce((e, t) => {
     if (null != t.invoice_items && t.invoice_items.length > 0) {
       let n = t.invoice_items[0],
         r = n.sku_id,
@@ -141,7 +141,7 @@ function B(e) {
 }
 
 function Z() {
-  T = true
+  S = true
 }
 
 function F(e) {
@@ -160,7 +160,7 @@ function F(e) {
     totalSpendCurrency: f,
     invoices: _
   } = n;
-  h = o, m = l, U(r), j(a), G(i), k(t), null != _ && B(_), C = c, N = u, R = d, P = f, T = false, S = s.default.fromTimestamp(Date.now()), I = true
+  h = o, m = l, U(r), j(a), G(i), k(t), null != _ && B(_), C = c, N = u, R = d, P = f, S = false, T = s.default.fromTimestamp(Date.now()), I = true
 }
 
 function V(e) {
@@ -194,7 +194,7 @@ function Y(e) {
     totalSpendCurrency: d,
     invoices: f
   } = t;
-  h = a, m = o, U(n), j(r), G(i), null != f && B(f), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now()), R = u, P = d
+  h = a, m = o, U(n), j(r), G(i), null != f && B(f), C = l, N = c, S = false, T = s.default.fromTimestamp(Date.now()), R = u, P = d
 }
 
 function W(e) {
@@ -289,7 +289,7 @@ function en(e) {
 }
 
 function er() {
-  h = null, m = null, g = {}, b = x(), y = M(), w = {}, T = false, S = null, v = L(), E = false, C = [], N = [], R = null, P = null, D = {}
+  h = null, m = null, g = {}, b = x(), y = M(), D = {}, S = false, T = null, v = L(), E = false, C = [], N = [], R = null, P = null, w = {}
 }
 class ei extends Chunk750041.Z {
   initialize() {
@@ -306,7 +306,7 @@ class ei extends Chunk750041.Z {
         linkedUsers: Object.values(g),
         teenActivityTotals: et(),
         teenActivity: ee(),
-        guilds: Object.values(w)
+        guilds: Object.values(D)
       }
     }
   }
@@ -335,7 +335,7 @@ class ei extends Chunk750041.Z {
     return O
   }
   getGuild(e) {
-    return w[e]
+    return D[e]
   }
   getSelectedTab() {
     return v
@@ -353,7 +353,7 @@ class ei extends Chunk750041.Z {
     return A
   }
   isLoading() {
-    return T
+    return S
   }
   getTopUserActivities() {
     return C
@@ -368,10 +368,10 @@ class ei extends Chunk750041.Z {
     return P
   }
   getPurchaseInfo(e) {
-    return D[e]
+    return w[e]
   }
   canRefetch() {
-    return null === S || Chunk709054.default.age(S) > Chunk292352.Of
+    return null === T || Chunk709054.default.age(T) > Chunk292352.Of
   }
   constructor() {
     super({

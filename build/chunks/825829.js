@@ -5,7 +5,7 @@ require.d(exports, {
   FL: () => B,
   Mq: () => j,
   NK: () => V,
-  OP: () => T,
+  OP: () => S,
   Sw: () => Y,
   ZP: () => F,
   ge: () => H,
@@ -74,7 +74,7 @@ function I(e) {
   return e.type === g.uaV.AUTO_MODERATION_ACTION
 }
 
-function T(e) {
+function S(e) {
   var t;
   return null == (t = e.embeds) ? true : t.some(e => {
     let {
@@ -84,7 +84,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   return e.type === g.hBH.AUTO_MODERATION_NOTIFICATION
 }
 
@@ -102,7 +102,7 @@ function C(e, t) {
       } = e;
       return n === t
     })) ? true : r.rawValue;
-    if (S(s)) return null == s || null == (o = s.fields) || null == (a = o.find(e => {
+    if (T(s)) return null == s || null == (o = s.fields) || null == (a = o.find(e => {
       let {
         rawName: n
       } = e;
@@ -127,12 +127,12 @@ function P(e) {
   if (null != t) return t
 }
 
-function D(e) {
+function w(e) {
   let t = C(e, s.G.QUARANTINE_USER_ACTION);
   if (null != t) return t
 }
 
-function w(e) {
+function D(e) {
   let t = C(e, s.G.BLOCK_PROFILE_UPDATE_TYPE);
   if (null != t) return t
 }
@@ -202,8 +202,8 @@ function j(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : g.VqG,
     r = arguments.length > 3 ? arguments[3] : true,
     i = arguments.length > 4 ? arguments[4] : true,
-    l = w(e),
-    c = D(e),
+    l = D(e),
+    c = w(e),
     u = L(e),
     d = P(e),
     f = R(e),

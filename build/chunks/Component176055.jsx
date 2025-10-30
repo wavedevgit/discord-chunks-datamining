@@ -131,14 +131,14 @@ class N extends Chunk647438.PureComponent {
       else try {
         await d.Z.joinGuild(e.id, {
           lurker: true,
-          source: y.vtS.APPLICATION_STORE
+          source: v.vtS.APPLICATION_STORE
         }), i()
       } catch (e) {}
     }), T(this, "handleLogin", () => {
       let e = {
-        redirect_to: y.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
+        redirect_to: v.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
       };
-      (0, b.uL)(y.Z5c.LOGIN, {
+      (0, b.uL)(v.Z5c.LOGIN, {
         search: (0, s.stringify)(e),
         source: "verified_guild_invite"
       })

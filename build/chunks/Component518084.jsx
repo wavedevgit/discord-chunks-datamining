@@ -2,12 +2,12 @@
 /** chunk id: 518084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => Z,
-  wB: () => O
+  wB: () => y
 }), require("./415506.js");
 var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk877921 = require("./877921.js"),
   c = require.n(Chunk877921),
   Chunk28664 = require("./28664.jsx"),
@@ -25,11 +25,11 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = Chunk981631.t_t.DEFAULT,
-  O = 1,
-  _ = Chunk647438.createContext({
-    type: y,
-    opacity: O
+let _ = Chunk981631.t_t.DEFAULT,
+  y = 1,
+  O = Chunk647438.createContext({
+    type: _,
+    opacity: y
   }),
   v = Chunk647438.createContext(true),
   b = e => {
@@ -51,14 +51,14 @@ let y = Chunk981631.t_t.DEFAULT,
       }
       return r
     }(e, ["children", "className"]);
-    return (0, r.jsx)(_.Consumer, {
+    return (0, r.jsx)(O.Consumer, {
       children: e => {
         let {
           type: o
         } = e;
         return (0, r.jsx)(v.Consumer, {
           children: e => {
-            var l, a;
+            var l, s;
             return (0, r.jsx)("div", (l = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
@@ -71,19 +71,19 @@ let y = Chunk981631.t_t.DEFAULT,
               }
               return e
             }({
-              className: s()(f.bar, f[c()(o)], n),
+              className: a()(f.bar, f[c()(o)], n),
               style: e
-            }, i), a = a = {
+            }, i), s = s = {
               children: t
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
                 var i = Object.getOwnPropertySymbols(e);
                 n.push.apply(n, i)
               }
               return n
-            })(Object(a)).forEach(function(e) {
-              Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
+            })(Object(s)).forEach(function(e) {
+              Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
             }), l))
           }
         })
@@ -98,9 +98,9 @@ class E extends(i = Chunk647438.PureComponent) {
       className: n
     } = this.props;
     return (0, Chunk951288.jsx)(v.Consumer, {
-      children: i => (0, r.jsx)(_.Consumer, {
+      children: i => (0, r.jsx)(O.Consumer, {
         children: o => {
-          let l = s()(f.body, f[c()(o.type)], n);
+          let l = a()(f.body, f[c()(o.type)], n);
           return e ? (0, r.jsx)("div", {
             className: l,
             style: i,
@@ -120,21 +120,21 @@ m(E, "defaultProps", {
 });
 let S = e => {
     let {
-      type: t = y,
+      type: t = _,
       width: n,
       height: i,
       children: o,
       className: l,
-      opacity: a = O,
+      opacity: s = y,
       onClick: d
     } = e;
-    return (0, r.jsx)(_.Provider, {
+    return (0, r.jsx)(O.Provider, {
       value: {
         type: t,
-        opacity: a
+        opacity: s
       },
       children: (0, r.jsx)("div", {
-        className: s()(f.widget, f[c()(t)], l),
+        className: a()(f.widget, f[c()(t)], l),
         style: {
           width: n,
           height: i
@@ -152,7 +152,7 @@ let S = e => {
     } = e;
     return (0, r.jsx)(v.Consumer, {
       children: e => (0, r.jsx)("div", {
-        className: s()(f.content, {
+        className: a()(f.content, {
           [f.staticSize]: !i
         }, n),
         style: e,
@@ -167,19 +167,19 @@ S.Background = e => {
   } = e;
   if (null == t) return null;
   let i = [b, E, x];
-  return (0, r.jsx)(_.Consumer, {
+  return (0, r.jsx)(O.Consumer, {
     children: e => {
       let {
         opacity: l
-      } = e, s = {
+      } = e, a = {
         backgroundColor: "rgba(54, 57, 63, ".concat("" + (null != n ? n : l), ")")
       };
       if ("string" == typeof t.type) return o.cloneElement(t, {
-        style: s
+        style: a
       });
       {
         if (i.includes(t.type)) return (0, r.jsx)(v.Provider, {
-          value: s,
+          value: a,
           children: t
         });
         let e = t.type.displayName;
@@ -194,7 +194,7 @@ S.Background = e => {
     label: i,
     onClick: o,
     isActive: l,
-    tooltipPosition: a = "top",
+    tooltipPosition: s = "top",
     size: c = 20,
     isTutorial: h = false
   } = e;
@@ -204,14 +204,14 @@ S.Background = e => {
       children: i
     }) : i,
     "aria-label": i,
-    position: a,
+    position: s,
     forceOpen: h,
     children: (0, r.jsx)(u.zx, {
       buttonRef: t,
       look: u.zx.Looks.BLANK,
       size: u.zx.Sizes.NONE,
       onClick: o,
-      className: s()(f.icon, {
+      className: a()(f.icon, {
         [f.toggledIconOn]: l
       }),
       innerClassName: g.flexCenter,

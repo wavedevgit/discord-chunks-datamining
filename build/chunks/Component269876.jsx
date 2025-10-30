@@ -33,14 +33,14 @@ function O() {
   })), {
     inputMode: v,
     automaticVADSupported: I,
-    isEnabled: T
+    isEnabled: S
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
     inputMode: Chunk131951.Z.getMode(),
     automaticVADSupported: Chunk131951.Z.supports(Chunk65154.AN.AUTOMATIC_VAD),
     isEnabled: Chunk131951.Z.isEnabled()
   }));
 
-  function S(e, n) {
+  function T(e, n) {
     t(e), a((n & h.Dg.VOICE) === h.Dg.VOICE)
   }
 
@@ -53,9 +53,9 @@ function O() {
   Chunk647438.useEffect(() => {
     let e = new Chunk846519.V7;
     return module.start(1e3, () => {
-      Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceActivity, S), module.stop()
+      Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceActivity, T), module.stop()
     }), () => {
-      Chunk131951.Z.getMediaEngine().removeListener(Chunk46973.aB.VoiceActivity, S), module.stop()
+      Chunk131951.Z.getMediaEngine().removeListener(Chunk46973.aB.VoiceActivity, T), module.stop()
     }
   }, []);
   let C = (0, Chunk951288.jsx)("section", {
@@ -105,7 +105,7 @@ function O() {
       label: Chunk388032.intl.string(Chunk388032.t.I1Zuq0),
       checked: O,
       onChange: e => A(_, e)
-    }), C, !T && (0, Chunk951288.jsx)(Chunk481060.Wn, {
+    }), C, !S && (0, Chunk951288.jsx)(Chunk481060.Wn, {
       messageType: Chunk481060.QYI.WARNING,
       className: Chunk197571.marginBottom8,
       children: Chunk388032.intl.format(Chunk388032.t["O13I+O"], {

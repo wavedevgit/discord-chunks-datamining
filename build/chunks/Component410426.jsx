@@ -1,12 +1,12 @@
-/** Chunk was on 57478 **/
+/** Chunk was on 61342 **/
 /** chunk id: 410426, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk547972 = require("./547972.js"),
@@ -18,27 +18,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk641719 = require("./641719.js");
 
-function h(e) {
+function v(e) {
   let {
-    isEmptyBecauseQuery: t,
-    closePopout: n
-  } = e, r = (0, o.e7)([u.ZP], () => u.ZP.getKeybindForAction(m.kg4.SAVE_CLIP)), h = (0, o.e7)([p.Z], () => p.Z.getSettings().clipsEnabled), x = t ? b.noSearchResultsImage : b.noClipsImage, j = a.useCallback(() => {
-    n(), (0, c.Z)(f.Z.CLIPS)
-  }, [n]), y = (() => {
-    if (!h) return g.intl.format(g.t["3iveao"], {
-      onClick: j
+    isEmptyBecauseQuery: t
+  } = e, n = (0, s.e7)([u.ZP], () => u.ZP.getKeybindForAction(m.kg4.SAVE_CLIP)), i = (0, s.e7)([p.Z], () => p.Z.getSettings().clipsEnabled), v = t ? b.noSearchResultsImage : b.noClipsImage, h = r.useCallback(() => {
+    (0, o.Z)(f.Z.CLIPS, {
+      stackingBehavior: "stack"
+    })
+  }, []), g = (() => {
+    if (!i) return y.intl.format(y.t["3iveao"], {
+      onClick: h
     });
-    if (t) return g.intl.string(g.t["xrEs6/"]);
-    if (null == r) return g.intl.format(g.t.jpKk7e, {
-      onClick: j
+    if (t) return y.intl.string(y.t["xrEs6/"]);
+    if (null == n) return y.intl.format(y.t.jpKk7e, {
+      onClick: h
     });
     {
-      let e = d.BB(r.shortcut, true);
-      return g.intl.format(g.t["xY/8K5"], {
+      let e = d.BB(n.shortcut, true);
+      return y.intl.format(y.t["xY/8K5"], {
         keybind: e,
         keybindHook: () => (0, l.jsx)("span", {
           className: b.keybindHintKeys,
-          children: (0, l.jsx)(s.M2$, {
+          children: (0, l.jsx)(c.M2$, {
             className: b.keybindShortcut,
             shortcut: e
           })
@@ -51,13 +52,13 @@ function h(e) {
     children: (0, l.jsxs)("div", {
       className: b.content,
       children: [(0, l.jsx)("div", {
-        className: x
-      }), (0, l.jsx)(s.Text, {
+        className: v
+      }), (0, l.jsx)(c.Text, {
         variant: "text-md/medium",
-        className: i()(b.noClipsText, {
+        className: a()(b.noClipsText, {
           [b.noSearchResultsText]: t
         }),
-        children: y
+        children: g
       })]
     })
   })

@@ -90,8 +90,8 @@ function G(e) {
     onClose: O,
     onHover: v
   } = e, {
-    analyticsLocations: T
-  } = (0, _.ZP)(), S = n !== C.A3.INACTIVE, R = (0, I.Z)(t), [x, M] = i.useState(false), [j, G] = i.useState(false), B = j, Z = i.useCallback(() => {
+    analyticsLocations: S
+  } = (0, _.ZP)(), T = n !== C.A3.INACTIVE, R = (0, I.Z)(t), [x, M] = i.useState(false), [j, G] = i.useState(false), B = j, Z = i.useCallback(() => {
     let e = m.Z.getGuild(t);
     null != e && (0, p.u)({
       analyticsLocation: {
@@ -99,10 +99,10 @@ function G(e) {
         section: N.jXE.GUILD_POWERUPS_MARKETING_PERKS_SECTION
       },
       numberOfBoostsToAdd: 1,
-      analyticsLocations: T,
+      analyticsLocations: S,
       guild: e
     })
-  }, [t, T]), F = i.useCallback(() => {
+  }, [t, S]), F = i.useCallback(() => {
     O(), (0, A.Z)(t, f.Z.GUILD_POWERUPS_MARKETING, b)
   }, [t, b, O]), V = {
     tension: 400,
@@ -123,7 +123,7 @@ function G(e) {
     e && M(true)
   }, []), z = (0, l.O)(K);
   return (0, r.jsxs)("div", {
-    className: o()(L.topPerksCard, L.animatedTopPerksCard, w.powerupCard, {
+    className: o()(L.topPerksCard, L.animatedTopPerksCard, D.powerupCard, {
       [L.animate]: x
     }),
     onMouseEnter: () => {
@@ -138,7 +138,7 @@ function G(e) {
     }), (0, r.jsx)("div", {
       className: L.topPerksCardImageWrapper,
       children: (0, r.jsx)(s.animated.img, {
-        className: o()(L.topPerksCardImage, w.image),
+        className: o()(L.topPerksCardImage, D.image),
         src: E,
         alt: "",
         style: H
@@ -147,15 +147,15 @@ function G(e) {
       style: U(k({}, Y), {
         transform: Y.y.to(e => "translateY(".concat(e, "px)"))
       }),
-      className: o()(L.contentContainer, w.contentContainer),
+      className: o()(L.contentContainer, D.contentContainer),
       children: [(0, r.jsx)(h.xm, {
         heading: a,
         description: c,
-        label: D.intl.formatToPlainString(P.default.QOacIS, {
+        label: w.intl.formatToPlainString(P.default.QOacIS, {
           quantity: u,
           decorator: null != g ? g : ""
         }),
-        isEnabled: S
+        isEnabled: T
       }), (0, r.jsxs)(s.animated.div, {
         style: W,
         className: L.buttonsContainer,
@@ -163,7 +163,7 @@ function G(e) {
           className: L.button,
           children: (0, r.jsx)(d.Button, {
             variant: "primary",
-            text: D.intl.string(D.t.oPAx73),
+            text: w.intl.string(w.t.oPAx73),
             onClick: Z,
             fullWidth: true
           })
@@ -171,7 +171,7 @@ function G(e) {
           className: L.button,
           children: (0, r.jsx)(d.Button, {
             variant: "secondary",
-            text: D.intl.string(D.t.GoCQxU),
+            text: w.intl.string(w.t.GoCQxU),
             onClick: F,
             fullWidth: true
           })
@@ -179,7 +179,7 @@ function G(e) {
       })]
     }), y && (0, r.jsx)(d.IGR, {
       className: L.topPerksCardNew,
-      text: D.intl.string(D.t.y2b7CA)
+      text: w.intl.string(w.t.y2b7CA)
     }), x && (0, r.jsx)("div", {
       className: L.shineLine
     })]
@@ -191,7 +191,7 @@ function B(e) {
     guildId: t,
     powerup: n,
     onClose: a
-  } = e, [o, s] = i.useState(false), l = (0, S.ZP)(t, n).type, c = (0, v.Z)(n, o);
+  } = e, [o, s] = i.useState(false), l = (0, T.ZP)(t, n).type, c = (0, v.Z)(n, o);
   return (0, r.jsx)(G, {
     guildId: t,
     activeStatus: l,
@@ -215,21 +215,21 @@ let Z = 3,
     }, [n.id]);
     let o = (0, E.BU)(n.id, "GuildPowerupsMarketingPowerupCards"),
       s = (0, u.e7)([b.Z], () => b.Z.getLowestGameCostForGuild(n.id)),
-      l = (0, T.Z)(n.id),
+      l = (0, S.Z)(n.id),
       d = (null != l ? l : []).slice(0, Z);
     return 0 === d.length ? null : (0, r.jsxs)("div", {
       ref: t,
-      className: w.container,
+      className: D.container,
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-xxl/extrabold",
-        children: D.intl.string(P.default.wjI18Q)
+        children: w.intl.string(P.default.wjI18Q)
       }), (0, r.jsx)(c.xvT, {
         variant: "text-lg/medium",
-        children: D.intl.format(P.default.S562fn, {
+        children: w.intl.format(P.default.S562fn, {
           helpDeskArticle: g.Z.getArticleURL(N.BhN.GUILD_BOOSTING_FAQ)
         })
       }), (0, r.jsxs)("div", {
-        className: w.powerupsContainer,
+        className: D.powerupsContainer,
         children: [d.map(e => (0, r.jsx)(B, {
           guildId: n.id,
           powerup: e,
@@ -237,8 +237,8 @@ let Z = 3,
         }, "guild-powerup-marketing-".concat(e.skuId))), o && d.length < Z && null != s && (0, r.jsx)(G, {
           guildId: n.id,
           activeStatus: C.A3.INACTIVE,
-          title: D.intl.string(R.default["B3OfL/"]),
-          description: D.intl.string(R.default.EGkJAG),
+          title: w.intl.string(R.default["B3OfL/"]),
+          description: w.intl.string(R.default.EGkJAG),
           cost: s,
           costDecorator: "+",
           imageUrl: x.Z,

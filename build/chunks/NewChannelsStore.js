@@ -39,7 +39,7 @@ function I(e) {
   delete O[t.id]
 }
 
-function T(e) {
+function S(e) {
   var t;
   let {
     channel: n
@@ -47,7 +47,7 @@ function T(e) {
   n.isVocal() || (O[n.guild_id] = null != (t = O[n.guild_id]) ? t : new Set, O[n.guild_id].add(n.id))
 }
 
-function S(e) {
+function T(e) {
   let {
     guildId: t,
     channelIds: n
@@ -106,15 +106,15 @@ function P(e) {
   })), v[e] = Date.now())
 }
 
-function D() {
+function w() {
   Chunk709054.default.keys(O).forEach(e => {
     let t = O[e];
     O[e] = new Set([...t].filter(t => !h.ZP.isChannelOrParentOptedIn(e, t)))
   })
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk984933.ZP, Chunk271383.ZP, Chunk430824.Z, Chunk306680.ZP, Chunk9156.ZP, Chunk581883.Z), this.syncWith([Chunk9156.ZP], D)
+    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk984933.ZP, Chunk271383.ZP, Chunk430824.Z, Chunk306680.ZP, Chunk9156.ZP, Chunk581883.Z), this.syncWith([Chunk9156.ZP], w)
   }
   getNewChannelIds(e) {
     var t;
@@ -127,13 +127,13 @@ class w extends(r = Chunk442837.ZP.Store) {
     return null != r && !!r.features.has(E.GuildFeatures.COMMUNITY) && (null != e && null == O[e] && P(e), (null == (n = O[e]) ? true : n.has(t)) && null == p.ZP.getTrackedAckMessageId(t))
   }
 }
-b(w, "displayName", "NewChannelsStore");
-let L = new w(Chunk570140.Z, {
-  BULK_CLEAR_RECENTS: S,
+b(D, "displayName", "NewChannelsStore");
+let L = new D(Chunk570140.Z, {
+  BULK_CLEAR_RECENTS: T,
   CHANNEL_ACK: () => true,
   CHANNEL_SELECT: A,
   SIDEBAR_VIEW_CHANNEL: C,
   SIDEBAR_VIEW_GUILD: N,
   GUILD_DELETE: I,
-  CHANNEL_CREATE: T
+  CHANNEL_CREATE: S
 })

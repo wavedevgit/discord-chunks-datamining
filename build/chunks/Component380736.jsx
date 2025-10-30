@@ -57,13 +57,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -95,17 +95,17 @@ let N = Chunk647438.memo(function(e) {
     onNotificationClick: O,
     hint: v,
     cancelText: I,
-    confirmText: T,
-    icon: S,
+    confirmText: S,
+    icon: T,
     body: A,
     title: N,
     renderFooter: R,
     contentOpacity: P,
-    status: D,
-    containerRef: w,
+    status: w,
+    containerRef: D,
     className: L,
     wrapperClassName: x
-  } = e, [M, k] = i.useState(false), j = n || M || D === E._1z.FOCUSED, U = (0, l.e7)([m.Z, h.Z], () => {
+  } = e, [M, k] = i.useState(false), j = n || M || w === E._1z.FOCUSED, U = (0, l.e7)([m.Z, h.Z], () => {
     var e;
     return m.Z.isInputLocked(null != (e = h.Z.getFocusedPID()) ? e : (0, f.getPID)())
   });
@@ -154,7 +154,7 @@ let N = Chunk647438.memo(function(e) {
         size: c.zx.Sizes.SMALL,
         color: c.zx.Colors.GREEN,
         onClick: B,
-        children: null != T ? T : b.intl.string(b.t.BddRzS)
+        children: null != S ? S : b.intl.string(b.t.BddRzS)
       }) : null, null != g ? (0, r.jsx)(c.zx, {
         className: y.button,
         size: c.zx.Sizes.SMALL,
@@ -167,14 +167,14 @@ let N = Chunk647438.memo(function(e) {
   }
 
   function K() {
-    return null == S ? null : "string" == typeof S ? (0, r.jsx)(u.qEK, {
-      src: S,
+    return null == T ? null : "string" == typeof T ? (0, r.jsx)(u.qEK, {
+      src: T,
       size: u.EFr.SIZE_40,
       className: y.avatar,
       "aria-hidden": true
     }) : (0, r.jsx)("div", {
       className: y.avatar,
-      children: S
+      children: T
     })
   }
 
@@ -213,7 +213,7 @@ let N = Chunk647438.memo(function(e) {
       className: o()(y.overflowWrapper, x),
       onScroll: C,
       children: (0, r.jsx)(u.P3F, {
-        innerRef: w,
+        innerRef: D,
         ignoreKeyPress: true,
         onMouseOver: F,
         onMouseLeave: V,
@@ -266,16 +266,16 @@ function P(e) {
     children: n
   }) : n
 }
-let D = {
+let w = {
   mass: 1,
   friction: 8,
   tension: 300
 };
 
-function w() {
+function D() {
   let [e, t] = Chunk647438.useState(false), [n, r] = Chunk647438.useState(false), a = (0, Chunk481060.q_F)({
     scale: module ? .975 : 1,
-    config: D,
+    config: w,
     onRest: () => {
       exports(false), setTimeout(() => {
         Chunk951288(false)
@@ -316,11 +316,11 @@ function L(e) {
   }, [c, f]), {
     clickSpring: O,
     handleMouseClick: I
-  } = w(), A = i.useCallback(e => {
+  } = D(), A = i.useCallback(e => {
     null == _ || _(e, c), I()
   }, [_, c, I]), C = i.useCallback(e => {
     null == p || p(e, c)
-  }, [p, c]), D = i.useCallback(e => {
+  }, [p, c]), w = i.useCallback(e => {
     null == h || h(e, c)
   }, [h, c]), L = i.useCallback((e, t) => null == m ? true : m(e, c, t), [m, c]), {
     props: {
@@ -333,7 +333,7 @@ function L(e) {
       disableClickableRegions: B = false
     },
     status: Z
-  } = t, F = S(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), V = !o && a, H = 0 === n && !B && !V, {
+  } = t, F = T(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), V = !o && a, H = 0 === n && !B && !V, {
     ref: Y,
     springs: W
   } = (0, g.X4)(t.id, s, l);
@@ -346,7 +346,7 @@ function L(e) {
     animationWrapperClassName: E,
     children: (0, r.jsx)(P, {
       observe: H,
-      children: (0, r.jsx)(N, T(v({}, F), {
+      children: (0, r.jsx)(N, S(v({}, F), {
         title: "function" == typeof F.title ? F.title(y) : F.title,
         containerRef: Y,
         notificationId: t.id,
@@ -354,7 +354,7 @@ function L(e) {
         onDismissClick: y,
         onNotificationClick: A,
         onConfirmClick: null != p ? C : true,
-        onCancelClick: null != h ? D : true,
+        onCancelClick: null != h ? w : true,
         renderFooter: L,
         expand: false,
         index: n,

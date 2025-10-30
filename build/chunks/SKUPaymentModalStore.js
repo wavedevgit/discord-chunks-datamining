@@ -59,8 +59,8 @@ let _ = "no_payment_source",
   O = false,
   v = null,
   I = false,
-  T = false,
   S = false,
+  T = false,
   A = false,
   C = null,
   N = new Set;
@@ -70,17 +70,17 @@ function R(e) {
 }
 
 function P(e) {
-  R(), p = e.skuId, m = e.applicationId, T = e.isIAP, g = e.analyticsLocation, C = e.context, A = e.isGift, S = true, I = false, r = e.resolve, i = e.reject, v = null, y = null, E = e.promotionId
-}
-
-function D(e) {
-  let {
-    error: t
-  } = e;
-  S = false, C = null, R(t)
+  R(), p = e.skuId, m = e.applicationId, S = e.isIAP, g = e.analyticsLocation, C = e.context, A = e.isGift, T = true, I = false, r = e.resolve, i = e.reject, v = null, y = null, E = e.promotionId
 }
 
 function w(e) {
+  let {
+    error: t
+  } = e;
+  T = false, C = null, R(t)
+}
+
+function D(e) {
   let {
     skuId: t
   } = e;
@@ -151,7 +151,7 @@ function F(e) {
     locked: t
   } = e;
   if (!t || null == C) returnfalse;
-  S = false, C = null, R()
+  T = false, C = null, R()
 }
 class V extends(a = Chunk442837.ZP.Store) {
   getPricesForSku(e) {
@@ -159,7 +159,7 @@ class V extends(a = Chunk442837.ZP.Store) {
   }
   isOpen() {
     let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return C === module && S
+    return C === module && T
   }
   get isPurchasingSKU() {
     return O
@@ -183,7 +183,7 @@ class V extends(a = Chunk442837.ZP.Store) {
     return E
   }
   get isIAP() {
-    return T
+    return S
   }
   get giftCode() {
     return h
@@ -198,8 +198,8 @@ class V extends(a = Chunk442837.ZP.Store) {
 c(V, "displayName", "SKUPaymentModalStore");
 let H = new V(Chunk570140.Z, {
   SKU_PURCHASE_MODAL_OPEN: P,
-  SKU_PURCHASE_MODAL_CLOSE: D,
-  SKU_PURCHASE_PREVIEW_FETCH: w,
+  SKU_PURCHASE_MODAL_CLOSE: w,
+  SKU_PURCHASE_PREVIEW_FETCH: D,
   SKU_PURCHASE_PREVIEW_FETCH_SUCCESS: L,
   SKU_PURCHASE_PREVIEW_FETCH_FAILURE: x,
   SKU_PURCHASE_START: M,

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   J6: () => G,
-  LO: () => w,
-  TQ: () => D,
+  LO: () => D,
+  TQ: () => w,
   UB: () => H,
   ZU: () => L,
   Zn: () => x,
@@ -56,15 +56,15 @@ function P() {
   return Chunk63063.Z.getArticleURL(Chunk981631.BhN.END_TO_END_ENCRYPTION)
 }
 
-function D(e, t, n, r, i) {
-  n ? O.Z.createSecureFramesVerifiedKey(e, t) : O.Z.createSecureFramesTransientKey(e, t), (0, T.M1)({
+function w(e, t, n, r, i) {
+  n ? O.Z.createSecureFramesVerifiedKey(e, t) : O.Z.createSecureFramesTransientKey(e, t), (0, S.M1)({
     channelId: r,
     userId: e,
     analyticsLocation: i
   })
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   if (n) {
     let n = (0, c.MK)(new Uint8Array(t));
     O.Z.deleteSecureFramesVerifiedKey(e, n)
@@ -76,7 +76,7 @@ function L(e, t) {
     title: C.intl.string(C.t.hdL152),
     subtitle: C.intl.string(C.t["8VGYKg"]),
     onConfirm: () => {
-      O.Z.deleteSecureFramesVerifiedKey(e, t), (0, T.Pn)()
+      O.Z.deleteSecureFramesVerifiedKey(e, t), (0, S.Pn)()
     }
   })
 }
@@ -90,7 +90,7 @@ function x(e) {
     }),
     subtitle: C.intl.string(C.t.F1BQK3),
     onConfirm: () => {
-      O.Z.deleteSecureFramesUserVerifiedKeys(e), (0, T.DF)()
+      O.Z.deleteSecureFramesUserVerifiedKeys(e), (0, S.DF)()
     }
   })
 }
@@ -211,7 +211,7 @@ async function V(e) {
       key: n
     } = await j(e),
     r = await G(t, n, e);
-  return r || (0, T.KA)(e), r
+  return r || (0, S.KA)(e), r
 }
 
 function H(e, t) {
@@ -237,11 +237,11 @@ function Y(e) {
     channelId: n,
     nickname: r
   } = e;
-  (0, T.CW)({
+  (0, S.CW)({
     userId: t,
     channelId: n,
-    keyVersion: S.GB,
-    reason: S.Xe.OTHER_USER_INCONSISTENT_KEYS
+    keyVersion: T.GB,
+    reason: T.Xe.OTHER_USER_INCONSISTENT_KEYS
   }), u.Z.show({
     title: C.intl.string(C.t.mznLyR),
     body: C.intl.format(C.t.WY6IKb, {

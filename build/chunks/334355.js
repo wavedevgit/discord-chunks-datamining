@@ -68,7 +68,7 @@ module.exports = function(e) {
       keywords: E,
       contains: []
     },
-    T = {
+    S = {
       begin: ".?html`",
       end: "",
       starts: {
@@ -78,7 +78,7 @@ module.exports = function(e) {
         subLanguage: "xml"
       }
     },
-    S = {
+    T = {
       begin: ".?css`",
       end: "",
       starts: {
@@ -133,7 +133,7 @@ module.exports = function(e) {
         }]
       }), e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]
     },
-    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, C, {
+    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, T, A, C, {
       match: /\$\d+/
     }, v];
   I.contains = R.concat({
@@ -143,20 +143,20 @@ module.exports = function(e) {
     contains: ["self"].concat(R)
   });
   let P = [].concat(N, I.contains),
-    D = P.concat([{
+    w = P.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
       keywords: E,
       contains: ["self"].concat(P)
     }]),
-    w = {
+    D = {
       className: "params",
       begin: /(\s*)\(/,
       end: /\)/,
       excludeBegin: true,
       excludeEnd: true,
       keywords: E,
-      contains: D
+      contains: w
     },
     L = {
       variants: [{
@@ -200,7 +200,7 @@ module.exports = function(e) {
         3: "title.function"
       },
       label: "func.def",
-      contains: [w],
+      contains: [D],
       illegal: /%/
     },
     j = {
@@ -233,7 +233,7 @@ module.exports = function(e) {
       },
       contains: [{
         begin: /\(\)/
-      }, w]
+      }, D]
     },
     F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
     V = {
@@ -243,14 +243,14 @@ module.exports = function(e) {
         1: "keyword",
         3: "title.function"
       },
-      contains: [w]
+      contains: [D]
     };
   return {
     name: "JavaScript",
     aliases: ["js", "jsx", "mjs", "cjs"],
     keywords: E,
     exports: {
-      PARAMS_CONTAINS: D,
+      PARAMS_CONTAINS: w,
       CLASS_REFERENCE: x
     },
     illegal: /#(?![$_A-z])/,
@@ -258,7 +258,7 @@ module.exports = function(e) {
       label: "shebang",
       binary: "node",
       relevance: 5
-    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, C, N, {
+    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, T, A, C, N, {
       match: /\$\d+/
     }, v, x, {
       scope: "attr",
@@ -288,7 +288,7 @@ module.exports = function(e) {
             excludeBegin: true,
             excludeEnd: true,
             keywords: E,
-            contains: D
+            contains: w
           }]
         }]
       }, {
@@ -322,7 +322,7 @@ module.exports = function(e) {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
       returnBegin: true,
       label: "func.def",
-      contains: [w, e.inherit(e.TITLE_MODE, {
+      contains: [D, e.inherit(e.TITLE_MODE, {
         begin: d,
         className: "title.function"
       })]
@@ -337,7 +337,7 @@ module.exports = function(e) {
       className: {
         1: "title.function"
       },
-      contains: [w]
+      contains: [D]
     }, G, j, L, Z, {
       match: /\$[(.]/
     }]

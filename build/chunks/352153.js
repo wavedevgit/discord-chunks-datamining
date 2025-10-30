@@ -25,13 +25,13 @@ function h(e) {
     unreadItems: b,
     readItems: E,
     allUnreadItemsHydrated: O
-  } = (0, p.Z)(), I = (0, i.e7)([c.Z], () => c.Z.getVersion(), []), v = (0, i.e7)([c.Z], () => !(c.Z.isFirstPageHydrated() && I > 0));
+  } = (0, p.Z)(), I = (0, i.e7)([c.Z], () => c.Z.getVersion(), []), y = (0, i.e7)([c.Z], () => !(c.Z.isFirstPageHydrated() && I > 0));
   r.useEffect(() => {
     null != c.Z.getLoadId() && s.m.trackFeedShown({
       homeSessionId: "gravity"
     })
   }, [I]);
-  let y = (0, i.e7)([c.Z], () => c.Z.isRefreshing(), []),
+  let v = (0, i.e7)([c.Z], () => c.Z.isRefreshing(), []),
     C = (0, i.e7)([c.Z], () => c.Z.isHydrating(), []),
     [S, T] = r.useState([]),
     {
@@ -54,10 +54,10 @@ function h(e) {
     }).pop(),
     x = (0, l.Z)(P);
   r.useEffect(() => {
-    if (y || v || null == x || null == P || P === x) return;
+    if (v || y || null == x || null == P || P === x) return;
     let e = Date.now();
     e - j > m.C && (a.Z.gravityScrollEvent(e), s.m.trackFeedFirstScrollStarted())
-  }, [y, j, x, P, N, v]);
+  }, [v, j, x, P, N, y]);
   let A = r.useCallback(e => {
       var t, n;
       let {
@@ -179,7 +179,7 @@ function h(e) {
       stickyHeaderIndices: M
     } = r.useMemo(() => {
       let e = [];
-      return v && null != n && n.type === u.Ni.CUSTOM_STATUS && e.push({
+      return y && null != n && n.type === u.Ni.CUSTOM_STATUS && e.push({
         id: n.id,
         timestamp: Date.now(),
         data: {
@@ -188,7 +188,7 @@ function h(e) {
         },
         score: n.score,
         unread: true
-      }), v ? e.push({
+      }), y ? e.push({
         id: "loading",
         timestamp: 0,
         unread: false,
@@ -217,14 +217,14 @@ function h(e) {
         data: e,
         stickyHeaderIndices: []
       }
-    }, [v, n, b, O, E, C]);
+    }, [y, n, b, O, E, C]);
   return {
     data: D,
-    loading: v,
+    loading: y,
     version: I,
     visibleItemIds: S,
     endVisible: g,
-    isRefreshing: y,
+    isRefreshing: v,
     handleOnRefresh: R,
     stickyHeaderIndices: M,
     viewabilityConfigCallbackPairs: L

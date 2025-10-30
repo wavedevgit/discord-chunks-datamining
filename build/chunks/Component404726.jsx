@@ -28,25 +28,25 @@ function d(e) {
     ref: O,
     artboardProperties: v,
     dataBinding: I,
-    touchScrollEnabled: T = true,
-    dynamicDataBinding: S,
+    touchScrollEnabled: S = true,
+    dynamicDataBinding: T,
     listenOnDocumentBody: A,
     eventCapture: C
-  } = e, N = i.useContext(l.S), R = (0, s.C)(), P = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : R, [D, w] = i.useState(true), L = i.useRef(null), {
+  } = e, N = i.useContext(l.S), R = (0, s.C)(), P = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : R, [w, D] = i.useState(true), L = i.useRef(null), {
     rive: x,
     RiveComponent: M
   } = (0, o.useRive)({
     eventTarget: null == E ? true : E.current,
     buffer: d,
     autoplay: _,
-    stateMachines: D,
+    stateMachines: w,
     artboard: b,
     useOffscreenRenderer: true,
     layout: new o.Layout({
       fit: null != h ? u.M[h] : o.Fit.Cover,
       alignment: null != m ? u.Y[m] : o.Alignment.Center
     }),
-    isTouchScrollEnabled: T,
+    isTouchScrollEnabled: S,
     listenOnDocumentBody: A,
     eventCapture: C
   });
@@ -59,7 +59,7 @@ function d(e) {
     artboard: b,
     artboardProperties: v,
     dataBinding: I,
-    dynamicDataBinding: S
+    dynamicDataBinding: T
   }), i.useEffect(() => {
     if (null != x && "short-loop" === y && N.reducedMotion.enabled) {
       let e = () => {
@@ -79,13 +79,13 @@ function d(e) {
       x.resizeDrawingSurfaceToCanvas()
     }, 100))
   }, [x, h]), i.useEffect(() => {
-    null != x && null == D && (w(x.stateMachineNames), x.reset({
+    null != x && null == w && (D(x.stateMachineNames), x.reset({
       stateMachines: x.stateMachineNames,
       autoplay: _,
       artboard: b,
       autoBind: true
     }), x.setupRiveListeners())
-  }, [x, _, D, b]);
+  }, [x, _, w, b]);
   let k = i.useRef(0);
   i.useEffect(() => {
     if (null == x) return;
@@ -139,12 +139,12 @@ function f(e) {
           null == (i = t.viewModelInstance) || null == (r = i.color(d)) || r.rgba(y, O, v, 255 * I);
           break;
         case "number":
-          let T = null == (a = t.viewModelInstance) ? true : a.number(d);
-          null != T && (T.value = b);
+          let S = null == (a = t.viewModelInstance) ? true : a.number(d);
+          null != S && (S.value = b);
           break;
         case "boolean":
-          let S = null == (o = t.viewModelInstance) ? true : o.boolean(d);
-          null != S && (S.value = b);
+          let T = null == (o = t.viewModelInstance) ? true : o.boolean(d);
+          null != T && (T.value = b);
           break;
         case "trigger":
           null != b && ("boolean" == typeof b ? b : 0 !== b) && (null == (s = h.current) ? true : s[d]) !== b && (null == (c = t.viewModelInstance) || null == (l = c.trigger(d)) || l.trigger());

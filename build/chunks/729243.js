@@ -44,11 +44,11 @@ function p(e, t, n) {
     {
       focusableProps: I
     } = (0, u.kc)({}, n),
-    T = (null == (p = t.sortDescriptor) ? true : p.column) === E.key,
-    S = null == (h = t.sortDescriptor) ? true : h.direction;
-  E.props.allowsSorting && !(0, a.Dt)() && (g = T ? S : "none");
+    S = (null == (p = t.sortDescriptor) ? true : p.column) === E.key,
+    T = null == (h = t.sortDescriptor) ? true : h.direction;
+  E.props.allowsSorting && !(0, a.Dt)() && (g = S ? T : "none");
   let A = (0, f.q)(_(i.Z), "@react-aria/table");
-  b && (m = `${A.format("sortable")}`, T && S && (0, a.Dt)() && (m = `${m}, ${A.format(S)}`));
+  b && (m = `${A.format("sortable")}`, S && T && (0, a.Dt)() && (m = `${m}, ${A.format(T)}`));
   let C = (0, o.P)(m),
     N = 0 === t.collection.size;
   return (0, l.useEffect)(() => {

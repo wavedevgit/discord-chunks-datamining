@@ -68,12 +68,12 @@ function I() {
   u = Chunk981631.QZA.CLOSED, h = null, m = null, d = null, f = {}, _ = {}, E = null, b = [], y = null
 }
 
-function T(e) {
+function S(e) {
   var t;
   d = e.section, E = null, b = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (f[d] = e.subsection)
 }
 
-function S(e) {
+function T(e) {
   let {
     forSection: t
   } = e;
@@ -120,12 +120,12 @@ function P() {
   u = Chunk981631.QZA.OPEN, p = {}
 }
 
-function D(e) {
+function w(e) {
   var t;
   if (u !== s.QZA.SUBMITTING) returnfalse;
   u = s.QZA.OPEN, d = s.oAB.ACCOUNT, p = null != (t = e.errors) ? t : {}
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default)
   }
@@ -160,16 +160,16 @@ class w extends(r = Chunk442837.ZP.Store) {
     return y
   }
 }
-l(w, "displayName", "UserSettingsModalStore");
-let L = new w(Chunk570140.Z, {
+l(D, "displayName", "UserSettingsModalStore");
+let L = new D(Chunk570140.Z, {
   USER_SETTINGS_MODAL_OPEN: O,
   USER_SETTINGS_MODAL_INIT: v,
   USER_SETTINGS_MODAL_CLOSE: I,
   LOGOUT: I,
   USER_SETTINGS_MODAL_SUBMIT: N,
-  USER_SETTINGS_MODAL_SUBMIT_FAILURE: D,
-  USER_SETTINGS_MODAL_SET_SECTION: T,
-  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: S,
+  USER_SETTINGS_MODAL_SUBMIT_FAILURE: w,
+  USER_SETTINGS_MODAL_SET_SECTION: S,
+  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: T,
   USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: A,
   USER_SETTINGS_MODAL_UPDATE_ACCOUNT: C,
   USER_SETTINGS_MODAL_SUBMIT_COMPLETE: P,

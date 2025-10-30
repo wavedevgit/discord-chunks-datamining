@@ -27,8 +27,8 @@ let p = e => {
       onClose: O,
       onConfirm: v,
       onConfirmSecondary: I,
-      title: T,
-      transitionState: S,
+      title: S,
+      transitionState: T,
       titleClassName: A
     } = e,
     C = s.Button.Sizes.MEDIUM,
@@ -39,7 +39,7 @@ let p = e => {
   let P = () => {
       null == O || O(), null == y || y()
     },
-    D = e => {
+    w = e => {
       null != e && e.preventDefault(), null == O || O(), null == v || v()
     };
   return null != h && "" !== h && (t = (0, r.jsx)(s.Button, {
@@ -62,23 +62,23 @@ let p = e => {
     label: b,
     labelType: "secondary"
   })), (0, r.jsx)(l.Y0, {
-    transitionState: S,
+    transitionState: T,
     size: l.Cg.DYNAMIC,
     className: o()(m, _.container),
-    "aria-label": T,
+    "aria-label": S,
     parentComponent: "Alert",
     children: (0, r.jsxs)("form", {
-      onSubmit: D,
+      onSubmit: w,
       className: _.form,
       children: [(0, r.jsx)(l.xB, {
-        children: null != T ? (0, r.jsx)(u.Heading, {
+        children: null != S ? (0, r.jsx)(u.Heading, {
           variant: "heading-lg/semibold",
           className: o()(_.title, A),
-          children: T
+          children: S
         }) : (0, r.jsx)(u.Heading, {
           variant: "heading-md/semibold",
           className: o()(_.title, A),
-          children: T
+          children: S
         })
       }), (0, r.jsx)(l.hz, {
         className: _.modalContent,

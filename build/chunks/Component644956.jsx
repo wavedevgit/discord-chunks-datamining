@@ -101,7 +101,7 @@ function B(e) {
     var e;
     return null == (e = R.Z.getGuild(a)) ? true : e.ownerId
   }, [a]), _ = (0, l.e7)([P.default], () => P.default.getUser(t.userId), [t.userId]), p = (0, l.e7)([A.Z], () => A.Z.getChannel(o), [o]);
-  return null == _ || null == p ? null : (0, r.jsx)(T.Z, {
+  return null == _ || null == p ? null : (0, r.jsx)(S.Z, {
     targetElementRef: c,
     userId: t.userId,
     guildId: a,
@@ -160,14 +160,14 @@ function Z(e) {
   let f = (0, b.Z)(a),
     p = (0, l.e7)([R.Z], () => {
       let e = R.Z.getGuild(a);
-      return null == e ? null : (0, S.lV)(e)
+      return null == e ? null : (0, T.lV)(e)
     }, [a]),
     h = (0, l.Wu)([C.ZP, P.default], () => {
       let e = C.ZP.getMembers(a),
         t = null == n || n === p ? e : e.filter(e => e.roles.includes(n));
       return o()(t).filter(e => null != P.default.getUser(e.userId)).sortBy(e => {
         var t;
-        return null != (t = e.nick) ? t : D.ZP.getName(P.default.getUser(e.userId))
+        return null != (t = e.nick) ? t : w.ZP.getName(P.default.getUser(e.userId))
       }).value()
     }, [a, n, p]),
     m = (0, l.e7)([N.Z], () => {
@@ -182,7 +182,7 @@ function Z(e) {
       role: m
     }, e.userId)) : [], [s, a, m, h]);
   if (null == m) return null;
-  let O = null == E ? m.name : w.intl.formatToPlainString(w.t.CuAQkJ, {
+  let O = null == E ? m.name : D.intl.formatToPlainString(D.t.CuAQkJ, {
     title: m.name,
     count: E
   });
@@ -196,7 +196,7 @@ function Z(e) {
         className: L.roleScroller,
         children: [(0, r.jsx)(g.Z, {
           className: L.roleHeader,
-          "aria-label": w.intl.formatToPlainString(w.t.Uaqbke, {
+          "aria-label": D.intl.formatToPlainString(D.t.Uaqbke, {
             title: m.name,
             count: y.length
           }),
@@ -206,7 +206,7 @@ function Z(e) {
           })
         }), y, null == E || E <= y.length ? null : (0, r.jsx)(g.Z, {
           className: L.roleHeader,
-          children: w.intl.formatToPlainString(w.t["9oMmZC"], {
+          children: D.intl.formatToPlainString(D.t["9oMmZC"], {
             count: E - y.length
           })
         })]
@@ -225,13 +225,13 @@ function F(e) {
     inlinePreview: d = false
   } = e, {
     analyticsLocations: f
-  } = (0, m.ZP)(h.Z.ROLE_MENTION), _ = (0, l.e7)([p.Z], () => p.Z.roleStyle), g = (0, l.e7)([N.Z], () => null == o || null == t ? null : N.Z.getRole(o, t)), E = (0, I.yH)(o, g), b = !d && null != g && !(0, v.Gr)(g), T = b && "dot" === _, S = b && "username" === _, A = E && null != g ? g.colorStrings : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, U(k({
+  } = (0, m.ZP)(h.Z.ROLE_MENTION), _ = (0, l.e7)([p.Z], () => p.Z.roleStyle), g = (0, l.e7)([N.Z], () => null == o || null == t ? null : N.Z.getRole(o, t)), E = (0, I.yH)(o, g), b = !d && null != g && !(0, v.Gr)(g), S = b && "dot" === _, T = b && "username" === _, A = E && null != g ? g.colorStrings : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, U(k({
     ref: C,
     className: L.roleMention,
-    color: S ? g.color : null,
-    roleColors: S ? A : null
+    color: T ? g.color : null,
+    roleColors: T ? A : null
   }, e), {
-    children: [T && null != g.color && (0, r.jsx)(u.FhE, {
+    children: [S && null != g.color && (0, r.jsx)(u.FhE, {
       color: (0, s.Rf)(g.color),
       colors: A,
       className: x.roleDot,

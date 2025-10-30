@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   $E: () => L,
-  T6: () => D,
-  TW: () => T,
+  T6: () => w,
+  TW: () => S,
   U0: () => R,
   WO: () => x,
   rU: () => P,
-  wX: () => w
+  wX: () => D
 });
 var Chunk544891 = require("./544891.js"),
   Chunk780384 = require("./780384.js"),
@@ -66,11 +66,11 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var T = function(e) {
+var S = function(e) {
   return e.MESSAGE = "Message", e.FORUM_TOOLBAR = "Forum Toolbar", e.MOBILE_MEDIA_VIEWER = "Mobile Media Viewer", e.MESSAGE_HOVER_BAR = "Message Hover Bar", e.MESSAGE_INLINE_BUTTON = "Message Inline Button", e.MESSAGE_CONTEXT_MENU = "Message Context Menu", e.MESSAGE_REACTION_PICKER = "Message Reaction Picker", e.MESSAGE_SHORTCUT = "Message Shortcut", e.DOUBLE_TAP = "Double Tap", e
 }({});
 
-function S(e, t, n) {
+function T(e, t, n) {
   let {
     headers: r,
     status: i,
@@ -211,7 +211,7 @@ async function P(e, t, n) {
       name: n.name
     }))
   }).catch(r => {
-    S(r, () => P(e, t, n, a, {
+    T(r, () => P(e, t, n, a, {
       burst: f,
       isRetry: true
     }), {
@@ -226,7 +226,7 @@ async function P(e, t, n) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     channelId: t,
     messageId: n,
@@ -241,14 +241,14 @@ function D(e) {
     key: i
   })
 }
-async function w(e, t, n) {
+async function D(e, t, n) {
   let i = null != n && !!n.isRetry;
   await c.Z.unarchiveThreadIfNecessary(e), r.tn.del({
     url: E.ANM.REMOVE_REACTIONS(e, t),
     oldFormErrors: true,
     rejectWithError: false
   }).catch(n => {
-    S(n, () => w(e, t, {
+    T(n, () => D(e, t, {
       isRetry: true
     }), {
       isRetry: i
@@ -264,7 +264,7 @@ async function L(e, t, n, i) {
     oldFormErrors: true,
     rejectWithError: false
   }).catch(r => {
-    S(r, () => L(e, t, n, {
+    T(r, () => L(e, t, n, {
       isRetry: true
     }), {
       isRetry: a
@@ -305,7 +305,7 @@ async function x(e) {
       name: a.name
     }))
   }).catch(async e => {
-    if (S(e, () => x({
+    if (T(e, () => x({
         channelId: t,
         messageId: n,
         emoji: a,

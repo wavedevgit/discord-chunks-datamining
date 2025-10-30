@@ -5,12 +5,12 @@ require.d(exports, {
   E2: () => A,
   Kp: () => L,
   LI: () => b,
-  MH: () => w,
+  MH: () => D,
   Qr: () => E,
-  _p: () => S,
+  _p: () => T,
   f0: () => v,
   iB: () => O,
-  jV: () => T,
+  jV: () => S,
   k0: () => N,
   lW: () => P,
   lx: () => y,
@@ -72,11 +72,11 @@ let f = 60,
   O = e => e.display_type === c.MY.USER_ADD || e.display_type === c.MY.USER_INTERACTION || e.display_type === c.MY.USER_CALLED,
   v = e => e.display_type === c.MY.GUILD_ADD || e.display_type === c.MY.GUILD_INTERACTION,
   I = e => e.display_type === c.MY.PURCHASES,
-  T = e => {
+  S = e => {
     for (let t of Object.values(c.MY))
       if (t.toString() === e) return t
   },
-  S = e => {
+  T = e => {
     let t = A(e);
     return 0 === t.size ? [] : Array.from(t.entries()).sort((e, t) => e[1].priority - t[1].priority)
   },
@@ -95,10 +95,10 @@ let f = 60,
   },
   R = (e, t) => (0, l.PO)("family_center_activity_card") ? t : e,
   P = (e, t) => (0, l.vE)("family_center_activity_card") ? t : e,
-  D = () => Object.values(Chunk914788.Z.getLinkedUsers()).some(e => e.link_status === c.ne.ACTIVE),
-  w = () => {
+  w = () => Object.values(Chunk914788.Z.getLinkedUsers()).some(e => e.link_status === c.ne.ACTIVE),
+  D = () => {
     let e = Chunk594174.default.getCurrentUser(),
-      t = D(),
+      t = w(),
       n = (0, Chunk277537.vE)("settings-controls");
     return (null == module ? true : module.nsfwAllowed) === false && exports && require
   },

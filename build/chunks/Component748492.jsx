@@ -52,7 +52,7 @@ function M(e) {
     }),
     onClick: t,
     iconComponent: s.CJ0,
-    label: n ? w.intl.string(w.t["2TiKgS"]) : w.intl.string(w.t.oN8bqe)
+    label: n ? D.intl.string(D.t["2TiKgS"]) : D.intl.string(D.t.oN8bqe)
   })
 }
 
@@ -64,11 +64,11 @@ function k(e) {
     onMouseDown: y,
     onMouseMove: I,
     onMouseLeave: N,
-    onJumpToChannel: w,
+    onJumpToChannel: D,
     idle: M,
     selectedParticipant: k,
     embeddedActivity: j
-  } = e, U = (0, p.bp)() === P.IlC.POPOUT, G = (0, o.e7)([S.Z], () => S.Z.isVideoEnabled()), B = (0, o.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), Z = false === (null == (t = null == B ? true : B.disabled) || t), F = (0, u.Z)([s])[0], V = (0, m.Z)(a), {
+  } = e, U = (0, p.bp)() === P.IlC.POPOUT, G = (0, o.e7)([T.Z], () => T.Z.isVideoEnabled()), B = (0, o.e7)([T.Z], () => Object.values(T.Z.getVideoDevices())[0]), Z = false === (null == (t = null == B ? true : B.disabled) || t), F = (0, u.Z)([s])[0], V = (0, m.Z)(a), {
     parentAnalyticsLocation: H
   } = (0, c.ZP)(), Y = e => {
     (0, f.v)(H, f.d.CAMERA, e), l.Z.setVideoEnabled(e)
@@ -91,7 +91,7 @@ function k(e) {
       children: (0, r.jsx)(b.r, {
         idle: M,
         title: null != (i = null != (n = null == F ? true : F.name) ? n : null == a ? true : a.name) ? i : "",
-        onJumpToChannel: w,
+        onJumpToChannel: D,
         preventIdleComponent: E.Z
       })
     }), (0, r.jsxs)("div", {
@@ -101,7 +101,7 @@ function k(e) {
         shrink: 1,
         basis: "50%",
         align: _.Z.Align.CENTER,
-        children: [(0, r.jsx)(T.C, {
+        children: [(0, r.jsx)(S.C, {
           className: L.leftPipIcon,
           enabled: G,
           cameraUnavailable: !Z,
@@ -127,7 +127,7 @@ function k(e) {
           className: L.rightPipIcon,
           popoutOpen: false,
           onOpenPopout: K,
-          onClosePopout: D.Vq
+          onClosePopout: w.Vq
         }), (0, r.jsx)(O.Z, {
           applicationId: s,
           location: j.location,

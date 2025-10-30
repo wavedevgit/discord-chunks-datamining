@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 427217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -26,19 +26,19 @@ function s(e) {
   if (null == t) return null;
   let {
     emoji: x
-  } = t, f = null != t.state && "" !== t.state ? t.state : c;
+  } = t, g = null != t.state && "" !== t.state ? t.state : c;
   return (0, a.jsxs)("div", {
     className: l()(o.__invalid_container, n),
     children: [p || null == x ? null : (0, a.jsx)(i.Z, {
       emoji: x,
       className: l()(o.emoji, r, null != d ? {
-        [d]: null == f || "" === f
+        [d]: null == g || "" === g
       } : null),
       animate: u,
       hideTooltip: m
-    }), null != f && f.length > 0 ? (0, a.jsx)("span", {
+    }), null != g && g.length > 0 ? (0, a.jsx)("span", {
       className: s,
-      children: f
+      children: g
     }) : null, h]
   })
 }

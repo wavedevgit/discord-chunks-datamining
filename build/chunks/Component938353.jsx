@@ -274,26 +274,26 @@ class tt extends(r = Chunk647438.Component) {
         code: r,
         url: a
       } = t;
-      if (n === S.g.INVITE) return this.shouldRenderInvite(r) ? (0, i.jsx)(eM.Z, {
+      if (n === T.g.INVITE) return this.shouldRenderInvite(r) ? (0, i.jsx)(eM.Z, {
         code: r,
         message: e,
         getAcceptInviteContext: this.getAcceptInviteContext
       }, r) : null;
-      if (n === S.g.TEMPLATE) return (0, i.jsx)(G.Z, {
+      if (n === T.g.TEMPLATE) return (0, i.jsx)(G.Z, {
         code: r
       }, r);
-      if (n === S.g.EVENT) return (0, i.jsx)(U.Z, {
+      if (n === T.g.EVENT) return (0, i.jsx)(U.Z, {
         code: r
       }, r);
-      if (n === S.g.CHANNEL_LINK) return (0, i.jsx)(eD.Z, {
+      if (n === T.g.CHANNEL_LINK) return (0, i.jsx)(ew.Z, {
         code: r,
         message: e
       }, r);
-      if (n === S.g.APP_DIRECTORY_PROFILE) return (0, i.jsx)(x.Z, {
+      if (n === T.g.APP_DIRECTORY_PROFILE) return (0, i.jsx)(x.Z, {
         code: r,
         message: e
       }, r);
-      else if (n === S.g.ACTIVITY_BOOKMARK) {
+      else if (n === T.g.ACTIVITY_BOOKMARK) {
         let {
           referrerId: t = e.author.id,
           customId: n,
@@ -306,31 +306,31 @@ class tt extends(r = Chunk647438.Component) {
           customId: n,
           linkId: o
         }, r)
-      } else if (n === S.g.GUILD_PRODUCT) return (0, i.jsx)(j.Z, {
+      } else if (n === T.g.GUILD_PRODUCT) return (0, i.jsx)(j.Z, {
         code: r
       }, r);
-      else if (n === S.g.SERVER_SHOP) return (0, i.jsx)(A.Z, {
+      else if (n === T.g.SERVER_SHOP) return (0, i.jsx)(A.Z, {
         guildId: r
       }, r);
-      else if (n === S.g.QUESTS_EMBED) return (0, i.jsx)(ee.Z, {
+      else if (n === T.g.QUESTS_EMBED) return (0, i.jsx)(ee.Z, {
         questId: r
       }, r);
-      else if (n === S.g.APP_DIRECTORY_STOREFRONT) return (0, i.jsx)(b.P, {
+      else if (n === T.g.APP_DIRECTORY_STOREFRONT) return (0, i.jsx)(b.P, {
         appId: r,
         message: e
       }, r);
-      else if (n === S.g.APP_DIRECTORY_STOREFRONT_SKU) {
+      else if (n === T.g.APP_DIRECTORY_STOREFRONT_SKU) {
         let t = (0, E.Q)(r);
         return null == t ? null : (0, i.jsx)(b.F, {
           appId: t.applicationId,
           skuId: t.skuId,
           message: e
         }, r)
-      } else if (n === S.g.APP_OAUTH2_LINK) return (0, i.jsx)(O.Z, {
+      } else if (n === T.g.APP_OAUTH2_LINK) return (0, i.jsx)(O.Z, {
         applicationId: r,
         message: e
       }, r);
-      else if (n === S.g.COLLECTIBLES_SHOP) return null;
+      else if (n === T.g.COLLECTIBLES_SHOP) return null;
       else throw Error("Unknown coded link type: ".concat(n))
     })
   }
@@ -413,7 +413,7 @@ class tt extends(r = Chunk647438.Component) {
       m = (0, ey.yE)(u, ez.iLy.IS_VOICE_MESSAGE);
 
     function g(e, t) {
-      return (0, eT.dn)(e.originalItem, t)
+      return (0, eS.dn)(e.originalItem, t)
     }
     let E = d.map(i => {
       let s = (e, n, r) => {
@@ -522,7 +522,7 @@ class tt extends(r = Chunk647438.Component) {
     })
   }
   renderEphemeralAccessories(e) {
-    return (0, eS.Pv)(e) ? (0, i.jsx)(eL.Z, {
+    return (0, eT.Pv)(e) ? (0, i.jsx)(eL.Z, {
       message: e,
       onDeleteMessage: () => {
         _.Z.dismissAutomatedMessage(e)
@@ -628,7 +628,7 @@ class tt extends(r = Chunk647438.Component) {
       application: t,
       activityInstance: n
     } = e;
-    return null == t || null == n ? null : (0, i.jsx)(ew.Z, {
+    return null == t || null == n ? null : (0, i.jsx)(eD.Z, {
       application: t,
       channelId: this.props.channel.id,
       guildId: this.props.channel.guild_id,
@@ -665,7 +665,7 @@ class tt extends(r = Chunk647438.Component) {
     })
   }
   renderShareClientTheme(e) {
-    return null != e.sharedClientTheme ? (0, i.jsx)(T.q, {
+    return null != e.sharedClientTheme ? (0, i.jsx)(S.q, {
       message: e
     }) : null
   }
@@ -675,7 +675,7 @@ class tt extends(r = Chunk647438.Component) {
     })
   }
   renderForwardedMessage(e) {
-    if (e.messageSnapshots.length > 0 && !(0, et.Gi)(e, this.props.channel)) return (0, i.jsx)(w.Z, {
+    if (e.messageSnapshots.length > 0 && !(0, et.Gi)(e, this.props.channel)) return (0, i.jsx)(D.Z, {
       message: e
     })
   }
@@ -695,7 +695,7 @@ class tt extends(r = Chunk647438.Component) {
     } = this.props, {
       showSuppressModal: a,
       showRemoveAttachmentModal: o
-    } = this.state, l = this.renderEditedTag(exports, r), c = this.renderCodedLinks(exports), u = this.renderGiftCodes(exports), d = this.renderAttachments(exports), f = this.renderCtaButton(), _ = this.renderSocialProofingFileSizeNitroUpsell(exports), p = this.renderEmbeds(exports), h = this.renderActivityInvite(exports), m = this.renderReactions(exports), g = this.renderPublishBump(exports), E = this.renderEphemeralAccessories(exports), b = this.renderStickersAccessories(exports), y = this.renderThreadAccessories(exports), O = this.renderComponentAccessories(exports), v = this.renderThreadRoleMentionWarning(exports), I = this.renderEmbeddedApplicationInstanceEmbed(exports), T = this.renderInteractionPremiumUpsell(exports), S = this.renderMediaPostEmbeds(exports), A = this.renderSafetyPolicyNotice(exports), C = this.renderSafetySystemNotification(exports), N = this.renderMediaObscureNotice(exports), R = this.renderPoll(exports, require), P = this.renderForwardedMessage(exports), D = this.renderReportedMessage(exports), w = this.renderShareClientTheme(exports);
+    } = this.state, l = this.renderEditedTag(exports, r), c = this.renderCodedLinks(exports), u = this.renderGiftCodes(exports), d = this.renderAttachments(exports), f = this.renderCtaButton(), _ = this.renderSocialProofingFileSizeNitroUpsell(exports), p = this.renderEmbeds(exports), h = this.renderActivityInvite(exports), m = this.renderReactions(exports), g = this.renderPublishBump(exports), E = this.renderEphemeralAccessories(exports), b = this.renderStickersAccessories(exports), y = this.renderThreadAccessories(exports), O = this.renderComponentAccessories(exports), v = this.renderThreadRoleMentionWarning(exports), I = this.renderEmbeddedApplicationInstanceEmbed(exports), S = this.renderInteractionPremiumUpsell(exports), T = this.renderMediaPostEmbeds(exports), A = this.renderSafetyPolicyNotice(exports), C = this.renderSafetySystemNotification(exports), N = this.renderMediaObscureNotice(exports), R = this.renderPoll(exports, require), P = this.renderForwardedMessage(exports), w = this.renderReportedMessage(exports), D = this.renderShareClientTheme(exports);
     return null == Chunk442837 && null == Chunk902704 && null == Chunk637374 && null == Chunk626799 && null == Chunk624367 && null == Chunk377108 && null == Chunk183431 && null == Chunk421474 && null == Chunk603270 && null == Chunk234431 && null == Chunk162297 && null == Chunk446411 && null == Chunk222709 && null == Chunk960904 && null == Chunk161314 && null != Chunk36129 && null == Chunk262777 && null == Chunk761538 && null == Chunk674611 && null == Chunk294734 ? null : (0, Chunk951288.jsxs)("div", {
       id: (0, Chunk453687.bX)(exports),
       className: s()(module, Chunk636428.container),
@@ -728,7 +728,7 @@ class tt extends(r = Chunk647438.Component) {
         hasSpoilerEmbeds: d,
         enabledContentHarmTypeFlags: f,
         shouldAgeVerify: _
-      } = this.props, p = (0, eT.BP)(e, r, d, f);
+      } = this.props, p = (0, eS.BP)(e, r, d, f);
       if (e.type === ez.hBH.GIFT) return null;
       let h = e5.includes(e.type) ? e.url : null != (s = null == (a = e.image) ? true : a.url) ? s : null == (o = e.video) ? true : o.url;
       return (0, i.jsx)(L.h.Provider, {
@@ -791,7 +791,7 @@ function tn(e) {
   } = (0, c.cj)([ep.Z], () => ({
     canAddNewReactions: p && ep.Z.can(ez.Plq.ADD_REACTIONS, n),
     canManageMessages: ep.Z.can(ez.Plq.MANAGE_MESSAGES, n)
-  }), [p, n]), y = (0, M.ux)(n.guild_id), [, O] = (0, k.AB)(n.guild_id), v = (0, es.$R)(n), I = (s === r.author.id || b) && r.author.id !== ez.LAt && false !== a && !(0, ey.yE)(r.flags, ez.iLy.EPHEMERAL) && v && 1 === (0, eN.Z)(r), T = s === r.author.id && v && !o, S = r.author.id === s, A = r.isFirstMessageInForumPost(n), N = (0, eP.Z)({
+  }), [p, n]), y = (0, M.ux)(n.guild_id), [, O] = (0, k.AB)(n.guild_id), v = (0, es.$R)(n), I = (s === r.author.id || b) && r.author.id !== ez.LAt && false !== a && !(0, ey.yE)(r.flags, ez.iLy.EPHEMERAL) && v && 1 === (0, eN.Z)(r), S = s === r.author.id && v && !o, T = r.author.id === s, A = r.isFirstMessageInForumPost(n), N = (0, eP.Z)({
     channel: n,
     canChat: p,
     renderReactions: f,
@@ -801,10 +801,10 @@ function tn(e) {
     communicationDisabled: O,
     isActiveChannelOrUnarchivableThread: v,
     isAutomodQuarantined: y
-  }), P = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), D = (0, z.Z)(null == n ? true : n.id), w = (0, Q.Z)(r), L = (0, R.v)(r), x = (0, eC._)(n), j = (0, eI.ro)(r.id, r.channel_id), U = (0, C.m8)();
+  }), P = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), w = (0, z.Z)(null == n ? true : n.id), D = (0, Q.Z)(r), L = (0, R.v)(r), x = (0, eC._)(n), j = (0, eI.ro)(r.id, r.channel_id), U = (0, C.m8)();
   return (0, i.jsx)(tt, e3(e0(e3(e0({
     canSuppressEmbeds: I,
-    canDeleteAttachments: T
+    canDeleteAttachments: S
   }, N), {
     disableReactionReads: !!A || N.disableReactionReads
   }), e), {
@@ -812,16 +812,16 @@ function tn(e) {
     isLurking: h && p,
     isGuest: m && p,
     isPendingMember: g && p,
-    isCurrentUser: S,
+    isCurrentUser: T,
     inlineAttachmentMedia: l,
     inlineEmbedMedia: u,
     renderEmbeds: d,
     gifAutoPlay: _,
     canRenderReferralEmbed: n.isDM(),
-    poll: w,
+    poll: D,
     showListsAndHeaders: P,
     showMaskedLinks: P,
-    shouldHideMediaOptions: D,
+    shouldHideMediaOptions: w,
     enabledContentHarmTypeFlags: L,
     ctaButtonType: j,
     shouldAgeVerify: U

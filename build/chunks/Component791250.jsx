@@ -147,7 +147,7 @@ let eE = e => {
     let l = (0, u.JA)("friends"),
       a = (0, B.If)(),
       s = (0, p.e7)([F.Z], () => F.Z.canShowFriendsTabBadge()),
-      o = (0, p.e7)([y.Z], () => y.Z.useReducedMotion),
+      o = (0, p.e7)([v.Z], () => v.Z.useReducedMotion),
       {
         enabled: d
       } = H.w.useExperiment({
@@ -229,7 +229,7 @@ let eE = e => {
       }, n, i))
     })
   },
-  ev = e => {
+  ey = e => {
     var {
       selected: t,
       hideGameUpdateProgressIndicator: n
@@ -241,14 +241,14 @@ let eE = e => {
       icon: _.vqy,
       text: ef.intl.string(ef.t.cw57ar)
     }, i, l), {
-      children: (0, r.jsx)(v.Z, {
+      children: (0, r.jsx)(y.Z, {
         className: a()(eh.downloadProgressCircle, {
           [eh.hideGameUpdateProgressIndicator]: n
         })
       })
     }))
   },
-  ey = () => (0, Chunk951288.jsx)("li", {
+  ev = () => (0, Chunk951288.jsx)("li", {
     className: Chunk443226.createDMButtonContainer,
     children: (0, Chunk951288.jsx)(Chunk518311.l, {
       fullWidth: true,
@@ -385,7 +385,7 @@ let eA = Chunk647438.memo(function(e) {
     path: b,
     onlyShowDMs: E,
     hideAllDMs: O
-  } = e, v = i.useRef(null), y = i.useRef(null), C = i.useRef(null), S = i.useRef(null), N = G.o.useConfig({
+  } = e, y = i.useRef(null), v = i.useRef(null), C = i.useRef(null), S = i.useRef(null), N = G.o.useConfig({
     location: "privatechannels"
   }).friendsTab, j = (0, L.b5)("PrivateChannels"), P = null;
   return c ? P = (0, r.jsx)(q.F, {
@@ -396,12 +396,12 @@ let eA = Chunk647438.memo(function(e) {
     className: eh.privateChannels,
     "aria-label": ef.intl.string(ef.t.ZH9aP4),
     children: [E ? (0, r.jsx)(ej, {}) : (0, r.jsx)(ee.Z, {
-      childRef: v,
+      childRef: y,
       tutorialId: "direct-messages",
       position: "right",
       offsetX: false,
       children: (0, r.jsx)("div", {
-        ref: v,
+        ref: y,
         className: a()(eh.searchBar, {
           [eh.themedHeaderMobile]: d.tq
         }),
@@ -429,7 +429,7 @@ let eA = Chunk647438.memo(function(e) {
         selected: null != b ? b === eu.Z5c.FRIENDS : l === eu.Z5c.FRIENDS
       }, "friends"), !E && j ? (0, r.jsx)(eE, {
         selected: null != b ? b === eu.Z5c.ICYMI : l === eu.Z5c.ICYMI
-      }, "icymi") : null, n && t && !E ? (0, r.jsx)(ev, {
+      }, "icymi") : null, n && t && !E ? (0, r.jsx)(ey, {
         selected: null == b ? null != l && l.startsWith(eu.Z5c.APPLICATION_LIBRARY) : b.startsWith(eu.Z5c.APPLICATION_LIBRARY),
         hideGameUpdateProgressIndicator: l === eu.Z5c.APPLICATION_LIBRARY
       }, "library") : null, p && !E ? (0, r.jsx)(eS, {
@@ -449,7 +449,7 @@ let eA = Chunk647438.memo(function(e) {
         }), P]
       }, "nitro-tab-group") : null, E ? null : (0, r.jsx)(T.i, {
         selected: b === eu.Z5c.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(eu.Z5c.COLLECTIBLES_SHOP)),
-        listItemRef: y,
+        listItemRef: v,
         locationState: {
           analyticsSource: {
             page: ex(l),
@@ -461,7 +461,7 @@ let eA = Chunk647438.memo(function(e) {
         selected: null != l && l.startsWith(eu.Z5c.FAMILY_CENTER) || null != b && b.startsWith(eu.Z5c.FAMILY_CENTER)
       }, "family-center") : null, E ? null : (0, r.jsx)(J.Z, {
         selected: null == b ? null != l && l.startsWith(eu.Z5c.QUEST_HOME_V2) : b === eu.Z5c.QUEST_HOME_V2
-      }, "quests"), E || O ? null : (0, r.jsx)(eZ, {}, "section-divider-top"), O ? null : (0, r.jsx)(A.Z, {}, "frequent-friends"), "full-width" !== m || O || E ? null : (0, r.jsx)(ey, {}, "create-dm")]
+      }, "quests"), E || O ? null : (0, r.jsx)(eZ, {}, "section-divider-top"), O ? null : (0, r.jsx)(A.Z, {}, "frequent-friends"), "full-width" !== m || O || E ? null : (0, r.jsx)(ev, {}, "create-dm")]
     }))]
   })
 });
@@ -512,8 +512,8 @@ function ew() {
   }(), I = (0, Chunk882579.U)("PrivateChannels", {
     autoTrackExposure: true
   }), {
-    pathname: v
-  } = (0, Chunk843611.TH)(), y = Chunk339149.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.ME)) && Chunk339149 !== Chunk981631.Z5c.CHANNEL(Chunk981631.ME) && Chunk339149 !== Chunk981631.Z5c.ME_ACTIVITY, C = Chunk365113.o.useConfig({
+    pathname: y
+  } = (0, Chunk843611.TH)(), v = Chunk339149.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.ME)) && Chunk339149 !== Chunk981631.Z5c.CHANNEL(Chunk981631.ME) && Chunk339149 !== Chunk981631.Z5c.ME_ACTIVITY, C = Chunk365113.o.useConfig({
     location: "privatechannels"
   }).dmsTab;
   return (0, Chunk951288.jsx)(eA, {

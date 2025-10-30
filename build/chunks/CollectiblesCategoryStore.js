@@ -30,38 +30,38 @@ let m = new Map,
   O = m,
   v = g,
   I = E,
-  T = [],
-  S = b,
+  S = [],
+  T = b,
   A = y,
   C = null,
   N = false,
   R = new Set,
   P = new Map,
-  D = new Map,
-  w = {},
+  w = new Map,
+  D = {},
   L = 0,
   x = e => {
     let {
       skuId: t
     } = e;
-    (R = new Set(R)).add(t), (P = new Map(P)).delete(t), (D = new Map(D)).delete(t)
+    (R = new Set(R)).add(t), (P = new Map(P)).delete(t), (w = new Map(w)).delete(t)
   },
   M = e => {
     let {
       skuId: t,
       error: n
     } = e;
-    (R = new Set(R)).delete(t), (P = new Map(P)).set(t, n), (D = new Map(D)).set(t, Date.now())
+    (R = new Set(R)).delete(t), (P = new Map(P)).set(t, n), (w = new Map(w)).set(t, Date.now())
   },
   k = e => {
     let {
       skuId: t,
       product: n
     } = e;
-    v.set(t, n), (R = new Set(R)).delete(t), (P = new Map(P)).delete(t), (D = new Map(D)).delete(t)
+    v.set(t, n), (R = new Set(R)).delete(t), (P = new Map(P)).delete(t), (w = new Map(w)).delete(t)
   },
   j = e => {
-    N = true, r = true, a = true, w = e.options
+    N = true, r = true, a = true, D = e.options
   },
   U = e => {
     let {
@@ -82,14 +82,14 @@ let m = new Map,
         n = new Date;
       O.forEach((e, r) => {
         !t.has(r) && (null == e.unpublishedAt || e.unpublishedAt > n) && t.set(r, e)
-      }), S = new Map([...(O = t).values()].map(e => [e.storeListingId, e])), v = new Map((0, _.Cs)(O, true).map(e => [e.skuId, e])), T = [...(I = new Map((0, _.Cs)(O, false).map(e => [e.storeListingId, e]))).values()]
+      }), T = new Map([...(O = t).values()].map(e => [e.storeListingId, e])), v = new Map((0, _.Cs)(O, true).map(e => [e.skuId, e])), S = [...(I = new Map((0, _.Cs)(O, false).map(e => [e.storeListingId, e]))).values()]
     }
     V(e, v), i = Date.now(), N = false, r = true, a = true
   },
   F = e => {
     if (0 === e.shopHome.categories.length) return;
     let t = new Map(e.shopHome.categories.map(e => [e.skuId, e]));
-    S = new Map([...(O = new Map([...O, ...t])).values()].map(e => [e.storeListingId, e])), v = new Map((0, _.Cs)(O, true).map(e => [e.skuId, e]))
+    T = new Map([...(O = new Map([...O, ...t])).values()].map(e => [e.storeListingId, e])), v = new Map((0, _.Cs)(O, true).map(e => [e.skuId, e]))
   },
   V = (e, t) => {
     if (0 === e.length) {
@@ -109,7 +109,7 @@ let m = new Map,
     }
   },
   H = () => {
-    O = m, v = g, A = y, i = true, N = false, R = new Set, r = true, a = true, w = {}, L = 0
+    O = m, v = g, A = y, i = true, N = false, R = new Set, r = true, a = true, D = {}, L = 0
   },
   Y = () => {
     if (!Chunk353926.Z.hasLoadedExperiments) return;
@@ -145,7 +145,7 @@ class K extends(o = Chunk442837.ZP.Store) {
     return i
   }
   get lastFetchOptions() {
-    return w
+    return D
   }
   get categories() {
     return O
@@ -154,7 +154,7 @@ class K extends(o = Chunk442837.ZP.Store) {
     return v
   }
   get productsWithVariantsAsGroup() {
-    return T
+    return S
   }
   get recommendedGiftSkuIds() {
     return A
@@ -175,13 +175,13 @@ class K extends(o = Chunk442837.ZP.Store) {
     return null != e ? P.get(e) : true
   }
   getProductFetchErrorTimestamp(e) {
-    return null != e ? D.get(e) : true
+    return null != e ? w.get(e) : true
   }
   getProductByStoreListingId(e) {
     return null != e ? I.get(e) : true
   }
   getCategoryByStoreListingId(e) {
-    return null != e ? S.get(e) : true
+    return null != e ? T.get(e) : true
   }
   getCategoryForProduct(e) {
     let t = this.getProduct(e);

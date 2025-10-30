@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk818405 = require("./818405.js"),
   Chunk587158 = require("./587158.js"),
   Chunk286379 = require("./286379.js"),
@@ -86,9 +86,9 @@ class k extends Chunk647438.PureComponent {
           innerRef: this.contentDomRef,
           className: l()(r, P.container),
           onClick: e => e.stopPropagation(),
-          children: [(0, i.jsx)(y.ZP, {
+          children: [(0, i.jsx)(_.ZP, {
             expand: true,
-            icon: (0, i.jsx)(_.Z, {
+            icon: (0, i.jsx)(O.Z, {
               width: 40,
               height: 40,
               className: P.notificationIcon
@@ -130,8 +130,8 @@ class k extends Chunk647438.PureComponent {
     }), w(this, "handleReload", e => {
       this.setState({
         busy: true
-      }), D(), f.Z.track(C.rMx.NOTIFICATION_CLICKED, {
-        notif_type: j.n0.OverlayCrashed,
+      }), D(), f.Z.track(j.rMx.NOTIFICATION_CLICKED, {
+        notif_type: C.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => location.reload(true), 200)
     }), w(this, "handleNotificationClick", e => {
@@ -145,7 +145,7 @@ class k extends Chunk647438.PureComponent {
     })
   }
 }
-let R = a().throttle(() => {
+let R = s().throttle(() => {
   Chunk797614.Z.increment({
     name: Chunk286379.V.APP_CRASHED,
     tags: ["reason:".concat(Chunk818405.v.UNHANDLED_JS_ERROR), "level:".concat(Chunk587158.c.FATAL)]
@@ -155,7 +155,7 @@ let R = a().throttle(() => {
 });
 class A extends Chunk647438.PureComponent {
   componentDidCatch(e, t) {
-    let n = (0, O.s1)().location;
+    let n = (0, y.s1)().location;
     this.setState({
       error: e,
       info: t
@@ -166,7 +166,7 @@ class A extends Chunk647438.PureComponent {
     let i = (0, b.getPID)(),
       r = (0, b.getRPCAuthToken)();
     (0, g.lW)({
-      type: C.BmY.DISPATCH,
+      type: j.BmY.DISPATCH,
       pid: (0, b.getPID)(),
       token: r,
       payloads: [{
@@ -182,7 +182,7 @@ class A extends Chunk647438.PureComponent {
     let o = (0, E.V6)(e, S.gl.Hook, {
       extra: t
     });
-    f.Z.track(C.rMx.APP_CRASHED, {
+    f.Z.track(j.rMx.APP_CRASHED, {
       path: n.pathname,
       extra: t,
       error_message: e.message,

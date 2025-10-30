@@ -4,7 +4,7 @@
 require.d(exports, {
   CP: () => N,
   T4: () => R,
-  XK: () => w,
+  XK: () => D,
   g5: () => L,
   gZ: () => A,
   i6: () => C,
@@ -32,14 +32,14 @@ let y = 1e3,
   O = 5e3,
   v = 10,
   I = 864e5,
-  T = 6e5,
-  S = new Map;
+  S = 6e5,
+  T = new Map;
 async function A(e) {
   var t;
   let n = Date.now(),
-    i = null != (t = S.get(e)) ? t : 0;
-  if (_.Z.getApplicationFetchState(e) === _.M.FETCHING || _.Z.isInvalidApplication(e) || n < i + T) return;
-  S.set(e, n), c.Z.dispatch({
+    i = null != (t = T.get(e)) ? t : 0;
+  if (_.Z.getApplicationFetchState(e) === _.M.FETCHING || _.Z.isInvalidApplication(e) || n < i + S) return;
+  T.set(e, n), c.Z.dispatch({
     type: "APPLICATION_DIRECTORY_FETCH_APPLICATION",
     applicationId: e
   });
@@ -76,7 +76,7 @@ async function C(e) {
       dontRefetchMs: a,
       noCache: o
     } = t,
-    s = null != i && i + (null != a ? a : T) > n;
+    s = null != i && i + (null != a ? a : S) > n;
   if (r !== _.M.FETCHING && !s) {
     c.Z.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_APPLICATION",
@@ -107,7 +107,7 @@ async function C(e) {
 async function N() {
   let e = Date.now(),
     t = Chunk678694.Z.getLastFetchTimeMs();
-  if (null != exports && exports + T > module) return;
+  if (null != exports && exports + S > module) return;
   let n = await Chunk544891.tn.get({
     url: Chunk981631.ANM.APPLICATION_DIRECTORY_CATEGORIES,
     query: {
@@ -137,7 +137,7 @@ async function R(e) {
     applicationId: n,
     guildId: r
   })) ? t : {};
-  if (s !== g.M.FETCHING && (null == d || !(d + T > o))) {
+  if (s !== g.M.FETCHING && (null == d || !(d + S > o))) {
     c.Z.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS",
       applicationId: n,
@@ -207,7 +207,7 @@ async function P(e) {
     categoryId: f,
     integrationType: _
   })) ? t : {};
-  if (v !== m.M.FETCHING && (null == I || !(I + T > O))) {
+  if (v !== m.M.FETCHING && (null == I || !(I + S > O))) {
     c.Z.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_SEARCH",
       query: n,
@@ -282,10 +282,10 @@ async function P(e) {
   }
 }
 
-function D() {
+function w() {
   return (0, Chunk358085.isAndroid)() ? Chunk344372.R.ANDROID : (0, Chunk358085.isIOS)() ? Chunk344372.R.IOS : Chunk344372.R.WEB
 }
-async function w() {
+async function D() {
   let {
     surface: e = Chunk973693.Y.APPLICATION_DIRECTORY,
     activeState: t = Chunk535655.E.ACTIVE
@@ -298,7 +298,7 @@ async function w() {
   });
   if (Chunk344372 === Chunk425986.M.FETCHING) return;
   let f = !require && exports === Chunk535655.E.ACTIVE;
-  if (!Chunk358085 || null == Chunk288385 || !(Chunk288385 + T > Chunk261470)) {
+  if (!Chunk358085 || null == Chunk288385 || !(Chunk288385 + S > Chunk261470)) {
     Chunk570140.Z.dispatch({
       type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS",
       surface: module,
@@ -310,7 +310,7 @@ async function w() {
         query: {
           surface: module,
           active_state: exports,
-          platform: D(),
+          platform: w(),
           locale: Chunk706454.default.locale,
           cache: Chunk358085
         },

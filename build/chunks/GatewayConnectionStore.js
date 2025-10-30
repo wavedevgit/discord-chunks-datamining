@@ -40,8 +40,8 @@ function N(e, t, n) {
 let R = window.DiscordNative;
 Chunk955132.Wb.dispatcher.getDispatchHandler = Chunk344651.Z;
 let P = new Chunk710845.Z("ConnectionStore"),
-  D = 100,
-  w = 0,
+  w = 100,
+  D = 0,
   L = null,
   x = true,
   M = null,
@@ -61,7 +61,7 @@ function G() {
   }), !!Chunk955132.Wb.isSessionEstablished() && (Chunk955132.Wb.close(), Chunk955132.Wb.connect())
 }
 async function B(e) {
-  w = Date.now(), L = e.sessionId, I.RR.handleConnectionOpen();
+  D = Date.now(), L = e.sessionId, I.RR.handleConnectionOpen();
   let t = {},
     n = E.Z.getVoiceChannelId();
   if (null != n) {
@@ -79,7 +79,7 @@ async function B(e) {
 }
 
 function Z() {
-  P.verbose("connection closed dispatched"), w = Date.now()
+  P.verbose("connection closed dispatched"), D = Date.now()
 }
 
 function F() {
@@ -94,7 +94,7 @@ function H(e) {
   return I.GC.update({
     guildId: e.guildId,
     channelId: e.channelId
-  }), k = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, O.isIOS)() && M === A.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(true) : I.Wb.isClosed() && (T.Y(false), I.Wb.connect())), false
+  }), k = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, O.isIOS)() && M === A.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(true) : I.Wb.isClosed() && (S.Y(false), I.Wb.connect())), false
 }
 
 function Y() {
@@ -165,7 +165,7 @@ function Q(e) {
 }
 
 function J(e) {
-  return (0, O.isIOS)() ? (f.default.isAuthenticated() && (M === A.$7l.INACTIVE && e.state === A.$7l.BACKGROUND && null == I.GC.channelId ? I.Wb.close(true) : M === A.$7l.BACKGROUND && e.state === A.$7l.ACTIVE && I.Wb.isClosed() && (T.Y(false), I.Wb.connect())), M = e.state) : e.state === A.$7l.ACTIVE && (T.Y(false), f.default.isAuthenticated() && I.Wb.resetBackoff("App state is active")), false
+  return (0, O.isIOS)() ? (f.default.isAuthenticated() && (M === A.$7l.INACTIVE && e.state === A.$7l.BACKGROUND && null == I.GC.channelId ? I.Wb.close(true) : M === A.$7l.BACKGROUND && e.state === A.$7l.ACTIVE && I.Wb.isClosed() && (S.Y(false), I.Wb.connect())), M = e.state) : e.state === A.$7l.ACTIVE && (S.Y(false), f.default.isAuthenticated() && I.Wb.resetBackoff("App state is active")), false
 }
 
 function $() {
@@ -177,7 +177,7 @@ function ee() {
 }
 
 function et(e) {
-  return I.Wb.isSessionEstablished() && ("userIds" in e ? a()(e.userIds).chunk(D).forEach(t => {
+  return I.Wb.isSessionEstablished() && ("userIds" in e ? a()(e.userIds).chunk(w).forEach(t => {
     I.Wb.requestGuildMembers(e.guildIds, {
       userIds: t,
       presences: !!e.presences
@@ -322,7 +322,7 @@ class eE extends(r = Chunk442837.ZP.Store) {
     return Chunk955132.Wb.isSessionEstablished() || __OVERLAY__
   }
   lastTimeConnectedChanged() {
-    return w
+    return D
   }
 }
 N(eE, "displayName", "GatewayConnectionStore");

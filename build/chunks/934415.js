@@ -7,7 +7,7 @@ require.d(exports, {
   Nj: () => Chunk90463.Z,
   a5: () => x,
   c4: () => L,
-  g7: () => D,
+  g7: () => w,
   jZ: () => C,
   mE: () => B,
   oQ: () => A,
@@ -45,7 +45,7 @@ function I(e, t) {
   return e === t || e === O
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let i = h.Hn;
   return ((0, c.r8)(t) || t === O) && (i = r.IH(i, g.Plq.VIEW_CHANNEL)), I(t, y) && (i = r.IH(i, g.Plq.VIEW_CHANNEL), i = r.IH(i, g.Plq.CONNECT)), {
     id: e,
@@ -55,7 +55,7 @@ function T(e, t, n) {
   }
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   let i = h.Hn;
   return ((0, c.r8)(t) || t === O) && (i = r.IH(i, g.Plq.VIEW_CHANNEL)), (I(t, y) || I(t, v)) && (i = r.IH(i, g.Plq.VIEW_CHANNEL), i = r.IH(i, g.Plq.CONNECT)), {
     id: e,
@@ -68,17 +68,17 @@ function S(e, t, n) {
 function A(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     a = [];
-  return (n.length > 0 || r) && a.push(T(e, t, i.BN.ROLE)), n.forEach(e => {
-    a.push(S(e, t, i.BN.ROLE))
+  return (n.length > 0 || r) && a.push(S(e, t, i.BN.ROLE)), n.forEach(e => {
+    a.push(T(e, t, i.BN.ROLE))
   }), a
 }
 
 function C(e, t) {
-  return S(e, t, i.BN.MEMBER)
+  return T(e, t, i.BN.MEMBER)
 }
 
 function N(e, t) {
-  return S(e, t, i.BN.ROLE)
+  return T(e, t, i.BN.ROLE)
 }
 
 function R(e) {
@@ -105,11 +105,11 @@ function P(e, t, n) {
   return h || m && !_
 }
 
-function D(e, t) {
+function w(e, t) {
   return t.isGuildStageVoice() ? g.epw : null == e ? g.eWB : Math.max(e.features.has(g.GuildFeatures.VIP_REGIONS) ? E.HO[g.Eu4.TIER_3].limits.bitrate : g.eWB, E.HO[e.premiumTier].limits.bitrate)
 }
 
-function w(e) {
+function D(e) {
   let {
     channels: t,
     selectedChannelId: n,
@@ -132,7 +132,7 @@ function L(e) {
     selectedVoiceChannelId: r,
     voiceStates: i
   } = e;
-  return w({
+  return D({
     channels: t,
     selectedChannelId: n,
     selectedVoiceChannelId: r,

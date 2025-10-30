@@ -50,8 +50,8 @@ let y = (e, t, n, r) => {
       entry: n
     }), {
       user: I,
-      details: T,
-      appName: S
+      details: S,
+      appName: T
     } = (0, g.n)(n), {
       primaryColor: A,
       secondaryColor: C
@@ -69,18 +69,18 @@ let y = (e, t, n, r) => {
       })
     }, [null == v ? true : v.src, t, N, n, A, R, C, I]);
     if (null == I || null == N || null == R || !(0, _.qy)(R)) return null;
-    let D = null != n.extra.platform ? f.v[n.extra.platform] : null;
+    let w = null != n.extra.platform ? f.v[n.extra.platform] : null;
     return (0, r.jsxs)(h.yR, {
       children: [(0, r.jsx)(h.wG, {
         channel: t,
-        headerIcons: null == D ? null : (0, r.jsx)(m.Z, {
-          Icon: D,
+        headerIcons: null == w ? null : (0, r.jsx)(m.Z, {
+          Icon: w,
           "aria-label": E.intl.string(E.t.YR4cHH)
         }),
         entry: n,
         userDescription: E.t.rPqqts,
-        title: S,
-        subtitle: T,
+        title: T,
+        subtitle: S,
         badges: (0, r.jsx)(p.Gk, {
           location: p.Gt.POPOUT,
           children: _.Hs.map((e, t) => (0, r.jsx)(e, {

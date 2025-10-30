@@ -98,8 +98,8 @@ let I = Chunk647438.memo(function(e) {
   } = t, W = r.useMemo(() => (0, h.w_)(V, A), [V, A]), G = (0, h.KR)(z, A), {
     resizeX: F,
     resizeY: H,
-    dragAnywhere: Y
-  } = null != w ? w : {}, B = L || !_, Q = r.useMemo(() => ({
+    dragAnywhere: B
+  } = null != w ? w : {}, Y = L || !_, Q = r.useMemo(() => ({
     minX: 0,
     minY: 0,
     maxX: A.width,
@@ -130,14 +130,14 @@ let I = Chunk647438.memo(function(e) {
       width: 0,
       height: 0
     },
-    hidden: !B,
+    hidden: !Y,
     locked: _,
     resizeX: null != F && F,
     resizeY: null != H && H,
     style: {
       zIndex: M
     },
-    dragAnywhere: null != Y && Y,
+    dragAnywhere: null != B && B,
     active: !_,
     onUpdate: D,
     onClick: R,

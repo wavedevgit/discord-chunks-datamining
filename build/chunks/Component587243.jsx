@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 587243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => v,
@@ -36,9 +36,9 @@ let x = [{
     duration: true,
     label: () => Chunk388032.intl.string(Chunk388032.t["46dqJY"])
   }],
-  f = "forever";
+  g = "forever";
 
-function g(e, t) {
+function f(e, t) {
   return e.getFullYear() === t.getFullYear() && e.getMonth() === t.getMonth() && e.getDate() === t.getDate()
 }
 
@@ -62,7 +62,7 @@ function b(e) {
           durationMillis: r
         }),
         dontCloseOnAction: true
-      }, null != r ? r : f)
+      }, null != r ? r : g)
     })
   });
   return (0, a.jsx)(l.sNh, {
@@ -104,10 +104,10 @@ function b(e) {
 function v(e) {
   if (null == e || "0" === e) return;
   let t = new Date(Number(e)),
-    n = g(t, new Date),
+    n = f(t, new Date),
     a = new Date;
   a.setDate(a.getDate() + 1);
-  let r = g(t, a);
+  let r = f(t, a);
   return n ? p.intl.formatToPlainString(p.t.ZxxHIO, {
     timeString: p.intl.data.formatTime(t, {
       format: "short"
@@ -132,7 +132,7 @@ function j(e) {
     }).allowQuietMode || n,
     d = s.fv.useSetting(),
     u = e === m.Skl.DND,
-    g = n => {
+    f = n => {
       let a = v(t);
       if (e === n && null != a) return a;
       switch (n) {
@@ -157,7 +157,7 @@ function j(e) {
             (0, i.oW)(true, n)
           },
           dontCloseOnAction: true
-        }, null != n ? n : f)
+        }, null != n ? n : g)
       })
     }),
     _ = b({
@@ -167,17 +167,17 @@ function j(e) {
     y = b({
       status: m.Skl.IDLE,
       currentStatus: e,
-      description: g(m.Skl.IDLE)
+      description: f(m.Skl.IDLE)
     }),
     C = b({
       status: m.Skl.DND,
       currentStatus: e,
-      description: g(m.Skl.DND)
+      description: f(m.Skl.DND)
     }),
     S = b({
       status: m.Skl.INVISIBLE,
       currentStatus: e,
-      description: g(m.Skl.INVISIBLE)
+      description: f(m.Skl.INVISIBLE)
     });
   return (0, a.jsxs)(a.Fragment, {
     children: [_, (0, a.jsx)(l.Clw, {}, "menu-separator-statuses"), y, C, S, c || n ? (0, a.jsxs)(a.Fragment, {

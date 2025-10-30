@@ -2,7 +2,7 @@
 /** chunk id: 366841, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => T
+  G: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -46,8 +46,8 @@ function v(e) {
 }
 let I = 1e3;
 
-function T() {
-  let [e, t] = Chunk647438.useState(false), O = (0, Chunk481060.VXO)(Chunk596401.Xd), T = Chunk647438.useMemo(() => [Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL], []), [S, A] = (0, Chunk243778.US)(T), C = S === Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL, N = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId());
+function S() {
+  let [e, t] = Chunk647438.useState(false), O = (0, Chunk481060.VXO)(Chunk596401.Xd), S = Chunk647438.useMemo(() => [Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL], []), [T, A] = (0, Chunk243778.US)(S), C = T === Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL, N = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId());
   Chunk647438.useLayoutEffect(() => {
     null != N && Chunk709054.default.age(N) < Chunk70956.Z.Millis.DAY && (0, Chunk266454.Q3)(Chunk704215.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
     let e = "desktop_refresh_theme_migration_key",

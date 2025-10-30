@@ -25,8 +25,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk492681 = require("./492681.js");
-let T = 292,
-  S = 36,
+let S = 292,
+  T = 36,
   A = 48;
 
 function C(e) {
@@ -36,12 +36,12 @@ function C(e) {
     message: a,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
-  } = e, f = i.useRef(null), [p, m] = i.useState(true), [C, R] = i.useState(false), P = t.state === O.r2o.ACCEPTING, D = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = e, f = i.useRef(null), [p, m] = i.useState(true), [C, R] = i.useState(false), P = t.state === O.r2o.ACCEPTING, w = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
-    R((null != (t = null == (e = f.current) ? true : e.clientHeight) ? t : 0) > T)
+    R((null != (t = null == (e = f.current) ? true : e.clientHeight) ? t : 0) > S)
   }, [R]);
-  let w = (0, _.PC)(t),
+  let D = (0, _.PC)(t),
     L = i.useCallback(() => {
       C && p && m(false)
     }, [p, C]),
@@ -51,11 +51,11 @@ function C(e) {
     M = i.useMemo(() => {
       var e;
       return C && (null == (e = f.current) ? true : e.clientHeight) != null ? {
-        height: p ? T : f.current.clientHeight + S + A,
-        transition: D ? true : "height 0.2s ease"
+        height: p ? S : f.current.clientHeight + T + A,
+        transition: w ? true : "height 0.2s ease"
       } : {}
-    }, [p, C, D]);
-  return null == w ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(l.kL8, {
+    }, [p, C, w]);
+  return null == D ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(l.kL8, {
     className: o()(I.guildInviteContainer, {
       [I.clickable]: C && p
     }),
@@ -66,14 +66,14 @@ function C(e) {
       className: I.cardHeightMeasure,
       ref: f,
       children: [(0, r.jsx)(E.Z7, {
-        profile: w,
+        profile: D,
         className: I.banner
       }), (0, r.jsx)(E.N3, {
-        profile: w
+        profile: D
       }), (0, r.jsx)(g.Z, {
-        profile: w
+        profile: D
       }), (0, r.jsx)(h.E, {
-        profile: w,
+        profile: D,
         className: I.mainContent
       }), (0, r.jsx)(b.Z, {
         invite: t
@@ -101,7 +101,7 @@ function C(e) {
           className: I.buttonContainer,
           children: (0, r.jsx)(N, {
             invite: t,
-            profile: w,
+            profile: D,
             isMemberOfGuild: n,
             message: a,
             submitting: P,

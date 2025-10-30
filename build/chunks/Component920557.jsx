@@ -46,9 +46,9 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -56,7 +56,7 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -76,11 +76,11 @@ function R(e) {
   } = e, l = (0, _.Dt)(), {
     channelId: c,
     messageId: u
-  } = (0, b.pE)(), [g, E] = i.useState(""), [y, v] = i.useState(false), I = "" !== g && y, T = i.useCallback(() => {
+  } = (0, b.pE)(), [g, E] = i.useState(""), [y, v] = i.useState(false), I = "" !== g && y, S = i.useCallback(() => {
     E((0, m.e1)(u, c, o))
-  }, [u, c, o]), S = i.useCallback(() => {
-    T(), v(true)
-  }, [T]), A = i.useCallback(() => {
+  }, [u, c, o]), T = i.useCallback(() => {
+    S(), v(true)
+  }, [S]), A = i.useCallback(() => {
     v(false)
   }, []), C = i.useCallback(() => {
     (0, h.n)({
@@ -90,10 +90,10 @@ function R(e) {
     })
   }, [c, u, o]);
   return i.useEffect(() => {
-    if (y) return p.Z.addReactChangeListener(T), () => {
-      p.Z.removeReactChangeListener(T)
+    if (y) return p.Z.addReactChangeListener(S), () => {
+      p.Z.removeReactChangeListener(S)
     }
-  }, [y, T]), (0, r.jsxs)("div", {
+  }, [y, S]), (0, r.jsxs)("div", {
     className: O.votesData,
     children: [a ? (0, r.jsxs)(r.Fragment, {
       children: ["" !== g ? (0, r.jsx)(d.u, {
@@ -106,9 +106,9 @@ function R(e) {
         forceOpen: I,
         "aria-label": false,
         children: (0, r.jsx)(f.Avr, {
-          onMouseEnter: S,
+          onMouseEnter: T,
           onMouseLeave: A,
-          onFocus: S,
+          onFocus: T,
           onBlur: A,
           onClick: C,
           "aria-describedby": I ? l : true,
@@ -117,9 +117,9 @@ function R(e) {
           textVariant: "text-xs/semibold"
         })
       }) : (0, r.jsx)(f.Avr, {
-        onMouseEnter: S,
+        onMouseEnter: T,
         onMouseLeave: A,
-        onFocus: S,
+        onFocus: T,
         onBlur: A,
         onClick: C,
         text: n,
@@ -166,7 +166,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     answersInteraction: t,
     isSelected: n,
@@ -201,7 +201,7 @@ function D(e) {
   })).otherwise(() => null)
 }
 
-function w(e) {
+function D(e) {
   let {
     answer: t,
     isExpired: n,
@@ -233,7 +233,7 @@ function w(e) {
       label: t.votes,
       canShowVoterDetails: l,
       answerId: t.answerId
-    }), (0, r.jsx)(D, {
+    }), (0, r.jsx)(w, {
       answersInteraction: i,
       isSelected: c,
       didSelfVote: u,
@@ -250,13 +250,13 @@ function L(e) {
     answersInteraction: n,
     canShowVoteCounts: i,
     canTapAnswers: a
-  } = e, o = T(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
+  } = e, o = S(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
   return (0, r.jsx)(E.$e, I({
     className: O.answersContainer,
     answerClassName: O.answer,
     answersInteraction: n,
     canTapAnswers: a,
-    renderAnswerContent: e => (0, r.jsx)(w, {
+    renderAnswerContent: e => (0, r.jsx)(D, {
       answer: e,
       isExpired: t,
       answersInteraction: n,

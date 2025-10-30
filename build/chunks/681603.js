@@ -66,13 +66,13 @@ class E extends Chunk647438.Component {
         return n
       })(Object(h)).forEach(function(e) {
         Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(h, e))
-      }), u)), (0, a.a)(v.rMx.GUILD_VIEWED_CLICKSTREAM, {
+      }), u)), (0, s.a)(v.rMx.GUILD_VIEWED_CLICKSTREAM, {
         guildId: t
       })
     }
     if (null != n && n !== e.selectedChannel) {
-      let e = (0, s.K)(d.Z.getChannel(n), true);
-      (0, c.Q)(v.rMx.CHANNEL_OPENED, b({}, e, (0, l.$H)(n))), (0, a.a)(v.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      let e = (0, a.K)(d.Z.getChannel(n), true);
+      (0, c.Q)(v.rMx.CHANNEL_OPENED, b({}, e, (0, l.$H)(n))), (0, s.a)(v.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: n
       })
     }
@@ -86,8 +86,8 @@ let S = Chunk442837.ZP.connectStores([Chunk914010.Z, Chunk944486.Z, Chunk430824.
   let i = Chunk914010.Z.getGuildId(),
     o = Chunk944486.Z.getChannelId(Chunk647438),
     l = Chunk430824.Z.getGuild(Chunk647438),
-    s = Chunk594174.default.getCurrentUser(),
-    a = null != (t = Chunk984933.ZP.getChannels(null == Chunk367907 ? true : Chunk367907.id)[Chunk984933.sH]) ? exports : [],
+    a = Chunk594174.default.getCurrentUser(),
+    s = null != (t = Chunk984933.ZP.getChannels(null == Chunk367907 ? true : Chunk367907.id)[Chunk984933.sH]) ? exports : [],
     c = Chunk188471.length > 0 ? Chunk188471.filter(e => {
       let {
         channel: t

@@ -1,14 +1,12 @@
 /** Chunk was on 4530 **/
 /** chunk id: 899201, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => B
+  default: () => z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
-  Chunk218887 = require("./218887.js"),
-  o = require.n(Chunk218887),
   Chunk990547 = require("./990547.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
@@ -36,6 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk768581 = require("./768581.js"),
   Chunk971130 = require("./971130.js"),
+  Chunk137058 = require("./137058.js"),
   Chunk624138 = require("./624138.js"),
   Chunk591759 = require("./591759.js"),
   Chunk51144 = require("./51144.js"),
@@ -47,61 +46,61 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk989201 = require("./989201.js");
 
-function B(e) {
+function z(e) {
   var t, n, {
-      applicationId: l,
+      applicationId: a,
       mediaUrl: r,
-      onClose: s,
-      transitionState: m
+      onClose: c,
+      transitionState: E
     } = e,
-    h = function(e, t) {
+    S = function(e, t) {
       if (null == e) return {};
-      var n, i, a = function(e, t) {
+      var n, i, l = function(e, t) {
         if (null == e) return {};
-        var n, i, a = {},
-          l = Object.keys(e);
-        for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (a[n] = e[n]);
-        return a
+        var n, i, l = {},
+          a = Object.keys(e);
+        for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (l[n] = e[n]);
+        return l
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+        var a = Object.getOwnPropertySymbols(e);
+        for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
       }
-      return a
+      return l
     }(e, ["applicationId", "mediaUrl", "onClose", "transitionState"]);
-  let v = (0, u.e7)([R.ZP], () => R.ZP.getCurrentEmbeddedActivity());
-  (0, E.Z)({
-    type: d.ImpressionTypes.MODAL,
-    name: d.ImpressionNames.ACTIVITY_SHARE_MOMENT_MODAL,
+  let T = (0, d.e7)([L.ZP], () => L.ZP.getCurrentEmbeddedActivity());
+  (0, b.Z)({
+    type: s.ImpressionTypes.MODAL,
+    name: s.ImpressionNames.ACTIVITY_SHARE_MOMENT_MODAL,
     properties: {
-      application_id: l,
-      activity_session_id: null == v ? true : v.compositeInstanceId
+      application_id: a,
+      activity_session_id: null == T ? true : T.compositeInstanceId
     }
   });
-  let [O] = (0, S.Z)([l]), j = (0, u.e7)([P.default], () => P.default.getCurrentUser()), [D, M] = a.useState(""), [F, B] = a.useState([]), [K, Q] = a.useState(null), [Y, X] = a.useState(null), [$, J] = a.useState(false);
-  a.useEffect(() => {
+  let [x] = (0, y.Z)([a]), P = (0, d.e7)([j.default], () => j.default.getCurrentUser()), [U, k] = l.useState(""), [z, W] = l.useState([]), [K, Q] = l.useState(null), [Y, X] = l.useState(null), [$, J] = l.useState(false);
+  l.useEffect(() => {
     (async () => {
-      let e = k.Z.toURLSafe(r);
+      let e = M.Z.toURLSafe(r);
       if (null == e) return;
-      let t = o().basename(e.pathname),
+      let t = (0, D.eP)(e.pathname),
         n = await fetch(r),
         i = new File([await n.arrayBuffer()], t);
       Q(i);
-      let a = new FileReader;
-      a.onload = () => {
+      let l = new FileReader;
+      l.onload = () => {
         var e;
-        return X(null == a || null == (e = a.result) ? true : e.toString())
-      }, a.readAsDataURL(i)
+        return X(null == l || null == (e = l.result) ? true : e.toString())
+      }, l.readAsDataURL(i)
     })()
   }, [r, Q]);
-  let ee = (0, u.Wu)([x.Z, Z.Z], () => x.Z.getInviteSuggestionRows().filter(e => e.type === U.bm.FRIEND || e.type === U.bm.DM || Z.Z.can(G.Plq.ATTACH_FILES, e.item)));
-  a.useEffect(() => {
-    (0, g.x)({
+  let ee = (0, d.Wu)([_.Z, O.Z], () => _.Z.getInviteSuggestionRows().filter(e => e.type === A.bm.FRIEND || e.type === A.bm.DM || O.Z.can(R.Plq.ATTACH_FILES, e.item)));
+  l.useEffect(() => {
+    (0, p.x)({
       omitUserIds: new Set,
-      applicationId: l,
-      inviteTargetType: q.Iq.EMBEDDED_APPLICATION
+      applicationId: a,
+      inviteTargetType: G.Iq.EMBEDDED_APPLICATION
     })
-  }, [l]), a.useEffect(() => (0, g.C)(D), [D]), a.useEffect(() => {
+  }, [a]), l.useEffect(() => (0, p.C)(U), [U]), l.useEffect(() => {
     let e;
     return $ && (e = setTimeout(() => {
       J(false)
@@ -109,54 +108,54 @@ function B(e) {
       null != e && clearTimeout(e)
     }
   }, [$]);
-  let et = a.useCallback(async () => {
-      await s()
-    }, [s]),
-    en = a.useCallback(async () => {
-      A.default.track(G.rMx.ACTIVITY_SHARE_MOMENT_COPY, {
-        user_id: null == j ? true : j.id,
-        application_id: l,
-        activity_session_id: null == v ? true : v.compositeInstanceId
-      }), await L.ZP.copyImage(r), J(true)
-    }, [null == v ? true : v.compositeInstanceId, l, r, null == j ? true : j.id]),
-    ei = a.useCallback(async () => {
+  let et = l.useCallback(async () => {
+      await c()
+    }, [c]),
+    en = l.useCallback(async () => {
+      N.default.track(R.rMx.ACTIVITY_SHARE_MOMENT_COPY, {
+        user_id: null == P ? true : P.id,
+        application_id: a,
+        activity_session_id: null == T ? true : T.compositeInstanceId
+      }), await F.ZP.copyImage(r), J(true)
+    }, [null == T ? true : T.compositeInstanceId, a, r, null == P ? true : P.id]),
+    ei = l.useCallback(async () => {
       let e = 0,
         t = 0,
         n = 0;
       async function i(i) {
-        let a;
+        let l;
         switch (i.type) {
-          case U.bm.DM:
-          case U.bm.FRIEND:
-            a = await f.Z.ensurePrivateChannel(i.id), e++;
+          case A.bm.DM:
+          case A.bm.FRIEND:
+            l = await m.Z.ensurePrivateChannel(i.id), e++;
             break;
-          case U.bm.GROUP_DM:
-            a = i.id, t++;
+          case A.bm.GROUP_DM:
+            l = i.id, t++;
             break;
-          case U.bm.CHANNEL:
-            a = i.id, n++;
+          case A.bm.CHANNEL:
+            l = i.id, n++;
             break;
           default:
             return
         }
-        let r = T.Z.getChannel(a);
+        let r = C.Z.getChannel(l);
         if (null != K) {
           let e = new File([K], K.name, {
             type: K.type
           });
-          b.Z.addFile({
+          g.Z.addFile({
             file: {
               file: e,
-              platform: y.ow.WEB,
+              platform: I.ow.WEB,
               origin: "unknown:activity_share"
             },
-            channelId: a,
-            draftType: _.d.ChannelMessage
+            channelId: l,
+            draftType: w.d.ChannelMessage
           })
         }
-        let s = N.Z.getUploads(a, _.d.ChannelMessage);
-        I.Z.sendMessage(a, null != O ? w.ZP.parse(r, H.intl.formatToPlainString(H.t.jQULqL, {
-          applicationName: "**".concat(O.name, "**")
+        let s = Z.Z.getUploads(l, w.d.ChannelMessage);
+        f.Z.sendMessage(l, null != x ? v.ZP.parse(r, V.intl.formatToPlainString(V.t.jQULqL, {
+          applicationName: "**".concat(x.name, "**")
         })) : {
           content: "",
           tts: false,
@@ -164,12 +163,12 @@ function B(e) {
           validNonShortcutEmojis: []
         }, false, {
           eagerDispatch: false,
-          location: V.dy.ACTIVITY_SHARE,
-          applicationId: l,
+          location: q.dy.ACTIVITY_SHARE,
+          applicationId: a,
           attachmentsToUpload: s,
           onAttachmentUploadError: (e, t, n) => {
             var i;
-            (0, C.A)({
+            (0, h.A)({
               file: e,
               guildId: null != (i = null == r ? true : r.getGuildId()) ? i : null,
               analyticsLocations: [],
@@ -177,27 +176,27 @@ function B(e) {
               reason: n
             })
           }
-        }), b.Z.clearAll(a, _.d.ChannelMessage)
+        }), g.Z.clearAll(l, w.d.ChannelMessage)
       }
-      let a = F.map(e => i(e));
-      A.default.track(G.rMx.ACTIVITY_SHARE_MOMENT_SEND, {
-        user_id: null == j ? true : j.id,
-        application_id: l,
-        activity_session_id: null == v ? true : v.compositeInstanceId,
+      let l = z.map(e => i(e));
+      N.default.track(R.rMx.ACTIVITY_SHARE_MOMENT_SEND, {
+        user_id: null == P ? true : P.id,
+        application_id: a,
+        activity_session_id: null == T ? true : T.compositeInstanceId,
         n_users: e,
         n_gdms: t,
         n_channels: n
       });
       try {
-        await Promise.all(a), null != O && (0, p.showToast)((0, p.createToast)(H.intl.formatToPlainString(H.t.jQULqL, {
-          applicationName: O.name
-        }), p.ToastType.SUCCESS))
+        await Promise.all(l), null != x && (0, u.showToast)((0, u.createToast)(V.intl.formatToPlainString(V.t.jQULqL, {
+          applicationName: x.name
+        }), u.ToastType.SUCCESS))
       } catch (e) {
-        throw (0, p.showToast)((0, p.createToast)(H.intl.string(H.t.PanA4J), p.ToastType.FAILURE)), e
+        throw (0, u.showToast)((0, u.createToast)(V.intl.string(V.t.PanA4J), u.ToastType.FAILURE)), e
       }
       et()
-    }, [v, O, l, F, K, et, j]);
-  return null == Y ? (0, i.jsx)(p.$jN, {}) : (0, i.jsx)(c.Modal, (t = function(e) {
+    }, [T, x, a, z, K, et, P]);
+  return null == Y ? (0, i.jsx)(u.$jN, {}) : (0, i.jsx)(o.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -215,61 +214,61 @@ function B(e) {
     }
     return e
   }({
-    transitionState: m,
+    transitionState: E,
     onClose: et,
     size: "md",
-    title: H.intl.string(H.t.r9qKow),
-    input: (0, i.jsx)(p.E1j, {
-      placeholder: H.intl.string(H.t["5h0QOP"]),
-      "aria-label": H.intl.string(H.t["5h0QOP"]),
-      query: D,
-      onChange: e => M(e),
-      onClear: () => M("")
+    title: V.intl.string(V.t.r9qKow),
+    input: (0, i.jsx)(u.E1j, {
+      placeholder: V.intl.string(V.t["5h0QOP"]),
+      "aria-label": V.intl.string(V.t["5h0QOP"]),
+      query: U,
+      onChange: e => k(e),
+      onClear: () => k("")
     }),
-    preview: (0, i.jsxs)(p.Kqy, {
+    preview: (0, i.jsxs)(u.Kqy, {
       direction: "vertical",
       align: "center",
       gap: 12,
       children: [(0, i.jsx)("img", {
         alt: r,
         src: Y,
-        className: z.previewImage
-      }), F.length >= 10 ? (0, i.jsx)(p.Text, {
+        className: H.previewImage
+      }), z.length >= 10 ? (0, i.jsx)(u.Text, {
         variant: "text-xs/normal",
-        children: H.intl.format(H.t.mdE9iE, {
+        children: V.intl.format(V.t.mdE9iE, {
           maxShares: 10
         })
       }) : null]
     }),
-    actions: [...L.ZP.canCopyImage(r) ? [{
-      text: $ ? H.intl.string(H.t.t5VZ88) : H.intl.string(H.t.tvUqWn),
+    actions: [...F.ZP.canCopyImage(r) ? [{
+      text: $ ? V.intl.string(V.t.t5VZ88) : V.intl.string(V.t.tvUqWn),
       onClick: en,
       variant: "secondary",
       disabled: $
     }] : [], {
-      text: H.intl.string(H.t.TXNS7S),
+      text: V.intl.string(V.t.TXNS7S),
       onClick: ei,
       variant: "primary",
-      disabled: F.length <= 0
+      disabled: z.length <= 0
     }]
-  }, h), n = n = {
-    children: ee.map((e, t) => (0, i.jsxs)(a.Fragment, {
+  }, S), n = n = {
+    children: ee.map((e, t) => (0, i.jsxs)(l.Fragment, {
       children: [0 === t ? null : (0, i.jsx)("div", {
-        className: z.rowDivider
-      }), (0, i.jsx)(W, {
+        className: H.rowDivider
+      }), (0, i.jsx)(B, {
         row: e,
         onClick: () => (() => {
-          if (false !== F.findIndex(t => t.id === e.item.id)) B(F.filter(t => t.id !== e.item.id));
+          if (false !== z.findIndex(t => t.id === e.item.id)) W(z.filter(t => t.id !== e.item.id));
           else {
-            if (F.length >= 10) return;
-            null != K && B([...F, {
+            if (z.length >= 10) return;
+            null != K && W([...z, {
               id: e.item.id,
               type: e.type
             }])
           }
         })(),
-        checked: F.some(t => t.id === e.item.id),
-        disabled: !F.some(t => t.id === e.item.id) && F.length >= 10
+        checked: z.some(t => t.id === e.item.id),
+        disabled: !z.some(t => t.id === e.item.id) && z.length >= 10
       })]
     }, e.item.id))
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -284,53 +283,53 @@ function B(e) {
   }), t))
 }
 
-function W(e) {
+function B(e) {
   let {
     row: t,
     onClick: n,
-    checked: a,
-    disabled: l
+    checked: l,
+    disabled: a
   } = e, s = null, o = null, d = null;
   switch (t.type) {
-    case U.bm.DM:
-    case U.bm.FRIEND:
-      s = (0, i.jsx)(p.qEK, {
-        size: p.EFr.SIZE_40,
+    case A.bm.DM:
+    case A.bm.FRIEND:
+      s = (0, i.jsx)(u.qEK, {
+        size: u.EFr.SIZE_40,
         src: t.item.getAvatarURL(null, 128, false),
         "aria-label": t.item.username
-      }), o = F.ZP.getName(t.item), d = F.ZP.getUserTag(t.item);
+      }), o = k.ZP.getName(t.item), d = k.ZP.getUserTag(t.item);
       break;
-    case U.bm.GROUP_DM: {
-      let e = (0, h.x)(t.item),
-        n = (0, v.F6)(t.item, P.default, j.Z);
-      s = (0, i.jsx)(p.qEK, {
+    case A.bm.GROUP_DM: {
+      let e = (0, E.x)(t.item),
+        n = (0, S.F6)(t.item, j.default, x.Z);
+      s = (0, i.jsx)(u.qEK, {
         src: e,
         "aria-label": n,
-        size: p.EFr.SIZE_40
-      }), o = (0, v.F6)(t.item, P.default, j.Z);
+        size: u.EFr.SIZE_40
+      }), o = (0, S.F6)(t.item, j.default, x.Z);
       break
     }
-    case U.bm.CHANNEL: {
+    case A.bm.CHANNEL: {
       let e = t.item,
-        n = O.Z.getGuild(e.guild_id);
+        n = T.Z.getGuild(e.guild_id);
       if (null == n) return null;
-      if (o = "#".concat((0, v.F6)(e, P.default, j.Z)), d = n.name, null != n.icon) {
-        let t = D.ZP.getGuildIconURL({
+      if (o = "#".concat((0, S.F6)(e, j.default, x.Z)), d = n.name, null != n.icon) {
+        let t = P.ZP.getGuildIconURL({
           id: e.guild_id,
           icon: n.icon,
           size: 40
         });
-        s = (0, i.jsx)(p.qEK, {
+        s = (0, i.jsx)(u.qEK, {
           src: t,
           "aria-label": o,
-          size: p.EFr.SIZE_40
+          size: u.EFr.SIZE_40
         })
       } else {
-        let e = (0, M.Zg)(n.name);
+        let e = (0, U.Zg)(n.name);
         s = (0, i.jsx)("div", {
-          className: z.acronym,
+          className: H.acronym,
           "aria-hidden": true,
-          children: (0, i.jsx)(p.Text, {
+          children: (0, i.jsx)(u.Text, {
             variant: "text-md/semibold",
             children: e
           })
@@ -338,38 +337,38 @@ function W(e) {
       }
     }
   }
-  return (0, i.jsxs)(p.P3F, {
+  return (0, i.jsxs)(u.P3F, {
     onClick: n,
-    className: r()(z.rowContainer, {
-      [z.disabled]: l
+    className: r()(H.rowContainer, {
+      [H.disabled]: a
     }),
     children: [(0, i.jsxs)("div", {
-      className: z.rowLeft,
+      className: H.rowLeft,
       children: [(0, i.jsx)("div", {
-        className: z.rowAvatar,
+        className: H.rowAvatar,
         children: s
       }), (0, i.jsxs)("div", {
-        className: z.rowNameContainer,
-        children: [(0, i.jsx)(p.Text, {
+        className: H.rowNameContainer,
+        children: [(0, i.jsx)(u.Text, {
           variant: "text-md/semibold",
-          className: r()(z.rowName, {
-            [z.disabled]: l
+          className: r()(H.rowName, {
+            [H.disabled]: a
           }),
           children: o
-        }), (0, i.jsx)(p.Text, {
+        }), (0, i.jsx)(u.Text, {
           variant: "text-xs/medium",
-          className: r()(z.rowSubName, {
-            [z.disabled]: l
+          className: r()(H.rowSubName, {
+            [H.disabled]: a
           }),
           children: d
         })]
       })]
-    }), (0, i.jsx)(m.$q, {
-      disabled: l,
-      value: a,
-      type: m.M0.INVERTED,
+    }), (0, i.jsx)(c.$q, {
+      disabled: a,
+      value: l,
+      type: c.M0.INVERTED,
       displayOnly: true,
-      className: z.rowRight
+      className: H.rowRight
     })]
   })
 }

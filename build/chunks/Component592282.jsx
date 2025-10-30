@@ -72,7 +72,7 @@ function g(e) {
   i.useEffect(() => {
     g && (0, u.F)(I)
   }, [g]);
-  let T = i.useCallback(e => {
+  let S = i.useCallback(e => {
     b(e), null == v || v({
       type: c.U.CHECKBOX
     })
@@ -84,7 +84,7 @@ function g(e) {
       [f.focused]: g,
       [null != O ? O : ""]: g
     }),
-    onClick: h ? true : T
+    onClick: h ? true : S
   }, E), {
     "aria-checked": a,
     "aria-disabled": h,

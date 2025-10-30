@@ -33,8 +33,8 @@ let y = Object.freeze([]),
   O = {},
   v = {},
   I = {},
-  T = {},
   S = {},
+  T = {},
   A = {},
   C = {};
 
@@ -60,10 +60,10 @@ let R = e => {
 function P(e, t) {
   return R(t) - R(e)
 }
-let D = e => +!!(0, u.Z)(e);
+let w = e => +!!(0, u.Z)(e);
 
-function w(e, t) {
-  return D(t) - D(e)
+function D(e, t) {
+  return w(t) - w(e)
 }
 
 function L(e, t) {
@@ -72,7 +72,7 @@ function L(e, t) {
 }
 
 function x(e, t) {
-  return P(e, t) || w(e, t) || L(e, t)
+  return P(e, t) || D(e, t) || L(e, t)
 }
 
 function M(e) {
@@ -84,11 +84,11 @@ function M(e) {
 }
 
 function k(e, t) {
-  I[e] = t, T[e] = M(t)
+  I[e] = t, S[e] = M(t)
 }
 
 function j(e) {
-  delete I[e], delete T[e]
+  delete I[e], delete S[e]
 }
 
 function U(e, t) {
@@ -125,7 +125,7 @@ function U(e, t) {
 }
 
 function G(e) {
-  if (delete v[e], j(e), delete S[e], delete A[e], null == O[e]) return;
+  if (delete v[e], j(e), delete T[e], delete A[e], null == O[e]) return;
   let t = Object.values(O[e]),
     n = t.reduce((e, t) => {
       let n = t.processedAtTimestamp,
@@ -134,10 +134,10 @@ function G(e) {
         a = null != e.activities ? e.activities.length : 0;
       return n > r || n === r && i > a ? t : e
     }, t[0]);
-  n.status !== E.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0 ? (v[e] = n.status, k(e, n.activities), S[e] = B(Object.values(t).flatMap(e => {
+  n.status !== E.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0 ? (v[e] = n.status, k(e, n.activities), T[e] = B(Object.values(t).flatMap(e => {
     var t;
     return null != (t = e.hiddenActivities) ? t : []
-  })), null != n.clientStatus && (A[e] = n.clientStatus)) : s().every(O[e], e => e.status === E.Skl.OFFLINE && (null == e.hiddenActivities || 0 === e.hiddenActivities.length)) ? delete O[e] : n.status === E.Skl.OFFLINE && t.some(e => null != e.hiddenActivities && e.hiddenActivities.length > 0) && (S[e] = B(Object.values(t).flatMap(e => {
+  })), null != n.clientStatus && (A[e] = n.clientStatus)) : s().every(O[e], e => e.status === E.Skl.OFFLINE && (null == e.hiddenActivities || 0 === e.hiddenActivities.length)) ? delete O[e] : n.status === E.Skl.OFFLINE && t.some(e => null != e.hiddenActivities && e.hiddenActivities.length > 0) && (T[e] = B(Object.values(t).flatMap(e => {
     var t;
     return null != (t = e.hiddenActivities) ? t : []
   })))
@@ -156,7 +156,7 @@ function Z(e) {
   let n = s().maxBy(Object.values(t), e => e.processedAtTimestamp);
   if (n.status !== E.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0) {
     var r;
-    v[e] = n.status, k(e, n.activities), S[e] = null != (r = n.hiddenActivities) ? r : [], null != n.clientStatus && (A[e] = n.clientStatus)
+    v[e] = n.status, k(e, n.activities), T[e] = null != (r = n.hiddenActivities) ? r : [], null != n.clientStatus && (A[e] = n.clientStatus)
   }
 }
 
@@ -263,10 +263,10 @@ function K(e) {
     [r]: v[r]
   }, I = {
     [r]: I[r]
-  }, T = {
-    [r]: T[r]
   }, S = {
     [r]: S[r]
+  }, T = {
+    [r]: T[r]
   }, A = {
     [r]: {}
   };
@@ -316,7 +316,7 @@ function z(e) {
   let {
     presences: t
   } = e;
-  O = t.presencesForGuilds, v = t.statuses, I = t.activities, S = t.hiddenActivities, C = t.activityMetadata
+  O = t.presencesForGuilds, v = t.statuses, I = t.activities, T = t.hiddenActivities, C = t.activityMetadata
 }
 
 function q(e) {
@@ -448,8 +448,8 @@ function et(e) {
 
 function en(e) {
   let t = m.default.getId();
-  if (v[t] === e.status && I[t] === e.activities && S[t] === e.hiddenActivities) returnfalse;
-  v[t] = e.status, k(t, [...e.activities].sort(x)), S[t] = [...e.hiddenActivities].sort(x), delete C[t]
+  if (v[t] === e.status && I[t] === e.activities && T[t] === e.hiddenActivities) returnfalse;
+  v[t] = e.status, k(t, [...e.activities].sort(x)), T[t] = [...e.hiddenActivities].sort(x), delete C[t]
 }
 
 function er(e) {
@@ -479,7 +479,7 @@ class ei extends(r = Chunk442837.ZP.Store) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
     if (null == t) {
       var n;
-      return null != (n = T[e]) ? n : y
+      return null != (n = S[e]) ? n : y
     }
     let r = N(e, t);
     return null == r || null == r.activities ? y : M(r.activities)
@@ -496,7 +496,7 @@ class ei extends(r = Chunk442837.ZP.Store) {
   getHiddenActivities(e) {
     var t, n, r;
     let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
-    return null == i ? null != (n = S[e]) ? n : y : null != (r = null == (t = N(e, i)) ? true : t.hiddenActivities) ? r : y
+    return null == i ? null != (n = T[e]) ? n : y : null != (r = null == (t = N(e, i)) ? true : t.hiddenActivities) ? r : y
   }
   getPrimaryActivity(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
@@ -504,8 +504,8 @@ class ei extends(r = Chunk442837.ZP.Store) {
   }
   getAllApplicationActivities(e) {
     let t = [];
-    for (let n of h.default.keys(T))
-      for (let r of T[n]) r.application_id === e && t.push({
+    for (let n of h.default.keys(S))
+      for (let r of S[n]) r.application_id === e && t.push({
         userId: n,
         activity: r
       });
@@ -540,8 +540,8 @@ class ei extends(r = Chunk442837.ZP.Store) {
       presencesForGuilds: O,
       statuses: v,
       activities: I,
-      filteredActivities: T,
-      hiddenActivities: S,
+      filteredActivities: S,
+      hiddenActivities: T,
       activityMetadata: C,
       clientStatuses: A
     }

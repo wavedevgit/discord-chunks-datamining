@@ -97,18 +97,18 @@ function I(e) {
     channelId: t,
     file: n
   } = e;
-  S(t, n)
+  T(t, n)
 }
 
-function T(e) {
+function S(e) {
   let {
     channelId: t,
     file: n
   } = e;
-  S(t, n)
+  T(t, n)
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = f[e];
   if (null == n) returnfalse;
   f[e] = n.map(e => e.id === t.id ? l({}, e, t) : e);
@@ -161,17 +161,17 @@ function P(e) {
     var i;
     null != (i = r.nonce) || r.id
   }
-  S(t, n)
+  T(t, n)
 }
 
-function D(e) {
+function w(e) {
   let {
     file: t,
     messageId: n
   } = e;
   h[n] = t
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk375954.Z)
   }
@@ -189,17 +189,17 @@ class w extends(r = Chunk442837.ZP.Store) {
     if (null != e) return m[e]
   }
 }
-s(w, "displayName", "UploadStore");
-let L = new w(Chunk570140.Z, {
+s(D, "displayName", "UploadStore");
+let L = new D(Chunk570140.Z, {
   CONNECTION_OPEN: y,
   LOGOUT: O,
   UPLOAD_START: v,
-  UPLOAD_COMPRESSION_PROGRESS: T,
+  UPLOAD_COMPRESSION_PROGRESS: S,
   UPLOAD_PROGRESS: I,
   UPLOAD_COMPLETE: A,
   UPLOAD_FAIL: C,
   UPLOAD_CANCEL_REQUEST: N,
   UPLOAD_ITEM_CANCEL_REQUEST: R,
   UPLOAD_FILE_UPDATE: P,
-  UPLOAD_RESTORE_FAILED_UPLOAD: D
+  UPLOAD_RESTORE_FAILED_UPLOAD: w
 })

@@ -103,10 +103,10 @@ function U(e) {
   } = (0, c.ZP)(l.Z.BADGE), {
     context: B,
     trackUserProfileAction: Z
-  } = (0, v.KZ)(), F = E.default.getCurrentUser(), V = (0, y.yd)(null == F ? true : F.premiumType, R.PremiumTypes.TIER_2), H = (0, S.Of)(null != (t = null == F ? true : F.id) ? t : null), Y = (0, T.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
+  } = (0, v.KZ)(), F = E.default.getCurrentUser(), V = (0, y.yd)(null == F ? true : F.premiumType, R.PremiumTypes.TIER_2), H = (0, T.Of)(null != (t = null == F ? true : F.id) ? t : null), Y = (0, S.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
-    className: a()(w.container, i),
-    "aria-label": D.intl.string(D.t.VWV0y5),
+    className: a()(D.container, i),
+    "aria-label": w.intl.string(w.t.VWV0y5),
     role: "group",
     children: n.map((e, t) => {
       var n;
@@ -154,7 +154,7 @@ function U(e) {
           if (null != n) return null == L || L(), n(t)
         },
         v = () => {
-          e.id === T.i && b.default.track(C.rMx.QUEST_CONTENT_VIEWED, k(x({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
+          e.id === S.i && b.default.track(C.rMx.QUEST_CONTENT_VIEWED, k(x({}, (0, _.mH)(p.jn.QUEST_BADGE)), {
             is_targeted: false
           })), Z({
             action: "HOVER_BADGE"
@@ -163,13 +163,13 @@ function U(e) {
             analyticsLocations: G
           }, B))
         },
-        S = j({
+        T = j({
           badge: e,
           tieredTenureBadge: E && e.id !== P.a ? c : true,
           currentUserOwnsOrbBadge: Y
         });
       return (0, r.jsx)(o.jSM, {
-        text: S,
+        text: T,
         "aria-label": e.description,
         forceOpen: null != M && M(e.id),
         delay: A.vB,
@@ -184,7 +184,7 @@ function U(e) {
             alt: " ",
             "aria-hidden": true,
             src: null != (n = e.iconSrc) ? n : (0, A.Ej)(e.icon),
-            className: a()(w.badge, d)
+            className: a()(D.badge, d)
           })
         })
       }, "".concat(e.id, "-").concat(t))

@@ -36,14 +36,14 @@ function I() {
   m = {}, g = {}, E = {}, b = {}, r = null, O = false, v = false, y = false
 }
 
-function T(e) {
+function S(e) {
   let {
     channel: t
   } = e;
   delete m[t.id], delete g[t.id], delete E[t.id]
 }
 
-function S(e) {
+function T(e) {
   let {
     channelId: t,
     invite: n
@@ -81,11 +81,11 @@ function P(e) {
   }), r = null != (t = o()(l()(u()(Object.values(b), "createdAt")))) ? t : null, O = false
 }
 
-function D() {
+function w() {
   O = true
 }
 
-function w() {
+function D() {
   v = true
 }
 
@@ -126,15 +126,15 @@ class k extends(i = Chunk442837.ZP.Store) {
 h(k, "displayName", "InstantInviteStore");
 let j = new k(Chunk570140.Z, {
   CONNECTION_OPEN: I,
-  CHANNEL_DELETE: T,
+  CHANNEL_DELETE: S,
   FRIEND_INVITE_CREATE_SUCCESS: N,
   FRIEND_INVITE_CREATE_FAILURE: R,
   FRIEND_INVITE_REVOKE_SUCCESS: P,
-  INSTANT_INVITE_CREATE_SUCCESS: S,
+  INSTANT_INVITE_CREATE_SUCCESS: T,
   INSTANT_INVITE_CREATE_FAILURE: A,
   INSTANT_INVITE_REVOKE_SUCCESS: C,
-  FRIEND_INVITE_REVOKE_REQUEST: D,
-  FRIEND_INVITE_CREATE_REQUEST: w,
+  FRIEND_INVITE_REVOKE_REQUEST: w,
+  FRIEND_INVITE_CREATE_REQUEST: D,
   FRIEND_INVITES_FETCH_REQUEST: L,
   FRIEND_INVITES_FETCH_RESPONSE: x,
   INSTANT_INVITE_CLEAR: M

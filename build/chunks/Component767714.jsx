@@ -85,15 +85,15 @@ let y = function(e) {
     onSubscribeModalClose: O,
     premiumModalAnalyticsLocation: v,
     showIcon: I = true,
-    disableShine: T,
-    applicationId: S,
+    disableShine: S,
+    applicationId: T,
     shinyButtonClassName: A,
     showGradient: C = false,
     confirmationFooter: N,
     paymentModalBanner: R,
     color: P,
-    iconColor: D = "currentColor"
-  } = e, w = E(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "paymentModalBanner", "color", "iconColor"]);
+    iconColor: w = "currentColor"
+  } = e, D = E(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "paymentModalBanner", "color", "iconColor"]);
   let L = (0, o.e7)([c.Z], () => c.Z.isFocused()),
     x = (0, d.Z)({
       subscriptionTier: t,
@@ -106,7 +106,7 @@ let y = function(e) {
       postSuccessGuild: y,
       onSubscribeModalClose: O,
       premiumModalAnalyticsLocation: v,
-      applicationId: S,
+      applicationId: T,
       confirmationFooter: N,
       paymentModalBanner: R
     };
@@ -130,12 +130,12 @@ let y = function(e) {
             [_.tier2Gradient]: C && t === f.Si.TIER_2,
             [_.tier1Gradient]: C && t === f.Si.TIER_1
           }, p),
-          buttonShineClassName: "buttonShineClassName" in w ? w.buttonShineClassName : n === s.Tt.BRAND_INVERTED ? _.brandShine : true,
-          pauseAnimation: !L || T
-        }, w, e), {
+          buttonShineClassName: "buttonShineClassName" in D ? D.buttonShineClassName : n === s.Tt.BRAND_INVERTED ? _.brandShine : true,
+          pauseAnimation: !L || S
+        }, D, e), {
           children: [I && (0, r.jsx)(l.SrA, {
             size: "md",
-            color: D,
+            color: w,
             className: a()(_.premiumIcon, b)
           }), (0, r.jsx)("span", {
             className: a()(_.buttonText, null == m ? true : m.textClassName),

@@ -197,9 +197,9 @@ function Q(e) {
   }), el = (0, L.Iu)(e => e.activeView), ec = (0, C.fQ)(W), {
     renderWindow: eu,
     windowDispatch: ed
-  } = i.useContext(T.ZP), ef = (0, d.e7)([N.Z], () => !N.Z.hasLoadedStickerPacks), e_ = (0, S.V2)({
+  } = i.useContext(S.ZP), ef = (0, d.e7)([N.Z], () => !N.Z.hasLoadedStickerPacks), e_ = (0, T.V2)({
     location: "expression_picker"
-  }), ep = (0, d.e7)([D.Z], () => D.Z.isOpen()), eh = null != et, em = (0, _.Jw)(null != et ? et : ""), eg = (null == (t = K.gifs) ? true : t.allowSending) && !c.tq && null != F, eE = (null == (n = K.stickers) ? true : n.allowSending) && null != H, eb = !(null == (a = K.expressionPicker) ? true : a.onlyEmojis) && (eg || eE), ey = (0, O.qt)({
+  }), ep = (0, d.e7)([w.Z], () => w.Z.isOpen()), eh = null != et, em = (0, _.Jw)(null != et ? et : ""), eg = (null == (t = K.gifs) ? true : t.allowSending) && !c.tq && null != F, eE = (null == (n = K.stickers) ? true : n.allowSending) && null != H, eb = !(null == (a = K.expressionPicker) ? true : a.onlyEmojis) && (eg || eE), ey = (0, O.qt)({
     location: "expression_picker",
     autoTrackExposure: true,
     disable: !eb || el !== x.X1.EMOJI
@@ -216,7 +216,7 @@ function Q(e) {
       n = n.parentNode
     }(0, L._Q)();
     let r = null == (t = (0, u.uB)(e)) ? true : t.activeElement;
-    (null == r || "BODY" === r.tagName) && w.S.dispatchToLastSubscribed(M.CkL.TEXTAREA_FOCUS)
+    (null == r || "BODY" === r.tagName) && D.S.dispatchToLastSubscribed(M.CkL.TEXTAREA_FOCUS)
   }, [ee, em, eh, ep]), eI = i.useCallback(() => {
     (0, L._Q)()
   }, []);
@@ -224,16 +224,16 @@ function Q(e) {
     let e = () => {
       el === x.X1.GIF && (0, L._Q)()
     };
-    return eu.addEventListener("mousedown", ev), eu.addEventListener("contextmenu", ev), ed.subscribe(M.CkL.POPOUT_CLOSE, eI), w.S.subscribe(M.CkL.CLOSE_GIF_PICKER, e), () => {
-      eu.removeEventListener("mousedown", ev), eu.removeEventListener("contextmenu", ev), ed.unsubscribe(M.CkL.POPOUT_CLOSE, eI), w.S.unsubscribe(M.CkL.CLOSE_GIF_PICKER, e)
+    return eu.addEventListener("mousedown", ev), eu.addEventListener("contextmenu", ev), ed.subscribe(M.CkL.POPOUT_CLOSE, eI), D.S.subscribe(M.CkL.CLOSE_GIF_PICKER, e), () => {
+      eu.removeEventListener("mousedown", ev), eu.removeEventListener("contextmenu", ev), ed.unsubscribe(M.CkL.POPOUT_CLOSE, eI), D.S.unsubscribe(M.CkL.CLOSE_GIF_PICKER, e)
     }
   }, [el, eI, ev, eu, ed]), (0, p.Tbt)(en);
-  let [eT, eS] = (0, b.US)(e_ ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eA, eC] = i.useState(false);
+  let [eS, eT] = (0, b.US)(e_ ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eA, eC] = i.useState(false);
   i.useEffect(() => {
     el === x.X1.SOUNDBOARD && eC(true)
   }, [el]), i.useEffect(() => () => {
-    eA && eS(k.L.TAKE_ACTION)
-  }, [eA, eS]), i.useEffect(() => {
+    eA && eT(k.L.TAKE_ACTION)
+  }, [eA, eT]), i.useEffect(() => {
     (0, L.ql)("")
   }, []), i.useEffect(() => {
     (!eh && (0, _.$s)() || eh && !em) && (0, L._Q)()
@@ -250,12 +250,12 @@ function Q(e) {
   let eN = i.useCallback((e, t) => null == Y ? true : Y(e, "emoji_picker", t), [Y]),
     eR = i.useCallback((e, t) => null == Y ? true : Y(e, "soundboard_picker", t), [Y]),
     eP = (null == (s = K.soundmoji) ? true : s.allowSending) === true && null != Y,
-    eD = "left" === J ? "right" : "left",
-    ew = null != $ ? $ : "left" === J ? Z.positionLayerDefaultAlignLeft : Z.positionLayerDefaultAlignRight;
+    ew = "left" === J ? "right" : "left",
+    eD = null != $ ? $ : "left" === J ? Z.positionLayerDefaultAlignLeft : Z.positionLayerDefaultAlignRight;
   return (0, r.jsx)(m.Z, {
     section: M.jXE.EXPRESSION_PICKER,
     children: (0, r.jsx)(I.W5, {
-      className: o()(Z.positionLayer, ew),
+      className: o()(Z.positionLayer, eD),
       targetRef: l,
       position: Q,
       align: J,
@@ -285,7 +285,7 @@ function Q(e) {
               className: Z.resizeHandle,
               onMouseDown: es,
               style: {
-                [eD]: false
+                [ew]: false
               }
             }), (0, r.jsxs)("div", {
               className: Z.contentWrapper,
@@ -328,7 +328,7 @@ function Q(e) {
                     viewType: x.X1.SOUNDBOARD,
                     children: (0, r.jsxs)("div", {
                       className: Z.soundmojiLabelContainer,
-                      children: [B.intl.string(B.t.EHlAMc), null != eT && (0, r.jsx)(p.IGR, {
+                      children: [B.intl.string(B.t.EHlAMc), null != eS && (0, r.jsx)(p.IGR, {
                         text: B.intl.string(B.t.y2b7CA)
                       })]
                     })

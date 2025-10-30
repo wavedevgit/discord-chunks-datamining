@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 866730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -51,7 +51,7 @@ function x() {
     n = (0, Chunk211644.ZP)(e => e.lastWinnerTime),
     r = 0 !== require ? l()(require).fromNow() : "n/a",
     x = (0, Chunk211644.ZP)(e => e.recentlyShown[0]),
-    f = module.map(e => {
+    g = module.map(e => {
       let {
         eventType: t,
         dismissibleContent: n
@@ -62,7 +62,7 @@ function x() {
         dismissibleContent: n
       }
     }),
-    g = Array.from(exports.keys()).map(e => ({
+    f = Array.from(exports.keys()).map(e => ({
       key: e.toString(),
       dismissibleContent: e
     }));
@@ -79,11 +79,11 @@ function x() {
       children: (0, Chunk951288.jsx)(Chunk681619.Z, {
         className: Chunk607669.candidatesTable,
         columns: h,
-        data: g
+        data: f
       })
     }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)(Chunk681619.Z, {
       columns: p,
-      data: f
+      data: g
     })]
   })
 }

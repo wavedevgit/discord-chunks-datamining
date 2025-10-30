@@ -27,7 +27,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -52,8 +52,8 @@ let C = "recentMentionFilterSettings",
   N = [],
   R = {},
   P = {},
-  D = false,
-  w = true,
+  w = false,
+  D = true,
   L = Chunk433517.K.get(C, {
     guildFilter: Chunk981631.NgX.ALL_SERVERS,
     everyoneFilter: true,
@@ -85,8 +85,8 @@ function G(e) {
   let {
     guildId: t
   } = e;
-  D = true, null == t && L.guildFilter === T.NgX.THIS_SERVER && X({
-    guildFilter: T.NgX.ALL_SERVERS
+  w = true, null == t && L.guildFilter === S.NgX.THIS_SERVER && X({
+    guildFilter: S.NgX.ALL_SERVERS
   })
 }
 
@@ -98,11 +98,11 @@ function B(e) {
 
 function Z(e) {
   let t = g.Z.getBasicChannel(e.channel_id);
-  if (null == t || !T.TPd.GUILD_TEXTUAL.has(t.type) || v.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || (0, u.zd)(t.id)) returnfalse;
+  if (null == t || !S.TPd.GUILD_TEXTUAL.has(t.type) || v.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || (0, u.zd)(t.id)) returnfalse;
   switch (v.ZP.resolvedMessageNotifications(t)) {
-    case T.bL.ALL_MESSAGES:
+    case S.bL.ALL_MESSAGES:
       returntrue;
-    case T.bL.ONLY_MENTIONS:
+    case S.bL.ONLY_MENTIONS:
       let n = v.ZP.isSuppressEveryoneEnabled(t.guild_id),
         r = v.ZP.isSuppressRolesEnabled(t.guild_id),
         i = I.default.getCurrentUser();
@@ -113,7 +113,7 @@ function Z(e) {
         suppressEveryone: n,
         suppressRoles: r
       });
-    case T.bL.NO_MESSAGES:
+    case S.bL.NO_MESSAGES:
     default:
       returnfalse
   }
@@ -129,19 +129,19 @@ function F(e) {
     addedMessages: i
   }), r ? N = N.concat(i) : (N = i, P = {}), a().forEach(i, e => {
     P[e.id] = true
-  }), D = false, w = t, M = (0, l.zO)(), x = true
+  }), w = false, D = t, M = (0, l.zO)(), x = true
 }
 
 function V() {
-  D = false
+  w = false
 }
 
 function H(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
-  if ((0, _.Z)(e) && !T.V$x.SELF_MENTIONABLE_SYSTEM.has(e.type)) return null;
+  if ((0, _.Z)(e) && !S.V$x.SELF_MENTIONABLE_SYSTEM.has(e.type)) return null;
   null == t && (t = e.channel_id);
   let n = g.Z.getChannel(t);
-  if (null == n || n.type === T.d4z.DM || L.guildFilter === T.NgX.THIS_SERVER && n.getGuildId() !== O.Z.getGuildId()) return null;
+  if (null == n || n.type === S.d4z.DM || L.guildFilter === S.NgX.THIS_SERVER && n.getGuildId() !== O.Z.getGuildId()) return null;
   let r = m.default.getId();
   if (y.Z.isBlockedOrIgnoredForMessage(e) || (0, p.Z)(e, r)) return null;
   e = B(e);
@@ -226,7 +226,7 @@ function X(e) {
   let t = A({}, L);
   L = a().defaults(a().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), L), s.K.set(C, L);
   let n = (e, n) => t[e] !== L[e] && L[e] === n,
-    r = n("guildFilter", T.NgX.THIS_SERVER) || n("everyoneFilter", false) || n("roleFilter", false);
+    r = n("guildFilter", S.NgX.THIS_SERVER) || n("everyoneFilter", false) || n("roleFilter", false);
   P = {};
   let i = [];
   r && N.forEach(e => {
@@ -283,7 +283,7 @@ function er(e) {
     deletedMessages: N.slice(t)
   });
   for (let e = t; e < N.length; ++e) delete P[N[e].id];
-  N.length > (N = N.slice(0, t)).length && (w = true)
+  N.length > (N = N.slice(0, t)).length && (D = true)
 }
 
 function ei(e) {
@@ -309,10 +309,10 @@ class ea extends(r = Chunk442837.ZP.Store) {
     return P[e]
   }
   get loading() {
-    return D
+    return w
   }
   get hasMore() {
-    return w
+    return D
   }
   get guildFilter() {
     return L.guildFilter
@@ -334,7 +334,7 @@ class ea extends(r = Chunk442837.ZP.Store) {
     return null != (t = R[e]) ? t : 0
   }
 }
-S(ea, "displayName", "RecentMentionsStore");
+T(ea, "displayName", "RecentMentionsStore");
 let eo = new ea(Chunk570140.Z, {
   LOAD_RECENT_MENTIONS: G,
   LOAD_RECENT_MENTIONS_SUCCESS: F,

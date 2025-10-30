@@ -262,13 +262,13 @@ class W extends Chunk647438.PureComponent {
       foregroundGradientColor: i,
       message: l
     } = e;
-    return (0, r.jsxs)(y.Z, {
-      direction: y.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(v.Z, {
+      direction: v.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(m.Exd, {
         percent: t,
         size: m.Exd.Sizes.SMALL,
-        foregroundColor: (0, v.Lq)(n),
-        foregroundGradientColor: null != i ? [(0, v.Lq)(i[0]), (0, v.Lq)(i[1])] : true,
+        foregroundColor: (0, y.Lq)(n),
+        foregroundGradientColor: null != i ? [(0, y.Lq)(i[0]), (0, y.Lq)(i[1])] : true,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
         className: k.progressCellText,
@@ -281,8 +281,8 @@ class W extends Chunk647438.PureComponent {
       percents: t,
       message: n
     } = e;
-    return (0, r.jsxs)(y.Z, {
-      direction: y.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(v.Z, {
+      direction: v.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(m.yGy, {
         percents: t,
         size: m.yGy.Sizes.SMALL,
@@ -491,8 +491,8 @@ let q = () => (0, Chunk951288.jsx)(H, {
   X = [{
     key: "name",
     cellClassName: Chunk248241.nameCell,
-    render: e => (0, r.jsxs)(y.Z, {
-      align: y.Z.Align.CENTER,
+    render: e => (0, r.jsxs)(v.Z, {
+      align: v.Z.Align.CENTER,
       children: [(0, r.jsx)(S.Z, {
         game: e.application,
         className: k.__invalid_gameIcon,
@@ -529,8 +529,8 @@ let q = () => (0, Chunk951288.jsx)(H, {
         item: e
       })) : i = (0, r.jsx)(J, {
         item: e
-      }), (0, r.jsxs)(y.Z, {
-        justify: y.Z.Justify.END,
+      }), (0, r.jsxs)(v.Z, {
+        justify: v.Z.Justify.END,
         children: [n, i]
       })
     }

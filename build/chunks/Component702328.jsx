@@ -90,8 +90,8 @@ let z = () => {
       home: eO,
       whatsNew: ev,
       bestOfNitro: eI,
-      plans: eT,
-      compare: eS
+      plans: eS,
+      compare: eT
     } = eb,
     eA = em ? Chunk379039 : Chunk810392,
     {
@@ -100,9 +100,9 @@ let z = () => {
     eN = (0, Chunk639119.N)(),
     eR = (0, Chunk104494.Ng)(),
     eP = Chunk431.Z.getAlmostExpiringTrialOffers([Chunk474936.Si.TIER_2]).length > 0 && null != eN && null != eN.expires_at && eN.trial_id !== Chunk474936.a7,
-    eD = Chunk431.Z.getAlmostExpiringDiscountOffers([Chunk474936.Si.TIER_2]).length > 0 && null != eR && null != eR.expires_at,
-    ew = eP ? eN.expires_at : eD ? eR.expires_at : null,
-    eL = eC === Chunk931118.tE.HERO_COUNTDOWN && (eP || eD) && null != ew,
+    ew = Chunk431.Z.getAlmostExpiringDiscountOffers([Chunk474936.Si.TIER_2]).length > 0 && null != eR && null != eR.expires_at,
+    eD = eP ? eN.expires_at : ew ? eR.expires_at : null,
+    eL = eC === Chunk931118.tE.HERO_COUNTDOWN && (eP || ew) && null != eD,
     ex = (0, Chunk951288.jsxs)("div", {
       className: o()(eA.container, eA.responsiveContainer, {
         [eA.containerBackground]: em || J,
@@ -140,7 +140,7 @@ let z = () => {
               ref: Chunk120356,
               subscriptionTier: ef,
               isEligibleForBogoPromotion: e_,
-              offerExpiresAt: eL ? ew : null
+              offerExpiresAt: eL ? eD : null
             }) : (0, Chunk951288.jsx)(Chunk903250.Z, {
               ref: Chunk120356,
               subscriptionTier: ef,
@@ -172,7 +172,7 @@ let z = () => {
           })
         }), (0, Chunk951288.jsx)("div", {
           className: eA.premiumTierCardsContainer,
-          ref: eT.ref,
+          ref: eS.ref,
           children: (0, Chunk951288.jsx)(Chunk622535.$, {
             innerRef: require,
             onChange: e => ei(e),
@@ -187,7 +187,7 @@ let z = () => {
           })
         }), (0, Chunk951288.jsx)("div", {
           className: eA.planComparisonTableContainer,
-          ref: eS.ref,
+          ref: eT.ref,
           children: em ? (0, Chunk951288.jsx)(Chunk975978.Z, {}) : (0, Chunk951288.jsx)(Chunk8231.Z, {})
         })]
       }), !em && (0, Chunk951288.jsx)(Chunk349803.Z, {

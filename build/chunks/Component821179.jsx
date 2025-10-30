@@ -1,7 +1,7 @@
-/** Chunk was on 72651 **/
+/** Chunk was on 83546 **/
 /** chunk id: 821179, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,20 +17,20 @@ var Chunk194983 = require("./194983.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk323759 = require("./323759.js");
-let b = (0, Chunk481060.pxk)(Chunk481060.EFr.SIZE_16);
+let m = (0, Chunk481060.pxk)(Chunk481060.EFr.SIZE_16);
 
-function y(e) {
+function b(e) {
   let {
     user: t,
-    guild: y,
-    nick: h,
-    onSelect: v
+    guild: b,
+    nick: _,
+    onSelect: O
   } = e, {
-    theme: O,
-    themeType: j
-  } = (0, d.z)(), x = t.hasAvatarForGuild(y.id);
-  return (0, r.jsxs)(l.P3F, {
-    focusProps: j === p.l.MODAL_V2 ? {
+    theme: y,
+    themeType: v
+  } = (0, d.z)(), j = t.hasAvatarForGuild(b.id);
+  return (0, r.jsxs)(o.P3F, {
+    focusProps: v === h.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -41,10 +41,10 @@ function y(e) {
         right: 8
       }
     },
-    className: m.row,
-    onClick: v,
+    className: g.row,
+    onClick: O,
     onContextMenu: e => {
-      (0, o.jW)(e, async () => {
+      (0, a.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("57804"), n.e("13599"), n.e("36599"), n.e("49049"), n.e("38697"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("7654"), n.e("63575"), n.e("845"), n.e("86736"), n.e("6850"), n.e("58227"), n.e("93375"), n.e("62856"), n.e("44686"), n.e("30378"), n.e("64982"), n.e("66201"), n.e("67807"), n.e("22516"), n.e("87154"), n.e("33213"), n.e("94512")]).then(n.bind(n, 545135));
@@ -68,7 +68,7 @@ function y(e) {
             }
             return e
           }({}, t), i = i = {
-            guild: y
+            guild: b
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -82,40 +82,40 @@ function y(e) {
         }
       })
     },
-    children: [(0, r.jsx)(s.Z, {
+    children: [(0, r.jsx)(c.Z, {
       tabIndex: false,
-      guild: y,
+      guild: b,
       showBadge: true,
-      className: null != y.icon ? m.icon : m.noIcon,
-      badgeStrokeColor: (0, c.Lq)((0, a.wj)(O) ? g.Ilk.PRIMARY_600 : g.Ilk.WHITE_500),
-      badgeTooltipColor: l.r6K.PRIMARY,
-      badgeTooltipDelay: f.vB,
-      size: s.Z.Sizes.MEDIUM,
+      className: null != b.icon ? g.icon : g.noIcon,
+      badgeStrokeColor: (0, s.Lq)((0, l.wj)(y) ? f.Ilk.PRIMARY_600 : f.Ilk.WHITE_500),
+      badgeTooltipColor: o.r6K.PRIMARY,
+      badgeTooltipDelay: p.vB,
+      size: c.Z.Sizes.MEDIUM,
       active: true
     }), (0, r.jsxs)("div", {
-      className: m.details,
+      className: g.details,
       children: [(0, r.jsx)("div", {
-        className: m.name,
-        children: y.name
-      }), x && (0, r.jsxs)("div", {
-        className: m.nick,
-        children: [(0, r.jsx)(l.qEK, {
-          src: t.getAvatarURL(y.id, b),
-          size: l.EFr.SIZE_16,
-          className: m.avatar,
+        className: g.name,
+        children: b.name
+      }), j && (0, r.jsxs)("div", {
+        className: g.nick,
+        children: [(0, r.jsx)(o.qEK, {
+          src: t.getAvatarURL(b.id, m),
+          size: o.EFr.SIZE_16,
+          className: g.avatar,
           "aria-hidden": true
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-xs/medium",
           children: (0, r.jsx)(i.Z, {
-            delay: f.vB,
-            children: null != h ? h : u.ZP.getName(y.id, true, t)
+            delay: p.vB,
+            children: null != _ ? _ : u.ZP.getName(b.id, true, t)
           })
         })]
-      }), !x && null != h && (0, r.jsx)(l.Text, {
+      }), !j && null != _ && (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         children: (0, r.jsx)(i.Z, {
-          delay: f.vB,
-          children: h
+          delay: p.vB,
+          children: _
         })
       })]
     })]

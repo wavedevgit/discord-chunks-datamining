@@ -14,8 +14,8 @@ function l(e) {
   let {
     onError: t,
     onSuccess: n
-  } = null != e ? e : {}, [l, c] = r.useState(false), [u, d] = r.useState(false), [f, _] = r.useState(false), [p, h] = r.useState(false), [m, g] = r.useState(false), [E, b] = r.useState(false), [y, O] = r.useState(false), [v, I] = r.useState(false), T = l || u || f || p || E || v, S = r.useCallback(async e => {
-    if (!T) {
+  } = null != e ? e : {}, [l, c] = r.useState(false), [u, d] = r.useState(false), [f, _] = r.useState(false), [p, h] = r.useState(false), [m, g] = r.useState(false), [E, b] = r.useState(false), [y, O] = r.useState(false), [v, I] = r.useState(false), S = l || u || f || p || E || v, T = r.useCallback(async e => {
+    if (!S) {
       c(true);
       try {
         await (0, a.Yw)(e, s.ne.ACTIVE), null == n || n()
@@ -26,8 +26,8 @@ function l(e) {
         c(false)
       }
     }
-  }, [T, t, n]), A = r.useCallback(async e => {
-    if (!T) {
+  }, [S, t, n]), A = r.useCallback(async e => {
+    if (!S) {
       d(true);
       try {
         await (0, a.Yw)(e, s.ne.DECLINED), null == n || n()
@@ -38,8 +38,8 @@ function l(e) {
         d(false)
       }
     }
-  }, [T, t, n]), C = r.useCallback(async e => {
-    if (!T) {
+  }, [S, t, n]), C = r.useCallback(async e => {
+    if (!S) {
       _(true);
       try {
         await (0, a.Yw)(e, s.ne.INACTIVE), null == n || n()
@@ -50,8 +50,8 @@ function l(e) {
         _(false)
       }
     }
-  }, [T, t, n]), N = r.useCallback(async e => {
-    if (!T) {
+  }, [S, t, n]), N = r.useCallback(async e => {
+    if (!S) {
       h(true);
       try {
         await (0, a.fc)(e), null == n || n()
@@ -62,7 +62,7 @@ function l(e) {
         h(false)
       }
     }
-  }, [T, t, n]), R = r.useCallback(async () => {
+  }, [S, t, n]), R = r.useCallback(async () => {
     if (!m) {
       g(true);
       try {
@@ -88,7 +88,7 @@ function l(e) {
     }
   }, [y, t, n]);
   return {
-    acceptLinkRequest: S,
+    acceptLinkRequest: T,
     declineLinkRequest: A,
     disconnectLinkRequest: C,
     cancelLinkRequest: N,

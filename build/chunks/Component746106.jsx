@@ -2,7 +2,7 @@
 /** chunk id: 746106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => w
+  w: () => D
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk982519 = require("./982519.js"),
   Chunk388032 = require("./388032.jsx");
 
-function D(e, t, n, r, o) {
+function w(e, t, n, r, o) {
   let s = i.useContext(_.Z),
     l = i.useCallback(() => ({
       i18n: {
@@ -96,7 +96,7 @@ function D(e, t, n, r, o) {
   }, [l]), u
 }
 
-function w(e) {
+function D(e) {
   let {
     windowKey: t,
     themeOverride: n,
@@ -106,7 +106,7 @@ function w(e) {
     theme: y,
     focused: R,
     currentWindow: P,
-    fontScale: w,
+    fontScale: D,
     fontScaleClass: L,
     keyboardModeEnabled: x,
     saturation: M,
@@ -117,12 +117,12 @@ function w(e) {
     alwaysShowLinkDecorations: B,
     confettiMode: Z,
     highContrastMode: F
-  } = (0, l.cj)([I.default, d.Z, T.Z, S.Z, O.Z, v.Z], () => {
+  } = (0, l.cj)([I.default, d.Z, S.Z, T.Z, O.Z, v.Z], () => {
     var e;
     return {
       locale: I.default.locale,
-      theme: null != n ? n : T.Z.theme,
-      focused: o ? O.Z.getWindowFocused(t) : S.Z.isFocused(),
+      theme: null != n ? n : S.Z.theme,
+      focused: o ? O.Z.getWindowFocused(t) : T.Z.isFocused(),
       currentWindow: o && null != (e = O.Z.getWindow(t)) ? e : window,
       fontScale: d.Z.fontScale,
       fontScaleClass: d.Z.fontScaleClass,
@@ -154,7 +154,7 @@ function w(e) {
     $ = (0, h.On)({
       isPopoutWindow: o
     }),
-    ee = D(y, M, i.useMemo(() => {
+    ee = w(y, M, i.useMemo(() => {
       let e = [];
       return K && e.push("refresh-fast-follow-avatars"), z && e.push("refresh-fast-follow-guild-bg"), q && e.push("refresh-fast-follow-distinct-borders"), X && e.push("mana-text-inputs"), Q && e.push("mana-toggle-inputs"), e
     }, [K, z, q, X, Q]), R, _);
@@ -170,7 +170,7 @@ function w(e) {
         theme: y,
         density: W,
         focused: R,
-        fontScale: w,
+        fontScale: D,
         fontScaleClass: L,
         keyboardModeEnabled: x,
         mouseMode: H,

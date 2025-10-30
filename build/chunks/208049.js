@@ -7,9 +7,9 @@ require.d(exports, {
   Db: () => U,
   Dx: () => N,
   R: () => k,
-  TB: () => D,
+  TB: () => w,
   XE: () => x,
-  hs: () => w,
+  hs: () => D,
   w: () => C,
   xR: () => M,
   xU: () => L,
@@ -70,14 +70,14 @@ let y = false,
       o.Z.unsubscribe(e, n), setTimeout(t, 0)
     };
     o.Z.subscribe(e, n)
-  }), T = () => {
+  }), S = () => {
     if (!Chunk763296.Z.shouldFetchDefaultSounds()) return Promise.resolve();
     Chunk570140.Z.dispatch({
       type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS"
     });
     let e = I("SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS");
     return (0, Chunk771784.sI)("maybeFetchDefaultSounds") && v(), O(), module
-  }, S = () => {
+  }, T = () => {
     let e = (0, Chunk174470.D)();
     if (0 === module.length) return Promise.resolve();
     let t = I("SOUNDBOARD_SOUNDS_RECEIVED");
@@ -101,7 +101,7 @@ let y = false,
     let e = performance.now(),
       t = !y;
     y = true;
-    let n = await Promise.all([T(), S(), A()]);
+    let n = await Promise.all([S(), T(), A()]);
     if (exports) {
       let t = performance.now() - module;
       Chunk626135.default.track(Chunk981631.rMx.EXPRESSION_PICKER_SOUNDBOARD_SOUNDS_LOADED, {
@@ -159,7 +159,7 @@ async function P(e, t) {
   })
 }
 
-function D(e) {
+function w(e) {
   c.DZ.updateAsync("favoriteSoundboardSounds", t => i().size(t.soundIds) >= E.oX ? (s.Z.show({
     title: b.intl.string(b.t["+XYXtZ"]),
     body: b.intl.formatToPlainString(b.t.JaIyFi, {
@@ -168,7 +168,7 @@ function D(e) {
   }), false) : !t.soundIds.includes(e) && void t.soundIds.push(e), E.fy.INFREQUENT_USER_ACTION)
 }
 
-function w(e) {
+function D(e) {
   c.DZ.updateAsync("favoriteSoundboardSounds", t => {
     t.soundIds = t.soundIds.filter(t => t !== e)
   }, E.fy.INFREQUENT_USER_ACTION)

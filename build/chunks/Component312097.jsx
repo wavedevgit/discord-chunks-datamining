@@ -53,36 +53,37 @@ function f(e, t) {
 }
 let _ = "Media Viewer Modal";
 
-function p(e) {
-  var t, c, f, {
-      location: p,
-      contextKey: h
+function p(e, t) {
+  var c, f, p, {
+      location: h,
+      contextKey: m
     } = e,
-    m = d(e, ["location", "contextKey"]);
-  let g = null == (c = m.items[null != (f = m.startingIndex) ? f : 0]) || null == (t = c.sourceMetadata) ? true : t.message,
-    E = a.Z.getChannel(null == g ? true : g.channel_id);
+    g = d(e, ["location", "contextKey"]);
+  let E = null == (f = g.items[null != (p = g.startingIndex) ? p : 0]) || null == (c = f.sourceMetadata) ? true : c.message,
+    b = a.Z.getChannel(null == E ? true : E.channel_id);
   (0, s.fS)({
-    guildId: null == E ? true : E.guild_id,
-    channelId: null == E ? true : E.id,
-    channelType: null == E ? true : E.type,
-    numMediaItems: m.items.length,
-    source: p,
-    hasMediaOptions: !m.shouldHideMediaOptions
+    guildId: null == b ? true : b.guild_id,
+    channelId: null == b ? true : b.id,
+    channelType: null == b ? true : b.type,
+    numMediaItems: g.items.length,
+    source: h,
+    hasMediaOptions: !g.shouldHideMediaOptions
   }), o.default.track(l.rMx.OPEN_MODAL, {
     type: l.jXE.MEDIA_VIEWER,
-    source: p,
-    guild_id: null == E ? true : E.guild_id,
-    channel_id: null == E ? true : E.id,
-    channel_type: null == E ? true : E.type
+    source: h,
+    guild_id: null == b ? true : b.guild_id,
+    channel_id: null == b ? true : b.id,
+    channel_type: null == b ? true : b.type
   }), (0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("39476").then(n.bind(n, 97594));
-    return t => (0, r.jsx)(e, u({}, t, m))
+    return t => (0, r.jsx)(e, u({}, t, g))
   }, {
     modalKey: _,
-    contextKey: h,
+    contextKey: m,
     onCloseCallback: s.VO,
-    backdropStyle: i.fCB.LIGHTBOX
+    backdropStyle: i.fCB.LIGHTBOX,
+    stackingBehavior: t
   })
 }

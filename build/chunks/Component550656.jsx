@@ -31,8 +31,8 @@ function g(e) {
     spacing: O = p,
     caretConfig: v,
     layerContext: I,
-    animationStyle: T,
-    positionKey: S
+    animationStyle: S,
+    positionKey: T
   } = e, A = i.useRef(null), {
     isRichTooltip: C
   } = (0, d.nr)(), N = i.useMemo(() => ("left" === b || "right" === b ? m : h).includes(y) ? y : "center", [b, y]);
@@ -42,7 +42,7 @@ function g(e) {
     position: b,
     align: N,
     spacing: O,
-    positionKey: S,
+    positionKey: T,
     autoInvert: true,
     nudgeAlignIntoViewport: true,
     children: e => {
@@ -73,8 +73,8 @@ function g(e) {
           }) : E
         })]
       });
-      return T ? (0, r.jsx)(s.animated.div, {
-        style: T,
+      return S ? (0, r.jsx)(s.animated.div, {
+        style: S,
         children: O
       }) : O
     }

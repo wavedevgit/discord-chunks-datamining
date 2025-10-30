@@ -72,7 +72,7 @@ let N = Chunk647438.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e, ["message", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory"]), k = N.type === y.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, U = N.isFirstMessageInForumPost(Z), G = (0, u.A)((null != (n = N.editedTimestamp) ? n : N.timestamp).valueOf()), {
+  }(e, ["message", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory"]), k = N.type === v.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, U = N.isFirstMessageInForumPost(Z), G = (0, u.A)((null != (n = N.editedTimestamp) ? n : N.timestamp).valueOf()), {
     content: B,
     hasSpoilerEmbeds: H
   } = (0, h.Z)(N, {
@@ -81,7 +81,7 @@ let N = Chunk647438.memo(function(e) {
     allowHeading: U || G,
     allowLinks: true,
     previewLinkTarget: true
-  }), V = (0, s.JA)(N.id), F = (0, p.ZP)(N), z = (0, o.e7)([I.Z], () => N.hasFlag(y.iLy.HAS_THREAD) && I.Z.getChannel(v.default.castMessageIdAsChannelId(N.id))), Y = (0, c.p9)({
+  }), V = (0, s.JA)(N.id), F = (0, p.ZP)(N), z = (0, o.e7)([I.Z], () => N.hasFlag(v.iLy.HAS_THREAD) && I.Z.getChannel(y.default.castMessageIdAsChannelId(N.id))), Y = (0, c.p9)({
     guildId: Z.guild_id,
     roleId: F.iconRoleId
   }), W = (0, m.iG)(N), q = (0, m.Gx)(N);
@@ -121,7 +121,7 @@ let N = Chunk647438.memo(function(e) {
     }), i)),
     onContextMenu: P,
     onClick: x,
-    hasThread: D && null != z && N.hasFlag(y.iLy.HAS_THREAD),
+    hasThread: D && null != z && N.hasFlag(v.iLy.HAS_THREAD),
     hasReply: false,
     "aria-labelledby": W,
     "aria-describedby": q,

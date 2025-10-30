@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk465687 = require("./465687.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -90,8 +90,8 @@ let N = 50,
 var P = function(e) {
   return e.TOP_LEFT = "TOP_LEFT", e.TOP_RIGHT = "TOP_RIGHT", e.BOTTOM_LEFT = "BOTTOM_LEFT", e.BOTTOM_RIGHT = "BOTTOM_RIGHT", e
 }({});
-let D = ["TOP_LEFT", "TOP_RIGHT"],
-  w = (0, Chunk468194.Mg)(Chunk477690.Z.USER_PREMIUM_GUILD_SUBSCRIPTION_EASTER_EGG_SIZE),
+let w = ["TOP_LEFT", "TOP_RIGHT"],
+  D = (0, Chunk468194.Mg)(Chunk477690.Z.USER_PREMIUM_GUILD_SUBSCRIPTION_EASTER_EGG_SIZE),
   L = 11,
   x = 125,
   M = {
@@ -138,7 +138,7 @@ let D = ["TOP_LEFT", "TOP_RIGHT"],
       },
       leafRotationDirection: false
     },
-    BOTTOM_LEFT: C(S({}, M), {
+    BOTTOM_LEFT: C(T({}, M), {
       getConfettiPosition: e => ({
         x: e - L,
         y: x
@@ -148,7 +148,7 @@ let D = ["TOP_LEFT", "TOP_RIGHT"],
         y: false
       }
     }),
-    BOTTOM_RIGHT: C(S({}, M), {
+    BOTTOM_RIGHT: C(T({}, M), {
       getConfettiPosition: e => ({
         x: L,
         y: x
@@ -206,7 +206,7 @@ function J(e, t) {
     case "enter":
       return "confetti";
     case "confetti":
-      if (D.includes(t)) return "leaf_peel";
+      if (w.includes(t)) return "leaf_peel";
       return "exit";
     case "leaf_peel":
       return "leaf_fall";
@@ -218,7 +218,7 @@ function J(e, t) {
 }
 
 function $(e, t) {
-  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : w,
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : D,
     r = null == e ? true : e.getBoundingClientRect();
   if (null == r) return {
     x: 0,
@@ -253,7 +253,7 @@ function et(e) {
   } = e, u = i.useRef(null), [_, p] = i.useState(null), [h] = i.useState(null != a ? a : Y()), {
     createMultipleConfettiAt: m,
     confettiCanvas: g
-  } = i.useContext(f.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = J(_, h), v = D.includes(h), T = v && "exit" === _, S = i.useCallback(e => {
+  } = i.useContext(f.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = J(_, h), v = w.includes(h), S = v && "exit" === _, T = i.useCallback(e => {
     p(e)
   }, []), A = i.useCallback(() => {
     "exit" === _ && (null == t || t())
@@ -337,11 +337,11 @@ function et(e) {
       children: (0, r.jsx)(d.kci, {
         animationRef: C,
         className: o()(I.easterEggAnimation, {
-          [I.easterEggAnimationHideLeaf]: T
+          [I.easterEggAnimationHideLeaf]: S
         }),
         nextScene: O,
         sceneSegments: R,
-        onScenePlay: S,
+        onScenePlay: T,
         onSceneComplete: A,
         importData: Q,
         pauseWhileUnfocused: false
@@ -361,32 +361,32 @@ function en(e) {
     c = H(n),
     u = (0, h.Z)(n),
     {
-      createMultipleConfettiAt: T,
-      addClickListener: S
+      createMultipleConfettiAt: S,
+      addClickListener: T
     } = i.useContext(f.h),
     [A, C] = i.useState(false),
     R = i.useRef(null),
     {
       reducedMotion: P
     } = i.useContext(d.Sfi),
-    D = (0, b.ZP)(n),
-    w = D.nick,
-    L = s(D);
+    w = (0, b.ZP)(n),
+    D = w.nick,
+    L = s(w);
   t = null == c || null == o ? u > 1 ? v.intl.format(v.t.yfC9ds, {
-    username: w,
+    username: D,
     usernameHook: L,
     numSubscriptions: u
   }) : v.intl.format(v.t["57St/7"], {
-    username: w,
+    username: D,
     usernameHook: L
   }) : u > 1 ? v.intl.format(v.t.PO9uJD, {
-    username: w,
+    username: D,
     usernameHook: L,
     numSubscriptions: u,
     guildName: o.name,
     newTierName: (0, E.nW)(c)
   }) : v.intl.format(v.t.cUfTTE, {
-    username: w,
+    username: D,
     usernameHook: L,
     guildName: o.name,
     newTierName: (0, E.nW)(c)
@@ -397,9 +397,9 @@ function en(e) {
           var e;
           let t = null == (e = R.current) ? true : e.getBoundingClientRect();
           if (null == t) return;
-          T(t.left + t.width / 2, t.top + t.height / 2)
+          S(t.left + t.width / 2, t.top + t.height / 2)
         } else C(true)
-    }, [T, P, A]),
+    }, [S, P, A]),
     M = i.useCallback(() => {
       C(false)
     }, []),
@@ -413,7 +413,7 @@ function en(e) {
     j = i.useCallback((e, t) => {
       (null == t ? true : t.id.startsWith(V)) && k()
     }, [k]);
-  i.useEffect(() => S(j));
+  i.useEffect(() => T(j));
   let U = (0, r.jsx)(d.P3F, {
     className: I.iconWrapper,
     innerRef: R,

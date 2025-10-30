@@ -26,7 +26,7 @@ let f = function(e) {
     isEnabled: _,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), O = h !== d.pJs.ONLINE && h !== d.pJs.ALL, I = b || m || O, v = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : I ? (0, r.jsxs)("div", {
+  }), O = h !== d.pJs.ONLINE && h !== d.pJs.ALL, I = b || m || O, y = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : I ? (0, r.jsxs)("div", {
     children: [f(t), e.map(n)]
   }, t) : (0, r.jsxs)(o.W, {
     transitionAppear: false,
@@ -76,7 +76,7 @@ let f = function(e) {
           ref: i,
           className: p.peopleList
         }, l), n = n = {
-          children: [v, g]
+          children: [y, g]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk206051 = require("./206051.js");
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,14 +42,14 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -77,7 +77,7 @@ function M(e) {
   let {
     onClose: n,
     onComplete: a,
-    onStepChange: D,
+    onStepChange: w,
     transitionState: L,
     loadId: M,
     skuId: k,
@@ -103,12 +103,12 @@ function M(e) {
     step: n,
     onClose: () => t(false),
     giftingOrigin: B
-  }) : (0, r.jsx)(S.Z, {
+  }) : (0, r.jsx)(T.Z, {
     step: n,
     onClose: () => t(false)
-  }), er = i.useMemo(() => [y.WA, ...j ? [T.Dd] : [], v.n, ...y.yp, y.wo, {
+  }), er = i.useMemo(() => [y.WA, ...j ? [S.Dd] : [], v.n, ...y.yp, y.wo, {
     key: g.h8.CONFIRM,
-    renderStep: e => (0, r.jsx)(I.x, x(w({}, e), {
+    renderStep: e => (0, r.jsx)(I.x, x(D({}, e), {
       confettiCanvas: Y,
       analyticsLocations: V,
       hideConfetti: null != q
@@ -154,7 +154,7 @@ function M(e) {
             transitionState: L,
             renderHeader: en,
             returnRef: F,
-            onStepChange: D,
+            onStepChange: w,
             skipConfirm: $,
             hideShadow: true
           })

@@ -3,15 +3,15 @@
 "use strict";
 require.d(exports, {
   Ee: () => O,
-  L6: () => D,
+  L6: () => w,
   V7: () => I,
   VF: () => P,
   b$: () => g,
   d9: () => N,
   dF: () => v,
-  dX: () => w,
-  iF: () => T,
-  kl: () => S,
+  dX: () => D,
+  iF: () => S,
+  kl: () => T,
   p3: () => b,
   wC: () => E
 }), require("./997841.js"), require("./388685.js"), require("./539854.js"), require("./472816.js"), require("./794429.js");
@@ -88,14 +88,14 @@ function v(e, t, n) {
 }
 
 function I(e) {
-  return T(o.Z.getChannel(e))
+  return S(o.Z.getChannel(e))
 }
 
-function T(e) {
+function S(e) {
   return null != e && !!(0, _.s)(e.guild_id, e.id) && (e.isForumChannel() ? f.Uu(p.Plq.SEND_MESSAGES_IN_THREADS, e) : f.Uu(p.Plq.SEND_MESSAGES, e))
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : () => true,
     i = C(e, t, e => e.id, r);
   return n.forEach(t => {
@@ -114,7 +114,7 @@ function S(e, t, n) {
 function A(e, t) {
   return e.filter(e => {
     var n;
-    return T(null == (n = t[e]) ? true : n.channel)
+    return S(null == (n = t[e]) ? true : n.channel)
   })
 }
 
@@ -156,15 +156,15 @@ function P(e, t) {
       r = [],
       i = [],
       a = {};
-    for (let e of n[s.sH])(0, _.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (a[e.channel.id] = e, r.push(e.channel), T(e.channel) && i.push(e.channel.id));
+    for (let e of n[s.sH])(0, _.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (a[e.channel.id] = e, r.push(e.channel), S(e.channel) && i.push(e.channel.id));
     return [i, r]
   }, [e, t], R)
 }
 
-function D(e) {
+function w(e) {
   return new Set(e.map(e => e.roleIds).flat().filter(d.lm))
 }
 
-function w(e) {
+function D(e) {
   return new Set(e.map(e => e.channelIds).flat().filter(d.lm))
 }

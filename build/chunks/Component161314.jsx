@@ -61,7 +61,7 @@ function N(e) {
     listingsLoaded: R
   } = (0, h.eD)(n), P = (0, h.ue)(n, {
     publishedOnly: true
-  }), D = i.useCallback(async () => {
+  }), w = i.useCallback(async () => {
     b.default.track(I.rMx.GUILD_SHOP_EMBED_CLICKED, C({}, (0, f.hH)(n))), await (0, m.Z)(I.Z5c.SERVER_SHOP(n))
   }, [n]);
   (0, _.Z)({
@@ -70,18 +70,18 @@ function N(e) {
   }, {
     disableTrack: null == a
   });
-  let w = P.length > 0 ? new Date(Math.min(...P.map(e => Date.parse(e.published_at)))) : true;
+  let D = P.length > 0 ? new Date(Math.min(...P.map(e => Date.parse(e.published_at)))) : true;
   return A || !R ? (0, r.jsx)("div", {
-    className: o()(S.guildShopEmbed, S.spinnerContainer),
+    className: o()(T.guildShopEmbed, T.spinnerContainer),
     children: (0, r.jsx)(d.$jN, {})
   }) : null == a || null == N ? null : (0, r.jsxs)("div", {
-    className: S.guildShopEmbed,
+    className: T.guildShopEmbed,
     children: [(0, r.jsx)(O.Z, {
       coverImageAsset: null != (t = N.cover_image_asset) ? t : null
     }), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: S.serverShopLabel,
+      className: T.serverShopLabel,
       children: [(0, r.jsx)(v.Z, {
         height: "16px",
         width: "16px",
@@ -89,15 +89,15 @@ function N(e) {
       }), (0, r.jsx)(d.Heading, {
         variant: "heading-sm/semibold",
         color: "interactive-normal",
-        className: S.serverShopLabelText,
-        children: T.intl.string(T.t.al5EXL)
+        className: T.serverShopLabelText,
+        children: S.intl.string(S.t.al5EXL)
       })]
     }), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsx)(d.Heading, {
       variant: "heading-md/semibold",
       color: "text-default",
-      children: T.intl.format(T.t.NZeik9, {
+      children: S.intl.format(S.t.NZeik9, {
         guildName: a.name
       })
     }), (0, r.jsx)(d.LZC, {
@@ -112,34 +112,34 @@ function N(e) {
     }), (0, r.jsx)(g.Z, {}), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: S.guildShopEmbedFooter,
+      className: T.guildShopEmbedFooter,
       children: [(0, r.jsx)(p.Z, {
         guild: a
       }), (0, r.jsxs)("ul", {
-        className: S.guildShopSummary,
+        className: T.guildShopSummary,
         children: [(0, r.jsx)("li", {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: T.intl.format(T.t.tKZNlb, {
+            children: S.intl.format(S.t.tKZNlb, {
               listingCount: P.length
             })
           })
-        }), null != w && (0, r.jsx)("li", {
+        }), null != D && (0, r.jsx)("li", {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: T.intl.format(T.t["kXr8+b"], {
-              createdYear: w.getFullYear()
+            children: S.intl.format(S.t["kXr8+b"], {
+              createdYear: D.getFullYear()
             })
           })
         })]
       }), (0, r.jsx)("div", {
-        className: S.guildShopEmbedCta,
+        className: T.guildShopEmbedCta,
         children: (0, r.jsx)(u.zxk, {
-          onClick: D,
+          onClick: w,
           icon: v.P,
-          text: T.intl.string(T.t.jXx1CC)
+          text: S.intl.string(S.t.jXx1CC)
         })
       })]
     })]

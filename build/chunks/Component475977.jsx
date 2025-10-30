@@ -36,7 +36,7 @@ let m = () => {
       version: y
     })
   }, [exports, y]);
-  let T = () => {
+  let S = () => {
     I(() => (0, Chunk335131.mK)({
       analyticsLocations: exports,
       analyticsSource: Chunk100527.Z.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
@@ -70,7 +70,7 @@ let m = () => {
         children: b
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.Button, {
-      onClick: T,
+      onClick: S,
       variant: "overlay-primary",
       text: Chunk388032.intl.string(Chunk388032.t.fYfGgK)
     })]

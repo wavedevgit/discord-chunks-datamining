@@ -307,7 +307,7 @@ function D(e) {
         size: "sm",
         text: J,
         onClick: () => {
-          if (Q) null != l && null != l.getGuildId() && ((0, y.Cq)(l), (0, v.XU)(l.getGuildId(), l.id));
+          if (Q) null != l && null != l.getGuildId() && ((0, v.Cq)(l), (0, y.XU)(l.getGuildId(), l.id));
           else {
             if (null == d) return;
             (0, f.bO)({

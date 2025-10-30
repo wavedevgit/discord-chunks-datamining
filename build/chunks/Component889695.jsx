@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk124650 = require("./124650.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -51,16 +51,16 @@ function S(e) {
 function A(e) {
   let {
     guildId: t
-  } = e, n = (0, o.e7)([h.default], () => h.default.getCurrentUser()), T = (0, o.e7)([p.Z], () => p.Z.getGuild(t)), A = (0, o.e7)([_.Z], () => _.Z.getRolesSnapshot(t)), N = (0, o.e7)([_.Z], () => _.Z.getSortedRoles(t)), {
+  } = e, n = (0, o.e7)([h.default], () => h.default.getCurrentUser()), S = (0, o.e7)([p.Z], () => p.Z.getGuild(t)), A = (0, o.e7)([_.Z], () => _.Z.getRolesSnapshot(t)), N = (0, o.e7)([_.Z], () => _.Z.getSortedRoles(t)), {
     impersonateType: R,
     viewingRoles: P
   } = (0, o.cj)([b.Z], () => ({
     impersonateType: b.Z.getImpersonateType(t),
     viewingRoles: b.Z.getViewingRoles(t)
-  })), D = R === y.z.SERVER_SHOP, w = (0, o.e7)([f.ZP], () => null != n ? f.ZP.getTrueMember(t, n.id) : null), L = null != T ? A[(0, u.lV)(T)] : null, [x, M] = i.useState(() => {
+  })), w = R === y.z.SERVER_SHOP, D = (0, o.e7)([f.ZP], () => null != n ? f.ZP.getTrueMember(t, n.id) : null), L = null != S ? A[(0, u.lV)(S)] : null, [x, M] = i.useState(() => {
     let e = null == P ? [] : g.default.keys(P);
     return null != L && e.push(L.id), e
-  }), k = i.useRef(T);
+  }), k = i.useRef(S);
   i.useEffect(() => {
     let e = {},
       t = k.current;
@@ -74,11 +74,11 @@ function A(e) {
       })
     }
   }, [x, R, A]);
-  let j = null != T && null != n && null != w ? N.find(e => w.roles.includes(e.id)) : true,
-    U = i.useMemo(() => null != T && null != n ? N.filter(e => !(0, d.fI)(e)).filter(e => {
+  let j = null != S && null != n && null != D ? N.find(e => D.roles.includes(e.id)) : true,
+    U = i.useMemo(() => null != S && null != n ? N.filter(e => !(0, d.fI)(e)).filter(e => {
       var t;
-      return !D || (null == (t = e.tags) ? true : t.subscription_listing_id) != null
-    }).filter(e => (null == j ? true : j.id) === e.id || m.r6(T, n.id, j, e)) : [], [T, n, D, j, N]),
+      return !w || (null == (t = e.tags) ? true : t.subscription_listing_id) != null
+    }).filter(e => (null == j ? true : j.id) === e.id || m.r6(S, n.id, j, e)) : [], [S, n, w, j, N]),
     G = i.useMemo(() => {
       let e = Array.from(U).map(e => ({
         leading: C(e),
@@ -87,23 +87,23 @@ function A(e) {
         id: e.id.toString(),
         disabled: false
       }));
-      return null != T && null != L && e.push({
+      return null != S && null != L && e.push({
         leading: C(L),
         value: L.id,
         label: L.name,
         id: L.id.toString(),
         disabled: true
       }), e
-    }, [U, T, L]);
-  if (null == n || null == T || null == w) return null;
+    }, [U, S, L]);
+  if (null == n || null == S || null == D) return null;
   let B = {};
-  return (w.roles.forEach(e => {
+  return (D.roles.forEach(e => {
     let t = A[e];
     null != t && (B[t.id] = t)
   }), a.e$(m.I0({
     forceRoles: B,
-    context: T
-  }), a.$e(O.Plq.MANAGE_GUILD, O.Plq.MANAGE_ROLES)) || (0, u.eM)(T, n)) ? (0, r.jsx)("div", {
+    context: S
+  }), a.$e(O.Plq.MANAGE_GUILD, O.Plq.MANAGE_ROLES)) || (0, u.eM)(S, n)) ? (0, r.jsx)("div", {
     className: I.container,
     children: (0, r.jsxs)(s.uz, {
       selectionMode: "multiple",
@@ -117,7 +117,7 @@ function A(e) {
         autoFocus: true,
         placeholder: v.intl.string(v.t.Sojqsr)
       }), (0, r.jsx)(s.px, {
-        renderListItem: e => (0, r.jsx)(l.W, S({}, e))
+        renderListItem: e => (0, r.jsx)(l.W, T({}, e))
       })]
     })
   }) : (0, r.jsx)(c.Text, {

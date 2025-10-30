@@ -107,7 +107,7 @@ function H(e) {
   let {
     guildEvent: t,
     channel: n
-  } = e, r = (0, o.Wu)([v.ZP], () => v.ZP.getVoiceStatesForChannel(n).map(e => {
+  } = e, r = (0, o.Wu)([y.ZP], () => y.ZP.getVoiceStatesForChannel(n).map(e => {
     let {
       user: t
     } = e;
@@ -140,7 +140,7 @@ function V(e) {
   } = e, r = (0, R.DK)(t), l = (0, o.e7)([T.ZP], () => T.ZP.isInterestedInEventRecurrence(t.id, r), [t.id, r]), a = (0, o.e7)([P.Z], () => P.Z.getUpcomingNoticeSeenTime(t.id), [t.id]);
   return l || null != a || (0, N._6)(t.id), (0, i.jsx)(c.Button, {
     onClick: function() {
-      (0, D.Z)(t.id, null, t.guild_id, () => setTimeout(() => (0, N.L_)(t.id), 1e3)), y.default.track(k.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
+      (0, D.Z)(t.id, null, t.guild_id, () => setTimeout(() => (0, N.L_)(t.id), 1e3)), v.default.track(k.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
         guild_id: t.guild_id,
         notice_type: n
       })
@@ -171,7 +171,7 @@ function F(e) {
     date: h
   });
   return l.useEffect(() => {
-    y.default.track(k.rMx.CHANNEL_NOTICE_VIEWED, {
+    v.default.track(k.rMx.CHANNEL_NOTICE_VIEWED, {
       notice_type: r,
       guild_id: n.guild_id
     })
@@ -192,7 +192,7 @@ function F(e) {
         })
       }), (0, i.jsx)(c.P3F, {
         onClick: () => {
-          y.default.track(k.rMx.CHANNEL_NOTICE_CLOSED, {
+          v.default.track(k.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: r,
             guild_id: n.guild_id
           }), (0, N.L_)(n.id)

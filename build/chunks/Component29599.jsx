@@ -104,8 +104,8 @@ function B(e) {
     endDate: I,
     onClickDetails: E
   }));
-  let T = v ? x.intl.string(x.t["2cHUti"]) : x.intl.string(x.t.O13yhz),
-    S = i.useCallback(() => h(false), []),
+  let S = v ? x.intl.string(x.t["2cHUti"]) : x.intl.string(x.t.O13yhz),
+    T = i.useCallback(() => h(false), []),
     {
       outboundTitle: A,
       outboundTermsAndConditions: C
@@ -136,7 +136,7 @@ function B(e) {
             })]
           })]
         }), !l && (0, r.jsx)(u.Button, {
-          text: T,
+          text: S,
           onClick: () => h(true),
           disabled: l,
           size: "sm"
@@ -151,12 +151,12 @@ function B(e) {
       })]
     }), f && (0, r.jsx)(u.u_l, {
       renderModal: e => (0, r.jsx)(b.Z, G(j({}, e), {
-        onClose: S,
+        onClose: T,
         onClaim: s,
         code: a,
         outboundPromotion: n
       })),
-      onCloseRequest: S
+      onCloseRequest: T
     })]
   })
 }

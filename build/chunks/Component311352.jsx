@@ -1,4 +1,4 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 83546 **/
 /** chunk id: 311352, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -130,7 +130,7 @@ let C = e => {
           hotkey: Chunk13140.BB(null == Chunk611372 ? true : Chunk611372.shortcut, true)
         }) : Chunk388032.intl.string(Chunk388032.t.s52pju),
         onClick: () => {
-          (0, Chunk39604.C1)(), (0, Chunk522651.v)(exports, Chunk522651.d.CLIP)
+          (0, Chunk39604.br)(), (0, Chunk522651.v)(exports, Chunk522651.d.CLIP)
         },
         onContextMenu: j,
         icon: Chunk481060.AlX

@@ -66,15 +66,15 @@ let E = 57.75,
       context: b
     } = (0, c.KZ)(), {
       analyticsLocations: y
-    } = (0, l.ZP)(), [O, v] = i.useState(false), [I, T] = i.useState(false), S = i.useRef(null), A = e => {
-      S.current = e, null != e && (v(!I && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > E && T(true))
+    } = (0, l.ZP)(), [O, v] = i.useState(false), [I, S] = i.useState(false), T = i.useRef(null), A = e => {
+      T.current = e, null != e && (v(!I && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > E && S(true))
     }, C = () => {
       null == n || n(), (0, u.openUserProfileModal)(g(h({}, b), {
         userId: t.id,
         sourceAnalyticsLocations: y
       }))
     }, N = e => {
-      null == S.current || S.current.contains(e.relatedTarget) || (S.current.scrollTop = 0)
+      null == T.current || T.current.contains(e.relatedTarget) || (T.current.scrollTop = 0)
     };
     return p || null == a || "" === a ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {

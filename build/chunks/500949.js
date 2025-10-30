@@ -1,4 +1,4 @@
-/** Chunk was on 28855 **/
+/** Chunk was on 95017 **/
 /** chunk id: 500949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $R: () => K,
@@ -6,7 +6,7 @@ require.d(exports, {
   GU: () => Y,
   H8: () => X,
   HI: () => J,
-  HW: () => B,
+  HW: () => F,
   Ib: () => es,
   KB: () => eu,
   S2: () => V,
@@ -16,7 +16,7 @@ require.d(exports, {
   YE: () => ei,
   h9: () => eo,
   iw: () => en,
-  jC: () => H,
+  jC: () => z,
   jQ: () => G,
   lT: () => q,
   rd: () => ed,
@@ -78,7 +78,7 @@ function U(e) {
   return e
 }
 
-function F(e, t) {
+function B(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -90,7 +90,7 @@ function F(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let B = {
+let F = {
     sRGB: Chunk216397.Z,
     A98RGB: Chunk764160.Z,
     ACEScc: Chunk808131.Z,
@@ -118,11 +118,11 @@ let B = {
     XYZ_D50: Chunk341901.Z,
     XYZ_D65: Chunk856308.Z
   },
-  G = Object.fromEntries(Object.keys(B).map(e => [e, e]));
-Object.values(B).forEach(e => k.Z.register(e));
+  G = Object.fromEntries(Object.keys(F).map(e => [e, e]));
+Object.values(F).forEach(e => k.Z.register(e));
 let {
-  SemanticColors: z
-} = Chunk521904.V, H = z, V = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
+  SemanticColors: H
+} = Chunk521904.V, z = H, V = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
 
 function W(e, t) {
   let [n, a] = l.useState(() => {
@@ -135,10 +135,10 @@ function W(e, t) {
 }
 
 function K(e) {
-  let t = H[e];
+  let t = z[e];
   return {
     name: e,
-    colors: Object.fromEntries(Object.values(L.BR).map(e => [e, {
+    colors: Object.fromEntries(Object.values(M.BR).map(e => [e, {
       color: t[e].raw,
       opacity: t[e].opacity
     }])),
@@ -149,7 +149,7 @@ function K(e) {
 function q(e, t, n, a, r) {
   return {
     name: t,
-    colors: F(U({}, e.colors), {
+    colors: B(U({}, e.colors), {
       [r]: {
         color: n,
         opacity: a
@@ -160,7 +160,7 @@ function q(e, t, n, a, r) {
 }
 
 function Y(e) {
-  return F(U({}, e), {
+  return B(U({}, e), {
     highlight: !e.highlight
   })
 }
@@ -217,7 +217,7 @@ function er(e) {
     darkness: r,
     lightness: l,
     easingStrength: o = 1
-  } = e, s = B[e.colorSpace], c = (0, A.Z)(n, s), d = (0, D.CD)(c, "white", 1 - r, {
+  } = e, s = F[e.colorSpace], c = (0, A.Z)(n, s), d = (0, D.CD)(c, "white", 1 - r, {
     space: s,
     outputSpace: i.Z
   }), u = (0, D.CD)(c, "black", 1 - l, {
@@ -233,69 +233,69 @@ function er(e) {
     outputSpace: s,
     space: s,
     progression: e => e ** o
-  }), f = [];
+  }), g = [];
   for (let e = 0; e < m; e++) {
     let t = h(e / m);
-    f.push(t)
+    g.push(t)
   }
-  f.push(c);
+  g.push(c);
   for (let e = 1; e < p; e++) {
     let t = x(1 - e / p);
-    f.push(t)
+    g.push(t)
   }
-  return Object.fromEntries(f.map((e, n) => ["".concat(t, "-").concat(n), e]))
+  return Object.fromEntries(g.map((e, n) => ["".concat(t, "-").concat(n), e]))
 }
 
 function el(e, t, n) {
-  n(n => null == n.scales.find(t => t.name === e) ? n : F(U({}, n), {
+  n(n => null == n.scales.find(t => t.name === e) ? n : B(U({}, n), {
     scales: n.scales.map(n => n.name === e ? t(n) : n)
   }))
 }
 
 function ei(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => B(U({}, e), {
     darkness: t
   }), n)
 }
 
 function eo(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => B(U({}, e), {
     lightness: t
   }), n)
 }
 
 function es(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => B(U({}, e), {
     base: t
   }), n)
 }
 
 function ec(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => B(U({}, e), {
     colorSpace: t
   }), n)
 }
 
 function ed(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => B(U({}, e), {
     easingStrength: t
   }), n)
 }
 
 function eu(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => B(U({}, e), {
     showColumnarPalettePreview: t
   }), n)
 }
 
 function em(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => B(U({}, e), {
     useP3ColorSpace: t
   }), n)
 }
 
 function ep(e, t, n) {
-  el(e, e => F(U({}, e), {
+  el(e, e => B(U({}, e), {
     steps: t
   }), n)
 }

@@ -3,10 +3,10 @@
 "use strict";
 require.r(exports), require.d(exports, {
   USER_SETTINGS_MODAL_KEY: () => b,
-  getUserSettingsSectionsByWebUserSettings: () => T,
+  getUserSettingsSectionsByWebUserSettings: () => S,
   getWebUserSettingsByUserSettingsSections: () => I,
   openUserSettings: () => y,
-  openUserSettingsFromParsedUrl: () => S
+  openUserSettingsFromParsedUrl: () => T
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -82,12 +82,13 @@ async function y(e) {
     },
     s = arguments.length > 2 ? arguments[2] : true;
   var {
-    subsection: c
-  } = t, u = g(t, ["subsection"]);
+    subsection: c,
+    stackingBehavior: u = "replaceAll"
+  } = t, _ = g(t, ["subsection", "stackingBehavior"]);
   a.Z.dispatch(p({
     type: "USER_SETTINGS_MODAL_OPEN",
     subsection: null != c ? c : null
-  }, u)), (0, d.yP)("openUserSettings") ? (0, i.nfh)(b) ? l.Z.setState({
+  }, _)), (0, d.yP)("openUserSettings") ? (0, i.nfh)(b) ? l.Z.setState({
     targetKey: e
   }) : await (0, i.ZDy)(async () => {
     let {
@@ -98,7 +99,7 @@ async function y(e) {
     }))
   }, {
     modalKey: b,
-    stackingBehavior: "replaceAll",
+    stackingBehavior: u,
     stackNextByDefault: true
   }) : (0, o.jN)(f.S9g.USER_SETTINGS), null == s || s()
 }
@@ -166,14 +167,14 @@ function I() {
   ])
 }
 
-function T() {
+function S() {
   let e = I(),
     t = new Map;
   for (let [n, r] of module.entries()) exports.set(Chunk951288, require);
   return exports
 }
 
-function S(e) {
+function T(e) {
   let {
     match: t,
     urlOrigin: n,

@@ -106,15 +106,15 @@ let O = e => {
     name: m,
     properties: g
   });
-  let T = (0, d.Aq)(),
-    S = i.useCallback(() => {
-      T.dispatch(h.CkL.POPOUT_SHOW)
-    }, [T]),
+  let S = (0, d.Aq)(),
+    T = i.useCallback(() => {
+      S.dispatch(h.CkL.POPOUT_SHOW)
+    }, [S]),
     A = i.useCallback(() => {
-      T.dispatch(h.CkL.POPOUT_HIDE)
-    }, [T]);
+      S.dispatch(h.CkL.POPOUT_HIDE)
+    }, [S]);
   return (0, r.jsx)(u.W5, {
-    onMount: S,
+    onMount: T,
     onUnmount: A,
     targetRef: O,
     overrideTargetRect: f,

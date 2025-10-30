@@ -113,19 +113,19 @@ function J(e) {
               n = null != (i = A.Z.getChannel(e)) ? i : null;
             o()(null != n, "Send channel must be defined"), (0, N.uL)(H.Z5c.CHANNEL(n.guild_id, n.id)), (0, C.i)(H.IlC.OVERLAY, true), true === t.extra.fake_inventory_item ? await (0, j.k)({
               channel: n,
-              content: B.intl.formatToPlainString(B.t.UVBA9g, {
+              content: Y.intl.formatToPlainString(Y.t.UVBA9g, {
                 gameName: t.extra.game_name
               }),
               whenReady: true,
               doNotNotifyOnError: false,
-              location: Y.dy.OVERLAY
+              location: B.dy.OVERLAY
             }) : await (0, j.p)({
               channel: n,
-              content: B.intl.string(B.t.DwAcMz),
+              content: Y.intl.string(Y.t.DwAcMz),
               entry: t,
               whenReady: true,
               doNotNotifyOnError: false,
-              location: Y.dy.OVERLAY
+              location: B.dy.OVERLAY
             })
           }
           y.Z.track(H.rMx.OVERLAY_GAME_INVITE_SENT, {
@@ -151,7 +151,7 @@ function J(e) {
         value: G.bk.CHAT,
         userId: a.id
       })
-    }, x = E ? B.intl.string(B.t["3fRySx"]) : B.intl.string(B.t.XHxDIV), I = E ? (0, i.jsx)(h.ejJ, {
+    }, x = E ? Y.intl.string(Y.t["3fRySx"]) : Y.intl.string(Y.t.XHxDIV), I = E ? (0, i.jsx)(h.ejJ, {
       color: "currentColor",
       size: "sm"
     }) : (0, i.jsx)(h.Uuj, {
@@ -207,7 +207,7 @@ function q(e) {
         m("unsent")
       }
     }
-  }, y = B.intl.string(B.t.OKsSCR);
+  }, y = Y.intl.string(Y.t.OKsSCR);
   return (0, i.jsx)(d.u, {
     text: y,
     "aria-label": y,
@@ -324,7 +324,7 @@ function et(e) {
         variant: "text-xs/medium",
         color: "header-secondary",
         tag: "div",
-        children: B.intl.string(B.t.y9eo7a)
+        children: Y.intl.string(Y.t.y9eo7a)
       })
     }), t.map((e, t) => (0, i.jsx)($, {
       idx: t,
@@ -442,7 +442,7 @@ function er(e) {
       },
       size: p.Ph.SMALL,
       color: p.Tt.PRIMARY,
-      children: B.intl.string(B.t["6Qgrev"])
+      children: Y.intl.string(Y.t["6Qgrev"])
     }) : null]
   })
 }

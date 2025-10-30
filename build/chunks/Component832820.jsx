@@ -43,9 +43,9 @@ let b = function(e) {
     (0, c.Hi)(e, t.id)
   }, [t.id]), v = i.useCallback(() => {
     (0, c.GA)(t.id)
-  }, [t.id]), I = i.useMemo(() => null != n ? n.name.replace(/_/g, " ") : "", [n]), T = i.useCallback(() => {
+  }, [t.id]), I = i.useMemo(() => null != n ? n.name.replace(/_/g, " ") : "", [n]), S = i.useCallback(() => {
     (0, c.Hb)(t.id)
-  }, [t.id]), S = i.useMemo(() => null != y && y > 0 ? (null == b ? true : b.type) === h.qc2.DEVELOPER_GIFT ? m.intl.format(m.t["b+P6ra"], {
+  }, [t.id]), T = i.useMemo(() => null != y && y > 0 ? (null == b ? true : b.type) === h.qc2.DEVELOPER_GIFT ? m.intl.format(m.t["b+P6ra"], {
     numPotions: y
   }) : m.intl.format(m.t.RiQ4ci, {
     numPotions: y
@@ -67,7 +67,7 @@ let b = function(e) {
         source: u.YD.MessageConfettiBar
       })
     }, [t.id]),
-    D = i.useRef(null);
+    w = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: g.bar,
     children: [(0, r.jsx)(_.Z, {
@@ -75,11 +75,11 @@ let b = function(e) {
       shouldShow: A,
       onRequestClose: N,
       setEmojiConfetti: R,
-      positionRef: D,
+      positionRef: w,
       position: "top",
       align: "left",
       children: () => (0, r.jsxs)(o.P3F, {
-        innerRef: D,
+        innerRef: w,
         onClick: () => C(!A),
         className: g.emojiSelectContainer,
         children: [(0, r.jsx)("div", {
@@ -98,13 +98,13 @@ let b = function(e) {
       className: g.end,
       children: [(0, r.jsx)(o.Button, {
         onClick: P,
-        text: S,
+        text: T,
         variant: "primary"
       }), (0, r.jsx)("div", {
         className: g.separator,
         "aria-hidden": true
       }), (0, r.jsx)(l.B, {
-        onClick: T
+        onClick: S
       })]
     })]
   })

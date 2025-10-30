@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   C: () => C,
-  default: () => S
+  default: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -61,16 +61,16 @@ function v(e, t) {
   }), e
 }
 let I = 2500,
-  T = 467;
+  S = 467;
 
-function S(e) {
+function T(e) {
   let {
     questId: t,
     survey: n,
     transitionState: a,
     onClose: o,
     onSubmit: f
-  } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [S, C] = (0, l.q_F)(() => ({
+  } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [T, C] = (0, l.q_F)(() => ({
     from: {
       width: "0%"
     },
@@ -97,7 +97,7 @@ function S(e) {
     parentComponent: "QuestSurveyModal",
     children: (0, r.jsxs)(l.MyZ, {
       activeSlide: b,
-      width: T,
+      width: S,
       onSlideReady: P,
       children: [(0, r.jsxs)(l.Mi4, {
         id: 0,
@@ -157,7 +157,7 @@ function S(e) {
               onClick: o
             }), (0, r.jsx)(s.animated.div, {
               className: g.progressOverlay,
-              style: S
+              style: T
             })]
           })
         })]

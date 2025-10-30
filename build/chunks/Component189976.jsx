@@ -21,10 +21,10 @@ function p(e, t) {
       location: "MessageContextMenu"
     }),
     {
-      handleTranslate: O,
-      handleRevertTranslation: y,
-      isTranslating: m,
-      isTranslated: h
+      handleTranslate: y,
+      handleRevertTranslation: O,
+      isTranslating: h,
+      isTranslated: m
     } = function(e) {
       let [t, n] = i.useState(false), r = (0, l.e7)([u.default], () => u.default.locale);
       return {
@@ -96,18 +96,18 @@ function p(e, t) {
           disabled: t
         }, i.value)
       }), [e, t, l])
-    }(O, m);
-  return null != e.content && "" !== e.content.trim() && (null == p ? true : p.enableAIFeatures) ? h ? (0, r.jsx)(o.sNh, {
+    }(y, h);
+  return null != e.content && "" !== e.content.trim() && (null == p ? true : p.enableAIFeatures) ? m ? (0, r.jsx)(o.sNh, {
     id: "revert-translation",
     label: f.intl.string(f.t.JC9BXn),
     icon: o.os0,
-    action: y,
-    disabled: m
+    action: O,
+    disabled: h
   }) : (0, r.jsx)(o.sNh, {
     id: "translate",
-    label: m ? f.intl.string(f.t.SVKIdU) : f.intl.string(f.t["6epDlR"]),
-    action: () => O(),
-    disabled: m,
+    label: h ? f.intl.string(f.t.SVKIdU) : f.intl.string(f.t["6epDlR"]),
+    action: () => y(),
+    disabled: h,
     children: v
   }) : null
 }

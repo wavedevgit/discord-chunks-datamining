@@ -8,17 +8,17 @@ require.d(exports, {
   HU: () => A,
   IV: () => v,
   J0: () => I,
-  K8: () => S,
+  K8: () => T,
   RE: () => E,
   Vt: () => N,
   aK: () => b,
-  aP: () => w,
+  aP: () => D,
   f7: () => h,
-  kN: () => T,
+  kN: () => S,
   lb: () => y,
   o0: () => P,
   o8: () => C,
-  xg: () => D,
+  xg: () => w,
   yf: () => p
 }), require("./388685.js");
 var Chunk463570 = require("./463570.js"),
@@ -46,8 +46,8 @@ let g = ["avatar-decorations", "profile-effects", "nameplates", "bundles"],
   O = 6048e5,
   v = 12,
   I = 518,
-  T = 5,
-  S = 3,
+  S = 5,
+  T = 3,
   A = ["1212569433839636530", "1212570343567261736", "1212582298893946880"];
 var C = function(e) {
   return e[e.FIAT = 0] = "FIAT", e[e.ORB = 1] = "ORB", e[e.PREMIUM_PURCHASE = 2] = "PREMIUM_PURCHASE", e[e.PROMOTIONAL = 3] = "PROMOTIONAL", e[e.TENURE_REWARD = 4] = "TENURE_REWARD", e[e.GIFT = 5] = "GIFT", e
@@ -58,8 +58,8 @@ let N = {
   },
   R = new Set(Object.values(N)),
   P = e => R.has(e),
-  D = [Chunk335818.G.AVATAR_DECORATION, Chunk335818.G.PROFILE_EFFECT, Chunk335818.G.NAMEPLATE, Chunk335818.G.BUNDLE],
-  w = [{
+  w = [Chunk335818.G.AVATAR_DECORATION, Chunk335818.G.PROFILE_EFFECT, Chunk335818.G.NAMEPLATE, Chunk335818.G.BUNDLE],
+  D = [{
     sortType: Chunk792091.E.RELEVANCE,
     sortDirection: Chunk497598.F.DESC
   }, {

@@ -61,8 +61,8 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = 20,
-  S = 18,
+let S = 20,
+  T = 18,
   A = 77,
   C = {
     tension: 800,
@@ -90,9 +90,9 @@ let T = 20,
 
 function R(e) {
   return {
-    "--custom-emoji-sprite-size": "".concat(S, "px"),
-    "--custom-emoji-sprite-row": Math.floor(e / T),
-    "--custom-emoji-sprite-col": e % T
+    "--custom-emoji-sprite-size": "".concat(T, "px"),
+    "--custom-emoji-sprite-row": Math.floor(e / S),
+    "--custom-emoji-sprite-col": e % S
   }
 }
 let P = function(e) {
@@ -102,16 +102,16 @@ let P = function(e) {
     renderButtonContents: a,
     active: y,
     onClick: v,
-    "aria-controls": T,
-    focusProps: S,
+    "aria-controls": S,
+    focusProps: T,
     ref: P
-  } = e, [D, w] = i.useState(false), [L, x] = i.useState(50), M = D || y, k = (0, h.l)(b, "emojiButton", M ? "Hovered" : "Normal"), j = R(L), U = i.useCallback(() => {
+  } = e, [w, D] = i.useState(false), [L, x] = i.useState(50), M = w || y, k = (0, h.l)(b, "emojiButton", M ? "Hovered" : "Normal"), j = R(L), U = i.useCallback(() => {
     if (M) return;
     let e = Math.floor(Math.random() * A);
-    w(true), x(e), (0, _.x)(g.qR.EmojiButtonMouseEntered)
-  }, [M, w, x]), G = i.useCallback(() => {
-    w(false)
-  }, [w]), B = i.useCallback(() => (0, _.x)(g.qR.EmojiButtonFocused), []), Z = (0, p.B4)(), [F, V] = (0, f.US)(Z ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), H = F === c.z.TRIAL_NUX_EMOJI_BUTTON, Y = !y && H, W = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), K = i.useRef(null), z = null != P ? P : K;
+    D(true), x(e), (0, _.x)(g.qR.EmojiButtonMouseEntered)
+  }, [M, D, x]), G = i.useCallback(() => {
+    D(false)
+  }, [D]), B = i.useCallback(() => (0, _.x)(g.qR.EmojiButtonFocused), []), Z = (0, p.B4)(), [F, V] = (0, f.US)(Z ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], true, true), H = F === c.z.TRIAL_NUX_EMOJI_BUTTON, Y = !y && H, W = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), K = i.useRef(null), z = null != P ? P : K;
   return (0, r.jsx)(u.aML, {
     "data-migration-pending": true,
     targetElementRef: z,
@@ -140,10 +140,10 @@ let P = function(e) {
         null == v || v(t), null == (n = e.onClick) || n.call(e)
       },
       "aria-label": E.intl.string(E.t["59QgaD"]),
-      "aria-controls": T,
+      "aria-controls": S,
       "aria-expanded": y,
       "aria-haspopup": "dialog",
-      focusProps: S,
+      focusProps: T,
       onContextMenu: e.onContextMenu,
       children: null != a ? a() : (0, r.jsx)(u.AMe, {
         config: C,

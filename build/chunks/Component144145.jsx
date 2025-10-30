@@ -93,7 +93,7 @@ function P(e) {
       return N(T({}, e), {
         libraryApplication: i,
         canJoin: null != t && (0, u.Z)(t, C.xjy.JOIN) && t.type === C.IIU.PLAYING,
-        canPlay: (0, v.t)({
+        canPlay: (0, y.t)({
           LibraryApplicationStore: E.Z,
           LaunchableGameStore: m.Z,
           DispatchApplicationStore: O.Z,
@@ -154,7 +154,7 @@ function P(e) {
       return (0, r.jsx)(a.sNh, {
         id: "play-".concat(n.session_id),
         action: function() {
-          (0, y.playApplication)(i.id, l, {
+          (0, v.playApplication)(i.id, l, {
             analyticsParams: {
               location: N(T({}, s), {
                 object: C.qAy.LIST_ITEM

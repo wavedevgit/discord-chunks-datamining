@@ -56,19 +56,19 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = Symbol("NO GUILD ID"),
+let T = Symbol("NO GUILD ID"),
   A = new Map,
   C = new Set,
   N = "premium",
   R = "guild_booster_lvl",
   P = 0x7fffffff,
-  D = new Map,
   w = new Map,
+  D = new Map,
   L = new Map,
   x = new Map,
   M = new Map,
@@ -109,7 +109,7 @@ let V = false,
   H = null;
 
 function Y(e) {
-  let t = D.get(e);
+  let t = w.get(e);
   if (null == t) return;
   let n = t.profileEffect;
   if ((null == n ? true : n.expiresAt) == null) return;
@@ -124,7 +124,7 @@ function Y(e) {
 
 function W(e, t) {
   var n, r;
-  let i = w.get(e);
+  let i = D.get(e);
   if (null == i) return;
   let a = i.get(t);
   if (null == a) return;
@@ -132,7 +132,7 @@ function W(e, t) {
   if ((null == o ? true : o.expiresAt) == null) return;
   let s = 1e3 * o.expiresAt + b.Cm - Date.now();
   if (s <= 0) {
-    i.set(t, T(v({}, a), {
+    i.set(t, S(v({}, a), {
       profileEffect: true
     })), null == (r = x.get(e)) || r.delete(t), eg.emitChange();
     return
@@ -142,7 +142,7 @@ function W(e, t) {
 }
 
 function K() {
-  A.clear(), C.clear(), D.clear(), w.clear(), M.clear(), k.clear(), j.clear(), V = false
+  A.clear(), C.clear(), w.clear(), D.clear(), M.clear(), k.clear(), j.clear(), V = false
 }
 
 function z(e) {
@@ -181,7 +181,7 @@ function J(e) {
   let {
     userProfile: z,
     fetchStartedAt: q
-  } = e, Q = null != (b = null == (t = z.guild_member_profile) ? true : t.guild_id) ? b : S;
+  } = e, Q = null != (b = null == (t = z.guild_member_profile) ? true : t.guild_id) ? b : T;
   if (null == (n = A.get(z.user.id)) || n.delete(Q), C.delete(z.user.id), null != z.mutual_guilds) {
     let e = {};
     z.mutual_guilds.forEach(t => {
@@ -215,17 +215,17 @@ function J(e) {
         });
         return null != t && (n = y.intl.formatToPlainString(y.t.Hu4jfi, {
           date: J
-        })), T(v({}, e), {
+        })), S(v({}, e), {
           description: n
         })
       }
-      return e.id.startsWith(R) && null != ee ? T(v({}, e), {
+      return e.id.startsWith(R) && null != ee ? S(v({}, e), {
         description: y.intl.formatToPlainString(y.t.IWkAq7, {
           date: ee
         })
       }) : e
     }) : [];
-  if (null != H && H.userId === z.user.id && (Date.now() > H.expiresAtMs ? H = null : $(er, H)), D.set(z.user.id, {
+  if (null != H && H.userId === z.user.id && (Date.now() > H.expiresAtMs ? H = null : $(er, H)), w.set(z.user.id, {
       userId: z.user.id,
       banner: null == (i = z.user_profile) ? true : i.banner,
       accentColor: null == (a = z.user_profile) ? true : a.accent_color,
@@ -280,11 +280,11 @@ function J(e) {
         pronouns: z.guild_member_profile.pronouns,
         badges: z.guild_badges
       },
-      n = w.get(z.user.id);
+      n = D.get(z.user.id);
     if (null != n) n.set(z.guild_member_profile.guild_id, t);
     else {
       let e = new Map;
-      e.set(z.guild_member_profile.guild_id, t), w.set(z.user.id, e)
+      e.set(z.guild_member_profile.guild_id, t), D.set(z.user.id, e)
     }
     if ((null == (K = z.guild_member_profile) || null == (V = K.profile_effect) ? true : V.expires_at) != null) {
       let e = new o.V7,
@@ -311,7 +311,7 @@ function ee(e) {
     userId: t,
     guildId: n,
     withMutualFriends: r
-  } = e, i = null != n ? n : S, a = A.get(t);
+  } = e, i = null != n ? n : T, a = A.get(t);
   if (null != a) a.add(i);
   else {
     let e = new Set;
@@ -328,8 +328,8 @@ function et(e) {
     apiError: a,
     fetchStartedAt: o
   } = e;
-  null == (t = A.get(r)) || t.delete(null != i ? i : S), C.delete(r);
-  let s = null != (n = D.get(r)) ? n : {
+  null == (t = A.get(r)) || t.delete(null != i ? i : T), C.delete(r);
+  let s = null != (n = w.get(r)) ? n : {
     connectedAccounts: [],
     applicationRoleConnections: [],
     premiumSince: null,
@@ -346,7 +346,7 @@ function et(e) {
     fetchEndedAt: 0,
     fetchError: true
   };
-  s.fetchStartedAt = o, s.fetchEndedAt = Date.now(), s.fetchError = a, D.set(r, s), (null == a ? true : a.status) === 404 && (k.set(r, 0), M.set(r, U), j.set(r, G))
+  s.fetchStartedAt = o, s.fetchEndedAt = Date.now(), s.fetchError = a, w.set(r, s), (null == a ? true : a.status) === 404 && (k.set(r, 0), M.set(r, U), j.set(r, G))
 }
 
 function en(e) {
@@ -359,9 +359,9 @@ function en(e) {
     popout_animation_particle_type: s,
     theme_colors: l,
     profile_effect: c
-  } = e, u = D.get(t);
+  } = e, u = w.get(t);
   if (null == u) returnfalse;
-  if (D.set(t, T(v({}, u), {
+  if (w.set(t, S(v({}, u), {
       accentColor: n,
       banner: r,
       bio: i,
@@ -389,11 +389,11 @@ function er(e) {
     popout_animation_particle_type: l,
     theme_colors: c,
     profile_effect: u
-  } = e, d = w.get(t);
+  } = e, d = D.get(t);
   if (null == n || null == d) returnfalse;
   let f = d.get(n);
   if (null == f) returnfalse;
-  if (d.set(n, T(v({}, f), {
+  if (d.set(n, S(v({}, f), {
       accentColor: r,
       banner: i,
       bio: a,
@@ -432,9 +432,9 @@ function es(e) {
   let {
     userId: t,
     widgets: n
-  } = e, r = D.get(t);
+  } = e, r = w.get(t);
   if (null == r) returnfalse;
-  D.set(t, T(v({}, r), {
+  w.set(t, S(v({}, r), {
     widgets: n.map(F).filter(h.lm)
   }))
 }
@@ -450,11 +450,11 @@ function el(e) {
     badges: t,
     expiresAtMs: Date.now() + 1e3 * n
   };
-  let i = D.get(r);
+  let i = w.get(r);
   if (null != i) {
     var a;
     let e = null != (a = i.badges) ? a : [];
-    $(e, H), D.set(r, T(v({}, i), {
+    $(e, H), w.set(r, S(v({}, i), {
       badges: e
     }))
   }
@@ -467,7 +467,7 @@ function ec(e) {
 }
 
 function eu(e) {
-  return [...D.keys()].reduce((e, t) => ep(t) || e, false)
+  return [...w.keys()].reduce((e, t) => ep(t) || e, false)
 }
 
 function ed(e) {
@@ -479,12 +479,12 @@ function ef(e) {
 }
 
 function e_() {
-  A.clear(), C.clear(), D.clear(), w.clear()
+  A.clear(), C.clear(), w.clear(), D.clear()
 }
 
 function ep(e) {
   if (null == e) returnfalse;
-  let t = D.get(e);
+  let t = w.get(e);
   if (null == t) returnfalse;
   t.fetchStartedAt = 0, t.fetchEndedAt = 0, t.fetchError = true
 }
@@ -498,7 +498,7 @@ class em extends Chunk750041.Z {
   }
   isFetchingProfile(e, t) {
     let n = A.get(e);
-    return null != n && n.has(null != t ? t : S)
+    return null != n && n.has(null != t ? t : T)
   }
   isFetchingFriends(e) {
     return C.has(e)
@@ -507,11 +507,11 @@ class em extends Chunk750041.Z {
     return V
   }
   getUserProfile(e) {
-    return D.get(e)
+    return w.get(e)
   }
   getGuildMemberProfile(e, t) {
     var n, r;
-    return null == t ? null : null != (r = null == (n = w.get(e)) ? true : n.get(t)) ? r : null
+    return null == t ? null : null != (r = null == (n = D.get(e)) ? true : n.get(t)) ? r : null
   }
   getMutualFriends(e) {
     return M.get(e)
@@ -524,10 +524,10 @@ class em extends Chunk750041.Z {
   }
   getWidgets(e) {
     var t;
-    return null == (t = D.get(e)) ? true : t.widgets
+    return null == (t = w.get(e)) ? true : t.widgets
   }
   getWishlistIds(e) {
-    let t = D.get(e);
+    let t = w.get(e);
     return (null == t ? true : t.wishlistSettings) != null ? Object.keys(t.wishlistSettings) : []
   }
   getFirstWishlistId(e) {
@@ -536,12 +536,12 @@ class em extends Chunk750041.Z {
   }
   getWishlistSettings(e, t) {
     var n, r;
-    let i = D.get(e);
+    let i = w.get(e);
     return null != (r = null == i || null == (n = i.wishlistSettings) ? true : n[t]) ? r : null
   }
   takeSnapshot() {
     let e = Chunk314897.default.getId(),
-      t = D.get(module);
+      t = w.get(module);
     return null != exports ? {
       version: em.LATEST_SNAPSHOT_VERSION,
       data: [{
@@ -592,7 +592,7 @@ class em extends Chunk750041.Z {
           userId: t,
           profile: n
         } = e;
-        null != t && (null != n ? D.set(t, n) : D.delete(t))
+        null != t && (null != n ? w.set(t, n) : w.delete(t))
       })
     })
   }

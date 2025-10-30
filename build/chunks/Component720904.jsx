@@ -37,13 +37,13 @@ function E(e) {
     id: t.id,
     animated: !!i,
     size: 20
-  }) : null == a && (a = O.ZP.getURL(s)), (0, r.jsx)(o.u, {
-    text: (0, O.nY)(t),
+  }) : null == a && (a = y.ZP.getURL(s)), (0, r.jsx)(o.u, {
+    text: (0, y.nY)(t),
     hideOnClick: true,
     spacing: 16,
     forceOpen: n,
     children: (0, r.jsx)("div", {
-      "aria-label": h.intl.formatToPlainString(h.t["/iYSo6"], {
+      "aria-label": m.intl.formatToPlainString(m.t["/iYSo6"], {
         emojiName: t.name
       }),
       className: l()(v.button, {
@@ -64,16 +64,16 @@ function E(e) {
 function S(e, t) {
   let n = (0, c.MZ)(t.guild_id).filter(e => {
     var n;
-    return !(e.useSpriteSheet && j.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !O.ZP.isEmojiPremiumLocked({
+    return !(e.useSpriteSheet && j.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !y.ZP.isEmojiPremiumLocked({
       emoji: e,
       channel: t,
-      intention: m.Hz.REACTION
+      intention: h.Hz.REACTION
     })
   });
   n.length > 4 && (n.length = 4);
   let i = g.nc.useSetting(),
     l = (0, f.$R)(t);
-  return (0, a.e7)([b.Z], () => i && l && (t.isPrivate() || b.Z.can(y.Plq.ADD_REACTIONS, t)), [t, l, i]) && n.length > 0 ? (0, r.jsx)(s.kSQ, {
+  return (0, a.e7)([b.Z], () => i && l && (t.isPrivate() || b.Z.can(O.Plq.ADD_REACTIONS, t)), [t, l, i]) && n.length > 0 ? (0, r.jsx)(s.kSQ, {
     className: v.wrapper,
     children: n.map((n, i) => {
       var l;

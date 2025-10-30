@@ -105,7 +105,7 @@ let C = Math.ceil(Math.sqrt(115200)),
     });
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: y.wrapper,
+        className: v.wrapper,
         onMouseEnter: D,
         onMouseLeave: M,
         onFocus: D,
@@ -134,23 +134,23 @@ let C = Math.ceil(Math.sqrt(115200)),
           return e
         }({
           className: a()({
-            [y.withGradientAndBadge]: P
+            [v.withGradientAndBadge]: P
           }),
           icon: u.qDn,
           listItemRef: N,
           onClick: A,
           route: O.Z5c.QUEST_HOME_V2,
           selected: l,
-          text: v.intl.string(v.t.JALI2K)
+          text: y.intl.string(y.t.JALI2K)
         }, T), n = n = {
           children: P && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(s.animated.div, {
-              className: y.shine,
+              className: v.shine,
               style: {
                 transform: L.to(e => "translateX(calc(".concat(e * U, "px + ").concat(e * C, "px)) translateY(-50%) rotate(45deg)"))
               }
             }), (0, r.jsx)(s.animated.div, {
-              className: y.glow,
+              className: v.glow,
               style: {
                 opacity: Z.to({
                   range: [0, 1],
@@ -158,8 +158,8 @@ let C = Math.ceil(Math.sqrt(115200)),
                 })
               }
             }), (0, r.jsx)(u.IGR, {
-              className: y.badge,
-              text: v.intl.string(v.t.y2b7CA),
+              className: v.badge,
+              text: y.intl.string(y.t.y2b7CA),
               color: u.TVs.colors.BG_BRAND.css
             })]
           })

@@ -67,8 +67,8 @@ let c = "0.3",
     let O = (0, o.ZP)(),
       v = (0, a.ap)(O),
       I = (1 - b / 100) * E,
-      T = m(f),
-      S = h(f, v),
+      S = m(f),
+      T = h(f, v),
       A = null != _ ? _ : g(v, f);
     return (0, r.jsxs)("div", {
       className: l.circleContainer,
@@ -82,8 +82,8 @@ let c = "0.3",
           r: "".concat(p),
           cx: "50%",
           cy: "50%",
-          stroke: T,
-          strokeOpacity: S
+          stroke: S,
+          strokeOpacity: T
         }), (0, r.jsx)("circle", {
           stroke: A,
           strokeWidth: d,

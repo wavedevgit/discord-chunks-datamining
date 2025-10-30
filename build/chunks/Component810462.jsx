@@ -38,7 +38,7 @@ let d = Chunk647438.forwardRef(function(e, t) {
       null == (e = g.current) || e.focus()
     }
   }, [b]);
-  let T = () => null != y ? y : d || null == m ? h : m;
+  let S = () => null != y ? y : d || null == m ? h : m;
   return (0, r.jsx)("div", {
     className: u.wrapper,
     children: (0, r.jsx)(s.E1j, {
@@ -46,7 +46,7 @@ let d = Chunk647438.forwardRef(function(e, t) {
       disabled: !d,
       query: E,
       ref: g,
-      placeholder: T(),
+      placeholder: S(),
       onClear: I,
       onKeyDown: f,
       onChange: v,
