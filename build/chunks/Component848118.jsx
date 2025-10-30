@@ -20,23 +20,28 @@ function f(e) {
     cardImage: t,
     cardBackgroundImage: n,
     altText: a,
-    className: s
-  } = e, [u, f] = (0, c.Cf)(t.toString(), "#000000"), _ = i.useMemo(() => {
-    let e = o()(u).brighten(1.5).saturate(.3).alpha(.8).hex(),
-      t = null != f ? f : o()(u).saturate(1.2).alpha(.9).hex();
+    className: s,
+    shape: u
+  } = e, [f, _] = (0, c.Cf)(t.toString(), "#000000"), p = i.useMemo(() => {
+    let e = o()(f).brighten(1.5).saturate(.3).alpha(.8).hex(),
+      t = null != _ ? _ : o()(f).saturate(1.2).alpha(.9).hex();
     return "linear-gradient(135deg, ".concat(e, ", ").concat(t, ")")
-  }, [u, f]);
+  }, [f, _]);
   return (0, r.jsx)("div", {
-    className: l()(d.cardContainer, s),
+    className: l()(d.cardContainer, {
+      [d.square]: "square" === u
+    }, s),
     style: null != n ? {
       backgroundImage: "url(".concat(n.toString(), ")")
     } : {
-      backgroundImage: _
+      backgroundImage: p
     },
     children: (0, r.jsx)("img", {
       src: t.toString(),
       alt: a,
-      className: d.skuImage
+      className: l()(d.skuImage, {
+        [d.square]: "square" === u
+      })
     })
   })
 }
@@ -44,12 +49,14 @@ function f(e) {
 function _(e) {
   let {
     sku: t,
-    className: n
-  } = e, i = (0, u.Do)(t), a = (0, u.a7)(t);
-  return null == i ? null : (0, r.jsx)(f, {
-    cardImage: i,
-    cardBackgroundImage: a,
+    className: n,
+    shape: i
+  } = e, a = (0, u.Do)(t), o = (0, u.a7)(t);
+  return null == a ? null : (0, r.jsx)(f, {
+    cardImage: a,
+    cardBackgroundImage: o,
     altText: t.name,
-    className: n
+    className: n,
+    shape: i
   })
 }

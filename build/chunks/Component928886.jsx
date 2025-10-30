@@ -47,11 +47,11 @@ function I(e) {
     isGift: D,
     selectedGiftStyle: L,
     giftRecipient: x
-  } = (0, h.wD)(), M = D && (0, p.pO)(x) && T === g.h8.CONFIRM && null != L && (null == R ? true : R.productLine) !== E.POd.COLLECTIBLES, k = null != n && null != T, j = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], U = null != T && !j.includes(T) && null != S, G = (0, u.N)(a), B = !D && null != G && null != S && b.nG[G.trial_id].skus.includes(S), Z = (0, c.Ng)(), F = null == Z || null == (t = Z.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === S), V = !D && null != Z && null != S && F;
+  } = (0, h.wD)(), M = (null == R ? true : R.productLine) === E.POd.COLLECTIBLES, k = (null == R ? true : R.productLine) === E.POd.SOCIAL_LAYER_GAME_ITEM, j = D && (0, p.pO)(x) && T === g.h8.CONFIRM && null != L && !M && !k, U = null != n && null != T, G = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], B = null != T && !G.includes(T) && null != S, Z = (0, u.N)(a), F = !D && null != Z && null != S && b.nG[Z.trial_id].skus.includes(S), V = (0, c.Ng)(), H = null == V || null == (t = V.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === S), Y = !D && null != V && null != S && H;
   return i.useMemo(() => {
     if (null == T) return;
     let e = null;
-    return M ? e = (0, r.jsxs)("div", {
+    return j ? e = (0, r.jsxs)("div", {
       className: O.container,
       children: [(0, r.jsx)(d.Z, {
         defaultAnimationState: l.SR.LOOP,
@@ -62,21 +62,21 @@ function I(e) {
         className: O.closeButton,
         "data-migration-pending": true
       })]
-    }) : k ? e = n(null != A ? A : null, I, T) : N === y.GZ.ONE_TIME ? e = (0, r.jsx)(_.t, {
+    }) : U ? e = n(null != A ? A : null, I, T) : N === y.GZ.ONE_TIME ? e = (0, r.jsx)(_.t, {
       step: T,
       onClose: I
-    }) : U && (o()(v(S, b.y7), "invalid sku id: ".concat(S)), e = (0, r.jsx)(f.Z, {
+    }) : B && (o()(v(S, b.y7), "invalid sku id: ".concat(S)), e = (0, r.jsx)(f.Z, {
       currentStep: null != T ? T : true,
       purchaseState: C,
       premiumType: b.y7[S],
       onClose: I,
-      showTrialBadge: B,
-      showDiscountBadge: V,
+      showTrialBadge: F,
+      showDiscountBadge: Y,
       isGift: D,
       giftRecipient: x,
-      isEligibleForTrial: B,
+      isEligibleForTrial: F,
       enablePremiumBrandRefresh: P,
       isDisplayingWowMomentConfirmation: w
     })), e
-  }, [L, I, C, n, A, S, T, B, V, M, U, k, N, D, x, P, w])
+  }, [L, I, C, n, A, S, T, F, Y, j, B, U, N, D, x, P, w])
 }

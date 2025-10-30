@@ -29,7 +29,7 @@ function S(t) {
     channelContext: c
   } = t, [d, p] = a.useState({
     state: "LINK"
-  }), [C, g] = a.useState(false), S = (0, l.e7)([u.Z], () => u.Z.getApplication(e.applicationId)), T = a.useCallback(async () => {
+  }), [h, g] = a.useState(false), S = (0, l.e7)([u.Z], () => u.Z.getApplication(e.applicationId)), T = a.useCallback(async () => {
     try {
       g(true), await r.Z.redeemGiftCode({
         code: o.code,
@@ -56,9 +56,9 @@ function S(t) {
         application: S,
         transitionState: n,
         onClose: s,
-        successStateButtonText: h.intl.string(h.t.go1e4x),
+        successStateButtonText: C.intl.string(C.t.go1e4x),
         onSuccessButtonClick: T,
-        isSuccessButtonLoading: C
+        isSuccessButtonLoading: h
       });
     case "SUCCESS":
       return (0, i.jsx)(m.SocialLayerStorefrontItemClaimedSuccessfullyModal, {
@@ -89,7 +89,7 @@ let _ = t => {
     children: [(0, i.jsx)(s.xBx, {
       graphic: {
         type: "image",
-        src: x ? C : g
+        src: x ? h : g
       }
     }), (0, i.jsx)(s.fef, {
       children: r

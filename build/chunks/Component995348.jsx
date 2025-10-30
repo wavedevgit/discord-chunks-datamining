@@ -1,5 +1,5 @@
 /** Chunk was on 68500 **/
-/** chunk id: 995348, original params: a,c,r (module,exports,require) **/
+/** chunk id: 995348, original params: a,s,e (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => u
 });
@@ -10,10 +10,11 @@ var Chunk848118 = require("./848118.jsx"),
 
 function u(a) {
   let {
-    sku: c
+    sku: s
   } = a;
-  return (0, s.jsx)(e.A, {
+  return (0, r.jsx)(c.A, {
     className: t.cardImage,
-    sku: c
+    sku: s,
+    shape: "square"
   })
 }

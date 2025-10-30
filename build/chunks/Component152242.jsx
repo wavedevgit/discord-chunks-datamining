@@ -1,7 +1,7 @@
 /** Chunk was on 45227 **/
 /** chunk id: 152242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  jM: () => E
+  jM: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -31,9 +31,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk397263 = require("./397263.js");
-let E = {
+let T = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, i.jsx)(k, function(e) {
+  renderStep: e => (0, i.jsx)(S, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -57,7 +57,7 @@ let E = {
   }
 };
 
-function S(e) {
+function E(e) {
   let {
     onStepChange: t,
     onBackClick: n,
@@ -79,7 +79,7 @@ function S(e) {
   })
 }
 
-function k(e) {
+function S(e) {
   var t;
   let {
     handleStepChange: n,
@@ -89,8 +89,8 @@ function k(e) {
     setCustomGiftMessage: m,
     giftRecipient: C,
     emojiConfetti: w,
-    soundEffect: E,
-    setEmojiConfetti: k,
+    soundEffect: T,
+    setEmojiConfetti: S,
     setSoundEffect: G
   } = (0, s.wD)(), {
     selectedSkuId: M,
@@ -101,61 +101,63 @@ function k(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(u.C3, {
       children: (0, i.jsxs)("div", {
-        className: T.stepBody,
+        className: k.stepBody,
         children: [(0, i.jsxs)("div", {
-          className: T.bodyColumnLeft,
+          className: k.bodyColumnLeft,
           children: [null != L && (0, i.jsx)(_.p, {
-            className: T.skuCardImage,
+            className: k.skuCardImage,
             cardImage: L,
             cardBackgroundImage: H,
-            altText: null != (t = null == D ? true : D.name) ? t : ""
+            altText: null != (t = null == D ? true : D.name) ? t : "",
+            shape: "square"
           }), (0, i.jsxs)("div", {
-            className: T.giftEffectsContainer,
+            className: k.giftEffectsContainer,
             children: [(0, i.jsx)(v.Z, {
-              sound: E,
+              sound: T,
               onSelect: e => {
                 null != G && G(null == e ? true : e)
               }
             }), (0, i.jsx)(g.Z, {
-              setEmojiConfetti: k,
+              setEmojiConfetti: S,
               emojiConfetti: null == w ? true : w
             })]
           })]
         }), (0, i.jsxs)("div", {
-          className: T.bodyColumnRight,
+          className: k.bodyColumnRight,
           children: [(0, i.jsx)(a.Z, {
             selectedSkuId: M,
             validateSelectedGift: R,
-            searchableSelectWrapperClassName: T.recipientPickerSelectWrapper
+            searchableSelectWrapperClassName: k.recipientPickerSelectWrapper
           }), (0, i.jsx)(f.Z, {
             sectionTitle: N.intl.string(N.t.B3miE8),
             onTextChange: e => null == m ? true : m(e),
             pendingText: p,
             currentText: p,
             disableThemedBackground: true,
-            className: T.customGiftMessageWrapper,
-            innerClassName: T.customGiftMessage
+            className: k.customGiftMessageWrapper,
+            innerClassName: k.customGiftMessage
           }), (() => {
             var e, t, n, r;
             if (null == D) return null;
             let a = (0, x.T4)(null != (n = null == (e = D.price) ? true : e.amount) ? n : 0, null != (r = null == (t = D.price) ? true : t.currency) ? r : I.pK.USD);
             return (0, i.jsxs)("div", {
-              className: T.giftPreviewContainer,
+              className: k.giftPreviewContainer,
               children: [(0, i.jsx)(l.vwX, {
-                className: T.giftPreviewTitle,
+                className: k.giftPreviewTitle,
                 children: N.intl.string(N.t.PpoJzt)
               }), (0, i.jsxs)("div", {
-                className: T.giftPreviewContent,
+                className: k.giftPreviewContent,
                 children: [(0, i.jsx)("div", {
-                  className: T.giftPreviewImageContainer,
+                  className: k.giftPreviewImageContainer,
                   children: null != D && null != L && (0, i.jsx)(_.p, {
-                    className: T.giftPreviewCardContainer,
+                    className: k.giftPreviewCardContainer,
                     cardImage: L,
                     cardBackgroundImage: H,
-                    altText: D.name
+                    altText: D.name,
+                    shape: "square"
                   })
                 }), (0, i.jsxs)("div", {
-                  className: T.giftPreviewTextContainer,
+                  className: k.giftPreviewTextContainer,
                   children: [null != A && (0, i.jsx)(y.e, {
                     application: A
                   }), (0, i.jsx)(l.Text, {
@@ -180,8 +182,8 @@ function k(e) {
         "data-migration-pending": true,
         justify: o.Z.Justify.BETWEEN,
         align: o.Z.Align.CENTER,
-        className: T.footer,
-        children: (0, i.jsx)(S, {
+        className: k.footer,
+        children: (0, i.jsx)(E, {
           onStepChange: n,
           onBackClick: d,
           disabled: null == C || C.id === (null == B ? true : B.id) || p.length > O.$n
@@ -198,7 +200,7 @@ function Z(e) {
     sku: r
   } = e;
   return (0, i.jsx)("div", {
-    className: T.viewItemButton,
+    className: k.viewItemButton,
     children: (0, i.jsx)(l.Avr, {
       text: N.intl.string(N.t.ImioFL),
       onClick: function() {

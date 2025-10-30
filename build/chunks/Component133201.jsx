@@ -26,8 +26,8 @@ function x(t) {
     isSuccessButtonLoading: x
   } = t, {
     hasAlreadyLinked: m,
-    canStartAuthorization: h,
-    startAuthorization: C,
+    canStartAuthorization: C,
+    startAuthorization: h,
     fetched: g
   } = (0, r.F)(e);
   if (!g) return (0, i.jsx)(l.IX, {
@@ -48,9 +48,9 @@ function x(t) {
   } : {
     variant: "primary",
     text: d.intl.string(d.t["VDAhr+"]),
-    onClick: C,
+    onClick: h,
     icon: l.uIJ,
-    disabled: !h
+    disabled: !C
   };
   return (0, i.jsx)(f, {
     sku: n,
@@ -58,7 +58,7 @@ function x(t) {
     transitionState: a,
     onClose: s,
     hasAlreadyLinked: m,
-    canStartAuthorization: h,
+    canStartAuthorization: C,
     primaryCTAButtonProps: S,
     bodyText: d.intl.formatToPlainString(d.t.PaYE38, {
       applicationName: e.name
@@ -77,14 +77,14 @@ function f(t) {
     hasAlreadyLinked: c,
     canStartAuthorization: x,
     bodyText: f,
-    title: h
+    title: C
   } = t;
   return (0, i.jsxs)(l.IX, {
     transitionState: s,
     onClose: r,
     children: [(0, i.jsx)(u.y, {
       sku: n,
-      title: h
+      title: C
     }), (0, i.jsxs)(l.fef, {
       children: [(0, i.jsxs)("div", {
         className: p.modalBody,
