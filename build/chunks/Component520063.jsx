@@ -80,7 +80,7 @@ function h(e, n, h) {
     action: () => (0, a.ZDy)(async () => {
       let {
         default: n
-      } = await t.e("79939").then(t.bind(t, 495494));
+      } = await t.e("36760").then(t.bind(t, 854360));
       return t => (0, l.jsx)(n, p(m({}, t), {
         guildId: v.id,
         user: e
@@ -97,7 +97,7 @@ function h(e, n, h) {
     action: () => (0, a.ZDy)(async () => {
       let {
         default: n
-      } = await t.e("18910").then(t.bind(t, 497880));
+      } = await t.e("43350").then(t.bind(t, 98746));
       return t => (0, l.jsx)(n, p(m({}, t), {
         guildId: v.id,
         user: e

@@ -15,13 +15,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk933557 = require("./933557.js"),
   Chunk471445 = require("./471445.js"),
+  Chunk95398 = require("./95398.jsx"),
   Chunk905405 = require("./905405.js"),
   Chunk255269 = require("./255269.js"),
   Chunk937889 = require("./937889.js"),
   Chunk804063 = require("./804063.js"),
   Chunk703656 = require("./703656.js"),
   Chunk359110 = require("./359110.js"),
-  Chunk411405 = require("./411405.jsx"),
   Chunk695346 = require("./695346.js"),
   Chunk131704 = require("./131704.js"),
   Chunk592125 = require("./592125.js"),
@@ -77,20 +77,20 @@ function G(e) {
     highlighter: c,
     startIndex: E,
     resultRefs: d,
-    totalResults: g,
-    scrollTo: N,
+    totalResults: N,
+    scrollTo: h,
     renderEmbeds: R,
     offset: M,
     jumpToMessage: b,
     listNavigator: P,
     favoriteSearch: G
-  } = e, k = f.cC.useSetting(), F = (0, T.p)(), w = l.useCallback(e => {
+  } = e, k = f.cC.useSetting(), F = (0, I.p)(), w = l.useCallback(e => {
     if (e === U.Z.getChannelId()) return;
     let t = S.Z.getChannel(e);
-    null != t && (C.Z.can(v.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, h.Kh)(t.id)
+    null != t && (C.Z.can(v.Plq.VIEW_CHANNEL, t) || t.isPrivate()) && (0, O.Kh)(t.id)
   }, []), z = null != s ? (0, _.F6)(s, L.default, D.Z, false) : "???", V = G && null != s.guild_id ? null == (t = p.Z.getGuild(s.guild_id)) ? true : t.name : null, Z = (null == s ? true : s.parent_id) != null ? S.Z.getChannel(s.parent_id) : null, B = null != (n = null == Z ? true : Z.name) ? n : null, H = null != (i = (0, A.KS)(s)) ? i : u.VL1, K = C.Z.can(v.Plq.MANAGE_MESSAGES, s), {
     content: W
-  } = (0, m.ZP)({
+  } = (0, g.ZP)({
     content: z,
     embeds: []
   }, {
@@ -102,8 +102,8 @@ function G(e) {
     null != e && null != e.offsetWidth && null != e.scrollWidth && X(e.offsetWidth < e.scrollWidth)
   }, []);
   let J = [z, B, V].filter(e => null != e).join(", ");
-  return (0, r.jsx)(O.aQ.Provider, {
-    value: (0, I.Z)(k, K),
+  return (0, r.jsx)(T.aQ.Provider, {
+    value: (0, m.Z)(k, K),
     children: (0, r.jsxs)("ul", {
       role: "group",
       className: j.searchResultGroup,
@@ -136,8 +136,8 @@ function G(e) {
           ref: e => {
             d.current[n] = e
           },
-          totalResults: g,
-          scrollTo: N,
+          totalResults: N,
+          scrollTo: h,
           renderEmbeds: R,
           searchOffset: M,
           pageResultsLength: a.length,
@@ -162,7 +162,7 @@ let k = Chunk647438.memo(function(e) {
     blockCount: T,
     ignoreCount: I,
     onPageChange: m,
-    onClick: h,
+    onClick: g,
     paginationTotalCount: O,
     renderPageWrapper: f,
     onBlockedResultsClick: R,
@@ -175,14 +175,14 @@ let k = Chunk647438.memo(function(e) {
     isSearching: y,
     showBlockedResults: k
   } = s, F = l.useCallback((e, t) => {
-    if (null == h || h(e, t), (0, g.Z)(e)) {
+    if (null == g || g(e, t), (0, N.Z)(e)) {
       let t = S.Z.getChannel(e.channel_id),
         n = null != t ? t.getGuildId() : null;
       c.Z.trackJump(e.channel_id, e.id, "Search Results", {
         search_id: p
-      }), (0, N.uL)(v.Z5c.CHANNEL(n, e.channel_id, e.id))
+      }), (0, h.uL)(v.Z5c.CHANNEL(n, e.channel_id, e.id))
     }
-  }, [h, p]), w = l.useMemo(() => {
+  }, [g, p]), w = l.useMemo(() => {
     let e, t = 0;
     return A.reduce((n, r) => {
       if (!k && (D.Z.isBlockedForMessage(r) || D.Z.isIgnoredForMessage(r))) return n;

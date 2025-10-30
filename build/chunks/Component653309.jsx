@@ -12,7 +12,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk887490 = require("./887490.js"),
   Chunk990376 = require("./990376.js"),
   Chunk53457 = require("./53457.js"),
-  Chunk939194 = require("./939194.js");
+  Chunk329048 = require("./329048.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,7 +62,7 @@ let p = {
   url: Chunk990376.fakeLink,
   autolink: Chunk990376.fakeLink,
   silentPrefix: Chunk990376.fakeLink,
-  spoiler: a()(Chunk939194.spoilerContent, Chunk939194.spoilerMarkdownContent, Chunk939194.obscuredTextContent, Chunk990376.spoiler),
+  spoiler: a()(Chunk329048.spoilerContent, Chunk329048.spoilerMarkdownContent, Chunk329048.obscuredTextContent, Chunk990376.spoiler),
   staticRouteLink: Chunk990376.fakeLink,
   syntaxBefore: Chunk990376.syntaxBefore,
   syntaxAfter: Chunk990376.syntaxAfter,

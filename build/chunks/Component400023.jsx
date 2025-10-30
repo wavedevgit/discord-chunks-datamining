@@ -17,10 +17,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk931056 = require("./931056.js"),
   Chunk835473 = require("./835473.js"),
+  Chunk95398 = require("./95398.jsx"),
   Chunk580747 = require("./580747.js"),
   Chunk135938 = require("./135938.js"),
   Chunk160404 = require("./160404.js"),
-  Chunk411405 = require("./411405.jsx"),
   Chunk765104 = require("./765104.js"),
   Chunk695346 = require("./695346.js"),
   Chunk581883 = require("./581883.js"),
@@ -103,7 +103,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       messages: g,
       unreadCount: b,
       showNewMessagesBar: _,
-      messageDisplayCompact: C,
+      messageDisplayCompact: y,
       channelStream: v,
       uploads: O,
       hasUnreads: E,
@@ -115,7 +115,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       hideSummaries: A = false,
       jumpBarClassName: M,
       typingGradient: R
-    } = e, [L, Y] = i.useState(null != (n = j.Z.isAtBottom(m.id)) && n), K = i.useMemo(() => C ? (0, D.aJ)({
+    } = e, [L, Y] = i.useState(null != (n = j.Z.isAtBottom(m.id)) && n), K = i.useMemo(() => y ? (0, D.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -129,10 +129,10 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       attachments: 8,
       fontSize: P,
       groupSpacing: o
-    }), [C, P, o]), X = (0, U.ZP)({
+    }), [y, P, o]), X = (0, U.ZP)({
       messages: g,
       channel: m,
-      compact: C,
+      compact: y,
       hasUnreads: E,
       focusId: S,
       placeholderHeight: K.totalHeight,
@@ -145,7 +145,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       isEditing: null != S,
       keyboardModeEnabled: I,
       hasMoreAfter: g.hasMoreAfter
-    }), Q = (0, c.e7)([y.Z], () => Z.Z.can(F.Plq.READ_MESSAGE_HISTORY, m) ? null : y.Z.getViewingRolesTimestamp(m.getGuildId())), {
+    }), Q = (0, c.e7)([C.Z], () => Z.Z.can(F.Plq.READ_MESSAGE_HISTORY, m) ? null : C.Z.getViewingRolesTimestamp(m.getGuildId())), {
       channelStreamMarkup: $,
       newMessagesBar: ee,
       jumpToPresentBar: et,
@@ -156,7 +156,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       messages: g,
       unreadCount: b,
       showNewMessagesBar: _,
-      messageDisplayCompact: C,
+      messageDisplayCompact: y,
       channelStream: v,
       uploads: O,
       loadMore: X.loadMore,
@@ -275,7 +275,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
     let {
       canManageMessages: d,
       permissionVersion: f,
-      canChat: y
+      canChat: C
     } = function(e) {
       let t = e.getGuildId(),
         n = (0, c.e7)([P.Z], () => null == t || P.Z.canChatInGuild(t), [t]),
@@ -337,14 +337,14 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
         }, [e.id]),
         {
           enabled: a
-        } = _.Z.useExperiment({
+        } = y.Z.useExperiment({
           location: "41de6d_1"
         }, {
           autoTrackExposure: false
         }),
         o = null != (n = null == (t = A.default.getUser(E.default.getId())) ? true : t.hasFlag(F.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
-        u = (0, b.Z)("use_topic_dividers_in_chat"),
+        u = (0, _.Z)("use_topic_dividers_in_chat"),
         d = (0, c.Wu)([v.Z], () => {
           var t;
           return s && u && null != (t = v.Z.summaries(e.id)) ? t : []
@@ -360,7 +360,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
           return (0, g.Z)(t)
         }(r);
       (0, m.Z)(r, e);
-      let y = i.useMemo(() => (0, R.Z)({
+      let b = i.useMemo(() => (0, R.Z)({
         channel: e,
         messages: r,
         oldestUnreadMessageId: l,
@@ -370,7 +370,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       }), [r, e, l, a, d, f, h, o]);
       return {
         messages: r,
-        channelStream: y,
+        channelStream: b,
         oldestUnreadMessageId: l,
         editingMessageId: (0, c.e7)([S.Z], () => {
           var t;
@@ -378,7 +378,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
         })
       }
     }(t);
-    return (0, r.jsx)(C.aQ.Provider, {
+    return (0, r.jsx)(b.aQ.Provider, {
       value: (0, M.Z)(D, d),
       children: (0, r.jsx)(L.v, {
         children: (0, r.jsx)(Y, W(G({}, u), {
@@ -392,7 +392,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
           uploads: (0, c.e7)([N.Z], () => N.Z.getFiles(t.id), [t]),
           unreadCount: (0, c.e7)([T.ZP], () => T.ZP.getUnreadCount(t.id), [t]),
           hasUnreads: null != V,
-          canChat: y,
+          canChat: C,
           editingMessageId: H,
           fontSize: j,
           keyboardModeEnabled: k,

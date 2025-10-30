@@ -118,7 +118,7 @@ function w(e) {
         action: () => (0, o.ZDy)(async () => {
           let {
             default: e
-          } = await n.e("86722").then(n.bind(n, 264333));
+          } = await n.e("59500").then(n.bind(n, 241420));
           return n => (0, i.jsx)(e, D(k({}, n), {
             guild: t
           }))
@@ -152,7 +152,7 @@ function w(e) {
         action: () => (0, o.ZDy)(async () => {
           let {
             default: e
-          } = await n.e("86722").then(n.bind(n, 264333));
+          } = await n.e("59500").then(n.bind(n, 241420));
           return n => (0, i.jsx)(e, D(k({}, n), {
             guild: t
           }))

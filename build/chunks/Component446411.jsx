@@ -13,6 +13,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk635477 = require("./635477.js"),
   Chunk715697 = require("./715697.jsx"),
+  Chunk95398 = require("./95398.jsx"),
   Chunk936141 = require("./936141.js"),
   Chunk947849 = require("./947849.js"),
   Chunk768494 = require("./768494.js"),
@@ -23,7 +24,6 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk120324 = require("./120324.js"),
   Chunk566898 = require("./566898.jsx"),
   Chunk963206 = require("./963206.jsx"),
-  Chunk411405 = require("./411405.jsx"),
   Chunk785992 = require("./785992.js"),
   Chunk400266 = require("./400266.jsx"),
   Chunk592125 = require("./592125.js"),
@@ -116,7 +116,7 @@ function et(e) {
     renderImageComponent: h,
     renderVideoComponent: m,
     renderLinkComponent: g,
-    playable: b = true,
+    playable: E = true,
     autoPlay: y = false,
     autoMute: O,
     volume: v,
@@ -165,7 +165,7 @@ function et(e) {
       naturalWidth: d.width,
       naturalHeight: d.height,
       onVolumeChange: P,
-      playable: b,
+      playable: E,
       autoMute: O,
       volume: v,
       onPlay: I,
@@ -241,14 +241,14 @@ function et(e) {
       imageClassName: B.embedVideoImageComponentInner,
       placeholder: M,
       placeholderVersion: k,
-      onClick: b && null != d ? H : null,
+      onClick: E && null != d ? H : null,
       sourceMetadata: U,
       analyticsSource: "EmbedVideo"
     }), (0, i.jsx)("div", {
       className: B.embedVideoActions,
       children: (0, i.jsx)("div", {
         className: B.centerContent,
-        children: b ? (0, i.jsx)(E.Z, {
+        children: E ? (0, i.jsx)(b.Z, {
           onPlay: null != d ? H : null,
           externalURL: x,
           renderLinkComponent: g,
@@ -275,11 +275,11 @@ function en(e) {
     disableAltTextDisplay: _ = false,
     playable: p = true,
     hiddenSpoilers: h,
-    placeholder: g,
+    placeholder: m,
     placeholderVersion: E,
     sourceMetadata: b
   } = e;
-  return (0, i.jsx)(m.Z, {
+  return (0, i.jsx)(g.Z, {
     className: s()(B.embedVideo, t),
     original: n,
     poster: (0, A.q)(l),
@@ -297,7 +297,7 @@ function en(e) {
     renderImageComponent: u,
     hiddenSpoilers: h,
     disableAltTextDisplay: _,
-    placeholder: g,
+    placeholder: m,
     placeholderVersion: E,
     sourceMetadata: b
   })
@@ -383,7 +383,7 @@ class er extends(r = Chunk647438.PureComponent) {
       width: t,
       height: n
     } = e;
-    return (0, i.jsx)(y.ZT, {
+    return (0, i.jsx)(O.ZT, {
       className: B.contentPlaceholder,
       width: t,
       height: n,
@@ -534,7 +534,7 @@ class er extends(r = Chunk647438.PureComponent) {
       isGalleryImage: true,
       allImages: s.images
     }));
-    return null == Chunk607070 && null == Chunk635477 && null == Chunk715697 && null == Chunk936141 ? null : (0, Chunk951288.jsxs)("div", {
+    return null == Chunk607070 && null == Chunk635477 && null == Chunk715697 && null == Chunk95398 ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk111925.embedGalleryImagesWrapper,
       style: {
         height: Chunk481060
@@ -544,7 +544,7 @@ class er extends(r = Chunk647438.PureComponent) {
         children: [(0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(s.images[0].url, s.images[0]),
           children: Chunk607070
-        }, 0), null != Chunk936141 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
+        }, 0), null != Chunk95398 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(null == (e = s.images[2]) ? true : module.url, s.images[2]),
           children: Chunk715697
         }, 2)]
@@ -553,12 +553,12 @@ class er extends(r = Chunk647438.PureComponent) {
         children: [(0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(null == (t = s.images[1]) ? true : exports.url, s.images[1]),
           children: Chunk635477
-        }, 1), null == Chunk936141 && null != Chunk715697 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
+        }, 1), null == Chunk95398 && null != Chunk715697 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(null == (n = s.images[2]) ? true : require.url, s.images[2]),
           children: Chunk715697
-        }, 2), null != Chunk936141 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
+        }, 2), null != Chunk95398 && (0, Chunk951288.jsx)(Chunk947849.h.Provider, {
           value: (0, Chunk963206.P)(null == (r = s.images[3]) ? true : r.url, s.images[3]),
-          children: Chunk936141
+          children: Chunk95398
         }, 3)]
       })]
     })
@@ -586,19 +586,19 @@ class er extends(r = Chunk647438.PureComponent) {
       className: d,
       autoPlayGif: f
     } = this.props, {
-      maxMediaWidth: h,
+      maxMediaWidth: _,
       maxMediaHeight: m,
-      sourceMetadata: E
+      sourceMetadata: g
     } = this.state;
     if (null == Chunk647438) return null;
-    let y = (0, Chunk52824.q)(Chunk647438),
+    let b = (0, Chunk52824.q)(Chunk647438),
       {
         srcToOnClickOverride: O,
         srcToHandlePreloadImage: v
       } = null == Chunk607070 ? {
         srcToOnClickOverride: {},
         srcToHandlePreloadImage: {}
-      } : (0, Chunk120324.G)(Chunk607070.map(e => Y(V({}, (0, p.Hv)(e, E, "IMAGE")), {
+      } : (0, Chunk120324.G)(Chunk607070.map(e => Y(V({}, (0, h.Hv)(e, g, "IMAGE")), {
         original: e.url,
         srcIsAnimated: e.srcIsAnimated
       })), {}, "Embed"),
@@ -622,8 +622,8 @@ class er extends(r = Chunk647438.PureComponent) {
         limitResponsiveWidth: !Chunk120356,
         width: Chunk647438.width,
         height: Chunk647438.height,
-        maxWidth: Chunk624195,
-        maxHeight: Chunk44824,
+        maxWidth: Chunk936141,
+        maxHeight: Chunk624195,
         original: Chunk647438.url,
         shouldLink: r,
         disableAltTextDisplay: null == Chunk647438.description || "" === Chunk647438.description,
@@ -643,10 +643,10 @@ class er extends(r = Chunk647438.PureComponent) {
           return u(Y(V({}, T), {
             autoPlay: f && !r && !n,
             renderAccessory: I ? e : null,
-            handlePreloadImage: v[y],
-            onClick: O[y],
+            handlePreloadImage: v[b],
+            onClick: O[b],
             onMouseEnter: () => this.handleImageHover(),
-            sourceMetadata: E,
+            sourceMetadata: g,
             analyticsSource: "Embed"
           }))
         }
@@ -718,18 +718,18 @@ class er extends(r = Chunk647438.PureComponent) {
       thumbnail: Chunk647438,
       video: Chunk120356,
       provider: null == s ? true : s.name,
-      maxWidth: Chunk768494,
-      maxHeight: Chunk624195,
+      maxWidth: Chunk947849,
+      maxHeight: Chunk768494,
       responsive: true,
       renderImageComponent: Chunk607070,
       renderVideoComponent: Chunk481060,
       renderLinkComponent: Chunk635477,
-      onControlsShow: Chunk124347,
-      onControlsHide: Chunk283756,
+      onControlsShow: Chunk44824,
+      onControlsHide: Chunk124347,
       playable: exports && !require,
       placeholder: null == Chunk120356 ? true : Chunk120356.placeholder,
       placeholderVersion: null == Chunk120356 ? true : Chunk120356.placeholderVersion,
-      sourceMetadata: Chunk44824
+      sourceMetadata: Chunk624195
     })
   }
   renderFooter() {
@@ -1024,8 +1024,8 @@ class er extends(r = Chunk647438.PureComponent) {
     }) : (0, Chunk635477.Z)(exports) ? (0, Chunk951288.jsx)(Chunk715697.Z, {
       embed: exports,
       className: r
-    }) : this.isInline() ? null != require ? (0, Chunk951288.jsx)(Chunk411405.ZP, {
-      type: Chunk411405.ZP.Types.ATTACHMENT,
+    }) : this.isInline() ? null != require ? (0, Chunk951288.jsx)(Chunk95398.ZP, {
+      type: Chunk95398.ZP.Types.ATTACHMENT,
       reason: require,
       onReveal: this.onReveal,
       onToggleObscurity: this.onToggleObscurity,
@@ -1035,8 +1035,8 @@ class er extends(r = Chunk647438.PureComponent) {
         [Chunk111925.obscureVideoSpacing]: this.state.isVisible && this.state.videoControlsShown
       }),
       children: this.renderInlineMediaEmbed
-    }) : this.renderInlineMediaEmbed() : null != require ? (0, Chunk951288.jsx)(Chunk411405.ZP, {
-      type: Chunk411405.ZP.Types.EMBED,
+    }) : this.renderInlineMediaEmbed() : null != require ? (0, Chunk951288.jsx)(Chunk95398.ZP, {
+      type: Chunk95398.ZP.Types.EMBED,
       onReveal: this.onReveal,
       onToggleObscurity: this.onToggleObscurity,
       reason: require,
@@ -1075,7 +1075,7 @@ class er extends(r = Chunk647438.PureComponent) {
       return (0, i.jsx)("div", {
         "aria-hidden": e,
         className: s()(B.inlineMediaEmbed, r, {
-          [B.spoilerAttachment]: n === f.wk.SPOILER,
+          [B.spoilerAttachment]: n === _.wk.SPOILER,
           [B.hiddenExplicitAttachment]: t.shouldObscure,
           [B.isHidden]: e,
           [B.justifyAuto]: t.usesJustifiedAutoStyle()
@@ -1098,14 +1098,14 @@ class er extends(r = Chunk647438.PureComponent) {
           title: c,
           description: u,
           fields: d,
-          thumbnail: _,
+          thumbnail: f,
           media: p,
           footer: h
         } = t.renderAll();
       return (0, i.jsx)("article", {
         className: s()(n, B.embedFull, Z.markup, {
           [B.isHidden]: e,
-          [B.spoilerEmbed]: a === f.wk.SPOILER,
+          [B.spoilerEmbed]: a === _.wk.SPOILER,
           [B.hiddenExplicitEmbed]: t.shouldObscure,
           [B.justifyAuto]: t.usesJustifiedAutoStyle()
         }),
@@ -1119,9 +1119,9 @@ class er extends(r = Chunk647438.PureComponent) {
           children: (0, i.jsxs)("div", {
             className: s()({
               [B.grid]: true,
-              [B.hasThumbnail]: null != _
+              [B.hasThumbnail]: null != f
             }),
-            children: [null != r ? t.renderSuppressButton(r) : null, o, l, c, u, d, p, _, h]
+            children: [null != r ? t.renderSuppressButton(r) : null, o, l, c, u, d, p, f, h]
           })
         })
       })
