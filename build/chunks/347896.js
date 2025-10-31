@@ -15,5 +15,5 @@ function s() {
   } = Chunk107756.ZP.useConfig({
     location: "useGiftingPromotionConfig"
   });
-  return Chunk647438.useMemo(() => Chunk873546.tq || Chunk873546.Em ? null : module ? Chunk187232.py : null, [module])
+  return Chunk647438.useMemo(() => Chunk873546.tq || Chunk873546.Em ? null : module ? Chunk187232.p : null, [module])
 }

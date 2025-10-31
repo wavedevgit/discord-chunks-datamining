@@ -1,4 +1,4 @@
-/** Chunk was on 48502 **/
+/** Chunk was on 63709 **/
 /** chunk id: 336079, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => b,
@@ -30,24 +30,24 @@ let p = (0, Chunk647438.createContext)({
       onCheckoutSuccess: f,
       children: b
     } = e, y = (0, a.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
-      product: O
-    } = (0, o.T)(t), m = (0, l.useMemo)(() => {
-      if (null == O) return null;
+      product: m
+    } = (0, o.T)(t), O = (0, l.useMemo)(() => {
+      if (null == m) return null;
       let e = (0, s.T4)({
-          product: O,
+          product: m,
           isPremiumUser: y
         }),
         t = null !== e ? e.amount : null;
       return {
         orbPrice: e,
         orbPriceAmount: t,
-        product: O
+        product: m
       }
-    }, [O, y]), {
+    }, [m, y]), {
       redeemVirtualCurrency: g,
-      isSubmitting: h,
+      isSubmitting: j,
       error: v
-    } = (0, d.f)(), j = (0, l.useCallback)(e => {
+    } = (0, d.f)(), x = (0, l.useCallback)(e => {
       g(t, n, n => {
         f({
           entitlements: n,
@@ -60,9 +60,9 @@ let p = (0, Chunk647438.createContext)({
         skuId: t,
         loadId: n,
         analyticsLocations: null != i ? i : [],
-        orbProductContext: m,
-        onRedeemVirtualCurrency: j,
-        isRedeeming: h,
+        orbProductContext: O,
+        onRedeemVirtualCurrency: x,
+        isRedeeming: j,
         orbRedemptionError: v
       },
       children: b

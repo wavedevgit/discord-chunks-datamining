@@ -452,18 +452,17 @@ let ts = [{
   render: ti,
   isSessionRequired: true
 }, {
-  path: [Chunk981631.Z5c.GAME_SHOP(Chunk893607.Hw.guildId(), ":shopPageIndex?", ":shopSkuId?", ":shopSlug?")],
+  path: [Chunk981631.Z5c.GAME_SHOP(Chunk893607.Hw.guildId(), ":shopSkuId?", ":shopSlug?")],
   render: function(e) {
     let {
       match: t
     } = e, {
       guildId: n,
-      shopPageIndex: i,
-      shopSkuId: l,
-      shopSlug: s
-    } = t.params, o = parseInt(i, 10);
-    return o = isNaN(o) ? 0 : o, (0, r.jsx)(a.l_, {
-      to: e3.Z5c.CHANNELS_GAME_SHOP(n, o, l, s)
+      shopSkuId: i,
+      shopSlug: l
+    } = t.params;
+    return (0, r.jsx)(a.l_, {
+      to: e3.Z5c.CHANNELS_GAME_SHOP(n, 0, i, l)
     })
   },
   isSessionRequired: true

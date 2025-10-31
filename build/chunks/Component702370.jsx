@@ -1,6 +1,5 @@
-/** Chunk was on 91275 **/
+/** Chunk was on 8282 **/
 /** chunk id: 702370, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   default: () => eV
 }), require("./388685.js"), require("./953529.js");
@@ -120,7 +119,7 @@ function ek(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let eB = e => {
+let eL = e => {
     let {
       item: t,
       product: n,
@@ -155,7 +154,7 @@ let eB = e => {
       })
     }) : null
   },
-  eL = e => {
+  eB = e => {
     let {
       product: t,
       user: n,
@@ -173,7 +172,7 @@ let eB = e => {
             id: l,
             children: (0, r.jsxs)("div", {
               className: eN.bundlePreviewSlide,
-              children: [(0, r.jsx)(eB, {
+              children: [(0, r.jsx)(eL, {
                 item: e,
                 product: t,
                 user: n
@@ -195,14 +194,14 @@ let eB = e => {
       user: n,
       activeSlide: i
     } = e;
-    return (0, K.x6)(t) ? (0, r.jsx)(eL, {
+    return (0, K.x6)(t) ? (0, r.jsx)(eB, {
       product: t,
       user: n,
       activeSlide: i
     }) : (0, ey.o0)(t.skuId) ? (0, r.jsx)(ep.b, {
       animationState: "on_hover",
       product: t
-    }) : t.items.length > 0 ? (0, r.jsx)(eB, {
+    }) : t.items.length > 0 ? (0, r.jsx)(eL, {
       item: t.items[0],
       product: t,
       user: n
@@ -229,14 +228,14 @@ let eB = e => {
       onClose: u,
       returnRef: b,
       previewingVariantIndexProps: x,
-      selectedVariantIndex: P,
+      selectedVariantIndex: _,
       tab: j,
       activeBundleSlide: O
     } = e, {
       analyticsLocations: C
-    } = (0, _.ZP)(), I = G.ZP.canUseCollectibles(n), {
+    } = (0, P.ZP)(), I = G.ZP.canUseCollectibles(n), {
       previewingVariantIndex: w
-    } = x, y = (0, eb.N)(t, w), T = (0, ex.W)(t, P);
+    } = x, y = (0, eb.N)(t, w), T = (0, ex.W)(t, _);
     s()(null != T, "Selected product should not be null");
     let E = (0, X.L)(t),
       {
@@ -245,7 +244,7 @@ let eB = e => {
       } = (0, X.L)(T),
       {
         isDisabled: k,
-        disabledReason: B
+        disabledReason: L
       } = (0, J.G)(T.skuId),
       D = (0, K.ne)({
         product: T,
@@ -273,11 +272,11 @@ let eB = e => {
       ep = (0, ej.J)(T),
       {
         enabled: eh
-      } = (0, L.WX)({
+      } = (0, B.WX)({
         location: "collectibles_shop_product_details_modal"
       }),
-      eg = (0, e_.Iw)(t),
-      eP = null != eg,
+      eg = (0, eP.Iw)(t),
+      e_ = null != eg,
       {
         checkoutEligiblePrices: eO,
         isOrbExclusive: eR,
@@ -286,9 +285,9 @@ let eB = e => {
         product: T,
         isPremiumUser: I,
         tab: j,
-        hasDiscountOffer: eP
+        hasDiscountOffer: e_
       }),
-      eB = i.useCallback(() => (0, S.Z)({
+      eL = i.useCallback(() => (0, S.Z)({
         skuId: T.skuId,
         analyticsLocations: C,
         variantsReturnStyle: d.v.VARIANTS_GROUP,
@@ -297,7 +296,7 @@ let eB = e => {
     i.useEffect(() => {
       if (null != en) return (0, h.cV)(en), () => (0, h.cV)(true)
     }, [en]);
-    let eL = (0, Y.G)(T);
+    let eB = (0, Y.G)(T);
     return (0, r.jsxs)("div", {
       className: eN.collectibleInfoContainer,
       children: [(0, r.jsx)("div", {
@@ -322,7 +321,7 @@ let eB = e => {
             children: em
           }), (0, r.jsx)(v.Text, {
             variant: "text-sm/normal",
-            children: eL
+            children: eB
           }), (0, r.jsx)(eD, {
             skuId: T.skuId
           }), E.isPurchased || E.isPartiallyOwnedBundle ? (0, r.jsx)(et.U, {
@@ -346,25 +345,25 @@ let eB = e => {
               product: T,
               discount: er,
               isPremiumUser: I,
-              hideStrikethroughPrice: !I || eP,
+              hideStrikethroughPrice: !I || e_,
               nitroIconType: "tooltip",
               nitroIconSize: "xs",
               discountOfferAmount: eg
-            }), I || eP ? null : (0, r.jsx)(ec.Z, {
+            }), I || e_ ? null : (0, r.jsx)(ec.Z, {
               product: T
             })]
           })]
         }), (0, r.jsx)(v.Rny, {
           children: (0, r.jsx)(ev.P, {
-            selectedVariantIndex: P,
+            selectedVariantIndex: _,
             variantGroupProduct: t,
             previewingVariantIndexProps: x,
             className: eN.variantsSwitch
           })
-        }), null !== B && (0, r.jsx)(v.Text, {
+        }), null !== L && (0, r.jsx)(v.Text, {
           variant: "text-xs/normal",
           className: eN.disabledReason,
-          children: B
+          children: L
         }), (0, r.jsx)(v.Kqy, {
           direction: "vertical",
           gap: 8,
@@ -459,7 +458,7 @@ let eB = e => {
                     })
                   })
                 }
-                return n = (0, K.x6)(T) ? eE.intl.string(eE.t.V1AWw0) : T.type === c.Z.PROFILE_EFFECT ? eE.intl.string(eE.t.kAeDcK) : T.type === c.Z.NAMEPLATE ? eE.intl.string(eE.t.H3vhqU) : eE.intl.string(eE.t.AQ0Veg), eP ? n = eE.intl.formatToPlainString(eE.t["5U5RB5"], {
+                return n = (0, K.x6)(T) ? eE.intl.string(eE.t.V1AWw0) : T.type === c.Z.PROFILE_EFFECT ? eE.intl.string(eE.t.kAeDcK) : T.type === c.Z.NAMEPLATE ? eE.intl.string(eE.t.H3vhqU) : eE.intl.string(eE.t.AQ0Veg), e_ ? n = eE.intl.formatToPlainString(eE.t["5U5RB5"], {
                   discountOfferAmount: eg
                 }) : eh && (n = eE.intl.formatToPlainString(eE.t["cNSL/j"], {
                   price: (0, H.T4)(e.amount, e.currency)
@@ -468,7 +467,7 @@ let eB = e => {
                   fullWidth: true,
                   children: [(0, r.jsx)(v.Button, {
                     variant: i ? "primary" : "secondary",
-                    onClick: eB,
+                    onClick: eL,
                     text: n,
                     fullWidth: true
                   }), ep && (0, r.jsx)(eo.Z, {
@@ -495,7 +494,7 @@ let eB = e => {
     } = e;
     return (0, r.jsx)("div", {
       className: eN.nameplateRightPanePreviewAvatarContainer,
-      children: (0, r.jsx)(P.Z, {
+      children: (0, r.jsx)(_.Z, {
         avatar: (0, r.jsx)(v.qEK, {
           src: t.avatarSrc,
           size: v.EFr.SIZE_32,
@@ -585,8 +584,8 @@ let eB = e => {
     }), v = t.type === c.Z.AVATAR_DECORATION, [h] = t.items, {
       firstAvatarDecoration: g,
       firstProfileEffect: x,
-      firstNameplate: _
-    } = (0, Q.Rj)(t), P = null != x, j = () => (0, r.jsxs)(r.Fragment, {
+      firstNameplate: P
+    } = (0, Q.Rj)(t), _ = null != x, j = () => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(E.Z, ek(eR({}, p), {
         pendingAvatar: f,
         user: n,
@@ -594,7 +593,7 @@ let eB = e => {
         pendingAvatarDecoration: g,
         pendingProfileEffect: x,
         disabledInputs: true,
-        hideMessageInput: !P,
+        hideMessageInput: !_,
         hideCustomStatus: true,
         hideBioSection: v,
         hideExampleButton: true,
@@ -629,9 +628,9 @@ let eB = e => {
         })
       }
     }
-    return null != _ ? (0, r.jsx)("div", {
+    return null != P ? (0, r.jsx)("div", {
       className: eN.nameplatePreviewContainerInner,
-      children: O(_)
+      children: O(P)
     }) : (0, r.jsx)("div", {
       className: (null == h ? true : h.type) === c.Z.AVATAR_DECORATION ? eN.previewsContainerInner : eN.profileEffectPreviewsContainerInner,
       children: j()
@@ -694,20 +693,20 @@ let eB = e => {
       analyticsLocations: f,
       shouldCheckoutWithOrbs: h,
       tab: g
-    } = e, b = (0, m.e7)([U.default], () => U.default.getCurrentUser()), P = (0, eO.f)(a), {
+    } = e, b = (0, m.e7)([U.default], () => U.default.getCurrentUser()), _ = (0, eO.f)(a), {
       previewingVariantIndex: j
-    } = P, O = (0, W.o)(a), C = (0, eb.N)(a, j), I = (0, ex.W)(a, O);
+    } = _, O = (0, W.o)(a), C = (0, eb.N)(a, j), I = (0, ex.W)(a, O);
     s()(null != I, "Selected product should not be null");
     let {
       analyticsLocations: w
-    } = (0, _.ZP)([...f, x.Z.COLLECTIBLES_SHOP_DETAILS_MODAL]);
+    } = (0, P.ZP)([...f, x.Z.COLLECTIBLES_SHOP_DETAILS_MODAL]);
     (0, ei.u9)(I.skuId);
-    let y = (0, eP.kc)(o),
+    let y = (0, e_.kc)(o),
       T = (0, k.Y)({
         location: "CollectiblesShopProductDetailsModal"
       });
     i.useEffect(() => {
-      null != b && (0, B.Z)(b.id, b.getAvatarURL(true, 80))
+      null != b && (0, L.Z)(b.id, b.getAvatarURL(true, 80))
     }, [b]);
     let S = i.useMemo(() => (0, K.jm)(a.type, a.skuId), [a.type, a.skuId]);
     i.useEffect(() => {
@@ -721,17 +720,17 @@ let eB = e => {
     }, [p, w, I.skuId, I.items, S]);
     let A = (0, Z.r9)(),
       E = t === v.Dvm.EXITING,
-      N = (0, e_.t0)(a),
+      N = (0, eP.t0)(a),
       R = null == N ? true : N.amount,
-      L = i.useMemo(() => (0, K.x6)(I) ? I.items.length : 0, [I]),
+      B = i.useMemo(() => (0, K.x6)(I) ? I.items.length : 0, [I]),
       {
         activeSlide: D,
         isTransitioning: F
       } = (0, ee.b)({
-        slideCount: L,
+        slideCount: B,
         intervalMs: 5e3
       });
-    return null == b ? null : (0, r.jsx)(_.Gt, {
+    return null == b ? null : (0, r.jsx)(P.Gt, {
       value: w,
       children: (0, r.jsxs)(v.Y0X, {
         "data-migration-pending": true,
@@ -749,7 +748,7 @@ let eB = e => {
             product: a,
             category: o,
             onClose: n,
-            previewingVariantIndexProps: P,
+            previewingVariantIndexProps: _,
             selectedVariantIndex: O,
             shouldCheckoutWithOrbs: h,
             tab: g,

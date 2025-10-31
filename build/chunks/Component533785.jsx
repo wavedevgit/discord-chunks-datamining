@@ -1,26 +1,26 @@
 /** Chunk was on 77033 **/
-/** chunk id: 533785, original params: e,t,n (module,exports,require) **/
+/** chunk id: 533785, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
-  t: () => i
+  t: () => r
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk661009 = require("./661009.js");
 
-function i(e) {
+function r(e) {
   let {
-    leaderboard: t
+    leaderboard: n
   } = e;
-  return null == t ? null : (0, a.jsxs)("div", {
-    className: r.textContainer,
-    children: [(0, a.jsx)(l.Text, {
+  return null == n ? null : (0, t.jsxs)("div", {
+    className: a.textContainer,
+    children: [(0, t.jsx)(i.Text, {
       variant: "display-lg",
       color: "text-primary",
-      children: t.title
-    }), (0, a.jsx)(l.Heading, {
+      children: n.title
+    }), (0, t.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
       color: "text-secondary",
-      children: t.description
+      children: n.description
     })]
   })
 }

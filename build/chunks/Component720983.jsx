@@ -1,11 +1,11 @@
 /** Chunk was on 77033 **/
-/** chunk id: 720983, original params: e,t,n (module,exports,require) **/
+/** chunk id: 720983, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk703656 = require("./703656.js"),
   Chunk73346 = require("./73346.js"),
@@ -14,39 +14,39 @@ var Chunk951288 = require("./951288.js"),
 
 function u(e) {
   let {
-    guildId: t,
-    storefront: n,
-    selectedPageIndex: l
+    guildId: n,
+    storefront: l,
+    selectedPageIndex: i
   } = e;
-  if (null == n) return null;
-  let u = null != n.logoAssetId ? (0, d._W)(n.applicationId, n.logoAssetId, 75) : null;
-  return (0, a.jsxs)("div", {
-    className: s.headerContainer,
-    children: [(0, a.jsxs)("div", {
-      className: s.titleContainer,
-      children: [null != u && (0, a.jsx)("img", {
-        className: s.logo,
+  if (null == l) return null;
+  let u = null != l.logoAssetId ? (0, o._W)(l.applicationId, l.logoAssetId, 75) : null;
+  return (0, t.jsxs)("div", {
+    className: c.headerContainer,
+    children: [(0, t.jsxs)("div", {
+      className: c.titleContainer,
+      children: [null != u && (0, t.jsx)("img", {
+        className: c.logo,
         src: u,
-        alt: n.title
-      }), (0, a.jsx)(i.Text, {
+        alt: l.title
+      }), (0, t.jsx)(r.Text, {
         variant: "text-md/medium",
         color: "text-default",
         lineClamp: 1,
-        children: n.title
+        children: l.title
       })]
-    }), n.pages.map((e, n) => (0, a.jsx)(i.P3F, {
+    }), l.pages.map((e, l) => (0, t.jsx)(r.P3F, {
       onClick: () => {
-        (0, o.uL)(c.Z5c.CHANNELS_GAME_SHOP(t, n))
+        (0, d.uL)(s.Z5c.CHANNELS_GAME_SHOP(n, l))
       },
-      className: r()(s.pageTitleContainer, {
-        [s.selectedPageIndicator]: l === n
+      className: a()(c.pageTitleContainer, {
+        [c.selectedPageIndicator]: i === l
       }),
-      children: (0, a.jsx)(i.Heading, {
+      children: (0, t.jsx)(r.Heading, {
         variant: "heading-md/semibold",
         color: "text-default",
         lineClamp: 1,
         children: e.title
       })
-    }, "".concat(e.title, "-").concat(n)))]
+    }, "".concat(e.title, "-").concat(l)))]
   })
 }

@@ -42,19 +42,19 @@ function I(e) {
     }(e, ["profileOwner", "showIcons"]);
   let {
     item: v,
-    isOwner: y
-  } = P, w = v.sku, S = w.applicationId, x = (0, o.q)(S), k = i.useRef(null), [E] = (0, l.Wu)([f.Z], () => [f.Z.hasSentGift(v.skuId, I.id)], [v.skuId, I.id]), N = v.skuName, C = y ? g.intl.string(g.t.FdGl5A) : g.intl.string(g.t.ilhtIa), T = y ? true : a.OgN, L = i.useCallback(() => {
-    if (y && (null == x ? true : x.guildId) != null)(0, u.closeUserProfileModal)(), (0, c.uL)(b.Z5c.CHANNELS_GAME_SHOP(x.guildId, 0, v.skuId, w.slug));
+    isOwner: w
+  } = P, y = v.sku, S = y.applicationId, x = (0, o.q)(S), E = i.useRef(null), [k] = (0, l.Wu)([f.Z], () => [f.Z.hasSentGift(v.skuId, I.id)], [v.skuId, I.id]), N = v.skuName, C = w ? h.intl.string(h.t.FdGl5A) : h.intl.string(h.t.ilhtIa), T = w ? true : a.OgN, L = i.useCallback(() => {
+    if (w && (null == x ? true : x.guildId) != null)(0, u.closeUserProfileModal)(), (0, c.uL)(g.Z5c.CHANNELS_GAME_SHOP(x.guildId, 0, v.skuId, y.slug));
     else {
-      if (E) return;
-      (0, p.P)(w, {
+      if (k) return;
+      (0, p.P)(y, {
         isGift: true
       })
     }
-  }, [y, null == x ? true : x.guildId, v.skuId, w, E]), Z = i.useCallback(() => j ? (0, n.jsx)("div", {
-    className: h.itemIcon,
+  }, [w, null == x ? true : x.guildId, v.skuId, y, k]), Z = i.useCallback(() => j ? (0, n.jsx)("div", {
+    className: b.itemIcon,
     children: (0, n.jsx)(s.u, {
-      text: g.intl.formatToPlainString(g.t.p3RmJF, {
+      text: h.intl.formatToPlainString(h.t.p3RmJF, {
         username: m.ZP.getName(I)
       }),
       position: "top",
@@ -63,16 +63,16 @@ function I(e) {
         width: 20,
         height: 20,
         color: "currentColor",
-        colorClass: h.itemIconHeart
+        colorClass: b.itemIconHeart
       })
     })
   }) : null, [j, I]), _ = i.useCallback(() => (0, n.jsx)(O.A, {
     shape: "custom",
-    containerClassName: h.card,
-    backgroundImageClassName: h.cardBackgroundImage,
-    foregroundImageClassName: h.cardImage,
-    sku: w
-  }), [w]);
+    containerClassName: b.card,
+    backgroundImageClassName: b.cardBackgroundImage,
+    foregroundImageClassName: b.cardImage,
+    sku: y
+  }), [y]);
   return (0, n.jsx)(d.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -91,12 +91,12 @@ function I(e) {
     }
     return e
   }({}, P), r = r = {
-    cardRef: k,
+    cardRef: E,
     accessibleLabel: N,
     onCardClick: L,
     buttonCTALabel: C,
     buttonIcon: T,
-    isOwned: E,
+    isOwned: k,
     renderItemPreview: _,
     renderSourceIcon: Z
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

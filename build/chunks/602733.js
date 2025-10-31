@@ -43,8 +43,8 @@ function I(e, t) {
       if (null != e && null != t) return null == (n = _.Z.getWishlistSettings(t, e)) ? true : n.updated_at
     });
   return (0, r.useEffect)(() => {
-    null != e && !a && n && null == s && (null == i || null != c && l !== c) && h.Z.fetchWishlist(e, c)
-  }, [e, i, a, n, c, l, s]), {
+    !(null == e || m.Z.isFetching(e)) && n && null == s && (null == i || null != c && l !== c) && h.Z.fetchWishlist(e, c)
+  }, [e, i, n, c, l, s]), {
     wishlist: i,
     isFetching: a,
     error: s

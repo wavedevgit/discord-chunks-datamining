@@ -187,6 +187,7 @@ function eU(e) {
     } else if (t === O.g.EMBEDDED_ACTIVITY_INVITE)(0, g.z$)(c, eS.U.ACTIVITY_INVITE, l);
     else if (t === O.g.GUILD_PRODUCT);
     else if (t === O.g.SERVER_SHOP);
+    else if (t === O.g.SOCIAL_LAYER_STOREFRONT);
     else if (t === O.g.QUESTS_EMBED) {
       let e = (0, ee.jY)(i.j.QUESTS_EMBED);
       (0, $.dA)({

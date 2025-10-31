@@ -1,4 +1,4 @@
-/** Chunk was on 48502 **/
+/** Chunk was on 63709 **/
 /** chunk id: 635552, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => d
@@ -18,21 +18,21 @@ let d = e => {
     onError: p
   } = e, [f, b] = r.useState(false), {
     firstAvatarDecoration: y,
-    firstProfileEffect: O,
-    firstNameplate: m
+    firstProfileEffect: m,
+    firstNameplate: O
   } = (0, c.Rj)(t), g = (0, s.x6)(t) ? u.intl.string(u.t.tf1ZZ4) : t.type === l.Z.AVATAR_DECORATION ? u.intl.string(u.t.zOA4ax) : t.type === l.Z.NAMEPLATE ? u.intl.string(u.t.gOzMvx) : u.intl.string(u.t.SWm2ai);
   return {
     handleUseNow: r.useCallback(async () => {
       b(true);
       let e = {};
       try {
-        if (null != y && (e.avatarDecoration = y), null != O) {
+        if (null != y && (e.avatarDecoration = y), null != m) {
           let e = (0, a.g9)({
-            pendingProfileEffect: O
+            pendingProfileEffect: m
           });
           await (0, o.Z)(e)
         }
-        null != m && (e.nameplate = m), Object.keys(e).length > 0 && await (0, i.Mn)(e);
+        null != O && (e.nameplate = O), Object.keys(e).length > 0 && await (0, i.Mn)(e);
         {
           let {
             ToastPosition: e,
@@ -52,7 +52,7 @@ let d = e => {
       } finally {
         b(false)
       }
-    }, [y, O, m, d, g, p]),
+    }, [y, m, O, d, g, p]),
     isApplying: f
   }
 }

@@ -1,5 +1,5 @@
-/** Chunk was on 91275 **/
-/** chunk id: 890088, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 890088, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
   wishlistButton: "wishlistButton__979b1",

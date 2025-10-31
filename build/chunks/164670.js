@@ -8,6 +8,7 @@ require.d(exports, {
   Uc: () => u,
   a7: () => p,
   wK: () => c,
+  wQ: () => h,
   x6: () => d
 }), require("./953529.js");
 var Chunk392711 = require("./392711.js"),
@@ -65,7 +66,7 @@ function d(e) {
 
 function f(e, t) {
   var n, r, i;
-  if ((null == e || null == (r = e.tenantMetadata) || null == (n = r.socialLayer) ? true : n.carouselItems) == null || 0 === e.tenantMetadata.socialLayer.carouselItems.length) return {
+  if (null == t || (null == e || null == (r = e.tenantMetadata) || null == (n = r.socialLayer) ? true : n.carouselItems) == null || 0 === e.tenantMetadata.socialLayer.carouselItems.length) return {
     primaryIconAsset: true,
     primaryIconLabel: true
   };
@@ -89,4 +90,8 @@ function _(e) {
 function p(e) {
   var t, n;
   if ((null == e || null == (n = e.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardBackgroundImageAssetId) != null && (null == e ? true : e.applicationId) != null) return o.Z.toURLSafe((0, a._W)(e.applicationId, e.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png"))
+}
+
+function h(e, t) {
+  return "".concat(location.protocol).concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT).concat(s.Z5c.GAME_SHOP(e, t.id, t.slug))
 }

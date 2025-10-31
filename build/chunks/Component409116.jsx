@@ -1,4 +1,4 @@
-/** Chunk was on 48502 **/
+/** Chunk was on 63709 **/
 /** chunk id: 409116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => f
@@ -48,8 +48,8 @@ let f = e => {
       className: f,
       discountOfferAmount: b,
       discount: y = c.f_,
-      variant: O = "heading-md/semibold"
-    } = e, m = null != b, g = (0, s.qr)(t, n), h = y !== c.f_ && y.discountPercentage >= 5 && !m ? (0, r.jsxs)(r.Fragment, {
+      variant: m = "heading-md/semibold"
+    } = e, O = null != b, g = (0, s.qr)(t, n), j = y !== c.f_ && y.discountPercentage >= 5 && !O ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.nn4, {
         children: d.intl.format(d.t.niC6DK, {
           price: g,
@@ -59,7 +59,7 @@ let f = e => {
         "aria-hidden": true,
         children: g
       }), (0, r.jsxs)(o.Text, {
-        variant: O,
+        variant: m,
         color: "text-feedback-positive",
         className: p.discount,
         "aria-hidden": true,
@@ -73,15 +73,15 @@ let f = e => {
       }), (0, r.jsx)("span", {
         "aria-hidden": true,
         className: i()({
-          [p.priceStrikethrough]: m
+          [p.priceStrikethrough]: O
         }, f),
         children: g
       })]
     });
     return (0, r.jsxs)(o.Text, {
-      variant: O,
+      variant: m,
       className: i()({
-        [p.discountBackgroundColor]: m
+        [p.discountBackgroundColor]: O
       }, p.container, f),
       children: ["tooltip" === l ? (0, r.jsx)(a.u, {
         text: d.intl.string(d.t.MPFyJ5),
@@ -95,7 +95,7 @@ let f = e => {
         size: u,
         color: "currentColor",
         className: p.icon
-      }) : null, h, m && (0, r.jsxs)(o.Heading, {
+      }) : null, j, O && (0, r.jsxs)(o.Heading, {
         variant: "heading-md/semibold",
         className: p.discountPill,
         children: [(0, r.jsx)(o.nn4, {

@@ -984,6 +984,7 @@ let em = "@me",
     STORE_LISTING: e => "/store/listings/".concat(e),
     STORE_LISTINGS_SKU: e => "/store/skus/".concat(e, "/listings"),
     SOCIAL_LAYER_APPLICATION_STOREFRONT: e => "/partner-sdk/guilds/".concat(e, "/application-storefront"),
+    SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU: (e, t) => "/partner-sdk/guilds/".concat(e, "/application-storefront/skus/").concat(t),
     ORDER_CREATE: "/billing/orders",
     ORDER_UPDATE: e => "/billing/orders/".concat(e),
     ORDER_SIGN: e => "/billing/orders/".concat(e, "/sign"),
@@ -1459,9 +1460,9 @@ let em = "@me",
       let i = "/channels/".concat(e, "/game-shop");
       return i += "/".concat(null != t ? t : 0), null != n && (i += "/".concat(n), null != r && (i += "/".concat(r))), i
     },
-    GAME_SHOP: (e, t, n, r) => {
-      let i = "/game-shop/".concat(e);
-      return i += "/".concat(null != t ? t : 0), null != n && (i += "/".concat(n), null != r && (i += "/".concat(r))), i
+    GAME_SHOP: (e, t, n) => {
+      let r = "/game-shop/".concat(e);
+      return null != t && (r += "/".concat(t), null != n && (r += "/".concat(n))), r
     },
     GUILD_PRODUCT: (e, t) => "/channels/".concat(e, "/shop/").concat(t),
     REPORT: "/report",
