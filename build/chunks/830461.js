@@ -1,12 +1,12 @@
 /** Chunk was on 47863 **/
 /** chunk id: 830461, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  _: () => s
+  _: () => o
 }), require("./388685.js");
 var Chunk224706 = require("./224706.js"),
   Chunk594190 = require("./594190.js"),
   Chunk823379 = require("./823379.js");
-async function s() {
+async function o() {
   let e = Chunk594190.ZP.getRunningGames();
   return (await Promise.all(module.map(async e => {
     let t;

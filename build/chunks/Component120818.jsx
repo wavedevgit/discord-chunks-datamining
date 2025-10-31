@@ -29,13 +29,13 @@ let _ = Chunk647438.memo(function(e) {
   var t, n;
   let {
     guild: _
-  } = e, O = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(_.id), [_.id]), y = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(_.id)), v = i.useMemo(() => {
-    if (null == O || null == y) return 0;
+  } = e, y = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(_.id), [_.id]), O = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(_.id)), v = i.useMemo(() => {
+    if (null == y || null == O) return 0;
     let e = 0;
-    return O.forEach(t => {
-      null != y[t.channelId] && e++
+    return y.forEach(t => {
+      null != O[t.channelId] && e++
     }), e
-  }, [y, O]), j = null == O ? 0 : O.length, C = (0, l.JA)("progress-bar-".concat(_.id));
+  }, [O, y]), j = null == y ? 0 : y.length, C = (0, l.JA)("progress-bar-".concat(_.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(a.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {

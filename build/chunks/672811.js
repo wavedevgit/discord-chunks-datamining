@@ -1,13 +1,13 @@
 /** Chunk was on 47863 **/
 /** chunk id: 672811, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L: () => s
+  L: () => o
 }), require("./415506.js");
 var Chunk37113 = require("./37113.js"),
   Chunk529822 = require("./529822.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
+function o(e) {
   switch (e) {
     case r.ApplicationStreamPresets.PRESET_CUSTOM:
       return l.intl.string(l.t["+eOtrD"]);

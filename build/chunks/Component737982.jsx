@@ -1,7 +1,7 @@
 /** Chunk was on 56710 **/
 /** chunk id: 737982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,70 +20,36 @@ var Chunk951288 = require("./951288.js"),
   Chunk269794 = require("./269794.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk990963 = require("./990963.js");
-let y = Chunk647438.memo(function(e) {
+let O = Chunk647438.memo(function(e) {
   let {
     guildId: t,
     selected: n
-  } = e, y = (0, a.f9)(), v = (0, l.e7)([p.Z], () => p.Z.hasLayers()), [j, C] = (0, c.ZT)([o.z.GAME_SERVER_HOSTING_NEW_BADGE], t), x = j === o.z.GAME_SERVER_HOSTING_NEW_BADGE, [E, S] = (0, c.ZT)(y || v || !x ? [] : [o.z.GAME_SERVER_HOSTING_NEW_COACHMARK], t), I = i.useCallback(e => {
+  } = e, O = (0, a.f9)(), v = (0, l.e7)([p.Z], () => p.Z.hasLayers()), [j, C] = (0, c.ZT)([o.z.GAME_SERVER_HOSTING_NEW_BADGE], t), x = j === o.z.GAME_SERVER_HOSTING_NEW_BADGE, [E, S] = (0, c.ZT)(O || v || !x ? [] : [o.z.GAME_SERVER_HOSTING_NEW_COACHMARK], t), I = i.useCallback(e => {
     C(e), S(e)
   }, [C, S]), P = i.useCallback(() => {
     I(m.L.USER_DISMISS), (0, d.uL)(f.Z5c.CHANNEL(t, g.oC.GAME_SERVERS))
-  }, [t, I]), N = i.useRef(null), Z = E === o.z.GAME_SERVER_HOSTING_NEW_COACHMARK;
-  return (0, r.jsx)(s.yRy, {
-    targetElementRef: N,
-    shouldShow: Z,
-    nudgeAlignIntoViewport: true,
-    animationPosition: "bottom",
-    position: "right",
-    renderPopout: () => (0, r.jsx)(h.En, {
-      guildId: t,
-      markAsDismissed: I
-    }),
-    children: e => {
-      var i, l;
-      return (0, r.jsx)(u.m, (i = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({}, e), l = l = {
-        ref: N,
-        id: "game-server-".concat(t),
-        renderIcon: e => (0, r.jsx)(s.iWm, {
-          size: "md",
-          className: e,
-          color: "currentColor"
-        }),
-        text: _.intl.string(b.default.vCzwM7),
-        selected: n,
-        onClick: P,
-        trailing: x ? (0, r.jsx)(s.IGR, {
-          disableColor: true,
-          text: _.intl.string(_.t.y2b7CA),
-          className: O.badge
-        }) : null
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-      }), i))
-    }
+  }, [t, I]), N = i.useRef(null), Z = E === o.z.GAME_SERVER_HOSTING_NEW_COACHMARK, w = i.useCallback(() => (0, r.jsx)(h.En, {
+    channelRowRef: N,
+    guildId: t,
+    markAsDismissed: I
+  }), [t, I]);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(u.m, {
+      ref: N,
+      id: "game-server-".concat(t),
+      renderIcon: e => (0, r.jsx)(s.iWm, {
+        size: "md",
+        className: e,
+        color: "currentColor"
+      }),
+      text: _.intl.string(b.default.vCzwM7),
+      selected: n,
+      onClick: P,
+      trailing: x ? (0, r.jsx)(s.IGR, {
+        disableColor: true,
+        text: _.intl.string(_.t.y2b7CA),
+        className: y.badge
+      }) : null
+    }), Z && w()]
   })
 })

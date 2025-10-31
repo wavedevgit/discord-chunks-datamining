@@ -1,13 +1,8 @@
 /** Chunk was on 56710 **/
 /** chunk id: 428197, original params: e,t,n (module,exports,require) **/
-require.r(module.exports = {
-  container: "container_a1bfef",
-  caretLeftTop: "caretLeftTop_a1bfef",
-  caretTopCenter: "caretTopCenter_a1bfef",
+module.exports = {
   imageContainer: "imageContainer_a1bfef",
   image: "image_a1bfef",
-  newPerksImage: "newPerksImage_a1bfef",
-  close: "close_a1bfef",
-  header: "header_a1bfef",
-  description: "description_a1bfef"
-})
+  gameServerHostingImage: "gameServerHostingImage_a1bfef",
+  levelImage: "levelImage_a1bfef"
+}

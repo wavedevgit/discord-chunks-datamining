@@ -1,7 +1,7 @@
 /** Chunk was on 56710 **/
 /** chunk id: 711165, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  _: () => T
+  _: () => w
 }), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,13 +37,13 @@ let Z = {
   }
 };
 
-function T() {
+function w() {
   return Chunk647438.useEffect(() => {
     (0, Chunk45251.kg)()
-  }, []), (0, Chunk951288.jsx)(w, {})
+  }, []), (0, Chunk951288.jsx)(T, {})
 }
 
-function w() {
+function T() {
   let e = (0, Chunk442837.e7)([Chunk156012.Z], () => Chunk156012.Z.getScheduledMessagesForInbox(), []),
     t = Chunk647438.useMemo(() => Object.values(module).sort((e, t) => new Date(e.sendAtTimestamp) > new Date(t.sendAtTimestamp) ? false : 1), [module]),
     n = (0, Chunk442837.e7)([Chunk156012.Z], () => Chunk156012.Z.loading, []),
@@ -198,12 +198,12 @@ let R = Chunk647438.memo(function(e) {
     }
   }(t.state), h = i.useCallback(() => {
     (0, m.gD)(t.scheduledMessageId).then(() => {
-      (0, O.C$)()
+      (0, y.C$)()
     }).catch(e => {
-      (0, O.wW)(e.message)
+      (0, y.wW)(e.message)
     })
   }, [t.scheduledMessageId]), g = i.useCallback(() => {
-    (0, O.uW)({
+    (0, y.uW)({
       scheduledMessage: t
     })
   }, [t]);
@@ -226,7 +226,7 @@ let R = Chunk647438.memo(function(e) {
           message: a,
           channel: n,
           className: N.message,
-          compact: y.jU.getSetting(),
+          compact: O.jU.getSetting(),
           animateAvatar: false,
           focusProps: Z
         }, a.id), (0, r.jsxs)(u.hE2, {

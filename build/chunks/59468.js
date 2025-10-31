@@ -15,10 +15,10 @@ async function d(e) {
     width: t,
     height: n,
     types: d = [i.vA.CAMERA, i.vA.SCREEN, i.vA.WINDOW]
-  } = e, u = s.Z.getVideoDevices(), f = (0, l.Z)(s.Z.getMediaEngine(), d, {
+  } = e, u = o.Z.getVideoDevices(), f = (0, l.Z)(o.Z.getMediaEngine(), d, {
     width: t,
     height: n
-  }), p = (0, o._)(), h = await p, m = await f, _ = m.filter(e => e.id.startsWith(i.vA.SCREEN)).map(e => {
+  }), p = (0, s._)(), h = await p, m = await f, _ = m.filter(e => e.id.startsWith(i.vA.SCREEN)).map(e => {
     var t, n;
     let r = e.name;
     return "Entire screen" === r ? r = a.intl.string(a.t.R4wpLN) : /^Screen \d+$/.test(r) && (r = a.intl.formatToPlainString(a.t["y/R7n4"], {
@@ -64,11 +64,11 @@ async function d(e) {
     let [t, n] = e;
     return !n.disabled
   }).map((e, t) => {
-    let [n, i] = e, l = c[t % c.length], s = Uint8Array.from(atob(l), e => e.charCodeAt(0)), o = (0, r.xS)(s);
+    let [n, i] = e, l = c[t % c.length], o = Uint8Array.from(atob(l), e => e.charCodeAt(0)), s = (0, r.xS)(o);
     return {
       id: "camera:" + i.id,
       name: i.name,
-      url: o
+      url: s
     }
   })), {
     windowSources: g,

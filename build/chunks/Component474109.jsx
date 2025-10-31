@@ -23,15 +23,15 @@ function _() {
   returnfalse
 }
 
-function O(e) {
+function y(e) {
   var t;
   let n = s.default.getMutableGuildStates();
   return e === f.x8Z.SERVER_DISCOVERY_BADGE && !d.Z.hasViewed(f.x8Z.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? true : t.highImportanceMentionCount) > 0
 }
-let y = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, b, f.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
+let O = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, b, f.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
   v = Chunk647438.forwardRef(function(e, t) {
     var n, i;
-    let d = (0, l.Wu)([u.ZP, c.Z, s.default], () => y(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
+    let d = (0, l.Wu)([u.ZP, c.Z, s.default], () => O(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
       h = (0, l.e7)([p.Z], () => p.Z.isFocused()),
       f = (0, l.e7)([a.Z], () => a.Z.getExpandedFolders());
     return (0, r.jsx)(o.Z, (n = function(e) {
@@ -57,7 +57,7 @@ let y = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, b, f.x8Z.E3_SERVER
       isUnread: _,
       textUnread: g.intl.string(g.t.y2b7CA),
       textMention: g.intl.string(g.t.y2b7CA),
-      isMentioned: O,
+      isMentioned: y,
       animate: h,
       expandedFolders: f
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

@@ -110,7 +110,7 @@ function Z() {
     })
   })
 }
-class T extends Chunk647438.PureComponent {
+class w extends Chunk647438.PureComponent {
   componentDidMount() {
     this.lastInputedKeys = [], Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_UP, this.scrollPageUp), Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
       capture: true
@@ -148,22 +148,22 @@ class T extends Chunk647438.PureComponent {
         children: Chunk388032.intl.string(Chunk388032.t["2t19lU"])
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk870525.ddrArrows,
-        children: [(0, Chunk951288.jsx)(w, {
+        children: [(0, Chunk951288.jsx)(T, {
           arrow: "LEFT",
           isActive: require,
           className: Chunk870525.left,
           children: "left"
-        }), (0, Chunk951288.jsx)(w, {
+        }), (0, Chunk951288.jsx)(T, {
           arrow: "DOWN",
           isActive: exports,
           className: Chunk870525.down,
           children: "down"
-        }), (0, Chunk951288.jsx)(w, {
+        }), (0, Chunk951288.jsx)(T, {
           arrow: "UP",
           isActive: module,
           className: Chunk870525.up,
           children: "up"
-        }), (0, Chunk951288.jsx)(w, {
+        }), (0, Chunk951288.jsx)(T, {
           arrow: "RIGHT",
           isActive: Chunk647438,
           className: Chunk870525.right,
@@ -258,7 +258,7 @@ class T extends Chunk647438.PureComponent {
   }
 }
 
-function w(e) {
+function T(e) {
   let {
     isActive: t,
     arrow: n,
@@ -287,7 +287,7 @@ function A(e) {
     onClose: n
   } = e, [l, a] = i.useState(false), [s, c] = i.useState(false), u = i.useMemo(() => __OVERLAY__ ? (0, m.Zg)() : (0, g.Rv)(), []), {
     keyboardModeEnabled: d,
-    useReducedMotion: O
+    useReducedMotion: y
   } = (0, p.cj)([_.Z], () => ({
     keyboardModeEnabled: _.Z.keyboardModeEnabled,
     useReducedMotion: _.Z.useReducedMotion
@@ -309,11 +309,11 @@ function A(e) {
           handleDemonClose: function() {
             c(false), setTimeout(n, 500)
           }
-        }, "raging-demo") : (0, r.jsx)(T, {
+        }, "raging-demo") : (0, r.jsx)(w, {
           content: u,
           keyboardModeEnabled: d,
           activateRagingDemon: function() {
-            O || (b.Z.disable(), a(true), c(true))
+            y || (b.Z.disable(), a(true), c(true))
           }
         }, "modal")
       })

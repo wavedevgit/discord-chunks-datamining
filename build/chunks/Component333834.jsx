@@ -32,11 +32,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk809946 = require("./809946.js");
 
-function T(e) {
+function w(e) {
   e.stopPropagation()
 }
 
-function w(e) {
+function T(e) {
   let {
     group: t,
     isOpen: n,
@@ -114,10 +114,10 @@ function D(e) {
     className: g,
     listName: P,
     ignoreGrouping: N = false
-  } = e, D = (0, y.fJ)(), L = i.useRef(null), M = (0, h.Z)(P, L), {
+  } = e, D = (0, O.fJ)(), L = i.useRef(null), M = (0, h.Z)(P, L), {
     entrypoint: k,
     notificationCenterVariant: G
-  } = (0, O.pN)({
+  } = (0, y.pN)({
     location: "NotificationsInboxSidebarList"
   }), {
     isLoading: U,
@@ -205,12 +205,12 @@ function D(e) {
     Q = i.useMemo(() => {
       let e = [];
       return X ? e.push(a()) : q ? e.push((0, r.jsx)(R, {}, "empty-state")) : N ? (e.push(...n.map(e => d([e], true))), e.push(...t.map(e => d([e], false)))) : s().each(A, t => {
-        0 !== Y[t].length && (e.push((0, r.jsx)(w, {
+        0 !== Y[t].length && (e.push((0, r.jsx)(T, {
           group: t,
           isOpen: H[t],
           toggleOpenedState: () => {
             let e = H[t];
-            z(t), (0, y.RZ)({
+            z(t), (0, O.RZ)({
               section: t,
               enabled: !e,
               viewId: D
@@ -220,7 +220,7 @@ function D(e) {
       }), e
     }, [t, n, a, H, z, Y, N, d, q, X, D]),
     J = Q[Q.length - 1],
-    $ = i.isValidElement(J) && J.type === w,
+    $ = i.isValidElement(J) && J.type === T,
     ee = (0, x.d)(e => e.setInboxReadState);
   i.useEffect(() => {
     X || ee(0 === Y.UNREAD.length)
@@ -256,7 +256,7 @@ function D(e) {
       size: e
     })
   }, [en]);
-  return (0, y.vU)({
+  return (0, O.vU)({
     notificationCenterVariant: G,
     entrypoint: k,
     messages: t,
@@ -265,8 +265,8 @@ function D(e) {
     viewId: D
   }), (0, r.jsx)("div", {
     className: o()(g, Z.messagesPopoutWrap),
-    onClick: T,
-    onDoubleClick: T,
+    onClick: w,
+    onDoubleClick: w,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.bG, {
       navigator: M,

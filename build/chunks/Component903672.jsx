@@ -52,13 +52,13 @@ function N(e, t, n) {
 function Z(e) {
   let {
     onJump: t
-  } = e, n = (0, a.e7)([_.Z, y.Z], () => _.Z.getChannel(y.Z.getChannelId())), {
+  } = e, n = (0, a.e7)([_.Z, O.Z], () => _.Z.getChannel(O.Z.getChannelId())), {
     messages: l,
     hasMore: s,
     loading: p,
     guildFilter: f,
     roleFilter: b,
-    everyoneFilter: O
+    everyoneFilter: y
   } = (0, a.cj)([v.ZP], () => ({
     messages: v.ZP.getMentions(),
     hasMore: v.ZP.hasMore,
@@ -68,11 +68,11 @@ function Z(e) {
     everyoneFilter: v.ZP.everyoneFilter
   })), j = (0, m.Us)({
     location: "RecentMentions"
-  }), C = (0, d.Z)(f), x = (0, d.Z)(b), P = (0, d.Z)(O);
+  }), C = (0, d.Z)(f), x = (0, d.Z)(b), P = (0, d.Z)(y);
   i.useEffect(() => {
     if (!v.ZP.hasLoadedEver) return void N(n, true);
-    (null != C && f !== C || null != x && b !== x || null != P && O !== P) && N(n, true)
-  }, [C, f, x, b, P, O, n, true]), (0, u.ZP)(() => {
+    (null != C && f !== C || null != x && b !== x || null != P && y !== P) && N(n, true)
+  }, [C, f, x, b, P, y, n, true]), (0, u.ZP)(() => {
     (null == l ? true : l.some(h.k5)) && (c.Z.clearMentions(), N(n, true))
   }), i.useEffect(() => () => {
     c.Z.truncateMentions(E.DJj)
@@ -99,21 +99,21 @@ function Z(e) {
     canCloseAllMessages: true,
     renderHeader: Z,
     renderEmptyState: A,
-    renderMessage: T,
+    renderMessage: w,
     "aria-label": S.intl.string(S.t.jbV6MM),
     listName: "recents"
   })
 }
 
-function T(e, t) {
-  return [(0, r.jsx)(w, {
+function w(e, t) {
+  return [(0, r.jsx)(T, {
     message: e,
     gotoMessage: t,
     dismissible: true
   }, e.id)]
 }
 
-function w(e) {
+function T(e) {
   let {
     message: t,
     gotoMessage: n,
@@ -122,7 +122,7 @@ function w(e) {
   if (null == t) return null;
   let l = _.Z.getChannel(t.channel_id);
   if (null == l || (0, p._t)(l) || (0, p.ft)(l)) return null;
-  let o = O.Z.didAgree(l.getGuildId()),
+  let o = y.Z.didAgree(l.getGuildId()),
     a = !!(0, p.qF)(l) && !o;
   return (0, r.jsxs)("div", {
     className: I.container,

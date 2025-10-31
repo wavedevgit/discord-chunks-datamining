@@ -55,8 +55,8 @@ function f(e) {
       text: m,
       selected: b,
       trailing: _,
-      background: O,
-      showUnread: y = false,
+      background: y,
+      showUnread: O = false,
       ref: v
     } = e,
     j = function(e, t) {
@@ -98,7 +98,7 @@ function f(e) {
       className: l()(u.containerDefault, d.wrapper, {
         [d.modeSelected]: b
       }, i),
-      children: [O, y ? (0, r.jsx)("div", {
+      children: [y, O ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
         className: l()([d.link, d.basicChannelRowLink, f]),

@@ -22,15 +22,15 @@ let b = Chunk647438.memo(function(e) {
   let {
     guildNode: b,
     lowerBadge: _
-  } = e, O = b.id, y = (0, l.e7)([p.Z], () => p.Z.getGuild(O)), v = (0, a.E)(y), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(O)), x = (0, c.Z)(e => e.guildId), E = (0, f.Z)(O), {
+  } = e, y = b.id, O = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), v = (0, a.E)(O), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), x = (0, c.Z)(e => e.guildId), E = (0, f.Z)(y), {
     badge: S,
     unread: I,
     isMentionLowImportance: P
   } = (0, l.cj)([d.default], () => ({
-    badge: d.default.getMentionCount(O),
-    isMentionLowImportance: d.default.getIsMentionLowImportance(O),
-    unread: d.default.hasUnread(O)
-  })), N = (0, s.Ij)(y) && 0 === S, Z = i.useMemo(() => null != _ ? _ : N ? (0, r.jsx)("div", {
+    badge: d.default.getMentionCount(y),
+    isMentionLowImportance: d.default.getIsMentionLowImportance(y),
+    unread: d.default.hasUnread(y)
+  })), N = (0, s.Ij)(O) && 0 === S, Z = i.useMemo(() => null != _ ? _ : N ? (0, r.jsx)("div", {
     className: m.pauseBackground,
     children: (0, r.jsx)(o.fpf, {
       size: "custom",
@@ -58,10 +58,10 @@ let b = Chunk647438.memo(function(e) {
     }
     return e
   }({}, e), n = n = {
-    guild: y,
+    guild: O,
     unavailable: C,
     animatable: j,
-    selected: x === O,
+    selected: x === y,
     badge: S,
     isMentionLowImportance: P,
     lowerBadge: Z,

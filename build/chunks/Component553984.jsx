@@ -25,15 +25,15 @@ function m(e) {
     setSelectedFilter: b
   } = (0, u.Z)(), _ = (0, p.d)(e => e.setInboxReadState);
   if (!i) return null;
-  let O = m === h.V5.ALL ? f.intl.string(f.t["2pAkDA"]) : f.intl.string(f.t.HcoRu0);
+  let y = m === h.V5.ALL ? f.intl.string(f.t["2pAkDA"]) : f.intl.string(f.t.HcoRu0);
   return (0, r.jsx)(o.u, {
     position: "bottom",
-    text: O,
+    text: y,
     children: (0, r.jsx)(a.P3F, {
       className: l()(t, g.headerButton, {
         [g.enabled]: m === h.V5.BOOKMARKS
       }),
-      "aria-label": O,
+      "aria-label": y,
       onClick: () => {
         let e = m === h.V5.ALL ? h.V5.BOOKMARKS : h.V5.ALL;
         b(e), e === h.V5.ALL && _(false), (0, c.RZ)({

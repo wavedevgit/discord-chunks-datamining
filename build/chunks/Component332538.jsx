@@ -1,7 +1,7 @@
 /** Chunk was on 56710 **/
 /** chunk id: 332538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Wj: () => T,
+  Wj: () => w,
   ZP: () => Z
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
@@ -33,8 +33,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js");
 
 function Z(e) {
-  let t = (0, o.e7)([O.Z], () => O.Z.getNotificationStateForGuild(e), [e]),
-    n = (0, o.e7)([y.Z], () => y.Z.getStateForGuild(e)),
+  let t = (0, o.e7)([y.Z], () => y.Z.getNotificationStateForGuild(e), [e]),
+    n = (0, o.e7)([O.Z], () => O.Z.getStateForGuild(e)),
     {
       trailing: _,
       showUnread: N
@@ -79,7 +79,7 @@ function Z(e) {
       } = (0, x.Z)(e), u = (0, o.e7)([h.Z], () => {
         var t, n;
         return null != (n = null == (t = h.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)) && n
-      }), _ = (0, o.e7)([b.Z], () => b.Z.getLowestGameCostForGuild(e)), O = function(e, t) {
+      }), _ = (0, o.e7)([b.Z], () => b.Z.getLowestGameCostForGuild(e)), y = function(e, t) {
         let n = (0, j.qI)(e, "GuildPowerupsChannelRow"),
           r = (0, m.BU)(e, "GuildPowerupsChannelRow"),
           a = (0, o.e7)([h.Z], () => {
@@ -103,7 +103,7 @@ function Z(e) {
           }
           return 0
         }, [n, e, t, r, a])
-      }(e, t), [y, E] = (0, d.XR)(null != t && !s && O > 0 ? a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK : null, O), S = y === a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, N = i.useMemo(() => {
+      }(e, t), [O, E] = (0, d.XR)(null != t && !s && y > 0 ? a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK : null, y), S = O === a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, N = i.useMemo(() => {
         if (null == t || s || S) return;
         let n = function(e, t) {
           let n = g.Oe.find(e => {
@@ -163,7 +163,7 @@ function Z(e) {
           }
         }(e, u, c, _);
         if (null != i) return i
-      }, [e, t, s, S, c, u, _]), [Z, T] = (0, d.bf)(null != N ? a.z.GUILD_POWERUP_NOTIFICATION : null, {
+      }, [e, t, s, S, c, u, _]), [Z, w] = (0, d.bf)(null != N ? a.z.GUILD_POWERUP_NOTIFICATION : null, {
         cooldownDurationMs: v.d
       });
       return i.useMemo(() => {
@@ -173,11 +173,11 @@ function Z(e) {
             markAsDismissed: r
           };
           if (S) {
-            if (O === I.Du.GAME_SERVER_HOSTING) return {
+            if (y === I.Du.GAME_SERVER_HOSTING) return {
               type: v.J.GAME_SERVER_HOSTING_AVAILABLE,
               markAsDismissed: E
             };
-            let e = I.os[O],
+            let e = I.os[y],
               n = Object.values(t.allPowerups).filter(t => e.has(t.skuId));
             if (0 === n.length) return;
             return {
@@ -207,7 +207,7 @@ function Z(e) {
               return e
             }({}, N), n = n = {
               markAsDismissed: e => {
-                T(e), N.markAsDismissed(e)
+                w(e), N.markAsDismissed(e)
               }
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
@@ -221,7 +221,7 @@ function Z(e) {
             }), e
           }
         }
-      }, [t, s, r, N, Z, T, S, E, O])
+      }, [t, s, r, N, Z, w, S, E, y])
     }(e, n);
   if (null !== n && (null != _ || N || null != Z)) return {
     trailing: _,
@@ -230,8 +230,8 @@ function Z(e) {
   }
 }
 
-function T(e) {
-  let t = (0, o.e7)([y.Z], () => y.Z.getStateForGuild(e)),
+function w(e) {
+  let t = (0, o.e7)([O.Z], () => O.Z.getStateForGuild(e)),
     n = Z(e);
   i.useEffect(() => {
     (0, _.jd)(e)

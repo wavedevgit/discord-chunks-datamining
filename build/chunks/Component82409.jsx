@@ -79,17 +79,17 @@ function U(e) {
     includePanelSpacing: l
   } = e, a = (0, x.fJ)(), {
     selectedFilter: h
-  } = (0, E.Z)(), P = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), Z = (0, s.Wu)([y.ZP, _.Z, S.Z], () => N.filter(e => !(0, I.YH)({
+  } = (0, E.Z)(), P = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), Z = (0, s.Wu)([O.ZP, _.Z, S.Z], () => N.filter(e => !(0, I.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
-    ReadStateStore_: y.ZP,
+    ReadStateStore_: O.ZP,
     GuildStore_: _.Z
-  }) && !(0, I.Tj)(e, S.Z.selectedItemInfo))), D = (0, s.Wu)([y.ZP, _.Z, S.Z], () => N.filter(e => (0, I.YH)({
+  }) && !(0, I.Tj)(e, S.Z.selectedItemInfo))), D = (0, s.Wu)([O.ZP, _.Z, S.Z], () => N.filter(e => (0, I.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
-    ReadStateStore_: y.ZP,
+    ReadStateStore_: O.ZP,
     GuildStore_: _.Z
   }) || (0, I.Tj)(e, S.Z.selectedItemInfo))), U = i.useCallback(e => {
     h !== A.V5.BOOKMARKS && C.Z.loadMoreInbox({
@@ -113,9 +113,9 @@ function U(e) {
       i.useEffect(() => {
         null != e && t.forEach(e => {
           var t;
-          let n = O.Z.getMessages(e),
+          let n = y.Z.getMessages(e),
             r = null == (t = n.last()) ? true : t.id,
-            i = y.ZP.ackMessageId(e),
+            i = O.ZP.ackMessageId(e),
             l = n.hasPresent() && n.ready && !n.cached;
           null != r && null != i && l && v.default.compare(i, r) >= 0 && d.ack(e, {
             section: R.jXE.NOTIFICATIONS_INBOX,
@@ -169,7 +169,7 @@ function U(e) {
         isUnread: false
       };
       let c = s[0],
-        u = y.ZP.getTrackedAckMessageId(c);
+        u = O.ZP.getTrackedAckMessageId(c);
       return null == u ? {
         message: null,
         isUnread: false
@@ -178,7 +178,7 @@ function U(e) {
           id: v.default.atNextMillisecond(u),
           channel_id: c
         },
-        isUnread: null != (i = y.ZP.hasUnread(c)) && i
+        isUnread: null != (i = O.ZP.hasUnread(c)) && i
       }
     }(q, X);
     null != r && C.Z.inboxItemClick({
@@ -219,7 +219,7 @@ function U(e) {
           style: {
             marginRight: false
           },
-          children: Q === j.v8.DROPDOWN && !J.isGuildEntrypointEnabled && (0, r.jsx)(T.p, {})
+          children: Q === j.v8.DROPDOWN && !J.isGuildEntrypointEnabled && (0, r.jsx)(w.p, {})
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -235,7 +235,7 @@ function U(e) {
         hideBanner: !B || h !== A.V5.ALL
       }), $ && (0, r.jsx)(c.LZC, {
         size: 8
-      }), (0, r.jsx)(w.Z, {
+      }), (0, r.jsx)(T.Z, {
         className: L.messageList,
         renderMessageGroup: H,
         messages: h === A.V5.BOOKMARKS ? Y : q,

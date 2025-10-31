@@ -41,7 +41,7 @@ function _(e) {
   return e
 }
 
-function O(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class y extends Chunk317770.Z {
+class O extends Chunk317770.Z {
   _initialize() {
     __OVERLAY__ ? Chunk570140.Z.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (Chunk570140.Z.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), Chunk570140.Z.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities))
   }
@@ -78,7 +78,7 @@ class y extends Chunk317770.Z {
   openPremiumPaymentModalInApp(e) {
     if (__OVERLAY__) throw Error("Should not use this function from the overlay, use ModalAPI.openModal instead");
     return new Promise((t, n) => {
-      (0, s.Z)(O(_({}, e), {
+      (0, s.Z)(y(_({}, e), {
         onClose: e => {
           e ? t() : n()
         }
@@ -126,7 +126,7 @@ class y extends Chunk317770.Z {
       });
       e && (0, c._)()
     }), b(this, "_handlePremiumPaymentModalOpen", e => {
-      (0, s.Z)(O(_({}, e), {
+      (0, s.Z)(y(_({}, e), {
         analyticsLocations: [a.Z.OVERLAY],
         onClose: e => {
           l.Z.dispatch({
@@ -143,4 +143,4 @@ class y extends Chunk317770.Z {
     })
   }
 }
-let v = new y
+let v = new O

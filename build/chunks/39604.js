@@ -302,18 +302,23 @@ async function Q(e) {
   null != e && a.Z.dispatch({
     type: "CLIPS_SAVE_CLIP_PLACEHOLDER",
     clip: G(k({}, o), {
+      pending: true,
       filepath: c
     })
   });
   try {
-    var h;
     let {
       duration: e,
       clipStats: t
     } = await (null != _ ? d.saveClipForUser(_, c, f) : d.saveClip(c, f)), n = q(p, t);
     n.clip_save_time_ms = t.clipSaveTimeMs, n.clip_size_bytes = t.clipSizeBytes, null != t.viewerDecodeFps && (n.decode_fps_during_clip = t.viewerDecodeFps, n.encode_fps_during_clip = t.viewerEncodeFps, n.target_fps = null), I.default.track(L.rMx.CLIP_SAVED, n);
-    let r = await (0, D.R)(s.Z.clips.getClipProtocolURLFromPath(c), 0);
-    return o.thumbnail = r, o.length = e, x.jF.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null != (h = null == r ? true : r.length) ? h : 0, " bytes thumbnail.")), await d.updateClipMetadata(c, JSON.stringify(o)), G(k({}, o), {
+    let r = "";
+    try {
+      r = await (0, D.R)(s.Z.clips.getClipProtocolURLFromPath(c), 0)
+    } catch (e) {
+      x.jF.warn("Failed to generate clip thumbnail:", e)
+    }
+    return o.thumbnail = r, o.length = e, x.jF.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(r.length, " bytes thumbnail.")), await d.updateClipMetadata(c, JSON.stringify(o)), G(k({}, o), {
       filepath: c
     })
   } catch (r) {

@@ -135,18 +135,18 @@ let k = Chunk647438.memo(function(e) {
         dragging: e.isDragging()
       })
     }),
-    eh = (0, c.Ie)(null != eo ? eo : T.lds, null != ea ? 2 : 1),
+    eh = (0, c.Ie)(null != eo ? eo : w.lds, null != ea ? 2 : 1),
     [ef, eg] = i.useState(false),
     em = !ee && ef,
     [eb, e_] = i.useState(false),
-    [eO, ey] = i.useState(false),
-    [ev] = i.useState(() => new d.sW(70, () => ey(true)));
+    [ey, eO] = i.useState(false),
+    [ev] = i.useState(() => new d.sW(70, () => eO(true)));
   i.useEffect(() => () => ev.cancel(), [ev]);
   let ej = i.useCallback(() => {
       if (null != V) return void(0, _.uL)(V, {
         state: L
       });
-      (0, O.X)(eo, {
+      (0, y.X)(eo, {
         state: L
       })
     }, [eo, V]),
@@ -167,25 +167,25 @@ let k = Chunk647438.memo(function(e) {
     }, [ea]),
     eI = i.useCallback(e => {
       if (e) return void ev.delay();
-      ev.cancel(), ey(false)
+      ev.cancel(), eO(false)
     }, [ev]),
     eP = i.useCallback(e => {
       null == U || U(eo, e)
     }, [eo, U]),
     eN = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == H) return null;
-  let eZ = eO || eb ? (0, r.jsx)(E.Z, {
+  let eZ = ey || eb ? (0, r.jsx)(E.Z, {
       guild: H,
-      show: eO,
+      show: ey,
       active: W,
       onAnimationStart: function() {
-        e_(eO)
+        e_(ey)
       },
       onAnimationRest: function() {
-        eO || e_(false)
+        ey || e_(false)
       }
     }) : (0, r.jsx)(p.LYs, D(R({
-      ariaLabel: w.intl.formatToPlainString(w.t["/uzRss"], {
+      ariaLabel: T.intl.formatToPlainString(T.t["/uzRss"], {
         guildName: H.name,
         mentions: X
       }),
@@ -200,14 +200,14 @@ let k = Chunk647438.memo(function(e) {
       onMouseDown: eC,
       onContextMenu: eE,
       onKeyDown: eS,
-      icon: (0, y.EB)(H, 2 * eN, em && z, true),
+      icon: (0, O.EB)(H, 2 * eN, em && z, true),
       selected: W || em
     }, eh), {
       "aria-setsize": ei,
       "aria-posinset": el,
       "aria-selected": W
     })),
-    eT = ed ? (0, r.jsx)(S.OG, {
+    ew = ed ? (0, r.jsx)(S.OG, {
       children: (0, r.jsx)(P.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? e => {
@@ -217,11 +217,11 @@ let k = Chunk647438.memo(function(e) {
       style: {
         scale: null == er ? 1 : er
       },
-      "data-drop-hovering": eO,
+      "data-drop-hovering": ey,
       className: o()(A.blobContainer, {
         [A.sorting]: ee,
-        [A.wobble]: eO,
-        [A.selected]: eO || W
+        [A.wobble]: ey,
+        [A.selected]: ey || W
       }),
       children: (0, r.jsx)(p.aRk, {
         selected: true,
@@ -242,7 +242,7 @@ let k = Chunk647438.memo(function(e) {
       guild: H,
       disabled: ee,
       isDragging: ed,
-      children: eT
+      children: ew
     }), $ ? (0, r.jsx)(S.ZP, {
       name: H.name,
       targetNode: G,

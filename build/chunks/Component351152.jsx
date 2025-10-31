@@ -1,14 +1,14 @@
 /** Chunk was on 47863 **/
 /** chunk id: 351152, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => S
 }), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
@@ -23,7 +23,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk542257 = require("./542257.js"),
   Chunk949678 = require("./949678.js");
 
-function S(e) {
+function b(e) {
   let {
     guildId: t,
     onClick: n
@@ -51,18 +51,18 @@ function S(e) {
   }) : null
 }
 
-function b(e) {
+function S(e) {
   let {
     onSelectGuild: t
   } = e, n = (0, a.e7)([h.ZP], () => h.ZP.getGuildFolders());
   return (0, r.jsx)(g.Z, {
     title: x.intl.string(x.t.JsqeEk),
     scrollerClassName: l()(j.guildScroller, v.marginBottom),
-    children: o().flatMap(n, e => {
+    children: s().flatMap(n, e => {
       let {
         guildIds: n
       } = e;
-      return n.map(e => (0, r.jsx)(S, {
+      return n.map(e => (0, r.jsx)(b, {
         guildId: e,
         onClick: t
       }, e))

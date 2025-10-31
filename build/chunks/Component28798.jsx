@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
 let f = function(e) {
   let {
     quest: t
-  } = e, n = (0, i.e7)([o.Z], () => o.Z.getState().theme), f = (0, l.wj)(n) ? c.BR.DARK : c.BR.LIGHT;
+  } = e, n = (0, i.e7)([s.Z], () => s.Z.getState().theme), f = (0, l.wj)(n) ? c.BR.DARK : c.BR.LIGHT;
   return (0, r.jsx)("div", {
     className: u.wrapper,
     children: (0, r.jsxs)("div", {
@@ -27,13 +27,13 @@ let f = function(e) {
         className: u.gameTile
       }), (0, r.jsxs)("div", {
         className: u.copy,
-        children: [(0, r.jsx)(s.Heading, {
+        children: [(0, r.jsx)(o.Heading, {
           color: "always-white",
           variant: "text-sm/medium",
           children: d.intl.format(d.t["5nMfBZ"], {
             gameTitle: t.config.messages.gameTitle
           })
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(o.Text, {
           className: u.subheading,
           color: "always-white",
           variant: "text-xs/medium",

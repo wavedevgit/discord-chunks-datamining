@@ -84,8 +84,8 @@ function b(e) {
     isMentionLowImportance: g,
     tooltipName: b,
     folderGroupId: _,
-    folderButtonContent: O,
-    onClick: y,
+    folderButtonContent: y,
+    onClick: O,
     onContextMenu: v,
     onHoverChange: j,
     onKeyDown: C,
@@ -110,9 +110,9 @@ function b(e) {
     return i
   }(e.treeItemProps, ["onFocus"]), [P, N] = i.useState(false), Z = i.useCallback(() => {
     a || N(true), null == j || j(true)
-  }, [a, j]), T = i.useCallback(() => {
+  }, [a, j]), w = i.useCallback(() => {
     a || N(false), null == j || j(false)
-  }, [a, j]), w = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
+  }, [a, j]), T = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
   return (0, r.jsx)(s.tEY, {
     children: (0, r.jsxs)(s.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -133,10 +133,10 @@ function b(e) {
       return e
     }({
       className: f.folderButton,
-      onClick: y,
+      onClick: O,
       onContextMenu: v,
       onMouseEnter: Z,
-      onMouseLeave: T,
+      onMouseLeave: w,
       onKeyDown: C,
       onFocus: x,
       focusProps: {
@@ -156,16 +156,16 @@ function b(e) {
       }), (0, r.jsx)(s.aRk, {
         "aria-hidden": true,
         isFolder: true,
-        upperBadge: w,
+        upperBadge: T,
         lowerBadge: A,
         lowerBadgeSize: {
           width: (0, s.OVM)(d)
         },
         children: (0, r.jsx)("div", {
           className: f.folderButtonInner,
-          children: null != O ? (0, r.jsx)("div", {
+          children: null != y ? (0, r.jsx)("div", {
             className: f.folderIconWrapper,
-            children: O
+            children: y
           }) : (0, r.jsx)(m, {
             folderNode: l,
             hovered: P,

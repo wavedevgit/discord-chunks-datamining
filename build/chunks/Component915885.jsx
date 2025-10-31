@@ -23,7 +23,7 @@ function _(e) {
   let {
     guild: t,
     selected: n
-  } = e, _ = (0, l.e7)([f.Z], () => f.Z.can(m.Plq.KICK_MEMBERS, t)), O = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), y = _ && null != O ? O : 0;
+  } = e, _ = (0, l.e7)([f.Z], () => f.Z.can(m.Plq.KICK_MEMBERS, t)), y = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), O = _ && null != y ? y : 0;
   i.useEffect(() => {
     _ && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
       guildId: t.id,
@@ -47,8 +47,8 @@ function _(e) {
       text: b.intl.string(b.t.oclz3Z),
       selected: n,
       onClick: v,
-      trailing: y > 0 ? (0, r.jsx)(a.mAB, {
-        count: y
+      trailing: O > 0 ? (0, r.jsx)(a.mAB, {
+        count: O
       }) : null
     })
   })

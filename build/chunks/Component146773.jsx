@@ -57,16 +57,16 @@ function E(e, t) {
 function S(e) {
   return (0, i.G)(x, {
     drop(e, t) {
-      let n, i = O.Z.getGuildId(),
+      let n, i = y.Z.getGuildId(),
         l = t.getItem(),
-        s = (0, y.if)(E(i, l.id), l.position, e.channel, e.position, l.channelList);
+        s = (0, O.if)(E(i, l.id), l.position, e.channel, e.position, l.channelList);
       if (null == s) return;
       let d = E(i, l.id);
       if (null == d) return;
       let p = g.Z.getCategories(i),
         h = b.Z.getGuild(i);
       if (null == h) return;
-      let m = (0, y.Dn)(d, E(i, s.referenceId), s.parentId, p);
+      let m = (0, O.Dn)(d, E(i, s.referenceId), s.parentId, p);
       if (0 !== m.length) {
         if (i === j.I_8) return void(0, u.s3)(m);
         if (m = m.filter(e => {
@@ -114,9 +114,9 @@ function S(e) {
       let n = t.getItem(),
         r = f.Z.getChannel(n.id);
       if (null == r) returnfalse;
-      let i = (0, y.if)(f.Z.getChannel(n.id), n.position, e.channel, e.position, n.channelList);
+      let i = (0, O.if)(f.Z.getChannel(n.id), n.position, e.channel, e.position, n.channelList);
       if (null == i) returnfalse;
-      if (O.Z.getGuildId() === j.I_8) returntrue;
+      if (y.Z.getGuildId() === j.I_8) returntrue;
       let l = b.Z.getGuild(n.guildId);
       if (null == l) returnfalse;
       let o = f.Z.getChannel(i.parentId),
@@ -146,7 +146,7 @@ function S(e) {
       let {
         channel: t
       } = e;
-      if (O.Z.getGuildId() === j.I_8) returntrue;
+      if (y.Z.getGuildId() === j.I_8) returntrue;
       let i = b.Z.getGuild(t.getGuildId());
       if (null == i) returnfalse;
       if ((0, p.r1)(i.id) && _.Z.can(j.Plq.MANAGE_CHANNELS, i)) return (0, d.N)() && (0, o.ZDy)(async () => {
@@ -168,7 +168,7 @@ function S(e) {
           type: i
         },
         position: l
-      } = e, o = O.Z.getGuildId(), a = g.Z.getCategories(o);
+      } = e, o = y.Z.getGuildId(), a = g.Z.getCategories(o);
       return {
         isChannelDrag: true,
         id: t,

@@ -142,8 +142,8 @@ class Y extends Chunk98597.ZP {
       isSubscriptionGated: m,
       needSubscriptionToAccess: b,
       unread: _,
-      resolvedUnreadSetting: O,
-      mentionCount: y,
+      resolvedUnreadSetting: y,
+      mentionCount: O,
       isFavoriteSuggestion: v
     } = this.props, {
       shouldShowGuildVerificationPopout: j
@@ -214,13 +214,13 @@ class Y extends Chunk98597.ZP {
       } = this.props, i = e.getGuildId();
       null != i && (0, b.n)(i) && (0, m.hk)(i), r && this.setState({
         shouldShowGuildVerificationPopout: true
-      }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, v.Cq)(e), __OVERLAY__ || (0, y.Kh)(e.id)
+      }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, v.Cq)(e), __OVERLAY__ || (0, O.Kh)(e.id)
     }), z(this, "handleClickChat", () => {
       let {
         channel: e,
         locked: t
       } = this.props;
-      __OVERLAY__ || t || (0, y.Kh)(e.id)
+      __OVERLAY__ || t || (0, O.Kh)(e.id)
     }), z(this, "handleContextMenu", e => {
       let {
         channel: t
@@ -240,8 +240,8 @@ class Y extends Chunk98597.ZP {
       } = this.props, {
         shouldShowGuildVerificationPopout: t
       } = this.state;
-      if (t) return (0, r.jsx)(O.Z, {
-        type: O.R.VOICE,
+      if (t) return (0, r.jsx)(y.Z, {
+        type: y.R.VOICE,
         guildId: e.guild_id,
         closePopout: this.closeGuildVerificationPopout
       });
@@ -292,31 +292,31 @@ function X(e) {
     isFavoriteCategory: l,
     collapsed: o,
     voiceStates: s
-  } = e, c = (0, a.cj)([w.ZP], () => ({
-    unread: w.ZP.hasUnread(n.id),
-    mentionCount: w.ZP.getMentionCount(n.id)
-  })), u = (0, a.e7)([A.ZP], () => A.ZP.resolveUnreadSetting(n)), d = (0, a.cj)([P.Z, Z.Z, T.Z], () => {
+  } = e, c = (0, a.cj)([T.ZP], () => ({
+    unread: T.ZP.hasUnread(n.id),
+    mentionCount: T.ZP.getMentionCount(n.id)
+  })), u = (0, a.e7)([A.ZP], () => A.ZP.resolveUnreadSetting(n)), d = (0, a.cj)([P.Z, Z.Z, w.Z], () => {
     let e = P.Z.getChannel(n.parent_id),
       r = Z.Z.getCheck(n.guild_id);
     return {
-      canManageChannel: null != t && T.Z.can(U.Plq.MANAGE_CHANNELS, n),
-      canReorderChannel: true !== i && (t.id === B._ || (null != e ? T.Z.can(U.Plq.MANAGE_CHANNELS, e) : T.Z.can(U.Plq.MANAGE_CHANNELS, t))),
-      canMoveMembers: T.Z.can(U.Plq.MOVE_MEMBERS, n),
-      locked: !T.Z.can(U.Plq.CONNECT, n),
-      bypassLimit: T.Z.can(U.Plq.MOVE_MEMBERS, n),
+      canManageChannel: null != t && w.Z.can(U.Plq.MANAGE_CHANNELS, n),
+      canReorderChannel: true !== i && (t.id === B._ || (null != e ? w.Z.can(U.Plq.MANAGE_CHANNELS, e) : w.Z.can(U.Plq.MANAGE_CHANNELS, t))),
+      canMoveMembers: w.Z.can(U.Plq.MOVE_MEMBERS, n),
+      locked: !w.Z.can(U.Plq.CONNECT, n),
+      bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
   }), p = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), h = (0, S.ZP)(n.id), f = (0, a.e7)([x.Z], () => x.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, C.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: b
-  } = (0, _.Z)(n.id), O = (0, a.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), y = (0, E.xJ)(n.id), v = (0, M.Z)({
+  } = (0, _.Z)(n.id), y = (0, a.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), O = (0, E.xJ)(n.id), v = (0, M.Z)({
     channel: n,
     isChannelSelected: false,
     isChannelCollapsed: o,
     voiceStates: s,
     isSubscriptionGated: m,
     needSubscriptionToAccess: b,
-    enableConnectedUserLimit: y || n.userLimit > 0 && n.userLimit < U.xGv
+    enableConnectedUserLimit: O || n.userLimit > 0 && n.userLimit < U.xGv
   }), N = e.connected && null == v;
   return (0, r.jsx)(q, K(W({
     categoryCollapsed: p,
@@ -326,7 +326,7 @@ function X(e) {
     isSubscriptionGated: m,
     needSubscriptionToAccess: b
   }, c, d, e), {
-    isFavoriteSuggestion: l && !O,
+    isFavoriteSuggestion: l && !y,
     forceShowButtons: N,
     channelInfo: v,
     resolvedUnreadSetting: u

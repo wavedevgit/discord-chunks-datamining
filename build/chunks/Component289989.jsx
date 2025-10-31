@@ -1,14 +1,14 @@
 /** Chunk was on 47863 **/
 /** chunk id: 289989, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk209739 = require("./209739.js"),
-  o = require.n(Chunk209739),
+  s = require.n(Chunk209739),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk579806 = require("./579806.js"),
@@ -27,16 +27,16 @@ function j(e) {
     id: t,
     text: n,
     icon: i,
-    selected: s,
-    onClick: o
+    selected: o,
+    onClick: s
   } = e;
   return (0, r.jsx)(c.P3F, {
     role: "radio",
-    "aria-checked": s,
-    onClick: () => o(t),
+    "aria-checked": o,
+    onClick: () => s(t),
     tabIndex: 0,
     className: l()(v.nativeSourceTypeButton, v.nativePickerRadioItem, {
-      [v.selected]: s
+      [v.selected]: o
     }),
     children: (0, r.jsxs)("div", {
       className: v.nativeSourceTypeButtonInner,
@@ -51,14 +51,14 @@ function j(e) {
   })
 }
 
-function S(e) {
+function b(e) {
   let {
     onSourceSelect: t
   } = e;
   (0, f.UB)(), (0, p.Z)(t, g.Vq);
   let [{
     nativeSourceType: n
-  }, i] = (0, m.E_)(), l = (0, u.isMac)() && o().satisfies(null === d.Z || true === d.Z ? true : d.Z.os.release, _.jR);
+  }, i] = (0, m.E_)(), l = (0, u.isMac)() && s().satisfies(null === d.Z || true === d.Z ? true : d.Z.os.release, _.jR);
   return (0, r.jsxs)("div", {
     className: v.root,
     children: [(0, r.jsx)(a.X6q, {

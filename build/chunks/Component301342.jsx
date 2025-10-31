@@ -1,8 +1,8 @@
 /** Chunk was on 56710 **/
 /** chunk id: 301342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => T,
-  Qo: () => w,
+  P: () => w,
+  Qo: () => T,
   ZP: () => Z,
   kw: () => R,
   rj: () => A
@@ -74,12 +74,12 @@ let N = Chunk647438.memo(function(e) {
         disableManageChannels: j,
         position: N,
         sortingPosition: Z,
-        hideIcon: T,
-        children: w
+        hideIcon: w,
+        children: T
       } = e,
-      A = (0, s.e7)([y.ZP], () => y.ZP.isChannelMuted(l.getGuildId(), l.id)),
+      A = (0, s.e7)([O.ZP], () => O.ZP.isChannelMuted(l.getGuildId(), l.id)),
       R = (0, s.e7)([b.Z], () => b.Z.isCollapsed(l.id)),
-      D = (0, s.e7)([O.Z], () => O.Z.can(C.Plq.MANAGE_CHANNELS, l));
+      D = (0, s.e7)([y.Z], () => y.Z.can(C.Plq.MANAGE_CHANNELS, l));
     t = null != Z ? N > Z ? E.containerDragAfter : E.containerDragBefore : E.containerDefault;
     let L = i.useCallback(() => {
         R ? (0, h.mJ)(l.id) : (0, h.c4)(l.id)
@@ -170,7 +170,7 @@ let N = Chunk647438.memo(function(e) {
                 children: (0, r.jsx)(c.Z, {
                   children: l.name
                 })
-              }), T ? null : (0, r.jsx)(p.CJ0, {
+              }), w ? null : (0, r.jsx)(p.CJ0, {
                 size: "md",
                 color: "currentColor",
                 className: E.icon
@@ -204,12 +204,12 @@ let N = Chunk647438.memo(function(e) {
               }) : null
             })]
           })
-        }), w]
+        }), T]
       });
     return null != v && null != g ? v(g(z)) : z
   }),
   Z = (0, Chunk146773.B)(N),
-  T = Chunk647438.memo(function(e) {
+  w = Chunk647438.memo(function(e) {
     let {
       name: t,
       onDismiss: n,
@@ -243,7 +243,7 @@ let N = Chunk647438.memo(function(e) {
       })
     })
   }),
-  w = Chunk647438.memo(function(e) {
+  T = Chunk647438.memo(function(e) {
     let {
       category: t
     } = e, n = (0, s.e7)([v.Z], () => v.Z.isVoiceCategoryCollapsed(t.guild.id)), l = i.useCallback(() => {

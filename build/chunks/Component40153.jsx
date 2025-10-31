@@ -52,7 +52,7 @@ function _(e, t) {
   }
 }
 
-function O(e) {
+function y(e) {
   let {
     name: t,
     targetNode: n,
@@ -76,7 +76,7 @@ function O(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     name: t,
     targetNode: n,
@@ -120,11 +120,11 @@ let v = Chunk647438.memo(function(e) {
   return (0, r.jsxs)("div", {
     className: m.wrapper,
     "aria-hidden": true,
-    children: [(0, r.jsx)(O, {
+    children: [(0, r.jsx)(y, {
       name: t,
       targetNode: n,
       below: l
-    }), a ? (0, r.jsx)(y, {
+    }), a ? (0, r.jsx)(O, {
       name: t,
       targetNode: n,
       onDragOverChanged: o

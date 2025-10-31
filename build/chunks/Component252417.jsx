@@ -19,8 +19,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk777267 = require("./777267.js");
-let O = Chunk481060.EFr.SIZE_40,
-  y = (0, Chunk481060.pxk)(O);
+let y = Chunk481060.EFr.SIZE_40,
+  O = (0, Chunk481060.pxk)(y);
 
 function v(e) {
   let {
@@ -39,13 +39,13 @@ function v(e) {
     activities: f.Z.getActivities(t.id),
     isMobileOnline: f.Z.isMobileOnline(t.id)
   })), Z = (0, h.Z)(t.id), {
-    voiceActivityStatusEnabled: T
+    voiceActivityStatusEnabled: w
   } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
   }), {
-    voiceChannel: w
+    voiceChannel: T
   } = (0, u.Z)({
-    userId: T ? t.id : true,
+    userId: w ? t.id : true,
     guildId: j
   });
   return (0, r.jsxs)(o.P3F, {
@@ -102,9 +102,9 @@ function v(e) {
       })
     },
     children: [(0, r.jsx)(o.qEK, {
-      src: t.getAvatarURL(j, y),
+      src: t.getAvatarURL(j, O),
       "aria-label": t.username,
-      size: O,
+      size: y,
       status: I ? m.Skl.UNKNOWN : v,
       statusBackdropColor: I ? true : (0, o.QFD)(E),
       isMobile: N,
@@ -119,7 +119,7 @@ function v(e) {
         user: t,
         activities: P,
         applicationStream: Z,
-        voiceChannel: w
+        voiceChannel: T
       })]
     })]
   })

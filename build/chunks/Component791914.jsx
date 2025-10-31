@@ -42,25 +42,25 @@ function v(e) {
     location: "RecentsHeader"
   }), x = (0, i.e7)([s.Z], () => s.Z.getUnseenInviteCount()), E = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
   return (0, r.jsxs)(u.h4, {
-    className: y.header,
+    className: O.header,
     children: [(0, r.jsxs)("div", {
-      className: y.headerTitle,
+      className: O.headerTitle,
       children: [(0, r.jsx)(o.xx7, {
         size: "md",
         color: "currentColor",
-        className: y.inboxIcon
+        className: O.inboxIcon
       }), (0, r.jsx)(o.Heading, {
-        className: y.inboxTitle,
+        className: O.inboxTitle,
         variant: "text-lg/semibold",
         color: "interactive-active",
-        children: O.intl.string(O.t.GSmTKJ)
+        children: y.intl.string(y.t.GSmTKJ)
       }), (0, r.jsxs)(o.kL8, {
-        className: y.controls,
+        className: O.controls,
         onClick: e => e.stopPropagation(),
         focusProps: {
           enabled: false
         },
-        "aria-label": O.intl.string(O.t["8k+6QY"]),
+        "aria-label": y.intl.string(y.t["8k+6QY"]),
         children: [(0, r.jsx)(j, {
           tab: t
         }), (0, r.jsx)(g.Z, {
@@ -68,50 +68,50 @@ function v(e) {
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: y.headerTabs,
+      className: O.headerTabs,
       children: (0, r.jsxs)(o.njP, {
         selectedItem: t,
         type: "top",
         look: "brand",
         onItemSelect: n,
-        className: y.tabBar,
+        className: O.tabBar,
         children: [(0, r.jsxs)(o.njP.Item, {
           id: l.X.FOR_YOU,
-          "aria-label": O.intl.string(O.t["En+D+u"]),
-          className: y.tab,
-          children: [O.intl.string(O.t["En+D+u"]), (null == f ? true : f.badgeForYou) ? (0, r.jsx)(o.fWl, {
+          "aria-label": y.intl.string(y.t["En+D+u"]),
+          className: O.tab,
+          children: [y.intl.string(y.t["En+D+u"]), (null == f ? true : f.badgeForYou) ? (0, r.jsx)(o.fWl, {
             color: a.Z.STATUS_DANGER,
-            className: y.iconBadge
+            className: O.iconBadge
           }) : null]
         }), (0, r.jsx)(o.njP.Item, {
           id: l.X.UNREADS,
-          className: y.tab,
-          children: O.intl.string(O.t.sRUdB8)
+          className: O.tab,
+          children: y.intl.string(y.t.sRUdB8)
         }), (0, r.jsx)(o.njP.Item, {
-          "aria-label": O.intl.string(O.t.GRZF96),
+          "aria-label": y.intl.string(y.t.GRZF96),
           id: l.X.MENTIONS,
-          className: y.tab,
-          children: O.intl.string(O.t.GRZF96)
+          className: O.tab,
+          children: y.intl.string(y.t.GRZF96)
         }), C ? (0, r.jsxs)(o.njP.Item, {
           "aria-label": "game_invites",
           id: l.X.GAME_INVITES,
-          className: y.tab,
-          children: [O.intl.string(O.t.apq3cU), x > 0 ? (0, r.jsx)(o.fWl, {
+          className: O.tab,
+          children: [y.intl.string(y.t.apq3cU), x > 0 ? (0, r.jsx)(o.fWl, {
             color: a.Z.STATUS_DANGER,
-            className: y.iconBadge
+            className: O.iconBadge
           }) : null]
         }) : null, b && _ ? (0, r.jsx)(o.njP.Item, {
-          "aria-label": O.intl.string(O.t["2pAkDA"]),
+          "aria-label": y.intl.string(y.t["2pAkDA"]),
           id: l.X.BOOKMARKS,
-          className: y.tab,
-          children: 0 === E ? O.intl.string(O.t["2pAkDA"]) : O.intl.formatToPlainString(O.t.I4fryG, {
+          className: O.tab,
+          children: 0 === E ? y.intl.string(y.t["2pAkDA"]) : y.intl.formatToPlainString(y.t.I4fryG, {
             count: E
           })
         }) : null, v ? (0, r.jsx)(o.njP.Item, {
           "aria-label": "scheduled",
           id: l.X.SCHEDULED,
-          className: y.tab,
-          children: O.intl.string(O.t.Fn6Odn)
+          className: O.tab,
+          children: y.intl.string(y.t.Fn6Odn)
         }) : null]
       })
     })]

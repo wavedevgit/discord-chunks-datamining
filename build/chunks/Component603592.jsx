@@ -22,8 +22,8 @@ let h = Chunk647438.forwardRef(function(e, t) {
     icon: m,
     selected: b,
     tooltip: _,
-    upperBadge: O,
-    lowerBadge: y,
+    upperBadge: y,
+    lowerBadge: O,
     lowerBadgeSize: v,
     showPill: j = true,
     className: C,
@@ -32,7 +32,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
     onMouseEnter: S,
     onMouseLeave: I,
     onMouseDown: P
-  } = e, N = (0, a.Ie)(h), [Z, T] = i.useState(false);
+  } = e, N = (0, a.Ie)(h), [Z, w] = i.useState(false);
   return (0, r.jsxs)(u.H, {
     children: [j ? (0, r.jsx)("div", {
       className: p.pill,
@@ -45,8 +45,8 @@ let h = Chunk647438.forwardRef(function(e, t) {
       selected: b,
       children: (0, r.jsx)(s.aRk, {
         selected: true,
-        upperBadge: O,
-        lowerBadge: y,
+        upperBadge: y,
+        lowerBadge: O,
         lowerBadgeSize: v,
         children: (0, r.jsx)(s.P3F, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -68,10 +68,10 @@ let h = Chunk647438.forwardRef(function(e, t) {
         }({
           innerRef: t,
           onMouseEnter: () => {
-            null == S || S(), T(true)
+            null == S || S(), w(true)
           },
           onMouseLeave: () => {
-            null == I || I(), T(false)
+            null == I || I(), w(false)
           },
           onMouseDown: P,
           className: o()(p.circleIconButton, C, {

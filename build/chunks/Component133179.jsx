@@ -20,13 +20,13 @@ function c(e) {
     name: c,
     url: d
   } = t, u = (null == n ? true : n.id) === i;
-  return (0, r.jsxs)(o.Z, {
-    direction: o.Z.Direction.VERTICAL,
-    justify: o.Z.Justify.CENTER,
-    align: o.Z.Align.CENTER,
-    children: [(0, r.jsx)(o.Z, {
-      justify: o.Z.Justify.CENTER,
-      align: o.Z.Align.CENTER,
+  return (0, r.jsxs)(s.Z, {
+    direction: s.Z.Direction.VERTICAL,
+    justify: s.Z.Justify.CENTER,
+    align: s.Z.Align.CENTER,
+    children: [(0, r.jsx)(s.Z, {
+      justify: s.Z.Justify.CENTER,
+      align: s.Z.Align.CENTER,
       children: (0, r.jsx)("div", {
         style: {
           backgroundImage: "url(".concat(d, ")")
@@ -35,7 +35,7 @@ function c(e) {
           [a.selected]: u
         })
       })
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       className: l()(a.sourceName, {
         [a.selected]: u
       }),

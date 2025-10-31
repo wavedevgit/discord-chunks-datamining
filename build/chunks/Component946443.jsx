@@ -30,12 +30,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk915087 = require("./915087.js");
 
 function S(e) {
-  var t, n, l, a, O, S, P;
+  var t, n, l, a, y, S, P;
   let {
     onJump: N,
     showTutorial: Z,
-    setSeenTutorial: T,
-    closePopout: w
+    setSeenTutorial: w,
+    closePopout: T
   } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
     loadState: L,
     channels: M
@@ -63,15 +63,15 @@ function S(e) {
     (a.offsetTop < s || a.offsetTop > s + c) && i.scrollTo({
       to: a.offsetTop
     })
-  }), a = R, O = D, i.useEffect(() => {
+  }), a = R, y = D, i.useEffect(() => {
     let e = () => {
       let e = a.channels.find(e => !e.collapsed);
-      null != e && O.markChannelRead(e)
+      null != e && y.markChannelRead(e)
     };
     return b.S.subscribe(C.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
       b.S.unsubscribe(C.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [O, a.channels]), S = D, i.useEffect(() => {
+  }, [y, a.channels]), S = D, i.useEffect(() => {
     let e = e => {
       ((0, _.isMac)() || (0, _.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && S.undoMarkChannelRead()
     };
@@ -82,14 +82,14 @@ function S(e) {
     m.default.track(C.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
-  }, []), i.useEffect(() => (p.Z.subscribe("CONNECTION_OPEN", w), () => {
-    p.Z.unsubscribe("CONNECTION_OPEN", w)
-  }), [w]), (0, h.ZP)(() => (b.S.subscribe(C.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+  }, []), i.useEffect(() => (p.Z.subscribe("CONNECTION_OPEN", T), () => {
+    p.Z.unsubscribe("CONNECTION_OPEN", T)
+  }), [T]), (0, h.ZP)(() => (b.S.subscribe(C.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
     b.S.unsubscribe(C.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
   let U = (0, g.Z)("unreads", A);
   if (0 === M.length) {
-    return (0, r.jsx)(y.Z, {
+    return (0, r.jsx)(O.Z, {
       Icon: d.xx7,
       header: x.intl.string(x.t["6XMM+D"]),
       tip: (null == (P = s().os) ? true : P.family) === "OS X" ? x.intl.string(x.t.w9uDOW) : x.intl.string(x.t.BiUJC6)
@@ -143,7 +143,7 @@ function S(e) {
           onScroll: L === j.jd.Done ? true : k,
           className: o()(E.scroller, "group-spacing-".concat(G)),
           children: [Z ? (0, r.jsx)(I, {
-            setSeenTutorial: T
+            setSeenTutorial: w
           }) : null, (0, v.Z)(M, D, N), L === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: E.spinner
           })]

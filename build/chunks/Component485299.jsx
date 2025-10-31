@@ -31,8 +31,8 @@ function u() {
         let {
           screenSources: i,
           windowSources: l
-        } = t, s = null != (r = l.find(t => "windowHandle" in e ? (0, o.Z)(t.id, e.windowHandle) : t.id === e.id)) ? r : i.find(t => e.id === t.id);
-        null != s && n(s.url)
+        } = t, o = null != (r = l.find(t => "windowHandle" in e ? (0, s.Z)(t.id, e.windowHandle) : t.id === e.id)) ? r : i.find(t => e.id === t.id);
+        null != o && n(o.url)
       })
     }
   }, [module]), (0, Chunk951288.jsx)("div", {

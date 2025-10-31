@@ -101,8 +101,8 @@ class M extends Chunk98597.ZP {
       canReorderChannel: f,
       isSubscriptionGated: b,
       isFavoriteSuggestion: _,
-      subtitle: O,
-      forceTopLevelThread: y,
+      subtitle: y,
+      forceTopLevelThread: O,
       embeddedApps: v,
       resolvedUnreadSetting: j,
       withGuildIcon: C,
@@ -192,7 +192,7 @@ class M extends Chunk98597.ZP {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
-      c.Z.preload(null != t ? t : T.ME, e.id)
+      c.Z.preload(null != t ? t : w.ME, e.id)
     }), R(this, "renderPopout", e => {
       let {
         channel: t,
@@ -212,7 +212,7 @@ class M extends Chunk98597.ZP {
       let {
         channel: t
       } = this.props;
-      if (t.type === T.d4z.GROUP_DM) return void(0, u.jW)(e, async () => {
+      if (t.type === w.d4z.GROUP_DM) return void(0, u.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("25421")]).then(n.bind(n, 354741));
@@ -221,7 +221,7 @@ class M extends Chunk98597.ZP {
           selected: true
         }))
       });
-      if (t.type === T.d4z.DM) {
+      if (t.type === w.d4z.DM) {
         let i = E.default.getUser(t.getRecipientId());
         null != i && (0, u.jW)(e, async () => {
           let {
@@ -269,15 +269,15 @@ function G(e) {
   } = e, {
     hasActiveThreads: c,
     hasMoreActiveThreads: u
-  } = (0, O.JQ)(t), d = (0, a.cj)([C.ZP], () => ({
+  } = (0, y.JQ)(t), d = (0, a.cj)([C.ZP], () => ({
     unread: C.ZP.hasUnread(t.id),
     ackMessageId: C.ZP.ackMessageId(t.id),
     isLowImportanceMention: C.ZP.getIsMentionLowImportance(t.id)
-  })), g = (0, a.e7)([x.ZP], () => x.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([y.Z, j.Z], () => {
-    let e = y.Z.getChannel(t.parent_id);
+  })), g = (0, a.e7)([x.ZP], () => x.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([O.Z, j.Z], () => {
+    let e = O.Z.getChannel(t.parent_id);
     return {
-      canManageChannel: j.Z.can(T.Plq.MANAGE_CHANNELS, t),
-      canReorderChannel: true !== i && (n.id === w._ || (null != e ? j.Z.can(T.Plq.MANAGE_CHANNELS, e) : j.Z.can(T.Plq.MANAGE_CHANNELS, n)))
+      canManageChannel: j.Z.can(w.Plq.MANAGE_CHANNELS, t),
+      canReorderChannel: true !== i && (n.id === T._ || (null != e ? j.Z.can(w.Plq.MANAGE_CHANNELS, e) : j.Z.can(w.Plq.MANAGE_CHANNELS, n)))
     }
   }), v = (0, a.e7)([_.Z], () => _.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: E,

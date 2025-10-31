@@ -1,11 +1,11 @@
-/** Chunk was on 65174 **/
-/** chunk id: 668519, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 56784 **/
+/** chunk id: 668519, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => o
+  a: () => u
 });
 var Chunk818083 = require("./818083.js"),
   Chunk984134 = require("./984134.js");
-let a = (0, Chunk818083.B)({
+let l = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-01_go_live_modal_refresh",
   label: "Go Live Modal Refresh",
@@ -21,21 +21,21 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function u(e) {
   let {
     location: t,
-    autoTrackExposure: r = true
+    autoTrackExposure: n = true
   } = e, {
-    isInHoldout: n
-  } = l.Y.useExperiment({
+    isInHoldout: r
+  } = i.Y.useExperiment({
     location: t
   }, {
-    autoTrackExposure: r
+    autoTrackExposure: n
   });
-  return a.useExperiment({
+  return l.useExperiment({
     location: t
   }, {
-    disable: n,
-    autoTrackExposure: r
+    disable: r,
+    autoTrackExposure: n
   })
 }

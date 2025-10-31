@@ -75,7 +75,7 @@ function P(e) {
       children: [(0, r.jsx)(N, {
         channel: i,
         gotoChannel: a
-      }), (0, r.jsx)(w, {
+      }), (0, r.jsx)(T, {
         channel: i,
         gotoChannel: a,
         mentionCount: c
@@ -101,7 +101,7 @@ function N(e) {
   return t.isPrivate() ? (0, r.jsx)(Z, {
     channel: t,
     gotoChannel: n
-  }) : (0, r.jsx)(T, {
+  }) : (0, r.jsx)(w, {
     channel: t,
     gotoChannel: n
   })
@@ -124,7 +124,7 @@ function Z(e) {
   })
 }
 
-function T(e) {
+function w(e) {
   let {
     channel: t,
     gotoChannel: n
@@ -140,12 +140,12 @@ function T(e) {
   })
 }
 
-function w(e) {
+function T(e) {
   let {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, a.e7)([C.ZP], () => C.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), p = (0, f.ZP)(t, false), h = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5N, {
+  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([O.Z], () => O.Z.getChannel(t.parent_id)), u = (0, a.e7)([C.ZP], () => C.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), p = (0, f.ZP)(t, false), h = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5N, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(A, {
     channel: t
@@ -196,13 +196,13 @@ function A(e) {
     status: i,
     activities: l,
     applicationStream: o
-  } = (0, a.cj)([x.default, j.Z, O.Z], () => {
+  } = (0, a.cj)([x.default, j.Z, y.Z], () => {
     let e = x.default.getUser(t.getRecipientId());
     return {
       user: e,
       status: null != e ? j.Z.getStatus(e.id) : null,
       activities: null != e ? j.Z.getActivities(e.id) : null,
-      applicationStream: null != e ? O.Z.getAnyStreamForUser(e.id) : null
+      applicationStream: null != e ? y.Z.getAnyStreamForUser(e.id) : null
     }
   }), {
     voiceActivityStatusEnabled: s

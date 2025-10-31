@@ -33,7 +33,7 @@ function E(e, t) {
 
 function S(e) {
   var t;
-  let n = (0, i.e7)([y.ZP], () => y.ZP.isMuted(e)),
+  let n = (0, i.e7)([O.ZP], () => O.ZP.isMuted(e)),
     r = C.Z.useConfig({
       location: "useGuildMediaState"
     }).enabled,
@@ -44,11 +44,11 @@ function S(e) {
     N = (0, l.NX)(P),
     {
       guildHasVoice: Z,
-      guildHasVideo: T,
-      selectedVoiceChannelHasVideo: w
-    } = (0, i.cj)([O.Z, v.Z, m.Z, b.Z, g.Z], () => {
+      guildHasVideo: w,
+      selectedVoiceChannelHasVideo: T
+    } = (0, i.cj)([y.Z, v.Z, m.Z, b.Z, g.Z], () => {
       var t;
-      let n = O.Z.getVoiceChannelId(),
+      let n = y.Z.getVoiceChannelId(),
         r = null == (t = m.Z.getGuild(e)) ? true : t.afkChannelId,
         i = v.Z.getUsersWithVideo(e),
         l = (0, s.DX)(v.Z.getVoiceStates(e));
@@ -71,20 +71,20 @@ function S(e) {
       }
     }, [e, x]),
     A = f.default.getId();
-  return (0, i.cj)([O.Z, g.Z, o.ZP, d.Z, h.Z, b.Z], () => {
+  return (0, i.cj)([y.Z, g.Z, o.ZP, d.Z, h.Z, b.Z], () => {
     var t, n, r;
-    let i = O.Z.getVoiceChannelId(),
+    let i = y.Z.getVoiceChannelId(),
       l = (null == (t = g.Z.getChannel(i)) ? true : t.guild_id) === e,
       c = false,
       f = false,
       m = false,
       _ = false,
-      y = false,
+      O = false,
       v = false;
     if (!l && x) return {
       audio: c,
       video: _,
-      screenshare: y,
+      screenshare: O,
       liveStage: m,
       activeEvent: f,
       activity: v,
@@ -97,7 +97,7 @@ function S(e) {
       E = l && null != (r = null == (n = g.Z.getChannel(i)) ? true : n.isGuildStageVoice()) && r,
       P = !!l && null != h.Z.getActiveStreamForUser(A, e),
       R = (0, s.aK)(h.Z.getAllApplicationStreams()).some(t => t.guildId === e),
-      D = l && w,
+      D = l && T,
       L = (() => {
         if (N) return I.length > 0;
         for (let e of I) {
@@ -107,14 +107,14 @@ function S(e) {
         returnfalse
       })(),
       M = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return l ? (c = true, f = (null == S ? true : S.channel_id) === i, m = E, _ = D, y = P, v = M) : (c = Z, f = null != S, m = C, _ = T, y = R, v = L), {
+    return l ? (c = true, f = (null == S ? true : S.channel_id) === i, m = E, _ = D, O = P, v = M) : (c = Z, f = null != S, m = C, _ = w, O = R, v = L), {
       audio: c,
       video: _,
-      screenshare: y,
+      screenshare: O,
       liveStage: m,
       activeEvent: f,
       activity: v,
       isCurrentUserConnected: l || E
     }
-  }, [e, x, w, A, N, I, S, Z, T])
+  }, [e, x, T, A, N, I, S, Z, w])
 }

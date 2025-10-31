@@ -3,7 +3,7 @@
 require.d(exports, {
   E_: () => C,
   Ti: () => y,
-  Yw: () => b
+  Yw: () => S
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -74,7 +74,7 @@ let x = {
     throw Error("Using uninitialized GoLiveModalContextDispatch")
   });
 
-function S(e, t) {
+function b(e, t) {
   switch (t.type) {
     case "set_mute_audio":
       return g(_({}, e), {
@@ -143,7 +143,7 @@ function S(e, t) {
   }
 }
 
-function b(e) {
+function S(e) {
   let {
     dispatch: t,
     state: n,
@@ -166,23 +166,23 @@ function y(e, t, n) {
   } = (0, f._I)({
     location: "useCreateGoLiveModalState"
   }), {
-    preset: b,
+    preset: S,
     resolution: y,
     fps: C,
     soundshareEnabled: O
-  } = (0, s.cj)([d.Z], () => d.Z.getState());
-  v && (b = h.ApplicationStreamPresets.PRESET_AUTO);
-  let w = (0, s.e7)([u.Z], () => u.Z.getInputDeviceId()),
+  } = (0, o.cj)([d.Z], () => d.Z.getState());
+  v && (S = h.ApplicationStreamPresets.PRESET_AUTO);
+  let w = (0, o.e7)([u.Z], () => u.Z.getInputDeviceId()),
     P = null != (r = c.I0.useSetting()) && r,
-    Z = null != (l = c.eo.useSetting()) && l;
-  b in h.ApplicationStreamPresets && (b !== h.ApplicationStreamPresets.PRESET_AUTO || j) || (b = h.ApplicationStreamPresets.PRESET_VIDEO), (0, p.Z)(h.ApplicationStreamPresets.PRESET_CUSTOM, y, C, t, n) || (y = h.ApplicationStreamResolutions.RESOLUTION_720, C = h.ApplicationStreamFPS.FPS_30);
-  let [I, E] = i.useReducer(S, g(_({}, x), {
+    T = null != (l = c.eo.useSetting()) && l;
+  S in h.ApplicationStreamPresets && (S !== h.ApplicationStreamPresets.PRESET_AUTO || j) || (S = h.ApplicationStreamPresets.PRESET_VIDEO), (0, p.Z)(h.ApplicationStreamPresets.PRESET_CUSTOM, y, C, t, n) || (y = h.ApplicationStreamResolutions.RESOLUTION_720, C = h.ApplicationStreamFPS.FPS_30);
+  let [Z, I] = i.useReducer(b, g(_({}, x), {
     muteStreamAudio: !O,
-    preset: b,
+    preset: S,
     resolution: y,
     fps: C,
     hidePreview: P,
-    notifyFriends: Z,
+    notifyFriends: T,
     selectedSource: e,
     audioSourceId: w
   }));
@@ -190,18 +190,18 @@ function y(e, t, n) {
     var e, t;
     a.Z.hasPermission(m.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
-    }).then(e => E({
+    }).then(e => I({
       type: "set_has_permission",
       value: e
-    })), null == (e = (t = o.Z.window).getMediaSourceId) || e.call(t).then(e => {
-      E({
+    })), null == (e = (t = s.Z.window).getMediaSourceId) || e.call(t).then(e => {
+      I({
         type: "set_discord_source_id",
         sourceId: null != e ? e : ""
       })
     })
   }, []), {
-    state: I,
-    dispatch: E
+    state: Z,
+    dispatch: I
   }
 }
 

@@ -125,7 +125,7 @@ class ef extends(r = Chunk647438.PureComponent) {
       initialized: l
     } = this.state, {
       scrollTop: o
-    } = w.Z.getGuildDimensions(r);
+    } = T.Z.getGuildDimensions(r);
     null != n ? (this.scrollToChannel(n), p.Z.clearChannelListScrollTo(r)) : r !== e.guildId ? null != o && this.scrollTo(o) : i !== e.selectedChannelId ? this.scrollToChannel(i) : !t.initialized && l && (null == o && null != i ? this.scrollToChannel(i, false, el.yE, this.handleListScroll) : this.scrollTo(null != o ? o : 0, this.handleListScroll)), this.testShouldSkipTutorial()
   }
   getSectionRowsFromChannel(e) {
@@ -478,7 +478,7 @@ class ef extends(r = Chunk647438.PureComponent) {
       if (u.record.type === eo.d4z.GUILD_CATEGORY) return 40;
       let {
         isFavoritesPerk: h
-      } = O.Z.getCurrentConfig({
+      } = y.Z.getCurrentConfig({
         location: "channel_list"
       }, {
         autoTrackExposure: true
@@ -613,7 +613,7 @@ class ef extends(r = Chunk647438.PureComponent) {
               disableManageChannels: p
             }, ei.z.GUILD_DIRECTORY);
           case ei.z.GUILD_MOD_DASH_MEMBER_SAFETY:
-            return (0, i.jsx)(y.Z, {
+            return (0, i.jsx)(O.Z, {
               guild: r,
               selected: a === ea.oC.MEMBER_SAFETY
             }, ei.z.GUILD_MOD_DASH_MEMBER_SAFETY);
@@ -637,7 +637,7 @@ class ef extends(r = Chunk647438.PureComponent) {
       let {
         category: b,
         channel: _
-      } = m, O = b instanceof D.VR, j = _.record, C = "".concat(t).concat(_.id);
+      } = m, y = b instanceof D.VR, j = _.record, C = "".concat(t).concat(_.id);
       switch (j.type) {
         case eo.d4z.GUILD_ANNOUNCEMENT:
         case eo.d4z.GUILD_TEXT:
@@ -655,7 +655,7 @@ class ef extends(r = Chunk647438.PureComponent) {
               subtitle: _.subtitle,
               disableManageChannels: p,
               canBeNewChannel: f && t === u.recentsSectionNumber,
-              isFavoriteCategory: O,
+              isFavoriteCategory: y,
               withGuildIcon: g
             }), _.threadCount > 0 ? (0, i.jsx)(X.Z, {
               withGuildIcon: g,
@@ -677,7 +677,7 @@ class ef extends(r = Chunk647438.PureComponent) {
             voiceStates: null != (I = d[_.id]) ? I : [],
             speakerVoiceStates: null != (P = h[_.id]) ? P : [],
             disableManageChannels: p,
-            isFavoriteCategory: O
+            isFavoriteCategory: y
           }, C);
         case eo.d4z.GUILD_VOICE:
           return (0, i.jsx)(er.Z, {
@@ -691,7 +691,7 @@ class ef extends(r = Chunk647438.PureComponent) {
             subtitle: _.subtitle,
             disableManageChannels: p,
             showTutorial: _.isFirstVoiceChannel,
-            isFavoriteCategory: O,
+            isFavoriteCategory: y,
             withGuildIcon: g
           }, C);
         case eo.d4z.GUILD_STORE:
@@ -780,8 +780,8 @@ let eg = e => {
     selectedVoiceChannelId: r
   } = e, o = (0, u.e7)([g.Z], () => g.Z.keyboardModeEnabled), {
     analyticsLocations: a
-  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([T.Z], () => T.Z.getChannel(n)), p = (0, u.e7)([T.Z], () => T.Z.getChannel(r)), h = (0, u.e7)([R.Z], () => R.Z.getGuildId()), _ = (0, C.DM)(t), O = l.useRef(null), y = l.useCallback((e, t) => {
-    let n = O.current;
+  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([w.Z], () => w.Z.getChannel(n)), p = (0, u.e7)([w.Z], () => w.Z.getChannel(r)), h = (0, u.e7)([R.Z], () => R.Z.getGuildId()), _ = (0, C.DM)(t), y = l.useRef(null), O = l.useCallback((e, t) => {
+    let n = y.current;
     if (null != n)
       if (eo.Xyh.test(t) || (0, ea.AB)(t)) n.scrollToChannel(t, false, 2 * el.yE, () => {
         requestAnimationFrame(() => {
@@ -794,18 +794,18 @@ let eg = e => {
         null == (r = document.querySelector(e)) || r.focus()
       }
   }, []), v = l.useCallback(() => new Promise(e => {
-    let t = O.current;
+    let t = y.current;
     if (null == t) return e();
     t.scrollTo(0, () => requestAnimationFrame(() => e()))
   }), []), j = l.useCallback(() => new Promise(e => {
-    let t = O.current;
+    let t = y.current;
     if (null == t) return e();
     t.scrollTo(Number.MAX_SAFE_INTEGER, () => requestAnimationFrame(() => e()))
   }), []), x = (0, c.ZP)({
     id: "channels",
     defaultFocused: null != n ? n : true,
     isEnabled: o,
-    setFocus: y,
+    setFocus: O,
     scrollToStart: v,
     scrollToEnd: j
   }), E = x.setFocus;
@@ -821,7 +821,7 @@ let eg = e => {
         navigator: x,
         children: (0, i.jsx)(ef, ep(ed({}, e), {
           listNavigator: x,
-          ref: O,
+          ref: y,
           selectedChannel: d,
           selectedVoiceChannel: p,
           stageChannelSpeakerVoiceStates: S,
@@ -837,7 +837,7 @@ function em(e) {
   let t = (0, M.o)(),
     {
       isFavoritesPerk: n
-    } = (0, O.z)("favorites-channel-list"),
+    } = (0, y.z)("favorites-channel-list"),
     {
       density: r
     } = (0, d.TCT)();

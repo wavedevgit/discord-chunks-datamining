@@ -1,11 +1,11 @@
 /** Chunk was on 56710 **/
 /** chunk id: 865112, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  RB: () => y,
+  RB: () => O,
   VH: () => _,
   Vi: () => v,
   Vu: () => j,
-  q7: () => O
+  q7: () => y
 });
 var Chunk692547 = require("./692547.js"),
   Chunk497089 = require("./497089.js"),
@@ -33,7 +33,7 @@ let _ = {
     ADD_FRIEND: Chunk389765,
     FIRST_MESSAGE: Chunk178561
   },
-  O = e => {
+  y = e => {
     switch (e.type) {
       case "lifecycle_item":
         switch (e.item_enum) {
@@ -60,7 +60,7 @@ let _ = {
         return "NOTIFICATION_CENTER"
     }
   },
-  y = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
+  O = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
   v = e => {
     switch (e) {
       case i.DY.GO_LIVE_PUSH:

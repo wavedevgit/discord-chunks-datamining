@@ -22,14 +22,14 @@ function b() {
   var e, t;
   let {
     pathname: n
-  } = (0, Chunk843611.TH)(), b = require.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.ME)) && require !== Chunk981631.Z5c.CHANNEL(Chunk981631.ME) && require !== Chunk981631.Z5c.ME_ACTIVITY, _ = (0, Chunk442837.e7)([Chunk55589.Z], () => Chunk55589.Z.getPrivateChannelIds()[0]), O = (0, Chunk442837.e7)([Chunk944486.Z], () => {
+  } = (0, Chunk843611.TH)(), b = require.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.ME)) && require !== Chunk981631.Z5c.CHANNEL(Chunk981631.ME) && require !== Chunk981631.Z5c.ME_ACTIVITY, _ = (0, Chunk442837.e7)([Chunk55589.Z], () => Chunk55589.Z.getPrivateChannelIds()[0]), y = (0, Chunk442837.e7)([Chunk944486.Z], () => {
     var e;
     return null != (e = Chunk944486.Z.getChannelId(Chunk981631.ME)) ? module : _
-  }), [y, v] = Chunk647438.useState(false), j = (0, Chunk91192.Ie)("dms");
+  }), [O, v] = Chunk647438.useState(false), j = (0, Chunk91192.Ie)("dms");
   return (0, Chunk951288.jsxs)(Chunk682662.H, {
     children: [(0, Chunk951288.jsx)(Chunk276952.Z, {
       selected: b,
-      hovered: y,
+      hovered: O,
       className: Chunk815141.pill
     }), (0, Chunk951288.jsx)(Chunk662146.Z, {
       color: Chunk481060.aML.Colors.PRIMARY,
@@ -61,13 +61,13 @@ function b() {
           onMouseEnter: () => v(true),
           onMouseLeave: () => v(false),
           onClick: Chunk981631.dG4,
-          selected: b || y,
+          selected: b || O,
           ariaLabel: Chunk388032.intl.string(Chunk388032.t.YUU0RF),
           "aria-owns": "guild-list-dms",
-          "aria-selected": b || y
+          "aria-selected": b || O
         }, j), t = t = {
           to: {
-            pathname: null != O ? Chunk981631.Z5c.CHANNEL(Chunk981631.ME, O) : Chunk981631.Z5c.ME_DMS,
+            pathname: null != y ? Chunk981631.Z5c.CHANNEL(Chunk981631.ME, y) : Chunk981631.Z5c.ME_DMS,
             state: {
               analyticsSource: {
                 page: Chunk981631.ZY5.GUILD_CHANNEL,

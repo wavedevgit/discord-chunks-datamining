@@ -16,7 +16,7 @@ function c(e) {
     onClose: t
   } = e, {
     analyticsLocations: n
-  } = (0, s.ZP)(l.Z.GO_LIVE_MODAL_V2);
+  } = (0, o.ZP)(l.Z.GO_LIVE_MODAL_V2);
   return (0, r.jsx)(i.sY7, {
     options: [{
       name: "SD",
@@ -30,7 +30,7 @@ function c(e) {
     value: "sd",
     look: "pill",
     onChange: function(e) {
-      "hd" === e.value && (0, o.E)({
+      "hd" === e.value && (0, s.E)({
         analyticsLocation: null == n ? true : n[0],
         onClose: t
       })

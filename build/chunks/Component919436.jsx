@@ -51,7 +51,7 @@ function Z(e) {
   return e
 }
 
-function T(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = {
+let T = {
   friction: 28,
   tension: 600
 };
@@ -74,9 +74,9 @@ function A(e) {
     case "opacity":
       return Z({
         duration: 150
-      }, w);
+      }, T);
     case "scale":
-      return Z({}, w);
+      return Z({}, T);
     default:
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
@@ -230,12 +230,12 @@ class R extends(r = Chunk647438.PureComponent) {
     }), N(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, r = t.type === S.d4z.DM ? y.default.getUser(t.getRecipientId()) : null;
+      } = this.props, r = t.type === S.d4z.DM ? O.default.getUser(t.getRecipientId()) : null;
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("31899")]).then(n.bind(n, 131404));
-        return n => (0, i.jsx)(e, T(Z({}, n), {
+        return n => (0, i.jsx)(e, w(Z({}, n), {
           channel: t,
           user: r
         }))
@@ -243,7 +243,7 @@ class R extends(r = Chunk647438.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("25421")]).then(n.bind(n, 354741));
-        return n => (0, i.jsx)(e, T(Z({}, n), {
+        return n => (0, i.jsx)(e, w(Z({}, n), {
           channel: t,
           selected: false
         }))
@@ -264,8 +264,8 @@ let D = Chunk647438.forwardRef(function(e, t) {
     o = (0, s.e7)([b.Z], () => b.Z.getChannelId(), []),
     u = (0, s.e7)([d.Z], () => null != o ? d.Z.getMode(o) : S.WtW.VOICE, [o]),
     p = (0, s.e7)([m.Z], () => m.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    g = (0, s.e7)([O.Z], () => O.Z.getChannelId(), []),
-    y = (0, s.e7)([_.ZP], () => _.ZP.getMentionCount(n), [n]),
+    g = (0, s.e7)([y.Z], () => y.Z.getChannelId(), []),
+    O = (0, s.e7)([_.ZP], () => _.ZP.getMentionCount(n), [n]),
     {
       isFacepileEnabled: v
     } = f.Z.useExperiment({
@@ -278,12 +278,12 @@ let D = Chunk647438.forwardRef(function(e, t) {
     x = false;
   j && (C = u === S.WtW.VOICE, x = u === S.WtW.VIDEO);
   let E = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, i.jsx)(R, T(Z({}, e), {
+  return (0, i.jsx)(R, w(Z({}, e), {
     ref: t,
     channelName: r,
-    unread: y > 0,
+    unread: O > 0,
     selected: g === n,
-    badge: y,
+    badge: O,
     audio: C,
     video: x,
     stream: p,

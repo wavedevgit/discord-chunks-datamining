@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk499951 = require("./499951.js");
 
-function w(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -84,12 +84,12 @@ function R() {
     z = function(e) {
       let t = (0, s.e7)([v.Z], () => v.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
-        r = (0, s.e7)([O.Z], () => {
+        r = (0, s.e7)([y.Z], () => {
           if (!n) returnfalse;
-          let t = O.Z.getCurrentUserActiveStream();
+          let t = y.Z.getCurrentUserActiveStream();
           return null != t && null != e[t.channelId]
         }),
-        i = (0, s.e7)([O.Z], () => O.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
+        i = (0, s.e7)([y.Z], () => y.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
         l = (0, s.e7)([j.Z], () => n && null != t && j.Z.hasVideo(t), [n, t]),
         o = (0, s.Wu)([p.ZP], () => C.default.keys(e).reduce((e, t) => (e.push(...p.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
         a = (0, s.e7)([p.ZP], () => Array.from(p.ZP.getSelfEmbeddedActivities().values()).some(t => {
@@ -129,7 +129,7 @@ function R() {
           selected: true,
           upperBadge: z,
           lowerBadge: W,
-          children: (0, Chunk951288.jsx)(Chunk481060.LYs, (e = w({}, Chunk120356), t = t = {
+          children: (0, Chunk951288.jsx)(Chunk481060.LYs, (e = T({}, Chunk120356), t = t = {
             ariaLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["/uzRss"], {
               guildName: Chunk388032.intl.string(Chunk388032.t.wMWyci),
               mentions: V
@@ -150,7 +150,7 @@ function R() {
                 let {
                   default: e
                 } = await n.e("3190").then(n.bind(n, 631981));
-                return t => (0, r.jsx)(e, w({}, t))
+                return t => (0, r.jsx)(e, T({}, t))
               })
             },
             children: (0, Chunk951288.jsx)("div", {

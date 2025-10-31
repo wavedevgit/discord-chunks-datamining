@@ -39,7 +39,7 @@ let h = new p(Chunk570140.Z, {
     var t, n, r, i, l, p, h, f;
     let {
       guildId: g
-    } = e, m = null != (r = null == (t = o.Z.getGuild(g)) ? true : t.premiumSubscriberCount) ? r : 0, b = s.Z.getStateForGuild(g), _ = a.Z.getStateForGuild(g), O = (0, c.h)([...Object.values(null != (i = null == b ? true : b.unlockedPowerups) ? i : {}), ...Object.values(null != (l = null == _ ? true : _.entitlements) ? l : {})]);
+    } = e, m = null != (r = null == (t = o.Z.getGuild(g)) ? true : t.premiumSubscriberCount) ? r : 0, b = s.Z.getStateForGuild(g), _ = a.Z.getStateForGuild(g), y = (0, c.h)([...Object.values(null != (i = null == b ? true : b.unlockedPowerups) ? i : {}), ...Object.values(null != (l = null == _ ? true : _.entitlements) ? l : {})]);
     h = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -53,7 +53,7 @@ let h = new p(Chunk570140.Z, {
       return e
     }({}, d), f = f = {
       [g]: {
-        lastSeenWarningNotification: new Date(null != (p = null == (n = O[O.length - 1]) ? true : n.ends_at) ? p : Date.now()).getTime(),
+        lastSeenWarningNotification: new Date(null != (p = null == (n = y[y.length - 1]) ? true : n.ends_at) ? p : Date.now()).getTime(),
         lastBoostCount: m
       }
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(h, Object.getOwnPropertyDescriptors(f)) : (function(e, t) {

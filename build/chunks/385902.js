@@ -1,7 +1,7 @@
 /** Chunk was on 56710 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => O,
+  K: () => y,
   _: () => _
 });
 var Chunk647438 = require("./647438.js"),
@@ -30,15 +30,15 @@ function _(e, t) {
     u = null == a ? true : a.allPowerups[i.A$],
     h = (0, d.ZP)(e, u),
     _ = (0, c.q8)(e, t),
-    O = null == u ? true : u.storeRemovalDate,
-    y = null != (n = null == r ? true : r.has(g.GuildFeatures.PARTNERED)) && n,
-    v = _ && null != O && !y && h.type === f.A3.POWERUP_ACTIVATED,
+    y = null == u ? true : u.storeRemovalDate,
+    O = null != (n = null == r ? true : r.has(g.GuildFeatures.PARTNERED)) && n,
+    v = _ && null != y && !O && h.type === f.A3.POWERUP_ACTIVATED,
     j = v ? {
       title: b.intl.formatToPlainString(m.default.mgoPkU, {
         perkName: null == u ? true : u.title
       }),
       description: b.intl.formatToPlainString(m.default.UT9pkI, {
-        dateString: (0, p.Z)(O)
+        dateString: (0, p.Z)(y)
       })
     } : null;
   return {
@@ -47,11 +47,11 @@ function _(e, t) {
   }
 }
 
-function O(e, t) {
-  var n, _, O, y;
+function y(e, t) {
+  var n, _, y, O;
   let v = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
     j = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
-    C = null != (O = (0, u.Z)(e)) && O,
+    C = null != (y = (0, u.Z)(e)) && y,
     x = (0, c.q8)(e, t),
     E = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     S = null == E || null == (n = E.allPowerups) ? true : n[i.A$],
@@ -62,14 +62,14 @@ function O(e, t) {
       var t;
       return null == (t = o.Z.getGuild(e)) ? true : t.features
     }),
-    T = null != (y = null == Z ? true : Z.has(g.GuildFeatures.PARTNERED)) && y,
+    w = null != (O = null == Z ? true : Z.has(g.GuildFeatures.PARTNERED)) && O,
     {
-      onActivate: w
+      onActivate: T
     } = (0, h._C)(e, N),
-    A = !j && C && x && null != S && !T && I.type === f.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
+    A = !j && C && x && null != S && !w && I.type === f.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
     R = r.useCallback(e => {
-      w(e)
-    }, [w]),
+      T(e)
+    }, [T]),
     D = r.useMemo(() => {
       if (!A) return null;
       let e = (0, p.Z)(P),

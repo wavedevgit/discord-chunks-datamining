@@ -123,7 +123,7 @@ let B = Chunk647438.memo(function e(t) {
     message: Y.message,
     channel: q,
     hasThread: false
-  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYM/"] : m.Z.isIgnoredForMessage(s) ? i = L.t["VFWjc+"] : (0, y.DQ)(s) && W && (i = L.t.xfkfTK), true !== i) ? (0, r.jsx)(F, {
+  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYM/"] : m.Z.isIgnoredForMessage(s) ? i = L.t["VFWjc+"] : (0, O.DQ)(s) && W && (i = L.t.xfkfTK), true !== i) ? (0, r.jsx)(F, {
     className: M,
     compact: R,
     count: 1,
@@ -131,7 +131,7 @@ let B = Chunk647438.memo(function e(t) {
   }) : (0, r.jsx)(x.Z, {
     compact: R,
     className: o()(M, {
-      [k.ephemeral]: (0, O.Pv)(s),
+      [k.ephemeral]: (0, y.Pv)(s),
       [k.disableInteraction]: H,
       [k.groupStart]: t.isGroupStart
     }),
@@ -163,9 +163,9 @@ let B = Chunk647438.memo(function e(t) {
       enabledContentHarmTypeFlags: eu,
       ctaButtonType: ed
     }),
-    childrenExecutedCommand: (0, w.Z)(s, l, R),
+    childrenExecutedCommand: (0, T.Z)(s, l, R),
     childrenMessageContent: (0, N.Z)(t, er),
-    childrenSystemMessage: (0, T.Z)(t),
+    childrenSystemMessage: (0, w.Z)(t),
     onContextMenu: B,
     onClick: V,
     hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),

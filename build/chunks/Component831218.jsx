@@ -326,9 +326,9 @@ class F extends(r = Chunk647438.Component) {
         c = n.some(e => (0, v.Z)(e)),
         u = {
           num_users_visible: a.length,
-          num_users_visible_with_mobile_indicator: s.filter(e => null != e && w.Z.isMobileOnline(e)).length
+          num_users_visible_with_mobile_indicator: s.filter(e => null != e && T.Z.isMobileOnline(e)).length
         };
-      this.hasReportedAnalytics = true, _.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, U(G({}, u, (0, y.X)()), {
+      this.hasReportedAnalytics = true, _.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, U(G({}, u, (0, O.X)()), {
         visible_user_ids: s.filter(e => null != e),
         changelog_dm_visible: c
       }))
@@ -439,7 +439,7 @@ let V = e => {
     listScrollerRef: s,
     createDMCTAButtonVariant: c,
     hideAllDMs: h
-  } = e, g = l.Children.count(o), _ = T.Z.getMutablePrivateChannels(), y = h ? {} : (0, P.k1)(_), v = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
+  } = e, g = l.Children.count(o), _ = w.Z.getMutablePrivateChannels(), O = h ? {} : (0, P.k1)(_), v = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
     let e = A.Z.getPrivateChannelIds(),
       t = (0, P.tU)(e, [I.Z, N.Z]);
     return h ? [] : t
@@ -447,12 +447,12 @@ let V = e => {
   (0, E.z)(x.R);
   let {
     analyticsLocations: j
-  } = (0, O.ZP)(b.Z.CONTACTS_LIST), S = (0, Z.Ll)(), {
-    keyboardModeEnabled: w,
+  } = (0, y.ZP)(b.Z.CONTACTS_LIST), S = (0, Z.Ll)(), {
+    keyboardModeEnabled: T,
     version: R
-  } = (0, p.cj)([m.Z, T.Z], () => ({
+  } = (0, p.cj)([m.Z, w.Z], () => ({
     keyboardModeEnabled: m.Z.keyboardModeEnabled,
-    version: null != n ? "".concat(n, ":").concat(T.Z.getPrivateChannelsVersion()) : T.Z.getPrivateChannelsVersion()
+    version: null != n ? "".concat(n, ":").concat(w.Z.getPrivateChannelsVersion()) : w.Z.getPrivateChannelsVersion()
   })), D = l.useRef(null), L = null != s ? s : D, M = l.useCallback(e => {
     let t = L.current,
       n = document.querySelector(e);
@@ -483,19 +483,19 @@ let V = e => {
     })
   }), [L]), V = (0, C.Dt)(), H = (0, d.ZP)({
     id: "private-channels-".concat(V),
-    isEnabled: w,
+    isEnabled: T,
     scrollToStart: k,
     scrollToEnd: B,
     defaultFocused: (g + +!!a).toString(),
     setFocus: M
   });
-  return (0, i.jsx)(O.Gt, {
+  return (0, i.jsx)(y.Gt, {
     value: j,
     children: (0, i.jsx)(u.bG, {
       navigator: H,
       children: (0, i.jsx)(F, U(G({}, e), {
         density: t,
-        channels: y,
+        channels: O,
         privateChannelIds: v,
         listRef: L,
         theme: null != S ? S : r,

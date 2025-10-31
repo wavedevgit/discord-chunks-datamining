@@ -51,7 +51,7 @@ function u(e) {
   let {
     location: t
   } = e;
-  return (0, l.e7)([o.Z], () => (function(e) {
+  return (0, l.e7)([s.Z], () => (function(e) {
     let {
       location: t
     } = e, {

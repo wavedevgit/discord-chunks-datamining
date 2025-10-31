@@ -24,9 +24,9 @@ function b(e) {
     user: t,
     guild: b,
     nick: _,
-    onSelect: O
+    onSelect: y
   } = e, {
-    theme: y,
+    theme: O,
     themeType: v
   } = (0, d.z)(), j = t.hasAvatarForGuild(b.id);
   return (0, r.jsxs)(o.P3F, {
@@ -42,7 +42,7 @@ function b(e) {
       }
     },
     className: g.row,
-    onClick: O,
+    onClick: y,
     onContextMenu: e => {
       (0, a.jW)(e, async () => {
         let {
@@ -87,7 +87,7 @@ function b(e) {
       guild: b,
       showBadge: true,
       className: null != b.icon ? g.icon : g.noIcon,
-      badgeStrokeColor: (0, s.Lq)((0, l.wj)(y) ? h.Ilk.PRIMARY_600 : h.Ilk.WHITE_500),
+      badgeStrokeColor: (0, s.Lq)((0, l.wj)(O) ? h.Ilk.PRIMARY_600 : h.Ilk.WHITE_500),
       badgeTooltipColor: o.r6K.PRIMARY,
       badgeTooltipDelay: p.vB,
       size: c.Z.Sizes.MEDIUM,

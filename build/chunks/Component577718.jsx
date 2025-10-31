@@ -49,9 +49,10 @@ let _ = Chunk647438.memo(function(e) {
       switch (a) {
         case l.z.GUILD_POWERUP_PERKS_COACHMARK:
           return (0, r.jsx)(g, {
-            renderPopout: (0, r.jsx)(f.$h, {
+            renderPopout: e => (0, r.jsx)(f.$h, {
               guildId: n.id,
-              markAsDismissed: _
+              markAsDismissed: _,
+              channelRowRef: e
             }),
             renderGuildHeaderDropdownButton: i
           });

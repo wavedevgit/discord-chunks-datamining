@@ -1,12 +1,12 @@
 /** Chunk was on 47863 **/
 /** chunk id: 328242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => I
 }), require("./388685.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk209739 = require("./209739.js"),
   a = require.n(Chunk209739),
   Chunk268146 = require("./268146.js"),
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk602804 = require("./602804.js");
 
-function Z(e) {
+function T(e) {
   let {
     source: t
   } = e;
@@ -46,18 +46,18 @@ function Z(e) {
   })
 }
 
-function I(e) {
+function Z(e) {
   let {
     source: t,
     selected: n,
     onClick: i
   } = e, {
     url: l,
-    name: o
+    name: s
   } = t;
   return (0, r.jsxs)(u.P3F, {
     onClick: () => i(t),
-    className: s()(P.source, {
+    className: o()(P.source, {
       [P.selectedSource]: n
     }),
     children: [(0, r.jsx)("div", {
@@ -82,47 +82,47 @@ function I(e) {
       })
     }), (0, r.jsxs)("div", {
       className: P.sourceNameContainer,
-      children: [(0, r.jsx)(Z, {
+      children: [(0, r.jsx)(T, {
         source: t
       }), (0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
         className: P.sourceName,
-        children: o
+        children: s
       })]
     })]
   })
 }
 
-function E(e) {
+function I(e) {
   let {
     onClick: t
   } = e, [{
     windowSources: n,
     deviceSources: l,
-    screenSources: s,
-    sourceType: o,
+    screenSources: o,
+    sourceType: s,
     fetchingSources: g,
     selectedSource: O,
-    discordSourceId: Z,
-    hasPermission: E
+    discordSourceId: T,
+    hasPermission: I
   }] = (0, y.E_)(), {
     smarterSourceOrdering: N
   } = (0, j.E)({
     location: "GoLiveSourceGrid"
-  }), A = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), R = (0, d.cj)([p.ZP], () => {
+  }), R = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), A = (0, d.cj)([p.ZP], () => {
     let e = p.ZP.getCandidateGames(),
       t = {};
     for (let n of e) null != n.windowHandle && (t[n.windowHandle] = n.exeName);
     return t
-  }), M = (0, d.e7)([_.Z], () => _.Z.quests), k = (0, b.jx)(M, A, n);
+  }), M = (0, d.e7)([_.Z], () => _.Z.quests), k = (0, S.jx)(M, R, n);
   i.useEffect(() => ((0, h.Ky)(), h.P7), []);
-  let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, b.ov)(t, null == k ? true : k.source.id, Z, R) - (0, b.ov)(e, null == k ? true : k.source.id, Z, R)) : n, [k, N, n, Z, R]);
+  let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, S.ov)(t, null == k ? true : k.source.id, T, A) - (0, S.ov)(e, null == k ? true : k.source.id, T, A)) : n, [k, N, n, T, A]);
   if (g) {
-    if (false === E) {
+    if (false === I) {
       let e = false;
       if ((0, x.isMac)()) {
-        var L, B;
-        let t = null === f.Z || true === f.Z || null == (B = f.Z.remoteApp) || null == (L = B.getVersion) ? true : L.call(B);
+        var B, L;
+        let t = null === f.Z || true === f.Z || null == (L = f.Z.remoteApp) || null == (B = L.getVersion) ? true : B.call(L);
         e = !v.o || "0.0.0" === t || a().satisfies(t, "0.0.363")
       }
       return (0, r.jsxs)("div", {
@@ -146,17 +146,17 @@ function E(e) {
     })
   }
   let G = [];
-  return (G = o === c.vA.WINDOW ? D : o === c.vA.SCREEN ? s : l, o === c.vA.CAMERA && 0 === G.length) ? (0, r.jsx)(T, {}) : (0, r.jsx)("div", {
+  return (G = s === c.vA.WINDOW ? D : s === c.vA.SCREEN ? o : l, s === c.vA.CAMERA && 0 === G.length) ? (0, r.jsx)(E, {}) : (0, r.jsx)("div", {
     className: P.root,
-    children: G.map(e => (0, r.jsx)(I, {
+    children: G.map(e => (0, r.jsx)(Z, {
       onClick: t,
       source: e,
-      selected: null != O && "windowHandle" in O ? (0, S.Z)(e.id, O.windowHandle) : (null == O ? true : O.id) === e.id
+      selected: null != O && "windowHandle" in O ? (0, b.Z)(e.id, O.windowHandle) : (null == O ? true : O.id) === e.id
     }, e.id))
   })
 }
 
-function T() {
+function E() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk602804.emptyState,
     children: [(0, Chunk951288.jsx)(Chunk481060.Odl, {

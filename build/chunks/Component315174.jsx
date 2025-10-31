@@ -159,7 +159,7 @@ let Z = e => {
   })
 };
 
-function T(e) {
+function w(e) {
   let {
     guild: t
   } = e;
@@ -171,7 +171,7 @@ function T(e) {
   })
 }
 
-function w(e) {
+function T(e) {
   var t;
   let {
     bannerVisible: n,
@@ -184,10 +184,10 @@ function w(e) {
     children: u
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(y.Z, {
+    children: [(0, r.jsx)(O.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(T, {
+    }), i.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(w, {
       guild: i
     }), null != l && (0, r.jsx)(d.P3F, {
       className: x.headerButton,
@@ -220,7 +220,7 @@ function R(e) {
     ariaControls: p,
     ariaExpanded: h,
     children: m
-  } = e, _ = (0, c.e7)([b.Z], () => (0, f.b)(b.Z, o)), O = i.useCallback(() => {
+  } = e, _ = (0, c.e7)([b.Z], () => (0, f.b)(b.Z, o)), y = i.useCallback(() => {
     _ ? (0, d.ZDy)(async () => {
       let {
         default: e
@@ -248,10 +248,10 @@ function R(e) {
       onClick: a,
       children: [(0, r.jsxs)("div", {
         className: x.guildBadgeAndName,
-        children: [(0, r.jsx)(y.Z, {
+        children: [(0, r.jsx)(O.Z, {
           guild: o,
           isBannerVisible: l
-        }), o.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(T, {
+        }), o.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(w, {
           guild: o
         })]
       }), (0, r.jsx)("div", {
@@ -265,7 +265,7 @@ function R(e) {
       children: (0, r.jsx)(d.P3F, {
         className: x.inviteButton,
         onClick: () => {
-          O()
+          y()
         },
         children: (0, r.jsx)(d.ejJ, {
           size: "refresh_sm",
@@ -286,15 +286,15 @@ let D = Chunk647438.memo(function(e) {
     onMouseDown: f,
     disableBannerAnimation: g,
     "aria-expanded": b,
-    "aria-controls": y,
+    "aria-controls": O,
     guild: j,
     guildBanner: C,
     animationOverlayHeight: N,
     children: Z,
-    headerClassName: T,
+    headerClassName: w,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, M = j.features.has(v.GuildFeatures.ANIMATED_BANNER), k = (0, p.Z)(j), G = !k && (0, O.Z)(j), U = !k && A, B = (0, _.xR)(C) && M && !g, [F, V] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
+  } = e, M = j.features.has(v.GuildFeatures.ANIMATED_BANNER), k = (0, p.Z)(j), G = !k && (0, y.Z)(j), U = !k && A, B = (0, _.xR)(C) && M && !g, [F, V] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !H.current && Y) return V(true), K.current = setTimeout(() => {
       V(false)
@@ -319,7 +319,7 @@ let D = Chunk647438.memo(function(e) {
       guild: j,
       onClick: c,
       onContextMenu: u,
-      ariaControls: y,
+      ariaControls: O,
       ariaExpanded: b,
       guildHeaderRef: W
     };
@@ -344,14 +344,14 @@ let D = Chunk647438.memo(function(e) {
         onClick: X.isGuildEntrypointEnabled ? true : c,
         onContextMenu: u,
         children: [(0, r.jsxs)("header", {
-          className: o()(x.header, T, {
+          className: o()(x.header, w, {
             [x.themedHeaderMobile]: s.tq
           }),
           children: [(0, r.jsx)("div", {
             className: o()(x.headerContent, x.primaryInfo),
             children: X.isGuildEntrypointEnabled ? (0, r.jsx)(R, S(E({}, Q), {
               children: Z
-            })) : (0, r.jsx)(w, S(E({}, Q), {
+            })) : (0, r.jsx)(T, S(E({}, Q), {
               children: Z
             }))
           }), G && (0, r.jsx)(P, {

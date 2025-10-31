@@ -1,7 +1,7 @@
 /** Chunk was on 56710 **/
 /** chunk id: 848442, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => w
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -67,7 +67,7 @@ function Z(e) {
     guildId: t,
     selected: n,
     handleClick: i
-  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([y.Z], () => y.Z.getGuild(t)), x = (null == g ? true : g.features.has(C.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, Z = "false" === s.K.get(E.tM, "false"), T = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
+  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([O.Z], () => O.Z.getGuild(t)), x = (null == g ? true : g.features.has(C.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, Z = "false" === s.K.get(E.tM, "false"), w = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsx)(j.m, {
     id: "shop-".concat(t),
     className: l()(I.previewChannelRow, {
@@ -85,7 +85,7 @@ function Z(e) {
     onClick: i,
     trailing: (0, r.jsxs)("div", {
       className: I.gifSection,
-      children: [T ? (0, r.jsx)(c.IGR, {
+      children: [w ? (0, r.jsx)(c.IGR, {
         color: c.TVs.unsafe_rawColors.BRAND_260.css,
         text: S.intl.string(S.t.y2b7CA),
         className: I.newBadge
@@ -100,7 +100,7 @@ function Z(e) {
               action_taken: E.mz.DISMISS_CHANNEL_ROW
             })), !u || !x) {
             var n;
-            (0, _.dL)(C.Z5c.CHANNEL(t, null == (n = O.ZP.getDefaultChannel(t)) ? true : n.id))
+            (0, _.dL)(C.Z5c.CHANNEL(t, null == (n = y.ZP.getDefaultChannel(t)) ? true : n.id))
           }
         },
         "aria-label": S.intl.string(S.t.cpT0Cq),
@@ -113,7 +113,7 @@ function Z(e) {
   })
 }
 
-function T(e) {
+function w(e) {
   let {
     guild: t,
     selected: i

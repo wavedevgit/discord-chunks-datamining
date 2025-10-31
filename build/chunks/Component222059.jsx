@@ -56,8 +56,8 @@ function L(e) {
     badge: h,
     link: g,
     showProgressBadge: _
-  } = e, [O, y] = i.useState(false), [v, j] = i.useState(false), [C, x] = i.useState(null), [E, T] = i.useState(0), L = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, k = () => {
-    x(null), T(0), clearTimeout(C)
+  } = e, [y, O] = i.useState(false), [v, j] = i.useState(false), [C, x] = i.useState(null), [E, w] = i.useState(0), L = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, k = () => {
+    x(null), w(0), clearTimeout(C)
   }, G = f.o.useConfig({
     location: "home button"
   }).dmsTab;
@@ -69,7 +69,7 @@ function L(e) {
     className: R.downloadProgress,
     determineOwnVisibility: false
   }));
-  let F = o || O || M,
+  let F = o || y || M,
     V = (0, r.jsx)(s.aRk, {
       selected: true,
       lowerBadge: h > 0 ? (0, N.Ne)(h) : null,
@@ -95,13 +95,13 @@ function L(e) {
         }
         return e
       }({
-        onMouseEnter: () => y(true),
-        onMouseLeave: () => y(false),
+        onMouseEnter: () => O(true),
+        onMouseLeave: () => O(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != C && clearTimeout(C), x(setTimeout(k, 500)), T(E + 1), 15 === E)) {
+          if (!__OVERLAY__ && (null != C && clearTimeout(C), x(setTimeout(k, 500)), w(E + 1), 15 === E)) {
             k();
             let e = !a.K.get(Z.wli);
-            a.K.set(Z.wli, e), e && a.K.set(w.O, true), e ? (0, m.GN)("discodo") : (0, m.GN)("user_leave"), j(true), setTimeout(() => {
+            a.K.set(Z.wli, e), e && a.K.set(T.O, true), e ? (0, m.GN)("discodo") : (0, m.GN)("user_leave"), j(true), setTimeout(() => {
               j(false)
             }, 1e3)
           }
@@ -142,7 +142,7 @@ function L(e) {
       children: (0, r.jsxs)(I.H, {
         children: [(0, r.jsx)(S.Z, {
           selected: o,
-          hovered: O,
+          hovered: y,
           className: R.pill
         }), (0, r.jsx)(P.Z, {
           color: s.aML.Colors.PRIMARY,

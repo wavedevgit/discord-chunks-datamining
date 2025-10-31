@@ -57,92 +57,79 @@ let j = {
     } = e, C = (0, m.ZP)(t), x = i.useCallback(() => {
       var e;
       (0, p.jd)(t), (0, f.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == C || null == (e = C.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
-    }, [t, C]), E = i.useCallback(() => {
+    }, [t, C]), E = i.useRef(null), S = (0, s.s9z)(s.JQI), I = (0, a.e7)([d.Z], () => d.Z.hasLayers()), P = S || I, N = i.useCallback(() => {
       var e;
+      if ((null == C ? true : C.popout) == null || P) return null;
       switch (null == C || null == (e = C.popout) ? true : e.type) {
         case h.J.LEVEL_REACHED:
           return (0, r.jsx)(g.jG, v({
-            guildId: t
+            guildId: t,
+            channelRowRef: E
           }, C.popout));
         case h.J.PERKS_AVAILABLE:
           return (0, r.jsx)(g.$h, v({
-            guildId: t
+            guildId: t,
+            channelRowRef: E
           }, C.popout));
         case h.J.PERKS_PURCHASABLE:
           return (0, r.jsx)(g.yI, v({
-            guildId: t
+            guildId: t,
+            channelRowRef: E
           }, C.popout));
         case h.J.NEW_PERK_AVAILABLE:
           return (0, r.jsx)(g.cO, v({
-            guildId: t
+            guildId: t,
+            channelRowRef: E
           }, C.popout));
         case h.J.GAME_SERVER_HOSTING_AVAILABLE:
         case h.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
           return (0, r.jsx)(g.dJ, v({
-            guildId: t
+            guildId: t,
+            channelRowRef: E
           }, C.popout));
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == C ? true : C.popout]), S = (0, s.s9z)(s.JQI), I = (0, a.e7)([d.Z], () => d.Z.hasLayers()), [P, N] = i.useState(null), Z = null == P ? "animation" : "LOOP";
+    }, [t, null == C ? true : C.popout, E, P]), [Z, w] = i.useState(null);
     i.useEffect(() => {
-      (null == C ? true : C.popout) == null && N(null)
+      (null == C ? true : C.popout) == null && w(null)
     }, [null == C ? true : C.popout]);
     let T = i.useCallback(e => {
-        N(e)
-      }, []),
-      w = i.useRef(null);
-    return (0, r.jsx)(s.yRy, {
-      targetElementRef: w,
-      shouldShow: (null == C ? true : C.popout) != null && !(S || I),
-      nudgeAlignIntoViewport: true,
-      animationPosition: "bottom",
-      position: "right",
-      renderPopout: E,
-      children: e => {
-        var i, a;
-        return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
-          ref: w,
-          className: y.container,
-          id: "skill-trees-".concat(t),
-          renderIcon: e => (0, r.jsx)(s.Ucv, {
-            size: "md",
-            className: e,
-            color: "currentColor"
+      w(e)
+    }, []);
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(u.m, {
+        ref: E,
+        className: O.container,
+        id: "skill-trees-".concat(t),
+        renderIcon: e => (0, r.jsx)(s.Ucv, {
+          size: "md",
+          className: e,
+          color: "currentColor"
+        }),
+        background: (null == C ? true : C.popout) != null && (0, r.jsx)("div", {
+          className: O.lottieContainer,
+          children: (0, r.jsx)(s.kci, {
+            nextScene: null == Z ? "animation" : "LOOP",
+            className: O.lottie,
+            sceneSegments: j,
+            importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
+            onScenePlay: T,
+            rendererSettings: {
+              preserveAspectRatio: "xMidYMid slice"
+            }
+          })
+        }),
+        text: (0, r.jsx)("span", {
+          className: o()({
+            [O.textImportant]: (null == C ? true : C.showUnread) === true
           }),
-          background: (null == C ? true : C.popout) != null && (0, r.jsx)("div", {
-            className: y.lottieContainer,
-            children: (0, r.jsx)(s.kci, {
-              nextScene: Z,
-              className: y.lottie,
-              sceneSegments: j,
-              importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
-              onScenePlay: T,
-              rendererSettings: {
-                preserveAspectRatio: "xMidYMid slice"
-              }
-            })
-          }),
-          text: (0, r.jsx)("span", {
-            className: o()({
-              [y.textImportant]: (null == C ? true : C.showUnread) === true
-            }),
-            children: O.intl.string(_.default.yv3DJJ)
-          }),
-          selected: l,
-          onClick: x,
-          showUnread: (null == C ? true : C.showUnread) === true,
-          trailing: null == C ? true : C.trailing
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-          }
-          return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
-        }), i))
-      }
+          children: y.intl.string(_.default.yv3DJJ)
+        }),
+        selected: l,
+        onClick: x,
+        showUnread: (null == C ? true : C.showUnread) === true,
+        trailing: null == C ? true : C.trailing
+      }), N()]
     })
   })

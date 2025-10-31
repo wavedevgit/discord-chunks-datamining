@@ -43,8 +43,8 @@ function E(e) {
     location: "NotificationsInboxButtonInner"
   }), {
     badge: Z,
-    badgeDimensions: T,
-    unreadChannelsCount: w
+    badgeDimensions: w,
+    unreadChannelsCount: T
   } = function(e) {
     let {
       notificationCenterVariant: t
@@ -61,16 +61,16 @@ function E(e) {
     return t === g.jP.LEGACY ? {
       badge: i ? (0, r.jsx)(a.fWl, {
         style: {
-          height: y.zw,
-          width: y.zw,
+          height: O.zw,
+          width: O.zw,
           position: "relative"
         },
         color: s.Z.STATUS_DANGER
       }) : null,
       unreadChannelsCount: 0,
       badgeDimensions: {
-        height: y.zw,
-        width: y.zw
+        height: O.zw,
+        width: O.zw
       }
     } : {
       badge: l,
@@ -85,14 +85,14 @@ function E(e) {
     children: [(0, r.jsx)(c.Z, {
       selected: P && N === g.jP.SIDEBAR,
       hovered: E && N === g.jP.SIDEBAR,
-      unread: w > 0,
+      unread: T > 0,
       className: C.pill,
       disabled: N === g.jP.LEGACY
-    }), (0, r.jsx)(O.Z, {
+    }), (0, r.jsx)(y.Z, {
       children: (0, r.jsx)(a.aRk, {
         selected: P || E,
         lowerBadge: Z,
-        lowerBadgeSize: T,
+        lowerBadgeSize: w,
         children: (0, r.jsx)(a.LYs, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},

@@ -90,7 +90,7 @@ function x(e) {
     } = I,
     {
       tileWidth: L,
-      columns: H
+      columns: T
     } = r.useMemo(() => (function(e, t) {
       let n = t - j,
         l = Math.max(1, Math.floor((n + 16) / 336)),
@@ -112,7 +112,7 @@ function x(e) {
       }
     }()
   }, [E]);
-  let A = r.useCallback(e => {
+  let H = r.useCallback(e => {
       (0, s.ZDy)(async () => {
         let {
           default: r
@@ -155,8 +155,8 @@ function x(e) {
         stackingBehavior: "stack"
       })
     }, [t]),
-    T = r.useMemo(() => Z.map(e => O(H, e.clips.length)), [Z, H]),
-    R = r.useMemo(() => T.reduce((e, t) => e + t, 0), [T]),
+    A = r.useMemo(() => Z.map(e => O(T, e.clips.length)), [Z, T]),
+    R = r.useMemo(() => A.reduce((e, t) => e + t, 0), [A]),
     V = Math.floor(L / h),
     _ = r.useCallback((e, t) => {
       let {
@@ -164,26 +164,23 @@ function x(e) {
         sectionRowIndex: r
       } = t, i = Z[n];
       if (null == i) return null;
-      let a = r * H,
-        s = i.clips.slice(a, a + H);
+      let a = r * T,
+        s = i.clips.slice(a, a + T);
       return (0, l.jsx)("div", {
         className: v.clipsRow,
-        children: s.map(e => {
-          let t = 0 === e.length && "" === e.thumbnail;
-          return (0, l.jsx)("div", {
-            style: {
-              width: L
-            },
-            children: (0, l.jsx)(m.Z, {
-              actionsDisabled: M || t,
-              isNew: N.includes(e.id),
-              onClick: null != w ? w : A,
-              clip: e
-            })
-          }, e.id)
-        })
+        children: s.map(e => (0, l.jsx)("div", {
+          style: {
+            width: L
+          },
+          children: (0, l.jsx)(m.Z, {
+            actionsDisabled: M,
+            isNew: N.includes(e.id),
+            onClick: null != w ? w : H,
+            clip: e
+          })
+        }, e.id))
       }, "row-".concat(n, "-").concat(r))
-    }, [Z, H, L, M, N, A, w]),
+    }, [Z, T, L, M, N, H, w]),
     U = r.useCallback(e => {
       let t = Z[e];
       return (null == t ? true : t.description) != null ? 66 : 44
@@ -212,7 +209,7 @@ function x(e) {
     renderRow: _,
     renderSectionHeader: z,
     rowCount: R,
-    rowCountBySection: T,
+    rowCountBySection: A,
     rowHeight: V + 68 + 16,
     sectionHeaderHeight: U,
     onResize: S

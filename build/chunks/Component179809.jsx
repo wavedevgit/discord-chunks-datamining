@@ -39,8 +39,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       mediaState: d,
       mentionCount: m = 0,
       isMentionLowImportance: Z,
-      unread: T = false,
-      defaultFolderName: w,
+      unread: w = false,
+      defaultFolderName: T,
       draggable: A = false,
       sorting: R = false,
       onDragStart: D,
@@ -78,7 +78,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       X(e)
     }, []), en = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && M()
-    }, [M, s]), er = null != z && "" !== z ? z : null != w && "" !== w ? w : E.intl.string(E.t.xV9hVh), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
+    }, [M, s]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVh), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
       let t = (0, p.dQu)(p.TVs.modules.guildbar.FOLDER_SIZE),
         n = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE),
         r = (0, p.dQu)(p.TVs.space.SPACE_XS);
@@ -101,7 +101,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         disabled: $ || s,
         hovered: K,
         selected: l,
-        unread: T,
+        unread: w,
         className: I.pill
       }), (0, r.jsx)(C.Z, {
         text: er,
@@ -119,7 +119,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
           "data-dnd-name": er,
           children: $ ? (0, r.jsx)(v.Z, {
             isFolder: true
-          }) : (0, r.jsx)(O.Z, {
+          }) : (0, r.jsx)(y.Z, {
             folderNode: t,
             expanded: s,
             sorting: R,
@@ -138,7 +138,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             "aria-posinset": V
           })
         })
-      }), A ? (0, r.jsx)(y.ZP, {
+      }), A ? (0, r.jsx)(O.ZP, {
         name: er,
         targetNode: t,
         onDragOverChanged: et
@@ -172,7 +172,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
           "aria-label": t.name,
           children: W.map((t, n) => G(t, n, W.length, e.height))
         }, l)
-      }), A && s ? (0, r.jsx)(y.Zu, {
+      }), A && s ? (0, r.jsx)(O.Zu, {
         name: er,
         targetNode: t
       }) : null]

@@ -8,5 +8,6 @@ var Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js");
 
 function a(e, t) {
-  return (0, r.e7)([i.Z], () => i.Z.useReducedMotion) || false === t ? e.staticImageUrl : e.animatedImageUrl
+  let n = (0, r.e7)([i.Z], () => i.Z.useReducedMotion);
+  if (null != e) return n || false === t ? e.staticImageUrl : e.animatedImageUrl
 }

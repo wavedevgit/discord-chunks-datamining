@@ -88,16 +88,16 @@ function x(e) {
     allClips: M
   } = (0, b.n)(), {
     onShareClick: Z
-  } = (0, p.Z)(t), D = (0, i.e7)([d.Z], () => d.Z.getExportingClipIds().length > 0), L = (0, y.f)(e => e.selectedGameId), H = r.useMemo(() => {
+  } = (0, p.Z)(t), D = (0, i.e7)([d.Z], () => d.Z.getExportingClipIds().length > 0), L = (0, y.f)(e => e.selectedGameId), T = r.useMemo(() => {
     var e;
     return null == L || "favorites" === L ? null : null != (e = S.find(e => e.applicationId === L)) ? e : null
-  }, [L, S]), A = r.useMemo(() => {
+  }, [L, S]), H = r.useMemo(() => {
     var e;
-    return "favorites" === L ? N : null != (e = null == H ? true : H.filteredClips) ? e : E
-  }, [L, H, E, N]), T = r.useMemo(() => {
+    return "favorites" === L ? N : null != (e = null == T ? true : T.filteredClips) ? e : E
+  }, [L, T, E, N]), A = r.useMemo(() => {
     var e;
-    return "favorites" === L ? v.intl.string(v.t["9rlCk1"]) : null != (e = null == H ? true : H.name) ? e : v.intl.string(v.t.dPVrEv)
-  }, [L, H]), R = r.useCallback(e => {
+    return "favorites" === L ? v.intl.string(v.t["9rlCk1"]) : null != (e = null == T ? true : T.name) ? e : v.intl.string(v.t.dPVrEv)
+  }, [L, T]), R = r.useCallback(e => {
     I(t => {
       let n = new Set(t);
       return n.has(e) ? n.delete(e) : n.add(e), n
@@ -151,7 +151,7 @@ function x(e) {
               children: [(0, l.jsx)(c.Heading, {
                 variant: "heading-md/medium",
                 color: "header-secondary",
-                children: T
+                children: A
               }), (0, l.jsxs)("div", {
                 className: h.headerActions,
                 children: [_ && (0, l.jsxs)(l.Fragment, {
@@ -185,7 +185,7 @@ function x(e) {
               })]
             }), (0, l.jsx)(m.Z, {
               channelId: t,
-              filteredClips: A,
+              filteredClips: H,
               totalClipCount: M.length,
               onClipClick: C
             })]
