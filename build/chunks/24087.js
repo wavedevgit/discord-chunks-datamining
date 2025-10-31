@@ -39,6 +39,7 @@ function f() {
     let r = t.get(n);
     return null == r ? c(e) : d(e, r.map(e => e.soundId))
   }, [exports]), _ = Chunk647438.useCallback(e => d(e, a.map(e => e.soundId)), [Chunk709054]);
+  if (__OVERLAY__) return c;
   switch (module) {
     case Chunk771784.du.TOP_SOUNDS:
       return f;
