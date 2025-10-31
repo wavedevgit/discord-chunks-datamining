@@ -96,12 +96,12 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
       theme: t,
       colorText: n,
       colorBackground: a,
-      inputBackgroundColor: s,
-      tabBackgroundColor: u,
-      storyType: _
-    } = e, E = (0, f.Z)(), {
-      stripePaymentElementProps: y,
-      stripeAddressElementProps: I
+      inputBackgroundColor: u,
+      tabBackgroundColor: _,
+      storyType: E
+    } = e, y = (0, f.Z)(), {
+      stripePaymentElementProps: I,
+      stripeAddressElementProps: T
     } = (0, c.MM)({
       step: d.h8.PAYMENT_ELEMENT,
       handleStepChange: h.dG4,
@@ -111,9 +111,9 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
       shouldLogOnChangeEvents: true,
       continueSessionToInitialStep: true
     }), {
-      elementsOptions: T,
-      isLoading: S,
-      setupError: A
+      elementsOptions: S,
+      isLoading: A,
+      setupError: R
     } = (0, l.S)({
       onSetupError: e => {
         v.info("Stripe Payment Element options setup error: ", e)
@@ -122,43 +122,53 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
         theme: t,
         colorText: n,
         colorBackground: a,
-        inputBackgroundColor: s,
-        tabBackgroundColor: u
+        inputBackgroundColor: u,
+        tabBackgroundColor: _
       }
     });
-    return S || null != A || null == E ? (0, r.jsx)(c.p7, {}) : (0, r.jsxs)("div", {
-      className: m.paymentElementStoryContainer,
-      children: [(0, r.jsx)(p.H, {
-        stepConfigs: [C(_)],
-        children: (0, r.jsx)("div", {
-          className: o()(m.paymentElementContainer, {
-            [m.fullLengthPaymentElementContainer]: "joined-payment-address-elements" === _
-          }),
-          children: (0, r.jsxs)(i.Elements, {
-            stripe: E,
-            options: b({}, T),
-            children: ["stripe-address-element" === _ ? (0, r.jsx)("div", {
-              className: g.hidden,
-              children: (0, r.jsx)(c.Q5, O(b({}, y), {
-                step: d.h8.PAYMENT_ELEMENT
-              }))
-            }) : (0, r.jsx)(c.Q5, O(b({}, y), {
-              step: d.h8.PAYMENT_ELEMENT
-            })), ("joined-payment-address-elements" === _ || "stripe-address-element" === _) && (0, r.jsx)(c.wk, O(b({}, I), {
-              billingAddressInfo: {
-                email: "",
-                name: "",
-                country: "",
-                line1: "",
-                line2: "",
-                city: "",
-                postalCode: "",
-                state: ""
-              }
-            }))]
-          })
+    return A || null != R || null == y ? (0, r.jsx)(c.p7, {}) : (0, r.jsxs)("div", {
+      children: [(0, r.jsx)("div", {
+        style: {
+          marginBottom: 16
+        },
+        children: (0, r.jsx)(s.M14, {
+          type: "info",
+          children: "If you don't see the Payment Element components, that means you must be added to the correct experiment to see this story. Reach out to a Payments Engineer to get access."
         })
-      }), (0, r.jsx)(N, {})]
+      }), (0, r.jsxs)("div", {
+        className: m.paymentElementStoryContainer,
+        children: [(0, r.jsx)(p.H, {
+          stepConfigs: [C(E)],
+          children: (0, r.jsx)("div", {
+            className: o()(m.paymentElementContainer, {
+              [m.fullLengthPaymentElementContainer]: "joined-payment-address-elements" === E
+            }),
+            children: (0, r.jsxs)(i.Elements, {
+              stripe: y,
+              options: b({}, S),
+              children: ["stripe-address-element" === E ? (0, r.jsx)("div", {
+                className: g.hidden,
+                children: (0, r.jsx)(c.Q5, O(b({}, I), {
+                  step: d.h8.PAYMENT_ELEMENT
+                }))
+              }) : (0, r.jsx)(c.Q5, O(b({}, I), {
+                step: d.h8.PAYMENT_ELEMENT
+              })), ("joined-payment-address-elements" === E || "stripe-address-element" === E) && (0, r.jsx)(c.wk, O(b({}, T), {
+                billingAddressInfo: {
+                  email: "",
+                  name: "",
+                  country: "",
+                  line1: "",
+                  line2: "",
+                  city: "",
+                  postalCode: "",
+                  state: ""
+                }
+              }))]
+            })
+          })
+        }), (0, r.jsx)(N, {})]
+      })]
     })
   },
   P = e => (0, r.jsx)(R, O(b({}, e), {

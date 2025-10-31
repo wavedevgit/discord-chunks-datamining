@@ -206,8 +206,10 @@ function es(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = ea(), i = E.Z.getChannel(t);
-  return null != t && null != n && (null == i ? true : i.isGuildVocalOrThread()) && !F[t] ? (V[t] = false, F[t] = true, true) : r
+  } = e, r = ea();
+  if (null == t || null == n || F[t]) return r;
+  let i = E.Z.getChannel(t);
+  return null != i && i.isGuildVocal() ? (V[t] = false, F[t] = true, true) : r
 }
 
 function el(e) {

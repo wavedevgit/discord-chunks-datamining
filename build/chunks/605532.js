@@ -10,5 +10,6 @@ module.exports = {
   scroller: "scroller__6132c",
   loader: "loader__6132c",
   balanceWidgetPillContainer: "balanceWidgetPillContainer__6132c",
+  tabularNums: "tabularNums__6132c",
   headerWithSpacing: "headerWithSpacing__6132c"
 }
