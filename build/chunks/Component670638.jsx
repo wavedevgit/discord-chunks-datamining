@@ -15,10 +15,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk572004 = require("./572004.js"),
   Chunk63063 = require("./63063.js"),
+  Chunk22095 = require("./22095.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
   Chunk509212 = require("./509212.js"),
-  Chunk272008 = require("./272008.js"),
   Chunk113434 = require("./113434.js"),
   Chunk569984 = require("./569984.js"),
   Chunk497505 = require("./497505.js"),
@@ -89,12 +89,12 @@ function D(e, t) {
 function x(e) {
   var t;
   let n = (0, a.e7)([b.Z], () => b.Z.questDeliveryOverride, []),
-    u = (0, m.GN)(e.questContent),
+    u = (0, g.GN)(e.questContent),
     C = [y.jn.QUEST_BAR_V2, y.jn.QUEST_BAR].includes(e.questContent),
-    N = (0, p.O5)(),
-    R = (0, h.aM)(),
+    N = (0, h.O5)(),
+    R = (0, m.aM)(),
     P = (0, E.ly)(e.quest),
-    w = true === e.showShareLink && (0, m.vB)(e.quest.config),
+    w = true === e.showShareLink && (0, g.vB)(e.quest.config),
     {
       handleComplete: D,
       handleProgress: x,
@@ -107,18 +107,18 @@ function x(e) {
     },
     U = i.useCallback(() => {
       if (e.quest.id === I.V6) return void window.open(_.Z.getArticleURL(T.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
-      (0, m.nc)(e.quest, {
+      (0, g.nc)(e.quest, {
         content: e.questContent,
-        ctaContent: p.jZ.CONTEXT_MENU_OPEN_GAME_LINK,
+        ctaContent: h.jZ.CONTEXT_MENU_OPEN_GAME_LINK,
         impressionId: R,
         sourceQuestContent: e.sourceQuestContent
       })
     }, [R, e.quest, e.questContent, e.sourceQuestContent]),
     G = i.useCallback(() => {
-      w && ((0, m.f2)(e.quest.id, {
+      w && ((0, g.f2)(e.quest.id, {
         content: e.questContent,
         position: e.questContentPosition,
-        ctaContent: p.jZ.CONTEXT_MENU_COPY_LINK,
+        ctaContent: h.jZ.CONTEXT_MENU_COPY_LINK,
         impressionId: R,
         sourceQuestContent: e.sourceQuestContent
       }), (0, o.showToast)((0, o.createToast)(A.intl.string(A.t["+5kSoW"]), o.ToastType.SUCCESS)))
@@ -127,7 +127,7 @@ function x(e) {
       (0, v.openDisclosureModal)(e.quest, {
         content: e.questContent,
         position: e.questContentPosition,
-        ctaContent: p.jZ.CONTEXT_MENU_OPEN_DISCLOSURE,
+        ctaContent: h.jZ.CONTEXT_MENU_OPEN_DISCLOSURE,
         impressionId: R,
         sourceQuestContent: e.sourceQuestContent
       })
@@ -137,7 +137,7 @@ function x(e) {
         questId: e.quest.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
-        questContentCTA: p.jZ.CONTEXT_MENU_LEARN_MORE,
+        questContentCTA: h.jZ.CONTEXT_MENU_LEARN_MORE,
         sourceQuestContent: e.sourceQuestContent
       }), (0, v.navigateToQuestHome)({
         fromContent: e.questContent,
@@ -152,13 +152,13 @@ function x(e) {
         questId: e.quest.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
-        questContentCTA: p.jZ.CONTEXT_MENU_HIDE_CONTENT,
+        questContentCTA: h.jZ.CONTEXT_MENU_HIDE_CONTENT,
         sourceQuestContent: e.sourceQuestContent
-      }), (0, m.GN)(e.questContent) && ((0, g.gl)(e.quest.id, e.questContent), C && (0, v.maybeShowSurveyForQuest)(e.quest))
+      }), (0, g.GN)(e.questContent) && ((0, p.gl)(e.quest.id, e.questContent), C && (0, v.maybeShowSurveyForQuest)(e.quest))
     },
     H = e => (0, o.showToast)((0, o.createToast)(new l.Z(e, e.status).message, o.ToastType.FAILURE)),
-    Y = () => (0, g.CS)(e.quest.id, true).catch(H),
-    W = () => (0, g.is)(e.quest.id).catch(H),
+    Y = () => (0, p.CS)(e.quest.id, true).catch(H),
+    W = () => (0, p.is)(e.quest.id).catch(H),
     K = () => {
       M(), W()
     },
@@ -229,13 +229,13 @@ function x(e) {
         id: "complete",
         label: A.intl.string(A.t.jQEfRT),
         action: D
-      }), (0, m.$J)(e.quest) && (0, r.jsxs)(o.sNh, {
+      }), (0, g.$J)(e.quest) && (0, r.jsxs)(o.sNh, {
         id: "console",
         label: "Console Heartbeat",
         children: [(0, r.jsx)(o.sNh, {
           disabled: true,
           id: "status",
-          label: "Status: ".concat((0, m.Bz)(e.quest) ? "alive" : "dead")
+          label: "Status: ".concat((0, g.Bz)(e.quest) ? "alive" : "dead")
         }), (0, r.jsx)(o.sNh, {
           id: "start",
           label: "Start heartbeat (cheatmode)",
@@ -272,15 +272,15 @@ function L(e) {
     questContent: c,
     questContentPosition: d,
     sourceQuestContent: f
-  } = e, _ = w(e, ["children", "onOpen", "onClose", "preventIdle", "quest", "questContent", "questContentPosition", "sourceQuestContent"]), h = (0, p.O5)(), m = i.useRef(null), g = i.useCallback(() => {
-    h({
+  } = e, _ = w(e, ["children", "onOpen", "onClose", "preventIdle", "quest", "questContent", "questContentPosition", "sourceQuestContent"]), p = (0, h.O5)(), m = i.useRef(null), g = i.useCallback(() => {
+    p({
       questId: l.id,
       questContent: c,
-      questContentCTA: p.jZ.OPEN_CONTEXT_MENU,
+      questContentCTA: h.jZ.OPEN_CONTEXT_MENU,
       questContentPosition: d,
       sourceQuestContent: f
     }), null != n && n()
-  }, [n, l.id, c, d, h, f]);
+  }, [n, l.id, c, d, p, f]);
   return (0, r.jsx)(o.yRy, {
     targetElementRef: m,
     onRequestOpen: g,

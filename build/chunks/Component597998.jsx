@@ -269,73 +269,75 @@ let U = function(e) {
     onMouseDown: T,
     priority: S,
     speaking: N,
-    collapsed: P,
-    mute: x,
-    serverMute: L,
-    guildId: M,
-    nick: k,
-    isGuest: U,
-    flipped: G,
-    className: B,
-    overlap: Z,
-    "aria-label": F,
-    ringing: V,
-    user: H
-  } = _, Y = (0, p.Z)({
-    userId: H.id,
-    guildId: M
-  }), W = (0, h.j)({
-    displayNameStyles: Y
-  }), K = e => {
-    null == m || m(e, H)
-  }, z = e => {
-    null == b || b(e, H)
+    latched: P,
+    collapsed: x,
+    mute: L,
+    serverMute: M,
+    guildId: k,
+    nick: U,
+    isGuest: G,
+    flipped: B,
+    className: Z,
+    overlap: F,
+    "aria-label": V,
+    ringing: H,
+    user: Y
+  } = _, W = (0, p.Z)({
+    userId: Y.id,
+    guildId: k
+  }), K = (0, h.j)({
+    displayNameStyles: W
+  }), z = e => {
+    null == m || m(e, Y)
   }, q = e => {
-    null == y || y(e, H)
+    null == b || b(e, Y)
   }, X = e => {
-    null == O || O(e, H)
+    null == y || y(e, Y)
   }, Q = e => {
-    null == T || T(e, H)
+    null == O || O(e, Y)
+  }, J = e => {
+    null == T || T(e, Y)
   };
 
-  function J() {
-    return S && !P ? (0, r.jsx)(l.u, {
+  function $() {
+    return S && !x ? (0, r.jsx)(l.u, {
       text: A.intl.string(A.t.BVK71i),
       children: (0, r.jsx)("div", {
         className: o()(C.iconPriortySpeaker, {
-          [C.iconPriortySpeakerSpeaking]: !x && !L && N
+          [C.iconPriortySpeakerSpeaking]: !L && !M && N
         })
       })
     }) : null
   }
 
-  function $() {
+  function ee() {
     return (0, r.jsx)("div", {
       className: o()(n, C.avatar, {
         [C.avatarLarge]: a === I.ipw.LARGE,
         [C.avatarSmall]: a === I.ipw.SMALL,
-        [C.avatarSpeaking]: N
+        [C.avatarSpeaking]: N,
+        [C.avatarLatched]: P && !N
       }),
       style: {
-        backgroundImage: "url(".concat(H.getAvatarURL(M, a === I.ipw.LARGE ? 38 : 24), ")")
+        backgroundImage: "url(".concat(Y.getAvatarURL(k, a === I.ipw.LARGE ? 38 : 24), ")")
       }
     })
   }
 
-  function ee() {
+  function et() {
     let e = (0, r.jsxs)("div", {
-        className: o()(i, C.username, W, {
-          [C.usernameSpeaking]: !x && !L && N
+        className: o()(i, C.username, K, {
+          [C.usernameSpeaking]: !L && !M && N
         }),
-        children: [null != k ? k : v.ZP.getName(H), U ? (0, r.jsxs)("span", {
+        children: [null != U ? U : v.ZP.getName(Y), G ? (0, r.jsxs)("span", {
           className: C.guestSuffix,
           children: ["\xa0", A.intl.string(A.t["pFO/Ph"])]
         }) : ""]
       }),
       t = {
-        primaryGuild: H.primaryGuild,
-        userId: H.id,
-        contextGuildId: M,
+        primaryGuild: Y.primaryGuild,
+        userId: Y.id,
+        contextGuildId: k,
         isOverlay: d,
         disableTooltip: true,
         className: o()(C.clanTag, d && C.isOverlay),
@@ -343,35 +345,35 @@ let U = function(e) {
           source: d ? I.jXE.OVERLAY : I.Sbl.VOICE_PANEL
         }
       };
-    return !P || d ? (0, r.jsx)(g.Z, w(R({}, t), {
+    return !x || d ? (0, r.jsx)(g.Z, w(R({}, t), {
       children: e
     })) : null
   }
 
-  function et() {
+  function en() {
     return (0, r.jsx)(j, R({
       disabled: u
     }, _))
   }
   return (0, r.jsx)(c.kL8, {
     ref: f,
-    className: o()(B, {
+    className: o()(Z, {
       [C.voiceUser]: true,
-      [C.overlap]: Z,
+      [C.overlap]: F,
       [C.selected]: s,
       [C.clickable]: null != m,
       [C.userSmall]: a === I.ipw.SMALL,
       [C.userLarge]: a === I.ipw.LARGE,
       [C.disabled]: !s && u,
-      [C.ringing]: V
+      [C.ringing]: H
     }),
-    onClick: K,
-    onDoubleClick: z,
-    onContextMenu: q,
-    onMouseLeave: X,
-    onMouseDown: Q,
+    onClick: z,
+    onDoubleClick: q,
+    onContextMenu: X,
+    onMouseLeave: Q,
+    onMouseDown: J,
     onKeyDown: E,
-    "aria-label": null != (t = null != F ? F : k) ? t : H.username,
+    "aria-label": null != (t = null != V ? V : U) ? t : Y.username,
     focusProps: {
       offset: {
         right: 4
@@ -379,9 +381,9 @@ let U = function(e) {
     },
     children: (0, r.jsxs)("div", {
       className: o()(C.content, {
-        [C.flipped]: G
+        [C.flipped]: B
       }),
-      children: [J(), $(), ee(), et()]
+      children: [$(), ee(), et(), en()]
     })
   })
 };

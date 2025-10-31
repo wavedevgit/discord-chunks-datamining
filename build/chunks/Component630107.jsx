@@ -13,8 +13,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk625128 = require("./625128.js"),
   Chunk362762 = require("./362762.js"),
   Chunk703656 = require("./703656.js"),
+  Chunk22095 = require("./22095.js"),
   Chunk617136 = require("./617136.js"),
-  Chunk272008 = require("./272008.js"),
   Chunk497505 = require("./497505.js"),
   Chunk110560 = require("./110560.jsx"),
   Chunk46140 = require("./46140.js"),
@@ -33,7 +33,7 @@ function b(e) {
   } = e, a = (0, l.e7)([o.Z], () => o.Z.getState("quests")), i = t.params.questId, b = function(e) {
     let [t, a] = n.useState(null);
     return n.useEffect(() => {
-      (0, _.gU)(e).then(e => a({
+      (0, u.gU)(e).then(e => a({
         status: "ok",
         value: e
       })).catch(() => a({
@@ -42,7 +42,7 @@ function b(e) {
     }, [a, e]), t
   }(i);
   n.useEffect(() => {
-    I || (null == a ? ((0, u.dA)({
+    I || (null == a ? ((0, _.dA)({
       questId: i,
       event: E.rMx.QUEST_SHARE_LINK_DEEP_LINKED_INTO_DESKTOP_CLIENT,
       properties: {},

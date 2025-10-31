@@ -558,18 +558,19 @@ let F = Chunk647438.forwardRef((e, t) => {
   let {
     src: n,
     isSpeaking: i,
-    className: a
+    isLatched: a,
+    className: s
   } = e;
   return (0, r.jsxs)("div", {
     ref: t,
-    className: o()(b.avatarStack, a),
+    className: o()(b.avatarStack, s),
     children: [(0, r.jsx)("img", {
       src: null != n ? n : true,
       alt: " ",
       className: b.avatar,
       "aria-hidden": true
-    }), i && (0, r.jsx)("div", {
-      className: b.avatarSpeaking
+    }), (i || a) && (0, r.jsx)("div", {
+      className: i ? b.avatarSpeaking : b.avatarLatched
     })]
   }, n)
 });
@@ -585,70 +586,72 @@ function V(e) {
     typingIndicatorRef: _,
     avatarContentRef: m,
     isSpeaking: E = false,
-    statusTooltip: y = false,
-    statusTooltipDelay: v,
-    statusBackdropColor: T,
-    "aria-hidden": S = false,
-    "aria-label": A,
-    imageClassName: C,
-    ref: N,
-    CutoutIcon: R,
-    avatarTooltipAsset: P,
-    avatarTooltipText: x,
-    avatarTooltipTitle: M
-  } = e, k = n !== h.Skl.UNKNOWN ? n : null, B = (0, g.UC)(a), V = null != k ? Math.ceil((B.status * g.D6 - B.status) / 2) : 0, H = B.size + V, Y = (0, u.vj)(k, s), W = i.useId();
+    isLatched: y = false,
+    statusTooltip: v = false,
+    statusTooltipDelay: T,
+    statusBackdropColor: S,
+    "aria-hidden": A = false,
+    "aria-label": C,
+    imageClassName: N,
+    ref: R,
+    CutoutIcon: P,
+    avatarTooltipAsset: x,
+    avatarTooltipText: M,
+    avatarTooltipTitle: k
+  } = e, B = n !== h.Skl.UNKNOWN ? n : null, V = (0, g.UC)(a), H = null != B ? Math.ceil((V.status * g.D6 - V.status) / 2) : 0, Y = V.size + H, W = (0, u.vj)(B, s), K = i.useId();
   return (0, r.jsx)(Z, I(O({}, e), {
-    ariaLabel: A,
-    ariaHidden: S,
-    status: k,
-    specs: B,
-    typingOffset: V,
+    ariaLabel: C,
+    ariaHidden: A,
+    status: B,
+    specs: V,
+    typingOffset: H,
     children: (0, r.jsxs)("svg", {
-      ref: N,
-      width: H,
-      height: H,
-      viewBox: "0 0 ".concat(H, " ").concat(H),
+      ref: R,
+      width: Y,
+      height: Y,
+      viewBox: "0 0 ".concat(Y, " ").concat(Y),
       className: o()(b.mask, b.svg),
       "aria-hidden": true,
-      children: [null != P && j(W, B, {
-        status: k,
+      children: [null != x && j(K, V, {
+        status: B,
         isMobile: l,
         isTyping: f
-      }, P), (0, r.jsx)("foreignObject", {
+      }, x), (0, r.jsx)("foreignObject", {
         x: 0,
         y: 0,
-        width: B.size,
-        height: B.size,
-        mask: null != P ? "url(#".concat(W, ")") : "url(#".concat(w(k, a, l, f), ")"),
+        width: V.size,
+        height: V.size,
+        mask: null != x ? "url(#".concat(K, ")") : "url(#".concat(w(B, a, l, f), ")"),
         children: (0, r.jsx)(F, {
           ref: m,
           src: t,
           isSpeaking: E,
-          className: C
+          isLatched: y,
+          className: N
         })
-      }), null != k && null != T ? L(T, l, B, k) : null, null != k ? (0, r.jsx)(d.aM, {
+      }), null != B && null != S ? L(S, l, V, B) : null, null != B ? (0, r.jsx)(d.aM, {
         "data-migration-pending": true,
-        text: y ? (0, p.u5)(k) : null,
+        text: v ? (0, p.u5)(B) : null,
         "aria-label": false,
         position: "top",
-        spacing: 5 + 1.5 * B.stroke,
-        delay: v,
+        spacing: 5 + 1.5 * V.stroke,
+        delay: T,
         children: e => (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("rect", I(O({}, e, D(B, k, l, f)), {
-            fill: Y,
-            mask: "url(#".concat((0, u.rs)(k, l, f), ")"),
+          children: [(0, r.jsx)("rect", I(O({}, e, D(V, B, l, f)), {
+            fill: W,
+            mask: "url(#".concat((0, u.rs)(B, l, f), ")"),
             className: b.pointerEvents
           })), f ? (0, r.jsx)(c.b, {
             ref: _,
-            dotRadius: B.status / 4,
-            x: B.size - 1.375 * B.status - B.offset,
-            y: B.size - B.status / 1.333 - B.offset
+            dotRadius: V.status / 4,
+            x: V.size - 1.375 * V.status - V.offset,
+            y: V.size - V.status / 1.333 - V.offset
           }) : null]
         })
-      }) : null, null != R && U(B, R), null != M && G(B, l, f, {
-        avatarTooltipTitle: M,
-        avatarTooltipText: x
-      }, P)]
+      }) : null, null != P && U(V, P), null != k && G(V, l, f, {
+        avatarTooltipTitle: k,
+        avatarTooltipText: M
+      }, x)]
     })
   }))
 }
@@ -678,47 +681,48 @@ function W(e) {
     isTyping: _ = false,
     typingIndicatorRef: h,
     isSpeaking: m = false,
-    size: E,
-    src: y,
-    status: v,
-    statusColor: S,
-    statusTooltip: R = false,
-    statusTooltipDelay: P,
-    statusBackdropColor: w,
-    "aria-hidden": D = false,
-    "aria-label": x,
-    imageClassName: M,
-    pulseStatusIcon: j,
-    CutoutIcon: V,
-    avatarTooltipAsset: W,
-    avatarTooltipText: K,
-    avatarTooltipTitle: z
-  } = e, q = (0, u.vj)(v, S), X = i.useId(), Q = i.useId(), [J] = i.useState(() => O({
+    isLatched: E = false,
+    size: y,
+    src: v,
+    status: S,
+    statusColor: R,
+    statusTooltip: P = false,
+    statusTooltipDelay: w,
+    statusBackdropColor: D,
+    "aria-hidden": x = false,
+    "aria-label": M,
+    imageClassName: j,
+    pulseStatusIcon: V,
+    CutoutIcon: W,
+    avatarTooltipAsset: K,
+    avatarTooltipText: z,
+    avatarTooltipTitle: q
+  } = e, X = (0, u.vj)(S, R), Q = i.useId(), J = i.useId(), [$] = i.useState(() => O({
     fill: a
   }, B({
-    size: E,
+    size: y,
     status: n,
     isMobile: t,
     isTyping: false
-  }))), $ = i.useMemo(() => O({
-    fill: q
+  }))), ee = i.useMemo(() => O({
+    fill: X
   }, B({
-    size: E,
-    status: v,
+    size: y,
+    status: S,
     isMobile: f,
     isTyping: _
-  })), [q, E, v, f, _]), ee = (0, l.q_F)({
+  })), [X, y, S, f, _]), et = (0, l.q_F)({
     config: A,
-    from: J,
-    to: $
+    from: $,
+    to: ee
   }, C() ? "animate-always" : "animate-never"), {
-    avatarCutoutX: et,
-    avatarCutoutY: en,
-    avatarCutoutWidth: er,
-    avatarCutoutHeight: ei,
-    avatarCutoutRadius: ea,
-    fill: eo
-  } = ee, es = T(ee, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), el = (0, g.px)(E), ec = (0, g.UC)(E), eu = ec.status * g.D6, ed = ec.status * g.EW, ef = null != v ? (ec.status * g.D6 - ec.status) / 2 : 0, e_ = ec.size + Math.ceil(ef), [ep, eh, em] = (0, l.q_F)({
+    avatarCutoutX: en,
+    avatarCutoutY: er,
+    avatarCutoutWidth: ei,
+    avatarCutoutHeight: ea,
+    avatarCutoutRadius: eo,
+    fill: es
+  } = et, el = T(et, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), ec = (0, g.px)(y), eu = (0, g.UC)(y), ed = eu.status * g.D6, ef = eu.status * g.EW, e_ = null != S ? (eu.status * g.D6 - eu.status) / 2 : 0, ep = eu.size + Math.ceil(e_), [eh, em, eg] = (0, l.q_F)({
     config: {
       tension: 450,
       friction: 20,
@@ -727,92 +731,93 @@ function W(e) {
     from: {
       scale: 1
     },
-    to: j ? [{
+    to: V ? [{
       scale: .8
     }, {
       scale: 1.1
     }, {
       scale: 1
     }] : []
-  }, C() ? "animate-always" : "animate-never", [j, v]);
+  }, C() ? "animate-always" : "animate-never", [V, S]);
   return (0, r.jsx)(Z, I(O({}, e), {
-    ariaLabel: x,
-    ariaHidden: D,
-    typingOffset: ef,
-    specs: ec,
+    ariaLabel: M,
+    ariaHidden: x,
+    typingOffset: e_,
+    specs: eu,
     children: (0, r.jsxs)("svg", {
-      width: e_,
-      height: e_,
-      viewBox: "0 0 ".concat(e_, " ").concat(e_),
+      width: ep,
+      height: ep,
+      viewBox: "0 0 ".concat(ep, " ").concat(ep),
       className: o()(b.mask, b.svg),
       "aria-hidden": true,
       children: [(0, r.jsxs)("mask", {
-        id: X,
-        width: el,
-        height: el,
+        id: Q,
+        width: ec,
+        height: ec,
         children: [(0, r.jsx)("circle", {
-          cx: el / 2,
-          cy: el / 2,
-          r: el / 2,
+          cx: ec / 2,
+          cy: ec / 2,
+          r: ec / 2,
           fill: "white"
         }), (0, r.jsx)(s.animated.rect, {
           color: "black",
-          x: et,
-          y: en,
-          width: er,
-          height: ei,
-          rx: ea,
-          ry: ea
-        }), null != W && k(ec.size - ec.status - ec.offset, ec.offset, ec.status, W, ec)]
+          x: en,
+          y: er,
+          width: ei,
+          height: ea,
+          rx: eo,
+          ry: eo
+        }), null != K && k(eu.size - eu.status - eu.offset, eu.offset, eu.status, K, eu)]
       }), (0, r.jsx)("foreignObject", {
         className: b.__invalid_foreignObject,
         x: 0,
         y: 0,
-        width: el,
-        height: el,
-        mask: "url(#".concat(X, ")"),
+        width: ec,
+        height: ec,
+        mask: "url(#".concat(Q, ")"),
         children: (0, r.jsx)(F, {
-          src: y,
+          src: v,
           isSpeaking: m,
-          className: M
+          isLatched: E,
+          className: j
         })
-      }), null != w && L(w, f, ec, v), (0, r.jsx)(d.aM, {
+      }), null != D && L(D, f, eu, S), (0, r.jsx)(d.aM, {
         "data-migration-pending": true,
-        text: R ? (0, p.u5)(v) : null,
+        text: P ? (0, p.u5)(S) : null,
         "aria-label": false,
         position: "top",
-        spacing: H(ec.status, ec.stroke, f, _),
-        delay: P,
+        spacing: H(eu.status, eu.stroke, f, _),
+        delay: w,
         children: e => (0, r.jsxs)(s.animated.g, {
-          transform: ep.scale.to(e => "scale(".concat(e, ") ").concat(Y(ec, e, v))),
+          transform: eh.scale.to(e => "scale(".concat(e, ") ").concat(Y(eu, e, S))),
           children: [(0, r.jsxs)("svg", {
-            width: eu,
-            height: ed,
-            viewBox: "0 0 ".concat(eu, " ").concat(ed),
-            className: R ? b.cursorDefault : true,
-            children: [(0, u.vP)(es, ec.status, Q), (0, r.jsx)(s.animated.rect, {
-              fill: eo,
-              width: eu,
-              height: ed,
-              mask: "url(#".concat(Q, ")")
+            width: ed,
+            height: ef,
+            viewBox: "0 0 ".concat(ed, " ").concat(ef),
+            className: P ? b.cursorDefault : true,
+            children: [(0, u.vP)(el, eu.status, J), (0, r.jsx)(s.animated.rect, {
+              fill: es,
+              width: ed,
+              height: ef,
+              mask: "url(#".concat(J, ")")
             }), (0, r.jsx)(c.b, {
               ref: h,
-              dotRadius: ec.status / 4,
-              x: .15 * eu,
-              y: .5 * ed,
+              dotRadius: eu.status / 4,
+              x: .15 * ed,
+              y: .5 * ef,
               hide: !_
             })]
           }), (0, r.jsx)(N, O({
-            size: E,
+            size: y,
             isMobile: f,
             isTyping: _,
             className: b.pointerEvents
           }, e))]
         })
-      }), null != V && U(ec, V), null != z && G(ec, f, _, {
-        avatarTooltipTitle: z,
-        avatarTooltipText: K
-      }, W)]
+      }), null != W && U(eu, W), null != q && G(eu, f, _, {
+        avatarTooltipTitle: q,
+        avatarTooltipText: z
+      }, K)]
     })
   }))
 }

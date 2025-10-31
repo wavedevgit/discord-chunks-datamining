@@ -18,9 +18,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk70097 = require("./70097.jsx"),
   Chunk451478 = require("./451478.js"),
+  Chunk22095 = require("./22095.js"),
   Chunk617136 = require("./617136.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk272008 = require("./272008.js"),
   Chunk113434 = require("./113434.js"),
   Chunk569984 = require("./569984.js"),
   Chunk497505 = require("./497505.js"),
@@ -305,15 +305,15 @@ function X(e) {
     onCtxMenuClose: f,
     onCtxMenuSelect: h,
     onGameSheetOpened: x,
-    onGameSheetClosed: j
+    onGameSheetClosed: _
   } = e, C = (null == (t = n.userStatus) ? true : t.completedAt) != null, E = a.percentComplete > 0, O = (0, v.z)(n), [S, T, w] = (0, v.me)(n, a), P = s.useRef(null), N = s.useRef(null), A = (0, v._s)({
     quest: n
-  }), W = (0, b.q8)(n), F = (0, v.Jf)(n), z = s.useCallback(() => {
+  }), W = (0, j.q8)(n), F = (0, v.Jf)(n), z = s.useCallback(() => {
     (0, R.openVideoQuestModal)({
       quest: n,
       questContent: y.jn.QUEST_BAR_V2,
       sourceQuestContent: y.jn.QUEST_BAR_V2,
-      sourceQuestContentCTA: _.jZ.QUEST_BAR_VIDEO_QUEST_PREVIEW
+      sourceQuestContentCTA: b.jZ.QUEST_BAR_VIDEO_QUEST_PREVIEW
     })
   }, [n]), K = null != F ? F.percentComplete : a.percentComplete;
   return (0, r.jsxs)(r.Fragment, {
@@ -354,9 +354,9 @@ function X(e) {
         activeScreen: S,
         popoutTargetElementRef: N,
         onGameSheetOpened: x,
-        onGameSheetClosed: j
+        onGameSheetClosed: _
       }), (0, r.jsx)(B.n, {
-        children: !C && !(0, b.Gd)(n) && (0, l.EQ)(S).with(y.LI.SELECT, () => (0, r.jsx)(V.Z, {
+        children: !C && !(0, j.Gd)(n) && (0, l.EQ)(S).with(y.LI.SELECT, () => (0, r.jsx)(V.Z, {
           onConsole: () => w(M.cd.CONSOLE),
           onDesktop: () => w(M.cd.DESKTOP)
         })).with(y.LI.DESKTOP, () => (0, r.jsx)(q.Z, {
@@ -384,7 +384,7 @@ function X(e) {
           taskDetails: a,
           sourceQuestContent: y.jn.QUEST_BAR_V2,
           onGameSheetOpened: x,
-          onGameSheetClosed: j
+          onGameSheetClosed: _
         })]
       })]
     }), (0, r.jsx)("div", {
@@ -396,17 +396,17 @@ function X(e) {
   })
 }
 async function Y(e, t, n, r) {
-  let s = (0, b.q8)(e);
+  let s = (0, j.q8)(e);
   return s && (0, S.R)(M.dr.QUESTS_BAR) ? void await (0, R.enrollAndStartVideoQuestWithErrorHandling)(e, {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: r,
     sourceQuestContentCTA: n
-  }) : (0, b.Rt)(e) && (0, S.R)(M.dr.QUESTS_BAR) ? void await (0, j.AH)(e.id, {
+  }) : (0, j.Rt)(e) && (0, S.R)(M.dr.QUESTS_BAR) ? void await (0, _.AH)(e.id, {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: r
-  }) : void((0, j.AH)(e.id, {
+  }) : void((0, _.AH)(e.id, {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: r
@@ -431,14 +431,14 @@ let J = Chunk647438.forwardRef(function(e, t) {
     onCtxMenuSelect: f,
     onGameSheetOpened: h,
     onGameSheetClosed: x,
-    overlayRef: j,
+    overlayRef: _,
     quest: C,
     useReducedMotion: E,
     taskDetails: O
   } = e, {
     launchInGameActivity: S
-  } = (0, v.zB)(C), T = (0, b.Rt)(C), w = s.useCallback(async () => {
-    let e = T ? _.jZ.START_QUEST : _.jZ.ACCEPT_QUEST;
+  } = (0, v.zB)(C), T = (0, j.Rt)(C), w = s.useCallback(async () => {
+    let e = T ? b.jZ.START_QUEST : b.jZ.ACCEPT_QUEST;
     await Y(C, y.jn.QUEST_BAR_V2, e, y.jn.QUEST_BAR_V2), T && S()
   }, [C, S, T]), P = (null == (n = C.userStatus) ? true : n.enrolledAt) != null, N = d && u;
   return (0, r.jsxs)(i.animated.div, {
@@ -464,7 +464,7 @@ let J = Chunk647438.forwardRef(function(e, t) {
         quest: C,
         taskDetails: O,
         expansionSpring: p,
-        overlayRef: j,
+        overlayRef: _,
         isExpanded: d,
         reducedMotion: E,
         onCtxMenuOpen: m,

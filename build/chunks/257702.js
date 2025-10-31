@@ -9,6 +9,7 @@ module.exports = {
   cursorDefault: "cursorDefault__44b0c",
   avatarStack: "avatarStack__44b0c",
   avatar: "avatar__44b0c",
+  avatarLatched: "avatarLatched__44b0c",
   avatarSpeaking: "avatarSpeaking__44b0c",
   pointerEvents: "pointerEvents__44b0c",
   avatarDecoration: "avatarDecoration__44b0c",

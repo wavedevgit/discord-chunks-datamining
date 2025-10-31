@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk507808 = require("./507808.js"),
   Chunk43747 = require("./43747.js"),
   Chunk960919 = require("./960919.jsx"),
+  Chunk22095 = require("./22095.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk272008 = require("./272008.js"),
   Chunk497505 = require("./497505.js"),
   Chunk515108 = require("./515108.jsx"),
   Chunk291967 = require("./291967.jsx"),
@@ -180,11 +180,11 @@ function I(e) {
   } = e, c = (null == (t = n.userStatus) ? true : t.claimedAt) != null, {
     balance: d,
     error: u
-  } = (0, C.A)(), m = (0, b.LM)(n.config), [p, f] = r.useState(c ? "success" : "loading"), [_, v] = r.useState(false), E = r.useCallback(() => {
+  } = (0, C.A)(), m = (0, h.LM)(n.config), [p, f] = r.useState(c ? "success" : "loading"), [_, v] = r.useState(false), E = r.useCallback(() => {
     v(true)
   }, []);
   r.useEffect(() => {
-    c || "loading" !== p || (0, h.QB)(n.id, x.y$.CROSS_PLATFORM, l).then(() => f("success")).catch(() => f("error"))
+    c || "loading" !== p || (0, b.QB)(n.id, x.y$.CROSS_PLATFORM, l).then(() => f("success")).catch(() => f("error"))
   }, [n.id, c, p, l]);
   let N = !_ || "loading" === p || null == d && null == u,
     A = "error" === p || null == m || null == d && null != u;

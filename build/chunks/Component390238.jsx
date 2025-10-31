@@ -13,8 +13,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk530618 = require("./530618.jsx"),
   Chunk70097 = require("./70097.jsx"),
+  Chunk22095 = require("./22095.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk272008 = require("./272008.js"),
   Chunk497505 = require("./497505.js"),
   Chunk475595 = require("./475595.js"),
   Chunk566078 = require("./566078.js"),
@@ -32,7 +32,7 @@ function A(e) {
     transitionState: n,
     onClose: o,
     quest: m,
-    location: g,
+    location: h,
     reward: x,
     sourceQuestContent: j
   } = e, _ = r.useRef(null), [v, w] = r.useState(null), A = r.useRef(new s.qA), y = (0, d.e7)([c.Z], () => c.Z.useReducedMotion), B = (null == (t = m.userStatus) ? true : t.claimedAt) != null, [M, I] = r.useState(B ? "claimed" : "loading");
@@ -40,9 +40,9 @@ function A(e) {
     if (!B) {
       let e = f.r.build(m.config),
         t = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : C.y$.CROSS_PLATFORM;
-      (0, h.QB)(m.id, t, g).then(() => I("claimed")).catch(() => I("error"))
+      (0, g.QB)(m.id, t, h).then(() => I("claimed")).catch(() => I("error"))
     }
-  }, [m, g, B]);
+  }, [m, h, B]);
   let S = "loading" === M;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.O_, {
@@ -67,7 +67,7 @@ function A(e) {
         }) : (0, a.jsx)(k, {
           quest: m,
           rewardName: x.messages.name,
-          location: g,
+          location: h,
           useReducedMotion: y,
           onClose: o,
           sourceQuestContent: j
@@ -155,7 +155,7 @@ function y(e) {
     onClose: o,
     transitionState: i,
     sourceQuestContent: s
-  } = e, d = r.useMemo(() => (0, g.K)(t.config), [t]);
+  } = e, d = r.useMemo(() => (0, h.K)(t.config), [t]);
   return null == d ? null : (0, a.jsx)(j.A, {
     questOrQuests: t,
     questContent: C.jn.REWARD_MODAL,

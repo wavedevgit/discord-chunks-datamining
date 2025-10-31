@@ -15,8 +15,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk25990 = require("./25990.js"),
   Chunk594174 = require("./594174.js"),
   Chunk960048 = require("./960048.js"),
+  Chunk22095 = require("./22095.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk272008 = require("./272008.js"),
   Chunk113434 = require("./113434.js"),
   Chunk497505 = require("./497505.js"),
   Chunk475595 = require("./475595.js"),
@@ -79,7 +79,7 @@ function T(e) {
     preview: h,
     location: N,
     sourceQuestContent: b
-  } = e, T = a.useMemo(() => (0, g.xn)(s.config), [s]), P = (0, l.e7)([p.default], () => p.default.getCurrentUser()), [E, A] = function(e) {
+  } = e, T = a.useMemo(() => (0, C.xn)(s.config), [s]), P = (0, l.e7)([p.default], () => p.default.getCurrentUser()), [E, A] = function(e) {
     let {
       product: n,
       isFetching: t
@@ -100,7 +100,7 @@ function T(e) {
     return [r, l]
   }(null != (t = null == T ? true : T.skuId) ? t : null), D = (null == (n = s.userStatus) ? true : n.claimedAt) != null, L = !h && !D, [O, S] = a.useState(L ? "loading" : "claimed");
   a.useEffect(() => {
-    L && (0, C.QB)(s.id, v.y$.CROSS_PLATFORM, N).then(() => S("claimed")).catch(() => S("error"))
+    L && (0, g.QB)(s.id, v.y$.CROSS_PLATFORM, N).then(() => S("claimed")).catch(() => S("error"))
   }, [s.id, N, L]);
   let R = true === h && null === E && (null == T ? true : T.skuId) !== "",
     k = null == P,

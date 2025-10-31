@@ -4,18 +4,19 @@
 require.d(exports, {
   C7: () => o,
   Ec: () => a,
-  Mm: () => g,
+  Mm: () => E,
   T6: () => c,
-  ZM: () => p,
-  c5: () => _,
+  ZM: () => h,
+  c5: () => p,
   jR: () => l,
   kr: () => i,
-  lo: () => h,
+  lb: () => f,
+  lo: () => m,
   sA: () => u,
   sN: () => d,
-  tB: () => m,
+  tB: () => g,
   yG: () => s,
-  zj: () => f
+  zj: () => _
 }), require("./388685.js");
 var Chunk214627 = require("./214627.js"),
   i = function(e) {
@@ -28,11 +29,12 @@ let a = ">=19.0.0",
   c = ">=10.0.17763",
   u = "<10.0.22000",
   d = ">=10.0.26100",
-  f = 26100,
-  _ = ">=10.0.22000",
-  p = 22e3;
-var h = function(e) {
+  f = ">=10.0.26100",
+  _ = 26100,
+  p = ">=10.0.22000",
+  h = 22e3;
+var m = function(e) {
   return e.GUILD = "guild", e.CALL = "call", e
 }({});
-let m = Chunk214627.T.StreamNotificationsGuildMaxSize,
-  g = new Set(["chrome.exe", "opera.exe", "firefox.exe", "brave.exe", "msedge.exe"])
+let g = Chunk214627.T.StreamNotificationsGuildMaxSize,
+  E = new Set(["chrome.exe", "opera.exe", "firefox.exe", "brave.exe", "msedge.exe"])

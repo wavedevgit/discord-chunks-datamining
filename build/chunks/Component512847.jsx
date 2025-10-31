@@ -116,7 +116,7 @@ function w() {
 }
 
 function L() {
-  return x([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserSpeaking(), (e, t) => {
+  return x([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserPTTActive() || Chunk606304.Z.isCurrentUserPTTLatched(), (e, t) => {
     if (e !== t) {
       let e = I.Z.isSelfMute();
       if (I.Z.getMode() === P.pM4.PUSH_TO_TALK && !e) return t ? "ptt_start" : "ptt_stop"

@@ -231,7 +231,7 @@ class E extends Chunk839548.Z {
   constructor(e) {
     var t;
     super(e.context, e.userId), t = this, h(this, "input", true), h(this, "silenced", false), h(this, "interacted", false), h(this, "outputVolume", _.Qx), h(this, "sinkId", _.w5), h(this, "lastPingTime", 0), h(this, "outputs", {}), h(this, "webrtcStats", new d.r), h(this, "silenceThreshold", false), h(this, "canHavePriority", new Set), h(this, "prioritySpeakers", new Set), h(this, "audioContext", true), h(this, "setEchoCancellation", e => this.input.setEchoCancellation(e)), h(this, "setNoiseSuppression", e => this.input.setNoiseSuppression(e)), h(this, "setNoiseCancellation", e => this.input.setNoiseCancellation(e)), h(this, "getNoiseCancellation", () => this.input.getNoiseCancellation()), h(this, "setAutomaticGainControl", e => this.input.setAutomaticGainControl(e)), h(this, "setAudioSource", e => this.input.setAudioSource(e)), h(this, "setVideoSource", e => this.input.setVideoSource(e)), h(this, "setDesktopInput", e => this.input.setDesktop(e)), h(this, "setForceAudioInput", function(e) {
-      return arguments.length > 1 && true !== arguments[1] && arguments[1], t.input.setPTTActive(e)
+      return arguments.length > 1 && true !== arguments[1] && arguments[1], arguments.length > 2 && true !== arguments[2] && arguments[2], t.input.setPTTActive(e)
     }), h(this, "setSelfMute", e => {
       this.selfMute = e, this.input.setMute(e), this.emit(l.Sh.Mute, e)
     }), h(this, "handleAddVideoTrack", () => {

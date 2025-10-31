@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 975533, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => U
+  Z: () => V
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk846027 = require("./846027.js"),
@@ -17,12 +17,14 @@ var Chunk570140 = require("./570140.js"),
   Chunk891304 = require("./891304.js"),
   Chunk569545 = require("./569545.js"),
   Chunk722835 = require("./722835.js"),
+  Chunk837968 = require("./837968.js"),
   Chunk352527 = require("./352527.js"),
   Chunk641015 = require("./641015.js"),
   Chunk183584 = require("./183584.js"),
   Chunk383451 = require("./383451.js"),
   Chunk199902 = require("./199902.js"),
   Chunk131951 = require("./131951.js"),
+  Chunk19780 = require("./19780.js"),
   Chunk246946 = require("./246946.js"),
   Chunk556296 = require("./556296.js"),
   Chunk808506 = require("./808506.js"),
@@ -33,35 +35,42 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk345655 = require("./345655.js"),
   Chunk65154 = require("./65154.js");
-let w = new Map;
+let R = true,
+  D = new Map;
 
-function L(e, t, n) {
-  var r;
-  let i = performance.now(),
-    l = null != (r = n.context) ? r : Z.Yn.DEFAULT;
-  if (e) n.pressedTime = i;
-  else if (null != n.pressedTime && (0, O.f)({
+function M(e, t, n, r) {
+  var i;
+  let l = performance.now();
+  if (!C.Z.isConnected()) return;
+  let a = null != (i = r.context) ? i : L.Yn.DEFAULT,
+    s = D.get(a);
+  null == s && (s = {
+    held: new Set,
+    latched: new Set,
+    vadPriorityLatched: new Set,
+    priorityHeldOrLatched: new Set
+  }, D.set(a, s)), n || (e ? s.held.add(r.id) : s.held.delete(r.id));
+  let o = false;
+  if (e) r.pressedTime = l;
+  else if (null != r.pressedTime && (0, I.f)({
       location: "doPTT",
       autoTrackExposure: false
     }).enableLatching) {
-    let e = A._M,
+    let e = w._M,
       {
         pttLatchingEnabled: t = false
-      } = y.Z.getModeOptions(l);
-    if (!n.latched && true === t && i < n.pressedTime + e) {
-      n.latched = true;
-      return
-    }
-    n.latched = false
+      } = v.Z.getModeOptions(a),
+      i = n ? s.vadPriorityLatched : s.latched;
+    (o = i.has(r.id)) || true !== t || !(l < r.pressedTime + e) || !R ? (i.delete(r.id), o = false) : (i.add(r.id), o = true)
   }
-  let a = w.get(l);
-  null == a && (a = new Map, w.set(l, a));
-  let s = a.get(t);
-  null == s && (s = new Set, a.set(t, s)), e ? s.add(n.id) : s.delete(n.id);
-  let o = s.size > 0;
-  y.Z.getMediaEngine().eachConnection(e => e.setForceAudioInput(o, t), l)
+  t && (e || o ? s.priorityHeldOrLatched.add(r.id) : s.priorityHeldOrLatched.delete(r.id));
+  let c = s.held.size > 0,
+    u = s.latched.size > 0,
+    d = c || u,
+    p = s.priorityHeldOrLatched.size > 0;
+  (0, _.I)(c, p, d)
 }
-let R = {
+let k = {
     [Chunk981631.kg4.TOGGLE_PRIORITY_SPEAKER]: {
       onTrigger() {},
       keyEvents: {}
@@ -72,7 +81,7 @@ let R = {
     },
     [Chunk981631.kg4.PUSH_TO_TALK]: {
       onTrigger(e, t) {
-        y.Z.getMode(t.context) === x.pM4.PUSH_TO_TALK && (R[x.kg4.PUSH_TO_TALK].isPressed = e, L(e, false, t))
+        v.Z.getMode(t.context) === Z.pM4.PUSH_TO_TALK && (k[Z.kg4.PUSH_TO_TALK].isPressed = e, M(e, false, false, t))
       },
       keyEvents: {
         keyup: true,
@@ -82,9 +91,9 @@ let R = {
     },
     [Chunk981631.kg4.PUSH_TO_TALK_PRIORITY]: {
       onTrigger(e, t) {
-        (y.Z.getMode() === x.pM4.PUSH_TO_TALK || P.Z.getCurrentConfig({
+        (v.Z.getMode() === Z.pM4.PUSH_TO_TALK || A.Z.getCurrentConfig({
           location: "keybinds"
-        }).onPTTKeybind) && (R[x.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, L(e, true, t))
+        }).onPTTKeybind) && (k[Z.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, M(e, true, false, t))
       },
       keyEvents: {
         keyup: true,
@@ -94,9 +103,9 @@ let R = {
     },
     [Chunk981631.kg4.VAD_PRIORITY]: {
       onTrigger(e, t) {
-        y.Z.getMode() === x.pM4.VOICE_ACTIVITY && P.Z.getCurrentConfig({
+        v.Z.getMode() === Z.pM4.VOICE_ACTIVITY && A.Z.getCurrentConfig({
           location: "keybinds"
-        }).separateKeybind && (R[x.kg4.VAD_PRIORITY].isPressed = e, L(e, true, t))
+        }).separateKeybind && (k[Z.kg4.VAD_PRIORITY].isPressed = e, M(e, true, true, t))
       },
       keyEvents: {
         keyup: true,
@@ -106,7 +115,7 @@ let R = {
     },
     [Chunk981631.kg4.PUSH_TO_MUTE]: {
       onTrigger(e) {
-        y.Z.getMode() === x.pM4.VOICE_ACTIVITY && (R[x.kg4.PUSH_TO_MUTE].isPressed = e, i.Z.setTemporarySelfMute(e))
+        v.Z.getMode() === Z.pM4.VOICE_ACTIVITY && (k[Z.kg4.PUSH_TO_MUTE].isPressed = e, i.Z.setTemporarySelfMute(e))
       },
       keyEvents: {
         keyup: true,
@@ -160,9 +169,9 @@ let R = {
     },
     [Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK]: {
       onTrigger(e, t) {
-        if (!(0, C.I1)(t.shortcut)) return;
-        let n = (0, j.Z)();
-        null != n && l.Z.setInputLocked(!T.default.isLocked(n), n)
+        if (!(0, T.I1)(t.shortcut)) return;
+        let n = (0, x.Z)();
+        null != n && l.Z.setInputLocked(!j.default.isLocked(n), n)
       },
       keyEvents: {
         keyup: true,
@@ -235,12 +244,12 @@ let R = {
     },
     [Chunk981631.kg4.SOUNDBOARD_HOLD]: {
       onTrigger: e => {
-        let t = (0, j.Z)();
+        let t = (0, x.Z)();
         if (null != t) {
           if (e) {
-            if (!(0, b.D)()) return;
-            (0, E.IN)(false, t)
-          } else(0, E.oZ)(t);
+            if (!(0, E.D)()) return;
+            (0, O.IN)(false, t)
+          } else(0, O.oZ)(t);
           return
         }
       },
@@ -295,28 +304,34 @@ let R = {
       }
     }
   },
-  D = null;
+  U = null;
 
-function M() {
-  w.clear(), Chunk131951.Z.getMediaEngine().eachConnection(e => {
-    e.setForceAudioInput(false, false), e.setForceAudioInput(false, true)
-  }, Chunk65154.Yn.DEFAULT)
+function G() {
+  D.clear(), (0, Chunk837968.I)(false, false, false)
 }
-class k extends Chunk317770.Z {
+
+function B(e) {
+  let {
+    hasLatchPermission: t
+  } = e;
+  if (t === R) returnfalse;
+  (R = t) || G()
+}
+class H extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.wait(() => Chunk570140.Z.dispatch({
       type: "KEYBINDS_REGISTER_GLOBAL_KEYBIND_ACTIONS",
-      keybinds: R
-    })), Chunk570140.Z.subscribe("AUDIO_SET_MODE", M), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
+      keybinds: k
+    })), Chunk570140.Z.subscribe("AUDIO_SET_MODE", G), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk570140.Z.subscribe("SET_VAD_PERMISSION", B)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("AUDIO_SET_MODE", M), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
+    Chunk570140.Z.unsubscribe("AUDIO_SET_MODE", G), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk570140.Z.unsubscribe("SET_VAD_PERMISSION", B)
   }
   handleVoiceChannelSelect(e) {
     let {
       currentVoiceChannelId: t
     } = e;
-    t !== D && M(), D = t
+    t !== U && G(), U = t
   }
 }
-let U = new k
+let V = new H

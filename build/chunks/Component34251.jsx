@@ -6,8 +6,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk22095 = require("./22095.js"),
   Chunk509212 = require("./509212.js"),
-  Chunk272008 = require("./272008.js"),
   Chunk497505 = require("./497505.js"),
   Chunk566078 = require("./566078.js"),
   Chunk644646 = require("./644646.jsx"),
@@ -69,12 +69,12 @@ function g(e) {
     transitionState: d,
     location: f,
     sourceQuestContent: x
-  } = e, g = a.useMemo(() => (0, s.K)(n.config), [n]), h = (null == (t = n.userStatus) ? true : t.claimedAt) != null, _ = !n.preview && !h, [j, v] = a.useState(_ ? "loading" : "claimed");
+  } = e, g = a.useMemo(() => (0, o.K)(n.config), [n]), h = (null == (t = n.userStatus) ? true : t.claimedAt) != null, _ = !n.preview && !h, [j, v] = a.useState(_ ? "loading" : "claimed");
   a.useEffect(() => {
     if (_) {
       let e = c.r.build(n.config),
         t = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : l.y$.CROSS_PLATFORM;
-      (0, o.QB)(n.id, t, f).then(() => v("claimed")).catch(() => v("error"))
+      (0, s.QB)(n.id, t, f).then(() => v("claimed")).catch(() => v("error"))
     }
   }, [n, f, _]);
   let N = "error" === j || null == g;
