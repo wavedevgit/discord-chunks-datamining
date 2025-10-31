@@ -2,7 +2,8 @@
 /** chunk id: 321947, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  F: () => s,
+  Z: () => l
 }), require("./415506.js");
 var Chunk659181 = require("./659181.js"),
   Chunk523080 = require("./523080.js"),
@@ -16,9 +17,10 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s extends Chunk523080.Z {
+let s = e => e instanceof l;
+class l extends Chunk523080.Z {
   static fromServer(e) {
-    return new s(e)
+    return new l(e)
   }
   constructor(e) {
     super(e), o(this, "sku", true), this.skuProductLine = a.POd.SOCIAL_LAYER_GAME_ITEM;

@@ -20,43 +20,51 @@ function f(e) {
     cardImage: t,
     cardBackgroundImage: n,
     altText: a,
-    className: s,
-    shape: u
-  } = e, [f, _] = (0, c.Cf)(t.toString(), "#000000"), p = i.useMemo(() => {
-    let e = o()(f).brighten(1.5).saturate(.3).alpha(.8).hex(),
-      t = null != _ ? _ : o()(f).saturate(1.2).alpha(.9).hex();
+    containerClassName: s,
+    backgroundImageClassName: u,
+    foregroundImageClassName: f,
+    shape: _
+  } = e, [p, h] = (0, c.Cf)(t.toString(), "#000000"), m = i.useMemo(() => {
+    let e = o()(p).brighten(1.5).saturate(.3).alpha(.8).hex(),
+      t = null != h ? h : o()(p).saturate(1.2).alpha(.9).hex();
     return "linear-gradient(135deg, ".concat(e, ", ").concat(t, ")")
-  }, [f, _]);
-  return (0, r.jsx)("div", {
+  }, [p, h]);
+  return (0, r.jsxs)("div", {
     className: l()(d.cardContainer, {
-      [d.square]: "square" === u
+      [d.square]: "square" === _
     }, s),
-    style: null != n ? {
-      backgroundImage: "url(".concat(n.toString(), ")")
-    } : {
-      backgroundImage: p
-    },
-    children: (0, r.jsx)("img", {
+    children: [(0, r.jsx)("div", {
+      className: l()(d.cardBackgroundImage, u),
+      style: null != n ? {
+        backgroundImage: "url(".concat(n.toString(), ")")
+      } : {
+        backgroundImage: m
+      }
+    }), (0, r.jsx)("img", {
       src: t.toString(),
       alt: a,
       className: l()(d.skuImage, {
-        [d.square]: "square" === u
-      })
-    })
+        [d.square]: "square" === _
+      }, f)
+    })]
   })
 }
 
 function _(e) {
   let {
     sku: t,
-    className: n,
-    shape: i
-  } = e, a = (0, u.Do)(t), o = (0, u.a7)(t);
-  return null == a ? null : (0, r.jsx)(f, {
-    cardImage: a,
-    cardBackgroundImage: o,
+    containerClassName: n,
+    backgroundImageClassName: i,
+    foregroundImageClassName: a,
+    shape: o
+  } = e, s = (0, u.Do)(t), l = (0, u.a7)(t);
+  return null == s ? null : (0, r.jsx)(f, {
+    cardImage: s,
+    cardBackgroundImage: l,
     altText: t.name,
-    className: n,
-    shape: i
+    containerClassName: n,
+    backgroundImageClassName: i,
+    foregroundImageClassName: a,
+    shape: o
   })
 }

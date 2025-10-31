@@ -10,42 +10,42 @@ let l = e => {
     sku: t,
     application: l
   } = e;
-  (0, r.ZDy)(async () => {
+  (0, i.ZDy)(async () => {
     let {
       SocialLayerStorefrontItemClaimedSuccessfullyModal: e
     } = await n.e("21021").then(n.bind(n, 519193));
     return n => {
-      var r, a;
-      return (0, i.jsx)(e, (r = function(e) {
+      var i, a;
+      return (0, r.jsx)(e, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : e[t] = r
           })
         }
         return e
       }({}, n), a = a = {
         sku: t,
         application: l
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
         return n
       })(Object(a)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
-      }), r))
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+      }), i))
     }
   }, {
     modalKey: "social-layer-storefront-item-claimed-successfully-modal"

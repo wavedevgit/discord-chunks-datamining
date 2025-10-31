@@ -83,7 +83,7 @@ let v = (e, t) => {
       sku: t,
       fallbackLabel: null
     }) : t.productLine === b.POd.SOCIAL_LAYER_GAME_ITEM ? (0, r.jsx)(h.A, {
-      className: O.slayerStorefrontProductPreview,
+      containerClassName: O.slayerStorefrontProductPreview,
       sku: t,
       shape: "square"
     }) : null

@@ -178,6 +178,7 @@ function Z(e) {
           user: k,
           guildId: null == a ? true : a.id,
           nameplate: q,
+          className: null == q ? x.nameplatePreviewPlaceholder : true,
           isHighlighted: true
         })) : null,
         children: (0, r.jsx)(R.Z, {

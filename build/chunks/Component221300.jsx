@@ -18,13 +18,13 @@ function d(e) {
     item: t,
     profileOwner: r,
     isHighlighted: d,
-    surface: f = o.Y.PROFILE_MODAL
+    surface: f = c.Y.PROFILE_MODAL
   } = e, m = t.collectiblesItem;
   switch (m.type) {
     case i.Z.PROFILE_EFFECT:
       return (0, n.jsx)("div", {
         className: u.profileEffectPreview,
-        children: (0, n.jsx)(c.Z, {
+        children: (0, n.jsx)(o.Z, {
           skuId: m.skuId,
           isHighlighted: d,
           isPurchased: false,
@@ -34,12 +34,12 @@ function d(e) {
     case i.Z.AVATAR_DECORATION:
       return (0, n.jsx)("div", {
         className: u.avatarDecorationPreview,
-        children: (0, n.jsx)(l.R, {
+        children: (0, n.jsx)(s.R, {
           item: m,
           user: r,
           isHighlighted: d,
           isPurchased: false,
-          avatarSize: s.EFr.SIZE_80
+          avatarSize: l.EFr.SIZE_80
         })
       });
     case i.Z.NAMEPLATE:
@@ -55,7 +55,7 @@ function d(e) {
             showStatus: true,
             isPurchased: false,
             nameplatePreviewSize: "default",
-            width: f === o.Y.GIFTING_FLOW ? 136 : 200
+            width: f === c.Y.GIFTING_FLOW ? 136 : 200
           })
         }), (0, n.jsx)("div", {
           className: u.nameplateBottomRight,
@@ -68,7 +68,7 @@ function d(e) {
             showStatus: true,
             isPurchased: false,
             nameplatePreviewSize: "default",
-            width: f === o.Y.GIFTING_FLOW ? 136 : 200
+            width: f === c.Y.GIFTING_FLOW ? 136 : 200
           })
         })]
       });

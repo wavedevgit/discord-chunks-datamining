@@ -1,33 +1,33 @@
-/** Chunk was on 77033 **/
-/** chunk id: 594914, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 94758 **/
+/** chunk id: 594914, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  P: () => r
+  P: () => l
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js");
 
-function r(e, t) {
+function l(e, t) {
   let {
-    isGift: r
+    isGift: l
   } = t;
-  (0, l.ZDy)(async () => {
+  (0, i.ZDy)(async () => {
     let {
       default: t
-    } = await n.e("45227").then(n.bind(n, 556266));
-    return n => (0, a.jsx)(t, function(e) {
+    } = await r.e("45227").then(r.bind(r, 556266));
+    return r => (0, n.jsx)(t, function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          a = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), a.forEach(function(t) {
-          var a;
-          a = n[t], t in e ? Object.defineProperty(e, t, {
-            value: a,
+        var r = null != arguments[t] ? arguments[t] : {},
+          n = Object.keys(r);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(r, e).enumerable
+        }))), n.forEach(function(t) {
+          var n;
+          n = r[t], t in e ? Object.defineProperty(e, t, {
+            value: n,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = a
+          }) : e[t] = n
         })
       }
       return e
@@ -35,8 +35,8 @@ function r(e, t) {
       skuId: e.id,
       applicationId: e.applicationId,
       analyticsLocations: [],
-      isGift: r
-    }, n))
+      isGift: l
+    }, r))
   }, {
     modalKey: "slayers-payment-modal"
   })

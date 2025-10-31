@@ -1,4 +1,4 @@
-/** Chunk was on 31029 **/
+/** Chunk was on 84743 **/
 /** chunk id: 7305, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   STEPS: () => U,
@@ -92,14 +92,14 @@ function F(e) {
     p.Z.isLoadedForPremiumSKUs() || l.Z.wait(() => (0, o.Y2)())
   }, []);
   let {
-    step: G
+    step: H
   } = (0, f.JL)(), {
-    isGift: H,
+    isGift: G,
     giftMessage: U,
     giftRecipient: D
-  } = (0, m.wD)(), z = H && (0, h.pO)(D) && G === x.h8.PLAN_SELECT;
+  } = (0, m.wD)(), z = G && (0, h.pO)(D) && H === x.h8.PLAN_SELECT;
   return (0, r.jsx)(S.Z, {
-    isConfirmationStep: G === x.h8.CONFIRM && null == R && null == I,
+    isConfirmationStep: H === x.h8.CONFIRM && null == R && null == I,
     children: (0, r.jsx)(b.PaymentModal, {
       analyticsLocations: F,
       analyticsLocation: t,
@@ -113,7 +113,7 @@ function F(e) {
       subscriptionTier: u,
       onClose: _,
       trialId: g,
-      isGift: H,
+      isGift: G,
       trialFooterMessageOverride: j,
       reviewWarningMessage: L,
       planGroup: A.Y1,
@@ -136,7 +136,7 @@ function F(e) {
   })
 }
 
-function G(e) {
+function H(e) {
   var t, n;
   let {
     initialPlanId: i,
@@ -174,7 +174,7 @@ function G(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 }
-let H = function() {
+let G = function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     return [{
       key: null,
@@ -205,7 +205,7 @@ let H = function() {
       }
     }, {
       key: Chunk409813.h8.ADD_PAYMENT_STEPS,
-      renderStep: e => (0, r.jsx)(G, N({}, e)),
+      renderStep: e => (0, r.jsx)(H, N({}, e)),
       options: {
         renderHeader: true,
         useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : B.intl.string(B.t.Sb6wI1)
@@ -235,7 +235,7 @@ let H = function() {
       }
     }]
   },
-  U = H();
+  U = G();
 
 function D(e) {
   let t = (0, a.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()),
@@ -267,7 +267,7 @@ function D(e) {
     children: (0, r.jsx)(f.PaymentContextProvider, {
       loadId: j,
       activeSubscription: null != e.subscription ? e.subscription : t,
-      stepConfigs: H(S),
+      stepConfigs: G(S),
       skuIDs: [...A.YQ],
       isGift: b,
       defaultPlanId: null != n ? n : o,

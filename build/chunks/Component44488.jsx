@@ -1,19 +1,19 @@
-/** Chunk was on 69844 **/
+/** Chunk was on 84802 **/
 /** chunk id: 44488, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Pz: () => g,
+  Pz: () => h,
   ZP: () => _,
-  am: () => h
+  am: () => g
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
+var a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk768762 = require("./768762.jsx"),
   Chunk584917 = require("./584917.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,11 +21,11 @@ function u(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = {
+let m = {
   CENTER: Chunk584917.alignCenter,
   LEFT: Chunk584917.alignLeft
 };
-class m extends(r = Chunk647438.PureComponent) {
+class p extends(a = Chunk647438.PureComponent) {
   componentDidUpdate(e) {
     let {
       selectedIndex: t
@@ -37,14 +37,14 @@ class m extends(r = Chunk647438.PureComponent) {
       renderItem: e,
       items: t,
       vertical: n,
-      paginationContainerClass: r,
-      align: l
+      paginationContainerClass: a,
+      align: i
     } = this.props, c = require ? Chunk584917.verticalPaginationItemContainer : Chunk584917.horizontalPaginationItemContainer;
     return (0, Chunk951288.jsx)(Chunk481060.yWw, {
       orientation: require ? "vertical" : "horizontal",
-      className: s()(Chunk768762, r, Chunk120356),
+      className: o()(Chunk768762, a, Chunk120356),
       ref: this.handleSetScrollerRef,
-      children: exports.map((t, n) => i.cloneElement(e(t, n), {
+      children: exports.map((t, n) => l.cloneElement(e(t, n), {
         onClick: () => this.handlePageClick(n),
         key: n,
         ref: e => {
@@ -54,9 +54,9 @@ class m extends(r = Chunk647438.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), u(this, "_scrollerRef", null), u(this, "_paginationItemRefs", []), u(this, "handleSetScrollerRef", e => {
+    super(...e), d(this, "_scrollerRef", null), d(this, "_paginationItemRefs", []), d(this, "handleSetScrollerRef", e => {
       this._scrollerRef = e
-    }), u(this, "handleSelectedIndexChange", e => {
+    }), d(this, "handleSelectedIndexChange", e => {
       let t = this._scrollerRef;
       if (null == t) return;
       let n = this._paginationItemRefs[e];
@@ -65,7 +65,7 @@ class m extends(r = Chunk647438.PureComponent) {
         animate: true,
         padding: this.props.scrollToPadding
       })
-    }), u(this, "handlePageClick", e => {
+    }), d(this, "handlePageClick", e => {
       let {
         onSetItem: t
       } = this.props;
@@ -73,22 +73,22 @@ class m extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-u(m, "Align", p), u(m, "defaultProps", {
+d(p, "Align", m), d(p, "defaultProps", {
   scrollToPadding: {
     top: 0,
     left: 0,
     bottom: 0,
     right: 0
   },
-  align: p.CENTER
+  align: m.CENTER
 });
-class h extends Chunk647438.PureComponent {
+class g extends Chunk647438.PureComponent {
   render() {
     let {
       className: e
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk481060.P3F, {
-      className: s()(Chunk584917.prevButtonContainer, module),
+      className: o()(Chunk584917.prevButtonContainer, module),
       onClick: this.handlePrevClick,
       children: (0, Chunk951288.jsx)(Chunk768762.Z, {
         className: Chunk584917.arrow,
@@ -97,7 +97,7 @@ class h extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), u(this, "handlePrevClick", e => {
+    super(...e), d(this, "handlePrevClick", e => {
       e.stopPropagation(), e.preventDefault();
       let {
         onClick: t
@@ -106,13 +106,13 @@ class h extends Chunk647438.PureComponent {
     })
   }
 }
-class g extends Chunk647438.PureComponent {
+class h extends Chunk647438.PureComponent {
   render() {
     let {
       className: e
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk481060.P3F, {
-      className: s()(Chunk584917.nextButtonContainer, module),
+      className: o()(Chunk584917.nextButtonContainer, module),
       onClick: this.handleNextClick,
       children: (0, Chunk951288.jsx)(Chunk768762.Z, {
         className: Chunk584917.arrow,
@@ -121,7 +121,7 @@ class g extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), u(this, "handleNextClick", e => {
+    super(...e), d(this, "handleNextClick", e => {
       e.stopPropagation(), e.preventDefault();
       let {
         onClick: t
@@ -130,4 +130,4 @@ class g extends Chunk647438.PureComponent {
     })
   }
 }
-let _ = m
+let _ = p

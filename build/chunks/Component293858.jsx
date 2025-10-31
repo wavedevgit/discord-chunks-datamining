@@ -1,4 +1,4 @@
-/** Chunk was on 31029 **/
+/** Chunk was on 84743 **/
 /** chunk id: 293858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => L
@@ -49,8 +49,8 @@ function L(e) {
       giftRecipient: N,
       giftCode: R,
       hasSentMessage: F,
-      isSendingMessage: G,
-      sendGiftMessage: H,
+      isSendingMessage: H,
+      sendGiftMessage: G,
       claimableRewards: U,
       selectedGiftingPromotionReward: D
     } = (0, _.wD)(),
@@ -68,10 +68,10 @@ function L(e) {
     n(), null == L || L()
   }, [n, L]);
   i.useEffect(() => {
-    !Z || null == N || null == R || F || G || (0, u.pO)(N) || H({
+    !Z || null == N || null == R || F || H || (0, u.pO)(N) || G({
       onSubscriptionConfirmation: L
     })
-  }, [H, Z, N, R, F, G, L]), i.useEffect(() => {
+  }, [G, Z, N, R, F, H, L]), i.useEffect(() => {
     null != K && null != K.reminderNotice && W && (0, s.wH)(o.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
       dismissAction: j.L.INDIRECT_ACTION
     })

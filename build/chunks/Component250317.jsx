@@ -1,7 +1,7 @@
 /** Chunk was on 84802 **/
-/** chunk id: 250317, original params: e,t,a (module,exports,require) **/
+/** chunk id: 250317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => I
+  default: () => v
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,42 +19,42 @@ var Chunk951288 = require("./951288.js"),
   Chunk424215 = require("./424215.js");
 
 function C(e) {
-  var t, a, l, r;
+  var t, n, r, l;
   let {
     sku: o
   } = e;
   if (null == o) return null;
-  let c = (0, s.T4)(null != (l = null == (t = o.price) ? true : t.amount) ? l : 0, null != (r = null == (a = o.price) ? true : a.currency) ? r : g.pK.USD);
-  return (0, n.jsxs)("div", {
-    className: h.detailsContainer,
-    children: [(0, n.jsxs)("div", {
-      className: h.titleDescriptionContainer,
-      children: [(0, n.jsx)(i.Heading, {
+  let c = (0, s.T4)(null != (r = null == (t = o.price) ? true : t.amount) ? r : 0, null != (l = null == (n = o.price) ? true : n.currency) ? l : g.pK.USD);
+  return (0, a.jsxs)("div", {
+    className: _.detailsContainer,
+    children: [(0, a.jsxs)("div", {
+      className: _.titleDescriptionContainer,
+      children: [(0, a.jsx)(i.Heading, {
         variant: "heading-xl/bold",
         color: "header-primary",
         lineClamp: 2,
         children: o.name
-      }), (0, n.jsx)(i.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
         children: o.description
       })]
-    }), (0, n.jsx)(i.Heading, {
+    }), (0, a.jsx)(i.Heading, {
       variant: "heading-md/semibold",
       color: "header-primary",
       children: c
-    }), (0, n.jsxs)("div", {
-      className: h.buttonsContainer,
-      children: [(0, n.jsx)(i.Button, {
+    }), (0, a.jsxs)("div", {
+      className: _.buttonsContainer,
+      children: [(0, a.jsx)(i.Button, {
         variant: "primary",
         onClick: () => {
           (0, m.P)(o, {
             isGift: false
           })
         },
-        text: b.intl.string(b.t.boqtTA),
+        text: h.intl.string(h.t.boqtTA),
         fullWidth: true
-      }), (0, n.jsx)(i.Button, {
+      }), (0, a.jsx)(i.Button, {
         icon: i.OgN,
         variant: "secondary",
         onClick: () => {
@@ -62,25 +62,25 @@ function C(e) {
             isGift: true
           })
         },
-        text: b.intl.string(b.t.QAZA5f),
+        text: h.intl.string(h.t.QAZA5f),
         fullWidth: true
       })]
     })]
   })
 }
 
-function _(e) {
-  var t, a, l;
+function b(e) {
+  var t, n, r;
   let {
-    sku: r,
+    sku: l,
     applicationId: i,
     storefront: o
   } = e;
-  if (null == r) return null;
-  let s = null == (a = r.tenantMetadata) || null == (t = a.socialLayer) ? true : t.carouselItems;
+  if (null == l) return null;
+  let s = null == (n = l.tenantMetadata) || null == (t = n.socialLayer) ? true : t.carouselItems;
   if (null == s || 0 === s.length) return null;
-  let u = (l = o.assets, null == s || 0 === s.length ? [] : s.map(e => {
-    let t = null != e.assetId ? l[e.assetId] : null;
+  let u = (r = o.assets, null == s || 0 === s.length ? [] : s.map(e => {
+    let t = null != e.assetId ? r[e.assetId] : null;
     return null == t ? null : t.mime_type.startsWith("video/") ? {
       type: "video",
       src: (0, c._W)(i, t, p.Q, "mp4"),
@@ -94,8 +94,8 @@ function _(e) {
       backgroundSrc: null != e.backgroundAssetId ? (0, c._W)(i, e.backgroundAssetId, p.Q, "webp") : true
     }
   }).filter(e => null != e));
-  return 0 === u.length ? null : (0, n.jsx)(p.Z, {
-    className: h.carousel,
+  return 0 === u.length ? null : (0, a.jsx)(p.Z, {
+    className: _.carousel,
     items: u,
     paused: true
   })
@@ -104,84 +104,84 @@ function _(e) {
 function f(e) {
   let {
     socialLayerTenantMetadata: t,
-    selectedCarouselItemIndex: a,
-    applicationId: l
+    selectedCarouselItemIndex: n,
+    applicationId: r
   } = e;
-  if (null == t || t.carouselItems.length <= a) return null;
-  let r = t.carouselItems[a];
-  if (null == r) return null;
-  let o = null != r.labelIconAssetId ? (0, c._W)(l, r.labelIconAssetId) : null;
-  return (0, n.jsxs)("div", {
-    className: h.labelIconContainer,
-    children: [null != o && (0, n.jsx)("img", {
-      className: h.labelIcon,
+  if (null == t || t.carouselItems.length <= n) return null;
+  let l = t.carouselItems[n];
+  if (null == l) return null;
+  let o = null != l.labelIconAssetId ? (0, c._W)(r, l.labelIconAssetId) : null;
+  return (0, a.jsxs)("div", {
+    className: _.labelIconContainer,
+    children: [null != o && (0, a.jsx)("img", {
+      className: _.labelIcon,
       src: o,
-      alt: r.label
-    }), (0, n.jsx)(i.Text, {
+      alt: l.label
+    }), (0, a.jsx)(i.Text, {
       variant: "text-xs/medium",
       color: "text-primary",
-      children: r.label
+      children: l.label
     })]
   })
 }
 
-function v(e) {
+function I(e) {
   let {
     onClick: t,
-    children: a,
-    "aria-label": l
+    children: n,
+    "aria-label": r
   } = e;
-  return (0, n.jsx)(i.P3F, {
+  return (0, a.jsx)(i.P3F, {
     onClick: t,
-    className: h.modalHeaderButton,
-    "aria-label": l,
+    className: _.modalHeaderButton,
+    "aria-label": r,
     role: "button",
-    children: a
+    children: n
   })
 }
 
-function I(e) {
-  var t, a;
+function v(e) {
+  var t, n;
   let {
     transitionState: s,
     returnRef: c,
     skuId: m,
     applicationId: p,
     guildId: g,
-    onClose: I
-  } = e, x = (0, r.e7)([d.Z], () => d.Z.getStorefrontData(g), [g]), j = (0, r.e7)([o.Z], () => o.Z.get(m)), y = null == j || null == (t = j.tenantMetadata) ? true : t.socialLayer, [k, P] = l.useState(0);
-  return (l.useEffect(() => {
+    onClose: v
+  } = e, x = (0, l.e7)([d.Z], () => d.Z.getStorefrontData(g), [g]), P = (0, l.e7)([o.Z], () => o.Z.get(m)), S = null == P || null == (t = P.tenantMetadata) ? true : t.socialLayer, [j, y] = r.useState(0);
+  return (r.useEffect(() => {
     null == x && (0, u.Y)(g)
-  }, [g, x]), null == y || null == x || null == x.storefront) ? null : (0, n.jsx)(i.Y0X, {
+  }, [g, x]), null == S || null == x || null == x.storefront) ? null : (0, a.jsx)(i.Y0X, {
     transitionState: s,
     "hide-shadow": true,
     parentComponent: "SocialLayerStorefrontProductDetailsModal",
-    className: h.modalRoot,
+    className: _.modalRoot,
     size: i.CgR.DYNAMIC,
     returnRef: c,
-    children: (0, n.jsxs)(i.hzk, {
-      className: h.modalContent,
-      children: [(0, n.jsxs)("div", {
-        className: h.infoContainer,
-        children: [(0, n.jsx)(f, {
+    children: (0, a.jsxs)(i.hzk, {
+      className: _.modalContent,
+      children: [(0, a.jsxs)("div", {
+        className: _.infoContainer,
+        children: [(0, a.jsx)(f, {
           applicationId: p,
-          socialLayerTenantMetadata: null == j || null == (a = j.tenantMetadata) ? true : a.socialLayer,
-          selectedCarouselItemIndex: k
-        }), (0, n.jsx)(C, {
-          sku: j
+          socialLayerTenantMetadata: null == P || null == (n = P.tenantMetadata) ? true : n.socialLayer,
+          selectedCarouselItemIndex: j
+        }), (0, a.jsx)(C, {
+          sku: P
         })]
-      }), (0, n.jsxs)("div", {
-        className: h.carouselContainer,
-        children: [(0, n.jsx)(_, {
-          sku: j,
+      }), (0, a.jsxs)("div", {
+        className: _.carouselContainer,
+        children: [(0, a.jsx)(b, {
+          sku: P,
           applicationId: p,
           storefront: x.storefront
-        }), (0, n.jsx)("div", {
-          className: h.modalHeaderButtonsContainer,
-          children: (0, n.jsx)(v, {
-            onClick: I,
-            "aria-label": b.intl.string(b.t.cpT0Cq),
-            children: (0, n.jsx)(i.Dio, {
+        }), (0, a.jsx)("div", {
+          className: _.modalHeaderButtonsContainer,
+          children: (0, a.jsx)(I, {
+            onClick: v,
+            "aria-label": h.intl.string(h.t.cpT0Cq),
+            children: (0, a.jsx)(i.Dio, {
               size: "md",
               color: "currentColor"
             })
