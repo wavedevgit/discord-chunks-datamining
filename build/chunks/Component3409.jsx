@@ -149,7 +149,7 @@ function ef(e) {
   let {
     onCardInfoChange: t,
     infoNotice: n
-  } = e, i = (0, l.e7)([j.Z], () => j.Z.error);
+  } = e, i = (0, l.e7)([k.Z], () => k.Z.error);
   return (0, r.jsxs)("div", {
     className: ee.body,
     children: [null != n && (0, r.jsx)("div", {
@@ -201,7 +201,7 @@ function eg(e) {
     billingAddressInfo: t,
     onBillingAddressChange: n,
     paymentSourceType: i
-  } = e, a = (0, l.e7)([j.Z], () => j.Z.error);
+  } = e, a = (0, l.e7)([k.Z], () => k.Z.error);
   return (0, r.jsx)("div", {
     className: ee.body,
     children: (0, r.jsx)(g.P, {
@@ -220,7 +220,7 @@ function eE() {
 }
 
 function eb(e) {
-  return () => (null != j.Z.error && (0, _.fw)(), e())
+  return () => (null != k.Z.error && (0, _.fw)(), e())
 }
 
 function ey(e) {
@@ -247,7 +247,7 @@ function eO(e) {
       onComplete: y,
       onStepChange: O,
       breadcrumpSteps: C,
-      currentBreadcrumpStep: k,
+      currentBreadcrumpStep: j,
       header: U,
       analyticsData: B,
       analyticsLocation: Y,
@@ -296,7 +296,7 @@ function eO(e) {
         }
     }
   }
-  let [ek, ej] = i.useState(eI), [eU, eG] = i.useState(null), [eB, eZ] = i.useState(eM(eI)), eF = (0, l.e7)([j.Z], () => j.Z.redirectedPaymentSourceId), eV = (0, l.e7)([X.Z], () => X.Z.cashAppPayComponent), eH = {
+  let [ej, ek] = i.useState(eI), [eU, eG] = i.useState(null), [eB, eZ] = i.useState(eM(eI)), eF = (0, l.e7)([k.Z], () => k.Z.redirectedPaymentSourceId), eV = (0, l.e7)([X.Z], () => X.Z.cashAppPayComponent), eH = {
     completeSteps: tu,
     setIsSubmittingCurrentStep: h.setIsSubmittingCurrentStep
   }, eY = i.useRef(eH);
@@ -311,21 +311,21 @@ function eO(e) {
       if (null == eF) return;
       await (0, d.tZ)();
       let n = G.Z.getPaymentSource(eF);
-      null != n && (e(n), t(false), j.Z.clearRedirectedPaymentSourceId())
+      null != n && (e(n), t(false), k.Z.clearRedirectedPaymentSourceId())
     })()
   }, [eF]);
   let eW = i.useCallback(function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-    eG(null), ej(e), t && O({
-      currentStep: ek,
+    eG(null), ek(e), t && O({
+      currentStep: ej,
       toStep: e
     })
-  }, [ek, O]);
+  }, [ej, O]);
 
   function eK(e) {
     (0, c.showToast)((0, c.createToast)(true !== eo ? eo : $.intl.string($.t["VJPg+l"]), c.ToastType.SUCCESS, {
       position: c.ToastPosition.BOTTOM
-    })), y(ek, e), eW(eI, false)
+    })), y(ej, e), eW(eI, false)
   }
   let [ez, eq] = i.useState(null), {
     setPaymentSourceId: eX,
@@ -373,7 +373,7 @@ function eO(e) {
       addressElementKey: tS,
       remountAddressElement: tA
     } = (0, A.MM)({
-      step: ek,
+      step: ej,
       continueSessionToInitialStep: es,
       paymentElementsEnabled: ev,
       handleStepChange: eW,
@@ -387,7 +387,7 @@ function eO(e) {
       }
     }),
     tC = i.useCallback((e, t) => ev && null != t && (0, I.qH)(e) ? () => tb(e) : () => eW(R.h8.PAYMENT_TYPE), [ev, tb, eW]);
-  switch (ek) {
+  switch (ej) {
     case R.h8.ATTEMPT_GOOGLE_PAY:
     case R.h8.ATTEMPT_APPLE_PAY:
     case R.h8.PAYMENT_TYPE:
@@ -430,7 +430,7 @@ function eO(e) {
                 methodType: e
               }), eW(R.h8.ADDRESS)
           }
-          null != j.Z.error && (0, _.fw)()
+          null != k.Z.error && (0, _.fw)()
         },
         tR = (e, t) => {
           e2(e => ea(er({}, e), {
@@ -460,12 +460,12 @@ function eO(e) {
             tP()
           }
         };
-      if (ek === R.h8.ATTEMPT_GOOGLE_PAY || ek === R.h8.ATTEMPT_APPLE_PAY) {
-        let e = $.intl.string(ek === R.h8.ATTEMPT_APPLE_PAY ? $.t.czhXDv : $.t.Zj2xQ0),
-          t = $.intl.string(ek === R.h8.ATTEMPT_APPLE_PAY ? $.t.WoXvJL : $.t.wnVVr0);
+      if (ej === R.h8.ATTEMPT_GOOGLE_PAY || ej === R.h8.ATTEMPT_APPLE_PAY) {
+        let e = $.intl.string(ej === R.h8.ATTEMPT_APPLE_PAY ? $.t.czhXDv : $.t.Zj2xQ0),
+          t = $.intl.string(ej === R.h8.ATTEMPT_APPLE_PAY ? $.t.WoXvJL : $.t.wnVVr0);
         n = (0, r.jsx)(L.t, {
           onChooseType: tN,
-          paymentRequestWallet: ek === R.h8.ATTEMPT_APPLE_PAY ? "applePay" : "googlePay",
+          paymentRequestWallet: ej === R.h8.ATTEMPT_APPLE_PAY ? "applePay" : "googlePay",
           onStripePaymentMethodReceived: tw,
           onPaymentRequestFailure: () => {
             tN(J.He.CARD), eG(e)
@@ -597,8 +597,8 @@ function eO(e) {
       n = (0, r.jsx)("div", {
         className: ee.body,
         children: (0, r.jsx)(x.M, {
-          step: ek,
-          onPurchaseComplete: () => y(ek),
+          step: ej,
+          onPurchaseComplete: () => y(ej),
           onHandoffFailure: () => {
             eZ(eS), eW(R.h8.CREDIT_CARD_INFORMATION)
           }
@@ -625,9 +625,9 @@ function eO(e) {
         epsBankValue: tn,
         billingAddressInfo: e3.info
       });
-      let tk = tC(J.He.EPS, tE);
+      let tj = tC(J.He.EPS, tE);
       o = (0, r.jsx)(ey, {
-        onBack: tk,
+        onBack: tj,
         primaryCTA: w.Z.CTAType.CONTINUE,
         primaryText: $.intl.string($.t.PDTjLN),
         primaryDisabled: true === tn || "" === tn || "" === e3.info.name,
@@ -673,9 +673,9 @@ function eO(e) {
         p24BankValue: ti,
         billingAddressInfo: e3.info
       });
-      let tj = tC(J.He.PRZELEWY24, tE);
+      let tk = tC(J.He.PRZELEWY24, tE);
       o = (0, r.jsx)(ey, {
-        onBack: tj,
+        onBack: tk,
         primaryCTA: w.Z.CTAType.CONTINUE,
         primaryText: $.intl.string($.t.PDTjLN),
         primaryDisabled: true === e3.info.name || "" === e3.info.name || true === e3.info.email || "" === e3.info.email || true === ti || "" === ti,
@@ -883,7 +883,7 @@ function eO(e) {
       n = (0, r.jsx)(eE, {});
       break;
     default:
-      throw Error("Unexpected step: ".concat(ek))
+      throw Error("Unexpected step: ".concat(ej))
   }
   let tK = ev && tm,
     tz = tK ? "combined_stripe_elements" : true,
@@ -893,11 +893,11 @@ function eO(e) {
       animatedNodeClassName: et.sequencerAnimatedNode,
       fillParent: true,
       overrideKey: tz,
-      step: ek,
+      step: ej,
       steps: eB.steps,
       sideMargin: 20,
       children: [tK && (0, r.jsx)(A.hn, {
-        step: ek,
+        step: ej,
         analyticsContext: null != B ? {
           activitySessionId: eO,
           contextMetadata: eb,
@@ -914,7 +914,7 @@ function eO(e) {
         }
       }), n]
     }),
-    tX = ek === R.h8.PAYMENT_TYPE && 0 === g.length ? null : o;
+    tX = ej === R.h8.PAYMENT_TYPE && 0 === g.length ? null : o;
   return Q ? (0, r.jsxs)(r.Fragment, {
     children: [en && (0, r.jsx)(P.Z, {
       className: ee.paymentModalBreadcrumbs,
@@ -928,7 +928,7 @@ function eO(e) {
     })]
   }) : (0, r.jsx)(K.Z, {
     steps: null != C ? C : eB.steps,
-    currentStep: null != k ? k : ek,
+    currentStep: null != j ? j : ej,
     overrideKey: tz,
     paymentError: h.paymentError,
     header: U,
@@ -961,7 +961,7 @@ function ev(e) {
     isValid: false
   })), [m, g] = i.useState(""), [E, b] = i.useState(""), [y, v] = i.useState(() => ({
     token: null
-  })), [I, T, S, A, C] = (0, l.Wu)([j.Z], () => [j.Z.braintreeEmail, j.Z.braintreeNonce, j.Z.error, j.Z.venmoUsername, j.Z.adyenPaymentData]), [N, R] = (0, l.Wu)([U.Z], () => [U.Z.error, U.Z.isAwaitingAuthentication]);
+  })), [I, T, S, A, C] = (0, l.Wu)([k.Z], () => [k.Z.braintreeEmail, k.Z.braintreeNonce, k.Z.error, k.Z.venmoUsername, k.Z.adyenPaymentData]), [N, R] = (0, l.Wu)([U.Z], () => [U.Z.error, U.Z.isAwaitingAuthentication]);
   i.useEffect(() => {
     let e = e => {
       let {
@@ -976,9 +976,9 @@ function ev(e) {
       u.Z.unsubscribe("BRAINTREE_TOKENIZE_PAYPAL_SUCCESS", e), (0, _.fw)()
     }
   }, []);
-  let [P, w] = i.useState(false), [D, x] = i.useState(false), [L, M] = i.useState(null), k = i.useRef(null), Z = (0, l.e7)([U.Z], () => U.Z.isAwaitingAuthentication), [F, V] = (0, l.Wu)([B.Z], () => [B.Z.purchaseTokenAuthState, B.Z.purchaseTokenHash]);
+  let [P, w] = i.useState(false), [D, x] = i.useState(false), [L, M] = i.useState(null), j = i.useRef(null), Z = (0, l.e7)([U.Z], () => U.Z.isAwaitingAuthentication), [F, V] = (0, l.Wu)([B.Z], () => [B.Z.purchaseTokenAuthState, B.Z.purchaseTokenHash]);
   return i.useEffect(() => {
-    null != L && null != k.current && k.current.scrollIntoView({
+    null != L && null != j.current && j.current.scrollIntoView({
       behavior: "smooth"
     })
   }, [L]), {
@@ -1004,7 +1004,7 @@ function ev(e) {
     paymentAuthenticationState: R ? Y.wr.PENDING : null != N ? Y.wr.ERROR : Y.wr.NONE,
     purchaseError: L,
     setPurchaseError: M,
-    purchaseErrorBlockRef: k,
+    purchaseErrorBlockRef: j,
     isAuthenticating: Z,
     purchaseTokenAuthState: F,
     purchaseTokenHash: V,

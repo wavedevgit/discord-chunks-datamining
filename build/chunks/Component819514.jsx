@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 819514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -223,7 +223,7 @@ let Z = {
       let i, l = (0, p.F6)(e, _.default, b.Z);
       return i = e.isPrivate() ? C.intl.string(C.t.hMRngA) : C.intl.formatToPlainString(C.t["3IRluI"], {
         channelName: l
-      }), (0, r.jsx)(h.Z.Provider, {
+      }), (0, r.jsx)(f.Z.Provider, {
         value: e.guild_id,
         children: (0, r.jsxs)(c.ConfirmModal, P(I({
           header: C.intl.string(C.t.bKMaZX),
@@ -234,10 +234,10 @@ let Z = {
         }, n), {
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/normal",
-            className: x.spacing,
+            className: E.spacing,
             children: i
           }), (0, r.jsx)("div", {
-            className: x.message,
+            className: E.message,
             children: (0, r.jsx)(v.Z, {
               channel: e,
               message: t,
@@ -250,7 +250,7 @@ let Z = {
     })
   },
   confirmUnpin: function(e, t) {
-    (0, c.h7j)(n => (0, r.jsx)(h.Z.Provider, {
+    (0, c.h7j)(n => (0, r.jsx)(f.Z.Provider, {
       value: e.guild_id,
       children: (0, r.jsxs)(c.ConfirmModal, P(I({
         header: C.intl.string(C.t.CFF2vL),
@@ -260,16 +260,16 @@ let Z = {
       }, n), {
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/normal",
-          className: x.spacing,
+          className: E.spacing,
           children: C.intl.string(C.t.NjEPp7)
         }), (0, r.jsx)("div", {
-          className: o()(x.message, x.spacing),
+          className: o()(E.message, E.spacing),
           children: (0, r.jsx)(v.Z, {
             channel: e,
             message: t,
             disableInteraction: true
           })
-        }), (0, r.jsx)(f.Z, {
+        }), (0, r.jsx)(h.Z, {
           children: C.intl.format(C.t.oCVB3Y, {})
         })]
       }))
@@ -295,7 +295,7 @@ let Z = {
     }, i), {
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: x.spacing,
+        className: E.spacing,
         children: C.intl.string(C.t.grBcM8)
       })
     })))

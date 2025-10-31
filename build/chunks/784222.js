@@ -5,7 +5,7 @@ require.d(exports, {
   Bg: () => G,
   Ni: () => Z,
   YH: () => U,
-  ld: () => k,
+  ld: () => j,
   rf: () => B
 }), require("./388685.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
@@ -76,10 +76,10 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var k = function(e) {
+var j = function(e) {
   return e[e.EMOJI = 0] = "EMOJI", e[e.CREATE_EMOJI = 1] = "CREATE_EMOJI", e[e.EXPAND_OR_COLLAPSE_EMOJIS = 2] = "EXPAND_OR_COLLAPSE_EMOJIS", e[e.SOUNDMOJI = 3] = "SOUNDMOJI", e
 }({});
-let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
+let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
   U = e => {
     let {
       channel: t,
@@ -90,7 +90,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
       gridWidth: _,
       emojiPaddingHorizontal: D,
       emojiSpriteSize: L,
-      shouldShowSoundmojiInEmojiPicker: k,
+      shouldShowSoundmojiInEmojiPicker: j,
       showOnlyUnicode: U
     } = e, G = (0, s.e7)([c.ZP], () => c.ZP.categories), B = r.useMemo(() => U ? d.ZP.getCategories() : G, [G, U]), Z = (0, s.e7)([E.Z], () => E.Z.getGuild(null == t ? true : t.getGuildId()), [t]), F = null == t ? null : t.getGuildId(), V = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(F), [F]), H = (0, A.NJ)(F), Y = (0, A.wC)(F), W = (0, A.q5)(F), {
       topEmojis: K,
@@ -138,16 +138,16 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
               N = !C && null != O && T === O.id && y.length < (0, I.y4)(O),
               P = C && y.length < h && !ei,
               D = null != O && C && ei && ea === S.B.WITH_TOP_LIST && er[O.id].length < (0, I.y4)(O),
-              k = i && Q && null != O && (N || P || D);
-            k && D && y.length === h && y.shift();
-            let j = y.length > m && null != O && d.isNitroLocked,
-              U = j && !X.has(O.id);
+              j = i && Q && null != O && (N || P || D);
+            j && D && y.length === h && y.shift();
+            let k = y.length > m && null != O && d.isNitroLocked,
+              U = k && !X.has(O.id);
             if (U) {
-              let e = !ei && k;
+              let e = !ei && j;
               y.splice(m - (e ? 2 : 1))
             }
-            let G = ei && k && !_,
-              B = Math.ceil((k || j ? y.length + 1 : y.length) / h),
+            let G = ei && j && !_,
+              B = Math.ceil((j || k ? y.length + 1 : y.length) / h),
               Z = [];
             for (let e = 0; e < B; e++) {
               let t = 0 === e,
@@ -176,7 +176,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                   columnIndex: 0,
                   visibleRowIndex: u
                 }, ...i]), Z.push(i), !_) {
-                if (!ei && k && e === B - 1) {
+                if (!ei && j && e === B - 1) {
                   let t = Z[e];
                   t.push({
                     type: 1,
@@ -188,7 +188,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                     visibleRowIndex: u
                   })
                 }
-                if (j && e === B - 1) {
+                if (k && e === B - 1) {
                   let t = Z[e];
                   t.push({
                     type: 2,
@@ -224,7 +224,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
           isNitroLocked: !$
         });
         else {
-          if (eo && k) {
+          if (eo && j) {
             let t = [{
               type: 3,
               rowIndex: p,
@@ -246,7 +246,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
               let n = n => {
                 let r = er[n];
                 if (null == r) return;
-                let i = r.filter(e => !j.includes(v.ZP.getEmojiUnavailableReason({
+                let i = r.filter(e => !k.includes(v.ZP.getEmojiUnavailableReason({
                   emoji: e,
                   channel: null != t ? t : g.ZP.getDefaultChannel(n),
                   intention: l
@@ -330,7 +330,7 @@ let j = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
         rowCountBySection: e,
         sectionDescriptors: r
       }
-    }, [V, _, L, D, f, n, ei, ea, er, i, Q, X, t, l, K, z, $, B, Z, q, W, Y, H, ee, eo, k])
+    }, [V, _, L, D, f, n, ei, ea, er, i, Q, X, t, l, K, z, $, B, Z, q, W, Y, H, ee, eo, j])
   };
 var G = function(e) {
   return e[e.PREMIUM = 0] = "PREMIUM", e[e.ROLE_SUBSCRIPTION = 1] = "ROLE_SUBSCRIPTION", e

@@ -75,8 +75,8 @@ function P() {
     clipsLength: a,
     clipsQuality: A,
     autoClipPhrases: N
-  } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()), P = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()), w = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)), D = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_SCREENSHOT, true)), [x, L] = Chunk647438.useState(N.join(", ")), M = Chunk435064.Z.isDecoupledGameClippingEnabled(), k = (0, Chunk779618.Z)(Chunk131951.Z), {
-    showClipsHeaderEntrypoint: j,
+  } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()), P = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()), w = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)), D = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_SCREENSHOT, true)), [x, L] = Chunk647438.useState(N.join(", ")), M = Chunk435064.Z.isDecoupledGameClippingEnabled(), j = (0, Chunk779618.Z)(Chunk131951.Z), {
+    showClipsHeaderEntrypoint: k,
     enableAdvancedSignals: U
   } = Chunk924557.NV.useExperiment({
     location: "clips_recording_settings"
@@ -173,7 +173,7 @@ function P() {
       })
     }), (0, Chunk951288.jsx)(Chunk494620.Z, {
       children: Chunk388032.intl.string(Chunk388032.t["Z+MfqT"])
-    }), M && k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), M && j && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.yXvykv),
         description: Chunk388032.intl.string(Chunk388032.t.YP3ujk),
@@ -183,7 +183,7 @@ function P() {
           trackAnalytics: true
         })
       })]
-    }), j && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t["3zwNf6"]),
         description: Chunk388032.intl.string(Chunk388032.t.m4Cjj9),

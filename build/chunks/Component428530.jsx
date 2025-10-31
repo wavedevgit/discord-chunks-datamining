@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 428530, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -30,8 +30,8 @@ let m = u(d),
   p = u(d);
 
 function h(e) {
-  return s.Jn9.test(e) ? (0, a.jsx)(o.ZP, {
-    type: o.ZP.Types.TEXT,
+  return o.Jn9.test(e) ? (0, a.jsx)(s.ZP, {
+    type: s.ZP.Types.TEXT,
     children: () => e
   }) : e
 }
@@ -39,10 +39,10 @@ function h(e) {
 function x(e) {
   let {
     data: t
-  } = e, n = (0, i.ZP)();
+  } = e, n = (0, r.ZP)();
   return (0, a.jsx)("div", {
     className: c.inspectorWrapper,
-    children: (0, a.jsx)(r.L, {
+    children: (0, a.jsx)(i.L, {
       data: t,
       theme: "light" === n ? p : m,
       invertTheme: false,

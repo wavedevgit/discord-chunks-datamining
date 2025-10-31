@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 821179, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -30,7 +30,7 @@ function b(e) {
     themeType: v
   } = (0, d.z)(), j = t.hasAvatarForGuild(b.id);
   return (0, r.jsxs)(o.P3F, {
-    focusProps: v === h.l.MODAL_V2 ? {
+    focusProps: v === f.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -87,7 +87,7 @@ function b(e) {
       guild: b,
       showBadge: true,
       className: null != b.icon ? g.icon : g.noIcon,
-      badgeStrokeColor: (0, s.Lq)((0, l.wj)(y) ? f.Ilk.PRIMARY_600 : f.Ilk.WHITE_500),
+      badgeStrokeColor: (0, s.Lq)((0, l.wj)(y) ? h.Ilk.PRIMARY_600 : h.Ilk.WHITE_500),
       badgeTooltipColor: o.r6K.PRIMARY,
       badgeTooltipDelay: p.vB,
       size: c.Z.Sizes.MEDIUM,

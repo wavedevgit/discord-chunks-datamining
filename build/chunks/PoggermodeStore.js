@@ -2,7 +2,7 @@
 /** chunk id: 843693, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => k,
+  ZP: () => j,
   wU: () => D
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
@@ -237,4 +237,4 @@ let M = new L(Chunk570140.Z, {
     POGGERMODE_UPDATE_MESSAGE_COMBO: w,
     MESSAGE_CREATE: x
   }),
-  k = M
+  j = M

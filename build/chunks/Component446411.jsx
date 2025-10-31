@@ -129,13 +129,13 @@ function et(e) {
     onMute: D,
     href: x,
     placeholder: M,
-    placeholderVersion: k,
+    placeholderVersion: j,
     sourceMetadata: U
   } = e, [G, Z] = a.useState(y), F = null != d && null == d.proxyURL, V = a.useCallback(() => Z(false), [Z]), H = e => {
-    e.preventDefault(), e.stopPropagation(), null == I || I(false), Z(true), F && (N.S.dispatch(j.CkL.VIDEO_EMBED_PLAYBACK_STARTED), N.S.subscribeOnce(j.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V))
+    e.preventDefault(), e.stopPropagation(), null == I || I(false), Z(true), F && (N.S.dispatch(k.CkL.VIDEO_EMBED_PLAYBACK_STARTED), N.S.subscribeOnce(k.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V))
   };
   a.useEffect(() => () => {
-    F && N.S.unsubscribe(j.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V)
+    F && N.S.unsubscribe(k.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V)
   }, [F, V]);
   let {
     width: Y,
@@ -156,7 +156,7 @@ function et(e) {
       poster: X,
       src: d.proxyURL,
       placeholder: M,
-      placeholderVersion: k,
+      placeholderVersion: j,
       width: Y,
       height: W,
       responsive: p,
@@ -240,7 +240,7 @@ function et(e) {
       containerClassName: B.embedVideoImageComponent,
       imageClassName: B.embedVideoImageComponentInner,
       placeholder: M,
-      placeholderVersion: k,
+      placeholderVersion: j,
       onClick: E && null != d ? H : null,
       sourceMetadata: U,
       analyticsSource: "EmbedVideo"
@@ -635,7 +635,7 @@ class er extends(r = Chunk647438.PureComponent) {
       },
       S = null != (t = null == (e = Chunk647438.url.split(".").pop()) ? true : module.split("?")[0]) ? exports : "";
     return "jpg" === Chunk592125 && (S = "jpeg"), (0, Chunk951288.jsx)(Chunk947849.h.Consumer, {
-      children: e => (0, i.jsx)(k.G.Consumer, {
+      children: e => (0, i.jsx)(j.G.Consumer, {
         children: t => {
           let {
             disableAnimations: r
@@ -890,9 +890,9 @@ class er extends(r = Chunk647438.PureComponent) {
       maxWidth: o,
       maxHeight: s
     });
-    if (!e && (i === j.hBH.VIDEO || c >= 300)) return c + W;
-    if (i === j.hBH.RICH && true !== n) return X;
-    if (i === j.hBH.GIFV) {
+    if (!e && (i === k.hBH.VIDEO || c >= 300)) return c + W;
+    if (i === k.hBH.RICH && true !== n) return X;
+    if (i === k.hBH.GIFV) {
       var u, d, f, _;
       let {
         width: e
@@ -965,7 +965,7 @@ class er extends(r = Chunk647438.PureComponent) {
     } = this.state;
     if (!this.usesJustifiedAutoStyle()) return;
     let d = e ? true : this.getMaxWidth(false);
-    if (true === d && true === i && o !== j.hBH.RICH) {
+    if (true === d && true === i && o !== k.hBH.RICH) {
       let e = null != r ? r : a;
       if (true !== e) {
         let {

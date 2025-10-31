@@ -73,7 +73,7 @@ function M(e, t) {
   }), e
 }
 
-function k(e) {
+function j(e) {
   let t = (0, d.R)("formatActivityString"),
     n = (null == e ? true : e.name) === "" ? null : null == e ? true : e.name;
   return null != n ? t ? n : P.intl.formatToPlainString(P.t["0wJXSh"], {
@@ -81,7 +81,7 @@ function k(e) {
   }) : P.intl.string(P.t.eXan7B)
 }
 
-function j(e, t) {
+function k(e, t) {
   return (e.isDM() || e.isGroupDM() ? P.intl.string(P.t["9FaEzi"]) : e.isGuildStageVoice() ? P.intl.string(P.t.QygGCN) : P.intl.string(P.t.msxteM)) + (null != t ? " (".concat(t, ")") : "")
 }
 
@@ -99,12 +99,12 @@ function U(e) {
   } = (0, h.Cq)({
     location: "StackedActivityStatus"
   }), s = (0, p.ZP)(r), l = a || o;
-  return null != t && i.push(k(t)), n.forEach(e => {
+  return null != t && i.push(j(t)), n.forEach(e => {
     let {
       tooltip: t
     } = (0, v.Z)(e, l);
     null != t && i.push(t)
-  }), null == t && null != r && i.push(j(r, s)), i.length > 0 ? i.join(", ") : ""
+  }), null == t && null != r && i.push(k(r, s)), i.length > 0 ? i.join(", ") : ""
 }
 
 function G(e) {
@@ -150,8 +150,8 @@ function Z(e) {
   } = e;
   (0, _.Z)(null == t ? true : t.id);
   let L = (null == a ? true : a.discoverable) !== false ? a : null,
-    k = (0, m.Cf)(L),
-    j = (0, E.E)("ActivityStatus", l),
+    j = (0, m.Cf)(L),
+    k = (0, E.E)("ActivityStatus", l),
     Z = i.useMemo(() => {
       var e, t;
       let r = null == n ? true : n.find(e => {
@@ -165,7 +165,7 @@ function Z(e) {
       return null == ("" === i ? null : i) && null == r.emoji ? null : r
     }, [n]),
     F = (0, c.e7)([b.default], () => b.default.getId() === (null == t ? true : t.id)),
-    V = (0, c.e7)([g.Z], () => j ? F ? g.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === R.IIU.HANG_STATUS) : null : null),
+    V = (0, c.e7)([g.Z], () => k ? F ? g.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === R.IIU.HANG_STATUS) : null : null),
     H = i.useMemo(() => {
       var e;
       return (0, s.uniqWith)(null != (e = null == n ? true : n.filter(e => {
@@ -173,10 +173,10 @@ function Z(e) {
           type: t,
           name: n
         } = e;
-        return t !== R.IIU.CUSTOM_STATUS && t !== R.IIU.HANG_STATUS && n !== (null == k ? true : k.name)
+        return t !== R.IIU.CUSTOM_STATUS && t !== R.IIU.HANG_STATUS && n !== (null == j ? true : j.name)
       })) ? e : [], (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name)
-    }, [n, null == k ? true : k.name]),
-    Y = null == n ? true : n.find(e => e.name === (null == k ? true : k.name)),
+    }, [n, null == j ? true : j.name]),
+    Y = null == n ? true : n.find(e => e.name === (null == j ? true : j.name)),
     W = (null == t ? true : t.bot) === true,
     K = (0, c.e7)([y.Z], () => y.Z.isBlockedOrIgnored(null == t ? true : t.id)),
     z = (null == Z ? true : Z.state) != null,

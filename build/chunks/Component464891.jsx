@@ -150,7 +150,7 @@ let et = Chunk647438.memo(function(e) {
     preview: b,
     subscribeToGroupId: y,
     hideGuildTag: v
-  } = e, I = (0, j.ZP)(t, n), T = i.useMemo(() => (0, F.x)({
+  } = e, I = (0, k.ZP)(t, n), T = i.useMemo(() => (0, F.x)({
     message: t,
     channel: a,
     user: null == t ? true : t.author,
@@ -186,7 +186,7 @@ let et = Chunk647438.memo(function(e) {
       n = M.ZP.isPremium(t.author),
       i = M.ZP.isPremium(P),
       o = null == a ? true : a.isPrivate();
-    return (0, k.R)(null != c, "Message Username") && n && !s && !o && e.push((0, r.jsx)(es, {
+    return (0, j.R)(null != c, "Message Username") && n && !s && !o && e.push((0, r.jsx)(es, {
       currentUserIsPremium: i,
       author: t.author
     }, "nitro-author")), null != N && e.push(N), null != A && e.push((0, r.jsx)(m.Z, {
@@ -285,7 +285,7 @@ function er(e) {
     showAvatarPopout: A
   } = o, R = i.useRef(null), [P, L] = i.useState(false), {
     analyticsLocations: M
-  } = (0, f.ZP)(d.Z.AVATAR), k = (0, l.e7)([w.default], () => w.default.getCurrentUser()), j = (0, l.e7)([N.ZP], () => {
+  } = (0, f.ZP)(d.Z.AVATAR), j = (0, l.e7)([w.default], () => w.default.getCurrentUser()), k = (0, l.e7)([N.ZP], () => {
     var e;
     return null != (e = o.displayCompactAvatars) ? e : N.ZP.displayCompactAvatars
   }), U = (0, V.Z)(h), G = g ? J : $, {
@@ -293,7 +293,7 @@ function er(e) {
   } = (0, T.Z)({
     guildId: c
   }), Z = (0, b.Ys)({
-    pendingValue: h.author.id === (null == k ? true : k.id) ? B : true,
+    pendingValue: h.author.id === (null == j ? true : j.id) ? B : true,
     userValue: null == (t = h.author) ? true : t.avatarDecoration,
     guildValue: null == m ? true : m.guildMemberAvatarDecoration,
     guildId: c
@@ -324,7 +324,7 @@ function er(e) {
   }, [K, h.author.avatar, h.author.id, h.author.discriminator, null == (n = h.application) ? true : n.icon, null == (a = h.application) ? true : a.id, h.webhookId, F, G, m.guildMemberAvatar]);
   if (i.useEffect(() => {
       if (null != E) return x.S.subscribeKeyed(H.LPv.ANIMATE_CHAT_AVATAR, "".concat(E, ":").concat(h.author.id), L), () => void x.S.unsubscribeKeyed(H.LPv.ANIMATE_CHAT_AVATAR, "".concat(E, ":").concat(h.author.id), L)
-    }, [h.author.id, E]), !g || j) return null != u && null != A ? (0, r.jsx)(f.Gt, {
+    }, [h.author.id, E]), !g || k) return null != u && null != A ? (0, r.jsx)(f.Gt, {
     value: M,
     children: (0, r.jsx)(C.Z, {
       targetElementRef: R,
@@ -485,7 +485,7 @@ let es = Chunk647438.memo(function(e) {
       return (0, L.yE)(t.flags, H.iLy.SUPPRESS_NOTIFICATIONS) && e.push((0, r.jsx)(v.Z, {}, "suppress-notifications")), t.hasPotions() && e.push((0, r.jsx)(g.Z, {
         message: t
       })), e
-    }, [t]), k = (0, G.XX)(t, _), j = (0, G.Dv)(t), U = p ? "".concat(k) : "".concat(k, " ").concat(j), B = (null == n ? true : n.state) === y.Y.LOADED ? (0, G.Gq)(t) : true, Z = true !== p;
+    }, [t]), j = (0, G.XX)(t, _), k = (0, G.Dv)(t), U = p ? "".concat(j) : "".concat(j, " ").concat(k), B = (null == n ? true : n.state) === y.Y.LOADED ? (0, G.Gq)(t) : true, Z = true !== p;
     return (0, r.jsx)(ei, {
       message: t,
       avatar: C,

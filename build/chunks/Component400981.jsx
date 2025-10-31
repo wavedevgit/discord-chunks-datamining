@@ -1,4 +1,4 @@
-/** Chunk was on 84743 **/
+/** Chunk was on 3270 **/
 /** chunk id: 400981, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -24,29 +24,29 @@ function f(e) {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
     selectedGiftingPromotionReward: f
-  } = e, x = (0, i.e7)([p.default], () => p.default.getCurrentUser()), g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), {
-    analyticsLocations: b
-  } = (0, s.ZP)(), j = l.EFr.SIZE_32, L = (0, d.Z)(null == f ? true : f.assetId, j, !g), v = (0, u.Z)(), y = null == v ? true : v.giftPurchaseConfirmation;
-  return null == n || null == y ? null : (0, r.jsx)(_.O3, {
-    children: (0, r.jsx)(l.mzw, {
+  } = e, x = (0, i.e7)([p.default], () => p.default.getCurrentUser()), j = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), {
+    analyticsLocations: g
+  } = (0, o.ZP)(), b = a.EFr.SIZE_32, L = (0, d.Z)(null == f ? true : f.assetId, b, !j), v = (0, u.Z)(), y = null == v ? true : v.giftPurchaseConfirmation;
+  return null == n || null == y ? null : (0, r.jsx)(h.O3, {
+    children: (0, r.jsx)(a.mzw, {
       align: c.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
-        className: m.promotionalFooter,
-        children: [(0, r.jsx)(l.Xo$, {
+        className: _.promotionalFooter,
+        children: [(0, r.jsx)(a.Xo$, {
           "aria-label": null == x ? true : x.username,
-          size: j,
-          src: null == x ? true : x.getAvatarURL(true, (0, l.pxk)(j), !g),
+          size: b,
+          src: null == x ? true : x.getAvatarURL(true, (0, a.pxk)(b), !j),
           avatarDecoration: L
-        }), (0, r.jsx)(a.zxk, {
+        }), (0, r.jsx)(l.zxk, {
           variant: "primary",
           text: y.collectRewardButtonText(),
           onClick: () => {
             t(), (0, C.Z)({
               product: n,
               shouldShowPromotionalExperience: true,
-              analyticsLocations: b,
-              purchaseType: h.o8.PROMOTIONAL
+              analyticsLocations: g,
+              purchaseType: m.o8.PROMOTIONAL
             })
           }
         })]

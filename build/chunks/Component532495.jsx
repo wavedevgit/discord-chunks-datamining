@@ -47,7 +47,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function k(e) {
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,13 +72,13 @@ function j(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function G() {
-  var e, t, n, i, M, j, G, B, Z;
+  var e, t, n, i, M, k, G, B, Z;
   let F = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
       return a()(null != module, "DefaultCustomizationSections: user cannot be undefined"), module
@@ -98,7 +98,7 @@ function G() {
     } = (0, Chunk442837.cj)([Chunk25990.Z], () => {
       let e = Chunk25990.Z.getAllPending(),
         t = Chunk25990.Z.getErrors();
-      return U(k({}, module), {
+      return U(j({}, module), {
         errors: exports
       })
     }),
@@ -113,7 +113,7 @@ function G() {
     ea = (0, Chunk687158.ZP)(F.id),
     eo = null == ea ? true : ea.getLegacyUsername(),
     es = (null != (i = null == (e = $.global_name) ? true : module.length) ? Chunk512722 : 0) > 0 ? $.global_name : null != (M = null == et ? true : et.nick) ? M : [],
-    el = (null != (j = null == (t = $.bio) ? true : exports.length) ? j : 0) > 0 ? $.bio : null != (G = null == et ? true : et.bio) ? G : [],
+    el = (null != (k = null == (t = $.bio) ? true : exports.length) ? k : 0) > 0 ? $.bio : null != (G = null == et ? true : et.bio) ? G : [],
     ec = (0, Chunk396402.w)(),
     eu = (0, Chunk477448.Z)({
       location: "DefaultCustomizationSections"

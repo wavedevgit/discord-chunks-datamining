@@ -23,7 +23,7 @@ require.d(exports, {
   Rt: () => eV,
   T4: () => Y,
   U2: () => B,
-  UV: () => tk,
+  UV: () => tj,
   UX: () => z,
   Ue: () => eq,
   V7: () => ed,
@@ -48,7 +48,7 @@ require.d(exports, {
   if: () => eY,
   jP: () => en,
   jp: () => eI,
-  k: () => tj,
+  k: () => tk,
   k5: () => e2,
   lY: () => ey,
   m3: () => eT,
@@ -63,7 +63,7 @@ require.d(exports, {
   yd: () => Chunk111361.yd,
   yg: () => tR,
   zL: () => ec,
-  zV: () => ek
+  zV: () => ej
 }), require("./415506.js"), require("./49124.js"), require("./388685.js"), require("./290780.js"), require("./539854.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -133,12 +133,12 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = {
+let j = {
     PAYMENT_SOURCE_MANAGEMENT: "https://support.apple.com/HT201266",
     BILLING_HISTORY: "https://support.apple.com/HT201266",
     SUBSCRIPTION_MANAGEMENT: "https://support.apple.com/HT202039"
   },
-  j = {
+  k = {
     SUBSCRIPTION_MANAGEMENT: "https://play.google.com/store/account/subscriptions",
     PAYMENT_SOURCE_MANAGEMENT: "https://play.google.com/store/paymentmethods",
     BILLING_HISTORY: "https://play.google.com/store/account/orderhistory"
@@ -541,7 +541,7 @@ function es(e) {
     price: m
   }) : w.intl.format(w.t.hJ5xEX, {
     price: m
-  }) : w.intl.string(w.t["8rSipI"]), k = A ? D ? w.intl.format(w.t["jRy6/J"], {
+  }) : w.intl.string(w.t["8rSipI"]), j = A ? D ? w.intl.format(w.t["jRy6/J"], {
     price: m,
     num: x
   }) : w.intl.format(w.t.tTNE8M, {
@@ -569,10 +569,10 @@ function es(e) {
         case C.O0b.UNPAID:
           return w.intl.format(w.t.cmkbFB, {});
         case C.O0b.PAUSE_PENDING:
-          let j = null != _.pauseEndsAt ? o()(_.pauseEndsAt).diff(_.currentPeriodEnd, "days") : null;
-          return null != j ? w.intl.format(w.t.WUfOD5, {
+          let k = null != _.pauseEndsAt ? o()(_.pauseEndsAt).diff(_.currentPeriodEnd, "days") : null;
+          return null != k ? w.intl.format(w.t.WUfOD5, {
             pauseDate: _.currentPeriodEnd,
-            pauseDuration: j
+            pauseDuration: k
           }) : w.intl.format(w.t.VlWufv, {
             pauseDate: _.currentPeriodEnd
           });
@@ -669,7 +669,7 @@ function es(e) {
             pauseDate: _.currentPeriodEnd
           });
         case C.O0b.PAUSED:
-          if (v) return k;
+          if (v) return j;
           return w.intl.format(w.t["6RTdZA"], {
             resumeDate: _.pauseEndsAt
           });
@@ -696,7 +696,7 @@ function es(e) {
             percent: null != (d = null == b ? true : b.percentage) ? d : R.M_,
             regularPrice: T,
             numMonths: null != (f = null == b ? true : b.duration) ? f : R.rt
-          }) : k
+          }) : j
       }
     default:
       throw Error("Invalid planId ".concat(h))
@@ -716,7 +716,7 @@ function el(e) {
   return i()(null != c, "Missing plan"), es({
     subscription: n,
     planId: c.id,
-    price: ej(t, n, c),
+    price: ek(t, n, c),
     includePremiumGuilds: a,
     hasDiscountApplied: o,
     activeDiscountInfo: s,
@@ -1137,11 +1137,11 @@ function eM(e) {
   return t === C.O0b.CANCELED || null != n && (0, _.Q0)(n.planId) && !e.isPurchasedExternally
 }
 
-function ek(e) {
+function ej(e) {
   return e === C.O0b.PAST_DUE || e === C.O0b.ACCOUNT_HOLD || e === C.O0b.BILLING_RETRY
 }
 
-function ej(e, t, n) {
+function ek(e, t, n) {
   let r = e.findInvoiceItemByPlanId(n.id),
     i = null == r ? V(n.id, false, false, {
       paymentSourceId: t.paymentSourceId,
@@ -1373,15 +1373,15 @@ function eW(e, t) {
   switch (e) {
     case C.gg$.APPLE_PARTNER:
     case C.gg$.APPLE:
-      return k[t];
+      return j[t];
     case C.gg$.GOOGLE:
-      return j[t]
+      return k[t]
   }
   throw Error("Invalid external payment gateway ".concat(e))
 }
 
 function eK(e, t) {
-  return (0, S.I5)(e) || ek(null == t ? true : t.status)
+  return (0, S.I5)(e) || ej(null == t ? true : t.status)
 }
 
 function ez(e, t) {
@@ -1664,7 +1664,7 @@ function tM(e) {
   }, 0)
 }
 
-function tk(e) {
+function tj(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
   if (e.interval !== R.rV.YEAR) return;
@@ -1675,7 +1675,7 @@ function tk(e) {
   if (0 !== i.amount) return Math.floor(100 * (1 - a.amount / (12 * i.amount)))
 }
 
-function tj(e) {
+function tk(e) {
   return null == e ? 0 : Math.max((0, y.wY)(new Date, new Date(e)), 0)
 }
 let tU = Object.freeze({
@@ -1724,7 +1724,7 @@ let tU = Object.freeze({
   getPremiumGradientColor: e5,
   getUnactivatedFractionalPremiumHours: tL,
   castPremiumSubscriptionAsSkuId: tI,
-  calculateDiscountPercentageForYearlyPlan: tk,
+  calculateDiscountPercentageForYearlyPlan: tj,
   canUseAnimatedEmojis: e6,
   canUseEmojisEverywhere: e7,
   canUseSoundboardEverywhere: e9,

@@ -52,8 +52,8 @@ let L = {
     minWidth: Chunk354459.Rv[Chunk354459.cL.VIDEO],
     maxWidth: Chunk354459.$i[Chunk354459.cL.VIDEO]
   },
-  k = [];
-class j extends Chunk647438.PureComponent {
+  j = [];
+class k extends Chunk647438.PureComponent {
   render() {
     let {
       selectedPIPWindow: e,
@@ -112,8 +112,8 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     x = s.ZP.getCurrentEmbeddedActivity(),
     L = (0, c.p)(null == x ? true : x.location),
     M = null != x && !(0, u.Z)(L, I.Z, S.Z),
-    j = s.ZP.getActivityPanelMode(),
-    U = M && j === R.Ez.PANEL,
+    k = s.ZP.getActivityPanelMode(),
+    U = M && k === R.Ez.PANEL,
     G = null != x && null != L && (null == (t = f.Z.getSelectedParticipant(L)) ? true : t.type) === P.fO.ACTIVITY,
     B = p.Z.getConnectedFrame(),
     Z = p.Z.getFrameLayoutMode() === w.U.FOCUSED,
@@ -147,7 +147,7 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     ea = !er && null != h && et && en;
   return {
     selectedPIPWindow: h,
-    pipWindows: 0 === J.length ? k : J,
+    pipWindows: 0 === J.length ? j : J,
     pipWidth: q,
     maxX: Y.width - (ea ? $ : 0),
     maxY: Y.height,
@@ -162,4 +162,4 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     chatOpen: en,
     callChatSidebarWidth: $
   }
-})(j)
+})(k)

@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 175015, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => u
@@ -14,12 +14,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk342214 = require("./342214.js");
 
 function u(e, t, n, u, m) {
-  let p = (0, r.e7)([s.Z], () => s.Z.getGuild(e)),
-    h = (0, o.Z)({
+  let p = (0, i.e7)([o.Z], () => o.Z.getGuild(e)),
+    h = (0, s.Z)({
       guild: p,
       analyticsLocations: t
     }),
-    x = (0, o.Z)({
+    x = (0, s.Z)({
       analyticsLocations: t
     });
   return (0, a.jsxs)(a.Fragment, {
@@ -28,9 +28,9 @@ function u(e, t, n, u, m) {
       "aria-label": c.intl.string(c.t["9ESaO7"]),
       label: () => (0, a.jsxs)("div", {
         className: d.item,
-        children: [(0, a.jsx)(i.Z, {
+        children: [(0, a.jsx)(r.Z, {
           guild: p,
-          size: i.Z.Sizes.SMOL,
+          size: r.Z.Sizes.SMOL,
           className: d.guildIcon
         }), (0, a.jsxs)("div", {
           children: [(0, a.jsx)(l.Text, {

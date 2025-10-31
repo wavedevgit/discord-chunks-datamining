@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 680004, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -69,7 +69,7 @@ function f() {
       lastClipTime: module.lastClipTimestamp,
       timeline: module.signals
     }
-  }), [y, C] = Chunk647438.useState([]), [S, E] = Chunk647438.useState([]), [T, O] = Chunk647438.useState(() => (true === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
+  }), [y, C] = Chunk647438.useState([]), [S, E] = Chunk647438.useState([]), [T, N] = Chunk647438.useState(() => (true === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
     emotion: false,
     yell: false,
     wakeWord: false,
@@ -79,7 +79,7 @@ function f() {
     emotion: window.__CLIPS_DEBUG__.emotion,
     yell: window.__CLIPS_DEBUG__.yell,
     whisper: window.__CLIPS_DEBUG__.whisper
-  })), [N, P] = Chunk647438.useState(Chunk894694.x0.KILL), [I, w] = Chunk647438.useState(1), [k, R] = Chunk647438.useState(""), [A, D] = Chunk647438.useState(""), [Z, L] = Chunk647438.useState(""), [M, U] = Chunk647438.useState(false);
+  })), [O, P] = Chunk647438.useState(Chunk894694.x0.KILL), [w, I] = Chunk647438.useState(1), [k, A] = Chunk647438.useState(""), [R, Z] = Chunk647438.useState(""), [D, L] = Chunk647438.useState(""), [M, U] = Chunk647438.useState(false);
   Chunk647438.useEffect(() => {
     let e = setInterval(() => {
       let e = Chunk460779.Z.read();
@@ -95,7 +95,7 @@ function f() {
     }, 100);
     return () => clearInterval(module)
   }, [T.yell]);
-  let B = Chunk647438.useCallback(function(e) {
+  let F = Chunk647438.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "signal";
       C(n => [{
         message: e,
@@ -103,10 +103,10 @@ function f() {
         timestamp: new Date
       }, ...n].slice(0, 50))
     }, []),
-    F = Chunk647438.useCallback(async e => {
+    B = Chunk647438.useCallback(async e => {
       try {
-        let n = await s.Z.process(e);
-        if (B("Signal sent: ".concat(e.type).concat(JSON.stringify(e).length > 50 ? " (".concat(JSON.stringify(e).substring(0, 50), "...)") : " (".concat(JSON.stringify(e), ")")), "signal"), (null == n ? true : n.reason) != null)
+        let n = await o.Z.process(e);
+        if (F("Signal sent: ".concat(e.type).concat(JSON.stringify(e).length > 50 ? " (".concat(JSON.stringify(e).substring(0, 50), "...)") : " (".concat(JSON.stringify(e), ")")), "signal"), (null == n ? true : n.reason) != null)
           if ((null == n ? true : n.reason.includes("Manual clip")) || (null == n ? true : n.reason.includes("exceeded threshold"))) {
             var t;
             let e = u.Z.getHandlerState("ml-audio-classification"),
@@ -117,8 +117,8 @@ function f() {
               timestamp: new Date,
               emotionHistory: a.length > 0 ? a : true
             }, ...e].slice(0, 50))
-          } else B("❌ No clip: ".concat(n.reason), "signal");
-        let a = s.Z.read();
+          } else F("❌ No clip: ".concat(n.reason), "signal");
+        let a = o.Z.read();
         _({
           clippingPressure: a.pressure,
           currentThreshold: a.currentThreshold,
@@ -126,9 +126,9 @@ function f() {
           timeline: a.signals
         })
       } catch (e) {
-        B("❌ Error: ".concat(e.message), "signal")
+        F("❌ Error: ".concat(e.message), "signal")
       }
-    }, [B]),
+    }, [F]),
     G = Chunk647438.useCallback(e => {
       let t = !T[e];
       true === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
@@ -136,7 +136,7 @@ function f() {
         yell: false,
         wakeWord: false,
         whisper: false
-      }), window.__CLIPS_DEBUG__[e] = t, O(n => g(x({}, n), {
+      }), window.__CLIPS_DEBUG__[e] = t, N(n => g(x({}, n), {
         [e]: t
       }))
     }, [T]),
@@ -264,9 +264,9 @@ function f() {
                   });
                   let t = module.map(e => e.debug.dbQuantized),
                     n = module.map(e => e.debug.thresholdP),
-                    r = Math.min(...exports, ...require),
+                    i = Math.min(...exports, ...require),
                     l = Math.max(...exports, ...require),
-                    i = Chunk442837 === Chunk647438 ? 1 : Chunk442837 - Chunk647438;
+                    r = Chunk442837 === Chunk647438 ? 1 : Chunk442837 - Chunk647438;
                   return [0, .25, .5, .75, 1].map((e, t) => {
                     let n = 40 + (1 - e) * 280;
                     return (0, a.jsxs)("g", {
@@ -283,7 +283,7 @@ function f() {
                         fill: "#999",
                         fontSize: "14",
                         fontFamily: "monospace",
-                        children: (r + e * i).toFixed(0)
+                        children: (i + e * r).toFixed(0)
                       })]
                     }, t)
                   })
@@ -316,17 +316,17 @@ function f() {
                   if (0 === module.length) return null;
                   let t = module.map(e => e.debug.dbQuantized),
                     n = module.map(e => e.debug.thresholdP),
-                    r = Math.min(...exports, ...require),
+                    i = Math.min(...exports, ...require),
                     l = Math.max(...exports, ...require),
-                    i = Chunk442837 === Chunk647438 ? 1 : Chunk442837 - Chunk647438,
-                    o = e => 40 + (1 - (e - r) / i) * 280,
-                    s = [];
+                    r = Chunk442837 === Chunk647438 ? 1 : Chunk442837 - Chunk647438,
+                    s = e => 40 + (1 - (e - i) / r) * 280,
+                    o = [];
                   module.forEach((t, n) => {
                     let a = 60 + n / Math.max(e.length - 1, 1) * 720,
-                      r = o(t.debug.dbQuantized);
-                    s.push({
+                      i = s(t.debug.dbQuantized);
+                    o.push({
                       x: a,
-                      y: r,
+                      y: i,
                       db: t.debug.dbQuantized,
                       threshold: t.debug.thresholdP,
                       isYelling: t.debug.dbQuantized >= t.debug.thresholdP
@@ -335,7 +335,7 @@ function f() {
                   let c = Chunk460779.length > 0 ? "M ".concat(Chunk460779.map(e => "".concat(e.x, ",").concat(e.y)).join(" L ")) : "",
                     d = Chunk460779.map(e => ({
                       x: e.x,
-                      y: o(e.threshold)
+                      y: s(e.threshold)
                     })),
                     u = Chunk894694.length > 0 ? "M ".concat(Chunk894694.map(e => "".concat(e.x, ",").concat(e.y)).join(" L ")) : "";
                   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -659,7 +659,7 @@ function f() {
                 t = 0,
                 n = null;
               for (let a = 0; Chunk951288 < j.timeline.length; Chunk951288++) {
-                let r = j.timeline[Chunk951288];
+                let i = j.timeline[Chunk951288];
                 Chunk647438.signal.type === Chunk894694.Bs.SPEAKING ? (0 === exports && (n = Chunk647438), exports++) : (exports > 0 && (1 === exports ? module.push({
                   type: "single",
                   event: require
@@ -680,17 +680,17 @@ function f() {
                 count: exports,
                 firstEvent: require
               }));
-              let r = (e, t) => {
-                let n = s.Z.getInternalState(),
-                  a = s.Z.getConfig(),
-                  r = 0;
+              let i = (e, t) => {
+                let n = o.Z.getInternalState(),
+                  a = o.Z.getConfig(),
+                  i = 0;
                 switch (e.signal.type) {
                   case d.Bs.MANUAL:
                   case d.Bs.DISTRIBUTED:
                   case d.Bs.YELLING:
                   case d.Bs.SPEAKING:
                   case d.Bs.SOUNDBOARD:
-                    r = a.signals[e.signal.type].importance;
+                    i = a.signals[e.signal.type].importance;
                     break;
                   case d.Bs.PHRASE:
                     if ("text" in e.signal) {
@@ -699,20 +699,20 @@ function f() {
                         l = false;
                       for (let e of t.phrases)
                         if (e.enabled && e.patterns.some(e => n.includes(e.toLowerCase()))) {
-                          r = e.importance, l = true;
+                          i = e.importance, l = true;
                           break
-                        } l || (r = t.defaultPhrase.importance)
+                        } l || (i = t.defaultPhrase.importance)
                     }
                     break;
                   case d.Bs.GAME_EVENT:
                     if ("eventType" in e.signal) {
                       var l;
                       let t = a.signals[d.Bs.GAME_EVENT].eventTypes[e.signal.eventType];
-                      r = null != (l = null == t ? true : t.importance) ? l : a.signals[d.Bs.GAME_EVENT].defaultEventType.importance
+                      i = null != (l = null == t ? true : t.importance) ? l : a.signals[d.Bs.GAME_EVENT].defaultEventType.importance
                     }
                 }
-                let i = r,
-                  o = [];
+                let r = i,
+                  s = [];
                 for (let n of t) {
                   let t;
                   if (n !== e) {
@@ -727,9 +727,9 @@ function f() {
                       case d.Bs.PHRASE:
                         if ("text" in n.signal) {
                           let e = a.signals[d.Bs.PHRASE],
-                            r = n.signal.text.toLowerCase().trim();
+                            i = n.signal.text.toLowerCase().trim();
                           for (let n of e.phrases)
-                            if (n.enabled && n.patterns.some(e => r.includes(e.toLowerCase()))) {
+                            if (n.enabled && n.patterns.some(e => i.includes(e.toLowerCase()))) {
                               t = n.amplifiers;
                               break
                             }
@@ -745,26 +745,26 @@ function f() {
                       for (let a of t) {
                         if (!a.targetSignals.includes(e.signal.type)) continue;
                         let t = (n.timestamp - e.timestamp) / 1e3;
-                        t < 0 || t > a.timeWindowSeconds || (i *= a.multiplier, o.push({
+                        t < 0 || t > a.timeWindowSeconds || (r *= a.multiplier, s.push({
                           from: n.signal.type,
                           multiplier: a.multiplier
                         }))
                       }
                   }
                 }
-                let c = i * n.fatigue;
+                let c = r * n.fatigue;
                 return {
-                  baseImportance: r,
-                  amplifiedImportance: i,
+                  baseImportance: i,
+                  amplifiedImportance: r,
                   effectiveImportance: c,
                   fatigue: n.fatigue,
-                  amplifications: o
+                  amplifications: s
                 }
               };
               return module.map((t, n) => {
                 if ("group" === t.type) {
-                  let l = r(t.firstEvent, j.timeline),
-                    i = l.effectiveImportance * t.count;
+                  let l = i(t.firstEvent, j.timeline),
+                    r = l.effectiveImportance * t.count;
                   return (0, a.jsxs)("div", {
                     style: {
                       padding: "4px 0",
@@ -783,7 +783,7 @@ function f() {
                           color: "#72767d",
                           marginLeft: "8px"
                         },
-                        children: ["pressure: ", i.toFixed(4), " (base: ", l.baseImportance.toFixed(3), " \xd7", " ", t.count, ")"]
+                        children: ["pressure: ", r.toFixed(4), " (base: ", l.baseImportance.toFixed(3), " \xd7", " ", t.count, ")"]
                       })]
                     }), l.amplifications.length > 0 && (0, a.jsxs)("div", {
                       style: {
@@ -796,9 +796,9 @@ function f() {
                   }, n)
                 } {
                   let l = t.event,
-                    i = r(l, j.timeline),
-                    o = l.signal.type;
-                  return l.signal.type === d.Bs.PHRASE && "text" in l.signal ? o = 'PHRASE: "'.concat(l.signal.text, '"') : l.signal.type === d.Bs.GAME_EVENT && "eventType" in l.signal && (o = "GAME_EVENT: ".concat(l.signal.eventType)), (0, a.jsxs)("div", {
+                    r = i(l, j.timeline),
+                    s = l.signal.type;
+                  return l.signal.type === d.Bs.PHRASE && "text" in l.signal ? s = 'PHRASE: "'.concat(l.signal.text, '"') : l.signal.type === d.Bs.GAME_EVENT && "eventType" in l.signal && (s = "GAME_EVENT: ".concat(l.signal.eventType)), (0, a.jsxs)("div", {
                     style: {
                       padding: "4px 0",
                       borderBottom: n < e.length - 1 ? "1px solid #40444b" : "none",
@@ -810,21 +810,21 @@ function f() {
                           color: l.signal.type === d.Bs.YELLING ? "#ff6b6b" : "#7289da",
                           fontWeight: "bold"
                         },
-                        children: o
+                        children: s
                       }), (0, a.jsxs)("span", {
                         style: {
                           color: "#72767d",
                           marginLeft: "8px"
                         },
-                        children: ["pressure: ", i.effectiveImportance.toFixed(4), " (base:", " ", i.baseImportance.toFixed(3), i.amplifications.length > 0 && " → amp: ".concat(i.amplifiedImportance.toFixed(3)), ", fatigue: \xd7", i.fatigue.toFixed(3), ")"]
+                        children: ["pressure: ", r.effectiveImportance.toFixed(4), " (base:", " ", r.baseImportance.toFixed(3), r.amplifications.length > 0 && " → amp: ".concat(r.amplifiedImportance.toFixed(3)), ", fatigue: \xd7", r.fatigue.toFixed(3), ")"]
                       })]
-                    }), i.amplifications.length > 0 && (0, a.jsxs)("div", {
+                    }), r.amplifications.length > 0 && (0, a.jsxs)("div", {
                       style: {
                         marginLeft: "16px",
                         fontSize: "10px",
                         color: "#43b581"
                       },
-                      children: ["↑ amplified by:", " ", i.amplifications.map(e => "".concat(e.from, " (\xd7").concat(e.multiplier, ")")).join(", ")]
+                      children: ["↑ amplified by:", " ", r.amplifications.map(e => "".concat(e.from, " (\xd7").concat(e.multiplier, ")")).join(", ")]
                     })]
                   }, n)
                 }
@@ -844,43 +844,43 @@ function f() {
             },
             children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Manual",
-              onClick: () => F({
+              onClick: () => B({
                 type: Chunk894694.Bs.MANUAL
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Distributed",
-              onClick: () => F({
+              onClick: () => B({
                 type: Chunk894694.Bs.DISTRIBUTED,
                 remoteTriggerUserId: "123",
                 remoteTriggerClipId: "456"
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Phrase: Alexa",
-              onClick: () => F({
+              onClick: () => B({
                 type: Chunk894694.Bs.PHRASE,
                 text: "alexa"
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Phrase: Klip",
-              onClick: () => F({
+              onClick: () => B({
                 type: Chunk894694.Bs.PHRASE,
                 text: "klip"
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Phrase: Clip",
-              onClick: () => F({
+              onClick: () => B({
                 type: Chunk894694.Bs.PHRASE,
                 text: "clip"
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Phrase: Burr",
-              onClick: () => F({
+              onClick: () => B({
                 type: Chunk894694.Bs.PHRASE,
                 text: "burr"
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Yelling",
-              onClick: () => F({
+              onClick: () => B({
                 type: Chunk894694.Bs.YELLING
               })
             })]
@@ -893,7 +893,7 @@ function f() {
               },
               children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
                 label: "Event Type",
-                value: N,
+                value: O,
                 onChange: e => P(e),
                 options: [{
                   label: "Kill",
@@ -928,8 +928,8 @@ function f() {
                 }]
               }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
                 label: "Importance",
-                value: I,
-                onChange: w,
+                value: w,
+                onChange: I,
                 options: [{
                   label: "Low",
                   value: 0
@@ -955,7 +955,7 @@ function f() {
                 }), (0, Chunk951288.jsx)("input", {
                   type: "text",
                   value: k,
-                  onChange: e => R(e.target.value),
+                  onChange: e => A(e.target.value),
                   placeholder: "e.g., First Blood",
                   style: {
                     padding: "8px",
@@ -977,8 +977,8 @@ function f() {
                   children: "Description (optional)"
                 }), (0, Chunk951288.jsx)("input", {
                   type: "text",
-                  value: A,
-                  onChange: e => D(e.target.value),
+                  value: R,
+                  onChange: e => Z(e.target.value),
                   placeholder: "e.g., Killed enemy ADC in bot lane",
                   style: {
                     padding: "8px",
@@ -995,11 +995,11 @@ function f() {
               onClick: () => {
                 Chunk39604.XK({
                   type: Chunk894694.Bs.GAME_EVENT,
-                  eventType: N,
-                  importance: I,
+                  eventType: O,
+                  importance: w,
                   title: k,
-                  description: A
-                }), B("Created ".concat(N.toUpperCase(), " event (").concat(I, ")").concat(k), "info")
+                  description: R
+                }), F("Created ".concat(O.toUpperCase(), " event (").concat(w, ")").concat(k), "info")
               }
             })]
           })]
@@ -1097,20 +1097,20 @@ function f() {
                 try {
                   let e = Chunk460779.Z.getConfig(),
                     t = (0, Chunk333291.yM)(module);
-                  L(exports), U(true), B("✅ Config exported to textarea below", "info")
+                  L(exports), U(true), F("✅ Config exported to textarea below", "info")
                 } catch (e) {
-                  B("❌ Failed to export config: ".concat(module.message), "info")
+                  F("❌ Failed to export config: ".concat(module.message), "info")
                 }
               }
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Import Config",
               onClick: () => {
                 try {
-                  if ("" === Z.trim()) return void B("❌ Config textarea is empty", "info");
-                  let e = (0, Chunk333291.o$)(Z);
-                  Chunk39604.O0(module), B("✅ Config imported successfully", "info")
+                  if ("" === D.trim()) return void F("❌ Config textarea is empty", "info");
+                  let e = (0, Chunk333291.o$)(D);
+                  Chunk39604.O0(module), F("✅ Config imported successfully", "info")
                 } catch (e) {
-                  B("❌ Failed to import config: ".concat(module.message), "info")
+                  F("❌ Failed to import config: ".concat(module.message), "info")
                 }
               }
             })]
@@ -1135,7 +1135,7 @@ function f() {
                 }
               })]
             }), (0, Chunk951288.jsx)("textarea", {
-              value: Z,
+              value: D,
               onChange: e => L(e.target.value),
               placeholder: "Paste config JSON here...",
               style: {

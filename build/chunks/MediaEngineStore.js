@@ -119,8 +119,8 @@ function ex(e, t) {
 }
 let eL = new Chunk710845.Z("MediaEngineStore"),
   eM = "MediaEngineStore",
-  ek = 4,
-  ej = 1,
+  ej = 4,
+  ek = 1,
   eU = 1,
   eG = 1,
   eB = 1,
@@ -283,8 +283,8 @@ let tN = false,
   tx = null,
   tL = true,
   tM = false,
-  tk = false,
-  tj = false;
+  tj = false,
+  tk = false;
 
 function tU() {
   var e, t;
@@ -427,7 +427,7 @@ function tz(e, t) {
 async function tq(e, t) {
   if ((0, eu.isIOS)() || (0, eu.isMac)()) {
     let e = await eJ.getSystemMicrophoneMode();
-    "" !== e && "standard" !== e && k.Z.getConfig({
+    "" !== e && "standard" !== e && j.Z.getConfig({
       location: "setNoiseCancellation"
     }).disabledModes.includes(e) && (t = false)
   }
@@ -726,7 +726,7 @@ function tJ() {
       })
     })
   }), eJ.on(Chunk46973.aB.VoiceQueueMetrics, e => {
-    let t = rj(e);
+    let t = rk(e);
     null !== t && es.default.track(eI.rMx.VOICE_QUEUE_METRICS, t)
   }), eJ.setOnVideoContainerResized((e, t, n) => {
     v.Z.wait(() => v.Z.dispatch({
@@ -797,11 +797,11 @@ function t8() {
   null != exports && (Chunk433517.K.set(eM, {
     [Chunk65154.Yn.DEFAULT]: exports
   }), Chunk433517.K.remove("audio")), e$ = null != (e = Chunk433517.K.get(eM)) ? module : {}, p().each(e$, e => {
-    if (p().defaultsDeep(e, eX()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, ep.Kd)(e.modeOptions.shortcut)), null != e.modeOptions && e.vadUseKrispSettingVersion !== ek && (e.vadUseKrispSettingVersion = ek, e.modeOptions.vadUseKrisp = true), e.qosMigrated || (e.qosMigrated = true, e.qos = false), !e.vadThrehsoldMigrated) {
+    if (p().defaultsDeep(e, eX()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, ep.Kd)(e.modeOptions.shortcut)), null != e.modeOptions && e.vadUseKrispSettingVersion !== ej && (e.vadUseKrispSettingVersion = ej, e.modeOptions.vadUseKrisp = true), e.qosMigrated || (e.qosMigrated = true, e.qos = false), !e.vadThrehsoldMigrated) {
       var t;
       e.vadThrehsoldMigrated = true, (null == (t = e.modeOptions) ? true : t.threshold) === false && (e.modeOptions.threshold = eY)
     }
-    eJ.supports(eN.AN.SIDECHAIN_COMPRESSION) && e.sidechainCompressionSettingVersion < eB && (e.sidechainCompressionSettingVersion = eB, e.sidechainCompression = true), (0, eu.isWeb)() ? e.ncUseKrispjsSettingVersion !== eU && (e.ncUseKrispjsSettingVersion = eU, e.noiseSuppression = false, e.noiseCancellation = true) : e.ncUseKrispSettingVersion !== ej && (e.ncUseKrispSettingVersion = ej, e.noiseSuppression = false, e.noiseCancellation = true), e.hardwareEnabledVersion !== eG && (e.hardwareH264 = true, e.hardwareEnabledVersion = eG), null == e.hardwareEncoding && (e.hardwareEncoding = e.hardwareH264)
+    eJ.supports(eN.AN.SIDECHAIN_COMPRESSION) && e.sidechainCompressionSettingVersion < eB && (e.sidechainCompressionSettingVersion = eB, e.sidechainCompression = true), (0, eu.isWeb)() ? e.ncUseKrispjsSettingVersion !== eU && (e.ncUseKrispjsSettingVersion = eU, e.noiseSuppression = false, e.noiseCancellation = true) : e.ncUseKrispSettingVersion !== ek && (e.ncUseKrispSettingVersion = ek, e.noiseSuppression = false, e.noiseCancellation = true), e.hardwareEnabledVersion !== eG && (e.hardwareH264 = true, e.hardwareEnabledVersion = eG), null == e.hardwareEncoding && (e.hardwareEncoding = e.hardwareH264)
   }), t7()
 }
 
@@ -968,7 +968,7 @@ function nd(e) {
   let t = tB();
   if (t3() && (t2() ? rd(eN.iA.AUTOMATIC) : t.automaticAudioSubsystem && rf()), eJ.supports(eN.AN.OFFLOAD_ADM_CONTROLS)) {
     let e = false;
-    (0, eu.isDesktop)() ? e = (0, j.E)({
+    (0, eu.isDesktop)() ? e = (0, k.E)({
       location: "handleConnectionOpen"
     }).enabled: ((0, eu.isIOS)() || (0, eu.isAndroid)()) && (e = (0, U.W)({
       location: "handleConnectionOpen"
@@ -1278,7 +1278,7 @@ function nM(e) {
   return e3 !== e.required && (e3 = e.required, e.required || eJ.interact(), true)
 }
 
-function nk(e) {
+function nj(e) {
   let {
     inputDevices: t,
     outputDevices: n,
@@ -1287,7 +1287,7 @@ function nk(e) {
   nr(t), no(n), ns(r)
 }
 
-function nj(e) {
+function nk(e) {
   let {
     inputVolume: t,
     outputVolume: n
@@ -1385,7 +1385,7 @@ async function nW() {
   let {
     enabled: a
   } = await (0, Chunk302630.m)("setGamescopeVaapiEnabled");
-  tj = a, a && eJ.supports(Chunk65154.AN.GAMESCOPE_CAPTURE) && (tk = true)
+  tk = a, a && eJ.supports(Chunk65154.AN.GAMESCOPE_CAPTURE) && (tj = true)
 }
 
 function nK(e) {
@@ -1877,7 +1877,7 @@ function rL() {
 function rM(e) {
   tL = e.enabled
 }
-class rk extends(u = Chunk442837.ZP.Store) {
+class rj extends(u = Chunk442837.ZP.Store) {
   initialize() {
     tJ(), t8(), ri(), nS(), tD = {
       [Chunk65154.AN.VIDEO]: eJ.supports(Chunk65154.AN.VIDEO),
@@ -2244,10 +2244,10 @@ class rk extends(u = Chunk442837.ZP.Store) {
     return eJ.supports(Chunk65154.AN.NATIVE_SCREENSHARE_PICKER)
   }
   getUseVaapiEncoder() {
-    return tj
+    return tk
   }
   getUseGamescopeCapture() {
-    return tk
+    return tj
   }
   getOpenH264() {
     return tB().openH264
@@ -2331,7 +2331,7 @@ class rk extends(u = Chunk442837.ZP.Store) {
   }
 }
 
-function rj(e) {
+function rk(e) {
   if (null == e.taskMetrics || 0 === e.taskMetrics.length || 1 === e.taskMetrics.length) return null;
   let t = {
     metrics_period_ms: e.periodMs,
@@ -2351,8 +2351,8 @@ function rj(e) {
       t["delayed_task_".concat(e, "_name")] = n.name, t["delayed_task_".concat(e, "_longest_queue_time_ns")] = n.longestQueueTimeNs
     } return t.full_task_report = JSON.stringify(n), t
 }
-eP(rk, "displayName", "MediaEngineStore");
-let rU = r = new rk(Chunk570140.Z, {
+eP(rj, "displayName", "MediaEngineStore");
+let rU = r = new rj(Chunk570140.Z, {
   VOICE_CHANNEL_SELECT: r_,
   VOICE_STATE_UPDATES: nm,
   CONNECTION_OPEN: nd,
@@ -2390,8 +2390,8 @@ let rU = r = new rk(Chunk570140.Z, {
   MEDIA_ENGINE_SET_USE_SYSTEM_SCREENSHARE_PICKER: n4,
   AUDIO_SET_ATTENUATION: n8,
   AUDIO_SET_QOS: n5,
-  MEDIA_ENGINE_DEVICES: nk,
-  AUDIO_VOLUME_CHANGE: nj,
+  MEDIA_ENGINE_DEVICES: nj,
+  AUDIO_VOLUME_CHANGE: nk,
   AUDIO_RESET: n6,
   AUDIO_INPUT_DETECTED: n7,
   AUDIO_SET_SUBSYSTEM: ru,

@@ -1,13 +1,13 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 619733, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   AK: () => c,
-  EK: () => i,
-  IX: () => o,
+  EK: () => r,
+  IX: () => s,
   SW: () => h,
   SY: () => d,
   Sg: () => m,
-  TG: () => s,
+  TG: () => o,
   YX: () => u,
   Z4: () => f,
   nd: () => g,
@@ -16,8 +16,8 @@ require.d(exports, {
 });
 var a, Chunk763600 = require("./763600.js"),
   Chunk48541 = require("./48541.js"),
-  i = 12633 == require.j ? ((a = {}).SELECT_GAME = "select-game", a.SERVER_SETTINGS = "server-settings", a) : null;
-let o = {
+  r = 12633 == require.j ? ((a = {}).SELECT_GAME = "select-game", a.SERVER_SETTINGS = "server-settings", a) : null;
+let s = {
     steps: {
       "select-game": {
         onBack: {
@@ -39,9 +39,9 @@ let o = {
       }
     }
   },
-  s = 24,
+  o = 24,
   c = 680,
-  d = 12633 == require.j ? c - 2 * s : null,
+  d = 12633 == require.j ? c - 2 * o : null,
   u = 10,
   m = 32,
   p = 1e3,

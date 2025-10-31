@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 590965, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
@@ -43,9 +43,9 @@ function y(e) {
 let v = Chunk981631.IlC.APP,
   j = false,
   C = false,
-  E = [];
+  x = [];
 
-function x() {
+function E() {
   j = true
 }
 class S extends(i = Chunk442837.ZP.Store) {
@@ -54,11 +54,11 @@ class S extends(i = Chunk442837.ZP.Store) {
   }
   isOpen() {
     let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return !!(j && E.length > 0 && v === module)
+    return !!(j && x.length > 0 && v === module)
   }
   getProps() {
     return {
-      invite: E.length > 0 ? E[0][0] : null,
+      invite: x.length > 0 ? x[0][0] : null,
       error: null != r && "" !== r ? r : null,
       submitting: C
     }
@@ -66,8 +66,8 @@ class S extends(i = Chunk442837.ZP.Store) {
 }
 O(S, "displayName", "InviteModalStore");
 let I = new S(Chunk570140.Z, {
-  OVERLAY_INITIALIZE: x,
-  CONNECTION_OPEN: x,
+  OVERLAY_INITIALIZE: E,
+  CONNECTION_OPEN: E,
   CONNECTION_CLOSED: function() {
     j = false
   },
@@ -92,7 +92,7 @@ let I = new S(Chunk570140.Z, {
             } = e;
             if (null != t) {
               let e = u.Z.getChannel(t.id);
-              if (f.Z.can(b.Plq.VIEW_CHANNEL, e)) return t.id
+              if (h.Z.can(b.Plq.VIEW_CHANNEL, e)) return t.id
             }
             return null
           }(t);
@@ -100,7 +100,7 @@ let I = new S(Chunk570140.Z, {
         }
       }
     }
-    if (E.some(e => {
+    if (x.some(e => {
         let [n] = e;
         return n.code === t.code
       })) returnfalse;
@@ -131,11 +131,11 @@ let I = new S(Chunk570140.Z, {
       };
       return null != c && (p.channel = y({}, c)), null != u && (p.guild = (0, g.Qs)(u)), null != e.inviter && (p.inviter = y({}, e.inviter)), p
     }(t);
-    E.push([n, e.resolve])
+    x.push([n, e.resolve])
   },
   INVITE_MODAL_CLOSE: function() {
-    if (r = null, C = false, E.length > 0) {
-      let [, e] = E.shift();
+    if (r = null, C = false, x.length > 0) {
+      let [, e] = x.shift();
       null != module && module()
     }
   },

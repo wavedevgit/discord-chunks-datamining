@@ -146,7 +146,7 @@ function q(e) {
     account: n,
     theme: a,
     locale: l
-  } = e, [c, p] = i.useState(n.friendSync), [m, g] = i.useState(n.visibility), [E, T] = i.useState(n.metadataVisibility), [S, C] = i.useState(n.showActivity), [N, R] = i.useState(null), [P, D] = i.useState(null), [k, Z] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), X = b.Z.get(q);
+  } = e, [c, p] = i.useState(n.friendSync), [m, g] = i.useState(n.visibility), [E, T] = i.useState(n.metadataVisibility), [S, C] = i.useState(n.showActivity), [N, R] = i.useState(null), [P, D] = i.useState(null), [j, Z] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), X = b.Z.get(q);
   i.useEffect(() => {
     p(n.friendSync), g(n.visibility), T(n.metadataVisibility), C(n.showActivity)
   }, [n]);
@@ -220,7 +220,7 @@ function q(e) {
       children: (0, r.jsx)(U.Y, {})
     }) : e.type === G.ABu.PLAYSTATION ? (0, r.jsx)("div", {
       className: V.upsellWrapper,
-      children: (0, r.jsx)(j.t, {})
+      children: (0, r.jsx)(k.t, {})
     }) : null
   }
 
@@ -278,7 +278,7 @@ function q(e) {
         text: s,
         variant: "secondary",
         size: "sm",
-        loading: k,
+        loading: j,
         disabled: o,
         "aria-label": F.intl.string(F.t.sCkLYH),
         onClick: o ? true : () => {

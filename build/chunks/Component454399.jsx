@@ -113,17 +113,17 @@ function O(e) {
     }), [y, h, g, x]),
     {
       isVisible: M,
-      triggerProps: k
+      triggerProps: j
     } = (0, d.l)(m({
       targetElementRef: w.targetElementRef
     }, P)),
-    j = null != R ? R : "".concat((0, u.Sw)(null != h ? h : ""), "|").concat((0, u.Sw)(g)),
+    k = null != R ? R : "".concat((0, u.Sw)(null != h ? h : ""), "|").concat((0, u.Sw)(g)),
     U = (0, f.Q)({
       shouldShow: M
     });
   if (O) {
-    let e = E(m({}, k), {
-      onFocus: (0, u.tS)(k.onFocus, e => {
+    let e = E(m({}, j), {
+      onFocus: (0, u.tS)(j.onFocus, e => {
         let t = e.target;
         if (null != t) {
           var n;
@@ -131,7 +131,7 @@ function O(e) {
           t.setAttribute("aria-describedby", e)
         }
       }),
-      onBlur: (0, u.tS)(k.onBlur, e => {
+      onBlur: (0, u.tS)(j.onBlur, e => {
         let t = e.target;
         if (null != t) {
           let e = t.getAttribute("aria-describedby");
@@ -150,7 +150,7 @@ function O(e) {
     })
   } else {
     if (!i.isValidElement(n)) return null;
-    t = (0, u.C9)(n, k, D, w.triggerRef)
+    t = (0, u.C9)(n, j, D, w.triggerRef)
   }
   let G = U((e, t) => t ? (0, r.jsx)(c.pn, {
     isRichTooltip: true,
@@ -166,7 +166,7 @@ function O(e) {
       caretConfig: A,
       layerContext: null != C ? C : s.nz,
       animationStyle: e,
-      positionKey: j,
+      positionKey: k,
       "data-mana-component": "rich-tooltip"
     })
   }) : null);

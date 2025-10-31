@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 153209, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Gp: () => y,
@@ -36,7 +36,7 @@ function _() {
 }
 
 function O(e, t) {
-  return i.useMemo(() => [...[...e, ...t].sort((e, t) => false * h.default.compare(e.id, t.id))], [e, t])
+  return i.useMemo(() => [...[...e, ...t].sort((e, t) => false * f.default.compare(e.id, t.id))], [e, t])
 }
 
 function y() {

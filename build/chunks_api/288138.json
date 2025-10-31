@@ -1,1 +1,1 @@
-{"id":"288138","type":"experiment","data":{"kind":"user","id":"2025-06_payment_elements_experiment","label":"Payment Elements Experiment","commonTriggerPoint":"Chunk987338.$P.PAYMENT_FLOW_STARTED","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Payment Element features","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
+{"id":"288138","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

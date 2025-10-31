@@ -49,25 +49,25 @@ function m(e, t, n) {
   }), (0, l.Z)([a.Z.CHANNEL_CALL], n, t, s.jy.ENTRY)
 }
 
-function g(e, t, n, r) {
-  var a;
-  let c = null != t.emojiId ? o.ZP.getCustomEmojiById(t.emojiId) : null,
+function g(e, t, n, r, a) {
+  var c;
+  let u = null != t.emojiId ? o.ZP.getCustomEmojiById(t.emojiId) : null,
     {
-      abortController: u,
-      onRequestProgress: d
+      abortController: d,
+      onRequestProgress: f
     } = h(e),
-    f = {
+    m = {
       sound_id: t.soundId,
       emoji_id: t.emojiId,
-      emoji_name: null != (a = t.emojiName) ? a : null == c ? true : c.name
+      emoji_name: null != (c = t.emojiName) ? c : null == u ? true : u.name
     };
-  t.guildId !== p.X8 && (f.source_guild_id = t.guildId), i.tn.post({
+  t.guildId !== p.X8 && (m.source_guild_id = t.guildId), i.tn.post({
     url: _.ANM.SEND_SOUNDBOARD_SOUND(e),
-    body: f,
-    signal: u.signal,
-    onRequestProgress: d,
+    body: m,
+    signal: d.signal,
+    onRequestProgress: f,
     rejectWithError: true
   }).then(_.VqG, () => {
-    if (u.signal.aborted) return
-  }), (0, l.Z)(null != r ? r : [], n, t, s.jy.DEFAULT)
+    if (d.signal.aborted) return
+  }), (0, l.Z)(null != r ? r : [], n, t, s.jy.DEFAULT, a)
 }

@@ -1,5 +1,5 @@
-/** Chunk was on 84743 **/
-/** chunk id: 24921, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 56158 **/
+/** chunk id: 24921, original params: t,n,e (module,exports,require) **/
 module.exports = {
   confirmation: "confirmation__2db04",
   banner: "banner__2db04",

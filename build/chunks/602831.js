@@ -1,8 +1,8 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 602831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => s,
-  j: () => o
+  K: () => o,
+  j: () => s
 }), require("./388685.js");
 var Chunk763600 = require("./763600.js"),
   Chunk660815 = require("./660815.js");
@@ -50,7 +50,7 @@ let l = [{
   }]
 }];
 
-function i(e, t) {
+function r(e, t) {
   return {
     id: e,
     name: t,
@@ -60,8 +60,8 @@ function i(e, t) {
     gameId: "1"
   }
 }
-let o = [i("1", "GameServer Test #1"), i("2", "GameServer Test #2"), i("3", "GameServer Test #3"), i("4", "GameServer Test #4"), i("5", "GameServer Test #5"), i("6", "GameServer Test #6"), i("7", "GameServer Test #7"), i("8", "GameServer Test #8"), i("9", "GameServer Test #9"), i("10", "GameServer Test #10"), i("11", "GameServer Test #11"), i("12", "GameServer Test #12")],
-  s = [{
+let s = [r("1", "GameServer Test #1"), r("2", "GameServer Test #2"), r("3", "GameServer Test #3"), r("4", "GameServer Test #4"), r("5", "GameServer Test #5"), r("6", "GameServer Test #6"), r("7", "GameServer Test #7"), r("8", "GameServer Test #8"), r("9", "GameServer Test #9"), r("10", "GameServer Test #10"), r("11", "GameServer Test #11"), r("12", "GameServer Test #12")],
+  o = [{
     id: "1",
     gameId: "1",
     name: "GameServer Test #1",

@@ -3,6 +3,7 @@
 "use strict";
 require.d(exports, {
   JL: () => J,
+  Lq: () => Q,
   PaymentContextProvider: () => ee
 }), require("./388685.js"), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
@@ -138,14 +139,14 @@ function ee(e) {
   } = (0, B.Z)({
     stepConfigs: q,
     breadcrumbs: J
-  }), [eL, eM] = (0, j.Z)(eR), {
-    paymentError: ek,
-    paymentAuthenticationState: ej
+  }), [eL, eM] = (0, k.Z)(eR), {
+    paymentError: ej,
+    paymentAuthenticationState: ek
   } = (0, M.Z)(), {
     purchaseError: eU,
     purchaseErrorBlockRef: eG,
     setPurchaseError: eB
-  } = (0, k.Z)(), eZ = (0, u.Z)(() => {
+  } = (0, j.Z)(), eZ = (0, u.Z)(() => {
     let e = null != S ? S : (0, l.Z)();
     return N.Z.addBreadcrumb({
       message: "Checkout session ID: ".concat(e)
@@ -217,7 +218,7 @@ function ee(e) {
     {
       enabled: tD
     } = (0, g.l)({
-      location: "PaymentModal"
+      location: "PaymentContext"
     }),
     tx = (0, P.uH)({
       location: "PaymentModal"
@@ -258,8 +259,8 @@ function ee(e) {
       previousStepRef: ex,
       purchaseState: eL,
       setPurchaseState: eM,
-      paymentAuthenticationState: ej,
-      paymentError: ek,
+      paymentAuthenticationState: ek,
+      paymentError: ej,
       purchaseError: eU,
       setPurchaseError: eB,
       purchasePreviewError: tm,

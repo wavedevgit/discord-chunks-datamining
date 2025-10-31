@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 378844, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => O,
@@ -48,13 +48,13 @@ let y = e => {
     notClaimed: v,
     notEmailVerified: j,
     notPhoneVerified: C,
-    newAccount: E,
-    newMember: x
+    newAccount: x,
+    newMember: E
   } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, I = null, P = null;
-  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlG), P = m.intl.string(m.t.fiNVin)) : C ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOv"])) : j ? (I = m.intl.string(m.t.vdSOpz), P = m.intl.string(m.t.lm1UKt)) : x ? (I = m.intl.formatToPlainString(m.t.v1ktYb, {
-    min: h.YeM.MEMBER_AGE
-  }), P = m.intl.string(m.t.BddRzS)) : E && (I = m.intl.formatToPlainString(m.t.sncw41, {
-    min: h.YeM.ACCOUNT_AGE
+  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlG), P = m.intl.string(m.t.fiNVin)) : C ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOv"])) : j ? (I = m.intl.string(m.t.vdSOpz), P = m.intl.string(m.t.lm1UKt)) : E ? (I = m.intl.formatToPlainString(m.t.v1ktYb, {
+    min: f.YeM.MEMBER_AGE
+  }), P = m.intl.string(m.t.BddRzS)) : x && (I = m.intl.formatToPlainString(m.t.sncw41, {
+    min: f.YeM.ACCOUNT_AGE
   }), P = m.intl.string(m.t.BddRzS))), null == S || null == I) ? null : (0, i.jsxs)(a.VqE, {
     className: b.container,
     "aria-labelledby": y,
@@ -100,7 +100,7 @@ let y = e => {
                   children: (0, i.jsx)(a.Text, {
                     variant: "text-md/normal",
                     children: m.intl.format(m.t.azKEPy, {
-                      email: null == (t = f.default.getCurrentUser()) ? true : t.email
+                      email: null == (t = h.default.getCurrentUser()) ? true : t.email
                     })
                   })
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

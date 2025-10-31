@@ -95,8 +95,8 @@ let L = e => {
     onInspect: x,
     surrogateCodePoint: L,
     getEmojiItemProps: M,
-    getEmojiRowProps: k,
-    isScrolling: j,
+    getEmojiRowProps: j,
+    isScrolling: k,
     isUsingKeyboardNavigation: U,
     rowIndex: G,
     allowAnimatedEmoji: B,
@@ -145,7 +145,7 @@ let L = e => {
             tabIndex: g,
             onFocus: E
           } = h, b = D(h, ["ref", "tabIndex", "onFocus"]), y = el.rowIndex === _ && el.columnIndex === p, O = () => {
-            j.current || U.current || x(e)
+            k.current || U.current || x(e)
           };
           return (0, i.createElement)("li", w(R({}, b), {
             key: t
@@ -176,7 +176,7 @@ let L = e => {
             visibleRowIndex: t,
             columnIndex: i
           } = e, a = el.rowIndex === t && el.columnIndex === i, o = t => {
-            t.stopPropagation(), j.current || U.current || (N(e, {
+            t.stopPropagation(), k.current || U.current || (N(e, {
               isFinalSelection: true,
               toggleFavorite: false
             }), (0, f.D)(e.guildId), e.sectionCollapsedToThreeRows || q(), y.default.track(S.rMx.EMOJI_PICKER_THREE_ROW_COLLAPSE_TOGGLED, {
@@ -198,7 +198,7 @@ let L = e => {
         case v.ld.CREATE_EMOJI: {
           if (Q) return null;
           let t = t => {
-            t.stopPropagation(), j.current || U.current || (N(e, {
+            t.stopPropagation(), k.current || U.current || (N(e, {
               isFinalSelection: true,
               toggleFavorite: false
             }), m.Z.open(e.guildId, S.pNK.EMOJI, S.jXE.EMOJI_PICKER_POPOUT))
@@ -226,7 +226,7 @@ let L = e => {
             descriptor: e,
             emojiItemKey: t,
             isInspected: o,
-            isScrolling: j,
+            isScrolling: k,
             isUsingKeyboardNavigation: U,
             surrogateCodePoint: L,
             allowAnimatedEmoji: B,
@@ -250,7 +250,7 @@ let L = e => {
           return
       }
     },
-    em = e => (0, r.jsx)("ul", w(R({}, k(G)), {
+    em = e => (0, r.jsx)("ul", w(R({}, j(G)), {
       className: o()(C.emojiListRow, {
         [C.emojiListRowLargeSize]: e_,
         [C.emojiListRowMediumSize]: ep

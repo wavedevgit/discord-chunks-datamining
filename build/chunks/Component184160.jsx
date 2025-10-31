@@ -1,12 +1,12 @@
-/** Chunk was on 84743 **/
+/** Chunk was on 3270 **/
 /** chunk id: 184160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  x: () => _
+  x: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
   Chunk807163 = require("./807163.jsx"),
   Chunk74538 = require("./74538.js"),
@@ -16,39 +16,39 @@ var Chunk512722 = require("./512722.js"),
   Chunk614223 = require("./614223.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function h(e) {
   let {
     handleStepChange: t,
     handleClose: n
   } = e, {
     activeSubscription: i,
-    selectedSkuId: _,
-    setSelectedPlanId: h,
-    startedPaymentFlowWithPaymentSourcesRef: m
+    selectedSkuId: h,
+    setSelectedPlanId: m,
+    startedPaymentFlowWithPaymentSourcesRef: _
   } = (0, C.JL)(), {
     isGift: f
-  } = (0, d.wD)(), x = null != i ? (0, s.Af)(i) : null, g = null != x ? (0, s.gq)(x.planId) : null, b = null != x ? (0, s.Rd)(x.planId) : null, j = (0, u.Kp)({
+  } = (0, d.wD)(), x = null != i ? (0, o.Af)(i) : null, j = null != x ? (0, o.gq)(x.planId) : null, g = null != x ? (0, o.Rd)(x.planId) : null, b = (0, u.Kp)({
     isTrial: false,
     isGift: f,
-    selectedSkuId: _,
-    startedPaymentFlowWithPaymentSources: m.current
+    selectedSkuId: h,
+    startedPaymentFlowWithPaymentSources: _.current
   });
-  return a()(null != b, "Expected premium type"), (0, r.jsx)(o.Z, {
-    premiumType: b,
+  return l()(null != g, "Expected premium type"), (0, r.jsx)(s.Z, {
+    premiumType: g,
     titleText: p.intl.string(p.t["7VcWW0"]),
     subtitleText: p.intl.format(p.t.Qk34Ik, {
-      subscriptionName: g
+      subscriptionName: j
     }),
-    footer: (0, r.jsxs)(l.ButtonGroup, {
+    footer: (0, r.jsxs)(a.ButtonGroup, {
       direction: "horizontal-reverse",
       align: "center",
-      children: [(0, r.jsx)(l.Button, {
+      children: [(0, r.jsx)(a.Button, {
         variant: "primary",
         text: p.intl.string(p.t["3PatSz"]),
         onClick: () => {
-          j ? (h((0, u.nA)(_, i)), t(c.h8.REVIEW)) : t(c.h8.PLAN_SELECT)
+          b ? (m((0, u.nA)(h, i)), t(c.h8.REVIEW)) : t(c.h8.PLAN_SELECT)
         }
-      }), (0, r.jsx)(l.Button, {
+      }), (0, r.jsx)(a.Button, {
         variant: "secondary",
         onClick: n,
         text: p.intl.string(p.t.h9tkAK)

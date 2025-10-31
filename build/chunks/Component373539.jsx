@@ -75,7 +75,7 @@ let b = function(e) {
     (0, s.ZDy)(async () => {
       let {
         PremiumBrandRefreshSubscriptionCancellationModal: e
-      } = await Promise.all([n.e("17938"), n.e("69432"), n.e("26526"), n.e("46573")]).then(n.bind(n, 48813));
+      } = await n.e("26526").then(n.bind(n, 48813));
       return t => (0, r.jsx)(e, E(m({}, t), {
         premiumSubscription: i,
         analyticsLocations: b,

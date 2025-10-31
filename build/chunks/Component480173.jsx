@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 480173, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -26,22 +26,22 @@ function p() {
 function h(e) {
   let {
     levelUpData: t
-  } = e, n = r.useRef(null), l = r.useCallback(() => {
-    s.Z.setState({
+  } = e, n = i.useRef(null), l = i.useCallback(() => {
+    o.Z.setState({
       shouldRenderTenureLevelUp: false
     })
   }, []);
-  return r.useEffect(() => l, [l]), (0, a.jsx)(i.EqS, {
+  return i.useEffect(() => l, [l]), (0, a.jsx)(r.EqS, {
     containerRef: n,
     children: (0, a.jsxs)("div", {
       className: u.wrapper,
       children: [(0, a.jsx)("div", {
         className: u.closeButton,
-        children: (0, a.jsx)(i.aML, {
+        children: (0, a.jsx)(r.aML, {
           text: d.intl.string(d.t.cpT0Cq),
           children: e => {
             var t, n;
-            return (0, a.jsx)(i.hU, (t = function(e) {
+            return (0, a.jsx)(r.hU, (t = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   a = Object.keys(n);
@@ -59,7 +59,7 @@ function h(e) {
               }
               return e
             }({}, e), n = n = {
-              icon: i.Dio,
+              icon: r.Dio,
               variant: "secondary",
               size: "sm",
               onClick: l,
@@ -76,7 +76,7 @@ function h(e) {
             }), t))
           }
         })
-      }), (0, a.jsx)(r.Suspense, {
+      }), (0, a.jsx)(i.Suspense, {
         fallback: null,
         children: (0, a.jsx)(m, {
           levelUpData: t

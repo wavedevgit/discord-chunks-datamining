@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js");
 var i, Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  l = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk374470 = require("./374470.js"),
   Chunk902704 = require("./902704.js"),
   Chunk846519 = require("./846519.js"),
@@ -27,27 +27,27 @@ let m = {
     x: 0,
     y: 0
   },
-  _ = false;
+  y = false;
 
-function y(e) {
+function O(e) {
   let {
     clientX: t,
     clientY: n
   } = e;
-  _ = true, m.x = t, m.y = n
+  y = true, m.x = t, m.y = n
 }
-let O = new Map;
+let _ = new Map;
 
 function v(e, t) {
-  if (null == t) O.delete(e), 0 === O.size && (window.removeEventListener("mousemove", y), _ = false);
+  if (null == t) _.delete(e), 0 === _.size && (window.removeEventListener("mousemove", O), y = false);
   else {
-    let n = O.get(e);
-    if (null != n && (0, s.Z)(n.zone, t.zone)) return;
-    0 === O.size && window.addEventListener("mousemove", y), O.set(e, t)
+    let n = _.get(e);
+    if (null != n && (0, a.Z)(n.zone, t.zone)) return;
+    0 === _.size && window.addEventListener("mousemove", O), _.set(e, t)
   }
   if (f.isPlatformEmbedded)
     if (u.default.isCurrentPidOutOfProcess()) {
-      let e = Array.from(O.values()).map(e => {
+      let e = Array.from(_.values()).map(e => {
         let {
           zone: t
         } = e;
@@ -66,15 +66,15 @@ function v(e, t) {
       if (null == e) return;
       e.broadcastCommand({
         message: "set_click_zones",
-        zones: Array.from(O.values()).map(e => {
+        zones: Array.from(_.values()).map(e => {
           let {
             zone: t
           } = e;
           return t
         })
       }), n = e, b || (n.setClickZoneCallback((e, t, n) => {
-        let i = O.get(e);
-        null != i && (_ || (m.x = t, m.y = n), i.instance.click())
+        let i = _.get(e);
+        null != i && (y || (m.x = t, m.y = n), i.instance.click())
       }), b = true)
     }
 }
@@ -103,9 +103,9 @@ class E extends(i = Chunk647438.PureComponent) {
     (0, Chunk671999.J)(module, m.x, m.y)
   }
   constructor(...e) {
-    super(...e), g(this, "zone", l().uniqueId("ClickArea")), g(this, "interval", new c.Xp), g(this, "updateZone", () => {
+    super(...e), g(this, "zone", o().uniqueId("ClickArea")), g(this, "interval", new c.Xp), g(this, "updateZone", () => {
       let e = this.props.contentDomRef.current;
-      if ((0, a.kK)(e)) {
+      if ((0, s.kK)(e)) {
         let {
           left: t,
           top: n,

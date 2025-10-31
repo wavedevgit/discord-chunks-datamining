@@ -152,11 +152,11 @@ function M(e) {
   return m.test(e)
 }
 
-function k(e) {
+function j(e) {
   return e.replace(_, (e, t) => H(t, e))
 }
 
-function j(e) {
+function k(e) {
   var t;
   let n = null == (t = S(e)) ? true : t.names[0];
   return null != n ? {
@@ -188,12 +188,12 @@ function Z(e, t) {
       else if (B.test(t)) {
       r += t;
       continue
-    } else i.push(j(r)), r = "";
+    } else i.push(k(r)), r = "";
     else if (t === G) {
       r = t;
       continue
     }
-    let n = j(t);
+    let n = k(t);
     if (i.length > 0) {
       let e = i[i.length - 1];
       if ("text" === n.type && "text" === e.type) {
@@ -203,7 +203,7 @@ function Z(e, t) {
     }
     i.push(n)
   }
-  return null != r && "" !== r && i.push(j(r)), i
+  return null != r && "" !== r && i.push(k(r)), i
 }
 
 function F(e) {
@@ -240,7 +240,7 @@ let K = {
   getByName: D,
   getByCategory: L,
   contentHasUnicodeOrEmoji: M,
-  translateInlineEmojiToSurrogates: k,
+  translateInlineEmojiToSurrogates: j,
   maybeTranslateSurrogatesToInlineEmoji: V,
   findInlineEmojisFromSurrogates: Z,
   translateSurrogatesToInlineEmoji: F,

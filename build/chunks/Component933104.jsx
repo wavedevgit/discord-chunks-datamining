@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 933104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $h: () => A,
@@ -49,10 +49,10 @@ function w(e) {
     asset: (0, r.jsx)(_.g, {
       className: I.image
     }),
-    header: S.intl.formatToPlainString(x.default["Zg/m9K"], {
+    header: S.intl.formatToPlainString(E.default["Zg/m9K"], {
       perkName: n.title
     }),
-    content: S.intl.formatToPlainString(x.default["1EGXSK"], {
+    content: S.intl.formatToPlainString(E.default["1EGXSK"], {
       perkName: n.title
     }),
     buttonCTA: S.intl.string(S.t.RzWDqY),
@@ -72,8 +72,8 @@ function A(e) {
       src: N.Z,
       className: l()(I.image, I.newPerksImage)
     }),
-    header: S.intl.string(x.default.QpQBPQ),
-    content: i ? S.intl.string(x.default["6hn0xF"]) : S.intl.string(x.default.RDuvXp),
+    header: S.intl.string(E.default.QpQBPQ),
+    content: i ? S.intl.string(E.default["6hn0xF"]) : S.intl.string(E.default.RDuvXp),
     buttonCTA: S.intl.string(S.t.RzWDqY),
     onClick: () => i ? (0, b.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERKS) : (0, d.f)({
       guildId: t,
@@ -82,7 +82,7 @@ function A(e) {
       }
     }),
     markAsDismissed: n,
-    caretPosition: i ? f.DF.LEFT_TOP : f.DF.TOP_CENTER
+    caretPosition: i ? h.DF.LEFT_TOP : h.DF.TOP_CENTER
   })
 }
 
@@ -91,20 +91,20 @@ function R(e) {
     guildId: t,
     powerups: n,
     markAsDismissed: i
-  } = e, l = (0, s.e7)([h.Z], () => {
+  } = e, l = (0, s.e7)([f.Z], () => {
     var e;
-    return null == (e = h.Z.getGuild(t)) ? true : e.name
+    return null == (e = f.Z.getGuild(t)) ? true : e.name
   }), {
     onActivate: o
   } = (0, O.ZP)(t, n[0]);
   if (0 === n.length) return;
-  let a = n.length >= 3 ? S.intl.formatToPlainString(x.default["6Sv+3M"], {
+  let a = n.length >= 3 ? S.intl.formatToPlainString(E.default["6Sv+3M"], {
       perk: n[0].title,
       perk2: n[1].title,
       perk3: n[2].title
-    }) : 2 === n.length ? S.intl.formatToPlainString(x.default.wcQOqC, {
+    }) : 2 === n.length ? S.intl.formatToPlainString(E.default.wcQOqC, {
       perks: "".concat(n[0].title, " & ").concat(n[1].title)
-    }) : S.intl.formatToPlainString(x.default.ZF8NT6, {
+    }) : S.intl.formatToPlainString(E.default.ZF8NT6, {
       perk: n[0].title
     }),
     c = 1 === n.length;
@@ -115,11 +115,11 @@ function R(e) {
     }) : (0, r.jsx)(_.g, {
       className: I.image
     }),
-    header: S.intl.formatToPlainString(x.default.LmpChE, {
+    header: S.intl.formatToPlainString(E.default.LmpChE, {
       guildName: l
     }),
     content: a,
-    buttonCTA: c ? S.intl.string(x.default.gSxlHf) : S.intl.string(S.t.RzWDqY),
+    buttonCTA: c ? S.intl.string(E.default.gSxlHf) : S.intl.string(S.t.RzWDqY),
     onClick: e => c ? o(e) : (0, b.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS),
     markAsDismissed: i
   })
@@ -132,8 +132,8 @@ function D(e) {
     markAsDismissed: i
   } = e, l = n.find(e => e.skuId === o.A$);
   if (null != l) return (0, r.jsx)(k, {
-    header: S.intl.string(x.default.Ygpx4Q),
-    content: S.intl.string(x.default.mmNkUA),
+    header: S.intl.string(E.default.Ygpx4Q),
+    content: S.intl.string(E.default.mmNkUA),
     asset: (0, r.jsx)("img", {
       alt: "",
       src: T.Z,
@@ -145,8 +145,8 @@ function D(e) {
   });
   let a = n.find(e => y.NL.has(e.skuId));
   return null != a ? (0, r.jsx)(k, {
-    header: S.intl.string(x.default["kA2c+n"]),
-    content: S.intl.string(x.default.TUilLj),
+    header: S.intl.string(E.default["kA2c+n"]),
+    content: S.intl.string(E.default.TUilLj),
     asset: (0, r.jsx)("img", {
       alt: "",
       src: Z.Z,
@@ -170,8 +170,8 @@ function L(e) {
       src: P.Z,
       className: l()(I.image, I.newPerksImage)
     }),
-    header: S.intl.string(n === g.J.GAME_SERVER_HOSTING_AVAILABLE ? E.default.wXLChx : E.default["8z8RpY"]),
-    content: n === g.J.GAME_SERVER_HOSTING_AVAILABLE ? S.intl.string(E.default.lZ6m7Q) : S.intl.format(E.default["IQ1E+d"], {
+    header: S.intl.string(n === g.J.GAME_SERVER_HOSTING_AVAILABLE ? x.default.wXLChx : x.default["8z8RpY"]),
+    content: n === g.J.GAME_SERVER_HOSTING_AVAILABLE ? S.intl.string(x.default.lZ6m7Q) : S.intl.format(x.default["IQ1E+d"], {
       boostCount: o
     }),
     buttonCTA: S.intl.string(S.t.RzWDqY),
@@ -191,8 +191,8 @@ function M(e) {
       src: P.Z,
       className: l()(I.image, I.newPerksImage)
     }),
-    header: S.intl.string(E.default["eX64+z"]),
-    content: S.intl.string(E.default.NpgfEB),
+    header: S.intl.string(x.default["eX64+z"]),
+    content: S.intl.string(x.default.NpgfEB),
     buttonCTA: S.intl.string(S.t.RzWDqY),
     onClick: () => (0, p.uL)(v.Z5c.CHANNEL(t, j.oC.GAME_SERVERS)),
     markAsDismissed: n
@@ -221,9 +221,9 @@ function k(e) {
     }
     return i
   }(e, ["asset", "header", "content", "caretPosition", "markAsDismissed"]);
-  let d = null != o ? o : f.DF.LEFT_TOP,
-    p = d === f.DF.TOP_CENTER || d === f.DF.LEFT_TOP ? I[d] : "";
-  return (0, r.jsx)(f.ZP, function(e) {
+  let d = null != o ? o : h.DF.LEFT_TOP,
+    p = d === h.DF.TOP_CENTER || d === h.DF.LEFT_TOP ? I[d] : "";
+  return (0, r.jsx)(h.ZP, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

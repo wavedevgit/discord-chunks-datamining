@@ -1,10 +1,10 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 176038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _Y: () => T,
   aB: () => S,
   th: () => E,
-  ub: () => O
+  ub: () => N
 }), require("./388685.js"), require("./457542.js");
 var Chunk647438 = require("./647438.js"),
   Chunk524437 = require("./524437.js"),
@@ -39,7 +39,7 @@ async function S() {
   try {
     if (exports) {
       let t, a = [...module, null],
-        r = C(Chunk647438);
+        i = C(Chunk647438);
       if (null != Chunk524437) {
         var n;
         let e = Chunk469115.qt[Chunk524437];
@@ -65,7 +65,7 @@ async function E() {
     t = (0, Chunk884697.Ad)(module),
     n = (0, Chunk884697.jT)(module),
     a = exports.length > 0,
-    r = require.length > 0;
+    i = require.length > 0;
   if (Chunk647438 || Chunk524437) try {
     if (Chunk647438) {
       let e = C([...exports, null]);
@@ -76,7 +76,7 @@ async function E() {
       (0, Chunk809206.Rx)(module)
     }
     let e = Chunk25990.Z.getAllPending(),
-      i = (0, Chunk164946.ED)(module);
+      r = (0, Chunk164946.ED)(module);
     await (0, Chunk809206.Mn)(Chunk153867).finally(Chunk809206.si)
   } catch (e) {}
 }
@@ -92,9 +92,9 @@ function T() {
   } catch (e) {}
 }
 
-function O() {
+function N() {
   Chunk647438.useEffect(() => {
-    var e, t, n, a, r;
+    var e, t, n, a, i;
     let f = Chunk594174.default.getCurrentUser(),
       b = Chunk695346.L1.getSetting(),
       v = Chunk1870.Z.purchases,
@@ -105,20 +105,20 @@ function O() {
       S = null == Chunk74538 || null == (e = Chunk74538.avatarDecoration) ? true : module.skuId,
       E = null == Chunk74538 || null == (n = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
       T = null != S && null != (a = Chunk959517.find(e => e.skuId === S)) ? Chunk647438 : null,
-      O = null != E && null != (r = _.find(e => e.skuId === E)) ? Chunk524437 : null,
-      N = Chunk607070.Z.fontSize,
+      N = null != E && null != (i = _.find(e => e.skuId === E)) ? Chunk524437 : null,
+      O = Chunk607070.Z.fontSize,
       P = Chunk607070.Z.messageGroupSpacing,
-      I = Chunk695346.YC.getSetting();
+      w = Chunk695346.YC.getSetting();
     return () => {
       try {
         Chunk153867.ZI({
           theme: y,
           backgroundGradientPresetId: null != C ? C : true,
           customUserThemeSettings: true
-        }, Chunk675478.fy.INFREQUENT_USER_ACTION), (0, Chunk809206.cV)(T), (0, Chunk809206.Rx)(O);
+        }, Chunk675478.fy.INFREQUENT_USER_ACTION), (0, Chunk809206.cV)(T), (0, Chunk809206.Rx)(N);
         let e = Chunk25990.Z.getAllPending(),
           t = (0, Chunk164946.ED)(module);
-        (0, Chunk809206.Mn)(exports).finally(Chunk809206.si), (0, Chunk857595.oL)(N), (0, Chunk857595.ZZ)(P), Chunk695346.YC.updateSetting(I)
+        (0, Chunk809206.Mn)(exports).finally(Chunk809206.si), (0, Chunk857595.oL)(O), (0, Chunk857595.ZZ)(P), Chunk695346.YC.updateSetting(w)
       } catch (e) {}
     }
   }, [])

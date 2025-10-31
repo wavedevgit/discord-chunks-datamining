@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 762756, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -6,7 +6,7 @@ require.d(exports, {
 var a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk481060 = require("./481060.js"),
   Chunk599857 = require("./599857.jsx"),
@@ -34,10 +34,10 @@ class b extends(a = Chunk647438.PureComponent) {
       onCaptchaVerify: a
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk951288.Fragment, {
-      children: module.map(e => e === p.PUi.CAPTCHA ? (0, r.jsx)(d.Z, {
+      children: module.map(e => e === p.PUi.CAPTCHA ? (0, i.jsx)(d.Z, {
         onVerify: a,
         theme: n
-      }, t) : (0, r.jsx)(c.Button, {
+      }, t) : (0, i.jsx)(c.Button, {
         onClick: () => this.handleClick(e),
         text: m.Z.getButtonTitle(e)
       }, e))
@@ -53,7 +53,7 @@ class b extends(a = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
         fullWidth: false,
-        className: o()(Chunk222198.container, {
+        className: s()(Chunk222198.container, {
           [Chunk222198.isMobile]: Chunk873546.tq
         }),
         align: "center",
@@ -110,7 +110,7 @@ class b extends(a = Chunk647438.PureComponent) {
               supportURL: Chunk63063.Z.getSubmitRequestURL()
             })
           }), (0, Chunk951288.jsx)("div", {
-            className: o()(Chunk222198.footer, Chunk222198.footerBullet),
+            className: s()(Chunk222198.footer, Chunk222198.footerBullet),
             children: "•"
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/semibold",

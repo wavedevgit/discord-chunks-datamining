@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 996746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -14,8 +14,8 @@ function c(e) {
   var t;
   let {
     nameplate: n
-  } = e, c = (0, r.e7)([o.default], () => o.default.getCurrentUser()), d = null != (t = s.ZP.useName(c)) ? t : "";
-  return (0, a.jsx)(i.m, {
+  } = e, c = (0, i.e7)([s.default], () => s.default.getCurrentUser()), d = null != (t = o.ZP.useName(c)) ? t : "";
+  return (0, a.jsx)(r.m, {
     username: d,
     selfMute: false,
     selfDeaf: false,

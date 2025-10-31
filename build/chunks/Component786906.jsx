@@ -1,12 +1,12 @@
 /** Chunk was on 63141 **/
 /** chunk id: 786906, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk13245 = require("./13245.js"),
@@ -43,13 +43,13 @@ class Z extends Chunk647438.Component {
     let e, t, {
       channel: n,
       channelHasActiveCall: r,
-      userIsInChannelCall: o,
-      isBlocked: l
+      userIsInChannelCall: l,
+      isBlocked: o
     } = this.props;
     if (!(0, Chunk131704.hv)(require.type)) return null;
-    let a = Chunk481060.Csw,
+    let s = Chunk481060.Csw,
       c = false;
-    return Chunk647438 ? Chunk120356 ? (e = Chunk388032.intl.string(Chunk388032.t["4ry6yi"]), a = Chunk481060.gkL) : e = Chunk388032.intl.string(Chunk388032.t["0D/6Rz"]) : l ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvX), t = Chunk481060.aML.Colors.RED, c = true) : e = Chunk388032.intl.string(Chunk388032.t.focH1t), (0, Chunk951288.jsx)(Chunk984370.Z.Icon, {
+    return Chunk647438 ? Chunk120356 ? (e = Chunk388032.intl.string(Chunk388032.t["4ry6yi"]), s = Chunk481060.gkL) : e = Chunk388032.intl.string(Chunk388032.t["0D/6Rz"]) : o ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvX), t = Chunk481060.aML.Colors.RED, c = true) : e = Chunk388032.intl.string(Chunk388032.t.focH1t), (0, Chunk951288.jsx)(Chunk984370.Z.Icon, {
       icon: Chunk442837,
       tooltip: module,
       onClick: this.handleClickCall,
@@ -63,8 +63,8 @@ class Z extends Chunk647438.Component {
       draggableClassName: t,
       locked: n,
       channel: r,
-      channelName: o,
-      guild: a,
+      channelName: l,
+      guild: s,
       onMouseDown: c,
       onContextMenu: d,
       isPreviewingInGame: u,
@@ -82,7 +82,7 @@ class Z extends Chunk647438.Component {
     }) : (0, Chunk951288.jsx)(Chunk518084.ZP.Background, {
       opacityOverride: require || Chunk933557 ? null : 1,
       children: (0, Chunk951288.jsx)("div", {
-        className: l()(module, exports, Chunk846602.headerContainer),
+        className: o()(module, exports, Chunk846602.headerContainer),
         onMouseDown: Chunk13245,
         onContextMenu: Chunk287734,
         children: (0, Chunk951288.jsxs)(Chunk984370.Z, {
@@ -93,7 +93,7 @@ class Z extends Chunk647438.Component {
           children: [Chunk933557 || require || Chunk131704 ? null : (0, Chunk951288.jsx)(Chunk481060.Vni, {
             size: "custom",
             color: "currentColor",
-            className: l()(Chunk846602.dragIcon, exports),
+            className: o()(Chunk846602.dragIcon, exports),
             width: 20,
             height: 20
           }), (0, Chunk910611.ud)({
@@ -142,15 +142,15 @@ class Z extends Chunk647438.Component {
         locked: e,
         handlePin: t,
         pinned: n
-      } = this.props, o = n ? E.intl.string(E.t.cSu80j) : E.intl.string(E.t.cM8Vnm);
+      } = this.props, l = n ? E.intl.string(E.t.cSu80j) : E.intl.string(E.t.cM8Vnm);
       return e ? null : (0, i.jsxs)(r.Fragment, {
         children: [this.renderCallButton(), n ? (0, i.jsx)(h.Z.Icon, {
-          icon: s._S3,
+          icon: a._S3,
           tooltip: E.intl.string(E.t.OVovCb),
           onClick: this.handleOpenOpacitySettings
         }) : null, (0, i.jsx)(h.Z.Icon, {
-          icon: n ? s.QVc : s.k5M,
-          tooltip: o,
+          icon: n ? a.QVc : a.k5M,
+          tooltip: l,
           selected: n,
           onClick: t
         })]
@@ -159,7 +159,7 @@ class Z extends Chunk647438.Component {
   }
 }
 
-function C(e) {
+function j(e) {
   var {
     channel: t
   } = e, n = function(e, t) {
@@ -167,24 +167,24 @@ function C(e) {
     var n, i, r = function(e, t) {
       if (null == e) return {};
       var n, i, r = {},
-        o = Object.keys(e);
-      for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        l = Object.keys(e);
+      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
       return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
   }(e, ["channel"]);
-  let r = (0, a.e7)([O.Z, m.Z], () => {
-      let e = O.Z.getVoiceChannelId();
+  let r = (0, s.e7)([_.Z, m.Z], () => {
+      let e = _.Z.getVoiceChannelId();
       return m.Z.getChannel(e)
     }),
-    o = (0, a.e7)([_.Z], () => _.Z.getGuild(t.guild_id)),
-    l = (0, a.e7)([g.Z], () => g.Z.isCallActive(t.id)),
-    s = (0, u.ZP)(t),
-    c = (0, a.e7)([y.Z], () => !!t.isDM() && null != t.getRecipientId() && y.Z.isBlocked(t.getRecipientId()));
+    l = (0, s.e7)([y.Z], () => y.Z.getGuild(t.guild_id)),
+    o = (0, s.e7)([g.Z], () => g.Z.isCallActive(t.id)),
+    a = (0, u.ZP)(t),
+    c = (0, s.e7)([O.Z], () => !!t.isDM() && null != t.getRecipientId() && O.Z.isBlocked(t.getRecipientId()));
   return (0, i.jsx)(Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -198,9 +198,9 @@ function C(e) {
     return e
   }({
     channel: t,
-    channelName: s,
-    guild: o,
-    channelHasActiveCall: l,
+    channelName: a,
+    guild: l,
+    channelHasActiveCall: o,
     userIsInChannelCall: null != r && r.id === t.id,
     isBlocked: c
   }, n))

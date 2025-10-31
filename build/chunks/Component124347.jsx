@@ -334,11 +334,11 @@ class w extends(r = Chunk647438.Component) {
       readyState: x,
       hasMouseOver: L,
       hasFocus: M
-    } = this.state, k = null != require, j = this.getRatio(), U = (0, Chunk392711.clamp)(Math.round(Chunk866960 * j), null != Chunk768581 ? Chunk768581 : 0, null != Chunk217702 ? Chunk217702 : 1 / 0), G = (0, Chunk392711.clamp)(Math.round(Chunk626135 * j), null != Chunk956664 ? Chunk956664 : 0, null != O ? O : 1 / 0), B = {
+    } = this.state, j = null != require, k = this.getRatio(), U = (0, Chunk392711.clamp)(Math.round(Chunk866960 * k), null != Chunk768581 ? Chunk768581 : 0, null != Chunk217702 ? Chunk217702 : 1 / 0), G = (0, Chunk392711.clamp)(Math.round(Chunk626135 * k), null != Chunk956664 ? Chunk956664 : 0, null != O ? O : 1 / 0), B = {
       alt: module,
       readyState: x,
       onContextMenu: null != Chunk647438 ? Chunk647438 : true,
-      zoomable: k,
+      zoomable: j,
       className: Chunk818083,
       imageClassName: Chunk279745,
       minWidth: Chunk768581,
@@ -374,7 +374,7 @@ class w extends(r = Chunk647438.Component) {
       onBlur: this.onBlur
     };
     if (1 === B.width && 1 === B.height) return null;
-    switch ((k || null != I) && (B.onClick = this.onClick), r && (B.original = null != Chunk622535 && "" !== Chunk622535 ? Chunk622535 : B.src), x) {
+    switch ((j || null != I) && (B.onClick = this.onClick), r && (B.original = null != Chunk622535 && "" !== Chunk622535 ? Chunk622535 : B.src), x) {
       case Chunk981631.zo9.LOADING:
         null != exports && (B.src = exports);
         break;
@@ -382,7 +382,7 @@ class w extends(r = Chunk647438.Component) {
         if (w.isAnimated(this.props)) {
           B.onMouseLeave = this.onMouseLeave;
           let e = (Chunk286379 || L || M) && (null == Chunk740492 || Chunk740492) && w.visibilityObserver.isVisible(this);
-          module ? (B.src = this.getSrc(j), B.renderAccessory = T) : (B.src = this.getSrc(j, !Chunk797614 || !Chunk286379), B.renderAccessory = this.renderAccessory), null != Chunk134432 && (B.children = t => {
+          module ? (B.src = this.getSrc(k), B.renderAccessory = T) : (B.src = this.getSrc(k, !Chunk797614 || !Chunk286379), B.renderAccessory = this.renderAccessory), null != Chunk134432 && (B.children = t => {
             let {
               src: n,
               size: r,
@@ -397,7 +397,7 @@ class w extends(r = Chunk647438.Component) {
               mediaLayoutType: a
             })
           })
-        } else B.src = this.getSrc(j)
+        } else B.src = this.getSrc(k)
     }
     return (0, Chunk951288.jsx)(Chunk916616.E, v({
       ref: this._imageRef

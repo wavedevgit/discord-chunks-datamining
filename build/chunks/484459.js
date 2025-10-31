@@ -41,10 +41,10 @@ function h(e, t) {
     x = f.Z.getMutualFriendsCount(e),
     L = null == D && O,
     M = null == x && y,
-    k = null == w && b || L || M,
-    j = null == T ? null == N : null == P,
-    U = !j && (R || k);
-  if (!j && !U) return Promise.resolve();
+    j = null == w && b || L || M,
+    k = null == T ? null == N : null == P,
+    U = !k && (R || j);
+  if (!k && !U) return Promise.resolve();
   let G = null != T ? null == P ? true : P.profileEffect : null == N ? true : N.profileEffect;
   null != G && ((0, s.c)("maybeFetchUserProfile") ? (0, o.lW)(G.skuId) : (0, c.t)()), null != t && (0, a.vM)(t);
   let B = {

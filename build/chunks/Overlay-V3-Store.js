@@ -71,8 +71,8 @@ let N = new Chunk710845.Z("OverlayV3Store"),
   x = null,
   L = null,
   M = null,
-  k = null,
   j = null,
+  k = null,
   U = {},
   G = {},
   B = false,
@@ -106,7 +106,7 @@ function H(e) {
     if (null == w) return;
     w.untrackGame(e), N.verbose("Removing tracked game ".concat(e));
     let t = R.values().next().value;
-    k === e && (k = null != t ? t : null)
+    j === e && (j = null != t ? t : null)
   } catch (t) {
     N.error("Error removing tracked game:", t), (0, _.PV)(e, t, {
       crashType: "native"
@@ -135,7 +135,7 @@ function W() {
 
 function K(e) {
   let t = l.ZP.getGameOrTransformedSubgameForPID(e);
-  o.Z.setAssociatedGame(null != k ? k : d.UNSET_PID, e, t)
+  o.Z.setAssociatedGame(null != j ? j : d.UNSET_PID, e, t)
 }
 
 function z() {
@@ -147,8 +147,8 @@ function q(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (null != e) {
     let t = G[e] === f.gl.OutOfProcessLimitedInteraction;
-    if (t !== j) {
-      j = t;
+    if (t !== k) {
+      k = t;
       try {
         "function" == typeof(null == w ? true : w.setLimitedInteraction) ? (N.info("Setting limited interaction", t), (0, _.bs)(e, "focus_and_interaction_set", {
           isLimitedInteraction: t,
@@ -193,7 +193,7 @@ async function en(e) {
 }
 
 function er() {
-  F(), j = null
+  F(), k = null
 }
 
 function ei(e) {
@@ -202,7 +202,7 @@ function ei(e) {
   } = e;
   Z = C(S({}, Z), {
     popoutOpened: true
-  }), K(t), k = t, (0, d.setPID)(t)
+  }), K(t), j = t, (0, d.setPID)(t)
 }
 
 function ea(e) {
@@ -228,14 +228,14 @@ function eo(e) {
 }
 
 function es() {
-  X(), k = null, (0, Chunk145597.setPID)(null != k ? k : Chunk145597.UNSET_PID), F()
+  X(), j = null, (0, Chunk145597.setPID)(null != j ? j : Chunk145597.UNSET_PID), F()
 }
 
 function el(e) {
   let {
     refreshingPID: t
   } = e;
-  return N.verbose("Refreshing OOP host window for pid ".concat(t)), M = t, k = t, (0, d.setPID)(null != k ? k : d.UNSET_PID), K(t), z(), true
+  return N.verbose("Refreshing OOP host window for pid ".concat(t)), M = t, j = t, (0, d.setPID)(null != j ? j : d.UNSET_PID), K(t), z(), true
 }
 
 function ec(e, t) {

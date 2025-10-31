@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 611565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -22,7 +22,7 @@ let x = [{
       let {
         channelName: t
       } = e;
-      return (0, a.jsx)(o.Text, {
+      return (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -34,7 +34,7 @@ let x = [{
       let {
         channelId: t
       } = e;
-      return (0, a.jsx)(o.Text, {
+      return (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -47,7 +47,7 @@ let x = [{
       let {
         channelName: t
       } = e;
-      return (0, a.jsx)(o.Text, {
+      return (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -59,7 +59,7 @@ let x = [{
       let {
         loadState: t
       } = e;
-      return (0, a.jsx)(o.Text, {
+      return (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -71,7 +71,7 @@ let x = [{
       let {
         channelId: t
       } = e;
-      return (0, a.jsx)(o.Text, {
+      return (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t
       })
@@ -84,7 +84,7 @@ function f() {
     unreadChannelIds: t
   } = (0, Chunk370774.O4)(), {
     isLoading: n,
-    hasLoadedEver: r,
+    hasLoadedEver: i,
     hasPreloaded: l,
     hasMoreToLoad: f,
     isLoadingComplete: b
@@ -129,7 +129,7 @@ function f() {
             label: "Nav On Click",
             checked: !!S,
             onChange: e => {
-              s.Z.dispatch({
+              o.Z.dispatch({
                 type: "NOTIFICATIONS_INBOX_SET_DEV_OVERRIDES",
                 navOnClick: e
               })
@@ -185,12 +185,12 @@ function f() {
           columns: g,
           data: Object.entries(j).map(e => {
             var t, n;
-            let [a, r] = e;
+            let [a, i] = e;
             return {
               key: a,
               channelId: a,
               channelName: null != (n = null == (t = _[a]) ? true : t.name) ? n : "",
-              loadState: r.loadState
+              loadState: i.loadState
             }
           })
         })]

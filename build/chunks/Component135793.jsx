@@ -69,12 +69,12 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = 190,
+let k = 190,
   U = 178,
   G = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
   B = e => {
@@ -92,7 +92,7 @@ let j = 190,
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 135793));
-      return t => (0, r.jsx)(e, k(L({}, t), {
+      return t => (0, r.jsx)(e, j(L({}, t), {
         channel: d,
         message: i,
         onRedeem: a,
@@ -436,7 +436,7 @@ let V = e => {
       children: [(0, Chunk951288.jsx)(Chunk481060.Eep, {
         src: Chunk99713,
         width: U,
-        height: j
+        height: k
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.oKJdSs)

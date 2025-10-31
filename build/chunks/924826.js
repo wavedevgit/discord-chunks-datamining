@@ -121,12 +121,12 @@ function u(e) {
         return
       }
     }), [E, b]),
-    k = r.useCallback(async () => {
+    j = r.useCallback(async () => {
       let e = await w.getNextFocusableElement(M),
         t = null == e ? true : e.getAttribute(l.ie);
       null != t ? P(t) : null == e && null != p && p()
     }, [w, M, p, P]),
-    j = r.useCallback(async () => {
+    k = r.useCallback(async () => {
       let e = await w.getPreviousFocusableElement(M),
         t = null == e ? true : e.getAttribute(l.ie);
       null != t ? P(t) : null == e && null != _ && _()
@@ -137,10 +137,10 @@ function u(e) {
         r = y === s.hy.HORIZONTAL ? s.R8.LEFT : s.R8.UP;
       switch (e.key) {
         case n:
-          e.stopPropagation(), e.preventDefault(), k();
+          e.stopPropagation(), e.preventDefault(), j();
           return;
         case r:
-          e.stopPropagation(), e.preventDefault(), j();
+          e.stopPropagation(), e.preventDefault(), k();
           return;
         case s.R8.HOME:
           e.stopPropagation(), e.preventDefault(), d().then(() => {
@@ -170,7 +170,7 @@ function u(e) {
           }
         }
       }
-    }, [k, j, t, y, f, d, P, E]),
+    }, [j, k, t, y, f, d, P, E]),
     G = r.useCallback(e => {
       v.current = null != e ? (0, l.jb)(t, e) : null, (0, a.h)(t, e, g)
     }, [t, g]);
@@ -193,11 +193,11 @@ function u(e) {
       let n = await (0, o.KG)(null != (e = T.current) ? e : document.body, c(t, T));
       null !== n && P(n)
     },
-    focusPreviousItem: j,
-    focusNextItem: k,
+    focusPreviousItem: k,
+    focusNextItem: j,
     focusedItemId() {
       let e = v.current;
       return e ? (0, l.x3)(e) : null
     }
-  }), [t, U, y, D, g, G, j, k, P])
+  }), [t, U, y, D, g, G, k, j, P])
 }

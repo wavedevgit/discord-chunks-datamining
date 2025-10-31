@@ -252,7 +252,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     size: t,
     user: n,
@@ -266,7 +266,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     user: t
   } = e, {
@@ -349,7 +349,7 @@ function B(e) {
     className: I.answerPill
   }) : (0, r.jsxs)("div", {
     className: I.answerPill,
-    children: [(0, r.jsx)(k, {
+    children: [(0, r.jsx)(j, {
       size: l.EFr.SIZE_16,
       user: a
     }), (0, r.jsx)(l.Text, {
@@ -435,10 +435,10 @@ function V(e) {
   return null != n ? {
     label: (0, r.jsxs)("div", {
       className: I.labelWithElements,
-      children: [(0, r.jsx)(k, {
+      children: [(0, r.jsx)(j, {
         size: l.EFr.SIZE_16,
         user: n
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(k, {
         user: n
       })]
     }),
@@ -459,7 +459,7 @@ function H(e) {
   return null != t ? (0, r.jsx)(E.MC, {
     channel: t,
     className: I.itemIcon
-  }) : null != n ? (0, r.jsx)(k, {
+  }) : null != n ? (0, r.jsx)(j, {
     size: l.EFr.SIZE_20,
     user: n,
     className: I.itemIcon
@@ -486,7 +486,7 @@ function Y(e) {
   return null != n ? {
     label: (0, r.jsxs)("div", {
       className: I.labelWithElements,
-      children: [(0, r.jsx)(j, {
+      children: [(0, r.jsx)(k, {
         user: n
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",

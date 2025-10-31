@@ -1,34 +1,28 @@
-/** Chunk was on web.js **/
-/** chunk id: 447988, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 1272 **/
+/** chunk id: 447988, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => o
+  J: () => l
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk685816 = require("./685816.js");
-let a = 0x7fffffff,
-  o = (e, t, n) => {
-    let [i, o] = (0, r.useState)(false);
+let l = (e, t, n) => {
+    let [i, l] = (0, r.useState)(false);
     return (0, r.useEffect)(() => {
-      let r = s(e);
-      if (t || n || null == r) return void o(false);
+      let r = a(e);
+      if (t || n || null == r) return void l(false);
       let i = r - Date.now();
-      if (i <= 0) return void o(true);
-      o(false);
-      let l = setTimeout(() => {
-        o(true)
-      }, Math.min(a, i));
-      return () => clearTimeout(l)
+      if (i <= 0) return void l(true);
+      l(false);
+      let s = setTimeout(() => {
+        l(true)
+      }, Math.min(0x7fffffff, i));
+      return () => clearTimeout(s)
     }, [t, n, e]), i
   },
-  s = e => {
+  a = e => {
     let t = null;
     return e.forEach(e => {
       let n = null;
-      if (e.type === i.z.IMMERSIVE_BANNER) {
-        let t = e;
-        n = null != t.endTime ? t.endTime.getTime() : null
-      } else e.type === i.z.COUNTDOWN_TIMER && (n = e.endTime.getTime());
-      (null == t || null != n && n < t) && (t = n)
+      e.type === i.z.IMMERSIVE_BANNER ? n = null != e.endTime ? e.endTime.getTime() : null : e.type === i.z.COUNTDOWN_TIMER && (n = e.endTime.getTime()), (null == t || null != n && n < t) && (t = n)
     }), t
   }

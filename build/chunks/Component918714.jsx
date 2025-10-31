@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 918714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -27,14 +27,14 @@ function _(e) {
     task: t,
     handleSubmit: n,
     disabled: l
-  } = e, [i, o] = r.useState(t), s = r.useMemo(() => ({
-    task: i,
-    setTask: o
-  }), [i, o]);
-  return r.useEffect(() => {
-    o(t)
+  } = e, [r, s] = i.useState(t), o = i.useMemo(() => ({
+    task: r,
+    setTask: s
+  }), [r, s]);
+  return i.useEffect(() => {
+    s(t)
   }, [t]), (0, a.jsxs)(u.y.Provider, {
-    value: s,
+    value: o,
     children: [(0, a.jsx)(x.Z, {}), (0, a.jsx)(h.Z, {
       onSubmit: n,
       disabled: l
@@ -44,7 +44,7 @@ function _(e) {
 let y = function(e) {
   let {
     onClose: t
-  } = e, [n, u] = r.useState(null), [h, x] = r.useState(true), [y, C] = r.useState(null), [S, E] = r.useState(false), T = r.useCallback(async () => {
+  } = e, [n, u] = i.useState(null), [h, x] = i.useState(true), [y, C] = i.useState(null), [S, E] = i.useState(false), T = i.useCallback(async () => {
     x(true), C(null);
     try {
       var e;
@@ -70,7 +70,7 @@ let y = function(e) {
     } finally {
       x(false)
     }
-  }, [t]), O = r.useCallback(async e => {
+  }, [t]), N = i.useCallback(async e => {
     if (null !== n) {
       E(true);
       try {
@@ -87,22 +87,22 @@ let y = function(e) {
       }
     }
   }, [n, T]);
-  (0, i.ZP)(() => {
+  (0, r.ZP)(() => {
     T()
   });
-  let N = r.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
+  let O = i.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
   return (0, a.jsxs)("div", {
     className: v.background,
     children: [(0, a.jsx)("img", {
       className: v.artwork,
       src: j,
       alt: ""
-    }), N ? (0, a.jsx)(s.default, {
+    }), O ? (0, a.jsx)(o.default, {
       transitionState: l.Dvm.ENTERED,
-      entryPoint: o.cU.SAFETY_FLOWS,
+      entryPoint: s.cU.SAFETY_FLOWS,
       onClose: g.dG,
       onComplete: async () => {
-        await O({
+        await N({
           type: m.rY.Empty
         })
       },
@@ -155,7 +155,7 @@ let y = function(e) {
             })]
           }), null === y && null != n && (0, a.jsx)(_, {
             task: n,
-            handleSubmit: O,
+            handleSubmit: N,
             disabled: S
           })]
         })

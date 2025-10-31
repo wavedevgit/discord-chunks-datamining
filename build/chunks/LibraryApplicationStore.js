@@ -129,7 +129,7 @@ function M(e) {
   S[(0, d.Tu)(t, n)] = r, C()
 }
 
-function k(e) {
+function j(e) {
   let {
     applicationId: t,
     branchId: n
@@ -138,7 +138,7 @@ function k(e) {
   T[t] = n, N()
 }
 
-function j(e) {
+function k(e) {
   let {
     libraryApplications: t
   } = e;
@@ -236,7 +236,7 @@ let V = new F(Chunk570140.Z, {
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: L,
   LIBRARY_APPLICATION_UPDATE: L,
   LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE: M,
-  LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: k,
-  LIBRARY_APPLICATIONS_TEST_MODE_ENABLED: j,
+  LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: j,
+  LIBRARY_APPLICATIONS_TEST_MODE_ENABLED: k,
   DEVELOPER_TEST_MODE_RESET: U
 })

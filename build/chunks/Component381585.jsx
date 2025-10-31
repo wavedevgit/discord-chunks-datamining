@@ -1,5 +1,5 @@
-/** Chunk was on 63709 **/
-/** chunk id: 381585, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 78825 **/
+/** chunk id: 381585, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   k0: () => o,
   sp: () => a
@@ -14,28 +14,28 @@ function a() {
 
 function o(e) {
   let {
-    newValue: t,
-    children: n
+    newValue: n,
+    children: t
   } = e, o = a(), s = l.useMemo(() => (function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
+    for (var n = 1; n < arguments.length; n++) {
+      var t = null != arguments[n] ? arguments[n] : {},
+        r = Object.keys(t);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(t, e).enumerable
+      }))), r.forEach(function(n) {
         var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
+        r = t[n], n in e ? Object.defineProperty(e, n, {
           value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[n] = r
       })
     }
     return e
-  })({}, o, t), [o, t]);
+  })({}, o, n), [o, n]);
   return (0, r.jsx)(i.Provider, {
     value: s,
-    children: n
+    children: t
   })
 }

@@ -41,8 +41,8 @@ function k(e) {
   } = (0, O.Z)(), P = (0, a.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: A,
     currentPage: N,
-    totalCount: Z,
-    isFetchingResults: R
+    totalCount: R,
+    isFetchingResults: Z
   } = (0, C.a)(), w = (0, a.Wu)([p.Z], () => p.Z.getProductsBySkus(A)), H = l.useCallback(() => {
     var e;
     null == i || null == (e = i.current) || e.scrollToTop({
@@ -70,7 +70,7 @@ function k(e) {
       queryPageSize: z
     } = (0, h.S)(),
     [G, K] = l.useState(false),
-    Y = n || R || null == P;
+    Y = n || Z || null == P;
   l.useEffect(() => {
     if (Y) return void K(false);
     F.length > 0 && K(true)
@@ -124,12 +124,12 @@ function k(e) {
           }, e.skuId)
         })]
       })]
-    }), Z > z && (0, r.jsx)("div", {
+    }), R > z && (0, r.jsx)("div", {
       className: j.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(o.DsT, {
           currentPage: N,
-          totalCount: Z,
+          totalCount: R,
           pageSize: z,
           onPageChange: J,
           disablePaginationGap: true

@@ -450,7 +450,7 @@ function eD(e) {
   if (!e.optimistic) returnfalse;
   let t = null != e.emoji.id && "0" !== e.emoji.id ? e.emoji : G.ZP.getByName(G.ZP.convertSurrogateToName(e.emoji.name, false));
   if (null == t) returnfalse;
-  eU([t]), ej([t])
+  eU([t]), ek([t])
 }
 
 function ex(e, t) {
@@ -485,14 +485,14 @@ function eM(e) {
   Q.pendingUsages = [], Q.emojiReactionPendingUsages = []
 }
 
-function ek(e) {
+function ej(e) {
   let {
     emojiUsed: t
   } = e;
-  ej(t)
+  ek(t)
 }
 
-function ej(e) {
+function ek(e) {
   if (null == e) returnfalse;
   for (let r of e) {
     var t, n;
@@ -608,7 +608,7 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
         boostCapitalizedWords: n,
         boostAtEnd: l,
         boostsIgnoreDisambiguators: u
-      } = k.Z.getConfig({
+      } = j.Z.getConfig({
         location: "getSearchResultsOrder"
       }), d = RegExp("^".concat(o), "i"), f = RegExp("".concat(o, "$"), "i"), _ = new RegExp("(^|_|[A-Z])".concat(o, "s?([A-Z]|_|$)")), p = new RegExp("(^|_|[A-Z])".concat(o, "s?([A-Z]|_|$)|(^|_|[a-z])").concat(c, "s?([A-Z]|_|$)")), h = n ? p : _, m = h.test.bind(h), g = d.test.bind(d), E = f.test.bind(f), b = e => {
         let n = null != e.uniqueName,
@@ -650,7 +650,7 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
           intention: a,
           forceIncludeExternalGuilds: o
         });
-        return r !== F.Z5.PREMIUM_LOCKED || l ? null != r || l && t.type !== j.B.UNICODE || e.unlocked.push(t) : e.locked.push(t), e
+        return r !== F.Z5.PREMIUM_LOCKED || l ? null != r || l && t.type !== k.B.UNICODE || e.unlocked.push(t) : e.locked.push(t), e
       }, {
         unlocked: [],
         locked: []
@@ -696,7 +696,7 @@ let eV = new eF(Chunk570140.Z, {
   GUILD_EMOJIS_UPDATE: eR,
   GUILD_DELETE: eP,
   MESSAGE_REACTION_ADD: eD,
-  EMOJI_TRACK_USAGE: ek,
+  EMOJI_TRACK_USAGE: ej,
   USER_SETTINGS_PROTO_UPDATE: eM,
   GUILD_ROLE_CREATE: eG,
   GUILD_ROLE_UPDATE: eG,

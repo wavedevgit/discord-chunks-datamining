@@ -105,7 +105,7 @@ let N = Chunk647438.memo(function(e) {
     containerRef: D,
     className: x,
     wrapperClassName: L
-  } = e, [M, k] = i.useState(false), j = n || M || w === E._1z.FOCUSED, U = (0, l.e7)([m.Z, h.Z], () => {
+  } = e, [M, j] = i.useState(false), k = n || M || w === E._1z.FOCUSED, U = (0, l.e7)([m.Z, h.Z], () => {
     var e;
     return m.Z.isInputLocked(null != (e = h.Z.getFocusedPID()) ? e : (0, f.getPID)())
   });
@@ -122,10 +122,10 @@ let N = Chunk647438.memo(function(e) {
       e.stopPropagation(), null == g || g(e)
     }, [g]),
     F = i.useCallback(() => {
-      k(true)
+      j(true)
     }, []),
     V = i.useCallback(() => {
-      k(false)
+      j(false)
     }, []);
 
   function H() {
@@ -137,7 +137,7 @@ let N = Chunk647438.memo(function(e) {
   }
 
   function Y() {
-    let e = "function" == typeof v ? v(j, U) : v;
+    let e = "function" == typeof v ? v(k, U) : v;
     return null != v ? (0, r.jsx)(u.Text, {
       className: y.hint,
       color: "text-muted",
@@ -179,7 +179,7 @@ let N = Chunk647438.memo(function(e) {
   }
 
   function z() {
-    let e = null == R ? true : R(j, U);
+    let e = null == R ? true : R(k, U);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(s.animated.div, {
         className: y.iconAndDetails,
@@ -196,7 +196,7 @@ let N = Chunk647438.memo(function(e) {
           }), null != A ? (0, r.jsx)(u.Text, {
             color: "interactive-normal",
             variant: "text-sm/normal",
-            lineClamp: null != t ? t * (j ? 2 : 1) : true,
+            lineClamp: null != t ? t * (k ? 2 : 1) : true,
             children: A
           }) : null, Y(), W()]
         })]
@@ -326,8 +326,8 @@ function x(e) {
     props: {
       onNotificationShow: L,
       onDismissClick: M,
-      renderFooter: k,
-      onNotificationClick: j,
+      renderFooter: j,
+      onNotificationClick: k,
       onConfirmClick: U,
       onCancelClick: G,
       disableClickableRegions: B = false

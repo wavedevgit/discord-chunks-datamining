@@ -64,7 +64,7 @@ let y = (0, Chunk191336.U)(e => ({
     }, {
       disableTrack: !L
     }, [L]);
-    let k = () => {
+    let j = () => {
       w(g.L.USER_DISMISS), C(null)
     };
     return (0, r.jsx)(l.J2, {
@@ -86,7 +86,7 @@ let y = (0, Chunk191336.U)(e => ({
         text: E.intl.string(E.t["jaYS/h"]),
         onClick: x
       }],
-      onRequestClose: k
+      onRequestClose: j
     })
   },
   v = e => {

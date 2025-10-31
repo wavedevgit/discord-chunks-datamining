@@ -2,7 +2,7 @@
 /** chunk id: 594496, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -39,10 +39,10 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk737788 = require("./737788.js");
 
-function k(e) {
-  var t, n, i, k;
+function j(e) {
+  var t, n, i, j;
   let {
-    guild: j,
+    guild: k,
     nameplateEnabled: U
   } = e, G = (0, o.e7)([S.default], () => {
     let e = S.default.getCurrentUser();
@@ -78,7 +78,7 @@ function k(e) {
   }), q = (0, v.SD)({
     userId: G.id,
     image: Z
-  }), X = null != j ? j : z;
+  }), X = null != k ? k : z;
   a()(null != X, "guild should not be null");
   let Q = (0, u.gS)(X.id),
     J = (0, o.e7)([T.ZP], () => null == X.id ? null : T.ZP.getMember(X.id, G.id)),
@@ -202,7 +202,7 @@ function k(e) {
           })]
         }),
         onBioChange: e => (0, P.qN)(e, ea),
-        errors: null != (k = null == K ? true : K.bio) ? k : null == Q ? true : Q.bio,
+        errors: null != (j = null == K ? true : K.bio) ? j : null == Q ? true : Q.bio,
         pendingBio: H,
         currentBio: ea,
         disabled: !et

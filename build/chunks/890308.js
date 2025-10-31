@@ -102,7 +102,7 @@ e = require.nmd(module),
       })
     }
 
-    function k(e) {
+    function j(e) {
       return C(e, function(e) {
         return b.test(e) ? "xn--" + L(e) : e
       })
@@ -115,7 +115,7 @@ e = require.nmd(module),
         },
         decode: x,
         encode: L,
-        toASCII: k,
+        toASCII: j,
         toUnicode: M
       }, "function" == typeof define && "object" == typeof define.amd && define.amd) define("punycode", function() {
       return s

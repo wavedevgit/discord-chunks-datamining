@@ -100,7 +100,7 @@ function Z(e) {
             children: (0, b.P9)(et)
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
-            children: er ? k.intl.string(k.t.uQZTBV) : k.intl.string(k.t.pgUTZC)
+            children: er ? j.intl.string(j.t.uQZTBV) : j.intl.string(j.t.pgUTZC)
           })]
         })]
       }) : (0, r.jsxs)(l.P3F, {
@@ -127,7 +127,7 @@ function Z(e) {
       })
     },
     es = () => V !== M.l.MODAL && V !== M.l.MODAL_V2 ? null : (0, r.jsxs)("div", {
-      className: j.details,
+      className: k.details,
       children: [(0, r.jsx)(P.Z, {
         channel: W,
         guild: Y,
@@ -147,7 +147,7 @@ function Z(e) {
         onUserClick: e => e.stopPropagation(),
         disableUserPopout: e => e === t.id,
         overflowCountColor: "text-muted",
-        "aria-label": k.intl.string(k.t["jNqDh/"])
+        "aria-label": j.intl.string(j.t["jNqDh/"])
       }), V === M.l.MODAL_V2 && ec()]
     }),
     el = () => V === M.l.MODAL || V === M.l.MODAL_V2 ? null : (0, r.jsx)(w.Z, {
@@ -158,16 +158,16 @@ function Z(e) {
       onClose: F
     }),
     ec = () => t.id === n.id ? null : (0, r.jsx)("div", {
-      className: j.actions,
+      className: k.actions,
       children: (0, r.jsx)(D.Z, {
         channel: W,
         onAction: X,
         onClose: F
       })
     }),
-    eu = null != z ? k.intl.formatToPlainString(k.t["4CQq9Q"], {
+    eu = null != z ? j.intl.formatToPlainString(j.t["4CQq9Q"], {
       name: z.name
-    }) : k.intl.string(k.t["Jpkr/q"]);
+    }) : j.intl.string(j.t["Jpkr/q"]);
   return (0, r.jsx)(m.Gt, {
     value: q,
     children: (0, r.jsxs)(N.Z, {
@@ -187,9 +187,9 @@ function Z(e) {
           onClose: F
         })
       }), (0, r.jsxs)("div", {
-        className: j.body,
+        className: k.body,
         children: [(0, r.jsxs)("div", {
-          className: j.content,
+          className: k.content,
           children: [eo(), es(), V === M.l.MODAL && ec()]
         }), el()]
       }), V !== M.l.MODAL && V !== M.l.MODAL_V2 && ec()]

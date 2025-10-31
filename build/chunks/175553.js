@@ -12,24 +12,24 @@ var Chunk593481 = require("./593481.jsx"),
 
 function c(e, t) {
   let n = e.username,
-    c = s.intl.format(s.t["Yk+uYG"], {
+    c = a.intl.format(a.t["Yk+uYG"], {
       username: ""
     }),
     d = (0, r.ov)(e),
     {
       trackView: u,
       trackClick: h
-    } = (0, o.R)(a.n0.ActivityUserJoin, {
-      notif_type: a.n0.ActivityUserJoin,
+    } = (0, l.R)(s.n0.ActivityUserJoin, {
+      notif_type: s.n0.ActivityUserJoin,
       notif_user_id: e.id,
-      activity_type: l.mFx.JOIN,
+      activity_type: o.mFx.JOIN,
       activity_name: t.name
     });
   return {
     icon: d,
     title: n,
     body: c,
-    hint: e => (0, i.Yj)(e, s.intl.string(s.t.WRj1Wn)),
+    hint: e => (0, i.Yj)(e, a.intl.string(a.t.WRj1Wn)),
     onNotificationShow: () => {
       u()
     },

@@ -304,13 +304,13 @@ let P = {
   x = (0, Chunk364458.Z)([C, P]),
   L = Chunk25209._p(D),
   M = Chunk25209._p(x),
-  k = {
+  j = {
     max: 1 / 0,
     maxAge: +Chunk70956.Z.Millis.MINUTE,
     updateAgeOnGet: true
   },
-  j = new(o())(k),
-  U = new(o())(k);
+  k = new(o())(j),
+  U = new(o())(j);
 
 function G(e, t, n) {
   let r = [],
@@ -323,7 +323,7 @@ function G(e, t, n) {
       allowTimeMentionInput: true
     },
     a = n ? M : L,
-    o = n ? U : j,
+    o = n ? U : k,
     s = o.get(e);
   if (null != s) return s;
   let l = e.replace(/\r\n/g, " \n").replace(/[\r\f]/g, " ").replace(/\t/g, " ") + "\n\n",

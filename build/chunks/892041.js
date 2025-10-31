@@ -6,5 +6,5 @@ require.d(exports, {
 });
 var Chunk288138 = require("./288138.js");
 let i = e => ({
-  enabled: r.Z.getCurrentConfig(e).enabled
+  enabled: r.Z.getConfig(e).enabled
 })

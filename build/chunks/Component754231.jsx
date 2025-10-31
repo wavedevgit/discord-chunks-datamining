@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 754231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -48,15 +48,15 @@ function v(e) {
           className: O.applicationLargeImage
         })
       })
-    } let f = null != (t = d.large_image) ? t : d.small_image,
-    h = (0, u.Z)(i),
-    b = h ? O.spotifyLargeImage : O.applicationLargeImage,
-    _ = null != f ? (0, r.jsx)("img", {
+    } let h = null != (t = d.large_image) ? t : d.small_image,
+    f = (0, u.Z)(i),
+    b = f ? O.spotifyLargeImage : O.applicationLargeImage,
+    _ = null != h ? (0, r.jsx)("img", {
       alt: null != (n = d.large_text) ? n : "",
-      src: (0, g.xF)(p, f, [128, 128]),
+      src: (0, g.xF)(p, h, [128, 128]),
       className: b
     }) : null;
-  return h && null != a ? (_ = (0, r.jsx)(c.P3F, {
+  return f && null != a ? (_ = (0, r.jsx)(c.P3F, {
     className: O.clickable,
     onClick: () => {
       a(i, l.id)
@@ -100,7 +100,7 @@ function C(e) {
     user: n,
     onOpenSpotifyArtist: i
   } = e, l = null == t ? true : t.details, a = null == t ? true : t.state, s = l;
-  return (null != t && (0, u.Z)(t) && null != a && (s = [(0, r.jsx)(f.Z, {
+  return (null != t && (0, u.Z)(t) && null != a && (s = [(0, r.jsx)(h.Z, {
     artists: a,
     linkClassName: O.bodyLink,
     canOpen: null != t.sync_id,
@@ -113,7 +113,7 @@ function C(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     activity: t
   } = e, n = null == t ? true : t.state;
@@ -123,7 +123,7 @@ function E(e) {
   })
 }
 
-function x(e) {
+function E(e) {
   let {
     activity: t
   } = e;
@@ -153,11 +153,11 @@ function S(e) {
     channel: o,
     sortedVoiceStates: c,
     onOpenSpotifyTrack: d,
-    onOpenSpotifyArtist: f,
+    onOpenSpotifyArtist: h,
     onOpenSpotifyAlbum: g
   } = e, m = [];
   null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, u.Z)(t) && null != c && (m = c.map(e => e.user.id));
-  let S = (0, a.Wu)([h.default], () => m.map(e => h.default.getUser(e)).filter(b.lm)),
+  let S = (0, a.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
     I = null != n || (0, u.Z)(t),
     P = i.useMemo(() => {
       let e = new Map;
@@ -184,8 +184,8 @@ function S(e) {
         }), (0, r.jsx)(C, {
           activity: t,
           user: l,
-          onOpenSpotifyArtist: f
-        }), (0, r.jsx)(E, {
+          onOpenSpotifyArtist: h
+        }), (0, r.jsx)(x, {
           activity: t
         }), m.length > 0 && (0, r.jsx)(p.ZP, {
           className: O.usersSummary,
@@ -211,7 +211,7 @@ function S(e) {
           }
         })]
       })]
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(E, {
       activity: t
     })]
   }) : null

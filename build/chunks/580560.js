@@ -2,7 +2,7 @@
 /** chunk id: 580560, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 });
 var Chunk604295 = require("./604295.js"),
   Chunk119184 = require("./119184.js"),
@@ -38,8 +38,8 @@ var Chunk604295 = require("./604295.js"),
   Chunk228156 = require("./228156.js"),
   Chunk254886 = require("./254886.js"),
   Chunk254079 = require("./254079.js"),
-  j = {};
-j = {
+  k = {};
+k = {
   "ar-AE": Chunk604295.Z,
   "bg-BG": Chunk119184.Z,
   "cs-CZ": Chunk218503.Z,

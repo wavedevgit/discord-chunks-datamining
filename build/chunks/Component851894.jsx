@@ -58,7 +58,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,8 +69,8 @@ function k(e, t) {
   return n
 }
 
-function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -99,7 +99,7 @@ function B(e) {
       default: t
     } = await n.e("84509").then(n.bind(n, 933696));
     return n => (0, r.jsx)(t, M({
-      source: j(M({}, e), {
+      source: k(M({}, e), {
         page: w.ZY5.GUILD_MEMBER_PROFILE_SETTINGS
       })
     }, n))
@@ -112,26 +112,26 @@ function Z(e) {
     selectedGuild: a
   } = e, {
     analyticsLocations: L
-  } = (0, _.ZP)(d.Z.USER_SETTINGS_GUILD_PROFILE), k = (0, s.e7)([I.default], () => {
+  } = (0, _.ZP)(d.Z.USER_SETTINGS_GUILD_PROFILE), j = (0, s.e7)([I.default], () => {
     let e = I.default.getCurrentUser();
     return o()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), G = (0, s.e7)([O.ZP], () => null != a ? O.ZP.getMember(a.id, k.id) : null), Z = (0, s.e7)([y.Z], () => !y.Z.isFetchingProfile(k.id, null == a ? true : a.id)), F = (0, s.e7)([v.Z], () => v.Z.hidePersonalInformation), V = (0, s.cj)([C.Z], () => j(M({}, C.Z.getAllPending()), {
+  }), G = (0, s.e7)([O.ZP], () => null != a ? O.ZP.getMember(a.id, j.id) : null), Z = (0, s.e7)([y.Z], () => !y.Z.isFetchingProfile(j.id, null == a ? true : a.id)), F = (0, s.e7)([v.Z], () => v.Z.hidePersonalInformation), V = (0, s.cj)([C.Z], () => k(M({}, C.Z.getAllPending()), {
     source: C.Z.getSource()
   })), {
     source: H,
     pendingAvatar: Y,
     pendingNameplate: W
   } = V, K = U(V, ["source", "pendingAvatar", "pendingNameplate"]), z = (0, b.SD)({
-    userId: k.id,
+    userId: j.id,
     image: Y
   }), q = (0, m.Ys)({
     pendingValue: W,
-    userValue: null == k || null == (t = k.collectibles) ? true : t.nameplate,
+    userValue: null == j || null == (t = j.collectibles) ? true : t.nameplate,
     guildValue: null == G || null == (n = G.collectibles) ? true : n.nameplate,
     guildId: null == a ? true : a.id
   }), {
     pendingDisplayNameStyles: X
-  } = (0, m.mD)(k, null == a ? true : a.id);
+  } = (0, m.mD)(j, null == a ? true : a.id);
   i.useEffect(() => () => c.Z.wait(A.W3), []), i.useEffect(() => {
     null != H && f.ZP.trackWithMetadata(w.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
@@ -165,17 +165,17 @@ function Z(e) {
             guildName: null == a ? true : a.name
           })
         }),
-        profilePreview: (0, r.jsx)(E.Z, j(M({}, K), {
+        profilePreview: (0, r.jsx)(E.Z, k(M({}, K), {
           pendingAvatar: z,
           pendingDisplayNameStyles: X,
-          user: k,
+          user: j,
           guild: a,
-          canUsePremiumCustomization: S.ZP.canUsePremiumProfileCustomization(k),
+          canUsePremiumCustomization: S.ZP.canUsePremiumProfileCustomization(j),
           onUpsellClick: B
         })),
-        nameplatePreview: Q ? (0, r.jsx)(h.Z, j(M({}, K), {
+        nameplatePreview: Q ? (0, r.jsx)(h.Z, k(M({}, K), {
           pendingDisplayNameStyles: X,
-          user: k,
+          user: j,
           guildId: null == a ? true : a.id,
           nameplate: q,
           className: null == q ? x.nameplatePreviewPlaceholder : true,

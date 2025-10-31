@@ -72,8 +72,8 @@ function D(e, t) {
 let x = 10,
   L = 20,
   M = 15,
-  k = 4,
-  j = 5,
+  j = 4,
+  k = 5,
   U = 8,
   G = 10;
 
@@ -239,7 +239,7 @@ function H(e) {
     y = (0, a.Wu)([p.Z], () => o.map(e => p.Z.getGame(e)).filter(e => null != e).filter(e => (0, m.z6)(e.applicationId)).slice(0, x)),
     O = i.useMemo(() => {
       let e = y.length;
-      return e <= k ? k - e : e === j ? 0 : e <= U ? U - e : G - e
+      return e <= j ? j - e : e === k ? 0 : e <= U ? U - e : G - e
     }, [y.length]);
   if (i.useEffect(() => {
       E && (b.default.track(A.rMx.QUEST_GAME_SHEET_ERROR, {

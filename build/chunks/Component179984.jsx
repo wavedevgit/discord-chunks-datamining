@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk314907 = require("./314907.js"),
   Chunk826701 = require("./826701.js");
 
-function j(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -55,7 +55,7 @@ function U(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -98,7 +98,7 @@ let Z = () => {
         premiumType: n
       } = e,
       i = (0, d.ZP)();
-    t = n === P.PremiumTypes.TIER_0 ? (0, l.wj)(i) ? x : L : (0, l.wj)(i) ? M : k;
+    t = n === P.PremiumTypes.TIER_0 ? (0, l.wj)(i) ? x : L : (0, l.wj)(i) ? M : j;
     let a = (0, E.Px)(n);
     return (0, r.jsx)("img", {
       src: t,
@@ -175,10 +175,10 @@ let Z = () => {
         headingOverride: x,
         hidePill: L = false,
         selectedPlanColumnClassName: M,
-        selectedPlanTier: k = P.PremiumTypes.TIER_2
+        selectedPlanTier: j = P.PremiumTypes.TIER_2
       } = e,
       {
-        analyticsLocations: j
+        analyticsLocations: k
       } = (0, _.ZP)(f.Z.PREMIUM_MARKETING_PLAN_COMPARISON),
       G = (0, s.e7)([g.Z], () => g.Z.hasFetchedSubscriptions()),
       W = (0, h.V)(P.nS),
@@ -269,9 +269,9 @@ let Z = () => {
       className: D.freeTrialPillWithSparkles,
       colorOptions: J === P.Si.TIER_0 ? z ? N.VE.PREMIUM_TIER_0_GRADIENT_FILL : N.VE.PREMIUM_TIER_0_WHITE_FILL : z ? X ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_WHITE_FILL
     }) : el ? (0, r.jsx)(Z, {}) : (0, r.jsx)(F, {});
-    let ef = J === P.Si.TIER_0 || $ === P.PremiumTypes.TIER_0 || k === P.PremiumTypes.TIER_0;
+    let ef = J === P.Si.TIER_0 || $ === P.PremiumTypes.TIER_0 || j === P.PremiumTypes.TIER_0;
     return (0, r.jsx)(_.Gt, {
-      value: j,
+      value: k,
       children: (0, r.jsxs)("div", {
         className: o()(D.root, a),
         "data-testid": "v2-marketing-page-comparison-table",

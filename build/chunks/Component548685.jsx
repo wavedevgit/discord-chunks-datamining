@@ -41,8 +41,8 @@ let N = e => {
     isLoading: n,
     title: i,
     sortedSkuIds: N,
-    numVisibleItems: Z,
-    prioritizeUserDiscounts: R,
+    numVisibleItems: R,
+    prioritizeUserDiscounts: Z,
     tab: w,
     buttonContainerClassName: H,
     orbsSupportedOnly: D
@@ -56,7 +56,7 @@ let N = e => {
   } = (0, j.Z)({
     sortedSkuIds: N,
     isPremiumUser: F,
-    prioritizeUserDiscounts: R,
+    prioritizeUserDiscounts: Z,
     orbsSupportedOnly: D
   }), q = (0, k.St)(z), J = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, a.e7)([g.Z], () => g.Z.isFocused()), X = !J && Q, {
     animationPhase: $,
@@ -135,7 +135,7 @@ let N = e => {
       className: A.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => ei ? (0, r.jsx)(S.Z, {}, t + 1) : (0, r.jsx)(v.K, {}, t + 1))
-      }) : q.slice(0, Z).map((e, t) => {
+      }) : q.slice(0, R).map((e, t) => {
         let n, l = _.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (X)

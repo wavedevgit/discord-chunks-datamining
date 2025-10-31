@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 836697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -26,16 +26,16 @@ function O(e) {
     children: n
   } = e, s = i.useRef(null), d = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), p = i.useCallback(() => {
     c.ZP.clearCoachmark()
-  }, []), f = (0, a.Z)(d), h = i.useRef(null);
+  }, []), h = (0, a.Z)(d), f = i.useRef(null);
   return i.useEffect(() => {
-    if (d && d !== f) {
+    if (d && d !== h) {
       var e, n, r, i, l;
-      t(), null == (l = h.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
+      t(), null == (l = f.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
     }
-  }, [h, d, f, t]), (0, r.jsxs)("div", {
+  }, [f, d, h, t]), (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsx)(o.yRy, {
-      ref: h,
+      ref: f,
       targetElementRef: s,
       shouldShow: d,
       renderPopout: () => (0, r.jsxs)("div", {
@@ -107,14 +107,14 @@ function O(e) {
 function y(e) {
   let {
     onActivate: t
-  } = e, [n, y] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), C = (0, h.Z)(), E = (0, a.Z)(v), x = i.useMemo(() => {
-    let e = (0, f.qQ)({
+  } = e, [n, y] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), C = (0, f.Z)(), x = (0, a.Z)(v), E = i.useMemo(() => {
+    let e = (0, h.qQ)({
       folderId: p.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: b.intl.string(b.t["scsU+l"]),
       expanded: n,
       guildIds: []
     });
-    for (let t of C) e.children.push((0, f.Mg)(t, e.id));
+    for (let t of C) e.children.push((0, h.Mg)(t, e.id));
     return e
   }, [C, n]);
   i.useEffect(() => {
@@ -122,11 +122,11 @@ function y(e) {
   }, [n, j]);
   let S = null != v && C.includes(v);
   return (i.useEffect(() => {
-    !n && S && E !== v && y(true)
-  }, [n, S, E, v]), 0 === C.length) ? null : (0, r.jsx)(O, {
+    !n && S && x !== v && y(true)
+  }, [n, S, x, v]), 0 === C.length) ? null : (0, r.jsx)(O, {
     onActivate: t,
     children: (0, r.jsx)(g.Z, {
-      folderNode: x,
+      folderNode: E,
       expanded: n,
       selected: S,
       draggable: false,
@@ -143,7 +143,7 @@ function y(e) {
         })
       }),
       renderChildNode: function(e, t, n) {
-        return e.type !== f.eD.GUILD ? null : (0, r.jsx)(m.Z, {
+        return e.type !== h.eD.GUILD ? null : (0, r.jsx)(m.Z, {
           guildNode: e,
           "aria-setsize": n,
           "aria-posinset": t

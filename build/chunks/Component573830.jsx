@@ -116,8 +116,8 @@ function w(e) {
     isDisabled: n
   }), {
     inputProps: M,
-    labelProps: k,
-    isPressed: j
+    labelProps: j,
+    isPressed: k
   } = (0, a.h)({
     id: m,
     isDisabled: n,
@@ -136,7 +136,7 @@ function w(e) {
       duration: S.enabled ? 200 : 300
     },
     opacity: n ? .5 : 1,
-    state: j ? t ? R[R.length - 2] : N[1] : +!!t
+    state: k ? t ? R[R.length - 2] : N[1] : +!!t
   }, "animate-always"), en = function(e) {
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [...e].reverse();
     return t ? ee.to({
@@ -152,7 +152,7 @@ function w(e) {
     focusTarget: x,
     within: true,
     offset: false,
-    children: (0, r.jsxs)("label", b(g({}, k), {
+    children: (0, r.jsxs)("label", b(g({}, j), {
       className: h.container,
       children: [(0, r.jsx)(s.animated.div, b(g({}, U), {
         ref: w,

@@ -77,12 +77,12 @@ function M(e, t) {
   }), true)
 }
 
-function k(e, t) {
+function j(e, t) {
   let n = null != t ? t : h.Z.getPreferredRegion();
   null != n && n !== h.Z.getRegion(g.Z.getHostname(e)) && (0, o.dV)(e, n)
 }
 
-function j(e, t) {
+function k(e, t) {
   var n;
   if (g.Z.getAllActiveStreamKeys().includes(e)) return;
   let r = null != (n = N[e]) ? n : new i.V7;
@@ -102,7 +102,7 @@ class U extends Chunk147913.Z {
       } = e, {
         channelId: r
       } = (0, O.my)(t), i = _.Z.getChannel(r);
-      j(t, null == i ? true : i.isGuildStageVoice()), x(t), n || d.Z.getAllActiveStreams().forEach(e => {
+      k(t, null == i ? true : i.isGuildStageVoice()), x(t), n || d.Z.getAllActiveStreams().forEach(e => {
         let n = (0, O.V9)(e);
         e.ownerId !== f.default.getId() && n !== t && (0, o.g)(n, false)
       })
@@ -112,7 +112,7 @@ class U extends Chunk147913.Z {
         streamType: n,
         guildId: r
       } = e, i = _.Z.getChannel(t);
-      j((0, O.V9)({
+      k((0, O.V9)({
         streamType: n,
         guildId: r,
         channelId: t,
@@ -200,13 +200,13 @@ class U extends Chunk147913.Z {
         channelId: t,
         region: n
       } = e, r = d.Z.getCurrentUserActiveStream();
-      (null == r ? true : r.channelId) === t && k((0, O.V9)(r), n)
+      (null == r ? true : r.channelId) === t && j((0, O.V9)(r), n)
     }), T(this, "handleChannelUpdates", e => {
       let {
         channels: t
       } = e, n = d.Z.getCurrentUserActiveStream();
       if (null != n)
-        for (let e of t) n.channelId === e.id && k((0, O.V9)(n), e.rtcRegion)
+        for (let e of t) n.channelId === e.id && j((0, O.V9)(n), e.rtcRegion)
     }), T(this, "actions", {
       STREAM_WATCH: this.handleStreamWatch,
       STREAM_START: this.handleStreamStart,

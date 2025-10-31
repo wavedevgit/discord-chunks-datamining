@@ -10,7 +10,7 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
   var {
     clientId: t,
     authorizeProps: {
-      authorizations: s,
+      authorizations: a,
       permissions: c
     }
   } = e, d = function(e, t) {
@@ -18,13 +18,13 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
     var n, i, r = function(e, t) {
       if (null == e) return {};
       var n, i, r = {},
-        o = Object.keys(e);
-      for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        l = Object.keys(e);
+      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
       return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
   }(e.authorizeProps, ["authorizations", "permissions"]);
@@ -34,16 +34,16 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
     let {
       location: n
     } = e;
-    l.Z.dispatch({
+    o.Z.dispatch({
       type: "OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE",
       clientId: t,
       location: n
     })
   }
-  let p = a.Hn;
+  let p = s.Hn;
   try {
     p = r.vB(null != c ? c : 0)
-  } catch (e) {}(0, o.ZDy)(async () => {
+  } catch (e) {}(0, l.ZDy)(async () => {
     let {
       OAuth2AuthorizeModal: e
     } = await Promise.resolve().then(n.bind(n, 69580));
@@ -67,7 +67,7 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
         }
         return e
       }({}, t, d), r = r = {
-        authorizations: new Map(s),
+        authorizations: new Map(a),
         permissions: p,
         callback: h
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
@@ -84,7 +84,7 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
   }, {
     modalKey: u,
     onCloseRequest: () => {
-      (0, o.Mr3)(u), h({})
+      (0, l.Mr3)(u), h({})
     }
   })
 })

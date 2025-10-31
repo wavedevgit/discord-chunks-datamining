@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 37772, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -85,12 +85,12 @@ let B = Chunk647438.memo(function e(t) {
       treatSpam: W
     } = t,
     K = D.OBS.has(s.type) ? s.messageReference : true,
-    Y = (0, a.e7)([f.Z], () => f.Z.getMessageByReference(K)),
-    q = (0, a.e7)([g.Z], () => s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === f.Y.LOADED ? g.Z.getChannel(Y.message.channel_id) : null),
-    X = h.x4.useSetting(),
-    Q = h.RS.useSetting(),
-    J = h.NA.useSetting(),
-    $ = h.QK.useSetting(),
+    Y = (0, a.e7)([h.Z], () => h.Z.getMessageByReference(K)),
+    q = (0, a.e7)([g.Z], () => s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === h.Y.LOADED ? g.Z.getChannel(Y.message.channel_id) : null),
+    X = f.x4.useSetting(),
+    Q = f.RS.useSetting(),
+    J = f.NA.useSetting(),
+    $ = f.QK.useSetting(),
     ee = (0, u.A)((null != (n = s.editedTimestamp) ? n : s.timestamp).valueOf()),
     et = (0, d.Z)(null == l ? true : l.id),
     {
@@ -108,7 +108,7 @@ let B = Chunk647438.memo(function e(t) {
     }),
     el = (0, j.ZP)(s),
     eo = (0, a.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
-    ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === f.Y.LOADED && null != q,
+    ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === h.Y.LOADED && null != q,
     es = !ea && true === i,
     ec = (0, P.Z)({
       message: s,
@@ -118,7 +118,7 @@ let B = Chunk647438.memo(function e(t) {
     eu = (0, c.v)(s),
     ed = (0, _.ro)(s.id, s.channel_id),
     ep = (0, p.Z)(s),
-    ef = (0, x.iG)(s);
+    eh = (0, E.iG)(s);
   return ea ? (0, r.jsx)(e, U(G({}, t), {
     message: Y.message,
     channel: q,
@@ -128,7 +128,7 @@ let B = Chunk647438.memo(function e(t) {
     compact: R,
     count: 1,
     collapsedReason: i
-  }) : (0, r.jsx)(E.Z, {
+  }) : (0, r.jsx)(x.Z, {
     compact: R,
     className: o()(M, {
       [k.ephemeral]: (0, O.Pv)(s),
@@ -173,7 +173,7 @@ let B = Chunk647438.memo(function e(t) {
     isSystemMessage: (0, v.Z)(s),
     messageRef: ec,
     author: el,
-    "aria-labelledby": ef,
+    "aria-labelledby": eh,
     "aria-roledescription": L.intl.string(L.t.BAB0yK)
   })
 });
@@ -185,7 +185,7 @@ function F(e) {
     compact: i,
     collapsedReason: l
   } = e;
-  return (0, r.jsx)(E.Z, {
+  return (0, r.jsx)(x.Z, {
     className: t,
     compact: i,
     role: "group",

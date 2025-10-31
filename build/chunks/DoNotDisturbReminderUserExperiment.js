@@ -1,12 +1,12 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 809930, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => o
+  a: () => s
 });
 var Chunk818083 = require("./818083.js"),
   Chunk141537 = require("./141537.js"),
   Chunk715009 = require("./715009.js");
-let i = (0, Chunk818083.B)({
+let r = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-08_do_not_disturb_reminder",
     label: "Do Not Disturb Reminder",
@@ -41,4 +41,4 @@ let i = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = e => (0, r.sM)(i, e)
+  s = e => (0, i.sM)(r, e)

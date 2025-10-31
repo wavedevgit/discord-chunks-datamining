@@ -65,10 +65,10 @@ function d(e, t, n) {
     form: x,
     descriptionId: L,
     errorMessageId: M,
-    validationBehavior: k
+    validationBehavior: j
   } = r.H.get(t);
   return (0, o.y)(n, t.defaultSelectedValue, t.setSelectedValue), (0, u.Q)({
-    validationBehavior: k
+    validationBehavior: j
   }, t, n), {
     labelProps: (0, i.d)(A, (0, s.useMemo)(() => ({
       onClick: e => e.preventDefault(),
@@ -81,7 +81,7 @@ function d(e, t, n) {
       form: x,
       tabIndex: w,
       disabled: O,
-      required: t.isRequired && "native" === k,
+      required: t.isRequired && "native" === j,
       checked: v,
       value: d,
       onChange: I,

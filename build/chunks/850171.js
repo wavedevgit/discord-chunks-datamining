@@ -231,14 +231,14 @@ let C = async (e, t, r) => {
     name: s.S.SurveyWillPresent,
     "survey.id": O
   });
-  let w, M, j, U, G = document.createElement("div"),
+  let w, M, k, U, G = document.createElement("div"),
     B = e => {
       let {
         "view.version": t
       } = e;
       t !== A["x-ul-sdk-version"] && x(), s.e.removeListener("verify.view.version", B)
     };
-  s.e.on("verify.view.version", B), window.UserLeap.useMobileStyling = P, (0, s.h)(A) ? (w = "ul-direct-embeded-frame", M = document.head, j = window, U = false, (() => {
+  s.e.on("verify.view.version", B), window.UserLeap.useMobileStyling = P, (0, s.h)(A) ? (w = "ul-direct-embeded-frame", M = document.head, k = window, U = false, (() => {
     let e = (0, s.g)(window.UserLeap),
       t = R(e),
       n = window.UserLeap.forceDirectEmbed,
@@ -252,10 +252,10 @@ let C = async (e, t, r) => {
   }))) : {
     frameId: w,
     contentWinDocHead: M,
-    contentWindow: j,
+    contentWindow: k,
     hasOverlay: U,
     iframe: G
-  } = k({
+  } = j({
     productConfig: m,
     useMobileStyling: P,
     surveyId: O,
@@ -296,8 +296,8 @@ let C = async (e, t, r) => {
     upchunkLibraryURL: window.UserLeap.upchunkLibraryURL,
     useMobileStyling: P,
     userId: v,
-    viewDocument: null == j ? true : j.document,
-    viewWindow: j,
+    viewDocument: null == k ? true : k.document,
+    viewWindow: k,
     visitorAttributes: {
       externalUserId: window.UserLeap.userId,
       email: window.UserLeap.email
@@ -307,7 +307,7 @@ let C = async (e, t, r) => {
   null != (o = window.UserLeap._config) && o.startingQuestionIdx && (window.UserLeap._config = {
     ...window.UserLeap._config,
     startingQuestionIdx: null
-  }), Z.customStyles = (f ? window.UserLeap.feedbackCustomStyles : window.UserLeap.customStyles) ?? m.customStyles, j && (j.__cfg = Z);
+  }), Z.customStyles = (f ? window.UserLeap.feedbackCustomStyles : window.UserLeap.customStyles) ?? m.customStyles, k && (k.__cfg = Z);
   let F = window.UserLeap.viewSDKURL ? window.UserLeap.viewSDKURL : Z.path,
     V = document.getElementById(b);
   V && V.remove();
@@ -327,7 +327,7 @@ let C = async (e, t, r) => {
     e.configure(Z), U && window.UserLeap.container && Y()
   } else F && (H.src = F, U && H.addEventListener("load", () => {
     window.UserLeap.container && Y()
-  }), null == j || j.addEventListener("error", e => {
+  }), null == k || k.addEventListener("error", e => {
     e.target instanceof HTMLScriptElement && e.target.src === F && window.UserLeap.reportError("loadFrameScript", Error("Frame script failed to load"))
   }, {
     capture: true,
@@ -457,7 +457,7 @@ let w = "0px",
       n["background-color"] = "light" === r ? "rgba(255,255,255, 0.95)" : "rgba(0,0,0,0.9)", t || (n.margin = "auto"), window.UserLeap.container && Object.assign(window.UserLeap.container.style, n)
     })(l, n), Object.assign(e.style, s, o), d
   },
-  k = ({
+  j = ({
     productConfig: e,
     useMobileStyling: t,
     surveyId: n,
@@ -507,7 +507,7 @@ let w = "0px",
       iframe: c
     }
   },
-  j = {
+  k = {
     [Chunk555256.S.SurveyFadingOut]: () => {
       window.UserLeap.container && Object.assign(window.UserLeap.container.style, {
         "background-color": "rgba(0,0,0,0)"
@@ -515,12 +515,12 @@ let w = "0px",
     }
   },
   U = () => {
-    Object.entries(j).forEach(([e, t]) => {
+    Object.entries(k).forEach(([e, t]) => {
       s.e.on(e, t)
     })
   },
   G = () => {
-    Object.entries(j).forEach(([e, t]) => {
+    Object.entries(k).forEach(([e, t]) => {
       s.e.off(e, t)
     })
   },
@@ -950,8 +950,8 @@ let eg = e => {
   ex = "test",
   eL = ["popState", "pushState", "replaceState"],
   eM = {},
-  ek = "!email",
-  ej = "pageUrl",
+  ej = "!email",
+  ek = "pageUrl",
   eU = window.location.href;
 
 function eG(e) {
@@ -1045,7 +1045,7 @@ function eY(e, t, n, r) {
     let u = {
       url: e
     };
-    r && (u.trackPageView = true), window.UserLeap._queue.push(["track", ej, t, u, n])
+    r && (u.trackPageView = true), window.UserLeap._queue.push(["track", ek, t, u, n])
   } catch (t) {
     t instanceof Error && (t.stack = e, window.UserLeap.reportError("trackPageView", t)), console.warn("[Sprig] (ERR-428) Failed to track page view", t)
   }
@@ -1141,7 +1141,7 @@ let eq = function(e) {
     } = t, {
       eventName: h
     } = t;
-    if (window.UserLeap.debugMode && h !== ej && console.info("[DEBUG] Sprig track", t), "test" === e.mode) return;
+    if (window.UserLeap.debugMode && h !== ek && console.info("[DEBUG] Sprig track", t), "test" === e.mode) return;
     let m = s.l.getItem("sprig.previewKey") ?? true;
     if (e.requireUserIdForTracking && !window.UserLeap.userId && !u) {
       let e = "[Sprig] - Skipping tracking without userId";
@@ -1313,7 +1313,7 @@ let eq = function(e) {
         }
       }
       if (a)
-        for (let e of (a.email && !a[ek] && (a[ek] = a.email, delete a.email), Object.keys(a))) a[e] === eM[e] && delete a[e];
+        for (let e of (a.email && !a[ej] && (a[ej] = a.email, delete a.email), Object.keys(a))) a[e] === eM[e] && delete a[e];
       if (!(a && 0 !== Object.keys(a).length || r && window.UserLeap.userId !== r || i && window.UserLeap.partnerAnonymousId !== i)) return {
         success: true
       };
@@ -1324,7 +1324,7 @@ let eq = function(e) {
       })).ok ? Object.assign(eM, a) : n.reportError && (console.warn("[Sprig] (ERR-432) identifyAndSetAttributes failed", n.error), n.error && window.UserLeap.reportError("identifyAndSetAttributes", n.error)) : n = await I(A("1", [v, O]), {
         body: JSON.stringify(o),
         method: "PUT"
-      }), a && a[ek] && (window.UserLeap.email = a[ek]), n.ok && (r && T("uid", r), i && T("aid", i)), {
+      }), a && a[ej] && (window.UserLeap.email = a[ej]), n.ok && (r && T("uid", r), i && T("aid", i)), {
         success: !!n.ok
       }
     },
@@ -1488,7 +1488,7 @@ let eq = function(e) {
       null != (n = null == (t = window.UserLeap) ? true : t._config) && n.launchDarklyEnabled ? ep.setLDFlagsVariations(e) : console.warn("[SPRIG] LaunchDarkly integration is currently not enabled for your product.")
     },
     setVisitorAttribute: (e, t) => (console.warn("[Sprig] setVisitorAttribute is deprecated. Please use setAttribute"), r.setAttribute(e, t)),
-    setEmail: async e => r.setAttribute(ek, e),
+    setEmail: async e => r.setAttribute(ej, e),
     setVisitorEmail: async e => (console.warn("[Sprig] setVisitorEmail is deprecated. Please use setEmail"), r.setEmail(e)),
     _generateVideoUploadUrl: async e => (async function(e) {
       var t;

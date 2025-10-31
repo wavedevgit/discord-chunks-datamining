@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 74650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => x
@@ -21,15 +21,15 @@ function x(e) {
   let {
     markAsDismissed: t,
     onCTA: n
-  } = e, x = (0, r.e7)([s.default], () => s.default.getCurrentUser()), g = (0, c.M5)(x, u.PremiumTypes.TIER_2);
+  } = e, x = (0, i.e7)([o.default], () => o.default.getCurrentUser()), g = (0, c.M5)(x, u.PremiumTypes.TIER_2);
   return (0, a.jsx)("div", {
     className: p.popup,
     children: (0, a.jsxs)("div", {
       className: p.content,
-      children: [(0, a.jsx)(i.P3F, {
+      children: [(0, a.jsx)(r.P3F, {
         className: p.closeIcon,
         onClick: () => t(d.L.USER_DISMISS),
-        children: (0, a.jsx)(i.Dio, {
+        children: (0, a.jsx)(r.Dio, {
           size: "xs"
         })
       }), (0, a.jsx)("img", {
@@ -37,23 +37,23 @@ function x(e) {
         alt: "",
         className: p.asset
       }), (0, a.jsxs)("div", {
-        children: [(0, a.jsx)(i.Heading, {
+        children: [(0, a.jsx)(r.Heading, {
           variant: "heading-md/semibold",
           color: "text-primary",
           className: p.title,
           children: m.intl.string(m.t.PRXV49)
-        }), (0, a.jsx)(i.Text, {
+        }), (0, a.jsx)(r.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
           children: m.intl.string(m.t["RSHtF+"])
         })]
-      }), g ? (0, a.jsx)(i.Button, {
+      }), g ? (0, a.jsx)(r.Button, {
         text: m.intl.string(m.t.LhcHi5),
         fullWidth: true,
         onClick: () => {
           t(d.L.TAKE_ACTION), n()
         }
-      }) : (0, a.jsx)(o.Z, {
+      }) : (0, a.jsx)(s.Z, {
         onClick: () => {
           t(d.L.TAKE_ACTION)
         },

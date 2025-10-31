@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 512313, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -18,17 +18,17 @@ function m(e) {
   let {
     setting: n,
     depth: l,
-    highlight: i
-  } = e, o = null == (t = r.useContext(h)) ? true : t.get(n), s = null;
-  return null != o && o.length > 0 && (s = o.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(m, {
+    highlight: r
+  } = e, s = null == (t = i.useContext(h)) ? true : t.get(n), o = null;
+  return null != s && s.length > 0 && (o = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(m, {
     setting: e,
     depth: l + 1,
-    highlight: i
+    highlight: r
   }, e))), (0, a.jsx)(c.r, {
     title: n,
     initExpanded: l <= 2,
-    highlight: i,
-    children: s
+    highlight: r,
+    children: o
   })
 }
 
@@ -36,10 +36,10 @@ function p(e) {
   let {
     setting: t,
     depth: n
-  } = e, r = (0, o.Lk)(t) && (t.type === o.Jq.SIDEBAR_ITEM && t.layout.some(e => null == e ? true : e.layout.some(e => null != e.render)) || t.type === o.Jq.PANEL && t.layout.some(e => null != e.render) || t.type === o.Jq.PANE && null != t.render), l = null;
-  if ((0, o.Lk)(t)) {
-    var i, s;
-    0 === t.layout.length && (null == (s = t.parent) || null == (i = s.parent) ? true : i.legacySearchKey) != null ? l = (0, a.jsx)(m, {
+  } = e, i = (0, s.Lk)(t) && (t.type === s.Jq.SIDEBAR_ITEM && t.layout.some(e => null == e ? true : e.layout.some(e => null != e.render)) || t.type === s.Jq.PANEL && t.layout.some(e => null != e.render) || t.type === s.Jq.PANE && null != t.render), l = null;
+  if ((0, s.Lk)(t)) {
+    var r, o;
+    0 === t.layout.length && (null == (o = t.parent) || null == (r = o.parent) ? true : r.legacySearchKey) != null ? l = (0, a.jsx)(m, {
       setting: t.parent.parent.legacySearchKey,
       depth: n + 1,
       highlight: true
@@ -51,7 +51,7 @@ function p(e) {
   return (0, a.jsx)(c.r, {
     title: t.key,
     initExpanded: n <= 2,
-    highlight: r,
+    highlight: i,
     children: l
   })
 }
@@ -61,7 +61,7 @@ function x() {
   let [e, t] = Chunk647438.useState(false), {
     legacySettingDirectory: n
   } = (0, Chunk546697.q)(), {
-    node: o
+    node: s
   } = (0, Chunk131051.Z)(Chunk920952.Z, "");
   return (0, Chunk951288.jsxs)(Chunk481060.zJl, {
     className: Chunk547481.root,

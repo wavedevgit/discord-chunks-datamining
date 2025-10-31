@@ -5,7 +5,7 @@ require.d(exports, {
   A2: () => e3,
   AY: () => ei,
   CM: () => el,
-  CW: () => ek,
+  CW: () => ej,
   Cr: () => eE,
   DC: () => ec,
   Eo: () => ez,
@@ -40,7 +40,7 @@ require.d(exports, {
   V6: () => N,
   Wp: () => ex,
   Xc: () => F,
-  Xk: () => k,
+  Xk: () => j,
   Xr: () => ep,
   YC: () => e1,
   Yk: () => eD,
@@ -77,7 +77,7 @@ require.d(exports, {
   nc: () => eS,
   nh: () => eW,
   no: () => eG,
-  qF: () => j,
+  qF: () => k,
   rN: () => eA,
   rR: () => e4,
   tU: () => eO,
@@ -185,13 +185,13 @@ let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
   }, e => o.D5.create({
     value: e
   })),
-  k = (0, Chunk560997.Zc)("textAndImages", "showCommandSuggestions", e => {
+  j = (0, Chunk560997.Zc)("textAndImages", "showCommandSuggestions", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })),
-  j = (0, Chunk560997.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
+  k = (0, Chunk560997.Zc)("voiceAndVideo", "alwaysPreviewVideo", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
   }, e => o.D5.create({
@@ -533,11 +533,11 @@ let eR = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
   })),
   eL = [],
   eM = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eL, e => e),
-  ek = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eL, e => e, {
+  ej = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eL, e => e, {
     delay: Chunk526761.fy.FREQUENT_USER_ACTION
   }),
-  ej = [],
-  eU = (0, Chunk560997.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : ej, e => e);
+  ek = [],
+  eU = (0, Chunk560997.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : ek, e => e);
 (0, Chunk560997.TG)({
   baseSetting: (0, Chunk560997.Zc)("privacy", "defaultGuildsActivityRestricted", e => e, e => null != e ? e : a.E5.OFF),
   isEligible: () => (0, Chunk362352.o0)("user_settings"),

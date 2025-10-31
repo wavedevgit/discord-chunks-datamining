@@ -171,7 +171,7 @@ function M() {
   returnfalse
 }
 
-function k(e) {
+function j(e) {
   let {
     statuses: t
   } = e, n = [...C.recentStatuses], s = [...C.favoritedStatuses];
@@ -183,7 +183,7 @@ function k(e) {
     c >= 0 && n.splice(c, 1), u >= 0 && s.splice(u, 1), t === (null == i ? true : i.status) && _().isEqual(l, null == i ? true : i.emoji) && (r = null, i = null, o = null, C.currentDefaultStatus = null, a = null)
   }), C.recentStatuses = n, C.favoritedStatuses = s
 }
-class j extends(s = Chunk442837.ZP.PersistedStore) {
+class k extends(s = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     C = v({}, N(), null != e ? e : {}), this.waitFor(m.ZP), this.syncWith([m.ZP], M)
   }
@@ -216,7 +216,7 @@ class j extends(s = Chunk442837.ZP.PersistedStore) {
     return C.favoritedStatuses.some(n => (0, E.Z)(n) && t && n === e || !(0, E.Z)(n) && !t && e.status === n.status && c()(e.emoji, n.emoji))
   }
 }
-O(j, "displayName", "HangStatusStore"), O(j, "persistKey", "HangStatusStore"), O(j, "migrations", [e => {
+O(k, "displayName", "HangStatusStore"), O(k, "persistKey", "HangStatusStore"), O(k, "migrations", [e => {
   if (null != e.currentDefaultStatus && null == e.currentDefaultStatus.gameActivityHangStatus) {
     let t = T(v({}, e.currentDefaultStatus), {
       gameActivityHangStatus: null
@@ -227,12 +227,12 @@ O(j, "displayName", "HangStatusStore"), O(j, "persistKey", "HangStatusStore"), O
   }
   return e
 }, e => ("recentCustomStatuses" in e && delete e.recentCustomStatuses, e), e => (null != e.currentDefaultStatus && "expiresAt" in e.currentDefaultStatus && delete e.currentDefaultStatus.expiresAt, e)]);
-let U = new j(Chunk570140.Z, {
+let U = new k(Chunk570140.Z, {
   LOGOUT: R,
   UPDATE_HANG_STATUS: P,
   UPDATE_HANG_STATUS_CUSTOM: w,
   UPDATE_HANG_STATUS_GAME_ACTIVITY: D,
-  DELETE_INVALID_HANG_STATUSES: k,
+  DELETE_INVALID_HANG_STATUSES: j,
   CLEAR_HANG_STATUS: x,
   UPDATE_FAVORITE_HANG_STATUS: L,
   RESET_HANG_STATUS_STATE: R

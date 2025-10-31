@@ -100,9 +100,9 @@ function x(e) {
       handleProgress: x,
       handleResetDismissibilityClick: L,
       handleResetStatusClick: M,
-      handleOverrideDeliveryClick: k
+      handleOverrideDeliveryClick: j
     } = (0, E.kJ)(e.quest.id),
-    j = () => {
+    k = () => {
       x(.9 * Math.random() + .03)
     },
     U = i.useCallback(() => {
@@ -171,8 +171,8 @@ function x(e) {
       id: "delivery",
       label: "Show in Quest Bar",
       checked: (null == n ? true : n.id) === e.quest.id,
-      action: k
-    }), [k, e.quest.id, null == n ? true : n.id]),
+      action: j
+    }), [j, e.quest.id, null == n ? true : n.id]),
     Q = i.useCallback(() => {
       (0, c.uL)(T.Z5c.QUEST_PREVIEW_TOOL_2(e.quest.id))
     }, [e.quest.id]),
@@ -224,7 +224,7 @@ function x(e) {
       }), (0, r.jsx)(o.sNh, {
         id: "progress",
         label: A.intl.string(A.t.cKSLr4),
-        action: j
+        action: k
       }), (0, r.jsx)(o.sNh, {
         id: "complete",
         label: A.intl.string(A.t.jQEfRT),

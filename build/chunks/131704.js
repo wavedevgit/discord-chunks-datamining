@@ -19,21 +19,21 @@ require.d(exports, {
   X_: () => ee,
   Y0: () => X,
   _H: () => eG,
-  bc: () => k,
+  bc: () => j,
   bw: () => w,
   createChannelRecord: () => eB,
   dF: () => q,
   dy: () => eL,
   hv: () => L,
   iR: () => ei,
-  jD: () => ej,
+  jD: () => ek,
   mn: () => ew,
   nl: () => eg,
   oj: () => N,
   ov: () => J,
-  q_: () => ek,
+  q_: () => ej,
   r8: () => I,
-  sR: () => j,
+  sR: () => k,
   tx: () => P,
   uC: () => H,
   vc: () => F,
@@ -128,13 +128,13 @@ function L(e) {
 }
 let M = new Set([Chunk981631.d4z.GROUP_DM]);
 
-function k(e) {
+function j(e) {
   return M.has(e)
 }
-let j = new Set([Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM, Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.GUILD_ANNOUNCEMENT, Chunk981631.d4z.ANNOUNCEMENT_THREAD, Chunk981631.d4z.PUBLIC_THREAD, Chunk981631.d4z.PRIVATE_THREAD]);
+let k = new Set([Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM, Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.GUILD_ANNOUNCEMENT, Chunk981631.d4z.ANNOUNCEMENT_THREAD, Chunk981631.d4z.PUBLIC_THREAD, Chunk981631.d4z.PRIVATE_THREAD]);
 
 function U(e) {
-  return j.has(e)
+  return k.has(e)
 }
 let G = new Set([Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM, Chunk981631.d4z.GUILD_VOICE, Chunk981631.d4z.GUILD_STAGE_VOICE, Chunk981631.d4z.PUBLIC_THREAD, Chunk981631.d4z.PRIVATE_THREAD]);
 
@@ -287,7 +287,7 @@ class em extends e_ {
     return this.type === Chunk981631.d4z.GROUP_DM
   }
   isMultiUserDM() {
-    return k(this.type)
+    return j(this.type)
   }
   isDM() {
     return this.type === Chunk981631.d4z.DM
@@ -737,12 +737,12 @@ let eM = {
   [Chunk981631.d4z.GUILD_MEDIA]: eC.fromServer
 };
 
-function ek(e, t) {
+function ej(e, t) {
   var n, r;
   return (null != (r = eM[null != (n = e.type) ? n : m.d4z.GUILD_TEXT]) ? r : eg.fromServer)(e, t)
 }
 
-function ej(e) {
+function ek(e) {
   return eB(e)
 }
 let eU = {

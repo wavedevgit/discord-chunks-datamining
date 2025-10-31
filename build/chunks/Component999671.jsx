@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 999671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -16,13 +16,13 @@ var Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk407067 = require("./407067.js");
 
-function h(e) {
+function f(e) {
   let {
     closePopout: t,
     onSelect: n
   } = e, i = (0, l.e7)([s.Z, c.Z], () => s.Z.getChannel(c.Z.getChannelId())), {
-    everyoneFilter: f,
-    roleFilter: h,
+    everyoneFilter: h,
+    roleFilter: f,
     guildFilter: g
   } = (0, l.cj)([u.ZP], () => {
     let {
@@ -46,19 +46,19 @@ function h(e) {
       label: p.intl.string(p.t.cdyUsV),
       action: function() {
         a.Z.setGuildFilter({
-          everyoneFilter: !f
+          everyoneFilter: !h
         })
       },
-      checked: f
+      checked: h
     }), (0, r.jsx)(o.S89, {
       id: "Roles",
       label: p.intl.string(p.t.lZejCq),
       action: function() {
         a.Z.setGuildFilter({
-          roleFilter: !h
+          roleFilter: !f
         })
       },
-      checked: h
+      checked: f
     }), null == i || i.isPrivate() ? null : (0, r.jsx)(o.S89, {
       id: "All Servers",
       label: p.intl.string(p.t.GWMA6s),
@@ -83,7 +83,7 @@ function g() {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(h, {
+      return (0, r.jsx)(f, {
         closePopout: t
       })
     },
@@ -99,7 +99,7 @@ function g() {
           size: "xs",
           color: "currentColor"
         }),
-        className: f.controlButton,
+        className: h.controlButton,
         onClick: n
       })
     }

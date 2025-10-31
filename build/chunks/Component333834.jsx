@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 333834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -110,11 +110,11 @@ function D(e) {
     loadMore: l,
     renderLoadingState: a,
     renderMessageGroup: d,
-    scrollerClassName: h,
+    scrollerClassName: f,
     className: g,
     listName: P,
     ignoreGrouping: N = false
-  } = e, D = (0, y.fJ)(), L = i.useRef(null), M = (0, f.Z)(P, L), {
+  } = e, D = (0, y.fJ)(), L = i.useRef(null), M = (0, h.Z)(P, L), {
     entrypoint: k,
     notificationCenterVariant: G
   } = (0, O.pN)({
@@ -221,7 +221,7 @@ function D(e) {
     }, [t, n, a, H, z, Y, N, d, q, X, D]),
     J = Q[Q.length - 1],
     $ = i.isValidElement(J) && J.type === w,
-    ee = (0, E.d)(e => e.setInboxReadState);
+    ee = (0, x.d)(e => e.setInboxReadState);
   i.useEffect(() => {
     X || ee(0 === Y.UNREAD.length)
   }, [Y, X, ee]);
@@ -251,7 +251,7 @@ function D(e) {
   }, [en, l, X, U, $, W]);
   let er = i.useMemo(() => {
     let e = Math.min(Math.max(2, en()), 20);
-    return (0, r.jsx)(x.Z, {
+    return (0, r.jsx)(E.Z, {
       withHeader: false,
       size: e
     })
@@ -312,7 +312,7 @@ function D(e) {
               var t;
               L.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: o()(Z.messagesPopout, h),
+            className: o()(Z.messagesPopout, f),
             onScroll: K,
             fade: true
           }, l), n = n = {

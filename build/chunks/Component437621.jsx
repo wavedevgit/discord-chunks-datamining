@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 437621, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -97,8 +97,8 @@ class M extends Chunk98597.ZP {
       mentionCount: u,
       connectChannelDropTarget: d,
       connectChannelDragSource: p,
-      connectDragPreview: f,
-      canReorderChannel: h,
+      connectDragPreview: h,
+      canReorderChannel: f,
       isSubscriptionGated: b,
       isFavoriteSuggestion: _,
       subtitle: O,
@@ -106,8 +106,8 @@ class M extends Chunk98597.ZP {
       embeddedApps: v,
       resolvedUnreadSetting: j,
       withGuildIcon: C,
-      enableActivities: E
-    } = this.props, x = Chunk9156 && null != Chunk430824 && Chunk430824.length > 0, S = (0, Chunk873696.D)(Chunk665906), I = (0, Chunk951288.jsx)("li", {
+      enableActivities: x
+    } = this.props, E = Chunk9156 && null != Chunk430824 && Chunk430824.length > 0, S = (0, Chunk873696.D)(Chunk665906), I = (0, Chunk951288.jsx)("li", {
       className: o()(this.getClassName(), {
         [Chunk55940.disabled]: this.isDisabled(),
         [Chunk55940.selected]: require
@@ -222,7 +222,7 @@ class M extends Chunk98597.ZP {
         }))
       });
       if (t.type === T.d4z.DM) {
-        let i = x.default.getUser(t.getRecipientId());
+        let i = E.default.getUser(t.getRecipientId());
         null != i && (0, u.jW)(e, async () => {
           let {
             default: e
@@ -273,31 +273,31 @@ function G(e) {
     unread: C.ZP.hasUnread(t.id),
     ackMessageId: C.ZP.ackMessageId(t.id),
     isLowImportanceMention: C.ZP.getIsMentionLowImportance(t.id)
-  })), g = (0, a.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([y.Z, j.Z], () => {
+  })), g = (0, a.e7)([x.ZP], () => x.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([y.Z, j.Z], () => {
     let e = y.Z.getChannel(t.parent_id);
     return {
       canManageChannel: j.Z.can(T.Plq.MANAGE_CHANNELS, t),
       canReorderChannel: true !== i && (n.id === w._ || (null != e ? j.Z.can(T.Plq.MANAGE_CHANNELS, e) : j.Z.can(T.Plq.MANAGE_CHANNELS, n)))
     }
   }), v = (0, a.e7)([_.Z], () => _.Z.shouldIndicateNewChannel(n.id, t.id)), {
-    needSubscriptionToAccess: x,
+    needSubscriptionToAccess: E,
     isSubscriptionGated: S
-  } = (0, b.Z)(t.id), I = (0, a.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), N = (0, h.$5)(t), Z = (0, p.NX)(t.id), A = (0, P.Z)({
+  } = (0, b.Z)(t.id), I = (0, a.e7)([x.ZP], () => x.ZP.isFavorite(n.id, t.id)), N = (0, f.$5)(t), Z = (0, p.NX)(t.id), A = (0, P.Z)({
     channel: t,
     isChannelCollapsed: false,
     isChannelSelected: s,
     isSubscriptionGated: S,
-    needSubscriptionToAccess: x,
+    needSubscriptionToAccess: E,
     isNewChannel: v,
     muted: o,
     enableActivities: Z,
     resolvedUnreadSetting: g
-  }), R = (0, f.ZP)(t);
+  }), R = (0, h.ZP)(t);
   return (0, r.jsx)(k, L(D({}, d, m, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
     isSubscriptionGated: S,
-    needSubscriptionToAccess: x,
+    needSubscriptionToAccess: E,
     isNewChannel: v && e.canBeNewChannel,
     isFavoriteSuggestion: l && !I,
     channelIsContentGated: N,

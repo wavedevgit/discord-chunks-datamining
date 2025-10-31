@@ -1,11 +1,11 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 439128, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   w: () => l
 });
 var Chunk81825 = require("./81825.js");
 
-function r(e, t, n) {
+function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,6 +21,6 @@ class l extends Chunk81825.Z {
     return this.password = e, this
   }
   constructor(e) {
-    super(), r(this, "id", true), r(this, "summary", true), r(this, "userIds", true), r(this, "password", true), this.id = e.pool_id, this.summary = e.summary, this.userIds = e.user_ids
+    super(), i(this, "id", true), i(this, "summary", true), i(this, "userIds", true), i(this, "password", true), this.id = e.pool_id, this.summary = e.summary, this.userIds = e.user_ids
   }
 }

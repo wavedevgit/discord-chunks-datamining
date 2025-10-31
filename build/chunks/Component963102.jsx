@@ -171,8 +171,8 @@ function P(e) {
         fromContent: a.j.ORBS_BALANCE_MENU
       })
     }, [A]),
-    Z = (0, x.eN)("collectibles_shop_header_bar"),
-    R = l.useCallback(() => {
+    R = (0, x.eN)("collectibles_shop_header_bar"),
+    Z = l.useCallback(() => {
       (null == d ? true : d.id) != null && (0, C.openUserProfileModal)({
         userId: d.id,
         section: k.oh.WISHLIST,
@@ -213,14 +213,14 @@ function P(e) {
             handleTransition: n
           }, l)
         })
-      }), (p || Z || O) && (0, r.jsxs)("div", {
+      }), (p || R || O) && (0, r.jsxs)("div", {
         className: T.alignedRightContent,
-        children: [Z && (0, r.jsx)(S.Z, {
+        children: [R && (0, r.jsx)(S.Z, {
           handleTransition: n,
           selectedTab: t
         }), O && (0, r.jsx)(c.P3F, {
           className: T.wishlistButton,
-          onClick: R,
+          onClick: Z,
           "aria-label": I.intl.string(I.t["7lZ31J"]),
           children: (0, r.jsx)(c.h_8, {
             size: "xs",

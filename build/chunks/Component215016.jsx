@@ -91,13 +91,13 @@ function M(e) {
   return ((0, g._M)(e) || (0, g.MO)(e)) && (e.pathname.toLowerCase().endsWith(".webp") || e.pathname.toLowerCase().endsWith(".avif"))
 }
 
-function k(e) {
+function j(e) {
   return ((0, g._M)(e) || (0, g.MO)(e)) && e.pathname.toLowerCase().endsWith(".gif")
 }
 
-function j(e) {
+function k(e) {
   let t = b.Z.toURLSafe(e),
-    n = null != t && k(t);
+    n = null != t && j(t);
   return null != t && (M(t) || n) ? (n && t.searchParams.set("format", "webp"), t.searchParams.set("animated", "true"), t.toString()) : e
 }
 class U extends Chunk647438.PureComponent {
@@ -147,7 +147,7 @@ class U extends Chunk647438.PureComponent {
       loaded: i
     } = this.state;
     return Chunk647438 ? (0, Chunk951288.jsx)("img", {
-      src: j(module),
+      src: k(module),
       width: exports,
       height: require,
       className: Chunk898404.gif,

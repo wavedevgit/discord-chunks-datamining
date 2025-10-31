@@ -108,8 +108,8 @@ function M(e) {
   } = (0, d.ZP)(), {
     trackUserProfileAction: M
   } = (0, m.KZ)(), {
-    live: k,
-    stream: j
+    live: j,
+    stream: k
   } = (0, g.Z)(t.id), {
     voiceChannel: U,
     voiceActivity: G
@@ -123,7 +123,7 @@ function M(e) {
     voiceActivityStatusEnabled: F
   } = (0, u.U)({
     location: "UserProfileStackedActivity"
-  }), V = F && null == j && null == G && null != U, H = (0, b.yi)(), Y = (null == H ? true : H.interactionSource) === I.n_.ACTIVITY, W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), q = i.useRef(null), [X, Q] = i.useReducer(x, L), {
+  }), V = F && null == k && null == G && null != U, H = (0, b.yi)(), Y = (null == H ? true : H.interactionSource) === I.n_.ACTIVITY, W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), q = i.useRef(null), [X, Q] = i.useReducer(x, L), {
     height: J,
     animationPhase: $
   } = X, ee = "awaitingInput" !== $, et = "animating" === $ || "done" === $, en = [], er = {
@@ -132,9 +132,9 @@ function M(e) {
     className: A.card,
     onClose: C
   };
-  null != j && en.push((0, r.jsx)(O.Z, N({
-    stream: j
-  }, er), "stream")), k.forEach((e, t) => {
+  null != k && en.push((0, r.jsx)(O.Z, N({
+    stream: k
+  }, er), "stream")), j.forEach((e, t) => {
     en.push((0, r.jsx)(y.Z, N({
       activity: e
     }, er), "live-".concat(t)))

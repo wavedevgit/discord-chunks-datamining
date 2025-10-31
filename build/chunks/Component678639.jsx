@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 678639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk665149 = require("./665149.jsx"),
@@ -25,13 +25,13 @@ function f(e) {
   let {
     store: t,
     dataGetter: n
-  } = e, [l, i] = r.useState(n(t));
-  return r.useEffect(() => {
-    let e = () => i(n(t));
+  } = e, [l, r] = i.useState(n(t));
+  return i.useEffect(() => {
+    let e = () => r(n(t));
     return e(), t.addChangeListener(e), () => {
       t.removeChangeListener(e)
     }
-  }, [t, n]), (0, a.jsx)(s.zJl, {
+  }, [t, n]), (0, a.jsx)(o.zJl, {
     className: x.inspectorContainer,
     children: (0, a.jsx)(d.Z, {
       data: l
@@ -86,7 +86,7 @@ function j(e) {
     store: t,
     initialHeight: n
   } = e, {
-    TabBar: r,
+    TabBar: i,
     renderSelectedTab: l
   } = (0, p.ZP)({
     tabs: v
@@ -95,10 +95,10 @@ function j(e) {
     className: x.subPanel,
     minHeight: 100,
     initialHeight: n,
-    children: [(0, a.jsx)(r, {}), (0, a.jsxs)(c.ZP, {
-      className: i()(h.headerBar, x.subPanelHeaderBar),
+    children: [(0, a.jsx)(i, {}), (0, a.jsxs)(c.ZP, {
+      className: r()(h.headerBar, x.subPanelHeaderBar),
       children: [(0, a.jsx)(c.ZP.Icon, {
-        icon: s.lO_,
+        icon: o.lO_,
         tooltip: t.getName()
       }), (0, a.jsx)(c.ZP.Title, {
         children: t.getName()
@@ -126,7 +126,7 @@ function _() {
     p = Chunk120356.find(e => e._dispatchToken === d);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
-    className: i()(Chunk451429.panel, Chunk104444.panel),
+    className: r()(Chunk451429.panel, Chunk104444.panel),
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk104444.toolbar,
       children: (0, Chunk951288.jsx)(Chunk481060.E1j, {

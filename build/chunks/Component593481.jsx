@@ -1,14 +1,14 @@
 /** Chunk was on 63141 **/
 /** chunk id: 593481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  QR: () => _,
-  Yj: () => y,
+  QR: () => y,
+  Yj: () => O,
   ZP: () => v
 });
 var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk294033 = require("./294033.jsx"),
   Chunk388032 = require("./388032.jsx"),
@@ -33,7 +33,7 @@ let f = e => e.stopPropagation(),
   m = () => (0, Chunk951288.jsx)("div", {
     className: Chunk866497.divider
   }),
-  _ = (e, t, n) => (0, r.jsx)("div", {
+  y = (e, t, n) => (0, r.jsx)("div", {
     className: u.keybindMessage,
     children: d.intl.format(n, {
       keybind: t,
@@ -43,11 +43,11 @@ let f = e => e.stopPropagation(),
       }, n)
     })
   }),
-  y = (e, t) => (0, r.jsx)("div", {
+  O = (e, t) => (0, r.jsx)("div", {
     className: u.hintSubtleText,
     children: t
   });
-class O extends(i = Chunk647438.PureComponent) {
+class _ extends(i = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     let {
       expand: n
@@ -113,15 +113,15 @@ class O extends(i = Chunk647438.PureComponent) {
         confirmText: t,
         onConfirmClick: n,
         onCancelClick: i,
-        hint: l
+        hint: o
       },
       state: {
-        expanded: a
+        expanded: s
       }
     } = this;
-    if (!a) return null != Chunk120356 ? this.renderHint() : null;
+    if (!s) return null != Chunk120356 ? this.renderHint() : null;
     if (null != this.props.renderFooter) {
-      let e = this.props.renderFooter(a);
+      let e = this.props.renderFooter(s);
       return null != module ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
         children: [(0, Chunk951288.jsx)(m, {}), module]
       }, "footer-custom-content") : null
@@ -171,7 +171,7 @@ class O extends(i = Chunk647438.PureComponent) {
           className: Chunk866497.title,
           children: "function" == typeof exports ? exports(this.handleDismiss) : exports
         }), null != module ? (0, Chunk951288.jsx)("div", {
-          className: a()(Chunk866497.body, Chunk197571.marginTop4),
+          className: s()(Chunk866497.body, Chunk197571.marginTop4),
           style: {
             WebkitLineClamp: require,
             lineClamp: require
@@ -195,7 +195,7 @@ class O extends(i = Chunk647438.PureComponent) {
       onMouseOver: require ? true : this.handleMouseEnter,
       onFocus: require ? true : this.handleMouseEnter,
       onClick: null != module ? module : true,
-      className: a()(Chunk866497.container, {
+      className: s()(Chunk866497.container, {
         [Chunk866497.themePrimary]: true,
         [Chunk866497.clickable]: null != module && !exports
       }),
@@ -234,9 +234,9 @@ class O extends(i = Chunk647438.PureComponent) {
     }
   }
 }
-p(O, "defaultProps", {
+p(_, "defaultProps", {
   maxBodyLines: true,
   expand: false,
   disabled: false
 });
-let v = O
+let v = _

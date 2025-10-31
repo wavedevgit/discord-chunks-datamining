@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 32574, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -16,15 +16,15 @@ var Chunk442837 = require("./442837.js"),
 let m = function(e) {
   let {
     onSubmit: t
-  } = e, n = (0, r.e7)([c.default], () => c.default.getCurrentUser());
+  } = e, n = (0, i.e7)([c.default], () => c.default.getCurrentUser());
   return (0, a.jsx)(u.Q, {
     title: "Lorem ipsum dolor",
     actions: [{
       text: "Consectetur adipiscing",
       variant: "primary",
       onClick: () => {
-        (null == n ? true : n.ageVerificationStatus) === i.F$.UNVERIFIED ? o.Z.showAgeVerificationGetStartedModal({
-          entryPoint: s.cU.SAFETY_FLOWS,
+        (null == n ? true : n.ageVerificationStatus) === r.F$.UNVERIFIED ? s.Z.showAgeVerificationGetStartedModal({
+          entryPoint: o.cU.SAFETY_FLOWS,
           onClose: () => t({
             type: d.rY.Empty
           })

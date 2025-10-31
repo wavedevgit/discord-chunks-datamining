@@ -295,7 +295,7 @@ function ep(e) {
     presenceActivity: x
   } = e, L = (0, O.A)(S), M = (0, p.ye)(S), {
     bot: U
-  } = S, G = j.ZP.getApplicationIconURL({
+  } = S, G = k.ZP.getApplicationIconURL({
     id: S.id,
     icon: S.icon,
     bot: U
@@ -326,7 +326,7 @@ function ep(e) {
     isEmbeddedApplication: M,
     isFrameApplication: L,
     isGameLaunchable: ei
-  }), ep = eu(x, N, P, S), eh = (0, Y.g)(N, x), em = (0, F.L)(x, P, S, C), eg = (0, l.e7)([k.Z], () => null != x && null != x.application_id && k.Z.getState(x.application_id, en.mFx.JOIN) === en.OcF.LOADING), eE = i.useMemo(() => ec ? {
+  }), ep = eu(x, N, P, S), eh = (0, Y.g)(N, x), em = (0, F.L)(x, P, S, C), eg = (0, l.e7)([j.Z], () => null != x && null != x.application_id && j.Z.getState(x.application_id, en.mFx.JOIN) === en.OcF.LOADING), eE = i.useMemo(() => ec ? {
     label: ea.intl.string(ea.t.VJlc0S),
     trackingArea: m.j_.JOIN,
     submitting: eg,

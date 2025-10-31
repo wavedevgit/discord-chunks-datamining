@@ -1,12 +1,13 @@
-/** Chunk was on 42340 **/
-/** chunk id: 120786, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 120786, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  L: () => _
+  L: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk665923 = require("./665923.js"),
   Chunk477154 = require("./477154.js"),
   Chunk387888 = require("./387888.js");
-let j = () => {
+let y = () => {
     let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
     return (0, Chunk951288.jsx)("div", {
       className: Chunk97127.assetContainer,
@@ -43,41 +44,41 @@ let j = () => {
       })
     })
   },
-  _ = e => {
+  O = e => {
     let {
       ctaText: t,
       ctaOnClick: n,
-      analyticsPage: l,
-      linkPreText: o = x.intl.string(x.t["5qZv9E"]),
-      linkText: d = x.intl.string(x.t.XRdyjz)
-    } = e, u = r.useCallback(() => {
-      null != l && (0, p.Y)({
-        pageType: l,
-        sectionType: h.jXE.ORBS_BALANCE_MENU,
-        ctaObject: h.qAy.ORBS_LEARN_MORE_LINK
+      analyticsPage: a,
+      linkPreText: s = h.intl.string(h.t["5qZv9E"]),
+      linkText: u = h.intl.string(h.t.XRdyjz)
+    } = e, d = i.useCallback(() => {
+      null != a && (0, _.Y)({
+        pageType: a,
+        sectionType: p.jXE.ORBS_BALANCE_MENU,
+        ctaObject: p.qAy.ORBS_LEARN_MORE_LINK
       })
-    }, [l]);
-    return (0, a.jsxs)("div", {
-      className: i()(g.container, f.baseCardOutline),
-      children: [(0, a.jsx)(j, {}), (0, a.jsx)(s.zxk, {
+    }, [a]);
+    return (0, r.jsxs)("div", {
+      className: o()(m.container, g.baseCardOutline),
+      children: [(0, r.jsx)(y, {}), (0, r.jsx)(l.zxk, {
         text: t,
         variant: "primary",
         size: "sm",
         onClick: n,
         fullWidth: true
-      }), (0, a.jsxs)("div", {
-        className: g.linkContainer,
-        children: [true !== o && (0, a.jsxs)(c.Text, {
+      }), (0, r.jsxs)("div", {
+        className: m.linkContainer,
+        children: [true !== s && (0, r.jsxs)(c.Text, {
           variant: "text-xs/normal",
-          className: g.linkPreText,
-          children: [o, "\xa0"]
-        }), (0, a.jsx)(c.Anchor, {
+          className: m.linkPreText,
+          children: [s, "\xa0"]
+        }), (0, r.jsx)(c.Anchor, {
           target: "_blank",
           rel: "author",
-          href: m.Z.getArticleURL(h.BhN.ORBS_FAQ),
-          className: g.learnMoreLink,
-          onClick: u,
-          children: d
+          href: f.Z.getArticleURL(p.BhN.ORBS_FAQ),
+          className: m.learnMoreLink,
+          onClick: d,
+          children: u
         })]
       })]
     })

@@ -37,8 +37,8 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
   x = [C, C, C, C],
   L = (N + R) * 2 + C,
   M = w + 2 * D,
-  k = 7,
-  j = e => {
+  j = 7,
+  k = e => {
     let {
       activeIndex: t,
       stickerPickerCategories: n,
@@ -96,8 +96,8 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       let x = t === a,
         L = n[a],
         M = n[a + 1],
-        k = null != M && L.type === y.Ih.GUILD && M.type !== y.Ih.GUILD,
-        j = L.type === y.Ih.PACK,
+        j = null != M && L.type === y.Ih.GUILD && M.type !== y.Ih.GUILD,
+        k = L.type === y.Ih.PACK,
         U = "",
         G = null;
       if (L.type === y.Ih.GUILD || L.type === y.Ih.EMPTY_GUILD_UPSELL) {
@@ -106,7 +106,7 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
           guild: e,
           isSelected: x
         }))
-      } else if (j) {
+      } else if (k) {
         let e = b.Z.getStickerPack(L.id);
         null != e && (U = e.name, G = (0, r.jsx)(v.Z, {
           disableAnimation: !x || g,
@@ -125,8 +125,8 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
             children: (0, r.jsx)(c.P3F, {
               "aria-label": U,
               className: o()(A.stickerCategory, {
-                [A.firstPartyCategory]: j,
-                [A.firstPartyCategorySelected]: !g && x && j
+                [A.firstPartyCategory]: k,
+                [A.firstPartyCategorySelected]: !g && x && k
               }),
               onClick: () => {
                 L.type === y.Ih.PACK && m.default.track(I.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
@@ -139,7 +139,7 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
               children: G
             })
           })
-        }), k ? (0, r.jsx)("hr", {
+        }), j ? (0, r.jsx)("hr", {
           className: A.guildCategorySeparator
         }, "separator") : null]
       }, L.id)
@@ -181,13 +181,13 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       }
     }, [d]);
     i.useLayoutEffect(() => {
-      l(m >= k)
+      l(m >= j)
     }, [m]);
     let {
       renderCategoryListItem: b,
       rowHeight: O,
       onScroll: v
-    } = j({
+    } = k({
       activeIndex: u,
       stickerPickerCategories: d,
       categoryListRef: a,

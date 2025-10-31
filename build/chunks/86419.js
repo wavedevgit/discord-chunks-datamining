@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   $b: () => G,
-  Bu: () => k,
-  ES: () => j,
+  Bu: () => j,
+  ES: () => k,
   Eq: () => U,
   Gv: () => T,
   Hy: () => y,
@@ -181,7 +181,7 @@ function M(e, t, n) {
   L(r.type, t, a.length > 0 ? a : [])
 }
 
-function k(e, t, n) {
+function j(e, t, n) {
   let r = P(e);
   if (null == r) return;
   let i = r.games.find(e => e.applicationId === t);
@@ -196,7 +196,7 @@ function k(e, t, n) {
   c.Z.setPendingWidgets(l)
 }
 
-function j(e, t) {
+function k(e, t) {
   var n, r, i, o;
   let l, u = P(e),
     d = T(e);

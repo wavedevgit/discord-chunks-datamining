@@ -79,8 +79,8 @@ function C(e) {
   let {
     buttonType: x,
     description: L
-  } = (0, y.Z)(t, n, v, C), M = x === y.y.JOIN_GUILD, k = !E && w, j = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != C ? d.JO.createFromDiscoverableGuild(C) : true, [O, v, C]);
-  return k ? (0, r.jsx)(_.SE, {}) : (0, r.jsxs)("div", {
+  } = (0, y.Z)(t, n, v, C), M = x === y.y.JOIN_GUILD, j = !E && w, k = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != C ? d.JO.createFromDiscoverableGuild(C) : true, [O, v, C]);
+  return j ? (0, r.jsx)(_.SE, {}) : (0, r.jsxs)("div", {
     className: S.infoContainer,
     children: [(0, r.jsxs)(_.W_, {
       children: [(0, r.jsxs)("div", {
@@ -95,7 +95,7 @@ function C(e) {
           variant: "text-sm/normal",
           children: L
         })]
-      }), null != j && (0, r.jsxs)("div", {
+      }), null != k && (0, r.jsxs)("div", {
         className: S.infoExpandedGuildContainer,
         children: [(0, r.jsx)(o.xvT, {
           variant: "eyebrow",
@@ -105,7 +105,7 @@ function C(e) {
         }), (0, r.jsx)("div", {
           className: S.infoExpandedGuildInfo,
           children: (0, r.jsx)(f.Oe, {
-            expressionSourceGuild: j,
+            expressionSourceGuild: k,
             hasJoinedExpressionSourceGuild: v,
             isDisplayingJoinGuildButtonInPopout: M
           })

@@ -53,8 +53,8 @@ function N(e) {
   }), x = (0, m.Z)({
     userId: t.id,
     onAction: D
-  }), L = (0, o.e7)([f.Z], () => f.Z.getGuild(i.guild_id)), M = (0, p.Z)(i), k = (0, d.ZP)(i), {
-    channelStatusEnabled: j
+  }), L = (0, o.e7)([f.Z], () => f.Z.getGuild(i.guild_id)), M = (0, p.Z)(i), j = (0, d.ZP)(i), {
+    channelStatusEnabled: k
   } = (0, _.D)({
     location: "UserProfileVoiceActivityCard"
   }), U = () => {
@@ -81,7 +81,7 @@ function N(e) {
       className: a()(C.card, N),
       onAction: D,
       onClose: R,
-      "aria-label": "".concat(B, ", ").concat(k),
+      "aria-label": "".concat(B, ", ").concat(j),
       children: [(0, r.jsx)(b.Z, {
         text: B,
         tags: U(),
@@ -104,7 +104,7 @@ function N(e) {
               guild: L,
               onAction: D,
               onClose: R
-            }), j && i.isGuildVoice() && (0, r.jsx)(v.Z, {
+            }), k && i.isGuildVoice() && (0, r.jsx)(v.Z, {
               voiceChannel: i,
               onAction: D,
               onClose: R

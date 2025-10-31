@@ -1,7 +1,7 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 603592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,11 +13,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk682662 = require("./682662.jsx"),
   Chunk662146 = require("./662146.jsx"),
   Chunk790952 = require("./790952.js");
-let f = Chunk647438.forwardRef(function(e, t) {
+let h = Chunk647438.forwardRef(function(e, t) {
   var n, l;
   let {
-    id: f,
-    onClick: h,
+    id: h,
+    onClick: f,
     onContextMenu: g,
     icon: m,
     selected: b,
@@ -27,12 +27,12 @@ let f = Chunk647438.forwardRef(function(e, t) {
     lowerBadgeSize: v,
     showPill: j = true,
     className: C,
-    "aria-label": E,
-    children: x,
+    "aria-label": x,
+    children: E,
     onMouseEnter: S,
     onMouseLeave: I,
     onMouseDown: P
-  } = e, N = (0, a.Ie)(f), [Z, T] = i.useState(false);
+  } = e, N = (0, a.Ie)(h), [Z, T] = i.useState(false);
   return (0, r.jsxs)(u.H, {
     children: [j ? (0, r.jsx)("div", {
       className: p.pill,
@@ -77,8 +77,8 @@ let f = Chunk647438.forwardRef(function(e, t) {
           className: o()(p.circleIconButton, C, {
             [p.selected]: b || Z
           }),
-          onClick: h,
-          "aria-label": "string" == typeof _ && null == E ? _ : E,
+          onClick: f,
+          "aria-label": "string" == typeof _ && null == x ? _ : x,
           "aria-selected": b,
           onContextMenu: g,
           focusProps: {
@@ -100,6 +100,6 @@ let f = Chunk647438.forwardRef(function(e, t) {
           Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
         }), n))
       })
-    }), x]
+    }), E]
   })
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 18998, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -14,7 +14,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk247060 = require("./247060.js");
 
-function h(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,7 +30,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -116,7 +116,7 @@ class b extends Chunk647438.Component {
     }
   }
   constructor(e) {
-    super(e), h(this, "_timeout", true), this.state = {
+    super(e), f(this, "_timeout", true), this.state = {
       translateY: new u.Z.Value,
       reduceMotion: false
     }
@@ -160,10 +160,10 @@ class _ extends(r = Chunk647438.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "state", {
+    super(...e), f(this, "state", {
       unread: null,
       mention: null
-    }), h(this, "calculateState", c()(() => {
+    }), f(this, "calculateState", c()(() => {
       let {
         items: e,
         expandedFolders: t,
@@ -202,7 +202,7 @@ class _ extends(r = Chunk647438.PureComponent) {
         mention: a,
         unread: s
       })
-    }, 200)), h(this, "handleClick", e => {
+    }, 200)), f(this, "handleClick", e => {
       e.preventDefault(), e.stopPropagation();
       let {
         unread: t,
@@ -214,7 +214,7 @@ class _ extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-h(_, "contextType", Chunk481060.Sfi), h(_, "defaultProps", {
+f(_, "contextType", Chunk481060.Sfi), f(_, "defaultProps", {
   className: Chunk247060.container,
   reverse: false,
   hide: false,

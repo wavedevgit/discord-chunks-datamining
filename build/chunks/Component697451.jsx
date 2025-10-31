@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk724913 = require("./724913.js");
 
-function k(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -236,7 +236,7 @@ function W(e, t, n) {
       var {
         onClick: t
       } = e, i = B(e, ["onClick"]);
-      if (a.type === x.uaV.CHAT_INPUT_COMMAND || a.type === x.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(f.P3F, G(j({}, i), {
+      if (a.type === x.uaV.CHAT_INPUT_COMMAND || a.type === x.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(f.P3F, G(k({}, i), {
         tag: "span",
         onClick: s,
         innerRef: n,
@@ -263,7 +263,7 @@ function W(e, t, n) {
             })
           },
           t = (0, b.XZ)(c);
-        return (0, r.jsx)(f.P3F, G(j({}, i), {
+        return (0, r.jsx)(f.P3F, G(k({}, i), {
           tag: "span",
           onClick: e,
           innerRef: n,
@@ -296,7 +296,7 @@ function z(e) {
   }, {
     autoTrackExposure: true
   }), n = t ? f.iWm : f.jje;
-  return (0, r.jsx)(n, j({}, e))
+  return (0, r.jsx)(n, k({}, e))
 }
 
 function q(e) {
@@ -312,7 +312,7 @@ function q(e) {
     b = (0, d.e7)([S.default], () => S.default.getCurrentUser()),
     A = i.useRef(null),
     C = i.useRef(null),
-    P = i.useMemo(() => (e, t, n) => (l()(null != t, "ExecutedCommand: user cannot be undefined"), l()(null != b, "ExecutedCommand: currentUser cannot be undefined"), l()(null != s, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(I.Z, G(j({}, e), {
+    P = i.useMemo(() => (e, t, n) => (l()(null != t, "ExecutedCommand: user cannot be undefined"), l()(null != b, "ExecutedCommand: currentUser cannot be undefined"), l()(null != s, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(I.Z, G(k({}, e), {
       user: t,
       currentUser: b,
       guildId: s.guild_id,
@@ -320,14 +320,14 @@ function q(e) {
       messageId: a.id,
       newAnalyticsLocations: n
     }))), [b, s, a.id]),
-    x = i.useMemo(() => e => (l()(null != s, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(w.Z, G(j({}, e), {
+    x = i.useMemo(() => e => (l()(null != s, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(w.Z, G(k({}, e), {
       channel: s,
       messageId: a.id,
       interactionData: a.interactionData
     }))), [s, a.id, a.interactionData]),
-    k = (0, O.t0)(a),
-    U = (null == k ? true : k.type) === _.B8.APPLICATION_COMMAND && null != k.target_user ? new T.Z(k.target_user) : null,
-    B = (null == k ? true : k.type) === _.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
+    j = (0, O.t0)(a),
+    U = (null == j ? true : j.type) === _.B8.APPLICATION_COMMAND && null != j.target_user ? new T.Z(j.target_user) : null,
+    B = (null == j ? true : j.type) === _.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
     Z = (0, R.Sw)(null == (t = a.interaction) ? true : t.user, s),
     F = (0, R.Sw)(U, s),
     V = i.useMemo(() => e.compact ? (0, D.Z)((0, N.vc)(u()(), "LT")) : null, [e.compact]),

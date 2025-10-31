@@ -97,8 +97,8 @@ function R(e) {
     analyticsSourceLocation: x,
     confirmationFooter: L,
     paymentModalBanner: M,
-    isGift: k = false,
-    giftMessage: j,
+    isGift: j = false,
+    giftMessage: k,
     giftStyle: U,
     giftingOrigin: G,
     subscriptionTier: B,
@@ -115,7 +115,7 @@ function R(e) {
   return (0, s.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("17938"), n.e("94758"), n.e("84992"), n.e("84743")]).then(n.bind(n, 7305));
+    } = await Promise.all([n.e("94758"), n.e("84992"), n.e("3270")]).then(n.bind(n, 7305));
     return t => {
       var {
         onClose: n
@@ -124,8 +124,8 @@ function R(e) {
         loadId: Q,
         subscriptionTier: B,
         skuId: et,
-        isGift: k,
-        giftMessage: j,
+        isGift: j,
+        giftMessage: k,
         giftStyle: U,
         giftingOrigin: G,
         giftRecipient: W,
@@ -135,7 +135,7 @@ function R(e) {
           if (en) return;
           en = true, g.S.dispatch(O.CkL.PREMIUM_PAYMENT_MODAL_CLOSED);
           let r = () => {
-            n(), null == S || S(e), e && (null == R || R(), (0, p.M)(k, $, t) && g.S.dispatch(O.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
+            n(), null == S || S(e), e && (null == R || R(), (0, p.M)(j, $, t) && g.S.dispatch(O.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
               type: "PREMIUM_PAYMENT_MODAL_CLOSE",
               didSucceed: e
             })
@@ -145,7 +145,7 @@ function R(e) {
           }, y.P) : r()
         },
         onComplete: e => {
-          X = true, null == N || N(), (0, p.M)(k, $, (0, E.k5)(null == e ? true : e.subscription)) && (0, f.H)(true)
+          X = true, null == N || N(), (0, p.M)(j, $, (0, E.k5)(null == e ? true : e.subscription)) && (0, f.H)(true)
         },
         onSubscriptionConfirmation: R,
         analyticsLocations: P,
@@ -180,7 +180,7 @@ function R(e) {
         location: null != D ? D : w,
         source: x,
         subscription_type: O.NYc.PREMIUM,
-        is_gift: k,
+        is_gift: j,
         sku_id: et,
         eligible_for_trial: null != Z,
         application_id: H,

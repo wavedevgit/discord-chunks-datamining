@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 361045, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   n: () => c
@@ -17,45 +17,45 @@ function c(e) {
     onCTA: c
   } = e;
   return (0, a.jsxs)("div", {
-    className: s.popup,
+    className: o.popup,
     children: [(0, a.jsxs)("div", {
-      className: s.background,
+      className: o.background,
       children: [(0, a.jsx)("div", {
-        className: s.blur0
+        className: o.blur0
       }), (0, a.jsx)("div", {
-        className: s.blur1
+        className: o.blur1
       }), (0, a.jsx)("div", {
-        className: s.blur2
+        className: o.blur2
       })]
     }), (0, a.jsxs)("div", {
-      className: s.content,
-      children: [(0, a.jsx)(r.P3F, {
-        className: s.closeIcon,
-        onClick: () => t(i.L.USER_DISMISS),
-        children: (0, a.jsx)(r.Dio, {})
+      className: o.content,
+      children: [(0, a.jsx)(i.P3F, {
+        className: o.closeIcon,
+        onClick: () => t(r.L.USER_DISMISS),
+        children: (0, a.jsx)(i.Dio, {})
       }), (0, a.jsx)("img", {
         src: n(414190),
-        className: s.art,
+        className: o.art,
         alt: ""
       }), (0, a.jsxs)("div", {
-        children: [(0, a.jsxs)(r.Heading, {
+        children: [(0, a.jsxs)(i.Heading, {
           variant: "heading-md/semibold",
           color: "header-primary",
-          className: s.heading,
-          children: [o.intl.string(o.t.MLt8H4), (0, a.jsx)(l.Z, {
-            className: s.betaTag
+          className: o.heading,
+          children: [s.intl.string(s.t.MLt8H4), (0, a.jsx)(l.Z, {
+            className: o.betaTag
           })]
-        }), (0, a.jsx)(r.Text, {
+        }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: o.intl.string(o.t["l+lSLp"])
+          children: s.intl.string(s.t["l+lSLp"])
         })]
-      }), (0, a.jsx)(r.Button, {
+      }), (0, a.jsx)(i.Button, {
         variant: "primary",
-        text: o.intl.string(o.t["9WdoB+"]),
+        text: s.intl.string(s.t["9WdoB+"]),
         fullWidth: true,
         onClick: () => {
-          t(i.L.TAKE_ACTION), c()
+          t(r.L.TAKE_ACTION), c()
         }
       })]
     })]

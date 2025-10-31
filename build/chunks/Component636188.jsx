@@ -73,14 +73,14 @@ function x(e, t) {
 let L = 25,
   M = 720;
 
-function k() {
+function j() {
   return [{
     name: Chunk388032.intl.string(Chunk388032.t["Sp2NF+"]),
     extensions: ["jpg", "jpeg", "png", "gif", "mp4"]
   }]
 }
 
-function j(e) {
+function k(e) {
   let {
     icon: t,
     onClick: n,
@@ -245,7 +245,7 @@ function Z(e) {
   return (0, r.jsxs)(c.jSM, {
     text: l,
     className: R.newBackgroundTooltipContainer,
-    children: [(0, r.jsxs)(j, {
+    children: [(0, r.jsxs)(k, {
       className: R.__invalid_backgroundOptionBlurred,
       disabled: i,
       icon: c.FmF,
@@ -299,7 +299,7 @@ function V(e) {
     disabled: i
   } = e, a = (0, c.vRw)(), o = i ? N.intl.formatToPlainString(N.t.ykGFeD, {
     maxCustomBackgrounds: L
-  }) : N.intl.string(N.t.Qx0tFc), s = k();
+  }) : N.intl.string(N.t.Qx0tFc), s = j();
 
   function l() {
     (0, c.ZDy)(async () => {
@@ -350,12 +350,12 @@ function H(e) {
     value: m,
     children: (0, r.jsxs)("div", {
       className: d ? R.backgroundOptionsSmall : R.backgroundOptionsLarge,
-      children: [(0, r.jsx)(j, {
+      children: [(0, r.jsx)(k, {
         selected: null == a,
         icon: c.t6m,
         onClick: () => o(null),
         text: N.intl.string(N.t.fUdMeO)
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(k, {
         selected: a === I.f7,
         icon: c.yMH,
         onClick: () => o(I.f7),

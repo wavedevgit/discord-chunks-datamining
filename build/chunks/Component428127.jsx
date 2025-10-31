@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 428127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -29,8 +29,8 @@ function _(e) {
     jumpToVoiceChannels: l
   } = e, a = n.getCategoryFromSection(n.voiceChannelsSectionNumber), s = (0, u.Z)(n.id), p = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), l()
-  }, [l]), h = null != (t = null == a ? true : a.getChannelRecords()) ? t : [], b = (0, f.c4)({
-    channels: h,
+  }, [l]), f = null != (t = null == a ? true : a.getChannelRecords()) ? t : [], b = (0, h.c4)({
+    channels: f,
     selectedChannelId: null,
     selectedVoiceChannelId: null,
     voiceStates: s
@@ -69,15 +69,15 @@ function O(e) {
     jumpToVoiceChannels: u,
     jumpToChannel: d
   } = e, {
-    bottomBar: f,
+    bottomBar: h,
     topBar: O
-  } = (0, s.cj)([h.Z], () => h.Z.getUnreadStateForGuildId(n.id)), y = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
+  } = (0, s.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), y = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
     mode: v,
     mentionCount: j,
     targetChannelId: C
-  } = "bottom" === t ? f : O, E = v === h.x.HIDDEN, x = (0, c.q_F)({
+  } = "bottom" === t ? h : O, x = v === f.x.HIDDEN, E = (0, c.q_F)({
     to: {
-      transform: E ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
+      transform: x ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
   }, y ? "respect-motion-settings" : "animate-never"), S = i.useCallback(e => {
@@ -90,11 +90,11 @@ function O(e) {
     }),
     children: (0, r.jsx)(a.animated.div, {
       className: m.containerPadding,
-      style: x,
-      "aria-hidden": E,
-      children: v === h.x.HIDDEN ? (0, r.jsx)("div", {
+      style: E,
+      "aria-hidden": x,
+      children: v === f.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
-      }) : v === h.x.UNREAD ? (0, r.jsxs)(c.P3F, {
+      }) : v === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
         onClick: S,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
@@ -115,7 +115,7 @@ function O(e) {
           className: m.barText,
           children: g.intl.string(g.t.FCRiT3)
         })]
-      }) : v === h.x.MENTIONS ? (0, r.jsx)(c.P3F, {
+      }) : v === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
         onClick: S,
         children: (0, r.jsx)(c.Text, {
@@ -126,7 +126,7 @@ function O(e) {
             count: j
           })
         })
-      }) : v === h.x.VOICE_CHANNELS ? (0, r.jsx)(_, {
+      }) : v === f.x.VOICE_CHANNELS ? (0, r.jsx)(_, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

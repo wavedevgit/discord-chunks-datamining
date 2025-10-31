@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 653577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -28,17 +28,17 @@ function _(e) {
     onClick: O,
     enableHangStatus: y,
     showEmptyChannelTopic: v
-  } = e, j = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), C = null != j && j.length > 0, E = (0, u.ZP)(t, true), x = (!y || !!v) && E, S = null != _ && _.length > 0;
+  } = e, j = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), C = null != j && j.length > 0, x = (0, u.ZP)(t, true), E = (!y || !!v) && x, S = null != _ && _.length > 0;
   if (i.useEffect(() => {
-      C && f.default.track(h.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+      C && h.default.track(f.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
     }, [C, t.id, t.guild_id]), null == t.guild_id) return null;
-  let I = o()(m.statusDiv, n && x ? m.hoverable : null);
+  let I = o()(m.statusDiv, n && E ? m.hoverable : null);
   return C ? (0, r.jsx)(c.P3F, {
     className: I,
-    onClick: x ? O : true,
+    onClick: E ? O : true,
     children: (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
@@ -48,7 +48,7 @@ function _(e) {
         })
       })
     })
-  }) : n && x && (!S || l) ? (0, r.jsxs)(c.P3F, {
+  }) : n && E && (!S || l) ? (0, r.jsxs)(c.P3F, {
     className: I,
     onClick: O,
     children: [(0, r.jsx)(c.Text, {

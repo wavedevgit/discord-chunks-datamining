@@ -95,8 +95,8 @@ let S = {},
   },
   L = {},
   M = {},
-  k = "null",
-  j = new Set,
+  j = "null",
+  k = new Set,
   U = new Set,
   G = {},
   B = {};
@@ -414,7 +414,7 @@ class ep extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getMutedChannels(e) {
     var t;
-    return null != (t = L[e]) ? t : j
+    return null != (t = L[e]) ? t : k
   }
   isChannelMuted(e, t) {
     var n;
@@ -538,7 +538,7 @@ class ep extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getAddedToMessages() {
     var e;
-    return null != (e = M[k]) ? module : U
+    return null != (e = M[j]) ? module : U
   }
   get accountNotificationSettings() {
     return R

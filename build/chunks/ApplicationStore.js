@@ -210,7 +210,7 @@ function M(e) {
   _.set(t, r)
 }
 
-function k(e) {
+function j(e) {
   let {
     payments: t
   } = e, n = new Set;
@@ -222,7 +222,7 @@ function k(e) {
   return n.size > 0
 }
 
-function j(e) {
+function k(e) {
   var t;
   let {
     payment: n
@@ -362,8 +362,8 @@ let K = new W(Chunk570140.Z, {
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: L,
   ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: L,
   GUILD_APPLICATIONS_FETCH_SUCCESS: M,
-  BILLING_PAYMENTS_FETCH_SUCCESS: k,
-  PAYMENT_UPDATE: j,
+  BILLING_PAYMENTS_FETCH_SUCCESS: j,
+  PAYMENT_UPDATE: k,
   INVITE_RESOLVE_SUCCESS: G,
   GIFT_CODE_RESOLVE_SUCCESS: U,
   LIBRARY_FETCH_SUCCESS: R,

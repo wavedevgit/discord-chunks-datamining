@@ -82,7 +82,7 @@ function f(e) {
     e !== P.current && (P.current = e, I(e))
   }, []), C = i.useCallback(e => {
     e !== w.current && (w.current = e, S(e))
-  }, []), N = _ || v, R = p || T, P = i.useRef(null), w = i.useRef(null), D = i.useRef(E), x = null != m, L = d(m), M = d(f), k = d(g), j = i.useCallback(() => {
+  }, []), N = _ || v, R = p || T, P = i.useRef(null), w = i.useRef(null), D = i.useRef(E), x = null != m, L = d(m), M = d(f), j = d(g), k = i.useCallback(() => {
     if (!P.current || !w.current) return;
     let e = {
       placement: t,
@@ -92,13 +92,13 @@ function f(e) {
     M.current && (e.platform = M.current), (0, r.oo)(P.current, w.current, e).then(e => {
       let t = {
         ...e,
-        isPositioned: false !== k.current
+        isPositioned: false !== j.current
       };
       U.current && !l(D.current, t) && (D.current = t, a.flushSync(() => {
         b(t)
       }))
     })
-  }, [y, t, n, M, k]);
+  }, [y, t, n, M, j]);
   s(() => {
     false === g && D.current.isPositioned && (D.current.isPositioned = false, b(e => ({
       ...e,
@@ -110,10 +110,10 @@ function f(e) {
     U.current = false
   }), []), s(() => {
     if (N && (P.current = N), R && (w.current = R), N && R) {
-      if (L.current) return L.current(N, R, j);
-      j()
+      if (L.current) return L.current(N, R, k);
+      k()
     }
-  }, [N, R, j, L, x]);
+  }, [N, R, k, L, x]);
   let G = i.useMemo(() => ({
       reference: P,
       floating: w,
@@ -147,11 +147,11 @@ function f(e) {
     }, [n, h, B.floating, E.x, E.y]);
   return i.useMemo(() => ({
     ...E,
-    update: j,
+    update: k,
     refs: G,
     elements: B,
     floatingStyles: Z
-  }), [E, j, G, B, Z])
+  }), [E, k, G, B, Z])
 }
 let _ = (e, t) => ({
     ...(0, r.cv)(e),

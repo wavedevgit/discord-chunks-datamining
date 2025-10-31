@@ -1,32 +1,32 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 789639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  i: () => o
+  i: () => s
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk709014 = require("./709014.jsx");
-let i = {
+let r = {
     all: {
       name: "all",
       start: 0,
       duration: 66
     }
   },
-  o = () => {
+  s = () => {
     let e = Chunk647438.useRef(null),
       t = Chunk647438.useCallback(() => {
         null != module.current && module.current.play("all")
       }, []),
-      o = Chunk647438.useCallback(() => {
+      s = Chunk647438.useCallback(() => {
         null != module.current && module.current.play("all")
       }, []),
-      s = Chunk647438.useCallback(() => {
+      o = Chunk647438.useCallback(() => {
         null != module.current && module.current.stopIfPlaying("all")
       }, []),
       c = Chunk647438.useCallback(t => {
-        var r, o;
-        return (0, a.jsx)(l.L, (r = function(e) {
+        var i, s;
+        return (0, a.jsx)(l.L, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               a = Object.keys(n);
@@ -43,25 +43,25 @@ let i = {
             })
           }
           return e
-        }({}, t), o = o = {
+        }({}, t), s = s = {
           src: () => n.e("2199").then(n.t.bind(n, 71307, 19)),
           ref: e,
-          markers: i
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          markers: r
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var a = Object.getOwnPropertySymbols(e);
             n.push.apply(n, a)
           }
           return n
-        })(Object(o)).forEach(function(e) {
-          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
-        }), r))
+        })(Object(s)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+        }), i))
       }, []);
     return {
       events: {
-        onMouseEnter: o,
-        onMouseLeave: s
+        onMouseEnter: s,
+        onMouseLeave: o
       },
       play: exports,
       getDuration: Chunk647438.useCallback(() => {

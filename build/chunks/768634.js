@@ -1,12 +1,13 @@
-/** Chunk was on 17938 **/
-/** chunk id: 768634, original params: e,s,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 768634, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  C: () => o
+  C: () => s
 });
 var Chunk427164 = require("./427164.js"),
   Chunk111361 = require("./111361.js"),
   Chunk474936 = require("./474936.js");
-let i = (0, Chunk427164.le)({
+let o = (0, Chunk427164.le)({
   name: "2025-09-nitro-badge-churn-modal",
   kind: "user",
   defaultConfig: {
@@ -19,11 +20,11 @@ let i = (0, Chunk427164.le)({
   }
 });
 
-function o(e, s) {
+function s(e, t) {
   let {
-    enabled: t
-  } = i.useConfig({
-    location: s
+    enabled: n
+  } = o.useConfig({
+    location: t
   });
-  return !!(0, n.M5)(e, a.PremiumTypes.TIER_2) && t
+  return !!(0, i.M5)(e, a.PremiumTypes.TIER_2) && n
 }

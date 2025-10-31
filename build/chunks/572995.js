@@ -113,7 +113,7 @@ let ef = (e, t) => ec({
   }, t ? {
     referralProgram: {
       thumbnail: U.Z,
-      assetUrl: e ? j.Z : G.Z
+      assetUrl: e ? k.Z : G.Z
     },
     showYourStyle: {
       thumbnail: Z.Z,
@@ -129,7 +129,7 @@ let ef = (e, t) => ec({
     },
     noLimits: {
       thumbnail: M.Z,
-      assetUrl: e ? L.Z : k.Z
+      assetUrl: e ? L.Z : j.Z
     }
   } : {
     referralProgram: {
@@ -244,13 +244,13 @@ let ef = (e, t) => ec({
       previewImage: Chunk184071.yourSpace.thumbnail,
       onClick: Chunk612253,
       videoUrl: Chunk184071.yourSpace.assetUrl
-    }, k = {
+    }, j = {
       name: "emojis",
       title: Chunk388032.intl.string(Chunk388032.t.zY5PPb),
       description: Chunk388032.intl.string(Chunk388032.t.R5Xag2),
       previewImage: Chunk184071.emojis.thumbnail,
       videoUrl: Chunk184071.emojis.assetUrl
-    }, j = {
+    }, k = {
       name: "noLimits",
       title: Chunk388032.intl.string(Chunk388032.t["6b3ydG"]),
       description: Chunk388032.intl.string(Chunk388032.t["Y+IJyg"]),

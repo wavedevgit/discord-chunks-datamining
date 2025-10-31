@@ -1,5 +1,6 @@
-/** Chunk was on 42340 **/
-/** chunk id: 152935, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 152935, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   container: "container__44ee9",
   cardContainer: "cardContainer__44ee9",

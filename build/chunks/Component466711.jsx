@@ -2,7 +2,7 @@
 /** chunk id: 466711, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -132,7 +132,7 @@ function M(e) {
   } = (0, u.ZP)(c.Z.GIFT_BUTTON), [v, S] = i.useState(false), C = (0, a.e7)([m.Z], () => !(null === m.Z || true === m.Z ? true : m.Z.hasLayers())), N = (0, a.e7)([g.default], () => g.default.getCurrentUser()), R = null != N ? b.default.age(N.id) : 0, {
     giftBoxAnimation: P,
     trinketsAnimation: w
-  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, M = null != n.firstTimeNotice && !s && C && R >= L, [k, j] = (0, f.XR)(M ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), U = null != k, G = v || U, B = (0, y.Ft)(l), Z = (0, p.IH)();
+  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, M = null != n.firstTimeNotice && !s && C && R >= L, [j, k] = (0, f.XR)(M ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), U = null != j, G = v || U, B = (0, y.Ft)(l), Z = (0, p.IH)();
   if (s) return null;
   let F = () => {
       (0, _.Z)({
@@ -149,7 +149,7 @@ function M(e) {
       })
     },
     V = () => {
-      S(false), j(T.L.TAKE_ACTION), F()
+      S(false), k(T.L.TAKE_ACTION), F()
     },
     H = true !== P ? (0, r.jsx)(D, {
       config: P,
@@ -174,10 +174,10 @@ function M(e) {
     children: true !== n.firstTimeNotice && U ? (0, r.jsx)(h.Z, {
       onComplete: () => S(false),
       onCheckItOutClick: F,
-      markAsDismissed: j,
+      markAsDismissed: k,
       config: n.firstTimeNotice,
       children: H
     }) : H
   })
 }
-let k = Chunk647438.memo(M)
+let j = Chunk647438.memo(M)

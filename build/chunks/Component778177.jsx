@@ -434,7 +434,7 @@ class ei extends Chunk647438.PureComponent {
       })
     }), Z(this, "handleDateChange", e => {
       let t = (0, P.Tm)(this.props.searchContext);
-      (0, k.bh)({
+      (0, j.bh)({
         searchContext: this.props.searchContext,
         searchQuery: M.Z.getSearchResultsQuery(t),
         searchQueryString: x.Z.getSearchInputText(this.props.searchContext),
@@ -444,7 +444,7 @@ class ei extends Chunk647438.PureComponent {
         isSearchFilterPrefix: false,
         isSearchFilterAnswer: true,
         isSearchFilterComplete: false,
-        searchAutocompleteSelectAction: j.ZW.CLICK
+        searchAutocompleteSelectAction: k.ZW.CLICK
       }), this.setSearchQuery(e.format(U.b2L) + " ", true)
     }), Z(this, "keepCurrentOptionSelected", (e, t) => {
       let {
@@ -507,7 +507,7 @@ class ei extends Chunk647438.PureComponent {
         let e = i.find(e => (null == e ? true : e.group) === U.rtL.HISTORY);
         if (null != e) {
           let t = r - (l - e.results.length);
-          (0, k.$z)({
+          (0, j.$z)({
             searchContext: this.props.searchContext,
             searchHistoryIndex: t,
             searchHistoryTotalResults: e.results.length
@@ -526,7 +526,7 @@ class ei extends Chunk647438.PureComponent {
           f = s.result.channel,
           _ = d === U.dCx.FILTER_IN && null != f && f.id === I.Z.getChannelId(),
           p = (0, P.Tm)(this.props.searchContext);
-        (0, k.bh)({
+        (0, j.bh)({
           searchContext: this.props.searchContext,
           searchQuery: M.Z.getSearchResultsQuery(p),
           searchQueryString: x.Z.getSearchInputText(this.props.searchContext),
@@ -582,7 +582,7 @@ class ei extends Chunk647438.PureComponent {
         searchContext: i
       } = this.props;
       if (!this.shouldShowSearchInSelectedChannel() || null == r) returnfalse;
-      (0, k.tA)({
+      (0, j.tA)({
         searchContext: i,
         searchAutocompleteSelectAction: n
       });
@@ -656,7 +656,7 @@ class ei extends Chunk647438.PureComponent {
               showFilter: g,
               onSelect: this.selectOption.bind(null, {
                 selectedIndex: o,
-                searchAutocompleteSelectAction: j.ZW.CLICK
+                searchAutocompleteSelectAction: k.ZW.CLICK
               }),
               onFocus: this.focusOption.bind(null, o)
             }, (0, m.M)(t, o, c)), "".concat(i.group, "-").concat(a.text, "-").concat(null != (l = a.key) ? l : ""))

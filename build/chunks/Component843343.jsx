@@ -1,7 +1,7 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 843343, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,10 +16,10 @@ var Chunk91192 = require("./91192.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk419619 = require("./419619.js");
 
-function h() {
+function f() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk486472.Z, Chunk430824.Z], () => Chunk486472.Z.unavailableGuilds.filter(e => null == s.Z.getGuild(e)).length),
-    h = (0, Chunk91192.Ie)("unavailable-guilds-button");
+    f = (0, Chunk91192.Ie)("unavailable-guilds-button");
   return require <= 0 ? null : (0, Chunk951288.jsx)(Chunk682662.H, {
     children: (0, Chunk951288.jsx)(Chunk662146.Z, {
       text: Chunk388032.intl.format(Chunk388032.t["TnH05/"], {
@@ -50,7 +50,7 @@ function h() {
         "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t["MEpX+2"], {
           count: require
         })
-      }, h), t = t = {
+      }, f), t = t = {
         children: (0, Chunk951288.jsx)(Chunk481060.Mgn, {
           color: "currentColor",
           "aria-hidden": true

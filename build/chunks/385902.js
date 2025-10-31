@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => O,
@@ -28,11 +28,11 @@ function _(e, t) {
     }),
     a = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     u = null == a ? true : a.allPowerups[i.A$],
-    f = (0, d.ZP)(e, u),
+    h = (0, d.ZP)(e, u),
     _ = (0, c.q8)(e, t),
     O = null == u ? true : u.storeRemovalDate,
     y = null != (n = null == r ? true : r.has(g.GuildFeatures.PARTNERED)) && n,
-    v = _ && null != O && !y && f.type === h.A3.POWERUP_ACTIVATED,
+    v = _ && null != O && !y && h.type === f.A3.POWERUP_ACTIVATED,
     j = v ? {
       title: b.intl.formatToPlainString(m.default.mgoPkU, {
         perkName: null == u ? true : u.title
@@ -52,12 +52,12 @@ function O(e, t) {
   let v = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
     j = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
     C = null != (O = (0, u.Z)(e)) && O,
-    E = (0, c.q8)(e, t),
-    x = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
-    S = null == x || null == (n = x.allPowerups) ? true : n[i.A$],
+    x = (0, c.q8)(e, t),
+    E = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
+    S = null == E || null == (n = E.allPowerups) ? true : n[i.A$],
     I = (0, d.ZP)(e, S),
     P = null == S ? true : S.storeRemovalDate,
-    N = null == x || null == (_ = x.allPowerups) ? true : _[i.XW],
+    N = null == E || null == (_ = E.allPowerups) ? true : _[i.XW],
     Z = (0, l.e7)([o.Z], () => {
       var t;
       return null == (t = o.Z.getGuild(e)) ? true : t.features
@@ -65,8 +65,8 @@ function O(e, t) {
     T = null != (y = null == Z ? true : Z.has(g.GuildFeatures.PARTNERED)) && y,
     {
       onActivate: w
-    } = (0, f._C)(e, N),
-    A = !j && C && E && null != S && !T && I.type === h.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
+    } = (0, h._C)(e, N),
+    A = !j && C && x && null != S && !T && I.type === f.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
     R = r.useCallback(e => {
       w(e)
     }, [w]),

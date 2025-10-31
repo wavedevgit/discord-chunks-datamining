@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 945128, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -14,9 +14,9 @@ let d = e => {
   let {
     onSubmit: t,
     disabled: n
-  } = e, d = r.useCallback(async () => {
+  } = e, d = i.useCallback(async () => {
     await t({
-      type: i.rY.Empty
+      type: r.rY.Empty
     }), window.location.reload()
   }, [t]);
   return (0, a.jsxs)("div", {
@@ -24,18 +24,18 @@ let d = e => {
     children: [(0, a.jsx)(l.Heading, {
       variant: "heading-lg/bold",
       className: c.title,
-      children: s.intl.string(o.default.v52itt)
+      children: o.intl.string(s.default.v52itt)
     }), (0, a.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "text-muted",
       className: c.description,
-      children: s.intl.string(o.default["5am8D3"])
+      children: o.intl.string(s.default["5am8D3"])
     }), (0, a.jsx)(l.Kqy, {
       direction: "horizontal",
       justify: "end",
       children: (0, a.jsx)(l.Button, {
         variant: "primary",
-        text: s.intl.string(o.default["GDsHl+"]),
+        text: o.intl.string(s.default["GDsHl+"]),
         onClick: d,
         disabled: n
       })

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ct: () => L,
-  px: () => k,
+  px: () => j,
   uz: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -111,8 +111,8 @@ function x(e) {
     required: O
   } = u, v = i.useId(), I = i.useRef(null), [T, S] = i.useState(null), [A, N] = i.useState(false), [R, w] = i.useState(""), [x, L] = i.useState(""), {
     options: M,
-    loading: k,
-    onQueryChange: j
+    loading: j,
+    onQueryChange: k
   } = (0, y.U)({
     active: null == o || o,
     options: c,
@@ -121,8 +121,8 @@ function x(e) {
     L(e), w(null != t ? t : e)
   }, []);
   i.useEffect(() => {
-    j(R)
-  }, [j, R]), i.useEffect(() => {
+    k(R)
+  }, [k, R]), i.useEffect(() => {
     o || S(null)
   }, [o, S]);
   let G = i.useMemo(() => "" === R ? M : (0, s.Lu)(M, R, null != b ? b : D), [M, R, b]),
@@ -158,7 +158,7 @@ function x(e) {
       maxOptionsVisible: a,
       query: x,
       setQuery: U,
-      loading: k,
+      loading: j,
       handleSelectionChange: V,
       isOpen: o,
       setIsOpen: l,
@@ -201,8 +201,8 @@ function M(e) {
     wrapTags: P,
     ref: w
   } = e, D = i.useRef(null), x = i.useRef(null), L = i.useRef(null), M = i.useContext(u.z), {
-    activeDescendantIndex: k,
-    setActiveDescendantIndex: j,
+    activeDescendantIndex: j,
+    setActiveDescendantIndex: k,
     selectionMode: U,
     disabled: G,
     readOnly: B,
@@ -226,7 +226,7 @@ function M(e) {
     setQuery: ei,
     isEditing: ea,
     setIsEditing: eo
-  } = (0, E.T)(), es = "multiple" === U && q, el = null != k ? (0, O.cA)(H, k) : true;
+  } = (0, E.T)(), es = "multiple" === U && q, el = null != j ? (0, O.cA)(H, j) : true;
   i.useEffect(() => {
     var e;
     null != el && (null == (e = document.getElementById(el)) || e.scrollIntoView({
@@ -281,7 +281,7 @@ function M(e) {
         case "ArrowDown":
         case "PageDown":
           if (n = "PageDown" === e.key ? 10 : 1, 0 === t || (e.preventDefault(), null == $ || $(true), e.altKey)) return;
-          j(e => {
+          k(e => {
             if (null === e) return 0;
             let r = e + n;
             return r >= t && W ? 0 : Math.min(r, t - 1)
@@ -290,15 +290,15 @@ function M(e) {
         case "ArrowUp":
         case "PageUp":
           if (n = "PageUp" === e.key ? 10 : 1, 0 === t) return;
-          e.preventDefault(), j(e => {
+          e.preventDefault(), k(e => {
             if (null === e) return 0;
             let r = e - n;
             return r < 0 && W ? t - 1 : Math.max(r, 0)
           }), null == $ || $(true);
           break;
         case "Enter":
-          if (e.preventDefault(), e.stopPropagation(), null == k || 0 === t) return;
-          let r = en[k];
+          if (e.preventDefault(), e.stopPropagation(), null == j || 0 === t) return;
+          let r = en[j];
           if (true === r.disabled || V && 1 === et.length && et.includes(r)) return;
           X("single" === U ? [r] : (0, O.cq)(U, et, r));
           break;
@@ -313,17 +313,17 @@ function M(e) {
           break;
         case "Home":
           if (e.preventDefault(), 0 === t) return;
-          j(0);
+          k(0);
           break;
         case "End":
           if (e.preventDefault(), 0 === t) return;
-          j(t - 1)
+          k(t - 1)
       }
       null == N || N(e)
-    }, [U, V, F, q, W, N, eu, X, et, er, $, en, k, j]),
+    }, [U, V, F, q, W, N, eu, X, et, er, $, en, j, k]),
     eE = i.useCallback(e => {
-      eo(true), ei(e.target.value), null == $ || $(true), null == h || h(e), j(null)
-    }, [h, eo, ei, $, j]),
+      eo(true), ei(e.target.value), null == $ || $(true), null == h || h(e), k(null)
+    }, [h, eo, ei, $, k]),
     eb = i.useMemo(() => {
       if (0 === et.length) return null;
       if ("single" === U) {
@@ -426,7 +426,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     renderListItem: t,
     renderEmptyState: n,

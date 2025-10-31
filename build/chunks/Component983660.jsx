@@ -16,23 +16,23 @@ var Chunk951288 = require("./951288.js"),
 function h(e) {
   let {
     locked: t
-  } = e, [n, h] = (0, a.US)(t ? [] : [o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX], true, true);
+  } = e, [n, h] = (0, s.US)(t ? [] : [l.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX], true, true);
   return (r.useEffect(() => {
-    if (!t && n === o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX) return () => {
-      n === o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX && h(s.L.AUTO_DISMISS)
+    if (!t && n === l.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX) return () => {
+      n === l.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX && h(a.L.AUTO_DISMISS)
     }
-  }, [t, h, n]), t || n !== o.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX) ? null : (0, i.jsx)("div", {
+  }, [t, h, n]), t || n !== l.z.OVERLAY_OOP_WELCOME_BACKGROUND_SWITCH_FROM_IP_NUX) ? null : (0, i.jsx)("div", {
     className: d.overlayInprocessBackgroundNux,
     children: (0, i.jsxs)("div", {
       className: d.mainContainer,
       children: [(0, i.jsxs)("div", {
         className: d.mainTitleContainer,
-        children: [(0, i.jsx)(l.Heading, {
+        children: [(0, i.jsx)(o.Heading, {
           variant: "heading-xl/medium",
           color: "header-primary",
           className: d.mainTitle,
           children: c.intl.format(c.t.Eg5ybE, {})
-        }), (0, i.jsx)(l.Text, {
+        }), (0, i.jsx)(o.Text, {
           variant: "text-md/normal",
           color: "text-muted",
           className: d.mainTitleBody,
@@ -42,28 +42,28 @@ function h(e) {
         className: d.widgetCalloutContainer,
         children: [(0, i.jsxs)("div", {
           className: d.widgetCallout,
-          children: [(0, i.jsx)(l.qjv, {}), (0, i.jsx)(l.Text, {
+          children: [(0, i.jsx)(o.qjv, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
             children: c.intl.string(c.t.S6VRyK)
           })]
         }), (0, i.jsxs)("div", {
           className: d.widgetCallout,
-          children: [(0, i.jsx)(l.Dkj, {}), (0, i.jsx)(l.Text, {
+          children: [(0, i.jsx)(o.Dkj, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
             children: c.intl.string(c.t.xq8CKY)
           })]
         }), (0, i.jsxs)("div", {
           className: d.widgetCallout,
-          children: [(0, i.jsx)(l.Odl, {}), (0, i.jsx)(l.Text, {
+          children: [(0, i.jsx)(o.Odl, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
             children: c.intl.string(c.t.GwpRe0)
           })]
         }), (0, i.jsxs)("div", {
           className: d.widgetCallout,
-          children: [(0, i.jsx)(l.KY1, {}), (0, i.jsx)(l.Text, {
+          children: [(0, i.jsx)(o.KY1, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
             children: c.intl.string(c.t.VUoC5F)

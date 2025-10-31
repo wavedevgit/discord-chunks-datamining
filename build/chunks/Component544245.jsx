@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 544245, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -28,7 +28,7 @@ function p() {
   let e = m.useField("includeFrecency"),
     t = m.useField("includeFriends"),
     n = m.useField("includeDMs"),
-    o = m.useField("includeGDMs"),
+    s = m.useField("includeGDMs"),
     p = m.useField("includeQuickSwitcherState"),
     h = m.useField("includeUserSearchWorkerState"),
     x = m.useField("isUploading"),
@@ -40,9 +40,9 @@ function p() {
         includeFriends: t,
         includeGDMs: n,
         includeDMs: a,
-        includeQuickSwitcherState: r,
+        includeQuickSwitcherState: i,
         includeUserSearchWorkerState: l,
-        isUploading: o
+        isUploading: s
       } = m.getState();
       if (!Chunk972959) try {
         m.setState({

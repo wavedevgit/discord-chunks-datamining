@@ -129,8 +129,8 @@ function eD(e, t) {
 let ex = null,
   eL = new Chunk710845.Z("MessageActionCreators"),
   eM = new Chunk710845.Z("MessageQueue"),
-  ek = false;
-class ej {
+  ej = false;
+class ek {
   markComplete() {
     this.completed = true
   }
@@ -528,7 +528,7 @@ let eV = {
         oldFormErrors: true,
         rejectWithError: false
       }).then(e => {
-        if (e.body.length > 0) return (0, j.e5)(e.body[0])
+        if (e.body.length > 0) return (0, k.e5)(e.body[0])
       })
     },
     fetchMessages(e) {
@@ -564,7 +564,7 @@ let eV = {
         type: "LOAD_MESSAGES"
       });
       let v = null == y ? true : y.messageId,
-        I = new ej;
+        I = new ek;
       return d || this.fetchLocalMessages(t, n, r, i, I), a.tn.get({
         url: eT.ANM.MESSAGES(t),
         query: {
@@ -726,7 +726,7 @@ let eV = {
         nonce: o
       });
       let s = () => eH._sendMessage(e, t, i),
-        l = k.ZP.backgroundify(s, true);
+        l = j.ZP.backgroundify(s, true);
       return (U.Z.recordMessageSendAttempt(e, o, i), eu.Z.isReady(e)) ? l() : r && e !== E.V ? (eM.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
         eu.Z.whenReady(e, () => {
           eM.info("Channel ".concat(e, " is ready for sending now.")), l().then(t, n)
@@ -892,8 +892,8 @@ let eV = {
           messageReference: D,
           allowedMentions: x,
           poll: L,
-          sharedCustomTheme: k,
-          contentInventoryEntry: j,
+          sharedCustomTheme: j,
+          contentInventoryEntry: k,
           attachments: K,
           attachmentsToUpload: $,
           onAttachmentUploadError: ee,
@@ -904,7 +904,7 @@ let eV = {
       ea && (g = eo, ei = (0, eg.pj)(ei, eT.iLy.SUPPRESS_NOTIFICATIONS));
       let el = false,
         ec = (null == (r = n.messageReference) ? true : r.type) === eT.Uvt.FORWARD;
-      if ("" === g && null == I && null == C && null == L && null == k && null == j && !ec && (null == K || 0 === K.length) && (null == t.components || 0 === t.components.length))
+      if ("" === g && null == I && null == C && null == L && null == j && null == k && !ec && (null == K || 0 === K.length) && (null == t.components || 0 === t.components.length))
         if (null == $ || !($.length > 0)) return Promise.resolve();
         else el = true;
       let eu = null != D ? eT.uaV.REPLY : eT.uaV.DEFAULT,
@@ -920,10 +920,10 @@ let eV = {
           flags: 0 !== ei ? ei : true,
           nonce: ed,
           poll: (0, Y.x9)(L),
-          sharedCustomTheme: k
+          sharedCustomTheme: j
         });
-      if (false !== n.eagerDispatch && ((0, V.EL)(e, e_.id), null != C && (e_.sticker_items = C.map(e => en.Z.getStickerById(e)).filter(e => null != e)), eH.receiveMessage(e, e_, true, n)), !ek && null != E && E.length > 0) {
-        ek = true;
+      if (false !== n.eagerDispatch && ((0, V.EL)(e, e_.id), null != C && (e_.sticker_items = C.map(e => en.Z.getStickerById(e)).filter(e => null != e)), eH.receiveMessage(e, e_, true, n)), !ej && null != E && E.length > 0) {
+        ej = true;
         let t = eh.default.getCurrentUser(),
           {
             errorMessage: n,
@@ -958,7 +958,7 @@ let eV = {
           null != n.party && null != n.party.id && (t.party_id = n.party.id), eE.message.application_id = n.application_id, eE.message.activity = t
         }
       }
-      if (null != L && (eE.message.poll = L), null != k && (eE.message.shared_client_theme = k), null != C && (eE.message.sticker_ids = C), H.Z.isEnabled() && (eE.message.has_poggermode_enabled = true), null != j && (eE.message.content_inventory_entry = j), null != w && (eE.message.confetti_potion = (0, q.vY)(w), w.callback()), null != K && K.length > 0 && (eE.message.attachments = K), null != $ && $.length > 0) try {
+      if (null != L && (eE.message.poll = L), null != j && (eE.message.shared_client_theme = j), null != C && (eE.message.sticker_ids = C), H.Z.isEnabled() && (eE.message.has_poggermode_enabled = true), null != k && (eE.message.content_inventory_entry = k), null != w && (eE.message.confetti_potion = (0, q.vY)(w), w.callback()), null != K && K.length > 0 && (eE.message.attachments = K), null != $ && $.length > 0) try {
         let t = await (0, M.c)({
           channelId: e,
           nonce: ed,
@@ -1088,7 +1088,7 @@ let eV = {
                 }
               }) : o.body.code === eT.evJ.POGGERMODE_TEMPORARILY_DISABLED ? s.Z.dispatch({
                 type: "POGGERMODE_TEMPORARILY_DISABLED"
-              }) : o.body.code === eT.evJ.EXPLICIT_CONTENT ? t = eC.xi.EXPLICIT_CONTENT : null != L || ec || null != j || eH.sendClydeError(e, o.body.code);
+              }) : o.body.code === eT.evJ.EXPLICIT_CONTENT ? t = eC.xi.EXPLICIT_CONTENT : null != L || ec || null != k || eH.sendClydeError(e, o.body.code);
             i ? eH.deleteMessage(e, ef, true) : (null != h && s.Z.dispatch({
               type: "UPLOAD_FAIL",
               channelId: e,

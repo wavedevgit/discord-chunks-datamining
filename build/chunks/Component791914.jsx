@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 791914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -27,20 +27,20 @@ function v(e) {
   let {
     tab: t,
     setTab: n,
-    badgeState: h,
+    badgeState: f,
     closePopout: m
   } = e, {
     enabled: b,
     inInbox: _
   } = d.Z.useExperiment({
     location: "RecentsPopout"
-  }), v = (0, f.Us)({
+  }), v = (0, h.Us)({
     location: "RecentsHeader"
   }), {
     enabled: C
   } = c.Z.useExperiment({
     location: "RecentsHeader"
-  }), E = (0, i.e7)([s.Z], () => s.Z.getUnseenInviteCount()), x = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
+  }), x = (0, i.e7)([s.Z], () => s.Z.getUnseenInviteCount()), E = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
   return (0, r.jsxs)(u.h4, {
     className: y.header,
     children: [(0, r.jsxs)("div", {
@@ -79,7 +79,7 @@ function v(e) {
           id: l.X.FOR_YOU,
           "aria-label": O.intl.string(O.t["En+D+u"]),
           className: y.tab,
-          children: [O.intl.string(O.t["En+D+u"]), (null == h ? true : h.badgeForYou) ? (0, r.jsx)(o.fWl, {
+          children: [O.intl.string(O.t["En+D+u"]), (null == f ? true : f.badgeForYou) ? (0, r.jsx)(o.fWl, {
             color: a.Z.STATUS_DANGER,
             className: y.iconBadge
           }) : null]
@@ -96,7 +96,7 @@ function v(e) {
           "aria-label": "game_invites",
           id: l.X.GAME_INVITES,
           className: y.tab,
-          children: [O.intl.string(O.t.apq3cU), E > 0 ? (0, r.jsx)(o.fWl, {
+          children: [O.intl.string(O.t.apq3cU), x > 0 ? (0, r.jsx)(o.fWl, {
             color: a.Z.STATUS_DANGER,
             className: y.iconBadge
           }) : null]
@@ -104,8 +104,8 @@ function v(e) {
           "aria-label": O.intl.string(O.t["2pAkDA"]),
           id: l.X.BOOKMARKS,
           className: y.tab,
-          children: 0 === x ? O.intl.string(O.t["2pAkDA"]) : O.intl.formatToPlainString(O.t.I4fryG, {
-            count: x
+          children: 0 === E ? O.intl.string(O.t["2pAkDA"]) : O.intl.formatToPlainString(O.t.I4fryG, {
+            count: E
           })
         }) : null, v ? (0, r.jsx)(o.njP.Item, {
           "aria-label": "scheduled",
@@ -122,5 +122,5 @@ function j(e) {
   let {
     tab: t
   } = e;
-  return t === l.X.FOR_YOU ? (0, r.jsx)(h.Gp, {}) : t === l.X.UNREADS ? (0, r.jsx)(b.QP, {}) : t === l.X.MENTIONS ? (0, r.jsx)(m.Z, {}) : t === l.X.GAME_INVITES ? (0, r.jsx)(_.S, {}) : null
+  return t === l.X.FOR_YOU ? (0, r.jsx)(f.Gp, {}) : t === l.X.UNREADS ? (0, r.jsx)(b.QP, {}) : t === l.X.MENTIONS ? (0, r.jsx)(m.Z, {}) : t === l.X.GAME_INVITES ? (0, r.jsx)(_.S, {}) : null
 }

@@ -91,20 +91,20 @@ function S(e) {
     gradientColor: A,
     onPositionChange: C,
     scrollBehavior: N = "sticky"
-  } = e, [R, P] = i.useState(p), [w, D] = i.useState(E), x = i.useRef(E), L = (0, c.e7)([d.Z], () => d.Z.getLayers()), M = null != (t = L[L.length - 1]) ? t : "base", k = i.useMemo(() => {
+  } = e, [R, P] = i.useState(p), [w, D] = i.useState(E), x = i.useRef(E), L = (0, c.e7)([d.Z], () => d.Z.getLayers()), M = null != (t = L[L.length - 1]) ? t : "base", j = i.useMemo(() => {
     var e, t;
     return null == a.current || (null != (t = null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) ? t : "base") === M
   }, [a, M]);
   i.useEffect(() => {
-    k && p ? P(true) : k || P(false)
-  }, [k, p]);
-  let j = () => {
+    j && p ? P(true) : j || P(false)
+  }, [j, p]);
+  let k = () => {
       P(false)
     },
     U = (0, _.i)({
       shouldShow: p,
       caretPosition: (0, f.z)(w),
-      onExitComplete: j
+      onExitComplete: k
     }),
     G = e => {
       var {

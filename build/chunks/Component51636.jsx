@@ -72,7 +72,7 @@ let R = Chunk647438.memo(e => {
     dismissibleContentType: a,
     forceShadow: h,
     cardType: b
-  } = e, y = null == e ? true : e.onCtaClick, S = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [C, w] = i.useState(false), [D, x] = i.useState(false), L = b === E.gM.CARD_CAROUSEL_FIRST_ROW || b === E.gM.CARD_CAROUSEL_SECOND_ROW || b === E.gM.CARD_CAROUSEL_THIRD_ROW, M = (0, g.Z)(), [k, j] = (0, _.cv)(null != a && n ? [a] : []), {
+  } = e, y = null == e ? true : e.onCtaClick, S = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [C, w] = i.useState(false), [D, x] = i.useState(false), L = b === E.gM.CARD_CAROUSEL_FIRST_ROW || b === E.gM.CARD_CAROUSEL_SECOND_ROW || b === E.gM.CARD_CAROUSEL_THIRD_ROW, M = (0, g.Z)(), [j, k] = (0, _.cv)(null != a && n ? [a] : []), {
     easterEggLevel: U,
     isEasterEggTriggered: G,
     onHover: B,
@@ -94,17 +94,17 @@ let R = Chunk647438.memo(e => {
   }, e), {
     onCtaClick: null != y ? H : true
   });
-  let Y = k !== a || null == a || D,
+  let Y = j !== a || null == a || D,
     W = e => {
       C && "transform" === e.propertyName && e.target.classList.contains(T.flipCard) && (x(true), p.default.track(O.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
         card_type: t
-      }), null != a && j(v.L.TAKE_ACTION))
+      }), null != a && k(v.L.TAKE_ACTION))
     };
   return (i.useEffect(() => {
     S && C && (x(true), p.default.track(O.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
       card_type: t
-    }), null != a && j(v.L.TAKE_ACTION))
-  }, [S, C, a, t, j]), (0, f.Z)({
+    }), null != a && k(v.L.TAKE_ACTION))
+  }, [S, C, a, t, k]), (0, f.Z)({
     type: l.ImpressionTypes.VIEW,
     name: l.ImpressionNames.PERK_DISCOVERABILITY_CARD,
     properties: {

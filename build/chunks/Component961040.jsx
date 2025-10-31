@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 961040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -23,7 +23,7 @@ function b(e) {
     children: t,
     popoutPosition: n,
     popoutAlign: l,
-    targetElementRef: f,
+    targetElementRef: h,
     spacing: b = 0
   } = e, {
     isOpen: O,
@@ -38,14 +38,14 @@ function b(e) {
       y(false)
     };
     return s.Z.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => s.Z.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
-  }), i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_INBOX, j), () => void u.S.unsubscribe(h.CkL.TOGGLE_INBOX, j)), [j]);
+  }), i.useEffect(() => (u.S.subscribe(f.CkL.TOGGLE_INBOX, j), () => void u.S.unsubscribe(f.CkL.TOGGLE_INBOX, j)), [j]);
   let {
     entrypoint: C
   } = (0, d.pN)({
     location: "NotificationsInboxPopout"
   });
   return (0, r.jsx)(a.yRy, {
-    targetElementRef: f,
+    targetElementRef: h,
     shouldShow: O,
     align: l,
     animation: C === d.u3.TITLE_BAR_LEFT ? a.yRy.Animation.TRANSLATE : a.yRy.Animation.FADE,

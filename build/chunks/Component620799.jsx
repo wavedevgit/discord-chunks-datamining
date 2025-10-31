@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 620799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -20,7 +20,7 @@ function h(e) {
     targetElementRef: t,
     markAsDismissed: n,
     children: h
-  } = e, x = (0, r.e7)([s.default], () => s.default.getId()), g = (0, r.e7)([i.Z], () => i.Z.useReducedMotion), f = (0, c.bg)({
+  } = e, x = (0, i.e7)([o.default], () => o.default.getId()), g = (0, i.e7)([r.Z], () => r.Z.useReducedMotion), f = (0, c.bg)({
     location: "GameWidgetsPopover"
   });
   return (0, a.jsxs)(a.Fragment, {
@@ -52,7 +52,7 @@ function h(e) {
         onClick: () => {
           n(m.L.TAKE_ACTION), (0, d.openUserProfileModal)({
             userId: x,
-            sourceAnalyticsLocations: [o.Z.ACCOUNT],
+            sourceAnalyticsLocations: [s.Z.ACCOUNT],
             hideRestrictedProfile: true,
             section: u.oh.WIDGETS
           })

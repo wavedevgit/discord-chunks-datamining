@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 905551, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EY: () => _,
@@ -29,19 +29,19 @@ function h(e) {
   var t, n;
   let a = arguments.length > 1 && true !== arguments[1] && arguments[1];
   if (a) return void setTimeout(() => {
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "GAME_SERVER_FETCH_CATALOG_SUCCESS",
       guildId: e,
-      catalog: s.j.reduce((e, t) => (e[t.id] = t, e), {})
+      catalog: o.j.reduce((e, t) => (e[t.id] = t, e), {})
     })
   }, 5e3);
-  let i = null != (n = null == (t = l.default.getCurrentUser()) ? true : t.isStaff()) && n;
-  return (0, o.Kb)({
+  let r = null != (n = null == (t = l.default.getCurrentUser()) ? true : t.isStaff()) && n;
+  return (0, s.Kb)({
     url: p.ANM.COLLECTION_PUBLISHED_LISTINGS_SKU(m.SW),
     query: {
       guild_id: e,
-      include_unpublished_products: i,
-      include_unpublished_collection: i
+      include_unpublished_products: r,
+      include_unpublished_collection: r
     },
     oldFormErrors: true,
     rejectWithError: false,
@@ -51,7 +51,7 @@ function h(e) {
       let n = (0, d.m)(t);
       return e[n.id] = n, e
     }, {});
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "GAME_SERVER_FETCH_CATALOG_SUCCESS",
       guildId: e,
       catalog: n
@@ -62,10 +62,10 @@ function h(e) {
 function x(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   return t ? (setTimeout(() => {
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "GAME_SERVER_FETCH_INSTANCES_SUCCESS",
       guildId: e,
-      instances: s.K.reduce((e, t) => (e[t.id] = t, e), {})
+      instances: o.K.reduce((e, t) => (e[t.id] = t, e), {})
     })
   }, 5e3), Promise.resolve()) : a.tn.get({
     url: p.ANM.GAME_SERVERS(e),
@@ -74,7 +74,7 @@ function x(e) {
   }).then(t => {
     if (null != t.body) {
       let n = t.body.reduce((e, t) => (e[t.id] = (0, c.Z)(t), e), {});
-      r.Z.dispatch({
+      i.Z.dispatch({
         type: "GAME_SERVER_FETCH_INSTANCES_SUCCESS",
         guildId: e,
         instances: n
@@ -90,13 +90,13 @@ function g(e, t) {
     retries: 3
   }).then(n => {
     if (null != n.body) {
-      var a, l, i, o;
-      let s = null != (o = null == (i = n.body.tenant_metadata) || null == (l = i.guild_monetization) || null == (a = l.game_server) ? true : a.instructions.pc) ? o : [];
-      r.Z.dispatch({
+      var a, l, r, s;
+      let o = null != (s = null == (r = n.body.tenant_metadata) || null == (l = r.guild_monetization) || null == (a = l.game_server) ? true : a.instructions.pc) ? s : [];
+      i.Z.dispatch({
         type: "GAME_SERVER_FETCH_GAME_INSTRUCTIONS_SUCCESS",
         guildId: e,
         skuId: t,
-        instructions: s
+        instructions: o
       })
     }
   })
@@ -105,7 +105,7 @@ function g(e, t) {
 function f(e, t) {
   if (e) {
     var n;
-    i.default.track(p.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {
+    r.default.track(p.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {
       user_id: null == (n = l.default.getCurrentUser()) ? true : n.id,
       provider: t
     })
@@ -119,30 +119,30 @@ function b() {
 }
 
 function v(e, t) {
-  r.Z.dispatch({
+  i.Z.dispatch({
     type: "GAME_SERVER_REGION_PING_STATE_UPDATE",
     pingUrl: e,
     state: t
   })
 }
 
-function j(e, t, n, r) {
+function j(e, t, n, i) {
   return a.tn.post({
     url: p.ANM.GUILD_POWERUP_TOGGLE(e, t),
     body: {
       game_server_name: n,
-      game_server_region: r
+      game_server_region: i
     },
     rejectWithError: true,
     oldFormErrors: true
   })
 }
 
-function _(e, t, n, r) {
+function _(e, t, n, i) {
   return a.tn.patch({
     url: p.ANM.GUILD_POWERUP_UPDATE(e, t),
     body: {
-      game_server_name: r,
+      game_server_name: i,
       sku_id: n
     },
     rejectWithError: true,
@@ -168,7 +168,7 @@ function C(e) {
     oldFormErrors: true,
     retries: 3
   }).then(e => {
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "GAME_SERVER_FETCH_REGIONS_SUCCESS",
       regions: e.body.map(u.Z).sort((e, t) => e.name.localeCompare(t.name))
     })
@@ -180,7 +180,7 @@ function S(e, t) {
     url: p.ANM.GAME_SERVER_WAKE(e, t),
     rejectWithError: true
   }).then(t => {
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
       guildId: e,
       instance: (0, c.Z)(t.body)

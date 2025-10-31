@@ -5,7 +5,7 @@ require.d(exports, {
   $I: () => eJ,
   B4: () => eB,
   B6: () => em,
-  Bd: () => ek,
+  Bd: () => ej,
   GI: () => eP,
   Gd: () => eH,
   I: () => eM,
@@ -274,7 +274,7 @@ function es(e) {
     let e = t.sort((e, t) => {
       var n, r;
       let i = (null == (n = e.userStatus) ? true : n.claimedAt) == null;
-      return i !== ((null == (r = t.userStatus) ? true : r.claimedAt) == null) ? i ? F : V : ea(j.r.build(e.config).rewardsExpireAt, j.r.build(t.config).rewardsExpireAt, 0)
+      return i !== ((null == (r = t.userStatus) ? true : r.claimedAt) == null) ? i ? F : V : ea(k.r.build(e.config).rewardsExpireAt, k.r.build(t.config).rewardsExpireAt, 0)
     }).map(e => e.id);
     return n.current = e, e
   }, [t])
@@ -446,7 +446,7 @@ function eS(e, t, n, r) {
     })) return Z.intl.format(Z.t["l4S+cQ"], {
     minutes: i,
     onClick: o,
-    gameTitle: j.r.build(e.config).application.name
+    gameTitle: k.r.build(e.config).application.name
   });
   if ((0, N.$J)(e)) return s ? Z.intl.format(Z.t.gbtCpW, {
     onClick: o,
@@ -454,13 +454,13 @@ function eS(e, t, n, r) {
   }) : Z.intl.format(Z.t.Ajlcd7, {
     minutes: i,
     onClick: o,
-    gameTitle: j.r.build(e.config).application.name
+    gameTitle: k.r.build(e.config).application.name
   });
   if (s) return Z.intl.format(Z.t.Hu8SKW, {
     targetMinutes: i
   });
   if ((0, N.q8)(e)) {
-    let t = j.r.build(e.config).defaultWatchVideoTask,
+    let t = k.r.build(e.config).defaultWatchVideoTask,
       n = null == t ? true : t.messages.videoTitle;
     return null == n ? Z.intl.string(Z.t["o+e9yh"]) : Z.intl.formatToPlainString(Z.t["9m9Mna"], {
       videoTitle: n
@@ -641,7 +641,7 @@ function eM(e) {
   }
 }
 
-function ek(e, t, n) {
+function ej(e, t, n) {
   var r, i;
   let a = ev(e),
     o = (0, N.b7)(e),
@@ -660,12 +660,12 @@ function ek(e, t, n) {
   }) : null != o ? o.description : null != s ? s : null
 }
 
-function ej(e) {
+function ek(e) {
   return [(0, c.e7)([R.Z], () => R.Z.selectedTaskPlatform(e)), r.useCallback(t => (0, S.OR)(e, t), [e])]
 }
 
 function eU(e, t) {
-  let [n, i] = ej(e.id), s = r.useMemo(() => (0, N.yH)(e), [e]), l = s.includes(U.cd.DESKTOP), c = s.includes(U.cd.CONSOLE), u = eg(e), d = eE(e), f = r.useMemo(() => (0, a.EQ)(t).with({
+  let [n, i] = ek(e.id), s = r.useMemo(() => (0, N.yH)(e), [e]), l = s.includes(U.cd.DESKTOP), c = s.includes(U.cd.CONSOLE), u = eg(e), d = eE(e), f = r.useMemo(() => (0, a.EQ)(t).with({
     percentComplete: 0
   }, () => null).with({
     taskType: o.X.PLAY_ON_DESKTOP
@@ -798,7 +798,7 @@ function eV(e) {
     popoutTargetElementRef: l,
     onGameSheetOpened: c,
     onGameSheetClosed: u
-  } = e, d = em(r.useMemo(() => j.r.build(i.config).rewardsExpireAt, [i.config])), f = ev(i), _ = eI(i), p = (null == (t = i.userStatus) ? true : t.completedAt) != null, h = (null == (n = i.userStatus) ? true : n.enrolledAt) != null, m = f.percentComplete > 0, g = ey(i), E = (0, M.DD)({
+  } = e, d = em(r.useMemo(() => k.r.build(i.config).rewardsExpireAt, [i.config])), f = ev(i), _ = eI(i), p = (null == (t = i.userStatus) ? true : t.completedAt) != null, h = (null == (n = i.userStatus) ? true : n.enrolledAt) != null, m = f.percentComplete > 0, g = ey(i), E = (0, M.DD)({
     quest: i,
     location: U.dr.QUESTS_BAR,
     questContent: P.jn.QUEST_BAR_V2,
@@ -815,7 +815,7 @@ function eV(e) {
     if (s === P.LI.SELECT) return Z.intl.string(Z.t.sWUpN8);
     else {
       if (!(0, N.Pb)(i) || !h || m) return E;
-      let e = j.r.build(i.config).defaultRewardNameWithArticle;
+      let e = k.r.build(i.config).defaultRewardNameWithArticle;
       return Z.intl.format(Z.t["1votF6"], {
         rewardNameWithArticle: e,
         targetMinutes: f.targetMinutes
@@ -837,12 +837,12 @@ function eH(e, t) {
   return r.useMemo(() => {
     if (null == n) return null;
     let e = null != t ? t : (0, l.wj)(i) ? G.BRd.DARK : G.BRd.LIGHT;
-    return (0, k.fh)(n, k.eC.COSPONSOR_LOGO_TYPE, e)
+    return (0, j.fh)(n, j.eC.COSPONSOR_LOGO_TYPE, e)
   }, [i, t, n])
 }
 
 function eY(e) {
-  let t = j.r.build(e).defaultRewardName,
+  let t = k.r.build(e).defaultRewardName,
     n = (0, N.Kr)(e),
     r = (0, N.FX)(e),
     i = (0, N._p)(e),

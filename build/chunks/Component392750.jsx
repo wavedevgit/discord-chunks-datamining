@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 392750, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -59,7 +59,7 @@ function m() {
       vcProbability: a
     } = e;
     return {
-      user: o.default.getUser(t),
+      user: s.default.getUser(t),
       affinity: n,
       vcProbability: a,
       key: t

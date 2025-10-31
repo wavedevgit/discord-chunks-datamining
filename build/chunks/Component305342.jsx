@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => G,
-  c: () => j
+  c: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -71,7 +71,7 @@ let x = 24,
       })]
     })
   },
-  k = e => {
+  j = e => {
     let {
       guildId: t,
       listingId: n
@@ -114,7 +114,7 @@ let x = 24,
       })]
     })
   },
-  j = e => {
+  k = e => {
     let {
       listingId: t,
       guildId: n,
@@ -144,7 +144,7 @@ let x = 24,
         header: w.intl.string(w.t["8oxWpO"]),
         benefits: u,
         guildId: n
-      }), (0, r.jsx)(k, {
+      }), (0, r.jsx)(j, {
         guildId: n,
         listingId: t
       })]
@@ -177,7 +177,7 @@ let x = 24,
     } = (0, N.Z)(p, n, a, d), S = (0, s.e7)([_.Z], () => _.Z.isSyncing), {
       activeSubscription: x,
       activeSubscriptionListing: L
-    } = (0, E.Z)(a), M = (null == L ? true : L.id) === t, k = (null == x ? true : x.status) === P.O0b.CANCELED, [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useCallback(e => {
+    } = (0, E.Z)(a), M = (null == L ? true : L.id) === t, j = (null == x ? true : x.status) === P.O0b.CANCELED, [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useCallback(e => {
       let t = false;
       null != e && (t = e.scrollHeight - e.clientHeight > 1), F(t)
     }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == x && z, X = () => B(e => !e), Q = (0, u.Z)(R.iP), [J, $] = i.useState(false), ee = J || !Q, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == p ? true : p.published) === true, ei = (null == p ? true : p.soft_deleted) === true, ea = w.intl.string(w.t.KzmEA9);
@@ -220,8 +220,8 @@ let x = 24,
             }), M ? (0, r.jsx)(c.Button, {
               disabled: true,
               fullWidth: true,
-              variant: k ? "secondary" : "primary",
-              text: k ? w.intl.string(w.t.iKHmu0) : w.intl.string(w.t.XvAuMo)
+              variant: j ? "secondary" : "primary",
+              text: j ? w.intl.string(w.t.iKHmu0) : w.intl.string(w.t.XvAuMo)
             }) : (0, r.jsxs)(r.Fragment, {
               children: [O ? null : (0, r.jsx)(c.Wn, {
                 className: D.helpMessage,
@@ -255,7 +255,7 @@ let x = 24,
             })]
           })]
         }), ee && (0, r.jsx)(c.y5t, {
-          children: (0, r.jsx)(j, {
+          children: (0, r.jsx)(k, {
             listingId: t,
             guildId: n
           })

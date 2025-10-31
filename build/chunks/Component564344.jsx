@@ -65,8 +65,8 @@ function R() {
     })
   }, [null == Chunk120356 ? true : Chunk120356.id, R]);
   let M = true,
-    k = true;
-  return D && 1 === x.length && (x.includes(Chunk726985.s6.PROFILE_SERVER_PROFILES) ? (L(Chunk526761.NB.GUILD), k = false) : x.includes(Chunk726985.s6.PROFILE_USER_PROFILE) && (L(Chunk526761.NB.USER_PROFILE), M = false)), (0, Chunk951288.jsxs)(Chunk10298.N, {
+    j = true;
+  return D && 1 === x.length && (x.includes(Chunk726985.s6.PROFILE_SERVER_PROFILES) ? (L(Chunk526761.NB.GUILD), j = false) : x.includes(Chunk726985.s6.PROFILE_USER_PROFILE) && (L(Chunk526761.NB.USER_PROFILE), M = false)), (0, Chunk951288.jsxs)(Chunk10298.N, {
     header: Chunk388032.intl.string(Chunk388032.t["vi7f+q"]),
     children: [(0, Chunk951288.jsxs)(Chunk481060.njP, {
       className: Chunk455734.tabBar,
@@ -74,7 +74,7 @@ function R() {
       look: "brand",
       selectedItem: P,
       onItemSelect: L,
-      children: [k ? (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
+      children: [j ? (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
         className: Chunk455734.tabBarItem,
         id: Chunk526761.NB.USER_PROFILE,
         children: Chunk388032.intl.string(Chunk388032.t["2p07FR"])

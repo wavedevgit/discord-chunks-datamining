@@ -1,7 +1,7 @@
-/** Chunk was on 63709 **/
-/** chunk id: 390698, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 78825 **/
+/** chunk id: 390698, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  U: () => u
+  U: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,23 +11,23 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk863577 = require("./863577.js");
-let u = e => {
+let c = e => {
   let {
-    className: t,
-    isPartiallyPurchased: n
+    className: n,
+    isPartiallyPurchased: t
   } = e;
-  return n ? (0, r.jsx)(a.u, {
+  return t ? (0, r.jsx)(a.u, {
     position: "top",
     align: "left",
     text: s.intl.string(s.t.y1VWkZ),
     children: (0, r.jsxs)("div", {
-      className: i()(c.partialOwnStateContainer, t),
+      className: i()(u.partialOwnStateContainer, n),
       children: [(0, r.jsx)("span", {
-        className: c.iconWrapper,
+        className: u.iconWrapper,
         children: (0, r.jsx)(o.d3s, {
           size: "md",
           color: "currentColor",
-          className: c.infoIcon
+          className: u.infoIcon
         })
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/semibold",
@@ -36,7 +36,7 @@ let u = e => {
     })
   }) : (0, r.jsx)(o.Text, {
     variant: "text-md/semibold",
-    className: t,
+    className: n,
     children: s.intl.string(s.t["6cfuDj"])
   })
 }

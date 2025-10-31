@@ -165,14 +165,14 @@ let K = 0,
             guild: i,
             height: et,
             width: et
-          }) : null : null != a ? (0, r.jsx)(j.Z, {
+          }) : null : null != a ? (0, r.jsx)(k.Z, {
             categoryId: a,
             height: et,
             width: et,
             size: "custom"
           }) : null,
           u = null == i ? true : i.name;
-        null != a && (u = (0, k.Y1)(a, null == i ? true : i.name));
+        null != a && (u = (0, j.Y1)(a, null == i ? true : i.name));
         let d = K === e,
           f = n.isNitroLocked,
           p = f && !d,
@@ -251,8 +251,8 @@ let K = 0,
       isUsingKeyboardNavigation: N,
       channelGuildId: D,
       channelId: M,
-      messageId: k,
-      isBurstReaction: j,
+      messageId: j,
+      isBurstReaction: k,
       listHeaderClassName: U
     } = e, B = i.useRef(false), Z = E.kJ.useStore(e => e.activeCategoryIndex), V = (0, b.Iu)(e => e.searchQuery), z = R.Yk.useSetting(), q = (0, u.e7)([P.default], () => P.default.getCurrentUser()), X = (0, x.I5)(q), {
       location: Q
@@ -284,8 +284,8 @@ let K = 0,
       allowAnimatedEmoji: z,
       channelGuildId: D,
       channelId: M,
-      messageId: k,
-      isBurstReaction: j,
+      messageId: j,
+      isBurstReaction: k,
       listHeaderClassName: U,
       activeSectionIndex: $,
       upsellGlowOpacity: er,

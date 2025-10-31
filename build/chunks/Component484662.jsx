@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 484662, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -52,7 +52,7 @@ function m() {
                 let {
                   closeLayer: t
                 } = e;
-                return (0, a.jsx)(o.Z, {
+                return (0, a.jsx)(s.Z, {
                   onClose: t
                 })
               }, {

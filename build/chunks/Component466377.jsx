@@ -4,7 +4,7 @@
 require.d(exports, {
   Cg: () => C,
   Y0: () => P,
-  YA: () => k,
+  YA: () => j,
   fM: () => R,
   hz: () => x,
   mz: () => L,
@@ -133,10 +133,10 @@ function P(e) {
       clamp: true
     },
     onRest: O
-  }, "animate-always"), x = i.useRef(null), L = null != R["aria-label"], M = null != R["aria-labelledby"], k = i.useId(), j = null != (t = R["aria-labelledby"]) ? t : k, U = i.useMemo(() => ({
-    headerId: j,
+  }, "animate-always"), x = i.useRef(null), L = null != R["aria-label"], M = null != R["aria-labelledby"], j = i.useId(), k = null != (t = R["aria-labelledby"]) ? t : j, U = i.useMemo(() => ({
+    headerId: k,
     headerIdIsManaged: M
-  }), [j, M]);
+  }), [k, M]);
   return (0, r.jsx)(g.zM.Provider, {
     value: U,
     children: (0, r.jsx)(_.V, T(v({
@@ -253,7 +253,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   var {
     className: t,
     scrollerRef: n

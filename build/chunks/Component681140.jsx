@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 681140, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -65,11 +65,11 @@ function b(e) {
   let {
     userState: n
   } = e, {
-    user: i,
-    searchWorkerUser: o,
+    user: r,
+    searchWorkerUser: s,
     guildMembers: d,
     guildMemberRequests: g
-  } = n, b = r.useCallback(e => {
+  } = n, b = i.useCallback(e => {
     let {
       ok: t
     } = e;
@@ -86,41 +86,41 @@ function b(e) {
     children: [(0, a.jsxs)("div", {
       className: x.detailsRow,
       children: [b({
-        ok: null != i
+        ok: null != r
       }), (0, a.jsx)(l.Text, {
         variant: "text-sm/normal",
-        children: null != i ? "User exists in UserStore" : "User does not exist in UserStore"
+        children: null != r ? "User exists in UserStore" : "User does not exist in UserStore"
       })]
-    }), null != i && (0, a.jsx)("div", {
+    }), null != r && (0, a.jsx)("div", {
       className: x.nestedDetailsList,
       children: (0, a.jsx)("div", {
         className: x.detailsRow,
         children: (0, a.jsx)(l.Text, {
           variant: "text-sm/normal",
-          children: "username: ".concat(i.username)
+          children: "username: ".concat(r.username)
         })
       })
     }), (0, a.jsxs)("div", {
       className: x.detailsRow,
       children: [b({
-        ok: null != o
+        ok: null != s
       }), (0, a.jsx)(l.Text, {
         variant: "text-sm/normal",
-        children: null != o ? "User exists in User Search Worker" : "User does not exist in User Search Worker"
+        children: null != s ? "User exists in User Search Worker" : "User does not exist in User Search Worker"
       })]
-    }), null != o && (0, a.jsxs)("div", {
+    }), null != s && (0, a.jsxs)("div", {
       className: x.nestedDetailsList,
       children: [(0, a.jsx)("div", {
         className: x.detailsRow,
         children: (0, a.jsx)(l.Text, {
           variant: "text-sm/normal",
-          children: "username: ".concat(o.username)
+          children: "username: ".concat(s.username)
         })
       }), (0, a.jsx)("div", {
         className: x.detailsRow,
         children: (0, a.jsx)(l.Text, {
           variant: "text-sm/normal",
-          children: "global name: ".concat(null != (t = o.globalName) ? t : "—")
+          children: "global name: ".concat(null != (t = s.globalName) ? t : "—")
         })
       }), (0, a.jsx)("div", {
         className: x.detailsRow,
@@ -130,25 +130,25 @@ function b(e) {
         })
       }), (0, a.jsxs)("div", {
         className: x.nestedDetailsList,
-        children: [0 === Object.keys(o.nicknames).length && (0, a.jsx)("div", {
+        children: [0 === Object.keys(s.nicknames).length && (0, a.jsx)("div", {
           className: x.detailsRow,
           children: (0, a.jsx)(l.Text, {
             variant: "text-sm/normal",
             children: "None"
           })
-        }), Object.entries(o.nicknames).map(e => {
-          let [t, n] = e, r = m.Z.getGuild(t), i = u.Z.getChannel(t);
+        }), Object.entries(s.nicknames).map(e => {
+          let [t, n] = e, i = m.Z.getGuild(t), r = u.Z.getChannel(t);
           return (0, a.jsxs)("div", {
             className: x.detailsRow,
-            children: [null != r && (0, a.jsx)(c.ZP, {
-              guild: r,
+            children: [null != i && (0, a.jsx)(c.ZP, {
+              guild: i,
               iconSize: 16
-            }), null != r && (0, a.jsx)(l.Text, {
+            }), null != i && (0, a.jsx)(l.Text, {
               variant: "text-sm/normal",
-              children: r.name
-            }), null == r && null != i && (0, a.jsx)(l.Text, {
+              children: i.name
+            }), null == i && null != r && (0, a.jsx)(l.Text, {
               variant: "text-sm/normal",
-              children: (0, s.F6)(i, h.default, p.Z)
+              children: (0, o.F6)(r, h.default, p.Z)
             }), (0, a.jsx)(l.Text, {
               variant: "text-sm/normal",
               children: " (".concat(t, ")")
@@ -173,7 +173,7 @@ function b(e) {
         var t;
         let n = m.Z.getGuild(e.guildId);
         if (null == n) return null;
-        let r = null != (t = e.nick) ? t : "";
+        let i = null != (t = e.nick) ? t : "";
         return (0, a.jsxs)("div", {
           className: x.detailsRow,
           children: [(0, a.jsx)(c.ZP, {
@@ -181,7 +181,7 @@ function b(e) {
             iconSize: 16
           }), (0, a.jsxs)(l.Text, {
             variant: "text-sm/normal",
-            children: [n.name, "" !== r ? " - ".concat(r) : ""]
+            children: [n.name, "" !== i ? " - ".concat(i) : ""]
           })]
         }, "".concat(e.guildId))
       })

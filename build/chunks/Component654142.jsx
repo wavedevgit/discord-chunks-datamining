@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 654142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -71,7 +71,7 @@ let _ = Chunk647438.memo(function(e) {
     name: y,
     color: v,
     children: j
-  } = t, C = j.map(e => e.id), E = (0, s.Z)(e => e.guildId), x = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(O)), S = function(e) {
+  } = t, C = j.map(e => e.id), x = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(O)), S = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -81,7 +81,7 @@ let _ = Chunk647438.memo(function(e) {
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), I = (0, h.Z)(t), {
+  }(t), I = (0, f.Z)(t), {
     mentionCount: P,
     isMentionLowImportance: N,
     unread: Z
@@ -104,10 +104,10 @@ let _ = Chunk647438.memo(function(e) {
       }))
     })
   }, [O, y, v, Z, P]);
-  return (0, r.jsx)(f.Z, b(m({}, _), {
+  return (0, r.jsx)(h.Z, b(m({}, _), {
     folderNode: t,
-    expanded: x,
-    selected: null != E && C.includes(E),
+    expanded: E,
+    selected: null != x && C.includes(x),
     mentionCount: P,
     isMentionLowImportance: N,
     unread: Z,

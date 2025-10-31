@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 735959, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk400497 = require("./400497.js"),
   Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  s = require.n(Chunk913527),
   Chunk330711 = require("./330711.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
 function g() {
   let e = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
     [t, n] = Chunk647438.useState(),
-    i = (0, Chunk400497.runtimeHashMessageKey)(null != exports ? exports : ""),
+    r = (0, Chunk400497.runtimeHashMessageKey)(null != exports ? exports : ""),
     g = Chunk647438.useMemo(() => Chunk388032.t[Chunk913527], [Chunk913527]);
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsxs)(Chunk665149.ZP, {
@@ -48,7 +48,7 @@ function g() {
         children: Chunk330711.Z.getLocale()
       }), (0, Chunk951288.jsx)(Chunk257785.Z9, {
         name: "Moment",
-        children: o().locale()
+        children: s().locale()
       })]
     }), (0, Chunk951288.jsxs)(Chunk665149.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {

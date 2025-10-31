@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 486311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -54,30 +54,30 @@ let j = {
     let {
       guildId: t,
       selected: l
-    } = e, C = (0, m.ZP)(t), E = i.useCallback(() => {
+    } = e, C = (0, m.ZP)(t), x = i.useCallback(() => {
       var e;
-      (0, p.jd)(t), (0, h.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == C || null == (e = C.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
-    }, [t, C]), x = i.useCallback(() => {
+      (0, p.jd)(t), (0, f.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == C || null == (e = C.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
+    }, [t, C]), E = i.useCallback(() => {
       var e;
       switch (null == C || null == (e = C.popout) ? true : e.type) {
-        case f.J.LEVEL_REACHED:
+        case h.J.LEVEL_REACHED:
           return (0, r.jsx)(g.jG, v({
             guildId: t
           }, C.popout));
-        case f.J.PERKS_AVAILABLE:
+        case h.J.PERKS_AVAILABLE:
           return (0, r.jsx)(g.$h, v({
             guildId: t
           }, C.popout));
-        case f.J.PERKS_PURCHASABLE:
+        case h.J.PERKS_PURCHASABLE:
           return (0, r.jsx)(g.yI, v({
             guildId: t
           }, C.popout));
-        case f.J.NEW_PERK_AVAILABLE:
+        case h.J.NEW_PERK_AVAILABLE:
           return (0, r.jsx)(g.cO, v({
             guildId: t
           }, C.popout));
-        case f.J.GAME_SERVER_HOSTING_AVAILABLE:
-        case f.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
+        case h.J.GAME_SERVER_HOSTING_AVAILABLE:
+        case h.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
           return (0, r.jsx)(g.dJ, v({
             guildId: t
           }, C.popout));
@@ -98,7 +98,7 @@ let j = {
       nudgeAlignIntoViewport: true,
       animationPosition: "bottom",
       position: "right",
-      renderPopout: x,
+      renderPopout: E,
       children: e => {
         var i, a;
         return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
@@ -130,7 +130,7 @@ let j = {
             children: O.intl.string(_.default.yv3DJJ)
           }),
           selected: l,
-          onClick: E,
+          onClick: x,
           showUnread: (null == C ? true : C.showUnread) === true,
           trailing: null == C ? true : C.trailing
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {

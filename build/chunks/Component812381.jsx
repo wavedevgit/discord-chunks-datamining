@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 812381, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   a: () => d
@@ -16,7 +16,7 @@ let d = () => {
     t = [{
       label: "DISABLED (no override)",
       value: true
-    }, ...Object.values(Chunk920981.H).filter(e => e !== r.H.SUMMER_SALE_TAKEOVER).map(e => ({
+    }, ...Object.values(Chunk920981.H).filter(e => e !== i.H.SUMMER_SALE_TAKEOVER).map(e => ({
       label: e,
       value: e
     }))];
@@ -30,7 +30,7 @@ let d = () => {
       options: exports,
       value: module,
       onChange: e => {
-        (0, o.fi)(e)
+        (0, s.fi)(e)
       }
     })]
   })

@@ -1,13 +1,13 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 697674, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => i
+  A: () => r
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk159691 = require("./159691.js"),
   Chunk277923 = require("./277923.js");
-let i = e => {
+let r = e => {
   let {
     actions: t,
     footerInput: n
@@ -16,10 +16,10 @@ let i = e => {
     className: l.footer,
     children: [null != n && (0, a.jsx)("div", {
       children: n
-    }), (0, a.jsx)(r.hE2, {
+    }), (0, a.jsx)(i.hE2, {
       className: l.buttonGroup,
       justify: "end",
-      children: t.map((e, t) => (0, a.jsx)(r.zxk, function(e) {
+      children: t.map((e, t) => (0, a.jsx)(i.zxk, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             a = Object.keys(n);

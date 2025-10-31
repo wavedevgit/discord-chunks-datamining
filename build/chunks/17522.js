@@ -119,13 +119,13 @@ class M extends Chunk975288.Mi {
     super(...e), this.headerRows = [], this.columns = [], this.rows = [], this.rowHeaderColumnKeys = new Set, this.head = new H(false), this.body = new X(false), this.columnsDirty = true
   }
 }
-let k = (0, Chunk647438.createContext)(null),
-  j = (0, Chunk647438.createContext)(null),
+let j = (0, Chunk647438.createContext)(null),
+  k = (0, Chunk647438.createContext)(null),
   U = (0, Chunk647438.createContext)(null),
   G = (0, Chunk647438.createContext)(null),
   B = (0, Chunk647438.forwardRef)(function(e, t) {
     var n;
-    [e, t] = (0, o.pE)(e, t, j);
+    [e, t] = (0, o.pE)(e, t, k);
     let r = (0, p.q)(e),
       {
         selectionBehavior: i,
@@ -167,7 +167,7 @@ function Z({
     disallowTypeAhead: p,
     filter: O,
     ...v
-  } = e, I = (0, L.useContext)(k);
+  } = e, I = (0, L.useContext)(j);
   t = (0, R.B)((0, L.useMemo)(() => (0, P.l)(t, null == I ? true : I.tableRef), [t, null == I ? true : I.tableRef]));
   let T = (0, h.o)({
       ...v,
@@ -192,7 +192,7 @@ function Z({
       layoutDelegate: C,
       isVirtualized: A
     }, S, t),
-    j = S.selectionManager,
+    k = S.selectionManager,
     B = !!(null == x ? true : x.useDraggableCollectionState),
     Z = !!(null == x ? true : x.useDroppableCollectionState);
   (0, L.useRef)(B), (0, L.useRef)(Z), (0, L.useEffect)(() => {}, [B, Z]);
@@ -202,7 +202,7 @@ function Z({
   if (B && x) {
     u = x.useDraggableCollectionState({
       collection: S.collection,
-      selectionManager: j,
+      selectionManager: k,
       preview: x.renderDragPreview ? Y : true
     }), x.useDraggableCollection({}, u, t);
     let e = x.DragPreview;
@@ -213,12 +213,12 @@ function Z({
   if (Z && x) {
     d = x.useDroppableCollectionState({
       collection: S.collection,
-      selectionManager: j
+      selectionManager: k
     });
     let e = new(0, g.d)({
         collection: S.collection,
-        disabledKeys: j.disabledKeys,
-        disabledBehavior: j.disabledBehavior,
+        disabledKeys: k.disabledKeys,
+        disabledBehavior: k.disabledBehavior,
         ref: t,
         layoutDelegate: C
       }),
@@ -284,7 +284,7 @@ function Z({
   }, L.createElement(c.y, null, L.createElement(D, {
     collection: S.collection,
     scrollRef: null != (l = null == I ? true : I.scrollRef) ? l : t,
-    persistedKeys: (0, s.y)(j, x, d)
+    persistedKeys: (0, s.y)(k, x, d)
   })))), H)
 }
 
@@ -572,7 +572,7 @@ let $ = (0, Chunk785894.IW)(J, (e, t, n) => {
       onHoverEnd: e.onHoverEnd
     }),
     {
-      checkboxProps: k
+      checkboxProps: j
     } = (0, T.M)({
       key: n.key
     }, f);
@@ -580,7 +580,7 @@ let $ = (0, Chunk785894.IW)(J, (e, t, n) => {
     key: n.key,
     hasDragButton: true
   }, p));
-  let j = (0, L.useRef)(null),
+  let k = (0, L.useRef)(null),
     {
       visuallyHiddenProps: G
     } = (0, C.S)();
@@ -590,7 +590,7 @@ let $ = (0, Chunk785894.IW)(J, (e, t, n) => {
       key: n.key,
       dropPosition: "on"
     }
-  }, h, j));
+  }, h, k));
   let B = (0, L.useRef)(null);
   (0, L.useEffect)(() => {
     p && B.current
@@ -637,7 +637,7 @@ let $ = (0, Chunk785894.IW)(J, (e, t, n) => {
     role: "button",
     ...G,
     ...u.dropIndicatorProps,
-    ref: j
+    ref: k
   }))), L.createElement(W, {
     ...(0, y.d)(z, Y, b, N, x, null == c ? true : c.dragProps, D),
     ref: d,
@@ -656,7 +656,7 @@ let $ = (0, Chunk785894.IW)(J, (e, t, n) => {
       [i.cP, {
         slots: {
           [o.hO]: {},
-          selection: k
+          selection: j
         }
       }],
       [r.b, {

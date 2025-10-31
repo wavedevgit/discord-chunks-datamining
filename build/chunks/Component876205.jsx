@@ -22,10 +22,10 @@ function u(e) {
   let {
     value: t,
     action: n,
-    shouldShow: s
-  } = e, u = (0, r.e7)([l.ZP], () => l.ZP.getKeybindForAction(n, false, true));
-  if (null == u || !s) return null;
-  let h = a.BB(u.shortcut),
+    shouldShow: a
+  } = e, u = (0, r.e7)([o.ZP], () => o.ZP.getKeybindForAction(n, false, true));
+  if (null == u || !a) return null;
+  let h = s.BB(u.shortcut),
     p = d[n],
     f = t ? p.slash : p.default;
   return (0, i.jsxs)("div", {
@@ -34,7 +34,7 @@ function u(e) {
       className: c.keybindIcon,
       size: "xs",
       color: "currentColor"
-    }), (0, i.jsx)(o.Text, {
+    }), (0, i.jsx)(l.Text, {
       variant: "text-xxs/semibold",
       className: c.keybindIndicatorText,
       children: h

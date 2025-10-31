@@ -1,5 +1,6 @@
-/** Chunk was on 42340 **/
-/** chunk id: 52647, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 52647, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -19,10 +20,10 @@ let c = () => {
       })
     }, [exports, require, module]),
     {
-      handleResetStatusClick: d
+      handleResetStatusClick: u
     } = (0, Chunk113434.kJ)(Chunk46140.V6);
   return {
     resetOnboardingExperience: c,
-    resetQuestStatus: d
+    resetQuestStatus: u
   }
 }

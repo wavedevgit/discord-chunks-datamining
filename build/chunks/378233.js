@@ -6,7 +6,7 @@ require.d(exports, {
   Hc: () => D,
   J8: () => x,
   Q6: () => N,
-  V9: () => k,
+  V9: () => j,
   WD: () => w,
   Zt: () => T,
   Zv: () => A,
@@ -107,15 +107,15 @@ let {
     default:
       returnfalse
   }
-}, x = e => e.type === f.n0.GUILD, L = e => e.type === f.n0.STANDARD, M = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], k = e => {
+}, x = e => e.type === f.n0.GUILD, L = e => e.type === f.n0.STANDARD, M = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], j = e => {
   if (null === e) returnfalse;
   let t = e.guild_id;
   return true !== o.Z.getGuild(t)
-}, j = [];
+}, k = [];
 
 function U() {
   var e, t;
-  return null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.favoriteStickers) ? true : module.stickerIds) ? exports : j
+  return null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.favoriteStickers) ? true : module.stickerIds) ? exports : k
 }
 
 function G(e) {

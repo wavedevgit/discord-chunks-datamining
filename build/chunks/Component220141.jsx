@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 220141, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -21,22 +21,22 @@ function p(e) {
     } = e,
     x = function(e, t) {
       if (null == e) return {};
-      var n, a, r = function(e, t) {
+      var n, a, i = function(e, t) {
         if (null == e) return {};
-        var n, a, r = {},
+        var n, a, i = {},
           l = Object.keys(e);
-        for (a = 0; a < l.length; a++) n = l[a], t.indexOf(n) >= 0 || (r[n] = e[n]);
-        return r
+        for (a = 0; a < l.length; a++) n = l[a], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
         var l = Object.getOwnPropertySymbols(e);
-        for (a = 0; a < l.length; a++) n = l[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        for (a = 0; a < l.length; a++) n = l[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
-      return r
+      return i
     }(e, ["handleOpenUserProfileModal", "markAsDismissed"]);
   let {
     trackUserProfileEditAction: g
-  } = (0, i.KZ)(), f = c.rR.filter(e => o.Ki.includes(e)), b = r.useCallback(() => {
+  } = (0, r.KZ)(), f = c.rR.filter(e => s.Ki.includes(e)), b = i.useCallback(() => {
     h(d.L.TAKE_ACTION), g({
       action: "PRESS_ADD_WIDGET"
     }), p()
@@ -66,7 +66,7 @@ function p(e) {
     children: (0, a.jsx)("ul", {
       "aria-label": u.intl.string(u.t["+EIBSA"]),
       className: m.options,
-      children: f.map(e => (0, a.jsx)(s.Z, {
+      children: f.map(e => (0, a.jsx)(o.Z, {
         widgetType: e,
         size: "medium",
         onAddWidget: b,

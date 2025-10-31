@@ -183,10 +183,10 @@ let P = g(h({}, l().defaultRules.link), {
         parseInlineCodeChildContent: true
       }),
       M = n.allowEmojiLinks ? v : O,
-      k = [...M, ...I],
-      j = [...T, ...S],
-      U = A(t(E, L), k, [f.b.EMOJI]),
-      G = A(t(y, L), j);
+      j = [...M, ...I],
+      k = [...T, ...S],
+      U = A(t(E, L), j, [f.b.EMOJI]),
+      G = A(t(y, L), k);
     if (null == U || null == G || 0 === C(U).trim().length) return u();
     let B = i().pick(t.rules, M),
       Z = l().parserFor(B)(_.whitespaceSanitized, L),

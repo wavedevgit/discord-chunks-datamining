@@ -1,34 +1,34 @@
-/** Chunk was on 84743 **/
+/** Chunk was on 3270 **/
 /** chunk id: 699758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  KN: () => a,
-  ZP: () => o,
-  mo: () => l
+  KN: () => l,
+  ZP: () => s,
+  mo: () => a
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk647438 = require("./647438.js"),
-  a = ((r = {})[r.Trick = 0] = "Trick", r[r.Treat = 1] = "Treat", r);
-let l = 2;
+  l = ((r = {})[r.Trick = 0] = "Trick", r[r.Treat = 1] = "Treat", r);
+let a = 2;
 
-function o(e, t, n) {
+function s(e, t, n) {
   let r = i.useRef(Math.random());
   return i.useMemo(() => {
     if (null == e || 0 === e.length) return null;
     if (null == t || 0 === t.length) {
       let t = null != n && e.some(e => e.skuId === n.skuId) ? n : e[0];
       return {
-        defaultCategory: Math.floor(r.current * l),
+        defaultCategory: Math.floor(r.current * a),
         defaultHighlightedReward: t
       }
     }
     let i = [],
-      a = new Map,
-      o = new Map;
+      l = new Map,
+      s = new Map;
     for (let n of t)
-      if (n.variants.length >= l)
-        for (let t = 0; t < l; t++) {
+      if (n.variants.length >= a)
+        for (let t = 0; t < a; t++) {
           let r = t,
-            l = n.variants[t];
-          e.some(e => e.skuId === l.skuId) && (o.set(l.skuId, r), a.has(r) || (i.push(r), a.set(r, function(e, t) {
+            a = n.variants[t];
+          e.some(e => e.skuId === a.skuId) && (s.set(a.skuId, r), l.has(r) || (i.push(r), l.set(r, function(e, t) {
             return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -56,22 +56,22 @@ function o(e, t, n) {
               })
             }
             return e
-          }({}, l), {
+          }({}, a), {
             name: n.name
           }))))
         }
     if (0 === i.length) return null;
     if (null != n) {
-      let e = o.get(n.skuId);
+      let e = s.get(n.skuId);
       if (null != e) return {
         defaultCategory: e,
         defaultHighlightedReward: n
       }
     }
-    let s = i[Math.floor(r.current * i.length)];
+    let o = i[Math.floor(r.current * i.length)];
     return {
-      defaultCategory: s,
-      defaultHighlightedReward: a.get(s)
+      defaultCategory: o,
+      defaultHighlightedReward: l.get(o)
     }
   }, [e, t, n])
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 427217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,12 +10,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk584973 = require("./584973.jsx"),
   Chunk608007 = require("./608007.js");
 
-function s(e) {
+function o(e) {
   let {
     activity: t,
     className: n,
-    emojiClassName: r,
-    textClassName: s,
+    emojiClassName: i,
+    textClassName: o,
     placeholderText: c,
     soloEmojiClassName: d,
     animate: u = true,
@@ -28,16 +28,16 @@ function s(e) {
     emoji: x
   } = t, g = null != t.state && "" !== t.state ? t.state : c;
   return (0, a.jsxs)("div", {
-    className: l()(o.__invalid_container, n),
-    children: [p || null == x ? null : (0, a.jsx)(i.Z, {
+    className: l()(s.__invalid_container, n),
+    children: [p || null == x ? null : (0, a.jsx)(r.Z, {
       emoji: x,
-      className: l()(o.emoji, r, null != d ? {
+      className: l()(s.emoji, i, null != d ? {
         [d]: null == g || "" === g
       } : null),
       animate: u,
       hideTooltip: m
     }), null != g && g.length > 0 ? (0, a.jsx)("span", {
-      className: s,
+      className: o,
       children: g
     }) : null, h]
   })

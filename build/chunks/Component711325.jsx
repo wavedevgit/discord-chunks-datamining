@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 711325, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -18,18 +18,18 @@ function d(e) {
   } = e, d = (0, l.ZP)();
   return (0, a.jsxs)("div", {
     className: c.picker,
-    children: [(0, a.jsx)(r.Text, {
+    children: [(0, a.jsx)(i.Text, {
       variant: "text-sm/semibold",
       children: "Preselected Gradient"
     }), (0, a.jsx)("div", {
       className: c.themes,
-      children: o.vs.map(e => {
-        let r = d !== s.BRd.LIGHT ? e.darkBackground : e.lightBackground,
+      children: s.vs.map(e => {
+        let i = d !== o.BRd.LIGHT ? e.darkBackground : e.lightBackground,
           l = t === e.name;
-        return (0, a.jsx)(i.S4, {
+        return (0, a.jsx)(r.S4, {
           onSelect: () => n(e),
           style: {
-            background: r
+            background: i
           },
           name: e.name,
           isSelected: l

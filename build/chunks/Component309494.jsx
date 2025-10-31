@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 309494, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -20,9 +20,9 @@ function p(e) {
     user: t,
     isVisible: n
   } = e, {
-    trackUserProfileAction: r
+    trackUserProfileAction: i
   } = (0, d.KZ)();
-  return s.wS ? (0, a.jsx)(o.Z, {
+  return o.wS ? (0, a.jsx)(s.Z, {
     text: u.intl.string(u.t.y5MwJy),
     delay: 0,
     "aria-label": false,
@@ -30,12 +30,12 @@ function p(e) {
       decoration: "never",
       identifiable: "always"
     }),
-    onCopy: () => r({
+    onCopy: () => i({
       action: "COPY_USERNAME"
     }),
     children: e => {
-      var t, r;
-      return (0, a.jsx)(i.P3F, (t = function(e) {
+      var t, i;
+      return (0, a.jsx)(r.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             a = Object.keys(n);
@@ -52,24 +52,24 @@ function p(e) {
           })
         }
         return e
-      }({}, e), r = r = {
+      }({}, e), i = i = {
         className: l()(m.copyButton, {
           [m.visible]: n
         }),
         "aria-label": u.intl.string(u.t.y5MwJy),
-        children: (0, a.jsx)(i.TIy, {
+        children: (0, a.jsx)(r.TIy, {
           size: "xs",
           color: "currentColor"
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var a = Object.getOwnPropertySymbols(e);
           n.push.apply(n, a)
         }
         return n
-      })(Object(r)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
       }), t))
     }
   }) : null

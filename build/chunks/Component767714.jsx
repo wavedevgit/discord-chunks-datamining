@@ -111,7 +111,7 @@ let y = function(e) {
       paymentModalBanner: R
     };
 
-  function k(e) {
+  function j(e) {
     let n = null != P ? P : t === f.Si.TIER_1 ? s.zx.Colors.PRIMARY : s.zx.Colors.GREEN;
     return (0, r.jsx)(u.Z, g(h({}, M), {
       children: o => {
@@ -148,6 +148,6 @@ let y = function(e) {
   return null != L.buttonTooltipText ? (0, r.jsx)(l.aML, {
     "data-migration-pending": true,
     text: L.buttonTooltipText,
-    children: k
-  }) : k()
+    children: j
+  }) : j()
 }

@@ -150,10 +150,10 @@ function M(e) {
   }
 }
 
-function k(e, t) {
+function j(e, t) {
   return null == t ? [] : (Array.isArray(t) ? t : [t]).map(t => "object" == typeof t && (null == t || "value" in t) ? t : e.find(e => e.value === t)).filter(Boolean)
 }
-let j = Chunk647438.forwardRef(function(e, t) {
+let k = Chunk647438.forwardRef(function(e, t) {
   var {
     options: n,
     value: a,
@@ -168,7 +168,7 @@ let j = Chunk647438.forwardRef(function(e, t) {
     className: N,
     isDisabled: w = false,
     isProcessing: D = false,
-    maxVisibleItems: j = 7,
+    maxVisibleItems: k = 7,
     autoFocus: U = false,
     popoutPosition: B = "bottom",
     popoutWidth: V,
@@ -212,7 +212,7 @@ let j = Chunk647438.forwardRef(function(e, t) {
     active: eI,
     loadableOptions: n,
     debounceTime: K
-  }), eL = i.useMemo(() => k(ew, a), [ew, a]), eM = i.useMemo(() => eL.map(e => e.value), [eL]), ek = eL[eL.length - 1], ej = (0, f.Z)(ek), eU = i.useId(), eG = i.useId(), eB = i.useCallback(e => {
+  }), eL = i.useMemo(() => j(ew, a), [ew, a]), eM = i.useMemo(() => eL.map(e => e.value), [eL]), ej = eL[eL.length - 1], ek = (0, f.Z)(ej), eU = i.useId(), eG = i.useId(), eB = i.useCallback(e => {
     eI === e || w || (eT(e), e ? null == b || b() : null == v || v())
   }, [w, v, b, eI]), eZ = i.useCallback(e => {
     eI && !e && eB(false)
@@ -245,7 +245,7 @@ let j = Chunk647438.forwardRef(function(e, t) {
     }), []),
     eW = (0, c.ZP)({
       id: eG,
-      defaultFocused: null != ek ? String(ek.value) : true,
+      defaultFocused: null != ej ? String(ej.value) : true,
       scrollToStart: eH,
       scrollToEnd: eY,
       isEnabled: eI,
@@ -258,7 +258,7 @@ let j = Chunk647438.forwardRef(function(e, t) {
     ez = (0, f.Z)(ew);
   i.useEffect(() => {
     let e = ez.current,
-      t = ej.current;
+      t = ek.current;
     eI && null != t && !eD && requestAnimationFrame(() => {
       let n = eR.current,
         r = e.indexOf(t);
@@ -267,7 +267,7 @@ let j = Chunk647438.forwardRef(function(e, t) {
         row: r
       })
     })
-  }, [eI, eD, ez, ej]), i.useEffect(() => {
+  }, [eI, eD, ez, ek]), i.useEffect(() => {
     let e = eK.current;
     if (eI && !eD) {
       var t;
@@ -281,13 +281,13 @@ let j = Chunk647438.forwardRef(function(e, t) {
       }
       ev(null != (t = e.focusedItemId()) ? t : null)
     } else {
-      let t = ej.current,
+      let t = ek.current,
         n = null != t ? String(t.value) : null;
       e.setFocus(n), ev(null)
     }
-  }, [eI, eD, eK, ej]), i.useLayoutEffect(() => {
-    eI || (h ? eA("") : null != ek && eA(ek.label))
-  }, [h, ek, eI]), i.useLayoutEffect(() => {
+  }, [eI, eD, eK, ek]), i.useLayoutEffect(() => {
+    eI || (h ? eA("") : null != ej && eA(ej.label))
+  }, [h, ej, eI]), i.useLayoutEffect(() => {
     h && eA("")
   }, [h, eL.length]);
   let eq = i.useCallback(function(e) {
@@ -356,7 +356,7 @@ let j = Chunk647438.forwardRef(function(e, t) {
           multi: !!h,
           listRef: eR,
           listId: eU,
-          maxVisibleItems: j,
+          maxVisibleItems: k,
           width: null != V && "auto" !== V ? V : eb,
           selectedValues: eM,
           closePopout: t,
@@ -400,7 +400,7 @@ let j = Chunk647438.forwardRef(function(e, t) {
               },
               onBlur: e => {
                 var t, n, r;
-                (null == (t = eP.current) ? true : t.contains(e.relatedTarget)) || (null == (r = eR.current) || null == (n = r.getScrollerNode()) ? true : n.contains(e.relatedTarget)) || (h || null == ek || eA(ek.label), eN(false), eB(false), null == er || er(e))
+                (null == (t = eP.current) ? true : t.contains(e.relatedTarget)) || (null == (r = eR.current) || null == (n = r.getScrollerNode()) ? true : n.contains(e.relatedTarget)) || (h || null == ej || eA(ej.label), eN(false), eB(false), null == er || er(e))
               },
               children: [(0, r.jsx)(p.tEY, {
                 ringTarget: eE,
@@ -590,7 +590,7 @@ function U(e) {
       closeOnSelect: d
     }))
   }
-  return (0, r.jsx)(j, C({}, e))
+  return (0, r.jsx)(k, C({}, e))
 }
 
 function G(e) {

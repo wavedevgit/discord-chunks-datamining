@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 53891, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => j
@@ -23,7 +23,7 @@ let f = new Chunk710845.Z("GuildTagCoachmark");
 function b(e) {
   function t(t) {
     var n;
-    s.Z.dispatch({
+    o.Z.dispatch({
       type: "GUILD_TAG_CHANGED_COACHMARK_SEEN",
       guildId: e.guild.id,
       lastSeenInfo: {
@@ -33,12 +33,12 @@ function b(e) {
   }
   let {
     isAdopting: n,
-    onAdoptTag: r,
+    onAdoptTag: i,
     onEditProfile: l
   } = (0, h.Z)(e.guild.id, () => t(x.L.TAKE_ACTION)), c = [{
     text: g.intl.string(g.t.jwEaiX),
     loading: n,
-    onClick: r,
+    onClick: i,
     variant: "primary"
   }, {
     text: g.intl.string(g.t.s5vZlQ),
@@ -46,13 +46,13 @@ function b(e) {
     variant: "secondary"
   }];
   return (0, a.jsxs)(a.Fragment, {
-    children: [e.children, (0, a.jsx)(o.J2, {
+    children: [e.children, (0, a.jsx)(s.J2, {
       targetElementRef: e.targetElementRef,
       shouldShow: true,
       position: "top",
       graphic: {
         type: "dynamic",
-        component: i.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+        component: r.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
         props: {
           guildId: e.guild.id,
           guildProfile: e.guild.profile
@@ -72,7 +72,7 @@ function b(e) {
 function v(e) {
   function t(t) {
     var n;
-    s.Z.dispatch({
+    o.Z.dispatch({
       type: "GUILD_TAG_CHANGED_COACHMARK_SEEN",
       guildId: e.guild.id,
       lastSeenInfo: {
@@ -82,12 +82,12 @@ function v(e) {
   }
   let {
     isAdopting: n,
-    onAdoptTag: r,
+    onAdoptTag: i,
     onEditProfile: c
   } = (0, h.Z)(e.guild.id, () => t(x.L.TAKE_ACTION)), u = [{
     text: g.intl.string(g.t.jwEaiX),
     loading: n,
-    onClick: r,
+    onClick: i,
     variant: "primary"
   }, {
     text: g.intl.string(g.t.s5vZlQ),
@@ -95,13 +95,13 @@ function v(e) {
     variant: "secondary"
   }];
   return (0, a.jsxs)(a.Fragment, {
-    children: [e.children, (0, a.jsx)(o.J2, {
+    children: [e.children, (0, a.jsx)(s.J2, {
       targetElementRef: e.targetElementRef,
       shouldShow: true,
       position: "top",
       graphic: {
         type: "dynamic",
-        component: i.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+        component: r.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
         props: {
           guildId: e.guild.id,
           guildProfile: e.guild.profile
@@ -119,7 +119,7 @@ function v(e) {
 }
 
 function j(e) {
-  let t = (0, r.e7)([u.Z], () => u.Z.getGuild(e.guildId)),
+  let t = (0, i.e7)([u.Z], () => u.Z.getGuild(e.guildId)),
     n = (0, m.S3)(e.guildId);
   return null != t && (0, p.jq)(t) && null !== n ? "changed" === n ? (0, a.jsx)(b, {
     guild: t,

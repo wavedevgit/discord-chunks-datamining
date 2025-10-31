@@ -15,17 +15,17 @@ var Chunk704215 = require("./704215.js"),
   Chunk312839 = require("./312839.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
-let f = e => (0, a.QR)(e, (0, u.P)(), p.t["z8/sgJ"]);
+let f = e => (0, s.QR)(e, (0, u.P)(), p.t["z8/sgJ"]);
 
 function g(e) {
   let {
     isFirstTimeNux: t
   } = e, {
-    icon: a,
+    icon: s,
     title: g,
     body: m,
-    hint: _,
-    notifType: y
+    hint: y,
+    notifType: O
   } = function(e, t) {
     if (t.isFirstTimeNux) {
       var n, i;
@@ -68,16 +68,16 @@ function g(e) {
     hint: f,
     notifType: h.n0.OopWelcomeNudge
   }, e), {
-    trackView: O,
+    trackView: _,
     trackClick: v
-  } = (0, u.R)(y, {
-    notif_type: y
+  } = (0, u.R)(O, {
+    notif_type: O
   });
   return {
-    icon: a,
+    icon: s,
     title: g,
     body: m,
-    hint: _,
+    hint: y,
     renderFooter: () => (0, i.jsx)("div", {
       style: {
         textAlign: "center",
@@ -87,13 +87,13 @@ function g(e) {
     }),
     confirmText: t ? p.intl.string(p.t.TxyTbk) : true,
     onConfirmClick: t ? () => {
-      v("unlock"), o.Z.setInputLocked(false, (0, d.getPID)())
+      v("unlock"), l.Z.setInputLocked(false, (0, d.getPID)())
     } : true,
     onNotificationShow: () => {
-      O(), t && (0, l.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
+      _(), t && (0, o.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
     },
     onNotificationClick: (e, t) => {
-      v("unlock"), s.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? o.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && o.Z.setInstanceLocked(false)
+      v("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? l.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && l.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
       v("dismiss")

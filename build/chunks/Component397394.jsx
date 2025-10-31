@@ -6,9 +6,9 @@ require.d(exports, {
   Lk: () => Z,
   Xg: () => F,
   ZP: () => M,
-  c7: () => k,
+  c7: () => j,
   j3: () => V,
-  jO: () => j,
+  jO: () => k,
   ks: () => B
 }), require("./358797.js"), require("./539854.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
@@ -122,13 +122,13 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   return (0, r.jsx)(M, D(P({}, e), {
     headerClassName: N.headerSuccess
   }))
 }
 
-function j(e) {
+function k(e) {
   var {
     guild: t,
     application: n
@@ -198,7 +198,7 @@ function U(e) {
       className: N.authorizedSuccessSubtext,
       children: s
     });
-  return (0, r.jsx)(k, P({
+  return (0, r.jsx)(j, P({
     message: o,
     footer: l
   }, a))

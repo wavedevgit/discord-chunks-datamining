@@ -61,9 +61,9 @@ let C = "recentMentionFilterSettings",
   }),
   L = false,
   M = 0,
-  k = false;
+  j = false;
 
-function j(e) {
+function k(e) {
   R = {}, e.forEach(e => {
     null == R[e.getChannelId()] && (R[e.getChannelId()] = 0), R[e.getChannelId()]++
   })
@@ -152,12 +152,12 @@ function H(e) {
     userId: r,
     suppressEveryone: i,
     suppressRoles: a
-  }) ? (k && b.ZP.ackMessageId(n.id) !== e.id && (0, f.ZP)({
+  }) ? (j && b.ZP.ackMessageId(n.id) !== e.id && (0, f.ZP)({
     message: e,
     userId: r,
     suppressEveryone: v.ZP.isSuppressEveryoneEnabled(n.getGuildId()),
     suppressRoles: v.ZP.isSuppressRolesEnabled(n.getGuildId())
-  }) && (k = false), e) : null
+  }) && (j = false), e) : null
 }
 
 function Y(e) {
@@ -232,7 +232,7 @@ function X(e) {
   r && N.forEach(e => {
     let t = H(e);
     null != t && (i.push(t), P[t.id] = true)
-  }), j(N = i), 0 === N.length && (L = false)
+  }), k(N = i), 0 === N.length && (L = false)
 }
 
 function Q() {
@@ -241,7 +241,7 @@ function Q() {
 }
 
 function J() {
-  N = [], P = {}, L = false, k = false, R = {}
+  N = [], P = {}, L = false, j = false, R = {}
 }
 
 function $(e) {
@@ -287,7 +287,7 @@ function er(e) {
 }
 
 function ei(e) {
-  k = true
+  j = true
 }
 class ea extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -324,7 +324,7 @@ class ea extends(r = Chunk442837.ZP.Store) {
     return x.roleFilter
   }
   get mentionsAreStale() {
-    return k
+    return j
   }
   get mentionCountByChannel() {
     return R

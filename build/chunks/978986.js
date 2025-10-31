@@ -1,14 +1,14 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 978986, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   NQ: () => b,
   U1: () => y,
   XW: () => d,
   _J: () => m,
-  aP: () => h,
+  aP: () => f,
   e7: () => g,
   h6: () => _,
-  oE: () => f,
+  oE: () => h,
   pB: () => p,
   y: () => O,
   yr: () => v
@@ -106,10 +106,10 @@ let d = (0, Chunk191336.U)(e => ({
   p = (e, t, n) => {
     d.getState().initialize(e, t, n)
   },
-  f = () => {
+  h = () => {
     d.getState().reset()
   },
-  h = () => {
+  f = () => {
     let e = d.getState();
     return module.nickname !== c.nickname || module.dmsAllowed !== c.dmsAllowed || module.showActivity !== u(module.guildSize)
   },

@@ -1,7 +1,7 @@
 /** Chunk was on 63141 **/
 /** chunk id: 998033, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,18 +20,18 @@ var Chunk13245 = require("./13245.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
 
-function y(e, t, n, y) {
-  var O;
+function O(e, t, n, O) {
+  var _;
   let {
     icon: v,
     title: b,
     body: E
-  } = (0, o.Xi)(e, t, n), {
+  } = (0, l.Xi)(e, t, n), {
     trackView: S,
     trackClick: x
   } = (0, f.R)(m.n0.TextChat, {
     notif_type: m.n0.TextChat,
-    notif_user_id: null == (O = t.author) ? true : O.id,
+    notif_user_id: null == (_ = t.author) ? true : _.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,
@@ -46,17 +46,17 @@ function y(e, t, n, y) {
       style: {
         textAlign: "center"
       },
-      children: _.intl.string(_.t["+MJm3w"])
+      children: y.intl.string(y.t["+MJm3w"])
     }) : null,
     maxBodyLines: 2,
     onNotificationShow: () => {
-      y && (0, s.GN)(c.Ay, c.yk), S()
+      O && (0, a.GN)(c.Ay, c.yk), S()
     },
     onNotificationClick: () => {
-      if (l.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {
+      if (o.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {
         let n = (0, p.getPID)();
-        d.default.isInstanceLocked() ? (x("unlock"), r.Z.setInputLocked(false, n)) : (x("jump"), (0, a.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.ZP.focus())
-      } else(0, a.uL)(g.Z5c.CHANNEL(e.guild_id, e.id)), x("jump"), d.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
+        d.default.isInstanceLocked() ? (x("unlock"), r.Z.setInputLocked(false, n)) : (x("jump"), (0, s.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.ZP.focus())
+      } else(0, s.uL)(g.Z5c.CHANNEL(e.guild_id, e.id)), x("jump"), d.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
       x("dismiss")

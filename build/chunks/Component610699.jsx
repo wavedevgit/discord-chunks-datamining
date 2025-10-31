@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk969016 = require("./969016.js");
 
-function k(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,14 +47,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -194,12 +194,12 @@ function F(e) {
         return b.id === t
       })
     }),
-    k = I.Z.getChannel(null == (n = s.channel) ? true : n.id),
-    j = (0, c.e7)([S.Z], () => null != k && S.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, k), [k]),
+    j = I.Z.getChannel(null == (n = s.channel) ? true : n.id),
+    k = (0, c.e7)([S.Z], () => null != j && S.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, j), [j]),
     {
       analyticsLocations: U
     } = (0, h.ZP)(p.Z.INVITE_EMBED),
-    G = (0, c.Wu)([_.ZP], () => null != k ? _.ZP.getEmbeddedActivitiesForChannel(k.id).filter(e => e.applicationId === b.id).flatMap(e => Array.from(e.userIds)) : [], [k, b.id]),
+    G = (0, c.Wu)([_.ZP], () => null != j ? _.ZP.getEmbeddedActivitiesForChannel(j.id).filter(e => e.applicationId === b.id).flatMap(e => Array.from(e.userIds)) : [], [j, b.id]),
     B = (0, c.Wu)([A.default], () => G.map(e => A.default.getUser(e)).filter(e => null != e), [G]),
     Z = i.useCallback(() => {
       (0, f.r$)({
@@ -220,14 +220,14 @@ function F(e) {
     v = (0, R.Qs)(s.guild)
   }
   a = H ? D ? L.intl.string(L.t.DPfdsq) : M ? L.intl.string(L.t.sqe0hj) : L.intl.string(L.t.RscU7I) : L.intl.string(L.t["2BP08E"]);
-  let Y = H && !j || H && D;
-  return (j || (o = L.intl.string(L.t.hHGrWz)), null == s.code || "" === s.code || null == N) ? null : (0, r.jsx)(h.Gt, {
+  let Y = H && !k || H && D;
+  return (k || (o = L.intl.string(L.t.hHGrWz)), null == s.code || "" === s.code || null == N) ? null : (0, r.jsx)(h.Gt, {
     value: U,
     children: (0, r.jsx)(V, {
       app: N,
       activityUsers: B,
       isMember: H,
-      channel: k,
+      channel: j,
       guild: v,
       message: u,
       members: m,
@@ -275,7 +275,7 @@ function V(e) {
     disabledReason: p && null != h ? h : true,
     onClick: O
   }], [_, a, f, p, h, O]);
-  return (0, r.jsx)(m.W, G(j({
+  return (0, r.jsx)(m.W, G(k({
     header: t.name,
     title: L.intl.string(L.t["7vb6nw"]),
     iconSrc: S

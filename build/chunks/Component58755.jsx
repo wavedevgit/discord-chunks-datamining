@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 58755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => v
@@ -65,7 +65,7 @@ function v(e) {
     setState: n
   } = e, {
     scales: l
-  } = t, [i, o] = r.useState(null), s = (0, a.jsxs)("div", {
+  } = t, [r, s] = i.useState(null), o = (0, a.jsxs)("div", {
     className: h.section,
     children: [(0, a.jsx)(d.VcW, {
       options: b,
@@ -93,7 +93,7 @@ function v(e) {
       className: h.overrides,
       children: l.map(e => (0, a.jsx)("li", {
         children: (0, a.jsx)(d.P3F, {
-          onClick: () => o(e.name),
+          onClick: () => s(e.name),
           style: {
             cursor: "pointer"
           },
@@ -106,11 +106,11 @@ function v(e) {
         })
       }, e.name))
     })]
-  }), u = l.find(e => e.name === i), f = null != u ? (0, a.jsx)(j, {
-    onClose: () => o(null),
+  }), u = l.find(e => e.name === r), f = null != u ? (0, a.jsx)(j, {
+    onClose: () => s(null),
     scale: u,
     setState: n
-  }) : s;
+  }) : o;
   return (0, a.jsx)("div", {
     children: f
   })
@@ -120,7 +120,7 @@ function j(e) {
   let {
     scale: t,
     setState: n,
-    onClose: r
+    onClose: i
   } = e, {
     name: c,
     base: x,
@@ -136,7 +136,7 @@ function j(e) {
     children: [(0, a.jsxs)("div", {
       className: h.titleWithIcon,
       children: [(0, a.jsx)(d.P3F, {
-        onClick: r,
+        onClick: i,
         style: {
           maxWidth: 80
         },
@@ -151,7 +151,7 @@ function j(e) {
           let e = Object.entries(S).reduce((e, t) => {
             let [n, a] = t;
             return e[n] = {
-              value: (0, l.Z)((0, i.Z)(a, p.HW.sRGB), {
+              value: (0, l.Z)((0, r.Z)(a, p.HW.sRGB), {
                 format: "hex"
               }),
               type: "color"
@@ -243,7 +243,7 @@ function j(e) {
         className: h.paletteOverrides,
         "data-columnar": b,
         children: Object.entries(S).map((e, n) => {
-          let [r, c] = e, u = (0, p.HI)(c), m = (0, o.Z)((0, s.Z)("black"), c) > 4.5 ? "black" : "white", h = E[r];
+          let [i, c] = e, u = (0, p.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = E[i];
           return (0, a.jsxs)("div", {
             style: {
               backgroundColor: u
@@ -262,11 +262,11 @@ function j(e) {
                 opacity: .75,
                 color: m
               },
-              children: [(0, l.Z)((0, i.Z)(c, p.HW.sRGB), {
+              children: [(0, l.Z)((0, r.Z)(c, p.HW.sRGB), {
                 format: "hex"
               }).toUpperCase(), " - ", u]
             })]
-          }, r)
+          }, i)
         })
       })]
     })]
@@ -277,7 +277,7 @@ function _(e) {
   let {
     scale: t,
     onRemove: n
-  } = e, o = r.useMemo(() => Object.values((0, p.XM)(t)).map(e => (0, l.Z)((0, i.Z)(e, p.HW.sRGB), {
+  } = e, s = i.useMemo(() => Object.values((0, p.XM)(t)).map(e => (0, l.Z)((0, r.Z)(e, p.HW.sRGB), {
     format: "hex"
   })), [t]);
   return (0, a.jsxs)("li", {
@@ -303,7 +303,7 @@ function _(e) {
       })]
     }), (0, a.jsx)("div", {
       className: h.palettePreview,
-      children: o.map(e => (0, a.jsx)("span", {
+      children: s.map(e => (0, a.jsx)("span", {
         style: {
           width: 16,
           height: 16,

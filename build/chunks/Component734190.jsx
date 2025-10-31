@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 734190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -176,7 +176,7 @@ let k = Chunk647438.memo(function(e) {
     p.Z.preload(t.guild_id, t.id)
   }, [t.guild_id, t.id]), Y = i.useCallback(e => {
     let i = _.Z.getChannel(t.id);
-    null != i && (0, f.jW)(e, async () => {
+    null != i && (0, h.jW)(e, async () => {
       let {
         default: e
       } = await n.e("40157").then(n.bind(n, 422200));
@@ -257,7 +257,7 @@ let k = Chunk647438.memo(function(e) {
               className: w.threadIconWithAvatar,
               children: [(0, r.jsx)(M, {
                 thread: t
-              }), null == z ? null : (0, r.jsx)(h.Z, {
+              }), null == z ? null : (0, r.jsx)(f.Z, {
                 user: z,
                 size: d.EFr.SIZE_16
               })]
@@ -269,11 +269,11 @@ let k = Chunk647438.memo(function(e) {
               children: t.name
             }), (0, r.jsxs)("div", {
               className: w.children,
-              children: [q > 0 && t.userLimit > 0 ? (0, r.jsx)(x.Z, {
+              children: [q > 0 && t.userLimit > 0 ? (0, r.jsx)(E.Z, {
                 userCount: q,
                 video: G,
                 channel: t
-              }) : null, (0, E.Z)(B) ? (0, r.jsx)(S.Z, {
+              }) : null, (0, x.Z)(B) ? (0, r.jsx)(S.Z, {
                 mentionsCount: B,
                 isMentionLowImportance: F
               }) : null]

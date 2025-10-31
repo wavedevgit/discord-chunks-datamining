@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 252417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -28,17 +28,17 @@ function v(e) {
     status: v,
     guildId: j,
     channelId: C,
-    onSelect: E
+    onSelect: x
   } = e, {
-    theme: x,
+    theme: E,
     themeType: S
   } = (0, g.z)(), I = i.useMemo(() => t.isNonUserBot() || (0, p.W)(t, C), [t, C]), {
     activities: P,
     isMobileOnline: N
-  } = (0, l.cj)([h.Z], () => ({
-    activities: h.Z.getActivities(t.id),
-    isMobileOnline: h.Z.isMobileOnline(t.id)
-  })), Z = (0, f.Z)(t.id), {
+  } = (0, l.cj)([f.Z], () => ({
+    activities: f.Z.getActivities(t.id),
+    isMobileOnline: f.Z.isMobileOnline(t.id)
+  })), Z = (0, h.Z)(t.id), {
     voiceActivityStatusEnabled: T
   } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
@@ -61,7 +61,7 @@ function v(e) {
       }
     },
     className: _.row,
-    onClick: E,
+    onClick: x,
     onContextMenu: e => {
       (0, a.jW)(e, async () => {
         let {
@@ -106,7 +106,7 @@ function v(e) {
       "aria-label": t.username,
       size: O,
       status: I ? m.Skl.UNKNOWN : v,
-      statusBackdropColor: I ? true : (0, o.QFD)(x),
+      statusBackdropColor: I ? true : (0, o.QFD)(E),
       isMobile: N,
       className: _.avatar
     }), (0, r.jsxs)("div", {

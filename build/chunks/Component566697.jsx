@@ -46,20 +46,20 @@ let N = {
       showStatus: x,
       showPlaceholderUser: L,
       pendingGlobalName: M,
-      pendingNickname: k,
-      pendingAvatarDecoration: j,
+      pendingNickname: j,
+      pendingAvatarDecoration: k,
       pendingDisplayNameStyles: U,
       nameplatePreviewSize: G = "default",
       isPurchased: B = false,
       skipEffectDisplayName: Z = false,
       width: F
     } = e, V = (0, s.e7)([b.Z], () => (0, l.wj)(b.Z.theme)), H = null != a ? (0, f.EU)(a) : R, Y = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), W = V ? "#706F74" : "#aaaab2", K = i.useRef(null), z = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), q = null != t ? (0, E.Ly)({
-      pendingNickname: k,
+      pendingNickname: j,
       pendingGlobalName: M,
       user: t,
       guildMember: z
     }) : true, X = (0, g.Ys)({
-      pendingValue: j,
+      pendingValue: k,
       userValue: null == t ? true : t.avatarDecoration,
       guildValue: null == z ? true : z.avatarDecoration,
       guildId: n

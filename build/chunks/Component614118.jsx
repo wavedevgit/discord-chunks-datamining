@@ -50,7 +50,7 @@ function O(e) {
         isGift: false
       })
     }, [P]),
-    k = i.useCallback(() => {
+    j = i.useCallback(() => {
       null != P && (0, h.P)(P, {
         isGift: true
       })
@@ -105,7 +105,7 @@ function O(e) {
           }),
           fullWidth: true
         }), (0, r.jsx)(m.Z, {
-          onGift: k
+          onGift: j
         })]
       })]
     })]

@@ -113,7 +113,7 @@ let I = e => {
       M = f.Z.useExperiment({
         location: "PremiumPerks"
       }).enabled,
-      k = (0, m.ZM)({
+      j = (0, m.ZM)({
         perksCards: R,
         variant: n,
         hideCardsOnNarrowScreen: false,
@@ -124,7 +124,7 @@ let I = e => {
         showDisplayNameStyles: L,
         recurring3PPromotionExperiment: M
       }),
-      j = k.some(e => null != e.pillText);
+      k = j.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
       ref: S,
       className: o()(E.section, {
@@ -143,7 +143,7 @@ let I = e => {
           [E.subtitle]: null == O || b,
           [E.subtitleWithButton]: null != O && !b,
           [E.fullWidth]: A || b,
-          [E.moreSubtitleMargin]: j,
+          [E.moreSubtitleMargin]: k,
           [E.leftAlignSubtitle]: b,
           [E.centerAlignSubtitle]: !b
         }),
@@ -153,7 +153,7 @@ let I = e => {
         children: O
       }), (0, r.jsx)("div", {
         className: E.cardContainer,
-        children: k.map((e, t) => (0, r.jsx)(g.Z, v(y({}, e), {
+        children: j.map((e, t) => (0, r.jsx)(g.Z, v(y({}, e), {
           forceShadow: a
         }), "".concat(e.name, "_").concat(t)))
       })]

@@ -48,7 +48,7 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function k(e) {
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,7 +73,7 @@ function j(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -208,7 +208,7 @@ let W = function(e) {
     paymentSource: p,
     busy: N,
     analyticsLocation: M
-  } = e, j = "subscription_header", {
+  } = e, k = "subscription_header", {
     analyticsLocations: Y
   } = (0, f.ZP)(d.Z.SUBSCRIPTION_HEADER), {
     fractionalState: W
@@ -217,7 +217,7 @@ let W = function(e) {
   }), K = W === w.a$.FP_SUB_PAUSED, {
     enabled: z
   } = (0, A.ZP)({
-    location: j
+    location: k
   });
   w.pj.has(i.planId) && D.JwP.ALL_PAUSEABLE.has(i.status) && !K || (z = false);
   let q = (0, C.Ng)(),
@@ -238,8 +238,8 @@ let W = function(e) {
       (0, c.ZDy)(async () => {
         let {
           PremiumBrandRefreshSubscriptionCancellationModal: t
-        } = await Promise.all([n.e("17938"), n.e("69432"), n.e("26526"), n.e("46573")]).then(n.bind(n, 48813));
-        return n => (0, r.jsx)(t, U(k({}, n), {
+        } = await n.e("26526").then(n.bind(n, 48813));
+        return n => (0, r.jsx)(t, U(j({}, n), {
           premiumSubscription: i,
           analyticsLocation: M,
           analyticsLocations: Y,

@@ -110,13 +110,13 @@ function M() {
   T = Chunk981631.QZA.SUBMITTING, S = {}
 }
 
-function k(e) {
+function j(e) {
   var t;
   if (T !== p.QZA.SUBMITTING) returnfalse;
   T = p.QZA.OPEN, S = null != (t = e.errors) ? t : {}
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t,
     integrations: n
@@ -315,9 +315,9 @@ let X = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: V,
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: H,
     GUILD_SETTINGS_CLOSE: w,
-    GUILD_SETTINGS_LOADED_INTEGRATIONS: j,
+    GUILD_SETTINGS_LOADED_INTEGRATIONS: k,
     WEBHOOKS_UPDATE: U,
     INTEGRATION_SETTINGS_SUBMITTING: M,
-    INTEGRATION_SETTINGS_SAVE_FAILURE: k
+    INTEGRATION_SETTINGS_SAVE_FAILURE: j
   }),
   Q = X

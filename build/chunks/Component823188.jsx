@@ -63,18 +63,18 @@ function Z(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: a()(o, {
-      [k.featureItem]: u,
-      [k.featureItemApplicationHome]: u && c
+      [j.featureItem]: u,
+      [j.featureItemApplicationHome]: u && c
     }),
     children: [(0, r.jsx)(t, {
-      className: u ? j.smallIcon : j.icon,
+      className: u ? k.smallIcon : k.icon,
       color: "currentColor"
     }), (0, r.jsx)(l.Text, {
       variant: null != s ? s : "text-md/normal",
       color: u || c ? "currentColor" : "always-white",
       children: n
     }), i ? (0, r.jsx)(f.Z, {
-      className: j.newTagItem,
+      className: k.newTagItem,
       forceUseColorForSparkles: true,
       shouldInheritBackgroundColor: true,
       shouldInheritTextColor: true
@@ -96,7 +96,7 @@ function F(e) {
       return (0, r.jsx)(Z, {
         Icon: a,
         text: o(),
-        className: t && !n ? j.itemApplicationHome : j.itemWithWumpus,
+        className: t && !n ? k.itemApplicationHome : k.itemWithWumpus,
         textVariant: t && !n ? "text-sm/normal" : true,
         enablePremiumBrandRefresh: n,
         isApplicationHome: t
@@ -115,18 +115,18 @@ function V(e) {
     priceOptions: c
   } = e, u = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), d = (0, S.N)(), f = null == d || null == (t = d.subscription_trial) ? true : t.sku_id, _ = !!(null == u ? true : u.hasActiveTrial), p = null != f || _;
   return (0, r.jsxs)("div", {
-    className: a()(j.tier0, j.card, j.tier0ApplicationHomeBackground, s, {
-      [j.withTier0Rim]: !l && p,
-      [j.withCardHover]: !l && p
+    className: a()(k.tier0, k.card, k.tier0ApplicationHomeBackground, s, {
+      [k.withTier0Rim]: !l && p,
+      [k.withCardHover]: !l && p
     }),
     children: [(0, r.jsx)("img", {
       src: U,
-      className: j.applicationHomeStarBackground,
+      className: k.applicationHomeStarBackground,
       alt: ""
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(E.Z, {
-          className: a()(j.title, j.tier0ApplicationHomeTitle)
+          className: a()(k.title, k.tier0ApplicationHomeTitle)
         }), (0, r.jsx)(P.Z, {
           isGift: l,
           premiumTier: x.PremiumTypes.TIER_0,
@@ -159,32 +159,32 @@ function H(e) {
     priceOptions: d
   } = e, f = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), _ = (0, o.e7)([p.default], () => p.default.getCurrentUser()), m = (0, S.N)(), E = null == m || null == (t = m.subscription_trial) ? true : t.sku_id, b = !!(null == f ? true : f.hasActiveTrial), y = b ? null == _ ? true : _.premiumType : null, O = null != E || b, v = (0, N.y_)(y, E);
   return (0, r.jsxs)("div", {
-    className: a()(j.tier0, j.card, c, {
-      [j.withTier0Rim]: !u && O,
-      [j.withCardHover]: !u && O
+    className: a()(k.tier0, k.card, c, {
+      [k.withTier0Rim]: !u && O,
+      [k.withCardHover]: !u && O
     }),
     children: [!u && null != v && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(N.Cy, {
         text: v,
-        className: j.topRimPill,
+        className: k.topRimPill,
         colorOptions: N.VE.PREMIUM_TIER_0_WHITE_FILL
       }), (0, r.jsx)("div", {
-        className: j.rimGlowTier0
+        className: k.rimGlowTier0
       })]
     }), n ? (0, r.jsx)("div", {
-      className: j.wumpusImageContainer,
+      className: k.wumpusImageContainer,
       children: (0, r.jsx)(l.Eep, {
         src: G,
         mediaLayoutType: L.hV.RESPONSIVE,
         width: 270,
         height: 242,
         zoomable: false,
-        imageClassName: j.wumpusImage
+        imageClassName: k.wumpusImage
       })
     }) : null, (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(g.Z, {
-          className: a()(j.title, j.tier0Title)
+          className: a()(k.title, k.tier0Title)
         }), (0, r.jsx)(P.Z, {
           isGift: u,
           premiumTier: x.PremiumTypes.TIER_0,
@@ -230,7 +230,7 @@ function W(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [m && (0, r.jsx)(l.Text, {
       variant: "text-sm/bold",
-      className: s ? k.tier2ApplicationHomeSubheader : j.tier2ApplicationHomeSubheader,
+      className: s ? j.tier2ApplicationHomeSubheader : k.tier2ApplicationHomeSubheader,
       children: M.intl.string(M.t.AozD3Q)
     }), g.map((e, n) => {
       let {
@@ -240,7 +240,7 @@ function W(e) {
       return (0, r.jsx)(Z, {
         Icon: i,
         text: o(d),
-        className: a()(3 === t ? j.itemApplicationHome : j.itemWithWumpus, 0 === n ? u : true),
+        className: a()(3 === t ? k.itemApplicationHome : k.itemWithWumpus, 0 === n ? u : true),
         textVariant: 3 === t ? "text-sm/normal" : true,
         isApplicationHome: c,
         enablePremiumBrandRefresh: s
@@ -260,37 +260,37 @@ function K(e) {
     isModal: _ = false,
     priceOptions: p,
     showPromotionalGiftBanner: h = false
-  } = e, g = (0, S.N)(), E = null == g || null == (t = g.subscription_trial) ? true : t.sku_id, b = (0, O.Nx)(), A = (0, T.Ng)(), N = null != g ? x.C.PREMIUM_TRIAL : null != A ? x.C.PREMIUM_DISCOUNT : null, R = (0, y.Vi)(), w = !f && b, D = null == (n = (0, v.Z)()) ? true : n.planSelection, L = null == D || null == (i = D.getBackgroundImageUrl) ? true : i.call(D), M = null == D || null == (o = D.getCardImageUrl) ? true : o.call(D), k = (0, C.W)();
+  } = e, g = (0, S.N)(), E = null == g || null == (t = g.subscription_trial) ? true : t.sku_id, b = (0, O.Nx)(), A = (0, T.Ng)(), N = null != g ? x.C.PREMIUM_TRIAL : null != A ? x.C.PREMIUM_DISCOUNT : null, R = (0, y.Vi)(), w = !f && b, D = null == (n = (0, v.Z)()) ? true : n.planSelection, L = null == D || null == (i = D.getBackgroundImageUrl) ? true : i.call(D), M = null == D || null == (o = D.getCardImageUrl) ? true : o.call(D), j = (0, C.W)();
   return (0, r.jsxs)("div", {
-    className: a()(j.card, j.tier2, j.tier2ApplicationHomeBackground, d, {
-      [j.withTier2Rim]: w,
-      [j.withCardHover]: w,
-      [j.withPromotionalGradientBanner]: h,
-      [j.withPromotionalCardImage]: h && null != M
+    className: a()(k.card, k.tier2, k.tier2ApplicationHomeBackground, d, {
+      [k.withTier2Rim]: w,
+      [k.withCardHover]: w,
+      [k.withPromotionalGradientBanner]: h,
+      [k.withPromotionalCardImage]: h && null != M
     }),
     children: [h && null != M && (0, r.jsx)("img", {
-      className: j.promotionalCardImage,
+      className: k.promotionalCardImage,
       alt: "",
       src: M
     }), h && null != L && (0, r.jsx)("img", {
-      className: j.promotionalBackgroundImage,
+      className: k.promotionalBackgroundImage,
       alt: "",
       src: L
     }), (0, r.jsx)("div", {
-      className: j.tier2SideGradient
+      className: k.tier2SideGradient
     }), (0, r.jsx)("img", {
       src: U,
-      className: j.applicationHomeStarBackground,
+      className: k.applicationHomeStarBackground,
       alt: ""
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(m.Z, {
-          className: a()(j.title, j.tier2ApplicationHomeTitle)
+          className: a()(k.title, k.tier2ApplicationHomeTitle)
         }), !f && E !== x.Si.TIER_2 && R && (0, r.jsx)("div", {
           children: (0, r.jsx)(l.Text, {
             variant: "text-xs/bold",
-            className: j.freeTrialPillInline,
-            children: k
+            className: k.freeTrialPillInline,
+            children: j
           })
         }), (0, r.jsx)(P.Z, {
           isGift: f,
@@ -328,48 +328,48 @@ function z(e) {
     isModal: A = false,
     priceOptions: w,
     showPromotionalGiftBanner: D = false
-  } = e, M = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), k = (0, o.e7)([p.default], () => p.default.getCurrentUser()), U = (0, S.N)(), G = null == U || null == (t = U.subscription_trial) ? true : t.sku_id, Z = (null == M ? true : M.hasActiveTrial) ? null == k ? true : k.premiumType : null, F = (0, O.Nx)(), V = (0, T.Ng)(), H = (0, O.t7)(), Y = null != G || null != Z ? x.C.PREMIUM_TRIAL : null != V || H ? x.C.PREMIUM_DISCOUNT : null, K = (0, y.Vi)(), z = !b && F, q = null == (n = (0, v.Z)()) ? true : n.planSelection, X = null == q || null == (i = q.getBackgroundImageUrl) ? true : i.call(q), Q = null == q || null == (u = q.getCardImageUrl) ? true : u.call(q), J = (0, C.W)(), $ = (0, s.ap)((0, c.ZP)()), ee = $ ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE : N.VE.PREMIUM_TIER_2_WHITE_FILL, et = (0, N.A1)(H, Z, V, U, G), en = z && !$ ? j.rimGlowTier2 : true;
+  } = e, M = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), j = (0, o.e7)([p.default], () => p.default.getCurrentUser()), U = (0, S.N)(), G = null == U || null == (t = U.subscription_trial) ? true : t.sku_id, Z = (null == M ? true : M.hasActiveTrial) ? null == j ? true : j.premiumType : null, F = (0, O.Nx)(), V = (0, T.Ng)(), H = (0, O.t7)(), Y = null != G || null != Z ? x.C.PREMIUM_TRIAL : null != V || H ? x.C.PREMIUM_DISCOUNT : null, K = (0, y.Vi)(), z = !b && F, q = null == (n = (0, v.Z)()) ? true : n.planSelection, X = null == q || null == (i = q.getBackgroundImageUrl) ? true : i.call(q), Q = null == q || null == (u = q.getCardImageUrl) ? true : u.call(q), J = (0, C.W)(), $ = (0, s.ap)((0, c.ZP)()), ee = $ ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE : N.VE.PREMIUM_TIER_2_WHITE_FILL, et = (0, N.A1)(H, Z, V, U, G), en = z && !$ ? k.rimGlowTier2 : true;
   return (0, r.jsxs)("div", {
-    className: a()(j.card, j.tier2, E, {
-      [j.withTier2Rim]: z,
-      [j.withCardHover]: z,
-      [j.withPromotionalGradientBanner]: D,
-      [j.withPromotionalCardImage]: D && null != Q
+    className: a()(k.card, k.tier2, E, {
+      [k.withTier2Rim]: z,
+      [k.withCardHover]: z,
+      [k.withPromotionalGradientBanner]: D,
+      [k.withPromotionalCardImage]: D && null != Q
     }),
     children: [D && null !== Q && (0, r.jsx)("img", {
-      className: j.promotionalCardImage,
+      className: k.promotionalCardImage,
       alt: "",
       src: Q
     }), D && null !== X && (0, r.jsx)("img", {
-      className: j.promotionalBackgroundImage,
+      className: k.promotionalBackgroundImage,
       alt: "",
       src: X
     }), !b && null != et && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(N.Cy, {
         text: et,
-        className: j.topRimPill,
+        className: k.topRimPill,
         colorOptions: ee
       }), (0, r.jsx)("div", {
         className: en
       })]
     }), d ? (0, r.jsx)("div", {
-      className: j.wumpusImageContainer,
+      className: k.wumpusImageContainer,
       children: (0, r.jsx)(l.Eep, {
         src: B,
         mediaLayoutType: L.hV.RESPONSIVE,
         width: 270,
         height: 242,
         zoomable: false,
-        imageClassName: j.wumpusImage
+        imageClassName: k.wumpusImage
       })
     }) : null, (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(m.Z, {
-          className: a()(j.title, j.tier2Title)
+          className: a()(k.title, k.tier2Title)
         }), !b && G !== x.Si.TIER_2 && K && (0, r.jsx)("div", {
           children: (0, r.jsx)(l.Text, {
             variant: "text-xs/bold",
-            className: j.freeTrialPillInline,
+            className: k.freeTrialPillInline,
             children: J
           })
         }), (0, r.jsx)(P.Z, {
@@ -409,33 +409,33 @@ function X(e) {
     color: true,
     showIcon: false,
     subscriptionTier: x.Si.TIER_0,
-    className: j.subButton,
+    className: k.subButton,
     textOptions: {
-      textClassName: j.v2SubButtonText
+      textClassName: k.v2SubButtonText
     },
-    buttonShineClassName: j.buttonShine
+    buttonShineClassName: k.buttonShine
   }), f = (0, r.jsx)(A.Z, {
     color: true,
     showIcon: false,
     subscriptionTier: x.Si.TIER_2,
-    className: j.subButton,
+    className: k.subButton,
     hasActivePromotion: n,
     textOptions: {
-      textClassName: j.v2SubButtonText
+      textClassName: k.v2SubButtonText
     },
-    buttonShineClassName: j.buttonShine
+    buttonShineClassName: k.buttonShine
   });
   return (0, r.jsxs)(d.Gt, {
     value: o,
     children: [(0, r.jsx)(l.Heading, {
       ref: s,
-      className: j.applicationHomeTierCardSectionHeader,
+      className: k.applicationHomeTierCardSectionHeader,
       variant: "display-md",
       color: "header-primary",
       children: M.intl.string(M.t.vLz3Zs)
     }), (0, r.jsxs)("div", {
       ref: s,
-      className: a()(j.premiumCards, i),
+      className: a()(k.premiumCards, i),
       children: [(0, r.jsx)(V, {
         ctaButton: c
       }), (0, r.jsx)(K, {
@@ -459,7 +459,7 @@ function Q(e) {
     value: s,
     children: (0, r.jsxs)("div", {
       ref: l,
-      className: a()(j.premiumCards, n),
+      className: a()(k.premiumCards, n),
       children: [(0, r.jsx)(H, {
         showWumpus: true,
         ctaButton: i

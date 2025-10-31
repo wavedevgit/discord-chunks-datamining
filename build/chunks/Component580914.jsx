@@ -111,10 +111,10 @@ let M = (0, Chunk884697.IC)(90),
         }, [i, s, e]),
         totalCards: e ? t : true
       }
-    })(U !== R.AW.ORBS), eg = (0, O.a)()(ec), ef = (0, S.l)(eg).slice(0, ep), eh = (0, P.St)(ef), eC = U === R.AW.ORBS ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T), em = (0, x.FF)("CollectiblesContent"), e_ = null != W && W.isOrbsExclusive, eb = E.Z.useConfig({
+    })(U !== Z.AW.ORBS), eg = (0, O.a)()(ec), ef = (0, S.l)(eg).slice(0, ep), eh = (0, P.St)(ef), eC = U === Z.AW.ORBS ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T), em = (0, x.FF)("CollectiblesContent"), e_ = null != W && W.isOrbsExclusive, eb = E.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, ev = () => {
-      U === R.AW.ORBS ? ((0, h.Y)({
+      U === Z.AW.ORBS ? ((0, h.Y)({
         pageType: w.ZY5.SHOP_ORBS_TAB,
         sectionType: w.jXE.ORBS_SHOP_HERO_BLOCK,
         ctaObject: w.qAy.CTA_TO_QUEST_HOME
@@ -148,7 +148,7 @@ let M = (0, Chunk884697.IC)(90),
         style: null != es ? {
           background: es
         } : true,
-        children: null != en && (0, r.jsx)(Z.Z, {
+        children: null != en && (0, r.jsx)(R.Z, {
           bannerStatic: en,
           bannerAnimated: er,
           bannerRive: el,
@@ -207,8 +207,8 @@ let M = (0, Chunk884697.IC)(90),
           })]
         }), (0, r.jsx)("div", {
           className: s()({
-            [D.row]: U === R.AW.HOME,
-            [D.feed]: U === R.AW.ORBS
+            [D.row]: U === Z.AW.HOME,
+            [D.feed]: U === Z.AW.ORBS
           }),
           ref: ed,
           children: n || eu ? (0, r.jsx)(r.Fragment, {
@@ -224,7 +224,7 @@ let M = (0, Chunk884697.IC)(90),
                 },
                 children: eb && (null == e ? true : e.skuId) != null ? (0, r.jsx)(k.Z, {
                   skuId: null == e ? true : e.skuId,
-                  prioritizedCurrency: U === R.AW.ORBS ? I.tA.ORBS : true,
+                  prioritizedCurrency: U === Z.AW.ORBS ? I.tA.ORBS : true,
                   onClickAnalytics: (0, I.wO)(e, U, Q)
                 }, e.skuId) : (0, r.jsx)(j.Z, {
                   product: e,

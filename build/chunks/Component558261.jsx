@@ -96,7 +96,7 @@ let P = e => {
       fullWidth: true
     })
   },
-  Z = e => {
+  R = e => {
     let {
       handleUseNow: t,
       isApplying: n,
@@ -112,7 +112,7 @@ let P = e => {
       fullWidth: true
     })
   },
-  R = e => {
+  Z = e => {
     let {
       skuId: t,
       onClick: n,
@@ -250,14 +250,14 @@ let P = e => {
     } = (0, b.W)({
       product: t
     });
-    return null != s ? (0, r.jsx)(R, {
+    return null != s ? (0, r.jsx)(Z, {
       onClick: s,
       skuId: t.skuId,
       text: c
     }) : !S || h || k ? !T || I ? (0, r.jsx)(N, {
       handlePreviewButtonClick: U,
       text: c
-    }) : m ? (0, r.jsx)(Z, {
+    }) : m ? (0, r.jsx)(R, {
       handleUseNow: K,
       isApplying: Y,
       text: c

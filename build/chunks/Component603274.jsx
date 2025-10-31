@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 603274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -30,9 +30,9 @@ var Chunk120356 = require("./120356.js"),
 
 function S(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: E.row,
+    className: x.row,
     children: [(0, r.jsx)(e, {
-      className: E.activityIcon,
+      className: x.activityIcon,
       color: "currentColor"
     }), (0, r.jsx)(p.ZP, {
       guildId: true,
@@ -53,7 +53,7 @@ function I() {
       } = e;
       return t
     })), [require]),
-    o = (0, Chunk442837.Wu)([Chunk565799.Z], () => a().flatMap(Chunk120356, e => f.Z.getMutableParticipants(e, h.pV.SPEAKER).filter(e => e.type === h.Ui.VOICE).map(e => {
+    o = (0, Chunk442837.Wu)([Chunk565799.Z], () => a().flatMap(Chunk120356, e => h.Z.getMutableParticipants(e, f.pV.SPEAKER).filter(e => e.type === f.Ui.VOICE).map(e => {
       let {
         user: t
       } = e;
@@ -64,7 +64,7 @@ function I() {
       for (let t of Chunk120356) e += Chunk565799.Z.getParticipantCount(exports, Chunk501655.pV.AUDIENCE);
       return module
     }),
-    x = (0, Chunk442837.Wu)([Chunk199902.Z], () => Chunk199902.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [exports]),
+    E = (0, Chunk442837.Wu)([Chunk199902.Z], () => Chunk199902.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [exports]),
     I = (0, Chunk442837.Wu)([Chunk317381.ZP], () => {
       let e = Chunk317381.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
@@ -76,7 +76,7 @@ function I() {
     }, [exports]),
     P = (0, Chunk442837.Wu)([Chunk594174.default], () => I.map(e => b.default.getUser(e)), [I]),
     N = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk78480.map(e => b.default.getUser(e)), [Chunk78480]),
-    Z = S(Chunk481060.gj8, l.filter(e => !x.includes(e.id) && !I.includes(e.id))),
+    Z = S(Chunk481060.gj8, l.filter(e => !E.includes(e.id) && !I.includes(e.id))),
     T = 0 === Chunk392711.length ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk132789.row,
       children: [(0, Chunk951288.jsx)(Chunk481060.ewx, {
@@ -138,7 +138,7 @@ function N(e) {
     position: "right",
     text: (0, r.jsx)(P, {}),
     "aria-label": t,
-    tooltipClassName: x.listItemTooltip,
+    tooltipClassName: E.listItemTooltip,
     onTooltipShow: n,
     children: e => {
       var t, n;

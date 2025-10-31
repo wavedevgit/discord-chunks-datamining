@@ -182,9 +182,9 @@ function T(e) {
     fullWidth: x = false,
     clearable: L = false,
     showCharacterCount: M = false
-  } = e, k = b(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "showCharacterCount"]), {
-    fieldProps: j
-  } = (0, s.XF_)(k), U = (0, f.m)({
+  } = e, j = b(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "showCharacterCount"]), {
+    fieldProps: k
+  } = (0, s.XF_)(j), U = (0, f.m)({
     validateOn: w,
     error: C,
     value: y,
@@ -196,20 +196,20 @@ function T(e) {
   } = U, B = O(y, T), Z = "object" == typeof R && "type" in R && "tags" === R.type, F = e => {
     var t, n;
     let r = e.currentTarget.value;
-    null == (t = k.onChange) || t.call(k, r, u), G(true), null == (n = B.setHasValue) || n.call(B, "" !== r)
+    null == (t = j.onChange) || t.call(j, r, u), G(true), null == (n = B.setHasValue) || n.call(B, "" !== r)
   }, V = e => {
     var t, n;
-    null == (t = k.onFocus) || t.call(k, e), null == (n = B.setIsFocused) || n.call(B, true)
+    null == (t = j.onFocus) || t.call(j, e), null == (n = B.setIsFocused) || n.call(B, true)
   }, H = e => {
     var t, n;
-    null == (t = k.onBlur) || t.call(k, e), null == (n = B.setIsFocused) || n.call(B, false)
+    null == (t = j.onBlur) || t.call(j, e), null == (n = B.setIsFocused) || n.call(B, false)
   }, Y = e => {
-    if (null != k.onClear) k.onClear(e);
+    if (null != j.onClear) j.onClear(e);
     else {
       var t;
-      null == (t = k.onChange) || t.call(k, "", u)
+      null == (t = j.onChange) || t.call(j, "", u)
     }
-  }, W = i.useRef(null), K = k.readOnly;
+  }, W = i.useRef(null), K = j.readOnly;
   null == K && false === a && (K = true);
   let z = null;
   ("boolean" == typeof L ? L && null != y && "" !== y && !K : L.show) ? z = (0, r.jsx)(I, {
@@ -228,7 +228,7 @@ function T(e) {
     value: y,
     maxLength: g
   }) : null;
-  return (0, r.jsx)(s.gNt, E(m({}, j), {
+  return (0, r.jsx)(s.gNt, E(m({}, k), {
     errorMessage: U.hasError && null != (t = U.errorMessage) ? t : true,
     trailingContent: X,
     children: (0, r.jsxs)(s.UPk, {
@@ -250,7 +250,7 @@ function T(e) {
           className: p.input,
           disabled: n,
           readOnly: K,
-          "aria-required": j.required,
+          "aria-required": k.required,
           type: _,
           placeholder: h,
           maxLength: g,
@@ -258,7 +258,7 @@ function T(e) {
           value: y,
           defaultValue: T,
           "data-mana-component": "text-input"
-        }, k), {
+        }, j), {
           onChange: F,
           onBlur: H,
           onFocus: V,

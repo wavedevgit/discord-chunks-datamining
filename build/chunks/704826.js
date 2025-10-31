@@ -55,12 +55,12 @@ Chunk518187("replace", function(e, t, n) {
       "" === _(D[0]) && (o.lastIndex = h(s, f(o.lastIndex), P))
     }
     for (var C = "", N = 0, R = 0; R < b.length; R++) {
-      for (var P, w, D = b[R], x = _(D[0]), L = y(O(d(D.index), s.length), 0), M = [], k = 1; k < D.length; k++) I(M, A(D[k]));
-      var j = D.groups;
+      for (var P, w, D = b[R], x = _(D[0]), L = y(O(d(D.index), s.length), 0), M = [], j = 1; j < D.length; j++) I(M, A(D[j]));
+      var k = D.groups;
       if (p) {
         var U = v([x], M, L, s);
-        true !== j && I(U, j), w = _(r(i, true, U))
-      } else w = g(x, s, L, M, j, i);
+        true !== k && I(U, k), w = _(r(i, true, U))
+      } else w = g(x, s, L, M, k, i);
       L >= N && (C += S(s, N, L) + w, N = L + x.length)
     }
     return C + S(s, N)

@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ei
@@ -175,8 +175,8 @@ class en extends Chunk98597.ZP {
       locked: s,
       sorting: d,
       isUserOver: p,
-      connectChannelDropTarget: f,
-      connectChannelDragSource: h,
+      connectChannelDropTarget: h,
+      connectChannelDragSource: f,
       connectUserDropTarget: g,
       connectDragPreview: m,
       canReorderChannel: b,
@@ -184,8 +184,8 @@ class en extends Chunk98597.ZP {
       showTutorial: v,
       hasActiveEvent: j,
       embeddedApps: C,
-      isSubscriptionGated: E,
-      isFavoriteSuggestion: x,
+      isSubscriptionGated: x,
+      isFavoriteSuggestion: E,
       withGuildIcon: S,
       hasStartTime: I
     } = this.props, {
@@ -324,7 +324,7 @@ class en extends Chunk98597.ZP {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
-      null != t && (0, S.n)(t) && (0, x.hk)(t), this.handleVoiceConnect()
+      null != t && (0, S.n)(t) && (0, E.hk)(t), this.handleVoiceConnect()
     }), $(this, "handleVoiceStatusClick", e => {
       let {
         connected: t,
@@ -417,15 +417,15 @@ function ei(e) {
       bypassLimit: k.Z.can(q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), f = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), h = (0, g.ZP)(n), m = (0, v.ZP)(n), O = (0, P.qY)(n.id), {
+  }), h = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), f = (0, g.ZP)(n), m = (0, v.ZP)(n), O = (0, P.qY)(n.id), {
     enabled: y
   } = b.W.useExperiment({
     guildId: t.id,
     location: "VoiceChannel"
   }), j = (0, a.e7)([_.Z], () => !!y && null != _.Z.getStartTime(n), [n, y]), {
     isSubscriptionGated: C,
-    needSubscriptionToAccess: x
-  } = (0, I.Z)(n.id), S = (0, E.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), w = e.connected || (null == S ? true : S.channelId) === n.id, {
+    needSubscriptionToAccess: E
+  } = (0, I.Z)(n.id), S = (0, x.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), w = e.connected || (null == S ? true : S.channelId) === n.id, {
     enableHangStatus: A,
     showEmptyChannelTopic: R
   } = (0, Z.bN)({
@@ -444,18 +444,18 @@ function ei(e) {
     isChannelCollapsed: s,
     voiceStates: c,
     isSubscriptionGated: C,
-    needSubscriptionToAccess: x,
+    needSubscriptionToAccess: E,
     enableConnectedUserLimit: true,
     enableActivities: true
   }), V = w && null == F;
   return (0, r.jsx)(er, et(ee({
     channelName: m,
-    embeddedApps: h,
+    embeddedApps: f,
     embeddedActivityType: q.IIU.PLAYING,
-    video: f,
+    video: h,
     hasActiveEvent: null != O,
     isSubscriptionGated: C,
-    needSubscriptionToAccess: x
+    needSubscriptionToAccess: E
   }, u, p, e), {
     connected: w,
     isFavoriteSuggestion: l && !N,

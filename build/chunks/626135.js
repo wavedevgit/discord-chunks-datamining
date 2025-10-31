@@ -106,8 +106,8 @@ let C = {
   x = 3e5,
   L = 9e5,
   M = 36e5,
-  k = 864e5,
-  j = .001,
+  j = 864e5,
+  k = .001,
   U = performance.now(),
   G = (0, Chunk668757.X6)() ? (0, Chunk668757.Ub)((0, Chunk548345.R)()) : null;
 Chunk990547.extendSuperProperties({
@@ -165,7 +165,7 @@ let F = {
     throttleKeys: e => null != e.channel_static_route ? [e.guild_id, e.channel_static_route, e.channel_view] : null != e.location && e.location.startsWith(c.Z.FREQUENT_FRIENDS_ROW) ? [e.channel_id, e.channel_view, e.location] : [e.channel_id, e.channel_view]
   },
   [Chunk981631.rMx.TEXT_IN_VOICE_OPENED]: {
-    throttlePeriod: k,
+    throttlePeriod: j,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.NOTIFICATION_VIEWED]: {
@@ -220,25 +220,25 @@ let F = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.RPC_SERVER_ERROR_CAUGHT]: {
-    throttlePeriod: k,
+    throttlePeriod: j,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.RPC_COMMAND_SENT]: {
-    throttlePeriod: k,
+    throttlePeriod: j,
     throttleKeys: e => [e.application_id, e.command],
-    throttlePercent: j
+    throttlePercent: k
   },
   [Chunk981631.rMx.RPC_SUBSCRIPTION_REQUESTED]: {
-    throttlePeriod: k,
+    throttlePeriod: j,
     throttleKeys: e => [e.application_id, e.event],
-    throttlePercent: j
+    throttlePercent: k
   },
   [Chunk981631.rMx.ACTIVITY_HANDSHAKE]: {
-    throttlePeriod: k,
+    throttlePeriod: j,
     throttleKeys: e => [e.application_id]
   },
   [Chunk981631.rMx.CHANNEL_BANNER_VIEWED]: {
-    throttlePeriod: k,
+    throttlePeriod: j,
     throttleKeys: e => [e.banner_type, e.channel_id]
   },
   [Chunk981631.rMx.PREMIUM_UPSELL_VIEWED]: {
@@ -344,11 +344,11 @@ let F = {
     throttleKeys: e => [e.search_type]
   },
   [Chunk981631.rMx.AD_IDENTIFIER_FETCHED]: {
-    throttlePeriod: k,
+    throttlePeriod: j,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.ACTIVITY_PANEL_SDK_LINK_VIEWED]: {
-    throttlePeriod: k,
+    throttlePeriod: j,
     throttleKeys: e => [e.application_id]
   },
   [Chunk981631.rMx.LIBDISCORE_SLOW_TIMERS]: {

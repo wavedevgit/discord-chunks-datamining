@@ -1,5 +1,6 @@
-/** Chunk was on 84743 **/
-/** chunk id: 978774, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 978774, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   churnFooterContainer: "churnFooterContainer__64988",
   churnFooterGlow: "churnFooterGlow__64988",

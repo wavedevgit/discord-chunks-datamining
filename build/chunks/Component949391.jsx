@@ -1,7 +1,7 @@
 /** Chunk was on 78662 **/
-/** chunk id: 949391, original params: e,t,r (module,exports,require) **/
+/** chunk id: 949391, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,38 +14,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk608981 = require("./608981.js");
 
-function f(e) {
-  var t;
+function p(e) {
+  var n;
   let {
-    eulaId: r,
-    transitionState: f,
-    onClose: h
-  } = e, g = (0, a.e7)([u.Z], () => u.Z.getEULA(r));
-  l.useEffect(() => {
-    (0, c.N)(r)
-  }, [r]);
-  let b = null != (t = null == g ? true : g.name) ? t : d.intl.string(d.t.ZTNur7),
-    m = null != g ? (0, n.jsx)(s.Z, {
-      children: g.content,
-      className: p.markdown
-    }) : (0, n.jsx)(o.$jN, {
-      className: p.spinner
+    eulaId: t,
+    transitionState: p,
+    onClose: f
+  } = e, h = (0, a.e7)([d.Z], () => d.Z.getEULA(t));
+  i.useEffect(() => {
+    (0, l.N)(t)
+  }, [t]);
+  let S = null != (n = null == h ? true : h.name) ? n : u.intl.string(u.t.ZTNur7),
+    j = null != h ? (0, r.jsx)(c.Z, {
+      children: h.content,
+      className: E.markdown
+    }) : (0, r.jsx)(s.$jN, {
+      className: E.spinner
     });
-  return (0, n.jsxs)(o.Y0X, {
-    transitionState: f,
-    size: o.CgR.SMALL,
-    "aria-label": b,
+  return (0, r.jsxs)(s.Y0X, {
+    transitionState: p,
+    size: s.CgR.SMALL,
+    "aria-label": S,
     parentComponent: "EULA",
-    children: [(0, n.jsxs)(o.xBx, {
-      justify: i.Z.Justify.BETWEEN,
-      children: [(0, n.jsx)(o.Heading, {
+    children: [(0, r.jsxs)(s.xBx, {
+      justify: o.Z.Justify.BETWEEN,
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
-        children: b
-      }), (0, n.jsx)(o.olH, {
-        onClick: h
+        children: S
+      }), (0, r.jsx)(s.olH, {
+        onClick: f
       })]
-    }), (0, n.jsx)(o.hzk, {
-      children: m
+    }), (0, r.jsx)(s.hzk, {
+      children: j
     })]
   })
 }

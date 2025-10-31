@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 120818, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => _
@@ -63,7 +63,7 @@ let _ = Chunk647438.memo(function(e) {
       },
       className: m.progressBarContainer,
       onClick: function() {
-        (0, d.uL)(f.Z5c.CHANNEL(_.id, h.oC.GUILD_HOME))
+        (0, d.uL)(h.Z5c.CHANNEL(_.id, f.oC.GUILD_HOME))
       },
       children: [(0, r.jsxs)("div", {
         className: m.progressBarText,
@@ -90,7 +90,7 @@ let _ = Chunk647438.memo(function(e) {
         })]
       }), (0, r.jsx)(a.Exd, {
         className: m.progressBar,
-        foregroundGradientColor: [(0, s.Lq)(f.Ilk.GREEN_300), (0, s.Lq)(f.Ilk.GREEN_230)],
+        foregroundGradientColor: [(0, s.Lq)(h.Ilk.GREEN_300), (0, s.Lq)(h.Ilk.GREEN_230)],
         percent: v / j * 100 + 3,
         animate: true
       })]

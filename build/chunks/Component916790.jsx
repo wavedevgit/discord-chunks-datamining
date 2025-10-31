@@ -1,12 +1,12 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 916790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => D
+  Z: () => Z
 }), require("./35282.js"), require("./388685.js"), require("./49124.js"), require("./975844.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk913527 = require("./913527.js"),
   c = require.n(Chunk913527),
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk687278 = require("./687278.js"),
   Chunk451429 = require("./451429.js");
 
-function N(e) {
+function O(e) {
   return parseFloat(e.toFixed(3))
 }
 let P = [{
@@ -48,14 +48,14 @@ let P = [{
     let {
       trace: t
     } = e;
-    return "".concat(N(t.time), " ms")
+    return "".concat(O(t.time), " ms")
   }
 }];
 
-function I(e) {
+function w(e) {
   let {
     actionLog: t
-  } = e, n = r.useMemo(() => t.traces.map(e => ({
+  } = e, n = i.useMemo(() => t.traces.map(e => ({
     key: e.name,
     trace: e
   })), [t]);
@@ -66,7 +66,7 @@ function I(e) {
     })
   })
 }
-let w = [{
+let I = [{
   id: "action",
   name: "Action",
   group: Chunk621060.v0.NONE,
@@ -74,7 +74,7 @@ let w = [{
     var t;
     let {
       actionLog: n
-    } = e, r = c()(n.createdAt);
+    } = e, i = c()(n.createdAt);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)(_.E, {
         className: T.actionProperties,
@@ -82,12 +82,12 @@ let w = [{
           name: "Created at",
           children: (0, a.jsx)("time", {
             dateTime: null == (t = n.createdAt) ? true : t.toISOString(),
-            title: (0, v.vc)(r, "LLLL"),
-            children: (0, v.Y4)(r)
+            title: (0, v.vc)(i, "LLLL"),
+            children: (0, v.Y4)(i)
           })
         }), (0, a.jsxs)(_.Z9, {
           name: "Total Time",
-          children: [N(n.totalTime), " ms"]
+          children: [O(n.totalTime), " ms"]
         })]
       }), (0, a.jsx)(m.zJl, {
         className: T.inspectorContainer,
@@ -105,7 +105,7 @@ let w = [{
     let {
       actionLog: t
     } = e;
-    return (0, a.jsx)(I, {
+    return (0, a.jsx)(w, {
       actionLog: t
     })
   }
@@ -115,7 +115,7 @@ function k(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, l = r.useMemo(() => t.error ? [...w, {
+  } = e, l = i.useMemo(() => t.error ? [...I, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(f.Z, {
@@ -129,11 +129,11 @@ function k(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: i()(T.errorToolbar, O.toolbar),
+          className: r()(T.errorToolbar, N.toolbar),
           children: (0, a.jsx)("div", {
-            className: O.toolbarGroup,
+            className: N.toolbarGroup,
             children: (0, a.jsx)(u.zx, {
-              className: O.toolbarButton,
+              className: N.toolbarButton,
               size: u.zx.Sizes.MIN,
               onClick: () => console.error(t.error),
               children: "Log to Console"
@@ -147,9 +147,9 @@ function k(e) {
         })]
       })
     }
-  }] : w, [t]), {
-    TabBar: o,
-    renderSelectedTab: s
+  }] : I, [t]), {
+    TabBar: s,
+    renderSelectedTab: o
   } = (0, S.ZP)({
     tabs: l
   }, [l]);
@@ -157,14 +157,14 @@ function k(e) {
     className: T.subPanel,
     minHeight: 100,
     initialHeight: n,
-    children: [(0, a.jsx)(o, {}), (0, a.jsxs)(h.ZP, {
-      className: i()(O.headerBar, T.subPanelHeaderBar),
+    children: [(0, a.jsx)(s, {}), (0, a.jsxs)(h.ZP, {
+      className: r()(N.headerBar, T.subPanelHeaderBar),
       children: [(0, a.jsx)(h.ZP.Icon, {
         icon: m.xVZ,
         tooltip: t.name
       }), (0, a.jsx)(h.ZP.Title, {
-        wrapperClassName: i()(O.headerTitle, O.dispatcherHeader),
-        className: O.headerTitleText,
+        wrapperClassName: r()(N.headerTitle, N.dispatcherHeader),
+        className: N.headerTitleText,
         children: t.name
       }), (0, a.jsx)(h.ZP.Icon, {
         icon: m.TIy,
@@ -182,12 +182,12 @@ function k(e) {
           }))
         }
       })]
-    }), s({
+    }), o({
       actionLog: t
     })]
   })
 }
-let R = [{
+let A = [{
     key: "action",
     cellClassName: Chunk687278.actionColumn,
     render(e) {
@@ -207,7 +207,7 @@ let R = [{
       let {
         actionLog: t
       } = e;
-      return "".concat(N(t.totalTime), " ms")
+      return "".concat(O(t.totalTime), " ms")
     }
   }, {
     key: "timestamp",
@@ -219,7 +219,7 @@ let R = [{
       return c()(t.createdAt).format("HH:mm:ss.SSS")
     }
   }],
-  A = {
+  R = {
     searchType: Chunk886118.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -230,20 +230,20 @@ let R = [{
     throttleMs: 100
   };
 
-function D() {
+function Z() {
   let e = Chunk647438.useRef(null),
     [t, n] = Chunk647438.useState(""),
     l = function(e) {
-      let [t, n] = r.useState(e.logs), a = r.useCallback(() => {
-        (0, o.debounce)(() => {
+      let [t, n] = i.useState(e.logs), a = i.useCallback(() => {
+        (0, s.debounce)(() => {
           n([...e.logs])
         }, 500)()
       }, [e]);
-      return r.useEffect(() => (e.on("log", a), () => {
+      return i.useEffect(() => (e.on("log", a), () => {
         e.off("log", a)
       }), [e, a]), t
     }(Chunk570140.Z.actionLogger),
-    s = Chunk647438.useMemo(() => Chunk120356.map(e => ({
+    o = Chunk647438.useMemo(() => Chunk120356.map(e => ({
       key: e.id.toString(),
       actionLog: e
     })).toReversed(), [Chunk120356]),
@@ -254,25 +254,25 @@ function D() {
     _ = Chunk647438.useCallback(e => {
       x(e)
     }, []);
-  (0, Chunk301801.BO)(exports, Chunk4912 ? c : Chunk913527, Chunk257785, A);
+  (0, Chunk301801.BO)(exports, Chunk4912 ? c : Chunk913527, Chunk257785, R);
   let y = Chunk647438.useCallback(e => {
-      u(s), b(e)
+      u(o), b(e)
     }, [Chunk913527]),
     S = exports.trim().length > 0,
     E = Chunk647438.useMemo(() => Chunk621060 ? Chunk665149 : Chunk4912 ? c : Chunk913527, [Chunk913527, Chunk665149, Chunk621060, Chunk4912, c]),
-    N = Chunk4912 ? "Enable Event Tracking" : "Pause Event Tracking";
+    O = Chunk4912 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
-    className: i()(Chunk451429.panel, Chunk687278.panel),
+    className: r()(Chunk451429.panel, Chunk687278.panel),
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk687278.toolbar,
       children: [(0, Chunk951288.jsx)(Chunk28664.u, {
-        text: N,
+        text: O,
         children: (0, Chunk951288.jsx)(Chunk481060.hU, {
           size: "sm",
           variant: Chunk4912 ? "primary" : "active",
           icon: Chunk4912 ? Chunk481060.o1U : Chunk481060.fpf,
-          "aria-label": N,
+          "aria-label": O,
           onClick: () => Chunk484036(!Chunk4912)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
@@ -283,7 +283,7 @@ function D() {
         placeholder: "Search by action name"
       })]
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: R,
+      columns: A,
       data: Chunk981631,
       selectedRowKey: null == Chunk55935 ? true : Chunk55935.id.toString(),
       onClickRow: e => j(e.actionLog)

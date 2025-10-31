@@ -71,8 +71,8 @@ let D = new Chunk710845.Z("ChannelRTCStore"),
   x = Object.freeze([]),
   L = [],
   M = {},
-  k = {},
   j = {},
+  k = {},
   U = {},
   G = {},
   B = {},
@@ -119,23 +119,23 @@ function Q(e) {
   var t;
   let n = E.Z.getChannel(e),
     r = (null == n ? true : n.isDM()) && 1 ? A.dF.AUTO : A.dF.NONE;
-  return null != (t = k[e]) ? t : [r, A.dF.NONE]
+  return null != (t = j[e]) ? t : [r, A.dF.NONE]
 }
 
 function J(e) {
-  if (null == k[e]) returnfalse;
-  let [t] = k[e];
+  if (null == j[e]) returnfalse;
+  let [t] = j[e];
   return t !== A.dF.NONE
 }
 
 function $(e) {
-  null == j[e] && (j[e] = {
+  null == k[e] && (k[e] = {
     gridDurationMs: 0,
     focusDurationMs: 0,
     toggleCount: 0,
     lastUpdate: 0
   });
-  let t = j[e],
+  let t = k[e],
     n = performance.now(),
     r = J(e);
   if (t.lastUpdate > 0) {
@@ -148,7 +148,7 @@ function $(e) {
 function ee(e, t) {
   $(e);
   let n = J(e);
-  null == t ? delete k[e] : k[e] = t, n !== J(e) && j[e].toggleCount++
+  null == t ? delete j[e] : j[e] = t, n !== J(e) && k[e].toggleCount++
 }
 
 function et(e) {
@@ -182,12 +182,12 @@ function en(e) {
 function er(e) {
   let t = W(e);
   if (0 === t.size()) return;
-  let n = ej(e) || et(t) ? C.WtW.VIDEO : C.WtW.VOICE;
+  let n = ek(e) || et(t) ? C.WtW.VIDEO : C.WtW.VOICE;
   n === C.WtW.VOICE ? (delete U[e], delete G[e]) : U[e] = n
 }
 
 function ei(e) {
-  delete M[e], delete k[e], delete U[e], delete G[e]
+  delete M[e], delete j[e], delete U[e], delete G[e]
 }
 
 function ea() {
@@ -199,7 +199,7 @@ function eo(e) {
     channelId: t,
     currentVoiceChannelId: n
   } = e;
-  return null != t ? delete j[t] : null != n && (delete F[n], delete H[n], $(n)), ea()
+  return null != t ? delete k[t] : null != n && (delete F[n], delete H[n], $(n)), ea()
 }
 
 function es(e) {
@@ -483,7 +483,7 @@ function eM(e) {
   return r.forEach(e => i.updateGuildRingingUsers(e, true)), q(e => e.rebuild(), [t])
 }
 
-function ek(e) {
+function ej(e) {
   let {
     channelId: t,
     guildId: n,
@@ -497,7 +497,7 @@ function ek(e) {
   return r.forEach(e => i.updateGuildRingingUsers(e, false)), q(e => e.rebuild(), [t])
 }
 
-function ej(e) {
+function ek(e) {
   var t;
   return !!(null == (t = E.Z.getChannel(e)) ? true : t.isGuildVocalOrThread())
 }
@@ -562,7 +562,7 @@ class eU extends(r = Chunk442837.ZP.PersistedStore) {
     return null == t ? null : W(e).getParticipant(t)
   }
   getSelectedParticipantStats(e) {
-    let t = j[e];
+    let t = k[e];
     return null == t ? {} : {
       view_mode_grid_duration_ms: Math.floor(t.gridDurationMs),
       view_mode_focus_duration_ms: Math.floor(t.focusDurationMs),
@@ -574,13 +574,13 @@ class eU extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getMode(e) {
     var t;
-    return null != (t = U[e]) ? t : ej(e) ? C.WtW.VIDEO : C.WtW.VOICE
+    return null != (t = U[e]) ? t : ek(e) ? C.WtW.VIDEO : C.WtW.VOICE
   }
   getLayout(e) {
     var t, n;
     let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : C.IlC.APP;
     if (__OVERLAY__) return C.AEg.NORMAL;
-    let i = ej(e);
+    let i = ek(e);
     return null != (n = null == (t = G[e]) ? true : t[r]) ? n : i ? C.AEg.NO_CHAT : C.AEg.NORMAL
   }
   getChatOpen(e) {
@@ -647,7 +647,7 @@ let eG = new eU(Chunk570140.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_START: ed,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: ed,
   GUILD_RING_START: eM,
-  GUILD_RING_STOP: ek,
+  GUILD_RING_STOP: ej,
   USER_UPDATE: ef,
   GUILD_MEMBER_UPDATE: ef,
   GUILD_DELETE: eh

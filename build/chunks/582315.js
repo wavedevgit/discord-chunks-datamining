@@ -65,8 +65,8 @@ function p(e) {
     x = D && ("replace" === n.selectionBehavior ? !w : !w || n.isEmpty),
     L = D && w && "replace" === n.selectionBehavior,
     M = x || L,
-    k = (0, _.useRef)(null),
-    j = M && w,
+    j = (0, _.useRef)(null),
+    k = M && w,
     U = (0, _.useRef)(false),
     G = (0, _.useRef)(false),
     B = n.getItemProps(p),
@@ -83,7 +83,7 @@ function p(e) {
       ref: g
     };
   if (E ? (F.onPressStart = e => {
-      k.current = e.pointerType, U.current = j, "keyboard" === e.pointerType && (!M || m()) && A(e)
+      j.current = e.pointerType, U.current = k, "keyboard" === e.pointerType && (!M || m()) && A(e)
     }, I ? (F.onPressUp = x ? true : e => {
       "mouse" === e.pointerType && w && A(e)
     }, F.onPress = x ? Z : e => {
@@ -91,7 +91,7 @@ function p(e) {
     }) : F.onPress = e => {
       x || L && "mouse" !== e.pointerType ? ("keyboard" !== e.pointerType || h()) && Z(e) : "keyboard" !== e.pointerType && w && A(e)
     }) : (F.onPressStart = e => {
-      k.current = e.pointerType, U.current = j, G.current = x, w && ("mouse" === e.pointerType && !x || "keyboard" === e.pointerType && (!D || m())) && A(e)
+      j.current = e.pointerType, U.current = k, G.current = x, w && ("mouse" === e.pointerType && !x || "keyboard" === e.pointerType && (!D || m())) && A(e)
     }, F.onPress = e => {
       ("touch" === e.pointerType || "pen" === e.pointerType || "virtual" === e.pointerType || "keyboard" === e.pointerType && M && h() || "mouse" === e.pointerType && G.current) && (M ? Z(e) : w && A(e))
     }), C["data-collection"] = (0, r.Zx)(n.collection), C["data-key"] = p, F.preventFocusOnPress = b, b && (F = (0, s.d)(F, {
@@ -107,21 +107,21 @@ function p(e) {
     pressProps: V,
     isPressed: H
   } = (0, u.r)(F), Y = L ? e => {
-    "mouse" === k.current && (e.stopPropagation(), e.preventDefault(), Z(e))
+    "mouse" === j.current && (e.stopPropagation(), e.preventDefault(), Z(e))
   } : true, {
     longPressProps: W
   } = (0, d.T)({
-    isDisabled: !j,
+    isDisabled: !k,
     onLongPress(e) {
       "touch" === e.pointerType && (A(e), n.setSelectionBehavior("toggle"))
     }
   }), K = e => {
-    "touch" === k.current && U.current && e.preventDefault()
+    "touch" === j.current && U.current && e.preventDefault()
   }, z = "none" !== T && n.isLink(p) ? e => {
     i.nG.isOpening || e.preventDefault()
   } : true;
   return {
-    itemProps: (0, s.d)(C, w || x || b && !O ? V : {}, j ? W : {}, {
+    itemProps: (0, s.d)(C, w || x || b && !O ? V : {}, k ? W : {}, {
       onDoubleClick: Y,
       onDragStartCapture: K,
       onClick: z,

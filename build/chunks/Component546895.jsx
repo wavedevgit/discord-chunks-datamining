@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 546895, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk108514 = require("./108514.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js");
-let s = {
+let o = {
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_Messages_Opt.lottie": () => require.e("49190").then(require.t.bind(require, 871413, 17)),
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_Notifications_Opt.lottie": () => require.e("30611").then(require.t.bind(require, 34195, 17)),
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_Servers_CombinedEE.lottie": () => require.e("35981").then(require.t.bind(require, 590990, 17)),
@@ -162,8 +162,8 @@ function c(e) {
     let a = new Uint8Array(e);
     l.Ri(a, (e, a) => {
       null != e && n(e);
-      let r = Object.keys(a).reduce((e, t) => {
-          var n, r;
+      let i = Object.keys(a).reduce((e, t) => {
+          var n, i;
           return n = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -181,21 +181,21 @@ function c(e) {
               })
             }
             return e
-          }({}, e), r = r = {
+          }({}, e), i = i = {
             [t]: JSON.parse(l.T8(a[t]))
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var a = Object.getOwnPropertySymbols(e);
               n.push.apply(n, a)
             }
             return n
-          })(Object(r)).forEach(function(e) {
-            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
+          })(Object(i)).forEach(function(e) {
+            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
           }), n
         }, {}),
-        i = r["manifest.json"];
-      t(r["animations/".concat(i.animations[0].id, ".json")])
+        r = i["manifest.json"];
+      t(i["animations/".concat(r.animations[0].id, ".json")])
     })
   }))
 }
@@ -209,7 +209,7 @@ function d() {
     children: (0, Chunk951288.jsxs)(Chunk793030.Kqy, {
       gap: 24,
       children: [(0, Chunk951288.jsx)(Chunk481060.VcW, {
-        options: Object.keys(s).map(e => ({
+        options: Object.keys(o).map(e => ({
           label: e,
           value: e
         })),
@@ -232,12 +232,12 @@ function d() {
         disabled: null == module,
         onClick: async () => {
           if (null == module) return;
-          let t = s[module],
+          let t = o[module],
             n = new Blob([JSON.stringify(module.endsWith(".lottie") ? await exports().then(c) : await exports())], {
               type: "application/json"
             }),
             a = URL.createObjectURL(require),
-            r = document.createElement("a");
+            i = document.createElement("a");
           Chunk647438.href = Chunk951288, Chunk647438.download = "".concat(module.split("/").pop(), ".json"), document.body.appendChild(Chunk647438), Chunk647438.click(), document.body.removeChild(Chunk647438), URL.revokeObjectURL(Chunk951288)
         },
         text: "Download"
@@ -248,7 +248,7 @@ function d() {
         },
         children: (0, Chunk951288.jsx)(Chunk481060.Fmz, {
           importData: () => {
-            let t = s[module];
+            let t = o[module];
             return module.endsWith(".lottie") ? exports().then(c) : exports()
           }
         }, module)

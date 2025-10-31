@@ -1,7 +1,8 @@
-/** Chunk was on 78662 **/
-/** chunk id: 770146, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 770146, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,14 +10,14 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk368379 = require("./368379.js");
 
-function c(e) {
+function s(e) {
   let {
     children: t,
-    tag: r,
-    className: l
+    tag: n,
+    className: i
   } = e;
-  return r = null != r ? r : "h3", (0, n.jsx)(r, {
-    className: a()(o.title, l),
+  return n = null != n ? n : "h3", (0, r.jsx)(n, {
+    className: a()(o.title, i),
     children: t
   })
 }

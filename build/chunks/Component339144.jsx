@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => Z,
@@ -66,7 +66,7 @@ let Z = Chunk647438.memo(function(e) {
       }),
       {
         parentAnalyticsLocation: K
-      } = (0, h.ZP)(),
+      } = (0, f.ZP)(),
       Y = N(F, B, G),
       q = i.useCallback(() => {
         var e;
@@ -81,7 +81,7 @@ let Z = Chunk647438.memo(function(e) {
         }), (0, u.h7)(B, false)
       }, [B, V, K, k]),
       X = i.useCallback((e, t) => () => {
-        (0, m.v)(K, m.d.LEAVE_ACTIVITY), f.Z.leaveActivity({
+        (0, m.v)(K, m.d.LEAVE_ACTIVITY), h.Z.leaveActivity({
           location: t,
           applicationId: e,
           showFeedback: true
@@ -147,7 +147,7 @@ let Z = Chunk647438.memo(function(e) {
       } = (0, g.F)(F, {
         allowedFlows: [g.r.RPC, g.r.WEB]
       }),
-      ei = E.Z.useConfig({
+      ei = x.Z.useConfig({
         location: "ActivityActions"
       }).enabled,
       el = i.useRef(null),
@@ -165,31 +165,31 @@ let Z = Chunk647438.memo(function(e) {
         game: k.name
       }) : I.intl.string(I.t.FeUKeA)) : (l = true, a = null, p = c.hGI, Z = null != L && (0, v.vd)(L.type) ? I.intl.string(I.t.uQn9B8) : null != R ? I.intl.string(I.t.fBXEoJ) : I.intl.string(I.t.n3feNG)), (0, r.jsx)("div", {
         className: P.panelButtonContainer,
-        children: (0, r.jsx)(x.Z, {
+        children: (0, r.jsx)(E.Z, {
           tooltipText: Z,
           disabled: l,
           onClick: a,
           icon: p
         })
       })) : null,
-      ec = Y && null == G ? (0, r.jsx)(x.Z, {
+      ec = Y && null == G ? (0, r.jsx)(E.Z, {
         ref: H,
         tooltipText: I.intl.string(I.t["hC/Zey"]),
         onClick: q,
         icon: c.ejJ
       }) : null,
-      eu = null == G ? null : (0, r.jsx)(x.Z, {
+      eu = null == G ? null : (0, r.jsx)(E.Z, {
         tooltipText: I.intl.string(I.t["R/FK4A"]),
         onClick: X(G.applicationId, G.location),
         icon: c.PBZ
       }),
-      ed = null == U ? null : (0, r.jsx)(x.Z, {
+      ed = null == U ? null : (0, r.jsx)(E.Z, {
         tooltipText: I.intl.string(I.t["R/FK4A"]),
         onClick: Q(U.applicationId),
         icon: c.PBZ
       }),
       ep = null == w ? null : (0, r.jsx)(b.Z, {}),
-      ef = ei && ee && !en ? (0, r.jsx)(T, {
+      eh = ei && ee && !en ? (0, r.jsx)(T, {
         runningGame: k,
         startAuthorization: () => {
           ea(true), null != el.current && clearTimeout(el.current), el.current = setTimeout(() => {
@@ -199,7 +199,7 @@ let Z = Chunk647438.memo(function(e) {
         connectionApp: er,
         ref: z
       }) : null,
-      eh = ei && ee && !en ? (0, r.jsx)(s.J2, {
+      ef = ei && ee && !en ? (0, r.jsx)(s.J2, {
         title: I.intl.string(I.t.ULvRFd),
         body: I.intl.string(I.t["HJJDr+"]),
         targetElementRef: z,
@@ -213,9 +213,9 @@ let Z = Chunk647438.memo(function(e) {
           ea(false), null != el.current && (clearTimeout(el.current), el.current = null)
         }
       }) : null;
-    return null == es && null == ec && null == eu && null == ed && null == ef ? null : (0, r.jsxs)("div", {
+    return null == es && null == ec && null == eu && null == ed && null == eh ? null : (0, r.jsxs)("div", {
       className: P.actions,
-      children: [null != ef ? ef : ec, es, null != (t = null != eu ? eu : ed) ? t : ep, eh]
+      children: [null != eh ? eh : ec, es, null != (t = null != eu ? eu : ed) ? t : ep, ef]
     })
   }),
   T = Chunk647438.forwardRef(function(e, t) {
@@ -224,7 +224,7 @@ let Z = Chunk647438.memo(function(e) {
       startAuthorization: i,
       connectionApp: l
     } = e;
-    return (0, r.jsx)(x.Z, {
+    return (0, r.jsx)(E.Z, {
       ref: t,
       onClick: () => {
         var e, t;

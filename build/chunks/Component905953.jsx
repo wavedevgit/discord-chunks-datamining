@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 905953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -24,25 +24,25 @@ function b(e) {
   let {
     targetElementRef: n,
     onClose: b
-  } = e, [v, j] = r.useState(false), _ = (0, l.e7)([h.default], () => h.default.getId()), {
+  } = e, [v, j] = i.useState(false), _ = (0, l.e7)([h.default], () => h.default.getId()), {
     config: y,
     application: C
   } = (0, u.G)(), {
     fetched: S,
     hasAlreadyLinked: E,
     canStartAuthorization: T,
-    startAuthorization: O
-  } = (0, s.F)(C), N = (0, m.ZP)(_), P = null == N || null == (t = N.widgets) ? true : t.some(e => e instanceof d.q && e.applicationId === (null == C ? true : C.id));
+    startAuthorization: N
+  } = (0, o.F)(C), O = (0, m.ZP)(_), P = null == O || null == (t = O.widgets) ? true : t.some(e => e instanceof d.q && e.applicationId === (null == C ? true : C.id));
   return null != y && null != y.edit_profile_upsell_image && null != C && S ? (0, a.jsx)(c.ZP, {
-    contentTypes: E ? P ? [] : [i.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : T ? [i.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+    contentTypes: E ? P ? [] : [r.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : T ? [r.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: r
+        markAsDismissed: i
       } = e;
       if (null == t) return null;
-      let l = t === i.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
-      return (0, a.jsx)(o.J2, {
+      let l = t === r.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
+      return (0, a.jsx)(s.J2, {
         targetElementRef: n,
         position: "right",
         gradientColor: "blue",
@@ -61,18 +61,18 @@ function b(e) {
               userId: _,
               section: g.oh.WIDGETS
             }).then(() => {
-              r(x.L.TAKE_ACTION), b()
+              i(x.L.TAKE_ACTION), b()
             }).finally(() => j(false))
           },
           loading: v
         } : {
           text: f.intl.string(f.t["DSJi3+"]),
           onClick: () => {
-            O(), j(true), (0, p.openUserProfileModal)({
+            N(), j(true), (0, p.openUserProfileModal)({
               userId: _,
               section: g.oh.WIDGETS
             }).then(() => {
-              r(x.L.TAKE_ACTION), b()
+              i(x.L.TAKE_ACTION), b()
             }).finally(() => j(false))
           },
           loading: v

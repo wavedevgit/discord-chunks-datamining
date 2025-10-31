@@ -1,7 +1,7 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 852758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,23 +58,23 @@ function T(e, t) {
   }), e
 }
 
-function O() {
+function N() {
   let {
     action: e,
     theme: t
   } = (0, Chunk442837.cj)([Chunk23434.Z, Chunk210887.Z], () => ({
     action: Chunk23434.Z.getAction(),
     theme: Chunk210887.Z.theme
-  })), O = Chunk1964.Z.getVerificationTypes(module), [N, P] = Chunk647438.useState(0), I = (0, Chunk110924.Z)(O);
+  })), N = Chunk1964.Z.getVerificationTypes(module), [O, P] = Chunk647438.useState(0), w = (0, Chunk110924.Z)(N);
   (0, Chunk213609.Z)({
     type: Chunk990547.ImpressionTypes.MODAL,
     name: Chunk990547.ImpressionNames.USER_ACTION_REQUIRED,
     properties: {
-      verification_type: O[0],
-      verification_types: O
+      verification_type: N[0],
+      verification_types: N
     }
-  }, {}, [O.toString()]);
-  let w = () => {
+  }, {}, [N.toString()]);
+  let I = () => {
     (0, Chunk809206.FD)(), (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
@@ -88,7 +88,7 @@ function O() {
   return Chunk647438.useEffect(() => (Chunk714338.Z.disable(), () => {
     Chunk714338.Z.enable()
   }), []), Chunk647438.useEffect(() => {
-    (null == I ? true : I[0]) === Chunk981631.PUi.PHONE && (null == O ? true : O[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
+    (null == w ? true : w[0]) === Chunk981631.PUi.PHONE && (null == N ? true : N[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(require.bind(require, 273352));
@@ -100,13 +100,13 @@ function O() {
     }, {
       modalKey: Chunk308569.HR,
       Layer: Chunk429142.ZP,
-      onCloseCallback: w
+      onCloseCallback: I
     })
-  }, [O, I]), (0, Chunk951288.jsx)(Chunk762756.Z, {
-    types: O,
-    captchaKey: N,
+  }, [N, w]), (0, Chunk951288.jsx)(Chunk762756.Z, {
+    types: N,
+    captchaKey: O,
     onCaptchaVerify: e => {
-      o.tn.post({
+      s.tn.post({
         url: y.ANM.CAPTCHA,
         body: {
           captcha_key: e
@@ -119,7 +119,7 @@ function O() {
     },
     theme: exports,
     onClick: e => {
-      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? w() : (0, s.ZDy)(async () => {
+      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? I() : (0, o.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));

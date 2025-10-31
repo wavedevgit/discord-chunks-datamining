@@ -137,8 +137,8 @@ let ey = new Chunk710845.Z("AutocompleteUtils"),
   ex = 8,
   eL = 1,
   eM = 1e3,
-  ek = .2,
-  ej = .1,
+  ej = .2,
+  ek = .1,
   eU = 50,
   eG = () => true,
   eB = /(\t|\s)/,
@@ -194,8 +194,8 @@ function ez(e) {
       }
     } else o[n] = 1 + r / i
   }
-  for (let e of z.Z.getFriendIDs()) o[e] = (null != (t = o[e]) ? t : 1) + ek;
-  for (let e of U.Z.getDMUserIds()) o[e] = (null != (n = o[e]) ? n : 1) + ej;
+  for (let e of z.Z.getFriendIDs()) o[e] = (null != (t = o[e]) ? t : 1) + ej;
+  for (let e of U.Z.getDMUserIds()) o[e] = (null != (n = o[e]) ? n : 1) + ek;
   return o
 }
 let eq = [Chunk984933.sH, Chunk984933.Zb, Chunk981631.d4z.GUILD_CATEGORY];
@@ -247,7 +247,7 @@ function e0(e) {
   for (; m < h;) {
     var E, b, y, O, v, I, T, S, A;
     let e, r, f = n[m];
-    f instanceof k.Z ? (r = f, e = null == (b = F.ZP.getNick(c, r.id)) ? true : b.toLocaleLowerCase()) : (e = null == (y = f.nick) ? true : y.toLocaleLowerCase(), r = l[f.userId]);
+    f instanceof j.Z ? (r = f, e = null == (b = F.ZP.getNick(c, r.id)) ? true : b.toLocaleLowerCase()) : (e = null == (y = f.nick) ? true : y.toLocaleLowerCase(), r = l[f.userId]);
     let h = null == (E = el.ZP.getGlobalName(r)) ? true : E.toLocaleLowerCase();
     if (null != r && (null == i || i(r))) {
       let n = r.username.toLocaleLowerCase(),
@@ -734,8 +734,9 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         let {
           componentPlaygroundConfigs: e
         } = n(653592);
-        for (let t of e.flatMap(e => e.collections))
-          for (let e of ["".concat(t.name, " Playground"), "".concat(t.name, " Components"), "".concat(t.name, " Design System"), t.name]) {
+        for (let t of e.flatMap(e => e.collections)) {
+          var _;
+          for (let e of ["".concat(t.name, " Playground"), "".concat(t.name, " Components"), "".concat(t.name, " Design System"), t.name, ...null != (_ = t.tags) ? _ : []]) {
             let n = e.toLocaleLowerCase(),
               r = eQ(n, s, i);
             if (r > 0) {
@@ -749,6 +750,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
               break
             }
           }
+        }
       }
       return eE.getState().options.forEach(e => {
         var t;
@@ -1110,12 +1112,12 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
           userId: e,
           nick: null != (t = z.Z.getNickname(e)) ? t : null
         }
-      }) : F.ZP.getMembers(n.guild_id).filter(eJ), s = j.default.getId(), l = Q.default.getUsers(), c = X.Z.getGuildId(), u = t.toLocaleLowerCase(), d = (0, es.Fv)(u), _ = [];
+      }) : F.ZP.getMembers(n.guild_id).filter(eJ), s = k.default.getId(), l = Q.default.getUsers(), c = X.Z.getGuildId(), u = t.toLocaleLowerCase(), d = (0, es.Fv)(u), _ = [];
       c: for (let e of o) {
         var p, h, m, g;
         let t, o;
         if (_.length >= r) break;
-        e instanceof k.Z ? (o = e, t = null == (m = F.ZP.getNick(c, o.id)) ? true : m.toLocaleLowerCase()) : (t = null == (g = e.nick) ? true : g.toLocaleLowerCase(), o = l[e.userId]);
+        e instanceof j.Z ? (o = e, t = null == (m = F.ZP.getNick(c, o.id)) ? true : m.toLocaleLowerCase()) : (t = null == (g = e.nick) ? true : g.toLocaleLowerCase(), o = l[e.userId]);
         let f = null == (p = z.Z.getNickname(o.id)) ? true : p.toLocaleLowerCase(),
           E = null == (h = el.ZP.getGlobalName(o)) ? true : h.toLocaleLowerCase();
         if (null == o || o.id === s || o.bot || !ei.BT({

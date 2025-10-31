@@ -58,13 +58,13 @@ var Chunk644387 = require("./644387.js"),
       x = n ? n.height : d(t.height) - w - N,
       L = D + T + R + A,
       M = x + S + N + C,
-      k = Object.freeze({
+      j = Object.freeze({
         devicePixelContentBoxSize: f(Math.round(D * devicePixelRatio), Math.round(x * devicePixelRatio), o),
         borderBoxSize: f(L, M, o),
         contentBoxSize: f(D, x, o),
         contentRect: new i.N(b, m, D, x)
       });
-    return s.set(e, k), k
+    return s.set(e, j), j
   },
   h = function(e, t) {
     var n = p(e),

@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 646466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => E
@@ -75,7 +75,7 @@ let h = [{
         previewProfileEffectSkuId: t,
         setPreviewProfileEffectSkuId: n
       } = (0, Chunk619899.N9)(),
-      o = Chunk647438.useMemo(() => [x, ...module.map(e => ({
+      s = Chunk647438.useMemo(() => [x, ...module.map(e => ({
         label: e.name,
         value: e.skuId
       }))], [module]);
@@ -109,7 +109,7 @@ let h = [{
       setPreviewAvatarDecorationSkuId: t
     } = (0, Chunk619899.N9)(), {
       avatarDecorationAssets: n
-    } = (0, Chunk619899.xq)(), i = Chunk647438.useMemo(() => [g, ...require.map(e => ({
+    } = (0, Chunk619899.xq)(), r = Chunk647438.useMemo(() => [g, ...require.map(e => ({
       label: e.name,
       value: e.name
     }))], [require]);
@@ -133,14 +133,14 @@ let h = [{
       clearAssets: t,
       clearIgnoredFiles: n
     } = e, {
-      collectionAssets: i
-    } = (0, s.xq)(), {
-      deleteCollectionAsset: o,
+      collectionAssets: r
+    } = (0, o.xq)(), {
+      deleteCollectionAsset: s,
       clearAssets: c
-    } = (0, s.N9)(), d = r.useMemo(() => Object.values(i).map(e => ({
+    } = (0, o.N9)(), d = i.useMemo(() => Object.values(r).map(e => ({
       label: e.name,
       value: e.type
-    })), [i]), u = r.useCallback(e => o(e), [o]), p = r.useCallback(() => {
+    })), [r]), u = i.useCallback(e => s(e), [s]), p = i.useCallback(() => {
       c(), t(), n()
     }, [c, t, n]);
     return 0 === d.length ? null : (0, a.jsxs)(a.Fragment, {
@@ -209,9 +209,9 @@ let h = [{
       validateShopAssetPackage: e,
       reset: t,
       validationComplete: n,
-      warnings: i,
-      errors: o
-    } = (0, Chunk206878.g)(), s = Object.entries(Chunk637443), d = Object.entries(Chunk373071), p = Chunk619899.length > 0, h = Chunk281598.length > 0, x = Chunk647438.useCallback(n => {
+      warnings: r,
+      errors: s
+    } = (0, Chunk206878.g)(), o = Object.entries(Chunk637443), d = Object.entries(Chunk373071), p = Chunk619899.length > 0, h = Chunk281598.length > 0, x = Chunk647438.useCallback(n => {
       t(), e(n)
     }, [module, exports]);
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -247,15 +247,15 @@ let h = [{
         }), (0, Chunk951288.jsx)("ul", {
           className: Chunk198764.validationIssuesList,
           children: Chunk619899.map((e, t) => {
-            let [n, r] = e;
+            let [n, i] = e;
             return (0, a.jsxs)("li", {
               children: [(0, a.jsx)(l.Text, {
                 variant: "text-md/bold",
                 color: "text-danger",
                 children: n
-              }), r.length > 0 && (0, a.jsx)("ul", {
+              }), i.length > 0 && (0, a.jsx)("ul", {
                 className: m.validationIssuesList,
-                children: r.map((e, t) => (0, a.jsx)("li", {
+                children: i.map((e, t) => (0, a.jsx)("li", {
                   children: (0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-danger",
@@ -275,15 +275,15 @@ let h = [{
         }), (0, Chunk951288.jsx)("ul", {
           className: Chunk198764.validationIssuesList,
           children: Object.entries(Chunk373071).map((e, t) => {
-            let [n, r] = e;
+            let [n, i] = e;
             return (0, a.jsxs)("li", {
               children: [(0, a.jsx)(l.Text, {
                 variant: "text-md/bold",
                 color: "text-feedback-warning",
                 children: n
-              }), r.length > 0 && (0, a.jsx)("ul", {
+              }), i.length > 0 && (0, a.jsx)("ul", {
                 className: m.validationIssuesList,
-                children: r.map((e, t) => (0, a.jsx)("li", {
+                children: i.map((e, t) => (0, a.jsx)("li", {
                   children: (0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-feedback-warning",
@@ -303,8 +303,8 @@ let h = [{
       setPreviewEnabled: t,
       clearAssets: n
     } = (0, Chunk619899.N9)(), {
-      ignoredFilenames: i,
-      clearAssets: o,
+      ignoredFilenames: r,
+      clearAssets: s,
       clearIgnoredFilenames: u,
       processAndUpsertAssets: p
     } = (0, Chunk281598.hm)(), h = Chunk647438.useCallback(e => {

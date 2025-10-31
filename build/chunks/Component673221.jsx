@@ -99,8 +99,8 @@ function P(e) {
     shouldFocusWrap: x,
     placeholder: L = O.intl.string(y.default["A+pfVR"]),
     label: M,
-    name: k,
-    form: j,
+    name: j,
+    form: k,
     autoComplete: U,
     maxOptionsVisible: G = 5,
     options: B,
@@ -259,8 +259,8 @@ function P(e) {
         })]
       })
     })), (0, r.jsx)(p.M, {
-      name: k,
-      form: j,
+      name: j,
+      form: k,
       disabled: es,
       autoComplete: U,
       selectionMode: t,

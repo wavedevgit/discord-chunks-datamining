@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 879434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk678717 = require("./678717.jsx"),
@@ -19,40 +19,40 @@ var Chunk951288 = require("./951288.js"),
 let g = e => {
     let {
       setTab: t
-    } = e, n = (0, s.e7)([u.Z], () => u.Z.getWindowOpen(h.KJ3.DEVTOOLS_POPOUT));
+    } = e, n = (0, o.e7)([u.Z], () => u.Z.getWindowOpen(h.KJ3.DEVTOOLS_POPOUT));
     return (0, a.jsxs)("div", {
       className: x.content,
-      children: [(0, a.jsx)(o.P3F, {
+      children: [(0, a.jsx)(s.P3F, {
         onClick: () => {
           t(1)
         },
         children: (0, a.jsx)("div", {
-          className: i()(x.banner, x.pfxBanner),
-          children: (0, a.jsx)(o.xvT, {
+          className: r()(x.banner, x.pfxBanner),
+          children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
             children: "Profile Effects"
           })
         })
-      }), (0, a.jsx)(o.P3F, {
+      }), (0, a.jsx)(s.P3F, {
         onClick: () => {
           t(2)
         },
         children: (0, a.jsx)("div", {
-          className: i()(x.banner, x.nameplateBanner),
-          children: (0, a.jsx)(o.xvT, {
+          className: r()(x.banner, x.nameplateBanner),
+          children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
             children: "Nameplates"
           })
         })
-      }), (0, a.jsx)(o.P3F, {
+      }), (0, a.jsx)(s.P3F, {
         onClick: () => {
           t(3)
         },
         children: (0, a.jsx)("div", {
-          className: i()(x.banner, x.bundlesBanner),
-          children: (0, a.jsx)(o.xvT, {
+          className: r()(x.banner, x.bundlesBanner),
+          children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
             children: "Products"
@@ -62,19 +62,19 @@ let g = e => {
         style: {
           marginTop: 16
         },
-        children: (0, a.jsx)(o.M14, {
+        children: (0, a.jsx)(s.M14, {
           type: "warning",
-          children: (0, a.jsxs)(o.Kqy, {
+          children: (0, a.jsxs)(s.Kqy, {
             gap: 8,
-            children: [(0, a.jsx)(o.xvT, {
+            children: [(0, a.jsx)(s.xvT, {
               variant: "text-md/semibold",
               children: "Not enough space?"
-            }), (0, a.jsx)(o.xvT, {
+            }), (0, a.jsx)(s.xvT, {
               variant: "text-sm/normal",
               children: "You can pop out the DevTools to see the full layout."
-            }), (0, a.jsx)(o.zxk, {
+            }), (0, a.jsx)(s.zxk, {
               size: "sm",
-              icon: o.rgF,
+              icon: s.rgF,
               variant: "secondary",
               onClick: c.openDevToolsPopout,
               text: "Popout DevTools"

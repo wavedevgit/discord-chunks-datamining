@@ -1,7 +1,8 @@
-/** Chunk was on 42340 **/
-/** chunk id: 729154, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 729154, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  x: () => x
+  x: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,73 +16,73 @@ var Chunk951288 = require("./951288.js"),
   Chunk881493 = require("./881493.jsx"),
   Chunk407965 = require("./407965.jsx"),
   Chunk981631 = require("./981631.js");
-let x = e => {
+let h = e => {
     let {
       transitionState: t,
       onClose: n,
-      premiumSubscription: o,
-      premiumType: s,
+      premiumSubscription: s,
+      premiumType: l,
       churnDiscount: c,
-      planId: d,
-      renewalInvoice: m,
-      renewalInvoiceDetails: p,
-      errorOnCancel: x,
-      errorOnRedeem: f,
-      setActiveStep: b,
-      activeStep: v
+      planId: u,
+      renewalInvoice: f,
+      renewalInvoiceDetails: _,
+      errorOnCancel: h,
+      errorOnRedeem: g,
+      setActiveStep: E,
+      activeStep: b
     } = e, {
-      analyticsLocations: j
-    } = (0, i.ZP)(l.Z.USER_SETTINGS), [_, y] = r.useState(g(v));
-    return (0, r.useEffect)(() => {
-      y(g(v))
-    }, [v]), (0, a.jsx)(u.CancellationContext.Provider, {
+      analyticsLocations: y
+    } = (0, o.ZP)(a.Z.USER_SETTINGS), [O, v] = i.useState(m(b));
+    return (0, i.useEffect)(() => {
+      v(m(b))
+    }, [b]), (0, r.jsx)(d.CancellationContext.Provider, {
       value: {
-        setStep: b,
-        premiumType: s,
+        setStep: E,
+        premiumType: l,
         onClose: n,
         transitionState: t,
-        premiumSubscription: o,
-        analyticsLocations: j,
-        analyticsLocation: h.Sbl.USER_SETTINGS,
+        premiumSubscription: s,
+        analyticsLocations: y,
+        analyticsLocation: p.Sbl.USER_SETTINGS,
         confettiCanvas: null,
         churnUserDiscountOffer: c,
         isFetchingChurnDiscountOffer: false,
         fullPrice: "$9.99",
         discountedPrice: "$4.99",
-        planId: d,
+        planId: u,
         paymentsBlocked: false,
-        renewalInvoice: m,
-        renewalInvoiceDetails: p,
+        renewalInvoice: f,
+        renewalInvoiceDetails: _,
         handleCancellation: () => new Promise((e, t) => {
           setTimeout(() => {
-            if (x) return void t();
+            if (h) return void t();
             e()
           }, 1e3)
         }),
         applyOffer: () => new Promise((e, t) => {
           setTimeout(() => {
-            if (f) return void t();
+            if (g) return void t();
             e()
           }, 1e3)
         }),
         pauseDuration: null,
         setPauseDuration: () => {}
       },
-      children: _
+      children: O
     })
   },
-  g = e => {
+  m = e => {
     switch (e) {
-      case d.R.DISCOUNT_APPLIED:
-        return (0, a.jsx)(c.i, {});
-      case d.R.CONFIRM_DISCOUNT:
-        return (0, a.jsx)(s.U, {});
-      case d.R.CONFIRM:
-        return (0, a.jsx)(o.G, {});
-      case d.R.PREVIEW:
-        return (0, a.jsx)(m.w, {});
-      case d.R.WHAT_YOU_LOSE:
+      case u.R.DISCOUNT_APPLIED:
+        return (0, r.jsx)(c.i, {});
+      case u.R.CONFIRM_DISCOUNT:
+        return (0, r.jsx)(l.U, {});
+      case u.R.CONFIRM:
+        return (0, r.jsx)(s.G, {});
+      case u.R.PREVIEW:
+        return (0, r.jsx)(f.w, {});
+      case u.R.WHAT_YOU_LOSE:
       default:
-        return (0, a.jsx)(p.n, {})
+        return (0, r.jsx)(_.n, {})
     }
   }

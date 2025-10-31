@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 232867, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => m
@@ -8,7 +8,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk959546 = require("./959546.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
-let s = async () => (await Chunk544891.tn.get({
+let o = async () => (await Chunk544891.tn.get({
   url: Chunk981631.ANM.ENTITLEMENTS_FOR_APPLICATION(Chunk474936.CL),
   oldFormErrors: true,
   query: {
@@ -17,7 +17,7 @@ let s = async () => (await Chunk544891.tn.get({
   },
   rejectWithError: true
 })).body.map(e => l.Z.createFromServer(e)), c = async e => {
-  await r.tn.post({
+  await i.tn.post({
     url: "/debug/entitlements/fractional-premium",
     body: {
       count: 1,
@@ -27,7 +27,7 @@ let s = async () => (await Chunk544891.tn.get({
   })
 }, d = async e => {
   let t = "/debug/entitlements/fractional-premium";
-  null != e && (t = "".concat(t, "/").concat(e)), await r.tn.del({
+  null != e && (t = "".concat(t, "/").concat(e)), await i.tn.del({
     url: t,
     rejectWithError: true
   })
@@ -37,15 +37,15 @@ let s = async () => (await Chunk544891.tn.get({
     rejectWithError: false
   })
 }, m = () => {
-  let [e, t] = Chunk647438.useState([]), [n, r] = Chunk647438.useState(false), l = (0, Chunk647438.useCallback)(async () => {
+  let [e, t] = Chunk647438.useState([]), [n, i] = Chunk647438.useState(false), l = (0, Chunk647438.useCallback)(async () => {
     try {
       Chunk544891(true);
-      let e = await s();
+      let e = await o();
       exports(module)
     } finally {
       Chunk544891(false)
     }
-  }, []), i = (0, Chunk647438.useCallback)(async e => {
+  }, []), r = (0, Chunk647438.useCallback)(async e => {
     await c(e), await l()
   }, [Chunk959546]);
   return {

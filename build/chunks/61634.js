@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 61634, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -26,9 +26,9 @@ var Chunk106351 = require("./106351.js"),
   Chunk209114 = require("./209114.js"),
   Chunk981631 = require("./981631.js");
 
-function x(e, t) {
+function E(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : b.Z;
-  return null != e && e.type !== r.d.GUILD_STAGE_VOICE && t !== e.id && n.canBasicChannel(E.S7T.VIEW_CHANNEL, e)
+  return null != e && e.type !== r.d.GUILD_STAGE_VOICE && t !== e.id && n.canBasicChannel(x.S7T.VIEW_CHANNEL, e)
 }
 
 function S(e) {
@@ -37,7 +37,7 @@ function S(e) {
     r = C.Z.useConfig({
       location: "useGuildMediaState"
     }).enabled,
-    E = n && !r,
+    x = n && !r,
     S = (0, c.k5)(e),
     I = (0, i.Wu)([o.ZP, _.Z], () => o.ZP.getEmbeddedActivitiesForGuild(e).filter(e => !(0, s.BA)([...e.userIds], _.Z.getBlockedOrIgnoredIDs()))),
     P = (0, a.p)(null == (t = I[0]) ? true : t.location),
@@ -54,39 +54,39 @@ function S(e) {
         l = (0, s.DX)(v.Z.getVoiceStates(e));
       return {
         guildHasVoice: (() => {
-          if (E) returnfalse;
+          if (x) returnfalse;
           for (let e in l)
-            if (x(g.Z.getBasicChannel(l[e].channelId), null != r ? r : true, b.Z)) returntrue;
+            if (E(g.Z.getBasicChannel(l[e].channelId), null != r ? r : true, b.Z)) returntrue;
           returnfalse
         })(),
         guildHasVideo: (() => {
-          if (E) returnfalse;
+          if (x) returnfalse;
           for (let t of i) {
             var e;
-            if (x(g.Z.getBasicChannel(null == (e = l[t]) ? true : e.channelId), null != r ? r : true, b.Z)) returntrue
+            if (E(g.Z.getBasicChannel(null == (e = l[t]) ? true : e.channelId), null != r ? r : true, b.Z)) returntrue
           }
           returnfalse
         })(),
         selectedVoiceChannelHasVideo: null != n && v.Z.hasVideo(n)
       }
-    }, [e, E]),
-    A = h.default.getId();
-  return (0, i.cj)([O.Z, g.Z, o.ZP, d.Z, f.Z, b.Z], () => {
+    }, [e, x]),
+    A = f.default.getId();
+  return (0, i.cj)([O.Z, g.Z, o.ZP, d.Z, h.Z, b.Z], () => {
     var t, n, r;
     let i = O.Z.getVoiceChannelId(),
       l = (null == (t = g.Z.getChannel(i)) ? true : t.guild_id) === e,
       c = false,
-      h = false,
+      f = false,
       m = false,
       _ = false,
       y = false,
       v = false;
-    if (!l && E) return {
+    if (!l && x) return {
       audio: c,
       video: _,
       screenshare: y,
       liveStage: m,
-      activeEvent: h,
+      activeEvent: f,
       activity: v,
       isCurrentUserConnected: false
     };
@@ -94,9 +94,9 @@ function S(e) {
         let t = g.Z.getChannel(e);
         return null != t && b.Z.can(u.gl, t)
       }),
-      x = l && null != (r = null == (n = g.Z.getChannel(i)) ? true : n.isGuildStageVoice()) && r,
-      P = !!l && null != f.Z.getActiveStreamForUser(A, e),
-      R = (0, s.aK)(f.Z.getAllApplicationStreams()).some(t => t.guildId === e),
+      E = l && null != (r = null == (n = g.Z.getChannel(i)) ? true : n.isGuildStageVoice()) && r,
+      P = !!l && null != h.Z.getActiveStreamForUser(A, e),
+      R = (0, s.aK)(h.Z.getAllApplicationStreams()).some(t => t.guildId === e),
       D = l && w,
       L = (() => {
         if (N) return I.length > 0;
@@ -107,14 +107,14 @@ function S(e) {
         returnfalse
       })(),
       M = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return l ? (c = true, h = (null == S ? true : S.channel_id) === i, m = x, _ = D, y = P, v = M) : (c = Z, h = null != S, m = C, _ = T, y = R, v = L), {
+    return l ? (c = true, f = (null == S ? true : S.channel_id) === i, m = E, _ = D, y = P, v = M) : (c = Z, f = null != S, m = C, _ = T, y = R, v = L), {
       audio: c,
       video: _,
       screenshare: y,
       liveStage: m,
-      activeEvent: h,
+      activeEvent: f,
       activity: v,
-      isCurrentUserConnected: l || x
+      isCurrentUserConnected: l || E
     }
-  }, [e, E, w, A, N, I, S, Z, T])
+  }, [e, x, w, A, N, I, S, Z, T])
 }

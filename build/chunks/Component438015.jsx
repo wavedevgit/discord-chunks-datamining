@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk593481 = require("./593481.jsx"),
   Chunk981631 = require("./981631.js");
 
-function s(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,7 +22,7 @@ class c extends Chunk647438.Component {
     let e, t, n, i, {
       props: {
         position: r,
-        zIndex: o
+        zIndex: l
       }
     } = this;
     switch (Chunk647438) {
@@ -57,8 +57,8 @@ class c extends Chunk647438.Component {
         notification: {
           props: {
             renderFooter: r,
-            onNotificationShow: o,
-            onDismissClick: a,
+            onNotificationShow: l,
+            onDismissClick: s,
             onNotificationClick: c,
             onConfirmClick: d,
             onCancelClick: u
@@ -70,13 +70,13 @@ class c extends Chunk647438.Component {
       var n, i, r = function(e, t) {
         if (null == e) return {};
         var n, i, r = {},
-          o = Object.keys(e);
-        for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+          l = Object.keys(e);
+        for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
         return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
     }(this.props.notification.props, ["renderFooter", "onNotificationShow", "onDismissClick", "onNotificationClick", "onConfirmClick", "onCancelClick"]);
@@ -87,7 +87,7 @@ class c extends Chunk647438.Component {
         "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), i.forEach(function(t) {
-          s(e, t, n[t])
+          a(e, t, n[t])
         })
       }
       return e
@@ -112,7 +112,7 @@ class c extends Chunk647438.Component {
     }), module))
   }
   constructor(...e) {
-    super(...e), s(this, "handleNotificationShow", () => {
+    super(...e), a(this, "handleNotificationShow", () => {
       let {
         id: e,
         props: {
@@ -120,15 +120,15 @@ class c extends Chunk647438.Component {
         }
       } = this.props.notification;
       t(e)
-    }), s(this, "handleDismissClick", e => {
+    }), a(this, "handleDismissClick", e => {
       let {
         id: t,
         props: {
           onDismissClick: n
         }
       } = this.props.notification;
-      o.Z.updateNotificationStatus(t), null == n || n(e, t)
-    }), s(this, "handleNotificationClick", e => {
+      l.Z.updateNotificationStatus(t), null == n || n(e, t)
+    }), a(this, "handleNotificationClick", e => {
       let {
         id: t,
         props: {
@@ -136,7 +136,7 @@ class c extends Chunk647438.Component {
         }
       } = this.props.notification;
       null != n && n(e, t)
-    }), s(this, "handleConfirmClick", e => {
+    }), a(this, "handleConfirmClick", e => {
       let {
         id: t,
         props: {
@@ -144,7 +144,7 @@ class c extends Chunk647438.Component {
         }
       } = this.props.notification;
       null != n && n(e, t)
-    }), s(this, "handleCancelClick", e => {
+    }), a(this, "handleCancelClick", e => {
       let {
         id: t,
         props: {
@@ -152,7 +152,7 @@ class c extends Chunk647438.Component {
         }
       } = this.props.notification;
       null != n && n(e, t)
-    }), s(this, "renderFooter", e => {
+    }), a(this, "renderFooter", e => {
       let {
         id: t,
         props: {

@@ -1,34 +1,34 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 608934, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => i
+  a: () => r
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk530146 = require("./530146.js");
 
-function i(e) {
+function r(e) {
   let {
     isUploading: t,
     isSuccess: n,
-    errorMessage: i,
-    onClick: o,
-    title: s
+    errorMessage: r,
+    onClick: s,
+    title: o
   } = e;
   return (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(r.Button, {
+    children: [(0, a.jsx)(i.Button, {
       variant: "primary",
-      onClick: o,
+      onClick: s,
       loading: t,
       disabled: t,
-      text: t ? "Uploading…" : s
-    }), null != i && (0, a.jsx)(r.Text, {
+      text: t ? "Uploading…" : o
+    }), null != r && (0, a.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",
       className: l.statusText,
-      children: i
-    }), n && (0, a.jsx)(r.Text, {
+      children: r
+    }), n && (0, a.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-positive",
       className: l.statusText,

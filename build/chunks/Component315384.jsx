@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 315384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -50,7 +50,7 @@ function p() {
                 },
                 rejectWithError: true
               }),
-              r = new Chunk959546.Z(Chunk951288.body.entitlement);
+              i = new Chunk959546.Z(Chunk951288.body.entitlement);
             require([...exports, Chunk647438])
           } catch (e) {
             h("Failed to create entitlement")
@@ -73,15 +73,15 @@ function p() {
       }), (0, Chunk951288.jsx)("ul", {
         children: exports.map(e => (0, a.jsx)("li", {
           children: (0, a.jsxs)("div", {
-            children: [(0, a.jsx)(o.Text, {
+            children: [(0, a.jsx)(s.Text, {
               selectable: true,
               variant: "text-md/normal",
               children: e.id
-            }), (0, a.jsxs)(o.Text, {
+            }), (0, a.jsxs)(s.Text, {
               selectable: true,
               variant: "text-md/normal",
               children: ["Type: ", m[e.skuId]]
-            }), (0, a.jsxs)(o.Text, {
+            }), (0, a.jsxs)(s.Text, {
               selectable: true,
               variant: "text-md/normal",
               children: ["Consumed? : ", e.consumed ? "Yes" : "No"]

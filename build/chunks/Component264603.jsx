@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
   Chunk481060 = require("./481060.js"),
@@ -41,7 +41,7 @@ function S() {
   let e = Chunk647438.useRef(null),
     t = Chunk695346.JG.useSetting(),
     [n, l] = Chunk647438.useState(""),
-    s = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
+    o = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
     S = (0, Chunk835473.q)(require),
     E = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
       var e, t;
@@ -50,16 +50,16 @@ function S() {
     T = (0, Chunk535139.F)(S, {
       allowedFlows: [Chunk535139.r.RPC]
     }),
-    O = (0, Chunk535139.F)(S, {
+    N = (0, Chunk535139.F)(S, {
       allowedFlows: [Chunk535139.r.WEB]
     }),
-    N = (0, Chunk535139.F)(S),
+    O = (0, Chunk535139.F)(S),
     {
       canDeauthorize: P,
-      deauthorize: I
+      deauthorize: w
     } = function(e) {
-      let t = (0, o.e7)([b.Z], () => b.Z.getNewestTokenForApplication(e)),
-        n = r.useCallback(() => {
+      let t = (0, s.e7)([b.Z], () => b.Z.getNewestTokenForApplication(e)),
+        n = i.useCallback(() => {
           null != t && d.Z.delete(t.id)
         }, [t]);
       return {
@@ -69,7 +69,7 @@ function S() {
     }(null == S ? true : S.id);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
-    className: i()(Chunk451429.panel, Chunk441900.panel),
+    className: r()(Chunk451429.panel, Chunk441900.panel),
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk441900.container,
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
@@ -112,8 +112,8 @@ function S() {
         variant: "heading-lg/normal",
         children: "Authorization"
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
-        disabled: !N.canStartAuthorization,
-        onClick: N.startAuthorization,
+        disabled: !O.canStartAuthorization,
+        onClick: O.startAuthorization,
         variant: "primary",
         text: "Start Authorization"
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -126,13 +126,13 @@ function S() {
         variant: "secondary",
         text: "Start In-App Authorization"
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
-        disabled: !O.canStartAuthorization,
-        onClick: O.startAuthorization,
+        disabled: !N.canStartAuthorization,
+        onClick: N.startAuthorization,
         variant: "secondary",
         text: "Start Web Authorization"
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         disabled: !P,
-        onClick: I,
+        onClick: w,
         variant: "critical-primary",
         text: "Deauthorize"
       })]

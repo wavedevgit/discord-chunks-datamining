@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 82409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -77,9 +77,9 @@ function U(e) {
   var t, n;
   let {
     includePanelSpacing: l
-  } = e, a = (0, E.fJ)(), {
-    selectedFilter: f
-  } = (0, x.Z)(), P = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), Z = (0, s.Wu)([y.ZP, _.Z, S.Z], () => N.filter(e => !(0, I.YH)({
+  } = e, a = (0, x.fJ)(), {
+    selectedFilter: h
+  } = (0, E.Z)(), P = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), Z = (0, s.Wu)([y.ZP, _.Z, S.Z], () => N.filter(e => !(0, I.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
@@ -92,11 +92,11 @@ function U(e) {
     ReadStateStore_: y.ZP,
     GuildStore_: _.Z
   }) || (0, I.Tj)(e, S.Z.selectedItemInfo))), U = i.useCallback(e => {
-    f !== A.V5.BOOKMARKS && C.Z.loadMoreInbox({
+    h !== A.V5.BOOKMARKS && C.Z.loadMoreInbox({
       viewId: a,
       loadingTrigger: e
     })
-  }, [f, a]), {
+  }, [h, a]), {
     hasLoadedEver: B,
     canLoadMore: W
   } = (0, s.cj)([S.Z], () => ({
@@ -139,8 +139,8 @@ function U(e) {
         message: n
       }]
     }), [K]),
-    q = F(Z, f, P),
-    X = F(D, f, null);
+    q = F(Z, h, P),
+    X = F(D, h, null);
   (0, p.ZP)(() => {
     var e;
     u.Z.dispatch({
@@ -202,14 +202,14 @@ function U(e) {
     location: "NotificationsInboxSidebar"
   }), J = (0, g._k)({
     location: "NotificationsInboxSidebar"
-  }), $ = Q === j.v8.DROPDOWN && f !== A.V5.ALL, ee = (0, A.H_)(f);
+  }), $ = Q === j.v8.DROPDOWN && h !== A.V5.ALL, ee = (0, A.H_)(h);
   return (0, r.jsx)("nav", {
     className: o()(L.container, {
       [L.panelSpacing]: l
     }),
     children: (0, r.jsxs)(c.y5t, {
       forceLevel: 1,
-      component: (0, r.jsx)(h.ZP, (t = M({
+      component: (0, r.jsx)(f.ZP, (t = M({
         hasSubheader: true,
         guild: ee
       }, G), n = n = {
@@ -231,18 +231,18 @@ function U(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)),
-      children: [f === A.V5.ALL && (0, r.jsx)(z, {
-        hideBanner: !B || f !== A.V5.ALL
+      children: [h === A.V5.ALL && (0, r.jsx)(z, {
+        hideBanner: !B || h !== A.V5.ALL
       }), $ && (0, r.jsx)(c.LZC, {
         size: 8
       }), (0, r.jsx)(w.Z, {
         className: L.messageList,
         renderMessageGroup: H,
-        messages: f === A.V5.BOOKMARKS ? Y : q,
-        unreadMessages: f === A.V5.BOOKMARKS ? [] : X,
+        messages: h === A.V5.BOOKMARKS ? Y : q,
+        unreadMessages: h === A.V5.BOOKMARKS ? [] : X,
         listName: "notifications-inbox",
         renderLoadingState: V,
-        ignoreGrouping: f === A.V5.BOOKMARKS,
+        ignoreGrouping: h === A.V5.BOOKMARKS,
         loadMore: U
       })]
     })
@@ -250,7 +250,7 @@ function U(e) {
 }
 
 function B(e) {
-  return (0, r.jsx)(E.HP, {
+  return (0, r.jsx)(x.HP, {
     children: (0, r.jsx)(U, M({}, e))
   })
 }
@@ -293,7 +293,7 @@ function z(e) {
         children: D.intl.string(D.t["6XMM+D"])
       }), (0, r.jsx)(c.W6s, {
         size: "sm",
-        color: f.Z.TEXT_FEEDBACK_POSITIVE
+        color: h.Z.TEXT_FEEDBACK_POSITIVE
       })]
     })
   })

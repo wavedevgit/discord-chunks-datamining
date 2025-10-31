@@ -1,4 +1,4 @@
-/** Chunk was on 83546 **/
+/** Chunk was on 56710 **/
 /** chunk id: 903672, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -40,9 +40,9 @@ function N(e, t, n) {
     i = t ? v.ZP.roleFilter : null,
     l = t ? v.ZP.everyoneFilter : null,
     o = null;
-  null != e && null != r && (o = r === x.NgX.ALL_SERVERS ? null : e.getGuildId()), c.Z.fetchRecentMentions({
+  null != e && null != r && (o = r === E.NgX.ALL_SERVERS ? null : e.getGuildId()), c.Z.fetchRecentMentions({
     before: n,
-    limit: x.DJj,
+    limit: E.DJj,
     guildId: o,
     roles: i,
     everyone: l
@@ -56,7 +56,7 @@ function Z(e) {
     messages: l,
     hasMore: s,
     loading: p,
-    guildFilter: h,
+    guildFilter: f,
     roleFilter: b,
     everyoneFilter: O
   } = (0, a.cj)([v.ZP], () => ({
@@ -68,14 +68,14 @@ function Z(e) {
     everyoneFilter: v.ZP.everyoneFilter
   })), j = (0, m.Us)({
     location: "RecentMentions"
-  }), C = (0, d.Z)(h), E = (0, d.Z)(b), P = (0, d.Z)(O);
+  }), C = (0, d.Z)(f), x = (0, d.Z)(b), P = (0, d.Z)(O);
   i.useEffect(() => {
     if (!v.ZP.hasLoadedEver) return void N(n, true);
-    (null != C && h !== C || null != E && b !== E || null != P && O !== P) && N(n, true)
-  }, [C, h, E, b, P, O, n, true]), (0, u.ZP)(() => {
-    (null == l ? true : l.some(f.k5)) && (c.Z.clearMentions(), N(n, true))
+    (null != C && f !== C || null != x && b !== x || null != P && O !== P) && N(n, true)
+  }, [C, f, x, b, P, O, n, true]), (0, u.ZP)(() => {
+    (null == l ? true : l.some(h.k5)) && (c.Z.clearMentions(), N(n, true))
   }), i.useEffect(() => () => {
-    c.Z.truncateMentions(x.DJj)
+    c.Z.truncateMentions(E.DJj)
   }, []);
   let Z = i.useCallback(() => null, []);
   return (0, r.jsx)(g.ZP, {
@@ -144,7 +144,7 @@ function w(e) {
       children: [(0, r.jsx)(j.Z, {
         className: I.jumpMessageButton,
         onJump: n
-      }), (0, r.jsx)(h.Z, {
+      }), (0, r.jsx)(f.Z, {
         message: t,
         channel: l,
         className: I.message,

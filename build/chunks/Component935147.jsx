@@ -118,16 +118,16 @@ function W(e) {
         let e = d.Z.getProduct(ee.skuId);
         null != e && (0, _.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, s.cV)(ee)) : null != f.Z.getPurchase(ee.skuId) && (0, s.cV)(ee)
       }
-      A.default.track(j.rMx.TRY_IT_OUT_PRESET_SELECTED, {
+      A.default.track(k.rMx.TRY_IT_OUT_PRESET_SELECTED, {
         preset: en
       })
     }
   };
   i.useEffect(() => {
-    H && A.default.track(j.rMx.PREMIUM_UPSELL_VIEWED, {
+    H && A.default.track(k.rMx.PREMIUM_UPSELL_VIEWED, {
       type: U.cd.PREMIUM_PROFILE_TRY_IT_OUT,
       location: {
-        page: j.ZY5.USER_SETTINGS
+        page: k.ZY5.USER_SETTINGS
       },
       location_stack: es
     })
@@ -159,7 +159,7 @@ function W(e) {
           children: [(0, r.jsx)(E.Z, {
             preset: en,
             onShuffle: er
-          }), (0, r.jsx)(k.Z, {
+          }), (0, r.jsx)(j.Z, {
             user: F
           })]
         }),

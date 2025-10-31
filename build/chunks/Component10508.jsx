@@ -1,10 +1,11 @@
-/** Chunk was on 69432 **/
-/** chunk id: 10508, original params: t,e,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 10508, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   o: () => f,
-  w: () => m
+  w: () => d
 });
-var i, Chunk951288 = require("./951288.js");
+var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk793030 = require("./793030.js"),
   Chunk74538 = require("./74538.js"),
@@ -13,93 +14,95 @@ var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk623361 = require("./623361.js"),
   Chunk947866 = require("./947866.js"),
-  m = ((i = {}).NONE = "none", i.CONFIRMING = "confirming", i.APPLIED = "applied", i);
-let f = t => {
+  d = function(e) {
+    return e.NONE = "none", e.CONFIRMING = "confirming", e.APPLIED = "applied", e
+  }({});
+let f = e => {
     let {
-      userDiscountOffer: e,
+      userDiscountOffer: t,
       offerState: n = "none"
-    } = t, {
-      discountedPrice: i,
-      premiumSubscription: l
-    } = (0, s.a)();
+    } = e, {
+      discountedPrice: a,
+      premiumSubscription: d
+    } = (0, o.a)();
     return (0, r.jsxs)("div", {
-      className: u.discountOfferContainer,
+      className: c.discountOfferContainer,
       children: [(0, r.jsx)("img", {
         alt: "",
-        src: d,
-        className: u.nitroIcon
+        src: u,
+        className: c.nitroIcon
       }), (0, r.jsxs)("div", {
-        className: u.discountOfferContent,
-        children: [(0, r.jsx)(a.xvT, {
+        className: c.discountOfferContent,
+        children: [(0, r.jsx)(i.xvT, {
           variant: "text-md/semibold",
-          children: l.status === o.O0b.CANCELED ? c.intl.format(c.t["DC+nPC"], {
-            numMonths: e.discount.user_usage_limit,
-            discountedPrice: i
-          }) : c.intl.format(c.t.tQvNll, {
-            numMonths: e.discount.user_usage_limit
+          children: d.status === s.O0b.CANCELED ? l.intl.format(l.t["DC+nPC"], {
+            numMonths: t.discount.user_usage_limit,
+            discountedPrice: a
+          }) : l.intl.format(l.t.tQvNll, {
+            numMonths: t.discount.user_usage_limit
           })
-        }), (0, r.jsx)(p, {
-          userDiscountOffer: e,
+        }), (0, r.jsx)(_, {
+          userDiscountOffer: t,
           offerState: n
         })]
       })]
     })
   },
-  p = t => {
+  _ = e => {
     let {
-      userDiscountOffer: e,
+      userDiscountOffer: t,
       offerState: n
-    } = t, {
-      discountedPrice: i,
+    } = e, {
+      discountedPrice: c,
       fullPrice: u,
       premiumSubscription: d
-    } = (0, s.a)();
+    } = (0, o.a)();
     switch (n) {
       case "applied":
-        if (d.status === o.O0b.CANCELED) return (0, r.jsx)(a.xvT, {
+        if (d.status === s.O0b.CANCELED) return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
-          children: c.intl.formatToPlainString(c.t.h2g1Ia, {
-            billingPeriod: (0, l.JP)(e.discount.user_usage_limit_interval),
-            numMonths: e.discount.user_usage_limit,
+          children: l.intl.formatToPlainString(l.t.h2g1Ia, {
+            billingPeriod: (0, a.JP)(t.discount.user_usage_limit_interval),
+            numMonths: t.discount.user_usage_limit,
             fullPrice: u
           })
         });
-        return (0, r.jsx)(a.xvT, {
+        return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
-          children: c.intl.formatToPlainString(c.t.gPzMHa, {
-            numMonths: e.discount.user_usage_limit,
-            discountedPrice: i,
+          children: l.intl.formatToPlainString(l.t.gPzMHa, {
+            numMonths: t.discount.user_usage_limit,
+            discountedPrice: c,
             regularPrice: u
           })
         });
       case "confirming":
-        if (d.status === o.O0b.CANCELED) return (0, r.jsx)(a.xvT, {
+        if (d.status === s.O0b.CANCELED) return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
-          children: c.intl.formatToPlainString(c.t.iDFk3v, {
-            billingPeriod: (0, l.JP)(e.discount.user_usage_limit_interval),
-            numMonths: e.discount.user_usage_limit,
+          children: l.intl.formatToPlainString(l.t.iDFk3v, {
+            billingPeriod: (0, a.JP)(t.discount.user_usage_limit_interval),
+            numMonths: t.discount.user_usage_limit,
             fullPrice: u
           })
         });
-        return (0, r.jsx)(a.xvT, {
+        return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
-          children: c.intl.formatToPlainString(c.t.Eq1RHL, {
-            percent: e.discount.amount,
-            numMonths: e.discount.user_usage_limit,
+          children: l.intl.formatToPlainString(l.t.Eq1RHL, {
+            percent: t.discount.amount,
+            numMonths: t.discount.user_usage_limit,
             price: u
           })
         });
       default:
-        return (0, r.jsx)(a.xvT, {
+        return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
-          children: c.intl.formatToPlainString(c.t["2gem05"], {
-            percent: e.discount.amount,
-            numMonths: e.discount.user_usage_limit
+          children: l.intl.formatToPlainString(l.t["2gem05"], {
+            percent: t.discount.amount,
+            numMonths: t.discount.user_usage_limit
           })
         })
     }

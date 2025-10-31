@@ -1,4 +1,4 @@
-/** Chunk was on 42340 **/
+/** Chunk was on 3020 **/
 /** chunk id: 18868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => h
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk310752 = require("./310752.jsx"),
   Chunk897842 = require("./897842.jsx"),
@@ -49,11 +49,11 @@ let m = () => {
     let {
       className: t,
       onDrop: n
-    } = e, [l, h] = r.useState(false), x = r.useRef(null), g = r.useCallback(e => {
-      p(e), h(true), (0, o.Mr3)(c.A)
-    }, []), f = r.useCallback(e => {
+    } = e, [l, h] = i.useState(false), x = i.useRef(null), g = i.useCallback(e => {
+      p(e), h(true), (0, s.Mr3)(c.A)
+    }, []), f = i.useCallback(e => {
       p(e), h(false)
-    }, []), b = r.useCallback(async e => {
+    }, []), b = i.useCallback(async e => {
       p(e), h(false);
       let t = e.dataTransfer;
       if (null == t) return void m();
@@ -65,32 +65,32 @@ let m = () => {
     }, [n]);
     return (0, a.jsx)("div", {
       ref: x,
-      className: i()(t, u.uploadArea),
+      className: r()(t, u.uploadArea),
       onDragEnter: g,
       onDragLeave: f,
       onDrop: b,
       children: (0, a.jsx)("div", {
-        className: i()(u.uploadModal, {
+        className: r()(u.uploadModal, {
           [u.droppable]: l
         }),
         children: (0, a.jsxs)("div", {
           className: u.inner,
-          children: [(0, a.jsx)(s.Z, {
+          children: [(0, a.jsx)(o.Z, {
             icons: d.J6
-          }), (0, a.jsx)(o.Heading, {
+          }), (0, a.jsx)(s.Heading, {
             variant: "heading-lg/bold",
             children: "Upload Shop Assets"
           }), (0, a.jsxs)("div", {
             className: u.instructions,
-            children: [(0, a.jsx)(o.Text, {
+            children: [(0, a.jsx)(s.Text, {
               variant: "text-sm/normal",
               children: "Drop file(s) into this panel to preview Shop assets!"
-            }), (0, a.jsxs)(o.Text, {
+            }), (0, a.jsxs)(s.Text, {
               variant: "text-sm/normal",
-              children: ["Click", (0, a.jsx)(o.idN, {
+              children: ["Click", (0, a.jsx)(s.idN, {
                 className: u.questionIcon,
                 size: "xs",
-                color: o.TVs.colors.TEXT_DEFAULT
+                color: s.TVs.colors.TEXT_DEFAULT
               }), "above for more instructions."]
             })]
           })]

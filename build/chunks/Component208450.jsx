@@ -251,7 +251,7 @@ class W extends Chunk647438.PureComponent {
         focused: r
       } = this.state;
       if (e.preventDefault(), e.stopPropagation(), "" === O.Sq(t)) return void this.focusEditor();
-      t = O.Hl(t, 0), this.setEditorState(t), (0, j.cy)({
+      t = O.Hl(t, 0), this.setEditorState(t), (0, k.cy)({
         searchContext: n
       }), r || Promise.resolve().then(() => this.blurEditor())
     }), F(this, "handleFocusSearch", e => {
@@ -271,7 +271,7 @@ class W extends Chunk647438.PureComponent {
       if (r.isPrivate() && a.type !== G.aib.DMS) return void this.focusEditor();
       let o = (0, S.X3)(r);
       if (null == o) return void this.focusEditor();
-      (0, j.PJ)({
+      (0, k.PJ)({
         searchContext: a
       }), Promise.resolve().then(() => {
         let {
@@ -301,7 +301,7 @@ class W extends Chunk647438.PureComponent {
       } = this.props;
       this.setState({
         focused: true
-      }), t || (0, j.I1)({
+      }), t || (0, k.I1)({
         searchContext: e
       })
     }), F(this, "handleBlur", e => {
@@ -312,7 +312,7 @@ class W extends Chunk647438.PureComponent {
       this.setState({
         focused: false
       }, () => {
-        n || e || (0, j.IZ)({
+        n || e || (0, k.IZ)({
           searchContext: t
         }), O.xb(this.props.editorState) && this.clearSearch()
       })
@@ -454,11 +454,11 @@ function K(e) {
   let {
     searchContext: t,
     className: n
-  } = e, a = (0, S.Tm)(t), o = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), s = (0, u.e7)([k.Z], () => k.Z.getEditorState(a));
+  } = e, a = (0, S.Tm)(t), o = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), s = (0, u.e7)([j.Z], () => j.Z.getEditorState(a));
   i.useEffect(() => (m.Z.setSelectedSearchContext(a), () => {
     m.Z.setSelectedSearchContext(null)
   }), [a]);
-  let l = (0, u.e7)([k.Z], () => k.Z.getIsSearchTokensInitialized()),
+  let l = (0, u.e7)([j.Z], () => j.Z.getIsSearchTokensInitialized()),
     c = i.useRef(l);
   i.useEffect(() => {
     l && c.current !== l && (c.current = l, x.Z.ensureSearchInputDecorators(t))
@@ -478,7 +478,7 @@ function K(e) {
     }),
     b = i.useRef(_);
   i.useEffect(() => {
-    b.current && !_ && (b.current = false, (0, j.IZ)({
+    b.current && !_ && (b.current = false, (0, k.IZ)({
       searchContext: t
     })), !b.current && _ && (b.current = true)
   }, [_, t]);
@@ -488,7 +488,7 @@ function K(e) {
         query: r,
         searchEverywhere: i
       } = e;
-      R.ZP.refreshSearchQueryAnalyticsId(t), (0, j.tI)({
+      R.ZP.refreshSearchQueryAnalyticsId(t), (0, k.tI)({
         searchContext: t,
         query: r,
         queryString: n

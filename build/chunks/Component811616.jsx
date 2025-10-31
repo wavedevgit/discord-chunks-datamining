@@ -46,14 +46,14 @@ function I(e) {
     L = x || n === y.Xh.PREMIUM_MONTH_TIER_2 && null != t && [y.Xh.PREMIUM_YEAR_TIER_0, y.Xh.PREMIUM_YEAR_TIER_1].includes(t.planId),
     M = y.nH[n],
     {
-      enabled: k
+      enabled: j
     } = E.Z.getCurrentConfig({
       location: "PremiumSwitchPlanSelectOption"
     }, {
       autoTrackExposure: false
     });
-  k && (M = (0, h.UV)(R, P, I));
-  let j = (0, h.aS)(n, false, P, I),
+  j && (M = (0, h.UV)(R, P, I));
+  let k = (0, h.aS)(n, false, P, I),
     U = (0, h.Ap)(I.paymentSourceId),
     G = null != M && !T,
     B = (0, b.Ng)(),
@@ -89,25 +89,25 @@ function I(e) {
       }), D && (0, r.jsx)("div", {
         className: v.planOneTimeCost,
         children: O.intl.format(O.t.ori2Jm, {
-          currencyAmount: (0, m.T4)(j.amount, j.currency)
+          currencyAmount: (0, m.T4)(k.amount, k.currency)
         })
       })]
     }),
-    K = () => S && null != A && R.interval === y.rV.MONTH ? (0, m.T4)(j.amount - A, j.currency) : C ? (0, m.T4)(0, j.currency, {
+    K = () => S && null != A && R.interval === y.rV.MONTH ? (0, m.T4)(k.amount - A, k.currency) : C ? (0, m.T4)(0, k.currency, {
       minimumFractionDigits: 0,
       maximumFractionDigits: 0
-    }) : (0, m.T4)(j.amount, j.currency),
+    }) : (0, m.T4)(k.amount, k.currency),
     z = () => {
       if (S && null != A && R.interval === y.rV.MONTH) {
         var e;
         return O.intl.format(O.t["VeE/4E"], {
           numMonths: null != (e = null == B ? true : B.discount.user_usage_limit) ? e : y.rt,
-          discountedPrice: (0, m.T4)(j.amount - A, j.currency),
-          regularPrice: (0, m.T4)(j.amount, j.currency)
+          discountedPrice: (0, m.T4)(k.amount - A, k.currency),
+          regularPrice: (0, m.T4)(k.amount, k.currency)
         })
       }
       return C ? O.intl.format(F, {
-        price: (0, m.T4)(j.amount, j.currency)
+        price: (0, m.T4)(k.amount, k.currency)
       }) : R.interval === y.rV.YEAR ? O.intl.formatToPlainString(O.t.rtLTJP, {
         percent: M
       }) : null
@@ -158,7 +158,7 @@ function I(e) {
         className: a()({
           [v.optionSelected]: o || D
         }),
-        children: (0, m.T4)(j.amount, j.currency)
+        children: (0, m.T4)(k.amount, k.currency)
       })]
     }), T && (0, r.jsx)("div", {
       className: v.planOptionSubtextContainer,

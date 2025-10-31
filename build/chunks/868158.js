@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Eb: () => D,
-  Fx: () => k,
+  Fx: () => j,
   IM: () => x,
   J2: () => F,
   r$: () => w
@@ -95,10 +95,10 @@ function w(e, t) {
       merged_presences: a
     } = e,
     o = S(e, ["guilds", "merged_members", "merged_presences"]);
-  let s = j(P, null == a ? true : a.friends),
+  let s = k(P, null == a ? true : a.friends),
     l = null != (n = null == r ? true : r.map((e, t) => {
-      let n = j(P, null == a ? true : a.guilds[t]),
-        r = j(P, null == i ? true : i[t]);
+      let n = k(P, null == a ? true : a.guilds[t]),
+        r = k(P, null == i ? true : i[t]);
       return T(v({}, e), {
         unavailable: true === e.voice_states,
         presences: n,
@@ -142,12 +142,12 @@ function x(e, t, n) {
     } = e,
     d = S(e, ["users", "relationships", "private_channels", "merged_members", "guilds"]);
   G(n);
-  let f = j(P = o().keyBy(a, e => e.id), s);
+  let f = k(P = o().keyBy(a, e => e.id), s);
   null == l || l.forEach(e => {
     let t = e.recipient_ids;
     null != t && (e.recipients = t.map(e => (i()(null != P[e], "Missing user in compressed ready payload"), P[e]))), delete e.recipient_ids
   });
-  let _ = null != (r = null == u ? true : u.map((e, t) => true === e.unavailable ? e : (e.members = j(P, null == c ? true : c[t]), Z(e)))) ? r : [],
+  let _ = null != (r = null == u ? true : u.map((e, t) => true === e.unavailable ? e : (e.members = k(P, null == c ? true : c[t]), Z(e)))) ? r : [],
     p = L(t, u, e => Z(e));
   return null != p && _.push(p), T(v({}, d), {
     users: a,
@@ -167,7 +167,7 @@ function M(e) {
   return null != t ? Object.values(t) : null
 }
 
-function k(e, t) {
+function j(e, t) {
   var n;
   let r = E.Z.getGuild(e.id),
     i = F(e, null == r ? true : {
@@ -182,7 +182,7 @@ function k(e, t) {
   }, i
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = [];
   return null == t || t.forEach(t => {
     if (null == t) return;

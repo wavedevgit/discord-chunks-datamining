@@ -137,7 +137,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   let {
     settings: {
       enabled: t,
@@ -170,7 +170,7 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     settings: {
       enabled: t,
@@ -467,7 +467,7 @@ function V(e) {
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-lg/semibold",
       children: O.intl.string(O.t.AtCukI)
-    }), (0, r.jsx)(k, {
+    }), (0, r.jsx)(j, {
       settings: a,
       updateSettings: h
     }), (0, r.jsx)(Z, {
@@ -478,7 +478,7 @@ function V(e) {
     }), (0, r.jsx)(G, {
       settings: a,
       updateSettings: h
-    }), (0, r.jsx)(j, {
+    }), (0, r.jsx)(k, {
       settings: a,
       updateSettings: h
     }), (0, r.jsx)(B, {

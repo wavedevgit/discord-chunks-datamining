@@ -2,7 +2,7 @@
 /** chunk id: 706872, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => p
+  Oi: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -67,60 +67,93 @@ function _(e, t) {
   return i
 }
 let p = {
-  title: "Balance Widget Pill",
-  stories: [{
-    name: "Balance Widget Pill",
-    id: "balance-widget-pill",
-    component: e => {
-      var {
-        loading: t
-      } = e, n = f(e, ["loading"]);
-      let [l, u] = (0, i.useState)(n.balance);
-      return (0, i.useEffect)(() => {
-        null == l && null != n.balance && u(n.balance)
-      }, [n.balance, l]), (0, r.jsxs)("div", {
-        className: s.verticalContainer,
-        children: [(0, r.jsx)(o.A4, d(c({}, n), {
-          balance: t ? null : l
-        })), (0, r.jsx)(a.zxk, {
-          onClick: () => u(n.balance),
-          text: "Update Balance"
-        })]
-      })
+    balance: {
+      label: "Balance",
+      type: "number",
+      defaultValue: 150
     },
-    controls: {
-      loading: {
-        label: "Loading",
-        type: "boolean",
-        defaultValue: false
-      },
-      balance: {
-        label: "Balance",
-        type: "number",
-        defaultValue: 0
-      },
-      balanceWidgetMode: {
-        label: "Balance Widget Mode",
-        type: "select",
-        options: [{
-          label: "Default",
-          value: Chunk970815.b6.DEFAULT
-        }, {
-          label: "Selected",
-          value: Chunk970815.b6.SELECTED
-        }],
-        defaultValue: Chunk970815.b6.DEFAULT
-      },
-      showNotificationBadge: {
-        label: "Show Notification Badge",
-        type: "boolean",
-        defaultValue: false
-      },
-      disabled: {
-        label: "Disabled",
-        type: "boolean",
-        defaultValue: false
-      }
+    balanceWidgetMode: {
+      label: "Balance Widget Mode",
+      type: "select",
+      options: [{
+        label: "Default",
+        value: Chunk970815.b6.DEFAULT
+      }, {
+        label: "Selected",
+        value: Chunk970815.b6.SELECTED
+      }],
+      defaultValue: Chunk970815.b6.DEFAULT
+    },
+    showNotificationBadge: {
+      label: "Show Notification Badge",
+      type: "boolean",
+      defaultValue: false
+    },
+    disabled: {
+      label: "Disabled",
+      type: "boolean",
+      defaultValue: false
     }
-  }]
-}
+  },
+  h = {
+    title: "Balance Widget Pill",
+    stories: [{
+      name: "Balance Widget Pill",
+      id: "balance-widget-pill",
+      component: e => {
+        var {
+          loading: t
+        } = e, n = f(e, ["loading"]);
+        let [l, u] = (0, i.useState)(n.balance);
+        return (0, i.useEffect)(() => {
+          null == l && null != n.balance && u(n.balance)
+        }, [n.balance, l]), (0, r.jsxs)("div", {
+          className: s.verticalContainer,
+          children: [(0, r.jsx)(o.A4, d(c({}, n), {
+            balance: t ? null : l
+          })), (0, r.jsx)(a.zxk, {
+            onClick: () => u(n.balance),
+            text: "Update Balance"
+          })]
+        })
+      },
+      controls: c({
+        loading: {
+          label: "Loading",
+          type: "boolean",
+          defaultValue: false
+        }
+      }, p)
+    }, {
+      name: "Balance Widget Pill Loading State",
+      id: "balance-widget-pill-loading",
+      component: e => {
+        var {
+          loadingDuration: t
+        } = e, n = f(e, ["loadingDuration"]);
+        let [l, u] = (0, i.useState)(n.balance);
+        return (0, i.useEffect)(() => {
+          u(n.balance)
+        }, [n.balance]), (0, r.jsxs)("div", {
+          className: s.verticalContainer,
+          children: [(0, r.jsx)(o.A4, d(c({}, n), {
+            balance: l
+          })), (0, r.jsx)(a.zxk, {
+            onClick: () => {
+              u(null), setTimeout(() => {
+                u(n.balance)
+              }, t)
+            },
+            text: "Simulate Loading State"
+          })]
+        })
+      },
+      controls: c({
+        loadingDuration: {
+          label: "Loading Duration (ms)",
+          type: "number",
+          defaultValue: 500
+        }
+      }, p)
+    }]
+  }

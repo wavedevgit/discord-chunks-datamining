@@ -46,9 +46,9 @@ function a(e, t) {
     x = r + a + N,
     L = s + parseInt(u, 10) + A,
     M = O - S,
-    k = l + parseInt(c, 10) + I,
-    j = v - T;
-  (P > L || w < M) && (P <= s + A ? s = P - parseInt(u, 10) - A : w > O - S && (s += w - O + S)), (D > k || x < j) && (D <= y + I ? l = D - parseInt(c, 10) - I : x > v - T && (l += x - v + T)), e.scrollTo({
+    j = l + parseInt(c, 10) + I,
+    k = v - T;
+  (P > L || w < M) && (P <= s + A ? s = P - parseInt(u, 10) - A : w > O - S && (s += w - O + S)), (D > j || x < k) && (D <= y + I ? l = D - parseInt(c, 10) - I : x > v - T && (l += x - v + T)), e.scrollTo({
     left: s,
     top: l
   })

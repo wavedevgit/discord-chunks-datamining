@@ -2,7 +2,7 @@
 /** chunk id: 373370, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CR: () => j,
+  CR: () => k,
   DD: () => L
 }), require("./953529.js");
 var Chunk647438 = require("./647438.js"),
@@ -373,16 +373,16 @@ function M(e) {
   }) ? 1 : (0, l.q8)(e) ? 2 : 3 * !!(0, l.Vl)(e)
 }
 
-function k(e) {
+function j(e) {
   return r.useMemo(() => M(e), [e])
 }
 
-function j(e) {
+function k(e) {
   let {
     quest: t,
     shortText: n = false
   } = e;
-  switch (k(t)) {
+  switch (j(t)) {
     case 0:
       if (t.config.features.includes(_.S7.CLOUD_GAMING_ACTIVITY)) return m.intl.string(m.t["+qoymD"]);
       if (t.config.features.includes(_.S7.START_QUEST_CTA)) return m.intl.string(n ? m.t.E4kW5O : m.t["Ie9++s"]);

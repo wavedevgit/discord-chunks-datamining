@@ -1,12 +1,13 @@
-/** Chunk was on 69432 **/
-/** chunk id: 881493, original params: t,e,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 881493, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  w: () => g
+  w: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk74538 = require("./74538.js"),
   Chunk937615 = require("./937615.js"),
@@ -15,26 +16,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk594135 = require("./594135.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704442 = require("./704442.js");
-let g = () => {
+let h = () => {
   let {
-    transitionState: t,
-    planId: e,
+    transitionState: e,
+    planId: t,
     renewalInvoice: n,
     onClose: a,
-    handleCancellation: g,
-    renewalInvoiceDetails: h,
-    fullPrice: x,
-    premiumSubscription: P
-  } = (0, Chunk594135.a)(), [C, y] = Chunk647438.useState(false), [v, T] = Chunk647438.useState(false);
+    handleCancellation: h,
+    renewalInvoiceDetails: m,
+    fullPrice: g,
+    premiumSubscription: E
+  } = (0, Chunk594135.a)(), [b, y] = Chunk647438.useState(false), [O, v] = Chunk647438.useState(false);
   if (null == require) return null;
-  let E = async () => {
-    y(true), T(false);
+  let I = async () => {
+    y(true), v(false);
     try {
-      await g(), Chunk120356()
-    } catch (t) {
-      T(true), y(false)
+      await h(), Chunk120356()
+    } catch (e) {
+      v(true), y(false)
     }
-  }, S = [{
+  }, T = [{
     text: Chunk388032.intl.string(Chunk388032.t.h9tkAK),
     onClick: () => Chunk120356(),
     variant: "secondary"
@@ -42,16 +43,16 @@ let g = () => {
     text: "".concat(Chunk388032.intl.format(Chunk388032.t.yxFzdO, {
       planPremiumType: Chunk74538.ZP.getDisplayPremiumType("".concat(exports))
     })),
-    onClick: E,
-    disabled: C,
+    onClick: I,
+    disabled: b,
     variant: "critical-primary",
-    loading: C
+    loading: b
   }];
-  if (null == h) return null;
+  if (null == m) return null;
   let {
-    intervalType: _,
-    intervalCount: N
-  } = h, j = (0, Chunk937615.og)("".concat(x), _, N);
+    intervalType: S,
+    intervalCount: A
+  } = m, C = (0, Chunk937615.og)("".concat(g), S, A);
   return (0, Chunk951288.jsxs)(Chunk793030.Modal, {
     size: "md",
     transitionState: module,
@@ -60,16 +61,16 @@ let g = () => {
     })),
     subtitle: 0 !== require.total ? Chunk388032.intl.format(Chunk388032.t.ycyeBx, {
       renewalDate: require.subscriptionPeriodStart,
-      rate: (0, Chunk937615.og)((0, Chunk937615.T4)(require.total, require.currency), _, N)
+      rate: (0, Chunk937615.og)((0, Chunk937615.T4)(require.total, require.currency), S, A)
     }) : Chunk388032.intl.format(Chunk388032.t["+y0Tjy"], {
       renewalDate: require.subscriptionPeriodStart
     }),
-    actions: S,
+    actions: T,
     onClose: async () => Chunk120356(),
     children: [(0, Chunk951288.jsxs)(Chunk811334.aO, {
       isPremiumRebrand: true,
-      className: l()({
-        [Chunk704442.hasError]: v
+      className: o()({
+        [Chunk704442.hasError]: O
       }),
       children: [(0, Chunk951288.jsx)(Chunk811334.Z9, {
         children: Chunk388032.intl.string(Chunk388032.t.iqhIp4)
@@ -77,14 +78,14 @@ let g = () => {
         label: Chunk388032.intl.formatToPlainString(Chunk388032.t.r3jVZq, {
           planName: Chunk74538.ZP.getDisplayName("".concat(exports))
         }),
-        value: "".concat(j),
+        value: "".concat(C),
         className: Chunk704442.canceled
       }), (0, Chunk951288.jsx)(Chunk811334.UN, {}), (0, Chunk951288.jsx)(Chunk42818.nd, {
-        premiumSubscription: P,
+        premiumSubscription: E,
         renewalInvoice: require,
         isUpdate: true
       })]
-    }), v ? (0, Chunk951288.jsx)(Chunk793030.M14, {
+    }), O ? (0, Chunk951288.jsx)(Chunk793030.M14, {
       type: "critical",
       children: Chunk388032.intl.string(Chunk388032.t["5mlOCW"])
     }) : null]
