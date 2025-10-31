@@ -2,7 +2,7 @@
 /** chunk id: 556809, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js");
 var Chunk147913 = require("./147913.js"),
   Chunk710845 = require("./710845.js"),
@@ -27,106 +27,107 @@ function h(e, t, n) {
 }
 let m = new Chunk710845.Z("OverlayWindowRAFManager"),
   g = window.requestAnimationFrame.bind(window),
-  E = [Chunk837268.gl.OutOfProcess, Chunk837268.gl.OutOfProcessLimitedInteraction];
+  E = new Set([Chunk837268.gl.OutOfProcess, Chunk837268.gl.OutOfProcessLimitedInteraction]),
+  b = new Set([Chunk837268.mM.OVERLAY_CRASHED, Chunk837268.mM.OVERLAY_CRASHED_DISABLED]);
 
-function b() {
-  for (let e of Object.values(Chunk371651.default.getTrackedGames()))
-    if (E.includes(module.overlayMethod) && module.state === Chunk837268.mM.OVERLAY_RENDERING) returntrue;
+function y(e) {
+  for (let t of Object.values(f.default.getTrackedGames()))
+    if (!(!E.has(t.overlayMethod) || b.has(t.state)) && (!e || t.state === u.mM.OVERLAY_RENDERING)) returntrue;
   returnfalse
 }
-let y = null,
-  O = false,
+let O = null,
   v = false,
-  I = {},
-  T = (e, t) => {
-    I[e] = t
+  I = false,
+  T = {},
+  S = (e, t) => {
+    T[e] = t
   },
-  S = e => {
-    delete I[e]
+  A = e => {
+    delete T[e]
   },
-  A = () => {
-    I = {}
+  C = () => {
+    T = {}
   },
-  C = () => Object.entries(I).map(e => {
+  N = () => Object.entries(T).map(e => {
     let [t, n] = e;
     return {
       timeoutId: Number(t),
       callback: n
     }
   }),
-  N = e => {
+  R = e => {
     try {
       let t = a.Z.getWindow(p.$J);
-      if (null == t || "function" != typeof t.requestAnimationFrame) return y = "OverlayNotAvailable", g(e);
-      if (!v) return y = "MainWindowFocused", g(e);
-      if (!b()) return y = "NoOverlayRendering", g(e);
+      if (null == t || "function" != typeof t.requestAnimationFrame) return O = "OverlayNotAvailable", g(e);
+      if (!I) return O = "MainWindowFocused", g(e);
+      if (!y(true)) return O = "NoOverlayRendering", g(e);
       let n = null !== _.Z.getFocusedRunningGame(),
         r = o.Z.isFocused((0, l.ZY)(t));
       if (o.Z.isFocused() && m.error("Main window is reported as focused when it should not be!"), n || r) {
-        y = n ? "OverlayGameFocused" : "OverlayWindowFocused";
+        O = n ? "OverlayGameFocused" : "OverlayWindowFocused";
         let r = t.requestAnimationFrame(t => {
-          S(r), e(t)
+          A(r), e(t)
         });
-        return T(r, e), r
+        return S(r, e), r
       }
     } catch (e) {
       m.error("RAF redirect failed, falling back to original. Cause:", e), (0, c.D1)(e, f.default.getOverlayMethod((0, s.getPID)()))
     }
-    return y = "None", g(e)
+    return O = "None", g(e)
   };
 
-function R() {
+function P() {
   return !Chunk451478.Z.isFocused() || !Chunk451478.Z.isVisible()
 }
 
-function P() {
+function w() {
   let e = Chunk522474.Z.getWindow(Chunk501787.$J),
     t = null != module && "function" == typeof module.cancelAnimationFrame;
-  C().forEach(n => {
+  N().forEach(n => {
     let {
       timeoutId: r,
       callback: i
     } = n;
     t && e.cancelAnimationFrame(r), g(i)
-  }), A()
+  }), C()
 }
 
-function w(e) {
-  if (e === v) return;
-  let t = !e && v;
-  v = e, t && P()
+function D(e) {
+  if (e === I) return;
+  let t = !e && I;
+  I = e, t && w()
 }
-class D extends Chunk147913.Z {
+class x extends Chunk147913.Z {
   _initialize() {
-    w(R())
+    D(P())
   }
   _terminate() {
     window.requestAnimationFrame = g
   }
   getLastRAFCallbackReason() {
-    return y
+    return O
   }
   handleUpdateOverlayMethod() {
     let {
       enabled: e
     } = (0, Chunk32300.td)("OverlayWindowRAFManager");
     if (!(!module || __OVERLAY__)) {
-      if (!O && !b()) {
-        window.requestAnimationFrame = g, y = "NoOverlayRendering", P();
+      if (!v && !y(false)) {
+        window.requestAnimationFrame = g, O = "NoOverlayRendering", w();
         return
       }
-      m.info("Patching window RAF to use overlay window"), window.requestAnimationFrame = N
+      m.info("Patching window RAF to use overlay window"), window.requestAnimationFrame = R
     }
   }
   handleWindowStateChage() {
-    w(R())
+    D(P())
   }
   handleOverlayRenderDebugMode(e) {
     let {
       enabled: t,
       mode: n
     } = e;
-    n === u.GO.OverlayRafManagerForceEnabled && (O = t, t ? window.requestAnimationFrame = N : v || (window.requestAnimationFrame = g, P()))
+    n === u.GO.OverlayRafManagerForceEnabled && (v = t, t ? window.requestAnimationFrame = R : I || (window.requestAnimationFrame = g, w()))
   }
   constructor(...e) {
     super(...e), h(this, "actions", {
@@ -137,4 +138,4 @@ class D extends Chunk147913.Z {
     })
   }
 }
-let x = new D
+let L = new x

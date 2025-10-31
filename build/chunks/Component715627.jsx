@@ -1,5 +1,5 @@
 /** Chunk was on 38029 **/
-/** chunk id: 715627, original params: t,e,n (module,exports,require) **/
+/** chunk id: 715627, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 }), require("./388685.js");
@@ -14,15 +14,15 @@ let o = {
     yMin: false,
     yMax: false
   },
-  c = (t, e, n) => null == n ? e : t * n / 100,
-  u = Chunk647438.memo(function(t) {
+  c = (e, t, n) => null == n ? t : e * n / 100,
+  u = Chunk647438.memo(function(e) {
     let {
-      confettiTarget: e,
+      confettiTarget: t,
       colors: n,
       emojiURL: u,
       numBursts: d,
-      particlesPerBurst: p,
-      offsetXPercentageMax: f,
+      particlesPerBurst: f,
+      offsetXPercentageMax: p,
       offsetXPercentageMin: h,
       offsetYPercentageMax: m,
       offsetYPercentageMin: g,
@@ -30,63 +30,63 @@ let o = {
       speedValues: y = o,
       dragCoefficientValue: O = 1.66,
       onAnimationEnd: j
-    } = t, [v, P] = r.useState(null), {
+    } = e, [P, v] = i.useState(null), {
       confettiCanvas: x
-    } = r.useContext(l.h), S = (0, s.uR)(null != b ? b : x, v), [w, _] = r.useState(false);
-    r.useEffect(() => {
+    } = i.useContext(l.h), S = (0, s.uR)(null != b ? b : x, P), [w, _] = i.useState(false);
+    i.useEffect(() => {
       w && (null == j || j())
     });
-    let Z = r.useMemo(() => {
+    let Z = i.useMemo(() => {
       if (null != u) return [{
         src: u,
         colorize: false
       }]
     }, [u]);
-    return r.useEffect(() => {
-      if (null == e) return;
-      let t = Array(null != d ? d : 4).fill(0);
-      return t = t.map((n, i) => setTimeout(() => {
-        S.createMultipleConfetti(function(t, e, n, i, r) {
+    return i.useEffect(() => {
+      if (null == t) return;
+      let e = Array(null != d ? d : 4).fill(0);
+      return e = e.map((n, r) => setTimeout(() => {
+        S.createMultipleConfetti(function(e, t, n, r, i) {
           var s, l;
           let u = arguments.length > 5 && true !== arguments[5] ? arguments[5] : o,
             d = arguments.length > 6 && true !== arguments[6] ? arguments[6] : 1.66,
-            p = c(t.width, 100, n),
-            f = c(t.height, 75, r),
-            h = c(t.width, 350, e),
-            m = c(t.height, 75, i),
+            f = c(e.width, 100, n),
+            p = c(e.height, 75, i),
+            h = c(e.width, 350, t),
+            m = c(e.height, 75, r),
             {
               xMin: g,
               xMax: b,
               yMin: y,
               yMax: O
             } = u;
-          return s = function(t) {
-            for (var e = 1; e < arguments.length; e++) {
-              var n = null != arguments[e] ? arguments[e] : {},
-                i = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-                return Object.getOwnPropertyDescriptor(n, t).enumerable
-              }))), i.forEach(function(e) {
-                var i;
-                i = n[e], e in t ? Object.defineProperty(t, e, {
-                  value: i,
+          return s = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : t[e] = i
+                }) : e[t] = r
               })
             }
-            return t
+            return e
           }({}, a.We), l = l = {
             position: {
               type: "static-random",
               minValue: {
-                x: t.left + p,
-                y: t.top + f
+                x: e.left + f,
+                y: e.top + p
               },
               maxValue: {
-                x: t.left + h,
-                y: t.top + m
+                x: e.left + h,
+                y: e.top + m
               }
             },
             velocity: {
@@ -109,22 +109,22 @@ let o = {
               type: "static",
               value: d
             }
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(l)) : (function(t, e) {
-            var n = Object.keys(t);
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+            var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var i = Object.getOwnPropertySymbols(t);
-              n.push.apply(n, i)
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
             }
             return n
-          })(Object(l)).forEach(function(t) {
-            Object.defineProperty(s, t, Object.getOwnPropertyDescriptor(l, t))
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(l, e))
           }), s
-        }(e.getBoundingClientRect(), f, h, m, g, y, O), null != p ? p : 50), i === t.length - 1 && null != j && _(true)
-      }, 60 * i)), () => {
-        for (let e of t) clearTimeout(e)
+        }(t.getBoundingClientRect(), p, h, m, g, y, O), null != f ? f : 50), r === e.length - 1 && null != j && _(true)
+      }, 60 * r)), () => {
+        for (let t of e) clearTimeout(t)
       }
-    }, [S, e, d, p, f, h, m, g, y, O, j]), (0, i.jsx)(s.Ji, {
-      ref: P,
+    }, [S, t, d, f, p, h, m, g, y, O, j]), (0, r.jsx)(s.Ji, {
+      ref: v,
       sprites: null != Z ? Z : a.CA,
       colors: null != n ? n : a.Br,
       spriteWidth: a.Ko,
