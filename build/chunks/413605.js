@@ -8,7 +8,7 @@ require.d(exports, {
   VR: () => f,
   W6: () => l,
   wx: () => Chunk245335.wx
-}), require("./749958.js"), require("./997431.js");
+}), require("./997431.js");
 var Chunk924301 = require("./924301.js"),
   Chunk131704 = require("./131704.js"),
   Chunk245335 = require("./245335.js");

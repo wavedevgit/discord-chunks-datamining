@@ -367,7 +367,8 @@ class q extends Chunk647438.Component {
       if (null != o && (0, v.K$)(o) && null != s) return void(0, I.L)({
         sku: o,
         giftCode: s,
-        channelContext: t
+        channelContext: t,
+        customGiftMessage: l
       });
       (0, b.V)({
         processedCode: n,

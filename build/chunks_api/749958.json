@@ -1,1 +1,0 @@
-{"id":"749958","type":"experiment","data":{"kind":"user","id":"2025-07_guild_profile_invite_embed_holdout_two","label":"Holdout for guild profile invite embeds","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Guild profile invite embed holdout","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

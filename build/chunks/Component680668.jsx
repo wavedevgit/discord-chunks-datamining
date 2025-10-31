@@ -164,12 +164,15 @@ function T(e) {
           onClick: J,
           children: S
         })]
-      }), (0, r.jsx)(s.Button, {
-        onClick: $,
-        loading: U,
-        variant: "active",
-        fullWidth: F,
-        text: F ? V ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.gpqgah) : B ? y.intl.string(y.t.cEnaWx) : y.intl.string(y.t.XpeFYr)
+      }), (0, r.jsx)("div", {
+        className: O.buttonContainer,
+        children: (0, r.jsx)(s.Button, {
+          onClick: $,
+          loading: U,
+          variant: "active",
+          fullWidth: F,
+          text: F ? V ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.gpqgah) : B ? y.intl.string(y.t.cEnaWx) : y.intl.string(y.t.XpeFYr)
+        })
       })]
     }), P.features.has(b.GuildFeatures.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {

@@ -200,7 +200,7 @@ function j(e) {
           className: w.giftPreview,
           isSelected: true,
           shouldDisplayHeader: true,
-          hideProfilePreview: M === R.Wt.DM_CHANNEL_WISHLIST
+          hideProfilePreview: true
         }), (0, r.jsx)(G, {
           handleClose: n,
           selectedSkuId: B

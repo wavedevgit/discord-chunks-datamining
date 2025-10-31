@@ -50,7 +50,8 @@ let c = "social-layer-storefront-gift-code-claim-modal",
     let {
       sku: t,
       giftCode: a,
-      channelContext: s
+      channelContext: s,
+      customGiftMessage: u
     } = e;
     (0, i.ZDy)(async () => {
       let {
@@ -59,7 +60,8 @@ let c = "social-layer-storefront-gift-code-claim-modal",
       return n => (0, r.jsx)(e, l(o({}, n), {
         sku: t,
         giftCode: a,
-        channelContext: s
+        channelContext: s,
+        customGiftMessage: u
       }))
     }, {
       modalKey: c
