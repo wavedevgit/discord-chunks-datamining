@@ -49,7 +49,7 @@ let Z = e => {
 
 function _(e) {
   let {
-    surface: t = E.Y.PROFILE_MODAL
+    surface: t = k.Y.PROFILE_MODAL
   } = e, r = i.useRef(null), l = i.useRef(null);
   return (0, n.jsx)("div", {
     ref: r,
@@ -57,8 +57,8 @@ function _(e) {
     children: (0, n.jsx)("div", {
       ref: l,
       className: s()(T.card, T.placeholderCard, {
-        [T.smallCard]: t === E.Y.GIFTING_FLOW,
-        [T.largeCard]: t === E.Y.PROFILE_MODAL
+        [T.smallCard]: t === k.Y.GIFTING_FLOW,
+        [T.largeCard]: t === k.Y.PROFILE_MODAL
       }),
       children: (0, n.jsx)("div", {
         className: T.cardPreview,
@@ -115,9 +115,10 @@ function F(e) {
       profileOwner: l,
       showIcons: s = false,
       source: L = v.lr.WISHLIST,
-      giftingOrigin: Z = N.Wt.USER_PROFILE_WISHLIST
+      giftingOrigin: Z = N.Wt.USER_PROFILE_WISHLIST,
+      onWishlistItemClick: _
     } = e,
-    _ = function(e, t) {
+    R = function(e, t) {
       if (null == e) return {};
       var r, n, i = function(e, t) {
         if (null == e) return {};
@@ -131,38 +132,38 @@ function F(e) {
         for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
       return i
-    }(e, ["profileOwner", "showIcons", "source", "giftingOrigin"]);
+    }(e, ["profileOwner", "showIcons", "source", "giftingOrigin", "onWishlistItemClick"]);
   let {
-    item: R,
-    isOwner: F
-  } = _, {
-    analyticsLocations: A
-  } = (0, p.ZP)(), G = (0, a.TH)(), D = i.useRef(null), {
-    isHoveringOrFocusing: W
-  } = (0, b.Z)(D), [H] = (0, u.Wu)([P.Z], () => [P.Z.hasSentGift(R.skuId, l.id)], [R.skuId, l.id]), M = H || true === R.isOwned, U = R.collectiblesItem.type, z = (() => {
-    switch (U) {
+    item: F,
+    isOwner: A
+  } = R, {
+    analyticsLocations: G
+  } = (0, p.ZP)(), D = (0, a.TH)(), W = i.useRef(null), {
+    isHoveringOrFocusing: H
+  } = (0, b.Z)(W), [M] = (0, u.Wu)([P.Z], () => [P.Z.hasSentGift(F.skuId, l.id)], [F.skuId, l.id]), U = M || true === F.isOwned, z = F.collectiblesItem.type, B = (() => {
+    switch (z) {
       case o.Z.AVATAR_DECORATION:
         return C.intl.formatToPlainString(C.t.IQQYef, {
-          itemName: R.skuName
+          itemName: F.skuName
         });
       case o.Z.PROFILE_EFFECT:
         return C.intl.formatToPlainString(C.t["x/MGWy"], {
-          itemName: R.skuName
+          itemName: F.skuName
         });
       case o.Z.NAMEPLATE:
         return C.intl.formatToPlainString(C.t.eVNt6E, {
-          itemName: R.skuName
+          itemName: F.skuName
         });
       default:
-        (0, w.vE)(U)
+        (0, w.vE)(z)
     }
-  })(), B = F || M ? C.intl.string(C.t.FdGl5A) : C.intl.string(C.t.ilhtIa), Y = F || M ? true : f.OgN, V = i.useCallback(() => {
-    let e = G.pathname.startsWith(k.Z5c.COLLECTIBLES_SHOP);
-    if (F || M) {
-      let t = !F && M;
+  })(), Y = A || U ? C.intl.string(C.t.FdGl5A) : C.intl.string(C.t.ilhtIa), V = A || U ? true : f.OgN, q = i.useCallback(() => {
+    let e = D.pathname.startsWith(E.Z5c.COLLECTIBLES_SHOP);
+    if (A || U) {
+      let t = !A && U;
       if (e) {
-        let e = O.Z.getProduct(R.skuId),
-          r = O.Z.getCategoryForProduct(R.skuId);
+        let e = O.Z.getProduct(F.skuId),
+          r = O.Z.getCategoryForProduct(F.skuId);
         if (null != e && null != r) {
           t || (0, S.closeUserProfileModal)(), (0, g.T)({
             product: e,
@@ -170,7 +171,7 @@ function F(e) {
             shouldCheckoutWithOrbs: (0, h.oQ)({
               product: e
             }),
-            analyticsLocations: A,
+            analyticsLocations: G,
             analyticsSource: m.Z.USER_PROFILE_WISHLIST,
             returnRef: true,
             tab: true
@@ -178,16 +179,16 @@ function F(e) {
           return
         }
       }
-      t || (0, S.closeUserProfileModal)(), (0, j.uL)("".concat(k.Z5c.COLLECTIBLES_SHOP, "#itemSkuId=").concat(R.skuId))
-    } else(0, I.Z)({
-      skuId: R.skuId,
+      t || (0, S.closeUserProfileModal)(), (0, j.uL)("".concat(E.Z5c.COLLECTIBLES_SHOP, "#itemSkuId=").concat(F.skuId))
+    } else null == _ || _(), (0, I.Z)({
+      skuId: F.skuId,
       isGift: true,
       giftingOrigin: Z,
-      analyticsLocations: A,
+      analyticsLocations: G,
       giftRecipient: l,
       variantsReturnStyle: c.v.VARIANTS_GROUP
     })
-  }, [G.pathname, R.skuId, A, F, M, l, Z]), q = i.useCallback(() => s ? L === v.lr.WISHLIST ? (0, n.jsx)("div", {
+  }, [D.pathname, F.skuId, G, A, U, l, Z, _]), K = i.useCallback(() => s ? L === v.lr.WISHLIST ? (0, n.jsx)("div", {
     className: T.itemIcon,
     children: (0, n.jsx)(d.u, {
       text: C.intl.formatToPlainString(C.t.p3RmJF, {
@@ -215,13 +216,13 @@ function F(e) {
         colorClass: T.itemIconShop
       })
     })
-  }) : null : null, [s, L, l]), K = i.useCallback(() => (0, n.jsx)(x.Z, {
-    item: R,
+  }) : null : null, [s, L, l]), Q = i.useCallback(() => (0, n.jsx)(x.Z, {
+    item: F,
     profileOwner: l,
-    isHighlighted: W,
-    surface: _.surface
-  }), [R, l, W, _.surface]);
-  return (0, n.jsx)(E.Z, (t = function(e) {
+    isHighlighted: H,
+    surface: R.surface
+  }), [F, l, H, R.surface]);
+  return (0, n.jsx)(k.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -238,15 +239,15 @@ function F(e) {
       })
     }
     return e
-  }({}, _), r = r = {
-    cardRef: D,
-    accessibleLabel: z,
-    onCardClick: V,
-    buttonCTALabel: B,
-    buttonIcon: Y,
-    isOwned: M,
-    renderItemPreview: K,
-    renderSourceIcon: q
+  }({}, R), r = r = {
+    cardRef: W,
+    accessibleLabel: B,
+    onCardClick: q,
+    buttonCTALabel: Y,
+    buttonIcon: V,
+    isOwned: U,
+    renderItemPreview: Q,
+    renderSourceIcon: K
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

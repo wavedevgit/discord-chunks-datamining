@@ -149,7 +149,8 @@ function v(e) {
         isGift: i,
         priceOptions: s,
         showPromotionalGiftBanner: d,
-        giftRecipient: m
+        giftRecipient: m,
+        onWishlistItemClick: n
       }) : (0, r.jsx)(C.ZP, {
         onSelectSku: e => t((0, p.Wz)(e)),
         isGift: i,

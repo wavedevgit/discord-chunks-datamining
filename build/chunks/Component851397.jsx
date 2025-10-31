@@ -43,15 +43,15 @@ function I(e) {
   let {
     item: v,
     isOwner: w
-  } = P, y = v.sku, S = y.applicationId, x = (0, o.q)(S), E = i.useRef(null), [k] = (0, l.Wu)([f.Z], () => [f.Z.hasSentGift(v.skuId, I.id)], [v.skuId, I.id]), N = v.skuName, C = w ? h.intl.string(h.t.FdGl5A) : h.intl.string(h.t.ilhtIa), T = w ? true : a.OgN, L = i.useCallback(() => {
+  } = P, y = v.sku, S = y.applicationId, x = (0, o.q)(S), k = i.useRef(null), [E] = (0, l.Wu)([f.Z], () => [f.Z.hasSentGift(v.skuId, I.id)], [v.skuId, I.id]), N = v.skuName, C = w ? h.intl.string(h.t.FdGl5A) : h.intl.string(h.t.ilhtIa), T = w ? true : a.OgN, L = i.useCallback(() => {
     if (w && (null == x ? true : x.guildId) != null)(0, u.closeUserProfileModal)(), (0, c.uL)(g.Z5c.CHANNELS_GAME_SHOP(x.guildId, 0, v.skuId, y.slug));
     else {
-      if (k) return;
+      if (E) return;
       (0, p.P)(y, {
         isGift: true
       })
     }
-  }, [w, null == x ? true : x.guildId, v.skuId, y, k]), Z = i.useCallback(() => j ? (0, n.jsx)("div", {
+  }, [w, null == x ? true : x.guildId, v.skuId, y, E]), Z = i.useCallback(() => j ? (0, n.jsx)("div", {
     className: b.itemIcon,
     children: (0, n.jsx)(s.u, {
       text: h.intl.formatToPlainString(h.t.p3RmJF, {
@@ -91,12 +91,12 @@ function I(e) {
     }
     return e
   }({}, P), r = r = {
-    cardRef: E,
+    cardRef: k,
     accessibleLabel: N,
     onCardClick: L,
     buttonCTALabel: C,
     buttonIcon: T,
-    isOwned: k,
+    isOwned: E,
     renderItemPreview: _,
     renderSourceIcon: Z
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

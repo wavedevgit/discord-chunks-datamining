@@ -34,7 +34,7 @@ function I(e) {
     buttonIcon: w,
     isOwned: y = false,
     renderSourceIcon: S
-  } = e, x = l.useRef(null), E = l.useRef(null), k = null != b ? b : E, {
+  } = e, x = l.useRef(null), k = l.useRef(null), E = null != b ? b : k, {
     analyticsLocations: N
   } = (0, u.ZP)(), C = n && true === t.isOwned && null != t.gifterUserId, T = null != t.gifterUserId ? d.default.getUser(t.gifterUserId) : null, L = null != T ? f.ZP.getName(T) : null, Z = C && null != T && null != L && "" !== L, _ = Z ? (0, i.jsx)(c.qEK, {
     src: T.getAvatarURL(true, 48),
@@ -54,7 +54,7 @@ function I(e) {
     className: h.overlay,
     children: (0, i.jsx)(c.Button, {
       focusProps: {
-        ringTarget: k
+        ringTarget: E
       },
       variant: "primary",
       size: "sm",
@@ -76,7 +76,7 @@ function I(e) {
     ref: x,
     className: h.container,
     children: [(0, i.jsxs)("div", {
-      ref: k,
+      ref: E,
       className: a()(h.card, {
         [h.isOwned]: y,
         [h.smallCard]: "gifting_flow" === s,
@@ -93,7 +93,7 @@ function I(e) {
       }), y && R, "profile_modal" === s ? F : (0, i.jsx)(c.P3F, {
         "aria-label": v,
         focusProps: {
-          ringTarget: k
+          ringTarget: E
         },
         onClick: e => {
           e.stopPropagation(), A()

@@ -197,13 +197,17 @@ function j(e) {
         }), ee(), null != e && null != B && (0, r.jsx)(d.Z, {
           skuId: B,
           price: e,
-          className: w.giftPreview,
+          className: w.wishlistGiftPreview,
+          previewHeaderClassName: w.wishlistGiftPreviewHeader,
           isSelected: true,
           shouldDisplayHeader: true,
           hideProfilePreview: true
-        }), (0, r.jsx)(G, {
-          handleClose: n,
-          selectedSkuId: B
+        }), (0, r.jsx)("div", {
+          className: w.wishlistGiftPreviewFooter,
+          children: (0, r.jsx)(G, {
+            handleClose: n,
+            selectedSkuId: B
+          })
         })]
       }) : (0, r.jsxs)("div", {
         className: w.bodyColumnRight,
