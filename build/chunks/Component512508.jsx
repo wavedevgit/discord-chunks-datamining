@@ -207,8 +207,8 @@ function k(e) {
     }), t.forEach(e => {
       e in n && (r[e] = I(n[e]))
     }), r
-  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(g), [g]), [y, Z] = l.useState(""), [R, M] = l.useState(false), [E, k] = l.useState(false), [A, U] = l.useState(false), B = l.useRef(null), {
-    sections: F,
+  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(g), [g]), [y, Z] = l.useState(""), [R, M] = l.useState(false), [E, k] = l.useState(false), [A, U] = l.useState(false), F = l.useRef(null), {
+    sections: B,
     sectionCounts: q
   } = l.useMemo(() => {
     let e = "" !== y ? i.filter(e => s()(y, e.display.toLocaleLowerCase())) : i,
@@ -252,7 +252,7 @@ function k(e) {
       let t = _({}, g);
       P(e) ? t[e.id] = V(e.record) : L(e) && (t[e.id] = I(e.record)), G(t), Z(""), z(), setTimeout(() => {
         var e;
-        let t = null == (e = B.current) ? true : e.containerRef.current,
+        let t = null == (e = F.current) ? true : e.containerRef.current,
           n = null == t ? true : t.firstChild;
         null != n && n.scrollTo({
           top: n.scrollHeight,
@@ -264,7 +264,7 @@ function k(e) {
       let {
         section: n,
         row: l
-      } = e, i = F[n][l];
+      } = e, i = B[n][l];
       return (0, r.jsx)(u.P3F, {
         className: o()(H.selectableSearchRow, H.rowHeight),
         onClick: e => {
@@ -275,7 +275,7 @@ function k(e) {
           children: T(i, t, H.searchRowLabel)
         })
       }, i.id)
-    }, [t, Q, F]),
+    }, [t, Q, B]),
     K = l.useMemo(() => v.map(e => {
       var n;
       return n = g[e], w(_({}, n.tag), {
@@ -291,7 +291,7 @@ function k(e) {
         maxHeight: 98,
         size: d.Z.Sizes.MEDIUM,
         query: y,
-        ref: B,
+        ref: F,
         onRemoveTag: e => {
           let t = v[e],
             {

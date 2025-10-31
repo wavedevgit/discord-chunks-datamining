@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 700483, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => ep
+  Z: () => eh
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -51,54 +51,55 @@ var Chunk951288 = require("./951288.js"),
   Chunk485287 = require("./485287.js"),
   Chunk754277 = require("./754277.js"),
   Chunk719100 = require("./719100.js"),
+  Chunk923083 = require("./923083.js"),
   Chunk184805 = require("./184805.js"),
+  Chunk647767 = require("./647767.js"),
   Chunk643632 = require("./643632.js"),
   Chunk270295 = require("./270295.js"),
-  Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk769265 = require("./769265.js");
 
-function ei(e) {
+function el(e) {
   let {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, c.ZP)(), i = (0, X.Z)(t.id), [s, o] = (0, $.Z)(t), d = (0, l.e7)([M.Z], () => M.Z.can(ee.Plq.REQUEST_TO_SPEAK, t));
+  } = (0, c.ZP)(), i = (0, J.Z)(t.id), [l, s] = (0, et.Z)(t), o = (0, X._)(t);
   return i ? null : (0, r.jsx)(N.d, {
     isTrayButton: true,
-    isActive: s,
-    label: s ? en.intl.string(en.t.GCimTk) : d ? en.intl.string(en.t.hLbG5N) : en.intl.string(en.t.e4WMvx),
+    isActive: l,
+    label: l ? er.intl.string(er.t.GCimTk) : o ? er.intl.string(er.t.hLbG5N) : er.intl.string(er.t.e4WMvx),
     iconComponent: a.V9,
     onClick: () => {
-      (0, f.v)(n, f.d.REQUEST_TO_SPEAK, !s), o()
+      (0, f.v)(n, f.d.REQUEST_TO_SPEAK, !l), s()
     },
-    color: s ? "green" : true,
-    disabled: !d && !s
+    color: l ? "green" : true,
+    disabled: !o && !l
   })
 }
-let el = Chunk647438.memo(function(e) {
+let ea = Chunk647438.memo(function(e) {
   let {
     channel: t
   } = e, n = (0, l.e7)([k.Z], () => k.Z.getVoiceChannelId() === t.id, [t.id]);
   return (0, r.jsxs)("div", {
-    className: er.container,
+    className: ei.container,
     children: [(0, r.jsxs)("div", {
-      className: er.buttonSection,
-      children: [(0, r.jsx)(ec, {
+      className: ei.buttonSection,
+      children: [(0, r.jsx)(ed, {
         channelId: t.id
-      }), n ? (0, r.jsx)(ei, {
+      }), n ? (0, r.jsx)(el, {
         channel: t
       }) : null, (0, r.jsx)(Z.Z, {
         channel: t
       })]
-    }), (0, r.jsx)(es, {
+    }), (0, r.jsx)(eo, {
       channel: t
     })]
   })
 });
 
-function ea(e) {
+function es(e) {
   let {
     channel: t
   } = e, {
@@ -110,11 +111,11 @@ function ea(e) {
       (0, H.RK)(t, false), (0, f.v)(n, f.d.SPEAK_ON_STAGE)
     },
     iconComponent: a.Lrb,
-    label: en.intl.string(en.t["8Joh+p"])
+    label: er.intl.string(er.t["8Joh+p"])
   })
 }
 
-function es(e) {
+function eo(e) {
   let {
     channel: t,
     onSelect: n
@@ -122,7 +123,7 @@ function es(e) {
     canManageGuildEvent: u
   } = (0, j.XJ)(t), p = (0, l.e7)([z.Z], () => z.Z.getStageInstanceByChannel(t.id), [t.id]), h = (0, l.e7)([_.ZP], () => _.ZP.getGuildScheduledEvent(null == p ? true : p.guild_scheduled_event_id)), {
     suppress: m
-  } = (0, S.Z)(t), b = D.default.getId(), [y] = (0, $.Z)(t), x = V.ZP.isModerator(b, t.id), v = (0, F.B)(t.id), C = u(h), {
+  } = (0, S.Z)(t), b = D.default.getId(), [y] = (0, et.Z)(t), x = V.ZP.isModerator(b, t.id), v = (0, F.B)(t.id), C = u(h), {
     parentAnalyticsLocation: I
   } = (0, c.ZP)(), E = i.useRef(null), Z = () => (function(e) {
     let {
@@ -144,17 +145,17 @@ function es(e) {
       return (0, r.jsx)(T.Z, {
         children: (0, r.jsx)(a.v2r, {
           navId: "exit-options",
-          "aria-label": en.intl.string(en.t["3Uj+2p"]),
+          "aria-label": er.intl.string(er.t["3Uj+2p"]),
           onClose: i,
           onSelect: n,
           onInteraction: (0, g.u)("End Stage", I, {
-            entrypoint: et.A5.CARET
+            entrypoint: en.A5.CARET
           }),
           children: (0, r.jsx)(a.sNh, {
             id: "end-stage",
             color: "danger",
             action: () => (0, G.Ev)(t, d),
-            label: en.intl.string(en.t["Fmx5y/"]),
+            label: er.intl.string(er.t["Fmx5y/"]),
             icon: a.k$p
           })
         })
@@ -172,22 +173,22 @@ function es(e) {
       } = t;
       return (0, r.jsx)(R.Z, {
         ref: E,
-        label: en.intl.string(en.t.c6qKwr),
+        label: er.intl.string(er.t.c6qKwr),
         onClick: Z,
         onPopoutClick: n,
         popoutOpen: i
       })
     }
   }) : m && !v || y ? (0, r.jsx)(R.Z, {
-    label: en.intl.string(en.t.SMKyih),
+    label: er.intl.string(er.t.SMKyih),
     onClick: Z
   }) : (0, r.jsx)(R.Z, {
-    label: en.intl.string(en.t.c6qKwr),
+    label: er.intl.string(er.t.c6qKwr),
     onClick: Z
   })
 }
 
-function eo(e) {
+function ec(e) {
   let {
     channel: t
   } = e, {
@@ -196,14 +197,14 @@ function eo(e) {
   return (0, r.jsx)(N.d, {
     isTrayButton: true,
     iconComponent: a.zRq,
-    label: en.intl.string(en.t.ezLpY6),
+    label: er.intl.string(er.t.ezLpY6),
     onClick: () => {
       (0, f.v)(n, f.d.MOVE_TO_AUDIENCE), (0, H.yi)(t)
     }
   })
 }
 
-function ec(e) {
+function ed(e) {
   let {
     channelId: t
   } = e, {
@@ -212,7 +213,7 @@ function ec(e) {
   return s ? (0, r.jsx)(N.d, {
     isTrayButton: true,
     isActive: !i,
-    label: i ? en.intl.string(en.t.ScHlfl) : en.intl.string(en.t.zqxfrf),
+    label: i ? er.intl.string(er.t.ScHlfl) : er.intl.string(er.t.zqxfrf),
     iconComponent: i ? a.xjP : a.RZG,
     color: i ? true : "green",
     onClick: () => {
@@ -221,7 +222,7 @@ function ec(e) {
   }) : (0, r.jsx)(N.d, {
     isTrayButton: true,
     isActive: o,
-    label: o ? en.intl.string(en.t.zqxfrf) : en.intl.string(en.t.ScHlfl),
+    label: o ? er.intl.string(er.t.zqxfrf) : er.intl.string(er.t.ScHlfl),
     iconComponent: o ? a.RZG : a.xjP,
     color: o ? "green" : true,
     onClick: () => {
@@ -229,7 +230,7 @@ function ec(e) {
     }
   })
 }
-let ed = Chunk647438.memo(function(e) {
+let eu = Chunk647438.memo(function(e) {
   let {
     channel: t
   } = e, {
@@ -238,18 +239,18 @@ let ed = Chunk647438.memo(function(e) {
     suppress: s,
     selfMute: o,
     mute: f
-  } = (0, S.Z)(t), _ = (0, F.B)(t.id), y = (0, l.e7)([m.default], () => null != m.default.getAwaitingRemoteSessionInfo()), {
-    cameraUnavailable: x,
-    enabled: O
-  } = (0, v.Z)(), j = (0, I.Z)(t), {
-    limit: N,
-    reachedLimit: R
-  } = (0, C.Z)(t), D = (0, l.e7)([U.default], () => U.default.getCurrentUser()), M = (0, l.e7)([L.Z], () => (0, b.Z)(L.Z)), G = (0, l.e7)([k.Z], () => k.Z.getVoiceChannelId() === t.id, [t.id]), H = (0, l.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, W.PK)(t.id), V = N > 0, z = R && !B || null != H && H.user.id !== (null == D ? true : D.id), Y = (0, g.u)("AudioDeviceMenu", n, {
-    entrypoint: et.A5.CARET
-  }), q = i.useRef(null), K = i.useRef(null);
-  if (null == D) return null;
-  let Q = (0, r.jsx)(a.yRy, {
-    targetElementRef: q,
+  } = (0, S.Z)(t), _ = (0, F.B)(t.id), y = (0, J.Z)(t.id), x = (0, l.e7)([m.default], () => null != m.default.getAwaitingRemoteSessionInfo()), {
+    cameraUnavailable: O,
+    enabled: j
+  } = (0, v.Z)(), N = (0, I.Z)(t), {
+    limit: R,
+    reachedLimit: D
+  } = (0, C.Z)(t), M = (0, l.e7)([U.default], () => U.default.getCurrentUser()), G = (0, l.e7)([L.Z], () => (0, b.Z)(L.Z)), H = (0, l.e7)([k.Z], () => k.Z.getVoiceChannelId() === t.id, [t.id]), B = (0, l.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), V = (0, W.PK)(t.id), z = R > 0, Y = D && !V || null != B && B.user.id !== (null == M ? true : M.id), q = (0, g.u)("AudioDeviceMenu", n, {
+    entrypoint: en.A5.CARET
+  }), K = i.useRef(null), Q = i.useRef(null);
+  if (null == M) return null;
+  let X = (0, r.jsx)(a.yRy, {
+    targetElementRef: K,
     renderPopout: e => {
       let {
         closePopout: t
@@ -259,7 +260,7 @@ let ed = Chunk647438.memo(function(e) {
           onClose: t,
           minimal: true,
           onInteraction: (0, g.u)("VideoDeviceMenu", n, {
-            entrypoint: et.A5.CARET
+            entrypoint: en.A5.CARET
           })
         })
       })
@@ -275,26 +276,26 @@ let ed = Chunk647438.memo(function(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(A.C, {
-        ref: q,
+        ref: K,
         centerButton: true,
-        hasPermission: j,
-        enabled: O,
-        cameraUnavailable: x,
+        hasPermission: N,
+        enabled: j,
+        cameraUnavailable: O,
         onChange: E.r,
         onCameraUnavailable: P.Z,
-        channelLimitReached: R,
-        channelLimit: N,
+        channelLimitReached: D,
+        channelLimit: R,
         popoutOpen: i,
         onPopoutClick: n
       })
     }
   });
   return (0, r.jsxs)("div", {
-    className: er.wrapper,
-    children: [G && !s ? (0, r.jsxs)("div", {
-      className: er.buttonSection,
+    className: ei.wrapper,
+    children: [H && !s ? (0, r.jsxs)("div", {
+      className: ei.buttonSection,
       children: [(0, r.jsx)(a.yRy, {
-        targetElementRef: K,
+        targetElementRef: Q,
         renderPopout: e => {
           let {
             closePopout: t
@@ -309,7 +310,7 @@ let ed = Chunk647438.memo(function(e) {
               renderOutputVolume: true,
               renderDeafen: true,
               minimal: true,
-              onInteraction: Y
+              onInteraction: q
             })
           })
         },
@@ -324,7 +325,7 @@ let ed = Chunk647438.memo(function(e) {
             isShown: i
           } = t;
           return (0, r.jsx)(w.Z, {
-            ref: K,
+            ref: Q,
             centerButton: true,
             onPopoutClick: n,
             selfMute: o,
@@ -332,77 +333,77 @@ let ed = Chunk647438.memo(function(e) {
             suppress: s,
             popoutOpen: i,
             onClick: () => (0, h.Z)(f, s, "Stage Channel Controls"),
-            awaitingRemote: y
+            awaitingRemote: x
           })
         }
-      }), V && Q]
+      }), z && X]
     }) : null, (0, r.jsxs)("div", {
-      className: er.buttonSection,
-      children: [G && !s && V ? (0, r.jsx)(E.NZ, {
+      className: ei.buttonSection,
+      children: [H && !s && z ? (0, r.jsx)(E.NZ, {
         channel: t,
-        currentUser: D,
+        currentUser: M,
         exitFullScreen: () => null,
-        canGoLive: M,
-        hasPermission: j,
-        disabled: z
-      }) : null, (0, r.jsx)(ec, {
+        canGoLive: G,
+        hasPermission: N,
+        disabled: Y
+      }) : null, (0, r.jsx)(ed, {
         channelId: t.id
-      }), G && (0, r.jsx)(ei, {
+      }), H && (0, r.jsx)(el, {
         channel: t
-      }), G && _ && s && (0, r.jsx)(ea, {
+      }), H && _ && s && y && (0, r.jsx)(es, {
         channel: t
-      }), G && !s && (0, r.jsx)(eo, {
+      }), H && !s && (0, r.jsx)(ec, {
         channel: t
       }), (0, r.jsx)(Z.Z, {
         channel: t
       })]
-    }), (0, r.jsx)(es, {
+    }), (0, r.jsx)(eo, {
       channel: t
     })]
   })
 });
 
-function eu(e) {
+function ep(e) {
   let {
     channel: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: er.wrapper,
+    className: ei.wrapper,
     children: [(0, r.jsx)("div", {
-      className: er.buttonSection,
-      children: (0, r.jsx)(ec, {
+      className: ei.buttonSection,
+      children: (0, r.jsx)(ed, {
         channelId: t.id
       })
-    }), (0, r.jsx)(es, {
+    }), (0, r.jsx)(eo, {
       channel: t
     })]
   })
 }
-let ep = Chunk647438.memo(function(e) {
+let eh = Chunk647438.memo(function(e) {
   let {
     channel: t,
     isOnStartStageScreen: n
-  } = e, i = (0, X.Z)(t.id), a = (0, F.B)(t.id), s = (0, l.e7)([M.Z], () => M.Z.can(B.yP, t), [t]), o = (0, J.Z)(t.id), c = (0, l.e7)([d.Z], () => null != t ? d.Z.getSelectedParticipant(t.id) : null), u = !o && null == c;
-  return n ? (0, r.jsx)(eu, {
+  } = e, i = (0, J.Z)(t.id), a = (0, F.B)(t.id), s = (0, l.e7)([M.Z], () => M.Z.can(B.yP, t), [t]), o = (0, $.s)(), c = (0, ee.Z)(t.id), u = (0, l.e7)([d.Z], () => null != t ? d.Z.getSelectedParticipant(t.id) : null), p = !c && null == u;
+  return n ? (0, r.jsx)(ep, {
     channel: t
   }) : i || a ? (0, r.jsxs)("div", {
-    className: er.containerColumn,
+    className: ei.containerColumn,
     children: [(0, r.jsxs)("div", {
-      className: er.eventPrompts,
-      children: [u ? (0, r.jsx)(y.Z, {
+      className: ei.eventPrompts,
+      children: [p ? (0, r.jsx)(y.Z, {
         channelId: null == t ? true : t.id
       }) : null, (0, r.jsx)("div", {
-        className: er.separator
-      }), u && s ? (0, r.jsx)(x.Z, {
+        className: ei.separator
+      }), p && s && !o ? (0, r.jsx)(x.Z, {
         highlight: true,
         channel: t
       }) : null, (0, r.jsx)("div", {
-        className: er.separator
+        className: ei.separator
       })]
-    }), (0, r.jsx)(ed, {
+    }), (0, r.jsx)(eu, {
       channel: t
     })]
-  }) : (0, r.jsx)(el, {
+  }) : (0, r.jsx)(ea, {
     channel: t
   })
 })

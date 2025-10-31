@@ -1,38 +1,45 @@
 /** Chunk was on 91053 **/
 /** chunk id: 766717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk221292 = require("./221292.js"),
   Chunk239990 = require("./239990.js");
 
-function s(e) {
+function o(e) {
   let {
     onCardClick: t,
     tooltipText: n,
-    shouldScalePreview: s = true,
-    renderPreview: o,
-    moreCount: c,
-    isSingleCard: d = false
-  } = e, u = s ? a.cardPreview : a.cardPreviewNoScale, p = d ? a.cardSingle : a.card;
+    shouldScalePreview: o = true,
+    renderPreview: c,
+    moreCount: d,
+    isSingleCard: u = false,
+    analyticsLocations: p
+  } = e, h = o ? s.cardPreview : s.cardPreviewNoScale, f = u ? s.cardSingle : s.card, g = null != d && d > 0;
   return (0, r.jsx)(i.u, {
     text: n,
     position: "top",
     children: (0, r.jsxs)(l.P3F, {
-      onClick: t,
-      className: p,
+      onClick: () => {
+        t(), (0, a.pQ)({
+          action: g ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
+          analyticsLocations: p
+        })
+      },
+      className: f,
       "aria-label": n,
       children: [(0, r.jsx)("div", {
-        className: u,
-        children: o()
-      }), null != c && c > 0 && (0, r.jsx)("div", {
-        className: a.moreOverlay,
+        className: h,
+        children: c()
+      }), g && (0, r.jsx)("div", {
+        className: s.moreOverlay,
         children: (0, r.jsxs)(l.Text, {
           variant: "text-xs/medium",
           color: "always-white",
-          children: ["+", c]
+          children: ["+", d]
         })
       })]
     })

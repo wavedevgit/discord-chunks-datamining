@@ -2,6 +2,7 @@
 /** chunk id: 312870, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  U: () => a,
   s: () => i
 });
 let r = (0, require("./427164.js").le)({
@@ -18,4 +19,10 @@ let r = (0, require("./427164.js").le)({
   }),
   i = e => r.useConfig({
     location: e
+  }).enabled;
+
+function a(e) {
+  return r.getConfig({
+    location: e
   }).enabled
+}

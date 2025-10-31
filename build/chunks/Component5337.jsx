@@ -49,7 +49,8 @@ function g(e, t) {
       surface: c.Y.PROFILE_SIDEBAR
     }),
     moreCount: n,
-    isSingleCard: u
+    isSingleCard: u,
+    analyticsLocations: a
   }, e.skuId)
 }
 

@@ -1,5 +1,5 @@
 /** Chunk was on 81141 **/
-/** chunk id: 357823, original params: e,t,n (module,exports,require) **/
+/** chunk id: 357823, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   default: () => C
 }), require("./388685.js");
@@ -21,22 +21,22 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 let C = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
-    user: t,
-    channel: n,
+    user: n,
+    channel: t,
     guildId: u,
     onSelect: a,
     onInteraction: d,
     context: g
-  } = e, C = n.id, M = t.isNonUserBot(), O = t.id === E.default.getId(), S = (0, _.Z)(t), b = (0, s.Z)(t, u, C), I = (0, f.Y)({
+  } = e, C = t.id, M = n.isNonUserBot(), O = n.id === E.default.getId(), S = (0, _.Z)(n), b = (0, s.Z)(n, u, C), I = (0, f.Y)({
     isOwnSettings: O,
-    userId: t.id,
+    userId: n.id,
     channelId: C,
     guildId: u,
     context: g
-  }), [Z, T] = (0, f.E)(t, C, u), h = (0, A.Z)(t, u, C), N = (0, o.Z)({
-    id: t.id,
+  }), [Z, T] = (0, f.E)(n, C, u), h = (0, A.Z)(n, u, C), N = (0, o.Z)({
+    id: n.id,
     label: v.intl.string(v.t["/AXYnE"])
-  }), p = (0, c.Z)(t.id, n);
+  }), p = (0, c.Z)(n.id, t);
   return (0, i.jsx)(l.v2r, {
     navId: "user-context",
     onClose: r.Zy,
