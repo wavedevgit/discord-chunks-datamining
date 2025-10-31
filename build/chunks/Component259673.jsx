@@ -1,4 +1,4 @@
-/** Chunk was on 95215 **/
+/** Chunk was on 62868 **/
 /** chunk id: 259673, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -17,8 +17,8 @@ let d = e => {
   let {
     user: d
   } = e, m = s.ZP.canUsePremiumProfileCustomization(d), p = (0, i.cj)([o.Z], () => o.Z.getAllPending()), {
-    pendingAvatar: v
-  } = p, f = function(e, t) {
+    pendingAvatar: f
+  } = p, v = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -34,7 +34,7 @@ let d = e => {
     return i
   }(p, ["pendingAvatar"]), h = (0, l.SD)({
     userId: d.id,
-    image: v
+    image: f
   });
   return (0, r.jsx)("div", {
     className: u.container,
@@ -55,7 +55,7 @@ let d = e => {
         })
       }
       return e
-    }({}, f), n = n = {
+    }({}, v), n = n = {
       pendingAvatar: h,
       user: d,
       pendingBadges: [(0, c.X)()],

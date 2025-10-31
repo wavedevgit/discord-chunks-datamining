@@ -1,4 +1,4 @@
-/** Chunk was on 72740 **/
+/** Chunk was on 48502 **/
 /** chunk id: 390698, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => u
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -16,12 +16,12 @@ let u = e => {
     className: t,
     isPartiallyPurchased: n
   } = e;
-  return n ? (0, r.jsx)(i.u, {
+  return n ? (0, r.jsx)(a.u, {
     position: "top",
     align: "left",
     text: s.intl.string(s.t.y1VWkZ),
     children: (0, r.jsxs)("div", {
-      className: a()(c.partialOwnStateContainer, t),
+      className: i()(c.partialOwnStateContainer, t),
       children: [(0, r.jsx)("span", {
         className: c.iconWrapper,
         children: (0, r.jsx)(o.d3s, {

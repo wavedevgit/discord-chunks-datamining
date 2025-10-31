@@ -2,7 +2,7 @@
 /** chunk id: 838819, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => F
+  default: () => M
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,13 +35,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk963102 = require("./963102.jsx"),
   Chunk508498 = require("./508498.js"),
   Chunk681435 = require("./681435.js"),
-  Chunk642909 = require("./642909.js"),
+  Chunk811847 = require("./811847.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
   Chunk887353 = require("./887353.js"),
-  Chunk345213 = require("./345213.js");
-let M = e => {
+  Chunk219588 = require("./219588.js");
+let F = e => {
     let {
       children: t,
       shouldAddEventListener: n,
@@ -55,12 +55,12 @@ let M = e => {
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, i, r]), t
   },
-  F = function(e) {
+  M = function(e) {
     let {
       tab: t = R.AW.HOME
     } = e;
     (0, h.z)(f.f), (0, j.f)();
-    let n = (0, g.Z)((0, a.Z)()),
+    let n = (0, p.Z)((0, a.Z)()),
       i = (0, o.e7)([b.default], () => b.default.getCurrentUser()),
       {
         userProfile: c,
@@ -72,14 +72,14 @@ let M = e => {
     l.useEffect(() => {
       null != i && null == c && (0, _.Z)(i.id, i.getAvatarURL(null, 80))
     }, [i, c]), (0, m.kZ)(w, null == i ? true : i.id);
-    let F = (0, N.G)("CollectiblesShop"),
+    let M = (0, N.B)("CollectiblesShop"),
       {
         onClose: W
       } = (0, P.Db)(),
       {
         currentTab: V,
         hasFilters: U
-      } = (0, T.S)(),
+      } = (0, I.S)(),
       z = l.useMemo(() => t === R.AW.HOME && V && U() ? V : t, [t, V, U]),
       {
         categories: G,
@@ -124,7 +124,7 @@ let M = e => {
     let {
       analyticsLocations: ea
     } = (0, O.MV)(et);
-    return (0, r.jsx)(p.Gt, {
+    return (0, r.jsx)(g.Gt, {
       value: ea,
       children: (0, r.jsx)(v.k0, {
         newValue: {
@@ -134,12 +134,12 @@ let M = e => {
         },
         children: (0, r.jsx)(x.ni, {
           tab: et,
-          children: (0, r.jsx)(M, {
+          children: (0, r.jsx)(F, {
             onClose: W,
             shouldAddEventListener: false,
             children: (0, r.jsxs)("div", {
               className: s()(H.shop, {
-                [D.shopTakeOver]: F
+                [D.customCursors]: M
               }),
               ref: es,
               tabIndex: false,
@@ -152,7 +152,7 @@ let M = e => {
                   [H.in]: en === R.f7.IN,
                   [H.out]: en === R.f7.OUT
                 }),
-                children: (0, r.jsx)(I.Z, {
+                children: (0, r.jsx)(T.Z, {
                   tab: et,
                   refreshCategories: K,
                   transitionToTab: er,

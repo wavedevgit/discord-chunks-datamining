@@ -2,7 +2,7 @@
 /** chunk id: 688192, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Y: () => g,
-  Z: () => v
+  Z: () => P
 });
 var n, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,26 +20,26 @@ var n, Chunk951288 = require("./951288.js"),
   Chunk232644 = require("./232644.js"),
   g = ((n = {}).GIFTING_FLOW = "gifting_flow", n.PROFILE_MODAL = "profile_modal", n.PROFILE_SIDEBAR = "profile_sidebar", n);
 
-function v(e) {
+function P(e) {
   let {
     item: t,
     wishlistId: r,
     isOwner: n,
     surface: l = "profile_modal",
     cardRef: g,
-    renderItemPreview: v,
-    accessibleLabel: P,
+    renderItemPreview: P,
+    accessibleLabel: v,
     onCardClick: b,
     buttonCTALabel: j,
     buttonIcon: S,
     isOwned: w = false,
     renderSourceIcon: x
-  } = e, y = s.useRef(null), E = s.useRef(null), T = null != g ? g : E, {
-    analyticsLocations: N
-  } = (0, u.ZP)(), k = n && true === t.isOwned && null != t.gifterUserId, L = null != t.gifterUserId ? d.default.getUser(t.gifterUserId) : null, _ = null != L ? f.ZP.getName(L) : null, C = k && null != L && null != _ && "" !== _, Z = C ? (0, i.jsx)(o.qEK, {
-    src: L.getAvatarURL(true, 48),
+  } = e, y = s.useRef(null), E = s.useRef(null), N = null != g ? g : E, {
+    analyticsLocations: T
+  } = (0, u.ZP)(), k = n && true === t.isOwned && null != t.gifterUserId, _ = null != t.gifterUserId ? d.default.getUser(t.gifterUserId) : null, L = null != _ ? f.ZP.getName(_) : null, C = k && null != _ && null != L && "" !== L, Z = C ? (0, i.jsx)(o.qEK, {
+    src: _.getAvatarURL(true, 48),
     size: o.EFr.SIZE_48,
-    "aria-label": _
+    "aria-label": L
   }) : null, R = (0, i.jsx)("div", {
     className: O.cardStateIconWrapper,
     children: (0, i.jsx)(o.sV5, {
@@ -54,7 +54,7 @@ function v(e) {
     className: O.overlay,
     children: (0, i.jsx)(o.Button, {
       focusProps: {
-        ringTarget: T
+        ringTarget: N
       },
       variant: "primary",
       size: "sm",
@@ -70,13 +70,13 @@ function v(e) {
       wishlistId: r,
       action: p.NW.WISHLIST_ITEM_CLICKED,
       skuId: t.skuId,
-      analyticsLocations: N
+      analyticsLocations: T
     }), b()
   }, G = (0, i.jsxs)("div", {
     ref: y,
     className: O.container,
     children: [(0, i.jsxs)("div", {
-      ref: T,
+      ref: N,
       className: a()(O.card, {
         [O.isOwned]: w,
         [O.smallCard]: "gifting_flow" === l,
@@ -85,15 +85,15 @@ function v(e) {
       onClick: A,
       children: [(0, i.jsx)(o.nn4, {
         children: (0, i.jsx)(o.H, {
-          children: P
+          children: v
         })
       }), (0, i.jsx)("div", {
         className: O.cardPreview,
-        children: v()
+        children: P()
       }), w && R, "profile_modal" === l ? F : (0, i.jsx)(o.P3F, {
         "aria-label": j,
         focusProps: {
-          ringTarget: T
+          ringTarget: N
         },
         onClick: e => {
           e.stopPropagation(), A()
@@ -109,7 +109,7 @@ function v(e) {
   return C ? (0, i.jsx)(c.i_, {
     asContainer: true,
     title: I.intl.formatToPlainString(I.t.TL4ktE, {
-      username: _
+      username: L
     }),
     body: t.skuName,
     asset: Z,

@@ -34,9 +34,9 @@ function k(e) {
     products: t,
     header: n,
     category: l
-  } = e, i = (0, o.e7)([u.default], () => u.default.getCurrentUser()), s = (0, S.St)(t), a = g.Z.useConfig({
+  } = e, i = (0, o.e7)([u.default], () => u.default.getCurrentUser()), s = (0, S.St)(t), a = p.Z.useConfig({
     location: "Products"
-  }).showCardsV2, p = (0, d.sp)();
+  }).showCardsV2, g = (0, d.sp)();
   return null == i || 0 === t.length ? null : (0, r.jsxs)("div", {
     children: [null != n ? (0, r.jsx)(c.Text, {
       className: j.itemTypeTitle,
@@ -53,7 +53,7 @@ function k(e) {
         },
         children: a ? (0, r.jsx)(v.Z, {
           skuId: e.skuId,
-          onClickAnalytics: (0, E.wO)(e, y.AW.CATALOG, p)
+          onClickAnalytics: (0, E.wO)(e, y.AW.CATALOG, g)
         }, e.skuId) : (0, r.jsx)(b.Z, {
           category: l,
           product: e,
@@ -65,7 +65,7 @@ function k(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     category: t
   } = e, n = (0, h.l)(t.products), l = (0, f.a)()(n);
@@ -75,7 +75,7 @@ function T(e) {
   })
 }
 
-function I(e) {
+function T(e) {
   let {
     category: t
   } = e, [n, i] = l.useState(false), s = (0, a.O)(e => {
@@ -86,7 +86,7 @@ function I(e) {
     ref: s,
     children: [(0, r.jsx)(_.Z, {
       category: t
-    }), (0, r.jsx)(T, {
+    }), (0, r.jsx)(I, {
       category: t
     })]
   })
@@ -99,7 +99,7 @@ function L(e) {
     setCategoryRef: i,
     currentPage: a,
     handlePageChange: o
-  } = e, u = (0, d.sp)(), g = (0, x.R)(), f = null != (t = null == u ? true : u.sessionId) ? t : "", {
+  } = e, u = (0, d.sp)(), p = (0, x.R)(), f = null != (t = null == u ? true : u.sessionId) ? t : "", {
     noCache: h,
     includeUnpublished: _
   } = (0, O.Z)(), b = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
@@ -120,16 +120,16 @@ function L(e) {
       cacheDisabled: h
     })
   }, []), l.useEffect(() => {
-    g || 0 === v.length || (0, C.n)({
+    p || 0 === v.length || (0, C.n)({
       sessionId: f,
       checkpoint: C.a.SHOP_RENDERED,
       tab: y.AW.CATALOG,
       unpublishedCategoriesShown: _,
       cacheDisabled: h
     })
-  }, [f, _, h, g, v.length]);
-  let E = (0, p.FF)("CollectiblesBrowse");
-  return g ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)("div", {
+  }, [f, _, h, p, v.length]);
+  let E = (0, g.FF)("CollectiblesBrowse");
+  return p ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)("div", {
     className: s()(j.categories, {
       [j.categoriesNoFilter]: !E
     }),
@@ -139,7 +139,7 @@ function L(e) {
         newValue: {
           categoryPosition: t
         },
-        children: (0, r.jsx)(I, {
+        children: (0, r.jsx)(T, {
           category: e
         })
       })

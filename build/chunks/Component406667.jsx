@@ -75,9 +75,9 @@ let S = e => {
     let {
       product: i,
       isCollapsed: c
-    } = e, u = (0, h.o)(i), d = null != (n = null == (t = i.variants) ? true : t.length) ? n : 0, g = l.useCallback((e, t) => {
+    } = e, u = (0, h.o)(i), d = null != (n = null == (t = i.variants) ? true : t.length) ? n : 0, p = l.useCallback((e, t) => {
       e.stopPropagation(), (0, h.$)(i, t)
-    }, [i]), f = (0, p.Z)("shop-variants-group-".concat(i.storeListingId), o.hy.HORIZONTAL);
+    }, [i]), f = (0, g.Z)("shop-variants-group-".concat(i.storeListingId), o.hy.HORIZONTAL);
     return 0 === d ? null : (0, r.jsx)(a.bG, {
       navigator: f,
       children: (0, r.jsx)(a.SJ, {
@@ -97,7 +97,7 @@ let S = e => {
               variant: e,
               isSelected: t === u,
               zIndex: d - Math.abs(u - t),
-              onClick: e => g(e, t)
+              onClick: e => p(e, t)
             }, e.variantValue))
           }))
         }
@@ -113,11 +113,11 @@ let S = e => {
     } = e, o = (0, a.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(t.variantLabel)), {
       onFocus: c
     } = o, u = O(o, ["onFocus"]), {
-      isPurchased: p
+      isPurchased: g
     } = (0, C.L)(t);
-    return (0, r.jsx)(g.u, {
+    return (0, r.jsx)(p.u, {
       text: b.intl.string(b.t["6cfuDj"]),
-      shouldShow: p,
+      shouldShow: g,
       children: (0, r.jsx)(d.P3F, x(E({
         "aria-label": t.variantLabel,
         onClick: e => {
@@ -131,7 +131,7 @@ let S = e => {
           zIndex: i
         }
       }, u), {
-        children: p && (0, r.jsx)(j, {
+        children: g && (0, r.jsx)(j, {
           variant: t
         })
       }))

@@ -30,11 +30,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk328626 = require("./328626.js"),
   Chunk849275 = require("./849275.js"),
   Chunk619899 = require("./619899.js"),
-  Chunk642909 = require("./642909.js"),
+  Chunk811847 = require("./811847.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk345213 = require("./345213.js"),
+  Chunk219588 = require("./219588.js"),
   Chunk310582 = require("./310582.js");
 let R = e => {
   var t;
@@ -46,8 +46,8 @@ let R = e => {
     prioritizeUserDiscounts: w,
     tab: H,
     buttonContainerClassName: D,
-    orbsSupportedOnly: M
-  } = e, F = (0, o.e7)([p.default], () => p.default.getCurrentUser()), W = _.ZP.canUseCollectibles(F), V = (0, I.G)("FeedBlock"), {
+    orbsSupportedOnly: F
+  } = e, M = (0, o.e7)([g.default], () => g.default.getCurrentUser()), W = _.ZP.canUseCollectibles(M), V = (0, T.B)("FeedBlock"), {
     sortType: U,
     setSortType: z,
     sortedItems: G,
@@ -58,8 +58,8 @@ let R = e => {
     sortedSkuIds: R,
     isPremiumUser: W,
     prioritizeUserDiscounts: w,
-    orbsSupportedOnly: M
-  }), J = (0, T.St)(G), Q = (0, o.e7)([g.Z], () => g.Z.useReducedMotion), X = (0, o.e7)([f.Z], () => f.Z.isFocused()), $ = !Q && X, {
+    orbsSupportedOnly: F
+  }), J = (0, I.St)(G), Q = (0, o.e7)([p.Z], () => p.Z.useReducedMotion), X = (0, o.e7)([f.Z], () => f.Z.isFocused()), $ = !Q && X, {
     animationPhase: ee,
     startAnimation: et
   } = (0, j.y)(), en = (0, m.sp)(), er = null != (t = null == en ? true : en.sessionId) ? t : "", el = l.useRef(null), ei = l.useCallback(e => {
@@ -73,7 +73,7 @@ let R = e => {
   }, [et, z, er]), es = v.Z.useConfig({
     location: "FeedBlock"
   }).showCardsV2;
-  return null == F ? null : (0, r.jsxs)("div", {
+  return null == M ? null : (0, r.jsxs)("div", {
     className: s()(N.popularPicksSection, N.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: N.blockHeader,
@@ -96,7 +96,7 @@ let R = e => {
         })]
       }), (0, r.jsxs)("div", {
         className: s()(N.headerRight, {
-          [A.shopTakeOver]: V
+          [A.customCursors]: V
         }),
         children: [(0, r.jsx)(u.Text, {
           variant: "text-md/medium",
@@ -108,7 +108,7 @@ let R = e => {
             select: ei,
             className: N.sortSelect,
             popoutClassName: s()({
-              [A.shopTakeOver]: V
+              [A.customCursors]: V
             }),
             isSelected: e => e === U,
             serialize: e => e
@@ -168,7 +168,7 @@ let R = e => {
           }) : (0, r.jsx)(x.Z, {
             product: e,
             category: l,
-            user: F,
+            user: M,
             tab: H,
             className: n,
             shopBlockType: a.z.FEED

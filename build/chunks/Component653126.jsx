@@ -34,8 +34,8 @@ let j = Chunk647438.memo(function(e) {
       hideProductName: i,
       hideVariantSwitcher: j,
       hidePrice: k,
-      hidePrimaryCTA: T,
-      hideSecondaryCTA: I,
+      hidePrimaryCTA: I,
+      hideSecondaryCTA: T,
       badgeOverride: L,
       onClickCard: B,
       onClickPrimaryCTA: P,
@@ -46,16 +46,16 @@ let j = Chunk647438.memo(function(e) {
       onBlur: w,
       primaryCTAText: H,
       secondaryCTAIcon: D,
-      productNameClassName: M,
-      badgeClassName: F,
+      productNameClassName: F,
+      badgeClassName: M,
       cardClassName: W,
       prioritizedCurrency: V,
       onClickAnalytics: U
-    } = e, z = (0, g.Nd)(), G = null == z ? true : z.tab, K = (0, O.zQ)(t), Y = l.useRef(null), {
+    } = e, z = (0, p.Nd)(), G = null == z ? true : z.tab, K = (0, O.zQ)(t), Y = l.useRef(null), {
       isHoveringOrFocusing: q
     } = (0, d.Z)(Y), {
       handleCardVisibilityChange: J
-    } = (0, p.E)(t.skuId, G === S.AW.CATALOG ? "full" : G), Q = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, U), X = t.type === a.Z.VARIANTS_GROUP && !j, $ = !T || !I, ee = !k || X, et = $ || X;
+    } = (0, g.E)(t.skuId, G === S.AW.CATALOG ? "full" : G), Q = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, U), X = t.type === a.Z.VARIANTS_GROUP && !j, $ = !I || !T, ee = !k || X, et = $ || X;
     return (0, r.jsx)(o.$, {
       innerRef: Y,
       onChange: J,
@@ -86,7 +86,7 @@ let j = Chunk647438.memo(function(e) {
             children: [(0, r.jsx)(f.Z, {
               skuId: t.skuId,
               badgeOverride: L,
-              className: F,
+              className: M,
               prioritizedCurrency: V
             }), !n && (0, r.jsx)(x.Z, {
               skuId: t.skuId,
@@ -102,7 +102,7 @@ let j = Chunk647438.memo(function(e) {
                 skuId: t.skuId,
                 className: s()({
                   [y.shadowOnHover]: et
-                }, M)
+                }, F)
               }), ee && (0, r.jsxs)("div", {
                 className: s()(y.footerInfoContainer, {
                   [y.removePaddingOnHover]: !X
@@ -123,14 +123,14 @@ let j = Chunk647438.memo(function(e) {
                 children: (0, r.jsxs)(c.ButtonGroup, {
                   wrap: false,
                   fullWidth: true,
-                  children: [!T && (0, r.jsx)(_.Z, {
+                  children: [!I && (0, r.jsx)(_.Z, {
                     skuId: t.skuId,
                     cardRef: Y,
                     onClick: P,
                     text: H,
                     prioritizedCurrency: V,
                     onClickAnalytics: U
-                  }), !I && (0, r.jsx)(m.Z, {
+                  }), !T && (0, r.jsx)(m.Z, {
                     skuId: t.skuId,
                     cardRef: Y,
                     onClick: A,

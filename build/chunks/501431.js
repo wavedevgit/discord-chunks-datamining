@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function g(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ function g(e, t) {
   }), e
 }
 
-function p(e, t) {
+function g(e, t) {
   let n = new Set(e);
   return n.has(t) ? n.delete(t) : n.add(t), n
 }
@@ -84,7 +84,7 @@ let f = {
     } = e;
     return t.size > 0 || n.size > 0 || "" !== r.trim() ? C : l.size > 0 ? h : f
   },
-  b = (0, Chunk191336.U)((0, Chunk180059.XR)((e, t) => g(d({}, _), {
+  b = (0, Chunk191336.U)((0, Chunk180059.XR)((e, t) => p(d({}, _), {
     hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === f.sortType && t().sort.sortDirection === f.sortDirection,
     hasFilters: () => {
       let {
@@ -106,8 +106,8 @@ let f = {
     },
     onToggleItemType: t => {
       e(e => {
-        let n = p(e.itemTypeFilters, t),
-          r = g(d({}, e), {
+        let n = g(e.itemTypeFilters, t),
+          r = p(d({}, e), {
             itemTypeFilters: n,
             queryPageOffset: 0
           });
@@ -116,8 +116,8 @@ let f = {
     },
     onToggleColor: t => {
       e(e => {
-        let n = p(e.colorFilters, t),
-          r = g(d({}, e), {
+        let n = g(e.colorFilters, t),
+          r = p(d({}, e), {
             colorFilters: n,
             queryPageOffset: 0
           });
@@ -126,8 +126,8 @@ let f = {
     },
     onToggleTheme: t => {
       e(e => {
-        let n = p(e.themeFilters, t),
-          r = g(d({}, e), {
+        let n = g(e.themeFilters, t),
+          r = p(d({}, e), {
             themeFilters: n,
             queryPageOffset: 0
           });
@@ -136,7 +136,7 @@ let f = {
     },
     onToggleOrbEligible: () => {
       e(e => {
-        let t = g(d({}, e), {
+        let t = p(d({}, e), {
           orbEligible: !e.orbEligible,
           queryPageOffset: 0
         });
@@ -155,7 +155,7 @@ let f = {
     },
     onSetSearchQuery: t => {
       e(e => {
-        let n = g(d({}, e), {
+        let n = p(d({}, e), {
           searchQuery: t,
           queryPageOffset: 0
         });
@@ -175,7 +175,7 @@ let f = {
     setItemTypeFilter: t => {
       e(e => {
         let n = new Set([t]),
-          r = g(d({}, e), {
+          r = p(d({}, e), {
             colorFilters: new Set,
             themeFilters: new Set,
             orbEligible: false,
@@ -198,7 +198,7 @@ let f = {
         queryPageSize: n,
         queryPageOffset: r
       } = t();
-      e(g(d({}, _), {
+      e(p(d({}, _), {
         queryPageSize: n,
         queryPageOffset: r
       }))

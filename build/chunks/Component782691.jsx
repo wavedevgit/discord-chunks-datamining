@@ -1,4 +1,4 @@
-/** Chunk was on 39297 **/
+/** Chunk was on 71874 **/
 /** chunk id: 782691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -109,14 +109,14 @@ let y = {
         effect: t,
         upsertConfig: n
       },
-      H = r.useRef(G);
+      z = r.useRef(G);
     return (r.useEffect(() => {
-      H.current = G
+      z.current = G
     }), r.useEffect(() => {
       let {
         effect: e,
         upsertConfig: t
-      } = H.current;
+      } = z.current;
       e.readonly || t({
         skuId: e.skuId,
         name: Z,

@@ -56,7 +56,7 @@ let L = e => {
       fetchShopHomeError: A,
       shopBlocks: N,
       refreshShopHome: R
-    } = (0, p.E)(c, {
+    } = (0, g.E)(c, {
       noCache: u,
       includeUnpublished: C,
       includeBundles: true,
@@ -80,7 +80,7 @@ let L = e => {
       errorOrigin: h.i.SHOP_PAGE,
       errorMessage: A.message
     }) : P || 0 === N.length ? (0, r.jsxs)("div", {
-      className: s()(I.loadingContainer, I.feedContent),
+      className: s()(T.loadingContainer, T.feedContent),
       children: [(0, r.jsx)(E.Z, {
         isLoading: P,
         handleTransition: n,
@@ -91,7 +91,7 @@ let L = e => {
         categories: []
       }), (0, r.jsx)(v.Z, {
         isLoading: P,
-        title: c === j.AW.ORBS ? T.intl.string(T.t.dFgeuZ) : T.intl.string(T.t.NSv5KV),
+        title: c === j.AW.ORBS ? I.intl.string(I.t.dFgeuZ) : I.intl.string(I.t.NSv5KV),
         numVisibleItems: i,
         tab: c
       })]
@@ -117,13 +117,13 @@ let L = e => {
             }, l);
             break;
           case a.z.FEED:
-            let p = e.sortedSkuIds;
+            let g = e.sortedSkuIds;
             u = (0, r.jsx)(v.Z, {
-              title: c === j.AW.ORBS ? T.intl.string(T.t.dFgeuZ) : T.intl.string(T.t.NSv5KV),
+              title: c === j.AW.ORBS ? I.intl.string(I.t.dFgeuZ) : I.intl.string(I.t.NSv5KV),
               isLoading: P || o,
               numVisibleItems: i,
-              sortedSkuIds: p,
-              buttonContainerClassName: (null == t ? true : t.type) === a.z.IMMERSIVE_BANNER ? I.feedblockInteractiveBackground : true,
+              sortedSkuIds: g,
+              buttonContainerClassName: (null == t ? true : t.type) === a.z.IMMERSIVE_BANNER ? T.feedblockInteractiveBackground : true,
               prioritizeUserDiscounts: c === j.AW.HOME,
               tab: c,
               orbsSupportedOnly: c === j.AW.ORBS
@@ -158,11 +158,11 @@ let L = e => {
           default:
             return null
         }
-        return (0, r.jsx)(g.g6, {
+        return (0, r.jsx)(p.g6, {
           blockType: e.type,
           children: (0, r.jsx)("div", {
-            className: s()(I.blockContainer, I.feedContent, {
-              [I.skipPadding]: 0 === l || d
+            className: s()(T.blockContainer, T.feedContent, {
+              [T.skipPadding]: 0 === l || d
             }),
             children: u
           }, l)
@@ -177,7 +177,7 @@ let L = e => {
       transitionState: i
     } = e, s = l.useRef(null), {
       handleScroll: a
-    } = (0, c.z)(s, n), g = (0, C.R)(), p = (0, d.sp)(), [f, h] = l.useState(j.IV), [_, m] = l.useState(false);
+    } = (0, c.z)(s, n), p = (0, C.R)(), g = (0, d.sp)(), [f, h] = l.useState(j.IV), [_, m] = l.useState(false);
     return l.useEffect(() => {
       if (null != s.current) {
         let e = () => {
@@ -191,34 +191,34 @@ let L = e => {
         }
       }
     }, [s, f, h, m]), (0, r.jsx)(o.Den, {
-      className: I.shopScroll,
+      className: T.shopScroll,
       ref: s,
       onScroll: a,
       children: (0, r.jsxs)("div", {
-        className: I.shop,
+        className: T.shop,
         children: [(0, r.jsxs)("div", {
-          className: I.mainContent,
+          className: T.mainContent,
           children: [(0, r.jsx)(L, {
             handleTransition: t,
             numVisibleItems: f,
-            isFetchingCategories: g,
+            isFetchingCategories: p,
             tab: n
           }), n !== j.AW.CATALOG && f >= 36 && (0, r.jsxs)("div", {
-            className: I.endOfFeed,
+            className: T.endOfFeed,
             children: [(0, r.jsx)(o.Heading, {
               variant: "heading-md/semibold",
-              children: T.intl.string(T.t.Yr70c4)
+              children: I.intl.string(I.t.Yr70c4)
             }), (0, r.jsx)(o.Button, {
               variant: "primary",
-              text: T.intl.string(T.t.AfrvRD),
+              text: I.intl.string(I.t.AfrvRD),
               onClick: () => {
                 t({
                   sourceButton: "shop all button",
                   shouldAnimate: true
                 }), u.default.track(k.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                  collectibles_shop_session_id: null == p ? true : p.sessionId,
+                  collectibles_shop_session_id: null == g ? true : g.sessionId,
                   page_type: n,
-                  page_category: n === j.AW.HOME || null == p ? true : p.pageCategory,
+                  page_category: n === j.AW.HOME || null == g ? true : g.pageCategory,
                   cta_name: "browse the shop button"
                 })
               },

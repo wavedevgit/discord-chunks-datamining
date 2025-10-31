@@ -1,7 +1,7 @@
-/** Chunk was on 50614 **/
-/** chunk id: 17597, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 71874 **/
+/** chunk id: 17597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => E
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,73 +25,73 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk70402 = require("./70402.js"),
   Chunk736056 = require("./736056.js");
-let O = function(t) {
+let E = function(e) {
   let {
-    transitionState: e,
+    transitionState: t,
     entryPoint: n,
-    onClose: O,
-    onComplete: v,
-    dismissable: C,
-    classificationId: M
-  } = t, [U, P] = l.useState(o.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), V = l.useRef(U), [b, L] = (0, c.US)([U], true, true), j = l.useMemo(() => (0, r.Z)(), []), Z = l.useRef(false), D = (0, E.GE)();
-  l.useEffect(() => {
-    V.current = b
-  }, [b]);
+    onClose: E,
+    onComplete: T,
+    dismissable: O,
+    classificationId: N
+  } = e, [P, I] = r.useState(o.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), w = r.useRef(P), [k, R] = (0, c.US)([P], true, true), A = r.useMemo(() => (0, l.Z)(), []), D = r.useRef(false), Z = (0, m.GE)();
+  r.useEffect(() => {
+    w.current = k
+  }, [k]);
   let {
-    loading: N,
-    ageVerificationMethods: k
-  } = (0, x.Z)({
+    loading: L,
+    ageVerificationMethods: M
+  } = (0, b.Z)({
     onClose: () => {
-      null == v || v(), O()
+      null == T || T(), E()
     },
     onMethodClick: () => {
-      P(o.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
+      I(o.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
     },
-    classificationId: M
+    classificationId: N
   });
-  return l.useLayoutEffect(() => () => {
-    if (Z.current) return;
-    let t = V.current;
-    null != t && (Z.current = true, _.Z.maybeOpenAgeVerificationUserFeedback({
+  return r.useLayoutEffect(() => () => {
+    if (D.current) return;
+    let e = w.current;
+    null != e && (D.current = true, p.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
-      visibleContent: t
+      visibleContent: e
     }))
-  }, []), l.useEffect(() => {
-    (0, A.lA)(j, A.d_.EXPRESSIVE_PRIMARY, n)
-  }, [j, n]), (0, i.jsx)(a.ExpressiveModal, {
-    transitionState: e,
-    onClose: O,
+  }, []), r.useEffect(() => {
+    (0, g.lA)(A, g.d_.EXPRESSIVE_PRIMARY, n)
+  }, [A, n]), (0, a.jsx)(i.ExpressiveModal, {
+    transitionState: t,
+    onClose: E,
     gradientColor: "blue",
-    dismissable: C,
+    dismissable: O,
     graphic: {
       type: "image",
-      src: T.Z
+      src: S.Z
     },
-    title: S.intl.string(S.t.JHNunj),
-    subtitle: D ? S.intl.string(m.default["1/6wta"]) : S.intl.format(m.default.RpMIT0, {
+    title: y.intl.string(y.t.JHNunj),
+    subtitle: Z ? y.intl.string(_.default["1/6wta"]) : y.intl.format(_.default.RpMIT0, {
       handleOnHelpUrlHook: () => {
-        R.Z.openUrl(f.Z.getArticleURL(p.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, A.x3)(j, A.d_.EXPRESSIVE_PRIMARY, A.sU.LEARN_MORE)
+        x.Z.openUrl(h.Z.getArticleURL(v.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, g.x3)(A, g.d_.EXPRESSIVE_PRIMARY, g.sU.LEARN_MORE)
       }
     }),
-    actionBarInput: D ? (0, i.jsx)(s.Text, {
+    actionBarInput: Z ? (0, a.jsx)(s.Text, {
       variant: "text-xs/medium",
-      children: S.intl.format(m.default.htWh1G, {
+      children: y.intl.format(_.default.htWh1G, {
         handleOnHelpUrlHook: () => {
-          R.Z.openUrl(h.sQ.LEARN_MORE_UU_APPEAL_LINK), (0, A.x3)(j, A.d_.EXPRESSIVE_PRIMARY, A.sU.LEARN_MORE)
+          x.Z.openUrl(j.sQ.LEARN_MORE_UU_APPEAL_LINK), (0, g.x3)(A, g.d_.EXPRESSIVE_PRIMARY, g.sU.LEARN_MORE)
         }
       })
-    }) : (0, i.jsx)(s.Avr, {
+    }) : (0, a.jsx)(s.Avr, {
       size: "sm",
       textVariant: "text-sm/medium",
-      text: S.intl.string(S.t["2jxGer"]),
+      text: y.intl.string(y.t["2jxGer"]),
       onClick: () => {
-        (0, A.x3)(j, A.d_.EXPRESSIVE_PRIMARY, A.sU.LOG_OUT), (0, u.R)("age_verification_get_started_modal")
+        (0, g.x3)(A, g.d_.EXPRESSIVE_PRIMARY, g.sU.LOG_OUT), (0, u.R)("age_verification_get_started_modal")
       }
     }),
-    children: (0, i.jsxs)(s.Kqy, {
+    children: (0, a.jsxs)(s.Kqy, {
       direction: "vertical",
       gap: 16,
-      children: [(0, i.jsxs)(s.Kqy, {
+      children: [(0, a.jsxs)(s.Kqy, {
         fullWidth: false,
         direction: "horizontal",
         gap: 8,
@@ -102,47 +102,47 @@ let O = function(t) {
           right: 12
         },
         align: "center",
-        className: I.dataAssurance,
-        children: [(0, i.jsx)(s.d3s, {
+        className: C.dataAssurance,
+        children: [(0, a.jsx)(s.d3s, {
           size: "lg",
           color: "currentColor"
-        }), (0, i.jsx)(s.Text, {
+        }), (0, a.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-feedback-info",
-          children: S.intl.string(m.default.ar3a3q)
+          children: y.intl.string(_.default.ar3a3q)
         })]
-      }), null == k || 0 === k.length ? (0, i.jsxs)(s.Kqy, {
+      }), null == M || 0 === M.length ? (0, a.jsxs)(s.Kqy, {
         direction: "vertical",
         align: "center",
         gap: 16,
-        children: [(0, i.jsx)(s.Text, {
+        children: [(0, a.jsx)(s.Text, {
           variant: "text-xs/medium",
           color: "text-secondary",
-          children: S.intl.string(m.default.cR6336)
-        }), (0, i.jsx)(s.Button, {
+          children: y.intl.string(_.default.cR6336)
+        }), (0, a.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
-          text: S.intl.string(m.default.hDvmYP),
+          text: y.intl.string(_.default.hDvmYP),
           onClick: () => {
-            (0, g.Jh)()
+            (0, f.Jh)()
           }
         })]
-      }) : (0, i.jsx)(s.Kqy, {
+      }) : (0, a.jsx)(s.Kqy, {
         direction: "vertical",
         gap: 8,
-        children: k.map(t => {
+        children: M.map(e => {
           let {
-            title: e,
+            title: t,
             description: n,
-            onClick: l
-          } = t;
-          return (0, i.jsx)(d.JZ, {
+            onClick: r
+          } = e;
+          return (0, a.jsx)(d.JZ, {
             variant: "clickable",
-            title: e,
+            title: t,
             description: n,
-            buttonDisabled: N,
-            onButtonPress: () => l(j)
-          }, e)
+            buttonDisabled: L,
+            onButtonPress: () => r(A)
+          }, t)
         })
       })]
     })

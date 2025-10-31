@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk163379 = require("./163379.jsx"),
   Chunk703288 = require("./703288.jsx"),
   Chunk574755 = require("./574755.jsx"),
-  Chunk675997 = require("./675997.js"),
+  Chunk296812 = require("./296812.js"),
   Chunk377171 = require("./377171.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk594928 = require("./594928.js"),
@@ -844,7 +844,7 @@ let eB = () => {
         section: eP.oAB.ACCESSIBILITY,
         searchableTitles: [eD.intl.string(eD.t["+Isihb"])],
         parent: eN.s6.ACCESSIBILITY,
-        predicate: () => (0, O.l)("SettingsRendererConfig")
+        predicate: () => (0, O.A)("SettingsRendererConfig")
       },
       [eN.s6.ACCESSIBILITY_ROLE_STYLE]: {
         section: eP.oAB.ACCESSIBILITY,

@@ -1,4 +1,4 @@
-/** Chunk was on 39297 **/
+/** Chunk was on 71874 **/
 /** chunk id: 680004, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -140,14 +140,14 @@ function f() {
         [e]: t
       }))
     }, [T]),
-    H = Math.max(j.clippingPressure, j.currentThreshold, 1),
-    z = j.clippingPressure / H * 100,
-    V = j.currentThreshold / H * 100,
+    z = Math.max(j.clippingPressure, j.currentThreshold, 1),
+    H = j.clippingPressure / z * 100,
+    V = j.currentThreshold / z * 100,
     W = 0,
     K = 0;
   if (null != j.lastClipTime) {
     let e = (Date.now() - j.lastClipTime) / 1e3;
-    module < 60 && (K = (W = +(1 - module / 60)) / H * 100)
+    module < 60 && (K = (W = +(1 - module / 60)) / z * 100)
   }
   let q = "Never";
   if (null != j.lastClipTime) {
@@ -605,7 +605,7 @@ function f() {
                 left: 0,
                 top: 0,
                 height: "100%",
-                width: "".concat(z, "%"),
+                width: "".concat(H, "%"),
                 backgroundColor: "#667eea",
                 transition: "width 0.1s ease-out"
               }

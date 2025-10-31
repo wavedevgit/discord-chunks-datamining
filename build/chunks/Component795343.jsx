@@ -35,7 +35,7 @@ function k(e) {
     isFetchingCategories: n,
     scrollerRef: i,
     tab: k
-  } = e, T = (0, d.sp)(), I = null != (t = null == T ? true : T.sessionId) ? t : "", {
+  } = e, I = (0, d.sp)(), T = null != (t = null == I ? true : I.sessionId) ? t : "", {
     noCache: L,
     includeUnpublished: B
   } = (0, O.Z)(), P = (0, a.e7)([c.default], () => c.default.getCurrentUser()), {
@@ -43,7 +43,7 @@ function k(e) {
     currentPage: N,
     totalCount: R,
     isFetchingResults: Z
-  } = (0, C.a)(), w = (0, a.Wu)([g.Z], () => g.Z.getProductsBySkus(A)), H = l.useCallback(() => {
+  } = (0, C.a)(), w = (0, a.Wu)([p.Z], () => p.Z.getProductsBySkus(A)), H = l.useCallback(() => {
     var e;
     null == i || null == (e = i.current) || e.scrollToTop({
       animate: true
@@ -52,17 +52,17 @@ function k(e) {
   l.useEffect(() => {
     H()
   }, [D, H]);
-  let M = (0, f.a)(),
-    F = l.useMemo(() => M(w), [M, w]);
+  let F = (0, f.a)(),
+    M = l.useMemo(() => F(w), [F, w]);
   l.useEffect(() => {
     n || (0, _.n)({
-      sessionId: I,
+      sessionId: T,
       checkpoint: _.a.SHOP_RENDERED,
       tab: k,
       unpublishedCategoriesShown: B,
       cacheDisabled: L
     })
-  }, [I, B, L, n, k]);
+  }, [T, B, L, n, k]);
   let W = l.useRef(null),
     {
       setQueryPageSize: V,
@@ -73,9 +73,9 @@ function k(e) {
     Y = n || Z || null == P;
   l.useEffect(() => {
     if (Y) return void K(false);
-    F.length > 0 && K(true)
-  }, [Y, F.length]);
-  let q = z > 0 && !Y && 0 === F.length;
+    M.length > 0 && K(true)
+  }, [Y, M.length]);
+  let q = z > 0 && !Y && 0 === M.length;
   l.useEffect(() => {
     let e = new ResizeObserver(() => {
       null != W.current && V(Math.floor(5 * getComputedStyle(W.current).gridTemplateColumns.split(/\s+/).length))
@@ -84,16 +84,16 @@ function k(e) {
   }, [V]);
   let J = l.useCallback(e => {
       u.default.track(y.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == T ? true : T.sessionId,
-        page_section: null == T ? true : T.pageSection,
-        page_category: null == T ? true : T.pageCategory,
+        collectibles_shop_session_id: null == I ? true : I.sessionId,
+        page_section: null == I ? true : I.pageSection,
+        page_category: null == I ? true : I.pageCategory,
         page_index: e,
         page_size: z,
         cta_name: "filter results page ".concat(e),
         page_type: "catalog"
       }), U((e - 1) * z)
-    }, [T, z, U]),
-    Q = p.Z.useConfig({
+    }, [I, z, U]),
+    Q = g.Z.useConfig({
       location: "CollectiblesFilterableShop"
     }).showCardsV2;
   return (0, r.jsxs)(r.Fragment, {
@@ -106,15 +106,15 @@ function k(e) {
           [j.loadIn]: G
         }),
         ref: W,
-        children: [Y && [...Array(z)].map((e, t) => Q ? (0, r.jsx)(x.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !Y && F.map((e, t) => {
-          let n = g.Z.getCategory(e.categorySkuId);
+        children: [Y && [...Array(z)].map((e, t) => Q ? (0, r.jsx)(x.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !Y && M.map((e, t) => {
+          let n = p.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {
             newValue: {
               tilePosition: t
             },
             children: Q ? (0, r.jsx)(v.Z, {
               skuId: e.skuId,
-              onClickAnalytics: (0, E.wO)(e, k, T)
+              onClickAnalytics: (0, E.wO)(e, k, I)
             }, e.skuId) : (0, r.jsx)(b.Z, {
               product: e,
               user: P,

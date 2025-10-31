@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk299363 = require("./299363.js"),
   Chunk627845 = require("./627845.jsx"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk675997 = require("./675997.js"),
+  Chunk296812 = require("./296812.js"),
   Chunk313201 = require("./313201.js"),
   Chunk877371 = require("./877371.js"),
   Chunk243778 = require("./243778.jsx"),
@@ -103,9 +103,7 @@ function en(e) {
   }, {
     autoTrackExposure: true
   }).enabled;
-  let t = m.Z.useConfig({
-      location: "UserSettingsAccessibility"
-    }).enableShopTakeOver,
+  let t = (0, m.A)("UserSettingsAccessibility"),
     n = y.fN.useExperiment({
       location: "UserSettingsAccessibility"
     }).enabled,
@@ -469,7 +467,7 @@ function e_() {
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t.b3XBzg),
           checked: require,
-          onChange: Chunk675997
+          onChange: Chunk296812
         })
       }), (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCESSIBILITY_REDUCED_MOTION_AUTO_PLAY_GIFS,

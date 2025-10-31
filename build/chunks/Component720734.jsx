@@ -1,4 +1,4 @@
-/** Chunk was on 39297 **/
+/** Chunk was on 71874 **/
 /** chunk id: 720734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tg,
@@ -408,7 +408,7 @@ class tp extends Chunk647438.PureComponent {
         })
       })
     }
-    return i === u.z.DO_NOT_DISTURB_REMINDER_POPOVER ? (0, a.jsx)(z.Z, {
+    return i === u.z.DO_NOT_DISTURB_REMINDER_POPOVER ? (0, a.jsx)(H.Z, {
       targetElementRef: this.avatarWithPopoutRef,
       onDismiss: o,
       children: this.renderAvatarWithPopout({
@@ -834,7 +834,7 @@ function tg() {
     B = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     F = null == exports ? true : exports.avatarDecoration,
     G = (0, Chunk541638.R)(exports, null != Chunk575175 ? Chunk575175 : true),
-    H = (0, Chunk676742.Z)(Chunk647438 ? Chunk795318 : Chunk522651),
+    z = (0, Chunk676742.Z)(Chunk647438 ? Chunk795318 : Chunk522651),
     V = Chunk5192.ZP.useName(null != Chunk575175 ? Chunk575175 : true, null, exports),
     K = null != (e = Chunk51144.ZP.useName(exports)) ? module : "",
     {
@@ -866,7 +866,7 @@ function tg() {
         a = [];
       if (null != exports ? e = exports.partyId : null != require && null != require.party && null != require.party.id && (e = require.party.id), null != module) {
         var r;
-        a = s()(Array.from(null != (r = Chunk831506.Z.getParty(module)) ? Chunk647438 : [])).map(e => ez.default.getUser(e)).filter(Chunk823379.lm).value()
+        a = s()(Array.from(null != (r = Chunk831506.Z.getParty(module)) ? Chunk647438 : [])).map(e => eH.default.getUser(e)).filter(Chunk823379.lm).value()
       }
       return Chunk951288.length > 1
     }),
@@ -1028,9 +1028,9 @@ function tb(e) {
     {
       Component: B,
       events: F,
-      play: H
+      play: z
     } = P,
-    z = l || o ? g.v0G : B,
+    H = l || o ? g.v0G : B,
     W = (0, Z.Z)(n, l, o, s),
     K = R ? ta.intl.string(ta.t.ARRV6m) : null;
   t = _ ? ta.intl.string(ta.t["29gnR4"]) : null != K ? (0, a.jsxs)("div", {
@@ -1054,7 +1054,7 @@ function tb(e) {
     location: O.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: true
   });
-  r.useEffect(() => () => H(), [S, H]);
+  r.useEffect(() => () => z(), [S, z]);
   let X = r.useCallback(e => {
       b(e, q)
     }, [b, q]),
@@ -1152,7 +1152,7 @@ function tb(e) {
               [tr.micButtonWithMenu]: true
             }),
             disabled: s,
-            icon: (0, a.jsx)(z, {
+            icon: (0, a.jsx)(H, {
               size: "custom",
               width: 20,
               height: 20,
@@ -1229,7 +1229,7 @@ function tb(e) {
         onMouseLeave: () => {
           h(), F.onMouseLeave()
         },
-        icon: (0, a.jsx)(z, {
+        icon: (0, a.jsx)(H, {
           size: "custom",
           width: 20,
           height: 20,

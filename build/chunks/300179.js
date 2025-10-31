@@ -1,4 +1,4 @@
-/** Chunk was on 39297 **/
+/** Chunk was on 71874 **/
 /** chunk id: 300179, original params: e,t,n (module,exports,require) **/
 module.exports = {
   shopCard: "shopCard_c3d04b",
@@ -7,7 +7,6 @@ module.exports = {
   shopCardDarkHighlighted: "shopCardDarkHighlighted_c3d04b",
   shopCardAnimation: "shopCardAnimation_c3d04b",
   avatarContainer: "avatarContainer_c3d04b",
-  previewThumbnailVariant: "previewThumbnailVariant_c3d04b",
   nameplateContainer: "nameplateContainer_c3d04b",
   cardText: "cardText_c3d04b",
   darkCardBackground: "darkCardBackground_c3d04b",
@@ -33,7 +32,6 @@ module.exports = {
   preview: "preview_c3d04b",
   externalProductDimmed: "externalProductDimmed_c3d04b",
   orbIconAligned: "orbIconAligned_c3d04b",
-  thumbnailVariant: "thumbnailVariant_c3d04b",
   badgeLeftAligned: "badgeLeftAligned_c3d04b",
   wishlistButton: "wishlistButton_c3d04b"
 }

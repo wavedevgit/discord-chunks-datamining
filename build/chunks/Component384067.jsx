@@ -41,9 +41,9 @@ let _ = e => {
     } = (0, d.E)(y, "home", "marketing wide banner"),
     {
       bannerURL: k
-    } = (0, g.UI)(_);
+    } = (0, p.UI)(_);
   if (null == k) return null;
-  let T = b === p.AW.ORBS;
+  let I = b === g.AW.ORBS;
   return (0, r.jsx)(a.$, {
     innerRef: E,
     onChange: j,
@@ -51,18 +51,18 @@ let _ = e => {
     children: (0, r.jsxs)("div", {
       ref: E,
       className: s()(C.row, C.between, C.bannerBlockContainer, C.centeredSection, {
-        [C.extraRounded]: T
+        [C.extraRounded]: I
       }),
       children: [(0, r.jsx)("div", {
         className: s()(C.wideBannerBackgroundImg, {
-          [C.extraRounded]: T
+          [C.extraRounded]: I
         }),
         children: (0, r.jsx)("img", {
           ref: x,
           src: k,
           alt: _.title,
           className: s()(C.wideBannerArt, {
-            [C.wideBannerArtOrbs]: T
+            [C.wideBannerArtOrbs]: I
           }),
           style: {
             height: null != O ? "".concat(O, "px") : "auto"
@@ -79,16 +79,16 @@ let _ = e => {
             style: {
               color: null != (n = _.bannerTextColor) ? n : "var(--header-primary)"
             },
-            className: T ? C.wideBannerOrbsHeading : true,
-            variant: T ? "heading-xl/bold" : "heading-lg/semibold",
+            className: I ? C.wideBannerOrbsHeading : true,
+            variant: I ? "heading-xl/bold" : "heading-lg/semibold",
             children: _.title
           }), (0, r.jsx)(o.Text, {
             style: {
               color: null != (i = _.bannerTextColor) ? i : "var(--text-muted)"
             },
             lineClamp: 2,
-            variant: T ? "text-md/medium" : "text-sm/medium",
-            children: T ? h.intl.format(h.t.SFFP7K, {
+            variant: I ? "text-md/medium" : "text-sm/medium",
+            children: I ? h.intl.format(h.t.SFFP7K, {
               helpdeskArticle: c.Z.getArticleURL(f.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : _.body
           })]

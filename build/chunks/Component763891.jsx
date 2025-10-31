@@ -43,19 +43,19 @@ function R(e) {
     isFetchingCategories: n,
     scrollerRef: R,
     tab: Z
-  } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
+  } = e, w = (0, p.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
     noCache: D,
-    includeUnpublished: M
-  } = (0, x.Z)(), F = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, a.ap)(z), [K, Y, q] = l.useMemo(() => {
+    includeUnpublished: F
+  } = (0, x.Z)(), M = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, a.ap)(z), [K, Y, q] = l.useMemo(() => {
     switch (Z) {
       case O.AW.AVATAR_DECORATIONS:
-        return [y.intl.string(y.t.dRZYNE), G ? L.Z : I.Z, i.Z.AVATAR_DECORATION];
+        return [y.intl.string(y.t.dRZYNE), G ? L.Z : T.Z, i.Z.AVATAR_DECORATION];
       case O.AW.PROFILE_EFFECTS:
         return [y.intl.string(y.t["1cNjtx"]), G ? N.Z : A.Z, i.Z.PROFILE_EFFECT];
       case O.AW.NAMEPLATES:
         return [y.intl.string(y.t.V68Fqz), G ? P.Z : B.Z, i.Z.NAMEPLATE];
       case O.AW.BUNDLES:
-        return [y.intl.string(y.t.FYFpps), G ? T.Z : k.Z, i.Z.BUNDLE]
+        return [y.intl.string(y.t.FYFpps), G ? I.Z : k.Z, i.Z.BUNDLE]
     }
   }, [Z, G]), J = (0, h.a)(), Q = l.useMemo(() => J(W.filter(e => {
     var t;
@@ -66,7 +66,7 @@ function R(e) {
       sessionId: H,
       checkpoint: _.a.SHOP_MOUNTED,
       tab: Z,
-      unpublishedCategoriesShown: M,
+      unpublishedCategoriesShown: F,
       cacheDisabled: D
     })
   }, []), l.useEffect(() => {
@@ -74,14 +74,14 @@ function R(e) {
       sessionId: H,
       checkpoint: _.a.SHOP_RENDERED,
       tab: Z,
-      unpublishedCategoriesShown: M,
+      unpublishedCategoriesShown: F,
       cacheDisabled: D
     })
-  }, [H, M, D, n, Z]);
+  }, [H, F, D, n, Z]);
   let $ = f.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;
-  return n || null == F ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  return n || null == M ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(Y, ")")
@@ -94,8 +94,8 @@ function R(e) {
     }), (0, r.jsx)("div", {
       className: j.products,
       children: X.slice(40 * (V - 1), 40 * V).map((e, t) => {
-        let n = p.Z.getCategory(e.categorySkuId);
-        return null == n ? null : (0, r.jsx)(g.k0, {
+        let n = g.Z.getCategory(e.categorySkuId);
+        return null == n ? null : (0, r.jsx)(p.k0, {
           newValue: {
             tilePosition: t
           },
@@ -104,7 +104,7 @@ function R(e) {
             onClickAnalytics: (0, E.wO)(e, Z, w)
           }, e.skuId) : (0, r.jsx)(b.Z, {
             product: e,
-            user: F,
+            user: M,
             category: n,
             tab: Z
           }, e.skuId)

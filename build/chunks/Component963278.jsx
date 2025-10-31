@@ -26,9 +26,9 @@ let v = e => {
     shelf: t,
     handleTransition: n,
     tab: i
-  } = e, v = (0, a.e7)([c.default], () => c.default.getCurrentUser()), E = (0, a.e7)([d.Z], () => d.Z.getCategory(t.categorySkuId)), x = g.Z.useConfig({
+  } = e, v = (0, a.e7)([c.default], () => c.default.getCurrentUser()), E = (0, a.e7)([d.Z], () => d.Z.getCategory(t.categorySkuId)), x = p.Z.useConfig({
     location: "ShelfBlock"
-  }).showCardsV2, O = (0, u.sp)(), S = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), y = (0, p.l)(S).slice(0, 4);
+  }).showCardsV2, O = (0, u.sp)(), S = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), y = (0, g.l)(S).slice(0, 4);
   return null == v ? null : (0, r.jsxs)("div", {
     className: s()(b.shelfBlockContainer, b.centeredSection),
     children: [(0, r.jsxs)("div", {

@@ -3,7 +3,6 @@
 "use strict";
 require.d(exports, {
   AW: () => m,
-  Ch: () => x,
   Cm: () => O,
   HU: () => A,
   IV: () => v,
@@ -74,7 +73,4 @@ let N = {
   }, {
     sortType: Chunk792091.E.POPULARITY,
     sortDirection: Chunk497598.F.DESC
-  }];
-var x = function(e) {
-  return e.DEFAULT = "default", e.THUMBNAIL = "thumbnail", e
-}({})
+  }]

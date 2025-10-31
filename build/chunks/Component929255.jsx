@@ -35,8 +35,8 @@ function y(e) {
     showFilterInitially: c = true,
     onUnmount: u
   } = e;
-  (0, g.A)();
-  let p = (0, d.FF)("CollectiblesBrowse"),
+  (0, p.A)();
+  let g = (0, d.FF)("CollectiblesBrowse"),
     f = l.useRef(null),
     {
       handleScroll: C
@@ -45,7 +45,7 @@ function y(e) {
       setCategoryRef: m,
       handleScrollToCategory: b
     } = (0, h.xV)(f.current),
-    [v, E] = l.useState(p && c),
+    [v, E] = l.useState(g && c),
     [x, O] = l.useState(false);
   return l.useEffect(() => {
     null != i && b(i)
@@ -57,14 +57,14 @@ function y(e) {
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), l.useEffect(() => {
-    p || E(false)
-  }, [p, E]), (0, r.jsx)("div", {
+    g || E(false)
+  }, [g, E]), (0, r.jsx)("div", {
     className: s()(S.pageWrapper, {
-      [S.pageWrapperFilter]: p
+      [S.pageWrapperFilter]: g
     }),
     children: (0, r.jsxs)("main", {
       className: s()(S.page, {
-        [S.pageFilter]: p
+        [S.pageFilter]: g
       }),
       children: [(0, r.jsx)(a.yWw, {
         className: S.shopScroll,
@@ -97,7 +97,7 @@ let j = e => {
     scrollerRef: h,
     sortedCategories: y,
     setCategoryRef: j
-  } = e, k = (0, d.FF)("CollectiblesBrowse"), T = l.useRef(null), I = (0, g.S)(e => e.hasDefaultFilters()), L = (0, u.sp)(), {
+  } = e, k = (0, d.FF)("CollectiblesBrowse"), I = l.useRef(null), T = (0, p.S)(e => e.hasDefaultFilters()), L = (0, u.sp)(), {
     handlePageChange: B,
     currentPage: P
   } = (0, m.h)(h), A = l.useCallback(e => {
@@ -115,7 +115,7 @@ let j = e => {
     if (!t || !n) return;
     let e = e => {
       let t = e.target;
-      null === T.current || null === N.current || T.current.contains(t) || N.current.contains(t) || (c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      null === I.current || null === N.current || I.current.contains(t) || N.current.contains(t) || (c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == L ? true : L.sessionId,
         page_section: null == L ? true : L.pageSection,
         page_category: null == L ? true : L.pageCategory,
@@ -136,7 +136,7 @@ let j = e => {
         className: S.controls,
         children: [(0, r.jsx)("div", {
           className: S.controlsLeftSide,
-          children: (0, r.jsx)(p.Z, {})
+          children: (0, r.jsx)(g.Z, {})
         }), (0, r.jsxs)("div", {
           className: s()(S.controlsRightSide, {
             [S.controlsRightSideResponsive]: t
@@ -170,13 +170,13 @@ let j = e => {
           })]
         }), n && t && (0, r.jsx)("div", {
           className: S.filterOverlay,
-          ref: T,
+          ref: I,
           children: (0, r.jsx)(a.Den, {
             className: S.filterOverlayContent,
             children: (0, r.jsx)(_.Z, {})
           })
         })]
-      }), k && !I ? (0, r.jsx)(b.Z, {
+      }), k && !T ? (0, r.jsx)(b.Z, {
         scrollerRef: h,
         tab: o
       }, o) : (0, E.RE)(o) ? (0, r.jsx)(v.Z, {

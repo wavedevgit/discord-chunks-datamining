@@ -48,11 +48,11 @@ function v(e) {
         o = i ? m.AW.ORBS : m.AW.CATALOG;
       S(n), j(!l), a(o, s)
     }, [v, a, c]),
-    T = (0, d.FF)("CollectiblesContent"),
+    I = (0, d.FF)("CollectiblesContent"),
     {
-      searchError: I
-    } = (0, g.a)();
-  return T && null != I ? (0, r.jsx)(_.Z, {}) : null != h ? (0, r.jsx)(f.Z, {
+      searchError: T
+    } = (0, p.a)();
+  return I && null != T ? (0, r.jsx)(_.Z, {}) : null != h ? (0, r.jsx)(f.Z, {
     onRetry: u,
     errorMessage: h,
     errorOrigin: f.i.SHOP_PAGE
@@ -60,7 +60,7 @@ function v(e) {
     handleTransition: k,
     tab: t,
     transitionState: o
-  }) : (0, r.jsx)(p.Z, {
+  }) : (0, r.jsx)(g.Z, {
     tab: t,
     sortedCategories: n,
     initialCategoryId: O,

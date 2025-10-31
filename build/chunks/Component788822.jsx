@@ -66,7 +66,7 @@ let h = e => {
           categorySkuId: E,
           isInternalShopDeeplink: true,
           isOrbsExclusive: null == _ ? true : _.isOrbsExclusive
-        }), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        }), a.default.track(p.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == j ? true : j.sessionId,
           sku_id: E,
           page_type: "home",
@@ -96,14 +96,14 @@ let h = e => {
         className: f.featuredBlockButtonContainer,
         children: (0, r.jsx)(s.Button, {
           variant: "overlay-primary",
-          text: p.intl.string(p.t.jVcuVY),
+          text: g.intl.string(g.t.jVcuVY),
           onClick: e => {
             v({
               sourceButton: "shop marketing take me there button",
               categorySkuId: E,
               isInternalShopDeeplink: true,
               isOrbsExclusive: null == _ ? true : _.isOrbsExclusive
-            }), e.stopPropagation(), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            }), e.stopPropagation(), a.default.track(p.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == j ? true : j.sessionId,
               sku_id: E,
               page_type: "home",

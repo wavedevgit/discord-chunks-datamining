@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   EB: () => h,
-  MV: () => p,
+  MV: () => g,
   q3: () => f
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
@@ -16,7 +16,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
-let p = e => {
+let g = e => {
     let {
       analyticsSource: t,
       analyticsLocations: n
@@ -53,10 +53,10 @@ let p = e => {
       analyticsLocations: s,
       analyticsSource: o,
       currentTabLocation: c,
-      newestAnalyticsLocation: g
-    } = p(t);
+      newestAnalyticsLocation: p
+    } = g(t);
     r.useEffect(() => {
-      if (l !== u.f7.VISIBLE || g !== c) return;
+      if (l !== u.f7.VISIBLE || p !== c) return;
       let r = t === u.AW.CATALOG ? i : o;
       a.default.track(d.rMx.COLLECTIBLES_SHOP_VIEWED, {
         location_stack: s,
@@ -65,15 +65,15 @@ let p = e => {
         page_type: t === u.AW.CATALOG ? "full" : t,
         category: t === u.AW.HOME ? true : n
       })
-    }, [s, e, t, n, c, l, i, o, g])
+    }, [s, e, t, n, c, l, i, o, p])
   },
   h = (e, t) => {
     let {
       analyticsLocations: n
-    } = p(e);
+    } = g(e);
     r.useEffect(() => {
       null == t || o.ZP.canUseCollectibles(t) || a.default.track(d.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: g.cd.COLLECTIBLES_SHOP,
+        type: p.cd.COLLECTIBLES_SHOP,
         location_stack: n
       })
     }, [n, t])

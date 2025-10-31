@@ -1,4 +1,4 @@
-/** Chunk was on 39297 **/
+/** Chunk was on 71874 **/
 /** chunk id: 572444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -130,23 +130,23 @@ function y() {
     noiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported(),
     noiseCancellationEnableStats: Chunk131951.Z.getKrispEnableStats(),
     vadDuringPreProcess: Chunk131951.Z.getModeOptions().vadDuringPreProcess
-  })), F = D ? "KRISP" : Z ? "STANDARD" : "NONE", G = (0, Chunk304809.N)(), H = Chunk647438.useCallback(() => {
+  })), F = D ? "KRISP" : Z ? "STANDARD" : "NONE", G = (0, Chunk304809.N)(), z = Chunk647438.useCallback(() => {
     var e;
     null == (e = S.current) || module.stop(), S.current = null, C(null)
   }, []);
 
-  function z() {
+  function H() {
     Chunk131951.Z.getMediaEngine().stopRecordingRawSamples()
   }
 
   function V(e) {
-    if (t && z(), H(), null == G) return;
+    if (t && H(), z(), null == G) return;
     let n = G.createBufferSource();
     n.buffer = e.audioBuffer, E.current = G.createGain(), E.current.gain.value = T, n.connect(E.current), E.current.connect(G.destination), n.loop = true, n.start(), S.current = n, C(e)
   }
   Chunk647438.useEffect(() => {
-    H()
-  }, [H]), (0, Chunk493773.zq)(() => {
+    z()
+  }, [z]), (0, Chunk493773.zq)(() => {
     Chunk846027.Z.setMode(Chunk131951.Z.getMode(), {
       vadDuringPreProcess: null,
       vadKrispActivationThreshold: true
@@ -250,8 +250,8 @@ function y() {
           children: "Recorder"
         }), (0, Chunk951288.jsx)(Chunk755721.zx, {
           color: exports ? Chunk755721.zx.Colors.RED : Chunk755721.zx.Colors.BRAND,
-          onClick: exports ? z : function() {
-            H(), require(true), Chunk846027.Z.setLoopback("krisp_test", true), Chunk131951.Z.getMediaEngine().startRecordingRawSamples((t, a, r) => {
+          onClick: exports ? H : function() {
+            z(), require(true), Chunk846027.Z.setLoopback("krisp_test", true), Chunk131951.Z.getMediaEngine().startRecordingRawSamples((t, a, r) => {
               n(false), d.Z.setLoopback("krisp_test", false);
               let l = new AudioBuffer({
                 length: t.length,
@@ -292,7 +292,7 @@ function y() {
           recording: e,
           playing: e === y,
           onPlay: V,
-          onStop: H
+          onStop: z
         }, t))]
       })]
     })

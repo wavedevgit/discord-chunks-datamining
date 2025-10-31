@@ -1,4 +1,4 @@
-/** Chunk was on 39297 **/
+/** Chunk was on 71874 **/
 /** chunk id: 191767, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => A
@@ -463,7 +463,7 @@ let G = {
     APPLE_AND_GPAY_DISABLED: "Express Checkout Element - Google Pay and Apple Pay Disabled",
     CONFIGURABLE: "Express Checkout Element - Configurable"
   },
-  H = {
+  z = {
     GPAY_FILTERED: {
       wallets: {
         googlePay: "always",
@@ -483,7 +483,7 @@ let G = {
       }
     }
   },
-  z = {
+  H = {
     appearance: {
       theme: "flat",
       variables: {
@@ -506,9 +506,9 @@ let G = {
   W = e => true !== e ? JSON.stringify(e, null, 2) : "undefined";
 
 function K() {
-  let [e, t] = Chunk647438.useState(W(z)), [n, i] = Chunk647438.useState(z), [o, s] = Chunk647438.useState(W(V)), [c, m] = Chunk647438.useState(V), [p, h] = Chunk647438.useState(null), [x, f] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk237012.DS, {
+  let [e, t] = Chunk647438.useState(W(H)), [n, i] = Chunk647438.useState(H), [o, s] = Chunk647438.useState(W(V)), [c, m] = Chunk647438.useState(V), [p, h] = Chunk647438.useState(null), [x, f] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk237012.DS, {
     errorLabel: G.CONFIGURABLE,
-    elementOptions: z,
+    elementOptions: H,
     children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
       onConfirm: e => {
         console.log("ExpressCheckoutElement onConfirm event: ", e)
@@ -640,14 +640,14 @@ function q() {
             children: "expressCheckoutElement.options:"
           }), (0, a.jsx)(g.Z, {
             className: O.markdown,
-            children: "".concat("``").concat(W(H[e]), " ").concat("``")
+            children: "".concat("``").concat(W(z[e]), " ").concat("``")
           }), (0, a.jsx)(C.DS, {
             errorLabel: t,
             children: (0, a.jsx)(l.ExpressCheckoutElement, {
               onConfirm: e => {
                 console.log("ExpressCheckoutElement onConfirm event: ", e)
               },
-              options: H[e]
+              options: z[e]
             })
           })]
         })

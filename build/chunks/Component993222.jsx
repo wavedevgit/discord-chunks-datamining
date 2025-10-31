@@ -28,7 +28,7 @@ let _ = e => {
     } = e, {
       isPurchased: m,
       isPartiallyOwnedBundle: b
-    } = (0, d.L)(t), v = (0, s.e7)([o.default], () => o.default.getCurrentUser()), E = c.ZP.canUseCollectibles(v), x = (0, p.Iw)(t), {
+    } = (0, d.L)(t), v = (0, s.e7)([o.default], () => o.default.getCurrentUser()), E = c.ZP.canUseCollectibles(v), x = (0, g.Iw)(t), {
       isOrbExclusive: O
     } = (0, f.Ip)({
       product: t,
@@ -36,9 +36,9 @@ let _ = e => {
       prioritizedCurrency: _,
       hasDiscountOffer: null != x
     });
-    if (n === g.Zh.NONE) return null;
+    if (n === p.Zh.NONE) return null;
     let S = null;
-    return (n === g.Zh.NEW ? S = h.intl.string(h.t.y2b7CA) : n === g.Zh.ORBS_EXCLUSIVE ? S = h.intl.string(h.t["0TmQRG"]) : n === g.Zh.NEW_COLOR_VARIANT && (S = h.intl.string(h.t.S6kE9h)), null == S && (!b && !m && (0, u.Yq)(t.skuId) ? S = h.intl.string(h.t.y2b7CA) : O && (S = h.intl.string(h.t["0TmQRG"]))), null == S) ? null : (0, r.jsx)(a.IGR, {
+    return (n === p.Zh.NEW ? S = h.intl.string(h.t.y2b7CA) : n === p.Zh.ORBS_EXCLUSIVE ? S = h.intl.string(h.t["0TmQRG"]) : n === p.Zh.NEW_COLOR_VARIANT && (S = h.intl.string(h.t.S6kE9h)), null == S && (!b && !m && (0, u.Yq)(t.skuId) ? S = h.intl.string(h.t.y2b7CA) : O && (S = h.intl.string(h.t["0TmQRG"]))), null == S) ? null : (0, r.jsx)(a.IGR, {
       text: S,
       disableColor: true,
       className: i()(l, C.productCardBadge)
@@ -50,7 +50,7 @@ let _ = e => {
       badgeOverride: n,
       className: l,
       prioritizedCurrency: i
-    } = e, s = (0, g.LJ)(t);
+    } = e, s = (0, p.LJ)(t);
     return null == s ? null : (0, r.jsx)(_, {
       product: s,
       badgeOverride: n,

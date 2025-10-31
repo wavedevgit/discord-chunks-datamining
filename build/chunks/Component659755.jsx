@@ -30,7 +30,7 @@ let x = e => {
     } = e, l = (0, f.rC)(t), {
       isPurchased: a,
       isPartiallyOwnedBundle: o
-    } = (0, p.L)(t), c = l === s.Z.PROFILE_EFFECT;
+    } = (0, g.L)(t), c = l === s.Z.PROFILE_EFFECT;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: i()(E.productPreview, {
@@ -108,7 +108,7 @@ let x = e => {
     let {
       skuId: t,
       isCardHovered: n
-    } = e, l = (0, f.LJ)(t), i = (0, g.o)(l);
+    } = e, l = (0, f.LJ)(t), i = (0, p.o)(l);
     if (null == l) return null;
     let s = (0, b.W)(l, i);
     return (0, r.jsx)(x, {

@@ -1,4 +1,4 @@
-/** Chunk was on 39297 **/
+/** Chunk was on 71874 **/
 /** chunk id: 78933, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ec
@@ -149,9 +149,9 @@ function ec(e) {
       location: "UserProfileAccountPopout"
     }),
     eG = (null == ex ? true : ex.widgets) != null && ex.widgets.length > 0,
-    eH = eG ? [] : [s.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
-    [ez, eV] = (0, g.US)(eH),
-    eW = ez === s.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
+    ez = eG ? [] : [s.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
+    [eH, eV] = (0, g.US)(ez),
+    eW = eH === s.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     eK = r.useCallback(() => {
       eV(en.L.USER_DISMISS), n()
     }, [eV, n]),
@@ -211,7 +211,7 @@ function ec(e) {
             children: [(0, a.jsx)(D.Z, {
               user: t,
               className: ei.username,
-              nickname: z.ZP.getName(em, null, t),
+              nickname: H.ZP.getName(em, null, t),
               onOpenProfile: eh ? true : eB,
               pronouns: null == ex ? true : ex.pronouns,
               tags: (0, a.jsx)(N.Z, {
@@ -371,12 +371,12 @@ function ec(e) {
                         children: eP
                       })
                     }
-                  }), !__OVERLAY__ && H.wS && eO && (0, a.jsx)(J.V4, {
+                  }), !__OVERLAY__ && z.wS && eO && (0, a.jsx)(J.V4, {
                     action: "COPY_USER_ID",
                     icon: c.VuL,
                     label: el.intl.string(el.t["/AXYnE"]),
                     onClick: () => {
-                      (0, H.JG)(t.id), n()
+                      (0, z.JG)(t.id), n()
                     }
                   })]
                 })

@@ -1,8 +1,8 @@
-/** Chunk was on 72740 **/
+/** Chunk was on 48502 **/
 /** chunk id: 336079, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => f,
-  d: () => b
+  C: () => b,
+  d: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,16 +22,16 @@ let p = (0, Chunk647438.createContext)({
     orbProductContext: null,
     onRedeemVirtualCurrency: () => {}
   }),
-  b = e => {
+  f = e => {
     let {
       skuId: t,
       loadId: n,
-      analyticsLocations: a,
-      onCheckoutSuccess: b,
-      children: f
-    } = e, y = (0, i.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
+      analyticsLocations: i,
+      onCheckoutSuccess: f,
+      children: b
+    } = e, y = (0, a.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
       product: O
-    } = (0, o.T)(t), v = (0, l.useMemo)(() => {
+    } = (0, o.T)(t), m = (0, l.useMemo)(() => {
       if (null == O) return null;
       let e = (0, s.T4)({
           product: O,
@@ -44,28 +44,28 @@ let p = (0, Chunk647438.createContext)({
         product: O
       }
     }, [O, y]), {
-      redeemVirtualCurrency: m,
-      isSubmitting: g,
-      error: h
+      redeemVirtualCurrency: g,
+      isSubmitting: h,
+      error: v
     } = (0, d.f)(), j = (0, l.useCallback)(e => {
-      m(t, n, n => {
-        b({
+      g(t, n, n => {
+        f({
           entitlements: n,
           skuId: t
         }), e()
       })
-    }, [t, n, m, b]);
+    }, [t, n, g, f]);
     return (0, r.jsx)(p.Provider, {
       value: {
         skuId: t,
         loadId: n,
-        analyticsLocations: null != a ? a : [],
-        orbProductContext: v,
+        analyticsLocations: null != i ? i : [],
+        orbProductContext: m,
         onRedeemVirtualCurrency: j,
-        isRedeeming: g,
-        orbRedemptionError: h
+        isRedeeming: h,
+        orbRedemptionError: v
       },
-      children: f
+      children: b
     })
   },
-  f = () => (0, Chunk647438.useContext)(p)
+  b = () => (0, Chunk647438.useContext)(p)

@@ -1,4 +1,4 @@
-/** Chunk was on 39297 **/
+/** Chunk was on 71874 **/
 /** chunk id: 778648, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -82,10 +82,10 @@ let Z = function() {
   let [e, t] = Chunk647438.useState(Chunk474936.Si.TIER_2), [n, v] = Chunk647438.useState(null), j = (0, Chunk442837.Wu)([Chunk430824.Z], () => Chunk430824.Z.getGuildsArray()), [Z] = (0, Chunk442837.Wu)([Chunk78839.Z], () => [Chunk78839.Z.getPremiumSubscription()]), L = Chunk305342.map(e => ({
     value: e,
     label: e.name
-  })), [M, U] = Chunk647438.useState(L.length > 0 ? L[0].value : null), [B, F] = Chunk647438.useState(""), [G, H] = Chunk647438.useState({
+  })), [M, U] = Chunk647438.useState(L.length > 0 ? L[0].value : null), [B, F] = Chunk647438.useState(""), [G, z] = Chunk647438.useState({
     plan_id: Chunk474936.Xh.PREMIUM_MONTH_TIER_2,
     gift: "true"
-  }), z = "true" !== G.gift && null != Z, [V, W] = Chunk647438.useState(L.length > 0 ? L[0].value : null), {
+  }), H = "true" !== G.gift && null != Z, [V, W] = Chunk647438.useState(L.length > 0 ? L[0].value : null), {
     analyticsLocations: K
   } = (0, Chunk906732.ZP)(Chunk100527.Z.PAYMENT_FLOW_TEST_PAGE), [q, Y] = Chunk647438.useState(""), [J, X] = Chunk647438.useState(Chunk981631.lds), {
     balance: Q,
@@ -221,7 +221,7 @@ let Z = function() {
               value: Chunk474936.Xh.PREMIUM_MONTH_TIER_0,
               label: "Nitro Basic"
             }],
-            onChange: e => H(t => A(R({}, t), {
+            onChange: e => z(t => A(R({}, t), {
               plan_id: e
             })),
             popoutLayerContext: Chunk246992.O$
@@ -235,7 +235,7 @@ let Z = function() {
               value: "false",
               label: "Not Gift"
             }],
-            onChange: e => H(t => A(R({}, t), {
+            onChange: e => z(t => A(R({}, t), {
               gift: e
             })),
             popoutLayerContext: Chunk246992.O$
@@ -243,12 +243,12 @@ let Z = function() {
         }), (0, Chunk951288.jsx)(Chunk481060.aML, {
           "data-migration-pending": true,
           text: "Already subscribed",
-          shouldShow: z,
+          shouldShow: H,
           children: e => (0, a.jsx)(d.Button, A(R({
             variant: "primary",
             text: "Open Link"
           }, e), {
-            disabled: z,
+            disabled: H,
             onClick: () => {
               window.open(I.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + l.stringify(R({}, G)))
             }
