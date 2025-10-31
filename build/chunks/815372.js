@@ -20,7 +20,7 @@ var o = function(e) {
   return e.SHOP = "SHOP", e.NITRO_HOME = "NITRO_HOME", e.QUEST_HOME = "QUEST_HOME", e.APPS_HOME = "APPS_HOME", e.SETTINGS = "SETTINGS", e.PLAYGROUND = "PLAYGROUND", e
 }(o || {});
 class s extends Chunk81825.Z {
-  static fromType(e, t, n, r) {
+  static fromType(e, t, n, r, a) {
     switch (e) {
       case "SHOP":
         return new s({
@@ -53,13 +53,14 @@ class s extends Chunk81825.Z {
           path: null != t ? t : i.Z5c.APP,
           type: "PLAYGROUND",
           label: n,
-          collectionId: r
+          collectionId: r,
+          IconComponent: a
         });
       default:
         throw Error("Unhandled InAppNavigationType")
     }
   }
   constructor(e) {
-    super(), a(this, "id", true), a(this, "path", true), a(this, "type", true), a(this, "label", true), a(this, "collectionId", true), this.id = null != e.collectionId ? "".concat(e.type, "_").concat(e.collectionId) : e.type, this.path = e.path, this.type = e.type, this.label = e.label, this.collectionId = e.collectionId
+    super(), a(this, "id", true), a(this, "path", true), a(this, "type", true), a(this, "label", true), a(this, "collectionId", true), a(this, "IconComponent", true), this.id = null != e.collectionId ? "".concat(e.type, "_").concat(e.collectionId) : e.type, this.path = e.path, this.type = e.type, this.label = e.label, this.collectionId = e.collectionId, this.IconComponent = e.IconComponent
   }
 }

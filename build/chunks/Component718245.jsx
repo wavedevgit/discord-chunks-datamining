@@ -70,13 +70,10 @@ function p(e) {
   let l = i.useContext(a.KJ);
   if (null == l || null == (n = l.experiments) || null == (t = n.enabledExperiments) ? true : t.includes("mana-toggle-inputs")) return (0, r.jsx)(o.C, d({}, e));
   let f = c({}, u(e)),
-    p = e.options.map(e => {
-      var t, n;
-      return _(d({}, e), {
-        icon: e.leadingIcon,
-        desc: "string" == typeof e.desc ? e.desc : null != (n = null == (t = e.desc) ? true : t.toString()) ? n : null
-      })
-    }),
+    p = e.options.map(e => _(d({}, e), {
+      icon: e.leadingIcon,
+      desc: e.desc
+    })),
     h = _(d({}, f), {
       options: p,
       errorMessage: e.errorMessage,

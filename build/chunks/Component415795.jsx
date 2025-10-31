@@ -618,10 +618,13 @@ class x extends Chunk647438.Component {
         });
         break;
       case Chunk815372.Ky.PLAYGROUND:
-        n = null != (t = Chunk647438.label) ? exports : "".concat(Chunk647438.collectionId, " Playground"), r = "revenue" === Chunk647438.collectionId ? (0, Chunk951288.jsx)(Chunk481060.uMN, {
-          size: "xs",
-          color: "currentColor"
-        }) : (0, Chunk951288.jsx)(Chunk481060.hh5, {
+        if (n = null != (t = Chunk647438.label) ? exports : "".concat(Chunk647438.collectionId, " Playground"), null != Chunk647438.IconComponent) {
+          let e = Chunk647438.IconComponent;
+          r = (0, Chunk951288.jsx)(module, {
+            size: "xs",
+            color: "currentColor"
+          })
+        } else r = (0, Chunk951288.jsx)(Chunk481060.hh5, {
           size: "xs",
           color: "currentColor"
         });
