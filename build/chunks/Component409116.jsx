@@ -22,11 +22,12 @@ let f = e => {
       className: i,
       discountOfferAmount: a,
       discount: o = u.f_,
-      variant: s = "heading-md/semibold"
+      variant: s = "text-md/semibold"
     } = e;
-    return n.currency === c.pK.DISCORD_ORB ? (0, r.jsx)(g, {
+    return n.currency === c.pK.DISCORD_ORB ? (0, r.jsx)(b, {
       orbAmount: n.amount,
-      className: i
+      className: i,
+      variant: s
     }) : (0, r.jsx)(p, {
       price: n,
       nitroIconType: t,
@@ -47,39 +48,39 @@ let f = e => {
       nitroIconSize: c = "md",
       className: f,
       discountOfferAmount: p,
-      discount: g = u.f_,
-      variant: b = "heading-md/semibold"
-    } = e, m = null != p, h = (0, s.qr)(n, t), x = g !== u.f_ && g.discountPercentage >= 5 && !m ? (0, r.jsxs)(r.Fragment, {
+      discount: b = u.f_,
+      variant: g = "heading-md/semibold"
+    } = e, m = null != p, x = (0, s.qr)(n, t), h = b !== u.f_ && b.discountPercentage >= 5 && !m ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.nn4, {
         children: d.intl.format(d.t.niC6DK, {
-          price: h,
-          discountPercentage: g.discountPercentage
+          price: x,
+          discountPercentage: b.discountPercentage
         })
       }), (0, r.jsx)("span", {
         "aria-hidden": true,
-        children: h
+        children: x
       }), (0, r.jsxs)(o.Text, {
-        variant: b,
+        variant: g,
         color: "text-feedback-positive",
         className: v.discount,
         "aria-hidden": true,
-        children: ["(-", g.discountPercentage, "%)"]
+        children: ["(-", b.discountPercentage, "%)"]
       })]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.nn4, {
         children: d.intl.format(d.t["6C36MF"], {
-          price: h
+          price: x
         })
       }), (0, r.jsx)("span", {
         "aria-hidden": true,
         className: i()({
           [v.priceStrikethrough]: m
         }, f),
-        children: h
+        children: x
       })]
     });
     return (0, r.jsxs)(o.Text, {
-      variant: b,
+      variant: g,
       className: i()({
         [v.discountBackgroundColor]: m
       }, v.container, f),
@@ -95,8 +96,8 @@ let f = e => {
         size: c,
         color: "currentColor",
         className: v.icon
-      }) : null, x, m && (0, r.jsxs)(o.Heading, {
-        variant: "heading-md/semibold",
+      }) : null, h, m && (0, r.jsxs)(o.Text, {
+        variant: g,
         className: v.discountPill,
         children: [(0, r.jsx)(o.nn4, {
           children: d.intl.format(d.t.rItDbx, {
@@ -111,13 +112,14 @@ let f = e => {
       })]
     })
   },
-  g = e => {
+  b = e => {
     let {
       orbAmount: n,
-      className: t
+      className: t,
+      variant: l = "text-md/semibold"
     } = e;
     return (0, r.jsxs)(o.Text, {
-      variant: "text-md/semibold",
+      variant: l,
       className: i()(v.container, t),
       children: [(0, r.jsx)(o.nn4, {
         children: d.intl.format(d.t["a/Y8PK"], {

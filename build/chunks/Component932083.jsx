@@ -15,7 +15,7 @@ let a = e => {
     className: n
   } = e, a = (0, i.LJ)(t), o = (0, s.To)(a);
   return (0, r.jsx)(l.Heading, {
-    variant: "heading-lg/bold",
+    variant: "heading-md/medium",
     color: "text-primary",
     className: n,
     lineClamp: 1,

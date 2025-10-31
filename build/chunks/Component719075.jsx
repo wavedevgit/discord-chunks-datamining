@@ -39,20 +39,22 @@ let b = e => {
       hasDiscountOffer: null != j
     }), T = O && !b;
     return v ? (0, r.jsx)(s.Text, {
-      variant: "text-md/semibold",
-      color: "header-muted",
+      variant: "text-md/medium",
+      color: "text-tertiary",
       children: m.intl.string(m.t.wu4gyV)
     }) : x ? (0, r.jsx)(s.Text, {
-      variant: "text-md/semibold",
+      variant: "text-md/medium",
+      color: "text-tertiary",
       children: m.intl.string(m.t.BEjTij)
     }) : E && !T ? (0, r.jsx)(s.Text, {
-      variant: "text-md/semibold",
+      variant: "text-md/medium",
+      color: "text-tertiary",
       children: m.intl.string(m.t["6cfuDj"])
     }) : S ? (0, r.jsx)(s.Text, {
-      variant: "text-md/semibold",
+      variant: "text-md/bold",
       children: m.intl.string(m.t.nBtvYB)
     }) : O ? (0, r.jsx)(s.Text, {
-      variant: "text-md/semibold",
+      variant: "text-md/bold",
       children: m.intl.string(m.t.rt69oo)
     }) : 0 === k.length ? null : (0, r.jsx)(p.F, {
       price: k[0],
@@ -60,7 +62,8 @@ let b = e => {
       nitroIconType: b ? "default" : true,
       nitroIconSize: "sm",
       discountOfferAmount: j,
-      className: k[0].currency !== C.pK.DISCORD_ORB || I ? true : _.insufficientOrbs
+      className: k[0].currency !== C.pK.DISCORD_ORB || I ? true : _.insufficientOrbs,
+      variant: "text-md/bold"
     })
   },
   v = e => {

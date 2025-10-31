@@ -1,7 +1,7 @@
 /** Chunk was on 78825 **/
 /** chunk id: 680942, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,12 +18,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-let h = e => {
+let x = e => {
   let {
     product: n,
     primary: t,
-    selectedVariantIndex: h,
-    returnRef: x,
+    selectedVariantIndex: x,
+    returnRef: h,
     onSuccess: j,
     tooltipDelay: y
   } = e, {
@@ -39,7 +39,7 @@ let h = e => {
       icon: s.OgN,
       size: "md",
       onClick: e => {
-        e.stopPropagation(), d.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        e.stopPropagation(), d.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == S ? true : S.sessionId,
           sku_id: n.skuId,
           page_section: null == S ? true : S.pageSection,
@@ -51,12 +51,12 @@ let h = e => {
         }), (0, c.Z)({
           skuId: (0, p.S)({
             product: n,
-            selectedVariantIndex: h
+            selectedVariantIndex: x
           }),
           isGift: true,
-          giftingOrigin: b.Wt.SHOP_PAGE,
+          giftingOrigin: g.Wt.SHOP_PAGE,
           analyticsLocations: O,
-          returnRef: x,
+          returnRef: h,
           variantsReturnStyle: a.v.VARIANTS_GROUP,
           onClose: null != j ? e => {
             e && j()
