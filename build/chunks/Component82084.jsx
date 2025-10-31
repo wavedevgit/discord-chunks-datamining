@@ -1,4 +1,4 @@
-/** Chunk was on 75685 **/
+/** Chunk was on 81014 **/
 /** chunk id: 82084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -25,7 +25,7 @@ function b(e) {
       sidebarFooter: g,
       emptyState: h
     } = e,
-    O = function(e, t) {
+    x = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
         if (null == e) return {};
@@ -40,7 +40,7 @@ function b(e) {
       }
       return l
     }(e, ["root", "directory", "target", "defaultTarget", "onPanelChange", "sidebarHeader", "sidebarFooter", "emptyState"]);
-  let [x, P] = l.useState(false), [S, C] = l.useState(1.4), _ = l.useRef(null), w = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), E = (0, o.e7)([s.Z], () => s.Z.isFocused());
+  let [O, P] = l.useState(false), [S, C] = l.useState(1.4), _ = l.useRef(null), w = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), E = (0, o.e7)([s.Z], () => s.Z.isFocused());
   return l.useEffect(() => {
     let e = e => {
       let {
@@ -53,7 +53,7 @@ function b(e) {
       u.S.unsubscribe(f.CkL.SHAKE_SETTINGS_MODAL, e), clearTimeout(_.current)
     }
   }, [w, E]), (0, r.jsx)(a.UkV, {
-    isShaking: x,
+    isShaking: O,
     intensity: S,
     children: (0, r.jsx)(i.A, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -72,9 +72,9 @@ function b(e) {
         })
       }
       return e
-    }({}, O), n = n = {
+    }({}, x), n = n = {
       children: (0, r.jsx)(d.Z, {
-        onClose: O.onClose,
+        onClose: x.onClose,
         root: b,
         directory: p,
         target: y,

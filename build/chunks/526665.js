@@ -2,8 +2,10 @@
 /** chunk id: 526665, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  BK: () => u,
   KV: () => c,
-  NT: () => u,
+  Ml: () => d,
+  NT: () => f,
   gj: () => l,
   wy: () => s,
   yP: () => o
@@ -65,6 +67,16 @@ let i = (0, Chunk427164.le)({
   c = e => !!o(e) && a.getConfig({
     location: e
   }).showRedesignedNotifications,
-  u = e => i.useConfig({
+  u = e => {
+    let t = s(e),
+      n = a.useConfig({
+        location: e
+      }).showRedesignedVoiceAndVideo;
+    return t && n
+  },
+  d = e => !!o(e) && a.getConfig({
+    location: e
+  }).showRedesignedVoiceAndVideo,
+  f = e => i.useConfig({
     location: e
   }).showLegacyOpen

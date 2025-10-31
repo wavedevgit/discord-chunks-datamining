@@ -1,4 +1,4 @@
-/** Chunk was on 75685 **/
+/** Chunk was on 81014 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => v
@@ -26,7 +26,7 @@ function v(e) {
     footer: o,
     onClose: y,
     emptyState: v
-  } = e, h = p.Z.useField("showNavigationMobile"), O = l.useRef(null), x = l.useMemo(() => {
+  } = e, h = p.Z.useField("showNavigationMobile"), x = l.useRef(null), O = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -49,11 +49,11 @@ function v(e) {
     return t.layout.forEach(t => {
       t.hoisted ? e.push(t) : n.push(t)
     }), [e, n]
-  }, [t.layout]), C = (0, f.Ll)(), _ = (0, u.Z)("settings-sidebar", O);
+  }, [t.layout]), C = (0, f.Ll)(), _ = (0, u.Z)("settings-sidebar", x);
   return (0, r.jsx)(s.f6W, {
     theme: C,
     children: e => (0, r.jsx)(d.ZP, {
-      contentTypes: x,
+      contentTypes: O,
       children: t => {
         let {
           visibleContent: l
@@ -123,7 +123,7 @@ function v(e) {
                 }({
                   ref: e => {
                     var t;
-                    O.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+                    x.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
                   },
                   className: m.navScroller,
                   fade: true

@@ -15,7 +15,7 @@ require.d(exports, {
   gM: () => G,
   jl: () => L,
   z: () => P
-}), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./415506.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./781311.js");
+}), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./415506.js"), require("./781311.js");
 var Chunk586132 = require("./586132.js"),
   Chunk134432 = require("./134432.js"),
   Chunk581883 = require("./581883.js"),
@@ -79,15 +79,17 @@ let {
     s = p.ANM.STICKER_ASSET(e.id, o),
     l = (0, r.W)({
       location: "sticker_url"
-    }).enabled;
+    }).enabled,
+    u = o === f.og.WEBP ? "&quality=lossless" : "",
+    d = l ? "&force_sdr=true" : "";
   if ("development" !== g) {
     if (e.format_type === f.u3.LOTTIE) return "".concat(location.protocol).concat(E).concat(s);
-    let r = Math.min(2, (0, i.x_)()),
-      a = new URL(s, location.protocol + m);
-    return a.searchParams.set("size", (0, i.oO)(n * r).toString()), e.format_type === f.u3.APNG && t && !(0, c.isAndroid)() && a.searchParams.set("passthrough", "false"), o === f.og.WEBP && a.searchParams.set("quality", "lossless"), l && a.searchParams.set("force_sdr", "true"), a.toString()
+    let r = e.format_type === f.u3.APNG && t && !(0, c.isAndroid)() ? "&passthrough=false" : "",
+      a = Math.min(2, (0, i.x_)());
+    return "".concat(location.protocol).concat(m).concat(s, "?size=").concat((0, i.oO)(n * a)).concat(r).concat(u).concat(d)
   }
-  let u = new URL(s, location.protocol + m);
-  return l && u.searchParams.set("force_sdr", "true"), u.toString()
+  let h = "".concat(location.protocol).concat(m).concat(s);
+  return l ? "".concat(h, "?force_sdr=true") : h
 }, R = e => null != e.match("development" !== g ? v : I), P = e => ({
   type: f.Ih.PACK,
   id: e.id,

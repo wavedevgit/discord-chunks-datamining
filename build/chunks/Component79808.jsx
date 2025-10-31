@@ -1,4 +1,4 @@
-/** Chunk was on 75685 **/
+/** Chunk was on 81014 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -55,8 +55,8 @@ function y(e) {
     defaultTarget: v,
     onClose: g,
     sidebarHeader: h,
-    sidebarFooter: O,
-    onPanelChange: x,
+    sidebarFooter: x,
+    onPanelChange: O,
     emptyState: P
   } = e, S = null != m && (null == (t = j.entry(m)) ? true : t.targetPanelKey) != null ? m : v;
   (0, o.ZP)(() => {
@@ -104,14 +104,14 @@ function y(e) {
           showNavigationMobile: false
         }), Z(p(b({}, t), {
           animateScroll: false
-        })), null == x || x(n)
+        })), null == O || O(n)
       })
     } else Z(p(b({}, t), {
       animateScroll: true
     })), d.Z.setState({
       targetKey: true
     })
-  }, [C, _, k, j, D, x]);
+  }, [C, _, k, j, D, O]);
   let I = l.useMemo(() => ({
       navTransition: T
     }), [T]),
@@ -124,7 +124,7 @@ function y(e) {
       children: [(0, r.jsx)(c.P, {
         root: y,
         header: h,
-        footer: O,
+        footer: x,
         onClose: A,
         emptyState: P
       }), (0, r.jsx)(a.Z, {

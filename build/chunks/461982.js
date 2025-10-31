@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 461982, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
@@ -9,7 +9,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk215871 = require("./215871.js"),
   Chunk191694 = require("./191694.jsx"),
   Chunk388032 = require("./388032.jsx");
-let a = (0, Chunk509613.vB)(Chunk313789.n.ACTIVITY_SECTION, {
+let o = (0, Chunk509613.vB)(Chunk313789.n.ACTIVITY_SECTION, {
   useLabel: () => Chunk388032.intl.string(Chunk388032.t.SmHCFf),
   buildLayout: () => [Chunk199548.t, Chunk191694.q, Chunk215871.b]
 })

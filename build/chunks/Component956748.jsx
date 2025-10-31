@@ -1,32 +1,32 @@
-/** Chunk was on 8895 **/
+/** Chunk was on 28532 **/
 /** chunk id: 956748, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => a
+  G: () => s
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk492938 = require("./492938.js");
-let a = e => {
+let s = e => {
   let {
     showStatus: t,
     width: n,
-    opacity: a
+    opacity: s
   } = e;
-  return (0, l.jsxs)("div", {
-    className: s.nameplatePlaceholderUserRow,
+  return (0, a.jsxs)("div", {
+    className: r.nameplatePlaceholderUserRow,
     style: {
-      opacity: a
+      opacity: s
     },
-    children: [(0, l.jsx)(i.qEK, {
+    children: [(0, a.jsx)(i.qEK, {
       src: null,
       size: i.EFr.SIZE_32,
-      status: t ? r.Skl.ONLINE : true,
+      status: t ? l.Skl.ONLINE : true,
       statusColor: "var(--border-subtle)",
       "aria-hidden": true,
-      imageClassName: s.nameplatePlaceholderAvatar
-    }), (0, l.jsx)("div", {
-      className: s.nameplatePlaceholderBar,
+      imageClassName: r.nameplatePlaceholderAvatar
+    }), (0, a.jsx)("div", {
+      className: r.nameplatePlaceholderBar,
       style: {
         maxWidth: null != n ? n : "100px"
       }

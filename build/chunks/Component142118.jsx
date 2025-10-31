@@ -1,4 +1,4 @@
-/** Chunk was on 75685 **/
+/** Chunk was on 81014 **/
 /** chunk id: 142118, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -14,14 +14,16 @@ let c = Chunk647438.memo(function(e) {
   } = e, {
     useTitle: n,
     layout: c,
-    init: s
-  } = t, u = null == n ? true : n();
+    init: s,
+    useBadge: u
+  } = t, d = null == n ? true : n(), f = null == u ? true : u();
   return l.useEffect(() => {
     null == s || s()
   }, [s]), (0, r.jsxs)(o.Kqy, {
     gap: 16,
     children: [(0, r.jsx)(a.Y, {
-      title: u
+      title: d,
+      badge: f
     }), c.map(e => (0, r.jsx)(i.Z, {
       node: e
     }, e.key))]

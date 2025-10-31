@@ -1,4 +1,4 @@
-/** Chunk was on 75685 **/
+/** Chunk was on 81014 **/
 /** chunk id: 598612, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y: () => i
@@ -11,7 +11,7 @@ function i(e) {
   let {
     title: t,
     subtitle: n,
-    icon: i,
+    badge: i,
     type: a = "primary"
   } = e;
   return "secondary" === a ? (0, r.jsx)(l.Kqy, {
