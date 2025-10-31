@@ -2,7 +2,7 @@
 /** chunk id: 684263, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  U: () => m
+  U: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,27 +19,27 @@ var Chunk951288 = require("./951288.js"),
   Chunk689157 = require("./689157.js"),
   Chunk63243 = require("./63243.js"),
   Chunk244488 = require("./244488.js");
-let m = Chunk647438.memo(function(e) {
+let _ = Chunk647438.memo(function(e) {
   let {
     product: t,
     isPurchased: n,
     isHighlighted: l,
     user: i
   } = e, {
-    firstProfileEffect: m,
+    firstProfileEffect: _,
     firstAvatarDecoration: b,
     firstNameplate: v
-  } = (0, p.Rj)(t), E = (0, g.O1)(b), x = (0, c.ZP)(), O = (0, a.ap)(x), S = null != v && null != b && null != m, y = S ? o.EFr.SIZE_80 : o.EFr.SIZE_96;
+  } = (0, p.Rj)(t), E = (0, g.O1)(b), x = (0, c.ZP)(), O = (0, a.ap)(x), S = null != v && null != b && null != _, y = S ? o.EFr.SIZE_80 : o.EFr.SIZE_96;
   return (0, r.jsxs)("div", {
     className: s()(h.container, {
       [h.twoItemBundle]: !S,
       [h.threeItemBundle]: S
     }),
-    children: [null != m && (0, r.jsx)("div", {
+    children: [null != _ && (0, r.jsx)("div", {
       className: h.profileEffectShopPreview,
       children: (0, r.jsx)(d.Z, {
         isHighlighted: l,
-        skuId: m.skuId,
+        skuId: _.skuId,
         isPurchased: n,
         removeSetHeight: true
       })
@@ -51,7 +51,7 @@ let m = Chunk647438.memo(function(e) {
         avatarSize: y,
         isPurchased: n,
         isHighlighted: l,
-        avatarPlaceholderSrc: O ? _ : C,
+        avatarPlaceholderSrc: O ? m : C,
         className: h.avatar
       })
     }), S && (0, r.jsx)("div", {

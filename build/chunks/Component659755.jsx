@@ -68,14 +68,14 @@ let x = e => {
           avatarSize: c.EFr.SIZE_120
         });
       case s.Z.NAMEPLATE:
-        return (0, r.jsx)(m.Z, {
+        return (0, r.jsx)(_.Z, {
           nameplate: a,
           user: l,
           isHighlighted: n,
           isPurchased: false
         });
       case s.Z.BUNDLE:
-        return (0, r.jsx)(_.U, {
+        return (0, r.jsx)(m.U, {
           product: t,
           user: l,
           isHighlighted: n,

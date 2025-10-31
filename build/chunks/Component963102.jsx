@@ -55,26 +55,26 @@ function B(e) {
     selected: n,
     displayText: i,
     handleTransition: a
-  } = e, [o, u] = l.useState(false), f = l.useRef(null), [h, C] = l.useState(0), _ = l.useRef(false), m = e => {
+  } = e, [o, u] = l.useState(false), f = l.useRef(null), [h, C] = l.useState(0), m = l.useRef(false), _ = e => {
     clearTimeout(h), C(setTimeout(() => {
       u(e)
-    }, 100)), e && (_.current = p.Z.keyboardModeEnabled)
+    }, 100)), e && (m.current = p.Z.keyboardModeEnabled)
   }, b = e => {
-    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), m(true))
+    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), _(true))
   };
   return (0, r.jsx)("div", {
     className: T.tabWithMenuContainer,
-    onMouseEnter: () => m(true),
-    onMouseLeave: () => m(false),
+    onMouseEnter: () => _(true),
+    onMouseLeave: () => _(false),
     children: (0, r.jsx)(c.yRy, {
       targetElementRef: f,
       shouldShow: o,
       position: "bottom",
       align: "left",
-      onRequestOpen: () => m(true),
+      onRequestOpen: () => _(true),
       onRequestClose: () => {
         var e;
-        _.current && !p.Z.keyboardModeEnabled && (0, d.Qj)(), m(false), null == (e = f.current) || e.focus()
+        m.current && !p.Z.keyboardModeEnabled && (0, d.Qj)(), _(false), null == (e = f.current) || e.focus()
       },
       renderPopout: e => {
         let {
@@ -146,7 +146,7 @@ function P(e) {
     handleTransition: n
   } = e, i = (0, u.ZP)(), d = (0, o.e7)([v.default], () => v.default.getCurrentUser()), {
     enabled: p
-  } = (0, m.WX)({
+  } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
   }), O = (0, h.Y)({
     location: "CollectiblesShopHeaderBar"
@@ -163,7 +163,7 @@ function P(e) {
   });
   let A = t === y.AW.ORBS ? j.ZY5.SHOP_ORBS_TAB : j.ZY5.COLLECTIBLES_SHOP,
     N = l.useCallback(() => {
-      (0, _.Y)({
+      (0, m.Y)({
         pageType: A,
         sectionType: j.jXE.ORBS_BALANCE_MENU,
         ctaObject: j.qAy.CTA_TO_QUEST_HOME
@@ -171,8 +171,8 @@ function P(e) {
         fromContent: a.j.ORBS_BALANCE_MENU
       })
     }, [A]),
-    R = (0, x.eN)("collectibles_shop_header_bar"),
-    Z = l.useCallback(() => {
+    Z = (0, x.eN)("collectibles_shop_header_bar"),
+    R = l.useCallback(() => {
       (null == d ? true : d.id) != null && (0, C.openUserProfileModal)({
         userId: d.id,
         section: k.oh.WISHLIST,
@@ -213,14 +213,14 @@ function P(e) {
             handleTransition: n
           }, l)
         })
-      }), (p || R || O) && (0, r.jsxs)("div", {
+      }), (p || Z || O) && (0, r.jsxs)("div", {
         className: T.alignedRightContent,
-        children: [R && (0, r.jsx)(S.Z, {
+        children: [Z && (0, r.jsx)(S.Z, {
           handleTransition: n,
           selectedTab: t
         }), O && (0, r.jsx)(c.P3F, {
           className: T.wishlistButton,
-          onClick: Z,
+          onClick: R,
           "aria-label": I.intl.string(I.t["7lZ31J"]),
           children: (0, r.jsx)(c.h_8, {
             size: "xs",

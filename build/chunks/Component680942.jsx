@@ -27,25 +27,25 @@ let g = e => {
     onSuccess: v,
     tooltipDelay: j
   } = e, {
-    analyticsLocations: P
-  } = (0, c.ZP)(), E = l.useRef(null), x = (0, p.sp)(), _ = (0, f.Z)();
+    analyticsLocations: x
+  } = (0, c.ZP)(), P = l.useRef(null), E = (0, p.sp)(), _ = (0, f.Z)();
   return (0, r.jsx)(o.u, {
     text: m.intl.string(m.t["JCFN/y"]),
     delay: j,
     children: (0, r.jsx)(s.hU, {
       "aria-label": m.intl.string(m.t["JCFN/y"]),
-      buttonRef: E,
+      buttonRef: P,
       variant: n ? "primary" : "secondary",
       icon: s.OgN,
       size: "md",
       onClick: e => {
         e.stopPropagation(), d.default.track(y.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == x ? true : x.sessionId,
+          collectibles_shop_session_id: null == E ? true : E.sessionId,
           sku_id: t.skuId,
-          page_section: null == x ? true : x.pageSection,
-          page_category: null == x ? true : x.pageCategory,
+          page_section: null == E ? true : E.pageSection,
+          page_category: null == E ? true : E.pageCategory,
           tile_type: i.Z[t.type],
-          tile_position: String(null == x ? true : x.tilePosition),
+          tile_position: String(null == E ? true : E.tilePosition),
           cta_name: "gift button",
           page_type: _ || "home"
         }), (0, u.Z)({
@@ -55,7 +55,7 @@ let g = e => {
           }),
           isGift: true,
           giftingOrigin: O.Wt.SHOP_PAGE,
-          analyticsLocations: P,
+          analyticsLocations: x,
           returnRef: h,
           variantsReturnStyle: a.v.VARIANTS_GROUP,
           onClose: null != v ? e => {

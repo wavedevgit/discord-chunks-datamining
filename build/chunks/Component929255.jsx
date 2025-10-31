@@ -42,7 +42,7 @@ function y(e) {
       handleScroll: C
     } = (0, o.z)(f, t),
     {
-      setCategoryRef: m,
+      setCategoryRef: _,
       handleScrollToCategory: b
     } = (0, h.xV)(f.current),
     [v, E] = l.useState(g && c),
@@ -77,13 +77,13 @@ function y(e) {
           tab: t,
           scrollerRef: f,
           sortedCategories: n,
-          setCategoryRef: m
+          setCategoryRef: _
         })
       }), v && !x && (0, r.jsx)("div", {
         className: S.divider
       }), v && !x && (0, r.jsx)(a.Ttm, {
         className: S.filterBar,
-        children: (0, r.jsx)(_.Z, {})
+        children: (0, r.jsx)(m.Z, {})
       })]
     })
   })
@@ -100,7 +100,7 @@ let j = e => {
   } = e, k = (0, d.FF)("CollectiblesBrowse"), I = l.useRef(null), T = (0, p.S)(e => e.hasDefaultFilters()), L = (0, u.sp)(), {
     handlePageChange: B,
     currentPage: P
-  } = (0, m.h)(h), A = l.useCallback(e => {
+  } = (0, _.h)(h), A = l.useCallback(e => {
     c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == L ? true : L.sessionId,
       page_section: null == L ? true : L.pageSection,
@@ -173,7 +173,7 @@ let j = e => {
           ref: I,
           children: (0, r.jsx)(a.Den, {
             className: S.filterOverlayContent,
-            children: (0, r.jsx)(_.Z, {})
+            children: (0, r.jsx)(m.Z, {})
           })
         })]
       }), k && !T ? (0, r.jsx)(b.Z, {

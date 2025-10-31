@@ -25,8 +25,8 @@ let h = e => {
       onClick: d,
       icon: h,
       prioritizedCurrency: C,
-      onClickAnalytics: _
-    } = e, m = (0, a.Nd)(), b = null == m ? true : m.tab, v = (0, s.sp)(), E = (0, p.J)(t, C), x = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, _);
+      onClickAnalytics: m
+    } = e, _ = (0, a.Nd)(), b = null == _ ? true : _.tab, v = (0, s.sp)(), E = (0, p.J)(t, C), x = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, m);
     return null != d || null != h ? (0, r.jsx)(l.hU, {
       variant: "primary",
       "aria-label": f.intl.string(f.t.SKNnqq),

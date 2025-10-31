@@ -214,7 +214,7 @@ function L() {
             disabled: module,
             onClick: A
           }), (0, Chunk951288.jsx)(Chunk481060.Button, {
-            variant: "primary",
+            variant: "secondary",
             text: Chunk388032.intl.string(Chunk388032.t.nuPtYi),
             onClick: P
           })]

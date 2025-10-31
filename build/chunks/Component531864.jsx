@@ -96,7 +96,7 @@ let g = {
       peaking: t,
       transitioning: n,
       style: i
-    } = e, g = window.innerHeight, [h, C] = l.useState(false), _ = f.map(e => {
+    } = e, g = window.innerHeight, [h, C] = l.useState(false), m = f.map(e => {
       let {
         skuId: t
       } = e;
@@ -120,7 +120,7 @@ let g = {
           rotation: f,
           size: h,
           skuId: C
-        } = e, m = null == (l = _[t]) ? true : l.items[0], b = null == (i = _[t]) ? true : i.type, v = b === a.Z.AVATAR_DECORATION ? 384 : 512;
+        } = e, _ = null == (l = m[t]) ? true : l.items[0], b = null == (i = m[t]) ? true : i.type, v = b === a.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, r.jsxs)("div", {
           className: p.asset,
           style: {
@@ -132,10 +132,10 @@ let g = {
             transitionDelay: "".concat(Math.random() / 3, "s"),
             transitionDuration: "".concat(d.lb - 200 * Math.random(), "ms")
           },
-          children: [null != m && b === a.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
-            item: m
-          }), null != m && b === a.Z.PROFILE_EFFECT && (0, r.jsx)(o.Z, {
-            skuId: m.skuId,
+          children: [null != _ && b === a.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
+            item: _
+          }), null != _ && b === a.Z.PROFILE_EFFECT && (0, r.jsx)(o.Z, {
+            skuId: _.skuId,
             isPurchased: false,
             isHighlighted: true
           })]

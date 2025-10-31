@@ -1,7 +1,7 @@
 /** Chunk was on 48502 **/
 /** chunk id: 453713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => x
+  P: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -67,7 +67,7 @@ function j(e, t) {
   }
   return l
 }
-let P = s()(e => {
+let x = s()(e => {
     let t = false;
     if (null != e && (0, d.FX)(e)) {
       let n = (0, d._i)(e);
@@ -75,7 +75,7 @@ let P = s()(e => {
     }
     return t ? f.TVs.unsafe_rawColors.PRIMARY_700.css : f.TVs.unsafe_rawColors.PRIMARY_200.css
   }),
-  E = e => {
+  P = e => {
     let {
       variantGroupProduct: t,
       variant: n,
@@ -84,9 +84,9 @@ let P = s()(e => {
       selectedVariantIndex: s,
       onEnter: d,
       onLeave: b,
-      minimal: E
+      minimal: P
     } = e, {
-      isPurchased: x
+      isPurchased: E
     } = (0, O.L)(n), _ = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(i)), {
       onFocus: C
     } = _, A = j(_, ["onFocus"]), S = l.useCallback(e => {
@@ -95,7 +95,7 @@ let P = s()(e => {
     return (0, r.jsx)(p.u, {
       text: m.intl.string(m.t["6cfuDj"]),
       "aria-label": false,
-      shouldShow: !E && x,
+      shouldShow: !P && E,
       asContainer: true,
       children: (0, r.jsx)(f.P3F, v(h({}, A), {
         tag: "li",
@@ -118,22 +118,22 @@ let P = s()(e => {
         className: g.colorVariant,
         children: (0, r.jsx)("div", {
           className: a()(g.colorSwatch, {
-            [g.open]: !E,
+            [g.open]: !P,
             [g.selected]: i === s
           }),
           style: {
             backgroundColor: n.variantValue,
             zIndex: o - i
           },
-          children: x ? (0, r.jsx)(f.kSu, {
+          children: E ? (0, r.jsx)(f.kSu, {
             className: g.purchasedIndicator,
-            color: P(n.variantValue)
+            color: x(n.variantValue)
           }) : null
         })
       }))
     })
   },
-  x = e => {
+  E = e => {
     var t, n;
     let {
       variantGroupProduct: l,
@@ -143,9 +143,9 @@ let P = s()(e => {
       minimal: d,
       selectedVariantIndex: p,
       alternativeBackgroundColor: y
-    } = e, O = o.previewingVariantIndex, P = null == (t = l.variants) ? true : t[p], x = null !== O ? null == (n = l.variants) ? true : n[O] : true, _ = (0, b.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
-    if (null == P) return null;
-    let C = null != x ? x.variantLabel : null == P ? true : P.variantLabel;
+    } = e, O = o.previewingVariantIndex, x = null == (t = l.variants) ? true : t[p], E = null !== O ? null == (n = l.variants) ? true : n[O] : true, _ = (0, b.Z)("shop-variants-group-".concat(l.storeListingId), u.hy.HORIZONTAL);
+    if (null == x) return null;
+    let C = null != E ? E.variantLabel : null == x ? true : x.variantLabel;
     return (0, r.jsx)(c.bG, {
       navigator: _,
       children: (0, r.jsx)(c.SJ, {
@@ -167,7 +167,7 @@ let P = s()(e => {
               className: g.variantsList,
               children: null == (t = l.variants) ? true : t.map((e, t) => {
                 var n, i;
-                return (0, r.jsx)(E, {
+                return (0, r.jsx)(P, {
                   variantGroupProduct: l,
                   variant: e,
                   variantIndex: t,

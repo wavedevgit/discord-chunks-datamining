@@ -2,7 +2,7 @@
 /** chunk id: 763891, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,17 +37,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk266058 = require("./266058.js"),
   Chunk719138 = require("./719138.js");
 
-function R(e) {
+function Z(e) {
   var t;
   let {
     isFetchingCategories: n,
-    scrollerRef: R,
-    tab: Z
+    scrollerRef: Z,
+    tab: R
   } = e, w = (0, p.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
     noCache: D,
-    includeUnpublished: F
-  } = (0, x.Z)(), M = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, a.ap)(z), [K, Y, q] = l.useMemo(() => {
-    switch (Z) {
+    includeUnpublished: M
+  } = (0, x.Z)(), F = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, a.ap)(z), [K, Y, q] = l.useMemo(() => {
+    switch (R) {
       case O.AW.AVATAR_DECORATIONS:
         return [y.intl.string(y.t.dRZYNE), G ? L.Z : T.Z, i.Z.AVATAR_DECORATION];
       case O.AW.PROFILE_EFFECTS:
@@ -57,31 +57,31 @@ function R(e) {
       case O.AW.BUNDLES:
         return [y.intl.string(y.t.FYFpps), G ? I.Z : k.Z, i.Z.BUNDLE]
     }
-  }, [Z, G]), J = (0, h.a)(), Q = l.useMemo(() => J(W.filter(e => {
+  }, [R, G]), J = (0, h.a)(), Q = l.useMemo(() => J(W.filter(e => {
     var t;
     return e.type === q || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true
   })), [W, q, J]), X = (0, C.l)(Q);
   l.useEffect(() => {
-    (0, _.n)({
+    (0, m.n)({
       sessionId: H,
-      checkpoint: _.a.SHOP_MOUNTED,
-      tab: Z,
-      unpublishedCategoriesShown: F,
+      checkpoint: m.a.SHOP_MOUNTED,
+      tab: R,
+      unpublishedCategoriesShown: M,
       cacheDisabled: D
     })
   }, []), l.useEffect(() => {
-    n || (0, _.n)({
+    n || (0, m.n)({
       sessionId: H,
-      checkpoint: _.a.SHOP_RENDERED,
-      tab: Z,
-      unpublishedCategoriesShown: F,
+      checkpoint: m.a.SHOP_RENDERED,
+      tab: R,
+      unpublishedCategoriesShown: M,
       cacheDisabled: D
     })
-  }, [H, F, D, n, Z]);
+  }, [H, M, D, n, R]);
   let $ = f.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;
-  return n || null == M ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  return n || null == F ? (0, r.jsx)(_.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(Y, ")")
@@ -101,12 +101,12 @@ function R(e) {
           },
           children: $ ? (0, r.jsx)(v.Z, {
             skuId: e.skuId,
-            onClickAnalytics: (0, E.wO)(e, Z, w)
+            onClickAnalytics: (0, E.wO)(e, R, w)
           }, e.skuId) : (0, r.jsx)(b.Z, {
             product: e,
-            user: M,
+            user: F,
             category: n,
-            tab: Z
+            tab: R
           }, e.skuId)
         }, e.skuId)
       })
@@ -125,9 +125,9 @@ function R(e) {
               page_category: null == w ? true : w.pageCategory,
               page_index: e,
               page_size: 40,
-              cta_name: "".concat(Z, " page ").concat(e),
-              page_type: Z
-            }), U(e), null == R || null == (t = R.current) || t.scrollToTop({
+              cta_name: "".concat(R, " page ").concat(e),
+              page_type: R
+            }), U(e), null == Z || null == (t = Z.current) || t.scrollToTop({
               animate: true
             })
           },

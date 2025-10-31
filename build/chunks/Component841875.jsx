@@ -35,7 +35,7 @@ function x() {
   } = (0, Chunk825102.WX)({
     location: "Shop"
   }), c = (0, Chunk381585.sp)(), u = Chunk647438.useCallback(e => {
-    f.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    f.default.track(_.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == c ? true : c.sessionId,
       page_section: null == c ? true : c.pageSection,
       page_category: null == c ? true : c.pageCategory,

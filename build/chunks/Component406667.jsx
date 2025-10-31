@@ -142,7 +142,7 @@ let S = e => {
       variant: t
     } = e, n = l.useMemo(() => {
       let e = (0, u.FX)(t.variantValue) && .3 > (0, u.Bd)((0, u._i)(t.variantValue));
-      return (0, f.Lq)(e ? m.Ilk.BLACK_500 : m.Ilk.WHITE_500)
+      return (0, f.Lq)(e ? _.Ilk.BLACK_500 : _.Ilk.WHITE_500)
     }, [t.variantValue]);
     return (0, r.jsx)(d.kSu, {
       className: v.productVariantCheckmark,
@@ -155,7 +155,7 @@ let S = e => {
       isCollapsed: n = false,
       showLabel: l = false,
       className: i
-    } = e, a = (0, _.LJ)(t), o = (0, h.o)(a);
+    } = e, a = (0, m.LJ)(t), o = (0, h.o)(a);
     return null == a || a.type !== c.Z.VARIANTS_GROUP || null == a.variants || 0 === a.variants.length ? null : (0, r.jsxs)("div", {
       className: s()(v.productVariantsOuterContainer, i),
       children: [(0, r.jsx)(S, {

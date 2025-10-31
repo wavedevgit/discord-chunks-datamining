@@ -44,7 +44,7 @@ function j(e) {
   return e
 }
 
-function P(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,7 +56,7 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = e => {
+let P = e => {
     let {
       orbAmount: t
     } = e;
@@ -69,7 +69,7 @@ let E = e => {
       }), null === t ? "--" : t]
     })
   },
-  x = e => {
+  E = e => {
     var {
       orbBalance: t,
       orbPriceAmount: n,
@@ -99,15 +99,15 @@ let E = e => {
     return null === n ? (0, r.jsx)(i.aML, {
       "data-migration-pending": true,
       text: h.intl.string(h.t["c/rcUu"]),
-      children: e => (0, r.jsx)(l.zxk, P(j({}, e, c), {
+      children: e => (0, r.jsx)(l.zxk, x(j({}, e, c), {
         disabled: true
       }))
     }) : null === t || n > t ? (0, r.jsx)(i.aML, {
       text: h.intl.string(h.t.keFvXM),
-      children: e => (0, r.jsx)(l.zxk, P(j({}, e, c), {
+      children: e => (0, r.jsx)(l.zxk, x(j({}, e, c), {
         disabled: true
       }))
-    }) : (0, r.jsx)(l.zxk, P(j({}, c), {
+    }) : (0, r.jsx)(l.zxk, x(j({}, c), {
       loading: a,
       onClick: o
     }))
@@ -132,7 +132,7 @@ let E = e => {
       })
     }) : (0, r.jsx)(b.E, {
       sku: a,
-      value: (0, r.jsx)(E, {
+      value: (0, r.jsx)(P, {
         orbAmount: t
       })
     })
@@ -152,7 +152,7 @@ let E = e => {
         }), (0, r.jsx)(i.Text, {
           className: v.displayFlex,
           variant: "text-md/medium",
-          children: (0, r.jsx)(E, {
+          children: (0, r.jsx)(P, {
             orbAmount: t
           })
         })]
@@ -218,7 +218,7 @@ let E = e => {
     return (0, r.jsxs)(i.mzw, {
       align: u.Z.Align.CENTER,
       "data-migration-pending": true,
-      children: [(0, r.jsx)(x, {
+      children: [(0, r.jsx)(E, {
         orbBalance: n,
         orbPriceAmount: t,
         loading: l,

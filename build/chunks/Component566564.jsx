@@ -41,7 +41,7 @@ let L = e => {
     } = e, {
       noCache: u,
       includeUnpublished: C
-    } = (0, _.Z)(), [S, k] = l.useState(false), L = (0, d.sp)(), B = null != (t = null == L ? true : L.sessionId) ? t : "";
+    } = (0, m.Z)(), [S, k] = l.useState(false), L = (0, d.sp)(), B = null != (t = null == L ? true : L.sessionId) ? t : "";
     l.useEffect(() => {
       (0, f.n)({
         sessionId: B,
@@ -55,7 +55,7 @@ let L = e => {
       isFetchingShopHome: P,
       fetchShopHomeError: A,
       shopBlocks: N,
-      refreshShopHome: R
+      refreshShopHome: Z
     } = (0, g.E)(c, {
       noCache: u,
       includeUnpublished: C,
@@ -64,9 +64,9 @@ let L = e => {
     }, {
       sessionId: B,
       tab: c
-    }), Z = l.useCallback(() => {
-      R()
-    }, [R]);
+    }), R = l.useCallback(() => {
+      Z()
+    }, [Z]);
     return (l.useEffect(() => {
       null != A || P || 0 === N.length || (0, f.n)({
         sessionId: B,
@@ -76,7 +76,7 @@ let L = e => {
         cacheDisabled: u
       })
     }, [A, P, N.length, C, u, B, c]), null != A) ? (0, r.jsx)(h.Z, {
-      onRetry: Z,
+      onRetry: R,
       errorOrigin: h.i.SHOP_PAGE,
       errorMessage: A.message
     }) : P || 0 === N.length ? (0, r.jsxs)("div", {
@@ -144,7 +144,7 @@ let L = e => {
             }, l);
             break;
           case a.z.COUNTDOWN_TIMER:
-            u = (0, r.jsx)(m.J, {
+            u = (0, r.jsx)(_.J, {
               countdownTimerBlock: e,
               isVisible: S
             }, l), d = true;
@@ -177,20 +177,20 @@ let L = e => {
       transitionState: i
     } = e, s = l.useRef(null), {
       handleScroll: a
-    } = (0, c.z)(s, n), p = (0, C.R)(), g = (0, d.sp)(), [f, h] = l.useState(j.IV), [_, m] = l.useState(false);
+    } = (0, c.z)(s, n), p = (0, C.R)(), g = (0, d.sp)(), [f, h] = l.useState(j.IV), [m, _] = l.useState(false);
     return l.useEffect(() => {
       if (null != s.current) {
         let e = () => {
             if (null == s.current) return;
             let e = s.current.getDistanceFromBottom();
-            f >= 36 ? m(e < 20) : e <= 200 && h(e => e + j.IV)
+            f >= 36 ? _(e < 20) : e <= 200 && h(e => e + j.IV)
           },
           t = s.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [s, f, h, m]), (0, r.jsx)(o.Den, {
+    }, [s, f, h, _]), (0, r.jsx)(o.Den, {
       className: T.shopScroll,
       ref: s,
       onScroll: a,
@@ -226,13 +226,13 @@ let L = e => {
             })]
           })]
         }), (0, r.jsx)(S.Z, {
-          peaking: _,
+          peaking: m,
           transitioning: i === j.f7.OUT
         }), (0, r.jsx)(S.Z, {
           style: {
             left: 1850
           },
-          peaking: _,
+          peaking: m,
           transitioning: i === j.f7.OUT
         })]
       })

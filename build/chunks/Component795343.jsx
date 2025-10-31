@@ -41,8 +41,8 @@ function k(e) {
   } = (0, O.Z)(), P = (0, a.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: A,
     currentPage: N,
-    totalCount: R,
-    isFetchingResults: Z
+    totalCount: Z,
+    isFetchingResults: R
   } = (0, C.a)(), w = (0, a.Wu)([p.Z], () => p.Z.getProductsBySkus(A)), H = l.useCallback(() => {
     var e;
     null == i || null == (e = i.current) || e.scrollToTop({
@@ -52,12 +52,12 @@ function k(e) {
   l.useEffect(() => {
     H()
   }, [D, H]);
-  let F = (0, f.a)(),
-    M = l.useMemo(() => F(w), [F, w]);
+  let M = (0, f.a)(),
+    F = l.useMemo(() => M(w), [M, w]);
   l.useEffect(() => {
-    n || (0, _.n)({
+    n || (0, m.n)({
       sessionId: T,
-      checkpoint: _.a.SHOP_RENDERED,
+      checkpoint: m.a.SHOP_RENDERED,
       tab: k,
       unpublishedCategoriesShown: B,
       cacheDisabled: L
@@ -70,12 +70,12 @@ function k(e) {
       queryPageSize: z
     } = (0, h.S)(),
     [G, K] = l.useState(false),
-    Y = n || Z || null == P;
+    Y = n || R || null == P;
   l.useEffect(() => {
     if (Y) return void K(false);
-    M.length > 0 && K(true)
-  }, [Y, M.length]);
-  let q = z > 0 && !Y && 0 === M.length;
+    F.length > 0 && K(true)
+  }, [Y, F.length]);
+  let q = z > 0 && !Y && 0 === F.length;
   l.useEffect(() => {
     let e = new ResizeObserver(() => {
       null != W.current && V(Math.floor(5 * getComputedStyle(W.current).gridTemplateColumns.split(/\s+/).length))
@@ -106,7 +106,7 @@ function k(e) {
           [j.loadIn]: G
         }),
         ref: W,
-        children: [Y && [...Array(z)].map((e, t) => Q ? (0, r.jsx)(x.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !Y && M.map((e, t) => {
+        children: [Y && [...Array(z)].map((e, t) => Q ? (0, r.jsx)(x.Z, {}, t) : (0, r.jsx)(_.K, {}, t)), !Y && F.map((e, t) => {
           let n = p.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {
             newValue: {
@@ -124,12 +124,12 @@ function k(e) {
           }, e.skuId)
         })]
       })]
-    }), R > z && (0, r.jsx)("div", {
+    }), Z > z && (0, r.jsx)("div", {
       className: j.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(o.DsT, {
           currentPage: N,
-          totalCount: R,
+          totalCount: Z,
           pageSize: z,
           onPageChange: J,
           disablePaginationGap: true

@@ -19,19 +19,19 @@ var Chunk951288 = require("./951288.js"),
 let h = e => {
   var t, n, h;
   let C, {
-    category: _,
-    subblock: m,
+    category: m,
+    subblock: _,
     badgeText: b,
     handleTransition: v
   } = e;
-  null != m && (C = null == (t = c.Z.getCategoryByStoreListingId(null == m ? true : m.categoryStoreListingId)) ? true : t.skuId);
-  let E = null != (n = null != C ? C : null == _ ? true : _.skuId) ? n : "",
+  null != _ && (C = null == (t = c.Z.getCategoryByStoreListingId(null == _ ? true : _.categoryStoreListingId)) ? true : t.skuId);
+  let E = null != (n = null != C ? C : null == m ? true : m.skuId) ? n : "",
     {
       handleCardVisibilityChange: x
     } = (0, u.E)(E, "home", "marketing featured block"),
-    O = (0, d.YG)(_, m),
+    O = (0, d.YG)(m, _),
     S = l.useRef(null),
-    y = null == m ? true : m.bodyText,
+    y = null == _ ? true : _.bodyText,
     j = (0, o.sp)();
   return (0, r.jsx)(i.$, {
     innerRef: S,
@@ -65,7 +65,7 @@ let h = e => {
           sourceButton: "shop marketing tile",
           categorySkuId: E,
           isInternalShopDeeplink: true,
-          isOrbsExclusive: null == _ ? true : _.isOrbsExclusive
+          isOrbsExclusive: null == m ? true : m.isOrbsExclusive
         }), a.default.track(p.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == j ? true : j.sessionId,
           sku_id: E,
@@ -87,7 +87,7 @@ let h = e => {
           lineClamp: 4,
           className: f.featuredBlockBodyText,
           style: {
-            color: null != (h = null == m ? true : m.bannerTextColor) ? h : "white"
+            color: null != (h = null == _ ? true : _.bannerTextColor) ? h : "white"
           },
           variant: "heading-md/medium",
           children: y
@@ -102,7 +102,7 @@ let h = e => {
               sourceButton: "shop marketing take me there button",
               categorySkuId: E,
               isInternalShopDeeplink: true,
-              isOrbsExclusive: null == _ ? true : _.isOrbsExclusive
+              isOrbsExclusive: null == m ? true : m.isOrbsExclusive
             }), e.stopPropagation(), a.default.track(p.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == j ? true : j.sessionId,
               sku_id: E,

@@ -23,7 +23,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   m = function(e) {
-    return e.NONE = "none", e.NEW = "new", e.ORBS_EXCLUSIVE = "orbs_exclusive", e.NEW_COLOR_VARIANT = "new_color_variant", e.LIMITED_TIME = "limited_time", e
+    return e.NONE = "none", e.NEW = "new", e.ORBS_EXCLUSIVE = "orbs_exclusive", e.LIMITED_TIME = "limited_time", e
   }({}),
   g = function(e) {
     return e.FIAT = "fiat", e.ORBS = "orbs", e

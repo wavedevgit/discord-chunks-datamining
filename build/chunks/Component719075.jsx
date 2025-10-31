@@ -41,26 +41,26 @@ let b = e => {
     return v ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
       color: "header-muted",
-      children: _.intl.string(_.t.wu4gyV)
+      children: m.intl.string(m.t.wu4gyV)
     }) : x ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
-      children: _.intl.string(_.t.BEjTij)
+      children: m.intl.string(m.t.BEjTij)
     }) : E && !T ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
-      children: _.intl.string(_.t["6cfuDj"])
+      children: m.intl.string(m.t["6cfuDj"])
     }) : S ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
-      children: _.intl.string(_.t.nBtvYB)
+      children: m.intl.string(m.t.nBtvYB)
     }) : O ? (0, r.jsx)(s.Text, {
       variant: "text-md/semibold",
-      children: _.intl.string(_.t.rt69oo)
+      children: m.intl.string(m.t.rt69oo)
     }) : 0 === k.length ? null : (0, r.jsx)(p.F, {
       price: k[0],
       discount: y,
       nitroIconType: b ? "default" : true,
       nitroIconSize: "sm",
       discountOfferAmount: j,
-      className: k[0].currency !== C.pK.DISCORD_ORB || I ? true : m.insufficientOrbs
+      className: k[0].currency !== C.pK.DISCORD_ORB || I ? true : _.insufficientOrbs
     })
   },
   v = e => {

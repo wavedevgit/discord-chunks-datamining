@@ -1,5 +1,6 @@
-/** Chunk was on 71874 **/
+/** Chunk was on 91275 **/
 /** chunk id: 890088, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   wishlistButton: "wishlistButton__979b1",
   disabledButton: "disabledButton__979b1",

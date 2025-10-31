@@ -2,7 +2,7 @@
 /** chunk id: 838819, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => M
+  default: () => F
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -41,7 +41,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk295907 = require("./295907.js"),
   Chunk887353 = require("./887353.js"),
   Chunk219588 = require("./219588.js");
-let F = e => {
+let M = e => {
     let {
       children: t,
       shouldAddEventListener: n,
@@ -55,9 +55,9 @@ let F = e => {
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, i, r]), t
   },
-  M = function(e) {
+  F = function(e) {
     let {
-      tab: t = R.AW.HOME
+      tab: t = Z.AW.HOME
     } = e;
     (0, h.z)(f.f), (0, j.f)();
     let n = (0, p.Z)((0, a.Z)()),
@@ -70,9 +70,9 @@ let F = e => {
         wishlistId: null != i ? C.Z.getFirstWishlistId(i.id) : null
       }), [i]);
     l.useEffect(() => {
-      null != i && null == c && (0, _.Z)(i.id, i.getAvatarURL(null, 80))
-    }, [i, c]), (0, m.kZ)(w, null == i ? true : i.id);
-    let M = (0, N.B)("CollectiblesShop"),
+      null != i && null == c && (0, m.Z)(i.id, i.getAvatarURL(null, 80))
+    }, [i, c]), (0, _.kZ)(w, null == i ? true : i.id);
+    let F = (0, N.B)("CollectiblesShop"),
       {
         onClose: W
       } = (0, P.Db)(),
@@ -80,7 +80,7 @@ let F = e => {
         currentTab: V,
         hasFilters: U
       } = (0, I.S)(),
-      z = l.useMemo(() => t === R.AW.HOME && V && U() ? V : t, [t, V, U]),
+      z = l.useMemo(() => t === Z.AW.HOME && V && U() ? V : t, [t, V, U]),
       {
         categories: G,
         refreshCategories: K
@@ -113,7 +113,7 @@ let F = e => {
     l.useEffect(() => {
       el()
     }, [el]), l.useEffect(() => {
-      (0, d.Y)(Z.Z5c.COLLECTIBLES_SHOP)
+      (0, d.Y)(R.Z5c.COLLECTIBLES_SHOP)
     }, []);
     let ei = l.useRef(null),
       es = l.useRef(null);
@@ -130,16 +130,16 @@ let F = e => {
         newValue: {
           sessionId: n,
           pageCategory: Q,
-          pageSize: R.kN
+          pageSize: Z.kN
         },
         children: (0, r.jsx)(x.ni, {
           tab: et,
-          children: (0, r.jsx)(F, {
+          children: (0, r.jsx)(M, {
             onClose: W,
             shouldAddEventListener: false,
             children: (0, r.jsxs)("div", {
               className: s()(H.shop, {
-                [D.customCursors]: M
+                [D.customCursors]: F
               }),
               ref: es,
               tabIndex: false,
@@ -148,9 +148,9 @@ let F = e => {
                 selectedTab: et
               }), (0, r.jsx)("div", {
                 className: s()(H.shopViewWrapper, {
-                  [H.visible]: en === R.f7.VISIBLE,
-                  [H.in]: en === R.f7.IN,
-                  [H.out]: en === R.f7.OUT
+                  [H.visible]: en === Z.f7.VISIBLE,
+                  [H.in]: en === Z.f7.IN,
+                  [H.out]: en === Z.f7.OUT
                 }),
                 children: (0, r.jsx)(T.Z, {
                   tab: et,

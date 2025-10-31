@@ -1,4 +1,4 @@
-/** Chunk was on 62868 **/
+/** Chunk was on 91275 **/
 /** chunk id: 702370, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -303,8 +303,7 @@ let eB = e => {
       children: [(0, r.jsx)("div", {
         className: eN.titleContainer,
         children: (0, r.jsx)(el.Z, {
-          category: a,
-          display: el.k.MODAL
+          category: a
         })
       }), (0, r.jsx)(eZ, {
         product: null != y ? y : T,

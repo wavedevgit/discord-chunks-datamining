@@ -45,14 +45,14 @@ function v(e) {
       } = e;
       c(t, n);
       let s = r && !v,
-        o = i ? m.AW.ORBS : m.AW.CATALOG;
+        o = i ? _.AW.ORBS : _.AW.CATALOG;
       S(n), j(!l), a(o, s)
     }, [v, a, c]),
     I = (0, d.FF)("CollectiblesContent"),
     {
       searchError: T
     } = (0, p.a)();
-  return I && null != T ? (0, r.jsx)(_.Z, {}) : null != h ? (0, r.jsx)(f.Z, {
+  return I && null != T ? (0, r.jsx)(m.Z, {}) : null != h ? (0, r.jsx)(f.Z, {
     onRetry: u,
     errorMessage: h,
     errorOrigin: f.i.SHOP_PAGE

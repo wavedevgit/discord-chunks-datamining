@@ -41,8 +41,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let F = (0, Chunk884697.IC)(90),
-  M = {
+let M = (0, Chunk884697.IC)(90),
+  F = {
     rankedSkuIds: [],
     name: "",
     unpublishedAt: true,
@@ -64,14 +64,14 @@ let F = (0, Chunk884697.IC)(90),
       onVisibilityChange: z
     } = e, G = (0, a.O)(e => {
       null == z || z(e)
-    }, .1, null != z), K = l.useRef(null), Y = (0, N.B)("HeroBlock"), q = (0, u.e7)([C.default], () => C.default.getCurrentUser()), J = (0, B.Z)(), Q = (0, m.sp)(), X = l.useMemo(() => {
+    }, .1, null != z), K = l.useRef(null), Y = (0, N.B)("HeroBlock"), q = (0, u.e7)([C.default], () => C.default.getCurrentUser()), J = (0, B.Z)(), Q = (0, _.sp)(), X = l.useMemo(() => {
       var e, t;
-      return null != V ? V : null == W ? M : {
+      return null != V ? V : null == W ? F : {
         rankedSkuIds: null != (e = W.heroRanking) ? e : [],
         name: W.name,
         unpublishedAt: W.unpublishedAt,
         logoUrl: (0, v.uV)(null != (t = W.heroLogo) ? t : W.logo, {
-          size: F
+          size: M
         }),
         categorySkuId: W.skuId,
         bannerAsset: W.heroBannerAsset,
@@ -111,10 +111,10 @@ let F = (0, Chunk884697.IC)(90),
         }, [i, s, e]),
         totalCards: e ? t : true
       }
-    })(U !== Z.AW.ORBS), eg = (0, O.a)()(ec), ef = (0, S.l)(eg).slice(0, ep), eh = (0, P.St)(ef), eC = U === Z.AW.ORBS ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T), e_ = (0, x.FF)("CollectiblesContent"), em = null != W && W.isOrbsExclusive, eb = E.Z.useConfig({
+    })(U !== R.AW.ORBS), eg = (0, O.a)()(ec), ef = (0, S.l)(eg).slice(0, ep), eh = (0, P.St)(ef), eC = U === R.AW.ORBS ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T), em = (0, x.FF)("CollectiblesContent"), e_ = null != W && W.isOrbsExclusive, eb = E.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, ev = () => {
-      U === Z.AW.ORBS ? ((0, h.Y)({
+      U === R.AW.ORBS ? ((0, h.Y)({
         pageType: w.ZY5.SHOP_ORBS_TAB,
         sectionType: w.jXE.ORBS_SHOP_HERO_BLOCK,
         ctaObject: w.qAy.CTA_TO_QUEST_HOME
@@ -122,10 +122,10 @@ let F = (0, Chunk884697.IC)(90),
         fromContent: o.j.ORBS_SHOP_HERO_CTA
       })) : (i({
         sourceButton: "shop latest category hero",
-        categorySkuId: !e_ || em ? X.categorySkuId : true,
+        categorySkuId: !em || e_ ? X.categorySkuId : true,
         isInternalShopDeeplink: true,
-        isOrbsExclusive: em
-      }), _.default.track(w.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        isOrbsExclusive: e_
+      }), m.default.track(w.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == Q ? true : Q.sessionId,
         sku_id: X.categorySkuId,
         page_type: U,
@@ -134,7 +134,7 @@ let F = (0, Chunk884697.IC)(90),
         cta_name: "shop latest category hero button"
       }))
     };
-    return null != q && (n || X !== M) ? (0, r.jsxs)("div", {
+    return null != q && (n || X !== F) ? (0, r.jsxs)("div", {
       ref: G,
       className: D.heroBlock,
       children: [ea ? (0, A.gT)({
@@ -148,7 +148,7 @@ let F = (0, Chunk884697.IC)(90),
         style: null != es ? {
           background: es
         } : true,
-        children: null != en && (0, r.jsx)(R.Z, {
+        children: null != en && (0, r.jsx)(Z.Z, {
           bannerStatic: en,
           bannerAnimated: er,
           bannerRive: el,
@@ -189,8 +189,8 @@ let F = (0, Chunk884697.IC)(90),
                 color: "header-primary",
                 children: X.title
               }), "" !== X.summary && (0, r.jsx)(d.Text, {
-                variant: em ? "text-lg/medium" : "text-md/normal",
-                className: em ? D.orbsSubHeaderText : D.subHeaderText,
+                variant: e_ ? "text-lg/medium" : "text-md/normal",
+                className: e_ ? D.orbsSubHeaderText : D.subHeaderText,
                 style: null != X.bannerTextColor ? {
                   color: X.bannerTextColor
                 } : true,
@@ -207,8 +207,8 @@ let F = (0, Chunk884697.IC)(90),
           })]
         }), (0, r.jsx)("div", {
           className: s()({
-            [D.row]: U === Z.AW.HOME,
-            [D.feed]: U === Z.AW.ORBS
+            [D.row]: U === R.AW.HOME,
+            [D.feed]: U === R.AW.ORBS
           }),
           ref: ed,
           children: n || eu ? (0, r.jsx)(r.Fragment, {
@@ -216,7 +216,7 @@ let F = (0, Chunk884697.IC)(90),
           }) : (0, r.jsx)(r.Fragment, {
             children: eh.map((e, t) => {
               let n = b.Z.getCategoryForProduct(e.skuId);
-              return null == e || null == n ? null : (0, r.jsx)(m.k0, {
+              return null == e || null == n ? null : (0, r.jsx)(_.k0, {
                 newValue: {
                   tilePosition: t,
                   pageSection: "top 4",
@@ -224,14 +224,13 @@ let F = (0, Chunk884697.IC)(90),
                 },
                 children: eb && (null == e ? true : e.skuId) != null ? (0, r.jsx)(k.Z, {
                   skuId: null == e ? true : e.skuId,
-                  prioritizedCurrency: U === Z.AW.ORBS ? I.tA.ORBS : true,
+                  prioritizedCurrency: U === R.AW.ORBS ? I.tA.ORBS : true,
                   onClickAnalytics: (0, I.wO)(e, U, Q)
                 }, e.skuId) : (0, r.jsx)(j.Z, {
                   product: e,
                   category: n,
                   user: q,
-                  tab: U,
-                  shopBlockType: c.z.HERO
+                  tab: U
                 }, e.skuId)
               }, null == e ? true : e.skuId)
             })

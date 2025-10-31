@@ -38,7 +38,7 @@ let v = e => {
         children: t.name
       }), (0, r.jsx)(o.Button, {
         variant: "secondary",
-        text: m.intl.formatToPlainString(m.t.bc9RBE, {
+        text: _.intl.formatToPlainString(_.t.bc9RBE, {
           category_name: t.name
         }),
         onClick: () => {
@@ -65,7 +65,7 @@ let v = e => {
             },
             children: x ? (0, r.jsx)(h.Z, {
               skuId: s,
-              prioritizedCurrency: i === _.AW.ORBS ? C.tA.ORBS : true,
+              prioritizedCurrency: i === m.AW.ORBS ? C.tA.ORBS : true,
               onClickAnalytics: (0, C.wO)(e, i, O)
             }, s) : (0, r.jsx)(f.Z, {
               product: e,
