@@ -12,7 +12,7 @@ var Chunk722687 = require("./722687.js"),
   Chunk63063 = require("./63063.js"),
   Chunk652262 = require("./652262.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk382402 = require("./382402.js"),
+  Chunk602698 = require("./602698.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f() {
@@ -21,8 +21,8 @@ function f() {
     n = Chunk722687.O8.useControlledSetting(exports);
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
-      title: Chunk388032.intl.string(Chunk382402.default.ZhaNu8),
-      note: Chunk388032.intl.format(Chunk382402.default.cnCK6b, {
+      title: Chunk388032.intl.string(Chunk602698.default.ZhaNu8),
+      note: Chunk388032.intl.format(Chunk602698.default.cnCK6b, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_PRIVACY_CONTROLS)
       }),
       value: !require,

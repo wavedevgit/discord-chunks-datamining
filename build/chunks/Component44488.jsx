@@ -1,4 +1,4 @@
-/** Chunk was on 84283 **/
+/** Chunk was on 69844 **/
 /** chunk id: 44488, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Pz: () => g,
@@ -11,7 +11,7 @@ var r, Chunk951288 = require("./951288.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk768762 = require("./768762.jsx"),
-  Chunk661458 = require("./661458.js");
+  Chunk584917 = require("./584917.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -22,8 +22,8 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let p = {
-  CENTER: Chunk661458.alignCenter,
-  LEFT: Chunk661458.alignLeft
+  CENTER: Chunk584917.alignCenter,
+  LEFT: Chunk584917.alignLeft
 };
 class m extends(r = Chunk647438.PureComponent) {
   componentDidUpdate(e) {
@@ -39,7 +39,7 @@ class m extends(r = Chunk647438.PureComponent) {
       vertical: n,
       paginationContainerClass: r,
       align: l
-    } = this.props, c = require ? Chunk661458.verticalPaginationItemContainer : Chunk661458.horizontalPaginationItemContainer;
+    } = this.props, c = require ? Chunk584917.verticalPaginationItemContainer : Chunk584917.horizontalPaginationItemContainer;
     return (0, Chunk951288.jsx)(Chunk481060.yWw, {
       orientation: require ? "vertical" : "horizontal",
       className: s()(Chunk768762, r, Chunk120356),
@@ -88,10 +88,10 @@ class h extends Chunk647438.PureComponent {
       className: e
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk481060.P3F, {
-      className: s()(Chunk661458.prevButtonContainer, module),
+      className: s()(Chunk584917.prevButtonContainer, module),
       onClick: this.handlePrevClick,
       children: (0, Chunk951288.jsx)(Chunk768762.Z, {
-        className: Chunk661458.arrow,
+        className: Chunk584917.arrow,
         direction: Chunk768762.Z.Directions.LEFT
       })
     })
@@ -112,10 +112,10 @@ class g extends Chunk647438.PureComponent {
       className: e
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk481060.P3F, {
-      className: s()(Chunk661458.nextButtonContainer, module),
+      className: s()(Chunk584917.nextButtonContainer, module),
       onClick: this.handleNextClick,
       children: (0, Chunk951288.jsx)(Chunk768762.Z, {
-        className: Chunk661458.arrow,
+        className: Chunk584917.arrow,
         direction: Chunk768762.Z.Directions.RIGHT
       })
     })

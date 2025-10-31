@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk444295 = require("./444295.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk133214 = require("./133214.js");
+  Chunk213285 = require("./213285.js");
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -481,7 +481,7 @@ let K = Chunk647438.memo(function(e) {
         m || (0, u.jW)(e, async () => {
           let {
             default: e
-          } = await Promise.all([n.e("79695"), n.e("6524"), n.e("68317")]).then(n.bind(n, 27900));
+          } = await Promise.all([n.e("79695"), n.e("6524"), n.e("39834")]).then(n.bind(n, 27900));
           return (0, P.Ws)(w.Odu.VOICE_V3, {
             type: P.Qu.VOICE,
             value: P.bk.SETTINGS_OPENED,

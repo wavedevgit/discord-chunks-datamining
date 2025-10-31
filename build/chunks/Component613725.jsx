@@ -1,4 +1,4 @@
-/** Chunk was on 13873 **/
+/** Chunk was on 88647 **/
 /** chunk id: 613725, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -15,7 +15,7 @@ var Chunk574583 = require("./574583.js"),
   Chunk430824 = require("./430824.js"),
   Chunk594174 = require("./594174.js"),
   Chunk768581 = require("./768581.js"),
-  Chunk20372 = require("./20372.js");
+  Chunk870515 = require("./870515.js");
 
 function m() {
   let {
@@ -34,7 +34,7 @@ function m() {
     src: _,
     "aria-hidden": true,
     size: Chunk481060.EFr.SIZE_80,
-    className: Chunk20372.avatarSizeOverride
+    className: Chunk870515.avatarSizeOverride
   }), C = null;
   return C = null != require ? (0, Chunk951288.jsx)(Chunk565138.Z, {
     guild: require
@@ -42,17 +42,17 @@ function m() {
     "aria-hidden": true,
     src: b,
     size: Chunk481060.EFr.SIZE_80,
-    className: Chunk20372.avatarSizeOverride
+    className: Chunk870515.avatarSizeOverride
   }) : y, (0, Chunk951288.jsxs)("div", {
-    className: Chunk20372.container,
+    className: Chunk870515.container,
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk20372.personAvatar,
+      className: Chunk870515.personAvatar,
       children: y
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk20372.guildAvatar,
+      className: Chunk870515.guildAvatar,
       children: C
     }), (0, Chunk951288.jsx)("svg", {
-      className: Chunk20372.illustration,
+      className: Chunk870515.illustration,
       xmlns: "http://www.w3.org/2000/svg",
       width: "156",
       height: "70",

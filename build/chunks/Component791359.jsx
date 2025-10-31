@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk285064 = require("./285064.js");
+  Chunk559909 = require("./559909.js");
 let A = 15 * Chunk70956.Z.Millis.MINUTE,
   Z = (0, Chunk525296.Z)(function(e) {
     let {
@@ -166,19 +166,19 @@ function L() {
       quest: o.get(t.id)
     }, t.id)
   }) : (0, Chunk951288.jsxs)("div", {
-    className: Chunk285064.emptyCard,
+    className: Chunk559909.emptyCard,
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
-      className: Chunk285064.emptyHeader,
+      className: Chunk559909.emptyHeader,
       children: Chunk388032.intl.string(Chunk388032.t["ngJ/5u"])
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       color: "none",
-      className: Chunk285064.emptyText,
+      className: Chunk559909.emptyText,
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t["99ZWxQ"])
     })]
   }) : (0, Chunk951288.jsx)("div", {
-    className: Chunk285064.emptyCard,
+    className: Chunk559909.emptyCard,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   })
 }

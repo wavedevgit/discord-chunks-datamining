@@ -1,9 +1,9 @@
-/** Chunk was on 44514 **/
-/** chunk id: 466721, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 41984 **/
+/** chunk id: 466721, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  C: () => r
+  C: () => l
 });
-let r = (0, require("./818083.js").B)({
+let l = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-07_staff_ai_features",
   label: "Staff AI Features",

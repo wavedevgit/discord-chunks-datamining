@@ -228,8 +228,8 @@ eL.enableNativeLogger(true);
 let e$ = {},
   e0 = new Set([Chunk65154.Yn.DEFAULT]),
   e1 = eJ.supports(Chunk65154.AN.AUTO_ENABLE),
-  e2 = false,
-  e3 = Chunk65154.Yn.STREAM,
+  e3 = false,
+  e2 = Chunk65154.Yn.STREAM,
   e4 = performance.now(),
   e8 = {
     [Chunk65154.w5]: ne("No Input Devices")
@@ -347,7 +347,7 @@ function tV(e) {
 }
 
 function tH(e) {
-  e !== e3 && (null != a && eJ.setGoLiveSource(null, e3), e3 = e)
+  e !== e2 && (null != a && eJ.setGoLiveSource(null, e2), e2 = e)
 }
 
 function tY() {
@@ -355,7 +355,7 @@ function tY() {
   let i = arguments.length > 0 && true !== arguments[0] ? arguments[0] : tn,
     o = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a,
     s = a;
-  if ((null == s ? true : s.desktopSource) != null && s.desktopSource.id !== (null == o || null == (e = o.desktopSource) ? true : module.id) && (null != s.desktopSource.soundshareId && (0, Chunk358085.isWindows)() && Chunk887278.pn(s.desktopSource.soundshareId), eJ.setGoLiveSource(null, e3)), (null == s ? true : s.cameraSource) != null && (s.cameraSource.videoDeviceGuid !== (null == o || null == (t = o.cameraSource) ? true : exports.videoDeviceGuid) || s.cameraSource.audioDeviceGuid !== (null == o || null == (n = o.cameraSource) ? true : require.audioDeviceGuid)) && eJ.setGoLiveSource(null, e3), tn || i) {
+  if ((null == s ? true : s.desktopSource) != null && s.desktopSource.id !== (null == o || null == (e = o.desktopSource) ? true : module.id) && (null != s.desktopSource.soundshareId && (0, Chunk358085.isWindows)() && Chunk887278.pn(s.desktopSource.soundshareId), eJ.setGoLiveSource(null, e2)), (null == s ? true : s.cameraSource) != null && (s.cameraSource.videoDeviceGuid !== (null == o || null == (t = o.cameraSource) ? true : exports.videoDeviceGuid) || s.cameraSource.audioDeviceGuid !== (null == o || null == (n = o.cameraSource) ? true : require.audioDeviceGuid)) && eJ.setGoLiveSource(null, e2), tn || i) {
     let e = tB().videoDeviceId;
     tn && module === Chunk65154.w5 && ti === Chunk65154.w5 && tr !== Chunk65154.Av ? e = tr : ti = module, tr = (tn = i) ? nn(e6, module) : Chunk65154.Av, eJ.setVideoInputDevice(tr)
   }
@@ -386,7 +386,7 @@ function tY() {
           hdrCaptureMode: exports
         },
         quality: module
-      }, e3)
+      }, e2)
     }
     null != o.cameraSource && eJ.setGoLiveSource({
       cameraDescription: {
@@ -394,7 +394,7 @@ function tY() {
         audioDeviceGuid: o.cameraSource.audioDeviceGuid
       },
       quality: module
-    }, e3)
+    }, e2)
   }
 }
 
@@ -754,11 +754,11 @@ function t1() {
   return (0, Chunk358085.isMac)() && eJ.supports(Chunk65154.AN.SCREEN_CAPTURE_KIT) && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.C7)
 }
 
-function t2() {
+function t3() {
   return (0, Chunk358085.isWindows)() && eJ.supports(Chunk65154.AN.AUTOMATIC_AUDIO_SUBSYSTEM) && eJ.supports(Chunk65154.AN.AUDIO_SUBSYSTEM_DEFERRED_SWITCH)
 }
 
-function t3() {
+function t2() {
   return eJ.supports(Chunk65154.AN.AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING)
 }
 let t4 = new class {
@@ -966,7 +966,7 @@ function nu(e, t) {
 function nd(e) {
   i = e.sessionId, e7 = false, tt = false;
   let t = tB();
-  if (t2() && (t3() ? rd(eN.iA.AUTOMATIC) : t.automaticAudioSubsystem && rf()), eJ.supports(eN.AN.OFFLOAD_ADM_CONTROLS)) {
+  if (t3() && (t2() ? rd(eN.iA.AUTOMATIC) : t.automaticAudioSubsystem && rf()), eJ.supports(eN.AN.OFFLOAD_ADM_CONTROLS)) {
     let e = false;
     (0, eu.isDesktop)() ? e = (0, j.E)({
       location: "handleConnectionOpen"
@@ -990,7 +990,7 @@ function nf(e) {
   let {
     mediaEngineState: t
   } = e;
-  e$ = t.settingsByContext, e8 = t.inputDevices, e5 = t.outputDevices, tD = t.appSupported, tm = t.krispModuleLoaded, s = t.krispVersion, e3 = t.goLiveContext
+  e$ = t.settingsByContext, e8 = t.inputDevices, e5 = t.outputDevices, tD = t.appSupported, tm = t.krispModuleLoaded, s = t.krispVersion, e2 = t.goLiveContext
 }
 
 function n_() {
@@ -1275,7 +1275,7 @@ function nL(e) {
 }
 
 function nM(e) {
-  return e2 !== e.required && (e2 = e.required, e.required || eJ.interact(), true)
+  return e3 !== e.required && (e3 = e.required, e.required || eJ.interact(), true)
 }
 
 function nk(e) {
@@ -1442,13 +1442,13 @@ function n1(e) {
   l = t, et.Z.setKrispSuppressionLevel(t)
 }
 
-function n2(e) {
+function n3(e) {
   t5({
     videoHook: e.enabled
   })
 }
 
-function n3(e) {
+function n2(e) {
   t5({
     experimentalSoundshare2: e.enabled
   })
@@ -1910,7 +1910,7 @@ class rk extends(u = Chunk442837.ZP.Store) {
     return eJ.supports(Chunk65154.AN.AUTOMATIC_GAIN_CONTROL)
   }
   shouldOfferManualSubsystemSelection() {
-    return !t3() && (eJ.supports(Chunk65154.AN.LEGACY_AUDIO_SUBSYSTEM) || eJ.supports(Chunk65154.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM))
+    return !t2() && (eJ.supports(Chunk65154.AN.LEGACY_AUDIO_SUBSYSTEM) || eJ.supports(Chunk65154.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM))
   }
   showBypassSystemInputProcessing() {
     return eJ.supports(Chunk65154.AN.AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING) && "experimental" === eJ.getAudioSubsystem()
@@ -1996,12 +1996,12 @@ class rk extends(u = Chunk442837.ZP.Store) {
   }
   isScreenSharing() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.STREAM;
-    return e3 === module && null != a
+    return e2 === module && null != a
   }
   isSoundSharing() {
     var e;
     let t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.STREAM;
-    return e3 === exports && null != a && (null == (e = a.desktopSource) ? true : module.soundshareId) != null
+    return e2 === exports && null != a && (null == (e = a.desktopSource) ? true : module.soundshareId) != null
   }
   isLocalMute(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eN.Yn.DEFAULT;
@@ -2038,7 +2038,7 @@ class rk extends(u = Chunk442837.ZP.Store) {
     return a
   }
   getGoLiveContext() {
-    return e3
+    return e2
   }
   getLastAudioInputDeviceChangeTimestamp() {
     return e4
@@ -2174,7 +2174,7 @@ class rk extends(u = Chunk442837.ZP.Store) {
     return tB().attenuateWhileSpeakingOthers
   }
   getAudioSubsystem() {
-    return t2() && tB().automaticAudioSubsystem ? Chunk65154.iA.AUTOMATIC : eJ.getAudioSubsystem()
+    return t3() && tB().automaticAudioSubsystem ? Chunk65154.iA.AUTOMATIC : eJ.getAudioSubsystem()
   }
   getMLSSigningKey(e, t) {
     return eJ.getMLSSigningKey(e, t)
@@ -2200,7 +2200,7 @@ class rk extends(u = Chunk442837.ZP.Store) {
       krispVersion: s,
       krispSuppressionLevel: l,
       goLiveSource: a,
-      goLiveContext: e3
+      goLiveContext: e2
     }
   }
   getInputDetected() {
@@ -2216,7 +2216,7 @@ class rk extends(u = Chunk442837.ZP.Store) {
     eJ.eachConnection(n => n.setCanHavePriority(e, t))
   }
   isInteractionRequired() {
-    return e2
+    return e3
   }
   getVideoHook() {
     return tB().videoHook
@@ -2385,8 +2385,8 @@ let rU = r = new rk(Chunk570140.Z, {
   AUDIO_SET_DEBUG_LOGGING: n0,
   AUDIO_SET_KRISP_SUPPRESSION_LEVEL: n1,
   AUDIO_SET_NOISE_CANCELLATION_ENABLE_STATS: nQ,
-  MEDIA_ENGINE_SET_VIDEO_HOOK: n2,
-  MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE: n3,
+  MEDIA_ENGINE_SET_VIDEO_HOOK: n3,
+  MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE: n2,
   MEDIA_ENGINE_SET_USE_SYSTEM_SCREENSHARE_PICKER: n4,
   AUDIO_SET_ATTENUATION: n8,
   AUDIO_SET_QOS: n5,

@@ -876,8 +876,8 @@ function e$(e) {
     null != a && (0, x.Q5)(a.type) && (null == e.last_message_id || 0 === e.last_message_id) ? i.ackMessageId = G.default.fromTimestamp(eW(a.guild_id, a.id)) : i.ackedWhileCached ? false === G.default.compare(i.ackMessageId, e.last_message_id) && (i.ackMessageId = e.last_message_id) : i.ackMessageId = e.last_message_id, i.ackedWhileCached = true, i.ackPinTimestamp = eC(e.last_pin_timestamp), ek._mentionChannels.delete(i.channelId), i._mentionCount > 0 && i.canHaveMentions() && ek._mentionChannels.add(i.channelId)
   }), ek.resetGuildSentinels();
   let o = null == (t = J.default.getCurrentUser()) ? true : t.id;
-  for (let e of (null != o && (ek.get(o, ei.W.NOTIFICATION_CENTER).lastMessageId = G.default.fromTimestamp(Date.now())), eB(r), ej(i), n)) ej("full_sync" === e.channels.op ? e.channels.items : e.channels.writes), null != e.channelTimestampUpdates && e3(e.channelTimestampUpdates), eG(e);
-  e0(), eE = setTimeout(() => e2(a.entries), 10 * M.Z.Millis.SECOND)
+  for (let e of (null != o && (ek.get(o, ei.W.NOTIFICATION_CENTER).lastMessageId = G.default.fromTimestamp(Date.now())), eB(r), ej(i), n)) ej("full_sync" === e.channels.op ? e.channels.items : e.channels.writes), null != e.channelTimestampUpdates && e2(e.channelTimestampUpdates), eG(e);
+  e0(), eE = setTimeout(() => e3(a.entries), 10 * M.Z.Millis.SECOND)
 }
 
 function e0() {
@@ -888,7 +888,7 @@ let e1 = (0, Chunk392711.throttle)(e => {
   e.delete()
 }, 100);
 
-function e2(e) {
+function e3(e) {
   let t = ev();
   for (let r of e) {
     var n;
@@ -898,7 +898,7 @@ function e2(e) {
   }
 }
 
-function e3(e) {
+function e2(e) {
   for (let t of e) {
     let e = ek.get(t.id);
     null != t.last_message_id && (e.lastMessageId = t.last_message_id), null != t.last_pin_timestamp && (e.lastPinTimestamp = eC(t.last_pin_timestamp))
@@ -929,7 +929,7 @@ function e5(e) {
   } = e, n = ev();
   ek.forEach(e => {
     e.guildId === t.id && e.shouldDeleteReadState(n) && e.delete(false)
-  }), ej("full_sync" === t.channels.op ? t.channels.items : t.channels.writes), null != t.channelTimestampUpdates && e3(t.channelTimestampUpdates), eG(t)
+  }), ej("full_sync" === t.channels.op ? t.channels.items : t.channels.writes), null != t.channelTimestampUpdates && e2(t.channelTimestampUpdates), eG(t)
 }
 
 function e6(e) {

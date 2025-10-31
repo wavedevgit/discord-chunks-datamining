@@ -23,7 +23,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk84658 = require("./84658.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk72362 = require("./72362.js");
+  Chunk473450 = require("./473450.js");
 
 function x(e) {
   let {
@@ -127,18 +127,18 @@ function _() {
     t = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module)),
     n = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
   return null == module || null == exports || null == require ? null : (0, Chunk951288.jsxs)("div", {
-    className: Chunk72362.upsellContainer,
+    className: Chunk473450.upsellContainer,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk72362.upsellHeader,
+      className: Chunk473450.upsellHeader,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk72362.islands,
+        className: Chunk473450.islands,
         children: [(0, Chunk951288.jsx)(Chunk548473.xm, {}), (0, Chunk951288.jsx)(Chunk548473._I, {
           guild: exports,
-          mainIslandClassName: Chunk72362.mainIsland,
-          balloonDogClassName: Chunk72362.balloonDog
+          mainIslandClassName: Chunk473450.mainIsland,
+          balloonDogClassName: Chunk473450.balloonDog
         }), (0, Chunk951288.jsx)(Chunk548473.B0, {})]
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk72362.upsellHeaderText,
+        className: Chunk473450.upsellHeaderText,
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-xl/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.GnKOAx)
@@ -147,7 +147,7 @@ function _() {
           children: Chunk388032.intl.string(Chunk388032.t.SJRFJj)
         })]
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk72362.upsellButtons,
+        className: Chunk473450.upsellButtons,
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: Chunk388032.intl.string(Chunk388032.t.RzWDqY),
@@ -191,11 +191,11 @@ function _() {
         })
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsxs)("div", {
-      className: Chunk72362.valuesContainer,
+      className: Chunk473450.valuesContainer,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk72362.valueContainer,
+        className: Chunk473450.valueContainer,
         children: [(0, Chunk951288.jsx)(x, {}), (0, Chunk951288.jsxs)("div", {
-          className: Chunk72362.valueText,
+          className: Chunk473450.valueText,
           children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-md/semibold",
             children: Chunk388032.intl.string(Chunk388032.t.Z7kqKZ)
@@ -205,9 +205,9 @@ function _() {
           })]
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk72362.valueContainer,
+        className: Chunk473450.valueContainer,
         children: [(0, Chunk951288.jsxs)("div", {
-          className: Chunk72362.valueText,
+          className: Chunk473450.valueText,
           children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-md/semibold",
             children: Chunk388032.intl.string(Chunk388032.t.O4jYEh)
@@ -216,7 +216,7 @@ function _() {
             children: Chunk388032.intl.string(Chunk388032.t["l/l/Gw"])
           })]
         }), (0, Chunk951288.jsxs)("div", {
-          className: i()(Chunk72362.upsellPreview, Chunk72362.spacingLarge),
+          className: i()(Chunk473450.upsellPreview, Chunk473450.spacingLarge),
           children: [(0, Chunk951288.jsx)(Chunk150512.Z, {
             guildId: module,
             welcomeMessage: {
@@ -238,14 +238,14 @@ function _() {
           })]
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk72362.valueContainer,
+        className: Chunk473450.valueContainer,
         children: [(0, Chunk951288.jsx)("div", {
-          className: i()(Chunk72362.upsellPreview, Chunk72362.spacingLarge),
+          className: i()(Chunk473450.upsellPreview, Chunk473450.spacingLarge),
           children: [{
             channelIcon: () => (0, Chunk951288.jsx)(Chunk481060.MqZ, {
               size: "xs",
               color: "currentColor",
-              className: Chunk72362.channelIcon
+              className: Chunk473450.channelIcon
             }),
             channel: Chunk388032.intl.string(Chunk388032.t.MXJozL),
             selected: true
@@ -253,7 +253,7 @@ function _() {
             channelIcon: () => (0, Chunk951288.jsx)(Chunk481060.VL1, {
               size: "md",
               color: "currentColor",
-              className: Chunk72362.channelIcon
+              className: Chunk473450.channelIcon
             }),
             channel: Chunk388032.intl.string(Chunk388032.t.Pkj0f6),
             selected: true
@@ -261,7 +261,7 @@ function _() {
             channelIcon: () => (0, Chunk951288.jsx)(Chunk481060.VL1, {
               size: "md",
               color: "currentColor",
-              className: Chunk72362.channelIcon
+              className: Chunk473450.channelIcon
             }),
             channel: Chunk388032.intl.string(Chunk388032.t["imVD+u"]),
             selected: false
@@ -269,7 +269,7 @@ function _() {
             channelIcon: () => (0, Chunk951288.jsx)(Chunk481060.Mmi, {
               size: "md",
               color: "currentColor",
-              className: Chunk72362.channelIcon
+              className: Chunk473450.channelIcon
             }),
             channel: Chunk388032.intl.string(Chunk388032.t["Pj/Wpt"]),
             selected: true
@@ -303,7 +303,7 @@ function _() {
             }, t)
           })
         }), (0, Chunk951288.jsxs)("div", {
-          className: Chunk72362.valueText,
+          className: Chunk473450.valueText,
           children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-md/semibold",
             children: Chunk388032.intl.string(Chunk388032.t["3T9aHG"])

@@ -90,7 +90,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk290511 = require("./290511.js"),
   Chunk186901 = require("./186901.js"),
-  Chunk987129 = require("./987129.js");
+  Chunk822338 = require("./822338.js");
 
 function eM(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -115,7 +115,7 @@ let ek = (0, Chunk608787.Un)({
     webpackId: 267161
   }),
   eU = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk987129.loader,
+    className: Chunk822338.loader,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   }),
   eG = (0, Chunk608787.Un)({
@@ -349,8 +349,8 @@ function e2() {
   })
 }
 let e6 = e => (0, r.jsx)(T.Z, eM({}, e)),
-  e9 = () => (0, Chunk951288.jsx)(Chunk270759.Z, {}),
-  e7 = () => (0, Chunk951288.jsx)(Chunk779715.Z, {}),
+  e7 = () => (0, Chunk951288.jsx)(Chunk270759.Z, {}),
+  e9 = () => (0, Chunk951288.jsx)(Chunk779715.Z, {}),
   te = () => (0, Chunk951288.jsx)(Chunk927220.Z, {}),
   tt = () => (0, Chunk951288.jsx)(Chunk745052.Z, {}),
   tn = () => (0, Chunk951288.jsx)(Chunk179742.Z, {}),
@@ -610,14 +610,14 @@ function ta() {
     I = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
     y = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk987129.container,
+    className: Chunk822338.container,
     children: (0, Chunk951288.jsx)(Chunk372900.Z.Provider, {
       value: (null == Chunk409292 ? true : Chunk409292.params.guildId) === Chunk981631.ME || null == Chunk409292 ? true : Chunk409292.params.guildId,
       children: (0, Chunk951288.jsxs)("div", {
-        className: Chunk987129.base,
+        className: Chunk822338.base,
         "data-fullscreen": Chunk711237,
         children: [!Chunk711237 && (0, Chunk951288.jsx)(ek, {}), Chunk873546.tq ? null : (0, Chunk951288.jsx)(Chunk369664.Z, {}), (0, Chunk951288.jsxs)("div", {
-          className: Chunk987129.content,
+          className: Chunk822338.content,
           children: [(0, Chunk951288.jsx)(Chunk626421.Z, {}), (0, Chunk951288.jsx)(tl, {
             isSidebarOpen: Chunk608787,
             hasNotice: exports,
@@ -625,7 +625,7 @@ function ta() {
             hideChannelList: Chunk120356 || a || Chunk593473 || Chunk697309,
             hideSidebar: !Chunk608787
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk987129.page,
+            className: Chunk822338.page,
             "data-collapsed": !!Chunk715702 && Chunk773244,
             children: (0, Chunk951288.jsxs)(Chunk290297.Z.Provider, {
               value: Chunk425369,
@@ -685,13 +685,13 @@ function ta() {
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.ME_ACTIVITY,
                   exact: true,
-                  render: e7,
+                  render: e9,
                   impressionName: Chunk990547.ImpressionNames.ACTIVITIES,
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.ME,
                   exact: true,
-                  render: e9,
+                  render: e7,
                   impressionName: Chunk990547.ImpressionNames.FRIENDS,
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {

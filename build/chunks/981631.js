@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $7l: () => Chunk334431.$7,
-  $92: () => e2,
+  $92: () => e3,
   $Ab: () => x,
   $R1: () => Chunk231338.$R,
   $VG: () => Chunk231338.$V,
@@ -21,7 +21,7 @@ require.d(exports, {
   AzA: () => rm,
   B1h: () => Chunk231338.B1,
   B9o: () => tf,
-  BFP: () => t3,
+  BFP: () => t2,
   BRd: () => Chunk231338.BR,
   BVn: () => rV,
   BZL: () => Chunk231338.BZ,
@@ -93,7 +93,7 @@ require.d(exports, {
   McO: () => rY,
   NYc: () => Chunk231338.NY,
   NYg: () => nV,
-  N_j: () => n2,
+  N_j: () => n3,
   NgX: () => T,
   O0b: () => n_,
   O0n: () => es,
@@ -107,7 +107,7 @@ require.d(exports, {
   OYC: () => $,
   OcF: () => e9,
   Odu: () => ee,
-  PEY: () => e3,
+  PEY: () => e2,
   PNu: () => ek,
   POd: () => rf,
   PRK: () => e0,
@@ -151,7 +151,7 @@ require.d(exports, {
   TzF: () => nJ,
   U66: () => Chunk231338.U6,
   ULH: () => P,
-  UWR: () => t2,
+  UWR: () => t3,
   Ucd: () => rU,
   Uk1: () => Chunk231338.Uk,
   UkZ: () => rw,
@@ -172,7 +172,7 @@ require.d(exports, {
   X6Q: () => Chunk231338.X6,
   X7u: () => Chunk231338.X7,
   XAJ: () => eT,
-  XKF: () => n3,
+  XKF: () => n2,
   XmY: () => e1,
   Xyh: () => e4,
   YeM: () => ec,
@@ -1516,8 +1516,8 @@ let ew = 100,
   e$ = 0xa00000,
   e0 = 524288e3,
   e1 = e => "||".concat(e, "||"),
-  e2 = /^\|\|([\s\S]+?)\|\|/,
-  e3 = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
+  e3 = /^\|\|([\s\S]+?)\|\|/,
+  e2 = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
   e4 = /^\d{17,19}$/;
 var e8 = function(e) {
     return e.MESSAGE = "MESSAGE", e.MESSAGE_GROUP_BLOCKED = "MESSAGE_GROUP_BLOCKED", e.MESSAGE_GROUP_IGNORED = "MESSAGE_GROUP_IGNORED", e.MESSAGE_GROUP_SPAMMER = "MESSAGE_GROUP_SPAMMER", e.THREAD_STARTER_MESSAGE = "THREAD_STARTER_MESSAGE", e.DIVIDER = "DIVIDER", e.JUMP_TARGET = "JUMP_TARGET", e.FORUM_POST_ACTION_BAR = "FORUM_POST_ACTION_BAR", e.MESSAGE_GROUP = "MESSAGE_GROUP", e.DIVIDER_TIME_STAMP = "DIVIDER_TIME_STAMP", e.DIVIDER_NEW_MESSAGES = "DIVIDER_NEW_MESSAGES", e
@@ -1788,10 +1788,10 @@ var t$ = function(e) {
   t1 = function(e) {
     return e[e.PRIVATE = 0] = "PRIVATE", e[e.PUBLIC = 1] = "PUBLIC", e
   }({});
-let t2 = Object.freeze({
+let t3 = Object.freeze({
     GAME_INVITE_FRAGMENT: "/_discord/join?secret="
   }),
-  t3 = new Set(["facebook", "contacts"]),
+  t2 = new Set(["facebook", "contacts"]),
   t4 = new Set(["spotify", "xbox", "playstation", "playstation-stg", "crunchyroll"]),
   t8 = Object.freeze({
     DESKTOP: "".concat(location.protocol).concat(window.GLOBAL_ENV.API_ENDPOINT, "/download"),
@@ -2072,8 +2072,8 @@ let n1 = Object.freeze({
     nvidia_gdn_app: "NVIDIA Cloud Gaming Application",
     roblox: "Roblox"
   }),
-  n2 = 6016,
-  n3 = 3384;
+  n3 = 6016,
+  n2 = 3384;
 var n4 = function(e) {
     return e.USAGE_STATISTICS = "usage_statistics", e.PERSONALIZATION = "personalization", e
   }({}),

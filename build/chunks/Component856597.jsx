@@ -1,4 +1,4 @@
-/** Chunk was on 87665 **/
+/** Chunk was on 39297 **/
 /** chunk id: 856597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -11,13 +11,13 @@ var Chunk481060 = require("./481060.js"),
   Chunk118589 = require("./118589.js"),
   Chunk210825 = require("./210825.js"),
   Chunk345262 = require("./345262.js"),
-  Chunk589205 = require("./589205.js"),
+  Chunk213360 = require("./213360.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk567666 = require("./567666.js");
+  Chunk133023 = require("./133023.js");
 let p = {
-    [Chunk118589.UA.EMAIL_VERIFICATION]: Chunk388032.intl.string(Chunk589205.default.HC4IiR),
-    [Chunk118589.UA.REFRESH_APP]: Chunk388032.intl.string(Chunk589205.default.SzfxQ3),
-    [Chunk118589.UA.AGE_VERIFICATION]: Chunk388032.intl.string(Chunk589205.default["dSkE/A"])
+    [Chunk118589.UA.EMAIL_VERIFICATION]: Chunk388032.intl.string(Chunk213360.default.HC4IiR),
+    [Chunk118589.UA.REFRESH_APP]: Chunk388032.intl.string(Chunk213360.default.SzfxQ3),
+    [Chunk118589.UA.AGE_VERIFICATION]: Chunk388032.intl.string(Chunk213360.default["dSkE/A"])
   },
   h = function() {
     let {
@@ -27,14 +27,14 @@ let p = {
       direction: "vertical",
       justify: "space-between",
       padding: Chunk345262.h,
-      className: Chunk567666.container,
+      className: Chunk133023.container,
       children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         direction: "vertical",
         justify: "space-between",
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "display-md",
-          className: Chunk567666.title,
-          children: Chunk388032.intl.string(Chunk589205.default["/OpRAP"])
+          className: Chunk133023.title,
+          children: Chunk388032.intl.string(Chunk213360.default["/OpRAP"])
         }), (0, Chunk951288.jsx)(Chunk481060.Kqy, {
           direction: "vertical",
           justify: "space-between",
@@ -53,7 +53,7 @@ let p = {
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
-        children: Chunk388032.intl.format(Chunk589205.default["0DHxym"], {
+        children: Chunk388032.intl.format(Chunk213360.default["0DHxym"], {
           handleLogOut: () => (0, Chunk210825.R)("safety_flows_sidebar")
         })
       })]

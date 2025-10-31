@@ -1,73 +1,73 @@
-/** Chunk was on 87665 **/
-/** chunk id: 590149, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 86872 **/
+/** chunk id: 590149, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
-  Chunk81364 = require("./81364.js");
+  Chunk422665 = require("./422665.js");
 
-function d(e) {
+function u(e) {
   let {
-    icon: t,
-    title: n,
-    subtitle: l,
-    children: d,
-    className: u,
+    icon: n,
+    title: t,
+    subtitle: r,
+    children: u,
+    className: d,
     isExpanded: m,
     onExpandedChange: p,
-    defaultExpanded: h = false,
+    defaultExpanded: _ = false,
     onOpen: x,
     maxHeight: g
-  } = e, [f, b] = r.useState(h), v = true !== m, j = v ? m : f, _ = r.useCallback(() => {
-    let e = !j;
-    v || b(e), null == p || p(e), e && null != x && x()
-  }, [j, v, p, x]), y = r.useMemo(() => {
-    if (null != g && j) return {
+  } = e, [f, N] = i.useState(_), h = true !== m, v = h ? m : f, E = i.useCallback(() => {
+    let e = !v;
+    h || N(e), null == p || p(e), e && null != x && x()
+  }, [v, h, p, x]), I = i.useMemo(() => {
+    if (null != g && v) return {
       maxHeight: "number" == typeof g ? "".concat(g, "px") : g
     }
-  }, [g, j]);
-  return (0, a.jsxs)("div", {
-    className: i()(c.accordionContainer, u, {
-      [c.opened]: j
+  }, [g, v]);
+  return (0, l.jsxs)("div", {
+    className: a()(c.accordionContainer, d, {
+      [c.opened]: v
     }),
-    children: [(0, a.jsxs)(o.P3F, {
+    children: [(0, l.jsxs)(s.P3F, {
       className: c.header,
-      onClick: _,
-      children: [null != t && (0, a.jsx)("div", {
+      onClick: E,
+      children: [null != n && (0, l.jsx)("div", {
         className: c.headerIconWrapper,
-        children: t
-      }), (0, a.jsxs)("div", {
+        children: n
+      }), (0, l.jsxs)("div", {
         className: c.title,
-        children: [(0, a.jsx)(o.Text, {
+        children: [(0, l.jsx)(s.Text, {
           variant: "eyebrow",
           color: "header-secondary",
-          children: n
-        }), null != l && "" !== l && (0, a.jsx)(o.Text, {
+          children: t
+        }), null != r && "" !== r && (0, l.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "interactive-normal",
-          children: l
+          children: r
         })]
-      }), (0, a.jsx)("div", {
-        className: i()(c.caret, {
-          [c.opened]: j
+      }), (0, l.jsx)("div", {
+        className: a()(c.caret, {
+          [c.opened]: v
         }),
-        children: (0, a.jsx)(s.Z, {
+        children: (0, l.jsx)(o.Z, {
           width: 18,
           height: 18,
-          direction: s.Z.Directions.DOWN
+          direction: o.Z.Directions.DOWN
         })
       })]
-    }), (0, a.jsx)("div", {
-      className: i()(c.content, {
-        [c.opened]: j
+    }), (0, l.jsx)("div", {
+      className: a()(c.content, {
+        [c.opened]: v
       }),
-      style: y,
-      children: d
+      style: I,
+      children: u
     })]
   })
 }

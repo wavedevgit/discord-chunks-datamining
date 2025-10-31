@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk902928 = require("./902928.jsx"),
   Chunk521937 = require("./521937.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk911740 = require("./911740.js");
+  Chunk298899 = require("./298899.js");
 let Chunk575703 = require("./575703.js");
 
 function w() {
@@ -106,16 +106,16 @@ function w() {
       e = null
   }
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk911740.activatePage,
+    className: Chunk298899.activatePage,
     children: [(0, Chunk951288.jsx)("img", {
-      className: Chunk911740.artwork,
+      className: Chunk298899.artwork,
       src: Chunk575703,
       alt: ""
     }), (0, Chunk951288.jsx)(Chunk133853.Z, {
       show: true,
-      className: Chunk911740.logo
+      className: Chunk298899.logo
     }), k ? (0, Chunk951288.jsx)("div", {
-      className: Chunk911740.content,
+      className: Chunk298899.content,
       children: module
     }) : module]
   })

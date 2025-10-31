@@ -1,4 +1,4 @@
-/** Chunk was on 87665 **/
+/** Chunk was on 39297 **/
 /** chunk id: 315384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk317951 = require("./317951.js"),
   Chunk959546 = require("./959546.js"),
-  Chunk838303 = require("./838303.js");
+  Chunk625299 = require("./625299.js");
 let u = "/users/@me/debug/consumables/",
   m = {
     [Chunk317951.FX]: "HD Streaming Potion",
@@ -31,7 +31,7 @@ function p() {
   })(), () => {
     require([]), h(null)
   }), []), (0, Chunk951288.jsx)("div", {
-    className: Chunk838303.panel,
+    className: Chunk625299.panel,
     children: null != p ? (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: p
@@ -58,14 +58,14 @@ function p() {
             g(false)
           }
         }),
-        className: Chunk838303.button,
+        className: Chunk625299.button,
         look: Chunk755721.iL.OUTLINED,
         color: Chunk755721.Tt.PRIMARY,
         children: "Create Confetti Entitlement"
       }), x && (0, Chunk951288.jsx)(Chunk481060.$jN, {})]
     }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk838303.title,
+        className: Chunk625299.title,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-lg/bold",
           children: "Existing Entitlements"

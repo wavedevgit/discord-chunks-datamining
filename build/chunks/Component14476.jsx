@@ -1,4 +1,4 @@
-/** Chunk was on 10065 **/
+/** Chunk was on 31029 **/
 /** chunk id: 14476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => m
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk699758 = require("./699758.js"),
   Chunk616066 = require("./616066.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk281377 = require("./281377.js");
+  Chunk632939 = require("./632939.js");
 let m = e => {
   let {
     skuId: t,

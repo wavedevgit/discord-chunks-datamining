@@ -73,7 +73,7 @@ var Chunk266454 = require("./266454.js"),
   Chunk757744 = require("./757744.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk735831 = require("./735831.js");
+  Chunk722363 = require("./722363.js");
 
 function eO(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -278,9 +278,9 @@ class eZ extends Chunk647438.Component {
     return (0, Chunk951288.jsx)(Chunk600164.Z, {
       justify: Chunk600164.Z.Justify.CENTER,
       align: Chunk600164.Z.Align.CENTER,
-      className: Chunk735831.invalidContainer,
+      className: Chunk722363.invalidContainer,
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk735831.inactiveContainer,
+        className: Chunk722363.inactiveContainer,
         children: Chunk388032.intl.format(Chunk388032.t.ketnW0, Chunk145597.OVERLAY_MIN_RESOLUTION)
       })
     })
@@ -305,9 +305,9 @@ class eZ extends Chunk647438.Component {
     let g = module || Chunk120356,
       m = Chunk314897.default.getId();
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk735831.overlay,
+      className: Chunk722363.overlay,
       children: [(0, Chunk951288.jsx)(Chunk708383.Z, {}), Chunk120356 && (0, Chunk951288.jsx)("header", {
-        className: Chunk735831.previewingInGameHeader,
+        className: Chunk722363.previewingInGameHeader,
         children: Chunk388032.intl.string(Chunk388032.t.iOq96m)
       }), i, (!module || Chunk921738.has(Chunk981631.O0n.TEXT_WIDGET)) && (0, Chunk951288.jsx)(eS, {
         locked: module,
@@ -316,8 +316,8 @@ class eZ extends Chunk647438.Component {
         isPreviewingInGame: Chunk120356
       }), (0, Chunk145597.validResolution)(c) ? (0, Chunk951288.jsx)(Chunk312178.Z, {
         className: a()({
-          [Chunk735831.layoutLocked]: module,
-          [Chunk735831.layoutUnlocked]: !module
+          [Chunk722363.layoutLocked]: module,
+          [Chunk722363.layoutUnlocked]: !module
         })
       }) : module ? null : this.renderInvalidSizeMessage(), (0, Chunk951288.jsx)(Chunk107200.Z, {}), null != Chunk954955 && null != u && (0, Chunk951288.jsx)(Chunk923532.Z, {
         streamerId: Chunk481060,
@@ -329,7 +329,7 @@ class eZ extends Chunk647438.Component {
         locked: Chunk704215,
         keybind: exports
       }), (0, Chunk951288.jsx)(Chunk681603.Z, {}), (0, Chunk951288.jsx)("div", {
-        className: Chunk735831.overlayMountPx
+        className: Chunk722363.overlayMountPx
       })]
     })
   }

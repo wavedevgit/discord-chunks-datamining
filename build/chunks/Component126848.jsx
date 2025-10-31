@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk494723 = require("./494723.js");
+  Chunk563042 = require("./563042.js");
 
 function v() {
   let e, t = arguments.length > 0 && true !== arguments[0] && arguments[0],
@@ -37,8 +37,8 @@ function v() {
   Chunk44315 && Chunk981631.push(Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE);
   let [O, v] = (0, Chunk243778.US)(Chunk981631, true, true);
   return Chunk647438.useEffect(() => {
-    true === exports && Chunk494723 === Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE && v(Chunk921944.L.AUTO_DISMISS)
-  }, [v, exports, Chunk494723]), Chunk44315 ? e = (0, Chunk951288.jsx)(Chunk655525.Z, {}) : null != Chunk120356 ? e = (0, Chunk951288.jsx)(Chunk924540.GN, {
+    true === exports && Chunk563042 === Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE && v(Chunk921944.L.AUTO_DISMISS)
+  }, [v, exports, Chunk563042]), Chunk44315 ? e = (0, Chunk951288.jsx)(Chunk655525.Z, {}) : null != Chunk120356 ? e = (0, Chunk951288.jsx)(Chunk924540.GN, {
     isTabSelected: exports,
     userDiscount: Chunk120356,
     includesAmountOff: false

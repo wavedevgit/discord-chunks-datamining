@@ -1,4 +1,4 @@
-/** Chunk was on 87665 **/
+/** Chunk was on 39297 **/
 /** chunk id: 213713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -30,11 +30,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk650613 = require("./650613.jsx"),
   Chunk789086 = require("./789086.jsx"),
   Chunk206583 = require("./206583.js"),
-  Chunk639488 = require("./639488.js"),
-  Chunk866403 = require("./866403.js");
+  Chunk680027 = require("./680027.js"),
+  Chunk451429 = require("./451429.js");
 let k = [{
   key: "type",
-  cellClassName: i()(Chunk639488.cell, Chunk639488.cellType),
+  cellClassName: i()(Chunk680027.cell, Chunk680027.cellType),
   render(e) {
     let {
       type: t
@@ -46,7 +46,7 @@ let k = [{
   }
 }, {
   key: "count",
-  cellClassName: i()(Chunk639488.cell, Chunk639488.cellCount),
+  cellClassName: i()(Chunk680027.cell, Chunk680027.cellCount),
   render(e) {
     let {
       entries: t
@@ -60,7 +60,7 @@ let k = [{
   }
 }, {
   key: "only?",
-  cellClassName: Chunk639488.cell,
+  cellClassName: Chunk680027.cell,
   render(e) {
     let {
       type: t
@@ -132,9 +132,9 @@ function A() {
     U = (0, Chunk835473.Z)(M).filter(Chunk823379.lm),
     B = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk866403.panel,
+    className: Chunk451429.panel,
     children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
-      className: Chunk639488.content,
+      className: Chunk680027.content,
       children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 8,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {

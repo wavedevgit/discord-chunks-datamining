@@ -1,4 +1,4 @@
-/** Chunk was on 87665 **/
+/** Chunk was on 39297 **/
 /** chunk id: 778648, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk246992 = require("./246992.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk358928 = require("./358928.js");
+  Chunk443582 = require("./443582.js");
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -99,7 +99,7 @@ let Z = function() {
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: K,
     children: (0, Chunk951288.jsx)(Chunk481060.zJl, {
-      className: Chunk358928.scroller,
+      className: Chunk443582.scroller,
       children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         direction: "vertical",
         gap: 24,
@@ -263,12 +263,12 @@ let Z = function() {
               variant: "text-sm/normal",
               children: "Virtual Currency Balance:"
             }), $ ? (0, Chunk951288.jsx)("div", {
-              className: Chunk358928.loader,
+              className: Chunk443582.loader,
               children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
                 type: Chunk481060.RAz.SPINNING_CIRCLE
               })
             }) : (0, Chunk951288.jsxs)("div", {
-              className: Chunk358928.balanceWidgetPillContainer,
+              className: Chunk443582.balanceWidgetPillContainer,
               children: [null !== ee && (0, Chunk951288.jsxs)(Chunk481060.Text, {
                 variant: "text-sm/normal",
                 children: ["Error fetching Virtual Currency Balance: ", ee.message]

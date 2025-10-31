@@ -107,7 +107,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk448494 = require("./448494.js"),
+  Chunk636428 = require("./636428.js"),
   Chunk680674 = require("./680674.js");
 
 function e$(e, t, n) {
@@ -143,13 +143,13 @@ function e1(e, t) {
   return n
 }
 
-function e2(e, t) {
+function e3(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : e1(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function e3(e, t) {
+function e2(e, t) {
   if (null == e) return {};
   var n, r, i = e4(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -169,10 +169,10 @@ function e4(e, t) {
 
 function e8() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk448494.nitroFileSizeUpsell,
+    className: Chunk636428.nitroFileSizeUpsell,
     children: [(0, Chunk951288.jsx)("img", {
       src: Chunk680674,
-      className: Chunk448494.nitroBadgeSvg,
+      className: Chunk636428.nitroBadgeSvg,
       alt: ""
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
@@ -259,7 +259,7 @@ class tt extends(r = Chunk647438.Component) {
         return null
     }
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk448494.ctaButtonContainer,
+      className: Chunk636428.ctaButtonContainer,
       children: r
     })
   }
@@ -397,7 +397,7 @@ class tt extends(r = Chunk647438.Component) {
     if (0 === d.length) return null;
     let f = d.map(t => {
         var n;
-        return e2(e0({}, (0, W.JD)(t, e)), {
+        return e3(e0({}, (0, W.JD)(t, e)), {
           original: t.url,
           srcIsAnimated: (0, ey.yE)(null != (n = t.flags) ? n : 0, ez.J0y.IS_ANIMATED)
         })
@@ -574,7 +574,7 @@ class tt extends(r = Chunk647438.Component) {
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        className: Chunk448494.confirmText,
+        className: Chunk636428.confirmText,
         children: Chunk388032.intl.string(Chunk388032.t["vXZ+Fo"])
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
@@ -611,7 +611,7 @@ class tt extends(r = Chunk647438.Component) {
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        className: Chunk448494.confirmText,
+        className: Chunk636428.confirmText,
         children: Chunk388032.intl.string(Chunk388032.t.faHmO3)
       })
     })
@@ -698,7 +698,7 @@ class tt extends(r = Chunk647438.Component) {
     } = this.state, l = this.renderEditedTag(exports, r), c = this.renderCodedLinks(exports), u = this.renderGiftCodes(exports), d = this.renderAttachments(exports), f = this.renderCtaButton(), _ = this.renderSocialProofingFileSizeNitroUpsell(exports), p = this.renderEmbeds(exports), h = this.renderActivityInvite(exports), m = this.renderReactions(exports), g = this.renderPublishBump(exports), E = this.renderEphemeralAccessories(exports), b = this.renderStickersAccessories(exports), y = this.renderThreadAccessories(exports), O = this.renderComponentAccessories(exports), v = this.renderThreadRoleMentionWarning(exports), I = this.renderEmbeddedApplicationInstanceEmbed(exports), T = this.renderInteractionPremiumUpsell(exports), S = this.renderMediaPostEmbeds(exports), A = this.renderSafetyPolicyNotice(exports), C = this.renderSafetySystemNotification(exports), N = this.renderMediaObscureNotice(exports), R = this.renderPoll(exports, require), P = this.renderForwardedMessage(exports), w = this.renderReportedMessage(exports), D = this.renderShareClientTheme(exports);
     return null == Chunk442837 && null == Chunk902704 && null == Chunk637374 && null == Chunk626799 && null == Chunk624367 && null == Chunk377108 && null == Chunk183431 && null == Chunk421474 && null == Chunk603270 && null == Chunk234431 && null == Chunk162297 && null == Chunk446411 && null == Chunk222709 && null == Chunk960904 && null == Chunk161314 && null != Chunk36129 && null == Chunk262777 && null == Chunk761538 && null == Chunk674611 && null == Chunk294734 ? null : (0, Chunk951288.jsxs)("div", {
       id: (0, Chunk453687.bX)(exports),
-      className: s()(module, Chunk448494.container),
+      className: s()(module, Chunk636428.container),
       children: [Chunk674611, Chunk761538, Chunk222709, Chunk262777, Chunk294734, Chunk442837, Chunk377108, Chunk960904, Chunk902704, Chunk481060, Chunk637374, Chunk629710, Chunk626799, Chunk603270, Chunk162297, Chunk446411, Chunk36129, Chunk904245, Chunk275726, Chunk624367, Chunk183431, Chunk421474, Chunk647438 && this.renderSuppressConfirmModal(), Chunk120356 && this.renderRemoveAttachmentConfirmModal(), Chunk234431, Chunk161314, Chunk247206]
     })
   }
@@ -802,7 +802,7 @@ function tn(e) {
     isActiveChannelOrUnarchivableThread: v,
     isAutomodQuarantined: y
   }), P = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), w = (0, z.Z)(null == n ? true : n.id), D = (0, Q.Z)(r), x = (0, R.v)(r), L = (0, eC._)(n), j = (0, eI.ro)(r.id, r.channel_id), U = (0, C.m8)();
-  return (0, i.jsx)(tt, e2(e0(e2(e0({
+  return (0, i.jsx)(tt, e3(e0(e3(e0({
     canSuppressEmbeds: I,
     canDeleteAttachments: T
   }, N), {
@@ -841,7 +841,7 @@ let tr = e => {
       disableReactionUpdates: l = true,
       disableComponentInteractivity: c = true
     } = e,
-    u = e3(e, ["message", "channel", "disableReactionReads", "renderThreadAccessory", "disableReactionCreates", "disableReactionUpdates", "disableComponentInteractivity"]);
+    u = e2(e, ["message", "channel", "disableReactionReads", "renderThreadAccessory", "disableReactionCreates", "disableReactionUpdates", "disableComponentInteractivity"]);
   let d = ec.x4.useSetting(),
     f = ec.RS.useSetting(),
     _ = ec.NA.useSetting(),
@@ -851,7 +851,7 @@ let tr = e => {
     g = (0, R.v)(n),
     E = (0, eI.ro)(n.id, n.channel_id),
     b = (0, Q.Z)(n);
-  return (0, i.jsx)(tt, e2(e0({}, u), {
+  return (0, i.jsx)(tt, e3(e0({}, u), {
     message: n,
     channel: r,
     disableReactionReads: a,

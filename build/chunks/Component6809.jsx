@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk210887 = require("./210887.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk839104 = require("./839104.js");
+  Chunk932720 = require("./932720.js");
 let h = function() {
   let {
     analyticsLocations: e
@@ -51,9 +51,9 @@ let h = function() {
       null != require.current && E(require.current)
     }, [E]);
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk839104.themeSection,
+    className: Chunk932720.themeSection,
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk839104.themeSelector,
+      className: Chunk932720.themeSelector,
       children: [b.map(e => (0, r.jsxs)("button", {
         type: "button",
         className: m.themeOption,

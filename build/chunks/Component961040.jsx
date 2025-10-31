@@ -1,4 +1,4 @@
-/** Chunk was on 15647 **/
+/** Chunk was on 83546 **/
 /** chunk id: 961040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk82409 = require("./82409.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk546373 = require("./546373.js");
+  Chunk888831 = require("./888831.js");
 
 function b(e) {
   let {
@@ -72,11 +72,11 @@ function b(e) {
 
 function _() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk546373.container,
+    className: Chunk888831.container,
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk546373.backgroundContainer,
+      className: Chunk888831.backgroundContainer,
       children: (0, Chunk951288.jsx)("span", {
-        className: Chunk546373.background
+        className: Chunk888831.background
       })
     }), (0, Chunk951288.jsx)(Chunk82409.Z, {})]
   })

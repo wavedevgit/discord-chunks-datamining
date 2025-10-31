@@ -1,4 +1,4 @@
-/** Chunk was on 13873 **/
+/** Chunk was on 88647 **/
 /** chunk id: 955384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk287921 = require("./287921.js");
+  Chunk26896 = require("./26896.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -36,7 +36,7 @@ class h extends Chunk647438.PureComponent {
       onCancel: a,
       children: o
     } = this.props, s = (0, Chunk951288.jsx)("div", {
-      className: Chunk287921.operations,
+      className: Chunk26896.operations,
       children: Chunk388032.intl.format(Chunk388032.t.wDsPXs, {
         onCancel: () => Chunk925975(Chunk911969.id),
         onSave: this.onClickSave

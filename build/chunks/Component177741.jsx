@@ -23,7 +23,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk138464 = require("./138464.js"),
   Chunk438820 = require("./438820.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk481079 = require("./481079.js"),
+  Chunk577562 = require("./577562.js"),
   Chunk426401 = require("./426401.js"),
   Chunk926734 = require("./926734.js"),
   Chunk601046 = require("./601046.js"),
@@ -115,12 +115,12 @@ function H() {
     R = x || Chunk153911;
   return (0, Chunk951288.jsxs)("div", {
     className: d()({
-      [Chunk481079.wrapper]: !R,
-      [Chunk481079.activeWrapper]: R
+      [Chunk577562.wrapper]: !R,
+      [Chunk577562.activeWrapper]: R
     }),
     children: [x && (0, Chunk951288.jsx)(Chunk70097.Z, {
       autoPlay: true,
-      className: Chunk481079.videoWrapper,
+      className: Chunk577562.videoWrapper,
       onPlay: () => {
         clearTimeout(n), Chunk626135.default.track(Chunk981631.rMx.PREMIUM_WOW_MOMENT_VIEWED, {
           wow_moment_type: "wumpus_flight"
@@ -134,13 +134,13 @@ function H() {
         type: Chunk601046
       })
     }), (0, Chunk951288.jsx)(Chunk13941.animated.div, {
-      className: Chunk481079.gadientHighlight,
+      className: Chunk577562.gadientHighlight,
       style: O
     }), (0, Chunk951288.jsx)(Chunk13941.animated.div, {
-      className: Chunk481079.swipeWrapper,
+      className: Chunk577562.swipeWrapper,
       style: v,
       children: (0, Chunk951288.jsxs)("svg", {
-        className: Chunk481079.swipe,
+        className: Chunk577562.swipe,
         viewBox: "0 0 848 1024",
         fill: "none",
         children: [(0, Chunk951288.jsx)("path", {

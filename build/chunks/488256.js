@@ -1,9 +1,0 @@
-/** Chunk was on 87665 **/
-/** chunk id: 488256, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  deleteEntitlementButton: "deleteEntitlementButton__23012",
-  card: "card__23012",
-  clickableGroup: "clickableGroup__23012",
-  section: "section__23012",
-  buttonGroup: "buttonGroup__23012"
-}

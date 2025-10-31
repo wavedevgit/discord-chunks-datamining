@@ -1,4 +1,4 @@
-/** Chunk was on 15647 **/
+/** Chunk was on 83546 **/
 /** chunk id: 339149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => N,
@@ -23,7 +23,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk353042 = require("./353042.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk977505 = require("./977505.js");
+  Chunk820093 = require("./820093.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -187,7 +187,7 @@ class P extends(r = Chunk647438.PureComponent) {
           scale: this.state.animationScale
         }]
       },
-      className: a()(require, Chunk977505.progressContainer),
+      className: a()(require, Chunk820093.progressContainer),
       onClick: this.handleOnClick,
       children: (0, Chunk951288.jsx)(Chunk28664.u, {
         __unsupportedReactNodeAsText: this.getTooltipText(),
@@ -200,7 +200,7 @@ class P extends(r = Chunk647438.PureComponent) {
             children: (0, Chunk951288.jsx)(Chunk481060._8t, {
               size: "md",
               color: "currentColor",
-              className: Chunk977505.downloadIcon
+              className: Chunk820093.downloadIcon
             })
           })
         })

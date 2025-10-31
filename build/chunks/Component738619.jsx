@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk3771 = require("./3771.js");
+  Chunk458182 = require("./458182.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,11 +79,11 @@ class N extends Chunk647438.PureComponent {
       activity: e
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
-      className: l()(Chunk3771.activityInviteEducation, {
-        [Chunk3771.activityInviteEducationFadeIn]: this.state.fadeIn
+      className: l()(Chunk458182.activityInviteEducation, {
+        [Chunk458182.activityInviteEducationFadeIn]: this.state.fadeIn
       }),
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk3771.activityInviteEducationArrow
+        className: Chunk458182.activityInviteEducationArrow
       }), (0, Chunk951288.jsx)("span", {
         children: Chunk388032.intl.format(Chunk388032.t["i/MoCt"], {
           game: module.name,

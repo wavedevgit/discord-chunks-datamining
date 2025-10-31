@@ -1,4 +1,4 @@
-/** Chunk was on 87665 **/
+/** Chunk was on 39297 **/
 /** chunk id: 538645, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk25251 = require("./25251.js"),
   Chunk373071 = require("./373071.js"),
   Chunk782691 = require("./782691.jsx"),
-  Chunk664046 = require("./664046.js");
+  Chunk558270 = require("./558270.js");
 let f = "Make sure you're only uploading text files!",
   b = e => {
     var t, n, r;
@@ -80,18 +80,18 @@ function v() {
       (0, u.Kr)(e.currentTarget.files, S, u.Eo)
     }, [S]);
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk664046.root,
+    className: Chunk558270.root,
     children: [null == require && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk664046.col,
+        className: Chunk558270.col,
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk664046.section,
+          className: Chunk558270.section,
           children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-xl/bold",
             children: "Custom Profile Effects"
           })
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk664046.customEffectsGrid,
+          className: Chunk558270.customEffectsGrid,
           children: Object.values(module).map(e => (0, a.jsx)(b, {
             effect: e,
             onClick: e => {
@@ -100,9 +100,9 @@ function v() {
           }, e.skuId))
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: i()(Chunk664046.row, Chunk664046.end, Chunk664046.section),
+        className: i()(Chunk558270.row, Chunk558270.end, Chunk558270.section),
         children: [(0, Chunk951288.jsxs)("div", {
-          className: Chunk664046.uploadButton,
+          className: Chunk558270.uploadButton,
           children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-md/normal",
             color: "always-white",
@@ -126,7 +126,7 @@ function v() {
           }
         })]
       }), (0, Chunk951288.jsx)("hr", {}), (0, Chunk951288.jsxs)("div", {
-        className: Chunk664046.section,
+        className: Chunk558270.section,
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-xl/bold",
           children: "All Effects"
@@ -136,7 +136,7 @@ function v() {
             y(e)
           }
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk664046.pfxGrid,
+          className: Chunk558270.pfxGrid,
           children: C.map(e => (0, a.jsx)(c.P3F, {
             className: g.pfxListItem,
             style: {

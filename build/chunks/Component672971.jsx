@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk74538 = require("./74538.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk973812 = require("./973812.js");
+  Chunk209857 = require("./209857.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,16 +79,16 @@ class y extends Chunk647438.Component {
       className: Chunk442837,
       children: [v && (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
-        className: Chunk973812.formTitle,
+        className: Chunk209857.formTitle,
         children: Chunk388032.intl.string(Chunk388032.t.Ogvn5o)
       }), null != module && (Chunk120356 || !Chunk647438) ? (0, Chunk951288.jsx)(Chunk755721.$q, {
         type: Chunk755721.M0.INVERTED,
         value: N,
         onChange: this.handleToggleEULAAcceptance,
         disabled: Chunk512722,
-        className: Chunk973812.checkbox,
+        className: Chunk209857.checkbox,
         children: (0, Chunk951288.jsx)("div", {
-          className: Chunk973812.checkboxLabel,
+          className: Chunk209857.checkboxLabel,
           children: Chunk388032.intl.format(Chunk388032.t.IodJKT, {
             applicationName: exports,
             onClick: t => {
@@ -104,7 +104,7 @@ class y extends Chunk647438.Component {
           })
         })
       }) : null, null == y ? null : (0, Chunk951288.jsx)("div", {
-        className: o()(Chunk973812.finePrint, C),
+        className: o()(Chunk209857.finePrint, C),
         children: y
       }), v ? (0, Chunk951288.jsxs)("div", {
         className: Chunk442837,
@@ -113,17 +113,17 @@ class y extends Chunk647438.Component {
           value: R,
           onChange: this.handleToggleEUWithdralWaiverAcceptance,
           disabled: Chunk512722,
-          className: o()(Chunk973812.checkbox, Chunk850840),
+          className: o()(Chunk209857.checkbox, Chunk850840),
           children: (0, Chunk951288.jsx)("div", {
-            className: o()(Chunk973812.checkboxLabel, E),
+            className: o()(Chunk209857.checkboxLabel, E),
             children: Chunk388032.intl.string(Chunk388032.t["DFCVN+"])
           })
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk973812.finePrint,
+          className: Chunk209857.finePrint,
           children: Chunk388032.intl.string(Chunk388032.t.jhu6zm)
         })]
       }) : null, O && (0, Chunk951288.jsxs)("div", {
-        className: Chunk973812.finePrint,
+        className: Chunk209857.finePrint,
         children: ["*", Chunk388032.intl.format(Chunk388032.t["5zmY3F"], {
           documentationLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.LOCALIZED_PRICING)
         })]

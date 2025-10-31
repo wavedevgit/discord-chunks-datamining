@@ -1,0 +1,11 @@
+/** Chunk was on 83546 **/
+/** chunk id: 809946, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  messagesPopoutWrap: "messagesPopoutWrap__0aee3",
+  messagesPopout: "messagesPopout__0aee3",
+  messagesGroupHeaderWrap: "messagesGroupHeaderWrap__0aee3",
+  messagesGroupHeader: "messagesGroupHeader__0aee3",
+  chevron: "chevron__0aee3",
+  collapsed: "collapsed__0aee3",
+  emptyStateContainer: "emptyStateContainer__0aee3"
+}

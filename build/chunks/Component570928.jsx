@@ -8,7 +8,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk884151 = require("./884151.js");
+  Chunk516473 = require("./516473.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,15 +78,15 @@ class h extends(r = Chunk647438.PureComponent) {
       } = module,
       c = _(module, ["tag", "children", "hoverText", "className", "forceHover"]);
     return (0, Chunk951288.jsxs)("div", f(u({}, c), {
-      className: s()(Chunk647438, Chunk884151.hoverRoll, {
-        [Chunk884151.disabled]: null == r,
-        [Chunk884151.forceHover]: Chunk120356
+      className: s()(Chunk647438, Chunk516473.hoverRoll, {
+        [Chunk516473.disabled]: null == r,
+        [Chunk516473.forceHover]: Chunk120356
       }),
       children: [(0, Chunk951288.jsx)(exports, {
-        className: Chunk884151.hovered,
+        className: Chunk516473.hovered,
         children: r
       }), (0, Chunk951288.jsx)(exports, {
-        className: Chunk884151.default,
+        className: Chunk516473.default,
         children: require
       })]
     }))
