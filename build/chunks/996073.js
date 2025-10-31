@@ -43,7 +43,8 @@ let f = Object.freeze({
     [Chunk526761.KQ.ContentAndSocialScrollPositions.DM_SAFETY_ALERTS_V2]: Chunk981631.oAB.CONTENT_AND_SOCIAL,
     [Chunk526761.KQ.ContentAndSocialScrollPositions.MESSAGE_REQUESTS_V2]: Chunk981631.oAB.CONTENT_AND_SOCIAL,
     [Chunk526761.KQ.ContentAndSocialScrollPositions.EXPLICIT_MEDIA_REDACTION_V2]: Chunk981631.oAB.CONTENT_AND_SOCIAL,
-    [Chunk526761.KQ.ContentAndSocialScrollPositions.RESTRICTED_ACCOUNTS]: Chunk981631.oAB.CONTENT_AND_SOCIAL
+    [Chunk526761.KQ.ContentAndSocialScrollPositions.RESTRICTED_ACCOUNTS]: Chunk981631.oAB.CONTENT_AND_SOCIAL,
+    [Chunk526761.KQ.AccountScrollPositions.DISABLE_ACCOUNT]: Chunk981631.oAB.ACCOUNT
   }),
   _ = function(e, t, n) {
     let l = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 0,

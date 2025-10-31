@@ -177,7 +177,9 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
               }), (0, r.jsx)(a.X6q, {
                 variant: "heading-sm/medium",
                 color: "text-secondary",
-                children: e.body
+                children: null != e.code ? O.intl.format(e.bodyWithExpiration, {
+                  date: e.endDate
+                }) : e.body
               })]
             }), null == e.code && (0, r.jsx)(a.zxk, {
               icon: a.mBM,
@@ -196,7 +198,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
             className: v.promoCardAssetContainer,
             children: d
           })]
-        }), (0, r.jsx)(P, {
+        }), null != e.code && (0, r.jsx)(P, {
           recurrence: e
         })]
       }, e.id)), n && (0, r.jsx)(a.P3F, {
@@ -240,6 +242,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
     steelseries: {
       title: Chunk388032.intl.string(Chunk388032.t.sfGgOG),
       body: Chunk388032.intl.string(Chunk388032.t.igiSKe),
+      bodyWithExpiration: Chunk388032.t.w8CXUl,
       redemptionURL: "https://steelseries.com/",
       logos: {
         dark: (0, Chunk951288.jsx)(Chunk823581.U3, {}),
@@ -250,6 +253,7 @@ let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M
     [L]: {
       title: Chunk388032.intl.string(Chunk388032.t["9N8obd"]),
       body: Chunk388032.intl.string(Chunk388032.t["34g+Z3"]),
+      bodyWithExpiration: Chunk388032.t.rqmpXc,
       redemptionURL: "https://www.kontrolfreek.com/",
       logos: {
         dark: (0, Chunk951288.jsx)(Chunk823581.dt, {}),

@@ -80,7 +80,7 @@ function J(e) {
       return t[e]
     }
     return ""
-  }, [n]), m = null == l ? true : l.getIconURL(160, S.$k ? "webp" : "png"), p = T.default.extractTimestamp(l.id), g = o()().diff(o()(p), "days") <= Y.G, x = s.some(e => (0, b.ig)(e) === d.o.GLOBAL), h = null != (t = n.name) ? t : null == l ? true : l.name;
+  }, [n]), m = null == l ? true : l.getIconURL(160, S.$k ? "webp" : "png"), p = T.default.extractTimestamp(l.id), g = o()().diff(o()(p), "days") <= W.G, x = s.some(e => (0, b.ig)(e) === d.o.GLOBAL), h = null != (t = n.name) ? t : null == l ? true : l.name;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: K.gameArtHero,
@@ -93,11 +93,11 @@ function J(e) {
         className: K.coverArtRow,
         children: [(0, r.jsx)("div", {
           className: K.logoWrapper,
-          children: (0, r.jsx)(L.C, {
+          children: (0, r.jsx)(_.C, {
             game: n,
             application: l,
             className: K.logo,
-            size: L.Z.LARGE
+            size: _.Z.LARGE
           })
         }), (0, r.jsx)(M.Z, {
           applicationId: l.id,
@@ -243,7 +243,7 @@ function $(e) {
       children: B.intl.string(B.t.CI0vSJ)
     }), (0, r.jsxs)("div", {
       className: K.sections,
-      children: [(0, r.jsx)(W.Z, {
+      children: [(0, r.jsx)(Y.Z, {
         detectedGame: t,
         trackAction: l
       }), (0, r.jsx)(F.Z, {
@@ -259,7 +259,7 @@ function $(e) {
       }), (0, r.jsx)(f.Text, {
         variant: "text-xxs/normal",
         children: B.intl.format(B.t.pch2Jw, {
-          igdbLink: Y.$f
+          igdbLink: W.$f
         })
       })]
     })]
@@ -280,7 +280,7 @@ let Q = e => {
   } = (0, y.ZP)(), h = (0, u.e7)([w.default], () => w.default.locale), j = i.useMemo(() => (0, A.fP)(), []), v = (0, u.Wu)([G.Z], () => {
     var e;
     return (null != (e = G.Z.getSimilarGames(n)) ? e : []).slice(0, 25)
-  }), [N, P] = i.useState(null), S = (0, Z.N)(n), [C, T] = i.useState(null), L = (0, O.q)(n), M = (0, u.e7)([E.Z], () => E.Z.getGame(n)), D = null != (t = null == M ? true : M.name) ? t : null == L ? true : L.name, R = (e, t) => {
+  }), [N, P] = i.useState(null), S = (0, Z.N)(n), [C, T] = i.useState(null), _ = (0, O.q)(n), M = (0, u.e7)([E.Z], () => E.Z.getGame(n)), D = null != (t = null == M ? true : M.name) ? t : null == _ ? true : _.name, R = (e, t) => {
     var r;
     (0, A.UE)({
       gameName: null != D ? D : "",
@@ -332,10 +332,10 @@ let Q = e => {
       gameName: null != D ? D : "",
       playedFriendIds: S.map(e => e.author_id),
       playedFriendsData: r,
-      similarGames: v.filter(_.z6).slice(0, 5),
+      similarGames: v.filter(L.z6).slice(0, 5),
       officialGuildId: null == C || null == (e = C.guild) ? true : e.id
     })
-  }), null == M || null == L) ? null : (0, r.jsx)(f.Y0X, {
+  }), null == M || null == _) ? null : (0, r.jsx)(f.Y0X, {
     transitionState: o,
     size: f.CgR.DYNAMIC,
     className: a()(x, K.gameProfileModal),
@@ -344,7 +344,7 @@ let Q = e => {
       orientation: "auto",
       children: [(0, r.jsx)(J, {
         detectedGame: M,
-        application: L,
+        application: _,
         entries: S,
         trackAction: R
       }), (0, r.jsx)(f.y5t, {
@@ -352,7 +352,7 @@ let Q = e => {
           className: a()(K.content, K.mainContent),
           children: [(0, r.jsx)(V, {
             detectedGame: M,
-            application: L,
+            application: _,
             entries: S,
             officialGuildInvite: C,
             similarGames: v,
