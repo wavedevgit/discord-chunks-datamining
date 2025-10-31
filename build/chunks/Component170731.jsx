@@ -70,7 +70,7 @@ function S(e) {
   })
 }
 
-function w() {
+function I() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk481060.nn4, {
       children: Chunk388032.intl.string(Chunk388032.t.pfChQr)
@@ -85,7 +85,7 @@ function w() {
   })
 }
 
-function O(e) {
+function w(e) {
   let {
     lastItem: t,
     remainingCount: n,
@@ -109,7 +109,7 @@ function O(e) {
   }, "overflow-".concat(t.item.skuId))
 }
 
-function I(e) {
+function O(e) {
   let {
     items: t,
     hasOverflow: n,
@@ -119,7 +119,7 @@ function I(e) {
     giftRecipient: s,
     defaultWishlistId: o,
     onOpenWishlist: d,
-    onWishlistItemClick: C
+    onWishlistItemClick: c
   } = e;
   return (0, r.jsxs)("ul", {
     className: v.wishlistBannerGrid,
@@ -139,10 +139,10 @@ function I(e) {
           giftingOrigin: g.Wt.DM_CHANNEL_WISHLIST,
           source: n,
           showIcons: a,
-          onWishlistItemClick: C
+          onWishlistItemClick: c
         })
       }, t.skuId)
-    }), n && (0, r.jsx)(O, {
+    }), n && (0, r.jsx)(w, {
       lastItem: i,
       remainingCount: l,
       giftRecipient: s,
@@ -164,7 +164,7 @@ let P = function(e) {
     wishlistError: g
   } = (0, f.ZL)(t), {
     displayItems: L,
-    hasMoreItems: O,
+    hasMoreItems: w,
     totalWishlistItemCount: P,
     wishlistItemCountToBeDisplayed: E
   } = (0, f.UD)({
@@ -179,25 +179,25 @@ let P = function(e) {
     user: t,
     displayProfile: l
   }), {
-    profileThemeStyle: Z,
-    profileThemeClassName: A
-  } = (0, C.Z)({
+    profileThemeStyle: A,
+    profileThemeClassName: N
+  } = (0, c.Z)({
     theme: k,
     themeType: null,
     primaryColor: M,
     secondaryColor: T
-  }), B = i.useCallback(() => {
-    (0, c.openUserProfileModal)({
+  }), Z = i.useCallback(() => {
+    (0, C.openUserProfileModal)({
       userId: t.id,
       section: b.oh.WISHLIST
     })
-  }, [t.id]), N = y[i.useMemo(() => E >= f.zL ? "FULL_WISHLIST" : E > 0 ? "MIXED" : "SHOP_ONLY", [E])], R = j.ZP.getName(t), H = null == l ? true : l.getBannerURL({
+  }, [t.id]), B = y[i.useMemo(() => E >= f.zL ? "FULL_WISHLIST" : E > 0 ? "MIXED" : "SHOP_ONLY", [E])], R = j.ZP.getName(t), H = null == l ? true : l.getBannerURL({
     canAnimate: false,
     size: 713
-  }), U = m || _ || x, F = O ? L.slice(0, f.zL - 1) : L, G = O ? L[f.zL - 1] : null, D = P - f.zL + 1;
+  }), U = m || _ || x, F = w ? L.slice(0, f.zL - 1) : L, G = w ? L[f.zL - 1] : null, D = P - f.zL + 1;
   return null != g ? null : (0, r.jsxs)("div", {
-    className: a()(v.wishlistBanner, A),
-    style: Z,
+    className: a()(v.wishlistBanner, N),
+    style: A,
     children: [null != H && (0, r.jsx)("div", {
       className: v.backgroundImage,
       style: {
@@ -207,20 +207,20 @@ let P = function(e) {
       disableAdaptiveTheme: true,
       children: e => (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(S, {
-          title: N.title,
-          subtitle: N.getSubtitle(R),
+          title: B.title,
+          subtitle: B.getSubtitle(R),
           themeClass: e
         }), (0, r.jsx)("div", {
           className: e,
-          children: U || 0 === L.length ? (0, r.jsx)(w, {}) : (0, r.jsx)(I, {
+          children: U || 0 === L.length ? (0, r.jsx)(I, {}) : (0, r.jsx)(O, {
             items: F,
-            hasOverflow: O,
+            hasOverflow: w,
             overflowItem: G,
             overflowCount: D,
-            showIcons: N.showIcons,
+            showIcons: B.showIcons,
             giftRecipient: t,
             defaultWishlistId: u,
-            onOpenWishlist: B,
+            onOpenWishlist: Z,
             onWishlistItemClick: n
           })
         })]

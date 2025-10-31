@@ -29,7 +29,7 @@ let _ = e => {
     category: b
   } = e, L = i.useRef(null), {
     isHoveringOrFocusing: v
-  } = (0, c.Z)(L), y = !_ && v, S = (0, C.ZP)(), w = (0, o.wj)(S), O = {
+  } = (0, C.Z)(L), y = !_ && v, S = (0, c.ZP)(), I = (0, o.wj)(S), w = {
     type: s.Z.AVATAR_DECORATION,
     label: j,
     asset: n
@@ -41,9 +41,9 @@ let _ = e => {
       onClick: () => {
         null == t || null == f || _ || f(t)
       },
-      className: a()(w ? m.shopCardDark : m.shopCard, {
+      className: a()(I ? m.shopCardDark : m.shopCard, {
         [m.shopCardAnimation]: !_,
-        [w ? m.shopCardDarkHighlighted : m.shopCardHighlighted]: y,
+        [I ? m.shopCardDarkHighlighted : m.shopCardHighlighted]: y,
         [m.shopCardSelected]: g === t
       }),
       children: [(0, r.jsx)("div", {
@@ -53,7 +53,7 @@ let _ = e => {
           [m.shopCardClaimed]: _
         }),
         children: (0, r.jsx)(p.R, {
-          item: O,
+          item: w,
           user: l,
           isHighlighted: y,
           avatarSize: d.EFr.SIZE_120,

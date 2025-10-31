@@ -2,12 +2,13 @@
 /** chunk id: 238649, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => P
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk79766 = require("./79766.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -16,6 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk357355 = require("./357355.js"),
   Chunk140465 = require("./140465.js"),
   Chunk105759 = require("./105759.js"),
+  Chunk715130 = require("./715130.js"),
+  Chunk179918 = require("./179918.jsx"),
   Chunk117791 = require("./117791.jsx"),
   Chunk638212 = require("./638212.jsx"),
   Chunk403503 = require("./403503.jsx"),
@@ -27,82 +30,85 @@ var Chunk951288 = require("./951288.js"),
   Chunk254139 = require("./254139.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk350169 = require("./350169.js");
-let A = (e, t) => {
+let R = (e, t) => {
     let {
       className: n,
       subscriptionTier: i,
       isEligibleForBogoPromotion: a,
-      offerExpiresAt: A
+      offerExpiresAt: R
     } = e, {
-      analyticsLocations: C
-    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), N = (0, _.Nx)(), R = (0, b.$)(), P = (0, p.Z)(), w = null != P, D = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
-      visibilityPercentageRef: x,
-      visibilityPercentage: L
-    } = (0, O.E)(!D), M = (0, s.e7)([f.Z], () => f.Z.affinities), j = !w && M.length > 0;
-    return (0, r.jsx)(d.Gt, {
-      value: C,
+      analyticsLocations: P
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), w = (0, p.Nx)(), D = (0, v.$)(), x = (0, h.Z)(), L = null != x, M = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
+      visibilityPercentageRef: j,
+      visibilityPercentage: k
+    } = (0, T.E)(!M), U = (0, l.e7)([_.Z], () => _.Z.affinities), G = !L && U.length > 0, B = (0, m.H)(s.I.MARKETING_PAGE_BANNER);
+    return (0, r.jsx)(f.Gt, {
+      value: P,
       children: (0, r.jsx)("div", {
         ref: t,
-        className: o()(S.container, null != A && S.containerWithOfferCountdown, n),
+        className: o()(N.container, null != R && N.containerWithOfferCountdown, n),
         "data-testid": "marketing-page-hero-header",
         children: (0, r.jsx)("div", {
-          ref: x,
+          ref: j,
           children: (0, r.jsxs)("div", {
-            className: S.contentContainer,
-            children: [(0, r.jsx)(I.Z, {
-              containerVisibilityPercentage: L
-            }), N && (null != A ? (0, r.jsx)(g.Z, {
-              expiresAt: A,
-              className: S.heroOfferCountdown
+            className: N.contentContainer,
+            children: [(0, r.jsx)(A.Z, {
+              containerVisibilityPercentage: k
+            }), w && (null != R ? (0, r.jsx)(y.Z, {
+              expiresAt: R,
+              className: N.heroOfferCountdown
             }) : (0, r.jsx)("div", {
-              className: S.offerPillContainer,
-              children: (0, r.jsx)(v.Z, {
+              className: N.offerPillContainer,
+              children: (0, r.jsx)(S.Z, {
                 enablePremiumBrandRefresh: true
               })
             })), (0, r.jsx)("div", {
-              className: S.marketingPageTextContainer,
-              children: (0, r.jsx)(l.Heading, {
+              className: N.marketingPageTextContainer,
+              children: (0, r.jsx)(c.Heading, {
                 variant: "display-md",
                 color: "header-primary",
-                className: S.header,
-                children: T.intl.string(T.t.YCZldK)
+                className: N.header,
+                children: C.intl.string(C.t.YCZldK)
               })
             }), (0, r.jsxs)("div", {
-              className: S.body,
-              children: [w && (0, r.jsx)("div", {
-                className: S.referrerAttributionContainer,
-                children: (0, r.jsx)(y.Z, {
-                  referrer: P,
+              className: N.body,
+              children: [L && (0, r.jsx)("div", {
+                className: N.referrerAttributionContainer,
+                children: (0, r.jsx)(I.Z, {
+                  referrer: x,
                   enablePremiumBrandRefresh: true
                 })
-              }), j && (0, r.jsx)("div", {
-                className: S.affinitiesContainer,
-                children: (0, r.jsx)(E.Z, {
+              }), G && (0, r.jsx)("div", {
+                className: N.affinitiesContainer,
+                children: (0, r.jsx)(O.Z, {
                   textColor: "text-primary",
                   smallerText: false,
                   isApplicationHome: true,
                   enablePremiumBrandRefresh: true
                 })
               }), (0, r.jsxs)("div", {
-                className: N ? S.singleButtonContainer : S.twoButtonContainer,
-                children: [(0, r.jsx)(m.Z, {
+                className: w ? N.singleButtonContainer : N.twoButtonContainer,
+                children: [(0, r.jsx)(b.Z, {
                   size: "md",
-                  fullWidth: N,
+                  fullWidth: w,
                   hasActivePromotion: !!a,
                   subscriptionTier: i
-                }), !N && (0, r.jsx)(h.Z, {
+                }), !w && (0, r.jsx)(E.Z, {
                   variant: "secondary",
                   size: "md"
                 })]
               }), (0, r.jsx)("div", {
-                className: S.descriptionContainer,
-                children: (0, r.jsx)(l.Text, {
+                className: N.descriptionContainer,
+                children: (0, r.jsx)(c.Text, {
                   color: "text-tertiary",
                   variant: "text-xs/medium",
-                  children: T.intl.format(T.t.kt9wxs, {
-                    cheapestMonthlyPrice: R
+                  children: C.intl.format(C.t.kt9wxs, {
+                    cheapestMonthlyPrice: D
                   })
                 })
+              }), null != B && "marketingPageBanner" === B.properties.properties.oneofKind && (0, r.jsx)(g.u, {
+                componentId: B.id,
+                promotionBannerMarketingComponentFields: B.properties.properties.marketingPageBanner
               })]
             })]
           })
@@ -110,4 +116,4 @@ let A = (e, t) => {
       })
     })
   },
-  C = Chunk647438.memo(Chunk647438.forwardRef(A))
+  P = Chunk647438.memo(Chunk647438.forwardRef(R))

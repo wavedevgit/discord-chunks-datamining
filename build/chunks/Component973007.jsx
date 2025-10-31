@@ -3,7 +3,7 @@
 require.d(exports, {
   ZP: () => p,
   j8: () => u,
-  jB: () => c
+  jB: () => C
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk402450 = require("./402450.js");
 
-function c(e) {
+function C(e) {
   let {
     onClick: t,
     isGift: n,
@@ -42,7 +42,7 @@ function c(e) {
       cursor: "pointer"
     },
     children: (0, r.jsx)(o.wp, {
-      className: C.tier2MarketingCard,
+      className: c.tier2MarketingCard,
       ctaButton: null,
       showWumpus: !l,
       showPromotionalGiftBanner: l,
@@ -60,7 +60,7 @@ function u(e) {
     isGift: n,
     priceOptions: i,
     enablePremiumBrandRefresh: d,
-    removeTopMargin: c
+    removeTopMargin: C
   } = e;
   return d ? (0, r.jsx)(a.P3F, {
     onClick: t,
@@ -69,7 +69,7 @@ function u(e) {
     },
     children: (0, r.jsx)(s.UQ, {
       className: l()({
-        [C.premiumBrandRefreshTier0Card]: !c
+        [c.premiumBrandRefreshTier0Card]: !C
       }),
       ctaButton: null,
       showYearlyPrice: true,
@@ -82,7 +82,7 @@ function u(e) {
       cursor: "pointer"
     },
     children: (0, r.jsx)(o.Gq, {
-      className: C.tier0MarketingCard,
+      className: c.tier0MarketingCard,
       ctaButton: null,
       showWumpus: true,
       showYearlyPrice: true,
@@ -100,7 +100,7 @@ let p = function(e) {
     enablePremiumBrandRefresh: a
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c, {
+    children: [(0, r.jsx)(C, {
       onClick: () => t(d.Si.TIER_2),
       isGift: n,
       priceOptions: i,

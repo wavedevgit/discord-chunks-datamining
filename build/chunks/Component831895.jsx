@@ -21,7 +21,7 @@ function p(e) {
     onCategoryChange: m,
     className: _
   } = e, [f, x] = i.useState(h), [j, g] = i.useState(null), b = (0, o.Z)(), L = i.useMemo(() => [{
-    name: c.intl.string(c.t["6Zuivx"]),
+    name: C.intl.string(C.t["6Zuivx"]),
     value: d.KN.Trick,
     key: "Trick",
     icon: (0, r.jsx)(s.yDF, {
@@ -31,7 +31,7 @@ function p(e) {
     onMouseEnter: () => g(d.KN.Trick),
     onMouseLeave: () => g(null)
   }, {
-    name: c.intl.string(c.t["2UeOlY"]),
+    name: C.intl.string(C.t["2UeOlY"]),
     value: d.KN.Treat,
     key: "Treat",
     icon: (0, r.jsx)(s.sq, {
@@ -45,7 +45,7 @@ function p(e) {
   }, [m]), y = null == b || null == (n = b.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, S = null == b || null == (p = b.segmentedControlAnimations) || null == (l = p.treat) ? true : l.getAnimationData;
   return (0, r.jsxs)("div", {
     className: a()(u.container, _),
-    children: [(0, r.jsx)(C.w, {
+    children: [(0, r.jsx)(c.w, {
       options: L,
       value: f,
       onChange: v

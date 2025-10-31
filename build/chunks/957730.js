@@ -2,7 +2,7 @@
 /** chunk id: 957730, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => es
+  ZP: () => el
 }), require("./35282.js"), require("./388685.js"), require("./539854.js"), require("./361932.js"), require("./187205.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -164,7 +164,8 @@ let V = Chunk428595.Z.RULES,
   z = /^<#(\d+)>/,
   q = /^<a?:(\w+):(\d+)>/,
   X = /(@everyone|@here|@Clyde)\b/,
-  Q = {
+  Q = /^[^\s]+@[^\s]+\.[^\s.]+/,
+  J = {
     link: Z(o().defaultRules.link),
     autolink: Z(o().defaultRules.autolink),
     url: Z(o().defaultRules.url),
@@ -177,7 +178,7 @@ let V = Chunk428595.Z.RULES,
     mention: {
       match(e, t, n) {
         let r = n.split(" ").pop() + e;
-        if (/^[^ ]+@[^ ]+\.[^ .]+/.test(r)) return null;
+        if (Q.test(r)) return null;
         let i = G("@", e, t.users, "mention");
         if (i || (i = G("@", e, t.mentionableRoles, "roleMention"))) return i;
         if (!(i = G("@", e, t.users.map(e => U(j({}, e), {
@@ -262,7 +263,7 @@ let V = Chunk428595.Z.RULES,
       match: (e, t) => "string" == typeof t.textExclusions && "" !== t.textExclusions ? (0, _.T9)(t.textExclusions).exec(e) : null != H.match ? H.match(e, t, "") : null
     })
   },
-  J = {
+  $ = {
     inlineCode: Z(V.inlineCode),
     codeBlock: Z(V.codeBlock),
     mention: {
@@ -396,29 +397,29 @@ let V = Chunk428595.Z.RULES,
     }),
     text: j({}, H)
   };
-[Q, J].forEach(e => {
+[J, $].forEach(e => {
   Object.keys(e).forEach((t, n) => {
     e[t].order = n
   })
 });
-let $ = o().parserFor(Q),
-  ee = /(?:<a?:\w+:(\d+)>)|:(?:([^\s:]+?)(?:::skin-tone-\d)?:)/g;
+let ee = o().parserFor(J),
+  et = /(?:<a?:\w+:(\d+)>)|:(?:([^\s:]+?)(?:::skin-tone-\d)?:)/g;
 
-function et(e, t, n) {
+function en(e, t, n) {
   if (null != n && ("customEmoticon" === t.type && n(t.emoji, false), "emoticon" === t.type || "text" === t.type)) {
     let r, i = u.ZP.translateSurrogatesToInlineEmoji(t.content);
-    for (; null !== (r = ee.exec(i));) {
+    for (; null !== (r = et.exec(i));) {
       let i;
       null != r[1] && "" !== r[1] ? e.emojiContext && (i = e.emojiContext.getById(r[1])) : i = u.ZP.getByName(r[2]), i && n(i, t.isShortcut || false)
     }
   }
 }
 
-function en(e, t, n, r) {
+function er(e, t, n, r) {
   let i = "",
     a = [];
   return e.forEach(e => {
-    if (et(t, e, r), "string" == typeof e.content) switch (e.type) {
+    if (en(t, e, r), "string" == typeof e.content) switch (e.type) {
       case "emoji":
         a.push({
           position: i.length,
@@ -439,7 +440,7 @@ function en(e, t, n, r) {
       let {
         content: o,
         emoji: s
-      } = en(e.content, t, n, r);
+      } = er(e.content, t, n, r);
       for (let e of s) a.push({
         position: i.length + e.position,
         length: e.length,
@@ -453,11 +454,11 @@ function en(e, t, n, r) {
   }
 }
 
-function er(e, t, n) {
-  return en($(e, t), t, u.ZP.translateInlineEmojiToSurrogates, n).content
+function ei(e, t, n) {
+  return er(ee(e, t), t, u.ZP.translateInlineEmojiToSurrogates, n).content
 }
 
-function ei(e) {
+function ea(e) {
   let t, n = null == e ? true : e.getGuildId(),
     r = null != n ? I.Z.getGuild(n) : null,
     a = T.Z.can(D.Plq.MENTION_EVERYONE, e);
@@ -535,16 +536,16 @@ function ei(e) {
   }
 }
 
-function ea(e) {
+function eo(e) {
   return e
 }
 
-function eo(e, t, n) {
+function es(e, t, n) {
   let r = E.Z.getChannel(t),
     a = null != r ? r.getGuildId() : null,
     s = null != a ? I.Z.getGuild(a) : null,
-    l = n ? J : i().omit(J, ["spoiler", "timestamp"]),
-    c = n ? ea : u.ZP.translateSurrogatesToInlineEmoji,
+    l = n ? $ : i().omit($, ["spoiler", "timestamp"]),
+    c = n ? eo : u.ZP.translateSurrogatesToInlineEmoji,
     d = o().parserFor(l),
     f = {
       inline: true,
@@ -552,19 +553,19 @@ function eo(e, t, n) {
       channelId: t,
       isNotification: n
     };
-  return en(d(e, f), f, c)
+  return er(d(e, f), f, c)
 }
-let es = {
+let el = {
   parse(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : true,
-      r = null != n ? n : ei(e),
+      r = null != n ? n : ea(e),
       i = {
         content: t,
         tts: false,
         invalidEmojis: [],
         validNonShortcutEmojis: []
       };
-    return i.content = er(i.content, r, (t, n) => {
+    return i.content = ei(i.content, r, (t, n) => {
       R.ZP.isEmojiPremiumLocked({
         emoji: t,
         channel: e,
@@ -572,7 +573,7 @@ let es = {
       }) ? i.invalidEmojis.push(t) : n || i.validNonShortcutEmojis.push(t)
     }), i
   },
-  parsePreprocessor: (e, t) => $(t, ei(e)),
-  unparse: (e, t, n) => eo(e, t, n).content,
-  unparseWithMeta: eo
+  parsePreprocessor: (e, t) => ee(t, ea(e)),
+  unparse: (e, t, n) => es(e, t, n).content,
+  unparseWithMeta: es
 }

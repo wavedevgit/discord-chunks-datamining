@@ -25,7 +25,7 @@ function h(e) {
     selectedSkuId: h,
     setSelectedPlanId: m,
     startedPaymentFlowWithPaymentSourcesRef: _
-  } = (0, C.JL)(), {
+  } = (0, c.JL)(), {
     isGift: f
   } = (0, d.wD)(), x = null != i ? (0, o.Af)(i) : null, j = null != x ? (0, o.gq)(x.planId) : null, g = null != x ? (0, o.Rd)(x.planId) : null, b = (0, u.Kp)({
     isTrial: false,
@@ -46,7 +46,7 @@ function h(e) {
         variant: "primary",
         text: p.intl.string(p.t["3PatSz"]),
         onClick: () => {
-          b ? (m((0, u.nA)(h, i)), t(c.h8.REVIEW)) : t(c.h8.PLAN_SELECT)
+          b ? (m((0, u.nA)(h, i)), t(C.h8.REVIEW)) : t(C.h8.PLAN_SELECT)
         }
       }), (0, r.jsx)(a.Button, {
         variant: "secondary",

@@ -29,7 +29,7 @@ function f(e) {
   } = (0, o.ZP)(), b = a.EFr.SIZE_32, L = (0, d.Z)(null == f ? true : f.assetId, b, !j), v = (0, u.Z)(), y = null == v ? true : v.giftPurchaseConfirmation;
   return null == n || null == y ? null : (0, r.jsx)(h.O3, {
     children: (0, r.jsx)(a.mzw, {
-      align: c.Z.Align.CENTER,
+      align: C.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
         className: _.promotionalFooter,
@@ -42,7 +42,7 @@ function f(e) {
           variant: "primary",
           text: y.collectRewardButtonText(),
           onClick: () => {
-            t(), (0, C.Z)({
+            t(), (0, c.Z)({
               product: n,
               shouldShowPromotionalExperience: true,
               analyticsLocations: g,

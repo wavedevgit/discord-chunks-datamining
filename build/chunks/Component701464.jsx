@@ -15,8 +15,8 @@ let o = function(e) {
     isGift: n,
     priceOptions: o,
     showPromotionalGiftBanner: d,
-    giftRecipient: C,
-    onWishlistItemClick: c
+    giftRecipient: c,
+    onWishlistItemClick: C
   } = e;
   return (0, r.jsxs)("div", {
     className: s.giftOptionContainer,
@@ -36,8 +36,8 @@ let o = function(e) {
         removeTopMargin: true
       })]
     }), (0, r.jsx)(l.Z, {
-      giftRecipient: C,
-      onWishlistItemClick: c
+      giftRecipient: c,
+      onWishlistItemClick: C
     })]
   })
 }

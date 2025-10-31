@@ -31,22 +31,22 @@ function L(e) {
       renderPurchaseConfirmation: v,
       postSuccessGuild: y,
       followupSKUInfo: S,
-      continueSessionToInitialStep: w
+      continueSessionToInitialStep: I
     } = e,
     {
-      activeSubscription: O,
-      paymentSources: I,
+      activeSubscription: w,
+      paymentSources: O,
       paymentSourceId: P,
       selectedPlan: E,
       selectedSkuId: k,
       step: M,
       updatedSubscription: T,
-      startingPremiumSubscriptionPlanIdRef: Z,
-      startingFractionalPremiumEndsAtRef: A
+      startingPremiumSubscriptionPlanIdRef: A,
+      startingFractionalPremiumEndsAtRef: N
     } = (0, m.JL)(),
     {
-      isGift: B,
-      giftRecipient: N,
+      isGift: Z,
+      giftRecipient: B,
       giftCode: R,
       hasSentMessage: H,
       isSendingMessage: U,
@@ -57,40 +57,40 @@ function L(e) {
     {
       confirmationFooter: W
     } = (0, _.zb)(),
-    z = (0, C.id)(E, B, G),
+    z = (0, c.id)(E, Z, G),
     K = (0, d.Z)(),
-    Y = (0, C.a5)(E),
-    V = (0, C.tK)(null == D ? true : D.skuId),
-    q = (0, j.$)(I, P),
-    J = B && null != D && Y;
+    Y = (0, c.a5)(E),
+    V = (0, c.tK)(null == D ? true : D.skuId),
+    q = (0, j.$)(O, P),
+    J = Z && null != D && Y;
   a()(null != E, "Expected plan to selected"), a()(null != k, "Expected selectedSkuId"), a()(null != M, "Step should be set");
   let Q = i.useCallback(() => {
     n(), null == L || L()
   }, [n, L]);
   i.useEffect(() => {
-    !B || null == N || null == R || H || U || (0, u.pO)(N) || F({
+    !Z || null == B || null == R || H || U || (0, u.pO)(B) || F({
       onSubscriptionConfirmation: L
     })
-  }, [F, B, N, R, H, U, L]), i.useEffect(() => {
+  }, [F, Z, B, R, H, U, L]), i.useEffect(() => {
     null != K && null != K.reminderNotice && z && (0, o.wH)(s.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
       dismissAction: b.L.INDIRECT_ACTION
     })
   }, [K, z]);
-  let X = null != w ? c.PI.DEEPLINK_TO_DESKTOP_APP : true;
+  let X = null != I ? C.PI.DEEPLINK_TO_DESKTOP_APP : true;
   if (null != v) t = v(E, Q, T);
-  else if (B) t = (0, r.jsx)(c.TB, {
+  else if (Z) t = (0, r.jsx)(C.TB, {
     planId: E.id,
     onClose: Q
   });
   else {
-    let e = Z.current === E.id ? {
+    let e = A.current === E.id ? {
       postSuccessGuild: y
     } : {
       followupSKUInfo: S,
-      startingPremiumSubscriptionPlanId: Z.current,
-      isDowngrade: null != O && (0, p.GY)(O, E.id, l)
+      startingPremiumSubscriptionPlanId: A.current,
+      isDowngrade: null != w && (0, p.GY)(w, E.id, l)
     };
-    t = (0, r.jsx)(c.ZP, function(e) {
+    t = (0, r.jsx)(C.ZP, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -112,7 +112,7 @@ function L(e) {
       onClose: Q,
       paymentSourceType: q,
       hideClose: null != W,
-      startingFractionalPremiumEndsAt: A.current,
+      startingFractionalPremiumEndsAt: N.current,
       customCTAType: X
     }, e))
   }

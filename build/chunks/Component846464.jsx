@@ -31,14 +31,14 @@ function L(e) {
   } = e, {
     setSelectedSkuId: l,
     activeSubscription: a,
-    startedPaymentFlowWithPaymentSourcesRef: C,
-    setSelectedPlanId: c,
+    startedPaymentFlowWithPaymentSourcesRef: c,
+    setSelectedPlanId: C,
     priceOptions: u,
     defaultPlanId: g
   } = (0, m.JL)(), {
     isGift: b,
     claimableRewards: L
-  } = (0, h.wD)(), y = b && null != L && L.length > 0, S = (0, d.N)(i), w = (0, s.Nx)(), O = (0, o.Z)({
+  } = (0, h.wD)(), y = b && null != L && L.length > 0, S = (0, d.N)(i), I = (0, s.Nx)(), w = (0, o.Z)({
     location: "PremiumPaymentSelect"
   });
   return (0, r.jsx)(v, {
@@ -55,9 +55,9 @@ function L(e) {
         defaultPlanId: d
       } = e;
       r(n);
-      let C = _.h8.PLAN_SELECT,
-        c = (0, p.k5)(t);
-      c !== j.Si.TIER_1 && c !== j.Si.TIER_2 || n !== j.Si.TIER_0 || l || (C = _.h8.WHAT_YOU_LOSE);
+      let c = _.h8.PLAN_SELECT,
+        C = (0, p.k5)(t);
+      C !== j.Si.TIER_1 && C !== j.Si.TIER_2 || n !== j.Si.TIER_0 || l || (c = _.h8.WHAT_YOU_LOSE);
       let u = (0, x.T)({
           userTrialOffer: a,
           isGift: l,
@@ -69,7 +69,7 @@ function L(e) {
           selectedSkuId: n,
           startedPaymentFlowWithPaymentSources: o
         });
-      C !== _.h8.WHAT_YOU_LOSE && h && (C = _.h8.REVIEW, s((0, f.nA)(n, t, d))), i(C, {
+      c !== _.h8.WHAT_YOU_LOSE && h && (c = _.h8.REVIEW, s((0, f.nA)(n, t, d))), i(c, {
         analyticsDataOverride: {
           sku_id: n
         }
@@ -81,16 +81,16 @@ function L(e) {
       handleStepChange: t,
       isGift: b,
       userTrialOffer: S,
-      startedPaymentFlowWithPaymentSources: C.current,
-      setSelectedPlanId: c,
+      startedPaymentFlowWithPaymentSources: c.current,
+      setSelectedPlanId: C,
       defaultPlanId: g
     }),
     onClose: n,
     isGift: b,
-    inOfferExperience: w,
+    inOfferExperience: I,
     priceOptions: u,
     showPromotionalGiftBanner: y,
-    enablePremiumBrandRefresh: O
+    enablePremiumBrandRefresh: w
   })
 }
 
@@ -144,14 +144,14 @@ function v(e) {
         [b.premiumBrandRefreshContent]: m,
         [b.wishlistModalSize]: f
       }),
-      children: null != _ && f ? (0, r.jsx)(c.Z, {
+      children: null != _ && f ? (0, r.jsx)(C.Z, {
         onSelectSku: e => t((0, p.Wz)(e)),
         isGift: i,
         priceOptions: o,
         showPromotionalGiftBanner: d,
         giftRecipient: _,
         onWishlistItemClick: n
-      }) : (0, r.jsx)(C.ZP, {
+      }) : (0, r.jsx)(c.ZP, {
         onSelectSku: e => t((0, p.Wz)(e)),
         isGift: i,
         priceOptions: o,
