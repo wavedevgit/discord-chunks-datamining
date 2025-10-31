@@ -175,14 +175,17 @@ class eg extends Chunk647438.PureComponent {
         inlineSpecs: eh,
         children: this.renderGuildHeaderDropdownButton(e)
       })
-    }) : t ? (0, r.jsx)(f.aML, {
-      forceOpen: true,
-      color: f.r6K.BRAND,
-      position: "bottom",
-      shouldShow: !e && !i,
-      text: eo.intl.string(eo.t.sFSrFH),
-      "aria-label": eo.intl.string(eo.t.sFSrFH),
-      children: () => this.renderGuildHeaderDropdownButton(e)
+    }) : t ? (0, r.jsxs)(r.Fragment, {
+      children: [this.renderGuildHeaderDropdownButton(e), !e && !i && (0, r.jsx)(p.J2, {
+        targetElementRef: this.guildHeaderDropdownButtonRef,
+        title: eo.intl.string(eo.t.Rk2RJk),
+        body: eo.intl.string(eo.t.sFSrFH),
+        onRequestClose: this.handleCloseTemplateDirtyTooltip,
+        position: "bottom",
+        caretConfig: {
+          align: "center"
+        }
+      })]
     }) : i || e ? this.renderGuildHeaderDropdownButton(e) : l ? (0, r.jsxs)(r.Fragment, {
       children: [this.renderGuildHeaderDropdownButton(e), (0, r.jsx)(p.J2, {
         targetElementRef: this.guildHeaderDropdownButtonRef,

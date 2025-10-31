@@ -7,7 +7,7 @@ require.d(exports, {
 });
 let r = (0, require("./427164.js").le)({
     kind: "user",
-    name: "2025-10-list-profile-effects-sunset",
+    name: "2025-10-list-profile-effects-sunset-again",
     defaultConfig: {
       isEnabled: false
     },

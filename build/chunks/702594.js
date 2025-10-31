@@ -64,6 +64,14 @@ let s = [Chunk409813.h8.PAYMENT_TYPE],
       appendSteps: n,
       paymentElementsEnabled: i
     } = e, [a, s, l, c, u, d, f, _, p, h] = (0, r.useMemo)(() => b([{
+      sharedStepsKey: "SHARED_TYPE_AND_ADDRESS_STEPS",
+      methodType: o.He.UNKNOWN
+    }, {
+      sharedStepsKey: "SHARED_ADD_PAYMENT_STEPS",
+      methodType: o.He.PAYMENT_REQUEST
+    }, {
+      sharedStepsKey: "SHARED_ADD_PAYMENT_STEPS"
+    }, {
       sharedStepsKey: "SHARED_CREDIT_CARD_STEPS",
       methodType: o.He.CARD
     }, {
@@ -73,16 +81,8 @@ let s = [Chunk409813.h8.PAYMENT_TYPE],
       sharedStepsKey: "SHARED_IDEAL_STEPS",
       methodType: o.He.IDEAL
     }, {
-      sharedStepsKey: "SHARED_TYPE_AND_ADDRESS_STEPS",
-      methodType: o.He.UNKNOWN
-    }, {
-      sharedStepsKey: "SHARED_ADD_PAYMENT_STEPS",
-      methodType: o.He.PAYMENT_REQUEST
-    }, {
       sharedStepsKey: "SHARED_VENMO_STEPS",
       methodType: o.He.VENMO
-    }, {
-      sharedStepsKey: "SHARED_ADD_PAYMENT_STEPS"
     }, {
       sharedStepsKey: "SHARED_PRZELEWY24_STEPS",
       methodType: o.He.PRZELEWY24
@@ -97,27 +97,29 @@ let s = [Chunk409813.h8.PAYMENT_TYPE],
       appendSteps: n,
       paymentElementsEnabled: i
     }), [t, n, i]), m = (0, r.useMemo)(() => ({
-      [o.He.CARD]: a,
-      [o.He.PAYPAL]: s,
-      [o.He.PAYMENT_REQUEST]: u,
-      [o.He.IDEAL]: l,
-      [o.He.VENMO]: d,
+      [o.He.CARD]: c,
+      [o.He.PAYPAL]: u,
+      [o.He.PAYMENT_REQUEST]: s,
+      [o.He.VENMO]: f,
       [o.He.CASH_APP]: h,
-      [o.He.GOPAY_WALLET]: c,
-      [o.He.KAKAOPAY]: c,
-      [o.He.GCASH]: c,
-      [o.He.PAYSAFE_CARD]: c,
-      [o.He.GRABPAY_MY]: c,
-      [o.He.MOMO_WALLET]: c
-    }), [a, s, l, u, c, d, h]);
+      [o.He.IDEAL]: d,
+      [o.He.PRZELEWY24]: _,
+      [o.He.EPS]: p,
+      [o.He.GOPAY_WALLET]: a,
+      [o.He.KAKAOPAY]: a,
+      [o.He.GCASH]: a,
+      [o.He.PAYSAFE_CARD]: a,
+      [o.He.GRABPAY_MY]: a,
+      [o.He.MOMO_WALLET]: a
+    }), [a, c, u, f, s, d, h, _, p]);
     return {
-      CREDIT_CARD_STEPS: a,
-      PAYPAL_STEPS: s,
-      IDEAL_STEPS: l,
-      DEFAULT_PAYMENT_ELEMENT_STEPS: c,
-      PAYMENT_REQUEST_STEPS: u,
-      VENMO_STEPS: d,
-      ADD_PAYMENT_STEPS: f,
+      DEFAULT_PAYMENT_ELEMENT_STEPS: a,
+      CREDIT_CARD_STEPS: c,
+      PAYPAL_STEPS: u,
+      IDEAL_STEPS: d,
+      PAYMENT_REQUEST_STEPS: s,
+      VENMO_STEPS: f,
+      ADD_PAYMENT_STEPS: l,
       PRZELEWY24_STEPS: _,
       EPS_STEPS: p,
       CASH_APP_STEPS: h,
