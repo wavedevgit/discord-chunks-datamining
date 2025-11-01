@@ -199,17 +199,20 @@ let k = e => {
           value: e,
           label: "".concat(R.ZP.getUserTag(e))
         }))
-      }), (0, r.jsx)(u.zxk, {
-        disabled: null == a,
-        loading: m,
-        onClick: () => {
-          E(true), (0, g.YD)(a, t).then(() => {
-            n(), (0, _.Ou)()
-          }).catch(() => {
-            d(true), E(false)
-          })
-        },
-        text: x.intl.string(x.t["+EgwQn"])
+      }), (0, r.jsx)("div", {
+        className: L.giftRecipientButton,
+        children: (0, r.jsx)(u.zxk, {
+          disabled: null == a,
+          loading: m,
+          onClick: () => {
+            E(true), (0, g.YD)(a, t).then(() => {
+              n(), (0, _.Ou)()
+            }).catch(() => {
+              d(true), E(false)
+            })
+          },
+          text: x.intl.string(x.t["+EgwQn"])
+        })
       })]
     }), (0, r.jsx)("div", {
       className: s ? L.subtextError : L.subtext,
