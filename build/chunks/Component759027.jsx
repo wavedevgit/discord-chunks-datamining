@@ -76,7 +76,7 @@ function S(e) {
   } = e, [O, P] = i.useState(false), [w, I] = i.useState(false), [k, A] = i.useState(false), [R, Z] = i.useState(false), [D, L] = i.useState(null), M = e => (null == e && (e = T.status), e in _) ? _[e] : "Unknown status ".concat(e), U = e => {
     let t = new Date(e);
     return p.default.fromTimestamp(t.getTime())
-  }, F = async e => {
+  }, B = async e => {
     let {
       status: t = T.status,
       premiumStreakStart: n,
@@ -110,7 +110,7 @@ function S(e) {
       body: i,
       rejectWithError: false
     }), N()
-  }, B = async () => {
+  }, F = async () => {
     try {
       await c.tn.post({
         url: "/debug/subscriptions/".concat(T.id, "/transition"),
@@ -278,7 +278,7 @@ function S(e) {
             serialize: e => M(e),
             isSelected: e => e === T.status,
             options: C,
-            select: e => F({
+            select: e => B({
               status: e
             }),
             popoutLayerContext: h.O$
@@ -287,7 +287,7 @@ function S(e) {
               variant: "primary",
               size: "sm",
               text: "Renew Subscription",
-              onClick: e => B()
+              onClick: e => F()
             }), null !== D && (0, a.jsx)("div", {
               className: j.error,
               children: (0, a.jsx)(d.M14, {
@@ -300,14 +300,14 @@ function S(e) {
             children: [(0, a.jsx)(d.Wrb, {
               label: "Premium Streak Start Date",
               value: o()(null == (E = T.premiumSince) ? true : E.toISOString().substring(0, 10)),
-              onSelect: e => F({
+              onSelect: e => B({
                 premiumStreakStart: e.toISOString()
               })
             }), (0, a.jsx)(x.Z, {})]
           }), (0, a.jsx)(d.Wrb, {
             label: "Metadata Ended At Date",
             value: o()(H),
-            onSelect: e => F({
+            onSelect: e => B({
               endedAt: e.toISOString()
             })
           })]

@@ -95,7 +95,7 @@ function f() {
     }, 100);
     return () => clearInterval(module)
   }, [T.yell]);
-  let F = Chunk647438.useCallback(function(e) {
+  let B = Chunk647438.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "signal";
       C(n => [{
         message: e,
@@ -103,10 +103,10 @@ function f() {
         timestamp: new Date
       }, ...n].slice(0, 50))
     }, []),
-    B = Chunk647438.useCallback(async e => {
+    F = Chunk647438.useCallback(async e => {
       try {
         let n = await o.Z.process(e);
-        if (F("Signal sent: ".concat(e.type).concat(JSON.stringify(e).length > 50 ? " (".concat(JSON.stringify(e).substring(0, 50), "...)") : " (".concat(JSON.stringify(e), ")")), "signal"), (null == n ? true : n.reason) != null)
+        if (B("Signal sent: ".concat(e.type).concat(JSON.stringify(e).length > 50 ? " (".concat(JSON.stringify(e).substring(0, 50), "...)") : " (".concat(JSON.stringify(e), ")")), "signal"), (null == n ? true : n.reason) != null)
           if ((null == n ? true : n.reason.includes("Manual clip")) || (null == n ? true : n.reason.includes("exceeded threshold"))) {
             var t;
             let e = u.Z.getHandlerState("ml-audio-classification"),
@@ -117,7 +117,7 @@ function f() {
               timestamp: new Date,
               emotionHistory: a.length > 0 ? a : true
             }, ...e].slice(0, 50))
-          } else F("❌ No clip: ".concat(n.reason), "signal");
+          } else B("❌ No clip: ".concat(n.reason), "signal");
         let a = o.Z.read();
         _({
           clippingPressure: a.pressure,
@@ -126,9 +126,9 @@ function f() {
           timeline: a.signals
         })
       } catch (e) {
-        F("❌ Error: ".concat(e.message), "signal")
+        B("❌ Error: ".concat(e.message), "signal")
       }
-    }, [F]),
+    }, [B]),
     G = Chunk647438.useCallback(e => {
       let t = !T[e];
       true === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
@@ -844,43 +844,43 @@ function f() {
             },
             children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Manual",
-              onClick: () => B({
+              onClick: () => F({
                 type: Chunk894694.Bs.MANUAL
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Distributed",
-              onClick: () => B({
+              onClick: () => F({
                 type: Chunk894694.Bs.DISTRIBUTED,
                 remoteTriggerUserId: "123",
                 remoteTriggerClipId: "456"
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Phrase: Alexa",
-              onClick: () => B({
+              onClick: () => F({
                 type: Chunk894694.Bs.PHRASE,
                 text: "alexa"
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Phrase: Klip",
-              onClick: () => B({
+              onClick: () => F({
                 type: Chunk894694.Bs.PHRASE,
                 text: "klip"
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Phrase: Clip",
-              onClick: () => B({
+              onClick: () => F({
                 type: Chunk894694.Bs.PHRASE,
                 text: "clip"
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Phrase: Burr",
-              onClick: () => B({
+              onClick: () => F({
                 type: Chunk894694.Bs.PHRASE,
                 text: "burr"
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Yelling",
-              onClick: () => B({
+              onClick: () => F({
                 type: Chunk894694.Bs.YELLING
               })
             })]
@@ -999,7 +999,7 @@ function f() {
                   importance: w,
                   title: k,
                   description: R
-                }), F("Created ".concat(O.toUpperCase(), " event (").concat(w, ")").concat(k), "info")
+                }), B("Created ".concat(O.toUpperCase(), " event (").concat(w, ")").concat(k), "info")
               }
             })]
           })]
@@ -1097,20 +1097,20 @@ function f() {
                 try {
                   let e = Chunk460779.Z.getConfig(),
                     t = (0, Chunk333291.yM)(module);
-                  L(exports), U(true), F("✅ Config exported to textarea below", "info")
+                  L(exports), U(true), B("✅ Config exported to textarea below", "info")
                 } catch (e) {
-                  F("❌ Failed to export config: ".concat(module.message), "info")
+                  B("❌ Failed to export config: ".concat(module.message), "info")
                 }
               }
             }), (0, Chunk951288.jsx)(Chunk481060.Button, {
               text: "Import Config",
               onClick: () => {
                 try {
-                  if ("" === D.trim()) return void F("❌ Config textarea is empty", "info");
+                  if ("" === D.trim()) return void B("❌ Config textarea is empty", "info");
                   let e = (0, Chunk333291.o$)(D);
-                  Chunk39604.O0(module), F("✅ Config imported successfully", "info")
+                  Chunk39604.O0(module), B("✅ Config imported successfully", "info")
                 } catch (e) {
-                  F("❌ Failed to import config: ".concat(module.message), "info")
+                  B("❌ Failed to import config: ".concat(module.message), "info")
                 }
               }
             })]

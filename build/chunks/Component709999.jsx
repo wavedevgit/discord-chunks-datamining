@@ -213,8 +213,8 @@ function ep(e) {
     product: i,
     isPartiallyOwnedBundle: f,
     isPurchased: g
-  }), L = (0, X.J)(t, n === ea.AW.ORBS ? B.tA.ORBS : true), {
-    handleUseNow: F,
+  }), L = (0, X.J)(t, n === ea.AW.ORBS ? F.tA.ORBS : true), {
+    handleUseNow: B,
     isApplying: G
   } = (0, k.W)({
     product: i
@@ -289,7 +289,7 @@ function ep(e) {
           if (g) return (0, a.jsx)(p.Button, {
             variant: "primary",
             onClick: e => {
-              e.stopPropagation(), F()
+              e.stopPropagation(), B()
             },
             loading: G,
             text: er.intl.string(er.t.MAS7uK),
@@ -455,7 +455,7 @@ let eh = Chunk647438.memo(function(e) {
       location: "CollectiblesShopTallCard"
     }), {
       isHoveringOrFocusing: M
-    } = (0, f.Z)(u), U = (0, ee.To)(t), B = (0, d.e7)([h.Z], () => h.Z.useReducedMotion), V = T.ZP.canUseCollectibles(n), K = i.useMemo(() => (0, I.BH)(t, V), [t, V]), q = (0, I.G1)(t), Y = (0, d.e7)([y.Z], () => (0, p.wjy)(y.Z.theme)), {
+    } = (0, f.Z)(u), U = (0, ee.To)(t), F = (0, d.e7)([h.Z], () => h.Z.useReducedMotion), V = T.ZP.canUseCollectibles(n), K = i.useMemo(() => (0, I.BH)(t, V), [t, V]), q = (0, I.G1)(t), Y = (0, d.e7)([y.Z], () => (0, p.wjy)(y.Z.theme)), {
       isPurchased: J,
       isPartiallyOwnedBundle: X
     } = (0, R.L)(b), {
@@ -499,7 +499,7 @@ let eh = Chunk647438.memo(function(e) {
         tile_type: o.Z[t.type],
         tile_position: String(null == Z ? true : Z.tilePosition),
         cta_name: null
-      }), (0, F.T)({
+      }), (0, B.T)({
         product: t,
         category: l,
         shouldCheckoutWithOrbs: a,
@@ -517,7 +517,7 @@ let eh = Chunk647438.memo(function(e) {
       children: (0, a.jsxs)(p.kL8, {
         className: r()(P, Y ? es.shopCardDark : es.shopCard, {
           [es.partiallyOwned]: X && !M,
-          [es.shopCardAnimation]: !B,
+          [es.shopCardAnimation]: !F,
           [Y ? es.shopCardDarkHighlighted : es.shopCardHighlighted]: M
         }),
         ref: u,

@@ -111,12 +111,12 @@ function ec(e) {
   }), () => W.Z.setState({
     isOpen: false
   })), []);
-  let ey = (0, s.e7)([B.Z], () => B.Z.getStatus(t.id)),
-    eC = F.Cr.useSetting(),
+  let ey = (0, s.e7)([F.Z], () => F.Z.getStatus(t.id)),
+    eC = B.Cr.useSetting(),
     eS = (0, $.F)(eC),
     eE = (0, s.e7)([G.Z], () => G.Z.hidePersonalInformation),
     eT = (0, f.p)(),
-    eN = F.Sb.useSetting(),
+    eN = B.Sb.useSetting(),
     eO = (0, $.I)(ey),
     eP = (0, q.g)(n),
     ew = (0, v.Z)({
@@ -139,13 +139,13 @@ function ec(e) {
       eU(false)
     }, 500)
   }, []);
-  let eF = e => {
+  let eB = e => {
       null == n || n(), (0, T.openUserProfileModal)(eo({
         customStatusPrompt: eL,
         sourceAnalyticsLocations: eg
       }, ef, e))
     },
-    eB = (0, E.Z)({
+    eF = (0, E.Z)({
       location: "UserProfileAccountPopout"
     }),
     eG = (null == ex ? true : ex.widgets) != null && ex.widgets.length > 0,
@@ -178,7 +178,7 @@ function ec(e) {
         "data-layer": "base",
         children: [(0, a.jsx)(Q.Z, {
           displayProfile: ex,
-          handleOpenUserProfileModal: eF,
+          handleOpenUserProfileModal: eB,
           height: ev
         }), (0, a.jsxs)(R.Z, {
           className: er.themeContainer,
@@ -195,7 +195,7 @@ function ec(e) {
               user: t,
               displayProfile: ex,
               themeType: ei.l.POPOUT,
-              onOpenProfile: eh ? true : eF
+              onOpenProfile: eh ? true : eB
             }), (0, a.jsx)(L.Z, {
               ref: eR,
               user: t,
@@ -212,7 +212,7 @@ function ec(e) {
               user: t,
               className: er.username,
               nickname: H.ZP.getName(em, null, t),
-              onOpenProfile: eh ? true : eF,
+              onOpenProfile: eh ? true : eB,
               pronouns: null == ex ? true : ex.pronouns,
               tags: (0, a.jsx)(O.Z, {
                 displayProfile: ex,
@@ -234,10 +234,10 @@ function ec(e) {
               bio: null == ex ? true : ex.bio,
               hidePersonalInformation: eE,
               onClose: n
-            }), eB && eG && (0, a.jsx)(M.Z, {
+            }), eF && eG && (0, a.jsx)(M.Z, {
               widgets: ex.widgets,
               onClick: () => {
-                n(), eF({
+                n(), eB({
                   section: ea.oh.WIDGETS
                 })
               }
@@ -247,7 +247,7 @@ function ec(e) {
             }), eA ? (0, a.jsx)(A.Z, {
               user: t,
               currentUser: t,
-              onOpenUserProfileModal: eF,
+              onOpenUserProfileModal: eB,
               onClose: n
             }) : (0, a.jsx)(I.Z, {
               user: t,

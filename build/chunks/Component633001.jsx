@@ -891,9 +891,9 @@ let ev = ["__webpack_require__", "fn"],
             tooltip: "Close",
             onClick: c
           })]
-        }), (0, a.jsxs)(F.E, {
+        }), (0, a.jsxs)(B.E, {
           className: K.commonProperties,
-          children: [(0, a.jsx)(F.Z9, {
+          children: [(0, a.jsx)(B.Z9, {
             name: "Timestamp",
             copyValue: v.toISOString(),
             children: (0, a.jsx)("time", {
@@ -901,31 +901,31 @@ let ev = ["__webpack_require__", "fn"],
               title: (0, Z.vc)(v, "LLLL"),
               children: (0, Z.vc)(v, "L h:mm:ss.SSS")
             })
-          }), (0, a.jsx)(F.Z9, {
+          }), (0, a.jsx)(B.Z9, {
             name: "Log Type",
             copyValue: p,
             children: (0, a.jsx)("code", {
               children: p
             })
-          }), (0, a.jsx)(F.Z9, {
+          }), (0, a.jsx)(B.Z9, {
             name: "PID",
             copyValue: null != (t = null == b ? true : b.toString()) ? t : "null",
             children: (0, a.jsx)("code", {
               children: null != (n = null == b ? true : b.toString()) ? n : "null"
             })
-          }), (0, a.jsx)(F.Z9, {
+          }), (0, a.jsx)(B.Z9, {
             name: "Native ID",
             copyValue: null != (i = null == h ? true : h.toString()) ? i : "null",
             children: (0, a.jsx)("code", {
               children: null != (l = null == h ? true : h.toString()) ? l : "null"
             })
-          }), (0, a.jsx)(F.Z9, {
+          }), (0, a.jsx)(B.Z9, {
             name: "Data",
             copyValue: eb(g),
             children: (0, a.jsx)("code", {
               children: eb(g)
             })
-          }), null != x && (0, a.jsx)(F.Z9, {
+          }), null != x && (0, a.jsx)(B.Z9, {
             name: "Stack Trace",
             copyValue: x,
             children: (0, a.jsx)("code", {
@@ -998,7 +998,7 @@ function eC() {
   let M = Chunk647438.useCallback(e => {
       s(e), x.Z.setModuleLogging(e)
     }, []),
-    [U, F] = Chunk647438.useState(false),
+    [U, B] = Chunk647438.useState(false),
     H = Chunk647438.useRef(null),
     V = Chunk647438.useCallback(() => {
       (0, Chunk572004.JG)(JSON.stringify(Chunk556809)), Chunk257785(true)

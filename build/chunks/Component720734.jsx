@@ -505,13 +505,13 @@ class tp extends Chunk647438.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, F.Z)(e, t, e9.jXE.ACCOUNT_PANEL), (0, B.v)(N.Z.ACCOUNT, B.d.MIC, n)
+      (0, B.Z)(e, t, e9.jXE.ACCOUNT_PANEL), (0, F.v)(N.Z.ACCOUNT, F.d.MIC, n)
     }), tl(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, U.Z)(e, e9.jXE.ACCOUNT_PANEL), (0, B.v)(N.Z.ACCOUNT, B.d.DEAFEN, !t)
+      (0, U.Z)(e, e9.jXE.ACCOUNT_PANEL), (0, F.v)(N.Z.ACCOUNT, F.d.DEAFEN, !t)
     }), tl(this, "handleOpenAccountSettings", () => {
       this.dismissTooltips(), eU.Z.isConnected() ? (0, eb.openUserSettings)(eg.n.VOICE_AND_VIDEO_PANEL, {
         section: e9.oAB.VOICE
@@ -831,8 +831,8 @@ function tg() {
     L = (0, Chunk481060.s9z)(Chunk481060.JQI) || Chunk628581 || Chunk374023.s.isDisallowPopupsSet() || Chunk571250,
     M = (0, Chunk332473.b)(),
     U = (0, Chunk442837.e7)([Chunk258609.default], () => null != Chunk258609.default.getAwaitingRemoteSessionInfo()),
-    F = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
-    B = null == exports ? true : exports.avatarDecoration,
+    B = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
+    F = null == exports ? true : exports.avatarDecoration,
     G = (0, Chunk541638.R)(exports, null != Chunk575175 ? Chunk575175 : true),
     z = (0, Chunk676742.Z)(Chunk647438 ? Chunk795318 : Chunk522651),
     V = Chunk5192.ZP.useName(null != Chunk575175 ? Chunk575175 : true, null, exports),
@@ -1026,11 +1026,11 @@ function tb(e) {
     Z = (0, eC.z)(w),
     U = (0, d.e7)([eU.Z], () => eU.Z.isConnected()),
     {
-      Component: F,
-      events: B,
+      Component: B,
+      events: F,
       play: z
     } = P,
-    H = l || s ? g.v0G : F,
+    H = l || s ? g.v0G : B,
     W = (0, D.Z)(n, l, s, o),
     K = A ? ta.intl.string(ta.t.ARRV6m) : null;
   t = _ ? ta.intl.string(ta.t["29gnR4"]) : null != K ? (0, a.jsxs)("div", {
@@ -1162,10 +1162,10 @@ function tb(e) {
             onClick: f,
             onContextMenu: i,
             onMouseEnter: () => {
-              p(), B.onMouseEnter()
+              p(), F.onMouseEnter()
             },
             onMouseLeave: () => {
-              h(), B.onMouseLeave()
+              h(), F.onMouseLeave()
             },
             orangeGlow: A,
             plated: null != v,
@@ -1224,10 +1224,10 @@ function tb(e) {
         tooltipForceOpen: _,
         plated: null != v,
         onMouseEnter: () => {
-          p(), B.onMouseEnter()
+          p(), F.onMouseEnter()
         },
         onMouseLeave: () => {
-          h(), B.onMouseLeave()
+          h(), F.onMouseLeave()
         },
         icon: (0, a.jsx)(H, {
           size: "custom",
