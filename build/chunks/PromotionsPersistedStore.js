@@ -2,7 +2,7 @@
 /** chunk id: 1844, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -109,7 +109,14 @@ function R() {
   null != module && (b = module, f.lastSeenOutboundPromotionStartDate = module)
 }
 
-function P() {
+function P(e) {
+  let {
+    data: t
+  } = e, n = l.Z.createFromServer(t);
+  y.set(n.componentType, n)
+}
+
+function w() {
   f = d(), m = false, g = null, p = false, h = null, E = {
     [Chunk397047.$.BOGO]: {},
     [Chunk397047.$.MARKETING_MOMENT]: {},
@@ -118,13 +125,13 @@ function P() {
   }, _ = null, y.clear()
 }
 
-function w() {
+function D() {
   var e, t, n;
   b = null != (n = null == (t = Chunk581883.Z.settings.userContent) || null == (e = exports.lastDismissedOutboundPromotionStartDate) ? true : module.value) ? require : null
 }
-class D extends(r = Chunk442837.ZP.PersistedStore) {
+class x extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (f = e), this.waitFor(o.Z), this.syncWith([o.Z], w)
+    null != e && (f = e), this.waitFor(o.Z), this.syncWith([o.Z], D)
   }
   get outboundPromotions() {
     return Object.values(E[Chunk397047.$.THIRD_PARTY_OUTBOUND])
@@ -167,13 +174,13 @@ class D extends(r = Chunk442837.ZP.PersistedStore) {
     return null != (t = y.get(e)) ? t : null
   }
 }
-u(D, "displayName", "PromotionsStore"), u(D, "persistKey", "PromotionsPersistedStore"), u(D, "migrations", [e => {
+u(x, "displayName", "PromotionsStore"), u(x, "persistKey", "PromotionsPersistedStore"), u(x, "migrations", [e => {
   try {
     delete e.bogoPromotion
   } catch (e) {}
   return e
 }]);
-let x = new D(Chunk570140.Z, {
+let L = new x(Chunk570140.Z, {
   ACTIVE_PROMOTIONS_FETCH_SUCCESS: T,
   ACTIVE_PROMOTIONS_FETCH: S,
   ACTIVE_PROMOTIONS_FETCH_FAIL: A,
@@ -182,5 +189,6 @@ let x = new D(Chunk570140.Z, {
   ACTIVE_BOGO_PROMOTION_FETCH_FAIL: v,
   OUTBOUND_PROMOTION_NOTICE_DISMISS: N,
   OUTBOUND_PROMOTIONS_SEEN: R,
-  LOGOUT: P
+  LOGOUT: w,
+  PREMIUM_MARKETING_PREVIEW: P
 })

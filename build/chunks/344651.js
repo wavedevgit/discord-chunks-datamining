@@ -1677,7 +1677,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
 }), Y(["PREMIUM_MARKETING_PREVIEW"], e => {
   q({
     type: "PREMIUM_MARKETING_PREVIEW",
-    properties: e.properties
+    data: e
   })
 }), Y(["USER_APPLICATION_UPDATE"], e => {
   q({

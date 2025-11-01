@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   ASSISTANT_WUMPUS_VOICE_USER: () => I,
-  default: () => ek,
+  default: () => eU,
   mergeUser: () => R,
   transformUser: () => C,
   users: () => O
@@ -655,23 +655,42 @@ function eM(e) {
   let {
     stickers: t
   } = e;
-  return t.reduce((e, t) => null != t.user && R(t.user) || e, false)
+  return t.reduce((e, t) => null != t.user && R(ej(t.user)) || e, false)
 }
-class ej extends Chunk750041.Z {
+
+function ej(e) {
+  let {
+    id: t,
+    username: n,
+    avatar: r,
+    discriminator: i,
+    bot: a,
+    globalName: o
+  } = e;
+  return {
+    id: t,
+    username: n,
+    avatar: r,
+    discriminator: i,
+    bot: a,
+    global_name: o
+  }
+}
+class ek extends Chunk750041.Z {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk502087.Z)
   }
   takeSnapshot() {
     let e = this.getCurrentUser();
     return {
-      version: ej.LATEST_SNAPSHOT_VERSION,
+      version: ek.LATEST_SNAPSHOT_VERSION,
       data: {
         users: [module].filter(Chunk823379.lm)
       }
     }
   }
   handleLoadCache(e) {
-    let t = this.readSnapshot(ej.LATEST_SNAPSHOT_VERSION);
+    let t = this.readSnapshot(ek.LATEST_SNAPSHOT_VERSION);
     if (null != t)
       for (let e of t.users) O[e.id] = new _.Z(e);
     if (null != e.users)
@@ -783,5 +802,5 @@ class ej extends Chunk750041.Z {
     })
   }
 }
-y(ej, "displayName", "UserStore"), y(ej, "LATEST_SNAPSHOT_VERSION", 1);
-let ek = new ej
+y(ek, "displayName", "UserStore"), y(ek, "LATEST_SNAPSHOT_VERSION", 1);
+let eU = new ek

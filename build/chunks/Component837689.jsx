@@ -73,9 +73,9 @@ class j extends Chunk317770.Z {
       returnfalse
     }), T(this, "handlePreview", e => {
       let {
-        properties: t
+        data: t
       } = e;
-      this.maybeOpenServerDriveAnnouncementModal(t, true)
+      this.maybeOpenServerDriveAnnouncementModal(t.properties, true)
     }), T(this, "getOfferFromStore", () => {
       let e = d.default.getCurrentUser();
       if ((0, f.I5)(e)) return {};
