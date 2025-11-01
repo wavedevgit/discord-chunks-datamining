@@ -2,8 +2,8 @@
 /** chunk id: 238246, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => K,
-  Z: () => X
+  Y: () => z,
+  Z: () => Q
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,6 +34,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk314910 = require("./314910.jsx"),
   Chunk728285 = require("./728285.jsx"),
   Chunk22205 = require("./22205.jsx"),
+  Chunk984802 = require("./984802.js"),
   Chunk746106 = require("./746106.jsx"),
   Chunk892071 = require("./892071.jsx"),
   Chunk358085 = require("./358085.js"),
@@ -45,7 +46,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk501787 = require("./501787.js"),
   Chunk413943 = require("./413943.js");
 
-function V(e, t, n) {
+function H(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,20 +55,20 @@ function V(e, t, n) {
   }) : e[t] = n, e
 }
 
-function H(e) {
+function Y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      V(e, t, n[t])
+      H(e, t, n[t])
     })
   }
   return e
 }
 
-function Y(e, t) {
+function W(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,20 +79,20 @@ function Y(e, t) {
   return n
 }
 
-function W(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
+function K(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function K(e) {
+function z(e) {
   let {
     withTitleBar: t,
     isFullScreen: n
   } = e;
-  return t && M.isPlatformEmbedded && !n
+  return t && j.isPlatformEmbedded && !n
 }
-class z extends(r = Chunk647438.Component) {
+class q extends(r = Chunk647438.Component) {
   componentDidMount() {
     let {
       guestWindow: e
@@ -109,7 +110,7 @@ class z extends(r = Chunk647438.Component) {
     let {
       guestWindow: e
     } = this.props, t = module.document;
-    this.unregisterPopoutGlobalKeybinds(), module.removeEventListener("blur", this.handleBlur), Chunk358085.isPlatformEmbedded ? exports.removeEventListener("contextmenu", Chunk62883.contextMenuCallbackNative) : exports.removeEventListener("contextmenu", Chunk62883.contextMenuCallbackWeb), (0, Chunk731965.j)(() => Chunk481060.s9z.setState(e => W(H({}, e), {
+    this.unregisterPopoutGlobalKeybinds(), module.removeEventListener("blur", this.handleBlur), Chunk358085.isPlatformEmbedded ? exports.removeEventListener("contextmenu", Chunk62883.contextMenuCallbackNative) : exports.removeEventListener("contextmenu", Chunk62883.contextMenuCallbackWeb), (0, Chunk731965.j)(() => Chunk481060.s9z.setState(e => K(Y({}, e), {
       [p.u1M]: []
     }))), module.removeEventListener("beforeunload", this.beforeUnload)
   }
@@ -157,12 +158,13 @@ class z extends(r = Chunk647438.Component) {
       clientThemesClassName: l,
       contentClassName: c,
       themeOverride: d,
-      hideModals: _ = false,
-      appContext: m
-    } = this.props, g = K({
+      titleBarTheme: _,
+      hideModals: m = false,
+      appContext: g
+    } = this.props, E = z({
       withTitleBar: Chunk647438,
       isFullScreen: r
-    }), E = require === Chunk501787.$J ? Chunk22205.Z : Chunk248687.Z;
+    }), y = require === Chunk501787.$J ? Chunk22205.Z : Chunk248687.Z;
     return (0, Chunk951288.jsx)(Chunk799899.VK, {
       children: (0, Chunk951288.jsx)(Chunk746106.w, {
         windowKey: require,
@@ -170,24 +172,28 @@ class z extends(r = Chunk647438.Component) {
         children: (0, Chunk951288.jsx)(Chunk899663.Z, {
           children: (0, Chunk951288.jsxs)(Chunk481060.JcV, {
             containerRef: this.rootRef,
-            children: [(0, Chunk951288.jsx)(q, {
+            children: [(0, Chunk951288.jsx)(X, {
               guestWindow: Chunk120356,
               className: Chunk512722,
-              children: (0, Chunk951288.jsxs)(Chunk607070, {
+              children: (0, Chunk951288.jsxs)(Chunk317381, {
                 children: [(0, Chunk951288.jsx)(Chunk686546.Co, {}), (0, Chunk951288.jsx)(Chunk728285.Wu, {
-                  appContext: null != Chunk175724 ? Chunk175724 : Chunk981631.IlC.POPOUT,
+                  appContext: null != Chunk280492 ? Chunk280492 : Chunk981631.IlC.POPOUT,
                   renderWindow: Chunk120356,
                   children: (0, Chunk951288.jsx)(Chunk260035.m, {
                     children: (0, Chunk951288.jsxs)(Chunk314910.yP, {
                       children: [(0, Chunk951288.jsxs)("div", {
                         className: Chunk413943.popout,
-                        children: [Chunk280492 && (0, Chunk951288.jsx)(Chunk950796.TF, {
-                          windowKey: require
+                        children: [Chunk607070 && (0, Chunk951288.jsx)(Chunk793030.f6W, {
+                          theme: Chunk442837,
+                          children: e => (0, i.jsx)(A.TF, {
+                            windowKey: n,
+                            className: s()(e, V.titleBar)
+                          })
                         }), (0, Chunk951288.jsx)("div", {
                           className: s()(Chunk413943.content, c),
                           children: exports
                         })]
-                      }), !Chunk442837 && (0, Chunk951288.jsx)(Chunk481060.nKe, {}), (0, Chunk951288.jsx)(Chunk490173.Z, {}), (0, Chunk951288.jsx)(Chunk314910.Un, {})]
+                      }), !Chunk175724 && (0, Chunk951288.jsx)(Chunk481060.nKe, {}), (0, Chunk951288.jsx)(Chunk490173.Z, {}), (0, Chunk951288.jsx)(Chunk314910.Un, {})]
                     })
                   })
                 })]
@@ -199,26 +205,26 @@ class z extends(r = Chunk647438.Component) {
     })
   }
   constructor(...e) {
-    super(...e), V(this, "rootRef", a.createRef()), V(this, "_cleanupWindowActionCreators", true), V(this, "_combokeys", null), V(this, "beforeUnload", e => {
+    super(...e), H(this, "rootRef", a.createRef()), H(this, "_cleanupWindowActionCreators", true), H(this, "_combokeys", null), H(this, "beforeUnload", e => {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
-        G.Z.unmountWindow(this.props.windowKey), M.isPlatformEmbedded && k.ZP.close(this.props.windowKey)
+        B.Z.unmountWindow(this.props.windowKey), j.isPlatformEmbedded && U.ZP.close(this.props.windowKey)
       };
       null != t ? t({
         e,
         unmountWindow: n
       }) : n()
-    }), V(this, "handleBlur", () => {
+    }), H(this, "handleBlur", () => {
       var e, t;
       null == (e = (t = this.props).onBlur) || e.call(t)
     })
   }
 }
-V(z, "defaultProps", {
+H(q, "defaultProps", {
   withTitleBar: true
 });
-let q = Chunk647438.forwardRef(function(e, t) {
+let X = Chunk647438.forwardRef(function(e, t) {
     let {
       guestWindow: n,
       className: r,
@@ -227,7 +233,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
       lang: l,
       style: u,
       className: d
-    } = (0, L.vP)();
+    } = (0, M.vP)();
     return a.useEffect(() => {
       let e = n.document.documentElement;
       c()(null != e, "Window document element was null"), e.setAttribute("style", u)
@@ -241,41 +247,43 @@ let q = Chunk647438.forwardRef(function(e, t) {
       children: o
     })
   }),
-  X = Chunk647438.forwardRef(function(e, t) {
+  Q = Chunk647438.forwardRef(function(e, t) {
+    var n;
     let {
-      guestWindow: n,
-      isFullScreen: r
-    } = (0, _.cj)([G.Z], () => ({
-      guestWindow: G.Z.getWindow(e.windowKey),
-      isFullScreen: G.Z.isWindowFullScreen(e.windowKey)
+      guestWindow: r,
+      isFullScreen: a
+    } = (0, _.cj)([B.Z], () => ({
+      guestWindow: B.Z.getWindow(e.windowKey),
+      isFullScreen: B.Z.isWindowFullScreen(e.windowKey)
     }));
-    c()(null != n, "Missing guestWindow reference");
+    c()(null != r, "Missing guestWindow reference");
     let {
-      forcedColors: a,
-      connectedEmbeddedActivity: o
+      forcedColors: o,
+      connectedEmbeddedActivity: s
     } = (0, _.cj)([E.Z, y.ZP], () => ({
       forcedColors: E.Z.useForcedColors ? "yes" : "no",
       connectedEmbeddedActivity: y.ZP.getCurrentEmbeddedActivity()
     }));
-    (0, C.Z)(n, false);
+    (0, C.Z)(r, false);
     let {
-      analyticsLocations: s
+      analyticsLocations: l
     } = (0, v.ZP)(O.Z.POPOUT_WINDOW), {
-      clientThemesClassName: l,
-      clientThemesCSS: u
-    } = (0, I.ZP)();
-    return null == n ? null : (0, i.jsx)(p.Sle, {
+      clientThemesClassName: u,
+      clientThemesCSS: d
+    } = (0, I.ZP)(), f = (0, x.Ll)(), h = null != (n = e.themeOverride) ? n : f;
+    return null == r ? null : (0, i.jsx)(p.Sle, {
       children: (0, i.jsx)(v.Gt, {
-        value: s,
-        children: (0, i.jsx)(z, W(H({
+        value: l,
+        children: (0, i.jsx)(q, K(Y({
           ref: t
         }, e), {
-          guestWindow: n,
-          isFullScreen: r,
-          forcedColors: a,
-          connectedEmbeddedActivity: o,
-          clientThemesClassName: l,
-          clientThemesCSS: u
+          titleBarTheme: h,
+          guestWindow: r,
+          isFullScreen: a,
+          forcedColors: o,
+          connectedEmbeddedActivity: s,
+          clientThemesClassName: u,
+          clientThemesCSS: d
         }))
       })
     })
