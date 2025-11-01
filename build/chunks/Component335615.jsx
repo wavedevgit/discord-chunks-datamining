@@ -228,8 +228,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       return null != t ? null == (e = M.Z.getRole(i.guild_id, t)) ? true : e.name : true
     }, [i, t]), h = (0, N.K)({
       user: l,
-      guildId: i.guild_id,
-      location: "ChannelMembers"
+      guildId: i.guild_id
     });
     return (0, r.jsx)(et, X(Q({}, n, s), {
       isTyping: o,

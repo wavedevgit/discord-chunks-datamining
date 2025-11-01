@@ -120,8 +120,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       })
     }, [t.guild_id]), q = (0, j.K)({
       user: b,
-      guildId: t.guild_id,
-      location: "ThreadMembers"
+      guildId: t.guild_id
     }), [K, Q] = i.useState(false);
     if (null == b) return null;
     let X = null == h ? true : h.premiumSince;

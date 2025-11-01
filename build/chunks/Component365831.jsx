@@ -88,18 +88,18 @@ function _(e) {
       isLoopbackEnabled: t,
       toggleLoopback: n
     }
-  }(), S = C ? c.Iy5 : c.X_q, I = i.useCallback(() => (0, f.v6)(null), []), N = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), T = (0, c.dQu)(c.TVs.colors.WHITE).hex(), D = i.useRef(0), Z = n !== o ? D.current + 1 : D.current;
+  }(), S = C ? c.Iy5 : c.X_q, I = i.useCallback(() => (0, f.v6)(null), []), N = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), T = (0, c.dQu)(c.TVs.colors.WHITE).hex(), D = i.useRef(0), k = n !== o ? D.current + 1 : D.current;
   i.useEffect(() => {
-    D.current = Z
-  }, [Z]);
-  let k = null != n,
-    M = !k,
-    A = k && null != o,
+    D.current = k
+  }, [k]);
+  let Z = null != n,
+    M = !Z,
+    A = Z && null != o,
     L = null == n && null != o,
     R = (0, c.q_F)({
-      opacity: +!!k,
-      height: 72 * !!k,
-      pointerEvents: k ? "auto" : "none",
+      opacity: +!!Z,
+      height: 72 * !!Z,
+      pointerEvents: Z ? "auto" : "none",
       backgroundColor: null != (t = null == _ ? true : _.baseColor) ? t : N,
       config: e => "backgroundColor" === e ? {
         easing: h,
@@ -108,7 +108,7 @@ function _(e) {
       delay: 100 * !!A
     }, "respect-motion-settings"),
     V = (0, c.Yzy)(null == _ ? true : _.id, {
-      key: Z,
+      key: k,
       from: {
         opacity: 0,
         background: null == _ ? true : _.splashGradient
@@ -148,7 +148,7 @@ function _(e) {
       delay: L ? 50 - 50 * e : 200 + 50 * e
     }), "respect-motion-settings", [n]),
     U = (0, c.Yzy)(null == _ ? true : _.iconURL, {
-      key: Z,
+      key: k,
       from: {
         opacity: 0,
         scale: 80 / 88,
@@ -162,17 +162,17 @@ function _(e) {
       },
       leave: {
         opacity: 0,
-        scale: k ? 80 / 88 : 1,
-        translateX: 24 * !!k,
+        scale: Z ? 80 / 88 : 1,
+        translateX: 24 * !!Z,
         delay: 150 * !A
       },
       config: e => "opacity" === e ? {
         easing: h,
         duration: 200
-      } : k ? x : P
+      } : Z ? x : P
     }, "respect-motion-settings"),
     Y = (0, c.Yzy)(null == _ ? true : _.name, {
-      key: Z,
+      key: k,
       from: {
         opacity: 0,
         scale: A ? .9 : 1,
@@ -241,7 +241,7 @@ function _(e) {
         "aria-label": H,
         tooltipClassName: y.tooltip,
         tooltipContentClassName: y.tooltipContent,
-        shouldShow: k,
+        shouldShow: Z,
         text: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.Heading, {
             variant: "heading-sm/normal",
@@ -263,9 +263,9 @@ function _(e) {
             }),
             "aria-hidden": M,
             focusProps: {
-              enabled: k
+              enabled: Z
             },
-            tabIndex: k ? 0 : false
+            tabIndex: Z ? 0 : false
           }, e), {
             onClick: () => w(),
             children: (0, r.jsx)(S, {
@@ -278,7 +278,7 @@ function _(e) {
         })
       }), (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
-        shouldShow: k,
+        shouldShow: Z,
         text: g.intl.string(g.t.UvMx7F),
         children: e => (0, r.jsx)(a.animated.div, {
           className: y.buttonWrapper,
@@ -287,9 +287,9 @@ function _(e) {
             className: y.button,
             "aria-hidden": M,
             focusProps: {
-              enabled: k
+              enabled: Z
             },
-            tabIndex: k ? 0 : false
+            tabIndex: Z ? 0 : false
           }, e), {
             onClick: I,
             children: (0, r.jsx)(c.k$p, {

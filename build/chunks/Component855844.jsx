@@ -39,8 +39,8 @@ function C(e) {
     renderDeafenCheckbox: N = false,
     renderInputProfiles: T = false,
     renderOutputDevices: D = false,
-    renderOutputVolume: Z = false,
-    renderInputDevices: k = false,
+    renderOutputVolume: k = false,
+    renderInputDevices: Z = false,
     renderInputVolume: M = false,
     maybeRenderInputMeter: A = false,
     renderSettingsButton: L = false
@@ -92,7 +92,7 @@ function C(e) {
       "aria-label": _.intl.string(_.t.ZR1Ss6),
       className: w.menu,
       children: [(0, r.jsxs)(a.kSQ, {
-        children: [k && F, T && H, D && U]
+        children: [Z && F, T && H, D && U]
       }), (0, r.jsxs)(a.kSQ, {
         children: [M && z, A && Q && (0, r.jsx)(a.II_, {
           id: "input-device-meter",
@@ -105,7 +105,7 @@ function C(e) {
             containerClassName: w.customMenuItem,
             notchClassName: w.customNotches
           })
-        }), Z && B]
+        }), k && B]
       }), (0, r.jsxs)(a.kSQ, {
         children: [I && j.isPlatformEmbedded && X ? (0, r.jsx)(a.S89, {
           checked: q === x.pM4.PUSH_TO_TALK,

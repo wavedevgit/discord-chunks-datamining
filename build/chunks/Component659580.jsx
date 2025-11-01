@@ -39,8 +39,8 @@ function _(e) {
     renderDeafen: N = false,
     minimal: T = false,
     onSelect: D,
-    appContext: Z,
-    onInteraction: k
+    appContext: k,
+    onInteraction: Z
   } = e, {
     analyticsLocations: M
   } = (0, u.ZP)();
@@ -51,7 +51,7 @@ function _(e) {
       location_stack: M
     }
   });
-  let A = (0, j.Z)(Z),
+  let A = (0, j.Z)(k),
     L = (0, p.M)({
       deviceType: x.h7.AUDIO_INPUT,
       analyticsLocations: M,
@@ -75,7 +75,7 @@ function _(e) {
     object: O.qAy.CONTEXT_MENU,
     children: (0, r.jsxs)(a.v2r, {
       onSelect: D,
-      onInteraction: k,
+      onInteraction: Z,
       className: P.menu,
       onClose: t,
       navId: "audio-device-context",

@@ -52,11 +52,11 @@ let w = e => {
   } = e, {
     activeVoice: w,
     mostRecentlyRequestedVoiceId: C
-  } = (0, O.o)(), S = (0, j.z)(t.id), I = t.id === w, N = !t.available && !t.temporarilyAvailable, T = t.temporarilyAvailable && !n && !I, D = !I && t.id === C, [Z, k] = i.useState(false);
+  } = (0, O.o)(), S = (0, j.z)(t.id), I = t.id === w, N = !t.available && !t.temporarilyAvailable, T = t.temporarilyAvailable && !n && !I, D = !I && t.id === C, [k, Z] = i.useState(false);
   i.useEffect(() => {
-    let e = D ? setTimeout(() => k(D), 200) : true;
+    let e = D ? setTimeout(() => Z(D), 200) : true;
     return () => {
-      clearTimeout(e), k(false)
+      clearTimeout(e), Z(false)
     }
   }, [D]);
   let M = (0, g.J_)({
@@ -160,7 +160,7 @@ let w = e => {
                 colorClass: P.clockIcon
               })
             })
-          }), Z && (0, r.jsx)("div", {
+          }), k && (0, r.jsx)("div", {
             className: P.spinnerWrapper,
             children: (0, r.jsx)(u.$jN, {
               type: u.$jN.Type.CHASING_DOTS,

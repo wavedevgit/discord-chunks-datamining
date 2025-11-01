@@ -42,20 +42,19 @@ var Chunk512722 = require("./512722.js"),
 function j(e) {
   var t, n, i, j;
   let {
-    guild: k,
-    nameplateEnabled: U
-  } = e, G = (0, o.e7)([S.default], () => {
+    guild: k
+  } = e, U = (0, o.e7)([S.default], () => {
     let e = S.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), B = (0, d.m)(x.PremiumTypes.TIER_2), {
-    pendingAvatar: Z,
-    pendingNickname: F,
-    pendingBanner: V,
-    pendingBio: H,
-    pendingPronouns: Y,
-    pendingThemeColors: W,
-    errors: K,
-    guild: z
+  }), G = (0, d.m)(x.PremiumTypes.TIER_2), {
+    pendingAvatar: B,
+    pendingNickname: Z,
+    pendingBanner: F,
+    pendingBio: V,
+    pendingPronouns: H,
+    pendingThemeColors: Y,
+    errors: W,
+    guild: K
   } = (0, o.cj)([R.Z], () => {
     let {
       pendingAvatar: e,
@@ -75,49 +74,49 @@ function j(e) {
       errors: R.Z.getErrors(),
       guild: R.Z.getGuild()
     }
-  }), q = (0, v.SD)({
-    userId: G.id,
-    image: Z
-  }), X = null != k ? k : z;
-  a()(null != X, "guild should not be null");
-  let Q = (0, u.gS)(X.id),
-    J = (0, o.e7)([T.ZP], () => null == X.id ? null : T.ZP.getMember(X.id, G.id)),
-    $ = (0, o.e7)([I.Z], () => I.Z.getGuildMemberProfile(G.id, X.id)),
-    ee = (0, c.cL)({
+  }), z = (0, v.SD)({
+    userId: U.id,
+    image: B
+  }), q = null != k ? k : K;
+  a()(null != q, "guild should not be null");
+  let X = (0, u.gS)(q.id),
+    Q = (0, o.e7)([T.ZP], () => null == q.id ? null : T.ZP.getMember(q.id, U.id)),
+    J = (0, o.e7)([I.Z], () => I.Z.getGuildMemberProfile(U.id, q.id)),
+    $ = (0, c.cL)({
       location: "GuildIdentityCustomizationSections"
     }),
-    et = A.ZP.canUsePremiumProfileCustomization(G),
-    en = (0, f.gd)(Z, null == J ? true : J.avatar),
-    er = (0, f.f$)(V, null == $ ? true : $.banner),
-    ei = (0, P.p)(W, null == $ ? true : $.themeColors),
-    ea = null != (t = null == $ ? true : $.bio) ? t : "",
-    eo = null != (n = null == $ ? true : $.pronouns) ? n : "",
-    es = (e, t, n) => {
+    ee = A.ZP.canUsePremiumProfileCustomization(U),
+    et = (0, f.gd)(B, null == Q ? true : Q.avatar),
+    en = (0, f.f$)(F, null == J ? true : J.banner),
+    er = (0, P.p)(Y, null == J ? true : J.themeColors),
+    ei = null != (t = null == J ? true : J.bio) ? t : "",
+    ea = null != (n = null == J ? true : J.pronouns) ? n : "",
+    eo = (e, t, n) => {
       let r = null != t ? null : true;
       n(null != e ? e : r)
     },
-    el = e => es(e, null == $ ? true : $.banner, N.g_),
-    ec = e => es(e, null == J ? true : J.avatar, N.I5);
+    es = e => eo(e, null == J ? true : J.banner, N.g_),
+    el = e => eo(e, null == Q ? true : Q.avatar, N.I5);
   return (0, r.jsxs)("div", {
     className: M.sectionsContainer,
     children: [(0, r.jsx)(w.Z, {
-      errors: null != (i = null == K ? true : K.nick) ? i : null == Q ? true : Q.nick,
-      username: C.ZP.getName(G),
-      pendingNick: F,
-      currentNick: null == J ? true : J.nick,
-      user: G,
-      guild: X
+      errors: null != (i = null == W ? true : W.nick) ? i : null == X ? true : X.nick,
+      username: C.ZP.getName(U),
+      pendingNick: Z,
+      currentNick: null == Q ? true : Q.nick,
+      user: U,
+      guild: q
     }, "nick"), (0, r.jsx)(O.Z, {
       sectionTitle: L.intl.string(L.t["+T3RI/"]),
-      errors: null == K ? true : K.pronouns,
+      errors: null == W ? true : W.pronouns,
       onPronounsChange: e => {
-        (0, P.xs)(e, eo)
+        (0, P.xs)(e, ea)
       },
-      pendingPronouns: Y,
-      currentPronouns: eo
+      pendingPronouns: H,
+      currentPronouns: ea
     }, "pronouns"), (0, r.jsxs)(D.Z, {
-      user: G,
-      showOverlay: !et,
+      user: U,
+      showOverlay: !ee,
       children: [(0, r.jsx)(h.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
           children: [L.intl.string(L.t.lqaIxI), (0, r.jsx)(s.u, {
@@ -129,11 +128,11 @@ function j(e) {
             })
           })]
         }),
-        showRemoveAvatarButton: en,
-        onAvatarChange: ec,
-        errors: null == K ? true : K.avatar,
-        guildId: X.id,
-        disabled: !et
+        showRemoveAvatarButton: et,
+        onAvatarChange: el,
+        errors: null == W ? true : W.avatar,
+        guildId: q.id,
+        disabled: !ee
       }, "avatar"), (0, r.jsx)(p.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
           children: [L.intl.string(L.t["7v0T9P"]), (0, r.jsx)(s.u, {
@@ -145,14 +144,14 @@ function j(e) {
             })
           })]
         }),
-        user: G,
-        guild: X
-      }, "decoration"), ee && !B && (0, r.jsx)(m.Z, {
-        user: G,
-        guildId: X.id
-      }), U && (0, r.jsx)(g.Z, {
-        user: G,
-        guild: X,
+        user: U,
+        guild: q
+      }, "decoration"), $ && !G && (0, r.jsx)(m.Z, {
+        user: U,
+        guildId: q.id
+      }), (0, r.jsx)(g.Z, {
+        user: U,
+        guild: q,
         titleIcon: (0, r.jsx)(s.u, {
           text: L.intl.string(L.t["5AFxuK"]),
           children: (0, r.jsx)(l.SrA, {
@@ -172,23 +171,23 @@ function j(e) {
             })
           })]
         }),
-        user: G,
-        guild: X
+        user: U,
+        guild: q
       }, "effect"), (0, r.jsx)(E.Z, {
-        showRemoveBannerButton: er,
-        errors: null == K ? true : K.banner,
-        onBannerChange: el,
-        guildId: null == X ? true : X.id,
-        disabled: !et
+        showRemoveBannerButton: en,
+        errors: null == W ? true : W.banner,
+        onBannerChange: es,
+        guildId: null == q ? true : q.id,
+        disabled: !ee
       }, "banner"), (0, r.jsx)(y.Z, {
-        user: G,
-        pendingAvatarSrc: q,
-        pendingColors: W,
+        user: U,
+        pendingAvatarSrc: z,
+        pendingColors: Y,
         onThemeColorsChange: e => {
-          (0, P.ce)(e, null == $ ? true : $.themeColors)
+          (0, P.ce)(e, null == J ? true : J.themeColors)
         },
-        guildId: null == X ? true : X.id,
-        showResetThemeButton: ei
+        guildId: null == q ? true : q.id,
+        showResetThemeButton: er
       }), (0, r.jsx)(_.Z, {
         placeholder: L.intl.string(L.t["/7NKgv"]),
         sectionTitle: (0, r.jsxs)(r.Fragment, {
@@ -201,11 +200,11 @@ function j(e) {
             })
           })]
         }),
-        onBioChange: e => (0, P.qN)(e, ea),
-        errors: null != (j = null == K ? true : K.bio) ? j : null == Q ? true : Q.bio,
-        pendingBio: H,
-        currentBio: ea,
-        disabled: !et
+        onBioChange: e => (0, P.qN)(e, ei),
+        errors: null != (j = null == W ? true : W.bio) ? j : null == X ? true : X.bio,
+        pendingBio: V,
+        currentBio: ei,
+        disabled: !ee
       }, "about")]
     })]
   })

@@ -165,7 +165,7 @@ function z(e) {
         onChange: G,
         query: B,
         onClear: ec
-      }), (0, r.jsx)(k.w, {
+      }), (0, r.jsx)(Z.w, {
         query: B,
         columns: n ? 5 : 4,
         handleScroll: e => {
@@ -185,7 +185,7 @@ function z(e) {
         className: U.upsellCountdownContainer,
         children: [null != J && (0, r.jsx)(a.animated.div, {
           style: eo,
-          children: (0, r.jsx)(Z.J, {
+          children: (0, r.jsx)(k.J, {
             catalogUpdateTime: J,
             isScrolled: $
           })
