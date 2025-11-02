@@ -2,27 +2,30 @@
 /** chunk id: 526761, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ax: () => O,
+  Ax: () => T,
   CO: () => s,
-  FY: () => h,
+  FY: () => E,
   GA: () => l,
-  JC: () => y,
-  KQ: () => m,
-  NB: () => u,
+  JC: () => I,
+  KQ: () => b,
+  M6: () => u,
+  NB: () => _,
+  Sr: () => f,
   XZ: () => o,
-  Y_: () => f,
+  Y_: () => h,
   cP: () => a,
-  f4: () => E,
-  fy: () => b,
+  d5: () => d,
+  f4: () => O,
+  fy: () => v,
   gP: () => c,
-  h1: () => d,
-  ic: () => v,
+  h1: () => p,
+  ic: () => S,
   oX: () => r,
-  rP: () => p,
-  u0: () => T,
+  rP: () => g,
+  u0: () => C,
   vY: () => i,
-  vc: () => I,
-  yP: () => g
+  vc: () => A,
+  yP: () => y
 });
 let r = 250,
   i = 762880,
@@ -30,43 +33,46 @@ let r = 250,
   o = "APPLICATION_SUBSCRIPTION_SUBSECTION",
   s = "VOICE_SUBSECTION",
   l = "SOUNDBOARD_SUBSECTION",
-  c = "VIDEO_SUBSECTION";
-var u = function(e) {
+  c = "VIDEO_SUBSECTION",
+  u = "CLIPS_RECORDING_SUBSECTION",
+  d = "CLIPS_AUTOMATIC_SUBSECTION",
+  f = "CLIPS_PRIVACY_SUBSECTION";
+var _ = function(e) {
     return e.USER_PROFILE = "user_profile", e.GUILD = "guild", e.TRY_IT_OUT = "try_it_out", e
   }({}),
-  d = function(e) {
+  p = function(e) {
     return e.CUSTOM_APP_ICONS = "custom_app_icon", e
   }({}),
-  f = function(e) {
+  h = function(e) {
     return e.TRY_IT_OUT = "try_it_out", e.GUILD_TAG = "guild_tag", e
   }({}),
-  _ = function(e) {
+  m = function(e) {
     return e.DISABLE_ACCOUNT = "disable_account", e
   }({}),
-  p = function(e) {
+  g = function(e) {
     return e.REDUCED_MOTION = "reduced_motion", e.SYNC_PROFILE_THEME_WITH_USER_THEME = "sync_profile_theme_with_user_theme", e.LEGACY_CHAT_INPUT = "legacy_chat_input", e
   }({}),
-  h = function(e) {
+  E = function(e) {
     return e.DM_SAFETY_ALERTS_V2 = "dm_safety_alerts_v2", e.MESSAGE_REQUESTS_V2 = "message_requests_v2", e.EXPLICIT_MEDIA_REDACTION_V2 = "explicit_media_redaction_v2", e.RESTRICTED_ACCOUNTS = "restricted_accounts", e
   }({});
-let m = {
-  AccountScrollPositions: _,
-  ProfileCustomizationScrollPositions: f,
-  AccessibilityScrollPositions: p,
-  AppearanceScrollPositions: d,
-  ContentAndSocialScrollPositions: h
+let b = {
+  AccountScrollPositions: m,
+  ProfileCustomizationScrollPositions: h,
+  AccessibilityScrollPositions: g,
+  AppearanceScrollPositions: p,
+  ContentAndSocialScrollPositions: E
 };
-var g = function(e) {
+var y = function(e) {
     return e[e.PRELOADED_USER_SETTINGS = 1] = "PRELOADED_USER_SETTINGS", e[e.FRECENCY_AND_FAVORITES_SETTINGS = 2] = "FRECENCY_AND_FAVORITES_SETTINGS", e[e.TEST_SETTINGS = 3] = "TEST_SETTINGS", e
   }({}),
-  E = function(e) {
+  O = function(e) {
     return e.USER_SETTINGS_PRIVACY_SAFETY = "user_settings_privacy_safety", e.USER_SETTINGS_ACTIVITY_PRIVACY = "user_settings_activity_privacy", e.SERVER_PRIVACY_MODAL = "server_privacy_modal", e
   }({}),
-  b = function(e) {
+  v = function(e) {
     return e[e.INFREQUENT_USER_ACTION = 0] = "INFREQUENT_USER_ACTION", e[e.FREQUENT_USER_ACTION = 10] = "FREQUENT_USER_ACTION", e[e.SLOW_USER_ACTION = 20] = "SLOW_USER_ACTION", e[e.AUTOMATED = 30] = "AUTOMATED", e[e.DAILY = 86400] = "DAILY", e
   }({});
 
-function y() {
+function I() {
   return {
     protoToSave: true,
     timeout: true,
@@ -79,10 +85,10 @@ function y() {
     offlineEditDataVersion: true
   }
 }
-var O = function(e) {
+var T = function(e) {
   return e[e.CONFIRM_START = 0] = "CONFIRM_START", e[e.CONFIRM_CODE = 1] = "CONFIRM_CODE", e[e.CHANGE_EMAIL_REASONS = 2] = "CHANGE_EMAIL_REASONS", e[e.CHANGE_EMAIL_WARNING = 3] = "CHANGE_EMAIL_WARNING", e[e.EMAIL_AND_PASSWORD = 4] = "EMAIL_AND_PASSWORD", e[e.COMPLETE = 5] = "COMPLETE", e
 }({});
-let v = {
+let S = {
     NEW_FORUM_THREADS_ON: 16384,
     NEW_FORUM_THREADS_OFF: 8192,
     OPT_IN_ENABLED: 4096,
@@ -90,12 +96,12 @@ let v = {
     UNREADS_ALL_MESSAGES: 1024,
     UNREADS_ONLY_MENTIONS: 512
   },
-  I = {
+  A = {
     OPT_IN_CHANNELS_ON: 16384,
     OPT_IN_CHANNELS_OFF: 8192,
     UNREADS_ONLY_MENTIONS: 4096,
     UNREADS_ALL_MESSAGES: 2048
   };
-var T = function(e) {
+var C = function(e) {
   return e.USER = "user", e.STREAM = "stream", e
 }({})

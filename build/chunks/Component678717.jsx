@@ -2,7 +2,7 @@
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => I,
-  openDevToolsPopout: () => N
+  openDevToolsPopout: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -45,7 +45,7 @@ function E(e) {
   })
 }
 
-function N() {
+function T() {
   (0, Chunk788983.bA)(Chunk981631.KJ3.DEVTOOLS_POPOUT, () => (0, Chunk951288.jsx)(Chunk238246.Z, {
     windowKey: Chunk981631.KJ3.DEVTOOLS_POPOUT,
     title: "DevTools",
@@ -60,7 +60,7 @@ function N() {
   })
 }
 
-function T(e) {
+function N(e) {
   var t;
   let {
     isPopout: n = false
@@ -90,7 +90,7 @@ function T(e) {
         children: [(0, a.jsx)(m.ZP.Icon, {
           icon: c.rgF,
           tooltip: "Pop Out",
-          onClick: N
+          onClick: T
         }), (0, a.jsx)(m.ZP.Icon, {
           icon: c.Dio,
           tooltip: y.intl.string(y.t.cpT0Cq),
@@ -132,7 +132,7 @@ function O() {
       onResizeEnd: l
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk951288.jsx)(T, {})
+      children: (0, Chunk951288.jsx)(N, {})
     })]
   })
 }
@@ -142,7 +142,7 @@ function P() {
     className: l()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
     children: (0, Chunk951288.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk951288.jsx)(T, {})
+      children: (0, Chunk951288.jsx)(N, {})
     })
   }) : (0, Chunk951288.jsx)("div", {
     className: Chunk552883.container,
@@ -171,7 +171,7 @@ function I(e) {
   } = e;
   return t ? (0, a.jsx)(P, {}) : n ? (0, a.jsx)("div", {
     className: C.popoutContainer,
-    children: (0, a.jsx)(T, {
+    children: (0, a.jsx)(N, {
       isPopout: true
     })
   }) : (0, a.jsx)(O, {})

@@ -30,10 +30,7 @@ function g() {
     E = () => {
       switch (require) {
         case Chunk332325.Z.CLIPS:
-          return (0, Chunk951288.jsx)(Chunk574755.Z, {
-            className: Chunk830260.body,
-            showHeader: false
-          });
+          return (0, Chunk951288.jsx)(Chunk574755.Z, {});
         case Chunk332325.Z.OVERLAY:
           return (0, Chunk951288.jsx)(Chunk327885.Z, {
             className: Chunk830260.body,

@@ -2,79 +2,68 @@
 /** chunk id: 574755, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
-  Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk266454 = require("./266454.js"),
-  Chunk441167 = require("./441167.js"),
-  Chunk695346 = require("./695346.js"),
-  Chunk131951 = require("./131951.js"),
+  Chunk10298 = require("./10298.jsx"),
+  Chunk526156 = require("./526156.jsx"),
+  Chunk663389 = require("./663389.js"),
   Chunk924557 = require("./924557.js"),
-  Chunk435064 = require("./435064.js"),
-  Chunk779618 = require("./779618.js"),
-  Chunk39604 = require("./39604.js"),
-  Chunk703288 = require("./703288.jsx"),
-  Chunk491758 = require("./491758.jsx"),
-  Chunk233685 = require("./233685.jsx"),
+  Chunk361244 = require("./361244.jsx"),
+  Chunk902451 = require("./902451.jsx"),
+  Chunk320091 = require("./320091.jsx"),
+  Chunk981631 = require("./981631.js"),
+  Chunk526761 = require("./526761.js"),
+  Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(e) {
+function y() {
   let {
-    className: t,
-    showHeader: n = true
-  } = e, O = d.tU.useSetting(), {
-    enableViewerClipping: v
-  } = u.Z.useExperiment({
-    location: "Clips Settings"
+    analyticsLocations: e
+  } = (0, Chunk906732.ZP)(), t = (0, Chunk924557.Go)(), n = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()), {
+    enableAdvancedSignals: y
+  } = Chunk924557.NV.useExperiment({
+    location: "clips_settings"
   }, {
     autoTrackExposure: false
-  }), {
-    analyticsLocations: I
-  } = (0, l.ZP)(), T = (0, _.Go)(), {
-    viewerClipsEnabled: S
-  } = (0, a.cj)([p.Z], () => p.Z.getSettings()), A = (0, h.Z)(f.Z);
-  return i.useEffect(() => {
-    (0, c.Q3)(o.z.CLIPS_SETTINGS_BETA_TAG)
-  }), (0, r.jsx)(l.Gt, {
-    value: I,
-    children: (0, r.jsxs)(s.Kqy, {
-      gap: 20,
-      children: [(T || n) && (0, r.jsxs)("div", {
-        className: t,
-        children: [n ? (0, r.jsxs)(s.Heading, {
-          variant: "heading-lg/semibold",
-          children: [y.intl.string(y.t.z2jK6X), " ", (0, r.jsx)(g.Z, {})]
-        }) : null, T && (0, r.jsx)("form", {
-          onSubmit: e => e.preventDefault(),
-          children: (0, r.jsxs)(s.Kqy, {
-            gap: 24,
-            children: [(0, r.jsx)(E.Z, {}), (0, r.jsx)(b.Z, {})]
-          })
-        })]
-      }), T && (0, r.jsx)(s.izJ, {}), (0, r.jsxs)(s.Kqy, {
-        gap: 16,
-        children: [(0, r.jsx)(s.rsf, {
-          label: y.intl.string(y.t.AGDDkH),
-          description: y.intl.string(y.t["wW9/zQ"]),
-          checked: O,
-          onChange: e => m.yg({
-            allowVoiceRecording: e
-          })
-        }), v && A && (0, r.jsx)(s.rsf, {
-          label: y.intl.string(y.t.NWw7kY),
-          description: y.intl.string(y.t["0vjy8N"]),
-          checked: S,
-          onChange: e => m.yl({
-            enabled: e,
-            trackAnalytics: true
-          })
-        })]
-      })]
+  });
+  Chunk647438.useEffect(() => {
+    (0, Chunk266454.Q3)(Chunk704215.z.CLIPS_SETTINGS_BETA_TAG)
+  });
+  let O = [{
+      title: Chunk388032.intl.string(Chunk388032.t.iIwmV5),
+      component: Chunk320091.Z,
+      setting: Chunk726985.s6.CLIPS_RECORDING_TAB,
+      subsection: Chunk526761.M6,
+      predicate: () => exports
+    }, {
+      title: Chunk388032.intl.string(Chunk388032.t.sA0WKL),
+      component: Chunk361244.Z,
+      setting: Chunk726985.s6.CLIPS_AUTOMATIC_TAB,
+      subsection: Chunk526761.d5,
+      predicate: () => exports && y
+    }, {
+      title: Chunk388032.intl.string(Chunk388032.t.GcIeET),
+      component: Chunk902451.Z,
+      setting: Chunk726985.s6.CLIPS_PRIVACY_TAB,
+      subsection: Chunk526761.Sr
+    }],
+    v = O.findIndex(e => null != e.subsection && e.subsection === n);
+  return (0, Chunk951288.jsx)(Chunk906732.Gt, {
+    value: module,
+    children: (0, Chunk951288.jsx)(Chunk10298.N, {
+      header: Chunk388032.intl.string(Chunk388032.t.z2jK6X),
+      children: (0, Chunk951288.jsx)(Chunk526156.Z, {
+        parentSetting: Chunk726985.s6.CLIPS,
+        settingsSection: Chunk981631.oAB.CLIPS,
+        tabs: O,
+        defaultTabIndex: v > false ? v : true
+      })
     })
   })
 }
