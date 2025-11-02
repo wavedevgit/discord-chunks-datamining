@@ -15,24 +15,24 @@ function d(e) {
   let {
     selected: t,
     onSelect: n
-  } = e, d = (0, l.ZP)();
+  } = e, d = (0, i.ZP)();
   return (0, a.jsxs)("div", {
     className: c.picker,
-    children: [(0, a.jsx)(i.Text, {
+    children: [(0, a.jsx)(r.Text, {
       variant: "text-sm/semibold",
       children: "Preselected Gradient"
     }), (0, a.jsx)("div", {
       className: c.themes,
       children: s.vs.map(e => {
-        let i = d !== o.BRd.LIGHT ? e.darkBackground : e.lightBackground,
-          l = t === e.name;
-        return (0, a.jsx)(r.S4, {
+        let r = d !== o.BRd.LIGHT ? e.darkBackground : e.lightBackground,
+          i = t === e.name;
+        return (0, a.jsx)(l.S4, {
           onSelect: () => n(e),
           style: {
-            background: i
+            background: r
           },
           name: e.name,
-          isSelected: l
+          isSelected: i
         }, e.name)
       })
     })]

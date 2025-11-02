@@ -21,7 +21,7 @@ let o = {
 };
 
 function c(e) {
-  null == o.users && (o.users = new Map), o.users.set(e.id, new r.Z(e))
+  null == o.users && (o.users = new Map), o.users.set(e.id, new l.Z(e))
 }
 class d extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -65,9 +65,9 @@ let u = new d(Chunk570140.Z, {
     var t, n;
     let {
       poolId: a
-    } = e, i = null == (t = o.pools) ? true : t.get(a);
-    if (null == i) returnfalse;
-    i.userIds.length > 0 && i.userIds.forEach(e => {
+    } = e, r = null == (t = o.pools) ? true : t.get(a);
+    if (null == r) returnfalse;
+    r.userIds.length > 0 && r.userIds.forEach(e => {
       var t;
       null == (t = o.users) || t.delete(e)
     }), null == (n = o.pools) || n.delete(a)

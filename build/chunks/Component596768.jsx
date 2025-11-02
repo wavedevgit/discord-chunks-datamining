@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk658722 = require("./658722.js"),
   o = require.n(Chunk658722),
   Chunk913527 = require("./913527.js"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk599832 = require("./599832.js"),
   Chunk451429 = require("./451429.js");
-let T = [{
+let N = [{
     key: "id",
     cellClassName: Chunk599832.eventColumn,
     render(e) {
@@ -54,7 +54,7 @@ let T = [{
       return t.toLocaleString()
     }
   }],
-  N = [{
+  T = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -63,8 +63,8 @@ let T = [{
         loggedTrigger: {
           experimentId: t,
           descriptor: n,
-          exposureType: i,
-          excluded: l,
+          exposureType: r,
+          excluded: i,
           timestamp: s,
           location: o,
           previouslyTracked: c
@@ -72,7 +72,7 @@ let T = [{
       } = e, u = d()(s);
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsxs)(x.ZP, {
-          className: r()(E.headerBar, S.subPanelHeaderBar),
+          className: l()(E.headerBar, S.subPanelHeaderBar),
           children: [(0, a.jsx)(x.ZP.Icon, {
             icon: p.IeX,
             tooltip: t
@@ -111,12 +111,12 @@ let T = [{
           }), (0, a.jsx)(v.Z9, {
             name: "Exposure type",
             children: (0, a.jsx)("code", {
-              children: i
+              children: r
             })
           }), (0, a.jsx)(v.Z9, {
             name: "Excluded",
             children: (0, a.jsx)(v.wl, {
-              value: l
+              value: i
             })
           }), (0, a.jsx)(v.Z9, {
             name: "Previously tracked",
@@ -135,29 +135,29 @@ let T = [{
   }];
 
 function O() {
-  let [e, t] = Chunk647438.useState(""), n = Chunk647438.useRef(null), l = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), x = Chunk658722.find(e => e.key === c), {
+  let [e, t] = Chunk647438.useState(""), n = Chunk647438.useRef(null), i = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), x = Chunk658722.find(e => e.key === c), {
     TabBar: g,
     renderSelectedTab: v
   } = (0, Chunk621060.ZP)({
-    tabs: N
+    tabs: T
   }, []), O = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk647438.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
-  }, []), w = O ? "Stop Tracking" : "Start Tracking";
+  }, []), I = O ? "Stop Tracking" : "Start Tracking";
   return (0, Chunk951288.jsxs)("div", {
     ref: require,
-    className: r()(Chunk451429.panel, Chunk599832.panel),
+    className: l()(Chunk451429.panel, Chunk599832.panel),
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk599832.toolbar,
       children: [(0, Chunk951288.jsx)(Chunk681715.u, {
-        text: w,
+        text: I,
         children: (0, Chunk951288.jsx)(Chunk481060.hU, {
           size: "sm",
           variant: O ? "active" : "primary",
           icon: O ? Chunk481060.fpf : Chunk481060.o1U,
-          "aria-label": w,
+          "aria-label": I,
           onClick: () => P(!O)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
@@ -174,7 +174,7 @@ function O() {
         onClick: Chunk31336.Zw
       })]
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: T,
+      columns: N,
       data: Chunk658722,
       selectedRowKey: Chunk913527,
       onClickRow: e => d(e.key)

@@ -2,7 +2,7 @@
 /** chunk id: 619733, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   AK: () => c,
-  EK: () => r,
+  EK: () => l,
   IX: () => s,
   SW: () => h,
   SY: () => d,
@@ -16,7 +16,7 @@ require.d(exports, {
 });
 var a, Chunk763600 = require("./763600.js"),
   Chunk48541 = require("./48541.js"),
-  r = 12633 == require.j ? ((a = {}).SELECT_GAME = "select-game", a.SERVER_SETTINGS = "server-settings", a) : null;
+  l = 12633 == require.j ? ((a = {}).SELECT_GAME = "select-game", a.SERVER_SETTINGS = "server-settings", a) : null;
 let s = {
     steps: {
       "select-game": {

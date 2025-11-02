@@ -24,24 +24,24 @@ function b(e) {
   let {
     targetElementRef: n,
     onClose: b
-  } = e, [v, j] = i.useState(false), _ = (0, l.e7)([h.default], () => h.default.getId()), {
+  } = e, [v, j] = r.useState(false), _ = (0, i.e7)([h.default], () => h.default.getId()), {
     config: y,
     application: C
   } = (0, u.G)(), {
     fetched: S,
     hasAlreadyLinked: E,
-    canStartAuthorization: T,
-    startAuthorization: N
+    canStartAuthorization: N,
+    startAuthorization: T
   } = (0, o.F)(C), O = (0, m.ZP)(_), P = null == O || null == (t = O.widgets) ? true : t.some(e => e instanceof d.q && e.applicationId === (null == C ? true : C.id));
   return null != y && null != y.edit_profile_upsell_image && null != C && S ? (0, a.jsx)(c.ZP, {
-    contentTypes: E ? P ? [] : [r.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : T ? [r.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+    contentTypes: E ? P ? [] : [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : N ? [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: i
+        markAsDismissed: r
       } = e;
       if (null == t) return null;
-      let l = t === r.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
+      let i = t === l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
       return (0, a.jsx)(s.J2, {
         targetElementRef: n,
         position: "right",
@@ -53,26 +53,26 @@ function b(e) {
         title: f.intl.format(f.t.TXDztH, {
           applicationName: C.name
         }),
-        body: l ? f.intl.string(f.t["63Kso0"]) : f.intl.string(f.t.HwXoeC),
-        actions: [l ? {
+        body: i ? f.intl.string(f.t["63Kso0"]) : f.intl.string(f.t.HwXoeC),
+        actions: [i ? {
           text: f.intl.string(f.t.VSLDly),
           onClick: () => {
             j(true), (0, p.openUserProfileModal)({
               userId: _,
               section: g.oh.WIDGETS
             }).then(() => {
-              i(x.L.TAKE_ACTION), b()
+              r(x.L.TAKE_ACTION), b()
             }).finally(() => j(false))
           },
           loading: v
         } : {
           text: f.intl.string(f.t["DSJi3+"]),
           onClick: () => {
-            N(), j(true), (0, p.openUserProfileModal)({
+            T(), j(true), (0, p.openUserProfileModal)({
               userId: _,
               section: g.oh.WIDGETS
             }).then(() => {
-              i(x.L.TAKE_ACTION), b()
+              r(x.L.TAKE_ACTION), b()
             }).finally(() => j(false))
           },
           loading: v

@@ -40,9 +40,9 @@ let p = {
           justify: "space-between",
           gap: 0,
           children: module.flow_context.tasks.map((e, n) => {
-            var i;
-            return (0, a.jsx)(l.q, {
-              title: null != (i = p[e.task_type]) ? i : "",
+            var r;
+            return (0, a.jsx)(i.q, {
+              title: null != (r = p[e.task_type]) ? r : "",
               listType: "numbered",
               index: n,
               color: n === t ? "text-primary" : n < t ? "feedback-positive" : "text-muted",

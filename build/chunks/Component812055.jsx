@@ -48,19 +48,19 @@ function C(e) {
   let {
     targetElementRef: t,
     onDismiss: n,
-    children: i
+    children: r
   } = e, {
-    enabled: l,
-    titleText: r,
+    enabled: i,
+    titleText: l,
     bodyText: o
   } = (0, h.a)({
     location: "popover",
     autoTrackExposure: false
   });
-  return null != t.current && l ? (0, a.jsxs)(a.Fragment, {
-    children: [i, (0, a.jsx)(s.J2, {
+  return null != t.current && i ? (0, a.jsxs)(a.Fragment, {
+    children: [r, (0, a.jsx)(s.J2, {
       targetElementRef: t,
-      title: f.intl.string(r),
+      title: f.intl.string(l),
       body: f.intl.string(o),
       caretConfig: {
         align: "start"
@@ -80,5 +80,5 @@ function C(e) {
       },
       onRequestClose: () => null == n ? true : n(x.L.DISMISS)
     })]
-  }) : i
+  }) : r
 }

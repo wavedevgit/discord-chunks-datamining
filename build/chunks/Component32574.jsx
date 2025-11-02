@@ -16,14 +16,14 @@ var Chunk442837 = require("./442837.js"),
 let m = function(e) {
   let {
     onSubmit: t
-  } = e, n = (0, i.e7)([c.default], () => c.default.getCurrentUser());
+  } = e, n = (0, r.e7)([c.default], () => c.default.getCurrentUser());
   return (0, a.jsx)(u.Q, {
     title: "Lorem ipsum dolor",
     actions: [{
       text: "Consectetur adipiscing",
       variant: "primary",
       onClick: () => {
-        (null == n ? true : n.ageVerificationStatus) === r.F$.UNVERIFIED ? s.Z.showAgeVerificationGetStartedModal({
+        (null == n ? true : n.ageVerificationStatus) === l.F$.UNVERIFIED ? s.Z.showAgeVerificationGetStartedModal({
           entryPoint: o.cU.SAFETY_FLOWS,
           onClose: () => t({
             type: d.rY.Empty
@@ -33,15 +33,15 @@ let m = function(e) {
         })
       }
     }],
-    children: (0, a.jsxs)(l.Kqy, {
+    children: (0, a.jsxs)(i.Kqy, {
       gap: 8,
-      children: [(0, a.jsx)(l.Text, {
+      children: [(0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      }), (0, a.jsx)(l.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         children: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      }), (0, a.jsx)(l.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         children: "Ut enim ad minim veniam quis"
       })]

@@ -21,15 +21,15 @@ function x(e) {
   let {
     markAsDismissed: t,
     onCTA: n
-  } = e, x = (0, i.e7)([o.default], () => o.default.getCurrentUser()), g = (0, c.M5)(x, u.PremiumTypes.TIER_2);
+  } = e, x = (0, r.e7)([o.default], () => o.default.getCurrentUser()), g = (0, c.M5)(x, u.PremiumTypes.TIER_2);
   return (0, a.jsx)("div", {
     className: p.popup,
     children: (0, a.jsxs)("div", {
       className: p.content,
-      children: [(0, a.jsx)(r.P3F, {
+      children: [(0, a.jsx)(l.P3F, {
         className: p.closeIcon,
         onClick: () => t(d.L.USER_DISMISS),
-        children: (0, a.jsx)(r.Dio, {
+        children: (0, a.jsx)(l.Dio, {
           size: "xs"
         })
       }), (0, a.jsx)("img", {
@@ -37,17 +37,17 @@ function x(e) {
         alt: "",
         className: p.asset
       }), (0, a.jsxs)("div", {
-        children: [(0, a.jsx)(r.Heading, {
+        children: [(0, a.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           color: "text-primary",
           className: p.title,
           children: m.intl.string(m.t.PRXV49)
-        }), (0, a.jsx)(r.Text, {
+        }), (0, a.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
           children: m.intl.string(m.t["RSHtF+"])
         })]
-      }), g ? (0, a.jsx)(r.Button, {
+      }), g ? (0, a.jsx)(l.Button, {
         text: m.intl.string(m.t.LhcHi5),
         fullWidth: true,
         onClick: () => {
@@ -59,8 +59,8 @@ function x(e) {
         },
         showGradient: true,
         subscriptionTier: u.Si.TIER_2,
-        size: l.zx.Sizes.LARGE,
-        color: l.zx.Colors.CUSTOM,
+        size: i.zx.Sizes.LARGE,
+        color: i.zx.Colors.CUSTOM,
         textOptions: {
           textOverride: m.intl.string(m.t.pj0XBN)
         },

@@ -63,7 +63,8 @@ class d {
       percentiles: o,
       debug: n
     }), this.yellHistory.length > 50 && this.yellHistory.shift()), i && this.emitSignal({
-      type: l.Bs.YELLING
+      type: l.Bs.YELLING,
+      userId: a
     }, s)
   }
   handleWakeWord(e) {

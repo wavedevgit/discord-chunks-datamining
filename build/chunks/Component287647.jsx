@@ -27,7 +27,7 @@ function v(e) {
     children: o
   } = e, {
     analyticsLocations: v
-  } = (0, s.ZP)(), j = (0, i.useRef)(null), _ = (0, l.e7)([u.Z], () => u.Z.isFocused()), y = (0, i.useCallback)(() => {
+  } = (0, s.ZP)(), j = (0, r.useRef)(null), _ = (0, i.e7)([u.Z], () => u.Z.isFocused()), y = (0, r.useCallback)(() => {
     t(h.L.TAKE_ACTION), (0, d.openUserSettings)(c.n.PROFILE_PANEL, {
       section: p.oAB.PROFILE_CUSTOMIZATION,
       analyticsLocations: v
@@ -36,14 +36,14 @@ function v(e) {
         analyticsLocations: v
       })
     })
-  }, [t, v]), C = (0, i.useCallback)(() => {
+  }, [t, v]), C = (0, r.useCallback)(() => {
     t(h.L.USER_DISMISS)
   }, [t]);
-  return (0, i.useEffect)(() => {
+  return (0, r.useEffect)(() => {
     var e, t, n;
     _ && (null == (e = j.current) ? true : e.paused) ? null == (t = j.current) || t.play().catch(b.error) : _ || null == (n = j.current) || n.pause()
   }, [_]), (0, a.jsxs)(a.Fragment, {
-    children: [o, (0, a.jsx)(r.J, {
+    children: [o, (0, a.jsx)(l.J, {
       targetElementRef: n,
       shouldShow: true,
       onRequestClose: C,

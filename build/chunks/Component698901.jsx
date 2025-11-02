@@ -12,8 +12,8 @@ var Chunk951288 = require("./951288.js"),
 function o(e) {
   let {
     hotspotLocation: t
-  } = e, [n, o] = (0, i.Wu)([r.qc], () => [r.qc.hasHotspot(t, true), r.qc.getHotspotOverride(t)]);
-  return (0, a.jsx)(l.q4e, {
+  } = e, [n, o] = (0, r.Wu)([l.qc], () => [l.qc.hasHotspot(t, true), l.qc.getHotspotOverride(t)]);
+  return (0, a.jsx)(i.q4e, {
     label: t,
     successMessage: n ? "Active" : true,
     errorMessage: n ? "Inactive" : true,
@@ -29,7 +29,7 @@ function o(e) {
       value: false,
       label: "Force Inactive"
     }],
-    onChange: e => null != e ? (0, r.hv)(t, e) : (0, r.Po)(t)
+    onChange: e => null != e ? (0, l.hv)(t, e) : (0, l.Po)(t)
   })
 }
 

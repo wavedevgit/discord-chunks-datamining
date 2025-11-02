@@ -1,12 +1,12 @@
 /** Chunk was on 28532 **/
 /** chunk id: 496025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => T
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk602715 = require("./602715.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -29,9 +29,9 @@ var Chunk951288 = require("./951288.js"),
 function E() {
   var e;
   let t = (0, Chunk442837.Wu)([Chunk55589.Z], () => Chunk55589.Z.getSortedChannels()[1]),
-    [n, l] = Chunk647438.useState(exports.length > 0 ? exports[0].channelId : true),
+    [n, i] = Chunk647438.useState(exports.length > 0 ? exports[0].channelId : true),
     {
-      selectedChannel: r,
+      selectedChannel: l,
       options: d
     } = (0, Chunk442837.cj)([Chunk592125.Z, Chunk594174.default, Chunk699516.Z], () => ({
       selectedChannel: Chunk592125.Z.getChannel(require),
@@ -45,11 +45,11 @@ function E() {
     })),
     v = Chunk647438.useCallback(() => {
       var e;
-      if (null == r || !r.isPrivate()) return;
-      let t = (0, Chunk630388.x9)(null != (e = r.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
-      Chunk258732.Z.updatePrivateChannelRecipientFlags(r.id, exports)
-    }, [r]),
-    j = null != r && !!r.isPrivate() && (0, Chunk630388.yE)(null != (e = r.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+      if (null == l || !l.isPrivate()) return;
+      let t = (0, Chunk630388.x9)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+      Chunk258732.Z.updatePrivateChannelRecipientFlags(l.id, exports)
+    }, [l]),
+    j = null != l && !!l.isPrivate() && (0, Chunk630388.yE)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/semibold",
@@ -83,7 +83,7 @@ function E() {
   })
 }
 
-function T() {
+function N() {
   let e = Chunk647438.useCallback(() => {
     Chunk493683.Z.openPrivateChannel({
       recipientIds: [Chunk37812.I]
@@ -97,24 +97,24 @@ function T() {
   })
 }
 
-function N() {
+function T() {
   let e = (0, Chunk442837.e7)([Chunk432877.ZP], () => Chunk432877.ZP.allByCategory(Chunk432877.zU.MESSAGING), [], Chunk442837.pF).map(e => {
     let [t, n, {
-      label: i
+      label: r
     }] = e;
     return (0, a.jsx)(c.rsf, {
-      label: i,
+      label: r,
       description: t,
       checked: n,
       onChange: e => (0, v.Z)(t, e)
     }, t)
   });
   return (0, Chunk951288.jsxs)("div", {
-    className: r()(Chunk451429.panel, Chunk165432.panel),
+    className: l()(Chunk451429.panel, Chunk165432.panel),
     children: [module, (0, Chunk951288.jsx)("div", {
       className: Chunk165432.divider
     }), (0, Chunk951288.jsx)(E, {}), (0, Chunk951288.jsx)("div", {
       className: Chunk165432.divider
-    }), (0, Chunk951288.jsx)(T, {})]
+    }), (0, Chunk951288.jsx)(N, {})]
   })
 }

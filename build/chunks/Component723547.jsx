@@ -19,23 +19,23 @@ function o(e) {
     className: s.popup,
     children: (0, a.jsxs)("div", {
       className: s.content,
-      children: [(0, a.jsx)(i.P3F, {
+      children: [(0, a.jsx)(r.P3F, {
         className: s.closeIcon,
-        onClick: () => t(l.L.USER_DISMISS),
-        children: (0, a.jsx)(i.Dio, {
+        onClick: () => t(i.L.USER_DISMISS),
+        children: (0, a.jsx)(r.Dio, {
           size: "xs"
         })
-      }), (0, a.jsx)(i.Text, {
+      }), (0, a.jsx)(r.Text, {
         className: s.description,
         variant: "text-md/normal",
-        children: r.intl.string(r.t["Ny/0ui"])
-      }), (0, a.jsx)(i.Button, {
+        children: l.intl.string(l.t["Ny/0ui"])
+      }), (0, a.jsx)(r.Button, {
         variant: "primary",
         size: "sm",
-        text: r.intl.string(r.t.TYo738),
+        text: l.intl.string(l.t.TYo738),
         fullWidth: true,
         onClick: () => {
-          t(l.L.TAKE_ACTION), n()
+          t(i.L.TAKE_ACTION), n()
         }
       })]
     })

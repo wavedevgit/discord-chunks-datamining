@@ -33,16 +33,16 @@ function b(e) {
   }
   let {
     isAdopting: n,
-    onAdoptTag: i,
-    onEditProfile: l
+    onAdoptTag: r,
+    onEditProfile: i
   } = (0, h.Z)(e.guild.id, () => t(x.L.TAKE_ACTION)), c = [{
     text: g.intl.string(g.t.jwEaiX),
     loading: n,
-    onClick: i,
+    onClick: r,
     variant: "primary"
   }, {
     text: g.intl.string(g.t.s5vZlQ),
-    onClick: l,
+    onClick: i,
     variant: "secondary"
   }];
   return (0, a.jsxs)(a.Fragment, {
@@ -52,7 +52,7 @@ function b(e) {
       position: "top",
       graphic: {
         type: "dynamic",
-        component: r.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+        component: l.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
         props: {
           guildId: e.guild.id,
           guildProfile: e.guild.profile
@@ -78,16 +78,16 @@ function v(e) {
       lastSeenInfo: {
         tag: e.guild.profile.tag
       }
-    }), (0, d.Qd)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, true, x.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
+    }), (0, d.Qd)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, true, x.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
   }
   let {
     isAdopting: n,
-    onAdoptTag: i,
+    onAdoptTag: r,
     onEditProfile: c
   } = (0, h.Z)(e.guild.id, () => t(x.L.TAKE_ACTION)), u = [{
     text: g.intl.string(g.t.jwEaiX),
     loading: n,
-    onClick: i,
+    onClick: r,
     variant: "primary"
   }, {
     text: g.intl.string(g.t.s5vZlQ),
@@ -101,7 +101,7 @@ function v(e) {
       position: "top",
       graphic: {
         type: "dynamic",
-        component: r.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+        component: l.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
         props: {
           guildId: e.guild.id,
           guildProfile: e.guild.profile
@@ -119,7 +119,7 @@ function v(e) {
 }
 
 function j(e) {
-  let t = (0, i.e7)([u.Z], () => u.Z.getGuild(e.guildId)),
+  let t = (0, r.e7)([u.Z], () => u.Z.getGuild(e.guildId)),
     n = (0, m.S3)(e.guildId);
   return null != t && (0, p.jq)(t) && null !== n ? "changed" === n ? (0, a.jsx)(b, {
     guild: t,

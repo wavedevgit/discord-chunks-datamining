@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,33 +20,33 @@ var Chunk951288 = require("./951288.js"),
   Chunk558270 = require("./558270.js");
 let b = "Make sure you're only uploading text files!",
   v = e => {
-    var t, n, i;
+    var t, n, r;
     let {
-      effect: l,
-      onClick: r
+      effect: i,
+      onClick: l
     } = e, {
       deleteConfig: s
     } = (0, x.n6)();
     return (0, a.jsxs)(c.P3F, {
       className: f.previewCard,
       onClick: () => {
-        r(l)
+        l(i)
       },
       children: [(0, a.jsx)("div", {
         className: f.previewCardImage,
         style: {
-          backgroundImage: "url(".concat(null == (i = l.config) || null == (n = i.effects) || null == (t = n[0]) ? true : t.base64, ")")
+          backgroundImage: "url(".concat(null == (r = i.config) || null == (n = r.effects) || null == (t = n[0]) ? true : t.base64, ")")
         }
       }), (0, a.jsxs)("div", {
         className: f.previewCardFooter,
         children: [(0, a.jsx)(c.Text, {
           variant: "text-md/bold",
-          children: l.name
+          children: i.name
         }), (0, a.jsx)(c.Button, {
           variant: "critical-secondary",
           text: "Delete",
           onClick: e => {
-            e.preventDefault(), e.stopPropagation(), s(l.skuId)
+            e.preventDefault(), e.stopPropagation(), s(i.skuId)
           }
         })]
       })]
@@ -58,36 +58,36 @@ function j() {
     profileEffects: e,
     upsertConfig: t,
     clearAll: n
-  } = (0, Chunk373071.n6)(), [l, j] = Chunk647438.useState(), _ = Chunk647438.useRef(null), y = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [C, S] = Chunk647438.useState("");
+  } = (0, Chunk373071.n6)(), [i, j] = Chunk647438.useState(), _ = Chunk647438.useRef(null), y = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [C, S] = Chunk647438.useState("");
   Chunk647438.useEffect(() => {
     (0, Chunk365943.t)(true)
   }, []);
   let E = Chunk647438.useMemo(() => "" === C ? y : y.filter(e => {
-      var t, n, a, i;
-      let l = C.toLowerCase(),
-        r = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
-        s = null != (i = null == (n = e.config.description) ? true : n.toLowerCase()) ? i : "";
-      return r.includes(l) || s.includes(l)
+      var t, n, a, r;
+      let i = C.toLowerCase(),
+        l = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
+        s = null != (r = null == (n = e.config.description) ? true : n.toLowerCase()) ? r : "";
+      return l.includes(i) || s.includes(i)
     }), [C, y]),
-    T = Chunk647438.useCallback((e, n) => {
+    N = Chunk647438.useCallback((e, n) => {
       if (null == n || !e.type.startsWith("text/")) return (0, m.Eo)(b);
-      let [a, i] = n.split(",");
+      let [a, r] = n.split(",");
       if (!a.includes("text/plain")) return (0, m.Eo)(b);
-      let l = JSON.parse(atob(i));
-      l.skuId = (0, s.Z)(), t(l), (0, m.XA)("Profile Effect (maybe??) imported!")
+      let i = JSON.parse(atob(r));
+      i.skuId = (0, s.Z)(), t(i), (0, m.XA)("Profile Effect (maybe??) imported!")
     }, [exports]),
-    N = Chunk647438.useCallback(e => {
+    T = Chunk647438.useCallback(e => {
       var t;
       if ((null == (t = e.currentTarget) ? true : t.files) == null) return void(0, m.Eo)("Error uploading file. Try again!");
-      (0, m.Kr)(e.currentTarget.files, T, m.Eo)
-    }, [T]);
+      (0, m.Kr)(e.currentTarget.files, N, m.Eo)
+    }, [N]);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk558270.root,
     children: [null == Chunk120356 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsxs)("div", {
         className: Chunk558270.col,
         children: [(0, Chunk951288.jsxs)("div", {
-          className: r()(Chunk558270.section, Chunk558270.row),
+          className: l()(Chunk558270.section, Chunk558270.row),
           children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-xl/bold",
             children: "Custom Profile Effects"
@@ -113,7 +113,7 @@ function j() {
           }, e.skuId))
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: r()(Chunk558270.row, Chunk558270.end, Chunk558270.section),
+        className: l()(Chunk558270.row, Chunk558270.end, Chunk558270.section),
         children: [(0, Chunk951288.jsxs)("div", {
           className: Chunk558270.uploadButton,
           children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -122,7 +122,7 @@ function j() {
             children: "Import Shared Config"
           }), (0, Chunk951288.jsx)(Chunk53281.Z, {
             ref: _,
-            onChange: N,
+            onChange: T,
             multiple: false
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.Button, {

@@ -1,12 +1,12 @@
 /** Chunk was on 28532 **/
 /** chunk id: 213713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => R
+  Z: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk876215 = require("./876215.js"),
@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk451429 = require("./451429.js");
 let k = [{
   key: "type",
-  cellClassName: r()(Chunk680027.cell, Chunk680027.cellType),
+  cellClassName: l()(Chunk680027.cell, Chunk680027.cellType),
   render(e) {
     let {
       type: t
@@ -46,7 +46,7 @@ let k = [{
   }
 }, {
   key: "count",
-  cellClassName: r()(Chunk680027.cell, Chunk680027.cellCount),
+  cellClassName: l()(Chunk680027.cell, Chunk680027.cellCount),
   render(e) {
     let {
       entries: t
@@ -65,38 +65,38 @@ let k = [{
     let {
       type: t
     } = e;
-    return (0, a.jsx)(A, {
+    return (0, a.jsx)(R, {
       type: t
     })
   }
 }];
 
-function A(e) {
+function R(e) {
   var t, n;
   let {
-    type: i
-  } = e, l = (0, u.e7)([E.Z], () => E.Z.getFilters()), r = null != (n = null == l || null == (t = l.types) ? true : t.has(i)) && n;
+    type: r
+  } = e, i = (0, u.e7)([E.Z], () => E.Z.getFilters()), l = null != (n = null == i || null == (t = i.types) ? true : t.has(r)) && n;
   return (0, a.jsx)(p.rsf, {
-    checked: r,
+    checked: l,
     onChange: function() {
-      r ? h.Z.dispatch({
+      l ? h.Z.dispatch({
         type: "CONTENT_INVENTORY_SET_FILTERS",
         filters: true
       }) : h.Z.dispatch({
         type: "CONTENT_INVENTORY_SET_FILTERS",
         filters: {
-          types: new Set([i])
+          types: new Set([r])
         }
       })
     }
   })
 }
 
-function R() {
+function A() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFeed(Chunk206583.YN.GLOBAL_FEED)),
-    l = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getDebugImpressionCappingDisabled()),
-    r = (0, Chunk442837.e7)([Chunk71585.Z], () => Chunk71585.Z.getDebugFastImpressionCappingEnabled()),
+    i = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getDebugImpressionCappingDisabled()),
+    l = (0, Chunk442837.e7)([Chunk71585.Z], () => Chunk71585.Z.getDebugFastImpressionCappingEnabled()),
     s = function(e) {
       let t = o().groupBy(e, e => e.content_type);
       return Object.keys(t).map(e => {
@@ -112,11 +112,11 @@ function R() {
       var e;
       return (null == (e = Chunk146282.Z.getFeedState(Chunk206583.YN.GLOBAL_FEED)) ? true : module.loading) === true
     }),
-    [A, R] = Chunk647438.useState(""),
+    [R, A] = Chunk647438.useState(""),
     D = (0, Chunk442837.e7)([Chunk77498.Z, Chunk812206.Z], () => {
       var e, t, n;
-      return parseInt(A) > 0 ? A : null != (n = null == (e = Chunk77498.Z.getGameByName(A)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(A)) ? true : exports.id
-    }, [A]),
+      return parseInt(R) > 0 ? R : null != (n = null == (e = Chunk77498.Z.getGameByName(R)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(R)) ? true : exports.id
+    }, [R]),
     L = (0, Chunk168524.Z)({
       applicationId: D,
       location: "DevToolsContentInventory",
@@ -130,7 +130,7 @@ function R() {
       return t
     }),
     U = (0, Chunk835473.Z)(M).filter(Chunk823379.lm),
-    B = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
+    F = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
   return (0, Chunk951288.jsx)("div", {
     className: Chunk451429.panel,
     children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
@@ -190,7 +190,7 @@ function R() {
           }
         }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
-          text: r ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping",
+          text: l ? "Disable Fast Impression Capping" : "Enable Fast Impression Capping",
           fullWidth: true,
           onClick: function() {
             Chunk570140.Z.dispatch({
@@ -205,11 +205,11 @@ function R() {
           children: "Game Profile"
         }), (0, Chunk951288.jsx)(Chunk481060.oil, {
           placeholder: "App ID or full name",
-          onChange: e => (0 === e.length || e.length >= 18) && R(e),
+          onChange: e => (0 === e.length || e.length >= 18) && A(e),
           onKeyDown: e => {
-            "Enter" === e.key && (A === e.currentTarget.value ? null == L || L(e) : R(e.currentTarget.value))
+            "Enter" === e.key && (R === e.currentTarget.value ? null == L || L(e) : A(e.currentTarget.value))
           },
-          error: A.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : A + " - try by id", ".") : true,
+          error: R.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : R + " - try by id", ".") : true,
           successMessage: null != L ? "Game profile found" : true
         }), (0, Chunk951288.jsx)("ul", {
           children: U.map(e => (0, a.jsx)("li", {
@@ -231,7 +231,7 @@ function R() {
             label: e,
             value: e
           })),
-          isSelected: e => e === B,
+          isSelected: e => e === F,
           select: function(e) {
             h.Z.dispatch({
               type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",

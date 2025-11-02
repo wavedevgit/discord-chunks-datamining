@@ -5,7 +5,6 @@ require.d(exports, {
   C1: () => J,
   Gh: () => ee,
   N0: () => V,
-  O0: () => em,
   Pr: () => en,
   Rr: () => eu,
   So: () => ed,
@@ -587,12 +586,5 @@ function ep() {
 async function eh(e) {
   await et(e, {
     isTemporary: false
-  })
-}
-
-function em(e) {
-  a.Z.dispatch({
-    type: "CLIPS_ENGINE_CONFIG_UPDATE",
-    config: e
   })
 }

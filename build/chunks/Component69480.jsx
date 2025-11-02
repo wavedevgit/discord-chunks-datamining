@@ -1,95 +1,58 @@
 /** Chunk was on 90946 **/
-/** chunk id: 69480, original params: e,t,n (module,exports,require) **/
+/** chunk id: 69480, original params: e,n,i (module,exports,require) **/
 require.d(exports, {
-  default: () => a
+  default: () => o
 }), require("./49124.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk793030 = require("./793030.js"),
-  Chunk481060 = require("./481060.js"),
-  Chunk794877 = require("./794877.jsx");
+  Chunk481060 = require("./481060.js");
 
-function a(e) {
-  var t;
+function o(e) {
   let {
     clip: n,
-    onClose: a,
-    transitionState: s
+    onClose: i,
+    transitionState: o
   } = e;
-  return (0, i.jsx)(l.Modal, {
-    transitionState: s,
-    onClose: a,
+  return (0, t.jsx)(l.Modal, {
+    transitionState: o,
+    onClose: i,
     title: "Clip Debug",
     size: "md",
     actions: [{
       text: "Close",
       variant: "secondary",
-      onClick: a
+      onClick: i
     }],
-    children: (0, i.jsxs)(o.C3N, {
+    children: (0, t.jsxs)(a.C3N, {
       label: "Decision",
-      children: [null != n.decision && (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(o.gNt, {
+      children: [null != n.decision && (0, t.jsxs)(t.Fragment, {
+        children: [null != n.decision.reason ? (0, t.jsx)(a.gNt, {
           label: "Reason",
-          children: (0, i.jsx)(o.Text, {
+          children: (0, t.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-secondary",
             children: n.decision.reason
           })
-        }), (0, i.jsx)(o.gNt, {
-          label: "Clipping Pressure",
-          layout: "horizontal",
-          children: (0, i.jsx)(o.Text, {
-            variant: "text-sm/normal",
-            color: "text-secondary",
-            children: n.decision.clippingPressure.toFixed(3)
-          })
-        }), (0, i.jsx)(o.gNt, {
-          label: "Current Threshold",
-          layout: "horizontal",
-          children: (0, i.jsx)(o.Text, {
-            variant: "text-sm/normal",
-            color: "text-secondary",
-            children: n.decision.currentThreshold.toFixed(3)
-          })
-        }), null != n.decision.effectivePressure && (0, i.jsx)(o.gNt, {
-          label: "Effective Pressure",
-          layout: "horizontal",
-          children: (0, i.jsx)(o.Text, {
-            variant: "text-sm/normal",
-            color: "text-secondary",
-            children: n.decision.effectivePressure.toFixed(3)
-          })
-        }), (0, i.jsx)(o.gNt, {
+        }) : null, (0, t.jsx)(a.gNt, {
           label: "Timestamp",
           layout: "horizontal",
-          children: (0, i.jsx)(o.Text, {
+          children: (0, t.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-secondary",
             children: new Date(n.decision.timestamp).toLocaleString()
           })
         })]
-      }), n.timeline.length > 0 && (0, i.jsx)(o.C3N, {
+      }), n.timeline.length > 0 && (0, t.jsx)(a.C3N, {
         label: "Timeline",
-        children: (0, i.jsx)("pre", {
-          children: (0, i.jsx)(o.Text, {
+        children: (0, t.jsx)("pre", {
+          children: (0, t.jsx)(a.Text, {
             variant: "code",
             color: "text-secondary",
             children: JSON.stringify(n.timeline, null, 2)
           })
         })
-      }), (null == (t = n.decision) ? true : t.emotionHistory) != null && n.decision.emotionHistory.length > 0 && (0, i.jsxs)(o.C3N, {
-        label: "Emotion History",
-        children: [(0, i.jsx)(r.Z, {
-          emotionHistory: n.decision.emotionHistory
-        }), (0, i.jsx)("pre", {
-          children: (0, i.jsx)(o.Text, {
-            variant: "code",
-            color: "text-secondary",
-            children: JSON.stringify(n.decision.emotionHistory, null, 2)
-          })
-        })]
-      }), null == n.decision && 0 === n.timeline.length && (0, i.jsx)(o.Text, {
+      }), null == n.decision && 0 === n.timeline.length && (0, t.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
         children: "No debug information available for this clip."

@@ -373,7 +373,7 @@ let i = {
     neverLoadBeforeConnectionOpen: true
   },
   ClipDecisionEngineManager: {
-    actions: ["CLIPS_SIGNAL_CREATED", "CLIPS_ENGINE_CONFIG_UPDATE", "SPEAKING", "GUILD_SOUNDBOARD_SOUND_PLAY_START", "GUILD_SOUNDBOARD_SOUND_PLAY_END", "VOICE_CHANNEL_SELECT"],
+    actions: ["CLIPS_SIGNAL_CREATED", "CLIPS_SETTINGS_UPDATE", "SPEAKING", "GUILD_SOUNDBOARD_SOUND_PLAY_START", "GUILD_SOUNDBOARD_SOUND_PLAY_END", "VOICE_CHANNEL_SELECT"],
     inlineRequire: () => require("./460779.js").Z
   },
   ClipsSignalManager: {

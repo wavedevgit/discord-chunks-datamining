@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk763600 = require("./763600.js"),
   Chunk660815 = require("./660815.js");
-let l = [{
+let i = [{
   id: "1",
   name: "GameServer #1",
   cost: 3,
@@ -50,17 +50,17 @@ let l = [{
   }]
 }];
 
-function r(e, t) {
+function l(e, t) {
   return {
     id: e,
     name: t,
     provider: a.Z.SHOCKBYTE,
-    plans: l,
-    baseCost: Math.min(...l.map(e => e.cost)),
+    plans: i,
+    baseCost: Math.min(...i.map(e => e.cost)),
     gameId: "1"
   }
 }
-let s = [r("1", "GameServer Test #1"), r("2", "GameServer Test #2"), r("3", "GameServer Test #3"), r("4", "GameServer Test #4"), r("5", "GameServer Test #5"), r("6", "GameServer Test #6"), r("7", "GameServer Test #7"), r("8", "GameServer Test #8"), r("9", "GameServer Test #9"), r("10", "GameServer Test #10"), r("11", "GameServer Test #11"), r("12", "GameServer Test #12")],
+let s = [l("1", "GameServer Test #1"), l("2", "GameServer Test #2"), l("3", "GameServer Test #3"), l("4", "GameServer Test #4"), l("5", "GameServer Test #5"), l("6", "GameServer Test #6"), l("7", "GameServer Test #7"), l("8", "GameServer Test #8"), l("9", "GameServer Test #9"), l("10", "GameServer Test #10"), l("11", "GameServer Test #11"), l("12", "GameServer Test #12")],
   o = [{
     id: "1",
     gameId: "1",
@@ -68,8 +68,8 @@ let s = [r("1", "GameServer Test #1"), r("2", "GameServer Test #2"), r("3", "Gam
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: l[1].id,
-    planName: l[1].name,
+    planId: i[1].id,
+    planName: i[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
@@ -83,8 +83,8 @@ let s = [r("1", "GameServer Test #1"), r("2", "GameServer Test #2"), r("3", "Gam
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: l[1].id,
-    planName: l[1].name,
+    planId: i[1].id,
+    planName: i[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
@@ -98,8 +98,8 @@ let s = [r("1", "GameServer Test #1"), r("2", "GameServer Test #2"), r("3", "Gam
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: l[1].id,
-    planName: l[1].name,
+    planId: i[1].id,
+    planName: i[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
@@ -113,8 +113,8 @@ let s = [r("1", "GameServer Test #1"), r("2", "GameServer Test #2"), r("3", "Gam
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: l[1].id,
-    planName: l[1].name,
+    planId: i[1].id,
+    planName: i[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
@@ -128,8 +128,8 @@ let s = [r("1", "GameServer Test #1"), r("2", "GameServer Test #2"), r("3", "Gam
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: l[1].id,
-    planName: l[1].name,
+    planId: i[1].id,
+    planName: i[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,
@@ -143,8 +143,8 @@ let s = [r("1", "GameServer Test #1"), r("2", "GameServer Test #2"), r("3", "Gam
     port: "25565",
     regionId: "us-east",
     regionName: "US East",
-    planId: l[1].id,
-    planName: l[1].name,
+    planId: i[1].id,
+    planName: i[1].name,
     onlineConnectionsCount: 0,
     maxConnectionsCount: 10,
     status: Chunk660815.V.ONLINE,

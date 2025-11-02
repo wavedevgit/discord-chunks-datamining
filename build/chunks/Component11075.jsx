@@ -11,17 +11,17 @@ var Chunk704215 = require("./704215.js"),
 let s = e => {
   let {
     className: t
-  } = e, n = Object.keys(i.z).find(e => "COLLECTIBLES_SHOP_ENTRY_MARKETING" === e);
+  } = e, n = Object.keys(r.z).find(e => "COLLECTIBLES_SHOP_ENTRY_MARKETING" === e);
   return null == n ? null : (0, a.jsxs)("div", {
     className: t,
-    children: [(0, a.jsx)(l.Heading, {
+    children: [(0, a.jsx)(i.Heading, {
       variant: "heading-md/semibold",
       children: "Shop Marketing"
     }), (0, a.jsx)("div", {
       style: {
         zIndex: 1
       },
-      children: (0, a.jsx)(r.Z, {
+      children: (0, a.jsx)(l.Z, {
         items: [n]
       })
     })]

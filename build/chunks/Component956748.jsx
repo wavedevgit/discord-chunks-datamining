@@ -14,19 +14,19 @@ let s = e => {
     opacity: s
   } = e;
   return (0, a.jsxs)("div", {
-    className: r.nameplatePlaceholderUserRow,
+    className: l.nameplatePlaceholderUserRow,
     style: {
       opacity: s
     },
-    children: [(0, a.jsx)(i.qEK, {
+    children: [(0, a.jsx)(r.qEK, {
       src: null,
-      size: i.EFr.SIZE_32,
-      status: t ? l.Skl.ONLINE : true,
+      size: r.EFr.SIZE_32,
+      status: t ? i.Skl.ONLINE : true,
       statusColor: "var(--border-subtle)",
       "aria-hidden": true,
-      imageClassName: r.nameplatePlaceholderAvatar
+      imageClassName: l.nameplatePlaceholderAvatar
     }), (0, a.jsx)("div", {
-      className: r.nameplatePlaceholderBar,
+      className: l.nameplatePlaceholderBar,
       style: {
         maxWidth: null != n ? n : "100px"
       }
