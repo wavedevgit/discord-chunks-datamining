@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk356659 = require("./356659.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk280407 = require("./280407.js");
-let h = 16 / 9,
+let v = 16 / 9,
   g = [0, 16, 0, 16],
   j = g[1] + g[3];
 
@@ -90,7 +90,7 @@ function x(e) {
     } = I,
     {
       tileWidth: L,
-      columns: T
+      columns: H
     } = r.useMemo(() => (function(e, t) {
       let n = t - j,
         l = Math.max(1, Math.floor((n + 16) / 336)),
@@ -112,7 +112,7 @@ function x(e) {
       }
     }()
   }, [E]);
-  let H = r.useCallback(e => {
+  let T = r.useCallback(e => {
       (0, s.ZDy)(async () => {
         let {
           default: r
@@ -155,19 +155,19 @@ function x(e) {
         stackingBehavior: "stack"
       })
     }, [t]),
-    A = r.useMemo(() => Z.map(e => O(T, e.clips.length)), [Z, T]),
+    A = r.useMemo(() => Z.map(e => O(H, e.clips.length)), [Z, H]),
     R = r.useMemo(() => A.reduce((e, t) => e + t, 0), [A]),
-    V = Math.floor(L / h),
+    V = Math.floor(L / v),
     _ = r.useCallback((e, t) => {
       let {
         sectionIndex: n,
         sectionRowIndex: r
       } = t, i = Z[n];
       if (null == i) return null;
-      let a = r * T,
-        s = i.clips.slice(a, a + T);
+      let a = r * H,
+        s = i.clips.slice(a, a + H);
       return (0, l.jsx)("div", {
-        className: v.clipsRow,
+        className: h.clipsRow,
         children: s.map(e => (0, l.jsx)("div", {
           style: {
             width: L
@@ -175,12 +175,12 @@ function x(e) {
           children: (0, l.jsx)(m.Z, {
             actionsDisabled: M,
             isNew: N.includes(e.id),
-            onClick: null != w ? w : H,
+            onClick: null != w ? w : T,
             clip: e
           })
         }, e.id))
       }, "row-".concat(n, "-").concat(r))
-    }, [Z, T, L, M, N, H, w]),
+    }, [Z, H, L, M, N, T, w]),
     U = r.useCallback(e => {
       let t = Z[e];
       return (null == t ? true : t.description) != null ? 66 : 44
@@ -188,7 +188,7 @@ function x(e) {
     z = r.useCallback(e => {
       let t = Z[e];
       return null == t ? null : (0, l.jsxs)("div", {
-        className: v.sectionHeaderContainer,
+        className: h.sectionHeaderContainer,
         children: [(0, l.jsx)(s.Heading, {
           variant: "text-md/semibold",
           color: "header-secondary",
@@ -196,13 +196,13 @@ function x(e) {
         }), null != t.description && (0, l.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          className: v.sectionDescription,
+          className: h.sectionDescription,
           children: t.description
         })]
       }, "header-".concat(e))
     }, [Z]);
   return P || 0 !== Z.length ? P ? (0, l.jsx)("div", {
-    className: v.spinnerContainer,
+    className: h.spinnerContainer,
     children: (0, l.jsx)(s.$jN, {})
   }) : (0, l.jsx)(o.Z, {
     listPadding: g,

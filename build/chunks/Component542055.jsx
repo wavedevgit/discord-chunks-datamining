@@ -88,16 +88,16 @@ function x(e) {
     allClips: M
   } = (0, b.n)(), {
     onShareClick: Z
-  } = (0, p.Z)(t), D = (0, i.e7)([d.Z], () => d.Z.getExportingClipIds().length > 0), L = (0, y.f)(e => e.selectedGameId), T = r.useMemo(() => {
+  } = (0, p.Z)(t), D = (0, i.e7)([d.Z], () => d.Z.getExportingClipIds().length > 0), L = (0, y.f)(e => e.selectedGameId), H = r.useMemo(() => {
     var e;
     return null == L || "favorites" === L ? null : null != (e = S.find(e => e.applicationId === L)) ? e : null
-  }, [L, S]), H = r.useMemo(() => {
+  }, [L, S]), T = r.useMemo(() => {
     var e;
-    return "favorites" === L ? N : null != (e = null == T ? true : T.filteredClips) ? e : E
-  }, [L, T, E, N]), A = r.useMemo(() => {
+    return "favorites" === L ? N : null != (e = null == H ? true : H.filteredClips) ? e : E
+  }, [L, H, E, N]), A = r.useMemo(() => {
     var e;
-    return "favorites" === L ? v.intl.string(v.t["9rlCk1"]) : null != (e = null == T ? true : T.name) ? e : v.intl.string(v.t.dPVrEv)
-  }, [L, T]), R = r.useCallback(e => {
+    return "favorites" === L ? h.intl.string(h.t["9rlCk1"]) : null != (e = null == H ? true : H.name) ? e : h.intl.string(h.t.dPVrEv)
+  }, [L, H]), R = r.useCallback(e => {
     I(t => {
       let n = new Set(t);
       return n.has(e) ? n.delete(e) : n.add(e), n
@@ -138,41 +138,41 @@ function x(e) {
         onClose: x
       }, w), {
         children: (0, l.jsxs)("div", {
-          className: h.modalContainer,
+          className: v.modalContainer,
           children: [(0, l.jsx)(f.Z, {
             clipsByGame: S,
             filteredClips: E,
             favoriteClips: N,
             allClips: M
           }), (0, l.jsxs)("div", {
-            className: h.content,
+            className: v.content,
             children: [(0, l.jsxs)("div", {
-              className: h.contentHeader,
+              className: v.contentHeader,
               children: [(0, l.jsx)(c.Heading, {
                 variant: "heading-md/medium",
                 color: "header-secondary",
                 children: A
               }), (0, l.jsxs)("div", {
-                className: h.headerActions,
+                className: v.headerActions,
                 children: [_ && (0, l.jsxs)(l.Fragment, {
                   children: [(0, l.jsx)(a.u, {
-                    text: v.intl.string(v.t.RDE0Sc),
+                    text: h.intl.string(h.t.RDE0Sc),
                     children: (0, l.jsx)(c.hU, {
                       onClick: z,
                       icon: c.aAc,
                       size: "sm",
                       variant: "icon-only",
-                      "aria-label": v.intl.string(v.t.RDE0Sc),
+                      "aria-label": h.intl.string(h.t.RDE0Sc),
                       loading: D
                     })
                   }), (0, l.jsx)(a.u, {
-                    text: v.intl.string(v.t.oyYWHE),
+                    text: h.intl.string(h.t.oyYWHE),
                     children: (0, l.jsx)(c.hU, {
                       onClick: U,
                       icon: c.XHJ,
                       size: "sm",
                       variant: "icon-only",
-                      "aria-label": v.intl.string(v.t.oyYWHE)
+                      "aria-label": h.intl.string(h.t.oyYWHE)
                     })
                   })]
                 }), (0, l.jsx)(c.hU, {
@@ -180,12 +180,12 @@ function x(e) {
                   icon: c.Uz9,
                   size: "sm",
                   variant: "icon-only",
-                  "aria-label": v.intl.string(v.t.cpT0Cq)
+                  "aria-label": h.intl.string(h.t.cpT0Cq)
                 })]
               })]
             }), (0, l.jsx)(m.Z, {
               channelId: t,
-              filteredClips: H,
+              filteredClips: T,
               totalClipCount: M.length,
               onClipClick: C
             })]

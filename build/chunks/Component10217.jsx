@@ -1,7 +1,7 @@
 /** Chunk was on 61342 **/
 /** chunk id: 10217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => H
+  Z: () => T
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,28 +36,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134351 = require("./134351.js");
-let H = function(e) {
+let T = function(e) {
   var t, i, s, c, b;
   let {
-    clip: v,
+    clip: h,
     actionsDisabled: O,
     isNew: S,
     onClick: E
-  } = e, N = (0, u.Wu)([j.default], () => v.users.map(e => j.default.getUser(e)).filter(w.lm)), M = (0, u.e7)([h.Z], () => null != v.channelId ? h.Z.getChannel(v.channelId) : null), H = (0, u.e7)([g.Z], () => null != v.guildId ? g.Z.getGuild(v.guildId) : null), {
+  } = e, N = (0, u.Wu)([j.default], () => h.users.map(e => j.default.getUser(e)).filter(w.lm)), M = (0, u.e7)([v.Z], () => null != h.channelId ? v.Z.getChannel(h.channelId) : null), T = (0, u.e7)([g.Z], () => null != h.guildId ? g.Z.getGuild(h.guildId) : null), {
     analyticsLocations: V
   } = (0, y.ZP)(f.Z.CLIPS_GALLERY_ITEM), {
     selectedClipIds: U,
     toggleClipSelection: z,
     isMultiSelectMode: B
-  } = r.useContext(Z.U), [G, F] = r.useState(false), Y = r.useRef(null), K = (0, o.Z)(null != (b = null == (t = v.editMetadata) ? true : t.start) ? b : 0), q = U.has(v.id), X = v.type === I.NJ.SCREENSHOT, W = "" === v.applicationName && (null == M ? true : M.name) != null && "" !== M.name ? M.name : v.applicationName, J = (0, C.Xf)(new Date(P.default.extractTimestamp(v.id))), Q = r.useMemo(() => {
+  } = r.useContext(Z.U), [G, F] = r.useState(false), Y = r.useRef(null), K = (0, o.Z)(null != (b = null == (t = h.editMetadata) ? true : t.start) ? b : 0), q = U.has(h.id), X = h.type === I.NJ.SCREENSHOT, W = "" === h.applicationName && (null == M ? true : M.name) != null && "" !== M.name ? M.name : h.applicationName, J = (0, C.Xf)(new Date(P.default.extractTimestamp(h.id))), Q = r.useMemo(() => {
     let e = [];
-    if (v.type === I.NJ.VOICE_CLIP)(null == H ? true : H.name) != null && e.push(H.name), (null == M ? true : M.name) != null && e.push(M.name);
+    if (h.type === I.NJ.VOICE_CLIP)(null == T ? true : T.name) != null && e.push(T.name), (null == M ? true : M.name) != null && e.push(M.name);
     else {
       var t, n;
-      "" !== W && null != W && e.push(W), (null == (t = v.activity) ? true : t.state) != null && "" !== v.activity.state && e.push(v.activity.state), (null == (n = v.activity) ? true : n.details) != null && "" !== v.activity.details && e.push(v.activity.details)
+      "" !== W && null != W && e.push(W), (null == (t = h.activity) ? true : t.state) != null && "" !== h.activity.state && e.push(h.activity.state), (null == (n = h.activity) ? true : n.details) != null && "" !== h.activity.details && e.push(h.activity.details)
     }
     return e.join(" › ")
-  }, [W, null == H ? true : H.name, null == M ? true : M.name, null == (i = v.activity) ? true : i.state, null == (s = v.activity) ? true : s.details, v.type]), $ = r.useCallback(() => {
+  }, [W, null == T ? true : T.name, null == M ? true : M.name, null == (i = h.activity) ? true : i.state, null == (s = h.activity) ? true : s.details, h.type]), $ = r.useCallback(() => {
     let e = Y.current;
     null != e && (e.pause(), e.src = "")
   }, []), ee = r.useCallback(() => {
@@ -69,8 +69,8 @@ let H = function(e) {
     var e, t;
     if (true === X) return;
     let n = Y.current;
-    null != n && (n.pause(), n.currentTime = null != (t = null == (e = v.editMetadata) ? true : e.start) ? t : 0)
-  }, [X, null == (c = v.editMetadata) ? true : c.start]), en = r.useCallback(e => {
+    null != n && (n.pause(), n.currentTime = null != (t = null == (e = h.editMetadata) ? true : e.start) ? t : 0)
+  }, [X, null == (c = h.editMetadata) ? true : c.start]), en = r.useCallback(e => {
     var t, n;
     (null == (n = e.relatedTarget) || null == (t = n.parentElement) ? true : t.parentElement) !== e.currentTarget.parentElement && et()
   }, [et]), el = r.useCallback(() => {
@@ -78,7 +78,7 @@ let H = function(e) {
   }, []), er = r.useCallback(e => {
     var t;
     F(true), null == (t = Y.current) || t.pause();
-    let r = B && U.size > 0 ? k.Z.getClips().filter(e => U.has(e.id)) : [v];
+    let r = B && U.size > 0 ? k.Z.getClips().filter(e => U.has(e.id)) : [h];
     (0, m.jW)(e, async () => {
       let {
         default: e
@@ -136,11 +136,11 @@ let H = function(e) {
     }, {
       onClose: el
     })
-  }, [v, B, U, O, $, el]), ei = r.useCallback(e => {
+  }, [h, B, U, O, $, el]), ei = r.useCallback(e => {
     O || (e.preventDefault(), e.stopPropagation(), er(e))
   }, [O, er]), ea = r.useCallback(e => {
-    O || (e.shiftKey ? (e.preventDefault(), z(v.id)) : B ? z(v.id) : null != E && E(v), x.default.track(D.rMx.CLIP_GALLERY_CARD_CLICKED))
-  }, [O, B, z, v, E]);
+    O || (e.shiftKey ? (e.preventDefault(), z(h.id)) : B ? z(h.id) : null != E && E(h), x.default.track(D.rMx.CLIP_GALLERY_CARD_CLICKED))
+  }, [O, B, z, h, E]);
   return (0, l.jsx)(y.Gt, {
     value: V,
     children: (0, l.jsxs)(p.kL8, {
@@ -148,42 +148,42 @@ let H = function(e) {
       "aria-label": L.intl.string(true === X ? L.t["HO/oXl"] : L.t.bt75uw),
       onClick: O ? true : ea,
       onContextMenu: ei,
-      className: a()(T.clipItem, {
-        [T.disabled]: O,
-        [T.focused]: G,
-        [T.selected]: q
+      className: a()(H.clipItem, {
+        [H.disabled]: O,
+        [H.focused]: G,
+        [H.selected]: q
       }),
       onBlur: en,
       onFocus: ee,
       onMouseOver: ee,
       onMouseLeave: et,
       children: [(0, l.jsx)(A, {
-        clip: v,
+        clip: h,
         isNew: S,
         videoRef: Y,
         onOpenContextMenu: er,
         actionsDisabled: O
       }), (0, l.jsxs)("div", {
-        className: T.clipMetadata,
+        className: H.clipMetadata,
         children: [(0, l.jsx)(_, {
-          clip: v
+          clip: h
         }), (0, l.jsxs)("div", {
-          className: T.clipTextInfo,
+          className: H.clipTextInfo,
           children: [(0, l.jsx)(R, {
-            clip: v
+            clip: h
           }), (0, l.jsx)(p.Text, {
-            className: T.clipSubtitle,
+            className: H.clipSubtitle,
             color: "text-secondary",
             variant: "text-sm/medium",
             children: Q
           }), (0, l.jsx)(p.Text, {
-            className: T.clipSubtitle,
+            className: H.clipSubtitle,
             color: "text-secondary",
             variant: "text-sm/normal",
             children: J
           })]
         }), (0, l.jsx)("div", {
-          className: T.clipAvatars,
+          className: H.clipAvatars,
           children: (0, l.jsx)(d.Z, {
             maxUsers: 3,
             users: N,
@@ -259,15 +259,15 @@ function A(e) {
     }
   }, [t.length, t.editMetadata]), b = r.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), S.Pr(t)
-  }, [t]), v = r.useCallback(e => {
+  }, [t]), h = r.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), s || a(e)
   }, [s, a]);
   return (0, l.jsxs)("div", {
-    className: T.clipThumbContainer,
+    className: H.clipThumbContainer,
     children: [(0, l.jsx)("div", {
-      className: T.clipThumbOverlay
+      className: H.clipThumbOverlay
     }), !s && (0, l.jsxs)("div", {
-      className: T.clipHoverButtons,
+      className: H.clipHoverButtons,
       children: [(0, l.jsx)(p.hU, {
         onClick: b,
         icon: t.isFavorite ? p.h_8 : p.Pzh,
@@ -275,7 +275,7 @@ function A(e) {
         variant: "overlay-secondary",
         size: "sm"
       }), (0, l.jsx)(p.hU, {
-        onClick: v,
+        onClick: h,
         icon: p.Huf,
         "aria-label": L.intl.string(L.t["UKOtz+"]),
         variant: "overlay-secondary",
@@ -285,15 +285,15 @@ function A(e) {
       clip: t,
       videoRef: i
     }), !o && d > 0 && (0, l.jsx)("div", {
-      className: T.clipProgressBar,
+      className: H.clipProgressBar,
       children: (0, l.jsx)("div", {
-        className: T.clipProgressFill,
+        className: H.clipProgressFill,
         style: {
           width: "".concat(d, "%")
         }
       })
     }), "auto" === t.clipMethod && (0, l.jsxs)("div", {
-      className: T.clipTemporaryBadge,
+      className: H.clipTemporaryBadge,
       children: [t.isTemporary && (0, l.jsx)(p.T39, {
         size: "sm",
         color: "currentColor"
@@ -303,7 +303,7 @@ function A(e) {
         children: L.intl.string(L.t["3Y2DJ8"])
       })]
     }), (n || !o) && (0, l.jsxs)("div", {
-      className: T.clipBadge,
+      className: H.clipBadge,
       children: [!u && n && (0, l.jsx)(p.IGR, {
         text: L.intl.string(L.t.y2b7CA)
       }), !o && (0, l.jsxs)(l.Fragment, {
@@ -329,7 +329,7 @@ function R(e) {
     clip: t
   } = e, n = (0, M.q)(t), r = "" !== n;
   return (0, l.jsx)(p.Text, {
-    className: T.clipTitle,
+    className: H.clipTitle,
     variant: "text-md/normal",
     color: r ? "text-secondary" : "text-default",
     children: r ? n : t.name
@@ -342,25 +342,25 @@ function V(e) {
     videoRef: n
   } = e, r = (0, N.l)(t), i = t.type === I.NJ.SCREENSHOT;
   return t.type === I.NJ.VOICE_CLIP ? (0, l.jsx)(E.Z, {
-    className: T.clipThumb
+    className: H.clipThumb
   }) : i ? (0, l.jsx)("img", {
     alt: "",
     src: t.thumbnail,
-    className: T.clipThumb
-  }) : null != r ? (0, l.jsx)(v.Z, {
+    className: H.clipThumb
+  }) : null != r ? (0, l.jsx)(h.Z, {
     preload: "metadata",
     poster: t.thumbnail,
     muted: true,
     src: r,
     loop: true,
-    className: T.clipThumb,
+    className: H.clipThumb,
     ref: n
   }) : "" !== t.thumbnail ? (0, l.jsx)("img", {
     alt: "",
     src: t.thumbnail,
-    className: T.clipThumb
+    className: H.clipThumb
   }) : (0, l.jsx)("div", {
-    className: a()(T.clipThumb, T.clipThumbEmpty),
+    className: a()(H.clipThumb, H.clipThumbEmpty),
     children: (0, l.jsx)(p.Roe, {
       size: "custom",
       width: 64,
@@ -374,12 +374,12 @@ function _(e) {
     clip: t
   } = e, n = (0, u.e7)([b.Z], () => null != t.applicationId ? b.Z.getApplication(t.applicationId) : null), r = null == n ? true : n.getIconURL(32);
   return (0, l.jsx)("div", {
-    className: T.clipIcon,
+    className: H.clipIcon,
     "aria-hidden": "true",
     children: null != r ? (0, l.jsx)("img", {
       src: r,
       alt: "",
-      className: T.clipIconImage
+      className: H.clipIconImage
     }) : t.type === I.NJ.VOICE_CLIP ? (0, l.jsx)(p.gj8, {
       size: "sm",
       color: "currentColor"

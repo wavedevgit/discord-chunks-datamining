@@ -94,7 +94,7 @@ let O = "default",
       yellDetector: true,
       whisperTranscription: true
     },
-    autoClipPhrases: ["clip", "flip that", "flip it"]
+    autoClipPhrases: ["clip that", "clip it", "clip clip"]
   },
   M = {
     clipsSettings: L,

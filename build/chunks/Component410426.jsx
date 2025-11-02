@@ -1,7 +1,7 @@
 /** Chunk was on 61342 **/
 /** chunk id: 410426, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,20 +18,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk641719 = require("./641719.js");
 
-function v(e) {
+function h(e) {
   let {
     isEmptyBecauseQuery: t
-  } = e, n = (0, s.e7)([u.ZP], () => u.ZP.getKeybindForAction(m.kg4.SAVE_CLIP)), i = (0, s.e7)([p.Z], () => p.Z.getSettings().clipsEnabled), v = t ? b.noSearchResultsImage : b.noClipsImage, h = r.useCallback(() => {
+  } = e, n = (0, s.e7)([u.ZP], () => u.ZP.getKeybindForAction(m.kg4.SAVE_CLIP)), i = (0, s.e7)([p.Z], () => p.Z.getSettings().clipsEnabled), h = t ? b.noSearchResultsImage : b.noClipsImage, v = r.useCallback(() => {
     (0, o.Z)(f.Z.CLIPS, {
       stackingBehavior: "stack"
     })
   }, []), g = (() => {
     if (!i) return y.intl.format(y.t["3iveao"], {
-      onClick: h
+      onClick: v
     });
     if (t) return y.intl.string(y.t["xrEs6/"]);
     if (null == n) return y.intl.format(y.t.jpKk7e, {
-      onClick: h
+      onClick: v
     });
     {
       let e = d.BB(n.shortcut, true);
@@ -52,7 +52,7 @@ function v(e) {
     children: (0, l.jsxs)("div", {
       className: b.content,
       children: [(0, l.jsx)("div", {
-        className: v
+        className: h
       }), (0, l.jsx)(c.Text, {
         variant: "text-md/medium",
         className: a()(b.noClipsText, {

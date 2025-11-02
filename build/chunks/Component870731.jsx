@@ -27,8 +27,8 @@ let O = Chunk647438.memo(function(e) {
     } = e, {
       query: i,
       setQuery: a
-    } = (0, b.f)(), d = (0, s.e7)([f.ZP], () => f.ZP.getKeybindForAction(v.kg4.SAVE_CLIP)), p = (0, b.f)(e => e.selectedUserIds.size > 0 || null != e.selectedActivity || null != e.selectedGuildId || null != e.selectedYear), O = r.useCallback(() => {
-      (0, m.Z)(h.Z.CLIPS, {
+    } = (0, b.f)(), d = (0, s.e7)([f.ZP], () => f.ZP.getKeybindForAction(h.kg4.SAVE_CLIP)), p = (0, b.f)(e => e.selectedUserIds.size > 0 || null != e.selectedActivity || null != e.selectedGuildId || null != e.selectedYear), O = r.useCallback(() => {
+      (0, m.Z)(v.Z.CLIPS, {
         stackingBehavior: "stack"
       })
     }, []), x = r.useCallback(e => {
@@ -156,7 +156,7 @@ function C(e) {
     filteredClips: n,
     favoriteClips: i,
     allClips: a
-  } = e, s = (0, b.f)(e => e.selectedGameId), c = (0, b.f)(e => e.setSelectedGameId), u = r.useMemo(() => t.map(e => e.applicationId), [t]), m = (0, d.Z)(u), f = r.useCallback(() => c(null), [c]), y = r.useCallback(() => c("favorites"), [c]), v = r.useMemo(() => new Map(m.map(e => [null == e ? true : e.id, e])), [m]);
+  } = e, s = (0, b.f)(e => e.selectedGameId), c = (0, b.f)(e => e.setSelectedGameId), u = r.useMemo(() => t.map(e => e.applicationId), [t]), m = (0, d.Z)(u), f = r.useCallback(() => c(null), [c]), y = r.useCallback(() => c("favorites"), [c]), h = r.useMemo(() => new Map(m.map(e => [null == e ? true : e.id, e])), [m]);
   return (0, l.jsxs)("div", {
     className: j.sidebar,
     children: [(0, l.jsx)(O, {
@@ -201,7 +201,7 @@ function C(e) {
               name: t,
               count: n,
               icon: (0, l.jsx)(p.Z, {
-                game: v.get(r),
+                game: h.get(r),
                 size: p.A.XSMALL
               }),
               isSelected: s === r,

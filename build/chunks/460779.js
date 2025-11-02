@@ -2,7 +2,7 @@
 /** chunk id: 460779, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 }), require("./388685.js");
 var Chunk46973 = require("./46973.js"),
   Chunk147913 = require("./147913.js"),
@@ -22,7 +22,9 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class _ extends Chunk147913.Z {
+let _ = 1e4,
+  p = 1e4;
+class h extends Chunk147913.Z {
   handleClipsSignalCreated(e, t) {
     this.isSignalEnabled(e.type) && this.process(e, t)
   }
@@ -85,30 +87,36 @@ class _ extends Chunk147913.Z {
         signal: e,
         timestamp: t
       }), e.type) {
-      case u.Bs.GAME_EVENT:
-        1 === e.importance && this.scheduleClip(e, .4 * l.Z.getSettings().clipsLength);
-        break;
       case u.Bs.MANUAL:
-      case u.Bs.PHRASE:
       case u.Bs.DISTRIBUTED:
+        this.scheduleClip(e);
+        break;
+      case u.Bs.GAME_EVENT:
+        1 === e.importance && this.scheduleClip(e, _);
+        break;
+      case u.Bs.PHRASE:
+        var n;
+        if ((null == (n = this.scheduledClipSignal) ? true : n.type) === u.Bs.GAME_EVENT || performance.now() - this.lastClipTimestamp < p) return;
         this.scheduleClip(e)
     }
   }
   read() {
     return {
-      timeline: this.timeline.read()
+      timeline: this.timeline.read(),
+      scheduledClipSignal: this.scheduledClipSignal,
+      phraseCooldown: Math.max(0, p - (performance.now() - this.lastClipTimestamp))
     }
   }
   clear() {
-    this.unscheduleClip(), this.timeline.clear()
+    this.unscheduleClip(), this.lastClipTimestamp = 0, this.timeline.clear()
   }
   unscheduleClip() {
-    null != this.scheduledClipTimeout && (clearTimeout(this.scheduledClipTimeout), this.scheduledClipTimeout = null)
+    null != this.scheduledClipTimeout && (clearTimeout(this.scheduledClipTimeout), this.scheduledClipTimeout = null), this.scheduledClipSignal = null
   }
   scheduleClip(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
-    this.unscheduleClip(), this.scheduledClipTimeout = setTimeout(() => {
-      (0, d.C1)(true, e.type === u.Bs.MANUAL ? "manual" : "auto", [...this.timeline.read()], {
+    this.unscheduleClip(), this.scheduledClipSignal = e, this.lastClipTimestamp = performance.now() + t, this.scheduledClipTimeout = setTimeout(() => {
+      this.scheduledClipSignal = null, (0, d.C1)(true, e.type === u.Bs.MANUAL ? "manual" : "auto", [...this.timeline.read()], {
         signal: e,
         timestamp: Date.now(),
         emotionHistory: []
@@ -119,7 +127,7 @@ class _ extends Chunk147913.Z {
     this.timeline.updateLength(Chunk435064.Z.getSettings().clipsLength)
   }
   constructor() {
-    super(), f(this, "timeline", true), f(this, "scheduledClipTimeout", null), f(this, "actions", {
+    super(), f(this, "timeline", true), f(this, "scheduledClipTimeout", null), f(this, "scheduledClipSignal", null), f(this, "lastClipTimestamp", 0), f(this, "actions", {
       CLIPS_SIGNAL_CREATED: e => this.handleClipsSignalCreated(e.signal, e.timestamp),
       SPEAKING: e => this.handleSpeaking(e),
       GUILD_SOUNDBOARD_SOUND_PLAY_START: e => this.handleSoundboardPlayStart(e),
@@ -129,4 +137,4 @@ class _ extends Chunk147913.Z {
     }), this.timeline = new Chunk519159.m(Chunk435064.Z.getSettings().clipsLength)
   }
 }
-let p = new _
+let m = new h
