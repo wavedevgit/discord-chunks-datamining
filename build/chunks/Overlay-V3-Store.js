@@ -79,12 +79,11 @@ let N = new Chunk710845.Z("OverlayV3Store"),
   Z = (0, Chunk575140.r4)();
 
 function F() {
-  Z = (0, Chunk575140.r4)(), ev.emitChange()
+  Z = (0, Chunk575140.r4)()
 }
 
 function V(e, t) {
-  try {
-    if (null == w || (null != t && (G[e] = t), R.has(e))) return;
+  if (null != w && (null != t && (G[e] = t), !R.has(e))) try {
     w.trackGame(e), R.add(e), (0, _.PY)(e, "maybeTrackGame", {
       newOverlayMethod: null != t ? f.gl[t] : null
     }), o.Z.updateOverlayState(e, f.mM.WAITING_FOR_POPOUT_OPEN)
@@ -96,6 +95,7 @@ function V(e, t) {
 }
 
 function H(e) {
+  if (!R.has(e)) return;
   let t = G[e],
     n = U[e];
   (0, _.PY)(e, "removeTrackedGame", {
