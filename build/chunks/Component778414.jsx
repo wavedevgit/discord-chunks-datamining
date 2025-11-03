@@ -86,7 +86,7 @@ function M(e) {
   }, n)) : null
 }
 
-function U() {
+function F() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk830202.ukTeenDisclaimer,
     children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
@@ -100,7 +100,7 @@ function U() {
   })
 }
 
-function F(e) {
+function U(e) {
   let {
     user: t
   } = e, {
@@ -150,7 +150,7 @@ function W(e) {
     null !== D.current && C()
   }, [C]);
   let N = () => (0, r.jsxs)(r.Fragment, {
-    children: [c && s && (0, r.jsx)(U, {}), c && (0, r.jsx)(F, {
+    children: [c && s && (0, r.jsx)(F, {}), c && (0, r.jsx)(U, {
       user: t
     }), l.map((e, i) => (0, r.jsx)(M, {
       widget: e,
