@@ -28,7 +28,7 @@ function N(e) {
     quest: t,
     sourceQuestContent: n,
     onLoadComplete: N
-  } = e, y = (0, o.ZP)(), b = (0, s.wjy)(y) ? _.BR.DARK : _.BR.LIGHT, w = (0, m.ly)(t), T = (0, d.aM)(), P = a.useMemo(() => {
+  } = e, y = (0, o.ZP)(), b = (0, s.wjy)(y) ? _.BR.DARK : _.BR.LIGHT, w = (0, m.ly)(t), T = (0, c.aM)(), P = a.useMemo(() => {
     var e;
     let n = null == (e = t.config.ctaConfig) ? true : e.subtitle;
     if (null != n) return n;
@@ -102,7 +102,7 @@ function N(e) {
         onClick: () => {
           (0, u.nc)(t, {
             content: p.jn.REWARD_MODAL,
-            ctaContent: c.jZ.OPEN_GAME_LINK,
+            ctaContent: d.jZ.OPEN_GAME_LINK,
             impressionId: T,
             sourceQuestContent: n
           })

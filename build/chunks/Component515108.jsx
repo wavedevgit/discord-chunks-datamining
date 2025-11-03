@@ -20,10 +20,10 @@ function m(e) {
   } = e;
   return (0, r.jsx)(i.Modal, {
     size: "md",
-    title: d.intl.string(d.t.Hd3D8W),
+    title: c.intl.string(c.t.Hd3D8W),
     actions: [{
       variant: "primary",
-      text: d.intl.string(d.t.cpT0Cq),
+      text: c.intl.string(c.t.cpT0Cq),
       onClick: t
     }],
     onClose: t,
@@ -31,7 +31,7 @@ function m(e) {
     children: (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "text-secondary",
-      children: d.intl.string(d.t.Ij97SL)
+      children: c.intl.string(c.t.Ij97SL)
     })
   })
 }
@@ -41,14 +41,14 @@ function p(e) {
     quest: t,
     sourceQuestContent: n,
     transitionState: i,
-    onClose: d,
+    onClose: c,
     rewardContent: p,
     isRewardContentLoading: f,
     rewardContentHasError: x,
     location: C
   } = e, g = o.jn.REWARD_MODAL, [h, _] = a.useState(true);
   if (x) return (0, r.jsx)(m, {
-    onClose: d,
+    onClose: c,
     transitionState: i
   });
   let j = f || h;
@@ -74,7 +74,7 @@ function p(e) {
           children: [(0, r.jsx)(s.olH, {
             "data-migration-pending": true,
             className: u.closeButton,
-            onClick: d,
+            onClick: c,
             withCircleBackground: true
           }), (0, r.jsxs)("div", {
             className: u.modalContent,
@@ -83,7 +83,7 @@ function p(e) {
               children: p
             }), (0, r.jsx)("div", {
               className: u.rightPanel,
-              children: (0, r.jsx)(c.Z, {
+              children: (0, r.jsx)(d.Z, {
                 quest: t,
                 sourceQuestContent: n,
                 onLoadComplete: () => _(false),

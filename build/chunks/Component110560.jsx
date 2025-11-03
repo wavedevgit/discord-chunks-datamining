@@ -110,7 +110,7 @@ function B(e) {
         default: e
       } = await Promise.all([n.e("64838"), n.e("52407"), n.e("34297"), n.e("62006")]).then(n.bind(n, 188209));
       return n => (0, r.jsx)(e, k(M({}, n), {
-        quest: t,
+        initialQuest: t,
         preview: o,
         sourceQuestContent: c,
         questContentPosition: a
@@ -150,7 +150,7 @@ function F(e, t, i) {
         default: a
       } = await n.e("76418").then(n.bind(n, 34251));
       return n => (0, r.jsx)(a, k(M({}, n), {
-        quest: e,
+        initialQuest: e,
         location: t,
         sourceQuestContent: i
       }))
@@ -173,7 +173,7 @@ function V(e, t, i) {
         default: a
       } = await n.e("74560").then(n.bind(n, 246855));
       return n => (0, r.jsx)(a, k(M({}, n), {
-        quest: e,
+        initialQuest: e,
         sourceQuestContent: i,
         location: t
       }))
@@ -195,7 +195,7 @@ function H(e, t, i, a) {
         default: o
       } = await n.e("41023").then(n.bind(n, 305815));
       return n => (0, r.jsx)(o, k(M({}, n), {
-        quest: e,
+        initialQuest: e,
         sourceQuestContent: i,
         location: t,
         preview: a
