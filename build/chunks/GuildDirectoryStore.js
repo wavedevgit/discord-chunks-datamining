@@ -151,16 +151,16 @@ let y = new _(Chunk570140.Z, {
     h[b] = d(c({}, h[b]), {
       [y.guildId]: c({}, x, y)
     });
-    let O = null != (i = null == x ? true : x.primaryCategoryId) ? i : s.AR.UNCATEGORIZED,
+    let v = null != (i = null == x ? true : x.primaryCategoryId) ? i : s.AR.UNCATEGORIZED,
       j = null != (l = y.primaryCategoryId) ? l : s.AR.UNCATEGORIZED,
-      v = Object.assign({}, null == (n = g[b]) ? true : n[O]);
-    null != x && O !== j && delete v[y.guildId], g[b] = d(c({}, g[b]), {
-      [O]: v,
+      O = Object.assign({}, null == (n = g[b]) ? true : n[v]);
+    null != x && v !== j && delete O[y.guildId], g[b] = d(c({}, g[b]), {
+      [v]: O,
       [j]: d(c({}, null == (r = g[b]) ? true : r[j]), {
         [y.guildId]: c({}, x, y)
       })
-    }), j !== O && null != m[b] && (m[b] = d(c({}, m[b]), {
-      [O]: (null == (o = m[b]) ? true : o[O]) > 0 ? (null == (u = m[b]) ? true : u[O]) - 1 : 0,
+    }), j !== v && null != m[b] && (m[b] = d(c({}, m[b]), {
+      [v]: (null == (o = m[b]) ? true : o[v]) > 0 ? (null == (u = m[b]) ? true : u[v]) - 1 : 0,
       [j]: (null != (f = null == (p = m[b]) ? true : p[j]) ? f : 0) + 1
     }))
   },

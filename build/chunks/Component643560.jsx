@@ -63,7 +63,7 @@ function f(e) {
   i.useEffect(() => {
     _ || y || null != x || (0, a.Zy)()
   });
-  let O = () => {
+  let v = () => {
     c.kx(t.channelId, t.guildId)
   };
 
@@ -97,7 +97,7 @@ function f(e) {
             header: u.intl.string(u.t.KUxYWH),
             confirmText: u.intl.string(u.t.N86XcP),
             cancelText: u.intl.string(u.t["ETE/oC"]),
-            onConfirm: O
+            onConfirm: v
           }, e), {
             children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",

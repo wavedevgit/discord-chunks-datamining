@@ -119,11 +119,11 @@ function eo(e) {
   let {
     channel: t,
     onSelect: n
-  } = e, d = (0, O.bp)(), {
+  } = e, d = (0, v.bp)(), {
     canManageGuildEvent: u
   } = (0, j.XJ)(t), p = (0, l.e7)([z.Z], () => z.Z.getStageInstanceByChannel(t.id), [t.id]), h = (0, l.e7)([_.ZP], () => _.ZP.getGuildScheduledEvent(null == p ? true : p.guild_scheduled_event_id)), {
     suppress: m
-  } = (0, S.Z)(t), b = D.default.getId(), [y] = (0, et.Z)(t), x = V.ZP.isModerator(b, t.id), v = (0, F.B)(t.id), C = u(h), {
+  } = (0, S.Z)(t), b = D.default.getId(), [y] = (0, et.Z)(t), x = V.ZP.isModerator(b, t.id), O = (0, F.B)(t.id), C = u(h), {
     parentAnalyticsLocation: I
   } = (0, c.ZP)(), E = i.useRef(null), Z = () => (function(e) {
     let {
@@ -179,7 +179,7 @@ function eo(e) {
         popoutOpen: i
       })
     }
-  }) : m && !v || y ? (0, r.jsx)(R.Z, {
+  }) : m && !O || y ? (0, r.jsx)(R.Z, {
     label: er.intl.string(er.t.SMKyih),
     onClick: Z
   }) : (0, r.jsx)(R.Z, {
@@ -240,9 +240,9 @@ let eu = Chunk647438.memo(function(e) {
     selfMute: o,
     mute: f
   } = (0, S.Z)(t), _ = (0, F.B)(t.id), y = (0, J.Z)(t.id), x = (0, l.e7)([m.default], () => null != m.default.getAwaitingRemoteSessionInfo()), {
-    cameraUnavailable: O,
+    cameraUnavailable: v,
     enabled: j
-  } = (0, v.Z)(), N = (0, I.Z)(t), {
+  } = (0, O.Z)(), N = (0, I.Z)(t), {
     limit: R,
     reachedLimit: D
   } = (0, C.Z)(t), M = (0, l.e7)([U.default], () => U.default.getCurrentUser()), G = (0, l.e7)([L.Z], () => (0, b.Z)(L.Z)), H = (0, l.e7)([k.Z], () => k.Z.getVoiceChannelId() === t.id, [t.id]), B = (0, l.e7)([d.Z], () => d.Z.getStreamParticipants(t.id)[0], [t.id]), V = (0, W.PK)(t.id), z = R > 0, Y = D && !V || null != B && B.user.id !== (null == M ? true : M.id), q = (0, g.u)("AudioDeviceMenu", n, {
@@ -280,7 +280,7 @@ let eu = Chunk647438.memo(function(e) {
         centerButton: true,
         hasPermission: N,
         enabled: j,
-        cameraUnavailable: O,
+        cameraUnavailable: v,
         onChange: E.r,
         onCameraUnavailable: P.Z,
         channelLimitReached: D,

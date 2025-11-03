@@ -107,9 +107,9 @@ function Y(e) {
   }
   let eb = en.get(null != (Y = null == X ? true : X.id) ? Y : ""),
     e_ = (0, s.e7)([j.Z], () => j.Z.getChannelId()),
-    ey = (0, s.Wu)([O.ZP], () => {
+    ey = (0, s.Wu)([v.ZP], () => {
       var e;
-      return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => O.ZP.getMember(ee.guild_id, e))
+      return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => v.ZP.getMember(ee.guild_id, e))
     }, [eb, ee]),
     ex = i.useMemo(() => {
       let e = new Map;
@@ -117,7 +117,7 @@ function Y(e) {
         null != t && true !== t && e.set(t.userId, t)
       }), e
     }, [ey]),
-    eO = function(e, t, n) {
+    ev = function(e, t, n) {
       let r = (0, p.Z)(e),
         l = e !== r,
         [a, s] = i.useState(false);
@@ -152,12 +152,12 @@ function Y(e) {
     }(ea, es, q),
     ej = (0, k.y)(),
     {
-      data: ev
+      data: eO
     } = (0, R.K)(Z.B);
   if (null == X) return null;
-  let eC = null == ev ? true : ev.isFortniteActivity(X.id),
+  let eC = null == eO ? true : eO.isFortniteActivity(X.id),
     eI = [];
-  null != eb && (eI = Array.from(eb.embeddedActivity.userIds).map(e => v.default.getUser(e)).filter(e => null != e && true !== e));
+  null != eb && (eI = Array.from(eb.embeddedActivity.userIds).map(e => O.default.getUser(e)).filter(e => null != e && true !== e));
   let eS = e => {
     var t;
     if (null == e || true === e || e === D.ag) return null;
@@ -179,7 +179,7 @@ function Y(e) {
     children: e => (0, r.jsxs)("div", {
       className: a()(B.wrapper, W[el], e),
       ref: ei,
-      style: eO,
+      style: ev,
       children: [null == Q ? true : Q(), (0, r.jsxs)("div", {
         className: B.activityPanelContainer,
         children: [ea ? null : (0, r.jsx)("div", {

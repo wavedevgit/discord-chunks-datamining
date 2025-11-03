@@ -12,5 +12,6 @@ module.exports = {
   carouselContainer: "carouselContainer__38ccf",
   carousel: "carousel__38ccf",
   modalHeaderButtonsContainer: "modalHeaderButtonsContainer__38ccf",
-  modalHeaderButton: "modalHeaderButton__38ccf"
+  modalHeaderButton: "modalHeaderButton__38ccf",
+  wishlistButton: "wishlistButton__38ccf"
 }

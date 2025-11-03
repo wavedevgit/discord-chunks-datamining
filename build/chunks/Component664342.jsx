@@ -104,13 +104,13 @@ function N(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), x = (0, u.Z)(t), v = (0, g.Z)(t), C = (0, m.Z)(t), I = (0, a.Z)(t), Z = (0, d.Z)(t), P = (0, f.Z)(t.id), T = (0, h.Z)(t), N = (0, o.Z)(t), R = (0, s.Z)(t), w = (0, _.Z)({
+  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), x = (0, u.Z)(t), O = (0, g.Z)(t), C = (0, m.Z)(t), I = (0, a.Z)(t), Z = (0, d.Z)(t), P = (0, f.Z)(t.id), T = (0, h.Z)(t), N = (0, o.Z)(t), R = (0, s.Z)(t), w = (0, _.Z)({
     id: t.id,
     label: E.intl.string(E.t.DQ797g)
   }), A = (0, b.Z)(t), D = (0, p.Z)(t);
 
   function L() {
-    (0, O.Kh)(t.id)
+    (0, v.Kh)(t.id)
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "thread-context",
@@ -124,7 +124,7 @@ function N(e) {
         action: L
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [v, C]
+      children: [O, C]
     }), (0, r.jsxs)(l.kSQ, {
       children: [T, x, P, D]
     }), (0, r.jsxs)(l.kSQ, {
@@ -163,7 +163,7 @@ function R(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [t.isForumPost() ? null : (0, r.jsx)(C.Z, {
       channel: t
-    }), t.isModeratorReportChannel() ? (0, r.jsx)(v.Z, {
+    }), t.isModeratorReportChannel() ? (0, r.jsx)(O.Z, {
       channel: t
     }) : null, (0, r.jsx)(T, {
       channel: t

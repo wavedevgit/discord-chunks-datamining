@@ -192,7 +192,7 @@ function X(e) {
       setTextAreaState: r
     }
   }(t, f), x = (0, k.vH)(t), {
-    isGeneratingAI: O,
+    isGeneratingAI: v,
     enableAIFeatures: j,
     getThreadNameInputAccessory: C
   } = (0, H.U)({
@@ -294,7 +294,7 @@ function X(e) {
           fade: true,
           children: (0, r.jsxs)("div", {
             className: z.scrollerInner,
-            children: [(0, r.jsxs)(v.ZP, {
+            children: [(0, r.jsxs)(O.ZP, {
               channelId: "create-thread-null",
               children: [(0, r.jsx)("div", {
                 className: a()(W.iconWrapper, z.iconWrapper),
@@ -309,7 +309,7 @@ function X(e) {
                   updateThreadSettings: m,
                   error: I,
                   disabled: N,
-                  isGeneratingAI: O,
+                  isGeneratingAI: v,
                   enableAIFeatures: j,
                   getThreadNameInputAccessory: C
                 }), t.type === B.d4z.GUILD_TEXT ? (0, r.jsx)(J, {
@@ -435,7 +435,7 @@ function ee(e) {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(O.Z, {
+    children: [(0, r.jsx)(v.Z, {
       channelId: t.id,
       type: q,
       canAttachFiles: y

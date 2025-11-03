@@ -74,7 +74,7 @@ function I(e) {
             className: j.container,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: v,
+              src: O,
               className: j.preview,
               "aria-hidden": true
             }), (0, r.jsxs)("div", {
@@ -85,10 +85,10 @@ function I(e) {
                   user: t
                 }), (0, r.jsx)(s.Heading, {
                   variant: "heading-lg/bold",
-                  children: O.intl.string(O.t.b33pLD)
+                  children: v.intl.string(v.t.b33pLD)
                 }), (0, r.jsx)(s.Text, {
                   variant: "text-sm/medium",
-                  children: O.intl.format(Z ? O.t["8F+WNz"] : O.t["/cZp5s"], {
+                  children: v.intl.format(Z ? v.t["8F+WNz"] : v.t["/cZp5s"], {
                     username: p.ZP.getName(n.guild_id, n.id, t)
                   })
                 })]

@@ -129,27 +129,27 @@ let k = 16 / 9,
     } = i.useContext(c.Sfi), {
       id: g,
       blocked: b,
-      ignored: O
-    } = t, v = (0, o.Wu)([I.Z], () => I.Z.getAllActiveStreams(), []), {
+      ignored: v
+    } = t, O = (0, o.Wu)([I.Z], () => I.Z.getAllActiveStreams(), []), {
       selectedParticipant: C,
       largeStream: S
     } = (0, o.cj)([m.Z], () => ({
       selectedParticipant: null != l ? m.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && m.Z.getStageStreamSize(l.id)
     })), T = i.useCallback((e, t) => {
-      if (e.type === A.fO.STREAM && 0 === v.filter(t => (0, y.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
+      if (e.type === A.fO.STREAM && 0 === O.filter(t => (0, y.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
         if (!(0, x.p9)(l, P.Z, E.Z, Z.Z, _.default)[0]) return;
         (0, p.rn)((0, y.my)(e.id), {
           forceMultiple: t.shiftKey
         })
       }(null == C ? true : C.id) === e.id ? S ? (d.Z.selectParticipant(l.id, null), d.Z.updateStageStreamSize(l.id, false)) : d.Z.updateStageStreamSize(l.id, true) : (d.Z.updateStageStreamSize(l.id, false), d.Z.selectParticipant(l.id, e.id))
-    }, [v, l, C, S]);
+    }, [O, l, C, S]);
     return (0, r.jsx)(N.Z, {
       participant: n,
       aspectRatio: k,
       fit: n.type === A.fO.USER ? j.L.COVER : true,
       blocked: b,
-      ignored: O,
+      ignored: v,
       channel: l,
       className: D.tile,
       inCall: true,
@@ -170,7 +170,7 @@ let k = 16 / 9,
       popoutType: d
     } = e, {
       newestAnalyticsLocation: p
-    } = (0, f.ZP)(h.Z.STAGE_TILE), _ = (0, O.bp)(), y = l.getGuildId(), x = S.default.getId();
+    } = (0, f.ZP)(h.Z.STAGE_TILE), _ = (0, v.bp)(), y = l.getGuildId(), x = S.default.getId();
     a()(null != y, "Channel cannot be guildless");
     let {
       user: j
@@ -211,7 +211,7 @@ let k = 16 / 9,
             return;
           case A.fO.USER:
           default:
-            if (E(A.TH.USER), i) return (0, v.D)(t, j, l, {
+            if (E(A.TH.USER), i) return (0, O.D)(t, j, l, {
               context: _
             }, (e, t) => (0, b.o)({
               menuName: e,

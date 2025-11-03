@@ -170,10 +170,10 @@ function D(e) {
   })), g = n.getRecipientId(), {
     notFriend: _,
     isBlocked: y
-  } = (0, l.cj)([v.Z], () => ({
-    notFriend: n.type === Z.d4z.DM && null != g && !v.Z.isFriend(g),
-    isBlocked: n.type === Z.d4z.DM && null != g && v.Z.isBlocked(g)
-  })), j = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, p.Z)(n.id), T = (0, l.e7)([O.Z], () => O.Z.hasLayers());
+  } = (0, l.cj)([O.Z], () => ({
+    notFriend: n.type === Z.d4z.DM && null != g && !O.Z.isFriend(g),
+    isBlocked: n.type === Z.d4z.DM && null != g && O.Z.isBlocked(g)
+  })), j = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, p.Z)(n.id), T = (0, l.e7)([v.Z], () => v.Z.hasLayers());
   return (P && !T && E.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == j ? true : j.bot)) ? null : (0, r.jsx)(A, {
     channel: n,
     mode: s,

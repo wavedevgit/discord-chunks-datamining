@@ -142,9 +142,9 @@ function H(e) {
     totalResults: _,
     isSearching: y,
     isIndexing: x,
-    hasError: O
+    hasError: v
   } = l;
-  if (O) return (0, r.jsxs)(U, {
+  if (v) return (0, r.jsxs)(U, {
     children: [(0, r.jsx)("div", {
       className: M.errorImage
     }), (0, r.jsx)("div", {
@@ -180,7 +180,7 @@ function H(e) {
   });
   let {
     showNoResultsAlt: j
-  } = l, v = j ? L.intl.string(L.t["VrK/2R"]) : L.intl.string(L.t.V6nAfF);
+  } = l, O = j ? L.intl.string(L.t["VrK/2R"]) : L.intl.string(L.t.V6nAfF);
   return (0, r.jsxs)(U, {
     children: [(0, r.jsx)("div", {
       className: a()(M.noResultsImage, {
@@ -190,7 +190,7 @@ function H(e) {
       className: a()(M.emptyResultsText, M.noResults, {
         [M.alt]: j
       }),
-      children: v
+      children: O
     })]
   })
 }
@@ -206,7 +206,7 @@ let F = [],
       ignoreCount: f,
       isFeedbackVisible: b,
       dismissFeedbackEntrypoint: x,
-      onSearchModeChange: O,
+      onSearchModeChange: v,
       onPageChange: C,
       searchMode: I,
       onBlockedResultsClick: E,
@@ -264,8 +264,8 @@ let F = [],
           searchContext: t,
           searchRequestAnalyticsId: a,
           mode: e
-        }), O(e))
-      }, [O, n.isSearching, t, I, a]),
+        }), v(e))
+      }, [v, n.isSearching, t, I, a]),
       K = i.useCallback((e, r) => {
         let i = g.Z.getChannel(e.channel_id),
           l = null != i ? i.getGuildId() : null,
@@ -325,7 +325,7 @@ let F = [],
     return (0, r.jsxs)("section", {
       className: M.searchResultsWrap,
       "aria-label": L.intl.string(L.t["zkoeq/"]),
-      children: [(0, r.jsx)(v.Z, {
+      children: [(0, r.jsx)(O.Z, {
         searchContext: t,
         searchMode: I,
         onSearchModeChange: q,
@@ -387,7 +387,7 @@ function V(e) {
     }), {
       enabled: l,
       force: a
-    } = (0, O.f)({
+    } = (0, v.f)({
       location: "SearchResults"
     }), s = e.type === A.aib.DMS || e.type === A.aib.CHANNEL, o = r && s || l;
     return i.useEffect(() => {
@@ -431,7 +431,7 @@ function V(e) {
       searchQueryString: n,
       offset: 0
     })
-  }, [c.isSearching, t]), v = i.useCallback(e => {
+  }, [c.isSearching, t]), O = i.useCallback(e => {
     if (c.isSearching) return;
     let n = S.Z.getSearchInputText(t);
     null != n && S.Z.fetchMessages({
@@ -454,7 +454,7 @@ function V(e) {
       renderEmbeds: f.NA.useSetting(),
       isFeedbackVisible: l,
       dismissFeedbackEntrypoint: a,
-      onPageChange: v,
+      onPageChange: O,
       onSearchModeChange: j,
       searchMode: y,
       onBlockedResultsClick: Z,

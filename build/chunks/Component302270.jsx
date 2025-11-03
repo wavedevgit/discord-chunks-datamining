@@ -56,7 +56,7 @@ function M(e) {
     hasParticipantsPanel: x
   } = (0, f.Z)({
     location: "StageChannelCallHeader"
-  }), v = x && m;
+  }), O = x && m;
   return (0, r.jsxs)(p.Gt, {
     value: l,
     children: [(0, r.jsx)(b.Z, {
@@ -79,9 +79,9 @@ function M(e) {
       }
     }, "participants-list-button"), !c && (0, r.jsx)("div", {
       className: a()(L.button, {
-        [L.sidebarOpen]: v || i
+        [L.sidebarOpen]: O || i
       }),
-      children: (0, r.jsx)(O.T, {
+      children: (0, r.jsx)(v.T, {
         channelId: t.id,
         showRequestToSpeakSidebar: i,
         toggleRequestToSpeakSidebar: n,
@@ -97,7 +97,7 @@ function k(e) {
     channel: n,
     toggleRequestToSpeakSidebar: l,
     showRequestToSpeakSidebar: u
-  } = e, p = (0, m.ZP)(n), h = (0, s.e7)([T.Z], () => T.Z.getStageInstanceByChannel(n.id)), f = (0, S.Io)(n.id), g = (0, S.Rk)(n.id, E.pV.AUDIENCE), b = (0, s.e7)([v.Z], () => v.Z.getGuild(n.guild_id), [n.guild_id]), O = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, j = null != b && b.features.has(w.GuildFeatures.COMMUNITY) ? O < w.TU7 : (null == b ? true : b.premiumTier) !== w.Eu4.TIER_3 && O <= w.eez, Z = (0, R.Z)(n), N = (0, s.e7)([C.Z], () => C.Z.can(P.yP, n)), k = () => {
+  } = e, p = (0, m.ZP)(n), h = (0, s.e7)([T.Z], () => T.Z.getStageInstanceByChannel(n.id)), f = (0, S.Io)(n.id), g = (0, S.Rk)(n.id, E.pV.AUDIENCE), b = (0, s.e7)([O.Z], () => O.Z.getGuild(n.guild_id), [n.guild_id]), v = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, j = null != b && b.features.has(w.GuildFeatures.COMMUNITY) ? v < w.TU7 : (null == b ? true : b.premiumTier) !== w.Eu4.TIER_3 && v <= w.eez, Z = (0, R.Z)(n), N = (0, s.e7)([C.Z], () => C.Z.can(P.yP, n)), k = () => {
     d.Z.updateStageVideoLimitBoostUpsellDismissed(n.id, true), I.default.track(w.rMx.BOOSTING_UPSELL_CLICKED, {
       guild_id: n.guild_id,
       type: A.cd.VIDEO_STAGE_LIMIT,

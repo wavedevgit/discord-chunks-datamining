@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk987209 = require("./987209.jsx"),
@@ -25,42 +25,42 @@ function x(e) {
   let {
     handleClose: n
   } = e, {
-    skusById: a,
+    skusById: l,
     selectedSkuId: x,
     application: j
   } = (0, d.JL)(), {
     isGift: C,
     giftRecipient: y
   } = (0, c.wD)();
-  l()(null != x, "Expected selectedSkuId"), l()(null != j, "Expected application");
-  let _ = a[x];
-  return (l()(null != _, "Expected sku"), r.useEffect(() => {
-    C || ((0, p.U)(), n(), (0, m.I)({
-      sku: _,
+  a()(null != x, "Expected selectedSkuId"), a()(null != j, "Expected application");
+  let P = l[x];
+  return (a()(null != P, "Expected sku"), r.useEffect(() => {
+    C || ((0, m.U)(), n(), (0, p.I)({
+      sku: P,
       application: j
     }))
-  }, [C, _, j, n]), C) ? (0, i.jsxs)(u.C3, {
+  }, [C, P, j, n]), C) ? (0, i.jsxs)(u.C3, {
     children: [(0, i.jsx)(g.Z, {}), (0, i.jsx)(f.Z, {}), (0, i.jsxs)("div", {
       className: h.confirmation,
-      children: [(0, i.jsx)(b.A, {
-        sku: _,
+      children: [(0, i.jsx)(v.A, {
+        sku: P,
         shape: "square",
         containerClassName: h.skuImage
-      }), (0, i.jsx)(o.Heading, {
+      }), (0, i.jsx)(s.Heading, {
         variant: "heading-xxl/bold",
         className: h.confirmationHeader,
-        children: v.intl.string(v.t["5glWta"])
-      }), (0, i.jsx)(o.Text, {
+        children: b.intl.string(b.t["5glWta"])
+      }), (0, i.jsx)(s.Text, {
         variant: "text-md/normal",
-        children: v.intl.formatToPlainString(v.t["2VjPTw"], {
-          itemName: _.name,
+        children: b.intl.formatToPlainString(b.t["2VjPTw"], {
+          itemName: P.name,
           giftRecipient: null != (t = null == y ? true : y.username) ? t : "your recipient"
         })
       }), (0, i.jsx)("div", {
         className: h.divider
-      }), (0, i.jsx)(s.zxk, {
+      }), (0, i.jsx)(o.zxk, {
         onClick: n,
-        text: v.intl.string(v.t.cpT0Cq),
+        text: b.intl.string(b.t.cpT0Cq),
         fullWidth: true
       })]
     })]

@@ -128,11 +128,11 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       status: _,
       channel: y,
       guildId: x,
-      isTyping: O,
+      isTyping: v,
       isMobileOnline: j,
-      premiumSince: v,
+      premiumSince: O,
       nameplate: C
-    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [E, Z] = i.useState(false), T = null != v ? new Date(v) : null, N = i.useCallback(e => {
+    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [E, Z] = i.useState(false), T = null != O ? new Date(O) : null, N = i.useCallback(e => {
       (0, f.jW)(e, async () => {
         let {
           default: e
@@ -198,7 +198,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           colorString: t,
           colorStrings: l,
           colorRoleName: a,
-          isTyping: O,
+          isTyping: v,
           channel: y,
           guildId: x,
           isMobile: j,
@@ -383,7 +383,7 @@ class el extends Chunk647438.Component {
         groups: n,
         channel: l
       } = this.props, a = n[t];
-      if ((0, v.R)(a)) return (0, i.createElement)(v.Z, X(Q({}, a), {
+      if ((0, O.R)(a)) return (0, i.createElement)(O.Z, X(Q({}, a), {
         key: "section-".concat(t)
       }));
       if (0 === t) {
@@ -499,7 +499,7 @@ class el extends Chunk647438.Component {
       this.props.updateMaxContentFeedRowSeen(r)
     }, 50)), K(this, "getContentFeedGroup", () => {
       let e = this.props.groups[S.T];
-      if ((0, v.R)(e)) return e
+      if ((0, O.R)(e)) return e
     }), K(this, "hasContentFeed", () => null != this.getContentFeedGroup()), K(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
         {
@@ -570,7 +570,7 @@ function ea(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, O.ZP)(y.Z.MEMBER_LIST), s = (0, p.e7)([_.Z], () => _.Z.keyboardModeEnabled), o = (0, p.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, v.ZP)(y.Z.MEMBER_LIST), s = (0, p.e7)([_.Z], () => _.Z.keyboardModeEnabled), o = (0, p.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
     rows: u,
     groups: f,
     version: g,
@@ -597,7 +597,7 @@ function ea(e) {
         })
       }
     })
-  }, [42]), v = i.useCallback(() => new Promise(e => {
+  }, [42]), O = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToTop({
@@ -615,10 +615,10 @@ function ea(e) {
     id: "members-".concat(t.id),
     setFocus: j,
     isEnabled: s,
-    scrollToStart: v,
+    scrollToStart: O,
     scrollToEnd: C
   });
-  return (0, r.jsx)(O.Gt, {
+  return (0, r.jsx)(v.Gt, {
     value: l,
     children: (0, r.jsx)("div", {
       className: a()(q.container, n),

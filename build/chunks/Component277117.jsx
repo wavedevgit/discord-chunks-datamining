@@ -79,19 +79,19 @@ function w(e) {
         })]
       })
     }), M === P.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(O.Z, {
+      children: (0, r.jsx)(v.Z, {
         user: t,
         channelId: A.id,
         applicationId: k
       })
     }), U.map(e => (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(O.Z, {
+      children: (0, r.jsx)(v.Z, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
         channelId: A.id
       })
-    }, e.applicationId)), (0, r.jsx)(v.Z, {
+    }, e.applicationId)), (0, r.jsx)(O.Z, {
       user: t,
       className: R.card
     }), t.isProvisional && (0, r.jsx)(S.Z.Overlay, {

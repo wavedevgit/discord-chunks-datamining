@@ -62,18 +62,18 @@ function E(e) {
     onStepChange: t,
     onBackClick: n,
     showBackButton: r = false,
-    disabled: l = false,
-    loading: s = false
+    disabled: a = false,
+    loading: o = false
   } = e, {
-    hasPaymentSources: o
-  } = (0, c.JL)(), u = o ? d.h8.REVIEW : d.h8.ADD_PAYMENT_STEPS;
+    hasPaymentSources: s
+  } = (0, c.JL)(), u = s ? d.h8.REVIEW : d.h8.ADD_PAYMENT_STEPS;
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(a.Button, {
+    children: [(0, i.jsx)(l.Button, {
       onClick: () => t(u),
-      disabled: l,
-      loading: s,
+      disabled: a,
+      loading: o,
       text: N.intl.string(N.t.XiOHRX)
-    }), r ? (0, i.jsx)(m.Z, {
+    }), r ? (0, i.jsx)(p.Z, {
       onClick: n
     }) : null]
   })
@@ -85,17 +85,17 @@ function S(e) {
     handleStepChange: n,
     handleClose: d
   } = e, {
-    customGiftMessage: m = "",
-    setCustomGiftMessage: p,
+    customGiftMessage: p = "",
+    setCustomGiftMessage: m,
     giftRecipient: C,
     emojiConfetti: w,
     soundEffect: T,
     setEmojiConfetti: S,
     setSoundEffect: G
-  } = (0, o.wD)(), {
-    selectedSkuId: Z,
+  } = (0, s.wD)(), {
+    selectedSkuId: M,
     application: A
-  } = (0, c.JL)(), B = (0, r.e7)([v.default], () => v.default.getCurrentUser()), D = (0, r.e7)([h.Z], () => null != Z ? h.Z.get(Z) : null, [Z]), L = (0, j.Do)(D), H = (0, j.a7)(D), W = (0, _.K)(D, {
+  } = (0, c.JL)(), B = (0, r.e7)([b.default], () => b.default.getCurrentUser()), D = (0, r.e7)([h.Z], () => null != M ? h.Z.get(M) : null, [M]), L = (0, j.Do)(D), H = (0, j.a7)(D), W = (0, P.K)(D, {
     shouldFetchIfMissing: true
   }), R = async (e, t) => {};
   return (0, i.jsxs)(i.Fragment, {
@@ -104,7 +104,7 @@ function S(e) {
         className: k.stepBody,
         children: [(0, i.jsxs)("div", {
           className: k.bodyColumnLeft,
-          children: [null != L && (0, i.jsx)(P.p, {
+          children: [null != L && (0, i.jsx)(_.p, {
             containerClassName: k.skuCardImage,
             cardImage: L,
             cardBackgroundImage: H,
@@ -112,7 +112,7 @@ function S(e) {
             shape: "square"
           }), (0, i.jsxs)("div", {
             className: k.giftEffectsContainer,
-            children: [(0, i.jsx)(b.Z, {
+            children: [(0, i.jsx)(v.Z, {
               sound: T,
               onSelect: e => {
                 null != G && G(null == e ? true : e)
@@ -124,32 +124,32 @@ function S(e) {
           })]
         }), (0, i.jsxs)("div", {
           className: k.bodyColumnRight,
-          children: [(0, i.jsx)(l.Z, {
-            selectedSkuId: Z,
+          children: [(0, i.jsx)(a.Z, {
+            selectedSkuId: M,
             validateSelectedGift: R,
             searchableSelectWrapperClassName: k.recipientPickerSelectWrapper
           }), (0, i.jsx)(f.Z, {
             sectionTitle: N.intl.string(N.t.B3miE8),
-            onTextChange: e => null == p ? true : p(e),
-            pendingText: m,
-            currentText: m,
+            onTextChange: e => null == m ? true : m(e),
+            pendingText: p,
+            currentText: p,
             disableThemedBackground: true,
             className: k.customGiftMessageWrapper,
             innerClassName: k.customGiftMessage
           }), (() => {
             var e, t, n, r;
             if (null == D) return null;
-            let l = (0, x.T4)(null != (n = null == (e = D.price) ? true : e.amount) ? n : 0, null != (r = null == (t = D.price) ? true : t.currency) ? r : I.pK.USD);
+            let a = (0, x.T4)(null != (n = null == (e = D.price) ? true : e.amount) ? n : 0, null != (r = null == (t = D.price) ? true : t.currency) ? r : I.pK.USD);
             return (0, i.jsxs)("div", {
               className: k.giftPreviewContainer,
-              children: [(0, i.jsx)(a.vwX, {
+              children: [(0, i.jsx)(l.vwX, {
                 className: k.giftPreviewTitle,
                 children: N.intl.string(N.t.PpoJzt)
               }), (0, i.jsxs)("div", {
                 className: k.giftPreviewContent,
                 children: [(0, i.jsx)("div", {
                   className: k.giftPreviewImageContainer,
-                  children: null != D && null != L && (0, i.jsx)(P.p, {
+                  children: null != D && null != L && (0, i.jsx)(_.p, {
                     containerClassName: k.giftPreviewCardContainer,
                     cardImage: L,
                     cardBackgroundImage: H,
@@ -160,17 +160,17 @@ function S(e) {
                   className: k.giftPreviewTextContainer,
                   children: [null != A && (0, i.jsx)(y.e, {
                     application: A
-                  }), (0, i.jsx)(a.Text, {
+                  }), (0, i.jsx)(l.Text, {
                     variant: "text-md/semibold",
                     children: D.name
                   })]
-                }), (0, i.jsx)(a.Text, {
+                }), (0, i.jsx)(l.Text, {
                   variant: "text-md/semibold",
-                  children: l
+                  children: a
                 })]
               })]
             })
-          })(), null != W && null != D && (0, i.jsx)(M, {
+          })(), null != W && null != D && (0, i.jsx)(Z, {
             handleClose: d,
             sku: D,
             guild: W
@@ -178,22 +178,22 @@ function S(e) {
         })]
       })
     }), (0, i.jsx)(u.O3, {
-      children: (0, i.jsx)(a.mzw, {
+      children: (0, i.jsx)(l.mzw, {
         "data-migration-pending": true,
-        justify: s.Z.Justify.BETWEEN,
-        align: s.Z.Align.CENTER,
+        justify: o.Z.Justify.BETWEEN,
+        align: o.Z.Align.CENTER,
         className: k.footer,
         children: (0, i.jsx)(E, {
           onStepChange: n,
           onBackClick: d,
-          disabled: null == C || C.id === (null == B ? true : B.id) || m.length > O.$n
+          disabled: null == C || C.id === (null == B ? true : B.id) || p.length > O.$n
         })
       })
     })]
   })
 }
 
-function M(e) {
+function Z(e) {
   let {
     handleClose: t,
     guild: n,
@@ -201,13 +201,13 @@ function M(e) {
   } = e;
   return (0, i.jsx)("div", {
     className: k.viewItemButton,
-    children: (0, i.jsx)(a.Avr, {
+    children: (0, i.jsx)(l.Avr, {
       text: N.intl.string(N.t.ImioFL),
       onClick: function() {
         var e;
         t();
         let i = null == (e = C.Z.getStorefrontState(n.id)) ? true : e.activePage;
-        window.location.pathname.includes(w.Z5c.CHANNELS_GAME_SHOP(n.id, null != i ? i : 0, r.id)) || ((0, a.pTH)(), (0, p.uL)(w.Z5c.CHANNELS_GAME_SHOP(n.id, null != i ? i : 0, r.id, r.slug)))
+        window.location.pathname.includes(w.Z5c.CHANNELS_GAME_SHOP(n.id, null != i ? i : 0, r.id)) || ((0, l.pTH)(), (0, m.uL)(w.Z5c.CHANNELS_GAME_SHOP(n.id, null != i ? i : 0, r.id, r.slug)))
       },
       textVariant: "text-sm/medium",
       lineClamp: true

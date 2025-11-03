@@ -100,7 +100,7 @@ let Z = Chunk647438.memo(function(e) {
       blocked: c,
       ignored: d,
       rtsState: u
-    } = n, h = u === v.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = u === v.xO.REQUESTED_TO_SPEAK || h;
+    } = n, h = u === O.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = u === O.xO.REQUESTED_TO_SPEAK || h;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: I.avatarContainer,
@@ -138,11 +138,11 @@ let Z = Chunk647438.memo(function(e) {
     } = e, {
       user: s,
       blocked: u
-    } = t, j = l.getGuildId(), v = x.default.getId(), {
+    } = t, j = l.getGuildId(), O = x.default.getId(), {
       newestAnalyticsLocation: Z
-    } = (0, g.ZP)(f.Z.AUDIENCE_TILE), T = (0, _.bp)(), N = (0, d.e7)([O.ZP], () => {
+    } = (0, g.ZP)(f.Z.AUDIENCE_TILE), T = (0, _.bp)(), N = (0, d.e7)([v.ZP], () => {
       var e;
-      return null != j && (null == (e = O.ZP.getMember(j, s.id)) ? true : e.premiumSince) != null
+      return null != j && (null == (e = v.ZP.getMember(j, s.id)) ? true : e.premiumSince) != null
     }, [j, s.id]), R = i.useRef(null);
     o()(null != j, "Channel cannot be guildless");
     let w = i.useCallback(e => {
@@ -151,7 +151,7 @@ let Z = Chunk647438.memo(function(e) {
         name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
         properties: {
           location: "AudienceTile",
-          is_tile_owner: s.id === v,
+          is_tile_owner: s.id === O,
           tile_type: C.TH.USER
         }
       }), (0, h.jW)(e, async () => {
@@ -173,7 +173,7 @@ let Z = Chunk647438.memo(function(e) {
       }, {
         context: T
       })
-    }, [s, v, T, j, l, Z]);
+    }, [s, O, T, j, l, Z]);
     return (0, r.jsx)(y.Z, {
       targetElementRef: R,
       user: s,

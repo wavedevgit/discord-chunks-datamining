@@ -75,12 +75,12 @@ function E(e) {
   }), T = E || P, N = (0, y.I)(t), {
     totalFilters: R
   } = (0, b.p4)(N, t), D = i.useMemo(() => {
-    if (t.type === O.aib.DMS) {
+    if (t.type === v.aib.DMS) {
       var e, n;
       let t = null != (n = null == (e = (0, f.$G)(N).channel_id) ? true : e.length) ? n : 0;
-      return t > 0 ? v.intl.format(v.t.A2dqWG, {
+      return t > 0 ? O.intl.format(O.t.A2dqWG, {
         filterCount: t
-      }) : v.intl.string(v.t.tc619d)
+      }) : O.intl.string(O.t.tc619d)
     }
     return null
   }, [t.type, N]), [L, M] = i.useState(null), k = i.useMemo(() => h ? [] : [s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [h]), [U, G] = (0, u.US)(k), H = U === s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, F = i.useCallback(e => {
@@ -96,11 +96,11 @@ function E(e) {
         searchContext: t
       }))
     })
-  }, [t, F]), z = i.useMemo(() => R > 0 ? v.intl.format(v.t.uaR4sI, {
+  }, [t, F]), z = i.useMemo(() => R > 0 ? O.intl.format(O.t.uaR4sI, {
     filterCount: R
-  }) : v.intl.string(v.t.UdhTtk), [R]), W = (0, g.u5)({
+  }) : O.intl.string(O.t.UdhTtk), [R]), W = (0, g.u5)({
     location: "SearchHeader"
-  }), Y = t.type === O.aib.DMS || t.type === O.aib.CHANNEL, q = i.useMemo(() => T && W ? (0, r.jsxs)("div", {
+  }), Y = t.type === v.aib.DMS || t.type === v.aib.CHANNEL, q = i.useMemo(() => T && W ? (0, r.jsxs)("div", {
     className: C.searchModeAndFiltersContainer,
     children: [(0, r.jsx)(d.Button, {
       variant: "secondary",
@@ -157,16 +157,16 @@ function E(e) {
     onItemSelect: o,
     children: [(0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
-      id: O.QIO.NEWEST,
-      children: v.intl.string(v.t.rLjqbS)
+      id: v.QIO.NEWEST,
+      children: O.intl.string(O.t.rLjqbS)
     }), (0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
-      id: O.QIO.OLDEST,
-      children: v.intl.string(v.t.a1BaUr)
+      id: v.QIO.OLDEST,
+      children: O.intl.string(O.t.a1BaUr)
     }), (0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
-      id: O.QIO.MOST_RELEVANT,
-      children: v.intl.string(v.t.FtR97k)
+      id: v.QIO.MOST_RELEVANT,
+      children: O.intl.string(O.t.FtR97k)
     })]
   }), [z, V, T, L, W, Y, o, t, l, x, H, F, B]);
   return (0, r.jsxs)("header", {
@@ -220,7 +220,7 @@ function T(e) {
   } = e;
   return (0, r.jsx)(c.u, {
     asContainer: true,
-    text: v.intl.formatToPlainString(v.t["4Y3O+O"], {
+    text: O.intl.formatToPlainString(O.t["4Y3O+O"], {
       count: null != t ? t : ""
     }),
     children: (0, r.jsxs)("div", {
@@ -230,8 +230,8 @@ function T(e) {
         color: "text-muted",
         children: (0, r.jsx)(d.Anchor, {
           className: C.helpdeskLink,
-          href: h.Z.getArticleURL(O.BhN.SEARCH_INDEXING),
-          children: v.intl.string(v.t["G3EA+4"])
+          href: h.Z.getArticleURL(v.BhN.SEARCH_INDEXING),
+          children: O.intl.string(O.t["G3EA+4"])
         })
       }), (0, r.jsx)(P, {})]
     })
@@ -255,7 +255,7 @@ function R(e) {
   } = e, i = (0, r.jsx)(d.Text, {
     variant: "text-md/medium",
     color: "header-primary",
-    children: v.intl.format(v.t.ZGVL3g, {
+    children: O.intl.format(O.t.ZGVL3g, {
       count: t
     })
   });
@@ -282,7 +282,7 @@ function w(e) {
     if (f !== e) {
       if (e) {
         let e = {
-          type: O.aib.DMS
+          type: v.aib.DMS
         };
         _.Z.transitionQueryStateToSearchContext(n, e, t => {
           _.Z.cleanUpPrivateChannelSearchState(), _.Z.fetchMessages({
@@ -293,7 +293,7 @@ function w(e) {
         })
       } else {
         let e = {
-          type: O.aib.CHANNEL,
+          type: v.aib.CHANNEL,
           channelId: l
         };
         _.Z.transitionQueryStateToSearchContext(n, e, t => {
@@ -324,20 +324,20 @@ function w(e) {
         return (0, r.jsx)(d.v2r, {
           navId: "search-settings-cog",
           onClose: t,
-          "aria-label": v.intl.string(v.t.fb59v0),
+          "aria-label": O.intl.string(O.t.fb59v0),
           onSelect: () => s(null),
           children: (0, r.jsxs)(d.kSQ, {
-            label: v.intl.string(v.t["/tMwrA"]),
+            label: O.intl.string(O.t["/tMwrA"]),
             children: [(0, r.jsx)(d.k5B, {
               id: "xdm-search-disabled",
               group: "xdm-search-items",
-              label: v.intl.string(v.t.jRkYAh),
+              label: O.intl.string(O.t.jRkYAh),
               checked: !f,
               action: () => g(false)
             }), (0, r.jsx)(d.k5B, {
               id: "xdm-search-enabled",
               group: "xdm-search-items",
-              label: v.intl.string(v.t["lWpJ/t"]),
+              label: O.intl.string(O.t["lWpJ/t"]),
               checked: f,
               action: () => g(true)
             })]
@@ -351,15 +351,15 @@ function w(e) {
         onClick: () => {
           s(a ? null : "settings")
         },
-        "aria-label": v.intl.string(v.t["3D5yo/"]),
+        "aria-label": O.intl.string(O.t["3D5yo/"]),
         size: "sm"
       }))
     }), (0, r.jsx)(o.J2, {
       targetElementRef: h,
       shouldShow: u,
       onRequestClose: c,
-      title: v.intl.string(v.t.qha2Zv),
-      body: v.intl.string(v.t.IQWEoV),
+      title: O.intl.string(O.t.qha2Zv),
+      body: O.intl.string(O.t.IQWEoV),
       caretConfig: m
     })]
   })
@@ -372,14 +372,14 @@ function A(e) {
     isPopoutOpen: l,
     setOpenPopout: a
   } = e, s = i.useRef(null), o = i.useMemo(() => [{
-    label: v.intl.string(v.t.CbaapP),
-    value: O.QIO.NEWEST
+    label: O.intl.string(O.t.CbaapP),
+    value: v.QIO.NEWEST
   }, {
-    label: v.intl.string(v.t.OukXZj),
-    value: O.QIO.OLDEST
+    label: O.intl.string(O.t.OukXZj),
+    value: v.QIO.OLDEST
   }, {
-    label: v.intl.string(v.t.q8gB52),
-    value: O.QIO.MOST_RELEVANT
+    label: O.intl.string(O.t.q8gB52),
+    value: v.QIO.MOST_RELEVANT
   }], []), c = i.useCallback(e => {
     a(null), n(e)
   }, [a, n]);
@@ -397,7 +397,7 @@ function A(e) {
       return (0, r.jsx)(d.v2r, {
         navId: "search-result-sort-menu",
         onClose: n,
-        "aria-label": v.intl.string(v.t.utp2hS),
+        "aria-label": O.intl.string(O.t.utp2hS),
         onSelect: () => a(null),
         children: (0, r.jsx)(d.kSQ, {
           children: o.map(e => {
@@ -423,7 +423,7 @@ function A(e) {
       onClick: () => {
         a(l ? null : "sort")
       },
-      "aria-label": v.intl.string(v.t.XvNMNk),
+      "aria-label": O.intl.string(O.t.XvNMNk),
       size: "sm"
     }))
   })

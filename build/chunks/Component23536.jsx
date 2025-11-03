@@ -33,15 +33,15 @@ function _(e) {
       items: null != (e = null == r ? true : r.items) ? e : b,
       state: null != (n = null == r ? true : r.state) ? n : f.M.LOADING
     }
-  }), O = i.useMemo(() => y.map(e => e.message), [y]), j = (0, l.e7)([g.ZP], () => g.ZP.hasUnreadPins(t.id));
+  }), v = i.useMemo(() => y.map(e => e.message), [y]), j = (0, l.e7)([g.ZP], () => g.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
     j && o.Z.ackPins(t.id)
   }, [j, t.id]), (0, c.ZP)(() => {
-    O.some(d.k5) && o.Z.fetchPins(t.id, {
+    v.some(d.k5) && o.Z.fetchPins(t.id, {
       reset: true
     })
   });
-  let v = i.useCallback(() => {
+  let O = i.useCallback(() => {
       o.Z.fetchPins(t.id)
     }, [t.id]),
     C = i.useCallback(() => {
@@ -55,8 +55,8 @@ function _(e) {
     "aria-label": m.intl.string(m.t["mp1N/2"]),
     children: (0, r.jsx)(p.ZP, {
       channel: t,
-      onFetch: v,
-      messages: O,
+      onFetch: O,
+      messages: v,
       loading: x === f.M.LOADING,
       hasMore: x === f.M.LOADED_HAS_MORE,
       analyticsName: "Channel Pins",

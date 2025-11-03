@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 588322, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,28 +22,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk304247 = require("./304247.js");
 
-function O(e) {
+function v(e) {
   let {
     channelId: t
-  } = e, O = (0, l.e7)([g.Z], () => g.Z.getChannel(t)), j = (0, l.e7)([g.Z], () => g.Z.getChannel(null == O ? true : O.parent_id)), v = (0, l.e7)([b.Z], () => b.Z.getGuild(null == O ? true : O.getGuildId())), C = (0, o.ZP)(O), I = i.useRef(false);
+  } = e, v = (0, l.e7)([g.Z], () => g.Z.getChannel(t)), j = (0, l.e7)([g.Z], () => g.Z.getChannel(null == v ? true : v.parent_id)), O = (0, l.e7)([b.Z], () => b.Z.getGuild(null == v ? true : v.getGuildId())), C = (0, o.ZP)(v), I = i.useRef(false);
   if (i.useEffect(() => {
-      null == O || I.current || (I.current = true, (0, _.lN)(O))
-    }, [O]), null == O || null == v) return null;
+      null == v || I.current || (I.current = true, (0, _.lN)(v))
+    }, [v]), null == v || null == O) return null;
   let S = (0, r.jsx)(f.Z, {
-    channel: O
+    channel: v
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
-      channel: O,
+      channel: v,
       draftType: m.d.ChannelMessage
     }), (0, r.jsx)(u.ZP, {
       toolbar: S,
       "aria-label": y.intl.string(y.t.Pwe8tN),
       children: (0, p.ud)({
-        channel: O,
+        channel: v,
         parentChannel: j,
         channelName: C,
-        guild: v,
+        guild: O,
         inSidebar: true,
         handleContextMenu: function(e) {
           (0, a.jW)(e, async () => {
@@ -70,7 +70,7 @@ function O(e) {
                 }
                 return e
               }({}, t), i = i = {
-                channel: O
+                channel: v
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -85,14 +85,14 @@ function O(e) {
           })
         },
         handleClick: function() {
-          null != O && (0, h.XU)(O.guild_id, O.id)
+          null != v && (0, h.XU)(v.guild_id, v.id)
         }
       })
     }), (0, r.jsx)("div", {
       className: x.chat,
       children: (0, r.jsx)(c.Z, {
-        channel: O,
-        guild: v,
+        channel: v,
+        guild: O,
         chatInputType: d.Ie.SIDEBAR
       }, t)
     })]

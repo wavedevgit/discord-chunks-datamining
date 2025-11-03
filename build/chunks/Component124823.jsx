@@ -119,16 +119,16 @@ function w(e) {
               })
             }), (0, r.jsxs)(C.Z.Overlay, {
               className: N.overlay,
-              children: [(0, r.jsx)(v.Z, {
+              children: [(0, r.jsx)(O.Z, {
                 heading: P.intl.string(P.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(O.Z, {
+                children: (0, r.jsx)(v.Z, {
                   userBio: null == D ? true : D.bio,
                   userId: n.id,
                   animateOnHoverOrFocusOnly: true,
                   isHoveringOrFocusing: H
                 })
-              }), (0, r.jsx)(v.Z, {
+              }), (0, r.jsx)(O.Z, {
                 heading: P.intl.string(P.t["A//N4k"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(j.Z, {

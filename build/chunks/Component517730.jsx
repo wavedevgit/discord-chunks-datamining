@@ -1,21 +1,21 @@
 /** Chunk was on 45227 **/
 /** chunk id: 517730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => a
+  I: () => l
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js");
-let a = e => {
+let l = e => {
   let {
     sku: t,
-    application: a
+    application: l
   } = e;
   (0, r.ZDy)(async () => {
     let {
       SocialLayerStorefrontItemClaimedSuccessfullyModal: e
     } = await n.e("21021").then(n.bind(n, 519193));
     return n => {
-      var r, l;
+      var r, a;
       return (0, i.jsx)(e, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -33,18 +33,18 @@ let a = e => {
           })
         }
         return e
-      }({}, n), l = l = {
+      }({}, n), a = a = {
         sku: t,
-        application: a
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+        application: l
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+      })(Object(a)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
       }), r))
     }
   }, {

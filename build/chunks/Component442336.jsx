@@ -58,7 +58,7 @@ function b(e) {
       c.S.unsubscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let O = e => {
+  let v = e => {
       e.shiftKey ? s.Z.updateChannelOverrideSettings(t.guild_id, t.id, {
         muted: !b
       }, d.UE.muted(!b)) : x(e => !e)
@@ -84,7 +84,7 @@ function b(e) {
       } = t;
       return (0, r.jsx)(u.ZP.Icon, m(g({}, e), {
         ref: n,
-        onClick: O,
+        onClick: v,
         tooltip: i ? null : j,
         icon: b || _ !== h.bL.ALL_MESSAGES ? a.owu : a.Dkj,
         "aria-label": j,

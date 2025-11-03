@@ -29,9 +29,9 @@ function y(e) {
     analyticsLocations: y
   } = (0, l.ZP)(), {
     context: x
-  } = (0, o.KZ)(), O = (0, i.Z)(), {
+  } = (0, o.KZ)(), v = (0, i.Z)(), {
     mutualFriendsCount: j,
-    mutualFriends: v,
+    mutualFriends: O,
     mutualGuilds: C
   } = (0, c.Z)(t), I = !t.bot && null != j && j > 0, S = null != C && C.length > 0;
   return I || S ? (0, r.jsxs)(g.Z.Overlay, {
@@ -58,8 +58,8 @@ function y(e) {
       section: "MUTUAL_FRIENDS",
       header: b.intl.string(b.t["0mTJ3j"]),
       listClassName: _.list,
-      onExpand: () => (0, d.Z)(t.id, O),
-      items: null == v ? Array.from({
+      onExpand: () => (0, d.Z)(t.id, v),
+      items: null == O ? Array.from({
         length: j
       }).map((e, t) => (0, r.jsxs)("div", {
         className: _.loadingMutualFriend,
@@ -70,7 +70,7 @@ function y(e) {
           width: 135,
           opacity: .08
         })]
-      }, t)) : v.map(e => {
+      }, t)) : O.map(e => {
         let {
           key: t,
           user: i,

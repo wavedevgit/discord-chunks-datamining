@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 14338, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -57,9 +57,9 @@ function x(e) {
     speaker: l,
     className: g
   } = e, x = i.useRef(null), {
-    newestAnalyticsLocation: O
+    newestAnalyticsLocation: v
   } = (0, u.ZP)(), j = (0, h.bp)(), {
-    reducedMotion: v
+    reducedMotion: O
   } = i.useContext(o.Sfi), C = (0, d.Z)({
     userId: l.id
   }), I = null != l.member ? (0, m.CA)(l.member) : null, S = e => {
@@ -74,7 +74,7 @@ function x(e) {
         showMediaItems: true,
         showStageChannelItems: true,
         showChatItems: false,
-        onInteraction: (0, p.u)("GuildChannelUserContextMenu", O)
+        onInteraction: (0, p.u)("GuildChannelUserContextMenu", v)
       }))
     }, {
       context: j
@@ -101,14 +101,14 @@ function x(e) {
           size: o.EFr.SIZE_24,
           className: a()(b.avatar, g),
           "aria-label": l.userNick,
-          isSpeaking: C && !v.enabled
+          isSpeaking: C && !O.enabled
         })
       }))
     })
   })
 }
 
-function O(e) {
+function v(e) {
   let {
     speakers: t,
     channel: n
