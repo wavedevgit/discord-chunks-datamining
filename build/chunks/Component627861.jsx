@@ -154,7 +154,8 @@ function ed(e) {
         referrerId: f.author.id,
         guildId: E,
         channelId: f.channel_id,
-        messageId: f.id
+        messageId: f.id,
+        isDeadEnd: true
       }
     })
   } {
@@ -382,6 +383,7 @@ function ep(e) {
   } : null != el ? el : true, [ec, ep, em, eh, el, P.author.id, P.id, x, A.id, A.guild_id, T, ed, C, eg]), eb = i.useMemo(() => ei && null != et ? {
     label: ea.intl.string(ea.t.RscU7I),
     trackingArea: m.j_.PLAY,
+    isDeadEnd: true,
     onClick: () => {
       d.Z.launch({
         applicationId: et,
@@ -438,7 +440,8 @@ function ep(e) {
         referrerId: P.author.id,
         guildId: A.guild_id,
         channelId: P.channel_id,
-        messageId: P.id
+        messageId: P.id,
+        isDeadEnd: true
       }
     })
   }

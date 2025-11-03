@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   }({});
 
 function b(e) {
-  var t, n, r;
+  var t, n, r, i;
   return {
     id: null != (t = null == e ? true : e.id) ? t : "0",
     linkType: null != (n = null == e ? true : e.linkType) ? n : h.U.UNKNOWN,
@@ -35,7 +35,8 @@ function b(e) {
     onLinkCopied: null == e ? true : e.onLinkCopied,
     guildId: null == e ? true : e.guildId,
     channelId: null == e ? true : e.channelId,
-    messageId: null == e ? true : e.messageId
+    messageId: null == e ? true : e.messageId,
+    isDeadEnd: null != (i = null == e ? true : e.isDeadEnd) && i
   }
 }
 
@@ -94,11 +95,25 @@ function O(e) {
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), G = i.useMemo(() => !!L && new URL(E).pathname.endsWith(".gif"), [L, E]), B = i.useMemo(() => {
     if (null != S) return e => {
-      S(e), (0, p.KX)(T.id, T.linkType, p.j_.CONTENT, T.referrerId, T.activityCustomId)
+      S(e), (0, p.KX)({
+        applicationId: T.id,
+        linkType: T.linkType,
+        area: p.j_.CONTENT,
+        referrerId: T.referrerId,
+        customId: T.activityCustomId,
+        isDeadEnd: T.isDeadEnd
+      })
     }
   }, [S, T]), Z = i.useMemo(() => {
     if (null != A) return e => {
-      A(e), (0, p.KX)(T.id, T.linkType, p.j_.BANNER, T.referrerId, T.activityCustomId)
+      A(e), (0, p.KX)({
+        applicationId: T.id,
+        linkType: T.linkType,
+        area: p.j_.BANNER,
+        referrerId: T.referrerId,
+        customId: T.activityCustomId,
+        isDeadEnd: T.isDeadEnd
+      })
     }
   }, [A, T]);
   return (0, r.jsxs)("div", {
@@ -172,18 +187,26 @@ function O(e) {
               disabled: o,
               disabledReason: s,
               submitting: l,
-              trackingArea: u
-            } = e, d = 0 === t;
+              trackingArea: u,
+              isDeadEnd: d
+            } = e, f = 0 === t;
             return (0, r.jsxs)("div", {
               className: g.buttonWithPossibleDisabledTextWrapper,
               children: [(0, r.jsx)(c.zxk, {
-                variant: d ? "overlay-primary" : "overlay-secondary",
+                variant: f ? "overlay-primary" : "overlay-secondary",
                 disabled: o || null != s,
                 loading: l,
                 icon: i,
                 text: n,
                 onClick: e => {
-                  a(e), (0, p.KX)(T.id, T.linkType, u, T.referrerId, T.activityCustomId)
+                  a(e), (0, p.KX)({
+                    applicationId: T.id,
+                    linkType: T.linkType,
+                    area: u,
+                    referrerId: T.referrerId,
+                    customId: T.activityCustomId,
+                    isDeadEnd: d
+                  })
                 },
                 fullWidth: true
               }), null != s && (0, r.jsx)(c.xvT, {

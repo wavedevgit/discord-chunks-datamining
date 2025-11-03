@@ -122,7 +122,8 @@ function N(e) {
       guildId: N.guild_id,
       channelId: N.id,
       messageId: T.id,
-      onView: P
+      onView: P,
+      isDeadEnd: U
     }
   })
 }

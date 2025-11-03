@@ -199,7 +199,8 @@ function B(e) {
       linkType: k.U.ACTIVITY_INSTANCE,
       guildId: w,
       channelId: I,
-      messageId: x.id
+      messageId: x.id,
+      isDeadEnd: et
     }
   })
 }

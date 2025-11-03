@@ -381,7 +381,7 @@ class k extends Chunk476326.ZP {
     this.uploadAnalytics.convertedMimeType = Chunk261470;
     let s = null != (t = require.fileSize) ? exports : (await (0, Chunk861990.Lc)(r)).size;
     if (this.postCompressionSize = Chunk544891, this.currentSize = Chunk544891, null == Chunk544891) throw D.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
-    D.log("Completed compression and conversion. Output size=".concat(Chunk544891, " bytes; filename=").concat(Chunk392711, "; uri=").concat(r, "; mimeType=").concat(Chunk261470, " for ").concat(this.id));
+    D.log("Completed compression and conversion. Output size=".concat(Chunk544891, " bytes; filename=").concat(Chunk392711, "; uri=").concat(r, "; originalMimeType=").concat(this.mimeType, "; mimeType=").concat(Chunk261470, " for ").concat(this.id));
     let l = {
       uri: r,
       filename: Chunk392711,

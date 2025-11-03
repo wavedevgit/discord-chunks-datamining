@@ -308,7 +308,8 @@ function V(e) {
       onView: v,
       guildId: s.id,
       channelId: null == o ? true : o.id,
-      messageId: l.id
+      messageId: l.id,
+      isDeadEnd: !d
     }
   }))
 }

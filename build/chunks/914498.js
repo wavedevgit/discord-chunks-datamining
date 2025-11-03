@@ -13,13 +13,22 @@ var Chunk626135 = require("./626135.js"),
     return e.VIEW = "view", e.PLAY = "play", e.CLOUD_PLAY = "cloud_play", e.JOIN = "join", e.ADD_APP = "add_app", e.JOIN_SERVER = "join_server", e.INVITE = "invite", e.SYNC = "sync", e.CONTENT = "content", e.BANNER = "banner", e.STREAM = "stream", e
   }({});
 
-function o(e, t, n, a, o) {
+function o(e) {
+  let {
+    applicationId: t,
+    linkType: n,
+    area: a,
+    referrerId: o,
+    customId: s,
+    isDeadEnd: l
+  } = e;
   r.default.track(i.rMx.APP_EMBED_CLICKED, {
-    application_id: e,
-    link_type: t,
-    area: n,
-    referrer_id: a,
-    custom_id: o
+    application_id: t,
+    link_type: n,
+    area: a,
+    referrer_id: o,
+    custom_id: s,
+    is_dead_end: l
   })
 }
 
