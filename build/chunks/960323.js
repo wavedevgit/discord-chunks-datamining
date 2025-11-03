@@ -17,7 +17,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk776570 = require("./776570.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let I = (0, Chunk509613.x1)(Chunk313789.n.VOICE_AND_VIDEO_PANE, {
+let g = (0, Chunk509613.x1)(Chunk313789.n.VOICE_AND_VIDEO_PANE, {
     buildLayout: () => [],
     render: Chunk604224.Z,
     usePredicate: () => !(0, Chunk526665.BK)("LegacyVoiceAndVideoPane")
@@ -28,7 +28,7 @@ let I = (0, Chunk509613.x1)(Chunk313789.n.VOICE_AND_VIDEO_PANE, {
   }),
   b = (0, Chunk509613.wf)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.B1fFpf),
-    buildLayout: () => (0, Chunk526665.Ml)("VoiceAndVideoPanel") ? [y] : [I]
+    buildLayout: () => (0, Chunk526665.Ml)("VoiceAndVideoPanel") ? [y] : [g]
   }),
   A = (0, Chunk509613.m7)(Chunk313789.n.VOICE_AND_VIDEO_SIDEBAR_ITEM, {
     icon: Chunk657707.S6n,

@@ -21,8 +21,8 @@ function c(t, e) {
   for (let t of d) {
     let e = t;
     for (; null != e;) {
-      var O;
-      let t = null == (O = c[e]) ? true : O.parent;
+      var S;
+      let t = null == (S = c[e]) ? true : S.parent;
       if (null == t) {
         E.add(e);
         break
@@ -30,21 +30,21 @@ function c(t, e) {
       e = t
     }
   }
-  let T = (0, o.Z)(n, null != e ? e : "", E),
-    [S, g] = i.useState(T),
-    I = function(t, e) {
+  let O = (0, o.Z)(n, null != e ? e : "", E),
+    [T, I] = i.useState(O),
+    g = function(t, e) {
       if (t.size !== e.size) returntrue;
       for (let n of t)
         if (!e.has(n)) returntrue;
       returnfalse
-    }(S, T);
+    }(T, O);
   return i.useEffect(() => {
-    I && g(T)
-  }, [I, T]), i.useMemo(() => {
+    g && I(O)
+  }, [g, O]), i.useMemo(() => {
     var t, e, i;
     let l = new s.Z;
     return {
-      node: null != (t = (0, a.Z)(n, S, l)) ? t : (e = function(t) {
+      node: null != (t = (0, a.Z)(n, T, l)) ? t : (e = function(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {},
             i = Object.keys(n);
@@ -75,5 +75,5 @@ function c(t, e) {
       }), e),
       directory: l
     }
-  }, [S, n])
+  }, [T, n])
 }

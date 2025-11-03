@@ -20,28 +20,28 @@ function s(t, e, n) {
           if (null != t.legacySearchKey) return e.length < 2 || i.has(t.legacySearchKey);
           if (t.type === u.Jq.SECTION && t.hoisted) returntrue;
           let E = "useTitle" in t ? null == (s = t.useTitle) ? true : s.call(t, false) : true,
-            O = "useNavigationTitle" in t ? null == (a = t.useNavigationTitle) ? true : a.call(t) : true,
-            T = "useSearchTerms" in t ? null == (o = t.useSearchTerms) ? true : o.call(t) : true;
-          if (n || null == E && null == O && null == T) returnfalse;
+            S = "useNavigationTitle" in t ? null == (a = t.useNavigationTitle) ? true : a.call(t) : true,
+            O = "useSearchTerms" in t ? null == (o = t.useSearchTerms) ? true : o.call(t) : true;
+          if (n || null == E && null == S && null == O) returnfalse;
           if ("" === e) returntrue;
-          let S = e.toLowerCase();
-          for (let t of null != T ? T : [])
-            if (l()(S, t.toLowerCase())) returntrue;
-          let g = false;
+          let T = e.toLowerCase();
+          for (let t of null != O ? O : [])
+            if (l()(T, t.toLowerCase())) returntrue;
+          let I = false;
           if (null != E) {
             let t = null == (c = (0, r.qgQ)(E)) ? true : c.toLowerCase();
-            null != t && (g = l()(S, t))
+            null != t && (I = l()(T, t))
           }
-          if (null != O && !g) {
-            let t = null == (d = (0, r.qgQ)(O)) ? true : d.toLowerCase();
-            null != t && (g = l()(S, t))
+          if (null != S && !I) {
+            let t = null == (d = (0, r.qgQ)(S)) ? true : d.toLowerCase();
+            null != t && (I = l()(T, t))
           }
-          return g
+          return I
         }(t, e, d, n) || c,
-        O = false;
+        S = false;
       if ((0, u.Lk)(t))
-        for (let e of t.layout) O = s(e, d, E) || O;
-      return !d && (E || O) && i.add(t.key), E || O
+        for (let e of t.layout) S = s(e, d, E) || S;
+      return !d && (E || S) && i.add(t.key), E || S
     };
   return s(t), i
 }
