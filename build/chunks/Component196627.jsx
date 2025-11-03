@@ -5,15 +5,18 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk368611 = require("./368611.js");
-let Chunk848304 = require("./848304.js"),
-  a = e => {
-    let {
-      element: t
-    } = e;
-    return (null == t ? true : t.type) !== "success" ? null : (0, r.jsx)("img", {
+var Chunk970683 = require("./970683.js"),
+  Chunk368611 = require("./368611.js");
+let a = e => {
+  let {
+    element: t
+  } = e;
+  return (null == t ? true : t.type) !== "success" ? null : (0, r.jsx)("div", {
+    className: l.successImg,
+    children: (0, r.jsx)(i.sm, {
       alt: "",
-      src: l,
-      className: i.successImg
+      width: 100,
+      height: 100
     })
-  }
+  })
+}

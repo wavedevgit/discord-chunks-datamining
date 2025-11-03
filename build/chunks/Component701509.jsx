@@ -52,16 +52,16 @@ function C(t) {
   let {
     transitionState: e,
     source: n
-  } = t, a = (0, E.e7)([y.default], () => y.default.getCurrentUser()), o = (0, E.e7)([_.Z, A.Z], () => A.Z.getChannel(_.Z.getChannelId())), [C, S] = r.useState(null), [k, j] = r.useState(null), [w, I] = r.useState(false), [M, D] = r.useState(0), P = r.useRef(null), L = r.useRef(null), U = n === G.L0.FAMILY_CENTER, V = (0, T.Kt)() && !U, {
+  } = t, a = (0, d.e7)([y.default], () => y.default.getCurrentUser()), o = (0, d.e7)([_.Z, A.Z], () => A.Z.getChannel(_.Z.getChannelId())), [C, S] = r.useState(null), [k, j] = r.useState(null), [w, I] = r.useState(false), [M, D] = r.useState(0), P = r.useRef(null), L = r.useRef(null), U = n === v.L0.FAMILY_CENTER, V = (0, T.Kt)() && !U, {
     verifyAgreementButtonText: Z,
     verifyGateDescription: F,
     verifyTitle: W
   } = (0, T.a1)(n), Y = (0, T.$5)(o), B = T.Lj.has(n), q = null != C ? s()().diff(C, "years") : null;
 
   function K() {
-    if (n === G.L0.NSFW_SERVER_INVITE_EMBED) return (0, g.qV)(n), Promise.resolve();
+    if (n === v.L0.NSFW_SERVER_INVITE_EMBED) return (0, g.qV)(n), Promise.resolve();
     let t = null == o ? true : o.getGuildId();
-    return d.Z.nsfwReturnToSafety(t), (0, g.qV)(n), Promise.resolve()
+    return E.Z.nsfwReturnToSafety(t), (0, g.qV)(n), Promise.resolve()
   }
   async function H() {
     i()(null != C, "Cannot submit null birthday.");
@@ -90,7 +90,7 @@ function C(t) {
   }), r.useEffect(() => {
     h.default.track(O.rMx.AGE_GATE_ACTION, {
       source: n,
-      action: G.Al.AGE_GATE_OPEN
+      action: v.Al.AGE_GATE_OPEN
     })
   }, [n]);
   let X = r.useCallback(t => {
@@ -151,11 +151,11 @@ function C(t) {
     var t, e;
     let r = (() => {
         switch (n) {
-          case G.L0.NSFW_SERVER:
-          case G.L0.NSFW_SERVER_INVITE:
-          case G.L0.NSFW_SERVER_INVITE_EMBED:
+          case v.L0.NSFW_SERVER:
+          case v.L0.NSFW_SERVER_INVITE:
+          case v.L0.NSFW_SERVER_INVITE_EMBED:
             return R.intl.string(R.t.vAymlG);
-          case G.L0.FAMILY_CENTER:
+          case v.L0.FAMILY_CENTER:
             return R.intl.string(R.t.M7mt7m);
           default:
             return R.intl.string(R.t.F8otRo)
@@ -163,9 +163,9 @@ function C(t) {
       })(),
       a = (() => {
         switch (n) {
-          case G.L0.FAMILY_CENTER:
+          case v.L0.FAMILY_CENTER:
             return R.intl.string(R.t.mhUrKS);
-          case G.L0.DEEP_LINK_PROMPT:
+          case v.L0.DEEP_LINK_PROMPT:
             return R.intl.format(R.t.iyhg2s, {
               helpURL: m.Z.getArticleURL(O.BhN.AGE_GATE)
             });
@@ -177,7 +177,7 @@ function C(t) {
       })();
     return (0, l.jsx)("form", {
       onSubmit: z,
-      children: (0, l.jsx)(u.ExpressiveModal, (t = x({
+      children: (0, l.jsx)(u.Modal, (t = x({
         title: r,
         subtitle: a,
         actions: [{
@@ -191,7 +191,7 @@ function C(t) {
           disabled: null == C
         }]
       }, te), e = e = {
-        children: (0, l.jsx)(v.Z, {
+        children: (0, l.jsx)(G.Z, {
           label: R.intl.string(R.t.rhBeKe),
           name: "date_of_birth",
           onChange: X,
