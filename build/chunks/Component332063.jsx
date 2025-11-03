@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
+var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -11,7 +11,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk560587 = require("./560587.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,7 +19,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class u extends(r = Chunk647438.Component) {
+class h extends(i = Chunk647438.Component) {
   componentDidMount() {
     let {
       applicationId: e,
@@ -32,21 +32,21 @@ class u extends(r = Chunk647438.Component) {
     let {
       onHasBranchesChange: t,
       branches: n
-    } = this.props, r = n.length > 0;
-    null != t && r !== e.branches.length > 0 && t(r)
+    } = this.props, i = n.length > 0;
+    null != t && i !== e.branches.length > 0 && t(i)
   }
   render() {
     let {
       branches: e,
       selectedBranchId: t,
       applicationId: n,
-      includeMaster: r,
-      hide: s,
-      className: l,
+      includeMaster: i,
+      hide: l,
+      className: s,
       label: o
     } = this.props;
     if (0 === module.length || Chunk647438) return null;
-    let c = r ? module : module.filter(e => e.id !== n);
+    let c = i ? module : module.filter(e => e.id !== n);
     return (0, Chunk951288.jsx)(Chunk481060.q4e, {
       label: Chunk274616,
       options: Chunk560587.map(e => ({
@@ -60,12 +60,12 @@ class u extends(r = Chunk647438.Component) {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "handleChange", e => {
+    super(...e), d(this, "handleChange", e => {
       this.props.onChange(e)
     })
   }
 }
-h(u, "defaultProps", {
+d(h, "defaultProps", {
   includeMaster: false
 });
 let p = Chunk442837.ZP.connectStores([Chunk560587.Z], e => {
@@ -75,4 +75,4 @@ let p = Chunk442837.ZP.connectStores([Chunk560587.Z], e => {
   return {
     branches: c.Z.getBranches(t)
   }
-})(u)
+})(h)

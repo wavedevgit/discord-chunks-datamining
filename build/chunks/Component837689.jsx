@@ -52,20 +52,21 @@ class j extends Chunk317770.Z {
       for (let e of t)
         if (null != e.marketing_components) {
           for (let t of e.marketing_components)
-            if (t.component_type === l.I.ANNOUNCEMENT_MODAL) return void this.maybeOpenServerDriveAnnouncementModal(t.properties, false)
+            if (t.component_type === l.I.ANNOUNCEMENT_MODAL) return void this.maybeOpenServerDriveAnnouncementModal(t.id, t.properties, false)
         }
-    }), T(this, "maybeOpenServerDriveAnnouncementModal", async (e, t) => {
-      let i = (0, C.r)({
-        content: e,
-        isPreview: t
+    }), T(this, "maybeOpenServerDriveAnnouncementModal", async (e, t, i) => {
+      let l = (0, C.r)({
+        content: t,
+        isPreview: i
       });
-      if (null != i) return (false !== t || (null == i ? true : i.contentIdentifier) !== "summer_bogo_content" || !!await (0, y.k)()) && ((0, s.Mr3)(N), (0, s.ZDy)(async () => {
+      if (null != l) return (false !== i || (null == l ? true : l.contentIdentifier) !== "summer_bogo_content" || !!await (0, y.k)()) && ((0, s.Mr3)(N), (0, s.ZDy)(async () => {
         let {
-          default: e
+          default: t
         } = await Promise.resolve().then(n.bind(n, 318199));
-        return t => (0, r.jsx)(e, {
-          renderModalProps: t,
-          properties: i
+        return n => (0, r.jsx)(t, {
+          renderModalProps: n,
+          componentId: e,
+          properties: l
         })
       }, {
         modalKey: N
@@ -75,7 +76,7 @@ class j extends Chunk317770.Z {
       let {
         data: t
       } = e;
-      this.maybeOpenServerDriveAnnouncementModal(t.properties, true)
+      this.maybeOpenServerDriveAnnouncementModal(t.id, t.properties, true)
     }), T(this, "getOfferFromStore", () => {
       let e = d.default.getCurrentUser();
       if ((0, f.I5)(e)) return {};
@@ -104,7 +105,7 @@ class j extends Chunk317770.Z {
           upsellType: S.cd.REVERSE_TRIAL_FOLLOWUP_UPSELL
         }), (null == l || l.verified) && !(0, s.$sL)() && !i.tq && !n) {
         for (let t of (await (0, I.He)(e)))
-          if (await this.maybeOpenServerDriveAnnouncementModal(t, false)) break
+          if (await this.maybeOpenServerDriveAnnouncementModal("", t, false)) break
       }
     })
   }
