@@ -1,11 +1,10 @@
 /** Chunk was on 65631 **/
-/** chunk id: 10722, original params: e,a,n (module,exports,require) **/
+/** chunk id: 10722, original params: e,i,t (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => h
 });
 var Chunk951288 = require("./951288.js"),
-  Chunk120356 = require("./120356.js"),
-  c = require.n(Chunk120356),
+  Chunk775086 = require("./775086.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk835473 = require("./835473.js"),
   Chunk933557 = require("./933557.js"),
@@ -17,61 +16,46 @@ var Chunk951288 = require("./951288.js"),
   Chunk648468 = require("./648468.js"),
   Chunk430864 = require("./430864.js");
 
-function k(e) {
-  var a;
+function h(e) {
+  var i, t;
   let {
-    channel: n,
-    onClose: o,
-    guild: k,
-    transitionState: N
-  } = e, u = (0, d.KS)(n, k), j = (0, r.ZP)(n, false), y = (0, t.q)(null == (a = n.linkedLobby) ? true : a.application_id);
-  return (0, l.jsxs)(i.Y0X, {
-    transitionState: N,
-    "aria-label": m.intl.string(m.t.X8jMDh),
-    className: b.modal,
-    parentComponent: "ChannelTopicModal",
-    children: [(0, l.jsxs)(i.xBx, {
-      className: b.modalHeader,
-      separator: false,
-      children: [(0, l.jsxs)("div", {
-        className: b.header,
-        children: [null != u && (0, l.jsx)(u, {
-          size: "md",
-          color: "currentColor",
-          className: b.channelIcon
-        }), (0, l.jsx)(i.Text, {
-          variant: "text-md/semibold",
-          color: "header-primary",
-          children: j
-        })]
-      }), (0, l.jsx)(i.olH, {
-        onClick: o
-      })]
-    }), (0, l.jsxs)(i.hzk, {
-      children: [(0, l.jsx)(i.Text, {
-        selectable: true,
-        variant: "text-md/normal",
-        className: c()(b.content, x.markup),
-        children: s.Z.parseTopic(n.topic, true, {
-          channelId: n.id
+    channel: h,
+    guild: L,
+    onClose: N,
+    transitionState: m
+  } = e, x = null != (t = (0, r.KS)(h, L)) ? t : true, y = (0, c.ZP)(h, false), v = (0, l.q)(null == (i = h.linkedLobby) ? true : i.application_id);
+  return (0, n.jsxs)(a.u, {
+    title: b.intl.string(b.t.X8jMDh),
+    subtitle: null != y ? {
+      text: y,
+      leadingIcon: x
+    } : true,
+    actions: true,
+    transitionState: m,
+    onClose: N,
+    children: [(0, n.jsx)(o.Text, {
+      selectable: true,
+      variant: "text-md/normal",
+      className: k.markup,
+      children: s.Z.parseTopic(h.topic, true, {
+        channelId: h.id
+      })
+    }), null != v ? (0, n.jsxs)("div", {
+      className: u.linkedLobbyNotice,
+      children: [(0, n.jsx)(o.DuK, {
+        className: u.linkedLobbyApplicationIcon
+      }), (0, n.jsx)(o.Text, {
+        variant: "text-sm/normal",
+        color: "header-secondary",
+        children: b.intl.format(b.t.Ud5ryv, {
+          applicationName: v.name,
+          helpdeskArticle: d.Z.getArticleURL(p.BhN.LINKED_LOBBIES),
+          separatorHook: (e, i) => (0, n.jsx)("span", {
+            className: u.linkedLobbyNoticeSeparator,
+            children: e
+          }, i)
         })
-      }), null != y ? (0, l.jsxs)("div", {
-        className: b.linkedLobbyNotice,
-        children: [(0, l.jsx)(i.DuK, {
-          className: b.linkedLobbyApplicationIcon
-        }), (0, l.jsx)(i.Text, {
-          variant: "text-sm/normal",
-          color: "header-secondary",
-          children: m.intl.format(m.t.Ud5ryv, {
-            applicationName: y.name,
-            helpdeskArticle: p.Z.getArticleURL(h.BhN.LINKED_LOBBIES),
-            separatorHook: (e, a) => (0, l.jsx)("span", {
-              className: b.linkedLobbyNoticeSeparator,
-              children: e
-            }, a)
-          })
-        })]
-      }) : null]
-    })]
+      })]
+    }) : null]
   })
 }
