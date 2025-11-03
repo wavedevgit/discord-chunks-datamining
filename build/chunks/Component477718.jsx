@@ -37,7 +37,7 @@ function U(e) {
     guild: d
   } = e, {
     analyticsLocations: m
-  } = (0, _.ZP)(), O = I.nm(i), R = I.QM(i), U = null == (t = I.V$(S.zUn.REASON, i)) ? true : t.newValue, L = I.J5(i), M = (0, A.LJ)(i.id), b = (0, u.e7)([h.ZP], () => null != i.userId ? h.ZP.getMember(a.guildId, i.userId) : null, [a.guildId, i.userId]), x = (0, N.X7)(null == b ? true : b.guildId, null == b ? true : b.userId, null != (n = null == b ? true : b.colorStrings) ? n : null), v = l.useCallback(e => t => {
+  } = (0, _.ZP)(), O = I.nm(i), R = I.QM(i), U = null == (t = I.V$(S.zUn.REASON, i)) ? true : t.newValue, L = I.J5(i), M = (0, A.LJ)(i.id), x = (0, u.e7)([h.ZP], () => null != i.userId ? h.ZP.getMember(a.guildId, i.userId) : null, [a.guildId, i.userId]), b = (0, N.X7)(null == x ? true : x.guildId, null == x ? true : x.userId, null != (n = null == x ? true : x.colorStrings) ? n : null), v = l.useCallback(e => t => {
     t.preventDefault(), t.stopPropagation(), null != e && (0, T.RE)(e, m)
   }, [m]), P = l.useCallback(() => {
     var e;
@@ -45,7 +45,7 @@ function U(e) {
       asContainer: true,
       text: p.intl.string(p.t.mvsi9n),
       children: (0, r.jsx)(E.P3F, {
-        onClick: v(b),
+        onClick: v(x),
         tag: "span",
         className: C.username,
         children: (0, r.jsxs)(E.Text, {
@@ -53,13 +53,13 @@ function U(e) {
           tag: "span",
           children: ["@", (0, r.jsx)(E.PUh, {
             name: f.ZP.getName(a.guildId, null, i.user),
-            colorString: null != (e = null == b ? true : b.colorString) ? e : null,
-            colorStrings: x
+            colorString: null != (e = null == x ? true : x.colorString) ? e : null,
+            colorStrings: b
           })]
         })
       })
     })
-  }, [v, i.user, a.guildId, b, x])();
+  }, [v, i.user, a.guildId, x, b])();
   return (0, r.jsxs)("div", {
     className: s()(D.modInfoItem, C.auditLogItem),
     children: [(0, r.jsxs)("div", {

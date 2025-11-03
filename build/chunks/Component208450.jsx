@@ -488,7 +488,7 @@ function K(e) {
         query: r,
         searchEverywhere: i
       } = e;
-      R.ZP.refreshSearchQueryAnalyticsId(t), (0, k.tI)({
+      R.Z.refreshSearchQueryAnalyticsId(t), (0, k.tI)({
         searchContext: t,
         query: r,
         queryString: n

@@ -4,7 +4,6 @@
 module.exports = {
   customHeader: "customHeader__5906b",
   quickSelect: "quickSelect__5906b",
-  selectFilterPopout: "selectFilterPopout__5906b",
   divider: "divider__5906b",
   discriminator: "discriminator__5906b",
   scroller: "scroller__5906b",

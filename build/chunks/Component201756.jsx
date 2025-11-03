@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 /** chunk id: 201756, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => D
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -62,7 +62,7 @@ function Z(e, t) {
   }
   return l
 }
-let N = Chunk647438.forwardRef(function(e, t) {
+let D = Chunk647438.forwardRef(function(e, t) {
   var n, l, {
       label: i,
       onFilter: a,
@@ -107,35 +107,35 @@ let N = Chunk647438.forwardRef(function(e, t) {
   })
 });
 
-function D(e) {
+function N(e) {
   let {
     guildId: t,
     currentPagedMembers: n
-  } = e, i = l.useRef(null), a = l.useRef(null), D = l.useRef(null), R = l.useRef(null), L = l.useRef(null), P = (0, c.e7)([f.Z], () => f.Z.getSearchStateByGuildId(t), [t], s()), I = (0, c.e7)([m.Z, C.Z], () => m.Z.can(O.Plq.MANAGE_GUILD, C.Z.getGuild(t)), [t]), {
+  } = e, i = l.useRef(null), a = l.useRef(null), N = l.useRef(null), R = l.useRef(null), L = l.useRef(null), P = (0, c.e7)([f.Z], () => f.Z.getSearchStateByGuildId(t), [t], s()), I = (0, c.e7)([m.Z, C.Z], () => m.Z.can(O.Plq.MANAGE_GUILD, C.Z.getGuild(t)), [t]), {
     selectedUserIds: V,
     addUsers: M,
     clearSelection: E
-  } = (0, h.Z)(t), T = P.requireUnusualDmActivity || P.requireCommunicationDisabled || P.requireUnusualAccountActivity || P.requireUsernameQuarantined, k = P.selectedRoleIds.size > 0, A = null != P.selectedJoinDateOption.afterDate, U = P.selectedSort === b.d$.ORDER_BY_GUILD_JOINED_AT_ASC, F = null != P.selectedAccountAgeOption.afterDate, B = P.selectedSort === b.d$.ORDER_BY_USER_ID_ASC || P.selectedSort === b.d$.ORDER_BY_USER_ID_DESC, q = null != P.selectedSourceInviteCode && "" !== P.selectedSourceInviteCode, G = null != P.selectedJoinSourceType, z = q || G, Y = (0, p.xC)(t), Q = l.useMemo(() => n.filter(e => (0, p.rX)(t, Y, e)), [Y, n, t]), W = Q.length > 0, K = 0 === Q.filter(e => !V.has(e)).length, J = l.useCallback(() => {
-    W && (K ? E() : M(Q))
-  }, [W, K, E, M, Q]);
+  } = (0, h.Z)(t), T = P.requireUnusualDmActivity || P.requireCommunicationDisabled || P.requireUnusualAccountActivity || P.requireUsernameQuarantined, k = P.selectedRoleIds.size > 0, A = null != P.selectedJoinDateOption.afterDate, U = P.selectedSort === b.d$.ORDER_BY_GUILD_JOINED_AT_ASC, F = null != P.selectedAccountAgeOption.afterDate, B = P.selectedSort === b.d$.ORDER_BY_USER_ID_ASC || P.selectedSort === b.d$.ORDER_BY_USER_ID_DESC, q = null != P.selectedSourceInviteCode && "" !== P.selectedSourceInviteCode, G = null != P.selectedJoinSourceType, z = q || G, Y = (0, p.xC)(t), W = l.useMemo(() => n.filter(e => (0, p.rX)(t, Y, e)), [Y, n, t]), Q = W.length > 0, K = 0 === W.filter(e => !V.has(e)).length, J = l.useCallback(() => {
+    Q && (K ? E() : M(W))
+  }, [Q, K, E, M, W]);
   return (0, r.jsx)("thead", {
     children: (0, r.jsxs)("tr", {
       className: _.tableHeaderRow,
       children: [Y && (0, r.jsx)("th", {
         className: o()(_.tableHeaderCellContainer, w.xsmallCol),
         children: (0, r.jsx)(u.u, {
-          shouldShow: !W,
+          shouldShow: !Q,
           text: H.intl.string(H.t.tJEY0G),
           children: (0, r.jsx)(d.P3F, {
             onClick: J,
             className: _.tableHeaderCell,
             children: (0, r.jsx)(d.FZ5, {
               checked: K,
-              disabled: !W
+              disabled: !Q
             })
           })
         })
-      }), (0, r.jsx)(N, {
+      }), (0, r.jsx)(D, {
         label: H.intl.string(H.t.Es7n9c)
       }), I ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.yRy, {
@@ -152,7 +152,7 @@ function D(e) {
             var {
               onClick: t
             } = e, n = Z(e, ["onClick"]);
-            return (0, r.jsx)(N, S({
+            return (0, r.jsx)(D, S({
               ref: i,
               label: H.intl.string(H.t.xcKP1P),
               onFilter: t,
@@ -175,7 +175,7 @@ function D(e) {
             var {
               onClick: t
             } = e, n = Z(e, ["onClick"]);
-            return (0, r.jsx)(N, S({
+            return (0, r.jsx)(D, S({
               ref: a,
               label: H.intl.string(H.t.sPph4O),
               onFilter: t,
@@ -186,15 +186,15 @@ function D(e) {
           }
         })]
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(N, {
+        children: [(0, r.jsx)(D, {
           label: H.intl.string(H.t.xcKP1P),
           className: w.smallCol
-        }), (0, r.jsx)(N, {
+        }), (0, r.jsx)(D, {
           label: H.intl.string(H.t.sPph4O),
           className: w.smallCol
         })]
       }), I ? (0, r.jsx)(d.yRy, {
-        targetElementRef: D,
+        targetElementRef: N,
         animation: d.yRy.Animation.FADE,
         position: "bottom",
         spacing: 4,
@@ -207,15 +207,15 @@ function D(e) {
           var {
             onClick: t
           } = e, n = Z(e, ["onClick"]);
-          return (0, r.jsx)(N, S({
-            ref: D,
+          return (0, r.jsx)(D, S({
+            ref: N,
             label: H.intl.string(H.t["yn0w1+"]),
             onFilter: t,
             isFiltered: z,
             className: w.smallCol
           }, n))
         }
-      }) : I && (0, r.jsx)(N, {
+      }) : I && (0, r.jsx)(D, {
         label: H.intl.string(H.t["yn0w1+"]),
         className: w.smallCol
       }), (0, r.jsx)(d.yRy, {
@@ -224,20 +224,14 @@ function D(e) {
         position: "bottom",
         spacing: 4,
         align: "left",
-        renderPopout: e => {
-          let {
-            closePopout: n
-          } = e;
-          return (0, r.jsx)(y.Z, {
-            guildId: t,
-            onClose: n
-          })
-        },
+        renderPopout: () => (0, r.jsx)(y.Z, {
+          guildId: t
+        }),
         children: e => {
           var {
             onClick: t
           } = e, n = Z(e, ["onClick"]);
-          return (0, r.jsx)(N, S({
+          return (0, r.jsx)(D, S({
             ref: R,
             label: H.intl.string(H.t["2SZsWX"]),
             onFilter: t,
@@ -265,7 +259,7 @@ function D(e) {
               onClose: n
             })
           },
-          children: e => (0, r.jsx)(N, {
+          children: e => (0, r.jsx)(D, {
             ref: L,
             label: H.intl.string(H.t["7V3759"]),
             "aria-label": H.intl.string(H.t["2cRO3R"]),
@@ -285,7 +279,7 @@ function D(e) {
             "aria-expanded": e["aria-expanded"]
           })
         })
-      }), (0, r.jsx)(N, {
+      }), (0, r.jsx)(D, {
         label: H.intl.string(H.t["5Q9xGr"]),
         className: w.smallCol
       })]

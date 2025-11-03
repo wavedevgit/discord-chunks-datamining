@@ -81,7 +81,7 @@ function G(e) {
     scrollTo: h,
     renderEmbeds: R,
     offset: M,
-    jumpToMessage: b,
+    jumpToMessage: x,
     listNavigator: P,
     favoriteSearch: G
   } = e, k = f.cC.useSetting(), F = (0, I.p)(), w = l.useCallback(e => {
@@ -132,7 +132,7 @@ function G(e) {
         })
       }), a.map((e, t) => {
         let n = E + t;
-        return (0, r.jsx)(x.Z, {
+        return (0, r.jsx)(b.Z, {
           ref: e => {
             d.current[n] = e
           },
@@ -143,7 +143,7 @@ function G(e) {
           pageResultsLength: a.length,
           message: e,
           index: n,
-          onJump: b,
+          onJump: x,
           listItemProps: P.getItemProps({
             index: n
           })
@@ -171,7 +171,7 @@ let k = Chunk647438.memo(function(e) {
     isFavoritesSearch: U
   } = e, {
     offset: L,
-    totalResults: x,
+    totalResults: b,
     isSearching: y,
     showBlockedResults: k
   } = s, F = l.useCallback((e, t) => {
@@ -224,7 +224,7 @@ let k = Chunk647438.memo(function(e) {
       highlighter: K,
       startIndex: l,
       resultRefs: z,
-      totalResults: x,
+      totalResults: b,
       scrollTo: _,
       renderEmbeds: o,
       offset: L,
@@ -296,11 +296,11 @@ let k = Chunk647438.memo(function(e) {
           count: I
         })
       })]
-    }) : null, !y && !U && (0, r.jsx)(b.Z, {
+    }) : null, !y && !U && (0, r.jsx)(x.Z, {
       renderPageWrapper: f,
       onPageChange: m,
       offset: L,
-      totalCount: null != O ? O : x,
+      totalCount: null != O ? O : b,
       pageSize: v.vpv
     })]
   })

@@ -11,6 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk374470 = require("./374470.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk333200 = require("./333200.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk480137 = require("./480137.js"),
   Chunk239091 = require("./239091.js"),
@@ -33,8 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk912864 = require("./912864.js"),
-  Chunk630016 = require("./630016.js"),
-  Chunk315091 = require("./315091.js");
+  Chunk630016 = require("./630016.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -92,7 +92,7 @@ let G = Chunk647438.forwardRef((e, t) => {
     guildId: l,
     guild: a
   } = e, s = k(e, ["onHeaderClick", "guildId", "guild"]);
-  return null == l ? null : (0, r.jsx)(S.Z, L(A({
+  return null == l ? null : (0, r.jsx)(T.Z, L(A({
     ref: t
   }, s), {
     guildId: l,
@@ -109,7 +109,7 @@ let G = Chunk647438.forwardRef((e, t) => {
       } = s, {
         user: i
       } = t;
-      null != i && null != l && (0, g.jW)(e, async () => {
+      null != i && null != l && (0, m.jW)(e, async () => {
         let {
           default: e
         } = await n.e("50929").then(n.bind(n, 595011));
@@ -122,8 +122,8 @@ let G = Chunk647438.forwardRef((e, t) => {
     onChannelContextMenu: e => {
       let {
         log: t
-      } = s, i = j.Z.getGuild(l);
-      null != t.options.channel && "string" != typeof t.options.channel && null != i && (0, g.jW)(e, async () => {
+      } = s, i = v.Z.getGuild(l);
+      null != t.options.channel && "string" != typeof t.options.channel && null != i && (0, m.jW)(e, async () => {
         let {
           default: e
         } = await n.e("51529").then(n.bind(n, 228620));
@@ -137,11 +137,11 @@ let G = Chunk647438.forwardRef((e, t) => {
         log: t
       } = s;
       switch (t.targetType) {
-        case T.KFR.CHANNEL:
-        case T.KFR.CHANNEL_OVERWRITE:
-          let i = x.Z.getChannel(t.targetId),
-            a = j.Z.getGuild(l);
-          if (null != i && null != a) return (0, g.jW)(e, async () => {
+        case P.KFR.CHANNEL:
+        case P.KFR.CHANNEL_OVERWRITE:
+          let i = j.Z.getChannel(t.targetId),
+            a = v.Z.getGuild(l);
+          if (null != i && null != a) return (0, m.jW)(e, async () => {
             let {
               default: e
             } = await n.e("51529").then(n.bind(n, 228620));
@@ -149,18 +149,18 @@ let G = Chunk647438.forwardRef((e, t) => {
               channel: i
             }))
           });
-          return (0, g.jW)(e, async () => {
+          return (0, m.jW)(e, async () => {
             let {
               default: e
             } = await n.e("5396").then(n.bind(n, 999588));
             return n => (0, r.jsx)(e, L(A({}, n), {
               id: t.targetId,
-              label: P.intl.string(P.t.rCazna)
+              label: w.intl.string(w.t.rCazna)
             }))
           });
-        case T.KFR.USER:
-          let o = _.default.getUser(t.targetId);
-          if (null != o && null != l) return (0, g.jW)(e, async () => {
+        case P.KFR.USER:
+          let o = C.default.getUser(t.targetId);
+          if (null != o && null != l) return (0, m.jW)(e, async () => {
             let {
               default: e
             } = await n.e("50929").then(n.bind(n, 595011));
@@ -187,11 +187,11 @@ function M(e) {
     setLastExpandedRef: u,
     onHeaderClick: g,
     onContentClick: m
-  } = e, f = i.useRef(c);
+  } = e, p = i.useRef(c);
   i.useEffect(() => {
-    f.current = c
+    p.current = c
   }, [c]);
-  let h = (0, p.Z)("audit-log", f);
+  let h = (0, f.Z)("audit-log", p);
   return (0, r.jsx)(s.bG, {
     navigator: h,
     children: (0, r.jsx)(s.SJ, {
@@ -202,7 +202,7 @@ function M(e) {
         return (0, r.jsx)("div", L(A({
           ref: i
         }, s), {
-          className: w.list,
+          className: Z.list,
           children: t.map(e => {
             let t = a === e.id,
               i = o === e.id,
@@ -213,7 +213,7 @@ function M(e) {
               ref: e => {
                 null == s || s(e)
               },
-              className: w.row,
+              className: Z.row,
               onHeaderClick: g,
               onContentClick: m,
               log: e,
@@ -234,7 +234,7 @@ class U extends Chunk647438.PureComponent {
     document.removeEventListener("click", this.handleOutsideClick)
   }
   componentDidUpdate(e, t) {
-    this.state.expandedId !== t.expandedId && this.fixScroll(), !this.props.showLoadMore && this.props.logs.length !== e.logs.length && null != this._scrollerRef && this.isScrollerAtBottom() && (0, u.OY)(this.props.guildId, true)
+    this.state.expandedId !== t.expandedId && this.fixScroll(), !this.props.showLoadMore && this.props.logs.length !== e.logs.length && null != this._scrollerRef && this.isScrollerAtBottom() && (0, g.OY)(this.props.guildId, true)
   }
   isScrollerAtBottom() {
     var e;
@@ -267,14 +267,6 @@ class U extends Chunk647438.PureComponent {
     }
     return module
   }
-  renderUserQuickSelectValue(e) {
-    var t;
-    return null != (t = e.valueLabel) ? t : e.label
-  }
-  renderActionQuickSelectValue(e) {
-    var t;
-    return null != (t = e.valueLabel) ? t : e.label
-  }
   renderHeader() {
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsxs)("div", {
@@ -304,7 +296,7 @@ class U extends Chunk647438.PureComponent {
       isInitialLoading: s,
       isLoading: o,
       hasError: c,
-      guildId: u,
+      guildId: d,
       guild: g
     } = this.props;
     if (a) return (0, Chunk951288.jsx)(Chunk497321.Z, {});
@@ -331,8 +323,8 @@ class U extends Chunk647438.PureComponent {
     }
     return (0, Chunk951288.jsx)(M, {
       logs: Chunk647438,
-      guildId: Chunk480137,
-      guild: Chunk239091,
+      guildId: Chunk333200,
+      guild: Chunk480137,
       expandedId: module,
       lastExpandedId: exports,
       setExpandedRef: this.handleSetExpandedRef,
@@ -373,129 +365,105 @@ class U extends Chunk647438.PureComponent {
       expandedId: null,
       lastExpandedId: null,
       actionFilterQuery: ""
-    }), D(this, "renderActionQuickSelectItem", (e, t) => {
-      var n;
-      let {
-        actionFilter: i
-      } = this.props, l = (0, h.Pw)(e.value), a = (0, h.p5)(e.value), s = e.value === i;
-      return (0, r.jsxs)(d.lo1, {
+    }), D(this, "formatActionOption", e => {
+      let t = (0, b.Pw)(e.value),
+        n = (0, b.p5)(e.value);
+      return {
+        id: e.value,
         value: e.value,
-        selectedColor: d.lo1.Colors.BRAND,
-        children: [(0, r.jsx)(d.lo1.Icon, {
-          children: (0, r.jsx)(I.mp, {
-            themeOverride: s ? T.BRd.DARK : null,
-            actionType: l,
-            targetType: a,
-            action: e.value
-          })
-        }), (0, r.jsx)(d.lo1.Label, {
-          children: e.label
-        }), (0, r.jsx)(d.lo1.Checkmark, {})]
-      }, null != (n = e.key) ? n : t)
-    }), D(this, "renderUserQuickSelectItem", (e, t) => {
-      var n;
-      if (e.user instanceof b.Z) {
-        let t = e.user;
-        return (0, r.jsxs)(d.lo1, {
-          value: t.id,
-          selectedColor: d.lo1.Colors.BRAND,
-          children: [(0, r.jsx)(d.lo1.Icon, {
-            children: (0, r.jsx)(d.qEK, {
-              size: d.EFr.SIZE_32,
-              src: t.getAvatarURL(this.props.guildId, 32),
-              "aria-label": t.username,
-              className: w.avatar
-            })
-          }), (0, r.jsxs)(d.lo1.Label, {
-            children: [(0, r.jsx)(d.Text, {
-              variant: "text-sm/normal",
-              children: O.ZP.getUserTag(t, {
-                mode: "username"
-              })
-            }), !t.hasUniqueUsername() && (0, r.jsxs)(d.Text, {
-              variant: "text-xs/normal",
-              className: w.discriminator,
-              children: ["#", t.discriminator]
-            })]
-          }), (0, r.jsx)(d.lo1.Checkmark, {})]
-        }, t.id)
+        label: e.label,
+        leading: (0, r.jsx)(S.mp, {
+          themeOverride: null,
+          actionType: t,
+          targetType: n,
+          action: e.value
+        })
       }
-      return (0, r.jsxs)(d.lo1, {
+    }), D(this, "formatUserOption", e => {
+      if (!(e.user instanceof x.Z)) return {
+        id: e.value,
         value: e.value,
-        selectedColor: d.lo1.Colors.BRAND,
-        children: [(0, r.jsx)(d.lo1.Icon, {
-          children: (0, r.jsx)(d.BFJ, {
-            size: "custom",
-            color: "currentColor",
-            width: 30,
-            height: 30
+        label: e.label,
+        leading: (0, r.jsx)(u.BFJ, {
+          size: "custom",
+          color: "currentColor",
+          width: 30,
+          height: 30
+        })
+      };
+      {
+        let t = e.user;
+        return {
+          id: t.id,
+          value: t.id,
+          label: y.ZP.getUserTag(t, {
+            mode: "username"
+          }),
+          leading: (0, r.jsx)(u.qEK, {
+            size: u.EFr.SIZE_24,
+            src: t.getAvatarURL(this.props.guildId, 32),
+            "aria-label": t.username,
+            className: Z.avatar
+          }),
+          trailing: t.hasUniqueUsername() ? true : (0, r.jsxs)(u.Text, {
+            variant: "text-xs/normal",
+            className: Z.discriminator,
+            children: ["#", t.discriminator]
           })
-        }), (0, r.jsx)(d.lo1.Label, {
-          children: e.label
-        }), (0, r.jsx)(d.lo1.Checkmark, {})]
-      }, null != (n = e.key) ? n : t)
+        }
+      }
     }), D(this, "renderHeaderDropdowns", () => {
       var e, t;
       let {
         actionFilter: n,
         hide: i,
         userIdFilter: l,
-        moderators: s
+        moderators: a
       } = this.props;
       if (i) return null;
-      let o = E.Iv(),
-        c = null != (e = o.find(e => {
+      let s = N.Iv(),
+        o = null != (e = s.find(e => {
           let {
             value: t
           } = e;
           return n === t
-        })) ? e : o[0],
-        u = {
-          label: P.intl.string(P.t.ZRFdsL),
-          valueLabel: P.intl.string(P.t.an9Ry3),
+        })) ? e : s[0],
+        c = {
+          label: w.intl.string(w.t.ZRFdsL),
+          valueLabel: w.intl.string(w.t.an9Ry3),
           value: null
         },
-        g = [u, ...s].map(e => e instanceof b.Z ? function(e) {
+        u = [c, ...a].map(e => e instanceof x.Z ? function(e) {
           return {
             label: e.username,
             value: e.id,
             user: e
           }
         }(e) : e),
-        m = null != (t = g.find(e => {
+        g = null != (t = u.find(e => {
           let {
             value: t
           } = e;
           return t === l
-        })) ? t : u;
+        })) ? t : c;
       return (0, r.jsxs)("div", {
-        className: w.quickSelect,
-        children: [(0, r.jsx)(d.EFH, {
-          popoutClassName: a()(w.selectFilterPopout, R.elevationBorderHigh),
-          items: g,
-          renderItem: this.renderUserQuickSelectItem,
-          renderValue: this.renderUserQuickSelectValue,
-          value: m,
-          onChange: this.handleFilterUserChange,
-          label: P.intl.string(P.t["hxnY/q"]),
-          placeholder: P.intl.string(P.t.pYHobK),
-          popoutProps: {
-            autoInvert: false,
-            position: "bottom"
-          }
-        }), (0, r.jsx)(d.EFH, {
-          placeholder: P.intl.string(P.t.I288Zx),
-          label: P.intl.string(P.t.rautds),
-          popoutClassName: a()(w.selectFilterPopout, R.elevationBorderLow),
-          items: o,
-          renderItem: this.renderActionQuickSelectItem,
-          renderValue: this.renderActionQuickSelectValue,
-          value: c,
-          onChange: this.handleFilterActionChange,
-          popoutProps: {
-            autoInvert: false,
-            position: "bottom"
-          }
+        className: Z.quickSelect,
+        children: [(0, r.jsx)(d.V, {
+          options: u,
+          formatOption: this.formatUserOption,
+          value: g.value,
+          onSelectionChange: this.handleFilterUserChange,
+          label: w.intl.string(w.t["hxnY/q"]),
+          placeholder: w.intl.string(w.t.pYHobK),
+          selectionMode: "single"
+        }), (0, r.jsx)(d.V, {
+          placeholder: w.intl.string(w.t.I288Zx),
+          label: w.intl.string(w.t.rautds),
+          options: s,
+          formatOption: this.formatActionOption,
+          value: o.value,
+          onSelectionChange: this.handleFilterActionChange,
+          selectionMode: "single"
         })]
       })
     }), D(this, "renderLoadMore", () => {
@@ -506,17 +474,17 @@ class U extends Chunk647438.PureComponent {
       } = this.props;
       if (e && t && !n) return (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: w.loadMore,
-        children: (0, r.jsx)(d.Button, {
+        className: Z.loadMore,
+        children: (0, r.jsx)(u.Button, {
           variant: "secondary",
-          text: P.intl.string(P.t["Q/LSXp"]),
+          text: w.intl.string(w.t["Q/LSXp"]),
           onClick: this.handleFetchNextPage
         })
       })
     }), D(this, "handleFilterActionChange", e => {
-      (0, u.ZX)(e, this.props.guildId)
+      (0, g.ZX)(e, this.props.guildId)
     }), D(this, "handleFilterUserChange", e => {
-      (0, u.uo)(e, this.props.guildId)
+      (0, g.uo)(e, this.props.guildId)
     }), D(this, "handleHeaderClick", e => {
       let {
         expandedId: t
@@ -540,7 +508,7 @@ class U extends Chunk647438.PureComponent {
     }), D(this, "handleOnScroll", () => {
       this.isScrollerAtBottom() && this.handleFetchNextPage()
     }), D(this, "handleFetchNextPage", () => {
-      (0, u.OY)(this.props.guildId)
+      (0, g.OY)(this.props.guildId)
     }), D(this, "handleActionFilterQueryChange", e => {
       this.setState({
         actionFilterQuery: e
@@ -563,7 +531,7 @@ let B = Chunk442837.ZP.connectStores([Chunk233857.Z, Chunk999382.Z, Chunk430824.
   return {
     guildId: module,
     guild: exports,
-    moderators: Chunk233857.Z.userIds.map(e => _.default.getUser(e)).filter(Chunk823379.lm),
+    moderators: Chunk233857.Z.userIds.map(e => C.default.getUser(e)).filter(Chunk823379.lm),
     isInitialLoading: Chunk233857.Z.isInitialLoading,
     isLoading: Chunk233857.Z.isLoading,
     isLoadingNextPage: Chunk233857.Z.isLoadingNextPage,

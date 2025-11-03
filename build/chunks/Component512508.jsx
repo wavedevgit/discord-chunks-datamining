@@ -77,8 +77,8 @@ function S(e) {
 function Z(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let N = (0, Chunk313201.hQ)(),
-  D = (0, Chunk313201.hQ)(),
+let D = (0, Chunk313201.hQ)(),
+  N = (0, Chunk313201.hQ)(),
   R = "text-sm/medium";
 
 function L(e) {
@@ -248,7 +248,7 @@ function k(e) {
   let Y = (e, t, n) => {
       n.stopPropagation(), n.preventDefault(), 2 === t ? M(e) : (1 === t || M(e), k(e))
     },
-    Q = l.useCallback(e => {
+    W = l.useCallback(e => {
       let t = _({}, g);
       P(e) ? t[e.id] = V(e.record) : L(e) && (t[e.id] = I(e.record)), G(t), Z(""), z(), setTimeout(() => {
         var e;
@@ -260,7 +260,7 @@ function k(e) {
         })
       }, 16)
     }, [G, g]),
-    W = l.useCallback(e => {
+    Q = l.useCallback(e => {
       let {
         section: n,
         row: l
@@ -268,14 +268,14 @@ function k(e) {
       return (0, r.jsx)(u.P3F, {
         className: o()(H.selectableSearchRow, H.rowHeight),
         onClick: e => {
-          e.stopPropagation(), Q(i)
+          e.stopPropagation(), W(i)
         },
         children: (0, r.jsx)("div", {
           className: H.rowContainer,
           children: T(i, t, H.searchRowLabel)
         })
       }, i.id)
-    }, [t, Q, B]),
+    }, [t, W, B]),
     K = l.useMemo(() => v.map(e => {
       var n;
       return n = g[e], w(_({}, n.tag), {
@@ -319,8 +319,8 @@ function k(e) {
         placeholder: null != b ? b : O.intl.string(O.t.uqHLzW),
         sections: [v.length],
         inputProps: {
-          "aria-labelledby": N,
-          "aria-controls": D,
+          "aria-labelledby": D,
+          "aria-controls": N,
           "aria-expanded": A,
           onFocus: e => Y(true, 2, e),
           onBlur: e => Y(false, 2, e)
@@ -334,7 +334,7 @@ function k(e) {
           className: H.resultsListContainer,
           innerClassName: H.resultsList,
           sections: q,
-          renderRow: W,
+          renderRow: Q,
           rowHeight: 34,
           renderSection: e => {
             let {
@@ -363,7 +363,7 @@ function k(e) {
           footerHeight: e => 0 === e ? 0 === q[1] && q[0] > 0 ? 0 : 32 : 0,
           role: true,
           innerRole: "listbox",
-          innerId: D,
+          innerId: N,
           innerAriaOrientation: "vertical"
         })
       })]

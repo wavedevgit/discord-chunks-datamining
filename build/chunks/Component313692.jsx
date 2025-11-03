@@ -36,31 +36,31 @@ function D(e) {
     location: U,
     className: L,
     onNavigate: M
-  } = e, b = l.useRef(null), x = (0, o.e7)([m.ZP], () => m.ZP.getGuildSidebarState(D), [D]), v = l.useRef(0), [P, j] = l.useState(null != (t = null == x ? true : x.details.additionalSearchQuery) ? t : {}), y = (0, O.z0)(i, D, {
+  } = e, x = l.useRef(null), b = (0, o.e7)([m.ZP], () => m.ZP.getGuildSidebarState(D), [D]), v = l.useRef(0), [P, j] = l.useState(null != (t = null == b ? true : b.details.additionalSearchQuery) ? t : {}), y = (0, O.z0)(i, D, {
     addtionalQuery: P,
     shouldDispatch: true
   }), G = (0, o.e7)([N.default], () => N.default.getUser(i), [i]), k = (0, o.e7)([g.ZP], () => g.ZP.getMember(D, i), [D, i]);
   (0, c.Ng)(() => {
-    let e = null == x ? true : x.details.scrollOffset;
+    let e = null == b ? true : b.details.scrollOffset;
     if (null != e) {
       var t;
-      null == (t = b.current) || t.scrollTo({
+      null == (t = x.current) || t.scrollTo({
         to: e,
         animate: false
       })
     }
   });
   let F = l.useCallback(e => {
-      null != x && (v.current = e.target.scrollTop, (0, h.r)(D, i, x.baseChannelId, {
+      null != b && (v.current = e.target.scrollTop, (0, h.r)(D, i, b.baseChannelId, {
         modViewPanel: R.k.MESSAGE_HISTORY,
         additionalSearchQuery: P,
         scrollOffset: v.current
       }))
-    }, [D, i, x, P]),
+    }, [D, i, b, P]),
     w = (0, a.throttle)(F, 300),
     z = l.useCallback(e => {
       var t, n;
-      if (null == x) return;
+      if (null == b) return;
       let r = (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -90,12 +90,12 @@ function D(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t);
-      j(r), (0, h.r)(D, i, x.baseChannelId, {
+      j(r), (0, h.r)(D, i, b.baseChannelId, {
         modViewPanel: R.k.MESSAGE_HISTORY,
         additionalSearchQuery: r,
         scrollOffset: v.current
       })
-    }, [D, i, x, P]),
+    }, [D, i, b, P]),
     V = null != (n = null == P ? true : P.offset) ? n : 0,
     Z = (0, o.e7)([d.Z], () => {
       if (null == y.result) return [];
@@ -148,7 +148,7 @@ function D(e) {
       onNavigate: M
     }), (0, r.jsx)(u.Den, {
       className: C.innerContainer,
-      ref: b,
+      ref: x,
       onScroll: w,
       children: (0, r.jsx)(T.Z, {
         messages: Z,

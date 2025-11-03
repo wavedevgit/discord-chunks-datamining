@@ -72,7 +72,7 @@ let M = Chunk647438.memo(function() {
       })
     })
   }),
-  b = Chunk647438.memo(function() {
+  x = Chunk647438.memo(function() {
     return (0, Chunk951288.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t.OrCp9h),
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -83,7 +83,7 @@ let M = Chunk647438.memo(function() {
       })
     })
   }),
-  x = {
+  b = {
     [Chunk327999.gq.UNSPECIFIED]: {
       type: Chunk327999.gq.UNSPECIFIED,
       getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.DvMBkS),
@@ -297,7 +297,7 @@ function G(e) {
     }
     return l
   }(e, ["sourceInviteCode", "joinSourceType", "joinSourceApplicationId", "integrationType", "joinSourceChannelId", "showJoinMethodContextAsFooter", "guildId", "inviterUser", "onClickInviter"]);
-  let N = null != n ? x[n] : null,
+  let N = null != n ? b[n] : null,
     h = n === p.gq.INTEGRATION && null != o,
     O = (0, d.q)(i),
     f = (0, a.e7)([m.Z], () => m.Z.getChannel(c)),
@@ -409,8 +409,8 @@ let k = Chunk647438.memo(function(e) {
     joinSourceChannelId: g,
     joinSourceApplicationId: O,
     integrationType: f
-  } = E, S = null != m ? x[m] : null, C = null != (n = null == S ? true : S.hasTooltip) && n;
-  return (m === p.gq.INVITE || m === p.gq.VANITY_URL || m === p.gq.MANUAL_MEMBER_VERIFICATION && null != T) && A ? (0, r.jsx)(b, {}) : (0, r.jsx)(j, {
+  } = E, S = null != m ? b[m] : null, C = null != (n = null == S ? true : S.hasTooltip) && n;
+  return (m === p.gq.INVITE || m === p.gq.VANITY_URL || m === p.gq.MANUAL_MEMBER_VERIFICATION && null != T) && A ? (0, r.jsx)(x, {}) : (0, r.jsx)(j, {
     hasTooltip: C && !o,
     inviterUser: null != _ ? _ : null,
     guildId: s,

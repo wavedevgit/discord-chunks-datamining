@@ -2,10 +2,8 @@
 /** chunk id: 887580, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $2: () => E,
-  sZ: () => O,
-  vF: () => I
-}), require("./413496.js"), require("./433524.js"), require("./35282.js");
+  v: () => b
+});
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -13,34 +11,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk314897 = require("./314897.js"),
   Chunk594174 = require("./594174.js"),
   Chunk572004 = require("./572004.js"),
-  Chunk499533 = require("./499533.js"),
+  Chunk922699 = require("./922699.js"),
   Chunk492435 = require("./492435.js"),
   Chunk389494 = require("./389494.jsx"),
   Chunk667344 = require("./667344.js"),
   Chunk453032 = require("./453032.js"),
   Chunk493075 = require("./493075.js"),
+  Chunk987338 = require("./987338.js"),
   Chunk941189 = require("./941189.js");
-let g = RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
 
 function E(e) {
-  return g.test(e)
-}
-
-function b(e) {
-  let t = e.match(g);
-  return null == t || t.length < 2 ? null : t[1]
-}
-
-function y(e) {
-  let t = e.match(g);
-  return null == t || t.length < 3 ? null : parseInt(t[2], 10)
-}
-
-function O(e, t) {
-  return null != t ? "dev://experiment/".concat(e, "/").concat(t) : "dev://experiment/".concat(e)
-}
-
-function v(e) {
   let {
     url: t
   } = e, n = i.useCallback(() => {
@@ -51,7 +31,7 @@ function v(e) {
     }))
   }, [t]);
   return (0, r.jsx)(o.P3F, {
-    className: m.copyLinkButton,
+    className: g.copyLinkButton,
     onClick: n,
     children: (0, r.jsx)(o.xPt, {
       size: "sm",
@@ -60,47 +40,47 @@ function v(e) {
   })
 }
 
-function I(e) {
+function b(e) {
   let {
     url: t
-  } = e, n = b(t), c = y(t), {
-    experiments: g,
-    overridesInfo: E
-  } = (0, h.s)(), {
+  } = e, n = (0, u.q3)(t), c = (0, u.XV)(t), {
+    experiments: b,
+    overridesInfo: y
+  } = (0, h.sI)(), {
     experiments: O,
-    overridesInfo: I
-  } = (0, _.Q)(), T = i.useMemo(() => null == n ? null : null != g[n] ? g[n] : O[n], [g, O, n]), S = i.useMemo(() => {
+    overridesInfo: v
+  } = (0, _.Qb)(), I = i.useMemo(() => null == n ? null : null != b[n] ? b[n] : O[n], [b, O, n]), T = i.useMemo(() => {
     if (null == n);
-    else if (null != E[n]) return E[n];
-    else if (null != I[n]) return I[n]
-  }, [E, I, n]), A = s.default.getId(), C = (0, p.a)(T, A), N = i.useMemo(() => null == C || null == T ? null : T.system === d.I.LEGACY ? u.Z.getExperimentBucketName(C.bucket) : T.system === d.I.APEX ? "Variant ".concat(C.variantId) : null, [C, T]), R = (0, a.e7)([l.default], () => {
+    else if (null != y[n]) return y[n];
+    else if (null != v[n]) return v[n]
+  }, [y, v, n]), S = s.default.getId(), A = (0, p.aN)(I, S), C = i.useMemo(() => (0, u.rB)(I, A), [A, I]), N = (0, a.e7)([l.default], () => {
     let e = l.default.getCurrentUser();
     return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
   });
-  if (null == n || null == T) return null;
-  let P = (0, f.a)(T).find(e => e.value === c),
-    w = +(null != P),
-    D = null != S && null != P && S.variantId === P.value,
-    x = () => {
-      null != P && (D ? (0, d.rX)(T.system, n, null) : (0, d.rX)(T.system, n, P.value))
+  if (null == n || null == I) return null;
+  let R = (0, u.ak)(I).find(e => e.value === c),
+    P = null != R ? m.su.EXPERIMENT_TREATMENT : m.su.EXPERIMENT,
+    w = null != T && null != R && T.variantId === R.value,
+    D = () => {
+      null != R && (w ? (0, d.rX)(I.system, n, null) : (0, d.rX)(I.system, n, R.value))
     },
-    L = (0, r.jsx)(v, {
+    x = (0, r.jsx)(E, {
       url: t
     }),
-    M = null;
-  return (1 === w && null != P ? M = (0, r.jsx)(o.Text, {
+    L = null;
+  return (P === m.su.EXPERIMENT_TREATMENT && null != R ? L = (0, r.jsx)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
-    children: P.label
-  }) : null != C && (M = (0, r.jsxs)(o.Text, {
+    children: R.label
+  }) : null != A && (L = (0, r.jsxs)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
-    children: ["Server Config: ", N]
-  })), R) ? (0, r.jsxs)("div", {
-    className: m.root,
+    children: ["Server Config: ", C]
+  })), N) ? (0, r.jsxs)("div", {
+    className: g.root,
     children: [(0, r.jsx)("div", {
       children: (0, r.jsx)("div", {
-        className: m.header,
+        className: g.header,
         children: (0, r.jsxs)(o.Kqy, {
           direction: "horizontal",
           justify: "space-between",
@@ -114,23 +94,23 @@ function I(e) {
               gap: 0,
               children: [(0, r.jsx)(o.Text, {
                 variant: "text-md/semibold",
-                children: T.title
-              }), M]
+                children: I.title
+              }), L]
             })]
-          }), L]
+          }), x]
         })
       })
-    }), null != P ? (0, r.jsx)(o.Button, {
+    }), null != R ? (0, r.jsx)(o.Button, {
       fullWidth: true,
-      variant: D ? "critical-primary" : "primary",
-      text: D ? "Clear Treatment ".concat(P.value) : "Apply Treatment ".concat(P.value),
-      onClick: x
+      variant: w ? "critical-primary" : "primary",
+      text: w ? "Clear Treatment ".concat(R.value) : "Apply Treatment ".concat(R.value),
+      onClick: D
     }) : (0, r.jsx)("div", {
-      className: m.experimentOverride,
+      className: g.experimentOverride,
       children: (0, r.jsx)(f.y, {
-        experiment: T,
+        experiment: I,
         experimentId: n,
-        overrideInfo: S
+        overrideInfo: T
       })
     })]
   }) : null

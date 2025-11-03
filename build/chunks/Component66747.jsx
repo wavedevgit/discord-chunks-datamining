@@ -48,7 +48,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk50493 = require("./50493.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk266631 = require("./266631.js");
-let Q = Chunk647438.memo(function(e) {
+let W = Chunk647438.memo(function(e) {
     let {
       member: t
     } = e, n = l.useMemo(() => (0, j.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), i = l.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
@@ -82,7 +82,7 @@ let Q = Chunk647438.memo(function(e) {
         })
       }), (0, O.He)(t.userId) && (0, r.jsx)(C.u, {
         text: z.intl.string(z.t.PK9FQ2),
-        children: (0, r.jsx)(N.Z, {
+        children: (0, r.jsx)(D.Z, {
           width: 20,
           height: 20,
           color: d.Z.colors.TEXT_DANGER.css
@@ -98,7 +98,7 @@ let Q = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  W = Chunk647438.memo(function(e) {
+  Q = Chunk647438.memo(function(e) {
     let {
       member: t,
       highestRole: n
@@ -322,7 +322,7 @@ let $ = Chunk647438.memo(function(e) {
         className: o()(Y.mediumCol, {
           [Y.compact]: b
         }),
-        children: (0, r.jsx)(W, {
+        children: (0, r.jsx)(Q, {
           member: t,
           highestRole: i
         })
@@ -330,7 +330,7 @@ let $ = Chunk647438.memo(function(e) {
         className: o()(Y.smallCol, {
           [Y.compact]: b
         }),
-        children: (0, r.jsx)(Q, {
+        children: (0, r.jsx)(W, {
           member: t
         })
       }), (0, r.jsx)("td", {
@@ -345,7 +345,7 @@ let $ = Chunk647438.memo(function(e) {
             children: (0, r.jsx)(m.P3F, {
               onClick: d,
               className: Y.button,
-              children: p ? (0, r.jsx)(D.Z, {
+              children: p ? (0, r.jsx)(N.Z, {
                 width: et,
                 height: et
               }) : (0, r.jsx)(m.tBG, {
@@ -390,17 +390,17 @@ let $ = Chunk647438.memo(function(e) {
       e.stopPropagation(), e.preventDefault(), H(e)
     }, [H]), S = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != g && (0, U.RE)(g, b)
-    }, [g, b]), N = l.useCallback(e => {
+    }, [g, b]), D = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != g && (O ? (0, x.r)(g.guildId, g.userId, q.oC.MEMBER_SAFETY, {
         modViewPanel: G.k.INFO
       }) : (0, U.RE)(g, b))
-    }, [g, b, O]), D = l.useCallback((e, t) => c()((0, a.omit)(e, en), (0, a.omit)(t, en)), []);
+    }, [g, b, O]), N = l.useCallback((e, t) => c()((0, a.omit)(e, en), (0, a.omit)(t, en)), []);
     return null == g ? null : (0, r.jsx)(T.Z, {
       role: "row",
       value: g,
       style: i,
       className: o()(Y.roundedRow, Y.memberRowContainer, s && Y.selected, h && Y.memberSelected, d && Y.loading),
-      equalityFn: D,
+      equalityFn: N,
       onClick: S,
       onContextMenu: w,
       children: (0, r.jsx)(ee, {
@@ -409,7 +409,7 @@ let $ = Chunk647438.memo(function(e) {
         highestRole: j,
         isHoldingAdvancedInfoKey: C,
         onOpenModerationMenu: w,
-        onOpenMemberView: N,
+        onOpenMemberView: D,
         compact: m,
         hasModViewPanelAccess: O
       })

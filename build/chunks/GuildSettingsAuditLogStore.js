@@ -29,8 +29,8 @@ let m = Chunk149765.$e(Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS
   U = false,
   L = false,
   M = true,
-  b = false,
-  x = null,
+  x = false,
+  b = null,
   v = Chunk981631.rsA.ALL,
   P = null,
   j = {},
@@ -140,13 +140,13 @@ class F extends(r = Chunk442837.ZP.Store) {
     return M
   }
   get hasError() {
-    return b
+    return x
   }
   get userIds() {
     return O
   }
   get userIdFilter() {
-    return x
+    return b
   }
   get targetIdFilter() {
     return P
@@ -172,10 +172,10 @@ let w = new F(Chunk570140.Z, {
   },
   AUDIT_LOG_FETCH_SUCCESS: function(e) {
     var t;
-    y = 0, D = false, U = false, M = true, b = false, N = G(e.logs), h = e.integrations, f = e.webhooks, R = e.guildScheduledEvents, S = null != (t = e.automodRules) ? t : [], p = e.threads, C = e.applicationCommands, e.logs.length < I.Rg9 && (M = false)
+    y = 0, D = false, U = false, M = true, x = false, N = G(e.logs), h = e.integrations, f = e.webhooks, R = e.guildScheduledEvents, S = null != (t = e.automodRules) ? t : [], p = e.threads, C = e.applicationCommands, e.logs.length < I.Rg9 && (M = false)
   },
   AUDIT_LOG_FETCH_FAIL: function() {
-    U = false, b = true, N = []
+    U = false, x = true, N = []
   },
   AUDIT_LOG_FETCH_NEXT_PAGE_START: function(e) {
     let {
@@ -211,7 +211,7 @@ let w = new F(Chunk570140.Z, {
     let {
       userId: t
     } = e;
-    x = t
+    b = t
   },
   AUDIT_LOG_FILTER_BY_TARGET: function(e) {
     let {
@@ -230,6 +230,6 @@ let w = new F(Chunk570140.Z, {
     })
   },
   GUILD_SETTINGS_CLOSE: function() {
-    N = [], O = [], v = Chunk981631.rsA.ALL, x = null, P = null, j = {}, y = 0, D = true, h = [], f = [], R = [], S = [], p = []
+    N = [], O = [], v = Chunk981631.rsA.ALL, b = null, P = null, j = {}, y = 0, D = true, h = [], f = [], R = [], S = [], p = []
   }
 })

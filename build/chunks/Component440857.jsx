@@ -92,7 +92,7 @@ function y(e) {
       text: g.intl.string(g.t.yW6ZdE),
       onClick: S
     })]
-  }), N = (0, r.jsxs)("span", {
+  }), D = (0, r.jsxs)("span", {
     className: j.buttonContainer,
     children: [(0, r.jsx)(c.pgN, {
       size: "custom",
@@ -128,7 +128,7 @@ function y(e) {
             }))
           })
         },
-        onSaveText: N,
+        onSaveText: D,
         onSaveButtonColor: s.Tt.RED,
         message: Z
       })

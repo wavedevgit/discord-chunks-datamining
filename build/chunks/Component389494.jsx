@@ -2,27 +2,19 @@
 /** chunk id: 389494, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  a: () => s,
-  y: () => l
+  y: () => s
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk492435 = require("./492435.js"),
-  Chunk438159 = require("./438159.js");
+  Chunk922699 = require("./922699.js"),
+  Chunk492435 = require("./492435.js");
 
 function s(e) {
-  return (0, o.v)(e).map(e => ({
-    label: e.label,
-    value: e.id
-  }))
-}
-
-function l(e) {
   let {
     label: t,
     description: n,
-    experiment: o,
+    experiment: s,
     experimentId: l,
     overrideInfo: c
   } = e;
@@ -31,7 +23,7 @@ function l(e) {
     description: n,
     value: null != c ? c.variantId : null,
     clearable: null != c,
-    options: s(o),
-    onChange: e => (0, a.rX)(o.system, l, e)
+    options: (0, a.ak)(s),
+    onChange: e => (0, o.rX)(s.system, l, e)
   })
 }

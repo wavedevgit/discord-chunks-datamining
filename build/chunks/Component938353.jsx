@@ -338,6 +338,7 @@ class tn extends(r = Chunk647438.Component) {
         message: e
       }, r);
       else if (n === S.g.COLLECTIBLES_SHOP) return null;
+      else if (n === S.g.EXPERIMENT) return null;
       else throw Error("Unknown coded link type: ".concat(n))
     })
   }
