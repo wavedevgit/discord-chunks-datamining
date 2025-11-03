@@ -73,7 +73,7 @@ function T() {
   let e = Chunk240458.V.getCurrentConfig({
       location: "WordFrequencyStore"
     }, {
-      autoTrackExposure: false
+      autoTrackExposure: true
     }).enabled,
     t = (0, Chunk657871.kB)("WordFrequencyStore", {
       autoTrackExposure: false
