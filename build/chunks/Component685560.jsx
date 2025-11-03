@@ -45,13 +45,14 @@ function N(e) {
   }
 }
 async function O(e, t, n) {
-  await Promise.all(t.map(e => s.tn.patch({
-    url: _.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
-    body: n ? {} : {
-      ends_at: i()().add(1, "day")
+  await s.tn.patch({
+    url: _.ANM.APPLIED_BOOST_MODIFY_END_DATE,
+    body: {
+      applied_boost_ids: t.map(e => e.id),
+      ends_at: n ? null : i()().add(1, "day")
     },
     rejectWithError: true
-  }))), (0, d.C0)(e), (0, x.BN)(e, true)
+  }), (0, d.C0)(e), (0, x.BN)(e, true)
 }
 async function P(e) {
   await s.tn.post({
