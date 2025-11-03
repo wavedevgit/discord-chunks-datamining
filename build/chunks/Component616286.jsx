@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(e) {
+function x(e) {
   let t = (0, s.e7)([m.Z], () => !(0, o.isEmpty)(m.Z.getTypingUsers(e)), [e]),
     n = (0, s.e7)([h.Z], () => h.Z.getVoiceChannelId() === e, [e]),
     {
@@ -41,7 +41,7 @@ function O(e) {
   }
 }
 
-function x(e) {
+function O(e) {
   let {
     className: t,
     channelId: n
@@ -50,7 +50,7 @@ function x(e) {
     mentionCount: l,
     isTyping: a,
     voiceChannelIsSelected: o
-  } = O(n);
+  } = x(n);
   return (0, r.jsx)(_.Z, {
     className: t,
     unreadCount: i,
@@ -98,7 +98,7 @@ function E(e) {
       unreadCount: t,
       mentionCount: n,
       isTyping: r
-    } = O(e), [l, a] = i.useState(false);
+    } = x(e), [l, a] = i.useState(false);
     return i.useEffect(() => {
       a(t > 0);
       let e = setTimeout(() => {
@@ -118,7 +118,7 @@ function E(e) {
     let {
       className: t
     } = e;
-    return (0, r.jsx)(x, {
+    return (0, r.jsx)(O, {
       className: t,
       channelId: n
     })
@@ -130,12 +130,12 @@ function E(e) {
     event: C.CkL.FOCUS_CHAT_BUTTON,
     handler: S ? null : M
   });
-  let [R, D] = i.useState(false), L = i.useCallback(() => {
+  let [R, D] = i.useState(false), k = i.useCallback(() => {
     h && D(true)
   }, [h]);
   (0, g.yp)({
     event: C.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
-    handler: L
+    handler: k
   }), i.useEffect(() => {
     let e;
     return R && (e = setTimeout(() => {
@@ -144,10 +144,10 @@ function E(e) {
       clearTimeout(e)
     }
   }, [R]);
-  let k = [t = h && S ? v.intl.string(v.t.DPgc5h) : I ? v.intl.string(v.t.nthdxB) : v.intl.string(v.t["5KxXrK"])];
-  return N > 0 && k.push(v.intl.formatToPlainString(v.t["3l1GOx"], {
+  let L = [t = h && S ? v.intl.string(v.t.DPgc5h) : I ? v.intl.string(v.t.nthdxB) : v.intl.string(v.t["5KxXrK"])];
+  return N > 0 && L.push(v.intl.formatToPlainString(v.t["3l1GOx"], {
     mentionCount: N
-  })), T > 0 && k.push(v.intl.string(v.t.x5zAGZ)), (0, r.jsx)(y.Z, function(e) {
+  })), T > 0 && L.push(v.intl.string(v.t.x5zAGZ)), (0, r.jsx)(y.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -168,7 +168,7 @@ function E(e) {
     buttonRef: P,
     onClick: A,
     label: t,
-    "aria-label": k.join(", "),
+    "aria-label": L.join(", "),
     iconComponent: w,
     tooltipPosition: "bottom",
     wrapperClassName: a()(l, null != o && {

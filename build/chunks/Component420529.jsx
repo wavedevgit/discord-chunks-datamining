@@ -56,17 +56,17 @@ function _(e) {
     y = (null == _ ? true : _.channelId) === e.id,
     C = (0, o.V)(e) && !e.isPrivate(),
     v = (0, o.Z)(e),
-    O = !(0, i.e7)([c.Z], () => c.Z.isInChannel(e.id)) && v || C,
-    x = (0, p.Z)();
-  return y || 0 !== x.length ? y ? (0, r.jsx)(l.sNh, {
+    x = !(0, i.e7)([c.Z], () => c.Z.isInChannel(e.id)) && v || C,
+    O = (0, p.Z)();
+  return y || 0 !== O.length ? y ? (0, r.jsx)(l.sNh, {
     label: m.intl.string(m.t.PlwgdU),
     id: "handoff",
     action: () => {
       (0, u.F)(_)
     },
     icon: (0, f.Z)(true),
-    disabled: O
-  }) : x.map(i => {
+    disabled: x
+  }) : O.map(i => {
     var o, s;
     return (0, r.jsx)(l.sNh, {
       id: "transfer-".concat(i.type, "-").concat(i.id),
@@ -94,7 +94,7 @@ function _(e) {
         })
       })(i),
       icon: (0, f.Z)(i.type),
-      disabled: O
+      disabled: x
     }, i.id)
   }) : null
 }

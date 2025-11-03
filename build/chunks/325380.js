@@ -46,6 +46,7 @@ var r = {
   actionBarLeading: "actionBarLeading__8a031",
   actionBarTrailing: "actionBarTrailing__8a031",
   actionButtonWrapper: "actionButtonWrapper__8a031",
-  actionBarTrailingFullWidth: "actionBarTrailingFullWidth__8a031"
+  actionBarTrailingFullWidth: "actionBarTrailingFullWidth__8a031",
+  actionBarLayoutChatInput: "actionBarLayoutChatInput__8a031"
 };
 require.r(module.exports = r)

@@ -28,7 +28,7 @@ let h = Chunk647438.memo(function(e) {
     videoSpinnerContext: _,
     userId: y,
     streamKey: C
-  } = e, [v, O] = l.useState(true);
+  } = e, [v, x] = l.useState(true);
   (0, u.Z)({
     location: "VideoStream",
     videoSpinnerContext: _,
@@ -38,7 +38,7 @@ let h = Chunk647438.memo(function(e) {
     paused: g
   });
   let {
-    onReady: x
+    onReady: O
   } = (0, c.Z)({
     streamId: t,
     userId: y,
@@ -47,8 +47,8 @@ let h = Chunk647438.memo(function(e) {
     streamKey: C,
     paused: g
   }), E = l.useCallback(() => {
-    O(false), x()
-  }, [x]);
+    x(false), O()
+  }, [O]);
   return (0, i.jsxs)("div", {
     className: o()(p.wrapper, r),
     children: [null != t && (0, i.jsx)(a, {

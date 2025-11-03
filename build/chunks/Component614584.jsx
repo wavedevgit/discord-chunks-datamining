@@ -68,33 +68,33 @@ let S = Chunk647438.memo(function(e) {
     setPopout: N,
     isReplySpineClickable: A,
     showReplySpine: w
-  } = e, M = S.state === h.Y.LOADED ? S.message : true, R = (0, _.Uj)(M), D = (0, u.p)(), L = s.d.useExperiment({
+  } = e, M = S.state === h.Y.LOADED ? S.message : true, R = (0, _.Uj)(M), D = (0, u.p)(), k = s.d.useExperiment({
     location: "repliedMessage"
-  }).enabled, k = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = i.useMemo(() => {
+  }).enabled, L = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = i.useMemo(() => {
     if (null == M) return null;
     let e = (0, o.Z)(M);
-    if (e.type === O.uaV.USER_JOIN) return (0, a.Rp)(x.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
+    if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
       username: null != R ? R.nick : e.author.username,
       usernameHook: e => e
     }));
-    if (e.type === O.uaV.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.Rp)((0, c.PA)({
+    if (e.type === x.uaV.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.Rp)((0, c.PA)({
       username: null != R ? R.nick : e.author.username,
       guildId: null == P ? true : P.guild_id,
       roleSubscriptionData: e.roleSubscriptionData
     }));
-    if (e.type === O.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.Rp)((0, p.Y)({
+    if (e.type === x.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.Rp)((0, p.Y)({
       application: null == e ? true : e.application,
       username: null == R ? true : R.nick
     }));
-    if (e.type === O.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, f.B2)({
+    if (e.type === x.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, f.B2)({
       application: null == e ? true : e.application,
       username: null == R ? true : R.nick
     }));
-    if (e.type === O.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, f.hj)({
+    if (e.type === x.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, f.hj)({
       application: null == e ? true : e.application,
       username: null == R ? true : R.nick
     }));
-    else if (e.type === O.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : x.intl.string(x.t.wnn1Dc);
+    else if (e.type === x.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : O.intl.string(O.t.wnn1Dc);
     if (null != e.content && "" !== e.content) {
       let t = {
           formatInline: true,
@@ -105,17 +105,17 @@ let S = Chunk647438.memo(function(e) {
           noStyleAndInteraction: true,
           allowHeading: true,
           allowList: true,
-          allowGameMentions: L
+          allowGameMentions: k
         }) : j(E({}, t), {
           formatInline: true,
-          allowHeading: k,
-          allowList: k,
-          allowGameMentions: L
+          allowHeading: L,
+          allowList: L,
+          allowGameMentions: k
         });
       return (0, b.ZP)(e, n).content
     }
     return null
-  }, [M, R, P, k, D, L]), {
+  }, [M, R, P, L, D, k]), {
     isReplyAuthorBlocked: B,
     isReplyAuthorIgnored: F
   } = (0, l.cj)([m.Z], () => ({

@@ -51,10 +51,10 @@ function m(e) {
   let v = i.useCallback(() => {
       null == m || m(), t()
     }, [m, t]),
-    O = i.useCallback(() => {
+    x = i.useCallback(() => {
       null == g || g(), t()
     }, [g, t]),
-    x = i.useRef(null);
+    O = i.useRef(null);
   return i.useEffect(() => {
     let e, t = c.Z.theme,
       r = false;
@@ -62,8 +62,8 @@ function m(e) {
       let [{
         default: i
       }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, a.wj)(t) ? C.dark() : C.light()]);
-      r || null == x.current || (e = i.loadAnimation({
-        container: x.current,
+      r || null == O.current || (e = i.loadAnimation({
+        container: O.current,
         renderer: "svg",
         loop: true,
         autoplay: true,
@@ -81,7 +81,7 @@ function m(e) {
         className: f.body,
         children: [null != C && (0, r.jsx)("div", {
           className: f.animation,
-          ref: x
+          ref: O
         }), (0, r.jsxs)("div", {
           className: f.content,
           children: [(0, r.jsx)("div", {
@@ -100,7 +100,7 @@ function m(e) {
                 className: f.button,
                 children: (0, r.jsx)(o.Button, {
                   variant: "secondary",
-                  onClick: O,
+                  onClick: x,
                   text: p.intl.string(p.t.fsBWmS)
                 })
               }), (0, r.jsx)(o.Text, {

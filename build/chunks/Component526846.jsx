@@ -1,7 +1,7 @@
 /** Chunk was on 88647 **/
 /** chunk id: 526846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => k
+  m: () => L
 }), require("./997841.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
 let R = Chunk973693.Y.APP_LAUNCHER_IN_VOICE_BANNER,
   D = "vc-activities-".concat((0, Chunk772848.Z)());
 
-function L(e) {
+function k(e) {
   var t;
   let n, {
       channel: l,
@@ -72,7 +72,7 @@ function L(e) {
       return null == e ? null : e.type === u.C.APPLICATION_BANNER ? e : null
     }, [null == f ? true : f.application_directory_collection_items]),
     {
-      trackItemImpressionRef: x
+      trackItemImpressionRef: O
     } = (0, b.Z)({
       applicationId: null != (t = null == y ? true : y.application.id) ? t : "",
       applicationFlags: null == y ? true : y.application.flags,
@@ -81,13 +81,13 @@ function L(e) {
       sectionOverallPosition: 0,
       promotionalLabel: null != y ? (0, g.dF)(y.application) : true
     });
-  return null == y || null == f || m ? null : (null != y.id && null != y.image_hash && (n = (0, O.$_)({
+  return null == y || null == f || m ? null : (null != y.id && null != y.image_hash && (n = (0, x.$_)({
     itemId: y.id,
     hash: y.image_hash,
     containerWidth: 584
   })), (0, r.jsxs)(p.P3F, {
     className: M.clickableBanner,
-    innerRef: x,
+    innerRef: O,
     onClick: () => {
       o(), (0, _.Z)({
         context: {
@@ -110,7 +110,7 @@ function L(e) {
     })]
   }))
 }
-let k = Chunk647438.forwardRef(function(e, t) {
+let L = Chunk647438.forwardRef(function(e, t) {
   var n;
   let {
     channel: l,
@@ -122,20 +122,20 @@ let k = Chunk647438.forwardRef(function(e, t) {
     className: b
   } = e, C = (0, d.e7)([f.Z], () => f.Z.useReducedMotion), {
     id: v,
-    guild_id: O
+    guild_id: x
   } = l;
   i.useEffect(() => {
     S.default.track(A.rMx.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
       channel_id: v,
-      guild_id: O
+      guild_id: x
     })
-  }, [v, O]), i.useEffect(() => {
+  }, [v, x]), i.useEffect(() => {
     o || s()
   }, [s, o]);
-  let j = (0, x.bp)(),
+  let j = (0, O.bp)(),
     {
       analyticsLocations: R,
-      newestAnalyticsLocation: k
+      newestAnalyticsLocation: L
     } = (0, m.ZP)(h.Z.ACTIVITIES_MINI_SHELF),
     U = j === A.IlC.POPOUT,
     B = (n = l.getGuildId(), (0, Z.Z)({
@@ -160,9 +160,9 @@ let k = Chunk647438.forwardRef(function(e, t) {
         type: "contextless"
       },
       openInPopout: U,
-      analyticsLocation: k
+      analyticsLocation: L
     }), u(), g()
-  }, [l, k, g, u, U]), H = i.useCallback(e => {
+  }, [l, L, g, u, U]), H = i.useCallback(e => {
     c(), S.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: l.id,
       guild_id: l.getGuildId()
@@ -213,7 +213,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
                 className: M.titleRightIcon
               })]
             })]
-          }), (0, r.jsx)(L, {
+          }), (0, r.jsx)(k, {
             openInPopout: U,
             channel: l,
             onClick: () => {

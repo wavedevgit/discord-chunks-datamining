@@ -1,7 +1,7 @@
 /** Chunk was on 88647 **/
 /** chunk id: 517525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -86,7 +86,7 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     friction: 18,
     clamp: true
   },
-  L = e => {
+  k = e => {
     let t, l, {
         participant: o,
         isUpsellEnabled: s,
@@ -101,7 +101,7 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       {
         analyticsLocations: M
       } = (0, m.ZP)(),
-      R = null != (0, O.Z)(o);
+      R = null != (0, x.Z)(o);
     try {
       t = (0, v.nG)(w)
     } catch (e) {
@@ -114,22 +114,22 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     }
     let D = t || l,
       {
-        location: L
+        location: k
       } = (0, h.O)(),
-      k = (0, c.e7)([_.default], () => _.default.getCurrentUser()),
-      U = s && !C.ZP.isPremium(k, E.PremiumTypes.TIER_1) && !C.ZP.canStreamQuality(C.ZP.StreamQuality.MID, k),
+      L = (0, c.e7)([_.default], () => _.default.getCurrentUser()),
+      U = s && !C.ZP.isPremium(L, E.PremiumTypes.TIER_1) && !C.ZP.canStreamQuality(C.ZP.StreamQuality.MID, L),
       B = i.useCallback(() => {
         U && D && (0, f.ZDy)(async () => {
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
           return t => (0, r.jsx)(e, I(P({}, t), {
-            analyticsSource: L
+            analyticsSource: k
           }))
         })
-      }, [U, D, L]);
+      }, [U, D, k]);
     if (i.useEffect(() => {
-        !Z && D && (y.default.track(x.rMx.PREMIUM_UPSELL_VIEWED, {
+        !Z && D && (y.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
           type: E.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: l,
@@ -165,7 +165,7 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       shape: g.eE[p]
     })
   },
-  k = e => {
+  L = e => {
     let {
       participant: t,
       showQuality: n,
@@ -203,7 +203,7 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       }, i), {
         children: [y((e, n) => n ? (0, r.jsx)(o.animated.div, {
           style: e,
-          children: (0, r.jsx)(L, {
+          children: (0, r.jsx)(k, {
             className: S.liveQualityIndicator,
             participant: t,
             size: s,

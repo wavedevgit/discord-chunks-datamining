@@ -1,7 +1,7 @@
 /** Chunk was on 88647 **/
 /** chunk id: 351248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -145,7 +145,7 @@ class v extends Chunk647438.PureComponent {
   }
 }
 
-function O(e) {
+function x(e) {
   var t;
   let {
     participants: n,
@@ -154,7 +154,7 @@ function O(e) {
     onClick: o,
     width: u,
     guildId: b
-  } = e, _ = (0, p.ZP)(), y = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([f.Z], () => f.Z.isFocused()), O = n.map(e => {
+  } = e, _ = (0, p.ZP)(), y = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([f.Z], () => f.Z.isFocused()), x = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -187,6 +187,6 @@ function O(e) {
     component: "div",
     role: "list",
     className: a()(g.root, l),
-    children: O
+    children: x
   })
 }

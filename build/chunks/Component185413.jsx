@@ -1,7 +1,7 @@
 /** Chunk was on 88647 **/
 /** chunk id: 185413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => O
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -41,7 +41,7 @@ function v(e) {
   return e
 }
 
-function O(e, t) {
+function x(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -57,10 +57,10 @@ function O(e, t) {
   return i
 }
 
-function x(e) {
+function O(e) {
   var {
     channelId: t
-  } = e, n = O(e, ["channelId"]);
+  } = e, n = x(e, ["channelId"]);
   let l = (0, a.e7)([d.Z], () => d.Z.getChannel(t), [t]),
     o = (0, a.e7)([p.Z], () => p.Z.getGuild(null == l ? true : l.getGuildId()));
   return (i.useEffect(() => {
@@ -81,7 +81,7 @@ function E(e) {
       newChannel: f,
       inSettings: _
     } = e,
-    x = O(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
+    O = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
   let [E, j] = i.useState(""), [S, P] = i.useState({}), [I, Z] = i.useState(false), [T, N] = i.useState(null), A = i.useRef(null), {
     roles: w,
     members: M,
@@ -89,8 +89,8 @@ function E(e) {
   } = (0, g.Q)(a, d, d.accessPermissions, E), D = m.Z.useSections({
     roles: w,
     members: M
-  }), L = f && 0 === Object.keys(S).length;
-  async function k() {
+  }), k = f && 0 === Object.keys(S).length;
+  async function L() {
     if (null == d || 0 === Object.keys(S).length) return void p();
     Z(true);
     try {
@@ -119,7 +119,7 @@ function E(e) {
     roles: w,
     members: M,
     getRichTag: R,
-    children: (0, r.jsx)(l.Modal, (t = v({}, x), n = n = {
+    children: (0, r.jsx)(l.Modal, (t = v({}, O), n = n = {
       title: y.intl.string(y.t.dMJ3Y6),
       onClose: p,
       input: (0, r.jsxs)("div", {
@@ -158,7 +158,7 @@ function E(e) {
         renderRow: m.Z.renderRow,
         sections: D
       },
-      actions: L ? [{
+      actions: k ? [{
         variant: "secondary",
         text: y.intl.string(y.t.u46sxe),
         onClick: p
@@ -169,7 +169,7 @@ function E(e) {
       }, {
         variant: "primary",
         text: y.intl.string(y.t.i4jeWR),
-        onClick: k,
+        onClick: L,
         loading: I
       }]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

@@ -105,7 +105,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       showNewMessagesBar: _,
       messageDisplayCompact: y,
       channelStream: v,
-      uploads: O,
+      uploads: x,
       hasUnreads: E,
       editingMessageId: S,
       fontSize: P,
@@ -115,7 +115,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       hideSummaries: A = false,
       jumpBarClassName: M,
       typingGradient: R
-    } = e, [L, Y] = i.useState(null != (n = j.Z.isAtBottom(m.id)) && n), K = i.useMemo(() => y ? (0, D.aJ)({
+    } = e, [k, Y] = i.useState(null != (n = j.Z.isAtBottom(m.id)) && n), K = i.useMemo(() => y ? (0, D.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -140,7 +140,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       handleScrollToBottom: i.useCallback(() => Y(true), [Y]),
       handleScrollFromBottom: i.useCallback(() => Y(false), [Y]),
       additionalMessagePadding: 48
-    }), J = (0, k.Z)({
+    }), J = (0, L.Z)({
       scrollerRef: X.ref,
       isEditing: null != S,
       keyboardModeEnabled: I,
@@ -158,7 +158,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       showNewMessagesBar: _,
       messageDisplayCompact: y,
       channelStream: v,
-      uploads: O,
+      uploads: x,
       loadMore: X.loadMore,
       scrollManager: X,
       specs: K,
@@ -213,13 +213,13 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
         var t;
         X.ref.current = e, ea.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
       }),
-      ec = (0, c.e7)([x.Z], () => {
+      ec = (0, c.e7)([O.Z], () => {
         var e;
-        let t = null == (e = x.Z.settings.appearance) ? true : e.clientThemeSettings;
+        let t = null == (e = O.Z.settings.appearance) ? true : e.clientThemeSettings;
         return (null == t ? true : t.backgroundGradientPresetId) != null || (null == t ? true : t.customUserThemeSettings) != null
       }),
-      eu = i.useMemo(() => R ? L ? H.chatTypingGradientAtBottom : H.chatTypingGradientNotAtBottom : H.chatGradient, [R, L]),
-      ed = i.useMemo(() => R ? L ? H.typingGradientAtBottom : H.typingGradientNotAtBottom : H.gradientDefault, [R, L]);
+      eu = i.useMemo(() => R ? k ? H.chatTypingGradientAtBottom : H.chatTypingGradientNotAtBottom : H.chatGradient, [R, k]),
+      ed = i.useMemo(() => R ? k ? H.typingGradientAtBottom : H.typingGradientNotAtBottom : H.gradientDefault, [R, k]);
     return (0, r.jsxs)(s.bG, {
       navigator: J,
       children: [null != er && er, (0, r.jsxs)("div", {
@@ -292,14 +292,14 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
         canManageMessages: r
       }
     }(t), {
-      messageGroupSpacing: x,
+      messageGroupSpacing: O,
       fontSize: j,
       messageDisplayCompact: w,
       renderSpoilers: D,
-      keyboardModeEnabled: k
+      keyboardModeEnabled: L
     } = function() {
-      let e = O.jU.useSetting(),
-        t = O.cC.useSetting(),
+      let e = x.jU.useSetting(),
+        t = x.cC.useSetting(),
         {
           messageGroupSpacing: n,
           fontSize: r,
@@ -380,9 +380,9 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
     }(t);
     return (0, r.jsx)(b.aQ.Provider, {
       value: (0, M.Z)(D, d),
-      children: (0, r.jsx)(L.v, {
+      children: (0, r.jsx)(k.v, {
         children: (0, r.jsx)(Y, W(G({}, u), {
-          messageGroupSpacing: x,
+          messageGroupSpacing: O,
           showNewMessagesBar: true,
           channel: t,
           messageDisplayCompact: !o && (a || w),
@@ -395,7 +395,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
           canChat: C,
           editingMessageId: H,
           fontSize: j,
-          keyboardModeEnabled: k,
+          keyboardModeEnabled: L,
           showingQuarantineBanner: n,
           hideSummaries: l,
           typingGradient: s

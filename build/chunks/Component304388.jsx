@@ -74,14 +74,14 @@ let p = Chunk647438.forwardRef(function(e, t) {
     onRequestClose: _
   } = e, [y, C] = i.useState(false), {
     isHovered: v,
-    setIsHovered: O,
-    onMouseEnter: x,
+    setIsHovered: x,
+    onMouseEnter: O,
     onMouseLeave: E,
     cancelTimers: j
   } = (0, o.Z)(200, 300);
 
   function S(e) {
-    "focus" === e.type || y || x()
+    "focus" === e.type || y || O()
   }
 
   function P() {
@@ -93,9 +93,9 @@ let p = Chunk647438.forwardRef(function(e, t) {
   }
   i.useImperativeHandle(t, () => ({
     hidePopout() {
-      O(false), C(false)
+      x(false), C(false)
     }
-  }), [O, C]);
+  }), [x, C]);
   let Z = v && !m || y;
   return (0, r.jsx)(a.yRy, {
     targetElementRef: p,
@@ -107,12 +107,12 @@ let p = Chunk647438.forwardRef(function(e, t) {
     spacing: 16,
     onRequestClose: () => {
       if ((null == _ ? true : _()) === l.F) return l.F;
-      O(false), C(false), null == b || b()
+      x(false), C(false), null == b || b()
     },
     renderPopout: e => (0, r.jsx)(d, u({
       isHovered: Z,
       onFocus: () => C(true),
-      onMouseEnter: x,
+      onMouseEnter: O,
       onMouseLeave: P,
       renderPopout: n
     }, e)),

@@ -2,7 +2,7 @@
 /** chunk id: 910611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   TS: () => F,
-  ud: () => L,
+  ud: () => k,
   v0: () => U
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -94,7 +94,7 @@ function D(e) {
   }, a)
 }
 
-function L(e) {
+function k(e) {
   let {
     channel: t,
     channelName: n,
@@ -207,22 +207,22 @@ function L(e) {
     case A.d4z.ANNOUNCEMENT_THREAD:
     case A.d4z.PUBLIC_THREAD:
     case A.d4z.PRIVATE_THREAD:
-      let O = null;
+      let x = null;
       if (!s && null != l) {
         let e = (0, h.KS)(l, o);
-        O = (0, r.jsxs)(i.Fragment, {
+        x = (0, r.jsxs)(i.Fragment, {
           children: [B(e, M.intl.string(M.t.Pnajj0)), (0, r.jsx)(T.Z.Title, {
             level: y,
             onContextMenu: m,
             onClick: p,
             className: a()(R.parentChannelName, R.cursorPointer),
-            children: (0, f.F6)(l, x.default, v.Z)
+            children: (0, f.F6)(l, O.default, v.Z)
           }), (0, r.jsx)(T.Z.Caret, {})]
         })
       }
       let E = (null == l ? true : l.type) != null && A.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, r.jsxs)(i.Fragment, {
-        children: [O, B(E ? null : b, M.intl.string(M.t["7Xm5QI"])), (0, r.jsx)(T.Z.Title, {
+        children: [x, B(E ? null : b, M.intl.string(M.t["7Xm5QI"])), (0, r.jsx)(T.Z.Title, {
           level: y,
           onContextMenu: d,
           onClick: c,
@@ -255,11 +255,11 @@ function L(e) {
       return null
   }
 }
-let k = e => {
+let L = e => {
   var t, n, l;
   let {
     channel: a
-  } = e, s = (0, o.e7)([x.default], () => x.default.getCurrentUser()), c = (0, o.e7)([x.default], () => x.default.getUser(a.getRecipientId())), u = (0, S.G)(), d = (0, o.e7)([y.Z], () => null != c ? y.Z.getUserProfile(c.id) : null), f = null != d && (null != (t = null == d ? true : d.fetchEndedAt) ? t : 0) > 0;
+  } = e, s = (0, o.e7)([O.default], () => O.default.getCurrentUser()), c = (0, o.e7)([O.default], () => O.default.getUser(a.getRecipientId())), u = (0, S.G)(), d = (0, o.e7)([y.Z], () => null != c ? y.Z.getUserProfile(c.id) : null), f = null != d && (null != (t = null == d ? true : d.fetchEndedAt) ? t : 0) > 0;
   return (i.useEffect(() => {
     (null == s ? true : s.isStaff()) && null != c && !c.isStaff() && (0, C.Z)(c.id, c.getAvatarURL(true, 80), {
       dispatchWait: true,
@@ -277,7 +277,7 @@ function U(e, t) {
   switch (e.type) {
     case A.d4z.DM:
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(k, {
+        children: [(0, r.jsx)(L, {
           channel: e
         }), (0, r.jsx)(P.Z, {
           channel: e
@@ -313,7 +313,7 @@ function F(e) {
     guild: t,
     channel: n,
     caretPosition: l = "left"
-  } = e, a = (0, o.e7)([O.Z], () => O.Z.getGuildId()), s = (0, b.D)(), d = i.useRef(null);
+  } = e, a = (0, o.e7)([x.Z], () => x.Z.getGuildId()), s = (0, b.D)(), d = i.useRef(null);
   return (a === A.I_8 || s) && null != t ? (0, r.jsx)(c.u, {
     asContainer: true,
     text: t.name,

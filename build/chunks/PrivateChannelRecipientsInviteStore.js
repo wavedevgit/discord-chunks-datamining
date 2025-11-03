@@ -20,24 +20,24 @@ var i, l, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 let C = false,
   v = "",
-  O = 0,
-  x = [],
+  x = 0,
+  O = [],
   E = false,
   j = new Set,
   S = null;
 
 function P() {
-  v = "", O = 0, x = [], j = new Set, C = false, S = null
+  v = "", x = 0, O = [], j = new Set, C = false, S = null
 }
 
 function I(e) {
-  v = e, O = 0, Z()
+  v = e, x = 0, Z()
 }
 
 function Z() {
   if (!C) returnfalse;
   let e = Chunk592125.Z.getChannel(S);
-  if (0 === v.trim().length) return null != r && r.clearQuery(), x = function(e) {
+  if (0 === v.trim().length) return null != r && r.clearQuery(), O = function(e) {
     let t = b.Z.getFriendIDs(),
       n = _.default.getCurrentUser();
     return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ..._.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
@@ -116,7 +116,7 @@ function A(e) {
       comparator: r
     })
   }
-  x = n, k.emitChange()
+  O = n, L.emitChange()
 }
 
 function w() {
@@ -136,12 +136,12 @@ function R(e) {
 function D() {
   null != r && (r.destroy(), r = null), P()
 }
-class L extends(i = Chunk442837.ZP.Store) {
+class k extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk480294.Z, Chunk353926.Z, Chunk580005.Z, Chunk699516.Z, Chunk752048.Z, Chunk594174.default), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], T)
   }
   getResults() {
-    return x
+    return O
   }
   hasFriends() {
     return E
@@ -155,19 +155,19 @@ class L extends(i = Chunk442837.ZP.Store) {
   getState() {
     return {
       query: v,
-      selectedRow: O,
+      selectedRow: x,
       selectedUsers: j,
-      results: x,
+      results: O,
       hasFriends: E
     }
   }
-}(l = "displayName") in L ? Object.defineProperty(L, l, {
+}(l = "displayName") in k ? Object.defineProperty(k, l, {
   value: "PrivateChannelRecipientsInviteStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : L[l] = "PrivateChannelRecipientsInviteStore";
-let k = new L(Chunk570140.Z, {
+}) : k[l] = "PrivateChannelRecipientsInviteStore";
+let L = new k(Chunk570140.Z, {
     CONNECTION_OPEN: function() {
       P()
     },
@@ -192,7 +192,7 @@ let k = new L(Chunk570140.Z, {
       S = e.channelId, I(e.query)
     },
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
-      O = e.row
+      x = e.row
     },
     PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: function(e) {
       let {
@@ -207,4 +207,4 @@ let k = new L(Chunk570140.Z, {
       j.delete(t), j = new Set(j)
     }
   }),
-  U = k
+  U = L

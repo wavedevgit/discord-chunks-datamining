@@ -28,7 +28,7 @@ function y(e) {
     channel: y,
     participants: C,
     onSelectParticipant: v
-  } = e, [O, x] = function() {
+  } = e, [x, O] = function() {
     let [e, t] = i.useState(() => s.K.get(_, h.VD2.BOTTOM_RIGHT));
     return [e, i.useCallback(e => {
       s.K.set(_, e), t(e)
@@ -46,12 +46,12 @@ function y(e) {
       c.d7(t, m.cL.CAMERA_PREVIEW)
     }, [P]),
     N = i.useCallback((e, t) => {
-      x(t)
-    }, [x]);
+      O(t)
+    }, [O]);
   return (0, r.jsx)("div", {
     className: g.container,
     children: (0, r.jsx)(d._, {
-      position: O,
+      position: x,
       id: 0,
       width: I,
       ref: E,

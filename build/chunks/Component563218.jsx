@@ -36,7 +36,7 @@ function b(e) {
     t = null != (C = null == b ? true : b.window) ? C : window
   } else t = window;
   let v = i.useRef(null),
-    O = i.useMemo(() => {
+    x = i.useMemo(() => {
       let e = null;
       return () => {
         null == e && (e = t.requestAnimationFrame(() => {
@@ -45,19 +45,19 @@ function b(e) {
         }))
       }
     }, [n, t]);
-  return i.useEffect(() => (t.addEventListener("resize", O), c.S.subscribe(m.CkL.REMEASURE_TARGET, O), () => {
-    t.removeEventListener("resize", O), c.S.unsubscribe(m.CkL.REMEASURE_TARGET, O)
-  }), [O, t]), i.useLayoutEffect(() => {
+  return i.useEffect(() => (t.addEventListener("resize", x), c.S.subscribe(m.CkL.REMEASURE_TARGET, x), () => {
+    t.removeEventListener("resize", x), c.S.unsubscribe(m.CkL.REMEASURE_TARGET, x)
+  }), [x, t]), i.useLayoutEffect(() => {
     let e = v.current;
     if (null == e) return;
     let t = e.ownerDocument.defaultView;
     if (null == t) return;
-    O();
-    let r = new t.ResizeObserver(O);
+    x();
+    let r = new t.ResizeObserver(x);
     return r.observe(e), () => {
       r.disconnect(), g(n, null)
     }
-  }, [n, O]), (0, r.jsx)("div", {
+  }, [n, x]), (0, r.jsx)("div", {
     ref: v,
     style: o,
     className: a

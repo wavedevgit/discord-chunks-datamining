@@ -43,9 +43,9 @@ function E(e) {
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
     suppress: M
-  } = (0, _.Z)(t), R = (0, l.e7)([y.Z], () => y.Z.isDeaf()), D = w || M || R, L = (0, m.sR)({
+  } = (0, _.Z)(t), R = (0, l.e7)([y.Z], () => y.Z.isDeaf()), D = w || M || R, k = (0, m.sR)({
     isSoundboardButtonDisabled: D
-  }), [k, U] = (0, f.cv)(L), {
+  }), [L, U] = (0, f.cv)(k), {
     analyticsLocations: B
   } = (0, u.ZP)(), {
     isHovered: F,
@@ -98,12 +98,12 @@ function E(e) {
   }
 
   function z() {
-    (0, d.v)(P, d.d.SOUNDBOARD), j === O.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != j ? (Z(), H()) : Z(), null == S || S(O.D.SOUNDBOARD))
+    (0, d.v)(P, d.d.SOUNDBOARD), j === x.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != j ? (Z(), H()) : Z(), null == S || S(x.D.SOUNDBOARD))
   }
   let q = i.useRef(null);
   return (0, r.jsx)(s.y, {
     targetElementRef: q,
-    shouldShow: F && (j === O.D.SOUNDBOARD || null == j) || j === O.D.SOUNDBOARD,
+    shouldShow: F && (j === x.D.SOUNDBOARD || null == j) || j === x.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
@@ -124,7 +124,7 @@ function E(e) {
             guildId: A,
             channel: t,
             onClose: n,
-            gridNotice: k === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
+            gridNotice: L === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
               onClose: n,
               markAsDismissed: U
             }),
@@ -137,7 +137,7 @@ function E(e) {
       ref: q,
       isTrayButton: true,
       themeable: E,
-      label: w ? x.intl.string(x.t["Ox4/zU"]) : M ? x.intl.string(x.t["+YBKYI"]) : R ? x.intl.string(x.t.X1lQli) : true,
+      label: w ? O.intl.string(O.t["Ox4/zU"]) : M ? O.intl.string(O.t["+YBKYI"]) : R ? O.intl.string(O.t.X1lQli) : true,
       iconComponent: I,
       disabled: D,
       onContextMenu: W,
@@ -148,8 +148,8 @@ function E(e) {
       onMouseLeave: () => {
         null == j && (G(), N())
       },
-      isActive: F || j === O.D.SOUNDBOARD,
-      color: F || j === O.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: F || j === x.D.SOUNDBOARD,
+      color: F || j === x.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

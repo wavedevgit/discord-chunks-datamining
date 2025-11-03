@@ -110,11 +110,11 @@ function M(e) {
     canInvite: M,
     canManageGuild: R,
     canMessage: D
-  } = (0, h.TE)(t, l), L = (0, s.e7)([C.default], () => {
+  } = (0, h.TE)(t, l), k = (0, s.e7)([C.default], () => {
     var e, t;
     return (null == (e = C.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = C.default.getCurrentUser()) ? true : t.mobile) === true
   }), {
-    guildPopulated: k,
+    guildPopulated: L,
     guildMessaged: U,
     guildPersonalized: B
   } = (0, h.h_)(l), {
@@ -145,7 +145,7 @@ function M(e) {
         f.ZP.trackWithMetadata(P.rMx.SERVER_SETUP_CTA_CLICKED, {
           setup_type: I.Ft.CHANNEL_WELCOME,
           action: I.j7.SEND_MESSAGE
-        }), O.S.dispatch(P.CkL.TEXTAREA_FOCUS, {
+        }), x.S.dispatch(P.CkL.TEXTAREA_FOCUS, {
           highlight: true,
           channelId: P.lds
         })
@@ -194,7 +194,7 @@ function M(e) {
         }))
       }, [e])
     }
-  }(l), z = !(L || k || U || B), {
+  }(l), z = !(k || L || U || B), {
     titleAnimatedStyle: q,
     opacities: Y
   } = function(e) {
@@ -252,7 +252,7 @@ function M(e) {
     children: (0, r.jsx)(w, {
       iconUrl: u.YvY,
       header: Z.intl.string(Z.t.q9n0Ta),
-      completed: k,
+      completed: L,
       onClick: F
     })
   }, "invite")), R && Q.push((0, r.jsx)(o.Z.div, {
@@ -285,7 +285,7 @@ function M(e) {
     children: (0, r.jsx)(w, {
       iconUrl: u.yIb,
       header: Z.intl.string(Z.t.pGVNI9),
-      completed: L,
+      completed: k,
       onClick: G
     })
   }, "download")), Q.push((0, r.jsx)(o.Z.div, {
@@ -302,7 +302,7 @@ function M(e) {
   }, "addapp")));
   let $ = v ? Z.intl.string(Z.t["1ach9C"]) : Z.intl.string(Z.t["ezm+/j"]);
   p && ($ = Z.intl.string(Z.t["gwyU/J"]));
-  let ee = "".concat(x.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
+  let ee = "".concat(O.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, r.jsx)(S.ZP, {
     channelId: t.id,
     children: (0, r.jsx)("div", {

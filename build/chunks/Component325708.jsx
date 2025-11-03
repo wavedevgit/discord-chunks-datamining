@@ -66,16 +66,16 @@ function _(e) {
     d.ZP.updatedUnsyncedSettings({
       [_]: e
     })
-  }, [_]), O = 5 === t ? h.at : h.Co, x = (0, h.WL)({
+  }, [_]), x = 5 === t ? h.at : h.Co, O = (0, h.WL)({
     maxWidth: n,
-    minWidth: O
-  }), E = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), j = (0, s.clamp)(y, O, n), S = x ? j : j + E;
+    minWidth: x
+  }), E = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), j = (0, s.clamp)(y, x, n), S = O ? j : j + E;
   l.useEffect(() => {
-    null == r || r(j, x)
-  }, [j, r, x]);
+    null == r || r(j, O)
+  }, [j, r, O]);
   let P = null != p ? p : l.Fragment;
   return (0, i.jsxs)(i.Fragment, {
-    children: [!x && (0, i.jsx)("div", {
+    children: [!O && (0, i.jsx)("div", {
       style: {
         minWidth: S
       }
@@ -86,14 +86,14 @@ function _(e) {
         }),
         children: [(0, i.jsx)("div", {
           className: o()(m.chatTarget, {
-            [m.floating]: x,
-            [m.notFloating]: !x
+            [m.floating]: O,
+            [m.notFloating]: !O
           }),
           style: {
             width: S
           }
-        }), !x && (0, i.jsx)(b, {
-          minWidth: O,
+        }), !O && (0, i.jsx)(b, {
+          minWidth: x,
           maxWidth: n,
           resizableNode: g,
           onResize: C,
@@ -101,7 +101,7 @@ function _(e) {
         }), (0, i.jsx)("div", {
           ref: g,
           className: o()(m.container, {
-            [m.floating]: x
+            [m.floating]: O
           }),
           style: {
             width: j

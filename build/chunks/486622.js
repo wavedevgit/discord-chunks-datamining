@@ -24,7 +24,7 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, _ = (0, h.Z)(), [y, C] = r.useState(false), [v, O] = r.useState(false), [x, E] = r.useState(false), [j, S] = r.useState(false), [P, I] = r.useState(false), Z = y || v || x, T = r.useCallback(async e => {
+  } = e, _ = (0, h.Z)(), [y, C] = r.useState(false), [v, x] = r.useState(false), [O, E] = r.useState(false), [j, S] = r.useState(false), [P, I] = r.useState(false), Z = y || v || O, T = r.useCallback(async e => {
     if (!Z) {
       C(true);
       try {
@@ -38,19 +38,19 @@ function b(e) {
     }
   }, [Z, n, b]), N = r.useCallback(async e => {
     if (!Z) {
-      O(true);
+      x(true);
       try {
         await (0, p.gN)(e), I(true), null == i || i()
       } catch (t) {
         let e = new a.Hx(t);
         null == b || b(e)
       } finally {
-        O(false)
+        x(false)
       }
     }
   }, [Z, i, b]), A = r.useCallback(async e => {
     if (Z) return;
-    O(true);
+    x(true);
     let t = l()(e, m.t$);
     try {
       for (let e of t) await (0, p.r_)(e);
@@ -59,7 +59,7 @@ function b(e) {
       let e = new a.Hx(t);
       null == b || b(e)
     } finally {
-      O(false)
+      x(false)
     }
   }, [Z, i, b]), w = r.useCallback(async e => {
     if (Z) return;
@@ -126,7 +126,7 @@ function b(e) {
     markAsNotSpam: M,
     isAcceptLoading: y,
     isRejectLoading: v,
-    isUserProfileLoading: x,
+    isUserProfileLoading: O,
     isOptimisticAccepted: j,
     isOptimisticRejected: P
   }

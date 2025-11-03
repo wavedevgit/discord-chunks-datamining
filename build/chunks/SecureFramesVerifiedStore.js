@@ -41,7 +41,7 @@ function v() {
   return _ = r, i
 }
 
-function O(e) {
+function x(e) {
   let {
     userId: t
   } = e;
@@ -61,7 +61,7 @@ function O(e) {
   return n || r || i
 }
 
-function x() {
+function O() {
   g.clear(), b.clear(), _ = false
 }
 class E extends(r = Chunk442837.ZP.Store) {
@@ -84,13 +84,13 @@ class E extends(r = Chunk442837.ZP.Store) {
   writable: true
 }) : E[i] = "SecureFramesVerifiedStore";
 let j = new E(Chunk570140.Z, {
-  CONNECTION_OPEN: x,
+  CONNECTION_OPEN: O,
   VOICE_CHANNEL_SELECT: function(e) {
     let {
       channelId: t
     } = e;
     if (t === y) returnfalse;
-    y = t, x()
+    y = t, O()
   },
   RTC_CONNECTION_STATE: function(e) {
     let {
@@ -104,20 +104,20 @@ let j = new E(Chunk570140.Z, {
         if (null == t) returnfalse;
         return b.delete(t), v();
       case a.Yn.DEFAULT:
-        x()
+        O()
     }
   },
   RTC_CONNECTION_ROSTER_MAP_UPDATE: function(e) {
     let {
       userIds: t
-    } = e, n = c.default.getId(), r = t.reduce((e, t) => n === t ? e : !!O({
+    } = e, n = c.default.getId(), r = t.reduce((e, t) => n === t ? e : !!x({
       userId: t
     }) || e, false), i = C(), l = v();
     return r || i || l
   },
-  SECURE_FRAMES_TRANSIENT_KEY_CREATE: O,
-  SECURE_FRAMES_TRANSIENT_KEY_DELETE: O,
-  SECURE_FRAMES_VERIFIED_KEY_CREATE: O,
-  SECURE_FRAMES_VERIFIED_KEY_DELETE: O,
-  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: O
+  SECURE_FRAMES_TRANSIENT_KEY_CREATE: x,
+  SECURE_FRAMES_TRANSIENT_KEY_DELETE: x,
+  SECURE_FRAMES_VERIFIED_KEY_CREATE: x,
+  SECURE_FRAMES_VERIFIED_KEY_DELETE: x,
+  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: x
 })

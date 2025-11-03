@@ -1,7 +1,7 @@
 /** Chunk was on 88647 **/
 /** chunk id: 775685, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk314734 = require("./314734.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk124886 = require("./124886.js");
-let O = Chunk647438.forwardRef(function(e, t) {
+let x = Chunk647438.forwardRef(function(e, t) {
     var n, l;
     let {
       type: u,
@@ -30,16 +30,16 @@ let O = Chunk647438.forwardRef(function(e, t) {
     } = e, m = (0, s.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === u), {
       Component: b,
       events: _,
-      play: O
+      play: x
     } = (0, g.Z)("ChannelAppLauncherButton");
     i.useImperativeHandle(h, () => ({
       animate: () => {
         _.onMouseEnter()
       }
     }), [_]);
-    let x = i.useCallback(() => {
-        m ? d.yT(f.ti.DISMISSED) : (d.__(f._b.TEXT, u), c.ux()), O()
-      }, [m, u, O]),
+    let O = i.useCallback(() => {
+        m ? d.yT(f.ti.DISMISSED) : (d.__(f._b.TEXT, u), c.ux()), x()
+      }, [m, u, x]),
       E = (0, r.jsx)(b, {
         size: "refresh_sm",
         color: "currentColor"
@@ -69,7 +69,7 @@ let O = Chunk647438.forwardRef(function(e, t) {
         className: a()(v.button, {
           [v.buttonActive]: m
         }),
-        onClick: x,
+        onClick: O,
         "aria-label": C.intl.string(C.t.erHFxI),
         "aria-expanded": m,
         "aria-haspopup": "dialog",
@@ -95,7 +95,7 @@ let O = Chunk647438.forwardRef(function(e, t) {
       }), n))
     })
   }),
-  x = Chunk647438.memo(function(e) {
+  O = Chunk647438.memo(function(e) {
     let {
       channel: t,
       type: n,
@@ -111,7 +111,7 @@ let O = Chunk647438.forwardRef(function(e, t) {
     } = (0, b.xL)();
     return c ? (0, r.jsxs)("div", {
       className: v.channelAppLauncher,
-      children: [(0, r.jsx)(O, {
+      children: [(0, r.jsx)(x, {
         type: n,
         ref: o,
         animateRef: l

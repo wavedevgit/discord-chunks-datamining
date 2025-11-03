@@ -33,8 +33,8 @@ function C(e) {
     animatedDivClass: C,
     commandOrigin: v
   } = e, {
-    onActivityItemSelected: O,
-    imageBackground: x,
+    onActivityItemSelected: x,
+    imageBackground: O,
     activityAction: E,
     labelType: j
   } = (0, u.ZP)({
@@ -90,7 +90,7 @@ function C(e) {
     }
   }, [E]);
   return (0, i.jsx)(c.P3F, {
-    onClick: O,
+    onClick: x,
     onFocus: I,
     onBlur: Z,
     onMouseEnter: I,
@@ -119,7 +119,7 @@ function C(e) {
               transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
             },
             children: [(0, i.jsx)(d.Z, {
-              imageBackground: x,
+              imageBackground: O,
               applicationName: r.application.name,
               imageClassName: g.activitySuggestionImage,
               imageNotFoundClassName: g.brokenImageIconWrapper

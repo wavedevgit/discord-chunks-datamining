@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk822296 = require("./822296.jsx"),
   Chunk916771 = require("./916771.jsx"),
   Chunk792517 = require("./792517.jsx"),
-  L = (require("./351483.jsx"), require("./979425.jsx")),
+  k = (require("./351483.jsx"), require("./979425.jsx")),
   Chunk651183 = require("./651183.jsx"),
   Chunk623825 = require("./623825.js"),
   Chunk981631 = require("./981631.js"),
@@ -58,9 +58,9 @@ function z(e) {
     premiumIndicator: s
   } = e, c = (0, o.e7)([P.Z], () => P.Z.getActiveStreamForUser(t.user.id, t.stream.guildId)), u = (0, U.K)(a);
   return (0, r.jsxs)(r.Fragment, {
-    children: [n || i ? null : (0, r.jsx)(k.Z, {
+    children: [n || i ? null : (0, r.jsx)(L.Z, {
       participant: t
-    }), i || null == c || c.state === B.jm8.ENDED || c.state === B.jm8.FAILED ? null : (0, r.jsx)(O.Z, {
+    }), i || null == c || c.state === B.jm8.ENDED || c.state === B.jm8.FAILED ? null : (0, r.jsx)(x.Z, {
       size: m.ZP.Sizes.SMALL,
       className: G.liveIndicator,
       participant: t,
@@ -78,8 +78,8 @@ function q(e) {
     onVideoResize: l,
     fit: m,
     popoutType: g,
-    width: O,
-    focused: k,
+    width: x,
+    focused: L,
     wrapperClassName: U,
     paused: z = false
   } = e, q = T.Z.getVideoComponent(), Y = (0, o.e7)([I.default], () => I.default.getId()), K = (0, _.Z)(), {
@@ -90,7 +90,7 @@ function q(e) {
     defaultWatchMultipleStreams: et
   } = (0, y.P)({
     location: "StreamTile"
-  }), en = (0, o.e7)([P.Z], () => P.Z.getAllActiveStreams().length > 0), er = (0, o.e7)([N.Z], () => N.Z.isFocused()), ei = (null == ee ? true : ee.ownerId) === Y, el = ei && !er && g === h.P.NO_POPOUT, ea = null != ee ? (0, C.Z)(ee, J, J.id === Y, el) : null, eo = O < 195;
+  }), en = (0, o.e7)([P.Z], () => P.Z.getAllActiveStreams().length > 0), er = (0, o.e7)([N.Z], () => N.Z.isFocused()), ei = (null == ee ? true : ee.ownerId) === Y, el = ei && !er && g === h.P.NO_POPOUT, ea = null != ee ? (0, C.Z)(ee, J, J.id === Y, el) : null, eo = x < 195;
   (0, p.ZP)(() => {
     !en && (null == $ ? true : $.isGuildStageVoice()) && !ei && ((0, d.rn)(X), u.Z.updateStageStreamSize(X.channelId, false))
   });
@@ -100,10 +100,10 @@ function q(e) {
   }, [q, ee, n]);
   let {
     allowGoLiveZoomPan: ec
-  } = (0, x.H)({
+  } = (0, O.H)({
     location: "StreamTile"
   });
-  if (K) return (0, r.jsx)(L.Z, {
+  if (K) return (0, r.jsx)(k.Z, {
     stream: t.stream,
     isSmall: eo,
     selected: n,
@@ -112,19 +112,19 @@ function q(e) {
   if ((null == ee ? true : ee.state) === B.jm8.ENDED) return (0, r.jsx)(M.Z, {
     selected: n,
     stream: ee,
-    width: O
+    width: x
   });
   if (null != es || (null == ee ? true : ee.state) === B.jm8.FAILED) return (0, r.jsx)(R.Z, {
     avError: null == es ? true : es.type,
     avErrorContext: es,
     selected: n,
     stream: t.stream,
-    width: O
+    width: x
   });
   if (t.type === F.fO.HIDDEN_STREAM) return (0, r.jsx)(D.Z, {
     selected: n,
     participant: t,
-    width: O
+    width: x
   });
   if (!(null != ee && !n && null != q && T.Z.supports(V.AN.VIDEO))) return (0, r.jsxs)("div", {
     className: a()(G.content, G.streamPreview, {
@@ -143,7 +143,7 @@ function q(e) {
         children: (0, r.jsx)(c.Button, {
           variant: "secondary",
           size: eo ? "sm" : "md",
-          text: O < 175 ? H.intl.string(H.t.I6JG46) : H.intl.string(H.t["7Xq/nV"])
+          text: x < 175 ? H.intl.string(H.t.I6JG46) : H.intl.string(H.t["7Xq/nV"])
         })
       }), en && !et ? (0, r.jsx)("div", {
         className: a()(G.cta, G.addCta),
@@ -166,14 +166,14 @@ function q(e) {
   });
   else return (0, r.jsxs)(r.Fragment, {
     children: [null != $ ? (0, r.jsx)(j.Z, {
-      focused: k,
+      focused: L,
       channelId: $.id,
       guildId: $.guild_id,
       streamerId: J.id,
       hasScreenMessage: null != ea,
       stream: X
     }) : null, (0, r.jsx)(E.Z, {
-      enableZoom: ec && k,
+      enableZoom: ec && L,
       onResize: l,
       wrapperClassName: a()(g !== h.P.CALL_TILE ? G.videoWrapper : true, U),
       className: G.content,
@@ -202,7 +202,7 @@ function q(e) {
       }
       return e
     }({
-      size: (0, A.L)(O)
+      size: (0, A.L)(x)
     }, ea)) : null, (0, r.jsx)(w.Z, {
       stream: X,
       popoutType: g

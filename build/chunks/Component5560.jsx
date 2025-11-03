@@ -1,7 +1,7 @@
 /** Chunk was on 88647 **/
 /** chunk id: 5560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  V: () => x,
+  V: () => O,
   Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -44,7 +44,7 @@ function v(e) {
   return e
 }
 
-function O(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,7 +56,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class x extends Chunk647438.PureComponent {
+class O extends Chunk647438.PureComponent {
   componentDidMount() {
     this.updateCache()
   }
@@ -131,7 +131,7 @@ class x extends Chunk647438.PureComponent {
     } = this.state, C = {
       left: null != Chunk232495 ? Chunk647438.x + Chunk232495 : true,
       top: null != Chunk10401 ? Chunk647438.y + Chunk10401 : true
-    }, x = e => {
+    }, O = e => {
       let t = n && !e;
       return {
         [y.animating]: t,
@@ -139,7 +139,7 @@ class x extends Chunk647438.PureComponent {
         [y.highPriority]: u
       }
     }, E = this.getTutorialPopoutText();
-    return (0, Chunk951288.jsx)(Chunk350707.ZP, O(v({
+    return (0, Chunk951288.jsx)(Chunk350707.ZP, x(v({
       innerRef: this.contentRef,
       position: Chunk451478,
       renderMedia: Chunk512722,
@@ -156,12 +156,12 @@ class x extends Chunk647438.PureComponent {
         let {
           isShown: i
         } = t;
-        return (0, r.jsx)(d.P3F, O(v({}, e), {
+        return (0, r.jsx)(d.P3F, x(v({}, e), {
           className: y.indicator,
           style: C,
           innerRef: this.contentRef,
           children: (0, r.jsxs)("div", {
-            className: a()(y.animationContainer, x(i)),
+            className: a()(y.animationContainer, O(i)),
             children: [(e => {
               let t = n && !e;
               returntrue !== u ? null : (0, r.jsxs)("div", {
@@ -178,9 +178,9 @@ class x extends Chunk647438.PureComponent {
                 })]
               })
             })(i), (0, r.jsx)("div", {
-              className: a()(y.innerCircle, x(i))
+              className: a()(y.innerCircle, O(i))
             }), (0, r.jsx)("div", {
-              className: a()(y.outerCircle, x(i))
+              className: a()(y.outerCircle, O(i))
             })]
           })
         }))
@@ -211,7 +211,7 @@ let E = 12633 == require.j ? function() {
   return Chunk647438 ? (0, Chunk951288.jsx)(Chunk951288.Fragment, {
     children: Object.entries(module).map(e => {
       let [i, l] = e, a = t[i];
-      return s()(null != a, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(x, v({
+      return s()(null != a, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(O, v({
         tutorialId: i,
         tutorialDefinition: a,
         focused: n

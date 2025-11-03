@@ -76,7 +76,7 @@ function C(e) {
       (0, d.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("90508"), n.e("24358"), n.e("8965"), n.e("98350")]).then(n.bind(n, 139035));
+        } = await Promise.all([n.e("90508"), n.e("24358"), n.e("8965"), n.e("23899")]).then(n.bind(n, 139035));
         return n => (0, r.jsx)(e, _(v({}, n), {
           channel: i,
           guild: t
@@ -154,7 +154,7 @@ let O = Chunk647438.memo(function() {
             t.isGuildVocal() ? (0, d.jW)(e, async () => {
               let {
                 default: e
-              } = await Promise.all([n.e("79695"), n.e("90508"), n.e("24358"), n.e("18320"), n.e("83331"), n.e("19899")]).then(n.bind(n, 213202));
+              } = await Promise.all([n.e("79695"), n.e("90508"), n.e("24358"), n.e("18320"), n.e("83331"), n.e("56648")]).then(n.bind(n, 213202));
               return n => (0, r.jsx)(e, _(v({}, n), {
                 channel: t,
                 guild: l

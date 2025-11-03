@@ -72,8 +72,8 @@ function I(e) {
       channel: M,
       selectedParticipant: R,
       showParticipants: D = true,
-      className: L,
-      width: k,
+      className: k,
+      width: L,
       height: U,
       layout: B,
       idle: F
@@ -96,11 +96,11 @@ function I(e) {
     ea = (null != (t = (0, c.Z)(R.id)) ? t : R.id) !== R.id,
     eo = 0;
   (J || et) && (eo += 72), J && !et && (ei ? eo += 48 : eo += 8), et && (eo += .5 * P + 8);
-  let es = i.useMemo(() => J && Q ? k / (U - 2 * eo) : $ && null != G && G.width > 0 && G.height > 0 ? G.width / G.height : S, [$, G, J, k, U, eo, Q]),
+  let es = i.useMemo(() => J && Q ? L / (U - 2 * eo) : $ && null != G && G.width > 0 && G.height > 0 ? G.width / G.height : S, [$, G, J, L, U, eo, Q]),
     ec = U - 2 * eo,
-    eu = J && Q ? k : ec * es,
-    ed = Math.floor(Math.min(k, eu) / es),
-    ep = U > k / es + 72 + P + 8;
+    eu = J && Q ? L : ec * es,
+    ed = Math.floor(Math.min(L, eu) / es),
+    ep = U > L / es + 72 + P + 8;
   n = et || J ? et ? false : false : 40 + Math.max(0, 72 - (U - ed) / 2), i.useEffect(() => {
     let e = setTimeout(() => {
       Y(false)
@@ -162,18 +162,18 @@ function I(e) {
     }, []),
     ev = et ? [] : (0, _.n3)(T, R, H),
     {
-      visibleParticipants: eO,
-      participantTileWidth: ex
-    } = (0, y.ZB)(k, N);
+      visibleParticipants: ex,
+      participantTileWidth: eO
+    } = (0, y.ZB)(L, N);
   return (0, r.jsxs)("div", {
-    className: a()(x.root, O.flexCenter, L),
+    className: a()(O.root, x.flexCenter, k),
     children: [(0, r.jsxs)("div", {
-      className: x.tileWrapper,
+      className: O.tileWrapper,
       style: {
         opacity: $ && q ? 0 : 1
       },
       children: [(0, r.jsxs)(o.animated.div, {
-        className: x.videoFrame,
+        className: O.videoFrame,
         style: {
           top: eg.value.to(e => -e * P / 2)
         },
@@ -181,9 +181,9 @@ function I(e) {
           style: {
             width: eb.value
           },
-          className: x.videoWrapper,
+          className: O.videoWrapper,
           children: (0, r.jsx)("div", {
-            className: O.videoSizer,
+            className: x.videoSizer,
             style: {
               aspectRatio: es
             },
@@ -192,15 +192,15 @@ function I(e) {
                 key: i
               } = n;
               return null != t ? (0, r.jsx)(o.animated.div, {
-                className: O.videoWrapperAnimated,
+                className: x.videoWrapperAnimated,
                 style: e,
                 children: (0, r.jsx)(g.ZP, {
                   focused: true,
-                  noBorder: eu >= k || ec >= U,
+                  noBorder: eu >= L || ec >= U,
                   channel: M,
-                  className: O.focusedVideo,
+                  className: x.focusedVideo,
                   videoComponent: V,
-                  width: k,
+                  width: L,
                   participant: t,
                   onClick: l,
                   onDoubleClick: Z,
@@ -213,8 +213,8 @@ function I(e) {
             })
           })
         }), ei ? (0, r.jsx)(o.animated.div, {
-          className: a()(x.actionRow, {
-            [x.idle]: F
+          className: a()(O.actionRow, {
+            [O.idle]: F
           }),
           style: {
             bottom: e_.value
@@ -226,7 +226,7 @@ function I(e) {
           })
         }) : null]
       }), (0, r.jsx)(o.animated.div, {
-        className: x.participantsWrapperAnimated,
+        className: O.participantsWrapperAnimated,
         style: {
           translateY: em.value.to(e => e * P / 2),
           opacity: em.value,
@@ -237,8 +237,8 @@ function I(e) {
           onClick: l,
           onContextMenu: I,
           onDoubleClick: Z,
-          participants: eO,
-          participantTileWidth: ex,
+          participants: ex,
+          participantTileWidth: eO,
           selectedParticipantId: R.id,
           inCall: w,
           popoutType: A,
@@ -247,7 +247,7 @@ function I(e) {
       })]
     }), ev.length > 0 ? (0, r.jsx)(b.Z, {
       onContextMenuParticipant: I,
-      width: k,
+      width: L,
       height: U,
       channel: M,
       participants: ev,

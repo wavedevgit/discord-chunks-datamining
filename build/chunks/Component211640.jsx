@@ -29,11 +29,11 @@ function m(e) {
     return null != (t = null == (e = c.Z.getChannel(g.id)) ? true : e.isArchivedThread()) && t
   });
   if (!b) return null;
-  let O = null == y ? h.intl.string(f.default["0IZbwC"]) : h.intl.string(f.default.Uj6oD4),
-    x = null == y,
+  let x = null == y ? h.intl.string(f.default["0IZbwC"]) : h.intl.string(f.default.Uj6oD4),
+    O = null == y,
     E = "delete-message-".concat(t.id);
   return (0, r.jsx)(p.Z, {
-    text: O,
+    text: x,
     icon: a.XHJ,
     onClick: () => {
       null != C && null != y && s.Z.confirmDelete(C, y, false, {
@@ -41,7 +41,7 @@ function m(e) {
         moderatorReportChannelId: g.id
       })
     },
-    disabled: x,
+    disabled: O,
     color: l.zx.Colors.RED
   }, E)
 }

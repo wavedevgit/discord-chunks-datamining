@@ -87,7 +87,7 @@ function I(e) {
     customPreview: L,
     customSendHandler: G,
     customValidateDestination: V
-  } = e, K = function(e, t) {
+  } = e, B = function(e, t) {
     if (null == e) return {};
     var n, l, a = function(e, t) {
       if (null == e) return {};
@@ -102,15 +102,15 @@ function I(e) {
     }
     return a
   }(e, ["message", "initialSelectedDestinations", "forwardOptions", "onClose", "onRequestSent", "customTitle", "customSubtitle", "customPreview", "customSendHandler", "customValidateDestination"]);
-  let W = null == t ? true : t.channel_id,
-    B = null == t ? true : t.id,
-    Y = a.useMemo(() => null != W ? (0, g.dL)(W) : true, [W]),
+  let K = null == t ? true : t.channel_id,
+    W = null == t ? true : t.id,
+    Y = a.useMemo(() => null != K ? (0, g.dL)(K) : true, [K]),
     [H, X] = a.useState(false),
     z = (0, s.e7)([w.Z], () => {
       var e;
       return null != t ? null != (e = w.Z.getMessage(t.channel_id, t.id)) ? e : t : true
     }, [t]),
-    Q = (0, s.e7)([p.Z], () => null != W ? p.Z.getChannel(W) : true, [W]),
+    Q = (0, s.e7)([p.Z], () => null != K ? p.Z.getChannel(K) : true, [K]),
     q = (0, C.ZF)(),
     J = (0, C.mh)(),
     $ = a.useRef(0),
@@ -136,19 +136,19 @@ function I(e) {
       eh(e), eg(e)
     }, [eg]),
     ep = a.useCallback(e => {
-      ef(e), ee.current += 1, "" !== e && null != W && null != B && J(W, B)
-    }, [W, B, J, ef]),
+      ef(e), ee.current += 1, "" !== e && null != K && null != W && J(K, W)
+    }, [K, W, J, ef]),
     ev = a.useCallback(() => {
       ef("")
     }, [ef]),
     ew = a.useCallback(async () => {
-      null != W && null != B && (0, C.sF)({
-        channelId: W,
-        messageId: B,
+      null != K && null != W && (0, C.sF)({
+        channelId: K,
+        messageId: W,
         numDestinationChanges: $.current,
         numQueryChanges: ee.current
       }), await N()
-    }, [W, B, N]),
+    }, [K, W, N]),
     eb = a.useRef(null);
   a.useEffect(() => {
     if ("" === ed) {
@@ -163,7 +163,7 @@ function I(e) {
       trailing: false
     }), []),
     ey = a.useCallback(e => {
-      null != W && null != B && q(W, B, "" !== ed), en(t => {
+      null != K && null != W && q(K, W, "" !== ed), en(t => {
         let n = t.findIndex(t => {
           let {
             type: n,
@@ -175,7 +175,7 @@ function I(e) {
         let l = [...t];
         return l.splice(n, 1), $.current += 1, l
       })
-    }, [W, ea, B, ed, ef, q]),
+    }, [K, ea, W, ed, ef, q]),
     eC = a.useCallback(async function(e) {
       var a;
       let {
@@ -188,8 +188,8 @@ function I(e) {
         transitionToDestination: i,
         closeAfterSend: s
       }, X);
-      if (null == W || null == B) return void(0, o.showToast)((0, o.createToast)(P.intl.string(P.t.R0RpRX), o.ToastType.FAILURE));
-      let u = null != (a = w.Z.getMessage(W, B)) ? a : t;
+      if (null == K || null == W) return void(0, o.showToast)((0, o.createToast)(P.intl.string(P.t.R0RpRX), o.ToastType.FAILURE));
+      let u = null != (a = w.Z.getMessage(K, W)) ? a : t;
       if (null == u) return void(0, o.showToast)((0, o.createToast)(P.intl.string(P.t.R0RpRX), o.ToastType.FAILURE));
       X(true);
       let c = (await Promise.all(e.map(g.qx))).filter(b.lm);
@@ -223,8 +223,8 @@ function I(e) {
           return "fulfilled" === t
         })) {
         (0, C.gP)({
-          channelId: W,
-          messageId: B,
+          channelId: K,
+          messageId: W,
           hasError: false,
           hasContextMessage: null != r && "" !== r,
           numDestinations: c.length,
@@ -234,8 +234,8 @@ function I(e) {
         }), ex();
         return
       }(0, C.gP)({
-        channelId: W,
-        messageId: B,
+        channelId: K,
+        messageId: W,
         hasError: true,
         hasContextMessage: null != r && "" !== r,
         numDestinations: c.length,
@@ -249,7 +249,7 @@ function I(e) {
         failedDestinations: v,
         forwardOptions: Z
       })
-    }, [W, Z, B, t, F, ex, G]),
+    }, [K, Z, W, t, F, ex, G]),
     eO = a.useCallback(e => {
       eC(et, {
         withMessage: e,
@@ -278,7 +278,7 @@ function I(e) {
     eT = el <= 1 ? P.intl.string(P.t.TXNS7S) : P.intl.formatToPlainString(P.t.jWtYUm, {
       count: el
     });
-  return (0, l.jsx)(i.Modal, R(M({}, K), {
+  return (0, l.jsx)(i.Modal, R(M({}, B), {
     onClose: ew,
     title: null != k ? k : P.intl.string(P.t["+SkRRj"]),
     subtitle: null != U ? U : ea ? P.intl.formatToPlainString(P.t["3Fbkir"], {
@@ -326,6 +326,7 @@ function I(e) {
       icon: o.Uuj,
       iconPosition: "end"
     }],
+    actionBarInputLayout: "chat-input",
     listProps: eS
   }))
 }
