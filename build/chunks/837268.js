@@ -21,7 +21,7 @@ var r = function(e) {
     return e[e.Disabled = 0] = "Disabled", e[e.Hook = 1] = "Hook", e[e.OutOfProcess = 2] = "OutOfProcess", e[e.OutOfProcessLimitedInteraction = 3] = "OutOfProcessLimitedInteraction", e
   }({}),
   o = function(e) {
-    return e.ClickZones = "click_zones", e.WidgetAreas = "widget_areas", e.WindowContainer = "window_container", e.DisabledGPUBoost = "disabled_gpu_boost", e.ForceGPUBoost = "force_gpu_boost", e.TrackFocusPIDs = "track_focus_pids", e.OverlayRafManagerForceEnabled = "overlay_raf_manager_force_enabled", e.LegacyOverlayLogging = "legacy_overlay_logging", e
+    return e.ClickZones = "click_zones", e.WidgetAreas = "widget_areas", e.WindowContainer = "window_container", e.DisabledGPUBoost = "disabled_gpu_boost", e.ForceGPUBoost = "force_gpu_boost", e.TrackFocusPIDs = "track_focus_pids", e.OverlayRafManagerForceEnabled = "overlay_raf_manager_force_enabled", e.LegacyOverlayLogging = "legacy_overlay_logging", e.OverrideIsNewOverlayUser = "override_is_new_overlay_user", e
   }({}),
   s = function(e) {
     return e.HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED = "HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED", e.OVERLAY_UNLOCKED = "OVERLAY_UNLOCKED", e.OVERLAY_VIDEO_STREAM_RENDERING = "OVERLAY_VIDEO_STREAM_RENDERING", e.OVERLAY_RENDERING = "OVERLAY_RENDERING", e.DEV_FORCED_GPU_BOOST = "DEV_FORCED_GPU_BOOST", e

@@ -548,6 +548,10 @@ let el = Chunk647438.memo(function(e) {
     mode: Chunk837268.GO.LegacyOverlayLogging,
     label: "Legacy Overlay Logging",
     tooltip: "Enables legacy overlay logging, which will forward all legacy logging to the main apps console."
+  }, {
+    mode: Chunk837268.GO.OverrideIsNewOverlayUser,
+    label: "Is New Overlay User Override",
+    tooltip: "Treats the current user as a new overlay user for the sake of experimentation targeting."
   }],
   ed = Chunk647438.memo(function() {
     let [e, t] = en(Chunk981631.Odu.CLICK_ZONE_DEBUG), [n, i] = en(Chunk981631.Odu.PERFORMANCE_DEBUG), l = (0, Chunk442837.e7)([Chunk338949.Z], () => Chunk338949.Z.getRenderDebugModes()), [s, o] = Chunk647438.useState({});
