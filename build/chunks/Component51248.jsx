@@ -28,7 +28,7 @@ function g(e) {
     saveEditingRule: b
   } = (0, c.w)(), {
     updateRule: x
-  } = (0, o.pH)(t), j = null != f, v = j && !(0, s.Vb)(f), _ = j || p || v, C = async () => {
+  } = (0, o.pH)(t), j = null != f, v = j && !(0, s.Vb)(f), _ = j || p || v, O = async () => {
     if (!p && !v) return g();
     null == f || v || x(f);
     let e = n.find(e => {
@@ -43,7 +43,7 @@ function g(e) {
     } catch (t) {
       null != e && x(e)
     }
-  }, O = d.intl.string(d.t["ETE/oC"]), y = !p && j ? d.intl.formatToPlainString(d.t.nula34, {
+  }, C = d.intl.string(d.t["ETE/oC"]), y = !p && j ? d.intl.formatToPlainString(d.t.nula34, {
     ruleName: null == f ? true : f.name
   }) : true;
   return null != h && (y = (0, r.jsx)(a.Text, {
@@ -58,9 +58,9 @@ function g(e) {
       children: (0, r.jsx)(l.Z, {
         submitting: m,
         disabled: m,
-        onSave: C,
+        onSave: O,
         onReset: g,
-        onResetText: O,
+        onResetText: C,
         message: y
       })
     })

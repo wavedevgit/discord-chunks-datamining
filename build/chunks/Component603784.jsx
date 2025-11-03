@@ -102,7 +102,7 @@ let w = Chunk647438.forwardRef((e, t) => {
       let {
         changes: e
       } = l;
-      return (l.actionType !== E.vB8.DELETE || l.action === E.rsA.MEMBER_BAN_ADD || l.action === E.rsA.MEMBER_KICK || l.action === E.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, y.xO)(l, e))
+      return (l.actionType !== N.vB8.DELETE || l.action === N.rsA.MEMBER_BAN_ADD || l.action === N.rsA.MEMBER_KICK || l.action === N.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, y.xO)(l, e))
     }(),
     U = I.headerDefault;
   f ? U = I.headerExpanded : M && (U = I.headerClickable);
@@ -117,7 +117,7 @@ let w = Chunk647438.forwardRef((e, t) => {
     variant: "text-sm/normal",
     children: [B, "—", F]
   });
-  let H = M ? D : E.dG4;
+  let H = M ? D : N.dG4;
   return (0, r.jsx)(s.mh, {
     id: l.id,
     children: e => (0, r.jsxs)("div", {
@@ -153,7 +153,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                   t.stopPropagation(), e.onClick(t)
                 },
                 className: I.avatar,
-                src: l.action === E.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === E.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === E.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === E.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, C.j)() : null == (t = l.user) ? true : t.getAvatarURL(_, 40),
+                src: l.action === N.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === N.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === N.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === N.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, O.j)() : null == (t = l.user) ? true : t.getAvatarURL(_, 40),
                 "aria-hidden": true,
                 size: d.EFr.SIZE_40
               }))
@@ -184,10 +184,10 @@ let w = Chunk647438.forwardRef((e, t) => {
                 options: a
               } = l;
               t = (0, v.lM)(i) ? i.name : i.toString();
-              let s = O.N5(l);
+              let s = C.N5(l);
               return null != s ? (0, r.jsx)("div", {
                 className: I.overflowEllipsis,
-                children: N.intl.format(s, {
+                children: E.intl.format(s, {
                   user: n,
                   target: t,
                   userHook: (e, t) => {
@@ -198,11 +198,11 @@ let w = Chunk647438.forwardRef((e, t) => {
                     if (null != l.options.integration_type) {
                       var n;
                       let e = u.Z.get(l.options.integration_type);
-                      return null != (n = null == e ? true : e.name) ? n : N.intl.string(N.t["n+olu7"])
+                      return null != (n = null == e ? true : e.name) ? n : E.intl.string(E.t["n+olu7"])
                     }
-                    return N.intl.string(N.t["30mdIx"])
+                    return E.intl.string(E.t["30mdIx"])
                   },
-                  targetHook: (e, t) => l.targetType === E.KFR.USER && l.target instanceof h.Z ? (0, r.jsx)(P, {
+                  targetHook: (e, t) => l.targetType === N.KFR.USER && l.target instanceof h.Z ? (0, r.jsx)(P, {
                     user: l.target,
                     onContextMenu: A
                   }, t) : (0, r.jsx)("span", {

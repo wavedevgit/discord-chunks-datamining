@@ -28,7 +28,7 @@ let x = function(e) {
     primaryColor: j,
     secondaryColor: v,
     isDisabled: _ = false
-  } = e, C = (0, a.e7)([m.Z], () => m.Z.getProps().originalProfile), O = null != C && C.tag !== i;
+  } = e, O = (0, a.e7)([m.Z], () => m.Z.getProps().originalProfile), C = null != O && O.tag !== i;
 
   function y(e) {
     g.Z.updateGuildProfile(n, {
@@ -70,7 +70,7 @@ let x = function(e) {
           })
         })]
       })
-    }), O && (0, r.jsx)(d.Z, {
+    }), C && (0, r.jsx)(d.Z, {
       className: b.tagChangeInfoBox,
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",

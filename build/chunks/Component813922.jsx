@@ -53,32 +53,32 @@ function b(e) {
   var t, n, b, x, j, v;
   let {
     rule: _,
-    onChangeRule: C
-  } = e, O = i.useCallback(e => {
-    C(h(f({}, _), {
+    onChangeRule: O
+  } = e, C = i.useCallback(e => {
+    O(h(f({}, _), {
       triggerMetadata: h(f({}, _.triggerMetadata), {
         keywordFilter: e
       })
     }))
-  }, [C, _]), y = i.useCallback(e => {
-    C(h(f({}, _), {
+  }, [O, _]), y = i.useCallback(e => {
+    O(h(f({}, _), {
       triggerMetadata: h(f({}, _.triggerMetadata), {
         allowList: e
       })
     }))
-  }, [C, _]);
+  }, [O, _]);
   return (0, r.jsxs)("div", {
     className: p.cardContentsContainer,
     children: [(0, r.jsxs)(d.Z, {
       step: 1,
       header: m.intl.string(m.t["ue+tnb"]),
       children: [(0, r.jsx)(o.Z, {
-        onChangeText: O,
+        onChangeText: C,
         maxWordCount: g.RH,
         initialValue: null == (t = _.triggerMetadata) ? true : t.keywordFilter
       }), (0, r.jsx)(s.Z, {
         rule: _,
-        onChangeRule: C,
+        onChangeRule: O,
         collapsed: (null == _ || null == (n = _.triggerMetadata) ? true : n.regexPatterns) == null || (null == _ || null == (b = _.triggerMetadata) ? true : b.regexPatterns.length) === 0
       }), (0, r.jsx)(l.Z, {
         onChange: y,
@@ -93,7 +93,7 @@ function b(e) {
       header: m.intl.string(m.t["18TOiQ"]),
       children: (0, r.jsx)(a.Z, {
         rule: _,
-        onChangeRule: C
+        onChangeRule: O
       })
     }), (0, r.jsx)(u.Z, {
       type: u.Z.Type.CROSS
@@ -102,7 +102,7 @@ function b(e) {
       header: m.intl.string(m.t.u5xPPW),
       children: (0, r.jsx)(c.Z, {
         rule: _,
-        onChangeRule: C,
+        onChangeRule: O,
         onlyRoles: true
       })
     })]

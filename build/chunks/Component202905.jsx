@@ -49,25 +49,25 @@ function v(e) {
   } = (0, s.cj)([m.Z], () => ({
     guild: m.Z.getGuild(),
     guildProfile: m.Z.getGuildProfile()
-  })), _ = null == n ? true : n.id, C = (0, s.e7)([c.Z], () => c.Z.get(_)), {
-    fetchGuildProfile: O
-  } = (0, d.u)(_), y = (null == v ? true : v.visibility) == null || !l.Y.VISIBLE.has(null == v ? true : v.visibility), E = (null == v ? true : v.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
+  })), _ = null == n ? true : n.id, O = (0, s.e7)([c.Z], () => c.Z.get(_)), {
+    fetchGuildProfile: C
+  } = (0, d.u)(_), y = (null == v ? true : v.visibility) == null || !l.Y.VISIBLE.has(null == v ? true : v.visibility), N = (null == v ? true : v.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
   i.useEffect(() => {
-    null != _ && O()
-  }, [_, O]);
-  let N = i.useMemo(() => null == n || null == v ? j : v, [n, v]),
+    null != _ && C()
+  }, [_, C]);
+  let E = i.useMemo(() => null == n || null == v ? j : v, [n, v]),
     I = i.useCallback(() => {
-      (null == n ? true : n.id) != null && (E ? g.Z.updateGuildProfile(n.id, {
+      (null == n ? true : n.id) != null && (N ? g.Z.updateGuildProfile(n.id, {
         visibility: l.k.PUBLIC
       }) : g.Z.updateGuildProfile(n.id, {
         visibility: l.k.PUBLIC_WITH_RECRUITMENT
       }))
-    }, [null == n ? true : n.id, E]),
+    }, [null == n ? true : n.id, N]),
     S = i.useCallback(() => {
       g.Z.setSection(h.pNK.PROFILE)
     }, []);
   if (null == n) return null;
-  let T = null != t ? t : null == C ? true : C.formFields;
+  let T = null != t ? t : null == O ? true : O.formFields;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-md/semibold",
@@ -95,7 +95,7 @@ function v(e) {
         className: x.column,
         children: [(0, r.jsx)(o.rsf, {
           label: b.intl.string(b.t["N/0232"]),
-          checked: E,
+          checked: N,
           onChange: I,
           disabled: y
         }), (0, r.jsx)(a.xvT, {
@@ -120,7 +120,7 @@ function v(e) {
             className: x.gradient
           }), (0, r.jsx)(u.ZP, {
             className: x.preview,
-            profile: N,
+            profile: E,
             CTAOverride: (0, r.jsx)(a.zxk, {
               variant: "active",
               size: "sm",

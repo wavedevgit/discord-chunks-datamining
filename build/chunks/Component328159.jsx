@@ -27,10 +27,10 @@ let p = e => {
       reasonMaxLength: b,
       placeholder: x,
       position: j
-    } = e, v = i.useRef(null), [_, C] = i.useState(false), O = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), y = (0, r.jsx)(a.yRy, {
+    } = e, v = i.useRef(null), [_, O] = i.useState(false), C = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), y = (0, r.jsx)(a.yRy, {
       targetElementRef: v,
       onRequestClose: () => {
-        C(false)
+        O(false)
       },
       shouldShow: _,
       position: "right",
@@ -55,7 +55,7 @@ let p = e => {
       children: () => (0, r.jsx)(o.Z, {
         active: false,
         onClick: () => {
-          C(true)
+          O(true)
         },
         tabIndex: 0,
         renderButtonContents: null != d ? () => (0, r.jsx)(s.Z, {
@@ -82,7 +82,7 @@ let p = e => {
         show: (null != (t = null == n ? true : n.length) ? t : 0) > 0 || null != d
       },
       onClear: f
-    }, "text-input-".concat(j, "-").concat(O))
+    }, "text-input-".concat(j, "-").concat(C))
   },
   f = e => {
     let {

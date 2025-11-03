@@ -57,8 +57,8 @@ let x = function(e) {
     role: j
   } = e, v = (0, o.oC)(t.id, j), {
     analyticsLocations: _
-  } = (0, a.ZP)(), C = t.features.has(g.GuildFeatures.ROLE_ICONS), O = e => {
-    C || ((0, l.yw)(g.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+  } = (0, a.ZP)(), O = t.features.has(g.GuildFeatures.ROLE_ICONS), C = e => {
+    O || ((0, l.yw)(g.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: b(h({}, e), {
         section: g.jXE.CUSTOM_ROLE_ICONS_TOOLTIP
       }),
@@ -79,8 +79,8 @@ let x = function(e) {
     guild: t,
     guildFeature: g.GuildFeatures.ROLE_ICONS,
     tooltipPosition: "top",
-    hideTooltip: C,
-    onClick: () => O({
+    hideTooltip: O,
+    onClick: () => C({
       object: g.qAy.LEARN_MORE,
       objectType: g.AnalyticsObjectTypes.TIER_2
     })
@@ -119,7 +119,7 @@ let x = function(e) {
             onUploadIcon: e => (0, u._l)(j.id, e, null),
             onSelectUnicodeEmoji: e => (0, u._l)(j.id, null, e)
           }))
-        }) : O({
+        }) : C({
           object: g.qAy.UPLOAD_IMAGE
         }),
         variant: "primary",

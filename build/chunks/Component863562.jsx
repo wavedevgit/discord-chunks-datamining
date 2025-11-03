@@ -23,14 +23,14 @@ let h = e => {
     isDisabled: l,
     sticker: h,
     canManageSticker: b
-  } = e, [x, j] = i.useState(false), [v, _] = (0, d.Z)(null, 4e3), C = async () => {
+  } = e, [x, j] = i.useState(false), [v, _] = (0, d.Z)(null, 4e3), O = async () => {
     _(null), j(true);
     try {
       await (0, g.Um)(h)
     } catch (e) {
       _(e.body.message), j(false)
     }
-  }, O = u.ZP.useUserTag(h.user);
+  }, C = u.ZP.useUserTag(h.user);
   return (0, r.jsx)(s.u, {
     forceOpen: null != v,
     text: v,
@@ -62,7 +62,7 @@ let h = e => {
             }), (0, r.jsx)(o.Text, {
               color: "header-secondary",
               variant: "text-xs/normal",
-              children: O
+              children: C
             })]
           })]
         }), b ? (0, r.jsxs)("div", {
@@ -105,7 +105,7 @@ let h = e => {
             })
           }), (0, r.jsx)(o.P3F, {
             className: a()(f.action, f.actionRemove),
-            onClick: C,
+            onClick: O,
             "aria-label": p.intl.string(p.t.N86XcP),
             children: (0, r.jsx)(o.Dio, {
               size: "md",

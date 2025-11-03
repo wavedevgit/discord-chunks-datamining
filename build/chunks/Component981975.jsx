@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk144563 = require("./144563.js"),
   Chunk21321 = require("./21321.js");
 
-function N(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,18 +63,18 @@ function S(e) {
     children: [(0, r.jsx)(d.Heading, {
       className: y.headerHeading,
       variant: "eyebrow",
-      children: O.intl.string(O.t.nMir27)
+      children: C.intl.string(C.t.nMir27)
     }), (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
       className: y.headerNoConfigSubtitle,
-      children: O.intl.format(O.t.q5f7tK, {
+      children: C.intl.format(C.t.q5f7tK, {
         helpdeskArticleUrl: m.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(d.Button, {
       disabled: n,
       onClick: t,
-      text: O.intl.string(O.t["OSvW5+"]),
+      text: C.intl.string(C.t["OSvW5+"]),
       fullWidth: true,
       variant: "primary"
     })]
@@ -120,7 +120,7 @@ function T(e) {
       onComplete: e => G(e),
       excludedPlatformTypes: k,
       integrations: o,
-      onCompleteApplication: e => G(C.Kt, e)
+      onCompleteApplication: e => G(O.Kt, e)
     })
   }
   let U = null;
@@ -134,7 +134,7 @@ function T(e) {
     L.length < 10 && (e = (0, r.jsx)(d.Button, {
       disabled: l,
       onClick: M,
-      text: O.intl.string(O.t["OSvW5+"]),
+      text: C.intl.string(C.t["OSvW5+"]),
       icon: d.oFk,
       fullWidth: true,
       variant: "secondary"
@@ -146,30 +146,30 @@ function T(e) {
             className: y.headerTitleTextContainer,
             children: (0, r.jsx)(d.Heading, {
               variant: "eyebrow",
-              children: O.intl.string(O.t.nMir27)
+              children: C.intl.string(C.t.nMir27)
             })
           }), (0, r.jsx)(d.Avr, {
             variant: "critical",
             onClick: B,
             disabled: l,
-            text: O.intl.string(O.t.ntW1cc),
+            text: C.intl.string(C.t.ntW1cc),
             textVariant: "text-sm/semibold"
           })]
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
-          children: O.intl.format(O.t.q5f7tK, {
+          children: C.intl.format(C.t.q5f7tK, {
             helpdeskArticleUrl: m.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, l) {
         let a = I(i, g.O1.OR);
         return (0, r.jsx)(d.FXm, {
-          label: O.intl.string(O.t.Xs7PHX),
+          label: C.intl.string(C.t.Xs7PHX),
           options: [{
-            name: O.intl.string(O.t.W3iY58),
+            name: C.intl.string(C.t.W3iY58),
             value: g.O1.OR
           }, {
-            name: O.intl.string(O.t.gHXS9A),
+            name: C.intl.string(C.t.gHXS9A),
             value: g.O1.AND
           }],
           onChange: e => l(i, e),
@@ -179,7 +179,7 @@ function T(e) {
       }(l, n.id, A, L, (e, t) => (0, f.d_)(n.id, I(e, t))), function(e, t, n, i, l) {
         function a(n, r) {
           let i = [];
-          for (let t of e) i.push(N({}, t));
+          for (let t of e) i.push(E({}, t));
           if (null == n) {
             let t = e[r];
             null !== t && null == t.connectionMetadataField && null == t.operator && null == t.value ? i = i.filter(e => null == t.applicationId ? e.connectionType !== t.connectionType : e.connectionType !== t.connectionType && e.applicationId !== t.applicationId) : i.splice(r, 1)
@@ -217,7 +217,7 @@ function T(e) {
               })(Object(t)).forEach(function(n) {
                 Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
               }), e
-            }(N({}, t[0].configuration), {
+            }(E({}, t[0].configuration), {
               connectionMetadataField: true,
               operator: true,
               value: true
@@ -247,10 +247,10 @@ function T(e) {
     },
     onScroll: Z,
     children: (0, r.jsxs)("div", {
-      className: E.contentWidth,
+      className: N.contentWidth,
       children: [(0, r.jsx)("div", {
-        className: a()(E.header, E.stickyHeader, {
-          [E.stickyHeaderElevated]: !w
+        className: a()(N.header, N.stickyHeader, {
+          [N.stickyHeaderElevated]: !w
         }),
         ref: P,
         children: (0, r.jsx)(j.Z, {
@@ -270,7 +270,7 @@ function T(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: O.intl.string(O.t["2aFeef"])
+          children: C.intl.string(C.t["2aFeef"])
         })]
       }) : null, U]
     })

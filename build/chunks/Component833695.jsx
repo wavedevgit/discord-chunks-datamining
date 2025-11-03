@@ -34,9 +34,9 @@ function v(e) {
   var t, n, s;
   let {
     guildId: f
-  } = e, v = (0, h.Z)(f), _ = (0, a.f3)(), C = (0, i.e7)([p.Z], () => p.Z.getGuild());
-  return v.loading || null == C ? (0, r.jsx)(l.$jN, {}) : null == v.application ? (0, r.jsx)(u.Z, {
-    guild: C
+  } = e, v = (0, h.Z)(f), _ = (0, a.f3)(), O = (0, i.e7)([p.Z], () => p.Z.getGuild());
+  return v.loading || null == O ? (0, r.jsx)(l.$jN, {}) : null == v.application ? (0, r.jsx)(u.Z, {
+    guild: O
   }) : (0, r.jsxs)(d.Z, {
     children: [(0, r.jsx)(c.Z, {
       revenue: v.metrics.revenue,

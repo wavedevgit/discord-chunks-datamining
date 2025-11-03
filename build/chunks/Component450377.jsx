@@ -67,7 +67,7 @@ function T(e, t) {
 function P(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(E.Plq.MANAGE_GUILD, t), [t]), l = i.useCallback(async e => {
+  } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), l = i.useCallback(async e => {
     let {
       value: n
     } = e;
@@ -78,10 +78,10 @@ function P(e) {
         verificationLevel: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3v"]), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3v"]), c.ToastType.FAILURE))
     }
   }, [t]), a = i.useMemo(() => {
-    let e = (0, j.IF)(null == t ? true : t.features.has(E.GuildFeatures.COMMUNITY)).map(e => T(S({}, e), {
+    let e = (0, j.IF)(null == t ? true : t.features.has(N.GuildFeatures.COMMUNITY)).map(e => T(S({}, e), {
       tooltipPosition: "left"
     }));
     return (0, j.LJ)(e)
@@ -93,14 +93,14 @@ function P(e) {
       children: [(0, r.jsx)(c.Text, {
         color: "header-primary",
         variant: "text-md/semibold",
-        children: N.intl.string(N.t.DpRdYK)
+        children: E.intl.string(E.t.DpRdYK)
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: N.intl.format(N.t.iuRk2j, {})
+        children: E.intl.format(E.t.iuRk2j, {})
       })]
-    }), (0, r.jsx)(O.Z, {
-      changeTitle: N.intl.string(N.t.TxESJG),
+    }), (0, r.jsx)(C.Z, {
+      changeTitle: E.intl.string(E.t.TxESJG),
       value: null == s ? true : s.value,
       options: a,
       disabled: !n,
@@ -114,7 +114,7 @@ function w(e) {
     guild: t,
     className: n,
     withDivider: l = true
-  } = e, s = (0, o.e7)([f.Z], () => null != t && f.Z.can(E.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
+  } = e, s = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
     let {
       value: n
     } = e;
@@ -125,10 +125,10 @@ function w(e) {
         explicitContentFilter: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3v"]), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3v"]), c.ToastType.FAILURE))
     }
   }, [t.id]), u = i.useMemo(() => {
-    let e = (0, j.MF)(null == t ? true : t.features.has(E.GuildFeatures.COMMUNITY)).map(e => T(S({}, e), {
+    let e = (0, j.MF)(null == t ? true : t.features.has(N.GuildFeatures.COMMUNITY)).map(e => T(S({}, e), {
       tooltipPosition: "left"
     }));
     return (0, j.LJ)(e)
@@ -143,16 +143,16 @@ function w(e) {
         children: [(0, r.jsx)(c.Text, {
           color: "header-primary",
           variant: "text-md/semibold",
-          children: N.intl.string(N.t.bPgfJz)
+          children: E.intl.string(E.t.bPgfJz)
         }), (0, r.jsx)(c.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: N.intl.format(N.t.BI4ukC, {
-            helpdeskArticle: x.Z.getArticleURL(E.BhN.SAFE_DIRECT_MESSAGING)
+          children: E.intl.format(E.t.BI4ukC, {
+            helpdeskArticle: x.Z.getArticleURL(N.BhN.SAFE_DIRECT_MESSAGING)
           })
         })]
-      }), (0, r.jsx)(O.Z, {
-        changeTitle: N.intl.string(N.t["eBd+Uv"]),
+      }), (0, r.jsx)(C.Z, {
+        changeTitle: E.intl.string(E.t["eBd+Uv"]),
         value: null == g ? true : g.value,
         options: u,
         disabled: !s,
@@ -162,9 +162,9 @@ function w(e) {
   })
 }
 async function Z(e, t) {
-  if (e.features.has(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) === t) return;
+  if (e.features.has(N.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) === t) return;
   let n = e.features;
-  return t ? n.add(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await v.Z.saveGuild(e.id, {
+  return t ? n.add(N.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(N.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await v.Z.saveGuild(e.id, {
     features: n
   })
 }
@@ -172,15 +172,15 @@ async function Z(e, t) {
 function R(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(E.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(E.GuildFeatures.COMMUNITY), a = (0, u.n2)(t.id), [s, d] = i.useState(t.features.has(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), g = i.useCallback(async e => {
+  } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(N.GuildFeatures.COMMUNITY), a = (0, u.n2)(t.id), [s, d] = i.useState(t.features.has(N.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), g = i.useCallback(async e => {
     d(e), await Z(t, e)
   }, [t]);
   return l || !a ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: I.setupContainer,
       children: [(0, r.jsx)(c.rsf, {
-        label: N.intl.string(N.t.jDarmy),
-        description: N.intl.string(N.t["/ee7yK"]),
+        label: E.intl.string(E.t.jDarmy),
+        description: E.intl.string(E.t["/ee7yK"]),
         badge: "beta",
         checked: s,
         onChange: g,
@@ -188,7 +188,7 @@ function R(e) {
       }), (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
         textVariant: "text-xs/normal",
-        children: N.intl.string(N.t.JxO63z)
+        children: E.intl.string(E.t.JxO63z)
       })]
     }), (0, r.jsx)(c.izJ, {
       className: I.divider
@@ -200,7 +200,7 @@ function D(e) {
   let {
     guild: t,
     mfaLevel: n
-  } = e, l = (0, o.e7)([f.Z], () => null != t && f.Z.can(E.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([b.default], () => b.default.getCurrentUser()), {
+  } = e, l = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([b.default], () => b.default.getCurrentUser()), {
     isGuildOwnerWithMFA: d,
     showMFAUserTooltip: u
   } = i.useMemo(() => null == a ? {
@@ -209,10 +209,10 @@ function D(e) {
   } : {
     isGuildOwnerWithMFA: (0, p.yn)(t, a),
     showMFAUserTooltip: !a.mfaEnabled && (0, p.eM)(t, a)
-  }, [a, t]), h = n === E.BpS.ELEVATED, x = (0, s.throttle)(async e => {
+  }, [a, t]), h = n === N.BpS.ELEVATED, x = (0, s.throttle)(async e => {
     d && (u || await v.Z.updateMFALevel({
       guildId: t.id,
-      level: e ? E.BpS.ELEVATED : E.BpS.NONE,
+      level: e ? N.BpS.ELEVATED : N.BpS.NONE,
       isEnabled: !e
     }))
   }, 1e3);
@@ -222,18 +222,18 @@ function D(e) {
     }), (0, r.jsxs)("div", {
       className: I.setupContainer,
       children: [(0, r.jsx)(c.rsf, {
-        label: N.intl.string(N.t.lbBfEQ),
-        description: N.intl.string(N.t.REr5AI),
+        label: E.intl.string(E.t.lbBfEQ),
+        description: E.intl.string(E.t.REr5AI),
         checked: h,
         onChange: x,
         disabled: !d
       }), u && (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
         textVariant: "text-xs/normal",
-        children: N.intl.format(N.t.Xz1O0W, {
+        children: E.intl.format(E.t.Xz1O0W, {
           onClick: function() {
             (0, m.openUserSettings)(g.n.ACCOUNT_PANEL, {
-              section: E.oAB.ACCOUNT
+              section: N.oAB.ACCOUNT
             })
           }
         })

@@ -71,7 +71,7 @@ class w extends Chunk647438.Component {
       s = e.map(e => {
         var n;
         return {
-          numRequired: N.oCV[e.tier],
+          numRequired: E.oCV[e.tier],
           name: (0, y.nW)(e.tier),
           y: null != (n = t[e.tier]) ? n : 0,
           key: e.tier
@@ -145,7 +145,7 @@ class w extends Chunk647438.Component {
             tiers: l,
             tierIndex: i,
             onSetRef: this.setTierRef,
-            isAnimatedTo: N.oCV[this.state.animatedTier] >= N.oCV[r.tier],
+            isAnimatedTo: E.oCV[this.state.animatedTier] >= E.oCV[r.tier],
             subscriptionCount: n,
             guildId: e
           }))]
@@ -156,7 +156,7 @@ class w extends Chunk647438.Component {
   constructor(...e) {
     super(...e), T(this, "tierRefs", {}), T(this, "defaultTierRef", i.createRef()), T(this, "subscribersPopoutTargetRef", i.createRef()), T(this, "state", {
       tierPositions: null,
-      animatedTier: N.Eu4.NONE
+      animatedTier: E.Eu4.NONE
     }), T(this, "measure", () => {
       let {
         uniqueSubscriberCount: e
@@ -258,7 +258,7 @@ let Z = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk905128.Z, Chunk999382.
     l = null != require ? Chunk899667.Z.getAppliedGuildBoostsForGuild(require) : null,
     a = o()(null != Chunk120356 ? Chunk120356 : []).uniqBy(e => e.userId),
     s = a.map(e => ({
-      user: O.default.getUser(e.userId),
+      user: C.default.getUser(e.userId),
       nick: _.ZP.getNick(n, e.userId)
     })).filter(e => null != e.user).value();
   return {

@@ -2,7 +2,7 @@
 /** chunk id: 874993, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => O
 }), require("./388685.js"), require("./472816.js"), require("./794429.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,25 +24,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk894780 = require("./894780.js");
 
-function C(e) {
+function O(e) {
   var t, n;
   let {
-    guildId: C,
-    setPreventNavigation: O = () => {}
+    guildId: O,
+    setPreventNavigation: C = () => {}
   } = e, {
     editingRule: y,
-    setEditingRule: E
+    setEditingRule: N
   } = (0, p.V)(), {
-    guild: N,
+    guild: E,
     subsection: I
-  } = (0, l.cj)([s.Z], () => s.Z.getProps()), S = null != (n = null != (t = null == N ? true : N.id) ? t : C) ? n : j.lds, T = null != y, [P] = (0, u.RD)(S), {
+  } = (0, l.cj)([s.Z], () => s.Z.getProps()), S = null != (n = null != (t = null == E ? true : E.id) ? t : O) ? n : j.lds, T = null != y, [P] = (0, u.RD)(S), {
     rulesByTriggerType: w
   } = (0, u.pH)(S), Z = {
     [g.vh.MEMBERS]: v.intl.string(v.t.sx4E5v),
     [g.vh.CONTENT]: v.intl.string(v.t.fphZb0)
   }, R = i.useMemo(() => Object.values(null != w ? w : {}).flat().filter(c.lm), [w]), D = {
     isInEditMode: T,
-    setEditingRule: E
+    setEditingRule: N
   }, A = i.useRef(D);
   i.useEffect(() => {
     A.current = D
@@ -70,8 +70,8 @@ function C(e) {
       return L(null != (e = null == y ? true : y.id) ? e : null, null != (t = null == y ? true : y.triggerType) ? t : null)
     }, [L, y]);
   i.useEffect(() => {
-    O(T, (0, b.af)(k))
-  }, [O, T, k]);
+    C(T, (0, b.af)(k))
+  }, [C, T, k]);
   let G = (0, g.Z6)(S);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(a.Heading, {
@@ -119,8 +119,8 @@ function C(e) {
           })
         })]
       }, t)
-    }), null != N && (0, r.jsx)(o.k0, {
-      guild: N,
+    }), null != E && (0, r.jsx)(o.k0, {
+      guild: E,
       withDivider: false,
       className: _.explicitContentFilterSection
     }), (0, r.jsx)(f.Z, {

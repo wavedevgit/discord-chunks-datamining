@@ -26,11 +26,11 @@ let x = [],
     } = e, n = (0, a.e7)([d.Z], () => d.Z.getGuild(t)), j = (0, a.Wu)([m.Z], () => {
       var e, t;
       return null != (t = null == (e = m.Z.getSettings().resourceChannels) ? true : e.map(e => e.channelId)) ? t : x
-    }), v = (0, a.Wu)([m.Z], () => m.Z.getDismissedSuggestedChannelIds(t)), _ = (0, a.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), C = i.useMemo(() => (0, l.chain)(_).filter(e => e.channel.type === f.d4z.GUILD_TEXT && e.channel.id !== (null == n ? true : n.rulesChannelId) && !v.includes(e.channel.id) && !j.includes(e.channel.id) && u.Uu(f.Plq.VIEW_CHANNEL, e.channel) && !u.Uu(f.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [_, v, null == n ? true : n.rulesChannelId, j]), O = i.useCallback(() => {
-      let e = C.map(e => e.channel.id);
+    }), v = (0, a.Wu)([m.Z], () => m.Z.getDismissedSuggestedChannelIds(t)), _ = (0, a.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), O = i.useMemo(() => (0, l.chain)(_).filter(e => e.channel.type === f.d4z.GUILD_TEXT && e.channel.id !== (null == n ? true : n.rulesChannelId) && !v.includes(e.channel.id) && !j.includes(e.channel.id) && u.Uu(f.Plq.VIEW_CHANNEL, e.channel) && !u.Uu(f.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [_, v, null == n ? true : n.rulesChannelId, j]), C = i.useCallback(() => {
+      let e = O.map(e => e.channel.id);
       (0, g.q6)(t, e)
-    }, [t, C]);
-    return C.length <= 0 || j.length >= o.x3 ? null : (0, r.jsxs)(r.Fragment, {
+    }, [t, O]);
+    return O.length <= 0 || j.length >= o.x3 ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: b.suggestedChannelsSection,
         children: [(0, r.jsx)(s.Text, {
@@ -44,7 +44,7 @@ let x = [],
             children: h.intl.string(h.t.YtNI8C)
           }), (0, r.jsxs)(s.P3F, {
             className: b.suggestedChannelsDismiss,
-            onClick: O,
+            onClick: C,
             children: [(0, r.jsx)(s.dz2, {
               size: "md",
               color: "currentColor",
@@ -57,9 +57,9 @@ let x = [],
           })]
         }), (0, r.jsx)("div", {
           className: b.suggestedChannels,
-          children: C.map((e, t) => (0, r.jsx)(p.Z, {
+          children: O.map((e, t) => (0, r.jsx)(p.Z, {
             channel: e.channel,
-            end: t < C.length - 1
+            end: t < O.length - 1
           }, e.channel.id))
         })]
       }), (0, r.jsx)("div", {

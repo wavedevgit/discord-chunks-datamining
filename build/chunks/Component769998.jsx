@@ -27,11 +27,11 @@ function h(e) {
     guildId: b,
     toggled: x,
     onToggleAction: j
-  } = e, v = e => () => j(e), _ = (0, d.c)(n.type, n, h), C = null == (t = n.metadata) ? true : t.durationSeconds, O = null != C ? (0, m.getFriendlyDurationString)(C) : null, y = (0, i.e7)([c.Z, o.Z], () => c.Z.can(g.Plq.MODERATE_MEMBERS, o.Z.getGuild(b)), [b]);
+  } = e, v = e => () => j(e), _ = (0, d.c)(n.type, n, h), O = null == (t = n.metadata) ? true : t.durationSeconds, C = null != O ? (0, m.getFriendlyDurationString)(O) : null, y = (0, i.e7)([c.Z, o.Z], () => c.Z.can(g.Plq.MODERATE_MEMBERS, o.Z.getGuild(b)), [b]);
   if (null == _) return null;
   let {
-    headerText: E,
-    descriptionText: N,
+    headerText: N,
+    descriptionText: E,
     icon: I
   } = _;
   return (0, r.jsxs)("div", {
@@ -47,18 +47,18 @@ function h(e) {
       className: f.actionTextContainer,
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-sm/semibold",
-        children: E
+        children: N
       }), (0, r.jsx)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: N
+        children: E
       }), x && (0, r.jsxs)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: [null === O ? null : h === u.fX.MENTION_SPAM ? p.intl.format(p.t.i3lsKD, {
-          friendlyDurationString: O
+        children: [null === C ? null : h === u.fX.MENTION_SPAM ? p.intl.format(p.t.i3lsKD, {
+          friendlyDurationString: C
         }) : p.intl.format(p.t.mvHxze, {
-          friendlyDurationString: O
+          friendlyDurationString: C
         }), y && (0, r.jsx)(s.P3F, {
           onClick: v(true),
           className: f.editChannel,

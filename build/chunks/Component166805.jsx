@@ -2,7 +2,7 @@
 /** chunk id: 166805, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  P: () => C
+  P: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,10 +30,10 @@ function _(e) {
     guildProfile: c,
     fetchGuildProfile: m,
     fetchStatus: _
-  } = (0, g.u)(t), C = _ !== u.a.FETCHED, {
-    fetchedEmbed: O,
+  } = (0, g.u)(t), O = _ !== u.a.FETCHED, {
+    fetchedEmbed: C,
     embedEnabled: y,
-    embedChannelId: E
+    embedChannelId: N
   } = (0, s.cj)([f.Z], () => {
     let {
       fetchedEmbed: e,
@@ -45,16 +45,16 @@ function _(e) {
       embedEnabled: t,
       embedChannelId: n
     }
-  }), N = i.useMemo(() => (0, b.S)(t), [t]), I = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !C && !P && !y;
+  }), E = i.useMemo(() => (0, b.S)(t), [t]), I = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !O && !P && !y;
   i.useEffect(() => {
-    O || (0, p.R)(t)
-  }, [O, t]), i.useEffect(() => {
+    C || (0, p.R)(t)
+  }, [C, t]), i.useEffect(() => {
     m()
   }, [t, m]);
   let Z = i.useCallback(async e => {
-    T(true), await (0, h.c)(t, e, E), T(false)
-  }, [E, t]);
-  return O ? (0, r.jsxs)(r.Fragment, {
+    T(true), await (0, h.c)(t, e, N), T(false)
+  }, [N, t]);
+  return C ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.rsf, {
       label: j.intl.string(j.t.NR6huS),
       checked: y,
@@ -71,7 +71,7 @@ function _(e) {
         description: j.intl.string(j.t.LxVR9A),
         guildId: t,
         widgetEnabled: y,
-        widgetChannelId: E,
+        widgetChannelId: N,
         enableLocalUpdate: true
       }), (0, r.jsxs)("div", {
         className: v.twoColumns,
@@ -88,7 +88,7 @@ function _(e) {
           children: (0, r.jsx)(a.gNt, {
             label: j.intl.string(j.t.VECJcK),
             children: (0, r.jsx)(d.Z, {
-              value: N
+              value: E
             })
           })
         })]
@@ -116,7 +116,7 @@ function _(e) {
   }) : (0, r.jsx)(o.$jN, {})
 }
 
-function C(e) {
+function O(e) {
   let {
     guildId: t
   } = e, n = (0, s.e7)([m.Z], () => m.Z.enabled);

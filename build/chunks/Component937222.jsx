@@ -43,7 +43,7 @@ function h(e) {
       analyticsObject: u.qAy.BUTTON_CTA,
       perks: (0, g.XO)()
     })
-  }, [b, t]), C = i.useCallback(() => {
+  }, [b, t]), O = i.useCallback(() => {
     (0, c.mw)({
       uploadType: m.pC.GUILD_BANNER,
       maxFileSizeBytes: p.B,
@@ -61,7 +61,7 @@ function h(e) {
       disabled: !(x && n),
       variant: "primary",
       text: f.intl.string(f.t.yG2pUi),
-      onClick: C
+      onClick: O
     })
   }) : j ? (0, r.jsx)("div", {
     className: h,

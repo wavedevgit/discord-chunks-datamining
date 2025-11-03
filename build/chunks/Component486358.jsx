@@ -26,7 +26,7 @@ var Chunk793030 = require("./793030.js"),
 let _ = function() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild, []), n = (0, Chunk442837.e7)([Chunk496675.Z], () => null != exports && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, exports)), _ = (0, Chunk34586.E)(exports), C = (0, Chunk902840.l9)(null != exports ? exports : true);
+  } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild, []), n = (0, Chunk442837.e7)([Chunk496675.Z], () => null != exports && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, exports)), _ = (0, Chunk34586.E)(exports), O = (0, Chunk902840.l9)(null != exports ? exports : true);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: module,
     children: (0, Chunk951288.jsxs)("main", {
@@ -43,7 +43,7 @@ let _ = function() {
           className: Chunk566945.description,
           children: Chunk388032.intl.string(Chunk388032.t.XCGZFk)
         })]
-      }), true === C && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), true === O && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk354031.P, {
           canManageGuild: require,
           features: exports.features

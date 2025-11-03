@@ -74,8 +74,8 @@ function v(e) {
     n(e), g(e)
   }
   let _ = t === m.p6O,
-    C = _ ? u : t,
-    O = (0, r.jsx)(c.dz2, {
+    O = _ ? u : t,
+    C = (0, r.jsx)(c.dz2, {
       size: "custom",
       width: 32,
       height: 24,
@@ -86,9 +86,9 @@ function v(e) {
       isDisabled: l
     }),
     {
-      ref: E
+      ref: N
     } = y,
-    N = function(e, t) {
+    E = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -118,8 +118,8 @@ function v(e) {
   return (0, r.jsxs)("div", b(h({
     className: f.buttonsContainer,
     "aria-label": p.intl.string(p.t["FJjrI/"]),
-    ref: E
-  }, N), {
+    ref: N
+  }, E), {
     children: [(0, r.jsx)("div", {
       className: a()(f.colorSwatch, {
         [f.disabled]: l
@@ -135,7 +135,7 @@ function v(e) {
           style: {
             backgroundColor: m.Pbq
           },
-          children: _ ? O : null
+          children: _ ? C : null
         }), (0, r.jsx)(c.Text, {
           className: f.swatchDescription,
           color: "header-secondary",
@@ -154,12 +154,12 @@ function v(e) {
       }, S), {
         children: [(0, r.jsx)("div", {
           className: a()(f.customSwatch, {
-            [f.defaultSwatch]: C === m.p6O
+            [f.defaultSwatch]: O === m.p6O
           }),
           style: {
-            "--custom-color": (0, s.Rf)(C)
+            "--custom-color": (0, s.Rf)(O)
           },
-          children: _ ? null : O
+          children: _ ? null : C
         }), (0, r.jsx)(c.Text, {
           className: f.swatchDescription,
           color: "header-secondary",
@@ -183,7 +183,7 @@ function v(e) {
             className: f.dropperIcon,
             width: 14,
             height: 14,
-            color: j(C)
+            color: j(O)
           })
         }))
       })]

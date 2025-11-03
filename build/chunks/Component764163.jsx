@@ -2,8 +2,8 @@
 /** chunk id: 764163, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  DI: () => N,
-  x3: () => E
+  DI: () => E,
+  x3: () => N
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,7 +43,7 @@ function _(e) {
   return e
 }
 
-function C(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,7 +56,7 @@ function C(e, t) {
   }), e
 }
 
-function O(e) {
+function C(e) {
   let {
     guildId: t,
     emojiData: n,
@@ -91,8 +91,8 @@ function O(e) {
       emojiName: n.name,
       animated: null == s ? true : s.animated
     })
-  }, [n, s]), O = "";
-  return null != s ? O = ":".concat(s.name, ":") : null != n.name && (O = f.ZP.convertSurrogateToName(n.name)), (0, r.jsx)(c.yRy, {
+  }, [n, s]), C = "";
+  return null != s ? C = ":".concat(s.name, ":") : null != n.name && (C = f.ZP.convertSurrogateToName(n.name)), (0, r.jsx)(c.yRy, {
     targetElementRef: a,
     animation: c.yRy.Animation.NONE,
     position: "top",
@@ -101,7 +101,7 @@ function O(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsxs)("div", C(_({
+      return (0, r.jsxs)("div", O(_({
         ref: a,
         className: v.emojiInputContainer
       }, e), {
@@ -113,7 +113,7 @@ function O(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
           className: v.emojiText,
-          children: O
+          children: C
         })]
       }))
     }
@@ -135,39 +135,39 @@ function y(e) {
   } = e, h = (0, u.Dt)(), [b, x] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [v, _] = i.useState(() => ({
     id: null == l ? true : l.emoji_id,
     name: null == l ? true : l.emoji_name
-  })), C = d && "" !== b && (null != v.id || null != v.name);
+  })), O = d && "" !== b && (null != v.id || null != v.name);
 
   function y(e) {
-    e.preventDefault(), C && (g({
+    e.preventDefault(), O && (g({
       description: b,
       emojiId: v.id,
       emojiName: v.name
     }), f())
   }
-  let E = [{
+  let N = [{
     text: j.intl.string(j.t["ETE/oC"]),
     variant: "secondary",
     onClick: f
   }];
-  return null != m && E.push({
+  return null != m && N.push({
     text: j.intl.string(j.t.oyYWHE),
     variant: "critical-secondary",
     onClick: () => {
       m(), f()
     },
     icon: c.XHJ
-  }), E.push({
+  }), N.push({
     text: null == l ? j.intl.string(j.t.OYkgVk) : j.intl.string(j.t["R3BPH+"]),
     variant: "primary",
     onClick: y,
-    disabled: !C
+    disabled: !O
   }), (0, r.jsx)("form", {
     onSubmit: y,
     children: (0, r.jsx)(s.Modal, {
       transitionState: p,
       onClose: f,
       title: j.intl.string(j.t["2qf9EI"]),
-      actions: E,
+      actions: N,
       children: (0, r.jsxs)(c.Kqy, {
         gap: "md",
         children: [a, (0, r.jsx)(c.Kx8, {
@@ -180,7 +180,7 @@ function y(e) {
           "aria-labelledby": h
         }), (0, r.jsx)(s.gNt, {
           label: j.intl.string(j.t.sMOuuS),
-          children: (0, r.jsx)(O, {
+          children: (0, r.jsx)(C, {
             guildId: n,
             emojiData: v,
             onSelectEmoji: _
@@ -191,7 +191,7 @@ function y(e) {
   })
 }
 
-function E(e) {
+function N(e) {
   let {
     guildId: t,
     omitChannelIds: n,
@@ -224,7 +224,7 @@ function E(e) {
     descriptionPlaceholder: j.intl.string(j.t.J8O1Lp),
     canSubmit: null != m,
     onSave: function(e) {
-      a()(null != m, "Cannot submit null channel"), s(C(_({}, e), {
+      a()(null != m, "Cannot submit null channel"), s(O(_({}, e), {
         channelId: m
       }))
     },
@@ -234,7 +234,7 @@ function E(e) {
   })
 }
 
-function N(e) {
+function E(e) {
   var t;
   let {
     initialData: n,
@@ -260,7 +260,7 @@ function N(e) {
     descriptionPlaceholder: j.intl.string(j.t.ucP4Tt),
     canSubmit: "" !== m,
     onSave: function(e) {
-      a()("" !== m, "Cannot submit empty name"), l(C(_({}, e), {
+      a()("" !== m, "Cannot submit empty name"), l(O(_({}, e), {
         name: m
       }))
     },

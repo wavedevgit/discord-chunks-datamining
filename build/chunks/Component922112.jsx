@@ -28,11 +28,11 @@ let b = function(e) {
     onDragReset: v
   } = e, {
     title: _,
-    channelId: C,
-    description: O
-  } = l, y = u.Z.getChannel(C), E = null;
-  null != y && (0, d.k3)(y) || (E = f.intl.string(f.t.kTdL8X));
-  let N = null == O || 0 === O.length,
+    channelId: O,
+    description: C
+  } = l, y = u.Z.getChannel(O), N = null;
+  null != y && (0, d.k3)(y) || (N = f.intl.string(f.t.kTdL8X));
+  let E = null == C || 0 === C.length,
     I = g.ZP.getResourceChannelIconURL({
       channelId: l.channelId,
       icon: l.icon
@@ -106,7 +106,7 @@ let b = function(e) {
       className: a()(h.resourceChannel, {
         [h.dropIndicatorBefore]: null != T && b < T,
         [h.dropIndicatorAfter]: null != T && b > T,
-        [h.resourceChannelError]: null != E
+        [h.resourceChannelError]: null != N
       }),
       ref: e => {
         S(P(e))
@@ -137,12 +137,12 @@ let b = function(e) {
           variant: "text-md/semibold",
           color: "header-primary",
           children: _
-        }), !N && (0, r.jsx)(o.Text, {
+        }), !E && (0, r.jsx)(o.Text, {
           className: h.resourceChannelDescription,
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
-          children: O
+          children: C
         })]
       }), (0, r.jsx)(s.u, {
         text: f.intl.string(f.t.bt75uw),
@@ -154,10 +154,10 @@ let b = function(e) {
           "aria-label": f.intl.string(f.t.bt75uw)
         })
       })]
-    }), null != E && (0, r.jsx)(o.Text, {
+    }), null != N && (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-danger",
-      children: E
+      children: N
     })]
   })
 }

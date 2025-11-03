@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk255311 = require("./255311.js");
 
-function O(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,14 +56,14 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = "guild-role-subscription-tier-template-selector";
+let N = "guild-role-subscription-tier-template-selector";
 
-function N(e) {
+function E(e) {
   let {
     guildId: t,
     priceTiers: l,
     groupListingId: h
-  } = e, N = (0, f._k)(h), {
+  } = e, E = (0, f._k)(h), {
     editStateIds: I,
     addNewEditStateId: S,
     addNewEditStateFromTemplate: T,
@@ -84,45 +84,45 @@ function N(e) {
       let {
         default: e
       } = await n.e("9558").then(n.bind(n, 34460));
-      return n => (0, r.jsx)(e, y(O({}, n), {
+      return n => (0, r.jsx)(e, y(C({}, n), {
         guildId: t,
         addNewEditStateFromTemplate: T,
         addNewEditStateFromScratch: S,
         priceTiers: l
       }))
     }, {
-      modalKey: E
+      modalKey: N
     }) : S()
   }, [t, T, S, l, A, D]), k = x.Lo(R), G = i.useCallback(() => R.forEach(x.GM), [R]), M = (0, b.mY)(), U = (0, o.e7)([g.Z], () => g.Z.getProps().subsection);
   return i.useEffect(() => (U === v.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && L(), () => {
-    (0, u.Mr3)(E)
+    (0, u.Mr3)(N)
   }), [U, L]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: C.groupListings,
+      className: O.groupListings,
       children: [R.map(e => (0, r.jsx)(j.Z, {
         guildId: t,
         initialEditStateId: e,
-        allSubscriptionListings: N,
+        allSubscriptionListings: E,
         priceTiers: l,
         groupListingId: h,
         onDeleteEditState: () => P(e),
         onBeforeDispatchNewListing: t => {
           var n;
-          return n = t.id, void Z(t => y(O({}, t), {
+          return n = t.id, void Z(t => y(C({}, t), {
             [n]: e
           }))
         },
         onAfterDispatchNewListing: () => P(e)
       }, e)), (0, r.jsxs)(u.P3F, {
         onClick: M ? true : L,
-        className: a()(C.createTierButton, {
-          [C.disabled]: M
+        className: a()(O.createTierButton, {
+          [O.disabled]: M
         }),
         "aria-disabled": M,
         children: [(0, r.jsx)(u.oFk, {
           size: "xs",
           color: "currentColor",
-          className: C.createTierIcon
+          className: O.createTierIcon
         }), (0, r.jsx)(u.Text, {
           variant: "text-md/normal",
           color: "interactive-active",
@@ -131,7 +131,7 @@ function N(e) {
       })]
     }), (0, r.jsx)(c.W, {
       component: "div",
-      className: C.contentRegion,
+      className: O.contentRegion,
       children: k && (0, r.jsx)(u.oXn, {
         children: (0, r.jsx)(d.Z, {
           onReset: G
@@ -164,7 +164,7 @@ function I(e) {
     description: _.intl.format(_.t.nHRSvM, {
       maxTiers: a
     }),
-    children: (0, r.jsx)(N, {
+    children: (0, r.jsx)(E, {
       priceTiers: n,
       guildId: t,
       groupListingId: s[0]

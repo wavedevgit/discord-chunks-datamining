@@ -2,7 +2,7 @@
 /** chunk id: 2348, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => E
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -54,7 +54,7 @@ function _(e, t) {
   }), e
 }
 
-function C(e) {
+function O(e) {
   let {
     guild: t,
     channel: i
@@ -103,7 +103,7 @@ function C(e) {
     })]
   })
 }
-let O = Chunk647438.memo(function() {
+let C = Chunk647438.memo(function() {
     return (0, Chunk951288.jsx)("div", {
       className: Chunk813878.separator
     })
@@ -118,25 +118,25 @@ let O = Chunk647438.memo(function() {
       children: "\xb7"
     }, "separator-".concat(t))
   }),
-  E = Chunk647438.memo(function(e) {
+  N = Chunk647438.memo(function(e) {
     let {
       channel: t,
       category: i,
       guild: l,
       isFirstChannel: m,
-      isLastChannel: C,
-      tooltipDirection: E = "right"
-    } = e, N = (0, f.Mf)(t.id, i.id), I = (0, f.t4)(t.id, i.id), S = (0, f.EH)(t.id, i.id), T = (0, f.lL)(l.id, i.id), P = null != (0, h.Z)(l).find(e => e.id === t.id);
+      isLastChannel: O,
+      tooltipDirection: N = "right"
+    } = e, E = (0, f.Mf)(t.id, i.id), I = (0, f.t4)(t.id, i.id), S = (0, f.EH)(t.id, i.id), T = (0, f.lL)(l.id, i.id), P = null != (0, h.Z)(l).find(e => e.id === t.id);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.u, {
         asContainer: true,
         __unsupportedReactNodeAsText: null != S ? S : T,
         delay: 500,
-        position: E,
+        position: N,
         children: (0, r.jsxs)(c.P3F, {
           className: a()(j.channelRow, {
             [j.firstChannel]: m,
-            [j.lastChannel]: C,
+            [j.lastChannel]: O,
             [j.disabled]: I
           }),
           onClick: e => {
@@ -199,7 +199,7 @@ let O = Chunk647438.memo(function() {
           }), (0, r.jsx)("div", {
             className: j.channelActions,
             children: (0, u.s)(t.guild_id, t.id) ? (0, r.jsx)(c.FZ5, {
-              checked: N,
+              checked: E,
               disabled: I
             }) : (0, r.jsx)(c.Button, {
               size: "sm",
@@ -210,11 +210,11 @@ let O = Chunk647438.memo(function() {
             })
           })]
         })
-      }), !C && (0, r.jsx)(O, {})]
+      }), !O && (0, r.jsx)(C, {})]
     })
   });
 
-function N(e) {
+function E(e) {
   let {
     categories: t,
     guild: n,
@@ -222,14 +222,14 @@ function N(e) {
     hasSidebar: a
   } = e, s = i.useCallback(e => {
     let i = t._categories[e];
-    return (0, r.jsx)(C, {
+    return (0, r.jsx)(O, {
       channel: i.channel,
       guild: n
     }, i.channel.id)
   }, [t, n]), o = i.useCallback((e, i) => {
     let l = t._categories[e],
       s = t[l.channel.id][i];
-    return null == s ? null : (0, r.jsx)(E, {
+    return null == s ? null : (0, r.jsx)(N, {
       category: l.channel,
       channel: s.channel,
       guild: n,

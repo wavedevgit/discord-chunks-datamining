@@ -2,7 +2,7 @@
 /** chunk id: 312910, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -23,12 +23,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk611480 = require("./611480.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk96761 = require("./96761.js");
-let C = {
+let O = {
     page: Chunk981631.ZY5.GUILD_SETTINGS,
     section: Chunk981631.jXE.GUILD_SETTINGS_STICKERS,
     object: Chunk981631.qAy.BOOSTING_BANNER
   },
-  O = e => {
+  C = e => {
     let {
       guild: t
     } = e, {
@@ -51,7 +51,7 @@ let C = {
           text: v.intl.string(v.t.Q5dbTi),
           onClick: () => (0, d.Z)({
             analyticsLocations: n,
-            analyticsLocation: C,
+            analyticsLocation: O,
             guildId: t.id,
             totalNumberOfSlotsToAssign: a
           })
@@ -87,7 +87,7 @@ let C = {
       })
     })]
   }),
-  E = e => {
+  N = e => {
     let t, n, i, {
         guild: l,
         guildStickers: a
@@ -116,7 +116,7 @@ let C = {
       }
     }))
   },
-  N = () => {
+  E = () => {
     let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
       t = (0, Chunk442837.e7)([Chunk926491.Z], () => {
         var t;
@@ -135,11 +135,11 @@ let C = {
           variant: "heading-lg/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.R5nQkS)
         }), Chunk623624 ? (0, Chunk951288.jsxs)("div", {
-          children: [(0, Chunk951288.jsx)(E, {
+          children: [(0, Chunk951288.jsx)(N, {
             guild: module,
             guildStickers: exports
           }), (0, Chunk951288.jsx)(y, {})]
-        }) : (0, Chunk951288.jsx)(O, {
+        }) : (0, Chunk951288.jsx)(C, {
           guild: module
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: Chunk96761.divider

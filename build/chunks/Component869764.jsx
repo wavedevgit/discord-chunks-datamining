@@ -54,7 +54,7 @@ function v(e) {
   }(e, ["title", "emojiId", "emojiName", "icon", "completed", "Icon", "onClick"]);
   let m = "channel" === u.variant ? u.channelId : null,
     g = "static" === u.variant ? u.subtitle : u.channelName,
-    h = null != m ? I.ZP.getNewMemberActionIconURL({
+    h = null != m ? N.ZP.getNewMemberActionIconURL({
       channelId: m,
       icon: i
     }) : null;
@@ -116,10 +116,10 @@ function b(e) {
     emoji: g,
     icon: f
   } = n, {
-    id: I,
-    name: p
+    id: N,
+    name: I
   } = null != g ? g : {}, O = (0, s.e7)([u.Z], () => u.Z.getChannel(a)), E = (0, c.ZP)(O, true), S = (0, s.e7)([h.Z], () => h.Z.can(x.Plq.VIEW_CHANNEL, O)), T = r.useMemo(() => {
-    if (null != O) return () => (0, N.gp)(O.guild_id, O.id)
+    if (null != O) return () => (0, p.gp)(O.guild_id, O.id)
   }, [O]);
   if (null == O || !S) return null;
   let _ = null != (t = (0, d.KS)(O)) ? t : o.VL1;
@@ -128,8 +128,8 @@ function b(e) {
     channelId: a,
     title: m,
     channelName: E,
-    emojiId: I,
-    emojiName: p,
+    emojiId: N,
+    emojiName: I,
     icon: f,
     completed: i,
     Icon: _,
@@ -143,10 +143,10 @@ function D(e) {
   } = e, n = (0, s.e7)([O.Z], () => O.Z.getNewMemberActions(t), [t]), i = (0, s.e7)([E.Z], () => E.Z.getCompletedActions(t)), c = (0, s.e7)([m.ZP], () => m.ZP.getSelfMember(t)), d = (0, s.e7)([g.Z], () => g.Z.getGuild(t));
   r.useEffect(() => {
     var e;
-    null == i && (null == c ? true : c.flags) != null && (0, p.yE)(null != (e = c.flags) ? e : 0, T.q.STARTED_HOME_ACTIONS) && (0, N.Fg)(t)
+    null == i && (null == c ? true : c.flags) != null && (0, I.yE)(null != (e = c.flags) ? e : 0, T.q.STARTED_HOME_ACTIONS) && (0, p.Fg)(t)
   }, [i, t, null == c ? true : c.flags]);
   let u = r.useCallback(() => {
-    null != d && null != d.rulesChannelId && (0, N.gp)(d.id, d.rulesChannelId)
+    null != d && null != d.rulesChannelId && (0, p.gp)(d.id, d.rulesChannelId)
   }, [d]);
   return null == c || null == n || 0 === n.length ? null : (0, l.jsxs)("div", {
     className: j.container,

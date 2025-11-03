@@ -46,7 +46,7 @@ let o = e => {
       }
       g(e), v("")
     }
-  }, [j, f, g, m, o.length]), C = i.useCallback(e => {
+  }, [j, f, g, m, o.length]), O = i.useCallback(e => {
     switch (e.key) {
       case a.vn.BACKSPACE:
         0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == u || u(new Set([o[o.length - 1].id])));
@@ -83,7 +83,7 @@ let o = e => {
     }
   }, x), n = n = {
     value: j,
-    onKeyDown: C,
+    onKeyDown: O,
     onChange: v,
     maxLength: p,
     disabled: h,

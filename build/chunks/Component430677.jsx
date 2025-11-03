@@ -22,17 +22,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197530 = require("./197530.js");
 let v = function(e) {
-  var t, l, v, _, C;
+  var t, l, v, _, O;
   let {
-    guildId: O,
+    guildId: C,
     action: y,
-    actionIndex: E,
-    onChange: N,
+    actionIndex: N,
+    onChange: E,
     onDelete: I,
     onDragStart: S,
     onDragComplete: T,
     onDragReset: P
-  } = e, w = (0, s.e7)([f.Z], () => f.Z.getChannel(y.channelId)), Z = (0, s.e7)([h.Z], () => h.Z.getGuild(O)), {
+  } = e, w = (0, s.e7)([f.Z], () => f.Z.getChannel(y.channelId)), Z = (0, s.e7)([h.Z], () => h.Z.getGuild(C)), {
     customEmoji: R,
     unicodeEmoji: D
   } = (0, g.Z)(null == (t = y.emoji) ? true : t.id, null == (l = y.emoji) ? true : l.name), A = null == y.emoji || null != R || null != D, L = b.ZP.getNewMemberActionIconURL({
@@ -47,13 +47,13 @@ let v = function(e) {
     setIsDraggable: B
   } = (0, u.Z)({
     type: "NEW_MEMBER_ACTION",
-    index: E,
+    index: N,
     optionId: y.channelId,
     onDragStart: S,
     onDragComplete: T,
     onDragReset: P
   }), F = i.useCallback(() => {
-    if (null != O) return (0, c.ZDy)(async () => {
+    if (null != C) return (0, c.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("7590"), n.e("83975")]).then(n.bind(n, 380716));
@@ -77,10 +77,10 @@ let v = function(e) {
           }
           return e
         }({}, t), i = i = {
-          guildId: O,
+          guildId: C,
           action: y,
-          onSave: (e, t, n) => N(E, e, t, n),
-          onDelete: () => I(E)
+          onSave: (e, t, n) => E(N, e, t, n),
+          onDelete: () => I(N)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -93,15 +93,15 @@ let v = function(e) {
         }), n))
       }
     })
-  }, [O, y, E, N, I]);
+  }, [C, y, N, E, I]);
   if (null == w || null == Z) return null;
-  let H = null != (C = (0, d.KS)(w)) ? C : c.VL1;
+  let H = null != (O = (0, d.KS)(w)) ? O : c.VL1;
   return (0, r.jsxs)("div", {
     className: j.actionItemContainer,
     children: [(0, r.jsxs)("div", {
       className: a()(j.actionItem, {
-        [j.dropIndicatorBefore]: null != M && E < M,
-        [j.dropIndicatorAfter]: null != M && E > M,
+        [j.dropIndicatorBefore]: null != M && N < M,
+        [j.dropIndicatorAfter]: null != M && N > M,
         [j.actionItemError]: null != k
       }),
       ref: e => {

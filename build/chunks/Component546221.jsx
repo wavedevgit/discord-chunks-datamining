@@ -2,7 +2,7 @@
 /** chunk id: 546221, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -57,7 +57,7 @@ function _(e) {
     className: j.currentMonthEarningsTable
   })
 }
-let C = e => {
+let O = e => {
   var t, n;
   let {
     guildId: s,
@@ -65,12 +65,12 @@ let C = e => {
   } = e, {
     loading: g,
     team: m,
-    currentPeriod: C,
-    allPeriods: O,
+    currentPeriod: O,
+    allPeriods: C,
     metrics: y
-  } = (0, d.Z)(s, o), E = (0, u.u)(s), N = (0, c.mY)();
+  } = (0, d.Z)(s, o), N = (0, u.u)(s), E = (0, c.mY)();
   return g ? (0, r.jsx)(i.$jN, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [E && (0, r.jsxs)(r.Fragment, {
+    children: [N && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Z, {
         children: x.intl.format(x.t["2raBCT"], {
           insightsURL: b.EYA.DEVELOPER_PORTAL_GUILD_ANALYTICS_ROLE_SUBSCRIPTION(s)
@@ -108,19 +108,19 @@ let C = e => {
         })]
       }), (0, r.jsx)(_, {
         guildId: s,
-        totalPayoutsForPeriod: C
+        totalPayoutsForPeriod: O
       })]
     }), (0, r.jsx)(i.C3N, {
       label: x.intl.string(x.t["+5Rmhl"]),
       className: j.formSection,
       children: (0, r.jsx)(v, {
-        payoutsByPeriod: O,
+        payoutsByPeriod: C,
         team: m
       })
     }), (0, r.jsx)(i.C3N, {
       label: x.intl.string(x.t.O8cDAJ),
       className: j.formSection,
-      disabled: N,
+      disabled: E,
       children: (0, r.jsx)(f.Z, {
         guildId: s,
         application: o
@@ -130,16 +130,16 @@ let C = e => {
       className: j.formSection,
       children: (0, r.jsx)(h.Z, {
         guildId: s,
-        allPeriods: O
+        allPeriods: C
       })
     })]
   })
 };
 
-function O(e) {
+function C(e) {
   return (0, r.jsx)(s.l, {
     guildId: e.guildId,
-    children: (0, r.jsx)(C, function(e) {
+    children: (0, r.jsx)(O, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

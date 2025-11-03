@@ -42,7 +42,7 @@ function _(e) {
   return e
 }
 
-function C(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,7 +55,7 @@ function C(e, t) {
   }), e
 }
 
-function O(e) {
+function C(e) {
   let {
     rule: t,
     triggerType: n
@@ -84,7 +84,7 @@ function O(e) {
 let y = e => {
     e.stopPropagation(), e.preventDefault()
   },
-  E = e => {
+  N = e => {
     var {
       className: t,
       children: n
@@ -103,7 +103,7 @@ let y = e => {
       }
       return i
     }(e, ["className", "children"]);
-    return (0, r.jsx)(s.P3F, C(_({
+    return (0, r.jsx)(s.P3F, O(_({
       className: t,
       onClick: y,
       onMouseDown: y,
@@ -113,13 +113,13 @@ let y = e => {
     }))
   };
 
-function N(e) {
+function E(e) {
   var t;
   let {
     rule: n,
     onChangeRule: i,
     onContextMenu: l
-  } = e, o = () => i(C(_({}, n), {
+  } = e, o = () => i(O(_({}, n), {
     enabled: !n.enabled
   }));
   return (0, r.jsxs)(r.Fragment, {
@@ -129,7 +129,7 @@ function N(e) {
         rule: n,
         onChangeRule: i
       })
-    }), (0, r.jsxs)(E, {
+    }), (0, r.jsxs)(N, {
       className: v.actionContainer,
       children: [(0, r.jsx)(s.rsf, {
         onChange: o,
@@ -172,9 +172,9 @@ function S(e) {
     saveRule: m
   } = (0, p.w)(), {
     updateRule: h
-  } = (0, g.pH)(t.guildId), [b, x] = i.useState(t.enabled), N = (0, l.throttle)(async () => {
+  } = (0, g.pH)(t.guildId), [b, x] = i.useState(t.enabled), E = (0, l.throttle)(async () => {
     if (!d) {
-      let e = C(_({}, t), {
+      let e = O(_({}, t), {
         enabled: !b
       });
       x(!b);
@@ -215,14 +215,14 @@ function S(e) {
         className: v.ruleTextDescription,
         variant: "text-sm/normal",
         children: P
-      }), (0, r.jsx)(O, {
+      }), (0, r.jsx)(C, {
         rule: t,
         triggerType: t.triggerType
       })]
-    }), (0, r.jsxs)(E, {
+    }), (0, r.jsxs)(N, {
       className: v.actionContainer,
       children: [(0, r.jsx)(s.rsf, {
-        onChange: N,
+        onChange: E,
         checked: null != b && b
       }), !n && (0, r.jsx)(a.u, {
         text: j.intl.string(j.t["UKOtz+"]),
@@ -277,10 +277,10 @@ function T(e) {
         className: v.ruleTextDescription,
         variant: "text-sm/normal",
         children: o
-      }), (0, r.jsx)(O, {
+      }), (0, r.jsx)(C, {
         triggerType: t
       })]
-    }), (0, r.jsx)(E, {
+    }), (0, r.jsx)(N, {
       className: v.actionContainer,
       children: (0, r.jsx)(s.Button, {
         variant: "primary",
@@ -314,7 +314,7 @@ function P(e) {
     triggerType: i,
     onSetupRule: d
   });
-  return null == t || c || (m = l ? (0, r.jsx)(N, {
+  return null == t || c || (m = l ? (0, r.jsx)(E, {
     rule: t,
     onChangeRule: u,
     onContextMenu: g

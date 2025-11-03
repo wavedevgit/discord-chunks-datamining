@@ -2,8 +2,8 @@
 /** chunk id: 475013, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => N,
-  _: () => E
+  Z: () => E,
+  _: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
 function y(e) {
   p.Z.selectRole(e)
 }
-let E = () => {
+let N = () => {
   let {
     guild: e
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), t = (0, Chunk442837.e7)([Chunk103576.Z], () => Chunk103576.Z.formState), n = (0, Chunk442837.e7)([Chunk103576.Z], () => Chunk103576.Z.errorMessage);
@@ -48,7 +48,7 @@ let E = () => {
   })
 };
 
-function N(e) {
+function E(e) {
   let {
     refToScroller: t
   } = e, {
@@ -63,27 +63,27 @@ function N(e) {
   a()(null != o, "Guild must have an everyone role");
   let m = i.useMemo(() => l.filter(e => !(0, u.fI)(e)), [l]),
     p = (0, s.e7)([f.Z], () => f.Z.getSelectedRoleId()),
-    [h, O] = i.useState(m.length > 0);
+    [h, C] = i.useState(m.length > 0);
   i.useEffect(() => {
-    O(h || m.length > 0)
+    C(h || m.length > 0)
   }, [h, m.length]), (0, d.ZP)(() => {
     let e = g.Z.getMemberCount(n.id);
     null != e && e <= x.cm && c.Z.requestMembers(n.id, "", 0, false)
   });
-  let [E, N] = i.useState(C.ZI.DISPLAY);
+  let [N, E] = i.useState(O.ZI.DISPLAY);
   return (i.useEffect(() => {
-    null == p && N(C.ZI.DISPLAY)
+    null == p && E(O.ZI.DISPLAY)
   }, [p]), null != p) ? (0, r.jsx)(j.Z, {
     editRoleId: p,
     setEditRoleId: y,
-    selectedSection: E,
-    setSelectedSection: N
+    selectedSection: N,
+    setSelectedSection: E
   }) : h ? (0, r.jsx)(_.Z, {
     setEditRoleId: y,
     guild: n,
     everyoneRole: o,
     otherRoles: m,
-    setSelectedSection: N,
+    setSelectedSection: E,
     refToScroller: t
   }) : (0, r.jsx)(v.Z, {
     guild: n,

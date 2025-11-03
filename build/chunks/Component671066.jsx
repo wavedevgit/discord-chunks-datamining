@@ -31,14 +31,14 @@ function p(e) {
   if (null == x) return null;
   let {
     headerText: _,
-    descriptionText: C,
-    icon: O
+    descriptionText: O,
+    icon: C
   } = x;
   return (0, r.jsxs)("div", {
     className: m.actionContainer,
     children: [(0, r.jsx)("div", {
       className: m.actionIconContainer,
-      children: (0, r.jsx)(O, {
+      children: (0, r.jsx)(C, {
         size: "md",
         color: "currentColor",
         className: m.actionIcon
@@ -51,7 +51,7 @@ function p(e) {
       }), (0, r.jsx)(a.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: C
+        children: O
       }), f && (0, r.jsxs)(a.Text, {
         color: "text-muted",
         variant: "text-xs/medium",

@@ -28,20 +28,20 @@ function j(e) {
   (0, u.Z)(n, h.KsC.BOOST_PERKS_VANITY_URL);
   let {
     vanityURLCode: _,
-    vanityURLUses: C,
-    originalVanityURLCode: O,
+    vanityURLUses: O,
+    originalVanityURLCode: C,
     errorDetails: y,
-    fetched: E
+    fetched: N
   } = (0, l.cj)([m.Z], () => ({
     vanityURLCode: m.Z.vanityURLCode,
     vanityURLUses: m.Z.vanityURLUses,
     originalVanityURLCode: m.Z.originalVanityURLCode,
     errorDetails: m.Z.errorDetails,
     fetched: m.Z.fetchedVanityURL
-  })), N = null == t ? true : t.id;
+  })), E = null == t ? true : t.id;
   return (i.useEffect(() => {
-    null == N || E || (0, g.U5)(N)
-  }, [E, N]), null == t) ? null : v ? (0, r.jsx)(s.Z, {}) : (0, r.jsxs)("div", {
+    null == E || N || (0, g.U5)(E)
+  }, [N, E]), null == t) ? null : v ? (0, r.jsx)(s.Z, {}) : (0, r.jsxs)("div", {
     ref: n,
     children: [(0, r.jsxs)(a.vwX, {
       className: x.title,
@@ -60,8 +60,8 @@ function j(e) {
     }), (0, r.jsx)(f.z, {
       guild: t,
       vanityURLCode: _,
-      vanityURLUses: C,
-      originalVanityURLCode: O,
+      vanityURLUses: O,
+      originalVanityURLCode: C,
       errorDetails: y
     })]
   })

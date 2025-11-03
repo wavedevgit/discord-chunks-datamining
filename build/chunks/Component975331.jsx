@@ -25,39 +25,39 @@ function b() {
     editStateId: t
   } = (0, Chunk727843.N)(), [n, l] = Chunk290348.TT(exports), [b, x] = Chunk290348.F2(exports), j = (0, Chunk584825.oC)(exports), {
     options: v
-  } = (0, Chunk22902.Z)(null != (e = null == j ? true : j.active_trial) ? module : null), _ = (0, Chunk518470.Z)(), C = null != require, O = Chunk647438.useCallback(e => {
+  } = (0, Chunk22902.Z)(null != (e = null == j ? true : j.active_trial) ? module : null), _ = (0, Chunk518470.Z)(), O = null != require, C = Chunk647438.useCallback(e => {
     let t = v.find(e => e.isDefault);
     a()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
-  }, [Chunk512722, v]), y = (0, Chunk723047.mY)(), E = (0, Chunk313201.Dt)(), N = (0, Chunk313201.Dt)();
+  }, [Chunk512722, v]), y = (0, Chunk723047.mY)(), N = (0, Chunk313201.Dt)(), E = (0, Chunk313201.Dt)();
   return (0, Chunk951288.jsxs)(Chunk783454.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["6anton"]),
     description: Chunk388032.intl.string(Chunk388032.t.urVijS),
     children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t["+hTmdb"]),
-      checked: C,
-      onChange: e => O(e),
+      checked: O,
+      onChange: e => C(e),
       disabled: y
     }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
       label: Chunk388032.intl.string(Chunk388032.t.m1KuWd),
       description: Chunk388032.intl.string(Chunk388032.t.NB9NLF),
-      "aria-labelledby": E,
+      "aria-labelledby": N,
       options: v,
       placeholder: Chunk388032.intl.string(Chunk388032.t.WZG1BU),
       value: require,
       onChange: Chunk512722,
       maxVisibleItems: 5,
-      isDisabled: !C || y
+      isDisabled: !O || y
     }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
       size: 24
     }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
       label: Chunk388032.intl.string(Chunk388032.t["/JD9oe"]),
       description: Chunk388032.intl.string(Chunk388032.t.Cg5eBm),
-      "aria-labelledby": N,
+      "aria-labelledby": E,
       options: _,
       value: b,
       onChange: x,
       maxVisibleItems: 5,
-      isDisabled: !C || y
+      isDisabled: !O || y
     })]
   })
 }

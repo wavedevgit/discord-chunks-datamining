@@ -138,12 +138,12 @@ function M(e) {
     } = (0, T.dw)(),
     _ = (0, j.f)(),
     I = (0, i.e7)([b.default], () => b.default.getCurrentUser()),
-    R = (0, O.Z)(n.id),
+    R = (0, C.Z)(n.id),
     G = null != n && (0, f.eM)(n, I);
   if (!_) return (0, r.jsx)(a.$jN, {});
   switch (p) {
     case T.ue.BASIC_INFO:
-      t = (0, r.jsx)(N.Z, {
+      t = (0, r.jsx)(E.Z, {
         guild: n
       });
       break;
@@ -153,7 +153,7 @@ function M(e) {
       });
       break;
     case T.ue.PAYMENT:
-      t = (0, r.jsx)(E.Z, {
+      t = (0, r.jsx)(N.Z, {
         guild: n
       });
       break;
@@ -228,7 +228,7 @@ function M(e) {
                   roles: t,
                   initialTab: "role_subscriptions",
                   returnToSection: w.pNK.ROLE_SUBSCRIPTIONS
-                }), (0, C.be)(n.id), (0, m.uL)(w.Z5c.CHANNEL(n.id, Z.oC.ROLE_SUBSCRIPTIONS))
+                }), (0, O.be)(n.id), (0, m.uL)(w.Z5c.CHANNEL(n.id, Z.oC.ROLE_SUBSCRIPTIONS))
               },
               text: D.intl.string(D.t.vM81yY),
               size: "sm",

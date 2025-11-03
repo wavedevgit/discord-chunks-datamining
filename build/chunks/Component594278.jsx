@@ -21,27 +21,27 @@ let m = function(e) {
     paginationCaretClassName: l,
     intervalBetweenAutomaticItemRotations: m,
     renderItem: p
-  } = e, f = i.useMemo(() => new s.Xp, []), [h, b] = i.useState(d.n.LEFT), [x, j] = i.useState(0), [v, _] = i.useState(false), [C, O] = i.useState(false), y = i.useCallback((e, t) => {
+  } = e, f = i.useMemo(() => new s.Xp, []), [h, b] = i.useState(d.n.LEFT), [x, j] = i.useState(0), [v, _] = i.useState(false), [O, C] = i.useState(false), y = i.useCallback((e, t) => {
     j(n => {
       let r = n + t;
       return r < 0 ? r = e.length - 1 : r > e.length - 1 && (r = 0), r
     })
-  }, [j]), E = i.useCallback(() => {
-    C || y(t, 1)
-  }, [y, t, C]), N = i.useCallback(() => {
-    C || y(t, false)
-  }, [y, t, C]);
+  }, [j]), N = i.useCallback(() => {
+    O || y(t, 1)
+  }, [y, t, O]), E = i.useCallback(() => {
+    O || y(t, false)
+  }, [y, t, O]);
   return i.useEffect(() => {
-    null != m && (v ? v && f.stop() : f.start(m, E))
-  }, [v, f, m, E]), (0, r.jsxs)("div", {
+    null != m && (v ? v && f.stop() : f.start(m, N))
+  }, [v, f, m, N]), (0, r.jsxs)("div", {
     className: g.root,
     onMouseEnter: () => _(true),
     onMouseLeave: () => _(false),
     children: [(0, r.jsx)(o.P3F, {
       className: a()(g.carouselCaret, l),
-      onClick: N,
+      onClick: E,
       onMouseEnter: () => b(d.n.RIGHT),
-      ignoreKeyPress: C,
+      ignoreKeyPress: O,
       children: (0, r.jsx)(c.Z, {
         direction: c.Z.Directions.LEFT,
         height: 48,
@@ -51,15 +51,15 @@ let m = function(e) {
     }), (0, r.jsx)(d.Z, {
       step: x,
       direction: h,
-      onAnimationStart: () => O(true),
-      onAnimationEnd: () => O(false),
+      onAnimationStart: () => C(true),
+      onAnimationEnd: () => C(false),
       className: a()(g.carousel, n),
       children: p(t[x])
     }), (0, r.jsx)(o.P3F, {
       className: a()(g.carouselCaret, l),
-      onClick: E,
+      onClick: N,
       onMouseEnter: () => b(d.n.LEFT),
-      ignoreKeyPress: C,
+      ignoreKeyPress: O,
       children: (0, r.jsx)(c.Z, {
         direction: c.Z.Directions.RIGHT,
         height: 48,

@@ -3,17 +3,17 @@
 "use strict";
 require.d(exports, {
   Hr: () => x,
-  Hz: () => O,
+  Hz: () => C,
   To: () => I,
-  XG: () => C,
+  XG: () => O,
   _N: () => f,
   ad: () => v,
   bj: () => P,
   el: () => b,
   hS: () => j,
   lq: () => y,
-  mM: () => E,
-  oo: () => N,
+  mM: () => N,
+  oo: () => E,
   q6: () => T,
   r2: () => _,
   vR: () => h
@@ -104,7 +104,7 @@ function _(e) {
   })
 }
 
-function C(e, t) {
+function O(e, t) {
   a.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_UPDATE_RESOURCE_CHANNEL",
     channelId: e,
@@ -112,7 +112,7 @@ function C(e, t) {
   })
 }
 
-function O(e) {
+function C(e) {
   a.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_DELETE_RESOURCE_CHANNEL",
     resourceChannelId: e
@@ -125,7 +125,7 @@ function y(e) {
     resourceChannels: e
   })
 }
-async function E(e, t, n) {
+async function N(e, t, n) {
   try {
     let r = await l.tn.put({
         url: m.ANM.RESOURCE_CHANNEL(e, t),
@@ -153,7 +153,7 @@ async function E(e, t, n) {
   }
 }
 
-function N(e, t) {
+function E(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   return n || g.Z.hasChanges() ? o.Z.getEnabled(e) && !(0, c.uo)(t) ? (s.Z.show({
     title: p.intl.string(p.t["6nCZyG"]),

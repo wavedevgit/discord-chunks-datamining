@@ -79,17 +79,17 @@ function k(e) {
     renderHeader: o,
     headerHeight: d,
     query: u
-  } = e, g = (0, c.e7)([E.Z], () => E.Z.getRoleMemberCount(n.id), [n.id]), m = (0, c.e7)([C.Z], () => C.Z.getHighestRole(n), [n]), f = u.trim();
+  } = e, g = (0, c.e7)([N.Z], () => N.Z.getRoleMemberCount(n.id), [n.id]), m = (0, c.e7)([O.Z], () => O.Z.getHighestRole(n), [n]), f = u.trim();
   i.useEffect(() => {
     (0, y.E)(n.id)
   }, [n.id]);
   let h = i.useRef(false);
   i.useEffect(() => {
-    h.current || "" === u.trimStart() || (O.default.track(P.rMx.SEARCH_STARTED, {
+    h.current || "" === u.trimStart() || (C.default.track(P.rMx.SEARCH_STARTED, {
       search_type: "Roles"
     }), h.current = true)
   }, [u]);
-  let b = i.useMemo(() => a.filter(e => (0, N.uo)(e, f)), [a, f]),
+  let b = i.useMemo(() => a.filter(e => (0, E.uo)(e, f)), [a, f]),
     x = i.useMemo(() => [...a, l], [a, l]),
     {
       draggingId: j,
@@ -153,16 +153,16 @@ function M(e) {
     highestRole: x,
     currentPosition: v,
     memberCount: _,
-    onDragStart: C,
-    onDragReset: O,
+    onDragStart: O,
+    onDragReset: C,
     onDragComplete: y,
-    disableHover: E,
-    disableDrag: N,
+    disableHover: N,
+    disableDrag: E,
     setEditRoleId: S,
     setSelectedSection: P
   } = e, k = (0, I.T)(p, x, d), G = null != k, [M, B] = i.useState(false), F = i.useMemo(() => ({
     type: L,
-    item: () => (C(d.id), {
+    item: () => (O(d.id), {
       id: d.id,
       position: v
     }),
@@ -172,12 +172,12 @@ function M(e) {
     }),
     end: (e, t) => {
       let n = t.getDropResult();
-      if (null == n) return void O();
+      if (null == n) return void C();
       y(n.roleId)
     }
-  }), [d, C, O, y, G, M, v]), [{
+  }), [d, O, C, y, G, M, v]), [{
     isDragging: H
-  }, W] = (0, s.c)(F), z = i.useMemo(() => ({
+  }, z] = (0, s.c)(F), W = i.useMemo(() => ({
     accept: L,
     canDrop: () => !G,
     collect: e => {
@@ -193,7 +193,7 @@ function M(e) {
     })
   }), [G, d]), [{
     dragSourcePosition: V
-  }, K] = (0, o.L)(z), Y = i.useCallback(e => {
+  }, K] = (0, o.L)(W), Y = i.useCallback(e => {
     (0, m.jW)(e, async () => {
       let {
         default: e
@@ -206,7 +206,7 @@ function M(e) {
   }, [p, d]), q = (0, b.e)(p, d);
   if (H) return (0, r.jsx)("div", {
     ref: e => {
-      W(e)
+      z(e)
     },
     className: a()(Z.roleRow, Z.roleRowDragging)
   });
@@ -216,14 +216,14 @@ function M(e) {
   }
   return (0, r.jsxs)(g.P3F, {
     className: a()(Z.roleRow, {
-      [Z.roleRowDisableHover]: E,
+      [Z.roleRowDisableHover]: N,
       [Z.containerDragBefore]: null != V && v < V,
       [Z.containerDragAfter]: null != V && v > V
     }),
     onClick: X,
     onContextMenu: Y,
     innerRef: e => {
-      W(K(e))
+      z(K(e))
     },
     "data-dnd-name": d.name,
     "aria-label": w.intl.formatToPlainString(w.t.Vu0Acc, {
@@ -232,7 +232,7 @@ function M(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: a()(Z.dragIcon, R.dragSpacing, {
-        [Z.dragIconHidden]: G || N
+        [Z.dragIconHidden]: G || E
       }),
       onMouseEnter: () => B(true),
       onMouseLeave: () => B(false),
@@ -325,17 +325,17 @@ function U(e) {
     hasGradient: f,
     stops: h,
     gradientId: b
-  } = (0, d.De)(null == (t = o.colorStrings) ? true : t.primaryColor, null == (n = o.colorStrings) ? true : n.secondaryColor, null == (i = o.colorStrings) ? true : i.tertiaryColor), j = (0, v.yH)(s, o), C = (0, x.p9)({
+  } = (0, d.De)(null == (t = o.colorStrings) ? true : t.primaryColor, null == (n = o.colorStrings) ? true : n.secondaryColor, null == (i = o.colorStrings) ? true : i.tertiaryColor), j = (0, v.yH)(s, o), O = (0, x.p9)({
     guildId: s,
     roleId: o.id,
     size: c
   });
-  if (null != C) return (0, r.jsx)(_.Z, A(D({}, C), {
+  if (null != O) return (0, r.jsx)(_.Z, A(D({}, O), {
     className: m,
     enableTooltip: u
   }));
-  let O = null != (l = o.colorString) ? l : P.Pbq;
-  return j && f && (O = "url(#".concat(b, ")")), (0, r.jsxs)(r.Fragment, {
+  let C = null != (l = o.colorString) ? l : P.Pbq;
+  return j && f && (C = "url(#".concat(b, ")")), (0, r.jsxs)(r.Fragment, {
     children: [j && f && (0, r.jsx)("svg", {
       width: "0",
       height: "0",
@@ -353,7 +353,7 @@ function U(e) {
     }), (0, r.jsx)(g.lZ8, {
       size: "custom",
       className: a()(m, p),
-      color: O,
+      color: C,
       width: c,
       height: c
     })]

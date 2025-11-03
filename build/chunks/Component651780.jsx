@@ -39,10 +39,10 @@ function S(e) {
     days: i,
     hours: l
   } = (0, u.Z)(t);
-  return n <= 0 ? null : 0 === i && 0 === l ? N.intl.format(N.t.kF0HEa, {
+  return n <= 0 ? null : 0 === i && 0 === l ? E.intl.format(E.t.kF0HEa, {
     tierName: r,
     numPremiumSubscriptions: n
-  }) : N.intl.format(N.t.neDJhq, {
+  }) : E.intl.format(E.t.neDJhq, {
     days: i,
     hours: l,
     tierName: r,
@@ -54,14 +54,14 @@ function T(e) {
   let {
     appliedGuildBoosts: t,
     guildId: n
-  } = e, i = (0, C.gZ)(t, n), l = (0, C.nW)((0, C.Jh)(n));
+  } = e, i = (0, O.gZ)(t, n), l = (0, O.nW)((0, O.Jh)(n));
   if (null == i || null == l) return null;
-  let s = (0, C._k)(t, n);
+  let s = (0, O._k)(t, n);
   return (0, r.jsxs)(a.Wn, {
     messageType: a.QYI.WARNING,
     children: [(0, r.jsx)("div", {
       className: I.guildBoostingGracePeriodTitle,
-      children: N.intl.format(N.t.LG7vvg, {})
+      children: E.intl.format(E.t.LG7vvg, {})
     }), (0, r.jsx)(S, {
       endsAt: i,
       appliedGuildBoostsToMaintain: s,

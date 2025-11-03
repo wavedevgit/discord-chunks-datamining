@@ -56,30 +56,30 @@ function h(e) {
     editingRule: v,
     createNewEditingRule: _
   } = (0, d.V)(), {
-    getDefaultRuleName: C
-  } = c.I6[n], O = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [y, E] = i.useState(O ? v : b), N = (0, s.q_F)({
-    opacity: +!O,
-    pointerEvents: O ? "none" : "all",
+    getDefaultRuleName: O
+  } = c.I6[n], C = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [y, N] = i.useState(C ? v : b), E = (0, s.q_F)({
+    opacity: +!C,
+    pointerEvents: C ? "none" : "all",
     config: f(p({}, l.config.stiff), {
       clamp: true
     })
   }), I = (0, s.q_F)({
-    opacity: +!!O,
-    pointerEvents: O ? "all" : "none",
+    opacity: +!!C,
+    pointerEvents: C ? "all" : "none",
     config: f(p({}, l.config.stiff), {
       clamp: true
     }),
     onStart: () => {
-      E(O ? v : b)
+      N(C ? v : b)
     },
     onRest: () => {
-      E(O ? v : b), j(O)
+      N(C ? v : b), j(C)
     }
   });
-  return null == v || O ? (0, r.jsxs)("div", {
+  return null == v || C ? (0, r.jsxs)("div", {
     className: m.mainRuleContainer,
     style: {
-      height: O ? "auto" : "60px"
+      height: C ? "auto" : "60px"
     },
     children: [(0, r.jsx)(l.animated.div, {
       className: m.animatedRuleCardContainer,
@@ -90,7 +90,7 @@ function h(e) {
       })
     }), (0, r.jsx)(l.animated.div, {
       className: m.animatedNewRuleContainer,
-      style: N,
+      style: E,
       children: (0, r.jsxs)(s.P3F, {
         className: m.addAnotherRuleCardContainer,
         onClick: () => {
@@ -106,7 +106,7 @@ function h(e) {
           variant: "text-md/semibold",
           color: "text-link",
           children: g.intl.format(g.t.dNjRAf, {
-            ruleName: C()
+            ruleName: O()
           })
         })]
       })

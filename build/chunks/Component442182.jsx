@@ -152,7 +152,7 @@ function D(e) {
         innerRef: p,
         className: T.memberRow,
         onContextMenu: j,
-        children: [(0, r.jsx)(E.Z, {
+        children: [(0, r.jsx)(N.Z, {
           className: T.memberDetails,
           avatarURL: t.avatarURL,
           name: t.name,
@@ -223,8 +223,8 @@ function L(e) {
   } = e, {
     analyticsLocations: g
   } = (0, f.ZP)(p.Z.MEMBER_LIST), m = i.useMemo(() => l.trim().toLowerCase(), [l]);
-  (0, C.rY)(t, m);
-  let h = i.useMemo(() => c.filter(e => (0, C.eg)(m, e)), [c, m]),
+  (0, O.rY)(t, m);
+  let h = i.useMemo(() => c.filter(e => (0, O.eg)(m, e)), [c, m]),
     b = i.useMemo(() => h.sort((e, t) => e.name.localeCompare(t.name)), [h]);
   return (0, r.jsx)(f.Gt, {
     value: g,
@@ -296,13 +296,13 @@ function G(e) {
   } = e, [u, g] = i.useState(""), {
     headerHeight: m,
     headerRef: p
-  } = (0, O.Z)(0), {
+  } = (0, C.Z)(0), {
     scrolledToTop: f,
     handleScroll: h
-  } = (0, y.V)(), b = l.managed || s, v = (0, C.e)(t.id, l.id), _ = (0, o.e7)([j.Z], () => {
+  } = (0, y.V)(), b = l.managed || s, v = (0, O.e)(t.id, l.id), _ = (0, o.e7)([j.Z], () => {
     var e, n;
     return null != (n = null == (e = j.Z.getRoleMemberCount(t.id)) ? true : e[l.id]) ? n : 0
-  }) > v.length, E = () => {
+  }) > v.length, N = () => {
     x.default.track(I.rMx.OPEN_MODAL, {
       type: "Add Role Members",
       location_page: "Role Settings",
@@ -331,13 +331,13 @@ function G(e) {
           children: [(0, r.jsx)(y.Z, {
             guild: t,
             role: l,
-            selectedSection: N.ZI.MEMBERS,
+            selectedSection: E.ZI.MEMBERS,
             setSelectedSection: c
           }), (0, r.jsx)(k, {
             query: u,
             setQuery: g,
             locked: b,
-            handleAddClick: E
+            handleAddClick: N
           }), _ ? (0, r.jsx)(d.Wn, {
             className: T.searchWarning,
             messageType: d.QYI.INFO,
@@ -353,7 +353,7 @@ function G(e) {
       locked: b,
       onScroll: h,
       roleMembers: v,
-      handleAddClick: E
+      handleAddClick: N
     })]
   })
 }

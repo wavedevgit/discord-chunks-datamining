@@ -29,7 +29,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk86477 = require("./86477.js"),
   Chunk197571 = require("./197571.js");
 
-function N(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,25 +52,25 @@ class I extends(r = Chunk442837.ZP.Store) {
     return null != module && null != this.name && (this.name.trim() !== module.name || this.description.trim() !== module.description)
   }
   constructor(...e) {
-    super(...e), N(this, "name", ""), N(this, "description", ""), N(this, "error", null), N(this, "reset", () => {
+    super(...e), E(this, "name", ""), E(this, "description", ""), E(this, "error", null), E(this, "reset", () => {
       let e = this.getTemplate();
       if (null != e) {
         var t, n;
         this.name = null != (t = e.name) ? t : this.name, this.description = null != (n = e.description) ? n : this.description
       } else this.name = "", this.description = "";
       this.emitChange()
-    }), N(this, "setName", e => {
+    }), E(this, "setName", e => {
       this.name = e, this.emitChange()
-    }), N(this, "setDescription", e => {
+    }), E(this, "setDescription", e => {
       this.description = e, this.emitChange()
-    }), N(this, "setError", e => {
+    }), E(this, "setError", e => {
       this.error = e, this.emitChange()
-    }), N(this, "save", async () => {
+    }), E(this, "save", async () => {
       await x.Z.updateGuildTemplate(_.Z.getProps().guild.id, this.getTemplate().code, this.name, this.description), this.emitChange()
     })
   }
 }
-N(I, "displayName", "GuildSettingsTemplateMetadataStore_");
+E(I, "displayName", "GuildSettingsTemplateMetadataStore_");
 let S = new I(Chunk570140.Z);
 
 function T() {
@@ -240,15 +240,15 @@ function D(e) {
   } = e;
   return (0, i.jsx)(p.sYh, {
     dismissable: true,
-    header: O.intl.string(O.t["cN/RFD"]),
-    confirmText: O.intl.string(O.t["cN/RFD"]),
-    cancelText: O.intl.string(O.t["ETE/oC"]),
+    header: C.intl.string(C.t["cN/RFD"]),
+    confirmText: C.intl.string(C.t["cN/RFD"]),
+    cancelText: C.intl.string(C.t["ETE/oC"]),
     onCancel: t,
     onConfirm: n,
     children: (0, i.jsx)(p.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: O.intl.string(O.t["apCQv/"])
+      children: C.intl.string(C.t["apCQv/"])
     })
   })
 }
@@ -299,7 +299,7 @@ function L(e) {
     guild: t
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(p.gNt, {
-      label: O.intl.string(O.t.zGGcLw),
+      label: C.intl.string(C.t.zGGcLw),
       children: (0, i.jsx)(h.Z, {
         buttonLook: m.zx.Looks.FILLED,
         buttonColor: m.zx.Colors.BRAND,
@@ -307,11 +307,11 @@ function L(e) {
       })
     }), n.isDirty && (0, i.jsx)(p.Text, {
       color: "text-feedback-warning",
-      className: E.marginTop8,
+      className: N.marginTop8,
       variant: "text-sm/normal",
-      children: O.intl.string(O.t.aWsjtD)
+      children: C.intl.string(C.t.aWsjtD)
     }), (0, i.jsxs)("div", {
-      className: s()(E.marginTop20, y.buttonContainer),
+      className: s()(N.marginTop20, y.buttonContainer),
       children: [n.isDirty && (0, i.jsx)(G, {
         guild: t,
         guildTemplate: n
@@ -326,7 +326,7 @@ function L(e) {
       })]
     }), n.isDirty && (0, i.jsx)("div", {
       className: y.lastSync,
-      children: O.intl.format(O.t.v0AVum, {
+      children: C.intl.format(C.t.v0AVum, {
         timestamp: new Date(n.updatedAt)
       })
     })]
@@ -347,7 +347,7 @@ function k(e) {
   };
   return (0, i.jsx)(p.Button, {
     variant: "primary",
-    text: O.intl.string(O.t.Wxdi8A),
+    text: C.intl.string(C.t.Wxdi8A),
     loading: r,
     disabled: !P(n),
     onClick: s
@@ -372,7 +372,7 @@ function G(e) {
     className: y.button,
     children: (0, i.jsx)(p.Button, {
       variant: "primary",
-      text: O.intl.string(O.t["Nw+0Y/"]),
+      text: C.intl.string(C.t["Nw+0Y/"]),
       loading: r,
       onClick: s
     })
@@ -398,7 +398,7 @@ function M(e) {
       className: y.button,
       children: (0, i.jsx)(p.Button, {
         variant: "critical-secondary",
-        text: O.intl.string(O.t["cN/RFD"]),
+        text: C.intl.string(C.t["cN/RFD"]),
         onClick: () => a(true)
       })
     }), r ? (0, i.jsx)(D, {
@@ -417,7 +417,7 @@ function U(e) {
     className: y.button,
     children: (0, i.jsx)(p.Button, {
       variant: "secondary",
-      text: O.intl.string(O.t.YI3iV6),
+      text: C.intl.string(C.t.YI3iV6),
       onClick: () => (0, p.ZDy)(async () => {
         let {
           default: e
@@ -431,7 +431,7 @@ function U(e) {
               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), r.forEach(function(t) {
-                N(e, t, n[t])
+                E(e, t, n[t])
               })
             }
             return e

@@ -106,23 +106,23 @@ let Z = "dismissedCommunityFeaturesUpsell",
     }), [h, j] = i.useState(false);
     (0, m.ZP)(() => {
       s.tn.get({
-        url: N.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(l.id),
+        url: E.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(l.id),
         rejectWithError: true
       }).then(e => {
         j(e.body.eligible_for_admin_server)
       }).catch(() => j(false))
     });
     let v = (0, a.e7)([x.Z], () => x.Z.getGuild("942897714956472401")),
-      _ = l.features.has(N.GuildFeatures.COMMUNITY) && p >= 1e3 && h && null == v;
+      _ = l.features.has(E.GuildFeatures.COMMUNITY) && p >= 1e3 && h && null == v;
     if (t && n && !_) return null;
-    let O = async () => {
+    let C = async () => {
       try {
         let e = await s.tn.post({
-          url: N.ANM.JOIN_ADMIN_SERVER(l.id),
+          url: E.ANM.JOIN_ADMIN_SERVER(l.id),
           oldFormErrors: true,
           rejectWithError: true
         });
-        C.Z.close(), (0, f.X)(e.body.id)
+        O.Z.close(), (0, f.X)(e.body.id)
       } catch (e) {}
     };
     return c && !_ ? null : (0, r.jsxs)("div", {
@@ -165,7 +165,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
             variant: "primary",
             size: "sm",
             text: I.intl.string(I.t.iF1Asi),
-            onClick: O
+            onClick: C
           })
         }), n ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
@@ -175,7 +175,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
             size: "sm",
             text: I.intl.string(I.t["S/Dfid"]),
             onClick: () => {
-              C.Z.setSection(N.pNK.ONBOARDING)
+              O.Z.setSection(E.pNK.ONBOARDING)
             }
           })
         }), t ? null : (0, r.jsx)("div", {
@@ -186,7 +186,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
             size: "sm",
             text: I.intl.string(I.t["0kmJdw"]),
             onClick: () => {
-              C.Z.setSection(N.pNK.ACCESS, N.KsC.ACCESS_DISCOVERABLE)
+              O.Z.setSection(E.pNK.ACCESS, E.KsC.ACCESS_DISCOVERABLE)
             }
           })
         }), (0, r.jsx)("div", {
@@ -197,7 +197,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
             size: "sm",
             text: I.intl.string(I.t.BQIYTb),
             onClick: () => {
-              C.Z.setSection(N.pNK.ANALYTICS)
+              O.Z.setSection(E.pNK.ANALYTICS)
             }
           })
         })]
@@ -222,7 +222,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       let {
         channel: t
       } = e;
-      t.type === N.d4z.GUILD_TEXT && m.push({
+      t.type === E.d4z.GUILD_TEXT && m.push({
         value: t.id,
         label: (0, p.F6)(t, _.default, v.Z, true)
       })
@@ -237,7 +237,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         })
       },
       b = e => {
-        C.Z.updateGuild({
+        O.Z.updateGuild({
           description: e
         })
       };
@@ -257,7 +257,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         value: module.rulesChannelId,
         options: Chunk493773,
         onChange: e => {
-          C.Z.updateGuild({
+          O.Z.updateGuild({
             rulesChannelId: e
           })
         },
@@ -269,7 +269,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         value: module.publicUpdatesChannelId,
         options: Chunk493773,
         onChange: e => {
-          C.Z.updateGuild({
+          O.Z.updateGuild({
             publicUpdatesChannelId: e
           })
         },
@@ -281,7 +281,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         value: module.safetyAlertsChannelId,
         options: Chunk493773,
         onChange: e => {
-          C.Z.updateGuild({
+          O.Z.updateGuild({
             safetyAlertsChannelId: e
           })
         },
@@ -293,7 +293,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         value: module.preferredLocale,
         options: Chunk796027,
         onChange: e => {
-          C.Z.updateGuild({
+          O.Z.updateGuild({
             preferredLocale: e
           })
         },

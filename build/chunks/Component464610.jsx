@@ -82,8 +82,8 @@ function b(e) {
     }, [d, b]),
     v = (0, m.Q)(t),
     _ = v[u.u.CAPTCHA_AND_RAID_PROTECTION],
-    C = v[u.u.DM_AND_SPAM_PROTECTION],
-    O = v[u.u.PERMISSIONS],
+    O = v[u.u.DM_AND_SPAM_PROTECTION],
+    C = v[u.u.PERMISSIONS],
     y = (0, o.pr)(t.id);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Heading, {
@@ -109,8 +109,8 @@ function b(e) {
         icon: n(128724),
         title: p.intl.string(p.t.O0SfFy),
         subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {
-          enabled: C.filter(e => e.enabled).length,
-          total: C.length
+          enabled: O.filter(e => e.enabled).length,
+          total: O.length
         }),
         page: u.u.DM_AND_SPAM_PROTECTION
       }), (0, r.jsx)("div", {
@@ -131,8 +131,8 @@ function b(e) {
         icon: n(913414),
         title: p.intl.string(p.t.xrmhRX),
         subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {
-          enabled: O.filter(e => e.enabled).length,
-          total: O.length
+          enabled: C.filter(e => e.enabled).length,
+          total: C.length
         }),
         page: u.u.PERMISSIONS
       })]

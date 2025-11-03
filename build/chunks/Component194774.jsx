@@ -37,7 +37,7 @@ function b(e) {
       analyticsObject: g.qAy.UPLOAD_IMAGE,
       perks: (0, m.o9)()
     })
-  }, [j, t]), C = (0, r.jsx)(o.Z, {
+  }, [j, t]), O = (0, r.jsx)(o.Z, {
     image: t.splash,
     makeURL: e => null != e ? c.ZP.getGuildSplashURL({
       id: t.id,
@@ -50,11 +50,11 @@ function b(e) {
     maxFileSizeBytes: p.B,
     onFileSizeError: () => (0, s.Z)(p.B)
   });
-  return b ? C : (0, r.jsx)(l.P3F, {
+  return b ? O : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
     className: h.upsell,
     onClick: _,
-    children: C
+    children: O
   })
 }

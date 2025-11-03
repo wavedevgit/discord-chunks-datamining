@@ -44,14 +44,14 @@ function _(e) {
 }
 async function j(e, t) {
   let n = s.Z.getEnabled(e),
-    a = Array.from(p.Z.editedDefaultChannelIds).filter(e => null != g.Z.getChannel(e)),
+    a = Array.from(I.Z.editedDefaultChannelIds).filter(e => null != g.Z.getChannel(e)),
     [o, d] = (0, c.d9)(e, [...a]);
   if (n && t === S.Un.ONBOARDING_DEFAULT && (d.length < S.md || o.length < S.X)) return void r.Z.show({
     title: x.intl.string(x.t.iLdiqY),
     body: x.intl.string(x.t.JOT74c)
   });
   try {
-    await (0, N.n_)(e, {
+    await (0, p.n_)(e, {
       mode: t
     })
   } catch (n) {
@@ -83,7 +83,7 @@ function b(e, t) {
 }
 async function D(e) {
   let t = h.Z.getGuild(e);
-  null != t && (I.Z.close(), (0, u.iD)(t.id, {
+  null != t && (N.Z.close(), (0, u.iD)(t.id, {
     type: m.z.NEW_MEMBER,
     roles: {},
     optInChannels: new Set,

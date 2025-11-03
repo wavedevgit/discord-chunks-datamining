@@ -39,7 +39,7 @@ function w(e) {
     hasValidApplication: n
   } = e, {
     listingsLoaded: w
-  } = (0, O.eD)(t), Z = (0, a.e7)([v.Z], () => v.Z.getGuild(t)), R = (0, a.e7)([_.default], () => _.default.getCurrentUser()), D = null != Z && (0, x.eM)(Z, R), {
+  } = (0, C.eD)(t), Z = (0, a.e7)([v.Z], () => v.Z.getGuild(t)), R = (0, a.e7)([_.default], () => _.default.getCurrentUser()), D = null != Z && (0, x.eM)(Z, R), {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
   (0, g.P)(Z);
@@ -66,8 +66,8 @@ function w(e) {
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         children: T.intl.format(T.t.xiYuDt, {
-          monetizationPolicyLink: C.Z.getArticleURL(I.BhN.CREATOR_POLICY),
-          serverProductsSupportLink: C.Z.getCreatorSupportArticleURL(I.BhN.SERVER_PRODUCTS)
+          monetizationPolicyLink: O.Z.getArticleURL(I.BhN.CREATOR_POLICY),
+          serverProductsSupportLink: O.Z.getCreatorSupportArticleURL(I.BhN.SERVER_PRODUCTS)
         })
       })]
     }),
@@ -104,9 +104,9 @@ function w(e) {
     }),
     B = (0, l.EQ)(L).with("basic_info", () => (0, r.jsx)(y.Z, {
       guildId: t
-    })).with("manage_listings", () => (0, r.jsx)(E.Z, {
+    })).with("manage_listings", () => (0, r.jsx)(N.Z, {
       guildId: t
-    })).with("payment", () => (0, r.jsx)(N.Z, {
+    })).with("payment", () => (0, r.jsx)(E.Z, {
       guildId: t
     })).exhaustive(),
     F = w ? (0, r.jsx)(o.njP.Panel, {

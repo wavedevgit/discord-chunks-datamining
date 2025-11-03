@@ -86,17 +86,17 @@ function A(e) {
     userNameplate: q,
     guildNameplate: K,
     pendingNameplate: X
-  } = (0, x.Zx)(t, null == n ? true : n.id), V = null != K ? (0, g.Pb)(K) : true, W = G ? y.BRd.DARK : y.BRd.LIGHT;
-  (M && G || !M && !G) && (W = Z);
-  let $ = (0, o.useCallback)(() => {
+  } = (0, x.Zx)(t, null == n ? true : n.id), V = null != K ? (0, g.Pb)(K) : true;
+  G && !M ? Z = y.BRd.DARK : !G && M && (Z = y.BRd.LIGHT);
+  let W = (0, o.useCallback)(() => {
       P.default.track(y.rMx.DISPLAY_NAME_STYLES_CLOSED), B()
     }, [B]),
-    J = (0, o.useCallback)(e => {
+    $ = (0, o.useCallback)(e => {
       Y(e === y.BRd.DARK), P.default.track(y.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
         dark: e === y.BRd.DARK
       })
     }, []),
-    Q = (0, o.useMemo)(() => R(D({}, (0, m.ij)(t, null)), {
+    J = (0, o.useMemo)(() => R(D({}, (0, m.ij)(t, null)), {
       nick: r,
       displayNameStyles: {
         fontId: A,
@@ -112,7 +112,7 @@ function A(e) {
       className: E.sectionHeader,
       children: (0, l.jsx)(s.olH, {
         "data-migration-pending": true,
-        onClick: $,
+        onClick: W,
         innerClassName: E.closeButton
       })
     }), null != F && (0, l.jsx)(C.Z, {
@@ -128,7 +128,7 @@ function A(e) {
         }
       })
     }), (0, l.jsx)(s.f6W, {
-      theme: W,
+      theme: Z,
       children: e => (0, l.jsxs)("div", {
         className: i()(E.previewCards, e),
         inert: true,
@@ -138,7 +138,7 @@ function A(e) {
         }, z), {
           pendingAvatar: U,
           pendingGlobalName: r,
-          pendingDisplayNameStyles: Q.displayNameStyles,
+          pendingDisplayNameStyles: J.displayNameStyles,
           canUsePremiumCustomization: true,
           disabledInputs: true,
           hideCustomStatus: true,
@@ -147,7 +147,7 @@ function A(e) {
           interactive: false,
           hideExampleButton: true
         })), (0, l.jsx)(f.Z, {
-          author: Q,
+          author: J,
           message: (0, u.e5)(R(D({}, (0, p.ZP)({
             channelId: "1337",
             content: T.intl.string(O.default.h5Cuej)
@@ -166,7 +166,7 @@ function A(e) {
           nameplate: X,
           nameplateData: null == X ? null != V ? V : q : true,
           pendingGlobalName: r,
-          pendingDisplayNameStyles: Q.displayNameStyles,
+          pendingDisplayNameStyles: J.displayNameStyles,
           isHighlighted: true,
           className: E.nameplate
         })]
@@ -181,7 +181,7 @@ function A(e) {
         })
       }), (0, l.jsx)(I, {
         darkPreview: G,
-        onToggleTheme: J
+        onToggleTheme: $
       })]
     })]
   })

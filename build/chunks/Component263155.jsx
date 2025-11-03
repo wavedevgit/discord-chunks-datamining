@@ -80,12 +80,12 @@ let G = "WELCOME_CHANNEL",
         isDropHovered: v,
         index: _
       } = e,
-      C = i.useRef(null),
-      O = (0, u.e7)([E.Z], () => E.Z.getChannel(o.channel_id)),
+      O = i.useRef(null),
+      C = (0, u.e7)([N.Z], () => N.Z.getChannel(o.channel_id)),
       y = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
-      I = null != O && S.Uu(w.Plq.VIEW_CHANNEL, O),
-      T = null != (t = (0, x.KS)(O)) ? t : g.VL1,
-      P = (0, b.ZP)(O, false),
+      I = null != C && S.Uu(w.Plq.VIEW_CHANNEL, C),
+      T = null != (t = (0, x.KS)(C)) ? t : g.VL1,
+      P = (0, b.ZP)(C, false),
       R = () => {
         (0, g.ZDy)(async () => {
           let {
@@ -120,7 +120,7 @@ let G = "WELCOME_CHANNEL",
           h(e.channel, _, true)
         }
       });
-    return i.useLayoutEffect(() => (M(U(C)), () => {
+    return i.useLayoutEffect(() => (M(U(O)), () => {
       M(null), U(null)
     }), [M, U]), l = I ? null != y || null != o.emoji_name ? (0, r.jsx)(p.Z, {
       emojiId: null == y ? true : y.id,
@@ -130,7 +130,7 @@ let G = "WELCOME_CHANNEL",
       size: "md",
       color: "currentColor",
       className: A.channelIcon
-    }) : (0, r.jsx)(N.Z, {
+    }) : (0, r.jsx)(E.Z, {
       width: 24,
       height: 24,
       className: A.warningIcon
@@ -138,7 +138,7 @@ let G = "WELCOME_CHANNEL",
       className: a()(A.welcomeChannel, {
         [A.dragging]: v
       }),
-      ref: C,
+      ref: O,
       "data-dnd-name": o.description,
       onContextMenu: e => {
         (0, m.jW)(e, async () => {
@@ -188,21 +188,21 @@ let G = "WELCOME_CHANNEL",
       originalWelcomeSettings: a
     } = (0, u.e7)([y.Z], () => y.Z.getSettingsProps()), s = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [c, d] = i.useState(null), [m, p] = i.useState(false), [b, x] = i.useState(false), {
       description: j,
-      channels: E,
+      channels: N,
       enabled: S
     } = l, Z = e => {
-      null != t && (o()(e, a.channels) || ((0, O.Es)(t.id, {
+      null != t && (o()(e, a.channels) || ((0, C.Es)(t.id, {
         channels: e
       }), p(true)))
     }, G = e => {
-      null != t && e !== a.enabled && ((0, O.Es)(t.id, {
+      null != t && e !== a.enabled && ((0, C.Es)(t.id, {
         enabled: e
       }), x(!s), p(true))
     }, U = (e, t, n) => {
-      if (null == E) return;
-      let r = E.indexOf(e),
-        i = [...E];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, O.VP)({
+      if (null == N) return;
+      let r = N.indexOf(e),
+        i = [...N];
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, C.VP)({
         channels: i
       })), n ? (Z(i), d(null)) : d(t)
     }, B = i.useRef(false);
@@ -213,7 +213,7 @@ let G = "WELCOME_CHANNEL",
         let e = [],
           n = [],
           r = false;
-        null == E || E.forEach(t => {
+        null == N || N.forEach(t => {
           e.push(t.description), n.push(t.channel_id), null != t.emoji_id && (r = true)
         }), I.default.track(w.rMx.GUILD_WELCOME_SCREEN_SETTINGS_UPDATED, {
           guild_id: null == t ? true : t.id,
@@ -224,7 +224,7 @@ let G = "WELCOME_CHANNEL",
           is_enabled: S
         })
       }
-    }, [m, E, j, S, t]), i.useEffect(() => () => (0, O.sm)(), []);
+    }, [m, N, j, S, t]), i.useEffect(() => () => (0, C.sm)(), []);
     let F = i.useCallback(() => {
       null != t && T.Z.open(t.id, w.pNK.ONBOARDING)
     }, [t]);
@@ -236,10 +236,10 @@ let G = "WELCOME_CHANNEL",
         className: A.notice,
         children: (0, r.jsxs)(g.Text, {
           variant: "text-md/normal",
-          children: [(0, r.jsx)(N.Z, {
+          children: [(0, r.jsx)(E.Z, {
             className: A.noticeIcon
           }), D.intl.format(D.t["oj2vi+"], {
-            onboardingLink: e => (0, r.jsx)(C.Z, {
+            onboardingLink: e => (0, r.jsx)(O.Z, {
               onClick: F,
               children: e
             })
@@ -250,7 +250,7 @@ let G = "WELCOME_CHANNEL",
         children: D.intl.string(D.t.w2d74x)
       }), (0, r.jsx)(P.Z, {
         enabled: S,
-        onPreview: (null == E ? true : E.length) === 0 ? true : () => {
+        onPreview: (null == N ? true : N.length) === 0 ? true : () => {
           null != t && (0, g.ZDy)(async () => {
             let {
               default: e
@@ -261,7 +261,7 @@ let G = "WELCOME_CHANNEL",
             }))
           })
         },
-        onToggle: S || (null == E ? true : E.length) !== 0 ? () => {
+        onToggle: S || (null == N ? true : N.length) !== 0 ? () => {
           G(!S)
         } : true,
         animateStatus: b,
@@ -297,12 +297,12 @@ let G = "WELCOME_CHANNEL",
             children: (0, r.jsx)(g.Kx8, {
               placeholder: D.intl.string(D.t.qzZHaX),
               onChange: e => {
-                (0, O.VP)({
+                (0, C.VP)({
                   description: e
                 })
               },
               onBlur: () => {
-                null != t && j !== a.description && ((0, O.Es)(t.id, {
+                null != t && j !== a.description && ((0, C.Es)(t.id, {
                   description: null == j ? true : j.trim()
                 }), p(true))
               },
@@ -321,14 +321,14 @@ let G = "WELCOME_CHANNEL",
           children: (0, r.jsx)(g.gNt, {
             label: D.intl.string(D.t.euJXzT),
             description: D.intl.string(D.t.VOnnnz),
-            children: null == E ? true : E.map((e, n) => (0, r.jsx)(M, {
+            children: null == N ? true : N.map((e, n) => (0, r.jsx)(M, {
               guildId: t.id,
               welcomeChannel: e,
               onEdit: e => {
-                let t = [...null != E ? E : []];
-                null == e ? t.splice(n, 1) : t[n] = e, (0, O.VP)({
+                let t = [...null != N ? N : []];
+                null == e ? t.splice(n, 1) : t[n] = e, (0, C.VP)({
                   channels: t
-                }), Z(t), 0 === t.length && S && ((0, O.VP)({
+                }), Z(t), 0 === t.length && S && ((0, C.VP)({
                   enabled: false
                 }), G(false))
               },

@@ -44,12 +44,12 @@ function w(e) {
       currentPosition: b,
       onDragStart: v,
       onDragReset: _,
-      onDragComplete: C,
+      onDragComplete: O,
       roleStyle: y
     } = e,
-    E = (0, O.T)(c, m, d),
-    N = (0, j.fI)(d),
-    S = null == E && !N,
+    N = (0, C.T)(c, m, d),
+    E = (0, j.fI)(d),
+    S = null == N && !E,
     w = (null == (t = d.tags) ? true : t.guild_connections) !== true,
     Z = (0, x._f)(c.id, d, d.colorStrings),
     [, R] = (0, s.c)({
@@ -62,7 +62,7 @@ function w(e) {
       end: (e, t) => {
         let n = t.getDropResult();
         if (null == n) return void _();
-        C(n.roleId)
+        O(n.roleId)
       }
     }),
     [{
@@ -149,12 +149,12 @@ function w(e) {
       var t;
       R(A(null != (t = null == e ? true : e.ref) ? t : null))
     },
-    children: [l, null != E ? (0, r.jsx)(O.Z, {
+    children: [l, null != N ? (0, r.jsx)(C.Z, {
       className: T.lock,
-      tooltipText: E
+      tooltipText: N
     }) : null, (0, r.jsx)(u.Text, {
       variant: "text-sm/medium",
-      color: N ? "header-primary" : "interactive-active",
+      color: E ? "header-primary" : "interactive-active",
       lineClamp: 1,
       children: d.name
     })]
@@ -167,10 +167,10 @@ function Z(e) {
     currentRoleId: n,
     setCurrentRoleId: l,
     setSelectedSection: s
-  } = e, o = (0, c.e7)([C.Z], () => C.Z.roles), g = (0, c.e7)([v.Z], () => v.Z.getHighestRole(t)), h = (0, c.e7)([f.Z], () => f.Z.roleStyle), [x, j] = i.useState(o.length), {
-    scrolledToTop: O,
+  } = e, o = (0, c.e7)([O.Z], () => O.Z.roles), g = (0, c.e7)([v.Z], () => v.Z.getHighestRole(t)), h = (0, c.e7)([f.Z], () => f.Z.roleStyle), [x, j] = i.useState(o.length), {
+    scrolledToTop: C,
     handleScroll: I
-  } = (0, E.V)(), {
+  } = (0, N.V)(), {
     handleDragStart: P,
     handleDragReset: Z,
     handleDragComplete: R
@@ -191,7 +191,7 @@ function Z(e) {
       className: T.container,
       children: [(0, r.jsxs)("div", {
         className: a()(T.titleContainer, {
-          [T.titleElevated]: !O
+          [T.titleElevated]: !C
         }),
         children: [(0, r.jsxs)(u.P3F, {
           className: T.title,
@@ -215,7 +215,7 @@ function Z(e) {
           children: (0, r.jsx)(u.P3F, {
             className: T.addRole,
             onClick: () => {
-              m.Z.createRole(t.id), s(N.ZI.DISPLAY)
+              m.Z.createRole(t.id), s(E.ZI.DISPLAY)
             },
             children: (0, r.jsx)(u.qJs, {
               size: "custom",

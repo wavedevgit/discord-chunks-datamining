@@ -2,7 +2,7 @@
 /** chunk id: 423087, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -129,20 +129,20 @@ function _(e) {
     }))
   })
 }
-let C = function(e) {
+let O = function(e) {
   let {
     className: t,
     guildId: n,
     badge: l,
     primaryColor: a,
     secondaryColor: s
-  } = e, [d, u] = i.useState(false), g = i.useRef(null), C = i.useId(), O = i.useId(), y = i.useMemo(() => p.Ek.every(e => e.primary !== a || e.secondary !== s), [a, s]), E = (0, o.Jb)({
+  } = e, [d, u] = i.useState(false), g = i.useRef(null), O = i.useId(), C = i.useId(), y = i.useMemo(() => p.Ek.every(e => e.primary !== a || e.secondary !== s), [a, s]), N = (0, o.Jb)({
     orientation: "horizontal",
     isDisabled: false,
-    labelledBy: C
+    labelledBy: O
   });
 
-  function N(e) {
+  function E(e) {
     let t = {};
     true !== e.primary && (t.badgeColorPrimary = e.primary), true !== e.secondary && (t.badgeColorSecondary = e.secondary), m.Z.updateGuildProfile(n, t)
   }
@@ -150,16 +150,16 @@ let C = function(e) {
     className: t,
     children: [(0, r.jsx)(c.gNt, {
       label: h.intl.string(f.default.zSbMdX),
-      id: C,
-      children: e => (0, r.jsxs)("div", j(x({}, E), {
+      id: O,
+      children: e => (0, r.jsxs)("div", j(x({}, N), {
         id: e.controlId,
-        "aria-describedby": O,
+        "aria-describedby": C,
         className: b.pickerGrid,
         children: [p.Ek.map(e => (0, r.jsx)(v, {
           palette: e,
           badge: l,
           isSelected: e.primary === a && e.secondary === s,
-          onClick: () => N(e)
+          onClick: () => E(e)
         }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(_, {
           badge: l,
           primary: a,
@@ -168,11 +168,11 @@ let C = function(e) {
           showColorPopout: d,
           setShowColorPopout: u,
           palettePopoutTargetRef: g,
-          handleChange: N
+          handleChange: E
         })]
       }))
     }), (0, r.jsx)(c.nn4, {
-      id: O,
+      id: C,
       children: h.intl.string(h.t.ovbW0Z)
     })]
   })

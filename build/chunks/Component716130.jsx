@@ -2,7 +2,7 @@
 /** chunk id: 716130, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -70,13 +70,13 @@ function _(e) {
     onDragStart: () => {},
     onDragComplete: () => {},
     onDragReset: () => {}
-  }), C = i.useRef(null);
+  }), O = i.useRef(null);
   return i.useEffect(() => {
     _(false)
   }, [_]), i.useEffect(() => {
-    f(j(C))
-  }, [f, j, C]), (0, r.jsxs)("div", {
-    ref: C,
+    f(j(O))
+  }, [f, j, O]), (0, r.jsxs)("div", {
+    ref: O,
     className: a()(x.separatorSection, {
       [x.dropIndicatorBefore]: null != v && g < v,
       [x.dropIndicatorAfter]: null != v && g > v
@@ -111,14 +111,14 @@ function _(e) {
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     guildId: t,
     prejoinOnly: n,
     postjoinOnly: i,
     includeCount: l,
     singleColumn: a
-  } = e, d = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), C = (0, s.e7)([p.Z], () => p.Z.editedOnboardingPrompts), O = C.filter(e => e.inOnboarding), y = C.filter(e => true !== e.inOnboarding), E = [...O.map(e => ({
+  } = e, d = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), O = (0, s.e7)([p.Z], () => p.Z.editedOnboardingPrompts), C = O.filter(e => e.inOnboarding), y = O.filter(e => true !== e.inOnboarding), N = [...C.map(e => ({
     id: e.id,
     data: e
   })), {
@@ -128,10 +128,10 @@ function C(e) {
     id: e.id,
     data: e
   }))], {
-    handleDragStart: N,
+    handleDragStart: E,
     handleDragReset: I,
     handleDragComplete: S
-  } = (0, u.Z)(E, e => {
+  } = (0, u.Z)(N, e => {
     let t = e.findIndex(e => "separator" === e.id),
       n = e.slice(0, t).map(e => v(j({}, e.data), {
         inOnboarding: true
@@ -160,7 +160,7 @@ function C(e) {
           className: x.subtitle,
           children: b.intl.string(b.t.QvCcYe)
         })]
-      }), O.map((e, t) => (0, r.jsx)(f.Z, {
+      }), C.map((e, t) => (0, r.jsx)(f.Z, {
         guild: d,
         prompt: e,
         disableAutofocus: n,
@@ -168,7 +168,7 @@ function C(e) {
         singleColumn: a,
         promptIndex: t,
         dragIndex: t,
-        onPromptDragStart: N,
+        onPromptDragStart: E,
         onPromptDragReset: I,
         onPromptDragComplete: S
       }, e.id))]
@@ -180,14 +180,14 @@ function C(e) {
       children: [y.map((e, t) => (0, r.jsx)(f.Z, {
         guild: d,
         prompt: e,
-        promptIndex: t + O.length,
-        dragIndex: t + O.length + 1,
-        onPromptDragStart: N,
+        promptIndex: t + C.length,
+        dragIndex: t + C.length + 1,
+        onPromptDragStart: E,
         onPromptDragReset: I,
         onPromptDragComplete: S
-      }, e.id)), C.length < h.YW ? (0, r.jsxs)(o.P3F, {
+      }, e.id)), O.length < h.YW ? (0, r.jsxs)(o.P3F, {
         className: x.addPrompt,
-        onClick: () => (0, m.tS)(d, [...C, (0, h.yZ)(false)], false),
+        onClick: () => (0, m.tS)(d, [...O, (0, h.yZ)(false)], false),
         children: [(0, r.jsx)(o.oFk, {
           size: "custom",
           color: "currentColor",

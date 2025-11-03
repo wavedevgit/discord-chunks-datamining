@@ -24,13 +24,13 @@ let g = Chunk647438.memo(function(e) {
     disableAnimation: h,
     disableBackground: b
   } = e, [x, j] = i.useState(true), [v, _] = i.useState(false), {
-    ref: C,
-    height: O = 0
+    ref: O,
+    height: C = 0
   } = (0, c.ZP)(), {
     ref: y,
-    height: E = 0
-  } = (0, c.ZP)(), [N, I] = i.useState(m), S = (0, o.q_F)({
-    height: N ? E + O : O,
+    height: N = 0
+  } = (0, c.ZP)(), [E, I] = i.useState(m), S = (0, o.q_F)({
+    height: E ? N + C : C,
     config: (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -85,7 +85,7 @@ let g = Chunk647438.memo(function(e) {
       }),
       style: S,
       children: [(0, r.jsx)(o.P3F, {
-        innerRef: C,
+        innerRef: O,
         onClick: p ? true : f,
         className: a()(u.innerHeader, {
           [u.toggled]: m && p

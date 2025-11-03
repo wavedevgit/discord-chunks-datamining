@@ -30,8 +30,8 @@ function j(e) {
     widgetChannelId: j,
     className: v,
     enableLocalUpdate: _
-  } = e, C = (0, a.e7)([c.ZP], () => c.ZP.getChannels(l)), O = i.useMemo(() => {
-    let e = [...C[c.sH], ...C[c.Zb]].filter(e => {
+  } = e, O = (0, a.e7)([c.ZP], () => c.ZP.getChannels(l)), C = i.useMemo(() => {
+    let e = [...O[c.sH], ...O[c.Zb]].filter(e => {
       let {
         channel: t
       } = e;
@@ -54,13 +54,13 @@ function j(e) {
       value: b,
       label: h.intl.string(h.t.u197b7)
     }), e
-  }, [C, l, j]), y = i.useCallback(e => {
+  }, [O, l, j]), y = i.useCallback(e => {
     _ ? (0, p.c)(l, f, e !== b ? e : null) : m.Z.updateEmbed(l, f, e !== b ? e : null)
   }, [l, f, _]);
   return (0, r.jsx)(s.q4e, {
     label: t,
     description: n,
-    options: O,
+    options: C,
     value: j,
     onChange: y,
     className: v

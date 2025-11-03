@@ -29,10 +29,10 @@ function x(e) {
     j = (0, l.e7)([u.Z], () => null != n && u.Z.can(f.Plq.MANAGE_GUILD, n), [n]),
     v = (0, l.e7)([g.default], () => g.default.getCurrentUser()),
     _ = (0, d.eM)(n, v),
-    C = null == v ? true : v.mfaEnabled,
-    O = x === f.BpS.ELEVATED,
-    y = _ && C,
-    E = (0, i.throttle)(async e => {
+    O = null == v ? true : v.mfaEnabled,
+    C = x === f.BpS.ELEVATED,
+    y = _ && O,
+    N = (0, i.throttle)(async e => {
       y && await m.Z.updateMFALevel({
         guildId: n.id,
         level: e ? f.BpS.ELEVATED : f.BpS.NONE,
@@ -45,7 +45,7 @@ function x(e) {
       section: f.oAB.ACCOUNT
     })
   }) : h.intl.string(h.t["9Ghu40"]));
-  let N = n.features.has(f.GuildFeatures.DISCOVERABLE);
+  let E = n.features.has(f.GuildFeatures.DISCOVERABLE);
   return (0, r.jsxs)("div", {
     className: b.simpleItemWrapper,
     children: [(0, r.jsxs)("div", {
@@ -59,17 +59,17 @@ function x(e) {
         color: "header-secondary",
         children: [h.intl.string(h.t["a/93J6"]), " ", t]
       })]
-    }), !y || O && N ? (0, r.jsx)(a.u, {
-      text: N ? h.intl.string(h.t["KG1V/E"]) : _ ? h.intl.string(h.t.NmsheT) : h.intl.string(h.t.LieBta),
+    }), !y || C && E ? (0, r.jsx)(a.u, {
+      text: E ? h.intl.string(h.t["KG1V/E"]) : _ ? h.intl.string(h.t.NmsheT) : h.intl.string(h.t.LieBta),
       children: (0, r.jsx)(p.Z, {
-        checked: O,
+        checked: C,
         disabled: true,
-        onChange: E,
+        onChange: N,
         className: b.bringToFront
       })
     }) : (0, r.jsx)(p.Z, {
-      checked: O,
-      onChange: E,
+      checked: C,
+      onChange: N,
       className: b.bringToFront
     })]
   })

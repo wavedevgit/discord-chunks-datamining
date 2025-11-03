@@ -2,7 +2,7 @@
 /** chunk id: 623691, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => E
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk297827 = require("./297827.js");
 
-function N(e) {
+function E(e) {
   let {
     guild: t,
     everyoneRole: n,
@@ -51,7 +51,7 @@ function N(e) {
       variant: "heading-lg/semibold",
       children: y.intl.string(y.t["LPJmL/"])
     }), (0, r.jsx)(d.Text, {
-      className: E.description,
+      className: N.description,
       color: "header-secondary",
       variant: "text-sm/normal",
       children: y.intl.string(y.t["1ydhVp"])
@@ -74,7 +74,7 @@ function I(e) {
   } = e;
   i.useEffect(() => {
     (0, m.wE)(c.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
-      dismissAction: C.L.INDIRECT_ACTION,
+      dismissAction: O.L.INDIRECT_ACTION,
       guildId: t.id,
       forceTrack: true
     })
@@ -85,7 +85,7 @@ function I(e) {
       children: y.intl.format(y.t.Vg2oTN, {
         breakingChangeDate: n
       })
-    }) : f.Z.can(O.Pl.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
+    }) : f.Z.can(C.Pl.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       children: y.intl.format(y.t.HYM8OE, {
         onClickMigrate: () => {
@@ -111,7 +111,7 @@ function I(e) {
     });
   return (0, r.jsx)(p.Z, {
     look: p.z.WARNING,
-    className: E.migrationInfoBox,
+    className: N.migrationInfoBox,
     children: l
   })
 }
@@ -134,30 +134,30 @@ function S(e) {
       query: l,
       setQuery: s
     }), (0, r.jsx)(d.Text, {
-      className: E.helpText,
+      className: N.helpText,
       color: "header-secondary",
       variant: "text-sm/normal",
       children: y.intl.format(y.t.xkC3Yf, {
         articleURL: b.Z.getArticleURL(_.BhN.PERMISSIONS_TUTORIAL)
       })
     }), (0, r.jsx)("div", {
-      className: E.rolesTable,
+      className: N.rolesTable,
       children: (0, r.jsxs)("div", {
-        className: E.tableHeader,
+        className: N.tableHeader,
         children: [(0, r.jsx)("div", {
-          className: E.dragSpacing
+          className: N.dragSpacing
         }), (0, r.jsx)(d.Text, {
-          className: a()(E.tableTitle, E.roleNameSpacing),
+          className: a()(N.tableTitle, N.roleNameSpacing),
           variant: "text-sm/normal",
           children: y.intl.format(y.t["38N3Vz"], {
             numRoles: String(i.length)
           })
         }), (0, r.jsx)(d.Text, {
-          className: a()(E.tableTitle, E.memberSpacing),
+          className: a()(N.tableTitle, N.memberSpacing),
           variant: "text-sm/normal",
           children: y.intl.string(y.t["9Oq93m"])
         }), (0, r.jsx)("div", {
-          className: E.buttonsSpacing
+          className: N.buttonsSpacing
         })]
       })
     })]
@@ -177,9 +177,9 @@ function T(e) {
     s(true), await g.Z.createRole(t.id), s(false)
   };
   return (0, r.jsx)("div", {
-    className: E.__invalid_rolesList,
+    className: N.__invalid_rolesList,
     children: (0, r.jsxs)("div", {
-      className: E.searchContainer,
+      className: N.searchContainer,
       children: [(0, r.jsx)(d.E1j, {
         query: n,
         onChange: o,

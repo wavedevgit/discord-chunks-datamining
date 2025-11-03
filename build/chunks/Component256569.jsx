@@ -79,11 +79,11 @@ function h(e) {
     className: h,
     maxTags: b
   } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, g.V)(n), {
-    handlePasteEvent: C,
-    handleInputChange: O,
+    handlePasteEvent: O,
+    handleInputChange: C,
     handleKeyDown: y,
-    handleContainerKeyUp: E,
-    handleRemoveTag: N,
+    handleContainerKeyUp: N,
+    handleRemoveTag: E,
     handleTagChangeEvent: I,
     handleSelectTag: S,
     handleUnselectTag: T,
@@ -132,7 +132,7 @@ function h(e) {
     className: a()(m.mainContainer, h),
     ref: j,
     tabIndex: 0,
-    onKeyUp: E,
+    onKeyUp: N,
     children: [(0, r.jsxs)(f, {
       ref: v,
       onClick: M,
@@ -141,7 +141,7 @@ function h(e) {
         onChange: I(t),
         onBlur: U,
         onFocus: B(t),
-        onRemove: () => N(t),
+        onRemove: () => E(t),
         isSelected: D.includes(e),
         isSelecting: A,
         error: u[e],
@@ -151,9 +151,9 @@ function h(e) {
           [m.isEditingOtherNodes]: k
         }),
         ref: x,
-        onChange: O,
+        onChange: C,
         onKeyDownCapture: y,
-        onPaste: C,
+        onPaste: O,
         onBlur: w,
         placeholder: 0 === R.length ? p : true,
         value: Z

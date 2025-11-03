@@ -59,13 +59,13 @@ function j(e) {
     guild: j,
     prompt: v,
     singleColumn: _,
-    promptIndex: C,
-    option: O,
+    promptIndex: O,
+    option: C,
     hasError: y,
-    onDragStart: E,
-    onDragComplete: N,
+    onDragStart: N,
+    onDragComplete: E,
     onDragReset: I
-  } = e, S = null, T = s().findIndex(v.options, e => e.id === O.id), {
+  } = e, S = null, T = s().findIndex(v.options, e => e.id === C.id), {
     drag: P,
     dragSourcePosition: w,
     drop: Z,
@@ -73,15 +73,15 @@ function j(e) {
   } = (0, d.Z)({
     type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(v.id),
     index: T,
-    optionId: O.id,
-    onDragStart: E,
-    onDragComplete: N,
+    optionId: C.id,
+    onDragStart: N,
+    onDragComplete: E,
     onDragReset: I
   }), {
     customEmoji: D,
     unicodeEmoji: A
-  } = (0, u.Z)(null == (t = O.emoji) ? true : t.id, null == (i = O.emoji) ? true : i.name);
-  return (0, p.Oq)(O.emoji) || null != D || null != A || (S = f.intl.string(f.t["61wfmh"])), (0, r.jsxs)(o.P3F, {
+  } = (0, u.Z)(null == (t = C.emoji) ? true : t.id, null == (i = C.emoji) ? true : i.name);
+  return (0, p.Oq)(C.emoji) || null != D || null != A || (S = f.intl.string(f.t["61wfmh"])), (0, r.jsxs)(o.P3F, {
     className: l()(h.optionCard, {
       [h.hasError]: y || null != S,
       [h.dropIndicatorBefore]: null != w && T < w,
@@ -95,16 +95,16 @@ function j(e) {
       return t => (0, r.jsx)(e, x(b({}, t), {
         guild: j,
         prompt: v,
-        option: O,
-        index: C,
+        option: C,
+        index: O,
         onSave: e => {
           (0, m.Kk)(j, v.id, {
-            options: v.options.map(t => t.id === O.id ? e : t)
+            options: v.options.map(t => t.id === C.id ? e : t)
           })
         },
         onDelete: () => {
           (0, m.Kk)(j, v.id, {
-            options: v.options.filter(e => e.id !== O.id)
+            options: v.options.filter(e => e.id !== C.id)
           })
         }
       }))
@@ -126,8 +126,8 @@ function j(e) {
       children: [(0, r.jsx)("div", {
         className: h.emoji,
         children: (0, r.jsx)(g.Z, {
-          emojiId: null == (a = O.emoji) ? true : a.id,
-          emojiName: null == (c = O.emoji) ? true : c.name,
+          emojiId: null == (a = C.emoji) ? true : a.id,
+          emojiName: null == (c = C.emoji) ? true : c.name,
           defaultComponent: null
         })
       }), (0, r.jsxs)("div", {
@@ -136,12 +136,12 @@ function j(e) {
           variant: "text-md/medium",
           color: "header-primary",
           lineClamp: 1,
-          children: O.title
-        }), "" !== O.description && (0, r.jsx)(o.Text, {
+          children: C.title
+        }), "" !== C.description && (0, r.jsx)(o.Text, {
           className: h.description,
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: O.description
+          children: C.description
         })]
       })]
     }), null != S && (0, r.jsx)(o.Text, {

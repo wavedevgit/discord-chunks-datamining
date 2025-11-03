@@ -44,7 +44,7 @@ function y(e) {
   }
   return e
 }
-let E = [{
+let N = [{
     iconSrc: require("./348986.js"),
     name: "Pokemon GO Paris",
     position: [false, false]
@@ -75,7 +75,7 @@ let E = [{
     faded: true,
     rightAlign: true
   }],
-  N = e => {
+  E = e => {
     let {
       icon: t,
       color: n,
@@ -138,7 +138,7 @@ let E = [{
   S = e => {
     let {
       guild: t
-    } = e, [n, l] = i.useState(0), [a, _] = i.useState(0), [C, O] = i.useState(), S = (0, s.e7)([m.Z], () => m.Z.can(f.Plq.ADMINISTRATOR, t)), T = null == C ? true : C.offsetWidth, P = null == C ? true : C.offsetHeight;
+    } = e, [n, l] = i.useState(0), [a, _] = i.useState(0), [O, C] = i.useState(), S = (0, s.e7)([m.Z], () => m.Z.can(f.Plq.ADMINISTRATOR, t)), T = null == O ? true : O.offsetWidth, P = null == O ? true : O.offsetHeight;
     return i.useEffect(() => {
       null != T && l(T / 2), null != P && _(P / 2)
     }, [T, P, l, _]), i.useEffect(() => {
@@ -147,8 +147,8 @@ let E = [{
       className: x.container,
       children: [(0, r.jsxs)("div", {
         className: x.banner,
-        ref: e => O(e),
-        children: [E.map(e => {
+        ref: e => C(e),
+        children: [N.map(e => {
           var t, i;
           return (0, r.jsx)(I, (t = y({}, e), i = i = {
             imageCoordinates: [n, a]
@@ -246,7 +246,7 @@ let E = [{
           color: o.Z.unsafe_rawColors.RED_360.css,
           header: b.intl.string(b.t.W2kLJC),
           body: b.intl.string(b.t.hyNkHz)
-        }].map((e, t) => (0, r.jsx)(N, y({}, e), t))
+        }].map((e, t) => (0, r.jsx)(E, y({}, e), t))
       })]
     })
   }

@@ -2,8 +2,8 @@
 /** chunk id: 570961, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $y: () => x,
-  Kk: () => N,
-  NB: () => p,
+  Kk: () => p,
+  NB: () => I,
   en: () => j,
   fi: () => O,
   n_: () => T,
@@ -42,7 +42,7 @@ function f(e) {
   return e
 }
 
-function I(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,13 +55,13 @@ function I(e, t) {
   }), e
 }
 
-function p() {
+function I() {
   Chunk570140.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_PROMPTS_RESET"
   })
 }
 
-function N(e, t, n) {
+function p(e, t, n) {
   E(e, u.Z.editedOnboardingPrompts.map(e => e.id === t ? f({}, e, n) : e))
 }
 
@@ -91,7 +91,7 @@ async function S(e, t) {
       let l = t.options.map(t => {
         let n = null == t.roleIds ? t.roleIds : t.roleIds.filter(t => null != c.Z.getRole(e.id, t)),
           l = null == t.channelIds ? t.channelIds : t.channelIds.filter(e => null != o.Z.getChannel(e));
-        return I(f({}, t), {
+        return N(f({}, t), {
           roleIds: n,
           channelIds: l,
           emoji: function(e) {
@@ -100,17 +100,17 @@ async function S(e, t) {
           }(t)
         })
       });
-      return I(f({}, t), {
+      return N(f({}, t), {
         options: l,
         type: l.length >= g.fY ? g.FN.DROPDOWN : g.FN.MULTIPLE_CHOICE
       })
     }),
     m = l.filter(e => e.inOnboarding),
-    p = l.filter(e => true !== e.inOnboarding),
-    N = l.map(t => n.some(e => e.id === t.id) ? _(e, l, t) : null);
-  if (N.filter(d.lm).length > 0) throw r.Z.dispatch({
+    I = l.filter(e => true !== e.inOnboarding),
+    p = l.map(t => n.some(e => e.id === t.id) ? _(e, l, t) : null);
+  if (p.filter(d.lm).length > 0) throw r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_FAILED",
-    errors: N
+    errors: p
   }), Error("failed to locally validate prompts");
   if (m.length > g.b3) throw i.Z.show({
     title: h.intl.string(h.t.iLdiqY),
@@ -119,9 +119,9 @@ async function S(e, t) {
     })
   }), r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_FAILED",
-    errors: N
+    errors: p
   }), Error("too many prompts in onboarding");
-  let O = [...m, ...p];
+  let O = [...m, ...I];
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_PROMPTS_SUBMIT"
   });

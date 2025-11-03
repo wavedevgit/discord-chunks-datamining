@@ -98,13 +98,13 @@ function f(e) {
     isSelecting: b,
     error: x,
     forceShowErrorTooltip: j
-  } = e, v = i.useRef(null), _ = i.useRef(null), [C, O] = i.useState(false), {
+  } = e, v = i.useRef(null), _ = i.useRef(null), [O, C] = i.useState(false), {
     ref: y,
-    width: E = 0
-  } = (0, d.ZP)(C), {
-    ref: N,
+    width: N = 0
+  } = (0, d.ZP)(O), {
+    ref: E,
     width: I = 0
-  } = (0, d.ZP)(C), S = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [T, P] = i.useState(j), w = i.useRef(null), Z = E > I ? E : I;
+  } = (0, d.ZP)(O), S = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [T, P] = i.useState(j), w = i.useRef(null), Z = N > I ? N : I;
   i.useEffect(() => {
     j ? (P(true), w.current = setTimeout(() => {
       P(false), w.current = null
@@ -121,7 +121,7 @@ function f(e) {
         var n;
         v.current.scrollTo(0, 0), v.current.setSelectionRange(0, 0), v.current.scrollLeft = 0, y.current.scrollLeft = 0, (null == (n = _.current) ? true : n.ref) != null && (_.current.ref.scrollLeft = 0)
       }
-      O(false), l(e)
+      C(false), l(e)
     }, [t, y, l, f]),
     A = i.useCallback(e => {
       let n = t.trim().length <= 0;
@@ -129,7 +129,7 @@ function f(e) {
     }, [D, t]),
     L = i.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
-      o(t), t ? e.preventDefault() : O(true), e.stopPropagation()
+      o(t), t ? e.preventDefault() : C(true), e.stopPropagation()
     }, [o]),
     k = i.useCallback(e => {
       f()
@@ -137,13 +137,13 @@ function f(e) {
   return (0, r.jsx)("div", {
     className: m.chipletFlexContainer,
     children: (0, r.jsxs)("div", {
-      ref: N,
+      ref: E,
       className: a()(m.chipletContainer, {
-        [m.isEditing]: C,
-        [m.smallBlink]: !C && !S,
+        [m.isEditing]: O,
+        [m.smallBlink]: !O && !S,
         [m.isSelected]: h,
         [m.isSelecting]: b,
-        [m.isError]: null != x && !C
+        [m.isError]: null != x && !O
       }),
       children: [(0, r.jsxs)(c.P3F, {
         tag: "div",
@@ -154,12 +154,12 @@ function f(e) {
         onMouseLeave: () => P(false),
         className: a()(m.chipletContainerInner, {
           [m.isSelecting]: b,
-          [m.isEditing]: C
+          [m.isEditing]: O
         }),
         ref: _,
         children: [(0, r.jsx)("input", {
           className: a()(m.chipletInput, {
-            [m.isEditing]: C,
+            [m.isEditing]: O,
             [m.isSelecting]: b
           }),
           ref: v,
@@ -172,12 +172,12 @@ function f(e) {
         }), (0, r.jsx)(p, {
           ref: y,
           value: t,
-          isEditing: C,
+          isEditing: O,
           isSelected: h,
           error: x,
-          forceShowErrorTooltip: T || C
+          forceShowErrorTooltip: T || O
         })]
-      }), !C && (0, r.jsx)(c.P3F, {
+      }), !O && (0, r.jsx)(c.P3F, {
         className: m.closeIconContainer,
         onClick: k,
         children: (0, r.jsx)(c.Dio, {

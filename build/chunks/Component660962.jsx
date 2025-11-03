@@ -82,16 +82,16 @@ function q(e) {
     shouldShowUpsell: s
   } = e, o = (0, P.F)(U.intl.string(U.t.Mi9Kbe)), d = (0, f.ZP)(), h = (0, v.oC)(n, t), x = {
     dark: {
-      src: W,
+      src: z,
       name: t.name
     },
     light: {
-      src: z,
+      src: W,
       name: t.name
     }
   };
 
-  function O() {
+  function C() {
     (0, y.Z)(n, b.Z.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, p.xf)()
   }
   return (0, r.jsx)(j.ZP, {
@@ -128,7 +128,7 @@ function q(e) {
                       guildId: n,
                       authorId: o.author.id,
                       colorRoleId: t.id,
-                      colorStrings: (0, C.DX)(p),
+                      colorStrings: (0, O.DX)(p),
                       colorString: (0, c.Rf)(p.primary_color)
                     },
                     message: o,
@@ -161,7 +161,7 @@ function q(e) {
               children: U.intl.string(B.default.FJZeZF)
             })]
           }), (0, r.jsx)(m.Button, {
-            onClick: O,
+            onClick: C,
             variant: "expressive",
             icon: m.Ucv,
             text: U.intl.string(U.t["+7XY31"])
@@ -261,10 +261,10 @@ function Q(e) {
     colorStrings: t.colorStrings,
     colorString: t.colorString
   }, c = {
-    src: W,
+    src: z,
     name: t.name
   }, d = {
-    src: z,
+    src: W,
     name: t.name
   }, u = (0, v.oC)(n, t), p = [G.BRd.DARK, G.BRd.DARKER, G.BRd.MIDNIGHT, G.BRd.LIGHT];
   return (0, r.jsx)(m.Rny, {
@@ -328,7 +328,7 @@ function ee(e) {
     role: n,
     locked: i,
     setSelectedSection: l
-  } = e, s = (0, O.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !s, u = null != o && s ? o.currentStyle : T.g.SOLID, g = (0, N.fI)(n), p = i || g, f = (0, d.e7)([I.Z], () => I.Z.canImpersonateRole(t, n)), {
+  } = e, s = (0, C.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !s, u = null != o && s ? o.currentStyle : T.g.SOLID, g = (0, E.fI)(n), p = i || g, f = (0, d.e7)([I.Z], () => I.Z.canImpersonateRole(t, n)), {
     headerHeight: h,
     headerRef: b
   } = (0, w.Z)(0), {
@@ -375,7 +375,7 @@ function ee(e) {
         disabled: p,
         currentStyle: u,
         hasEnhancedRoleColors: s
-      }), u === T.g.HOLOGRAPHIC && (0, r.jsx)(E.Z, {
+      }), u === T.g.HOLOGRAPHIC && (0, r.jsx)(N.Z, {
         className: F.holographicInfoBox,
         children: (0, r.jsx)(m.Text, {
           variant: "text-xs/medium",

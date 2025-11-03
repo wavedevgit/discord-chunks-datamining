@@ -1,10 +1,10 @@
 /** Chunk was on 58227 **/
 /** chunk id: 548473, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B0: () => A,
+  B0: () => P,
   ZP: () => L,
-  _I: () => C,
-  xm: () => P
+  _I: () => A,
+  xm: () => C
 }), require("./49124.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -81,7 +81,7 @@ function G(e) {
   }, [n, t, e]), n
 }
 
-function P() {
+function C() {
   let e = G(Chunk180504);
   return (0, Chunk951288.jsx)("div", {
     className: a()(Chunk577436.leftArt, Chunk577436.altFloat),
@@ -92,7 +92,7 @@ function P() {
   })
 }
 
-function A() {
+function P() {
   let e = G(Chunk535170);
   return (0, Chunk951288.jsx)("div", {
     className: a()(Chunk577436.rightArt, Chunk577436.altFloat),
@@ -103,19 +103,19 @@ function A() {
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     guild: t,
     mainIslandClassName: n,
     balloonDogClassName: i
-  } = e, s = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), d = r.useRef(null), u = G(S), g = I.ZP.getGuildIconURL({
+  } = e, s = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), d = r.useRef(null), u = G(S), g = N.ZP.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: 96
   });
   return r.useEffect(() => {
     let e;
-    return null != d.current && null != g ? (0, p.OF)(g).then(t => {
+    return null != d.current && null != g ? (0, I.OF)(g).then(t => {
       let n = (0, E.Z)(JSON.parse(JSON.stringify(T)), g, t[0]);
       e = o().loadAnimation({
         container: d.current,
@@ -152,7 +152,7 @@ function L(e) {
     onboardingStatus: i,
     headerId: a,
     disableTracking: s
-  } = e, o = (0, c.e7)([N.Z], () => N.Z.isLoading()), m = r.useRef(false);
+  } = e, o = (0, c.e7)([p.Z], () => p.Z.isLoading()), m = r.useRef(false);
   r.useEffect(() => {
     if (!s) return f.default.track(j.rMx.GUILD_ONBOARDING_STEP_VIEWED, y(D({}, (0, g.hH)(t.id)), {
       step: false,
@@ -166,7 +166,7 @@ function L(e) {
       }))
     }
   }, [t.id, m, s]);
-  let I = r.useMemo(() => (0, h.EB)(t, 135, false, true), [t]);
+  let N = r.useMemo(() => (0, h.EB)(t, 135, false, true), [t]);
   return (0, u.ZP)(() => {
     setTimeout(() => {
       m.current = true, n()
@@ -178,7 +178,7 @@ function L(e) {
       children: [(0, l.jsx)("div", {
         children: (0, l.jsx)("img", {
           className: b.guildImage,
-          src: I,
+          src: N,
           alt: ""
         })
       }), (0, l.jsxs)("div", {

@@ -1,7 +1,7 @@
 /** Chunk was on 58227 **/
 /** chunk id: 889369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => I
 }), require("./388685.js"), require("./642613.js");
 var l, r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -17,7 +17,7 @@ let m = false,
 function f() {
   m = false, g = null, null != (g = Chunk999382.Z.getGuildId()) && Chunk999382.Z.getSection() === Chunk981631.pNK.ONBOARDING && (h = new Set(Chunk45966.Z.getDefaultChannelIds(g)))
 }
-class I extends(l = Chunk442837.ZP.Store) {
+class N extends(l = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk999382.Z, Chunk45966.Z)
   }
@@ -36,13 +36,13 @@ class I extends(l = Chunk442837.ZP.Store) {
   get editedDefaultChannelIds() {
     return h
   }
-}(r = "displayName") in I ? Object.defineProperty(I, r, {
+}(r = "displayName") in N ? Object.defineProperty(N, r, {
   value: "GuildSettingsDefaultChannelsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : I[r] = "GuildSettingsDefaultChannelsStore";
-let p = new I(Chunk570140.Z, {
+}) : N[r] = "GuildSettingsDefaultChannelsStore";
+let I = new N(Chunk570140.Z, {
   GUILD_SETTINGS_INIT: f,
   GUILD_SETTINGS_SET_SECTION: f,
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: f,

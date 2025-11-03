@@ -63,7 +63,7 @@ function _() {
   })
 }
 
-function C(e) {
+function O(e) {
   var t;
   let {
     channelId: n
@@ -81,11 +81,11 @@ function C(e) {
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     value: t
   } = e;
-  return null != t ? (0, r.jsx)(C, {
+  return null != t ? (0, r.jsx)(O, {
     channelId: t
   }) : (0, r.jsx)(_, {})
 }
@@ -99,10 +99,10 @@ function y(e) {
     omitChannelIds: x,
     "aria-labelledby": v,
     onChange: _
-  } = e, C = b.intl.string(b.t.d7YJMK), y = (0, s.e7)([g.Z], () => g.Z.getCategories(l), [l]), E = (0, f.m7)(null != a ? a : h.lds), N = i.useMemo(() => {
+  } = e, O = b.intl.string(b.t.d7YJMK), y = (0, s.e7)([g.Z], () => g.Z.getCategories(l), [l]), N = (0, f.m7)(null != a ? a : h.lds), E = i.useMemo(() => {
     let e = [{
         value: null,
-        label: C
+        label: O
       }],
       t = false;
     for (let n of y._categories)
@@ -113,15 +113,15 @@ function y(e) {
         value: r.id,
         label: (0, c.F6)(r, p.default, m.Z)
       })));
-    return null == a || t || null == E || e.push({
+    return null == a || t || null == N || e.push({
       value: a,
-      label: E.name
+      label: N.name
     }), e
-  }, [C, a, E, y, x, d]);
+  }, [O, a, N, y, x, d]);
   return (0, r.jsx)(o.PhF, {
     label: t,
     placeholder: b.intl.string(b.t.r2ptsz),
-    options: N,
+    options: E,
     select: function(e) {
       null == e ? (0, o.ZDy)(async () => {
         let {
@@ -164,10 +164,10 @@ function y(e) {
     },
     isSelected: e => null != a && j(e) === j(a),
     serialize: j,
-    renderOptionLabel: O,
+    renderOptionLabel: C,
     renderOptionValue: e => {
       let [t] = e;
-      return O(t)
+      return C(t)
     },
     "aria-labelledby": v
   })

@@ -105,12 +105,12 @@ function H(e) {
   })
 }
 
-function W(e) {
+function z(e) {
   let {
     currentTier: t,
     availableSounds: n,
     guildId: i
-  } = e, l = N.Z.getGuild(i), a = null != l ? (0, P.nL)(l) : 0;
+  } = e, l = E.Z.getGuild(i), a = null != l ? (0, P.nL)(l) : 0;
   return 0 === t ? (0, r.jsx)(r.Fragment, {
     children: k.intl.format(k.t["7E9Hdz"], {
       slots: n,
@@ -142,7 +142,7 @@ function W(e) {
     })]
   })
 }
-let z = e => {
+let W = e => {
     var {
       renderPopoutBody: t,
       renderPopoutChildren: n,
@@ -185,7 +185,7 @@ let z = e => {
   },
   V = () => {
     let e = Chunk647438.useRef(null);
-    return (0, Chunk951288.jsx)(z, {
+    return (0, Chunk951288.jsx)(W, {
       renderPopoutBody: () => (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
@@ -216,14 +216,14 @@ function K(e) {
   i.useEffect(() => {
     (0, v.w)()
   }, []);
-  let p = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, C.Z)(t.soundId)), e), {}), [l]),
+  let p = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, O.Z)(t.soundId)), e), {}), [l]),
     h = 0 === l.length && !a;
 
   function b(e) {
     var t;
     null == (t = o.current) || t.pause();
     let n = p[e.soundId];
-    null != n && (o.current = n, n.currentTime = 0, n.volume = (0, O.Z)(e.volume), n.play())
+    null != n && (o.current = n, n.currentTime = 0, n.volume = (0, C.Z)(e.volume), n.play())
   }
   if (i.useEffect(() => () => {
       var e;
@@ -275,7 +275,7 @@ function K(e) {
         className: G.tableTitle,
         variant: "heading-md/bold",
         color: "header-primary",
-        children: (0, r.jsx)(W, {
+        children: (0, r.jsx)(z, {
           guildId: t.id,
           currentTier: u,
           availableSounds: m
@@ -320,10 +320,10 @@ function Y(e) {
     emojiId: x,
     emojiName: _
   } = t, {
-    analyticsLocations: C
-  } = (0, b.ZP)(), O = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
-    canManageGuildExpression: N
-  } = (0, j.XJ)(o), S = i.useMemo(() => N(t), [t, N]), P = null != x || null != _, [w, R] = i.useState(false), D = (0, y.z)(t, o.id);
+    analyticsLocations: O
+  } = (0, b.ZP)(), C = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
+    canManageGuildExpression: E
+  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != x || null != _, [w, R] = i.useState(false), D = (0, y.z)(t, o.id);
   async function A() {
     if (!w) {
       R(true);
@@ -335,19 +335,19 @@ function Y(e) {
     }
   }
   i.useEffect(() => {
-    null == O && e();
+    null == C && e();
     async function e() {
       await (0, m.PR)(h)
     }
-  }, [O, h]);
+  }, [C, h]);
   let L = i.useCallback(() => {
-      null != O && (0, E.openUserProfileModal)({
-        userId: O.id,
+      null != C && (0, N.openUserProfileModal)({
+        userId: C.id,
         guildId: o.id,
-        sourceAnalyticsLocations: C
+        sourceAnalyticsLocations: O
       })
-    }, [O, o.id, C]),
-    B = Z.ZP.useUserTag(O);
+    }, [C, o.id, O]),
+    B = Z.ZP.useUserTag(C);
   return (0, r.jsxs)("div", {
     className: a()(G.row, {
       [G.active]: l
@@ -375,14 +375,14 @@ function Y(e) {
           className: G.soundPreviewIcon
         })]
       })
-    }), null != O && (0, r.jsxs)(g.P3F, {
+    }), null != C && (0, r.jsxs)(g.P3F, {
       className: G.uploader,
       onClick: L,
       children: [(0, r.jsx)(g.qEK, {
         "aria-label": B,
         size: g.EFr.SIZE_24,
         className: G.uploaderAvatar,
-        src: (0, T.ov)(O, false, 24)
+        src: (0, T.ov)(C, false, 24)
       }), (0, r.jsx)(g.Text, {
         variant: "text-sm/normal",
         lineClamp: 1,

@@ -2,7 +2,7 @@
 /** chunk id: 213956, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,17 +25,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824804 = require("./824804.js");
 
-function O() {
+function C() {
   let e, t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildId()),
     n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)),
-    O = (0, Chunk442837.e7)([Chunk392885.Z], () => Chunk392885.Z.getCurrentPage());
+    C = (0, Chunk442837.e7)([Chunk392885.Z], () => Chunk392885.Z.getCurrentPage());
   if (Chunk647438.useEffect(() => {
       (0, Chunk266454.Q3)(Chunk704215.z.COMMUNITY_GUILD_SETTINGS_SAFETY, {
         dismissAction: Chunk921944.L.AUTO
       })
     }, []), null == require) return null;
   let y = (0, Chunk598622.Q)(require);
-  switch (O) {
+  switch (C) {
     case Chunk740903.u.OVERVIEW:
       e = (0, Chunk951288.jsx)(Chunk464610.Z, {
         guild: require
@@ -65,7 +65,7 @@ function O() {
       })
   }
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [O !== Chunk740903.u.OVERVIEW && (0, Chunk951288.jsxs)(Chunk755721.zx, {
+    children: [C !== Chunk740903.u.OVERVIEW && (0, Chunk951288.jsxs)(Chunk755721.zx, {
       className: Chunk824804.back,
       innerClassName: Chunk824804.backButton,
       look: Chunk755721.zx.Looks.BLANK,

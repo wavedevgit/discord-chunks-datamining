@@ -2,7 +2,7 @@
 /** chunk id: 45966, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => G
+  Z: () => B
 }), require("./539854.js"), require("./472816.js"), require("./794429.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -98,22 +98,24 @@ function C(e) {
     onboardingPromptsSeen: o,
     onboardingResponsesSeen: s,
     mode: l,
-    belowRequirements: c
+    belowRequirements: c,
+    connections: u
   } = e;
   v = false;
-  let u = _.ZP.getOnboardingStatus(t) === _.uX.READY,
-    d = A(n, o, s);
+  let d = _.ZP.getOnboardingStatus(t) === _.uX.READY,
+    p = A(n, o, s);
   b[t] = {
     enabled: i,
     mode: l,
     belowRequirements: c,
-    prompts: d,
-    onboardingPrompts: d.filter(e => e.inOnboarding),
+    prompts: p,
+    onboardingPrompts: p.filter(e => e.inOnboarding),
     defaultChannelIds: r.filter(e => (0, f.s)(t, e)),
-    responses: u ? [] : a,
+    responses: d ? [] : a,
     onboardingPromptsSeen: o,
-    onboardingResponsesSeen: s
-  }, u || w(t, a), O[t] = Date.now()
+    onboardingResponsesSeen: s,
+    connections: null != u ? u : []
+  }, d || w(t, a), O[t] = Date.now()
 }
 
 function N() {
@@ -187,28 +189,39 @@ function x(e) {
 function L(e) {
   let {
     guildId: t,
+    connections: n
+  } = e;
+  if (null == b[t]) returnfalse;
+  b[t] = E(m({}, b[t]), {
+    connections: n
+  })
+}
+
+function M(e) {
+  let {
+    guildId: t,
     mode: n
   } = e, r = b[t];
   null != r && (r.mode = n)
 }
-let M = [],
-  j = [],
-  k = [];
-class U extends(r = Chunk442837.ZP.Store) {
+let j = [],
+  k = [],
+  U = [];
+class G extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk819553.ZP, Chunk160404.Z)
   }
   getOnboardingPromptsForOnboarding(e) {
     var t, n;
-    return null != (n = null == (t = b[e]) ? true : t.onboardingPrompts) ? n : M
+    return null != (n = null == (t = b[e]) ? true : t.onboardingPrompts) ? n : j
   }
   getOnboardingPrompts(e) {
     var t, n;
-    return null != (n = null == (t = b[e]) ? true : t.prompts) ? n : M
+    return null != (n = null == (t = b[e]) ? true : t.prompts) ? n : j
   }
   getOnboardingResponses(e) {
     var t, n, r;
-    return l.Z.isFullServerPreview(e) ? Array.from(null != (n = l.Z.getOnboardingResponses(e)) ? n : j) : null != (r = null == (t = b[e]) ? true : t.responses) ? r : j
+    return l.Z.isFullServerPreview(e) ? Array.from(null != (n = l.Z.getOnboardingResponses(e)) ? n : k) : null != (r = null == (t = b[e]) ? true : t.responses) ? r : k
   }
   getSelectedOptions(e) {
     let t = this.getOnboardingResponses(e);
@@ -216,18 +229,18 @@ class U extends(r = Chunk442837.ZP.Store) {
   }
   getOnboardingResponsesForPrompt(e, t) {
     let n = b[e];
-    if (null == n) return j;
+    if (null == n) return k;
     let r = n.prompts.find(e => e.id === t);
-    return null == r ? j : a().intersection(r.options.map(e => e.id), this.getOnboardingResponses(e))
+    return null == r ? k : a().intersection(r.options.map(e => e.id), this.getOnboardingResponses(e))
   }
   getEnabledOnboardingPrompts(e) {
     var t, n;
     let r = b[e];
-    return l.Z.isFullServerPreview(e) ? null != (t = null == r ? true : r.prompts) ? t : M : null != r && r.enabled && null != (n = r.prompts) ? n : M
+    return l.Z.isFullServerPreview(e) ? null != (t = null == r ? true : r.prompts) ? t : j : null != r && r.enabled && null != (n = r.prompts) ? n : j
   }
   getDefaultChannelIds(e) {
     var t, n;
-    return null != (n = null == (t = b[e]) ? true : t.defaultChannelIds) ? n : k
+    return null != (n = null == (t = b[e]) ? true : t.defaultChannelIds) ? n : U
   }
   getEnabled(e) {
     var t, n;
@@ -264,9 +277,13 @@ class U extends(r = Chunk442837.ZP.Store) {
     var t;
     return null != e && (null == (t = b[e]) ? true : t.mode) === p.Un.ONBOARDING_ADVANCED
   }
+  getConnections(e) {
+    var t, n;
+    return null != (n = null == (t = b[e]) ? true : t.connections) ? n : []
+  }
 }
-h(U, "displayName", "GuildOnboardingPromptsStore");
-let G = new U(Chunk570140.Z, {
+h(G, "displayName", "GuildOnboardingPromptsStore");
+let B = new G(Chunk570140.Z, {
   CONNECTION_OPEN: T,
   GUILD_ONBOARDING_PROMPTS_FETCH_START: I,
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: C,
@@ -276,5 +293,6 @@ let G = new U(Chunk570140.Z, {
   GUILD_ONBOARDING_PROMPTS_LOCAL_UPDATE: R,
   GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_SUCCESS: R,
   GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS: x,
-  GUILD_SETTINGS_ONBOARDING_SET_MODE: L
+  GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_SUCCESS: L,
+  GUILD_SETTINGS_ONBOARDING_SET_MODE: M
 })

@@ -2,7 +2,7 @@
 /** chunk id: 959508, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,19 +23,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk814939 = require("./814939.js");
-let C = {
+let O = {
   optionErrors: []
 };
 
-function O(e) {
+function C(e) {
   var t;
   let {
     guild: n,
     prompt: l,
     disableAutofocus: u,
     promptIndex: x,
-    dragIndex: O,
-    includeCount: N,
+    dragIndex: C,
+    includeCount: E,
     singleColumn: I,
     onPromptDragComplete: S,
     onPromptDragStart: T,
@@ -47,22 +47,22 @@ function O(e) {
     setIsDraggable: A
   } = (0, d.Z)({
     type: "ONBOARDING_PROMPT_CARD",
-    index: O,
+    index: C,
     optionId: l.id,
     onDragStart: T,
     onDragComplete: S,
     onDragReset: P
   }), L = (0, s.cj)([b.Z], () => {
     var e;
-    return null != (e = b.Z.errors[x]) ? e : C
-  }), [k, G] = i.useState(false), [M, U] = i.useState(false), B = null != (t = L.options) ? t : L.optionErrors.filter(p.lm)[0], F = L.config, H = l.options.length >= j.fY, W = (0, g.kl)(n.id, Array.from(w), [l]).length - w.size, z = i.useRef(null), V = i.useRef(x);
+    return null != (e = b.Z.errors[x]) ? e : O
+  }), [k, G] = i.useState(false), [M, U] = i.useState(false), B = null != (t = L.options) ? t : L.optionErrors.filter(p.lm)[0], F = L.config, H = l.options.length >= j.fY, z = (0, g.kl)(n.id, Array.from(w), [l]).length - w.size, W = i.useRef(null), V = i.useRef(x);
   return (i.useEffect(() => {
     V.current = x
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
       if (0 === V.current && !u) {
         var e;
-        null == (e = z.current) || e.focus()
+        null == (e = W.current) || e.focus()
       }
     }, 0)
   }, [u]), k) ? (0, r.jsx)(c.tEY, {
@@ -149,7 +149,7 @@ function O(e) {
           label: v.intl.formatToPlainString(v.t.yjS3zs, {
             index: x + 1
           }),
-          inputRef: z,
+          inputRef: W,
           value: l.title,
           onChange: e => (0, h.Kk)(n, l.id, {
             title: e
@@ -169,7 +169,7 @@ function O(e) {
             count: l.options.length,
             total: j.qm
           }),
-          children: (0, r.jsx)(E, {
+          children: (0, r.jsx)(N, {
             guild: n,
             prompt: l,
             promptIndex: x,
@@ -193,8 +193,8 @@ function O(e) {
               required: e
             }),
             disabled: !l.inOnboarding,
-            label: N ? v.intl.formatToPlainString(v.t["0re8T6"], {
-              count: W
+            label: E ? v.intl.formatToPlainString(v.t["0re8T6"], {
+              count: z
             }) : v.intl.string(v.t.Ur8Vrt)
           }) : null]
         }), (0, r.jsx)(c.P3F, {
@@ -260,7 +260,7 @@ function y(e) {
   })
 }
 
-function E(e) {
+function N(e) {
   let {
     guild: t,
     prompt: n,

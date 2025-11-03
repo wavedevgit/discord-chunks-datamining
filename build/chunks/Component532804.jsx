@@ -25,17 +25,17 @@ function f(e) {
     options: b,
     className: x,
     onChange: j
-  } = e, [v, _] = i.useState(h), [C, O] = i.useState(false), [y, E] = i.useState(false), N = i.useRef(null);
+  } = e, [v, _] = i.useState(h), [O, C] = i.useState(false), [y, N] = i.useState(false), E = i.useRef(null);
   i.useEffect(() => {
     _(h)
   }, [h]), i.useEffect(() => () => {
-    clearTimeout(N.current)
+    clearTimeout(E.current)
   }, []);
   let I = b.find(e => e.value === v);
   return (0, r.jsx)(u.Z, {
-    title: C ? f : null != (t = null == I ? true : I.title) ? t : f,
-    description: C ? "(".concat(null != (n = null == I ? true : I.title) ? n : m.intl.string(m.t.PoWNfe), ")") : null != (l = null == I ? true : I.description) ? l : "",
-    highlightColor: C ? d.q.NONE : null == I ? true : I.highlightColor,
+    title: O ? f : null != (t = null == I ? true : I.title) ? t : f,
+    description: O ? "(".concat(null != (n = null == I ? true : I.title) ? n : m.intl.string(m.t.PoWNfe), ")") : null != (l = null == I ? true : I.description) ? l : "",
+    highlightColor: O ? d.q.NONE : null == I ? true : I.highlightColor,
     action: (0, r.jsx)(s.zx, {
       look: s.zx.Looks.LINK,
       size: s.zx.Sizes.MIN,
@@ -56,8 +56,8 @@ function f(e) {
         className: p.radioItem
       }),
       onClick: () => {
-        e.disabled || e.value === v || (E(true), null == j || j(e), _(e.value), N.current = setTimeout(() => {
-          E(false), O(false)
+        e.disabled || e.value === v || (N(true), null == j || j(e), _(e.value), E.current = setTimeout(() => {
+          N(false), C(false)
         }, 1e3))
       },
       disabled: e.disabled

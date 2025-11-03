@@ -82,7 +82,7 @@ function T(e) {
     text: f ? y.intl.string(y.t["IQ/6Sg"]) : null,
     position: "top",
     children: (0, r.jsx)("div", {
-      className: E.clearButtonWrapper,
+      className: N.clearButtonWrapper,
       children: (0, r.jsx)(d.Avr, {
         variant: "primary",
         textVariant: "text-sm/semibold",
@@ -102,9 +102,9 @@ function P(e) {
     locked: l
   } = e;
   if (0 === i.length) return (0, r.jsxs)("div", {
-    className: E.noResultsContainer,
+    className: N.noResultsContainer,
     children: [(0, r.jsx)(x.Z, {
-      className: E.noResults
+      className: N.noResults
     }), (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       children: y.intl.string(y.t.DEBGqA)
@@ -119,13 +119,13 @@ function P(e) {
     }) && y.intl.string(y.t["K+D+GF"]) : y.intl.string(y.t.nOtPMM)
   }
   return (0, r.jsxs)("div", {
-    className: E.permissionsWrapper,
+    className: N.permissionsWrapper,
     children: [(0, r.jsx)(T, {
       guild: t,
       role: n,
       locked: l
     }), i.map((e, t) => (0, r.jsx)(u.Z, {
-      className: E.permissionsForm,
+      className: N.permissionsForm,
       spec: e,
       permissions: n.permissions,
       locked: l,
@@ -158,34 +158,34 @@ function w(e) {
     handleScroll: x
   } = (0, v.V)(), T = i.useRef(false);
   return i.useEffect(() => {
-    T.current || "" === c.trimStart() || (p.default.track(O.rMx.SEARCH_STARTED, {
+    T.current || "" === c.trimStart() || (p.default.track(C.rMx.SEARCH_STARTED, {
       search_type: "Permissions"
     }), T.current = true)
   }, [c]), (0, r.jsx)(d.yWw, {
-    className: E.scroller,
+    className: N.scroller,
     style: {
       scrollPaddingTop: m
     },
     onScroll: x,
     children: (0, r.jsxs)("div", {
-      className: N.contentWidth,
+      className: E.contentWidth,
       children: [(0, r.jsxs)("div", {
-        className: a()(N.header, N.stickyHeader, {
-          [N.stickyHeaderElevated]: !b
+        className: a()(E.header, E.stickyHeader, {
+          [E.stickyHeaderElevated]: !b
         }),
         ref: h,
         children: [(0, r.jsx)(v.Z, {
           guild: t,
           role: n,
-          selectedSection: C.ZI.PERMISSIONS,
+          selectedSection: O.ZI.PERMISSIONS,
           setSelectedSection: s
         }), (0, r.jsx)("div", {
-          className: E.noticeContainer,
+          className: N.noticeContainer,
           children: (0, r.jsx)(_.Z, {
             role: n
           })
         }), (0, r.jsx)("div", {
-          className: E.searchContainer,
+          className: N.searchContainer,
           children: (0, r.jsx)(d.E1j, {
             query: c,
             onChange: u,

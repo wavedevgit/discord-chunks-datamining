@@ -29,7 +29,7 @@ let m = function(e) {
     title: j,
     actionsLocation: v,
     fieldStyle: _
-  } = e, C = n.values, O = C.slice(0, 1), y = C.length - O.length;
+  } = e, O = n.values, C = O.slice(0, 1), y = O.length - C.length;
   return (0, r.jsxs)(d.Z, {
     field: n,
     index: i,
@@ -43,7 +43,7 @@ let m = function(e) {
     actionsLocation: v,
     fieldStyle: _,
     children: [(0, r.jsx)(c.EK, {
-      terms: O,
+      terms: C,
       channelId: t
     }), 0 !== y && (0, r.jsxs)(s.P3F, {
       className: l()(g.fieldFooterContainer, g.clickable),

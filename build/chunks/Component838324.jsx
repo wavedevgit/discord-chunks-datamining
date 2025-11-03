@@ -21,17 +21,17 @@ function p(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, p = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), f = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [h, b] = (0, o.VF)(t, f), [x, j] = (0, d.OA)(t, [...f]), v = p ? j.length : b.length, _ = p ? x.length : h.length, C = v < u.md, O = _ >= u.X, y = j.length - b.length, E = (0, r.jsx)(a.owK, {
+  } = e, p = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), f = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [h, b] = (0, o.VF)(t, f), [x, j] = (0, d.OA)(t, [...f]), v = p ? j.length : b.length, _ = p ? x.length : h.length, O = v < u.md, C = _ >= u.X, y = j.length - b.length, N = (0, r.jsx)(a.owK, {
     size: "sm",
     color: l.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css,
     className: m.icon
-  }), N = (0, r.jsx)(a.k$p, {
+  }), E = (0, r.jsx)(a.k$p, {
     size: "sm",
     className: m.icon,
     color: l.Z.colors.WHITE.css,
     secondaryColor: l.Z.colors.BACKGROUND_ACCENT.css
-  }), I = [Math.min(u.X, _) / u.md * 100, Math.min(u.md, v) / u.md * 100], S = !C && O ? [l.Z.colors.TEXT_FEEDBACK_POSITIVE.css, l.Z.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css, l.Z.colors.TEXT_MUTED.css];
+  }), I = [Math.min(u.X, _) / u.md * 100, Math.min(u.md, v) / u.md * 100], S = !O && C ? [l.Z.colors.TEXT_FEEDBACK_POSITIVE.css, l.Z.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css, l.Z.colors.TEXT_MUTED.css];
   return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsxs)("div", {
@@ -55,7 +55,7 @@ function p(e) {
       size: a.yGy.Sizes.XSMALL
     }), (0, r.jsxs)("div", {
       className: m.requiredItem,
-      children: [C ? N : E, (0, r.jsx)(a.Text, {
+      children: [O ? E : N, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: g.intl.format(g.t.k0COZY, {
@@ -64,7 +64,7 @@ function p(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: m.requiredItem,
-      children: [O ? E : N, (0, r.jsx)(a.Text, {
+      children: [C ? N : E, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: g.intl.format(g.t.PwXgSy, {

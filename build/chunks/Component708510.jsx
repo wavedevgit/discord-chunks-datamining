@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk912231 = require("./912231.js");
 
-function N(e) {
+function E(e) {
   let {
     pendingState: t
   } = e, n = i.useRef(false), l = i.useCallback(async e => {
@@ -39,16 +39,16 @@ function N(e) {
     }
   }, [n]);
   switch (t.joinType) {
-    case C.A.INVITE:
+    case O.A.INVITE:
       return (0, r.jsx)(j.A, {
         requireTerms: t.requireTerms,
         rules: t.termRules
       });
-    case C.A.APPLY:
+    case O.A.APPLY:
       return (0, r.jsx)(b.r, {
         pendingFields: t.pendingVerificationFields
       });
-    case C.A.DISCOVERABLE:
+    case O.A.DISCOVERABLE:
       return (0, r.jsx)(x.c, {
         fetchDiscoveryData: l,
         settingsView: t.settingsView,
@@ -75,11 +75,11 @@ function I(e) {
     return null == (e = v.Z.pendingState) ? true : e.isAgeRestricted
   }), c = i.useCallback(e => {
     h.Z.setIsAgeRestricted(t, e)
-  }, [t]), g = n === O.V_K.AGE_RESTRICTED && s !== O.V_K.AGE_RESTRICTED;
+  }, [t]), g = n === C.V_K.AGE_RESTRICTED && s !== C.V_K.AGE_RESTRICTED;
   return (0, r.jsx)(a.rsf, {
     label: y.intl.string(y.t.N9xEJF),
     description: y.intl.format(y.t.iyQQ62, {
-      helpArticleLink: u.Z.getArticleURL(O.BhN.NSFW_SERVER_AGE_RESTRICTION)
+      helpArticleLink: u.Z.getArticleURL(C.BhN.NSFW_SERVER_AGE_RESTRICTION)
     }),
     checked: o,
     onChange: c,
@@ -98,7 +98,7 @@ function S(e) {
     children: [(0, r.jsx)(I, {
       guildId: t
     }), (0, r.jsx)("div", {
-      className: E.divider
+      className: N.divider
     })]
   })
 }
@@ -131,7 +131,7 @@ function T() {
     }), null != module && (0, Chunk951288.jsx)(S, {
       guildId: module.id
     }), (0, Chunk951288.jsx)("div", {
-      children: (0, Chunk951288.jsx)(N, {
+      children: (0, Chunk951288.jsx)(E, {
         pendingState: exports
       })
     })]
