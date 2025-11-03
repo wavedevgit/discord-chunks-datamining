@@ -41,7 +41,8 @@ let b = e => {
         })]
       }), (0, r.jsx)(o.Button, {
         onClick: s,
-        text: i
+        text: i,
+        fullWidth: true
       })]
     })
   })
