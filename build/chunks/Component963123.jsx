@@ -597,7 +597,7 @@ function X(e) {
         }) : (0, r.jsx)(p.fpf, {
           className: Y.playPausePopIcon
         })
-      }, eb), eu && null != tr && (0, r.jsx)(s.animated.div, {
+      }, eb), eu && null != tr && !t6 && (0, r.jsx)(s.animated.div, {
         className: Y.captionContainer,
         ref: t8,
         style: {
