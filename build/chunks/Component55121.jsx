@@ -1,7 +1,7 @@
 /** Chunk was on 88742 **/
 /** chunk id: 55121, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  M: () => x
+  M: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,14 +14,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk317322 = require("./317322.js");
 
-function x(t) {
+function f(t) {
   let {
     sku: n,
     application: e,
     primaryCTAButtonProps: a,
     transitionState: s,
     onClose: l,
-    hasAlreadyLinked: x,
+    hasAlreadyLinked: f,
     canStartAuthorization: p,
     bodyText: m,
     title: g
@@ -39,16 +39,16 @@ function x(t) {
           variant: "text-md/normal",
           className: d.modalBodyText,
           children: m
-        }), (0, i.jsx)(f, {
-          isConnected: x,
+        }), (0, i.jsx)(x, {
+          isConnected: f,
           application: e
         })]
-      }), !p && !x && (0, i.jsx)(r.Text, {
+      }), !p && !f && (0, i.jsx)(r.Text, {
         variant: "text-md/normal",
         className: d.cannotLinkAccountWarning,
         color: "text-feedback-warning",
         children: u.intl.string(u.t.GDL8wb)
-      }), !x && (0, i.jsx)("div", {
+      }), !f && (0, i.jsx)("div", {
         className: d.expirationWarningContainer,
         children: (0, i.jsx)(r.Text, {
           variant: "text-xs/normal",
@@ -65,7 +65,7 @@ function x(t) {
   })
 }
 
-function f(t) {
+function x(t) {
   let {
     isConnected: n,
     application: e
