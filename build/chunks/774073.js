@@ -11,7 +11,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk683076 = require("./683076.js"),
   Chunk442837 = require("./442837.js"),
   Chunk812206 = require("./812206.js"),
-  Chunk835473 = require("./835473.js"),
+  Chunk565183 = require("./565183.js"),
   Chunk669764 = require("./669764.js"),
   Chunk210753 = require("./210753.js"),
   Chunk626135 = require("./626135.js"),
@@ -44,7 +44,7 @@ let m = function(e, t) {
     } = e, f = r.useRef(false), _ = (0, p.xG)(t, i);
     (0, d.M)(_ && "" !== n ? n : null);
     let h = (0, s.e7)([u.Z], () => u.Z.getGame(n)),
-      b = (0, c.q)(n),
+      b = (0, c.Z)(n),
       y = r.useMemo(() => null != h && null != b ? E(h, b) : null, [b, h]);
     return r.useEffect(() => {
       !f.current && _ && l && false === u.Z.isFetching(n) && null != h && null != y && (a()(null != o, "Cannot track a Game Profile Entry Point Impressions without a source."), m(y, n, g(h), o), f.current = true)

@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => _
 });
 var Chunk647438 = require("./647438.js"),
-  Chunk835473 = require("./835473.js"),
+  Chunk565183 = require("./565183.js"),
   Chunk817788 = require("./817788.js"),
   Chunk509003 = require("./509003.js"),
   Chunk492423 = require("./492423.jsx"),
@@ -55,7 +55,7 @@ function _(e) {
     onOpened: t
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, {
     applicationId: n
-  } = e, c = (0, i.q)(n), d = r.useMemo(() => null == c ? n : (0, o.bP)(c) ? a.eB : n, [c, n]), _ = (0, l.ZP)(f(u({}, e), {
+  } = e, c = (0, i.Z)(n), d = r.useMemo(() => null == c ? n : (0, o.bP)(c) ? a.eB : n, [c, n]), _ = (0, l.ZP)(f(u({}, e), {
     applicationId: d
   }));
   return _.shouldOpenGameProfile && null != d ? n => {
