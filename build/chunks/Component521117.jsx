@@ -2,12 +2,12 @@
 /** chunk id: 521117, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk273352 = require("./273352.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk923928 = require("./923928.js"),
   Chunk503856 = require("./503856.js"),
@@ -52,41 +52,73 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = () => {
-    Chunk923928.Z.clearSuppressWarning()
-  },
-  g = () => {
-    Chunk923928.Z.clearSuppressWarning(true)
-  },
-  E = () => {
-    let e = Chunk647438.useRef(null);
 
-    function t() {
-      null !== module.current && ((0, Chunk481060.Mr3)(module.current), module.current = null)
-    }
-    let [l, f] = (0, Chunk442837.Wu)([Chunk209590.Z], () => [Chunk209590.Z.shouldShowWarning(), Chunk209590.Z.isAFKChannel()], []), p = Chunk647438.useCallback(() => {
-      let t, n;
-      f ? (t = Chunk388032.intl.string(Chunk388032.t.Y40Jke), n = Chunk388032.intl.string(Chunk388032.t["5J4yGc"])) : (t = Chunk388032.intl.string(Chunk388032.t.FJSZVM), n = Chunk388032.intl.string(Chunk388032.t.etJjgW)), module.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(o.default, _({
-        title: t,
-        body: n,
-        onConfirm: m,
-        confirmText: d.intl.string(d.t.BddRzS),
-        secondaryConfirmText: d.intl.string(d.t["5E9SB9"]),
-        onConfirmSecondary: g
-      }, e)))
-    }, [f]), E = Chunk647438.useCallback(() => {
-      (0, Chunk481060.ZDy)(async () => {
-        let {
-          default: e
-        } = await require.e("41281").then(require.bind(require, 669732));
-        return t => (0, r.jsx)(e, h(_({}, t), {
-          showHideSuppressWarning: true
-        }))
-      }).then(t => {
-        null != t && (e.current = t)
-      })
-    }, []);
-    return Chunk647438.useEffect(() => (Chunk923928 && (0, Chunk503856.p)() ? E() : Chunk923928 ? p() : exports(), () => {
-      exports()
-    }), [Chunk923928, p, E]), null
+function m(e, t) {
+  if (null == e) return {};
+  var n, r, i = g(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
+  return i
+}
+
+function g(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+
+function E(e) {
+  let t, n;
+  var {
+    afk: a
+  } = e, s = m(e, ["afk"]);
+  let [c, u] = i.useState(false);
+  return a ? (t = d.intl.string(d.t.Y40Jke), n = d.intl.string(d.t["5J4yGc"])) : (t = d.intl.string(d.t.FJSZVM), n = d.intl.string(d.t.etJjgW)), (0, r.jsx)(o.u_l, _({
+    size: "md",
+    title: t,
+    subtitle: n,
+    actions: [{
+      text: d.intl.string(d.t.BddRzS),
+      onClick: () => {
+        s.onClose(), l.Z.clearSuppressWarning(c)
+      },
+      variant: "primary"
+    }],
+    actionBarInput: (0, r.jsx)(o.XZJ, {
+      checked: c,
+      onChange: e => u(e),
+      label: d.intl.string(d.t["5E9SB9"]),
+      labelType: "secondary"
+    })
+  }, s))
+}
+let b = () => {
+  let e = Chunk647438.useRef(null);
+
+  function t() {
+    null !== module.current && ((0, Chunk481060.Mr3)(module.current), module.current = null)
+  }
+  let [o, l] = (0, Chunk442837.Wu)([Chunk209590.Z], () => [Chunk209590.Z.shouldShowWarning(), Chunk209590.Z.isAFKChannel()], []), d = Chunk647438.useCallback(() => {
+    module.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(E, _({
+      afk: l
+    }, e)))
+  }, [Chunk923928]), f = Chunk647438.useCallback(() => {
+    (0, Chunk481060.ZDy)(async () => {
+      let {
+        default: e
+      } = await require.e("41281").then(require.bind(require, 669732));
+      return t => (0, r.jsx)(e, h(_({}, t), {
+        showHideSuppressWarning: true
+      }))
+    }).then(t => {
+      null != t && (e.current = t)
+    })
+  }, []);
+  return Chunk647438.useEffect(() => (Chunk159691 && (0, Chunk503856.p)() ? f() : Chunk159691 ? Chunk388032() : exports(), () => {
+    exports()
+  }), [Chunk159691, Chunk388032, f]), null
+}

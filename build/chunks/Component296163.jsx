@@ -2,12 +2,12 @@
 /** chunk id: 296163, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk273352 = require("./273352.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
   Chunk923928 = require("./923928.js"),
@@ -37,27 +37,35 @@ function p(e) {
   return e
 }
 
-function h() {
+function h(e) {
+  return (0, r.jsx)(o.u_l, p({
+    size: "md",
+    title: f.intl.string(f.t.NYklhr),
+    subtitle: f.intl.string(f.t.EJ26Oh),
+    actions: [{
+      text: f.intl.string(f.t.UYW0dz),
+      onClick: () => {
+        e.onClose(), c.Z.clearVADWarning()
+      },
+      variant: "secondary"
+    }, {
+      text: f.intl.string(f.t.E3Y7NH),
+      onClick: () => {
+        l.Z.setMode(d.pM4.PUSH_TO_TALK), e.onClose(), c.Z.clearVADWarning()
+      },
+      variant: "primary"
+    }]
+  }, e))
+}
+
+function m() {
   let e = (0, Chunk442837.e7)([Chunk269647.Z], () => Chunk269647.Z.shouldShowWarning(), []),
     t = Chunk647438.useRef(null);
 
   function n() {
     null !== exports.current && ((0, Chunk481060.Mr3)(exports.current), exports.current = null)
   }
-
-  function _() {
-    Chunk923928.Z.clearVADWarning()
-  }
-  return Chunk647438.useEffect(() => (module ? exports.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(o.default, p({
-    title: f.intl.string(f.t.NYklhr),
-    body: f.intl.string(f.t.EJ26Oh),
-    onCancel: _,
-    cancelText: f.intl.string(f.t.UYW0dz),
-    confirmText: f.intl.string(f.t.E3Y7NH),
-    onConfirm: () => {
-      l.Z.setMode(d.pM4.PUSH_TO_TALK), _()
-    }
-  }, e))) : require(), () => {
+  return Chunk647438.useEffect(() => (module ? exports.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(h, p({}, e))) : require(), () => {
     require()
   }), [module]), null
 }
