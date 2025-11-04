@@ -1,12 +1,12 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 65100 **/
 /** chunk id: 979696, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
-var r, Chunk442837 = require("./442837.js"),
+var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -14,32 +14,32 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let a = {
+let s = {
     toastsEnabledForChannel: {}
   },
-  s = a;
-class c extends(r = Chunk442837.ZP.PersistedStore) {
+  o = s;
+class c extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    s = null != e ? e : a
+    o = null != e ? e : s
   }
   getToastsEnabled(e) {
     var t;
-    return null == (t = s.toastsEnabledForChannel[e]) || t
+    return null == (t = o.toastsEnabledForChannel[e]) || t
   }
   getState() {
-    return s
+    return o
   }
 }
-o(c, "displayName", "CallChatToastsStore"), o(c, "persistKey", "CallChatToasts");
+a(c, "displayName", "CallChatToastsStore"), a(c, "persistKey", "CallChatToasts");
 let u = new c(Chunk570140.Z, {
   CALL_CHAT_TOASTS_SET_ENABLED: function(e) {
     let {
       channelId: t,
       toastsEnabled: n
     } = e;
-    s.toastsEnabledForChannel[t] = n
+    o.toastsEnabledForChannel[t] = n
   },
   LOGOUT: function() {
-    s.toastsEnabledForChannel = {}
+    o.toastsEnabledForChannel = {}
   }
 })

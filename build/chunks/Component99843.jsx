@@ -1,7 +1,7 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 65100 **/
 /** chunk id: 99843, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => _
+  j: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,102 +17,102 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk782196 = require("./782196.js");
-let b = e => {
+let v = e => {
     let {
       channel: t
     } = e;
     return (0, p.m$)({
       channelId: t.id
-    }) ? (0, r.jsx)(l.u, {
-      text: g.intl.string(g.t.QyZ4Td),
-      children: (0, r.jsx)(o.tQf, {
+    }) ? (0, i.jsx)(r.u, {
+      text: f.intl.string(f.t.QyZ4Td),
+      children: (0, i.jsx)(a.tQf, {
         size: "xs",
-        "aria-label": g.intl.string(g.t.VHXh8a),
-        color: o.TVs.colors.INTERACTIVE_NORMAL
+        "aria-label": f.intl.string(f.t.VHXh8a),
+        color: a.TVs.colors.INTERACTIVE_NORMAL
       })
     }) : null
   },
-  _ = Chunk647438.memo(function(e) {
+  b = Chunk647438.memo(function(e) {
     let {
       channel: t
-    } = e, i = t.id, p = (0, c.ZP)(t);
-    return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.u, {
+    } = e, l = t.id, p = (0, c.ZP)(t);
+    return (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsx)(r.u, {
         asContainer: true,
-        text: g.intl.string(g.t["5Q9+/L"]),
+        text: f.intl.string(f.t["5Q9+/L"]),
         position: "bottom",
-        children: (0, r.jsxs)(o.P3F, {
-          className: m.hoverableContainer,
+        children: (0, i.jsxs)(a.P3F, {
+          className: g.hoverableContainer,
           onClick: () => {
-            (0, d.B)(i, s.Z.HEADER_BAR)
+            (0, d.B)(l, o.Z.HEADER_BAR)
           },
-          onContextMenu: e => (0, a.jW)(e, () => Promise.all([n.e("79695"), n.e("25421"), n.e("38357")]).then(n.bind(n, 354741)).then(e => {
+          onContextMenu: e => (0, s.jW)(e, () => Promise.all([n.e("79695"), n.e("25421"), n.e("38357")]).then(n.bind(n, 354741)).then(e => {
             let {
               default: n
             } = e;
             return e => {
-              var i, l;
-              return (0, r.jsx)(n, (i = function(e) {
+              var l, r;
+              return (0, i.jsx)(n, (l = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                  "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    i = Object.keys(n);
+                  "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                     return Object.getOwnPropertyDescriptor(n, e).enumerable
-                  }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                      value: r,
+                  }))), i.forEach(function(t) {
+                    var i;
+                    i = n[t], t in e ? Object.defineProperty(e, t, {
+                      value: i,
                       enumerable: true,
                       configurable: true,
                       writable: true
-                    }) : e[t] = r
+                    }) : e[t] = i
                   })
                 }
                 return e
-              }({}, e), l = l = {
+              }({}, e), r = r = {
                 channel: t,
                 selected: true
-              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
-                  var r = Object.getOwnPropertySymbols(e);
-                  n.push.apply(n, r)
+                  var i = Object.getOwnPropertySymbols(e);
+                  n.push.apply(n, i)
                 }
                 return n
-              })(Object(l)).forEach(function(e) {
-                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-              }), i))
+              })(Object(r)).forEach(function(e) {
+                Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(r, e))
+              }), l))
             }
           }), {
             noBlurEvent: true
           }),
           onDoubleClick: e => e.stopPropagation(),
           onMouseEnter: () => {
-            h.default.track(f.rMx.GDM_EDIT_INTERACTED, {
+            h.default.track(m.rMx.GDM_EDIT_INTERACTED, {
               channel_id: t.id,
               action: "entry_point_hovered",
-              location: s.Z.HEADER_BAR
+              location: o.Z.HEADER_BAR
             })
           },
-          "aria-label": g.intl.string(g.t["5Q9+/L"]),
-          children: [(0, r.jsx)(u.Z, {
-            className: m.gdmIcon,
+          "aria-label": f.intl.string(f.t["5Q9+/L"]),
+          children: [(0, i.jsx)(u.Z, {
+            className: g.gdmIcon,
             "aria-hidden": true,
             channel: t,
-            size: o.EFr.SIZE_20,
-            facepileSizeOverride: o.EFr.SIZE_24,
+            size: a.EFr.SIZE_20,
+            facepileSizeOverride: a.EFr.SIZE_24,
             experimentLocation: "header_bar"
-          }), (0, r.jsx)(o.Text, {
+          }), (0, i.jsx)(a.Text, {
             variant: "text-md/medium",
             color: "header-primary",
             children: null != p ? p : ""
-          }), (0, r.jsx)(o.vdY, {
-            className: m.editIcon,
+          }), (0, i.jsx)(a.vdY, {
+            className: g.editIcon,
             size: "xs",
             color: "currentColor"
           })]
         })
-      }), (0, r.jsx)(b, {
+      }), (0, i.jsx)(v, {
         channel: t
       })]
     })

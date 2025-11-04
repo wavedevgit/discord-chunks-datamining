@@ -1,5 +1,5 @@
 /** Chunk was on 6310 **/
-/** chunk id: 706923, original params: e,n,t (module,exports,require) **/
+/** chunk id: 706923, original params: e,n,s (module,exports,require) **/
 require.d(exports, {
   default: () => f
 }), require("./388685.js");
@@ -19,29 +19,29 @@ var Chunk399606 = require("./399606.js"),
 function f(e) {
   let {
     channelId: n,
-    messageId: t,
+    messageId: s,
     transitionState: f,
     onClose: S
   } = e, h = (0, l.e7)([c.Z], () => c.Z.getChannel(n)), [C, F] = (0, u.Z)(n), m = null == h ? true : h.guild_id;
-  return (0, s.jsx)(i.ConfirmModal, {
+  return (0, t.jsx)(o.ConfirmModal, {
     header: g.intl.string(g.t.aIz1oV),
     confirmText: g.intl.string(g.t["cY+Oob"]),
     cancelText: g.intl.string(g.t["ETE/oC"]),
-    confirmButtonColor: o.zx.Colors.BRAND,
-    onConfirm: () => a.Z.crosspostMessage(n, t),
+    confirmButtonColor: i.zx.Colors.BRAND,
+    onConfirm: () => a.Z.crosspostMessage(n, s),
     transitionState: f,
     onClose: S,
-    children: (0, s.jsx)(i.Text, {
+    children: (0, t.jsx)(o.Text, {
       variant: "text-md/normal",
       className: _.spacing,
-      children: F ? (0, s.jsx)(i.$jN, {}) : null != C && null != C.guildsFollowing && C.guildsFollowing > 0 ? (0, s.jsxs)(s.Fragment, {
-        children: [(0, s.jsx)(i.Text, {
+      children: F ? (0, t.jsx)(o.$jN, {}) : null != C && null != C.guildsFollowing && C.guildsFollowing > 0 ? (0, t.jsxs)(t.Fragment, {
+        children: [(0, t.jsx)(o.Text, {
           className: _.spacing,
           variant: "text-sm/normal",
           children: g.intl.format(g.t.GCGrNP, {
             numGuildsFollowing: C.guildsFollowing
           })
-        }), (0, s.jsx)(i.Text, {
+        }), (0, t.jsx)(o.Text, {
           variant: "text-sm/normal",
           children: g.intl.format(g.t.IMhGZz, {
             onClick: () => {
