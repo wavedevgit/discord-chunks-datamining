@@ -12,8 +12,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk587158 = require("./587158.js"),
   Chunk286379 = require("./286379.js"),
   Chunk903772 = require("./903772.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk386506 = require("./386506.js"),
   Chunk304761 = require("./304761.js"),
   Chunk865427 = require("./865427.js"),
@@ -49,12 +49,12 @@ function A() {
       exports(false)
     }
   };
-  return (0, Chunk951288.jsx)(Chunk755721.zx, {
-    size: Chunk755721.Ph.LARGE,
+  return (0, Chunk951288.jsx)(Chunk793030.zxk, {
+    variant: "primary",
+    size: "md",
+    text: Chunk388032.intl.string(Chunk388032.t["/Nz9rY"]),
     onClick: require,
-    submitting: module,
-    className: Chunk365861.clearOverrideButton,
-    children: Chunk388032.intl.string(Chunk388032.t["/Nz9rY"])
+    loading: module
   })
 }
 let C = o().throttle(e => {
@@ -115,12 +115,12 @@ class N extends Chunk647438.PureComponent {
             children: Chunk388032.intl.string(Chunk388032.t.CvQlAH)
           })]
         }),
-        n = (0, Chunk951288.jsxs)("div", {
-          className: Chunk365861.buttons,
-          children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
-            size: Chunk755721.Ph.LARGE,
-            onClick: this._handleSubmitReport,
-            children: Chunk388032.intl.string(Chunk388032.t["+hivLW"])
+        n = (0, Chunk951288.jsxs)(Chunk793030.hE2, {
+          children: [(0, Chunk951288.jsx)(Chunk793030.zxk, {
+            variant: "primary",
+            size: "md",
+            text: Chunk388032.intl.string(Chunk388032.t["+hivLW"]),
+            onClick: this._handleSubmitReport
           }), (0, Chunk951288.jsx)(A, {})]
         });
       return (0, Chunk951288.jsx)(Chunk406128.Z, {

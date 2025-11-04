@@ -1,34 +1,39 @@
 /** Chunk was on 81014 **/
 /** chunk id: 211512, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => i
-});
+  I: () => a
+}), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk550964 = require("./550964.jsx");
 
-function i(e) {
+function a(e) {
   let {
     node: t
   } = e, {
     useLabel: n,
-    useTitle: i,
-    useSubtitle: a,
-    useVariant: c,
-    useDisabled: s,
-    onClick: u
-  } = t, d = i(), f = null == a ? true : a(), b = n(), p = null == c ? true : c(), y = null == s ? true : s();
-  return (0, r.jsx)(o.X, {
-    children: (0, r.jsx)(l.gNt, {
-      label: d,
-      description: f,
-      disabled: y,
+    useTitle: a,
+    useSubtitle: c,
+    useVariant: s,
+    useDisabled: u,
+    onClick: d
+  } = t, [f, b] = l.useState(false), p = l.useCallback(() => {
+    let e = d();
+    e instanceof Promise && (b(true), e.finally(() => b(false)))
+  }, [d]), y = a(), j = null == c ? true : c(), m = n(), v = null == s ? true : s(), g = null == u ? true : u();
+  return (0, r.jsx)(i.X, {
+    children: (0, r.jsx)(o.gNt, {
+      label: y,
+      description: j,
+      disabled: g,
       layout: "horizontal",
-      children: (0, r.jsx)(l.Button, {
-        onClick: u,
-        text: b,
-        variant: p,
-        disabled: y
+      children: (0, r.jsx)(o.Button, {
+        onClick: p,
+        text: m,
+        variant: v,
+        disabled: g,
+        loading: f
       })
     })
   })

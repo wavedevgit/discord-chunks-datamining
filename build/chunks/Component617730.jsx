@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk755721 = require("./755721.js"),
+var Chunk481060 = require("./481060.js"),
   Chunk973616 = require("./973616.js"),
   Chunk131704 = require("./131704.js"),
   Chunk598077 = require("./598077.js"),
@@ -95,11 +95,16 @@ function f(e) {
       showBigUserIcon: j
     })), (0, r.jsx)(c.UM, m(p({}, I), {
       showBigUserIcon: j
-    })), (0, r.jsx)(c.V6, p({}, I)), (0, r.jsx)(i.zx, {
-      onClick: n,
-      submitting: b,
+    })), (0, r.jsx)(c.V6, p({}, I)), (0, r.jsx)("div", {
       className: g.acceptButton,
-      children: h.intl.string(h.t.ohMvm1)
+      children: (0, r.jsx)(i.Button, {
+        variant: "primary",
+        size: "md",
+        text: h.intl.string(h.t.ohMvm1),
+        onClick: n,
+        loading: b,
+        fullWidth: true
+      })
     })]
   })
 }
