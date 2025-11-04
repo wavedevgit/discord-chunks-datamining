@@ -43,7 +43,7 @@ function y(e) {
     v = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === g.MI.RESIZABLE),
     j = i.useCallback(() => {
       let e = v ? g.MI.NO_CHAT : g.MI.RESIZABLE;
-      (0, h.gC)(e)
+      (0, p.gC)(e)
     }, [v]),
     {
       unreadCount: O,
@@ -67,7 +67,7 @@ function y(e) {
       var e;
       null == (e = x.current) || e.focus()
     }, []);
-  (0, p.yp)({
+  (0, h.yp)({
     event: m.CkL.FOCUS_CHAT_BUTTON,
     handler: I
   });

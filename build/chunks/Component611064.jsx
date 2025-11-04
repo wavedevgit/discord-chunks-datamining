@@ -20,11 +20,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk32482 = require("./32482.js");
 
 function b(e) {
-  return (null == e ? true : e.id) === p.G
+  return (null == e ? true : e.id) === h.G
 }
 let _ = Chunk647438.memo(function(e) {
   let t, {
-      title: p,
+      title: h,
       onToggleExpand: b,
       expanded: _,
       expandedCount: y
@@ -44,12 +44,12 @@ let _ = Chunk647438.memo(function(e) {
     className: m.membersGroup,
     children: [(0, r.jsx)(a.nn4, {
       children: f.intl.format(f.t.Uaqbke, {
-        title: p,
+        title: h,
         count: y
       })
     }), (0, r.jsxs)(a.P3F, {
       onClick: e => {
-        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return x ? (0, c.lY)() : y > 3 ? b() : (0, h.dG4)()
+        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return x ? (0, c.lY)() : y > 3 ? b() : (0, p.dG4)()
       },
       onContextMenu: v,
       tag: "span",
@@ -58,7 +58,7 @@ let _ = Chunk647438.memo(function(e) {
       children: [(0, r.jsxs)("div", {
         className: g.header,
         children: [(0, r.jsxs)("span", {
-          children: [p, " — ", y]
+          children: [h, " — ", y]
         }), (0, r.jsx)(u.Z, {})]
       }), y <= 3 && !x ? null : (t = x ? (0, r.jsx)(a.u04, {
         className: g.toggleExpandIcon

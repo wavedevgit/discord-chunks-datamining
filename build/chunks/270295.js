@@ -16,13 +16,13 @@ function u(e) {
   let t = (0, i.e7)([s.default], () => s.default.getId()),
     n = (0, c.ZP)(t, e.id),
     u = n === c.xO.REQUESTED_TO_SPEAK || n === c.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
-    [p, h] = r.useState(u);
+    [h, p] = r.useState(u);
   return r.useEffect(() => {
-    h(u)
-  }, [u]), [p, function() {
+    p(u)
+  }, [u]), [h, function() {
     if ((0, d.u1)()) return void l.Z.showAgeVerificationGetStartedModal({
       entryPoint: a.cU.STAGE_CHANNEL_RAISE_HAND
     });
-    n === c.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK ? (0, o.RK)(e, true) : (0, o.Q1)(e, !p), h(!p)
+    n === c.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK ? (0, o.RK)(e, true) : (0, o.Q1)(e, !h), p(!h)
   }]
 }

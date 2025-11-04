@@ -48,7 +48,7 @@ function T(e) {
     pendingDisplayNameStyles: U,
     avatarClassName: G,
     containerClassName: B,
-    isTryItOutFlow: Z = false,
+    isTryItOut: Z = false,
     disabledInputs: F = false,
     hideCustomStatus: V = false,
     hideBioSection: H = false,
@@ -101,7 +101,7 @@ function T(e) {
         canUsePremiumCustomization: S,
         pendingBanner: C,
         pendingAccentColor: N,
-        isTryItOutFlow: Z,
+        isTryItOut: Z,
         disabledInputs: F,
         onUpsellClick: () => null == A ? true : A({
           object: y.qAy.EDIT_PROFILE_BANNER
@@ -117,7 +117,7 @@ function T(e) {
         previewPrimaryColor: er,
         className: G,
         disabledInputs: F,
-        isTryItOutFlow: Z,
+        isTryItOut: Z,
         onUpsellClick: () => null == A ? true : A({
           object: y.qAy.AVATAR
         })
@@ -137,7 +137,7 @@ function T(e) {
       pendingPronouns: P,
       pendingLegacyUsernameDisabled: k,
       pendingDisplayNameStyles: U,
-      isTryItOutFlow: Z,
+      isTryItOut: Z,
       hideBioSection: H,
       pendingBadges: W,
       shouldOpenBadgeTooltip: K

@@ -30,6 +30,7 @@ require.d(exports, {
   iO: () => eA,
   kJ: () => eN,
   ly: () => eh,
+  m4: () => e0,
   me: () => eU,
   qI: () => eZ,
   qb: () => eG,
@@ -942,4 +943,12 @@ function e$(e) {
       num_quests_visible: i
     }), o.current = t
   }, [n, i])
+}
+let e0 = e => {
+  let t = false,
+    n = r.useMemo(() => {
+      var e;
+      return (null == (e = E.default.getCurrentUser()) ? true : e.isStaff()) === true
+    }, []);
+  return t || n || e.preview
 }

@@ -13,15 +13,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk71414 = require("./71414.js");
 let d = e => {
   let {
-    isPurchaseSection: t,
-    isPremiumSection: r,
-    canUsePremiumCollectibles: d,
-    skuId: m
-  } = e, p = (0, o.Yq)(m), h = (0, l.e7)([a.Z], () => {
-    let e = a.Z.getProduct(m);
+    skuId: t,
+    canUsePremiumCollectibles: r,
+    isTryItOut: d,
+    isPurchaseSection: m,
+    isPremiumSection: p
+  } = e, h = (0, o.Yq)(t), x = (0, l.e7)([a.Z], () => {
+    let e = a.Z.getProduct(t);
     return (0, o.G1)(e)
   });
-  return t || r && d ? null : p ? (0, n.jsx)(s.lBU, {
+  return m || p && (r || d) ? null : h ? (0, n.jsx)(s.lBU, {
     className: u.newBadge,
     text: (0, n.jsxs)("div", {
       className: u.newBadgeText,
@@ -31,7 +32,7 @@ let d = e => {
       }), c.intl.string(c.t.y2b7CA)]
     })
   }) : (0, n.jsx)(s.G2e, {
-    icon: h ? () => (0, n.jsx)(s.SrA, {
+    icon: x ? () => (0, n.jsx)(s.SrA, {
       size: "custom",
       color: "currentColor",
       width: 14,

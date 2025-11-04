@@ -50,7 +50,8 @@ let c = e => {
   let {
     initialSelectedEffect: t,
     analyticsLocations: a,
-    guild: s
+    guild: s,
+    isTryItOut: c
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -59,7 +60,8 @@ let c = e => {
     return n => (0, r.jsx)(e, l(o({}, n), {
       guild: s,
       initialSelectedEffect: t,
-      analyticsLocations: a
+      analyticsLocations: a,
+      isTryItOut: c
     }))
   }, {})
 }

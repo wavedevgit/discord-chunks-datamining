@@ -31,7 +31,7 @@ function m(e) {
     guildId: E,
     className: b,
     disabled: y = false,
-    isTryItOutFlow: O = false,
+    isTryItOut: O = false,
     forcedDivider: v,
     withHighlight: I = false
   } = e, {
@@ -42,7 +42,7 @@ function m(e) {
       analyticsSource: T,
       filters: O ? h : true,
       guildId: E,
-      isTryItOutFlow: O
+      isTryItOut: O
     })
   }, [E, T, O]);
   return (0, r.jsx)(d.Z, {

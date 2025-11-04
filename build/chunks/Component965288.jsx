@@ -70,19 +70,19 @@ let Z = Chunk647438.memo(function(e) {
     } = e;
     return (0, r.jsxs)("div", {
       className: I.textContainer,
-      children: [a ? (0, r.jsx)(p.t6m, {
+      children: [a ? (0, r.jsx)(h.t6m, {
         size: "lg",
         className: I.blockedIcon,
         color: u.Z.unsafe_rawColors.RED_400.css
-      }) : null, s ? (0, r.jsx)(p.kZF, {
+      }) : null, s ? (0, r.jsx)(h.kZF, {
         size: "lg",
         className: I.blockedIcon
-      }) : null, (0, r.jsx)(p.Text, {
+      }) : null, (0, r.jsx)(h.Text, {
         className: I.text,
         variant: "text-sm/normal",
         color: "header-primary",
         children: j.ZP.getName(t, n, i)
-      }), l ? (0, r.jsx)(p.Ucv, {
+      }), l ? (0, r.jsx)(h.Ucv, {
         className: I.boost,
         color: u.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
       }) : null]
@@ -100,15 +100,15 @@ let Z = Chunk647438.memo(function(e) {
       blocked: c,
       ignored: d,
       rtsState: u
-    } = n, h = u === O.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = u === O.xO.REQUESTED_TO_SPEAK || h;
+    } = n, p = u === O.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = u === O.xO.REQUESTED_TO_SPEAK || p;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: I.avatarContainer,
-        children: [f && (0, r.jsx)(p.V9, {
+        children: [f && (0, r.jsx)(h.V9, {
           size: "md",
           color: "currentColor",
           className: a()(I.icon, {
-            [I.invited]: h
+            [I.invited]: p
           })
         }), (0, r.jsx)("img", {
           src: null != (t = o.getAvatarURL(l.guild_id, 56, false)) ? t : true,
@@ -154,7 +154,7 @@ let Z = Chunk647438.memo(function(e) {
           is_tile_owner: s.id === O,
           tile_type: C.TH.USER
         }
-      }), (0, h.jW)(e, async () => {
+      }), (0, p.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
@@ -180,7 +180,7 @@ let Z = Chunk647438.memo(function(e) {
       guildId: l.guild_id,
       channelId: l.id,
       clickTrap: true,
-      children: e => (0, r.jsx)(p.P3F, E(S({
+      children: e => (0, r.jsx)(h.P3F, E(S({
         innerRef: R,
         className: a()(I.tileContainer, {
           [I.singleIcon]: N || u,

@@ -2,7 +2,7 @@
 /** chunk id: 513901, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,6 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk642619 = require("./642619.jsx"),
+  Chunk350327 = require("./350327.js"),
   Chunk626135 = require("./626135.js"),
   Chunk74538 = require("./74538.js"),
   Chunk150039 = require("./150039.js"),
@@ -22,64 +23,72 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk78946 = require("./78946.js");
 
-function y(e) {
+function O(e) {
   let {
     user: t,
     guild: n,
     initialSelectedEffect: a,
-    className: y,
-    sectionTitle: O,
-    forcedDivider: v = false,
-    withTutorial: I = false,
-    showBorder: T = false,
-    isTryItOutFlow: S = false
-  } = e, A = (0, _.Kg)(t, n), C = f.ZP.canUsePremiumProfileCustomization(t), {
-    analyticsLocations: N
-  } = (0, c.ZP)(), {
-    pendingProfileEffect: R,
-    errors: P
-  } = (0, _.bd)(n), w = i.useCallback(() => (0, u.H)({
-    analyticsLocations: N,
-    initialSelectedEffect: a,
-    guild: n
-  }), [N, a, n]);
-  i.useEffect(() => {
-    C && d.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: g.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
-      location_stack: N
+    className: O,
+    sectionTitle: v,
+    forcedDivider: I = false,
+    withTutorial: T = false,
+    showBorder: S = false,
+    isTryItOut: A = false
+  } = e, {
+    analyticsLocations: C
+  } = (0, c.ZP)(), N = _.ZP.canUsePremiumProfileCustomization(t), R = (0, p.nh)({
+    user: t,
+    guildId: null == n ? true : n.id
+  }), {
+    pendingProfileEffect: P,
+    errors: w
+  } = (0, p.sY)({
+    guildId: null == n ? true : n.id,
+    isTryItOut: A
+  }), D = i.useCallback(() => {
+    (0, u.H)({
+      analyticsLocations: C,
+      guild: n,
+      initialSelectedEffect: a,
+      isTryItOut: A
     })
-  }, [C, N]);
-  let D = null != n,
-    x = S || true !== R ? null != R : null != A;
+  }, [C, a, n, A]);
+  i.useEffect(() => {
+    N && f.default.track(g.rMx.PREMIUM_UPSELL_VIEWED, {
+      type: E.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
+      location_stack: C
+    })
+  }, [N, C]);
+  let x = A || true !== P ? null != P : null != R;
 
   function L() {
-    (0, _.UK)(null, null == n ? true : n.id)
+    A ? (0, d.Ju)(null) : (0, p.UK)(null, null == n ? true : n.id)
   }
-  let M = I ? l.gtL : s.zx;
-  return (0, r.jsx)(p.Z, {
-    forcedDivider: v,
-    borderType: h.Y.PREMIUM,
+  let M = T ? l.gtL : s.zx;
+  return (0, r.jsx)(h.Z, {
+    forcedDivider: I,
+    borderType: m.Y.PREMIUM,
     hasBackground: true,
-    title: O,
-    showBorder: T,
-    errors: P,
-    className: y,
+    title: v,
+    showBorder: S,
+    errors: w,
+    className: O,
     children: (0, r.jsxs)("div", {
-      className: b.buttonsContainer,
+      className: y.buttonsContainer,
       children: [(0, r.jsx)(M, {
         size: s.zx.Sizes.SMALL,
-        onClick: w,
+        onClick: D,
         className: o()({
-          [b.buttonHighlighted]: I
+          [y.buttonHighlighted]: T
         }),
-        children: E.intl.string(E.t["/dRfCf"])
+        children: b.intl.string(b.t["/dRfCf"])
       }), x && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: b.removeButton,
+        className: y.removeButton,
         children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
-          text: D ? E.intl.string(E.t.CHf9iJ) : E.intl.string(E.t.uMuafO),
+          text: null != n ? b.intl.string(b.t.CHf9iJ) : b.intl.string(b.t.uMuafO),
           onClick: L
         })
       })]

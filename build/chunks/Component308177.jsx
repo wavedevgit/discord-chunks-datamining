@@ -53,7 +53,7 @@ let x = (0, Chunk112724.Z)(e => {
       speakerTileHeight: r
     }
   })(x, w), H = C ? x - 32 : Math.min(x - 64, 3 * U + 8), F = e => e === L.length - 1 || 0 === E && 1 === e, [B, V] = i.useState(false), [z, W] = i.useState(false);
-  return (0, r.jsx)(h.Z, {
+  return (0, r.jsx)(p.Z, {
     sections: k,
     renderSection: e => {
       let {
@@ -109,7 +109,7 @@ let x = (0, Chunk112724.Z)(e => {
           }, "speakers-".concat(t, "-").concat(n));
         case 2:
           if (z) return null;
-          return (0, r.jsx)(p.Z, {
+          return (0, r.jsx)(h.Z, {
             channel: a,
             participants: l,
             maxTiles: R

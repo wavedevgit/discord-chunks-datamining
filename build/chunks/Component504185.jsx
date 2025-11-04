@@ -93,7 +93,7 @@ function es(e) {
     selectedParticipant: c
   } = e, {
     parentAnalyticsLocation: d
-  } = (0, g.ZP)(), p = t.getGuildId(), h = (0, o.e7)([k.Z], () => k.Z.getMostRecentSelectedTextChannelId(p), [p]), f = A.default.getId(), _ = !(0, o.e7)([m.Z], () => m.Z.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || U.isPlatformEmbedded && G.ZP.supportsFeature(ee.eRX.POPOUT_WINDOWS)), y = null != c && c.type !== et.fO.ACTIVITY && c.user.id !== f, x = i.useMemo(() => {
+  } = (0, g.ZP)(), h = t.getGuildId(), p = (0, o.e7)([k.Z], () => k.Z.getMostRecentSelectedTextChannelId(h), [h]), f = A.default.getId(), _ = !(0, o.e7)([m.Z], () => m.Z.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || U.isPlatformEmbedded && G.ZP.supportsFeature(ee.eRX.POPOUT_WINDOWS)), y = null != c && c.type !== et.fO.ACTIVITY && c.user.id !== f, x = i.useMemo(() => {
     var e;
     return null != (e = null == a ? true : a.window) ? e : window
   }, [a]), v = (0, J.Z)({
@@ -118,7 +118,7 @@ function es(e) {
       onOpenPopout: () => {
         (0, j.v)(d, j.d.POPOUT, true), (() => {
           let e = t.getGuildId();
-          null != e && null != h && (0, S.XU)(e, h), C.hP(t)
+          null != e && null != p && (0, S.XU)(e, p), C.hP(t)
         })()
       },
       onClosePopout: () => {
@@ -146,8 +146,8 @@ function ec(e) {
       channel: c,
       toggleRequestToSpeakSidebar: d,
       showRequestToSpeakSidebar: u,
-      popoutWindow: p,
-      popoutWindowAlwaysOnTop: h,
+      popoutWindow: h,
+      popoutWindowAlwaysOnTop: p,
       popoutOpen: b,
       popoutType: y,
       chatOpen: x,
@@ -208,8 +208,8 @@ function ec(e) {
         channel: c,
         appContext: C,
         popoutOpen: b,
-        popoutWindow: p,
-        popoutWindowAlwaysOnTop: h,
+        popoutWindow: h,
+        popoutWindowAlwaysOnTop: p,
         selectedParticipant: Z
       })
     }) : null,
@@ -268,7 +268,7 @@ function ed(e) {
   } = (0, v.Z)({
     location: "StageChannelCall"
   });
-  (0, h.ZP)(() => {
+  (0, p.ZP)(() => {
     null == c.K.get(el) && ((0, d.ZDy)(async () => {
       let {
         default: e
@@ -279,7 +279,7 @@ function ed(e) {
   let {
     width: A = 0,
     ref: D
-  } = (0, p.ZP)(), M = A - 550, k = !S || S && P === ee.IlC.POPOUT;
+  } = (0, h.ZP)(), M = A - 550, k = !S || S && P === ee.IlC.POPOUT;
   return (0, r.jsx)(g.Gt, {
     value: E,
     children: (0, r.jsxs)(_.B2, {

@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 660196, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -14,23 +14,23 @@ var Chunk647438 = require("./647438.js"),
   Chunk934826 = require("./934826.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e) {
+function p(e) {
   var t;
   let {
     guildId: n,
-    groupListingId: h,
+    groupListingId: p,
     location: f,
     relevantSubscriptionListingIds: g
   } = e, m = (0, c.f)("useTrackRoleSubscriptionUpsellAnalytics"), {
     activeSubscription: b
-  } = (0, u.Z)(h), _ = null != b, y = (0, i.Wu)([d.Z], () => (null != g ? g : []).filter(e => {
+  } = (0, u.Z)(p), _ = null != b, y = (0, i.Wu)([d.Z], () => (null != g ? g : []).filter(e => {
     var t;
     return (null == (t = d.Z.getSubscriptionListing(e)) ? true : t.published) === true
   }), [g]), {
     analyticsLocations: x
   } = (0, a.ZP)(null != (t = (0, s.DR)()) ? t : []), v = r.useRef(false);
   r.useEffect(() => {
-    m && null != h && null != y && !v.current && (v.current = true, o.default.track(p.rMx.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, function(e) {
+    m && null != p && null != y && !v.current && (v.current = true, o.default.track(h.rMx.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -48,11 +48,11 @@ function h(e) {
       }
       return e
     }({
-      role_subscription_group_listing_id: h,
+      role_subscription_group_listing_id: p,
       role_subscription_listing_ids: y,
       is_premium_member: _,
       location_stack: x,
       location: f
     }, (0, l.hH)(n))))
-  }, [n, h, m, f, y, _, x])
+  }, [n, p, m, f, y, _, x])
 }

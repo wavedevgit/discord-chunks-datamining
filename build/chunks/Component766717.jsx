@@ -17,8 +17,8 @@ function o(e) {
     renderPreview: c,
     moreCount: d,
     isSingleCard: u = false,
-    analyticsLocations: p
-  } = e, h = o ? s.cardPreview : s.cardPreviewNoScale, f = u ? s.cardSingle : s.card, g = null != d && d > 0;
+    analyticsLocations: h
+  } = e, p = o ? s.cardPreview : s.cardPreviewNoScale, f = u ? s.cardSingle : s.card, g = null != d && d > 0;
   return (0, r.jsx)(i.u, {
     text: n,
     position: "top",
@@ -26,13 +26,13 @@ function o(e) {
       onClick: () => {
         t(), (0, a.pQ)({
           action: g ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-          analyticsLocations: p
+          analyticsLocations: h
         })
       },
       className: f,
       "aria-label": n,
       children: [(0, r.jsx)("div", {
-        className: h,
+        className: p,
         children: c()
       }), g && (0, r.jsx)("div", {
         className: s.moreOverlay,

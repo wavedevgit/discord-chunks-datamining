@@ -37,7 +37,7 @@ function j(e) {
     requestId: S,
     entries: E,
     impressionCappedEntryIds: Z
-  } = (0, g.Z)(j), P = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), N = (0, i.e7)([s.Z], () => s.Z.getChannel(j)), R = (0, i.e7)([o.Z], () => o.Z.getGuild(O), [O]), w = (0, h.E)(R), A = null != w && w && (null == N ? true : N.isForumChannel()) === false, [D, L, M, k] = r.useMemo(() => {
+  } = (0, g.Z)(j), P = (0, i.e7)([h.Z], () => h.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), N = (0, i.e7)([s.Z], () => s.Z.getChannel(j)), R = (0, i.e7)([o.Z], () => o.Z.getGuild(O), [O]), w = (0, p.E)(R), A = null != w && w && (null == N ? true : N.isForumChannel()) === false, [D, L, M, k] = r.useMemo(() => {
     let e;
     if (null == E || 0 === E.length || null == S || !A) return [t, n, v];
     let r = C ? E.length : 3,

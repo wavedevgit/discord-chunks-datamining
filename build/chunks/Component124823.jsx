@@ -110,7 +110,7 @@ function w(e) {
             children: [(0, r.jsx)(I.Z, {
               user: n,
               guildId: w.guild_id,
-              nickname: h.ZP.getName(null, w.id, n),
+              nickname: p.ZP.getName(null, w.id, n),
               pronouns: null == D ? true : D.pronouns,
               onOpenProfile: A ? true : B,
               tags: (0, r.jsx)(y.Z, {
@@ -149,7 +149,7 @@ function w(e) {
             className: T.footerButton,
             children: P.intl.string(P.t["+Xp3hq"])
           })
-        }), (null == D ? true : D.profileEffect) != null && (0, r.jsx)(p.Z, {
+        }), (null == D ? true : D.profileEffect) != null && (0, r.jsx)(h.Z, {
           skuId: null == D || null == (t = D.profileEffect) ? true : t.skuId,
           isHovering: F
         })]

@@ -1,7 +1,7 @@
 /** Chunk was on 79589 **/
 /** chunk id: 818611, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => S
 }), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -80,57 +80,60 @@ let O = () => 80,
       children: t
     }))
   },
-  S = e => {
+  P = e => {
     var {
       user: t,
       avatarDecoration: r,
       innerRef: l,
       section: s,
-      isSelected: a = false,
-      canUsePremiumCollectibles: o
-    } = e, d = y(e, ["user", "avatarDecoration", "innerRef", "section", "isSelected", "canUsePremiumCollectibles"]);
-    let m = i.useRef(null),
+      canUsePremiumCollectibles: a,
+      isTryItOut: o = false,
+      isSelected: d = false
+    } = e, m = y(e, ["user", "avatarDecoration", "innerRef", "section", "canUsePremiumCollectibles", "isTryItOut", "isSelected"]);
+    let x = i.useRef(null),
       {
-        isHoveringOrFocusing: x
-      } = (0, u.Z)(null != l ? l : m),
+        isHoveringOrFocusing: O
+      } = (0, u.Z)(null != l ? l : x),
       {
-        avatarDecorationSrc: O
+        avatarDecorationSrc: P
       } = (0, h.Z)({
         user: t,
         avatarDecorationOverride: r,
         size: 80,
-        onlyAnimateOnHoverOrFocus: !x
+        onlyAnimateOnHoverOrFocus: !O
       });
     return (0, n.jsxs)(f, j(v({
-      innerRef: null != l ? l : m,
-      isSelected: a
-    }, d), {
+      innerRef: null != l ? l : x,
+      isSelected: d
+    }, m), {
       children: [(0, n.jsx)("img", {
         className: g.presetDecorationImg,
-        src: O,
+        src: P,
         alt: r.label
       }), (0, n.jsx)(c.Z, {
+        skuId: r.skuId,
+        canUsePremiumCollectibles: a,
+        isTryItOut: o,
         isPurchaseSection: s === p.$0.PURCHASE,
-        isPremiumSection: s === p.$0.PREMIUM_PURCHASE,
-        canUsePremiumCollectibles: o,
-        skuId: r.skuId
+        isPremiumSection: s === p.$0.PREMIUM_PURCHASE
       })]
     }))
   },
-  P = e => {
+  S = e => {
     let {
       user: t,
       guild: r,
       pendingAvatarDecoration: i,
       selectedAvatarDecorationRef: l,
-      onSelect: s,
-      onOpenShop: c
-    } = e, u = (0, p.ZP)(), h = d.ZP.canUseCollectibles(t);
+      isTryItOut: s,
+      onSelect: c,
+      onOpenShop: u
+    } = e, h = (0, p.ZP)(), y = d.ZP.canUseCollectibles(t);
     return (0, n.jsx)(o.GMG, {
       fade: true,
       className: g.list,
       columns: 3,
-      sections: u.map(e => {
+      sections: h.map(e => {
         let {
           items: t
         } = e;
@@ -141,15 +144,15 @@ let O = () => 80,
       paddingHorizontal: 12,
       paddingVertical: 0,
       removeEdgeItemGutters: true,
-      renderItem: (e, d, j, y) => {
+      renderItem: (e, d, j, O) => {
         let {
-          section: O,
-          items: P
-        } = u[e];
-        return (0, a.EQ)(P[d]).with(p.Tm, () => (0, n.jsxs)(f, {
+          section: S,
+          items: b
+        } = h[e];
+        return (0, a.EQ)(b[d]).with(p.Tm, () => (0, n.jsxs)(f, {
           style: v({}, j),
           isSelected: null === i,
-          onSelect: () => s(null),
+          onSelect: () => c(null),
           children: [(0, n.jsx)(o.t6m, {
             size: "md",
             color: "currentColor",
@@ -159,9 +162,9 @@ let O = () => 80,
             color: "header-primary",
             children: (0, m.ad)(t, r) ? x.intl.string(x.t.CHf9iJ) : x.intl.string(x.t.PoWNfe)
           })]
-        }, y)).with(p.oT, () => (0, n.jsxs)(f, {
+        }, O)).with(p.oT, () => (0, n.jsxs)(f, {
           style: j,
-          onSelect: c,
+          onSelect: u,
           children: [(0, n.jsx)(o.EOn, {
             size: "custom",
             width: 23,
@@ -173,24 +176,25 @@ let O = () => 80,
             color: "header-primary",
             children: x.intl.string(x.t.pWG4ze)
           })]
-        }, y)).otherwise(e => {
+        }, O)).otherwise(e => {
           let r = (null == i ? true : i.skuId) === e.skuId;
-          return (0, n.jsx)(S, {
+          return (0, n.jsx)(P, {
             style: v({}, j),
             user: t,
             avatarDecoration: e,
-            section: O,
+            section: S,
             innerRef: r ? l : true,
+            canUsePremiumCollectibles: y,
+            isTryItOut: s,
             isSelected: r,
-            onSelect: () => s(e),
-            canUsePremiumCollectibles: h
-          }, y)
+            onSelect: () => c(e)
+          }, O)
         })
       },
       renderSection: (e, t) => {
         let {
           header: r
-        } = u[e];
+        } = h[e];
         return (0, n.jsx)("div", {
           className: g.headings,
           style: j(v({}, t), {
@@ -202,8 +206,8 @@ let O = () => 80,
           })
         })
       },
-      getSectionHeight: e => u[e].height,
-      getItemKey: (e, t) => u[e].items[t].skuId,
+      getSectionHeight: e => h[e].height,
+      getItemKey: (e, t) => h[e].items[t].skuId,
       getItemHeight: O
     })
   }

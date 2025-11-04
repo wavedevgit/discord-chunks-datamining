@@ -5,17 +5,18 @@ require.d(exports, {
   CM: () => A,
   Cf: () => T,
   ID: () => S,
+  Ju: () => P,
   Ls: () => y,
   Xz: () => R,
   Z: () => b,
   c_: () => N,
-  f4: () => P,
+  f4: () => w,
   g_: () => I,
   ho: () => v,
   pG: () => O,
-  rf: () => w,
-  uV: () => L,
-  x3: () => D,
+  rf: () => D,
+  uV: () => M,
+  x3: () => x,
   z5: () => C
 });
 var Chunk442837 = require("./442837.js"),
@@ -171,24 +172,31 @@ function R(e) {
 
 function P(e) {
   a.Z.dispatch({
+    type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT",
+    profileEffect: e
+  }), E(h.QP.PROFILE_EFFECT)
+}
+
+function w(e) {
+  a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER",
     banner: e
   }), E(h.QP.PROFILE_BANNER)
 }
 
-function w(e) {
+function D(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS",
     themeColors: e
   }), E(h.QP.PROFILE_THEME_COLOR)
 }
 
-function D(e) {
+function x(e) {
   a.Z.dispatch(g({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET"
   }, e)), E(h.QP.PRESET)
 }
-async function x() {
+async function L() {
   if (null == Chunk621853.Z.applicationWidgetApplicationConfigs || !(Chunk621853.Z.applicationWidgetApplicationConfigs.length > 0)) {
     Chunk570140.Z.dispatch({
       type: "USER_PROFILE_APPLICATION_WIDGET_APPLICATION_CONFIGS_FETCH_START"
@@ -209,8 +217,8 @@ async function x() {
     }
   }
 }
-let L = (0, Chunk442837.Kb)(Chunk621853.Z, {
+let M = (0, Chunk442837.Kb)(Chunk621853.Z, {
   getQueryId: Chunk981631.McO.APPLICATION_WIDGET_APPLICATION_CONFIGS,
   get: () => Chunk621853.Z.applicationWidgetApplicationConfigs,
-  load: () => x()
+  load: () => L()
 })

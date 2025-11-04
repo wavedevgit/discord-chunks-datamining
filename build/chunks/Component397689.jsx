@@ -71,7 +71,7 @@ function v(e) {
     previewPrimaryColor: I,
     className: T,
     disabledInputs: S,
-    isTryItOutFlow: A,
+    isTryItOut: A,
     onUpsellClick: C
   } = e, N = i.useRef(null), {
     analyticsLocations: R,
@@ -104,13 +104,13 @@ function v(e) {
           uploadType: h.pC.AVATAR,
           guildId: null == n ? true : n.id,
           analyticsSource: P,
-          isTryItOutFlow: A
+          isTryItOut: A
         }),
         onChangeAvatarDecoration: () => {
           (0, u.ps)({
             guild: null == n ? true : n,
             analyticsLocations: R,
-            isTryItOutFlow: A
+            isTryItOut: A
           })
         }
       })

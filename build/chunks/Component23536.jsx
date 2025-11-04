@@ -50,10 +50,10 @@ function _(e) {
         before: null == (e = y.at(false)) ? true : e.pinnedAt
       })
     }, [t.id, y]),
-    I = (0, l.e7)([h.Z], () => (0, a.ap)(h.Z.theme));
+    I = (0, l.e7)([p.Z], () => (0, a.ap)(p.Z.theme));
   return (0, r.jsx)(s.VqE, {
     "aria-label": m.intl.string(m.t["mp1N/2"]),
-    children: (0, r.jsx)(p.ZP, {
+    children: (0, r.jsx)(h.ZP, {
       channel: t,
       onFetch: O,
       messages: v,
@@ -64,12 +64,12 @@ function _(e) {
         if (y.length > 0) return;
         let e = m.intl.string(t.isPrivate() ? m.t.rhqcbJ : m.t.fmyaWJ),
           i = I ? n(306059) : n(281485);
-        return (0, r.jsx)(p.nH, {
+        return (0, r.jsx)(h.nH, {
           msg: e,
           image: i
         }, "emptystate")
       },
-      renderHeader: () => (0, r.jsx)(p.h4, {
+      renderHeader: () => (0, r.jsx)(h.h4, {
         icon: s.qQX,
         title: m.intl.string(m.t["mp1N/2"])
       }),

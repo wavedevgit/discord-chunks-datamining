@@ -2,7 +2,7 @@
 /** chunk id: 433411, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,74 +15,79 @@ var Chunk951288 = require("./951288.js"),
   Chunk1585 = require("./1585.jsx"),
   Chunk580747 = require("./580747.js"),
   Chunk345861 = require("./345861.jsx"),
+  Chunk350327 = require("./350327.js"),
   Chunk150039 = require("./150039.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk642588 = require("./642588.js");
 
-function E(e) {
+function b(e) {
   let {
     user: t,
     guild: n,
     className: a,
     sectionTitle: _,
-    forcedDivider: E = false,
-    withTutorial: b = false,
-    isTryItOutFlow: O = false
+    forcedDivider: b = false,
+    withTutorial: y = false,
+    isTryItOut: v = false
   } = e, {
-    analyticsLocations: v
-  } = (0, c.ZP)(), I = null != n, {
-    userAvatarDecoration: T,
-    guildAvatarDecoration: S,
+    analyticsLocations: I
+  } = (0, c.ZP)(), T = (0, f.Z)("enable_avatar_decoration_uploads"), S = (0, h.i3)({
+    user: t,
+    guildId: null == n ? true : n.id
+  }), {
     pendingAvatarDecoration: A,
-    pendingErrors: C
-  } = (0, p.$U)(t, n), N = I ? S : T, R = (0, f.Z)("enable_avatar_decoration_uploads"), P = i.useCallback(() => (0, d.ps)({
-    analyticsLocations: v,
-    isTryItOutFlow: O,
-    guild: n
-  }), [v, O, n]), w = O || true !== A ? null != A : null != N;
+    errors: C
+  } = (0, h.wE)({
+    guildId: null == n ? true : n.id,
+    isTryItOut: v
+  }), N = i.useCallback(() => (0, d.ps)({
+    analyticsLocations: I,
+    guild: n,
+    isTryItOut: v
+  }), [I, n, v]), R = v || true !== A ? null != A : null != S;
 
-  function D() {
-    (0, p.PO)(null, null == n ? true : n.id)
+  function P() {
+    v ? (0, p.Xz)(null) : (0, h.PO)(null, null == n ? true : n.id)
   }
-  let x = b ? l.gtL : s.zx;
-  return (0, r.jsxs)(h.Z, {
+  let w = y ? l.gtL : s.zx;
+  return (0, r.jsxs)(m.Z, {
     className: a,
-    forcedDivider: E,
+    forcedDivider: b,
     hasBackground: true,
     title: _,
     errors: C,
     children: [(0, r.jsxs)("div", {
-      className: g.buttonsContainer,
-      children: [(0, r.jsx)(x, {
+      className: E.buttonsContainer,
+      children: [(0, r.jsx)(w, {
         size: s.zx.Sizes.SMALL,
-        onClick: P,
+        onClick: N,
         className: o()({
-          [g.buttonHighlighted]: b
+          [E.buttonHighlighted]: y
         }),
-        children: m.intl.string(m.t.BVcYCx)
-      }), w && (0, r.jsx)("div", {
+        children: g.intl.string(g.t.BVcYCx)
+      }), R && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: g.removeButton,
+        className: E.removeButton,
         children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
-          text: (0, u.ad)(t, n) ? m.intl.string(m.t.CHf9iJ) : m.intl.string(m.t.OrokWm),
-          onClick: D
+          text: (0, u.ad)(t, n) ? g.intl.string(g.t.CHf9iJ) : g.intl.string(g.t.OrokWm),
+          onClick: P
         })
       })]
-    }), t.isStaff() && R && (0, r.jsx)(y, {
+    }), t.isStaff() && T && (0, r.jsx)(O, {
       user: t
     })]
   })
 }
-let b = "PALUE000000001",
-  y = e => {
+let y = "PALUE000000001",
+  O = e => {
     let {
       user: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: g.overrideButtonsContainer,
+      className: E.overrideButtonsContainer,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-xs/bold",
         children: "STAFF ONLY and Experimental. Upload a decoration to view throughout the app."
@@ -90,12 +95,12 @@ let b = "PALUE000000001",
         onChange: e => {
           null != e && (t.avatarDecoration = {
             asset: e,
-            skuID: b
+            skuID: y
           })
         },
         size: "sm",
         variant: "primary",
-        text: m.intl.string(m.t.a9F1Qu)
+        text: g.intl.string(g.t.a9F1Qu)
       })]
     })
   }

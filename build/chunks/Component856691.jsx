@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 856691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,14 +15,14 @@ var Chunk692547 = require("./692547.js"),
   Chunk688641 = require("./688641.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function p(e) {
   let {
     className: t,
     channel: n,
-    highlight: h
+    highlight: p
   } = e, f = (0, o.bp)();
   return (0, d.sP)() ? null : (0, r.jsx)(u.Z, {
-    highlight: null != h && h,
+    highlight: null != p && p,
     className: t,
     icon: (0, r.jsx)(l.ewx, {
       size: "custom",
@@ -31,8 +31,8 @@ function h(e) {
       width: 20
     }),
     color: i.Z.unsafe_rawColors.GREEN_360.css,
-    title: p.intl.string(p.t.OYbHfv),
-    description: p.intl.string(p.t.yXwLMQ),
+    title: h.intl.string(h.t.OYbHfv),
+    description: h.intl.string(h.t.yXwLMQ),
     onClick: function() {
       if ((0, d.u1)()) return void a.Z.showAgeVerificationGetStartedModal({
         entryPoint: s.cU.START_STAGE_PROMPT

@@ -75,7 +75,7 @@ function H(e) {
   }), q = i.useRef(null), {
     isHoveringOrFocusing: K,
     isHovering: Q
-  } = (0, p.Z)(q), X = (0, v.$m)(), J = (0, o.q_F)({
+  } = (0, h.Z)(q), X = (0, v.$m)(), J = (0, o.q_F)({
     opacity: +(null != X.interactionType),
     config: {
       duration: 150
@@ -184,7 +184,7 @@ function H(e) {
             handleOpenProfile: $,
             analyticsLocations: W,
             context: Y
-          }), (null == B ? true : B.profileEffect) != null && (0, r.jsx)(h.Z, {
+          }), (null == B ? true : B.profileEffect) != null && (0, r.jsx)(p.Z, {
             skuId: null == B || null == (t = B.profileEffect) ? true : t.skuId,
             isHovering: Q,
             urlQueryString: "dmView"

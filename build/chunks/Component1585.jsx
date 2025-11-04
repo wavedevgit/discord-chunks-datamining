@@ -57,7 +57,7 @@ let d = e => {
   let {
     analyticsLocations: t,
     initialSelectedDecoration: a,
-    isTryItOutFlow: o,
+    isTryItOut: o,
     guild: l,
     onClose: u
   } = e;
@@ -70,7 +70,7 @@ let d = e => {
       onClose: u,
       analyticsLocations: t,
       initialSelectedDecoration: a,
-      isTryItOutFlow: o,
+      isTryItOut: o,
       guild: l
     }))
   }, {})

@@ -30,7 +30,7 @@ function p(e) {
     pendingLegacyUsernameDisabled: y,
     pendingBadges: O,
     pendingDisplayNameStyles: v,
-    isTryItOutFlow: I,
+    isTryItOut: I,
     hideBioSection: T,
     shouldOpenBadgeTooltip: S
   } = e, A = (0, i.e7)([c.ZP], () => null == p ? null : c.ZP.getMember(p.id, t.id)), C = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), N = null == n ? true : n.getPreviewBio(E), R = null != b ? b : null == n ? true : n.pronouns, P = (0, d.Ly)({

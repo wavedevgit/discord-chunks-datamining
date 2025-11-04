@@ -16,8 +16,8 @@ let u = e => {
   let t, {
     searchQuery: n,
     setSearchQuery: u,
-    mostRecentQuery: p,
-    handleClearSearch: h,
+    mostRecentQuery: h,
+    handleClearSearch: p,
     handleSearchKeyPress: f,
     handleCreateOrAddGuild: g,
     searchResults: m,
@@ -71,7 +71,7 @@ let u = e => {
         children: [(0, r.jsxs)("div", {
           className: c.headerTitleWrapper,
           children: [(0, r.jsx)(i.P3F, {
-            onClick: h,
+            onClick: p,
             className: c.arrow,
             children: (0, r.jsx)(l.Z, {
               direction: l.Z.Directions.LEFT
@@ -81,7 +81,7 @@ let u = e => {
             className: c.searchPageTitle,
             children: s.intl.format(s.t.UkOHRd, {
               numResults: m.length,
-              query: p
+              query: h
             })
           })]
         }), (0, r.jsx)(i.E1j, {
@@ -89,7 +89,7 @@ let u = e => {
           "aria-label": s.intl.string(s.t.nL2wKD),
           placeholder: s.intl.string(s.t.nL2wKD),
           onChange: u,
-          onClear: h,
+          onClear: p,
           onKeyDown: f
         })]
       }), t]

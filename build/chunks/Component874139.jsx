@@ -58,15 +58,15 @@ function f(e) {
     profileOwner: n,
     analyticsLocations: g
   }))), (0, r.jsxs)(d.Z.Overlay, {
-    className: h.container,
+    className: p.container,
     children: [(0, r.jsx)("div", {
-      className: h.header,
+      className: p.header,
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
-        children: p.intl.string(p.t["7lZ31J"])
+        children: h.intl.string(h.t["7lZ31J"])
       })
     }), (0, r.jsx)("div", {
-      className: h.cardsContainer,
+      className: p.cardsContainer,
       children: y
     })]
   })

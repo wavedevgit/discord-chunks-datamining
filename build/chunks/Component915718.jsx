@@ -61,9 +61,9 @@ class A extends Chunk647438.PureComponent {
     } = this.props;
     if (require || Chunk647438 && Chunk26151 === Chunk981631.WtW.VOICE) return null;
     let u = Chunk907862.isManaged(),
-      p = null,
-      h = false;
-    return Chunk287734 ? (h = true, p = Chunk388032.intl.string(Chunk388032.t.izMR7o), e = Chunk481060.aML.Colors.RED) : Chunk131951.Z.supports(Chunk65154.AN.VIDEO) ? Chunk704215 ? (p = Chunk388032.intl.string(Chunk388032.t.PHzjvX), e = Chunk481060.aML.Colors.RED, h = true) : Chunk647438 && Chunk26151 === Chunk981631.WtW.VIDEO ? (t = this.handleJoinVideoCall, p = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.W68MhH)) : (t = this.handleStartVideoCall, p = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.oCqlGG)) : (h = true, t = this.handleBrowserNotSupported, p = Chunk388032.intl.string(Chunk388032.t.UVpg3U)), (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
+      h = null,
+      p = false;
+    return Chunk287734 ? (p = true, h = Chunk388032.intl.string(Chunk388032.t.izMR7o), e = Chunk481060.aML.Colors.RED) : Chunk131951.Z.supports(Chunk65154.AN.VIDEO) ? Chunk704215 ? (h = Chunk388032.intl.string(Chunk388032.t.PHzjvX), e = Chunk481060.aML.Colors.RED, p = true) : Chunk647438 && Chunk26151 === Chunk981631.WtW.VIDEO ? (t = this.handleJoinVideoCall, h = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.W68MhH)) : (t = this.handleStartVideoCall, h = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.oCqlGG)) : (p = true, t = this.handleBrowserNotSupported, h = Chunk388032.intl.string(Chunk388032.t.UVpg3U)), (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
       icon: Chunk481060.Odl,
       onClick: exports,
       disabled: Chunk358221 || Chunk442837,
@@ -79,10 +79,10 @@ class A extends Chunk647438.PureComponent {
       isBlocked: c,
       channel: d,
       dismissibleContentTypes: u,
-      isProvisional: p
+      isProvisional: h
     } = this.props;
     if (require) return null;
-    let h = Chunk287734.isManaged(),
+    let p = Chunk287734.isManaged(),
       f = false;
     Chunk451576 ? (f = true, e = Chunk388032.intl.string(Chunk388032.t.izMR7o), t = Chunk481060.aML.Colors.RED) : Chunk442837 ? (e = Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.LW2Ghr) : Chunk388032.intl.string(Chunk388032.t.rF7lN5), t = Chunk481060.aML.Colors.RED, f = true) : Chunk26151 ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvX), t = Chunk481060.aML.Colors.RED, f = true) : e = Chunk647438 ? Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.fdEeb5) : Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.focH1t);
     let m = (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
@@ -161,7 +161,7 @@ function D(e) {
   var t;
   let {
     channel: n
-  } = e, i = (0, m.Z)(), s = (0, l.e7)([h.Z], () => h.Z.getMode(n.id)), o = (0, l.e7)([I.Z], () => I.Z.isInChannel(n.id)), c = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
+  } = e, i = (0, m.Z)(), s = (0, l.e7)([p.Z], () => p.Z.getMode(n.id)), o = (0, l.e7)([I.Z], () => I.Z.isInChannel(n.id)), c = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
     callActive: d,
     callUnavailable: f
   } = (0, l.cj)([x.Z], () => ({
@@ -173,7 +173,7 @@ function D(e) {
   } = (0, l.cj)([O.Z], () => ({
     notFriend: n.type === Z.d4z.DM && null != g && !O.Z.isFriend(g),
     isBlocked: n.type === Z.d4z.DM && null != g && O.Z.isBlocked(g)
-  })), j = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, p.Z)(n.id), T = (0, l.e7)([v.Z], () => v.Z.hasLayers());
+  })), j = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, h.Z)(n.id), T = (0, l.e7)([v.Z], () => v.Z.hasLayers());
   return (P && !T && E.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == j ? true : j.bot)) ? null : (0, r.jsx)(A, {
     channel: n,
     mode: s,

@@ -52,7 +52,7 @@ let I = e => {
       pendingProfileEffectRecord: n,
       product: u,
       purchase: d
-    } = e, p = (0, l.e7)([P.default], () => P.default.getCurrentUser()), m = (0, l.e7)([s.Z], () => s.Z.getProduct(null == n ? true : n.skuId)), g = (0, l.e7)([x.default], () => x.default.locale), h = _.ZP.canUseCollectibles(p), b = (0, c.qS)(d), y = (0, c.G1)(u), j = !h && b, C = (null == d ? true : d.expiresAt) != null ? (0, O.TD)(Date.now(), d.expiresAt) : null, I = (0, a.ag)(d), w = (0, a.kd)(m), A = (0, f.M)(!y || h), N = S(j, y, h, A);
+    } = e, p = (0, l.e7)([O.default], () => O.default.getCurrentUser()), m = (0, l.e7)([s.Z], () => s.Z.getProduct(null == n ? true : n.skuId)), g = (0, l.e7)([x.default], () => x.default.locale), h = v.ZP.canUseCollectibles(p), y = (0, c.qS)(d), b = (0, c.G1)(u), j = !h && y, C = (null == d ? true : d.expiresAt) != null ? (0, P.TD)(Date.now(), d.expiresAt) : null, I = (0, a.ag)(d), w = (0, a.kd)(m), A = (0, f.M)(!b || h), N = S(j, b, h, A);
     return null != n ? (0, r.jsx)("div", {
       className: t ? E.effectDescriptionNoGradient : E.effectDescriptionBorderWithGradient,
       children: (0, r.jsxs)("div", {
@@ -71,20 +71,20 @@ let I = e => {
           variant: "text-xxs/normal",
           color: "text-muted",
           className: E.effectPurchasedAt,
-          children: v.intl.format(v.t.Io7ozn, {
+          children: _.intl.format(_.t.Io7ozn, {
             days: C.days.toString()
           })
         }), null != d && (0, r.jsxs)(o.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
           className: E.effectPurchasedAt,
-          children: [v.intl.format(v.t.gW9R4B, {
+          children: [_.intl.format(_.t.gW9R4B, {
             date: d.purchasedAt.toLocaleDateString(g, {
               month: "long",
               year: "numeric"
             })
           }), null != d.expiresAt && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)("br", {}), v.intl.format(v.t.eZSTa5, {
+            children: [(0, r.jsx)("br", {}), _.intl.format(_.t.eZSTa5, {
               date: d.expiresAt.toLocaleDateString(g, {
                 minute: "numeric",
                 hour: "numeric",
@@ -94,16 +94,16 @@ let I = e => {
               })
             })]
           })]
-        }), b && (0, r.jsx)(o.Text, {
+        }), y && (0, r.jsx)(o.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
           className: E.effectPurchasedAt,
-          children: v.intl.string(v.t.nKdAlO)
+          children: _.intl.string(_.t.nKdAlO)
         })]
       })
     }) : null
   },
-  S = (e, t, n, r) => e ? v.intl.string(v.t["1UPza/"]) : t && n ? v.intl.string(v.t.hmyYK8) : t && !n ? r ? v.intl.string(v.t.melduy) : v.intl.string(v.t.JtAKwp) : v.intl.string(v.t.fEGjVQ),
+  S = (e, t, n, r) => e ? _.intl.string(_.t["1UPza/"]) : t && n ? _.intl.string(_.t.hmyYK8) : t && !n ? r ? _.intl.string(_.t.melduy) : _.intl.string(_.t.JtAKwp) : _.intl.string(_.t.fEGjVQ),
   w = e => {
     var t, n;
     let {
@@ -115,25 +115,25 @@ let I = e => {
       guild: f
     } = e, {
       pendingGlobalName: x,
-      pendingNickname: P,
-      pendingPronouns: O,
-      pendingBio: v,
+      pendingNickname: O,
+      pendingPronouns: P,
+      pendingBio: _,
       pendingBanner: S,
       pendingAvatar: w,
       pendingAvatarDecoration: A,
       pendingThemeColors: N,
-      pendingAccentColor: Z
+      pendingAccentColor: T
     } = (0, l.cj)([u.Z, j.Z], () => C({
       pendingNickname: true,
       pendingGlobalName: true,
       pendingAccentColor: true
-    }, null != f ? u.Z.getAllPending() : j.Z.getAllPending())), k = _.ZP.isPremium(i), D = _.ZP.canUsePremiumProfileCustomization(i), T = (0, h.ZP)(i.id), U = !!(null == T ? true : T.getPreviewBio(v)), B = {
+    }, null != f ? u.Z.getAllPending() : j.Z.getAllPending())), Z = v.ZP.isPremium(i), k = v.ZP.canUsePremiumProfileCustomization(i), D = (0, h.ZP)(i.id), U = !!(null == D ? true : D.getPreviewBio(_)), B = {
       user: i,
       guild: f,
       pendingGlobalName: x,
-      pendingNickname: P,
-      pendingPronouns: O,
-      pendingBio: b.dN.useSetting() && null != v ? d.ZP.parse(true, v).content : v,
+      pendingNickname: O,
+      pendingPronouns: P,
+      pendingBio: y.dN.useSetting() && null != _ ? d.ZP.parse(true, _).content : _,
       pendingBanner: S,
       useLargeBanner: true,
       pendingAvatar: (0, m.SD)({
@@ -142,11 +142,11 @@ let I = e => {
       }),
       pendingAvatarDecoration: A,
       pendingThemeColors: N,
-      pendingAccentColor: Z,
+      pendingAccentColor: T,
       pendingProfileEffect: null != o ? o : null,
       hideFakeActivity: U,
-      canUsePremiumCustomization: D,
-      onUpsellClick: y.Z,
+      canUsePremiumCustomization: k,
+      onUpsellClick: b.Z,
       onBannerChange: g.g_
     };
     return (0, r.jsxs)("div", {
@@ -168,7 +168,7 @@ let I = e => {
         pendingProfileEffectRecord: o,
         product: c,
         purchase: a,
-        userIsPremium: k
+        userIsPremium: Z
       })]
     })
   }

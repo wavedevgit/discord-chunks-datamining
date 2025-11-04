@@ -58,7 +58,7 @@ function x(e) {
     className: g
   } = e, x = i.useRef(null), {
     newestAnalyticsLocation: v
-  } = (0, u.ZP)(), j = (0, h.bp)(), {
+  } = (0, u.ZP)(), j = (0, p.bp)(), {
     reducedMotion: O
   } = i.useContext(o.Sfi), C = (0, d.Z)({
     userId: l.id
@@ -74,7 +74,7 @@ function x(e) {
         showMediaItems: true,
         showStageChannelItems: true,
         showChatItems: false,
-        onInteraction: (0, p.u)("GuildChannelUserContextMenu", v)
+        onInteraction: (0, h.u)("GuildChannelUserContextMenu", v)
       }))
     }, {
       context: j

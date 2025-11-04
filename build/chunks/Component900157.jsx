@@ -82,10 +82,10 @@ function N(e) {
   if (i.useEffect(() => {
       if (null == R || M.current) return;
       M.current = true;
-      let e = (0, p.K)(x.Z.getChannel(R.id), true);
+      let e = (0, h.K)(x.Z.getChannel(R.id), true);
       (0, u.yw)(S.rMx.CHANNEL_OPENED, T(P({}, e, (0, u.$H)(R.id)), {
         channel_view: N
-      })), (0, h.a)(S.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      })), (0, p.a)(S.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: R.id
       })
     }, [R, N]), null == R || null == w) return null;

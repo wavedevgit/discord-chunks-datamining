@@ -365,7 +365,7 @@ let y = {
                 pendingAvatar: true,
                 pendingProfileEffect: null,
                 canUsePremiumCustomization: true,
-                isTryItOutFlow: true
+                isTryItOut: true
               }), (0, a.jsx)(g.Z, {
                 config: U
               })]

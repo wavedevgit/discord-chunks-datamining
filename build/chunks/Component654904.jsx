@@ -49,7 +49,7 @@ function h(e) {
     guildId: i,
     analyticsSource: s,
     filters: l,
-    isTryItOutFlow: _ = false
+    isTryItOut: _ = false
   } = e;
   (0, a.ZDy)(async () => {
     let {
@@ -80,7 +80,7 @@ function h(e) {
           uploadType: t,
           guildId: i,
           analyticsSource: s,
-          isTryItOutFlow: _
+          isTryItOut: _
         })
       },
       uploadType: t,

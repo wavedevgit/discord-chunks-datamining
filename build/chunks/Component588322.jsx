@@ -39,7 +39,7 @@ function v(e) {
     }), (0, r.jsx)(u.ZP, {
       toolbar: S,
       "aria-label": y.intl.string(y.t.Pwe8tN),
-      children: (0, p.ud)({
+      children: (0, h.ud)({
         channel: v,
         parentChannel: j,
         channelName: C,
@@ -85,7 +85,7 @@ function v(e) {
           })
         },
         handleClick: function() {
-          null != v && (0, h.XU)(v.guild_id, v.id)
+          null != v && (0, p.XU)(v.guild_id, v.id)
         }
       })
     }), (0, r.jsx)("div", {

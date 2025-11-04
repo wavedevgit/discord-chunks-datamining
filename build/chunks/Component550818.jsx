@@ -51,14 +51,14 @@ function I(e) {
     onHide: I
   } = e, S = (0, g.ZP)(t.id), E = (0, o.ZP)(), Z = (0, a.e7)([u.Z], () => u.Z.isBlocked(t.id)), {
     analyticsLocations: P
-  } = (0, d.ZP)(Z ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), T = (0, h.ZB)({
+  } = (0, d.ZP)(Z ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), T = (0, p.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
   }), N = i.useRef(null);
   return (0, r.jsx)(d.Gt, {
     value: P,
-    children: (0, r.jsx)(h.Mt, {
+    children: (0, r.jsx)(p.Mt, {
       value: T,
       fetchStartedAt: null == S ? true : S.fetchStartedAt,
       fetchEndedAt: null == S ? true : S.fetchEndedAt,
@@ -89,7 +89,7 @@ function I(e) {
                 }), (0, r.jsx)(s.Text, {
                   variant: "text-sm/medium",
                   children: v.intl.format(Z ? v.t["8F+WNz"] : v.t["/cZp5s"], {
-                    username: p.ZP.getName(n.guild_id, n.id, t)
+                    username: h.ZP.getName(n.guild_id, n.id, t)
                   })
                 })]
               }), (0, r.jsxs)(s.Kqy, {

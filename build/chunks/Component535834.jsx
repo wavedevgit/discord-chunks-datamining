@@ -57,8 +57,8 @@ function w(e) {
     user: t,
     channel: s,
     status: u,
-    activities: p
-  } = e, h = (0, a.e7)([x.Z], () => null != x.Z.getTypingUsers(s.id)[t.id]), g = (0, a.e7)([v.default], () => v.default.getCurrentUser()), j = (0, a.e7)([_.Z], () => _.Z.isMobileOnline(t.id)), C = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), S = (0, f.Z)(t.id), P = i.useRef(null), N = e => {
+    activities: h
+  } = e, p = (0, a.e7)([x.Z], () => null != x.Z.getTypingUsers(s.id)[t.id]), g = (0, a.e7)([v.default], () => v.default.getCurrentUser()), j = (0, a.e7)([_.Z], () => _.Z.isMobileOnline(t.id)), C = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), S = (0, f.Z)(t.id), P = i.useRef(null), N = e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
@@ -129,9 +129,9 @@ function w(e) {
         isOwner: t.id === s.ownerId,
         ownerTooltipText: Z.intl.string(Z.t["MRXZ+x"]),
         shouldAnimateStatus: R,
-        isTyping: h,
+        isTyping: p,
         status: u,
-        activities: p,
+        activities: h,
         applicationStream: S,
         channel: s,
         onContextMenu: N,
@@ -165,7 +165,7 @@ function D(e) {
     channel: t
   } = e, n = v.default.getCurrentUser(), l = null == n ? true : n.isStaff(), {
     analyticsLocations: o
-  } = (0, p.ZP)(u.Z.MEMBER_LIST), {
+  } = (0, h.ZP)(u.Z.MEMBER_LIST), {
     listItems: c
   } = (0, a.e7)([y.Z, v.default, _.Z], () => {
     let e = (0, C.T)(t.recipients, v.default),
@@ -201,7 +201,7 @@ function D(e) {
     })
   }, [t.guild_id, t.id, t.type]);
   let d = l && c.every(e => e.user.isStaff());
-  return (0, r.jsx)(p.Gt, {
+  return (0, r.jsx)(h.Gt, {
     value: o,
     children: (0, r.jsx)("div", {
       className: P.container,
@@ -212,8 +212,8 @@ function D(e) {
           fade: true,
           children: [(0, r.jsxs)(g.Z, {
             className: P.membersGroup,
-            children: ["".concat(Z.intl.string(Z.t["9Oq93m"]), "—").concat(c.length, " "), d && (0, r.jsx)(h.Z, {
-              type: h.Z.Types.STAFF_ONLY_DM
+            children: ["".concat(Z.intl.string(Z.t["9Oq93m"]), "—").concat(c.length, " "), d && (0, r.jsx)(p.Z, {
+              type: p.Z.Types.STAFF_ONLY_DM
             })]
           }), c.map(e => (0, r.jsx)(w, {
             user: e.user,

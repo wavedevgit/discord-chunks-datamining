@@ -54,9 +54,9 @@ function b(e) {
       variant: "text-md/normal",
       color: "header-secondary",
       children: null == y ? true : y.description
-    }), (0, r.jsx)(p.Z, {
+    }), (0, r.jsx)(h.Z, {
       guildId: t,
-      children: b.filter(e => null != O[e.id]).map(e => (0, r.jsx)(h.Z, {
+      children: b.filter(e => null != O[e.id]).map(e => (0, r.jsx)(p.Z, {
         guildId: t,
         listingId: e.id,
         groupListingId: O[e.id],

@@ -31,12 +31,12 @@ let x = (e, t) => g.ZP.getName(e.getGuildId(), e.id, t.user),
     }, [n.id, n.guild_id, v]), O = t.filter(e => e.type === m.Ui.VOICE), C = 4 === O.length ? 2 : 3, I = (0, l.Wu)([o.Z], () => O.map(e => o.Z.getParticipant(n.id, e.id)).filter(f.lm), [n.id, O]);
     return (0, r.jsxs)("div", {
       className: y.container,
-      children: [(0, r.jsx)(h.Z, {}), (0, r.jsx)("div", {
+      children: [(0, r.jsx)(p.Z, {}), (0, r.jsx)("div", {
         className: y.tiles,
         style: {
           maxWidth: 168 * C
         },
-        children: I.slice(0, 5).map(e => (0, r.jsx)(p.ZP, {
+        children: I.slice(0, 5).map(e => (0, r.jsx)(h.ZP, {
           participant: e,
           channel: n,
           className: y.tile,

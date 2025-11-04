@@ -26,7 +26,7 @@ function p(e) {
     className: h,
     disabled: m = false,
     showPremiumIcon: g = true,
-    isTryItOutFlow: E = false,
+    isTryItOut: E = false,
     forcedDivider: b,
     withHighlight: y = false
   } = e, {
@@ -50,7 +50,7 @@ function p(e) {
           uploadType: d.pC.BANNER,
           analyticsSource: O,
           guildId: p,
-          isTryItOutFlow: E
+          isTryItOut: E
         }),
         children: f.intl.string(f.t.N0bC3P)
       }), t && (0, r.jsx)("div", {

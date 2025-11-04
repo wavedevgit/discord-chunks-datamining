@@ -132,8 +132,8 @@ function H(e) {
     onClick: c,
     onScrollTo: d,
     onPageChange: u,
-    paginationTotalCount: p,
-    renderPageWrapper: h,
+    paginationTotalCount: h,
+    renderPageWrapper: p,
     onBlockedResultsClick: f,
     searchRequestAnalyticsId: g,
     searchResultsQuery: m,
@@ -171,8 +171,8 @@ function H(e) {
     renderEmbeds: o,
     scrollTo: d,
     onPageChange: u,
-    paginationTotalCount: p,
-    renderPageWrapper: h,
+    paginationTotalCount: h,
+    renderPageWrapper: p,
     onBlockedResultsClick: f,
     searchRequestAnalyticsId: g,
     searchResultsQuery: m,
@@ -202,7 +202,7 @@ let F = [],
       renderEmbeds: l,
       searchRequestAnalyticsId: a,
       messages: u,
-      blockCount: h,
+      blockCount: p,
       ignoreCount: f,
       isFeedbackVisible: b,
       dismissFeedbackEntrypoint: x,
@@ -315,7 +315,7 @@ let F = [],
           l = R.Z.getSearchResultsQueryString(i);
         return (0, _.kG)(null != l ? l : "").some(e => e.type === A.dCx.FILTER_AUTHOR_TYPE) ? F : [o.z.SEARCH_AUTHOR_TYPE_SEARCH_RESULTS_HINT]
       }),
-      [en, er] = (0, p.US)(et),
+      [en, er] = (0, h.US)(et),
       ei = en === o.z.SEARCH_AUTHOR_TYPE_SEARCH_RESULTS_HINT,
       el = i.useCallback(() => {
         if (n.isSearching) return;
@@ -351,7 +351,7 @@ let F = [],
           })
         }), (0, r.jsx)(H, {
           messages: u,
-          blockCount: h,
+          blockCount: p,
           ignoreCount: f,
           search: n,
           searchContext: t,
@@ -393,7 +393,7 @@ function V(e) {
     return i.useEffect(() => {
       o && a && n(true)
     }, [a, o, l]), (0, u.ZP)(() => {
-      o && (a || h.Z.possiblyShowFeedbackModal(D.nw.SEARCH_RESULTS, () => n(true), () => n(false)))
+      o && (a || p.Z.possiblyShowFeedbackModal(D.nw.SEARCH_RESULTS, () => n(true), () => n(false)))
     }), {
       dismissFeedbackEntrypoint: i.useCallback(() => {
         n(false)
@@ -414,7 +414,7 @@ function V(e) {
       showNoResultsAlt: R.Z.shouldShowNoResultsAlt(o)
     }
   }), d = (0, s.e7)([b.Z], () => b.Z.getAnalyticsId(o)), {
-    renderedMessages: p,
+    renderedMessages: h,
     ignoreCount: g,
     blockCount: m
   } = (0, T.Z)({
@@ -442,7 +442,7 @@ function V(e) {
   }, [c.isSearching, t]), C = (0, s.e7)([R.Z], () => {
     let e = (0, _.Tm)(t);
     return R.Z.getSearchResultsQuery(e)
-  }), E = t.type === A.aib.FAVORITES, Z = i.useCallback(e => I.Z.setShowBlockedResults(t, e), [t]), P = i.useDeferredValue(p), N = i.useDeferredValue(c), w = i.useDeferredValue(d);
+  }), E = t.type === A.aib.FAVORITES, Z = i.useCallback(e => I.Z.setShowBlockedResults(t, e), [t]), P = i.useDeferredValue(h), N = i.useDeferredValue(c), w = i.useDeferredValue(d);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(B, {
       searchContext: t,

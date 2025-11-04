@@ -13,7 +13,7 @@ function i(e) {
     uploadType: i,
     guildId: a,
     analyticsSource: o,
-    isTryItOutFlow: s = false
+    isTryItOut: s = false
   } = e;
   r.Z.dispatch({
     type: "PROFILE_CUSTOMIZATION_OPEN_PREVIEW_MODAL",
@@ -22,6 +22,6 @@ function i(e) {
     uploadType: i,
     guildId: a,
     analyticsSource: o,
-    isTryItOutFlow: s
+    isTryItOut: s
   })
 }

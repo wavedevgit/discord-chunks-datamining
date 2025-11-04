@@ -47,32 +47,35 @@ function _(e) {
     pendingAvatar: m,
     pendingBanner: g,
     pendingAvatarDecoration: E,
-    pendingDisplayNameStyles: b,
-    pendingThemeColors: y,
-    pendingPronouns: O,
-    pendingBio: v,
-    tryItOutThemeColors: I,
-    tryItOutAvatar: T,
-    tryItOutBanner: S,
-    tryItOutAvatarDecoration: A,
-    tryItOutDisplayNameStyles: C
-  } = (0, a.cj)([l.Z], () => f({}, l.Z.getAllPending(), l.Z.getAllTryItOut())), N = (0, s.SD)({
+    pendingProfileEffect: b,
+    pendingDisplayNameStyles: y,
+    pendingThemeColors: O,
+    pendingPronouns: v,
+    pendingBio: I,
+    tryItOutThemeColors: T,
+    tryItOutAvatar: S,
+    tryItOutBanner: A,
+    tryItOutProfileEffect: C,
+    tryItOutAvatarDecoration: N,
+    tryItOutDisplayNameStyles: R
+  } = (0, a.cj)([l.Z], () => f({}, l.Z.getAllPending(), l.Z.getAllTryItOut())), P = (0, s.SD)({
     userId: d.id,
-    image: null != T ? T : m
+    image: null != S ? S : m
   });
   return (0, r.jsx)(c.Z, {
     containerClassName: p,
     user: d,
-    pendingPronouns: O,
-    pendingBio: v,
-    pendingBanner: null != (t = null != S ? S : g) ? t : n(466045),
-    pendingDisplayNameStyles: null != C ? C : b,
-    pendingAvatar: N,
-    pendingThemeColors: null != I ? I : y,
-    pendingAvatarDecoration: true !== A ? A : E,
-    avatarClassName: null != T || null != m || h.enabled ? true : u.spinningAvatar,
+    pendingPronouns: v,
+    pendingBio: I,
+    pendingBanner: null != (t = null != A ? A : g) ? t : n(466045),
+    pendingDisplayNameStyles: null != R ? R : y,
+    pendingAvatar: P,
+    pendingThemeColors: null != T ? T : O,
+    pendingAvatarDecoration: true !== N ? N : E,
+    pendingProfileEffect: true !== C ? C : b,
+    avatarClassName: null != S || null != m || h.enabled ? true : u.spinningAvatar,
     canUsePremiumCustomization: true,
-    isTryItOutFlow: true,
+    isTryItOut: true,
     disabledInputs: _,
     hideExampleButton: true
   })

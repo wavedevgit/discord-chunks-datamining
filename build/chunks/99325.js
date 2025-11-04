@@ -5,10 +5,10 @@ require.d(exports, {
   Rq: () => m,
   So: () => b,
   Su: () => y,
-  YZ: () => h,
+  YZ: () => p,
   _Q: () => x,
   bF: () => f,
-  c$: () => p,
+  c$: () => h,
   kx: () => g
 });
 var Chunk954955 = require("./954955.js"),
@@ -20,7 +20,7 @@ var Chunk954955 = require("./954955.js"),
   Chunk866112 = require("./866112.js"),
   Chunk75666 = require("./75666.js"),
   Chunk981631 = require("./981631.js");
-let p = i()(async (e, t) => {
+let h = i()(async (e, t) => {
     try {
       s.Z.dispatch({
         type: "GUILD_DIRECTORY_FETCH_START"
@@ -43,7 +43,7 @@ let p = i()(async (e, t) => {
       })
     }
   }, 200),
-  h = i()(async e => {
+  p = i()(async e => {
     try {
       let t = await a.tn.get({
         url: u.ANM.DIRECTORY_CHANNEL_CATEGORY_COUNTS(e),

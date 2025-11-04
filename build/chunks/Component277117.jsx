@@ -51,9 +51,9 @@ function w(e) {
     originApplicationId: d.Z.getOriginApplicationId(t.id)
   })), U = (0, s.vh)(t.id), G = (0, o.Y)({
     userId: t.id
-  }), H = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), F = (0, l.e7)([h.Z], () => {
+  }), H = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), F = (0, l.e7)([p.Z], () => {
     var e;
-    return null == (e = h.Z.getUserProfile(t.id)) ? true : e.application
+    return null == (e = p.Z.getUserProfile(t.id)) ? true : e.application
   }), B = (0, f.b)({
     location: "UserProfileSidebarBody"
   });
@@ -62,7 +62,7 @@ function w(e) {
     children: [(0, r.jsx)(E.Z, {
       user: t,
       guildId: A.guild_id,
-      nickname: p.ZP.getName(null, A.id, t),
+      nickname: h.ZP.getName(null, A.id, t),
       pronouns: null == w ? true : w.pronouns,
       onOpenProfile: L,
       tags: (0, r.jsx)(m.Z, {

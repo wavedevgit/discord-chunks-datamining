@@ -2,19 +2,20 @@
 /** chunk id: 150039, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $U: () => b,
   Jw: () => S,
-  Kg: () => v,
   PO: () => A,
   UK: () => C,
   Wh: () => N,
   Ys: () => R,
-  Zx: () => y,
-  bd: () => I,
+  Zx: () => E,
   f$: () => w,
-  gc: () => E,
+  gc: () => g,
   gd: () => P,
-  mD: () => O,
+  i3: () => y,
+  mD: () => b,
+  nh: () => O,
+  sY: () => I,
+  wE: () => v,
   xQ: () => T
 }), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
@@ -23,7 +24,6 @@ var Chunk647438 = require("./647438.js"),
   Chunk979554 = require("./979554.js"),
   Chunk442837 = require("./442837.js"),
   Chunk809206 = require("./809206.js"),
-  Chunk676742 = require("./676742.js"),
   Chunk594928 = require("./594928.js"),
   Chunk18438 = require("./18438.js"),
   Chunk778825 = require("./778825.js"),
@@ -33,9 +33,9 @@ var Chunk647438 = require("./647438.js"),
   Chunk25990 = require("./25990.js"),
   Chunk594174 = require("./594174.js");
 
-function E(e) {
+function g(e) {
   return r.useMemo(() => {
-    let t = h.ZP.getMutableAllGuildsAndMembers(),
+    let t = p.ZP.getMutableAllGuildsAndMembers(),
       n = {};
     for (let i in t) {
       var r;
@@ -46,48 +46,23 @@ function E(e) {
   }, [e])
 }
 
-function b(e, t) {
-  let n = (0, s.e7)([h.ZP], () => true === t ? null : h.ZP.getMember(t.id, e.id)),
-    r = (0, c.Z)(e.avatarDecoration),
-    {
-      pendingUserAvatarDecoration: i,
-      userErrors: a
-    } = (0, s.cj)([m.Z], () => ({
-      pendingUserAvatarDecoration: m.Z.getPendingAvatarDecoration(),
-      userErrors: m.Z.getErrors().avatarDecoration
-    })),
-    {
-      pendingGuildAvatarDecoration: o,
-      guildErrors: l
-    } = (0, s.cj)([f.Z], () => ({
-      pendingGuildAvatarDecoration: f.Z.getPendingAvatarDecoration(),
-      guildErrors: f.Z.getErrors().avatarDecoration
-    }));
-  return {
-    userAvatarDecoration: r,
-    guildAvatarDecoration: null == n ? true : n.avatarDecoration,
-    pendingAvatarDecoration: null != t ? o : i,
-    pendingErrors: null != t ? l : a
-  }
-}
-
-function y(e, t) {
+function E(e, t) {
   var n;
-  let r = (0, s.e7)([h.ZP], () => true === t ? null : h.ZP.getMember(t, e.id)),
+  let r = (0, s.e7)([p.ZP], () => true === t ? null : p.ZP.getMember(t, e.id)),
     i = e.nameplate,
     {
       pendingUserNameplate: a,
       userErrors: o
-    } = (0, s.cj)([m.Z], () => ({
-      pendingUserNameplate: m.Z.getPendingNameplate(),
-      userErrors: m.Z.getErrors().nameplate
+    } = (0, s.cj)([h.Z], () => ({
+      pendingUserNameplate: h.Z.getPendingNameplate(),
+      userErrors: h.Z.getErrors().nameplate
     })),
     {
       pendingGuildNameplate: l,
       guildErrors: c
-    } = (0, s.cj)([f.Z], () => ({
-      pendingGuildNameplate: f.Z.getPendingNameplate(),
-      guildErrors: f.Z.getErrors().nameplate
+    } = (0, s.cj)([d.Z], () => ({
+      pendingGuildNameplate: d.Z.getPendingNameplate(),
+      guildErrors: d.Z.getErrors().nameplate
     }));
   return {
     userNameplate: i,
@@ -97,24 +72,24 @@ function y(e, t) {
   }
 }
 
-function O(e, t) {
-  (0, u.cL)({
+function b(e, t) {
+  (0, c.cL)({
     location: "useGuildMemberOrUserPendingDisplayNameStyles"
   }) || (t = true);
-  let n = (0, s.e7)([h.ZP], () => true === t || null == e ? null : h.ZP.getMember(t, e.id)),
+  let n = (0, s.e7)([p.ZP], () => true === t || null == e ? null : p.ZP.getMember(t, e.id)),
     {
       pendingUserDisplayNameStyles: r,
       userErrors: i
-    } = (0, s.cj)([m.Z], () => ({
-      pendingUserDisplayNameStyles: m.Z.getPendingDisplayNameStyles(),
-      userErrors: m.Z.getErrors().displayNameStyles
+    } = (0, s.cj)([h.Z], () => ({
+      pendingUserDisplayNameStyles: h.Z.getPendingDisplayNameStyles(),
+      userErrors: h.Z.getErrors().displayNameStyles
     })),
     {
       pendingGuildDisplayNameStyles: a,
       guildErrors: o
-    } = (0, s.cj)([f.Z], () => ({
-      pendingGuildDisplayNameStyles: f.Z.getPendingDisplayNameStyles(),
-      guildErrors: f.Z.getErrors().displayNameStyles
+    } = (0, s.cj)([d.Z], () => ({
+      pendingGuildDisplayNameStyles: d.Z.getPendingDisplayNameStyles(),
+      guildErrors: d.Z.getErrors().displayNameStyles
     }));
   return {
     userDisplayNameStyles: null == e ? true : e.displayNameStyles,
@@ -124,25 +99,59 @@ function O(e, t) {
   }
 }
 
-function v(e, t) {
-  return (0, s.e7)([p.Z], () => {
-    var n, r;
-    return null == t ? null == (n = p.Z.getUserProfile(e.id)) ? true : n.profileEffect : null == (r = p.Z.getGuildMemberProfile(e.id, t.id)) ? true : r.profileEffect
+function y(e) {
+  let {
+    user: t,
+    guildId: n
+  } = e, r = (0, s.e7)([p.ZP], () => null != n ? p.ZP.getMember(n, t.id) : null);
+  return null != n ? null == r ? true : r.avatarDecoration : t.avatarDecoration
+}
+
+function O(e) {
+  let {
+    user: t,
+    guildId: n
+  } = e;
+  return (0, s.e7)([_.Z], () => {
+    var e, r;
+    return null == n ? null == (e = _.Z.getUserProfile(t.id)) ? true : e.profileEffect : null == (r = _.Z.getGuildMemberProfile(t.id, n)) ? true : r.profileEffect
+  })
+}
+
+function v(e) {
+  let {
+    guildId: t,
+    isTryItOut: n
+  } = e;
+  return (0, s.cj)([d.Z, h.Z], () => n ? {
+    pendingAvatarDecoration: h.Z.getTryItOutAvatarDecoration()
+  } : null == t ? {
+    pendingAvatarDecoration: h.Z.getPendingAvatarDecoration(),
+    errors: h.Z.getErrors().avatarDecoration
+  } : {
+    pendingAvatarDecoration: d.Z.getPendingAvatarDecoration(),
+    errors: d.Z.getErrors().avatarDecoration
   })
 }
 
 function I(e) {
-  return (0, s.cj)([m.Z, f.Z], () => null == e ? {
-    pendingProfileEffect: m.Z.getPendingProfileEffect(),
-    errors: m.Z.getErrors().profileEffect
+  let {
+    guildId: t,
+    isTryItOut: n
+  } = e;
+  return (0, s.cj)([h.Z, d.Z], () => n ? {
+    pendingProfileEffect: h.Z.getTryItOutProfileEffect()
+  } : null == t ? {
+    pendingProfileEffect: h.Z.getPendingProfileEffect(),
+    errors: d.Z.getErrors().profileEffect
   } : {
-    pendingProfileEffect: f.Z.getPendingProfileEffect(),
-    errors: f.Z.getErrors().profileEffect
-  }, [e])
+    pendingProfileEffect: d.Z.getPendingProfileEffect(),
+    errors: h.Z.getErrors().profileEffect
+  })
 }
 
 function T(e, t) {
-  (0, _.Cf)(e === t ? true : e)
+  (0, f.Cf)(e === t ? true : e)
 }
 
 function S(e, t) {
@@ -150,7 +159,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  let n = g.default.getCurrentUser();
+  let n = m.default.getCurrentUser();
   if (a()(null != n, "user cannot be null"), null == t) {
     let t = n.avatarDecoration;
     (0, l.ZB)({
@@ -159,8 +168,8 @@ function A(e, t) {
     })
   } else {
     var r;
-    let i = null == (r = h.ZP.getMember(t, n.id)) ? true : r.avatarDecoration;
-    (0, d.ZB)({
+    let i = null == (r = p.ZP.getMember(t, n.id)) ? true : r.avatarDecoration;
+    (0, u.ZB)({
       type: o.Z.AVATAR_DECORATION,
       value: (null == e ? true : e.skuId) === (null == i ? true : i.skuId) ? true : e
     })
@@ -169,16 +178,16 @@ function A(e, t) {
 
 function C(e, t) {
   var n, r;
-  let i = g.default.getCurrentUser();
+  let i = m.default.getCurrentUser();
   if (a()(null != i, "user cannot be null"), null == t) {
-    let t = null == (n = p.Z.getUserProfile(i.id)) ? true : n.profileEffect;
+    let t = null == (n = _.Z.getUserProfile(i.id)) ? true : n.profileEffect;
     (0, l.ZB)({
       type: o.Z.PROFILE_EFFECT,
       value: (null == e ? true : e.skuId) === (null == t ? true : t.skuId) ? true : e
     })
   } else {
-    let n = null == (r = p.Z.getGuildMemberProfile(i.id, t)) ? true : r.profileEffect;
-    (0, d.ZB)({
+    let n = null == (r = _.Z.getGuildMemberProfile(i.id, t)) ? true : r.profileEffect;
+    (0, u.ZB)({
       type: o.Z.PROFILE_EFFECT,
       value: (null == e ? true : e.skuId) === (null == n ? true : n.skuId) ? true : e
     })
@@ -187,7 +196,7 @@ function C(e, t) {
 
 function N(e, t) {
   var n, r, i;
-  let s = g.default.getCurrentUser();
+  let s = m.default.getCurrentUser();
   if (a()(null != s, "user cannot be null"), null == t) {
     let t = null == (n = s.collectibles) ? true : n.nameplate;
     (0, l.ZB)({
@@ -195,8 +204,8 @@ function N(e, t) {
       value: (null == e ? true : e.skuId) === (null == t ? true : t.skuId) ? true : e
     })
   } else {
-    let n = null == (i = h.ZP.getMember(t, s.id)) || null == (r = i.collectibles) ? true : r.nameplate;
-    (0, d.ZB)({
+    let n = null == (i = p.ZP.getMember(t, s.id)) || null == (r = i.collectibles) ? true : r.nameplate;
+    (0, u.ZB)({
       type: o.Z.NAMEPLATE,
       value: (null == e ? true : e.skuId) === (null == n ? true : n.skuId) ? true : e
     })

@@ -2,7 +2,7 @@
 /** chunk id: 636466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => f,
-  J: () => p
+  J: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -14,12 +14,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk758650 = require("./758650.js"),
   Chunk976218 = require("./976218.js");
 
-function p(e, t) {
+function h(e, t) {
   let {
     moreCount: n,
     onViewWishlist: i,
     isSingleCard: l = false
-  } = t, u = null != n && n > 0, p = u ? c.intl.string(c.t.TxBQzD) : c.intl.string(c.t.ilhtIa);
+  } = t, u = null != n && n > 0, h = u ? c.intl.string(c.t.TxBQzD) : c.intl.string(c.t.ilhtIa);
   return (0, r.jsx)(a.Z, {
     onCardClick: () => {
       if (u) return void i();
@@ -27,7 +27,7 @@ function p(e, t) {
         isGift: true
       })
     },
-    tooltipText: p,
+    tooltipText: h,
     shouldScalePreview: false,
     renderPreview: () => (0, r.jsx)(o.A, {
       containerClassName: d.card,
@@ -41,7 +41,7 @@ function p(e, t) {
   }, e.skuId)
 }
 
-function h(e) {
+function p(e) {
   let {
     item: t,
     card: n
@@ -81,13 +81,13 @@ function f(e, t) {
   let {
     profileOwner: n,
     analyticsLocations: i
-  } = t, l = p(e, {
+  } = t, l = h(e, {
     profileOwner: n,
     analyticsLocations: i,
     onViewWishlist: () => {},
     isSingleCard: true
   });
-  return (0, r.jsx)(h, {
+  return (0, r.jsx)(p, {
     item: e,
     card: l
   })

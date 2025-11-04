@@ -27,7 +27,7 @@ class f extends Chunk317770.Z {
         file: n,
         guildId: r,
         analyticsSource: l,
-        isTryItOutFlow: f
+        isTryItOut: f
       } = e;
       if (f) return void(0, c.c_)(t);
       let m = u.default.getCurrentUser(),
@@ -49,7 +49,7 @@ class f extends Chunk317770.Z {
         image: t,
         guildId: n,
         analyticsSource: r,
-        isTryItOutFlow: i
+        isTryItOut: i
       } = e, l = t.imageUri;
       if (i) return void(0, c.f4)(l);
       let o = u.default.getCurrentUser(),

@@ -62,11 +62,11 @@ function b(e) {
           })
         })
       }),
-      children: x ? (0, r.jsx)(h.Z, m({
+      children: x ? (0, r.jsx)(p.Z, m({
         user: b,
         currentUser: _,
         onHide: v
-      }, e)) : b.isNonUserBot() ? (0, r.jsx)(p.Z, m({
+      }, e)) : b.isNonUserBot() ? (0, r.jsx)(h.Z, m({
         user: b,
         currentUser: _
       }, e)) : (0, r.jsx)(f.Z, m({

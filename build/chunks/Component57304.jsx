@@ -55,10 +55,10 @@ let b = function(e) {
   }, [n]);
 
   function O(e) {
-    (null == e ? true : e.shiftKey) || x.dispatch(h.CkL.POPOUT_CLOSE)
+    (null == e ? true : e.shiftKey) || x.dispatch(p.CkL.POPOUT_CLOSE)
   }
-  return i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_CHANNEL_PINS, j), () => {
-    u.S.unsubscribe(h.CkL.TOGGLE_CHANNEL_PINS, j)
+  return i.useEffect(() => (u.S.subscribe(p.CkL.TOGGLE_CHANNEL_PINS, j), () => {
+    u.S.unsubscribe(p.CkL.TOGGLE_CHANNEL_PINS, j)
   }), [j]), (0, r.jsx)(a.yRy, {
     targetElementRef: v,
     shouldShow: b,
@@ -79,7 +79,7 @@ let b = function(e) {
       let {
         isShown: i
       } = t;
-      return (0, r.jsx)(p.JO, m(g({}, e), {
+      return (0, r.jsx)(h.JO, m(g({}, e), {
         ref: v,
         onClick: j,
         tooltip: i ? null : f.intl.string(f.t["mp1N/2"]),
