@@ -49,8 +49,8 @@ let N = Chunk647438.memo(function(e) {
   var t, n, i, l;
   let {
     message: N,
-    className: j,
-    onContextMenu: P,
+    className: P,
+    onContextMenu: j,
     onClick: x,
     hideSimpleEmbedContent: A = true,
     channel: Z,
@@ -87,7 +87,7 @@ let N = Chunk647438.memo(function(e) {
   }), W = (0, m.iG)(N), q = (0, m.Gx)(N);
   return (0, r.jsx)(f.Z, T({
     compact: false,
-    className: a()(j, C.icymiMessageWrapper, {
+    className: a()(P, C.icymiMessageWrapper, {
       [S.ephemeral]: (0, d.Pv)(N),
       [S.disableInteraction]: k
     }),
@@ -119,7 +119,7 @@ let N = Chunk647438.memo(function(e) {
     })(Object(l)).forEach(function(e) {
       Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
     }), i)),
-    onContextMenu: P,
+    onContextMenu: j,
     onClick: x,
     hasThread: D && null != z && N.hasFlag(v.iLy.HAS_THREAD),
     hasReply: false,

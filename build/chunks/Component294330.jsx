@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 294330, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Eo: () => P,
+  Eo: () => j,
   VD: () => N,
   ZP: () => x
 }), require("./388685.js"), require("./953529.js");
@@ -35,7 +35,7 @@ function N(e) {
     guild: t,
     onClick: l,
     onView: s
-  } = e, [m, h] = i.useState(false), [E, N] = i.useState(false), [j, P] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
+  } = e, [m, h] = i.useState(false), [E, N] = i.useState(false), [P, j] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
     N(true);
     try {
       await l(t.id)
@@ -125,13 +125,13 @@ function N(e) {
           className: v.header,
           children: [(0, r.jsx)("div", {
             className: a()(v.banner, {
-              [v.loaded]: j
+              [v.loaded]: P
             }),
             children: (0, r.jsx)("img", {
               src: D,
               alt: "",
               className: v.bannerImage,
-              onLoad: () => P(true)
+              onLoad: () => j(true)
             })
           }), (0, r.jsx)(O.Z, {
             className: v.maximizeIcon,
@@ -209,7 +209,7 @@ function N(e) {
   })
 }
 
-function j(e) {
+function P(e) {
   let {
     guildId: t,
     onClick: n,
@@ -222,7 +222,7 @@ function j(e) {
   })
 }
 
-function P(e) {
+function j(e) {
   let {
     guildId: t,
     index: n,
@@ -238,7 +238,7 @@ function P(e) {
     state: n,
     cleanUp: i,
     animate: s.current,
-    children: (0, r.jsx)(j, {
+    children: (0, r.jsx)(P, {
       guildId: t.guildId,
       onClick: l,
       onView: a
@@ -259,4 +259,4 @@ function P(e) {
     })
   })
 }
-let x = Chunk647438.memo(j)
+let x = Chunk647438.memo(P)

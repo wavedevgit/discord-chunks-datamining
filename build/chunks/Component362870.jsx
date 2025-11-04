@@ -31,8 +31,8 @@ let C = Math.ceil(Math.sqrt(115200)),
     let {
       selected: l
     } = e, T = (0, o.JA)("quests"), N = i.useRef(null), {
-      shouldShowPopover: j,
-      shouldShowGradientAndBadge: P,
+      shouldShowPopover: P,
+      shouldShowGradientAndBadge: j,
       dismissContent: x
     } = function() {
       let {
@@ -134,7 +134,7 @@ let C = Math.ceil(Math.sqrt(115200)),
           return e
         }({
           className: a()({
-            [v.withGradientAndBadge]: P
+            [v.withGradientAndBadge]: j
           }),
           icon: u.qDn,
           listItemRef: N,
@@ -143,7 +143,7 @@ let C = Math.ceil(Math.sqrt(115200)),
           selected: l,
           text: y.intl.string(y.t.JALI2K)
         }, T), n = n = {
-          children: P && (0, r.jsxs)(r.Fragment, {
+          children: j && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(s.animated.div, {
               className: v.shine,
               style: {
@@ -173,7 +173,7 @@ let C = Math.ceil(Math.sqrt(115200)),
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
-      }), j && (0, r.jsx)(b.Z, {
+      }), P && (0, r.jsx)(b.Z, {
         targetElementRef: N,
         onNavigateToQuestHome: A,
         onRender: k,

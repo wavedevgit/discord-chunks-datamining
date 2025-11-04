@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 269089, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk570140 = require("./570140.js"),
@@ -47,13 +47,18 @@ let m = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("50751"), require.e("27278")]).then(require.bind(require, 748623)),
     webpackId: 748623,
     name: "PopoutWindowActivity"
+  }),
+  E = (0, Chunk663993.Un)({
+    createPromise: () => Promise.all([require.e("91862"), require.e("50751"), require.e("69283")]).then(require.bind(require, 980811)),
+    webpackId: 980811,
+    name: "ShuffleNamesPopout"
   });
-class E extends Chunk317770.Z {
+class O extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), Chunk570140.Z.subscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), Chunk570140.Z.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), Chunk570140.Z.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.initializeStyleSheetObserver()
+    Chunk570140.Z.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), Chunk570140.Z.subscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), Chunk570140.Z.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), Chunk570140.Z.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), Chunk570140.Z.subscribe("SHUFFLE_NAMES_POPOUT_WINDOW_OPEN", this.handleOpenShuffleNamesPopout), this.initializeStyleSheetObserver()
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), Chunk570140.Z.unsubscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), Chunk570140.Z.unsubscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), Chunk570140.Z.unsubscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.terminateStyleSheetObserver()
+    Chunk570140.Z.unsubscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), Chunk570140.Z.unsubscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), Chunk570140.Z.unsubscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), Chunk570140.Z.unsubscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), Chunk570140.Z.unsubscribe("SHUFFLE_NAMES_POPOUT_WINDOW_OPEN", this.handleOpenShuffleNamesPopout), this.terminateStyleSheetObserver()
   }
   handleOpenChannelCallPopout(e) {
     let {
@@ -104,6 +109,21 @@ class E extends Chunk317770.Z {
       defaultHeight: 480
     })
   }
+  handleOpenShuffleNamesPopout(e) {
+    let {
+      channelId: t,
+      guildId: n
+    } = e;
+    u.bA(d.KJ3.SHUFFLE_NAMES_POPOUT, e => (0, r.jsx)(E, {
+      windowKey: e,
+      channelId: t,
+      guildId: n
+    }), {
+      defaultWidth: 1e3,
+      defaultHeight: 600,
+      alwaysOnTop: true
+    })
+  }
   constructor(...e) {
     super(...e), f(this, "_observer", null), f(this, "handleOpenCallTilePopout", e => {
       let {
@@ -121,4 +141,4 @@ class E extends Chunk317770.Z {
     })
   }
 }
-let O = new E
+let I = new O

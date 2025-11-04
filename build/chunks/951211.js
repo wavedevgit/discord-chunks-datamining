@@ -29,39 +29,39 @@ function f(e) {
     appContext: y,
     canSendScheduledMessages: C,
     canSummarizeThreads: v
-  } = e, x = [];
-  return t && (x.push({
+  } = e, O = [];
+  return t && (O.push({
     type: "UPLOAD_A_FILE",
     icon: i.xD0,
     display: d.intl.string(d.t["d3+iYs"])
-  }), x.push({
+  }), O.push({
     type: "UPLOAD_TEXT_AS_FILE",
     icon: i.xD0,
     display: d.intl.string(d.t["G9s+EM"])
-  })), f && t && y !== u.IlC.POPOUT && x.push({
+  })), f && t && y !== u.IlC.POPOUT && O.push({
     type: "CLIPS",
     icon: i.AlX,
     display: d.intl.string(d.t.o034cv),
     badgeVal: g,
     badgeColor: o.Z.BG_BRAND
-  }), n && x.push({
+  }), n && O.push({
     type: "CREATE_THREAD",
     icon: i.YPH,
     display: d.intl.string(d.t.rBIGBL)
-  }), b && x.push({
+  }), b && O.push({
     type: "POLL",
     icon: i.QDj,
     display: d.intl.string(d.t.Flr51u)
-  }), r && p && x.push({
+  }), r && p && O.push({
     type: "SLASH_COMMAND",
     icon: i.jje,
     display: d.intl.string(d.t.Bbvp6G)
-  }), _ && x.push({
+  }), _ && O.push({
     type: "ACTIVITY",
     icon: i.nG3,
     display: d.intl.string(d.t["16Lfrb"])
   }), m.forEach(e => {
-    !(0, l.Z)(e, u.xjy.EMBEDDED) && (e.type === u.IIU.PLAYING && (0, l.Z)(e, u.xjy.JOIN) && x.push({
+    !(0, l.Z)(e, u.xjy.EMBEDDED) && (e.type === u.IIU.PLAYING && (0, l.Z)(e, u.xjy.JOIN) && O.push({
       type: "INVITE_TO_GAME",
       icon: i.xoD,
       display: d.intl.formatToPlainString(d.t["KHLo+F"], {
@@ -69,7 +69,7 @@ function f(e) {
         game: null != e ? e.name : ""
       }),
       activity: e
-    }), e.type === u.IIU.LISTENING && (0, l.Z)(e, u.xjy.SYNC) && x.push({
+    }), e.type === u.IIU.LISTENING && (0, l.Z)(e, u.xjy.SYNC) && O.push({
       type: "INVITE_TO_LISTEN",
       icon: i.iOO,
       display: d.intl.formatToPlainString(d.t.I479px, {
@@ -77,7 +77,7 @@ function f(e) {
         name: null != e ? e.name : ""
       }),
       activity: e
-    }), e.type === u.IIU.WATCHING && (0, l.Z)(e, u.xjy.SYNC) && x.push({
+    }), e.type === u.IIU.WATCHING && (0, l.Z)(e, u.xjy.SYNC) && O.push({
       type: "INVITE_TO_WATCH",
       icon: i.tEF,
       display: d.intl.formatToPlainString(d.t["EvCP/g"], {
@@ -86,13 +86,13 @@ function f(e) {
       }),
       activity: e
     }))
-  }), C && x.push({
+  }), C && O.push({
     type: "SCHEDULED_MESSAGE",
     icon: i.T39,
     display: d.intl.string(d.t["3+ii4F"])
-  }), h.isThread() && v && x.push({
+  }), h.isThread() && v && O.push({
     type: "SUMMARIZE_THREAD",
     icon: i.$2U,
     display: d.intl.string(d.t.EXfguE)
-  }), x
+  }), O
 }

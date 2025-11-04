@@ -1,7 +1,7 @@
 /** Chunk was on 88647 **/
 /** chunk id: 641861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -24,7 +24,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk115858 = require("./115858.js");
 
-function x(e) {
+function O(e) {
   let {
     recipientUser: t,
     voiceChannel: n
@@ -37,7 +37,7 @@ function x(e) {
       userIsInCall: null != e,
       isUserRinging: null != e && e.type === y.fO.USER && e.ringing
     }
-  }), x = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), E = null != x ? (0, g.EB)(x, 32, true) : null, j = !s || u && !m;
+  }), O = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), E = null != O ? (0, g.EB)(O, 32, true) : null, j = !s || u && !m;
   return ((0, d.Z)({
     type: a.ImpressionTypes.PAGE,
     name: a.ImpressionNames.RING_TO_GUILD_VC_BANNER_SHOWN,
@@ -60,10 +60,10 @@ function x(e) {
           className: l()(v.guildIcon, v.guildIconWithoutImage),
           children: (0, r.jsx)("div", {
             className: v.guildAcronym,
-            children: null != x ? (0, g.gM)(x) : null
+            children: null != O ? (0, g.gM)(O) : null
           })
         }) : (0, r.jsx)("img", {
-          alt: null == x ? true : x.name,
+          alt: null == O ? true : O.name,
           src: E,
           className: v.guildIcon
         })
@@ -80,7 +80,7 @@ function x(e) {
           }, n.id)
         })
       })]
-    }), (0, r.jsx)(O, {
+    }), (0, r.jsx)(x, {
       channelId: n.id,
       recipientUserId: t.id,
       isUserRinging: m
@@ -88,7 +88,7 @@ function x(e) {
   })
 }
 
-function O(e) {
+function x(e) {
   let {
     channelId: t,
     recipientUserId: n,

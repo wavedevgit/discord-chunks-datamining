@@ -101,7 +101,7 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       {
         analyticsLocations: M
       } = (0, m.ZP)(),
-      R = null != (0, x.Z)(o);
+      R = null != (0, O.Z)(o);
     try {
       t = (0, v.nG)(w)
     } catch (e) {
@@ -129,7 +129,7 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         })
       }, [U, D, k]);
     if (i.useEffect(() => {
-        !Z && D && (y.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+        !Z && D && (y.default.track(x.rMx.PREMIUM_UPSELL_VIEWED, {
           type: E.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: l,

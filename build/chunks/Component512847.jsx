@@ -119,7 +119,7 @@ function L() {
   return x([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserPTTActive() || Chunk606304.Z.isCurrentUserPTTLatched(), (e, t) => {
     if (e !== t) {
       let e = I.Z.isSelfMute();
-      if (I.Z.getMode() === P.pM4.PUSH_TO_TALK && !e) return t ? "ptt_start" : "ptt_stop"
+      if (I.Z.getMode() === j.pM4.PUSH_TO_TALK && !e) return t ? "ptt_start" : "ptt_stop"
     }
   }), null
 }
@@ -136,7 +136,7 @@ function D() {
   return x([Chunk131951.Z], () => Chunk131951.Z.isSelfMutedTemporarily(), (e, t) => {
     if (e !== t) {
       let e = I.Z.isSelfMute();
-      if (I.Z.getMode() === P.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_stop" : "ptt_start"
+      if (I.Z.getMode() === j.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_stop" : "ptt_start"
     }
   }), null
 }
@@ -145,7 +145,7 @@ function M() {
   return x([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserPrioritySpeaker(), (e, t) => {
     if (e !== t) {
       let e = I.Z.isSelfMute();
-      if (I.Z.getMode() === P.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_start" : "ptt_stop"
+      if (I.Z.getMode() === j.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_start" : "ptt_stop"
     }
   }), null
 }
@@ -254,15 +254,15 @@ function B() {
         connectedFrame: u
       } = t,
       d = c.some(e => e.applicationId === (null == o ? true : o.applicationId) && e.launchId === o.launchId);
-    if ((0, j.lm)(i)) {
+    if ((0, P.lm)(i)) {
       let t = e.voiceChannelActivities.find(e => e.userIds.has(l)),
         r = c.find(e => e.userIds.has(l));
-      e.voiceChannelActivities.length < c.length && (0, j.lm)(e.voiceChannelId) && (n = "activity_launch"), true === r && (0, j.lm)(t) && (n = "activity_end"), true === t && (0, j.lm)(r) && r.userIds.size > 1 && (n = "activity_user_join"), (0, j.lm)(r) && (0, j.lm)(t) && (r.userIds.size > t.userIds.size && (n = "activity_user_join"), r.userIds.size < t.userIds.size && (n = "activity_user_left"))
+      e.voiceChannelActivities.length < c.length && (0, P.lm)(e.voiceChannelId) && (n = "activity_launch"), true === r && (0, P.lm)(t) && (n = "activity_end"), true === t && (0, P.lm)(r) && r.userIds.size > 1 && (n = "activity_user_join"), (0, P.lm)(r) && (0, P.lm)(t) && (r.userIds.size > t.userIds.size && (n = "activity_user_join"), r.userIds.size < t.userIds.size && (n = "activity_user_left"))
     }
     if (!d) {
       e.connectedChannelActivities.length < s.length && e.channelActivities.length < a.length && (n = "activity_launch");
       let t = e.userConnectedActivity;
-      null == o && (0, j.lm)(t) && (n = "activity_end"), (0, j.lm)(o) && (0, j.lm)(t) && (o.userIds.size > t.userIds.size && (n = "activity_user_join"), o.userIds.size < t.userIds.size && (n = "activity_user_left"))
+      null == o && (0, P.lm)(t) && (n = "activity_end"), (0, P.lm)(o) && (0, P.lm)(t) && (o.userIds.size > t.userIds.size && (n = "activity_user_join"), o.userIds.size < t.userIds.size && (n = "activity_user_left"))
     }
     return null == n && (null != e.connectedActivityLocation || null != r) && (null == e.connectedActivityLocation && null != r ? n = "activity_launch" : null != e.connectedActivityLocation && null == r ? n = "activity_end" : null != o && null != e.userConnectedActivity && (e.userConnectedActivity.userIds.size < o.userIds.size ? n = "activity_user_join" : e.userConnectedActivity.userIds.size > o.userIds.size && (n = "activity_user_leave"))), null == n && (null != e.connectedFrame || null != u) && (null == e.connectedFrame && null != u ? n = "activity_launch" : null != e.connectedFrame && null == u && (n = "activity_end")), n
   }), null

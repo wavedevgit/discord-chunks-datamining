@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk358993 = require("./358993.js");
 
-function x(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function x(e) {
   return e
 }
 
-function O(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -128,10 +128,10 @@ let j = function(e) {
   };
   return (i.useEffect(() => {
     a(Z !== P || w)
-  }, [Z, P, w, a]), (0, d.ZP)(() => (b.default.track(y.rMx.GDM_EDIT_INTERACTED, O(x({}, R), {
+  }, [Z, P, w, a]), (0, d.ZP)(() => (b.default.track(y.rMx.GDM_EDIT_INTERACTED, x(O({}, R), {
     action: "opened"
   })), () => {
-    b.default.track(y.rMx.GDM_EDIT_INTERACTED, O(x({}, R), {
+    b.default.track(y.rMx.GDM_EDIT_INTERACTED, x(O({}, R), {
       action: "dismissed"
     }))
   })), null == S) ? null : (0, r.jsx)(f.Gt, {
@@ -141,7 +141,7 @@ let j = function(e) {
         e.preventDefault();
         let r = Z !== P,
           i = true !== N;
-        if (b.default.track(y.rMx.GDM_EDIT_INTERACTED, O(x({}, R), {
+        if (b.default.track(y.rMx.GDM_EDIT_INTERACTED, x(O({}, R), {
             action: "saved",
             new_name_set: "" !== Z,
             new_icon_set: (i ? N : null == S ? true : S.icon) != null,

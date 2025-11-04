@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk890332 = require("./890332.js");
 
-function P(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -103,7 +103,7 @@ function A(e) {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
-      return t => (0, r.jsx)(e, x(P({
+      return t => (0, r.jsx)(e, x(j({
         guildId: k,
         sourceAnalyticsLocations: H
       }, t), {
@@ -153,13 +153,13 @@ function A(e) {
         },
         children: e => (0, r.jsx)("div", {
           ref: A,
-          children: (0, r.jsx)(d.zx, x(P(x(P({}, e), {
-            className: a()(j.button, j.buttonColor, {
-              [j.greyButtonActive]: D,
-              [j.disabled]: R
+          children: (0, r.jsx)(d.zx, x(j(x(j({}, e), {
+            className: a()(P.button, P.buttonColor, {
+              [P.greyButtonActive]: D,
+              [P.disabled]: R
             }),
-            wrapperClassName: j.button,
-            innerClassName: j.buttonContents,
+            wrapperClassName: P.button,
+            innerClassName: P.buttonContents,
             disabled: R,
             onClick: () => {
               null != G && G !== o.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && B(T.L.UNKNOWN), M(!D), Y(), (0, g.v)(V, g.d.SOUNDBOARD)
@@ -177,7 +177,7 @@ function A(e) {
             size: d.zx.Sizes.MEDIUM
           }), l), {
             children: (0, r.jsx)(z, {
-              className: j.buttonIcon,
+              className: P.buttonIcon,
               size: "sm",
               color: "currentColor"
             })

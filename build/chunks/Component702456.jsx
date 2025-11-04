@@ -47,7 +47,7 @@ function N(e) {
   return e
 }
 
-function j(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function j(e, t) {
   }), e
 }
 
-function P(e) {
+function j(e) {
   var t, n;
   let {
     user: i,
@@ -88,10 +88,10 @@ function P(e) {
       location: d.Z.FREQUENT_FRIENDS_ROW
     });
     let e = g.Z.getDMFromUserId(i.id);
-    null != e && (0, p.yw)(C.rMx.CHANNEL_OPENED, j(N({}, (0, p.$H)(e)), {
+    null != e && (0, p.yw)(C.rMx.CHANNEL_OPENED, P(N({}, (0, p.$H)(e)), {
       location: "".concat(d.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
     }))
-  }, y = 0 === l, v = y ? o.YqE : a ? o.XcD : true, P = y ? S.intl.string(S.t.aI4VOL) : a ? S.intl.string(S.t.kABl2x) : true;
+  }, y = 0 === l, v = y ? o.YqE : a ? o.XcD : true, j = y ? S.intl.string(S.t.aI4VOL) : a ? S.intl.string(S.t.kABl2x) : true;
   return (0, r.jsx)(o.P3F, {
     className: T.frequentFriendAvatarButton,
     onClick: I,
@@ -109,7 +109,7 @@ function P(e) {
       size: o.EFr.SIZE_32,
       CutoutIcon: v,
       avatarTooltipAsset: y ? "\uD83D\uDD25" : a ? "❄️" : true,
-      avatarTooltipText: P,
+      avatarTooltipText: j,
       statusTooltip: true,
       statusTooltipDelay: 50,
       avatarTooltipTitle: null != (n = i.globalName) ? n : i.username
@@ -184,7 +184,7 @@ function x() {
         }), (0, Chunk951288.jsx)(Chunk481060.aML, {
           "data-migration-pending": true,
           text: Chunk388032.intl.string(Chunk388032.t.tqCMcU),
-          children: e => (0, r.jsx)(o.d3s, j(N({}, e), {
+          children: e => (0, r.jsx)(o.d3s, P(N({}, e), {
             className: T.frequentFriendsInfoIcon
           }))
         })]
@@ -198,7 +198,7 @@ function x() {
         }),
         orientation: "horizontal",
         onScroll: Chunk592125,
-        children: Chunk158776.map((e, t) => (0, r.jsx)(P, {
+        children: Chunk158776.map((e, t) => (0, r.jsx)(j, {
           user: e,
           index: t,
           isCompetitive: t === b.length - 1 && O

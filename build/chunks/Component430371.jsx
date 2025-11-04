@@ -162,18 +162,18 @@ function I(e) {
     }, []),
     ev = et ? [] : (0, _.n3)(T, R, H),
     {
-      visibleParticipants: ex,
-      participantTileWidth: eO
+      visibleParticipants: eO,
+      participantTileWidth: ex
     } = (0, y.ZB)(L, N);
   return (0, r.jsxs)("div", {
-    className: a()(O.root, x.flexCenter, k),
+    className: a()(x.root, O.flexCenter, k),
     children: [(0, r.jsxs)("div", {
-      className: O.tileWrapper,
+      className: x.tileWrapper,
       style: {
         opacity: $ && q ? 0 : 1
       },
       children: [(0, r.jsxs)(o.animated.div, {
-        className: O.videoFrame,
+        className: x.videoFrame,
         style: {
           top: eg.value.to(e => -e * P / 2)
         },
@@ -181,9 +181,9 @@ function I(e) {
           style: {
             width: eb.value
           },
-          className: O.videoWrapper,
+          className: x.videoWrapper,
           children: (0, r.jsx)("div", {
-            className: x.videoSizer,
+            className: O.videoSizer,
             style: {
               aspectRatio: es
             },
@@ -192,13 +192,13 @@ function I(e) {
                 key: i
               } = n;
               return null != t ? (0, r.jsx)(o.animated.div, {
-                className: x.videoWrapperAnimated,
+                className: O.videoWrapperAnimated,
                 style: e,
                 children: (0, r.jsx)(g.ZP, {
                   focused: true,
                   noBorder: eu >= L || ec >= U,
                   channel: M,
-                  className: x.focusedVideo,
+                  className: O.focusedVideo,
                   videoComponent: V,
                   width: L,
                   participant: t,
@@ -213,8 +213,8 @@ function I(e) {
             })
           })
         }), ei ? (0, r.jsx)(o.animated.div, {
-          className: a()(O.actionRow, {
-            [O.idle]: F
+          className: a()(x.actionRow, {
+            [x.idle]: F
           }),
           style: {
             bottom: e_.value
@@ -226,7 +226,7 @@ function I(e) {
           })
         }) : null]
       }), (0, r.jsx)(o.animated.div, {
-        className: O.participantsWrapperAnimated,
+        className: x.participantsWrapperAnimated,
         style: {
           translateY: em.value.to(e => e * P / 2),
           opacity: em.value,
@@ -237,8 +237,8 @@ function I(e) {
           onClick: l,
           onContextMenu: I,
           onDoubleClick: Z,
-          participants: ex,
-          participantTileWidth: eO,
+          participants: eO,
+          participantTileWidth: ex,
           selectedParticipantId: R.id,
           inCall: w,
           popoutType: A,

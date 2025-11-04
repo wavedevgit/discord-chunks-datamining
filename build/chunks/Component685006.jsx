@@ -24,17 +24,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk314734 = require("./314734.js"),
   Chunk409575 = require("./409575.js");
-let O = (0, Chunk191336.U)(() => ({
+let x = (0, Chunk191336.U)(() => ({
     visible: false
   })),
   E = e => {
     (0, s.j)(() => {
-      O.setState({
+      x.setState({
         visible: e
       })
     })
   },
-  j = O;
+  j = x;
 
 function S(e) {
   let {
@@ -51,7 +51,7 @@ function S(e) {
     type: l
   }), {
     sectionCommands: v
-  } = (0, b.If)(t, null != c ? c : ""), x = i.useCallback(() => {
+  } = (0, b.If)(t, null != c ? c : ""), O = i.useCallback(() => {
     h ? m.yT(g.ti.DISMISSED) : (m.__(g._b.TEXT, _.Ie.NORMAL, {
       applicationId: c
     }), (0, p.yw)(C.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
@@ -59,14 +59,14 @@ function S(e) {
       location: d.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON,
       source: g._b.TEXT
     }))
-  }, [c, h]), O = null != v && v.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, j = !a && null != o && true === O;
+  }, [c, h]), x = null != v && v.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, j = !a && null != o && true === x;
   return (i.useEffect(() => (E(j), () => {
     E(false)
   }), [j]), j) ? (0, r.jsx)(P, {
     context: t,
     application: o,
     primaryEntryPointCommand: s,
-    onOpenButtonPress: x,
+    onOpenButtonPress: O,
     entryPointCommandButtonRef: n,
     type: l
   }) : null
@@ -96,7 +96,7 @@ function P(e) {
     primaryEntryPointCommand: i,
     application: n,
     showAppLauncherPopup: u
-  }), O = (0, h.J)({
+  }), x = (0, h.J)({
     context: t,
     application: n,
     isEmbeddedApp: m,
@@ -108,11 +108,11 @@ function P(e) {
     analyticsLocations: C
   }), E = f ? "critical-primary" : "primary";
   return (0, r.jsx)("div", {
-    className: a()(x.entryPointAppCommandButtonContainer, v.Id),
+    className: a()(O.entryPointAppCommandButtonContainer, v.Id),
     children: (0, r.jsx)(c.Button, {
       variant: E,
       loading: d,
-      onClick: O,
+      onClick: x,
       fullWidth: true,
       buttonRef: o,
       text: p

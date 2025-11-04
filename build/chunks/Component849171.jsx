@@ -77,7 +77,7 @@ function k(e) {
     return null != (e = d.ZP.getEmbeddedActivitiesForChannel(h.id).find(e => e.applicationId === s.id)) ? e : d.ZP.getEmbeddedActivitiesForStartingChannel(h.id).find(e => e.applicationId === s.id)
   }), {
     analyticsLocations: v
-  } = (0, E.ZP)(), x = (0, u.O)(), O = A.ZP.getName(h.getGuildId(), h.id, null == y ? true : y[0]), S = (0, m.s5)({
+  } = (0, E.ZP)(), O = (0, u.O)(), x = A.ZP.getName(h.getGuildId(), h.id, null == y ? true : y[0]), S = (0, m.s5)({
     userId: null == (t = T.default.getCurrentUser()) ? true : t.id,
     channelId: h.id,
     application: s
@@ -105,10 +105,10 @@ function k(e) {
       }),
       variant: "text-sm/normal",
       children: y.length > 1 ? w.intl.formatToPlainString(w.t.cpe6CK, {
-        username: O,
+        username: x,
         count: y.length - 1
       }) : w.intl.formatToPlainString(w.t["7Uuia2"], {
-        username: O
+        username: x
       })
     }), (0, r.jsx)(c.Text, {
       className: a()(M.header, {
@@ -125,7 +125,7 @@ function k(e) {
           e.stopPropagation(), null != C && (0, p.Z)({
             applicationId: C.applicationId,
             activityChannelId: h.id,
-            locationObject: x.location,
+            locationObject: O.location,
             analyticsLocations: v,
             componentId: Z
           })
@@ -147,7 +147,7 @@ function L(e) {
     channel: s
   } = e, {
     analyticsLocations: c
-  } = (0, E.ZP)(O.Z.ACTIVITY_TILE), {
+  } = (0, E.ZP)(x.Z.ACTIVITY_TILE), {
     applicationId: u
   } = t, d = (0, g.Z)(), p = null != d && (0, h.p)(d.location) === s.id && d.applicationId === u, [f] = (0, S.Z)([u]), {
     url: m
@@ -155,7 +155,7 @@ function L(e) {
     applicationId: u,
     names: R,
     size: 1024
-  }), C = !l && p, j = !p, I = !p && !l, T = (0, o.e7)([Z.Z, P.Z], () => (0, x.Z)({
+  }), C = !l && p, j = !p, I = !p && !l, T = (0, o.e7)([Z.Z, P.Z], () => (0, O.Z)({
     LayerStore: Z.Z,
     PopoutWindowStore: P.Z
   }));

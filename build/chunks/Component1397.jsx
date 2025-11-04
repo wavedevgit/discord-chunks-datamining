@@ -118,9 +118,9 @@ class z extends Chunk647438.PureComponent {
       isStaff: y,
       guildJoinRequest: C,
       showLinkedLobbyApplicationLoadingIndicator: v,
-      requiredLinkedLobbyApplication: x
+      requiredLinkedLobbyApplication: O
     } = this.props, {
-      shouldShowLurkerModeUpsellPopout: O,
+      shouldShowLurkerModeUpsellPopout: x,
       shouldShowLurkerModeSuccessPopout: E
     } = this.state, j = {
       theme: Chunk528963,
@@ -171,7 +171,7 @@ class z extends Chunk647438.PureComponent {
           children: [this.renderMemberVerificationSuccessModal(), m ? (0, r.jsx)(c.yRy, {
             targetElementRef: this.upsellTargetRef,
             renderPopout: this.renderLurkerModeUpsellPopout,
-            shouldShow: O,
+            shouldShow: x,
             position: "top",
             children: e => (0, r.jsx)(c.P3F, W(G({
               innerRef: this.upsellTargetRef
@@ -336,10 +336,10 @@ function q(e) {
   let {
     channel: i,
     children: l
-  } = e, a = i.getGuildId(), s = (0, o.e7)([N.Z], () => N.Z.getGuild(a)), c = (0, o.e7)([A.Z], () => A.Z.getCheck(a)), u = i.type === L.d4z.GUILD_ANNOUNCEMENT && null != s && s.features.has(L.GuildFeatures.NEWS), d = (0, o.e7)([Z.Z], () => u ? Z.Z.getFollowerStatsForChannel(i.id) : null), p = (0, o.e7)([O.Z], () => O.Z.isLurking(a)), h = (0, o.e7)([M.default], () => M.default.getCurrentUser()), m = null != (t = null == h ? true : h.isStaff()) && t, g = (0, o.e7)([T.ZP], () => {
+  } = e, a = i.getGuildId(), s = (0, o.e7)([N.Z], () => N.Z.getGuild(a)), c = (0, o.e7)([A.Z], () => A.Z.getCheck(a)), u = i.type === L.d4z.GUILD_ANNOUNCEMENT && null != s && s.features.has(L.GuildFeatures.NEWS), d = (0, o.e7)([Z.Z], () => u ? Z.Z.getFollowerStatsForChannel(i.id) : null), p = (0, o.e7)([x.Z], () => x.Z.isLurking(a)), h = (0, o.e7)([M.default], () => M.default.getCurrentUser()), m = null != (t = null == h ? true : h.isStaff()) && t, g = (0, o.e7)([T.ZP], () => {
     var e, t;
     return null != h && null != (t = null == (e = T.ZP.getMember(a, h.id)) ? true : e.isPending) && t
-  }), b = !!(0, y.Dc)(s), v = (0, o.e7)([x.Z], () => x.Z.shouldShowPopout(a)), E = (0, o.e7)([w.Z], () => w.Z.can(L.Plq.SEND_MESSAGES, i)), j = (0, o.e7)([C.Z], () => C.Z.getRequest(a)), {
+  }), b = !!(0, y.Dc)(s), v = (0, o.e7)([O.Z], () => O.Z.shouldShowPopout(a)), E = (0, o.e7)([w.Z], () => w.Z.can(L.Plq.SEND_MESSAGES, i)), j = (0, o.e7)([C.Z], () => C.Z.getRequest(a)), {
     showLinkedLobbyApplicationLoadingIndicator: S,
     requiredLinkedLobbyApplication: P
   } = (0, D.Z)(i.linkedLobby), k = W(G({}, c), {

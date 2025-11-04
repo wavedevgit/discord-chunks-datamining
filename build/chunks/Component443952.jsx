@@ -189,7 +189,7 @@ let G = {
       }), d = null != u ? E.Z.getWindow(u) : true;
       (null == d ? true : d.closed) && (d = true);
       let p = null != d ? M.IlC.POPOUT : M.IlC.APP;
-      if ((0, P.Pr)({}, null == d ? true : d.document), null != c) {
+      if ((0, j.Pr)({}, null == d ? true : d.document), null != c) {
         if (c.applicationId !== i.id) throw new x.Z({
           errorCode: M.lTL.INVALID_COMMAND
         }, "Application is not currently mounted.");
@@ -315,7 +315,7 @@ let G = {
         errorCode: M.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
       let l = (0, w.Z)();
-      if (!j.Z.isDiscordCdnUrl(r)) throw new x.Z({
+      if (!P.Z.isDiscordCdnUrl(r)) throw new x.Z({
         errorCode: M.lTL.INVALID_PAYLOAD
       }, "mediaUrl must be a Discord CDN url");
       (0, g.Z)({

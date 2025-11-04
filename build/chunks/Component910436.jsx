@@ -34,12 +34,12 @@ function I(e) {
     partiedMembers: S,
     applicationStreams: T,
     guildContext: N
-  } = t, j = (0, p.z1)(I), P = [], x = e => {
+  } = t, P = (0, p.z1)(I), j = [], x = e => {
     let {
       length: t
-    } = P;
-    if (0 === t) return void P.push(e);
-    P.push(e)
+    } = j;
+    if (0 === t) return void j.push(e);
+    j.push(e)
   };
   for (let {
       activity: e
@@ -87,7 +87,7 @@ function I(e) {
       }
     }, "application-stream-".concat(t.ownerId)))
   }), C.forEach((e, t) => {
-    var n, i, l, p, g, b, y, T, P;
+    var n, i, l, p, g, b, y, T, j;
     let {
       activity: A,
       game: Z,
@@ -147,10 +147,10 @@ function I(e) {
       getAssetImage: h.xF,
       user: L
     }, "rich-presence-".concat(null != (T = A.session_id) ? T : t, "-").concat(L.id))));
-    j && null != I && null != Z && (0, d._D)(A, I) && (null == I.userStatus || !(0, d.zE)(I.userStatus, f.jn.ACTIVITY_PANEL)) && x((0, r.jsx)(m.Z, {
+    P && null != I && null != Z && (0, d._D)(A, I) && (null == I.userStatus || !(0, d.zE)(I.userStatus, f.jn.ACTIVITY_PANEL)) && x((0, r.jsx)(m.Z, {
       quest: I
-    }, "quest-".concat(I.id, "-").concat(null != (P = A.session_id) ? P : t)))
-  }), P.length > 0 ? (0, r.jsx)(_.Z.Body, {
-    children: P
+    }, "quest-".concat(I.id, "-").concat(null != (j = A.session_id) ? j : t)))
+  }), j.length > 0 ? (0, r.jsx)(_.Z.Body, {
+    children: j
   }) : null
 }

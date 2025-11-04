@@ -46,8 +46,8 @@ function b(e) {
     canvasHeight: y,
     fallbackColor: C,
     outlineColorDark: v,
-    outlineColorLight: x,
-    streamerId: O,
+    outlineColorLight: O,
+    streamerId: x,
     deadDrawables: E
   } = e;
   b.save();
@@ -56,7 +56,7 @@ function b(e) {
     P = (0, d.np)(a.y, y),
     {
       outlineColor: I
-    } = (0, d.bg)(a.userId, v, x, C);
+    } = (0, d.bg)(a.userId, v, O, C);
   g(a, e => {
       e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, o.j)(() => {
         m.setState(t => (delete t.particles[a.id][e.id], 0 === Object.keys(t.particles[a.id]).length && delete t.particles[a.id], t))
@@ -93,5 +93,5 @@ function b(e) {
         i = n.x - r / 2 * window.devicePixelRatio,
         l = n.y - 1.2 * r * window.devicePixelRatio;
       e.globalAlpha = n.opacity, e.drawImage(t, r / 2 + i, r / 2 + l, r, r)
-    })(b, j, e)), a.lastUpdatedAt + f.FO < Date.now() && (0, s.ZZ)(O, a), a.state !== u.f.STOP || Object.keys(null != (r = m.getState().particles[a.id]) ? r : {}).length > 0 || E.push(a), b.restore()
+    })(b, j, e)), a.lastUpdatedAt + f.FO < Date.now() && (0, s.ZZ)(x, a), a.state !== u.f.STOP || Object.keys(null != (r = m.getState().particles[a.id]) ? r : {}).length > 0 || E.push(a), b.restore()
 }

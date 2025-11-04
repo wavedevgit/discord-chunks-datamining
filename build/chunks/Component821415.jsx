@@ -1,7 +1,7 @@
 /** Chunk was on 88647 **/
 /** chunk id: 821415, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk405143 = require("./405143.js");
 
-function x(e) {
+function O(e) {
   let t, {
       activity: n,
       channel: l,
@@ -33,7 +33,7 @@ function x(e) {
     [p, f] = i.useState(false),
     [m, g] = i.useState(0),
     b = (0, o.e7)([h.Z], () => h.Z.getChannelId() !== l.id);
-  async function x() {
+  async function O() {
     g(1);
     try {
       await c.Z.sendActivityInvite({
@@ -80,7 +80,7 @@ function x(e) {
         fullWidth: true,
         size: "sm",
         text: 2 === m ? C.intl.string(y.default["8HU1M2"]) : C.intl.string(y.default.DKHhec),
-        onClick: x
+        onClick: O
       }), null != t && (0, r.jsx)(s.Text, {
         className: v.disabledReason,
         variant: "text-xs/normal",
@@ -91,7 +91,7 @@ function x(e) {
   }
 }
 
-function O(e) {
+function x(e) {
   let {
     userId: t,
     channel: n
@@ -113,7 +113,7 @@ function O(e) {
       className: v.root,
       children: (0, r.jsx)("div", {
         className: v.activityList,
-        children: h.map(e => (0, r.jsx)(x, {
+        children: h.map(e => (0, r.jsx)(O, {
           activity: e,
           channel: n,
           userId: t

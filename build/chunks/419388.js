@@ -52,12 +52,12 @@ function v(e) {
     o = null != (n = l[a + (Math.abs(i) > 0 ? i : 1)]) ? n : l[a - 1];
   return null != o ? o : null
 }
-let x = {
+let O = {
   scrollTop: 0,
   scrollHeight: 0,
   offsetHeight: 0
 };
-class O {
+class x {
   isReady() {
     return this.props.messages.ready
   }
@@ -292,7 +292,7 @@ class O {
   }
   getScrollerState() {
     var e, t;
-    return null != (t = null == (e = this.ref.current) ? true : module.getScrollerState()) ? exports : x
+    return null != (t = null == (e = this.ref.current) ? true : module.getScrollerState()) ? exports : O
   }
   isHeightChange(e, t) {
     return e !== this.offsetHeightCache || t !== this.scrollHeightCache
@@ -580,7 +580,7 @@ function E(e) {
     additionalMessagePadding: p = 0
   } = e, {
     windowId: f
-  } = r.useContext(d.ZP), [h] = r.useState(() => new O({
+  } = r.useContext(d.ZP), [h] = r.useState(() => new x({
     messages: t,
     channel: n,
     compact: i,

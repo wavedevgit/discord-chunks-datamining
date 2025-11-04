@@ -90,7 +90,7 @@ let T = e => {
       relationshipType: n,
       userId: i,
       showingBanner: l
-    } = e, a = null == (t = O.default.getUser(i)) ? true : t.bot, o = () => {
+    } = e, a = null == (t = x.default.getUser(i)) ? true : t.bot, o = () => {
       u.Z.addRelationship({
         userId: i,
         context: {
@@ -192,7 +192,7 @@ let T = e => {
       isOptimisticAccepted: f,
       isOptimisticRejected: h
     } = (0, m.m)({
-      user: O.default.getUser(n),
+      user: x.default.getUser(n),
       onError: l,
       onAcceptSuccess: o,
       onRejectSuccess: a
@@ -222,7 +222,7 @@ let T = e => {
       showingBanner: i
     } = e, {
       channelId: l
-    } = (0, g._)(), u = (0, s.e7)([h.Z], () => null != l && h.Z.isSpam(l), [l]), d = (0, s.e7)([x.Z], () => x.Z.getRelationshipType(t), [t]), p = n.id === l, f = !o.tq && !p, m = !!o.tq || p || u, _ = u || p ? (0, r.jsxs)("div", {
+    } = (0, g._)(), u = (0, s.e7)([h.Z], () => null != l && h.Z.isSpam(l), [l]), d = (0, s.e7)([O.Z], () => O.Z.getRelationshipType(t), [t]), p = n.id === l, f = !o.tq && !p, m = !!o.tq || p || u, _ = u || p ? (0, r.jsxs)("div", {
       className: Z.inline,
       children: [(0, r.jsx)(A, {
         channelId: n.id,

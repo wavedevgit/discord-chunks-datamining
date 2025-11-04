@@ -108,17 +108,17 @@ let J = e => {
       eT = ec && eS.length > 0 && null != em && null != em.expires_at,
       eN = null != eh && null != es && es.status === q.O0b.CANCELED,
       {
-        fractionalState: ej,
-        startsAt: eP,
+        fractionalState: eP,
+        startsAt: ej,
         endsAt: ex
       } = (0, f.Z)({
         forceFetch: true
       }),
-      [eA, eZ] = (0, _.bf)(ej !== W.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
-        showAfterTimestamp: eP.valueOf(),
+      [eA, eZ] = (0, _.bf)(eP !== W.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
+        showAfterTimestamp: ej.valueOf(),
         cooldownDurationMs: 0
       }),
-      ew = (0, j.Z)({
+      ew = (0, P.Z)({
         location: "NitroTabButton"
       }),
       eL = (null == ef ? true : ef.trial_id) === W.a7,
@@ -143,9 +143,9 @@ let J = e => {
         has_premium: eu
       }), null != eU && eG(K.L.USER_DISMISS), null != eF && ez(K.L.USER_DISMISS)
     };
-    if (ej === W.a$.NONE || eg || (C = 7, n = (0, r.jsx)(P.Z, {
+    if (eP === W.a$.NONE || eg || (C = 7, n = (0, r.jsx)(j.Z, {
         className: "",
-        startsAt: eP,
+        startsAt: ej,
         endsAt: ex,
         messageStyle: p.aj.SHORT_TIME,
         upperCase: true

@@ -258,22 +258,22 @@ let ek = (0, Chunk608787.Un)({
           guildId: l
         });
       case eZ.oC.REPORT_TO_MOD:
-        return (0, r.jsx)(P.Z, {});
+        return (0, r.jsx)(j.Z, {});
       default:
-        (0, ej.vE)(u)
+        (0, eP.vE)(u)
     }
     if ((0, H.p3)(d, f)) return (0, r.jsx)(V.Z, {
       guildId: l,
       channelId: u
     });
     if ((null == i ? true : i.type) === eA.d4z.GUILD_STORE) {
-      let e = eP.default.cast(t.params.messageId);
+      let e = ej.default.cast(t.params.messageId);
       return (0, r.jsx)(g.Z, {
         channel: i,
         inputSkuId: e
       }, i.id)
     }
-    return (0, r.jsx)(P.Z, {})
+    return (0, r.jsx)(j.Z, {})
   },
   eQ = Chunk647438.memo(function() {
     let {
@@ -459,7 +459,7 @@ function tl(e) {
   }), I.R6.trackExposure({
     location: c
   });
-  let u = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()),
+  let u = (0, p.e7)([P.Z], () => P.Z.isFullscreenInContext()),
     h = (0, R.T)("ChannelSidebar"),
     g = (0, Z.useAppSidebarState)(e => !e.isOpen) && h;
   i.useLayoutEffect(() => {

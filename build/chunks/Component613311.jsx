@@ -182,28 +182,28 @@ class ef extends Chunk647438.PureComponent {
       channel: n,
       isAuthenticated: l
     } = this.props;
-    return (0, r.jsx)(P.Z, {
+    return (0, r.jsx)(j.Z, {
       isAuthenticated: l,
       toolbar: this.renderHeaderToolbar(e, t),
       children: null != n ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(P.Z.Icon, {
+        children: [(0, r.jsx)(j.Z.Icon, {
           icon: p.lO_,
           "aria-label": eo.intl.string(eo.t["P1/Erq"])
-        }), (0, r.jsx)(P.Z.Title, {
+        }), (0, r.jsx)(j.Z.Title, {
           children: n.name
         })]
       }) : null != t && t.premium ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(P.Z.Icon, {
+        children: [(0, r.jsx)(j.Z.Icon, {
           icon: p.SrA,
           "aria-label": eo.intl.string(eo.t.Ipxkog)
         }), (0, r.jsx)(et.Z, {
           sku: t
         })]
       }) : null != t ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(P.Z.Icon, {
+        children: [(0, r.jsx)(j.Z.Icon, {
           icon: p.lO_,
           "aria-label": eo.intl.string(eo.t["P1/Erq"])
-        }), (0, r.jsx)(P.Z.Title, {
+        }), (0, r.jsx)(j.Z.Title, {
           children: t.name
         })]
       }) : null
@@ -554,7 +554,7 @@ class ef extends Chunk647438.PureComponent {
             className: a()(ec.headerPurchase, {
               [ec.active]: o
             }),
-            children: [null != t ? (0, j.Z)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
+            children: [null != t ? (0, P.Z)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
               children: "deprecated!"
             }) : null, (0, r.jsx)($.Z, {
               messageStyle: $.G.SHORT,

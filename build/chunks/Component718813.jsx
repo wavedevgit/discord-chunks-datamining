@@ -63,12 +63,12 @@ let N = (0, Chunk663993.Un)({
     webpackId: 989804,
     name: "UserSettings"
   }),
-  j = (0, Chunk663993.Un)({
+  P = (0, Chunk663993.Un)({
     createPromise: () => Promise.resolve().then(require.bind(require, 653592)),
     webpackId: 653592,
     name: "ComponentPlayground"
   }),
-  P = (0, Chunk663993.Un)({
+  j = (0, Chunk663993.Un)({
     createPromise: () => require.e("80448").then(require.bind(require, 765457)),
     webpackId: 765457,
     name: "CheckpointSlides"
@@ -93,8 +93,8 @@ let N = (0, Chunk663993.Un)({
     [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(x, {}),
     [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(Z, {}),
     [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(A, {}),
-    [Chunk981631.S9g.COMPONENT_PLAYGROUND]: () => (0, Chunk951288.jsx)(j, {}),
-    [Chunk981631.S9g.CHECKPOINT]: () => (0, Chunk951288.jsx)(P, {})
+    [Chunk981631.S9g.COMPONENT_PLAYGROUND]: () => (0, Chunk951288.jsx)(P, {}),
+    [Chunk981631.S9g.CHECKPOINT]: () => (0, Chunk951288.jsx)(j, {})
   },
   L = "SHOWN",
   R = "HIDDEN",

@@ -155,9 +155,9 @@ function M(e) {
       n = "txt",
       r = "",
       i = D.match(A);
-    null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, E.d)([(0, O.dp)(new Blob([e], {
+    null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, E.d)([(0, x.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, R), x.S.dispatchToLastSubscribed(P.CkL.CLEAR_TEXT), "" !== r && x.S.dispatchToLastSubscribed(P.CkL.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, R), O.S.dispatchToLastSubscribed(P.CkL.CLEAR_TEXT), "" !== r && O.S.dispatchToLastSubscribed(P.CkL.INSERT_TEXT, {
       plainText: r
     })
   }

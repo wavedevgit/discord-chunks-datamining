@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 340137, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -48,7 +48,7 @@ function N(e) {
     popoutProps: o,
     ref: h,
     focusSectionProps: _
-  } = e, [O, I] = i.useState(false), N = (0, b.D)(), j = s || N, P = s || j, {
+  } = e, [O, I] = i.useState(false), N = (0, b.D)(), P = s || N, j = s || P, {
     backForwardButtons: x,
     titlebarIconSize: A,
     titlebarHoverHighlight: Z
@@ -56,13 +56,13 @@ function N(e) {
     location: "NotificationsInboxTitleBarButton"
   }), w = (0, r.jsx)(d.Dkj, {
     className: v.icon,
-    color: O || P ? d.TVs.colors.ICON_PRIMARY : d.TVs.colors.ICON_TERTIARY,
+    color: O || j ? d.TVs.colors.ICON_PRIMARY : d.TVs.colors.ICON_TERTIARY,
     size: A
   }), {
     badge: L,
     badgeType: R
   } = (0, E.h6)({
-    isSelected: j
+    isSelected: P
   }), D = (0, g.isDesktop)() && x, M = (0, m.A)(), k = (0, g.isMac)() ? C[M] : D ? S[M] : T[M];
   return (0, r.jsxs)(d.Kqy, {
     gap: 0,
@@ -72,7 +72,7 @@ function N(e) {
       horizontal: true
     }), (0, r.jsx)(u.u, {
       asContainer: true,
-      shouldShow: !P,
+      shouldShow: !j,
       text: y.intl.string(y.t.HcoRu0),
       children: (0, r.jsxs)(d.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -134,7 +134,7 @@ function N(e) {
   })
 }
 
-function j() {
+function P() {
   let {
     focusSectionProps: e
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = Chunk647438.useRef(null), {

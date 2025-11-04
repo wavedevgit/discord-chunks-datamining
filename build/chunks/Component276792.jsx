@@ -60,9 +60,9 @@ function O(e) {
       renderModalProps: S,
       analyticsLocations: T,
       analyticsLocation: N,
-      isLightTheme: j
+      isLightTheme: P
     } = e,
-    P = "AnnouncementModalVariant1_".concat(l.z[Number(C.dismissKey)]),
+    j = "AnnouncementModalVariant1_".concat(l.z[Number(C.dismissKey)]),
     {
       onClose: x
     } = S,
@@ -111,7 +111,7 @@ function O(e) {
     }) : true,
     L = {
       type: "video",
-      src: j ? C.heroArtVideoLinkLightTheme : C.videoLink
+      src: P ? C.heroArtVideoLinkLightTheme : C.videoLink
     };
   null != C.heroArtVideoSubtitles && (L.subtitles = C.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
@@ -119,7 +119,7 @@ function O(e) {
     isDefault: false
   }))), ("" !== C.heroArtImageLinkDarkTheme || "" !== C.heroArtImageLinkLightTheme) && (L = {
     type: "image",
-    src: j ? C.heroArtImageLinkLightTheme : C.heroArtImageLinkDarkTheme
+    src: P ? C.heroArtImageLinkLightTheme : C.heroArtImageLinkDarkTheme
   });
   let R = "" !== C.modalTopPill ? () => (0, r.jsx)(f.mn, {
     text: C.modalTopPill,
@@ -137,10 +137,10 @@ function O(e) {
     featureCards: C.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,
-      imageSrc: j ? e.imageLinkLightTheme : e.imageLink,
+      imageSrc: P ? e.imageLinkLightTheme : e.imageLink,
       tagText: "" !== e.pill ? e.pill : true
     })),
-    changeLogId: P,
+    changeLogId: j,
     button: () => {
       let e = Date.now();
       return (0, r.jsx)(s.zxk, {
@@ -148,10 +148,10 @@ function O(e) {
         size: "md",
         onClick: () => {
           d.default.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
-            change_log_id: P,
+            change_log_id: j,
             cta_type: Z,
             seconds_open: Math.round((Date.now() - e) / 1e3),
-            target: P
+            target: j
           }), y()
         },
         text: A,

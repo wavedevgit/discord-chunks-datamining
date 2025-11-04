@@ -153,7 +153,7 @@ function V(e) {
     mention_roles: e.mention_roles || e.mentionRoles,
     embeds: e.embeds,
     attachments: e.attachments,
-    author: null != r ? (0, P.Z)(r) : true,
+    author: null != r ? (0, j.Z)(r) : true,
     pinned: e.pinned,
     type: e.type
   }
@@ -181,14 +181,14 @@ function F(e, t, n) {
       self_deaf: a,
       suppress: s
     },
-    user: (0, P.Z)(c)
+    user: (0, j.Z)(c)
   }
 }
 
 function z(e, t) {
   return {
     type: e,
-    user: (0, P.Z)(t),
+    user: (0, j.Z)(t),
     presence: {
       status: I.Z.getStatus(t.id, null),
       activity: null
@@ -250,7 +250,7 @@ function J(e) {
     } = e;
     return t
   }, () => {
-    throw new j.Z({
+    throw new P.Z({
       closeCode: A.$VG.INVALID_CLIENTID
     }, "Invalid Client ID")
   })
@@ -260,12 +260,12 @@ async function X(e, t, n) {
   if ("string" == typeof n)
     if (e.transport === x.He.POST_MESSAGE) {
       let e = (0, u.ZP)(t);
-      if (null == e || !B(n, [e])) throw new j.Z({
+      if (null == e || !B(n, [e])) throw new P.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } else {
       let e = await J(t);
-      if (r = m.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new j.Z({
+      if (r = m.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new P.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } null == r && (r = m.ZP.createFromServer(await J(t)));
@@ -344,13 +344,13 @@ function en(e, t) {
 }
 
 function er(e) {
-  if (e !== x.He.POST_MESSAGE) throw new j.Z({
+  if (e !== x.He.POST_MESSAGE) throw new P.Z({
     errorCode: A.lTL.INVALID_COMMAND
   }, 'command not available from "'.concat(e, " transport"))
 }
 
 function ei(e) {
-  if (null == e.id) throw new j.Z({
+  if (null == e.id) throw new P.Z({
     errorCode: A.lTL.INVALID_COMMAND
   }, "Invalid application");
   return e.id

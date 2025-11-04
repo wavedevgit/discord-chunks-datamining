@@ -199,7 +199,7 @@ function el(e) {
     pageWidth: t,
     onSidebarResize: n
   } = e, i = (0, c.e7)([w.ZP], () => w.ZP.getSidebarState(w.uZ)), l = (0, c.e7)([L.Z], () => L.Z.getChannel(null == i ? true : i.channelId));
-  if (null == i || i.type !== j.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
+  if (null == i || i.type !== P.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
   let a = t - Q.R7I;
   return (0, r.jsx)(b.Z, {
     sidebarType: b.y.MessageRequestSidebar,
@@ -272,7 +272,7 @@ let eo = (0, Chunk112724.Z)(function(e) {
     width: t
   } = e, n = (0, V.q)();
   (0, g.ZP)(() => {
-    f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, P.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
+    f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, j.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
     }), S.Z.increment({
       name: o.V.MESSAGE_REQUEST_VIEW
@@ -283,7 +283,7 @@ let eo = (0, Chunk112724.Z)(function(e) {
     [u, d] = i.useState(false),
     m = (0, c.e7)([w.ZP], () => {
       let e = w.ZP.getSidebarState(w.uZ);
-      return null != e && e.type === j.tI.VIEW_MESSAGE_REQUEST ? e : null
+      return null != e && e.type === P.tI.VIEW_MESSAGE_REQUEST ? e : null
     }),
     h = null == m ? true : m.channelId,
     _ = null != m,

@@ -2,7 +2,7 @@
 /** chunk id: 350707, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => E,
-  cy: () => x,
+  cy: () => O,
   iu: () => v
 }), require("./388685.js");
 var r, i, l, Chunk951288 = require("./951288.js"),
@@ -53,8 +53,8 @@ function C(e, t) {
   }), e
 }
 var v = ((i = {}).CENTER = "center", i.LEFT = "left", i),
-  x = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
-class O extends Chunk647438.PureComponent {
+  O = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
+class x extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       uniqueId: e
@@ -195,7 +195,7 @@ class E extends(r = Chunk647438.PureComponent) {
       } = this.props, s = null != o;
       return (0, a.jsx)(p.f6W, {
         theme: r,
-        children: e => (0, a.jsx)(O, C(y({}, this.props), {
+        children: e => (0, a.jsx)(x, C(y({}, this.props), {
           className: c()({
             [b.bottom]: "bottom" === n,
             [b.contentNarrowNoMedia]: !i && !s,

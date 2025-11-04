@@ -75,7 +75,7 @@ function N(e) {
   }
 }
 
-function j(e) {
+function P(e) {
   let t = [];
   return l()(g.ZP.memberOf(e)).map(_.Z.getGuild).sortBy(e => null != e ? e.name.toLowerCase() : null).forEach(e => {
     null != e && t.push(e)
@@ -84,7 +84,7 @@ function j(e) {
     mutualGuilds: t.slice(0, 5)
   }
 }
-class P extends Chunk81825.Z {
+class j extends Chunk81825.Z {
   get comparator() {
     var e, t, n, r, i;
     return [this.type, +(null == this.giftIntentType), null != (i = null != (r = null == (e = this.nickname) ? true : module.toLowerCase()) ? r : null == (n = this.user) || null == (t = require.globalName) ? true : exports.toLowerCase()) ? Chunk392711 : this.usernameLower]
@@ -99,12 +99,12 @@ class x {
     let e = new Set,
       t = Array.from(Chunk699516.Z.getMutableRelationships().entries()).map(t => {
         let [n, r] = t;
-        return r === I.OGo.FRIEND && e.add(n), new P(S(C({
+        return r === I.OGo.FRIEND && e.add(n), new j(S(C({
           key: n,
           type: r,
           userId: n,
           nickname: E.Z.getNickname(n)
-        }, T(n), N(n), j(n)), {
+        }, T(n), N(n), P(n)), {
           spam: E.Z.isSpam(n),
           ignoredUser: E.Z.isIgnored(n),
           giftIntentType: r === I.OGo.FRIEND && m.Z.isTopAffinityFriendAnniversary({
@@ -122,24 +122,24 @@ class x {
         applicationId: l,
         type: a
       } = t;
-      !(a === I.OGo.FRIEND && e.has(r)) && (a === I.OGo.FRIEND && i.has(r) || (a === I.OGo.FRIEND && i.add(r), n.push(new P(S(C({
+      !(a === I.OGo.FRIEND && e.has(r)) && (a === I.OGo.FRIEND && i.has(r) || (a === I.OGo.FRIEND && i.add(r), n.push(new j(S(C({
         key: "".concat(r, "-").concat(l),
         type: a,
         userId: r,
         applicationId: l,
         nickname: E.Z.getNickname(r)
-      }, T(r), N(r), j(r)), {
+      }, T(r), N(r), P(r)), {
         spam: E.Z.isSpam(r),
         ignoredUser: E.Z.isIgnored(r),
         isGameRelationship: true
       })))))
     });
-    let a = l().map(Chunk5254.Z.getSuggestions(), e => new P(C({
+    let a = l().map(Chunk5254.Z.getSuggestions(), e => new j(C({
       key: e.key,
       userId: e.key,
       type: 99,
       nickname: e.name
-    }, T(e.key), N(e.key), j(e.key))));
+    }, T(e.key), N(e.key), P(e.key))));
     return new x(l().concat(exports, require, Chunk442837))
   }
   clone() {

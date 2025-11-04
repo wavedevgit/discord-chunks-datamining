@@ -76,63 +76,63 @@ let A = function(e) {
     U = [{
       id: T.pJs.ONLINE,
       show: w.filter(T.pJs.ONLINE).length > 0,
-      content: j.intl.string(j.t.b9w3bO),
-      className: P.item
+      content: P.intl.string(P.t.b9w3bO),
+      className: j.item
     }, {
       id: T.pJs.ALL,
       show: R[T.OGo.FRIEND] > 0,
-      content: j.intl.string(j.t.PfjFjR),
-      className: P.item
+      content: P.intl.string(P.t.PfjFjR),
+      className: j.item
     }, {
       id: T.pJs.PENDING,
       show: w.filter(T.pJs.PENDING).length > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [j.intl.string(j.t.p6IHGE), A > 0 && (0, r.jsx)(c.mAB, {
+        children: [P.intl.string(P.t.p6IHGE), A > 0 && (0, r.jsx)(c.mAB, {
           count: A,
-          className: P.badge
+          className: j.badge
         })]
       }),
-      ariaLabel: j.intl.formatToPlainString(j.t.OAC0Z4, {
+      ariaLabel: P.intl.formatToPlainString(P.t.OAC0Z4, {
         count: A.toString()
       }),
-      className: P.item
+      className: j.item
     }, {
       id: T.pJs.SUGGESTIONS,
       show: L > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [j.intl.string(j.t["8rSi1/"]), (0, r.jsx)(c.mAB, {
+        children: [P.intl.string(P.t["8rSi1/"]), (0, r.jsx)(c.mAB, {
           count: L,
-          className: P.badge
+          className: j.badge
         })]
       }),
-      ariaLabel: j.intl.formatToPlainString(j.t.AbMQp7, {
+      ariaLabel: P.intl.formatToPlainString(P.t.AbMQp7, {
         count: L.toString()
       }),
-      className: P.item
+      className: j.item
     }, {
       id: T.pJs.ADD_FRIEND,
       show: true,
       content: (0, r.jsx)("span", {
-        children: j.intl.string(j.t.j0wbE5)
+        children: P.intl.string(P.t.j0wbE5)
       }),
-      ariaLabel: j.intl.string(j.t.j0wbE5),
-      className: a()(P.item, P.addFriend)
+      ariaLabel: P.intl.string(P.t.j0wbE5),
+      className: a()(j.item, j.addFriend)
     }],
     G = y.o.useConfig({
       location: "people page"
     }).friendsTab,
     B = null,
     H = G ? null : (0, r.jsx)("div", {
-      className: P.nowPlayingColumn,
+      className: j.nowPlayingColumn,
       children: (0, r.jsx)(b.Z, {})
     });
   return B = Z === T.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : (0, r.jsx)(S.Z, {
     titleId: k
   }), (0, r.jsxs)("main", {
-    className: P.container,
-    "aria-label": j.intl.string(j.t.TdEu5X),
+    className: j.container,
+    "aria-label": P.intl.string(P.t.TdEu5X),
     children: [(0, r.jsx)(f.yY, {
-      location: j.intl.string(j.t.TdEu5X)
+      location: P.intl.string(P.t.TdEu5X)
     }), (0, r.jsx)(c.f6W, {
       theme: _,
       children: e => (0, r.jsxs)(g.Z, {
@@ -146,13 +146,13 @@ let A = function(e) {
           "aria-hidden": true
         }), (0, r.jsx)(g.Z.Title, {
           id: M,
-          children: j.intl.string(j.t.TdEu5X)
+          children: P.intl.string(P.t.TdEu5X)
         }), (0, r.jsx)(g.Z.Divider, {}), (0, r.jsx)(c.njP, {
-          "aria-label": j.intl.string(j.t.TdEu5X),
+          "aria-label": P.intl.string(P.t.TdEu5X),
           selectedItem: Z,
           type: "top-pill",
           onItemSelect: D,
-          className: P.tabBar,
+          className: j.tabBar,
           children: U.filter(e => e.show).map(e => (0, r.jsx)(c.njP.Item, {
             id: e.id,
             className: e.className,
@@ -162,10 +162,10 @@ let A = function(e) {
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: P.tabBody,
+      className: j.tabBody,
       children: [(0, r.jsx)(c.njP.Panel, {
         id: Z,
-        className: P.peopleColumn,
+        className: j.peopleColumn,
         "aria-labelledby": k,
         children: B
       }), H]

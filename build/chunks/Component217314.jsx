@@ -1,7 +1,7 @@
-/** Chunk was on 85496 **/
+/** Chunk was on 56710 **/
 /** chunk id: 217314, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,50 +18,50 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk97009 = require("./97009.js");
 
-function g(e) {
+function m(e) {
   let t = e.channel.getRecipientId(),
     n = e.channel.isSystemDM(),
-    g = (0, i.e7)([d.default], () => d.default.getUser(t)),
+    m = (0, i.e7)([d.default], () => d.default.getUser(t)),
     b = (0, i.e7)([c.Z], () => c.Z.getStatus(t)),
-    v = (0, i.e7)([c.Z], () => c.Z.isMobileOnline(t)),
-    j = (0, i.e7)([u.Z], () => u.Z.getNickname(t)),
-    O = p.ZP.useUserTag(g),
-    y = (0, s.j)({
-      displayNameStyles: null == g ? true : g.displayNameStyles
+    _ = (0, i.e7)([c.Z], () => c.Z.isMobileOnline(t)),
+    y = (0, i.e7)([u.Z], () => u.Z.getNickname(t)),
+    O = p.ZP.useUserTag(m),
+    v = (0, a.j)({
+      displayNameStyles: null == m ? true : m.displayNameStyles
     }),
-    x = (0, o.m$)({
+    j = (0, s.m$)({
       channelId: e.channel.id
     });
-  return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(a.nn4, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(o.nn4, {
       children: f.intl.string(f.t.EJRzg7)
-    }), null != g && !n && (0, l.jsx)("div", {
-      children: (0, l.jsx)(a.qEK, {
+    }), null != m && !n && (0, r.jsx)("div", {
+      children: (0, r.jsx)(o.qEK, {
         status: b,
-        isMobile: v,
-        className: m.avatar,
-        size: a.EFr.SIZE_20,
-        "aria-label": p.ZP.getName(g),
-        src: g.getAvatarURL(true, 20)
+        isMobile: _,
+        className: g.avatar,
+        size: o.EFr.SIZE_20,
+        "aria-label": p.ZP.getName(m),
+        src: m.getAvatarURL(true, 20)
       })
-    }), (0, l.jsx)(h.Z.Title, {
+    }), (0, r.jsx)(h.Z.Title, {
       level: e.level,
       onClick: e.handleClick,
       onContextMenu: e.handleContextMenu,
-      className: null != e.handleClick ? m.cursorPointer : null,
-      children: (0, l.jsxs)(l.Fragment, {
-        children: [(0, l.jsx)(a.jSM, {
+      className: null != e.handleClick ? g.cursorPointer : null,
+      children: (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(o.jSM, {
           text: O,
           position: "bottom",
-          className: y,
-          children: null != j ? j : p.ZP.getName(g)
-        }), x && (0, l.jsx)(r.u, {
+          className: v,
+          children: null != y ? y : p.ZP.getName(m)
+        }), j && (0, r.jsx)(l.u, {
           text: f.intl.string(f.t.QyZ4Td),
-          children: (0, l.jsx)(a.tQf, {
+          children: (0, r.jsx)(o.tQf, {
             size: "xs",
             "aria-label": f.intl.string(f.t.VHXh8a),
-            color: a.TVs.colors.INTERACTIVE_NORMAL,
-            className: m.secureFramesIcon
+            color: o.TVs.colors.INTERACTIVE_NORMAL,
+            className: g.secureFramesIcon
           })
         })]
       })

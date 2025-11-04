@@ -581,7 +581,7 @@ class eg extends(r = Chunk647438.PureComponent) {
       children: (0, i.jsx)(h.JcV, {
         containerRef: this._mobileCloseRef,
         children: (0, i.jsx)("div", {
-          children: (0, i.jsx)(x.Z, {
+          children: (0, i.jsx)(O.Z, {
             className: el.mobileToolsCloseIcon,
             closeAction: this.props.onClose,
             keybind: "ESC"
@@ -742,13 +742,13 @@ class eg extends(r = Chunk647438.PureComponent) {
         onClose: n
       } = this.props, r = Array.from(t);
       if (null != e) {
-        let t = ex(Array.from(new Set([...e.recipients, ...r])));
+        let t = eO(Array.from(new Set([...e.recipients, ...r])));
         t.size > 0 ? (0, h.h7j)(n => (0, i.jsx)(em, ec(es({}, n), {
           onConfirm: () => this.pushToExistingDM(e, r),
           channelIds: t
         })), {}, (0, h.VnL)(this.context.appContext)) : this.pushToExistingDM(e, r)
       } else {
-        let e = ex(r);
+        let e = eO(r);
         r.length > 1 && e.size > 0 ? (0, h.h7j)(t => (0, i.jsx)(em, ec(es({}, t), {
           onConfirm: () => this.createNewDM(r),
           channelIds: e
@@ -885,8 +885,8 @@ function eC(e) {
     showModal: y,
     renderPopout: C,
     toggleVisible: v,
-    popoutOpen: x,
-    setPopoutOpen: O,
+    popoutOpen: O,
+    setPopoutOpen: x,
     inBornThisNamedExperiment: E
   } = ey({
     initialPopoutOpen: null != r && r.isGroupDM() && 0 === r.recipients.length,
@@ -906,11 +906,11 @@ function eC(e) {
     targetElementRef: b,
     renderPopout: C,
     position: d,
-    shouldShow: x,
+    shouldShow: O,
     nudgeAlignIntoViewport: true,
     autoInvert: true,
     align: f,
-    onRequestClose: () => O(false),
+    onRequestClose: () => x(false),
     animation: h.yRy.Animation.NONE,
     ignoreModalClicks: true,
     clickTrap: true,
@@ -982,12 +982,12 @@ function ev(e) {
   })
 }
 
-function ex(e) {
-  let t = eO(e);
-  return new Set((0, s.chain)(B.Z.getMutablePrivateChannels()).values().filter(e => (0, U.bc)(e.type)).filter(e => eO(e.recipients) === t).map(e => e.id).value())
+function eO(e) {
+  let t = ex(e);
+  return new Set((0, s.chain)(B.Z.getMutablePrivateChannels()).values().filter(e => (0, U.bc)(e.type)).filter(e => ex(e.recipients) === t).map(e => e.id).value())
 }
 
-function eO(e) {
+function ex(e) {
   return JSON.stringify(e.sort())
 }
 eo(eg, "contextType", Chunk728285.ZP)

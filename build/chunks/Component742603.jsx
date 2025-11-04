@@ -46,7 +46,7 @@ function B(e) {
   let {
     focusedParticipant: t,
     channel: n
-  } = e, i = (0, x.bp)(), l = (0, a.e7)([I.Z], () => I.Z.getLayout(n.id, i));
+  } = e, i = (0, O.bp)(), l = (0, a.e7)([I.Z], () => I.Z.getLayout(n.id, i));
   return (0, r.jsx)(P.Z, {
     children: (0, r.jsx)(A.Z, {
       participant: t,
@@ -145,7 +145,7 @@ function H(e) {
   } = (0, a.cj)([I.Z], () => ({
     focusedParticipant: I.Z.getSelectedParticipant(t.id),
     participantsOpen: I.Z.getParticipantsOpen(t.id)
-  }), [t.id]), _ = (0, f.ZP)(t), x = (0, h.KS)(t), [S] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = k.intl.string(k.t.BVZqJl);
+  }), [t.id]), _ = (0, f.ZP)(t), O = (0, h.KS)(t), [S] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = k.intl.string(k.t.BVZqJl);
   t.isDM() ? P = k.intl.string(k.t.jN2DfZ) : t.isGroupDM() && (P = k.intl.string(k.t["e5y+gm"]));
   let T = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     A = t.isGuildVoice() && u && null != T && T.length > 0,
@@ -194,7 +194,7 @@ function H(e) {
           className: l()(L.channelStatus, U.markup, {
             [L.hoverable]: R
           }),
-          children: O.Z.parseVoiceChannelStatus(T, true, {
+          children: x.Z.parseVoiceChannelStatus(T, true, {
             channelId: t.id
           })
         }), R && (0, r.jsx)(s.vdY, {
@@ -230,8 +230,8 @@ function H(e) {
         children: [(0, r.jsx)(y.ZP.Title, {
           wrapperClassName: L.title,
           children: (0, r.jsxs)(r.Fragment, {
-            children: [null != x ? (0, r.jsx)(y.ZP.ChannelIcon, {
-              icon: x,
+            children: [null != O ? (0, r.jsx)(y.ZP.ChannelIcon, {
+              icon: O,
               "aria-label": P
             }) : null, _, F && (0, r.jsx)(o.u, {
               text: k.intl.string(k.t.QyZ4Td),

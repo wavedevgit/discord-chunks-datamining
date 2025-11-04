@@ -37,7 +37,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function P(e) {
   let {
     user: t,
     applicationId: n,
@@ -96,7 +96,7 @@ function j(e) {
     })]
   })
 }
-class P extends Chunk647438.PureComponent {
+class j extends Chunk647438.PureComponent {
   componentWillLeave(e) {
     null != this.peopleListItemRef.current && this.peopleListItemRef.current.componentWillLeave(e)
   }
@@ -179,7 +179,7 @@ class P extends Chunk647438.PureComponent {
         isGameRelationship: n,
         applicationId: i
       } = this.props;
-      (0, d.vq)(e, e => (0, r.jsx)(j, function(e, t) {
+      (0, d.vq)(e, e => (0, r.jsx)(P, function(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -217,4 +217,4 @@ class P extends Chunk647438.PureComponent {
     })
   }
 }
-let x = P
+let x = j

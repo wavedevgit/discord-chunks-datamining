@@ -343,7 +343,7 @@ let eE = e => {
       })
     })
   },
-  ej = () => (0, Chunk951288.jsxs)("div", {
+  eP = () => (0, Chunk951288.jsxs)("div", {
     className: Chunk443226.directMessagesHeader,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/semibold",
@@ -356,7 +356,7 @@ let eE = e => {
       })
     })]
   }),
-  eP = () => (0, Chunk51596.$Z)("DM_SEARCH");
+  ej = () => (0, Chunk51596.$Z)("DM_SEARCH");
 
 function ex(e) {
   switch (e) {
@@ -387,15 +387,15 @@ let eA = Chunk647438.memo(function(e) {
     hideAllDMs: O
   } = e, y = i.useRef(null), v = i.useRef(null), C = i.useRef(null), S = i.useRef(null), N = G.o.useConfig({
     location: "privatechannels"
-  }).friendsTab, j = (0, L.b5)("PrivateChannels"), P = null;
-  return c ? P = (0, r.jsx)(q.F, {
+  }).friendsTab, P = (0, L.b5)("PrivateChannels"), j = null;
+  return c ? j = (0, r.jsx)(q.F, {
     targetElementRef: S
-  }) : u && (P = (0, r.jsx)(z.d, {
+  }) : u && (j = (0, r.jsx)(z.d, {
     targetElementRef: S
   })), (0, r.jsxs)("nav", {
     className: eh.privateChannels,
     "aria-label": ef.intl.string(ef.t.ZH9aP4),
-    children: [E ? (0, r.jsx)(ej, {}) : (0, r.jsx)(ee.Z, {
+    children: [E ? (0, r.jsx)(eP, {}) : (0, r.jsx)(ee.Z, {
       childRef: y,
       tutorialId: "direct-messages",
       position: "right",
@@ -410,7 +410,7 @@ let eA = Chunk647438.memo(function(e) {
           color: g.zx.Colors.PRIMARY,
           size: g.zx.Sizes.SMALL,
           fullWidth: true,
-          onClick: eP,
+          onClick: ej,
           children: (0, r.jsx)(h.Z, {
             children: ef.intl.string(ef.t.LzcpeZ)
           })
@@ -427,7 +427,7 @@ let eA = Chunk647438.memo(function(e) {
         selected: null != b ? b === eu.Z5c.ME_ACTIVITY : l === eu.Z5c.ME_ACTIVITY
       }, "activity_experimental") : null, E ? null : (0, r.jsx)(eO, {
         selected: null != b ? b === eu.Z5c.FRIENDS : l === eu.Z5c.FRIENDS
-      }, "friends"), !E && j ? (0, r.jsx)(eE, {
+      }, "friends"), !E && P ? (0, r.jsx)(eE, {
         selected: null != b ? b === eu.Z5c.ICYMI : l === eu.Z5c.ICYMI
       }, "icymi") : null, n && t && !E ? (0, r.jsx)(ey, {
         selected: null == b ? null != l && l.startsWith(eu.Z5c.APPLICATION_LIBRARY) : b.startsWith(eu.Z5c.APPLICATION_LIBRARY),
@@ -446,7 +446,7 @@ let eA = Chunk647438.memo(function(e) {
               object: eu.qAy.NAVIGATION_LINK
             }
           }
-        }), P]
+        }), j]
       }, "nitro-tab-group") : null, E ? null : (0, r.jsx)(T.i, {
         selected: b === eu.Z5c.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(eu.Z5c.COLLECTIBLES_SHOP)),
         listItemRef: v,

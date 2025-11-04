@@ -15,7 +15,7 @@ require.d(exports, {
   jv: () => S,
   mV: () => L,
   rK: () => w,
-  wV: () => P,
+  wV: () => j,
   y_: () => y,
   ye: () => U
 }), require("./539854.js"), require("./472816.js"), require("./794429.js"), require("./388685.js");
@@ -108,7 +108,7 @@ async function N() {
   await T([...module, ...exports], require, require + Chunk797394.xy)
 }
 
-function j(e, t, n) {
+function P(e, t, n) {
   let r = [],
     i = null;
   for (let l of e) {
@@ -119,7 +119,7 @@ function j(e, t, n) {
   return r
 }
 
-function P(e, t) {
+function j(e, t) {
   let {
     reactions: n,
     reactionCount: r
@@ -148,7 +148,7 @@ function P(e, t) {
       reactions: t,
       reactionCount: n
     }
-  }(e.messages), i = j(e.messages, true, 3);
+  }(e.messages), i = P(e.messages, true, 3);
   return {
     id: e.id,
     topic: e.topic,
@@ -172,7 +172,7 @@ function P(e, t) {
 function x(e) {
   let t = [];
   null != e.messages && (t = e.messages);
-  let n = j(t);
+  let n = P(t);
   return {
     guild_id: e.guild_id,
     content_id: e.content_id,
@@ -192,7 +192,7 @@ function x(e) {
 function A(e, t) {
   var n, r;
   let i, l;
-  return null != e.before_messages && (i = j(e.before_messages).slice(-I.h9)), null != e.after_messages && (l = j(e.after_messages).slice(0, I.Ml)), n = function(e) {
+  return null != e.before_messages && (i = P(e.before_messages).slice(-I.h9)), null != e.after_messages && (l = P(e.after_messages).slice(0, I.Ml)), n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

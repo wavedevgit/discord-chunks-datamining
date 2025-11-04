@@ -29,7 +29,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk863141 = require("./863141.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
-let P = e => (0, v.Z)(e).required().keys({
+let j = e => (0, v.Z)(e).required().keys({
   channel_id: e.string().required()
 });
 
@@ -41,10 +41,10 @@ function x(e) {
     socket: n
   } = e, r = f.Z.getChannel(t);
   if (null == r || !(0, I.zM)(r, n.application.id, n.authorization.scopes)) throw new O.Z({
-    errorCode: j.lTL.INVALID_CHANNEL
+    errorCode: P.lTL.INVALID_CHANNEL
   }, "Invalid channel id: ".concat(t));
   if ((0, o.ft)(r)) throw new O.Z({
-    errorCode: j.lTL.INVALID_CHANNEL
+    errorCode: P.lTL.INVALID_CHANNEL
   }, "Invalid nsfw channel id: ".concat(r.id))
 }
 let A = e => (0, v.Z)(e).keys({
@@ -58,7 +58,7 @@ function Z(e) {
     }
   } = e;
   if (null != t && null == f.Z.getChannel(t)) throw new O.Z({
-    errorCode: j.lTL.INVALID_CHANNEL
+    errorCode: P.lTL.INVALID_CHANNEL
   }, "Invalid channel id: ".concat(t))
 }
 let w = {
@@ -74,7 +74,7 @@ let w = {
         }
       } = e;
       if (null == h.Z.getGuild(t)) throw new O.Z({
-        errorCode: j.lTL.INVALID_GUILD
+        errorCode: P.lTL.INVALID_GUILD
       }, "Invalid guild id: ".concat(t));
       return e => {
         var n;
@@ -109,7 +109,7 @@ let w = {
         }
       } = e;
       if (null == f.Z.getChannel(t)) throw new O.Z({
-        errorCode: j.lTL.INVALID_CHANNEL
+        errorCode: P.lTL.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       return e => {
         let {
@@ -142,7 +142,7 @@ let w = {
         }
       } = e;
       if (null == f.Z.getChannel(t)) throw new O.Z({
-        errorCode: j.lTL.INVALID_CHANNEL
+        errorCode: P.lTL.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       return e => {
         let {
@@ -175,7 +175,7 @@ let w = {
         }
       } = e;
       if (null == f.Z.getChannel(t)) throw new O.Z({
-        errorCode: j.lTL.INVALID_CHANNEL
+        errorCode: P.lTL.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       return e => {
         let {
@@ -209,17 +209,17 @@ let w = {
   },
   [Chunk981631.zMe.MESSAGE_CREATE]: {
     scope: Chunk243814.x.RPC,
-    validation: P,
+    validation: j,
     handler: x
   },
   [Chunk981631.zMe.MESSAGE_UPDATE]: {
     scope: Chunk243814.x.RPC,
-    validation: P,
+    validation: j,
     handler: x
   },
   [Chunk981631.zMe.MESSAGE_DELETE]: {
     scope: Chunk243814.x.RPC,
-    validation: P,
+    validation: j,
     handler: x
   },
   [Chunk981631.zMe.SPEAKING_START]: {
@@ -318,8 +318,8 @@ let w = {
       let {
         socket: n
       } = e;
-      if (a.e$(a.vB(null != (t = n.application.flags) ? t : 0), a.vB(j.udG.DISABLE_RELATIONSHIPS_ACCESS))) throw new O.Z({
-        errorCode: j.lTL.INVALID_PERMISSIONS
+      if (a.e$(a.vB(null != (t = n.application.flags) ? t : 0), a.vB(P.udG.DISABLE_RELATIONSHIPS_ACCESS))) throw new O.Z({
+        errorCode: P.lTL.INVALID_PERMISSIONS
       }, "Missing Permissions")
     }
   },

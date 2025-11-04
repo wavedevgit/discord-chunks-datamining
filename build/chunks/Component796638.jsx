@@ -79,16 +79,16 @@ function b(e, t) {
       false !== b && (_ = f[b], f.splice(b, 1));
       let C = null == _ || p ? e : e - r - s,
         v = Math.max(0, Math.min(Math.floor((C - s) / (o + s)), u, t.length)),
-        x = Math.min((C - s) / v - s, r),
-        O = Math.max(0, v - h.length),
+        O = Math.min((C - s) / v - s, r),
+        x = Math.max(0, v - h.length),
         E = h.slice(0, v),
-        j = f.slice(0, O),
-        S = Array(O);
-      if (O > 0) {
+        j = f.slice(0, x),
+        S = Array(x);
+      if (x > 0) {
         let e = [];
         for (let t of j) {
           let n = y.current[t.id];
-          null != n && n < O ? S[n] = t : e.push(t)
+          null != n && n < x ? S[n] = t : e.push(t)
         }
         for (let t = 0; t < S.length; t++) {
           if (null != S[t]) continue;
@@ -102,7 +102,7 @@ function b(e, t) {
       let I = [...E, ...P];
       return null != _ && (p && I.length >= v ? I[Math.max(0, I.length - 1)] = _ : I.push(_)), {
         visibleParticipants: I,
-        participantTileWidth: x
+        participantTileWidth: O
       }
     }, [e, t, b, f, p, u, s, o, r]);
   return {

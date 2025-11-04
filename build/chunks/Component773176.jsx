@@ -182,7 +182,7 @@ function ep(e) {
     canReact: g,
     canConfigureJoin: b,
     canReply: v,
-    canStartThread: x,
+    canStartThread: O,
     canViewThread: T,
     canForward: N,
     isExpanded: A,
@@ -207,13 +207,13 @@ function ep(e) {
       author: d
     } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), m = (0, u.e7)([L.default], () => L.default.getId()), g = (0, D.$R)(t), b = (0, D.Gu)(t), {
       firstMessage: C
-    } = (0, u.e7)([_.Z], () => _.Z.getMessage(t.id), [t.id]), v = k.nc.useSetting(), x = k.Sb.useSetting(), E = (0, u.e7)([V.Z], () => null == t.guild_id || V.Z.canChatInGuild(t.guild_id), [t]), {
+    } = (0, u.e7)([_.Z], () => _.Z.getMessage(t.id), [t.id]), v = k.nc.useSetting(), O = k.Sb.useSetting(), E = (0, u.e7)([V.Z], () => null == t.guild_id || V.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: j,
       canAddNewReactions: S
     } = (0, u.cj)([H.Z], () => ({
       canAddNewReactions: E && H.Z.can(er.Plq.ADD_REACTIONS, t),
       canManageMessages: H.Z.can(er.Plq.MANAGE_MESSAGES, t)
-    }), [t, E]), P = (0, w.U)(t, n), I = (0, D.NE)(t, n), Z = (0, D.Ek)(n), T = (0, u.e7)([O.Z], () => null != t.guild_id && O.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([B.ZP], () => null != t.guild_id && B.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === m, U = (j || n.canDeleteOwnMessage(m)) && g && !er.V$x.UNDELETABLE.has(n.type);
+    }), [t, E]), P = (0, w.U)(t, n), I = (0, D.NE)(t, n), Z = (0, D.Ek)(n), T = (0, u.e7)([x.Z], () => null != t.guild_id && x.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([B.ZP], () => null != t.guild_id && B.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === m, U = (j || n.canDeleteOwnMessage(m)) && g && !er.V$x.UNDELETABLE.has(n.type);
     n.type === er.uaV.AUTO_MODERATION_ACTION && (U = U && j), t.isModeratorReportChannel() && (U = U && n.id !== (null == C ? true : C.id) && !(0, J.Z)(n));
     let G = (0, Y.a4)(n),
       z = (0, X.Z)(n, t),
@@ -255,7 +255,7 @@ function ep(e) {
       canViewThread: Z,
       canForward: ei,
       canCopy: W.wS,
-      hasDeveloperMode: x,
+      hasDeveloperMode: O,
       canReact: !$ && v,
       canPublish: ee,
       canConfigureJoin: en,
@@ -312,7 +312,7 @@ function ep(e) {
         label: n.pinned ? el.intl.string(el.t["Bse+F/"]) : el.intl.string(el.t.CvQ18w),
         icon: d.qQX,
         onClick: e => (0, ee.rY)(t, n, e)
-      }, "pin") : null, x && N ? (0, r.jsx)($.sF, {
+      }, "pin") : null, O && N ? (0, r.jsx)($.sF, {
         label: el.intl.string(el.t.rBIGBL),
         icon: d.or_,
         onClick: () => (0, ee.gK)(t, n)
@@ -361,11 +361,11 @@ function ep(e) {
       label: el.intl.string(el.t.I3ltXO),
       icon: C.Z,
       onClick: () => (0, ee.ts)(t, n)
-    }, "forward") : null, x && !N ? (0, r.jsx)($.sF, {
+    }, "forward") : null, O && !N ? (0, r.jsx)($.sF, {
       label: el.intl.string(el.t.rBIGBL),
       icon: d.or_,
       onClick: () => (0, ee.gK)(t, n)
-    }, "thread") : null, !x && T ? (0, r.jsx)($.sF, {
+    }, "thread") : null, !O && T ? (0, r.jsx)($.sF, {
       label: el.intl.string(el.t["39d0Wj"]),
       icon: d.or_,
       onClick: () => (0, ee.qe)(t, n)
@@ -436,7 +436,7 @@ function ef(e) {
   let {
     channel: t,
     message: n
-  } = e, i = (0, u.e7)([v.Z], () => null != v.Z.getMessage(n.id), [n.id]), l = null == n.interaction || null != n.interactionData && (0, x.$s)(n.interactionData);
+  } = e, i = (0, u.e7)([v.Z], () => null != v.Z.getMessage(n.id), [n.id]), l = null == n.interaction || null != n.interactionData && (0, O.$s)(n.interactionData);
   return (0, r.jsxs)(r.Fragment, {
     children: [!i && l && (0, r.jsx)($.sF, {
       label: el.intl.string(el.t["5911Lb"]),

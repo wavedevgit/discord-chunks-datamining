@@ -41,17 +41,17 @@ function D(e) {
   let {
     guild: t,
     isStudyRoomNotice: n = false
-  } = e, l = (0, b.y)(t.id), d = (0, E.k5)(t.id), j = (0, s.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
+  } = e, l = (0, b.y)(t.id), d = (0, E.k5)(t.id), P = (0, s.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
     isStageNoticeHidden: D,
     isEventNoticeHidden: k
   } = (0, s.cj)([g.Z], () => ({
     isStageNoticeHidden: g.Z.isLiveChannelNoticeHidden({
-      stageId: null == j ? true : j.id
+      stageId: null == P ? true : P.id
     }),
     isEventNoticeHidden: g.Z.isLiveChannelNoticeHidden({
       eventId: null == d ? true : d.id
     })
-  }), [j, d]), U = null == l ? true : l.id, G = (0, s.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), B = (0, s.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), H = (0, s.e7)([P.Z], () => P.Z.can(Z.Plq.CONNECT, l)), V = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, s.e7)([x.default], () => x.default.getUser(F), [F]);
+  }), [P, d]), U = null == l ? true : l.id, G = (0, s.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), B = (0, s.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), H = (0, s.e7)([j.Z], () => j.Z.can(Z.Plq.CONNECT, l)), V = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, s.e7)([x.default], () => x.default.getUser(F), [F]);
   i.useEffect(() => {
     null != F && (0, u.PR)(F)
   }, [F]);
@@ -247,7 +247,7 @@ function D(e) {
     }
   })({
     guildEvent: d,
-    stageInstance: j,
+    stageInstance: P,
     activeChannel: l,
     canConnect: H,
     myRole: V,
@@ -257,7 +257,7 @@ function D(e) {
     isEventNoticeHidden: k,
     isStageNoticeHidden: D,
     isStudyRoomNotice: n
-  }), [d, j, l, H, V, z, G, B, k, D, n]);
+  }), [d, P, l, H, V, z, G, B, k, D, n]);
   return null == Y ? null : (0, r.jsxs)("div", {
     className: R.container,
     children: [null != ee ? (0, r.jsx)(c.P3F, {
@@ -326,7 +326,7 @@ function M(e) {
     user: t,
     guildId: n
   } = e, l = i.useRef(null);
-  return (0, r.jsx)(j.Z, {
+  return (0, r.jsx)(P.Z, {
     targetElementRef: l,
     user: t,
     guildId: n,

@@ -171,7 +171,7 @@ let k = {
       onTrigger(e, t) {
         if (!(0, T.I1)(t.shortcut)) return;
         let n = (0, x.Z)();
-        null != n && l.Z.setInputLocked(!j.default.isLocked(n), n)
+        null != n && l.Z.setInputLocked(!P.default.isLocked(n), n)
       },
       keyEvents: {
         keyup: true,

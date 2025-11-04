@@ -43,6 +43,6 @@ function a(e) {
       outlineColor: C
     } = (0, r.bg)(t.userId, c, u, s),
     v = _(C, 6 + l.q2),
-    x = null != v && g(v);
-  x && (0, i.I)(n, v.x, v.y, C, l.q2), _(y, 6), x && (0, i.T)(n, v.x, v.y, t.userId)
+    O = null != v && g(v);
+  O && (0, i.I)(n, v.x, v.y, C, l.q2), _(y, 6), O && (0, i.T)(n, v.x, v.y, t.userId)
 }

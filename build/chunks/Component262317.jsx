@@ -150,7 +150,7 @@ let F = (0, Chunk888651.$)(function(e) {
     hangStatusActivity: eg,
     requestToStreamActivity: eb,
     showHangStatus: e_
-  } = e, ey = i.useRef(null), [eC, ev] = i.useState(false), ex = i.useRef(null), [eO, eE] = i.useState(false), [ej, eS] = i.useState(false), [eP, eI] = i.useState(false), [eZ, eT] = i.useState(false), eN = ej || eZ || eP, eA = eO || eN, ew = (null == eb ? true : eb.session_id) != null, eM = () => {
+  } = e, ey = i.useRef(null), [eC, ev] = i.useState(false), eO = i.useRef(null), [ex, eE] = i.useState(false), [ej, eS] = i.useState(false), [eP, eI] = i.useState(false), [eZ, eT] = i.useState(false), eN = ej || eZ || eP, eA = ex || eN, ew = (null == eb ? true : eb.session_id) != null, eM = () => {
     ev(!eC)
   }, eR = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
@@ -158,11 +158,11 @@ let F = (0, Chunk888651.$)(function(e) {
   }, eD = () => {
     (et || e_ || ew) && (null == ea || ea(f.id))
   }, ek = e => {
-    e ? ex.current = setTimeout(() => {
+    e ? eO.current = setTimeout(() => {
       eE(true)
-    }, 150 * !!es) : clearTimeout(ex.current)
+    }, 150 * !!es) : clearTimeout(eO.current)
   };
-  i.useEffect(() => () => clearTimeout(ex.current), []);
+  i.useEffect(() => () => clearTimeout(eO.current), []);
   let eL = e => {
       e && eE(false)
     },
@@ -193,7 +193,7 @@ let F = (0, Chunk888651.$)(function(e) {
         }))
       })
     },
-    eF = e => eh ? (0, r.jsx)(O.$, L(k({}, e), {
+    eF = e => eh ? (0, r.jsx)(x.$, L(k({}, e), {
       channel: U,
       setIsHangStatusInputFocused: eS,
       setIsEmojiPickerOpen: eT
@@ -206,7 +206,7 @@ let F = (0, Chunk888651.$)(function(e) {
       userId: f.id,
       channel: U
     }),
-    eH = () => (0, h.dl)() && (0, h.zd)(U.id) ? null : (0, r.jsx)(x.Z, {
+    eH = () => (0, h.dl)() && (0, h.zd)(U.id) ? null : (0, r.jsx)(O.Z, {
       user: f,
       channel: U,
       onWatch: eU,

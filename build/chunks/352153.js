@@ -36,12 +36,12 @@ function h(e) {
     [S, T] = r.useState([]),
     {
       loadId: N,
-      lastScrollEventTimestamp: j
+      lastScrollEventTimestamp: P
     } = (0, i.cj)([c.Z], () => ({
       loadId: c.Z.getLoadId(),
       lastScrollEventTimestamp: c.Z.lastScrollEvent()
     })),
-    P = S.filter(e => {
+    j = S.filter(e => {
       let {
         item: t
       } = e;
@@ -52,12 +52,12 @@ function h(e) {
       } = e;
       return t.id
     }).pop(),
-    x = (0, l.Z)(P);
+    x = (0, l.Z)(j);
   r.useEffect(() => {
-    if (v || y || null == x || null == P || P === x) return;
+    if (v || y || null == x || null == j || j === x) return;
     let e = Date.now();
-    e - j > m.C && (a.Z.gravityScrollEvent(e), s.m.trackFeedFirstScrollStarted())
-  }, [v, j, x, P, N, y]);
+    e - P > m.C && (a.Z.gravityScrollEvent(e), s.m.trackFeedFirstScrollStarted())
+  }, [v, P, x, j, N, y]);
   let A = r.useCallback(e => {
       var t, n;
       let {

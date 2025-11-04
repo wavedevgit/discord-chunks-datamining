@@ -27,8 +27,8 @@ let C = (0, Chunk112724.Z)(e => {
     selectedParticipant: a,
     participantsVersion: C,
     layout: v,
-    onSelectParticipant: x,
-    onContextMenuParticipant: O,
+    onSelectParticipant: O,
+    onContextMenuParticipant: x,
     onFullscreenParticipant: E,
     channel: j,
     hasConnectPermission: S,
@@ -61,7 +61,7 @@ let C = (0, Chunk112724.Z)(e => {
     width: T,
     className: y.voiceCallWrapper,
     participants: t,
-    onContextMenu: O
+    onContextMenu: x
   });
   if (n = I ? n : t, null == a) {
     if (0 === n.length) {
@@ -80,9 +80,9 @@ let C = (0, Chunk112724.Z)(e => {
         className: y.videoGrid,
         participants: k,
         totalNumberOfParticipants: t.length,
-        onClick: x,
+        onClick: O,
         onDoubleClick: E,
-        onContextMenu: O,
+        onContextMenu: x,
         inCall: I,
         popoutType: M
       })
@@ -90,8 +90,8 @@ let C = (0, Chunk112724.Z)(e => {
   }
   return (0, r.jsx)(m.Z, {
     onFullscreenParticipant: E,
-    onContextMenuParticipant: O,
-    onSelectParticipant: x,
+    onContextMenuParticipant: x,
+    onSelectParticipant: O,
     selectedParticipant: a,
     filteredParticipants: k,
     participants: t,

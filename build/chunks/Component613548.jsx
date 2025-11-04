@@ -101,13 +101,13 @@ function R(e) {
     participant: C,
     showQuality: true,
     premiumIndicator: false
-  }, "live-indicator"))), (null == C ? true : C.type) === N.fO.USER && U.push((0, r.jsx)(x.Z, {
+  }, "live-indicator"))), (null == C ? true : C.type) === N.fO.USER && U.push((0, r.jsx)(O.Z, {
     className: w.button,
     userId: C.id
   }, "video-warning")), u && !R && U.push((0, r.jsx)(d.yRy, {
     targetElementRef: l,
     position: "bottom",
-    renderPopout: () => (0, r.jsx)(O.Z, {
+    renderPopout: () => (0, r.jsx)(x.Z, {
       children: (0, r.jsx)(Z.Z, {
         channel: t
       })

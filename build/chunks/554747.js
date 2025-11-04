@@ -5,10 +5,10 @@ require.d(exports, {
   ZP: () => _,
   eF: () => E,
   gM: () => C,
-  k5: () => x,
+  k5: () => O,
   qY: () => y,
   sz: () => j,
-  u1: () => O
+  u1: () => x
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -117,7 +117,7 @@ function v(e) {
     }
 }
 
-function x(e) {
+function O(e) {
   return (0, i.e7)([c.ZP, l.Z, o.Z], () => c.ZP.getGuildScheduledEventsByIndex(c.bN.GUILD_EVENT_ACTIVE(e)).find(e => {
     if (e.entity_type === h.WX.NONE || !(0, c.xt)(e)) returnfalse;
     if (null == e.channel_id) returntrue;
@@ -126,7 +126,7 @@ function x(e) {
   }), [e])
 }
 
-function O(e) {
+function x(e) {
   return (0, i.e7)([c.ZP], () => c.ZP.getGuildScheduledEventsByIndex(c.bN.CHANNEL_EVENT_UPCOMING(e)), [e])
 }
 

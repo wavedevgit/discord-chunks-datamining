@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 262734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,16 +32,16 @@ let N = {
   [Chunk918559.MI.RESIZABLE]: Chunk909357.resizable
 };
 
-function j(e) {
+function P(e) {
   let {
     frame: t
   } = e, n = (0, f.q)(t.applicationId), l = (0, d.Z)(), {
-    selectedChannelId: j,
-    selectedVoiceChannelId: P
+    selectedChannelId: P,
+    selectedVoiceChannelId: j
   } = (0, s.cj)([b.Z], () => ({
     selectedChannelId: b.Z.getChannelId(),
     selectedVoiceChannelId: b.Z.getVoiceChannelId()
-  })), x = (0, s.e7)([m.Z], () => null != P && j === P && m.Z.getChatOpen(P), [j, P]), A = (0, s.e7)([h.ZP], () => h.ZP.callChatSidebarWidth), Z = (0, u.dQu)(o.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
+  })), x = (0, s.e7)([m.Z], () => null != j && P === j && m.Z.getChatOpen(j), [P, j]), A = (0, s.e7)([h.ZP], () => h.ZP.callChatSidebarWidth), Z = (0, u.dQu)(o.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
     width: 0,
     height: 0
   }), M = i.useCallback(() => {

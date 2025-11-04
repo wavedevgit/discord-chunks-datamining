@@ -119,12 +119,12 @@ let G = Chunk647438.memo(function(e) {
       T.S.unsubscribe(k.CkL.UPLOAD_FILE, e)
     }
   });
-  let e_ = (0, O.NE)(W),
-    ey = (0, O.Xu)(W),
+  let e_ = (0, x.NE)(W),
+    ey = (0, x.Xu)(W),
     eC = !E.dN.useSetting() && !(0, N.isAndroidWeb)() && null != window.ResizeObserver,
     ev = (0, v.UI)(null != W ? W : true),
-    ex = (0, p.qB)(),
-    eO = (0, x.Us)({
+    eO = (0, p.qB)(),
+    ex = (0, O.Us)({
       location: "ChannelAttachButton"
     }),
     eE = f.C.useExperiment({
@@ -141,9 +141,9 @@ let G = Chunk647438.memo(function(e) {
       activities: $,
       newClipsCount: ej,
       canPostPolls: ev,
-      canLaunchActivities: ex,
+      canLaunchActivities: eO,
       appContext: X,
-      canSendScheduledMessages: eO,
+      canSendScheduledMessages: ex,
       canSummarizeThreads: eE
     });
   if (0 === eS.length) return null;
@@ -232,7 +232,7 @@ let G = Chunk647438.memo(function(e) {
         channel: W,
         isOmniMenuOpen: "attachMenu" === eu,
         openOmniMenu: () => ed("attachMenu"),
-        enabled: ex,
+        enabled: eO,
         animationContainerClassName: F.buttonAnimation,
         glowClassName: F.buttonAnimationGlow,
         trinketsClassName: F.buttonAnimationTrinkets,

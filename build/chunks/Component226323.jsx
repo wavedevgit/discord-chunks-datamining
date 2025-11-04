@@ -58,10 +58,10 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = {
+let P = {
     offset: 2
   },
-  P = {
+  j = {
     serverDeaf: {
       icon: Chunk481060.Vm4,
       colorize: true,
@@ -124,11 +124,11 @@ function x(e) {
         mute: i,
         localMute: l
       } = e;
-      if (t) return P.serverDeaf;
-      if (n) return P.deaf;
-      if (r) return P.serverMute;
-      if (l) return P.localMute;
-      if (i) return P.mute
+      if (t) return j.serverDeaf;
+      if (n) return j.deaf;
+      if (r) return j.serverMute;
+      if (l) return j.localMute;
+      if (i) return j.mute
     }({
       serverDeaf: R,
       deaf: w,
@@ -184,7 +184,7 @@ function x(e) {
         },
         className: S.avatarContainer,
         onContextMenu: z,
-        focusProps: j,
+        focusProps: P,
         children: (0, r.jsx)(b.Z, {
           shakeLocation: v.oZ.VOICE_USER,
           isShaking: M,
@@ -247,7 +247,7 @@ function A(e) {
       size: "xs",
       color: "currentColor"
     }),
-    focusProps: j
+    focusProps: P
   }), I = _ && o ? t : g;
   return I.length <= 0 ? null : (0, r.jsx)(c.zJl, {
     className: a()(S.scroller, l),

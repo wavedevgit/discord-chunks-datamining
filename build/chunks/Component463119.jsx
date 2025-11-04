@@ -188,15 +188,15 @@ let M = e => {
       C = D(e, ["displayOptions"]);
     let S = (0, a.e7)([f.Z], () => f.Z.useReducedMotion),
       [T, N] = i.useState(0),
-      [j, P] = i.useState(false),
+      [P, j] = i.useState(false),
       x = (0, p.ZP)(),
       A = (0, o.wj)(x);
-    j ? A ? (t = null == (l = v.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = v.entrypointBackgroundStyle) || null == (s = u.hovered) ? true : s.dark) : (t = null == (d = v.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (h = v.entrypointBackgroundStyle) || null == (m = h.hovered) ? true : m.light) : A ? (t = null == (g = v.entryPointBackgroundAssets) ? true : g.srcDark, n = null == (b = v.entrypointBackgroundStyle) || null == (_ = b.resting) ? true : _.dark) : (t = null == (E = v.entryPointBackgroundAssets) ? true : E.srcLight, n = null == (y = v.entrypointBackgroundStyle) || null == (O = y.resting) ? true : O.light);
+    P ? A ? (t = null == (l = v.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = v.entrypointBackgroundStyle) || null == (s = u.hovered) ? true : s.dark) : (t = null == (d = v.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (h = v.entrypointBackgroundStyle) || null == (m = h.hovered) ? true : m.light) : A ? (t = null == (g = v.entryPointBackgroundAssets) ? true : g.srcDark, n = null == (b = v.entrypointBackgroundStyle) || null == (_ = b.resting) ? true : _.dark) : (t = null == (E = v.entryPointBackgroundAssets) ? true : E.srcLight, n = null == (y = v.entrypointBackgroundStyle) || null == (O = y.resting) ? true : O.light);
     let k = i.useCallback(e => {
-        v.assetIds.length > 0 && N(e => (e + 1) % v.assetIds.length), P(true), null == e || e()
+        v.assetIds.length > 0 && N(e => (e + 1) % v.assetIds.length), j(true), null == e || e()
       }, [v.assetIds.length]),
       G = i.useCallback(e => {
-        P(false), null == e || e()
+        j(false), null == e || e()
       }, []),
       H = v.title();
     return (0, r.jsx)(c.aML, {
@@ -339,17 +339,17 @@ let M = e => {
       listItemRef: l
     };
     if (null != a) switch (a.type) {
-      case j.k2.TOOLTIP:
+      case P.k2.TOOLTIP:
         return (0, r.jsx)(V, R(L({}, m), {
           displayOptions: a
         }));
-      case j.k2.COACHTIP:
+      case P.k2.COACHTIP:
         return (0, r.jsx)(H, R(L({}, m), {
           displayOptions: a
         }));
-      case j.k2.BADGE:
+      case P.k2.BADGE:
         return (0, r.jsx)(G, L({}, m));
-      case j.k2.COACHMARK:
+      case P.k2.COACHMARK:
         return (0, r.jsx)(F, R(L({
           dismissContent: o
         }, m), {

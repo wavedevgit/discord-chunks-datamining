@@ -66,11 +66,11 @@ let E = (0, Chunk703912.Z)(e => {
     channelId: S,
     prompt: T,
     disableGuildSelect: N,
-    disclosures: j,
-    integrationType: P,
+    disclosures: P,
+    integrationType: j,
     pid: x,
     signal: A
-  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != P ? null == u ? true : u.get(P) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
+  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != j ? null == u ? true : u.get(j) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
     let a = (0, m.jU)(x),
       w = i.z1l;
@@ -128,7 +128,7 @@ let E = (0, Chunk703912.Z)(e => {
       authorizations: u,
       clientId: n,
       scopes: null != d ? d : [],
-      disclosures: null != j ? j : [],
+      disclosures: null != P ? P : [],
       callback: D,
       responseType: E,
       redirectUri: O,
@@ -140,7 +140,7 @@ let E = (0, Chunk703912.Z)(e => {
       channelId: S,
       prompt: T,
       disableGuildSelect: "boolean" == typeof N ? N : "true" === N,
-      integrationType: P,
+      integrationType: j,
       cancelCompletesFlow: true
     })), {
       modalKey: Z,

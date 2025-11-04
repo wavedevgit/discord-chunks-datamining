@@ -1,4 +1,4 @@
-/** Chunk was on 85496 **/
+/** Chunk was on 56710 **/
 /** chunk id: 372564, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk374470 = require("./374470.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk413140 = require("./413140.js"),
   Chunk430864 = require("./430864.js");
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,20 +29,20 @@ function g(e, t, n) {
 function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
-      g(e, t, n[t])
+    }))), r.forEach(function(t) {
+      m(e, t, n[t])
     })
   }
   return e
 }
 
-function v(e) {
+function _(e) {
   return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class j extends Chunk647438.Component {
+class y extends Chunk647438.Component {
   render() {
     let {
       channel: e
@@ -51,7 +51,7 @@ class j extends Chunk647438.Component {
     let t = null != module.topic && module.topic.length > 0;
     return null != module.linkedLobby || exports ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk984370.Z.Divider, {}), (0, Chunk951288.jsxs)("div", {
-        className: a()(Chunk413140.topic, Chunk413140.expandable, Chunk430864.markup),
+        className: o()(Chunk413140.topic, Chunk413140.expandable, Chunk430864.markup),
         onMouseDown: this.onMouseDown,
         onMouseMove: this.onMouseMove,
         onMouseUp: this.onMouseUp,
@@ -68,25 +68,25 @@ class j extends Chunk647438.Component {
     }) : null
   }
   constructor(...e) {
-    super(...e), g(this, "_mouseDown", false), g(this, "_mouseUp", false), g(this, "handleOpenTopic", e => {
+    super(...e), m(this, "_mouseDown", false), m(this, "_mouseUp", false), m(this, "handleOpenTopic", e => {
       let t = e.target;
-      if ((0, s.kK)(t)) {
-        if (v(t)) return;
+      if ((0, a.kK)(t)) {
+        if (_(t)) return;
         let e = t.parentNode;
-        if ((0, s.kK)(e) && v(e)) return
-      }(0, o.ZDy)(async () => {
+        if ((0, a.kK)(e) && _(e)) return
+      }(0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("65631").then(n.bind(n, 10722));
-        return t => (0, l.jsx)(e, b({}, t, this.props))
+        return t => (0, r.jsx)(e, b({}, t, this.props))
       })
-    }), g(this, "onMouseDown", () => {
+    }), m(this, "onMouseDown", () => {
       this._mouseDown = true
-    }), g(this, "onMouseMove", () => {
+    }), m(this, "onMouseMove", () => {
       this._mouseDown && (this._mouseDown = false)
-    }), g(this, "onMouseUp", e => {
+    }), m(this, "onMouseUp", e => {
       this._mouseDown && e.button !== p.AeJ.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
-    }), g(this, "handleContextMenu", e => {
+    }), m(this, "handleContextMenu", e => {
       let {
         channel: t,
         guild: i
@@ -95,12 +95,12 @@ class j extends Chunk647438.Component {
         let {
           default: e
         } = await Promise.all([n.e("57804"), n.e("49049"), n.e("89250"), n.e("62856"), n.e("66201"), n.e("91315"), n.e("30474"), n.e("91053"), n.e("24783"), n.e("30442")]).then(n.bind(n, 439635));
-        return n => (0, l.jsx)(e, function(e, t) {
+        return n => (0, r.jsx)(e, function(e, t) {
           return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var l = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, l)
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
             }
             return n
           })(Object(t)).forEach(function(n) {
@@ -112,7 +112,7 @@ class j extends Chunk647438.Component {
           includeTopic: true
         }))
       })
-    }), g(this, "handleClick", e => {
+    }), m(this, "handleClick", e => {
       if (this._mouseUp) {
         this._mouseUp = false;
         return
@@ -121,4 +121,4 @@ class j extends Chunk647438.Component {
     })
   }
 }
-let O = j
+let O = y

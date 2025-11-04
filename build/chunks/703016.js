@@ -106,7 +106,7 @@ function H(e) {
   let {
     message: i,
     channel: l
-  } = e, a = i.type === P.uaV.REPLY ? u.Z.getMessageByReference(i.messageReference) : null, s = (null == a ? true : a.state) === u.Y.LOADED ? null == a || null == (t = a.message) ? true : t.author : null, o = null != s ? null != (n = g.ZP.getNick(l.guild_id, null == s ? true : s.id)) ? n : S.ZP.getName(s) : null, c = l.getGuildId(), d = null != (r = g.ZP.getNick(c, i.author.id)) ? r : S.ZP.getName(i.author);
+  } = e, a = i.type === j.uaV.REPLY ? u.Z.getMessageByReference(i.messageReference) : null, s = (null == a ? true : a.state) === u.Y.LOADED ? null == a || null == (t = a.message) ? true : t.author : null, o = null != s ? null != (n = g.ZP.getNick(l.guild_id, null == s ? true : s.id)) ? n : S.ZP.getName(s) : null, c = l.getGuildId(), d = null != (r = g.ZP.getNick(c, i.author.id)) ? r : S.ZP.getName(i.author);
   return U(D(i.content, d, c, o), true, l.id, i.id), true
 }
 
@@ -125,16 +125,16 @@ function V(e) {
     b = s === d || s === _,
     C = p.OW.getSetting() && o.tts && b,
     T = O.Z.getTTSType(),
-    N = (null == (t = o.author) ? true : t.id) !== f.default.getId() && (T === P.PrB.ALL_CHANNELS || T === P.PrB.SELECTED_CHANNEL && b);
+    N = (null == (t = o.author) ? true : t.id) !== f.default.getId() && (T === j.PrB.ALL_CHANNELS || T === j.PrB.SELECTED_CHANNEL && b);
   if ((C || N) && !I.Z.isBlockedOrIgnoredForMessage(o)) {
     if (A.indexOf(o.id) >= 0) returnfalse;
     A.unshift(o.id) > 10 && A.pop();
     let e = u.getGuildId();
     if (null != e && v.ZP.getMutedChannels(e).has(s)) returnfalse;
     let t = null != (l = null != (i = g.ZP.getNick(e, null == (n = o.author) ? true : n.id)) ? i : S.ZP.getName(o.author)) ? l : "",
-      c = o.type === P.uaV.REPLY ? null == (r = o.referenced_message) ? true : r.author : null,
+      c = o.type === j.uaV.REPLY ? null == (r = o.referenced_message) ? true : r.author : null,
       d = null != c ? null != (a = g.ZP.getNick(e, null == c ? true : c.id)) ? a : S.ZP.getName(c) : null;
-    U(D(o.content, t, e, d), false, u.id, o.id, j.f)
+    U(D(o.content, t, e, d), false, u.id, o.id, P.f)
   }
   returnfalse
 }

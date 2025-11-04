@@ -27,7 +27,7 @@ function b(e) {
     startDateTimeString: N
   } = i.useMemo(() => v ? {
     startDateTimeString: g.intl.string(g.t.TxqPQR)
-  } : (0, f.ub)(null != T ? T : new Date().toISOString()), [T, v]), j = null != E ? (0, p.cS)(E) : true, P = null != (t = null == I ? true : I.name) ? t : j, x = null != I ? (0, s.KS)(I) : null;
+  } : (0, f.ub)(null != T ? T : new Date().toISOString()), [T, v]), P = null != E ? (0, p.cS)(E) : true, j = null != (t = null == I ? true : I.name) ? t : P, x = null != I ? (0, s.KS)(I) : null;
   if (null == E || null == O) return null;
   let A = null != E.description && E.description.length > 0;
   return (0, r.jsxs)("div", {
@@ -75,7 +75,7 @@ function b(e) {
           variant: "text-xs/normal",
           color: "text-muted",
           className: _.eventLocationText,
-          children: null != P ? (0, c.m)(P, true) : null
+          children: null != j ? (0, c.m)(j, true) : null
         })]
       })]
     })]

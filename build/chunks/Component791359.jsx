@@ -52,7 +52,7 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
       voiceChannels: g
     } = t, _ = f.length, b = m.length, O = h.length, I = g.length > 0, T = p.o.useConfig({
       location: "itemcard"
-    }).demureActivityCards, j = i.useCallback(() => {
+    }).demureActivityCards, P = i.useCallback(() => {
       let e = h.filter(e => {
         var t, n;
         return (null == (t = e.game) ? true : t.name) != null && (0, E.isGameApplicationType)(null == (n = e.game) ? true : n.type)
@@ -64,7 +64,7 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
         in_voice_channel: I,
         games_detected: e
       })
-    }, [_, b, O, I, h]), P = o()(j, A);
+    }, [_, b, O, I, h]), j = o()(P, A);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: s,
       position: "left",
@@ -102,7 +102,7 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
           return e
         }({}, e), i = i = {
           ref: s,
-          onMouseEnter: P,
+          onMouseEnter: j,
           "aria-haspopup": "menu",
           className: x.itemCard,
           active: l,

@@ -43,28 +43,28 @@ let T = (0, Chunk112724.Z)(function(e) {
   (0, f.Tt)({
     location: v.intl.string(v.t["jnXV/V"])
   });
-  let [N, j] = i.useState(false);
+  let [N, P] = i.useState(false);
   i.useEffect(() => {
     let e = e => {
-        e.metaKey && j(true)
+        e.metaKey && P(true)
       },
       t = e => {
-        "Meta" === e.key && j(false)
+        "Meta" === e.key && P(false)
       },
       n = () => {
-        j(false)
+        P(false)
       };
     return window.addEventListener("keydown", e), window.addEventListener("keyup", t), window.addEventListener("blur", n), () => {
       window.removeEventListener("keydown", e), window.removeEventListener("keyup", t), window.removeEventListener("blur", n)
     }
   }, []);
-  let P = (0, O.G)(),
+  let j = (0, O.G)(),
     x = _.ZY.useExperiment({
       location: "icymi page"
     }).enabled,
     A = i.useCallback(async e => {
-      e.metaKey && x ? await (0, E.ye)(y.qAy.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON) : await P()
-    }, [P, x]),
+      e.metaKey && x ? await (0, E.ye)(y.qAy.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON) : await j()
+    }, [j, x]),
     Z = N && x ? v.intl.string(v.t.YplSn2) : v.intl.string(v.t.wzzjk9);
   return n ? (0, r.jsxs)("div", {
     className: a()(S.chat, C.container),

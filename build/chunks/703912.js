@@ -58,10 +58,10 @@ function T(e, t) {
   }), e
 }
 let N = "CachedTokens",
-  j = {
+  P = {
     "1273616940451102832": new Chunk63023.Z(2, +Chunk70956.Z.Millis.MINUTE)
   };
-async function P(e, t, n) {
+async function j(e, t, n) {
   let r, l, s, o, c, {
     client_id: u,
     response_type: d = "code",
@@ -70,7 +70,7 @@ async function P(e, t, n) {
     code_challenge_method: S,
     state: T,
     nonce: N,
-    scope: P,
+    scope: j,
     permissions: x,
     guild_id: A,
     channel_id: Z,
@@ -91,7 +91,7 @@ async function P(e, t, n) {
     errorCode: C.lTL.OAUTH2_ERROR
   }, "Redirect URI cannot be used in the RPC OAuth2 Authorization flow");
   let U = [];
-  if ("string" == typeof P ? U = P.split(" ").filter(e => e.length > 0) : Array.isArray(P) && (U = P), null == b.default.getCurrentUser()) throw new y.Z({
+  if ("string" == typeof j ? U = j.split(" ").filter(e => e.length > 0) : Array.isArray(j) && (U = j), null == b.default.getCurrentUser()) throw new y.Z({
     errorCode: C.lTL.OAUTH2_ERROR
   }, "Client is not logged in");
   if (null != R) l = Number(R);
@@ -152,7 +152,7 @@ async function P(e, t, n) {
   try {
     G = a.vB(null != x ? x : 0)
   } catch (e) {}
-  if (null != s.integration_type && Object.values(i.Y).includes(s.integration_type) && (r = new Map).set(s.integration_type, s), null != j[s.application.id] && (await j[s.application.id].process(), null == M ? true : M.aborted)) throw new y.Z({
+  if (null != s.integration_type && Object.values(i.Y).includes(s.integration_type) && (r = new Map).set(s.integration_type, s), null != P[s.application.id] && (await P[s.application.id].process(), null == M ? true : M.aborted)) throw new y.Z({
     errorCode: C.lTL.UNKNOWN_ERROR
   }, "Request aborted");
   return t({
@@ -238,7 +238,7 @@ function A(e, t) {
             errorCode: C.lTL.INVALID_COMMAND
           }, "No application.");
           let o = l.x.IDENTIFY,
-            c = () => P({
+            c = () => j({
               client_id: n,
               scope: o,
               response_type: "token",
@@ -309,7 +309,7 @@ function A(e, t) {
           errorCode: C.lTL.INVALID_CLIENTID
         }, "Application does not match the connection's");
         let o = l.scopes || l.scope;
-        return delete l.scopes, P(T(S({}, l), {
+        return delete l.scopes, j(T(S({}, l), {
           scope: o,
           signal: i,
           isSocketRpcPrivateScope: s

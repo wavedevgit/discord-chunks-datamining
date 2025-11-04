@@ -77,7 +77,7 @@ function Z(e) {
   }), f = d ? u.iWm : u.gQj;
   return (0, r.jsx)(g.Gt, {
     value: l,
-    children: (0, r.jsxs)(O.Z, {
+    children: (0, r.jsxs)(x.Z, {
       className: S.root,
       children: [(0, r.jsx)(c.u, {
         asContainer: true,
@@ -130,7 +130,7 @@ function T(e) {
     inPopout: o
   } = e;
   i.useEffect(() => {
-    x.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    O.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity invite",
       n_participants: 1
     })
@@ -211,7 +211,7 @@ function T(e) {
     children: (0, r.jsx)(u.f6W, {
       disableAdaptiveTheme: true,
       theme: E.BRd.MIDNIGHT,
-      children: e => (0, r.jsxs)(O.Z, {
+      children: e => (0, r.jsxs)(x.Z, {
         className: a()(S.root, S.singleUserRoot, e),
         children: [(0, r.jsx)("img", {
           src: P,
@@ -246,7 +246,7 @@ function N(e) {
     userParticipantCount: c
   } = e;
   (0, d.ZP)(() => {
-    x.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    O.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity suggestion",
       n_participants: c
     })
@@ -263,7 +263,7 @@ function N(e) {
     }), [t]);
   return (0, r.jsx)(g.Gt, {
     value: b,
-    children: (0, r.jsxs)(O.Z, {
+    children: (0, r.jsxs)(x.Z, {
       className: S.root,
       children: [s > 300 ? (0, r.jsx)(u.Text, {
         className: S.heading,
@@ -283,7 +283,7 @@ function N(e) {
       }), (0, r.jsxs)(u.P3F, {
         className: S.checkboxContainer,
         onClick: function() {
-          x.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          O.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: c
@@ -296,7 +296,7 @@ function N(e) {
       }), (0, r.jsx)(u.P3F, {
         className: S.closeButtonContainer,
         onClick: function() {
-          x.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          O.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "temporary",
             n_participants: c

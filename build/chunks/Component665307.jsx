@@ -106,7 +106,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
         children: [(0, i.jsx)("div", {
           className: A.nameCellText,
           children: e.libraryApplication.getBranchedName(e.application)
-        }), e.libraryApplication.hasFlag(P.eHb.PREMIUM) ? (0, i.jsxs)(d.u, {
+        }), e.libraryApplication.hasFlag(j.eHb.PREMIUM) ? (0, i.jsxs)(d.u, {
           text: x.intl.string(x.t.tG2SzG),
           children: ["(", (0, i.jsx)(m.SrA, {
             size: "md",
@@ -126,7 +126,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       let t = e.libraryApplication.getDistributor();
       return (0, i.jsx)(E.Z, {
         align: E.Z.Align.CENTER,
-        children: null != t ? P.EOG[t] : x.intl.string(x.t["F+l3Jt"])
+        children: null != t ? j.EOG[t] : x.intl.string(x.t["F+l3Jt"])
       })
     }
   }, {
@@ -160,28 +160,28 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
         children: [(0, i.jsxs)("div", {
           className: A.settingIcons,
           children: [(0, i.jsx)(k, {
-            flag: P.eHb.PRIVATE,
+            flag: j.eHb.PRIVATE,
             item: e,
             icon: m.kZF,
             tooltip: x.intl.string(x.t.NozAop)
           }), (0, i.jsx)(k, {
-            flag: P.eHb.OVERLAY_DISABLED,
+            flag: j.eHb.OVERLAY_DISABLED,
             item: e,
             icon: m.o8v,
             tooltip: x.intl.string(x.t.Az9eqn)
-          }), (0, i.jsx)(j.Z, {
+          }), (0, i.jsx)(P.Z, {
             className: s()(A.settingIcon, {
               [A.hidden]: !e.supportsCloudSync
             }),
             libraryApplication: e.libraryApplication
           })]
         }), (0, T.Je)(e.libraryApplication) ? (0, i.jsx)(b.Z, {
-          analyticsListSort: (r = t.sortKey, a = t.sortDirection, "".concat(M[r], " ").concat(a === P.sHY.ASCENDING ? "ASC" : "DESC")),
+          analyticsListSort: (r = t.sortKey, a = t.sortDirection, "".concat(M[r], " ").concat(a === j.sHY.ASCENDING ? "ASC" : "DESC")),
           analyticsListIndex: n,
-          source: P.Sbl.APPLICATION_LIBRARY,
+          source: j.Sbl.APPLICATION_LIBRARY,
           libraryApplication: e.libraryApplication,
           color: o ? f.zx.Colors.GREEN : f.zx.Colors.PRIMARY,
-          isPlayShiny: o && e.defaultAction === P.apO.PLAY,
+          isPlayShiny: o && e.defaultAction === j.apO.PLAY,
           size: A.actionButtonSize,
           hideProgress: null != e.defaultAction,
           onDropdownOpen: () => null != t && t.setActiveRowKey(e),

@@ -28,14 +28,14 @@ function v(e) {
   let {
     channel: t,
     baseChannelId: n
-  } = e, v = (0, b.ZP)(t), C = (0, p.K)(), S = (0, p.V)(), T = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), N = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), j = (0, m.V)(t.id, t.getRecipientId()), P = i.useCallback(() => {
+  } = e, v = (0, b.ZP)(t), C = (0, p.K)(), S = (0, p.V)(), T = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), N = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), P = (0, m.V)(t.id, t.getRecipientId()), j = i.useCallback(() => {
     g.Z.closeChannelSidebar(_.uZ), T && C && (0, h.Kh)(t.id), N && S && (0, h.Kh)(t.id)
   }, [t.id, N, S, T, C]), x = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(O.intl.string(O.t.pIQ3h4), a.ToastType.FAILURE))
   }, []), {
     markAsNotSpam: A
   } = (0, f.m)({
-    onAcceptSuccess: P,
+    onAcceptSuccess: j,
     onError: x
   });
   if (null == t || !t.isDM()) return null;
@@ -62,7 +62,7 @@ function v(e) {
         className: y.hamBannerButton,
         children: (0, r.jsx)(a.Button, {
           size: "sm",
-          onClick: () => A(t, j),
+          onClick: () => A(t, P),
           text: O.intl.string(O.t.koqL3Z)
         })
       })]

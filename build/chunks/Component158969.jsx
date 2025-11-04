@@ -87,9 +87,9 @@ let E = Chunk647438.memo(function(e) {
       S.current ? null != y && y() : S.current = true
     }, [y, u.content, m, j, h]), (0, r.jsxs)("div", {
       id: (0, g.ut)(u),
-      className: a()(l, O.markup, {
-        [x.messageContent]: true,
-        [x.markupRtl]: "rtl" === s()(u.content),
+      className: a()(l, x.markup, {
+        [O.messageContent]: true,
+        [O.markupRtl]: "rtl" === s()(u.content),
         [v.blockedEdit]: null == P ? true : P.isBlockedEdit,
         [v.blockedSend]: !(null == P ? true : P.isBlockedEdit)
       }),
@@ -99,7 +99,7 @@ let E = Chunk647438.memo(function(e) {
           isEdited: true,
           isInline: false,
           children: (0, r.jsxs)("span", {
-            className: x.edited,
+            className: O.edited,
             children: ["(", C.intl.string(C.t.Z7eEx9), ")"]
           })
         })]

@@ -296,7 +296,7 @@ let eg = function(e) {
             onLoadComplete: q
           })
         }),
-        header: (0, r.jsx)(P.a, {
+        header: (0, r.jsx)(j.a, {
           selectedTabId: T,
           handleTransition: x,
           tabs: L,
@@ -349,7 +349,7 @@ let eg = function(e) {
             onLoadComplete: q
           })]
         }),
-        header: (0, r.jsx)(P.a, {
+        header: (0, r.jsx)(j.a, {
           selectedTabId: T,
           handleTransition: x,
           tabs: L,
@@ -383,13 +383,13 @@ let eg = function(e) {
             onLoadComplete: q
           })]
         }),
-        header: (0, r.jsxs)(j.ZP, {
-          variant: j._6.OVERLAY,
+        header: (0, r.jsxs)(P.ZP, {
+          variant: P._6.OVERLAY,
           children: [(0, r.jsx)("div", {
             className: ea.dragRegion
-          }), (0, r.jsx)(j.z6, {
+          }), (0, r.jsx)(P.z6, {
             scrollPosition: G
-          }), (0, r.jsx)(j.aV, {
+          }), (0, r.jsx)(P.aV, {
             icon: p.qDn
           })]
         }),

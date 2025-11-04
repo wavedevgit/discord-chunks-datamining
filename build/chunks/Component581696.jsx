@@ -38,9 +38,9 @@ let m = function(e) {
     {
       registerItemRef: N
     } = (0, p.m)(b, T, t),
-    j = i.useMemo(() => b.some(e => "end" === e.data.kind), [b]),
-    P = i.useCallback(() => {
-      if (j) return;
+    P = i.useMemo(() => b.some(e => "end" === e.data.kind), [b]),
+    j = i.useCallback(() => {
+      if (P) return;
       let e = t.current;
       if (null == e) return;
       let n = e.scrollHeight;
@@ -49,13 +49,13 @@ let m = function(e) {
           _(false)
         }, 300)
       }))
-    }, [E, g, S, j, t]);
+    }, [E, g, S, P, t]);
   i.useEffect(() => {
     let e = t.current;
-    if (null != e) return e.addEventListener("scroll", P), () => {
-      e.removeEventListener("scroll", P)
+    if (null != e) return e.addEventListener("scroll", j), () => {
+      e.removeEventListener("scroll", j)
     }
-  }, [P, t]);
+  }, [j, t]);
   let x = i.useCallback(() => {
       var e;
       null == (e = t.current) || e.scrollTo({
@@ -133,7 +133,7 @@ let m = function(e) {
     }), (0, r.jsxs)("div", {
       ref: h,
       className: f.scrollContainer,
-      children: [b.map(e => Z(e)), !j && (g || S) && (0, r.jsx)("div", {
+      children: [b.map(e => Z(e)), !P && (g || S) && (0, r.jsx)("div", {
         style: {
           padding: "16px",
           textAlign: "center"

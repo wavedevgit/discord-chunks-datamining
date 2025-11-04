@@ -24,7 +24,7 @@ let _ = function(e) {
     setQuestId: E,
     quest: O,
     refreshQuest: I
-  } = e, [y, v] = i.useState(false), [C, S] = i.useState(false), T = i.useRef(null), N = (0, u.MP)(), j = (0, l.e7)([d.Z], () => null != b ? d.Z.getFetchQuestPreviewError(b) : null, [b]), P = (0, l.e7)([d.Z], () => null != b && d.Z.isFetchingQuestPreview(b), [b]), x = i.useMemo(() => {
+  } = e, [y, v] = i.useState(false), [C, S] = i.useState(false), T = i.useRef(null), N = (0, u.MP)(), P = (0, l.e7)([d.Z], () => null != b ? d.Z.getFetchQuestPreviewError(b) : null, [b]), j = (0, l.e7)([d.Z], () => null != b && d.Z.isFetchingQuestPreview(b), [b]), x = i.useMemo(() => {
     let e = N.map(e => {
       var t, n, r;
       return {
@@ -95,7 +95,7 @@ let _ = function(e) {
               onClick: I,
               "aria-label": h.intl.string(h.t.wzzjk9),
               icon: a.DuK,
-              loading: P
+              loading: j
             })]
           })]
         })
@@ -147,8 +147,8 @@ let _ = function(e) {
           })
         })]
       })
-    }), null != j ? (0, r.jsx)(p.W, {
-      error: j
-    }) : null, P ? (0, r.jsx)(a.$jN, {}) : null]
+    }), null != P ? (0, r.jsx)(p.W, {
+      error: P
+    }) : null, j ? (0, r.jsx)(a.$jN, {}) : null]
   })
 }

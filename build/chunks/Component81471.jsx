@@ -36,8 +36,8 @@ let v = Chunk647438.memo(function(e) {
   } = (0, s.cj)([g.Z], () => ({
     isBlocked: null != v && g.Z.isBlockedForMessage(v),
     isIgnored: null != v && g.Z.isIgnoredForMessage(v)
-  }), [v]), N = (0, s.e7)([h.Z], () => h.Z.can(b.Plq.MANAGE_MESSAGES, t)), j = m.cC.useSetting(), {
-    content: P
+  }), [v]), N = (0, s.e7)([h.Z], () => h.Z.can(b.Plq.MANAGE_MESSAGES, t)), P = m.cC.useSetting(), {
+    content: j
   } = i.useMemo(() => (null == v ? true : v.content) != null && "" !== v.content ? (0, p.ZP)(v, {
     formatInline: true,
     noStyleAndInteraction: true,
@@ -68,7 +68,7 @@ let v = Chunk647438.memo(function(e) {
     let {
       contentPlaceholder: e,
       renderedContent: t
-    } = (0, f.f)(v, P, S, T, a()(I.messageContent, y.inlineFormat), {
+    } = (0, f.f)(v, j, S, T, a()(I.messageContent, y.inlineFormat), {
       leadingIconClass: I.messageContentIcon,
       trailingIconClass: I.messageContentIcon,
       iconSize: E.WW
@@ -93,7 +93,7 @@ let v = Chunk647438.memo(function(e) {
   });
   else x = null;
   return (0, r.jsx)(c.aQ.Provider, {
-    value: (0, d.Z)(j, N),
+    value: (0, d.Z)(P, N),
     children: (0, r.jsx)(o.Rny, {
       className: I.messageFocusBlock,
       children: x
