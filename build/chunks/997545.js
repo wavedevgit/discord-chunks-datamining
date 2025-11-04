@@ -765,7 +765,7 @@ class x extends Chunk839548.Z {
       let r = this.hardwareH264 && this.useElectronVideo ? "1" : "0";
       n.params["hardware-h264"] = r, c.push(n), o.name === t && (u = A(T({}, n), {
         params: this.getCodecParams(o.name, false)
-      }), this.experimentFlags.has(O.V8.VIDEOTOOLBOX_RATE_CONTROL) && (u.params["fixed-rate-presentation-timestamps"] = "1"), u.params["hardware-h264"] = r)
+      }), this.experimentFlags.has(O.V8.VIDEOTOOLBOX_RATE_CONTROL) && (u.params["fixed-rate-presentation-timestamps"] = "1"), this.experimentFlags.has(O.V8.LOW_LATENCY_RATE_CONTROL) && (u.params["low-latency-rate-control"] = "1"), u.params["hardware-h264"] = r)
     }
     return {
       videoEncoder: u,
