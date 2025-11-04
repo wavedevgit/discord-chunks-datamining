@@ -226,7 +226,10 @@ function Z(e) {
   let {
     user: t
   } = e;
-  R(t)
+  R({
+    id: t.id,
+    premiumType: t.premiumType
+  }, true)
 }
 
 function F(e) {

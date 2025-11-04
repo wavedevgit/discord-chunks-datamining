@@ -2,8 +2,9 @@
 /** chunk id: 152521, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => c,
-  m: () => u
+  Nb: () => c,
+  _r: () => d,
+  m4: () => u
 });
 var Chunk704215 = require("./704215.js"),
   Chunk266454 = require("./266454.js"),
@@ -23,4 +24,10 @@ let c = e => e === o.Vt.FRACTIONAL_PREMIUM ? l.CL : a.XAJ,
       dismissAction: Chunk921944.L.INDIRECT_ACTION,
       groupName: Chunk921944.R.VIRTUAL_CURRENCY_ONBOARDING
     }))
+  },
+  d = () => {
+    (0, Chunk266454.zu)(Chunk704215.z.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_ANNOUNCEMENT_MODAL) || (0, Chunk266454.Q3)(Chunk704215.z.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_ANNOUNCEMENT_MODAL, {
+      dismissAction: Chunk921944.L.INDIRECT_ACTION,
+      groupName: Chunk921944.R.VIRTUAL_CURRENCY_MOBILE_ONBOARDING
+    })
   }

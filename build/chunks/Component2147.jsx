@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk946458 = require("./946458.jsx"),
   Chunk968437 = require("./968437.js"),
   Chunk665906 = require("./665906.js"),
-  Chunk456077 = require("./456077.js"),
+  Chunk543855 = require("./543855.js"),
   Chunk747212 = require("./747212.jsx"),
   Chunk210887 = require("./210887.js"),
   Chunk131704 = require("./131704.js"),
@@ -163,7 +163,7 @@ let em = (0, Chunk313201.hQ)(),
           defaultForumLayout: j,
           defaultTagSetting: v
         } = module;
-        module.isThread() && (t = (0, Chunk456077.Z)(exports, true)), (0, Chunk787014.wk)(module.id, {
+        module.isThread() && (t = (0, Chunk543855.Z)(exports, true)), (0, Chunk787014.wk)(module.id, {
           name: exports,
           type: require,
           topic: Chunk951288,
