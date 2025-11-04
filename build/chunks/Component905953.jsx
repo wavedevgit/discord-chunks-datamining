@@ -30,11 +30,11 @@ function b(e) {
   } = (0, u.G)(), {
     fetched: S,
     hasAlreadyLinked: E,
-    canStartAuthorization: N,
-    startAuthorization: T
+    canStartAuthorization: T,
+    startAuthorization: N
   } = (0, o.F)(C), O = (0, m.ZP)(_), P = null == O || null == (t = O.widgets) ? true : t.some(e => e instanceof d.q && e.applicationId === (null == C ? true : C.id));
   return null != y && null != y.edit_profile_upsell_image && null != C && S ? (0, a.jsx)(c.ZP, {
-    contentTypes: E ? P ? [] : [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : N ? [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+    contentTypes: E ? P ? [] : [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : T ? [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,
@@ -68,7 +68,7 @@ function b(e) {
         } : {
           text: f.intl.string(f.t["DSJi3+"]),
           onClick: () => {
-            T(), j(true), (0, p.openUserProfileModal)({
+            N(), j(true), (0, p.openUserProfileModal)({
               userId: _,
               section: g.oh.WIDGETS
             }).then(() => {

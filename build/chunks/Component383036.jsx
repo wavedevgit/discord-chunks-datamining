@@ -60,15 +60,15 @@ let g = e => {
       _ = f || !b && j.size > 0,
       [y, C] = Chunk647438.useState(""),
       [S, E] = Chunk647438.useState(null),
-      [N, T] = Chunk647438.useState(null);
+      [T, N] = Chunk647438.useState(null);
     return (Chunk647438.useEffect(() => {
       if ("" === y.trim() || !_) {
-        E(null), T(null);
+        E(null), N(null);
         return
       }
       let e = Chunk597688.Z.getProduct(y),
         t = Chunk597688.Z.getCategoryForProduct(y);
-      null != module && null != exports ? (E(module), T(exports)) : (E(null), T(null))
+      null != module && null != exports ? (E(module), N(exports)) : (E(null), N(null))
     }, [y, _]), b) ? (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: "Loading categories and collectibles..."
@@ -111,12 +111,12 @@ let g = e => {
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Product Preview"
-        }), null != S && null != N ? (0, Chunk951288.jsxs)("div", {
+        }), null != S && null != T ? (0, Chunk951288.jsxs)("div", {
           className: Chunk277790.previewContainer,
           children: [(0, Chunk951288.jsx)(g, {
             product: S,
             user: module,
-            category: N,
+            category: T,
             tab: Chunk215023.AW.HOME
           }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",

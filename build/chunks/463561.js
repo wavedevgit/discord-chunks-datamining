@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 463561, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => E
 });
 var Chunk442837 = require("./442837.js"),
   Chunk924557 = require("./924557.js"),
@@ -11,7 +11,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk37113 = require("./37113.js"),
   Chunk388032 = require("./388032.jsx");
-let d = (0, Chunk509613.Em)(Chunk313789.n.CLIPS_RESOLUTION, {
+let E = (0, Chunk509613.Em)(Chunk313789.n.CLIPS_RESOLUTION, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.aFudZJ),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.nIrkW5),
   useValue: () => (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().clipsQuality.resolution),

@@ -69,14 +69,14 @@ function p(e) {
   } = e, b = null != n, v = (0, s.Q1)({
     action: t,
     onClick: n
-  }), [j, _] = r.useState(false), y = r.useRef(null), C = null != f ? f : y, S = null != g, E = S && b, N = {
+  }), [j, _] = r.useState(false), y = r.useRef(null), C = null != f ? f : y, S = null != g, E = S && b, T = {
     offset: {
       top: false,
       left: false,
       right: false,
       bottom: false
     }
-  }, T = r.useCallback(() => {
+  }, N = r.useCallback(() => {
     _(true)
   }, []), O = r.useCallback(() => {
     _(false)
@@ -109,7 +109,7 @@ function p(e) {
         className: c.menuItemContent,
         onClick: v,
         focusProps: {
-          offset: u(d({}, N.offset), {
+          offset: u(d({}, T.offset), {
             right: 0
           })
         },
@@ -118,8 +118,8 @@ function p(e) {
         className: c.submenuIconWrapper,
         "aria-label": o.intl.string(o.t.PdRCRg)
       }, e), {
-        onClick: T,
-        focusProps: N,
+        onClick: N,
+        focusProps: T,
         children: (0, a.jsx)(i.Fbu, {
           size: "xs",
           color: "currentColor"
@@ -128,8 +128,8 @@ function p(e) {
     }) : S ? (0, a.jsxs)(l.P3F, u(d({
       className: c.menuItemContent
     }, e), {
-      onClick: T,
-      focusProps: N,
+      onClick: N,
+      focusProps: T,
       children: [P(), (0, a.jsx)("div", {
         className: c.submenuIconWrapper,
         children: (0, a.jsx)(i.Fbu, {
@@ -140,7 +140,7 @@ function p(e) {
     })) : (0, a.jsx)(l.P3F, {
       className: c.menuItemContent,
       onClick: v,
-      focusProps: N,
+      focusProps: T,
       children: P()
     }), (0, a.jsx)("div", {
       ref: C,
@@ -150,7 +150,7 @@ function p(e) {
   };
   return S ? (0, a.jsx)("li", {
     className: c.menuItem,
-    onMouseEnter: T,
+    onMouseEnter: N,
     onMouseLeave: O,
     children: (0, a.jsx)(l.yRy, {
       targetElementRef: C,

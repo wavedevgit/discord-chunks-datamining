@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 98022, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk703288 = require("./703288.jsx"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk770715 = require("./770715.js"),
   Chunk432796 = require("./432796.jsx"),
   Chunk388032 = require("./388032.jsx");
-let _ = (0, Chunk509613.k4)(Chunk313789.n.CLIPS_CATEGORY, {
+let b = (0, Chunk509613.k4)(Chunk313789.n.CLIPS_CATEGORY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.z2jK6X),
   useBadge: () => (0, Chunk951288.jsx)(Chunk703288.Z, {}),
   buildLayout: () => [Chunk457379.Z, Chunk475167.Z, Chunk404937.Z, Chunk219247.Z, Chunk770715.Z, Chunk432248.Z, Chunk463561.Z, Chunk457217.Z, Chunk339063.Z, Chunk139342.Z, Chunk344949.Z, Chunk432796.Z, Chunk514986.Z, Chunk820978.Z]

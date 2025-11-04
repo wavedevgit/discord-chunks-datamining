@@ -90,43 +90,45 @@ function D(e) {
     onComplete: t,
     isRetry: n = false,
     visibleContent: o = null,
-    classificationId: s = null
-  } = e, [d, f] = r.useState(false), m = (0, i.e7)([_.default], () => _.default.getCurrentUser()), {
-    current: g
-  } = r.useRef(null == m ? true : m.ageVerificationStatus), E = (0, c.GE)(), y = r.useCallback(() => {
+    shouldShowExpressiveModal: s = false,
+    classificationId: d = null
+  } = e, [f, m] = r.useState(false), g = (0, i.e7)([_.default], () => _.default.getCurrentUser()), {
+    current: E
+  } = r.useRef(null == g ? true : g.ageVerificationStatus), y = (0, c.GE)(), O = r.useCallback(() => {
     a.Z.dispatch({
       type: "CLOSE_AGE_VERIFICATION_MODAL",
-      status: g
-    }), n || E || u.Z.maybeOpenAgeVerificationUserFeedback({
+      status: E
+    }), n || y || u.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_intro_screen",
       visibleContent: o
     })
-  }, [g, n, o, E]);
+  }, [E, n, o, y]), v = r.useCallback(async (e, n) => {
+    m(true);
+    try {
+      a.Z.dispatch({
+        type: "INITIATE_AGE_VERIFICATION"
+      });
+      let r = await (0, h.pU)({
+        method: n,
+        classificationId: null != d ? d : true
+      });
+      p.Z.showAgeVerification({
+        webviewUrl: r.verification_webview_url,
+        onComplete: t,
+        onClose: O,
+        onCancel: O,
+        entryPoint: e,
+        shouldShowExpressiveModal: s
+      })
+    } catch (e) {
+      l.Z.showFailedToast(b.wQ.TIGGER_PAWTECT_ERROR), O()
+    } finally {
+      m(false)
+    }
+  }, [t, O, s, d]);
   return {
-    loading: d,
-    initiateAgeVerification: r.useCallback(async (e, n) => {
-      f(true);
-      try {
-        a.Z.dispatch({
-          type: "INITIATE_AGE_VERIFICATION"
-        });
-        let r = await (0, h.pU)({
-          method: n,
-          classificationId: null != s ? s : true
-        });
-        p.Z.showAgeVerification({
-          webviewUrl: r.verification_webview_url,
-          onComplete: t,
-          onClose: y,
-          onCancel: y,
-          entryPoint: e
-        })
-      } catch (e) {
-        l.Z.showFailedToast(b.wQ.TIGGER_PAWTECT_ERROR), y()
-      } finally {
-        f(false)
-      }
-    }, [t, y, s])
+    loading: f,
+    initiateAgeVerification: v
   }
 }
 

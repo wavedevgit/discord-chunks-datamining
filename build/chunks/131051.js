@@ -15,36 +15,36 @@ function c(t, e) {
   let n = i.useMemo(() => (0, u.Ql)(t), [t]),
     c = (0, l.Pt)(),
     {
-      searchResults: d
+      searchResults: E
     } = (0, r.F)(),
-    E = new Set;
-  for (let t of d) {
+    d = new Set;
+  for (let t of E) {
     let e = t;
     for (; null != e;) {
       var S;
       let t = null == (S = c[e]) ? true : S.parent;
       if (null == t) {
-        E.add(e);
+        d.add(e);
         break
       }
       e = t
     }
   }
-  let O = (0, o.Z)(n, null != e ? e : "", E),
-    [T, I] = i.useState(O),
+  let T = (0, o.Z)(n, null != e ? e : "", d),
+    [O, I] = i.useState(T),
     g = function(t, e) {
       if (t.size !== e.size) returntrue;
       for (let n of t)
         if (!e.has(n)) returntrue;
       returnfalse
-    }(T, O);
+    }(O, T);
   return i.useEffect(() => {
-    g && I(O)
-  }, [g, O]), i.useMemo(() => {
+    g && I(T)
+  }, [g, T]), i.useMemo(() => {
     var t, e, i;
     let l = new s.Z;
     return {
-      node: null != (t = (0, a.Z)(n, T, l)) ? t : (e = function(t) {
+      node: null != (t = (0, a.Z)(n, O, l)) ? t : (e = function(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {},
             i = Object.keys(n);
@@ -75,5 +75,5 @@ function c(t, e) {
       }), e),
       directory: l
     }
-  }, [T, n])
+  }, [O, n])
 }

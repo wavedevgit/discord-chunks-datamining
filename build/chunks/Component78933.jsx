@@ -115,8 +115,8 @@ function ec(e) {
     eC = F.Cr.useSetting(),
     eS = (0, $.F)(eC),
     eE = (0, s.e7)([G.Z], () => G.Z.hidePersonalInformation),
-    eN = (0, f.p)(),
-    eT = F.Sb.useSetting(),
+    eT = (0, f.p)(),
+    eN = F.Sb.useSetting(),
     eO = (0, $.I)(ey),
     eP = (0, q.g)(n),
     eI = (0, v.Z)({
@@ -140,7 +140,7 @@ function ec(e) {
     }, 500)
   }, []);
   let eF = e => {
-      null == n || n(), (0, N.openUserProfileModal)(eo({
+      null == n || n(), (0, T.openUserProfileModal)(eo({
         customStatusPrompt: eL,
         sourceAnalyticsLocations: eg
       }, ef, e))
@@ -191,7 +191,7 @@ function ec(e) {
               user: t,
               displayProfile: ex,
               themeType: er.l.POPOUT
-            }), (0, a.jsx)(T.Z, {
+            }), (0, a.jsx)(N.Z, {
               user: t,
               displayProfile: ex,
               themeType: er.l.POPOUT,
@@ -286,7 +286,7 @@ function ec(e) {
                       status: ey,
                       size: 12
                     }),
-                    trailing: (eN || ey === et.Skl.DND) && (0, a.jsx)(c.owu, {
+                    trailing: (eT || ey === et.Skl.DND) && (0, a.jsx)(c.owu, {
                       size: "xxs"
                     }),
                     renderSubmenu: i.tq ? true : e => {
@@ -371,7 +371,7 @@ function ec(e) {
                         children: eP
                       })
                     }
-                  }), !__OVERLAY__ && z.wS && eT && (0, a.jsx)(J.V4, {
+                  }), !__OVERLAY__ && z.wS && eN && (0, a.jsx)(J.V4, {
                     action: "COPY_USER_ID",
                     icon: c.VuL,
                     label: ei.intl.string(ei.t["/AXYnE"]),

@@ -1,11 +1,11 @@
 /** Chunk was on 9452 **/
 /** chunk id: 509613, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  $l: () => O,
+  $l: () => T,
   CB: () => S,
-  Em: () => y,
-  J9: () => b,
-  ON: () => A,
+  Em: () => _,
+  J9: () => f,
+  ON: () => N,
   Ql: () => function t(e, n) {
     if ("function" == typeof(null == e ? true : e.buildLayout)) {
       let n = e.buildLayout().map(e => t(e)),
@@ -33,14 +33,15 @@ require.d(exports, {
     }
     return e
   },
+  UO: () => A,
   ax: () => I,
-  k4: () => E,
+  k4: () => d,
   m7: () => o,
   qs: () => g,
   so: () => s,
   vB: () => a,
   wf: () => c,
-  x1: () => d
+  x1: () => E
 }), require("./388685.js"), require("./415506.js");
 var Chunk28682 = require("./28682.js");
 
@@ -99,11 +100,11 @@ function c(t, e) {
   return u(t, i.Jq.PANEL, e)
 }
 
-function d(t, e) {
+function E(t, e) {
   return u(t, i.Jq.PANE, e)
 }
 
-function E(t, e) {
+function d(t, e) {
   return u(t, i.Jq.CATEGORY, e)
 }
 
@@ -111,11 +112,11 @@ function S(t, e) {
   return u(t, i.Jq.ACCORDION, e)
 }
 
-function O(t, e) {
+function T(t, e) {
   return u(t, i.Jq.LIST, e)
 }
 
-function T(t, e, n) {
+function O(t, e, n) {
   return r(l({}, n), {
     key: t,
     type: e
@@ -123,21 +124,25 @@ function T(t, e, n) {
 }
 
 function I(t, e) {
-  return T(t, i.Jq.BUTTON, e)
+  return O(t, i.Jq.BUTTON, e)
 }
 
 function g(t, e) {
-  return T(t, i.Jq.TOGGLE, e)
-}
-
-function y(t, e) {
-  return T(t, i.Jq.SELECT, e)
-}
-
-function b(t, e) {
-  return T(t, i.Jq.RADIO, e)
+  return O(t, i.Jq.TOGGLE, e)
 }
 
 function A(t, e) {
-  return T(t, i.Jq.CUSTOM, e)
+  return O(t, i.Jq.SLIDER, e)
+}
+
+function _(t, e) {
+  return O(t, i.Jq.SELECT, e)
+}
+
+function f(t, e) {
+  return O(t, i.Jq.RADIO, e)
+}
+
+function N(t, e) {
+  return O(t, i.Jq.CUSTOM, e)
 }
