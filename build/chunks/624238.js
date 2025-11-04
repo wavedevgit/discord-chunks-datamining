@@ -9,9 +9,9 @@ require.d(exports, {
 }), require("./388685.js");
 let r = {
     favorite_games: 1,
-    current_games: 3,
-    want_to_play_games: 8,
-    played_games: 8
+    current_games: 5,
+    want_to_play_games: 20,
+    played_games: 20
   },
   i = 200,
   a = 20,
