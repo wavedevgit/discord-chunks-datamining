@@ -119,7 +119,7 @@ function y(e) {
           })), (0, c.ZDy)(async () => {
             let {
               default: e
-            } = await n.e("43350").then(n.bind(n, 98746));
+            } = await n.e("10533").then(n.bind(n, 497880));
             return n => (0, r.jsx)(e, v(x({}, n), {
               guildId: t,
               canBulkBan: y,

@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk95398 = require("./95398.jsx"),
   Chunk936141 = require("./936141.js"),
+  Chunk411405 = require("./411405.jsx"),
   Chunk197653 = require("./197653.jsx"),
   Chunk979372 = require("./979372.jsx"),
   Chunk821618 = require("./821618.js");
@@ -36,9 +36,9 @@ function f(e) {
       })
     })
   });
-  return null == t || 0 === t.length ? null : a ? (0, r.jsx)(s.ZP, {
-    type: s.ZP.Types.ATTACHMENT,
-    reason: l.wk.SPOILER,
+  return null == t || 0 === t.length ? null : a ? (0, r.jsx)(l.ZP, {
+    type: l.ZP.Types.ATTACHMENT,
+    reason: s.wk.SPOILER,
     obscured: _,
     onToggleObscurity: () => p(e => !e),
     children: e => h(e)
