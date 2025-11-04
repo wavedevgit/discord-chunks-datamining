@@ -1,9 +1,9 @@
 /** Chunk was on 84802 **/
 /** chunk id: 44488, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Pz: () => h,
+  Pz: () => g,
   ZP: () => C,
-  am: () => g
+  am: () => h
 }), require("./388685.js");
 var a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -82,7 +82,7 @@ d(p, "Align", m), d(p, "defaultProps", {
   },
   align: m.CENTER
 });
-class g extends Chunk647438.PureComponent {
+class h extends Chunk647438.PureComponent {
   render() {
     let {
       className: e
@@ -106,7 +106,7 @@ class g extends Chunk647438.PureComponent {
     })
   }
 }
-class h extends Chunk647438.PureComponent {
+class g extends Chunk647438.PureComponent {
   render() {
     let {
       className: e

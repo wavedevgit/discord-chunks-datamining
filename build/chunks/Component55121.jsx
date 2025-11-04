@@ -23,22 +23,22 @@ function f(t) {
     onClose: l,
     hasAlreadyLinked: f,
     canStartAuthorization: p,
-    bodyText: m,
-    title: g
+    bodyText: g,
+    title: m
   } = t;
   return (0, i.jsxs)(o.IX, {
     transitionState: s,
     onClose: l,
     children: [(0, i.jsx)(c.y, {
       sku: n,
-      title: g
+      title: m
     }), (0, i.jsxs)(o.fef, {
       children: [(0, i.jsxs)("div", {
         className: d.modalBody,
         children: [(0, i.jsx)(r.Text, {
           variant: "text-md/normal",
           className: d.modalBodyText,
-          children: m
+          children: g
         }), (0, i.jsx)(x, {
           isConnected: f,
           application: e

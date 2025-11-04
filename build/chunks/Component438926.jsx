@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk793030 = require("./793030.js"),
-  Chunk481060 = require("./481060.js");
+  Chunk882508 = require("./882508.js");
 
 function o(t) {
   let {
@@ -17,13 +17,6 @@ function o(t) {
     alignCenter: true,
     title: e,
     gradientColor: "purple",
-    graphic: {
-      type: "dynamic",
-      component: s.AX$.SOCIAL_LAYER_GIFT_SUCCESS,
-      aspectRatio: "16/9",
-      props: {
-        sku: n
-      }
-    }
+    graphic: (0, s.c)(n)
   })
 }

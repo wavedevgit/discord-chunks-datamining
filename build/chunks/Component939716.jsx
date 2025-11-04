@@ -54,7 +54,7 @@ function x() {
 let v = 747,
   I = e => {
     var t, n;
-    return (0, h.lV)((t = f({}, e), n = n = {
+    return (0, g.lV)((t = f({}, e), n = n = {
       className: b.videoWrapper,
       mediaPlayerClassName: b.mediaPlayer
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -68,7 +68,7 @@ let v = 747,
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   },
-  j = e => (0, a.jsx)(g.ZP, f({}, e));
+  j = e => (0, a.jsx)(h.ZP, f({}, e));
 
 function P(e) {
   let {
@@ -103,7 +103,7 @@ function P(e) {
     autoPlay: i,
     renderVideoComponent: I,
     renderImageComponent: j,
-    renderLinkComponent: h.iT
+    renderLinkComponent: g.iT
   });
   return i ? o : (0, a.jsx)(s.P3F, {
     className: b.itemImageWrapper,
@@ -118,7 +118,7 @@ let k = (0, Chunk112724.Z)(e => {
     paused: l = false,
     autoplayInterval: c = 8e3,
     onItemChange: u
-  } = e, [g, h] = (0, r.useState)(0), f = (0, r.useRef)(0), I = (0, r.useRef)(t.length), [j, k] = (0, r.useState)(true), [S, y] = (0, r.useState)(false), [N, w] = (0, r.useState)(false), [E, O] = (0, r.useState)(false), [R, L] = (0, r.useState)(false), Z = (0, r.useCallback)((e, n) => {
+  } = e, [h, g] = (0, r.useState)(0), f = (0, r.useRef)(0), I = (0, r.useRef)(t.length), [j, k] = (0, r.useState)(true), [S, y] = (0, r.useState)(false), [N, w] = (0, r.useState)(false), [E, O] = (0, r.useState)(false), [R, L] = (0, r.useState)(false), Z = (0, r.useCallback)((e, n) => {
     var a;
     let r = null == (a = t[e]) ? true : a.backgroundSrc,
       l = n.interpolate({
@@ -144,7 +144,7 @@ let k = (0, Chunk112724.Z)(e => {
     let n = I.current,
       a = (0, p.gN)(f.current, n),
       r = (0, p.gN)(e, n);
-    f.current = r, h(r), k(1 === Math.abs(r - a) || r === n - 1 && 0 === a || 0 === r && a === n - 1)
+    f.current = r, g(r), k(1 === Math.abs(r - a) || r === n - 1 && 0 === a || 0 === r && a === n - 1)
   }, []), A = (0, r.useCallback)(() => {
     B(f.current + 1, false)
   }, [B]), T = (0, r.useCallback)(() => {
@@ -178,7 +178,7 @@ let k = (0, Chunk112724.Z)(e => {
       draggable: false
     })
   }), [B]), Q = (0, r.useCallback)((e, n, r) => {
-    let l = n === (0, p.gN)(g, t.length);
+    let l = n === (0, p.gN)(h, t.length);
     return (0, a.jsx)(o.Z.div, {
       className: i()(b.item, {
         [b.currentItem]: l
@@ -194,7 +194,7 @@ let k = (0, Chunk112724.Z)(e => {
         onClick: () => B(n)
       }) : M(e, n, l)
     })
-  }, [g, t.length, Z, z, F, H, D, B, M]), U = (0, r.useCallback)(() => {
+  }, [h, t.length, Z, z, F, H, D, B, M]), U = (0, r.useCallback)(() => {
     let e = (0, a.jsx)(p.ZP, {
       className: b.carousel,
       items: t,
@@ -203,7 +203,7 @@ let k = (0, Chunk112724.Z)(e => {
         margin: 12
       },
       renderItem: Q,
-      currentIndex: g,
+      currentIndex: h,
       animate: j,
       edgeItems: 2
     });
@@ -221,8 +221,8 @@ let k = (0, Chunk112724.Z)(e => {
         })
       })]
     })
-  }, [t, Q, g, j, W, T, E, R]), G = (0, r.useCallback)((e, t) => {
-    let n = g === t;
+  }, [t, Q, h, j, W, T, E, R]), G = (0, r.useCallback)((e, t) => {
+    let n = h === t;
     return (0, a.jsx)("div", {
       className: i()(b.paginationItem, n ? b.selectedStorePaginationItem : b.unselectedStorePaginationItem),
       children: (0, a.jsx)("img", {
@@ -232,14 +232,14 @@ let k = (0, Chunk112724.Z)(e => {
         draggable: false
       })
     }, "page-".concat(t))
-  }, [g]);
+  }, [h]);
   return (0, r.useEffect)(() => (C.S.subscribe(_.CkL.CAROUSEL_PREV, W), C.S.subscribe(_.CkL.CAROUSEL_NEXT, T), () => {
     C.S.unsubscribe(_.CkL.CAROUSEL_PREV, W), C.S.unsubscribe(_.CkL.CAROUSEL_NEXT, T)
   }), [W, T]), (0, r.useEffect)(() => {
     I.current = t.length
   }, [t]), (0, r.useEffect)(() => {
-    null == u || u(t[g], g)
-  }, [g, t, u]), (0, a.jsxs)(d.Z, {
+    null == u || u(t[h], h)
+  }, [h, t, u]), (0, a.jsxs)(d.Z, {
     pauseOnHover: true,
     onInterval: A,
     interval: c,
@@ -251,7 +251,7 @@ let k = (0, Chunk112724.Z)(e => {
         renderItem: G,
         scrollToPadding: 40,
         items: t,
-        selectedIndex: g,
+        selectedIndex: h,
         onSetItem: B,
         paginationContainerClass: b.scroller,
         align: m.ZP.Align.CENTER

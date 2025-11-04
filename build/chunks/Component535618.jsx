@@ -41,16 +41,16 @@ function R(t) {
     customGiftMessage: u
   } = t, [d, x] = a.useState({
     state: "LINK"
-  }), [p, g] = a.useState(false), C = (0, l.e7)([m.Z], () => m.Z.getApplication(e.applicationId));
+  }), [p, m] = a.useState(false), C = (0, l.e7)([g.Z], () => g.Z.getApplication(e.applicationId));
   a.useEffect(() => {
     o.redeemed && "LINK" === d.state && x({
       state: "ERROR",
-      error: new c.yZ(N.intl.string(N.t.Iw2TUW), y.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED)
+      error: new c.yZ(y.intl.string(y.t.Iw2TUW), N.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED)
     })
   }, [o, d.state]);
   let h = a.useCallback(async () => {
     try {
-      g(true), await f.Z.redeemGiftCode({
+      m(true), await f.Z.redeemGiftCode({
         code: o.code,
         options: {
           channelId: r
@@ -64,23 +64,23 @@ function R(t) {
         error: t
       })
     } finally {
-      g(false)
+      m(false)
     }
   }, [o, x, r]);
   if (null == C) return null;
   switch (d.state) {
     case "LINK":
-      return (0, i.jsx)(k, {
+      return (0, i.jsx)(L, {
         sku: e,
         application: C,
         transitionState: n,
         onClose: s,
-        successStateButtonText: N.intl.string(N.t.go1e4x),
+        successStateButtonText: y.intl.string(y.t.go1e4x),
         onSuccessButtonClick: h,
         isSuccessButtonLoading: p
       });
     case "SUCCESS":
-      return (0, i.jsx)(G, {
+      return (0, i.jsx)(Z, {
         transitionState: n,
         application: C,
         sku: e,
@@ -89,7 +89,7 @@ function R(t) {
         onClose: s
       });
     case "ERROR":
-      return (0, i.jsx)(L, {
+      return (0, i.jsx)(k, {
         transitionState: n,
         onClose: s,
         error: d.error
@@ -98,12 +98,12 @@ function R(t) {
       (0, I.vE)(d)
   }
 }
-let L = t => {
+let k = t => {
   let {
     transitionState: n,
     onClose: e,
     error: a
-  } = t, s = g.default.getCurrentUser(), o = (0, h.QW)(a, s), l = (0, x.ZP)(), c = (0, u.wj)(l);
+  } = t, s = m.default.getCurrentUser(), o = (0, h.QW)(a, s), l = (0, x.ZP)(), c = (0, u.wj)(l);
   return (0, i.jsxs)(r.IX, {
     transitionState: n,
     onClose: e,
@@ -118,7 +118,7 @@ let L = t => {
   })
 };
 
-function k(t) {
+function L(t) {
   let {
     sku: n,
     application: e,
@@ -131,9 +131,9 @@ function k(t) {
     hasAlreadyLinked: u,
     canStartAuthorization: f,
     startAuthorization: x,
-    fetched: m
+    fetched: g
   } = (0, p.F)(e);
-  if (!m) return (0, i.jsx)(r.IX, {
+  if (!g) return (0, i.jsx)(r.IX, {
     transitionState: a,
     onClose: s,
     children: (0, i.jsx)(r.fef, {
@@ -143,34 +143,34 @@ function k(t) {
       })
     })
   });
-  let g = u ? {
+  let m = u ? {
     variant: "expressive",
     text: o,
     onClick: l,
     loading: c
   } : {
     variant: "primary",
-    text: N.intl.string(N.t["VDAhr+"]),
+    text: y.intl.string(y.t["VDAhr+"]),
     onClick: x,
     icon: r.uIJ,
     disabled: !f
   };
-  return (0, i.jsx)(j.M, {
+  return (0, i.jsx)(S.M, {
     sku: n,
     application: e,
     transitionState: a,
     onClose: s,
     hasAlreadyLinked: u,
     canStartAuthorization: f,
-    primaryCTAButtonProps: g,
-    bodyText: N.intl.formatToPlainString(N.t.PaYE38, {
+    primaryCTAButtonProps: m,
+    bodyText: y.intl.formatToPlainString(y.t.PaYE38, {
       applicationName: e.name
     }),
-    title: N.intl.string(N.t["Bn1J+a"])
+    title: y.intl.string(y.t["Bn1J+a"])
   })
 }
 
-function G(t) {
+function Z(t) {
   let {
     transitionState: n,
     onClose: e,
@@ -178,7 +178,7 @@ function G(t) {
     application: s,
     giftCode: c,
     customGiftMessage: u
-  } = t, f = (0, S.a)(s), x = (0, E.I)(s), p = (0, l.e7)([g.default], () => g.default.getUser(c.userId)), m = T.ZP.getName(p);
+  } = t, f = (0, E.a)(s), x = (0, j.I)(s), p = (0, l.e7)([m.default], () => m.default.getUser(c.userId)), g = T.ZP.getName(p);
   if (null == f) return (0, i.jsx)(r.IX, {
     transitionState: n,
     onClose: e,
@@ -188,14 +188,14 @@ function G(t) {
   });
   let h = f && !x ? {
       variant: "primary",
-      text: N.intl.string(N.t["s+J8Dl"]),
+      text: y.intl.string(y.t["s+J8Dl"]),
       onClick: () => {
         C.Z.launchGame(s.id)
       },
       icon: r.rgF
     } : {
       variant: "primary",
-      text: N.intl.string(N.t.cpT0Cq),
+      text: y.intl.string(y.t.cpT0Cq),
       onClick: e
     },
     I = null != u && "" !== u;
@@ -204,8 +204,8 @@ function G(t) {
     onClose: e,
     children: [(0, i.jsx)(v.y, {
       sku: a,
-      title: N.intl.formatToPlainString(N.t["6yrIzU"], {
-        sender: m
+      title: y.intl.formatToPlainString(y.t["6yrIzU"], {
+        sender: g
       })
     }), (0, i.jsxs)(r.fef, {
       children: [I && (0, i.jsx)(r.xvT, {
@@ -219,7 +219,7 @@ function G(t) {
         }),
         children: (0, i.jsx)(r.M14, {
           type: "success",
-          children: N.intl.formatToPlainString(N.t.W2znvX, {
+          children: y.intl.formatToPlainString(y.t.W2znvX, {
             skuName: a.name,
             applicationName: s.name
           })
