@@ -464,15 +464,15 @@ function ej(e, t) {
   } = (0, b.ZP)(E.Z.CHANNEL_TEXT_AREA), eq = eN(t), eX = i.useRef(null), eQ = i.useRef(null), eJ = i.useRef(null), e$ = i.useRef(null);
   null == eG || eG(eQ.current);
   let e0 = (0, y.Z)(j),
-    [e1, e3] = i.useState(!e0);
+    [e1, e2] = i.useState(!e0);
   (0, m.PM)(eq, e => {
     let {
       width: t
     } = e;
-    return e3(!e0 && (null == t || t > em))
+    return e2(!e0 && (null == t || t > em))
   });
   let {
-    activeCommand: e2,
+    activeCommand: e3,
     activeCommandSection: e4
   } = (0, _.cj)([v.Z], () => {
     var e, t;
@@ -487,7 +487,7 @@ function ej(e, t) {
     canAttachFiles: e7,
     canCreateThreads: e9,
     canEveryoneSendMessages: te
-  } = eP(j, k, e2, w), tt = k.toolbarType === Q.OW.STATIC, tn = !G.dN.useSetting() && !(0, q.isAndroidWeb)() && null != window.ResizeObserver, tr = !tn || !(null == (n = k.commands) ? true : n.enabled) || !U || f !== ec.GI, ti = (0, D.Z)(), {
+  } = eP(j, k, e3, w), tt = k.toolbarType === Q.OW.STATIC, tn = !G.dN.useSetting() && !(0, q.isAndroidWeb)() && null != window.ResizeObserver, tr = !tn || !(null == (n = k.commands) ? true : n.enabled) || !U || f !== ec.GI, ti = (0, D.Z)(), {
     fontSize: ta
   } = (0, _.cj)([g.Z], () => ({
     fontSize: g.Z.fontSize
@@ -538,13 +538,13 @@ function ej(e, t) {
   let tL = null != Y,
     tM = e6 && !((e8 || e5) && te) || td && (null == (s = k.submit) ? true : s.useDisabledStylesOnSubmit),
     tj = null;
-  null != e2 ? tj = null == F ? true : F(e2, e4, ed.attachButton) : (!e6 || e9) && (tj = null == Z ? true : Z(tL, ed.attachButton));
-  let tk = tn && null != h && !e6 && k.showCharacterCount && null == e2,
-    tU = tn && !__OVERLAY__ && null != h && null == e2 && k.toolbarType !== Q.OW.NONE && !e6,
+  null != e3 ? tj = null == F ? true : F(e3, e4, ed.attachButton) : (!e6 || e9) && (tj = null == Z ? true : Z(tL, ed.attachButton));
+  let tk = tn && null != h && !e6 && k.showCharacterCount && null == e3,
+    tU = tn && !__OVERLAY__ && null != h && null == e3 && k.toolbarType !== Q.OW.NONE && !e6,
     tG = (0, et.c)({
       channel: j,
       type: k,
-      activeCommand: e2,
+      activeCommand: e3,
       pendingReply: Y,
       pendingScheduledMessage: eW,
       selectedAutocompleteInputType: tP

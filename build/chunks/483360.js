@@ -296,11 +296,11 @@ function e1(e) {
   }
 }
 
-function e3(e) {
+function e2(e) {
   return e === Z.sH || e !== Z.Zb && !!(0, L.Q5)(e)
 }
 
-function e2(e, t, n) {
+function e3(e, t, n) {
   return e === t || (!!n || !!(0, L.Km)(t)) && (e === Z.sH ? (0, L.r8)(t) || (0, L.bw)(t) : e === Z.Zb && (0, L.bw)(t))
 }
 
@@ -546,14 +546,14 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
           includeAllThreads: h
         } = e,
         m = e8(n, c),
-        g = e3(l);
+        g = e2(l);
       t = null != r ? s()(Z.ZP.getChannels(r)[l]).map(e => e.channel).concat(g ? h ? U.Z.getAllThreadsForGuild(r) : w.Z.computeAllActiveJoinedThreads(r) : []).value() : s()(U.Z.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(g ? w.Z.computeAllActiveJoinedThreads() : []).value();
       let E = {},
         b = [],
         y = G.Z.getMaxScore();
       for (let e of t) {
         var O;
-        if (!e2(l, e.type, null != r) || (0, L.Km)(e.type) && !W.Z.can(u ? e.accessPermissions : ec.Plq.VIEW_CHANNEL, e) || !o(e)) continue;
+        if (!e3(l, e.type, null != r) || (0, L.Km)(e.type) && !W.Z.can(u ? e.accessPermissions : ec.Plq.VIEW_CHANNEL, e) || !o(e)) continue;
         let t = [...m],
           i = e.name.toLocaleLowerCase(),
           s = p && n === e.id,

@@ -161,7 +161,7 @@ function ee(e) {
     setSelectedSkuId: eY,
     setSelectedPlanId: eW,
     setSelectedPlanNotification: eK
-  } = (0, R.Z)(), [ez, eq] = (0, c.Wu)([O.Z], () => [O.Z.purchaseTokenAuthState, O.Z.purchaseTokenHash]), [eX, eQ, eJ, e$] = (0, c.Wu)([F.Z], () => [F.Z.browserCheckoutState, F.Z.loadId, F.Z.skuId, F.Z.planId]), [e0, e1] = i.useState(null), [e3, e2] = i.useState(null), [e4, e8] = i.useState(null), [e5, e6] = i.useState(null), [e7, e9] = i.useState(null), [te, tt] = i.useState(true), [tn, tr] = i.useState([]), [ti, ta] = i.useState([]), to = i.useMemo(() => null == eV || (0, C.PV)(eV.id), [eV]), ts = i.useRef(null != K ? K.planId : null);
+  } = (0, R.Z)(), [ez, eq] = (0, c.Wu)([O.Z], () => [O.Z.purchaseTokenAuthState, O.Z.purchaseTokenHash]), [eX, eQ, eJ, e$] = (0, c.Wu)([F.Z], () => [F.Z.browserCheckoutState, F.Z.loadId, F.Z.skuId, F.Z.planId]), [e0, e1] = i.useState(null), [e2, e3] = i.useState(null), [e4, e8] = i.useState(null), [e5, e6] = i.useState(null), [e7, e9] = i.useState(null), [te, tt] = i.useState(true), [tn, tr] = i.useState([]), [ti, ta] = i.useState([]), to = i.useMemo(() => null == eV || (0, C.PV)(eV.id), [eV]), ts = i.useRef(null != K ? K.planId : null);
   i.useEffect(() => {
     null == ts.current && null != K && (ts.current = K.planId)
   }, [K]);
@@ -274,8 +274,8 @@ function ee(e) {
       browserCheckoutStatePlanId: e$,
       bodyNode: e0,
       setBodyNode: e1,
-      footerNode: e3,
-      setFooterNode: e2,
+      footerNode: e2,
+      setFooterNode: e3,
       modalOverlayNode: e4,
       setModalOverlayNode: e8,
       selectedSkuId: eF,

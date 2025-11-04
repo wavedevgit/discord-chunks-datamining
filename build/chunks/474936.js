@@ -9,7 +9,7 @@ require.d(exports, {
   $n: () => eQ,
   A5: () => B,
   AU: () => X,
-  Bo: () => e2,
+  Bo: () => e3,
   C: () => s,
   C2: () => J,
   CL: () => _,
@@ -26,7 +26,7 @@ require.d(exports, {
   HO: () => ej,
   IW: () => S,
   Lw: () => eC,
-  M_: () => e3,
+  M_: () => e2,
   NV: () => Y,
   Nl: () => eh,
   OT: () => el,
@@ -563,8 +563,8 @@ var eJ = function(e) {
     return e[e.DM_CHANNEL = 0] = "DM_CHANNEL", e[e.SHOP_PAGE = 1] = "SHOP_PAGE", e[e.USER_PROFILE_WISHLIST = 2] = "USER_PROFILE_WISHLIST", e[e.DM_CHANNEL_WISHLIST = 3] = "DM_CHANNEL_WISHLIST", e
   }({});
 let e1 = 3,
-  e3 = 30,
-  e2 = 20;
+  e2 = 30,
+  e3 = 20;
 var e4 = function(e) {
   return e.PREMIUM_TENURE_1_MONTH = "premium_tenure_1_month_v2", e.PREMIUM_TENURE_3_MONTH = "premium_tenure_3_month_v2", e.PREMIUM_TENURE_6_MONTH = "premium_tenure_6_month_v2", e.PREMIUM_TENURE_12_MONTH = "premium_tenure_12_month_v2", e.PREMIUM_TENURE_24_MONTH = "premium_tenure_24_month_v2", e.PREMIUM_TENURE_36_MONTH = "premium_tenure_36_month_v2", e.PREMIUM_TENURE_60_MONTH = "premium_tenure_60_month_v2", e.PREMIUM_TENURE_72_MONTH = "premium_tenure_72_month_v2", e
 }({});

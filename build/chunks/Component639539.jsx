@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk164369 = require("./164369.js"),
-  Chunk358458 = require("./358458.js"),
+  Chunk689628 = require("./689628.js"),
   Chunk481060 = require("./481060.js"),
   Chunk70956 = require("./70956.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -126,7 +126,7 @@ let f = e => {
         duration: 100
       }
     });
-    return (0, Chunk951288.jsxs)(Chunk358458.animated.div, {
+    return (0, Chunk951288.jsxs)(Chunk689628.animated.div, {
       style: require,
       className: Chunk636433.colonContainer,
       children: [(0, Chunk951288.jsx)("div", {
