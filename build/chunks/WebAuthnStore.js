@@ -35,8 +35,10 @@ function _() {
 }
 
 function p(e) {
-  let t = false;
-  return c !== e.credentials && (c = e.credentials, t = true), l || (l = true, t = true), t
+  let {
+    credentials: t
+  } = e, n = false;
+  return c !== t && (c = t, n = true), l || (l = true, n = true), n
 }
 
 function h(e) {

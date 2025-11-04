@@ -2,22 +2,61 @@
 /** chunk id: 365007, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Sr: () => p,
-  WQ: () => f,
-  cT: () => d,
-  d$: () => c,
-  ef: () => h,
-  hL: () => u,
-  startRegisterWebAuthnCredential: () => _,
-  us: () => l,
-  vg: () => m
+  Sr: () => E,
+  WQ: () => m,
+  cT: () => h,
+  d$: () => _,
+  ef: () => b,
+  hL: () => p,
+  startRegisterWebAuthnCredential: () => g,
+  us: () => f,
+  vg: () => y
 });
 var Chunk525769 = require("./525769.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk573261 = require("./573261.js"),
   Chunk981631 = require("./981631.js");
-async function l() {
+
+function l(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function c(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      l(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function u(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function d(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+async function f() {
   return (await Chunk544891.tn.post({
     url: Chunk981631.ANM.WEBAUTHN_CONDITIONAL_UI_CHALLENGE,
     headers: {
@@ -26,7 +65,7 @@ async function l() {
     rejectWithError: false
   })).body
 }
-async function c() {
+async function _() {
   let {
     challenge: e,
     ticket: t
@@ -40,19 +79,24 @@ async function c() {
   }
 }
 
-function u() {
+function p() {
   Chunk544891.tn.get({
     url: Chunk981631.ANM.MFA_WEBAUTHN_CREDENTIALS,
     rejectWithError: true
   }).then(e => {
-    a.Z.dispatch({
-      type: "MFA_WEBAUTHN_CREDENTIALS_LOADED",
-      credentials: e.body
-    })
+    if (null != e.body) {
+      let t = e.body.map(e => "string" == typeof e.last_used ? d(c({}, e), {
+        last_used: new Date(e.last_used)
+      }) : e);
+      a.Z.dispatch({
+        type: "MFA_WEBAUTHN_CREDENTIALS_LOADED",
+        credentials: t
+      })
+    }
   })
 }
 
-function d(e) {
+function h(e) {
   i.tn.del({
     url: s.ANM.MFA_WEBAUTHN_CREDENTIAL(e.id),
     rejectWithError: true
@@ -63,7 +107,7 @@ function d(e) {
     })
   })
 }
-async function f(e, t) {
+async function m(e, t) {
   let n = await i.tn.patch({
     url: s.ANM.MFA_WEBAUTHN_CREDENTIAL(e),
     body: {
@@ -71,12 +115,20 @@ async function f(e, t) {
     },
     rejectWithError: false
   });
-  a.Z.dispatch({
-    type: "AUTHENTICATOR_UPDATE",
-    credential: n.body
-  })
+  if (null != n.body) {
+    let e = n.body,
+      t = null;
+    "string" == typeof e.last_used && (t = new Date(e.last_used));
+    let r = d(c({}, e), {
+      last_used: t
+    });
+    a.Z.dispatch({
+      type: "AUTHENTICATOR_UPDATE",
+      credential: r
+    })
+  }
 }
-async function _() {
+async function g() {
   let {
     body: {
       ticket: e,
@@ -92,7 +144,7 @@ async function _() {
     challenge: exports
   }
 }
-async function p(e, t, n) {
+async function E(e, t, n) {
   let i = await o.Z.post({
     url: s.ANM.MFA_WEBAUTHN_CREDENTIALS,
     body: {
@@ -114,13 +166,13 @@ async function p(e, t, n) {
   })
 }
 
-function h() {
+function b() {
   Chunk570140.Z.dispatch({
     type: "WEBAUTHN_TRIGGER_REGISTER"
   })
 }
 
-function m() {
+function y() {
   Chunk570140.Z.dispatch({
     type: "WEBAUTHN_CLEAR_REGISTER_TRIGGER"
   })
