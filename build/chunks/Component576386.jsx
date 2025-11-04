@@ -16,21 +16,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk566697 = require("./566697.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk24391 = require("./24391.js");
-let h = e => {
+let x = e => {
     var t;
     let {
       currentUser: n,
       nameplate: i,
       section: o,
       canUsePremiumCollectibles: d,
-      isSelected: h,
+      isSelected: x,
       onClick: v
     } = e, _ = (0, r.useRef)(null), {
       isHoveringOrFocusing: j
     } = (0, u.Z)(_);
     return (0, l.jsxs)(a.P3F, {
       innerRef: _,
-      "aria-label": null != (t = i.label) ? t : x.intl.string(x.t.x5CoXR),
+      "aria-label": null != (t = i.label) ? t : h.intl.string(h.t.x5CoXR),
       className: g.nameplateItem,
       onClick: v,
       children: [(0, l.jsx)(m.Z, {
@@ -40,7 +40,7 @@ let h = e => {
         isHighlighted: j
       }), (0, l.jsx)("div", {
         className: s()(g.nameplateItemOverlay, {
-          [g.selected]: h
+          [g.selected]: x
         })
       }), (0, l.jsx)(c.Z, {
         isPurchaseSection: o === p.$0.PURCHASE,
@@ -77,7 +77,7 @@ let h = e => {
               color: "currentColor"
             }), (0, l.jsx)(a.Text, {
               variant: "text-xs/normal",
-              children: null != r ? x.intl.string(x.t.CHf9iJ) : x.intl.string(x.t.PoWNfe)
+              children: null != r ? h.intl.string(h.t.CHf9iJ) : h.intl.string(h.t.PoWNfe)
             })]
           }), (0, l.jsxs)(a.P3F, {
             className: g.inventoryControlsButton,
@@ -87,12 +87,12 @@ let h = e => {
               color: "currentColor"
             }), (0, l.jsx)(a.Text, {
               variant: "text-xs/normal",
-              children: x.intl.string(x.t.pWG4ze)
+              children: h.intl.string(h.t.pWG4ze)
             })]
           })]
         }), (0, l.jsx)("div", {
           className: g.list,
-          children: e.items.filter(o.k).map(r => (0, l.jsx)(h, {
+          children: e.items.filter(o.k).map(r => (0, l.jsx)(x, {
             currentUser: t,
             nameplate: r,
             section: e.section,

@@ -36,16 +36,16 @@ function E(e) {
     guildAvatarDecoration: S,
     pendingAvatarDecoration: A,
     pendingErrors: C
-  } = (0, p.$U)(t, n), N = (0, f.Z)("enable_avatar_decoration_uploads"), R = i.useCallback(() => (0, d.ps)({
+  } = (0, p.$U)(t, n), N = I ? S : T, R = (0, f.Z)("enable_avatar_decoration_uploads"), P = i.useCallback(() => (0, d.ps)({
     analyticsLocations: v,
     isTryItOutFlow: O,
     guild: n
-  }), [v, O, n]), P = O || true !== A ? null != A : (I ? S : T) != null;
+  }), [v, O, n]), w = O || true !== A ? null != A : null != N;
 
-  function w() {
-    (0, p.PO)(null == n ? true : n.id, null)
+  function D() {
+    (0, p.PO)(null, null == n ? true : n.id)
   }
-  let D = b ? l.gtL : s.zx;
+  let x = b ? l.gtL : s.zx;
   return (0, r.jsxs)(h.Z, {
     className: a,
     forcedDivider: E,
@@ -54,24 +54,24 @@ function E(e) {
     errors: C,
     children: [(0, r.jsxs)("div", {
       className: g.buttonsContainer,
-      children: [(0, r.jsx)(D, {
+      children: [(0, r.jsx)(x, {
         size: s.zx.Sizes.SMALL,
-        onClick: R,
+        onClick: P,
         className: o()({
           [g.buttonHighlighted]: b
         }),
         children: m.intl.string(m.t.BVcYCx)
-      }), P && (0, r.jsx)("div", {
+      }), w && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: g.removeButton,
         children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
           text: (0, u.ad)(t, n) ? m.intl.string(m.t.CHf9iJ) : m.intl.string(m.t.OrokWm),
-          onClick: w
+          onClick: D
         })
       })]
-    }), t.isStaff() && N && (0, r.jsx)(y, {
+    }), t.isStaff() && R && (0, r.jsx)(y, {
       user: t
     })]
   })

@@ -2,24 +2,22 @@
 /** chunk id: 18438, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Cf: () => p,
+  Cf: () => _,
   Fq: () => l,
-  Fu: () => f,
   HP: () => s,
   I5: () => u,
-  ID: () => h,
-  IO: () => y,
+  ID: () => p,
+  IO: () => E,
   It: () => c,
-  N_: () => b,
-  RH: () => E,
-  W3: () => v,
-  b9: () => I,
-  cV: () => d,
-  g_: () => _,
+  N_: () => g,
+  W3: () => y,
+  ZB: () => d,
+  b9: () => O,
+  g_: () => f,
   iq: () => o,
-  pG: () => O,
-  sr: () => m,
-  z5: () => g
+  pG: () => b,
+  sr: () => h,
+  z5: () => m
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -109,86 +107,72 @@ function u(e) {
 
 function d(e) {
   i.Z.dispatch({
-    type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_DECORATION",
-    avatarDecoration: e
+    type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_COLLECTIBLES_ITEM",
+    item: e
   })
 }
 
 function f(e) {
-  i.Z.dispatch({
-    type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT",
-    profileEffect: e
-  })
-}
-
-function _(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER",
     banner: e
   })
 }
 
-function p(e) {
+function _(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO",
     bio: e
   })
 }
 
-function h(e) {
+function p(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS",
     pronouns: e
   })
 }
 
-function m(e) {
+function h(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME",
     nickname: e
   })
 }
 
-function g(e) {
+function m(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS",
     themeColors: e
   })
 }
 
-function E(e) {
-  i.Z.dispatch({
-    type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_NAMEPLATE",
-    nameplate: e
-  })
-}
-
-function b(e) {
+function g(e) {
   i.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES",
     displayNameStyles: e
   })
 }
 
-function y() {
+function E() {
   Chunk570140.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES"
   })
 }
 
-function O() {
+function b() {
   Chunk570140.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES"
   })
 }
 
-function v() {
+function y() {
   Chunk570140.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING"
   })
 }
 
-function I() {
+function O() {
   Chunk570140.Z.dispatch({
     type: "GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS"
   })

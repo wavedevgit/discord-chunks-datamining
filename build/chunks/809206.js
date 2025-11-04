@@ -3,24 +3,22 @@
 "use strict";
 require.d(exports, {
   FD: () => h,
-  Fu: () => A,
   I5: () => O,
   Mn: () => b,
-  NI: () => N,
-  OU: () => L,
-  P6: () => D,
-  Rx: () => S,
+  NI: () => A,
+  OU: () => D,
+  P6: () => P,
   S2: () => E,
   V3: () => y,
   W0: () => v,
-  W3: () => w,
+  W3: () => R,
+  ZB: () => T,
   Zy: () => m,
-  b9: () => R,
-  cV: () => T,
+  b9: () => C,
   e1: () => I,
-  iR: () => x,
-  s4: () => C,
-  si: () => P,
+  iR: () => w,
+  s4: () => S,
+  si: () => N,
   ss: () => g
 });
 var Chunk544891 = require("./544891.js"),
@@ -209,70 +207,56 @@ function I(e) {
 
 function T(e) {
   o.Z.dispatch({
-    type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION",
-    avatarDecoration: e
+    type: "USER_SETTINGS_ACCOUNT_SET_PENDING_COLLECTIBLES_ITEM",
+    item: e
   })
 }
 
 function S(e) {
-  o.Z.dispatch({
-    type: "USER_SETTINGS_ACCOUNT_SET_PENDING_NAMEPLATE",
-    nameplate: e
-  })
-}
-
-function A(e) {
-  o.Z.dispatch({
-    type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT",
-    profileEffect: e
-  })
-}
-
-function C(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_SET_PENDING_PRIMARY_GUILD_ID",
     primaryGuildId: e
   })
 }
 
-function N(e) {
+function A(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_DISPLAY_NAME_STYLES",
     displayNameStyles: e
   })
 }
 
-function R() {
+function C() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_CLEAR_ERRORS"
   })
 }
 
-function P() {
+function N() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
   })
 }
 
-function w() {
+function R() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_ALL_PENDING"
   })
 }
 
-function D() {
+function P() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
   })
 }
 
-function x() {
+function w() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED"
   })
 }
 
-function L() {
+function D() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES"
   })

@@ -2,7 +2,7 @@
 /** chunk id: 539530, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $0: () => d,
-  ZP: () => x
+  ZP: () => h
 }), require("./388685.js"), require("./539854.js");
 var l, Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
@@ -18,7 +18,7 @@ let p = {
   m = {
     skuId: "Shop"
   },
-  x = () => {
+  h = () => {
     let e = (0, Chunk399606.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
       [t, n] = (0, Chunk399606.Wu)([Chunk597688.Z], () => [Chunk597688.Z.categories, Chunk597688.Z.products]);
     return Chunk235897.Z.useConfig({

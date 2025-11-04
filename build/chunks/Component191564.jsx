@@ -145,7 +145,7 @@ function C(e) {
     }), (0, r.jsx)(E, {
       user: t,
       onApply: () => {
-        (0, g.UK)(C, m, null == n ? true : n.id), f()
+        (0, g.UK)(C, null == n ? true : n.id), f()
       },
       onClose: f,
       onOpenShop: U,

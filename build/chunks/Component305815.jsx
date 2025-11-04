@@ -1,7 +1,7 @@
 /** Chunk was on 41023 **/
 /** chunk id: 305815, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => T
+  default: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,6 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk809206 = require("./809206.js"),
   Chunk204418 = require("./204418.jsx"),
   Chunk583434 = require("./583434.js"),
+  Chunk150039 = require("./150039.js"),
   Chunk164946 = require("./164946.js"),
   Chunk25990 = require("./25990.js"),
   Chunk594174 = require("./594174.js"),
@@ -26,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk129034 = require("./129034.js");
 
-function w(e) {
+function T(e) {
   var n;
   let {
     quest: t,
@@ -34,11 +35,11 @@ function w(e) {
     onUseNow: i,
     user: l,
     mode: o
-  } = e, c = (0, h.fh)(t, h.eC.REWARD).url, u = (0, x.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == a ? true : a.skuId);
+  } = e, c = (0, j.fh)(t, j.eC.REWARD).url, u = (0, v.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == a ? true : a.skuId);
   return (0, r.jsxs)("div", {
-    className: b.contentContainer,
+    className: w.contentContainer,
     children: [(0, r.jsx)("div", {
-      className: b.previewContainer,
+      className: w.previewContainer,
       children: (0, r.jsx)(d.Z, {
         user: l,
         guildId: null,
@@ -47,12 +48,12 @@ function w(e) {
         questPreviewRewardAssetUrl: c
       })
     }), (0, r.jsxs)("div", {
-      className: b.copyContainer,
+      className: w.copyContainer,
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        className: b.heading,
-        children: N.intl.string(N.t["0/Yz+Y"])
+        className: w.heading,
+        children: b.intl.string(b.t["0/Yz+Y"])
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
@@ -61,7 +62,7 @@ function w(e) {
     }), (0, r.jsx)(s.Button, {
       variant: "secondary",
       size: "sm",
-      text: m ? N.intl.string(N.t.hjaYYn) : N.intl.string(N.t.MAS7uK),
+      text: m ? b.intl.string(b.t.hjaYYn) : b.intl.string(b.t.MAS7uK),
       loading: "applying" === o,
       disabled: "claimed" !== o || m,
       onClick: i,
@@ -70,16 +71,16 @@ function w(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   var n, t, s;
   let {
     initialQuest: d,
-    onClose: h,
-    transitionState: N,
-    preview: b,
-    location: T,
-    sourceQuestContent: P
-  } = e, E = null != (t = (0, x.B4)(d.id)) ? t : d, A = a.useMemo(() => (0, C.xn)(E.config), [E]), D = (0, l.e7)([p.default], () => p.default.getCurrentUser()), [L, O] = function(e) {
+    onClose: j,
+    transitionState: b,
+    preview: w,
+    location: P,
+    sourceQuestContent: E
+  } = e, A = null != (t = (0, v.B4)(d.id)) ? t : d, D = a.useMemo(() => (0, x.xn)(A.config), [A]), O = (0, l.e7)([f.default], () => f.default.getCurrentUser()), [L, S] = function(e) {
     let {
       product: n,
       isFetching: t
@@ -88,43 +89,43 @@ function T(e) {
       let e = n.items.find(e => e.type === i.Z.AVATAR_DECORATION);
       return null != e ? e : null
     }, [n, t]), l = async () => {
-      if (null == r) return f.Z.addBreadcrumb({
+      if (null == r) return g.Z.addBreadcrumb({
         message: "Error saving avatar decoration; it is null"
       }), false;
-      (0, o.cV)(r);
-      let e = m.Z.getAllPending(),
-        n = (0, u.ED)(e),
+      (0, u.PO)(r);
+      let e = p.Z.getAllPending(),
+        n = (0, m.ED)(e),
         t = await (0, o.Mn)(n);
       return (0, o.si)(), !!(null == t ? true : t.ok)
     };
     return [r, l]
-  }(null != (s = null == A ? true : A.skuId) ? s : null), S = (null == (n = E.userStatus) ? true : n.claimedAt) != null, R = !b && !S, [k, I] = a.useState(R ? "loading" : "claimed");
+  }(null != (s = null == D ? true : D.skuId) ? s : null), R = (null == (n = A.userStatus) ? true : n.claimedAt) != null, k = !w && !R, [I, M] = a.useState(k ? "loading" : "claimed");
   a.useEffect(() => {
-    R && (0, g.QB)(E.id, v.y$.CROSS_PLATFORM, T).then(() => I("claimed")).catch(() => I("error"))
-  }, [E.id, T, R]);
-  let M = true === b && null === L && (null == A ? true : A.skuId) !== "",
-    Z = null == D,
-    B = Z || null == L && true !== b || M || "loading" === k,
-    q = "error" === k || null == A,
-    G = async () => {
-      I("applying"), I(await O() ? "applied" : "claimed")
+    k && (0, C.QB)(A.id, h.y$.CROSS_PLATFORM, P).then(() => M("claimed")).catch(() => M("error"))
+  }, [A.id, P, k]);
+  let Z = true === w && null === L && (null == D ? true : D.skuId) !== "",
+    B = null == O,
+    q = B || null == L && true !== w || Z || "loading" === I,
+    G = "error" === I || null == D,
+    W = async () => {
+      M("applying"), M(await S() ? "applied" : "claimed")
     };
-  return (0, r.jsx)(j.Z, {
-    onClose: h,
-    transitionState: N,
-    quest: E,
-    sourceQuestContent: P,
-    location: y.dr.COLLECTIBLE_REWARD_MODAL,
-    isRewardContentLoading: B,
-    rewardContentHasError: q,
-    rewardContent: q || Z ? null : (0, r.jsx)(_.Z, {
-      rewardName: A.messages.name,
-      children: (0, r.jsx)(w, {
-        quest: E,
+  return (0, r.jsx)(_.Z, {
+    onClose: j,
+    transitionState: b,
+    quest: A,
+    sourceQuestContent: E,
+    location: N.dr.COLLECTIBLE_REWARD_MODAL,
+    isRewardContentLoading: q,
+    rewardContentHasError: G,
+    rewardContent: G || B ? null : (0, r.jsx)(y.Z, {
+      rewardName: D.messages.name,
+      children: (0, r.jsx)(T, {
+        quest: A,
         avatarDeco: L,
-        user: D,
-        mode: k,
-        onUseNow: G
+        user: O,
+        mode: I,
+        onUseNow: W
       })
     })
   })

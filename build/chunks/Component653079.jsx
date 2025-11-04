@@ -35,14 +35,14 @@ let _ = e => {
     children: [(0, l.jsx)("div", {
       className: v.previewBox,
       role: "img",
-      "aria-label": h.intl.string(h.t.SZeUdR),
+      "aria-label": x.intl.string(x.t.SZeUdR),
       children: (0, l.jsxs)("div", {
         className: v.previewContents,
         "aria-hidden": true,
-        children: [(0, l.jsx)(x.G, {
+        children: [(0, l.jsx)(h.G, {
           width: 124,
           opacity: .9
-        }), (0, l.jsx)(x.G, {
+        }), (0, l.jsx)(h.G, {
           width: 124,
           opacity: .9
         }), (0, l.jsx)(g.Z, (t = function(e) {
@@ -76,10 +76,10 @@ let _ = e => {
           return n
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), t)), (0, l.jsx)(x.G, {
+        }), t)), (0, l.jsx)(h.G, {
           width: 124,
           opacity: .9
-        }), (0, l.jsx)(x.G, {
+        }), (0, l.jsx)(h.G, {
           width: 124,
           opacity: .9
         })]
@@ -91,7 +91,7 @@ let _ = e => {
         children: f
       }), N && (0, l.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: w ? h.intl.string(h.t.nD78oa) : O && C ? h.intl.string(h.t.hmyYK8) : O ? h.intl.string(h.t.JY1i0u) : h.intl.string(h.t.fEGjVQ)
+        children: w ? x.intl.string(x.t.nD78oa) : O && C ? x.intl.string(x.t.hmyYK8) : O ? x.intl.string(x.t.JY1i0u) : x.intl.string(x.t.fEGjVQ)
       })]
     })]
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 83175 **/
 /** chunk id: 920916, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => W
+  default: () => G
 }), require("./457542.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,6 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk530618 = require("./530618.jsx"),
   Chunk454585 = require("./454585.js"),
   Chunk732389 = require("./732389.jsx"),
+  Chunk150039 = require("./150039.js"),
   Chunk164946 = require("./164946.js"),
   Chunk369111 = require("./369111.js"),
   Chunk313789 = require("./313789.js"),
@@ -42,13 +43,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824210 = require("./824210.js");
 
-function z() {
+function U() {
   let e = Chunk25990.Z.getAllPending(),
     n = (0, Chunk164946.ED)(module);
   return (0, Chunk809206.Mn)(exports).finally(Chunk809206.si)
 }
 
-function U(e) {
+function q(e) {
   var n;
   let {
     transitionState: t,
@@ -59,16 +60,16 @@ function U(e) {
     decoration: p,
     onUseNow: f,
     preview: g
-  } = e, h = o.useRef(null), [C, v] = o.useState(null), j = o.useRef(new l.qA), w = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), N = (0, d.e7)([I.default], () => I.default.getCurrentUser()), b = (null == (n = s.userStatus) ? true : n.claimedAt) != null, [T, P] = o.useState(true === g || b ? "claimed" : "loading");
+  } = e, h = o.useRef(null), [C, v] = o.useState(null), j = o.useRef(new l.qA), w = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), N = (0, d.e7)([T.default], () => T.default.getCurrentUser()), b = (null == (n = s.userStatus) ? true : n.claimedAt) != null, [I, R] = o.useState(true === g || b ? "claimed" : "loading");
   o.useEffect(() => {
-    b || true === g || (0, R.QB)(s.id, y.y$.CROSS_PLATFORM, u).then(() => P("claimed")).catch(() => P("error"))
+    b || true === g || (0, P.QB)(s.id, B.y$.CROSS_PLATFORM, u).then(() => R("claimed")).catch(() => R("error"))
   }, [s, u, b, g]);
   let S = true === g && null === p && (null == _ ? true : _.skuId) !== "",
-    B = null == N || null == p && true !== g || S || "loading" === T;
+    y = null == N || null == p && true !== g || S || "loading" === I;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(l.O_, {
       ref: v,
-      className: F.confettiCanvas,
+      className: z.confettiCanvas,
       environment: j.current
     }), (0, a.jsx)("div", {
       ref: h,
@@ -76,48 +77,48 @@ function U(e) {
         "data-migration-pending": true,
         transitionState: t,
         size: c.CgR.DYNAMIC,
-        className: i()(F.rootContainer, {
-          [F.rootContainerLoading]: B
+        className: i()(z.rootContainer, {
+          [z.rootContainerLoading]: y
         }),
         hideShadow: true,
         parentComponent: "QuestsRewardCollectibleModal",
-        children: "error" === T ? (0, a.jsx)(L.Z, {
+        children: "error" === I ? (0, a.jsx)(M.Z, {
           onClose: r
-        }) : B ? (0, a.jsx)("div", {
-          className: F.loadingIndicatorWrapper,
+        }) : y ? (0, a.jsx)("div", {
+          className: z.loadingIndicatorWrapper,
           children: (0, a.jsx)(c.$jN, {
             type: c.$jN.Type.SPINNING_CIRCLE
           })
-        }) : (0, a.jsx)(H, {
+        }) : (0, a.jsx)(W, {
           quest: s,
           user: N,
           decoration: p,
-          isSaving: "applying" === T,
+          isSaving: "applying" === I,
           onClose: r,
           onConfirm: () => {
-            P("applying"), f().finally(r)
+            R("applying"), f().finally(r)
           }
         })
       })
-    }), !w && !b && "claimed" === T && (0, a.jsx)(x.Z, {
+    }), !w && !b && "claimed" === I && (0, a.jsx)(x.Z, {
       confettiTarget: h.current,
       confettiCanvas: C,
-      sprites: O.CA,
-      colors: O.Br
+      sprites: Z.CA,
+      colors: Z.Br
     })]
   })
 }
 
-function q(e) {
+function H(e) {
   let {
     quest: n
-  } = e, t = o.useMemo(() => (0, B.fh)(n, B.eC.LOGO_TYPE, "dark"), [n]), r = A.r.build(n.config).defaultRewardRedemptionInstructionsByPlatform[y.y$.CROSS_PLATFORM];
+  } = e, t = o.useMemo(() => (0, A.fh)(n, A.eC.LOGO_TYPE, "dark"), [n]), r = E.r.build(n.config).defaultRewardRedemptionInstructionsByPlatform[B.y$.CROSS_PLATFORM];
   return (0, a.jsxs)("div", {
-    className: F.additionalRedemptionInstructions,
+    className: z.additionalRedemptionInstructions,
     children: [(0, a.jsx)("img", {
       src: t.url,
       alt: "",
-      className: F.sponsorLogo
+      className: z.sponsorLogo
     }), (0, a.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "always-white",
@@ -128,7 +129,7 @@ function q(e) {
   })
 }
 
-function H(e) {
+function W(e) {
   let {
     quest: n,
     user: t,
@@ -136,25 +137,25 @@ function H(e) {
     isSaving: r,
     onClose: i,
     onConfirm: l
-  } = e, s = (0, B.fh)(n, B.eC.REWARD).url, d = (0, P.f$)(n.config), {
+  } = e, s = (0, A.fh)(n, A.eC.REWARD).url, d = (0, S.f$)(n.config), {
     fractionalState: u
-  } = (0, f.Z)(), m = u === Z.a$.FP_ONLY, _ = (0, S.Qy)(n.config);
+  } = (0, f.Z)(), m = u === D.a$.FP_ONLY, _ = (0, y.Qy)(n.config);
   return (0, a.jsxs)("div", {
-    className: F.claimedRootContainer,
+    className: z.claimedRootContainer,
     children: [(0, a.jsxs)("div", {
-      className: F.headerContainer,
-      children: [(0, a.jsx)(E.Z, {
+      className: z.headerContainer,
+      children: [(0, a.jsx)(L.Z, {
         quest: n,
         dimensions: {
           width: 528,
           height: 148
         },
-        className: F.headerBackground
+        className: z.headerBackground
       }), (0, a.jsx)("div", {
-        className: F.headerForeground,
+        className: z.headerForeground,
         children: (0, a.jsx)(c.olH, {
           "data-migration-pending": true,
-          className: F.close,
+          className: z.close,
           withCircleBackground: true,
           onClick: i
         })
@@ -163,9 +164,9 @@ function H(e) {
       "data-migration-pending": true,
       separator: false,
       children: (0, a.jsxs)("div", {
-        className: F.footerBody,
+        className: z.footerBody,
         children: [(0, a.jsx)("div", {
-          className: F.previewContainer,
+          className: z.previewContainer,
           children: (0, a.jsx)(p.Z, {
             user: t,
             guildId: null,
@@ -176,25 +177,25 @@ function H(e) {
         }), (0, a.jsx)(c.Heading, {
           variant: "heading-lg/bold",
           color: "header-primary",
-          className: F.heading,
-          children: D.intl.string(D.t["0/Yz+Y"])
+          className: z.heading,
+          children: F.intl.string(F.t["0/Yz+Y"])
         }), (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          className: F.text,
+          className: z.text,
           children: _
         }), (0, a.jsx)(c.Button, {
           variant: "primary",
-          text: D.intl.string(D.t.MAS7uK),
+          text: F.intl.string(F.t.MAS7uK),
           loading: r,
           onClick: l
-        }), (0, P.zK)(n, M.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, a.jsx)(q, {
+        }), (0, S.zK)(n, O.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, a.jsx)(H, {
           quest: n
         }), d && !m && (0, a.jsx)(C.p, {
-          className: F.upsell,
-          upsellText: D.intl.format(D.t.VHXn7C, {
+          className: z.upsell,
+          upsellText: F.intl.format(F.t.VHXn7C, {
             onNitroClick: () => {
-              (0, N.openUserSettings)(w.n.NITRO_PANEL, {
+              (0, b.openUserSettings)(N.n.NITRO_PANEL, {
                 section: k.oAB.PREMIUM
               }), i()
             }
@@ -208,7 +209,7 @@ function H(e) {
   })
 }
 
-function W(e) {
+function G(e) {
   var n, t;
   let {
     quest: r,
@@ -216,33 +217,33 @@ function W(e) {
     onClose: l,
     transitionState: d,
     preview: c
-  } = e, m = o.useMemo(() => (0, P.xn)(r.config), [r]), [p, f] = function(e) {
+  } = e, u = o.useMemo(() => (0, S.xn)(r.config), [r]), [m, p] = function(e) {
     let {
       product: n,
       isFetching: t
-    } = (0, g.T)(e), {} = (0, j.Z)({}), a = o.useMemo(() => {
+    } = (0, g.T)(e), {} = (0, w.Z)({}), a = o.useMemo(() => {
       if (null == n || t) return null;
       let e = n.items.find(e => e.type === s.Z.AVATAR_DECORATION);
       return null == e ? null : e
     }, [n, t]);
-    return [a, () => null == a ? (T.Z.addBreadcrumb({
+    return [a, () => null == a ? (R.Z.addBreadcrumb({
       message: "Error saving avatar decoration; it is null"
-    }), Promise.reject()) : ((0, u.cV)(a), z())]
-  }(null != (t = null == m ? true : m.skuId) ? t : null);
-  return null == m ? null : (null == (n = r.userStatus) ? true : n.claimedAt) != null ? (0, a.jsx)(_.default, {
+    }), Promise.reject()) : ((0, v.PO)(a), U())]
+  }(null != (t = null == u ? true : u.skuId) ? t : null);
+  return null == u ? null : (null == (n = r.userStatus) ? true : n.claimedAt) != null ? (0, a.jsx)(_.default, {
     transitionState: d,
-    onCloseModal: z,
+    onCloseModal: U,
     onClose: l,
     analyticsLocations: [],
-    initialSelectedDecoration: p
-  }) : (0, a.jsx)(U, {
+    initialSelectedDecoration: m
+  }) : (0, a.jsx)(q, {
     onClose: l,
     transitionState: d,
     quest: r,
     location: i,
-    reward: m,
-    decoration: p,
-    onUseNow: f,
+    reward: u,
+    decoration: m,
+    onUseNow: p,
     preview: c
   })
 }

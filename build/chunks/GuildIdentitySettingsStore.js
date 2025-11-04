@@ -3,13 +3,14 @@
 "use strict";
 let r, i, a, o, s, l, c, u, d, f, _, p;
 require.d(exports, {
-  Z: () => H
+  Z: () => V
 });
-var h, Chunk442837 = require("./442837.js"),
+var h, Chunk979554 = require("./979554.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,54 +18,47 @@ function b(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = Chunk981631.QZA.CLOSED,
-  O = {};
+let O = Chunk981631.QZA.CLOSED,
+  v = {};
 
-function v(e) {
-  _ = e.guild, y = E.QZA.OPEN, O = {}, p = e.source
-}
-
-function I() {
-  y = Chunk981631.QZA.CLOSED, O = {}, p = true
+function I(e) {
+  _ = e.guild, O = b.QZA.OPEN, v = {}, p = e.source
 }
 
 function T() {
-  y = Chunk981631.QZA.SUBMITTING, O = {}
+  O = Chunk981631.QZA.CLOSED, v = {}, p = true
 }
 
-function S(e) {
-  _ = e.guild, O = {}
+function S() {
+  O = Chunk981631.QZA.SUBMITTING, v = {}
 }
 
 function A(e) {
-  var t;
-  if (y !== E.QZA.SUBMITTING) returnfalse;
-  y = E.QZA.OPEN, O = null != (t = e.errors) ? t : {}
+  _ = e.guild, v = {}
 }
 
 function C(e) {
-  y = E.QZA.OPEN, O = e.errors
+  var t;
+  if (O !== b.QZA.SUBMITTING) returnfalse;
+  O = b.QZA.OPEN, v = null != (t = e.errors) ? t : {}
 }
 
 function N(e) {
+  O = b.QZA.OPEN, v = e.errors
+}
+
+function R(e) {
   let {
     avatar: t
   } = e;
   r = t
 }
 
-function R(e) {
-  let {
-    avatarDecoration: t
-  } = e;
-  i = t
-}
-
 function P(e) {
   let {
-    profileEffect: t
+    item: t
   } = e;
-  o = t
+  t.type === m.Z.AVATAR_DECORATION ? i = t.value : t.type === m.Z.PROFILE_EFFECT ? o = t.value : t.type === m.Z.NAMEPLATE && (a = t.value)
 }
 
 function w(e) {
@@ -104,43 +98,36 @@ function M(e) {
 
 function j(e) {
   let {
-    nameplate: t
-  } = e;
-  a = t
-}
-
-function k(e) {
-  let {
     displayNameStyles: t
   } = e;
   f = t
 }
 
-function U() {
-  G(), B(), O = {}, y = Chunk981631.QZA.OPEN
+function k() {
+  U(), G(), v = {}, O = Chunk981631.QZA.OPEN
 }
 
-function G() {
+function U() {
   r = true, u = true, i = true, a = true, f = true
 }
 
-function B() {
+function G() {
   s = true, l = true, c = true, d = true, o = true
 }
 
-function Z() {
-  O = {}
+function B() {
+  v = {}
 }
 
-function F() {
-  U(), I()
+function Z() {
+  k(), T()
 }
-class V extends(h = Chunk442837.ZP.Store) {
+class F extends(h = Chunk442837.ZP.Store) {
   getFormState() {
-    return y
+    return O
   }
   getErrors() {
-    return O
+    return v
   }
   showNotice() {
     return true !== r || true !== i || true !== o || true !== s || true !== l || true !== c || true !== u || true !== d || true !== a || true !== f
@@ -202,27 +189,25 @@ class V extends(h = Chunk442837.ZP.Store) {
     return p
   }
 }
-b(V, "displayName", "GuildIdentitySettingsStore");
-let H = new V(Chunk570140.Z, {
-  GUILD_IDENTITY_SETTINGS_INIT: v,
-  GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: F,
-  GUILD_IDENTITY_SETTINGS_SET_GUILD: S,
-  GUILD_IDENTITY_SETTINGS_SUBMIT: T,
-  GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: A,
-  USER_PROFILE_UPDATE_FAILURE: C,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: N,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR_DECORATION: R,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES: k,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_NAMEPLATE: j,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_PROFILE_EFFECT: P,
+y(F, "displayName", "GuildIdentitySettingsStore");
+let V = new F(Chunk570140.Z, {
+  GUILD_IDENTITY_SETTINGS_INIT: I,
+  GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: Z,
+  GUILD_IDENTITY_SETTINGS_SET_GUILD: A,
+  GUILD_IDENTITY_SETTINGS_SUBMIT: S,
+  GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: C,
+  USER_PROFILE_UPDATE_FAILURE: N,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: R,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_COLLECTIBLES_ITEM: P,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES: j,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: w,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: D,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: x,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: L,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: M,
-  GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: G,
-  GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: B,
-  GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: U,
-  GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: U,
-  GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: Z
+  GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: U,
+  GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: G,
+  GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: k,
+  GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: k,
+  GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: B
 })
