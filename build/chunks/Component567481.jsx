@@ -24,7 +24,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
   O = {
     [Chunk981631.Etm.SET_OVERLAY_LOCKED]: {
       scope: Chunk186901.lH,
-      validation: e => (0, h.Z)(e).required().keys({
+      validation: e => (0, g.Z)(e).required().keys({
         locked: e.boolean().required(),
         pid: e.number().min(0).required()
       }),
@@ -44,12 +44,12 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
           }), null == r.id) throw new f.Z({
           errorCode: b.lTL.INVALID_COMMAND
         }, "No application.");
-        o.Z.setInputLocked(t, n)
+        s.Z.setInputLocked(t, n)
       }
     },
     [Chunk981631.Etm.OPEN_OVERLAY_ACTIVITY_INVITE]: {
       scope: Chunk186901.lH,
-      validation: e => (0, h.Z)(e).required().keys({
+      validation: e => (0, g.Z)(e).required().keys({
         type: e.number().required().valid([b.mFx.JOIN]),
         pid: e.number().min(0).required()
       }),
@@ -65,15 +65,15 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
           errorCode: b.lTL.INVALID_COMMAND
         }, "No application.");
         let l = d.Z.getApplicationActivity(i);
-        if (null == l || null == l.secrets || !(0, m.t9)(n, l.party, l.secrets)) throw new f.Z({
+        if (null == l || null == l.secrets || !(0, h.t9)(n, l.party, l.secrets)) throw new f.Z({
           errorCode: b.lTL.NO_ELIGIBLE_ACTIVITY
         }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
         let {
-          lock: s,
-          context: o
-        } = (0, g.jU)(r), u = (0, c.Z)(l, p.Z);
-        return (0, a.h7)(l, u, o).then(() => {
-          if (s(), u) throw new f.Z({
+          lock: o,
+          context: s
+        } = (0, m.jU)(r), u = (0, c.Z)(l, p.Z);
+        return (0, a.h7)(l, u, s).then(() => {
+          if (o(), u) throw new f.Z({
             errorCode: b.lTL.NO_ELIGIBLE_ACTIVITY
           }, "No eligible activity for application. Ensure user does have have privacy enabled.")
         })
@@ -81,7 +81,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
     },
     [Chunk981631.Etm.OPEN_OVERLAY_GUILD_INVITE]: {
       scope: Chunk186901.lH,
-      validation: e => (0, h.Z)(e).required().keys({
+      validation: e => (0, g.Z)(e).required().keys({
         code: e.string().required(),
         pid: e.number().min(0).required()
       }),
@@ -96,7 +96,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
         if (null == r.application.id) throw new f.Z({
           errorCode: b.lTL.INVALID_COMMAND
         }, "No application.");
-        return s.ZP.resolveInvite(t, "Game SDK").then(e => {
+        return o.ZP.resolveInvite(t, "Game SDK").then(e => {
           let {
             invite: t,
             code: r
@@ -107,7 +107,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
           let {
             context: i,
             lock: a
-          } = (0, g.jU)(n);
+          } = (0, m.jU)(n);
           return new Promise(e => {
             l.Z.dispatch({
               type: "INVITE_MODAL_OPEN",
@@ -122,7 +122,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
     },
     [Chunk981631.Etm.OPEN_OVERLAY_VOICE_SETTINGS]: {
       scope: Chunk186901.lH,
-      validation: e => (0, h.Z)(e).required().keys({
+      validation: e => (0, g.Z)(e).required().keys({
         pid: e.number().min(0).required()
       }),
       handler(e) {
@@ -136,9 +136,9 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
           errorCode: b.lTL.INVALID_COMMAND
         }, "No application.");
         let {
-          lock: s,
-          context: o
-        } = (0, g.jU)(t);
+          lock: o,
+          context: s
+        } = (0, m.jU)(t);
         return new Promise(e => {
           (0, i.ZDy)(async () => {
             let {
@@ -181,9 +181,9 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
               }), n))
             }
           }, {
-            contextKey: o === b.IlC.POPOUT ? i.u1M : i.z1l,
+            contextKey: s === b.IlC.POPOUT ? i.u1M : i.z1l,
             onCloseCallback: () => {
-              s(), e()
+              o(), e()
             }
           })
         })

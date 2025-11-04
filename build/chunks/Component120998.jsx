@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk302221 = require("./302221.js"),
   Chunk781176 = require("./781176.js");
 
@@ -24,9 +24,9 @@ class d extends(r = Chunk647438.PureComponent) {
       maxValue: n,
       data: r,
       animate: i
-    } = this.props, l = null == e || e.data !== t.data && !s().isEqual(e.data, t.data);
+    } = this.props, l = null == e || e.data !== t.data && !o().isEqual(e.data, t.data);
     if (l && (this.dataChangedAt = performance.now(), this.maxValue = null != n ? n : Math.max(...r)), l || null == e || !e.animate && i || e.color !== this.props.color) {
-      let e = o.oo(this.props.color);
+      let e = s.oo(this.props.color);
       this.fillColor = "rgba(".concat(e.r, ", ").concat(e.g, ", ").concat(e.b, ", 0.5)"), window.cancelAnimationFrame(this.animationFrameRequestId), this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation)
     }
   }
@@ -63,7 +63,7 @@ class d extends(r = Chunk647438.PureComponent) {
         data: i,
         updateInterval: l,
         color: a,
-        numUpdatesToShow: s,
+        numUpdatesToShow: o,
         lineWidth: c,
         animate: u,
         gradientStopColor: d
@@ -71,21 +71,21 @@ class d extends(r = Chunk647438.PureComponent) {
       if (i.length < 2) return;
       let p = Math.max(Math.min((e - this.dataChangedAt) / l, 1), 0),
         f = r.getContext("2d"),
-        m = this.maxValue;
+        h = this.maxValue;
       f.strokeStyle = a, f.lineWidth = c;
-      let h = r.height - f.lineWidth,
-        g = f.createLinearGradient(0, 0, 0, h);
-      if (null != d) g.addColorStop(0, d);
+      let g = r.height - f.lineWidth,
+        m = f.createLinearGradient(0, 0, 0, g);
+      if (null != d) m.addColorStop(0, d);
       else {
         let {
           r: e,
           g: t,
           b: n
-        } = o.oo(a);
-        g.addColorStop(0, "rgba(".concat(e, ", ").concat(t, ", ").concat(n, ", 0)"))
+        } = s.oo(a);
+        m.addColorStop(0, "rgba(".concat(e, ", ").concat(t, ", ").concat(n, ", 0)"))
       }
-      g.addColorStop(1, this.fillColor), f.fillStyle = g;
-      let _ = i.length >= s ? s : i.length;
+      m.addColorStop(1, this.fillColor), f.fillStyle = m;
+      let _ = i.length >= o ? o : i.length;
       f.setTransform(1, 0, 0, false, 0, r.height), f.clearRect(0, 0, r.width, r.height), f.translate(0, .5 * f.lineWidth);
       let b = Math.floor(r.width / (_ - 3)),
         E = .5 * b;
@@ -94,7 +94,7 @@ class d extends(r = Chunk647438.PureComponent) {
       i.forEach((e, r) => {
         t = {
           x: O,
-          y: h * e / m
+          y: g * e / h
         }, 0 === r ? f.moveTo(t.x, t.y) : f.bezierCurveTo(n.x + E, n.y, t.x - E, t.y, t.x, t.y), n = t, O += b
       }), f.stroke(), f.lineTo(O - b, 0), f.lineTo(0, 0), f.fill(), u && p < 1 && (this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation))
     })

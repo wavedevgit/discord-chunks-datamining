@@ -1,5 +1,5 @@
 /** Chunk was on 80448 **/
-/** chunk id: 271268, original params: i,t,r (module,exports,require) **/
+/** chunk id: 271268, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
   Z: () => o
 });
@@ -14,8 +14,8 @@ var Chunk951288 = require("./951288.js"),
 function o() {
   let {
     voice: {
-      totalVoiceMinutes: i,
-      totalVoiceMinutesPercentile: t
+      totalVoiceMinutes: t,
+      totalVoiceMinutesPercentile: e
     }
   } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData());
   return (0, Chunk951288.jsxs)(Chunk198358.Z, {

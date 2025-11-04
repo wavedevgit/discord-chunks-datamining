@@ -2,7 +2,7 @@
 /** chunk id: 299852, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => j
 }), require("./35282.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -170,6 +170,6 @@ class v extends(r = Chunk647438.PureComponent) {
 E(v, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let b = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
+let j = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
   defaultRoute: Chunk896797.Z.defaultRoute
 }))(v)

@@ -1,17 +1,17 @@
 /** Chunk was on 1272 **/
 /** chunk id: 176881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk626135 = require("./626135.js"),
   Chunk188471 = require("./188471.js"),
   Chunk360347 = require("./360347.js"),
   Chunk981631 = require("./981631.js");
 
-function s(e) {
-  var t, n, s;
+function o(e) {
+  var t, n, o;
   let {
-    tab_opened: o,
+    tab_opened: s,
     source: c
   } = e, u = (0, l.Z)();
   r.default.track(a.rMx.FRIENDS_LIST_VIEWED, function(e) {
@@ -32,12 +32,12 @@ function s(e) {
     }
     return e
   }({
-    tab_opened: o,
+    tab_opened: s,
     source: c
   }, u)), (0, i.a)(a.rMx.FRIENDS_LIST_VIEWED_CLICKSTREAM, {
-    tab_opened: null != o ? o : "tabless",
+    tab_opened: null != s ? s : "tabless",
     num_friends: null != (t = u.num_friends) ? t : 0,
     now_playing_visible: null != (n = u.now_playing_visible) && n,
-    now_playing_num_cards: null != (s = u.now_playing_num_cards) ? s : 0
+    now_playing_num_cards: null != (o = u.now_playing_num_cards) ? o : 0
   })
 }

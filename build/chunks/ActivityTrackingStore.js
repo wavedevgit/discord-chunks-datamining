@@ -17,32 +17,32 @@ var r, i, l, Chunk442837 = require("./442837.js"),
   Chunk19780 = require("./19780.js"),
   Chunk944486 = require("./944486.js"),
   Chunk981631 = require("./981631.js");
-let y = "ActivityTrackingStore",
-  v = 30 * Chunk70956.Z.Millis.MINUTE,
+let v = "ActivityTrackingStore",
+  I = 30 * Chunk70956.Z.Millis.MINUTE,
   C = 5 * Chunk70956.Z.Millis.MINUTE,
-  S = null != (r = Chunk433517.K.get(y)) ? r : {},
+  S = null != (r = Chunk433517.K.get(v)) ? r : {},
   T = {},
   N = false;
 
-function P(e) {
+function j(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  t && j(e, true);
+  t && P(e, true);
   let n = T[e.applicationId];
-  null != n && (n.stop(), delete T[e.applicationId]), delete S[e.applicationId], s.K.set(y, S)
+  null != n && (n.stop(), delete T[e.applicationId]), delete S[e.applicationId], o.K.set(v, S)
 }
 
-function j(e) {
+function P(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
-  r > v + C && (r = 0);
-  let i = (0, h.OT)(e.applicationId, b.Z),
+  r > I + C && (r = 0);
+  let i = (0, g.OT)(e.applicationId, b.Z),
     l = O.Z.getVoiceChannelId(),
-    a = g.default.getSessionId(),
+    a = m.default.getSessionId(),
     c = E.Z.getMediaSessionId();
   u.Z.updateActivity({
     applicationId: e.applicationId,
-    distributor: e.isDiscordApplication ? I.GQo.DISCORD : e.distributor,
+    distributor: e.isDiscordApplication ? y.GQo.DISCORD : e.distributor,
     shareActivity: i,
     token: e.token,
     duration: Math.floor(r / 1e3),
@@ -53,7 +53,7 @@ function j(e) {
     mediaSessionId: c
   }), e.updatedAt = n;
   let d = T[e.applicationId];
-  null == d && (d = T[e.applicationId] = new o.Xp).start(v, () => j(e)), t || (S[e.applicationId] = e, s.K.set(y, S))
+  null == d && (d = T[e.applicationId] = new s.Xp).start(I, () => P(e)), t || (S[e.applicationId] = e, o.K.set(v, S))
 }
 
 function x() {
@@ -67,18 +67,18 @@ function x() {
     }
     of exports) {
     let t = Chunk77498.Z.getGameByName(module);
-    null != exports && (require.add(exports.id), exports.id in S || j({
+    null != exports && (require.add(exports.id), exports.id in S || P({
       applicationId: exports.id,
       updatedAt: Date.now(),
       distributor: r,
       exePath: (0, Chunk581567.N6)(null != i ? i : "")
     }))
   }
-  for (let t of Object.keys(S)) require.has(exports) || P(S[exports], module)
+  for (let t of Object.keys(S)) require.has(exports) || j(S[exports], module)
 }
 
 function A() {
-  for (let e of Object.keys(S)) P(S[module]);
+  for (let e of Object.keys(S)) j(S[module]);
   N = false
 }
 class Z extends(i = Chunk442837.ZP.Store) {
@@ -97,7 +97,7 @@ class Z extends(i = Chunk442837.ZP.Store) {
   RUNNING_GAMES_CHANGE: () => x(),
   CONNECTION_OPEN: function() {
     if (N) returnfalse;
-    for (let e of Object.keys(S)) j(S[module]);
+    for (let e of Object.keys(S)) P(S[module]);
     x(false), N = true
   },
   CONNECTION_CLOSED: function(e) {
@@ -113,13 +113,13 @@ class Z extends(i = Chunk442837.ZP.Store) {
       token: n
     } = e, r = S[t];
     if (null == r) returnfalse;
-    r.token = n, s.K.set(y, S)
+    r.token = n, o.K.set(v, S)
   },
   ACTIVITY_UPDATE_FAIL: function(e) {
     let {
       applicationId: t
     } = e, n = S[t];
     if (null == n) returnfalse;
-    n.token = null, n.updatedAt = null, s.K.set(y, S)
+    n.token = null, n.updatedAt = null, o.K.set(v, S)
   }
 })

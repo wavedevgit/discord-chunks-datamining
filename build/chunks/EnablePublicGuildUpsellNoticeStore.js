@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 400271, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js");
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -12,26 +12,26 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk135899 = require("./135899.js"),
   Chunk981631 = require("./981631.js");
 let f = "publicUpsellChannelNoticeGuilds",
-  m = new Set;
-class h extends(r = Chunk442837.ZP.Store) {
+  h = new Set;
+class g extends(r = Chunk442837.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(Chunk496675.Z, Chunk430824.Z, Chunk650774.Z), this.syncWith([Chunk496675.Z, Chunk430824.Z, Chunk650774.Z], Chunk981631.dG4), m = (e = new Set(Chunk433517.K.get(f)), module)
+    this.waitFor(Chunk496675.Z, Chunk430824.Z, Chunk650774.Z), this.syncWith([Chunk496675.Z, Chunk430824.Z, Chunk650774.Z], Chunk981631.dG4), h = (e = new Set(Chunk433517.K.get(f)), module)
   }
   isVisible(e) {
     if (null == e) return;
-    let t = o.Z.getMemberCount(e.id);
-    return !m.has(e.id) && null != t && t >= d.U3 && u.Z.can(p.Plq.ADMINISTRATOR, e) && !e.features.has(p.GuildFeatures.COMMUNITY)
+    let t = s.Z.getMemberCount(e.id);
+    return !h.has(e.id) && null != t && t >= d.U3 && u.Z.can(p.Plq.ADMINISTRATOR, e) && !e.features.has(p.GuildFeatures.COMMUNITY)
   }
-}(i = "displayName") in h ? Object.defineProperty(h, i, {
+}(i = "displayName") in g ? Object.defineProperty(g, i, {
   value: "EnablePublicGuildUpsellNoticeStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : h[i] = "EnablePublicGuildUpsellNoticeStore";
-let g = new h(Chunk570140.Z, {
+}) : g[i] = "EnablePublicGuildUpsellNoticeStore";
+let m = new g(Chunk570140.Z, {
   PUBLIC_UPSELL_NOTICE_DISMISS: function(e) {
     let t = e.guildId;
-    if (!m.has(t)) return m.add(t), a.K.set(f, m), true
+    if (!h.has(t)) return h.add(t), a.K.set(f, h), true
   }
 })

@@ -21,7 +21,8 @@ function a(e) {
     gameId: null != (s = null == (a = e.tenant_metadata) || null == (n = a.guild_monetization) || null == (t = n.game_server) ? true : t.game_application_id) ? s : "",
     provider: null == (l = e.tenant_metadata) || null == (i = l.guild_monetization) || null == (r = i.game_server) ? true : r.provider,
     plans: o,
-    baseCost: c
+    baseCost: c,
+    disabled: e.disabled
   }
 }
 require.d(exports, {

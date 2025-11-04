@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 786089, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,17 +28,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk199679 = require("./199679.js");
-let P = (0, Chunk647438.memo)(function(e) {
-  var t, n, l, P, j, x;
+let j = (0, Chunk647438.memo)(function(e) {
+  var t, n, l, j, P, x;
   let {
     quest: A
-  } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([g.default], () => g.default.getCurrentUser()), {
+  } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
     ref: H,
     height: V = 0
   } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, E.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), Y = null != (j = null == (n = A.userStatus) ? true : n.claimedTier) ? j : 0, W = A.config.rewards[Y], q = (null == W ? true : W.type) === o.w.FRACTIONAL_PREMIUM, K = (null == W ? true : W.type) === o.w.COLLECTIBLE, Q = (null == W ? true : W.type) === o.w.VIRTUAL_CURRENCY, J = null == W || null == (P = W.collectibleProduct) || null == (l = P.items) ? true : l[0], X = (null == J ? true : J.type) === s.Z.AVATAR_DECORATION ? J : null;
+  }), Y = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, W = A.config.rewards[Y], q = (null == W ? true : W.type) === s.w.FRACTIONAL_PREMIUM, K = (null == W ? true : W.type) === s.w.COLLECTIBLE, Q = (null == W ? true : W.type) === s.w.VIRTUAL_CURRENCY, J = null == W || null == (j = W.collectibleProduct) || null == (l = j.items) ? true : l[0], X = (null == J ? true : J.type) === o.Z.AVATAR_DECORATION ? J : null;
   (0, p.PM)(k, e => {
     let {
       height: t
@@ -51,7 +51,7 @@ let P = (0, Chunk647438.memo)(function(e) {
   });
   let $ = (0, u.wj)(F),
     ee = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
-    et = (0, i.useMemo)(() => (0, I.fh)(A, I.eC.REWARD), [A]),
+    et = (0, i.useMemo)(() => (0, y.fh)(A, y.eC.REWARD), [A]),
     en = Z ? V + 8 : 0,
     er = (0, b.mH)(O.jn.TROPHY_CASE_CARD),
     {
@@ -73,7 +73,7 @@ let P = (0, Chunk647438.memo)(function(e) {
       }
       return i
     }(er, ["content_position", "row_index"]),
-    es = () => {
+    eo = () => {
       w(true), _.default.track(S.rMx.QUEST_HOVER, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -95,7 +95,9 @@ let P = (0, Chunk647438.memo)(function(e) {
         quest_id: A.id
       }, ea))
     },
-    eo = () => w(false),
+    es = () => {
+      w(false)
+    },
     ec = e => {
       M(true), _.default.track(S.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: e,
@@ -107,10 +109,10 @@ let P = (0, Chunk647438.memo)(function(e) {
     children: (0, r.jsxs)("div", {
       ref: k,
       tabIndex: 0,
-      onFocus: es,
-      onBlur: eo,
-      onMouseEnter: es,
-      onMouseLeave: eo,
+      onFocus: eo,
+      onBlur: es,
+      onMouseEnter: eo,
+      onMouseLeave: es,
       className: a()(N.container, {
         [N.hovered]: Z
       }),
@@ -120,16 +122,19 @@ let P = (0, Chunk647438.memo)(function(e) {
         style: {
           top: L
         },
-        children: (0, r.jsx)(m.Z, {
+        children: (0, r.jsx)(h.Z, {
           avatarDecorationOverride: X,
           user: B,
-          guildId: null
+          guildId: null,
+          animateOnHover: !Z
         })
-      }), q ? (0, r.jsx)(y.Z, {
+      }), q ? (0, r.jsx)(v.Z, {
         className: N.image
-      }) : Q ? (0, r.jsx)(v.Z, {
-        className: N.image
-      }) : et.isAnimated ? (0, r.jsx)(h.Z, {
+      }) : Q ? (0, r.jsx)(I.Z, {
+        className: N.image,
+        isAnimated: Z,
+        questName: A.config.messages.questName
+      }) : et.isAnimated ? (0, r.jsx)(g.Z, {
         className: N.assetBlurred,
         autoPlay: false,
         children: (0, r.jsx)("source", {

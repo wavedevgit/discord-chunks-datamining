@@ -51,9 +51,9 @@ class u extends Chunk647438.PureComponent {
     })
   }
   renderUser(e) {
-    return null == e ? null : (0, r.jsxs)(o.Z, {
+    return null == e ? null : (0, r.jsxs)(s.Z, {
       className: c.user,
-      align: o.Z.Align.CENTER,
+      align: s.Z.Align.CENTER,
       onContextMenu: t => {
         null != e && this.handleContextMenu(t, e)
       },
@@ -62,7 +62,7 @@ class u extends Chunk647438.PureComponent {
         "aria-label": e.username,
         size: l.EFr.SIZE_24,
         className: c.avatar
-      }), (0, r.jsx)(s.Z, {
+      }), (0, r.jsx)(o.Z, {
         user: e,
         className: c.tag,
         usernameClass: c.username,

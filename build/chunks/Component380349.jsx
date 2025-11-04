@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 380349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,22 +16,22 @@ var Chunk442837 = require("./442837.js"),
   Chunk616922 = require("./616922.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e, t, n) {
-  let m = (0, i.e7)([s.Z, a.default], () => null != t ? (0, c.Z)(s.Z, a.default, t, e) : true, [e, t]);
-  if (null == m || null == e || null == t) return null;
-  let h = m.isCurrentUser || m.notPlayable || m.playingSameTrack,
-    g = m.isCurrentUser || m.syncingWithUser || m.syncingWithParty;
+function h(e, t, n) {
+  let h = (0, i.e7)([o.Z, a.default], () => null != t ? (0, c.Z)(o.Z, a.default, t, e) : true, [e, t]);
+  if (null == h || null == e || null == t) return null;
+  let g = h.isCurrentUser || h.notPlayable || h.playingSameTrack,
+    m = h.isCurrentUser || h.syncingWithUser || h.syncingWithParty;
   return [(0, r.jsx)(l.sNh, {
     id: "spotify-play-".concat(e.session_id),
-    action: () => (0, d.Z)(m, p.kG.USER_ACTIVITY_PLAY, n),
+    action: () => (0, d.Z)(h, p.kG.USER_ACTIVITY_PLAY, n),
     label: f.intl.string(f.t.rRffNz),
-    subtext: h ? (0, o.Z)(m, p.kG.USER_ACTIVITY_PLAY) : true,
-    disabled: h
-  }, "spotify-play-".concat(e.session_id)), m.canPlaySpotify ? (0, r.jsx)(l.sNh, {
-    id: "spotify-sync-".concat(e.session_id),
-    action: () => (0, u.Z)(m, p.kG.USER_ACTIVITY_SYNC, n),
-    label: f.intl.string(f.t.eU3inB),
-    subtext: g ? (0, o.Z)(m, p.kG.USER_ACTIVITY_SYNC) : true,
+    subtext: g ? (0, s.Z)(h, p.kG.USER_ACTIVITY_PLAY) : true,
     disabled: g
+  }, "spotify-play-".concat(e.session_id)), h.canPlaySpotify ? (0, r.jsx)(l.sNh, {
+    id: "spotify-sync-".concat(e.session_id),
+    action: () => (0, u.Z)(h, p.kG.USER_ACTIVITY_SYNC, n),
+    label: f.intl.string(f.t.eU3inB),
+    subtext: m ? (0, s.Z)(h, p.kG.USER_ACTIVITY_SYNC) : true,
+    disabled: m
   }, "spotify-sync-".concat(e.session_id)) : null]
 }

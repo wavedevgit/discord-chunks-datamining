@@ -8,7 +8,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk728345 = require("./728345.js"),
   Chunk91896 = require("./91896.js"),
   Chunk981631 = require("./981631.js");
-class o extends Chunk317770.Z {
+class s extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
   }
@@ -31,9 +31,9 @@ class o extends Chunk317770.Z {
         let e = a.Z.getGameRelationships(),
           t = new Set;
         e.values().forEach(e => {
-          e.type === s.OGo.PENDING_INCOMING && t.add(e.applicationId)
+          e.type === o.OGo.PENDING_INCOMING && t.add(e.applicationId)
         }), l.ZP.fetchApplications(Array.from(t))
       })
   }
 }
-let c = new o
+let c = new s

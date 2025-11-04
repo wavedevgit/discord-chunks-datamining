@@ -13,10 +13,10 @@ let l = (e, t, n) => {
       let i = r - Date.now();
       if (i <= 0) return void l(true);
       l(false);
-      let s = setTimeout(() => {
+      let o = setTimeout(() => {
         l(true)
       }, Math.min(0x7fffffff, i));
-      return () => clearTimeout(s)
+      return () => clearTimeout(o)
     }, [t, n, e]), i
   },
   a = e => {

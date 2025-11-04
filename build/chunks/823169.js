@@ -28,9 +28,9 @@ class d extends Chunk317770.Z {
           writable: true
         }) : e[t] = n
       }(this, "maybeFetchEligiblity", async () => {
-        if ((0, o.isDesktop)() || (0, o.isWeb)()) {
+        if ((0, s.isDesktop)() || (0, s.isWeb)()) {
           let e = a.Z.getGuildsArray(),
-            t = s.default.getCurrentUser(),
+            t = o.default.getCurrentUser(),
             n = e.filter(e => (0, l.eM)(e, t) && !e.features.has(u.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && !e.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED) && !e.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_DISABLED) && (e.features.has(u.GuildFeatures.CREATOR_MONETIZABLE) || e.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)));
           n.length > 0 && await (0, c.av)(n.map(e => e.id))
         }

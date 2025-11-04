@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk186901 = require("./186901.js"),
   Chunk388032 = require("./388032.jsx");
-let b = e => {
+let j = e => {
   let {
     title: t,
     subtitle: n,
@@ -48,20 +48,20 @@ let b = e => {
   })
 };
 
-function j(e) {
+function b(e) {
   let {
     match: t,
     location: l
-  } = e, o = (0, s.parse)(l.search).token, [d, j] = i.useState("loading"), I = i.useRef(false), y = i.useCallback(async e => {
+  } = e, o = (0, s.parse)(l.search).token, [d, b] = i.useState("loading"), I = i.useRef(false), y = i.useCallback(async e => {
     try {
-      await c.Z.oneTimeLogin(e), j("login_success"), n.g.location.assign(x.Z5c.APP)
+      await c.Z.oneTimeLogin(e), b("login_success"), n.g.location.assign(x.Z5c.APP)
     } catch (e) {
-      j("error")
+      b("error")
     }
   }, []), O = i.useCallback(e => {
     let t = "discord://login/one-time?token=".concat(encodeURIComponent(e));
     _.Z.launch(t, t => {
-      t ? j("app_launched") : y(e)
+      t ? b("app_launched") : y(e)
     })
   }, [y]), S = i.useCallback(e => {
     var t;
@@ -77,14 +77,14 @@ function j(e) {
           fingerprint: r
         }
       }).then(t => {
-        null != t && t ? j("app_launched") : O(e)
+        null != t && t ? b("app_launched") : O(e)
       }).catch(() => {
         O(e)
       }).then(() => n.disconnect())
     })
   }, [O]);
   return (i.useEffect(() => {
-    if (null == o || "string" != typeof o) return void j("error");
+    if (null == o || "string" != typeof o) return void b("error");
     if (a.tq || a.Em) {
       var e;
       let t = null == (e = p.default.getSuperProperties()) ? true : e.os,
@@ -94,13 +94,13 @@ function j(e) {
       return
     }
     if ((0, f.isDesktop)()) return void y(o);
-    I.current || (I.current = true, j("rpc_attempting"), S(o))
-  }, [o, l, y, S]), a.tq || a.Em || (0, h.DB)()) ? null : "app_launched" === d ? (0, r.jsx)(b, {
+    I.current || (I.current = true, b("rpc_attempting"), S(o))
+  }, [o, l, y, S]), a.tq || a.Em || (0, h.DB)()) ? null : "app_launched" === d ? (0, r.jsx)(j, {
     title: v.intl.string(v.t.RvUUOy),
     subtitle: v.intl.string(v.t["5/lR0g"]),
     buttonText: v.intl.string(v.t["2ixEBi"]),
     buttonOnClick: () => y(o)
-  }) : "error" === d ? (0, r.jsx)(b, {
+  }) : "error" === d ? (0, r.jsx)(j, {
     title: v.intl.string(v.t.RtCSr1),
     subtitle: v.intl.string(v.t["S+YjYJ"]),
     buttonText: v.intl.string(v.t.j3cG2p),
@@ -113,7 +113,7 @@ let I = function(e) {
   let {
     enabled: t
   } = (0, d.WW)("OneTimeLoginCardWrapper");
-  return t ? (0, r.jsx)(j, function(e) {
+  return t ? (0, r.jsx)(b, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

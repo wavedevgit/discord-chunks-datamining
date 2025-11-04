@@ -17,7 +17,7 @@ let p = e => {
   let {
     errorType: t
   } = e;
-  return (0, s.Z)({
+  return (0, o.Z)({
     type: l.ImpressionTypes.PAGE,
     name: l.ImpressionNames.ROLE_SUBSCRIPTION_LISTING_UPSELL_ERROR_PAGE,
     properties: {
@@ -34,11 +34,11 @@ let p = e => {
       }), (0, i.jsx)(a.Heading, {
         variant: "heading-xl/extrabold",
         className: c.errorPageTitle,
-        children: "guild_not_eligible" === t ? o.intl.string(o.t.atZQVZ) : o.intl.string(o.t.gAdWBl)
+        children: "guild_not_eligible" === t ? s.intl.string(s.t.atZQVZ) : s.intl.string(s.t.gAdWBl)
       }), (0, i.jsx)(a.Text, {
         variant: "text-md/normal",
         className: c.errorPagSubtitle,
-        children: "guild_not_eligible" === t ? o.intl.string(o.t.teWe5G) : o.intl.string(o.t["X/yMrK"])
+        children: "guild_not_eligible" === t ? s.intl.string(s.t.teWe5G) : s.intl.string(s.t["X/yMrK"])
       })]
     })
   })

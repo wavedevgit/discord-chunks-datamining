@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk861265 = require("./861265.js");
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,7 +47,7 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = Chunk185514.Nx.binds["0"],
+let m = Chunk185514.Nx.binds["0"],
   _ = Chunk185514.On.binds["0"],
   b = e => {
     let {
@@ -58,52 +58,52 @@ let g = Chunk185514.Nx.binds["0"],
       location: "BackForwardButtons"
     }), {
       canGoBack: i,
-      canGoForward: o
+      canGoForward: s
     } = (0, a.cj)([u.Z], () => ({
       canGoBack: u.Z.canGoBack,
       canGoForward: u.Z.canGoForward
     }));
     return (0, r.jsxs)("div", {
       className: f.backForwardButtons,
-      children: [(0, r.jsx)(s.aML, {
+      children: [(0, r.jsx)(o.aML, {
         "data-migration-pending": true,
         "aria-label": p.intl.string(p.t.B9vzIP),
         tooltipContentClassName: f.navigationTooltip,
         shouldShow: i,
         text: (0, r.jsxs)(r.Fragment, {
-          children: [p.intl.string(p.t.B9vzIP), (0, r.jsx)(s.M2$, {
-            shortcut: g
+          children: [p.intl.string(p.t.B9vzIP), (0, r.jsx)(o.M2$, {
+            shortcut: m
           })]
         }),
-        children: e => (0, r.jsx)(s.P3F, h(m(h(m({}, e), {
+        children: e => (0, r.jsx)(o.P3F, g(h(g(h({}, e), {
           "aria-disabled": !i,
           className: l()(f.button, f.back, {
             [f.disabled]: !i
           }),
           onClick: () => (0, d.Hm)("nav_button")
         }), t), {
-          children: (0, r.jsx)(s.whL, {
+          children: (0, r.jsx)(o.whL, {
             size: n,
             color: "currentColor"
           })
         }))
-      }), (0, r.jsx)(s.aML, {
+      }), (0, r.jsx)(o.aML, {
         "data-migration-pending": true,
         "aria-label": p.intl.string(p.t["9KJ29e"]),
         tooltipContentClassName: f.navigationTooltip,
-        shouldShow: o,
+        shouldShow: s,
         text: (0, r.jsxs)(r.Fragment, {
-          children: [p.intl.string(p.t["9KJ29e"]), (0, r.jsx)(s.M2$, {
+          children: [p.intl.string(p.t["9KJ29e"]), (0, r.jsx)(o.M2$, {
             shortcut: _
           })]
         }),
-        children: e => (0, r.jsx)(s.P3F, h(m({}, e), {
-          "aria-disabled": !o,
+        children: e => (0, r.jsx)(o.P3F, g(h({}, e), {
+          "aria-disabled": !s,
           className: l()(f.button, f.forward, {
-            [f.disabled]: !o
+            [f.disabled]: !s
           }),
           onClick: () => (0, d.TL)("nav_button"),
-          children: (0, r.jsx)(s.ZSh, {
+          children: (0, r.jsx)(o.ZSh, {
             size: n,
             color: "currentColor"
           })

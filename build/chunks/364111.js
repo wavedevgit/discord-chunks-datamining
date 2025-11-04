@@ -16,12 +16,12 @@ let d = Chunk311570.v.VARIANTS_GROUP;
 function p(e, t, n) {
   let i = arguments.length > 3 && true !== arguments[3] && arguments[3],
     p = (0, l.e7)([a.Z], () => a.Z.hasLoadedExperiments),
-    f = (0, l.e7)([o.Z], () => o.Z.skipNumCategories),
-    [m, h, g, _, b, E, O, I] = (0, l.Wu)([c.Z], () => {
+    f = (0, l.e7)([s.Z], () => s.Z.skipNumCategories),
+    [h, g, m, _, b, E, O, y] = (0, l.Wu)([c.Z], () => {
       var t, n;
       return [c.Z.getShopBlocks(e), null != (t = c.Z.getLastSuccessfulFetch(e)) ? t : 0, null != (n = c.Z.getLastErrorTimestamp(e)) ? n : 0, c.Z.getLastFetchOptions(e), c.Z.getFetchShopHomeError(e), c.Z.getIsFetchingShopHome(e), c.Z.getHasKnownStaleData(e), c.Z.getShopHomeConfigOverride()]
     }),
-    y = (0, r.useMemo)(() => {
+    v = (0, r.useMemo)(() => {
       var e, n;
       return e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -43,7 +43,7 @@ function p(e, t, n) {
       }({}, t), n = n = {
         variantsReturnStyle: d,
         includeDynamicBlocks: true,
-        shopHomeConfig: I,
+        shopHomeConfig: y,
         skipNumCategories: f
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -55,20 +55,20 @@ function p(e, t, n) {
       })(Object(n)).forEach(function(t) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
       }), e
-    }, [t, I, f]),
-    v = (0, r.useMemo)(() => !(0, s.oc)(_, y), [_, y]),
-    C = (0, u.J)(m, null != E && E, i),
-    S = (0, r.useMemo)(() => !C && Date.now() - h < 6e5, [h, C]);
+    }, [t, y, f]),
+    I = (0, r.useMemo)(() => !(0, o.oc)(_, v), [_, v]),
+    C = (0, u.J)(h, null != E && E, i),
+    S = (0, r.useMemo)(() => !C && Date.now() - g < 6e5, [g, C]);
   return (0, r.useEffect)(() => {
     if (!p || E) return;
-    let t = Date.now() - g < 6e5;
-    (null == b || !t) && (v || !S || O) && (0, s.Ov)(e, y, n)
-  }, [p, E, b, g, S, O, v, y, e, n]), {
+    let t = Date.now() - m < 6e5;
+    (null == b || !t) && (I || !S || O) && (0, o.Ov)(e, v, n)
+  }, [p, E, b, m, S, O, I, v, e, n]), {
     isFetchingShopHome: E,
     fetchShopHomeError: b,
-    shopBlocks: m,
+    shopBlocks: h,
     refreshShopHome: (0, r.useCallback)(() => {
-      (0, s.Ov)(e, y, n)
-    }, [e, y, n])
+      (0, o.Ov)(e, v, n)
+    }, [e, v, n])
   }
 }

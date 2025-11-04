@@ -58,10 +58,10 @@ function y(e) {
     let l = null == M || null == (n = M.entitlements) || null == (t = n[k.entitlementId]) || null == (e = t.sku) ? true : e.product_id;
     null != l && V(l)
   }, [null == M ? true : M.entitlements, null == k ? true : k.entitlementId, B]);
-  let [z, K] = i.useState(true), U = i.useMemo(() => {
+  let [z, K] = i.useState(true), J = i.useMemo(() => {
     var e;
     if (null != B) return Object.values(null != (e = null == M ? true : M.catalog) ? e : {}).find(e => e.id === B)
-  }, [null == M ? true : M.catalog, B]), [F, J] = i.useState(k), [H, W] = i.useState(null != (n = S(C)) ? n : null == k ? true : k.planId), X = function(e, t, n, l) {
+  }, [null == M ? true : M.catalog, B]), [U, F] = i.useState(k), [Y, H] = i.useState(null != (n = S(C)) ? n : null == k ? true : k.planId), W = function(e, t, n, l) {
     var i, r, s, u, o, c, d, m;
     let v = (0, a.e7)([p.Z], () => {
         var t;
@@ -69,27 +69,27 @@ function y(e) {
       }),
       g = null != (d = null == t || null == (i = t.plans.find(e => e.id === n)) ? true : i.cost) ? d : 0;
     return null == l ? g : g - (null != (m = null == v || null == (c = v[l.entitlementId]) || null == (o = c.sku) || null == (u = o.tenant_metadata) || null == (s = u.guild_monetization) || null == (r = s.game_server) ? true : r.boost_price) ? m : 0)
-  }(I, U, H, F), Y = i.useCallback(e => {
+  }(I, J, Y, U), X = i.useCallback(e => {
     var t, n, l, i, a, r;
-    J(e);
+    F(e);
     let s = null == M || null == (l = M.entitlements) || null == (n = l[null != (i = null == e ? true : e.entitlementId) ? i : ""]) || null == (t = n.sku) ? true : t.product_id;
-    null != s && V(s), W(null == e ? true : e.planId), et(null != (a = null == e ? true : e.name) ? a : ""), el(null != (r = null == e ? true : e.regionId) ? r : "")
+    null != s && V(s), H(null == e ? true : e.planId), et(null != (a = null == e ? true : e.name) ? a : ""), el(null != (r = null == e ? true : e.regionId) ? r : "")
   }, [null == M ? true : M.entitlements]), q = i.useCallback((e, t) => {
-    Y(true), V(null == e ? true : e.id), W(null != t ? t : S(e))
-  }, [Y]), [$, Q] = i.useState(), [ee, et] = i.useState(null != (c = null == k ? true : k.name) ? c : ""), [en, el] = i.useState(null != (h = null == k ? true : k.regionId) ? h : ""), [ei, ea] = i.useState(false), er = i.useRef(false), es = i.useCallback(() => {
+    X(true), V(null == e ? true : e.id), H(null != t ? t : S(e))
+  }, [X]), [$, Q] = i.useState(), [ee, et] = i.useState(null != (c = null == k ? true : k.name) ? c : ""), [en, el] = i.useState(null != (h = null == k ? true : k.regionId) ? h : ""), [ei, ea] = i.useState(false), er = i.useRef(false), es = i.useCallback(() => {
     var e, t, n;
-    if (K(true), null == T || null == U || "" === ee || "" === en || null == H) return;
-    let l = U.plans.find(e => e.id === H);
+    if (K(true), null == T || null == J || "" === ee || "" === en || null == Y) return;
+    let l = J.plans.find(e => e.id === Y);
     (0, f.g$)({
       guildId: T.id,
-      productId: U.id,
-      productName: U.name,
-      skuId: H,
+      productId: J.id,
+      productName: J.name,
+      skuId: Y,
       planName: null != (e = null == l ? true : l.name) ? e : "",
       planCost: null != (t = null == l ? true : l.cost) ? t : 0,
-      previousPlanCost: null == F ? 0 : (null != (n = null == l ? true : l.cost) ? n : 0) + X,
+      previousPlanCost: null == U ? 0 : (null != (n = null == l ? true : l.cost) ? n : 0) + W,
       region: en,
-      type: null == F ? "create" : "edit"
+      type: null == U ? "create" : "edit"
     });
     let i = () => {
       if (er.current) return;
@@ -97,8 +97,8 @@ function y(e) {
       let e = new Promise(e => {
         setTimeout(() => e(true), _.tq)
       });
-      Promise.all([null != F ? (0, g.EY)(T.id, F.entitlementId, H, ee) : (0, g.NE)(T.id, H, ee, en), e]).then(() => {
-        Z(), (null == F ? true : F.planId) !== H && (0, b.Z)(T.id, U, null == F ? "created" : "updated")
+      Promise.all([null != U ? (0, g.EY)(T.id, U.entitlementId, Y, ee) : (0, g.NE)(T.id, Y, ee, en), e]).then(() => {
+        Z(), (null == U ? true : U.planId) !== Y && (0, b.Z)(T.id, J, null == U ? "created" : "updated")
       }).catch(e => {
         var t, n;
         K(null != (n = null == (t = e.body) ? true : t.message) ? n : j.intl.string(x.default.gvNWWr)), er.current = false
@@ -106,9 +106,9 @@ function y(e) {
         ea(false)
       })
     };
-    A < X ? (0, s.u)({
+    A < W ? (0, s.u)({
       analyticsLocation: w,
-      numberOfBoostsToAdd: X - A,
+      numberOfBoostsToAdd: W - A,
       analyticsLocations: G,
       guild: T,
       intent: u.P.PERK,
@@ -122,7 +122,7 @@ function y(e) {
         e && i()
       }
     }) : i()
-  }, [G, T, A, H, w, U, ee, en, Z, X, F]), eu = i.useCallback(e => {
+  }, [G, T, A, Y, w, J, ee, en, Z, W, U]), eu = i.useCallback(e => {
     switch (e.type) {
       case "close":
         Z();
@@ -151,17 +151,17 @@ function y(e) {
       onNext: ec,
       gameServerGames: null != (y = null == M ? true : M.catalog) ? y : {},
       instances: Object.values(null != (O = null == M ? true : M.instances) ? O : {}),
-      currentGame: U,
+      currentGame: J,
       setCurrentGame: q,
-      gameServerInstance: F,
-      setGameServerInstance: Y,
+      gameServerInstance: U,
+      setGameServerInstance: X,
       name: ee,
       setName: et,
       regionId: en,
       setRegionId: el,
-      planCost: X,
-      planId: H,
-      setPlanId: W,
+      planCost: W,
+      planId: Y,
+      setPlanId: H,
       footerNode: $,
       setFooterNode: Q,
       availableBoostCount: A,

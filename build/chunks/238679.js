@@ -3,7 +3,7 @@
 require.d(exports, {
   KW: () => f,
   dO: () => p,
-  gQ: () => m
+  gQ: () => h
 });
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -25,7 +25,7 @@ function p() {
   return {
     participants: Array.from(module.userIds, e => {
       var r, i;
-      let l = s.default.getUser(e);
+      let l = o.default.getUser(e);
       if (null == l) return;
       let a = (0, c.y)(t, n, l);
       return r = function(e) {
@@ -63,7 +63,7 @@ function p() {
 let f = {
     [Chunk186901.Gp.ANY]: [Chunk186901.wE]
   },
-  m = {
+  h = {
     scope: f,
     handler: () => e => {
       let {

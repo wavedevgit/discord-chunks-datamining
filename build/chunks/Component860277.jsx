@@ -1,5 +1,5 @@
 /** Chunk was on 80448 **/
-/** chunk id: 860277, original params: i,t,r (module,exports,require) **/
+/** chunk id: 860277, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 });
@@ -14,61 +14,61 @@ var Chunk951288 = require("./951288.js"),
   Chunk506945 = require("./506945.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(i) {
+function p(t) {
   let {
-    step: t
-  } = i, {
+    step: e
+  } = t, {
     users: r,
     sidekick: p
-  } = (0, a.e7)([l.Z], () => l.Z.getCheckpointData());
-  return (0, n.jsxs)(d.Z, {
-    children: [t === c.ij.FRIENDS_INTRO && (0, n.jsxs)("div", {
-      children: [(0, n.jsx)(e.xvT, {
+  } = (0, l.e7)([s.Z], () => s.Z.getCheckpointData());
+  return (0, i.jsxs)(d.Z, {
+    children: [e === c.ij.FRIENDS_INTRO && (0, i.jsxs)("div", {
+      children: [(0, i.jsx)(n.xvT, {
         variant: "display-md",
         color: "text-primary",
-        children: u.intl.string(x.default["4xZpq4"])
-      }), r.map(i => (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(s.Z, {
-          user: i,
+        children: x.intl.string(u.default["4xZpq4"])
+      }), r.map(t => (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(a.Z, {
+          user: t,
           size: o.EF.SIZE_120
-        }), (0, n.jsx)(e.xvT, {
+        }), (0, i.jsx)(n.xvT, {
           variant: "display-lg",
           color: "text-primary",
-          children: i.username
+          children: t.username
         })]
-      }, i.id))]
-    }), t === c.ij.FRIENDS_BEST && (0, n.jsxs)("div", {
-      children: [(0, n.jsx)(e.xvT, {
+      }, t.id))]
+    }), e === c.ij.FRIENDS_BEST && (0, i.jsxs)("div", {
+      children: [(0, i.jsx)(n.xvT, {
         variant: "display-md",
         color: "text-primary",
-        children: u.intl.string(x.default.d5HUsD)
-      }), (0, n.jsx)(s.Z, {
+        children: x.intl.string(u.default.d5HUsD)
+      }), (0, i.jsx)(a.Z, {
         user: p.user,
         size: o.EF.SIZE_120
-      }), (0, n.jsx)(e.xvT, {
+      }), (0, i.jsx)(n.xvT, {
         variant: "display-md",
         color: "text-primary",
-        children: u.intl.format(x.default.wz2JuF, {
+        children: x.intl.format(u.default.wz2JuF, {
           user: p.user.username,
-          userHook: (i, t) => (0, n.jsx)(e.xvT, {
+          userHook: (t, e) => (0, i.jsx)(n.xvT, {
             variant: "display-lg",
             color: "text-primary",
-            children: i
-          }, t)
+            children: t
+          }, e)
         })
-      }), (0, n.jsx)(e.xvT, {
+      }), (0, i.jsx)(n.xvT, {
         variant: "display-sm",
         color: "text-primary",
-        children: u.intl.string(x.default.wWKySP)
-      }), (0, n.jsx)(e.xvT, {
+        children: x.intl.string(u.default.wWKySP)
+      }), (0, i.jsx)(n.xvT, {
         variant: "display-sm",
         color: "text-primary",
         children: p.numMessagesSent
-      }), (0, n.jsx)(e.xvT, {
+      }), (0, i.jsx)(n.xvT, {
         variant: "display-sm",
         color: "text-primary",
-        children: u.intl.string(x.default.lXT6ns)
-      }), (0, n.jsx)(e.xvT, {
+        children: x.intl.string(u.default.lXT6ns)
+      }), (0, i.jsx)(n.xvT, {
         variant: "display-sm",
         color: "text-primary",
         children: p.numVoiceMinutes

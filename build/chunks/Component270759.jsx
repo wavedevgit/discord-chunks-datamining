@@ -44,7 +44,7 @@ function x() {
 let A = function(e) {
   let {
     initialSection: t
-  } = e, n = (0, s.TH)(), l = (0, s.k6)();
+  } = e, n = (0, o.TH)(), l = (0, o.k6)();
   i.useEffect(() => {
     "true" === new URLSearchParams(n.search).get("confirm-age") && u.Z.dispatch({
       type: "AGE_GATE_MODAL_OPEN",
@@ -55,13 +55,13 @@ let A = function(e) {
   }, [l, n]), i.useEffect(() => {
     d.Y(T.Z5c.FRIENDS), (0, E.e)("friends")
   }, []);
-  let _ = (0, o.e7)([O.Z], () => O.Z.theme),
-    A = (0, v.If)(),
+  let _ = (0, s.e7)([O.Z], () => O.Z.theme),
+    A = (0, I.If)(),
     {
       section: Z,
       rows: w
-    } = (0, o.cj)([I.ZP], () => I.ZP.getState()),
-    L = (0, o.e7)([h.Z], () => h.Z.getSuggestionCount()),
+    } = (0, s.cj)([y.ZP], () => y.ZP.getState()),
+    L = (0, s.e7)([g.Z], () => g.Z.getSuggestionCount()),
     R = i.useMemo(() => w.getRelationshipCounts(), [w]);
   i.useEffect(() => {
     null != t && p.Z.setInitialSection(t), 0 === R[T.OGo.FRIEND] && 0 === R[T.OGo.PENDING_INCOMING] && 0 === R[T.OGo.PENDING_OUTGOING] && 0 === R[T.OGo.BLOCKED] && p.Z.transitionToSection(T.pJs.ADD_FRIEND)
@@ -71,88 +71,88 @@ let A = function(e) {
         explicit: true
       })
     },
-    M = (0, m.Dt)(),
-    k = (0, m.Dt)(),
+    M = (0, h.Dt)(),
+    k = (0, h.Dt)(),
     U = [{
       id: T.pJs.ONLINE,
       show: w.filter(T.pJs.ONLINE).length > 0,
-      content: P.intl.string(P.t.b9w3bO),
-      className: j.item
+      content: j.intl.string(j.t.b9w3bO),
+      className: P.item
     }, {
       id: T.pJs.ALL,
       show: R[T.OGo.FRIEND] > 0,
-      content: P.intl.string(P.t.PfjFjR),
-      className: j.item
+      content: j.intl.string(j.t.PfjFjR),
+      className: P.item
     }, {
       id: T.pJs.PENDING,
       show: w.filter(T.pJs.PENDING).length > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [P.intl.string(P.t.p6IHGE), A > 0 && (0, r.jsx)(c.mAB, {
+        children: [j.intl.string(j.t.p6IHGE), A > 0 && (0, r.jsx)(c.mAB, {
           count: A,
-          className: j.badge
+          className: P.badge
         })]
       }),
-      ariaLabel: P.intl.formatToPlainString(P.t.OAC0Z4, {
+      ariaLabel: j.intl.formatToPlainString(j.t.OAC0Z4, {
         count: A.toString()
       }),
-      className: j.item
+      className: P.item
     }, {
       id: T.pJs.SUGGESTIONS,
       show: L > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [P.intl.string(P.t["8rSi1/"]), (0, r.jsx)(c.mAB, {
+        children: [j.intl.string(j.t["8rSi1/"]), (0, r.jsx)(c.mAB, {
           count: L,
-          className: j.badge
+          className: P.badge
         })]
       }),
-      ariaLabel: P.intl.formatToPlainString(P.t.AbMQp7, {
+      ariaLabel: j.intl.formatToPlainString(j.t.AbMQp7, {
         count: L.toString()
       }),
-      className: j.item
+      className: P.item
     }, {
       id: T.pJs.ADD_FRIEND,
       show: true,
       content: (0, r.jsx)("span", {
-        children: P.intl.string(P.t.j0wbE5)
+        children: j.intl.string(j.t.j0wbE5)
       }),
-      ariaLabel: P.intl.string(P.t.j0wbE5),
-      className: a()(j.item, j.addFriend)
+      ariaLabel: j.intl.string(j.t.j0wbE5),
+      className: a()(P.item, P.addFriend)
     }],
-    G = y.o.useConfig({
+    G = v.o.useConfig({
       location: "people page"
     }).friendsTab,
     B = null,
     H = G ? null : (0, r.jsx)("div", {
-      className: j.nowPlayingColumn,
+      className: P.nowPlayingColumn,
       children: (0, r.jsx)(b.Z, {})
     });
   return B = Z === T.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : (0, r.jsx)(S.Z, {
     titleId: k
   }), (0, r.jsxs)("main", {
-    className: j.container,
-    "aria-label": P.intl.string(P.t.TdEu5X),
+    className: P.container,
+    "aria-label": j.intl.string(j.t.TdEu5X),
     children: [(0, r.jsx)(f.yY, {
-      location: P.intl.string(P.t.TdEu5X)
+      location: j.intl.string(j.t.TdEu5X)
     }), (0, r.jsx)(c.f6W, {
       theme: _,
-      children: e => (0, r.jsxs)(g.Z, {
+      children: e => (0, r.jsxs)(m.Z, {
         className: e,
         toolbar: (0, r.jsx)(x, {}),
         role: "navigation",
         "aria-labelledby": M,
         scrollable: true,
-        children: [(0, r.jsx)(g.Z.Icon, {
+        children: [(0, r.jsx)(m.Z.Icon, {
           icon: c.iFz,
           "aria-hidden": true
-        }), (0, r.jsx)(g.Z.Title, {
+        }), (0, r.jsx)(m.Z.Title, {
           id: M,
-          children: P.intl.string(P.t.TdEu5X)
-        }), (0, r.jsx)(g.Z.Divider, {}), (0, r.jsx)(c.njP, {
-          "aria-label": P.intl.string(P.t.TdEu5X),
+          children: j.intl.string(j.t.TdEu5X)
+        }), (0, r.jsx)(m.Z.Divider, {}), (0, r.jsx)(c.njP, {
+          "aria-label": j.intl.string(j.t.TdEu5X),
           selectedItem: Z,
           type: "top-pill",
           onItemSelect: D,
-          className: j.tabBar,
+          className: P.tabBar,
           children: U.filter(e => e.show).map(e => (0, r.jsx)(c.njP.Item, {
             id: e.id,
             className: e.className,
@@ -162,10 +162,10 @@ let A = function(e) {
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: j.tabBody,
+      className: P.tabBody,
       children: [(0, r.jsx)(c.njP.Panel, {
         id: Z,
-        className: j.peopleColumn,
+        className: P.peopleColumn,
         "aria-labelledby": k,
         children: B
       }), H]

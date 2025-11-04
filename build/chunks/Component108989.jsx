@@ -7,8 +7,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk238651 = require("./238651.js");
 let a = [require("./123353.js")],
-  s = ["#FFFFFF"],
-  o = 1e3 / 60,
+  o = ["#FFFFFF"],
+  s = 1e3 / 60,
   c = {
     velocity: {
       type: "static-random",
@@ -65,13 +65,13 @@ function u(e) {
     firing: n = true,
     wind: u = 2,
     sprites: d = a,
-    spriteColors: p = s,
+    spriteColors: p = o,
     confettiConfig: f
-  } = e, [m, h] = i.useState(null), [g, _] = i.useState(null), b = (0, l.uR)(g, m), E = i.useMemo(() => new l.qA({
+  } = e, [h, g] = i.useState(null), [m, _] = i.useState(null), b = (0, l.uR)(m, h), E = i.useMemo(() => new l.qA({
     wind: u
   }), [u]), O = i.useCallback(() => {
     var e, t;
-    let n = null == g ? true : g.getCanvas();
+    let n = null == m ? true : m.getCanvas();
     if (null == n) return;
     let r = n.getBoundingClientRect();
     b.createConfetti((e = function(e) {
@@ -113,9 +113,9 @@ function u(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [b, g, f]);
+  }, [b, m, f]);
   return i.useEffect(() => {
-    let e = n ? setInterval(O, o) : null;
+    let e = n ? setInterval(O, s) : null;
     return () => clearInterval(e)
   }, [n, O]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.O_, {
@@ -123,7 +123,7 @@ function u(e) {
       className: t,
       environment: E
     }), (0, r.jsx)(l.Ji, {
-      ref: h,
+      ref: g,
       colors: p,
       sprites: d,
       spriteWidth: 6,

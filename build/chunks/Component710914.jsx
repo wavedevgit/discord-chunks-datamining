@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 710914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,14 +15,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk334525 = require("./334525.js");
 
-function m(e) {
+function h(e) {
   let {
     quests: t,
     isFetching: n,
     hasFetched: l,
-    hasFiltersApplied: m = false,
-    onClearFilters: h
-  } = e, g = i.useRef(false), _ = (0, o.TH)(), b = i.useMemo(() => {
+    hasFiltersApplied: h = false,
+    onClearFilters: g
+  } = e, m = i.useRef(false), _ = (0, s.TH)(), b = i.useMemo(() => {
     if (_.hash.length > 0) {
       let e = _.hash.slice(1);
       for (let n of t)
@@ -31,44 +31,44 @@ function m(e) {
     return null
   }, [t, _.hash]);
   i.useEffect(() => {
-    g.current = false
+    m.current = false
   }, [_.hash]), i.useEffect(() => {
-    if (null == b || g.current || n || !l) return;
+    if (null == b || m.current || n || !l) return;
     let e = document.getElementById("quest-tile-".concat(b));
     null == e || e.scrollIntoView({
       behavior: "smooth",
       block: "center"
-    }), g.current = true
+    }), m.current = true
   }, [t, b, _, n, l]);
   let E = null != b,
-    [O, I] = i.useState(window.innerWidth);
+    [O, y] = i.useState(window.innerWidth);
   i.useEffect(() => {
-    let e = (0, s.debounce)(() => {
-      I(window.innerWidth)
+    let e = (0, o.debounce)(() => {
+      y(window.innerWidth)
     }, 250);
     return window.addEventListener("resize", e), () => {
       window.removeEventListener("resize", e)
     }
   }, []);
-  let y = O >= 1610 ? 3 : O >= 1340 ? 2 : 1;
+  let v = O >= 1610 ? 3 : O >= 1340 ? 2 : 1;
   return n && 0 === t.length ? (0, r.jsx)(c.$jN, {
     className: f.spinner
   }) : 0 === t.length ? (0, r.jsxs)("div", {
     className: f.emptyStateContainer,
     children: [(0, r.jsx)(c.Heading, {
       variant: "heading-xl/semibold",
-      children: p.intl.string(m ? p.t.PBfFnx : p.t.NqFP6z)
+      children: p.intl.string(h ? p.t.PBfFnx : p.t.NqFP6z)
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       color: "text-secondary",
-      children: m ? p.intl.format(p.t.LdYS1H, {
-        onClick: h
+      children: h ? p.intl.format(p.t.LdYS1H, {
+        onClick: g
       }) : p.intl.string(p.t.LhD4yH)
     })]
   }) : (0, r.jsx)("div", {
     className: f.container,
     children: t.map((e, t) => {
-      let n = Math.floor(t / y);
+      let n = Math.floor(t / v);
       return (0, r.jsx)(d.Z, {
         quest: e,
         questContent: u.jn.QUEST_HOME_DESKTOP,

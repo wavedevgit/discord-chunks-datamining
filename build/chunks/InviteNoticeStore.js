@@ -16,7 +16,7 @@ class u extends(i = Chunk442837.ZP.Store) {
     this.waitFor(Chunk496675.Z), this.syncWith([Chunk496675.Z], c)
   }
   channelNoticePredicate(e, t) {
-    return Date.now() - t >= o.Hqc && s.Z.can(o.Plq.ADMINISTRATOR, e)
+    return Date.now() - t >= s.Hqc && o.Z.can(s.Plq.ADMINISTRATOR, e)
   }
 }(r = "displayName") in u ? Object.defineProperty(u, r, {
   value: "InviteNoticeStore",

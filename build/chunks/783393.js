@@ -1,14 +1,14 @@
 /** Chunk was on 1272 **/
 /** chunk id: 783393, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => s
+  E: () => o
 }), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk526429 = require("./526429.js"),
   Chunk128449 = require("./128449.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
+function o(e) {
   let {
     categoryId: t
   } = e;

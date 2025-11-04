@@ -31,7 +31,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk188785 = require("./188785.js"),
   Chunk630724 = require("./630724.js");
 
-function j(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -87,11 +87,11 @@ class Z extends Chunk317770.Z {
       case Chunk701476.M5.MARKETING_UNCLAIMED:
         Chunk390885.Z.flowStart(Chunk630724.MK.ORGANIC_MARKETING, Chunk630724.EW.NUF_STARTED)
     }
-    let s = false,
+    let o = false,
       A = Chunk914010.Z.getGuildId();
     if (Chunk570140 === Chunk701476.M5.INVITE_UNCLAIMED) {
       let e = Chunk430824.Z.getGuild(A);
-      null != module && (0, Chunk983736.Dc)(module) && (s = true, (0, Chunk524329.RM)(module.id))
+      null != module && (0, Chunk983736.Dc)(module) && (o = true, (0, Chunk524329.RM)(module.id))
     }
     let Z = () => 0 === Chunk486472.Z.totalGuilds && !Chunk358085.isPlatformEmbedded,
       w = Chunk622822.bN();
@@ -101,25 +101,25 @@ class Z extends Chunk317770.Z {
         let t = e => {
           switch (e) {
             case S.F.AGE_GATE:
-              f.Z.flowStep(P.MK.ANY, P.EW.AGE_GATE);
+              f.Z.flowStep(j.MK.ANY, j.EW.AGE_GATE);
               break;
             case S.F.CHOOSE_TEMPLATE:
-              f.Z.flowStep(P.MK.ANY, P.X2.GUILD_TEMPLATES);
+              f.Z.flowStep(j.MK.ANY, j.X2.GUILD_TEMPLATES);
               break;
             case S.F.CUSTOMIZE_GUILD:
-              f.Z.flowStep(P.MK.ANY, P.X2.GUILD_CREATE);
+              f.Z.flowStep(j.MK.ANY, j.X2.GUILD_CREATE);
               break;
             case S.F.CHANNEL_PROMPT:
-              f.Z.flowStep(P.MK.ANY, P.X2.CHANNEL_PROMPT);
+              f.Z.flowStep(j.MK.ANY, j.X2.CHANNEL_PROMPT);
               break;
             case S.F.JOIN_GUILD:
-              f.Z.flowStep(P.MK.ANY, P.X2.JOIN_GUILD);
+              f.Z.flowStep(j.MK.ANY, j.X2.JOIN_GUILD);
               break;
             case S.F.CREATION_INTENT:
-              f.Z.flowStep(P.MK.ANY, P.X2.CREATION_INTENT);
+              f.Z.flowStep(j.MK.ANY, j.X2.CREATION_INTENT);
               break;
             case S.F.COMPLETE:
-              f.Z.flowStep(P.MK.ANY, P.X2.SUCCESS);
+              f.Z.flowStep(j.MK.ANY, j.X2.SUCCESS);
               break;
             case null:
               break;
@@ -131,7 +131,7 @@ class Z extends Chunk317770.Z {
           let {
             default: e
           } = await Promise.all([n.e("42483"), n.e("91848")]).then(n.bind(n, 599219));
-          return n => (0, i.jsx)(e, x(j({}, n), {
+          return n => (0, i.jsx)(e, x(P({}, n), {
             onSlideChange: t
           }))
         }, {
@@ -147,7 +147,7 @@ class Z extends Chunk317770.Z {
       predicate: () => w && !Z() && !Chunk188785.a
     }, {
       key: "Claim Account Modal",
-      open: e => c.j(I.isPlatformEmbedded, e),
+      open: e => c.j(y.isPlatformEmbedded, e),
       predicate: () => {
         var e;
         return !Chunk317770 && null != Chunk594174.default.getCurrentUser() && !(null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isClaimed()) && !Chunk188785.a && !(0, Chunk341298.g)()
@@ -165,7 +165,7 @@ class Z extends Chunk317770.Z {
         let {
           default: e
         } = await n.e("90542").then(n.bind(n, 184782));
-        return t => (0, i.jsx)(e, x(j({}, t), {
+        return t => (0, i.jsx)(e, x(P({}, t), {
           guildId: A
         }))
       }, {

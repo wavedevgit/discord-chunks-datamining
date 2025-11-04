@@ -1,13 +1,13 @@
 /** Chunk was on 1272 **/
 /** chunk id: 317858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => v
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk166516 = require("./166516.js"),
   l = require.n(Chunk166516),
   Chunk525654 = require("./525654.js"),
-  s = require.n(Chunk525654),
+  o = require.n(Chunk525654),
   Chunk442837 = require("./442837.js"),
   Chunk91896 = require("./91896.js"),
   Chunk849862 = require("./849862.js"),
@@ -21,20 +21,20 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let O = new Set(["Blink", "Gecko", "WebKit"]),
-  I = Chunk981631.dG4;
-if (Chunk358085.isPlatformEmbedded) I = e => g.ZP.setBadge(e);
-else if (O.has(s().layout)) {
+  y = Chunk981631.dG4;
+if (Chunk358085.isPlatformEmbedded) y = e => m.ZP.setBadge(e);
+else if (O.has(o().layout)) {
   let e = new(l())({
     animation: "none"
   });
-  I = t => {
+  y = t => {
     try {
       (0, _.PR)(t), e.badge(false === t ? "•" : t)
     } catch (e) {}
   }
 }
 
-function y() {
+function v() {
   let e = (0, Chunk442837.e7)([Chunk340895.Z], () => Chunk340895.Z.hasIncomingCalls()),
     t = (0, Chunk442837.e7)([Chunk888369.default, Chunk699516.Z, Chunk292959.Z, Chunk91896.Z], () => {
       let e = Chunk888369.default.getTotalMentionCount(),
@@ -55,6 +55,6 @@ function y() {
       null == exports || exports(), require()
     }
   }, [module]), Chunk647438.useEffect(() => {
-    I(exports)
-  }, [exports]), Chunk647438.useEffect(() => () => I(0), [])
+    y(exports)
+  }, [exports]), Chunk647438.useEffect(() => () => y(0), [])
 }

@@ -108,7 +108,7 @@ function P(e) {
             text: O.intl.string(O.t["/kpMDt"]),
             textVariant: "text-sm/normal",
             onClick: () => (function(e) {
-              let t = E.isPlatformEmbedded && j.ZP.supportsFeature(I.eRX.WEBAUTHN) ? j.ZP.webAuthnAuthenticate : e => {
+              let t = E.isPlatformEmbedded && b.ZP.supportsFeature(I.eRX.WEBAUTHN) ? b.ZP.webAuthnAuthenticate : e => {
                 let t = (0, s.wz)(JSON.parse(e));
                 return (0, s.U2)(t).then(e => JSON.stringify(e))
               };
@@ -138,7 +138,7 @@ function P(e) {
           children: O.intl.string(O.t.apGCUT)
         }), (0, r.jsx)(p.DK, {
           children: O.intl.format(O.t.Cbl5JK, {
-            username: "".concat(b.ZP.getUserTag(e))
+            username: "".concat(j.ZP.getUserTag(e))
           })
         }), (0, r.jsx)("div", {
           className: S.startOverButton,

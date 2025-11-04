@@ -58,7 +58,8 @@ function d(e) {
     source: o,
     initialSelectedDestinations: l = [],
     forwardOptions: d,
-    onRequestSent: f
+    onRequestSent: f,
+    customSendHandler: _
   } = e;
   (0, a.Lb)(t.channel_id, t.id, o), (0, i.ZDy)(async () => {
     let {
@@ -68,7 +69,8 @@ function d(e) {
       message: t,
       initialSelectedDestinations: l,
       forwardOptions: d,
-      onRequestSent: f
+      onRequestSent: f,
+      customSendHandler: _
     }))
   }, {
     modalKey: u

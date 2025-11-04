@@ -109,8 +109,8 @@ let el = (0, Chunk320830.Z)(Chunk781428.Z),
   ex = (0, Chunk320830.Z)(Chunk299852.Z),
   eE = (0, Chunk320830.Z)(Chunk761305.Z),
   ev = (0, Chunk320830.Z)(Chunk637776.Z),
-  eb = (0, Chunk320830.Z)(Chunk73906.Z),
-  ej = (0, Chunk320830.Z)(Chunk649156.Z),
+  ej = (0, Chunk320830.Z)(Chunk73906.Z),
+  eb = (0, Chunk320830.Z)(Chunk649156.Z),
   eI = (0, Chunk320830.Z)(Chunk909223.Z),
   ey = (0, Chunk320830.Z)(Chunk424044.Z),
   eO = (0, Chunk320830.Z)(Chunk521379.Z),
@@ -330,12 +330,12 @@ class eN extends Chunk647438.PureComponent {
         }, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
-        render: e => (0, r.jsx)(ej, ei({}, e))
+        render: e => (0, r.jsx)(eb, ei({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
           optional: true
         }), ":messageId?"),
-        render: e => (0, r.jsx)(eb, ei({}, e))
+        render: e => (0, r.jsx)(ej, ei({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.REPORT,
         render: e => (0, r.jsx)(eI, ei({}, e))
@@ -369,7 +369,7 @@ let eC = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk
     guildTemplateCode: u,
     gift: null != c ? A.Z.get(c) : null,
     invite: null != o ? T.Z.getInvite(o) : null,
-    guildTemplate: null != u ? b.Z.getGuildTemplate(u) : null,
+    guildTemplate: null != u ? j.Z.getGuildTemplate(u) : null,
     hasLoadedExperiments: v.Z.hasLoadedExperiments
   }
 })(eN)

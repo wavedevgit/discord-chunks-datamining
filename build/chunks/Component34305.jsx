@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 34305, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,7 +42,7 @@ class E extends Chunk647438.PureComponent {
       path: n,
       label: i,
       editingPath: l,
-      isDefault: s,
+      isDefault: o,
       metadata: u
     } = this.props;
     return null != Chunk579022 && (e = null != Chunk579022.availableKB ? (0, Chunk424218.BU)(Chunk579022.availableKB, {
@@ -200,19 +200,19 @@ class E extends Chunk647438.PureComponent {
         }
         return e
       }({}, e), {
-        header: h.intl.string(h.t.iBUzS5),
-        confirmText: h.intl.string(h.t.iBUzS5),
-        cancelText: h.intl.string(h.t["ETE/oC"]),
+        header: g.intl.string(g.t.iBUzS5),
+        confirmText: g.intl.string(g.t.iBUzS5),
+        cancelText: g.intl.string(g.t["ETE/oC"]),
         onConfirm: () => {
-          this.handleStopEditing(), (0, s.iD)(this.props.path)
+          this.handleStopEditing(), (0, o.iD)(this.props.path)
         },
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
-          children: h.intl.string(h.t["1XqeW2"])
+          children: g.intl.string(g.t["1XqeW2"])
         })
       })))
     }), b(this, "handleSaveChanges", () => {
-      (0, s.Tb)(this.props.path, {
+      (0, o.Tb)(this.props.path, {
         label: null != this.state.label ? this.state.label : this.props.label,
         isDefault: null != this.state.isDefault ? this.state.isDefault : this.props.isDefault
       }), this.handleStopEditing()
@@ -279,8 +279,8 @@ class O extends Chunk647438.PureComponent {
     super(...e), b(this, "state", {
       editingPath: null
     }), b(this, "handleAddInstallationLocation", () => {
-      m.ZP.showOpenDialog(["openDirectory"]).then(e => {
-        null != e && 0 !== e.length && null != e[0] && "undefined" !== e[0] && (0, s.RY)(e[0])
+      h.ZP.showOpenDialog(["openDirectory"]).then(e => {
+        null != e && 0 !== e.length && null != e[0] && "undefined" !== e[0] && (0, o.RY)(e[0])
       })
     }), b(this, "handleToggleEditing", e => {
       this.setState({
@@ -289,7 +289,7 @@ class O extends Chunk647438.PureComponent {
     })
   }
 }
-let I = Chunk442837.ZP.connectStores([Chunk391690.Z], () => ({
+let y = Chunk442837.ZP.connectStores([Chunk391690.Z], () => ({
   installationPaths: Chunk391690.Z.installationPaths,
   installationPathsMetadata: Chunk391690.Z.installationPathsMetadata,
   defaultInstallationPath: Chunk391690.Z.defaultInstallationPath

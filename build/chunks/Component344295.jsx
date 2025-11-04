@@ -157,7 +157,7 @@ class J extends Chunk647438.PureComponent {
         channel: e
       } = t;
       if (null != e)
-        if ((0, j.c)(M.M5.INVITE_UNCLAIMED), null != t.guild) {
+        if ((0, b.c)(M.M5.INVITE_UNCLAIMED), null != t.guild) {
           var l, c, u;
           let e = (0, A.yE)(null != (u = t.flags) ? u : 0, a.$.IS_APPLICATION_BYPASS),
             n = (null == (l = t.guild.features) ? true : l.includes(D.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (c = t.guild.features) ? true : c.includes(D.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL));
@@ -176,7 +176,7 @@ class J extends Chunk647438.PureComponent {
   track(e, t, n) {
     let {
       invite: r
-    } = this.props, i = this.getInviteKey(), s = (0, b.jX)(i), l = t ? {
+    } = this.props, i = this.getInviteKey(), s = (0, j.jX)(i), l = t ? {
       guild_id: null != r.guild ? r.guild.id : null,
       channel_id: null != r.channel ? r.channel.id : null,
       inviter_id: null != r.inviter ? r.inviter.id : null,

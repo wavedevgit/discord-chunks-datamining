@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk10058 = require("./10058.js");
 
-function v(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function C(e, t) {
 function S(e) {
   let {
     className: t
-  } = e, n = (0, a.e7)([h.Z], () => h.Z.getPendingCount() > 0), _ = (0, s.dQu)(s.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
+  } = e, n = (0, a.e7)([g.Z], () => g.Z.getPendingCount() > 0), _ = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
     let [e, t] = i.useState(null), {
       showActivityTicker: n
     } = (0, E.Z)(), r = i.useRef({}), l = i.useRef(null);
@@ -72,55 +72,55 @@ function S(e) {
           null == r.current[e] && (r.current[e] = {}), null == n ? delete r.current[e][t] : r.current[e][t] = n, 0 === Object.keys(r.current[e]).length && delete r.current[e]
         },
         i = (n, i, a) => {
-          var s, o, c, u, d, p, m, _, b;
-          if (!h.Z.isFriend(n)) returnfalse;
-          let E = g.default.getUser(n);
+          var o, s, c, u, d, p, h, _, b;
+          if (!g.Z.isFriend(n)) returnfalse;
+          let E = m.default.getUser(n);
           if (null == E) returnfalse;
-          let I = false,
-            y = null;
+          let y = false,
+            v = null;
           if (null != i) {
             let t = i.type;
             if (null != t && function(e) {
                 let t = e.type;
                 return t === O.IIU.PLAYING && null != e.application_id || t === O.IIU.LISTENING || t === O.IIU.WATCHING
               }(i)) {
-              let l = t === O.IIU.WATCHING || t === O.IIU.LISTENING ? "".concat(t, "-").concat(null != (u = i.name) ? u : "", "-").concat(null != (d = i.state) ? d : "", "-").concat(null != (p = i.details) ? p : "") : "".concat(t, "-").concat(null != (m = i.name) ? m : "");
-              (null == (c = r.current[n]) ? true : c.presence) !== l && (I = true, e(n, "presence", l), y = {
+              let l = t === O.IIU.WATCHING || t === O.IIU.LISTENING ? "".concat(t, "-").concat(null != (u = i.name) ? u : "", "-").concat(null != (d = i.state) ? d : "", "-").concat(null != (p = i.details) ? p : "") : "".concat(t, "-").concat(null != (h = i.name) ? h : "");
+              (null == (c = r.current[n]) ? true : c.presence) !== l && (y = true, e(n, "presence", l), v = {
                 user: E,
                 activity: i
               })
-            } else(null == (o = r.current[n]) ? true : o.presence) != null && (I = true, e(n, "presence", null))
+            } else(null == (s = r.current[n]) ? true : s.presence) != null && (y = true, e(n, "presence", null))
           }
           if (null != a) {
             let t = f.Z.getChannel(a);
             if (null != t) {
               let i = "voice-".concat(t.id);
-              (null == (_ = r.current[n]) ? true : _.voice) !== i && (I = true, e(n, "voice", i), y = {
+              (null == (_ = r.current[n]) ? true : _.voice) !== i && (y = true, e(n, "voice", i), v = {
                 user: E,
                 voiceChannel: t
               })
             }
-          } else(null == (s = r.current[n]) ? true : s.voice) != null && (I = true, e(n, "voice", null));
-          return I && null != y && (b = y, null != l.current && (window.clearTimeout(l.current), l.current = null), t(b), l.current = window.setTimeout(() => {
+          } else(null == (o = r.current[n]) ? true : o.voice) != null && (y = true, e(n, "voice", null));
+          return y && null != v && (b = v, null != l.current && (window.clearTimeout(l.current), l.current = null), t(b), l.current = window.setTimeout(() => {
             t(null), l.current = null
-          }, 1e4)), I
+          }, 1e4)), y
         },
         a = e => {
           for (let t of e.updates) {
             let e = t.user.id,
-              n = m.Z.getPrimaryActivity(e);
+              n = h.Z.getPrimaryActivity(e);
             if (i(e, n)) break
           }
         },
-        s = e => {
+        o = e => {
           for (let t of e.voiceStates)
             if (i(t.userId, true, t.channelId)) break
         };
-      return o.Z.subscribe("PRESENCE_UPDATES", a), o.Z.subscribe("VOICE_STATE_UPDATES", s), () => {
-        o.Z.unsubscribe("PRESENCE_UPDATES", a), o.Z.unsubscribe("VOICE_STATE_UPDATES", s), null != l.current && (window.clearTimeout(l.current), l.current = null)
+      return s.Z.subscribe("PRESENCE_UPDATES", a), s.Z.subscribe("VOICE_STATE_UPDATES", o), () => {
+        s.Z.unsubscribe("PRESENCE_UPDATES", a), s.Z.unsubscribe("VOICE_STATE_UPDATES", o), null != l.current && (window.clearTimeout(l.current), l.current = null)
       }
     }, [n]), e
-  }(), T = i.useRef(null), N = (0, s.Yzy)(S, {
+  }(), T = i.useRef(null), N = (0, o.Yzy)(S, {
     keys: e => {
       var t, n, r;
       return null != e ? null != e.voiceChannel ? "".concat(e.user.id, "-voice-").concat(e.voiceChannel.id) : "".concat(e.user.id, "-").concat(null == (t = e.activity) ? true : t.state, ":").concat(null == (n = e.activity) ? true : n.details, ":").concat(null == (r = e.activity) ? true : r.name) : "none"
@@ -144,7 +144,7 @@ function S(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: y.container,
+      className: v.container,
       children: N((e, t) => null == t ? null : (0, r.jsx)(p.Z, {
         targetElementRef: T,
         position: "bottom",
@@ -152,22 +152,22 @@ function S(e) {
         userId: t.user.id,
         children: n => {
           var i;
-          return (0, r.jsxs)(l.animated.div, C(v({
+          return (0, r.jsxs)(l.animated.div, C(I({
             ref: T,
-            className: y.activityWrapper,
+            className: v.activityWrapper,
             style: e
           }, n), {
-            children: [(0, r.jsx)(s.Text, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-xs/semibold",
               children: null != (i = t.user.globalName) ? i : t.user.username
             }), null != t.voiceChannel ? (0, r.jsx)(u.Z, {
               channel: t.voiceChannel,
               textVariant: "text-xs/medium",
-              textClassName: y.statusText
+              textClassName: v.statusText
             }) : (0, r.jsx)(c.Z, {
               activity: t.activity,
               textVariant: "text-xs/medium",
-              textClassName: y.statusText
+              textClassName: v.statusText
             })]
           }))
         }
@@ -175,14 +175,14 @@ function S(e) {
     }), (0, r.jsx)(b.Or, {
       popoutPosition: "bottom",
       popoutAlign: "left",
-      children: (e, i, l, a) => (0, r.jsx)(d.JO, C(v({}, l), {
+      children: (e, i, l, a) => (0, r.jsx)(d.JO, C(I({}, l), {
         ref: a,
         className: t,
         onClick: e,
-        icon: s.iFz,
+        icon: o.iFz,
         iconSize: _,
-        "aria-label": I.intl.string(I.t.TdEu5X),
-        tooltip: i ? null : I.intl.string(I.t.TdEu5X),
+        "aria-label": y.intl.string(y.t.TdEu5X),
+        tooltip: i ? null : y.intl.string(y.t.TdEu5X),
         selected: i,
         showBadge: n
       }))

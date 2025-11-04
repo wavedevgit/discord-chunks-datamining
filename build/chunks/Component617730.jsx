@@ -60,8 +60,8 @@ function f(e) {
     x = null != t.channel ? (0, l.jD)(t.channel) : null,
     E = null != t.target_application ? new s.ZP(t.target_application) : null,
     v = f || null == t.inviter ? null : new a.Z(t.inviter),
-    b = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != _ && _.features.has(d.GuildFeatures.COMMUNITY)) && null != v && (0, c.WT)(t),
-    j = (e => {
+    j = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != _ && _.features.has(d.GuildFeatures.COMMUNITY)) && null != v && (0, c.WT)(t),
+    b = (e => {
       let {
         state: t
       } = e;
@@ -83,21 +83,21 @@ function f(e) {
   return (0, c.JI)(t) ? (0, r.jsx)(u.Z, {
     invite: t,
     channel: x,
-    isSubmitting: j,
+    isSubmitting: b,
     onAcceptInvite: n
   }) : (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(c.GB, {
       application: E,
       guild: _,
-      user: b || (0, c.X7)(t) ? v : null
+      user: j || (0, c.X7)(t) ? v : null
     }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, m(p({}, I), {
-      showBigUserIcon: b
+      showBigUserIcon: j
     })), (0, r.jsx)(c.UM, m(p({}, I), {
-      showBigUserIcon: b
+      showBigUserIcon: j
     })), (0, r.jsx)(c.V6, p({}, I)), (0, r.jsx)(i.zx, {
       onClick: n,
-      submitting: j,
+      submitting: b,
       className: g.acceptButton,
       children: h.intl.string(h.t.ohMvm1)
     })]

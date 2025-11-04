@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 381416, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  s: () => s
+  s: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,11 +9,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk394121 = require("./394121.js");
 
-function s(e) {
+function o(e) {
   let {
     onDiscardApplication: t,
     onContinueApplication: n,
-    guild: s
+    guild: o
   } = e;
   return (0, r.jsxs)("div", {
     className: a.confirmation,
@@ -26,8 +26,8 @@ function s(e) {
     }), (0, r.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: null != s ? l.intl.formatToPlainString(l.t.f5Jaw7, {
-        guildName: s.name
+      children: null != o ? l.intl.formatToPlainString(l.t.f5Jaw7, {
+        guildName: o.name
       }) : l.intl.string(l.t["0sTyEb"])
     }), (0, r.jsxs)("div", {
       className: a.incompleteButtonsContainer,

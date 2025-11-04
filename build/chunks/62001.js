@@ -9,10 +9,10 @@ function i(e, t, n) {
   let i = r.useRef(null),
     l = r.useRef(new Map),
     a = r.useRef(new Set),
-    s = r.useRef(t),
-    o = r.useRef(e);
+    o = r.useRef(t),
+    s = r.useRef(e);
   return r.useEffect(() => {
-    s.current = t, o.current = e
+    o.current = t, s.current = e
   }, [t, e]), r.useEffect(() => {
     var e;
     return i.current = new IntersectionObserver(e => {
@@ -21,7 +21,7 @@ function i(e, t, n) {
           let n = e.target.getAttribute("data-item-id");
           null != n && (e.isIntersecting && e.intersectionRatio >= .5 ? a.current.has(n) || (a.current.add(n), t = true) : a.current.has(n) && (a.current.delete(n), t = true))
         }), t) {
-        let e = o.current,
+        let e = s.current,
           t = Array.from(a.current).map(t => {
             let n = e.findIndex(e => e.id === t);
             return n >= 0 ? {
@@ -29,7 +29,7 @@ function i(e, t, n) {
               item: e[n]
             } : null
           }).filter(e => null !== e).sort((e, t) => e.index - t.index);
-        s.current({
+        o.current({
           viewableItems: t
         })
       }

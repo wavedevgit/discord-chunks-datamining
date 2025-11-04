@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 599706, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,12 +32,12 @@ let f = e => {
         targetElementRef: a,
         userId: t.id,
         guildId: l,
-        newAnalyticsLocations: [o.Z.AVATAR],
+        newAnalyticsLocations: [s.Z.AVATAR],
         position: "left",
         clickTrap: true,
         children: e => {
           var n, i;
-          return (0, r.jsx)(s.qEK, (n = function(e) {
+          return (0, r.jsx)(o.qEK, (n = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -58,7 +58,7 @@ let f = e => {
             ref: a,
             src: t.getAvatarURL(l, 24),
             "aria-label": t.username,
-            size: s.EFr.SIZE_24,
+            size: o.EFr.SIZE_24,
             className: p.partyMember
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
@@ -74,46 +74,46 @@ let f = e => {
       })
     })
   },
-  m = e => {
+  h = e => {
     let {
       partySize: t,
       members: n,
       minAvatarsShown: i = 1,
       maxAvatarsShown: l = 2,
-      guildId: s
+      guildId: o
     } = e, {
-      unknownSize: o,
+      unknownSize: s,
       totalSize: c,
       knownSize: u
     } = t;
     if (c < i) return null;
-    let m = a()(n).filter(d.lm).take(l).map(e => (0, r.jsx)(f, {
+    let h = a()(n).filter(d.lm).take(l).map(e => (0, r.jsx)(f, {
       member: e,
-      guildId: s
+      guildId: o
     }, e.id)).value();
-    for (let e = 0; e < o && m.length < l; e++) m.push((0, r.jsx)(f, {
-      guildId: s
+    for (let e = 0; e < s && h.length < l; e++) h.push((0, r.jsx)(f, {
+      guildId: o
     }, "unknown-member-".concat(e)));
-    let h = c - u - o;
-    for (let e = 0; e < h && m.length < l; e++) m.push((0, r.jsx)(f, {
+    let g = c - u - s;
+    for (let e = 0; e < g && h.length < l; e++) h.push((0, r.jsx)(f, {
       empty: true,
-      guildId: s
+      guildId: o
     }, "empty-member-".concat(e)));
-    let g = Math.max(Math.min(c - m.length, 99), 0);
-    if (1 === g) {
+    let m = Math.max(Math.min(c - h.length, 99), 0);
+    if (1 === m) {
       let e = n[l];
-      m.push((0, r.jsx)(f, {
+      h.push((0, r.jsx)(f, {
         member: e,
-        guildId: s
+        guildId: o
       }, e.id))
     }
     return (0, r.jsx)("div", {
       className: p.wrapper,
       children: (0, r.jsxs)("div", {
         className: p.partyMembers,
-        children: [m, g > 1 ? (0, r.jsxs)("div", {
+        children: [h, m > 1 ? (0, r.jsxs)("div", {
           className: p.partyMemberOverflow,
-          children: ["+", g]
+          children: ["+", m]
         }) : null]
       })
     })

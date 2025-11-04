@@ -35,11 +35,11 @@ class d extends Chunk317770.Z {
       streamerId: l,
       emojiHose: u
     } = e;
-    if (null != l && i !== (null == (t = s.default.getCurrentUser()) ? true : t.id))
+    if (null != l && i !== (null == (t = o.default.getCurrentUser()) ? true : t.id))
       if (null != r && null != n) {
-        let e = s.default.getUser(i);
-        null != e && (0, a.vM)(e.getAvatarURL(null, c.Ks)), (0, o.cV)(n, i, l, r)
-      } else null != u && (u.lastUpdatedAt = Date.now(), (0, o.gr)(u, i, l))
+        let e = o.default.getUser(i);
+        null != e && (0, a.vM)(e.getAvatarURL(null, c.Ks)), (0, s.cV)(n, i, l, r)
+      } else null != u && (u.lastUpdatedAt = Date.now(), (0, s.gr)(u, i, l))
   }
   constructor(...e) {
     super(...e), u(this, "linesToUpdate", {}), u(this, "lineBatchTimer", new r.Xp), u(this, "_handleDrawLinePoint", e => {
@@ -61,7 +61,7 @@ class d extends Chunk317770.Z {
           points: n,
           streamerId: r
         } = this.linesToUpdate[e];
-        (0, o.AX)(t, e, r, n)
+        (0, s.AX)(t, e, r, n)
       }
       this.linesToUpdate = {}, this.lineBatchTimer.stop()
     })

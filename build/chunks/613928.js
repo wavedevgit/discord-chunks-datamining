@@ -8,15 +8,15 @@ require.d(exports, {
   NV: () => x,
   Rm: () => R,
   _e: () => C,
-  aL: () => v,
+  aL: () => I,
   eO: () => M,
   em: () => T,
   es: () => N,
   jv: () => S,
   mV: () => L,
   rK: () => w,
-  wV: () => j,
-  y_: () => y,
+  wV: () => P,
+  y_: () => v,
   ye: () => U
 }), require("./539854.js"), require("./472816.js"), require("./794429.js"), require("./388685.js");
 var r, Chunk661869 = require("./661869.js"),
@@ -40,11 +40,11 @@ var Chunk306680 = require("./306680.js"),
   Chunk981631 = require("./981631.js"),
   Chunk764051 = require("./764051.js");
 
-function y(e, t) {
+function v(e, t) {
   return "hydration-".concat(e, "-").concat(t)
 }
 require("./388032.jsx");
-var v = ((r = {})[r.UNKNOWN = 0] = "UNKNOWN", r[r.DEFAULT = 1] = "DEFAULT", r[r.MORE = 2] = "MORE", r[r.LESS = 3] = "LESS", r[r.MUTED = 4] = "MUTED", r);
+var I = ((r = {})[r.UNKNOWN = 0] = "UNKNOWN", r[r.DEFAULT = 1] = "DEFAULT", r[r.MORE = 2] = "MORE", r[r.LESS = 3] = "LESS", r[r.MUTED = 4] = "MUTED", r);
 
 function C(e) {
   return e.type === b.Ni.MESSAGE || e.type === b.Ni.SUMMARY || e.type === b.Ni.GENERATED_CANDIDATE || e.type === b.Ni.GUILD_EVENT
@@ -57,13 +57,13 @@ async function T(e, t, n) {
   let r = _.Z.getHydratedItems(),
     i = e.slice(t, n);
   if (0 === i.length) return;
-  m.Z.loadHydratedAttempt(y(t, n));
+  h.Z.loadHydratedAttempt(v(t, n));
   let l = i.filter(e => null == r[e.id]),
     a = l.filter(e => e.type === b.Ni.MESSAGE).map(e => ({
       channel_id: e.data.channel_id,
       message_id: e.data.message_id
     })),
-    s = l.map(e => {
+    o = l.map(e => {
       if (e.type === b.Ni.MESSAGE) {
         var t, n, r;
         let i = [];
@@ -80,7 +80,7 @@ async function T(e, t, n) {
       }
       return []
     }).flat().filter(Boolean),
-    o = l.filter(e => e.type === b.Ni.SUMMARY).map(e => ({
+    s = l.filter(e => e.type === b.Ni.SUMMARY).map(e => ({
       guild_id: e.data.guild_id,
       channel_id: e.data.channel_id,
       summary_id: e.data.summary_id
@@ -94,9 +94,9 @@ async function T(e, t, n) {
       guild_id: e.data.guild_id,
       channel_id: e.data.channel_id
     }));
-  await m.Z.fetchHydrated(t, n, {
-    messageItems: [...a, ...s],
-    summaryItems: o,
+  await h.Z.fetchHydrated(t, n, {
+    messageItems: [...a, ...o],
+    summaryItems: s,
     activityItems: c,
     generatedCandidateItems: u
   })
@@ -108,18 +108,18 @@ async function N() {
   await T([...module, ...exports], require, require + Chunk797394.xy)
 }
 
-function P(e, t, n) {
+function j(e, t, n) {
   let r = [],
     i = null;
   for (let l of e) {
     if (null == l.author || t && i === l.author.id) continue;
-    let e = l instanceof c.ZP ? l : (0, s.e5)(l);
+    let e = l instanceof c.ZP ? l : (0, o.e5)(l);
     if (r.push(e), i = l.author.id, null != n && r.length >= n) break
   }
   return r
 }
 
-function j(e, t) {
+function P(e, t) {
   let {
     reactions: n,
     reactionCount: r
@@ -148,7 +148,7 @@ function j(e, t) {
       reactions: t,
       reactionCount: n
     }
-  }(e.messages), i = P(e.messages, true, 3);
+  }(e.messages), i = j(e.messages, true, 3);
   return {
     id: e.id,
     topic: e.topic,
@@ -172,7 +172,7 @@ function j(e, t) {
 function x(e) {
   let t = [];
   null != e.messages && (t = e.messages);
-  let n = P(t);
+  let n = j(t);
   return {
     guild_id: e.guild_id,
     content_id: e.content_id,
@@ -192,7 +192,7 @@ function x(e) {
 function A(e, t) {
   var n, r;
   let i, l;
-  return null != e.before_messages && (i = P(e.before_messages).slice(-I.h9)), null != e.after_messages && (l = P(e.after_messages).slice(0, I.Ml)), n = function(e) {
+  return null != e.before_messages && (i = j(e.before_messages).slice(-y.h9)), null != e.after_messages && (l = j(e.after_messages).slice(0, y.Ml)), n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -210,8 +210,8 @@ function A(e, t) {
     }
     return e
   }({}, t), r = r = {
-    message: (0, s.e5)(e.message),
-    threadChannel: null != e.thread_channel ? o.dy.fromServer(e.thread_channel, e.guild_id) : true,
+    message: (0, o.e5)(e.message),
+    threadChannel: null != e.thread_channel ? s.dy.fromServer(e.thread_channel, e.guild_id) : true,
     beforeMessages: i,
     afterMessages: l
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
@@ -232,7 +232,7 @@ function Z(e, t) {
 }
 
 function w(e) {
-  return (0, h.VZ)(e)
+  return (0, g.VZ)(e)
 }
 
 function L(e) {
@@ -273,7 +273,7 @@ function D(e) {
     n = null;
   for (let t = e.length - 1; t >= 0; t--) {
     let r = e[t];
-    if (null != r && !g.X.has(r.item.data.kind)) {
+    if (null != r && !m.X.has(r.item.data.kind)) {
       n = r.item.id;
       break
     }
@@ -307,8 +307,8 @@ function M(e) {
   }
   let l = u.Z.getChannel(r);
   if (null == l ? true : l.nsfw) returntrue;
-  let s = null != (i = null != (n = null == l ? true : l.guild_id) ? n : i) ? d.Z.getGuild(i) : null;
-  return (null == s ? true : s.nsfwLevel) === O.V_K.EXPLICIT || (null == s ? true : s.nsfwLevel) === O.V_K.AGE_RESTRICTED
+  let o = null != (i = null != (n = null == l ? true : l.guild_id) ? n : i) ? d.Z.getGuild(i) : null;
+  return (null == o ? true : o.nsfwLevel) === O.V_K.EXPLICIT || (null == o ? true : o.nsfwLevel) === O.V_K.AGE_RESTRICTED
 }
 
 function k(e) {
@@ -354,8 +354,8 @@ async function U(e) {
       object: e,
       objectType: r.ACK_SEMI_AUTOMATIC
     }, true, true, f.default.atPreviousMillisecond(n.data.message_id))
-  }), await m.Z.clearReadStates(), await m.Z.fetchDehydrated({
+  }), await h.Z.clearReadStates(), await h.Z.fetchDehydrated({
     isReloading: true,
     forceRefresh: true
-  }), await m.Z.reloadICYMITab(), await m.Z.getGuildChannelScores(), m.Z.getRecommendedGuilds()
+  }), await h.Z.reloadICYMITab(), await h.Z.getGuildChannelScores(), h.Z.getRecommendedGuilds()
 }

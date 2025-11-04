@@ -435,8 +435,8 @@ class eu extends(r = Chunk647438.PureComponent) {
       registering: x,
       apiErrors: {
         email: v,
-        username: b,
-        global_name: j,
+        username: j,
+        global_name: b,
         password: I,
         date_of_birth: O
       } = {}
@@ -499,7 +499,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         onChange: e => this.setState({
           globalName: e
         }),
-        error: ec(j),
+        error: ec(b),
         maxLength: en.hy,
         autoComplete: "off",
         setRef: e => {
@@ -536,7 +536,7 @@ class eu extends(r = Chunk647438.PureComponent) {
           name: "username",
           value: r,
           onChange: R,
-          error: null != m ? m : ec(b),
+          error: null != m ? m : ec(j),
           autoComplete: "off",
           setRef: e => {
             this.usernameRef = e

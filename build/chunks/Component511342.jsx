@@ -19,20 +19,20 @@ function f(e) {
     guild: t,
     markAsDismissed: n,
     renderTargetElement: f
-  } = e, m = i.useRef(null), h = {
+  } = e, h = i.useRef(null), g = {
     text: d.intl.string(u.default.Xnghqy),
     onClick: () => {
-      s.Z.open(t.id, o.pNK.BOOST_PERKS, {
+      o.Z.open(t.id, s.pNK.BOOST_PERKS, {
         section: a.Z.GUILD_BOOSTING_PROGRESS_BAR
       }), n(c.L.TAKE_ACTION)
     }
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      ref: m,
+      ref: h,
       children: f()
     }), (0, r.jsx)(l.Mb, {
-      targetElementRef: m,
+      targetElementRef: h,
       title: d.intl.string(u.default.UuwXRZ),
       body: d.intl.string(u.default.MIwlcR),
       caretConfig: {
@@ -40,7 +40,7 @@ function f(e) {
         align: "center"
       },
       assetUrl: p.Z,
-      action: h,
+      action: g,
       onRequestClose: () => n(c.L.USER_DISMISS)
     })]
   })

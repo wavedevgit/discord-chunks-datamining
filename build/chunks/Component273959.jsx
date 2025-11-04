@@ -33,14 +33,14 @@ function N(e) {
       withFastTravel: n,
       focusSectionProps: l
     } = e,
-    N = (0, s.TH)(),
-    P = (0, o.e7)([O.Z], () => O.Z.getGuildId()),
-    j = (0, o.e7)([E.Z], () => E.Z.getChannelId()),
-    x = (0, o.e7)([_.Z], () => _.Z.getChannel(j), [j]),
-    A = null != P ? P : null == x ? true : x.guild_id,
-    Z = (0, o.e7)([b.Z], () => b.Z.getGuild(A), [A]),
+    N = (0, o.TH)(),
+    j = (0, s.e7)([O.Z], () => O.Z.getGuildId()),
+    P = (0, s.e7)([E.Z], () => E.Z.getChannelId()),
+    x = (0, s.e7)([_.Z], () => _.Z.getChannel(P), [P]),
+    A = null != j ? j : null == x ? true : x.guild_id,
+    Z = (0, s.e7)([b.Z], () => b.Z.getGuild(A), [A]),
     w = (0, p.Z)(),
-    L = (0, h.D)(),
+    L = (0, g.D)(),
     {
       guildTitleIconSize: R,
       guildIconSize: D
@@ -50,14 +50,14 @@ function N(e) {
     {
       application: M,
       isFrameInFocusedMode: k
-    } = (0, o.cj)([u.Z, f.Z], () => {
+    } = (0, s.cj)([u.Z, f.Z], () => {
       let e = f.Z.getConnectedFrame();
       return {
         application: u.Z.getApplication(null == e ? true : e.applicationId),
-        isFrameInFocusedMode: f.Z.getFrameLayoutMode() === v.U.FOCUSED
+        isFrameInFocusedMode: f.Z.getFrameLayoutMode() === I.U.FOCUSED
       }
     }),
-    U = null != M ? I.ZP.getApplicationIconURL({
+    U = null != M ? y.ZP.getApplicationIconURL({
       id: M.id,
       icon: M.icon,
       bot: M.bot
@@ -73,34 +73,34 @@ function N(e) {
     size: R
   })) : null != Z ? (G = w ? (0, r.jsx)(c.r7p, {
     size: R
-  }) : (0, r.jsx)(m.Z, {
+  }) : (0, r.jsx)(h.Z, {
     guild: Z,
     size: D,
     active: true,
     className: T.guildIcon
   }), t = Z.name) : null != x && (x.isDM() || x.isGroupDM()) ? (t = C.intl.string(C.t.YUU0RF), G = (0, r.jsx)(c.gw7, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.ICYMI) ? (t = C.intl.string(C.t["jnXV/V"]), G = (0, r.jsx)(c.qOE, {
+  })) : N.pathname.startsWith(v.Z5c.ICYMI) ? (t = C.intl.string(C.t["jnXV/V"]), G = (0, r.jsx)(c.qOE, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (t = C.intl.string(C.t["4nEZLk"]), G = (0, r.jsx)(c.Jmo, {
+  })) : N.pathname.startsWith(v.Z5c.GLOBAL_DISCOVERY) ? (t = C.intl.string(C.t["4nEZLk"]), G = (0, r.jsx)(c.Jmo, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.NITRO_HOME) ? (t = C.intl.string(C.t.Ipxkog), G = (0, r.jsx)(c.SrA, {
+  })) : N.pathname.startsWith(v.Z5c.NITRO_HOME) ? (t = C.intl.string(C.t.Ipxkog), G = (0, r.jsx)(c.SrA, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.COLLECTIBLES_SHOP) ? (t = C.intl.string(C.t.pWG4ze), G = (0, r.jsx)(c.EOn, {
+  })) : N.pathname.startsWith(v.Z5c.COLLECTIBLES_SHOP) ? (t = C.intl.string(C.t.pWG4ze), G = (0, r.jsx)(c.EOn, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.ME_ACTIVITY) ? (t = C.intl.string(C.t.IC5Ann), G = (0, r.jsx)(c.g8d, {
+  })) : N.pathname.startsWith(v.Z5c.ME_ACTIVITY) ? (t = C.intl.string(C.t.IC5Ann), G = (0, r.jsx)(c.g8d, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.ME_DMS) ? (t = C.intl.string(C.t.YUU0RF), G = (0, r.jsx)(c.gw7, {
+  })) : N.pathname.startsWith(v.Z5c.ME_DMS) ? (t = C.intl.string(C.t.YUU0RF), G = (0, r.jsx)(c.gw7, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.FRIENDS) ? (t = C.intl.string(C.t.TdEu5X), G = (0, r.jsx)(c.iFz, {
+  })) : N.pathname.startsWith(v.Z5c.FRIENDS) ? (t = C.intl.string(C.t.TdEu5X), G = (0, r.jsx)(c.iFz, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.FAMILY_CENTER) ? (t = C.intl.string(S.default.RZqaJn), G = (0, r.jsx)(c.BFJ, {
+  })) : N.pathname.startsWith(v.Z5c.FAMILY_CENTER) ? (t = C.intl.string(S.default.RZqaJn), G = (0, r.jsx)(c.BFJ, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.QUEST_HOME_V2) && (t = C.intl.string(C.t.JALI2K), G = (0, r.jsx)(c.qDn, {
+  })) : N.pathname.startsWith(v.Z5c.QUEST_HOME_V2) && (t = C.intl.string(C.t.JALI2K), G = (0, r.jsx)(c.qDn, {
     size: R
   }));
   let B = i.useCallback(e => {
-      (0, g.ZN)("fast-travel")
+      (0, m.ZN)("fast-travel")
     }, []),
     H = (null == t || "" === t) && n ? C.intl.string(C.t.ZvKwYa) : t;
   return null == H || "" === H ? null : (0, r.jsx)(c.aML, {

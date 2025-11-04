@@ -8,7 +8,7 @@ var Chunk664081 = require("./664081.js"),
   Chunk317770 = require("./317770.js"),
   Chunk863750 = require("./863750.js"),
   Chunk335131 = require("./335131.js");
-class o extends Chunk317770.Z {
+class s extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
   }
@@ -22,4 +22,4 @@ class o extends Chunk317770.Z {
     })
   }
 }
-let c = new o
+let c = new s

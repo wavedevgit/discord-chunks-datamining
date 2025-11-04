@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 644679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,16 +31,16 @@ class f extends Chunk317770.Z {
   constructor(...e) {
     super(...e), d(this, "timeout", null), d(this, "handleMaybeOpenModal", () => {
       var e;
-      let t = o.default.getCurrentUser(),
+      let t = s.default.getCurrentUser(),
         n = null == t || null == (e = t.avatarDecoration) ? true : e.expiresAt;
       null != n && (this.maybeOpenModal() || (null != this.timeout && clearTimeout(this.timeout), this.timeout = setTimeout(this.maybeOpenModal, 1e3 * n - Date.now() + 1e3)))
     }), d(this, "maybeOpenModal", () => {
       var e, t;
-      let l = o.default.getCurrentUser(),
-        a = s.Z.getState(),
+      let l = s.default.getCurrentUser(),
+        a = o.Z.getState(),
         f = null == l || null == (e = l.avatarDecoration) ? true : e.skuId,
-        m = null == l || null == (t = l.avatarDecoration) ? true : t.expiresAt;
-      return null != l && !!(null != m && 1e3 * m < Date.now()) && a !== u.hes.RTC_CONNECTED && ((0, i.Mr3)(p), (0, i.ZDy)(async () => {
+        h = null == l || null == (t = l.avatarDecoration) ? true : t.expiresAt;
+      return null != l && !!(null != h && 1e3 * h < Date.now()) && a !== u.hes.RTC_CONNECTED && ((0, i.Mr3)(p), (0, i.ZDy)(async () => {
         let {
           default: e
         } = await n.e("77370").then(n.bind(n, 83950));
@@ -75,4 +75,4 @@ class f extends Chunk317770.Z {
     })
   }
 }
-let m = new f
+let h = new f

@@ -59,40 +59,40 @@ let E = (0, Chunk703912.Z)(e => {
     parsedPermissions: f,
     responseType: E,
     redirectUri: O,
-    codeChallenge: I,
-    codeChallengeMethod: y,
-    state: v,
+    codeChallenge: y,
+    codeChallengeMethod: v,
+    state: I,
     guildId: C,
     channelId: S,
     prompt: T,
     disableGuildSelect: N,
-    disclosures: P,
-    integrationType: j,
+    disclosures: j,
+    integrationType: P,
     pid: x,
     signal: A
-  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != j ? null == u ? true : u.get(j) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
+  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != P ? null == u ? true : u.get(P) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
-    let a = (0, m.jU)(x),
+    let a = (0, h.jU)(x),
       w = i.z1l;
     null != L && null != (0, l.ZP)({
       application: L,
       channelId: S
-    }) ? w = i.u1M : a.context === h.IlC.POPOUT && (w = i.u1M);
+    }) ? w = i.u1M : a.context === g.IlC.POPOUT && (w = i.u1M);
     let R = false,
       D = l => {
         let {
-          clientId: s,
-          location: o
+          clientId: o,
+          location: s
         } = l;
-        if (null == s || s === n) {
-          if (R = true, null == o) {
+        if (null == o || o === n) {
+          if (R = true, null == s) {
             t(new p.Z({
-              errorCode: h.lTL.OAUTH2_ERROR
+              errorCode: g.lTL.OAUTH2_ERROR
             }, "OAuth2 Error: No location provided")), a.lock();
             return
           }
-          if (e(o), null == O || null == L) return void a.lock();
-          null == new URL(o).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(c.$0, _({
+          if (e(s), null == O || null == L) return void a.lock();
+          null == new URL(s).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(c.$0, _({
             application: L
           }, e)), {
             onCloseCallback: () => {
@@ -109,11 +109,11 @@ let E = (0, Chunk703912.Z)(e => {
         cleanup: M
       } = function(e, t) {
         function n() {
-          (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(o.j, b(_({}, e), {
-            title: g.intl.string(g.t.j2d6Km),
-            subtitle: g.intl.string(g.t["4LKmN5"]),
+          (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(s.j, b(_({}, e), {
+            title: m.intl.string(m.t.j2d6Km),
+            subtitle: m.intl.string(m.t["4LKmN5"]),
             actions: [{
-              text: g.intl.string(g.t.cpT0Cq),
+              text: m.intl.string(m.t.cpT0Cq),
               onClick: e.onClose
             }]
           })))
@@ -124,35 +124,35 @@ let E = (0, Chunk703912.Z)(e => {
           }
         }
       }(Z, A);
-    (0, i.h7j)(e => (0, r.jsx)(s.OAuth2AuthorizeModal, b(_({}, e), {
+    (0, i.h7j)(e => (0, r.jsx)(o.OAuth2AuthorizeModal, b(_({}, e), {
       authorizations: u,
       clientId: n,
       scopes: null != d ? d : [],
-      disclosures: null != P ? P : [],
+      disclosures: null != j ? j : [],
       callback: D,
       responseType: E,
       redirectUri: O,
-      codeChallenge: I,
-      codeChallengeMethod: y,
-      state: v,
+      codeChallenge: y,
+      codeChallengeMethod: v,
+      state: I,
       permissions: f,
       guildId: C,
       channelId: S,
       prompt: T,
       disableGuildSelect: "boolean" == typeof N ? N : "true" === N,
-      integrationType: j,
+      integrationType: P,
       cancelCompletesFlow: true
     })), {
       modalKey: Z,
       onCloseCallback: () => {
         M(), R || (t(new p.Z({
-          errorCode: h.lTL.OAUTH2_ERROR
+          errorCode: g.lTL.OAUTH2_ERROR
         }, "User cancelled authorization")), a.lock())
       }
     }, w)
   })
 }, function(e, t, n) {
-  if ((0, m.br)(n) || !u.isPlatformEmbedded) return;
+  if ((0, h.br)(n) || !u.isPlatformEmbedded) return;
   let r = (0, l.ZP)({
     application: e,
     channelId: t

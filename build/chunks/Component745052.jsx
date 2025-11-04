@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 745052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eo
+  Z: () => es
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -105,24 +105,24 @@ function ei() {
     }),
     f = (0, Chunk209613.Z)("message-requests-list"),
     {
-      channelId: m
+      channelId: h
     } = (0, Chunk488634._)(),
-    g = Chunk647438.useCallback(() => {
+    m = Chunk647438.useCallback(() => {
       Chunk907862(require.map(e => e.channel.id))
     }, [require, Chunk907862]),
     b = Chunk647438.useCallback(e => {
       var t, i;
       let {
-        row: s
-      } = e, o = n[s], c = null == (i = n[s + 1]) || null == (t = i.channel) ? true : t.id, u = o.channel.id;
+        row: o
+      } = e, s = n[o], c = null == (i = n[o + 1]) || null == (t = i.channel) ? true : t.id, u = s.channel.id;
       return (0, r.jsx)(W.Z, {
-        index: s,
+        index: o,
         className: a()({
-          [ee.selected]: null != m && m === u,
-          [ee.siblingSelected]: null != m && m === c
+          [ee.selected]: null != h && h === u,
+          [ee.siblingSelected]: null != h && h === c
         }),
-        channel: o.channel,
-        user: o.user,
+        channel: s.channel,
+        user: s.user,
         hasSingleMessageRequest: l
       }, u)
     }, [Chunk120356, require, Chunk112724]),
@@ -199,7 +199,7 @@ function el(e) {
     pageWidth: t,
     onSidebarResize: n
   } = e, i = (0, c.e7)([w.ZP], () => w.ZP.getSidebarState(w.uZ)), l = (0, c.e7)([L.Z], () => L.Z.getChannel(null == i ? true : i.channelId));
-  if (null == i || i.type !== P.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
+  if (null == i || i.type !== j.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
   let a = t - Q.R7I;
   return (0, r.jsx)(b.Z, {
     sidebarType: b.y.MessageRequestSidebar,
@@ -214,8 +214,8 @@ function el(e) {
 let ea = e => {
   let t = (0, U.Z)();
   return (i.useEffect(() => {
-    (0, y.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
-  }, []), null == e.targetElementRef.current || R.Z.hasLayers() || (0, p.$sL)()) ? e.children : (0, r.jsx)(v.ZP, {
+    (0, v.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
+  }, []), null == e.targetElementRef.current || R.Z.hasLayers() || (0, p.$sL)()) ? e.children : (0, r.jsx)(I.ZP, {
     contentTypes: [u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK],
     children: n => {
       let {
@@ -261,42 +261,42 @@ let ea = e => {
   })
 };
 
-function es(e) {
+function eo(e) {
   let {
     section: t
   } = e;
   return t === K.pS.SPAM ? (0, r.jsx)(q.Z, {}) : (0, r.jsx)(ei, {})
 }
-let eo = (0, Chunk112724.Z)(function(e) {
+let es = (0, Chunk112724.Z)(function(e) {
   let {
     width: t
   } = e, n = (0, V.q)();
-  (0, g.ZP)(() => {
-    f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, j.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
+  (0, m.ZP)(() => {
+    f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, P.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
     }), S.Z.increment({
-      name: o.V.MESSAGE_REQUEST_VIEW
+      name: s.V.MESSAGE_REQUEST_VIEW
     })
   });
   let l = (0, c.e7)([x.Z], () => x.Z.theme),
-    s = (0, z.w)(),
+    o = (0, z.w)(),
     [u, d] = i.useState(false),
-    m = (0, c.e7)([w.ZP], () => {
+    h = (0, c.e7)([w.ZP], () => {
       let e = w.ZP.getSidebarState(w.uZ);
-      return null != e && e.type === P.tI.VIEW_MESSAGE_REQUEST ? e : null
+      return null != e && e.type === j.tI.VIEW_MESSAGE_REQUEST ? e : null
     }),
-    h = null == m ? true : m.channelId,
-    _ = null != m,
-    b = (0, k.T)(h),
-    E = (0, M.J)(h),
+    g = null == h ? true : h.channelId,
+    _ = null != h,
+    b = (0, k.T)(g),
+    E = (0, M.J)(g),
     O = i.useRef(null);
   i.useEffect(() => {
-    null != h && !b && E && _ && ((0, T.Kh)(h), N.Z.closeChannelSidebar(w.uZ))
-  }, [h, E, _, b]);
-  let [y, v] = i.useState(K.pS.REQUESTS), A = e => {
-    v(e)
+    null != g && !b && E && _ && ((0, T.Kh)(g), N.Z.closeChannelSidebar(w.uZ))
+  }, [g, E, _, b]);
+  let [v, I] = i.useState(K.pS.REQUESTS), A = e => {
+    I(e)
   };
-  return (0, I.Tt)({
+  return (0, y.Tt)({
     location: $.intl.string($.t.e7GWjQ)
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -320,7 +320,7 @@ let eo = (0, Chunk112724.Z)(function(e) {
             })
           }), (0, r.jsx)(C.Z.Divider, {}), (0, r.jsxs)(p.njP, {
             "aria-label": $.intl.string($.t.e7GWjQ),
-            selectedItem: y,
+            selectedItem: v,
             type: "top-pill",
             onItemSelect: A,
             children: [(0, r.jsx)(p.njP.Item, {
@@ -330,16 +330,16 @@ let eo = (0, Chunk112724.Z)(function(e) {
             }), (0, r.jsx)(p.njP.Item, {
               id: K.pS.SPAM,
               className: ee.item,
-              children: 0 === s ? $.intl.string($.t.ulKXHp) : $.intl.formatToPlainString($.t["5jtrlZ"], {
-                count: s
+              children: 0 === o ? $.intl.string($.t.ulKXHp) : $.intl.formatToPlainString($.t["5jtrlZ"], {
+                count: o
               })
             })]
           })]
         })
       }), (0, r.jsx)("div", {
         className: et.content,
-        children: (0, r.jsx)(es, {
-          section: y
+        children: (0, r.jsx)(eo, {
+          section: v
         })
       })]
     }), _ && (0, r.jsx)(el, {

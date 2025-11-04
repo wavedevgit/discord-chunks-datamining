@@ -47,7 +47,7 @@ function N(e) {
   return e
 }
 
-function P(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function P(e, t) {
   }), e
 }
 
-function j(e) {
+function P(e) {
   var t, n;
   let {
     user: i,
@@ -69,47 +69,47 @@ function j(e) {
   } = e, {
     status: u,
     isMobile: f
-  } = (0, s.cj)([b.Z], () => ({
+  } = (0, o.cj)([b.Z], () => ({
     status: b.Z.getStatus(i.id),
     isMobile: b.Z.isMobileOnline(i.id)
-  })), m = (0, s.e7)([O.Z, g.Z], () => {
-    let e = g.Z.getDMFromUserId(i.id);
+  })), h = (0, o.e7)([O.Z, m.Z], () => {
+    let e = m.Z.getDMFromUserId(i.id);
     return null != e && O.Z.isTyping(e, i.id)
   }, [i]), {
     avatarSrc: _,
     eventHandlers: E
-  } = (0, h.Z)({
+  } = (0, g.Z)({
     userId: i.id,
-    size: o.EFr.SIZE_32,
+    size: s.EFr.SIZE_32,
     animateOnHover: true
-  }), I = async () => {
+  }), y = async () => {
     await c.Z.openPrivateChannel({
       recipientIds: [i.id],
       location: d.Z.FREQUENT_FRIENDS_ROW
     });
-    let e = g.Z.getDMFromUserId(i.id);
-    null != e && (0, p.yw)(C.rMx.CHANNEL_OPENED, P(N({}, (0, p.$H)(e)), {
+    let e = m.Z.getDMFromUserId(i.id);
+    null != e && (0, p.yw)(C.rMx.CHANNEL_OPENED, j(N({}, (0, p.$H)(e)), {
       location: "".concat(d.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
     }))
-  }, y = 0 === l, v = y ? o.YqE : a ? o.XcD : true, j = y ? S.intl.string(S.t.aI4VOL) : a ? S.intl.string(S.t.kABl2x) : true;
-  return (0, r.jsx)(o.P3F, {
+  }, v = 0 === l, I = v ? s.YqE : a ? s.XcD : true, P = v ? S.intl.string(S.t.aI4VOL) : a ? S.intl.string(S.t.kABl2x) : true;
+  return (0, r.jsx)(s.P3F, {
     className: T.frequentFriendAvatarButton,
-    onClick: I,
+    onClick: y,
     onMouseEnter: E.onMouseEnter,
     onMouseLeave: E.onMouseLeave,
     "aria-label": S.intl.formatToPlainString(S.t.M5FjCr, {
       username: i.username
     }),
-    children: (0, r.jsx)(o.qEK, {
+    children: (0, r.jsx)(s.qEK, {
       src: _,
       "aria-label": null != (t = i.globalName) ? t : i.username,
       status: u,
-      isTyping: m,
-      isMobile: f && !m,
-      size: o.EFr.SIZE_32,
-      CutoutIcon: v,
-      avatarTooltipAsset: y ? "\uD83D\uDD25" : a ? "❄️" : true,
-      avatarTooltipText: j,
+      isTyping: h,
+      isMobile: f && !h,
+      size: s.EFr.SIZE_32,
+      CutoutIcon: I,
+      avatarTooltipAsset: v ? "\uD83D\uDD25" : a ? "❄️" : true,
+      avatarTooltipText: P,
       statusTooltip: true,
       statusTooltipDelay: 50,
       avatarTooltipTitle: null != (n = i.globalName) ? n : i.username
@@ -121,7 +121,7 @@ function x() {
   let {
     enabled: e
   } = (0, Chunk399521.Q)("frequent_friends_row"), t = function() {
-    let e = (0, Chunk442837.Wu)([Chunk752048.Z], () => [...Chunk752048.Z.getUserAffinities()].sort((e, t) => m.Z.compare(e.otherUserId, t.otherUserId))),
+    let e = (0, Chunk442837.Wu)([Chunk752048.Z], () => [...Chunk752048.Z.getUserAffinities()].sort((e, t) => h.Z.compare(e.otherUserId, t.otherUserId))),
       t = (0, Chunk442837.Wu)([Chunk594174.default, Chunk699516.Z], () => {
         let t = module.map(e => e.otherUserId),
           n = [];
@@ -158,8 +158,8 @@ function x() {
   Chunk647438.useEffect(() => {
     (null == exports ? true : exports.frequentFriends.length) != null && Chunk367907()
   }, [null == exports ? true : exports.frequentFriends.length, null == exports ? true : exports.showCompetitiveSpot, Chunk367907]);
-  let h = (0, Chunk393903.y)(Chunk367907, []),
-    g = Chunk647438.useCallback(e => {
+  let g = (0, Chunk393903.y)(Chunk367907, []),
+    m = Chunk647438.useCallback(e => {
       let t = e.currentTarget;
       c({
         scrollLeft: t.scrollLeft,
@@ -184,13 +184,13 @@ function x() {
         }), (0, Chunk951288.jsx)(Chunk481060.aML, {
           "data-migration-pending": true,
           text: Chunk388032.intl.string(Chunk388032.t.tqCMcU),
-          children: e => (0, r.jsx)(o.d3s, P(N({}, e), {
+          children: e => (0, r.jsx)(s.d3s, j(N({}, e), {
             className: T.frequentFriendsInfoIcon
           }))
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.xVE, {
         ref: e => {
-          d.current = e, h.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
+          d.current = e, g.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
         className: a()(Chunk944658.frequentFriendsAvatars, {
           [Chunk944658.scrollMaskLeft]: x && A,
@@ -198,7 +198,7 @@ function x() {
         }),
         orientation: "horizontal",
         onScroll: Chunk592125,
-        children: Chunk158776.map((e, t) => (0, r.jsx)(j, {
+        children: Chunk158776.map((e, t) => (0, r.jsx)(P, {
           user: e,
           index: t,
           isCompetitive: t === b.length - 1 && O

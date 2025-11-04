@@ -56,7 +56,7 @@ function p(e) {
         id: "staff-help-center",
         label: "Go to Help Center",
         icon: l.rgF,
-        action: () => (0, a.Z)(s.w)
+        action: () => (0, a.Z)(o.w)
       })]
     })
   })
@@ -66,32 +66,32 @@ function f(e) {
   let {
     className: t,
     focusSectionProps: n
-  } = e, [a, s] = i.useState(false), [f, m] = i.useState(0), h = i.useRef(null), g = e => {
-    clearTimeout(f), m(setTimeout(() => {
-      s(e)
+  } = e, [a, o] = i.useState(false), [f, h] = i.useState(0), g = i.useRef(null), m = e => {
+    clearTimeout(f), h(setTimeout(() => {
+      o(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
-    onMouseEnter: () => g(true),
-    onMouseLeave: () => g(false),
+    onMouseEnter: () => m(true),
+    onMouseLeave: () => m(false),
     children: (0, r.jsx)(l.yRy, {
-      targetElementRef: h,
+      targetElementRef: g,
       shouldShow: a,
       animation: l.yRy.Animation.NONE,
       position: "bottom",
       align: "right",
       autoInvert: false,
-      onRequestOpen: () => s(true),
-      onRequestClose: () => s(false),
+      onRequestOpen: () => o(true),
+      onRequestClose: () => o(false),
       renderPopout: () => (0, r.jsx)(p, {
-        onClose: () => s(false)
+        onClose: () => o(false)
       }),
       children: (e, i) => {
         let {
           isShown: a
         } = i;
-        return (0, r.jsx)(o.JO, u({
-          ref: h,
+        return (0, r.jsx)(s.JO, u({
+          ref: g,
           onClick: d,
           icon: l.nnZ,
           "aria-label": c.intl.string(c.t["5LqopY"]),

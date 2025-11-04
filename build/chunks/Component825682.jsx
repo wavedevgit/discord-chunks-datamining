@@ -19,17 +19,17 @@ let d = function(e) {
     applicationStream: d,
     status: p,
     user: f,
-    userIgnored: m
+    userIgnored: h
   } = e, {
-    voiceActivityStatusEnabled: h
+    voiceActivityStatusEnabled: g
   } = (0, i.U)({
     location: "StatusText"
   }), {
-    voiceChannel: g
+    voiceChannel: m
   } = (0, a.Z)({
     userId: null == f ? true : f.id
-  }), _ = h ? g : true;
-  return m ? (0, r.jsx)("div", {
+  }), _ = g ? m : true;
+  return h ? (0, r.jsx)("div", {
     className: u.text,
     children: c.intl.string(c.t.tFY5Zb)
   }) : (0, l.Z)({
@@ -37,7 +37,7 @@ let d = function(e) {
     status: p,
     applicationStream: d,
     voiceChannel: _
-  }) ? (0, r.jsx)(s.Z, {
+  }) ? (0, r.jsx)(o.Z, {
     location: "StatusText",
     textClassName: u.statusText,
     activities: n,
@@ -48,6 +48,6 @@ let d = function(e) {
     textSize: "sm"
   }) : (0, r.jsx)("div", {
     className: u.text,
-    children: (0, o.u5)(p)
+    children: (0, s.u5)(p)
   })
 }

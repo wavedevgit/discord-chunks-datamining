@@ -49,8 +49,8 @@ let N = Chunk647438.memo(function(e) {
   var t, n, i, l;
   let {
     message: N,
-    className: P,
-    onContextMenu: j,
+    className: j,
+    onContextMenu: P,
     onClick: x,
     hideSimpleEmbedContent: A = true,
     channel: Z,
@@ -72,22 +72,22 @@ let N = Chunk647438.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e, ["message", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory"]), k = N.type === v.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, U = N.isFirstMessageInForumPost(Z), G = (0, u.A)((null != (n = N.editedTimestamp) ? n : N.timestamp).valueOf()), {
+  }(e, ["message", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory"]), k = N.type === I.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, U = N.isFirstMessageInForumPost(Z), G = (0, u.A)((null != (n = N.editedTimestamp) ? n : N.timestamp).valueOf()), {
     content: B,
     hasSpoilerEmbeds: H
-  } = (0, h.Z)(N, {
+  } = (0, g.Z)(N, {
     hideSimpleEmbedContent: A,
     allowList: U || G,
     allowHeading: U || G,
     allowLinks: true,
     previewLinkTarget: true
-  }), V = (0, s.JA)(N.id), F = (0, p.ZP)(N), z = (0, o.e7)([I.Z], () => N.hasFlag(v.iLy.HAS_THREAD) && I.Z.getChannel(y.default.castMessageIdAsChannelId(N.id))), Y = (0, c.p9)({
+  }), V = (0, o.JA)(N.id), F = (0, p.ZP)(N), z = (0, s.e7)([y.Z], () => N.hasFlag(I.iLy.HAS_THREAD) && y.Z.getChannel(v.default.castMessageIdAsChannelId(N.id))), Y = (0, c.p9)({
     guildId: Z.guild_id,
     roleId: F.iconRoleId
-  }), W = (0, m.iG)(N), q = (0, m.Gx)(N);
+  }), W = (0, h.iG)(N), q = (0, h.Gx)(N);
   return (0, r.jsx)(f.Z, T({
     compact: false,
-    className: a()(P, C.icymiMessageWrapper, {
+    className: a()(j, C.icymiMessageWrapper, {
       [S.ephemeral]: (0, d.Pv)(N),
       [S.disableInteraction]: k
     }),
@@ -105,7 +105,7 @@ let N = Chunk647438.memo(function(e) {
       hideTimestamp: true,
       hideGuildTag: false
     }),
-    childrenAccessories: e.hideAccessories ? true : (0, g.Q)(e, H),
+    childrenAccessories: e.hideAccessories ? true : (0, m.Q)(e, H),
     childrenMessageContent: (0, _.Z)(e, B),
     childrenSystemMessage: (0, E.Z)((i = T({}, e), l = l = {
       disableInteraction: k
@@ -119,9 +119,9 @@ let N = Chunk647438.memo(function(e) {
     })(Object(l)).forEach(function(e) {
       Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
     }), i)),
-    onContextMenu: j,
+    onContextMenu: P,
     onClick: x,
-    hasThread: D && null != z && N.hasFlag(v.iLy.HAS_THREAD),
+    hasThread: D && null != z && N.hasFlag(I.iLy.HAS_THREAD),
     hasReply: false,
     "aria-labelledby": W,
     "aria-describedby": q,

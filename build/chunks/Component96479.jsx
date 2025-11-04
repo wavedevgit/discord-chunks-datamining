@@ -20,27 +20,27 @@ function p(e) {
     className: n,
     channel: p,
     user: f,
-    hasSingleMessageRequest: m
+    hasSingleMessageRequest: h
   } = e, {
-    channelId: h
-  } = (0, o._)();
+    channelId: g
+  } = (0, s._)();
   return (0, r.jsx)(c.Z, {
     index: t,
     className: n,
-    isFocused: h === p.id,
+    isFocused: g === p.id,
     channel: p,
     user: f,
     onClick: e => {
       e.stopPropagation(), i.Z.openPrivateChannelAsSidebar({
         channelId: p.id,
         baseChannelId: l.uZ,
-        hasSingleMessageRequest: m
+        hasSingleMessageRequest: h
       }), a.default.track(d.rMx.MESSAGE_REQUEST_PREVIEW_VIEWED, {
         is_spam: false,
         channel_id: p.id,
         other_user_id: f.id
       }), setTimeout(() => {
-        s.S.dispatch(d.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+        o.S.dispatch(d.CkL.FOCUS_CHANNEL_TEXT_AREA, {
           channelId: p.id
         })
       }, 0)

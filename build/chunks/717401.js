@@ -2,21 +2,22 @@
 /** chunk id: 717401, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Tl: () => _,
-  YV: () => c,
-  Yr: () => p,
-  a5: () => f,
-  cF: () => d,
-  iE: () => o,
-  id: () => u,
-  tK: () => l,
-  yX: () => s
+  Tl: () => p,
+  YV: () => u,
+  Yr: () => h,
+  a5: () => _,
+  cF: () => f,
+  iE: () => s,
+  id: () => d,
+  tK: () => c,
+  yX: () => l
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk647438 = require("./647438.js"),
   Chunk223143 = require("./223143.js"),
-  Chunk347896 = require("./347896.js");
+  Chunk347896 = require("./347896.js"),
+  Chunk474936 = require("./474936.js");
 
-function o() {
+function s() {
   let [e, t] = Chunk647438.useState(), n = (0, Chunk347896.Z)(), o = null == require ? true : require.rewards, s = null == require ? true : require.variants;
   null != s && (o = s.flatMap(e => e.variants));
   let {
@@ -25,46 +26,44 @@ function o() {
     fetchPurchasesError: u
   } = (0, Chunk223143.c7)(), d = Chunk647438.useRef(false);
   return Chunk647438.useEffect(() => {
-    c && !d.current && null != o && (exports(null == u ? o.filter(e => null == l.get(e.skuId)) : []), d.current = true)
-  }, [o, l, c, u]), null != module ? module : true
+    c && !d.current && null != Chunk474936 && (exports(null == u ? Chunk474936.filter(e => null == l.get(e.skuId)) : []), d.current = true)
+  }, [Chunk474936, l, c, u]), null != module ? module : true
 }
 
-function s() {
+function l() {
   var e;
   let t = (0, Chunk347896.Z)();
   return null != (e = null == exports ? true : exports.variants) ? module : true
 }
 
-function l(e) {
+function c(e) {
   let {
     purchases: t
   } = (0, i.c7)();
   return null != e ? t.get(e) : null
 }
 
-function c(e) {
+function u(e) {
   let t = new Map;
   return e.forEach(e => t.set(e.skuId, e.assetId)), t
 }
 
-function u(e, t, n) {
-  let r = f(e),
+function d(e, t, n) {
+  let r = _(e),
     i = null != n && n.length >= 1;
   return t && r && i
 }
 
-function d(e, t, n) {
-  let r = f(e);
+function f(e, t, n) {
+  let r = _(e);
   return null != n && 1 === n.length && r && t
 }
 
-function f(e) {
-  var t;
-  let n = null == (t = (0, a.Z)()) ? true : t.eligiblePlanIds;
-  return null == n ? true : n.includes(null == e ? true : e.id)
+function _(e) {
+  return [o.Xh.PREMIUM_YEAR_TIER_2, o.Xh.PREMIUM_MONTH_TIER_2].includes(null == e ? true : e.id)
 }
 
-function _(e) {
+function p(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 78.98;
   if (null == e) return;
   let n = Array.isArray(e) ? e : e.gradient,
@@ -74,7 +73,7 @@ function _(e) {
   }
 }
 
-function p(e) {
+function h(e) {
   if (null != e) return {
     backgroundImage: "url(".concat(e, ")"),
     backgroundSize: "cover",

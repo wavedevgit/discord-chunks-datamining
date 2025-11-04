@@ -3,17 +3,17 @@
 require("./388685.js");
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let s = new Set;
+let o = new Set;
 
-function o(e) {
+function s(e) {
   let {
     userActivities: t
   } = e;
-  null != t && (s = new Set(t.map(e => e.application_id)))
+  null != t && (o = new Set(t.map(e => e.application_id)))
 }
 class c extends(r = Chunk442837.ZP.Store) {
   get currentUserApplicationIds() {
-    return s
+    return o
   }
 }(i = "displayName") in c ? Object.defineProperty(c, i, {
   value: "RecentUserActivityStore",
@@ -21,6 +21,6 @@ class c extends(r = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : c[i] = "RecentUserActivityStore", new c(Chunk570140.Z, {
-  CONNECTION_OPEN_SUPPLEMENTAL: o,
-  CONNECTION_OPEN_STATE_UPDATE: o
+  CONNECTION_OPEN_SUPPLEMENTAL: s,
+  CONNECTION_OPEN_STATE_UPDATE: s
 })

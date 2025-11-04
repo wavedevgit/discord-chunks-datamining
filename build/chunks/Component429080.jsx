@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
 let _ = function(e) {
   let {
     quest: t
-  } = e, [n, l] = i.useState(false), _ = i.useRef(null), b = (0, s.e7)([u.default], () => u.default.getCurrentUser()), E = d.ZP.useName(b), O = (0, c.Z)(null == b ? true : b.id), I = i.useCallback(e => {
+  } = e, [n, l] = i.useState(false), _ = i.useRef(null), b = (0, o.e7)([u.default], () => u.default.getCurrentUser()), E = d.ZP.useName(b), O = (0, c.Z)(null == b ? true : b.id), y = i.useCallback(e => {
     var n, i;
     return (0, r.jsx)(p.Z, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -60,55 +60,55 @@ let _ = function(e) {
     }), n))
   }, [t, O, E]);
   return (0, r.jsx)("div", {
-    className: h.previewBackground,
+    className: g.previewBackground,
     children: (0, r.jsxs)("div", {
-      className: h.previewCard,
-      children: [(0, r.jsx)(o.Heading, {
-        className: g.heading,
+      className: g.previewCard,
+      children: [(0, r.jsx)(s.Heading, {
+        className: m.heading,
         variant: "heading-md/semibold",
-        children: m.intl.string(m.t.jY7Zxg)
+        children: h.intl.string(h.t.jY7Zxg)
       }), (0, r.jsx)("div", {
-        className: g.previewDescription,
-        children: m.intl.string(m.t.q3hbne)
+        className: m.previewDescription,
+        children: h.intl.string(h.t.q3hbne)
       }), (0, r.jsx)("div", {
-        className: g.memberListContainer,
-        children: (0, r.jsx)(o.yRy, {
+        className: m.memberListContainer,
+        children: (0, r.jsx)(s.yRy, {
           targetElementRef: _,
-          renderPopout: I,
+          renderPopout: y,
           position: "bottom",
           shouldShow: n,
           onRequestClose: () => l(false),
           nudgeAlignIntoViewport: false,
           useRawTargetDimensions: true,
-          animation: o.yRy.Animation.NONE,
+          animation: s.yRy.Animation.NONE,
           spacing: false,
           fixed: true,
           scrollBehavior: "close",
           children: () => (0, r.jsx)("div", {
             ref: _,
-            className: a()(g.minimalMemberItem, {
-              [g.selected]: n
+            className: a()(m.minimalMemberItem, {
+              [m.selected]: n
             }),
-            children: (0, r.jsx)(o.P3F, {
+            children: (0, r.jsx)(s.P3F, {
               onClick: () => l(!n),
               tabIndex: 0,
               children: (0, r.jsxs)("div", {
-                className: g.memberItemContent,
-                children: [(0, r.jsx)(o.qEK, {
-                  size: o.EFr.SIZE_32,
+                className: m.memberItemContent,
+                children: [(0, r.jsx)(s.qEK, {
+                  size: s.EFr.SIZE_32,
                   src: null == b ? true : b.getAvatarURL(true, 32),
                   status: f.Skl.ONLINE,
                   "aria-label": null == b ? true : b.username
                 }), (0, r.jsxs)("div", {
-                  className: g.memberInfo,
-                  children: [(0, r.jsx)(o.Text, {
+                  className: m.memberInfo,
+                  children: [(0, r.jsx)(s.Text, {
                     variant: "text-md/semibold",
                     color: "header-primary",
                     children: E
-                  }), (0, r.jsx)(o.Text, {
+                  }), (0, r.jsx)(s.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
-                    children: m.intl.string(m.t.b9w3bO)
+                    children: h.intl.string(h.t.b9w3bO)
                   })]
                 })]
               })

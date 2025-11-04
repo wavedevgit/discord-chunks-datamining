@@ -43,7 +43,7 @@ function u(e, t) {
 }
 
 function d(e) {
-  return (0, s.Z)(class extends i.Component {
+  return (0, o.Z)(class extends i.Component {
     render() {
       return (0, r.jsx)(e, u(c({}, this.props), {
         onMessageUser: this.handleMessageUser,
@@ -80,7 +80,7 @@ function d(e) {
       })
     }
     handleChannelContextMenu(e, t) {
-      let i = o.Z.getGuild(t.getGuildId());
+      let i = s.Z.getGuild(t.getGuildId());
       if (null == i) return null;
       (0, a.jW)(e, async () => {
         let {

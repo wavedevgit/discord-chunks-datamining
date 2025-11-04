@@ -34,9 +34,9 @@ function N() {
     n = (0, Chunk355350.w)(),
     l = (0, Chunk26373.V)(),
     N = (0, Chunk183126.N)(),
-    P = (0, Chunk209613.Z)("message-requests-spam-list"),
+    j = (0, Chunk209613.Z)("message-requests-spam-list"),
     {
-      channelId: j
+      channelId: P
     } = (0, Chunk488634._)(),
     x = Chunk647438.useCallback(() => {
       (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t["EDYbS+"]), Chunk481060.ToastType.FAILURE))
@@ -59,19 +59,19 @@ function N() {
   let w = Chunk647438.useCallback(e => {
       var n, i;
       let {
-        row: s
-      } = e, o = t[s], c = null == (i = t[s + 1]) || null == (n = i.channel) ? true : n.id, u = o.channel.id;
-      return (0, r.jsx)(y.Z, {
-        index: s,
+        row: o
+      } = e, s = t[o], c = null == (i = t[o + 1]) || null == (n = i.channel) ? true : n.id, u = s.channel.id;
+      return (0, r.jsx)(v.Z, {
+        index: o,
         className: a()({
-          [T.selected]: null != j && j === u,
-          [T.siblingSelected]: null != j && j === c
+          [T.selected]: null != P && P === u,
+          [T.siblingSelected]: null != P && P === c
         }),
-        channel: o.channel,
-        user: o.user,
+        channel: s.channel,
+        user: s.user,
         hasSingleMessageRequest: l
       }, u)
-    }, [exports, Chunk120356, j]),
+    }, [exports, Chunk120356, P]),
     L = Chunk647438.useCallback(() => (0, Chunk951288.jsxs)(Chunk82295.Z, {
       className: Chunk393272.sectionTitle,
       children: [Chunk388032.intl.format(Chunk388032.t.C79Edh, {
@@ -94,7 +94,7 @@ function N() {
   return 0 === exports.length ? (0, Chunk951288.jsx)(Chunk307947.Z, {
     section: Chunk687683.pS.SPAM
   }) : (0, Chunk951288.jsx)(Chunk91192.bG, {
-    navigator: P,
+    navigator: j,
     children: (0, Chunk951288.jsx)(Chunk91192.SJ, {
       children: n => {
         var {
@@ -142,8 +142,8 @@ function N() {
           },
           paddingTop: 24,
           paddingBottom: 24,
-          sectionHeight: v.oi,
-          rowHeight: v.WN,
+          sectionHeight: I.oi,
+          rowHeight: I.WN,
           renderSection: L,
           renderRow: w,
           sections: [t.length],

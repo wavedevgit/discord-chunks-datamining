@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 144145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,12 +58,12 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = Chunk726542.Z.get(Chunk981631.ABu.XBOX).name;
+let j = Chunk726542.Z.get(Chunk981631.ABu.XBOX).name;
 
-function j(e) {
+function P(e) {
   let {
     currentActivities: t
-  } = e, n = t.length > 1, j = function(e) {
+  } = e, n = t.length > 1, P = function(e) {
     let {
       currentActivities: t
     } = e, n = (0, l.e7)([_.Z], () => _.Z.getAccounts().some(e => e.type === c.Z.get(C.ABu.XBOX).type)), i = t.some(e => {
@@ -74,18 +74,18 @@ function j(e) {
     });
     return n || !i ? null : (0, r.jsx)(a.sNh, {
       id: "xbox-connect",
-      action: () => (0, g.openUserSettings)(h.n.CONNECTIONS_PANEL, {
+      action: () => (0, m.openUserSettings)(g.n.CONNECTIONS_PANEL, {
         section: C.oAB.CONNECTIONS
       }),
       label: S.intl.formatToPlainString(S.t.XWSHTb, {
-        platform: P
+        platform: j
       })
     })
   }(e), x = function(e) {
     let {
       currentActivities: t
-    } = e, n = i.useContext(I.AnalyticsContext);
-    return (0, l.Wu)([f.ZP, E.Z, m.Z, O.Z, b.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
+    } = e, n = i.useContext(y.AnalyticsContext);
+    return (0, l.Wu)([f.ZP, E.Z, h.Z, O.Z, b.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
       let {
         activity: t,
         game: r
@@ -93,15 +93,15 @@ function j(e) {
       return N(T({}, e), {
         libraryApplication: i,
         canJoin: null != t && (0, u.Z)(t, C.xjy.JOIN) && t.type === C.IIU.PLAYING,
-        canPlay: (0, y.t)({
+        canPlay: (0, v.t)({
           LibraryApplicationStore: E.Z,
-          LaunchableGameStore: m.Z,
+          LaunchableGameStore: h.Z,
           DispatchApplicationStore: O.Z,
           ConnectedAppsStore: b.Z,
           applicationId: r.id,
           branchId: null != i ? i.branchId : null
         }),
-        isLaunching: m.Z.launchingGames.has(r.id),
+        isLaunching: h.Z.launchingGames.has(r.id),
         isRunning: f.ZP.getRunningVerifiedApplicationIds().includes(r.id),
         location: n.location
       })
@@ -120,13 +120,13 @@ function j(e) {
       if (!n || null == i) return null;
       async function c() {
         if (null == i) return;
-        let e = await s.Z.sendActivityInviteUser({
+        let e = await o.Z.sendActivityInviteUser({
           type: C.mFx.JOIN_REQUEST,
           userId: l.id,
           activity: i,
           location: C.Sbl.USER_ACTIVITY_ACTIONS
         });
-        null != e && o.default.selectPrivateChannel(e.id)
+        null != e && s.default.selectPrivateChannel(e.id)
       }
       return (0, r.jsx)(a.sNh, {
         id: "join-".concat(i.session_id),
@@ -140,12 +140,12 @@ function j(e) {
         activity: n,
         game: i,
         libraryApplication: l,
-        location: s,
-        canPlay: o,
+        location: o,
+        canPlay: s,
         isRunning: c,
         isLaunching: u
       } = e;
-      if (!o || null == n) return null;
+      if (!s || null == n) return null;
       let d = c ? S.intl.formatToPlainString(S.t["gBme/4"], {
         name: i.name
       }) : u ? S.intl.formatToPlainString(S.t.WtSQwG, {
@@ -154,9 +154,9 @@ function j(e) {
       return (0, r.jsx)(a.sNh, {
         id: "play-".concat(n.session_id),
         action: function() {
-          (0, v.playApplication)(i.id, l, {
+          (0, I.playApplication)(i.id, l, {
             analyticsParams: {
-              location: N(T({}, s), {
+              location: N(T({}, o), {
                 object: C.qAy.LIST_ITEM
               })
             }
@@ -169,5 +169,5 @@ function j(e) {
       })
     }(e, n))
   }
-  return [j, ...A]
+  return [P, ...A]
 }

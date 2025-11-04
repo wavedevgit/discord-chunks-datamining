@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 499137, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  s: () => s
+  s: () => o
 });
 var Chunk647438 = require("./647438.js"),
   Chunk818083 = require("./818083.js"),
@@ -21,7 +21,7 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  s = e => {
+  o = e => {
     var t;
     return r.useEffect(() => {
       null != e && e.features.has(l.GuildFeatures.HUB) && a.trackExposure({

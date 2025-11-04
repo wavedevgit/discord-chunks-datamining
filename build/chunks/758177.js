@@ -13,7 +13,7 @@ var Chunk594174 = require("./594174.js"),
 let u = {
   [Chunk981631.Etm.GET_IMAGE]: {
     scope: Chunk186901.lH,
-    validation: e => (0, s.Z)(e).required().keys({
+    validation: e => (0, o.Z)(e).required().keys({
       type: e.string().required().valid(["user"]),
       id: e.string().required(),
       format: e.string().required().valid(["png", "webp", "jpg"]),
@@ -23,20 +23,20 @@ let u = {
       let t, {
         args: {
           type: n,
-          id: s,
-          format: o = "png",
+          id: o,
+          format: s = "png",
           size: u = 128
         }
       } = e;
       if ("user" === n) {
-        let e = r.default.getUser(s);
+        let e = r.default.getUser(o);
         if (null != e) {
-          t = i.ZP.getUserAvatarURL(e, false, u, o);
+          t = i.ZP.getUserAvatarURL(e, false, u, s);
           let n = window.GLOBAL_ENV.CDN_HOST;
           null != n && false !== t.indexOf(n) && (t += "&_=")
         } else throw new a.Z({
           errorCode: c.lTL.INVALID_USER
-        }, "Invalid user id: ".concat(s))
+        }, "Invalid user id: ".concat(o))
       }
       if (null == t) throw new a.Z({
         errorCode: c.lTL.INVALID_COMMAND

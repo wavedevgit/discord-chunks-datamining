@@ -51,7 +51,7 @@ class E extends Chunk647438.PureComponent {
   }
   constructor(...e) {
     super(...e), b(this, "handleUserContextMenu", (e, t) => {
-      (0, o.jW)(e, async () => {
+      (0, s.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
@@ -85,7 +85,7 @@ class E extends Chunk647438.PureComponent {
       let {
         party: e
       } = this.props;
-      return (0, r.jsx)(g.Z, {
+      return (0, r.jsx)(m.Z, {
         party: e,
         header: _.intl.formatToPlainString(_.t.I9et1z, {
           count: e.length
@@ -100,8 +100,8 @@ let O = Chunk442837.ZP.connectStores([Chunk768419.Z, Chunk594174.default, Chunk6
     i = Chunk594174.default.getCurrentUser(),
     l = [];
   if (null != require ? (e = Chunk594174.default.getUser(require.userId), t = require.partyId) : null != Chunk951288 && null != Chunk951288.party && null != Chunk951288.party.id && (e = Chunk647438, t = Chunk951288.party.id), null != exports) {
-    var s;
-    l = a()(Array.from(null != (s = Chunk831506.Z.getParty(exports)) ? Chunk442837 : [])).map(e => f.default.getUser(e)).filter(Chunk823379.lm).orderBy([t => null == e || e.id === t.id, e => p.Z.isFriend(e.id)], ["desc", "desc"]).value()
+    var o;
+    l = a()(Array.from(null != (o = Chunk831506.Z.getParty(exports)) ? Chunk442837 : [])).map(e => f.default.getUser(e)).filter(Chunk823379.lm).orderBy([t => null == e || e.id === t.id, e => p.Z.isFriend(e.id)], ["desc", "desc"]).value()
   }
   return {
     currentUser: Chunk647438,

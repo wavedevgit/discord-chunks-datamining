@@ -23,24 +23,24 @@ var Chunk442837 = require("./442837.js"),
   Chunk81471 = require("./81471.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk79072 = require("./79072.js");
-let y = e => {
+let v = e => {
     let {
       userId: t
     } = e, n = (0, b.O)(t);
     return null == n || 0 === n.length ? (0, r.jsx)(a.Text, {
-      className: I.mutualGuilds,
+      className: y.mutualGuilds,
       variant: "text-sm/normal",
       color: "text-muted",
       children: O.intl.string(O.t.jpY0X5)
     }) : (0, r.jsxs)("div", {
-      className: I.mutualGuildsContainer,
+      className: y.mutualGuildsContainer,
       children: [(0, r.jsx)(l.Z, {
         guilds: n,
         maxGuilds: 3,
         size: u.Vj.Sizes.SMOL,
         hideOverflowCount: true
       }), (0, r.jsx)(a.Text, {
-        className: I.mutualGuilds,
+        className: y.mutualGuilds,
         variant: "text-sm/normal",
         color: "text-muted",
         children: O.intl.format(O.t.eE3oep, {
@@ -49,7 +49,7 @@ let y = e => {
       })]
     })
   },
-  v = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
+  I = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
 function C(e) {
   var t;
@@ -57,7 +57,7 @@ function C(e) {
     channel: n,
     otherUser: l,
     active: u
-  } = e, g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), b = (0, i.e7)([m.Z], () => null == l ? null : m.Z.getNickname(l.id)), C = !g && u, S = (0, _.c)(n), {
+  } = e, m = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), b = (0, i.e7)([h.Z], () => null == l ? null : h.Z.getNickname(l.id)), C = !m && u, S = (0, _.c)(n), {
     avatarDecorationSrc: T
   } = (0, p.Z)({
     user: l,
@@ -65,25 +65,25 @@ function C(e) {
     onlyAnimateOnHoverOrFocus: true
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(v, {
-      className: I.avatar,
+    children: [(0, r.jsx)(I, {
+      className: y.avatar,
       src: (0, f.x)(n, 40, C),
       avatarDecoration: T,
       size: a.EFr.SIZE_40,
       "aria-label": null != (t = null == l ? true : l.username) ? t : O.intl.string(O.t["30mdIx"])
     }), (0, r.jsxs)("div", {
-      className: I.userPreview,
+      className: y.userPreview,
       children: [(0, r.jsxs)("div", {
-        className: I.userContainerWithPreview,
-        children: [(0, r.jsx)(s.Z, {
+        className: y.userContainerWithPreview,
+        children: [(0, r.jsx)(o.Z, {
           nick: b,
           user: l,
           showAccountIdentifier: true,
-          className: I.tagContainer,
-          usernameClass: I.username,
-          discriminatorClass: null != h.ZP.getGlobalName(l) ? I.globalName : I.discriminator
+          className: y.tagContainer,
+          usernameClass: y.username,
+          discriminatorClass: null != g.ZP.getGlobalName(l) ? y.globalName : y.discriminator
         }), (0, r.jsx)(a.Text, {
-          className: I.timestampWithPreview,
+          className: y.timestampWithPreview,
           color: "text-muted",
           variant: "text-xs/normal",
           children: S
@@ -93,7 +93,7 @@ function C(e) {
           channel: n
         }),
         forceHover: u,
-        children: (0, r.jsx)(y, {
+        children: (0, r.jsx)(v, {
           userId: l.id
         })
       })]

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 178071, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m,
+  Z: () => h,
   y: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -35,7 +35,7 @@ class f extends Chunk647438.PureComponent {
         storeListings: i,
         primaryStoreListing: l,
         skuId: a,
-        onStoreListingSelect: s,
+        onStoreListingSelect: o,
         currentStoreListingId: c
       } = require,
       p = function(e, t) {
@@ -93,22 +93,22 @@ class f extends Chunk647438.PureComponent {
         id: "".concat(e.id),
         label: e.id,
         action: () => {
-          s.Zy(), null == t || t(e)
+          o.Zy(), null == t || t(e)
         }
       }) : null);
       return (0, r.jsx)(a.v2r, {
         onSelect: i,
         navId: "test-store-listing",
         "aria-label": u.intl.string(u.t.ogxXGq),
-        onClose: s.Zy,
+        onClose: o.Zy,
         children: l
       })
     }), d(this, "handleContextMenu", e => {
-      e.stopPropagation(), s.vq(e, this.renderContextMenu)
+      e.stopPropagation(), o.vq(e, this.renderContextMenu)
     })
   }
 }
-let m = Chunk442837.ZP.connectStores([Chunk551428.Z], e => {
+let h = Chunk442837.ZP.connectStores([Chunk551428.Z], e => {
   let {
     skuId: t
   } = e;

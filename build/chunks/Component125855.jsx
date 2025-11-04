@@ -21,7 +21,7 @@ function d(e) {
     user: p,
     hasSingleMessageRequest: f
   } = e;
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(s.Z, {
     index: t,
     className: n,
     isFocused: false,
@@ -37,7 +37,7 @@ function d(e) {
         channel_id: d.id,
         other_user_id: p.id
       }), setTimeout(() => {
-        s.S.dispatch(u.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+        o.S.dispatch(u.CkL.FOCUS_CHANNEL_TEXT_AREA, {
           channelId: d.id
         })
       }, 0)

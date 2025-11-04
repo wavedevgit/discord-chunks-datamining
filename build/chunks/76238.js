@@ -1,14 +1,14 @@
 /** Chunk was on 1272 **/
 /** chunk id: 76238, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk996106 = require("./996106.js"),
   Chunk981631 = require("./981631.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+class s {
   checkRpcVersion(e) {
     if (null == e || e > a.X6Q || e < 1) throw new l.Z({
       closeCode: a.$VG.INVALID_VERSION
     }, "Invalid Version: ".concat(e))
   }
   constructor(e, t, n) {
-    s(this, "transport", true), s(this, "version", true), s(this, "encoding", true), s(this, "id", true), s(this, "authorization", true), s(this, "application", true), s(this, "abortController", true), this.transport = e, this.version = t, this.encoding = n, this.id = i().uniqueId(), this.authorization = {
+    o(this, "transport", true), o(this, "version", true), o(this, "encoding", true), o(this, "id", true), o(this, "authorization", true), o(this, "application", true), o(this, "abortController", true), this.transport = e, this.version = t, this.encoding = n, this.id = i().uniqueId(), this.authorization = {
       authing: false,
       scopes: [],
       accessToken: null,

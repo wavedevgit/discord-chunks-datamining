@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 4962, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./415506.js");
 var r, Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk113520 = require("./113520.js"),
   f = ((r = f || {})[r.STAFF_NOTES = 1] = "STAFF_NOTES", r);
-let m = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
+let h = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
     animate: Chunk451478.Z.isFocused()
   }))(e => {
     let {
@@ -25,7 +25,7 @@ let m = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
     return (0, i.jsxs)("div", {
       className: a()(p.staffReviewHeader, n),
       children: [(0, i.jsx)(c.Z, {
-        size: o.EFr.SIZE_32,
+        size: s.EFr.SIZE_32,
         user: t,
         animate: r
       }), (0, i.jsxs)("div", {
@@ -40,7 +40,7 @@ let m = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
       })]
     })
   }),
-  h = e => {
+  g = e => {
     let {
       data: t,
       className: n
@@ -53,7 +53,7 @@ let m = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
       } = t.staffNotes;
       return null == e ? null : (0, i.jsxs)("div", {
         className: n,
-        children: [(0, i.jsx)(m, {
+        children: [(0, i.jsx)(h, {
           user: e,
           className: p.header
         }), (0, i.jsx)("div", {
@@ -64,5 +64,5 @@ let m = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
     }
     throw Error("Unknown type")
   };
-h.Types = f;
-let g = h
+g.Types = f;
+let m = g

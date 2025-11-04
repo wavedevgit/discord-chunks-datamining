@@ -15,7 +15,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk533583 = require("./533583.js"),
   Chunk65154 = require("./65154.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,27 +23,27 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = {
+let g = {
     ignoredDevices: {}
   },
-  g = h,
+  m = g,
   _ = false,
   b = {},
   E = {},
   O = {},
-  I = {
-    id: null,
-    justChanged: false
-  },
   y = {
     id: null,
     justChanged: false
   },
-  v = /\(([^)]+)\)/;
+  v = {
+    id: null,
+    justChanged: false
+  },
+  I = /\(([^)]+)\)/;
 
 function C(e) {
   if ((0, d.getPlatform)() === d.PlatformTypes.WINDOWS) {
-    let t = e.name.match(v);
+    let t = e.name.match(I);
     if (null != t) return t[1]
   }
   return e.name
@@ -60,10 +60,10 @@ function S(e, t, n) {
 }
 class T extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
-    this.waitFor(u.Z, c.Z), g = null != e ? e : h
+    this.waitFor(u.Z, c.Z), m = null != e ? e : g
   }
   getUserAgnosticState() {
-    return g
+    return m
   }
   get initialized() {
     return _
@@ -75,16 +75,16 @@ class T extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return b
   }
   get lastInputSystemDevice() {
-    return I
+    return y
   }
   get outputDevices() {
     return E
   }
   get lastOutputSystemDevice() {
-    return y
+    return v
   }
 }
-m(T, "displayName", "ConnectedDeviceStore"), m(T, "persistKey", "ConnectedDeviceStore"), m(T, "migrations", [e => {
+h(T, "displayName", "ConnectedDeviceStore"), h(T, "persistKey", "ConnectedDeviceStore"), h(T, "migrations", [e => {
   if (null == e.ignoredDevices) {
     var t, n;
     return t = function(e) {
@@ -94,7 +94,7 @@ m(T, "displayName", "ConnectedDeviceStore"), m(T, "persistKey", "ConnectedDevice
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          m(e, t, n[t])
+          h(e, t, n[t])
         })
       }
       return e
@@ -119,35 +119,35 @@ let N = new T(Chunk570140.Z, {
       inputDevices: t,
       outputDevices: n
     } = e, r = {};
-    I.justChanged = false, t.forEach(e => {
+    y.justChanged = false, t.forEach(e => {
       if (r[C(e)] = e.id, e.id === f.w5) {
         var t;
         let n = null != (t = e.originalId) ? t : e.originalName;
-        n !== I.id && (I.justChanged = true), I.id = n
+        n !== y.id && (y.justChanged = true), y.id = n
       }
     });
     let i = {};
-    if (y.justChanged = false, n.forEach(e => {
+    if (v.justChanged = false, n.forEach(e => {
         if (i[C(e)] = e.id, e.id === f.w5) {
           var t;
           let n = null != (t = e.originalId) ? t : e.originalName;
-          n !== y.id && (y.justChanged = true), y.id = n
+          n !== v.id && (v.justChanged = true), v.id = n
         }
       }), !_) {
       b = r, E = i, _ = true;
       return
     }
     let a = Object.keys(b),
-      s = Object.keys(r),
-      o = Object.keys(E),
+      o = Object.keys(r),
+      s = Object.keys(E),
       c = Object.keys(i),
-      u = l().difference(a, s),
-      d = l().difference(o, c);
-    return u.length > 0 || d.length > 0 ? O = {} : (l().difference(s, a).forEach(e => {
+      u = l().difference(a, o),
+      d = l().difference(s, c);
+    return u.length > 0 || d.length > 0 ? O = {} : (l().difference(o, a).forEach(e => {
       O[e] = S(O[e], e, p.Q.INPUT)
-    }), l().difference(c, o).forEach(e => {
+    }), l().difference(c, s).forEach(e => {
       O[e] = S(O[e], e, p.Q.OUTPUT)
-    })), !(l().isEqual(a, s) && l().isEqual(o, c)) && (b = r, E = i, true)
+    })), !(l().isEqual(a, o) && l().isEqual(s, c)) && (b = r, E = i, true)
   },
   CONNECTED_DEVICE_SWITCH: function(e) {
     let {
@@ -157,13 +157,13 @@ let N = new T(Chunk570140.Z, {
     } = e;
     if (n === p.a.INPUT || n === p.a.INPUT_AND_OUTPUT) {
       let e = b[t];
-      null != e && s.Z.wait(() => o.Z.setInputDevice(e, {
+      null != e && o.Z.wait(() => s.Z.setInputDevice(e, {
         location: r
       }))
     }
     if (n === p.a.OUTPUT || n === p.a.INPUT_AND_OUTPUT) {
       let e = E[t];
-      s.Z.wait(() => o.Z.setOutputDevice(e, {
+      o.Z.wait(() => s.Z.setOutputDevice(e, {
         location: r
       }))
     }
@@ -179,9 +179,9 @@ let N = new T(Chunk570140.Z, {
     let {
       displayName: t
     } = e;
-    g.ignoredDevices[t] = true, delete O[t]
+    m.ignoredDevices[t] = true, delete O[t]
   },
   CONNECTED_DEVICE_NEVER_SHOW_MODAL: function() {
-    O = {}, g.neverShowModal = true
+    O = {}, m.neverShowModal = true
   }
 })

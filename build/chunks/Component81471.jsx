@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 81471, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,79 +23,79 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk161414 = require("./161414.js"),
   Chunk430864 = require("./430864.js");
-let v = Chunk647438.memo(function(e) {
+let I = Chunk647438.memo(function(e) {
   let {
     channel: t
   } = e, {
     loaded: n,
     error: l,
-    message: v
+    message: I
   } = (0, _.a)(t), C = (0, c.p)(), {
     isBlocked: S,
     isIgnored: T
-  } = (0, s.cj)([g.Z], () => ({
-    isBlocked: null != v && g.Z.isBlockedForMessage(v),
-    isIgnored: null != v && g.Z.isIgnoredForMessage(v)
-  }), [v]), N = (0, s.e7)([h.Z], () => h.Z.can(b.Plq.MANAGE_MESSAGES, t)), P = m.cC.useSetting(), {
-    content: j
-  } = i.useMemo(() => (null == v ? true : v.content) != null && "" !== v.content ? (0, d.ZP)(v, {
+  } = (0, o.cj)([m.Z], () => ({
+    isBlocked: null != I && m.Z.isBlockedForMessage(I),
+    isIgnored: null != I && m.Z.isIgnoredForMessage(I)
+  }), [I]), N = (0, o.e7)([g.Z], () => g.Z.can(b.Plq.MANAGE_MESSAGES, t)), j = h.cC.useSetting(), {
+    content: P
+  } = i.useMemo(() => (null == I ? true : I.content) != null && "" !== I.content ? (0, d.ZP)(I, {
     formatInline: true,
     noStyleAndInteraction: true,
     shouldFilterKeywords: C
   }) : {
     content: null
-  }, [v, C]), x = null;
-  if (l) x = (0, r.jsx)(o.Text, {
-    className: I.messageReplacement,
+  }, [I, C]), x = null;
+  if (l) x = (0, r.jsx)(s.Text, {
+    className: y.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
     children: O.intl.string(O.t.BZHld2)
   });
   else if (n)
-    if (null != v && S) x = (0, r.jsx)(o.Text, {
-      className: I.messageReplacement,
+    if (null != I && S) x = (0, r.jsx)(s.Text, {
+      className: y.messageReplacement,
       variant: "text-sm/normal",
       color: "text-muted",
       children: O.intl.string(O.t["WPe+xL"])
     });
-    else if (null != v && T) x = (0, r.jsx)(o.Text, {
-    className: I.messageReplacement,
+    else if (null != I && T) x = (0, r.jsx)(s.Text, {
+    className: y.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
     children: O.intl.string(O.t.uxrh1O)
   });
-  else if (null != v) {
+  else if (null != I) {
     let {
       contentPlaceholder: e,
       renderedContent: t
-    } = (0, p.f)(v, j, S, T, a()(I.messageContent, y.inlineFormat), {
-      leadingIconClass: I.messageContentIcon,
-      trailingIconClass: I.messageContentIcon,
+    } = (0, p.f)(I, P, S, T, a()(y.messageContent, v.inlineFormat), {
+      leadingIconClass: y.messageContentIcon,
+      trailingIconClass: y.messageContentIcon,
       iconSize: E.WW
     });
-    x = null != t ? (0, r.jsx)(o.Text, {
+    x = null != t ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      className: I.messageContent,
+      className: y.messageContent,
       children: t
-    }) : (0, r.jsx)(o.Text, {
+    }) : (0, r.jsx)(s.Text, {
       tag: "span",
       variant: "text-sm/normal",
       color: "text-muted",
-      className: I.messageReplacement,
+      className: y.messageReplacement,
       children: e
     })
-  } else x = (0, r.jsx)(o.Text, {
-    className: I.messageReplacement,
+  } else x = (0, r.jsx)(s.Text, {
+    className: y.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
     children: O.intl.string(O.t["0KfDxM"])
   });
   else x = null;
   return (0, r.jsx)(f.aQ.Provider, {
-    value: (0, u.Z)(P, N),
-    children: (0, r.jsx)(o.Rny, {
-      className: I.messageFocusBlock,
+    value: (0, u.Z)(j, N),
+    children: (0, r.jsx)(s.Rny, {
+      className: y.messageFocusBlock,
       children: x
     })
   })

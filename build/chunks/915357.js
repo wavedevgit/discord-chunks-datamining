@@ -9,7 +9,7 @@ var Chunk996106 = require("./996106.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,11 +38,11 @@ class c extends Chunk76238.Z {
     postClose: u,
     onSendingToRPCClient: d
   }) {
-    if (super(a.He.POST_MESSAGE, i, l), o(this, "origin", true), o(this, "frameId", true), o(this, "postMessageToRPCClient", true), o(this, "logger", true), o(this, "postClose", true), o(this, "onSendingToRPCClient", true), o(this, "closed", true), false === ["etf", "json"].indexOf(l)) throw new r.Z({
-      closeCode: s.$VG.INVALID_ENCODING
+    if (super(a.He.POST_MESSAGE, i, l), s(this, "origin", true), s(this, "frameId", true), s(this, "postMessageToRPCClient", true), s(this, "logger", true), s(this, "postClose", true), s(this, "onSendingToRPCClient", true), s(this, "closed", true), false === ["etf", "json"].indexOf(l)) throw new r.Z({
+      closeCode: o.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(l));
     if ("etf" === l) throw new r.Z({
-      closeCode: s.$VG.INVALID_ENCODING
+      closeCode: o.$VG.INVALID_ENCODING
     }, "Erlpack cannot be used on this client");
     this.origin = e, this.postMessageToRPCClient = t, this.frameId = n, this.logger = c, this.postClose = u, this.onSendingToRPCClient = d, this.closed = false
   }

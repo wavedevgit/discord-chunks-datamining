@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 377368, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,7 +23,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function I(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,7 +31,7 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class y extends Chunk131468.Z {
+class v extends Chunk131468.Z {
   _initialize() {
     super._initialize(), __OVERLAY__ || Chunk570140.Z.subscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest)
   }
@@ -40,21 +40,21 @@ class y extends Chunk131468.Z {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, I(this, "playingSoundsWeb", new Map), I(this, "_stopAndClearSounds", () => {
+    super(...e), t = this, y(this, "playingSoundsWeb", new Map), y(this, "_stopAndClearSounds", () => {
       c.Z.supports(O.AN.SAMPLE_PLAYBACK) && c.Z.getMediaEngine().eachConnection(e => {
         e.stopAllSamplesLocalPlayback()
       }), this.playingSoundsWeb.forEach(e => {
         e.pause(), e.src = ""
       }), this.playingSoundsWeb = new Map
-    }), I(this, "_playSound", async function(e) {
+    }), y(this, "_playSound", async function(e) {
       let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
         r = arguments.length > 2 ? arguments[2] : true,
         i = arguments.length > 3 ? arguments[3] : true,
         l = null != i && u.Z.getVoiceChannelId() === i;
-      if ((null == i || l) && !c.Z.isDeaf() && !m.Z.isLocalSoundboardMuted(r)) try {
+      if ((null == i || l) && !c.Z.isDeaf() && !h.Z.isLocalSoundboardMuted(r)) try {
         let i = {
           soundKey: "".concat(r, "-").concat(e),
-          soundURL: (0, g.Z)(e),
+          soundURL: (0, m.Z)(e),
           soundVolume: (0, _.Z)(n),
           reportSoundStartedPlaying: () => (0, f.xR)(e, r)
         };
@@ -62,13 +62,13 @@ class y extends Chunk131468.Z {
       } finally {
         (0, f.R)(e, r)
       }
-    }), I(this, "_handleOverlaySoundboardSoundsFetchRequest", () => {
+    }), y(this, "_handleOverlaySoundboardSoundsFetchRequest", () => {
       (0, f.w)()
-    }), I(this, "_handleOpenEducationModal", (e, t) => {
+    }), y(this, "_handleOpenEducationModal", (e, t) => {
       if (null == e) return;
-      let l = o.Z.getChannel(t),
+      let l = s.Z.getChannel(t),
         c = d.ZP.getKeybindForAction(E.kg4.SOUNDBOARD_HOLD);
-      null != l && (0, h.Z)(l) && null != c && s.Z.hasHotspot(a.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.ZDy)(async () => {
+      null != l && (0, g.Z)(l) && null != c && o.Z.hasHotspot(a.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.ZDy)(async () => {
         let {
           default: t
         } = await n.e("69208").then(n.bind(n, 490166));
@@ -90,7 +90,7 @@ class y extends Chunk131468.Z {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              I(e, t, n[t])
+              y(e, t, n[t])
             })
           }
           return e
@@ -103,4 +103,4 @@ class y extends Chunk131468.Z {
     })
   }
 }
-let v = new y
+let I = new v

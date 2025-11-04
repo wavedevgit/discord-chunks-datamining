@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 300986, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,13 +16,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let h = new Set(["ko", "ja"]);
+let g = new Set(["ko", "ja"]);
 
-function g(e) {
+function m(e) {
   let {
     className: t,
     focusSectionProps: n
-  } = e, g = (0, i.e7)([o.default], () => o.default.getCurrentUser()), _ = (0, i.e7)([s.default], () => s.default.locale), b = (0, d.EO)(g);
+  } = e, m = (0, i.e7)([s.default], () => s.default.getCurrentUser()), _ = (0, i.e7)([o.default], () => o.default.locale), b = (0, d.EO)(m);
   return (0, r.jsx)(a.Anchor, {
     href: u.w,
     target: "_blank",
@@ -51,8 +51,8 @@ function g(e) {
         highlighted: b
       }),
       icon: a.idN,
-      tooltipPosition: h.has(_) ? "left" : true,
-      tooltip: m.intl.string(m.t["cqEoj/"])
+      tooltipPosition: g.has(_) ? "left" : true,
+      tooltip: h.intl.string(h.t["cqEoj/"])
     }, n))
   })
 }

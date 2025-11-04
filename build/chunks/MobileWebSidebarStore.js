@@ -6,10 +6,10 @@ require.d(exports, {
 var r, i, Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let o = false;
+let s = false;
 class c extends(i = Chunk442837.ZP.Store) {
   getIsOpen() {
-    return !Chunk873546.tq || o
+    return !Chunk873546.tq || s
   }
 }(r = "displayName") in c ? Object.defineProperty(c, r, {
   value: "MobileWebSidebarStore",
@@ -19,9 +19,9 @@ class c extends(i = Chunk442837.ZP.Store) {
 }) : c[r] = "MobileWebSidebarStore";
 let u = new c(Chunk570140.Z, {
   MOBILE_WEB_SIDEBAR_OPEN: function() {
-    o = true
+    s = true
   },
   MOBILE_WEB_SIDEBAR_CLOSE: function() {
-    o = false
+    s = false
   }
 })

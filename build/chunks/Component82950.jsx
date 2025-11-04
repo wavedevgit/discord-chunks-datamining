@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk449824 = require("./449824.js");
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,13 +44,13 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       image: a,
       type: d,
       imageMarginX: p,
-      imageMarginTop: g,
+      imageMarginTop: m,
       trackingSource: b,
       undismissable: E,
       onDismissed: O,
-      onClick: I,
-      cta: y,
-      ctaColor: v
+      onClick: y,
+      cta: v,
+      ctaColor: I
     } = e;
     i.useEffect(() => {
       _(f.rMx.CHANNEL_NOTICE_VIEWED, {
@@ -59,55 +59,55 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       })
     }, [t.id, d]);
     let C = null;
-    "function" == typeof y ? C = y() : null != y && (C = (0, r.jsx)(s.zx, {
-      className: h.btn,
-      size: s.zx.Sizes.SMALL,
+    "function" == typeof v ? C = v() : null != v && (C = (0, r.jsx)(o.zx, {
+      className: g.btn,
+      size: o.zx.Sizes.SMALL,
       onClick: () => {
         null != d && u.default.track(f.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
           source: b,
           guild_id: t.id,
           notice_type: d
-        }), null == I || I()
+        }), null == y || y()
       },
       fullWidth: true,
-      color: v,
-      children: y
+      color: I,
+      children: v
     }));
     let S = null != p ? "".concat(p, "px") : "16px";
     return (0, r.jsxs)("div", {
-      className: h.channelNotice,
-      children: [true === E ? null : (0, r.jsx)(o.P3F, {
+      className: g.channelNotice,
+      children: [true === E ? null : (0, r.jsx)(s.P3F, {
         onClick: () => {
           c.ZP.trackWithMetadata(f.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: d
           }), null == O || O()
         },
-        className: h.close,
-        "aria-label": m.intl.string(m.t.WAI6xu),
-        children: (0, r.jsx)(o.Dio, {
+        className: g.close,
+        "aria-label": h.intl.string(h.t.WAI6xu),
+        children: (0, r.jsx)(s.Dio, {
           size: "md",
           color: "currentColor",
-          className: h.closeIcon
+          className: g.closeIcon
         })
       }), (0, r.jsx)("div", {
-        className: h.imageContainer,
+        className: g.imageContainer,
         style: {
-          marginTop: "".concat(g, "px"),
+          marginTop: "".concat(m, "px"),
           marginLeft: S,
           marginRight: S
         },
         children: (0, r.jsx)("img", {
-          className: h.image,
+          className: g.image,
           src: a,
           alt: ""
         })
       }), (0, r.jsxs)("div", {
-        className: h.message,
-        children: [null != n ? (0, r.jsx)(o.Heading, {
+        className: g.message,
+        children: [null != n ? (0, r.jsx)(s.Heading, {
           variant: "heading-md/semibold",
-          className: h.title,
+          className: g.title,
           children: n
-        }) : null, (0, r.jsx)(o.Text, {
+        }) : null, (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           children: l
         }), C]
@@ -118,5 +118,5 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
     let {
       showRedesignedChannelNotice: t
     } = (0, d.o)(true);
-    return t ? (0, r.jsx)(p.Z, g({}, e)) : (0, r.jsx)(b, g({}, e))
+    return t ? (0, r.jsx)(p.Z, m({}, e)) : (0, r.jsx)(b, m({}, e))
   }

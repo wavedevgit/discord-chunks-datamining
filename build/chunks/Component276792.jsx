@@ -53,34 +53,34 @@ function E(e, t) {
 }
 
 function O(e) {
-  var t, n, O, I;
-  let y, {
-      componentId: v,
+  var t, n, O, y;
+  let v, {
+      componentId: I,
       content: C,
       renderModalProps: S,
       analyticsLocations: T,
       analyticsLocation: N,
-      isLightTheme: P
+      isLightTheme: j
     } = e,
-    j = "AnnouncementModalVariant1_".concat(l.z[Number(C.dismissKey)]),
+    P = "AnnouncementModalVariant1_".concat(l.z[Number(C.dismissKey)]),
     {
       onClose: x
     } = S,
-    A = null != (I = null == (t = C.button) ? true : t.copy) ? I : g.intl.string(g.t.YScQSF),
+    A = null != (y = null == (t = C.button) ? true : t.copy) ? y : m.intl.string(m.t.YScQSF),
     Z = (null == (n = C.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
   switch (null == (O = C.button) ? true : O.buttonAction) {
     case a.Wc.OPEN_MARKETING_PAGE:
-      y = () => {
-        (0, u.uL)(h.Z5c.APPLICATION_STORE), x()
+      v = () => {
+        (0, u.uL)(g.Z5c.APPLICATION_STORE), x()
       };
       break;
     case a.Wc.OPEN_TIER_1_PAYMENT_MODAL:
-      y = () => (0, c.Z)({
-        subscriptionTier: m.Si.TIER_1,
+      v = () => (0, c.Z)({
+        subscriptionTier: h.Si.TIER_1,
         analyticsLocations: T,
         analyticsObject: E(b({}, N), {
-          object: h.qAy.BUTTON_CTA,
-          objectType: h.AnalyticsObjectTypes.TIER_1
+          object: g.qAy.BUTTON_CTA,
+          objectType: g.AnalyticsObjectTypes.TIER_1
         }),
         onClose: e => {
           e && x()
@@ -90,12 +90,12 @@ function O(e) {
     case a.Wc.OPEN_TIER_2_PAYMENT_MODAL:
     case a.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
     default:
-      y = () => (0, c.Z)({
-        subscriptionTier: m.Si.TIER_2,
+      v = () => (0, c.Z)({
+        subscriptionTier: h.Si.TIER_2,
         analyticsLocations: T,
         analyticsObject: E(b({}, N), {
-          object: h.qAy.BUTTON_CTA,
-          objectType: h.AnalyticsObjectTypes.TIER_2
+          object: g.qAy.BUTTON_CTA,
+          objectType: g.AnalyticsObjectTypes.TIER_2
         }),
         onClose: e => {
           e && x()
@@ -103,15 +103,15 @@ function O(e) {
       })
   }
   let w = "" !== C.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
-      children: ["\xa0", (0, r.jsx)(o.Anchor, {
+      children: ["\xa0", (0, r.jsx)(s.Anchor, {
         className: _.termsApplyAnchor,
         href: p.Z.getArticleURL(C.helpArticleId),
-        children: g.intl.string(g.t["sBp+u0"])
+        children: m.intl.string(m.t["sBp+u0"])
       })]
     }) : true,
     L = {
       type: "video",
-      src: P ? C.heroArtVideoLinkLightTheme : C.videoLink
+      src: j ? C.heroArtVideoLinkLightTheme : C.videoLink
     };
   null != C.heroArtVideoSubtitles && (L.subtitles = C.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
@@ -119,14 +119,14 @@ function O(e) {
     isDefault: false
   }))), ("" !== C.heroArtImageLinkDarkTheme || "" !== C.heroArtImageLinkLightTheme) && (L = {
     type: "image",
-    src: P ? C.heroArtImageLinkLightTheme : C.heroArtImageLinkDarkTheme
+    src: j ? C.heroArtImageLinkLightTheme : C.heroArtImageLinkDarkTheme
   });
   let R = "" !== C.modalTopPill ? () => (0, r.jsx)(f.mn, {
     text: C.modalTopPill,
     className: _.modalTopPill
   }) : true;
   return {
-    componentId: v,
+    componentId: I,
     renderModalProps: S,
     header: C.header,
     modalTopExtra: R,
@@ -137,22 +137,22 @@ function O(e) {
     featureCards: C.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,
-      imageSrc: P ? e.imageLinkLightTheme : e.imageLink,
+      imageSrc: j ? e.imageLinkLightTheme : e.imageLink,
       tagText: "" !== e.pill ? e.pill : true
     })),
-    changeLogId: j,
+    changeLogId: P,
     button: () => {
       let e = Date.now();
-      return (0, r.jsx)(s.zxk, {
+      return (0, r.jsx)(o.zxk, {
         variant: "expressive",
         size: "md",
         onClick: () => {
-          d.default.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
-            change_log_id: j,
+          d.default.track(g.rMx.CHANGE_LOG_CTA_CLICKED, {
+            change_log_id: P,
             cta_type: Z,
             seconds_open: Math.round((Date.now() - e) / 1e3),
-            target: j
-          }), y()
+            target: P
+          }), v()
         },
         text: A,
         icon: i.SrA

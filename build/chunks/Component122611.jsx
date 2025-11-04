@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 122611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,11 +32,11 @@ function N(e) {
   e.stopPropagation()
 }
 
-function P(e) {
+function j(e) {
   var t;
   let {
     guild: n
-  } = e, [p, m] = i.useState(null != (t = s.K.get(C.Iv)) ? t : 0), h = (0, l.Wu)(C.HG, () => C.XN.filter(e => {
+  } = e, [p, h] = i.useState(null != (t = o.K.get(C.Iv)) ? t : 0), g = (0, l.Wu)(C.HG, () => C.XN.filter(e => {
     let {
       dismissibleContentType: t,
       store: r
@@ -44,7 +44,7 @@ function P(e) {
     returntrue === (null == r ? true : r.channelNoticePredicate(n, p)) && !T.has(t)
   }).map(e => e.dismissibleContentType), [n, p]);
   return (0, r.jsx)(c.ZP, {
-    contentTypes: h,
+    contentTypes: g,
     groupName: S.R.CHANNEL_NOTICES,
     children: e => {
       let {
@@ -52,7 +52,7 @@ function P(e) {
         markAsDismissed: i
       } = e, l = () => {
         var e;
-        e = Date.now(), s.K.set(C.Iv, e), m(e), i(S.L.UNKNOWN)
+        e = Date.now(), o.K.set(C.Iv, e), h(e), i(S.L.UNKNOWN)
       }, c = (() => {
         switch (t) {
           case a.z.CHANNEL_NOTICE_HUBLINK:
@@ -71,7 +71,7 @@ function P(e) {
               markAsDismissed: l
             });
           case a.z.CHANNEL_NOTICE_QUICKSWITCHER:
-            return (0, r.jsx)(y.Z, {
+            return (0, r.jsx)(v.Z, {
               guild: n,
               markAsDismissed: l
             });
@@ -81,7 +81,7 @@ function P(e) {
               markAsDismissed: l
             });
           case a.z.LINKED_ROLE_ADMIN_GUILD:
-            return (0, r.jsx)(o.Z, {
+            return (0, r.jsx)(s.Z, {
               guild: n,
               markAsDismissed: () => i(S.L.UNKNOWN)
             });
@@ -96,41 +96,41 @@ function P(e) {
     }
   })
 }
-let j = e => {
+let P = e => {
   let {
     guild: t
   } = e;
-  switch ((0, v.Z)(t)) {
-    case v.R.ENABLE_PUBLIC_GUILD:
+  switch ((0, I.Z)(t)) {
+    case I.R.ENABLE_PUBLIC_GUILD:
       return (0, r.jsx)(_.Z, {
         guild: t
       });
-    case v.R.MAX_MEMBER_COUNT:
-      return (0, r.jsx)(I.Z, {
+    case I.R.MAX_MEMBER_COUNT:
+      return (0, r.jsx)(y.Z, {
         guild: t
       });
-    case v.R.GUILD_LIVE_CHANNEL:
+    case I.R.GUILD_LIVE_CHANNEL:
       return (0, r.jsx)(p.ZP, {
         guild: t
       });
-    case v.R.GUILD_MFA_WARNING:
+    case I.R.GUILD_MFA_WARNING:
       return (0, r.jsx)(E.Z, {
         guild: t
       });
-    case v.R.COMMANDS_MIGRATION:
-      return (0, r.jsx)(h.Z, {
-        guild: t
-      });
-    case v.R.APPLICATION_SUBSCRIPTION_EXPIRATION:
+    case I.R.COMMANDS_MIGRATION:
       return (0, r.jsx)(g.Z, {
         guild: t
       });
-    case v.R.HUB_STUDY_ROOM:
+    case I.R.APPLICATION_SUBSCRIPTION_EXPIRATION:
       return (0, r.jsx)(m.Z, {
+        guild: t
+      });
+    case I.R.HUB_STUDY_ROOM:
+      return (0, r.jsx)(h.Z, {
         guild: t
       })
   }
-  return b.s.isDisallowPopupsSet() ? null : (0, r.jsx)(P, {
+  return b.s.isDisallowPopupsSet() ? null : (0, r.jsx)(j, {
     guild: e.guild
   })
 }

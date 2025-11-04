@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 340137, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -44,26 +44,26 @@ function N(e) {
   var t, n;
   let {
     onClick: l,
-    selectedOverride: s = false,
-    popoutProps: o,
-    ref: h,
+    selectedOverride: o = false,
+    popoutProps: s,
+    ref: g,
     focusSectionProps: _
-  } = e, [O, I] = i.useState(false), N = (0, b.D)(), P = s || N, j = s || P, {
+  } = e, [O, y] = i.useState(false), N = (0, b.D)(), j = o || N, P = o || j, {
     backForwardButtons: x,
     titlebarIconSize: A,
     titlebarHoverHighlight: Z
   } = (0, f.T)({
     location: "NotificationsInboxTitleBarButton"
   }), w = (0, r.jsx)(d.Dkj, {
-    className: v.icon,
-    color: O || j ? d.TVs.colors.ICON_PRIMARY : d.TVs.colors.ICON_TERTIARY,
+    className: I.icon,
+    color: O || P ? d.TVs.colors.ICON_PRIMARY : d.TVs.colors.ICON_TERTIARY,
     size: A
   }), {
     badge: L,
     badgeType: R
   } = (0, E.h6)({
-    isSelected: P
-  }), D = (0, g.isDesktop)() && x, M = (0, m.A)(), k = (0, g.isMac)() ? C[M] : D ? S[M] : T[M];
+    isSelected: j
+  }), D = (0, m.isDesktop)() && x, M = (0, h.A)(), k = (0, m.isMac)() ? C[M] : D ? S[M] : T[M];
   return (0, r.jsxs)(d.Kqy, {
     gap: 0,
     direction: "horizontal",
@@ -72,8 +72,8 @@ function N(e) {
       horizontal: true
     }), (0, r.jsx)(u.u, {
       asContainer: true,
-      shouldShow: !j,
-      text: y.intl.string(y.t.HcoRu0),
+      shouldShow: !P,
+      text: v.intl.string(v.t.HcoRu0),
       children: (0, r.jsxs)(d.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -92,23 +92,23 @@ function N(e) {
         }
         return e
       }({
-        innerRef: h,
-        className: a()(v.clickableContainer, {
-          [v.withHoverHighlight]: Z
+        innerRef: g,
+        className: a()(I.clickableContainer, {
+          [I.withHoverHighlight]: Z
         })
-      }, _, o), n = n = {
+      }, _, s), n = n = {
         onMouseEnter: () => {
-          I(true)
+          y(true)
         },
         onMouseLeave: () => {
-          I(false)
+          y(false)
         },
         onClick: () => {
           var e;
-          null == l || l(), null == o || null == (e = o.onClick) || e.call(o)
+          null == l || l(), null == s || null == (e = s.onClick) || e.call(s)
         },
         children: [(0, r.jsx)("div", {
-          className: a()(v.iconWrapper, null),
+          className: a()(I.iconWrapper, null),
           children: "unread" === R ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(p.ZP, {
               width: c.Z[A],
@@ -116,7 +116,7 @@ function N(e) {
               mask: p.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
               children: w
             }), (0, r.jsx)("div", {
-              className: a()(v.unreadDot, v[A])
+              className: a()(I.unreadDot, I[A])
             })]
           }) : w
         }), L]
@@ -134,7 +134,7 @@ function N(e) {
   })
 }
 
-function P() {
+function j() {
   let {
     focusSectionProps: e
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = Chunk647438.useRef(null), {

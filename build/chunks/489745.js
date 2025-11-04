@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 489745, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
@@ -9,7 +9,7 @@ var Chunk149765 = require("./149765.js"),
   Chunk496675 = require("./496675.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e) {
+function s(e) {
   let t = (0, i.e7)([l.ZP], () => {
     var t;
     return null != (t = l.ZP.getChannels(e)[l.sH]) ? t : []
@@ -18,6 +18,6 @@ function o(e) {
     let {
       channel: t
     } = e;
-    return a.Z.can(r.$e(s.Plq.SEND_MESSAGES, s.Plq.VIEW_CHANNEL), t)
+    return a.Z.can(r.$e(o.Plq.SEND_MESSAGES, o.Plq.VIEW_CHANNEL), t)
   }).length
 }

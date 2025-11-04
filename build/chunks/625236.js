@@ -8,7 +8,7 @@ var Chunk786761 = require("./786761.js"),
   Chunk306680 = require("./306680.js"),
   Chunk709054 = require("./709054.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -48,7 +48,7 @@ class u {
   }
   messageGeneration(e, t) {
     let n = this.messages.get(e);
-    return null == n ? false / 0 : n.generation !== t && null != n.message && n.message.id === l.ZP.lastMessageId(e) ? (this.messages.set(e, c(o({}, n), {
+    return null == n ? false / 0 : n.generation !== t && null != n.message && n.message.id === l.ZP.lastMessageId(e) ? (this.messages.set(e, c(s({}, n), {
       generation: t
     })), t) : n.generation
   }
@@ -73,8 +73,8 @@ class u {
   }
   putNew(e, t, n) {
     var r, i, l;
-    let s = this.messages.get(e);
-    null != t && (i = t.id, null == (l = null == s || null == (r = s.message) ? true : r.id) || a.default.compare(i, l) > 0) && this.put(e, t, n)
+    let o = this.messages.get(e);
+    null != t && (i = t.id, null == (l = null == o || null == (r = o.message) ? true : r.id) || a.default.compare(i, l) > 0) && this.put(e, t, n)
   }
   putMany(e, t) {
     for (let n of e) this.put(n.channel_id, n, t)
@@ -86,7 +86,7 @@ class u {
       l = this.messages.get(n);
     if ((null == l || null == (t = l.message) ? true : t.id) !== e.id) return;
     let a = l.message instanceof i.ZP ? (0, r.wi)(l.message, e) : (0, r.gx)(l.message, e);
-    this.messages.set(n, c(o({}, l), {
+    this.messages.set(n, c(s({}, l), {
       message: a
     }))
   }
@@ -94,6 +94,6 @@ class u {
     this.messages.delete(e)
   }
   constructor() {
-    s(this, "localNeeded", true), s(this, "messages", new Map)
+    o(this, "localNeeded", true), o(this, "messages", new Map)
   }
 }

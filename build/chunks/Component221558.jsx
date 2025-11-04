@@ -1,5 +1,5 @@
 /** Chunk was on 80448 **/
-/** chunk id: 221558, original params: i,t,r (module,exports,require) **/
+/** chunk id: 221558, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 });
@@ -17,15 +17,15 @@ var Chunk951288 = require("./951288.js"),
 function p() {
   let {
     guilds: {
-      guilds: i,
-      numGuildsJoined: t
+      guilds: t,
+      numGuildsJoined: e
     }
-  } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()), r = (0, Chunk647438.useMemo)(() => module.map(i => {
+  } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()), r = (0, Chunk647438.useMemo)(() => module.map(t => {
     let {
-      guild: t
-    } = i;
-    return d.Z.getGuild(t.id)
-  }).filter(i => null != i), [module]);
+      guild: e
+    } = t;
+    return d.Z.getGuild(e.id)
+  }).filter(t => null != t), [module]);
   return (0, Chunk951288.jsxs)(Chunk198358.Z, {
     children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
@@ -34,33 +34,33 @@ function p() {
         joinedCount: exports,
         guildCount: require.length
       })
-    }), require.map((t, r) => (0, n.jsxs)("div", {
-      children: [(0, n.jsx)(l.Z, {
-        guild: t,
-        size: l.Z.Sizes.XLARGE
-      }), (0, n.jsx)(a.xvT, {
+    }), require.map((e, r) => (0, i.jsxs)("div", {
+      children: [(0, i.jsx)(s.Z, {
+        guild: e,
+        size: s.Z.Sizes.XLARGE
+      }), (0, i.jsx)(l.xvT, {
         variant: "display-md",
         color: "text-primary",
-        children: t.name
-      }), 0 === r && (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(a.xvT, {
+        children: e.name
+      }), 0 === r && (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(l.xvT, {
           variant: "display-md",
           color: "text-primary",
-          children: i[0].numMessagesSent
-        }), (0, n.jsx)(a.xvT, {
+          children: t[0].numMessagesSent
+        }), (0, i.jsx)(l.xvT, {
           variant: "display-sm",
           color: "text-primary",
-          children: u.intl.string(x.default.wWKySP)
-        }), (0, n.jsx)(a.xvT, {
+          children: x.intl.string(u.default.wWKySP)
+        }), (0, i.jsx)(l.xvT, {
           variant: "display-md",
           color: "text-primary",
-          children: i[0].numVoiceMinutes
-        }), (0, n.jsx)(a.xvT, {
+          children: t[0].numVoiceMinutes
+        }), (0, i.jsx)(l.xvT, {
           variant: "display-sm",
           color: "text-primary",
-          children: u.intl.string(x.default.lXT6ns)
+          children: x.intl.string(u.default.lXT6ns)
         })]
       })]
-    }, t.id))]
+    }, e.id))]
   })
 }

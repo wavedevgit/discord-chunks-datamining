@@ -26,32 +26,32 @@ function O(e) {
     onOpen: t,
     onClose: n,
     "data-jump-section": l
-  } = e, O = (0, s.e7)([h.default], () => h.default.getCurrentUser()), I = i.useRef(null), y = (0, s.e7)([m.ZP], () => (null == O ? true : O.id) != null && m.ZP.getMentionCount(O.id, _.W.NOTIFICATION_CENTER) > 0), {
-    titlebarIconSize: v,
+  } = e, O = (0, o.e7)([g.default], () => g.default.getCurrentUser()), y = i.useRef(null), v = (0, o.e7)([h.ZP], () => (null == O ? true : O.id) != null && h.ZP.getMentionCount(O.id, _.W.NOTIFICATION_CENTER) > 0), {
+    titlebarIconSize: I,
     titlebarHoverHighlight: C
   } = (0, p.T)({
     location: "RecentsButton"
-  }), S = "sm" === v ? "refresh_sm" : "md", T = i.useMemo(() => (0, r.jsx)(u.xx7, {
+  }), S = "sm" === I ? "refresh_sm" : "md", T = i.useMemo(() => (0, r.jsx)(u.xx7, {
     size: S,
     color: "currentColor"
   }), [S]);
-  return (0, r.jsx)(g.k, {
-    targetElementRef: I,
+  return (0, r.jsx)(m.k, {
+    targetElementRef: y,
     onOpen: t,
     onClose: n,
     badgeState: {
-      badgeForYou: y
+      badgeForYou: v
     },
     popoutPosition: "bottom",
     popoutAlign: "right",
     children: (e, t, n, i) => {
-      var s, p;
+      var o, p;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.u, {
-          targetElementRef: I,
+          targetElementRef: y,
           shouldShow: !t,
           text: b.intl.string(b.t.GSmTKJ),
-          children: (0, r.jsx)(u.P3F, (s = function(e) {
+          children: (0, r.jsx)(u.P3F, (o = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -70,18 +70,18 @@ function O(e) {
             return e
           }({}, n), p = p = {
             tag: "div",
-            innerRef: I,
+            innerRef: y,
             onClick: e,
             "data-jump-section": l,
             "aria-label": b.intl.string(b.t.GSmTKJ),
             className: a()(E.clickable, {
               [E.withHighlight]: C
             }),
-            children: y || i ? (0, r.jsxs)(r.Fragment, {
+            children: v || i ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(d.ZP, {
                 mask: d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-                height: o.Z[S],
-                width: o.Z[S],
+                height: s.Z[S],
+                width: s.Z[S],
                 children: T
               }), (0, r.jsx)("span", {
                 className: a()(E.badge, {
@@ -89,7 +89,7 @@ function O(e) {
                 })
               })]
             }) : T
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
@@ -97,11 +97,11 @@ function O(e) {
             }
             return n
           })(Object(p)).forEach(function(e) {
-            Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(p, e))
-          }), s))
+            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(p, e))
+          }), o))
         }), (0, r.jsx)(f.U, {
           location: "inbox-button",
-          targetElementRef: I
+          targetElementRef: y
         })]
       })
     }

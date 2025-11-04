@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 425369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk50089 = require("./50089.js");
 
-function h() {
+function g() {
   return (0, Chunk951288.jsxs)(Chunk843611.rs, {
     children: [(0, Chunk951288.jsx)(Chunk765717.Z, {
       path: Chunk981631.Z5c.APPLICATION_LIBRARY_SETTINGS,
@@ -40,13 +40,13 @@ function h() {
     })]
   })
 }
-let g = Chunk647438.memo(function() {
+let m = Chunk647438.memo(function() {
   return Chunk647438.useEffect(() => {
     (0, Chunk108427.e)("application_library")
   }, []), (0, Chunk951288.jsxs)("div", {
     className: Chunk50089.container,
     children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
       location: Chunk388032.intl.string(Chunk388032.t.cw57ar)
-    }), (0, Chunk951288.jsx)(h, {})]
+    }), (0, Chunk951288.jsx)(g, {})]
   })
 })

@@ -43,31 +43,31 @@ function M(e, t, n, r) {
   let l = performance.now();
   if (!C.Z.isConnected()) return;
   let a = null != (i = r.context) ? i : L.Yn.DEFAULT,
-    s = D.get(a);
-  null == s && (s = {
+    o = D.get(a);
+  null == o && (o = {
     held: new Set,
     latched: new Set,
     vadPriorityLatched: new Set,
     priorityHeldOrLatched: new Set
-  }, D.set(a, s)), n || (e ? s.held.add(r.id) : s.held.delete(r.id));
-  let o = false;
+  }, D.set(a, o)), n || (e ? o.held.add(r.id) : o.held.delete(r.id));
+  let s = false;
   if (e) r.pressedTime = l;
-  else if (null != r.pressedTime && (0, I.f)({
+  else if (null != r.pressedTime && (0, y.f)({
       location: "doPTT",
       autoTrackExposure: false
     }).enableLatching) {
     let e = w._M,
       {
         pttLatchingEnabled: t = false
-      } = v.Z.getModeOptions(a),
-      i = n ? s.vadPriorityLatched : s.latched;
-    (o = i.has(r.id)) || true !== t || !(l < r.pressedTime + e) || !R ? (i.delete(r.id), o = false) : (i.add(r.id), o = true)
+      } = I.Z.getModeOptions(a),
+      i = n ? o.vadPriorityLatched : o.latched;
+    (s = i.has(r.id)) || true !== t || !(l < r.pressedTime + e) || !R ? (i.delete(r.id), s = false) : (i.add(r.id), s = true)
   }
-  t && (e || o ? s.priorityHeldOrLatched.add(r.id) : s.priorityHeldOrLatched.delete(r.id));
-  let c = s.held.size > 0,
-    u = s.latched.size > 0,
+  t && (e || s ? o.priorityHeldOrLatched.add(r.id) : o.priorityHeldOrLatched.delete(r.id));
+  let c = o.held.size > 0,
+    u = o.latched.size > 0,
     d = c || u,
-    p = s.priorityHeldOrLatched.size > 0;
+    p = o.priorityHeldOrLatched.size > 0;
   (0, _.I)(c, p, d)
 }
 let k = {
@@ -81,7 +81,7 @@ let k = {
     },
     [Chunk981631.kg4.PUSH_TO_TALK]: {
       onTrigger(e, t) {
-        v.Z.getMode(t.context) === Z.pM4.PUSH_TO_TALK && (k[Z.kg4.PUSH_TO_TALK].isPressed = e, M(e, false, false, t))
+        I.Z.getMode(t.context) === Z.pM4.PUSH_TO_TALK && (k[Z.kg4.PUSH_TO_TALK].isPressed = e, M(e, false, false, t))
       },
       keyEvents: {
         keyup: true,
@@ -91,7 +91,7 @@ let k = {
     },
     [Chunk981631.kg4.PUSH_TO_TALK_PRIORITY]: {
       onTrigger(e, t) {
-        (v.Z.getMode() === Z.pM4.PUSH_TO_TALK || A.Z.getCurrentConfig({
+        (I.Z.getMode() === Z.pM4.PUSH_TO_TALK || A.Z.getCurrentConfig({
           location: "keybinds"
         }).onPTTKeybind) && (k[Z.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, M(e, true, false, t))
       },
@@ -103,7 +103,7 @@ let k = {
     },
     [Chunk981631.kg4.VAD_PRIORITY]: {
       onTrigger(e, t) {
-        v.Z.getMode() === Z.pM4.VOICE_ACTIVITY && A.Z.getCurrentConfig({
+        I.Z.getMode() === Z.pM4.VOICE_ACTIVITY && A.Z.getCurrentConfig({
           location: "keybinds"
         }).separateKeybind && (k[Z.kg4.VAD_PRIORITY].isPressed = e, M(e, true, true, t))
       },
@@ -115,7 +115,7 @@ let k = {
     },
     [Chunk981631.kg4.PUSH_TO_MUTE]: {
       onTrigger(e) {
-        v.Z.getMode() === Z.pM4.VOICE_ACTIVITY && (k[Z.kg4.PUSH_TO_MUTE].isPressed = e, i.Z.setTemporarySelfMute(e))
+        I.Z.getMode() === Z.pM4.VOICE_ACTIVITY && (k[Z.kg4.PUSH_TO_MUTE].isPressed = e, i.Z.setTemporarySelfMute(e))
       },
       keyEvents: {
         keyup: true,
@@ -171,7 +171,7 @@ let k = {
       onTrigger(e, t) {
         if (!(0, T.I1)(t.shortcut)) return;
         let n = (0, x.Z)();
-        null != n && l.Z.setInputLocked(!P.default.isLocked(n), n)
+        null != n && l.Z.setInputLocked(!j.default.isLocked(n), n)
       },
       keyEvents: {
         keyup: true,

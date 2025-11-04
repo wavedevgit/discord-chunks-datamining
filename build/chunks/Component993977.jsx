@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 993977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,7 +42,7 @@ function O(e) {
   return e
 }
 
-function I(e) {
+function y(e) {
   let {
     applicationViewItems: t,
     restoreApplication: n
@@ -52,15 +52,15 @@ function I(e) {
     let t = e.libraryApplication.getDistributor();
     return (0, r.jsxs)("div", {
       className: b.hiddenLibraryApplication,
-      children: [(0, r.jsxs)(o.Z, {
-        direction: o.Z.Direction.VERTICAL,
+      children: [(0, r.jsxs)(s.Z, {
+        direction: s.Z.Direction.VERTICAL,
         className: b.hiddenLibraryApplicationContent,
         children: [(0, r.jsx)("div", {
           className: b.applicationName,
           children: e.libraryApplication.getBranchedName(e.application)
         }), null != t ? (0, r.jsx)("div", {
           className: b.applicationSubText,
-          children: g.EOG[t]
+          children: m.EOG[t]
         }) : null]
       }), (0, r.jsx)(a.P3F, {
         className: b.restoreButton,
@@ -82,7 +82,7 @@ function I(e) {
     }), i]
   })
 }
-class y extends Chunk647438.PureComponent {
+class v extends Chunk647438.PureComponent {
   handleToggleShortcutDesktop(e) {
     c.Xc.updateSetting(e)
   }
@@ -90,7 +90,7 @@ class y extends Chunk647438.PureComponent {
     c.Pe.updateSetting(e)
   }
   trackRestoreApplication(e, t) {
-    d.default.track(g.rMx.APPLICATION_SETTINGS_UPDATED, O({
+    d.default.track(m.rMx.APPLICATION_SETTINGS_UPDATED, O({
       hidden_enabled: t
     }, e.getAnalyticsData()))
   }
@@ -115,7 +115,7 @@ class y extends Chunk647438.PureComponent {
           checked: require,
           onChange: this.handleToggleShortcutStartMenu
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk34305.Z, {})]
-      }) : null, (0, Chunk951288.jsx)(I, {
+      }) : null, (0, Chunk951288.jsx)(y, {
         restoreApplication: this.handleRestoreHiddenLibraryApplication,
         applicationViewItems: module
       })]
@@ -133,17 +133,17 @@ class y extends Chunk647438.PureComponent {
   }
   constructor(...e) {
     super(...e), E(this, "handleRestoreHiddenLibraryApplication", e => {
-      let t = p.x9(e.getFlags(), g.eHb.HIDDEN);
-      s.h(e.id, e.branchId, t), this.trackRestoreApplication(e, p.yE(t, g.eHb.HIDDEN))
+      let t = p.x9(e.getFlags(), m.eHb.HIDDEN);
+      o.h(e.id, e.branchId, t), this.trackRestoreApplication(e, p.yE(t, m.eHb.HIDDEN))
     })
   }
 }
 
-function v() {
+function I() {
   let e = {
     installShortcutDesktop: Chunk695346.Xc.useSetting(),
     installShortcutStartMenu: Chunk695346.Pe.useSetting(),
     hiddenLibraryApplicationViewItems: (0, Chunk442837.e7)([Chunk490983.Z], () => Chunk490983.Z.hiddenLibraryApplicationViewItems)
   };
-  return (0, Chunk951288.jsx)(y, O({}, module))
+  return (0, Chunk951288.jsx)(v, O({}, module))
 }

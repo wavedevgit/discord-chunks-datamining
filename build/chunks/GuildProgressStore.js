@@ -23,9 +23,9 @@ function f(e, t) {
   let n = p[e];
   return !(null == n || n.has(t)) && (p[e] = new Set(n.add(t)), true)
 }
-class m extends(r = Chunk442837.ZP.PersistedStore) {
+class h extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(a.default, s.Z, o.Z), p = {}, null != e && c.default.keys(e).forEach(t => {
+    this.waitFor(a.default, o.Z, s.Z), p = {}, null != e && c.default.keys(e).forEach(t => {
       let n = e[t];
       null != n && "function" == typeof n[Symbol.iterator] && (p[t] = new Set(n))
     })
@@ -41,7 +41,7 @@ class m extends(r = Chunk442837.ZP.PersistedStore) {
     return p
   }
 }
-d(m, "displayName", "GuildProgressStore"), d(m, "persistKey", "GuildProgressStore"), new m(Chunk570140.Z, {
+d(h, "displayName", "GuildProgressStore"), d(h, "persistKey", "GuildProgressStore"), new h(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     let e = [];
     Chunk709054.default.keys(p).forEach(t => {
@@ -73,7 +73,7 @@ d(m, "displayName", "GuildProgressStore"), d(m, "persistKey", "GuildProgressStor
         id: t,
         member_count: n
       }
-    } = e, r = o.Z.getGuild(t);
+    } = e, r = s.Z.getGuild(t);
     if (null == r) returnfalse;
     r.ownerId === a.default.getId() && null != p[r.id] && (null != r.icon && p[r.id].add(u.Rg.AVATAR), n > 1 && p[r.id].add(u.Rg.INVITE))
   },
@@ -101,7 +101,7 @@ d(m, "displayName", "GuildProgressStore"), d(m, "persistKey", "GuildProgressStor
     let {
       channelId: n,
       message: r
-    } = e, i = s.Z.getChannel(n);
+    } = e, i = o.Z.getChannel(n);
     return (null == (t = r.author) ? true : t.id) === a.default.getId() && null != i && null != p[i.guild_id] && f(i.guild_id, u.Rg.MESSAGE)
   },
   GUILD_MEMBER_LIST_UPDATE: function(e) {

@@ -16,13 +16,13 @@ function u(e) {
   let {
     focusSectionProps: u
   } = e, d = i.useCallback(e => {
-    (0, s.ZN)("fast-travel")
+    (0, o.ZN)("fast-travel")
   }, []);
   return (0, r.jsx)(l.u, {
-    "aria-label": o.intl.string(o.t["7P/+qz"]),
+    "aria-label": s.intl.string(s.t["7P/+qz"]),
     asContainer: true,
     __unsupportedReactNodeAsText: (0, r.jsxs)(r.Fragment, {
-      children: [o.intl.string(o.t["7P/+qz"]), (0, r.jsx)(a.M2$, {
+      children: [s.intl.string(s.t["7P/+qz"]), (0, r.jsx)(a.M2$, {
         shortcut: ["mod", "k"]
       })]
     }),
@@ -51,7 +51,7 @@ function u(e) {
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         lineClamp: 1,
-        children: o.intl.string(o.t.ZvKwYa)
+        children: s.intl.string(s.t.ZvKwYa)
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

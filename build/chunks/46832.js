@@ -15,7 +15,7 @@ var Chunk836560 = require("./836560.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,8 +23,8 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = 10 * Chunk70956.Z.Millis.SECOND,
-  g = new Map,
+let g = 10 * Chunk70956.Z.Millis.SECOND,
+  m = new Map,
   _ = new Set,
   b = (e, t, n) => {
     n([u.Z.CLOSE, t], e)
@@ -55,18 +55,18 @@ class E extends Chunk836560.EventEmitter {
         }, "Invalid opcode")
     }
   }
-  constructor(e, t, r, o) {
+  constructor(e, t, r, s) {
     var u;
-    super(), u = this, m(this, "validateSocketClient", true), m(this, "logger", true), m(this, "createPostMessageProxySocket", true), m(this, "onFrameHandled", true), m(this, "handshakeFailureTimeoutId", true), m(this, "disconnectSocket", function(e, t) {
+    super(), u = this, h(this, "validateSocketClient", true), h(this, "logger", true), h(this, "createPostMessageProxySocket", true), h(this, "onFrameHandled", true), h(this, "handshakeFailureTimeoutId", true), h(this, "disconnectSocket", function(e, t) {
       var n, r;
       let i = arguments.length > 2 && true !== arguments[2] && arguments[2];
       u.emit("disconnect", e, i ? true : t), e.close(t.code, null != (n = t.message) ? n : "Unknown");
-      let [l] = null != (r = Array.from(g.entries()).find(t => {
+      let [l] = null != (r = Array.from(m.entries()).find(t => {
         let [n, r] = t;
         return r === e
       })) ? r : [null, null];
-      null != l && g.delete(l)
-    }), m(this, "handleIFrameMount", e => {
+      null != l && m.delete(l)
+    }), h(this, "handleIFrameMount", e => {
       let {
         id: t
       } = e;
@@ -77,26 +77,26 @@ class E extends Chunk836560.EventEmitter {
             application_id: t,
             channel_id: (0, l.p)(n.location),
             guild_id: (0, l.j)(n.location),
-            timeout_ms: h
+            timeout_ms: g
           })
         })
-      }, h)
-    }), m(this, "handleIFrameUnmount", e => {
+      }, g)
+    }), h(this, "handleIFrameUnmount", e => {
       var t;
       let {
         id: n
       } = e;
       _.delete(n);
-      let [r, i] = null != (t = Array.from(g.entries()).find(e => {
+      let [r, i] = null != (t = Array.from(m.entries()).find(e => {
         let [t, r] = e;
         return r.frameId === n
       })) ? t : [null, null];
       null != i && null != r && (this.disconnectSocket(i, {
         code: f.$VG.CLOSE_NORMAL,
         message: "iFrame gone"
-      }, true), g.delete(r))
-    }), m(this, "handleMessage", (e, t, n) => {
-      let r = g.get(t);
+      }, true), m.delete(r))
+    }), h(this, "handleMessage", (e, t, n) => {
+      let r = m.get(t);
       try {
         this.routeEvent(r, t, e, n)
       } catch (e) {
@@ -109,7 +109,7 @@ class E extends Chunk836560.EventEmitter {
           message: e.message
         }, n)
       }
-    }), m(this, "handleFrame", (e, t, n) => {
+    }), h(this, "handleFrame", (e, t, n) => {
       var r;
       let i;
       if (e !== t.origin) throw new c.Z({
@@ -123,7 +123,7 @@ class E extends Chunk836560.EventEmitter {
         }, "Payload not recognized encoding")
       }
       null == (r = this.onFrameHandled) || r.call(this, i, this.logger, t), this.emit("request", t, i)
-    }), m(this, "handleHandshake", async (e, t, r) => {
+    }), h(this, "handleHandshake", async (e, t, r) => {
       let i;
       null != this.handshakeFailureTimeoutId && clearTimeout(this.handshakeFailureTimeoutId);
       let l = (await n.e("85441").then(n.t.bind(n, 826753, 23))).default;
@@ -140,38 +140,38 @@ class E extends Chunk836560.EventEmitter {
           closeCode: f.$VG.CLOSE_UNSUPPORTED
         }, e.message)
       }
-      let s = t.frame_id;
-      if (!_.has(s)) throw this.logger.error("Unrecognized frame ID ".concat(s)), new c.Z({
+      let o = t.frame_id;
+      if (!_.has(o)) throw this.logger.error("Unrecognized frame ID ".concat(o)), new c.Z({
         closeCode: f.$VG.CLOSE_UNSUPPORTED
-      }, "Unrecognized frame ID ".concat(s));
+      }, "Unrecognized frame ID ".concat(o));
       null != t.sdk_version && a.default.track(f.rMx.ACTIVITY_HANDSHAKE, {
         application_id: t.client_id,
         sdk_version: t.sdk_version
       });
       try {
-        var o;
+        var s;
         i = this.createPostMessageProxySocket({
           origin: e,
           postMessageToRPCClient: r,
-          frameId: s,
+          frameId: o,
           version: Number(t.v),
           logger: this.logger,
           postClose: b,
-          encoding: null != (o = t.encoding) ? o : "json"
+          encoding: null != (s = t.encoding) ? s : "json"
         })
       } catch (e) {
         throw this.logger.error("Error opening window socket ".concat(e)), e
       }
       this.logger.info("Socket Opened: ".concat(i.id));
       try {
-        if (await this.validateSocketClient(i, e, t.client_id), !_.has(s)) throw this.logger.error("Frame ID ".concat(s, " no longer exists")), new c.Z({
+        if (await this.validateSocketClient(i, e, t.client_id), !_.has(o)) throw this.logger.error("Frame ID ".concat(o, " no longer exists")), new c.Z({
           closeCode: f.$VG.CLOSE_UNSUPPORTED
-        }, "Unrecognized frame ID ".concat(s));
-        g.set(e, i), _.delete(s), i.authorization.scopes.push(p.b_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
+        }, "Unrecognized frame ID ".concat(o));
+        m.set(e, i), _.delete(o), i.authorization.scopes.push(p.b_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
       } catch (e) {
         throw this.logger.info("Socket Closed: ".concat(i.id, ", ").concat(e.message)), e
       }
-    }), m(this, "handleClose", async (e, t) => {
+    }), h(this, "handleClose", async (e, t) => {
       let r = (await n.e("85441").then(n.t.bind(n, 826753, 23))).default;
       try {
         r.assert(t, (0, d.Z)(r).required().keys({
@@ -184,6 +184,6 @@ class E extends Chunk836560.EventEmitter {
         }, e.message)
       }
       this.disconnectSocket(e, t)
-    }), s.S.subscribe(f.CkL.IFRAME_MOUNT, this.handleIFrameMount), s.S.subscribe(f.CkL.IFRAME_UNMOUNT, this.handleIFrameUnmount), this.validateSocketClient = e, this.logger = t, this.createPostMessageProxySocket = r, this.onFrameHandled = o
+    }), o.S.subscribe(f.CkL.IFRAME_MOUNT, this.handleIFrameMount), o.S.subscribe(f.CkL.IFRAME_UNMOUNT, this.handleIFrameUnmount), this.validateSocketClient = e, this.logger = t, this.createPostMessageProxySocket = r, this.onFrameHandled = s
   }
 }

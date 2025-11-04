@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 581696, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,48 +14,48 @@ var Chunk951288 = require("./951288.js"),
   Chunk589694 = require("./589694.jsx"),
   Chunk62001 = require("./62001.js"),
   Chunk869886 = require("./869886.js");
-let m = function(e) {
+let h = function(e) {
   let {
     scrollContainerRef: t
   } = e, n = (0, l.e7)([a.Z], () => a.Z.notificationItem(), []), {
-    showDot: m
-  } = (0, c.Z)(), h = i.useRef(null), [g, _] = i.useState(false), {
+    showDot: h
+  } = (0, c.Z)(), g = i.useRef(null), [m, _] = i.useState(false), {
     data: b,
     loading: E,
     isRefreshing: O,
-    handleOnRefresh: I,
-    viewabilityConfigCallbackPairs: y
+    handleOnRefresh: y,
+    viewabilityConfigCallbackPairs: v
   } = (0, u.a)({
-    showDot: m,
+    showDot: h,
     notificationItem: n
-  }), v = (0, o.G)();
+  }), I = (0, s.G)();
   i.useEffect(() => () => {
-    v()
-  }, [v]);
+    I()
+  }, [I]);
   let C = (0, l.e7)([a.Z], () => a.Z.hasNewContent(), []),
     S = (0, l.e7)([a.Z], () => a.Z.isHydrating(), []),
-    T = i.useMemo(() => y[0].onViewableItemsChanged, [y]),
+    T = i.useMemo(() => v[0].onViewableItemsChanged, [v]),
     {
       registerItemRef: N
     } = (0, p.m)(b, T, t),
-    P = i.useMemo(() => b.some(e => "end" === e.data.kind), [b]),
-    j = i.useCallback(() => {
-      if (P) return;
+    j = i.useMemo(() => b.some(e => "end" === e.data.kind), [b]),
+    P = i.useCallback(() => {
+      if (j) return;
       let e = t.current;
       if (null == e) return;
       let n = e.scrollHeight;
-      !(n - e.scrollTop - e.clientHeight < 300) || g || E || S || (_(true), (0, s.es)().finally(() => {
+      !(n - e.scrollTop - e.clientHeight < 300) || m || E || S || (_(true), (0, o.es)().finally(() => {
         setTimeout(() => {
           _(false)
         }, 300)
       }))
-    }, [E, g, S, P, t]);
+    }, [E, m, S, j, t]);
   i.useEffect(() => {
     let e = t.current;
-    if (null != e) return e.addEventListener("scroll", j), () => {
-      e.removeEventListener("scroll", j)
+    if (null != e) return e.addEventListener("scroll", P), () => {
+      e.removeEventListener("scroll", P)
     }
-  }, [j, t]);
+  }, [P, t]);
   let x = i.useCallback(() => {
       var e;
       null == (e = t.current) || e.scrollTo({
@@ -64,8 +64,8 @@ let m = function(e) {
       })
     }, [t]),
     A = i.useCallback(() => {
-      I(), x()
-    }, [I, x]),
+      y(), x()
+    }, [y, x]),
     Z = i.useCallback(e => "loading" === e.data.kind ? (0, r.jsx)("div", {
       style: {
         padding: "32px",
@@ -131,9 +131,9 @@ let m = function(e) {
         children: "New content available"
       })
     }), (0, r.jsxs)("div", {
-      ref: h,
+      ref: g,
       className: f.scrollContainer,
-      children: [b.map(e => Z(e)), !P && (g || S) && (0, r.jsx)("div", {
+      children: [b.map(e => Z(e)), !j && (m || S) && (0, r.jsx)("div", {
         style: {
           padding: "16px",
           textAlign: "center"

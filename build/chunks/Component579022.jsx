@@ -1,19 +1,19 @@
 /** Chunk was on 1272 **/
 /** chunk id: 579022, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk28664 = require("./28664.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk41440 = require("./41440.js");
-let s = Math.ceil(2 * Math.PI * 20),
-  o = e => {
+let o = Math.ceil(2 * Math.PI * 20),
+  s = e => {
     let {
       total: t,
       used: n
-    } = e, o = Math.max(0, Math.min(1, n / t)), c = "".concat(Math.floor(100 * o), "%");
+    } = e, s = Math.max(0, Math.min(1, n / t)), c = "".concat(Math.floor(100 * s), "%");
     return (0, r.jsx)(i.u, {
       text: l.intl.formatToPlainString(l.t["2eoRMh"], {
         used: c
@@ -43,11 +43,11 @@ let s = Math.ceil(2 * Math.PI * 20),
                 n = Math.round(false * e + 208),
                 r = Math.round(false * e + 240);
               return "rgb(".concat(t, ", ").concat(n, ", ").concat(r, ")")
-            }(o),
+            }(s),
             strokeDasharray: function(e) {
-              let t = Math.floor(s * e);
-              return "".concat(t, ", ").concat(s)
-            }(o)
+              let t = Math.floor(o * e);
+              return "".concat(t, ", ").concat(o)
+            }(s)
           })]
         }), (0, r.jsx)("aside", {
           className: a.usageInfo,

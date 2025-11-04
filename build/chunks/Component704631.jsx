@@ -19,7 +19,7 @@ function u(e) {
   } = e;
   return (0, r.jsx)(l.Z, {
     guild: t,
-    onDismissed: () => u(s.L.UNKNOWN),
+    onDismissed: () => u(o.L.UNKNOWN),
     onClick: function() {
       (0, i.ZDy)(async () => {
         let {
@@ -45,8 +45,8 @@ function u(e) {
         }({}, t))
       })
     },
-    message: o.intl.string(o.t["1+hiP6"]),
-    cta: o.intl.string(o.t.hvVgAZ),
+    message: s.intl.string(s.t["1+hiP6"]),
+    cta: s.intl.string(s.t.hvVgAZ),
     trackingSource: a.PsQ.HUB_LINK_NOTICE,
     type: a.vID.HUB_LINK,
     image: c

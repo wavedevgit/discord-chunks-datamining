@@ -106,15 +106,15 @@ function B(e) {
 function H(e, t) {
   let n = [],
     r = e.getGuildId();
-  return [A.d4z.GUILD_CATEGORY, ...h.tx].includes(e.type) || n.push(new Promise(t => {
+  return [A.d4z.GUILD_CATEGORY, ...g.tx].includes(e.type) || n.push(new Promise(t => {
     O.Z.whenReady(e.id, () => t()), c.Z.fetchMessages({
       channelId: e.id,
       limit: A.AQB
     })
   })), Promise.all(n).then(() => {
     var n;
-    let i = (!e.isNSFW() || (null == (n = y.default.getCurrentUser()) ? true : n.nsfwAllowed) === true) && t ? O.Z.getMessages(e.id).toArray().map(V) : [],
-      l = Object.values(v.Z.getVoiceStatesForChannel(e.id)).map(t => F(r, e.id, t));
+    let i = (!e.isNSFW() || (null == (n = v.default.getCurrentUser()) ? true : n.nsfwAllowed) === true) && t ? O.Z.getMessages(e.id).toArray().map(V) : [],
+      l = Object.values(I.Z.getVoiceStatesForChannel(e.id)).map(t => F(r, e.id, t));
     return {
       id: e.id,
       name: e.name,
@@ -135,7 +135,7 @@ function V(e) {
       channelId: e.channel_id
     }).map(U),
     n = _.Z.getChannel(e.channel_id),
-    r = null != e.author ? new g.Z(e.author) : true,
+    r = null != e.author ? new m.Z(e.author) : true,
     i = null != e.author ? (0, f.ij)(r, n) : true;
   return {
     id: e.id,
@@ -153,7 +153,7 @@ function V(e) {
     mention_roles: e.mention_roles || e.mentionRoles,
     embeds: e.embeds,
     attachments: e.attachments,
-    author: null != r ? (0, j.Z)(r) : true,
+    author: null != r ? (0, P.Z)(r) : true,
     pinned: e.pinned,
     type: e.type
   }
@@ -165,10 +165,10 @@ function F(e, t, n) {
     deaf: i,
     selfMute: l,
     selfDeaf: a,
-    suppress: s,
-    userId: o
-  } = n, c = y.default.getUser(o);
-  if (null == c) throw Error("Invalid user id: ".concat(o));
+    suppress: o,
+    userId: s
+  } = n, c = v.default.getUser(s);
+  if (null == c) throw Error("Invalid user id: ".concat(s));
   return {
     nick: S.ZP.getName(e, t, c),
     mute: E.Z.isLocalMute(c.id),
@@ -179,18 +179,18 @@ function F(e, t, n) {
       deaf: i,
       self_mute: l,
       self_deaf: a,
-      suppress: s
+      suppress: o
     },
-    user: (0, j.Z)(c)
+    user: (0, P.Z)(c)
   }
 }
 
 function z(e, t) {
   return {
     type: e,
-    user: (0, j.Z)(t),
+    user: (0, P.Z)(t),
     presence: {
-      status: I.Z.getStatus(t.id, null),
+      status: y.Z.getStatus(t.id, null),
       activity: null
     }
   }
@@ -200,7 +200,7 @@ function Y(e, t) {
   var n;
   return null == t ? e : w(Z({}, e), {
     presence: w(Z({}, e.presence), {
-      activity: null != (n = I.Z.getApplicationActivity(e.user.id, t)) ? n : null
+      activity: null != (n = y.Z.getApplicationActivity(e.user.id, t)) ? n : null
     })
   })
 }
@@ -239,7 +239,7 @@ function Q(e, t, n) {
 }
 
 function J(e) {
-  return s.tn.get({
+  return o.tn.get({
     url: A.ANM.APPLICATION_RPC(e),
     oldFormErrors: true,
     retries: 3,
@@ -250,7 +250,7 @@ function J(e) {
     } = e;
     return t
   }, () => {
-    throw new P.Z({
+    throw new j.Z({
       closeCode: A.$VG.INVALID_CLIENTID
     }, "Invalid Client ID")
   })
@@ -260,33 +260,33 @@ async function X(e, t, n) {
   if ("string" == typeof n)
     if (e.transport === x.He.POST_MESSAGE) {
       let e = (0, u.ZP)(t);
-      if (null == e || !B(n, [e])) throw new P.Z({
+      if (null == e || !B(n, [e])) throw new j.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } else {
       let e = await J(t);
-      if (r = m.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new P.Z({
+      if (r = h.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new j.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
-    } null == r && (r = m.ZP.createFromServer(await J(t)));
+    } null == r && (r = h.ZP.createFromServer(await J(t)));
   let {
     id: i,
     name: l,
     icon: a,
-    coverImage: s,
-    flags: o
+    coverImage: o,
+    flags: s
   } = r;
   e.application = {
     id: i,
     name: l,
     icon: a,
-    coverImage: s,
-    flags: o
+    coverImage: o,
+    flags: s
   }
 }
 async function $(e, t) {
   let n = k[e];
-  null == n && (n = new o.Z(t ? 2 : 60, M), k[e] = n), await n.process()
+  null == n && (n = new s.Z(t ? 2 : 60, M), k[e] = n), await n.process()
 }
 
 function ee(e, t) {
@@ -344,13 +344,13 @@ function en(e, t) {
 }
 
 function er(e) {
-  if (e !== x.He.POST_MESSAGE) throw new P.Z({
+  if (e !== x.He.POST_MESSAGE) throw new j.Z({
     errorCode: A.lTL.INVALID_COMMAND
   }, 'command not available from "'.concat(e, " transport"))
 }
 
 function ei(e) {
-  if (null == e.id) throw new P.Z({
+  if (null == e.id) throw new j.Z({
     errorCode: A.lTL.INVALID_COMMAND
   }, "Invalid application");
   return e.id

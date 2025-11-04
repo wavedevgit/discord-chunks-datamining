@@ -17,32 +17,32 @@ let c = function(e) {
   return i.useEffect(() => {
     null != c && (0, a.Pq)(c)
   }, [c]), (0, r.jsxs)("div", {
-    className: o.confirmation,
+    className: s.confirmation,
     children: [(0, r.jsx)("div", {
-      className: o.iconWrapper,
+      className: s.iconWrapper,
       children: (0, r.jsx)(l.wGF, {
         size: "md",
         color: l.TVs.colors.INTERACTIVE_ACTIVE
       })
     }), (0, r.jsxs)("div", {
-      className: o.statusTextContainer,
+      className: s.statusTextContainer,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: (null == n ? true : n.name) != null ? s.intl.formatToPlainString(s.t["0Qlu/6"], {
+        children: (null == n ? true : n.name) != null ? o.intl.formatToPlainString(o.t["0Qlu/6"], {
           guildName: n.name
-        }) : s.intl.string(s.t["5iLvSx"])
+        }) : o.intl.string(o.t["5iLvSx"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: s.intl.string(s.t.FdsK4h)
+        children: o.intl.string(o.t.FdsK4h)
       })]
     }), (0, r.jsx)(l.Button, {
       fullWidth: true,
       onClick: t,
       variant: "critical-primary",
       size: "md",
-      text: s.intl.string(s.t.g9tK0o)
+      text: o.intl.string(o.t.g9tK0o)
     })]
   })
 }

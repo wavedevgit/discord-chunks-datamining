@@ -5,14 +5,14 @@ require.d(exports, {
 });
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let s = "UPDATE_NOT_AVAILABLE";
+let o = "UPDATE_NOT_AVAILABLE";
 
-function o(e) {
-  s = e.type
+function s(e) {
+  o = e.type
 }
 class c extends(i = Chunk442837.ZP.Store) {
   getState() {
-    return s
+    return o
   }
 }(r = "displayName") in c ? Object.defineProperty(c, r, {
   value: "AutoUpdateStore",
@@ -21,10 +21,10 @@ class c extends(i = Chunk442837.ZP.Store) {
   writable: true
 }) : c[r] = "AutoUpdateStore";
 let u = new c(Chunk570140.Z, {
-  CHECKING_FOR_UPDATES: o,
-  UPDATE_NOT_AVAILABLE: o,
-  UPDATE_AVAILABLE: o,
-  UPDATE_MANUALLY: o,
-  UPDATE_ERROR: o,
-  UPDATE_DOWNLOADED: o
+  CHECKING_FOR_UPDATES: s,
+  UPDATE_NOT_AVAILABLE: s,
+  UPDATE_AVAILABLE: s,
+  UPDATE_MANUALLY: s,
+  UPDATE_ERROR: s,
+  UPDATE_DOWNLOADED: s
 })

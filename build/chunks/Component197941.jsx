@@ -34,7 +34,7 @@ let E = {
     scope: {
       [Chunk186901.Gp.ALL]: [Chunk243814.x.RPC, Chunk243814.x.RPC_SCREENSHARE_WRITE]
     },
-    validation: e => (0, h.Z)(e).optional().keys({
+    validation: e => (0, g.Z)(e).optional().keys({
       pid: e.number().optional().min(0)
     }),
     handler(e) {
@@ -42,12 +42,12 @@ let E = {
         args: {
           pid: t
         }
-      } = e, i = d.Z.getCurrentUserActiveStream(), a = d.Z.getStreamerActiveStreamMetadata(), u = (0, c.Z)(o.ZP, f.Z), p = (0, g.Z)();
-      null != p && (null != t && null != a && a.pid !== t && (0, m.isWindows)() ? (0, s.WH)(p.guild_id, p.id, {
+      } = e, i = d.Z.getCurrentUserActiveStream(), a = d.Z.getStreamerActiveStreamMetadata(), u = (0, c.Z)(s.ZP, f.Z), p = (0, m.Z)();
+      null != p && (null != t && null != a && a.pid !== t && (0, h.isWindows)() ? (0, o.WH)(p.guild_id, p.id, {
         pid: t
-      }) : null != i ? (0, s.L6)(false) : null != t && (0, m.isWindows)() ? (0, s.WH)(p.guild_id, p.id, {
+      }) : null != i ? (0, o.L6)(false) : null != t && (0, h.isWindows)() ? (0, o.WH)(p.guild_id, p.id, {
         pid: t
-      }) : null != u ? (0, s.WH)(p.guild_id, p.id, {
+      }) : null != u ? (0, o.WH)(p.guild_id, p.id, {
         pid: u.pid
       }) : (0, l.ZDy)(async () => {
         let {

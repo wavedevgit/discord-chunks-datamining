@@ -41,17 +41,17 @@ function D(e) {
   let {
     guild: t,
     isStudyRoomNotice: n = false
-  } = e, l = (0, b.y)(t.id), d = (0, E.k5)(t.id), P = (0, s.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
+  } = e, l = (0, b.y)(t.id), d = (0, E.k5)(t.id), j = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
     isStageNoticeHidden: D,
     isEventNoticeHidden: k
-  } = (0, s.cj)([g.Z], () => ({
-    isStageNoticeHidden: g.Z.isLiveChannelNoticeHidden({
-      stageId: null == P ? true : P.id
+  } = (0, o.cj)([m.Z], () => ({
+    isStageNoticeHidden: m.Z.isLiveChannelNoticeHidden({
+      stageId: null == j ? true : j.id
     }),
-    isEventNoticeHidden: g.Z.isLiveChannelNoticeHidden({
+    isEventNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       eventId: null == d ? true : d.id
     })
-  }), [P, d]), U = null == l ? true : l.id, G = (0, s.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), B = (0, s.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), H = (0, s.e7)([j.Z], () => j.Z.can(Z.Plq.CONNECT, l)), V = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, s.e7)([x.default], () => x.default.getUser(F), [F]);
+  }), [j, d]), U = null == l ? true : l.id, G = (0, o.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), B = (0, o.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), H = (0, o.e7)([P.Z], () => P.Z.can(Z.Plq.CONNECT, l)), V = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, o.e7)([x.default], () => x.default.getUser(F), [F]);
   i.useEffect(() => {
     null != F && (0, u.PR)(F)
   }, [F]);
@@ -72,14 +72,14 @@ function D(e) {
       activeChannel: i,
       canConnect: l,
       myRole: a,
-      eventCreator: s,
-      speakers: o,
+      eventCreator: o,
+      speakers: s,
       listenerCount: u,
       isEventNoticeHidden: d,
       isStageNoticeHidden: f,
-      isStudyRoomNotice: g
-    } = e, b = null != n && null != i && !f, E = null != t ? (0, I.DK)(t) : null;
-    if (g && null != i) {
+      isStudyRoomNotice: m
+    } = e, b = null != n && null != i && !f, E = null != t ? (0, y.DK)(t) : null;
+    if (m && null != i) {
       let e = (0, p.KS)(i);
       return {
         noticeType: 3,
@@ -112,10 +112,10 @@ function D(e) {
           }),
           canListenIn: l,
           buttonText: e,
-          onClose: () => (0, h.ji)({
+          onClose: () => (0, g.ji)({
             stageId: null == n ? true : n.id
           }),
-          users: o.length > 5 ? o.slice(0, 5) : o,
+          users: s.length > 5 ? s.slice(0, 5) : s,
           overflowUsers: u < 1 ? null : (0, r.jsxs)("div", {
             className: R.pill,
             children: [(0, r.jsx)(c.VWR, {
@@ -148,10 +148,10 @@ function D(e) {
         }),
         canListenIn: l,
         buttonText: e,
-        onClose: () => (0, h.ji)({
+        onClose: () => (0, g.ji)({
           stageId: null == n ? true : n.id
         }),
-        users: o.length > 5 ? o.slice(0, 5) : o,
+        users: s.length > 5 ? s.slice(0, 5) : s,
         overflowUsers: u < 1 ? null : (0, r.jsxs)("div", {
           className: R.pill,
           children: [(0, r.jsx)(c.VWR, {
@@ -173,7 +173,7 @@ function D(e) {
       if (null == e) return {
         noticeType: null
       };
-      let n = m.ZP.getUserCount(t.id, E);
+      let n = h.ZP.getUserCount(t.id, E);
       return {
         noticeType: 1,
         title: t.name,
@@ -187,10 +187,10 @@ function D(e) {
         }),
         canListenIn: false,
         buttonText: L.intl.string(L.t.iW6Xuo),
-        onClose: () => (0, h.ji)({
+        onClose: () => (0, g.ji)({
           eventId: null == t ? true : t.id
         }),
-        users: null == s ? [] : [s],
+        users: null == o ? [] : [o],
         overflowUsers: n < 1 ? null : (0, r.jsxs)("div", {
           className: R.pill,
           children: [(0, r.jsx)(c.r7p, {
@@ -209,7 +209,7 @@ function D(e) {
       }
     } else if (t.entity_type === w.WX.VOICE && null != i) {
       let e = (0, p.KS)(i),
-        n = m.ZP.getUserCount(t.id, E);
+        n = h.ZP.getUserCount(t.id, E);
       return {
         noticeType: 2,
         title: t.name,
@@ -221,10 +221,10 @@ function D(e) {
         }) : null,
         canListenIn: l,
         buttonText: L.intl.string(L.t.nxUtoQ),
-        onClose: () => (0, h.ji)({
+        onClose: () => (0, g.ji)({
           eventId: null == t ? true : t.id
         }),
-        users: null == s ? [] : [s],
+        users: null == o ? [] : [o],
         overflowUsers: n < 1 ? null : (0, r.jsxs)("div", {
           className: R.pill,
           children: [(0, r.jsx)(c.r7p, {
@@ -247,7 +247,7 @@ function D(e) {
     }
   })({
     guildEvent: d,
-    stageInstance: P,
+    stageInstance: j,
     activeChannel: l,
     canConnect: H,
     myRole: V,
@@ -257,7 +257,7 @@ function D(e) {
     isEventNoticeHidden: k,
     isStageNoticeHidden: D,
     isStudyRoomNotice: n
-  }), [d, P, l, H, V, z, G, B, k, D, n]);
+  }), [d, j, l, H, V, z, G, B, k, D, n]);
   return null == Y ? null : (0, r.jsxs)("div", {
     className: R.container,
     children: [null != ee ? (0, r.jsx)(c.P3F, {
@@ -272,7 +272,7 @@ function D(e) {
     }) : null, (0, r.jsxs)("div", {
       className: R.header,
       children: [(0, r.jsx)(A.Z, {
-        color: o.Z.unsafe_rawColors.GREEN_230.css,
+        color: s.Z.unsafe_rawColors.GREEN_230.css,
         width: 16,
         height: 16
       }), (0, r.jsx)(c.Text, {
@@ -307,7 +307,7 @@ function D(e) {
         size: "sm",
         text: J,
         onClick: () => {
-          if (Q) null != l && null != l.getGuildId() && ((0, v.Cq)(l), (0, y.XU)(l.getGuildId(), l.id));
+          if (Q) null != l && null != l.getGuildId() && ((0, I.Cq)(l), (0, v.XU)(l.getGuildId(), l.id));
           else {
             if (null == d) return;
             (0, f.bO)({
@@ -326,7 +326,7 @@ function M(e) {
     user: t,
     guildId: n
   } = e, l = i.useRef(null);
-  return (0, r.jsx)(P.Z, {
+  return (0, r.jsx)(j.Z, {
     targetElementRef: l,
     user: t,
     guildId: n,

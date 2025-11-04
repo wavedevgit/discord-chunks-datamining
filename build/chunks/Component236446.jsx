@@ -165,8 +165,8 @@ function k(e) {
   let t = {
     guildTemplate: (0, c.e7)([g.Z], () => g.Z.getGuildTemplate(e.code)),
     nativeAppState: (0, c.e7)([h.Z], () => h.Z.getState(e.code)),
-    authenticated: (0, c.e7)([b.default], () => b.default.isAuthenticated()),
-    defaultRoute: (0, c.e7)([j.Z], () => j.Z.defaultRoute)
+    authenticated: (0, c.e7)([j.default], () => j.default.isAuthenticated()),
+    defaultRoute: (0, c.e7)([b.Z], () => b.Z.defaultRoute)
   };
   return (0, r.jsx)(D, function(e) {
     for (var t = 1; t < arguments.length; t++) {

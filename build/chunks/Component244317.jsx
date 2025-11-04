@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 244317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,12 +17,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87805 = require("./87805.js");
 
-function g(e) {
+function m(e) {
   let {
     applicationId: t
-  } = e.match.params, [g, _] = i.useState(false), b = i.useRef(false), [E, O] = i.useState(null), I = !u.isPlatformEmbedded && !a.tq && !g, y = i.useMemo(() => (0, l.Z)(), []);
+  } = e.match.params, [m, _] = i.useState(false), b = i.useRef(false), [E, O] = i.useState(null), y = !u.isPlatformEmbedded && !a.tq && !m, v = i.useMemo(() => (0, l.Z)(), []);
   return (i.useEffect(() => {
-    I && true !== b.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
+    y && true !== b.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
       let {
         default: n
       } = e;
@@ -31,44 +31,44 @@ function g(e) {
         params: {
           applicationId: t,
           url: location.href,
-          attemptId: y
+          attemptId: v
         }
       }).then(e => {
         let n = null != e && e;
         O(n), c.default.track(p.rMx.ACTIVITY_DEEP_LINK_ATTEMPTED, {
           application_id: t,
           source_url: location.href,
-          attempt_id: y,
+          attempt_id: v,
           rpc_success: n
         })
       }).catch(() => {
         O(false), c.default.track(p.rMx.ACTIVITY_DEEP_LINK_ATTEMPTED, {
           application_id: t,
           source_url: location.href,
-          attempt_id: y,
+          attempt_id: v,
           rpc_success: false
         })
       }).then(() => n.disconnect())
     }), b.current = true)
-  }, [t, I, y]), I && false !== E) ? true === E ? (0, r.jsxs)("div", {
-    className: h.container,
-    children: [(0, r.jsx)(o.Heading, {
+  }, [t, y, v]), y && false !== E) ? true === E ? (0, r.jsxs)("div", {
+    className: g.container,
+    children: [(0, r.jsx)(s.Heading, {
       variant: "heading-xxl/bold",
-      children: m.intl.string(m.t.csrAMJ)
-    }), (0, r.jsx)(o.Text, {
+      children: h.intl.string(h.t.csrAMJ)
+    }), (0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
-      children: m.intl.string(m.t["m1+IBn"])
-    }), (0, r.jsx)(s.zxk, {
+      children: h.intl.string(h.t["m1+IBn"])
+    }), (0, r.jsx)(o.zxk, {
       variant: "primary",
-      text: m.intl.string(m.t.fIv16B),
+      text: h.intl.string(h.t.fIv16B),
       onClick: () => _(true)
     })]
   }) : (0, r.jsxs)("div", {
-    className: h.container,
-    children: [(0, r.jsx)(o.Heading, {
+    className: g.container,
+    children: [(0, r.jsx)(s.Heading, {
       variant: "heading-xxl/bold",
-      children: m.intl.string(m.t["Z+hCVU"])
-    }), (0, r.jsx)(o.$jN, {})]
+      children: h.intl.string(h.t["Z+hCVU"])
+    }), (0, r.jsx)(s.$jN, {})]
   }) : (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 681435, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk115434 = require("./115434.js"),
@@ -14,14 +14,14 @@ var Chunk647438 = require("./647438.js"),
   Chunk794324 = require("./794324.js"),
   Chunk302800 = require("./302800.js"),
   Chunk921944 = require("./921944.js");
-let m = () => {
+let h = () => {
   var e;
   let t = (0, Chunk442837.e7)([Chunk874703.Z], () => Chunk874703.Z.getMarketingBySurface(Chunk115434.K.DESKTOP_SHOP_BUTTON)),
     n = !(0, Chunk481060.$sL)(),
-    [m, h] = (0, Chunk243778.XR)(require ? Chunk704215.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == exports ? true : exports.version) ? module : 0, true, true),
-    g = (0, Chunk794324.mB)(exports),
-    _ = null != m ? ((e, t) => {
-      var n, r, i, a, s, o, c, u;
+    [h, g] = (0, Chunk243778.XR)(require ? Chunk704215.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == exports ? true : exports.version) ? module : 0, true, true),
+    m = (0, Chunk794324.mB)(exports),
+    _ = null != h ? ((e, t) => {
+      var n, r, i, a, o, s, c, u;
       if ((null == t ? true : t.type) === l.Z.COACHTIP || e.hasPreviewAssets) {
         let i = null != t ? {
           title: () => t.title,
@@ -81,15 +81,15 @@ let m = () => {
           entrypointBackgroundStyle: null == e ? true : e.style,
           entryPointBackgroundAssets: {
             srcDarkHovered: null == e || null == (a = e.asset) || null == (i = a.hovered) ? true : i.dark,
-            srcLightHovered: null == e || null == (o = e.asset) || null == (s = o.hovered) ? true : s.light
+            srcLightHovered: null == e || null == (s = e.asset) || null == (o = s.hovered) ? true : o.light
           }
         }
       }
       return null
-    })(g, exports) : null,
+    })(m, exports) : null,
     b = Chunk647438.useCallback(() => {
-      null != _ && h(Chunk921944.L.AUTO)
-    }, [_, h]);
+      null != _ && g(Chunk921944.L.AUTO)
+    }, [_, g]);
   return {
     shopButtonDisplayOptions: _,
     dismissShopButtonDC: b

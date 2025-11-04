@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 326145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,20 +22,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk76531 = require("./76531.js"),
   Chunk718215 = require("./718215.js");
 
-function I(e) {
+function y(e) {
   let {
     guildId: t,
     channelId: n
   } = e, {
     ref: l,
-    width: I,
-    height: y
-  } = (0, c.ZP)(), v = i.useCallback(() => {
-    null != t && null != n && ((0, g.I1)(t), (0, _.default)({
+    width: y,
+    height: v
+  } = (0, c.ZP)(), I = i.useCallback(() => {
+    null != t && null != n && ((0, m.I1)(t), (0, _.default)({
       guildId: t,
       returnChannelId: n
     }))
-  }, [t, n]), C = (0, s.e7)([f.Z], () => f.Z.getGuild(t)), S = i.useMemo(() => null == C ? null : m.ZP.getGuildSplashURL({
+  }, [t, n]), C = (0, o.e7)([f.Z], () => f.Z.getGuild(t)), S = i.useMemo(() => null == C ? null : h.ZP.getGuildSplashURL({
     id: C.id,
     splash: C.splash
   }), [C]), T = (0, d.N)(S);
@@ -47,13 +47,13 @@ function I(e) {
     children: [null != S ? (0, r.jsx)(u.Z, {
       className: O.artwork,
       src: S,
-      width: I,
-      height: y,
+      width: y,
+      height: v,
       imageClassName: O.cover
     }) : (0, r.jsx)(p.Z, {}), null != T && null != S && (0, r.jsx)("div", {
       className: O.gradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, h.aD)(T, .16), " 0%, ").concat((0, h.aD)(T, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, g.aD)(T, .16), " 0%, ").concat((0, g.aD)(T, 1), " 100%)")
       }
     }), null != S && (0, r.jsx)("div", {
       className: O.gradient
@@ -61,20 +61,20 @@ function I(e) {
       className: a()(E.explainerContainer, E.transparentBackground),
       children: [(0, r.jsxs)("div", {
         className: E.header,
-        children: [(0, r.jsx)(o.Heading, {
+        children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xxl/normal",
           color: "always-white",
           children: b.intl.string(b.t.CCmhpF)
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-lg/normal",
           color: "always-white",
           children: b.intl.string(b.t.gRAHcZ)
         })]
-      }), (0, r.jsx)(o.Button, {
+      }), (0, r.jsx)(s.Button, {
         variant: "overlay-primary",
         size: "md",
         text: b.intl.string(b.t.VVFjAC),
-        onClick: v
+        onClick: I
       })]
     })]
   })

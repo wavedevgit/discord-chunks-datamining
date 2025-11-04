@@ -19,7 +19,7 @@ function f(e) {
   return "framepip:".concat(e.applicationId)
 }
 
-function m() {
+function h() {
   let e = Chunk591472.Z.getConnectedFrame();
   if (null == module) {
     let e = p;
@@ -35,7 +35,7 @@ function m() {
   return Chunk570140.Z.wait(() => Chunk519938.bA(exports, Chunk981631.NYg.FRAME, {})), void(p = exports)
 }
 
-function h() {
+function g() {
   if ((0, Chunk958185.Z)({
       LayerStore: Chunk819640.Z,
       PopoutWindowStore: Chunk928518.Z
@@ -47,12 +47,12 @@ function h() {
   let e = p;
   null != module && Chunk366050.Z.isOpen(module) && Chunk570140.Z.wait(() => Chunk519938.$Z(module))
 }
-class g extends Chunk317770.Z {
+class m extends Chunk317770.Z {
   _initialize() {
-    Chunk591472.Z.addChangeListener(m), Chunk819640.Z.addChangeListener(h)
+    Chunk591472.Z.addChangeListener(h), Chunk819640.Z.addChangeListener(g)
   }
   _terminate() {
-    Chunk591472.Z.removeChangeListener(m), Chunk819640.Z.removeChangeListener(h)
+    Chunk591472.Z.removeChangeListener(h), Chunk819640.Z.removeChangeListener(g)
   }
 }
-let _ = new g
+let _ = new m

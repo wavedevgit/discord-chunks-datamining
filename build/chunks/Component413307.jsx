@@ -20,10 +20,10 @@ let d = e => {
   return (0, r.jsx)(a.Z, {
     guild: t,
     onDismissed: n,
-    onClick: () => s.Z.open(t.id, o.pNK.COMMUNITY),
+    onClick: () => o.Z.open(t.id, s.pNK.COMMUNITY),
     message: c.intl.string(c.t["2klD0Z"]),
-    trackingSource: o.PsQ.ENABLE_PUBLIC_GUILD_UPSELL_NOTICE,
-    type: o.vID.PUBLIC_UPSELL,
+    trackingSource: s.PsQ.ENABLE_PUBLIC_GUILD_UPSELL_NOTICE,
+    type: s.vID.PUBLIC_UPSELL,
     image: u,
     cta: c.intl.string(c.t.hvVgAZ)
   })

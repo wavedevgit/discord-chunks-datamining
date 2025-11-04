@@ -47,7 +47,7 @@ function N(e) {
   return e
 }
 
-function P(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = [],
+let P = [],
   x = e => {
     let {
       tagText: t,
@@ -76,11 +76,11 @@ let j = [],
       subHeader: n,
       imageSrc: i,
       tagText: l,
-      wideStyle: s
+      wideStyle: o
     } = e;
     return (0, r.jsxs)("div", {
       className: a()(T.featureCard, {
-        [T.wideStyle]: s
+        [T.wideStyle]: o
       }),
       children: [null != l ? (0, r.jsx)(x, {
         tagText: l,
@@ -88,7 +88,7 @@ let j = [],
       }) : null, (0, r.jsx)("img", {
         alt: "",
         className: a()(T.featureCardImg, {
-          [T.wideStyle]: s
+          [T.wideStyle]: o
         }),
         src: i
       }), (0, r.jsxs)("div", {
@@ -126,21 +126,21 @@ function Z(e) {
   } = e, {
     onClose: V,
     transitionState: F
-  } = l, z = (0, g.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), [q, K] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(q), el = i.useRef(Q), ea = i.useRef(X), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(j), ed = i.useRef(false);
+  } = l, z = (0, m.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), [q, K] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(q), el = i.useRef(Q), ea = i.useRef(X), eo = i.useRef(ee), es = i.useRef(en), [ec, eu] = i.useState(P), ed = i.useRef(false);
 
   function ep() {
     let e = Date.now(),
       t = e - ei.current,
       n = el.current,
       r = ea.current;
-    return es.current && (J(n += t), eo.current || $(r += t)), K(e), [n, r]
+    return eo.current && (J(n += t), es.current || $(r += t)), K(e), [n, r]
   }
   return (0, f.Z)({
-    type: s.ImpressionTypes.MODAL,
-    name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
+    type: o.ImpressionTypes.MODAL,
+    name: o.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
     properties: {
       component_id: t,
-      component_type: o.I.ANNOUNCEMENT_MODAL
+      component_type: s.I.ANNOUNCEMENT_MODAL
     }
   }), i.useEffect(() => {
     let e = async () => {
@@ -155,13 +155,13 @@ function Z(e) {
               type: "text/vtt"
             }),
             i = URL.createObjectURL(r);
-          return P(N({}, e), {
+          return j(N({}, e), {
             src: i
           })
         });
         eu(await Promise.all(t))
       } catch (e) {
-        y.Z.captureException(e), eu(j)
+        v.Z.captureException(e), eu(P)
       }
     };
     true !== ed.current && e(), ed.current = true
@@ -170,14 +170,14 @@ function Z(e) {
       URL.revokeObjectURL(e.src)
     })
   }, [ec]), i.useEffect(() => {
-    ei.current = q, el.current = Q, ea.current = X, es.current = ee, eo.current = en
+    ei.current = q, el.current = Q, ea.current = X, eo.current = ee, es.current = en
   }, [q, Q, X, ee, en]), i.useEffect(() => () => {
     if ("video" === x.type || "embed" === x.type) {
       let [e, t] = ep();
-      I.default.track(v.rMx.CHANGE_LOG_VIDEO_PLAYED, {
+      y.default.track(I.rMx.CHANGE_LOG_VIDEO_PLAYED, {
         change_log_id: G,
         seconds_played: Math.round(e / 1e3)
-      }), I.default.track(v.rMx.CHANGE_LOG_VIDEO_UNMUTE, {
+      }), y.default.track(I.rMx.CHANGE_LOG_VIDEO_UNMUTE, {
         change_log_id: G,
         seconds_unmuted: Math.round(t / 1e3)
       })
@@ -185,10 +185,10 @@ function Z(e) {
   }, [G, x.type]), i.useEffect(() => {
     null != w && (0, E.kk)(w);
     let e = Date.now();
-    return I.default.track(v.rMx.CHANGE_LOG_OPENED, {
+    return y.default.track(I.rMx.CHANGE_LOG_OPENED, {
       change_log_id: G
     }), () => {
-      I.default.track(v.rMx.CHANGE_LOG_CLOSED, {
+      y.default.track(I.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: G,
         seconds_open: Math.round((Date.now() - e) / 1e3)
       }), null != w && (0, b.Q3)(w, {
@@ -222,7 +222,7 @@ function Z(e) {
           src: x.src,
           poster: x.poster,
           onPlay: e => {
-            I.default.track(v.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
+            y.default.track(I.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: G
             }), K(Date.now()), et(true), er(e.currentTarget.muted)
           },
@@ -246,20 +246,20 @@ function Z(e) {
               default: e.isDefault
             }, e.locale)
           })
-        }) : "embed" === x.type ? (0, r.jsx)(m.BC, {
+        }) : "embed" === x.type ? (0, r.jsx)(h.BC, {
           className: a()(T.video, Z),
           allowFullScreen: false,
           href: x.href,
           thumbnail: x.thumbnail,
           video: x.embed,
-          provider: h.pn.YOUTUBE,
+          provider: g.pn.YOUTUBE,
           maxWidth: x.embed.width,
           maxHeight: x.embed.height,
           renderVideoComponent: O.lV,
           renderImageComponent: O.Yi,
           renderLinkComponent: O.iT,
           onPlay: () => {
-            I.default.track(v.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
+            y.default.track(I.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: G
             })
           }
@@ -284,7 +284,7 @@ function Z(e) {
           className: a()(T.featureCardGroup, {
             [T.wideStyle]: Y
           }),
-          children: U.map((e, t) => (0, r.jsx)(A, P(N({}, e), {
+          children: U.map((e, t) => (0, r.jsx)(A, j(N({}, e), {
             wideStyle: Y
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {

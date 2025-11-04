@@ -5,9 +5,8 @@ require.d(exports, {
   VZ: () => d,
   ZY: () => f,
   b5: () => u,
-  cM: () => h,
   q3: () => p
-});
+}), require("./647438.js");
 var Chunk818083 = require("./818083.js"),
   Chunk427164 = require("./427164.js"),
   Chunk638395 = require("./638395.js"),
@@ -40,7 +39,7 @@ function u(e) {
       autoTrackExposure: t,
       disable: n
     }),
-    i = m.useExperiment({
+    i = g.useExperiment({
       location: e
     }, {
       autoTrackExposure: false,
@@ -59,7 +58,7 @@ function d(e) {
       disable: n
     });
   {
-    let t = m.getCurrentConfig({
+    let t = g.getCurrentConfig({
       location: e
     }, {
       autoTrackExposure: false,
@@ -109,15 +108,16 @@ function p(e) {
     disable: !n
   })
 }
-let h = (0, Chunk427164.le)({
+let h = {
+    isNewHeaderAndInteractions: false,
+    isNewCardDesign: false,
+    isBottomSheetInteractions: false,
+    uxVariation: "default"
+  },
+  m = (0, Chunk427164.le)({
     name: "2025-09-destination-icymi-ux-v2",
     kind: "user",
-    defaultConfig: {
-      isNewHeaderAndInteractions: false,
-      isNewCardDesign: false,
-      isBottomSheetInteractions: false,
-      uxVariation: "default"
-    },
+    defaultConfig: h,
     variations: {
       1: {
         isNewHeaderAndInteractions: true,
@@ -145,7 +145,7 @@ let h = (0, Chunk427164.le)({
       }
     }
   }),
-  m = (0, Chunk818083.B)({
+  g = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-10_icymi_desktop_client",
     label: "ICYMI desktop client",

@@ -30,17 +30,17 @@ let C = Math.ceil(Math.sqrt(115200)),
     var t, n;
     let {
       selected: l
-    } = e, T = (0, o.JA)("quests"), N = i.useRef(null), {
-      shouldShowPopover: P,
-      shouldShowGradientAndBadge: j,
+    } = e, T = (0, s.JA)("quests"), N = i.useRef(null), {
+      shouldShowPopover: j,
+      shouldShowGradientAndBadge: P,
       dismissContent: x
     } = function() {
       let {
         enabled: e
-      } = g.GE.useConfig({
+      } = m.GE.useConfig({
         location: E.dr.PRIVATE_CHANNELS_LIST
-      }), [t, n] = (0, m.US)(e ? [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], I.R.PRIVATE_CHANNELS_LIST, true), r = i.useCallback(() => {
-        e && n(I.L.TAKE_ACTION)
+      }), [t, n] = (0, h.US)(e ? [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], y.R.PRIVATE_CHANNELS_LIST, true), r = i.useCallback(() => {
+        e && n(y.L.TAKE_ACTION)
       }, [n, e]);
       return {
         shouldShowPopover: t === c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING,
@@ -97,7 +97,7 @@ let C = Math.ceil(Math.sqrt(115200)),
       }), w({
         glowSpring: 1,
         delay: 700
-      }), h.default.track(O.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+      }), g.default.track(O.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
     }, [R, w]), [U, G] = i.useState(false), B = i.useCallback(e => {
       G(e.contentRect.width)
     }, []), H = (0, p.y)(B, [], {
@@ -105,7 +105,7 @@ let C = Math.ceil(Math.sqrt(115200)),
     });
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: v.wrapper,
+        className: I.wrapper,
         onMouseEnter: D,
         onMouseLeave: M,
         onFocus: D,
@@ -134,23 +134,23 @@ let C = Math.ceil(Math.sqrt(115200)),
           return e
         }({
           className: a()({
-            [v.withGradientAndBadge]: j
+            [I.withGradientAndBadge]: P
           }),
           icon: u.qDn,
           listItemRef: N,
           onClick: A,
           route: O.Z5c.QUEST_HOME_V2,
           selected: l,
-          text: y.intl.string(y.t.JALI2K)
+          text: v.intl.string(v.t.JALI2K)
         }, T), n = n = {
-          children: j && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(s.animated.div, {
-              className: v.shine,
+          children: P && (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(o.animated.div, {
+              className: I.shine,
               style: {
                 transform: L.to(e => "translateX(calc(".concat(e * U, "px + ").concat(e * C, "px)) translateY(-50%) rotate(45deg)"))
               }
-            }), (0, r.jsx)(s.animated.div, {
-              className: v.glow,
+            }), (0, r.jsx)(o.animated.div, {
+              className: I.glow,
               style: {
                 opacity: Z.to({
                   range: [0, 1],
@@ -158,8 +158,8 @@ let C = Math.ceil(Math.sqrt(115200)),
                 })
               }
             }), (0, r.jsx)(u.IGR, {
-              className: v.badge,
-              text: y.intl.string(y.t.y2b7CA),
+              className: I.badge,
+              text: v.intl.string(v.t.y2b7CA),
               color: u.TVs.colors.BG_BRAND.css
             })]
           })
@@ -173,7 +173,7 @@ let C = Math.ceil(Math.sqrt(115200)),
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
-      }), P && (0, r.jsx)(b.Z, {
+      }), j && (0, r.jsx)(b.Z, {
         targetElementRef: N,
         onNavigateToQuestHome: A,
         onRender: k,

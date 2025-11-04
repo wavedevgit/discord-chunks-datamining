@@ -35,32 +35,32 @@ function S(e) {
     location: "GlobalDiscoverySidebar"
   }, {
     autoTrackExposure: true
-  }), l = _.Z.useField("selectedTab"), v = i.useMemo(() => (function(e, t) {
+  }), l = _.Z.useField("selectedTab"), I = i.useMemo(() => (function(e, t) {
     switch (e) {
       case O.GlobalDiscoveryTab.SERVERS:
-        return (0, r.jsx)(o.QTo, {
+        return (0, r.jsx)(s.QTo, {
           color: "currentColor"
         });
       case O.GlobalDiscoveryTab.APPS:
-        return t ? (0, r.jsx)(o.iWm, {
+        return t ? (0, r.jsx)(s.iWm, {
           color: "currentColor"
-        }) : (0, r.jsx)(o.jje, {
+        }) : (0, r.jsx)(s.jje, {
           color: "currentColor"
         });
       case O.GlobalDiscoveryTab.QUESTS:
-        return (0, r.jsx)(o.qDn, {
+        return (0, r.jsx)(s.qDn, {
           color: "currentColor"
         })
     }
   })(t, n), [t, n]), S = i.useMemo(() => (0, b.s)(t), [t]), T = l === t, N = i.useCallback(() => {
     switch (t) {
       case O.GlobalDiscoveryTab.QUESTS:
-        return T && h.Z.resetState(), g.default.track(I.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
+        return T && g.Z.resetState(), m.default.track(y.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
           client_ad_session_id: (0, u.Gy)().uuid
         }), (0, E.transitionToGlobalDiscovery)({
           tab: O.GlobalDiscoveryTab.QUESTS,
-          location: y.dr.DISCOVERY_SIDEBAR,
-          questContent: s.j.DISCOVERY_SIDEBAR
+          location: v.dr.DISCOVERY_SIDEBAR,
+          questContent: o.j.DISCOVERY_SIDEBAR
         });
       case O.GlobalDiscoveryTab.APPS:
         if (!T) return (0, E.transitionToGlobalDiscovery)({
@@ -80,7 +80,7 @@ function S(e) {
         if (!T) return (0, E.transitionToGlobalDiscovery)({
           tab: t
         });
-        f.Z.resetState(), m.Z.resetState();
+        f.Z.resetState(), h.Z.resetState();
         return;
       default:
         return (0, E.transitionToGlobalDiscovery)({
@@ -88,15 +88,15 @@ function S(e) {
         })
     }
   }, [t, T]);
-  return (0, r.jsxs)(o.P3F, {
+  return (0, r.jsxs)(s.P3F, {
     onClick: N,
     className: a()(C.navItem, {
       [C.selected]: T
     }),
     children: [(0, r.jsx)("div", {
       className: C.navItemIcon,
-      children: v
-    }), (0, r.jsx)(o.Text, {
+      children: I
+    }), (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "none",
       children: S

@@ -16,8 +16,8 @@ var Chunk907862 = require("./907862.js"),
 let p = e => {
   let {
     targetElementRef: t
-  } = e, p = (0, o.eW)(), f = () => {
-    (0, o.ZL)()
+  } = e, p = (0, s.eW)(), f = () => {
+    (0, s.ZL)()
   };
   return (0, r.jsx)(i.J2, {
     targetElementRef: t,
@@ -38,7 +38,7 @@ let p = e => {
     actions: [{
       text: u.intl.string(u.t.t2N81y),
       onClick: () => {
-        s.default.track(c.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+        o.default.track(c.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
           location_stack: [a.Z.HOME_PAGE_PREMIUM_TAB]
         }), f(), (0, l.ZDy)(async () => {
           let {

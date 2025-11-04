@@ -24,19 +24,19 @@ let b = ["1402418171662569542"],
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_ACTIVITIES_WRITE, Chunk186901.lH]
       },
-      validation: e => (0, h.Z)(e).required().keys({
+      validation: e => (0, g.Z)(e).required().keys({
         pid: e.number().min(0),
-        activity: (0, h.Z)(e).keys({
+        activity: (0, g.Z)(e).keys({
           name: e.string().min(1).max(128),
           state: e.string().min(2).max(128),
           state_url: e.string().uri().min(1).max(256),
           details: e.string().min(2).max(128),
           details_url: e.string().uri().min(1).max(256),
-          timestamps: (0, h.Z)(e).keys({
+          timestamps: (0, g.Z)(e).keys({
             start: e.number().min(1),
             end: e.number().min(1)
           }),
-          assets: (0, h.Z)(e).keys({
+          assets: (0, g.Z)(e).keys({
             large_image: e.string().min(1).max(300),
             large_text: e.string().min(2).max(128),
             large_url: e.string().uri().min(1).max(256),
@@ -45,17 +45,17 @@ let b = ["1402418171662569542"],
             small_url: e.string().uri().min(1).max(256),
             invite_cover_image: e.string().min(1).max(300)
           }),
-          party: (0, h.Z)(e).keys({
+          party: (0, g.Z)(e).keys({
             id: e.string().min(2).max(128),
             size: e.array().items(e.number().min(0)).length(2),
             privacy: e.number().default(_.RYY.PRIVATE).valid([_.RYY.PRIVATE, _.RYY.PUBLIC])
           }),
-          secrets: (0, h.Z)(e).keys({
+          secrets: (0, g.Z)(e).keys({
             match: e.string().min(2).max(128),
             join: e.string().min(2).max(128),
             spectate: e.string().min(2).max(128)
           }),
-          buttons: e.array().items((0, h.Z)(e).keys({
+          buttons: e.array().items((0, g.Z)(e).keys({
             label: e.string().min(1).max(32).required(),
             url: e.string().uri().min(1).max(512).required()
           })).min(1).max(2),
@@ -70,38 +70,38 @@ let b = ["1402418171662569542"],
         let l, {
           socket: a,
           args: {
-            pid: h,
+            pid: g,
             activity: E
           },
           isSocketConnected: O
         } = e;
-        if (![g.He.IPC, g.He.WEBSOCKET, g.He.POST_MESSAGE].includes(a.transport)) throw new m.Z({
+        if (![m.He.IPC, m.He.WEBSOCKET, m.He.POST_MESSAGE].includes(a.transport)) throw new h.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, 'command not available from "'.concat(a.transport, '" transport'));
-        if (null == h && g.He.IPC === a.transport) throw new m.Z({
+        if (null == g && m.He.IPC === a.transport) throw new h.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, "nonzero pid required");
-        if (null == E) return s.Z.dispatch({
+        if (null == E) return o.Z.dispatch({
           type: "LOCAL_ACTIVITY_UPDATE",
           socketId: a.id,
-          pid: h,
+          pid: g,
           activity: E
         }), Promise.resolve(E);
-        let I = {};
+        let y = {};
         E.name || (E.name = a.application.name);
-        let y = a.application.id;
-        E.application_id = y;
-        let v = a.transport === g.He.POST_MESSAGE;
-        E.platform = v ? _.M7m.EMBEDDED : _.M7m.DESKTOP;
-        let C = c.Z.getApplication(null != y ? y : true),
+        let v = a.application.id;
+        E.application_id = v;
+        let I = a.transport === m.He.POST_MESSAGE;
+        E.platform = I ? _.M7m.EMBEDDED : _.M7m.DESKTOP;
+        let C = c.Z.getApplication(null != v ? v : true),
           S = null != (r = E.instance) && r,
           T = null == (t = E.party) ? true : t.privacy;
         delete E.instance, null == (n = E.party) || delete n.privacy;
-        let N = (0, o.S)(E, S, v, null != C && (0, u.g)(C) && v, T);
+        let N = (0, s.S)(E, S, I, null != C && (0, u.g)(C) && I, T);
         N > 0 && (E.flags = N);
         let {
-          assets: P,
-          party: j,
+          assets: j,
+          party: P,
           secrets: x,
           timestamps: A,
           buttons: Z,
@@ -109,31 +109,31 @@ let b = ["1402418171662569542"],
         } = E;
         if (null == w && (E.type = _.IIU.PLAYING), null != x) {
           let e = i().values(x).filter(e => !!e);
-          if (null != j && i().intersection(e, [j.id]).length > 0 && !b.includes(a.application.id)) throw new m.Z({
+          if (null != P && i().intersection(e, [P.id]).length > 0 && !b.includes(a.application.id)) throw new h.Z({
             errorCode: _.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot match the party id");
-          if (i().uniq(e).length < e.length) throw new m.Z({
+          if (i().uniq(e).length < e.length) throw new h.Z({
             errorCode: _.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets must be unique");
-          if (null != Z) throw new m.Z({
+          if (null != Z) throw new h.Z({
             errorCode: _.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot currently be sent with buttons")
         }
-        if (null != Z && (I.button_urls = Z.map(e => e.url), E.buttons = Z.map(e => e.label)), E.metadata = I, null != A)
+        if (null != Z && (y.button_urls = Z.map(e => e.url), E.buttons = Z.map(e => e.label)), E.metadata = y, null != A)
           for (let e of Object.keys(A)) Date.now().toString().length - A[e].toString().length > 2 && (A[e] = Math.floor(A[e] * f.Z.Millis.SECOND));
-        if (null == P) l = Promise.resolve([]);
+        if (null == j) l = Promise.resolve([]);
         else {
           if (null == a.application || null == a.application.id) throw Error();
-          l = (0, p.hR)(a.application.id, [P.large_image, P.small_image, P.invite_cover_image])
+          l = (0, p.hR)(a.application.id, [j.large_image, j.small_image, j.invite_cover_image])
         }
         return l.then(e => {
           var t, n, r, i;
-          let [l, o, c] = e;
-          if (null != P && (null != l ? P.large_image = l : delete P.large_image, null != o ? P.small_image = o : delete P.small_image, null != c ? P.invite_cover_image = c : delete P.invite_cover_image), !O()) return;
-          s.Z.dispatch({
+          let [l, s, c] = e;
+          if (null != j && (null != l ? j.large_image = l : delete j.large_image, null != s ? j.small_image = s : delete j.small_image, null != c ? j.invite_cover_image = c : delete j.invite_cover_image), !O()) return;
+          o.Z.dispatch({
             type: "LOCAL_ACTIVITY_UPDATE",
             socketId: a.id,
-            pid: h,
+            pid: g,
             activity: E,
             partyPrivacy: T
           });
@@ -149,7 +149,7 @@ let b = ["1402418171662569542"],
             state: null != (i = E.state) ? i : "",
             has_urls: null != E.state_url || null != E.details_url || (null == (t = E.assets) ? true : t.large_url) != null || (null == (n = E.assets) ? true : n.small_url) != null
           };
-          return null != u && (f.has_match_secret = !!u.match, f.has_join_secret = !!u.join), null != P && (f.has_images = !!(P.large_image || P.small_image || P.invite_cover_image)), null != p && (f.party_max = null != p.size && p.size[1] > 0 ? p.size[1] : true, f.party_id = p.id), d.default.track(_.rMx.ACTIVITY_UPDATED, f), E
+          return null != u && (f.has_match_secret = !!u.match, f.has_join_secret = !!u.join), null != j && (f.has_images = !!(j.large_image || j.small_image || j.invite_cover_image)), null != p && (f.party_max = null != p.size && p.size[1] > 0 ? p.size[1] : true, f.party_id = p.id), d.default.track(_.rMx.ACTIVITY_UPDATED, f), E
         })
       }
     }

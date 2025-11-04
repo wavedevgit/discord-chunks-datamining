@@ -16,11 +16,11 @@ var Chunk685072 = require("./685072.jsx"),
   Chunk870569 = require("./870569.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function h(e) {
   var t, n;
   let {
     tooltipText: l,
-    onClick: o
+    onClick: s
   } = e, {
     parentAnalyticsLocation: c
   } = (0, a.ZP)(), {
@@ -47,7 +47,7 @@ function m(e) {
   }({
     tooltipText: l,
     onClick: () => {
-      (0, s.v)(c, s.d.DISCONNECT), o()
+      (0, o.v)(c, o.d.DISCONNECT), s()
     }
   }, u), n = n = {
     icon: (0, r.jsx)(d, {
@@ -65,11 +65,11 @@ function m(e) {
   }), t))
 }
 
-function h(e) {
+function g(e) {
   let {
     channel: t
   } = e;
-  return (0, r.jsx)(m, {
+  return (0, r.jsx)(h, {
     tooltipText: f.intl.string(f.t.SMKyih),
     onClick: () => {
       if ((0, d.Z)(t)) return void(0, u.Us)(t);
@@ -78,14 +78,14 @@ function h(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     channel: t
   } = e;
-  return (0, r.jsx)(m, {
+  return (0, r.jsx)(h, {
     tooltipText: f.intl.string(f.t["6vrfgt"]),
     onClick: () => {
-      if ((0, c.Z)(t)) return void(0, o.lC)(t);
+      if ((0, c.Z)(t)) return void(0, s.lC)(t);
       l.default.disconnect()
     }
   })
@@ -95,9 +95,9 @@ function _(e) {
   let {
     channel: t
   } = e;
-  return t.isGuildStageVoice() ? (0, r.jsx)(h, {
+  return t.isGuildStageVoice() ? (0, r.jsx)(g, {
     channel: t
-  }) : (0, r.jsx)(g, {
+  }) : (0, r.jsx)(m, {
     channel: t
   })
 }

@@ -18,6 +18,6 @@ function c(e) {
     className: t,
     onClick: a.dG,
     icon: i.xx7,
-    tooltip: o.intl.string(s.default["CdU/PF"])
+    tooltip: s.intl.string(o.default["CdU/PF"])
   })
 }

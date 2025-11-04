@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 258220, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => m,
+  default: () => h,
   r: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -16,13 +16,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx");
 let f = "Activity Encourages Hardware Acceleration";
 
-function m(e) {
+function h(e) {
   var t;
   let {
     applicationId: n,
-    transitionState: m,
-    onClose: h
-  } = e, [g, _] = i.useState(false), [b] = (0, o.Z)([n]), E = null != (t = null == b ? true : b.name) ? t : "This Activity";
+    transitionState: h,
+    onClose: g
+  } = e, [m, _] = i.useState(false), [b] = (0, s.Z)([n]), E = null != (t = null == b ? true : b.name) ? t : "This Activity";
   i.useEffect(() => {
     c.default.track(d.rMx.OPEN_MODAL, {
       type: f
@@ -30,26 +30,26 @@ function m(e) {
   }, []);
   let O = async () => {
     let e = "temporary";
-    g && (e = "permanent", s.ZP.updatedUnsyncedSettings({
+    m && (e = "permanent", o.ZP.updatedUnsyncedSettings({
       disableActivityHardwareAccelerationPrompt: true
     })), c.default.track(d.rMx.MODAL_DISMISSED, {
       type: f,
       dismiss_type: e
-    }), await h()
-  }, I = async () => {
+    }), await g()
+  }, y = async () => {
     c.default.track(d.rMx.ACTIVITY_ENABLE_HARDWARE_ACCELERATION, {
       application_id: n
     }), u.ZP.setEnableHardwareAcceleration(true), await O()
   };
   return (0, r.jsx)(l.Modal, {
     size: "md",
-    transitionState: m,
+    transitionState: h,
     onClose: O,
     "aria-label": p.intl.string(p.t.NQkK4l),
     title: p.intl.string(p.t.NQkK4l),
     actionBarInput: (0, r.jsx)(a.Checkbox, {
-      checked: g,
-      onChange: () => _(!g),
+      checked: m,
+      onChange: () => _(!m),
       label: p.intl.string(p.t["5E9SB9"]),
       labelType: "secondary"
     }),
@@ -60,7 +60,7 @@ function m(e) {
     }, {
       variant: "primary",
       text: p.intl.string(p.t["/wlDqi"]),
-      onClick: I
+      onClick: y
     }],
     children: (0, r.jsx)(a.Text, {
       variant: "text-md/normal",

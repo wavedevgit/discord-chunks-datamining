@@ -49,7 +49,7 @@ function M(e) {
   } = e;
   return n ? (0, r.jsx)(_.R, {
     focusSectionProps: i
-  }) : (0, r.jsx)(v.d, {
+  }) : (0, r.jsx)(I.d, {
     withFastTravel: t,
     focusSectionProps: i
   })
@@ -69,12 +69,12 @@ let k = Chunk647438.memo(function() {
   } = (0, Chunk336219.t)({
     location: "AppTitleBar"
   }), {
-    backForwardButtons: s,
+    backForwardButtons: o,
     titlebarIconSize: _
   } = (0, Chunk719961.T)({
     location: "AppTitleBar"
   }), {
-    hasBugReporterAccess: v
+    hasBugReporterAccess: I
   } = Chunk174556.Z.useExperiment({
     location: "HeaderBar"
   }, {
@@ -115,7 +115,7 @@ let k = Chunk647438.memo(function() {
         return (0, r.jsx)(w.TF, {
           className: t,
           leading: (0, r.jsxs)(r.Fragment, {
-            children: [s && (0, r.jsx)(g.Z, {
+            children: [o && (0, r.jsx)(m.Z, {
               firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === V ? e : true
             }), U && (0, r.jsx)(S.Z, {
               focusSectionProps: "NOTIFICATIONS_INBOX" === V ? e : true
@@ -162,8 +162,8 @@ let k = Chunk647438.memo(function() {
               return n
             })(Object(a)).forEach(function(e) {
               Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
-            }), i)), v ? (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(I.H, {
+            }), i)), I ? (0, r.jsxs)(r.Fragment, {
+              children: [(0, r.jsx)(y.H, {
                 focusSectionProps: "HELP" === V ? e : true,
                 className: F
               }), k ? (0, r.jsx)(E.M, {
@@ -172,7 +172,7 @@ let k = Chunk647438.memo(function() {
             }) : (0, r.jsx)(O.Z, {
               focusSectionProps: "HELP" === V ? e : true,
               className: F
-            }), (0, r.jsx)(y.Z, {
+            }), (0, r.jsx)(v.Z, {
               className: F
             })]
           })

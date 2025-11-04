@@ -92,27 +92,27 @@ let M = +Chunk70956.Z.Millis.DAY,
   ei = [],
   el = 0,
   ea = [],
-  es = 0,
-  eo = true,
+  eo = 0,
+  es = true,
   ec = false,
   eu = new Set,
   ed = false,
   ep = false,
   ef = 0,
-  em = 0;
+  eh = 0;
 
-function eh(e, t) {
-  if (Date.now() - B > 6 * v.Z.Millis.HOUR) {
+function eg(e, t) {
+  if (Date.now() - B > 6 * I.Z.Millis.HOUR) {
     let n = new Set(e.map(e => e.id));
     return t.slice(0, 20).filter(e => n.has(e.id)).length >= 3
   }
   returnfalse
 }
 
-function eg(e) {
-  if (!P.Z.filterStaffContent()) returntrue;
+function em(e) {
+  if (!j.Z.filterStaffContent()) returntrue;
   if ((0, A._e)(e)) {
-    if (e.data.guild_id === j.KF) returntrue;
+    if (e.data.guild_id === P.KF) returntrue;
     let t = _.Z.getGuild(e.data.guild_id);
     if (null == t || t.features.has(Z.GuildFeatures.INTERNAL_EMPLOYEE_ONLY)) returnfalse
   }
@@ -127,11 +127,11 @@ function e_(e, t, n, r) {
 }
 
 function eb() {
-  if (er = er.filter(e => e.type !== j.Ni.RECOMMENDED_GUILDS), ei = ei.filter(e => e.type !== j.Ni.RECOMMENDED_GUILDS), 0 === ea.length) return;
+  if (er = er.filter(e => e.type !== P.Ni.RECOMMENDED_GUILDS), ei = ei.filter(e => e.type !== P.Ni.RECOMMENDED_GUILDS), 0 === ea.length) return;
   let e = "recommendedGuilds",
     t = Chunk430824.Z.getGuildsArray().filter(e => e.features.has(Z.GuildFeatures.COMMUNITY)).length >= 5,
     n = Chunk634773.Z.getReadTimestamp(module);
-  if (exports && null != require && Date.now() - es > M && Date.now() - require < k) return;
+  if (exports && null != require && Date.now() - eo > M && Date.now() - require < k) return;
   let r = {
     id: module,
     type: Chunk797394.Ni.RECOMMENDED_GUILDS,
@@ -157,17 +157,17 @@ function eE() {
       false !== require && (et = H[require], H = H.filter(t => t.id !== e), H = [et, ...H])
     } else H = [et, ...H], module.add(et.id);
   H.forEach(e => {
-    z[e.id] = e, e.type === j.Ni.CUSTOM_STATUS && (I.Z.isBlockedOrIgnored(e.data.user_id) ? W[e.id] = true : Y[e.id] = (0, A.mV)(e))
+    z[e.id] = e, e.type === P.Ni.CUSTOM_STATUS && (y.Z.isBlockedOrIgnored(e.data.user_id) ? W[e.id] = true : Y[e.id] = (0, A.mV)(e))
   })
 }
 
 function eO(e) {
   if (H.length > 0 && (U = H, H = [], V = []), Q++, null != e) er = e.newUnread, ei = e.newRead;
   else {
-    let [e, t] = eI(U);
+    let [e, t] = ey(U);
     er = e, ei = t
   }
-  if (P.Z.onlyShowRecentGeneratedCandidates() || (function() {
+  if (j.Z.onlyShowRecentGeneratedCandidates() || (function() {
       let e = _.Z.getGuildIds(),
         t = [];
       for (let r of e) {
@@ -177,19 +177,19 @@ function eO(e) {
         for (let r of e)
           if (!(0, d.Z2)(r)) {
             if (null != r.channel_id) {
-              let e = h.Z.getChannel(r.channel_id);
+              let e = g.Z.getChannel(r.channel_id);
               if (!E.Z.can(Z.Plq.VIEW_CHANNEL, e)) continue
             }
-            if ((0, d.BQ)(r, 2 * v.Z.Seconds.DAY) || (0, d.xt)(r)) {
+            if ((0, d.BQ)(r, 2 * I.Z.Seconds.DAY) || (0, d.xt)(r)) {
               var n;
               if (null == Y[r.id] && (Y[r.id] = {
                   id: r.id,
-                  type: j.Ni.GUILD_EVENT,
+                  type: P.Ni.GUILD_EVENT,
                   score: 10,
                   event_id: r.id
                 }), t.push({
                   id: r.id,
-                  type: j.Ni.GUILD_EVENT,
+                  type: P.Ni.GUILD_EVENT,
                   score: 10,
                   data: {
                     guild_id: r.guild_id,
@@ -201,37 +201,37 @@ function eO(e) {
           }
       }
       t.sort((e, t) => {
-        let n = g.Z.getGuildAffinity(e.data.guild_id),
-          r = g.Z.getGuildAffinity(t.data.guild_id);
+        let n = m.Z.getGuildAffinity(e.data.guild_id),
+          r = m.Z.getGuildAffinity(t.data.guild_id);
         return (null != r ? r.score : 0) - (null != n ? n.score : 0)
       });
       let r = [],
         i = [];
       t.forEach(e => {
         z[e.id] = e, null != x.Z.getReadTimestamp(e.id) ? i.push(e) : r.push(e)
-      }), er = e_(er, r, j.Ni.GUILD_EVENT, 7), ei = e_(ei, i, j.Ni.GUILD_EVENT, 7)
+      }), er = e_(er, r, P.Ni.GUILD_EVENT, 7), ei = e_(ei, i, P.Ni.GUILD_EVENT, 7)
     }(), function() {
       var e, t;
       let n = new Set,
         r = {},
         l = [],
         a = [],
-        u = null != (t = null == (e = s.Z.getFeed(w.YN.GLOBAL_FEED)) ? true : e.entries) ? t : [];
+        u = null != (t = null == (e = o.Z.getFeed(w.YN.GLOBAL_FEED)) ? true : e.entries) ? t : [];
       u.sort((e, t) => e.rank - t.rank).slice(0, 5), u.forEach(e => {
         if (n.has(e.content.id) || e.content.content_type !== i.s.PLAYED_GAME && e.content.content_type !== i.s.CUSTOM_STATUS && e.content.content_type !== i.s.TOP_GAME || (0, c.n2)(e.content)) return;
-        if ((0, o.dX)(e.content)) {
+        if ((0, s.dX)(e.content)) {
           if (null == r[e.content.author_id] && (r[e.content.author_id] = new Set), r[e.content.author_id].has(e.content.extra.application_id)) return;
           r[e.content.author_id].add(e.content.extra.application_id)
         }
         null == Y[e.content.id] && (Y[e.content.id] = {
           id: e.content.id,
-          type: j.Ni.ACTIVITY,
+          type: P.Ni.ACTIVITY,
           score: 15,
           activity: e.content
         });
         let t = {
           id: e.content.id,
-          type: j.Ni.ACTIVITY,
+          type: P.Ni.ACTIVITY,
           score: 15,
           data: {
             user_id: e.content.author_id,
@@ -239,7 +239,7 @@ function eO(e) {
           }
         };
         n.add(e.content.id), z[t.id] = t, null != x.Z.getReadTimestamp(t.id) ? a.push(t) : l.push(t)
-      }), er = e_(er, l, j.Ni.ACTIVITY, 5), ei = e_(ei, a, j.Ni.ACTIVITY, 5)
+      }), er = e_(er, l, P.Ni.ACTIVITY, 5), ei = e_(ei, a, P.Ni.ACTIVITY, 5)
     }(), eb()), null != F.load_id && G !== F.load_id) {
     var t;
     T.m.trackFeedLoaded({
@@ -250,38 +250,38 @@ function eO(e) {
       homeSessionId: "gravity"
     }), G = null != (t = F.load_id) ? t : null, F = {}
   }
-  el = 0, er.length + ei.length === 0 && (ep = true), (0, A.em)([...er, ...ei], 0, j.xy), ec = false
+  el = 0, er.length + ei.length === 0 && (ep = true), (0, A.em)([...er, ...ei], 0, P.xy), ec = false
 }
 
-function eI(e) {
+function ey(e) {
   let t = [],
     n = [],
     r = [];
   return e.forEach(e => {
     let i = null != x.Z.getReadTimestamp(e.id);
-    if (e.type === j.Ni.MESSAGE) {
+    if (e.type === P.Ni.MESSAGE) {
       var l;
       (null == (l = e.data.message_context) ? true : l.external_content_application_id) == null && (i = i || !(0, A.$U)(e.data.channel_id, e.data.message_id))
-    } else e.type === j.Ni.SUMMARY && (i = i || !(0, A.$U)(e.data.channel_id, e.data.summary_id));
-    i ? t.push(e) : e.type === j.Ni.MESSAGE && e.data.has_mention ? r.push(e) : n.push(e)
+    } else e.type === P.Ni.SUMMARY && (i = i || !(0, A.$U)(e.data.channel_id, e.data.summary_id));
+    i ? t.push(e) : e.type === P.Ni.MESSAGE && e.data.has_mention ? r.push(e) : n.push(e)
   }), [
     [...r, ...n], t.sort((e, t) => (0, A.Rm)(e.id, t.id))
   ]
 }
 
-function ey(e, t) {
+function ev(e, t) {
   let n = [],
     r = new Set(U.map(e => e.id));
-  for (let i of e) !(i.type === j.Ni.RECOMMENDED_GUILDS || r.has(i.id)) && null == x.Z.getReadTimestamp(i.id) && (i.type !== j.Ni.MESSAGE || (0, A.$U)(i.data.channel_id, i.data.message_id) && i.data.channel_id !== t) && (i.type !== j.Ni.SUMMARY || (0, A.$U)(i.data.channel_id, i.data.summary_id) && i.data.channel_id !== t) && n.push(i);
+  for (let i of e) !(i.type === P.Ni.RECOMMENDED_GUILDS || r.has(i.id)) && null == x.Z.getReadTimestamp(i.id) && (i.type !== P.Ni.MESSAGE || (0, A.$U)(i.data.channel_id, i.data.message_id) && i.data.channel_id !== t) && (i.type !== P.Ni.SUMMARY || (0, A.$U)(i.data.channel_id, i.data.summary_id) && i.data.channel_id !== t) && n.push(i);
   return n
 }
 
-function ev(e, t) {
+function eI(e, t) {
   return e.filter(e => !(0, A._e)(e) || e.data.channel_id !== t)
 }
 
 function eC(e, t) {
-  (0, A.jv)(t) === A.aL.MUTED && (U = ev(U, e), er = ev(er, e), ei = ev(ei, e), H = ev(H, e), V = ev(V, e))
+  (0, A.jv)(t) === A.aL.MUTED && (U = eI(U, e), er = eI(er, e), ei = eI(ei, e), H = eI(H, e), V = eI(V, e))
 }
 
 function eS(e, t) {
@@ -300,30 +300,30 @@ function eN(e) {
     emoji: i,
     reactionType: l
   } = e, a = Y[n];
-  if (null == a || a.type !== j.Ni.MESSAGE) returnfalse;
-  let s = m.default.getId() === r;
-  "MESSAGE_REACTION_ADD" === t ? a.message = a.message.addReaction(i, s, e.colors, l) : a.message = a.message.removeReaction(i, s, l)
+  if (null == a || a.type !== P.Ni.MESSAGE) returnfalse;
+  let o = h.default.getId() === r;
+  "MESSAGE_REACTION_ADD" === t ? a.message = a.message.addReaction(i, o, e.colors, l) : a.message = a.message.removeReaction(i, o, l)
 }
 
-function eP(e) {
+function ej(e) {
   let {
     channelId: t
   } = e, n = [], r = [];
   er.forEach((e, i) => {
-    (i > el || !$) && (e.type === j.Ni.MESSAGE || e.type === j.Ni.SUMMARY) && e.data.channel_id === t ? n.push(e) : r.push(e)
+    (i > el || !$) && (e.type === P.Ni.MESSAGE || e.type === P.Ni.SUMMARY) && e.data.channel_id === t ? n.push(e) : r.push(e)
   });
   let i = X,
-    [l, a] = eI(H);
-  if (V = ey(l, t), X = $ ? i && V.length >= j.Lb : i && eh(r, H), 0 === n.length && i === X) returnfalse;
+    [l, a] = ey(H);
+  if (V = ev(l, t), X = $ ? i && V.length >= P.Lb : i && eg(r, H), 0 === n.length && i === X) returnfalse;
   0 !== n.length && (er = r, ei = [...ei, ...n])
 }
-class ej extends(r = Chunk442837.ZP.PersistedStore) {
+class eP extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(m.default, h.Z, s.Z, u.Z, g.Z, d.ZP, _.Z, P.Z, x.Z, b.Z, E.Z, O.ZP, I.Z, y.ZP), null != e) {
-      var t, n, r, i, l, a, o;
+    if (this.waitFor(h.default, g.Z, o.Z, u.Z, m.Z, d.ZP, _.Z, j.Z, x.Z, b.Z, E.Z, O.ZP, y.Z, v.ZP), null != e) {
+      var t, n, r, i, l, a, s;
       (U = null != (t = e.dehydratedItems) ? t : []).forEach(e => {
         z[e.id] = e
-      }), q = null != (n = e.customGuildScores) ? n : {}, K = null != (r = e.customChannelScoresByGuild) ? r : {}, en = null != (i = e.numOpens) ? i : 0, B = null != (l = e.lastOpened) ? l : 0, es = null != (a = e.lastJoinedRecommendedGuild) ? a : 0, em = null != (o = e.lastTakenICYMISurvey) ? o : 0
+      }), q = null != (n = e.customGuildScores) ? n : {}, K = null != (r = e.customChannelScoresByGuild) ? r : {}, en = null != (i = e.numOpens) ? i : 0, B = null != (l = e.lastOpened) ? l : 0, eo = null != (a = e.lastJoinedRecommendedGuild) ? a : 0, eh = null != (s = e.lastTakenICYMISurvey) ? s : 0
     }
   }
   getVersion() {
@@ -345,7 +345,7 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getMessage(e) {
     let t = Y[e];
-    return null == t || t.type !== j.Ni.MESSAGE ? null : t.message
+    return null == t || t.type !== P.Ni.MESSAGE ? null : t.message
   }
   getHydratedItems() {
     return Y
@@ -397,7 +397,7 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
     return ea
   }
   videosMuted() {
-    return eo
+    return es
   }
   isRefreshing() {
     return ec
@@ -418,10 +418,10 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
     return ef
   }
   lastTakenICYMISurvey() {
-    return em
+    return eh
   }
   getIndexInHydratedFeed(e) {
-    return "recommended_guilds" === e || "recommendedGuilds" === e ? [...er, ...ei].findIndex(e => e.type === j.Ni.RECOMMENDED_GUILDS) : [...er, ...ei].filter(e => null != Y[e.id]).findIndex(t => t.id === e)
+    return "recommended_guilds" === e || "recommendedGuilds" === e ? [...er, ...ei].findIndex(e => e.type === P.Ni.RECOMMENDED_GUILDS) : [...er, ...ei].filter(e => null != Y[e.id]).findIndex(t => t.id === e)
   }
   getState() {
     return {
@@ -430,15 +430,15 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
       customGuildScores: q,
       customChannelScoresByGuild: K,
       lastOpened: B,
-      lastJoinedRecommendedGuild: es,
-      lastTakenICYMISurvey: em
+      lastJoinedRecommendedGuild: eo,
+      lastTakenICYMISurvey: eh
     }
   }
 }
-L(ej, "displayName", "ICYMIStore"), L(ej, "persistKey", "ICYMIStore");
-let ex = new ej(Chunk570140.Z, {
+L(eP, "displayName", "ICYMIStore"), L(eP, "persistKey", "ICYMIStore");
+let ex = new eP(Chunk570140.Z, {
   LOGOUT: function() {
-    U = [], H = [], V = [], z = {}, F = {}, Y = {}, W = {}, G = null, q = {}, K = {}, Q = 0, J = false, X = false, $ = false, er = [], ei = [], el = 0, B = 0, es = 0, eo = true, ec = false, eu = new Set, et = null, ed = false, ep = false, ee = null, ef = 0
+    U = [], H = [], V = [], z = {}, F = {}, Y = {}, W = {}, G = null, q = {}, K = {}, Q = 0, J = false, X = false, $ = false, er = [], ei = [], el = 0, B = 0, eo = 0, es = true, ec = false, eu = new Set, et = null, ed = false, ep = false, ee = null, ef = 0
   },
   LOAD_ICYMI_FROM_NOTIFICATION: function(e) {
     let {
@@ -449,7 +449,7 @@ let ex = new ej(Chunk570140.Z, {
     if (null != t) {
       let e = {
         id: t.message.id,
-        type: j.Ni.MESSAGE,
+        type: P.Ni.MESSAGE,
         score: 50,
         data: {
           channel_id: t.channel_id,
@@ -461,7 +461,7 @@ let ex = new ej(Chunk570140.Z, {
       if (z[t.message.id] = e, Y[t.message.id] = D(R({}, e), {
           message: (0, p.e5)(t.message)
         }), null == G && null == F) {
-        let [t, n] = eI(U = [e, ...U]);
+        let [t, n] = ey(U = [e, ...U]);
         er = t, ei = n
       } else H = [e, ...H], eO();
       returntrue
@@ -479,11 +479,11 @@ let ex = new ej(Chunk570140.Z, {
     H = function(e) {
       let {
         contentGenerationEnabled: t
-      } = (0, N.q3)("processRawItems", false), n = P.Z.onlyShowRecentGeneratedCandidates(), r = new Set(j.zd);
-      n ? r = new Set([j.Ni.GENERATED_CANDIDATE]) : t && (r.add(j.Ni.GENERATED_CANDIDATE), r.delete(j.Ni.SUMMARY));
-      let i = e.filter(e => r.has(e.type)).filter(eg);
+      } = (0, N.q3)("processRawItems", false), n = j.Z.onlyShowRecentGeneratedCandidates(), r = new Set(P.zd);
+      n ? r = new Set([P.Ni.GENERATED_CANDIDATE]) : t && (r.add(P.Ni.GENERATED_CANDIDATE), r.delete(P.Ni.SUMMARY));
+      let i = e.filter(e => r.has(e.type)).filter(em);
       return n && i.sort((e, t) => S.default.extractTimestamp(t.id) - S.default.extractTimestamp(e.id)), i.map(e => {
-        if (e.type === j.Ni.MESSAGE && null != e.data.message_context) {
+        if (e.type === P.Ni.MESSAGE && null != e.data.message_context) {
           let t = {};
           null != e.data.message_context.reply_message_id && 0 !== parseInt(e.data.message_context.reply_message_id) && (t.reply_message_id = e.data.message_context.reply_message_id), null != e.data.message_context.before_message_id && 0 !== parseInt(e.data.message_context.before_message_id) && (t.before_message_id = e.data.message_context.before_message_id), null != e.data.message_context.after_message_id && 0 !== parseInt(e.data.message_context.after_message_id) && (t.after_message_id = e.data.message_context.after_message_id), null != e.data.message_context.external_content_application_id && 0 !== parseInt(e.data.message_context.external_content_application_id) && (t.external_content_application_id = e.data.message_context.external_content_application_id), null != e.data.message_context.reference_message_id && 0 !== parseInt(e.data.message_context.reference_message_id) && (t.reference_message_id = e.data.message_context.reference_message_id), e.data.message_context = t
         }
@@ -494,21 +494,21 @@ let ex = new ej(Chunk570140.Z, {
       load_time_millis: Date.now() - r,
       feed_item_ids: H.map(e => e.id)
     };
-    let [a, s] = eI(H);
-    if (V = ey(a), !$ || 0 === Q || i) Q = 0, !ed && eh(a, H) ? (X = true, J = true) : X = false, eO({
+    let [a, o] = ey(H);
+    if (V = ev(a), !$ || 0 === Q || i) Q = 0, !ed && eg(a, H) ? (X = true, J = true) : X = false, eO({
       newUnread: a,
-      newRead: s
+      newRead: o
     });
     else {
       Q > 0 && (et = null);
-      let e = V.length > j.Lb;
-      l || (X = e), e && ((0, A.em)([...a, ...s], 0, j.xy), a.length + s.length === 0 && (ep = true))
+      let e = V.length > P.Lb;
+      l || (X = e), e && ((0, A.em)([...a, ...o], 0, P.xy), a.length + o.length === 0 && (ep = true))
     }
     T.m.trackFeedLoaded({
       newTrackingProps: F,
       hasNewContent: X,
       unreadFeedItems: a,
-      readFeedItems: s,
+      readFeedItems: o,
       homeSessionId: ed ? "foreground_load" : "background_load"
     })
   },
@@ -520,8 +520,8 @@ let ex = new ej(Chunk570140.Z, {
       generatedCandidateItems: i,
       requestMessageItems: l,
       requestSummaryItems: a,
-      requestActivityItems: s,
-      requestGeneratedCandidateItems: o,
+      requestActivityItems: o,
+      requestGeneratedCandidateItems: s,
       startingIndex: c,
       endingIndex: u
     } = e;
@@ -529,7 +529,7 @@ let ex = new ej(Chunk570140.Z, {
     let d = t.reduce((e, t) => (e[t.message.id] = t, e), {}),
       p = n.reduce((e, t) => (e[t.id] = t, e), {}),
       f = r.reduce((e, t) => (e[t.id] = t, e), {}),
-      m = i.reduce((e, t) => (e[t.content_id] = t, e), {});
+      h = i.reduce((e, t) => (e[t.content_id] = t, e), {});
     l.forEach(e => {
       let t = d[e.message_id];
       if (null == t) {
@@ -539,7 +539,7 @@ let ex = new ej(Chunk570140.Z, {
       let n = z[e.message_id];
       null == n && (n = {
         id: e.message_id,
-        type: j.Ni.MESSAGE,
+        type: P.Ni.MESSAGE,
         score: false,
         data: {
           guild_id: t.guild_id,
@@ -563,14 +563,14 @@ let ex = new ej(Chunk570140.Z, {
         return
       }
       let n = z[e.summary_id];
-      if (null == n || n.type !== j.Ni.SUMMARY || t.messages.length < 3) {
+      if (null == n || n.type !== P.Ni.SUMMARY || t.messages.length < 3) {
         W[e.summary_id] = true;
         return
       }
       Y[t.id] = D(R({}, n), {
         summary: (0, A.wV)(t, n.data.guild_id)
       })
-    }), s.forEach(e => {
+    }), o.forEach(e => {
       let t = f[e.content_id];
       if (null == t) {
         W[e.content_id] = true;
@@ -584,14 +584,14 @@ let ex = new ej(Chunk570140.Z, {
       Y[t.id] = D(R({}, n), {
         activity: t
       })
-    }), o.forEach(e => {
-      let t = m[e.content_id];
+    }), s.forEach(e => {
+      let t = h[e.content_id];
       if (null == t) {
         W[e.content_id] = true;
         return
       }
       let n = z[e.content_id];
-      if (null == n || n.type !== j.Ni.GENERATED_CANDIDATE) {
+      if (null == n || n.type !== P.Ni.GENERATED_CANDIDATE) {
         W[e.content_id] = true;
         return
       }
@@ -644,8 +644,8 @@ let ex = new ej(Chunk570140.Z, {
       messageId: t,
       reactions: n
     } = e, r = Y[t];
-    if (null == r || r.type !== j.Ni.MESSAGE) returnfalse;
-    let i = m.default.getId();
+    if (null == r || r.type !== P.Ni.MESSAGE) returnfalse;
+    let i = h.default.getId();
     r.message = r.message.addReactionBatch(n, i)
   },
   MESSAGE_REACTION_REMOVE: eN,
@@ -653,7 +653,7 @@ let ex = new ej(Chunk570140.Z, {
     let {
       messageId: t
     } = e, n = Y[t];
-    if (null == n || n.type !== j.Ni.MESSAGE) returnfalse;
+    if (null == n || n.type !== P.Ni.MESSAGE) returnfalse;
     n.message = n.message.set("reactions", [])
   },
   MESSAGE_REACTION_REMOVE_EMOJI: function(e) {
@@ -661,19 +661,19 @@ let ex = new ej(Chunk570140.Z, {
       messageId: t,
       emoji: n
     } = e, r = Y[t];
-    if (null == r || r.type !== j.Ni.MESSAGE) returnfalse;
+    if (null == r || r.type !== P.Ni.MESSAGE) returnfalse;
     r.message = r.message.removeReactionsForEmoji(n)
   },
-  CHANNEL_ACK: eP,
-  MESSAGE_ACK: eP,
+  CHANNEL_ACK: ej,
+  MESSAGE_ACK: ej,
   ICYMI_JOINED_RECOMMENDED_GUILD: function() {
-    es = Date.now()
+    eo = Date.now()
   },
   ICYMI_SET_VIDEOS_MUTED: function(e) {
     let {
       muted: t
     } = e;
-    eo = t
+    es = t
   },
   ICYMI_SET_REFRESHING: function(e) {
     let {
@@ -701,20 +701,20 @@ let ex = new ej(Chunk570140.Z, {
       forICYMI: i
     } = e;
     if (!i) returnfalse;
-    let l = h.Z.getChannel(n);
+    let l = g.Z.getChannel(n);
     if (null == l || l.type !== Z.d4z.GUILD_TEXT) returnfalse;
     let a = null == (t = K[l.guild_id]) ? true : t[n];
-    if (null != a && (0, A.jv)(a) === A.aL.MUTED || y.ZP.isChannelMuted(l.guild_id, n) || 0 === r.length) returnfalse;
-    let s = r.filter(e => S.default.age(e.id) < v.Z.Millis.HOUR && (e.type === Z.uaV.DEFAULT || e.type === Z.uaV.REPLY)).slice(0, 3).reverse();
-    if (s.length < 3 || s.filter(e => {
+    if (null != a && (0, A.jv)(a) === A.aL.MUTED || v.ZP.isChannelMuted(l.guild_id, n) || 0 === r.length) returnfalse;
+    let o = r.filter(e => S.default.age(e.id) < I.Z.Millis.HOUR && (e.type === Z.uaV.DEFAULT || e.type === Z.uaV.REPLY)).slice(0, 3).reverse();
+    if (o.length < 3 || o.filter(e => {
         var t;
         return null == (t = e.author) ? true : t.bot
-      }).length / s.length > .5) returnfalse;
-    let o = Math.floor(Date.now() / (2 * v.Z.Millis.HOUR)) % 24,
-      c = "".concat(l.id, "-").concat(o),
+      }).length / o.length > .5) returnfalse;
+    let s = Math.floor(Date.now() / (2 * I.Z.Millis.HOUR)) % 24,
+      c = "".concat(l.id, "-").concat(s),
       u = {
         id: c,
-        type: j.Ni.SUMMARY,
+        type: P.Ni.SUMMARY,
         score: false,
         data: {
           channel_id: n,
@@ -728,22 +728,22 @@ let ex = new ej(Chunk570140.Z, {
         id: c,
         topic: "",
         summShort: "",
-        people: s.map(e => {
+        people: o.map(e => {
           var t, n;
           return null != (n = null == (t = e.author) ? true : t.id) ? n : ""
         }),
-        startId: s[0].id,
-        endId: s[s.length - 1].id,
-        count: s.length,
+        startId: o[0].id,
+        endId: o[o.length - 1].id,
+        count: o.length,
         channelId: n,
         type: f.JU.SOURCE_2,
         source: 0,
         reactions: [],
-        messages: s.map(e => (0, p.e5)(e)),
-        messageIds: s.map(e => e.id),
+        messages: o.map(e => (0, p.e5)(e)),
+        messageIds: o.map(e => e.id),
         guildId: l.guild_id,
         reactionCount: 0,
-        numTotalMessages: s.length
+        numTotalMessages: o.length
       }
     });
     Y[c] = d
@@ -775,6 +775,6 @@ let ex = new ej(Chunk570140.Z, {
     let {
       takenAt: t
     } = e;
-    em = t
+    eh = t
   }
 })

@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 450233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => m,
-  Z: () => g
+  G: () => h,
+  Z: () => m
 });
 var r, i, l, a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,8 +11,8 @@ var r, i, l, a, Chunk951288 = require("./951288.js"),
   Chunk16084 = require("./16084.js"),
   Chunk855775 = require("./855775.js"),
   Chunk388032 = require("./388032.jsx"),
-  m = ((r = {}).SHORT = "SHORT", r.LONG = "LONG", r);
-class h extends(a = Chunk647438.PureComponent) {
+  h = ((r = {}).SHORT = "SHORT", r.LONG = "LONG", r);
+class g extends(a = Chunk647438.PureComponent) {
   getText(e, t) {
     if (429 === e.status) switch (t) {
       case "SHORT":
@@ -44,12 +44,12 @@ class h extends(a = Chunk647438.PureComponent) {
 }
 l = {
   messageStyle: "LONG"
-}, (i = "defaultProps") in h ? Object.defineProperty(h, i, {
+}, (i = "defaultProps") in g ? Object.defineProperty(g, i, {
   value: l,
   enumerable: true,
   configurable: true,
   writable: true
-}) : h[i] = l;
-let g = Chunk442837.ZP.connectStores([Chunk855775.Z], () => ({
+}) : g[i] = l;
+let m = Chunk442837.ZP.connectStores([Chunk855775.Z], () => ({
   purchaseError: Chunk855775.Z.error
-}))(h)
+}))(g)

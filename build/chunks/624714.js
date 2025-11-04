@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 624714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js"), require("./997841.js");
 var Chunk544891 = require("./544891.js"),
   Chunk115130 = require("./115130.js"),
@@ -16,7 +16,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk561205 = require("./561205.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
-let g = {
+let m = {
   [Chunk981631.Etm.SEND_ANALYTICS_EVENT]: {
     validation: e => (0, p.Z)(e).required().keys({
       event_name: e.string().required(),
@@ -32,21 +32,21 @@ let g = {
         }
       } = e;
       (0, d.bu)(n.transport), (0, d._f)(n.application);
-      let s = n.application.id,
+      let o = n.application.id,
         p = (0, f.Z)(),
-        m = null == p ? true : p.getGuildId(),
-        g = a.Z.getApplication(s);
-      if (!(0, c.yE)(null != (t = null == g ? true : g.flags) ? t : 0, h.udG.EMBEDDED_FIRST_PARTY)) throw new u.Z({
-        errorCode: h.lTL.INVALID_COMMAND
+        h = null == p ? true : p.getGuildId(),
+        m = a.Z.getApplication(o);
+      if (!(0, c.yE)(null != (t = null == m ? true : m.flags) ? t : 0, g.udG.EMBEDDED_FIRST_PARTY)) throw new u.Z({
+        errorCode: g.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
-      let _ = (0, l.U)(s),
+      let _ = (0, l.U)(o),
         b = {
-          activity_application_id: s,
+          activity_application_id: o,
           activity_channel_type: null == p ? true : p.type,
-          activity_guild_id: m,
+          activity_guild_id: h,
           activity_user_session_id: null == _ ? true : _.activityUserSessionId
         };
-      o.default.track(r, function(e) {
+      s.default.track(r, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -73,12 +73,12 @@ let g = {
         socket: t
       } = e, n = t.application.id;
       if (null == n) throw new u.Z({
-        errorCode: h.lTL.INVALID_COMMAND
+        errorCode: g.lTL.INVALID_COMMAND
       }, "No application.");
       return r.tn.post({
-        url: h.ANM.APPLICATION_TICKET(n),
+        url: g.ANM.APPLICATION_TICKET(n),
         body: {
-          test_mode: s.Z.inTestModeForApplication(n) || i.Z.inDevModeForApplication(n)
+          test_mode: o.Z.inTestModeForApplication(n) || i.Z.inDevModeForApplication(n)
         },
         retries: 3,
         oldFormErrors: true,

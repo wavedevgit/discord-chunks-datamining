@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 767870, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -33,16 +33,16 @@ function p(e) {
   return e
 }
 let f = "premium_tier_gradient",
-  m = "smaller_sparkle_gradient";
+  h = "smaller_sparkle_gradient";
 
-function h(e) {
+function g(e) {
   var t, n, {
       width: i = 14,
       height: l = 15,
       color: a = "white",
-      foreground: s
+      foreground: o
     } = e,
-    o = function(e, t) {
+    s = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -57,12 +57,12 @@ function h(e) {
       }
       return i
     }(e, ["width", "height", "color", "foreground"]);
-  return (0, r.jsxs)("svg", (t = p({}, (0, c.Z)(p({}, o))), n = n = {
+  return (0, r.jsxs)("svg", (t = p({}, (0, c.Z)(p({}, s))), n = n = {
     preserveAspectRatio: "none",
     width: i,
     height: l,
     viewBox: "0 0 14 15",
-    className: s,
+    className: o,
     xmlns: "http://www.w3.org/2000/svg",
     children: [(0, r.jsx)("defs", {
       children: (0, r.jsxs)("linearGradient", {
@@ -83,7 +83,7 @@ function h(e) {
         })]
       })
     }), (0, r.jsxs)("linearGradient", {
-      id: m,
+      id: h,
       x1: "-4.95474",
       y1: "5.44067",
       x2: "11.2384",
@@ -114,25 +114,25 @@ function h(e) {
   }), t))
 }
 
-function g(e) {
+function m(e) {
   let {
     className: t,
     startsAt: n,
     endsAt: i,
     messageStyle: c,
     upperCase: p,
-    showSparkles: g
-  } = e, [_] = (0, o.Tt)(a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
+    showSparkles: m
+  } = e, [_] = (0, s.Tt)(a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
     showAfterTimestamp: n.valueOf(),
     cooldownDurationMs: 0
-  }), b = (0, s.ZP)(i, c);
+  }), b = (0, o.ZP)(i, c);
   return "" === b ? null : (p && (b = b.toUpperCase()), (0, r.jsxs)("div", {
     className: l()(t, d.countDown),
-    children: [g ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(h, {
+    children: [m ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(g, {
         foreground: d.sparkleStar1,
-        color: "url(#".concat(m, ")")
-      }), (0, r.jsx)(h, {
+        color: "url(#".concat(h, ")")
+      }), (0, r.jsx)(g, {
         foreground: d.sparkleStar2,
         color: "url(#".concat(f, ")")
       })]

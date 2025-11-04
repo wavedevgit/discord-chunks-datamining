@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 176055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -68,8 +68,8 @@ class N extends Chunk647438.PureComponent {
       isInGuild: n,
       isLurking: i,
       isAuthenticated: l,
-      className: s,
-      pageSize: o
+      className: o,
+      pageSize: s
     } = this.props;
     if (exports && require) return null;
     let d = (0, Chunk411198.B3)(module),
@@ -131,21 +131,21 @@ class N extends Chunk647438.PureComponent {
       else try {
         await d.Z.joinGuild(e.id, {
           lurker: true,
-          source: v.vtS.APPLICATION_STORE
+          source: I.vtS.APPLICATION_STORE
         }), i()
       } catch (e) {}
     }), T(this, "handleLogin", () => {
       let e = {
-        redirect_to: v.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
+        redirect_to: I.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
       };
-      (0, b.uL)(v.Z5c.LOGIN, {
-        search: (0, s.stringify)(e),
+      (0, b.uL)(I.Z5c.LOGIN, {
+        search: (0, o.stringify)(e),
         source: "verified_guild_invite"
       })
     })
   }
 }
-let P = (0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk41776.Z], e => {
+let j = (0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk41776.Z], e => {
   let {
     guild: t
   } = e, n = _.Z.isLurking(t.id);

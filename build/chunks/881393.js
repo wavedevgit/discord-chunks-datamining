@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 881393, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js"), require("./539854.js");
 var Chunk496929 = require("./496929.js"),
   Chunk16084 = require("./16084.js"),
@@ -15,7 +15,7 @@ var Chunk496929 = require("./496929.js"),
   Chunk981631 = require("./981631.js");
 async function f(e, t) {
   let n = t.filter(e => e.type === p.epS.SUBSCRIPTION_GROUP),
-    r = await Promise.all(n.map(async t => await (0, s.rx)(e, t.id))),
+    r = await Promise.all(n.map(async t => await (0, o.rx)(e, t.id))),
     i = [];
   return r.forEach(e => {
     if (null == e) return null;
@@ -28,7 +28,7 @@ async function f(e, t) {
         let l = null == n ? true : n.price,
           a = t.find(e => e.id === n.sku_id);
         if (null == a) return;
-        let s = {
+        let o = {
           id: n.sku_id,
           name: a.name,
           type: a.type,
@@ -40,12 +40,12 @@ async function f(e, t) {
           flags: e.sku_flags,
           release_date: null != (i = a.release_date) ? i : null
         };
-        r.push(s)
+        r.push(o)
       })
     }), r.filter(e => (null == e ? true : e.price) != null).forEach(e => i.push(e))
   }), i
 }
-async function m(e) {
+async function h(e) {
   let {
     socket: t
   } = e;
@@ -54,7 +54,7 @@ async function m(e) {
   if (null == n) throw new c.Z({
     errorCode: p.lTL.INVALID_COMMAND
   }, "No application.");
-  if (o.Z.inTestModeForApplication(n) || a.Z.inDevModeForApplication(n)) {
+  if (s.Z.inTestModeForApplication(n) || a.Z.inDevModeForApplication(n)) {
     let e = await i.uE(n, false),
       t = await f(n, e);
     return [...e.filter(e => null != e.price), ...t]
@@ -63,7 +63,7 @@ async function m(e) {
   return [...r.filter(e => e.sku.type !== p.epS.SUBSCRIPTION_GROUP).map(e => e.sku).filter(e => null != e.price), ...await f(n, r.map(e => e.sku))]
 }
 
-function h(e) {
+function g(e) {
   let {
     socket: t
   } = e;
@@ -74,25 +74,25 @@ function h(e) {
   }, "No application.");
   return r.yD(n)
 }
-let g = {
+let m = {
   [Chunk981631.Etm.GET_SKUS]: {
     [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.lH],
-    handler: m
+    handler: h
   },
   [Chunk981631.Etm.GET_ENTITLEMENTS]: {
     [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.lH],
-    handler: h
+    handler: g
   },
   [Chunk981631.Etm.GET_SKUS_EMBEDDED]: {
     [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.lH],
     handler: async e => ({
-      skus: await m(e)
+      skus: await h(e)
     })
   },
   [Chunk981631.Etm.GET_ENTITLEMENTS_EMBEDDED]: {
     [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.lH],
     handler: async e => ({
-      entitlements: await h(e)
+      entitlements: await g(e)
     })
   }
 }

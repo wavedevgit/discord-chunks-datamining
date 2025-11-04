@@ -2,7 +2,7 @@
 /** chunk id: 437314, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b,
-  j: () => m
+  j: () => h
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,20 +22,20 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var m = ((r = {}).SECTION_NO_RESULTS = "SECTION_NO_RESULTS", r);
-let h = Object.freeze({
+var h = ((r = {}).SECTION_NO_RESULTS = "SECTION_NO_RESULTS", r);
+let g = Object.freeze({
     SECTION_ALL: {
       lightSrc: require("./900933.js"),
       darkSrc: require("./67764.js"),
       width: 376,
       height: 162,
       renderContent: e => (0, i.jsxs)(l.Fragment, {
-        children: [(0, i.jsx)(o.OZU, {
+        children: [(0, i.jsx)(s.OZU, {
           note: d.intl.string(d.t.Y4vMY8)
         }), (0, i.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: p.button,
-          children: (0, i.jsx)(o.Button, {
+          children: (0, i.jsx)(s.Button, {
             variant: "primary",
             text: d.intl.string(d.t.w5uwoI),
             onClick: e
@@ -68,9 +68,9 @@ let h = Object.freeze({
       height: 200,
       renderContent: (e, t) => (0, i.jsxs)("div", {
         className: p.emptyStateContainer,
-        children: [(0, i.jsx)(o.OZU, {
+        children: [(0, i.jsx)(s.OZU, {
           note: d.intl.string(d.t["aCYQ+P"])
-        }), null != e && (0, i.jsx)(o.Button, {
+        }), null != e && (0, i.jsx)(s.Button, {
           variant: "secondary",
           text: t ? d.intl.string(d.t.R40bU2) : d.intl.string(d.t.rXl8fj),
           onClick: e,
@@ -97,13 +97,13 @@ let h = Object.freeze({
       })
     }
   }),
-  g = e => {
+  m = e => {
     let {
       theme: t
     } = e, n = d.intl.string(d.t["oi+B4p"]);
-    return (0, i.jsx)(o.ubH, {
+    return (0, i.jsx)(s.ubH, {
       theme: t,
-      children: (0, i.jsx)(o.OZU, {
+      children: (0, i.jsx)(s.OZU, {
         note: n
       })
     })
@@ -120,15 +120,15 @@ class _ extends Chunk647438.PureComponent {
       switch (e) {
         case u.pJs.ADD_FRIEND:
         case u.pJs.ALL:
-          return h.SECTION_ALL;
+          return g.SECTION_ALL;
         case u.pJs.ONLINE:
-          return h.SECTION_ONLINE;
+          return g.SECTION_ONLINE;
         case u.pJs.PENDING:
-          return h.SECTION_PENDING;
+          return g.SECTION_PENDING;
         case u.pJs.SUGGESTIONS:
-          return h.SECTION_SUGGESTIONS;
+          return g.SECTION_SUGGESTIONS;
         case "SECTION_NO_RESULTS":
-          return h.SECTION_NO_RESULTS;
+          return g.SECTION_NO_RESULTS;
         default:
           throw Error("FriendsEmptyState: Invalid empty state")
       }
@@ -136,7 +136,7 @@ class _ extends Chunk647438.PureComponent {
     return module === Chunk981631.pJs.ADD_FRIEND ? (0, Chunk951288.jsx)(Chunk748780.Z.div, {
       className: Chunk755429.friendsEmpty,
       style: r,
-      children: (0, Chunk951288.jsx)(g, {
+      children: (0, Chunk951288.jsx)(m, {
         theme: require
       })
     }) : (0, Chunk951288.jsx)(Chunk748780.Z.div, {

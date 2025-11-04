@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 78687, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js"), require("./539854.js"), require("./35282.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -35,7 +35,7 @@ function f(e) {
     }
   })
 }
-let m = [{
+let h = [{
   version: 2,
   run(e) {
     let t = f(1);
@@ -73,7 +73,7 @@ let m = [{
     let {
       state: t
     } = l.ZP.PersistedStore.migrateAndReadStoreState("EmojiStore", [() => ({
-      usageHistory: s.K.get("EmojiUsageHistory") || {}
+      usageHistory: o.K.get("EmojiUsageHistory") || {}
     })]);
     if (null == t) returnfalse;
     let n = false;
@@ -100,8 +100,8 @@ let m = [{
         e.favoriteGifs.gifs[i].order = l.order;
         continue
       }
-      let s = a.JM.toBinary(l).length + i.length + 7;
-      n + s > u.vY || (n += s, e.favoriteGifs.gifs[i] = l)
+      let o = a.JM.toBinary(l).length + i.length + 7;
+      n + o > u.vY || (n += o, e.favoriteGifs.gifs[i] = l)
     }
     for (n = a.wK.toBinary(e.favoriteGifs).length; n > u.vY;) {
       let t = 0;
@@ -133,7 +133,7 @@ let m = [{
     } = l.ZP.PersistedStore.migrateAndReadStoreState("SoundboardFavoriteStore", []);
     if (null == t) returnfalse;
     let n = false;
-    return i().size(t.favoriteSounds) > 0 && (e.favoriteSoundboardSounds = a.h_.create(), o.default.keys(t.favoriteSounds).forEach(n => {
+    return i().size(t.favoriteSounds) > 0 && (e.favoriteSoundboardSounds = a.h_.create(), s.default.keys(t.favoriteSounds).forEach(n => {
       new Set(t.favoriteSounds[n]).forEach(t => {
         var n;
         null == (n = e.favoriteSoundboardSounds) || n.soundIds.push(t)
@@ -146,7 +146,7 @@ let m = [{
 }, {
   version: 9,
   run(e) {
-    let t = s.K.get(p);
+    let t = o.K.get(p);
     if (null == t) returnfalse;
     for (let e in t) d.Xyh.test(e) || delete t[e];
     return e.guildAndChannelFrecency = a.lG.create(), e.guildAndChannelFrecency.guildAndChannels = (0, c.tU)(t, 100), true

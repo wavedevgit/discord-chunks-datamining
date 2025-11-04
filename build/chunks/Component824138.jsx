@@ -30,7 +30,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function I(e) {
   return e
 }
 
-function y(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,7 +55,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class v extends Chunk647438.PureComponent {
+class I extends Chunk647438.PureComponent {
   isHost() {
     let {
       currentUser: e,
@@ -126,12 +126,12 @@ class v extends Chunk647438.PureComponent {
         position: "top",
         align: "center",
         clickTrap: true,
-        children: l => (0, r.jsx)(s.u, {
+        children: l => (0, r.jsx)(o.u, {
           text: n,
-          children: (0, i.createElement)(o.qEK, y(I({}, l), {
+          children: (0, i.createElement)(s.qEK, v(y({}, l), {
             key: e.id,
             src: e.getAvatarURL(true, 24),
-            size: o.EFr.SIZE_24,
+            size: s.EFr.SIZE_24,
             className: a()(E.avatar, t),
             "aria-label": e.username,
             onContextMenu: t => void(null != e && (null == u || u(t, e))),
@@ -143,12 +143,12 @@ class v extends Chunk647438.PureComponent {
       let {
         renderOverflowPopout: i
       } = this.props;
-      return (0, r.jsx)(o.yRy, {
+      return (0, r.jsx)(s.yRy, {
         renderPopout: i,
         targetElementRef: this.partyMemberOverflowRef,
-        children: n => (0, r.jsx)(s.u, {
+        children: n => (0, r.jsx)(o.u, {
           text: b.intl.string(b.t.Zf4NPe),
-          children: (0, r.jsx)("div", y(I({}, n), {
+          children: (0, r.jsx)("div", v(y({}, n), {
             ref: this.partyMemberOverflowRef,
             className: a()(E.overflow, t),
             children: e
@@ -158,4 +158,4 @@ class v extends Chunk647438.PureComponent {
     })
   }
 }
-let C = v
+let C = I

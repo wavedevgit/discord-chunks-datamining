@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 558652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,23 +14,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk872058 = require("./872058.js");
-let m = [];
+let h = [];
 
-function h() {
-  let [e, t] = Chunk647438.useState(Chunk46140.yq.SUGGESTED), [n, h] = Chunk647438.useState(m), {
-    quests: g,
+function g() {
+  let [e, t] = Chunk647438.useState(Chunk46140.yq.SUGGESTED), [n, g] = Chunk647438.useState(h), {
+    quests: m,
     isFetchingCurrentQuests: _,
     hasFetched: b
   } = (0, Chunk113434.bA)(Chunk113434.e5.ALL, Chunk647438.useMemo(() => ({
     sortMethod: module,
     filters: require
   }), [module, require])), E = Chunk647438.useCallback(() => {
-    h(m)
-  }, []), O = Chunk647438.useRef(null), I = Chunk647438.useRef(null), y = (0, Chunk843611.TH)(), v = (0, Chunk843611.k6)();
+    g(h)
+  }, []), O = Chunk647438.useRef(null), y = Chunk647438.useRef(null), v = (0, Chunk843611.TH)(), I = (0, Chunk843611.k6)();
   return Chunk647438.useEffect(() => {
-    if ("" !== y.hash && null != O.current && null != I.current) {
+    if ("" !== v.hash && null != O.current && null != y.current) {
       var t, r;
-      (module !== O.current || require !== I.current) && v.replace((t = function(e) {
+      (module !== O.current || require !== y.current) && I.replace((t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -47,7 +47,7 @@ function h() {
           })
         }
         return e
-      }({}, y), r = r = {
+      }({}, v), r = r = {
         hash: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(exports, Object.getOwnPropertyDescriptors(Chunk951288)) : (function(e, t) {
         var n = Object.keys(e);
@@ -60,14 +60,14 @@ function h() {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }), exports))
     }
-  }, [module, require, y, v]), Chunk647438.useEffect(() => {
+  }, [module, require, v, I]), Chunk647438.useEffect(() => {
     O.current = module
   }, [module]), Chunk647438.useEffect(() => {
-    I.current = require
+    y.current = require
   }, [require]), (0, Chunk113434.SU)({
     selectedSortMethod: module,
     selectedFilters: require,
-    numQuestsVisible: g.length
+    numQuestsVisible: m.length
   }), (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk872058.headingWrapper,
@@ -81,13 +81,13 @@ function h() {
           optionClassName: Chunk872058.filterSortOption,
           selectedSortMethod: module
         }), (0, Chunk951288.jsx)(Chunk264282.Z, {
-          onChange: h,
+          onChange: g,
           optionClassName: Chunk872058.filterSortOption,
           selectedFilters: require
         })]
       })]
     }), (0, Chunk951288.jsx)(Chunk710914.Z, {
-      quests: g,
+      quests: m,
       isFetching: _,
       hasFetched: b,
       hasFiltersApplied: require.length > 0,

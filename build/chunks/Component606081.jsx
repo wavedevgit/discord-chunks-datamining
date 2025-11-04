@@ -58,13 +58,13 @@ f.Image = function(e) {
   let t = e.filter(e => null != e && "" !== e);
   return 0 === t.length ? null : 1 === t.length ? t[0] : t
 };
-var m = ((i = m || {}).DAMAGED = "http://schema.org/DamagedCondition", i.NEW = "http://schema.org/NewCondition", i.REFURBISHED = "http://schema.org/RefurbishedCondition", i.USED = "http://schema.org/UsedCondition", i),
-  h = ((l = h || {}).DISCONTINUED = "http://schema.org/Discontinued", l.IN_STOCK = "http://schema.org/InStock", l.IN_STORE_ONLY = "http://schema.org/InStoreOnly", l.LIMITED_AVAILABILITY = "http://schema.org/LimitedAvailability", l.ONLINE_ONLY = "http://schema.org/OnlineOnly", l.OUT_OF_STOCK = "http://schema.org/OutOfStock", l.PREORDER = "http://schema.org/PreOrder", l.PRESALE = "http://schema.org/PreSale", l.SOLD_OUT = "http://schema.org/SoldOut", l);
+var h = ((i = h || {}).DAMAGED = "http://schema.org/DamagedCondition", i.NEW = "http://schema.org/NewCondition", i.REFURBISHED = "http://schema.org/RefurbishedCondition", i.USED = "http://schema.org/UsedCondition", i),
+  g = ((l = g || {}).DISCONTINUED = "http://schema.org/Discontinued", l.IN_STOCK = "http://schema.org/InStock", l.IN_STORE_ONLY = "http://schema.org/InStoreOnly", l.LIMITED_AVAILABILITY = "http://schema.org/LimitedAvailability", l.ONLINE_ONLY = "http://schema.org/OnlineOnly", l.OUT_OF_STOCK = "http://schema.org/OutOfStock", l.PREORDER = "http://schema.org/PreOrder", l.PRESALE = "http://schema.org/PreSale", l.SOLD_OUT = "http://schema.org/SoldOut", l);
 
-function g(e) {
+function m(e) {
   return d("Offer", e)
 }
-g.ItemConditions = m, g.ItemAvailability = h;
+m.ItemConditions = h, m.ItemAvailability = g;
 var _ = ((a = _ || {}).YEARLY = "ANN", a.MONTHLY = "MON", a);
 
 function b(e) {
@@ -91,7 +91,7 @@ c(E, "Thing", p), c(E, "Brand", p), c(E, "Person", function(e) {
   return d("Organization", e)
 }), c(E, "ItemPage", function(e) {
   return d("ItemPage", e)
-}), c(E, "Product", f), c(E, "Offer", g), c(E, "Rating", function(e) {
+}), c(E, "Product", f), c(E, "Offer", m), c(E, "Rating", function(e) {
   return d("Rating", e)
 }), c(E, "AggregateRating", function(e) {
   return d("AggregateRating", e)

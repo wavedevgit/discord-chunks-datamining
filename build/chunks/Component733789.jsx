@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 733789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => y
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -41,47 +41,47 @@ function b(e) {
 }
 let E = {
   [Chunk981631.AzA.NOW_PLAYING]: {
-    single: (e, t) => h.intl.format(h.t.NEckza, {
+    single: (e, t) => g.intl.format(g.t.NEckza, {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => h.intl.format(h.t["6uWulc"], {
+    double: (e, t, n) => g.intl.format(g.t["6uWulc"], {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => h.intl.format(h.t["8fMgRU"], {
+    other: e => g.intl.format(g.t["8fMgRU"], {
       count: e
     })
   },
   [Chunk981631.AzA.RECENTLY_PLAYED]: {
-    single: (e, t) => h.intl.format(h.t["nB/JNB"], {
+    single: (e, t) => g.intl.format(g.t["nB/JNB"], {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => h.intl.format(h.t.AZCcHU, {
+    double: (e, t, n) => g.intl.format(g.t.AZCcHU, {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => h.intl.format(h.t.yNuaTU, {
+    other: e => g.intl.format(g.t.yNuaTU, {
       count: e
     })
   },
   [Chunk981631.AzA.EVER_PLAYED]: {
-    single: (e, t) => h.intl.format(h.t.Fecf3N, {
+    single: (e, t) => g.intl.format(g.t.Fecf3N, {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => h.intl.format(h.t["0LiGbJ"], {
+    double: (e, t, n) => g.intl.format(g.t["0LiGbJ"], {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => h.intl.format(h.t.Yx1rjU, {
+    other: e => g.intl.format(g.t.Yx1rjU, {
       count: e
     })
   }
@@ -101,7 +101,7 @@ class O extends Chunk647438.PureComponent {
         var n, i;
         return (0, r.jsx)("span", (n = b({
           ref: this.activityDiscordTagRef,
-          className: g.username
+          className: m.username
         }, t), i = i = {
           children: e.username
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -146,11 +146,11 @@ class O extends Chunk647438.PureComponent {
   }
   constructor(...e) {
     super(...e), _(this, "activityDiscordTagRef", i.createRef()), _(this, "playerAvatarRef", i.createRef()), _(this, "renderUserTooltip", (e, t, n) => (0, r.jsxs)("div", {
-      className: g.tooltip,
+      className: m.tooltip,
       children: [(0, r.jsx)("div", {
         children: f.ZP.getUserTag(e)
       }), (0, r.jsx)(u.ZP, {
-        className: g.tooltipTimestamp,
+        className: m.tooltipTimestamp,
         start: t,
         end: n,
         location: u.ZP.Locations.ACTIVITY_FEED
@@ -163,26 +163,26 @@ class O extends Chunk647438.PureComponent {
         user: e,
         newAnalyticsLocations: [c.Z.AVATAR],
         clickTrap: true,
-        children: t => (0, r.jsx)(s.u, {
+        children: t => (0, r.jsx)(o.u, {
           __unsupportedReactNodeAsText: this.renderUserTooltip(e, l.startTime, l.endTime),
           "aria-label": (0, f.W5)(e, {
             decoration: "never"
           }),
-          children: (0, r.jsx)(o.qEK, b({
+          children: (0, r.jsx)(s.qEK, b({
             ref: this.playerAvatarRef,
-            className: a()(g.playerAvatar, {
-              [g.avatarMasked]: !i
+            className: a()(m.playerAvatar, {
+              [m.avatarMasked]: !i
             }),
             src: e.getAvatarURL(true, 32),
             "aria-label": e.username,
-            size: o.EFr.SIZE_32
+            size: s.EFr.SIZE_32
           }, t))
         })
       }, e.id)
     }), _(this, "renderPlayerOverflow", (e, t, n) => (0, r.jsx)("div", {
-      className: g.playerOverflow,
+      className: m.playerOverflow,
       children: e
     }, n))
   }
 }
-let I = O
+let y = O

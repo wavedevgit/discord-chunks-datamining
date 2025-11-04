@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 596557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,20 +16,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk647086 = require("./647086.js"),
   Chunk135899 = require("./135899.js");
 
-function h(e) {
+function g(e) {
   var t;
-  let h = (0, s.SE)(e),
-    g = m.$X.some(t => (null == e ? true : e.id) !== f._ && c.oz(t, e)),
+  let g = (0, o.SE)(e),
+    m = h.$X.some(t => (null == e ? true : e.id) !== f._ && c.oz(t, e)),
     _ = (null == e ? true : e.defaultMessageNotifications) === d.bL.ALL_MESSAGES,
     b = (0, u.FT)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds),
-    E = h && (g || _) && !b,
+    E = g && (m || _) && !b,
     O = i.useCallback(() => {
       var t;
       (0, u.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds, true, p.L.DISMISS)
     }, [e]),
-    I = i.useRef(false);
+    y = i.useRef(false);
   i.useEffect(() => {
-    if (E && !I.current) {
+    if (E && !y.current) {
       var t;
       (0, a.ZDy)(async () => {
         let {
@@ -54,15 +54,15 @@ function h(e) {
           return e
         }({
           guild: e,
-          canEveryoneModerate: g,
+          canEveryoneModerate: m,
           isDefaultNotificationsAllMessages: _
         }, n))
       }, {
         onCloseCallback: O
-      }), o.default.track(d.rMx.DISMISSIBLE_CONTENT_SHOWN, {
+      }), s.default.track(d.rMx.DISMISSIBLE_CONTENT_SHOWN, {
         type: l.C[l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE],
         guild_id: null != (t = null == e ? true : e.id) ? t : d.lds
-      }), I.current = true
+      }), y.current = true
     }
-  }, [g, e, O, _, E])
+  }, [m, e, O, _, E])
 }

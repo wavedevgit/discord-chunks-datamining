@@ -19,10 +19,10 @@ let p = e => {
     onClick: p
   } = e, {
     analyticsLocations: f
-  } = (0, s.ZP)(a.Z.HOME_PAGE_SHOP_TAB), m = i.useRef(n);
-  return m.current = n, i.useEffect(() => () => {
+  } = (0, o.ZP)(a.Z.HOME_PAGE_SHOP_TAB), h = i.useRef(n);
+  return h.current = n, i.useEffect(() => () => {
     var e;
-    null == (e = m.current) || e.call(m)
+    null == (e = h.current) || e.call(h)
   }, []), (0, r.jsx)(l.J2, {
     targetElementRef: t,
     position: "right",
@@ -42,7 +42,7 @@ let p = e => {
       text: u.intl.string(u.t.dp9qDi),
       variant: "primary",
       onClick: () => {
-        null == p || p(), (0, o.mK)({
+        null == p || p(), (0, s.mK)({
           analyticsLocations: f,
           analyticsSource: a.Z.HOME_PAGE_SHOP_TAB,
           tab: c.AW.HOME

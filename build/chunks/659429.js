@@ -1,13 +1,13 @@
 /** Chunk was on 1272 **/
 /** chunk id: 659429, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $: () => s
+  $: () => o
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk34756 = require("./34756.js"),
   Chunk981631 = require("./981631.js");
-async function s(e) {
+async function o(e) {
   i.Z.dispatch({
     type: "APPLICATION_ACTIVITY_STATISTICS_FETCH_START",
     applicationId: e

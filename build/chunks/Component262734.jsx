@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 262734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,22 +32,22 @@ let N = {
   [Chunk918559.MI.RESIZABLE]: Chunk909357.resizable
 };
 
-function P(e) {
+function j(e) {
   let {
     frame: t
   } = e, n = (0, f.q)(t.applicationId), l = (0, d.Z)(), {
-    selectedChannelId: P,
-    selectedVoiceChannelId: j
-  } = (0, s.cj)([b.Z], () => ({
+    selectedChannelId: j,
+    selectedVoiceChannelId: P
+  } = (0, o.cj)([b.Z], () => ({
     selectedChannelId: b.Z.getChannelId(),
     selectedVoiceChannelId: b.Z.getVoiceChannelId()
-  })), x = (0, s.e7)([m.Z], () => null != j && P === j && m.Z.getChatOpen(j), [P, j]), A = (0, s.e7)([h.ZP], () => h.ZP.callChatSidebarWidth), Z = (0, u.dQu)(o.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
+  })), x = (0, o.e7)([h.Z], () => null != P && j === P && h.Z.getChatOpen(P), [j, P]), A = (0, o.e7)([g.ZP], () => g.ZP.callChatSidebarWidth), Z = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
     width: 0,
     height: 0
   }), M = i.useCallback(() => {
     E.Z.updateFrameLayoutMode({
       applicationId: t.applicationId,
-      layoutMode: y.U.PIP
+      layoutMode: v.U.PIP
     })
   }, [t.applicationId]), k = i.useCallback(() => {
     E.Z.stopFrame({
@@ -68,7 +68,7 @@ function P(e) {
     let e = e => {
       null == w.current || w.current.contains(e.target) || l || E.Z.updateFrameLayoutMode({
         applicationId: t.applicationId,
-        layoutMode: y.U.PIP
+        layoutMode: v.U.PIP
       })
     };
     return document.addEventListener("mousedown", e), () => {
@@ -86,10 +86,10 @@ function P(e) {
   }
   let V = C.MI.NO_CHAT;
   if (null == n) return null;
-  let F = (null != A ? A : v.$Y6) + Z,
-    z = (0, I.ro)(t);
+  let F = (null != A ? A : I.$Y6) + Z,
+    z = (0, y.ro)(t);
   return (0, r.jsx)(u.f6W, {
-    theme: v.BRd.DARK,
+    theme: I.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
       className: a()(T.wrapper, N[V], e),
       ref: w,
@@ -117,7 +117,7 @@ function P(e) {
       }), (0, r.jsxs)("div", {
         className: T.footer,
         children: [(0, r.jsx)(_.Z, {
-          appContext: v.IlC.APP,
+          appContext: I.IlC.APP,
           applicationId: n.id,
           shouldPrioritizeGroupPlusIcon: true,
           isRichPresenceInvite: true,
@@ -130,14 +130,14 @@ function P(e) {
           className: T.footerButtons,
           children: [(0, r.jsx)("div", {
             className: T.buttonSection,
-            children: (0, r.jsx)(g.d, {
+            children: (0, r.jsx)(m.d, {
               isTrayButton: true,
               label: S.intl.string(S.t.brPQ5U),
               onClick: M,
               iconComponent: u.dOc,
               themeable: true
             })
-          }), (0, r.jsx)(g.d, {
+          }), (0, r.jsx)(m.d, {
             isTrayButton: false,
             label: S.intl.string(S.t["R/FK4A"]),
             onClick: k,

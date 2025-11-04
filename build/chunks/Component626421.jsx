@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 626421, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,20 +19,20 @@ let f = Chunk647438.memo(function(e) {
     markAsDismissed: n
   } = e, {
     name: l,
-    guildId: s,
-    boundingRect: o
-  } = t, c = i.useMemo(() => null, [l, s, n]);
+    guildId: o,
+    boundingRect: s
+  } = t, c = i.useMemo(() => null, [l, o, n]);
   return null == c ? null : (0, r.jsx)("div", {
-    className: a()(p.upsell, (null == o || o.y < 0) && p.hidden),
-    style: null == o ? {} : {
-      top: o.top,
-      left: o.right - o.x
+    className: a()(p.upsell, (null == s || s.y < 0) && p.hidden),
+    style: null == s ? {} : {
+      top: s.top,
+      left: s.right - s.x
     },
     children: c
   })
 });
 
-function m() {
+function h() {
   let e = (0, Chunk399606.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     t = (0, Chunk566840.Eg)(module),
     [n, i] = (0, Chunk243778.US)(Object.values(exports).filter(e => {

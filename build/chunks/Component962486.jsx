@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 962486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,21 +14,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk294330 = require("./294330.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk663448 = require("./663448.js");
-let m = {
+let h = {
   page: Chunk981631.ZY5.GUILD_DISCOVERY,
   object: Chunk981631.qAy.CARD,
   section: Chunk981631.jXE.DISCOVER_POPULAR
 };
 
-function h(e) {
+function g(e) {
   let {
     tab: t,
     guildIds: n,
     loading: p,
-    onScroll: h,
-    onGuildCardClick: g,
+    onScroll: g,
+    onGuildCardClick: m,
     onGuildCardSeen: _
-  } = e, b = (0, u.Mf)(t), E = (0, u.a$)(t), O = (0, u.QW)(t), I = (0, u.lg)(t), y = i.useMemo(() => {
+  } = e, b = (0, u.Mf)(t), E = (0, u.a$)(t), O = (0, u.QW)(t), y = (0, u.lg)(t), v = i.useMemo(() => {
     let e = p ? 30 : n.length,
       t = [];
     for (let a = 0; a < e; a++) {
@@ -36,19 +36,19 @@ function h(e) {
       t.push((0, r.jsx)(d.Eo, {
         guildId: null != (i = n[a]) ? i : null,
         index: a,
-        onClick: e => g(e, a, I, m),
-        onView: e => _(e, I)
+        onClick: e => m(e, a, y, h),
+        onView: e => _(e, y)
       }, null != (l = n[a]) ? l : a))
     }
     return t
-  }, [I, n, p, g, _]);
+  }, [y, n, p, m, _]);
   return (0, r.jsxs)(c.Z, {
-    onScroll: h,
-    children: [(0, r.jsx)(s.Z, {
+    onScroll: g,
+    children: [(0, r.jsx)(o.Z, {
       title: b,
       description: E,
       children: (0, r.jsx)(a.Z, {})
-    }), (0, r.jsxs)(o.Z, {
+    }), (0, r.jsxs)(s.Z, {
       children: [(0, r.jsx)(l.Heading, {
         className: f.sectionTitle,
         variant: "heading-lg/semibold",
@@ -56,7 +56,7 @@ function h(e) {
         children: O
       }), (0, r.jsx)("div", {
         className: f.content,
-        children: y
+        children: v
       })]
     })]
   })

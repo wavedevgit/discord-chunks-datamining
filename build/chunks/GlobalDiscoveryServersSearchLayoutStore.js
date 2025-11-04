@@ -31,7 +31,7 @@ let p = new d(Chunk570140.Z, {
   GLOBAL_DISCOVERY_SERVERS_SEARCH_COUNT_SUCCESS: function(e) {
     let {
       query: t
-    } = e, n = s.Z.getCounts(t);
+    } = e, n = o.Z.getCounts(t);
     if (null == n) returnfalse;
     c = n
   }

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 590771, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,12 +15,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk149788 = require("./149788.jsx"),
   Chunk128449 = require("./128449.js");
 
-function m(e) {
+function h(e) {
   let {
     onScroll: t,
     onGuildCardSeen: n,
     onGuildCardClick: a
-  } = e, s = (0, l.e7)([c.Z], () => {
+  } = e, o = (0, l.e7)([c.Z], () => {
     var e;
     return null != (e = c.Z.getGuildIds({
       categoryId: f.Hk
@@ -32,10 +32,10 @@ function m(e) {
     })) || e
   });
   return i.useEffect(() => {
-    o.Z.fetchFeaturedGuilds()
+    s.Z.fetchFeaturedGuilds()
   }, []), (0, r.jsx)(d.Z, {
     tab: f.vf.FEATURED,
-    guildIds: s,
+    guildIds: o,
     loading: u,
     onScroll: t,
     onGuildCardSeen: n,
@@ -43,43 +43,43 @@ function m(e) {
   })
 }
 
-function h(e) {
+function g(e) {
   let {
     tab: t,
     onScroll: n,
     onGuildCardSeen: a,
-    onGuildCardClick: s
-  } = e, p = (0, u.lg)(t), m = (0, l.e7)([c.Z], () => {
+    onGuildCardClick: o
+  } = e, p = (0, u.lg)(t), h = (0, l.e7)([c.Z], () => {
     var e;
     return null != (e = c.Z.getGuildIds({
       categoryId: p
     })) ? e : f.q5
-  }), h = (0, l.e7)([c.Z], () => {
+  }), g = (0, l.e7)([c.Z], () => {
     var e;
     return null == (e = c.Z.getIsFetching({
       categoryId: p
     })) || e
   });
   return i.useEffect(() => {
-    o.Z.fetchCategoryFeaturedGuilds({
+    s.Z.fetchCategoryFeaturedGuilds({
       categoryId: p
     })
   }, [p]), (0, r.jsx)(d.Z, {
     tab: t,
-    guildIds: m,
-    loading: h,
+    guildIds: h,
+    loading: g,
     onScroll: n,
     onGuildCardSeen: a,
-    onGuildCardClick: s
+    onGuildCardClick: o
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     selectedTab: t,
     onScroll: n,
     onGuildCardSeen: l,
-    onGuildCardClick: o
+    onGuildCardClick: s
   } = e;
   switch (i.useEffect(() => {
       let e = (0, u.lg)(t);
@@ -88,10 +88,10 @@ function g(e) {
       })
     }, [t]), t) {
     case f.vf.FEATURED:
-      return (0, r.jsx)(m, {
+      return (0, r.jsx)(h, {
         tab: t,
         onScroll: n,
-        onGuildCardClick: o,
+        onGuildCardClick: s,
         onGuildCardSeen: l
       });
     case f.vf.GAMING:
@@ -99,10 +99,10 @@ function g(e) {
     case f.vf.ENTERTAINMENT:
     case f.vf.TECH:
     case f.vf.EDUCATION:
-      return (0, r.jsx)(h, {
+      return (0, r.jsx)(g, {
         tab: t,
         onScroll: n,
-        onGuildCardClick: o,
+        onGuildCardClick: s,
         onGuildCardSeen: l
       }, t);
     case f.vf.HUBS:
@@ -110,6 +110,6 @@ function g(e) {
         onScroll: n
       });
     default:
-      (0, s.vE)(t)
+      (0, o.vE)(t)
   }
 }

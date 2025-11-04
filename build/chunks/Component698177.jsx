@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 let x = () => {
-  let [e, t] = Chunk647438.useState(""), [s, x] = Chunk647438.useState(""), [E, v] = Chunk647438.useState(false), [b, j] = Chunk647438.useState(false), [I, y] = Chunk647438.useState(null), [O, S] = Chunk647438.useState(null), N = (0, Chunk442837.e7)([Chunk541692.Z], () => Chunk541692.Z.getCountryCode()), C = N.code.split(" ")[0], A = async () => {
+  let [e, t] = Chunk647438.useState(""), [s, x] = Chunk647438.useState(""), [E, v] = Chunk647438.useState(false), [j, b] = Chunk647438.useState(false), [I, y] = Chunk647438.useState(null), [O, S] = Chunk647438.useState(null), N = (0, Chunk442837.e7)([Chunk541692.Z], () => Chunk541692.Z.getCountryCode()), C = N.code.split(" ")[0], A = async () => {
     try {
       await Chunk144114.Z.resendCode(module)
     } catch (e) {
@@ -32,7 +32,7 @@ let x = () => {
       let {
         token: t
       } = await Chunk144114.Z.verifyPhone(C + module, Chunk120356);
-      y(null), S(null), j(true), Chunk144114.Z.validatePhoneForSupport(exports)
+      y(null), S(null), b(true), Chunk144114.Z.validatePhoneForSupport(exports)
     } catch (e) {
       module.body.message ? (y(null), S(module.body.message)) : (y(module.body.phone), S(module.body.code))
     } finally {
@@ -50,7 +50,7 @@ let x = () => {
       })]
     })]
   });
-  return b ? Z : (0, Chunk951288.jsxs)(Chunk388905.ZP, {
+  return j ? Z : (0, Chunk951288.jsxs)(Chunk388905.ZP, {
     children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
       children: Chunk388032.intl.string(Chunk388032.t.o4JNrO)
     }), (0, Chunk951288.jsx)(Chunk388905.DK, {

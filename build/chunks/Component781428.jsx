@@ -319,9 +319,9 @@ class ee extends(r = Chunk647438.PureComponent) {
       }, "title"), false === (0, B.isAndroidWeb)() ? (0, i.jsx)(E.DK, {
         children: z.intl.string(z.t.euS7r4)
       }, "subtitle") : null]
-    }), (0, i.jsxs)(b.Z, {
-      direction: b.Z.Direction.HORIZONTAL,
-      align: b.Z.Align.CENTER,
+    }), (0, i.jsxs)(j.Z, {
+      direction: j.Z.Direction.HORIZONTAL,
+      align: j.Z.Align.CENTER,
       children: [(0, i.jsxs)("div", {
         className: q.mainLoginContainer,
         children: [this.canShowChooseAccount && this.state.dismissedChooseAccount && (0, i.jsx)("div", {

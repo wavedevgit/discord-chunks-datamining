@@ -87,24 +87,25 @@ function y(e) {
     spacing: T,
     layerContext: S,
     targetElementRef: A,
-    caretConfig: C,
-    positionKey: N
-  } = e, R = E(e, ["children", "text", "keyboardShortcut", "__unsupportedReactNodeAsText", "asContainer", "tag", "position", "align", "spacing", "layerContext", "targetElementRef", "caretConfig", "positionKey"]);
-  let P = (0, f.c)(A),
-    w = i.useId(),
+    anchorRef: C,
+    caretConfig: N,
+    positionKey: R
+  } = e, P = E(e, ["children", "text", "keyboardShortcut", "__unsupportedReactNodeAsText", "asContainer", "tag", "position", "align", "spacing", "layerContext", "targetElementRef", "anchorRef", "caretConfig", "positionKey"]);
+  let w = (0, f.c)(A),
+    D = i.useId(),
     {
-      isVisible: D,
-      triggerProps: x
+      isVisible: x,
+      triggerProps: L
     } = (0, u.l)(h({
-      targetElementRef: P.targetElementRef
-    }, R)),
-    L = (0, d.Q)({
-      shouldShow: D
+      targetElementRef: w.targetElementRef
+    }, P)),
+    M = (0, d.Q)({
+      shouldShow: x
     }),
     {
-      defaultLayerContext: M
+      defaultLayerContext: j
     } = (0, o.ZFG)(),
-    j = i.useMemo(() => null != b ? b : null == p || "" === p ? null : null != m && "" !== m ? (0, r.jsxs)("div", {
+    k = i.useMemo(() => null != b ? b : null == p || "" === p ? null : null != m && "" !== m ? (0, r.jsxs)("div", {
       className: _.tooltipWithShortcut,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
@@ -113,24 +114,24 @@ function y(e) {
         shortcut: m
       })]
     }) : p, [p, m, b]);
-  if (null == j || "string" == typeof j && "" === j) return n;
-  let k = null != N ? N : (0, c.Sw)(p);
+  if (null == k || "string" == typeof k && "" === k) return n;
+  let U = null != R ? R : (0, c.Sw)(p);
   if (y) {
-    let e = g(h({}, x), {
-      onFocus: (0, c.tS)(x.onFocus, e => {
+    let e = g(h({}, L), {
+      onFocus: (0, c.tS)(L.onFocus, e => {
         let t = e.target;
         if (null != t) {
           var n;
-          let e = (0, c.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, w);
+          let e = (0, c.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, D);
           t.setAttribute("aria-describedby", e)
         }
       }),
-      onBlur: (0, c.tS)(x.onBlur, e => {
+      onBlur: (0, c.tS)(L.onBlur, e => {
         let t = e.target;
         if (null != t) {
           let e = t.getAttribute("aria-describedby");
           if (null != e) {
-            let n = e.split(" ").filter(e => e !== w);
+            let n = e.split(" ").filter(e => e !== D);
             n.length > 0 ? t.setAttribute("aria-describedby", n.join(" ")) : t.removeAttribute("aria-describedby")
           }
         }
@@ -140,30 +141,31 @@ function y(e) {
       tag: O,
       children: n,
       triggerHandlers: e,
-      triggerRef: P.triggerRef
+      triggerRef: w.triggerRef
     })
   } else {
     if (!i.isValidElement(n)) return null;
-    t = (0, c.C9)(n, x, w, P.triggerRef)
+    t = (0, c.C9)(n, L, D, w.triggerRef)
   }
-  let U = L((e, t) => t ? (0, r.jsx)(l.N, {
-    isVisible: D,
+  let G = M((e, t) => t ? (0, r.jsx)(l.N, {
+    isVisible: x,
     isRendered: true,
-    targetElementRef: P.targetElementRef,
-    id: w,
-    content: j,
+    targetElementRef: w.targetElementRef,
+    anchorRef: C,
+    id: D,
+    content: k,
     position: v,
     align: I,
     spacing: T,
-    caretConfig: C,
-    layerContext: null != S ? S : M,
+    caretConfig: N,
+    layerContext: null != S ? S : j,
     animationStyle: e,
-    positionKey: k
+    positionKey: U
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [t, null != j && "" !== j ? (0, r.jsx)(a.n, {
-      id: w,
-      children: j
-    }) : null, U]
+    children: [t, null != k && "" !== k ? (0, r.jsx)(a.n, {
+      id: D,
+      children: k
+    }) : null, G]
   })
 }

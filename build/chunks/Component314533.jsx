@@ -8,8 +8,8 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk317770 = require("./317770.js");
-let s = "CONNECTIONS_GRID_MODAL_KEY";
-class o extends Chunk317770.Z {
+let o = "CONNECTIONS_GRID_MODAL_KEY";
+class s extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("CONNECTIONS_GRID_MODAL_SHOW", this.handleShow), Chunk570140.Z.subscribe("CONNECTIONS_GRID_MODAL_HIDE", this.handleHide)
   }
@@ -21,10 +21,10 @@ class o extends Chunk317770.Z {
       onComplete: t,
       excludedPlatformTypes: l,
       includedPlatformTypes: a,
-      integrations: o,
+      integrations: s,
       onCompleteApplication: c
     } = e;
-    (0, i.nfh)(s) || (0, i.ZDy)(async () => {
+    (0, i.nfh)(o) || (0, i.ZDy)(async () => {
       let {
         default: e
       } = await n.e("28538").then(n.bind(n, 51299));
@@ -49,13 +49,13 @@ class o extends Chunk317770.Z {
         onComplete: t,
         excludedPlatformTypes: l,
         includedPlatformTypes: a,
-        integrations: o,
+        integrations: s,
         onCompleteApplication: c
       }, n))
     })
   }
   handleHide() {
-    (0, Chunk481060.Mr3)(s)
+    (0, Chunk481060.Mr3)(o)
   }
 }
-let c = new o
+let c = new s

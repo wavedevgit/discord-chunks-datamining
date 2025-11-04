@@ -12,18 +12,28 @@ var Chunk120356 = require("./120356.js"),
   Chunk201284 = require("./201284.js");
 let c = e => {
   let {
-    className: t
-  } = e;
+    className: t,
+    isAnimated: n = false,
+    questName: i
+  } = e, c = n ? s.Z : s.Z + "?format=webp";
   return (0, r.jsx)("div", {
-    className: l()(s.container, t),
-    children: (0, r.jsx)(a.Z, {
-      className: s.asset,
+    className: l()(o.container, t),
+    children: n ? (0, r.jsx)(a.Z, {
+      autoPlay: true,
+      loop: true,
+      muted: true,
+      preload: "auto",
       playsInline: true,
+      className: o.asset,
       controls: false,
       children: (0, r.jsx)("source", {
-        src: o.Z,
+        src: c,
         type: "video/webm"
       })
+    }) : (0, r.jsx)("img", {
+      className: o.asset,
+      src: c,
+      alt: i
     })
   })
 }

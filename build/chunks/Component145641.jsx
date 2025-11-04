@@ -18,7 +18,7 @@ let p = function(e) {
     renderRow: n,
     renderSection: p,
     footer: f
-  } = e, m = e => {
+  } = e, h = e => {
     let {
       section: r,
       row: i
@@ -26,12 +26,12 @@ let p = function(e) {
     if (null == l || null == i) return null;
     let a = l[i];
     return null == a ? null : n(a)
-  }, h = i.useCallback(e => {
+  }, g = i.useCallback(e => {
     let {
       section: t
     } = e;
     return p(t)
-  }, [p]), g = (0, s.e7)([c.Z], () => c.Z.keyboardModeEnabled), _ = i.useRef(null), b = i.useCallback(() => new Promise(e => {
+  }, [p]), m = (0, o.e7)([c.Z], () => c.Z.keyboardModeEnabled), _ = i.useRef(null), b = i.useCallback(() => new Promise(e => {
     let t = _.current;
     if (null == t) return e();
     t.scrollToTop({
@@ -51,15 +51,15 @@ let p = function(e) {
       padding: 8,
       callback: () => null == t ? true : t.focus()
     })
-  }, []), I = (0, l.ZP)({
+  }, []), y = (0, l.ZP)({
     id: "people-list",
-    isEnabled: g,
+    isEnabled: m,
     scrollToStart: b,
     scrollToEnd: E,
     setFocus: O
-  }), y = i.useMemo(() => t.map(e => e.length), [t]);
+  }), v = i.useMemo(() => t.map(e => e.length), [t]);
   return (0, r.jsx)(a.bG, {
-    navigator: I,
+    navigator: y,
     children: (0, r.jsx)(a.SJ, {
       children: e => {
         var {
@@ -80,7 +80,7 @@ let p = function(e) {
           return i
         }(e, ["ref"]);
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(o._2F, function(e) {
+          children: [(0, r.jsx)(s._2F, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -102,11 +102,11 @@ let p = function(e) {
               var n;
               _.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
             },
-            renderRow: m,
+            renderRow: h,
             rowHeight: u.NV,
-            renderSection: h,
+            renderSection: g,
             sectionHeight: u.aS,
-            sections: y,
+            sections: v,
             className: d.peopleList
           }, n)), f]
         })

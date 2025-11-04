@@ -92,7 +92,7 @@ let M = {
       if (null == i) throw new x.Z({
         errorCode: w.lTL.INVALID_GUILD_TEMPLATE
       }, "Invalid guild template id: ".concat(t));
-      return j.ZP.focus(), (0, a.ZDy)(async () => {
+      return P.ZP.focus(), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("10778"), n.e("86015")]).then(n.bind(n, 766775));
@@ -126,12 +126,12 @@ let M = {
         }
       } = e;
       return new Promise((e, i) => {
-        s.Z.wait(() => {
+        o.Z.wait(() => {
           p.Z.resolveGiftCode(t, true, true).then(i => {
             let {
               giftCode: l
             } = i;
-            j.ZP.focus(), T.default.track(w.rMx.OPEN_MODAL, {
+            P.ZP.focus(), T.default.track(w.rMx.OPEN_MODAL, {
               type: "gift_accept",
               location: w.SaU
             }), (0, a.ZDy)(async () => {
@@ -162,56 +162,56 @@ let M = {
           params: n
         }
       } = e;
-      switch (j.ZP.focus(), t) {
+      switch (P.ZP.focus(), t) {
         case Z.jE.USER_SETTINGS:
-          null != n && ((0, v.dL)({
+          null != n && ((0, I.dL)({
             pathname: w.Z5c.SETTINGS(n.section, n.subsection),
             search: n.search
           }), D(n.fingerprint, (0, Z.O)(t)));
           break;
         case Z.jE.CHANGELOG:
-          null != n && ((0, v.dL)(P.Z.formatPathWithQuery(w.Z5c.CHANGELOGS(n.date), n.query)), D(n.fingerprint, (0, Z.O)(t)));
+          null != n && ((0, I.dL)(j.Z.formatPathWithQuery(w.Z5c.CHANGELOGS(n.date), n.query)), D(n.fingerprint, (0, Z.O)(t)));
           break;
         case Z.jE.LIBRARY:
-          (0, v.dL)(w.Z5c.APPLICATION_LIBRARY), null != n && D(n.fingerprint, (0, Z.O)(t));
+          (0, I.dL)(w.Z5c.APPLICATION_LIBRARY), null != n && D(n.fingerprint, (0, Z.O)(t));
           break;
         case Z.jE.STORE_HOME:
-          (0, v.dL)(w.Z5c.APPLICATION_STORE), null != n && D(n.fingerprint, (0, Z.O)(t));
+          (0, I.dL)(w.Z5c.APPLICATION_STORE), null != n && D(n.fingerprint, (0, Z.O)(t));
           break;
         case Z.jE.STORE_LISTING:
-          null != n && ((0, v.dL)(w.Z5c.APPLICATION_STORE_LISTING_SKU(n.skuId, n.slug)), D(n.fingerprint, (0, Z.O)(t)));
+          null != n && ((0, I.dL)(w.Z5c.APPLICATION_STORE_LISTING_SKU(n.skuId, n.slug)), D(n.fingerprint, (0, Z.O)(t)));
           break;
         case Z.jE.PICK_GUILD_SETTINGS:
-          null != n && ((0, v.dL)({
+          null != n && ((0, I.dL)({
             pathname: w.Z5c.PICK_GUILD_SETTINGS(n.section, n.subsection),
             search: n.search
           }), D(n.fingerprint, (0, Z.O)(t)));
           break;
         case Z.jE.CHANNEL:
-          null != n && ((0, v.dL)({
+          null != n && ((0, I.dL)({
             pathname: w.Z5c.CHANNEL(n.guildId, n.channelId, n.messageId),
             search: n.search
           }), D(n.fingerprint, (0, Z.O)(t)));
           break;
         case Z.jE.QUEST_HOME:
-          null != n ? ((0, v.dL)({
+          null != n ? ((0, I.dL)({
             pathname: w.Z5c.QUEST_HOME_V2,
             hash: n.questId
-          }), D(n.fingerprint, (0, Z.O)(t))) : (0, v.dL)(w.Z5c.QUEST_HOME_V2);
+          }), D(n.fingerprint, (0, Z.O)(t))) : (0, I.dL)(w.Z5c.QUEST_HOME_V2);
           break;
         case Z.jE.QUEST_PREVIEW_TOOL:
-          if ((0, y.T)({
+          if ((0, v.T)({
               location: L.dr.QUEST_PREVIEW_TOOL_2
             }) && null != n) {
             let e = new URLSearchParams;
-            e.set(I.tR.TAB, I.e5.PREVIEW_TOOL), null != n.questId && e.set(I.tR.QUEST_ID, n.questId), (0, v.dL)({
+            e.set(y.tR.TAB, y.e5.PREVIEW_TOOL), null != n.questId && e.set(y.tR.QUEST_ID, n.questId), (0, I.dL)({
               pathname: w.Z5c.QUEST_HOME_V2,
               search: "?".concat(e.toString())
             }), D(n.fingerprint, (0, Z.O)(t))
           }
           break;
         case Z.jE.DISCOVERY_GAME_RESULTS:
-          null != n && ((0, v.dL)({
+          null != n && ((0, I.dL)({
             pathname: w.Z5c.GLOBAL_DISCOVERY_SERVERS,
             search: "?game=".concat(n.gameId)
           }), D(n.fingerprint, (0, Z.O)(t)));
@@ -228,13 +228,13 @@ let M = {
           }), D(n.fingerprint, (0, Z.O)(t)), true;
           returnfalse;
         case Z.jE.SHOP:
-          null != n && ((0, v.dL)({
+          null != n && ((0, I.dL)({
             pathname: w.Z5c.COLLECTIBLES_SHOP,
             search: n.search
           }), D(n.fingerprint, (0, Z.O)(t)));
           break;
         case Z.jE.FEATURES:
-          (null == n ? true : n.path) != null && ((0, v.dL)({
+          (null == n ? true : n.path) != null && ((0, I.dL)({
             pathname: n.path
           }), D(n.fingerprint, (0, Z.O)(t)));
           break;
@@ -252,25 +252,25 @@ let M = {
                   attempt_id: n
                 });
                 let a = await _.ZP.fetchApplication(e),
-                  s = null == a || null == (r = a.bot) ? true : r.id;
-                if (null == s) return void T.default.track(w.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
+                  o = null == a || null == (r = a.bot) ? true : r.id;
+                if (null == o) return void T.default.track(w.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
                   application_id: e,
                   success: false,
                   failure_reason: "no_bot_user",
                   attempt_id: n
                 });
-                let o = await u.Z.openPrivateChannel({
-                    recipientIds: s
+                let s = await u.Z.openPrivateChannel({
+                    recipientIds: o
                   }),
                   c = new URL(t),
                   d = null != (i = c.searchParams.get("referrer_id")) ? i : true,
                   {
                     customId: p
-                  } = await (0, h.ur)(e, c.searchParams.get("link_id"), c.searchParams.get("custom_id"));
-                await (0, m.Z)({
+                  } = await (0, g.ur)(e, c.searchParams.get("link_id"), c.searchParams.get("custom_id"));
+                await (0, h.Z)({
                   targetApplicationId: e,
-                  channelId: o,
-                  analyticsLocations: [g.Z.DEEPLINK],
+                  channelId: s,
+                  analyticsLocations: [m.Z.DEEPLINK],
                   customId: p,
                   referrerId: d
                 }), T.default.track(w.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
@@ -302,7 +302,7 @@ let M = {
           fingerprint: n
         }
       } = e;
-      j.ZP.focus(null, true), (0, c.lx)(t, n)
+      P.ZP.focus(null, true), (0, c.lx)(t, n)
     }
   },
   [Chunk981631.Etm.CONNECTIONS_CALLBACK]: {
@@ -345,7 +345,7 @@ let M = {
           query: r
         }
       } = e;
-      return (0, o.rt)({
+      return (0, s.rt)({
         paymentSourceType: w.HeQ.PAYPAL,
         state: t,
         path: n,
@@ -364,7 +364,7 @@ let M = {
           payment_source_type: i
         }
       } = e;
-      return (0, o.rt)({
+      return (0, s.rt)({
         paymentSourceType: i,
         state: t,
         path: n,
