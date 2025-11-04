@@ -6,14 +6,14 @@ require.d(exports, {
 });
 var Chunk647438 = require("./647438.js"),
   Chunk873546 = require("./873546.js"),
-  Chunk107756 = require("./107756.js"),
-  Chunk705397 = require("./705397.js");
+  Chunk2109 = require("./2109.js"),
+  Chunk124566 = require("./124566.js");
 
 function s() {
   let {
     enabled: e
-  } = Chunk107756.ZP.useConfig({
+  } = Chunk2109.Z.useConfig({
     location: "useGiftingPromotionConfig"
   });
-  return Chunk647438.useMemo(() => Chunk873546.tq || Chunk873546.Em ? null : module ? Chunk705397.F : null, [module])
+  return Chunk647438.useMemo(() => Chunk873546.tq || Chunk873546.Em ? null : module ? Chunk124566.D : null, [module])
 }
