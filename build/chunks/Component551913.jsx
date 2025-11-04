@@ -1,76 +1,47 @@
 /** Chunk was on 1272 **/
 /** chunk id: 551913, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk907862 = require("./907862.js"),
   Chunk703656 = require("./703656.js"),
-  Chunk937797 = require("./937797.js"),
-  Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk11269 = require("./11269.js");
 
-function p(e) {
+function u(e) {
   let {
     onNavigateToQuestHome: t,
     onRender: n,
-    onRequestClose: p,
-    targetElementRef: f
-  } = e, {
-    enabled: h,
-    variant: g
-  } = o.GE.useConfig({
-    location: s.dr.QUEST_HOME_DESKTOP
-  }), m = i.useCallback(() => {
-    t(), (0, a.uL)(c.Z5c.QUEST_HOME_V2)
+    onRequestClose: u,
+    targetElementRef: d
+  } = e, p = i.useCallback(() => {
+    t(), (0, a.uL)(o.Z5c.QUEST_HOME_V2)
   }, [t]);
-  if (i.useEffect(() => {
-      h && n()
-    }, [h, n]), h) return (0, r.jsx)(l.J2, {
+  return i.useEffect(() => {
+    n()
+  }, [n]), (0, r.jsx)(l.J2, {
     actions: [{
-      text: function(e) {
-        switch (e) {
-          case o.yE.DISCOVER:
-            return u.intl.string(u.t.BeeKh0);
-          case o.yE.ACTION:
-            return u.intl.string(u.t["8Dp3R0"]);
-          case o.yE.EARN:
-            return u.intl.string(u.t.facYnD);
-          case o.yE.REWARD:
-            return u.intl.string(u.t.gL45vM)
-        }
-      }(g),
+      text: s.intl.string(s.t.facYnD),
       variant: "primary",
-      onClick: m
+      onClick: p
     }],
     align: "top",
-    body: u.intl.string(u.t.o4NGXc),
+    body: s.intl.string(s.t.o4NGXc),
     caretConfig: {
       align: "start"
     },
     gradientColor: "purple",
     graphic: {
       type: "image",
-      src: d.Z
+      src: c.Z
     },
-    onRequestClose: p,
+    onRequestClose: u,
     position: "right",
     size: "lg",
-    targetElementRef: f,
-    title: function(e) {
-      switch (e) {
-        case o.yE.DISCOVER:
-          return u.intl.string(u.t["2qdOVq"]);
-        case o.yE.ACTION:
-          return u.intl.string(u.t.E3Rw0y);
-        case o.yE.EARN:
-          return u.intl.string(u.t["2/2YdK"]);
-        case o.yE.REWARD:
-          return u.intl.string(u.t.mOH7r6)
-      }
-    }(g)
+    targetElementRef: d,
+    title: s.intl.string(s.t["2/2YdK"])
   })
 }

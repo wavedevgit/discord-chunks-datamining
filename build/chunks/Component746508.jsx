@@ -206,8 +206,6 @@ function eq() {
       notchBackground: Chunk130067._.BLACK,
       buttonTest: Chunk388032.intl.string(Chunk388032.t["sG+MGg"]),
       buttonStop: Chunk388032.intl.string(Chunk388032.t.Yp3SbJ),
-      buttonClassName: Chunk890332.micTestButton,
-      buttonColor: Chunk755721.zx.Colors.PRIMARY,
       location: {
         section: Chunk981631.jXE.NOISE_CANCELLATION_POPOUT
       }

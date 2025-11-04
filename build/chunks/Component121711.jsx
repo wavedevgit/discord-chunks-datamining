@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 121711, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => em
+  Z: () => eg
 }), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,7 +43,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk833435 = require("./833435.js"),
   Chunk497505 = require("./497505.js"),
   Chunk220068 = require("./220068.js"),
-  Chunk937797 = require("./937797.js"),
   Chunk36243 = require("./36243.js"),
   Chunk877109 = require("./877109.jsx"),
   Chunk110560 = require("./110560.jsx"),
@@ -68,17 +67,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk913713 = require("./913713.js"),
   Chunk431115 = require("./431115.js");
 
-function ef(e) {
+function ep(e) {
   let {
     onLoadComplete: t
   } = e, {
     enabled: n
   } = (0, Z.WX)({
-    location: et.dr.QUEST_HOME_DESKTOP
+    location: ee.dr.QUEST_HOME_DESKTOP
   }), l = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), o = (0, u.e7)([L.Z], () => L.Z.isFocused()), {
     ref: s,
     inViewport: c
-  } = (0, q.a)(), d = i.useRef(null);
+  } = (0, W.a)(), d = i.useRef(null);
   if (i.useEffect(() => {
       (null == d ? true : d.current) != null && (d.current.paused || o && c && !l ? d.current.paused && !l && c && o && d.current.play() : d.current.pause())
     }, [l, c, o]), n) {
@@ -90,47 +89,47 @@ function ef(e) {
       loop: true,
       muted: true,
       playsInline: true,
-      className: a()(ea.bannerAsset, ea.orbsBannerAsset),
+      className: a()(el.bannerAsset, el.orbsBannerAsset),
       onProgress: t,
       "data-mtctest-ignore": "true",
       controls: false,
       children: (0, r.jsx)("source", {
-        src: e ? es.Z : ec.Z,
+        src: e ? eo.Z : es.Z,
         type: e ? "video/mp4" : "video/webm"
       })
     })
   }
   return (0, r.jsx)("img", {
-    src: eo.ZP,
-    className: a()(ea.bannerAsset, ea.oversizedImg),
+    src: ea.ZP,
+    className: a()(el.bannerAsset, el.oversizedImg),
     alt: "",
     onLoad: t
   })
 }
 
-function eh(e) {
+function ef(e) {
   let {
     onLoadComplete: t
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
-      src: eu.ZP,
-      className: a()(ea.bannerAsset, ea.redirectNoticeBannerAsset),
+      src: ec.ZP,
+      className: a()(el.bannerAsset, el.redirectNoticeBannerAsset),
       alt: ""
     }), (0, r.jsx)("img", {
-      src: ep.ZP,
-      className: a()(ea.bannerAsset, ea.redirectNoticeBannerAsset),
+      src: ed.ZP,
+      className: a()(el.bannerAsset, el.redirectNoticeBannerAsset),
       alt: "",
       onLoad: t
     }), (0, r.jsx)("img", {
-      src: ed.ZP,
-      className: a()(ea.bannerAsset, ea.redirectNoticeBannerAsset),
+      src: eu.ZP,
+      className: a()(el.bannerAsset, el.redirectNoticeBannerAsset),
       alt: ""
     })]
   })
 }
 
-function eg(e) {
+function eh(e) {
   let {
     banner: t,
     children: n,
@@ -141,9 +140,9 @@ function eg(e) {
     onSelectTab: s,
     withQuestsGrid: c = true
   } = e, u = (0, G._)({
-    location: et.dr.QUEST_HOME_DESKTOP
-  }) ? Q.Z : Q.j;
-  return (0, r.jsxs)($.t.Provider, {
+    location: ee.dr.QUEST_HOME_DESKTOP
+  }) ? K.Z : K.j;
+  return (0, r.jsxs)(X.t.Provider, {
     value: l,
     children: [i, (0, r.jsxs)(x.Z, {
       onScroll: o,
@@ -151,20 +150,20 @@ function eg(e) {
       children: [t, (0, r.jsxs)(T.Z, {
         children: [n, c ? a === U.e5.CLAIMED ? (0, r.jsx)(u, {
           onSelectTab: s
-        }) : a === U.e5.PREVIEW_TOOL ? (0, r.jsx)(z.Z, {}) : (0, r.jsx)(K.Z, {}) : null]
+        }) : a === U.e5.PREVIEW_TOOL ? (0, r.jsx)(F.Z, {}) : (0, r.jsx)(q.Z, {}) : null]
       })]
     })]
   })
 }
-let em = function(e) {
+let eg = function(e) {
   var t;
   let {
     topLevelRoute: n
-  } = e, l = (0, o.TH)(), h = (null == (t = (0, o.LX)(l.pathname, en.Z5c.QUEST_HOME)) ? true : t.isExact) === true, y = (0, u.e7)([b.Z], () => b.Z.getState("quests")), {
+  } = e, l = (0, o.TH)(), h = (null == (t = (0, o.LX)(l.pathname, et.Z5c.QUEST_HOME)) ? true : t.isExact) === true, y = (0, u.e7)([b.Z], () => b.Z.getState("quests")), {
     selectedTab: T,
     onSelectTab: x,
     tabs: L
-  } = (0, ee.z)({
+  } = (0, $.z)({
     withClaimedQuestsTab: !h
   });
   i.useLayoutEffect(() => {
@@ -175,13 +174,13 @@ let em = function(e) {
   let {
     onScroll: D,
     scrollPosition: G
-  } = (0, C.M)(), z = W.Z.getState().getUtmCurrentContext(), q = (0, J.z)(e => e.registerAssetLoad), K = i.useRef(z);
+  } = (0, C.M)(), F = Y.Z.getState().getUtmCurrentContext(), W = (0, Q.z)(e => e.registerAssetLoad), q = i.useRef(F);
   i.useEffect(() => {
-    K.current = z
+    q.current = F
   }), i.useEffect(() => {
     let {
       current: e
-    } = K;
+    } = q;
     (0, m.h)({
       name: c.ImpressionNames.QUEST_HOME,
       type: c.ImpressionTypes.VIEW,
@@ -195,63 +194,57 @@ let em = function(e) {
     })
   }, [T]);
   let {
-    enabled: Q
+    enabled: K
   } = (0, Z.WX)({
-    location: et.dr.QUEST_HOME_DESKTOP
-  }), $ = i.useCallback(() => {
-    if (Q) return void window.open(en.EYA.PAID_TERMS_ORBS);
-    window.open(M.Z.getArticleURL(en.BhN.QUESTS_LEARN_MORE))
-  }, [Q]);
+    location: ee.dr.QUEST_HOME_DESKTOP
+  }), X = i.useCallback(() => {
+    if (K) return void window.open(et.EYA.PAID_TERMS_ORBS);
+    window.open(M.Z.getArticleURL(et.BhN.QUESTS_LEARN_MORE))
+  }, [K]);
   (0, O.Tt)({
-    location: el.intl.string(el.t.JALI2K)
+    location: ei.intl.string(ei.t.JALI2K)
   });
-  let eo = Q ? el.intl.format(el.t.BCBIlp, {}) : el.intl.format(el.t.lmMBfy, {}),
-    es = Q ? el.intl.format(el.t.U9FY0J, {}) : el.intl.string(el.t.oWCrBq),
-    ec = i.useRef(null),
-    eu = i.useCallback(() => {
+  let ea = K ? ei.intl.format(ei.t.BCBIlp, {}) : ei.intl.format(ei.t.lmMBfy, {}),
+    eo = K ? ei.intl.format(ei.t.U9FY0J, {}) : ei.intl.string(ei.t.oWCrBq),
+    es = i.useRef(null),
+    ec = i.useCallback(() => {
       (0, A.Y)({
-        pageType: en.ZY5.GLOBAL_DISCOVERY_QUESTS,
-        sectionType: en.jXE.ORBS_BALANCE_MENU,
-        ctaObject: en.qAy.CTA_TO_ORBS_SHOP
+        pageType: et.ZY5.GLOBAL_DISCOVERY_QUESTS,
+        sectionType: et.jXE.ORBS_BALANCE_MENU,
+        ctaObject: et.qAy.CTA_TO_ORBS_SHOP
       }), (0, E.mK)({
-        tab: er.AW.ORBS,
+        tab: en.AW.ORBS,
         analyticsLocations: [],
         analyticsSource: g.Z.ORBS_BALANCE_MENU
       })
     }, []);
   i.useEffect(() => {
-    (0, f.Y)(en.Z5c.QUEST_HOME_V2)
+    (0, f.Y)(et.Z5c.QUEST_HOME_V2)
   }, []), i.useEffect(() => {
     I.C.trigger()
   }, []);
-  let ed = (0, F.T)({
-    location: et.dr.QUEST_PREVIEW_TOOL_2
+  let eu = (0, V.T)({
+    location: ee.dr.QUEST_PREVIEW_TOOL_2
   });
   i.useEffect(() => {
-    if (null != y || !ed) return;
+    if (null != y || !eu) return;
     let e = new URLSearchParams(l.search),
       t = e.get(U.tR.TAB),
       n = e.get(U.tR.QUEST_ID);
-    t === U.e5.PREVIEW_TOOL && _.Z.openNativeAppModal("quests", en.Etm.DEEP_LINK, {
-      type: ei.jE.QUEST_PREVIEW_TOOL,
+    t === U.e5.PREVIEW_TOOL && _.Z.openNativeAppModal("quests", et.Etm.DEEP_LINK, {
+      type: er.jE.QUEST_PREVIEW_TOOL,
       params: {
         questId: n,
         tab: t
       }
     })
-  }, [l.search, y, ed]);
-  let {
-    enabled: ep
-  } = V.GE.useConfig({
-    location: et.dr.QUEST_HOME_DESKTOP
-  });
-  i.useEffect(() => {
-    n && ep && (0, v.Q3)(d.z.QUEST_HOME_ENTRYPOINT_ONBOARDING)
-  }, [n, ep]);
-  let em = i.useCallback(() => {
-    (0, Y.navigateToQuestHome)({
+  }, [l.search, y, eu]), i.useEffect(() => {
+    n && (0, v.Q3)(d.z.QUEST_HOME_ENTRYPOINT_ONBOARDING)
+  }, [n]);
+  let ed = i.useCallback(() => {
+    (0, z.navigateToQuestHome)({
       fromContent: B.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER
-    }), R.default.track(en.rMx.QUEST_CONTENT_CLICKED, function(e) {
+    }), R.default.track(et.rMx.QUEST_CONTENT_CLICKED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -274,26 +267,26 @@ let em = function(e) {
       is_targeted: false
     }, (0, k.mH)(B.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER)))
   }, []);
-  return (0, r.jsx)(X.k.Provider, {
+  return (0, r.jsx)(J.k.Provider, {
     value: {
-      onAssetLoadComplete: q
+      onAssetLoadComplete: W
     },
     children: (0, r.jsx)("div", {
-      className: a()(ea.container, {
-        [ea.withoutTopBorder]: !n
+      className: a()(el.container, {
+        [el.withoutTopBorder]: !n
       }),
-      children: h ? (0, r.jsx)(eg, {
+      children: h ? (0, r.jsx)(eh, {
         banner: (0, r.jsx)(S.Z, {
-          title: el.intl.string(el.t.z8YP2A),
+          title: ei.intl.string(ei.t.z8YP2A),
           titleColor: "always-white",
           button: (0, r.jsx)(p.Button, {
             variant: "overlay-primary",
-            text: el.intl.string(el.t.GURBQl),
-            onClick: em
+            text: ei.intl.string(ei.t.GURBQl),
+            onClick: ed
           }),
-          className: ea.redirectNoticeBannerContainer,
-          children: (0, r.jsx)(eh, {
-            onLoadComplete: q
+          className: el.redirectNoticeBannerContainer,
+          children: (0, r.jsx)(ef, {
+            onLoadComplete: W
           })
         }),
         header: (0, r.jsx)(P.a, {
@@ -304,49 +297,49 @@ let em = function(e) {
         }),
         onScroll: D,
         onSelectTab: x,
-        scrollerRef: ec,
+        scrollerRef: es,
         selectedTab: T,
         withQuestsGrid: false,
         children: (0, r.jsxs)("div", {
-          className: ea.redirectNoticeContainer,
+          className: el.redirectNoticeContainer,
           children: [(0, r.jsx)(p.Heading, {
             variant: "heading-xl/semibold",
-            children: el.intl.string(el.t.z8YP2A)
+            children: ei.intl.string(ei.t.z8YP2A)
           }), (0, r.jsx)(p.Text, {
             color: "text-secondary",
             variant: "text-md/normal",
-            children: el.intl.string(el.t.HdKh65)
+            children: ei.intl.string(ei.t.HdKh65)
           }), (0, r.jsx)(p.Avr, {
-            text: el.intl.string(el.t["1CdL8d"]),
-            onClick: em,
+            text: ei.intl.string(ei.t["1CdL8d"]),
+            onClick: ed,
             textVariant: "text-md/normal",
             variant: "primary"
           })]
         })
-      }) : Q ? (0, r.jsx)(eg, {
+      }) : K ? (0, r.jsx)(eh, {
         banner: T !== U.e5.PREVIEW_TOOL && (0, r.jsxs)(S.Z, {
-          title: eo,
-          description: es,
+          title: ea,
+          description: eo,
           button: (0, r.jsxs)(p.ButtonGroup, {
             children: [(0, r.jsx)(p.Button, {
               variant: "overlay-primary",
-              text: el.intl.string(el.t["1Wm127"]),
+              text: ei.intl.string(ei.t["1Wm127"]),
               onClick: () => (0, E.mK)({
-                tab: er.AW.ORBS,
+                tab: en.AW.ORBS,
                 analyticsLocations: [],
                 analyticsSource: g.Z.INTRO_TO_ORBS_QUEST_BANNER
               })
             }), (0, r.jsx)(p.Button, {
               variant: "overlay-secondary",
-              text: el.intl.string(el.t["7kTAgJ"]),
-              onClick: $
+              text: ei.intl.string(ei.t["7kTAgJ"]),
+              onClick: X
             })]
           }),
-          className: a()(ea.bannerContainer, ea.orbsContainer),
+          className: a()(el.bannerContainer, el.orbsContainer),
           children: [(0, r.jsx)("div", {
-            className: a()(ea.bannerGradient, ea.orbsGradient)
-          }), (0, r.jsx)(ef, {
-            onLoadComplete: q
+            className: a()(el.bannerGradient, el.orbsGradient)
+          }), (0, r.jsx)(ep, {
+            onLoadComplete: W
           })]
         }),
         header: (0, r.jsx)(P.a, {
@@ -355,38 +348,38 @@ let em = function(e) {
           tabs: L,
           icon: p.qDn,
           children: (0, r.jsx)(w.V9, {
-            analyticsPage: en.ZY5.GLOBAL_DISCOVERY_QUESTS,
+            analyticsPage: et.ZY5.GLOBAL_DISCOVERY_QUESTS,
             cardAlignment: w.ek.END,
-            ctaText: el.intl.string(el.t["J+vlIR"]),
-            ctaOnClick: eu
+            ctaText: ei.intl.string(ei.t["J+vlIR"]),
+            ctaOnClick: ec
           })
         }),
         onScroll: D,
         onSelectTab: x,
-        scrollerRef: ec,
+        scrollerRef: es,
         selectedTab: T
-      }) : (0, r.jsx)(eg, {
+      }) : (0, r.jsx)(eh, {
         banner: (0, r.jsxs)(S.Z, {
-          title: eo,
-          description: es,
+          title: ea,
+          description: eo,
           button: (0, r.jsx)(p.Button, {
             variant: "overlay-primary",
-            text: el.intl.string(el.t.hvVgAZ),
-            onClick: $,
+            text: ei.intl.string(ei.t.hvVgAZ),
+            onClick: X,
             icon: p.Gr1,
             iconPosition: "end"
           }),
-          className: ea.bannerContainer,
+          className: el.bannerContainer,
           children: [(0, r.jsx)("div", {
-            className: ea.bannerGradient
-          }), (0, r.jsx)(ef, {
-            onLoadComplete: q
+            className: el.bannerGradient
+          }), (0, r.jsx)(ep, {
+            onLoadComplete: W
           })]
         }),
         header: (0, r.jsxs)(j.ZP, {
           variant: j._6.OVERLAY,
           children: [(0, r.jsx)("div", {
-            className: ea.dragRegion
+            className: el.dragRegion
           }), (0, r.jsx)(j.z6, {
             scrollPosition: G
           }), (0, r.jsx)(j.aV, {
@@ -395,10 +388,10 @@ let em = function(e) {
         }),
         onScroll: D,
         onSelectTab: x,
-        scrollerRef: ec,
+        scrollerRef: es,
         selectedTab: T,
         children: (0, r.jsx)("div", {
-          className: ea.tabs,
+          className: el.tabs,
           children: (0, r.jsx)(N.Z, {
             tabs: L,
             selectedTab: T,

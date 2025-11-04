@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 362870, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,44 +16,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk266454 = require("./266454.js"),
   Chunk426032 = require("./426032.js"),
   Chunk626135 = require("./626135.js"),
-  Chunk937797 = require("./937797.js"),
   Chunk150560 = require("./150560.js"),
   Chunk551913 = require("./551913.jsx"),
-  Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk228624 = require("./228624.js");
-let C = Math.ceil(Math.sqrt(115200)),
-  S = (C - 240) / 2,
-  T = function(e) {
+let v = Math.ceil(Math.sqrt(115200)),
+  I = (v - 240) / 2,
+  C = function(e) {
     var t, n;
     let {
       selected: l
-    } = e, T = (0, s.JA)("quests"), N = i.useRef(null), {
-      shouldShowPopover: j,
-      shouldShowGradientAndBadge: P,
-      dismissContent: x
+    } = e, C = (0, s.JA)("quests"), S = i.useRef(null), {
+      shouldShowPopover: T,
+      shouldShowGradientAndBadge: N,
+      dismissContent: j
     } = function() {
-      let {
-        enabled: e
-      } = m.GE.useConfig({
-        location: E.dr.PRIVATE_CHANNELS_LIST
-      }), [t, n] = (0, h.US)(e ? [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], y.R.PRIVATE_CHANNELS_LIST, true), r = i.useCallback(() => {
-        e && n(y.L.TAKE_ACTION)
-      }, [n, e]);
+      let [e, t] = (0, h.US)([c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING], E.R.PRIVATE_CHANNELS_LIST, true), n = i.useCallback(() => {
+        t(E.L.TAKE_ACTION)
+      }, [t]);
       return {
-        shouldShowPopover: t === c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING,
-        shouldShowGradientAndBadge: !(0, f.Nj)(c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING) && e,
-        dismissContent: r
+        shouldShowPopover: e === c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING,
+        shouldShowGradientAndBadge: !(0, f.Nj)(c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING),
+        dismissContent: n
       }
-    }(), A = i.useCallback(() => {
-      _.Z.getState().setUtmCurrentContext({
+    }(), P = i.useCallback(() => {
+      m.Z.getState().setUtmCurrentContext({
         utmContentCurrent: "PRIMARY_QUEST_HOME"
       })
     }, []), [{
-      glowSpring: Z
-    }, w] = (0, u.q_F)(() => ({
+      glowSpring: x
+    }, A] = (0, u.q_F)(() => ({
       from: {
         glowSpring: 0
       },
@@ -64,8 +58,8 @@ let C = Math.ceil(Math.sqrt(115200)),
         friction: 12
       }
     })), [{
-      shineSpring: L
-    }, R] = (0, u.q_F)(() => ({
+      shineSpring: Z
+    }, w] = (0, u.q_F)(() => ({
       from: {
         shineSpring: 0
       },
@@ -75,45 +69,45 @@ let C = Math.ceil(Math.sqrt(115200)),
         tension: 170,
         friction: 38
       }
-    })), D = i.useCallback(() => {
-      R({
+    })), L = i.useCallback(() => {
+      w({
         shineSpring: 1
-      }), w({
+      }), A({
         glowSpring: 1,
         delay: 200
       })
-    }, [R, w]), M = i.useCallback(() => {
-      R({
+    }, [w, A]), R = i.useCallback(() => {
+      w({
         shineSpring: 0,
         immediate: true
-      }), w({
+      }), A({
         glowSpring: 0,
         delay: 0
       })
-    }, [R, w]), k = i.useCallback(() => {
-      R({
+    }, [w, A]), D = i.useCallback(() => {
+      w({
         shineSpring: 1,
         delay: 500
-      }), w({
+      }), A({
         glowSpring: 1,
         delay: 700
-      }), g.default.track(O.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
-    }, [R, w]), [U, G] = i.useState(false), B = i.useCallback(e => {
-      G(e.contentRect.width)
-    }, []), H = (0, p.y)(B, [], {
+      }), g.default.track(b.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+    }, [w, A]), [M, k] = i.useState(false), U = i.useCallback(e => {
+      k(e.contentRect.width)
+    }, []), G = (0, p.y)(U, [], {
       fireOnMount: true
     });
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: I.wrapper,
-        onMouseEnter: D,
-        onMouseLeave: M,
-        onFocus: D,
-        onBlur: M,
-        ref: H,
+        className: y.wrapper,
+        onMouseEnter: L,
+        onMouseLeave: R,
+        onFocus: L,
+        onBlur: R,
+        ref: G,
         style: {
           "--custom-shine-dimensions": "".concat(240, "px"),
-          "--custom-shine-rotated-dimensions-delta": "".concat(S, "px")
+          "--custom-shine-rotated-dimensions-delta": "".concat(I, "px")
         },
         children: (0, r.jsx)(d.Qj, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -134,32 +128,32 @@ let C = Math.ceil(Math.sqrt(115200)),
           return e
         }({
           className: a()({
-            [I.withGradientAndBadge]: P
+            [y.withGradientAndBadge]: N
           }),
           icon: u.qDn,
-          listItemRef: N,
-          onClick: A,
-          route: O.Z5c.QUEST_HOME_V2,
+          listItemRef: S,
+          onClick: P,
+          route: b.Z5c.QUEST_HOME_V2,
           selected: l,
-          text: v.intl.string(v.t.JALI2K)
-        }, T), n = n = {
-          children: P && (0, r.jsxs)(r.Fragment, {
+          text: O.intl.string(O.t.JALI2K)
+        }, C), n = n = {
+          children: N && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(o.animated.div, {
-              className: I.shine,
+              className: y.shine,
               style: {
-                transform: L.to(e => "translateX(calc(".concat(e * U, "px + ").concat(e * C, "px)) translateY(-50%) rotate(45deg)"))
+                transform: Z.to(e => "translateX(calc(".concat(e * M, "px + ").concat(e * v, "px)) translateY(-50%) rotate(45deg)"))
               }
             }), (0, r.jsx)(o.animated.div, {
-              className: I.glow,
+              className: y.glow,
               style: {
-                opacity: Z.to({
+                opacity: x.to({
                   range: [0, 1],
                   output: [0, .5]
                 })
               }
             }), (0, r.jsx)(u.IGR, {
-              className: I.badge,
-              text: v.intl.string(v.t.y2b7CA),
+              className: y.badge,
+              text: O.intl.string(O.t.y2b7CA),
               color: u.TVs.colors.BG_BRAND.css
             })]
           })
@@ -173,11 +167,11 @@ let C = Math.ceil(Math.sqrt(115200)),
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
-      }), j && (0, r.jsx)(b.Z, {
-        targetElementRef: N,
-        onNavigateToQuestHome: A,
-        onRender: k,
-        onRequestClose: x
+      }), T && (0, r.jsx)(_.Z, {
+        targetElementRef: S,
+        onNavigateToQuestHome: P,
+        onRender: D,
+        onRequestClose: j
       })]
     })
   }

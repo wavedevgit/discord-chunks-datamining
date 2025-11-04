@@ -2,12 +2,11 @@
 /** chunk id: 823087, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk399606 = require("./399606.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk130067 = require("./130067.jsx"),
   Chunk131951 = require("./131951.js"),
@@ -17,7 +16,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk830026 = require("./830026.js");
 
-function p() {
+function _() {
   return (0, Chunk399606.e7)([Chunk131951.Z], () => Chunk131951.Z.supports(Chunk65154.AN.LOOPBACK)) ? (0, Chunk951288.jsx)("div", {
     className: Chunk830026.micTest,
     children: (0, Chunk951288.jsx)(Chunk130067.Z, {
@@ -34,8 +33,7 @@ function p() {
       }),
       buttonTest: Chunk388032.intl.string(Chunk388032.t.c4qHt6),
       buttonStop: Chunk388032.intl.string(Chunk388032.t.I6OnJ3),
-      buttonClassName: Chunk830026.micTestButton,
-      buttonColor: Chunk755721.zx.Colors.BRAND,
+      buttonVariant: "primary",
       location: {
         page: Chunk981631.ZY5.USER_SETTINGS,
         section: Chunk981631.jXE.SETTINGS_VOICE_AND_VIDEO

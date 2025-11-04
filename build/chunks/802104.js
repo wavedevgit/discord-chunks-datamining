@@ -43,7 +43,7 @@ class b extends Chunk147913.Z {
   }
   async handlePostConnectionOpen() {
     let e = true;
-    this.isNewUpdater() && module !== await Chunk998502.ZP.getOptionalUpdates() && await Chunk998502.ZP.setOptionalUpdates(module), this.checkForUpdates(), this._checkInterval = setInterval(this.checkForUpdates, p)
+    this.isNewUpdater() && module !== await Chunk998502.ZP.getOptionalUpdates() && await Chunk998502.ZP.setOptionalUpdates(module), this.checkForUpdates(), clearInterval(this._checkInterval), this._checkInterval = setInterval(this.checkForUpdates, p)
   }
   async _requestNewUpdaterBootstrap() {
     let e;
@@ -90,7 +90,7 @@ class b extends Chunk147913.Z {
         oldFormErrors: true,
         rejectWithError: true
       }).then(e => {
-        if (null == e.body || "d96f53003ba78aa043bb8984b1c34b3139b256e5" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "72b38e2378c78538abf2c429e159545e6fb8598d" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, s.fD)()) return this._handleUpdateDownloaded(false);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? h : m;
         if (Date.now() - g > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(false)
