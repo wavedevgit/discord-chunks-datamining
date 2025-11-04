@@ -2,19 +2,18 @@
 /** chunk id: 490220, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk588126 = require("./588126.js"),
   Chunk643879 = require("./643879.js"),
   Chunk25990 = require("./25990.js"),
   Chunk678135 = require("./678135.jsx"),
   Chunk575169 = require("./575169.js");
 
-function f(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,30 +22,31 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e) {
+function _(e) {
   var t;
   let {
-    user: f,
-    disabledInputs: p,
-    containerClassName: h
+    user: d,
+    disabledInputs: _,
+    containerClassName: p
   } = e, {
-    reducedMotion: m
+    reducedMotion: h
   } = i.useContext(o.Sfi), {
-    pendingAvatar: g,
-    pendingBanner: E,
+    pendingAvatar: m,
+    pendingBanner: g,
+    pendingAvatarDecoration: E,
     pendingDisplayNameStyles: b,
     pendingThemeColors: y,
     pendingPronouns: O,
@@ -56,24 +56,24 @@ function p(e) {
     tryItOutBanner: S,
     tryItOutAvatarDecoration: A,
     tryItOutDisplayNameStyles: C
-  } = (0, a.cj)([c.Z], () => _({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), N = (0, l.SD)({
-    userId: f.id,
-    image: null != T ? T : g
-  }), R = (0, s.Z)(A, false);
-  return (0, r.jsx)(u.Z, {
-    containerClassName: h,
-    user: f,
+  } = (0, a.cj)([l.Z], () => f({}, l.Z.getAllPending(), l.Z.getAllTryItOut())), N = (0, s.SD)({
+    userId: d.id,
+    image: null != T ? T : m
+  });
+  return (0, r.jsx)(c.Z, {
+    containerClassName: p,
+    user: d,
     pendingPronouns: O,
     pendingBio: v,
-    pendingBanner: null != (t = null != S ? S : E) ? t : n(466045),
+    pendingBanner: null != (t = null != S ? S : g) ? t : n(466045),
     pendingDisplayNameStyles: null != C ? C : b,
     pendingAvatar: N,
     pendingThemeColors: null != I ? I : y,
-    pendingAvatarDecoration: R,
-    avatarClassName: null != T || null != g || m.enabled ? true : d.spinningAvatar,
+    pendingAvatarDecoration: true !== A ? A : E,
+    avatarClassName: null != T || null != m || h.enabled ? true : u.spinningAvatar,
     canUsePremiumCustomization: true,
     isTryItOutFlow: true,
-    disabledInputs: p,
+    disabledInputs: _,
     hideExampleButton: true
   })
 }

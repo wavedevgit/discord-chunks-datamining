@@ -1,7 +1,7 @@
 /** Chunk was on 50614 **/
 /** chunk id: 629235, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./953529.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -11,11 +11,11 @@ var Chunk647438 = require("./647438.js"),
   Chunk81643 = require("./81643.js"),
   Chunk469775 = require("./469775.js"),
   Chunk388032 = require("./388032.jsx");
-let u = function(t) {
+let d = function(t) {
   let {
     onClose: e,
     onMethodClick: n,
-    classificationId: u
+    classificationId: d
   } = t, {
     methods: E,
     loading: _
@@ -26,8 +26,7 @@ let u = function(t) {
     initiateAgeVerification: f
   } = (0, s.WD)({
     onComplete: e,
-    shouldShowExpressiveModal: true,
-    classificationId: u
+    classificationId: d
   });
   return i.useEffect(() => {
     null == E && (0, o.Jh)()
@@ -41,8 +40,8 @@ let u = function(t) {
       } = e;
       return {
         id: t,
-        title: d.intl.string(i),
-        description: d.intl.string(l),
+        title: u.intl.string(i),
+        description: u.intl.string(l),
         onClick: async e => {
           (0, r.x3)(e, r.d_.EXPRESSIVE_PRIMARY, r.sU.METHOD_SELECT, t), null == n || n(), await f(r.cU.EXPRESSIVE_GET_STARTED, t)
         }

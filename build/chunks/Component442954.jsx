@@ -95,7 +95,7 @@ let j = {
       default: e
     } = await Promise.all([require.e("1716"), require.e("8430")]).then(require.bind(require, 701509));
     return t => (0, a.jsx)(e, v(b({}, t), {
-      source: h.L0.NSFW_SERVER
+      source: h.L0.NSFW_CHANNEL
     }))
   },
   ExistingUserAgeGateUnderage: async () => {

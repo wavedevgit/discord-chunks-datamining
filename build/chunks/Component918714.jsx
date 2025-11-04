@@ -44,7 +44,7 @@ function _(e) {
 let y = function(e) {
   let {
     onClose: t
-  } = e, [n, u] = r.useState(null), [h, x] = r.useState(true), [y, C] = r.useState(null), [S, E] = r.useState(false), T = r.useCallback(async () => {
+  } = e, [n, u] = r.useState(null), [h, x] = r.useState(true), [y, C] = r.useState(null), [S, E] = r.useState(false), N = r.useCallback(async () => {
     x(true), C(null);
     try {
       var e;
@@ -70,7 +70,7 @@ let y = function(e) {
     } finally {
       x(false)
     }
-  }, [t]), N = r.useCallback(async e => {
+  }, [t]), T = r.useCallback(async e => {
     if (null !== n) {
       E(true);
       try {
@@ -79,16 +79,16 @@ let y = function(e) {
           flow_id: n.flow_context.flow_id,
           data: e
         };
-        await (0, d.Wl)(t), T()
+        await (0, d.Wl)(t), N()
       } catch (e) {
         C(b.intl.string(f.default["+QRSxc"]))
       } finally {
         E(false)
       }
     }
-  }, [n, T]);
+  }, [n, N]);
   (0, l.ZP)(() => {
-    T()
+    N()
   });
   let O = r.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
   return (0, a.jsxs)("div", {
@@ -102,7 +102,7 @@ let y = function(e) {
       entryPoint: s.cU.SAFETY_FLOWS,
       onClose: g.dG,
       onComplete: async () => {
-        await N({
+        await T({
           type: m.rY.Empty
         })
       },
@@ -149,13 +149,13 @@ let y = function(e) {
                 fullWidth: true,
                 text: b.intl.string(b.t["7NqTJn"]),
                 onClick: () => {
-                  T()
+                  N()
                 }
               })]
             })]
           }), null === y && null != n && (0, a.jsx)(_, {
             task: n,
-            handleSubmit: N,
+            handleSubmit: T,
             disabled: S
           })]
         })

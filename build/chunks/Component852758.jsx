@@ -1,7 +1,7 @@
 /** Chunk was on 28532 **/
 /** chunk id: 852758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -45,7 +45,7 @@ function E(e) {
   return e
 }
 
-function T(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,22 +58,22 @@ function T(e, t) {
   }), e
 }
 
-function N() {
+function T() {
   let {
     action: e,
     theme: t
   } = (0, Chunk442837.cj)([Chunk23434.Z, Chunk210887.Z], () => ({
     action: Chunk23434.Z.getAction(),
     theme: Chunk210887.Z.theme
-  })), N = Chunk1964.Z.getVerificationTypes(module), [O, P] = Chunk647438.useState(0), I = (0, Chunk110924.Z)(N);
+  })), T = Chunk1964.Z.getVerificationTypes(module), [O, P] = Chunk647438.useState(0), I = (0, Chunk110924.Z)(T);
   (0, Chunk213609.Z)({
     type: Chunk990547.ImpressionTypes.MODAL,
     name: Chunk990547.ImpressionNames.USER_ACTION_REQUIRED,
     properties: {
-      verification_type: N[0],
-      verification_types: N
+      verification_type: T[0],
+      verification_types: T
     }
-  }, {}, [N.toString()]);
+  }, {}, [T.toString()]);
   let w = () => {
     (0, Chunk809206.FD)(), (0, Chunk481060.ZDy)(async () => {
       let {
@@ -88,11 +88,11 @@ function N() {
   return Chunk647438.useEffect(() => (Chunk714338.Z.disable(), () => {
     Chunk714338.Z.enable()
   }), []), Chunk647438.useEffect(() => {
-    (null == I ? true : I[0]) === Chunk981631.PUi.PHONE && (null == N ? true : N[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
+    (null == I ? true : I[0]) === Chunk981631.PUi.PHONE && (null == T ? true : T[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(require.bind(require, 273352));
-      return t => (0, a.jsx)(e, T(E({}, t), {
+      return t => (0, a.jsx)(e, N(E({}, t), {
         title: S.intl.string(S.t.KLnLIP),
         body: S.intl.string(S.t.XGbCq3),
         confirmText: S.intl.string(S.t["3oK4qw"])
@@ -102,8 +102,8 @@ function N() {
       Layer: Chunk429142.ZP,
       onCloseCallback: w
     })
-  }, [N, I]), (0, Chunk951288.jsx)(Chunk762756.Z, {
-    types: N,
+  }, [T, I]), (0, Chunk951288.jsx)(Chunk762756.Z, {
+    types: T,
     captchaKey: O,
     onCaptchaVerify: e => {
       s.tn.post({
@@ -138,7 +138,7 @@ function N() {
           ConfirmModal: e,
           Text: t
         } = await Promise.resolve().then(require.bind(require, 481060));
-        return n => (0, a.jsx)(e, T(E({
+        return n => (0, a.jsx)(e, N(E({
           header: S.intl.string(S.t["2jxGer"]),
           confirmText: S.intl.string(S.t["2jxGer"]),
           cancelText: S.intl.string(S.t["ETE/oC"]),

@@ -2,7 +2,7 @@
 /** chunk id: 935147, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => W
+  Z: () => K
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,6 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk597688 = require("./597688.js"),
   Chunk1870 = require("./1870.js"),
   Chunk884697 = require("./884697.js"),
+  Chunk411137 = require("./411137.js"),
   Chunk443753 = require("./443753.js"),
   Chunk104494 = require("./104494.js"),
   Chunk639119 = require("./639119.js"),
@@ -44,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk553330 = require("./553330.js");
 
-function F(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -53,20 +54,20 @@ function F(e, t, n) {
   }) : e[t] = n, e
 }
 
-function V(e) {
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
 }
 
-function H(e, t) {
+function Y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -77,167 +78,169 @@ function H(e, t) {
   return n
 }
 
-function Y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : H(Object(t)).forEach(function(n) {
+function W(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function W(e) {
+function K(e) {
   var t, n;
   let {
-    user: F,
-    isVisible: H,
-    shouldShow: W
-  } = e, K = C.ZP.isPremium(F), {
-    pendingAvatar: z,
-    pendingThemeColors: q,
-    tryItOutThemeColors: X,
-    tryItOutAvatar: Q,
-    tryItOutBanner: J,
-    tryItOutProfileEffect: $,
-    tryItOutAvatarDecoration: ee
-  } = (0, a.cj)([S.Z], () => {
-    let e = S.Z.getAllPending(),
-      t = S.Z.getErrors();
-    return Y(V({}, e, S.Z.getAllTryItOut()), {
+    user: V,
+    isVisible: Y,
+    shouldShow: K
+  } = e, z = N.ZP.isPremium(V), {
+    pendingAvatar: q,
+    pendingThemeColors: X,
+    tryItOutThemeColors: Q,
+    tryItOutAvatar: J,
+    tryItOutBanner: $,
+    tryItOutProfileEffect: ee,
+    tryItOutAvatarDecoration: et
+  } = (0, a.cj)([A.Z], () => {
+    let e = A.Z.getAllPending(),
+      t = A.Z.getErrors();
+    return W(H({}, e, A.Z.getAllTryItOut()), {
       errors: t
     })
-  }), et = (0, p.Z)($), {
-    preset: en,
-    onShuffle: er
-  } = (0, g.Z)(), ei = i.useRef(null);
-  (0, T.Z)(ei, G.Y_.TRY_IT_OUT);
-  let {
-    analyticsLocations: ea,
-    newestAnalyticsLocation: eo,
-    sourceAnalyticsLocations: es
-  } = (0, c.ZP)(l.Z.USER_SETTINGS_TRY_OUT_PREMIUM), el = e => {
-    if (e) {
-      if ((0, s.I5)(Q), (0, I.z5)(X), (0, I.ho)(J), null != ee) {
-        let e = d.Z.getProduct(ee.skuId);
-        null != e && (0, _.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, s.cV)(ee)) : null != f.Z.getPurchase(ee.skuId) && (0, s.cV)(ee)
+  }), en = (0, h.Z)(ee), {
+    preset: er,
+    onShuffle: ei
+  } = (0, E.Z)(), ea = i.useRef(null);
+  (0, S.Z)(ea, B.Y_.TRY_IT_OUT);
+  let eo = (0, p.p)("TryOutPremiumSection"),
+    {
+      analyticsLocations: es,
+      newestAnalyticsLocation: el,
+      sourceAnalyticsLocations: ec
+    } = (0, c.ZP)(l.Z.USER_SETTINGS_TRY_OUT_PREMIUM),
+    eu = e => {
+      if (e) {
+        if ((0, s.I5)(J), (0, T.z5)(Q), (0, T.ho)($), null != et) {
+          let e = d.Z.getProduct(et.skuId);
+          null != e && (0, _.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, s.cV)(et)) : null != f.Z.getPurchase(et.skuId) && (0, s.cV)(et)
+        }
+        C.default.track(U.rMx.TRY_IT_OUT_PRESET_SELECTED, {
+          preset: er
+        })
       }
-      A.default.track(k.rMx.TRY_IT_OUT_PRESET_SELECTED, {
-        preset: en
-      })
-    }
-  };
+    };
   i.useEffect(() => {
-    H && A.default.track(k.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: U.cd.PREMIUM_PROFILE_TRY_IT_OUT,
+    Y && C.default.track(U.rMx.PREMIUM_UPSELL_VIEWED, {
+      type: G.cd.PREMIUM_PROFILE_TRY_IT_OUT,
       location: {
-        page: k.ZY5.USER_SETTINGS
+        page: U.ZY5.USER_SETTINGS
       },
-      location_stack: es
+      location_stack: ec
     })
-  }, [es, F, H]);
-  let ec = (null == (n = (0, m.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === U.Si.TIER_2,
-    eu = (0, h.Ng)(),
-    ed = (0, h.Wp)(eu, U.Si.TIER_2),
-    ef = () => K ? B.intl.string(B.t.AfRWI8) : ed ? B.intl.formatToPlainString(B.t.bkQ4bH, {
-      percent: null == eu ? true : eu.discount.amount
-    }) : B.intl.string(B.t.pj0XBN);
-  return W ? (0, r.jsx)(c.Gt, {
-    value: ea,
-    children: (0, r.jsxs)(D.Z, {
-      ref: ei,
-      className: Z.tryItOutSection,
-      type: D.Y.PREMIUM,
+  }, [ec, V, Y]);
+  let ed = (null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === G.Si.TIER_2,
+    ef = (0, m.Ng)(),
+    e_ = (0, m.Wp)(ef, G.Si.TIER_2),
+    ep = () => z ? Z.intl.string(Z.t.AfRWI8) : e_ ? Z.intl.formatToPlainString(Z.t.bkQ4bH, {
+      percent: null == ef ? true : ef.discount.amount
+    }) : Z.intl.string(Z.t.pj0XBN);
+  return K ? (0, r.jsx)(c.Gt, {
+    value: es,
+    children: (0, r.jsxs)(x.Z, {
+      ref: ea,
+      className: F.tryItOutSection,
+      type: x.Y.PREMIUM,
       isShown: true,
       hasBackground: true,
-      children: [(0, r.jsx)(N.Z, {
-        layoutClassName: Z.tryItOutLayout,
+      children: [(0, r.jsx)(R.Z, {
+        layoutClassName: F.tryItOutLayout,
         profilePreviewTitle: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(o.SrA, {
             size: "md",
             color: "currentColor",
-            className: Z.premiumIcon
-          }), B.intl.string(B.t.gMlDNd)]
+            className: F.premiumIcon
+          }), Z.intl.string(Z.t.gMlDNd)]
         }),
         profilePreview: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(E.Z, {
-            preset: en,
-            onShuffle: er
-          }), (0, r.jsx)(j.Z, {
-            user: F
+          children: [(0, r.jsx)(b.Z, {
+            preset: er,
+            onShuffle: ei
+          }), (0, r.jsx)(k.Z, {
+            user: V
           })]
         }),
         children: (0, r.jsxs)("div", {
-          className: Z.editor,
+          className: F.editor,
           children: [(0, r.jsxs)("div", {
             children: [(0, r.jsx)(o.Heading, {
               variant: "heading-xl/extrabold",
-              children: B.intl.string(B.t["2zGdAW"])
+              children: Z.intl.string(Z.t["2zGdAW"])
             }), (0, r.jsx)(o.Text, {
-              className: Z.description,
+              className: F.description,
               variant: "text-sm/normal",
-              children: B.intl.string(B.t.xeEC20)
+              children: Z.intl.string(Z.t.xeEC20)
             })]
-          }), (0, r.jsx)(M.Z, {
-            className: Z.customizationSection,
-            user: F,
-            pendingAvatarSrc: (0, v.SD)({
-              userId: F.id,
-              image: null != Q ? Q : z
+          }), (0, r.jsx)(j.Z, {
+            className: F.customizationSection,
+            user: V,
+            pendingAvatarSrc: (0, I.SD)({
+              userId: V.id,
+              image: null != J ? J : q
             }),
-            pendingColors: null != X ? X : q,
-            onThemeColorsChange: I.rf,
+            pendingColors: null != Q ? Q : X,
+            onThemeColorsChange: T.rf,
             showPremiumIcon: false,
             preventDisabled: true
-          }), (0, r.jsx)(x.Z, {
-            className: Z.customizationSection,
-            isTryItOutFlow: true,
-            showRemoveBannerButton: null != J,
-            onBannerChange: I.f4,
-            showPremiumIcon: false
-          }), (0, r.jsx)(P.Z, {
-            className: Z.customizationSection,
-            isTryItOutFlow: true,
-            onAvatarChange: I.c_,
-            showRemoveAvatarButton: false,
-            changeAvatarButtonText: B.intl.string(B.t["7z0D1c"]),
-            sectionTitle: B.intl.string(B.t.vtFfPX)
-          }), (0, r.jsx)(R.Z, {
-            isTryItOutFlow: true,
-            className: Z.customizationSection,
-            user: F,
-            sectionTitle: B.intl.string(B.t["7v0T9P"])
-          }, "decoration"), (0, r.jsx)(w.Z, {
-            user: F,
-            className: Z.customizationSection
           }), (0, r.jsx)(L.Z, {
-            className: Z.customizationSection,
+            className: F.customizationSection,
             isTryItOutFlow: true,
-            initialSelectedEffect: et,
-            user: F,
-            sectionTitle: B.intl.string(B.t.wR5wOo)
-          }, "effect"), !ec && (0, r.jsx)(o.Text, {
+            showRemoveBannerButton: null != $,
+            onBannerChange: T.f4,
+            showPremiumIcon: false
+          }), (0, r.jsx)(w.Z, {
+            className: F.customizationSection,
+            isTryItOutFlow: true,
+            onAvatarChange: T.c_,
+            showRemoveAvatarButton: false,
+            changeAvatarButtonText: Z.intl.string(Z.t["7z0D1c"]),
+            sectionTitle: Z.intl.string(Z.t.vtFfPX)
+          }), !eo && (0, r.jsx)(P.Z, {
+            isTryItOutFlow: true,
+            className: F.customizationSection,
+            user: V,
+            sectionTitle: Z.intl.string(Z.t["7v0T9P"])
+          }, "decoration"), (0, r.jsx)(D.Z, {
+            user: V,
+            className: F.customizationSection
+          }), !eo && (0, r.jsx)(M.Z, {
+            className: F.customizationSection,
+            isTryItOutFlow: true,
+            initialSelectedEffect: en,
+            user: V,
+            sectionTitle: Z.intl.string(Z.t.wR5wOo)
+          }, "effect"), !ed && (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
-            children: B.intl.string(B.t["smo74/"])
+            children: Z.intl.string(Z.t["smo74/"])
           })]
         })
-      }), !ec && (0, r.jsx)(b.p, {
-        onSubscribeModalClose: el,
-        className: Z.floatingUpsell,
+      }), !ed && (0, r.jsx)(y.p, {
+        onSubscribeModalClose: eu,
+        className: F.floatingUpsell,
         showUpsell: true,
-        text: B.intl.format(B.t.TmfgI2, {
+        text: Z.intl.format(Z.t.TmfgI2, {
           onClick: () => {
-            (0, O.y)({
-              analyticsSource: eo,
-              onSubscribeFinish: el
+            (0, v.y)({
+              analyticsSource: el,
+              onSubscribeFinish: eu
             })
           }
         }),
-        button: ef(),
+        button: ep(),
         position: "inline",
         showShadow: false
-      }), ec && (0, r.jsxs)("div", {
+      }), ed && (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-          className: Z.premiumTier2Divider
-        }), (0, r.jsx)(y.ZP, {
-          type: U.cd.CUSTOM_PROFILE_TRY_OUT_UPSELL,
-          subscriptionTier: U.Si.TIER_2
+          className: F.premiumTier2Divider
+        }), (0, r.jsx)(O.ZP, {
+          type: G.cd.CUSTOM_PROFILE_TRY_OUT_UPSELL,
+          subscriptionTier: G.Si.TIER_2
         })]
       })]
     })

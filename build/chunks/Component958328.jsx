@@ -63,7 +63,7 @@ function j() {
         can: r
       }, t)
     }),
-    T = Object.values(null != S ? S : {}).map(e => {
+    N = Object.values(null != S ? S : {}).map(e => {
       let {
         title: t,
         flag: n
@@ -88,7 +88,7 @@ function j() {
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: null != Chunk120356 ? "Permissions in ".concat(Chunk120356.name) : "No guild selected"
-        }), T]
+        }), N]
       })]
     })
   })

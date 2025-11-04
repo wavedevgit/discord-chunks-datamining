@@ -69,18 +69,18 @@ function j() {
         s = null != (r = null == (n = e.config.description) ? true : n.toLowerCase()) ? r : "";
       return l.includes(i) || s.includes(i)
     }), [C, y]),
-    T = Chunk647438.useCallback((e, n) => {
+    N = Chunk647438.useCallback((e, n) => {
       if (null == n || !e.type.startsWith("text/")) return (0, m.Eo)(b);
       let [a, r] = n.split(",");
       if (!a.includes("text/plain")) return (0, m.Eo)(b);
       let i = JSON.parse(atob(r));
       i.skuId = (0, s.Z)(), t(i), (0, m.XA)("Profile Effect (maybe??) imported!")
     }, [exports]),
-    N = Chunk647438.useCallback(e => {
+    T = Chunk647438.useCallback(e => {
       var t;
       if ((null == (t = e.currentTarget) ? true : t.files) == null) return void(0, m.Eo)("Error uploading file. Try again!");
-      (0, m.Kr)(e.currentTarget.files, T, m.Eo)
-    }, [T]);
+      (0, m.Kr)(e.currentTarget.files, N, m.Eo)
+    }, [N]);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk558270.root,
     children: [null == Chunk120356 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -122,7 +122,7 @@ function j() {
             children: "Import Shared Config"
           }), (0, Chunk951288.jsx)(Chunk53281.Z, {
             ref: _,
-            onChange: N,
+            onChange: T,
             multiple: false
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.Button, {

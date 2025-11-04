@@ -27,6 +27,7 @@ let o = "1144058522808614923",
     cyberpunk: {
       preset: "cyberpunk",
       themeColors: [1967991, 742532],
+      avatarDecorationSkuId: null,
       displayNameStyles: {
         fontId: Chunk342905.C.PIXELIFY,
         effectId: Chunk522942.m.NEON,
@@ -65,6 +66,7 @@ let o = "1144058522808614923",
     neon_space: {
       preset: "neon_space",
       themeColors: [6094952, 1007678],
+      avatarDecorationSkuId: null,
       displayNameStyles: {
         fontId: Chunk342905.C.MUSEO_MODERNO,
         effectId: Chunk522942.m.NEON,
