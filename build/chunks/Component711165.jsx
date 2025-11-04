@@ -137,7 +137,7 @@ function A(e) {
       }] = e;
       return (0, r.jsxs)("div", {
         className: N.channelRow,
-        children: [(0, r.jsx)(E.Z, {
+        children: [(0, r.jsx)(x.Z, {
           channel: n,
           gotoChannel: () => (0, g.uL)(I.Z5c.CHANNEL(n.getGuildId(), n.id)),
           children: null
@@ -194,7 +194,7 @@ let R = Chunk647438.memo(function(e) {
           isError: true, stateMessage: P.intl.string(P.t.j8uIfG)
         };
       default:
-        (0, x.vE)(e)
+        (0, E.vE)(e)
     }
   }(t.state), h = i.useCallback(() => {
     (0, m.gD)(t.scheduledMessageId).then(() => {

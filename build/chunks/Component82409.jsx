@@ -77,9 +77,9 @@ function U(e) {
   var t, n;
   let {
     includePanelSpacing: l
-  } = e, a = (0, x.fJ)(), {
+  } = e, a = (0, E.fJ)(), {
     selectedFilter: h
-  } = (0, E.Z)(), P = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), Z = (0, s.Wu)([O.ZP, _.Z, S.Z], () => N.filter(e => !(0, I.YH)({
+  } = (0, x.Z)(), P = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), Z = (0, s.Wu)([O.ZP, _.Z, S.Z], () => N.filter(e => !(0, I.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
@@ -250,7 +250,7 @@ function U(e) {
 }
 
 function B(e) {
-  return (0, r.jsx)(x.HP, {
+  return (0, r.jsx)(E.HP, {
     children: (0, r.jsx)(U, M({}, e))
   })
 }

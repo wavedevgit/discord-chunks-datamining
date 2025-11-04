@@ -43,9 +43,9 @@ function O(e) {
 let v = Chunk981631.IlC.APP,
   j = false,
   C = false,
-  x = [];
+  E = [];
 
-function E() {
+function x() {
   j = true
 }
 class S extends(i = Chunk442837.ZP.Store) {
@@ -54,11 +54,11 @@ class S extends(i = Chunk442837.ZP.Store) {
   }
   isOpen() {
     let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return !!(j && x.length > 0 && v === module)
+    return !!(j && E.length > 0 && v === module)
   }
   getProps() {
     return {
-      invite: x.length > 0 ? x[0][0] : null,
+      invite: E.length > 0 ? E[0][0] : null,
       error: null != r && "" !== r ? r : null,
       submitting: C
     }
@@ -66,8 +66,8 @@ class S extends(i = Chunk442837.ZP.Store) {
 }
 y(S, "displayName", "InviteModalStore");
 let I = new S(Chunk570140.Z, {
-  OVERLAY_INITIALIZE: E,
-  CONNECTION_OPEN: E,
+  OVERLAY_INITIALIZE: x,
+  CONNECTION_OPEN: x,
   CONNECTION_CLOSED: function() {
     j = false
   },
@@ -100,7 +100,7 @@ let I = new S(Chunk570140.Z, {
         }
       }
     }
-    if (x.some(e => {
+    if (E.some(e => {
         let [n] = e;
         return n.code === t.code
       })) returnfalse;
@@ -131,11 +131,11 @@ let I = new S(Chunk570140.Z, {
       };
       return null != c && (p.channel = O({}, c)), null != u && (p.guild = (0, g.Qs)(u)), null != e.inviter && (p.inviter = O({}, e.inviter)), p
     }(t);
-    x.push([n, e.resolve])
+    E.push([n, e.resolve])
   },
   INVITE_MODAL_CLOSE: function() {
-    if (r = null, C = false, x.length > 0) {
-      let [, e] = x.shift();
+    if (r = null, C = false, E.length > 0) {
+      let [, e] = E.shift();
       null != module && module()
     }
   },

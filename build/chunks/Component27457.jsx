@@ -92,7 +92,7 @@ let ec = [Chunk354459.fO.ACTIVITY],
       paused: eb = false,
       pulseSpeakingIndicator: ej = false,
       forceIdle: ey = false
-    } = e, ex = l.useContext(D.h9) || ey, [eO, eC] = l.useState(false), eZ = k.Sb.useSetting(), eP = (0, s.e7)([R.default], () => R.default.isStreamInfoOverlayEnabled), [eI, eE] = l.useState(false), eS = (0, s.e7)([U.default], () => U.default.getId()), eT = v.type === el.fO.ACTIVITY ? null : v.user, eN = null != (r = null == eT ? true : eT.id) ? r : null, [ew] = (0, g.Z)(v.type === el.fO.ACTIVITY ? [v.applicationId] : []), eM = (0, s.e7)([V.Z], () => null != eN && V.Z.isLocalVideoDisabled(eN, (0, j.Z)(v.type)), [eN, v.type]), ek = (0, s.e7)([V.Z], () => null != eN ? V.Z.getVideoToggleState(eN, (0, j.Z)(v.type)) : ei.ZUi.NONE, [eN, v.type]), eD = (0, s.e7)([G.Z], () => G.Z.isCurrentUserPTTLatched()), eA = eN === eS, e_ = ek === ei.ZUi.AUTO_PROBING, {
+    } = e, ex = l.useContext(D.h9) || ey, [eO, eC] = l.useState(false), eZ = k.Sb.useSetting(), eP = (0, s.e7)([R.default], () => R.default.isStreamInfoOverlayEnabled), [eI, eE] = l.useState(false), eS = (0, s.e7)([U.default], () => U.default.getId()), eT = v.type === el.fO.ACTIVITY ? null : v.user, eN = null != (r = null == eT ? true : eT.id) ? r : null, [ew] = (0, g.Z)(v.type === el.fO.ACTIVITY ? [v.applicationId] : []), eM = (0, s.e7)([V.Z], () => null != eN && V.Z.isLocalVideoDisabled(eN, (0, j.Z)(v.type)), [eN, v.type]), ek = (0, s.e7)([V.Z], () => null != eN ? V.Z.getVideoToggleState(eN, (0, j.Z)(v.type)) : ei.ZUi.NONE, [eN, v.type]), eD = (0, s.e7)([G.Z], () => G.Z.isCurrentUserPTTLatched()), eA = eN === eS && v.type === el.fO.USER, e_ = ek === ei.ZUi.AUTO_PROBING, {
       speaking: eU,
       ringing: eR,
       hasVideo: eL

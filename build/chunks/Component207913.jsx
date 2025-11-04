@@ -87,8 +87,8 @@ function V(e) {
     colorString: O
   } = (0, _.ZP)(t), {
     avatarSrc: C,
-    eventHandlers: x
-  } = (0, E.Z)({
+    eventHandlers: E
+  } = (0, x.Z)({
     userId: t.author.id,
     size: d.EFr.SIZE_32,
     guildId: null == b ? true : b.id,
@@ -114,8 +114,8 @@ function V(e) {
     null != b && N.Z.requestMember(b.id, t.author.id)
   }, [b, t.author.id]), (0, r.jsx)(d.tEY, F(B({}, l), {
     children: (0, r.jsxs)("div", {
-      onMouseLeave: x.onMouseLeave,
-      onMouseEnter: x.onMouseEnter,
+      onMouseLeave: E.onMouseLeave,
+      onMouseEnter: E.onMouseEnter,
       className: U.messageContainer,
       children: [s && !a && (0, r.jsx)("div", {
         className: U.unreadDot
@@ -258,7 +258,7 @@ function H(e) {
 function z(e) {
   let {
     message: t
-  } = e, n = (0, x.a3)(t.timestamp.getTime());
+  } = e, n = (0, E.a3)(t.timestamp.getTime());
   return (0, r.jsx)(O.Z, {
     timestamp: t.timestamp,
     className: U.timestamp,

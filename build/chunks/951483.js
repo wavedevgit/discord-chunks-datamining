@@ -2,8 +2,8 @@
 /** chunk id: 951483, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Sr: () => C,
-  Xq: () => x,
-  Zg: () => E
+  Xq: () => E,
+  Zg: () => x
 }), require("./415506.js");
 var Chunk186070 = require("./186070.js"),
   Chunk185514 = require("./185514.js"),
@@ -63,11 +63,11 @@ let C = {
     [Chunk981631.EkH.CALL_START]: Chunk186070.FI,
     [Chunk981631.EkH.QUICKSWITCHER_SHOW]: Chunk167042.$
   },
-  x = {
+  E = {
     [Chunk981631.EkH.QUICKSWITCHER_SHOW]: Chunk167042.$
   };
 
-function E() {
+function x() {
   return [{
     description: Chunk388032.intl.string(Chunk388032.t.bx4Uyz),
     binds: j(Chunk981631.EkH.SERVER_PREV, Chunk981631.EkH.SERVER_NEXT)

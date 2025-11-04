@@ -32,7 +32,7 @@ function f(e) {
 }
 
 function g(e) {
-  var t, n, r, g, m, b, _, y, O, v, j, C, x, E, S;
+  var t, n, r, g, m, b, _, y, O, v, j, C, E, x, S;
   let {
     item: I,
     renderApplication: P
@@ -56,9 +56,9 @@ function g(e) {
       let L = I.guild_scheduled_event_id,
         M = null != L ? l.ZP.getGuildScheduledEvent(L) : null,
         k = null == M ? true : M.name,
-        G = null == (x = o.Z.getGuild(null == M ? true : M.guild_id)) ? true : x.name,
+        G = null == (E = o.Z.getGuild(null == M ? true : M.guild_id)) ? true : E.name,
         U = (0, l.Z2)(null != M ? M : true);
-      return (0, c.Ew)(G) || (0, c.Ew)(k) || !U ? null != (E = I.body) ? E : "" : h.intl.format(h.t.AyvfXR, {
+      return (0, c.Ew)(G) || (0, c.Ew)(k) || !U ? null != (x = I.body) ? x : "" : h.intl.format(h.t.AyvfXR, {
         event_name: k,
         guild_name: G
       });

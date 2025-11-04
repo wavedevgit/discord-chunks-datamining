@@ -173,7 +173,7 @@ class es {
       null != e && this.setIsScrolledToBottom(e.isScrolledToBottom())
     }, 100), this.setNodeRef = (e, t) => {
       this.nodeRefs[e] = t
-    }, (0, E.zb)(this.getVisibleGuildIds)
+    }, (0, x.zb)(this.getVisibleGuildIds)
   }
 }
 
@@ -192,7 +192,7 @@ function ec(e) {
     location: "guildsbar"
   }).dmsTab;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(K.u, {}), h && (0, r.jsx)(H.Z, {}), d === I.u3.SERVER_RAIL_TOP && (0, r.jsx)(P.Z, {}), l ? (0, r.jsx)(x.Z, {}) : null, (0, r.jsx)(Y.Z, {
+    children: [(0, r.jsx)(K.u, {}), h && (0, r.jsx)(H.Z, {}), d === I.u3.SERVER_RAIL_TOP && (0, r.jsx)(P.Z, {}), l ? (0, r.jsx)(E.Z, {}) : null, (0, r.jsx)(Y.Z, {
       isOnHubVerificationRoute: a
     }), !t && (0, r.jsx)(B.Z, {}), u.map(e => (0, r.jsx)(ee.Z, {
       guildId: e
@@ -241,8 +241,8 @@ function ed(e) {
     return [e, e.version]
   }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), h = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), {
     isSorting: y,
-    startSorting: x,
-    stopSorting: E
+    startSorting: E,
+    stopSorting: x
   } = (0, M.Z)(), N = i.useRef(false), [T] = i.useState(() => new f.V7), A = i.useRef(null), R = i.useRef(null), B = (0, u.OP)(), {
     ref: F
   } = B, V = function(e, t) {
@@ -329,8 +329,8 @@ function ed(e) {
             setNodeRef: eh.setNodeRef,
             draggable: true,
             sorting: y,
-            onDragStart: x,
-            onDragEnd: E,
+            onDragStart: E,
+            onDragEnd: x,
             renderChildNode: e,
             "aria-setsize": i,
             "aria-posinset": true !== n ? n + 1 : true
@@ -341,15 +341,15 @@ function ed(e) {
             setRef: eh.setNodeRef,
             draggable: true,
             sorting: y,
-            onDragStart: x,
-            onDragEnd: E,
+            onDragStart: E,
+            onDragEnd: x,
             "aria-setsize": i,
             "aria-posinset": true !== n ? n + 1 : true
           }, t.id);
         default:
           return null
       }
-    }, [x, E, y, eh.setNodeRef]),
+    }, [E, x, y, eh.setNodeRef]),
     e_ = (0, r.jsx)(W.Z, {
       selected: eg,
       className: er.discoveryIcon

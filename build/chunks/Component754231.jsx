@@ -113,7 +113,7 @@ function C(e) {
   })
 }
 
-function x(e) {
+function E(e) {
   let {
     activity: t
   } = e, n = null == t ? true : t.state;
@@ -123,7 +123,7 @@ function x(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     activity: t
   } = e;
@@ -185,7 +185,7 @@ function S(e) {
           activity: t,
           user: l,
           onOpenSpotifyArtist: h
-        }), (0, r.jsx)(x, {
+        }), (0, r.jsx)(E, {
           activity: t
         }), m.length > 0 && (0, r.jsx)(p.ZP, {
           className: y.usersSummary,
@@ -211,7 +211,7 @@ function S(e) {
           }
         })]
       })]
-    }), (0, r.jsx)(E, {
+    }), (0, r.jsx)(x, {
       activity: t
     })]
   }) : null

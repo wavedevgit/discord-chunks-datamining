@@ -2,7 +2,7 @@
 /** chunk id: 45966, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => Z
 }), require("./539854.js"), require("./472816.js"), require("./794429.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -206,8 +206,9 @@ function M(e) {
 }
 let j = [],
   k = [],
-  U = [];
-class G extends(r = Chunk442837.ZP.Store) {
+  U = [],
+  G = [];
+class B extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk819553.ZP, Chunk160404.Z)
   }
@@ -279,11 +280,11 @@ class G extends(r = Chunk442837.ZP.Store) {
   }
   getConnections(e) {
     var t, n;
-    return null != (n = null == (t = b[e]) ? true : t.connections) ? n : []
+    return null != (n = null == (t = b[e]) ? true : t.connections) ? n : G
   }
 }
-h(G, "displayName", "GuildOnboardingPromptsStore");
-let B = new G(Chunk570140.Z, {
+h(B, "displayName", "GuildOnboardingPromptsStore");
+let Z = new B(Chunk570140.Z, {
   CONNECTION_OPEN: T,
   GUILD_ONBOARDING_PROMPTS_FETCH_START: I,
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: C,

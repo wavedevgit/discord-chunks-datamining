@@ -13,7 +13,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk724213 = require("./724213.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e) {
+function p(e) {
   i.Z.dispatch({
     type: "CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES",
     guildId: e
@@ -21,18 +21,18 @@ function m(e) {
 }
 
 function h(e) {
-  let n = (0, r.e7)([s.ZP], () => s.ZP.getPendingChannelUpdates(e));
-  return l.useEffect(() => (m(e), () => m(e)), [e]), l.useEffect(() => {
+  let n = (0, l.e7)([s.ZP], () => s.ZP.getPendingChannelUpdates(e));
+  return r.useEffect(() => (p(e), () => p(e)), [e]), r.useEffect(() => {
     null != n && (0, c.C1)(e, n)
   }, [e, n]), {
-    onChannelClick: l.useCallback((e, n, t) => {
-      let l = s.ZP.isChannelOptedIn(e, n),
-        r = n === t;
-      !l && o.Z.isCollapsed(t) && null != t && (0, a.mJ)(t), (0, d.hi)(e) ? r ? (0, d.rz)(e, {
+    onChannelClick: r.useCallback((e, n, t) => {
+      let r = s.ZP.isChannelOptedIn(e, n),
+        l = n === t;
+      !r && o.Z.isCollapsed(t) && null != t && (0, a.mJ)(t), (0, d.hi)(e) ? l ? (0, d.rz)(e, {
         include: new Set([n])
       }) : (0, d.rz)(e, {
         exclude: new Set([n])
-      }) : (0, c.k$)(e, n, !l, {
+      }) : (0, c.k$)(e, n, !r, {
         section: u.jXE.CHANNEL_BROWSER
       })
     }, [])

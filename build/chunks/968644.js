@@ -1,4 +1,4 @@
-/** Chunk was on 58121 **/
+/** Chunk was on 26494 **/
 /** chunk id: 968644, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => m,
@@ -13,8 +13,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk823379 = require("./823379.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e, n, t) {
-  return 0 === e.length ? "" : d.intl.format(t ? d.t.cJZxWf : d.t.Kj5GIT, {
+function d(e, n, t) {
+  return 0 === e.length ? "" : c.intl.format(t ? c.t.cJZxWf : c.t.Kj5GIT, {
     count: e.length,
     extraCount: Math.max(e.length - 2, 0),
     role1: e[0],
@@ -29,19 +29,19 @@ function m(e) {
     prompt: t,
     selectedRoleIds: m,
     selectedChannelIds: h,
-    itemHook: p
-  } = e, f = null == n ? true : n.id, g = (0, l.Wu)([a.Z], () => null != f ? a.Z.getManyRoles(f, m) : [], [f, m]), x = (0, l.Wu)([i.Z, s.default, o.Z], () => Array.from(h).map(e => i.Z.getChannel(e)).filter(c.lm).map(e => (0, r.F6)(e, s.default, o.Z, true))), _ = g.map(e => "@".concat(e.name)), C = (null == t ? true : t.singleSelect) ? "" : d.intl.string(d.t.JshhEl), b = "";
-  if (0 === x.length && _.length > 0) C = u(_, p);
-  else x.length > 0 && (C = 0 === x.length ? "" : d.intl.format(d.t.Rj841R, {
-    count: x.length,
-    extraCount: Math.max(x.length - 2, 0),
-    channel1: x[0],
-    channel2: x[1],
-    itemHook: p
-  }), _.length > 0 && (b = u(_, p, true)));
+    itemHook: x
+  } = e, f = null == n ? true : n.id, g = (0, l.Wu)([o.Z], () => null != f ? o.Z.getManyRoles(f, m) : [], [f, m]), p = (0, l.Wu)([a.Z, s.default, r.Z], () => Array.from(h).map(e => a.Z.getChannel(e)).filter(u.lm).map(e => (0, i.F6)(e, s.default, r.Z, true))), v = g.map(e => "@".concat(e.name)), j = (null == t ? true : t.singleSelect) ? "" : c.intl.string(c.t.JshhEl), C = "";
+  if (0 === p.length && v.length > 0) j = d(v, x);
+  else p.length > 0 && (j = 0 === p.length ? "" : c.intl.format(c.t.Rj841R, {
+    count: p.length,
+    extraCount: Math.max(p.length - 2, 0),
+    channel1: p[0],
+    channel2: p[1],
+    itemHook: x
+  }), v.length > 0 && (C = d(v, x, true)));
   return {
-    helpText: C,
-    helpTextAdditional: b
+    helpText: j,
+    helpTextAdditional: C
   }
 }
 
@@ -49,34 +49,34 @@ function h(e) {
   let {
     guild: n,
     prompt: t,
-    selectedRoleIds: u,
+    selectedRoleIds: d,
     selectedChannelIds: m,
     itemHook: h
-  } = e, p = null == n ? true : n.id, f = (0, l.Wu)([a.Z], () => null != p ? a.Z.getManyRoles(p, u) : [], [p, u]), g = (0, l.Wu)([i.Z, s.default, o.Z], () => Array.from(m).map(e => i.Z.getChannel(e)).filter(c.lm).map(e => (0, r.F6)(e, s.default, o.Z, true))), x = f.map(e => "@".concat(e.name)), _ = (null == t ? true : t.singleSelect) ? "" : d.intl.string(d.t.JshhEl);
-  return 0 === g.length && x.length > 0 ? _ = d.intl.format(d.t.vdtNYa, {
-    count: x.length,
-    extraCount: Math.max(x.length - 2, 0),
-    role1: x[0],
-    role2: x[1],
+  } = e, x = null == n ? true : n.id, f = (0, l.Wu)([o.Z], () => null != x ? o.Z.getManyRoles(x, d) : [], [x, d]), g = (0, l.Wu)([a.Z, s.default, r.Z], () => Array.from(m).map(e => a.Z.getChannel(e)).filter(u.lm).map(e => (0, i.F6)(e, s.default, r.Z, true))), p = f.map(e => "@".concat(e.name)), v = (null == t ? true : t.singleSelect) ? "" : c.intl.string(c.t.JshhEl);
+  return 0 === g.length && p.length > 0 ? v = c.intl.format(c.t.vdtNYa, {
+    count: p.length,
+    extraCount: Math.max(p.length - 2, 0),
+    role1: p[0],
+    role2: p[1],
     itemHook: h
-  }) : g.length > 0 && 0 === x.length ? _ = d.intl.format(d.t.ZKywGU, {
+  }) : g.length > 0 && 0 === p.length ? v = c.intl.format(c.t.ZKywGU, {
     count: g.length,
     extraCount: Math.max(g.length - 2, 0),
     channel1: g[0],
     channel2: g[1],
     itemHook: h
-  }) : g.length > 0 && x.length > 0 && (_ = d.intl.format(d.t.WewRHM, {
+  }) : g.length > 0 && p.length > 0 && (v = c.intl.format(c.t.WewRHM, {
     channelCount: g.length,
     extraChannelCount: Math.max(g.length - 2, 0),
     channel1: g[0],
     channel2: g[1],
     itemHook: h,
-    roleCount: x.length,
-    extraRoleCount: Math.max(x.length - 2, 0),
-    role1: x[0],
-    role2: x[1]
+    roleCount: p.length,
+    extraRoleCount: Math.max(p.length - 2, 0),
+    role1: p[0],
+    role2: p[1]
   })), {
-    helpText: _,
+    helpText: v,
     helpTextAdditional: ""
   }
 }

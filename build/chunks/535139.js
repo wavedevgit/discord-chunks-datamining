@@ -13,19 +13,20 @@ var i, Chunk647438 = require("./647438.js"),
   u = ((i = {}).RPC = "rpc", i.WEB = "web", i);
 
 function d(t) {
+  var n;
   let {
-    allowedFlows: n = ["rpc", "web"]
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, e = (0, c.t)(t), i = (0, s.t)(null == e ? true : e.id, "AUTHORIZE_REQUEST"), u = n.includes("rpc") && i, d = n.includes("web") && (null == e ? true : e.connectionEntrypointUrl) != null, f = u || d, {
-    token: x,
-    fetched: p
-  } = (0, l.o)(null == e ? true : e.id);
+    allowedFlows: e = ["rpc", "web"]
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, i = (0, c.t)(t), u = (0, s.t)(null == i ? true : i.id, "AUTHORIZE_REQUEST"), d = e.includes("rpc") && u, f = e.includes("web") && (null == i ? true : i.connectionEntrypointUrl) != null, x = d || f, {
+    token: p,
+    fetched: g
+  } = (0, l.o)(null != (n = null == i ? true : i.parentId) ? n : null == i ? true : i.id);
   return {
-    fetched: p,
-    hasAlreadyLinked: p && null != x,
-    canStartAuthorization: f,
-    startAuthorization: a.useCallback(() => null == e ? null : u ? (o.Z.dispatchToSubscriptions("AUTHORIZE_REQUEST", t => t.socket.application.id === e.id, {}), "rpc") : d ? ((0, r.q)({
-      href: e.connectionEntrypointUrl
-    }), "web") : null, [u, d, e]),
-    connectionApp: e
+    fetched: g,
+    hasAlreadyLinked: g && null != p,
+    canStartAuthorization: x,
+    startAuthorization: a.useCallback(() => null == i ? null : d ? (o.Z.dispatchToSubscriptions("AUTHORIZE_REQUEST", t => t.socket.application.id === i.id, {}), "rpc") : f ? ((0, r.q)({
+      href: i.connectionEntrypointUrl
+    }), "web") : null, [d, f, i]),
+    connectionApp: i
   }
 }

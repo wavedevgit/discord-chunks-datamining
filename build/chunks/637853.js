@@ -2,16 +2,17 @@
 /** chunk id: 637853, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ee: () => O,
-  L6: () => w,
-  V7: () => I,
-  VF: () => P,
+  Ee: () => v,
+  L6: () => D,
+  O5: () => y,
+  V7: () => T,
+  VF: () => w,
   b$: () => g,
-  d9: () => N,
-  dF: () => v,
-  dX: () => D,
-  iF: () => T,
-  kl: () => S,
+  d9: () => R,
+  dF: () => I,
+  dX: () => x,
+  iF: () => S,
+  kl: () => A,
   p3: () => b,
   wC: () => E
 }), require("./997841.js"), require("./388685.js"), require("./539854.js"), require("./472816.js"), require("./794429.js");
@@ -55,7 +56,11 @@ function b(e, t) {
   return u.yE(r, h.q.STARTED_ONBOARDING) && !u.yE(r, h.q.COMPLETED_ONBOARDING)
 }
 
-function y(e, t, n) {
+function y(e, t) {
+  return !(null != e && e.features.has(p.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && e.features.has(p.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && null != t
+}
+
+function O(e, t, n) {
   let r = new Set;
   e.forEach(e => {
     e.options.forEach(e => {
@@ -69,17 +74,8 @@ function y(e, t, n) {
   return [i.filter(e => r.has(e.id) || null != e.parent_id && r.has(e.parent_id)), i.filter(e => !r.has(e.id) && !(null != e.parent_id && r.has(e.parent_id)))]
 }
 
-function O(e, t, n) {
-  return y(t, n, s.ZP.getChannels(e)[s.sH].map(e => {
-    let {
-      channel: t
-    } = e;
-    return t
-  }))
-}
-
 function v(e, t, n) {
-  return y(t, n, (0, r.e7)([s.ZP], () => s.ZP.getChannels(e))[s.sH].map(e => {
+  return O(t, n, s.ZP.getChannels(e)[s.sH].map(e => {
     let {
       channel: t
     } = e;
@@ -87,38 +83,47 @@ function v(e, t, n) {
   }))
 }
 
-function I(e) {
-  return T(o.Z.getChannel(e))
+function I(e, t, n) {
+  return O(t, n, (0, r.e7)([s.ZP], () => s.ZP.getChannels(e))[s.sH].map(e => {
+    let {
+      channel: t
+    } = e;
+    return t
+  }))
 }
 
 function T(e) {
+  return S(o.Z.getChannel(e))
+}
+
+function S(e) {
   return null != e && !!(0, _.s)(e.guild_id, e.id) && (e.isForumChannel() ? f.Uu(p.Plq.SEND_MESSAGES_IN_THREADS, e) : f.Uu(p.Plq.SEND_MESSAGES, e))
 }
 
-function S(e, t, n) {
+function A(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : () => true,
-    i = C(e, t, e => e.id, r);
+    i = N(e, t, e => e.id, r);
   return n.forEach(t => {
     var n, a;
     if (!t.required) return;
-    let o = C(e, null != (a = null == (n = t.options[0]) ? true : n.channelIds) ? a : [], e => e.id),
+    let o = N(e, null != (a = null == (n = t.options[0]) ? true : n.channelIds) ? a : [], e => e.id),
       s = t.options.reduce((t, n) => {
         if (null == n.channelIds) return [];
-        let a = C(e, n.channelIds, e => e.id, e => r(e) && !i.includes(e));
+        let a = N(e, n.channelIds, e => e.id, e => r(e) && !i.includes(e));
         return a.length < t.length ? a : t
       }, o);
     i.push(...s)
   }), i
 }
 
-function A(e, t) {
+function C(e, t) {
   return e.filter(e => {
     var n;
-    return T(null == (n = t[e]) ? true : n.channel)
+    return S(null == (n = t[e]) ? true : n.channel)
   })
 }
 
-function C(e, t) {
+function N(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : e => e,
     r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : () => true,
     i = s.ZP.getChannels(e)[s.sH],
@@ -133,12 +138,12 @@ function C(e, t) {
     } return a
 }
 
-function N(e, t) {
-  let n = C(e, t),
+function R(e, t) {
+  let n = N(e, t),
     r = s.ZP.getChannels(e)[s.sH],
     i = {};
   for (let e of r) i[e.channel.id] = e;
-  return [A(n.map(e => {
+  return [C(n.map(e => {
     let {
       id: t
     } = e;
@@ -146,25 +151,25 @@ function N(e, t) {
   }), i), n]
 }
 
-function R(e, t) {
+function P(e, t) {
   return e[0].length === t[0].length && e[1].length === t[1].length && (0, i.Z)(e[0], t[0]) && (0, i.Z)(e[1], t[1])
 }
 
-function P(e, t) {
+function w(e, t) {
   return (0, r.e7)([s.ZP], () => {
     let n = s.ZP.getChannels(e),
       r = [],
       i = [],
       a = {};
-    for (let e of n[s.sH])(0, _.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (a[e.channel.id] = e, r.push(e.channel), T(e.channel) && i.push(e.channel.id));
+    for (let e of n[s.sH])(0, _.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (a[e.channel.id] = e, r.push(e.channel), S(e.channel) && i.push(e.channel.id));
     return [i, r]
-  }, [e, t], R)
-}
-
-function w(e) {
-  return new Set(e.map(e => e.roleIds).flat().filter(d.lm))
+  }, [e, t], P)
 }
 
 function D(e) {
+  return new Set(e.map(e => e.roleIds).flat().filter(d.lm))
+}
+
+function x(e) {
   return new Set(e.map(e => e.channelIds).flat().filter(d.lm))
 }

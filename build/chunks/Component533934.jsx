@@ -149,13 +149,13 @@ let ek = (0, Chunk608787.Un)({
     renderLoader: eU
   }),
   ez = (0, Chunk608787.Un)({
-    createPromise: () => Promise.all([require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("58227"), require.e("58121")]).then(require.bind(require, 603072)),
+    createPromise: () => Promise.all([require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("58227"), require.e("26494"), require.e("58121")]).then(require.bind(require, 603072)),
     webpackId: 603072,
     name: "ChannelsAndRolesPage",
     renderLoader: eU
   }),
   eY = (0, Chunk608787.Un)({
-    createPromise: () => Promise.all([require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("37709")]).then(require.bind(require, 599263)),
+    createPromise: () => Promise.all([require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("26494"), require.e("37709")]).then(require.bind(require, 599263)),
     webpackId: 599263,
     name: "GuildOnboardingPage",
     renderLoader: eU

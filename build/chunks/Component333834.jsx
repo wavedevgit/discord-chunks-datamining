@@ -221,7 +221,7 @@ function D(e) {
     }, [t, n, a, H, z, Y, N, d, q, X, D]),
     J = Q[Q.length - 1],
     $ = i.isValidElement(J) && J.type === T,
-    ee = (0, x.d)(e => e.setInboxReadState);
+    ee = (0, E.d)(e => e.setInboxReadState);
   i.useEffect(() => {
     X || ee(0 === Y.UNREAD.length)
   }, [Y, X, ee]);
@@ -251,7 +251,7 @@ function D(e) {
   }, [en, l, X, U, $, W]);
   let er = i.useMemo(() => {
     let e = Math.min(Math.max(2, en()), 20);
-    return (0, r.jsx)(E.Z, {
+    return (0, r.jsx)(x.Z, {
       withHeader: false,
       size: e
     })

@@ -22,7 +22,7 @@ let b = Chunk647438.memo(function(e) {
   let {
     guildNode: b,
     lowerBadge: _
-  } = e, y = b.id, O = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), v = (0, a.E)(O), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), x = (0, c.Z)(e => e.guildId), E = (0, f.Z)(y), {
+  } = e, y = b.id, O = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), v = (0, a.E)(O), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), E = (0, c.Z)(e => e.guildId), x = (0, f.Z)(y), {
     badge: S,
     unread: I,
     isMentionLowImportance: P
@@ -61,12 +61,12 @@ let b = Chunk647438.memo(function(e) {
     guild: O,
     unavailable: C,
     animatable: j,
-    selected: x === y,
+    selected: E === y,
     badge: S,
     isMentionLowImportance: P,
     lowerBadge: Z,
     unread: I,
-    mediaState: E,
+    mediaState: x,
     guildJoinRequestStatus: v
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

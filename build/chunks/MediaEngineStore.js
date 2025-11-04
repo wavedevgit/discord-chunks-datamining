@@ -320,10 +320,10 @@ function tZ(e) {
   var t, n;
   let r = tB(e.context),
     i = r.mode;
-  (0, er.f)({
+  e.context === eN.Yn.DEFAULT && ((0, er.f)({
     location: "setInputMode",
     autoTrackExposure: false
-  }).enableLatching && i === eI.pM4.PUSH_TO_TALK && r.modeOptions.pttLatchingEnabled && (i = eI.pM4.VOICE_ACTIVITY), (0, K.I)(false, false, false), e.setInputMode(i, {
+  }).enableLatching && i === eI.pM4.PUSH_TO_TALK && r.modeOptions.pttLatchingEnabled && (i = eI.pM4.VOICE_ACTIVITY), (0, K.I)(false, false, false)), e.setInputMode(i, {
     vadThreshold: r.modeOptions.threshold,
     vadAutoThreshold: r.modeOptions.autoThreshold,
     vadUseKrisp: r.modeOptions.vadUseKrisp && rt(),

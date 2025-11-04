@@ -1,8 +1,8 @@
 /** Chunk was on 58121 **/
 /** chunk id: 70297, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => C,
-  q: () => _
+  Z: () => b,
+  q: () => x
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,58 +21,58 @@ var Chunk120356 = require("./120356.js"),
   Chunk886461 = require("./886461.js"),
   Chunk697611 = require("./697611.js");
 
-function _(e) {
-  return (0, m.te)(e) ? 250 : 152
+function x(e) {
+  return (0, p.te)(e) ? 250 : 152
 }
 
-function C(e) {
+function b(e) {
   let {
     guild: n
-  } = e, t = (0, m.te)(n.id), r = (0, s.Nj)(a.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL), _ = t && !r ? a.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL : a.z.CHANNEL_BROWSER_NUX;
-  (0, c.kk)(_);
-  let C = t ? (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsxs)("div", {
-      children: [(0, l.jsx)(o.Heading, {
+  } = e, t = (0, p.te)(n.id), l = (0, s.Nj)(a.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL), x = t && !l ? a.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL : a.z.CHANNEL_BROWSER_NUX;
+  (0, c.kk)(x);
+  let b = t ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
+      children: [(0, r.jsx)(o.Heading, {
         className: g.heading,
         color: "always-white",
         variant: "heading-lg/semibold",
         children: f.intl.string(f.t.AalzkJ)
-      }), (0, l.jsx)(o.Text, {
+      }), (0, r.jsx)(o.Text, {
         className: g.description,
         variant: "text-md/normal",
         color: "always-white",
         children: f.intl.string(f.t.CXh95Z)
-      }), (0, l.jsx)(o.Button, {
+      }), (0, r.jsx)(o.Button, {
         variant: "overlay-primary",
         onClick: () => {
-          d.Z.open(n.id, h.pNK.ONBOARDING), (0, s.Q3)(_, {
-            dismissAction: p.L.PRIMARY
+          d.Z.open(n.id, h.pNK.ONBOARDING), (0, s.Q3)(x, {
+            dismissAction: m.L.PRIMARY
           })
         },
         text: f.intl.string(f.t["+OtO4e"])
       })]
-    }), (0, l.jsx)(u.j, {
+    }), (0, r.jsx)(u.j, {
       isTooltip: true
     })]
-  }) : (0, l.jsxs)("div", {
+  }) : (0, r.jsxs)("div", {
     className: g.nuxContent,
-    children: [(0, l.jsx)("img", {
+    children: [(0, r.jsx)("img", {
       width: 180,
       className: g.image,
-      src: x,
+      src: _,
       alt: "",
       "aria-hidden": true
-    }), (0, l.jsxs)("div", {
-      children: [(0, l.jsx)(o.Heading, {
+    }), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(o.Heading, {
         className: g.heading,
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: f.intl.string(f.t.utqWEC)
-      }), (0, l.jsx)(o.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
         children: f.intl.string(f.t["+9etcM"])
-      }), (0, l.jsx)(o.Text, {
+      }), (0, r.jsx)(o.Text, {
         className: g.tip,
         variant: "text-md/normal",
         color: "header-secondary",
@@ -80,21 +80,21 @@ function C(e) {
       })]
     })]
   });
-  return (0, l.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: i()(g.container, {
       [g.adminUpsell]: t
     }),
-    children: [(0, l.jsx)(o.P3F, {
+    children: [(0, r.jsx)(o.P3F, {
       className: g.closeButton,
       onClick: () => {
-        (0, s.Q3)(_, {
-          dismissAction: p.L.DISMISS
+        (0, s.Q3)(x, {
+          dismissAction: m.L.DISMISS
         })
       },
-      children: (0, l.jsx)(o.Dio, {
+      children: (0, r.jsx)(o.Dio, {
         size: "md",
         color: "currentColor"
       })
-    }), C]
+    }), b]
   })
 }

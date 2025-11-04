@@ -184,8 +184,8 @@ class en extends Chunk98597.ZP {
       showTutorial: v,
       hasActiveEvent: j,
       embeddedApps: C,
-      isSubscriptionGated: x,
-      isFavoriteSuggestion: E,
+      isSubscriptionGated: E,
+      isFavoriteSuggestion: x,
       withGuildIcon: S,
       hasStartTime: I
     } = this.props, {
@@ -324,7 +324,7 @@ class en extends Chunk98597.ZP {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
-      null != t && (0, S.n)(t) && (0, E.hk)(t), this.handleVoiceConnect()
+      null != t && (0, S.n)(t) && (0, x.hk)(t), this.handleVoiceConnect()
     }), $(this, "handleVoiceStatusClick", e => {
       let {
         connected: t,
@@ -424,8 +424,8 @@ function ei(e) {
     location: "VoiceChannel"
   }), j = (0, a.e7)([_.Z], () => !!O && null != _.Z.getStartTime(n), [n, O]), {
     isSubscriptionGated: C,
-    needSubscriptionToAccess: E
-  } = (0, I.Z)(n.id), S = (0, x.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == S ? true : S.channelId) === n.id, {
+    needSubscriptionToAccess: x
+  } = (0, I.Z)(n.id), S = (0, E.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == S ? true : S.channelId) === n.id, {
     enableHangStatus: A,
     showEmptyChannelTopic: R
   } = (0, Z.bN)({
@@ -444,7 +444,7 @@ function ei(e) {
     isChannelCollapsed: s,
     voiceStates: c,
     isSubscriptionGated: C,
-    needSubscriptionToAccess: E,
+    needSubscriptionToAccess: x,
     enableConnectedUserLimit: true,
     enableActivities: true
   }), V = T && null == F;
@@ -455,7 +455,7 @@ function ei(e) {
     video: h,
     hasActiveEvent: null != y,
     isSubscriptionGated: C,
-    needSubscriptionToAccess: E
+    needSubscriptionToAccess: x
   }, u, p, e), {
     connected: T,
     isFavoriteSuggestion: l && !N,

@@ -30,9 +30,9 @@ var Chunk120356 = require("./120356.js"),
 
 function S(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: x.row,
+    className: E.row,
     children: [(0, r.jsx)(e, {
-      className: x.activityIcon,
+      className: E.activityIcon,
       color: "currentColor"
     }), (0, r.jsx)(p.ZP, {
       guildId: true,
@@ -64,7 +64,7 @@ function I() {
       for (let t of Chunk120356) e += Chunk565799.Z.getParticipantCount(exports, Chunk501655.pV.AUDIENCE);
       return module
     }),
-    E = (0, Chunk442837.Wu)([Chunk199902.Z], () => Chunk199902.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [exports]),
+    x = (0, Chunk442837.Wu)([Chunk199902.Z], () => Chunk199902.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [exports]),
     I = (0, Chunk442837.Wu)([Chunk317381.ZP], () => {
       let e = Chunk317381.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
@@ -76,7 +76,7 @@ function I() {
     }, [exports]),
     P = (0, Chunk442837.Wu)([Chunk594174.default], () => I.map(e => b.default.getUser(e)), [I]),
     N = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk78480.map(e => b.default.getUser(e)), [Chunk78480]),
-    Z = S(Chunk481060.gj8, l.filter(e => !E.includes(e.id) && !I.includes(e.id))),
+    Z = S(Chunk481060.gj8, l.filter(e => !x.includes(e.id) && !I.includes(e.id))),
     w = 0 === Chunk392711.length ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk132789.row,
       children: [(0, Chunk951288.jsx)(Chunk481060.ewx, {
@@ -138,7 +138,7 @@ function N(e) {
     position: "right",
     text: (0, r.jsx)(P, {}),
     "aria-label": t,
-    tooltipClassName: E.listItemTooltip,
+    tooltipClassName: x.listItemTooltip,
     onTooltipShow: n,
     children: e => {
       var t, n;

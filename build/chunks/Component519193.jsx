@@ -25,9 +25,9 @@ function p(t) {
   } = t, h = (0, c.a)(m), {
     fetched: T,
     hasAlreadyLinked: v,
-    canStartAuthorization: g,
-    startAuthorization: C
-  } = (0, s.F)(m), I = (0, r.I)(m);
+    canStartAuthorization: I,
+    startAuthorization: g
+  } = (0, s.F)(m), C = (0, r.I)(m);
   if (!T || null == h) return (0, a.jsx)(e.IX, {
     transitionState: n,
     onClose: i,
@@ -36,7 +36,7 @@ function p(t) {
     })
   });
   if (v) {
-    let t = h && !I ? {
+    let t = h && !C ? {
       variant: "primary",
       text: x.intl.string(x.t["s+J8Dl"]),
       onClick: () => {
@@ -72,9 +72,9 @@ function p(t) {
     let t = {
       variant: "primary",
       text: x.intl.string(x.t["VDAhr+"]),
-      onClick: C,
+      onClick: g,
       icon: e.uIJ,
-      disabled: !g
+      disabled: !I
     };
     return (0, a.jsx)(u.M, {
       sku: p,
@@ -82,7 +82,7 @@ function p(t) {
       transitionState: n,
       onClose: i,
       hasAlreadyLinked: v,
-      canStartAuthorization: g,
+      canStartAuthorization: I,
       primaryCTAButtonProps: t,
       bodyText: x.intl.formatToPlainString(x.t.Qmkje8, {
         applicationName: m.name

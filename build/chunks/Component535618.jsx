@@ -155,7 +155,7 @@ function L(t) {
     icon: r.uIJ,
     disabled: !f
   };
-  return (0, i.jsx)(S.M, {
+  return (0, i.jsx)(v.M, {
     sku: n,
     application: e,
     transitionState: a,
@@ -202,7 +202,7 @@ function Z(t) {
   return (0, i.jsxs)(r.IX, {
     transitionState: n,
     onClose: e,
-    children: [(0, i.jsx)(v.y, {
+    children: [(0, i.jsx)(S.y, {
       sku: a,
       title: y.intl.formatToPlainString(y.t["6yrIzU"], {
         sender: g
