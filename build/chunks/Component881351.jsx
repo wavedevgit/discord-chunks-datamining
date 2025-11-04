@@ -1,7 +1,7 @@
 /** Chunk was on 69220 **/
 /** chunk id: 881351, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => I
+  default: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -29,42 +29,42 @@ var Chunk481060 = require("./481060.js"),
   Chunk332031 = require("./332031.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let I = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let _ = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: t,
     guildId: n,
     channelId: o,
     showMediaItems: a = false,
     mediaEngineContext: d,
-    onSelect: I,
-    onInteraction: _,
-    appContext: U = S.IlC.APP
-  } = e, A = (0, y.Z)({
+    onSelect: _,
+    onInteraction: I,
+    appContext: A = S.IlC.APP
+  } = e, U = (0, y.Z)({
     userId: t.id,
     guildId: n,
     channelId: o
-  }), D = (0, m.Z)(t.id, U), k = (0, v.Z)({
+  }), D = (0, h.Z)(t.id, A), N = (0, O.Z)({
     user: t
   }), w = (0, Z.Z)({
     user: t,
     guildId: n,
     channelId: o,
-    context: U
-  }), N = (0, b.Z)({
+    context: A
+  }), k = (0, b.Z)({
     user: t
   }), L = (0, E.Z)(t.id), T = (0, x.Z)(t.id), M = (0, P.Z)(t.id, d), V = (0, j.Z)({
     user: t
-  }), B = (0, s.Z)(null, t), F = (0, f.Z)({
+  }), B = (0, s.Z)(null, t), R = (0, f.Z)({
     user: t
-  }), R = (0, g.Z)({
+  }), F = (0, g.Z)({
     user: t
-  }), G = (0, h.Z)({
+  }), G = (0, m.Z)({
     user: t
-  }), W = (0, O.Z)({
+  }), H = (0, v.Z)({
     user: t
-  }), Q = (0, p.Z)({
+  }), W = (0, p.Z)({
     user: t
-  }), H = (0, u.Z)({
+  }), Q = (0, u.Z)({
     id: t.id,
     label: C.intl.string(C.t["/AXYnE"])
   }), Y = (0, c.Z)(t), q = t.isNonUserBot();
@@ -72,22 +72,22 @@ let I = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     navId: "user-context",
     onClose: r.Zy,
     "aria-label": C.intl.string(C.t.liqwPJ),
-    onSelect: I,
-    onInteraction: _,
+    onSelect: _,
+    onInteraction: I,
     children: [!q && (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(l.kSQ, {
         children: Y
       }), (0, i.jsxs)(l.kSQ, {
-        children: [A, D, k, w, N, L]
+        children: [U, D, N, w, k, L]
       }), a && (0, i.jsx)(l.kSQ, {
         children: T
       }), (0, i.jsx)(l.kSQ, {
         children: B
       }), (0, i.jsxs)(l.kSQ, {
-        children: [a && M, V, F, R, G, Q, W]
+        children: [a && M, V, R, F, G, W, H]
       })]
     }), (0, i.jsx)(l.kSQ, {
-      children: H
+      children: Q
     })]
   })
 }, {

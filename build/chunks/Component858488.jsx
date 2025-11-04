@@ -15,13 +15,13 @@ function s(e) {
     user: t,
     onAction: s,
     appContext: u
-  } = e, d = t.id, [c, g] = (0, i.Wu)([a.Z], () => {
+  } = e, d = t.id, [c, g] = (0, l.Wu)([a.Z], () => {
     var e;
     return [a.Z.isFriend(d), null != (e = a.Z.getNickname(d)) ? e : null]
   }, [d]);
   if (!c) return null;
   let f = null == g ? o.intl.string(o.t.BGYkaH) : o.intl.string(o.t["8pOYUE"]);
-  return (0, l.jsx)(r.sNh, {
+  return (0, i.jsx)(r.sNh, {
     id: null == g ? "add-friend-nickname" : "edit-friend-nickname",
     label: f,
     action: () => {
@@ -29,20 +29,20 @@ function s(e) {
         let {
           default: e
         } = await n.e("25070").then(n.bind(n, 670794));
-        return n => (0, l.jsx)(e, function(e) {
+        return n => (0, i.jsx)(e, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              l = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              i = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), l.forEach(function(t) {
-              var l;
-              l = n[t], t in e ? Object.defineProperty(e, t, {
-                value: l,
+            }))), i.forEach(function(t) {
+              var i;
+              i = n[t], t in e ? Object.defineProperty(e, t, {
+                value: i,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = l
+              }) : e[t] = i
             })
           }
           return e

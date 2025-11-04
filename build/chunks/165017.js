@@ -2,7 +2,7 @@
 /** chunk id: 165017, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => p
+  H: () => _
 });
 var Chunk498607 = require("./498607.js"),
   i = require.n(Chunk498607),
@@ -12,44 +12,43 @@ var Chunk498607 = require("./498607.js"),
   Chunk430824 = require("./430824.js"),
   Chunk914010 = require("./914010.js"),
   Chunk945577 = require("./945577.js"),
-  Chunk125085 = require("./125085.js"),
   Chunk981631 = require("./981631.js");
+
+function f(e) {
+  let {
+    isSearchDesktopXDMExperimentEnabled: t,
+    crossDMSearchSettingUnsetValue: n,
+    isCrossDMSearchEnabledSetting: r
+  } = e;
+  return t ? null != r ? r : n : !!t
+}
 
 function _(e) {
   let {
-    isSearchDesktopXDMExperimentEnabled: t,
-    isGlobalXDMSettingSupported: n,
-    isCrossDMSearchEnabledSetting: r
-  } = e;
-  return t && n ? null != r ? r : d.K : !!t
-}
-
-function p(e) {
-  let {
     guildId: t,
     channelId: n
-  } = e, r = (0, u.u5)({
+  } = e, r = (0, u.xy)({
     location: "useDesktopSearchContext"
-  }), d = _({
+  }), _ = f({
     isSearchDesktopXDMExperimentEnabled: (0, u.UX)({
       location: "useDesktopSearchContext"
     }),
-    isGlobalXDMSettingSupported: r,
+    crossDMSearchSettingUnsetValue: r,
     isCrossDMSearchEnabledSetting: o.rR.useSetting()
   });
   return (0, a.e7)([l.Z, s.Z, c.Z], () => {
     let e = l.Z.getGuild(t),
       r = s.Z.getChannel(n);
-    return c.Z.getGuildId() === f.I_8 ? {
-      type: f.aib.FAVORITES
+    return c.Z.getGuildId() === d.I_8 ? {
+      type: d.aib.FAVORITES
     } : null != t && null != e ? {
-      type: f.aib.GUILD,
+      type: d.aib.GUILD,
       guildId: t
-    } : null != n && null != r && r.isPrivate() ? d ? {
-      type: f.aib.DMS
+    } : null != n && null != r && r.isPrivate() ? _ ? {
+      type: d.aib.DMS
     } : {
-      type: f.aib.CHANNEL,
+      type: d.aib.CHANNEL,
       channelId: n
     } : null
-  }, [n, t, d], i())
+  }, [n, t, _], i())
 }

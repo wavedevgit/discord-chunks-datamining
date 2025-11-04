@@ -13,8 +13,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e, t) {
-  let n = (0, i.e7)([o.Z], () => (0, a.Z)(o.Z.findActivity(e, e => e.type === s.IIU.STREAMING)), [e]);
-  return null == n ? null : (0, l.jsx)(r.sNh, {
+  let n = (0, l.e7)([o.Z], () => (0, a.Z)(o.Z.findActivity(e, e => e.type === s.IIU.STREAMING)), [e]);
+  return null == n ? null : (0, i.jsx)(r.sNh, {
     id: "watch-stream",
     label: u.intl.string(u.t["7Xq/nV"]),
     action: () => {

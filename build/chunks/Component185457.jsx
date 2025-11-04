@@ -29,7 +29,7 @@ function f(e) {
   } = (0, a.Z)(Z), p = !m && null != v && v.length > 0, O = b === d.IlC.POPOUT || b === d.IlC.OVERLAY, {
     analyticsLocations: h
   } = (0, r.ZP)();
-  return Z === s.default.getId() || u.Z.hidePersonalInformation || O ? null : (0, l.jsx)(i.sNh, {
+  return Z === s.default.getId() || u.Z.hidePersonalInformation || O ? null : (0, i.jsx)(l.sNh, {
     id: "note",
     label: m ? g.intl.string(g.t["WLKx/9"]) : p ? g.intl.string(g.t.sHHsOM) : g.intl.string(g.t.Dglxrf),
     subtext: g.intl.string(g.t.r1BOdd),

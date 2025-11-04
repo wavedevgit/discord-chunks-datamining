@@ -22,14 +22,14 @@ function f(e) {
     minimal: b = false
   } = e, Z = (0, d.J)({
     channelId: n
-  }), m = (0, r.e7)([c.default], () => c.default.getId() === t), v = (0, o.bp)(), p = i.useCallback(() => {
+  }), m = (0, r.e7)([c.default], () => c.default.getId() === t), v = (0, o.bp)(), p = l.useCallback(() => {
     s.Z.openSecureFramesUserVerificationModal(t, n, () => (0, u.fz)({
       userId: t,
       channelId: n,
       guildId: f
     }), v)
   }, [v, n, f, t]);
-  return !Z || m ? null : (0, l.jsx)(a.sNh, {
+  return !Z || m ? null : (0, i.jsx)(a.sNh, {
     id: "secure-frames-user-verification",
     label: g.intl.string(g.t["8ErYvY"]),
     action: p,

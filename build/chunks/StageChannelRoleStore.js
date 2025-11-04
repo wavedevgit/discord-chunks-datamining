@@ -17,7 +17,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk700785 = require("./700785.js"),
   Chunk146085 = require("./146085.js"),
   Chunk590415 = require("./590415.js"),
-  Chunk647767 = require("./647767.js");
+  Chunk430104 = require("./430104.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -157,7 +157,7 @@ class M extends(r = Chunk442837.ZP.Store) {
   getPermissionsForUser(e, t) {
     var n, r;
     let i = arguments.length > 2 && true !== arguments[2] && arguments[2];
-    if (null == e || null == t || e === (null == (n = f.default.getCurrentUser()) ? true : n.id) && (0, g.N)()) return y;
+    if (null == e || null == t || e === (null == (n = f.default.getCurrentUser()) ? true : n.id) && (0, g.NE)()) return y;
     let a = null == (r = b[t]) ? true : r[e];
     if (null != a)
       if (i && null == a.moderator) return T(e, t, true);

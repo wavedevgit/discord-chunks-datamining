@@ -202,7 +202,7 @@ function W() {
     } = (0, Chunk657871.zM)("useGenerateUserSettingsSections", {
       autoTrackExposure: false
     }),
-    ec = (0, Chunk945577.u5)({
+    ec = (0, Chunk945577.UX)({
       location: "useGenerateUserSettingsSections"
     });
   return Chunk647438.useMemo(() => (0, Chunk620163.iE)({
