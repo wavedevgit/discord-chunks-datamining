@@ -36,6 +36,7 @@ function b(e) {
   return (0, r.jsx)(f.Z, {
     user: t,
     widget: y,
+    subtle: true,
     cta: (0, r.jsx)(f.Z.Cta, {
       heading: m.intl.format(m.t.OIzLCy, {
         applicationName: n.name
