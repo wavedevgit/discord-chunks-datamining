@@ -14,7 +14,8 @@ let r = (0, require("./818083.js").B)({
     suggestionDesign: "horizontal",
     highlightDesign: "mention",
     onlyExactMatch: false,
-    eagerRecentSenders: false
+    eagerRecentSenders: false,
+    largeGuildExactMatchRecentSenders: false
   },
   treatments: [{
     id: 1,
@@ -24,7 +25,8 @@ let r = (0, require("./818083.js").B)({
       suggestionDesign: "vertical",
       highlightDesign: "simple",
       onlyExactMatch: false,
-      eagerRecentSenders: false
+      eagerRecentSenders: false,
+      largeGuildExactMatchRecentSenders: false
     }
   }, {
     id: 2,
@@ -34,7 +36,8 @@ let r = (0, require("./818083.js").B)({
       suggestionDesign: "vertical",
       highlightDesign: "simple",
       onlyExactMatch: true,
-      eagerRecentSenders: false
+      eagerRecentSenders: false,
+      largeGuildExactMatchRecentSenders: false
     }
   }, {
     id: 3,
@@ -44,7 +47,8 @@ let r = (0, require("./818083.js").B)({
       suggestionDesign: "vertical",
       highlightDesign: "mention",
       onlyExactMatch: false,
-      eagerRecentSenders: false
+      eagerRecentSenders: false,
+      largeGuildExactMatchRecentSenders: false
     }
   }, {
     id: 4,
@@ -54,7 +58,8 @@ let r = (0, require("./818083.js").B)({
       suggestionDesign: "horizontal",
       highlightDesign: "simple",
       onlyExactMatch: false,
-      eagerRecentSenders: false
+      eagerRecentSenders: false,
+      largeGuildExactMatchRecentSenders: false
     }
   }, {
     id: 5,
@@ -64,7 +69,19 @@ let r = (0, require("./818083.js").B)({
       suggestionDesign: "vertical",
       highlightDesign: "simple",
       onlyExactMatch: true,
-      eagerRecentSenders: true
+      eagerRecentSenders: true,
+      largeGuildExactMatchRecentSenders: false
+    }
+  }, {
+    id: 6,
+    label: "Eager match recent senders for small guilds, exact match for large guilds",
+    config: {
+      enabled: true,
+      suggestionDesign: "vertical",
+      highlightDesign: "simple",
+      onlyExactMatch: true,
+      eagerRecentSenders: true,
+      largeGuildExactMatchRecentSenders: true
     }
   }]
 });
