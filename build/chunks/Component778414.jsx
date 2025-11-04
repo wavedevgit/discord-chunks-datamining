@@ -78,9 +78,9 @@ function L(e) {
   var {
     widget: t
   } = e, n = B(e, ["widget"]);
-  return t instanceof y.q ? (0, r.jsx)(I.Z, G({
+  return t instanceof h.q ? (0, r.jsx)(I.Z, G({
     widget: t
-  }, n)) : t instanceof h.zy ? (0, r.jsx)(C.Z, G({
+  }, n)) : t instanceof y.zy ? (0, r.jsx)(C.Z, G({
     widget: t
   }, n)) : null
 }
@@ -108,7 +108,7 @@ function F(e) {
     token: i
   } = (0, d.o)(null == n ? true : n.id), a = (0, P.Z)(t.id), l = (0, v.k)({
     location: "ApplicationWidgetUpsell"
-  }), o = a.some(e => e instanceof y.q && e.applicationId === (null == n ? true : n.id));
+  }), o = a.some(e => e instanceof h.q && e.applicationId === (null == n ? true : n.id));
   return null == n || !l || null == i || o ? null : (0, r.jsx)(f.ZP, {
     contentTypes: [c.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
     children: e => {
@@ -137,7 +137,7 @@ function U(e) {
     }, [e, t, n]), "GB" === e && n
   })(), d = (0, v.k)({
     location: "UserProfileModalV2Widgets"
-  }), f = 0 === l.length && c, j = i.useMemo(() => l.filter(h.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof y.q), [l]);
+  }), f = 0 === l.length && c, j = i.useMemo(() => l.filter(y.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
   (0, O.J)(c, j);
   var I = t.id;
   (0, _.s)(x);

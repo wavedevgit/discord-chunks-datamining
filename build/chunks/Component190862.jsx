@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -51,10 +51,10 @@ function y(e, t) {
   }
   return i
 }
-let h = e => {
+let y = e => {
     var {
       widget: t
-    } = e, n = y(e, ["widget"]);
+    } = e, n = h(e, ["widget"]);
     switch (t.type) {
       case i.l.FAVORITE_GAMES:
         return (0, r.jsx)(d.Z, b({
@@ -81,14 +81,14 @@ let h = e => {
       widget: t,
       user: n,
       disableInteraction: i
-    } = e, u = y(e, ["widget", "user", "disableInteraction"]);
+    } = e, u = h(e, ["widget", "user", "disableInteraction"]);
     let {
       shouldShowSuggestions: d,
       handleDismissSuggestions: f
     } = (0, c.h)(t), g = (0, a.e7)([l.default], () => l.default.getId() === n.id), v = g && !i && d, O = (0, o.mR)(t), j = (0, o.Hy)(t, {
       isCurrentUser: g
     }), x = (0, o.kQ)(t), _ = 1 === (0, o.Gv)(t.type);
-    return (0, r.jsx)(h, b({
+    return (0, r.jsx)(y, b({
       widget: t,
       user: n,
       disableInteraction: i,

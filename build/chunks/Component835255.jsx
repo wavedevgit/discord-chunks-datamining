@@ -3,7 +3,7 @@
 require.d(exports, {
   BO: () => R,
   ZP: () => F,
-  w_: () => _
+  w_: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk232644 = require("./232644.js"),
   Chunk660097 = require("./660097.js");
-let Z = e => {
+let _ = e => {
   let {
     size: t = f.EFr.SIZE_80
   } = e;
@@ -47,9 +47,9 @@ let Z = e => {
   })
 };
 
-function _(e) {
+function Z(e) {
   let {
-    surface: t = k.Y.PROFILE_MODAL
+    surface: t = E.Y.PROFILE_MODAL
   } = e, r = i.useRef(null), l = i.useRef(null);
   return (0, n.jsx)("div", {
     ref: r,
@@ -57,14 +57,14 @@ function _(e) {
     children: (0, n.jsx)("div", {
       ref: l,
       className: s()(T.card, T.placeholderCard, {
-        [T.smallCard]: t === k.Y.GIFTING_FLOW,
-        [T.largeCard]: t === k.Y.PROFILE_MODAL
+        [T.smallCard]: t === E.Y.GIFTING_FLOW,
+        [T.largeCard]: t === E.Y.PROFILE_MODAL
       }),
       children: (0, n.jsx)("div", {
         className: T.cardPreview,
         children: (0, n.jsx)("div", {
           className: T.avatarDecorationPreview,
-          children: (0, n.jsx)(Z, {
+          children: (0, n.jsx)(_, {
             size: f.EFr.SIZE_80
           })
         })
@@ -82,7 +82,7 @@ function R(e) {
     renderItemPreview: o
   } = e, c = i.useRef(null), u = i.useRef(null), {
     isHoveringOrFocusing: d
-  } = (0, b.Z)(u), m = true === t.isOwned;
+  } = (0, I.Z)(u), m = true === t.isOwned;
   return (0, n.jsx)("div", {
     ref: c,
     className: T.container,
@@ -115,8 +115,8 @@ function F(e) {
       profileOwner: l,
       showIcons: s = false,
       source: L = v.lr.WISHLIST,
-      giftingOrigin: Z = N.Wt.USER_PROFILE_WISHLIST,
-      onWishlistItemClick: _
+      giftingOrigin: _ = N.Wt.USER_PROFILE_WISHLIST,
+      onWishlistItemClick: Z
     } = e,
     R = function(e, t) {
       if (null == e) return {};
@@ -140,7 +140,7 @@ function F(e) {
     analyticsLocations: G
   } = (0, p.ZP)(), D = (0, a.TH)(), W = i.useRef(null), {
     isHoveringOrFocusing: H
-  } = (0, b.Z)(W), [M] = (0, u.Wu)([P.Z], () => [P.Z.hasSentGift(F.skuId, l.id)], [F.skuId, l.id]), U = M || true === F.isOwned, z = F.collectiblesItem.type, B = (() => {
+  } = (0, I.Z)(W), [M] = (0, u.Wu)([P.Z], () => [P.Z.hasSentGift(F.skuId, l.id)], [F.skuId, l.id]), U = M || true === F.isOwned, z = F.collectiblesItem.type, B = (() => {
     switch (z) {
       case o.Z.AVATAR_DECORATION:
         return C.intl.formatToPlainString(C.t.IQQYef, {
@@ -158,7 +158,7 @@ function F(e) {
         (0, w.vE)(z)
     }
   })(), Y = A || U ? C.intl.string(C.t.FdGl5A) : C.intl.string(C.t.ilhtIa), V = A || U ? true : f.OgN, q = i.useCallback(() => {
-    let e = D.pathname.startsWith(E.Z5c.COLLECTIBLES_SHOP);
+    let e = D.pathname.startsWith(k.Z5c.COLLECTIBLES_SHOP);
     if (A || U) {
       let t = !A && U;
       if (e) {
@@ -179,16 +179,16 @@ function F(e) {
           return
         }
       }
-      t || (0, S.closeUserProfileModal)(), (0, j.uL)("".concat(E.Z5c.COLLECTIBLES_SHOP, "#itemSkuId=").concat(F.skuId))
-    } else null == _ || _(), (0, I.Z)({
+      t || (0, S.closeUserProfileModal)(), (0, j.uL)("".concat(k.Z5c.COLLECTIBLES_SHOP, "#itemSkuId=").concat(F.skuId))
+    } else null == Z || Z(), (0, b.Z)({
       skuId: F.skuId,
       isGift: true,
-      giftingOrigin: Z,
+      giftingOrigin: _,
       analyticsLocations: G,
       giftRecipient: l,
       variantsReturnStyle: c.v.VARIANTS_GROUP
     })
-  }, [D.pathname, F.skuId, G, A, U, l, Z, _]), K = i.useCallback(() => s ? L === v.lr.WISHLIST ? (0, n.jsx)("div", {
+  }, [D.pathname, F.skuId, G, A, U, l, _, Z]), K = i.useCallback(() => s ? L === v.lr.WISHLIST ? (0, n.jsx)("div", {
     className: T.itemIcon,
     children: (0, n.jsx)(d.u, {
       text: C.intl.formatToPlainString(C.t.p3RmJF, {
@@ -222,7 +222,7 @@ function F(e) {
     isHighlighted: H,
     surface: R.surface
   }), [F, l, H, R.surface]);
-  return (0, n.jsx)(k.Z, (t = function(e) {
+  return (0, n.jsx)(E.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);

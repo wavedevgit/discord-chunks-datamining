@@ -27,9 +27,9 @@ function f(e) {
     sourceClientOffset: e.getSourceClientOffset()
   })), m = (0, a.e7)([o.default], () => o.default.getCurrentUser()), b = (0, l.zPA)();
   if (true !== f || null == p || null == g) return null;
-  let y = null == n || null == (t = n.current) ? true : t.getBoundingClientRect();
-  if (null == y || null == m) return null;
-  let h = function(e, t) {
+  let h = null == n || null == (t = n.current) ? true : t.getBoundingClientRect();
+  if (null == h || null == m) return null;
+  let y = function(e, t) {
     let {
       id: n,
       itemType: i,
@@ -72,14 +72,14 @@ function f(e) {
     }
     return null
   }(g, m);
-  if (null == h) return null;
-  let v = p.x - y.left - 60 * !!b,
-    O = p.y - y.top;
+  if (null == y) return null;
+  let v = p.x - h.left - 60 * !!b,
+    O = p.y - h.top;
   return (0, r.jsx)("div", {
     className: d.container,
     style: {
       transform: "translate(".concat(v, "px, ").concat(O, "px)")
     },
-    children: h
+    children: y
   })
 }

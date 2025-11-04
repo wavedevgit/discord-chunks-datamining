@@ -22,9 +22,9 @@ function b(e) {
     user: t,
     guildId: n,
     channelId: b,
-    onClose: y
+    onClose: h
   } = e, {
-    analyticsLocations: h
+    analyticsLocations: y
   } = (0, l.ZP)(), {
     context: v,
     trackUserProfileAction: O
@@ -60,7 +60,7 @@ function b(e) {
         channelId: b,
         onSelect: () => {
           var e, t;
-          null == y || y(), O({
+          null == h || h(), O({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, d.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -81,7 +81,7 @@ function b(e) {
             return e
           }({}, v), t = t = {
             userId: i.id,
-            sourceAnalyticsLocations: h
+            sourceAnalyticsLocations: y
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

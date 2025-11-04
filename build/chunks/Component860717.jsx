@@ -236,7 +236,7 @@ function B(e) {
         children: null != t ? t : (0, r.jsx)("div", {
           className: T.textPlaceholder
         })
-      }), (0, r.jsx)(y.U, {
+      }), (0, r.jsx)(h.U, {
         color: "muted",
         children: n
       })]
@@ -286,7 +286,7 @@ function M(e) {
 function F(e) {
   let {
     content: t
-  } = e, n = i.useId(), a = (0, y._)();
+  } = e, n = i.useId(), a = (0, h._)();
   return null != t ? (0, r.jsx)(v.Z, {
     type: u.re.TEXT_DISPLAY,
     id: n,
@@ -301,7 +301,7 @@ function U(e) {
     content: t,
     image: n,
     imagePosition: i
-  } = e, a = (0, y._)(), o = A(n) ? (0, r.jsx)("div", {
+  } = e, a = (0, h._)(), o = A(n) ? (0, r.jsx)("div", {
     className: l()(T.image, a.className),
     children: (0, r.jsx)(j.ZP, {
       src: n.proxyUrl,
@@ -326,7 +326,7 @@ function W(e) {
     size: t = "small",
     divider: n = false
   } = e, a = i.useId();
-  return (0, r.jsx)(h.Z, {
+  return (0, r.jsx)(y.Z, {
     type: u.re.SEPARATOR,
     id: a,
     divider: n,
@@ -399,7 +399,7 @@ function q(e) {
     containerInnerWidth: 396,
     children: (0, r.jsx)(m.Il, {
       applicationWidget: n,
-      children: (0, r.jsx)(y.U, {
+      children: (0, r.jsx)(h.U, {
         size: "reduced",
         weight: "reduced",
         children: (0, r.jsx)("div", {
@@ -448,7 +448,7 @@ let J = Object.assign(function(e) {
     application: o,
     game: u,
     config: f
-  } = Y(n), m = null == o ? true : o.getIconURL(16), b = (0, x.O)(t.id).data, y = null == b ? true : b.find(e => e.application_id === n.applicationId), h = (0, p.Z)({
+  } = Y(n), m = null == o ? true : o.getIconURL(16), b = (0, x.O)(t.id).data, h = null == b ? true : b.find(e => e.application_id === n.applicationId), y = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == u ? true : u.id,
     source: g.m1.UserProfile,
@@ -482,13 +482,13 @@ let J = Object.assign(function(e) {
     text: E.intl.string(E.t.ajHoOr),
     children: (0, r.jsx)(s.P3F, {
       className: l()(T.header, T.headerClickable),
-      onClick: h,
+      onClick: y,
       "aria-label": E.intl.string(E.t.ajHoOr),
       children: k
     })
   }), R = i.useMemo(() => {
     var e, t, n, r, i;
-    let a = (e = null != y ? y : null, t = null != f ? f : null, null == e ? {
+    let a = (e = null != h ? h : null, t = null != f ? f : null, null == e ? {
       mode: "skeleton",
       config: t
     } : {
@@ -542,7 +542,7 @@ let J = Object.assign(function(e) {
           return t
       }
     })
-  }, [f, y]);
+  }, [f, h]);
   return (0, r.jsxs)(w.Z, D(C({}, e), {
     userId: t.id,
     widget: n,
@@ -552,7 +552,7 @@ let J = Object.assign(function(e) {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: s.iWm,
-      action: h
+      action: y
     }) : null,
     children: [(0, r.jsx)(V.Provider, {
       value: e,
@@ -564,7 +564,7 @@ let J = Object.assign(function(e) {
       })
     }), (0, r.jsxs)("div", {
       className: T.footer,
-      children: [null != y || S ? null : (0, r.jsxs)("div", {
+      children: [null != h || S ? null : (0, r.jsxs)("div", {
         className: T.stillSyncing,
         children: [(0, r.jsx)(s.wGF, {
           size: "xxs"

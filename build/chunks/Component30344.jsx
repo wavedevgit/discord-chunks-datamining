@@ -73,8 +73,8 @@ function p(e) {
     disableInteraction: p,
     games: m
   } = e, b = (0, a.e7)([l.default], () => l.default.getId() === c), {
-    getManageButtonForWidget: y
-  } = (0, d.j)(), h = y(u), [v, O] = i.useState(false), j = v ? m : m.slice(0, 8), x = m.length > 8, _ = (0, r.jsxs)(r.Fragment, {
+    getManageButtonForWidget: h
+  } = (0, d.j)(), y = h(u), [v, O] = i.useState(false), j = v ? m : m.slice(0, 8), x = m.length > 8, _ = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g, (t = f({}, e), n = n = {
       games: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -92,7 +92,7 @@ function p(e) {
     })]
   });
   return b && !p ? (0, r.jsx)(o.d, {
-    emptyListFallbackRef: h,
+    emptyListFallbackRef: y,
     children: _
   }) : _
 }

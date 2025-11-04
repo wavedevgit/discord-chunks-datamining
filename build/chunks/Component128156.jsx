@@ -91,14 +91,14 @@ function w(e) {
       children: (0, r.jsxs)("ul", {
         className: I.cards,
         children: [!k && U && (0, r.jsx)("li", {
-          children: (0, r.jsx)(h.Z, {
+          children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
             voiceChannel: R,
             onClose: C
           })
         }), null != Z && (0, r.jsx)("li", {
-          children: (0, r.jsx)(y.Z, {
+          children: (0, r.jsx)(h.Z, {
             user: t,
             currentUser: n,
             stream: Z,
@@ -112,7 +112,7 @@ function w(e) {
             onClose: C
           })
         }, "live-".concat(i))), k && U && (0, r.jsx)("li", {
-          children: (0, r.jsx)(h.Z, {
+          children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
             voiceChannel: R,

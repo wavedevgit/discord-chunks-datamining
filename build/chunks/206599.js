@@ -46,11 +46,11 @@ function u(e) {
   (0, s.qU)(f);
   let p = (0, s.kN)(f),
     [m, b] = r.useState([]),
-    y = (t = f.map(e => a.Z.isFetching(e)), r.useMemo(() => t.join("\x1f"), [t]));
+    h = (t = f.map(e => a.Z.isFetching(e)), r.useMemo(() => t.join("\x1f"), [t]));
   return r.useEffect(() => {
     let t = f.filter(e => a.Z.noDataAvailable(e));
     t.length > 0 && u(t, e)
-  }, [y, f, e, u, p]), r.useEffect(() => {
+  }, [h, f, e, u, p]), r.useEffect(() => {
     b(f.map(e => {
       let t = p[e];
       return {

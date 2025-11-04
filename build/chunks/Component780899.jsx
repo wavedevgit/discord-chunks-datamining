@@ -59,9 +59,9 @@ function p(e) {
     "aria-label": p,
     children: m
   } = e, b = g(e, ["index", "className", "draggingClassName", "dropBeforeClassName", "dropAfterClassName", "aria-label", "children"]);
-  let y = i.useRef(null),
+  let h = i.useRef(null),
     {
-      isDragging: h,
+      isDragging: y,
       dragSourcePosition: v
     } = function(e) {
       let {
@@ -77,16 +77,16 @@ function p(e) {
         disableDefaultPreview: p = true
       } = e, m = "".concat(u, "_").concat(a), b = i.useCallback((e, t) => {
         null == f || f(e, t)
-      }, [f]), y = i.useMemo(() => ({
+      }, [f]), h = i.useMemo(() => ({
         id: l,
         index: r,
         itemType: u,
         itemPreviewProps: d
       }), [l, r, u, d]), [{
-        isDragging: h
+        isDragging: y
       }, v, O] = (0, o.c)({
         type: m,
-        item: y,
+        item: h,
         collect: e => ({
           handlerId: e.getHandlerId(),
           isDragging: e.isDragging()
@@ -116,20 +116,20 @@ function p(e) {
         }
       });
       return v(t), x(n), {
-        isDragging: h,
+        isDragging: y,
         dragSourcePosition: j
       }
     }(f({
-      dragRef: y,
-      dropRef: y,
+      dragRef: h,
+      dropRef: h,
       index: t
     }, b)),
     O = null != v,
     j = O && t < v,
     x = O && t > v;
   return (0, r.jsx)("div", {
-    ref: y,
-    className: l()(n, h && a, j && u, x && d),
+    ref: h,
+    className: l()(n, y && a, j && u, x && d),
     "aria-label": p,
     children: m
   })

@@ -68,7 +68,7 @@ function T(e) {
     children: a
   } = e, {
     manageFocusOnReorder: l
-  } = (0, y.C)();
+  } = (0, h.C)();
   return (0, r.jsx)(b.yW, {
     index: t,
     itemId: i.applicationId,
@@ -191,31 +191,31 @@ function A(e) {
     widgetType: d,
     applicationId: f
   } = e, g = (0, s.Dt)(), b = (0, s.Dt)(), {
-    trackUserProfileEditAction: y
-  } = (0, p.KZ)(), [h, v] = i.useState("idle"), [O, j] = i.useState(null != t ? t : ""), x = i.useRef(null), _ = i.useRef(null), I = P.intl.string(P.t.xKSfBT), S = null != t && "" !== t.trim(), E = i.useCallback(() => {
-    y({
+    trackUserProfileEditAction: h
+  } = (0, p.KZ)(), [y, v] = i.useState("idle"), [O, j] = i.useState(null != t ? t : ""), x = i.useRef(null), _ = i.useRef(null), I = P.intl.string(P.t.xKSfBT), S = null != t && "" !== t.trim(), E = i.useCallback(() => {
+    h({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
     }), v("editing")
-  }, [d, y]), T = i.useCallback(() => {
+  }, [d, h]), T = i.useCallback(() => {
     let e = O.trim(),
       n = e !== (null != t ? t : "").trim();
-    (0, m.Bu)(d, f, "" !== e ? e : true), v("completed"), n && y({
+    (0, m.Bu)(d, f, "" !== e ? e : true), v("completed"), n && h({
       action: "COMMENTARY_EDITED",
       widgetEdited: d,
       gameId: f
     })
-  }, [d, f, O, t, y]), C = i.useCallback(e => {
+  }, [d, f, O, t, h]), C = i.useCallback(e => {
     j(e)
   }, []);
   return i.useEffect(() => {
-    "editing" === h && j(null != t ? t : "")
-  }, [t, h]), i.useEffect(() => {
-    if ("completed" === h) {
+    "editing" === y && j(null != t ? t : "")
+  }, [t, y]), i.useEffect(() => {
+    if ("completed" === y) {
       var e;
       null == (e = x.current) || e.focus()
     }
-  }, [h]), "editing" === h ? (0, r.jsxs)("div", {
+  }, [y]), "editing" === y ? (0, r.jsxs)("div", {
     className: w.textAreaContainer,
     children: [(0, r.jsx)(c.nn4, {
       tag: "label",
@@ -228,7 +228,7 @@ function A(e) {
       onChange: C,
       onBlur: T,
       rows: 3,
-      autoFocus: "editing" === h,
+      autoFocus: "editing" === y,
       onKeyDown: e => {
         "Enter" !== e.key || e.shiftKey || (e.preventDefault(), T())
       },
@@ -290,9 +290,9 @@ function Z(e) {
     color: "text-default"
   }, M = f.default.getCurrentUser(), F = (null == M ? true : M.id) === t.id, U = 1 === (0, m.Gv)(s), W = !u && F, H = W && (0, m.vI)(s), z = W && !U, {
     registerDragHandleRef: K
-  } = (0, y.C)(), V = i.useRef(null);
+  } = (0, h.C)(), V = i.useRef(null);
   if (B) return (0, r.jsx)(v.i, {});
-  let Y = () => (0, r.jsx)(h.Z, {
+  let Y = () => (0, r.jsx)(y.Z, {
       coverRef: p,
       className: null == R || u ? true : I.hoverActiveEffect,
       imageSrc: R,

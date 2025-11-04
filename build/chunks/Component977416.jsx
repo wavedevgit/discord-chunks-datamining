@@ -1,7 +1,7 @@
 /** Chunk was on 47793 **/
 /** chunk id: 977416, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk932366 = require("./932366.js"),
   Chunk845859 = require("./845859.js");
 
-function y(e) {
+function h(e) {
   var t, n, {
       gameName: i,
       onClick: a
@@ -40,14 +40,14 @@ function y(e) {
       return i
     }(e, ["gameName", "onClick"]);
   let g = null != i ? i : p.intl.string(p.t.GIWFlF),
-    y = p.intl.formatToPlainString(p.t["3mb1s5"], {
+    h = p.intl.formatToPlainString(p.t["3mb1s5"], {
       game: g
     }),
-    h = (0, l.e7)([u.Z], () => u.Z.suggestedFetchIsLoading);
-  return (0, d.kO)(s.applicationId) || h ? (0, r.jsx)("div", {
+    y = (0, l.e7)([u.Z], () => u.Z.suggestedFetchIsLoading);
+  return (0, d.kO)(s.applicationId) || y ? (0, r.jsx)("div", {
     className: m.loadingCover
   }) : (0, r.jsx)(o.u, {
-    text: y,
+    text: h,
     children: (0, r.jsxs)(c.P3F, {
       className: b.addButton,
       onClick: a,
@@ -91,7 +91,7 @@ function y(e) {
   })
 }
 
-function h(e) {
+function y(e) {
   let {
     userId: t,
     games: n,
@@ -126,7 +126,7 @@ function h(e) {
           gameName: i,
           imageSrc: a
         } = e;
-        return (0, r.jsx)(y, {
+        return (0, r.jsx)(h, {
           onClick: () => l(n, i, a),
           userId: t,
           applicationId: n,

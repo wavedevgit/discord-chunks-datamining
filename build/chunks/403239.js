@@ -22,11 +22,11 @@ function u(e) {
     onReorder: p
   } = e, m = (0, s.Z)(u), {
     isDragging: b,
-    currentItem: y
+    currentItem: h
   } = (0, i.f)(e => ({
     isDragging: e.isDragging(),
     currentItem: e.getItem()
-  })), h = (0, r.useCallback)((e, t) => {
+  })), y = (0, r.useCallback)((e, t) => {
     let n = m.slice(),
       [r] = n.splice(e, 1);
     n.splice(t, 0, r), c.Z.setPendingWidgets(n)
@@ -67,14 +67,14 @@ function u(e) {
     },
     drop: e => {
       let t = null != f ? f : 0;
-      h(e.index, t), e.index = t
+      y(e.index, t), e.index = t
     }
   });
   return null == f || g ? {
     isDragging: false,
     dragSourcePosition: null
   } : (v(n), x(t), {
-    isDragging: b && (null == y ? true : y.widgetType) === d.type,
+    isDragging: b && (null == h ? true : h.widgetType) === d.type,
     dragSourcePosition: j
   })
 }

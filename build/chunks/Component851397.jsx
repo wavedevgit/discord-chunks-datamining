@@ -1,7 +1,7 @@
 /** Chunk was on 94758 **/
 /** chunk id: 851397, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,15 +17,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk594914 = require("./594914.jsx"),
   Chunk848118 = require("./848118.jsx"),
   Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk63602 = require("./63602.js");
 
-function I(e) {
+function j(e) {
   var t, r, {
-      profileOwner: I,
-      showIcons: j = false
+      profileOwner: j,
+      showIcons: P = false
     } = e,
-    P = function(e, t) {
+    v = function(e, t) {
       if (null == e) return {};
       var r, n, i = function(e, t) {
         if (null == e) return {};
@@ -41,21 +42,24 @@ function I(e) {
       return i
     }(e, ["profileOwner", "showIcons"]);
   let {
-    item: v,
-    isOwner: w
-  } = P, y = v.sku, S = y.applicationId, x = (0, o.q)(S), k = i.useRef(null), [E] = (0, l.Wu)([f.Z], () => [f.Z.hasSentGift(v.skuId, I.id)], [v.skuId, I.id]), N = v.skuName, C = w ? h.intl.string(h.t.FdGl5A) : h.intl.string(h.t.ilhtIa), T = w ? true : a.OgN, L = i.useCallback(() => {
-    if (w && (null == x ? true : x.guildId) != null)(0, u.closeUserProfileModal)(), (0, c.uL)(g.Z5c.CHANNELS_GAME_SHOP(x.guildId, 0, v.skuId, y.slug));
+    item: w,
+    isOwner: y,
+    giftingOrigin: S = h.Wt.USER_PROFILE_WISHLIST
+  } = v, x = w.sku, E = x.applicationId, k = (0, o.q)(E), N = i.useRef(null), [C] = (0, l.Wu)([f.Z], () => [f.Z.hasSentGift(w.skuId, j.id)], [w.skuId, j.id]), T = w.skuName, L = y ? I.intl.string(I.t.FdGl5A) : I.intl.string(I.t.ilhtIa), _ = y ? true : a.OgN, Z = i.useCallback(() => {
+    if (y && (null == k ? true : k.guildId) != null)(0, u.closeUserProfileModal)(), (0, c.uL)(g.Z5c.CHANNELS_GAME_SHOP(k.guildId, 0, w.skuId, x.slug));
     else {
-      if (E) return;
-      (0, p.P)(y, {
-        isGift: true
+      if (C) return;
+      (0, p.P)(x, {
+        isGift: true,
+        giftRecipient: j,
+        giftingOrigin: S
       })
     }
-  }, [w, null == x ? true : x.guildId, v.skuId, y, E]), Z = i.useCallback(() => j ? (0, n.jsx)("div", {
+  }, [y, null == k ? true : k.guildId, w.skuId, x, C, j, S]), R = i.useCallback(() => P ? (0, n.jsx)("div", {
     className: b.itemIcon,
     children: (0, n.jsx)(s.u, {
-      text: h.intl.formatToPlainString(h.t.p3RmJF, {
-        username: m.ZP.getName(I)
+      text: I.intl.formatToPlainString(I.t.p3RmJF, {
+        username: m.ZP.getName(j)
       }),
       position: "top",
       children: (0, n.jsx)(a.h_8, {
@@ -66,13 +70,13 @@ function I(e) {
         colorClass: b.itemIconHeart
       })
     })
-  }) : null, [j, I]), _ = i.useCallback(() => (0, n.jsx)(O.A, {
+  }) : null, [P, j]), F = i.useCallback(() => (0, n.jsx)(O.A, {
     shape: "custom",
     containerClassName: b.card,
     backgroundImageClassName: b.cardBackgroundImage,
     foregroundImageClassName: b.cardImage,
-    sku: y
-  }), [y]);
+    sku: x
+  }), [x]);
   return (0, n.jsx)(d.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -90,15 +94,15 @@ function I(e) {
       })
     }
     return e
-  }({}, P), r = r = {
-    cardRef: k,
-    accessibleLabel: N,
-    onCardClick: L,
-    buttonCTALabel: C,
-    buttonIcon: T,
-    isOwned: E,
-    renderItemPreview: _,
-    renderSourceIcon: Z
+  }({}, v), r = r = {
+    cardRef: N,
+    accessibleLabel: T,
+    onCardClick: Z,
+    buttonCTALabel: L,
+    buttonIcon: _,
+    isOwned: C,
+    renderItemPreview: F,
+    renderSourceIcon: R
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

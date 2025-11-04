@@ -30,20 +30,20 @@ function x(e) {
     application: j
   } = (0, d.JL)(), {
     isGift: C,
-    giftRecipient: y
+    giftRecipient: _
   } = (0, c.wD)();
   a()(null != x, "Expected selectedSkuId"), a()(null != j, "Expected application");
-  let P = l[x];
-  return (a()(null != P, "Expected sku"), r.useEffect(() => {
+  let y = l[x];
+  return (a()(null != y, "Expected sku"), r.useEffect(() => {
     C || ((0, m.U)(), n(), (0, p.I)({
-      sku: P,
+      sku: y,
       application: j
     }))
-  }, [C, P, j, n]), C) ? (0, i.jsxs)(u.C3, {
+  }, [C, y, j, n]), C) ? (0, i.jsxs)(u.C3, {
     children: [(0, i.jsx)(g.Z, {}), (0, i.jsx)(f.Z, {}), (0, i.jsxs)("div", {
       className: h.confirmation,
       children: [(0, i.jsx)(v.A, {
-        sku: P,
+        sku: y,
         shape: "square",
         containerClassName: h.skuImage
       }), (0, i.jsx)(s.Heading, {
@@ -53,8 +53,8 @@ function x(e) {
       }), (0, i.jsx)(s.Text, {
         variant: "text-md/normal",
         children: b.intl.formatToPlainString(b.t["2VjPTw"], {
-          itemName: P.name,
-          giftRecipient: null != (t = null == y ? true : y.username) ? t : "your recipient"
+          itemName: y.name,
+          giftRecipient: null != (t = null == _ ? true : _.username) ? t : "your recipient"
         })
       }), (0, i.jsx)("div", {
         className: h.divider

@@ -31,7 +31,9 @@ function o(e) {
 
 function s(e, t) {
   let {
-    isGift: a
+    isGift: a,
+    giftRecipient: s,
+    giftingOrigin: l
   } = t;
   (0, i.ZDy)(async () => {
     let {
@@ -41,7 +43,9 @@ function s(e, t) {
       skuId: e.id,
       applicationId: e.applicationId,
       analyticsLocations: [],
-      isGift: a
+      isGift: a,
+      giftRecipient: s,
+      giftingOrigin: l
     }, n))
   }, {
     modalKey: "slayers-payment-modal"

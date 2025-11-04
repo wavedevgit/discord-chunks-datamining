@@ -42,7 +42,7 @@ function O(e) {
       imageSrc: l,
       gameName: o
     },
-    "aria-label": y.intl.formatToPlainString(y.t["0dR3gw"], {
+    "aria-label": h.intl.formatToPlainString(h.t["0dR3gw"], {
       positionNumber: t + 1
     }),
     onReorder: (e, t) => (0, s.Eq)(n, e, t),
@@ -74,7 +74,7 @@ function j(e) {
     channelId: s,
     disableInteraction: u = false,
     index: d,
-    onRemoveGame: y,
+    onRemoveGame: h,
     coverRef: j
   } = e, {
     coverImageUrl: x,
@@ -91,7 +91,7 @@ function j(e) {
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: u,
-      className: l()(I ? v.socialProofBackdrop : true, null == x || u ? true : h.hoverActiveEffect),
+      className: l()(I ? v.socialProofBackdrop : true, null == x || u ? true : y.hoverActiveEffect),
       hideTooltip: T,
       coverRef: j
     }), E && (0, r.jsx)(g.Z, {
@@ -99,7 +99,7 @@ function j(e) {
       widgetType: i,
       className: v.removeGameButton,
       iconSize: "xs",
-      onRemove: () => null == y ? true : y(t.applicationId)
+      onRemove: () => null == h ? true : h(t.applicationId)
     }), !u && (0, r.jsx)(p.Z, {
       className: v.socialProof,
       applicationId: t.applicationId,
@@ -109,7 +109,7 @@ function j(e) {
     })]
   });
   return P ? (0, r.jsx)("div", {
-    className: h.loadingCover
+    className: y.loadingCover
   }) : E ? (0, r.jsx)(O, {
     widgetType: i,
     index: null != d ? d : 0,

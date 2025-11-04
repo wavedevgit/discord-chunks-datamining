@@ -76,12 +76,14 @@ function x(e) {
     applicationId: n,
     skuId: d,
     analyticsLocations: g,
-    isGift: b = false
+    isGift: b = false,
+    giftRecipient: x,
+    giftingOrigin: j
   } = e, {
-    analyticsLocations: x
+    analyticsLocations: C
   } = (0, l.ZP)(g, r.Z.PREMIUM_PAYMENT_MODAL);
   return (0, i.jsx)(l.Gt, {
-    value: x,
+    value: C,
     children: (0, i.jsx)(o.PaymentContextProvider, {
       loadId: t,
       stepConfigs: function() {
@@ -99,6 +101,8 @@ function x(e) {
       children: (0, i.jsx)(c.c1, {
         children: (0, i.jsx)(a.KB, {
           isGift: b,
+          giftRecipient: x,
+          giftingOrigin: j,
           children: (0, i.jsx)(h, v({}, e))
         })
       })

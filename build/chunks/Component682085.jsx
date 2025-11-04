@@ -125,7 +125,7 @@ function O() {
               size: 128
             }), w, (0, r.jsx)(c.Button, {
               icon: c.qJs,
-              text: h.intl.string(h.t["lBG2s/"]),
+              text: y.intl.string(y.t["lBG2s/"]),
               size: "md",
               color: "secondary",
               onClick: I

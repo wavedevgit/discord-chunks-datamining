@@ -1,7 +1,7 @@
 /** Chunk was on 47793 **/
 /** chunk id: 879877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk44258 = require("./44258.js");
 
-function y(e) {
+function h(e) {
   var t;
   let {
     tags: n,
@@ -26,8 +26,8 @@ function y(e) {
     widgetType: c,
     applicationId: s,
     className: u,
-    disableInteraction: y = false
-  } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = o.qH, I = a && !y && (0, f.M8)(c) && x.length < P, {
+    disableInteraction: h = false
+  } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = o.qH, I = a && !h && (0, f.M8)(c) && x.length < P, {
     trackUserProfileAction: w
   } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [C, D] = (0, i.useState)(0), [k, N] = (0, i.useState)(false), A = j(E, T, x, S, D);
   if ((0, i.useEffect)(() => (A(), window.addEventListener("resize", A), () => {
@@ -40,7 +40,7 @@ function y(e) {
       children: [(0, r.jsx)("ul", {
         className: b.tagList,
         "aria-label": m.intl.string(m.t.EfjTi4),
-        children: Z.map(e => (0, r.jsx)(h, {
+        children: Z.map(e => (0, r.jsx)(y, {
           tag: e,
           isCurrentUser: a,
           applicationId: s,
@@ -48,7 +48,7 @@ function y(e) {
           ref: t => {
             null != t && S.current.set(e, t)
           },
-          disableInteraction: y
+          disableInteraction: h
         }, e))
       }), C > 0 && (k ? (0, r.jsx)(O, {
         onClick: () => {
@@ -64,7 +64,7 @@ function y(e) {
           })
         },
         ref: E,
-        disableInteraction: y
+        disableInteraction: h
       }))]
     }), I && (0, r.jsx)(g.Z, {
       tags: n,
@@ -74,7 +74,7 @@ function y(e) {
     })]
   })
 }
-let h = e => {
+let y = e => {
     let {
       tag: t,
       isCurrentUser: n,
@@ -87,18 +87,18 @@ let h = e => {
     } = (0, d.KZ)(), g = (0, p.zK)(t);
     if (null == g) return null;
     let {
-      getText: y,
-      icon: h
+      getText: h,
+      icon: y
     } = g;
     return (0, r.jsxs)("li", {
       className: b.tag,
       ref: o,
-      children: [(0, r.jsx)(h, {
+      children: [(0, r.jsx)(y, {
         size: "xxs"
       }), (0, r.jsx)(s.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
-        children: y()
+        children: h()
       }), n && !l && (0, r.jsx)(c.u, {
         text: m.intl.string(m.t.Otv9fP),
         children: (0, r.jsx)(s.P3F, {
@@ -111,7 +111,7 @@ let h = e => {
           },
           className: b.removeButton,
           "aria-label": m.intl.formatToPlainString(m.t.GCn1ne, {
-            tag: y()
+            tag: h()
           }),
           children: (0, r.jsx)(s.Dio, {
             size: "xxs",
