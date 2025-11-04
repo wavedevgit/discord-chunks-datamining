@@ -2,8 +2,8 @@
 /** chunk id: 987588, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = {
-  container: "container__0d706",
-  descriptors: "descriptors__0d706",
-  header: "header__0d706",
-  guildBadge: "guildBadge__0d706"
+  container: "container_b5a371",
+  choicesContainer: "choicesContainer_b5a371",
+  choiceRow: "choiceRow_b5a371",
+  noChoices: "noChoices_b5a371"
 }

@@ -1,18 +1,19 @@
 /** Chunk was on 47793 **/
 /** chunk id: 232083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
-});
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk442837 = require("./442837.js"),
+  Z: () => p
+}), require("./388685.js");
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk314897 = require("./314897.js"),
   Chunk733231 = require("./733231.jsx"),
+  Chunk385153 = require("./385153.jsx"),
   Chunk623132 = require("./623132.jsx"),
   Chunk34335 = require("./34335.jsx"),
   Chunk112794 = require("./112794.js");
 
-function u(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -31,7 +32,7 @@ function u(e) {
   return e
 }
 
-function d(e) {
+function g(e) {
   var {
     games: t,
     user: n,
@@ -52,34 +53,52 @@ function d(e) {
     return i
   }(e, ["games", "user", "widgetType"]);
   let {
-    registerItemRef: c,
-    manageFocusOnDelete: d
-  } = (0, l.C)();
+    registerItemRef: l,
+    manageFocusOnDelete: c
+  } = (0, o.C)();
   return (0, r.jsx)("ul", {
-    className: s.cardList,
+    className: d.cardList,
     children: t.map((e, t) => (0, r.jsx)("li", {
-      children: (0, r.jsx)(o.Z, u({
+      children: (0, r.jsx)(s.Z, f({
         index: t,
         user: n,
         game: e,
         widgetType: i,
-        coverRef: c(e.applicationId),
-        onRemoveGame: d
+        coverRef: l(e.applicationId),
+        onRemoveGame: c
       }, a))
     }, e.applicationId))
   })
 }
 
-function f(e) {
+function p(e) {
+  var t, n;
   let {
-    user: t,
-    widgetType: n,
-    disableInteraction: o
-  } = e, s = (0, i.e7)([a.default], () => a.default.getId() === t.id), {
-    getManageButtonForWidget: f
-  } = (0, c.j)(), g = f(n);
-  return s && !o ? (0, r.jsx)(l.d, {
-    emptyListFallbackRef: g,
-    children: (0, r.jsx)(d, u({}, e))
-  }) : (0, r.jsx)(d, u({}, e))
+    user: s,
+    widgetType: d,
+    disableInteraction: p,
+    games: m
+  } = e, b = (0, a.e7)([l.default], () => l.default.getId() === s.id), {
+    getManageButtonForWidget: y
+  } = (0, u.j)(), h = y(d), [v, O] = i.useState(false), j = v ? m : m.slice(0, 2), x = m.length > 2, _ = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(g, (t = f({}, e), n = n = {
+      games: j
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+    }), t)), x && (0, r.jsx)(c.Z, {
+      expanded: v,
+      onClick: () => O(e => !e)
+    })]
+  });
+  return b && !p ? (0, r.jsx)(o.d, {
+    emptyListFallbackRef: h,
+    children: _
+  }) : _
 }

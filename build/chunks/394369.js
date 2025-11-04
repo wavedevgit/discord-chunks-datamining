@@ -1,13 +1,13 @@
 /** Chunk was on 74023 **/
-/** chunk id: 394369, original params: a,e,t (module,exports,require) **/
+/** chunk id: 394369, original params: e,t,r (module,exports,require) **/
 module.exports = {
-  downloadApps: "downloadApps__4a98c",
+  container: "container__4a98c",
   contentWrapper: "contentWrapper__4a98c",
-  inner: "inner__4a98c",
   header: "header__4a98c",
-  footer: "footer__4a98c",
   platformsWrap: "platformsWrap__4a98c",
   platforms: "platforms__4a98c",
+  platformsDesktop: "platformsDesktop__4a98c",
+  platformsMobile: "platformsMobile__4a98c",
   platform: "platform__4a98c",
   active: "active__4a98c",
   icon: "icon__4a98c",
@@ -18,8 +18,5 @@ module.exports = {
   windows: "windows__4a98c",
   linux: "linux__4a98c",
   ios: "ios__4a98c",
-  downloadButtons: "downloadButtons__4a98c",
-  list: "list__4a98c",
-  modalCloseButton: "modalCloseButton__4a98c",
-  refreshDownloadButton: "refreshDownloadButton__4a98c"
+  downloadButton: "downloadButton__4a98c"
 }

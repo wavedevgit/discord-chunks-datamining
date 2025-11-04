@@ -2,7 +2,7 @@
 /** chunk id: 242297, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _: () => b
+  _: () => T
 }), require("./415506.js"), require("./388685.js");
 var Chunk579806 = require("./579806.js"),
   Chunk710845 = require("./710845.js"),
@@ -28,9 +28,40 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 let E = new Chunk710845.Z("OverlayV3NativeModule");
-class b {
+
+function b(e, t) {
+  (0, d.bs)(e, "renderer_window_focus_changed", {
+    windowHandle: t,
+    popoutInitializationStages: u.Z.getPopoutInitializationStages()
+  }), (0, d.P9)(e, null != t ? (0, f.rd)(t) : null)
+}
+
+function y(e) {
+  (0, d.bs)(e, "renderer_window_focus_lost", {
+    popoutInitializationStages: u.Z.getPopoutInitializationStages()
+  }), (0, d.VQ)(e)
+}
+
+function O(e) {
+  (0, d.bs)(e, "successfully_shown", {
+    popoutInitializationStages: u.Z.getPopoutInitializationStages()
+  }), (0, d.uD)(e)
+}
+
+function v(e) {
+  (0, d.bs)((0, s.getPID)(), "window_handle_initialized", {
+    real_initialized: e,
+    popoutInitializationStages: u.Z.getPopoutInitializationStages()
+  }), (0, d.zg)(e)
+}
+
+function I(e) {
+  var t, n, r, i;
+  null == (t = e.setFocusCallback) || t.call(e, b), null == (n = e.setFocusLostCallback) || n.call(e, y), null == (r = e.setSuccessfullyShownCallback) || r.call(e, O), null == (i = e.setOnWindowHandleInitializedCallback) || i.call(e, v), (0, d.bs)((0, s.getPID)(), "native_module_callbacks_setup"), E.verbose("Native module callbacks setup")
+}
+class T {
   static getInstance() {
-    return null == this.instance && (this.instance = new b), this.instance
+    return null == this.instance && (this.instance = new T), this.instance
   }
   async initialize() {
     return await this.prepareOverlayModule()
@@ -54,7 +85,7 @@ class b {
     try {
       await Chunk998502.ZP.ensureModule("discord_desktop_overlay");
       let e = Chunk998502.ZP.requireModule("discord_desktop_overlay");
-      module.init(), module.setHostWindowCallbacks(e => this.createOutOfProcessOverlayHostWindow(e), () => this.destroyOutOfProcessOverlayHostWindow(), e => this.refreshOutOfProcessOverlayHostWindow(e)), this.module = module, (0, Chunk932404.bs)((0, Chunk145597.getPID)(), "module_loaded"), (0, Chunk145597.setOutOfProcessSupport)(true), (0, Chunk932404.U9)(), E.info("OverlayV3 Module Loaded")
+      module.init(), module.setHostWindowCallbacks(e => this.createOutOfProcessOverlayHostWindow(e), () => this.destroyOutOfProcessOverlayHostWindow(), e => this.refreshOutOfProcessOverlayHostWindow(e)), this.module = module, (0, Chunk932404.bs)((0, Chunk145597.getPID)(), "module_loaded"), (0, Chunk145597.setOutOfProcessSupport)(true), I(this.module), (0, Chunk932404.U9)(), E.info("OverlayV3 Module Loaded")
     } catch (e) {
       throw E.error("failed loading overlay module", module), (0, Chunk145597.setOutOfProcessSupport)(false), (0, Chunk932404.UK)(module), this.module = null, this.modulePromise = null, module
     }
@@ -83,11 +114,12 @@ class b {
     }
     let n = null;
     try {
+      var i;
       n = await this.getNativeWindowHandleWithRetry(), c.Z.resetWindowState(), (0, d.bs)(e, "native_window_handle_retrieved", {
         handle: n,
         hasWindow: null != n,
         popoutInitializationStages: u.Z.getPopoutInitializationStages()
-      }), await (0, d.xO)(e, n)
+      }), await (0, d.xO)(e, n), (null == (i = this.module) ? true : i.setOnWindowHandleInitializedCallback) == null && await (0, d.zg)(true)
     } catch (t) {
       E.error("Error getting native window handle:", t), (0, d.MP)(e, t, n), (0, d.bs)(e, "native_window_handle_retrieval_failed", {
         error: t,
@@ -152,44 +184,6 @@ class b {
       return null != exports ? (0, Chunk575140.rd)(exports) : null
     }, module, exports)
   }
-  setFocusCallback(e) {
-    var t, n;
-    let r = (t, n) => {
-      (0, d.bs)(t, "renderer_window_focus_changed", {
-        windowHandle: n,
-        popoutInitializationStages: u.Z.getPopoutInitializationStages()
-      }), e(t, null != n ? (0, f.rd)(n) : null)
-    };
-    null == (n = this.module) || null == (t = n.setFocusCallback) || t.call(n, r)
-  }
-  setFocusLostCallback(e) {
-    var t, n;
-    let r = t => {
-      (0, d.bs)(t, "renderer_window_focus_lost", {
-        popoutInitializationStages: u.Z.getPopoutInitializationStages()
-      }), e(t)
-    };
-    null == (n = this.module) || null == (t = n.setFocusLostCallback) || t.call(n, r)
-  }
-  setSuccessfullyShownCallback(e) {
-    var t, n;
-    let r = t => {
-      (0, d.bs)(t, "successfully_shown", {
-        popoutInitializationStages: u.Z.getPopoutInitializationStages()
-      }), e(t)
-    };
-    null == (n = this.module) || null == (t = n.setSuccessfullyShownCallback) || t.call(n, r)
-  }
-  setOnWindowHandleInitializedCallback(e) {
-    var t, n;
-    let r = t => {
-      (0, d.bs)((0, s.getPID)(), "window_handle_initialized", {
-        real_initialized: t,
-        popoutInitializationStages: u.Z.getPopoutInitializationStages()
-      }), e(true)
-    };
-    null == (n = this.module) || null == (t = n.setOnWindowHandleInitializedCallback) || t.call(n, r)
-  }
   getNativeBreadcrumbs(e, t) {
     var n, r;
     null == (r = this.module) || null == (n = r.getBreadcrumbs) || n.call(r, e, t)
@@ -243,4 +237,4 @@ class b {
     g(this, "module", null), g(this, "modulePromise", null), g(this, "isCrashedDisabled", false), g(this, "lastAssociatedPID", null), g(this, "trackedGamePids", new Set)
   }
 }
-g(b, "instance", null)
+g(T, "instance", null)

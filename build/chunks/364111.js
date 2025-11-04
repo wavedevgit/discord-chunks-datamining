@@ -42,7 +42,6 @@ function p(e, t, n) {
         return e
       }({}, t), n = n = {
         variantsReturnStyle: d,
-        includePopularPicks: true,
         includeDynamicBlocks: true,
         shopHomeConfig: I,
         skipNumCategories: f

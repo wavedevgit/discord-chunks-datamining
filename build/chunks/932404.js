@@ -7,10 +7,12 @@ require.d(exports, {
   MP: () => g,
   NB: () => f,
   Nk: () => c,
+  P9: () => T,
   PV: () => y,
   PY: () => v,
   U9: () => d,
   UK: () => u,
+  VQ: () => S,
   _l: () => O,
   bs: () => I,
   k0: () => _,
@@ -19,7 +21,9 @@ require.d(exports, {
   rI: () => o,
   ry: () => l,
   sG: () => h,
-  xO: () => m
+  uD: () => A,
+  xO: () => m,
+  zg: () => C
 });
 var Chunk570140 = require("./570140.js"),
   Chunk145597 = require("./145597.js"),
@@ -175,5 +179,34 @@ function I(e, t, n, r) {
     type: a.C7.OOPModule,
     data: n,
     logType: r
+  })
+}
+
+function T(e, t) {
+  return r.Z.dispatch({
+    type: "OVERLAY_V3_NATIVE_FOCUS_GAINED",
+    pid: e,
+    windowHandle: t
+  })
+}
+
+function S(e) {
+  return r.Z.dispatch({
+    type: "OVERLAY_V3_NATIVE_FOCUS_LOST",
+    pid: e
+  })
+}
+
+function A(e) {
+  return r.Z.dispatch({
+    type: "OVERLAY_V3_NATIVE_SUCCESSFULLY_SHOWN",
+    pid: e
+  })
+}
+
+function C(e) {
+  return r.Z.dispatch({
+    type: "OVERLAY_V3_NATIVE_WINDOW_HANDLE_INITIALIZED",
+    initialized: e
   })
 }

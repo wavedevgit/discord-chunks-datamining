@@ -1,7 +1,7 @@
 /** Chunk was on 47793 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Q
+  Z: () => J
 }), require("./467055.js"), require("./388685.js"), require("./35282.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -439,7 +439,7 @@ function X(e) {
     })]
   })
 }
-let Q = Object.assign(function(e) {
+let J = Object.assign(function(e) {
   let {
     user: t,
     widget: n,

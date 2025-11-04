@@ -457,7 +457,7 @@ let eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           currentUser: t
         } = e;
-        return (null == t ? true : t.mfaEnabled) && W.Z.hasFetchedCredentials() && !W.Z.hasCredentials
+        return (null == t ? true : t.mfaEnabled) && W.Z.hasFetchedCredentials() && !W.Z.hasCredentials && !eX(eS.kVF.PASSKEY_BACKUP)
       }
     },
     [Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING]: {

@@ -1189,5 +1189,6 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         of null != n ? V.Z.getSortedRoles(n.id) : [])
         if (t.username.startsWith(e.toLowerCase())) returntrue;
       returnfalse
-    }
+    },
+    queryMemberList: e0
   }

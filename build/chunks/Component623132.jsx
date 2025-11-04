@@ -16,7 +16,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk86419 = require("./86419.js"),
-  Chunk747101 = require("./747101.js"),
   Chunk780899 = require("./780899.jsx"),
   Chunk733231 = require("./733231.jsx"),
   Chunk817053 = require("./817053.jsx"),
@@ -24,6 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk879877 = require("./879877.jsx"),
   Chunk533815 = require("./533815.jsx"),
   Chunk919498 = require("./919498.jsx"),
+  Chunk394606 = require("./394606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk932366 = require("./932366.js"),
   Chunk776385 = require("./776385.js");
@@ -68,8 +68,8 @@ function T(e) {
     children: a
   } = e, {
     manageFocusOnReorder: l
-  } = (0, h.C)();
-  return (0, r.jsx)(y.yW, {
+  } = (0, y.C)();
+  return (0, r.jsx)(b.yW, {
     index: t,
     itemId: i.applicationId,
     listType: n,
@@ -276,76 +276,78 @@ function Z(e) {
     index: d,
     onRemoveGame: g,
     coverRef: p,
-    className: D
+    className: P
   } = e, {
-    gameName: k = P.intl.string(P.t.GIWFlF),
-    imageSrc: Z,
-    applicationId: R,
-    comment: G,
-    tags: B
-  } = o, L = {
+    applicationId: D,
+    comment: k,
+    tags: Z
+  } = o, {
+    coverImageUrl: R,
+    gameName: G,
+    isLoading: B
+  } = (0, _.Z)(D), L = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, M = f.default.getCurrentUser(), F = (null == M ? true : M.id) === t.id, U = 1 === (0, m.Gv)(s), W = !u && F, H = W && (0, m.vI)(s), z = W && !U, K = (0, b.kO)(R), {
-    registerDragHandleRef: V
-  } = (0, h.C)(), Y = i.useRef(null);
-  if (K) return (0, r.jsx)(O.i, {});
-  let q = () => (0, r.jsx)(v.Z, {
+  }, M = f.default.getCurrentUser(), F = (null == M ? true : M.id) === t.id, U = 1 === (0, m.Gv)(s), W = !u && F, H = W && (0, m.vI)(s), z = W && !U, {
+    registerDragHandleRef: K
+  } = (0, y.C)(), V = i.useRef(null);
+  if (B) return (0, r.jsx)(v.i, {});
+  let Y = () => (0, r.jsx)(h.Z, {
       coverRef: p,
-      className: null == Z || u ? true : I.hoverActiveEffect,
-      imageSrc: Z,
-      gameName: k,
-      applicationId: R,
+      className: null == R || u ? true : I.hoverActiveEffect,
+      imageSrc: R,
+      gameName: G,
+      applicationId: D,
       userId: t.id,
       disableInteraction: u,
       hideTooltip: true
     }),
-    X = () => (0, r.jsxs)("div", {
-      className: l()(w.card, D),
+    q = () => (0, r.jsxs)("div", {
+      className: l()(w.card, P),
       children: [z ? (0, r.jsxs)("div", {
-        ref: Y,
+        ref: V,
         className: w.dragHandleContainer,
-        children: [q(), (0, r.jsx)(y.e_, {
-          buttonRef: V(o.applicationId),
+        children: [Y(), (0, r.jsx)(b.e_, {
+          buttonRef: K(o.applicationId),
           className: w.dragHandle,
           focusProps: {
-            ringTarget: Y
+            ringTarget: V
           }
         })]
-      }) : q(), (0, r.jsxs)("div", {
+      }) : Y(), (0, r.jsxs)("div", {
         className: w.details,
         children: [u ? (0, r.jsx)(c.Heading, E(S({}, L), {
-          children: k
+          children: G
         })) : (0, r.jsx)(C, S({
-          applicationId: R,
+          applicationId: D,
           userId: t.id,
-          gameName: k
+          gameName: G
         }, L)), H ? (0, r.jsx)(A, {
-          text: G,
+          text: k,
           user: t,
           guildId: n,
           channelId: a,
           widgetType: s,
-          applicationId: R
+          applicationId: D
         }) : (0, r.jsx)(N, {
-          text: G,
+          text: k,
           user: t,
           guildId: n,
           channelId: a
-        }), (0, r.jsx)(j.Z, {
-          tags: B,
+        }), (0, r.jsx)(O.Z, {
+          tags: Z,
           isCurrentUser: F,
           widgetType: s,
-          applicationId: R,
+          applicationId: D,
           disableInteraction: u,
           className: w.tags
-        }), !u && (0, r.jsx)(_.Z, {
+        }), !u && (0, r.jsx)(x.Z, {
           className: w.socialProof,
-          applicationId: R,
+          applicationId: D,
           guildId: n,
           channelId: a
         })]
-      }), !u && F && (0, r.jsx)(x.Z, {
+      }), !u && F && (0, r.jsx)(j.Z, {
         game: o,
         widgetType: s,
         className: w.removeGameButton,
@@ -356,6 +358,6 @@ function Z(e) {
     index: null != d ? d : 0,
     widgetType: s,
     game: o,
-    children: X()
-  }) : X()
+    children: q()
+  }) : q()
 }

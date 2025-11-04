@@ -1,14 +1,13 @@
 /** Chunk was on 47793 **/
 /** chunk id: 190862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk296009 = require("./296009.js"),
   Chunk442837 = require("./442837.js"),
   Chunk314897 = require("./314897.js"),
   Chunk86419 = require("./86419.js"),
-  Chunk747101 = require("./747101.js"),
   Chunk556045 = require("./556045.js"),
   Chunk881410 = require("./881410.jsx"),
   Chunk985748 = require("./985748.jsx"),
@@ -18,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk272289 = require("./272289.jsx"),
   Chunk39642 = require("./39642.js");
 
-function y(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +36,7 @@ function y(e) {
   return e
 }
 
-function h(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -52,66 +51,59 @@ function h(e, t) {
   }
   return i
 }
-let v = e => {
+let h = e => {
     var {
       widget: t
-    } = e, n = h(e, ["widget"]);
+    } = e, n = y(e, ["widget"]);
     switch (t.type) {
       case i.l.FAVORITE_GAMES:
-        return (0, r.jsx)(f.Z, y({
+        return (0, r.jsx)(d.Z, b({
           widget: t
         }, n));
       case i.l.CURRENT_GAMES:
-        return (0, r.jsx)(d.Z, y({
+        return (0, r.jsx)(u.Z, b({
           widget: t
         }, n));
       case i.l.WANT_TO_PLAY_GAMES:
-        return (0, r.jsx)(p.Z, y({
+        return (0, r.jsx)(g.Z, b({
           widget: t
         }, n));
       case i.l.PLAYED_GAMES:
-        return (0, r.jsx)(g.Z, y({
+        return (0, r.jsx)(f.Z, b({
           widget: t
         }, n));
       default:
         return null
     }
   },
-  O = e => {
+  v = e => {
     var {
       widget: t,
       user: n,
       disableInteraction: i
-    } = e, d = h(e, ["widget", "user", "disableInteraction"]);
-    let f = (0, c.FX)(t),
-      {
-        shouldShowSuggestions: g,
-        handleDismissSuggestions: p
-      } = (0, s.h)(f),
-      O = (0, a.e7)([l.default], () => l.default.getId() === n.id),
-      j = O && !i && g,
-      x = (0, o.mR)(f),
-      _ = (0, o.Hy)(f, {
-        isCurrentUser: O
-      }),
-      P = (0, o.kQ)(f),
-      I = 1 === (0, o.Gv)(f.type);
-    return (0, r.jsx)(v, y({
-      widget: f,
+    } = e, u = y(e, ["widget", "user", "disableInteraction"]);
+    let {
+      shouldShowSuggestions: d,
+      handleDismissSuggestions: f
+    } = (0, c.h)(t), g = (0, a.e7)([l.default], () => l.default.getId() === n.id), v = g && !i && d, O = (0, o.mR)(t), j = (0, o.Hy)(t, {
+      isCurrentUser: g
+    }), x = (0, o.kQ)(t), _ = 1 === (0, o.Gv)(t.type);
+    return (0, r.jsx)(h, b({
+      widget: t,
       user: n,
       disableInteraction: i,
-      headerTitle: x,
-      headerSubtitle: _,
-      headerActionButtons: O && !I ? [(0, r.jsx)(u.yX, {
-        disabled: P,
-        widgetType: f.type,
-        widget: f
-      }, "".concat(f.type, "-browse-games-popout"))] : true,
-      trailingContent: j && (0, r.jsx)(m.Z, {
+      headerTitle: O,
+      headerSubtitle: j,
+      headerActionButtons: g && !_ ? [(0, r.jsx)(s.yX, {
+        disabled: x,
+        widgetType: t.type,
+        widget: t
+      }, "".concat(t.type, "-browse-games-popout"))] : true,
+      trailingContent: v && (0, r.jsx)(p.Z, {
         userId: n.id,
-        widgetType: f.type,
-        onDismiss: p,
-        className: b.suggestedGames
+        widgetType: t.type,
+        onDismiss: f,
+        className: m.suggestedGames
       })
-    }, d))
+    }, u))
   }
