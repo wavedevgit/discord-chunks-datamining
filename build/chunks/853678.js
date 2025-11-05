@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 853678, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => N
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./997841.js");
 var Chunk45792 = require("./45792.js"),
   Chunk782568 = require("./782568.js"),
@@ -26,8 +26,7 @@ var Chunk45792 = require("./45792.js"),
   Chunk674563 = require("./674563.js");
 let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
   S = new Set(["www.nytimes.com", "apps.apple.com", "play.google.com"]),
-  T = new Set(["p-ty8do4dje6.exmggames.com", "fortnitetrial.fortnite.com", "fn.gg", "geforcenow.com", "www.fortnite.com", "www.nvidia.com", "www.geforcenow.com"]),
-  N = new Map([
+  T = new Map([
     [Chunk674563.Vt, {
       trustedHosts: S,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
@@ -39,13 +38,9 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
     [Chunk674563.He, {
       trustedHosts: S,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
-    }],
-    [Chunk674563.Zs, {
-      trustedHosts: T,
-      trustedUntilEpochMs: new Date("2026-01-01T00:00:00").valueOf()
     }]
   ]),
-  j = {
+  N = {
     [Chunk981631.Etm.OPEN_EXTERNAL_LINK]: {
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.b_]
@@ -72,7 +67,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
           }
           let h = u.Z.getApplication(null == (o = t.application) ? true : o.id),
             _ = (0, c.p)(null == r ? true : r.location),
-            b = (null == h ? true : h.id) !== true ? N.get(h.id) : true;
+            b = (null == h ? true : h.id) !== true ? T.get(h.id) : true;
           if (true !== b && b.trustedUntilEpochMs >= Date.now() && b.trustedHosts.has(e.host)) return (0, i.Z)(a), p.default.track(y.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
             application_id: null == (d = t.application) ? true : d.id,
             url: a,
