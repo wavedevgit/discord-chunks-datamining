@@ -1,7 +1,7 @@
 /** Chunk was on 4093 **/
 /** chunk id: 586290, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,7 +10,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk392711 = require("./392711.js"),
   c = require.n(Chunk392711),
   Chunk856901 = require("./856901.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk670863 = require("./670863.jsx"),
   Chunk72897 = require("./72897.js"),
@@ -22,54 +21,56 @@ var Chunk951288 = require("./951288.js"),
   Chunk542257 = require("./542257.js"),
   Chunk197571 = require("./197571.js");
 
-function S(e) {
+function Z(e) {
   let {
     selectedSource: n,
     onChangeVideoDeviceSource: t,
     onChangeAudioDevice: i
   } = e;
   s()(null != n, "Camera capture device cannot be null");
-  let a = (0, h.Z)(),
-    [S, N] = (0, x.Ls)(j.h7.AUDIO_INPUT, {
+  let a = (0, g.Z)(),
+    [Z, N] = (0, m.Ls)(h.h7.AUDIO_INPUT, {
       location: "CaptureDeviceConfig"
     }),
-    C = S.concat(N),
-    [b, T] = r.useState(function(e, n, t) {
+    S = Z.concat(N),
+    [b, C] = r.useState(function(e, n, t) {
       var l;
       let r = n.find(n => n.id === e);
       if (null == r) return null;
       let i = c().reduce(t, (e, n) => (0, o.stringSimilarity)(r.name, n.name) > (0, o.stringSimilarity)(r.name, e.name) ? n : e);
       return null != (l = null == i ? true : i.id) ? l : null
-    }(n.id, a, C));
+    }(n.id, a, S));
   return null != b && i(b), (0, l.jsxs)("div", {
-    className: f.modalContent,
-    children: [(0, l.jsx)(d.Heading, {
+    className: p.modalContent,
+    children: [(0, l.jsx)(u.Heading, {
       variant: "heading-md/semibold",
-      className: f.formItemTitle,
+      className: p.formItemTitle,
       children: "Capture Device"
-    }), (0, l.jsxs)(d.Kqy, {
+    }), (0, l.jsxs)(u.Kqy, {
       gap: 8,
       children: [(0, l.jsx)("div", {
-        className: Z.marginTop8,
-        children: (0, l.jsxs)(g.Z, {
+        className: f.marginTop8,
+        children: (0, l.jsxs)(x.Z, {
           children: [(0, l.jsx)("span", {
             className: v.ellipsisText,
             children: n.name
-          }), (0, l.jsx)(u.zx, {
+          }), (0, l.jsx)("div", {
             className: v.changeButton,
-            color: u.zx.Colors.PRIMARY,
-            size: u.zx.Sizes.SMALL,
-            onClick: t,
-            children: p.intl.string(p.t.GEgsA4)
+            children: (0, l.jsx)(u.Button, {
+              size: "sm",
+              variant: "secondary",
+              onClick: t,
+              text: j.intl.string(j.t.GEgsA4)
+            })
           })]
         })
-      }), (0, l.jsx)(m.j, {
-        label: p.intl.string(p.t.y4ooer),
-        deviceType: j.h7.AUDIO_INPUT,
+      }), (0, l.jsx)(d.j, {
+        label: j.intl.string(j.t.y4ooer),
+        deviceType: h.h7.AUDIO_INPUT,
         location: "CaptureDeviceConfig",
-        className: Z.__invalid_marginaTop8,
+        className: f.__invalid_marginaTop8,
         selectedDeviceId: b,
-        onSelectDevice: e => (T(e), i(e), false)
+        onSelectDevice: e => (C(e), i(e), false)
       })]
     })]
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 4093 **/
 /** chunk id: 122186, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => S,
+  Z: () => N,
   c: () => Z
 });
 var Chunk951288 = require("./951288.js"),
@@ -43,9 +43,9 @@ function f(e) {
     a = r.useCallback(() => {
       if (null != i) {
         var e;
-        return null != (e = (0, g.fr)(i, j.Si.TIER_2)) ? e : p.intl.string(p.t.Y2WKTl)
+        return null != (e = (0, g.fr)(i, j.Si.TIER_2)) ? e : v.intl.string(v.t.Y2WKTl)
       }
-      return p.intl.string(p.t.Y2WKTl)
+      return v.intl.string(v.t.Y2WKTl)
     }, [i]);
   return (0, l.jsx)(x.Z, function(e) {
     for (var n = 1; n < arguments.length; n++) {
@@ -65,8 +65,8 @@ function f(e) {
     }
     return e
   }({
-    className: s()(v.enhancedCTA, v.ctaGradientBackground),
-    iconClassName: v.premiumIcon,
+    className: s()(p.enhancedCTA, p.ctaGradientBackground),
+    iconClassName: p.premiumIcon,
     subscriptionTier: j.Si.TIER_2,
     textOptions: {
       textOverride: a()
@@ -98,7 +98,7 @@ function Z() {
   })
 }
 
-function S(e) {
+function N(e) {
   let {
     message: n,
     onClose: t,
@@ -110,18 +110,18 @@ function S(e) {
     objectType: h.AnalyticsObjectTypes.BUY
   };
   return (0, l.jsxs)("div", {
-    className: s()(v.upsellBanner, v.enhancedBanner, {
-      [v.gradientGlow]: i
+    className: s()(p.upsellBanner, p.enhancedBanner, {
+      [p.gradientGlow]: i
     }),
     children: [(0, l.jsxs)("div", {
-      className: v.iconTextContainer,
+      className: p.iconTextContainer,
       children: [(0, l.jsx)(o.SrA, {
         size: "md",
         color: d.JX.PREMIUM_TIER_2
       }), (0, l.jsx)(o.Text, {
         variant: "text-sm/medium",
-        className: s()(v.upsellText, v.enhancedUpsellText),
-        children: null != n ? n : p.intl.format(p.t["L/zCto"], {
+        className: s()(p.upsellText, p.enhancedUpsellText),
+        children: null != n ? n : v.intl.format(v.t["L/zCto"], {
           onClick: () => r({
             analyticsLocation: a,
             onClose: t
@@ -129,7 +129,7 @@ function S(e) {
         })
       })]
     }), (0, l.jsx)("div", {
-      className: v.enhancedCTAs,
+      className: p.enhancedCTAs,
       children: (0, l.jsx)(f, {
         location: a
       })

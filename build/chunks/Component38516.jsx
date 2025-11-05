@@ -1,12 +1,12 @@
 /** Chunk was on 89311 **/
 /** chunk id: 38516, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 }), require("./415506.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk643872 = require("./643872.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -16,31 +16,31 @@ var Chunk120356 = require("./120356.js"),
   Chunk803351 = require("./803351.js");
 let f = [Chunk643872.p.OFFICIAL, Chunk643872.p.TWITTER, Chunk643872.p.YOUTUBE];
 
-function p(e) {
+function g(e) {
   let {
     website: t,
     trackClick: n
   } = e, {
-    action: i,
-    icon: l,
+    action: l,
+    icon: r,
     title: u
   } = function(e) {
     switch (e.category) {
       case a.p.OFFICIAL:
         return {
-          icon: (0, r.jsx)(o.enf, {
+          icon: (0, i.jsx)(o.enf, {
             colorClass: m.linkIcon
           }), action: c.as.WebsiteLink, title: d.intl.string(d.t.fOUKvg)
         };
       case a.p.TWITTER:
         return {
-          icon: (0, r.jsx)(o.TAi, {
+          icon: (0, i.jsx)(o.TAi, {
             colorClass: m.linkIcon
           }), action: c.as.XLink, title: d.intl.string(d.t.INic4y)
         };
       case a.p.YOUTUBE:
         return {
-          action: c.as.YouTubeLink, icon: (0, r.jsx)(o.$5w, {
+          action: c.as.YouTubeLink, icon: (0, i.jsx)(o.$5w, {
             colorClass: m.linkIcon
           }), title: d.intl.string(d.t.lNmxbE)
         };
@@ -48,41 +48,41 @@ function p(e) {
         throw Error("Unknown IGDB website category")
     }
   }(t);
-  return (0, r.jsx)(s.u, {
+  return (0, i.jsx)(s.u, {
     __unsupportedReactNodeAsText: t.url,
-    children: (0, r.jsx)(o.Anchor, {
+    children: (0, i.jsx)(o.Anchor, {
       onClick: () => {
-        n(i)
+        n(l)
       },
       className: m.linkAnchor,
       title: u,
       href: t.url,
       target: "_blank",
-      children: l
+      children: r
     })
   })
 }
-let g = function(e) {
+let p = function(e) {
   let {
     detectedGame: t,
     trackClick: n
   } = e;
   if (null == t.websites) return null;
-  let i = t.websites.filter(e => {
+  let l = t.websites.filter(e => {
     let {
       category: t
     } = e;
     return f.includes(t)
   }).sort((e, t) => e.category - t.category);
-  return 0 === i.length ? null : (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(o.Heading, {
+  return 0 === l.length ? null : (0, i.jsxs)("div", {
+    children: [(0, i.jsx)(o.Heading, {
       className: u.sectionHeader,
       variant: "text-xs/semibold",
       color: "header-secondary",
       children: d.intl.string(d.t["Oj3o1/"])
-    }), (0, r.jsx)("div", {
-      className: l()(u.row, u.gapMd),
-      children: i.map(e => (0, r.jsx)(p, {
+    }), (0, i.jsx)("div", {
+      className: r()(u.row, u.gapMd),
+      children: l.map(e => (0, i.jsx)(g, {
         website: e,
         trackClick: n
       }, e.url))

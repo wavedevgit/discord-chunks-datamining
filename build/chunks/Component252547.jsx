@@ -18,42 +18,42 @@ function f(e) {
   let {
     entries: t,
     viewId: n,
-    officialGuildId: l,
+    officialGuildId: r,
     onClose: f
-  } = e, p = t.length > 7, [g, x] = i.useState(false), h = i.useMemo(() => t.slice(0, p && !g ? 6 : true), [t, p, g]);
-  return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(s.X6q, {
+  } = e, g = t.length > 7, [p, x] = l.useState(false), h = l.useMemo(() => t.slice(0, g && !p ? 6 : true), [t, g, p]);
+  return (0, i.jsxs)("div", {
+    children: [(0, i.jsx)(s.X6q, {
       className: u.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
       children: d.intl.string(d.t.ak8OHk)
-    }), 0 === t.length ? (0, r.jsx)(s.xvT, {
+    }), 0 === t.length ? (0, i.jsx)(s.xvT, {
       variant: "text-xs/semibold",
       color: "text-primary",
       className: m.emptyState,
       children: d.intl.string(d.t.R5fYVO)
-    }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)("div", {
+    }) : (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsx)("div", {
         className: a()(m.friends, {
-          [m.fadedEntries]: p && !g
+          [m.fadedEntries]: g && !p
         }),
-        children: (0, r.jsx)("div", {
+        children: (0, i.jsx)("div", {
           className: u.column,
-          children: h.map(e => (0, r.jsx)(c.Z, {
+          children: h.map(e => (0, i.jsx)(c.Z, {
             entry: e,
             viewId: n,
             onClose: f,
-            officialGuildId: l
+            officialGuildId: r
           }, e.id))
         })
-      }), p && !g && (0, r.jsxs)(o.P3F, {
+      }), g && !p && (0, i.jsxs)(o.P3F, {
         className: m.expandEntriesButton,
         onClick: () => x(true),
-        children: [(0, r.jsx)(s.xvT, {
+        children: [(0, i.jsx)(s.xvT, {
           variant: "text-xs/semibold",
           color: "interactive-normal",
           children: d.intl.string(d.t.yohc6E)
-        }), (0, r.jsx)(o.CJ0, {
+        }), (0, i.jsx)(o.CJ0, {
           size: "xs"
         })]
       })]

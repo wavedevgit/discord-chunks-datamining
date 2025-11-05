@@ -1,7 +1,7 @@
 /** Chunk was on 94072 **/
 /** chunk id: 851397, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,24 +9,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk835473 = require("./835473.js"),
-  Chunk703656 = require("./703656.js"),
   Chunk892001 = require("./892001.js"),
   Chunk688192 = require("./688192.jsx"),
   Chunk89196 = require("./89196.js"),
   Chunk51144 = require("./51144.js"),
+  Chunk436585 = require("./436585.jsx"),
   Chunk594914 = require("./594914.jsx"),
   Chunk848118 = require("./848118.jsx"),
-  Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk63602 = require("./63602.js");
 
-function j(e) {
+function y(e) {
   var t, r, {
-      profileOwner: j,
-      showIcons: h = false
+      profileOwner: y,
+      showIcons: j = false
     } = e,
-    P = function(e, t) {
+    h = function(e, t) {
       if (null == e) return {};
       var r, n, i = function(e, t) {
         if (null == e) return {};
@@ -42,24 +41,29 @@ function j(e) {
       return i
     }(e, ["profileOwner", "showIcons"]);
   let {
-    item: S,
-    isOwner: v,
-    giftingOrigin: w = g.Wt.USER_PROFILE_WISHLIST
-  } = P, k = S.sku, x = k.applicationId, C = (0, a.q)(x), E = i.useRef(null), [N] = (0, l.Wu)([d.Z], () => [d.Z.hasSentGift(S.skuId, j.id)], [S.skuId, j.id]), T = S.skuName, Z = v ? I.intl.string(I.t.FdGl5A) : I.intl.string(I.t.ilhtIa), L = v ? true : o.OgN, R = i.useCallback(() => {
-    if (v && (null == C ? true : C.guildId) != null)(0, u.closeUserProfileModal)(), (0, c.uL)(m.Z5c.CHANNELS_GAME_SHOP(C.guildId, 0, S.skuId, k.slug));
+    item: P,
+    isOwner: S,
+    giftingOrigin: v = m.Wt.USER_PROFILE_WISHLIST
+  } = h, w = P.sku, k = w.applicationId, x = (0, a.q)(k), C = i.useRef(null), [E] = (0, l.Wu)([f.Z], () => [f.Z.hasSentGift(P.skuId, y.id)], [P.skuId, y.id]), N = P.skuName, T = S ? g.intl.string(g.t.FdGl5A) : g.intl.string(g.t.ilhtIa), Z = S ? true : o.OgN, L = i.useCallback(() => {
+    if (S && (null == x ? true : x.guildId) != null)(0, c.closeUserProfileModal)(), (0, O.g)({
+      skuId: w.id,
+      applicationId: x.id,
+      guildId: x.guildId,
+      isStorefront: false
+    });
     else {
-      if (N) return;
-      (0, b.P)(k, {
+      if (E) return;
+      (0, p.P)(w, {
         isGift: true,
-        giftRecipient: j,
-        giftingOrigin: w
+        giftRecipient: y,
+        giftingOrigin: v
       })
     }
-  }, [v, null == C ? true : C.guildId, S.skuId, k, N, j, w]), _ = i.useCallback(() => h ? (0, n.jsx)("div", {
-    className: y.itemIcon,
+  }, [S, x, E, w, y, v]), R = i.useCallback(() => j ? (0, n.jsx)("div", {
+    className: I.itemIcon,
     children: (0, n.jsx)(s.u, {
-      text: I.intl.formatToPlainString(I.t.p3RmJF, {
-        username: O.ZP.getName(j)
+      text: g.intl.formatToPlainString(g.t.p3RmJF, {
+        username: d.ZP.getName(y)
       }),
       position: "top",
       children: (0, n.jsx)(o.h_8, {
@@ -67,17 +71,17 @@ function j(e) {
         width: 20,
         height: 20,
         color: "currentColor",
-        colorClass: y.itemIconHeart
+        colorClass: I.itemIconHeart
       })
     })
-  }) : null, [h, j]), A = i.useCallback(() => (0, n.jsx)(p.A, {
+  }) : null, [j, y]), _ = i.useCallback(() => (0, n.jsx)(b.A, {
     shape: "custom",
-    containerClassName: y.card,
-    backgroundImageClassName: y.cardBackgroundImage,
-    foregroundImageClassName: y.cardImage,
-    sku: k
-  }), [k]);
-  return (0, n.jsx)(f.Z, (t = function(e) {
+    containerClassName: I.card,
+    backgroundImageClassName: I.cardBackgroundImage,
+    foregroundImageClassName: I.cardImage,
+    sku: w
+  }), [w]);
+  return (0, n.jsx)(u.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -94,15 +98,15 @@ function j(e) {
       })
     }
     return e
-  }({}, P), r = r = {
-    cardRef: E,
-    accessibleLabel: T,
-    onCardClick: R,
-    buttonCTALabel: Z,
-    buttonIcon: L,
-    isOwned: N,
-    renderItemPreview: A,
-    renderSourceIcon: _
+  }({}, h), r = r = {
+    cardRef: C,
+    accessibleLabel: N,
+    onCardClick: L,
+    buttonCTALabel: T,
+    buttonIcon: Z,
+    isOwned: E,
+    renderItemPreview: _,
+    renderSourceIcon: R
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

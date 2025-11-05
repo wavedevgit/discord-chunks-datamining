@@ -2,7 +2,7 @@
 /** chunk id: 835255, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   BO: () => _,
-  ZP: () => A,
+  ZP: () => G,
   w_: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -110,7 +110,7 @@ function _(e) {
   })
 }
 
-function A(e) {
+function G(e) {
   var t, r, {
       profileOwner: l,
       showIcons: s = false,
@@ -134,36 +134,36 @@ function A(e) {
       return i
     }(e, ["profileOwner", "showIcons", "source", "giftingOrigin", "onWishlistItemClick"]);
   let {
-    item: A,
-    isOwner: G
+    item: G,
+    isOwner: A
   } = _, {
     analyticsLocations: F
-  } = (0, b.ZP)(), D = (0, o.TH)(), W = i.useRef(null), {
+  } = (0, p.ZP)(), D = (0, o.TH)(), W = i.useRef(null), {
     isHoveringOrFocusing: H
-  } = (0, I.Z)(W), [M] = (0, u.Wu)([h.Z], () => [h.Z.hasSentGift(A.skuId, l.id)], [A.skuId, l.id]), U = M || true === A.isOwned, z = A.collectiblesItem.type, q = (() => {
+  } = (0, I.Z)(W), [M] = (0, u.Wu)([h.Z], () => [h.Z.hasSentGift(G.skuId, l.id)], [G.skuId, l.id]), U = M || true === G.isOwned, z = G.collectiblesItem.type, q = (() => {
     switch (z) {
       case a.Z.AVATAR_DECORATION:
         return N.intl.formatToPlainString(N.t.IQQYef, {
-          itemName: A.skuName
+          itemName: G.skuName
         });
       case a.Z.PROFILE_EFFECT:
         return N.intl.formatToPlainString(N.t["x/MGWy"], {
-          itemName: A.skuName
+          itemName: G.skuName
         });
       case a.Z.NAMEPLATE:
         return N.intl.formatToPlainString(N.t.eVNt6E, {
-          itemName: A.skuName
+          itemName: G.skuName
         });
       default:
         (0, S.vE)(z)
     }
-  })(), B = G || U ? N.intl.string(N.t.FdGl5A) : N.intl.string(N.t.ilhtIa), V = G || U ? true : d.OgN, Y = i.useCallback(() => {
+  })(), B = A || U ? N.intl.string(N.t.FdGl5A) : N.intl.string(N.t.ilhtIa), V = A || U ? true : d.OgN, Y = i.useCallback(() => {
     let e = D.pathname.startsWith(C.Z5c.COLLECTIBLES_SHOP);
-    if (G || U) {
-      let t = !G && U;
+    if (A || U) {
+      let t = !A && U;
       if (e) {
-        let e = p.Z.getProduct(A.skuId),
-          r = p.Z.getCategoryForProduct(A.skuId);
+        let e = b.Z.getProduct(G.skuId),
+          r = b.Z.getCategoryForProduct(G.skuId);
         if (null != e && null != r) {
           t || (0, w.closeUserProfileModal)(), (0, m.T)({
             product: e,
@@ -179,16 +179,16 @@ function A(e) {
           return
         }
       }
-      t || (0, w.closeUserProfileModal)(), (0, j.uL)("".concat(C.Z5c.COLLECTIBLES_SHOP, "#itemSkuId=").concat(A.skuId))
+      t || (0, w.closeUserProfileModal)(), (0, j.uL)("".concat(C.Z5c.COLLECTIBLES_SHOP, "#itemSkuId=").concat(G.skuId))
     } else null == R || R(), (0, y.Z)({
-      skuId: A.skuId,
+      skuId: G.skuId,
       isGift: true,
       giftingOrigin: L,
       analyticsLocations: F,
       giftRecipient: l,
       variantsReturnStyle: c.v.VARIANTS_GROUP
     })
-  }, [D.pathname, A.skuId, F, G, U, l, L, R]), Q = i.useCallback(() => s ? Z === P.lr.WISHLIST ? (0, n.jsx)("div", {
+  }, [D.pathname, G.skuId, F, A, U, l, L, R]), Q = i.useCallback(() => s ? Z === P.lr.WISHLIST ? (0, n.jsx)("div", {
     className: T.itemIcon,
     children: (0, n.jsx)(f.u, {
       text: N.intl.formatToPlainString(N.t.p3RmJF, {
@@ -217,11 +217,11 @@ function A(e) {
       })
     })
   }) : null : null, [s, Z, l]), J = i.useCallback(() => (0, n.jsx)(k.Z, {
-    item: A,
+    item: G,
     profileOwner: l,
     isHighlighted: H,
     surface: _.surface
-  }), [A, l, H, _.surface]);
+  }), [G, l, H, _.surface]);
   return (0, n.jsx)(x.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},

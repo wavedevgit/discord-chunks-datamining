@@ -22,44 +22,44 @@ function h(e) {
   let {
     detectedGame: t,
     trackAction: n
-  } = e, [l, h] = i.useState((null == t ? true : t.summaryLocalized) != null), [j, v] = i.useState(true), [O, y] = i.useState(false), I = i.useRef(null), {
+  } = e, [r, h] = l.useState((null == t ? true : t.summaryLocalized) != null), [v, j] = l.useState(true), [O, y] = l.useState(false), I = l.useRef(null), {
     width: b,
     height: E
   } = (0, u.Z)();
-  return (i.useEffect(() => {
+  return (l.useEffect(() => {
     let e = I.current;
-    null != e && y(e.scrollHeight - e.clientHeight > 1 || !j)
-  }, [I, b, E, j]), null == t.summary) ? null : (0, r.jsxs)("div", {
-    className: a()(g.column, g.gapMd),
-    children: [null != t.summaryLocalized && (0, r.jsxs)("div", {
-      className: a()(g.row, g.gapSm),
-      children: [(0, r.jsx)(s.SxY, {
+    null != e && y(e.scrollHeight - e.clientHeight > 1 || !v)
+  }, [I, b, E, v]), null == t.summary) ? null : (0, i.jsxs)("div", {
+    className: a()(p.column, p.gapMd),
+    children: [null != t.summaryLocalized && (0, i.jsxs)("div", {
+      className: a()(p.row, p.gapSm),
+      children: [(0, i.jsx)(s.SxY, {
         color: c.Z.colors.HEADER_SECONDARY,
         size: "xs"
-      }), (0, r.jsx)(o.xvT, {
+      }), (0, i.jsx)(o.xvT, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: l ? p.intl.format(p.t.aZ2iIp, {
+        children: r ? g.intl.format(g.t.aZ2iIp, {
           onShowOriginal: () => h(false)
-        }) : p.intl.format(p.t["/2ylF4"], {
+        }) : g.intl.format(g.t["/2ylF4"], {
           onShowTranslated: () => h(true)
         })
       })]
-    }), (0, r.jsx)(o.xvT, {
+    }), (0, i.jsx)(o.xvT, {
       ref: I,
-      lineClamp: j ? 8 : true,
+      lineClamp: v ? 8 : true,
       variant: "text-sm/normal",
-      children: l ? t.summaryLocalized : t.summary
-    }), O && (0, r.jsx)(d.P3F, {
-      className: g.clickable,
+      children: r ? t.summaryLocalized : t.summary
+    }), O && (0, i.jsx)(d.P3F, {
+      className: p.clickable,
       onClick: () => {
-        n(j ? m.as.ShowMore : m.as.ShowLess), v(!j)
+        n(v ? m.as.ShowMore : m.as.ShowLess), j(!v)
       },
-      children: (0, r.jsx)(o.xvT, {
+      children: (0, i.jsx)(o.xvT, {
         variant: "text-sm/semibold",
-        children: j ? p.intl.string(p.t.lBeKY2) : p.intl.string(p.t["6MwJo/"])
+        children: v ? g.intl.string(g.t.lBeKY2) : g.intl.string(g.t["6MwJo/"])
       })
-    }), (0, r.jsx)(f.Z, {
+    }), (0, i.jsx)(f.Z, {
       className: x.platforms,
       detectedGame: t
     })]

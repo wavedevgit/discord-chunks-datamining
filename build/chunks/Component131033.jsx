@@ -13,13 +13,13 @@ function s(e) {
   let {
     detectedGame: t
   } = e;
-  return 0 === t.publishers.length ? null : (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(i.X6q, {
+  return 0 === t.publishers.length ? null : (0, i.jsxs)("div", {
+    children: [(0, i.jsx)(l.X6q, {
       className: a.sectionHeader,
       variant: "text-xs/semibold",
       color: "header-secondary",
-      children: l.intl.string(l.t["4Byy/G"])
-    }), (0, r.jsx)(i.xvT, {
+      children: r.intl.string(r.t["4Byy/G"])
+    }), (0, i.jsx)(l.xvT, {
       variant: "text-sm/normal",
       children: t.publishers.join(", ")
     })]

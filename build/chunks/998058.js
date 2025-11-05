@@ -10,16 +10,16 @@ var Chunk544891 = require("./544891.js"),
 let s = async e => {
   try {
     var t;
-    let n = (null != (t = (await r.tn.get({
+    let n = (null != (t = (await i.tn.get({
       url: a.ANM.SIMILAR_GAMES(e),
       rejectWithError: false
     })).body.similar_games) ? t : []).filter(t => t !== e);
-    i.Z.dispatch({
+    l.Z.dispatch({
       type: "GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS",
       applicationId: e,
       games: n
     })
   } catch (e) {
-    throw new l.Hx(e)
+    throw new r.Hx(e)
   }
 }

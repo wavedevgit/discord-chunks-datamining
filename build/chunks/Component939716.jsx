@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk925962 = require("./925962.js");
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -54,9 +54,9 @@ function x() {
 let v = 747,
   I = e => {
     var t, n;
-    return (0, g.lV)((t = f({}, e), n = n = {
-      className: b.videoWrapper,
-      mediaPlayerClassName: b.mediaPlayer
+    return (0, g.lV)((t = _({}, e), n = n = {
+      className: f.videoWrapper,
+      mediaPlayerClassName: f.mediaPlayer
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -68,7 +68,7 @@ let v = 747,
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   },
-  j = e => (0, a.jsx)(h.ZP, f({}, e));
+  j = e => (0, a.jsx)(h.ZP, _({}, e));
 
 function P(e) {
   let {
@@ -97,7 +97,7 @@ function P(e) {
     onPlay: n,
     onEnded: r,
     playable: i,
-    className: b.video,
+    className: f.video,
     volume: 1,
     autoMute: true,
     autoPlay: i,
@@ -106,7 +106,7 @@ function P(e) {
     renderLinkComponent: g.iT
   });
   return i ? o : (0, a.jsx)(s.P3F, {
-    className: b.itemImageWrapper,
+    className: f.itemImageWrapper,
     onClick: l,
     children: o
   })
@@ -118,7 +118,7 @@ let k = (0, Chunk112724.Z)(e => {
     paused: l = false,
     autoplayInterval: c = 8e3,
     onItemChange: u
-  } = e, [h, g] = (0, r.useState)(0), f = (0, r.useRef)(0), I = (0, r.useRef)(t.length), [j, k] = (0, r.useState)(true), [S, y] = (0, r.useState)(false), [N, w] = (0, r.useState)(false), [E, O] = (0, r.useState)(false), [R, L] = (0, r.useState)(false), Z = (0, r.useCallback)((e, n) => {
+  } = e, [h, g] = (0, r.useState)(0), _ = (0, r.useRef)(0), I = (0, r.useRef)(t.length), [j, k] = (0, r.useState)(true), [S, y] = (0, r.useState)(false), [w, N] = (0, r.useState)(false), [O, E] = (0, r.useState)(false), [R, Z] = (0, r.useState)(false), L = (0, r.useCallback)((e, n) => {
     var a;
     let r = null == (a = t[e]) ? true : a.backgroundSrc,
       l = n.interpolate({
@@ -140,50 +140,50 @@ let k = (0, Chunk112724.Z)(e => {
     }
   }, [t]), B = (0, r.useCallback)(function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-    y(false), w(t);
+    y(false), N(t);
     let n = I.current,
-      a = (0, p.gN)(f.current, n),
+      a = (0, p.gN)(_.current, n),
       r = (0, p.gN)(e, n);
-    f.current = r, g(r), k(1 === Math.abs(r - a) || r === n - 1 && 0 === a || 0 === r && a === n - 1)
-  }, []), A = (0, r.useCallback)(() => {
-    B(f.current + 1, false)
-  }, [B]), T = (0, r.useCallback)(() => {
-    B(f.current + 1)
+    _.current = r, g(r), k(1 === Math.abs(r - a) || r === n - 1 && 0 === a || 0 === r && a === n - 1)
+  }, []), T = (0, r.useCallback)(() => {
+    B(_.current + 1, false)
   }, [B]), W = (0, r.useCallback)(() => {
-    B(f.current - 1)
+    B(_.current + 1)
+  }, [B]), A = (0, r.useCallback)(() => {
+    B(_.current - 1)
   }, [B]), H = (0, r.useCallback)(e => {
-    y(true), w(!e)
+    y(true), N(!e)
   }, []), D = (0, r.useCallback)(() => {
-    N || A()
-  }, [N, A]), z = (0, r.useCallback)(e => {
-    let t = f.current;
-    e < t ? O(true) : e > t && L(true)
+    w || T()
+  }, [w, T]), z = (0, r.useCallback)(e => {
+    let t = _.current;
+    e < t ? E(true) : e > t && Z(true)
   }, []), F = (0, r.useCallback)(() => {
-    O(false), L(false)
-  }, []), M = (0, r.useCallback)((e, t, n) => n ? (0, a.jsx)(s.P3F, {
-    onClick: () => w(true),
-    className: b.itemImageWrapper,
+    E(false), Z(false)
+  }, []), Q = (0, r.useCallback)((e, t, n) => n ? (0, a.jsx)(s.P3F, {
+    onClick: () => N(true),
+    className: f.itemImageWrapper,
     children: (0, a.jsx)("img", {
       src: e.src,
       alt: "",
-      className: b.currentImage
+      className: f.currentImage
     })
   }) : (0, a.jsx)(s.P3F, {
     onClick: () => B(t),
-    className: b.itemImageWrapper,
+    className: f.itemImageWrapper,
     children: (0, a.jsx)("img", {
       alt: "",
-      className: b.itemImage,
+      className: f.itemImage,
       src: e.src,
       draggable: false
     })
-  }), [B]), Q = (0, r.useCallback)((e, n, r) => {
+  }), [B]), U = (0, r.useCallback)((e, n, r) => {
     let l = n === (0, p.gN)(h, t.length);
     return (0, a.jsx)(o.Z.div, {
-      className: i()(b.item, {
-        [b.currentItem]: l
+      className: i()(f.item, {
+        [f.currentItem]: l
       }),
-      style: null != r ? Z(n, r) : null,
+      style: null != r ? L(n, r) : null,
       onMouseEnter: l ? null : () => z(n),
       onMouseLeave: l ? null : F,
       children: "video" === e.type ? (0, a.jsx)(P, {
@@ -192,68 +192,68 @@ let k = (0, Chunk112724.Z)(e => {
         onEnded: D,
         playable: l,
         onClick: () => B(n)
-      }) : M(e, n, l)
+      }) : Q(e, n, l)
     })
-  }, [h, t.length, Z, z, F, H, D, B, M]), U = (0, r.useCallback)(() => {
+  }, [h, t.length, L, z, F, H, D, B, Q]), M = (0, r.useCallback)(() => {
     let e = (0, a.jsx)(p.ZP, {
-      className: b.carousel,
+      className: f.carousel,
       items: t,
       itemSize: {
         width: v,
         margin: 12
       },
-      renderItem: Q,
+      renderItem: U,
       currentIndex: h,
       animate: j,
       edgeItems: 2
     });
     return t.length <= 1 ? e : (0, a.jsxs)("div", {
-      className: b.carouselButtonsContainer,
+      className: f.carouselButtonsContainer,
       children: [e, (0, a.jsx)(m.am, {
-        onClick: W,
-        className: i()(b.arrow, {
-          [b.arrowHovered]: E
+        onClick: A,
+        className: i()(f.arrow, {
+          [f.arrowHovered]: O
         })
       }), (0, a.jsx)(m.Pz, {
-        onClick: T,
-        className: i()(b.arrow, {
-          [b.arrowHovered]: R
+        onClick: W,
+        className: i()(f.arrow, {
+          [f.arrowHovered]: R
         })
       })]
     })
-  }, [t, Q, h, j, W, T, E, R]), G = (0, r.useCallback)((e, t) => {
+  }, [t, U, h, j, A, W, O, R]), G = (0, r.useCallback)((e, t) => {
     let n = h === t;
     return (0, a.jsx)("div", {
-      className: i()(b.paginationItem, n ? b.selectedStorePaginationItem : b.unselectedStorePaginationItem),
+      className: i()(f.paginationItem, n ? f.selectedStorePaginationItem : f.unselectedStorePaginationItem),
       children: (0, a.jsx)("img", {
         alt: "",
-        className: b.storePaginationImg,
+        className: f.storePaginationImg,
         src: null != e.thumbnailSrc ? e.thumbnailSrc : "image" === e.type ? e.src : "video" === e.type ? e.videoThumbnailSrc : true,
         draggable: false
       })
     }, "page-".concat(t))
   }, [h]);
-  return (0, r.useEffect)(() => (C.S.subscribe(_.CkL.CAROUSEL_PREV, W), C.S.subscribe(_.CkL.CAROUSEL_NEXT, T), () => {
-    C.S.unsubscribe(_.CkL.CAROUSEL_PREV, W), C.S.unsubscribe(_.CkL.CAROUSEL_NEXT, T)
-  }), [W, T]), (0, r.useEffect)(() => {
+  return (0, r.useEffect)(() => (C.S.subscribe(b.CkL.CAROUSEL_PREV, A), C.S.subscribe(b.CkL.CAROUSEL_NEXT, W), () => {
+    C.S.unsubscribe(b.CkL.CAROUSEL_PREV, A), C.S.unsubscribe(b.CkL.CAROUSEL_NEXT, W)
+  }), [A, W]), (0, r.useEffect)(() => {
     I.current = t.length
   }, [t]), (0, r.useEffect)(() => {
     null == u || u(t[h], h)
   }, [h, t, u]), (0, a.jsxs)(d.Z, {
     pauseOnHover: true,
-    onInterval: A,
+    onInterval: T,
     interval: c,
     className: n,
-    disable: S || N || l,
-    children: [U(), (0, a.jsx)("div", {
-      className: b.pagination,
+    disable: S || w || l,
+    children: [M(), (0, a.jsx)("div", {
+      className: f.pagination,
       children: (0, a.jsx)(m.ZP, {
         renderItem: G,
         scrollToPadding: 40,
         items: t,
         selectedIndex: h,
         onSetItem: B,
-        paginationContainerClass: b.scroller,
+        paginationContainerClass: f.scroller,
         align: m.ZP.Align.CENTER
       })
     })]
