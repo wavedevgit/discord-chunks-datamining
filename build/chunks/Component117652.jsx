@@ -120,12 +120,12 @@ function k(e) {
     k(true), null != g && b(), await (0, c.B1)(e.id, t) || b(P.intl.string(P.t["4kgVqQ"])), k(false)
   };
   (0, o.ZP)(() => {
-    null != B && null != x && (v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != B && null != x && (M !== R.Wt.DM_CHANNEL_WISHLIST && v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: B
     }), Q(x, B))
   });
   let J = e => {
-      v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+      M !== R.Wt.DM_CHANNEL_WISHLIST && v.default.track(N.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
       }), null != x && Q(x, e), Z(e)
     },

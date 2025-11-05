@@ -24,7 +24,7 @@ function p(e) {
     className: p
   } = e, {
     analyticsLocations: O
-  } = (0, o.ZP)(), g = async () => {
+  } = (0, o.ZP)(), I = async () => {
     try {
       await c.Z.removeSkuFromWishlist(r, t.skuId, O)
     } catch (e) {
@@ -34,7 +34,7 @@ function p(e) {
   return (0, n.jsx)(s.u, {
     text: f.intl.string(f.t.jTW016),
     children: (0, n.jsx)(a.P3F, {
-      onClick: g,
+      onClick: I,
       "aria-label": f.intl.string(f.t.jTW016),
       className: l()(p, m.clickable),
       children: (0, n.jsx)(a.XHJ, {

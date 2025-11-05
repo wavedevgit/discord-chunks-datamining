@@ -2,12 +2,13 @@
 /** chunk id: 170401, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
-}), require("./388685.js"), require("./539854.js");
+  Z: () => u
+}), require("./388685.js"), require("./539854.js"), require("./781311.js"), require("./35282.js");
 var Chunk658722 = require("./658722.js"),
-  i = require.n(Chunk658722);
+  i = require.n(Chunk658722),
+  Chunk697497 = require("./697497.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,14 +16,17 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+let s = 1,
+  l = .95,
+  c = .8;
+class u {
   search(e) {
     return new Promise(t => {
       t(this.getMatchingSettings(e))
     })
   }
   getMatchingSettings(e) {
-    let t = this.cache[e];
+    let t = this.cache.get(e);
     if (null != t) return t;
     {
       let t = [];
@@ -33,10 +37,42 @@ class o {
             t.push(r);
             break
           }
-      }), this.cache[e] = t, t
+      }), this.cache.set(e, t), t
     }
   }
+  getScoredSearchResults(e) {
+    let t = e.trim().toLocaleLowerCase();
+    if (0 === t.length) return [];
+    let n = this.cacheScored.get(t);
+    if (null != n) return n;
+    let r = [];
+    return this.preprocessed.forEach(e => {
+      let [n, {
+        normalizedTokens: i,
+        normalizedSearchTerms: o
+      }] = e, u = 0;
+      o.some(e => e === t) ? u = s : i.some(e => e.startsWith(t)) ? u = l : o.forEach(e => {
+        let n = 0,
+          r = (0, a.H)(t, e);
+        r >= c && (n = r), u = Math.max(u, n)
+      }), u > 0 && r.push({
+        setting: n,
+        score: u
+      })
+    }), this.cacheScored.set(t, r), r
+  }
   constructor(e) {
-    a(this, "terms", true), a(this, "cache", true), this.terms = e, this.cache = {}
+    o(this, "terms", true), o(this, "cache", true), o(this, "cacheScored", true), o(this, "preprocessed", true), this.terms = e, this.cache = new Map, this.cacheScored = new Map, this.preprocessed = [], e.forEach(e => {
+      let [t, n] = e, r = [], i = [], a = new Set;
+      n.forEach(e => {
+        r.push(e.toLocaleLowerCase()), e.includes(" ") && e.split(/\s+/).forEach(e => {
+          let t = e.toLocaleLowerCase();
+          a.has(t) || (i.push(t), a.add(t))
+        })
+      }), this.preprocessed.push([t, {
+        normalizedSearchTerms: r,
+        normalizedTokens: i
+      }])
+    })
   }
 }

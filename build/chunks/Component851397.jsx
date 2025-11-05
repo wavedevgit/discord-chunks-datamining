@@ -42,23 +42,23 @@ function j(e) {
       return i
     }(e, ["profileOwner", "showIcons"]);
   let {
-    item: w,
-    isOwner: y,
-    giftingOrigin: S = h.Wt.USER_PROFILE_WISHLIST
-  } = v, x = w.sku, E = x.applicationId, k = (0, o.q)(E), N = i.useRef(null), [C] = (0, l.Wu)([f.Z], () => [f.Z.hasSentGift(w.skuId, j.id)], [w.skuId, j.id]), T = w.skuName, L = y ? I.intl.string(I.t.FdGl5A) : I.intl.string(I.t.ilhtIa), _ = y ? true : a.OgN, Z = i.useCallback(() => {
-    if (y && (null == k ? true : k.guildId) != null)(0, u.closeUserProfileModal)(), (0, c.uL)(g.Z5c.CHANNELS_GAME_SHOP(k.guildId, 0, w.skuId, x.slug));
+    item: S,
+    isOwner: w,
+    giftingOrigin: y = g.Wt.USER_PROFILE_WISHLIST
+  } = v, x = S.sku, E = x.applicationId, k = (0, o.q)(E), N = i.useRef(null), [T] = (0, l.Wu)([f.Z], () => [f.Z.hasSentGift(S.skuId, j.id)], [S.skuId, j.id]), C = S.skuName, _ = w ? h.intl.string(h.t.FdGl5A) : h.intl.string(h.t.ilhtIa), L = w ? true : a.OgN, Z = i.useCallback(() => {
+    if (w && (null == k ? true : k.guildId) != null)(0, u.closeUserProfileModal)(), (0, c.uL)(I.Z5c.CHANNELS_GAME_SHOP(k.guildId, 0, S.skuId, x.slug));
     else {
-      if (C) return;
+      if (T) return;
       (0, p.P)(x, {
         isGift: true,
         giftRecipient: j,
-        giftingOrigin: S
+        giftingOrigin: y
       })
     }
-  }, [y, null == k ? true : k.guildId, w.skuId, x, C, j, S]), R = i.useCallback(() => P ? (0, n.jsx)("div", {
+  }, [w, null == k ? true : k.guildId, S.skuId, x, T, j, y]), R = i.useCallback(() => P ? (0, n.jsx)("div", {
     className: b.itemIcon,
     children: (0, n.jsx)(s.u, {
-      text: I.intl.formatToPlainString(I.t.p3RmJF, {
+      text: h.intl.formatToPlainString(h.t.p3RmJF, {
         username: m.ZP.getName(j)
       }),
       position: "top",
@@ -96,11 +96,11 @@ function j(e) {
     return e
   }({}, v), r = r = {
     cardRef: N,
-    accessibleLabel: T,
+    accessibleLabel: C,
     onCardClick: Z,
-    buttonCTALabel: L,
-    buttonIcon: _,
-    isOwned: C,
+    buttonCTALabel: _,
+    buttonIcon: L,
+    isOwned: T,
     renderItemPreview: F,
     renderSourceIcon: R
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
