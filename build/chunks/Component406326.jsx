@@ -307,7 +307,7 @@ function R(e) {
       }
       s(null), h.rR.updateSetting(e)
     }
-  }, [m, s, n, l]), y = i.useMemo(() => ({
+  }, [m, s, n, l]), [y, v] = i.useMemo(() => [m ? j.intl.string(j.t["8lklch"]) : j.intl.string(j.t.ji3jTF), m ? j.intl.string(j.t.RMQZCa) : j.intl.string(j.t["v/PagC"])], [m]), O = i.useMemo(() => ({
     align: "end"
   }), []);
   return (0, r.jsxs)(r.Fragment, {
@@ -359,9 +359,10 @@ function R(e) {
       targetElementRef: p,
       shouldShow: u,
       onRequestClose: c,
-      title: j.intl.string(j.t.qha2Zv),
-      body: j.intl.string(j.t.IQWEoV),
-      caretConfig: y
+      title: y,
+      body: v,
+      caretConfig: O,
+      badge: "new"
     })]
   })
 }
