@@ -1,1 +1,0 @@
-{"id":"888429","type":"experiment","data":{"kind":"guild","id":"2025-06_server_content_level_setting","label":"Guild content level setting","defaultConfig":{"enabled":false},"commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Guild content level setting","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
