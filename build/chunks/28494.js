@@ -22,19 +22,19 @@ function f(e) {
     categoryId: l,
     query: n,
     languageCode: a
-  }), [l, a, n]), d = (0, i.e7)([s.Z], () => {
+  }), [l, a, n]), d = (0, i.e7)([o.Z], () => {
     var e;
-    return null != (e = s.Z.getGuildIds(u)) ? e : p.q5
-  }), f = (0, i.e7)([s.Z], () => {
+    return null != (e = o.Z.getGuildIds(u)) ? e : p.q5
+  }), f = (0, i.e7)([o.Z], () => {
     var e;
-    return null != (e = s.Z.getIsFetching(u)) && e
+    return null != (e = o.Z.getIsFetching(u)) && e
   }), h = c.Z.useField("resultsQuery"), g = h !== n, m = r.useCallback(() => {
-    let e = s.Z.getGuildIds(u),
-      n = s.Z.getTotal(u);
+    let e = o.Z.getGuildIds(u),
+      n = o.Z.getTotal(u);
     if (null == e || null == n) return;
-    let r = s.Z.getIsFetching(u),
-      i = s.Z.getIsInitialFetchComplete(u);
-    r || !i || e.length >= n || o.Z.loadMoreCategoryResults({
+    let r = o.Z.getIsFetching(u),
+      i = o.Z.getIsInitialFetchComplete(u);
+    r || !i || e.length >= n || s.Z.loadMoreCategoryResults({
       loadId: t,
       offset: e.length,
       categoryId: c.Z.getField("categoryId"),
@@ -58,14 +58,14 @@ function h(e) {
   r.useEffect(() => {
     (0, u.le)()
   }, []);
-  let s = r.useCallback(e => {
+  let o = r.useCallback(e => {
     c.Z.setState({
       query: e
     })
   }, []);
   return {
     searchQuery: i,
-    onSearchTextChange: s,
+    onSearchTextChange: o,
     onClearSearch: r.useCallback(() => {
       l.IZ(t), a.Z.clearSearchResults(), a.Z.resetSearchLayout(), c.Z.setState({
         query: "",
@@ -89,7 +89,7 @@ function h(e) {
         resultsInitialCategoryId: i
       }), d.Z.setState({
         isSearchVisible: true
-      }), o.Z.loadCategoryResultsAndCounts({
+      }), s.Z.loadCategoryResultsAndCounts({
         loadId: t,
         categoryId: i,
         query: e,

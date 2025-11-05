@@ -18,24 +18,24 @@ function c(e) {
     className: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: l()(s.badgeContainer, i),
+    className: l()(o.badgeContainer, i),
     children: [n && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("span", {
-        className: l()(s.star, s.starLeft),
-        children: (0, r.jsx)(o.Z, {
+        className: l()(o.star, o.starLeft),
+        children: (0, r.jsx)(s.Z, {
           width: "10",
           height: "10"
         })
       }), (0, r.jsx)("span", {
-        className: l()(s.star, s.starRight),
-        children: (0, r.jsx)(o.Z, {
+        className: l()(o.star, o.starRight),
+        children: (0, r.jsx)(s.Z, {
           width: "14",
           height: "14"
         })
       })]
     }), (0, r.jsx)(a.Text, {
       variant: "eyebrow",
-      className: s.newBadge,
+      className: o.newBadge,
       children: t
     })]
   })

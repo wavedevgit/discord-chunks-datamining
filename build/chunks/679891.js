@@ -45,8 +45,8 @@ class _ extends Chunk317770.Z {
     if (n !== d.Yn.DEFAULT || null == r) return;
     let l = null != a.ZP.getVisibleGame(),
       p = c.Z.isVisible(),
-      g = o.Z.getWindowVisible(u.KJ3.CHANNEL_CALL_POPOUT),
-      m = s.Z.isLocalVideoDisabled(t, n),
+      g = s.Z.getWindowVisible(u.KJ3.CHANNEL_CALL_POPOUT),
+      m = o.Z.isLocalVideoDisabled(t, n),
       _ = h.has(t);
     !l || p || g || m || _ || (f.add(t), i.Z.setDisableLocalVideo(t, u.ZUi.DISABLED, n, false))
   }
@@ -69,7 +69,7 @@ class _ extends Chunk317770.Z {
       } = e;
       t !== g && (m(), g = t)
     }), p(this, "handlePopoutChange", () => {
-      o.Z.getWindowVisible(u.KJ3.CHANNEL_CALL_POPOUT) && m()
+      s.Z.getWindowVisible(u.KJ3.CHANNEL_CALL_POPOUT) && m()
     })
   }
 }

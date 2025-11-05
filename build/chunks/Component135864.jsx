@@ -38,17 +38,17 @@ function S(e) {
   }), l = _.Z.useField("selectedTab"), I = i.useMemo(() => (function(e, t) {
     switch (e) {
       case O.GlobalDiscoveryTab.SERVERS:
-        return (0, r.jsx)(s.QTo, {
+        return (0, r.jsx)(o.QTo, {
           color: "currentColor"
         });
       case O.GlobalDiscoveryTab.APPS:
-        return t ? (0, r.jsx)(s.iWm, {
+        return t ? (0, r.jsx)(o.iWm, {
           color: "currentColor"
-        }) : (0, r.jsx)(s.jje, {
+        }) : (0, r.jsx)(o.jje, {
           color: "currentColor"
         });
       case O.GlobalDiscoveryTab.QUESTS:
-        return (0, r.jsx)(s.qDn, {
+        return (0, r.jsx)(o.qDn, {
           color: "currentColor"
         })
     }
@@ -60,7 +60,7 @@ function S(e) {
         }), (0, E.transitionToGlobalDiscovery)({
           tab: O.GlobalDiscoveryTab.QUESTS,
           location: v.dr.DISCOVERY_SIDEBAR,
-          questContent: o.j.DISCOVERY_SIDEBAR
+          questContent: s.j.DISCOVERY_SIDEBAR
         });
       case O.GlobalDiscoveryTab.APPS:
         if (!T) return (0, E.transitionToGlobalDiscovery)({
@@ -88,7 +88,7 @@ function S(e) {
         })
     }
   }, [t, T]);
-  return (0, r.jsxs)(s.P3F, {
+  return (0, r.jsxs)(o.P3F, {
     onClick: N,
     className: a()(C.navItem, {
       [C.selected]: T
@@ -96,7 +96,7 @@ function S(e) {
     children: [(0, r.jsx)("div", {
       className: C.navItemIcon,
       children: I
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "none",
       children: S

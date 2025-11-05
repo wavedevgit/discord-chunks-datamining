@@ -149,7 +149,7 @@ class eu extends(r = Chunk647438.PureComponent) {
     } = this.state;
     (t.apiErrors !== s || t.parsedDateOfBirth !== l) && (this.hasError("email") || this.hasError("phone") ? null != this.emailRef && this.emailRef.focus() : this.hasError("username") ? null != this.usernameRef && this.usernameRef.focus() : this.hasError("global_name") ? null != this.globalNameRef && this.globalNameRef.focus() : this.hasError("password") ? null != this.passwordRef && this.passwordRef.focus() : null == this.state.parsedDateOfBirth ? null != this.dateOfBirthRef.current && this.dateOfBirthRef.current.focus() : this.hasError("retry_after") && "number" == typeof s.retry_after && (this.setState({
       isRateLimited: true
-    }), this._retryTimer.start(s.retry_after * z.Z.Millis.SECOND, () => {
+    }), this._retryTimer.start(s.retry_after * K.Z.Millis.SECOND, () => {
       this.setState({
         isRateLimited: false
       })
@@ -182,7 +182,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       giftCode: o,
       onRegister: c,
       usernameSuggestion: u
-    } = this.props, d = null != Chunk120356 ? Chunk120356.code : null, h = null != Chunk593473 ? Chunk593473.skuId : null, g = Chunk882037.MD.getState(), p = (0, Chunk624138.Ew)(Chunk990547) ? null : exports === Chunk990547, m = Chunk188785.a ? await (0, Chunk692483.K)(exports) : exports, _ = Chunk188785.a ? await (0, Chunk692483.K)(require) : require;
+    } = this.props, d = null != Chunk120356 ? Chunk120356.code : null, h = null != Chunk593473 ? Chunk593473.skuId : null, g = Chunk882037.MD.getState(), m = (0, Chunk624138.Ew)(Chunk990547) ? null : exports === Chunk990547, p = Chunk188785.a ? await (0, Chunk692483.K)(exports) : exports, _ = Chunk188785.a ? await (0, Chunk692483.K)(require) : require;
     Chunk585483.S.dispatch(Chunk981631.CkL.WAVE_EMPHASIZE), this.setState({
       registering: true,
       apiErrors: {}
@@ -429,7 +429,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       parsedDateOfBirth: u,
       globalNameFocused: d,
       emailClientError: h,
-      usernameClientError: m,
+      usernameClientError: p,
       passwordClientError: f,
       dateOfBirthClientError: _,
       registering: x,
@@ -438,17 +438,17 @@ class eu extends(r = Chunk647438.PureComponent) {
         username: j,
         global_name: b,
         password: I,
-        date_of_birth: O
+        date_of_birth: S
       } = {}
     } = this.state, {
-      consentRequired: S,
+      consentRequired: N,
       authBoxClassName: C,
       hasLoggedInAccounts: A
     } = this.props, T = this.renderErrorMessage(), Z = (0, i.jsx)(g.u, {
-      text: !c && S ? er.intl.string(er.t.AY4IVA) : null,
+      text: !c && N ? er.intl.string(er.t.AY4IVA) : null,
       children: (0, i.jsx)("div", {
         className: es.marginTop20,
-        children: (0, i.jsx)(p.Button, {
+        children: (0, i.jsx)(m.Button, {
           text: er.intl.string(er.t["825cFy"]),
           variant: "primary",
           fullWidth: true,
@@ -460,13 +460,13 @@ class eu extends(r = Chunk647438.PureComponent) {
     }), P = async () => {
       this.setState({
         usernameFocused: true
-      }), l.length > 0 && !D.Z.wasRegistrationSuggestionFetched(l) && await L.Z.fetchSuggestionsRegistration(l)
+      }), l.length > 0 && !D.Z.wasRegistrationSuggestionFetched(l) && await w.Z.fetchSuggestionsRegistration(l)
     }, R = e => {
       this.setState({
         username: e.toLocaleLowerCase(),
         usernameClientError: 0 === e.length ? er.intl.string(er.t.EkokLy) : null
       })
-    }, w = null != e ? (0, i.jsx)(s.Fragment, {
+    }, L = null != e ? (0, i.jsx)(s.Fragment, {
       children: e()
     }, "custom-header") : (0, i.jsx)(y.Dx, {
       children: er.intl.string(er.t.wC4TlR)
@@ -515,11 +515,11 @@ class eu extends(r = Chunk647438.PureComponent) {
             globalNameFocused: false
           }), this.trackInputBlur("global_name")
         }
-      }), (0, i.jsx)(U.Z, {
+      }), (0, i.jsx)(B.Z, {
         show: d,
         top: false,
         bottom: 20,
-        children: (0, i.jsx)(p.Text, {
+        children: (0, i.jsx)(m.Text, {
           variant: "text-sm/normal",
           color: "text-default",
           children: er.intl.string(er.t["330TCc"])
@@ -536,7 +536,7 @@ class eu extends(r = Chunk647438.PureComponent) {
           name: "username",
           value: r,
           onChange: R,
-          error: null != m ? m : ec(j),
+          error: null != p ? p : ec(j),
           autoComplete: "off",
           setRef: e => {
             this.usernameRef = e
@@ -568,14 +568,14 @@ class eu extends(r = Chunk647438.PureComponent) {
         name: "date_of_birth",
         onChange: this.handleBirthdayChange,
         ref: this.dateOfBirthRef,
-        error: null != _ ? _ : ec(O),
+        error: null != _ ? _ : ec(S),
         value: u,
         required: true,
         onFocus: this.trackInputFocus,
         onBlur: this.trackInputBlur
-      }), (0, i.jsx)(N.Z, {}), this.renderConsentComponent(), Z, T, ee.a ? null : (0, i.jsx)("div", {
+      }), (0, i.jsx)(O.Z, {}), this.renderConsentComponent(), Z, T, ee.a ? null : (0, i.jsx)("div", {
         className: es.marginTop20,
-        children: (0, i.jsx)(p.Avr, {
+        children: (0, i.jsx)(m.Avr, {
           text: er.intl.string(er.t["1lWxux"]),
           textVariant: "text-sm/normal",
           onClick: this.handleGotoLogin
@@ -586,7 +586,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       onSubmit: this.handleSubmit,
       tag: "form",
       className: a()(C, ei.horizontalAuthBox),
-      children: () => [w, (0, i.jsxs)("div", {
+      children: () => [L, (0, i.jsxs)("div", {
         className: ei.flex,
         children: [(0, i.jsx)(y.Dx, {
           className: ei.createAccountTemplateHeader,
@@ -599,14 +599,14 @@ class eu extends(r = Chunk647438.PureComponent) {
       className: C,
       children: [A ? (0, i.jsx)("div", {
         className: ei.goBackButton,
-        children: (0, i.jsx)(p.Button, {
+        children: (0, i.jsx)(m.Button, {
           onClick: this.handleGotoLogin,
           variant: "secondary",
           text: er.intl.string(er.t["1MrpWO"]),
-          icon: p.V7D,
+          icon: m.V7D,
           iconPosition: "start"
         })
-      }) : null, w, k]
+      }) : null, L, k]
     })
   }
   render() {
@@ -646,10 +646,10 @@ class eu extends(r = Chunk647438.PureComponent) {
         d = null != l ? (0, o.parse)(l.search) : {};
       null != s ? t = X.Z5c.INVITE_LOGIN(s.code) : null != r ? t = X.Z5c.GIFT_CODE_LOGIN(r.code) : null != i ? t = X.Z5c.GUILD_TEMPLATE_LOGIN(i.code) : null != c ? (t = X.Z5c.LOGIN, d.redirect_to = c) : (t = X.Z5c.LOGIN, "" !== n && (d = {
         email: n
-      })), m.Z.loginReset(), u(t, {
+      })), p.Z.loginReset(), u(t, {
         search: (0, o.stringify)(d),
         source: "register"
-      }), null == a || a(e), H.S.dispatch(X.CkL.WAVE_EMPHASIZE)
+      }), null == a || a(e), z.S.dispatch(X.CkL.WAVE_EMPHASIZE)
     }), el(this, "handleSubmit", e => {
       null == e || e.preventDefault();
       let {
@@ -678,11 +678,11 @@ class eu extends(r = Chunk647438.PureComponent) {
         dateOfBirthClientError: er.intl.string(er.t.EkokLy)
       }), o = true)), o || this.handleRegister()
     }), el(this, "trackInputFocus", e => {
-      K.default.track(X.rMx.REGISTER_INPUT_FOCUS, {
+      H.default.track(X.rMx.REGISTER_INPUT_FOCUS, {
         field: e
       })
     }), el(this, "trackInputBlur", e => {
-      K.default.track(X.rMx.REGISTER_INPUT_BLUR, {
+      H.default.track(X.rMx.REGISTER_INPUT_BLUR, {
         field: e
       })
     }), el(this, "handleBirthdayChange", e => {
@@ -735,11 +735,11 @@ class eu extends(r = Chunk647438.PureComponent) {
 }
 
 function ed(e) {
-  let t = (0, d.cj)([V.Z, F.default, _.Z, w.Z, P.Z], () => ({
+  let t = (0, d.cj)([V.Z, F.default, _.Z, L.Z, P.Z], () => ({
       consentRequired: V.Z.getAuthenticationConsentRequired(),
       authenticated: F.default.isAuthenticated(),
       isUnderage: _.Z.isUnderageAnonymous(),
-      country: w.Z.getCountryCode(),
+      country: L.Z.getCountryCode(),
       hasLoggedInAccounts: P.Z.getHasLoggedInAccounts()
     })),
     n = (0, d.e7)([D.Z], () => D.Z.registrationUsernameSuggestion()),
@@ -770,33 +770,33 @@ function eh(e) {
   return t = u ? (0, c.EQ)(o).with({
     type: k.K.ERROR,
     message: c.P.select()
-  }, e => (0, i.jsx)(p.Text, {
+  }, e => (0, i.jsx)(m.Text, {
     className: ei.messageNegative,
     variant: "text-sm/normal",
     children: e
   })).with({
     type: k.K.AVAILABLE,
     message: c.P.select()
-  }, e => (0, i.jsx)(p.Text, {
+  }, e => (0, i.jsx)(m.Text, {
     className: ei.messagePositive,
     variant: "text-sm/normal",
     children: e
-  })).otherwise(() => (0, i.jsx)(p.Text, {
+  })).otherwise(() => (0, i.jsx)(m.Text, {
     variant: "text-sm/normal",
     color: "text-default",
     children: er.intl.string(er.t.z7c4bP)
-  })) : null != r && r.length > 0 && s.length > 0 ? (0, i.jsx)(p.Text, {
+  })) : null != r && r.length > 0 && s.length > 0 ? (0, i.jsx)(m.Text, {
     variant: "text-sm/normal",
     color: "text-default",
     children: er.intl.format(er.t.nDGqqq, {
       suggestion: r,
       nameOnClick: a
     })
-  }) : (0, i.jsx)(p.Text, {
+  }) : (0, i.jsx)(m.Text, {
     variant: "text-sm/normal",
     color: "text-default",
     children: er.intl.string(er.t.z7c4bP)
-  }), (0, i.jsx)(U.Z, {
+  }), (0, i.jsx)(B.Z, {
     show: u && (null == o ? true : o.type) === k.K.ERROR || l,
     top: false,
     bottom: 20,

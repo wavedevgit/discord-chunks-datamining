@@ -81,18 +81,18 @@ let E = (0, Chunk703912.Z)(e => {
     let R = false,
       D = l => {
         let {
-          clientId: o,
-          location: s
+          clientId: s,
+          location: o
         } = l;
-        if (null == o || o === n) {
-          if (R = true, null == s) {
+        if (null == s || s === n) {
+          if (R = true, null == o) {
             t(new p.Z({
               errorCode: g.lTL.OAUTH2_ERROR
             }, "OAuth2 Error: No location provided")), a.lock();
             return
           }
-          if (e(s), null == O || null == L) return void a.lock();
-          null == new URL(s).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(c.$0, _({
+          if (e(o), null == O || null == L) return void a.lock();
+          null == new URL(o).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(c.$0, _({
             application: L
           }, e)), {
             onCloseCallback: () => {
@@ -109,7 +109,7 @@ let E = (0, Chunk703912.Z)(e => {
         cleanup: M
       } = function(e, t) {
         function n() {
-          (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(s.j, b(_({}, e), {
+          (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(o.j, b(_({}, e), {
             title: m.intl.string(m.t.j2d6Km),
             subtitle: m.intl.string(m.t["4LKmN5"]),
             actions: [{
@@ -124,7 +124,7 @@ let E = (0, Chunk703912.Z)(e => {
           }
         }
       }(Z, A);
-    (0, i.h7j)(e => (0, r.jsx)(o.OAuth2AuthorizeModal, b(_({}, e), {
+    (0, i.h7j)(e => (0, r.jsx)(s.OAuth2AuthorizeModal, b(_({}, e), {
       authorizations: u,
       clientId: n,
       scopes: null != d ? d : [],

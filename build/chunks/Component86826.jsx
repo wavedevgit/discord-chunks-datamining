@@ -29,11 +29,11 @@ let p = function(e) {
       var c;
       return (0, r.jsx)("div", {
         className: l()(d.monitor, i),
-        children: (0, r.jsxs)(o.Z, {
-          align: o.Z.Align.CENTER,
-          children: [(0, r.jsxs)(o.Z, {
+        children: (0, r.jsxs)(s.Z, {
+          align: s.Z.Align.CENTER,
+          children: [(0, r.jsxs)(s.Z, {
             className: d.text,
-            direction: o.Z.Direction.VERTICAL,
+            direction: s.Z.Direction.VERTICAL,
             children: [(0, r.jsx)("div", {
               className: d.title,
               children: n
@@ -47,7 +47,7 @@ let p = function(e) {
             })]
           }), (0, r.jsx)("div", {
             className: d.overflowContainer,
-            children: (0, r.jsx)(s.Z, {
+            children: (0, r.jsx)(o.Z, {
               data: e,
               maxValue: Math.max(Math.max.apply(null, e), 1e3),
               className: d.sparkChart,

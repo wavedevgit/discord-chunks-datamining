@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
 
 function g(e) {
   var t;
-  let g = (0, o.SE)(e),
+  let g = (0, s.SE)(e),
     m = h.$X.some(t => (null == e ? true : e.id) !== f._ && c.oz(t, e)),
     _ = (null == e ? true : e.defaultMessageNotifications) === d.bL.ALL_MESSAGES,
     b = (0, u.FT)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds),
@@ -59,7 +59,7 @@ function g(e) {
         }, n))
       }, {
         onCloseCallback: O
-      }), s.default.track(d.rMx.DISMISSIBLE_CONTENT_SHOWN, {
+      }), o.default.track(d.rMx.DISMISSIBLE_CONTENT_SHOWN, {
         type: l.C[l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE],
         guild_id: null != (t = null == e ? true : e.id) ? t : d.lds
       }), y.current = true

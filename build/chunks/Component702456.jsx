@@ -69,10 +69,10 @@ function P(e) {
   } = e, {
     status: u,
     isMobile: f
-  } = (0, o.cj)([b.Z], () => ({
+  } = (0, s.cj)([b.Z], () => ({
     status: b.Z.getStatus(i.id),
     isMobile: b.Z.isMobileOnline(i.id)
-  })), h = (0, o.e7)([O.Z, m.Z], () => {
+  })), h = (0, s.e7)([O.Z, m.Z], () => {
     let e = m.Z.getDMFromUserId(i.id);
     return null != e && O.Z.isTyping(e, i.id)
   }, [i]), {
@@ -80,7 +80,7 @@ function P(e) {
     eventHandlers: E
   } = (0, g.Z)({
     userId: i.id,
-    size: s.EFr.SIZE_32,
+    size: o.EFr.SIZE_32,
     animateOnHover: true
   }), y = async () => {
     await c.Z.openPrivateChannel({
@@ -91,8 +91,8 @@ function P(e) {
     null != e && (0, p.yw)(C.rMx.CHANNEL_OPENED, j(N({}, (0, p.$H)(e)), {
       location: "".concat(d.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
     }))
-  }, v = 0 === l, I = v ? s.YqE : a ? s.XcD : true, P = v ? S.intl.string(S.t.aI4VOL) : a ? S.intl.string(S.t.kABl2x) : true;
-  return (0, r.jsx)(s.P3F, {
+  }, v = 0 === l, I = v ? o.YqE : a ? o.XcD : true, P = v ? S.intl.string(S.t.aI4VOL) : a ? S.intl.string(S.t.kABl2x) : true;
+  return (0, r.jsx)(o.P3F, {
     className: T.frequentFriendAvatarButton,
     onClick: y,
     onMouseEnter: E.onMouseEnter,
@@ -100,13 +100,13 @@ function P(e) {
     "aria-label": S.intl.formatToPlainString(S.t.M5FjCr, {
       username: i.username
     }),
-    children: (0, r.jsx)(s.qEK, {
+    children: (0, r.jsx)(o.qEK, {
       src: _,
       "aria-label": null != (t = i.globalName) ? t : i.username,
       status: u,
       isTyping: h,
       isMobile: f && !h,
-      size: s.EFr.SIZE_32,
+      size: o.EFr.SIZE_32,
       CutoutIcon: I,
       avatarTooltipAsset: v ? "\uD83D\uDD25" : a ? "❄️" : true,
       avatarTooltipText: P,
@@ -184,7 +184,7 @@ function x() {
         }), (0, Chunk951288.jsx)(Chunk481060.aML, {
           "data-migration-pending": true,
           text: Chunk388032.intl.string(Chunk388032.t.tqCMcU),
-          children: e => (0, r.jsx)(s.d3s, j(N({}, e), {
+          children: e => (0, r.jsx)(o.d3s, j(N({}, e), {
             className: T.frequentFriendsInfoIcon
           }))
         })]

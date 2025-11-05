@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
 let m = e => {
   let {
     targetElementRef: t
-  } = e, n = true === (0, i.e7)([s.default], () => c.ZP.isPremiumExactly(s.default.getCurrentUser(), p.PremiumTypes.TIER_2)) ? h.intl.string(h.t.CMKNhr) : h.intl.string(h.t.E1ONHQ);
+  } = e, n = true === (0, i.e7)([o.default], () => c.ZP.isPremiumExactly(o.default.getCurrentUser(), p.PremiumTypes.TIER_2)) ? h.intl.string(h.t.CMKNhr) : h.intl.string(h.t.E1ONHQ);
   return (0, r.jsx)(l.J2, {
     targetElementRef: t,
     title: h.intl.string(h.t["V8J+16"]),
@@ -41,7 +41,7 @@ let m = e => {
     actions: [{
       text: h.intl.string(h.t["CDdYB/"]),
       onClick: () => {
-        (0, o.Z)(f.Z5c.NITRO_HOME), (0, u.wQ)({
+        (0, s.Z)(f.Z5c.NITRO_HOME), (0, u.wQ)({
           analyticsLocations: [a.Z.HOME_PAGE_PREMIUM_TAB]
         }), (0, d.ow)()
       }

@@ -19,15 +19,15 @@ function c(e) {
   let n = (0, l.ZP)(e),
     c = a.Z.getChannel(null == (t = n[0]) ? true : t.id),
     u = (0, r.e7)([i.Z], () => i.Z.getStageInstanceByChannel(null == c ? true : c.id), [c]),
-    d = (0, s.k5)(e),
+    d = (0, o.k5)(e),
     {
       isStageNoticeHidden: p,
       isEventNoticeHidden: f
-    } = (0, r.cj)([o.Z], () => ({
-      isStageNoticeHidden: o.Z.isLiveChannelNoticeHidden({
+    } = (0, r.cj)([s.Z], () => ({
+      isStageNoticeHidden: s.Z.isLiveChannelNoticeHidden({
         stageId: null == u ? true : u.id
       }),
-      isEventNoticeHidden: o.Z.isLiveChannelNoticeHidden({
+      isEventNoticeHidden: s.Z.isLiveChannelNoticeHidden({
         eventId: null == d ? true : d.id
       })
     }), [u, d]);

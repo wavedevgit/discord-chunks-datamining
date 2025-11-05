@@ -38,9 +38,9 @@ function x(e) {
     {
       isAuthenticated: E,
       loginStatus: v
-    } = (0, a.cj)([p.default], () => ({
-      isAuthenticated: p.default.isAuthenticated(),
-      loginStatus: p.default.getLoginStatus()
+    } = (0, a.cj)([m.default], () => ({
+      isAuthenticated: m.default.isAuthenticated(),
+      loginStatus: m.default.getLoginStatus()
     })),
     {
       location: j,
@@ -48,7 +48,7 @@ function x(e) {
     } = e,
     [I, y] = i.useState(E);
 
-  function O(e) {
+  function S(e) {
     let {
       handoffKey: t,
       handoffToken: n,
@@ -69,19 +69,19 @@ function x(e) {
       if (null != e && null != t) {
         let n = null != b ? (0, d.L)(b) : true;
         I ? o.Z.logout("handoff", null).finally(() => {
-          O({
+          S({
             handoffKey: e,
             handoffToken: t,
             handoffSource: n
           })
-        }) : O({
+        }) : S({
           handoffKey: e,
           handoffToken: t,
           handoffSource: n
         })
       }
     }
-  }), I || v === f.u34.LOGGING_IN) ? (0, r.jsx)(m.q, {}) : (0, r.jsx)(m.Z, (t = function(e) {
+  }), I || v === f.u34.LOGGING_IN) ? (0, r.jsx)(p.q, {}) : (0, r.jsx)(p.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

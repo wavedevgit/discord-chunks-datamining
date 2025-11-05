@@ -16,10 +16,9 @@ function s() {
     } = (0, Chunk843611.TH)(),
     n = exports.startsWith(Chunk981631.Z5c.GUILD_DISCOVERY) || exports.startsWith(Chunk981631.Z5c.GLOBAL_DISCOVERY),
     s = exports.startsWith(Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION("")),
-    c = exports.startsWith(Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")),
-    u = (0, Chunk370774.D)(),
-    d = Chunk365113.o.useConfig({
+    c = (0, Chunk370774.D)(),
+    u = Chunk365113.o.useConfig({
       location: "guildsbar"
     }).dmsTab && exports.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.ME)) && exports !== Chunk981631.Z5c.CHANNEL(Chunk981631.ME) && exports !== Chunk981631.Z5c.ME_ACTIVITY;
-  return null == module && !(require || s || c || u) && !d
+  return null == module && !(require || s || c) && !u
 }

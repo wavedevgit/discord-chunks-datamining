@@ -19,17 +19,17 @@ function c(e) {
   } = e;
   return (0, r.jsx)(i.Mb, {
     targetElementRef: c,
-    title: s.intl.string(s.t.gCgirr),
-    body: s.intl.string(s.t.fLMZFw),
+    title: o.intl.string(o.t.gCgirr),
+    body: o.intl.string(o.t.fLMZFw),
     assetUrl: "https://cdn.discordapp.com/assets/server-subscription-tier-template/upsell.mov",
     action: {
-      text: s.intl.string(s.t.BQq86h),
+      text: o.intl.string(o.t.BQq86h),
       variant: "primary",
       onClick: () => {
         l.Z.open(t, a.pNK.ROLE_SUBSCRIPTIONS, true, a.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE)
       }
     },
-    onRequestClose: () => n(o.L.USER_DISMISS),
+    onRequestClose: () => n(s.L.USER_DISMISS),
     position: "bottom",
     caretConfig: {
       position: "top",

@@ -165,10 +165,10 @@ function F(e, t, n) {
     deaf: i,
     selfMute: l,
     selfDeaf: a,
-    suppress: o,
-    userId: s
-  } = n, c = v.default.getUser(s);
-  if (null == c) throw Error("Invalid user id: ".concat(s));
+    suppress: s,
+    userId: o
+  } = n, c = v.default.getUser(o);
+  if (null == c) throw Error("Invalid user id: ".concat(o));
   return {
     nick: S.ZP.getName(e, t, c),
     mute: E.Z.isLocalMute(c.id),
@@ -179,7 +179,7 @@ function F(e, t, n) {
       deaf: i,
       self_mute: l,
       self_deaf: a,
-      suppress: o
+      suppress: s
     },
     user: (0, P.Z)(c)
   }
@@ -239,7 +239,7 @@ function Q(e, t, n) {
 }
 
 function J(e) {
-  return o.tn.get({
+  return s.tn.get({
     url: A.ANM.APPLICATION_RPC(e),
     oldFormErrors: true,
     retries: 3,
@@ -273,20 +273,20 @@ async function X(e, t, n) {
     id: i,
     name: l,
     icon: a,
-    coverImage: o,
-    flags: s
+    coverImage: s,
+    flags: o
   } = r;
   e.application = {
     id: i,
     name: l,
     icon: a,
-    coverImage: o,
-    flags: s
+    coverImage: s,
+    flags: o
   }
 }
 async function $(e, t) {
   let n = k[e];
-  null == n && (n = new s.Z(t ? 2 : 60, M), k[e] = n), await n.process()
+  null == n && (n = new o.Z(t ? 2 : 60, M), k[e] = n), await n.process()
 }
 
 function ee(e, t) {

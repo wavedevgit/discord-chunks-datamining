@@ -130,13 +130,13 @@ class ef extends Chunk647438.PureComponent {
       skuId: i,
       storeListingId: l,
       slug: a,
-      storeListing: o,
-      fetchStoreListing: s
+      storeListing: s,
+      fetchStoreListing: o
     } = this.props;
-    if (o !== e.storeListing && null != o && (0, Y.s)(eo.jE.STORE_LISTING, {
+    if (s !== e.storeListing && null != s && (0, Y.s)(es.jE.STORE_LISTING, {
         skuId: i,
         slug: a
-      }), (t !== e.locale || i !== e.skuId) && s(), r && !e.shouldFetchStatistics) {
+      }), (t !== e.locale || i !== e.skuId) && o(), r && !e.shouldFetchStatistics) {
       if (null == n) throw Error("Unexpected missing sku");
       f.Z.wait(() => (0, h.$)(n.applicationId))
     }(i !== e.skuId || l !== e.storeListingId) && (this._trackedViewed = false), this.trackViewed(), this.replaceUrlWithSlug()
@@ -188,21 +188,21 @@ class ef extends Chunk647438.PureComponent {
       children: null != n ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(P.Z.Icon, {
           icon: p.lO_,
-          "aria-label": es.intl.string(es.t["P1/Erq"])
+          "aria-label": eo.intl.string(eo.t["P1/Erq"])
         }), (0, r.jsx)(P.Z.Title, {
           children: n.name
         })]
       }) : null != t && t.premium ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(P.Z.Icon, {
           icon: p.SrA,
-          "aria-label": es.intl.string(es.t.Ipxkog)
+          "aria-label": eo.intl.string(eo.t.Ipxkog)
         }), (0, r.jsx)(et.Z, {
           sku: t
         })]
       }) : null != t ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(P.Z.Icon, {
           icon: p.lO_,
-          "aria-label": es.intl.string(es.t["P1/Erq"])
+          "aria-label": eo.intl.string(eo.t["P1/Erq"])
         }), (0, r.jsx)(P.Z.Title, {
           children: t.name
         })]
@@ -303,7 +303,7 @@ class ef extends Chunk647438.PureComponent {
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(I.Z, {
         tag: "h1",
-        children: es.intl.format(es.t.tluX4B, {
+        children: eo.intl.format(eo.t.tluX4B, {
           name: n.name
         })
       }), (0, r.jsx)(b.Z, {}), (0, r.jsx)(q.Z, {
@@ -343,7 +343,7 @@ class ef extends Chunk647438.PureComponent {
         image: Chunk606081.Z.Product.Image(Chunk647438),
         sku: module.id
       }),
-      o = module.getPrice();
+      s = module.getPrice();
     if (null != Chunk442837) {
       let {
         amount: e,
@@ -356,7 +356,7 @@ class ef extends Chunk647438.PureComponent {
         })
       })
     }
-    let s = Chunk606081.Z.ItemPage({
+    let o = Chunk606081.Z.ItemPage({
       mainEntity: a
     });
     return (0, Chunk951288.jsx)(Chunk606081.Z, {
@@ -435,7 +435,7 @@ class ef extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), eu(this, "showCopyLinkTextTimeout", new s.V7), eu(this, "_trackedViewed", false), eu(this, "_analyticsSource", null), eu(this, "_extraAnalyticsProperties", null), eu(this, "state", {
+    super(...e), eu(this, "showCopyLinkTextTimeout", new o.V7), eu(this, "_trackedViewed", false), eu(this, "_analyticsSource", null), eu(this, "_extraAnalyticsProperties", null), eu(this, "state", {
       showHeaderPurchaseUnit: false,
       showLinkCopied: false
     }), eu(this, "trackCarouselScroll", (e, t, n) => {
@@ -481,7 +481,7 @@ class ef extends Chunk647438.PureComponent {
         guild: t
       } = this.props;
       return null != e && null != t && (w.Z.can(ea.Plq.CREATE_INSTANT_INVITE, t) || null != t.vanityURLCode) ? (0, r.jsx)(d.zx, {
-        "aria-label": es.intl.string(es.t.zJrgTG),
+        "aria-label": eo.intl.string(eo.t.zJrgTG),
         look: d.zx.Looks.BLANK,
         size: d.zx.Sizes.NONE,
         onClick: this.handleCreateInstantInvite,
@@ -497,11 +497,11 @@ class ef extends Chunk647438.PureComponent {
         showLinkCopied: e
       } = this.state;
       return this.isChannelType ? this.renderInviteLink() : (0, r.jsx)(c.u, {
-        text: e ? es.intl.string(es.t.uvTCOY) : null,
+        text: e ? eo.intl.string(eo.t.uvTCOY) : null,
         position: "left",
         forceOpen: e,
         children: (0, r.jsx)(d.zx, {
-          "aria-label": e ? es.intl.string(es.t.uvTCOY) : es.intl.string(es.t.WqhZss),
+          "aria-label": e ? eo.intl.string(eo.t.uvTCOY) : eo.intl.string(eo.t.WqhZss),
           look: d.zx.Looks.BLANK,
           size: d.zx.Sizes.NONE,
           onClick: this.copyCurrentUrl,
@@ -519,10 +519,10 @@ class ef extends Chunk647438.PureComponent {
         slug: i,
         storeListing: l,
         analyticsContext: {
-          location: o
+          location: s
         }
       } = this.props, {
-        showHeaderPurchaseUnit: s
+        showHeaderPurchaseUnit: o
       } = this.state;
       return (0, r.jsxs)("div", {
         className: ec.headerBarListing,
@@ -540,7 +540,7 @@ class ef extends Chunk647438.PureComponent {
               null != t && (0, m.yt)(t.id, {
                 slug: i,
                 analyticsSource: {
-                  page: o.page,
+                  page: s.page,
                   section: ea.jXE.NAVIGATION,
                   object: null
                 },
@@ -552,7 +552,7 @@ class ef extends Chunk647438.PureComponent {
           className: ec.headerSection,
           children: (0, r.jsxs)("div", {
             className: a()(ec.headerPurchase, {
-              [ec.active]: s
+              [ec.active]: o
             }),
             children: [null != t ? (0, j.Z)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
               children: "deprecated!"
@@ -599,8 +599,8 @@ let eh = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     inputSkuId: i,
     applicationId: l,
     storeListingId: a,
-    isAuthenticated: o,
-    channel: s
+    isAuthenticated: s,
+    channel: o
   } = e;
   if (null == l) {
     if (null == i) throw Error("Needs applicationId or skuId");
@@ -615,19 +615,19 @@ let eh = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     application: null != l ? v.Z.getApplication(l) : null,
     isFetchingEntitlements: null != l && D.Z.applicationIdsFetching.has(l),
     didFetchEntitlements: null != l && D.Z.applicationIdsFetched.has(l),
-    shouldFetchStatistics: o && null != l && L.Z.shouldFetchStatisticsForApplication(l),
+    shouldFetchStatistics: s && null != l && L.Z.shouldFetchStatisticsForApplication(l),
     sku: n,
     isFocused: G.Z.isFocused(),
     storeListing: k.Z.getStoreListing({
       storeListingId: a,
       skuId: t,
-      channelId: null != s ? s.id : null,
+      channelId: null != o ? o.id : null,
       isTestMode: c
     }),
     isInTestMode: null != l && c,
     matureAgree: R.Z.didMatureAgree,
     theme: A.Z.theme,
     locale: x.default.locale,
-    guild: null != s ? Z.Z.getGuild(s.getGuildId()) : null
+    guild: null != o ? Z.Z.getGuild(o.getGuildId()) : null
   }
 })(ef)))

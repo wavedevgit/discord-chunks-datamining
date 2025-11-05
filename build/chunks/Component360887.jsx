@@ -58,12 +58,12 @@ function b(e) {
     } catch (e) {
       b("error")
     }
-  }, []), O = i.useCallback(e => {
+  }, []), S = i.useCallback(e => {
     let t = "discord://login/one-time?token=".concat(encodeURIComponent(e));
     _.Z.launch(t, t => {
       t ? b("app_launched") : y(e)
     })
-  }, [y]), S = i.useCallback(e => {
+  }, [y]), N = i.useCallback(e => {
     var t;
     let r = null != (t = g.default.getFingerprint()) ? t : g.default.getId();
     Promise.resolve().then(n.bind(n, 536285)).then(t => {
@@ -77,25 +77,25 @@ function b(e) {
           fingerprint: r
         }
       }).then(t => {
-        null != t && t ? b("app_launched") : O(e)
+        null != t && t ? b("app_launched") : S(e)
       }).catch(() => {
-        O(e)
+        S(e)
       }).then(() => n.disconnect())
     })
-  }, [O]);
+  }, [S]);
   return (i.useEffect(() => {
     if (null == o || "string" != typeof o) return void b("error");
     if (a.tq || a.Em) {
       var e;
-      let t = null == (e = p.default.getSuperProperties()) ? true : e.os,
+      let t = null == (e = m.default.getSuperProperties()) ? true : e.os,
         n = new URL(l.pathname + l.search, window.location.origin),
-        r = (0, m.Gn)("one_time_login", t, n);
+        r = (0, p.Gn)("one_time_login", t, n);
       window.location.href = r;
       return
     }
     if ((0, f.isDesktop)()) return void y(o);
-    I.current || (I.current = true, b("rpc_attempting"), S(o))
-  }, [o, l, y, S]), a.tq || a.Em || (0, h.DB)()) ? null : "app_launched" === d ? (0, r.jsx)(j, {
+    I.current || (I.current = true, b("rpc_attempting"), N(o))
+  }, [o, l, y, N]), a.tq || a.Em || (0, h.DB)()) ? null : "app_launched" === d ? (0, r.jsx)(j, {
     title: v.intl.string(v.t.RvUUOy),
     subtitle: v.intl.string(v.t["5/lR0g"]),
     buttonText: v.intl.string(v.t["2ixEBi"]),

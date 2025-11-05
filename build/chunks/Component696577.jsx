@@ -28,7 +28,7 @@ function v(e) {
   let {
     user: n,
     applicationId: l,
-    isGameRelationship: s,
+    isGameRelationship: o,
     active: c
   } = e, u = (null == (t = f.default.getCurrentUser()) ? true : t.isStaff()) && (null == n ? true : n.isStaff()), {
     acceptFriendRequest: d,
@@ -36,7 +36,7 @@ function v(e) {
   } = (0, g.u)({
     userId: n.id,
     applicationId: l,
-    isGameRelationship: s,
+    isGameRelationship: o,
     location: "Friends"
   }), h = i.useCallback(e => {
     e.stopPropagation(), d()
@@ -46,18 +46,18 @@ function v(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [u && (0, r.jsx)("div", {
       className: y.staffIndicator,
-      children: (0, r.jsx)(o.IGR, {
+      children: (0, r.jsx)(s.IGR, {
         color: a.Z.unsafe_rawColors.BRAND_500.css,
         text: O.intl.string(O.t.oMx98L)
       })
     }), (0, r.jsx)(m.Z, {
-      icon: o.dz2,
+      icon: s.dz2,
       actionType: m.Z.ActionTypes.ACCEPT,
       tooltip: O.intl.string(O.t.Zcibdf),
       onClick: h,
       shouldHighlight: c
     }), (0, r.jsx)(m.Z, {
-      icon: o.Dio,
+      icon: s.Dio,
       actionType: m.Z.ActionTypes.DENY,
       tooltip: O.intl.string(O.t.xuio0C),
       onClick: _,
@@ -73,17 +73,17 @@ function I(e) {
     isGameRelationship: l,
     active: a
   } = e, {
-    cancelFriendRequest: s
+    cancelFriendRequest: o
   } = (0, g.u)({
     userId: t,
     applicationId: n,
     isGameRelationship: l,
     location: "Friends"
   }), c = i.useCallback(e => {
-    e.stopPropagation(), s()
-  }, [s]);
+    e.stopPropagation(), o()
+  }, [o]);
   return (0, r.jsx)(m.Z, {
-    icon: o.Dio,
+    icon: s.Dio,
     actionType: m.Z.ActionTypes.DENY,
     tooltip: O.intl.string(O.t.eaq81S),
     onClick: c,
@@ -96,22 +96,22 @@ function C(e) {
     isGameRelationship: t,
     applicationId: n,
     userTag: a,
-    isProvisional: s
+    isProvisional: o
   } = e, p = i.useMemo(() => t ? O.intl.string(O.t["Uv/eTx"]) : a, [t, a]), f = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
   return (0, r.jsxs)("div", {
     className: y.applicationSublabel,
-    children: [!s && (0, r.jsx)(o.Text, {
+    children: [!o && (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
       children: p
     }), null != f && (0, r.jsxs)(r.Fragment, {
-      children: [!s && (0, r.jsx)(d.Z, {
+      children: [!o && (0, r.jsx)(d.Z, {
         height: 2,
         width: 2
       }), (0, r.jsx)(u.Z, {
         game: f,
         size: u.A.XXSMALL
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
         children: f.name
@@ -127,7 +127,7 @@ function S(e) {
     status: i,
     isGameRelationship: l,
     applicationId: a
-  } = e, o = h.ZP.useUserTag(t);
+  } = e, s = h.ZP.useUserTag(t);
   return (0, r.jsx)(b.Z, {
     user: t,
     hovered: n,
@@ -137,7 +137,7 @@ function S(e) {
       isGameRelationship: l,
       isProvisional: t.isProvisional,
       applicationId: a,
-      userTag: o
+      userTag: s
     })
   })
 }
@@ -148,11 +148,11 @@ function T(e) {
     type: n,
     status: l,
     isFocused: a,
-    applicationId: o,
+    applicationId: s,
     isGameRelationship: c
   } = e, {
     analyticsLocations: u
-  } = (0, s.ZP)(), d = l === E.Skl.OFFLINE ? E.Skl.UNKNOWN : l, f = i.useCallback(() => (0, p.openUserProfileModal)({
+  } = (0, o.ZP)(), d = l === E.Skl.OFFLINE ? E.Skl.UNKNOWN : l, f = i.useCallback(() => (0, p.openUserProfileModal)({
     userId: t.id,
     sourceAnalyticsLocations: u
   }), [u, t.id]);
@@ -167,17 +167,17 @@ function T(e) {
         hovered: e,
         status: d,
         isGameRelationship: c,
-        applicationId: o
+        applicationId: s
       }), (0, r.jsx)("div", {
         className: y.actions,
         children: n === E.OGo.PENDING_INCOMING ? (0, r.jsx)(v, {
           user: t,
-          applicationId: o,
+          applicationId: s,
           isGameRelationship: c,
           active: e
         }) : (0, r.jsx)(I, {
           userId: t.id,
-          applicationId: o,
+          applicationId: s,
           isGameRelationship: c,
           active: e
         })

@@ -63,14 +63,14 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
         (0, b.bu)(t.transport);
         let r = a.ZP.getCurrentEmbeddedActivity();
         try {
-          var s, d;
+          var o, d;
           let e = new URL(n),
             a = e.toString();
           if (m.isPlatformEmbedded) {
             let e = (0, l.R)() ? y.KJ3.ACTIVITY_POPOUT : null;
             f.Z.focus(e, true)
           }
-          let h = u.Z.getApplication(null == (s = t.application) ? true : s.id),
+          let h = u.Z.getApplication(null == (o = t.application) ? true : o.id),
             _ = (0, c.p)(null == r ? true : r.location),
             b = (null == h ? true : h.id) !== true ? N.get(h.id) : true;
           if (true !== b && b.trustedUntilEpochMs >= Date.now() && b.trustedHosts.has(e.host)) return (0, i.Z)(a), p.default.track(y.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
@@ -103,7 +103,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
                 opened: false
               })
             }
-          }, true, true, (0, o.z)({
+          }, true, true, (0, s.z)({
             application: h,
             channelId: _
           })))
@@ -161,7 +161,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
           errorCode: y.lTL.INVALID_COMMAND
         }, "This application cannot access this API");
         return new Promise(e => {
-          (0, s._)({
+          (0, o._)({
             applicationId: a,
             customId: r,
             linkId: l,

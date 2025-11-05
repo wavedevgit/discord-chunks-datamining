@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk890333 = require("./890333.js");
 
-function s(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -67,28 +67,28 @@ function u(e) {
     }
     return i
   }(e, ["padded", "inset", "active", "className", "children", "onClick", "ref", "noBackground"]);
-  return null != p ? (0, r.jsx)(a.P3F, c(s({
+  return null != p ? (0, r.jsx)(a.P3F, c(o({
     innerRef: f,
     onClick: p,
     tabIndex: null != p ? 0 : false,
     className: l()(u, {
-      [o.outer]: !n,
-      [o.inset]: n,
-      [o.padded]: t,
-      [o.active]: i,
-      [o.interactive]: null != p,
-      [o.noBackground]: h
+      [s.outer]: !n,
+      [s.inset]: n,
+      [s.padded]: t,
+      [s.active]: i,
+      [s.interactive]: null != p,
+      [s.noBackground]: h
     })
   }, g), {
     children: d
-  })) : (0, r.jsx)("div", c(s({
+  })) : (0, r.jsx)("div", c(o({
     ref: f,
     className: l()(u, {
-      [o.outer]: !n,
-      [o.inset]: n,
-      [o.padded]: t,
-      [o.active]: i,
-      [o.noBackground]: h
+      [s.outer]: !n,
+      [s.inset]: n,
+      [s.padded]: t,
+      [s.active]: i,
+      [s.noBackground]: h
     })
   }, g), {
     children: d

@@ -42,7 +42,7 @@ class E extends Chunk647438.PureComponent {
       path: n,
       label: i,
       editingPath: l,
-      isDefault: o,
+      isDefault: s,
       metadata: u
     } = this.props;
     return null != Chunk579022 && (e = null != Chunk579022.availableKB ? (0, Chunk424218.BU)(Chunk579022.availableKB, {
@@ -204,7 +204,7 @@ class E extends Chunk647438.PureComponent {
         confirmText: g.intl.string(g.t.iBUzS5),
         cancelText: g.intl.string(g.t["ETE/oC"]),
         onConfirm: () => {
-          this.handleStopEditing(), (0, o.iD)(this.props.path)
+          this.handleStopEditing(), (0, s.iD)(this.props.path)
         },
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
@@ -212,7 +212,7 @@ class E extends Chunk647438.PureComponent {
         })
       })))
     }), b(this, "handleSaveChanges", () => {
-      (0, o.Tb)(this.props.path, {
+      (0, s.Tb)(this.props.path, {
         label: null != this.state.label ? this.state.label : this.props.label,
         isDefault: null != this.state.isDefault ? this.state.isDefault : this.props.isDefault
       }), this.handleStopEditing()
@@ -280,7 +280,7 @@ class O extends Chunk647438.PureComponent {
       editingPath: null
     }), b(this, "handleAddInstallationLocation", () => {
       h.ZP.showOpenDialog(["openDirectory"]).then(e => {
-        null != e && 0 !== e.length && null != e[0] && "undefined" !== e[0] && (0, o.RY)(e[0])
+        null != e && 0 !== e.length && null != e[0] && "undefined" !== e[0] && (0, s.RY)(e[0])
       })
     }), b(this, "handleToggleEditing", e => {
       this.setState({

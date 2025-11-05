@@ -20,11 +20,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 let x = () => {
-  let [e, t] = Chunk647438.useState(""), [s, x] = Chunk647438.useState(""), [E, v] = Chunk647438.useState(false), [j, b] = Chunk647438.useState(false), [I, y] = Chunk647438.useState(null), [O, S] = Chunk647438.useState(null), N = (0, Chunk442837.e7)([Chunk541692.Z], () => Chunk541692.Z.getCountryCode()), C = N.code.split(" ")[0], A = async () => {
+  let [e, t] = Chunk647438.useState(""), [s, x] = Chunk647438.useState(""), [E, v] = Chunk647438.useState(false), [j, b] = Chunk647438.useState(false), [I, y] = Chunk647438.useState(null), [S, N] = Chunk647438.useState(null), O = (0, Chunk442837.e7)([Chunk541692.Z], () => Chunk541692.Z.getCountryCode()), C = O.code.split(" ")[0], A = async () => {
     try {
       await Chunk144114.Z.resendCode(module)
     } catch (e) {
-      S(module.body.message)
+      N(module.body.message)
     }
   }, T = async () => {
     v(true);
@@ -32,9 +32,9 @@ let x = () => {
       let {
         token: t
       } = await Chunk144114.Z.verifyPhone(C + module, Chunk120356);
-      y(null), S(null), b(true), Chunk144114.Z.validatePhoneForSupport(exports)
+      y(null), N(null), b(true), Chunk144114.Z.validatePhoneForSupport(exports)
     } catch (e) {
-      module.body.message ? (y(null), S(module.body.message)) : (y(module.body.phone), S(module.body.code))
+      module.body.message ? (y(null), N(module.body.message)) : (y(module.body.phone), N(module.body.code))
     } finally {
       v(false)
     }
@@ -60,7 +60,7 @@ let x = () => {
       className: Chunk197571.marginTop20,
       children: [(0, Chunk951288.jsx)(Chunk952802.Z, {
         label: Chunk388032.intl.string(Chunk388032.t["eJnn0+"]),
-        alpha2: N.alpha2,
+        alpha2: O.alpha2,
         countryCode: C,
         value: module,
         autoComplete: "off",
@@ -74,7 +74,7 @@ let x = () => {
         value: Chunk120356,
         onChange: x,
         maxLength: Chunk815660.z,
-        error: O
+        error: S
       }), (0, Chunk951288.jsx)(Chunk481060.Avr, {
         text: Chunk388032.intl.string(Chunk388032.t["5b60gi"]),
         onClick: A

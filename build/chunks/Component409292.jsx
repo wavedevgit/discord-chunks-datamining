@@ -48,7 +48,7 @@ class _ extends Chunk647438.Component {
         channel: t,
         inputSkuId: n
       } = this.props;
-      return null != e ? o.Z.fetchChannelStoreListing(t.id, e) : null != n ? o.Z.fetchChannelStoreListing(t.id, n) : o.Z.fetchChannelStoreListing(t.id)
+      return null != e ? s.Z.fetchChannelStoreListing(t.id, e) : null != n ? s.Z.fetchChannelStoreListing(t.id, n) : s.Z.fetchChannelStoreListing(t.id)
     }), m(this, "renderApplicationListing", e => {
       let {
         location: t

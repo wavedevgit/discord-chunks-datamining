@@ -51,8 +51,8 @@ function N(e) {
   i.useEffect(() => {
     let e = g.Z.getUserAffinity(t.id);
     (0, p.h)({
-      name: s.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
-      type: s.ImpressionTypes.VIEW,
+      name: o.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
+      type: o.ImpressionTypes.VIEW,
       properties: {
         gift_intent_type: n,
         affinity: null == e ? true : e.communicationProbability
@@ -121,7 +121,7 @@ function N(e) {
       }),
       onMouseEnter: L,
       onMouseLeave: Z,
-      children: (0, r.jsx)(o.animated.div, {
+      children: (0, r.jsx)(s.animated.div, {
         className: S.spriteContainer,
         children: (0, r.jsx)("div", {
           className: S.sprite

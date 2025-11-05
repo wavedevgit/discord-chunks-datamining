@@ -42,7 +42,7 @@ function b(e) {
   })), S = null != v && v.newClipIds.length > 0, T = (0, h.n)(e => e.clipsButtonRef), N = (0, h.n)(e => e.setClipsButtonRef), j = (0, l.e7)([c.Z], () => c.Z.hasLayers()), {
     preventIdle: P,
     allowIdle: x
-  } = (0, s.Y)("animation");
+  } = (0, o.Y)("animation");
 
   function A() {
     (0, a.ZDy)(async () => {
@@ -78,7 +78,7 @@ function b(e) {
       onOpenClipsGallery: A
     }), (0, r.jsx)("div", {
       ref: N,
-      children: (0, r.jsx)(o.JO, {
+      children: (0, r.jsx)(s.JO, {
         className: b,
         icon: a.AlX,
         showBadge: y,

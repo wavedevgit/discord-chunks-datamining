@@ -30,12 +30,12 @@ let g = Object.freeze({
       width: 376,
       height: 162,
       renderContent: e => (0, i.jsxs)(l.Fragment, {
-        children: [(0, i.jsx)(s.OZU, {
+        children: [(0, i.jsx)(o.OZU, {
           note: d.intl.string(d.t.Y4vMY8)
         }), (0, i.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: p.button,
-          children: (0, i.jsx)(s.Button, {
+          children: (0, i.jsx)(o.Button, {
             variant: "primary",
             text: d.intl.string(d.t.w5uwoI),
             onClick: e
@@ -68,9 +68,9 @@ let g = Object.freeze({
       height: 200,
       renderContent: (e, t) => (0, i.jsxs)("div", {
         className: p.emptyStateContainer,
-        children: [(0, i.jsx)(s.OZU, {
+        children: [(0, i.jsx)(o.OZU, {
           note: d.intl.string(d.t["aCYQ+P"])
-        }), null != e && (0, i.jsx)(s.Button, {
+        }), null != e && (0, i.jsx)(o.Button, {
           variant: "secondary",
           text: t ? d.intl.string(d.t.R40bU2) : d.intl.string(d.t.rXl8fj),
           onClick: e,
@@ -101,9 +101,9 @@ let g = Object.freeze({
     let {
       theme: t
     } = e, n = d.intl.string(d.t["oi+B4p"]);
-    return (0, i.jsx)(s.ubH, {
+    return (0, i.jsx)(o.ubH, {
       theme: t,
-      children: (0, i.jsx)(s.OZU, {
+      children: (0, i.jsx)(o.OZU, {
         note: n
       })
     })

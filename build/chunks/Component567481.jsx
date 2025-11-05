@@ -44,7 +44,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
           }), null == r.id) throw new f.Z({
           errorCode: b.lTL.INVALID_COMMAND
         }, "No application.");
-        s.Z.setInputLocked(t, n)
+        o.Z.setInputLocked(t, n)
       }
     },
     [Chunk981631.Etm.OPEN_OVERLAY_ACTIVITY_INVITE]: {
@@ -69,11 +69,11 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
           errorCode: b.lTL.NO_ELIGIBLE_ACTIVITY
         }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
         let {
-          lock: o,
-          context: s
+          lock: s,
+          context: o
         } = (0, m.jU)(r), u = (0, c.Z)(l, p.Z);
-        return (0, a.h7)(l, u, s).then(() => {
-          if (o(), u) throw new f.Z({
+        return (0, a.h7)(l, u, o).then(() => {
+          if (s(), u) throw new f.Z({
             errorCode: b.lTL.NO_ELIGIBLE_ACTIVITY
           }, "No eligible activity for application. Ensure user does have have privacy enabled.")
         })
@@ -96,7 +96,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
         if (null == r.application.id) throw new f.Z({
           errorCode: b.lTL.INVALID_COMMAND
         }, "No application.");
-        return o.ZP.resolveInvite(t, "Game SDK").then(e => {
+        return s.ZP.resolveInvite(t, "Game SDK").then(e => {
           let {
             invite: t,
             code: r
@@ -136,8 +136,8 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
           errorCode: b.lTL.INVALID_COMMAND
         }, "No application.");
         let {
-          lock: o,
-          context: s
+          lock: s,
+          context: o
         } = (0, m.jU)(t);
         return new Promise(e => {
           (0, i.ZDy)(async () => {
@@ -181,9 +181,9 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
               }), n))
             }
           }, {
-            contextKey: s === b.IlC.POPOUT ? i.u1M : i.z1l,
+            contextKey: o === b.IlC.POPOUT ? i.u1M : i.z1l,
             onCloseCallback: () => {
-              o(), e()
+              s(), e()
             }
           })
         })

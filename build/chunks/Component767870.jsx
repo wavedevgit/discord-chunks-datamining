@@ -40,9 +40,9 @@ function g(e) {
       width: i = 14,
       height: l = 15,
       color: a = "white",
-      foreground: o
+      foreground: s
     } = e,
-    s = function(e, t) {
+    o = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -57,12 +57,12 @@ function g(e) {
       }
       return i
     }(e, ["width", "height", "color", "foreground"]);
-  return (0, r.jsxs)("svg", (t = p({}, (0, c.Z)(p({}, s))), n = n = {
+  return (0, r.jsxs)("svg", (t = p({}, (0, c.Z)(p({}, o))), n = n = {
     preserveAspectRatio: "none",
     width: i,
     height: l,
     viewBox: "0 0 14 15",
-    className: o,
+    className: s,
     xmlns: "http://www.w3.org/2000/svg",
     children: [(0, r.jsx)("defs", {
       children: (0, r.jsxs)("linearGradient", {
@@ -122,10 +122,10 @@ function m(e) {
     messageStyle: c,
     upperCase: p,
     showSparkles: m
-  } = e, [_] = (0, s.Tt)(a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
+  } = e, [_] = (0, o.Tt)(a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
     showAfterTimestamp: n.valueOf(),
     cooldownDurationMs: 0
-  }), b = (0, o.ZP)(i, c);
+  }), b = (0, s.ZP)(i, c);
   return "" === b ? null : (p && (b = b.toUpperCase()), (0, r.jsxs)("div", {
     className: l()(t, d.countDown),
     children: [m ? (0, r.jsxs)(r.Fragment, {

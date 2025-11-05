@@ -22,7 +22,7 @@ function g(e) {
     className: t,
     markAsDismissed: n
   } = e;
-  return (0, r.jsxs)(s.Z, {
+  return (0, r.jsxs)(o.Z, {
     className: l()(h.card, t),
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-md/semibold",
@@ -44,7 +44,7 @@ function g(e) {
         size: "sm",
         fullWidth: true,
         text: f.intl.string(f.t.ebojgD),
-        onClick: () => (0, o.g)([d.pjP.PERSONALIZATION], [])
+        onClick: () => (0, s.g)([d.pjP.PERSONALIZATION], [])
       }), (0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",

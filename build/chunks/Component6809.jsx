@@ -43,7 +43,7 @@ let g = function() {
         isPersisted: true,
         analyticsLocations: e,
         themeName: "default ".concat(t)
-      }), (0, s.ZI)({
+      }), (0, o.ZI)({
         theme: t
       })
     }, [module]),

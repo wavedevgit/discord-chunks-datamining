@@ -37,7 +37,7 @@ let d = function(e) {
     status: p,
     applicationStream: d,
     voiceChannel: _
-  }) ? (0, r.jsx)(o.Z, {
+  }) ? (0, r.jsx)(s.Z, {
     location: "StatusText",
     textClassName: u.statusText,
     activities: n,
@@ -48,6 +48,6 @@ let d = function(e) {
     textSize: "sm"
   }) : (0, r.jsx)("div", {
     className: u.text,
-    children: (0, s.u5)(p)
+    children: (0, o.u5)(p)
   })
 }

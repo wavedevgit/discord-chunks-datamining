@@ -1,7 +1,7 @@
 /** Chunk was on 56710 **/
 /** chunk id: 55185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => E,
+  I: () => x,
   NK: () => C
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
@@ -165,7 +165,7 @@ function j(e) {
 }
 var C = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
 
-function E(e) {
+function x(e) {
   let {
     showPopout: t,
     popoutState: n,
@@ -232,7 +232,7 @@ function E(e) {
       t && !C.current && b(n), t !== C.current && (C.current = t)
     }, [n, t]), null == y || !t) return d;
   if ("popover" === y.type) {
-    var E, x;
+    var x, E;
     let {
       action: e,
       title: t,
@@ -254,7 +254,7 @@ function E(e) {
           type: "image",
           src: m.Z
         },
-        actions: [(E = function(e) {
+        actions: [(x = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -271,21 +271,21 @@ function E(e) {
             })
           }
           return e
-        }({}, e), x = x = {
+        }({}, e), E = E = {
           onClick: t => {
             var n;
             null == (n = e.onClick) || n.call(e, t), r()
           }
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(E, Object.getOwnPropertyDescriptors(x)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(x, Object.getOwnPropertyDescriptors(E)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(x)).forEach(function(e) {
-          Object.defineProperty(E, e, Object.getOwnPropertyDescriptor(x, e))
-        }), E)]
+        })(Object(E)).forEach(function(e) {
+          Object.defineProperty(x, e, Object.getOwnPropertyDescriptor(E, e))
+        }), x)]
       }), d]
     })
   }

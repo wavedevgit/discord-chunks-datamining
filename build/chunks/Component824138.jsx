@@ -126,12 +126,12 @@ class I extends Chunk647438.PureComponent {
         position: "top",
         align: "center",
         clickTrap: true,
-        children: l => (0, r.jsx)(o.u, {
+        children: l => (0, r.jsx)(s.u, {
           text: n,
-          children: (0, i.createElement)(s.qEK, v(y({}, l), {
+          children: (0, i.createElement)(o.qEK, v(y({}, l), {
             key: e.id,
             src: e.getAvatarURL(true, 24),
-            size: s.EFr.SIZE_24,
+            size: o.EFr.SIZE_24,
             className: a()(E.avatar, t),
             "aria-label": e.username,
             onContextMenu: t => void(null != e && (null == u || u(t, e))),
@@ -143,10 +143,10 @@ class I extends Chunk647438.PureComponent {
       let {
         renderOverflowPopout: i
       } = this.props;
-      return (0, r.jsx)(s.yRy, {
+      return (0, r.jsx)(o.yRy, {
         renderPopout: i,
         targetElementRef: this.partyMemberOverflowRef,
-        children: n => (0, r.jsx)(o.u, {
+        children: n => (0, r.jsx)(s.u, {
           text: b.intl.string(b.t.Zf4NPe),
           children: (0, r.jsx)("div", v(y({}, n), {
             ref: this.partyMemberOverflowRef,

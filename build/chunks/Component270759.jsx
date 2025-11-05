@@ -44,7 +44,7 @@ function x() {
 let A = function(e) {
   let {
     initialSection: t
-  } = e, n = (0, o.TH)(), l = (0, o.k6)();
+  } = e, n = (0, s.TH)(), l = (0, s.k6)();
   i.useEffect(() => {
     "true" === new URLSearchParams(n.search).get("confirm-age") && u.Z.dispatch({
       type: "AGE_GATE_MODAL_OPEN",
@@ -55,13 +55,13 @@ let A = function(e) {
   }, [l, n]), i.useEffect(() => {
     d.Y(T.Z5c.FRIENDS), (0, E.e)("friends")
   }, []);
-  let _ = (0, s.e7)([O.Z], () => O.Z.theme),
+  let _ = (0, o.e7)([O.Z], () => O.Z.theme),
     A = (0, I.If)(),
     {
       section: Z,
       rows: w
-    } = (0, s.cj)([y.ZP], () => y.ZP.getState()),
-    L = (0, s.e7)([g.Z], () => g.Z.getSuggestionCount()),
+    } = (0, o.cj)([y.ZP], () => y.ZP.getState()),
+    L = (0, o.e7)([g.Z], () => g.Z.getSuggestionCount()),
     R = i.useMemo(() => w.getRelationshipCounts(), [w]);
   i.useEffect(() => {
     null != t && p.Z.setInitialSection(t), 0 === R[T.OGo.FRIEND] && 0 === R[T.OGo.PENDING_INCOMING] && 0 === R[T.OGo.PENDING_OUTGOING] && 0 === R[T.OGo.BLOCKED] && p.Z.transitionToSection(T.pJs.ADD_FRIEND)

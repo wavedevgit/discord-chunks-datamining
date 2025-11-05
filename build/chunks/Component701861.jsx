@@ -74,21 +74,21 @@ function j(e) {
       cancelText: S.intl.string(S.t["ETE/oC"]),
       onConfirm: h
     })
-  }, [h, l, t]), E = (0, o.e7)([g.Z], () => g.Z.supports(C.AN.VIDEO)), O = t.isProvisional, y = l ? S.intl.string(S.t.RLcE6x) : S.intl.string(S.t.cvSt1J);
-  return (0, r.jsxs)(s.v2r, {
+  }, [h, l, t]), E = (0, s.e7)([g.Z], () => g.Z.supports(C.AN.VIDEO)), O = t.isProvisional, y = l ? S.intl.string(S.t.RLcE6x) : S.intl.string(S.t.cvSt1J);
+  return (0, r.jsxs)(o.v2r, {
     navId: "friend-row",
     "aria-label": S.intl.string(S.t.liqwPJ),
     onClose: d.Zy,
     onSelect: a,
-    children: [!O && E ? (0, r.jsx)(s.sNh, {
+    children: [!O && E ? (0, r.jsx)(o.sNh, {
       id: "start-video-call",
       label: S.intl.string(S.t.oCqlGG),
       action: f
-    }) : null, !O && (0, r.jsx)(s.sNh, {
+    }) : null, !O && (0, r.jsx)(o.sNh, {
       id: "start-voice-call",
       label: S.intl.string(S.t.focH1t),
       action: p
-    }), (0, r.jsx)(s.sNh, {
+    }), (0, r.jsx)(o.sNh, {
       id: "remove-friend",
       label: y,
       action: m,
@@ -111,7 +111,7 @@ class P extends Chunk647438.PureComponent {
       applicationStream: i,
       status: l,
       isMobile: a,
-      isGameRelationship: o,
+      isGameRelationship: s,
       giftIntentType: c
     } = this.props, {
       isActiveRow: u
@@ -138,7 +138,7 @@ class P extends Chunk647438.PureComponent {
             userIgnored: m.Z.isIgnored(e.id)
           }),
           hovered: t,
-          showAccountIdentifier: !o && !e.isProvisional
+          showAccountIdentifier: !s && !e.isProvisional
         }), (0, r.jsxs)("div", {
           className: T.actions,
           children: [null != c && (0, r.jsx)(p.Z, {
@@ -147,12 +147,12 @@ class P extends Chunk647438.PureComponent {
             analyticsPage: I.ZY5.FRIENDS_LIST,
             shouldHighlight: t
           }), (0, r.jsx)(E.Z, {
-            icon: s.kBi,
+            icon: o.kBi,
             tooltip: S.intl.string(S.t["g33r/P"]),
             onClick: this.handleOpenPrivateChannel,
             shouldHighlight: t
           }), (0, r.jsx)(E.Z, {
-            icon: s.Huf,
+            icon: o.Huf,
             tooltip: S.intl.string(S.t["UKOtz+"]),
             onClick: this.handleOpenActionsMenu,
             shouldHighlight: t

@@ -51,13 +51,13 @@ async function U(e, t, n, r) {
     let {
       lock: t
     } = (0, R.jU)(e);
-    return (0, s.h7)(l, a).then(() => {
+    return (0, o.h7)(l, a).then(() => {
       throw t(), new x.Z({
         errorCode: M.lTL.NO_ELIGIBLE_ACTIVITY
       }, "No eligible activity for application. Ensure user does have have privacy enabled.")
     })
   }
-  await o.Z.sendActivityInviteUser({
+  await s.Z.sendActivityInviteUser({
     userId: n,
     type: r,
     activity: l,
@@ -148,17 +148,17 @@ let G = {
           session_id: i,
           channel_id: l,
           message_id: a,
-          application_id: o
+          application_id: s
         }
-      } = e, s = t.transport === D.He.IPC && null != o ? o : t.application.id;
-      if (null == s) throw new x.Z({
+      } = e, o = t.transport === D.He.IPC && null != s ? s : t.application.id;
+      if (null == o) throw new x.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No application.");
       let u = Promise.resolve(false);
       return n === M.mFx.JOIN && (u = c.Z.join({
         userId: r,
         sessionId: i,
-        applicationId: s,
+        applicationId: o,
         channelId: l,
         messageId: a
       })), u.then(e => {
@@ -181,7 +181,7 @@ let G = {
       }, "No application.");
       let {
         channel: l,
-        guild: o,
+        guild: s,
         frame: c
       } = (0, L.T)(), u = (0, h.ZP)({
         application: t.application,
@@ -194,7 +194,7 @@ let G = {
           errorCode: M.lTL.INVALID_COMMAND
         }, "Application is not currently mounted.");
         let e = v.Z.getApplicationActivity(i.id);
-        if (null != e)(0, s.h7)(e, false, p);
+        if (null != e)(0, o.h7)(e, false, p);
         else throw new x.Z({
           errorCode: M.lTL.NO_ELIGIBLE_ACTIVITY
         }, "No eligible activity for application. Ensure an activity was set using setActivity.")
@@ -222,7 +222,7 @@ let G = {
             }
             return e
           }({}, t), a = a = {
-            guild: o,
+            guild: s,
             channel: l,
             applicationId: i.id,
             analyticsLocation: M.Sbl.ACTIVITY_RPC,
@@ -336,8 +336,8 @@ let G = {
           args: {
             command: i,
             preview_image: l,
-            components: o,
-            require_launch_channel: s,
+            components: s,
+            require_launch_channel: o,
             content: c,
             options: u,
             pid: d
@@ -354,10 +354,10 @@ let G = {
         errorCode: M.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
       let f = (0, w.Z)();
-      if (null == f && s) throw new x.Z({
+      if (null == f && o) throw new x.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No channel found");
-      if (null !== l || null !== o || null !== c) {
+      if (null !== l || null !== s || null !== c) {
         let e = [];
         true !== l && (e = [{
           id: N.default.cast(N.default.fromTimestamp(Date.now())),
@@ -371,7 +371,7 @@ let G = {
           id: N.default.cast(N.default.fromTimestamp(Date.now())),
           applicationId: p,
           content: c,
-          components: o,
+          components: s,
           attachments: e
         })
       }
@@ -386,7 +386,7 @@ let G = {
             name: i,
             options: u
           },
-          requireLaunchChannel: true === s,
+          requireLaunchChannel: true === o,
           onShareResult: n => {
             t || (t = n), r.lock(), e({
               success: t

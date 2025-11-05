@@ -44,11 +44,11 @@ function g(e) {
   }, [y, n, p, m, _]);
   return (0, r.jsxs)(c.Z, {
     onScroll: g,
-    children: [(0, r.jsx)(o.Z, {
+    children: [(0, r.jsx)(s.Z, {
       title: b,
       description: E,
       children: (0, r.jsx)(a.Z, {})
-    }), (0, r.jsxs)(s.Z, {
+    }), (0, r.jsxs)(o.Z, {
       children: [(0, r.jsx)(l.Heading, {
         className: f.sectionTitle,
         variant: "heading-lg/semibold",

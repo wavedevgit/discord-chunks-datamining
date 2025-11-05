@@ -28,7 +28,7 @@ function m(e) {
       n = u.Z.getGuild(t);
     return null != n && (0, c.eM)(n, e)
   });
-  return (0, o.Z)({
+  return (0, s.Z)({
     type: i.ImpressionTypes.POPOUT,
     name: i.ImpressionNames.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL,
     properties: {
@@ -47,7 +47,7 @@ function m(e) {
       text: h.intl.string(h.t.OgQQbG),
       variant: "primary",
       onClick: () => {
-        s.Z.open(t, p.pNK.ROLE_SUBSCRIPTIONS)
+        o.Z.open(t, p.pNK.ROLE_SUBSCRIPTIONS)
       }
     }],
     onRequestClose: () => n(f.L.USER_DISMISS),

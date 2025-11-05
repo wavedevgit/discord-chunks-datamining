@@ -18,7 +18,7 @@ function p(e) {
   let {
     children: t
   } = e, n = (0, i.e7)([a.Z], () => a.Z.getHighestState());
-  return (0, o.isDesktop)() || n !== s.kEZ.OPENING ? (0, o.isDesktop)() || n !== s.kEZ.OPEN ? t : (0, r.jsxs)(r.Fragment, {
+  return (0, s.isDesktop)() || n !== o.kEZ.OPENING ? (0, s.isDesktop)() || n !== o.kEZ.OPEN ? t : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       className: u.backgroundArtwork,
       src: d,

@@ -76,7 +76,7 @@ class m extends Chunk647438.PureComponent {
       memoizedMode: this.props.mode,
       clicked: false
     }), g(this, "handleInstallDownload", () => {
-      d.Z.isConnected() ? o.Z.show({
+      d.Z.isConnected() ? s.Z.show({
         title: f.intl.string(f.t.tiu1ly),
         body: f.intl.string(f.t["zK+lqW"]),
         onConfirm: this.doUpdate,
@@ -87,7 +87,7 @@ class m extends Chunk647438.PureComponent {
     }), g(this, "doUpdate", () => {
       this.state.clicked || (this.setState({
         clicked: true
-      }), (0, s.Q)())
+      }), (0, o.Q)())
     })
   }
 }

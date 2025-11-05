@@ -21,7 +21,7 @@ let h = () => {
     [h, g] = (0, Chunk243778.XR)(require ? Chunk704215.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == exports ? true : exports.version) ? module : 0, true, true),
     m = (0, Chunk794324.mB)(exports),
     _ = null != h ? ((e, t) => {
-      var n, r, i, a, o, s, c, u;
+      var n, r, i, a, s, o, c, u;
       if ((null == t ? true : t.type) === l.Z.COACHTIP || e.hasPreviewAssets) {
         let i = null != t ? {
           title: () => t.title,
@@ -81,7 +81,7 @@ let h = () => {
           entrypointBackgroundStyle: null == e ? true : e.style,
           entryPointBackgroundAssets: {
             srcDarkHovered: null == e || null == (a = e.asset) || null == (i = a.hovered) ? true : i.dark,
-            srcLightHovered: null == e || null == (s = e.asset) || null == (o = s.hovered) ? true : o.light
+            srcLightHovered: null == e || null == (o = e.asset) || null == (s = o.hovered) ? true : s.light
           }
         }
       }

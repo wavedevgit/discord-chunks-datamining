@@ -41,17 +41,17 @@ function D(e) {
   let {
     guild: t,
     isStudyRoomNotice: n = false
-  } = e, l = (0, b.y)(t.id), d = (0, E.k5)(t.id), j = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
+  } = e, l = (0, b.y)(t.id), d = (0, E.k5)(t.id), j = (0, s.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
     isStageNoticeHidden: D,
     isEventNoticeHidden: k
-  } = (0, o.cj)([m.Z], () => ({
+  } = (0, s.cj)([m.Z], () => ({
     isStageNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       stageId: null == j ? true : j.id
     }),
     isEventNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       eventId: null == d ? true : d.id
     })
-  }), [j, d]), U = null == l ? true : l.id, G = (0, o.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), B = (0, o.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), H = (0, o.e7)([P.Z], () => P.Z.can(Z.Plq.CONNECT, l)), V = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, o.e7)([x.default], () => x.default.getUser(F), [F]);
+  }), [j, d]), U = null == l ? true : l.id, G = (0, s.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), B = (0, s.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), H = (0, s.e7)([P.Z], () => P.Z.can(Z.Plq.CONNECT, l)), V = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, s.e7)([x.default], () => x.default.getUser(F), [F]);
   i.useEffect(() => {
     null != F && (0, u.PR)(F)
   }, [F]);
@@ -72,8 +72,8 @@ function D(e) {
       activeChannel: i,
       canConnect: l,
       myRole: a,
-      eventCreator: o,
-      speakers: s,
+      eventCreator: s,
+      speakers: o,
       listenerCount: u,
       isEventNoticeHidden: d,
       isStageNoticeHidden: f,
@@ -115,7 +115,7 @@ function D(e) {
           onClose: () => (0, g.ji)({
             stageId: null == n ? true : n.id
           }),
-          users: s.length > 5 ? s.slice(0, 5) : s,
+          users: o.length > 5 ? o.slice(0, 5) : o,
           overflowUsers: u < 1 ? null : (0, r.jsxs)("div", {
             className: R.pill,
             children: [(0, r.jsx)(c.VWR, {
@@ -151,7 +151,7 @@ function D(e) {
         onClose: () => (0, g.ji)({
           stageId: null == n ? true : n.id
         }),
-        users: s.length > 5 ? s.slice(0, 5) : s,
+        users: o.length > 5 ? o.slice(0, 5) : o,
         overflowUsers: u < 1 ? null : (0, r.jsxs)("div", {
           className: R.pill,
           children: [(0, r.jsx)(c.VWR, {
@@ -190,7 +190,7 @@ function D(e) {
         onClose: () => (0, g.ji)({
           eventId: null == t ? true : t.id
         }),
-        users: null == o ? [] : [o],
+        users: null == s ? [] : [s],
         overflowUsers: n < 1 ? null : (0, r.jsxs)("div", {
           className: R.pill,
           children: [(0, r.jsx)(c.r7p, {
@@ -224,7 +224,7 @@ function D(e) {
         onClose: () => (0, g.ji)({
           eventId: null == t ? true : t.id
         }),
-        users: null == o ? [] : [o],
+        users: null == s ? [] : [s],
         overflowUsers: n < 1 ? null : (0, r.jsxs)("div", {
           className: R.pill,
           children: [(0, r.jsx)(c.r7p, {
@@ -272,7 +272,7 @@ function D(e) {
     }) : null, (0, r.jsxs)("div", {
       className: R.header,
       children: [(0, r.jsx)(A.Z, {
-        color: s.Z.unsafe_rawColors.GREEN_230.css,
+        color: o.Z.unsafe_rawColors.GREEN_230.css,
         width: 16,
         height: 16
       }), (0, r.jsx)(c.Text, {

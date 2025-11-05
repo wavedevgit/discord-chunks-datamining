@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 567458, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,17 +10,17 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk46456 = require("./46456.js");
 
-function s(e) {
+function o(e) {
   let {
     markAsDismissed: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.container,
+    className: s.container,
     children: [(0, r.jsx)("div", {
-      className: o.pointer
+      className: s.pointer
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      className: o.content,
+      className: s.content,
       children: a.intl.string(a.t.rdzeVP)
     }), (0, r.jsx)(i.Button, {
       variant: "overlay-primary",

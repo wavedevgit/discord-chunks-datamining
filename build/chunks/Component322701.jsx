@@ -21,14 +21,14 @@ let f = function(e) {
     hasSearchQuery: h,
     sectionFilter: g,
     footer: m
-  } = e, _ = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), b = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, l.ZP)({
+  } = e, _ = (0, s.e7)([u.Z], () => u.Z.keyboardModeEnabled), b = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, l.ZP)({
     id: "people",
     isEnabled: _,
     async scrollToStart() {},
     async scrollToEnd() {}
   }), O = g !== d.pJs.ONLINE && g !== d.pJs.ALL, y = b || h || O, v = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
     children: [f(t), e.map(n)]
-  }, t) : (0, r.jsxs)(s.W, {
+  }, t) : (0, r.jsxs)(o.W, {
     transitionAppear: false,
     component: "div",
     children: [f(t), e.map(n)]

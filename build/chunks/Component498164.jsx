@@ -126,7 +126,7 @@ let M = {
         }
       } = e;
       return new Promise((e, i) => {
-        o.Z.wait(() => {
+        s.Z.wait(() => {
           p.Z.resolveGiftCode(t, true, true).then(i => {
             let {
               giftCode: l
@@ -252,15 +252,15 @@ let M = {
                   attempt_id: n
                 });
                 let a = await _.ZP.fetchApplication(e),
-                  o = null == a || null == (r = a.bot) ? true : r.id;
-                if (null == o) return void T.default.track(w.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
+                  s = null == a || null == (r = a.bot) ? true : r.id;
+                if (null == s) return void T.default.track(w.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
                   application_id: e,
                   success: false,
                   failure_reason: "no_bot_user",
                   attempt_id: n
                 });
-                let s = await u.Z.openPrivateChannel({
-                    recipientIds: o
+                let o = await u.Z.openPrivateChannel({
+                    recipientIds: s
                   }),
                   c = new URL(t),
                   d = null != (i = c.searchParams.get("referrer_id")) ? i : true,
@@ -269,7 +269,7 @@ let M = {
                   } = await (0, g.ur)(e, c.searchParams.get("link_id"), c.searchParams.get("custom_id"));
                 await (0, h.Z)({
                   targetApplicationId: e,
-                  channelId: s,
+                  channelId: o,
                   analyticsLocations: [m.Z.DEEPLINK],
                   customId: p,
                   referrerId: d
@@ -345,7 +345,7 @@ let M = {
           query: r
         }
       } = e;
-      return (0, s.rt)({
+      return (0, o.rt)({
         paymentSourceType: w.HeQ.PAYPAL,
         state: t,
         path: n,
@@ -364,7 +364,7 @@ let M = {
           payment_source_type: i
         }
       } = e;
-      return (0, s.rt)({
+      return (0, o.rt)({
         paymentSourceType: i,
         state: t,
         path: n,

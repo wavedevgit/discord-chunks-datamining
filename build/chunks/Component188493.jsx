@@ -18,12 +18,12 @@ var Chunk951288 = require("./951288.js"),
 function h(e) {
   let {
     loadId: t
-  } = e, n = (0, l.e7)([o.default], () => (0, d.Xp)([o.default])), h = u.Z.useField("languageCode"), g = null != h ? h : n, m = i.useCallback(e => {
+  } = e, n = (0, l.e7)([s.default], () => (0, d.Xp)([s.default])), h = u.Z.useField("languageCode"), g = null != h ? h : n, m = i.useCallback(e => {
     u.Z.setState({
       languageCode: e
     });
     let n = u.Z.getField("fetchedQuery");
-    s.Z.clearSearchResults({
+    o.Z.clearSearchResults({
       ignoreQueries: [n]
     }), c.Z.loadCategoryResults({
       loadId: t,

@@ -108,8 +108,8 @@ let M = e => {
       selected: t,
       locationState: n,
       icon: a,
-      onClick: o,
-      collectibleShopTab: s,
+      onClick: s,
+      collectibleShopTab: o,
       onMouseEnter: u,
       onMouseLeave: p,
       children: f
@@ -121,15 +121,15 @@ let M = e => {
       } = (0, g.ZP)(b),
       [O, y] = i.useState(false),
       I = i.useCallback(() => {
-        true !== o && o(), true !== s && (0, v.mK)({
-          tab: s,
+        true !== s && s(), true !== o && (0, v.mK)({
+          tab: o,
           analyticsLocations: E,
           analyticsSource: b
         }), y(true), (0, v.Sm)({
           analyticsSource: b,
           analyticsLocations: E
         })
-      }, [b, E, o, y, s]),
+      }, [b, E, s, y, o]),
       C = x.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
       children: [O && (0, r.jsx)(k, {}), (0, r.jsx)(d.Qj, R(L({
@@ -155,7 +155,7 @@ let M = e => {
       displayOptions: n,
       assetId: i,
       reducedMotion: l = false
-    } = e, a = null != i ? (0, m.Z)(i, c.EFr.SIZE_80, !l) : true, o = n.title(), s = null == (t = n.body) ? true : t.call(n), u = null == s || "" === s;
+    } = e, a = null != i ? (0, m.Z)(i, c.EFr.SIZE_80, !l) : true, s = n.title(), o = null == (t = n.body) ? true : t.call(n), u = null == o || "" === o;
     return (0, r.jsxs)("div", {
       className: w.shopMarketingTooltipContent,
       children: [(0, r.jsx)("div", {
@@ -171,18 +171,18 @@ let M = e => {
         className: w.shopMarketingTooltipText,
         children: [(0, r.jsx)(c.Heading, {
           variant: u ? "heading-sm/medium" : "heading-sm/bold",
-          children: o
+          children: s
         }), !u && (0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
           className: w.marketingBadgeTooltipContent,
-          children: s
+          children: o
         })]
       })]
     })
   }),
   H = e => {
     let t, n;
-    var l, o, u, d, h, g, m, _, b, E, O, v, {
+    var l, s, u, d, h, g, m, _, b, E, O, v, {
         displayOptions: I
       } = e,
       C = D(e, ["displayOptions"]);
@@ -190,8 +190,8 @@ let M = e => {
       [T, N] = i.useState(0),
       [j, P] = i.useState(false),
       x = (0, p.ZP)(),
-      A = (0, s.wj)(x);
-    j ? A ? (t = null == (l = I.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = I.entrypointBackgroundStyle) || null == (o = u.hovered) ? true : o.dark) : (t = null == (d = I.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (g = I.entrypointBackgroundStyle) || null == (h = g.hovered) ? true : h.light) : A ? (t = null == (m = I.entryPointBackgroundAssets) ? true : m.srcDark, n = null == (b = I.entrypointBackgroundStyle) || null == (_ = b.resting) ? true : _.dark) : (t = null == (E = I.entryPointBackgroundAssets) ? true : E.srcLight, n = null == (v = I.entrypointBackgroundStyle) || null == (O = v.resting) ? true : O.light);
+      A = (0, o.wj)(x);
+    j ? A ? (t = null == (l = I.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = I.entrypointBackgroundStyle) || null == (s = u.hovered) ? true : s.dark) : (t = null == (d = I.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (g = I.entrypointBackgroundStyle) || null == (h = g.hovered) ? true : h.light) : A ? (t = null == (m = I.entryPointBackgroundAssets) ? true : m.srcDark, n = null == (b = I.entrypointBackgroundStyle) || null == (_ = b.resting) ? true : _.dark) : (t = null == (E = I.entryPointBackgroundAssets) ? true : E.srcLight, n = null == (v = I.entrypointBackgroundStyle) || null == (O = v.resting) ? true : O.light);
     let k = i.useCallback(e => {
         I.assetIds.length > 0 && N(e => (e + 1) % I.assetIds.length), P(true), null == e || e()
       }, [I.assetIds.length]),
@@ -271,16 +271,16 @@ let M = e => {
         displayOptions: l,
         dismissContent: a
       } = e,
-      o = D(e, ["displayOptions", "dismissContent"]);
+      s = D(e, ["displayOptions", "dismissContent"]);
     let c = i.useRef(null),
       u = (0, p.ZP)(),
-      d = (0, s.wj)(u),
+      d = (0, o.wj)(u),
       f = l.entryPointBackgroundAssets,
       h = l.entrypointBackgroundStyle,
       g = d ? null == f ? true : f.srcDarkHovered : null == f ? true : f.srcLightHovered,
       m = d ? null == h || null == (t = h.hovered) ? true : t.dark : null == h || null == (n = h.hovered) ? true : n.light;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(U, R(L({}, o), {
+      children: [(0, r.jsxs)(U, R(L({}, s), {
         onClick: () => a(A.L.TAKE_ACTION),
         listItemRef: c,
         children: [(0, r.jsx)("div", {
@@ -327,14 +327,14 @@ let M = e => {
       listItemRef: l
     } = e, {
       shopButtonDisplayOptions: a,
-      dismissShopButtonDC: s
+      dismissShopButtonDC: o
     } = (0, T.Z)(), u = (0, O.Y)({
       location: "CollectiblesShopButton"
-    }), d = !(0, c.$sL)() && u, [p, f] = (0, b.US)(d ? [o.z.WISHLIST_SHOP_BUTTON_POPOVER] : []), h = {
+    }), d = !(0, c.$sL)() && u, [p, f] = (0, b.US)(d ? [s.z.WISHLIST_SHOP_BUTTON_POPOVER] : []), h = {
       selected: t,
       locationState: i,
       onClick: () => {
-        s(), null == n || n()
+        o(), null == n || n()
       },
       listItemRef: l
     };
@@ -351,12 +351,12 @@ let M = e => {
         return (0, r.jsx)(G, L({}, h));
       case j.k2.COACHMARK:
         return (0, r.jsx)(F, R(L({
-          dismissContent: s
+          dismissContent: o
         }, h), {
           displayOptions: a
         }))
     }
-    return p === o.z.WISHLIST_SHOP_BUTTON_POPOVER ? (0, r.jsx)(z, R(L({}, h), {
+    return p === s.z.WISHLIST_SHOP_BUTTON_POPOVER ? (0, r.jsx)(z, R(L({}, h), {
       dismissContent: f
     })) : (0, r.jsx)(U, L({}, h))
   }

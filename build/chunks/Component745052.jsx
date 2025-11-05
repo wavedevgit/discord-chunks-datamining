@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 745052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => es
+  Z: () => eo
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -113,16 +113,16 @@ function ei() {
     b = Chunk647438.useCallback(e => {
       var t, i;
       let {
-        row: o
-      } = e, s = n[o], c = null == (i = n[o + 1]) || null == (t = i.channel) ? true : t.id, u = s.channel.id;
+        row: s
+      } = e, o = n[s], c = null == (i = n[s + 1]) || null == (t = i.channel) ? true : t.id, u = o.channel.id;
       return (0, r.jsx)(W.Z, {
-        index: o,
+        index: s,
         className: a()({
           [ee.selected]: null != h && h === u,
           [ee.siblingSelected]: null != h && h === c
         }),
-        channel: s.channel,
-        user: s.user,
+        channel: o.channel,
+        user: o.user,
         hasSingleMessageRequest: l
       }, u)
     }, [Chunk120356, require, Chunk112724]),
@@ -261,13 +261,13 @@ let ea = e => {
   })
 };
 
-function eo(e) {
+function es(e) {
   let {
     section: t
   } = e;
   return t === K.pS.SPAM ? (0, r.jsx)(q.Z, {}) : (0, r.jsx)(ei, {})
 }
-let es = (0, Chunk112724.Z)(function(e) {
+let eo = (0, Chunk112724.Z)(function(e) {
   let {
     width: t
   } = e, n = (0, V.q)();
@@ -275,11 +275,11 @@ let es = (0, Chunk112724.Z)(function(e) {
     f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, P.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
     }), S.Z.increment({
-      name: s.V.MESSAGE_REQUEST_VIEW
+      name: o.V.MESSAGE_REQUEST_VIEW
     })
   });
   let l = (0, c.e7)([x.Z], () => x.Z.theme),
-    o = (0, z.w)(),
+    s = (0, z.w)(),
     [u, d] = i.useState(false),
     h = (0, c.e7)([w.ZP], () => {
       let e = w.ZP.getSidebarState(w.uZ);
@@ -330,15 +330,15 @@ let es = (0, Chunk112724.Z)(function(e) {
             }), (0, r.jsx)(p.njP.Item, {
               id: K.pS.SPAM,
               className: ee.item,
-              children: 0 === o ? $.intl.string($.t.ulKXHp) : $.intl.formatToPlainString($.t["5jtrlZ"], {
-                count: o
+              children: 0 === s ? $.intl.string($.t.ulKXHp) : $.intl.formatToPlainString($.t["5jtrlZ"], {
+                count: s
               })
             })]
           })]
         })
       }), (0, r.jsx)("div", {
         className: et.content,
-        children: (0, r.jsx)(eo, {
+        children: (0, r.jsx)(es, {
           section: v
         })
       })]

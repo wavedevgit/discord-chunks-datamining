@@ -81,7 +81,7 @@ class g extends Chunk647438.PureComponent {
         }))
       })
     }), h(this, "handleClose", () => {
-      let e = s.Z.getChannelId(),
+      let e = o.Z.getChannelId(),
         t = p.intl.formatToPlainString(p.t.DEn7nu, {
           invitePeople: this.getInviteText()
         });

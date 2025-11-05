@@ -86,7 +86,7 @@ function b(e) {
       if (null != t) return t;
       switch (y.type) {
         case m.IIU.PLAYING:
-          if ((0, s.Z)(y)) return {
+          if ((0, o.Z)(y)) return {
             subtitle: _.intl.string(_.t.tO8wOx),
             icon: (0, r.jsx)(h.Z.Header.Icon, {
               src: h.Z.Header.Icon.Src.XBOX
@@ -109,7 +109,7 @@ function b(e) {
           };
         case m.IIU.LISTENING:
           let i;
-          return i = (0, o.Z)(y) ? (0, r.jsx)(h.Z.Header.Icon, {
+          return i = (0, s.Z)(y) ? (0, r.jsx)(h.Z.Header.Icon, {
             src: h.Z.Header.Icon.Src.SPOTIFY
           }) : null != e.getIconURL(g.Z) ? (0, r.jsx)(h.Z.Header.Icon, {
             src: e.getIconURL(g.Z)

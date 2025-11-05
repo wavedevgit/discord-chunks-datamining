@@ -2,7 +2,7 @@
 /** chunk id: 685311, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,32 +15,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk703656 = require("./703656.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
-let p = function(e) {
+let m = function(e) {
   let {
     match: t,
     location: n,
     attemptDeepLink: s
-  } = e, [p, m] = i.useState(0);
+  } = e, [m, p] = i.useState(0);
   i.useEffect(() => {
     o.default.once("connected", () => {
-      m(1)
+      p(1)
     }), o.default.once("disconnected", () => {
       (0, d.uL)((0, c.M)())
     }), o.default.connect()
   }, []), i.useEffect(() => {
-    if (0 !== p) return;
+    if (0 !== m) return;
     let e = setTimeout(() => (0, d.uL)((0, c.M)()), 3e3);
     return () => clearTimeout(e)
-  }, [p]);
+  }, [m]);
   let f = i.useCallback(async (e, t) => {
     try {
-      m(2), await s(e, t), m(3)
+      p(2), await s(e, t), p(3)
     } catch (e) {
       console.error("Error opening deeplink", e)
     }
   }, [s]);
   if ((0, d.DB)()) return null;
-  switch (p) {
+  switch (m) {
     case 1:
       return (0, r.jsxs)(u.ZP, {
         children: [(0, r.jsx)(u.Dx, {

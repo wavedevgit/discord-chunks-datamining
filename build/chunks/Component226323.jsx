@@ -104,7 +104,7 @@ function x(e) {
       serverMute: L,
       serverDeaf: R
     } = e,
-    D = (0, o.e7)([y.Z], () => y.Z.isLocalMute(x.id)),
+    D = (0, s.e7)([y.Z], () => y.Z.isLocalMute(x.id)),
     M = (0, d.Z)({
       userId: x.id,
       checkSoundSharing: true
@@ -175,7 +175,7 @@ function x(e) {
     channelId: O.id,
     position: "top",
     clickTrap: true,
-    children: e => (0, r.jsx)(s.u, {
+    children: e => (0, r.jsx)(o.u, {
       text: F,
       children: (0, r.jsx)(c.P3F, {
         innerRef: p,
@@ -214,7 +214,7 @@ function A(e) {
     voiceStates: t,
     channel: n,
     className: l
-  } = e, [s, u] = i.useState(false), d = (0, o.e7)([O.default], () => O.default.getId()), {
+  } = e, [o, u] = i.useState(false), d = (0, s.e7)([O.default], () => O.default.getId()), {
     containerRef: h,
     maxVisibleAvatars: g
   } = function(e) {
@@ -238,23 +238,23 @@ function A(e) {
         if (r.length >= n) return [r, true];
         r.push(i)
       } return [r, false]
-  }(t, d, g), b = s ? c.V_R : c.qJs, E = (0, r.jsx)(c.M0o, {
-    onClick: () => u(!s),
+  }(t, d, g), b = o ? c.V_R : c.qJs, E = (0, r.jsx)(c.M0o, {
+    onClick: () => u(!o),
     color: c.YX$.PRIMARY,
     size: c.tT7.SIZE_24,
-    tooltip: s ? C.intl.string(C.t["Z/Tya5"]) : C.intl.string(C.t.XR5BAc),
+    tooltip: o ? C.intl.string(C.t["Z/Tya5"]) : C.intl.string(C.t.XR5BAc),
     icon: (0, r.jsx)(b, {
       size: "xs",
       color: "currentColor"
     }),
     focusProps: j
-  }), y = _ && s ? t : m;
+  }), y = _ && o ? t : m;
   return y.length <= 0 ? null : (0, r.jsx)(c.zJl, {
     className: a()(S.scroller, l),
     fade: true,
     children: (0, r.jsxs)("div", {
       ref: h,
-      className: a()(S.voiceUsers, !s && S.collapsed),
+      className: a()(S.voiceUsers, !o && S.collapsed),
       role: "group",
       "aria-label": C.intl.string(C.t["/ZgaVU"]),
       children: [y.map(e => {

@@ -35,14 +35,14 @@ class h extends Chunk317770.Z {
       var t;
       let {
         voiceStates: l
-      } = e, a = o.default.getId(), h = null == (t = c.Z.getSession()) ? true : t.sessionId, g = l.find(e => e.userId === a && e.sessionId === h);
+      } = e, a = s.default.getId(), h = null == (t = c.Z.getSession()) ? true : t.sessionId, g = l.find(e => e.userId === a && e.sessionId === h);
       if (null == g) return;
       let m = g.channelId;
       if (null == m) {
         (0, i.nfh)(f) && (0, i.Mr3)(f);
         return
       }
-      let _ = s.Z.getChannel(m);
+      let _ = o.Z.getChannel(m);
       if (!(null == _ ? true : _.isGuildStageVoice())) return;
       let b = (0, u.gf)(g) === u.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
       if (null != _ && b) {

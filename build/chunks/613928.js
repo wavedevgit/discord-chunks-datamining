@@ -63,7 +63,7 @@ async function T(e, t, n) {
       channel_id: e.data.channel_id,
       message_id: e.data.message_id
     })),
-    o = l.map(e => {
+    s = l.map(e => {
       if (e.type === b.Ni.MESSAGE) {
         var t, n, r;
         let i = [];
@@ -80,7 +80,7 @@ async function T(e, t, n) {
       }
       return []
     }).flat().filter(Boolean),
-    s = l.filter(e => e.type === b.Ni.SUMMARY).map(e => ({
+    o = l.filter(e => e.type === b.Ni.SUMMARY).map(e => ({
       guild_id: e.data.guild_id,
       channel_id: e.data.channel_id,
       summary_id: e.data.summary_id
@@ -95,8 +95,8 @@ async function T(e, t, n) {
       channel_id: e.data.channel_id
     }));
   await h.Z.fetchHydrated(t, n, {
-    messageItems: [...a, ...o],
-    summaryItems: s,
+    messageItems: [...a, ...s],
+    summaryItems: o,
     activityItems: c,
     generatedCandidateItems: u
   })
@@ -113,7 +113,7 @@ function j(e, t, n) {
     i = null;
   for (let l of e) {
     if (null == l.author || t && i === l.author.id) continue;
-    let e = l instanceof c.ZP ? l : (0, o.e5)(l);
+    let e = l instanceof c.ZP ? l : (0, s.e5)(l);
     if (r.push(e), i = l.author.id, null != n && r.length >= n) break
   }
   return r
@@ -210,8 +210,8 @@ function A(e, t) {
     }
     return e
   }({}, t), r = r = {
-    message: (0, o.e5)(e.message),
-    threadChannel: null != e.thread_channel ? s.dy.fromServer(e.thread_channel, e.guild_id) : true,
+    message: (0, s.e5)(e.message),
+    threadChannel: null != e.thread_channel ? o.dy.fromServer(e.thread_channel, e.guild_id) : true,
     beforeMessages: i,
     afterMessages: l
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
@@ -307,8 +307,8 @@ function M(e) {
   }
   let l = u.Z.getChannel(r);
   if (null == l ? true : l.nsfw) returntrue;
-  let o = null != (i = null != (n = null == l ? true : l.guild_id) ? n : i) ? d.Z.getGuild(i) : null;
-  return (null == o ? true : o.nsfwLevel) === O.V_K.EXPLICIT || (null == o ? true : o.nsfwLevel) === O.V_K.AGE_RESTRICTED
+  let s = null != (i = null != (n = null == l ? true : l.guild_id) ? n : i) ? d.Z.getGuild(i) : null;
+  return (null == s ? true : s.nsfwLevel) === O.V_K.EXPLICIT || (null == s ? true : s.nsfwLevel) === O.V_K.AGE_RESTRICTED
 }
 
 function k(e) {

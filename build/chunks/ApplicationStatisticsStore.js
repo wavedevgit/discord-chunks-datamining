@@ -4,7 +4,7 @@ let r, i, l;
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
-var a, o, Chunk442837 = require("./442837.js"),
+var a, s, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
 function u() {
@@ -19,12 +19,12 @@ class d extends(a = Chunk442837.ZP.Store) {
     let t = i[e];
     return !l.has(e) && (null == t || Date.now() - t > 36e5)
   }
-}(o = "displayName") in d ? Object.defineProperty(d, o, {
+}(s = "displayName") in d ? Object.defineProperty(d, s, {
   value: "ApplicationStatisticsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : d[o] = "ApplicationStatisticsStore";
+}) : d[s] = "ApplicationStatisticsStore";
 let p = new d(Chunk570140.Z, {
   APPLICATION_ACTIVITY_STATISTICS_FETCH_START: function(e) {
     let {

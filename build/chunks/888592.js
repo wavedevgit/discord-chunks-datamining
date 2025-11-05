@@ -1,8 +1,8 @@
-/** Chunk was on 95468 **/
-/** chunk id: 888592, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 86872 **/
+/** chunk id: 888592, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  fQ: () => i,
-  tF: () => l
+  fQ: () => r,
+  tF: () => i
 });
-var r, l = ((r = {}).STUDENT_PROMPT = "STUDENT_PROMPT", r.VERIFY_EMAIL = "VERIFY_EMAIL", r.VERIFY_PIN = "VERIFY_PIN", r.SELECT_SCHOOL = "SELECT_SCHOOL", r.SELECT_SCHOOL_SEARCH = "SELECT_SCHOOL_SEARCH", r.SUBMIT_SCHOOL = "SUBMIT_SCHOOL", r.EMAIL_CONFIRMATION = "EMAIL_CONFIRMATION", r.EMAIL_WAITLIST = "EMAIL_WAITLIST", r);
-let i = "884924873015689226"
+var l, i = ((l = {}).STUDENT_PROMPT = "STUDENT_PROMPT", l.VERIFY_EMAIL = "VERIFY_EMAIL", l.VERIFY_PIN = "VERIFY_PIN", l.SELECT_SCHOOL = "SELECT_SCHOOL", l.SELECT_SCHOOL_SEARCH = "SELECT_SCHOOL_SEARCH", l.SUBMIT_SCHOOL = "SUBMIT_SCHOOL", l.EMAIL_CONFIRMATION = "EMAIL_CONFIRMATION", l.EMAIL_WAITLIST = "EMAIL_WAITLIST", l);
+let r = "884924873015689226"

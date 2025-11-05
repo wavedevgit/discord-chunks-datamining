@@ -69,7 +69,7 @@ let k = Chunk647438.memo(function() {
   } = (0, Chunk336219.t)({
     location: "AppTitleBar"
   }), {
-    backForwardButtons: o,
+    backForwardButtons: s,
     titlebarIconSize: _
   } = (0, Chunk719961.T)({
     location: "AppTitleBar"
@@ -115,7 +115,7 @@ let k = Chunk647438.memo(function() {
         return (0, r.jsx)(w.TF, {
           className: t,
           leading: (0, r.jsxs)(r.Fragment, {
-            children: [o && (0, r.jsx)(m.Z, {
+            children: [s && (0, r.jsx)(m.Z, {
               firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === V ? e : true
             }), U && (0, r.jsx)(S.Z, {
               focusSectionProps: "NOTIFICATIONS_INBOX" === V ? e : true

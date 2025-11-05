@@ -9,8 +9,8 @@ var Chunk647438 = require("./647438.js"),
   Chunk144725 = require("./144725.js"),
   Chunk797394 = require("./797394.js");
 
-function s(e, t, n) {
-  if (t.type === o.Ni.SUMMARY) return {
+function o(e, t, n) {
+  if (t.type === s.Ni.SUMMARY) return {
     id: e.id,
     timestamp: Date.now(),
     data: {
@@ -21,7 +21,7 @@ function s(e, t, n) {
     debugScore: JSON.stringify(e.score_components),
     unread: n
   };
-  if (t.type === o.Ni.MESSAGE) return t.message.id === t.message.channel_id && null != t.threadChannel ? {
+  if (t.type === s.Ni.MESSAGE) return t.message.id === t.message.channel_id && null != t.threadChannel ? {
     id: e.id,
     timestamp: Date.now(),
     channelType: e.data.channel_type,
@@ -47,7 +47,7 @@ function s(e, t, n) {
     debugScore: JSON.stringify(e.score_components),
     unread: n
   };
-  if (t.type === o.Ni.ACTIVITY || t.type === o.Ni.CUSTOM_STATUS) return {
+  if (t.type === s.Ni.ACTIVITY || t.type === s.Ni.CUSTOM_STATUS) return {
     id: e.id,
     timestamp: Date.now(),
     data: {
@@ -58,7 +58,7 @@ function s(e, t, n) {
     debugScore: JSON.stringify(e.score_components),
     unread: n
   };
-  if (t.type === o.Ni.GUILD_EVENT) return {
+  if (t.type === s.Ni.GUILD_EVENT) return {
     id: e.id,
     timestamp: Date.now(),
     data: {
@@ -69,7 +69,7 @@ function s(e, t, n) {
     debugScore: JSON.stringify(e.score_components),
     unread: n
   };
-  if (t.type === o.Ni.RECOMMENDED_GUILDS) return {
+  if (t.type === s.Ni.RECOMMENDED_GUILDS) return {
     id: e.id,
     timestamp: Date.now(),
     data: {
@@ -79,7 +79,7 @@ function s(e, t, n) {
     debugScore: JSON.stringify(e.score_components),
     unread: n
   };
-  else if (t.type === o.Ni.GENERATED_CANDIDATE) return {
+  else if (t.type === s.Ni.GENERATED_CANDIDATE) return {
     id: e.id,
     timestamp: Date.now(),
     data: {
@@ -115,7 +115,7 @@ function c() {
     if (g++, p[Chunk647438.id]) continue;
     let i = d[Chunk647438.id];
     if (null == Chunk442837 && Chunk647438.type === Chunk797394.Ni.MESSAGE && (null == (e = Chunk647438.data.message_context) ? true : module.reference_message_id) != null && (i = d[Chunk647438.data.message_id]), null != Chunk442837) {
-      let e = s(Chunk647438, Chunk442837, true);
+      let e = o(Chunk647438, Chunk442837, true);
       null != module && f.push(module)
     }
   }
@@ -124,7 +124,7 @@ function c() {
     if (g++, p[require.id]) continue;
     let r = d[require.id];
     if (null == Chunk647438 && require.type === Chunk797394.Ni.MESSAGE && (null == (t = require.data.message_context) ? true : exports.reference_message_id) != null && (r = d[require.data.message_id]), null != Chunk647438) {
-      let e = s(require, Chunk647438, false);
+      let e = o(require, Chunk647438, false);
       null != module && h.push(module)
     }
   }

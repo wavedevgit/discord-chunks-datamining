@@ -27,7 +27,7 @@ let d = function(e) {
     className: l()(u.userInfo, h, {
       [u.hovered]: n
     }),
-    children: [(0, r.jsx)(s.Z, {
+    children: [(0, r.jsx)(o.Z, {
       user: t,
       className: u.avatar,
       animate: n,
@@ -35,7 +35,7 @@ let d = function(e) {
       isMobile: f
     }), (0, r.jsxs)("div", {
       className: u.text,
-      children: [(0, r.jsx)(o.Z, {
+      children: [(0, r.jsx)(s.Z, {
         user: t,
         nick: g,
         botClass: u.botTag,

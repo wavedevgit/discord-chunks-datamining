@@ -58,52 +58,52 @@ let m = Chunk185514.Nx.binds["0"],
       location: "BackForwardButtons"
     }), {
       canGoBack: i,
-      canGoForward: s
+      canGoForward: o
     } = (0, a.cj)([u.Z], () => ({
       canGoBack: u.Z.canGoBack,
       canGoForward: u.Z.canGoForward
     }));
     return (0, r.jsxs)("div", {
       className: f.backForwardButtons,
-      children: [(0, r.jsx)(o.aML, {
+      children: [(0, r.jsx)(s.aML, {
         "data-migration-pending": true,
         "aria-label": p.intl.string(p.t.B9vzIP),
         tooltipContentClassName: f.navigationTooltip,
         shouldShow: i,
         text: (0, r.jsxs)(r.Fragment, {
-          children: [p.intl.string(p.t.B9vzIP), (0, r.jsx)(o.M2$, {
+          children: [p.intl.string(p.t.B9vzIP), (0, r.jsx)(s.M2$, {
             shortcut: m
           })]
         }),
-        children: e => (0, r.jsx)(o.P3F, g(h(g(h({}, e), {
+        children: e => (0, r.jsx)(s.P3F, g(h(g(h({}, e), {
           "aria-disabled": !i,
           className: l()(f.button, f.back, {
             [f.disabled]: !i
           }),
           onClick: () => (0, d.Hm)("nav_button")
         }), t), {
-          children: (0, r.jsx)(o.whL, {
+          children: (0, r.jsx)(s.whL, {
             size: n,
             color: "currentColor"
           })
         }))
-      }), (0, r.jsx)(o.aML, {
+      }), (0, r.jsx)(s.aML, {
         "data-migration-pending": true,
         "aria-label": p.intl.string(p.t["9KJ29e"]),
         tooltipContentClassName: f.navigationTooltip,
-        shouldShow: s,
+        shouldShow: o,
         text: (0, r.jsxs)(r.Fragment, {
-          children: [p.intl.string(p.t["9KJ29e"]), (0, r.jsx)(o.M2$, {
+          children: [p.intl.string(p.t["9KJ29e"]), (0, r.jsx)(s.M2$, {
             shortcut: _
           })]
         }),
-        children: e => (0, r.jsx)(o.P3F, g(h({}, e), {
-          "aria-disabled": !s,
+        children: e => (0, r.jsx)(s.P3F, g(h({}, e), {
+          "aria-disabled": !o,
           className: l()(f.button, f.forward, {
-            [f.disabled]: !s
+            [f.disabled]: !o
           }),
           onClick: () => (0, d.TL)("nav_button"),
-          children: (0, r.jsx)(o.ZSh, {
+          children: (0, r.jsx)(s.ZSh, {
             size: n,
             color: "currentColor"
           })

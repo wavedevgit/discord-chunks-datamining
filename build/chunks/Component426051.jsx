@@ -24,13 +24,13 @@ function _(e) {
     user: n,
     channel: _
   } = e, b = (0, d.V)(), E = i.useCallback(() => {
-    (0, a.showToast)((0, a.createToast)(g.intl.string(g.t.pIQ3h4), a.ToastType.FAILURE)), o.Z.increment({
+    (0, a.showToast)((0, a.createToast)(g.intl.string(g.t.pIQ3h4), a.ToastType.FAILURE)), s.Z.increment({
       name: l.V.SPAM_MESSAGE_REQUEST_ERROR_VIEW
     })
   }, []), O = i.useCallback(() => {
     c.Z.closeChannelSidebar(u.uZ)
   }, []), y = i.useCallback(() => {
-    c.Z.closeChannelSidebar(u.uZ), b && (0, s.Kh)(_.id)
+    c.Z.closeChannelSidebar(u.uZ), b && (0, o.Kh)(_.id)
   }, [_.id, b]), {
     acceptMessageRequest: v,
     isAcceptLoading: I,

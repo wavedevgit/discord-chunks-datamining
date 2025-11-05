@@ -42,7 +42,7 @@ let u = {
         }
       } = e;
       if (null == t.application.id) throw new l.Z({
-        errorCode: s.lTL.INVALID_COMMAND
+        errorCode: o.lTL.INVALID_COMMAND
       }, "No application.");
       (0, i.N)(t.application.id, n.map(e => ({
         type: e.type,

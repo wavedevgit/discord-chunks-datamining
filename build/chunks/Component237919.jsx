@@ -92,13 +92,13 @@ class O extends Chunk647438.Component {
         hasModalOpen: l,
         applicationViewItems: a
       } = this.props, {
-        searchBarRef: s
+        searchBarRef: o
       } = this;
-      if (l || e.ctrlKey || e.altKey || e.metaKey || null == s) return;
-      let c = null == (t = (0, o.uB)(e)) ? true : t.activeElement;
-      if (!(c !== s.current && (0, o.VG)(c))) switch (e.which) {
+      if (l || e.ctrlKey || e.altKey || e.metaKey || null == o) return;
+      let c = null == (t = (0, s.uB)(e)) ? true : t.activeElement;
+      if (!(c !== o.current && (0, s.VG)(c))) switch (e.which) {
         case m.yXg.ESCAPE:
-          e.target !== s.current ? this.reset() : null != s.current && (null == (n = s.current) || n.blur());
+          e.target !== o.current ? this.reset() : null != o.current && (null == (n = o.current) || n.blur());
           break;
         case m.yXg.ENTER:
           if (null != i) {
@@ -123,7 +123,7 @@ class O extends Chunk647438.Component {
           e.preventDefault(), e.stopPropagation(), this.updateActiveRow(e.which === m.yXg.ARROW_DOWN ? 1 : false);
           break;
         default:
-          null != s.current && e.target !== s.current && (null == (r = s.current) || r.focus())
+          null != o.current && e.target !== o.current && (null == (r = o.current) || r.focus())
       }
     })
   }

@@ -43,7 +43,7 @@ let _ = Chunk647438.memo(function(e) {
     contentTypes: t,
     guild: n,
     renderGuildHeaderDropdownButton: i
-  } = e, [a, _] = (0, o.US)(t, g.R.GUILD_HEADER_TOOLTIPS);
+  } = e, [a, _] = (0, s.US)(t, g.R.GUILD_HEADER_TOOLTIPS);
   return (0, r.jsx)(r.Fragment, {
     children: (() => {
       switch (a) {
@@ -64,7 +64,7 @@ let _ = Chunk647438.memo(function(e) {
           });
         case l.z.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL:
           return (0, r.jsx)(m, {
-            renderPopout: e => (0, r.jsx)(s.Z, {
+            renderPopout: e => (0, r.jsx)(o.Z, {
               guildId: n.id,
               markAsDismissed: _,
               targetElementRef: e

@@ -146,8 +146,8 @@ let eE = e => {
     } = e, n = eb(e, ["selected"]);
     let l = (0, u.JA)("friends"),
       a = (0, B.If)(),
-      o = (0, p.e7)([F.Z], () => F.Z.canShowFriendsTabBadge()),
-      s = (0, p.e7)([I.Z], () => I.Z.useReducedMotion),
+      s = (0, p.e7)([F.Z], () => F.Z.canShowFriendsTabBadge()),
+      o = (0, p.e7)([I.Z], () => I.Z.useReducedMotion),
       {
         enabled: d
       } = H.w.useExperiment({
@@ -155,7 +155,7 @@ let eE = e => {
       }, {
         autoTrackExposure: false
       }),
-      f = o && d;
+      f = s && d;
     i.useEffect(() => {
       f && (0, S.h)({
         name: c.ImpressionNames.GIFT_INTENT_BADGE,
@@ -171,9 +171,9 @@ let eE = e => {
       children: [(0, r.jsx)(O.Qj, e_(em({
         onClick: () => {
           let e;
-          f ? (es.default.track(eu.rMx.GIFT_INTENT_BADGE_CLICKED, {
+          f ? (eo.default.track(eu.rMx.GIFT_INTENT_BADGE_CLICKED, {
             gift_intent_type: ep.hX.FRIEND_ANNIVERSARY
-          }), e = eu.pJs.ALL, E.Z.setSection(eu.pJs.ALL), (0, V.Gk)()) : e = eo.ZP.getState().section, (0, C.Z)({
+          }), e = eu.pJs.ALL, E.Z.setSection(eu.pJs.ALL), (0, V.Gk)()) : e = es.ZP.getState().section, (0, C.Z)({
             tab_opened: e
           })
         },
@@ -192,7 +192,7 @@ let eE = e => {
         children: a > 0 ? (0, r.jsx)(_.mAB, {
           count: a
         }) : null
-      })), f && !s && (0, r.jsx)(Q.Z, {
+      })), f && !o && (0, r.jsx)(Q.Z, {
         className: eg.confetti,
         wind: 0,
         sprites: ed.CA,
@@ -285,17 +285,17 @@ let eE = e => {
   eT = e => {
     let {
       selected: t
-    } = e, n = ef.intl.string(eh.default.Rkdixs), l = (0, u.JA)("family-center"), [a, o] = i.useState(true);
+    } = e, n = ef.intl.string(eh.default.Rkdixs), l = (0, u.JA)("family-center"), [a, s] = i.useState(true);
     return (0, r.jsx)(O.Qj, e_(em({
       selected: t,
       route: eu.Z5c.FAMILY_CENTER,
       icon: _.BFJ,
       text: n,
       onMouseEnter: () => {
-        o(true)
+        s(true)
       },
       onMouseLeave: () => {
-        o(false)
+        s(false)
       },
       interactiveClassName: eg.familyCenterLinkButton
     }, l), {
@@ -374,8 +374,8 @@ let eA = Chunk647438.memo(function(e) {
     showLibrary: t,
     hasLibraryApplication: n,
     homeLink: l,
-    premiumTabSelected: o,
-    shouldShowNitroTab: s,
+    premiumTabSelected: s,
+    shouldShowNitroTab: o,
     showReferralProgramPopover: c,
     showRecurring3PPopover: u,
     shouldShowMessageRequestsRow: p,
@@ -434,10 +434,10 @@ let eA = Chunk647438.memo(function(e) {
         hideGameUpdateProgressIndicator: l === eu.Z5c.APPLICATION_LIBRARY
       }, "library") : null, p && !E ? (0, r.jsx)(eS, {
         selected: null == b ? null != l && l.startsWith(eu.Z5c.MESSAGE_REQUESTS) : b === eu.Z5c.MESSAGE_REQUESTS
-      }, "message-requests") : null, s && !E ? (0, r.jsxs)("div", {
+      }, "message-requests") : null, o && !E ? (0, r.jsxs)("div", {
         children: [(0, r.jsx)(K.g, {
           nitroTabButtonRef: S,
-          selected: null == b ? o : b.startsWith(eu.Z5c.APPLICATION_STORE),
+          selected: null == b ? s : b.startsWith(eu.Z5c.APPLICATION_STORE),
           route: eu.Z5c.APPLICATION_STORE,
           locationState: {
             analyticsSource: {

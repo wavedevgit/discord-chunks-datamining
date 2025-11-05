@@ -52,8 +52,8 @@ function y(e) {
     let t = e.libraryApplication.getDistributor();
     return (0, r.jsxs)("div", {
       className: b.hiddenLibraryApplication,
-      children: [(0, r.jsxs)(s.Z, {
-        direction: s.Z.Direction.VERTICAL,
+      children: [(0, r.jsxs)(o.Z, {
+        direction: o.Z.Direction.VERTICAL,
         className: b.hiddenLibraryApplicationContent,
         children: [(0, r.jsx)("div", {
           className: b.applicationName,
@@ -134,7 +134,7 @@ class v extends Chunk647438.PureComponent {
   constructor(...e) {
     super(...e), E(this, "handleRestoreHiddenLibraryApplication", e => {
       let t = p.x9(e.getFlags(), m.eHb.HIDDEN);
-      o.h(e.id, e.branchId, t), this.trackRestoreApplication(e, p.yE(t, m.eHb.HIDDEN))
+      s.h(e.id, e.branchId, t), this.trackRestoreApplication(e, p.yE(t, m.eHb.HIDDEN))
     })
   }
 }

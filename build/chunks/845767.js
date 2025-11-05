@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 845767, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk570140 = require("./570140.js"),
   Chunk317770 = require("./317770.js"),
@@ -23,4 +23,4 @@ class a extends Chunk317770.Z {
     null != window.DiscordDevSession && window.DiscordDevSession.started && window.DiscordDevSession.stop()
   }
 }
-let o = new a
+let s = new a

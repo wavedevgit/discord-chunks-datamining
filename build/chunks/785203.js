@@ -23,7 +23,7 @@ function _(e) {
   let n = null != (t = null == e ? true : e.id) ? t : g.lds,
     r = (0, l.e7)([p.Z], () => p.Z.isVisible(e)),
     m = (0, l.e7)([h.Z], () => h.Z.isVisible(e)),
-    _ = (0, o.m)(n),
+    _ = (0, s.m)(n),
     b = (0, l.e7)([f.Z], () => f.Z.isVisible(e)),
     E = u.Z.useShouldShowChannelNotice(n),
     O = (0, d.h6)(e),
@@ -32,7 +32,7 @@ function _(e) {
     } = (0, c.s)(e),
     v = O.length > 0,
     I = y && !(null == e ? true : e.features.has(g.GuildFeatures.HUB)),
-    C = (0, s.Vm)(n);
+    C = (0, o.Vm)(n);
   if (i.useEffect(() => {
       a.Z.getGuildEventsForCurrentUser(n)
     }, [n]), r) return 0;

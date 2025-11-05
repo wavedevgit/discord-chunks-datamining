@@ -17,14 +17,14 @@ function c(e) {
   } = e;
   switch (t.data.kind) {
     case "guildEvent":
-      return (0, r.jsx)(o.Z, {
+      return (0, r.jsx)(s.Z, {
         eventId: t.data.eventId
       });
     case "message":
     case "channelSummary":
     case "generatedCandidate":
     case "forumThread":
-      return (0, r.jsx)(s.Z, {
+      return (0, r.jsx)(o.Z, {
         item: t
       });
     case "contentInventory":

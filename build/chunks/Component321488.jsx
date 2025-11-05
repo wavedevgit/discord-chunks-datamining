@@ -20,9 +20,9 @@ function d(e) {
     actionType: l = 2,
     shouldHighlight: u
   } = e;
-  return (0, i.jsx)(o.u, {
+  return (0, i.jsx)(s.u, {
     text: n,
-    children: (0, i.jsx)(s.P3F, {
+    children: (0, i.jsx)(o.P3F, {
       tag: "div",
       "aria-label": n,
       onClick: r,

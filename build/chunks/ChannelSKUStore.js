@@ -5,26 +5,26 @@ require.d(exports, {
 });
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let o = {};
-class s extends(i = Chunk442837.ZP.Store) {
+let s = {};
+class o extends(i = Chunk442837.ZP.Store) {
   getSkuIdForChannel(e) {
-    return o[e]
+    return s[e]
   }
-}(r = "displayName") in s ? Object.defineProperty(s, r, {
+}(r = "displayName") in o ? Object.defineProperty(o, r, {
   value: "ChannelSKUStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : s[r] = "ChannelSKUStore";
-let c = new s(Chunk570140.Z, {
+}) : o[r] = "ChannelSKUStore";
+let c = new o(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
-    o = {}
+    s = {}
   },
   STORE_LISTING_FETCH_SUCCESS: function(e) {
     let {
       channelId: t,
       storeListing: n
     } = e;
-    null != t && (o[t] = n.sku.id)
+    null != t && (s[t] = n.sku.id)
   }
 })

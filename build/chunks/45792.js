@@ -11,11 +11,11 @@ function l(e, t) {
   let {
     scope: l,
     handler: a
-  } = t, o = {
+  } = t, s = {
     scope: l,
     handler: a
-  }, s = null == (n = r.m[e]) ? true : n.request, c = null;
-  return null != s && (o.validation = function(e) {
-    return null == c && (c = (0, i.C5)(e.object(s(e)))), c
-  }), o
+  }, o = null == (n = r.m[e]) ? true : n.request, c = null;
+  return null != o && (s.validation = function(e) {
+    return null == c && (c = (0, i.C5)(e.object(o(e)))), c
+  }), s
 }

@@ -56,7 +56,7 @@ function b(e) {
   return null == n ? null : [(0, r.jsx)(a.sNh, {
     id: "join-voice",
     action: function() {
-      (0, c.Kh)(n.channel.id), o.default.selectVoiceChannel(n.channel.id), s.ZP.trackWithMetadata(h.rMx.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, m({
+      (0, c.Kh)(n.channel.id), s.default.selectVoiceChannel(n.channel.id), o.ZP.trackWithMetadata(h.rMx.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, m({
         source: _(m({}, t.location), {
           object: h.qAy.LIST_ITEM
         }),
@@ -69,7 +69,7 @@ function b(e) {
   }, "join-voice"), (0, r.jsx)(a.sNh, {
     id: "goto-server",
     action: function() {
-      (0, u.X)(n.guild.id), s.ZP.trackWithMetadata(h.rMx.ACTIVITY_FEED_GUILD_VISITED, m({
+      (0, u.X)(n.guild.id), o.ZP.trackWithMetadata(h.rMx.ACTIVITY_FEED_GUILD_VISITED, m({
         source: _(m({}, t.location), {
           object: h.qAy.LIST_ITEM
         }),

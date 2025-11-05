@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => Z
 }), require("./388685.js");
 var l, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
@@ -134,7 +134,7 @@ let Z = new A(Chunk570140.Z, {
       deny: i
     }), v = b(_({}, v), {
       [t]: l
-    }), E.add(t), O = h.QZA.OPEN, y = !o().isEqual(v, I), r = d.o4(C, S)
+    }), E.add(t), O = h.QZA.OPEN, y = !s().isEqual(v, I), r = d.o4(C, S)
   },
   CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION: function(e) {
     let {

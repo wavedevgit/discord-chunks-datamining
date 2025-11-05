@@ -35,7 +35,7 @@ function T(e) {
   } = e, a = i.useMemo(() => (null == t ? true : t.splash) != null ? f.ZP.getGuildSplashURL({
     id: null == t ? true : t.id,
     splash: null == t ? true : t.splash
-  }) : null, [null == t ? true : t.splash, null == t ? true : t.id]), o = (0, u.N)(a);
+  }) : null, [null == t ? true : t.splash, null == t ? true : t.id]), s = (0, u.N)(a);
   return null == a ? (0, r.jsx)("div", {
     className: S.defaultGradient
   }) : (0, r.jsxs)(r.Fragment, {
@@ -45,10 +45,10 @@ function T(e) {
       imageClassName: S.cover,
       width: n,
       height: l
-    }), null != o && (0, r.jsx)("div", {
+    }), null != s && (0, r.jsx)("div", {
       className: S.splashGradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, h.aD)(o, .16), " 0%, ").concat((0, h.aD)(o, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, h.aD)(s, .16), " 0%, ").concat((0, h.aD)(s, 1), " 100%)")
       }
     }), (0, r.jsx)("div", {
       className: S.splashGradient
@@ -62,7 +62,7 @@ let N = e => {
     ref: n,
     width: c,
     height: u
-  } = (0, s.ZP)(), [f, h] = i.useState(I.hO.INITIAL), N = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), j = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), {
+  } = (0, o.ZP)(), [f, h] = i.useState(I.hO.INITIAL), N = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), j = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), {
     hasFetchedRequestToJoinGuilds: P,
     guildPreviewDisabled: x
   } = (0, l.cj)([b.Z], () => ({
@@ -78,9 +78,9 @@ let N = e => {
       h(Math.max(f, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, d.uL)(v.Z5c.ME)
     }, [t, f]),
     Z = (e, t) => () => {
-      (0, o.h7j)(n => {
+      (0, s.h7j)(n => {
         var i, l;
-        return (0, r.jsx)(o.ConfirmModal, (i = function(e) {
+        return (0, r.jsx)(s.ConfirmModal, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -104,7 +104,7 @@ let N = e => {
           confirmText: C.intl.string(C.t.p89ACt),
           confirmButtonColor: a.zx.Colors.RED
         }, n), l = l = {
-          children: (0, r.jsx)(o.Text, {
+          children: (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
             children: e

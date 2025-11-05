@@ -2,7 +2,7 @@
 /** chunk id: 580079, original params: e,t,n (module,exports,require) **/
 require("./539854.js"), require("./388685.js");
 var r, i, l, a, Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk592125 = require("./592125.js"),
@@ -18,11 +18,11 @@ function E(e) {
   let t = m[e];
   if (null == t) return;
   let n = f.default.fromTimestamp(Date.now() - 9e5),
-    r = s().findIndex(t, e => f.default.compare(e.id, n) > 0);
+    r = o().findIndex(t, e => f.default.compare(e.id, n) > 0);
   if (false === r) m[e] = [];
   else {
     let n = Math.max(r, t.length - 26);
-    m[e] = s().slice(t, n)
+    m[e] = o().slice(t, n)
   }
   _[e] = Date.now()
 }
@@ -78,7 +78,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = v) ? Object.defineProperty
       var t;
       E(e), (null == (t = m[e]) ? true : t.length) === 0 && delete m[e]
     });
-    let i = s().chain(Array.from(r)).filter(e => e in m).sortBy(e => {
+    let i = o().chain(Array.from(r)).filter(e => e in m).sortBy(e => {
       var t, n;
       return -(null != (n = null == (t = m[e]) ? true : t.length) ? n : 0)
     }).value();
@@ -95,9 +95,9 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = v) ? Object.defineProperty
     if (i || l) returnfalse;
     let a = d.Z.getChannel(n);
     if (null == a) returnfalse;
-    let o = a.guild_id;
-    if (null == o || null == g[o]) returnfalse;
-    O(o, n, r.id, null == (t = r.author) ? true : t.id)
+    let s = a.guild_id;
+    if (null == s || null == g[s]) returnfalse;
+    O(s, n, r.id, null == (t = r.author) ? true : t.id)
   },
   GUILD_DELETE: function(e) {
     let {

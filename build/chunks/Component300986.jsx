@@ -22,7 +22,7 @@ function m(e) {
   let {
     className: t,
     focusSectionProps: n
-  } = e, m = (0, i.e7)([s.default], () => s.default.getCurrentUser()), _ = (0, i.e7)([o.default], () => o.default.locale), b = (0, d.EO)(m);
+  } = e, m = (0, i.e7)([o.default], () => o.default.getCurrentUser()), _ = (0, i.e7)([s.default], () => s.default.locale), b = (0, d.EO)(m);
   return (0, r.jsx)(a.Anchor, {
     href: u.w,
     target: "_blank",

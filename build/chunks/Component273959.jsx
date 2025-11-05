@@ -33,12 +33,12 @@ function N(e) {
       withFastTravel: n,
       focusSectionProps: l
     } = e,
-    N = (0, o.TH)(),
-    j = (0, s.e7)([O.Z], () => O.Z.getGuildId()),
-    P = (0, s.e7)([E.Z], () => E.Z.getChannelId()),
-    x = (0, s.e7)([_.Z], () => _.Z.getChannel(P), [P]),
+    N = (0, s.TH)(),
+    j = (0, o.e7)([O.Z], () => O.Z.getGuildId()),
+    P = (0, o.e7)([E.Z], () => E.Z.getChannelId()),
+    x = (0, o.e7)([_.Z], () => _.Z.getChannel(P), [P]),
     A = null != j ? j : null == x ? true : x.guild_id,
-    Z = (0, s.e7)([b.Z], () => b.Z.getGuild(A), [A]),
+    Z = (0, o.e7)([b.Z], () => b.Z.getGuild(A), [A]),
     w = (0, p.Z)(),
     L = (0, g.D)(),
     {
@@ -50,7 +50,7 @@ function N(e) {
     {
       application: M,
       isFrameInFocusedMode: k
-    } = (0, s.cj)([u.Z, f.Z], () => {
+    } = (0, o.cj)([u.Z, f.Z], () => {
       let e = f.Z.getConnectedFrame();
       return {
         application: u.Z.getApplication(null == e ? true : e.applicationId),

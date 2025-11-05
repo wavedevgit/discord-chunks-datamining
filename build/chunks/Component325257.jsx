@@ -155,10 +155,10 @@ let k = Chunk647438.memo(function(e) {
       let e = (0, b.V)(H.id);
       null != e && h.Z.preload(H.id, e)
     }, [V, H, q, et]),
-    eE = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
-    ex = i.useCallback(e => {
-      null == H || eE || J(e, H)
-    }, [H, J, eE]),
+    ex = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
+    eE = i.useCallback(e => {
+      null == H || ex || J(e, H)
+    }, [H, J, ex]),
     eS = i.useCallback(e => {
       if ("ArrowLeft" === e.key && null != ea) {
         var t;
@@ -174,7 +174,7 @@ let k = Chunk647438.memo(function(e) {
     }, [eo, U]),
     eN = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == H) return null;
-  let eZ = ey || eb ? (0, r.jsx)(x.Z, {
+  let eZ = ey || eb ? (0, r.jsx)(E.Z, {
       guild: H,
       show: ey,
       active: W,
@@ -198,7 +198,7 @@ let k = Chunk647438.memo(function(e) {
         ee || eg(false)
       },
       onMouseDown: eC,
-      onContextMenu: ex,
+      onContextMenu: eE,
       onKeyDown: eS,
       icon: (0, O.EB)(H, 2 * eN, em && z, true),
       selected: W || em
@@ -233,7 +233,7 @@ let k = Chunk647438.memo(function(e) {
     });
   return (0, r.jsxs)(N.H, {
     ref: eP,
-    children: [(0, r.jsx)(E.Z, {
+    children: [(0, r.jsx)(x.Z, {
       hovered: !ed && em,
       selected: !ed && W,
       unread: !ed && K,

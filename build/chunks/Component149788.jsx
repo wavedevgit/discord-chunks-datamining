@@ -57,10 +57,10 @@ let _ = function(e) {
   }), [n]);
   return (0, r.jsxs)(u.Z, {
     onScroll: t,
-    children: [(0, r.jsx)(s.Z, {
+    children: [(0, r.jsx)(o.Z, {
       title: h.intl.string(h.t.X5xPlb),
       description: h.intl.string(h.t["F/IQCI"]),
-      children: (0, r.jsx)(o.Z, {})
+      children: (0, r.jsx)(s.Z, {})
     }), (0, r.jsxs)(c.Z, {
       children: [n.length > 0 ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.Heading, {

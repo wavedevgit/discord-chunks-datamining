@@ -1,8 +1,8 @@
-/** Chunk was on 93426 **/
-/** chunk id: 721751, original params: e,t,r (module,exports,require) **/
-let n;
+/** Chunk was on 12581 **/
+/** chunk id: 721751, original params: t,e,i (module,exports,require) **/
+let s;
 require.d(exports, {
-  Z: () => B
+  Z: () => P
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,64 +21,64 @@ var Chunk951288 = require("./951288.js"),
   Chunk816282 = require("./816282.js");
 let Chunk575703 = require("./575703.js"),
   Chunk2984 = require("./2984.js"),
-  m = [Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.LOGIN_HANDOFF, Chunk981631.Z5c.LOGIN_ONE_TIME, Chunk981631.Z5c.REGISTER, Chunk981631.Z5c.INVITE(""), Chunk981631.Z5c.GIFT_CODE(""), Chunk981631.Z5c.GUILD_TEMPLATE_LOGIN(""), Chunk981631.Z5c.GUILD_TEMPLATE(""), Chunk981631.Z5c.DISABLE_EMAIL_NOTIFICATIONS, Chunk981631.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, Chunk981631.Z5c.BILLING_PREMIUM_SUBSCRIBE, Chunk981631.Z5c.BILLING_PAYMENT_SOURCES_CREATE, Chunk981631.Z5c.BILLING_PAYMENTS, Chunk981631.Z5c.BILLING_PREMIUM_SWITCH_PLAN, Chunk981631.Z5c.BILLING_GUILD_SUBSCRIPTIONS_PURCHASE, Chunk981631.Z5c.VERIFY, Chunk981631.Z5c.VERIFY_HUB_EMAIL, Chunk981631.Z5c.REJECT_IP, Chunk981631.Z5c.REJECT_MFA, Chunk981631.Z5c.AUTHORIZE_IP, Chunk981631.Z5c.AUTHORIZE_PAYMENT, Chunk981631.Z5c.RESET, Chunk981631.Z5c.HANDOFF, Chunk981631.Z5c.REPORT, Chunk981631.Z5c.REPORT_SECOND_LOOK, Chunk981631.Z5c.ACCOUNT_REVERT("")];
+  x = [Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.LOGIN_HANDOFF, Chunk981631.Z5c.LOGIN_ONE_TIME, Chunk981631.Z5c.REGISTER, Chunk981631.Z5c.INVITE(""), Chunk981631.Z5c.GIFT_CODE(""), Chunk981631.Z5c.GUILD_TEMPLATE_LOGIN(""), Chunk981631.Z5c.GUILD_TEMPLATE(""), Chunk981631.Z5c.DISABLE_EMAIL_NOTIFICATIONS, Chunk981631.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, Chunk981631.Z5c.BILLING_PREMIUM_SUBSCRIBE, Chunk981631.Z5c.BILLING_PAYMENT_SOURCES_CREATE, Chunk981631.Z5c.BILLING_PAYMENTS, Chunk981631.Z5c.BILLING_PREMIUM_SWITCH_PLAN, Chunk981631.Z5c.BILLING_GUILD_SUBSCRIPTIONS_PURCHASE, Chunk981631.Z5c.VERIFY, Chunk981631.Z5c.VERIFY_HUB_EMAIL, Chunk981631.Z5c.REJECT_IP, Chunk981631.Z5c.REJECT_MFA, Chunk981631.Z5c.AUTHORIZE_IP, Chunk981631.Z5c.AUTHORIZE_PAYMENT, Chunk981631.Z5c.RESET, Chunk981631.Z5c.HANDOFF, Chunk981631.Z5c.REPORT, Chunk981631.Z5c.REPORT_SECOND_LOOK, Chunk981631.Z5c.ACCOUNT_REVERT("")];
 
-function b(e) {
-  return m.some(t => e.startsWith(t))
+function E(t) {
+  return x.some(e => t.startsWith(e))
 }
-let _ = e => (n = e, e),
-  Z = [Chunk981631.Z5c.VERIFY, Chunk981631.Z5c.VERIFY_HUB_EMAIL];
+let O = t => (s = t, t),
+  j = [Chunk981631.Z5c.VERIFY, Chunk981631.Z5c.VERIFY_HUB_EMAIL];
 
-function w(e) {
+function I(t) {
   let {
-    children: t
-  } = e, r = function() {
-    let [e, t] = l.useState(false), [r, i] = l.useState(true), s = (0, c.e7)([p.Z], () => p.Z.hasLoadedExperiments);
-    return ((0, u.Z)(() => {}, 300), true !== n) ? n : !r && s ? (e || t(true), _("default")) : r ? _("default") : "loading"
-  }(), o = (0, s.TH)(), a = Z.includes(o.pathname);
-  switch (r) {
+    children: e
+  } = t, i = function() {
+    let [t, e] = r.useState(false), [i, n] = r.useState(true), a = (0, l.e7)([f.Z], () => f.Z.hasLoadedExperiments);
+    return ((0, c.Z)(() => {}, 300), true !== s) ? s : !i && a ? (t || e(true), O("default")) : i ? O("default") : "loading"
+  }(), h = (0, a.TH)(), o = j.includes(h.pathname);
+  switch (i) {
     case "default":
-      return (0, i.jsxs)(i.Fragment, {
-        children: [a ? (0, i.jsx)(g.Z, {}) : (0, i.jsx)("img", {
-          className: E.artwork,
-          src: I,
+      return (0, n.jsxs)(n.Fragment, {
+        children: [o ? (0, n.jsx)(g.Z, {}) : (0, n.jsx)("img", {
+          className: w.artwork,
+          src: b,
           alt: ""
-        }), (0, i.jsx)("img", {
-          className: E.logoWithText,
-          src: O,
+        }), (0, n.jsx)("img", {
+          className: w.logoWithText,
+          src: y,
           alt: ""
-        }), t]
+        }), e]
       });
     case "experimental":
     case "loading":
       return null
   }
 }
-class y extends Chunk647438.Component {
+class S extends Chunk647438.Component {
   componentDidMount() {
     window.addEventListener("resize", this.handleResize)
   }
   componentWillUnmount() {
     window.removeEventListener("resize", this.handleResize)
   }
-  mobileTransitionTo(e, t) {
-    if (b(e))(0, x.uL)(e, t);
+  mobileTransitionTo(t, e) {
+    if (E(t))(0, m.uL)(t, e);
     else {
-      let r = null != t && null != t.search ? t.search : null;
-      window.location = null == r ? e : "".concat(e, "?").concat(r)
+      let i = null != e && null != e.search ? e.search : null;
+      window.location = null == i ? t : "".concat(t, "?").concat(i)
     }
   }
-  mobileReplaceWith(e) {
-    b(e) ? (0, x.dL)(e) : window.location = e
+  mobileReplaceWith(t) {
+    E(t) ? (0, m.dL)(t) : window.location = t
   }
   renderDefault() {
     let {
-      splash: e
-    } = this.props, t = (0, Chunk951288.jsx)(Chunk605782.Z, {
+      splash: t
+    } = this.props, e = (0, Chunk951288.jsx)(Chunk605782.Z, {
       component: Chunk647438.Fragment,
-      children: Chunk647438.Children.map(this.props.children, e => l.cloneElement(e, {
-        transitionTo: x.uL,
-        replaceWith: x.dL
+      children: Chunk647438.Children.map(this.props.children, t => r.cloneElement(t, {
+        transitionTo: m.uL,
+        replaceWith: m.dL
       }))
     });
     return (0, Chunk951288.jsx)("div", {
@@ -93,7 +93,7 @@ class y extends Chunk647438.Component {
             splash: module,
             children: exports
           })]
-        }) : (0, Chunk951288.jsx)(w, {
+        }) : (0, Chunk951288.jsx)(I, {
           children: exports
         })
       })
@@ -102,7 +102,7 @@ class y extends Chunk647438.Component {
   renderMobile() {
     return (0, Chunk951288.jsx)(Chunk605782.Z, {
       component: Chunk647438.Fragment,
-      children: Chunk647438.Children.map(this.props.children, e => l.cloneElement(e, {
+      children: Chunk647438.Children.map(this.props.children, t => r.cloneElement(t, {
         transitionTo: this.mobileTransitionTo,
         replaceWith: this.mobileReplaceWith
       }))
@@ -110,19 +110,19 @@ class y extends Chunk647438.Component {
   }
   render() {
     let {
-      isMobileWidth: e
-    } = this.state, t = navigator.userAgent.includes("GameLauncher");
+      isMobileWidth: t
+    } = this.state, e = navigator.userAgent.includes("GameLauncher");
     return module || Chunk873546.tq || Chunk873546.Em || exports ? this.renderMobile() : this.renderDefault()
   }
-  constructor(e) {
-    super(e),
-      function(e, t, r) {
-        t in e ? Object.defineProperty(e, t, {
-          value: r,
+  constructor(t) {
+    super(t),
+      function(t, e, i) {
+        e in t ? Object.defineProperty(t, e, {
+          value: i,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : t[e] = i
       }(this, "handleResize", () => {
         this.setState({
           isMobileWidth: window.innerWidth <= 485
@@ -132,4 +132,4 @@ class y extends Chunk647438.Component {
       }
   }
 }
-let B = y
+let P = S

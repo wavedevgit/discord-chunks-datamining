@@ -107,7 +107,7 @@ function y(e) {
         members: w,
         activity: A
       }, "game-".concat(null != (n = A.session_id) ? n : t, "-").concat(null != (i = A.application_id) ? i : t)));
-      else if ((0, o.Z)(A)) {
+      else if ((0, s.Z)(A)) {
       let e = new Set(w.map(e => e.id)),
         t = null == (l = I.find(e => null != e)) ? true : l.channel;
       null != t && x((0, r.jsx)(_.Z.EmbeddedActivitySection, {
@@ -132,7 +132,7 @@ function y(e) {
         user: e || n ? L : null,
         getAssetImage: g.xF
       }, "streaming-".concat(null != (b = A.session_id) ? b : t)))
-    } else A.type === O.IIU.LISTENING && ((0, s.Z)(A) ? x((0, r.jsx)(_.Z.SpotifySection, {
+    } else A.type === O.IIU.LISTENING && ((0, o.Z)(A) ? x((0, r.jsx)(_.Z.SpotifySection, {
       activity: A,
       isSolo: 1 === S.length,
       partySize: {

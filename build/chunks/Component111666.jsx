@@ -59,7 +59,7 @@ function C(e, t) {
 function S(e) {
   let {
     className: t
-  } = e, n = (0, a.e7)([g.Z], () => g.Z.getPendingCount() > 0), _ = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
+  } = e, n = (0, a.e7)([g.Z], () => g.Z.getPendingCount() > 0), _ = (0, s.dQu)(s.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
     let [e, t] = i.useState(null), {
       showActivityTicker: n
     } = (0, E.Z)(), r = i.useRef({}), l = i.useRef(null);
@@ -72,7 +72,7 @@ function S(e) {
           null == r.current[e] && (r.current[e] = {}), null == n ? delete r.current[e][t] : r.current[e][t] = n, 0 === Object.keys(r.current[e]).length && delete r.current[e]
         },
         i = (n, i, a) => {
-          var o, s, c, u, d, p, h, _, b;
+          var s, o, c, u, d, p, h, _, b;
           if (!g.Z.isFriend(n)) returnfalse;
           let E = m.default.getUser(n);
           if (null == E) returnfalse;
@@ -89,7 +89,7 @@ function S(e) {
                 user: E,
                 activity: i
               })
-            } else(null == (s = r.current[n]) ? true : s.presence) != null && (y = true, e(n, "presence", null))
+            } else(null == (o = r.current[n]) ? true : o.presence) != null && (y = true, e(n, "presence", null))
           }
           if (null != a) {
             let t = f.Z.getChannel(a);
@@ -100,7 +100,7 @@ function S(e) {
                 voiceChannel: t
               })
             }
-          } else(null == (o = r.current[n]) ? true : o.voice) != null && (y = true, e(n, "voice", null));
+          } else(null == (s = r.current[n]) ? true : s.voice) != null && (y = true, e(n, "voice", null));
           return y && null != v && (b = v, null != l.current && (window.clearTimeout(l.current), l.current = null), t(b), l.current = window.setTimeout(() => {
             t(null), l.current = null
           }, 1e4)), y
@@ -112,15 +112,15 @@ function S(e) {
             if (i(e, n)) break
           }
         },
-        o = e => {
+        s = e => {
           for (let t of e.voiceStates)
             if (i(t.userId, true, t.channelId)) break
         };
-      return s.Z.subscribe("PRESENCE_UPDATES", a), s.Z.subscribe("VOICE_STATE_UPDATES", o), () => {
-        s.Z.unsubscribe("PRESENCE_UPDATES", a), s.Z.unsubscribe("VOICE_STATE_UPDATES", o), null != l.current && (window.clearTimeout(l.current), l.current = null)
+      return o.Z.subscribe("PRESENCE_UPDATES", a), o.Z.subscribe("VOICE_STATE_UPDATES", s), () => {
+        o.Z.unsubscribe("PRESENCE_UPDATES", a), o.Z.unsubscribe("VOICE_STATE_UPDATES", s), null != l.current && (window.clearTimeout(l.current), l.current = null)
       }
     }, [n]), e
-  }(), T = i.useRef(null), N = (0, o.Yzy)(S, {
+  }(), T = i.useRef(null), N = (0, s.Yzy)(S, {
     keys: e => {
       var t, n, r;
       return null != e ? null != e.voiceChannel ? "".concat(e.user.id, "-voice-").concat(e.voiceChannel.id) : "".concat(e.user.id, "-").concat(null == (t = e.activity) ? true : t.state, ":").concat(null == (n = e.activity) ? true : n.details, ":").concat(null == (r = e.activity) ? true : r.name) : "none"
@@ -157,7 +157,7 @@ function S(e) {
             className: v.activityWrapper,
             style: e
           }, n), {
-            children: [(0, r.jsx)(o.Text, {
+            children: [(0, r.jsx)(s.Text, {
               variant: "text-xs/semibold",
               children: null != (i = t.user.globalName) ? i : t.user.username
             }), null != t.voiceChannel ? (0, r.jsx)(u.Z, {
@@ -179,7 +179,7 @@ function S(e) {
         ref: a,
         className: t,
         onClick: e,
-        icon: o.iFz,
+        icon: s.iFz,
         iconSize: _,
         "aria-label": y.intl.string(y.t.TdEu5X),
         tooltip: i ? null : y.intl.string(y.t.TdEu5X),

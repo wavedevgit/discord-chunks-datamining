@@ -19,13 +19,13 @@ let p = {
     },
     handler(e) {
       var t;
-      if (i.e$(i.vB(null != (t = e.socket.application.flags) ? t : 0), i.vB(d.udG.DISABLE_RELATIONSHIPS_ACCESS))) throw new s.Z({
+      if (i.e$(i.vB(null != (t = e.socket.application.flags) ? t : 0), i.vB(d.udG.DISABLE_RELATIONSHIPS_ACCESS))) throw new o.Z({
         errorCode: d.lTL.INVALID_PERMISSIONS
       }, "Missing Permissions");
       let n = [];
       for (let [t, r] of a.Z.getMutableRelationships().entries()) {
         if (r === d.OGo.NONE) continue;
-        let i = o.default.getUser(t);
+        let i = s.default.getUser(t);
         if (null == i) continue;
         let l = (0, c._J)(r, i);
         n.push((0, c.kb)(l, e.socket.application.id))

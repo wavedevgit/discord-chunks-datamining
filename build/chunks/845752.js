@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 845752, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -9,9 +9,9 @@ var Chunk392711 = require("./392711.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
 
-function s(e, t) {
+function o(e, t) {
   return {
-    [o.zMe.VOICE_SETTINGS_UPDATE]: {
+    [s.zMe.VOICE_SETTINGS_UPDATE]: {
       scope: {
         [a.Gp.ANY]: [l.x.RPC, l.x.RPC_VOICE_READ]
       },
@@ -23,7 +23,7 @@ function s(e, t) {
         return i().isEqual(l, n) || r(l), l
       }
     },
-    [o.zMe.VOICE_SETTINGS_UPDATE_2]: {
+    [s.zMe.VOICE_SETTINGS_UPDATE_2]: {
       scope: a.lH,
       handler(e) {
         let {

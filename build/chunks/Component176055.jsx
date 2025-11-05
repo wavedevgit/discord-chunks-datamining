@@ -68,8 +68,8 @@ class N extends Chunk647438.PureComponent {
       isInGuild: n,
       isLurking: i,
       isAuthenticated: l,
-      className: o,
-      pageSize: s
+      className: s,
+      pageSize: o
     } = this.props;
     if (exports && require) return null;
     let d = (0, Chunk411198.B3)(module),
@@ -139,7 +139,7 @@ class N extends Chunk647438.PureComponent {
         redirect_to: I.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
       };
       (0, b.uL)(I.Z5c.LOGIN, {
-        search: (0, o.stringify)(e),
+        search: (0, s.stringify)(e),
         source: "verified_guild_invite"
       })
     })

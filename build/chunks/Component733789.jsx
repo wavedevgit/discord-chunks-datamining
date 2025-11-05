@@ -163,19 +163,19 @@ class O extends Chunk647438.PureComponent {
         user: e,
         newAnalyticsLocations: [c.Z.AVATAR],
         clickTrap: true,
-        children: t => (0, r.jsx)(o.u, {
+        children: t => (0, r.jsx)(s.u, {
           __unsupportedReactNodeAsText: this.renderUserTooltip(e, l.startTime, l.endTime),
           "aria-label": (0, f.W5)(e, {
             decoration: "never"
           }),
-          children: (0, r.jsx)(s.qEK, b({
+          children: (0, r.jsx)(o.qEK, b({
             ref: this.playerAvatarRef,
             className: a()(m.playerAvatar, {
               [m.avatarMasked]: !i
             }),
             src: e.getAvatarURL(true, 32),
             "aria-label": e.username,
-            size: s.EFr.SIZE_32
+            size: o.EFr.SIZE_32
           }, t))
         })
       }, e.id)

@@ -23,11 +23,11 @@ function b(e) {
   var t, n;
   let {
     eventId: b
-  } = e, E = (0, l.e7)([s.ZP], () => s.ZP.getGuildScheduledEvent(b), [b]), O = (0, l.e7)([g.Z], () => g.Z.getGuild(null == E ? true : E.guild_id), [E]), y = (0, l.e7)([h.Z], () => h.Z.getChannel(null == E ? true : E.channel_id), [E]), v = (0, u.zI)(b, null), I = null != E && (0, s.xt)(E), C = null != E ? (0, f.DK)(E) : null, S = (0, d.Z)(null == E ? true : E.guild_id, null == E ? true : E.id, C), T = null == v ? true : v.startTime.toISOString(), {
+  } = e, E = (0, l.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(b), [b]), O = (0, l.e7)([g.Z], () => g.Z.getGuild(null == E ? true : E.guild_id), [E]), y = (0, l.e7)([h.Z], () => h.Z.getChannel(null == E ? true : E.channel_id), [E]), v = (0, u.zI)(b, null), I = null != E && (0, o.xt)(E), C = null != E ? (0, f.DK)(E) : null, S = (0, d.Z)(null == E ? true : E.guild_id, null == E ? true : E.id, C), T = null == v ? true : v.startTime.toISOString(), {
     startDateTimeString: N
   } = i.useMemo(() => I ? {
     startDateTimeString: m.intl.string(m.t.TxqPQR)
-  } : (0, f.ub)(null != T ? T : new Date().toISOString()), [T, I]), j = null != E ? (0, p.cS)(E) : true, P = null != (t = null == y ? true : y.name) ? t : j, x = null != y ? (0, o.KS)(y) : null;
+  } : (0, f.ub)(null != T ? T : new Date().toISOString()), [T, I]), j = null != E ? (0, p.cS)(E) : true, P = null != (t = null == y ? true : y.name) ? t : j, x = null != y ? (0, s.KS)(y) : null;
   if (null == E || null == O) return null;
   let A = null != E.description && E.description.length > 0;
   return (0, r.jsxs)("div", {

@@ -16,7 +16,7 @@ async function d(e, t) {
   let {
     invite: n
   } = await i.ZP.resolveInvite(e, t);
-  if (null == n) throw new s.Z({
+  if (null == n) throw new o.Z({
     errorCode: u.lTL.INVALID_INVITE
   }, "Invalid invite id: ".concat(e));
   return a.default.isAuthenticated() ? r.Z.dispatch({
@@ -24,7 +24,7 @@ async function d(e, t) {
     invite: n,
     code: e,
     context: u.IlC.APP
-  }) : (0, l.dL)(u.Z5c.INVITE(e)), o.ZP.focus(), {
+  }) : (0, l.dL)(u.Z5c.INVITE(e)), s.ZP.focus(), {
     invite: n,
     code: e
   }

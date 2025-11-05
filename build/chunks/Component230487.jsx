@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
 let d = "activity-hardware-acceleration-modal";
 
 function p(e) {
-  l.ZP.disableActivityHardwareAccelerationPrompt || !o.isPlatformEmbedded || s.ZP.getEnableHardwareAcceleration() || (0, i.ZDy)(async () => {
+  l.ZP.disableActivityHardwareAccelerationPrompt || !s.isPlatformEmbedded || o.ZP.getEnableHardwareAcceleration() || (0, i.ZDy)(async () => {
     let {
       default: t
     } = await Promise.resolve().then(n.bind(n, 258220));

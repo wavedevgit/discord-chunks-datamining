@@ -1,5 +1,5 @@
-/** Chunk was on 93426 **/
-/** chunk id: 546247, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 88647 **/
+/** chunk id: 546247, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
 });
@@ -12,8 +12,8 @@ let o = Chunk998502.ZP.getEnableHardwareAcceleration() ? function(e) {
   let {
     eventTargetRef: t
   } = e;
-  return (0, n.jsx)(i.zLd, {
-    className: s.pulseGradient,
+  return (0, r.jsx)(i.zLd, {
+    className: a.pulseGradient,
     eventTargetRef: t
   })
 } : function() {

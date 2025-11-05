@@ -38,10 +38,10 @@ function j(e) {
   } = e, n = (0, f.q)(t.applicationId), l = (0, d.Z)(), {
     selectedChannelId: j,
     selectedVoiceChannelId: P
-  } = (0, o.cj)([b.Z], () => ({
+  } = (0, s.cj)([b.Z], () => ({
     selectedChannelId: b.Z.getChannelId(),
     selectedVoiceChannelId: b.Z.getVoiceChannelId()
-  })), x = (0, o.e7)([h.Z], () => null != P && j === P && h.Z.getChatOpen(P), [j, P]), A = (0, o.e7)([g.ZP], () => g.ZP.callChatSidebarWidth), Z = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
+  })), x = (0, s.e7)([h.Z], () => null != P && j === P && h.Z.getChatOpen(P), [j, P]), A = (0, s.e7)([g.ZP], () => g.ZP.callChatSidebarWidth), Z = (0, u.dQu)(o.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
     width: 0,
     height: 0
   }), M = i.useCallback(() => {

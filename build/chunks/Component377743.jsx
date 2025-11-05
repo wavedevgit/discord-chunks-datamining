@@ -20,7 +20,7 @@ function h(e) {
   let {
     guild: t,
     markAsDismissed: n
-  } = e, h = (0, s.KK)(t, c.Eu4.TIER_2), {
+  } = e, h = (0, o.KK)(t, c.Eu4.TIER_2), {
     analyticsLocations: g
   } = (0, l.ZP)(i.Z.GUILD_BANNER_NOTICE);
   return (0, r.jsx)(a.Z, {
@@ -32,7 +32,7 @@ function h(e) {
     }),
     type: c.vID.GUILD_BANNER,
     image: f,
-    onClick: () => (0, o.Z)({
+    onClick: () => (0, s.Z)({
       analyticsLocations: g,
       analyticsSourceLocation: {
         section: c.jXE.CHANNEL_NOTICE,

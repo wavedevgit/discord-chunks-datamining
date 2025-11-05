@@ -35,12 +35,12 @@ function g(e) {
       fromFriendSuggestion: true
     })
   }, E = e => {
-    null == e || e.stopPropagation(), o.Z.ignore(t.id)
+    null == e || e.stopPropagation(), s.Z.ignore(t.id)
   }, O = g === p.Skl.OFFLINE ? p.Skl.UNKNOWN : g;
   return (0, r.jsx)(u.Z, {
     isFocused: m,
     user: t,
-    onClick: () => (0, s.openUserProfileModal)({
+    onClick: () => (0, o.openUserProfileModal)({
       userId: t.id,
       sourceAnalyticsLocations: _
     }),

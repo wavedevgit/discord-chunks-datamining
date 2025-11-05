@@ -34,7 +34,7 @@ function N(e) {
   let {
     guild: t,
     onClick: l,
-    onView: o
+    onView: s
   } = e, [h, g] = i.useState(false), [E, N] = i.useState(false), [j, P] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
     N(true);
     try {
@@ -43,8 +43,8 @@ function N(e) {
       N(false)
     }
   }, [t.id, l]), Z = i.useCallback(e => {
-    e && !h && (g(true), null == o || o(t.id))
-  }, [t.id, h, o]), w = i.useCallback(e => {
+    e && !h && (g(true), null == s || s(t.id))
+  }, [t.id, h, s]), w = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -109,7 +109,7 @@ function N(e) {
         type: c.$jN.Type.PULSING_ELLIPSIS,
         className: I.spinner
       })
-    }), (0, r.jsx)(s.$, {
+    }), (0, r.jsx)(o.$, {
       innerRef: x,
       onChange: Z,
       active: !h,
@@ -214,7 +214,7 @@ function j(e) {
     guildId: t,
     onClick: n,
     onView: i
-  } = e, l = (0, o.e7)([E.Z], () => E.Z.getGuild(t));
+  } = e, l = (0, s.e7)([E.Z], () => E.Z.getGuild(t));
   return null == l ? null : (0, r.jsx)(N, {
     guild: l,
     onClick: n,
@@ -228,7 +228,7 @@ function P(e) {
     index: n,
     onClick: l,
     onView: a
-  } = e, o = i.useRef(null == t), s = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(g.Z, {
+  } = e, s = i.useRef(null == t), o = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(g.Z, {
     state: n,
     cleanUp: i,
     children: (0, r.jsx)(h.Z, {
@@ -237,7 +237,7 @@ function P(e) {
   }, e) : (0, r.jsx)(g.Z, {
     state: n,
     cleanUp: i,
-    animate: o.current,
+    animate: s.current,
     children: (0, r.jsx)(j, {
       guildId: t.guildId,
       onClick: l,
@@ -254,7 +254,7 @@ function P(e) {
     className: I.transitionGroup,
     children: (0, r.jsx)(c.W3x, {
       items: d,
-      renderItem: s,
+      renderItem: o,
       getItemKey: u
     })
   })

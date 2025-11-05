@@ -73,7 +73,7 @@ let O = 10 * Chunk70956.Z.Millis.SECOND,
           }, "SKU does not exist.");
           return Promise.race([(function(e, t) {
             let n = d.Z.isEntitledToSku(u.default.getCurrentUser(), e, t);
-            return null != n ? Promise.resolve(n) : (0, o.yD)(t).then(() => true === d.Z.isEntitledToSku(u.default.getCurrentUser(), e, t))
+            return null != n ? Promise.resolve(n) : (0, s.yD)(t).then(() => true === d.Z.isEntitledToSku(u.default.getCurrentUser(), e, t))
           })(t, e.id).then(e => {
             if (!e) throw new g.Z({
               errorCode: _.lTL.INVALID_ENTITLEMENT
@@ -107,7 +107,7 @@ let O = 10 * Chunk70956.Z.Millis.SECOND,
         return i.tn.post({
           url: _.ANM.ENTITLEMENT_TICKET(l),
           body: {
-            test_mode: p.Z.inTestModeForApplication(l) || s.Z.inDevModeForApplication(l)
+            test_mode: p.Z.inTestModeForApplication(l) || o.Z.inDevModeForApplication(l)
           },
           retries: 3,
           oldFormErrors: true,

@@ -49,7 +49,7 @@ function C(e, t) {
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
   s.Z.preload(n, t.id)
 }
-class E extends Chunk98597.ZP {
+class x extends Chunk98597.ZP {
   render() {
     let {
       channel: e,
@@ -122,7 +122,7 @@ class E extends Chunk98597.ZP {
     })
   }
 }
-let x = (0, Chunk146773.B)(E),
+let E = (0, Chunk146773.B)(x),
   S = Chunk647438.memo(function(e) {
     let {
       channel: t,
@@ -135,5 +135,5 @@ let x = (0, Chunk146773.B)(E),
         canReorderChannel: true !== i && null != e ? g.Z.can(_.Plq.MANAGE_CHANNELS, e) : g.Z.can(_.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(x, j({}, l, e))
+    return (0, r.jsx)(E, j({}, l, e))
   })

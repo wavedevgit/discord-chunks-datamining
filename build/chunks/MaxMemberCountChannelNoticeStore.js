@@ -21,7 +21,7 @@ class f extends(r = Chunk442837.ZP.Store) {
   isVisible(e) {
     var t;
     if (null == e) returnfalse;
-    let n = null != (t = s.Z.getMemberCount(e.id)) ? t : 0,
+    let n = null != (t = o.Z.getMemberCount(e.id)) ? t : 0,
       r = u.Z.can(d.Plq.ADMINISTRATOR, e);
     return !p[d.vID.MAX_MEMBER_COUNT].has(e.id) && r && e.maxMembers > 0 && e.maxMembers - n <= 1e4
   }

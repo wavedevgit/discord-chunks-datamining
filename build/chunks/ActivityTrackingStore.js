@@ -28,7 +28,7 @@ function j(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   t && P(e, true);
   let n = T[e.applicationId];
-  null != n && (n.stop(), delete T[e.applicationId]), delete S[e.applicationId], o.K.set(v, S)
+  null != n && (n.stop(), delete T[e.applicationId]), delete S[e.applicationId], s.K.set(v, S)
 }
 
 function P(e) {
@@ -53,7 +53,7 @@ function P(e) {
     mediaSessionId: c
   }), e.updatedAt = n;
   let d = T[e.applicationId];
-  null == d && (d = T[e.applicationId] = new s.Xp).start(I, () => P(e)), t || (S[e.applicationId] = e, o.K.set(v, S))
+  null == d && (d = T[e.applicationId] = new o.Xp).start(I, () => P(e)), t || (S[e.applicationId] = e, s.K.set(v, S))
 }
 
 function x() {
@@ -113,13 +113,13 @@ class Z extends(i = Chunk442837.ZP.Store) {
       token: n
     } = e, r = S[t];
     if (null == r) returnfalse;
-    r.token = n, o.K.set(v, S)
+    r.token = n, s.K.set(v, S)
   },
   ACTIVITY_UPDATE_FAIL: function(e) {
     let {
       applicationId: t
     } = e, n = S[t];
     if (null == n) returnfalse;
-    n.token = null, n.updatedAt = null, o.K.set(v, S)
+    n.token = null, n.updatedAt = null, s.K.set(v, S)
   }
 })

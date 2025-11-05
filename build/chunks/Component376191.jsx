@@ -57,7 +57,7 @@ function C(e) {
     channel: n,
     otherUser: l,
     active: u
-  } = e, m = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), b = (0, i.e7)([h.Z], () => null == l ? null : h.Z.getNickname(l.id)), C = !m && u, S = (0, _.c)(n), {
+  } = e, m = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), b = (0, i.e7)([h.Z], () => null == l ? null : h.Z.getNickname(l.id)), C = !m && u, S = (0, _.c)(n), {
     avatarDecorationSrc: T
   } = (0, p.Z)({
     user: l,
@@ -75,7 +75,7 @@ function C(e) {
       className: y.userPreview,
       children: [(0, r.jsxs)("div", {
         className: y.userContainerWithPreview,
-        children: [(0, r.jsx)(o.Z, {
+        children: [(0, r.jsx)(s.Z, {
           nick: b,
           user: l,
           showAccountIdentifier: true,

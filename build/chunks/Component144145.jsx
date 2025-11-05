@@ -120,13 +120,13 @@ function P(e) {
       if (!n || null == i) return null;
       async function c() {
         if (null == i) return;
-        let e = await o.Z.sendActivityInviteUser({
+        let e = await s.Z.sendActivityInviteUser({
           type: C.mFx.JOIN_REQUEST,
           userId: l.id,
           activity: i,
           location: C.Sbl.USER_ACTIVITY_ACTIONS
         });
-        null != e && s.default.selectPrivateChannel(e.id)
+        null != e && o.default.selectPrivateChannel(e.id)
       }
       return (0, r.jsx)(a.sNh, {
         id: "join-".concat(i.session_id),
@@ -140,12 +140,12 @@ function P(e) {
         activity: n,
         game: i,
         libraryApplication: l,
-        location: o,
-        canPlay: s,
+        location: s,
+        canPlay: o,
         isRunning: c,
         isLaunching: u
       } = e;
-      if (!s || null == n) return null;
+      if (!o || null == n) return null;
       let d = c ? S.intl.formatToPlainString(S.t["gBme/4"], {
         name: i.name
       }) : u ? S.intl.formatToPlainString(S.t.WtSQwG, {
@@ -156,7 +156,7 @@ function P(e) {
         action: function() {
           (0, I.playApplication)(i.id, l, {
             analyticsParams: {
-              location: N(T({}, o), {
+              location: N(T({}, s), {
                 object: C.qAy.LIST_ITEM
               })
             }

@@ -79,8 +79,8 @@ async function et(e) {
   var t, n, r, i, l;
   let {
     runningGame: a,
-    game: o,
-    detectionMethod: s,
+    game: s,
+    detectionMethod: o,
     overlayStatus: d,
     overlayMethod: p,
     sharedGuildIds: f,
@@ -98,11 +98,11 @@ async function et(e) {
   K.default.track(X.rMx.LAUNCH_GAME, {
     game: y,
     game_id: v,
-    verified: null != o && (0, E.vp)(S, null == o ? true : o.executables),
+    verified: null != s && (0, E.vp)(S, null == s ? true : s.executables),
     elevated: a.elevated,
     is_launcher: null != (r = null == a ? true : a.isLauncher) && r,
     game_platform: X.M7m.DESKTOP,
-    detection_method: s,
+    detection_method: o,
     distributor: C,
     is_overlay_enabled: L,
     is_overlay_game_enabled: Z,
@@ -128,7 +128,7 @@ class en extends Chunk647438.PureComponent {
   componentDidUpdate(e) {
     var t, n, r, i, l, a;
     let {
-      voiceChannelId: o,
+      voiceChannelId: s,
       voiceChannelGuildId: c,
       voiceChannelType: u,
       voiceChannelBitrate: d,
@@ -140,7 +140,7 @@ class en extends Chunk647438.PureComponent {
       selectedGuildId: S,
       connected: T
     } = this.props;
-    if (e.voiceChannelId !== o && null != e.voiceChannelId) {
+    if (e.voiceChannelId !== s && null != e.voiceChannelId) {
       let t = O.ZP.getCurrentGameForAnalytics(),
         n = null != t ? t.name : "",
         r = Z.Z.getStageInstanceByChannel(e.voiceChannelId),
@@ -160,19 +160,19 @@ class en extends Chunk647438.PureComponent {
         guild_scheduled_event_id: null == i ? true : i.id
       }, (0, p.kO)(e.voiceChannelGuildId, e.voiceChannelId, e.videoEnabled), G.Z.getVoiceStateStats(), _.Z.getSelectedParticipantStats(e.voiceChannelId)))
     }
-    if (e.voiceChannelId !== o && null != o) {
+    if (e.voiceChannelId !== s && null != s) {
       let e = O.ZP.getCurrentGameForAnalytics(),
         t = null != e ? e.name : "",
-        n = Z.Z.getStageInstanceByChannel(o),
-        r = I.ZP.getActiveEventByChannel(o);
-      (0, p.yw)(X.rMx.CHANNEL_OPENED, ee({}, (0, p.$H)(o))), (0, h.a)(X.rMx.CHANNEL_OPENED_CLICKSTREAM, {
-        channelId: o
+        n = Z.Z.getStageInstanceByChannel(s),
+        r = I.ZP.getActiveEventByChannel(s);
+      (0, p.yw)(X.rMx.CHANNEL_OPENED, ee({}, (0, p.$H)(s))), (0, h.a)(X.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+        channelId: s
       });
       let i = null,
         l = q.default.getFocusedPID();
       null != l && P.default.getOverlayMethod(l) !== N.gl.Disabled && (q.default.isInstanceLocked() ? i = X.ADE.OVERLAY_LOCKED_ACTIVATED : q.default.isInstanceLocked() || (i = q.default.isPinned(X.Odu.TEXT) ? X.ADE.OVERLAY_UNLOCKED_PINNED : X.ADE.OVERLAY_UNLOCKED)), K.default.track(X.rMx.JOIN_VOICE_CHANNEL, ee({
         location: i,
-        channel_id: o,
+        channel_id: s,
         channel_type: u,
         channel_bitrate: d,
         guild_id: c,
@@ -183,7 +183,7 @@ class en extends Chunk647438.PureComponent {
         guild_scheduled_event_id: null == r ? true : r.id,
         was_moved: G.Z.getWasMoved(),
         join_voice_id: G.Z.getJoinVoiceId()
-      }, (0, p.oG)(c, o), (0, p.kO)(c, o, f)))
+      }, (0, p.oG)(c, s), (0, p.kO)(c, s, f)))
     }
     let j = null != y && null != y.distributor && null != y.sku && null != e.runningGame && e.runningGame.distributor === y.distributor && y.sku === e.runningGame.sku && y.name === e.runningGame.name,
       x = null != e.runningGame && null != y && e.runningGame.isLauncher !== y.isLauncher;
@@ -209,17 +209,17 @@ class en extends Chunk647438.PureComponent {
             overlayStatus: C,
             overlayMethod: S,
             sharedGuildIds: g,
-            voiceChannelId: o,
+            voiceChannelId: s,
             voiceChannelType: u,
             voiceChannelBitrate: d,
             voiceChannelGuildId: c
           })
         }, 1e4), null != y.name && null != v && R.Z.shouldReport(y.name)) {
         let e = y.name;
-        s.Z.identifyGame(v, e).then(e => s.Z.reportUnverifiedGame(e)).catch(e => new b.Z("AutoAnalytics").error("Cannot identify game", e))
+        o.Z.identifyGame(v, e).then(e => o.Z.reportUnverifiedGame(e)).catch(e => new b.Z("AutoAnalytics").error("Cannot identify game", e))
       }
     }
-    if ((e.videoEnabled !== f || e.isScreenSharing !== g) && null != o) {
+    if ((e.videoEnabled !== f || e.isScreenSharing !== g) && null != s) {
       let e = "none",
         t = [g ? "screen" : null, f ? "camera" : null].filter(J.lm),
         n = null;
@@ -228,7 +228,7 @@ class en extends Chunk647438.PureComponent {
         video_toggle_source: __OVERLAY__ ? "overlay" : "app",
         enabled_inputs: t,
         preview_enabled: w.qF.getSetting()
-      }, n, this.getGameMetadata(), (0, p.AB)(o)))
+      }, n, this.getGameMetadata(), (0, p.AB)(s)))
     }
     if (T && null != C && (!e.connected || C !== e.selectedChannelId || S !== e.selectedGuildId)) {
       let t = e.selectedChannelId,
@@ -265,7 +265,7 @@ class en extends Chunk647438.PureComponent {
 }
 
 function er() {
-  let [e, t] = (0, Chunk442837.Wu)([Chunk944486.Z], () => [Chunk944486.Z.getVoiceChannelId(), Chunk944486.Z.getChannelId()], []), n = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(exports), [exports]), l = (0, Chunk442837.e7)([Chunk358221.Z], () => (null == require ? true : require.id) != null && Chunk358221.Z.getChatOpen(require.id), [require]), a = null == require ? true : require.nsfw, s = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(module), [module]), c = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId(), []), u = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(Chunk593472), [Chunk593472]), m = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser(), []), b = (0, Chunk442837.e7)([Chunk271383.ZP], () => {
+  let [e, t] = (0, Chunk442837.Wu)([Chunk944486.Z], () => [Chunk944486.Z.getVoiceChannelId(), Chunk944486.Z.getChannelId()], []), n = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(exports), [exports]), l = (0, Chunk442837.e7)([Chunk358221.Z], () => (null == require ? true : require.id) != null && Chunk358221.Z.getChatOpen(require.id), [require]), a = null == require ? true : require.nsfw, o = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(module), [module]), c = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId(), []), u = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(Chunk593472), [Chunk593472]), m = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser(), []), b = (0, Chunk442837.e7)([Chunk271383.ZP], () => {
     var e, t;
     return null != Chunk318885 && null != Chunk593472 && null != (t = null == (e = Chunk271383.ZP.getMember(Chunk593472, Chunk318885.id)) ? true : module.isPending) && exports
   }, [Chunk318885, Chunk593472]), E = (0, Chunk442837.e7)([Chunk974042.ZP], () => Chunk974042.ZP.getState().section, []), I = (0, Chunk442837.e7)([Chunk774343.Z], () => Chunk774343.Z.getHomeLink(), []), T = (0, Chunk442837.e7)([Chunk38618.Z], () => Chunk38618.Z.isConnected(), []), [N, j] = (0, Chunk442837.Wu)([Chunk131951.Z], () => [Chunk131951.Z.isVideoEnabled(), Chunk131951.Z.isScreenSharing()], []), P = (0, Chunk442837.e7)([Chunk885110.Z], () => Chunk885110.Z.getPrimaryActivity(), []), x = (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.getCurrentGameForAnalytics(), []), A = (0, Chunk489745.Z)(Chunk593472), Z = (0, Chunk442837.e7)([Chunk355298.Z], () => Chunk355298.Z.getMessageRequestsCount(), []), w = {

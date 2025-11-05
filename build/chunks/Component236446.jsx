@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk160033 = require("./160033.js"),
   Chunk197571 = require("./197571.js");
 
-function L(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -51,18 +51,18 @@ class D extends Chunk647438.PureComponent {
     (0, Chunk108427.e)("guildTemplate"), Chunk436620.KO || Chunk954824.Z.launch("discord://" + Chunk981631.Z5c.GUILD_TEMPLATE(this.props.code), () => true)
   }
   componentDidUpdate(e) {
-    this.props.code !== e.code && m.Z.resolveGuildTemplate(this.props.code)
+    this.props.code !== e.code && p.Z.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
     return Z.KO ? (0, r.jsx)("div", {
-      className: w.marginTop40,
+      className: L.marginTop40,
       children: (0, r.jsx)(u.Button, {
         text: e,
         fullWidth: true,
         onClick: t
       })
     }) : (0, r.jsx)(d.v6, {
-      className: w.marginTop40
+      className: L.marginTop40
     })
   }
   renderSpinner(e) {
@@ -151,7 +151,7 @@ class D extends Chunk647438.PureComponent {
     }
   }
   constructor(...e) {
-    super(...e), L(this, "handleContinue", () => {
+    super(...e), w(this, "handleContinue", () => {
       let {
         defaultRoute: e,
         transitionTo: t
@@ -175,7 +175,7 @@ function k(e) {
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        L(e, t, n[t])
+        w(e, t, n[t])
       })
     }
     return e
@@ -188,7 +188,7 @@ function M(e) {
   } = e, {
     form: n,
     handleSubmit: i
-  } = (0, p.Z)(t, false);
+  } = (0, m.Z)(t, false);
   v.Z.flowStep(T.MK.ORGANIC_GUILD_TEMPLATES, T.X2.GUILD_CREATE);
   let s = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Dx, {
@@ -203,7 +203,7 @@ function M(e) {
       })
     })]
   });
-  return (0, r.jsx)(O.Z, {
+  return (0, r.jsx)(S.Z, {
     className: R.authBox,
     children: () => [(0, r.jsx)(f.Z, {
       guildTemplate: t

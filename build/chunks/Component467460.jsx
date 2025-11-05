@@ -48,7 +48,7 @@ let p = e => {
       hours: p,
       minutes: h,
       seconds: g
-    } = (0, o.Z)(Date.parse(t), 1e3), m = c > 0 ? [c, p, h] : p > 0 ? [p, h, g] : [h, g], _ = (0, s.zu)(i.z.NITRO_TAB_BADGE_OFFER_REMINDER);
+    } = (0, s.Z)(Date.parse(t), 1e3), m = c > 0 ? [c, p, h] : p > 0 ? [p, h, g] : [h, g], _ = (0, o.zu)(i.z.NITRO_TAB_BADGE_OFFER_REMINDER);
     return (0, r.jsx)(l.u, {
       text: n,
       position: "right",

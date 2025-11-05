@@ -1,4 +1,4 @@
-/** Chunk was on 3688 **/
+/** Chunk was on 12581 **/
 /** chunk id: 722734, original params: t,e,i (module,exports,require) **/
 function s(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
@@ -13,9 +13,9 @@ function n(t, e) {
   return Math.max(Math.min((t - e) / 30, 1), false)
 }
 require.d(exports, {
-  Z: () => a
+  Z: () => r
 });
-let a = class {
+let r = class {
   initialize() {
     window.addEventListener("mousemove", this.handleMouseMove)
   }

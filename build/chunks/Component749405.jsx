@@ -23,9 +23,9 @@ function h(e) {
   } = e, g = (0, c.K)(), m = i.useCallback(() => {
     (0, l.showToast)((0, l.createToast)(p.intl.string(p.t["EDYbS+"]), l.ToastType.FAILURE))
   }, []), _ = i.useCallback(() => {
-    o.Z.closeChannelSidebar(s.uZ)
+    s.Z.closeChannelSidebar(o.uZ)
   }, []), b = i.useCallback(() => {
-    o.Z.closeChannelSidebar(s.uZ), g && (0, a.Kh)(h.id)
+    s.Z.closeChannelSidebar(o.uZ), g && (0, a.Kh)(h.id)
   }, [h.id, g]), {
     acceptMessageRequest: E,
     rejectMessageRequest: O,

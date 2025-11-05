@@ -31,7 +31,7 @@ let p = function(e) {
       section: t
     } = e;
     return p(t)
-  }, [p]), m = (0, o.e7)([c.Z], () => c.Z.keyboardModeEnabled), _ = i.useRef(null), b = i.useCallback(() => new Promise(e => {
+  }, [p]), m = (0, s.e7)([c.Z], () => c.Z.keyboardModeEnabled), _ = i.useRef(null), b = i.useCallback(() => new Promise(e => {
     let t = _.current;
     if (null == t) return e();
     t.scrollToTop({
@@ -80,7 +80,7 @@ let p = function(e) {
           return i
         }(e, ["ref"]);
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(s._2F, function(e) {
+          children: [(0, r.jsx)(o._2F, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);

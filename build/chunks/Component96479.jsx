@@ -23,7 +23,7 @@ function p(e) {
     hasSingleMessageRequest: h
   } = e, {
     channelId: g
-  } = (0, s._)();
+  } = (0, o._)();
   return (0, r.jsx)(c.Z, {
     index: t,
     className: n,
@@ -40,7 +40,7 @@ function p(e) {
         channel_id: p.id,
         other_user_id: f.id
       }), setTimeout(() => {
-        o.S.dispatch(d.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+        s.S.dispatch(d.CkL.FOCUS_CHANNEL_TEXT_AREA, {
           channelId: p.id
         })
       }, 0)

@@ -81,7 +81,7 @@ let b = ["1402418171662569542"],
         if (null == g && m.He.IPC === a.transport) throw new h.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, "nonzero pid required");
-        if (null == E) return o.Z.dispatch({
+        if (null == E) return s.Z.dispatch({
           type: "LOCAL_ACTIVITY_UPDATE",
           socketId: a.id,
           pid: g,
@@ -97,7 +97,7 @@ let b = ["1402418171662569542"],
           S = null != (r = E.instance) && r,
           T = null == (t = E.party) ? true : t.privacy;
         delete E.instance, null == (n = E.party) || delete n.privacy;
-        let N = (0, s.S)(E, S, I, null != C && (0, u.g)(C) && I, T);
+        let N = (0, o.S)(E, S, I, null != C && (0, u.g)(C) && I, T);
         N > 0 && (E.flags = N);
         let {
           assets: j,
@@ -128,9 +128,9 @@ let b = ["1402418171662569542"],
         }
         return l.then(e => {
           var t, n, r, i;
-          let [l, s, c] = e;
-          if (null != j && (null != l ? j.large_image = l : delete j.large_image, null != s ? j.small_image = s : delete j.small_image, null != c ? j.invite_cover_image = c : delete j.invite_cover_image), !O()) return;
-          o.Z.dispatch({
+          let [l, o, c] = e;
+          if (null != j && (null != l ? j.large_image = l : delete j.large_image, null != o ? j.small_image = o : delete j.small_image, null != c ? j.invite_cover_image = c : delete j.invite_cover_image), !O()) return;
+          s.Z.dispatch({
             type: "LOCAL_ACTIVITY_UPDATE",
             socketId: a.id,
             pid: g,

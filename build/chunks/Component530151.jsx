@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -179,12 +179,12 @@ function z(e, t, n, r, i) {
   let l = F[t],
     a = null != l ? Object.keys(l) : [],
     {
-      unit: o,
-      time: s
+      unit: s,
+      time: o
     } = (0, T.CI)(null != e ? e / 60 : null, a);
-  if (null != l && null != o) {
-    let e = l[o];
-    return null != e ? e(n, r, i, s) : null
+  if (null != l && null != s) {
+    let e = l[s];
+    return null != e ? e(n, r, i, o) : null
   }
   return null
 }
@@ -197,14 +197,14 @@ function Y(e) {
     progress: i,
     total: l,
     secondsRemaining: a
-  } = e, o = V(l, n), s = V(i, n);
+  } = e, s = V(l, n), o = V(i, n);
   switch (n) {
     case D.f07.QUEUED:
       if (0 === i) return M.intl.string(M.t.RpfBqd);
       return M.intl.formatToPlainString(M.t.uNjCXZ, {
         percent: r,
-        progress: s,
-        total: o
+        progress: o,
+        total: s
       });
     case D.f07.PLANNING:
       return M.intl.formatToPlainString(M.t.sfuCUb, {
@@ -215,7 +215,7 @@ function Y(e) {
         percent: r
       });
     case D.f07.PATCHING:
-      return z(a, t, r, s, o);
+      return z(a, t, r, o, s);
     case D.f07.FINALIZING:
       return M.intl.formatToPlainString(M.t["6PHDUN"], {
         percent: r
@@ -223,27 +223,27 @@ function Y(e) {
     case D.f07.PAUSING:
       return M.intl.formatToPlainString(M.t.vjxhWo, {
         percent: r,
-        progress: s,
-        total: o
+        progress: o,
+        total: s
       });
     case D.f07.VERIFYING:
       return M.intl.formatToPlainString(M.t.bbilvq, {
         percent: r,
-        progress: s,
-        total: o
+        progress: o,
+        total: s
       });
     case D.f07.POST_INSTALL_SCRIPTS:
       return M.intl.formatToPlainString(M.t.c5vRUo, {
         percent: r,
-        progress: s,
-        total: o
+        progress: o,
+        total: s
       });
     case D.f07.REPAIRING:
-      if (t === D.vxO.REPAIRING) return z(a, t, r, s, o);
+      if (t === D.vxO.REPAIRING) return z(a, t, r, o, s);
       return M.intl.formatToPlainString(M.t.OCzETT, {
         percent: r,
-        progress: s,
-        total: o
+        progress: o,
+        total: s
       })
   }
   throw Error("Invalid Dispatch stage")
@@ -322,7 +322,7 @@ class W extends Chunk647438.PureComponent {
       if (null != Chunk951288 && null != Chunk647438) {
         let n = V(Chunk647438, Chunk120356),
           a = V(Chunk951288, Chunk120356),
-          o = Math.floor(t = Chunk780570.xI(Chunk951288, Chunk647438));
+          s = Math.floor(t = Chunk780570.xI(Chunk951288, Chunk647438));
         e = Chunk120356 === Chunk981631.f07.PAUSING ? Chunk388032.intl.formatToPlainString(Chunk388032.t.vjxhWo, {
           percent: Chunk392711,
           progress: a,
@@ -436,23 +436,23 @@ class W extends Chunk647438.PureComponent {
         progress: i,
         total: l,
         type: a,
-        readerProgress: o
+        readerProgress: s
       } = n;
       if (null == i || null == l || null == r) return null;
-      let s = w.xI(i, l),
-        c = w.xI(null != o ? o : 0, l),
+      let o = w.xI(i, l),
+        c = w.xI(null != s ? s : 0, l),
         u = e[e.length - 1] / t * 1e3,
         d = l - i,
         p = Y({
           type: a,
           stage: r,
-          percent: Math.floor(s),
+          percent: Math.floor(o),
           progress: i,
           total: l,
           secondsRemaining: 0 !== u ? Math.max(1, d / u) : null
         });
       return this.renderStackedProgress({
-        percents: [s, c],
+        percents: [o, c],
         message: p
       })
     })
@@ -558,7 +558,7 @@ class $ extends Chunk647438.PureComponent {
       paused: t,
       isFocused: i,
       theme: l,
-      analyticsContext: o
+      analyticsContext: s
     } = this.props;
     return 0 === module.length ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk248241.gameUpdates,
@@ -611,7 +611,7 @@ class $ extends Chunk647438.PureComponent {
                 }({}, n), l = l = {
                   applicationId: t.applicationId,
                   branchId: t.branchId,
-                  analyticsContext: o
+                  analyticsContext: s
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                   var n = Object.keys(e);
                   if (Object.getOwnPropertySymbols) {
@@ -631,7 +631,7 @@ class $ extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), U(this, "isUnmounted", false), U(this, "isTallerThanHalfViewport", false), U(this, "throttledUpdateHeight", s().throttle(() => {
+    super(...e), U(this, "isUnmounted", false), U(this, "isTallerThanHalfViewport", false), U(this, "throttledUpdateHeight", o().throttle(() => {
       if (this.isUnmounted) return;
       let {
         height: e,
@@ -646,15 +646,15 @@ function ee(e, t, n, r) {
   return e.reduce((e, i, l) => {
     let {
       applicationId: a,
-      branchId: o
-    } = i, s = n.getApplication(a), c = r.getState(a, o);
-    return null != s && e.push({
-      key: "".concat(a, ":").concat(o),
+      branchId: s
+    } = i, o = n.getApplication(a), c = r.getState(a, s);
+    return null != o && e.push({
+      key: "".concat(a, ":").concat(s),
       applicationId: a,
-      branchId: o,
+      branchId: s,
       state: c,
-      application: s,
-      libraryApplication: j.Z.getLibraryApplication(a, o),
+      application: o,
+      libraryApplication: j.Z.getLibraryApplication(a, s),
       finished: t,
       index: l
     }), e

@@ -26,12 +26,12 @@ function L(t) {
     onClose: L,
     onChannelPromptCompleted: x,
     isSlideReady: T
-  } = t, [E, h] = l.useState(""), [G, I] = l.useState(null), [D, y] = l.useState(false), U = (0, C.Dt)(), z = (0, a.e7)([u.Z], () => u.Z.getGuild(n), [n]), N = l.useRef(null);
+  } = t, [E, h] = l.useState(""), [G, I] = l.useState(null), [D, y] = l.useState(false), U = (0, C.Dt)(), z = (0, a.e7)([u.Z], () => u.Z.getGuild(n), [n]), f = l.useRef(null);
   l.useEffect(() => {
     var t;
-    T && (null == (t = N.current) || t.focus())
+    T && (null == (t = f.current) || t.focus())
   }, [T]);
-  let f = l.useCallback(async t => {
+  let N = l.useCallback(async t => {
       if (t.preventDefault(), null == z) return;
       y(true), I(null);
       let n = p.ZP.getDefaultChannel(z.id);
@@ -49,7 +49,7 @@ function L(t) {
       children: [(0, i.jsx)(r.Button, {
         variant: "primary",
         text: g.intl.string(g.t.i4jeWR),
-        onClick: f,
+        onClick: N,
         disabled: 0 === E.length,
         loading: D
       }), (0, i.jsx)(s.zx, {
@@ -89,7 +89,7 @@ function L(t) {
       }), (0, i.jsxs)(r.hzk, {
         className: _.channelPrompt,
         children: [(0, i.jsx)("form", {
-          onSubmit: f,
+          onSubmit: N,
           children: (0, i.jsx)(r.oil, {
             label: g.intl.string(g.t.bY20tU),
             error: null == G ? true : G.getFieldMessage("name"),
@@ -98,7 +98,7 @@ function L(t) {
             id: U,
             onChange: h,
             placeholder: g.intl.string(g.t.xGOYA8),
-            inputRef: N
+            inputRef: f
           })
         }), null != G && 0 === Object.keys(G.fields).length && (0, i.jsx)(r.Text, {
           variant: "text-xs/normal",

@@ -30,13 +30,13 @@ function x(e) {
     return "Android" === l().os.family || "iOS" === l().os.family ? null : (0, r.jsx)(o.Button, {
       text: f.intl.string(f.t.dKhVQN),
       fullWidth: true,
-      onClick: () => s(m.Z5c.LOGIN, {
+      onClick: () => s(p.Z5c.LOGIN, {
         source: "authorizeIPAdress"
       })
     })
   }
   return ((0, u.ZP)(() => {
-    (0, p.e)("authorize_ip");
+    (0, m.e)("authorize_ip");
     let e = (0, d.Z)(t);
     if (null == e) return void x("failed");
     (async () => {

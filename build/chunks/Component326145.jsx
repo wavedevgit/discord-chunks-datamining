@@ -35,7 +35,7 @@ function y(e) {
       guildId: t,
       returnChannelId: n
     }))
-  }, [t, n]), C = (0, o.e7)([f.Z], () => f.Z.getGuild(t)), S = i.useMemo(() => null == C ? null : h.ZP.getGuildSplashURL({
+  }, [t, n]), C = (0, s.e7)([f.Z], () => f.Z.getGuild(t)), S = i.useMemo(() => null == C ? null : h.ZP.getGuildSplashURL({
     id: C.id,
     splash: C.splash
   }), [C]), T = (0, d.N)(S);
@@ -61,16 +61,16 @@ function y(e) {
       className: a()(E.explainerContainer, E.transparentBackground),
       children: [(0, r.jsxs)("div", {
         className: E.header,
-        children: [(0, r.jsx)(s.Heading, {
+        children: [(0, r.jsx)(o.Heading, {
           variant: "heading-xxl/normal",
           color: "always-white",
           children: b.intl.string(b.t.CCmhpF)
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-lg/normal",
           color: "always-white",
           children: b.intl.string(b.t.gRAHcZ)
         })]
-      }), (0, r.jsx)(s.Button, {
+      }), (0, r.jsx)(o.Button, {
         variant: "overlay-primary",
         size: "md",
         text: b.intl.string(b.t.VVFjAC),

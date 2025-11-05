@@ -38,7 +38,7 @@ let j = (0, Chunk647438.memo)(function(e) {
   } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, E.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), Y = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, W = A.config.rewards[Y], q = (null == W ? true : W.type) === s.w.FRACTIONAL_PREMIUM, K = (null == W ? true : W.type) === s.w.COLLECTIBLE, Q = (null == W ? true : W.type) === s.w.VIRTUAL_CURRENCY, J = null == W || null == (j = W.collectibleProduct) || null == (l = j.items) ? true : l[0], X = (null == J ? true : J.type) === o.Z.AVATAR_DECORATION ? J : null;
+  }), Y = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, W = A.config.rewards[Y], q = (null == W ? true : W.type) === o.w.FRACTIONAL_PREMIUM, K = (null == W ? true : W.type) === o.w.COLLECTIBLE, Q = (null == W ? true : W.type) === o.w.VIRTUAL_CURRENCY, J = null == W || null == (j = W.collectibleProduct) || null == (l = j.items) ? true : l[0], X = (null == J ? true : J.type) === s.Z.AVATAR_DECORATION ? J : null;
   (0, p.PM)(k, e => {
     let {
       height: t
@@ -73,7 +73,7 @@ let j = (0, Chunk647438.memo)(function(e) {
       }
       return i
     }(er, ["content_position", "row_index"]),
-    eo = () => {
+    es = () => {
       w(true), _.default.track(S.rMx.QUEST_HOVER, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -95,7 +95,7 @@ let j = (0, Chunk647438.memo)(function(e) {
         quest_id: A.id
       }, ea))
     },
-    es = () => {
+    eo = () => {
       w(false)
     },
     ec = e => {
@@ -109,10 +109,10 @@ let j = (0, Chunk647438.memo)(function(e) {
     children: (0, r.jsxs)("div", {
       ref: k,
       tabIndex: 0,
-      onFocus: eo,
-      onBlur: es,
-      onMouseEnter: eo,
-      onMouseLeave: es,
+      onFocus: es,
+      onBlur: eo,
+      onMouseEnter: es,
+      onMouseLeave: eo,
       className: a()(N.container, {
         [N.hovered]: Z
       }),

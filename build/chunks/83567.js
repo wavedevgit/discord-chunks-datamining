@@ -48,7 +48,7 @@ let m = new Set([Chunk701488.Fu, Chunk701488.JT]),
           errorCode: g.lT.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
         return new Promise(async (e, t) => {
-          let l = o.Z.getAccount(null, n);
+          let l = s.Z.getAccount(null, n);
           if (null == l) {
             function u(t) {
               var n;
@@ -66,9 +66,9 @@ let m = new Set([Chunk701488.Fu, Chunk701488.JT]),
             }
 
             function m() {
-              r.Z.unsubscribe("USER_CONNECTIONS_UPDATE", u), s.S.unsubscribe(f.CkL.CONNECTIONS_CALLBACK_ERROR, p)
+              r.Z.unsubscribe("USER_CONNECTIONS_UPDATE", u), o.S.unsubscribe(f.CkL.CONNECTIONS_CALLBACK_ERROR, p)
             }
-            r.Z.subscribe("USER_CONNECTIONS_UPDATE", u), s.S.subscribe(f.CkL.CONNECTIONS_CALLBACK_ERROR, p), (0, a.Z)({
+            r.Z.subscribe("USER_CONNECTIONS_UPDATE", u), o.S.subscribe(f.CkL.CONNECTIONS_CALLBACK_ERROR, p), (0, a.Z)({
               platformType: h.type,
               location: f.Sbl.ACTIVITY_RPC,
               successRedirect: d
@@ -114,11 +114,11 @@ let m = new Set([Chunk701488.Fu, Chunk701488.JT]),
         } else throw new c.Z({
           errorCode: g.lT.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
-        let s = o.Z.getAccount(null, n);
-        if (null == s) throw new c.Z({
+        let o = s.Z.getAccount(null, n);
+        if (null == o) throw new c.Z({
           errorCode: g.lT.NO_CONNECTION_FOUND
         }, "No connection found");
-        let d = await i.Z.refreshAccessToken(a.type, s.id);
+        let d = await i.Z.refreshAccessToken(a.type, o.id);
         if (null == d) throw new c.Z({
           errorCode: g.lT.OAUTH2_ERROR
         }, "Refreshing access token did not return a new access token");

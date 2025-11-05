@@ -21,7 +21,7 @@ function g(e) {
     transitionState: t
   } = e, g = (0, a.e7)([d.Z], () => d.Z.getAction()), [m, _] = i.useState(false), b = (0, u.Dt)();
   async function E() {
-    return _(true), g === p.c2C.AGREEMENTS && _(await (0, s.Lr)()), null
+    return _(true), g === p.c2C.AGREEMENTS && _(await (0, o.Lr)()), null
   }
   return (0, c.Z)({
     type: l.ImpressionTypes.VIEW,
@@ -29,20 +29,20 @@ function g(e) {
     properties: {
       required_action: g
     }
-  }, {}, []), (0, r.jsxs)(o.Y0X, {
+  }, {}, []), (0, r.jsxs)(s.Y0X, {
     "aria-labelledby": b,
     transitionState: t,
     parentComponent: "UserAgreementsModal",
     children: [(0, r.jsx)("div", {
       id: b
-    }), (0, r.jsx)(o.xBx, {
+    }), (0, r.jsx)(s.xBx, {
       separator: false,
-      children: (0, r.jsx)(o.Heading, {
+      children: (0, r.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
         children: f.intl.string(f.t["7glvXu"])
       })
-    }), (0, r.jsxs)(o.hzk, {
-      children: [(0, r.jsx)(o.Text, {
+    }), (0, r.jsxs)(s.hzk, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         children: g === p.c2C.AGREEMENTS ? f.intl.format(f.t.CN0Hvb, {
           url: p.EYA.TERMS_SUMMARY
@@ -73,13 +73,13 @@ function g(e) {
           alt: "",
           src: n(146714)
         })]
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: h.agreementDescription,
         children: f.intl.string(f.t["+USXQE"])
       })]
-    }), (0, r.jsx)(o.mzw, {
-      children: (0, r.jsx)(o.Button, {
+    }), (0, r.jsx)(s.mzw, {
+      children: (0, r.jsx)(s.Button, {
         variant: "active",
         text: f.intl.string(f.t["+TBKL1"]),
         loading: m,

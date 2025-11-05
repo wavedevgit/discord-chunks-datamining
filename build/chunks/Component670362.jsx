@@ -2,7 +2,7 @@
 /** chunk id: 670362, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c,
-  g: () => s
+  g: () => o
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,13 +10,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk313201 = require("./313201.js"),
   Chunk491873 = require("./491873.js");
 
-function s(e) {
+function o(e) {
   let {
     children: t,
     id: n
   } = e;
   return (0, r.jsx)(l.Text, {
-    className: o.popoutHeading,
+    className: s.popoutHeading,
     color: "text-secondary",
     id: n,
     variant: "text-sm/semibold",
@@ -27,14 +27,14 @@ let c = function(e) {
   let {
     children: t,
     renderPopout: n
-  } = e, s = (0, a.Dt)(), c = i.useRef(null);
+  } = e, o = (0, a.Dt)(), c = i.useRef(null);
   return (0, r.jsx)(l.yRy, {
     align: "right",
     position: "bottom",
     renderPopout: e => (0, r.jsx)(l.VqE, {
-      className: o.popout,
-      "aria-labelledby": s,
-      children: n(e, s)
+      className: s.popout,
+      "aria-labelledby": o,
+      children: n(e, o)
     }),
     scrollBehavior: "close",
     targetElementRef: c,

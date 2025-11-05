@@ -96,10 +96,10 @@ let _ = Chunk647438.memo(function(e) {
         onDismiss: v
       });
     case m.voiceChannelsSectionNumber: {
-      var E;
+      var x;
       let e = m.getCategoryFromSection(m.voiceChannelsSectionNumber);
       if (null == e || e.isEmpty()) return null;
-      let n = null == (E = m.getChannelFromSectionRow(t, 0)) ? true : E.channel;
+      let n = null == (x = m.getChannelFromSectionRow(t, 0)) ? true : x.channel;
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)("div", {
           className: g.sectionDivider

@@ -96,7 +96,7 @@ let L = function(e) {
   } = e, {
     analyticsLocations: n
   } = (0, d.ZP)(u.Z.FRIENDS_LIST), {
-    rows: o,
+    rows: s,
     section: A
   } = (0, l.cj)([g.ZP], () => g.ZP.getState()), L = (0, l.e7)([m.Z], () => m.Z.isFocused()), {
     relationshipCount: R,
@@ -150,7 +150,7 @@ let L = function(e) {
     k(P(j({}, M), {
       [A]: ""
     }))
-  }, [M, A]), H = i.useMemo(() => A === S.pJs.PENDING && (o.filter(S.pJs.SPAM).length > 0 || o.filter(S.pJs.PENDING_IGNORED).length > 0), [o, A]), V = i.useMemo(() => o.filter(A, M[A]), [o, M, A]), F = A === S.pJs.PENDING, z = i.useMemo(() => {
+  }, [M, A]), H = i.useMemo(() => A === S.pJs.PENDING && (s.filter(S.pJs.SPAM).length > 0 || s.filter(S.pJs.PENDING_IGNORED).length > 0), [s, A]), V = i.useMemo(() => s.filter(A, M[A]), [s, M, A]), F = A === S.pJs.PENDING, z = i.useMemo(() => {
     if (!F) return x;
     let e = [];
     return V.forEach(t => {
@@ -174,7 +174,7 @@ let L = function(e) {
     W = i.useMemo(() => V.filter(e => e.type === S.OGo.PENDING_INCOMING).length, [V]),
     q = A === S.pJs.PENDING && W > 0 && W >= C.yf,
     K = i.useCallback(e => {
-      e.stopPropagation(), s.Z.confirmClearPendingRelationships(W)
+      e.stopPropagation(), o.Z.confirmClearPendingRelationships(W)
     }, [W]),
     Q = i.useCallback(e => {
       let n = function(e, t, n) {

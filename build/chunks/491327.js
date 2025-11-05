@@ -115,7 +115,7 @@ let v = {
           navigate: a = false
         }
       } = e;
-      if (!r) return o.default.selectVoiceChannel(null), null;
+      if (!r) return s.default.selectVoiceChannel(null), null;
       let b = f.Z.getVoiceChannelId();
       if (null != b && b !== r && false === l) throw new m.Z({
         errorCode: y.lTL.SELECT_VOICE_FORCE_REQUIRED
@@ -142,7 +142,7 @@ let v = {
             errorCode: y.lTL.INVALID_PERMISSIONS
           }, "Connect permission required to join channel")
         }
-        return o.default.selectVoiceChannel(t.id), a && (0, s.dL)(y.Z5c.CHANNEL(t.guild_id, t.id)), n
+        return s.default.selectVoiceChannel(t.id), a && (0, o.dL)(y.Z5c.CHANNEL(t.guild_id, t.id)), n
       })
     }
   },
@@ -189,8 +189,8 @@ let v = {
         if (n.guild_id && !p.Z.can(y.Plq.VIEW_CHANNEL, t)) throw new m.Z({
           errorCode: y.lTL.INVALID_CHANNEL
         }, "No permission to see channel");
-        return n.guild_id ? (0, s.dL)(y.Z5c.CHANNEL(n.guild_id, t.id)) : o.default.selectPrivateChannel(t.id), n
-      }) : ((0, s.uL)(y.Z5c.ME), null)
+        return n.guild_id ? (0, o.dL)(y.Z5c.CHANNEL(n.guild_id, t.id)) : s.default.selectPrivateChannel(t.id), n
+      }) : ((0, o.uL)(y.Z5c.ME), null)
     }
   },
   [Chunk981631.Etm.CREATE_CHANNEL_INVITE]: {

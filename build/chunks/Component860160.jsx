@@ -76,7 +76,7 @@ function b(e) {
     children: (0, r.jsxs)("div", {
       className: _.header,
       children: [(() => {
-        if ("guild" === b && null != S) return (0, r.jsx)(s.Z, {
+        if ("guild" === b && null != S) return (0, r.jsx)(o.Z, {
           guild: S,
           size: "Medium",
           active: false,
@@ -147,7 +147,7 @@ function b(e) {
             })
           });
           if (null != I && null != e) {
-            let t = (0, o.KS)(I, S);
+            let t = (0, s.KS)(I, S);
             return (0, r.jsxs)("div", {
               className: _.subtitle,
               children: [(0, r.jsx)("span", {

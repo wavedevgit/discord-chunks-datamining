@@ -1,12 +1,11 @@
-/** Chunk was on 95468 **/
-/** chunk id: 994640, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 7082 **/
+/** chunk id: 994640, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk231239 = require("./231239.js"),
   Chunk881052 = require("./881052.js"),
@@ -16,92 +15,106 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk330966 = require("./330966.js");
 let p = e => {
-  let {
-    setStep: t,
-    setGuildsInfo: n,
-    email: i,
-    setEmail: p,
-    setGuildId: h,
-    invite: _,
-    onClose: v,
-    isNUXFlow: x
-  } = e, [N, E] = l.useState(null), [y, S] = l.useState(false), j = async e => {
-    e.preventDefault(), E(null), S(true);
+  var t, r, {
+      setStep: p,
+      setGuildsInfo: y,
+      email: b,
+      setEmail: g,
+      setGuildId: j,
+      invite: m
+    } = e,
+    v = function(e, t) {
+      if (null == e) return {};
+      var r, n, i = function(e, t) {
+        if (null == e) return {};
+        var r, n, i = {},
+          l = Object.keys(e);
+        for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        return i
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var l = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      }
+      return i
+    }(e, ["setStep", "setGuildsInfo", "email", "setEmail", "setGuildId", "invite"]);
+  let [h, E] = i.useState(null), [S, I] = i.useState(false), P = async e => {
+    e.preventDefault(), E(null), I(true);
     try {
-      var r, l, a, s, m;
-      let e = null != (m = null != (s = null == _ || null == (r = _.guild) ? true : r.id) ? s : null == (l = d.Z.getChannel(null == _ || null == (a = _.channel) ? true : a.id)) ? true : l.getGuildId()) ? m : true;
+      var t, r, n, i, l;
+      let e = null != (l = null != (i = null == m || null == (t = m.guild) ? true : t.id) ? i : null == (r = s.Z.getChannel(null == m || null == (n = m.channel) ? true : n.id)) ? true : r.getGuildId()) ? l : true;
       e === u.fQ && (e = true);
-      let c = await o.Z.sendVerificationEmail(i, true, e),
-        f = c.guilds_info;
-      c.has_matching_guild ? (h(e), t(u.tF.VERIFY_PIN)) : 0 === f.length ? t(u.tF.SUBMIT_SCHOOL) : 1 === f.length ? (h(f[0].id), await o.Z.sendVerificationEmail(i, true, f[0].id), t(u.tF.VERIFY_PIN)) : (n(f), t(u.tF.SELECT_SCHOOL))
+      let o = await a.Z.sendVerificationEmail(b, true, e),
+        c = o.guilds_info;
+      o.has_matching_guild ? (j(e), p(u.tF.VERIFY_PIN)) : 0 === c.length ? p(u.tF.SUBMIT_SCHOOL) : 1 === c.length ? (j(c[0].id), await a.Z.sendVerificationEmail(b, true, c[0].id), p(u.tF.VERIFY_PIN)) : (y(c), p(u.tF.SELECT_SCHOOL))
     } catch (e) {
       E(new c.Hx(e))
     } finally {
-      S(false)
+      I(false)
     }
-  }, I = f.intl.string(f.t.H1jCHH), O = f.intl.string(f.t.YfeHRA);
-  if (x) I = f.intl.string(f.t.LVyxNH), O = f.intl.string(f.t.ECd7Rt);
-  else if ((null == _ ? true : _.guild) != null && _.guild.id !== u.fQ && (null == _ ? true : _.approximate_member_count) != null) {
+  }, _ = f.intl.string(f.t.H1jCHH);
+  if ((null == m ? true : m.guild) != null && m.guild.id !== u.fQ && (null == m ? true : m.approximate_member_count) != null) {
     let {
       name: e
-    } = _.guild;
-    I = f.intl.formatToPlainString(f.t["4T4+p1"], {
+    } = m.guild;
+    _ = f.intl.formatToPlainString(f.t["4T4+p1"], {
       guildName: e,
-      count: _.approximate_member_count
+      count: m.approximate_member_count
     })
   }
-  return (0, r.jsxs)("div", {
-    className: g.container,
-    children: [(0, r.jsx)("div", {
-      className: g.topImage
-    }), (0, r.jsx)(s.Heading, {
-      className: a()(g.centerText, g.header),
-      variant: "heading-xl/semibold",
-      children: I
-    }), (0, r.jsx)("div", {
-      className: g.descriptionWidth,
-      children: (0, r.jsx)(s.Text, {
-        className: g.centerText,
-        variant: "text-sm/normal",
-        color: "header-secondary",
-        children: O
-      })
-    }), (0, r.jsxs)("form", {
-      className: g.formContent,
-      onSubmit: j,
-      children: [(0, r.jsx)(s.oil, {
+  return (0, n.jsx)("form", {
+    className: O.formContent,
+    onSubmit: P,
+    children: (0, n.jsxs)(l.Modal, (t = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var r = null != arguments[t] ? arguments[t] : {},
+          n = Object.keys(r);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(r, e).enumerable
+        }))), n.forEach(function(t) {
+          var n;
+          n = r[t], t in e ? Object.defineProperty(e, t, {
+            value: n,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = n
+        })
+      }
+      return e
+    }({}, v), r = r = {
+      title: _,
+      actions: [{
+        variant: "primary",
+        type: "submit",
+        loading: S,
+        text: f.intl.string(f.t["8vmKO0"])
+      }],
+      children: [(0, n.jsx)(o.oil, {
         label: f.intl.string(f.t.kmCxkf),
         placeholder: f.intl.string(f.t.ImAOh5),
         onChange: e => {
-          p(e)
+          g(e)
         },
-        error: null == N ? true : N.getAnyErrorMessage()
-      }), (0, r.jsx)(s.Text, {
-        color: "header-secondary",
-        className: g.formDescription,
-        variant: "text-sm/normal",
-        children: f.intl.string(f.t.Cv7mmI)
-      }), (0, r.jsx)(s.Button, {
-        type: "submit",
-        variant: "primary",
-        loading: y,
-        text: f.intl.string(f.t["8vmKO0"]),
-        fullWidth: true
-      }), (0, r.jsx)(s.Text, {
-        className: g.termsPhrase,
-        color: "header-secondary",
+        error: null == h ? true : h.getAnyErrorMessage()
+      }), (0, n.jsx)(o.Text, {
+        className: O.termsPhrase,
+        color: "text-muted",
         variant: "text-xs/normal",
-        children: f.intl.format(f.t.RPT0vj, {
-          termsURL: m.EYA.TERMS,
-          privacyURL: m.EYA.PRIVACY
-        })
-      }), x && (0, r.jsx)("div", {
-        className: g.cancelButton,
-        children: (0, r.jsx)(s.Avr, {
-          onClick: v,
-          text: f.intl.string(f.t.hO6qJ3)
+        children: f.intl.format(f.t.cgT481, {
+          termsURL: d.EYA.TERMS,
+          privacyURL: d.EYA.PRIVACY
         })
       })]
-    })]
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+      var r = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var n = Object.getOwnPropertySymbols(e);
+        r.push.apply(r, n)
+      }
+      return r
+    })(Object(r)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+    }), t))
   })
 }

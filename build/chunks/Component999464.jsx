@@ -1,77 +1,99 @@
-/** Chunk was on 95468 **/
-/** chunk id: 999464, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 7082 **/
+/** chunk id: 999464, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk231239 = require("./231239.js"),
   Chunk881052 = require("./881052.js"),
   Chunk888592 = require("./888592.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk946189 = require("./946189.js");
-let g = e => {
-  let {
-    email: t,
-    setStep: n,
-    onBack: i,
-    school: g,
-    setSchool: p
-  } = e, [h, _] = l.useState(null), [v, x] = l.useState(false), N = async () => {
-    _(null), x(true);
+  Chunk388032 = require("./388032.jsx");
+let f = e => {
+  var t, r, {
+      email: f,
+      setStep: O,
+      onBack: p,
+      school: y,
+      setSchool: b
+    } = e,
+    g = function(e, t) {
+      if (null == e) return {};
+      var r, n, i = function(e, t) {
+        if (null == e) return {};
+        var r, n, i = {},
+          l = Object.keys(e);
+        for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        return i
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var l = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      }
+      return i
+    }(e, ["email", "setStep", "onBack", "school", "setSchool"]);
+  let [j, m] = i.useState(null), [v, h] = i.useState(false), E = async () => {
+    m(null), h(true);
     try {
-      await o.Z.signup(t, g), n(d.tF.EMAIL_WAITLIST)
+      await a.Z.signup(f, y), O(s.tF.EMAIL_WAITLIST)
     } catch (e) {
-      _(new c.Hx(e))
+      m(new c.Hx(e))
     } finally {
-      x(false)
+      h(false)
     }
-  }, E = async e => {
-    null != g && "" !== g && e.charCode === u.yXg.ENTER && await N()
+  }, S = async e => {
+    null != y && "" !== y && e.charCode === u.yXg.ENTER && await E()
   };
-  return (0, r.jsxs)("div", {
-    className: f.container,
-    children: [(0, r.jsx)("div", {
-      className: f.__invalid_topImage
-    }), (0, r.jsx)(s.Heading, {
-      className: a()(f.centerText, f.header),
-      variant: "heading-xl/semibold",
-      children: m.intl.string(m.t["2FNWBG"])
-    }), (0, r.jsx)("div", {
-      className: f.descriptionWidth,
-      children: (0, r.jsx)(s.Text, {
-        className: f.centerText,
-        variant: "text-sm/normal",
-        color: "header-secondary",
-        children: m.intl.string(m.t["/4y6ox"])
+  return (0, n.jsx)(l.Modal, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var r = null != arguments[t] ? arguments[t] : {},
+        n = Object.keys(r);
+      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(r, e).enumerable
+      }))), n.forEach(function(t) {
+        var n;
+        n = r[t], t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = n
       })
-    }), (0, r.jsx)("div", {
-      className: f.formItem,
-      children: (0, r.jsx)(s.oil, {
-        label: m.intl.string(m.t["L+AfJr"]),
-        onKeyPress: E,
-        placeholder: m.intl.string(m.t.Y1btJd),
-        onChange: e => {
-          p(e)
-        },
-        error: null == h ? true : h.getAnyErrorMessage()
-      })
-    }), (0, r.jsxs)("div", {
-      className: f.footer,
-      children: [(0, r.jsx)(s.Avr, {
-        variant: "secondary",
-        onClick: i,
-        text: m.intl.string(m.t["13/7kX"])
-      }), (0, r.jsx)(s.Button, {
-        variant: "primary",
-        text: m.intl.string(m.t.PDsYAo),
-        onClick: N,
-        loading: v
-      })]
-    })]
-  })
+    }
+    return e
+  }({}, g), r = r = {
+    title: d.intl.string(d.t["2FNWBG"]),
+    subtitle: d.intl.string(d.t["/4y6ox"]),
+    actions: [{
+      variant: "secondary",
+      onClick: p,
+      text: d.intl.string(d.t["13/7kX"])
+    }, {
+      variant: "primary",
+      text: d.intl.string(d.t.PDsYAo),
+      onClick: E,
+      loading: v
+    }],
+    children: (0, n.jsx)(o.oil, {
+      label: d.intl.string(d.t["L+AfJr"]),
+      onKeyPress: S,
+      placeholder: d.intl.string(d.t.Y1btJd),
+      onChange: e => {
+        b(e)
+      },
+      error: null == j ? true : j.getAnyErrorMessage()
+    })
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+    var r = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
+    }
+    return r
+  })(Object(r)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+  }), t))
 }

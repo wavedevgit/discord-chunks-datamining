@@ -147,7 +147,7 @@ let Z = Chunk647438.memo(function(e) {
       } = (0, g.F)(F, {
         allowedFlows: [g.r.RPC, g.r.WEB]
       }),
-      ei = E.Z.useConfig({
+      ei = x.Z.useConfig({
         location: "ActivityActions"
       }).enabled,
       el = i.useRef(null),
@@ -165,25 +165,25 @@ let Z = Chunk647438.memo(function(e) {
         game: k.name
       }) : I.intl.string(I.t.FeUKeA)) : (l = true, a = null, p = c.hGI, Z = null != L && (0, v.vd)(L.type) ? I.intl.string(I.t.uQn9B8) : null != R ? I.intl.string(I.t.fBXEoJ) : I.intl.string(I.t.n3feNG)), (0, r.jsx)("div", {
         className: P.panelButtonContainer,
-        children: (0, r.jsx)(x.Z, {
+        children: (0, r.jsx)(E.Z, {
           tooltipText: Z,
           disabled: l,
           onClick: a,
           icon: p
         })
       })) : null,
-      ec = Y && null == G ? (0, r.jsx)(x.Z, {
+      ec = Y && null == G ? (0, r.jsx)(E.Z, {
         ref: H,
         tooltipText: I.intl.string(I.t["hC/Zey"]),
         onClick: q,
         icon: c.ejJ
       }) : null,
-      eu = null == G ? null : (0, r.jsx)(x.Z, {
+      eu = null == G ? null : (0, r.jsx)(E.Z, {
         tooltipText: I.intl.string(I.t["R/FK4A"]),
         onClick: X(G.applicationId, G.location),
         icon: c.PBZ
       }),
-      ed = null == U ? null : (0, r.jsx)(x.Z, {
+      ed = null == U ? null : (0, r.jsx)(E.Z, {
         tooltipText: I.intl.string(I.t["R/FK4A"]),
         onClick: Q(U.applicationId),
         icon: c.PBZ
@@ -224,7 +224,7 @@ let Z = Chunk647438.memo(function(e) {
       startAuthorization: i,
       connectionApp: l
     } = e;
-    return (0, r.jsx)(x.Z, {
+    return (0, r.jsx)(E.Z, {
       ref: t,
       onClick: () => {
         var e, t;

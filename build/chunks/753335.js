@@ -17,18 +17,18 @@ let c = {
         args: {
           guild_id: t,
           channel_id: n,
-          message_id: o,
+          message_id: s,
           pid: c
         }
       } = e;
-      if ((0, a.jU)(c).context === s.IlC.OVERLAY) return void r.Z.dispatch({
+      if ((0, a.jU)(c).context === o.IlC.OVERLAY) return void r.Z.dispatch({
         type: "OVERLAY_OPEN_MESSAGE",
         guildId: t,
         channelId: n,
-        messageId: o
+        messageId: s
       });
       (0, i.dL)({
-        pathname: s.Z5c.CHANNEL(t, n, o)
+        pathname: o.Z5c.CHANNEL(t, n, s)
       }), l.ZP.focus()
     }
   }

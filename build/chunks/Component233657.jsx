@@ -72,7 +72,7 @@ function _(e) {
     }), (0, s.Q3)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
   let C = (0, c.ZP)(t.id),
-    E = C.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSu, {
+    x = C.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSu, {
       number: C.length
     }) : f.intl.string(f.t.tlopTM);
   return (0, r.jsx)(p.m, {
@@ -82,7 +82,7 @@ function _(e) {
       color: "currentColor",
       className: e
     }),
-    text: E,
+    text: x,
     selected: _,
     onClick: j,
     onContextMenu: e => {

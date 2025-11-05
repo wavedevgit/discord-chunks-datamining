@@ -33,14 +33,14 @@ class m extends Chunk317770.Z {
         let n = d.Z.getGuild(e),
           r = !!(null == n ? true : n.features.has(h.GuildFeatures.COMMUNITY)),
           l = p.Z.can(h.Plq.MANAGE_CHANNELS, n),
-          a = (0, s.zu)(i.z.FORUM_CHANNEL_UPSELL_MODAL),
-          o = null != (t = u.Z.getMemberCount(e)) ? t : 0;
-        return r && l && !a && o >= 200
+          a = (0, o.zu)(i.z.FORUM_CHANNEL_UPSELL_MODAL),
+          s = null != (t = u.Z.getMemberCount(e)) ? t : 0;
+        return r && l && !a && s >= 200
       })(t)) return;
     (0, f.qz)(), (0, c.kk)(i.z.FORUM_CHANNEL_UPSELL_MODAL);
     let a = function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : g.L.DISMISS;
-      (0, s.Q3)(i.z.FORUM_CHANNEL_UPSELL_MODAL, {
+      (0, o.Q3)(i.z.FORUM_CHANNEL_UPSELL_MODAL, {
         dismissAction: e
       })
     };
@@ -85,7 +85,7 @@ class m extends Chunk317770.Z {
         }), i))
       }
     }, {
-      onCloseCallback: () => (0, s.Q3)(i.z.FORUM_CHANNEL_UPSELL_MODAL, {
+      onCloseCallback: () => (0, o.Q3)(i.z.FORUM_CHANNEL_UPSELL_MODAL, {
         dismissAction: g.L.DISMISS
       }),
       onCloseRequest: h.VqG

@@ -138,16 +138,16 @@ let N = new T(Chunk570140.Z, {
       return
     }
     let a = Object.keys(b),
-      o = Object.keys(r),
-      s = Object.keys(E),
+      s = Object.keys(r),
+      o = Object.keys(E),
       c = Object.keys(i),
-      u = l().difference(a, o),
-      d = l().difference(s, c);
-    return u.length > 0 || d.length > 0 ? O = {} : (l().difference(o, a).forEach(e => {
+      u = l().difference(a, s),
+      d = l().difference(o, c);
+    return u.length > 0 || d.length > 0 ? O = {} : (l().difference(s, a).forEach(e => {
       O[e] = S(O[e], e, p.Q.INPUT)
-    }), l().difference(c, s).forEach(e => {
+    }), l().difference(c, o).forEach(e => {
       O[e] = S(O[e], e, p.Q.OUTPUT)
-    })), !(l().isEqual(a, o) && l().isEqual(s, c)) && (b = r, E = i, true)
+    })), !(l().isEqual(a, s) && l().isEqual(o, c)) && (b = r, E = i, true)
   },
   CONNECTED_DEVICE_SWITCH: function(e) {
     let {
@@ -157,13 +157,13 @@ let N = new T(Chunk570140.Z, {
     } = e;
     if (n === p.a.INPUT || n === p.a.INPUT_AND_OUTPUT) {
       let e = b[t];
-      null != e && o.Z.wait(() => s.Z.setInputDevice(e, {
+      null != e && s.Z.wait(() => o.Z.setInputDevice(e, {
         location: r
       }))
     }
     if (n === p.a.OUTPUT || n === p.a.INPUT_AND_OUTPUT) {
       let e = E[t];
-      o.Z.wait(() => s.Z.setOutputDevice(e, {
+      s.Z.wait(() => o.Z.setOutputDevice(e, {
         location: r
       }))
     }

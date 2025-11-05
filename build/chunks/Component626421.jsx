@@ -19,14 +19,14 @@ let f = Chunk647438.memo(function(e) {
     markAsDismissed: n
   } = e, {
     name: l,
-    guildId: o,
-    boundingRect: s
-  } = t, c = i.useMemo(() => null, [l, o, n]);
+    guildId: s,
+    boundingRect: o
+  } = t, c = i.useMemo(() => null, [l, s, n]);
   return null == c ? null : (0, r.jsx)("div", {
-    className: a()(p.upsell, (null == s || s.y < 0) && p.hidden),
-    style: null == s ? {} : {
-      top: s.top,
-      left: s.right - s.x
+    className: a()(p.upsell, (null == o || o.y < 0) && p.hidden),
+    style: null == o ? {} : {
+      top: o.top,
+      left: o.right - o.x
     },
     children: c
   })

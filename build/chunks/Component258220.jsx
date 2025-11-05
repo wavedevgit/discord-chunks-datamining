@@ -22,7 +22,7 @@ function h(e) {
     applicationId: n,
     transitionState: h,
     onClose: g
-  } = e, [m, _] = i.useState(false), [b] = (0, s.Z)([n]), E = null != (t = null == b ? true : b.name) ? t : "This Activity";
+  } = e, [m, _] = i.useState(false), [b] = (0, o.Z)([n]), E = null != (t = null == b ? true : b.name) ? t : "This Activity";
   i.useEffect(() => {
     c.default.track(d.rMx.OPEN_MODAL, {
       type: f
@@ -30,7 +30,7 @@ function h(e) {
   }, []);
   let O = async () => {
     let e = "temporary";
-    m && (e = "permanent", o.ZP.updatedUnsyncedSettings({
+    m && (e = "permanent", s.ZP.updatedUnsyncedSettings({
       disableActivityHardwareAccelerationPrompt: true
     })), c.default.track(d.rMx.MODAL_DISMISSED, {
       type: f,

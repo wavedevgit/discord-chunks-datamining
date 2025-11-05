@@ -22,7 +22,7 @@ let h = e => {
     onClick: g
   } = e, {
     analyticsLocations: m
-  } = (0, c.ZP)(s.Z.HOME_PAGE_SHOP_TAB), _ = (0, o.ZP)(), b = (0, a.wj)(_) ? t.assetDark : t.assetLight, E = i.useRef(h);
+  } = (0, c.ZP)(o.Z.HOME_PAGE_SHOP_TAB), _ = (0, s.ZP)(), b = (0, a.wj)(_) ? t.assetDark : t.assetLight, E = i.useRef(h);
   return E.current = h, i.useEffect(() => () => {
     var e;
     null == (e = E.current) || e.call(E)
@@ -46,7 +46,7 @@ let h = e => {
       onClick: () => {
         null == g || g(), (0, u.uL)(p.Z5c.COLLECTIBLES_SHOP), (0, d.mK)({
           analyticsLocations: m,
-          analyticsSource: s.Z.HOME_PAGE_SHOP_TAB
+          analyticsSource: o.Z.HOME_PAGE_SHOP_TAB
         })
       }
     }],

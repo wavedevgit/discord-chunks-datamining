@@ -1,14 +1,14 @@
 /** Chunk was on 1272 **/
 /** chunk id: 29086, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => o
+  Y: () => s
 });
 var Chunk647438 = require("./647438.js"),
   Chunk726115 = require("./726115.js"),
   Chunk859921 = require("./859921.js"),
   Chunk128449 = require("./128449.js");
 
-function o() {
+function s() {
   let e = Chunk859921.Z.useField("selectedTab"),
     t = Chunk647438.useMemo(() => [Chunk128449.vf.FEATURED, Chunk128449.vf.GAMING, Chunk128449.vf.MUSIC, Chunk128449.vf.ENTERTAINMENT, Chunk128449.vf.TECH, Chunk128449.vf.EDUCATION, Chunk128449.vf.HUBS].map(e => ({
       id: e,

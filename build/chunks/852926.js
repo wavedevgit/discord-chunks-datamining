@@ -40,7 +40,7 @@ function h(e) {
 }
 let g = async (e, t, n) => {
   if ((0, c.YK)(e, t), (null == n || "" === n) && (0, c.s9)(t)) return e.authorization.scopes = [u.cE, u.CN], Promise.resolve();
-  if (null == n || "" === n) return Promise.reject(new s.Z({
+  if (null == n || "" === n) return Promise.reject(new o.Z({
     closeCode: d.$VG.INVALID_CLIENTID
   }, "No Client ID Specified"));
   let r = a.ZP.releaseChannel !== d.R5N.CANARY && !p.includes(n) && e.transport !== u.He.POST_MESSAGE;
@@ -52,10 +52,10 @@ let g = async (e, t, n) => {
     return {
       type: e[0],
       code: e[1],
-      name: null != (t = (0, o.H9)(e)) ? t : "unknown"
+      name: null != (t = (0, s.H9)(e)) ? t : "unknown"
     }
   })), t
 }), _ = e => (0, c.FJ)(e, e => {
   let t = "";
-  return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = (0, o.BB)(e.modeOptions.shortcut)), t
+  return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = (0, s.BB)(e.modeOptions.shortcut)), t
 })

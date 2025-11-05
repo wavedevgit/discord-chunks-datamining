@@ -168,7 +168,7 @@ let G = Chunk647438.memo(function(e) {
       applicationId: l.applicationId
     }));
     let b = null != l.local_id,
-      x = (0, E.Z)({
+      E = (0, x.Z)({
         item: l,
         renderApplication: e => (0, r.jsx)(k, {
           applicationId: e
@@ -190,7 +190,7 @@ let G = Chunk647438.memo(function(e) {
         focusProps: {
           offset: 4
         },
-        "aria-label": x,
+        "aria-label": E,
         onClick: g,
         children: [h ? null : (0, r.jsx)("div", {
           className: T.unread
@@ -203,7 +203,7 @@ let G = Chunk647438.memo(function(e) {
           }), (0, r.jsxs)(o.Text, {
             variant: "text-md/normal",
             color: h ? "text-muted" : "text-default",
-            children: ["string" != typeof x ? x : p.Z.parse(x), R]
+            children: ["string" != typeof E ? E : p.Z.parse(E), R]
           }), (null == (t = l.message) ? true : t.content) != null ? (0, r.jsx)(D, {
             item: l
           }) : null, null != l.callout ? (0, r.jsx)(L, {
@@ -223,7 +223,7 @@ let G = Chunk647438.memo(function(e) {
     let {
       items: t
     } = e, n = g.d$.useSetting();
-    return (0, x.c)(t), (0, r.jsx)(r.Fragment, {
+    return (0, E.c)(t), (0, r.jsx)(r.Fragment, {
       children: t.map(e => (0, r.jsx)(G, {
         item: e,
         ackedBeforeId: n

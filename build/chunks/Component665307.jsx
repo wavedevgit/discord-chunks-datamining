@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk843611 = require("./843611.js"),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
@@ -83,7 +83,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     return (0, i.jsxs)(d.u, {
       text: l,
       children: ["(", (0, i.jsx)(n, {
-        className: o()(A.settingIcon, {
+        className: s()(A.settingIcon, {
           [A.hidden]: !a
         })
       }), ")"]
@@ -142,7 +142,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
         location: v.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
       }) : x.intl.string(x.t.EoWLru), (0, i.jsx)(E.Z, {
         align: E.Z.Align.CENTER,
-        className: o()({
+        className: s()({
           [A.lastPlayedCellNew]: e.isNew
         }),
         children: t
@@ -155,7 +155,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     render(e, t, n) {
       var r, a;
       if (null == t) throw Error("No cell props defined.");
-      let s = e.key === t.activeRowKey;
+      let o = e.key === t.activeRowKey;
       return (0, i.jsxs)(l.Fragment, {
         children: [(0, i.jsxs)("div", {
           className: A.settingIcons,
@@ -170,7 +170,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
             icon: h.o8v,
             tooltip: x.intl.string(x.t.Az9eqn)
           }), (0, i.jsx)(j.Z, {
-            className: o()(A.settingIcon, {
+            className: s()(A.settingIcon, {
               [A.hidden]: !e.supportsCloudSync
             }),
             libraryApplication: e.libraryApplication
@@ -180,8 +180,8 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
           analyticsListIndex: n,
           source: P.Sbl.APPLICATION_LIBRARY,
           libraryApplication: e.libraryApplication,
-          color: s ? f.zx.Colors.GREEN : f.zx.Colors.PRIMARY,
-          isPlayShiny: s && e.defaultAction === P.apO.PLAY,
+          color: o ? f.zx.Colors.GREEN : f.zx.Colors.PRIMARY,
+          isPlayShiny: o && e.defaultAction === P.apO.PLAY,
           size: A.actionButtonSize,
           hideProgress: null != e.defaultAction,
           onDropdownOpen: () => null != t && t.setActiveRowKey(e),
@@ -199,7 +199,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       highlightedApplicationKey: r,
       onMouseEnter: l,
       onMouseLeave: a,
-      onContextMenu: s,
+      onContextMenu: o,
       setRef: c
     } = e, u = function(e, t) {
       if (null == e) return {};
@@ -219,7 +219,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     let d = t.key === n,
       p = t.key === r;
     return (0, i.jsx)("div", {
-      className: o()({
+      className: s()({
         [A.rowWrapperActive]: d && !p,
         [A.rowWrapperGlow]: p,
         [A.rowWrapper]: !d && !p,
@@ -230,7 +230,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       },
       onMouseEnter: () => l(t),
       onMouseLeave: a,
-      onContextMenu: e => s(e, t),
+      onContextMenu: e => o(e, t),
       children: (0, i.jsx)("div", w({}, u))
     })
   };
@@ -350,8 +350,8 @@ class B extends(r = Chunk647438.PureComponent) {
       activeRowKey: r,
       stickyHeader: a
     } = this.props, {
-      overflowMenuRowKey: o,
-      highlightedApplicationKey: s
+      overflowMenuRowKey: s,
+      highlightedApplicationKey: o
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [require.length > 0 ? (0, Chunk951288.jsx)(Chunk167533.Z, {
@@ -369,7 +369,7 @@ class B extends(r = Chunk647438.PureComponent) {
         sortDirection: exports,
         stickyHeader: Chunk120356,
         rowProps: {
-          activeRowKey: null != o ? o : r,
+          activeRowKey: null != s ? s : r,
           highlightedApplicationKey: Chunk843611,
           onMouseEnter: this.handleRowMouseEnter,
           onMouseLeave: this.handleRowMouseLeave,
@@ -377,7 +377,7 @@ class B extends(r = Chunk647438.PureComponent) {
           setRef: this.setRowRef
         },
         cellProps: {
-          activeRowKey: null != o ? o : r,
+          activeRowKey: null != s ? s : r,
           onContextMenu: this.handleApplicationContextMenu,
           setActiveRowKey: this.setActiveRowKey,
           clearActiveRowKey: this.clearActiveRowKey,
@@ -429,11 +429,11 @@ class B extends(r = Chunk647438.PureComponent) {
 
 function H(e) {
   let t = l.useContext(S.AnalyticsContext),
-    n = (0, s.TH)(),
+    n = (0, o.TH)(),
     {
       applicationViewItems: r,
       filterQuery: a,
-      fetched: o
+      fetched: s
     } = (0, c.cj)([I.Z], () => ({
       applicationViewItems: I.Z.sortedFilteredLibraryApplicationViewItems,
       filterQuery: I.Z.applicationFilterQuery,
@@ -455,7 +455,7 @@ function H(e) {
     location: n,
     applicationViewItems: r,
     filterQuery: a,
-    fetched: o,
+    fetched: s,
     sortKey: u,
     sortDirection: d,
     activeRowKey: p,

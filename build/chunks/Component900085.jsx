@@ -106,9 +106,9 @@ let z = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
       channel: t
     } = e;
     return {
-      unread: x.ZP.hasUnread(t.id),
-      mentions: x.ZP.getMentionCount(t.id),
-      isMentionLowImportance: x.ZP.getIsMentionLowImportance(t.id),
+      unread: E.ZP.hasUnread(t.id),
+      mentions: E.ZP.getMentionCount(t.id),
+      isMentionLowImportance: E.ZP.getIsMentionLowImportance(t.id),
       category: v.Z.getChannel(t.parent_id)
     }
   })(H),
@@ -133,9 +133,9 @@ let z = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
     var t;
     let {
       channel: n
-    } = e, r = null, i = E.Z.getState().statuses;
+    } = e, r = null, i = x.Z.getState().statuses;
     return (null == (t = n.recipients) ? true : t.some(e => i[e] === M.Skl.ONLINE)) && (r = M.Skl.ONLINE), {
-      mentions: x.ZP.getMentionCount(n.id),
+      mentions: E.ZP.getMentionCount(n.id),
       status: r
     }
   })(Chunk415795.PZ),
@@ -144,9 +144,9 @@ let z = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
       user: t
     } = e, n = v.Z.getDMFromUserId(t.id);
     return {
-      mentions: null != n ? x.ZP.getMentionCount(n) : 0,
-      status: E.Z.getStatus(t.id),
-      isMobile: E.Z.isMobileOnline(t.id)
+      mentions: null != n ? E.ZP.getMentionCount(n) : 0,
+      status: x.Z.getStatus(t.id),
+      isMobile: x.Z.isMobileOnline(t.id)
     }
   })(Chunk415795.n5);
 

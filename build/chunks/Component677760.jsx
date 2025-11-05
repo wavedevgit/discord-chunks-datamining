@@ -2,7 +2,7 @@
 /** chunk id: 677760, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk271922 = require("./271922.js");
 
-function O(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function O(e) {
   return e
 }
 
-function S(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function S(e, t) {
   }), e
 }
 
-function N() {
+function O() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk271922.centerFlex,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
@@ -129,9 +129,9 @@ function T(e) {
     return i
   }(e, ["children", "cardChildren", "startAnimHeightPx", "innerStyle"]), [d, h] = i.useState(C(c)), {
     ref: g,
-    height: p
-  } = (0, u.ZP)(), m = (0, a.q_F)({
-    height: null != p && 0 !== p ? "".concat(p, "px") : "".concat(l, "px"),
+    height: m
+  } = (0, u.ZP)(), p = (0, a.q_F)({
+    height: null != m && 0 !== m ? "".concat(m, "px") : "".concat(l, "px"),
     config: s.config.stiff
   });
   return i.useEffect(() => {
@@ -139,10 +139,10 @@ function T(e) {
     e !== d && h(e)
   }, [c, d]), (0, r.jsxs)(s.animated.div, {
     className: y.inviteCard,
-    style: m,
+    style: p,
     children: [(0, r.jsx)(s.animated.div, {
       className: y.inviteChildContainer,
-      style: m,
+      style: p,
       children: (0, r.jsx)("section", {
         ref: g,
         className: null == o ? true : o(d),
@@ -156,7 +156,7 @@ function Z(e) {
   let {
     invite: t
   } = e;
-  return null != t && (0, E.JI)(t) ? (0, r.jsx)(T, S(O({
+  return null != t && (0, E.JI)(t) ? (0, r.jsx)(T, N(S({
     startAnimHeightPx: 0,
     innerStyle: () => y.guildInfoInner
   }, e), {
@@ -174,23 +174,23 @@ function P(e) {
     2: y.inviteCardInnerError,
     0: y.inviteCardInnerLoading
   };
-  return (0, r.jsx)(T, S(O({
+  return (0, r.jsx)(T, N(S({
     startAnimHeightPx: 200,
     innerStyle: e => n[e]
   }, e), {
     children: n => (n => {
-      if (null == t) return (0, r.jsx)(N, {});
+      if (null == t) return (0, r.jsx)(O, {});
       switch (n) {
         case 1:
-          return (0, r.jsx)(v.Z, S(O({}, e), {
+          return (0, r.jsx)(v.Z, N(S({}, e), {
             invite: t
           }));
         case 2:
-          return (0, r.jsx)(A, S(O({}, e), {
+          return (0, r.jsx)(A, N(S({}, e), {
             invite: t
           }));
         default:
-          return (0, r.jsx)(N, {})
+          return (0, r.jsx)(O, {})
       }
     })(n)
   }))
@@ -215,21 +215,21 @@ function R(e) {
     className: y.splashBackground,
     style: s,
     contentClassName: y.centerAuthBoxContent,
-    children: [(0, r.jsx)(P, S(O({}, e), {
+    children: [(0, r.jsx)(P, N(S({}, e), {
       onAcceptInvite: n
-    })), (0, r.jsx)(Z, O({}, e))]
+    })), (0, r.jsx)(Z, S({}, e))]
   })
 }
 
-function w(e) {
+function L(e) {
   let {
     inviteKey: t,
     transitionTo: n
-  } = e, s = (0, l.e7)([p.Z], () => p.Z.getInvite(t));
+  } = e, s = (0, l.e7)([m.Z], () => m.Z.getInvite(t));
   return i.useEffect(() => {
     (0, h.e)("invite_mobile")
   }, []), i.useEffect(() => {
-    null != s && s.state === b.r2o.RESOLVED && m.default.track(b.rMx.INVITE_VIEWED, {
+    null != s && s.state === b.r2o.RESOLVED && p.default.track(b.rMx.INVITE_VIEWED, {
       invite_code: t,
       friends_count: null == s ? true : s.friends_count
     }, {
@@ -240,7 +240,7 @@ function w(e) {
     onAcceptInvite: e => {
       ! function(e, t, n) {
         var r, i, s;
-        null == e || e.preventDefault(), m.default.track(b.rMx.INVITE_APP_OPENED, {
+        null == e || e.preventDefault(), p.default.track(b.rMx.INVITE_APP_OPENED, {
           invite_code: (0, x.jX)(t),
           guild_id: null == n || null == (r = n.guild) ? true : r.id,
           channel_id: null == n || null == (i = n.channel) ? true : i.id,

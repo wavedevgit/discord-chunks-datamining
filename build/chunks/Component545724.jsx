@@ -61,14 +61,14 @@ let g = function(e) {
   }, N = () => {
     I(false)
   };
-  return (0, r.jsx)(s.mh, {
+  return (0, r.jsx)(o.mh, {
     id: m.id,
     children: e => (0, r.jsx)(c.tEY, {
       offset: {
         left: false,
         right: false
       },
-      children: (0, r.jsx)(o.Z.div, h(f({
+      children: (0, r.jsx)(s.Z.div, h(f({
         className: a()(p.messageRequestItem, y, {
           [p.active]: E || C,
           [p.firstItem]: 0 === t

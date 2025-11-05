@@ -25,7 +25,7 @@ let g = e => {
     children: b
   } = e, {
     analyticsLocations: E
-  } = (0, o.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, g, m), y = (0, r.jsx)(i.Z, {
+  } = (0, s.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, g, m), y = (0, r.jsx)(i.Z, {
     targetElementRef: t,
     position: "right",
     align: "top",
@@ -38,7 +38,7 @@ let g = e => {
     }).toString(),
     body: f.intl.format(f.t["3Q4wCy"], {
       discountedPrice: O,
-      billingPeriod: (0, s.JP)(g.discount.user_usage_limit_interval),
+      billingPeriod: (0, o.JP)(g.discount.user_usage_limit_interval),
       numMonths: g.discount.user_usage_limit
     }),
     graphic: {

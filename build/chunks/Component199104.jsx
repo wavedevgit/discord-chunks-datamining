@@ -28,7 +28,7 @@ function y(e) {
     isStandalone: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([m.Z], () => m.Z.hasConsented(b.pjP.PERSONALIZATION)) ? [] : [o.z.NOW_PLAYING_CONSENT_CARD], y = h.o.useConfig({
+  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([m.Z], () => m.Z.hasConsented(b.pjP.PERSONALIZATION)) ? [] : [s.z.NOW_PLAYING_CONSENT_CARD], y = h.o.useConfig({
     location: "nowplaying"
   }).demureActivityCards, v = h.o.useConfig({
     location: "nowplaying"
@@ -43,7 +43,7 @@ function y(e) {
           "refresh-active-now": y
         }),
         "aria-labelledby": I,
-        children: (0, r.jsx)(s.Ttm, {
+        children: (0, r.jsx)(o.Ttm, {
           className: l()(O.scroller, {
             [O.standalone]: t
           }),
@@ -51,7 +51,7 @@ function y(e) {
             className: l()({
               [O.standaloneContainer]: t
             }),
-            children: [v ? null : (0, r.jsx)(s.Heading, {
+            children: [v ? null : (0, r.jsx)(o.Heading, {
               variant: "heading-lg/semibold",
               className: O.header,
               id: I,
@@ -63,7 +63,7 @@ function y(e) {
                   visibleContent: t,
                   markAsDismissed: n
                 } = e;
-                if (t === o.z.NOW_PLAYING_CONSENT_CARD) return (0, r.jsx)(g.Z, {
+                if (t === s.z.NOW_PLAYING_CONSENT_CARD) return (0, r.jsx)(g.Z, {
                   className: O.__invalid_consentCard,
                   markAsDismissed: n
                 })

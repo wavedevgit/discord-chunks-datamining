@@ -22,14 +22,14 @@ var r, i, l, Chunk392711 = require("./392711.js"),
   Chunk734307 = require("./734307.js"),
   Chunk981631 = require("./981631.js"),
   C = ((i = {}).HIDDEN = "hidden", i.UNREAD = "unread", i.MENTIONS = "mentions", i.VOICE_CHANNELS = "voice-channels", i);
-let E = {
+let x = {
     mode: "hidden",
     mentionCount: 0,
     targetChannelId: null
   },
-  x = {
-    topBar: E,
-    bottomBar: E
+  E = {
+    topBar: x,
+    bottomBar: x
   },
   S = {},
   I = {};
@@ -76,7 +76,7 @@ function w(e) {
   let O = 0,
     j = false,
     C = 0,
-    x = false;
+    E = false;
   if (p || d)
     for (let e = b.length - 1; e >= 0; e--) {
       let t = b[e];
@@ -86,7 +86,7 @@ function w(e) {
     for (let e = 0; e < y.length; e++) {
       let t = y[e];
       if (!p && !d) break;
-      (P(t.id) || a().some(t.threadIds, P)) && (null == u && (u = t.id), x = true), (N(t.id) || a().some(t.threadIds, N)) && (null == c && (c = t.id), C += m.ZP.getMentionCount(t.id), C += a().sumBy(t.threadIds, m.ZP.getMentionCount))
+      (P(t.id) || a().some(t.threadIds, P)) && (null == u && (u = t.id), E = true), (N(t.id) || a().some(t.threadIds, N)) && (null == c && (c = t.id), C += m.ZP.getMentionCount(t.id), C += a().sumBy(t.threadIds, m.ZP.getMentionCount))
     }
   let w = null,
     T = null,
@@ -99,7 +99,7 @@ function w(e) {
     mode: "voice-channels",
     mentionCount: 0,
     targetChannelId: null
-  } : p && x && (w = {
+  } : p && E && (w = {
     mode: "unread",
     mentionCount: 0,
     targetChannelId: u
@@ -115,8 +115,8 @@ function w(e) {
   let R = null != T && (null == w || "mentions" !== w.mode && "mentions" === T.mode),
     D = null != w && ("mentions" === w.mode || !R);
   return S[e] = {
-    topBar: R && null != T ? T : E,
-    bottomBar: D && null != w ? w : E
+    topBar: R && null != T ? T : x,
+    bottomBar: D && null != w ? w : x
   }, true
 }
 let T = a().throttle(w, 200);
@@ -167,7 +167,7 @@ class k extends(r = Chunk442837.ZP.Store) {
   }
   getUnreadStateForGuildId(e) {
     var t;
-    return null != (t = S[e]) ? t : x
+    return null != (t = S[e]) ? t : E
   }
 }(l = "displayName") in k ? Object.defineProperty(k, l, {
   value: "ChannelListUnreadsStore",

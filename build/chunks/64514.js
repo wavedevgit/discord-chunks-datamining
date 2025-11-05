@@ -31,16 +31,16 @@ class f extends Chunk317770.Z {
   constructor(...e) {
     var t;
     super(...e), t = this, p(this, "focusedOrForegrounded", (0, u.H)()), p(this, "heartbeatInterval", new r.Xp), p(this, "schedulerStarted", false), p(this, "lastHeartbeatTimestamp", 0), p(this, "maybeStartHeartbeat", () => {
-      this.heartbeatInterval.isStarted() || (this.trackHeartbeat(), this.heartbeatInterval.start(5 * o.Z.Millis.MINUTE, this.trackHeartbeat))
+      this.heartbeatInterval.isStarted() || (this.trackHeartbeat(), this.heartbeatInterval.start(5 * s.Z.Millis.MINUTE, this.trackHeartbeat))
     }), p(this, "startAnalyticHeartbeat", () => {
-      this.schedulerStarted || (this.schedulerStarted = true, s.Z.addBreadcrumb({
+      this.schedulerStarted || (this.schedulerStarted = true, o.Z.addBreadcrumb({
         category: "ad",
         message: "Starting ad session heartbeat"
       }), this.maybeStartHeartbeat())
     }), p(this, "trackHeartbeat", function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       if (!t.schedulerStarted && !e) {
-        s.Z.addBreadcrumb({
+        o.Z.addBreadcrumb({
           category: "ad",
           message: "Ad heartbeat called but scheduler not started"
         }), t.heartbeatInterval.stop();
@@ -48,7 +48,7 @@ class f extends Chunk317770.Z {
       }
       let n = performance.now(),
         r = n - t.lastHeartbeatTimestamp,
-        i = 5 * o.Z.Millis.MINUTE;
+        i = 5 * s.Z.Millis.MINUTE;
       if (!e && t.lastHeartbeatTimestamp > 0 && r < i) return;
       let l = (0, c.Gy)();
       a.default.track(d.rMx.CLIENT_AD_HEARTBEAT, {
@@ -58,7 +58,7 @@ class f extends Chunk317770.Z {
       }), t.lastHeartbeatTimestamp = n
     }), p(this, "stopAnalyticHeartbeat", function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "DEFAULT";
-      t.schedulerStarted && (t.schedulerStarted = false, t.lastHeartbeatTimestamp = 0, s.Z.addBreadcrumb({
+      t.schedulerStarted && (t.schedulerStarted = false, t.lastHeartbeatTimestamp = 0, o.Z.addBreadcrumb({
         category: "ad",
         message: "Stopping ad session heartbeat: ".concat(e)
       }), t.heartbeatInterval.stop())
@@ -67,7 +67,7 @@ class f extends Chunk317770.Z {
       if (t.focusedOrForegrounded) try {
         t.startAnalyticHeartbeat()
       } catch (e) {
-        s.Z.captureException(e)
+        o.Z.captureException(e)
       } else t.stopAnalyticHeartbeat(e)
     }), p(this, "handleLogin", () => {
       this.scheduleHeartbeatTracking(), this.trackHeartbeat(true)

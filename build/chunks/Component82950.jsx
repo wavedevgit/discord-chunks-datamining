@@ -59,9 +59,9 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       })
     }, [t.id, d]);
     let C = null;
-    "function" == typeof v ? C = v() : null != v && (C = (0, r.jsx)(o.zx, {
+    "function" == typeof v ? C = v() : null != v && (C = (0, r.jsx)(s.zx, {
       className: g.btn,
-      size: o.zx.Sizes.SMALL,
+      size: s.zx.Sizes.SMALL,
       onClick: () => {
         null != d && u.default.track(f.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
           source: b,
@@ -76,7 +76,7 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
     let S = null != p ? "".concat(p, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: g.channelNotice,
-      children: [true === E ? null : (0, r.jsx)(s.P3F, {
+      children: [true === E ? null : (0, r.jsx)(o.P3F, {
         onClick: () => {
           c.ZP.trackWithMetadata(f.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: d
@@ -84,7 +84,7 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
         },
         className: g.close,
         "aria-label": h.intl.string(h.t.WAI6xu),
-        children: (0, r.jsx)(s.Dio, {
+        children: (0, r.jsx)(o.Dio, {
           size: "md",
           color: "currentColor",
           className: g.closeIcon
@@ -103,11 +103,11 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
         })
       }), (0, r.jsxs)("div", {
         className: g.message,
-        children: [null != n ? (0, r.jsx)(s.Heading, {
+        children: [null != n ? (0, r.jsx)(o.Heading, {
           variant: "heading-md/semibold",
           className: g.title,
           children: n
-        }) : null, (0, r.jsx)(s.Text, {
+        }) : null, (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           children: l
         }), C]

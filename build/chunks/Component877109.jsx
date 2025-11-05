@@ -44,18 +44,18 @@ let m = function(e) {
     }
   }(t), _ = (0, a.e7)([u.Z], () => null != n ? u.Z.getQuest(n) : true, [n]), b = (0, a.e7)([u.Z], () => null != n ? u.Z.getQuestLoadedViaPreview(n) : null, [n]);
   i.useEffect(() => {
-    null != n && (0, s.MG)(n).then(() => {
-      (0, s.T0)(n)
+    null != n && (0, o.MG)(n).then(() => {
+      (0, o.T0)(n)
     })
   }, [n]), i.useEffect(() => {
     let e = e => {
       let {
         quest_id: t
       } = e;
-      t === n && (0, s.MG)(n)
+      t === n && (0, o.MG)(n)
     };
-    return o.Z.subscribe("QUEST_PREVIEW_UPDATE", e), () => {
-      o.Z.unsubscribe("QUEST_PREVIEW_UPDATE", e)
+    return s.Z.subscribe("QUEST_PREVIEW_UPDATE", e), () => {
+      s.Z.unsubscribe("QUEST_PREVIEW_UPDATE", e)
     }
   }, [n]);
   let [E, O] = i.useState([]);
@@ -65,7 +65,7 @@ let m = function(e) {
       setQuestId: m,
       quest: _,
       refreshQuest: () => {
-        null != n && (0, s.MG)(n)
+        null != n && (0, o.MG)(n)
       }
     }),
     selectedSections: E,

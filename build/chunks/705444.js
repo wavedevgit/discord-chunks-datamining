@@ -21,10 +21,10 @@ let u = {
           quest_id: a
         }
       } = e;
-      (0, s.bu)(i.transport);
-      let u = (0, s._f)(i.application),
+      (0, o.bu)(i.transport);
+      let u = (0, o._f)(i.application),
         d = l.Z.getQuest(a);
-      if (null == d || d.config.application.id !== u) throw new o.Z({
+      if (null == d || d.config.application.id !== u) throw new s.Z({
         errorCode: c.lTL.INVALID_COMMAND
       }, "Quest not found: ".concat(a));
       return {
@@ -44,13 +44,13 @@ let u = {
           quest_id: r
         }
       } = e;
-      (0, s.bu)(n.transport);
-      let u = (0, s._f)(n.application),
+      (0, o.bu)(n.transport);
+      let u = (0, o._f)(n.application),
         d = l.Z.getQuest(r);
-      if (null == d || d.config.application.id !== u) throw new o.Z({
+      if (null == d || d.config.application.id !== u) throw new s.Z({
         errorCode: c.lTL.INVALID_COMMAND
       }, "Quest not found: ".concat(r));
-      if ((null == (t = d.userStatus) ? true : t.enrolledAt) == null) throw new o.Z({
+      if ((null == (t = d.userStatus) ? true : t.enrolledAt) == null) throw new s.Z({
         errorCode: c.lTL.INVALID_COMMAND
       }, "User is not enrolled in quest");
       return a.default.track(c.rMx.RPC_QUEST_START_TIMER_CALLED, {

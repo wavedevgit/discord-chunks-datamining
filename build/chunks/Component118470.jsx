@@ -39,14 +39,14 @@ function h(e) {
     a: _[0].name,
     b: _[1].name,
     c: _[2].name
-  }) : p.intl.string(p.t.MvfowF), (0, r.jsx)(o.Z, {
+  }) : p.intl.string(p.t.MvfowF), (0, r.jsx)(s.Z, {
     guild: n,
     onDismissed: g,
     message: t,
     type: d.vID.APPLICATION_SUBSCRIPTION_EXPIRATION,
     image: f,
     onClick: () => {
-      g(), s.Z.open(n.id, d.pNK.INTEGRATIONS)
+      g(), o.Z.open(n.id, d.pNK.INTEGRATIONS)
     },
     imageMarginTop: 6,
     imageMarginX: 46,

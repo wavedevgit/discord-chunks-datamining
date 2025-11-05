@@ -21,7 +21,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       guild: t,
       title: n,
       message: l,
-      image: o,
+      image: s,
       type: m,
       imageStyles: _,
       imageMarginX: b,
@@ -42,9 +42,9 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       })
     }, [t.id, m]);
     let j = null;
-    "function" == typeof C ? j = C() : null != C && (j = (0, r.jsx)(s.zx, {
+    "function" == typeof C ? j = C() : null != C && (j = (0, r.jsx)(o.zx, {
       className: h.button,
-      size: s.zx.Sizes.SMALL,
+      size: o.zx.Sizes.SMALL,
       onClick: () => {
         null != m && d.default.track(p.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
           source: O,
@@ -61,7 +61,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       variant: "text-md/medium",
       color: "header-primary",
       className: a()(h.title, {
-        [h.noImageTitle]: null == o
+        [h.noImageTitle]: null == s
       }, {
         [h.center]: T
       }),
@@ -92,7 +92,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
           color: "currentColor",
           className: h.closeIcon
         })
-      }), null != o && (0, r.jsx)("div", {
+      }), null != s && (0, r.jsx)("div", {
         className: h.imageContainer,
         style: {
           marginTop: "".concat(E, "px"),
@@ -102,7 +102,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
         children: (0, r.jsx)("img", {
           className: h.image,
           style: _,
-          src: o,
+          src: s,
           alt: ""
         })
       }), (0, r.jsxs)("div", {

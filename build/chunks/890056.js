@@ -1,12 +1,12 @@
-/** Chunk was on 3688 **/
+/** Chunk was on 12581 **/
 /** chunk id: 890056, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => a
 });
 var Chunk684827 = require("./684827.js"),
   Chunk482682 = require("./482682.js");
 
-function a(t, e, i) {
+function r(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
     value: i,
     enumerable: true,
@@ -14,7 +14,7 @@ function a(t, e, i) {
     writable: true
   }) : t[e] = i, t
 }
-let h = class {
+let a = class {
   initialize() {
     this.img = new Image, this.img.onload = () => {
       this.loaded = true
@@ -42,10 +42,10 @@ let h = class {
     this.isFilled = true
   }
   constructor() {
-    a(this, "img", null), a(this, "loaded", false), a(this, "isFilled", false), a(this, "alpha", 0), a(this, "mx", 0), a(this, "my", 0), a(this, "x", 0), a(this, "y", 0), a(this, "velX", 0), a(this, "velY", 0), a(this, "targetX", 40), a(this, "targetY", 40), a(this, "spring", {
+    r(this, "img", null), r(this, "loaded", false), r(this, "isFilled", false), r(this, "alpha", 0), r(this, "mx", 0), r(this, "my", 0), r(this, "x", 0), r(this, "y", 0), r(this, "velX", 0), r(this, "velY", 0), r(this, "targetX", 40), r(this, "targetY", 40), r(this, "spring", {
       friction: 60,
       tension: 100
-    }), a(this, "handleMouseMove", t => {
+    }), r(this, "handleMouseMove", t => {
       let {
         clientX: e,
         clientY: i

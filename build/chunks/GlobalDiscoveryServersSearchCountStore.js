@@ -7,7 +7,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk881052 = require("./881052.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = new Map;
+let o = new Map;
 class c {
   handleSearchCountStart() {
     this.error = null, this.isFetching = true
@@ -27,18 +27,18 @@ class c {
     this.error = new a.Hx(e), this.isFetching = false
   }
   constructor() {
-    o(this, "isInitialFetchComplete", false), o(this, "isFetching", false), o(this, "error", null), o(this, "counts", null)
+    s(this, "isInitialFetchComplete", false), s(this, "isFetching", false), s(this, "error", null), s(this, "counts", null)
   }
 }
 
 function u(e) {
   var t;
-  let n = null != (t = s.get(e)) ? t : new c;
-  return s.set(e, n), n
+  let n = null != (t = o.get(e)) ? t : new c;
+  return o.set(e, n), n
 }
 
 function d(e, t) {
-  let n = s.get(e);
+  let n = o.get(e);
   return null != n ? t(n) : null
 }
 class p extends(r = Chunk442837.ZP.Store) {
@@ -52,10 +52,10 @@ class p extends(r = Chunk442837.ZP.Store) {
     return d(e, e => e.counts)
   }
 }
-o(p, "displayName", "GlobalDiscoveryServersSearchCountStore");
+s(p, "displayName", "GlobalDiscoveryServersSearchCountStore");
 let f = new p(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
-    s.clear()
+    o.clear()
   },
   GLOBAL_DISCOVERY_SERVERS_SEARCH_COUNT_START: function(e) {
     let {
@@ -81,8 +81,8 @@ let f = new p(Chunk570140.Z, {
     let {
       ignoreQueries: t
     } = e, n = new Set(t);
-    s.forEach((e, t) => {
-      n.has(t) || s.delete(t)
+    o.forEach((e, t) => {
+      n.has(t) || o.delete(t)
     })
   }
 })

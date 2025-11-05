@@ -2,7 +2,7 @@
 /** chunk id: 39514, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => L
 }), require("./35282.js"), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -94,10 +94,10 @@ class R extends Chunk647438.PureComponent {
     }) : e.isClaimed || i === A.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? T.intl.string(T.t.ilcBeX) : i === A.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? T.intl.string(T.t.ypuSd8) : true
   }
   renderSpinner(e) {
-    return (0, r.jsxs)(p.ZP, {
-      children: [(0, r.jsx)(p.Dx, {
+    return (0, r.jsxs)(m.ZP, {
+      children: [(0, r.jsx)(m.Dx, {
         children: e
-      }), (0, r.jsx)(p.Hh, {})]
+      }), (0, r.jsx)(m.Hh, {})]
     })
   }
   renderExpiredInvite() {
@@ -151,15 +151,15 @@ class R extends Chunk647438.PureComponent {
     let {
       sentVerification: t
     } = this.state;
-    return (0, r.jsxs)(p.ZP, {
-      children: [(0, r.jsx)(p.Ee, {
+    return (0, r.jsxs)(m.ZP, {
+      children: [(0, r.jsx)(m.Ee, {
         src: n(892235),
         className: Z.marginBottom8
-      }), (0, r.jsx)(p.Dx, {
+      }), (0, r.jsx)(m.Dx, {
         children: T.intl.format(T.t["ivLUf/"], {
           username: e.username
         })
-      }), (0, r.jsx)(p.DK, {
+      }), (0, r.jsx)(m.DK, {
         className: Z.marginTop20,
         children: T.intl.string(T.t["8Su18+"])
       }), (0, r.jsx)("div", {
@@ -184,12 +184,12 @@ class R extends Chunk647438.PureComponent {
     let {
       transitionTo: i
     } = this.props, s = this.getErrorMessage(e);
-    return (0, r.jsx)(L, {
+    return (0, r.jsx)(w, {
       sku: n,
       giftCodeCode: e.code,
       transitionTo: i,
-      children: (0, r.jsxs)(p.ZP, {
-        children: [(0, r.jsx)(S.Z, {
+      children: (0, r.jsxs)(m.ZP, {
+        children: [(0, r.jsx)(N.Z, {
           giftCode: e
         }), (0, r.jsx)("div", {
           className: Z.marginTop40,
@@ -199,13 +199,13 @@ class R extends Chunk647438.PureComponent {
             disabled: null != s,
             onClick: this.handleAccept
           })
-        }), null != s ? (0, r.jsx)(p.DK, {
+        }), null != s ? (0, r.jsx)(m.DK, {
           className: Z.marginTop20,
           children: s
-        }) : (0, r.jsx)(p.i_, {
+        }) : (0, r.jsx)(m.i_, {
           className: Z.marginTop20,
           children: T.intl.format(T.t.NYM08s, {
-            userTag: O.ZP.getUserTag(t),
+            userTag: S.ZP.getUserTag(t),
             onLogoutClick: this.handleLogout
           })
         })]
@@ -302,7 +302,7 @@ class R extends Chunk647438.PureComponent {
     })
   }
 }
-let w = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.default, Chunk55563.Z, Chunk896797.Z, Chunk362762.Z], e => {
+let L = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.default, Chunk55563.Z, Chunk896797.Z, Chunk362762.Z], e => {
     let t = e.match.params.giftCode,
       n = v.Z.get(t),
       r = null != n ? b.Z.get(n.skuId) : null;
@@ -315,10 +315,10 @@ let w = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.d
       isResolved: v.Z.getIsResolved(t),
       isAccepting: v.Z.getIsAccepting(t),
       libraryApplicationsFetched: j.Z.fetched,
-      nativeAppState: m.Z.getState(t)
+      nativeAppState: p.Z.getState(t)
     }
   })(R),
-  L = e => {
+  w = e => {
     let {
       sku: t,
       children: n,
@@ -327,9 +327,9 @@ let w = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.d
     } = e, a = (0, f.K$)(t);
     return (i.useEffect(() => {
       null != s && a && l(A.Z5c.APP_WITH_GIFT_CODE(s))
-    }, [a, s, l]), a) ? (0, r.jsxs)(p.ZP, {
-      children: [(0, r.jsx)(p.Dx, {
+    }, [a, s, l]), a) ? (0, r.jsxs)(m.ZP, {
+      children: [(0, r.jsx)(m.Dx, {
         children: T.intl.string(T.t.b3lf1c)
-      }), (0, r.jsx)(p.Hh, {})]
+      }), (0, r.jsx)(m.Hh, {})]
     }) : n
   }

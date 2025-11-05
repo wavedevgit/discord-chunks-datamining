@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk954955 = require("./954955.js"),
-  s = require.n(Chunk954955),
+  o = require.n(Chunk954955),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -38,7 +38,7 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
       onUserContextMenu: n,
       onChannelContextMenu: l,
       quest: a
-    } = e, o = i.useRef(null), c = (0, r.jsx)(I.Z, {
+    } = e, s = i.useRef(null), c = (0, r.jsx)(I.Z, {
       party: t,
       onUserContextMenu: n
     }), d = (0, r.jsx)(v.Z, {
@@ -64,9 +64,9 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
         in_voice_channel: y,
         games_detected: e
       })
-    }, [_, b, O, y, g]), P = s()(j, A);
+    }, [_, b, O, y, g]), P = o()(j, A);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
-      targetElementRef: o,
+      targetElementRef: s,
       position: "left",
       renderPopout: e => {
         let {
@@ -101,7 +101,7 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
           }
           return e
         }({}, e), i = i = {
-          ref: o,
+          ref: s,
           onMouseEnter: P,
           "aria-haspopup": "menu",
           className: x.itemCard,
@@ -138,11 +138,11 @@ function L() {
     needsRefresh: Chunk752048.Z.shouldFetch(),
     fetching: Chunk752048.Z.isFetching(),
     currentUser: Chunk594174.default.getCurrentUser()
-  })), o = (0, Chunk442837.e7)([Chunk569984.Z], () => Chunk569984.Z.quests);
+  })), s = (0, Chunk442837.e7)([Chunk569984.Z], () => Chunk569984.Z.quests);
   Chunk647438.useEffect(() => (Chunk570140.Z.wait(() => Chunk225559.L()), () => Chunk570140.Z.wait(() => Chunk225559.v())), [null == a ? true : a.id]), Chunk647438.useEffect(() => {
     require && !Chunk392711 && w()
   }, [require, Chunk392711]);
-  let s = Chunk647438.useMemo(() => {
+  let o = Chunk647438.useMemo(() => {
       let t = new Map,
         n = new Set,
         r = (0, Chunk509212.NI)(Chunk954955, Chunk46140.l$);
@@ -163,7 +163,7 @@ function L() {
     } = e;
     return (0, r.jsx)(Z, {
       party: t,
-      quest: s.get(t.id)
+      quest: o.get(t.id)
     }, t.id)
   }) : (0, Chunk951288.jsxs)("div", {
     className: Chunk559909.emptyCard,

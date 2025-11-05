@@ -33,9 +33,9 @@ function m(e) {
     properties: i
   } = e, {
     location: l
-  } = (0, o.O)(), {
+  } = (0, s.O)(), {
     analyticsLocations: d
-  } = (0, u.ZP)(c.Z.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), g = (0, s.ZP)(), m = (0, a.apv)(g);
+  } = (0, u.ZP)(c.Z.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), g = (0, o.ZP)(), m = (0, a.apv)(g);
   if ("announcementModalVariant1" === i.properties.oneofKind) {
     let e = (0, f.N)({
       componentId: t,

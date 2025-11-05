@@ -62,7 +62,7 @@ class f extends Chunk442837.ZP.Store {
     var t, n;
     let r = null != (n = e.guildId) ? n : null;
     if ((null == (t = this.data(r)) ? true : t.messageId(e.channelId)) === e.id) {
-      let t = s.Z.getMessages(e.channelId),
+      let t = o.Z.getMessages(e.channelId),
         n = t.hasMoreAfter ? null : t.last();
       null != n ? this.data(r).put(e.channelId, n, this.generation) : this.data(r).delete(e.channelId)
     }
@@ -83,12 +83,12 @@ class f extends Chunk442837.ZP.Store {
   }
   handleLoadMessagesSuccess(e) {
     var t, n;
-    let r = o.Z.getBasicChannel(e.channelId);
+    let r = s.Z.getBasicChannel(e.channelId);
     if (null == r) returnfalse;
     (0, l.Z)(e.messages), e.isAfter || e.isBefore || e.hasMoreAfter ? this.data(r.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, this.generation) : this.data(r.guild_id).put(e.channelId, null != (t = e.messages[0]) ? t : null, this.generation)
   }
   handleLocalMessagesLoaded(e) {
-    let t = o.Z.getBasicChannel(e.channelId);
+    let t = s.Z.getBasicChannel(e.channelId);
     if (null != t) {
       var n;
       (0, l.Z)(e.messages), this.data(t.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, d)

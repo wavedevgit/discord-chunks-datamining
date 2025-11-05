@@ -53,7 +53,7 @@ function x(e) {
   var t;
   let {
     quest: n
-  } = e, i = (0, f.B6)(n.config.expiresAt), l = (0, f.B6)(b.r.build(n.config).rewardsExpireAt), a = (0, o.e7)([c.Z], () => c.Z.getState().theme), u = (0, s.wjy)(a) ? T.BRd.DARK : T.BRd.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
+  } = e, i = (0, f.B6)(n.config.expiresAt), l = (0, f.B6)(b.r.build(n.config).rewardsExpireAt), a = (0, s.e7)([c.Z], () => c.Z.getState().theme), u = (0, o.wjy)(a) ? T.BRd.DARK : T.BRd.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
   return (0, r.jsxs)("div", {
     className: j.heading,
     children: [(0, r.jsx)("img", {
@@ -62,13 +62,13 @@ function x(e) {
       src: (0, _.fh)(n, _.eC.GAME_TILE, u).url
     }), (0, r.jsxs)("div", {
       className: j.headingCopy,
-      children: [(0, r.jsx)(s.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-md/semibold",
         color: "header-primary",
         children: d ? N.intl.string(N.t.XBboAK) : N.intl.formatToPlainString(N.t.EQa7os, {
           questName: n.config.messages.questName
         })
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "header-secondary",
         children: d ? N.intl.formatToPlainString(N.t.APddvF, {
@@ -86,7 +86,7 @@ function A(e) {
   let {
     nodeRef: c,
     quest: _
-  } = e, b = (0, d.O5)(), E = (0, o.e7)([h.Z], () => h.Z.isEnrolling(_.id), [_]), [T, A] = i.useState(false), Z = i.useCallback(() => A(true), []), w = i.useCallback(() => A(false), []), {
+  } = e, b = (0, d.O5)(), E = (0, s.e7)([h.Z], () => h.Z.isEnrolling(_.id), [_]), [T, A] = i.useState(false), Z = i.useCallback(() => A(true), []), w = i.useCallback(() => A(false), []), {
     launchInGameActivity: L
   } = (0, f.zB)(_), R = i.useCallback(e => {
     e.stopPropagation()
@@ -154,9 +154,9 @@ function A(e) {
         sourceQuestContent: g.jn.ACTIVITY_PANEL,
         children: e => {
           var t, n;
-          return (0, r.jsx)(s.P3F, (t = P({}, e), n = n = {
+          return (0, r.jsx)(o.P3F, (t = P({}, e), n = n = {
             "aria-label": N.intl.string(N.t.DEoVWZ),
-            children: (0, r.jsx)(s.xhG, {
+            children: (0, r.jsx)(o.xhG, {
               size: "md",
               color: "currentColor",
               className: j.submenuIcon
@@ -178,7 +178,7 @@ function A(e) {
         quest: _
       }), (0, r.jsx)("div", {
         className: j.instructions,
-        children: (0, r.jsx)(s.Text, {
+        children: (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "text-default",
           children: V
@@ -194,28 +194,28 @@ function A(e) {
       sourceQuestContent: g.jn.ACTIVITY_PANEL
     }), (0, r.jsxs)("div", {
       className: j.ctas,
-      children: [!G && (0, r.jsxs)(s.ButtonGroup, {
+      children: [!G && (0, r.jsxs)(o.ButtonGroup, {
         size: "sm",
         direction: F ? "vertical" : "horizontal",
         fullWidth: true,
-        children: [(0, r.jsx)(s.Button, {
+        children: [(0, r.jsx)(o.Button, {
           variant: "secondary",
           text: N.intl.string(N.t.LLLLPD),
           onClick: k
-        }), (0, r.jsx)(s.Button, {
+        }), (0, r.jsx)(o.Button, {
           variant: "primary",
           text: Y,
           onClick: D,
           loading: E,
           icon: (0, y.getPrimaryCtaIcon)(_)
         })]
-      }), G && !B && (0, r.jsx)(s.Button, {
+      }), G && !B && (0, r.jsx)(o.Button, {
         variant: "primary",
         size: "sm",
         fullWidth: true,
         text: N.intl.string(N.t.VN1Ajl),
         onClick: M
-      }), B && (0, r.jsx)(s.Button, {
+      }), B && (0, r.jsx)(o.Button, {
         variant: "primary",
         size: "sm",
         fullWidth: true,

@@ -28,7 +28,7 @@ let h = function(e) {
   } = (0, u.a)({
     showDot: h,
     notificationItem: n
-  }), I = (0, s.G)();
+  }), I = (0, o.G)();
   i.useEffect(() => () => {
     I()
   }, [I]);
@@ -44,7 +44,7 @@ let h = function(e) {
       let e = t.current;
       if (null == e) return;
       let n = e.scrollHeight;
-      !(n - e.scrollTop - e.clientHeight < 300) || m || E || S || (_(true), (0, o.es)().finally(() => {
+      !(n - e.scrollTop - e.clientHeight < 300) || m || E || S || (_(true), (0, s.es)().finally(() => {
         setTimeout(() => {
           _(false)
         }, 300)

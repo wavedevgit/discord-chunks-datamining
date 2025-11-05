@@ -1,24 +1,24 @@
 /** Chunk was on 1272 **/
 /** chunk id: 826946, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk857395 = require("./857395.jsx"),
   Chunk19887 = require("./19887.js");
-let s = function(e) {
+let o = function(e) {
   let {
     className: t,
     guildId: n
-  } = e, s = i.useRef(null), c = i.useCallback((e, t) => {
+  } = e, o = i.useRef(null), c = i.useCallback((e, t) => {
     e.stopPropagation(), t.onClick(e)
   }, []);
   return (0, r.jsx)(a.Z, {
     guildId: n,
     position: "left",
-    targetElementRef: s,
+    targetElementRef: o,
     children: e => {
       var n, i;
       return (0, r.jsx)(l.P3F, (n = function(e) {
@@ -39,11 +39,11 @@ let s = function(e) {
         }
         return e
       }({}, e), i = i = {
-        innerRef: s,
+        innerRef: o,
         className: t,
         onClick: t => c(t, e),
         children: (0, r.jsx)("div", {
-          className: o.icon,
+          className: s.icon,
           children: (0, r.jsx)(l.bJT, {
             size: "xs",
             color: "currentColor"

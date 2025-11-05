@@ -128,7 +128,7 @@ class E extends Chunk647438.PureComponent {
     }).filter(d.lm);
     return (0, r.jsxs)("div", {
       className: m.requirements,
-      children: [(0, r.jsx)(s.Z, {
+      children: [(0, r.jsx)(o.Z, {
         tag: "h4",
         children: t
       }), n]

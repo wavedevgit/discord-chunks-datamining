@@ -48,7 +48,7 @@ function D(e, t, n, r) {
       return null != n && null != n.name ? n.name : x.intl.string(x.t.dRcLA2)
     }).replace(/<#(\d+)>/g, (e, t) => {
       let n = g.Z.getChannel(t);
-      return null == n ? e : (0, s.F6)(n, C.default, y.Z)
+      return null == n ? e : (0, o.F6)(n, C.default, y.Z)
     }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(x.intl.string(x.t.sMOuuS), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
       let r = c.Qh[n],
         l = 1e3 * parseInt(t, 10),
@@ -76,8 +76,8 @@ function M() {
   w = require.length > 0 ? require[0] : null
 }
 async function k(e, t, n, r, i) {
-  let l = o.e6(e, n);
-  null !== l && (null == w && M(), t ? await (0, T.NB)() : null == Z || Z.removeEventListener("end", T.NB), l.addEventListener("end", T.NB), null != r && l.addEventListener("start", r), null != i && l.addEventListener("end", i), Z = l, o.iq(l, w))
+  let l = s.e6(e, n);
+  null !== l && (null == w && M(), t ? await (0, T.NB)() : null == Z || Z.removeEventListener("end", T.NB), l.addEventListener("end", T.NB), null != r && l.addEventListener("start", r), null != i && l.addEventListener("end", i), Z = l, s.iq(l, w))
 }
 
 function U(e, t, n, r, i) {
@@ -106,35 +106,35 @@ function H(e) {
   let {
     message: i,
     channel: l
-  } = e, a = i.type === P.uaV.REPLY ? u.Z.getMessageByReference(i.messageReference) : null, o = (null == a ? true : a.state) === u.Y.LOADED ? null == a || null == (t = a.message) ? true : t.author : null, s = null != o ? null != (n = m.ZP.getNick(l.guild_id, null == o ? true : o.id)) ? n : S.ZP.getName(o) : null, c = l.getGuildId(), d = null != (r = m.ZP.getNick(c, i.author.id)) ? r : S.ZP.getName(i.author);
-  return U(D(i.content, d, c, s), true, l.id, i.id), true
+  } = e, a = i.type === P.uaV.REPLY ? u.Z.getMessageByReference(i.messageReference) : null, s = (null == a ? true : a.state) === u.Y.LOADED ? null == a || null == (t = a.message) ? true : t.author : null, o = null != s ? null != (n = m.ZP.getNick(l.guild_id, null == s ? true : s.id)) ? n : S.ZP.getName(s) : null, c = l.getGuildId(), d = null != (r = m.ZP.getNick(c, i.author.id)) ? r : S.ZP.getName(i.author);
+  return U(D(i.content, d, c, o), true, l.id, i.id), true
 }
 
 function V(e) {
   var t, n, r, i, l, a;
   let {
-    channelId: o,
-    message: s,
+    channelId: s,
+    message: o,
     optimistic: c
   } = e;
   if (c || E.Z.isSelfDeaf()) returnfalse;
-  let u = g.Z.getChannel(o);
+  let u = g.Z.getChannel(s);
   if (null == u) returnfalse;
   let d = v.Z.getChannelId(),
     _ = h.ZP.getCurrentSidebarChannelId(d),
-    b = o === d || o === _,
-    C = p.OW.getSetting() && s.tts && b,
+    b = s === d || s === _,
+    C = p.OW.getSetting() && o.tts && b,
     T = O.Z.getTTSType(),
-    N = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (T === P.PrB.ALL_CHANNELS || T === P.PrB.SELECTED_CHANNEL && b);
-  if ((C || N) && !y.Z.isBlockedOrIgnoredForMessage(s)) {
-    if (A.indexOf(s.id) >= 0) returnfalse;
-    A.unshift(s.id) > 10 && A.pop();
+    N = (null == (t = o.author) ? true : t.id) !== f.default.getId() && (T === P.PrB.ALL_CHANNELS || T === P.PrB.SELECTED_CHANNEL && b);
+  if ((C || N) && !y.Z.isBlockedOrIgnoredForMessage(o)) {
+    if (A.indexOf(o.id) >= 0) returnfalse;
+    A.unshift(o.id) > 10 && A.pop();
     let e = u.getGuildId();
-    if (null != e && I.ZP.getMutedChannels(e).has(o)) returnfalse;
-    let t = null != (l = null != (i = m.ZP.getNick(e, null == (n = s.author) ? true : n.id)) ? i : S.ZP.getName(s.author)) ? l : "",
-      c = s.type === P.uaV.REPLY ? null == (r = s.referenced_message) ? true : r.author : null,
+    if (null != e && I.ZP.getMutedChannels(e).has(s)) returnfalse;
+    let t = null != (l = null != (i = m.ZP.getNick(e, null == (n = o.author) ? true : n.id)) ? i : S.ZP.getName(o.author)) ? l : "",
+      c = o.type === P.uaV.REPLY ? null == (r = o.referenced_message) ? true : r.author : null,
       d = null != c ? null != (a = m.ZP.getNick(e, null == c ? true : c.id)) ? a : S.ZP.getName(c) : null;
-    U(D(s.content, t, e, d), false, u.id, s.id, j.f)
+    U(D(o.content, t, e, d), false, u.id, o.id, j.f)
   }
   returnfalse
 }

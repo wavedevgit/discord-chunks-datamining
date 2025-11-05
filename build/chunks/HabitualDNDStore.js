@@ -20,11 +20,11 @@ let d = [],
   p = false;
 
 function f() {
-  return d.length >= 4 && d.some(e => e < Date.now() - 3 * s.Z.Millis.DAY)
+  return d.length >= 4 && d.some(e => e < Date.now() - 3 * o.Z.Millis.DAY)
 }
 class h extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(o.Z), null != e && Array.isArray(e.sessionStartsWithDND) && (d = e.sessionStartsWithDND)
+    this.waitFor(s.Z), null != e && Array.isArray(e.sessionStartsWithDND) && (d = e.sessionStartsWithDND)
   }
   showNagBar() {
     return p
@@ -42,7 +42,7 @@ class h extends(r = Chunk442837.ZP.PersistedStore) {
 }
 u(h, "displayName", "HabitualDNDStore"), u(h, "persistKey", "habitualDND"), new h(Chunk570140.Z, {
   POST_CONNECTION_OPEN: function() {
-    Chunk885110.Z.getStatus() === Chunk981631.Skl.DND && "0" === Chunk695346.Cr.getSetting() ? (d.push(Date.now()), d = d.filter(e => e > Date.now() - 5 * s.Z.Millis.DAY), f() && setTimeout(() => {
+    Chunk885110.Z.getStatus() === Chunk981631.Skl.DND && "0" === Chunk695346.Cr.getSetting() ? (d.push(Date.now()), d = d.filter(e => e > Date.now() - 5 * o.Z.Millis.DAY), f() && setTimeout(() => {
       Chunk570140.Z.dispatch({
         type: "HABITUAL_DND_CLEAR"
       })

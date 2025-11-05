@@ -40,27 +40,27 @@ function T(e) {
     let e = new Image;
     e.src = C, e.onload = () => s(true), e.onerror = () => s(true)
   }, [C]), i.useEffect(() => {
-    n && c.uvj.announce(O.intl.string(O.t.j2p125))
+    n && c.uvj.announce(S.intl.string(S.t.j2p125))
   }, [n]), (0, r.jsx)("div", {
-    className: S.qrCodeContainer,
+    className: N.qrCodeContainer,
     children: "" !== t && n ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(m.ZP, {
-        className: S.qrCode,
+      children: [(0, r.jsx)(p.ZP, {
+        className: N.qrCode,
         size: 160,
         text: t
       }), (0, r.jsx)("div", {
-        className: S.qrCodeOverlay,
+        className: N.qrCodeOverlay,
         children: (0, r.jsx)("img", {
           src: C,
           alt: ""
         })
       })]
     }) : (0, r.jsx)("div", {
-      className: S.qrCodeOverlay,
-      "aria-label": O.intl.string(O.t.BUGkVF),
+      className: N.qrCodeOverlay,
+      "aria-label": S.intl.string(S.t.BUGkVF),
       "aria-busy": true,
       children: (0, r.jsx)(c.$jN, {
-        className: S.qrCode,
+        className: N.qrCode,
         type: c.$jN.Type.WANDERING_CUBES,
         "aria-hidden": true
       })
@@ -94,18 +94,18 @@ function P(e) {
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(T, {
           text: 1 === t.step ? "https://discord.com/ra/".concat(t.fingerprint) : ""
-        }), (0, r.jsx)(p.Dx, {
-          className: N.marginBottom8,
-          children: O.intl.string(O.t.UPiHaL)
+        }), (0, r.jsx)(m.Dx, {
+          className: O.marginBottom8,
+          children: S.intl.string(S.t.UPiHaL)
         }), null != i ? (0, r.jsx)(Z, {
           children: i
-        }) : (0, r.jsx)(p.DK, {
-          children: O.intl.format(O.t["Qq+A6i"], {})
+        }) : (0, r.jsx)(m.DK, {
+          children: S.intl.format(S.t["Qq+A6i"], {})
         }), (0, r.jsx)(c.Kqy, {
           padding: 8,
           align: "center",
           children: (0, r.jsx)(c.Avr, {
-            text: O.intl.string(O.t["/kpMDt"]),
+            text: S.intl.string(S.t["/kpMDt"]),
             textVariant: "text-sm/normal",
             onClick: () => (function(e) {
               let t = E.isPlatformEmbedded && b.ZP.supportsFeature(I.eRX.WEBAUTHN) ? b.ZP.webAuthnAuthenticate : e => {
@@ -128,22 +128,22 @@ function P(e) {
       } = t;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Z, {
-          className: S.qrAvatar,
+          className: N.qrAvatar,
           user: e,
           size: c.EFr.SIZE_120,
           isMobile: true,
           status: y.Sk.ONLINE
-        }), (0, r.jsx)(p.Dx, {
-          className: N.marginBottom8,
-          children: O.intl.string(O.t.apGCUT)
-        }), (0, r.jsx)(p.DK, {
-          children: O.intl.format(O.t.Cbl5JK, {
+        }), (0, r.jsx)(m.Dx, {
+          className: O.marginBottom8,
+          children: S.intl.string(S.t.apGCUT)
+        }), (0, r.jsx)(m.DK, {
+          children: S.intl.format(S.t.Cbl5JK, {
             username: "".concat(j.ZP.getUserTag(e))
           })
         }), (0, r.jsx)("div", {
-          className: S.startOverButton,
+          className: N.startOverButton,
           children: (0, r.jsx)(c.Avr, {
-            text: O.intl.string(O.t.nOOhwo),
+            text: S.intl.string(S.t.nOOhwo),
             textVariant: "text-sm/normal",
             onClick: n
           })
@@ -165,20 +165,20 @@ function R(e) {
   } = e, s = (0, a.e7)([_.default], () => _.default.getIsPasswordlessActive()), {
     state: u,
     rsaKeyPair: d,
-    cancel: p,
-    handleFailure: m
+    cancel: m,
+    handleFailure: p
   } = function(e) {
     let [t, n] = i.useState(0), [r, s] = i.useState(false), [a, o] = i.useState({
       step: 0
-    }), [c, u] = i.useState(null), d = (0, h.Z)(), p = i.useMemo(() => new l.Z(1500, 3e4), []), m = (0, g.Z)(() => {
+    }), [c, u] = i.useState(null), d = (0, h.Z)(), m = i.useMemo(() => new l.Z(1500, 3e4), []), p = (0, g.Z)(() => {
       o({
         step: 0
       }), d ? n(e => e + 1) : (A.info("document is not visible, will defer reconnection when document becomes visible."), s(true))
     }), f = i.useCallback(() => {
       A.error("Could not complete QR code login, trying to restart with a new QR code."), o({
         step: 0
-      }), p.pending || p.fail(m)
-    }, [m, p]);
+      }), m.pending || m.fail(p)
+    }, [p, m]);
     return i.useEffect(() => {
       d && r && 0 === a.step && (A.info("reconnecting, now that document is visible"), s(false), n(e => e + 1))
     }, [a, d, r, s]), i.useEffect(() => {
@@ -218,7 +218,7 @@ function R(e) {
             return
           }
           case "pending_remote_init": {
-            p.succeed(), x.S.dispatch(I.CkL.WAVE_EMPHASIZE);
+            m.succeed(), x.S.dispatch(I.CkL.WAVE_EMPHASIZE);
             let e = await (0, v.Pk)(h());
             if (e !== s.fingerprint) throw Error("bad fingerprint ".concat(e, " !== ").concat(s.fingerprint));
             i("handshake complete awaiting remote auth."), o({
@@ -262,7 +262,7 @@ function R(e) {
             return
           }
           case "cancel":
-            i("remote auth handshake cancelled."), m();
+            i("remote auth handshake cancelled."), p();
             return;
           case "hello": {
             i("got hello, auth timeout=".concat(s.timeout_ms, "ms"));
@@ -287,12 +287,12 @@ function R(e) {
       }, r.onerror = e => {
         i("disconnected, error: ".concat(JSON.stringify(e))), f()
       }, () => {
-        i("cleaning up"), r.onopen = () => null, r.onmessage = () => null, r.onclose = () => null, r.onerror = () => null, r.close(1e3), p.cancel(), null != c && clearTimeout(c), null != a && clearInterval(a)
+        i("cleaning up"), r.onopen = () => null, r.onmessage = () => null, r.onclose = () => null, r.onerror = () => null, r.close(1e3), m.cancel(), null != c && clearTimeout(c), null != a && clearInterval(a)
       }
-    }, [m, e, t, p, f]), {
+    }, [p, e, t, m, f]), {
       state: a,
       rsaKeyPair: c,
-      cancel: m,
+      cancel: p,
       handleFailure: f
     }
   }(t), f = function(e) {
@@ -321,24 +321,24 @@ function R(e) {
           r = await (0, v.Pk)(d);
         t(n, r)
       } catch (e) {
-        m()
-      } else m()
+        p()
+      } else p()
     }).catch(() => {
-      m()
+      p()
     })
-  }, [u, t, d, m]), (0, r.jsxs)(r.Fragment, {
+  }, [u, t, d, p]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: S.verticalSeparator
+      className: N.verticalSeparator
     }), (0, r.jsx)(c.qBt, {
       fillParent: true,
-      className: S.qrLogin,
+      className: N.qrLogin,
       step: f,
       steps: [0, 1],
       children: (0, r.jsx)("div", {
-        className: S.qrLoginInner,
+        className: N.qrLoginInner,
         children: (0, r.jsx)(P, {
           state: u,
-          cancel: p,
+          cancel: m,
           conditionalMediationAbortController: n,
           isPasswordlessActive: s
         })

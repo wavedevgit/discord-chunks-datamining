@@ -7,8 +7,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk238651 = require("./238651.js");
 let a = [require("./123353.js")],
-  o = ["#FFFFFF"],
-  s = 1e3 / 60,
+  s = ["#FFFFFF"],
+  o = 1e3 / 60,
   c = {
     velocity: {
       type: "static-random",
@@ -65,7 +65,7 @@ function u(e) {
     firing: n = true,
     wind: u = 2,
     sprites: d = a,
-    spriteColors: p = o,
+    spriteColors: p = s,
     confettiConfig: f
   } = e, [h, g] = i.useState(null), [m, _] = i.useState(null), b = (0, l.uR)(m, h), E = i.useMemo(() => new l.qA({
     wind: u
@@ -115,7 +115,7 @@ function u(e) {
     }), e))
   }, [b, m, f]);
   return i.useEffect(() => {
-    let e = n ? setInterval(O, s) : null;
+    let e = n ? setInterval(O, o) : null;
     return () => clearInterval(e)
   }, [n, O]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.O_, {

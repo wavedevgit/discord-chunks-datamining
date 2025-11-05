@@ -44,11 +44,11 @@ function N(e) {
   var t, n;
   let {
     onClick: l,
-    selectedOverride: o = false,
-    popoutProps: s,
+    selectedOverride: s = false,
+    popoutProps: o,
     ref: g,
     focusSectionProps: _
-  } = e, [O, y] = i.useState(false), N = (0, b.D)(), j = o || N, P = o || j, {
+  } = e, [O, y] = i.useState(false), N = (0, b.D)(), j = s || N, P = s || j, {
     backForwardButtons: x,
     titlebarIconSize: A,
     titlebarHoverHighlight: Z
@@ -96,7 +96,7 @@ function N(e) {
         className: a()(I.clickableContainer, {
           [I.withHoverHighlight]: Z
         })
-      }, _, s), n = n = {
+      }, _, o), n = n = {
         onMouseEnter: () => {
           y(true)
         },
@@ -105,7 +105,7 @@ function N(e) {
         },
         onClick: () => {
           var e;
-          null == l || l(), null == s || null == (e = s.onClick) || e.call(s)
+          null == l || l(), null == o || null == (e = o.onClick) || e.call(o)
         },
         children: [(0, r.jsx)("div", {
           className: a()(I.iconWrapper, null),

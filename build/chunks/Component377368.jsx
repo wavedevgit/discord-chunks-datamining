@@ -66,9 +66,9 @@ class v extends Chunk131468.Z {
       (0, f.w)()
     }), y(this, "_handleOpenEducationModal", (e, t) => {
       if (null == e) return;
-      let l = s.Z.getChannel(t),
+      let l = o.Z.getChannel(t),
         c = d.ZP.getKeybindForAction(E.kg4.SOUNDBOARD_HOLD);
-      null != l && (0, g.Z)(l) && null != c && o.Z.hasHotspot(a.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.ZDy)(async () => {
+      null != l && (0, g.Z)(l) && null != c && s.Z.hasHotspot(a.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.ZDy)(async () => {
         let {
           default: t
         } = await n.e("69208").then(n.bind(n, 490166));

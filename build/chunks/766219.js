@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 766219, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => o,
+  I: () => s,
   s: () => a
 });
 var Chunk823379 = require("./823379.js"),
@@ -21,7 +21,7 @@ function a(e) {
   }
 }
 
-function o(e) {
+function s(e) {
   if (e.startsWith("/discovery/applications")) return i.GlobalDiscoveryTab.APPS;
   switch (e) {
     case "/discovery/quests":

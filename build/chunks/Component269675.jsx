@@ -42,7 +42,7 @@ function j(e) {
   }), (0, c.Z)(l.tq ? "role-subscriptions-overview" : true);
   let D = j && (null == n || !(P || x) || w && !L);
   if (i.useEffect(() => {
-      s.jg()
+      o.jg()
     }, []), i.useEffect(() => {
       D && !l.tq && (0, d.M)(t, S.oC.ROLE_SUBSCRIPTIONS)
     }, [t, D]), l.tq && D) {
@@ -57,7 +57,7 @@ function j(e) {
       toolbar: (0, r.jsx)(i.Fragment, {}),
       className: N.headerBar,
       children: [(0, r.jsx)(g.Z.Icon, {
-        icon: (0, o.GSL)(O.Z),
+        icon: (0, s.GSL)(O.Z),
         "aria-hidden": true
       }), (0, r.jsx)(g.Z.Title, {
         children: T.intl.string(T.t["KzCF/6"])
@@ -66,11 +66,11 @@ function j(e) {
       id: C.v
     }), (0, r.jsx)("div", {
       className: N.content,
-      children: P ? (0, r.jsx)(o.u2D, {
+      children: P ? (0, r.jsx)(s.u2D, {
         className: N.scroller,
         children: (0, r.jsx)("div", {
           className: N.scrollerContent,
-          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(y.Z, {
+          children: R ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(y.Z, {
             guild: n
           })
         })

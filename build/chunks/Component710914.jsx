@@ -22,7 +22,7 @@ function h(e) {
     hasFetched: l,
     hasFiltersApplied: h = false,
     onClearFilters: g
-  } = e, m = i.useRef(false), _ = (0, s.TH)(), b = i.useMemo(() => {
+  } = e, m = i.useRef(false), _ = (0, o.TH)(), b = i.useMemo(() => {
     if (_.hash.length > 0) {
       let e = _.hash.slice(1);
       for (let n of t)
@@ -43,7 +43,7 @@ function h(e) {
   let E = null != b,
     [O, y] = i.useState(window.innerWidth);
   i.useEffect(() => {
-    let e = (0, o.debounce)(() => {
+    let e = (0, s.debounce)(() => {
       y(window.innerWidth)
     }, 250);
     return window.addEventListener("resize", e), () => {

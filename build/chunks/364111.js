@@ -16,7 +16,7 @@ let d = Chunk311570.v.VARIANTS_GROUP;
 function p(e, t, n) {
   let i = arguments.length > 3 && true !== arguments[3] && arguments[3],
     p = (0, l.e7)([a.Z], () => a.Z.hasLoadedExperiments),
-    f = (0, l.e7)([s.Z], () => s.Z.skipNumCategories),
+    f = (0, l.e7)([o.Z], () => o.Z.skipNumCategories),
     [h, g, m, _, b, E, O, y] = (0, l.Wu)([c.Z], () => {
       var t, n;
       return [c.Z.getShopBlocks(e), null != (t = c.Z.getLastSuccessfulFetch(e)) ? t : 0, null != (n = c.Z.getLastErrorTimestamp(e)) ? n : 0, c.Z.getLastFetchOptions(e), c.Z.getFetchShopHomeError(e), c.Z.getIsFetchingShopHome(e), c.Z.getHasKnownStaleData(e), c.Z.getShopHomeConfigOverride()]
@@ -56,19 +56,19 @@ function p(e, t, n) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
       }), e
     }, [t, y, f]),
-    I = (0, r.useMemo)(() => !(0, o.oc)(_, v), [_, v]),
+    I = (0, r.useMemo)(() => !(0, s.oc)(_, v), [_, v]),
     C = (0, u.J)(h, null != E && E, i),
     S = (0, r.useMemo)(() => !C && Date.now() - g < 6e5, [g, C]);
   return (0, r.useEffect)(() => {
     if (!p || E) return;
     let t = Date.now() - m < 6e5;
-    (null == b || !t) && (I || !S || O) && (0, o.Ov)(e, v, n)
+    (null == b || !t) && (I || !S || O) && (0, s.Ov)(e, v, n)
   }, [p, E, b, m, S, O, I, v, e, n]), {
     isFetchingShopHome: E,
     fetchShopHomeError: b,
     shopBlocks: h,
     refreshShopHome: (0, r.useCallback)(() => {
-      (0, o.Ov)(e, v, n)
+      (0, s.Ov)(e, v, n)
     }, [e, v, n])
   }
 }

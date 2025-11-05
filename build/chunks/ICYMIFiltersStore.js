@@ -8,7 +8,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk518929 = require("./518929.js"),
   Chunk797394 = require("./797394.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,7 +38,7 @@ class u extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return c
   }
 }
-s(u, "displayName", "ICYMIFiltersStore"), s(u, "persistKey", "ICYMIFiltersStore");
+o(u, "displayName", "ICYMIFiltersStore"), o(u, "persistKey", "ICYMIFiltersStore");
 let d = new u(Chunk570140.Z, {
   SET_ICYMI_FILTERS: function(e) {
     c = e.filters

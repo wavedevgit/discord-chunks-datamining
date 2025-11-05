@@ -123,9 +123,9 @@ function Z(e) {
                 onJump: q
               }) : Y && G === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && G === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
                 closePopout: V
-              }) : G === c.X.SCHEDULED ? (0, r.jsx)(E._, {}) : (0, r.jsx)(a.SV, {
-                fallback: (0, r.jsx)(x.h6, {}),
-                children: (0, r.jsx)(x.ZP, {
+              }) : G === c.X.SCHEDULED ? (0, r.jsx)(x._, {}) : (0, r.jsx)(a.SV, {
+                fallback: (0, r.jsx)(E.h6, {}),
+                children: (0, r.jsx)(E.ZP, {
                   onJump: q,
                   showTutorial: B,
                   setSeenTutorial: F,

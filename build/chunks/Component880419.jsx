@@ -30,8 +30,8 @@ function b(e) {
     className: j,
     onError: C
   } = e, {
-    onActivate: E,
-    isLoading: x,
+    onActivate: x,
+    isLoading: E,
     error: S,
     onShowDeactivate: I
   } = (0, p.ZP)(l, b), P = (0, d.ZP)(l, b), N = P.type !== h.A3.INACTIVE, {
@@ -125,8 +125,8 @@ function b(e) {
           variant: N ? "secondary" : "primary",
           "aria-label": g.intl.string(N ? f.default.TZsu1U : f.default.gSxlHf),
           disabled: Z,
-          onClick: N ? I : E,
-          loading: x,
+          onClick: N ? I : x,
+          loading: E,
           fullWidth: v,
           size: null != O ? O : _ ? "md" : true,
           text: e,

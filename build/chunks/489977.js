@@ -35,11 +35,11 @@ class f extends Chunk317770.Z {
         m = d.ZP.canUseAnimatedAvatar(h);
       if (m || "image/gif" !== n.type) return void g(t);
       if (null == h) return;
-      let _ = (0, s.SD)({
+      let _ = (0, o.SD)({
         userId: h.id,
         image: t
       });
-      if (!m) return void(0, o.s)({
+      if (!m) return void(0, s.s)({
         uploadType: p.pC.AVATAR,
         imageSrc: _,
         analyticsSource: l
@@ -52,10 +52,10 @@ class f extends Chunk317770.Z {
         isTryItOut: i
       } = e, l = t.imageUri;
       if (i) return void(0, c.f4)(l);
-      let s = u.default.getCurrentUser(),
+      let o = u.default.getCurrentUser(),
         f = null != n ? a.g_ : c.g_,
-        h = d.ZP.canUsePremiumProfileCustomization(s);
-      return d.ZP.canUsePremiumProfileCustomization(s) ? void f(l) : null == s || h ? true : void(0, o.s)({
+        h = d.ZP.canUsePremiumProfileCustomization(o);
+      return d.ZP.canUsePremiumProfileCustomization(o) ? void f(l) : null == o || h ? true : void(0, s.s)({
         uploadType: p.pC.BANNER,
         imageSrc: l,
         analyticsSource: r

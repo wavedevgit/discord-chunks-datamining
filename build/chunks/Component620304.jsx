@@ -27,30 +27,30 @@ function j(e) {
   let {
     guild: t,
     withMargin: l
-  } = e, j = (0, b.Z)(t), C = (0, m.Z)(t.id), E = i.useCallback(() => {
+  } = e, j = (0, b.Z)(t), C = (0, m.Z)(t.id), x = i.useCallback(() => {
     (0, _.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-  }, [t.id]), x = (0, c.e7)([f.Z], () => {
+  }, [t.id]), E = (0, c.e7)([f.Z], () => {
     var e;
     return null != (e = f.Z.getCountForGuild(t.id)) ? e : 0
   });
   i.useEffect(() => {
-    x !== t.premiumSubscriberCount && (0, h.v)(t.id, t.premiumSubscriberCount)
-  }, [t.id, x, t.premiumSubscriberCount]);
-  let S = Math.min(x / j * 100, 100),
+    E !== t.premiumSubscriberCount && (0, h.v)(t.id, t.premiumSubscriberCount)
+  }, [t.id, E, t.premiumSubscriberCount]);
+  let S = Math.min(E / j * 100, 100),
     [I, P] = (0, u.q_F)(() => ({
-      width: x === t.premiumSubscriberCount ? "calc(".concat(S, "% - 4px)") : "0%",
+      width: E === t.premiumSubscriberCount ? "calc(".concat(S, "% - 4px)") : "0%",
       config: {
         tension: 250,
         damping: 5,
         mass: 1
       }
-    }), "respect-motion-settings", [x, t.premiumSubscriberCount]);
+    }), "respect-motion-settings", [E, t.premiumSubscriberCount]);
   i.useEffect(() => {
     P({
       width: "calc(".concat(S, "% - 4px)")
     })
   }, [S, P]);
-  let N = x >= j;
+  let N = E >= j;
   return (0, r.jsx)(u.P3F, {
     "aria-label": true,
     role: "button",
@@ -61,7 +61,7 @@ function j(e) {
       }
     },
     onClick: () => {
-      E()
+      x()
     },
     className: o()(v.container, {
       [v.containerWithMargin]: l
@@ -133,9 +133,9 @@ function j(e) {
             className: o()(v.text, v.boostCountText),
             variant: "text-xs/semibold",
             children: N ? O.intl.formatToPlainString(y.default["Ehpq+7"], {
-              appliedBoostCount: x
+              appliedBoostCount: E
             }) : O.intl.formatToPlainString(y.default["/rbPDs"], {
-              appliedBoostCount: x,
+              appliedBoostCount: E,
               maxBoostCount: j
             })
           }), (0, r.jsx)(g.Z, {

@@ -129,7 +129,7 @@ class O extends Chunk317770.Z {
       let {
         channelId: t,
         participantId: n
-      } = e, i = (0, o.Z)(t, n);
+      } = e, i = (0, s.Z)(t, n);
       u.bA(i, e => (0, r.jsx)(g, {
         windowKey: e,
         channelId: t,

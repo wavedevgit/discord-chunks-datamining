@@ -57,10 +57,10 @@ let f = new p(Chunk570140.Z, {
       items: t
     } = e;
     for (let e of t)
-      if (e.type === o.Ni.MESSAGE) {
+      if (e.type === s.Ni.MESSAGE) {
         var n;
-        null != d.readIdToTimestampMap[e.id] || (null == (n = e.data.message_context) ? true : n.external_content_application_id) != null || (0, s.$U)(e.data.channel_id, e.data.message_id) || (d.readIdToTimestampMap[e.id] = 0)
-      } else e.type !== o.Ni.SUMMARY || null != d.readIdToTimestampMap[e.id] || (0, s.$U)(e.data.channel_id, e.data.summary_id) || (d.readIdToTimestampMap[e.id] = 0)
+        null != d.readIdToTimestampMap[e.id] || (null == (n = e.data.message_context) ? true : n.external_content_application_id) != null || (0, o.$U)(e.data.channel_id, e.data.message_id) || (d.readIdToTimestampMap[e.id] = 0)
+      } else e.type !== s.Ni.SUMMARY || null != d.readIdToTimestampMap[e.id] || (0, o.$U)(e.data.channel_id, e.data.summary_id) || (d.readIdToTimestampMap[e.id] = 0)
   },
   CLEAR_ICYMI_READ_STATES: function() {
     d.readIdToTimestampMap = {}

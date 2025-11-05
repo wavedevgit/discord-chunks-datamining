@@ -9,7 +9,7 @@ var Chunk748780 = require("./748780.js"),
   Chunk317770 = require("./317770.js"),
   Chunk928518 = require("./928518.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,12 +30,12 @@ class c extends Chunk317770.Z {
     r.Z.inject.RequestAnimationFrame(t), r.Z.inject.CancelAnimationFrame(n), i.f.setRAF(t, n)
   }
   constructor(...e) {
-    super(...e), s(this, "handleMainWindowFocus", e => {
+    super(...e), o(this, "handleMainWindowFocus", e => {
       e.focused && e.windowId === window.__DISCORD_WINDOW_ID && this.injectWindowAnimationFrame(window)
-    }), s(this, "handlePopoutWindowChange", () => {
-      let e = o.Z.getWindowKeys().find(e => o.Z.getWindowFocused(e));
+    }), o(this, "handlePopoutWindowChange", () => {
+      let e = s.Z.getWindowKeys().find(e => s.Z.getWindowFocused(e));
       if (null == e) return this.injectWindowAnimationFrame(window);
-      let t = o.Z.getWindow(e);
+      let t = s.Z.getWindow(e);
       if (null == t || t.closed) return this.injectWindowAnimationFrame(window);
       this.injectWindowAnimationFrame(t)
     })

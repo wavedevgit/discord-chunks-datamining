@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./49124.js"), require("./388685.js"), require("./35282.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./539854.js"), require("./415506.js");
 var Chunk836560 = require("./836560.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk570140 = require("./570140.js"),
   Chunk710845 = require("./710845.js"),
   Chunk857192 = require("./857192.js"),
@@ -130,7 +130,7 @@ class A extends Chunk836560.EventEmitter {
     if ("/rpc" === n && ("GET" === i || l)) {
       let n = new URLSearchParams(r),
         i = l ? S(e.headers)["content-type"].split("/")[1] : "json",
-        o = function() {
+        s = function() {
           var e, r;
           let {
             protocol: i,
@@ -138,20 +138,20 @@ class A extends Chunk836560.EventEmitter {
           } = null != (r = d.Z.toURLSafe(null != (e = n.get("callback")) ? e : "")) ? r : {};
           i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", v), t.writeHead(301), t.end()
         },
-        s = new x(!l ? o : N.bind(null, e, t), !l ? o : j.bind(null, e, t, 400), Number(n.get("v")), i);
-      if (l)(0, m.em)(s, S(e.headers).origin, n.get("client_id")).then(() => {
+        o = new x(!l ? s : N.bind(null, e, t), !l ? s : j.bind(null, e, t, 400), Number(n.get("v")), i);
+      if (l)(0, m.em)(o, S(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
-        e.on("data", e => n += e), e.on("error", () => j(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
+        e.on("data", e => n += e), e.on("error", () => j(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(o, n))
       }).catch(e => {
         let {
           code: t,
           message: n
         } = e;
-        return s.close(t, n)
+        return o.close(t, n)
       });
       else {
         var a;
-        s.authorization.scopes = [_.CN], this.handleMessage(s, decodeURIComponent(null != (a = n.get("payload")) ? a : ""))
+        o.authorization.scopes = [_.CN], this.handleMessage(o, decodeURIComponent(null != (a = n.get("payload")) ? a : ""))
       }
       return
     }
@@ -168,7 +168,7 @@ class A extends Chunk836560.EventEmitter {
       return
     }
     I.info("Socket Opened: ".concat(r.id)), e.on("error", e => I.error("WS Error: ".concat(e.message))), e.on("close", (e, t) => {
-      I.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), o().remove(C, e => e === r), this.emit("disconnect", r)
+      I.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), s().remove(C, e => e === r), this.emit("disconnect", r)
     }), (0, m.em)(r, l, i.get("client_id")).then(() => {
       C.push(r), e.on("message", e => this.handleMessage(r, e)), this.emit("connect", r)
     }).catch(e => {

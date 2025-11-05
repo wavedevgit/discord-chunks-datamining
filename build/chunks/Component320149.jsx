@@ -39,13 +39,13 @@ function I(e) {
     onError: x
   });
   if (null == t || !t.isDM()) return null;
-  let Z = [(0, r.jsx)(s.ZP.Icon, {
+  let Z = [(0, r.jsx)(o.ZP.Icon, {
     icon: a.Dio,
     tooltip: O.intl.string(O.t.cpT0Cq),
     onClick: () => m.Z.closeChannelSidebar(n)
   }, "close")];
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.ZP, {
+    children: [(0, r.jsx)(o.ZP, {
       toolbar: Z,
       "aria-label": O.intl.string(O.t.BIYAqa),
       children: (0, c.ud)({
@@ -71,7 +71,7 @@ function I(e) {
       children: (0, r.jsx)(E.Z, {
         channel: t,
         guild: null,
-        chatInputType: o.Ie.SIDEBAR
+        chatInputType: s.Ie.SIDEBAR
       }, t.id)
     })]
   })

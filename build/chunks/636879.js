@@ -1,12 +1,12 @@
-/** Chunk was on 3688 **/
+/** Chunk was on 12581 **/
 /** chunk id: 636879, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => a
 }), require("./539854.js");
 var Chunk342412 = require("./342412.js"),
   Chunk722734 = require("./722734.js");
 
-function a(t, e, i) {
+function r(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
     value: i,
     enumerable: true,
@@ -14,7 +14,7 @@ function a(t, e, i) {
     writable: true
   }) : t[e] = i, t
 }
-let h = class {
+let a = class {
   initialize() {
     this.particles = [], this.wind.initialize(), this.loadInTimer = setTimeout(() => {
       for (let t = 0; module < 75; module++) this.particles.push(new Chunk342412.Z)
@@ -33,6 +33,6 @@ let h = class {
     this.isFilled = true
   }
   constructor() {
-    a(this, "particles", []), a(this, "wind", new Chunk722734.Z), a(this, "alpha", 0), a(this, "isFilled", false), a(this, "loadInTimer", null)
+    r(this, "particles", []), r(this, "wind", new Chunk722734.Z), r(this, "alpha", 0), r(this, "isFilled", false), r(this, "loadInTimer", null)
   }
 }

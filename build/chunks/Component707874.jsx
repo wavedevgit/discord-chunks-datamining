@@ -43,9 +43,9 @@ function p(e) {
           channelId: true, messageIds: [], title: true
         }
     }
-  }, [t]), h = (0, l.e7)([a.Z], () => null != n ? a.Z.getChannel(n) : null, [n]), g = (0, l.e7)([o.Z], () => (null == h ? true : h.guild_id) != null ? o.Z.getGuild(h.guild_id) : null, [h]), m = (0, l.Wu)([c.Z, s.Z], () => null == n ? [] : p.map(e => {
+  }, [t]), h = (0, l.e7)([a.Z], () => null != n ? a.Z.getChannel(n) : null, [n]), g = (0, l.e7)([s.Z], () => (null == h ? true : h.guild_id) != null ? s.Z.getGuild(h.guild_id) : null, [h]), m = (0, l.Wu)([c.Z, o.Z], () => null == n ? [] : p.map(e => {
     var t;
-    return null != (t = c.Z.getMessage(e)) ? t : s.Z.getMessage(n, e)
+    return null != (t = c.Z.getMessage(e)) ? t : o.Z.getMessage(n, e)
   }).filter(e => null != e), [n, p]);
   return null == h || null == g || 0 === m.length ? null : (0, r.jsxs)("div", {
     className: d.container,

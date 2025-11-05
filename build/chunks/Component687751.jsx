@@ -71,7 +71,7 @@ class E extends Chunk317770.Z {
     }, {
       modalKey: g.dG,
       onCloseRequest: m.dG4,
-      backdropStyle: (0, o.bj)(t) ? i.fCB.LIGHTBOX : true
+      backdropStyle: (0, s.bj)(t) ? i.fCB.LIGHTBOX : true
     })
   }
   handleAgeGateSuccess() {

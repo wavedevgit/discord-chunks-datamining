@@ -46,7 +46,7 @@ let l = {
     [Chunk103964.Q5.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: {
       request: true,
       response: e => ({
-        participants: e.array().items(o(e).keys({
+        participants: e.array().items(s(e).keys({
           nickname: e.string().description("Server nickname. Not unique.")
         }).required()).required()
       })
@@ -65,7 +65,7 @@ let l = {
           url: e.string().required(),
           width: e.number().required()
         }),
-        components: e.array().items(s(e)),
+        components: e.array().items(o(e)),
         pid: e.number()
       }),
       response: e => ({
@@ -89,7 +89,7 @@ let l = {
       response: e => ({
         relationships: e.array().required().items(e.object({
           type: e.number().required(),
-          user: o(e).required(),
+          user: s(e).required(),
           presence: e.object({
             status: e.string().required(),
             activity: a(e).allow(null)
@@ -108,7 +108,7 @@ let l = {
       request: e => ({
         id: e.string().max(64).required()
       }),
-      response: e => o(e).allow(null)
+      response: e => s(e).allow(null)
     },
     [Chunk103964.Q5.GET_QUEST_ENROLLMENT_STATUS]: {
       request: e => ({
@@ -176,7 +176,7 @@ let l = {
     buttons: e.array().items(e.string()).optional(),
     hangStatus: e.string().optional()
   }),
-  o = e => e.object({
+  s = e => e.object({
     id: e.string().required().description("User ID"),
     username: e.string().required(),
     global_name: e.string().allow(null).description("Global Discord name. Not unique."),
@@ -191,7 +191,7 @@ let l = {
     }).allow(null).description("Details about avatar decoration"),
     premium_type: e.number().allow(null).description("Nitro premium type")
   }).description("Discord User"),
-  s = e => e.object({
+  o = e => e.object({
     type: e.number().valid(1).required(),
     components: e.array().max(5).items(c(e))
   }),

@@ -41,20 +41,20 @@ function g(e) {
       categoryId: n,
       loadId: t
     })
-  }, [n, t]), p = u.Z.useField("categoryId") === n, g = l.toLocaleString(s.default.locale), m = (0, d.E)({
+  }, [n, t]), p = u.Z.useField("categoryId") === n, g = l.toLocaleString(o.default.locale), m = (0, d.E)({
     categoryId: n
   });
-  return (0, r.jsxs)(o.P3F, {
+  return (0, r.jsxs)(s.P3F, {
     onClick: c,
     className: a()(f.category, {
       [f.selected]: p
     }),
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(s.Text, {
       className: f.name,
       variant: "text-sm/medium",
       color: "header-primary",
       children: m
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(s.Text, {
       className: f.count,
       variant: "text-sm/normal",
       color: "text-muted",

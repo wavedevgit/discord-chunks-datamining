@@ -20,7 +20,7 @@ class g extends(r = Chunk442837.ZP.Store) {
   }
   isVisible(e) {
     if (null == e) return;
-    let t = s.Z.getMemberCount(e.id);
+    let t = o.Z.getMemberCount(e.id);
     return !h.has(e.id) && null != t && t >= d.U3 && u.Z.can(p.Plq.ADMINISTRATOR, e) && !e.features.has(p.GuildFeatures.COMMUNITY)
   }
 }(i = "displayName") in g ? Object.defineProperty(g, i, {

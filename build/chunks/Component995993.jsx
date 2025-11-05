@@ -1,7 +1,7 @@
 /** Chunk was on 56710 **/
 /** chunk id: 995993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => E
+  m: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,19 +25,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk885525 = require("./885525.js");
 
-function E(e) {
+function x(e) {
   let {
     guild: t,
-    selected: E
-  } = e, x = (0, p.Z)(t), S = (0, u.Nj)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), I = (0, l.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), P = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, v.W.GUILD_ONBOARDING_QUESTION)), N = I.length > b.Cb, Z = (0, l.e7)([d.Z, g.ZP], () => {
+    selected: x
+  } = e, E = (0, p.Z)(t), S = (0, u.Nj)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), I = (0, l.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), P = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, v.W.GUILD_ONBOARDING_QUESTION)), N = I.length > b.Cb, Z = (0, l.e7)([d.Z, g.ZP], () => {
     let e = d.Z.lastFetchedAt(t.id),
       n = g.ZP.lastMessageId(t.id, v.W.GUILD_ONBOARDING_QUESTION);
     if (null == n) returnfalse;
     let r = m.default.extractTimestamp(n);
     return null != e && e > r
   }), w = i.useCallback(() => {
-    (0, f.uL)(y.Z5c.CHANNEL(t.id, x ? O.oC.CUSTOMIZE_COMMUNITY : O.oC.CHANNEL_BROWSER))
-  }, [t.id, x]), T = i.useCallback(e => {
+    (0, f.uL)(y.Z5c.CHANNEL(t.id, E ? O.oC.CUSTOMIZE_COMMUNITY : O.oC.CHANNEL_BROWSER))
+  }, [t.id, E]), T = i.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -76,7 +76,7 @@ function E(e) {
       }
     })
   }, [t]), A = null;
-  return S && !P && !N || E || Z || (A = (0, r.jsx)(s.IGR, {
+  return S && !P && !N || x || Z || (A = (0, r.jsx)(s.IGR, {
     color: a.Z.colors.BADGE_BRAND_BG.css,
     text: j.intl.string(j.t.y2b7CA),
     className: C.newChannel
@@ -87,8 +87,8 @@ function E(e) {
       color: "currentColor",
       className: e
     }),
-    text: x ? j.intl.string(j.t.h9mGOP) : j.intl.string(j.t.et6wav),
-    selected: E,
+    text: E ? j.intl.string(j.t.h9mGOP) : j.intl.string(j.t.et6wav),
+    selected: x,
     onClick: w,
     onContextMenu: T,
     trailing: A

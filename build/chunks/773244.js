@@ -19,10 +19,10 @@ function d(e) {
     path: i,
     paramsBuilder: d,
     search: p
-  } = e, f = (0, l.e7)([s.default], () => {
+  } = e, f = (0, l.e7)([o.default], () => {
     var e;
-    return null != (e = s.default.getFingerprint()) ? e : s.default.getId()
-  }), h = (0, l.e7)([o.Z], () => o.Z.getState(i), [i]), g = r.useMemo(() => null == d ? {
+    return null != (e = o.default.getFingerprint()) ? e : o.default.getId()
+  }), h = (0, l.e7)([s.Z], () => s.Z.getState(i), [i]), g = r.useMemo(() => null == d ? {
     path: i,
     fingerprint: f,
     search: p

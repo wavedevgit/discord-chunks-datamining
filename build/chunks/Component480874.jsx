@@ -59,16 +59,16 @@ function N() {
   let w = Chunk647438.useCallback(e => {
       var n, i;
       let {
-        row: o
-      } = e, s = t[o], c = null == (i = t[o + 1]) || null == (n = i.channel) ? true : n.id, u = s.channel.id;
+        row: s
+      } = e, o = t[s], c = null == (i = t[s + 1]) || null == (n = i.channel) ? true : n.id, u = o.channel.id;
       return (0, r.jsx)(v.Z, {
-        index: o,
+        index: s,
         className: a()({
           [T.selected]: null != P && P === u,
           [T.siblingSelected]: null != P && P === c
         }),
-        channel: s.channel,
-        user: s.user,
+        channel: o.channel,
+        user: o.user,
         hasSingleMessageRequest: l
       }, u)
     }, [exports, Chunk120356, P]),

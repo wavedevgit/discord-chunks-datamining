@@ -34,25 +34,25 @@ function f(e) {
     (0, g.Z)(E), f(true)
   };
   return n ? (0, r.jsx)(c.Z, {
-    title: m.intl.string(m.t.csrAMJ),
-    subtitle: m.intl.string(m.t["m1+IBn"]),
-    buttonText: m.intl.string(m.t.fIv16B),
-    onButtonClick: () => (0, u.uL)(p.Z5c.CHANNEL(E))
+    title: p.intl.string(p.t.csrAMJ),
+    subtitle: p.intl.string(p.t["m1+IBn"]),
+    buttonText: p.intl.string(p.t.fIv16B),
+    onButtonClick: () => (0, u.uL)(m.Z5c.CHANNEL(E))
   }) : _ ? (0, r.jsx)(c.Z, {
-    title: m.intl.string(m.t["dAfGb+"]),
-    buttonText: m.intl.string(m.t["uJWIj/"]),
+    title: p.intl.string(p.t["dAfGb+"]),
+    buttonText: p.intl.string(p.t["uJWIj/"]),
     onButtonClick: v,
     image: (0, r.jsx)(l.Om, {
-      alt: m.intl.string(m.t["dAfGb+"])
+      alt: p.intl.string(p.t["dAfGb+"])
     })
   }) : null != x ? (0, r.jsx)(c.Z, {
-    title: m.intl.string(m.t["PCgG3+"]),
-    subtitle: m.intl.string(m.t.tQpeA3),
-    buttonText: m.intl.string(m.t["uJWIj/"]),
+    title: p.intl.string(p.t["PCgG3+"]),
+    subtitle: p.intl.string(p.t.tQpeA3),
+    buttonText: p.intl.string(p.t["uJWIj/"]),
     onButtonClick: v
   }) : (0, r.jsx)(c.Z, {
-    title: m.intl.string(m.t["0c8+5n"]),
-    subtitle: m.intl.string(m.t.ULTCBE),
+    title: p.intl.string(p.t["0c8+5n"]),
+    subtitle: p.intl.string(p.t.ULTCBE),
     loading: true
   })
 }

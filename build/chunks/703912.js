@@ -62,7 +62,7 @@ let N = "CachedTokens",
     "1273616940451102832": new Chunk63023.Z(2, +Chunk70956.Z.Millis.MINUTE)
   };
 async function P(e, t, n) {
-  let r, l, o, s, c, {
+  let r, l, s, o, c, {
     client_id: u,
     response_type: d = "code",
     redirect_uri: E,
@@ -104,8 +104,8 @@ async function P(e, t, n) {
     l = e(t) || e(t = _.ZP.createFromServer(await (0, m.UM)(u, M))) ? i.Y.USER_INSTALL : i.Y.GUILD_INSTALL
   }
   try {
-    [o, {
-      disclosures: s,
+    [s, {
+      disclosures: o,
       allAcked: c
     }] = await Promise.all([(0, h.Ww)({
       clientId: u,
@@ -126,7 +126,7 @@ async function P(e, t, n) {
       errorCode: C.lTL.OAUTH2_ERROR
     }, "OAuth2 Authorization Error: ".concat((null == e ? true : e.message) || "Unknown Error"))
   }
-  if (w === g.s.NONE && null != o && o.authorized && c) try {
+  if (w === g.s.NONE && null != s && s.authorized && c) try {
     return (await (0, h.Iq)({
       authorize: true,
       clientId: u,
@@ -147,12 +147,12 @@ async function P(e, t, n) {
       errorCode: C.lTL.OAUTH2_ERROR
     }, "OAuth2 Authorize Error: ".concat((null == e ? true : e.message) || "Unknown Error"))
   }
-  null == n || n(o.application, Z, D);
+  null == n || n(s.application, Z, D);
   let G = y.Hn;
   try {
     G = a.vB(null != x ? x : 0)
   } catch (e) {}
-  if (null != o.integration_type && Object.values(i.Y).includes(o.integration_type) && (r = new Map).set(o.integration_type, o), null != j[o.application.id] && (await j[o.application.id].process(), null == M ? true : M.aborted)) throw new v.Z({
+  if (null != s.integration_type && Object.values(i.Y).includes(s.integration_type) && (r = new Map).set(s.integration_type, s), null != j[s.application.id] && (await j[s.application.id].process(), null == M ? true : M.aborted)) throw new v.Z({
     errorCode: C.lTL.UNKNOWN_ERROR
   }, "Request aborted");
   return t({
@@ -169,7 +169,7 @@ async function P(e, t, n) {
     channelId: Z,
     prompt: w,
     disableGuildSelect: L,
-    disclosures: s,
+    disclosures: o,
     integrationType: l,
     pid: D,
     signal: M
@@ -183,7 +183,7 @@ function x(e, t) {
   if (e.authorization.authing) throw new v.Z({
     errorCode: C.lTL.INVALID_COMMAND
   }, "Already authenticating");
-  return e.authorization.authing = true, o.tn.get({
+  return e.authorization.authing = true, s.tn.get({
     url: C.ANM.OAUTH2_CURRENT_AUTH,
     headers: {
       Authorization: "Bearer ".concat(t)
@@ -201,8 +201,8 @@ function x(e, t) {
     if (e.application.id !== r.id) throw new v.Z({
       errorCode: C.lTL.INVALID_CLIENTID
     }, "Application does not match the connection's");
-    let o = b.default.getCurrentUser();
-    if (null == o || !i || o.id !== i.id) throw new v.Z({
+    let s = b.default.getCurrentUser();
+    if (null == s || !i || s.id !== i.id) throw new v.Z({
       errorCode: C.lTL.INVALID_TOKEN
     }, "Token does not match current user");
     return e.authorization.scopes = [...e.authorization.scopes, ...l, I.wE], e.authorization.accessToken = t, e.authorization.expires = new Date(a), d.Z.dispatch({
@@ -229,18 +229,18 @@ function A(e, t) {
           socket: i,
           signal: a,
           args: {
-            access_token: o
+            access_token: s
           }
         } = n;
-        if (null == o && i.transport === I.He.IPC) {
+        if (null == s && i.transport === I.He.IPC) {
           let n = i.application.id;
           if (null == n) throw new v.Z({
             errorCode: C.lTL.INVALID_COMMAND
           }, "No application.");
-          let s = l.x.IDENTIFY,
+          let o = l.x.IDENTIFY,
             c = () => P({
               client_id: n,
-              scope: s,
+              scope: o,
               response_type: "token",
               signal: a,
               isSocketRpcPrivateScope: false
@@ -266,23 +266,23 @@ function A(e, t) {
                 }, u.K.set(N, l)
               }(n, l.access_token, l.scope, l.expires_in), x(i, l.access_token)
             });
-          return null != (o = function(e, t) {
+          return null != (s = function(e, t) {
             let n = u.K.get(N);
             if (null != n && null != n[e]) {
               let r = n[e];
               if (!(r.scope !== t || r.expires <= Date.now())) return r.accessToken;
               delete n[e], u.K.set(N, n)
             }
-          }(n, s)) ? x(i, o).catch(() => {
+          }(n, o)) ? x(i, s).catch(() => {
             var e;
             let t = null != (e = u.K.get(N)) ? e : {};
             return delete t[n], u.K.set(N, t), c()
           }) : c()
         }
-        if (null == o) throw new v.Z({
+        if (null == s) throw new v.Z({
           errorCode: C.lTL.INVALID_TOKEN
         }, "No access token provided");
-        return x(i, o)
+        return x(i, s)
       }
     }),
     [C.Etm.AUTHORIZE]: {
@@ -304,22 +304,22 @@ function A(e, t) {
         if (r.authorization.authing = true, "token" === l.response_type) throw r.authorization.authing = false, new v.Z({
           errorCode: C.lTL.INVALID_COMMAND
         }, 'Authorization response_type "token" is not supported');
-        let o = r.authorization.scopes.includes(I.cE);
-        if (!o && r.application.id !== a) throw r.authorization.authing = false, new v.Z({
+        let s = r.authorization.scopes.includes(I.cE);
+        if (!s && r.application.id !== a) throw r.authorization.authing = false, new v.Z({
           errorCode: C.lTL.INVALID_CLIENTID
         }, "Application does not match the connection's");
-        let s = l.scopes || l.scope;
+        let o = l.scopes || l.scope;
         return delete l.scopes, P(T(S({}, l), {
-          scope: s,
+          scope: o,
           signal: i,
-          isSocketRpcPrivateScope: o
+          isSocketRpcPrivateScope: s
         }), e, t).then(e => {
           if (r.authorization.authing = false, null == e) throw new v.Z({
             errorCode: C.lTL.UNKNOWN_ERROR
           }, "Unknown error occurred");
           let t = new URL(e),
             n = t.searchParams.get("code");
-          if (o) return {
+          if (s) return {
             code: n,
             location: e
           };

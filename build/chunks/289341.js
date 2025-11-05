@@ -22,7 +22,7 @@ function g(e) {
     match: g
   } = e, m = null != (n = (0, u.DR)()) ? n : [], {
     analyticsLocations: _
-  } = (0, s.ZP)([...m, o.Z.ACTIVITY_DETAIL_PAGE]), {
+  } = (0, o.ZP)([...m, s.Z.ACTIVITY_DETAIL_PAGE]), {
     applicationId: b
   } = g.params, [E] = (0, c.Z)([b]), O = null == E || null == (t = E.bot) ? true : t.id, y = (0, i.e7)([d.default], () => d.default.getCurrentUser());
   return r.useEffect(() => {

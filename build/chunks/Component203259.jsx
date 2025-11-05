@@ -18,14 +18,14 @@ function p(e) {
     onOpenClipsGallery: t,
     clipIconRef: n,
     lastClipsSession: p
-  } = e, f = (0, l.e7)([o.Z], () => {
+  } = e, f = (0, l.e7)([s.Z], () => {
     var e;
-    let t = null == (e = o.Z.getLastClipsSession()) ? true : e.newClipIds;
-    return null == t ? null : o.Z.getClips().filter(e => t.includes(e.id))[0]
+    let t = null == (e = s.Z.getLastClipsSession()) ? true : e.newClipIds;
+    return null == t ? null : s.Z.getClips().filter(e => t.includes(e.id))[0]
   }), h = (0, u.l)(f), g = i.useCallback(() => {
     (0, c.eL)()
   }, []);
-  return null == f ? null : f.type !== s.NJ.SCREENSHOT && f.type !== s.NJ.VOICE_CLIP && null != h ? (0, r.jsx)(a.Mb, {
+  return null == f ? null : f.type !== o.NJ.SCREENSHOT && f.type !== o.NJ.VOICE_CLIP && null != h ? (0, r.jsx)(a.Mb, {
     targetElementRef: {
       current: n
     },

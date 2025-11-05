@@ -20,13 +20,13 @@ function u(e) {
   return (0, r.jsx)(i.Z, {
     image: c,
     guild: t,
-    onDismissed: () => n(o.L.UNKNOWN),
+    onDismissed: () => n(s.L.UNKNOWN),
     onClick: () => {
-      open(l.Z.getArticleURL(a.BhN.CONNECTION_DETAILS)), n(o.L.UNKNOWN)
+      open(l.Z.getArticleURL(a.BhN.CONNECTION_DETAILS)), n(s.L.UNKNOWN)
     },
-    title: s.intl.string(s.t.YMgaJt),
-    message: s.intl.string(s.t["AV/9eW"]),
-    cta: s.intl.string(s.t.hvVgAZ),
+    title: o.intl.string(o.t.YMgaJt),
+    message: o.intl.string(o.t["AV/9eW"]),
+    cta: o.intl.string(o.t.hvVgAZ),
     trackingSource: a.PsQ.LINKED_ROLES_ADMIN_NUX,
     type: a.vID.LINKED_ROLES_ADMIN
   })

@@ -103,7 +103,7 @@ function O(e) {
       })
   }
   let w = "" !== C.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
-      children: ["\xa0", (0, r.jsx)(s.Anchor, {
+      children: ["\xa0", (0, r.jsx)(o.Anchor, {
         className: _.termsApplyAnchor,
         href: p.Z.getArticleURL(C.helpArticleId),
         children: m.intl.string(m.t["sBp+u0"])
@@ -143,7 +143,7 @@ function O(e) {
     changeLogId: P,
     button: () => {
       let e = Date.now();
-      return (0, r.jsx)(o.zxk, {
+      return (0, r.jsx)(s.zxk, {
         variant: "expressive",
         size: "md",
         onClick: () => {

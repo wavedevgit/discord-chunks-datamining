@@ -24,18 +24,18 @@ function g(t) {
     claimRequired: u,
     onSuccess: m,
     onClose: d
-  } = t, [g, S] = l.useState(), [y, v] = l.useState(""), [N, b] = l.useState(""), [C, j] = l.useState(false);
+  } = t, [g, S] = l.useState(), [y, v] = l.useState(""), [N, b] = l.useState(""), [j, C] = l.useState(false);
   l.useEffect(() => c.Z.flowStep(f.MK.ANY, f.mx.CLAIM_ACCOUNT), []);
   let O = async t => {
-    t.preventDefault(), j(true), S(""), b("");
+    t.preventDefault(), C(true), S(""), b("");
     try {
       await (0, s.S2)({
         email: e,
         password: y
-      }), j(false), m()
+      }), C(false), m()
     } catch (t) {
       var n, r;
-      (null == t || null == (n = t.body) ? true : n.email) && S(t.body.email), (null == t || null == (r = t.body) ? true : r.password) && b(t.body.password), j(false)
+      (null == t || null == (n = t.body) ? true : n.email) && S(t.body.email), (null == t || null == (r = t.body) ? true : r.password) && b(t.body.password), C(false)
     }
   };
   return (0, r.jsxs)("div", {
@@ -81,7 +81,7 @@ function g(t) {
             variant: "primary",
             fullWidth: true,
             type: "submit",
-            loading: C,
+            loading: j,
             disabled: 0 === e.length || 0 === y.length
           }), u && (0, r.jsx)("div", {
             className: _.logoutButton,

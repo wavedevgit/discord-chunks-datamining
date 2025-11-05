@@ -2,10 +2,10 @@
 /** chunk id: 230224, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  GB: () => S,
+  GB: () => N,
   JI: () => y,
   UM: () => A,
-  V6: () => N,
+  V6: () => O,
   WT: () => j,
   X7: () => b,
   jq: () => C,
@@ -38,22 +38,22 @@ let x = 100,
   v = e => e.target_type === g.Iq.STREAM && null != e.target_user,
   j = e => {
     var t;
-    return (null == (t = e.channel) ? true : t.type) === p.d4z.GROUP_DM
+    return (null == (t = e.channel) ? true : t.type) === m.d4z.GROUP_DM
   },
   b = e => null == e.channel && null == e.guild && null != e.inviter,
-  I = e => e.state === p.r2o.ACCEPTED,
+  I = e => e.state === m.r2o.ACCEPTED,
   y = e => {
     let {
       guild_scheduled_event: t
     } = e;
     return null != t
   },
-  O = e => !y(e) && (!!b(e) || null != e.inviter && !I(e) && !(e => {
+  S = e => !y(e) && (!!b(e) || null != e.inviter && !I(e) && !(e => {
     var t;
     let n = E(e);
     return (null != (t = null == n ? true : n.memberCount) ? t : 0) > x
   })(e)),
-  S = e => {
+  N = e => {
     let {
       guild: t,
       user: n,
@@ -75,14 +75,14 @@ let x = 100,
     }) : null
   };
 
-function N(e) {
+function O(e) {
   var t;
   let {
     invite: n,
     textClassName: i,
     className: s
   } = e, a = E(n);
-  return null == a || O(n) || (null == n || null == (t = n.guild) ? true : t.id) === m.fQ ? null : (0, r.jsx)(o.EJ, {
+  return null == a || S(n) || (null == n || null == (t = n.guild) ? true : t.id) === p.fQ ? null : (0, r.jsx)(o.EJ, {
     className: l()(_.activityCount, s),
     online: a.onlineCount,
     total: a.memberCount,
@@ -95,7 +95,7 @@ function C(e) {
   let {
     invite: t,
     showBigUserIcon: n
-  } = e, s = i.useMemo(() => n ? null : v(t) && null != t.target_user ? d.ZP.getUserAvatarURL(t.target_user) : O(t) && null != t.inviter ? d.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), l = f.intl.string(f.t["3rE1P8"]);
+  } = e, s = i.useMemo(() => n ? null : v(t) && null != t.target_user ? d.ZP.getUserAvatarURL(t.target_user) : S(t) && null != t.inviter ? d.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), l = f.intl.string(f.t["3rE1P8"]);
   if (j(t)) {
     var c, u;
     l = (null == (c = t.channel) ? true : c.name) != null && (null == (u = t.inviter) ? true : u.username) != null ? f.intl.format(f.t.Lu4h18, {
@@ -103,7 +103,7 @@ function C(e) {
     }) : f.intl.string(f.t.OsdY8B)
   } else v(t) && null != t.target_user ? l = f.intl.formatToPlainString(f.t.x2L32Q, {
     username: t.target_user.username
-  }) : I(t) ? l = f.intl.string(f.t["FDsl+J"]) : O(t) && null != t.inviter && (l = f.intl.format(f.t.spU2mI, {
+  }) : I(t) ? l = f.intl.string(f.t["FDsl+J"]) : S(t) && null != t.inviter && (l = f.intl.format(f.t.spU2mI, {
     username: h.ZP.getFormattedName(t.inviter)
   }));
   return (0, r.jsxs)("div", {

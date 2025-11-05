@@ -39,8 +39,8 @@ class h extends Chunk317770.Z {
         e.userId === n && (null == (t = u.Z.getChannel(e.channelId)) ? true : t.isGuildStageVoice()) && (0, p.gf)(e) !== p.xO.ON_STAGE && (this.handleStopStream(e), this.handleStopUserVideo())
       })
     }), f(this, "handleStopStream", e => {
-      let t = s.Z.getActiveStreamForUser(e.userId, e.guildId);
-      null != t && (0, l.g)((0, o.V9)(t), false)
+      let t = o.Z.getActiveStreamForUser(e.userId, e.guildId);
+      null != t && (0, l.g)((0, s.V9)(t), false)
     }), f(this, "handleStopUserVideo", () => {
       d.Z.isVideoEnabled() && i.Z.setVideoEnabled(false)
     })

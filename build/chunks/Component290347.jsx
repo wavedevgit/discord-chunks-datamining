@@ -76,11 +76,11 @@ let P = [],
       subHeader: n,
       imageSrc: i,
       tagText: l,
-      wideStyle: o
+      wideStyle: s
     } = e;
     return (0, r.jsxs)("div", {
       className: a()(T.featureCard, {
-        [T.wideStyle]: o
+        [T.wideStyle]: s
       }),
       children: [null != l ? (0, r.jsx)(x, {
         tagText: l,
@@ -88,7 +88,7 @@ let P = [],
       }) : null, (0, r.jsx)("img", {
         alt: "",
         className: a()(T.featureCardImg, {
-          [T.wideStyle]: o
+          [T.wideStyle]: s
         }),
         src: i
       }), (0, r.jsxs)("div", {
@@ -126,21 +126,21 @@ function Z(e) {
   } = e, {
     onClose: V,
     transitionState: F
-  } = l, z = (0, m.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), [q, K] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(q), el = i.useRef(Q), ea = i.useRef(X), eo = i.useRef(ee), es = i.useRef(en), [ec, eu] = i.useState(P), ed = i.useRef(false);
+  } = l, z = (0, m.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), [q, K] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(q), el = i.useRef(Q), ea = i.useRef(X), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(P), ed = i.useRef(false);
 
   function ep() {
     let e = Date.now(),
       t = e - ei.current,
       n = el.current,
       r = ea.current;
-    return eo.current && (J(n += t), es.current || $(r += t)), K(e), [n, r]
+    return es.current && (J(n += t), eo.current || $(r += t)), K(e), [n, r]
   }
   return (0, f.Z)({
-    type: o.ImpressionTypes.MODAL,
-    name: o.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
+    type: s.ImpressionTypes.MODAL,
+    name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
     properties: {
       component_id: t,
-      component_type: s.I.ANNOUNCEMENT_MODAL
+      component_type: o.I.ANNOUNCEMENT_MODAL
     }
   }), i.useEffect(() => {
     let e = async () => {
@@ -170,7 +170,7 @@ function Z(e) {
       URL.revokeObjectURL(e.src)
     })
   }, [ec]), i.useEffect(() => {
-    ei.current = q, el.current = Q, ea.current = X, eo.current = ee, es.current = en
+    ei.current = q, el.current = Q, ea.current = X, es.current = ee, eo.current = en
   }, [q, Q, X, ee, en]), i.useEffect(() => () => {
     if ("video" === x.type || "embed" === x.type) {
       let [e, t] = ep();

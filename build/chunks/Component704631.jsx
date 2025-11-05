@@ -19,12 +19,12 @@ function u(e) {
   } = e;
   return (0, r.jsx)(l.Z, {
     guild: t,
-    onDismissed: () => u(o.L.UNKNOWN),
+    onDismissed: () => u(s.L.UNKNOWN),
     onClick: function() {
       (0, i.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.resolve().then(n.bind(n, 650233));
+        } = await Promise.all([n.e("7082"), n.e("60903")]).then(n.bind(n, 650233));
         return t => (0, r.jsx)(e, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -45,8 +45,8 @@ function u(e) {
         }({}, t))
       })
     },
-    message: s.intl.string(s.t["1+hiP6"]),
-    cta: s.intl.string(s.t.hvVgAZ),
+    message: o.intl.string(o.t["1+hiP6"]),
+    cta: o.intl.string(o.t.hvVgAZ),
     trackingSource: a.PsQ.HUB_LINK_NOTICE,
     type: a.vID.HUB_LINK,
     image: c

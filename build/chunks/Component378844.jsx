@@ -48,12 +48,12 @@ let O = e => {
     notClaimed: v,
     notEmailVerified: j,
     notPhoneVerified: C,
-    newAccount: E,
-    newMember: x
+    newAccount: x,
+    newMember: E
   } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, I = null, P = null;
-  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlG), P = m.intl.string(m.t.fiNVin)) : C ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOv"])) : j ? (I = m.intl.string(m.t.vdSOpz), P = m.intl.string(m.t.lm1UKt)) : x ? (I = m.intl.formatToPlainString(m.t.v1ktYb, {
+  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlG), P = m.intl.string(m.t.fiNVin)) : C ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOv"])) : j ? (I = m.intl.string(m.t.vdSOpz), P = m.intl.string(m.t.lm1UKt)) : E ? (I = m.intl.formatToPlainString(m.t.v1ktYb, {
     min: f.YeM.MEMBER_AGE
-  }), P = m.intl.string(m.t.BddRzS)) : E && (I = m.intl.formatToPlainString(m.t.sncw41, {
+  }), P = m.intl.string(m.t.BddRzS)) : x && (I = m.intl.formatToPlainString(m.t.sncw41, {
     min: f.YeM.ACCOUNT_AGE
   }), P = m.intl.string(m.t.BddRzS))), null == S || null == I) ? null : (0, i.jsxs)(a.VqE, {
     className: b.container,

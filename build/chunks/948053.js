@@ -68,7 +68,7 @@ let u = {
     }
   },
   async gravityJoinGuild(e, t) {
-    if ((0, s.rK)("gravityJoinGuild") && 0 !== e.length) try {
+    if ((0, o.rK)("gravityJoinGuild") && 0 !== e.length) try {
       return await r.tn.post({
         url: c.ANM.GRAVITY_JOIN_GUILD,
         body: {
@@ -82,7 +82,7 @@ let u = {
     }
   },
   async fetchForNotification(e, t) {
-    if ((0, s.rK)("fetchInitial")) try {
+    if ((0, o.rK)("fetchInitial")) try {
       let n = await r.tn.post({
         url: c.ANM.GRAVITY_ITEMS_HYDRATE,
         body: {
@@ -106,16 +106,16 @@ let u = {
     }
   },
   fetchForStatusNotification(e) {
-    (0, s.rK)("fetchInitialStatus") && i.Z.dispatch({
+    (0, o.rK)("fetchInitialStatus") && i.Z.dispatch({
       type: "LOAD_ICYMI_FROM_NOTIFICATION",
       customStatusItem: e
     })
   },
   async fetchHydrated(e, t, n) {
-    if (!(0, s.rK)("fetchHydrated")) return;
+    if (!(0, o.rK)("fetchHydrated")) return;
     let {
       contentGenerationEnabled: l
-    } = (0, o.q3)("fetchHydrated", false), {
+    } = (0, s.q3)("fetchHydrated", false), {
       messageItems: u,
       summaryItems: d,
       activityItems: p,
@@ -160,7 +160,7 @@ let u = {
       })
     } catch (r) {
       a.Z.captureException(r);
-      let n = (0, s.y_)(e, t);
+      let n = (0, o.y_)(e, t);
       i.Z.dispatch({
         type: "LOAD_ICYMI_HYDRATED_FAILED",
         hydrationId: n

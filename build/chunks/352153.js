@@ -27,7 +27,7 @@ function g(e) {
     allUnreadItemsHydrated: O
   } = (0, p.Z)(), y = (0, i.e7)([c.Z], () => c.Z.getVersion(), []), v = (0, i.e7)([c.Z], () => !(c.Z.isFirstPageHydrated() && y > 0));
   r.useEffect(() => {
-    null != c.Z.getLoadId() && o.m.trackFeedShown({
+    null != c.Z.getLoadId() && s.m.trackFeedShown({
       homeSessionId: "gravity"
     })
   }, [y]);
@@ -45,7 +45,7 @@ function g(e) {
       let {
         item: t
       } = e;
-      return !s.X.has(t.data.kind)
+      return !o.X.has(t.data.kind)
     }).map(e => {
       let {
         item: t
@@ -56,7 +56,7 @@ function g(e) {
   r.useEffect(() => {
     if (I || v || null == x || null == P || P === x) return;
     let e = Date.now();
-    e - j > h.C && (a.Z.gravityScrollEvent(e), o.m.trackFeedFirstScrollStarted())
+    e - j > h.C && (a.Z.gravityScrollEvent(e), s.m.trackFeedFirstScrollStarted())
   }, [I, j, x, P, N, v]);
   let A = r.useCallback(e => {
       var t, n;
@@ -77,16 +77,16 @@ function g(e) {
         })
       });
       let l = (0, d.FJ)(r),
-        s = Date.now();
+        o = Date.now();
       for (let e = l.length - 1; e >= 0; e--) {
         let t = l[e];
         null != t && i.push({
           id: t.id,
           type: (0, u.v$)(t),
-          timestamp: s++
+          timestamp: o++
         })
       }
-      i.length > 0 && a.Z.ackGravityItems(i, true), o.m.trackItemShortImpression(r, l.map(e => ({
+      i.length > 0 && a.Z.ackGravityItems(i, true), s.m.trackItemShortImpression(r, l.map(e => ({
         id: e.id,
         type: (0, u.v$)(e)
       })), y)
@@ -97,14 +97,14 @@ function g(e) {
       } = e;
       if (0 === t.length) return;
       let n = (0, d.FJ)(t);
-      o.m.trackItemLongImpression(t, n.map(e => ({
+      s.m.trackItemLongImpression(t, n.map(e => ({
         id: e.id,
         type: (0, u.v$)(e)
       })), y), a.Z.triggerItemsLongImpression(t.filter(e => {
         let {
           item: t
         } = e;
-        return !s.X.has(t.data.kind)
+        return !o.X.has(t.data.kind)
       }).map(e => {
         var t, n;
         let {
@@ -130,7 +130,7 @@ function g(e) {
         let {
           item: t
         } = e;
-        return !s.X.has(t.data.kind)
+        return !o.X.has(t.data.kind)
       }).map(e => {
         var t, n;
         let {

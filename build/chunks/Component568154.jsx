@@ -1,13 +1,12 @@
-/** Chunk was on 3688 **/
+/** Chunk was on 12581 **/
 /** chunk id: 568154, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => y,
   h: () => w
 }), require("./388685.js");
 var s, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  h = require.n(Chunk120356),
   Chunk477690 = require("./477690.js"),
   Chunk877604 = require("./877604.jsx"),
   Chunk624138 = require("./624138.js"),
@@ -24,22 +23,22 @@ function m(t, e, i) {
     writable: true
   }) : t[e] = i, t
 }
-let v = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE);
+let g = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE);
 
-function g(t, e) {
+function v(t, e) {
   let {
     innerWidth: i,
     innerHeight: s
   } = window;
   if (0 === t || 0 === e) return null;
   let n = e / t,
-    a = i,
-    h = Math.round(i * n);
-  return h < s && (h = s, a = Math.round(s * (n = t / e))), {
+    r = i,
+    a = Math.round(i * n);
+  return a < s && (a = s, r = Math.round(s * (n = t / e))), {
     naturalWidth: t,
     naturalHeight: e,
-    width: a,
-    height: h
+    width: r,
+    height: a
   }
 }
 
@@ -49,26 +48,26 @@ function w(t) {
     children: i
   } = t, [{
     width: s,
-    height: h
-  }, o] = a.useState({
+    height: a
+  }, l] = r.useState({
     width: 0,
     height: 0,
     naturalHeight: 0,
     naturalWidth: 0
   });
-  return a.useEffect(() => {
+  return r.useEffect(() => {
     function t() {
-      o(t => {
+      l(t => {
         let {
           naturalWidth: e,
           naturalHeight: i
-        } = t, s = g(e, i);
+        } = t, s = v(e, i);
         return null != s ? s : t
       })
     }
     return window.addEventListener("resize", t), () => window.removeEventListener("reslize", t)
   }, []), (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(l.Z, {
+    children: [(0, n.jsx)(o.Z, {
       className: f.rightSplit,
       onLoad: function(t) {
         let {
@@ -76,14 +75,14 @@ function w(t) {
         } = t, {
           naturalWidth: i,
           naturalHeight: s
-        } = e, n = g(i, s);
-        null != n && o(n)
+        } = e, n = v(i, s);
+        null != n && l(n)
       },
       src: e,
       width: s,
-      height: h
+      height: a
     }), (0, n.jsx)("div", {
-      className: r()(f.leftSplit, {
+      className: h()(f.leftSplit, {
         [f.nonEmbeddedLeftSplit]: true
       }),
       children: i
@@ -95,7 +94,7 @@ class b extends(s = Chunk647438.PureComponent) {
     window.removeEventListener("resize", this.handleResize)
   }
   calculateShowWaveAnimation() {
-    return window.innerWidth > v
+    return window.innerWidth > g
   }
   renderSplashArt() {
     let {
@@ -106,7 +105,7 @@ class b extends(s = Chunk647438.PureComponent) {
       height: s
     } = this.state;
     return null != module ? (0, Chunk951288.jsx)(Chunk877604.Z, {
-      className: r()(Chunk771858.rightSplit, {
+      className: h()(Chunk771858.rightSplit, {
         [Chunk771858.embedded]: exports
       }),
       src: module,
@@ -122,7 +121,7 @@ class b extends(s = Chunk647438.PureComponent) {
       embedded: i
     } = this.props, {
       showWaveAnimation: s,
-      splashLoaded: a
+      splashLoaded: r
     } = this.state;
     return s ? (0, Chunk951288.jsx)(Chunk686694.Z, {
       embedded: require,
@@ -139,18 +138,18 @@ class b extends(s = Chunk647438.PureComponent) {
       waveState: e,
       showLogo: i,
       logoClassName: s,
-      embedded: h
+      embedded: a
     } = this.props, {
-      showWaveAnimation: o
+      showWaveAnimation: l
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [this.renderWave(), (0, Chunk951288.jsxs)("div", {
-        className: r()(Chunk771858.leftSplit, {
+        className: h()(Chunk771858.leftSplit, {
           [Chunk771858.nonEmbeddedLeftSplit]: Chunk120356
         }),
         children: [require ? (0, Chunk951288.jsx)(Chunk133853.Z, {
           show: !Chunk477690 || exports === Chunk898625.hO.ENTERED && exports !== Chunk898625.hO.FILLING,
-          className: r()(Chunk771858.logo, s)
+          className: h()(Chunk771858.logo, s)
         }) : null, module]
       })]
     })
@@ -160,7 +159,7 @@ class b extends(s = Chunk647438.PureComponent) {
       className: t
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
-      className: r()(module, Chunk771858.wrapper),
+      className: h()(module, Chunk771858.wrapper),
       children: [this.renderSplashArt(), this.renderContent()]
     })
   }
@@ -176,7 +175,7 @@ class b extends(s = Chunk647438.PureComponent) {
       let {
         naturalWidth: t,
         naturalHeight: e
-      } = this.state, i = g(t, e), s = this.calculateShowWaveAnimation();
+      } = this.state, i = v(t, e), s = this.calculateShowWaveAnimation();
       null != i ? this.setState(function(t, e) {
         return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
           var i = Object.keys(t);
@@ -210,7 +209,7 @@ class b extends(s = Chunk647438.PureComponent) {
       } = t, {
         naturalWidth: i,
         naturalHeight: s
-      } = e, n = g(i, s);
+      } = e, n = v(i, s);
       null != n && this.setState(n), this.setState({
         splashLoaded: true
       }), window.removeEventListener("resize", this.handleResize), window.addEventListener("resize", this.handleResize)
@@ -219,5 +218,4 @@ class b extends(s = Chunk647438.PureComponent) {
 }
 m(b, "defaultProps", {
   embedded: false
-});
-let y = 12633 == require.j ? b : null
+})

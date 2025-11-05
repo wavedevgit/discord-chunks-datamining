@@ -28,7 +28,7 @@ let v = Math.ceil(Math.sqrt(115200)),
     var t, n;
     let {
       selected: l
-    } = e, C = (0, s.JA)("quests"), S = i.useRef(null), {
+    } = e, C = (0, o.JA)("quests"), S = i.useRef(null), {
       shouldShowPopover: T,
       shouldShowGradientAndBadge: N,
       dismissContent: j
@@ -138,12 +138,12 @@ let v = Math.ceil(Math.sqrt(115200)),
           text: O.intl.string(O.t.JALI2K)
         }, C), n = n = {
           children: N && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(o.animated.div, {
+            children: [(0, r.jsx)(s.animated.div, {
               className: y.shine,
               style: {
                 transform: Z.to(e => "translateX(calc(".concat(e * M, "px + ").concat(e * v, "px)) translateY(-50%) rotate(45deg)"))
               }
-            }), (0, r.jsx)(o.animated.div, {
+            }), (0, r.jsx)(s.animated.div, {
               className: y.glow,
               style: {
                 opacity: x.to({

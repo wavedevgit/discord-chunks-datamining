@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk770146 = require("./770146.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk419295 = require("./419295.js");
-class s extends Chunk647438.PureComponent {
+class o extends Chunk647438.PureComponent {
   render() {
     let {
       className: e,
@@ -25,4 +25,4 @@ class s extends Chunk647438.PureComponent {
     })
   }
 }
-let c = s
+let c = o

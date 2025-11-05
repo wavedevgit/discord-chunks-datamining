@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
 function d(e) {
   let {
     onClose: t
-  } = e, n = (0, s.F)(), i = (0, o.F)(n, a.d8), u = (0, c.Z)();
+  } = e, n = (0, o.F)(), i = (0, s.F)(n, a.d8), u = (0, c.Z)();
   return (0, r.jsxs)(l.v2r, {
     onSelect: () => {},
     navId: "devtools-popout",
@@ -30,9 +30,9 @@ function p(e) {
   let {
     className: t,
     focusSectionProps: n
-  } = e, [o, s] = i.useState(false), [c, p] = i.useState(0), f = i.useRef(null), h = e => {
+  } = e, [s, o] = i.useState(false), [c, p] = i.useState(0), f = i.useRef(null), h = e => {
     clearTimeout(c), p(setTimeout(() => {
-      s(e)
+      o(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
@@ -40,19 +40,19 @@ function p(e) {
     onMouseLeave: () => h(false),
     children: (0, r.jsx)(l.yRy, {
       targetElementRef: f,
-      shouldShow: o,
+      shouldShow: s,
       animation: l.yRy.Animation.NONE,
       position: "bottom",
       align: "right",
       autoInvert: false,
-      onRequestOpen: () => s(true),
-      onRequestClose: () => s(false),
+      onRequestOpen: () => o(true),
+      onRequestClose: () => o(false),
       renderPopout: () => (0, r.jsx)(d, {
-        onClose: () => s(false)
+        onClose: () => o(false)
       }),
       children: (e, i) => {
         let {
-          isShown: o
+          isShown: s
         } = i;
         return (0, r.jsx)(u.JO, function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -76,7 +76,7 @@ function p(e) {
           onClick: () => (0, a.d8)(),
           icon: l.Ymb,
           "aria-label": "DevTools",
-          selected: o,
+          selected: s,
           className: t
         }, n))
       }

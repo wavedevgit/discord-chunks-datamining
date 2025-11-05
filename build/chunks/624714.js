@@ -32,21 +32,21 @@ let m = {
         }
       } = e;
       (0, d.bu)(n.transport), (0, d._f)(n.application);
-      let o = n.application.id,
+      let s = n.application.id,
         p = (0, f.Z)(),
         h = null == p ? true : p.getGuildId(),
-        m = a.Z.getApplication(o);
+        m = a.Z.getApplication(s);
       if (!(0, c.yE)(null != (t = null == m ? true : m.flags) ? t : 0, g.udG.EMBEDDED_FIRST_PARTY)) throw new u.Z({
         errorCode: g.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
-      let _ = (0, l.U)(o),
+      let _ = (0, l.U)(s),
         b = {
-          activity_application_id: o,
+          activity_application_id: s,
           activity_channel_type: null == p ? true : p.type,
           activity_guild_id: h,
           activity_user_session_id: null == _ ? true : _.activityUserSessionId
         };
-      s.default.track(r, function(e) {
+      o.default.track(r, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -78,7 +78,7 @@ let m = {
       return r.tn.post({
         url: g.ANM.APPLICATION_TICKET(n),
         body: {
-          test_mode: o.Z.inTestModeForApplication(n) || i.Z.inDevModeForApplication(n)
+          test_mode: s.Z.inTestModeForApplication(n) || i.Z.inDevModeForApplication(n)
         },
         retries: 3,
         oldFormErrors: true,

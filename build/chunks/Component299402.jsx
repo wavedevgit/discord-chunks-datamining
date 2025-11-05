@@ -28,7 +28,7 @@ function O(e) {
     onClose: O,
     onSlideChange: S,
     hasJoinButton: E
-  } = e, [b, C] = o.useState(n), h = (0, c.Z)(b), [g, x] = o.useState(null), [w, L] = o.useState(null), [v, y] = o.useState(null), [D, j] = o.useState(false);
+  } = e, [b, C] = o.useState(n), h = (0, c.Z)(b), [g, x] = o.useState(null), [w, L] = o.useState(null), [y, v] = o.useState(null), [D, j] = o.useState(false);
   o.useEffect(() => {
     C(n)
   }, [C, n]), o.useEffect(() => {
@@ -49,11 +49,11 @@ function O(e) {
       C(I._m.GUILD_TEMPLATES), L(null)
     }, [b]),
     M = o.useCallback(e => {
-      y(e), l(e)
-    }, [l, y]),
-    k = o.useCallback(() => {
-      i()(null != v, "handleSuccess called before onGuildCreated"), l(v)
+      v(e), l(e)
     }, [l, v]),
+    k = o.useCallback(() => {
+      i()(null != y, "handleSuccess called before onGuildCreated"), l(y)
+    }, [l, y]),
     R = {
       impression_group: a.ImpressionGroups.GUILD_ADD_FLOW
     },
@@ -105,7 +105,7 @@ function O(e) {
             impressionName: a.ImpressionNames.GUILD_ADD_CHANNEL_PROMPT,
             impressionProperties: R,
             children: (0, r.jsx)(_.Z, {
-              createdGuildId: v,
+              createdGuildId: y,
               onClose: O,
               onChannelPromptCompleted: k,
               isSlideReady: g === I._m.CHANNEL_PROMPT

@@ -25,7 +25,7 @@ function f(e, t) {
 }
 class h extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(a.default, o.Z, s.Z), p = {}, null != e && c.default.keys(e).forEach(t => {
+    this.waitFor(a.default, s.Z, o.Z), p = {}, null != e && c.default.keys(e).forEach(t => {
       let n = e[t];
       null != n && "function" == typeof n[Symbol.iterator] && (p[t] = new Set(n))
     })
@@ -73,7 +73,7 @@ d(h, "displayName", "GuildProgressStore"), d(h, "persistKey", "GuildProgressStor
         id: t,
         member_count: n
       }
-    } = e, r = s.Z.getGuild(t);
+    } = e, r = o.Z.getGuild(t);
     if (null == r) returnfalse;
     r.ownerId === a.default.getId() && null != p[r.id] && (null != r.icon && p[r.id].add(u.Rg.AVATAR), n > 1 && p[r.id].add(u.Rg.INVITE))
   },
@@ -101,7 +101,7 @@ d(h, "displayName", "GuildProgressStore"), d(h, "persistKey", "GuildProgressStor
     let {
       channelId: n,
       message: r
-    } = e, i = o.Z.getChannel(n);
+    } = e, i = s.Z.getChannel(n);
     return (null == (t = r.author) ? true : t.id) === a.default.getId() && null != i && null != p[i.guild_id] && f(i.guild_id, u.Rg.MESSAGE)
   },
   GUILD_MEMBER_LIST_UPDATE: function(e) {

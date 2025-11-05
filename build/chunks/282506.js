@@ -38,12 +38,12 @@ function I() {
       let e = Chunk19780.Z.getChannelId(),
         t = Chunk944486.Z.getChannelId();
       if (!Chunk131951.Z.supports(Chunk65154.AN.VIDEO) || Chunk928518.Z.getWindowOpen(Chunk981631.KJ3.CHANNEL_CALL_POPOUT)) returntrue;
-      let n = null != module && Chunk199902.Z.getAllActiveStreams().some(t => !s.Z.isParticipantPoppedOut(e, (0, c.V9)(t)));
+      let n = null != module && Chunk199902.Z.getAllActiveStreams().some(t => !o.Z.isParticipantPoppedOut(e, (0, c.V9)(t)));
       if (!(null != module && Object.values(Chunk979651.Z.getVideoVoiceStatesForChannel(module)).some(t => {
           let {
             userId: n
           } = t;
-          return !h.Z.isLocalVideoDisabled(n) && !s.Z.isParticipantPoppedOut(e, n)
+          return !h.Z.isLocalVideoDisabled(n) && !o.Z.isParticipantPoppedOut(e, n)
         }) || require)) returntrue;
       let r = Chunk819640.Z.hasLayers();
       return !(r && Chunk819640.Z.getLayers().includes(Chunk981631.S9g.RTC_DEBUG)) && (!!r || module === exports)

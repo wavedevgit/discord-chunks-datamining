@@ -44,14 +44,14 @@ function k(e, t, n, r) {
   let l = performance.now();
   if (!S.Z.isConnected()) return;
   let a = null != (i = r.context) ? i : R.Yn.DEFAULT,
-    o = M.get(a);
-  null == o && (o = {
+    s = M.get(a);
+  null == s && (s = {
     held: new Set,
     latched: new Set,
     vadPriorityLatched: new Set,
     priorityHeldOrLatched: new Set
-  }, M.set(a, o)), n || (e ? o.held.add(r.id) : o.held.delete(r.id));
-  let s = false;
+  }, M.set(a, s)), n || (e ? s.held.add(r.id) : s.held.delete(r.id));
+  let o = false;
   if (e) r.pressedTime = l;
   else if (null != r.pressedTime && (0, v.f)({
       location: "doPTT",
@@ -61,14 +61,14 @@ function k(e, t, n, r) {
       {
         pttLatchingEnabled: t = false
       } = C.Z.getModeOptions(a),
-      i = n ? o.vadPriorityLatched : o.latched;
-    (s = i.has(r.id)) || true !== t || !(l < r.pressedTime + e) || !D ? (i.delete(r.id), s = false) : (i.add(r.id), s = true)
+      i = n ? s.vadPriorityLatched : s.latched;
+    (o = i.has(r.id)) || true !== t || !(l < r.pressedTime + e) || !D ? (i.delete(r.id), o = false) : (i.add(r.id), o = true)
   }
-  t && (e || s ? o.priorityHeldOrLatched.add(r.id) : o.priorityHeldOrLatched.delete(r.id));
-  let c = o.held.size > 0,
-    u = o.latched.size > 0,
+  t && (e || o ? s.priorityHeldOrLatched.add(r.id) : s.priorityHeldOrLatched.delete(r.id));
+  let c = s.held.size > 0,
+    u = s.latched.size > 0,
     d = c || u,
-    p = o.priorityHeldOrLatched.size > 0;
+    p = s.priorityHeldOrLatched.size > 0;
   (0, b.I)(c, p, d)
 }
 let U = {

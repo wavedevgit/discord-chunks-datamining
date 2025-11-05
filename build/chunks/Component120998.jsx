@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk302221 = require("./302221.js"),
   Chunk781176 = require("./781176.js");
 
@@ -24,9 +24,9 @@ class d extends(r = Chunk647438.PureComponent) {
       maxValue: n,
       data: r,
       animate: i
-    } = this.props, l = null == e || e.data !== t.data && !o().isEqual(e.data, t.data);
+    } = this.props, l = null == e || e.data !== t.data && !s().isEqual(e.data, t.data);
     if (l && (this.dataChangedAt = performance.now(), this.maxValue = null != n ? n : Math.max(...r)), l || null == e || !e.animate && i || e.color !== this.props.color) {
-      let e = s.oo(this.props.color);
+      let e = o.oo(this.props.color);
       this.fillColor = "rgba(".concat(e.r, ", ").concat(e.g, ", ").concat(e.b, ", 0.5)"), window.cancelAnimationFrame(this.animationFrameRequestId), this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation)
     }
   }
@@ -63,7 +63,7 @@ class d extends(r = Chunk647438.PureComponent) {
         data: i,
         updateInterval: l,
         color: a,
-        numUpdatesToShow: o,
+        numUpdatesToShow: s,
         lineWidth: c,
         animate: u,
         gradientStopColor: d
@@ -81,11 +81,11 @@ class d extends(r = Chunk647438.PureComponent) {
           r: e,
           g: t,
           b: n
-        } = s.oo(a);
+        } = o.oo(a);
         m.addColorStop(0, "rgba(".concat(e, ", ").concat(t, ", ").concat(n, ", 0)"))
       }
       m.addColorStop(1, this.fillColor), f.fillStyle = m;
-      let _ = i.length >= o ? o : i.length;
+      let _ = i.length >= s ? s : i.length;
       f.setTransform(1, 0, 0, false, 0, r.height), f.clearRect(0, 0, r.width, r.height), f.translate(0, .5 * f.lineWidth);
       let b = Math.floor(r.width / (_ - 3)),
         E = .5 * b;

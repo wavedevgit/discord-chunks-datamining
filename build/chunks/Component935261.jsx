@@ -32,9 +32,9 @@ function m(e) {
   let {
     voiceState: t,
     awaitingRemoteSessionInfo: n
-  } = e, i = null != n ? (0, d.y)(n.type) : null, c = (0, a.e7)([s.Z], () => {
+  } = e, i = null != n ? (0, d.y)(n.type) : null, c = (0, a.e7)([o.Z], () => {
     var e, n;
-    return null == (e = s.Z.getSessionById(null != (n = null == t ? true : t.sessionId) ? n : "")) ? true : e.clientInfo.os
+    return null == (e = o.Z.getSessionById(null != (n = null == t ? true : t.sessionId) ? n : "")) ? true : e.clientInfo.os
   }), u = null != i ? i : c;
   if (null == u || !p.al.has(u)) return null;
   let m = null != n,
@@ -43,7 +43,7 @@ function m(e) {
     className: l()(h.root, m ? h.connecting : h.connected),
     children: [(0, r.jsx)(g, {
       platform: u
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(s.Text, {
       color: m ? "header-primary" : "always-white",
       variant: "text-xs/medium",
       children: _
