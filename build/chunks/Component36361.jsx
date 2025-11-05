@@ -1,7 +1,7 @@
 /** Chunk was on 81014 **/
 /** chunk id: 36361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => g
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,6 +12,7 @@ var Chunk28682 = require("./28682.js"),
   Chunk401250 = require("./401250.jsx"),
   Chunk976713 = require("./976713.jsx"),
   Chunk72704 = require("./72704.jsx"),
+  Chunk555361 = require("./555361.jsx"),
   Chunk867694 = require("./867694.jsx"),
   Chunk4794 = require("./4794.jsx"),
   Chunk142118 = require("./142118.jsx"),
@@ -19,7 +20,7 @@ var Chunk28682 = require("./28682.js"),
   Chunk670304 = require("./670304.jsx"),
   Chunk357660 = require("./357660.jsx");
 
-function m(e) {
+function v(e) {
   let {
     node: t
   } = e;
@@ -29,27 +30,27 @@ function m(e) {
     case l.Jq.SIDEBAR_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
     case l.Jq.PANEL:
-      return (0, r.jsx)(j.T, {
+      return (0, r.jsx)(m.T, {
         node: t
       });
     case l.Jq.PANE:
-      return (0, r.jsx)(y.Z, {
+      return (0, r.jsx)(j.Z, {
         node: t
       });
     case l.Jq.LIST:
-      return (0, r.jsx)(p.Z, {
+      return (0, r.jsx)(y.Z, {
         node: t
       });
     case l.Jq.CATEGORY:
-      return (0, r.jsx)(b.Z, {
+      return (0, r.jsx)(p.Z, {
         node: t
       });
     case l.Jq.ACCORDION:
-      return (0, r.jsx)(f.Z, {
+      return (0, r.jsx)(b.Z, {
         node: t
       });
     case l.Jq.TOGGLE:
-      return (0, r.jsx)(d.I, {
+      return (0, r.jsx)(f.I, {
         node: t
       });
     case l.Jq.BUTTON:
@@ -64,6 +65,10 @@ function m(e) {
       return (0, r.jsx)(s.Z, {
         node: t
       });
+    case l.Jq.SLIDER:
+      return (0, r.jsx)(d.Z, {
+        node: t
+      });
     case l.Jq.CUSTOM:
       return (0, r.jsx)(i.X, {
         children: (0, r.jsx)(t.render, {})
@@ -75,15 +80,15 @@ function m(e) {
   }
 }
 
-function v(e) {
+function g(e) {
   let {
     node: t
   } = e;
-  return t.type === l.Jq.PANEL || t.type === l.Jq.PANE ? (0, r.jsx)(m, {
+  return t.type === l.Jq.PANEL || t.type === l.Jq.PANE ? (0, r.jsx)(v, {
     node: t
   }) : (0, r.jsx)(o.Z, {
     node: t,
-    children: (0, r.jsx)(m, {
+    children: (0, r.jsx)(v, {
       node: t
     })
   })
