@@ -68,7 +68,7 @@ function E(e) {
   return {
     sourceName: b,
     sourceApplicationId: E,
-    activity: g(u.Z.getPrimaryActivity()),
+    activity: g(u.Z.getActivities(false).find(e => e.type === h.IIU.PLAYING && e.application_id === E)),
     isVoiceOnly: O
   }
 }

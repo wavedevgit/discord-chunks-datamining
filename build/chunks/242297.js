@@ -49,7 +49,7 @@ function O(e) {
 }
 
 function v(e) {
-  (0, d.bs)((0, s.getPID)(), "window_handle_initialized", {
+  (0, d.bs)(null, "window_handle_initialized", {
     real_initialized: e,
     popoutInitializationStages: u.Z.getPopoutInitializationStages()
   }), (0, d.zg)(e)
@@ -57,7 +57,7 @@ function v(e) {
 
 function I(e) {
   var t, n, r, i;
-  null == (t = e.setFocusCallback) || t.call(e, b), null == (n = e.setFocusLostCallback) || n.call(e, y), null == (r = e.setSuccessfullyShownCallback) || r.call(e, O), null == (i = e.setOnWindowHandleInitializedCallback) || i.call(e, v), (0, d.bs)((0, s.getPID)(), "native_module_callbacks_setup"), E.verbose("Native module callbacks setup")
+  null == (t = e.setFocusCallback) || t.call(e, b), null == (n = e.setFocusLostCallback) || n.call(e, y), null == (r = e.setSuccessfullyShownCallback) || r.call(e, O), null == (i = e.setOnWindowHandleInitializedCallback) || i.call(e, v), (0, d.bs)(null, "native_module_callbacks_setup"), E.verbose("Native module callbacks setup")
 }
 class T {
   static getInstance() {
@@ -85,7 +85,7 @@ class T {
     try {
       await Chunk998502.ZP.ensureModule("discord_desktop_overlay");
       let e = Chunk998502.ZP.requireModule("discord_desktop_overlay");
-      module.init(), module.setHostWindowCallbacks(e => this.createOutOfProcessOverlayHostWindow(e), () => this.destroyOutOfProcessOverlayHostWindow(), e => this.refreshOutOfProcessOverlayHostWindow(e)), this.module = module, (0, Chunk932404.bs)((0, Chunk145597.getPID)(), "module_loaded"), (0, Chunk145597.setOutOfProcessSupport)(true), I(this.module), (0, Chunk932404.U9)(), E.info("OverlayV3 Module Loaded")
+      module.init(), module.setHostWindowCallbacks(e => this.createOutOfProcessOverlayHostWindow(e), () => this.destroyOutOfProcessOverlayHostWindow(), e => this.refreshOutOfProcessOverlayHostWindow(e)), this.module = module, (0, Chunk932404.bs)(null, "module_loaded"), (0, Chunk145597.setOutOfProcessSupport)(true), I(this.module), (0, Chunk932404.U9)(), E.info("OverlayV3 Module Loaded")
     } catch (e) {
       throw E.error("failed loading overlay module", module), (0, Chunk145597.setOutOfProcessSupport)(false), (0, Chunk932404.UK)(module), this.module = null, this.modulePromise = null, module
     }
