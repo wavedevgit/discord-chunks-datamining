@@ -12,9 +12,9 @@ var Chunk524437 = require("./524437.js"),
   Chunk247206 = require("./247206.js"),
   Chunk656577 = require("./656577.js"),
   Chunk294602 = require("./294602.js"),
+  Chunk666515 = require("./666515.js"),
   Chunk915009 = require("./915009.js"),
   Chunk880257 = require("./880257.js"),
-  Chunk312870 = require("./312870.js"),
   Chunk400313 = require("./400313.jsx"),
   Chunk947707 = require("./947707.jsx"),
   Chunk526761 = require("./526761.js"),
@@ -48,7 +48,7 @@ function O() {
   var e;
   let t = null == (e = (0, Chunk880257.Z)()) || module,
     n = (0, Chunk915009.LN)(),
-    b = (0, Chunk312870.s)("explicit_media_redaction_settings_web"),
+    b = (0, Chunk666515.r)(),
     {
       explicitContentGuilds: O,
       explicitContentFriendDm: v,
@@ -78,7 +78,7 @@ function O() {
     };
   exports && (S.unshift(C), A.unshift(C));
   let N = {
-    isDisabled: require || b,
+    isDisabled: b,
     tooltipText: require ? Chunk388032.intl.string(Chunk602698.default["6Af/cw"]) : true
   };
   return (0, Chunk951288.jsxs)(Chunk400313.n, {
@@ -105,7 +105,7 @@ function O() {
       onChange: e => T({
         explicitContentGuilds: e
       }),
-      isDisabled: !exports || require,
+      isDisabled: !exports || b,
       tooltipText: require ? Chunk388032.intl.string(Chunk602698.default["6Af/cw"]) : true,
       options: A
     })]

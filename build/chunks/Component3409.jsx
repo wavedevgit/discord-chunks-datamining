@@ -147,21 +147,14 @@ function ed(e) {
 
 function ef(e) {
   let {
-    onCardInfoChange: t,
-    infoNotice: n
-  } = e, i = (0, l.e7)([k.Z], () => k.Z.error);
-  return (0, r.jsxs)("div", {
+    onCardInfoChange: t
+  } = e, n = (0, l.e7)([k.Z], () => k.Z.error);
+  return (0, r.jsx)("div", {
     className: ee.body,
-    children: [null != n && (0, r.jsx)("div", {
-      className: ee.infoNotice,
-      children: (0, r.jsx)(c.M14, {
-        type: "info",
-        children: n
-      })
-    }), (0, r.jsx)(b.j, {
-      billingError: i,
+    children: (0, r.jsx)(b.j, {
+      billingError: n,
       onCardInfoChange: t
-    })]
+    })
   })
 }
 
@@ -394,7 +387,7 @@ function eO(e) {
       let tN = (e, t) => {
           switch (e) {
             case J.He.CARD:
-              ei ? eW(R.h8.AWAITING_BROWSER_CHECKOUT) : (eZ(eS), eW(R.h8.CREDIT_CARD_INFORMATION));
+              ei ? eW(R.h8.AWAITING_BROWSER_CHECKOUT) : (eZ(eS), eW(ev ? R.h8.PAYMENT_ELEMENT : R.h8.CREDIT_CARD_INFORMATION));
               break;
             case J.He.PAYPAL:
               eZ(eA), eW(R.h8.PAYPAL_INFORMATION);
@@ -558,7 +551,6 @@ function eO(e) {
         }
       };
       n = (0, r.jsx)(ef, {
-        infoNotice: eU,
         onCardInfoChange: (e, t) => {
           eJ({
             info: e,
@@ -896,7 +888,13 @@ function eO(e) {
       step: ej,
       steps: eB.steps,
       sideMargin: 20,
-      children: [tK && (0, r.jsx)(A.hn, {
+      children: [null != eU && (0, r.jsx)("div", {
+        className: ee.infoNotice,
+        children: (0, r.jsx)(c.M14, {
+          type: "info",
+          children: eU
+        })
+      }), tK && (0, r.jsx)(A.hn, {
         step: ej,
         analyticsContext: null != B ? {
           activitySessionId: eO,

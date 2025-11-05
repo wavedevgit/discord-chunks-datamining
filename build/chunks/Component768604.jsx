@@ -12,9 +12,9 @@ var Chunk524437 = require("./524437.js"),
   Chunk247206 = require("./247206.js"),
   Chunk925513 = require("./925513.js"),
   Chunk294602 = require("./294602.js"),
+  Chunk666515 = require("./666515.js"),
   Chunk915009 = require("./915009.js"),
   Chunk880257 = require("./880257.js"),
-  Chunk312870 = require("./312870.js"),
   Chunk400313 = require("./400313.jsx"),
   Chunk947707 = require("./947707.jsx"),
   Chunk726985 = require("./726985.js"),
@@ -47,7 +47,7 @@ function y() {
   var e;
   let t = null == (e = (0, Chunk880257.Z)()) || module,
     n = (0, Chunk915009.LN)(),
-    E = (0, Chunk312870.s)("gore_media_redaction_settings_web"),
+    E = (0, Chunk666515.r)(),
     {
       goreContentGuilds: y,
       goreContentFriendDm: O,
@@ -77,7 +77,7 @@ function y() {
     };
   exports && (T.unshift(A), S.unshift(A));
   let C = {
-    isDisabled: require || E,
+    isDisabled: E,
     tooltipText: require ? Chunk388032.intl.string(Chunk602698.default["6Af/cw"]) : true
   };
   return (0, Chunk951288.jsxs)(Chunk400313.n, {
@@ -103,7 +103,7 @@ function y() {
       onChange: e => I({
         goreContentGuilds: e
       }),
-      isDisabled: !exports || require,
+      isDisabled: !exports || E,
       options: S,
       tooltipText: require ? Chunk388032.intl.string(Chunk602698.default["6Af/cw"]) : true
     })]
