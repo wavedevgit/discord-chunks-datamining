@@ -69,66 +69,67 @@ function U(e) {
     skuId: K,
     variant: z = 0,
     guildId: q,
-    onClick: X
-  } = e, Q = i.useRef(null), J = (0, f.e7)([b.Z], () => b.Z.get(K)), $ = (0, f.e7)([E.Z], () => (0, d.wjy)(E.Z.theme)), ee = (0, f.e7)([p.Z], () => p.Z.useReducedMotion), {
-    isHoveringOrFocusing: et
-  } = (0, g.Z)(Q), {
-    primaryIconAsset: en,
-    primaryIconLabel: er
-  } = i.useMemo(() => (0, I.FE)(J, W), [J, W]), ei = (0, f.e7)([T.Z], () => {
+    onClick: X,
+    cardClassName: Q
+  } = e, J = i.useRef(null), $ = (0, f.e7)([b.Z], () => b.Z.get(K)), ee = (0, f.e7)([E.Z], () => (0, d.wjy)(E.Z.theme)), et = (0, f.e7)([p.Z], () => p.Z.useReducedMotion), {
+    isHoveringOrFocusing: en
+  } = (0, g.Z)(J), {
+    primaryIconAsset: er,
+    primaryIconLabel: ei
+  } = i.useMemo(() => (0, I.FE)($, W), [$, W]), ea = (0, f.e7)([T.Z], () => {
     var e, t;
     return null != q && null != (t = null == (e = T.Z.getStorefrontState(q)) ? true : e.activePage) ? t : 0
-  }), ea = i.useMemo(() => {
+  }), eo = i.useMemo(() => {
     var e, t;
-    if ((null == J || null == (t = J.tenantMetadata) || null == (e = t.socialLayer) ? true : e.expiresAt) == null) return null;
+    if ((null == $ || null == (t = $.tenantMetadata) || null == (e = t.socialLayer) ? true : e.expiresAt) == null) return null;
     let n = u()(),
-      r = u()(J.tenantMetadata.socialLayer.expiresAt).diff(n, "days");
+      r = u()($.tenantMetadata.socialLayer.expiresAt).diff(n, "days");
     return r <= 1 ? w.intl.string(w.t.Bc13HF) : w.intl.format(w.t.Io7ozn, {
       days: r
     })
-  }, [null == J || null == (n = J.tenantMetadata) || null == (t = n.socialLayer) ? true : t.expiresAt]), eo = (null == J || null == (s = J.tenantMetadata) || null == (a = s.socialLayer) ? true : a.cardBackgroundImageAssetId) != null && null != (B = v.Z.toURLSafe((0, O._W)(W, null == J ? true : J.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png"))) ? B : true, [es, el] = (0, h.Cf)(null == eo ? true : eo.toString(), "#000000"), ec = i.useMemo(() => {
-    let e = o()(es).darken(1.5).alpha(.9).hex(),
-      t = o()(es).alpha(0).hex(),
+  }, [null == $ || null == (n = $.tenantMetadata) || null == (t = n.socialLayer) ? true : t.expiresAt]), es = (null == $ || null == (s = $.tenantMetadata) || null == (a = s.socialLayer) ? true : a.cardBackgroundImageAssetId) != null && null != (B = v.Z.toURLSafe((0, O._W)(W, null == $ ? true : $.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png"))) ? B : true, [el, ec] = (0, h.Cf)(null == es ? true : es.toString(), "#000000"), eu = i.useMemo(() => {
+    let e = o()(el).darken(1.5).alpha(.9).hex(),
+      t = o()(el).alpha(0).hex(),
       [n, r] = L[z];
     return 0 === n && 0 === r ? "none" : "linear-gradient(to top, ".concat(e, " ").concat(M + n, "%, ").concat(t, " ").concat(M + r, "%)")
-  }, [es, z]);
-  if (null == J) return null;
-  let eu = (null == (m = J.tenantMetadata) || null == (c = m.socialLayer) ? true : c.cardImageAssetId) != null && null != (Z = v.Z.toURLSafe((0, O._W)(W, J.tenantMetadata.socialLayer.cardImageAssetId, 512, "png"))) ? Z : true;
+  }, [el, z]);
+  if (null == $) return null;
+  let ed = (null == (m = $.tenantMetadata) || null == (c = m.socialLayer) ? true : c.cardImageAssetId) != null && null != (Z = v.Z.toURLSafe((0, O._W)(W, $.tenantMetadata.socialLayer.cardImageAssetId, 512, "png"))) ? Z : true;
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)(_.kL8, {
       onClick: null != X ? X : () => {
         null != q && (0, S.Z)({
           guildId: q,
-          pageIndex: ei,
+          pageIndex: ea,
           skuId: K,
-          slug: J.slug
+          slug: $.slug
         })
       },
       className: l()(D.card, {
-        [D.cardAnimation]: !ee && 2 !== z,
-        [D.cardDark]: $,
-        [$ ? D.cardDarkHighlighted : D.cardHighlighted]: et,
+        [D.cardAnimation]: !et && 2 !== z,
+        [D.cardDark]: ee,
+        [ee ? D.cardDarkHighlighted : D.cardHighlighted]: en,
         [D.cardSmall]: 0 === z,
         [D.cardMedium]: 1 === z,
         [D.cardEmbedded]: 2 === z
-      }),
-      ref: Q,
-      "aria-label": J.name,
-      children: [null != ea && (0, r.jsx)(_.IGR, {
-        text: ea,
+      }, Q),
+      ref: J,
+      "aria-label": $.name,
+      children: [null != eo && (0, r.jsx)(_.IGR, {
+        text: eo,
         disableColor: true,
         className: D.badge
       }), (0, r.jsx)(k, {
-        sku: J,
-        isCardHovered: et
-      }), null != eu ? (0, r.jsx)(N.p, {
+        sku: $,
+        isCardHovered: en
+      }), null != ed ? (0, r.jsx)(N.p, {
         containerClassName: D.cardImageContainer,
         foregroundImageClassName: D.cardImage,
-        cardImage: eu,
-        altText: J.name,
+        cardImage: ed,
+        altText: $.name,
         shape: "custom",
         backgroundImageClassName: D.cardBackgroundImage,
-        cardBackgroundImage: eo
+        cardBackgroundImage: es
       }) : (0, r.jsx)("div", {
         className: D.ticketIconContainer,
         children: (0, r.jsx)(d.Prq, {
@@ -142,7 +143,7 @@ function U(e) {
         children: [(0, r.jsx)("div", {
           className: D.bottomGradient,
           style: {
-            background: ec
+            background: eu
           }
         }), (0, r.jsxs)("div", {
           className: D.details,
@@ -152,19 +153,19 @@ function U(e) {
               color: "always-white",
               variant: "text-md/bold",
               lineClamp: 1,
-              children: J.name
+              children: $.name
             })
           }), (0, r.jsxs)("div", {
             className: D.descriptionContainer,
-            children: [null != en && (0, r.jsx)("img", {
-              src: en.toString(),
-              alt: er,
+            children: [null != er && (0, r.jsx)("img", {
+              src: er.toString(),
+              alt: ei,
               className: D.iconAsset
             }), (0, r.jsx)(_.Text, {
               variant: "text-md/semibold",
               color: "always-white",
               lineClamp: 1,
-              children: (0, y.T4)(null != (F = null == (A = J.price) ? true : A.amount) ? F : 0, null != (V = null == (j = J.price) ? true : j.currency) ? V : P.pK.USD)
+              children: (0, y.T4)(null != (F = null == (A = $.price) ? true : A.amount) ? F : 0, null != (V = null == (j = $.price) ? true : j.currency) ? V : P.pK.USD)
             })]
           })]
         }), (0, r.jsx)("div", {
@@ -175,17 +176,17 @@ function U(e) {
             children: [(0, r.jsx)(d.zxk, {
               variant: "primary",
               onClick: e => {
-                e.stopPropagation(), (0, C.P)(J, {
+                e.stopPropagation(), (0, C.P)($, {
                   isGift: false
                 })
               },
               text: w.intl.format(w.t.Xp5WTn, {
-                price: (0, y.T4)(null != (H = null == (U = J.price) ? true : U.amount) ? H : 0, null != (Y = null == (G = J.price) ? true : G.currency) ? Y : P.pK.USD)
+                price: (0, y.T4)(null != (H = null == (U = $.price) ? true : U.amount) ? H : 0, null != (Y = null == (G = $.price) ? true : G.currency) ? Y : P.pK.USD)
               }),
               fullWidth: true
             }), (0, r.jsx)(R.Z, {
               onGift: e => {
-                e.stopPropagation(), (0, C.P)(J, {
+                e.stopPropagation(), (0, C.P)($, {
                   isGift: true
                 })
               }

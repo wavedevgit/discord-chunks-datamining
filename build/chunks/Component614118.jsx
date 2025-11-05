@@ -63,6 +63,7 @@ function O(e) {
   }) : null == P ? null : (0, r.jsxs)("div", {
     className: y.container,
     children: [(0, r.jsx)(g.C, {
+      cardClassName: y.innerCard,
       applicationId: P.applicationId,
       skuId: N,
       variant: g.Z.EMBEDDED,
