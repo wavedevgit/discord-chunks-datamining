@@ -20,7 +20,7 @@ function _() {
   return (0, Chunk951288.jsxs)(Chunk603963.Z, {
     webSetting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
     children: [(0, Chunk951288.jsx)(Chunk738486.Z, {
-      children: (0, Chunk951288.jsx)(Chunk710808.Z, {})
+      children: (0, Chunk951288.jsx)(Chunk710808.ZP, {})
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_RESET_VOICE_SETTINGS,
       children: (0, Chunk951288.jsx)(Chunk481060.Button, {

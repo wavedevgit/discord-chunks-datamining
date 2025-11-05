@@ -21,20 +21,20 @@ function s(t, e, n) {
           if (t.type === u.Jq.SECTION && t.hoisted) returntrue;
           let d = "useTitle" in t ? null == (s = t.useTitle) ? true : s.call(t, false) : true,
             S = "useNavigationTitle" in t ? null == (a = t.useNavigationTitle) ? true : a.call(t) : true,
-            T = "useSearchTerms" in t ? null == (o = t.useSearchTerms) ? true : o.call(t) : true;
-          if (n || null == d && null == S && null == T) returnfalse;
+            O = "useSearchTerms" in t ? null == (o = t.useSearchTerms) ? true : o.call(t) : true;
+          if (n || null == d && null == S && null == O) returnfalse;
           if ("" === e) returntrue;
-          let O = e.toLowerCase();
-          for (let t of null != T ? T : [])
-            if (l()(O, t.toLowerCase())) returntrue;
+          let T = e.toLowerCase();
+          for (let t of null != O ? O : [])
+            if (l()(T, t.toLowerCase())) returntrue;
           let I = false;
           if (null != d) {
             let t = null == (c = (0, r.qgQ)(d)) ? true : c.toLowerCase();
-            null != t && (I = l()(O, t))
+            null != t && (I = l()(T, t))
           }
           if (null != S && !I) {
             let t = null == (E = (0, r.qgQ)(S)) ? true : E.toLowerCase();
-            null != t && (I = l()(O, t))
+            null != t && (I = l()(T, t))
           }
           return I
         }(t, e, E, n) || c,

@@ -1,9 +1,9 @@
 /** Chunk was on 9452 **/
 /** chunk id: 509613, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  $l: () => T,
+  $l: () => O,
   CB: () => S,
-  Em: () => _,
+  Em: () => A,
   J9: () => f,
   ON: () => N,
   Ql: () => function t(e, n) {
@@ -33,7 +33,7 @@ require.d(exports, {
     }
     return e
   },
-  UO: () => A,
+  UO: () => _,
   ax: () => I,
   k4: () => d,
   m7: () => o,
@@ -112,11 +112,11 @@ function S(t, e) {
   return u(t, i.Jq.ACCORDION, e)
 }
 
-function T(t, e) {
+function O(t, e) {
   return u(t, i.Jq.LIST, e)
 }
 
-function O(t, e, n) {
+function T(t, e, n) {
   return r(l({}, n), {
     key: t,
     type: e
@@ -124,25 +124,25 @@ function O(t, e, n) {
 }
 
 function I(t, e) {
-  return O(t, i.Jq.BUTTON, e)
+  return T(t, i.Jq.BUTTON, e)
 }
 
 function g(t, e) {
-  return O(t, i.Jq.TOGGLE, e)
-}
-
-function A(t, e) {
-  return O(t, i.Jq.SLIDER, e)
+  return T(t, i.Jq.TOGGLE, e)
 }
 
 function _(t, e) {
-  return O(t, i.Jq.SELECT, e)
+  return T(t, i.Jq.SLIDER, e)
+}
+
+function A(t, e) {
+  return T(t, i.Jq.SELECT, e)
 }
 
 function f(t, e) {
-  return O(t, i.Jq.RADIO, e)
+  return T(t, i.Jq.RADIO, e)
 }
 
 function N(t, e) {
-  return O(t, i.Jq.CUSTOM, e)
+  return T(t, i.Jq.CUSTOM, e)
 }

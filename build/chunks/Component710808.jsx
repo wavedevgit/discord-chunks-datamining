@@ -2,7 +2,10 @@
 /** chunk id: 710808, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  W2: () => P,
+  ZP: () => M,
+  rT: () => x,
+  xI: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -134,8 +137,26 @@ function x(e) {
     })
   })))
 }
+async function L(e) {
+  let {
+    onUploadStart: t,
+    onUploadFinish: n
+  } = e;
+  null == t || t();
+  try {
+    await g.Z.getMediaEngine().writeAudioDebugState(), await b.Z.submitLiveCrashReport({
+      message: {
+        message: "User Live Dump"
+      }
+    }), await (0, _.E)(v.GU0.RTC), w()
+  } catch (e) {
+    D(e.displayMessage)
+  } finally {
+    null == n || n()
+  }
+}
 
-function L() {
+function M() {
   let [e, t] = Chunk647438.useState(false), {
     debugLogging: n,
     aecDumpEnabled: o
@@ -144,19 +165,11 @@ function L() {
     debugLogging: Chunk131951.Z.getDebugLogging(),
     aecDumpEnabled: Chunk131951.Z.getAecDump(),
     supportsConnectionReplay: Chunk131951.Z.supports(Chunk65154.AN.CONNECTION_REPLAY)
-  })), d = (0, Chunk442837.e7)([Chunk857192.default], () => Chunk857192.default.isStreamInfoOverlayEnabled), p = (0, Chunk442837.e7)([Chunk226961.ZP], () => Chunk226961.ZP.shouldRecordNextConnection());
-  async function A() {
-    exports(true);
-    try {
-      await Chunk131951.Z.getMediaEngine().writeAudioDebugState(), await Chunk12647.Z.submitLiveCrashReport({
-        message: {
-          message: "User Live Dump"
-        }
-      }), await (0, Chunk729345.E)(Chunk981631.GU0.RTC), w()
-    } catch (e) {
-      D(module.displayMessage)
-    }
-  }
+  })), d = (0, Chunk442837.e7)([Chunk857192.default], () => Chunk857192.default.isStreamInfoOverlayEnabled), _ = (0, Chunk442837.e7)([Chunk226961.ZP], () => Chunk226961.ZP.shouldRecordNextConnection()), p = Chunk647438.useCallback(async () => {
+    await L({
+      onUploadStart: () => exports(true)
+    })
+  }, []);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_STREAM_INFO_OVERLAY,
@@ -183,7 +196,7 @@ function L() {
       children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.U4FgFK),
         description: Chunk388032.intl.string(Chunk388032.t.Lm72RU),
-        checked: Chunk458725,
+        checked: Chunk729345,
         onChange: e => u.TC(e)
       }), (0, Chunk951288.jsx)(Chunk600164.Z, {
         className: Chunk197571.marginBottom20,
@@ -212,7 +225,7 @@ function L() {
             variant: "primary",
             text: Chunk388032.intl.string(Chunk388032.t["3UB9ad"]),
             disabled: module,
-            onClick: A
+            onClick: Chunk458725
           }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "secondary",
             text: Chunk388032.intl.string(Chunk388032.t.nuPtYi),
