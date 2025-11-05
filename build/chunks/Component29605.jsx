@@ -2,9 +2,9 @@
 /** chunk id: 29605, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  FT: () => $,
-  L3: () => Q,
-  ZP: () => en
+  FT: () => Q,
+  L3: () => J,
+  ZP: () => et
 }), require("./388685.js"), require("./583741.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
   Chunk80932 = require("./80932.js"),
-  Chunk225433 = require("./225433.jsx"),
   Chunk599059 = require("./599059.jsx"),
   Chunk327802 = require("./327802.jsx"),
   Chunk110924 = require("./110924.js"),
@@ -52,7 +51,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk878341 = require("./878341.js"),
   Chunk620842 = require("./620842.js");
 
-function Y(e) {
+function K(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -70,8 +69,8 @@ function Y(e) {
   }
   return e
 }
-let q = d().throttle(Chunk80932.OQ, 1e3),
-  X = e => {
+let Y = d().throttle(Chunk80932.OQ, 1e3),
+  q = e => {
     var t, n;
     let {
       guildId: l,
@@ -79,11 +78,11 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
       onEdit: o,
       editingDisabled: c = false,
       isNewlyAdded: d = false
-    } = e, [g, m] = i.useState(s.name), f = A.ZP.getEmojiURL({
+    } = e, [g, m] = i.useState(s.name), f = D.ZP.getEmojiURL({
       id: s.id,
       animated: s.animated,
       size: 32
-    }), [_] = (0, h.q_F)(() => ({
+    }), [v] = (0, h.q_F)(() => ({
       from: {
         scale: 2
       },
@@ -95,7 +94,7 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
         tension: 1500,
         friction: 115
       }
-    }), d ? "respect-motion-settings" : "animate-never"), [O] = (0, h.q_F)(() => ({
+    }), d ? "respect-motion-settings" : "animate-never"), [_] = (0, h.q_F)(() => ({
       from: {
         opacity: 0
       },
@@ -106,19 +105,19 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
         duration: 200,
         clamp: true
       }
-    }), d ? "respect-motion-settings" : "animate-never"), C = G.ZP.useUserTag(s.user);
+    }), d ? "respect-motion-settings" : "animate-never"), O = k.ZP.useUserTag(s.user);
     return (0, r.jsxs)("div", {
-      className: a()(V.emojiRow, K.card),
+      className: a()(W.emojiRow, V.card),
       role: "row",
       children: [(0, r.jsx)("div", {
-        className: V.emojiColumn,
+        className: W.emojiColumn,
         children: (0, r.jsx)(p.u, {
-          text: s.available ? null : W.intl.string(W.t.KUzI73),
+          text: s.available ? null : z.intl.string(z.t.KUzI73),
           children: (0, r.jsx)(u.animated.div, {
-            className: a()(V.emojiImage, {
-              [V.emojiDisabled]: !s.available
+            className: a()(W.emojiImage, {
+              [W.emojiDisabled]: !s.available
             }),
-            style: (t = Y({}, d ? _ : {}, d ? O : {}), n = n = {
+            style: (t = K({}, d ? v : {}, d ? _ : {}), n = n = {
               backgroundImage: "url(".concat(f, ")")
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
@@ -133,22 +132,22 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
           })
         })
       }), (0, r.jsx)("div", {
-        className: V.column,
+        className: W.column,
         children: (0, r.jsx)("div", {
-          className: V.emojiAliasInputContainer,
-          children: (0, r.jsx)(v.Z, {
+          className: W.emojiAliasInputContainer,
+          children: (0, r.jsx)(j.Z, {
             className: a()({
-              [V.emojiAliasInputDisabled]: c
+              [W.emojiAliasInputDisabled]: c
             }),
             disabled: c,
             minLen: 1,
-            maxLen: z.Yc,
-            name: W.intl.string(W.t.qUpzYO),
+            maxLen: H.Yc,
+            name: z.intl.string(z.t.qUpzYO),
             autoComplete: "off",
             value: null != g ? g : "",
             onBlur: () => {
               if (g === s.name) return;
-              let e = L.ZP.sanitizeEmojiName(g);
+              let e = A.ZP.sanitizeEmojiName(g);
               e !== s.name && (0, x.dv)({
                 guildId: l,
                 emojiId: s.id,
@@ -161,44 +160,55 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
           })
         })
       }), (0, r.jsx)("div", {
-        className: V.column,
-        children: (0, r.jsx)(y.Z, {
+        className: W.column,
+        children: (0, r.jsx)(C.Z, {
           avatar: (0, r.jsx)(h.qEK, {
             src: s.user.getAvatarURL(l, 20),
-            "aria-label": C,
+            "aria-label": O,
             size: h.EFr.SIZE_20
           }),
           name: (0, r.jsx)(h.Text, {
             variant: "text-sm/normal",
-            children: C
+            children: O
           })
         })
-      }), null != o && !c && (0, r.jsx)(h.P3F, {
-        "aria-label": W.intl.string(W.t.bt75uw),
-        className: V.editEmojiRolesButton,
-        onClick: () => o(s, l),
-        children: (0, r.jsx)(h.vdY, {
-          size: "md",
-          color: "currentColor",
-          className: V.editEmojiRolesIcon
-        })
-      }), !c && (0, r.jsx)(j.Z, {
-        className: V.emojiRemove,
-        onClick: () => {
-          (0, x.RE)(l, s.id).catch(e => {
-            let {
-              status: t
-            } = e;
-            429 === t && b.Z.show({
-              title: W.intl.string(W.t.iufib1),
-              body: W.intl.string(W.t.Whhv4w)
-            })
+      }), !c && (0, r.jsxs)("div", {
+        className: W.emojiRowTools,
+        children: [null == o ? null : (0, r.jsx)(p.u, {
+          text: z.intl.string(z.t.FOYn8U),
+          "aria-label": z.intl.string(z.t.FOYn8U),
+          children: (0, r.jsx)(h.hU, {
+            size: "sm",
+            variant: "secondary",
+            icon: h.vdY,
+            onClick: () => o(s, l),
+            "aria-label": z.intl.string(z.t.FOYn8U)
           })
-        }
+        }), (0, r.jsx)(p.u, {
+          text: z.intl.string(z.t["+euLPe"]),
+          "aria-label": z.intl.string(z.t["+euLPe"]),
+          children: (0, r.jsx)(h.hU, {
+            size: "sm",
+            variant: "critical-secondary",
+            icon: h.XHJ,
+            onClick: () => {
+              (0, x.RE)(l, s.id).catch(e => {
+                let {
+                  status: t
+                } = e;
+                429 === t && b.Z.show({
+                  title: z.intl.string(z.t.iufib1),
+                  body: z.intl.string(z.t.Whhv4w)
+                })
+              })
+            },
+            "aria-label": z.intl.string(z.t["+euLPe"])
+          })
+        })]
       })]
     })
   },
-  J = e => {
+  X = e => {
     let {
       isLoading: t,
       staticEmoji: i,
@@ -209,36 +219,36 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
       newlyAddedEmojiIds: c
     } = e;
     return t ? (0, r.jsx)(h.$jN, {
-      className: V.spinner,
+      className: W.spinner,
       type: h.$jN.Type.SPINNING_CIRCLE
     }) : 0 === i.length && 0 === l.length ? (0, r.jsxs)(h.ubH, {
       theme: a,
-      className: V.empty,
+      className: W.empty,
       children: [(0, r.jsx)(h.oxh, {
         darkSrc: n(458601),
         lightSrc: n(673557),
         width: 272,
         height: 212
       }), (0, r.jsx)(h.OZU, {
-        note: W.intl.string(W.t.RBbtMy),
-        children: W.intl.string(W.t.lxsmBd)
+        note: z.intl.string(z.t.RBbtMy),
+        children: z.intl.string(z.t.lxsmBd)
       })]
     }) : (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(Q, {
-        title: W.intl.string(W.t.sMOuuS),
-        maxSlots: (0, k.y4)(s),
+      children: [(0, r.jsx)(J, {
+        title: z.intl.string(z.t.sMOuuS),
+        maxSlots: (0, L.y4)(s),
         emojiCount: i.length,
-        children: (0, r.jsx)($, {
+        children: (0, r.jsx)(Q, {
           emojis: i,
           guild: s,
           onEdit: o,
           newlyAddedEmojiIds: c
         })
-      }), (0, r.jsx)(Q, {
-        title: W.intl.string(W.t.wWjQye),
-        maxSlots: (0, k.y4)(s),
+      }), (0, r.jsx)(J, {
+        title: z.intl.string(z.t.wWjQye),
+        maxSlots: (0, L.y4)(s),
         emojiCount: l.length,
-        children: (0, r.jsx)($, {
+        children: (0, r.jsx)(Q, {
           emojis: l,
           guild: s,
           onEdit: o,
@@ -247,7 +257,7 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
       })]
     })
   },
-  Q = e => {
+  J = e => {
     let {
       title: t,
       maxSlots: n,
@@ -256,13 +266,13 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
     } = e, a = Math.max(n - i, 0);
     return (0, r.jsx)(h.C3N, {
       label: t,
-      description: W.intl.format(W.t.sgL8sI, {
+      description: z.intl.format(z.t.sgL8sI, {
         count: a
       }),
       children: l
     })
   },
-  $ = e => {
+  Q = e => {
     let {
       emojis: t,
       guild: n,
@@ -271,47 +281,47 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
       newlyAddedEmojiIds: s
     } = e, o = i.useMemo(() => [...t].reverse(), [t]), {
       canManageGuildExpression: c
-    } = (0, Z.Gw)(n), d = (0, m.e7)([R.Z], () => R.Z.theme);
+    } = (0, w.Gw)(n), d = (0, m.e7)([Z.Z], () => Z.Z.theme);
     return 0 === t.length ? (0, r.jsx)(h.ubH, {
       theme: d,
       children: (0, r.jsx)(h.OZU, {
-        children: W.intl.string(W.t.SpxYoT)
+        children: z.intl.string(z.t.SpxYoT)
       })
     }) : (0, r.jsxs)("div", {
       role: "table",
-      "aria-label": W.intl.string(W.t.sMOuuS),
-      className: V.table,
+      "aria-label": z.intl.string(z.t.sMOuuS),
+      className: W.table,
       children: [(0, r.jsxs)("div", {
         role: "rowgroup",
-        className: V.tableHeader,
+        className: W.tableHeader,
         children: [(0, r.jsx)("div", {
           role: "columnheader",
-          className: V.emojiColumn,
+          className: W.emojiColumn,
           children: (0, r.jsx)(h.Text, {
             variant: "text-sm/semibold",
-            children: W.intl.string(W.t.Z0i3Gp)
+            children: z.intl.string(z.t.Z0i3Gp)
           })
         }), (0, r.jsx)("div", {
           role: "columnheader",
-          className: V.columnLabel,
+          className: W.columnLabel,
           children: (0, r.jsx)(h.Text, {
             variant: "text-sm/semibold",
-            children: W.intl.string(W.t.giajw6)
+            children: z.intl.string(z.t.giajw6)
           })
         }), (0, r.jsx)("div", {
           role: "columnheader",
-          className: V.columnLabel,
+          className: W.columnLabel,
           children: (0, r.jsx)(h.Text, {
             variant: "text-sm/semibold",
-            children: W.intl.string(W.t.edavpq)
+            children: z.intl.string(z.t.edavpq)
           })
         })]
       }), (0, r.jsx)("div", {
         role: "rowgroup",
-        className: V.tableBody,
+        className: W.tableBody,
         children: o.map(e => {
           var t;
-          return (0, r.jsx)(X, {
+          return (0, r.jsx)(q, {
             guildId: n.id,
             emoji: e,
             onEdit: l,
@@ -322,35 +332,35 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
       })]
     })
   },
-  ee = e => {
+  $ = e => {
     let t, n, i, {
         staticEmojiCount: l,
         animatedEmojiCount: a,
         guild: s
       } = e,
-      o = (0, k.y4)(s),
+      o = (0, L.y4)(s),
       c = Math.min(o - l, o - a),
       d = s.premiumTier,
-      u = (0, k.FZ)(d);
-    return null == u || d === H.Eu4.TIER_3 || c > 0 ? null : (c > o ? (t = W.intl.formatToPlainString(W.t.j0UH0m, {
+      u = (0, L.FZ)(d);
+    return null == u || d === F.Eu4.TIER_3 || c > 0 ? null : (c > o ? (t = z.intl.formatToPlainString(z.t.j0UH0m, {
       level: u
-    }), n = W.intl.formatToPlainString(W.t.VQeyK6, {
+    }), n = z.intl.formatToPlainString(z.t.VQeyK6, {
       level: u
-    }), i = H.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = W.intl.string(W.t.zT9SxY), n = W.intl.formatToPlainString(W.t.dBZ1RU, {
+    }), i = F.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = z.intl.string(z.t.zT9SxY), n = z.intl.formatToPlainString(z.t.dBZ1RU, {
       level: u
-    }), i = H.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(P.Z, {
+    }), i = F.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(T.Z, {
       header: t,
       text: n,
       guild: s,
       analyticsLocation: {
-        page: H.ZY5.GUILD_SETTINGS,
-        section: H.jXE.GUILD_SETTINGS_STICKERS,
+        page: F.ZY5.GUILD_SETTINGS,
+        section: F.jXE.GUILD_SETTINGS_STICKERS,
         object: i,
-        objectType: (0, k.ge)(u)
+        objectType: (0, L.ge)(u)
       }
     }))
   },
-  et = () => (0, Chunk951288.jsxs)("div", {
+  ee = () => (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-sm/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.jrXfyw)
@@ -377,7 +387,7 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
       })]
     })]
   }),
-  en = () => {
+  et = () => {
     let e = Chunk647438.useRef(null),
       t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
       [l, a] = Chunk647438.useState("");
@@ -388,58 +398,46 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
       } = (0, Chunk357156.XJ)(exports),
       {
         revision: u,
-        emojis: p,
-        autoOpen: b
+        emojis: p
       } = (0, Chunk442837.cj)([Chunk471613.Z], () => ({
         revision: Chunk471613.Z.getEmojiRevision(exports.id),
-        emojis: Chunk471613.Z.getEmojis(exports.id),
-        autoOpen: Chunk471613.Z.getEmojiFileInputAutoOpen()
+        emojis: Chunk471613.Z.getEmojis(exports.id)
       })),
-      x = (0, Chunk110924.Z)(Chunk426322),
-      [j, v] = Chunk647438.useState(false),
-      [y, P] = Chunk647438.useState(false),
-      A = Chunk647438.useRef(null),
+      b = (0, Chunk110924.Z)(Chunk426322),
+      [x, j] = Chunk647438.useState(false),
+      [C, T] = Chunk647438.useState(false),
+      D = Chunk647438.useRef(null),
       {
-        maxEmojiSlots: L,
-        availableEmojiSlots: k,
-        staticEmoji: G,
-        totalStaticEmoji: z,
-        animatedEmoji: K,
-        totalAnimatedEmoji: X
+        maxEmojiSlots: A,
+        availableEmojiSlots: L,
+        staticEmoji: k,
+        totalStaticEmoji: H,
+        animatedEmoji: V,
+        totalAnimatedEmoji: q
       } = (0, Chunk719403.t)({
         guild: exports
       }),
-      Q = (0, Chunk556019.qt)({
+      J = (0, Chunk556019.qt)({
         location: "guild_settings",
         autoTrackExposure: true
       }),
-      [$, en] = Chunk647438.useState(null),
-      er = Chunk570908 || 0 === Chunk267642 || !Chunk392711;
+      [Q, et] = Chunk647438.useState(null),
+      en = Chunk570908 || 0 === Chunk267642 || !Chunk392711;
     Chunk647438.useEffect(() => {
-      Chunk225433 && eo()
-    }, [Chunk225433]), Chunk647438.useEffect(() => {
-      if (Chunk668781) {
-        if (!er) {
-          var t;
-          null == (t = module.current) || exports.activateUploadDialogue()
-        }
-        Chunk806774.ml({
-          autoOpen: false
-        })
-      }
-    }, [Chunk668781, er]), Chunk647438.useEffect(() => {
-      q(exports.id)
+      Chunk80932 && es()
+    }, [Chunk80932]), Chunk647438.useEffect(() => {
+      Y(exports.id)
     }, [exports.id]), Chunk647438.useEffect(() => {
-      null != Chunk80932 && Chunk80932 < Chunk426322 && q(exports.id)
-    }, [Chunk426322, Chunk80932, exports.id]), Chunk647438.useEffect(() => {
-      if (null != Chunk28664 && null == $) return void en(Chunk28664)
-    }, [Chunk28664, $]);
-    let ei = Chunk647438.useMemo(() => Q.isEmojiEditingExperimentEnabled && null != $ ? new Set(d().differenceBy(Chunk28664, $, "id").map(e => e.id)) : new Set, [Q.isEmojiEditingExperimentEnabled, Chunk28664, $]),
-      el = Chunk647438.useCallback(function() {
+      null != Chunk668781 && Chunk668781 < Chunk426322 && Y(exports.id)
+    }, [Chunk426322, Chunk668781, exports.id]), Chunk647438.useEffect(() => {
+      if (null != Chunk28664 && null == Q) return void et(Chunk28664)
+    }, [Chunk28664, Q]);
+    let er = Chunk647438.useMemo(() => J.enabled && null != Q ? new Set(d().differenceBy(Chunk28664, Q, "id").map(e => e.id)) : new Set, [J.enabled, Chunk28664, Q]),
+      ei = Chunk647438.useCallback(function() {
         let {
           emoji: e
         } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-        if (Q.isEmojiEditingExperimentEnabled && null != module) return void(0, Chunk748523.i)({
+        if (J.enabled && null != module) return void(0, Chunk748523.i)({
           guildId: exports.id,
           emoji: module,
           analyticsLocation: Chunk100527.Z.GUILD_SETTINGS_EMOJI_EDIT_BUTTON
@@ -451,9 +449,9 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
             section: Chunk981631.jXE.GUILD_SETTINGS_EMOJI_ADD_BUTTON
           }
         })
-      }, [Q.isEmojiEditingExperimentEnabled, exports]),
-      ea = async (e, n, r) => {
-        let i = await (0, T.G)({
+      }, [J.enabled, exports]),
+      el = async (e, n, r) => {
+        let i = await (0, S.G)({
           data: e,
           file: n,
           image: r,
@@ -461,11 +459,11 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
           uploadId: l,
           hideErrorModal: true,
           analyticsLocation: {
-            page: H.ZY5.GUILD_SETTINGS
+            page: F.ZY5.GUILD_SETTINGS
           }
         });
         if ("object" != typeof i || !("id" in i)) return i;
-        F.MK({
+        B.M({
           emojiId: i.id,
           userImage: {
             data: e,
@@ -473,30 +471,30 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
             image: r
           }
         })
-      }, es = async e => {
-        a((0, g.Z)()), D.default.track(H.rMx.EMOJI_UPLOAD_STARTED, {
+      }, ea = async e => {
+        a((0, g.Z)()), R.default.track(F.rMx.EMOJI_UPLOAD_STARTED, {
           guild_id: t.id,
           upload_id: l
-        }), await (0, w._j)(e, ea), v(true)
-      }, eo = () => {
+        }), await (0, P._j)(e, el), j(true)
+      }, es = () => {
         null !== Chunk768581.current && ((0, Chunk481060.Mr3)(Chunk768581.current), Chunk768581.current = null)
-      }, ec = async e => {
-        A.current = await (0, h.ZDy)(async () => {
+      }, eo = async e => {
+        D.current = await (0, h.ZDy)(async () => {
           let {
             default: t
           } = await n.e("16169").then(n.bind(n, 935333));
-          return n => (0, r.jsx)(t, Y({
-            processFiles: () => es(e)
+          return n => (0, r.jsx)(t, K({
+            processFiles: () => ea(e)
           }, n))
         })
-      }, ed = (0, Chunk200876.l)(exports), eu = Q.isEmojiEditingExperimentEnabled ? e => el({
+      }, ec = (0, Chunk200876.l)(exports), ed = J.enabled ? e => ei({
         emoji: e
       }) : true;
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk878341.emojiSettings,
       children: [0 === Chunk267642 ? null : (0, Chunk951288.jsx)(Chunk327802.Z, {
         className: Chunk878341.emojiUploadContainer,
-        onDrop: ec
+        onDrop: eo
       }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 20,
         children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
@@ -510,29 +508,29 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
               count: Chunk176354
             })
           })]
-        }), (0, Chunk951288.jsx)(ee, {
+        }), (0, Chunk951288.jsx)($, {
           guild: exports,
           staticEmojiCount: Chunk185923,
-          animatedEmojiCount: X
+          animatedEmojiCount: q
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk878341.uploader,
-          children: [ed && (0, Chunk951288.jsx)(Chunk481060.Wn, {
+          children: [ec && (0, Chunk951288.jsx)(Chunk481060.Wn, {
             messageType: Chunk481060.QYI.INFO,
             children: Chunk388032.intl.format(Chunk388032.t.uMkfTo, {
               onClick: () => Chunk434404.Z.open(exports.id, Chunk981631.pNK.ROLE_SUBSCRIPTIONS, true, Chunk981631.KsC.ROLE_SUBSCRIPTION_EMOJI)
             })
-          }), Q.enabled ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+          }), J.enabled ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
             children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "primary",
               text: Chunk388032.intl.string(Chunk388032.t["DU0dy/"]),
-              onClick: () => el(),
+              onClick: () => ei(),
               disabled: 0 === Chunk267642
             }), (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-xs/normal",
               children: Chunk388032.intl.string(Chunk388032.t.EgNCTi)
             })]
           }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-            children: [(0, Chunk951288.jsx)(et, {}), (0, Chunk951288.jsxs)(Chunk755721.zx, {
+            children: [(0, Chunk951288.jsx)(ee, {}), (0, Chunk951288.jsxs)(Chunk755721.zx, {
               "data-migration-pending": true,
               tabIndex: false,
               size: Chunk755721.zx.Sizes.MEDIUM,
@@ -543,29 +541,29 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
                   upload_id: module
                 })
               },
-              disabled: er,
+              disabled: en,
               submitting: Chunk570908,
               focusProps: {
                 within: true
               },
               children: [Chunk388032.intl.string(Chunk388032.t["DU0dy/"]), Chunk267642 > 0 ? (0, Chunk951288.jsx)(Chunk372129.ZP, {
                 ref: module,
-                disabled: er,
+                disabled: en,
                 tabIndex: 0,
-                onChange: ea,
+                onChange: el,
                 setLoading: Chunk372444,
                 multiple: true
               }) : null]
             })]
           })]
-        }), (0, Chunk951288.jsx)(J, {
+        }), (0, Chunk951288.jsx)(X, {
           isLoading: null == Chunk28664,
           staticEmoji: Chunk51144,
           animatedEmoji: Chunk620842,
           guild: exports,
           theme: Chunk512722,
-          onEdit: eu,
-          newlyAddedEmojiIds: ei
+          onEdit: ed,
+          newlyAddedEmojiIds: er
         })]
       })]
     })

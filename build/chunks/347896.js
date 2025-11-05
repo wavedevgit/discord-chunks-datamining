@@ -12,7 +12,7 @@ var Chunk647438 = require("./647438.js"),
 function s() {
   let {
     enabled: e
-  } = Chunk2109.Z.useConfig({
+  } = Chunk2109.ZP.useConfig({
     location: "useGiftingPromotionConfig"
   });
   return Chunk647438.useMemo(() => Chunk873546.tq || Chunk873546.Em ? null : module ? Chunk124566.D : null, [module])

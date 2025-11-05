@@ -37,7 +37,7 @@ var r, Chunk913527 = require("./913527.js"),
   Chunk332473 = require("./332473.js"),
   Chunk30684 = require("./30684.js"),
   Chunk616106 = require("./616106.js"),
-  Chunk107756 = require("./107756.js"),
+  Chunk2109 = require("./2109.js"),
   Chunk518638 = require("./518638.js"),
   Chunk1844 = require("./1844.js"),
   Chunk621615 = require("./621615.js"),
@@ -225,13 +225,13 @@ let eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       predicate: () => {
         let {
           enabled: e
-        } = Chunk107756.Ys.getCurrentConfig({
+        } = Chunk2109.Ys.getCurrentConfig({
           location: "NoticeStore"
         }, {
           autoTrackExposure: false
         }), {
           enabled: t
-        } = Chunk107756.ZP.getConfig({
+        } = Chunk2109.YW.getConfig({
           location: "NoticeStore"
         });
         return module && exports && (0, Chunk605236.H4)(Chunk704215.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK).isDismissed && !eX(Chunk981631.kVF.GIFTING_PROMOTION_REMINDER)

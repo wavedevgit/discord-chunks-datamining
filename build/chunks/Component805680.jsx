@@ -203,7 +203,7 @@ function Q(e) {
     location: "expression_picker",
     autoTrackExposure: true,
     disable: !eb || el !== L.X1.EMOJI
-  }), eO = null == W.guild_id ? ey.isEntrypointEnabledInDMs : ey.isEntrypointEnabled, ev = i.useCallback(e => {
+  }), eO = i.useCallback(e => {
     var t;
     if (!eh && (0, _.$s)() || eh && !(em && ee) || ep || e.defaultPrevented) return;
     let {
@@ -217,23 +217,23 @@ function Q(e) {
     }(0, x._Q)();
     let r = null == (t = (0, u.uB)(e)) ? true : t.activeElement;
     (null == r || "BODY" === r.tagName) && D.S.dispatchToLastSubscribed(M.CkL.TEXTAREA_FOCUS)
-  }, [ee, em, eh, ep]), eI = i.useCallback(() => {
+  }, [ee, em, eh, ep]), ev = i.useCallback(() => {
     (0, x._Q)()
   }, []);
   i.useLayoutEffect(() => {
     let e = () => {
       el === L.X1.GIF && (0, x._Q)()
     };
-    return eu.addEventListener("mousedown", ev), eu.addEventListener("contextmenu", ev), ed.subscribe(M.CkL.POPOUT_CLOSE, eI), D.S.subscribe(M.CkL.CLOSE_GIF_PICKER, e), () => {
-      eu.removeEventListener("mousedown", ev), eu.removeEventListener("contextmenu", ev), ed.unsubscribe(M.CkL.POPOUT_CLOSE, eI), D.S.unsubscribe(M.CkL.CLOSE_GIF_PICKER, e)
+    return eu.addEventListener("mousedown", eO), eu.addEventListener("contextmenu", eO), ed.subscribe(M.CkL.POPOUT_CLOSE, ev), D.S.subscribe(M.CkL.CLOSE_GIF_PICKER, e), () => {
+      eu.removeEventListener("mousedown", eO), eu.removeEventListener("contextmenu", eO), ed.unsubscribe(M.CkL.POPOUT_CLOSE, ev), D.S.unsubscribe(M.CkL.CLOSE_GIF_PICKER, e)
     }
-  }, [el, eI, ev, eu, ed]), (0, p.Tbt)(en);
-  let [eT, eS] = (0, b.US)(e_ ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eA, eC] = i.useState(false);
+  }, [el, ev, eO, eu, ed]), (0, p.Tbt)(en);
+  let [eI, eT] = (0, b.US)(e_ ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eS, eA] = i.useState(false);
   i.useEffect(() => {
-    el === L.X1.SOUNDBOARD && eC(true)
+    el === L.X1.SOUNDBOARD && eA(true)
   }, [el]), i.useEffect(() => () => {
-    eA && eS(j.L.TAKE_ACTION)
-  }, [eA, eS]), i.useEffect(() => {
+    eS && eT(j.L.TAKE_ACTION)
+  }, [eS, eT]), i.useEffect(() => {
     (0, x.ql)("")
   }, []), i.useEffect(() => {
     (!eh && (0, _.$s)() || eh && !em) && (0, x._Q)()
@@ -247,15 +247,15 @@ function Q(e) {
       }), er.current = true)
     }
   });
-  let eN = i.useCallback((e, t) => null == Y ? true : Y(e, "emoji_picker", t), [Y]),
-    eR = i.useCallback((e, t) => null == Y ? true : Y(e, "soundboard_picker", t), [Y]),
-    eP = (null == (s = K.soundmoji) ? true : s.allowSending) === true && null != Y,
-    ew = "left" === J ? "right" : "left",
-    eD = null != $ ? $ : "left" === J ? Z.positionLayerDefaultAlignLeft : Z.positionLayerDefaultAlignRight;
+  let eC = i.useCallback((e, t) => null == Y ? true : Y(e, "emoji_picker", t), [Y]),
+    eN = i.useCallback((e, t) => null == Y ? true : Y(e, "soundboard_picker", t), [Y]),
+    eR = (null == (s = K.soundmoji) ? true : s.allowSending) === true && null != Y,
+    eP = "left" === J ? "right" : "left",
+    ew = null != $ ? $ : "left" === J ? Z.positionLayerDefaultAlignLeft : Z.positionLayerDefaultAlignRight;
   return (0, r.jsx)(m.Z, {
     section: M.jXE.EXPRESSION_PICKER,
     children: (0, r.jsx)(I.W5, {
-      className: o()(Z.positionLayer, eD),
+      className: o()(Z.positionLayer, ew),
       targetRef: l,
       position: Q,
       align: J,
@@ -285,7 +285,7 @@ function Q(e) {
               className: Z.resizeHandle,
               onMouseDown: es,
               style: {
-                [ew]: false
+                [eP]: false
               }
             }), (0, r.jsxs)("div", {
               className: Z.contentWrapper,
@@ -320,7 +320,7 @@ function Q(e) {
                     isActive: el === L.X1.EMOJI,
                     viewType: L.X1.EMOJI,
                     children: B.intl.string(B.t.Xu3wE3)
-                  }), e_ && eP && (0, r.jsx)(q, {
+                  }), e_ && eR && (0, r.jsx)(q, {
                     id: k.Hr,
                     "aria-controls": k.gV,
                     "aria-selected": el === L.X1.SOUNDBOARD,
@@ -328,7 +328,7 @@ function Q(e) {
                     viewType: L.X1.SOUNDBOARD,
                     children: (0, r.jsxs)("div", {
                       className: Z.soundmojiLabelContainer,
-                      children: [B.intl.string(B.t.EHlAMc), null != eT && (0, r.jsx)(p.IGR, {
+                      children: [B.intl.string(B.t.EHlAMc), null != eI && (0, r.jsx)(p.IGR, {
                         text: B.intl.string(B.t.y2b7CA)
                       })]
                     })
@@ -339,7 +339,7 @@ function Q(e) {
                 channel: W,
                 containerWidth: eo,
                 onSelectSticker: H,
-                closePopout: eI,
+                closePopout: ev,
                 ref: e => {
                   ei.current = e
                 }
@@ -356,22 +356,22 @@ function Q(e) {
                 includeCreateEmojiButton: P,
                 emojiSize: null != eo && eo < z ? k.Su.MEDIUM : k.Su.LARGE,
                 pickerIntention: U.Hz.CHAT,
-                closePopout: eI,
+                closePopout: ev,
                 onSelectEmoji: V,
-                onSelectSoundmoji: eN,
+                onSelectSoundmoji: eC,
                 ref: e => {
                   ei.current = e
                 },
                 shouldShowSoundmojiInEmojiPicker: (null == (t = K.soundmoji) ? true : t.allowSending) === true,
-                showAddEmojiButton: eO
+                showAddEmojiButton: ey.enabled
               }) : null, el === L.X1.SOUNDBOARD ? (0, r.jsx)("div", {
                 className: Z.soundboardContainer,
                 children: (0, r.jsx)(A.Z, {
                   guildId: W.guild_id,
                   channel: W,
                   containerWidth: eo,
-                  onClose: eI,
-                  onSelect: eR,
+                  onClose: ev,
+                  onSelect: eN,
                   analyticsSource: "expression-picker",
                   renderHeader: e => (0, r.jsx)("div", {
                     className: Z.soundboardHeader,

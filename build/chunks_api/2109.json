@@ -1,1 +1,1 @@
-{"id":"2109","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
+{"id":"2109","type":"experiment","data":{"id":"2024-11_seasonal_gifting_reminder","label":"Seasonal Gifting Reminder 2024","kind":"user","defaultConfig":{"enabled":false},"commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
