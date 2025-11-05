@@ -1,7 +1,7 @@
-/** Chunk was on 3270 **/
+/** Chunk was on 54400 **/
 /** chunk id: 572517, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => h
+  c: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,32 +15,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk897942 = require("./897942.jsx"),
   Chunk432483 = require("./432483.js");
 
-function h() {
+function x() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    h = (0, Chunk410030.ZP)(),
-    m = (0, Chunk780384.wj)(h),
-    _ = (0, Chunk347896.Z)(),
-    f = null == _ ? true : _.planSelectionBanner,
+    x = (0, Chunk410030.ZP)(),
+    h = (0, Chunk780384.wj)(x),
+    f = (0, Chunk347896.Z)(),
+    _ = null == f ? true : f.planSelectionBanner,
     {
-      claimableRewards: x
+      claimableRewards: m
     } = (0, Chunk987209.wD)();
-  if (null == f || null == x) return null;
-  let j = null == (e = f.getBackgroundImageUrl) ? true : module.call(f, m),
+  if (null == _ || null == m) return null;
+  let j = null == (e = _.getBackgroundImageUrl) ? true : module.call(_, h),
     g = (0, Chunk717401.Yr)(j),
-    b = null == (t = f.gradientConfig) ? true : exports.call(f, {
-      isDarkMode: m,
+    b = null == (t = _.gradientConfig) ? true : exports.call(_, {
+      isDarkMode: h,
       isAndroid: false
     }),
-    L = (0, Chunk717401.Tl)(b);
+    y = (0, Chunk717401.Tl)(b);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
-    style: null != g ? g : L,
+    style: null != g ? g : y,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk432483.avatar,
       children: (0, Chunk951288.jsx)(Chunk897942.Z, {
-        claimableRewards: x,
-        maxRewardImageSrc: f.getImageUrl(m, require),
+        claimableRewards: m,
+        maxRewardImageSrc: _.getImageUrl(h, require),
         size: Chunk481060.EFr.SIZE_40,
         imageScaling: 2
       })
@@ -48,7 +48,7 @@ function h() {
       variant: "text-md/medium",
       className: Chunk432483.bannerText,
       color: "always-white",
-      children: f.desktopBannerText(x.length)
+      children: _.desktopBannerText(m.length)
     })]
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 623132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -139,7 +139,7 @@ function D(e) {
   return (0, r.jsx)(c.nn4, {
     id: a,
     children: P.intl.format(P.t.TM0XDY, {
-      name: g.ZP.getName(n, i, t)
+      name: f.ZP.getName(n, i, t)
     })
   })
 }
@@ -189,8 +189,8 @@ function A(e) {
     guildId: a,
     channelId: u,
     widgetType: d,
-    applicationId: f
-  } = e, g = (0, s.Dt)(), b = (0, s.Dt)(), {
+    applicationId: g
+  } = e, f = (0, s.Dt)(), b = (0, s.Dt)(), {
     trackUserProfileEditAction: h
   } = (0, p.KZ)(), [y, v] = i.useState("idle"), [O, j] = i.useState(null != t ? t : ""), x = i.useRef(null), _ = i.useRef(null), I = P.intl.string(P.t.xKSfBT), S = null != t && "" !== t.trim(), E = i.useCallback(() => {
     h({
@@ -200,12 +200,12 @@ function A(e) {
   }, [d, h]), T = i.useCallback(() => {
     let e = O.trim(),
       n = e !== (null != t ? t : "").trim();
-    (0, m.Bu)(d, f, "" !== e ? e : true), v("completed"), n && h({
+    (0, m.Bu)(d, g, "" !== e ? e : true), v("completed"), n && h({
       action: "COMMENTARY_EDITED",
       widgetEdited: d,
-      gameId: f
+      gameId: g
     })
-  }, [d, f, O, t, h]), C = i.useCallback(e => {
+  }, [d, g, O, t, h]), C = i.useCallback(e => {
     j(e)
   }, []);
   return i.useEffect(() => {
@@ -219,10 +219,10 @@ function A(e) {
     className: w.textAreaContainer,
     children: [(0, r.jsx)(c.nn4, {
       tag: "label",
-      htmlFor: g,
+      htmlFor: f,
       children: P.intl.string(P.t.JxKXeT)
     }), (0, r.jsx)(c.Kx8, {
-      id: g,
+      id: f,
       value: O,
       placeholder: I,
       onChange: C,
@@ -274,7 +274,7 @@ function Z(e) {
     widgetType: s,
     disableInteraction: u = false,
     index: d,
-    onRemoveGame: g,
+    onRemoveGame: f,
     coverRef: p,
     className: P
   } = e, {
@@ -284,15 +284,15 @@ function Z(e) {
   } = o, {
     coverImageUrl: R,
     gameName: G,
-    isLoading: B
-  } = (0, _.Z)(D), L = {
+    isLoading: L
+  } = (0, _.Z)(D), B = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, M = f.default.getCurrentUser(), F = (null == M ? true : M.id) === t.id, U = 1 === (0, m.Gv)(s), W = !u && F, H = W && (0, m.vI)(s), z = W && !U, {
+  }, M = g.default.getCurrentUser(), U = (null == M ? true : M.id) === t.id, F = 1 === (0, m.Gv)(s), H = !u && U, W = H && (0, m.vI)(s), z = H && !F, {
     registerDragHandleRef: K
-  } = (0, h.C)(), V = i.useRef(null);
-  if (B) return (0, r.jsx)(v.i, {});
-  let Y = () => (0, r.jsx)(y.Z, {
+  } = (0, h.C)(), Y = i.useRef(null);
+  if (L) return (0, r.jsx)(v.i, {});
+  let V = () => (0, r.jsx)(y.Z, {
       coverRef: p,
       className: null == R || u ? true : I.hoverActiveEffect,
       imageSrc: R,
@@ -302,27 +302,27 @@ function Z(e) {
       disableInteraction: u,
       hideTooltip: true
     }),
-    q = () => (0, r.jsxs)("div", {
+    X = () => (0, r.jsxs)("div", {
       className: l()(w.card, P),
       children: [z ? (0, r.jsxs)("div", {
-        ref: V,
+        ref: Y,
         className: w.dragHandleContainer,
-        children: [Y(), (0, r.jsx)(b.e_, {
+        children: [V(), (0, r.jsx)(b.e_, {
           buttonRef: K(o.applicationId),
           className: w.dragHandle,
           focusProps: {
-            ringTarget: V
+            ringTarget: Y
           }
         })]
-      }) : Y(), (0, r.jsxs)("div", {
+      }) : V(), (0, r.jsxs)("div", {
         className: w.details,
-        children: [u ? (0, r.jsx)(c.Heading, E(S({}, L), {
+        children: [u ? (0, r.jsx)(c.Heading, E(S({}, B), {
           children: G
         })) : (0, r.jsx)(C, S({
           applicationId: D,
           userId: t.id,
           gameName: G
-        }, L)), H ? (0, r.jsx)(A, {
+        }, B)), W ? (0, r.jsx)(A, {
           text: k,
           user: t,
           guildId: n,
@@ -336,7 +336,7 @@ function Z(e) {
           channelId: a
         }), (0, r.jsx)(O.Z, {
           tags: Z,
-          isCurrentUser: F,
+          isCurrentUser: U,
           widgetType: s,
           applicationId: D,
           disableInteraction: u,
@@ -347,17 +347,17 @@ function Z(e) {
           guildId: n,
           channelId: a
         })]
-      }), !u && F && (0, r.jsx)(j.Z, {
+      }), !u && U && (0, r.jsx)(j.Z, {
         game: o,
         widgetType: s,
         className: w.removeGameButton,
-        onRemove: () => null == g ? true : g(o.applicationId)
+        onRemove: () => null == f ? true : f(o.applicationId)
       })]
     });
   return z ? (0, r.jsx)(T, {
     index: null != d ? d : 0,
     widgetType: s,
     game: o,
-    children: q()
-  }) : q()
+    children: X()
+  }) : X()
 }

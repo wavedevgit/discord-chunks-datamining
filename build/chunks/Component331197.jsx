@@ -43,9 +43,9 @@ function E(e) {
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
     suppress: M
-  } = (0, _.Z)(t), R = (0, l.e7)([y.Z], () => y.Z.isDeaf()), D = w || M || R, k = (0, m.sR)({
+  } = (0, _.Z)(t), R = (0, l.e7)([y.Z], () => y.Z.isDeaf()), D = w || M || R, L = (0, m.sR)({
     isSoundboardButtonDisabled: D
-  }), [L, U] = (0, f.cv)(k), {
+  }), [k, U] = (0, f.cv)(L), {
     analyticsLocations: B
   } = (0, u.ZP)(), {
     isHovered: F,
@@ -124,7 +124,7 @@ function E(e) {
             guildId: A,
             channel: t,
             onClose: n,
-            gridNotice: L === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
+            gridNotice: k === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
               onClose: n,
               markAsDismissed: U
             }),

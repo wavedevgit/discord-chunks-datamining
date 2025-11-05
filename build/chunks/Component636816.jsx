@@ -22,19 +22,19 @@ function h(e) {
     guildProfile: p,
     fetchGuildProfile: g,
     fetchStatus: m
-  } = (0, o.u)(t), C = m !== a.a.FETCHED, b = null != p && l.Y.VISIBLE.has(p.visibility);
+  } = (0, o.u)(t), C = m !== a.a.FETCHED, f = null != p && l.Y.VISIBLE.has(p.visibility);
   r.useEffect(() => {
     g()
   }, [t, g]);
-  let f = [];
-  if (n === u.d4z.GUILD_ANNOUNCEMENT && (f.push(d.intl.format(d.t.tI7KNX, {
+  let O = [];
+  if (n === u.d4z.GUILD_ANNOUNCEMENT && (O.push(d.intl.format(d.t.tI7KNX, {
       documentationLink: c.Z.getArticleURL(u.BhN.ANNOUNCEMENT_CHANNELS)
-    })), !C && !b)) {
+    })), !C && !f)) {
     let e = d.intl.string(d.t["2Ab4Id"]);
-    f.push(e)
+    O.push(e)
   }
-  return 0 === f.length ? null : (0, i.jsx)(i.Fragment, {
-    children: f.map((e, t) => (0, i.jsx)(s.Text, {
+  return 0 === O.length ? null : (0, i.jsx)(i.Fragment, {
+    children: O.map((e, t) => (0, i.jsx)(s.Text, {
       className: h,
       variant: "text-sm/normal",
       children: e

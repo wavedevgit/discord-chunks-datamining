@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 810473, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -19,12 +19,12 @@ function d() {
     d = (0, Chunk172416.Un)({
       location: "useAvailableWidgetTypes"
     }),
-    f = (0, Chunk880421.k)({
+    g = (0, Chunk880421.k)({
       location: "useAvailableWidgetTypes"
     }),
-    g = d || require;
+    f = d || require;
   return Chunk647438.useMemo(() => {
     let e = new Set(exports.map(e => e.type));
-    return Object.values(Chunk296009.l).filter(t => (t !== i.l.APPLICATION || !!f) && (!o.Ki.includes(t) || !!g) && !e.has(t))
-  }, [exports, g, f])
+    return Object.values(Chunk296009.l).filter(t => (t !== i.l.APPLICATION || !!g) && (!o.Ki.includes(t) || !!f) && !e.has(t))
+  }, [exports, f, g])
 }

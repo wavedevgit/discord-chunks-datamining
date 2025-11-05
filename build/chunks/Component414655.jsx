@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -51,13 +51,13 @@ function P(e) {
   } = (0, p.kZ)(n, t.id), N = i.useCallback(() => {
     if (null == n) return;
     let e = T ? a.f.PRIVATE : a.f.PUBLIC;
-    C(!T), g.Z.updateWishlistVisibility(n, e), (0, b.Er)({
+    C(!T), f.Z.updateWishlistVisibility(n, e), (0, b.Er)({
       wishlistId: n,
       action: T ? j.NW.WISHLIST_TOGGLE_PRIVATE : j.NW.WISHLIST_TOGGLE_PUBLIC,
       analyticsLocations: w
     })
   }, [n, T, w]), A = i.useCallback(() => {
-    (0, o.pT)(), (0, f.mK)({
+    (0, o.pT)(), (0, g.mK)({
       analyticsLocations: w,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
     })

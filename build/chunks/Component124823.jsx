@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 124823, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -110,7 +110,7 @@ function w(e) {
             children: [(0, r.jsx)(I.Z, {
               user: n,
               guildId: w.guild_id,
-              nickname: p.ZP.getName(null, w.id, n),
+              nickname: h.ZP.getName(null, w.id, n),
               pronouns: null == D ? true : D.pronouns,
               onOpenProfile: A ? true : B,
               tags: (0, r.jsx)(y.Z, {
@@ -119,16 +119,16 @@ function w(e) {
               })
             }), (0, r.jsxs)(C.Z.Overlay, {
               className: N.overlay,
-              children: [(0, r.jsx)(O.Z, {
+              children: [(0, r.jsx)(v.Z, {
                 heading: P.intl.string(P.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(v.Z, {
+                children: (0, r.jsx)(O.Z, {
                   userBio: null == D ? true : D.bio,
                   userId: n.id,
                   animateOnHoverOrFocusOnly: true,
                   isHoveringOrFocusing: H
                 })
-              }), (0, r.jsx)(O.Z, {
+              }), (0, r.jsx)(v.Z, {
                 heading: P.intl.string(P.t["A//N4k"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(j.Z, {
@@ -149,7 +149,7 @@ function w(e) {
             className: T.footerButton,
             children: P.intl.string(P.t["+Xp3hq"])
           })
-        }), (null == D ? true : D.profileEffect) != null && (0, r.jsx)(h.Z, {
+        }), (null == D ? true : D.profileEffect) != null && (0, r.jsx)(p.Z, {
           skuId: null == D || null == (t = D.profileEffect) ? true : t.skuId,
           isHovering: F
         })]

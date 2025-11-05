@@ -1,14 +1,14 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 99325, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Dr: () => _,
   Rq: () => m,
   So: () => b,
   Su: () => y,
-  YZ: () => p,
+  YZ: () => h,
   _Q: () => x,
   bF: () => f,
-  c$: () => h,
+  c$: () => p,
   kx: () => g
 });
 var Chunk954955 = require("./954955.js"),
@@ -20,7 +20,7 @@ var Chunk954955 = require("./954955.js"),
   Chunk866112 = require("./866112.js"),
   Chunk75666 = require("./75666.js"),
   Chunk981631 = require("./981631.js");
-let h = i()(async (e, t) => {
+let p = i()(async (e, t) => {
     try {
       s.Z.dispatch({
         type: "GUILD_DIRECTORY_FETCH_START"
@@ -43,7 +43,7 @@ let h = i()(async (e, t) => {
       })
     }
   }, 200),
-  p = i()(async e => {
+  h = i()(async e => {
     try {
       let t = await a.tn.get({
         url: u.ANM.DIRECTORY_CHANNEL_CATEGORY_COUNTS(e),

@@ -1,7 +1,7 @@
-/** Chunk was on 3270 **/
+/** Chunk was on 54400 **/
 /** chunk id: 184160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  x: () => h
+  x: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,22 +16,22 @@ var Chunk512722 = require("./512722.js"),
   Chunk614223 = require("./614223.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function x(e) {
   let {
     handleStepChange: t,
     handleClose: n
   } = e, {
     activeSubscription: i,
-    selectedSkuId: h,
-    setSelectedPlanId: m,
-    startedPaymentFlowWithPaymentSourcesRef: _
-  } = (0, c.JL)(), {
-    isGift: f
-  } = (0, d.wD)(), x = null != i ? (0, o.Af)(i) : null, j = null != x ? (0, o.gq)(x.planId) : null, g = null != x ? (0, o.Rd)(x.planId) : null, b = (0, u.Kp)({
+    selectedSkuId: x,
+    setSelectedPlanId: h,
+    startedPaymentFlowWithPaymentSourcesRef: f
+  } = (0, d.JL)(), {
+    isGift: _
+  } = (0, C.wD)(), m = null != i ? (0, o.Af)(i) : null, j = null != m ? (0, o.gq)(m.planId) : null, g = null != m ? (0, o.Rd)(m.planId) : null, b = (0, u.Kp)({
     isTrial: false,
-    isGift: f,
-    selectedSkuId: h,
-    startedPaymentFlowWithPaymentSources: _.current
+    isGift: _,
+    selectedSkuId: x,
+    startedPaymentFlowWithPaymentSources: f.current
   });
   return l()(null != g, "Expected premium type"), (0, r.jsx)(s.Z, {
     premiumType: g,
@@ -46,7 +46,7 @@ function h(e) {
         variant: "primary",
         text: p.intl.string(p.t["3PatSz"]),
         onClick: () => {
-          b ? (m((0, u.nA)(h, i)), t(C.h8.REVIEW)) : t(C.h8.PLAN_SELECT)
+          b ? (h((0, u.nA)(x, i)), t(c.h8.REVIEW)) : t(c.h8.PLAN_SELECT)
         }
       }), (0, r.jsx)(a.Button, {
         variant: "secondary",

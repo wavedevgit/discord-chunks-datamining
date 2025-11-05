@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 781040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -96,7 +96,7 @@ let j = e => {
       additionalMenuItems: l
     } = e, {
       trackUserProfileEditAction: o
-    } = (0, g.KZ)(), u = e => {
+    } = (0, f.KZ)(), u = e => {
       if (e.shiftKey) {
         (0, p.y8)(i.type), o({
           action: "WIDGET_REMOVED",
@@ -108,7 +108,7 @@ let j = e => {
           default: e
         } = await n.e("70887").then(n.bind(n, 37668));
         return t => (0, r.jsx)(e, O(v({}, t), {
-          userId: f.default.getId(),
+          userId: g.default.getId(),
           widget: i,
           trackUserProfileEditAction: o
         }))

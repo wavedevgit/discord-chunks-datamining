@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 450369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q: () => k,
@@ -80,8 +80,8 @@ let k = 16 / 9,
       width: o,
       isModerator: d,
       onContextMenu: u,
-      popoutType: h
-    } = e, p = i.useRef(null), {
+      popoutType: p
+    } = e, h = i.useRef(null), {
       reducedMotion: f
     } = i.useContext(c.Sfi), {
       blocked: g,
@@ -89,13 +89,13 @@ let k = 16 / 9,
       id: b
     } = t;
     return (0, r.jsx)(C.Z, {
-      targetElementRef: p,
+      targetElementRef: h,
       user: s,
       guildId: a,
       channelId: l.id,
       clickTrap: true,
       children: e => (0, r.jsx)(c.P3F, M(L({
-        innerRef: p,
+        innerRef: h,
         onContextMenu: e => u(n, e)
       }, e), {
         children: (0, r.jsx)(N.Z, {
@@ -106,7 +106,7 @@ let k = 16 / 9,
           channel: l,
           className: D.tile,
           inCall: true,
-          popoutType: h,
+          popoutType: p,
           pulseSpeakingIndicator: !f.enabled,
           width: o,
           onContextMenu: u,
@@ -123,37 +123,37 @@ let k = 16 / 9,
       width: a,
       isModerator: s,
       onContextMenu: u,
-      popoutType: p
+      popoutType: h
     } = e, {
       reducedMotion: f
     } = i.useContext(c.Sfi), {
       id: g,
       blocked: b,
-      ignored: v
-    } = t, O = (0, o.Wu)([I.Z], () => I.Z.getAllActiveStreams(), []), {
+      ignored: O
+    } = t, v = (0, o.Wu)([I.Z], () => I.Z.getAllActiveStreams(), []), {
       selectedParticipant: C,
       largeStream: S
     } = (0, o.cj)([m.Z], () => ({
       selectedParticipant: null != l ? m.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && m.Z.getStageStreamSize(l.id)
     })), T = i.useCallback((e, t) => {
-      if (e.type === A.fO.STREAM && 0 === O.filter(t => (0, y.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
+      if (e.type === A.fO.STREAM && 0 === v.filter(t => (0, y.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
         if (!(0, x.p9)(l, P.Z, E.Z, Z.Z, _.default)[0]) return;
-        (0, h.rn)((0, y.my)(e.id), {
+        (0, p.rn)((0, y.my)(e.id), {
           forceMultiple: t.shiftKey
         })
       }(null == C ? true : C.id) === e.id ? S ? (d.Z.selectParticipant(l.id, null), d.Z.updateStageStreamSize(l.id, false)) : d.Z.updateStageStreamSize(l.id, true) : (d.Z.updateStageStreamSize(l.id, false), d.Z.selectParticipant(l.id, e.id))
-    }, [O, l, C, S]);
+    }, [v, l, C, S]);
     return (0, r.jsx)(N.Z, {
       participant: n,
       aspectRatio: k,
       fit: n.type === A.fO.USER ? j.L.COVER : true,
       blocked: b,
-      ignored: v,
+      ignored: O,
       channel: l,
       className: D.tile,
       inCall: true,
-      popoutType: p,
+      popoutType: h,
       onClick: T,
       onContextMenu: u,
       pulseSpeakingIndicator: !f.enabled,
@@ -169,8 +169,8 @@ let k = 16 / 9,
       width: c,
       popoutType: d
     } = e, {
-      newestAnalyticsLocation: h
-    } = (0, f.ZP)(p.Z.STAGE_TILE), _ = (0, v.bp)(), y = l.getGuildId(), x = S.default.getId();
+      newestAnalyticsLocation: p
+    } = (0, f.ZP)(h.Z.STAGE_TILE), _ = (0, O.bp)(), y = l.getGuildId(), x = S.default.getId();
     a()(null != y, "Channel cannot be guildless");
     let {
       user: j
@@ -199,7 +199,7 @@ let k = 16 / 9,
                 stream: e.stream,
                 appContext: _,
                 exitFullscreen: () => {},
-                onInteraction: (0, b.u)("StreamContextMenu", h, {
+                onInteraction: (0, b.u)("StreamContextMenu", p, {
                   entrypoint: a,
                   targetUserId: j.id,
                   tileType: A.TH.STREAM
@@ -211,14 +211,14 @@ let k = 16 / 9,
             return;
           case A.fO.USER:
           default:
-            if (E(A.TH.USER), i) return (0, O.D)(t, j, l, {
+            if (E(A.TH.USER), i) return (0, v.D)(t, j, l, {
               context: _
             }, (e, t) => (0, b.o)({
               menuName: e,
               menuItemProps: t,
               entrypoint: A.A5.THREE_DOT,
               targetUserId: j.id,
-              location: h,
+              location: p,
               tileType: A.TH.USER
             }));
             (0, u.jW)(t, async () => {
@@ -232,7 +232,7 @@ let k = 16 / 9,
                 showMediaItems: true,
                 showStageChannelItems: true,
                 showChatItems: false,
-                onInteraction: (0, b.u)("GuildChannelUserContextMenu", h, {
+                onInteraction: (0, b.u)("GuildChannelUserContextMenu", p, {
                   targetUserId: j.id,
                   tileType: A.TH.USER
                 })

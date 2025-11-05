@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 173951, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -17,7 +17,7 @@ function o(e) {
       channelId: u,
       disableInteraction: d
     } = e,
-    f = function(e, t) {
+    g = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -53,7 +53,7 @@ function o(e) {
     userId: o.id,
     widget: c,
     disableInteraction: d
-  }, f), n = n = {
+  }, g), n = n = {
     children: c.games.length > 0 ? (0, r.jsx)(l.Z, {
       userId: o.id,
       widgetType: c.type,

@@ -1,16 +1,16 @@
-/** Chunk was on 95257 **/
-/** chunk id: 434065, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 97961 **/
+/** chunk id: 434065, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  r: () => l
+  r: () => o
 });
 var Chunk191336 = require("./191336.js"),
   Chunk731965 = require("./731965.js");
-let l = (0, Chunk191336.U)(e => ({
+let o = (0, Chunk191336.U)(t => ({
   favoriteAdded: false,
-  notifyFavoriteAdded: () => (0, i.j)(() => e({
+  notifyFavoriteAdded: () => (0, a.j)(() => t({
     favoriteAdded: true
   })),
-  clearFavoriteAdded: () => (0, i.j)(() => e({
+  clearFavoriteAdded: () => (0, a.j)(() => t({
     favoriteAdded: false
   }))
 }))

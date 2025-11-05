@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 28671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -31,13 +31,13 @@ function b(e) {
     null != y && ((0, u.qH)(y.type, y, true), h({
       action: "WIDGET_ADDED",
       widgetEdited: y.type
-    }), (0, d.L$)(g.qb.WIDGET_ADDED))
+    }), (0, d.L$)(f.qb.WIDGET_ADDED))
   }, [y, h]);
-  return (0, r.jsx)(f.Z, {
+  return (0, r.jsx)(g.Z, {
     user: t,
     widget: y,
     subtle: true,
-    cta: (0, r.jsx)(f.Z.Cta, {
+    cta: (0, r.jsx)(g.Z.Cta, {
       heading: m.intl.format(m.t.OIzLCy, {
         applicationName: n.name
       }),

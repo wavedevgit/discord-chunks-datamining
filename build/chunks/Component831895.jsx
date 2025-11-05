@@ -1,4 +1,4 @@
-/** Chunk was on 3270 **/
+/** Chunk was on 54400 **/
 /** chunk id: 831895, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -17,50 +17,50 @@ var Chunk951288 = require("./951288.js"),
 function p(e) {
   var t, n, l, p;
   let {
-    defaultCategory: h,
-    onCategoryChange: m,
-    className: _
-  } = e, [f, x] = i.useState(h), [j, g] = i.useState(null), b = (0, o.Z)(), L = i.useMemo(() => [{
-    name: C.intl.string(C.t["6Zuivx"]),
-    value: d.KN.Trick,
+    defaultCategory: x,
+    onCategoryChange: h,
+    className: f
+  } = e, [_, m] = i.useState(x), [j, g] = i.useState(null), b = (0, o.Z)(), y = i.useMemo(() => [{
+    name: c.intl.string(c.t["6Zuivx"]),
+    value: C.KN.Trick,
     key: "Trick",
     icon: (0, r.jsx)(s.yDF, {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => g(d.KN.Trick),
+    onMouseEnter: () => g(C.KN.Trick),
     onMouseLeave: () => g(null)
   }, {
-    name: C.intl.string(C.t["2UeOlY"]),
-    value: d.KN.Treat,
+    name: c.intl.string(c.t["2UeOlY"]),
+    value: C.KN.Treat,
     key: "Treat",
     icon: (0, r.jsx)(s.sq, {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => g(d.KN.Treat),
+    onMouseEnter: () => g(C.KN.Treat),
     onMouseLeave: () => g(null)
-  }], []), v = i.useCallback(e => {
-    x(e.value), m(e.value)
-  }, [m]), y = null == b || null == (n = b.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, S = null == b || null == (p = b.segmentedControlAnimations) || null == (l = p.treat) ? true : l.getAnimationData;
+  }], []), L = i.useCallback(e => {
+    m(e.value), h(e.value)
+  }, [h]), v = null == b || null == (n = b.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, S = null == b || null == (p = b.segmentedControlAnimations) || null == (l = p.treat) ? true : l.getAnimationData;
   return (0, r.jsxs)("div", {
-    className: a()(u.container, _),
-    children: [(0, r.jsx)(c.w, {
-      options: L,
-      value: f,
-      onChange: v
-    }), j === d.KN.Trick && null != y && (0, r.jsx)("div", {
+    className: a()(u.container, f),
+    children: [(0, r.jsx)(d.w, {
+      options: y,
+      value: _,
+      onChange: L
+    }), j === C.KN.Trick && null != v && (0, r.jsx)("div", {
       className: a()(u.animationOverlay, u.trickAnimation),
       children: (0, r.jsx)(s.Fmz, {
         shouldAnimate: true,
         loop: true,
         autoplay: true,
         className: u.lottieAnimation,
-        importData: y,
+        importData: v,
         renderer: s.Fmz.Renderers.SVG,
-        versionKey: +(j === d.KN.Trick)
+        versionKey: +(j === C.KN.Trick)
       })
-    }), j === d.KN.Treat && null != S && (0, r.jsx)("div", {
+    }), j === C.KN.Treat && null != S && (0, r.jsx)("div", {
       className: a()(u.animationOverlay, u.treatAnimation),
       children: (0, r.jsx)(s.Fmz, {
         shouldAnimate: true,
@@ -69,7 +69,7 @@ function p(e) {
         className: u.lottieAnimation,
         importData: S,
         renderer: s.Fmz.Renderers.SVG,
-        versionKey: +(j === d.KN.Treat)
+        versionKey: +(j === C.KN.Treat)
       })
     })]
   })

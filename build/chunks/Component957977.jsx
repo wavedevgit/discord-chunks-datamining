@@ -5,8 +5,7 @@ require.d(exports, {
   DQ: () => v,
   Gu: () => N,
   Jb: () => S,
-  jm: () => A,
-  l7: () => O
+  jm: () => A
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -77,12 +76,7 @@ function y(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let O = {
-  NOT_SET: "",
-  NONE: "0",
-  SMALL: "7px 10px",
-  MEDIUM: "10px"
-};
+let O = "10px";
 
 function v(e) {
   let {
@@ -286,7 +280,7 @@ function C(e) {
     collapsibleClassName: s,
     className: l,
     value: c = null,
-    size: d = O.MEDIUM,
+    size: d = O,
     radioPosition: _ = "left",
     onChange: h = f.dG,
     disabled: g = false,

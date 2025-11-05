@@ -2,7 +2,7 @@
 /** chunk id: 462061, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => D,
-  Z: () => k
+  Z: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -57,7 +57,7 @@ function D(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     participant: t,
     channel: n,
@@ -67,8 +67,8 @@ function k(e) {
     popoutType: v,
     fit: Z,
     onVideoResize: D,
-    blocked: k,
-    ignored: L,
+    blocked: L,
+    ignored: k,
     noVideoRender: U = false,
     pulseSpeakingIndicator: B = false,
     paused: F = false
@@ -116,7 +116,7 @@ function k(e) {
     userId: G.id
   }, W) : (0, r.jsx)("div", {
     className: a()(w.content, {
-      [w.blockedAvatar]: k || L
+      [w.blockedAvatar]: L || k
     }),
     children: (0, r.jsx)(b.Z, {
       "aria-label": $,

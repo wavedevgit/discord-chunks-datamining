@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => y,
@@ -106,11 +106,11 @@ function v(e) {
   }) : i === p.oh.MUTUAL_GUILDS ? (0, r.jsx)(d.Z, {
     user: t,
     onClose: m
-  }) : i === p.oh.WIDGETS ? (0, r.jsx)(f.C, {
+  }) : i === p.oh.WIDGETS ? (0, r.jsx)(g.C, {
     user: t,
     guildId: o,
     channelId: c
-  }) : i === p.oh.WISHLIST ? (0, r.jsx)(g.Z, {
+  }) : i === p.oh.WISHLIST ? (0, r.jsx)(f.Z, {
     profileOwner: t
   }) : null
 }
@@ -124,8 +124,8 @@ function O(e) {
     guildId: s,
     channelId: u,
     items: d,
-    initialSection: f,
-    initialSubsection: g,
+    initialSection: g,
+    initialSubsection: f,
     onClose: p
   } = e, {
     trackUserProfileAction: y
@@ -137,9 +137,9 @@ function O(e) {
     let {
       section: t
     } = e;
-    return t === f
+    return t === g
   })) ? t : d[0]), {
-    subsection: g
+    subsection: f
   }));
   return (0, r.jsxs)("div", {
     className: m.container,

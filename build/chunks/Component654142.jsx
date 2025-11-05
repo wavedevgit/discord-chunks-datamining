@@ -1,4 +1,4 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 27 **/
 /** chunk id: 654142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -71,7 +71,7 @@ let _ = Chunk647438.memo(function(e) {
     name: O,
     color: v,
     children: j
-  } = t, C = j.map(e => e.id), x = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), S = function(e) {
+  } = t, C = j.map(e => e.id), E = (0, s.Z)(e => e.guildId), x = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), S = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -106,8 +106,8 @@ let _ = Chunk647438.memo(function(e) {
   }, [y, O, v, Z, P]);
   return (0, r.jsx)(h.Z, b(m({}, _), {
     folderNode: t,
-    expanded: E,
-    selected: null != x && C.includes(x),
+    expanded: x,
+    selected: null != E && C.includes(E),
     mentionCount: P,
     isMentionLowImportance: N,
     unread: Z,

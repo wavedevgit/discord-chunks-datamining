@@ -1,7 +1,7 @@
-/** Chunk was on 94758 **/
+/** Chunk was on 96413 **/
 /** chunk id: 221300, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,57 +13,57 @@ var Chunk979554 = require("./979554.js"),
   Chunk688192 = require("./688192.jsx"),
   Chunk232644 = require("./232644.js");
 
-function d(e) {
+function u(e) {
   let {
     item: t,
     profileOwner: r,
-    isHighlighted: d,
+    isHighlighted: u,
     surface: f = c.Y.PROFILE_MODAL
-  } = e, m = t.collectiblesItem;
-  switch (m.type) {
-    case i.Z.PROFILE_EFFECT:
-      return (0, n.jsx)("div", {
-        className: u.profileEffectPreview,
-        children: (0, n.jsx)(o.Z, {
-          skuId: m.skuId,
-          isHighlighted: d,
+  } = e, p = t.collectiblesItem;
+  switch (p.type) {
+    case s.Z.PROFILE_EFFECT:
+      return (0, i.jsx)("div", {
+        className: d.profileEffectPreview,
+        children: (0, i.jsx)(o.Z, {
+          skuId: p.skuId,
+          isHighlighted: u,
           isPurchased: false,
           removeSetHeight: true
         })
       });
-    case i.Z.AVATAR_DECORATION:
-      return (0, n.jsx)("div", {
-        className: u.avatarDecorationPreview,
-        children: (0, n.jsx)(s.R, {
-          item: m,
+    case s.Z.AVATAR_DECORATION:
+      return (0, i.jsx)("div", {
+        className: d.avatarDecorationPreview,
+        children: (0, i.jsx)(l.R, {
+          item: p,
           user: r,
-          isHighlighted: d,
+          isHighlighted: u,
           isPurchased: false,
-          avatarSize: l.EFr.SIZE_80
+          avatarSize: a.EFr.SIZE_80
         })
       });
-    case i.Z.NAMEPLATE:
-      return (0, n.jsxs)("div", {
-        className: u.nameplatePreview,
-        children: [(0, n.jsx)("div", {
-          className: u.nameplateTopLeft,
-          children: (0, n.jsx)(a.Z, {
+    case s.Z.NAMEPLATE:
+      return (0, i.jsxs)("div", {
+        className: d.nameplatePreview,
+        children: [(0, i.jsx)("div", {
+          className: d.nameplateTopLeft,
+          children: (0, i.jsx)(n.Z, {
             user: r,
-            nameplate: m,
-            isHighlighted: d,
+            nameplate: p,
+            isHighlighted: u,
             showPlaceholderUser: true,
             showStatus: true,
             isPurchased: false,
             nameplatePreviewSize: "default",
             width: f === c.Y.GIFTING_FLOW ? 136 : 200
           })
-        }), (0, n.jsx)("div", {
-          className: u.nameplateBottomRight,
+        }), (0, i.jsx)("div", {
+          className: d.nameplateBottomRight,
           "aria-hidden": true,
-          children: (0, n.jsx)(a.Z, {
+          children: (0, i.jsx)(n.Z, {
             user: r,
-            nameplate: m,
-            isHighlighted: d,
+            nameplate: p,
+            isHighlighted: u,
             showPlaceholderUser: true,
             showStatus: true,
             isPurchased: false,

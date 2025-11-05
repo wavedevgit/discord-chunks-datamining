@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Q
@@ -167,7 +167,7 @@ function R(e) {
   let {
     component: t
   } = e;
-  if (Array.isArray(t)) return B(t);
+  if (Array.isArray(t)) return L(t);
   switch (t.type) {
     case "HERO":
       let {
@@ -187,24 +187,24 @@ function R(e) {
         }
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(L, k(D({}, i), {
-        body: B(n)
+      return (0, r.jsx)(B, k(D({}, i), {
+        body: L(n)
       }));
     case "GRID":
       return (0, r.jsx)(M, {
-        children: B(t.children)
+        children: L(t.children)
       });
     case "FIELD":
-      return (0, r.jsx)(F, {
+      return (0, r.jsx)(U, {
         value: G(t.value),
         name: G(t.name)
       });
     case "TEXT":
-      return (0, r.jsx)(U, D({}, t));
+      return (0, r.jsx)(F, D({}, t));
     case "TEXT_WITH_IMAGE":
-      return (0, r.jsx)(W, D({}, t));
-    case "SEPARATOR":
       return (0, r.jsx)(H, D({}, t));
+    case "SEPARATOR":
+      return (0, r.jsx)(W, D({}, t));
     case "SOCIAL_PROOF":
       return (0, r.jsx)(z, {})
   }
@@ -216,11 +216,11 @@ function G(e, t) {
   }, t)
 }
 
-function B(e) {
+function L(e) {
   return e.map((e, t) => G(e, t))
 }
 
-function L(e) {
+function B(e) {
   let {
     title: t,
     body: n,
@@ -274,7 +274,7 @@ function M(e) {
   })
 }
 
-function F(e) {
+function U(e) {
   let {
     name: t,
     value: n
@@ -284,7 +284,7 @@ function F(e) {
   })
 }
 
-function U(e) {
+function F(e) {
   let {
     content: t
   } = e, n = i.useId(), a = (0, h._)();
@@ -298,7 +298,7 @@ function U(e) {
   })
 }
 
-function W(e) {
+function H(e) {
   let {
     content: t,
     image: n,
@@ -320,7 +320,7 @@ function W(e) {
     className: C.textWithImage,
     children: [null != o && "left" === i ? (0, r.jsxs)(r.Fragment, {
       children: [o, " "]
-    }) : null, (0, r.jsx)(U, {
+    }) : null, (0, r.jsx)(F, {
       content: t
     }), null != o && "right" === i ? (0, r.jsxs)(r.Fragment, {
       children: [" ", o]
@@ -328,7 +328,7 @@ function W(e) {
   })
 }
 
-function H(e) {
+function W(e) {
   let {
     size: t = "small",
     divider: n = false
@@ -343,13 +343,13 @@ function H(e) {
 
 function z() {
   let e = function() {
-      let e = Chunk647438.useContext(Y);
+      let e = Chunk647438.useContext(V);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
       return module
     }(),
     {
       game: t
-    } = q(module.widget);
+    } = X(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
     className: Chunk18827.socialProof,
     applicationId: exports.id,
@@ -376,7 +376,7 @@ function K(e, t) {
   return r
 }
 
-function V(e, t) {
+function Y(e, t) {
   var n, r;
   if (null == e || "skeleton" === t.mode) return null;
   let i = null == (r = e.match(N)) || null == (n = r[0]) ? true : n.slice(2, false);
@@ -384,11 +384,11 @@ function V(e, t) {
   let a = t.variables[i];
   return null == a || "unfurled_media" !== a.type ? null : a.media
 }
-let Y = Chunk647438.createContext(null);
+let V = Chunk647438.createContext(null);
 
-function q(e) {
-  return (0, o.cj)([f.Z, w.Z, P.Z], () => {
-    let t = f.Z.getApplication(e.applicationId);
+function X(e) {
+  return (0, o.cj)([g.Z, w.Z, P.Z], () => {
+    let t = g.Z.getApplication(e.applicationId);
     return {
       application: t,
       game: null != t ? P.Z.getGameByApplication(t) : null,
@@ -397,7 +397,7 @@ function q(e) {
   })
 }
 
-function X(e) {
+function q(e) {
   let {
     children: t,
     widget: n
@@ -457,13 +457,13 @@ let Q = Object.assign(function(e) {
     cta: a,
     subtle: u = false
   } = e, {
-    application: f,
+    application: g,
     game: m,
     config: b
-  } = q(n), h = null == f ? true : f.getIconURL(16), y = (0, x.O)(t.id).data, v = null == y ? true : y.find(e => e.application_id === n.applicationId), j = (0, p.Z)({
+  } = X(n), h = null == g ? true : g.getIconURL(16), y = (0, x.O)(t.id).data, v = null == y ? true : y.find(e => e.application_id === n.applicationId), j = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == m ? true : m.id,
-    source: g.m1.UserProfile,
+    source: f.m1.UserProfile,
     sourceUserId: t.id,
     trackEntryPointImpression: true
   }), {
@@ -471,7 +471,7 @@ let Q = Object.assign(function(e) {
     hasAlreadyLinked: w,
     canStartAuthorization: E,
     startAuthorization: N
-  } = (0, d.F)(f), Z = null == a && P && !w && E, G = (0, r.jsxs)(r.Fragment, {
+  } = (0, d.F)(g), Z = null == a && P && !w && E, G = (0, r.jsxs)(r.Fragment, {
     children: [null != h ? (0, r.jsx)("img", {
       className: C.appIcon,
       src: h,
@@ -482,11 +482,11 @@ let Q = Object.assign(function(e) {
       className: C.appIconPlaceholder
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
-      children: (null == f ? true : f.name) != null ? f.name : (0, r.jsx)("div", {
+      children: (null == g ? true : g.name) != null ? g.name : (0, r.jsx)("div", {
         className: C.textPlaceholder
       })
     })]
-  }), B = null == m ? (0, r.jsx)("div", {
+  }), L = null == m ? (0, r.jsx)("div", {
     className: C.header,
     children: G
   }) : (0, r.jsx)(c.u, {
@@ -498,7 +498,7 @@ let Q = Object.assign(function(e) {
       "aria-label": T.intl.string(T.t.ajHoOr),
       children: G
     })
-  }), L = (0, o.e7)([_.default], () => _.default.locale), M = i.useMemo(() => {
+  }), B = (0, o.e7)([_.default], () => _.default.locale), M = i.useMemo(() => {
     let e = function(e, t, n) {
       var r, i, a;
       let l = new Intl.NumberFormat(n, {
@@ -534,13 +534,13 @@ let Q = Object.assign(function(e) {
         config: t,
         numberFormat: l
       }
-    }(null != v ? v : null, null != b ? b : null, L);
+    }(null != v ? v : null, null != b ? b : null, B);
     return A.map(function t(n) {
       switch (n.type) {
         case "HERO":
           var r;
           return {
-            type: "HERO", body: n.body.map(t), title: K(n.title, e), image: V(n.image, e), imagePlaceholder: null == (r = e.config) ? true : r.hero_placeholder_image
+            type: "HERO", body: n.body.map(t), title: K(n.title, e), image: Y(n.image, e), imagePlaceholder: null == (r = e.config) ? true : r.hero_placeholder_image
           };
         case "GRID":
           return {
@@ -556,28 +556,28 @@ let Q = Object.assign(function(e) {
           };
         case "TEXT_WITH_IMAGE":
           return {
-            type: "TEXT_WITH_IMAGE", content: K(n.content, e), image: V(n.image, e), imagePosition: n.imagePosition
+            type: "TEXT_WITH_IMAGE", content: K(n.content, e), image: Y(n.image, e), imagePosition: n.imagePosition
           };
         case "SEPARATOR":
         case "SOCIAL_PROOF":
           return n
       }
     })
-  }, [b, v, L]);
+  }, [b, v, B]);
   return (0, r.jsxs)(S.Z, k(D({}, e), {
     userId: t.id,
     widget: n,
     className: l()(C.widgetContainer, u && C.subtle),
-    headerTitle: B,
+    headerTitle: L,
     dragHandleAdditionalMenuItems: null != m ? (0, r.jsx)(s.sNh, {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: s.iWm,
       action: j
     }) : null,
-    children: [(0, r.jsx)(Y.Provider, {
+    children: [(0, r.jsx)(V.Provider, {
       value: e,
-      children: (0, r.jsx)(X, {
+      children: (0, r.jsx)(q, {
         widget: n,
         children: (0, r.jsx)(R, {
           component: M

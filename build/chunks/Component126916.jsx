@@ -7,8 +7,8 @@ require.d(exports, {
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk588529 = require("./588529.js"),
   Chunk401302 = require("./401302.js"),
@@ -61,7 +61,7 @@ function b(e) {
   let {
     surveyId: t,
     survey: n,
-    onClose: a,
+    onClose: o,
     transitionState: u
   } = e, {
     getSurveyResponses: h,
@@ -69,21 +69,25 @@ function b(e) {
     trackDisplayedQuestions: b
   } = (0, c.H)(), y = h(t), O = (0, d.l6)(n), [v, I] = i.useState(O.blockId), [T, S] = i.useState(O.pageIndex), [A, C] = i.useState(false), N = (e, n) => {
     g(t, e, n)
-  }, R = i.useCallback(() => {
-    if (A) return void a();
-    (0, s.h7j)(e => (0, r.jsx)(s.ConfirmModal, E(m({
-      header: _.intl.string(_.t.T9Sx3z),
-      confirmText: _.intl.string(_.t.p89ACt),
-      cancelText: _.intl.string(_.t.oEAioF),
-      onConfirm: a,
-      confirmButtonColor: o.zx.Colors.RED
-    }, e), {
-      children: (0, r.jsx)(s.Text, {
-        variant: "text-md/normal",
-        children: _.intl.string(_.t.iCK6G0)
-      })
-    })))
-  }, [a, A]), P = i.useMemo(() => null == v ? [] : (0, d.B_)(n, {
+  }, R = i.useCallback(() => (A ? o() : (0, s.h7j)(e => (0, r.jsx)(a.Modal, E(m({
+    title: _.intl.string(_.t.T9Sx3z),
+    actions: [{
+      variant: "secondary",
+      text: _.intl.string(_.t.oEAioF),
+      onClick: e.onClose
+    }, {
+      variant: "critical-primary",
+      text: _.intl.string(_.t.p89ACt),
+      onClick: () => {
+        e.onClose(), o()
+      }
+    }]
+  }, e), {
+    children: (0, r.jsx)(s.Text, {
+      variant: "text-md/normal",
+      children: _.intl.string(_.t.iCK6G0)
+    })
+  }))), Promise.resolve()), [o, A]), P = i.useMemo(() => null == v ? [] : (0, d.B_)(n, {
     blockId: v,
     pageIndex: T,
     responses: y
@@ -122,73 +126,41 @@ function b(e) {
         }
       }
       returntrue
-    }, [A, P, n, y]),
-    L = (0, r.jsxs)(s.xBx, {
-      className: p.header,
-      children: [(0, r.jsxs)("div", {
-        className: p.headerContent,
-        children: [(0, r.jsx)(s.gw7, {
-          color: s.TVs.colors.HEADER_PRIMARY,
-          size: "custom",
-          width: 48,
-          height: 48
-        }), (0, r.jsx)(s.Heading, {
-          variant: "heading-xl/bold",
-          color: "header-primary",
-          children: _.intl.string(_.t.OSqLUF)
-        })]
-      }), (0, r.jsx)(s.olH, {
-        onClick: R
-      })]
-    });
-  return A ? (0, r.jsxs)(s.IX, {
+    }, [A, P, n, y]);
+  return A ? (0, r.jsxs)(a.Modal, {
     transitionState: u,
-    onClose: a,
-    size: "lg",
-    children: [L, (0, r.jsx)(s.fef, {
-      children: (0, r.jsx)("div", {
-        style: {
-          width: "100%"
-        },
-        children: (0, r.jsxs)("div", {
-          className: p.completeContent,
-          children: [(0, r.jsx)(s.Text, {
-            variant: "text-lg/normal",
-            children: _.intl.string(_.t["2scvdw"])
-          }), (0, r.jsx)(s.Text, {
-            variant: "text-lg/normal",
-            children: _.intl.string(_.t.chZxOD)
-          })]
-        })
-      })
-    }), (0, r.jsx)(s.Go$, {
-      actions: [{
-        variant: "primary",
-        text: _.intl.string(_.t.i4jeWR),
-        onClick: a
-      }],
-      actionsFullWidth: true
+    onClose: o,
+    size: "md",
+    title: _.intl.string(_.t.OSqLUF),
+    actions: [{
+      variant: "primary",
+      text: _.intl.string(_.t.i4jeWR),
+      onClick: o
+    }],
+    children: [(0, r.jsx)(s.Text, {
+      variant: "text-md/normal",
+      children: _.intl.string(_.t["2scvdw"])
+    }), (0, r.jsx)(s.Text, {
+      variant: "text-md/normal",
+      children: _.intl.string(_.t.chZxOD)
     })]
-  }) : (0, r.jsxs)(s.IX, {
+  }) : (0, r.jsx)(a.Modal, {
     transitionState: u,
-    onClose: a,
-    size: "lg",
-    children: [L, (0, r.jsx)(s.fef, {
-      children: (0, r.jsx)("div", {
-        style: {
-          width: "100%"
-        },
-        children: D(n)
-      })
-    }), (0, r.jsx)(s.Go$, {
-      actions: [{
-        variant: "primary",
-        text: _.intl.string(_.t.PDTjLN),
-        onClick: w,
-        disabled: !x
-      }],
-      actionsFullWidth: false
-    })]
+    onClose: R,
+    title: _.intl.string(_.t.OSqLUF),
+    size: "md",
+    actions: [{
+      variant: "primary",
+      text: _.intl.string(_.t.PDTjLN),
+      onClick: w,
+      disabled: !x
+    }],
+    children: (0, r.jsx)("div", {
+      style: {
+        width: "100%"
+      },
+      children: D(n)
+    })
   })
 }
 async function y(e) {
@@ -209,14 +181,14 @@ function O(e) {
     surveyId: t,
     onClose: n,
     transitionState: i
-  } = e, o = (0, a.e7)([u.Z], () => u.Z.getSurvey(t));
-  return null == o ? (0, r.jsx)(s.Text, {
+  } = e, a = (0, o.e7)([u.Z], () => u.Z.getSurvey(t));
+  return null == a ? (0, r.jsx)(s.Text, {
     variant: "text-md/medium",
     className: p.loading,
     children: _.intl.string(_.t.MKDeyL)
   }) : (0, r.jsx)(b, {
     surveyId: t,
-    survey: o,
+    survey: a,
     onClose: n,
     transitionState: i
   })

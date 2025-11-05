@@ -1,4 +1,4 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 27 **/
 /** chunk id: 770202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -49,7 +49,7 @@ function C(e, t) {
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
   s.Z.preload(n, t.id)
 }
-class x extends Chunk98597.ZP {
+class E extends Chunk98597.ZP {
   render() {
     let {
       channel: e,
@@ -122,7 +122,7 @@ class x extends Chunk98597.ZP {
     })
   }
 }
-let E = (0, Chunk146773.B)(x),
+let x = (0, Chunk146773.B)(E),
   S = Chunk647438.memo(function(e) {
     let {
       channel: t,
@@ -135,5 +135,5 @@ let E = (0, Chunk146773.B)(x),
         canReorderChannel: true !== i && null != e ? g.Z.can(_.Plq.MANAGE_CHANNELS, e) : g.Z.can(_.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(E, j({}, l, e))
+    return (0, r.jsx)(x, j({}, l, e))
   })

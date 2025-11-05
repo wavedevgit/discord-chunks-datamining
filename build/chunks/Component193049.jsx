@@ -206,6 +206,7 @@ function A(e) {
     size: u.CgR.DYNAMIC,
     parentComponent: "PomeloModal",
     children: [(0, r.jsx)(c.zx, {
+      "data-migration-pending": true,
       onClick: () => {
         w === T.A.SUGGESTIONS || w === T.A.EDIT_SCREEN ? L(T.A.FINISH_LATER) : A()
       },
@@ -221,6 +222,7 @@ function A(e) {
         className: P.close
       })
     }), (0, r.jsx)(u.hzk, {
+      "data-migration-pending": true,
       className: P.contentContainer,
       children: (0, r.jsxs)(u.MyZ, {
         activeSlide: w,
@@ -271,10 +273,12 @@ function A(e) {
   })
 }
 let R = (e, t, n, i, a) => 0 === e.length ? null : (0, r.jsxs)(u.mzw, {
+  "data-migration-pending": true,
   className: P.footer,
   children: [(0, r.jsxs)("div", {
     className: P.inline,
     children: [e.includes("REMIND_ME_LATER") && (0, r.jsx)(c.zx, {
+      "data-migration-pending": true,
       className: P.unfilledButton,
       type: "button",
       size: c.zx.Sizes.SMALL,
@@ -318,6 +322,7 @@ let R = (e, t, n, i, a) => 0 === e.length ? null : (0, r.jsxs)(u.mzw, {
       onClick: t.handleNext
     })]
   }), e.includes("BACK") && (0, r.jsx)(c.zx, {
+    "data-migration-pending": true,
     className: P.unfilledButton,
     type: "button",
     size: c.zx.Sizes.SMALL,

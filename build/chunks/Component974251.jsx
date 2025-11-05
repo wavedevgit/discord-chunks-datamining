@@ -91,7 +91,7 @@ let G = Chunk647438.memo(function(e) {
     autoTrackExposure: false
   }), {
     onShareClick: el
-  } = (0, b.Z)(W.id), ea = (0, o.e7)([y.qc], () => y.qc.hasHotspot(y.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), eo = (0, c.s9z)(e => (0, c.DEQ)(e, L.Qr)), es = (0, o.e7)([S.Z], () => S.Z.hasLayers()), ec = (0, o.e7)([m.Z], () => m.Z.hasClips()), [eu, ed] = i.useState(null), ep = (0, h.Go)() && (ee || ec), ef = W.isPrivate(), eh = (0, o.e7)([I.Z], () => ef || I.Z.can(k.Plq.ATTACH_FILES, W) && I.Z.can(k.Plq.SEND_MESSAGES, W)), em = (0, d.Z)(et);
+  } = (0, b.Z)(W.id), ea = (0, o.e7)([y.qc], () => y.qc.hasHotspot(y.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), eo = (0, c.s9z)(e => (0, c.DEQ)(e, k.Qr)), es = (0, o.e7)([S.Z], () => S.Z.hasLayers()), ec = (0, o.e7)([m.Z], () => m.Z.hasClips()), [eu, ed] = i.useState(null), ep = (0, h.Go)() && (ee || ec), ef = W.isPrivate(), eh = (0, o.e7)([I.Z], () => ef || I.Z.can(L.Plq.ATTACH_FILES, W) && I.Z.can(L.Plq.SEND_MESSAGES, W)), em = (0, d.Z)(et);
   (null == em ? true : em.newClipIds.length) !== (null == et ? true : et.newClipIds.length) && (null != (t = null == et ? true : et.newClipIds.length) ? t : 0) > 0 && null == eu && ea && er && !eo && !ei && !es && ed("recentClips");
   let eg = (0, o.e7)([P.Z], () => P.Z.hasCurrentUserSentMessageSinceAppStart());
 
@@ -107,7 +107,7 @@ let G = Chunk647438.memo(function(e) {
         })
       }))
     }, {
-      modalKey: L.Qr
+      modalKey: k.Qr
     }), ed(null)
   }
   i.useEffect(() => {
@@ -115,8 +115,8 @@ let G = Chunk647438.memo(function(e) {
       var e;
       return null == (e = J.current) ? true : e.activateUploadDialogue()
     };
-    return T.S.subscribe(k.CkL.UPLOAD_FILE, e), () => {
-      T.S.unsubscribe(k.CkL.UPLOAD_FILE, e)
+    return T.S.subscribe(L.CkL.UPLOAD_FILE, e), () => {
+      T.S.unsubscribe(L.CkL.UPLOAD_FILE, e)
     }
   });
   let e_ = (0, x.NE)(W),
@@ -220,7 +220,7 @@ let G = Chunk647438.memo(function(e) {
             requireConfirm: true,
             showLargeMessageDialog: r,
             origin: "file_picker"
-          }), T.S.dispatchToLastSubscribed(k.CkL.TEXTAREA_FOCUS), e.currentTarget.value = ""
+          }), T.S.dispatchToLastSubscribed(L.CkL.TEXTAREA_FOCUS), e.currentTarget.value = ""
         },
         multiple: W.rateLimitPerUser <= 0,
         tabIndex: false,

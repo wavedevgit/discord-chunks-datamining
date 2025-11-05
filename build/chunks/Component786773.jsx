@@ -16,7 +16,7 @@ function s(e) {
     questionId: n,
     value: s,
     onValueChange: l
-  } = e, c = t.Selector === a.E_.MULTI_LINE;
+  } = e, c = t.Selector !== a.E_.SINGLE_LINE;
   return (0, r.jsx)("div", {
     className: o.container,
     children: c ? (0, r.jsx)(i.Kx8, {

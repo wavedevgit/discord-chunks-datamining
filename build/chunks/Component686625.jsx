@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 686625, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -19,16 +19,16 @@ function d(e) {
     listClassName: d,
     onExpand: u
   } = e, {
-    trackUserProfileAction: h
-  } = (0, o.KZ)(), p = i.useId(), [f, g] = i.useState(false), m = f ? s.CJ0 : s.Fbu;
+    trackUserProfileAction: p
+  } = (0, o.KZ)(), h = i.useId(), [f, g] = i.useState(false), m = f ? s.CJ0 : s.Fbu;
   return (0, r.jsxs)("section", {
     className: c.section,
     children: [(0, r.jsxs)(s.P3F, {
       className: a()(c.header, c.clickable),
-      "aria-controls": p,
+      "aria-controls": h,
       "aria-expanded": f,
       onClick: () => {
-        g(!f), f || (h({
+        g(!f), f || (p({
           action: "PRESS_SECTION",
           section: t
         }), null == u || u())
@@ -41,7 +41,7 @@ function d(e) {
         size: "md"
       })]
     }), l.length > 0 && (0, r.jsx)("ul", {
-      id: p,
+      id: h,
       hidden: !f,
       className: a()(c.list, d),
       children: l

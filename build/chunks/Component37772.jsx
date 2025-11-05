@@ -1,4 +1,4 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 27 **/
 /** chunk id: 37772, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -118,7 +118,7 @@ let B = Chunk647438.memo(function e(t) {
     eu = (0, c.v)(s),
     ed = (0, _.ro)(s.id, s.channel_id),
     ep = (0, p.Z)(s),
-    eh = (0, E.iG)(s);
+    eh = (0, x.iG)(s);
   return ea ? (0, r.jsx)(e, U(G({}, t), {
     message: Y.message,
     channel: q,
@@ -128,7 +128,7 @@ let B = Chunk647438.memo(function e(t) {
     compact: R,
     count: 1,
     collapsedReason: i
-  }) : (0, r.jsx)(x.Z, {
+  }) : (0, r.jsx)(E.Z, {
     compact: R,
     className: o()(M, {
       [k.ephemeral]: (0, y.Pv)(s),
@@ -185,7 +185,7 @@ function F(e) {
     compact: i,
     collapsedReason: l
   } = e;
-  return (0, r.jsx)(x.Z, {
+  return (0, r.jsx)(E.Z, {
     className: t,
     compact: i,
     role: "group",

@@ -1,8 +1,8 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 636466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => g,
-  J: () => p
+  J: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -15,20 +15,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk758650 = require("./758650.js"),
   Chunk976218 = require("./976218.js");
 
-function p(e, t) {
+function h(e, t) {
   let {
     moreCount: n,
     onViewWishlist: i,
     isSingleCard: l = false,
-    profileOwner: h,
-    analyticsLocations: p
+    profileOwner: p,
+    analyticsLocations: h
   } = t, f = null != n && n > 0, g = f ? d.intl.string(d.t.TxBQzD) : d.intl.string(d.t.ilhtIa);
   return (0, r.jsx)(a.Z, {
     onCardClick: () => {
       if (f) return void i();
       (0, s.P)(e.sku, {
         isGift: true,
-        giftRecipient: h,
+        giftRecipient: p,
         giftingOrigin: c.Wt.USER_PROFILE_WISHLIST
       })
     },
@@ -43,7 +43,7 @@ function p(e, t) {
     }),
     moreCount: n,
     isSingleCard: l,
-    analyticsLocations: p
+    analyticsLocations: h
   }, e.skuId)
 }
 
@@ -56,9 +56,9 @@ function f(e) {
     data: o
   } = (0, l.IX)(t.sku.applicationId);
   return (0, r.jsxs)("div", {
-    className: h.singleItemContainer,
+    className: p.singleItemContainer,
     children: [n, (0, r.jsx)("div", {
-      className: h.singleItemInfo,
+      className: p.singleItemInfo,
       children: (0, r.jsxs)(i.P3F, {
         onClick: () => {
           (0, s.P)(t.sku, {
@@ -67,7 +67,7 @@ function f(e) {
             giftingOrigin: c.Wt.USER_PROFILE_WISHLIST
           })
         },
-        className: h.singleItemName,
+        className: p.singleItemName,
         "aria-label": d.intl.string(d.t.ilhtIa),
         children: [(0, r.jsx)(i.Text, {
           variant: "text-sm/semibold",
@@ -90,7 +90,7 @@ function g(e, t) {
   let {
     profileOwner: n,
     analyticsLocations: i
-  } = t, l = p(e, {
+  } = t, l = h(e, {
     profileOwner: n,
     analyticsLocations: i,
     onViewWishlist: () => {},

@@ -2,7 +2,7 @@
 /** chunk id: 897291, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,13 +13,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk963249 = require("./963249.jsx"),
   Chunk109213 = require("./109213.js"),
+  Chunk998030 = require("./998030.js"),
+  Chunk909917 = require("./909917.jsx"),
   Chunk51144 = require("./51144.js"),
   Chunk443603 = require("./443603.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk564355 = require("./564355.js");
 
-function g(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,20 +30,20 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,74 +54,85 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function O(e) {
+function I(e) {
   let {
     disabled: t,
     channel: i
   } = e, {
-    analyticsLocations: g
-  } = (0, c.ZP)(l.Z.GIFT_BUTTON), b = (0, f.Ft)(i), {
-    Component: O,
-    events: v,
-    play: I
+    analyticsLocations: b
+  } = (0, c.ZP)(l.Z.GIFT_BUTTON), O = (0, p.Ft)(i), {
+    Component: I,
+    events: T,
+    play: S
   } = (0, a.$)(), {
-    enabled: T
+    enabled: A
   } = d.G.useExperiment({
     location: "gift-button"
   }, {
     autoTrackExposure: false
-  }), S = i.type === p.d4z.DM;
+  }), C = (0, f.yc)({
+    location: "gift-button"
+  }), N = i.type === m.d4z.DM;
   if (t) return null;
-  let A = () => {
-    T && S && null != b ? (0, s.ZDy)(async () => {
+  let R = () => {
+    C && N && null != O ? (0, _.Z)({
+      giftRecipient: O,
+      analyticsLocations: b,
+      analyticsObject: {
+        page: i.isPrivate() ? m.ZY5.DM_CHANNEL : m.ZY5.GUILD_CHANNEL,
+        section: m.jXE.CHANNEL_TEXT_AREA,
+        object: m.qAy.BUTTON_ICON,
+        objectType: m.AnalyticsObjectTypes.GIFT
+      }
+    }) : A && N && null != O ? (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("59207").then(n.bind(n, 435626));
-      return t => (0, r.jsx)(e, E({
+      return t => (0, r.jsx)(e, y({
         analyticsObject: {
-          page: p.ZY5.DM_CHANNEL,
-          section: p.jXE.CHANNEL_TEXT_AREA,
-          object: p.qAy.BUTTON_ICON,
-          objectType: p.AnalyticsObjectTypes.GIFT
+          page: m.ZY5.DM_CHANNEL,
+          section: m.jXE.CHANNEL_TEXT_AREA,
+          object: m.qAy.BUTTON_ICON,
+          objectType: m.AnalyticsObjectTypes.GIFT
         },
-        analyticsLocations: g,
-        giftRecipient: b
+        analyticsLocations: b,
+        giftRecipient: O
       }, t))
     }) : (0, u.Z)({
       isGift: true,
-      giftRecipient: null === b ? true : b,
+      giftRecipient: null === O ? true : O,
       initialPlanId: null,
-      analyticsLocations: g,
+      analyticsLocations: b,
       analyticsObject: {
-        page: i.isPrivate() ? p.ZY5.DM_CHANNEL : p.ZY5.GUILD_CHANNEL,
-        section: p.jXE.CHANNEL_TEXT_AREA,
-        object: p.qAy.BUTTON_ICON,
-        objectType: p.AnalyticsObjectTypes.GIFT
+        page: i.isPrivate() ? m.ZY5.DM_CHANNEL : m.ZY5.GUILD_CHANNEL,
+        section: m.jXE.CHANNEL_TEXT_AREA,
+        object: m.qAy.BUTTON_ICON,
+        objectType: m.AnalyticsObjectTypes.GIFT
       }
     })
   };
   return (0, r.jsx)(o.u, {
-    text: h.intl.string(h.t.sWtWDX),
-    children: (0, r.jsx)(_.Z, y(E({
-      className: m.button,
+    text: g.intl.string(g.t.sWtWDX),
+    children: (0, r.jsx)(h.Z, v(y({
+      className: E.button,
       isActive: false,
-      "aria-label": h.intl.string(h.t.Z1RnTk),
+      "aria-label": g.intl.string(g.t.Z1RnTk),
       "aria-haspopup": "dialog",
       onClick: () => {
-        A(), I()
+        R(), S()
       }
-    }, v), {
-      children: (0, r.jsx)(O, {
+    }, T), {
+      children: (0, r.jsx)(I, {
         size: "refresh_sm",
         color: "currentColor"
       })
     }))
   })
 }
-let v = Chunk647438.memo(O)
+let T = Chunk647438.memo(I)

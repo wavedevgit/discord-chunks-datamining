@@ -1,7 +1,7 @@
-/** Chunk was on 3270 **/
+/** Chunk was on 54400 **/
 /** chunk id: 427261, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => d
+  h: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk990547 = require("./990547.js"),
@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk213609 = require("./213609.js"),
   Chunk839683 = require("./839683.js");
-let d = e => {
+let C = e => {
   let {
     componentId: t,
     promotionBannerMarketingComponentFields: n

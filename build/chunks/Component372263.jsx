@@ -1,5 +1,5 @@
-/** Chunk was on 3270 **/
-/** chunk id: 372263, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 93582 **/
+/** chunk id: 372263, original params: e,i,t (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -10,9 +10,9 @@ var Chunk835255 = require("./835255.jsx"),
 
 function a(e) {
   let {
-    surface: t = l.Y.PROFILE_MODAL
+    surface: i = s.Y.PROFILE_MODAL
   } = e;
-  return (0, r.jsx)(i.w_, {
-    surface: t
+  return (0, n.jsx)(r.w_, {
+    surface: i
   })
 }

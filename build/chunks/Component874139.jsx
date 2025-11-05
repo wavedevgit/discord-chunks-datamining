@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 874139, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -58,15 +58,15 @@ function f(e) {
     profileOwner: n,
     analyticsLocations: g
   }))), (0, r.jsxs)(d.Z.Overlay, {
-    className: p.container,
+    className: h.container,
     children: [(0, r.jsx)("div", {
-      className: p.header,
+      className: h.header,
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
-        children: h.intl.string(h.t["7lZ31J"])
+        children: p.intl.string(p.t["7lZ31J"])
       })
     }), (0, r.jsx)("div", {
-      className: p.cardsContainer,
+      className: h.cardsContainer,
       children: y
     })]
   })

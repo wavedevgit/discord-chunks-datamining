@@ -1,4 +1,4 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 27 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => V
@@ -444,7 +444,7 @@ let V = e => {
       t = (0, P.tU)(e, [I.Z, N.Z]);
     return h ? [] : t
   }, [h]);
-  (0, E.z)(x.R);
+  (0, x.z)(E.R);
   let {
     analyticsLocations: j
   } = (0, y.ZP)(b.Z.CONTACTS_LIST), S = (0, Z.Ll)(), {

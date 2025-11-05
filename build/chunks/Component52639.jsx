@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 52639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -29,9 +29,9 @@ function y(e) {
     analyticsLocations: y
   } = (0, l.ZP)(), {
     context: x
-  } = (0, o.KZ)(), v = (0, i.Z)(), {
+  } = (0, o.KZ)(), O = (0, i.Z)(), {
     mutualFriendsCount: j,
-    mutualFriends: O,
+    mutualFriends: v,
     mutualGuilds: C
   } = (0, c.Z)(t), I = !t.bot && null != j && j > 0, S = null != C && C.length > 0;
   return I || S ? (0, r.jsxs)(g.Z.Overlay, {
@@ -52,14 +52,14 @@ function y(e) {
           onSelect: () => (0, s.X)(n.id)
         }, n.id)
       })
-    }), S && I && (0, r.jsx)(h.Z, {
+    }), S && I && (0, r.jsx)(p.Z, {
       className: _.divider
     }), I && (0, r.jsx)(m.Z, {
       section: "MUTUAL_FRIENDS",
       header: b.intl.string(b.t["0mTJ3j"]),
       listClassName: _.list,
-      onExpand: () => (0, d.Z)(t.id, v),
-      items: null == O ? Array.from({
+      onExpand: () => (0, d.Z)(t.id, O),
+      items: null == v ? Array.from({
         length: j
       }).map((e, t) => (0, r.jsxs)("div", {
         className: _.loadingMutualFriend,
@@ -70,13 +70,13 @@ function y(e) {
           width: 135,
           opacity: .08
         })]
-      }, t)) : O.map(e => {
+      }, t)) : v.map(e => {
         let {
           key: t,
           user: i,
           status: l
         } = e;
-        return (0, r.jsx)(p.Z, {
+        return (0, r.jsx)(h.Z, {
           user: i,
           status: l,
           channelId: n,

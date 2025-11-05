@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 739830, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function g(e) {
       s.S.unsubscribe(u.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let _ = h.intl.string(h.t.h850Ss);
+  let _ = p.intl.string(p.t.h850Ss);
   return (0, r.jsx)(l.yRy, {
     targetElementRef: b,
     shouldShow: g,
@@ -65,16 +65,16 @@ function g(e) {
     align: "right",
     autoInvert: false,
     onRequestClose: () => m(false),
-    renderPopout: e => (0, r.jsx)(c.Z, f(p({}, e), {
+    renderPopout: e => (0, r.jsx)(c.Z, f(h({}, e), {
       channel: t,
       navId: "thread-context",
-      label: h.intl.string(h.t["1NBjqb"])
+      label: p.intl.string(p.t["1NBjqb"])
     })),
     children: (e, t) => {
       let {
         isShown: i
       } = t;
-      return (0, r.jsx)(a.ZP.Icon, f(p({}, e), {
+      return (0, r.jsx)(a.ZP.Icon, f(h({}, e), {
         ref: b,
         onClick: () => m(e => !e),
         tooltip: i ? null : _,

@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 643560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => f
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk683818 = require("./683818.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +32,7 @@ function h(e) {
   return e
 }
 
-function p(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ function f(e) {
   i.useEffect(() => {
     _ || y || null != x || (0, a.Zy)()
   });
-  let v = () => {
+  let O = () => {
     c.kx(t.channelId, t.guildId)
   };
 
@@ -84,7 +84,7 @@ function f(e) {
             let {
               default: e
             } = await n.e("34191").then(n.bind(n, 303647));
-            return n => (0, r.jsx)(e, p(h({}, n), {
+            return n => (0, r.jsx)(e, h(p({}, n), {
               entry: t
             }))
           }), j()
@@ -93,11 +93,11 @@ function f(e) {
         id: "remove-from-hub",
         label: u.intl.string(u.t.KUxYWH),
         action: function() {
-          (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, p(h({
+          (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, h(p({
             header: u.intl.string(u.t.KUxYWH),
             confirmText: u.intl.string(u.t.N86XcP),
             cancelText: u.intl.string(u.t["ETE/oC"]),
-            onConfirm: v
+            onConfirm: O
           }, e), {
             children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",

@@ -1,4 +1,4 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 27 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => y,
@@ -52,12 +52,12 @@ function y(e, t) {
   let v = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
     j = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
     C = null != (y = (0, u.Z)(e)) && y,
-    x = (0, c.q8)(e, t),
-    E = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
-    S = null == E || null == (n = E.allPowerups) ? true : n[i.A$],
+    E = (0, c.q8)(e, t),
+    x = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
+    S = null == x || null == (n = x.allPowerups) ? true : n[i.A$],
     I = (0, d.ZP)(e, S),
     P = null == S ? true : S.storeRemovalDate,
-    N = null == E || null == (_ = E.allPowerups) ? true : _[i.XW],
+    N = null == x || null == (_ = x.allPowerups) ? true : _[i.XW],
     Z = (0, l.e7)([o.Z], () => {
       var t;
       return null == (t = o.Z.getGuild(e)) ? true : t.features
@@ -66,7 +66,7 @@ function y(e, t) {
     {
       onActivate: T
     } = (0, h._C)(e, N),
-    A = !j && C && x && null != S && !w && I.type === f.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
+    A = !j && C && E && null != S && !w && I.type === f.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
     R = r.useCallback(e => {
       T(e)
     }, [T]),

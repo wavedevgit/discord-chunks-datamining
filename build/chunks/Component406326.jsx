@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 406326, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -63,8 +63,8 @@ function S(e) {
     searchMode: l,
     onSearchModeChange: o,
     totalResults: c,
-    isIndexing: h,
-    isSearching: p,
+    isIndexing: p,
+    isSearching: h,
     documentsIndexed: _,
     selectedChannelId: S
   } = e, Z = (0, m.nP)({
@@ -82,10 +82,10 @@ function S(e) {
       }) : j.intl.string(j.t.tc619d)
     }
     return null
-  }, [t.type, N]), [L, M] = i.useState(null), k = i.useMemo(() => p ? [] : [s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [p]), [U, G] = (0, u.US)(k), H = U === s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, F = i.useCallback(e => {
-    null != e && H && G(v.L.USER_DISMISS), M(e)
+  }, [t.type, N]), [L, M] = i.useState(null), k = i.useMemo(() => h ? [] : [s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [h]), [U, G] = (0, u.US)(k), H = U === s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, F = i.useCallback(e => {
+    null != e && H && G(O.L.USER_DISMISS), M(e)
   }, [G, H]), B = i.useCallback(e => {
-    G("user:explicit" === e ? v.L.USER_DISMISS : v.L.AUTO_DISMISS)
+    G("user:explicit" === e ? O.L.USER_DISMISS : O.L.AUTO_DISMISS)
   }, [G]), V = i.useCallback(() => {
     F(null), (0, d.ZDy)(async () => {
       let {
@@ -100,7 +100,7 @@ function S(e) {
   }) : j.intl.string(j.t.UdhTtk), [A]), W = (0, g.UX)({
     location: "SearchHeader"
   }), Y = t.type === x.aib.DMS || t.type === x.aib.CHANNEL, q = i.useMemo(() => T && W ? (0, r.jsxs)("div", {
-    className: O.searchModeAndFiltersContainer,
+    className: v.searchModeAndFiltersContainer,
     children: [(0, r.jsx)(d.Button, {
       variant: "secondary",
       onClick: V,
@@ -121,7 +121,7 @@ function S(e) {
       onPopoverRequestClose: B
     })]
   }) : T ? (0, r.jsxs)("div", {
-    className: O.searchModeAndFiltersContainer,
+    className: v.searchModeAndFiltersContainer,
     children: [(0, r.jsx)(d.Button, {
       variant: "secondary",
       onClick: V,
@@ -135,7 +135,7 @@ function S(e) {
       setOpenPopout: F
     })]
   }) : W ? (0, r.jsxs)("div", {
-    className: O.searchModeAndFiltersContainer,
+    className: v.searchModeAndFiltersContainer,
     children: [(0, r.jsx)(w, {
       searchMode: l,
       onSearchModeChange: o,
@@ -151,35 +151,35 @@ function S(e) {
     })]
   }) : (0, r.jsxs)(d.njP, {
     orientation: "horizontal",
-    className: O.searchHeaderTabList,
+    className: v.searchHeaderTabList,
     selectedItem: l,
     onItemSelect: o,
     children: [(0, r.jsx)(d.njP.Item, {
-      className: O.searchHeaderTab,
+      className: v.searchHeaderTab,
       id: x.QIO.NEWEST,
       children: j.intl.string(j.t.rLjqbS)
     }), (0, r.jsx)(d.njP.Item, {
-      className: O.searchHeaderTab,
+      className: v.searchHeaderTab,
       id: x.QIO.OLDEST,
       children: j.intl.string(j.t.a1BaUr)
     }), (0, r.jsx)(d.njP.Item, {
-      className: O.searchHeaderTab,
+      className: v.searchHeaderTab,
       id: x.QIO.MOST_RELEVANT,
       children: j.intl.string(j.t.FtR97k)
     })]
   }), [z, V, T, L, W, Y, o, t, l, S, H, F, B]);
   return (0, r.jsxs)("header", {
-    className: a()(O.searchHeader, {
-      [O.searchHeaderWithSubtitle]: null != D
+    className: a()(v.searchHeader, {
+      [v.searchHeaderWithSubtitle]: null != D
     }),
     children: [(0, r.jsx)("div", {
-      className: O.totalResults,
+      className: v.totalResults,
       role: "status",
       children: (0, r.jsx)(E, {
         totalResults: c,
         subtitle: D,
-        isIndexing: h,
-        isSearching: p,
+        isIndexing: p,
+        isSearching: h,
         documentsIndexed: _
       })
     }), q]
@@ -223,13 +223,13 @@ function P(e) {
       count: null != t ? t : ""
     }),
     children: (0, r.jsxs)("div", {
-      className: O.totalResultsWrapper,
+      className: v.totalResultsWrapper,
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/medium",
         color: "text-muted",
         children: (0, r.jsx)(d.Anchor, {
-          className: O.helpdeskLink,
-          href: p.Z.getArticleURL(x.BhN.SEARCH_INDEXING),
+          className: v.helpdeskLink,
+          href: h.Z.getArticleURL(x.BhN.SEARCH_INDEXING),
           children: j.intl.string(j.t["G3EA+4"])
         })
       }), (0, r.jsx)(Z, {})]
@@ -259,7 +259,7 @@ function N(e) {
     })
   });
   return null != n ? (0, r.jsxs)("div", {
-    className: O.totalResultsWithSubtitle,
+    className: v.totalResultsWithSubtitle,
     children: [i, (0, r.jsx)(d.Text, {
       variant: "text-xs/medium",
       color: "text-secondary",
@@ -277,9 +277,9 @@ function R(e) {
     setOpenPopout: s,
     onPopoverRequestClose: c,
     isPopoverVisible: u
-  } = e, p = i.useRef(null), f = (0, g.xy)({
+  } = e, h = i.useRef(null), f = (0, g.xy)({
     location: "SearchSettingsPopout"
-  }), m = null != (t = h.rR.useSetting()) ? t : f, b = i.useCallback(e => {
+  }), m = null != (t = p.rR.useSetting()) ? t : f, b = i.useCallback(e => {
     if (m !== e) {
       if (e) {
         let e = {
@@ -305,14 +305,14 @@ function R(e) {
           })
         })
       }
-      s(null), h.rR.updateSetting(e)
+      s(null), p.rR.updateSetting(e)
     }
-  }, [m, s, n, l]), [y, v] = i.useMemo(() => [m ? j.intl.string(j.t["8lklch"]) : j.intl.string(j.t.ji3jTF), m ? j.intl.string(j.t.RMQZCa) : j.intl.string(j.t["v/PagC"])], [m]), O = i.useMemo(() => ({
+  }, [m, s, n, l]), [y, O] = i.useMemo(() => [m ? j.intl.string(j.t["8lklch"]) : j.intl.string(j.t.ji3jTF), m ? j.intl.string(j.t.RMQZCa) : j.intl.string(j.t["v/PagC"])], [m]), v = i.useMemo(() => ({
     align: "end"
   }), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.yRy, {
-      targetElementRef: p,
+      targetElementRef: h,
       shouldShow: a,
       animation: d.yRy.Animation.NONE,
       position: "bottom",
@@ -346,7 +346,7 @@ function R(e) {
         })
       },
       children: e => (0, r.jsx)(d.hU, I(C({}, e), {
-        buttonRef: p,
+        buttonRef: h,
         variant: "secondary",
         icon: d.ewm,
         onClick: () => {
@@ -356,12 +356,12 @@ function R(e) {
         size: "sm"
       }))
     }), (0, r.jsx)(o.J2, {
-      targetElementRef: p,
+      targetElementRef: h,
       shouldShow: u,
       onRequestClose: c,
       title: y,
-      body: v,
-      caretConfig: O,
+      body: O,
+      caretConfig: v,
       badge: "new"
     })]
   })

@@ -188,7 +188,7 @@ function er(e) {
   } = e, j = o.type === Y.uaV.REPLY ? o.messageReference : true, S = (0, c.JA)(null != (t = e.id) ? t : ""), {
     onFocus: I
   } = S, N = ee(S, ["onFocus"]), {
-    isFocused: L,
+    isFocused: k,
     handleFocus: B,
     handleBlur: F
   } = (0, M.bb)(I), {
@@ -204,10 +204,10 @@ function er(e) {
     message: o,
     defaultValue: J,
     popouts: G
-  }), ec = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), eu = J || ec && L, ed = eu || es, ep = (0, u.e7)([E.Z], () => E.Z.isDeveloper), {
+  }), ec = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), eu = J || ec && k, ed = eu || es, ep = (0, u.e7)([E.Z], () => E.Z.isDeveloper), {
     content: ef,
     hasSpoilerEmbeds: eh
-  } = (0, k.Z)(o, {
+  } = (0, L.Z)(o, {
     hideSimpleEmbedContent: en && er,
     isInteracting: ed,
     formatInline: false,
@@ -347,18 +347,18 @@ let ei = Chunk647438.memo(function(e) {
     eM = (0, u.e7)([x.Z], () => v.hasFlag(Y.iLy.HAS_THREAD) && x.Z.getChannel(S.default.castMessageIdAsChannelId(v.id))),
     eR = v.isFirstMessageInForumPost(J),
     eD = (0, m.A)((null != (n = v.editedTimestamp) ? n : v.timestamp).valueOf()),
-    ek = (0, u.e7)([E.Z], () => E.Z.isDeveloper),
+    eL = (0, u.e7)([E.Z], () => E.Z.isDeveloper),
     {
-      content: eL,
+      content: ek,
       hasSpoilerEmbeds: eU
-    } = (0, k.Z)(v, {
+    } = (0, L.Z)(v, {
       hideSimpleEmbedContent: ep && ef,
       isInteracting: ew,
       formatInline: false,
       allowList: eR || eD,
       allowHeading: eR || eD,
       allowLinks: true,
-      allowDevLinks: ek,
+      allowDevLinks: eL,
       previewLinkTarget: true
     }),
     eB = (0, R.Z)(I, et, eN),
@@ -377,14 +377,14 @@ let ei = Chunk647438.memo(function(e) {
     eW = (0, w.iG)(v, el),
     ez = (0, w.Gx)(v),
     eq = (0, u.e7)([f.Z], () => f.Z.getMessage(I), [I]),
-    eY = (0, L.Z)({
+    eY = (0, k.Z)({
       message: v,
       channel: J
     }),
     eK = i.useRef(window),
     eX = null != eq,
     eJ = i.useMemo(() => Object.values(em).some(e => e), [em]);
-  l = v.type === Y.uaV.CUSTOM_GIFT ? "" : !eT && eX ? (0, B.Z)(e, eL) : (0, H.Z)(e, eL, eT);
+  l = v.type === Y.uaV.CUSTOM_GIFT ? "" : !eT && eX ? (0, B.Z)(e, ek) : (0, H.Z)(e, ek, eT);
   let eQ = v.id === el,
     e$ = (0, r.jsx)(d.tEY, {
       offset: {

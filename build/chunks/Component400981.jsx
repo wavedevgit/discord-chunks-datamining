@@ -1,7 +1,7 @@
-/** Chunk was on 3270 **/
+/** Chunk was on 54400 **/
 /** chunk id: 400981, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,34 +19,34 @@ var Chunk442837 = require("./442837.js"),
   Chunk215023 = require("./215023.js"),
   Chunk473936 = require("./473936.js");
 
-function f(e) {
+function _(e) {
   let {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
-    selectedGiftingPromotionReward: f
-  } = e, x = (0, i.e7)([p.default], () => p.default.getCurrentUser()), j = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), {
+    selectedGiftingPromotionReward: _
+  } = e, m = (0, i.e7)([p.default], () => p.default.getCurrentUser()), j = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), {
     analyticsLocations: g
-  } = (0, o.ZP)(), b = a.EFr.SIZE_32, L = (0, d.Z)(null == f ? true : f.assetId, b, !j), v = (0, u.Z)(), y = null == v ? true : v.giftPurchaseConfirmation;
-  return null == n || null == y ? null : (0, r.jsx)(h.O3, {
+  } = (0, o.ZP)(), b = a.EFr.SIZE_32, y = (0, C.Z)(null == _ ? true : _.assetId, b, !j), L = (0, u.Z)(), v = null == L ? true : L.giftPurchaseConfirmation;
+  return null == n || null == v ? null : (0, r.jsx)(x.O3, {
     children: (0, r.jsx)(a.mzw, {
-      align: C.Z.Align.CENTER,
+      align: c.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
-        className: _.promotionalFooter,
+        className: f.promotionalFooter,
         children: [(0, r.jsx)(a.Xo$, {
-          "aria-label": null == x ? true : x.username,
+          "aria-label": null == m ? true : m.username,
           size: b,
-          src: null == x ? true : x.getAvatarURL(true, (0, a.pxk)(b), !j),
-          avatarDecoration: L
+          src: null == m ? true : m.getAvatarURL(true, (0, a.pxk)(b), !j),
+          avatarDecoration: y
         }), (0, r.jsx)(l.zxk, {
           variant: "primary",
-          text: y.collectRewardButtonText(),
+          text: v.collectRewardButtonText(),
           onClick: () => {
-            t(), (0, c.Z)({
+            t(), (0, d.Z)({
               product: n,
               shouldShowPromotionalExperience: true,
               analyticsLocations: g,
-              purchaseType: m.o8.PROMOTIONAL
+              purchaseType: h.o8.PROMOTIONAL
             })
           }
         })]

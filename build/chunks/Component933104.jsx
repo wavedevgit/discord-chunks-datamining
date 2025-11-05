@@ -1,4 +1,4 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 27 **/
 /** chunk id: 933104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $h: () => T,
@@ -49,14 +49,14 @@ function w(e) {
     asset: (0, r.jsx)(b.g, {
       className: l()(S.image, S.levelImage)
     }),
-    title: E.intl.formatToPlainString(x.default["Zg/m9K"], {
+    title: x.intl.formatToPlainString(E.default["Zg/m9K"], {
       perkName: n.title
     }),
-    body: E.intl.formatToPlainString(x.default["1EGXSK"], {
+    body: x.intl.formatToPlainString(E.default["1EGXSK"], {
       perkName: n.title
     }),
     actions: [{
-      text: E.intl.string(E.t.RzWDqY),
+      text: x.intl.string(x.t.RzWDqY),
       variant: "primary",
       onClick: () => (0, m.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_LEVEL_UP, n.skuId)
     }],
@@ -74,10 +74,10 @@ function T(e) {
   return (0, r.jsx)(c.Mb, {
     targetElementRef: i,
     assetUrl: P.Z,
-    title: E.intl.string(x.default.QpQBPQ),
-    body: E.intl.string(x.default["6hn0xF"]),
+    title: x.intl.string(E.default.QpQBPQ),
+    body: x.intl.string(E.default["6hn0xF"]),
     action: {
-      text: E.intl.string(E.t.RzWDqY),
+      text: x.intl.string(x.t.RzWDqY),
       variant: "primary",
       onClick: () => {
         (0, m.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERKS)
@@ -109,13 +109,13 @@ function A(e) {
     onActivate: c
   } = (0, _.ZP)(t, n[0]), d = (0, f.Z)(n[0], true);
   if (0 === n.length) return;
-  let h = n.length >= 3 ? E.intl.formatToPlainString(x.default["6Sv+3M"], {
+  let h = n.length >= 3 ? x.intl.formatToPlainString(E.default["6Sv+3M"], {
       perk: n[0].title,
       perk2: n[1].title,
       perk3: n[2].title
-    }) : 2 === n.length ? E.intl.formatToPlainString(x.default.wcQOqC, {
+    }) : 2 === n.length ? x.intl.formatToPlainString(E.default.wcQOqC, {
       perks: "".concat(n[0].title, " & ").concat(n[1].title)
-    }) : E.intl.formatToPlainString(x.default.ZF8NT6, {
+    }) : x.intl.formatToPlainString(E.default.ZF8NT6, {
       perk: n[0].title
     }),
     g = 1 === n.length;
@@ -128,12 +128,12 @@ function A(e) {
       src: d,
       className: S.image
     }),
-    title: E.intl.formatToPlainString(x.default.LmpChE, {
+    title: x.intl.formatToPlainString(E.default.LmpChE, {
       guildName: s
     }),
     body: h,
     actions: [{
-      text: g ? E.intl.string(x.default.gSxlHf) : E.intl.string(E.t.RzWDqY),
+      text: g ? x.intl.string(E.default.gSxlHf) : x.intl.string(x.t.RzWDqY),
       variant: "primary",
       onClick: e => {
         g ? c(e) : (0, m.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS)
@@ -153,12 +153,12 @@ function R(e) {
   } = e, a = n.find(e => e.skuId === o.A$);
   if (null != a) return (0, r.jsx)(M, {
     targetElementRef: i,
-    title: E.intl.string(x.default.Ygpx4Q),
-    body: E.intl.string(x.default.mmNkUA),
+    title: x.intl.string(E.default.Ygpx4Q),
+    body: x.intl.string(E.default.mmNkUA),
     size: "video",
     asset: Z.Z,
     actions: [{
-      text: E.intl.string(E.t.RzWDqY),
+      text: x.intl.string(x.t.RzWDqY),
       variant: "primary",
       onClick: () => {
         (0, m.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERK_AVAILABLE, a.skuId)
@@ -169,15 +169,15 @@ function R(e) {
   let s = n.find(e => y.NL.has(e.skuId));
   return null != s ? (0, r.jsx)(M, {
     targetElementRef: i,
-    title: E.intl.string(x.default["kA2c+n"]),
-    body: E.intl.string(x.default.TUilLj),
+    title: x.intl.string(E.default["kA2c+n"]),
+    body: x.intl.string(E.default.TUilLj),
     asset: (0, r.jsx)("img", {
       alt: "",
       src: N.Z,
       className: S.image
     }),
     actions: [{
-      text: E.intl.string(E.t.RzWDqY),
+      text: x.intl.string(x.t.RzWDqY),
       variant: "primary",
       onClick: () => {
         (0, m.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERK_AVAILABLE, s.skuId)
@@ -201,12 +201,12 @@ function D(e) {
       src: I.Z,
       className: l()(S.image, S.gameServerHostingImage)
     }),
-    title: E.intl.string(n === h.J.GAME_SERVER_HOSTING_AVAILABLE ? C.default.wXLChx : C.default["8z8RpY"]),
-    body: n === h.J.GAME_SERVER_HOSTING_AVAILABLE ? E.intl.string(C.default.lZ6m7Q) : E.intl.format(C.default["IQ1E+d"], {
+    title: x.intl.string(n === h.J.GAME_SERVER_HOSTING_AVAILABLE ? C.default.wXLChx : C.default["8z8RpY"]),
+    body: n === h.J.GAME_SERVER_HOSTING_AVAILABLE ? x.intl.string(C.default.lZ6m7Q) : x.intl.format(C.default["IQ1E+d"], {
       boostCount: a
     }),
     actions: [{
-      text: E.intl.string(E.t.RzWDqY),
+      text: x.intl.string(x.t.RzWDqY),
       variant: "primary",
       onClick: () => (0, m.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_GAME_SERVER_HOSTING_AVAILABLE)
     }],
@@ -228,10 +228,10 @@ function L(e) {
       src: I.Z,
       className: l()(S.image, S.gameServerHostingImage)
     }),
-    title: E.intl.string(C.default["eX64+z"]),
-    body: E.intl.string(C.default.NpgfEB),
+    title: x.intl.string(C.default["eX64+z"]),
+    body: x.intl.string(C.default.NpgfEB),
     actions: [{
-      text: E.intl.string(E.t.RzWDqY),
+      text: x.intl.string(x.t.RzWDqY),
       variant: "primary",
       onClick: () => (0, d.uL)(O.Z5c.CHANNEL(t, v.oC.GAME_SERVERS))
     }],

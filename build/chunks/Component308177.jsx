@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 308177, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -28,17 +28,17 @@ let x = (0, Chunk112724.Z)(e => {
   let {
     channel: a,
     width: x,
-    onScroll: v,
+    onScroll: O,
     popoutType: j
   } = e, {
-    selectedParticipantId: O,
+    selectedParticipantId: v,
     largeStream: C,
     chatOpen: I
   } = (0, l.cj)([s.Z], () => ({
     selectedParticipantId: s.Z.getSelectedParticipantId(a.id),
     largeStream: s.Z.getStageStreamSize(a.id),
     chatOpen: s.Z.getChatOpen(a.id)
-  }), [a.id]), S = (0, c.Io)(a.id), E = (0, c.Rk)(a.id, d.pV.AUDIENCE), Z = (0, l.e7)([o.Z], () => null != O ? o.Z.getParticipant(a.id, O) : null), P = (0, c.w8)(a.id, d.pV.SPEAKER), T = P.filter(y), N = null != P.find(e => e.type === d.Ui.STREAM), R = Math.floor((x - 32) / 102), w = x < 424 ? 1 : x < 624 ? 2 : x < 824 || I ? 3 : 4, A = {
+  }), [a.id]), S = (0, c.Io)(a.id), E = (0, c.Rk)(a.id, d.pV.AUDIENCE), Z = (0, l.e7)([o.Z], () => null != v ? o.Z.getParticipant(a.id, v) : null), P = (0, c.w8)(a.id, d.pV.SPEAKER), T = P.filter(y), N = null != P.find(e => e.type === d.Ui.STREAM), R = Math.floor((x - 32) / 102), w = x < 424 ? 1 : x < 624 ? 2 : x < 824 || I ? 3 : 4, A = {
     [d.pV.SPEAKER]: w,
     [d.pV.AUDIENCE]: R,
     [d.pV.SELECTED]: 1
@@ -53,7 +53,7 @@ let x = (0, Chunk112724.Z)(e => {
       speakerTileHeight: r
     }
   })(x, w), H = C ? x - 32 : Math.min(x - 64, 3 * U + 8), F = e => e === L.length - 1 || 0 === E && 1 === e, [B, V] = i.useState(false), [z, W] = i.useState(false);
-  return (0, r.jsx)(p.Z, {
+  return (0, r.jsx)(h.Z, {
     sections: k,
     renderSection: e => {
       let {
@@ -109,7 +109,7 @@ let x = (0, Chunk112724.Z)(e => {
           }, "speakers-".concat(t, "-").concat(n));
         case 2:
           if (z) return null;
-          return (0, r.jsx)(h.Z, {
+          return (0, r.jsx)(p.Z, {
             channel: a,
             participants: l,
             maxTiles: R
@@ -130,6 +130,6 @@ let x = (0, Chunk112724.Z)(e => {
     footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!F(e),
     className: _.scroller,
     chunkSize: 60,
-    onScroll: v
+    onScroll: O
   })
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 750312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -43,13 +43,13 @@ function v(e) {
   }, [C, n.type]);
   let {
     trackUserProfileAction: N
-  } = (0, d.KZ)(), A = (0, g.Z)({
+  } = (0, d.KZ)(), A = (0, f.Z)({
     widgetType: n.type,
     onAction: N
   }), Z = E && null != j && !h, {
     isDragging: R,
     dragSourcePosition: G
-  } = (0, f.q)({
+  } = (0, g.q)({
     dropRef: T,
     dragRef: k,
     userId: t,
@@ -57,12 +57,12 @@ function v(e) {
     index: j,
     disableInteraction: !Z,
     onReorder: () => D(n.type)
-  }), [B, L] = i.useState(false);
+  }), [L, B] = i.useState(false);
   return (0, r.jsx)(O, {
     ref: T,
     disableInteraction: !Z,
-    onMouseEnter: () => L(true),
-    onMouseLeave: () => L(false),
+    onMouseEnter: () => B(true),
+    onMouseLeave: () => B(false),
     dragSourcePosition: G,
     index: null != j ? j : 0,
     children: (0, r.jsxs)("section", {
@@ -75,7 +75,7 @@ function v(e) {
         buttonRef: k,
         widget: n,
         className: l()(y.dragHandleButton, {
-          [y.opacity]: B || R
+          [y.opacity]: L || R
         }),
         additionalMenuItems: w
       }), (0, r.jsx)(m.Z, {
@@ -101,12 +101,12 @@ let O = e => {
     onMouseLeave: o,
     dragSourcePosition: c,
     index: s
-  } = e, u = null != c, d = u && s < c, f = u && s > c;
+  } = e, u = null != c, d = u && s < c, g = u && s > c;
   return i ? n : (0, r.jsx)("div", {
     ref: t,
     className: l()(y.dragAndDropHitbox, {
       [y.dropIndicatorBefore]: d,
-      [y.dropIndicatorAfter]: f
+      [y.dropIndicatorAfter]: g
     }),
     onMouseEnter: a,
     onMouseLeave: o,

@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 57304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -50,17 +50,17 @@ function m(e, t) {
 let b = function(e) {
   let {
     channel: t
-  } = e, n = (0, o.$5)(t), [b, _] = i.useState(false), y = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), x = (0, c.Aq)(), v = i.useRef(null), j = i.useCallback(() => {
+  } = e, n = (0, o.$5)(t), [b, _] = i.useState(false), y = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), x = (0, c.Aq)(), O = i.useRef(null), j = i.useCallback(() => {
     n || _(e => !e)
   }, [n]);
 
-  function O(e) {
-    (null == e ? true : e.shiftKey) || x.dispatch(p.CkL.POPOUT_CLOSE)
+  function v(e) {
+    (null == e ? true : e.shiftKey) || x.dispatch(h.CkL.POPOUT_CLOSE)
   }
-  return i.useEffect(() => (u.S.subscribe(p.CkL.TOGGLE_CHANNEL_PINS, j), () => {
-    u.S.unsubscribe(p.CkL.TOGGLE_CHANNEL_PINS, j)
+  return i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_CHANNEL_PINS, j), () => {
+    u.S.unsubscribe(h.CkL.TOGGLE_CHANNEL_PINS, j)
   }), [j]), (0, r.jsx)(a.yRy, {
-    targetElementRef: v,
+    targetElementRef: O,
     shouldShow: b,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
@@ -70,7 +70,7 @@ let b = function(e) {
     onRequestClose: () => _(false),
     renderPopout: function(e) {
       return (0, r.jsx)(s.Z, m(g({}, e), {
-        onJump: O,
+        onJump: v,
         channel: t
       }))
     },
@@ -79,8 +79,8 @@ let b = function(e) {
       let {
         isShown: i
       } = t;
-      return (0, r.jsx)(h.JO, m(g({}, e), {
-        ref: v,
+      return (0, r.jsx)(p.JO, m(g({}, e), {
+        ref: O,
         onClick: j,
         tooltip: i ? null : f.intl.string(f.t["mp1N/2"]),
         icon: a.qQX,

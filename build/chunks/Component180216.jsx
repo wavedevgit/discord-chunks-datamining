@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 180216, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -25,7 +25,7 @@ function b(e) {
   } = e, b = (0, d.C)({
     guildId: t,
     channelId: n
-  }), _ = (0, c.GG)(t), y = (0, c.YB)(t), x = (0, l.e7)([o.Z], () => o.Z.getGuild(t), [t]), v = null == x ? true : x.name, j = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), O = i.useMemo(() => {
+  }), _ = (0, c.GG)(t), y = (0, c.YB)(t), x = (0, l.e7)([o.Z], () => o.Z.getGuild(t), [t]), O = null == x ? true : x.name, j = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), v = i.useMemo(() => {
     let e = {};
     for (let t of _)
       for (let n of t.subscription_listings_ids) e[n] = t.id;
@@ -46,7 +46,7 @@ function b(e) {
       variant: "heading-xl/semibold",
       className: m.joinCtaTitle,
       children: g.intl.format(g.t.xHMpym, {
-        serverName: v,
+        serverName: O,
         channelName: null == j ? true : j.name
       })
     }), (0, r.jsx)(a.Text, {
@@ -54,12 +54,12 @@ function b(e) {
       variant: "text-md/normal",
       color: "header-secondary",
       children: null == y ? true : y.description
-    }), (0, r.jsx)(h.Z, {
+    }), (0, r.jsx)(p.Z, {
       guildId: t,
-      children: b.filter(e => null != O[e.id]).map(e => (0, r.jsx)(p.Z, {
+      children: b.filter(e => null != v[e.id]).map(e => (0, r.jsx)(h.Z, {
         guildId: t,
         listingId: e.id,
-        groupListingId: O[e.id],
+        groupListingId: v[e.id],
         analyticsLocation: f.Sbl.ROLE_SUBSCRIPTION_GATED_CHANNEL
       }, e.id))
     })]

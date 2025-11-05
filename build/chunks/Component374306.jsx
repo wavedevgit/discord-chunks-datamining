@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 374306, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -24,10 +24,10 @@ function g(e) {
     sortOrder: b,
     tagFilter: _,
     tagSetting: y
-  } = (0, c.H)(t.id), x = (0, i.e7)([o.Z, h.Z], () => !!(o.Z.getThreadIds(t.id, b, _, y).length > 0) || !!(h.Z.getThreads(t.id, b, _, y).length > 0), [t.id, b, _, y]), v = t.isMediaChannel();
-  if (!n || m || v && x) return null;
-  let j = g ? v ? f.intl.string(f.t["WP/IE1"]) : f.intl.string(f.t.zfq9V4) : v ? f.intl.string(f.t.p60yF1) : f.intl.string(f.t.SNOqYC);
-  return (0, r.jsx)(p.JO, {
+  } = (0, c.H)(t.id), x = (0, i.e7)([o.Z, p.Z], () => !!(o.Z.getThreadIds(t.id, b, _, y).length > 0) || !!(p.Z.getThreads(t.id, b, _, y).length > 0), [t.id, b, _, y]), O = t.isMediaChannel();
+  if (!n || m || O && x) return null;
+  let j = g ? O ? f.intl.string(f.t["WP/IE1"]) : f.intl.string(f.t.zfq9V4) : O ? f.intl.string(f.t.p60yF1) : f.intl.string(f.t.SNOqYC);
+  return (0, r.jsx)(h.JO, {
     tooltip: j,
     icon: l.d3s,
     onClick: () => s.Z.hideAdminOnboarding(t.id, !g),

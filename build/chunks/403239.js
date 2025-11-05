@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 403239, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => u
@@ -17,8 +17,8 @@ function u(e) {
     dragRef: n,
     userId: u,
     widget: d,
-    index: f,
-    disableInteraction: g = false,
+    index: g,
+    disableInteraction: f = false,
     onReorder: p
   } = e, m = (0, s.Z)(u), {
     isDragging: b,
@@ -34,13 +34,13 @@ function u(e) {
     type: "WIDGET",
     item: {
       widgetType: d.type,
-      index: f,
+      index: g,
       itemType: "WIDGET",
       itemPreviewProps: {
         widget: d
       }
     },
-    canDrag: () => !g,
+    canDrag: () => !f,
     collect: e => ({
       handlerId: e.getHandlerId(),
       isDragging: e.isDragging()
@@ -56,7 +56,7 @@ function u(e) {
     dragSourcePosition: j
   }, x] = (0, l.L)({
     accept: "WIDGET",
-    canDrop: () => !g,
+    canDrop: () => !f,
     collect: e => {
       let t = null,
         n = e.getItem();
@@ -66,11 +66,11 @@ function u(e) {
       }
     },
     drop: e => {
-      let t = null != f ? f : 0;
+      let t = null != g ? g : 0;
       y(e.index, t), e.index = t
     }
   });
-  return null == f || g ? {
+  return null == g || f ? {
     isDragging: false,
     dragSourcePosition: null
   } : (v(n), x(t), {

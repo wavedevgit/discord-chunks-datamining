@@ -1,4 +1,4 @@
-/** Chunk was on 3270 **/
+/** Chunk was on 54400 **/
 /** chunk id: 360026, original params: e,t,n (module,exports,require) **/
 module.exports = {
   skuSelectModalHeader: "skuSelectModalHeader_e50a4d",
@@ -8,6 +8,5 @@ module.exports = {
   close: "close_e50a4d",
   closeInner: "closeInner_e50a4d",
   premiumBrandRefreshHeader: "premiumBrandRefreshHeader_e50a4d",
-  premiumBrandRefreshContent: "premiumBrandRefreshContent_e50a4d",
-  wishlistModalSize: "wishlistModalSize_e50a4d"
+  premiumBrandRefreshContent: "premiumBrandRefreshContent_e50a4d"
 }

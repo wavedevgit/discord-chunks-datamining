@@ -227,7 +227,7 @@ let ec = [Chunk354459.fO.ACTIVITY],
         })
     }
     let e3 = l.useRef(null),
-      e2 = v.type === el.fO.STREAM ? u.pzj : u.Odl;
+      e9 = v.type === el.fO.STREAM ? u.pzj : u.Odl;
     return (0, i.jsx)(m.Z, {
       section: ei.jXE.VOICE_CHANNEL_TILE,
       children: (0, i.jsx)("div", {
@@ -286,7 +286,7 @@ let ec = [Chunk354459.fO.ACTIVITY],
                 children: e8
               }), eu ? (0, i.jsx)("div", {
                 className: eo.selectedScreen,
-                children: (0, i.jsx)(e2, {
+                children: (0, i.jsx)(e9, {
                   size: "md",
                   color: "currentColor",
                   className: eo.selectedIcon

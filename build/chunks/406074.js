@@ -1,7 +1,7 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 406074, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => h
+  C: () => p
 });
 var Chunk442837 = require("./442837.js"),
   Chunk160404 = require("./160404.js"),
@@ -13,16 +13,16 @@ var Chunk442837 = require("./442837.js"),
   Chunk790285 = require("./790285.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e) {
+function p(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, h = (0, c.qi)(t);
+  } = e, p = (0, c.qi)(t);
   return (0, r.Wu)([a.Z, o.Z, i.Z], () => {
     let e = a.Z.getChannel(n),
       r = o.Z.getGuild(t),
       c = i.Z.isViewingServerShop(t);
-    return null != r && null != e ? h.filter(t => (function(e, t, n) {
+    return null != r && null != e ? p.filter(t => (function(e, t, n) {
       let {
         isPreviewingRoles: r = false
       } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
@@ -32,10 +32,10 @@ function h(e) {
       let a = s.Z.getEveryoneRole(t),
         o = null != a && !(0, l.Fs)(a, u.Plq.VIEW_CHANNEL),
         c = (0, d.wB)(n, n.permissionOverwrites[t.id]),
-        h = s.Z.getRole(t.id, e.role_id);
-      return o && !c && null != h && (0, d.yt)(h) && !(0, d.wB)(n, i)
+        p = s.Z.getRole(t.id, e.role_id);
+      return o && !c && null != p && (0, d.yt)(p) && !(0, d.wB)(n, i)
     })(t, r, e, {
       isPreviewingRoles: c
     })) : []
-  }, [t, n, h])
+  }, [t, n, p])
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 801405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -26,10 +26,10 @@ function x(e) {
     channel: t,
     appContext: n,
     popoutOpen: x,
-    popoutWindow: v,
+    popoutWindow: O,
     currentWindow: j
   } = e, {
-    parentAnalyticsLocation: O
+    parentAnalyticsLocation: v
   } = (0, c.ZP)(), C = n === y.IlC.POPOUT, I = i.useRef(null), {
     currentLayout: S,
     mode: E
@@ -51,14 +51,14 @@ function x(e) {
       currentDocument: T,
       rootNode: N
     } = i.useMemo(() => {
-      let e = null != v && C ? v.document : document,
+      let e = null != O && C ? O.document : document,
         t = j.document.getElementById("app-mount");
       return {
         currentWindow: j,
         currentDocument: e,
         rootNode: t
       }
-    }, [v, C, j]),
+    }, [O, C, j]),
     R = x && !C,
     w = E === y.WtW.VIDEO && Z && !R,
     A = i.useCallback((e, r) => {
@@ -70,8 +70,8 @@ function x(e) {
       }, T))
     }, [T, A, N]),
     L = i.useCallback(e => () => {
-      null != N && ((0, u.v)(O, u.d.FULL_SCREEN, e !== y.AEg.FULL_SCREEN), e !== y.AEg.FULL_SCREEN ? (P.current = e, A(e, y.AEg.FULL_SCREEN), (0, _.Dj)(N)) : D(e))
-    }, [A, D, N, O]);
+      null != N && ((0, u.v)(v, u.d.FULL_SCREEN, e !== y.AEg.FULL_SCREEN), e !== y.AEg.FULL_SCREEN ? (P.current = e, A(e, y.AEg.FULL_SCREEN), (0, _.Dj)(N)) : D(e))
+    }, [A, D, N, v]);
   i.useEffect(() => {
     let e = () => {
       null != N && ((0, _.rB)(N, T) || S !== y.AEg.FULL_SCREEN || L(S)())
@@ -117,11 +117,11 @@ function x(e) {
   }, [S, C]), i.useEffect(() => {
     null != N && I.current === y.WtW.VIDEO && E === y.WtW.VOICE && (0, _.Pr)(N, T)
   }, [T, E, I, N]), i.useEffect(() => {
-    !Z && C && a.Z.wait(() => h.xv(y.KJ3.CHANNEL_CALL_POPOUT))
-  }, [Z, C]), w) ? (0, r.jsx)(p.Z, {
+    !Z && C && a.Z.wait(() => p.xv(y.KJ3.CHANNEL_CALL_POPOUT))
+  }, [Z, C]), w) ? (0, r.jsx)(h.Z, {
     themeable: false,
     node: N,
-    guestWindow: v,
+    guestWindow: O,
     onClick: L(S)
   }) : null
 }

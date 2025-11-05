@@ -66,8 +66,8 @@ function M(e) {
     onSelect: M,
     draftType: R,
     editorTextContent: D,
-    setValue: k,
-    openClips: L
+    setValue: L,
+    openClips: k
   } = e, {
     analyticsLocations: U,
     newestAnalyticsLocation: B
@@ -80,11 +80,11 @@ function M(e) {
   }
 
   function G() {
-    v.default.track(P.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), k("/", (0, j.JM)("/"))
+    v.default.track(P.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), L("/", (0, j.JM)("/"))
   }
 
   function W() {
-    L()
+    k()
   }
 
   function z() {

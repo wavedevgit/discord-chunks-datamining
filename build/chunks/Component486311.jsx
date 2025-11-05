@@ -1,4 +1,4 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 27 **/
 /** chunk id: 486311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -54,43 +54,43 @@ let j = {
     let {
       guildId: t,
       selected: l
-    } = e, C = (0, m.ZP)(t), x = i.useCallback(() => {
+    } = e, C = (0, m.ZP)(t), E = i.useCallback(() => {
       var e;
       (0, p.jd)(t), (0, f.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == C || null == (e = C.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
-    }, [t, C]), E = i.useRef(null), S = (0, s.s9z)(s.JQI), I = (0, a.e7)([d.Z], () => d.Z.hasLayers()), P = S || I, N = i.useCallback(() => {
+    }, [t, C]), x = i.useRef(null), S = (0, s.s9z)(s.JQI), I = (0, a.e7)([d.Z], () => d.Z.hasLayers()), P = S || I, N = i.useCallback(() => {
       var e;
       if ((null == C ? true : C.popout) == null || P) return null;
       switch (null == C || null == (e = C.popout) ? true : e.type) {
         case h.J.LEVEL_REACHED:
           return (0, r.jsx)(g.jG, v({
             guildId: t,
-            channelRowRef: E
+            channelRowRef: x
           }, C.popout));
         case h.J.PERKS_AVAILABLE:
           return (0, r.jsx)(g.$h, v({
             guildId: t,
-            channelRowRef: E
+            channelRowRef: x
           }, C.popout));
         case h.J.PERKS_PURCHASABLE:
           return (0, r.jsx)(g.yI, v({
             guildId: t,
-            channelRowRef: E
+            channelRowRef: x
           }, C.popout));
         case h.J.NEW_PERK_AVAILABLE:
           return (0, r.jsx)(g.cO, v({
             guildId: t,
-            channelRowRef: E
+            channelRowRef: x
           }, C.popout));
         case h.J.GAME_SERVER_HOSTING_AVAILABLE:
         case h.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
           return (0, r.jsx)(g.dJ, v({
             guildId: t,
-            channelRowRef: E
+            channelRowRef: x
           }, C.popout));
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == C ? true : C.popout, E, P]), [Z, w] = i.useState(null);
+    }, [t, null == C ? true : C.popout, x, P]), [Z, w] = i.useState(null);
     i.useEffect(() => {
       (null == C ? true : C.popout) == null && w(null)
     }, [null == C ? true : C.popout]);
@@ -99,7 +99,7 @@ let j = {
     }, []);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.m, {
-        ref: E,
+        ref: x,
         className: O.container,
         id: "skill-trees-".concat(t),
         renderIcon: e => (0, r.jsx)(s.Ucv, {
@@ -127,7 +127,7 @@ let j = {
           children: y.intl.string(_.default.yv3DJJ)
         }),
         selected: l,
-        onClick: x,
+        onClick: E,
         showUnread: (null == C ? true : C.showUnread) === true,
         trailing: null == C ? true : C.trailing
       }), N()]

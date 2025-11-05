@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 733231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => s,
@@ -35,9 +35,9 @@ function u(e) {
     })
   }, []), d = i.useCallback(e => t => {
     null != t ? c.current.set(e, t) : c.current.delete(e)
-  }, []), f = i.useCallback(e => t => {
+  }, []), g = i.useCallback(e => t => {
     null != t ? l.current.set(e, t) : l.current.delete(e)
-  }, []), g = i.useCallback(e => {
+  }, []), f = i.useCallback(e => {
     a.Z.keyboardModeEnabled && requestAnimationFrame(() => {
       let t = c.current.get(e);
       null == t || t.focus()
@@ -60,10 +60,10 @@ function u(e) {
     })
   }, [n, u]), m = i.useMemo(() => ({
     registerDragHandleRef: d,
-    registerItemRef: f,
-    manageFocusOnReorder: g,
+    registerItemRef: g,
+    manageFocusOnReorder: f,
     manageFocusOnDelete: p
-  }), [d, f, g, p]);
+  }), [d, g, f, p]);
   return (0, r.jsx)(o.Provider, {
     value: m,
     children: t

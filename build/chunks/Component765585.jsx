@@ -1,4 +1,4 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 27 **/
 /** chunk id: 765585, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -28,8 +28,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
     dismissText: v,
     onTryFeature: j,
     onClose: C,
-    className: x,
-    inlineArt: E = false,
+    className: E,
+    inlineArt: x = false,
     isPremiumFeature: S = false,
     shouldUseHorizontalButtons: I = false,
     showGIFTag: P = false,
@@ -65,11 +65,11 @@ let b = Chunk647438.forwardRef(function(e, t) {
   }, [F, z, H, R]), i.useEffect(() => {
     (0, p.kk)(N)
   }, [N]), (0, r.jsx)("div", {
-    className: x,
+    className: E,
     ref: t,
     children: (0, r.jsxs)("div", {
       className: o()(m.content, y, {
-        [m.contentNoArt]: null == b || E,
+        [m.contentNoArt]: null == b || x,
         [m.contentPremium]: S || A
       }),
       children: [null != k && (0, r.jsx)(s.P3F, {
@@ -77,7 +77,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
         className: M,
         children: k
       }), (0, r.jsxs)("div", {
-        className: o()(b, E ? m.artInline : m.artAbsolute),
+        className: o()(b, x ? m.artInline : m.artAbsolute),
         children: [P && (0, r.jsx)(h.Z, {
           className: m.gifTag
         }), T]

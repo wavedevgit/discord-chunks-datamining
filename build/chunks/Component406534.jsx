@@ -123,14 +123,14 @@ function et(e) {
     } = e,
     ef = N.default.getCurrentUser(),
     eh = () => eo.isInitialized() || et.ready,
-    em = (0, L.$)(U),
+    em = (0, k.$)(U),
     eg = et.length > 0 && (null == (t = et.first()) ? true : t.isFirstMessageInForumPost(U)),
     eb = (0, s.ts)(U),
     e_ = (0, l.e7)([j.Z], () => j.Z.shouldShowTopicsBar() && !ed),
     ey = (0, x.P)(U.id),
     eC = (0, v.z)(U.id, X.zr),
     ev = (0, d.k)(U.id),
-    eO = (0, k.Z)(),
+    eO = (0, L.Z)(),
     ex = function(e, t) {
       if (e.isDM() && null != t)
         if (t.type === C.pj.STRANGER_DANGER) return (0, r.jsx)(E.M, {

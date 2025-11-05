@@ -197,7 +197,7 @@ class e9 extends Chunk647438.PureComponent {
     if (e.channel.id !== n.id) return void this.draftDidChange(this.props);
     if (e.hasModalOpen && !this.props.hasModalOpen) {
       let e = eE.Z.getDraft(n.id, eE.d.ChannelMessage);
-      e !== r && this.setState((0, L.eK)(e))
+      e !== r && this.setState((0, k.eK)(e))
     }
     t.textValue.length < eJ.J6R && r.length >= eJ.J6R && eA.default.track(eJ.rMx.MESSAGE_LENGTH_LIMIT_REACHED, {})
   }
@@ -339,7 +339,7 @@ class e9 extends Chunk647438.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, e2(this, "isFirstChange", true), e2(this, "editorRef", null), e2(this, "state", e8(e3({}, (0, L.eK)(eE.Z.getDraft(this.props.channel.id, eE.d.ChannelMessage))), {
+    super(...e), t = this, e2(this, "isFirstChange", true), e2(this, "editorRef", null), e2(this, "state", e8(e3({}, (0, k.eK)(eE.Z.getDraft(this.props.channel.id, eE.d.ChannelMessage))), {
       contentWarningProps: null
     })), e2(this, "draftDidChange", function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : t.props,
@@ -347,7 +347,7 @@ class e9 extends Chunk647438.PureComponent {
           textValue: n
         } = t.state,
         r = eE.Z.getDraft(e.channel.id, eE.d.ChannelMessage);
-      n !== r && ("" === r || "" === n) && t.setState((0, L.eK)(r), () => {
+      n !== r && ("" === r || "" === n) && t.setState((0, k.eK)(r), () => {
         if (n !== r) {
           let {
             onFocus: e
@@ -374,7 +374,7 @@ class e9 extends Chunk647438.PureComponent {
             let {
               channel: e
             } = this.props, t = eP.Z.getLastChatCommandMessage(e.id), n = eP.Z.getLastEditableMessage(e.id);
-            null != t && null != n ? ek.default.compare(n.id, t.id) > 0 ? this.handleEditLastMessage(n) : this.handleRecallLastCommand(t) : null != t ? this.handleRecallLastCommand(t) : null != n && this.handleEditLastMessage(n)
+            null != t && null != n ? eL.default.compare(n.id, t.id) > 0 ? this.handleEditLastMessage(n) : this.handleRecallLastCommand(t) : null != t ? this.handleRecallLastCommand(t) : null != n && this.handleEditLastMessage(n)
           }
           return;
         case eJ.yXg.ESCAPE:
@@ -490,7 +490,7 @@ class e9 extends Chunk647438.PureComponent {
         });
         null != n && (t = null != n.content && "" !== n.content ? n.content : t, b = true === n.tts)
       }
-      return (0, eL.v)({
+      return (0, ek.v)({
         openWarningPopout: e => this.setState({
           contentWarningProps: e
         }),
@@ -582,7 +582,7 @@ class e9 extends Chunk647438.PureComponent {
             shouldRefocus: false
           }
         } else h.Z.sendMessage(d.id, O, true, x);
-        return this.setState((0, L.H2)()), (0, ep.A6)(d.id), (0, e_.qB)(d.id, m.drafts.type), {
+        return this.setState((0, k.H2)()), (0, ep.A6)(d.id), (0, e_.qB)(d.id, m.drafts.type), {
           shouldClear: true,
           shouldRefocus: true
         }
@@ -698,7 +698,7 @@ class te extends Chunk647438.PureComponent {
           })
         }), this.renderAppCommandButton()]
       }),
-      L = Chunk989573 && Chunk499254 || Chunk456007,
+      k = Chunk989573 && Chunk499254 || Chunk456007,
       U = Chunk752305 ? Chunk667204 : Chunk104919,
       B = a()({
         [Chunk180376.barWithAppLauncherButton]: Chunk993766,
@@ -833,12 +833,12 @@ class te extends Chunk647438.PureComponent {
       } = this.props;
       if (t) switch (e.which) {
         case eJ.yXg.ARROW_LEFT:
-          n === k.Ie.SIDEBAR && eR.S.dispatch(eJ.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+          n === L.Ie.SIDEBAR && eR.S.dispatch(eJ.CkL.FOCUS_CHANNEL_TEXT_AREA, {
             channelId: eZ.Z.getChannelId()
           });
           return;
         case eJ.yXg.ARROW_RIGHT:
-          n === k.Ie.NORMAL && eR.S.dispatch(eJ.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+          n === L.Ie.NORMAL && eR.S.dispatch(eJ.CkL.FOCUS_CHANNEL_TEXT_AREA, {
             channelId: eO.ZP.getCurrentSidebarChannelId(r.id)
           })
       }
@@ -949,9 +949,9 @@ let tt = Chunk647438.memo(function(e) {
     commands: R
   });
   let D = i.useRef(null),
-    k = (0, d.e7)([S.Z], () => S.Z.appDMChannelsWithFailedLoads().has(t.id)),
-    L = (0, d.e7)([eZ.Z], () => eZ.Z.getVoiceChannelId()),
-    U = (0, d.e7)([ex.Z], () => ex.Z.getChannel(L)),
+    L = (0, d.e7)([S.Z], () => S.Z.appDMChannelsWithFailedLoads().has(t.id)),
+    k = (0, d.e7)([eZ.Z], () => eZ.Z.getVoiceChannelId()),
+    U = (0, d.e7)([ex.Z], () => ex.Z.getChannel(k)),
     B = (0, d.e7)([eN.default], () => t.type !== eJ.d4z.DM ? null : eN.default.getUser(t.getRecipientId())),
     F = (0, d.e7)([es.ZP, ev.default], () => es.ZP.getUserCombo(ev.default.getId(), t.id)),
     V = (0, b.iD)(t),
@@ -983,7 +983,7 @@ let tt = Chunk647438.memo(function(e) {
     isInitialLoading: Z,
     showEntryPointAppCommandButton: null != T,
     entryPointCommandButtonRef: D,
-    isFailedAppDMLoad: k,
+    isFailedAppDMLoad: L,
     pendingScheduledMessage: P,
     recipientUser: B,
     voiceChannel: U,

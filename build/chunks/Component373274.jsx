@@ -1,4 +1,4 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 27 **/
 /** chunk id: 373274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => eb,
@@ -618,12 +618,12 @@ class ef extends(r = Chunk647438.PureComponent) {
               selected: a === ea.oC.MEMBER_SAFETY
             }, ei.z.GUILD_MOD_DASH_MEMBER_SAFETY);
           case ei.z.GUILD_BOOSTS:
-            return (0, i.jsx)(E.Z, {
+            return (0, i.jsx)(x.Z, {
               guildId: r.id,
               selected: a === ea.oC.GUILD_BOOSTS
             }, ei.z.GUILD_BOOSTS);
           case ei.z.GAME_SERVERS:
-            return (0, i.jsx)(x.Z, {
+            return (0, i.jsx)(E.Z, {
               guildId: r.id,
               selected: a === ea.oC.GAME_SERVERS
             }, ei.z.GAME_SERVERS);
@@ -801,26 +801,26 @@ let eg = e => {
     let t = y.current;
     if (null == t) return e();
     t.scrollTo(Number.MAX_SAFE_INTEGER, () => requestAnimationFrame(() => e()))
-  }), []), x = (0, c.ZP)({
+  }), []), E = (0, c.ZP)({
     id: "channels",
     defaultFocused: null != n ? n : true,
     isEnabled: o,
     setFocus: O,
     scrollToStart: v,
     scrollToEnd: j
-  }), E = x.setFocus;
+  }), x = E.setFocus;
   l.useEffect(() => {
-    null != n && E(n)
-  }, [n, E]);
+    null != n && x(n)
+  }, [n, x]);
   let S = (0, P.Z)(t);
   return (0, i.jsx)(b.Gt, {
     value: a,
     children: (0, i.jsx)(f.Z, {
       section: eo.jXE.GUILD_CHANNEL_LIST,
       children: (0, i.jsx)(s.bG, {
-        navigator: x,
+        navigator: E,
         children: (0, i.jsx)(ef, ep(ed({}, e), {
-          listNavigator: x,
+          listNavigator: E,
           ref: y,
           selectedChannel: d,
           selectedVoiceChannel: p,

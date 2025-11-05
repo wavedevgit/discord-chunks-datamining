@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 700483, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eg
@@ -91,7 +91,7 @@ let eo = Chunk647438.memo(function(e) {
     className: ea.container,
     children: [(0, r.jsxs)("div", {
       className: ea.buttonSection,
-      children: [(0, r.jsx)(eh, {
+      children: [(0, r.jsx)(ep, {
         channelId: t.id
       }), n ? (0, r.jsx)(es, {
         channel: t
@@ -127,11 +127,11 @@ function ed(e) {
   let {
     channel: t,
     onSelect: n
-  } = e, o = (0, O.bp)(), {
+  } = e, o = (0, v.bp)(), {
     canManageGuildEvent: c
-  } = (0, C.XJ)(t), h = (0, l.e7)([Y.Z], () => Y.Z.getStageInstanceByChannel(t.id), [t.id]), p = (0, l.e7)([x.ZP], () => x.ZP.getGuildScheduledEvent(null == h ? true : h.guild_scheduled_event_id)), {
+  } = (0, C.XJ)(t), p = (0, l.e7)([Y.Z], () => Y.Z.getStageInstanceByChannel(t.id), [t.id]), h = (0, l.e7)([x.ZP], () => x.ZP.getGuildScheduledEvent(null == p ? true : p.guild_scheduled_event_id)), {
     suppress: f
-  } = (0, Z.Z)(t), g = M.default.getId(), [_] = (0, er.Z)(t), y = W.ZP.isModerator(g, t.id), v = (0, V.B)(t.id), j = c(p), {
+  } = (0, Z.Z)(t), g = M.default.getId(), [_] = (0, er.Z)(t), y = W.ZP.isModerator(g, t.id), O = (0, V.B)(t.id), j = c(h), {
     parentAnalyticsLocation: I
   } = (0, u.ZP)(), S = i.useRef(null), E = () => (function(e) {
     let {
@@ -144,7 +144,7 @@ function ed(e) {
     channel: t,
     appContext: o
   });
-  return (y || j) && null != h ? (0, r.jsx)(a.yRy, {
+  return (y || j) && null != p ? (0, r.jsx)(a.yRy, {
     targetElementRef: S,
     renderPopout: e => {
       let {
@@ -187,7 +187,7 @@ function ed(e) {
         popoutOpen: i
       })
     }
-  }) : f && !v || _ ? (0, r.jsx)(A.Z, {
+  }) : f && !O || _ ? (0, r.jsx)(A.Z, {
     label: el.intl.string(el.t.SMKyih),
     onClick: E
   }) : (0, r.jsx)(A.Z, {
@@ -212,7 +212,7 @@ function eu(e) {
   })
 }
 
-function eh(e) {
+function ep(e) {
   let {
     channelId: t
   } = e, {
@@ -238,7 +238,7 @@ function eh(e) {
     }
   })
 }
-let ep = Chunk647438.memo(function(e) {
+let eh = Chunk647438.memo(function(e) {
   let {
     channel: t
   } = e, {
@@ -248,12 +248,12 @@ let ep = Chunk647438.memo(function(e) {
     selfMute: o,
     mute: c
   } = (0, Z.Z)(t), d = (0, V.B)(t.id), m = (0, ee.Z)(t.id), x = (0, l.e7)([_.default], () => null != _.default.getAwaitingRemoteSessionInfo()), {
-    cameraUnavailable: v,
+    cameraUnavailable: O,
     enabled: j
-  } = (0, I.Z)(), O = (0, E.Z)(t), {
+  } = (0, I.Z)(), v = (0, E.Z)(t), {
     limit: C,
     reachedLimit: w
-  } = (0, S.Z)(t), A = (0, l.e7)([H.default], () => H.default.getCurrentUser()), M = (0, l.e7)([k.Z], () => (0, y.Z)(k.Z)), U = (0, l.e7)([G.Z], () => G.Z.getVoiceChannelId() === t.id, [t.id]), F = (0, l.e7)([h.Z], () => h.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, q.PK)(t.id), z = C > 0, W = w && !B || null != F && F.user.id !== (null == A ? true : A.id), Y = (0, b.u)("AudioDeviceMenu", n, {
+  } = (0, S.Z)(t), A = (0, l.e7)([H.default], () => H.default.getCurrentUser()), M = (0, l.e7)([k.Z], () => (0, y.Z)(k.Z)), U = (0, l.e7)([G.Z], () => G.Z.getVoiceChannelId() === t.id, [t.id]), F = (0, l.e7)([p.Z], () => p.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, q.PK)(t.id), z = C > 0, W = w && !B || null != F && F.user.id !== (null == A ? true : A.id), Y = (0, b.u)("AudioDeviceMenu", n, {
     entrypoint: ei.A5.CARET
   }), K = i.useRef(null), Q = i.useRef(null);
   if (null == A) return null;
@@ -286,9 +286,9 @@ let ep = Chunk647438.memo(function(e) {
       return (0, r.jsx)(L.C, {
         ref: K,
         centerButton: true,
-        hasPermission: O,
+        hasPermission: v,
         enabled: j,
-        cameraUnavailable: v,
+        cameraUnavailable: O,
         onChange: P.r,
         onCameraUnavailable: N.Z,
         channelLimitReached: w,
@@ -309,7 +309,7 @@ let ep = Chunk647438.memo(function(e) {
             closePopout: t
           } = e;
           return (0, r.jsx)(R.Z, {
-            children: (0, r.jsx)(p.default, {
+            children: (0, r.jsx)(h.default, {
               onClose: t,
               renderInputDevices: true,
               renderInputModes: true,
@@ -352,9 +352,9 @@ let ep = Chunk647438.memo(function(e) {
         currentUser: A,
         exitFullScreen: () => null,
         canGoLive: M,
-        hasPermission: O,
+        hasPermission: v,
         disabled: W
-      }) : null, (0, r.jsx)(eh, {
+      }) : null, (0, r.jsx)(ep, {
         channelId: t.id
       }), U && (0, r.jsx)(es, {
         channel: t
@@ -379,7 +379,7 @@ function ef(e) {
     className: ea.wrapper,
     children: [(0, r.jsx)("div", {
       className: ea.buttonSection,
-      children: (0, r.jsx)(eh, {
+      children: (0, r.jsx)(ep, {
         channelId: t.id
       })
     }), (0, r.jsx)(ed, {
@@ -391,14 +391,14 @@ let eg = Chunk647438.memo(function(e) {
   let {
     channel: t,
     isOnStartStageScreen: n
-  } = e, i = (0, ee.Z)(t.id), a = (0, V.B)(t.id), s = (0, l.e7)([U.Z], () => U.Z.can(z.yP, t), [t]), o = (0, et.sP)(), c = (0, en.Z)(t.id), d = (0, l.e7)([h.Z], () => null != t ? h.Z.getSelectedParticipant(t.id) : null), u = !c && null == d;
+  } = e, i = (0, ee.Z)(t.id), a = (0, V.B)(t.id), s = (0, l.e7)([U.Z], () => U.Z.can(z.yP, t), [t]), o = (0, et.sP)(), c = (0, en.Z)(t.id), d = (0, l.e7)([p.Z], () => null != t ? p.Z.getSelectedParticipant(t.id) : null), u = !c && null == d;
   return n ? (0, r.jsx)(ef, {
     channel: t
   }) : i || a ? (0, r.jsxs)("div", {
     className: ea.containerColumn,
     children: [(0, r.jsxs)("div", {
       className: ea.eventPrompts,
-      children: [u ? (0, r.jsx)(v.Z, {
+      children: [u ? (0, r.jsx)(O.Z, {
         channelId: null == t ? true : t.id
       }) : null, (0, r.jsx)("div", {
         className: ea.separator
@@ -408,7 +408,7 @@ let eg = Chunk647438.memo(function(e) {
       }) : null, (0, r.jsx)("div", {
         className: ea.separator
       })]
-    }), (0, r.jsx)(ep, {
+    }), (0, r.jsx)(eh, {
       channel: t
     })]
   }) : (0, r.jsx)(eo, {

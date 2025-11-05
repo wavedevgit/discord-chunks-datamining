@@ -137,7 +137,7 @@ function ej(e) {
   } = e, {
     parentAnalyticsLocation: c,
     analyticsLocations: f
-  } = (0, v.ZP)(), h = (0, L.bp)(), m = (0, u.Wu)([et.Z], () => et.Z.getAllActiveStreams()), g = m.find(e => e.ownerId === n.id), b = i.useRef(null), _ = i.useRef(null), y = t.getGuildId(), C = i.useCallback(() => {
+  } = (0, v.ZP)(), h = (0, k.bp)(), m = (0, u.Wu)([et.Z], () => et.Z.getAllActiveStreams()), g = m.find(e => e.ownerId === n.id), b = i.useRef(null), _ = i.useRef(null), y = t.getGuildId(), C = i.useCallback(() => {
     if (null == l || l(), !a) return (0, eh.Z)();
     (0, em.Z)(y, t.id, f)
   }, [y, t.id, a, l, f]), O = (0, B.B4)(), [x, E] = i.useState(false), j = () => {
@@ -381,7 +381,7 @@ function eI(e) {
     cameraUnavailable: n,
     hasCameraPermission: l,
     currentUser: a
-  } = e, o = (0, L.bp)(), {
+  } = e, o = (0, k.bp)(), {
     parentAnalyticsLocation: s
   } = (0, v.ZP)(), {
     reachedLimit: c,
@@ -450,7 +450,7 @@ let eT = function(e) {
     canGoLive: R
   } = (0, u.cj)([er.Z], () => ({
     canGoLive: (0, w.Z)(er.Z)
-  })), D = (0, N.Z)(), L = (0, u.e7)([T.default], () => null != T.default.getAwaitingRemoteSessionInfo()), B = null != D, F = (0, u.e7)([ei.Z], () => {
+  })), D = (0, N.Z)(), k = (0, u.e7)([T.default], () => null != T.default.getAwaitingRemoteSessionInfo()), B = null != D, F = (0, u.e7)([ei.Z], () => {
     var e;
     return (null != (e = null == D ? true : D.channelId) ? e : ei.Z.getVoiceChannelId()) === n.id
   }), H = (0, u.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()), {
@@ -484,7 +484,7 @@ let eT = function(e) {
       section: eb.jXE.VOICE_CONTROL_TRAY,
       children: [(0, r.jsx)("div", {
         className: eC.eventPromptsContainer,
-        children: (0, r.jsx)(k.Z, {
+        children: (0, r.jsx)(L.Z, {
           channelId: n.id
         })
       }), (0, r.jsxs)("div", {
@@ -546,7 +546,7 @@ let eT = function(e) {
                 serverMute: M,
                 suppress: Z,
                 popoutOpen: i,
-                awaitingRemote: L,
+                awaitingRemote: k,
                 onClick: () => (0, S.Z)(M, Z, eb.jXE.VOICE_CONTROL_TRAY),
                 onContextMenu: ep
               })

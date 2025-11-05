@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 909125, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => c
@@ -19,11 +19,11 @@ function c(e) {
     n || d(t)
   }, [t, n]);
   let u = c > i.vU + a.vpv,
-    h = (0, l.nd)({
+    p = (0, l.nd)({
       location: "useSearchResultsPagination"
     });
   return {
-    isPaginationTotalCountLimited: u && !h,
+    isPaginationTotalCountLimited: u && !p,
     paginationTotalCount: Math.min(c, s),
     paginationMaxIndex: o
   }

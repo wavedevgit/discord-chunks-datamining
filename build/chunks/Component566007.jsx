@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 566007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -17,7 +17,7 @@ function o(e) {
       channelId: u,
       disableInteraction: d
     } = e,
-    f = function(e, t) {
+    g = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -32,7 +32,7 @@ function o(e) {
       }
       return i
     }(e, ["user", "widget", "guildId", "channelId", "disableInteraction"]);
-  let g = c.games[0];
+  let f = c.games[0];
   return (0, r.jsx)(a.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -54,11 +54,11 @@ function o(e) {
     userId: o.id,
     widget: c,
     disableInteraction: d
-  }, f), n = n = {
-    children: null != g ? (0, r.jsx)(l.Z, {
+  }, g), n = n = {
+    children: null != f ? (0, r.jsx)(l.Z, {
       user: o,
       widgetType: c.type,
-      game: g,
+      game: f,
       guildId: s,
       channelId: u,
       disableInteraction: d

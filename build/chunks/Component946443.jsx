@@ -1,4 +1,4 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 27 **/
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
@@ -91,8 +91,8 @@ function S(e) {
   if (0 === M.length) {
     return (0, r.jsx)(O.Z, {
       Icon: d.xx7,
-      header: x.intl.string(x.t["6XMM+D"]),
-      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? x.intl.string(x.t.w9uDOW) : x.intl.string(x.t.BiUJC6)
+      header: E.intl.string(E.t["6XMM+D"]),
+      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? E.intl.string(E.t.w9uDOW) : E.intl.string(E.t.BiUJC6)
     })
   }
   return (0, r.jsx)(c.bG, {
@@ -141,11 +141,11 @@ function S(e) {
           }
         }, l), n = n = {
           onScroll: L === j.jd.Done ? true : k,
-          className: o()(E.scroller, "group-spacing-".concat(G)),
+          className: o()(x.scroller, "group-spacing-".concat(G)),
           children: [Z ? (0, r.jsx)(I, {
             setSeenTutorial: w
           }) : null, (0, v.Z)(M, D, N), L === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
-            className: E.spinner
+            className: x.spinner
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -167,29 +167,29 @@ function I(e) {
     setSeenTutorial: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: E.tutorial,
+    className: x.tutorial,
     children: [(0, r.jsx)("div", {
-      className: E.tutorialIcon,
+      className: x.tutorialIcon,
       children: (0, r.jsx)(d.xx7, {
         size: "md",
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(d.Heading, {
-        className: E.__invalid_tutorialHeader,
+        className: x.__invalid_tutorialHeader,
         variant: "heading-md/semibold",
-        children: x.intl.string(x.t.vZPktJ)
+        children: E.intl.string(E.t.vZPktJ)
       }), (0, r.jsx)(d.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: x.intl.string(x.t.vWkIII)
+        children: E.intl.string(E.t.vWkIII)
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: E.tutorialButton,
+        className: x.tutorialButton,
         children: (0, r.jsx)(d.Button, {
           variant: "primary",
           size: "sm",
-          text: x.intl.string(x.t["+IrDzN"]),
+          text: E.intl.string(E.t["+IrDzN"]),
           onClick: t
         })
       })]

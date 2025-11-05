@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 879877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -27,7 +27,7 @@ function h(e) {
     applicationId: s,
     className: u,
     disableInteraction: h = false
-  } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = o.qH, I = a && !h && (0, f.M8)(c) && x.length < P, {
+  } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = o.qH, I = a && !h && (0, g.M8)(c) && x.length < P, {
     trackUserProfileAction: w
   } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [C, D] = (0, i.useState)(0), [k, N] = (0, i.useState)(false), A = j(E, T, x, S, D);
   if ((0, i.useEffect)(() => (A(), window.addEventListener("resize", A), () => {
@@ -66,7 +66,7 @@ function h(e) {
         ref: E,
         disableInteraction: h
       }))]
-    }), I && (0, r.jsx)(g.Z, {
+    }), I && (0, r.jsx)(f.Z, {
       tags: n,
       widgetType: c,
       applicationId: s,
@@ -84,12 +84,12 @@ let y = e => {
       ref: o
     } = e, {
       trackUserProfileEditAction: u
-    } = (0, d.KZ)(), g = (0, p.zK)(t);
-    if (null == g) return null;
+    } = (0, d.KZ)(), f = (0, p.zK)(t);
+    if (null == f) return null;
     let {
       getText: h,
       icon: y
-    } = g;
+    } = f;
     return (0, r.jsxs)("li", {
       className: b.tag,
       ref: o,
@@ -103,7 +103,7 @@ let y = e => {
         text: m.intl.string(m.t.Otv9fP),
         children: (0, r.jsx)(s.P3F, {
           onClick: () => {
-            (0, f.RZ)(a, i, t), u({
+            (0, g.RZ)(a, i, t), u({
               action: "TAG_REMOVED",
               widgetEdited: a,
               gameId: i
@@ -177,23 +177,23 @@ let y = e => {
     let s = null != (o = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? o : 0,
       u = null != (c = null == (l = t.current) ? true : l.getBoundingClientRect().width) ? c : 0,
       d = u > 0 ? 8 : 4,
-      f = 0,
       g = 0,
+      f = 0,
       p = r.current;
     for (let e = 0; e < n.length; e++) {
       let t = p.get(n[e]);
       if (null != t) {
-        if ((g += t.offsetWidth + 4) > 296) break;
-        f++
+        if ((f += t.offsetWidth + 4) > 296) break;
+        g++
       }
     }
-    g = 0;
-    for (let e = f; e < n.length; e++) {
+    f = 0;
+    for (let e = g; e < n.length; e++) {
       let t = p.get(n[e]);
       if (null != t) {
-        if ((g += t.offsetWidth + 4) > 296 - s - u - d) break;
-        f++
+        if ((f += t.offsetWidth + 4) > 296 - s - u - d) break;
+        g++
       }
     }
-    a(n.length - f)
+    a(n.length - g)
   }, [e, t, null == n ? true : n.join(""), r, a])

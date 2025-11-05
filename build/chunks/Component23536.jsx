@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 23536, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -33,15 +33,15 @@ function _(e) {
       items: null != (e = null == r ? true : r.items) ? e : b,
       state: null != (n = null == r ? true : r.state) ? n : f.M.LOADING
     }
-  }), v = i.useMemo(() => y.map(e => e.message), [y]), j = (0, l.e7)([g.ZP], () => g.ZP.hasUnreadPins(t.id));
+  }), O = i.useMemo(() => y.map(e => e.message), [y]), j = (0, l.e7)([g.ZP], () => g.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
     j && o.Z.ackPins(t.id)
   }, [j, t.id]), (0, c.ZP)(() => {
-    v.some(d.k5) && o.Z.fetchPins(t.id, {
+    O.some(d.k5) && o.Z.fetchPins(t.id, {
       reset: true
     })
   });
-  let O = i.useCallback(() => {
+  let v = i.useCallback(() => {
       o.Z.fetchPins(t.id)
     }, [t.id]),
     C = i.useCallback(() => {
@@ -50,13 +50,13 @@ function _(e) {
         before: null == (e = y.at(false)) ? true : e.pinnedAt
       })
     }, [t.id, y]),
-    I = (0, l.e7)([p.Z], () => (0, a.ap)(p.Z.theme));
+    I = (0, l.e7)([h.Z], () => (0, a.ap)(h.Z.theme));
   return (0, r.jsx)(s.VqE, {
     "aria-label": m.intl.string(m.t["mp1N/2"]),
-    children: (0, r.jsx)(h.ZP, {
+    children: (0, r.jsx)(p.ZP, {
       channel: t,
-      onFetch: O,
-      messages: v,
+      onFetch: v,
+      messages: O,
       loading: x === f.M.LOADING,
       hasMore: x === f.M.LOADED_HAS_MORE,
       analyticsName: "Channel Pins",
@@ -64,12 +64,12 @@ function _(e) {
         if (y.length > 0) return;
         let e = m.intl.string(t.isPrivate() ? m.t.rhqcbJ : m.t.fmyaWJ),
           i = I ? n(306059) : n(281485);
-        return (0, r.jsx)(h.nH, {
+        return (0, r.jsx)(p.nH, {
           msg: e,
           image: i
         }, "emptystate")
       },
-      renderHeader: () => (0, r.jsx)(h.h4, {
+      renderHeader: () => (0, r.jsx)(p.h4, {
         icon: s.qQX,
         title: m.intl.string(m.t["mp1N/2"])
       }),

@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 232083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk34335 = require("./34335.jsx"),
   Chunk112794 = require("./112794.js");
 
-function f(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +32,7 @@ function f(e) {
   return e
 }
 
-function g(e) {
+function f(e) {
   var {
     games: t,
     user: n,
@@ -59,7 +59,7 @@ function g(e) {
   return (0, r.jsx)("ul", {
     className: d.cardList,
     children: t.map((e, t) => (0, r.jsx)("li", {
-      children: (0, r.jsx)(s.Z, f({
+      children: (0, r.jsx)(s.Z, g({
         index: t,
         user: n,
         game: e,
@@ -81,7 +81,7 @@ function p(e) {
   } = e, b = (0, a.e7)([l.default], () => l.default.getId() === s.id), {
     getManageButtonForWidget: h
   } = (0, u.j)(), y = h(d), [v, O] = i.useState(false), j = v ? m : m.slice(0, 2), x = m.length > 2, _ = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(g, (t = f({}, e), n = n = {
+    children: [(0, r.jsx)(f, (t = g({}, e), n = n = {
       games: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

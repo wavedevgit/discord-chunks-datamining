@@ -1,4 +1,4 @@
-/** Chunk was on 94758 **/
+/** Chunk was on 94072 **/
 /** chunk id: 851397, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -24,9 +24,9 @@ var Chunk951288 = require("./951288.js"),
 function j(e) {
   var t, r, {
       profileOwner: j,
-      showIcons: P = false
+      showIcons: h = false
     } = e,
-    v = function(e, t) {
+    P = function(e, t) {
       if (null == e) return {};
       var r, n, i = function(e, t) {
         if (null == e) return {};
@@ -43,41 +43,41 @@ function j(e) {
     }(e, ["profileOwner", "showIcons"]);
   let {
     item: S,
-    isOwner: w,
-    giftingOrigin: y = g.Wt.USER_PROFILE_WISHLIST
-  } = v, x = S.sku, E = x.applicationId, k = (0, o.q)(E), N = i.useRef(null), [T] = (0, l.Wu)([f.Z], () => [f.Z.hasSentGift(S.skuId, j.id)], [S.skuId, j.id]), C = S.skuName, _ = w ? h.intl.string(h.t.FdGl5A) : h.intl.string(h.t.ilhtIa), L = w ? true : a.OgN, Z = i.useCallback(() => {
-    if (w && (null == k ? true : k.guildId) != null)(0, u.closeUserProfileModal)(), (0, c.uL)(I.Z5c.CHANNELS_GAME_SHOP(k.guildId, 0, S.skuId, x.slug));
+    isOwner: v,
+    giftingOrigin: w = g.Wt.USER_PROFILE_WISHLIST
+  } = P, k = S.sku, x = k.applicationId, C = (0, a.q)(x), E = i.useRef(null), [N] = (0, l.Wu)([d.Z], () => [d.Z.hasSentGift(S.skuId, j.id)], [S.skuId, j.id]), T = S.skuName, Z = v ? I.intl.string(I.t.FdGl5A) : I.intl.string(I.t.ilhtIa), L = v ? true : o.OgN, R = i.useCallback(() => {
+    if (v && (null == C ? true : C.guildId) != null)(0, u.closeUserProfileModal)(), (0, c.uL)(m.Z5c.CHANNELS_GAME_SHOP(C.guildId, 0, S.skuId, k.slug));
     else {
-      if (T) return;
-      (0, p.P)(x, {
+      if (N) return;
+      (0, b.P)(k, {
         isGift: true,
         giftRecipient: j,
-        giftingOrigin: y
+        giftingOrigin: w
       })
     }
-  }, [w, null == k ? true : k.guildId, S.skuId, x, T, j, y]), R = i.useCallback(() => P ? (0, n.jsx)("div", {
-    className: b.itemIcon,
+  }, [v, null == C ? true : C.guildId, S.skuId, k, N, j, w]), _ = i.useCallback(() => h ? (0, n.jsx)("div", {
+    className: y.itemIcon,
     children: (0, n.jsx)(s.u, {
-      text: h.intl.formatToPlainString(h.t.p3RmJF, {
-        username: m.ZP.getName(j)
+      text: I.intl.formatToPlainString(I.t.p3RmJF, {
+        username: O.ZP.getName(j)
       }),
       position: "top",
-      children: (0, n.jsx)(a.h_8, {
+      children: (0, n.jsx)(o.h_8, {
         size: "custom",
         width: 20,
         height: 20,
         color: "currentColor",
-        colorClass: b.itemIconHeart
+        colorClass: y.itemIconHeart
       })
     })
-  }) : null, [P, j]), F = i.useCallback(() => (0, n.jsx)(O.A, {
+  }) : null, [h, j]), A = i.useCallback(() => (0, n.jsx)(p.A, {
     shape: "custom",
-    containerClassName: b.card,
-    backgroundImageClassName: b.cardBackgroundImage,
-    foregroundImageClassName: b.cardImage,
-    sku: x
-  }), [x]);
-  return (0, n.jsx)(d.Z, (t = function(e) {
+    containerClassName: y.card,
+    backgroundImageClassName: y.cardBackgroundImage,
+    foregroundImageClassName: y.cardImage,
+    sku: k
+  }), [k]);
+  return (0, n.jsx)(f.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -94,15 +94,15 @@ function j(e) {
       })
     }
     return e
-  }({}, v), r = r = {
-    cardRef: N,
-    accessibleLabel: C,
-    onCardClick: Z,
-    buttonCTALabel: _,
+  }({}, P), r = r = {
+    cardRef: E,
+    accessibleLabel: T,
+    onCardClick: R,
+    buttonCTALabel: Z,
     buttonIcon: L,
-    isOwned: T,
-    renderItemPreview: F,
-    renderSourceIcon: R
+    isOwned: N,
+    renderItemPreview: A,
+    renderSourceIcon: _
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

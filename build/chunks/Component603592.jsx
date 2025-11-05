@@ -1,4 +1,4 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 27 **/
 /** chunk id: 603592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -27,8 +27,8 @@ let h = Chunk647438.forwardRef(function(e, t) {
     lowerBadgeSize: v,
     showPill: j = true,
     className: C,
-    "aria-label": x,
-    children: E,
+    "aria-label": E,
+    children: x,
     onMouseEnter: S,
     onMouseLeave: I,
     onMouseDown: P
@@ -78,7 +78,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
             [p.selected]: b || Z
           }),
           onClick: f,
-          "aria-label": "string" == typeof _ && null == x ? _ : x,
+          "aria-label": "string" == typeof _ && null == E ? _ : E,
           "aria-selected": b,
           onContextMenu: g,
           focusProps: {
@@ -100,6 +100,6 @@ let h = Chunk647438.forwardRef(function(e, t) {
           Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
         }), n))
       })
-    }), E]
+    }), x]
   })
 })

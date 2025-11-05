@@ -1,5 +1,5 @@
-/** Chunk was on 56710 **/
-/** chunk id: 97009, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 32908 **/
+/** chunk id: 97009, original params: e,n,t (module,exports,require) **/
 module.exports = {
   chat: "chat_f75fb0",
   threadSidebarOpen: "threadSidebarOpen_f75fb0",

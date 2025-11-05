@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 457868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => X
@@ -72,10 +72,10 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       sectionId: l,
       userId: a,
       guildOwnerId: s
-    } = e, o = i.useRef(null), d = (0, h.e7)([R.Z], () => R.Z.isTyping(t.id, a)), p = (0, h.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, a)), m = (0, h.e7)([P.Z], () => {
+    } = e, o = i.useRef(null), d = (0, p.e7)([R.Z], () => R.Z.isTyping(t.id, a)), h = (0, p.e7)([Z.ZP], () => Z.ZP.getMember(t.guild_id, a)), m = (0, p.e7)([P.Z], () => {
       var e;
-      return (null == p ? true : p.colorRoleId) != null ? null == (e = P.Z.getRole(t.guild_id, p.colorRoleId)) ? true : e.name : true
-    }, [t.guild_id, p]), b = (0, h.e7)([w.default], () => w.default.getUser(a)), _ = (0, h.e7)([w.default], () => w.default.getCurrentUser()), y = (null == b ? true : b.id) === (null == _ ? true : _.id), v = (0, h.e7)([T.Z, N.Z], () => y ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), O = (0, h.e7)([T.Z], () => T.Z.isMobileOnline(a)), C = (0, h.e7)([T.Z, N.Z], () => y ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), A = (0, h.e7)([E.Z], () => E.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), M = (0, h.e7)([I.Z], () => I.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, B = i.useCallback(e => {
+      return (null == h ? true : h.colorRoleId) != null ? null == (e = P.Z.getRole(t.guild_id, h.colorRoleId)) ? true : e.name : true
+    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), _ = (0, p.e7)([w.default], () => w.default.getCurrentUser()), y = (null == b ? true : b.id) === (null == _ ? true : _.id), O = (0, p.e7)([T.Z, N.Z], () => y ? N.Z.getStatus() : T.Z.getStatus(a, t.guild_id)), v = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(a)), C = (0, p.e7)([T.Z, N.Z], () => y ? N.Z.getActivities() : T.Z.getActivities(a, t.guild_id)), A = (0, p.e7)([E.Z], () => E.Z.getAnyStreamForUser(a)), D = (0, c.JA)(a), M = (0, p.e7)([I.Z], () => I.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? true : b.id) != null && b.id === s, B = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -123,7 +123,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       guildId: t.guild_id
     }), [K, Q] = i.useState(false);
     if (null == b) return null;
-    let X = null == p ? true : p.premiumSince;
+    let X = null == h ? true : h.premiumSince;
     return (0, r.jsx)(S.Z, {
       targetElementRef: o,
       user: b,
@@ -159,16 +159,16 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
           shouldAnimateStatus: W,
           user: b,
           currentUser: _,
-          nick: null == p ? true : p.nick,
-          status: v,
+          nick: null == h ? true : h.nick,
+          status: O,
           activities: C,
-          colorString: null == p ? true : p.colorString,
-          colorStrings: null == p ? true : p.colorStrings,
+          colorString: null == h ? true : h.colorString,
+          colorStrings: null == h ? true : h.colorStrings,
           colorRoleName: m,
           isTyping: d,
           channel: t,
           guildId: t.guild_id,
-          isMobile: O,
+          isMobile: v,
           selected: K,
           applicationStream: A,
           premiumSince: null == X ? null : new Date(X),
@@ -193,7 +193,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
       label: n,
       count: i,
       guildId: l
-    } = e, a = (0, v.p9)({
+    } = e, a = (0, O.p9)({
       roleId: t,
       guildId: l,
       size: 16
@@ -209,7 +209,7 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
         title: n,
         count: i
       }),
-      children: [null != a ? (0, r.jsx)(O.Z, z({
+      children: [null != a ? (0, r.jsx)(v.Z, z({
         className: V.roleIcon
       }, a)) : null, (0, r.jsxs)("span", {
         "aria-hidden": true,
@@ -224,15 +224,15 @@ let W = Chunk998502.ZP.getEnableHardwareAcceleration(),
     return t.type === H.d4z.PRIVATE_THREAD ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: B.divider
-      }), (0, r.jsxs)(p.Text, {
+      }), (0, r.jsxs)(h.Text, {
         variant: "text-xs/bold",
         color: "header-secondary",
         className: B.private,
-        children: [(0, r.jsx)(p.mBM, {
+        children: [(0, r.jsx)(h.mBM, {
           size: "xxs",
           color: "currentColor"
         }), "\xa0", F.intl.string(F.t.BTLTAs)]
-      }), (0, r.jsx)(p.Text, {
+      }), (0, r.jsx)(h.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         className: B.instructions,
@@ -251,7 +251,7 @@ function X(e) {
     navigator: g,
     listRef: y
   } = function(e, t) {
-    let n = (0, h.e7)([m.Z], () => m.Z.keyboardModeEnabled),
+    let n = (0, p.e7)([m.Z], () => m.Z.keyboardModeEnabled),
       r = i.useRef(null),
       l = i.useCallback((e, n) => {
         let i = r.current;
@@ -309,16 +309,16 @@ function X(e) {
     }, [t.guild_id, t.id, t.type]), x) return (0, r.jsx)(J, {
     channel: t
   });
-  let v = o().omit(g.containerProps, ["ref"]),
+  let O = o().omit(g.containerProps, ["ref"]),
     j = M.iJ(n);
   return (0, r.jsx)(_.Gt, {
     value: s,
     children: (0, r.jsx)(c.bG, {
       navigator: g,
-      children: (0, r.jsx)(p.Wdt, {
+      children: (0, r.jsx)(h.Wdt, {
         children: e => (0, r.jsx)("div", {
           className: a()(V.membersWrap, V.hiddenMembers, B.container),
-          children: (0, r.jsx)(p.aVo, z({
+          children: (0, r.jsx)(h.aVo, z({
             ref: y,
             className: V.members,
             paddingTop: 0,
@@ -358,7 +358,7 @@ function X(e) {
             innerTag: "ul",
             sections: u.map(e => e.userIds.length),
             fade: true
-          }, v, e), l)
+          }, O, e), l)
         })
       })
     })
@@ -371,7 +371,7 @@ function J(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: a()(V.membersWrap, V.hiddenMembers, V.members, B.emptyState),
-    children: [(0, r.jsx)(p.Text, {
+    children: [(0, r.jsx)(h.Text, {
       className: B.emptyStateHeader,
       variant: "text-xs/bold",
       color: "interactive-normal",
@@ -380,17 +380,17 @@ function J(e) {
       className: B.emptyStateIconContainer,
       children: [(0, r.jsx)("div", {
         className: B.emptyStateIcon,
-        children: (0, r.jsx)(p.BFJ, {
+        children: (0, r.jsx)(h.BFJ, {
           size: "lg",
           color: "currentColor"
         })
       }), (0, r.jsx)(A.Z, {
         className: B.emptyStateStars
       })]
-    }), (0, r.jsx)(p.Heading, {
+    }), (0, r.jsx)(h.Heading, {
       variant: "heading-md/semibold",
       children: t.isForumPost() ? F.intl.string(F.t.p0UgNQ) : F.intl.string(F.t["9/n5vz"])
-    }), (0, r.jsx)(p.Text, {
+    }), (0, r.jsx)(h.Text, {
       className: B.emptyStateSubtext,
       variant: "text-sm/normal",
       color: "header-secondary",

@@ -1,7 +1,7 @@
-/** Chunk was on 3270 **/
+/** Chunk was on 54400 **/
 /** chunk id: 293858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => L
+  b: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,74 +23,74 @@ var Chunk951288 = require("./951288.js"),
   Chunk698708 = require("./698708.jsx"),
   Chunk921944 = require("./921944.js");
 
-function L(e) {
+function y(e) {
   let t, {
       handleClose: n,
       planGroup: l,
-      onSubscriptionConfirmation: L,
-      renderPurchaseConfirmation: v,
-      postSuccessGuild: y,
+      onSubscriptionConfirmation: y,
+      renderPurchaseConfirmation: L,
+      postSuccessGuild: v,
       followupSKUInfo: S,
-      continueSessionToInitialStep: I
+      continueSessionToInitialStep: O
     } = e,
     {
-      activeSubscription: w,
-      paymentSources: O,
-      paymentSourceId: P,
-      selectedPlan: E,
-      selectedSkuId: k,
-      step: M,
+      activeSubscription: E,
+      paymentSources: P,
+      paymentSourceId: w,
+      selectedPlan: k,
+      selectedSkuId: M,
+      step: I,
       updatedSubscription: T,
       startingPremiumSubscriptionPlanIdRef: A,
-      startingFractionalPremiumEndsAtRef: N
-    } = (0, m.JL)(),
+      startingFractionalPremiumEndsAtRef: Z
+    } = (0, h.JL)(),
     {
-      isGift: Z,
-      giftRecipient: B,
-      giftCode: R,
+      isGift: N,
+      giftRecipient: R,
+      giftCode: B,
       hasSentMessage: H,
       isSendingMessage: U,
       sendGiftMessage: F,
       claimableRewards: G,
       selectedGiftingPromotionReward: D
-    } = (0, h.wD)(),
+    } = (0, x.wD)(),
     {
-      confirmationFooter: W
-    } = (0, _.zb)(),
-    z = (0, c.id)(E, Z, G),
-    K = (0, d.Z)(),
-    Y = (0, c.a5)(E),
-    V = (0, c.tK)(null == D ? true : D.skuId),
-    q = (0, j.$)(O, P),
-    J = Z && null != D && Y;
-  a()(null != E, "Expected plan to selected"), a()(null != k, "Expected selectedSkuId"), a()(null != M, "Step should be set");
+      confirmationFooter: K
+    } = (0, f.zb)(),
+    z = (0, d.id)(k, N, G),
+    V = (0, C.Z)(),
+    W = (0, d.a5)(k),
+    Y = (0, d.tK)(null == D ? true : D.skuId),
+    q = (0, j.$)(P, w),
+    J = N && null != D && W;
+  a()(null != k, "Expected plan to selected"), a()(null != M, "Expected selectedSkuId"), a()(null != I, "Step should be set");
   let Q = i.useCallback(() => {
-    n(), null == L || L()
-  }, [n, L]);
+    n(), null == y || y()
+  }, [n, y]);
   i.useEffect(() => {
-    !Z || null == B || null == R || H || U || (0, u.pO)(B) || F({
-      onSubscriptionConfirmation: L
+    !N || null == R || null == B || H || U || (0, u.pO)(R) || F({
+      onSubscriptionConfirmation: y
     })
-  }, [F, Z, B, R, H, U, L]), i.useEffect(() => {
-    null != K && null != K.reminderNotice && z && (0, o.wH)(s.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
+  }, [F, N, R, B, H, U, y]), i.useEffect(() => {
+    null != V && null != V.reminderNotice && z && (0, o.wH)(s.z.GIFTING_PROMOTION_REMINDER, V.dismissibleContentVersion, {
       dismissAction: b.L.INDIRECT_ACTION
     })
-  }, [K, z]);
-  let X = null != I ? C.PI.DEEPLINK_TO_DESKTOP_APP : true;
-  if (null != v) t = v(E, Q, T);
-  else if (Z) t = (0, r.jsx)(C.TB, {
-    planId: E.id,
+  }, [V, z]);
+  let X = null != O ? c.PI.DEEPLINK_TO_DESKTOP_APP : true;
+  if (null != L) t = L(k, Q, T);
+  else if (N) t = (0, r.jsx)(c.TB, {
+    planId: k.id,
     onClose: Q
   });
   else {
-    let e = A.current === E.id ? {
-      postSuccessGuild: y
+    let e = A.current === k.id ? {
+      postSuccessGuild: v
     } : {
       followupSKUInfo: S,
       startingPremiumSubscriptionPlanId: A.current,
-      isDowngrade: null != w && (0, p.GY)(w, E.id, l)
+      isDowngrade: null != E && (0, p.GY)(E, k.id, l)
     };
-    t = (0, r.jsx)(C.ZP, function(e) {
+    t = (0, r.jsx)(c.ZP, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -108,20 +108,20 @@ function L(e) {
       }
       return e
     }({
-      planId: E.id,
+      planId: k.id,
       onClose: Q,
       paymentSourceType: q,
-      hideClose: null != W,
-      startingFractionalPremiumEndsAt: N.current,
+      hideClose: null != K,
+      startingFractionalPremiumEndsAt: Z.current,
       customCTAType: X
     }, e))
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(f.C3, {
+    children: [(0, r.jsxs)(_.C3, {
       children: [(0, r.jsx)(g.Z, {}), t]
-    }), null != W && W, J && null != V && (0, r.jsx)(x.Z, {
+    }), null != K && K, J && null != Y && (0, r.jsx)(m.Z, {
       onClose: Q,
-      selectedPromotionalDecoPurchaseRecord: V,
+      selectedPromotionalDecoPurchaseRecord: Y,
       selectedGiftingPromotionReward: D
     })]
   })

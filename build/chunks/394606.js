@@ -1,4 +1,4 @@
-/** Chunk was on 47793 **/
+/** Chunk was on 52557 **/
 /** chunk id: 394606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -16,7 +16,7 @@ function s(e) {
     coverImageUrl: n,
     localizedName: s,
     isFetching: u
-  } = (0, a.$)(e), d = (0, r.e7)([l.Z], () => l.Z.getDetectableGame(e)), f = (0, r.e7)([i.Z], () => i.Z.canFetch(e));
+  } = (0, a.$)(e), d = (0, r.e7)([l.Z], () => l.Z.getDetectableGame(e)), g = (0, r.e7)([i.Z], () => i.Z.canFetch(e));
   return {
     coverImageUrl: null != n ? n : o.ZP.getGameAssetURL({
       id: e,
@@ -24,6 +24,6 @@ function s(e) {
       keepAspectRatio: true
     }),
     gameName: null != (t = null != s ? s : null == d ? true : d.name) ? t : c.intl.string(c.t.GIWFlF),
-    isLoading: f || u
+    isLoading: g || u
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 14953 **/
 /** chunk id: 602034, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b,
@@ -39,10 +39,10 @@ function b(e) {
         (0, o.openUploadError)({
           title: m.intl.string(m.t.B3vFdU),
           help: null != (d = null == c ? true : c.message) ? d : m.intl.string(m.t.zMEjJg)
-        }), "" !== n && "" === h.Z.getDraft(e.id, h.d.FirstThreadMessage) && l.Z.saveDraft(e.id, n, h.d.FirstThreadMessage), 0 === p.Z.getUploadCount(e.id, h.d.FirstThreadMessage) && s.Z.setUploads({
+        }), "" !== n && "" === p.Z.getDraft(e.id, p.d.FirstThreadMessage) && l.Z.saveDraft(e.id, n, p.d.FirstThreadMessage), 0 === h.Z.getUploadCount(e.id, p.d.FirstThreadMessage) && s.Z.setUploads({
           channelId: e.id,
           uploads: t,
-          draftType: h.d.FirstThreadMessage
+          draftType: p.d.FirstThreadMessage
         })
       }
     })

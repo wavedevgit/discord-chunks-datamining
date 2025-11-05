@@ -1,4 +1,4 @@
-/** Chunk was on 56710 **/
+/** Chunk was on 27 **/
 /** chunk id: 416568, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ed
@@ -172,7 +172,7 @@ class ea {
       null != e && this.setIsScrolledToBottom(e.isScrolledToBottom())
     }, 100), this.setNodeRef = (e, t) => {
       this.nodeRefs[e] = t
-    }, (0, E.zb)(this.getVisibleGuildIds)
+    }, (0, x.zb)(this.getVisibleGuildIds)
   }
 }
 
@@ -189,7 +189,7 @@ function es(e) {
     location: "guildsbar"
   }).dmsTab;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(K.u, {}), c && (0, r.jsx)(H.Z, {}), s === I.u3.SERVER_RAIL_TOP && (0, r.jsx)(P.Z, {}), l ? (0, r.jsx)(x.Z, {}) : null, !t && (0, r.jsx)(B.Z, {}), a.map(e => (0, r.jsx)($.Z, {
+    children: [(0, r.jsx)(K.u, {}), c && (0, r.jsx)(H.Z, {}), s === I.u3.SERVER_RAIL_TOP && (0, r.jsx)(P.Z, {}), l ? (0, r.jsx)(E.Z, {}) : null, !t && (0, r.jsx)(B.Z, {}), a.map(e => (0, r.jsx)($.Z, {
       guildId: e
     }, e)), (0, r.jsx)(J.Z, {
       onActivate: n
@@ -236,8 +236,8 @@ function eu(e) {
     return [e, e.version]
   }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), h = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), {
     isSorting: y,
-    startSorting: x,
-    stopSorting: E
+    startSorting: E,
+    stopSorting: x
   } = (0, M.Z)(), N = i.useRef(false), [T] = i.useState(() => new f.V7), A = i.useRef(null), R = i.useRef(null), B = (0, u.OP)(), {
     ref: F
   } = B, V = function(e, t) {
@@ -324,8 +324,8 @@ function eu(e) {
             setNodeRef: ep.setNodeRef,
             draggable: true,
             sorting: y,
-            onDragStart: x,
-            onDragEnd: E,
+            onDragStart: E,
+            onDragEnd: x,
             renderChildNode: e,
             "aria-setsize": i,
             "aria-posinset": true !== n ? n + 1 : true
@@ -336,15 +336,15 @@ function eu(e) {
             setRef: ep.setNodeRef,
             draggable: true,
             sorting: y,
-            onDragStart: x,
-            onDragEnd: E,
+            onDragStart: E,
+            onDragEnd: x,
             "aria-setsize": i,
             "aria-posinset": true !== n ? n + 1 : true
           }, t.id);
         default:
           return null
       }
-    }, [x, E, y, ep.setNodeRef]),
+    }, [E, x, y, ep.setNodeRef]),
     eb = (0, r.jsx)(W.Z, {
       selected: ef,
       className: en.discoveryIcon
