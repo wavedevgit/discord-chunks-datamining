@@ -34,14 +34,14 @@ function C(e) {
     return null == (e = _.Z.getStateForGuild(t)) ? true : e.instructions[n.planId]
   });
   i.useEffect(() => {
-    null == S && (0, x.iX)(t, n.planId)
+    null == S && (0, m.iX)(t, n.planId)
   }, [t, n.planId, S]);
-  let T = (0, v.Z)(n),
+  let g = (0, v.Z)(n),
     {
-      handleCopyServerIp: E,
-      animateCopyIcon: A
-    } = (0, h.Z)(t, n.id, f.Z.GAME_SERVER_INSTRUCTIONS_MODAL, null != T ? T : ""),
-    g = i.useMemo(() => {
+      handleCopyServerIp: T,
+      animateCopyIcon: E
+    } = (0, h.Z)(t, n.id, u.Z.GAME_SERVER_INSTRUCTIONS_MODAL, null != g ? g : ""),
+    A = i.useMemo(() => {
       switch (n.status) {
         case l.V.STARTING:
           return N.intl.string(I.default.ud4hxY);
@@ -51,24 +51,28 @@ function C(e) {
           return
       }
     }, [n.status]);
-  return (0, s.jsx)(o.ExpressiveModal, {
-    graphic: {
-      type: "dynamic",
-      component: d.DynamicGraphicComponent.GAME_SERVER_GAME_INSTRUCTIONS_ASSET,
-      props: {
-        instance: n
-      }
-    },
-    title: n.name,
-    subtitle: N.intl.string(I.default["4HqfaU"]),
-    size: "md",
+  return (0, s.jsxs)(o.IX, {
+    size: "lg",
+    paddingSize: "lg",
     transitionState: C,
     onClose: r,
-    children: null == S ? (0, s.jsx)(p.$jN, {}) : (0, s.jsxs)("div", {
+    children: [(0, s.jsx)(o.xBx, {
+      gradientColor: "purple",
+      graphic: {
+        type: "dynamic",
+        component: d.DynamicGraphicComponent.GAME_SERVER_GAME_INSTRUCTIONS_ASSET,
+        props: {
+          instance: n
+        }
+      },
+      alignCenter: true,
+      title: n.name,
+      subtitle: N.intl.string(I.default["4HqfaU"])
+    }), null == S ? (0, s.jsx)(p.$jN, {}) : (0, s.jsxs)("div", {
       className: j.content,
-      children: [null != g && (0, s.jsx)(m.Z, {
+      children: [null != A && (0, s.jsx)(x.Z, {
         className: j.infoBox,
-        children: g
+        children: A
       }), (0, s.jsx)("div", {
         className: j.stepsContainer,
         children: S.map((e, t) => (0, s.jsxs)("div", {
@@ -85,27 +89,27 @@ function C(e) {
           }), (0, s.jsx)(p.Text, {
             variant: "text-sm/normal",
             color: "text-secondary",
-            children: u.Z.parse(e, false, {
+            children: f.Z.parse(e, false, {
               allowLinks: true
             })
           })]
         }, t))
-      }), null != T && (0, s.jsxs)("div", {
+      }), null != g && (0, s.jsxs)("div", {
         className: j.serverIpContainer,
         children: [(0, s.jsx)("div", {
-          className: a()(j.serverIpInput, A && j.animate),
+          className: a()(j.serverIpInput, E && j.animate),
           children: (0, s.jsx)(p.Text, {
             variant: "text-md/medium",
             color: "header-primary",
-            children: T
+            children: g
           })
         }), (0, s.jsx)(p.Button, {
-          variant: A ? "active" : "primary",
-          text: A ? N.intl.string(N.t.t5VZ88) : N.intl.string(N.t.OpuAlK),
-          onClick: E,
+          variant: E ? "active" : "primary",
+          text: E ? N.intl.string(N.t.t5VZ88) : N.intl.string(N.t.OpuAlK),
+          onClick: T,
           icon: p.TIy
         })]
       })]
-    })
+    })]
   })
 }
