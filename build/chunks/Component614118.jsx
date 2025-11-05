@@ -72,7 +72,6 @@ function O(e) {
       children: [(0, r.jsxs)("div", {
         className: y.detailsTitleDescription,
         children: [(0, r.jsx)(s.Text, {
-          color: "always-white",
           variant: "text-md/bold",
           lineClamp: 1,
           children: P.name
@@ -84,7 +83,6 @@ function O(e) {
             className: y.iconAsset
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/semibold",
-            color: "always-white",
             lineClamp: 1,
             children: (0, d.T4)(null != (I = null == (t = P.price) ? true : t.amount) ? I : 0, null != (T = null == (n = P.price) ? true : n.currency) ? T : E.pK.USD)
           })]
