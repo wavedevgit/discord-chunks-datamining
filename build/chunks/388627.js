@@ -18,7 +18,7 @@ var Chunk594190 = require("./594190.js");
 require("./569545.js"), require("./522474.js"), require("./199902.js"), require("./314897.js"), require("./355863.js");
 var Chunk293273 = require("./293273.js");
 require("./944486.js"), require("./808506.js");
-var Chunk145597 = require("./145597.js");
+var Chunk610394 = require("./610394.js");
 
 function f() {
   let [e = PopoutWindowStore] = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [PopoutWindowStore];
@@ -48,26 +48,27 @@ function h() {
     r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Chunk293273.Z,
     i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Chunk317381.ZP,
     s = arguments.length > 3 && true !== arguments[3] ? arguments[3] : Chunk812206.Z,
-    f = arguments.length > 4 && true !== arguments[4] ? arguments[4] : (0, Chunk850405.e)(),
-    _ = Chunk902704.getCurrentEmbeddedActivity(),
-    p = null == _ ? true : _.applicationId,
-    h = null == p ? true : Chunk426419.getApplication(p);
-  if (null != _ && null != h && f) return {
-    id: _.applicationId,
+    f = arguments.length > 4 && true !== arguments[4] ? arguments[4] : Chunk610394.Z,
+    _ = arguments.length > 5 && true !== arguments[5] ? arguments[5] : (0, Chunk850405.e)(),
+    p = Chunk902704.getCurrentEmbeddedActivity(),
+    h = null == p ? true : p.applicationId,
+    m = null == h ? true : Chunk426419.getApplication(h);
+  if (null != p && null != m && _) return {
+    id: p.applicationId,
     altId: true,
-    name: h.name
+    name: m.name
   };
-  let m = (0, Chunk145597.getPID)(),
-    g = require.getGameForPID(m),
-    E = Chunk442837.getActivityForPID(m);
-  return (null == g || null == g.id || null == g.name) && (null == E || null == E.application_id) ? true : {
-    id: null != (e = null == g ? true : g.id) ? module : null == E ? true : E.application_id,
-    altId: null == E ? true : E.application_id,
-    name: null != (t = null == g ? true : g.name) ? exports : null == E ? true : E.name
+  let g = f.getTargetPID(),
+    E = require.getGameForPID(g),
+    b = Chunk442837.getActivityForPID(g);
+  return (null == E || null == E.id || null == E.name) && (null == b || null == b.application_id) ? true : {
+    id: null != (e = null == E ? true : E.id) ? module : null == b ? true : b.application_id,
+    altId: null == b ? true : b.application_id,
+    name: null != (t = null == E ? true : E.name) ? exports : null == b ? true : b.name
   }
 }
 
 function m() {
   let e = (0, Chunk426419.P)();
-  return (0, Chunk442837.e7)([Chunk594190.ZP, Chunk293273.Z, Chunk317381.ZP, Chunk812206.Z], () => h(Chunk594190.ZP, Chunk293273.Z, Chunk317381.ZP, Chunk812206.Z, module), [module], Chunk902704.Z)
+  return (0, Chunk442837.e7)([Chunk594190.ZP, Chunk293273.Z, Chunk317381.ZP, Chunk812206.Z, Chunk610394.Z], () => h(Chunk594190.ZP, Chunk293273.Z, Chunk317381.ZP, Chunk812206.Z, Chunk610394.Z, module), [module], Chunk902704.Z)
 }

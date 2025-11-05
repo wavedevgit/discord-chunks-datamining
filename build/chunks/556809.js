@@ -2,13 +2,12 @@
 /** chunk id: 556809, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js");
 var Chunk147913 = require("./147913.js"),
   Chunk710845 = require("./710845.js"),
   Chunk522474 = require("./522474.js"),
   Chunk451478 = require("./451478.js"),
-  Chunk145597 = require("./145597.js"),
   Chunk830917 = require("./830917.js"),
   Chunk41534 = require("./41534.js"),
   Chunk837268 = require("./837268.js"),
@@ -17,7 +16,7 @@ var Chunk147913 = require("./147913.js"),
   Chunk610394 = require("./610394.js"),
   Chunk501787 = require("./501787.js");
 
-function h(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,112 +24,112 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = new Chunk710845.Z("OverlayWindowRAFManager"),
-  g = window.requestAnimationFrame.bind(window),
-  E = new Set([Chunk837268.gl.OutOfProcess, Chunk837268.gl.OutOfProcessLimitedInteraction]),
-  b = new Set([Chunk837268.mM.OVERLAY_CRASHED, Chunk837268.mM.OVERLAY_CRASHED_DISABLED]);
+let h = new Chunk710845.Z("OverlayWindowRAFManager"),
+  m = window.requestAnimationFrame.bind(window),
+  g = new Set([Chunk837268.gl.OutOfProcess, Chunk837268.gl.OutOfProcessLimitedInteraction]),
+  E = new Set([Chunk837268.mM.OVERLAY_CRASHED, Chunk837268.mM.OVERLAY_CRASHED_DISABLED]);
 
-function y(e) {
-  for (let t of Object.values(f.default.getTrackedGames()))
-    if (!(!E.has(t.overlayMethod) || b.has(t.state)) && (!e || t.state === u.mM.OVERLAY_RENDERING)) returntrue;
+function b(e) {
+  for (let t of Object.values(d.default.getTrackedGames()))
+    if (!(!g.has(t.overlayMethod) || E.has(t.state)) && (!e || t.state === c.mM.OVERLAY_RENDERING)) returntrue;
   returnfalse
 }
-let O = null,
+let y = null,
+  O = false,
   v = false,
-  I = false,
-  T = {},
-  S = (e, t) => {
-    T[e] = t
+  I = {},
+  T = (e, t) => {
+    I[e] = t
   },
-  A = e => {
-    delete T[e]
+  S = e => {
+    delete I[e]
   },
-  C = () => {
-    T = {}
+  A = () => {
+    I = {}
   },
-  N = () => Object.entries(T).map(e => {
+  C = () => Object.entries(I).map(e => {
     let [t, n] = e;
     return {
       timeoutId: Number(t),
       callback: n
     }
   }),
-  R = e => {
+  N = e => {
     try {
-      let t = a.Z.getWindow(p.$J);
-      if (null == t || "function" != typeof t.requestAnimationFrame) return O = "OverlayNotAvailable", g(e);
-      if (!I) return O = "MainWindowFocused", g(e);
-      if (!y(true)) return O = "NoOverlayRendering", g(e);
-      let n = null !== _.Z.getFocusedRunningGame(),
-        r = o.Z.isFocused((0, l.ZY)(t));
-      if (o.Z.isFocused() && m.error("Main window is reported as focused when it should not be!"), n || r) {
-        O = n ? "OverlayGameFocused" : "OverlayWindowFocused";
+      let t = a.Z.getWindow(_.$J);
+      if (null == t || "function" != typeof t.requestAnimationFrame) return y = "OverlayNotAvailable", m(e);
+      if (!v) return y = "MainWindowFocused", m(e);
+      if (!b(true)) return y = "NoOverlayRendering", m(e);
+      let n = null !== f.Z.getFocusedRunningGame(),
+        r = o.Z.isFocused((0, s.ZY)(t));
+      if (o.Z.isFocused() && h.error("Main window is reported as focused when it should not be!"), n || r) {
+        y = n ? "OverlayGameFocused" : "OverlayWindowFocused";
         let r = t.requestAnimationFrame(t => {
-          A(r), e(t)
+          S(r), e(t)
         });
-        return S(r, e), r
+        return T(r, e), r
       }
     } catch (e) {
-      m.error("RAF redirect failed, falling back to original. Cause:", e), (0, c.D1)(e, f.default.getOverlayMethod((0, s.getPID)()))
+      h.error("RAF redirect failed, falling back to original. Cause:", e), (0, l.D1)(e, d.default.getOverlayMethod(f.Z.getTargetPID()))
     }
-    return O = "None", g(e)
+    return y = "None", m(e)
   };
 
-function P() {
+function R() {
   return !Chunk451478.Z.isFocused() || !Chunk451478.Z.isVisible()
 }
 
-function w() {
+function P() {
   let e = Chunk522474.Z.getWindow(Chunk501787.$J),
     t = null != module && "function" == typeof module.cancelAnimationFrame;
-  N().forEach(n => {
+  C().forEach(n => {
     let {
       timeoutId: r,
       callback: i
     } = n;
-    t && e.cancelAnimationFrame(r), g(i)
-  }), C()
+    t && e.cancelAnimationFrame(r), m(i)
+  }), A()
 }
 
-function D(e) {
-  if (e === I) return;
-  let t = !e && I;
-  I = e, t && w()
+function w(e) {
+  if (e === v) return;
+  let t = !e && v;
+  v = e, t && P()
 }
-class x extends Chunk147913.Z {
+class D extends Chunk147913.Z {
   _initialize() {
-    D(P())
+    w(R())
   }
   _terminate() {
-    window.requestAnimationFrame = g
+    window.requestAnimationFrame = m
   }
   getLastRAFCallbackReason() {
-    return O
+    return y
   }
   handleUpdateOverlayMethod() {
     let {
       enabled: e
     } = (0, Chunk32300.td)("OverlayWindowRAFManager");
     if (!(!module || __OVERLAY__)) {
-      if (!v && !y(false)) {
-        window.requestAnimationFrame = g, O = "NoOverlayRendering", w();
+      if (!O && !b(false)) {
+        window.requestAnimationFrame = m, y = "NoOverlayRendering", P();
         return
       }
-      m.info("Patching window RAF to use overlay window"), window.requestAnimationFrame = R
+      h.info("Patching window RAF to use overlay window"), window.requestAnimationFrame = N
     }
   }
   handleWindowStateChage() {
-    D(P())
+    w(R())
   }
   handleOverlayRenderDebugMode(e) {
     let {
       enabled: t,
       mode: n
     } = e;
-    n === u.GO.OverlayRafManagerForceEnabled && (v = t, t ? window.requestAnimationFrame = R : I || (window.requestAnimationFrame = g, w()))
+    n === c.GO.OverlayRafManagerForceEnabled && (O = t, t ? window.requestAnimationFrame = N : v || (window.requestAnimationFrame = m, P()))
   }
   constructor(...e) {
-    super(...e), h(this, "actions", {
+    super(...e), p(this, "actions", {
       OVERLAY_UPDATE_OVERLAY_METHOD: this.handleUpdateOverlayMethod,
       WINDOW_VISIBILITY_CHANGE: this.handleWindowStateChage,
       WINDOW_FOCUS: this.handleWindowStateChage,
@@ -138,4 +137,4 @@ class x extends Chunk147913.Z {
     })
   }
 }
-let L = new x
+let x = new D

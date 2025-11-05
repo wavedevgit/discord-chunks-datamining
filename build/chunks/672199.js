@@ -8,8 +8,8 @@ var Chunk13245 = require("./13245.js"),
   Chunk580991 = require("./580991.js"),
   Chunk562224 = require("./562224.js"),
   Chunk361291 = require("./361291.js"),
-  Chunk145597 = require("./145597.js"),
   Chunk624864 = require("./624864.js"),
+  Chunk610394 = require("./610394.js"),
   Chunk620954 = require("./620954.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
@@ -18,7 +18,7 @@ var Chunk13245 = require("./13245.js"),
   Chunk978967 = require("./978967.js");
 
 function g(e, t, n, g) {
-  if (u.Z.isNotificationDisabled(d.n0.RequestToStream)) return null;
+  if (s.Z.isNotificationDisabled(d.n0.RequestToStream)) return null;
   let y = t.username,
     O = f.intl.format(m.default.jTbTAF, {
       username: "",
@@ -52,7 +52,7 @@ function g(e, t, n, g) {
           location: "requestToStreamNotification"
         });
         n = e ? h.ApplicationStreamPresets.PRESET_AUTO : h.ApplicationStreamPresets.PRESET_VIDEO
-      }(0, o.Z)((0, s.getPID)(), {
+      }(0, o.Z)(u.Z.getTargetPID(), {
         preset: n
       }), S("request-to-stream"), i.Z.updateNotificationStatus(t)
     },

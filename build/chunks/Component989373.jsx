@@ -93,48 +93,48 @@ let A = Chunk647438.memo(function(e) {
       [d, v] = a.useState(false),
       p = a.useRef(false),
       x = a.useCallback(() => {
-        let e = (0, b.getPID)(),
+        let e = y.Z.getTargetPID(),
           n = null != m.Z.getVoiceChannelId();
-        l.Z.track(Z.rMx.OVERLAY_INITIALIZED, {
+        l.Z.track(k.rMx.OVERLAY_INITIALIZED, {
           voice_widget_connected: n,
-          text_widget_connected: y.Z.isPinned(Z.Odu.TEXT),
+          text_widget_connected: y.Z.isPinned(k.Odu.TEXT),
           overlay_render_method: C.gl[S.default.getOverlayMethod(e)],
           unpinned_widget_types: _.Z.getAllUnpinnedPinnedWidgets(t)
         }), (0, w.ry)()
       }, [t]),
-      k = a.useRef(false),
+      Z = a.useRef(false),
       A = a.useRef(null),
       B = a.useCallback(async (e, t) => {
         try {
-          if (await T(e, A), k.current) return;
+          if (await T(e, A), Z.current) return;
           (0, N.Z)("cssLoaded", true)
         } catch (e) {
-          P.error("Timed out waiting for CSS to load", e), l.Z.setOverlayCrashed((0, b.getPID)(), e), (0, N.Z)("errorMessage", "CSS failed load");
+          P.error("Timed out waiting for CSS to load", e), l.Z.setOverlayCrashed(y.Z.getTargetPID(), e), (0, N.Z)("errorMessage", "CSS failed load");
           return
         }
         try {
-          if (await E(e, t), k.current) return;
+          if (await E(e, t), Z.current) return;
           (0, w.Dv)()
         } catch (e) {
-          l.Z.setOverlayCrashed((0, b.getPID)(), e), (0, N.Z)("errorMessage", "showInactive failed");
+          l.Z.setOverlayCrashed(y.Z.getTargetPID(), e), (0, N.Z)("errorMessage", "showInactive failed");
           return
         }
         await new Promise(t => {
           e.setTimeout(() => t(), 100)
-        }), k.current || (v(true), x())
+        }), Z.current || (v(true), x())
       }, [x]),
       M = a.useRef(false);
     a.useEffect(() => {
       if (!p.current && ((0, N.Z)("hasUseEffectFired", true), (0, N.Z)("trackedPidFocused", u), n)) {
         if (null == r) return void(0, N.Z)("errorMessage", "No targetOverlayWindow");
         if (!u) {
-          M.current || (l.Z.updateOverlayState((0, b.getPID)(), C.mM.WAITING_FOR_PID_FOCUS), M.current = true);
+          M.current || (l.Z.updateOverlayState(y.Z.getTargetPID(), C.mM.WAITING_FOR_PID_FOCUS), M.current = true);
           return
         }
         p.current = true, (0, N.Z)("reactInitializationStarted", true), B(r, e)
       }
     }, [B, u, e, r, n]), (0, o.zq)(() => {
-      clearInterval(A.current), k.current = true
+      clearInterval(A.current), Z.current = true
     });
     let O = (0, i.e7)([h.Z], () => h.Z.windowSize(null != r ? (0, I.ZY)(r) : true)),
       j = (0, i.e7)([y.Z], () => y.Z.getFocusedWindowHandle());
@@ -149,9 +149,9 @@ let A = Chunk647438.memo(function(e) {
         r.cancelAnimationFrame(e)
       }
     }, [d, r, c, j, O]), d
-  }(n, k.$S), v = (0, i.e7)([f.default], () => f.default.isFocusedPidInputLocked());
+  }(n, Z.$S), v = (0, i.e7)([f.default], () => f.default.isFocusedPidInputLocked());
   return u ? (0, r.jsxs)(d.Z, {
-    themeOverride: Z.BRd.MIDNIGHT,
+    themeOverride: k.BRd.MIDNIGHT,
     withTitleBar: t,
     windowKey: n,
     title: "Discord Overlay",

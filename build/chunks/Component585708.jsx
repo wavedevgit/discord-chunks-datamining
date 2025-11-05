@@ -14,8 +14,8 @@ var Chunk13245 = require("./13245.js"),
   Chunk974180 = require("./974180.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
-  Chunk145597 = require("./145597.js"),
   Chunk624864 = require("./624864.js"),
+  Chunk610394 = require("./610394.js"),
   Chunk322155 = require("./322155.js"),
   Chunk516542 = require("./516542.jsx"),
   Chunk618373 = require("./618373.jsx"),
@@ -26,7 +26,7 @@ var Chunk13245 = require("./13245.js"),
 
 function b(e, t, n, b) {
   var x;
-  if (f.Z.isNotificationDisabled(E.n0.TextChat)) return (0, u.GN)(c.Ay, c.yk), null;
+  if (h.Z.isNotificationDisabled(E.n0.TextChat)) return (0, u.GN)(c.Ay, c.yk), null;
   let {
     icon: j,
     title: I,
@@ -63,7 +63,7 @@ function b(e, t, n, b) {
       b && (0, u.GN)(c.Ay, c.yk), Z()
     },
     onNotificationClick: () => {
-      let n = (0, h.getPID)();
+      let n = f.Z.getTargetPID();
       (0, l.ack)(e.id, {
         section: v.jXE.OVERLAY,
         object: v.qAy.ACK_TEXT_CHAT_NOTIFICATION,

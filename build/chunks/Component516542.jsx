@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk893718 = require("./893718.jsx"),
   Chunk957730 = require("./957730.js"),
   Chunk849522 = require("./849522.js"),
-  Chunk145597 = require("./145597.js"),
+  Chunk610394 = require("./610394.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
   Chunk572985 = require("./572985.js");
@@ -53,7 +53,7 @@ function E(e) {
     }, [t]),
     D = r.useCallback(() => (C.length > S || (l.Z.sendMessage(E.id, h.ZP.parse(E, C), false, {
       location: y.dy.OVERLAY
-    }), o.Z.setInputLocked(true, (0, m.getPID)()), o.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(C)), Promise.resolve({
+    }), o.Z.setInputLocked(true, m.Z.getTargetPID()), o.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(C)), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
     })), [C, S, E, t, v]);

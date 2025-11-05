@@ -58,10 +58,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk944486 = require("./944486.js"),
   Chunk594174 = require("./594174.js"),
   Chunk979651 = require("./979651.js"),
-  Chunk145597 = require("./145597.js"),
   Chunk444295 = require("./444295.js"),
   Chunk371053 = require("./371053.jsx"),
   Chunk624864 = require("./624864.js"),
+  Chunk610394 = require("./610394.js"),
   Chunk388627 = require("./388627.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -173,13 +173,13 @@ function eu(e) {
   r.useEffect(() => () => g(), [g, p]);
   let S = ea(o),
     b = e => t => {
-      e(t), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
-        type: $.Qu.MICROPHONE,
-        value: $.bk.SETTINGS_OPENED
+      e(t), (0, q.Ws)(ei.Odu.QUICK_ACTIONS, {
+        type: q.Qu.MICROPHONE,
+        value: q.bk.SETTINGS_OPENED
       })
     },
     j = null == (t = (0, en.II)()) ? true : t.id,
-    I = (0, l.e7)([et.Z], () => et.Z.isLimitedInteractionOverrideEnabled(j)),
+    I = (0, l.e7)([ee.Z], () => ee.Z.isLimitedInteractionOverrideEnabled(j)),
     C = (0, U.Hu)({
       location: m.Z.OVERLAY,
       autoTrackExposure: true
@@ -236,9 +236,9 @@ function eu(e) {
         highlightedColor: "red",
         tooltip: h,
         onClick: () => {
-          (0, x.Z)(c, s, ei.jXE.OVERLAY), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
-            type: $.Qu.MICROPHONE,
-            value: p ? $.bk.ENABLED : $.bk.DISABLED,
+          (0, x.Z)(c, s, ei.jXE.OVERLAY), (0, q.Ws)(ei.Odu.QUICK_ACTIONS, {
+            type: q.Qu.MICROPHONE,
+            value: p ? q.bk.ENABLED : q.bk.DISABLED,
             userId: H.default.getId()
           })
         },
@@ -274,16 +274,16 @@ function ec(e) {
   } = (0, a.l)(u ? "undeafen" : "deafen"), m = s ? d.Vm4 : c;
   r.useEffect(() => () => p(), [u, p]);
   let g = () => {
-      (0, b.Z)(s, ei.jXE.OVERLAY), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
-        type: $.Qu.AUDIO,
-        value: s ? $.bk.ENABLED : $.bk.DISABLED,
+      (0, b.Z)(s, ei.jXE.OVERLAY), (0, q.Ws)(ei.Odu.QUICK_ACTIONS, {
+        type: q.Qu.AUDIO,
+        value: s ? q.bk.ENABLED : q.bk.DISABLED,
         userId: H.default.getId()
       })
     },
     O = e => t => {
-      e(t), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
-        type: $.Qu.AUDIO,
-        value: $.bk.SETTINGS_OPENED
+      e(t), (0, q.Ws)(ei.Odu.QUICK_ACTIONS, {
+        type: q.Qu.AUDIO,
+        value: q.bk.SETTINGS_OPENED
       })
     },
     S = ea(n),
@@ -347,14 +347,14 @@ function ed(e) {
   } = e, a = r.useRef(null), s = (0, l.e7)([Y.Z], () => Y.Z.isVideoEnabled()), u = (0, l.e7)([Y.Z], () => Object.values(Y.Z.getVideoDevices())[0]), h = null == (t = null == u ? true : u.disabled) || t, f = false === h, m = (0, D.Z)(n), g = e => {
     p.Z.setVideoEnabled(e)
   }, y = e => t => {
-    e(t), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
-      type: $.Qu.CAMERA,
-      value: $.bk.SETTINGS_OPENED
+    e(t), (0, q.Ws)(ei.Odu.QUICK_ACTIONS, {
+      type: q.Qu.CAMERA,
+      value: q.bk.SETTINGS_OPENED
     })
   }, O = () => {
-    h ? f ? g(true) : (0, V.Z)() : g(!s), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
-      type: $.Qu.CAMERA,
-      value: s ? $.bk.DISABLED : $.bk.ENABLED,
+    h ? f ? g(true) : (0, V.Z)() : g(!s), (0, q.Ws)(ei.Odu.QUICK_ACTIONS, {
+      type: q.Qu.CAMERA,
+      value: s ? q.bk.DISABLED : q.bk.ENABLED,
       userId: H.default.getId()
     })
   }, {
@@ -423,50 +423,51 @@ function ep(e) {
     c = (0, D.Z)(n),
     p = (0, l.cj)([Y.Z], () => (0, C.Z)(Y.Z)),
     h = (0, l.e7)([F.Z], () => F.Z.getCurrentUserActiveStream()),
-    f = (0, ee.P)({
-      pid: (0, q.getPID)(),
+    f = (0, l.e7)([et.Z], () => et.Z.getTargetPID()),
+    m = (0, $.P)({
+      pid: f,
       allowOneClickGoLive: true,
       analyticsLocation: ei.Sbl.UNLOCKED_OVERLAY
     }),
-    m = () => {
-      f(), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
-        type: $.Qu.GO_LIVE,
-        value: $.bk.ENABLED,
+    g = () => {
+      m(), (0, q.Ws)(ei.Odu.QUICK_ACTIONS, {
+        type: q.Qu.GO_LIVE,
+        value: q.bk.ENABLED,
         userId: H.default.getId()
       })
     },
-    g = null != h;
-  if (g) t = er.intl.string(er.t.S5anIc);
+    y = null != h;
+  if (y) t = er.intl.string(er.t.S5anIc);
   else if (null != n) {
     let e = (0, en.pL)();
     t = c ? null != e ? er.intl.format(er.t.AB5gTy, {
       game: e.name
     }) : er.intl.string(er.t.FeUKeA) : er.intl.string(er.t.uQn9B8)
   }
-  let y = () => {
-      if (g) return (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
-        type: $.Qu.GO_LIVE,
-        value: $.bk.DISABLED,
+  let O = () => {
+      if (y) return (0, q.Ws)(ei.Odu.QUICK_ACTIONS, {
+        type: q.Qu.GO_LIVE,
+        value: q.bk.DISABLED,
         userId: H.default.getId()
       }), (0, Z.Z)(h, false);
-      m()
+      g()
     },
-    O = e => t => {
-      e(t), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
-        type: $.Qu.SCREEN_SHARE,
-        value: $.bk.SETTINGS_OPENED
+    E = e => t => {
+      e(t), (0, q.Ws)(ei.Odu.QUICK_ACTIONS, {
+        type: q.Qu.SCREEN_SHARE,
+        value: q.bk.SETTINGS_OPENED
       })
     },
     {
-      Component: E,
+      Component: v,
       events: {
-        onMouseEnter: v,
-        onMouseLeave: S
+        onMouseEnter: S,
+        onMouseLeave: b
       },
-      play: b
-    } = (0, s.P)(g ? "disable" : "enable");
-  r.useEffect(() => () => b(), [g, b]);
-  let x = ea(o);
+      play: x
+    } = (0, s.P)(y ? "disable" : "enable");
+  r.useEffect(() => () => x(), [y, x]);
+  let j = ea(o);
   return (0, i.jsx)(d.yRy, {
     targetElementRef: a,
     clickTrap: true,
@@ -477,9 +478,9 @@ function ep(e) {
       return (0, i.jsx)(L.Z, {
         channel: n,
         currentUser: u,
-        activeStreams: g ? [h] : [],
-        handleGoLive: m,
-        onClose: x(t),
+        activeStreams: y ? [h] : [],
+        handleGoLive: g,
+        onClose: j(t),
         appContext: ei.IlC.OVERLAY,
         disableChangeWindows: true
       })
@@ -495,18 +496,18 @@ function ep(e) {
       } = n;
       return (0, i.jsx)(es, {
         ref: a,
-        iconComponent: E,
+        iconComponent: v,
         tooltip: t,
         "aria-label": er.intl.string(er.t.FeUKeA),
-        isActive: g,
+        isActive: y,
         highlightedColor: "green",
-        onClick: y,
+        onClick: O,
         popoutOpen: l,
-        popoutDisabled: !g,
-        onPopoutClick: O(r),
-        onContextMenu: O(r),
-        onMouseEnter: v,
-        onMouseLeave: S,
+        popoutDisabled: !y,
+        onPopoutClick: E(r),
+        onContextMenu: E(r),
+        onMouseEnter: S,
+        onMouseLeave: b,
         disabled: !p || !c,
         isTrayButton: true
       })
@@ -527,9 +528,9 @@ function eh(e) {
   } = (0, g.ZP)();
 
   function E(e) {
-    null != c && ((0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
-      type: $.Qu.SOUNDBOARD,
-      value: $.bk.SETTINGS_OPENED
+    null != c && ((0, q.Ws)(ei.Odu.QUICK_ACTIONS, {
+      type: q.Qu.SOUNDBOARD,
+      value: q.bk.SETTINGS_OPENED
     }), (0, h.jW)(e, async () => {
       let {
         default: e
@@ -576,9 +577,9 @@ function eh(e) {
         iconComponent: v,
         tooltip: p ? er.intl.string(er.t["Ox4/zU"]) : f ? er.intl.string(er.t["+YBKYI"]) : m ? er.intl.string(er.t.X1lQli) : true,
         onClick: e => {
-          S(), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
-            type: $.Qu.SOUNDBOARD,
-            value: $.bk.PANEL_OPENED,
+          S(), (0, q.Ws)(ei.Odu.QUICK_ACTIONS, {
+            type: q.Qu.SOUNDBOARD,
+            value: q.bk.PANEL_OPENED,
             userId: H.default.getId()
           }), n(e)
         },
@@ -601,24 +602,24 @@ function ef(e) {
     voiceChannel: t,
     locked: n
   } = e, a = r.useRef(null), s = (0, l.e7)([K.Z], () => K.Z.getVoiceChannelId() === (null == t ? true : t.id)), u = () => {
-    (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
-      type: $.Qu.CALL_BUTTON,
-      value: $.bk.DISABLED,
+    (0, q.Ws)(ei.Odu.QUICK_ACTIONS, {
+      type: q.Qu.CALL_BUTTON,
+      value: q.bk.DISABLED,
       userId: H.default.getId()
     }), s && f.default.disconnect()
   }, c = (e, t) => {
-    f.default.selectVoiceChannel(e), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
-      type: $.Qu.CALL_BUTTON,
-      value: $.bk.ENABLED,
+    f.default.selectVoiceChannel(e), (0, q.Ws)(ei.Odu.QUICK_ACTIONS, {
+      type: q.Qu.CALL_BUTTON,
+      value: q.bk.ENABLED,
       userId: H.default.getId(),
       secondaryValue: t
     })
   }, [p, h] = r.useTransition(), m = e => t => {
     h(() => {
       e(t)
-    }), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
-      type: $.Qu.CALL_BUTTON,
-      value: $.bk.SETTINGS_OPENED
+    }), (0, q.Ws)(ei.Odu.QUICK_ACTIONS, {
+      type: q.Qu.CALL_BUTTON,
+      value: q.bk.SETTINGS_OPENED
     })
   }, {
     Component: g,

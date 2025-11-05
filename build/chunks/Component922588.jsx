@@ -26,11 +26,11 @@ function C(e) {
   let {
     channelId: t,
     guildId: n
-  } = e, i = a.useRef(null), C = (0, c.e7)([s.Z], () => s.Z.useReducedMotion), [x, S] = a.useState(false), [y, w] = a.useState(true), [N, k] = a.useState(false), {
-    pickedMemberIds: Z,
+  } = e, i = a.useRef(null), C = (0, c.e7)([s.Z], () => s.Z.useReducedMotion), [x, S] = a.useState(false), [y, w] = a.useState(true), [N, Z] = a.useState(false), {
+    pickedMemberIds: k,
     currentMemberId: P,
     shuffledOrder: T
-  } = (0, m.E1)(t), E = (0, b.Z)(t), A = null == T, B = E.every(e => Z.includes(e)), {
+  } = (0, m.E1)(t), E = (0, b.Z)(t), A = null == T, B = E.every(e => k.includes(e)), {
     animateToMember: M
   } = (0, v.Z)({
     containerRef: i,
@@ -39,21 +39,21 @@ function C(e) {
   }), O = a.useCallback(() => {
     var e;
     if (null == T) return;
-    let n = null != (e = T.find(e => !Z.includes(e))) ? e : null;
+    let n = null != (e = T.find(e => !k.includes(e))) ? e : null;
     null != n && p.pickName(t, n)
-  }, [t, T, Z]), j = a.useCallback(() => {
+  }, [t, T, k]), j = a.useCallback(() => {
     if (0 === E.length) return;
     let e = (0, o.shuffle)(E),
       n = e[0];
     C ? (p.setShuffledOrder(t, e), p.pickName(t, n)) : (w(false), setTimeout(() => {
-      k(true), S(true), M(n, () => {
+      Z(true), S(true), M(n, () => {
         p.setShuffledOrder(t, e), p.pickName(t, n), S(false), setTimeout(() => {
-          k(false), setTimeout(() => w(true), 150)
+          Z(false), setTimeout(() => w(true), 150)
         }, 300)
       })
     }, 150))
   }, [E, t, M, C]), L = a.useCallback(() => {
-    p.reset(t), S(false), k(false), w(true)
+    p.reset(t), S(false), Z(false), w(true)
   }, [t]);
   return (0, r.jsx)("div", {
     className: I.container,
@@ -72,7 +72,7 @@ function C(e) {
           channelId: t
         }), (0, r.jsx)(g.Z, {
           channelId: t,
-          showCountdown: Z.length >= 1 || x,
+          showCountdown: k.length >= 1 || x,
           shuffling: x
         }, null != P ? P : "no-member"), (0, r.jsxs)("div", {
           className: I.buttonContainer,
@@ -85,7 +85,7 @@ function C(e) {
           }), (0, r.jsx)(u.Button, {
             text: "Reset",
             onClick: L,
-            disabled: 0 === Z.length || x,
+            disabled: 0 === k.length || x,
             variant: "secondary"
           })]
         })]
@@ -109,7 +109,7 @@ function C(e) {
           children: (0, r.jsx)(d.Z, {
             memberIds: null != T ? T : E,
             guildId: n,
-            pickedMemberIds: Z,
+            pickedMemberIds: k,
             currentMemberId: P
           })
         })]

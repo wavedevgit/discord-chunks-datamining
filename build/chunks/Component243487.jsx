@@ -32,9 +32,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk823379 = require("./823379.js"),
   Chunk136015 = require("./136015.js"),
   Chunk426563 = require("./426563.js"),
-  Chunk145597 = require("./145597.js"),
   Chunk444295 = require("./444295.js"),
   Chunk804570 = require("./804570.jsx"),
+  Chunk610394 = require("./610394.js"),
   Chunk388627 = require("./388627.js"),
   Chunk532658 = require("./532658.jsx"),
   Chunk501787 = require("./501787.js"),
@@ -142,22 +142,22 @@ let K = Chunk647438.memo(function(e) {
     anchorLeft: g,
     avatarSizeMode: b,
     maxDisplayedVoiceStates: y = M.At
-  } = e, O = (0, w.ee)(() => W(o), [o]), [v, I] = o, T = I.length > 0 && null != n && null != a && (!d || f), S = (0, s.Wu)([E.Z], () => Array.from(O).map(e => E.Z.getStreamForUser(e, _)).filter(C.lm).map(e => e.ownerId), [_, O]);
+  } = e, O = (0, P.ee)(() => W(o), [o]), [v, I] = o, T = I.length > 0 && null != n && null != a && (!d || f), S = (0, s.Wu)([E.Z], () => Array.from(O).map(e => E.Z.getStreamForUser(e, _)).filter(C.lm).map(e => e.ownerId), [_, O]);
   i.useEffect(() => {
-    T && (0, w.zi)(j.Odu.VOICE_V3, {
+    T && (0, P.zi)(j.Odu.VOICE_V3, {
       locked: A.default.isInstanceLocked(),
       shownUserIds: Array.from(O),
       liveUserIds: S,
       contentInventoryIds: []
     })
   }, [O, S, T]);
-  let N = () => d || !p ? null : (0, r.jsx)(D.E, {
+  let N = () => d || !p ? null : (0, r.jsx)(w.E, {
       emptyText: U.intl.string(U.t.hEh0l1),
       icon: l.gj8
     }),
     R = y !== M.Og ? I.slice(0, y) : I,
-    P = y !== M.Og ? I.slice(y) : [],
-    x = v.get(P[0]),
+    D = y !== M.Og ? I.slice(y) : [],
+    x = v.get(D[0]),
     B = u === j.OYC.ALWAYS && y !== M.Og;
   return T ? (0, r.jsxs)("div", {
     className: G.voiceUserContainer,
@@ -176,7 +176,7 @@ let K = Chunk647438.memo(function(e) {
         displayUserMode: u,
         locked: d
       }, e)
-    }), B && 1 === P.length && null != x && (0, r.jsx)(L.ZP, {
+    }), B && 1 === D.length && null != x && (0, r.jsx)(L.ZP, {
       sortedVoiceState: x,
       channel: a,
       widgetId: t,
@@ -188,8 +188,8 @@ let K = Chunk647438.memo(function(e) {
       displayNameMode: c,
       displayUserMode: u,
       locked: d
-    }, P[0]), B && P.length > 1 && (0, r.jsx)(Y, {
-      hiddenVoiceStates: P,
+    }, D[0]), B && D.length > 1 && (0, r.jsx)(Y, {
+      hiddenVoiceStates: D,
       voiceStateMap: v,
       size: (0, L.px)(b),
       locked: d,
@@ -253,13 +253,13 @@ function q(e) {
   var t;
   let {
     isSettingsPreview: n
-  } = e, i = (0, s.e7)([O.Z, y.Z], () => y.Z.getChannel(O.Z.getVoiceChannelId())), a = (0, f.ZP)(i), o = z(k.Yn.DEFAULT, e.maxDisplayedVoiceStates), l = (0, s.e7)([E.Z], () => E.Z.getStreamerActiveStreamMetadata()), c = (0, x.II)(), d = (0, u.q)(null == c ? true : c.id), p = (0, s.cj)([E.Z, A.default], () => {
+  } = e, i = (0, s.e7)([O.Z, y.Z], () => y.Z.getChannel(O.Z.getVoiceChannelId())), a = (0, f.ZP)(i), o = z(k.Yn.DEFAULT, e.maxDisplayedVoiceStates), l = (0, s.e7)([E.Z], () => E.Z.getStreamerActiveStreamMetadata()), c = (0, x.II)(), d = (0, u.q)(null == c ? true : c.id), p = (0, s.cj)([E.Z, A.default, D.Z], () => {
     let e = E.Z.getCurrentUserActiveStream();
     return {
       displayUserMode: A.default.getDisplayUserMode(),
       displayNameMode: A.default.getDisplayNameMode(),
       avatarSizeMode: A.default.getAvatarSizeMode(),
-      streamApplication: (null == l ? true : l.pid) === (0, P.getPID)() ? (0, _.Z)(c) : null,
+      streamApplication: (null == l ? true : l.pid) === D.Z.getTargetPID() ? (0, _.Z)(c) : null,
       stream: e
     }
   });

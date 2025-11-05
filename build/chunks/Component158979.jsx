@@ -85,10 +85,12 @@ function y(e) {
           y()
         },
         onNotificationClick: (e, t) => {
-          O("unlock"), l.Z.updateNotificationStatus(t);
-          let c = o.default.isOverlayOOPEnabledForPid((0, a.getPID)());
-          if (c ? l.Z.setInputLocked(false, (0, a.getPID)()) : l.Z.setInstanceLocked(false), null == s.default.getCurrentUser()) return;
-          let u = c ? {
+          O("unlock");
+          let c = (0, a.getPID)();
+          l.Z.updateNotificationStatus(t);
+          let u = o.default.isOverlayOOPEnabledForPid(c);
+          if (u ? l.Z.setInputLocked(false, c) : l.Z.setInstanceLocked(false), null == s.default.getCurrentUser()) return;
+          let h = u ? {
             contextKey: r.u1M
           } : true;
           (0, r.ZDy)(async () => {
@@ -96,12 +98,12 @@ function y(e) {
               default: e
             } = await Promise.all([n.e("4093"), n.e("47863"), n.e("33641")]).then(n.bind(n, 60594));
             return t => (0, i.jsx)(e, g(f({}, t), {
-              sourcePID: (0, a.getPID)(),
+              sourcePID: c,
               selectSource: false,
               guildId: p.id,
               analyticsLocation: d.Sbl.OVERLAY_NUDGE
             }))
-          }, u)
+          }, h)
         },
         onDismissClick: () => {
           O("dismiss")
@@ -129,10 +131,12 @@ function y(e) {
           s()
         },
         onNotificationClick: (e, t) => {
-          p("unlock"), l.Z.updateNotificationStatus(t);
-          let s = o.default.isOverlayOOPEnabledForPid((0, a.getPID)());
-          s ? l.Z.setInputLocked(false, (0, a.getPID)()) : l.Z.setInstanceLocked(false);
-          let c = s ? {
+          p("unlock");
+          let s = (0, a.getPID)();
+          l.Z.updateNotificationStatus(t);
+          let c = o.default.isOverlayOOPEnabledForPid(s);
+          c ? l.Z.setInputLocked(false, s) : l.Z.setInstanceLocked(false);
+          let u = c ? {
             contextKey: r.u1M
           } : true;
           (0, r.ZDy)(async () => {
@@ -140,12 +144,12 @@ function y(e) {
               default: e
             } = await Promise.all([n.e("4093"), n.e("47863"), n.e("33641")]).then(n.bind(n, 60594));
             return t => (0, i.jsx)(e, g(f({}, t), {
-              sourcePID: (0, a.getPID)(),
+              sourcePID: s,
               selectSource: false,
               selectGuild: true,
               analyticsLocation: d.Sbl.OVERLAY_NUDGE
             }))
-          }, c)
+          }, u)
         },
         onDismissClick: () => {
           p("dismiss")

@@ -9,7 +9,7 @@ var Chunk13245 = require("./13245.js"),
   Chunk556296 = require("./556296.js"),
   Chunk237997 = require("./237997.js"),
   Chunk13140 = require("./13140.js"),
-  Chunk145597 = require("./145597.js"),
+  Chunk610394 = require("./610394.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js");
 
@@ -53,7 +53,7 @@ function _(e, t) {
 }
 
 function p() {
-  return Chunk237997.default.isLocked((0, Chunk145597.getPID)()) ? Chunk981631.Sbl.LOCKED_OVERLAY : Chunk981631.Sbl.UNLOCKED_OVERLAY
+  return Chunk237997.default.isLocked(Chunk610394.Z.getTargetPID()) ? Chunk981631.Sbl.LOCKED_OVERLAY : Chunk981631.Sbl.UNLOCKED_OVERLAY
 }
 
 function h(e, t) {

@@ -239,7 +239,7 @@ function ev() {
   }(require, Chunk512722), exports.add(require);
   let r = new Set;
   for (let e of require) exports.has(module) || Chunk512722.add(module);
-  let l = Chunk610394.Z.isOverlayV3EnabledForPID((0, Chunk145597.getPID)()) || null != Chunk610394.Z.getFocusedPID();
+  let l = Chunk610394.Z.isOverlayV3EnabledForPID(Chunk610394.Z.getTargetPID()) || null != Chunk610394.Z.getFocusedPID();
   for (let e of Chunk512722)
     if (! function(e) {
         let t = x.Z.getActivities(e);
