@@ -46,8 +46,8 @@ let C = (0, Chunk112724.Z)(e => {
   i.useEffect(() => {
     d.S.dispatch(b.CkL.REMEASURE_TARGET)
   }, [T, N, D.width, D.height]);
-  let L = i.useMemo(() => n.filter(e => e.type !== _.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, C]),
-    k = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(j.id), [j.id]);
+  let k = i.useMemo(() => n.filter(e => e.type !== _.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, C]),
+    L = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(j.id), [j.id]);
   if ((null == R ? true : R.channelId) === j.id) return (0, r.jsx)(f.Z, {
     height: N
   });
@@ -65,7 +65,7 @@ let C = (0, Chunk112724.Z)(e => {
   });
   if (n = I ? n : t, null == a) {
     if (0 === n.length) {
-      let e = t.length > 0 && !k;
+      let e = t.length > 0 && !L;
       return (0, r.jsx)(g.Z, {
         channelId: j.id,
         allPoppedOut: e
@@ -78,7 +78,7 @@ let C = (0, Chunk112724.Z)(e => {
       children: (0, r.jsx)(h.Z, {
         channel: j,
         className: y.videoGrid,
-        participants: L,
+        participants: k,
         totalNumberOfParticipants: t.length,
         onClick: O,
         onDoubleClick: E,
@@ -93,7 +93,7 @@ let C = (0, Chunk112724.Z)(e => {
     onContextMenuParticipant: x,
     onSelectParticipant: O,
     selectedParticipant: a,
-    filteredParticipants: L,
+    filteredParticipants: k,
     participants: t,
     popoutType: M,
     className: P,

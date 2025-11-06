@@ -115,7 +115,7 @@ let q = (0, Chunk426322.animated)(Chunk481060.eTT),
       hideSummaries: A = false,
       jumpBarClassName: M,
       typingGradient: R
-    } = e, [L, Y] = i.useState(null != (n = j.Z.isAtBottom(m.id)) && n), K = i.useMemo(() => C ? (0, D.aJ)({
+    } = e, [k, Y] = i.useState(null != (n = j.Z.isAtBottom(m.id)) && n), K = i.useMemo(() => C ? (0, D.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -140,12 +140,12 @@ let q = (0, Chunk426322.animated)(Chunk481060.eTT),
       handleScrollToBottom: i.useCallback(() => Y(true), [Y]),
       handleScrollFromBottom: i.useCallback(() => Y(false), [Y]),
       additionalMessagePadding: 48
-    }), J = (0, k.Z)({
+    }), J = (0, L.Z)({
       scrollerRef: X.ref,
       isEditing: null != S,
       keyboardModeEnabled: I,
       hasMoreAfter: g.hasMoreAfter
-    }), Q = (0, c.e7)([y.Z], () => Z.Z.can(F.Plq.READ_MESSAGE_HISTORY, m) ? null : y.Z.getViewingRolesTimestamp(m.getGuildId())), {
+    }), Q = (0, c.e7)([y.Z], () => Z.Z.can(V.Plq.READ_MESSAGE_HISTORY, m) ? null : y.Z.getViewingRolesTimestamp(m.getGuildId())), {
       channelStreamMarkup: $,
       newMessagesBar: ee,
       jumpToPresentBar: et,
@@ -171,7 +171,7 @@ let q = (0, Chunk426322.animated)(Chunk481060.eTT),
           null == (e = X.ref.current) || e.scrollToBottom({
             animate: !h.Z.useReducedMotion
           })
-        } else d.Z.jumpToPresent(m.id, F.AQB)
+        } else d.Z.jumpToPresent(m.id, V.AQB)
       },
       jumpBarClassName: M
     });
@@ -193,13 +193,13 @@ let q = (0, Chunk426322.animated)(Chunk481060.eTT),
           })
         }, [e]);
       (0, w.yp)({
-        event: F.CkL.SCROLLTO_PRESENT,
+        event: V.CkL.SCROLLTO_PRESENT,
         handler: t
       }), (0, w.yp)({
-        event: F.CkL.SCROLL_PAGE_UP,
+        event: V.CkL.SCROLL_PAGE_UP,
         handler: n
       }), (0, w.yp)({
-        event: F.CkL.SCROLL_PAGE_DOWN,
+        event: V.CkL.SCROLL_PAGE_DOWN,
         handler: r
       })
     }(X.ref);
@@ -218,8 +218,8 @@ let q = (0, Chunk426322.animated)(Chunk481060.eTT),
         let t = null == (e = x.Z.settings.appearance) ? true : e.clientThemeSettings;
         return (null == t ? true : t.backgroundGradientPresetId) != null || (null == t ? true : t.customUserThemeSettings) != null
       }),
-      eu = i.useMemo(() => R ? L ? H.chatTypingGradientAtBottom : H.chatTypingGradientNotAtBottom : H.chatGradient, [R, L]),
-      ed = i.useMemo(() => R ? L ? H.typingGradientAtBottom : H.typingGradientNotAtBottom : H.gradientDefault, [R, L]);
+      eu = i.useMemo(() => R ? k ? H.chatTypingGradientAtBottom : H.chatTypingGradientNotAtBottom : H.chatGradient, [R, k]),
+      ed = i.useMemo(() => R ? k ? H.typingGradientAtBottom : H.typingGradientNotAtBottom : H.gradientDefault, [R, k]);
     return (0, r.jsxs)(s.bG, {
       navigator: J,
       children: [null != er && er, (0, r.jsxs)("div", {
@@ -240,7 +240,7 @@ let q = (0, Chunk426322.animated)(Chunk481060.eTT),
             className: a()(H.scrollerInner, {
               [H.scrollerAllowSticky]: m.isModeratorReportChannel()
             }),
-            "aria-label": V.intl.formatToPlainString(V.t.XarRiL, {
+            "aria-label": F.intl.formatToPlainString(F.t.XarRiL, {
               channelName: m.name
             })
           }, eo), {
@@ -248,7 +248,7 @@ let q = (0, Chunk426322.animated)(Chunk481060.eTT),
               className: H.navigationDescription,
               id: "messagesNavigationDescription",
               "aria-hidden": true,
-              children: V.intl.string(V.t["Spb3s/"])
+              children: F.intl.string(F.t["Spb3s/"])
             }), $, (0, r.jsx)("div", {
               className: a()({
                 [H.scrollerSpacer]: !N,
@@ -283,7 +283,7 @@ let q = (0, Chunk426322.animated)(Chunk481060.eTT),
           canManageMessages: r,
           permissionVersion: i
         } = (0, c.cj)([Z.Z], () => ({
-          canManageMessages: Z.Z.can(F.Plq.MANAGE_MESSAGES, e),
+          canManageMessages: Z.Z.can(V.Plq.MANAGE_MESSAGES, e),
           permissionVersion: null != t ? Z.Z.getGuildVersion(t) : null
         }), [e, t]);
       return {
@@ -296,7 +296,7 @@ let q = (0, Chunk426322.animated)(Chunk481060.eTT),
       fontSize: j,
       messageDisplayCompact: w,
       renderSpoilers: D,
-      keyboardModeEnabled: k
+      keyboardModeEnabled: L
     } = function() {
       let e = O.jU.useSetting(),
         t = O.cC.useSetting(),
@@ -326,7 +326,7 @@ let q = (0, Chunk426322.animated)(Chunk481060.eTT),
     }(), {
       messages: U,
       channelStream: B,
-      oldestUnreadMessageId: V,
+      oldestUnreadMessageId: F,
       editingMessageId: H
     } = function(e) {
       var t, n;
@@ -342,7 +342,7 @@ let q = (0, Chunk426322.animated)(Chunk481060.eTT),
         }, {
           autoTrackExposure: false
         }),
-        o = null != (n = null == (t = A.default.getUser(E.default.getId())) ? true : t.hasFlag(F.xW$.SPAMMER)) && n,
+        o = null != (n = null == (t = A.default.getUser(E.default.getId())) ? true : t.hasFlag(V.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
         u = (0, b.Z)("use_topic_dividers_in_chat"),
         d = (0, c.Wu)([v.Z], () => {
@@ -380,7 +380,7 @@ let q = (0, Chunk426322.animated)(Chunk481060.eTT),
     }(t);
     return (0, r.jsx)(C.aQ.Provider, {
       value: (0, M.Z)(D, d),
-      children: (0, r.jsx)(L.v, {
+      children: (0, r.jsx)(k.v, {
         children: (0, r.jsx)(Y, W(G({}, u), {
           messageGroupSpacing: x,
           showNewMessagesBar: true,
@@ -391,11 +391,11 @@ let q = (0, Chunk426322.animated)(Chunk481060.eTT),
           permissionVersion: f,
           uploads: (0, c.e7)([N.Z], () => N.Z.getFiles(t.id), [t]),
           unreadCount: (0, c.e7)([T.ZP], () => T.ZP.getUnreadCount(t.id), [t]),
-          hasUnreads: null != V,
+          hasUnreads: null != F,
           canChat: y,
           editingMessageId: H,
           fontSize: j,
-          keyboardModeEnabled: k,
+          keyboardModeEnabled: L,
           showingQuarantineBanner: n,
           hideSummaries: l,
           typingGradient: s

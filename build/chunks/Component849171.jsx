@@ -2,7 +2,7 @@
 /** chunk id: 849171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   OV: () => D,
-  ZP: () => k
+  ZP: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -65,7 +65,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   var t, n;
   let {
     participants: l,
@@ -81,14 +81,14 @@ function L(e) {
     userId: null == (t = T.default.getCurrentUser()) ? true : t.id,
     channelId: h.id,
     application: s
-  }) === m.Fw.CAN_JOIN, P = null != (n = h.getGuildId()) ? n : true, Z = i.useId(), R = s.id, L = i.useMemo(() => ({
+  }) === m.Fw.CAN_JOIN, P = null != (n = h.getGuildId()) ? n : true, Z = i.useId(), R = s.id, k = i.useMemo(() => ({
     channel: h,
     type: "channel"
   }), [h]), {
-    submitting: k
+    submitting: L
   } = (0, j.Z)({
     applicationId: R,
-    context: L,
+    context: k,
     launchingComponentId: Z
   });
   return (0, r.jsxs)("div", {
@@ -130,7 +130,7 @@ function L(e) {
             componentId: Z
           })
         },
-        loading: k,
+        loading: L,
         size: 2 === b ? "md" : "sm",
         variant: "overlay-primary"
       }) : null
@@ -138,7 +138,7 @@ function L(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     participant: t,
     width: n,
@@ -175,7 +175,7 @@ function k(e) {
         className: M.splashImage,
         alt: f.name,
         src: m
-      }) : null, I && null != f && (0, r.jsx)(L, {
+      }) : null, I && null != f && (0, r.jsx)(k, {
         width: n,
         channel: s,
         participants: t.participants,

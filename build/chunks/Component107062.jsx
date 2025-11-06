@@ -84,7 +84,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
       participant2: Y,
       numOtherParticipants: W
     } = (0, O.Z)(n, 3), K = () => {
-      _.__(p._b.TEXT, m.Ie.NORMAL, {
+      _._(p._b.TEXT, m.Ie.NORMAL, {
         applicationId: n.extra.application_id
       })
     }, z = i.useCallback(e => {

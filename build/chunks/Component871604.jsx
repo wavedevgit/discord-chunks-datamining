@@ -86,7 +86,7 @@ function R(e) {
           let e = h.Z.getCurrentlySelectedChannelId(),
             t = p.Z.getChannel(e),
             r = null != _.ZP.getSidebarState(e) || (null == t ? true : t.isGuildVocal()) ? f.Ie.SIDEBAR : f.Ie.NORMAL;
-          l.__(c._b.TEXT, r, {
+          l._(c._b.TEXT, r, {
             applicationId: R.id
           }), (0, o.Mr3)((0, O.z)(D, null == P ? true : P.guild_id)), null == n || n(), m.default.track(I.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
             application_id: R.id

@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk334405 = require("./334405.js"),
   Chunk977007 = require("./977007.js");
 
-function k(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -75,8 +75,8 @@ function B(e) {
   var t, n, l, o;
   let {
     channel: B,
-    setIsHangStatusInputFocused: F,
-    setIsEmojiPickerOpen: V,
+    setIsHangStatusInputFocused: V,
+    setIsEmojiPickerOpen: F,
     setPopoutRef: H
   } = e, G = i.useRef(null), W = (0, u.e7)([C.Z], () => C.Z.getCustomHangStatus()), z = (0, j.Z)(), q = (0, u.e7)([C.Z], () => C.Z.getFavoritedStatuses()), {
     defaultStatusVariant: Y,
@@ -86,7 +86,7 @@ function B(e) {
     location: "HangStatusPicker"
   }), X = (0, v.V)(Y), J = i.useRef(null), [Q, $] = i.useState(null != (n = null == W ? true : W.status) ? n : ""), [ee, et] = i.useState(null != (l = null == W ? true : W.emoji) ? l : null), [en, er] = i.useState(false), ei = (0, u.e7)([C.Z], () => C.Z.getCurrentHangStatus()), el = X[ei], ea = q.length > 0, eo = null == Q || "" === Q.trim(), es = (0, E.Z)(B), ec = Q.trim().length > 0 && Q.trim() !== (null == W || null == (t = W.status) ? true : t.trim()) || null != ee && !s()(ee, null == W ? true : W.emoji), [eu, ed] = i.useState(false), ep = (0, u.e7)([C.Z], () => C.Z.getFavoritedStatuses().length >= C.o), ef = Q.length > 0 || null != ee, [eh, em] = (0, m.US)([d.z.HANG_STATUS_POPOVER_NUX]);
   i.useEffect(() => {
-    b.default.track(A.rMx.HANG_STATUS_PICKER_OPENED, U(k({}, (0, O.Z)(B.id)), {
+    b.default.track(A.rMx.HANG_STATUS_PICKER_OPENED, U(L({}, (0, O.Z)(B.id)), {
       num_favorites: q.length,
       num_recents: z.length
     }))
@@ -94,8 +94,8 @@ function B(e) {
     Q.trim().length > 0 && eu && ed(false), null == ee && eu && ed(false)
   }, [Q, ee, eu]), i.useEffect(() => {
     var e;
-    en || Q !== (null != (e = null == W ? true : W.status) ? e : "") && "" !== Q.trim() ? F(true) : F(false)
-  }, [Q, null == W ? true : W.status, ee, null == W ? true : W.emoji, F, en]), i.useEffect(() => {
+    en || Q !== (null != (e = null == W ? true : W.status) ? e : "") && "" !== Q.trim() ? V(true) : V(false)
+  }, [Q, null == W ? true : W.status, ee, null == W ? true : W.emoji, V, en]), i.useEffect(() => {
     null == H || H(null == J ? true : J.current)
   }, [J, H]);
   let eg = i.useCallback(e => {
@@ -140,16 +140,16 @@ function B(e) {
     }, [es, ee, B.id]),
     ev = i.useCallback((e, t) => {
       let n = (0, x.Z)(t);
-      (!ep || e) && ((0, _.tg)(n ? t : t.status, n ? null : t.emoji), b.default.track(A.rMx.HANG_STATUS_FAVORITE_CLICKED, U(k({}, (0, O.Z)(B.id)), {
+      (!ep || e) && ((0, _.tg)(n ? t : t.status, n ? null : t.emoji), b.default.track(A.rMx.HANG_STATUS_FAVORITE_CLICKED, U(L({}, (0, O.Z)(B.id)), {
         favorited: !e
       })))
     }, [B.id, ep]),
     eO = i.useCallback(() => {
-      F(false)
-    }, [F]),
+      V(false)
+    }, [V]),
     ex = i.useCallback(() => {
-      F(true)
-    }, [F]),
+      V(true)
+    }, [V]),
     eE = i.useCallback((e, t, n) => {
       var i;
       let l = (0, x.Z)(e),
@@ -198,7 +198,7 @@ function B(e) {
       shouldShow: eh === d.z.HANG_STATUS_POPOVER_NUX,
       graphic: {
         type: "image",
-        src: L.Z
+        src: k.Z
       },
       targetElementRef: J,
       onRequestClose: () => em(w.L.DISMISS)
@@ -224,7 +224,7 @@ function B(e) {
                 setCustomStatusEmoji: et,
                 selectedDefaultStatus: en || ef ? null : ei,
                 defaultStatusVariant: Y,
-                setIsEmojiPickerOpen: V
+                setIsEmojiPickerOpen: F
               })
             },
             trailing: null == W && null == ei || ec ? ec ? {

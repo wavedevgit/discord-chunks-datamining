@@ -15,8 +15,6 @@ function o() {
       className: l()(Chunk903781.placeholderItem, Chunk903781.chatTextAreaPlaceholder)
     }), (0, Chunk951288.jsx)("div", {
       className: l()(Chunk903781.placeholderItem, Chunk903781.appLauncherPlaceholder)
-    }), (0, Chunk951288.jsx)("div", {
-      className: l()(Chunk903781.placeholderItem, Chunk903781.entryPointAppCommandPlaceholder)
     })]
   })
 }

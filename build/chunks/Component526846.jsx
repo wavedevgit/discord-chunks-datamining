@@ -1,7 +1,7 @@
 /** Chunk was on 88647 **/
 /** chunk id: 526846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => k
+  m: () => L
 }), require("./997841.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
 let R = Chunk973693.Y.APP_LAUNCHER_IN_VOICE_BANNER,
   D = "vc-activities-".concat((0, Chunk772848.Z)());
 
-function L(e) {
+function k(e) {
   var t;
   let n, {
       channel: l,
@@ -110,7 +110,7 @@ function L(e) {
     })]
   }))
 }
-let k = Chunk647438.forwardRef(function(e, t) {
+let L = Chunk647438.forwardRef(function(e, t) {
   var n;
   let {
     channel: l,
@@ -135,7 +135,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
   let j = (0, x.bp)(),
     {
       analyticsLocations: R,
-      newestAnalyticsLocation: k
+      newestAnalyticsLocation: L
     } = (0, m.ZP)(h.Z.ACTIVITIES_MINI_SHELF),
     U = j === A.IlC.POPOUT,
     B = (n = l.getGuildId(), (0, Z.Z)({
@@ -146,12 +146,12 @@ let k = Chunk647438.forwardRef(function(e, t) {
     return () => clearTimeout(e)
   }, []);
   let {
-    enabled: F
+    enabled: V
   } = P.c.useExperiment({
     location: "ActivitiesMiniShelf"
   }, {
     autoTrackExposure: true
-  }), V = i.useCallback(() => {
+  }), F = i.useCallback(() => {
     (0, _.Z)({
       context: null != l ? {
         type: "channel",
@@ -160,14 +160,14 @@ let k = Chunk647438.forwardRef(function(e, t) {
         type: "contextless"
       },
       openInPopout: U,
-      analyticsLocation: k
+      analyticsLocation: L
     }), u(), g()
-  }, [l, k, g, u, U]), H = i.useCallback(e => {
+  }, [l, L, g, u, U]), H = i.useCallback(e => {
     c(), S.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: l.id,
       guild_id: l.getGuildId()
     })
-  }, [c, l]), G = F ? p.iWm : p.nG3;
+  }, [c, l]), G = V ? p.iWm : p.nG3;
   return (0, r.jsx)(m.Gt, {
     value: R,
     children: (0, r.jsx)(E.Z, {
@@ -201,7 +201,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
               })]
             }), (0, r.jsxs)(p.P3F, {
               className: M.titleRight,
-              onClick: V,
+              onClick: F,
               children: [(0, r.jsx)(p.Text, {
                 variant: "eyebrow",
                 children: w.intl.string(w.t["K8+z4S"])
@@ -213,7 +213,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
                 className: M.titleRightIcon
               })]
             })]
-          }), (0, r.jsx)(L, {
+          }), (0, r.jsx)(k, {
             openInPopout: U,
             channel: l,
             onClick: () => {

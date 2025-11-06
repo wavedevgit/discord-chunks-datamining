@@ -2,10 +2,8 @@
 /** chunk id: 499254, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Hm: () => s,
-  Tv: () => o,
-  __: () => i,
-  yT: () => a
+  _: () => i,
+  y: () => a
 });
 var Chunk570140 = require("./570140.js");
 
@@ -22,19 +20,5 @@ function a(e) {
   r.Z.dispatch({
     type: "APP_LAUNCHER_DISMISS",
     closeReason: e
-  })
-}
-
-function o(e) {
-  r.Z.dispatch({
-    type: "APP_LAUNCHER_ADD_FAILED_APP_DM_LOAD",
-    channelId: e
-  })
-}
-
-function s(e) {
-  r.Z.dispatch({
-    type: "APP_LAUNCHER_REMOVE_FAILED_APP_DM_LOAD",
-    channelId: e
   })
 }

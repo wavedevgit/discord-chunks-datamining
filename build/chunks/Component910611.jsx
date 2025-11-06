@@ -1,8 +1,8 @@
 /** Chunk was on 88647 **/
 /** chunk id: 910611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  TS: () => F,
-  ud: () => L,
+  TS: () => V,
+  ud: () => k,
   v0: () => U
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -94,7 +94,7 @@ function D(e) {
   }, a)
 }
 
-function L(e) {
+function k(e) {
   let {
     channel: t,
     channelName: n,
@@ -255,7 +255,7 @@ function L(e) {
       return null
   }
 }
-let k = e => {
+let L = e => {
   var t, n, l;
   let {
     channel: a
@@ -277,7 +277,7 @@ function U(e, t) {
   switch (e.type) {
     case A.d4z.DM:
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(k, {
+        children: [(0, r.jsx)(L, {
           channel: e
         }), (0, r.jsx)(P.Z, {
           channel: e
@@ -308,7 +308,7 @@ function B(e, t) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     guild: t,
     channel: n,

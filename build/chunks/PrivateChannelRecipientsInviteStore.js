@@ -116,7 +116,7 @@ function A(e) {
       comparator: r
     })
   }
-  x = n, k.emitChange()
+  x = n, L.emitChange()
 }
 
 function w() {
@@ -136,7 +136,7 @@ function R(e) {
 function D() {
   null != r && (r.destroy(), r = null), P()
 }
-class L extends(i = Chunk442837.ZP.Store) {
+class k extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk480294.Z, Chunk353926.Z, Chunk580005.Z, Chunk699516.Z, Chunk752048.Z, Chunk594174.default), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], T)
   }
@@ -161,13 +161,13 @@ class L extends(i = Chunk442837.ZP.Store) {
       hasFriends: E
     }
   }
-}(l = "displayName") in L ? Object.defineProperty(L, l, {
+}(l = "displayName") in k ? Object.defineProperty(k, l, {
   value: "PrivateChannelRecipientsInviteStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : L[l] = "PrivateChannelRecipientsInviteStore";
-let k = new L(Chunk570140.Z, {
+}) : k[l] = "PrivateChannelRecipientsInviteStore";
+let L = new k(Chunk570140.Z, {
     CONNECTION_OPEN: function() {
       P()
     },
@@ -207,4 +207,4 @@ let k = new L(Chunk570140.Z, {
       j.delete(t), j = new Set(j)
     }
   }),
-  U = k
+  U = L

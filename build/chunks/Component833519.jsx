@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk822296 = require("./822296.jsx"),
   Chunk916771 = require("./916771.jsx"),
   Chunk792517 = require("./792517.jsx"),
-  L = (require("./351483.jsx"), require("./979425.jsx")),
+  k = (require("./351483.jsx"), require("./979425.jsx")),
   Chunk651183 = require("./651183.jsx"),
   Chunk623825 = require("./623825.js"),
   Chunk981631 = require("./981631.js"),
@@ -58,7 +58,7 @@ function z(e) {
     premiumIndicator: s
   } = e, c = (0, o.e7)([P.Z], () => P.Z.getActiveStreamForUser(t.user.id, t.stream.guildId)), u = (0, U.K)(a);
   return (0, r.jsxs)(r.Fragment, {
-    children: [n || i ? null : (0, r.jsx)(k.Z, {
+    children: [n || i ? null : (0, r.jsx)(L.Z, {
       participant: t
     }), i || null == c || c.state === B.jm8.ENDED || c.state === B.jm8.FAILED ? null : (0, r.jsx)(O.Z, {
       size: m.ZP.Sizes.SMALL,
@@ -79,7 +79,7 @@ function q(e) {
     fit: m,
     popoutType: g,
     width: O,
-    focused: k,
+    focused: L,
     wrapperClassName: U,
     paused: z = false
   } = e, q = T.Z.getVideoComponent(), Y = (0, o.e7)([I.default], () => I.default.getId()), K = (0, _.Z)(), {
@@ -94,16 +94,16 @@ function q(e) {
   (0, p.ZP)(() => {
     !en && (null == $ ? true : $.isGuildStageVoice()) && !ei && ((0, d.rn)(X), u.Z.updateStageStreamSize(X.channelId, false))
   });
-  let es = (0, b.c)(V.Yn.STREAM, t.user.id);
+  let es = (0, b.c)(F.Yn.STREAM, t.user.id);
   i.useEffect(() => {
-    W.info("Stream Tile State - activeStream: ".concat(null != ee, " | selected: ").concat(n, " | Video: ").concat(null != q, " | MediaEngine: ").concat(T.Z.supports(V.AN.VIDEO)))
+    W.info("Stream Tile State - activeStream: ".concat(null != ee, " | selected: ").concat(n, " | Video: ").concat(null != q, " | MediaEngine: ").concat(T.Z.supports(F.AN.VIDEO)))
   }, [q, ee, n]);
   let {
     allowGoLiveZoomPan: ec
   } = (0, x.H)({
     location: "StreamTile"
   });
-  if (K) return (0, r.jsx)(L.Z, {
+  if (K) return (0, r.jsx)(k.Z, {
     stream: t.stream,
     isSmall: eo,
     selected: n,
@@ -121,12 +121,12 @@ function q(e) {
     stream: t.stream,
     width: O
   });
-  if (t.type === F.fO.HIDDEN_STREAM) return (0, r.jsx)(D.Z, {
+  if (t.type === V.fO.HIDDEN_STREAM) return (0, r.jsx)(D.Z, {
     selected: n,
     participant: t,
     width: O
   });
-  if (!(null != ee && !n && null != q && T.Z.supports(V.AN.VIDEO))) return (0, r.jsxs)("div", {
+  if (!(null != ee && !n && null != q && T.Z.supports(F.AN.VIDEO))) return (0, r.jsxs)("div", {
     className: a()(G.content, G.streamPreview, {
       [G.small]: eo
     }),
@@ -166,14 +166,14 @@ function q(e) {
   });
   else return (0, r.jsxs)(r.Fragment, {
     children: [null != $ ? (0, r.jsx)(j.Z, {
-      focused: k,
+      focused: L,
       channelId: $.id,
       guildId: $.guild_id,
       streamerId: J.id,
       hasScreenMessage: null != ea,
       stream: X
     }) : null, (0, r.jsx)(E.Z, {
-      enableZoom: ec && k,
+      enableZoom: ec && L,
       onResize: l,
       wrapperClassName: a()(g !== h.P.CALL_TILE ? G.videoWrapper : true, U),
       className: G.content,

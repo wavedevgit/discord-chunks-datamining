@@ -27,7 +27,7 @@ let O = {
 };
 
 function x() {
-  Chunk499254.yT(Chunk827498.ti.DISMISSED)
+  Chunk499254.y(Chunk827498.ti.DISMISSED)
 }
 
 function E(e) {

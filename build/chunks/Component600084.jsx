@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk963392 = require("./963392.js"),
   Chunk197571 = require("./197571.js");
 
-function V(e) {
+function F(e) {
   let {
     canManageRoles: t,
     channel: n
@@ -77,15 +77,15 @@ function H(e) {
     canManageRoles: M,
     canReadMessageHistory: R
   } = (0, l.cj)([O.Z], () => ({
-    canManageRoles: O.Z.can(L.Plq.MANAGE_ROLES, p),
-    canReadMessageHistory: O.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
-  })), D = (0, l.e7)([b.Z], () => v === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, v]), {
+    canManageRoles: O.Z.can(k.Plq.MANAGE_ROLES, p),
+    canReadMessageHistory: O.Z.can(k.Plq.READ_MESSAGE_HISTORY, p)
+  })), D = (0, l.e7)([b.Z], () => v === k.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, v]), {
     systemDMRedesignEnabled: H
   } = g.Z.useExperiment({
     location: "bf1a4f_1"
   }, {
     autoTrackExposure: null != (t = p.isSystemDM()) && t
-  }), G = (0, u.Z)(null != (n = null == P ? true : P.id) ? n : L.lds), {
+  }), G = (0, u.Z)(null != (n = null == P ? true : P.id) ? n : k.lds), {
     authorizedAppToken: W,
     authorizedAppsFetchState: z
   } = (0, l.cj)([C.default], () => ({
@@ -95,7 +95,7 @@ function H(e) {
     location: "EmptyMessages"
   }).enabledDesktop;
   if (i.useEffect(() => {
-      v === L.d4z.DM && null == D && null != P && o.Z.wait(() => (0, _.Z)(p.getRecipientId(), P.getAvatarURL(null, 80), {
+      v === k.d4z.DM && null == D && null != P && o.Z.wait(() => (0, _.Z)(p.getRecipientId(), P.getAvatarURL(null, 80), {
         withMutualGuilds: true
       }))
     }, [D, v, p, P]), i.useEffect(() => {
@@ -106,7 +106,7 @@ function H(e) {
     channel: p,
     children: U.intl.string(U.t.Rzvnig)
   });
-  if (v === L.d4z.DM) {
+  if (v === k.d4z.DM) {
     let e;
     return null != P && null != G ? null != W && (e = (0, r.jsxs)("div", {
       className: B.buttonContainer,
@@ -130,7 +130,7 @@ function H(e) {
       user: P,
       children: [null != P && !P.isProvisional && (0, r.jsx)(a.Heading, {
         variant: "heading-xl/medium",
-        className: F.marginBottom20,
+        className: V.marginBottom20,
         children: A
       }), U.intl.format(U.t["Qvg+6+"], {
         username: y
@@ -150,7 +150,7 @@ function H(e) {
         children: U.intl.string(U.t.M8Ao6I)
       })]
     });
-    else if (p.hasFlag(k.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, r.jsx)(I.Z, {
+    else if (p.hasFlag(L.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, r.jsx)(I.Z, {
     channel: p
   });
   else return (0, r.jsx)(N.Z, {
@@ -159,7 +159,7 @@ function H(e) {
       name: y
     })
   });
-  return R ? (0, r.jsx)(V, {
+  return R ? (0, r.jsx)(F, {
     channel: p,
     canManageRoles: M
   }) : (0, r.jsx)(S.ZP, {

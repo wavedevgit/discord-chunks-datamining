@@ -51,10 +51,10 @@ let y = Chunk647438.memo(function(e) {
     videoComponent: S,
     mirror: P,
     paused: I
-  } = O, [Z, T] = i.useState(false), [N, A] = i.useState(null), [w, M] = i.useState(null), [R, D] = i.useState(0), [L, k] = i.useState({
+  } = O, [Z, T] = i.useState(false), [N, A] = i.useState(null), [w, M] = i.useState(null), [R, D] = i.useState(0), [k, L] = i.useState({
     x: 0,
     y: 0
-  }), [U, B] = i.useState(null), [F, V] = i.useState(null), [H, G] = i.useState(false), [W, z] = i.useState(_(y, C, v)), [q, Y] = i.useState(false), [K, X] = i.useState(16 / 9), [J, Q] = i.useState(false), [$, ee] = i.useState(false), et = i.useRef(new o.V7), en = i.useRef(new o.V7), er = i.useRef(new o.V7), ei = i.useRef(null), el = i.useRef(null), ea = i.useRef(null), eo = 1 !== W, es = i.useCallback(e => {
+  }), [U, B] = i.useState(null), [V, F] = i.useState(null), [H, G] = i.useState(false), [W, z] = i.useState(_(y, C, v)), [q, Y] = i.useState(false), [K, X] = i.useState(16 / 9), [J, Q] = i.useState(false), [$, ee] = i.useState(false), et = i.useRef(new o.V7), en = i.useRef(new o.V7), er = i.useRef(new o.V7), ei = i.useRef(null), el = i.useRef(null), ea = i.useRef(null), eo = 1 !== W, es = i.useCallback(e => {
     e.width > 0 && e.height > 0 && X(e.width / e.height), null == E || E(e)
   }, [E]), ec = i.useCallback(e => {
     if (null == ei.current) return {
@@ -84,7 +84,7 @@ let y = Chunk647438.memo(function(e) {
     let n = _(W + e, C, v);
     if (null == ei.current || null == t || n === W) return;
     let r = n / W;
-    k(e => eu((e.x - t.x) * r + t.x, (e.y - t.y) * r + t.y, n)), z(n)
+    L(e => eu((e.x - t.x) * r + t.x, (e.y - t.y) * r + t.y, n)), z(n)
   }, [eu, v, C, W]), ep = i.useCallback(() => {
     et.current.stop(), Q(true)
   }, []), ef = i.useCallback(function() {
@@ -94,16 +94,16 @@ let y = Chunk647438.memo(function(e) {
     if (!eo) return;
     e.preventDefault(), e.stopPropagation();
     let t = ec(e);
-    T(true), M(t), A(t), D(Date.now()), V(t), B(L)
-  }, [ec, eo, L]), em = i.useCallback(e => {
-    if ((l || eo) && ef(), !Z || !eo || null == F || null == U) return;
+    T(true), M(t), A(t), D(Date.now()), F(t), B(k)
+  }, [ec, eo, k]), em = i.useCallback(e => {
+    if ((l || eo) && ef(), !Z || !eo || null == V || null == U) return;
     e.preventDefault(), e.stopPropagation();
     let t = ec(e),
-      n = t.x - F.x,
-      r = t.y - F.y;
-    k(eu(U.x + n, U.y + r)), A(t)
-  }, [eu, F, U, l, ec, Z, eo, ef]), eg = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), T(false), V(null), B(null)
+      n = t.x - V.x,
+      r = t.y - V.y;
+    L(eu(U.x + n, U.y + r)), A(t)
+  }, [eu, V, U, l, ec, Z, eo, ef]), eg = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), T(false), F(null), B(null)
   }, []), eb = i.useCallback(e => {
     if (eo && null != w && null != N) {
       let {
@@ -116,7 +116,7 @@ let y = Chunk647438.memo(function(e) {
       (Math.sqrt((r - t) ** 2 + (i - n) ** 2) > .01 || Date.now() - R >= 500) && (e.preventDefault(), e.stopPropagation())
     }
   }, [eo, w, R, N]), e_ = i.useCallback(() => {
-    T(false), V(null), B(null)
+    T(false), F(null), B(null)
   }, []), ey = i.useCallback(e => {
     l && (Y(true), ed(-e.deltaY / 100, ec(e)), ef(), en.current.start(100, () => {
       Y(false)
@@ -132,7 +132,7 @@ let y = Chunk647438.memo(function(e) {
       y: 0
     })
   }, [ed]), eO = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), z(1), k({
+    e.preventDefault(), e.stopPropagation(), z(1), L({
       x: 0,
       y: 0
     })
@@ -150,7 +150,7 @@ let y = Chunk647438.memo(function(e) {
       l = e - n.left,
       a = t - n.top,
       o = l / n.width;
-    k(eu((.5 - o) * r * W, (.5 - a / n.height) * i * W))
+    L(eu((.5 - o) * r * W, (.5 - a / n.height) * i * W))
   }, [eu, W]), eP = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), G(true), eS(e.clientX, e.clientY)
   }, [eS]), eI = i.useCallback(e => {
@@ -178,7 +178,7 @@ let y = Chunk647438.memo(function(e) {
       width: i,
       height: l
     } = r;
-    1 > Math.abs(t - i) && 1 > Math.abs(n - l) || (ee(true), k(e => {
+    1 > Math.abs(t - i) && 1 > Math.abs(n - l) || (ee(true), L(e => {
       let r = i * (W - 1) / 2,
         a = l * (W - 1) / 2,
         o = t * (W - 1) / 2,
@@ -197,14 +197,14 @@ let y = Chunk647438.memo(function(e) {
     null != x && (0, f.N)(x, l && eo ? W : 1)
   }, [l, eo, x, W]);
   let eN = i.useMemo(() => {
-      let e = eu(L.x, L.y);
+      let e = eu(k.x, k.y);
       return {
         "--custom-zoom-scale": W,
         "--custom-pan-x": "".concat(e.x, "px"),
         "--custom-pan-y": "".concat(e.y, "px"),
         "--custom-zoom-transition": Z || $ || q ? "none" : "transform 0.15s ease-out"
       }
-    }, [eu, Z, $, q, L, W]),
+    }, [eu, Z, $, q, k, W]),
     eA = i.useMemo(() => {
       let e = 120 * Math.min(K, 32 / 9);
       return {
@@ -217,8 +217,8 @@ let y = Chunk647438.memo(function(e) {
         t = null != ei.current ? ei.current.clientHeight : 1,
         n = 1 / W,
         r = 1 / W,
-        i = .5 - L.x / (e * W),
-        l = .5 - L.y / (t * W);
+        i = .5 - k.x / (e * W),
+        l = .5 - k.y / (t * W);
       return {
         "--custom-zoom-indicator-left": "".concat(100 * _(i - n / 2, 0, 1 - n), "%"),
         "--custom-zoom-indicator-top": "".concat(100 * _(l - r / 2, 0, 1 - r), "%"),
@@ -226,7 +226,7 @@ let y = Chunk647438.memo(function(e) {
         "--custom-zoom-indicator-height": "".concat(100 * r, "%"),
         "--custom-zoom-indicator-transition": Z || H || q ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
       }
-    }, [Z, H, q, L, W]);
+    }, [Z, H, q, k, W]);
   return (0, r.jsx)("div", {
     ref: ei,
     className: a()(b.wrapper, j, {

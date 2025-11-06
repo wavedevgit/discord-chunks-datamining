@@ -137,7 +137,7 @@ function ej(e) {
   } = e, {
     parentAnalyticsLocation: c,
     analyticsLocations: f
-  } = (0, v.ZP)(), h = (0, k.bp)(), m = (0, u.Wu)([et.Z], () => et.Z.getAllActiveStreams()), g = m.find(e => e.ownerId === n.id), b = i.useRef(null), _ = i.useRef(null), y = t.getGuildId(), C = i.useCallback(() => {
+  } = (0, v.ZP)(), h = (0, L.bp)(), m = (0, u.Wu)([et.Z], () => et.Z.getAllActiveStreams()), g = m.find(e => e.ownerId === n.id), b = i.useRef(null), _ = i.useRef(null), y = t.getGuildId(), C = i.useCallback(() => {
     if (null == l || l(), !a) return (0, eh.Z)();
     (0, em.Z)(y, t.id, f)
   }, [y, t.id, a, l, f]), O = (0, B.B4)(), [x, E] = i.useState(false), j = () => {
@@ -156,7 +156,7 @@ function ej(e) {
             visibleContent: t,
             markAsDismissed: n
           } = e;
-          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return E(true), (0, r.jsx)(F.h, {
+          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return E(true), (0, r.jsx)(V.h, {
             buttonRef: b,
             dismissed: false,
             onDismiss: () => {
@@ -381,7 +381,7 @@ function eI(e) {
     cameraUnavailable: n,
     hasCameraPermission: l,
     currentUser: a
-  } = e, o = (0, k.bp)(), {
+  } = e, o = (0, L.bp)(), {
     parentAnalyticsLocation: s
   } = (0, v.ZP)(), {
     reachedLimit: c,
@@ -450,7 +450,7 @@ let eT = function(e) {
     canGoLive: R
   } = (0, u.cj)([er.Z], () => ({
     canGoLive: (0, w.Z)(er.Z)
-  })), D = (0, N.Z)(), k = (0, u.e7)([T.default], () => null != T.default.getAwaitingRemoteSessionInfo()), B = null != D, F = (0, u.e7)([ei.Z], () => {
+  })), D = (0, N.Z)(), L = (0, u.e7)([T.default], () => null != T.default.getAwaitingRemoteSessionInfo()), B = null != D, V = (0, u.e7)([ei.Z], () => {
     var e;
     return (null != (e = null == D ? true : D.channelId) ? e : ei.Z.getVoiceChannelId()) === n.id
   }), H = (0, u.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()), {
@@ -465,7 +465,7 @@ let eT = function(e) {
     showRefreshedAudioContextMenu: J
   } = (0, U.e)({
     location: C.Z.VOICE_CONTROL_TRAY
-  }), et = (0, V.Z)(n), en = i.useRef(null), eu = i.useRef(null), ep = Y ? e => {
+  }), et = (0, F.Z)(n), en = i.useRef(null), eu = i.useRef(null), ep = Y ? e => {
     (0, h.jW)(e, () => Promise.resolve(() => (0, r.jsx)(x.default, {
       onClose: h.Zy,
       renderInputDevices: true,
@@ -478,13 +478,13 @@ let eT = function(e) {
       onInteraction: eZ("AudioDeviceMenu")
     })))
   } : true;
-  return F ? (0, r.jsx)(v.Gt, {
+  return V ? (0, r.jsx)(v.Gt, {
     value: q,
     children: (0, r.jsxs)(b.Z, {
       section: eb.jXE.VOICE_CONTROL_TRAY,
       children: [(0, r.jsx)("div", {
         className: eC.eventPromptsContainer,
-        children: (0, r.jsx)(L.Z, {
+        children: (0, r.jsx)(k.Z, {
           channelId: n.id
         })
       }), (0, r.jsxs)("div", {
@@ -546,7 +546,7 @@ let eT = function(e) {
                 serverMute: M,
                 suppress: Z,
                 popoutOpen: i,
-                awaitingRemote: k,
+                awaitingRemote: L,
                 onClick: () => (0, S.Z)(M, Z, eb.jXE.VOICE_CONTROL_TRAY),
                 onContextMenu: ep
               })

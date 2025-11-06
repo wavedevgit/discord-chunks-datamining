@@ -2,7 +2,7 @@
 /** chunk id: 462061, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => D,
-  Z: () => L
+  Z: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -57,7 +57,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     participant: t,
     channel: n,
@@ -67,12 +67,12 @@ function L(e) {
     popoutType: v,
     fit: Z,
     onVideoResize: D,
-    blocked: L,
-    ignored: k,
+    blocked: k,
+    ignored: L,
     noVideoRender: U = false,
     pulseSpeakingIndicator: B = false,
-    paused: F = false
-  } = e, V = E.Z.getVideoComponent(), H = (0, o.e7)([O.default], () => O.default.getId()), {
+    paused: V = false
+  } = e, F = E.Z.getVideoComponent(), H = (0, o.e7)([O.default], () => O.default.getId()), {
     user: G,
     streamId: W,
     speaking: z
@@ -98,7 +98,7 @@ function L(e) {
       user: n
     } = es.current;
     e.isGuildStageVoice() && !Y && (null == t ? true : t.id) === n.id && u.Z.selectParticipant(e.id, null)
-  }, [Y]), l && !J && !U && Y && !c && null != V && E.Z.supports(N.AN.VIDEO)) ? null != el && null == ea ? (0, r.jsx)(I.Z, {
+  }, [Y]), l && !J && !U && Y && !c && null != F && E.Z.supports(N.AN.VIDEO)) ? null != el && null == ea ? (0, r.jsx)(I.Z, {
     avError: el,
     userId: t.id,
     width: s,
@@ -109,14 +109,14 @@ function L(e) {
     className: w.content,
     mirror: q,
     streamId: W,
-    videoComponent: V,
+    videoComponent: F,
     fit: Z,
     videoSpinnerContext: G.id === H ? d.m.SELF_VIDEO : d.m.REMOTE_VIDEO,
-    paused: F,
+    paused: V,
     userId: G.id
   }, W) : (0, r.jsx)("div", {
     className: a()(w.content, {
-      [w.blockedAvatar]: L || k
+      [w.blockedAvatar]: k || L
     }),
     children: (0, r.jsx)(b.Z, {
       "aria-label": $,
