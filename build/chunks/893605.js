@@ -9,6 +9,7 @@ function a(e) {
     id: e.id,
     name: e.name,
     countryCode: e.country_code,
-    pingUrl: e.ping_url
+    pingUrl: e.ping_url,
+    enabled: e.enabled
   }
 }

@@ -120,7 +120,8 @@ function w() {
       var e;
       return null != (e = L.sort((e, n) => (0, C.Z)(e, n, D)).map(e => ({
         value: e,
-        label: e.name
+        label: e.name,
+        disabled: true !== e.enabled
       }))) ? module : []
     }, [D, L]),
     z = Chunk647438.useMemo(() => L.some(e => "" !== e.pingUrl), [L]),
