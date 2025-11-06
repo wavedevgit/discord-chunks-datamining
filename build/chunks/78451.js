@@ -102,17 +102,14 @@ function f() {
   return [{
     name: Chunk388032.intl.string(Chunk388032.t["4IaoCI"]),
     desc: Chunk388032.intl.string(Chunk388032.t.TgipjE),
-    value: Chunk524437.Xr.FRIENDS_AND_NON_FRIENDS,
-    color: (0, Chunk900089.Fw)("GREEN_360")
+    value: Chunk524437.Xr.FRIENDS_AND_NON_FRIENDS
   }, {
     name: Chunk388032.intl.string(Chunk388032.t["6NnX6F"]),
     desc: Chunk388032.intl.string(Chunk388032.t["+dw1qu"]),
-    value: Chunk524437.Xr.NON_FRIENDS,
-    color: (0, Chunk900089.Fw)("YELLOW_360")
+    value: Chunk524437.Xr.NON_FRIENDS
   }, {
     name: Chunk388032.intl.string(Chunk388032.t["1tiAFz"]),
     desc: Chunk388032.intl.string(Chunk388032.t.LKTyeA),
-    value: Chunk524437.Xr.DISABLED,
-    color: (0, Chunk900089.Fw)("RED_400")
+    value: Chunk524437.Xr.DISABLED
   }]
 }

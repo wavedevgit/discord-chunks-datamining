@@ -105,7 +105,7 @@ function S(e, t) {
 }
 
 function A(e) {
-  v(e), s.default.track(h.rMx.OVERLAY_HOOK_RESULT, T(e))
+  s.default.track(h.rMx.OVERLAY_HOOK_RESULT, T(e))
 }
 
 function C(e, t) {
@@ -202,7 +202,7 @@ function k(e) {
   return S(r, {
     total_mount_time_ms: null != i ? new Date().getTime() - i : true,
     success: true
-  }), true
+  }), v(r), true
 }
 class U extends(r = Chunk442837.ZP.Store) {
   initialize() {
