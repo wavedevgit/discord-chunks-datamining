@@ -14,6 +14,5 @@ module.exports = {
   activityContainerNoMargin: "activityContainerNoMargin__49094",
   footerButtons: "footerButtons__49094",
   avatar: "avatar__49094",
-  buttonSection: "buttonSection__49094",
-  fortniteUpsellModalButton: "fortniteUpsellModalButton__49094"
+  buttonSection: "buttonSection__49094"
 }
