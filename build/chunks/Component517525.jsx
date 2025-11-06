@@ -136,7 +136,7 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           location_stack: M
         }), T(true))
       }, [t, l, D, Z, T, M]), null == w) return null;
-    let V = (0, r.jsx)(d.u, {
+    let F = (0, r.jsx)(d.u, {
       text: R ? j.intl.string(j.t.q8TiVt) : D ? j.intl.string(j.t.IHgpEn) : j.intl.string(j.t.vLb0VW),
       position: "bottom",
       children: (0, r.jsxs)(f.P3F, {
@@ -157,7 +157,7 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       })
     });
     return (0, r.jsx)(f.IGR, {
-      text: V,
+      text: F,
       className: a()(N, S.qualityIndicatorBadge, {
         [S.qualityIndicatorBadgePremium]: D && A
       }),

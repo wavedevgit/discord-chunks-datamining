@@ -28,8 +28,8 @@ let i = {
   NON_AD_SERVING_COUNTRIES: new Set(["RU", "TR"]),
   TAX_EXCLUSIVE: new Set(["CA", "KR", "US"]),
   TAX_ADDRESS_REQUIRE_POSTAL_CODE: new Set(["CA", "US"]),
-  QUESTS_3P_DATA_OPT_OUT_U16_REGIONS: new Set(["CA", "MT", "NH", "OR"]),
-  QUESTS_3P_DATA_OPT_OUT_U18_REGIONS: new Set(["CO", "CT", "DE", "MD", "NJ"]),
+  QUESTS_3P_DATA_OPT_OUT_U16_REGIONS: new Set(["CA", "NH", "OR"]),
+  QUESTS_3P_DATA_OPT_OUT_U18_REGIONS: new Set(["CO", "CT", "DE", "MD", "MT", "NJ", "NY"]),
   QUESTS_3P_DATA_OPT_OUT_COUNTRIES: new Set(["BR", "KR"]),
   NITRO_TAX_EXCLUSIVE_US_STATES: new Set(["AL", "AR", "AZ", "CO", "CT", "DC", "HI", "IA", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NY", "OH", "OK", "PA", "PR", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY"]),
   STRIPE_CONNECT_SUPPORTED_COUNTRIES: new Set(["AT", "BE", "BG", "CY", "CZ", "DE", "DK", "EE", "EL", "ES", "FI", "FR", "GB", "GR", "HR", "HU", "IE", "IT", "LT", "LU", "LV", "MT", "NL", "PL", "PT", "RO", "SE", "SI", "SK", "US"])

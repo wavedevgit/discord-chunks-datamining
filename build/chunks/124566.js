@@ -67,7 +67,12 @@ let g = {
     },
     planSelection: {
       heading: () => Chunk388032.intl.string(Chunk388032.t.OEtqpm),
-      subheading: () => Chunk388032.intl.string(Chunk388032.t.vPeaOS),
+      subheading: function() {
+        let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0;
+        return Chunk388032.intl.formatToPlainString(Chunk388032.t["2h5M+X"], {
+          availableCount: module
+        })
+      },
       mobileSubheading: e => c.intl.formatToPlainString(c.t["2h5M+X"], {
         availableCount: e
       }),

@@ -1,4 +1,4 @@
-/** Chunk was on 65100 **/
+/** Chunk was on 29446 **/
 /** chunk id: 217314, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -26,20 +26,20 @@ function g(e) {
     b = (0, l.e7)([c.Z], () => c.Z.isMobileOnline(t)),
     j = (0, l.e7)([u.Z], () => u.Z.getNickname(t)),
     y = p.ZP.useUserTag(g),
-    x = (0, s.j)({
+    O = (0, s.j)({
       displayNameStyles: null == g ? true : g.displayNameStyles
     }),
-    O = (0, o.m$)({
+    x = (0, o.m$)({
       channelId: e.channel.id
     });
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(a.nn4, {
-      children: m.intl.string(m.t.EJRzg7)
+      children: f.intl.string(f.t.EJRzg7)
     }), null != g && !n && (0, i.jsx)("div", {
       children: (0, i.jsx)(a.qEK, {
         status: v,
         isMobile: b,
-        className: f.avatar,
+        className: m.avatar,
         size: a.EFr.SIZE_20,
         "aria-label": p.ZP.getName(g),
         src: g.getAvatarURL(true, 20)
@@ -48,20 +48,20 @@ function g(e) {
       level: e.level,
       onClick: e.handleClick,
       onContextMenu: e.handleContextMenu,
-      className: null != e.handleClick ? f.cursorPointer : null,
+      className: null != e.handleClick ? m.cursorPointer : null,
       children: (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.jSM, {
           text: y,
           position: "bottom",
-          className: x,
+          className: O,
           children: null != j ? j : p.ZP.getName(g)
-        }), O && (0, i.jsx)(r.u, {
-          text: m.intl.string(m.t.QyZ4Td),
+        }), x && (0, i.jsx)(r.u, {
+          text: f.intl.string(f.t.QyZ4Td),
           children: (0, i.jsx)(a.tQf, {
             size: "xs",
-            "aria-label": m.intl.string(m.t.VHXh8a),
+            "aria-label": f.intl.string(f.t.VHXh8a),
             color: a.TVs.colors.INTERACTIVE_NORMAL,
-            className: f.secureFramesIcon
+            className: m.secureFramesIcon
           })
         })]
       })

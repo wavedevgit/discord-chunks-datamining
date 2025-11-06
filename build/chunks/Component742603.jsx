@@ -58,7 +58,7 @@ function B(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     user: t,
     channel: n,
@@ -80,7 +80,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: i,
@@ -112,7 +112,7 @@ function F(e) {
     t = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(y.ZP.Divider, {
         className: L.divider
-      }), (0, r.jsx)(V, {
+      }), (0, r.jsx)(F, {
         user: e,
         channel: l,
         stream: n,
@@ -206,7 +206,7 @@ function H(e) {
         })]
       })
     }) : null,
-    V = (0, j.m$)({
+    F = (0, j.m$)({
       channelId: t.id
     });
   return (0, r.jsxs)("div", {
@@ -233,7 +233,7 @@ function H(e) {
             children: [null != O ? (0, r.jsx)(y.ZP.ChannelIcon, {
               icon: O,
               "aria-label": P
-            }) : null, _, V && (0, r.jsx)(o.u, {
+            }) : null, _, F && (0, r.jsx)(o.u, {
               text: k.intl.string(k.t.QyZ4Td),
               children: (0, r.jsx)(s.tQf, {
                 size: "xs",
@@ -246,7 +246,7 @@ function H(e) {
         }), (0, r.jsx)(v.TS, {
           channel: t,
           guild: i
-        }), (0, r.jsx)(F, {
+        }), (0, r.jsx)(V, {
           focusedApplication: S,
           focusedParticipant: b,
           channel: t

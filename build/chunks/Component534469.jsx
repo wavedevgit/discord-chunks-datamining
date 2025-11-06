@@ -153,7 +153,7 @@ function en(e) {
       [X.systemMessage]: true,
       [X.groupStart]: true
     }),
-    childrenHeader: (0, F.Z)({
+    childrenHeader: (0, V.Z)({
       messageProps: e,
       setPopout: m,
       messagePopouts: h,
@@ -190,7 +190,7 @@ function er(e) {
   } = S, N = ee(S, ["onFocus"]), {
     isFocused: L,
     handleFocus: B,
-    handleBlur: V
+    handleBlur: F
   } = (0, M.bb)(I), {
     popouts: G,
     selected: J,
@@ -243,7 +243,7 @@ function er(e) {
       zalgo: true,
       onKeyDown: em,
       onFocus: B,
-      onBlur: V,
+      onBlur: F,
       childrenRepliedMessage: o.type === Y.uaV.REPLY && (0, W.Z)($(Q({}, e), {
         setPopout: et,
         referencedUsernameProfile: G.referencedUsernameProfile,
@@ -252,7 +252,7 @@ function er(e) {
         replyMessage: ei,
         isReplySpineClickable: true
       })),
-      childrenHeader: (0, F.Z)({
+      childrenHeader: (0, V.Z)({
         messageProps: e,
         setPopout: et,
         messagePopouts: G,
@@ -362,8 +362,8 @@ let ei = Chunk647438.memo(function(e) {
       previewLinkTarget: true
     }),
     eB = (0, R.Z)(I, et, eN),
-    eV = (0, T.ZP)(v),
-    eF = (0, u.e7)([y.Z], () => y.Z.getPendingReply(et)),
+    eF = (0, T.ZP)(v),
+    eV = (0, u.e7)([y.Z], () => y.Z.getPendingReply(et)),
     eH = function(e) {
       let t = i.useRef(e);
       return i.useEffect(() => {
@@ -372,7 +372,7 @@ let ei = Chunk647438.memo(function(e) {
     }(ei),
     eG = (0, h.p9)({
       guildId: J.guild_id,
-      roleId: eV.iconRoleId
+      roleId: eF.iconRoleId
     }),
     eW = (0, w.iG)(v, el),
     ez = (0, w.Gx)(v),
@@ -420,7 +420,7 @@ let ei = Chunk647438.memo(function(e) {
             [X.systemMessage]: (0, Z.Z)(v),
             [X.groupStart]: !ea && (eQ || v.type === Y.uaV.REPLY),
             [X.selected]: eA,
-            [X.replying]: (null == eF ? true : eF.message.id) === v.id,
+            [X.replying]: (null == eV ? true : eV.message.id) === v.id,
             [X.interactionSending]: v.isCommandType() && v.state === Y.yb.SENDING,
             [X.automodMessage]: eX,
             [X.editing]: eT,
@@ -437,12 +437,12 @@ let ei = Chunk647438.memo(function(e) {
             isReplySpineClickable: true
           })),
           childrenExecutedCommand: (0, G.Z)(e, eb, em),
-          childrenHeader: ea ? true : (0, F.Z)({
+          childrenHeader: ea ? true : (0, V.Z)({
             messageProps: e,
             setPopout: eb,
             messagePopouts: em,
             replyReference: eo,
-            author: eV,
+            author: eF,
             repliedMessage: eh,
             roleIcon: eG
           }),
@@ -454,7 +454,7 @@ let ei = Chunk647438.memo(function(e) {
             isAutomodBlockedMessage: eX,
             forceAddReactions: v.type === Y.uaV.EMOJI_ADDED
           }),
-          childrenButtons: eO || ej ? (0, V.Z)({
+          childrenButtons: eO || ej ? (0, F.Z)({
             buttonProps: e,
             setPopout: eb,
             messagePopouts: em,
@@ -472,7 +472,7 @@ let ei = Chunk647438.memo(function(e) {
             var t, n;
             eY.current = e, eK.current = null != (n = null == e || null == (t = e.ownerDocument) ? true : t.defaultView) ? n : window
           },
-          author: eV
+          author: eF
         }))]
       })
     });

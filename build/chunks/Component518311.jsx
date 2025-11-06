@@ -115,9 +115,9 @@ let eo = (0, Chunk313201.hQ)(),
     let {
       channel: n,
       onClose: r
-    } = e, l = null != (t = (0, P.ZP)(n)) ? t : "", a = (0, u.e7)([V.ZP], () => {
+    } = e, l = null != (t = (0, P.ZP)(n)) ? t : "", a = (0, u.e7)([F.ZP], () => {
       var e;
-      return null != (e = V.ZP.lastMessageId(n.id)) ? e : n.id
+      return null != (e = F.ZP.lastMessageId(n.id)) ? e : n.id
     });
     return (0, i.jsx)(p.P3F, {
       onClick: () => {
@@ -824,7 +824,7 @@ function ep(e) {
     analyticsLocations: s
   } = (0, j.ZP)(x.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, Z.a)(x.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
-  let c = (0, P.pT)(Array.from(t), G.default, F.Z);
+  let c = (0, P.pT)(Array.from(t), G.default, V.Z);
   return (0, i.jsxs)("div", {
     className: en.customizationContainer,
     children: [(0, i.jsx)(T.B, {

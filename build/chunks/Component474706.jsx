@@ -22,12 +22,17 @@ function f() {
     } = (0, Chunk987209.wD)(),
     f = (0, Chunk347896.Z)(),
     _ = null == f ? true : f.planSelection,
-    p = (0, Chunk717401.Yr)(null == _ || null == (e = _.getBannerImageUrl) ? true : module.call(_)),
-    h = (0, Chunk717401.Tl)(null == _ ? true : _.gradientConfig);
+    p = (0, Chunk717401.Tl)(null == _ ? true : _.gradientConfig, 78.98, true),
+    h = null == _ || null == (e = _.getBannerImageUrl) ? true : module.call(_);
   return null == _ || null == require || 0 === require.length ? null : (0, Chunk951288.jsxs)("div", {
     className: Chunk487276.container,
-    style: null != p ? p : h,
-    children: [(0, Chunk951288.jsxs)("div", {
+    style: p,
+    children: [null != h && (0, Chunk951288.jsx)("div", {
+      className: Chunk487276.bannerImage,
+      style: {
+        backgroundImage: "url(".concat(h, ")")
+      }
+    }), (0, Chunk951288.jsxs)("div", {
       className: Chunk487276.textSection,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",

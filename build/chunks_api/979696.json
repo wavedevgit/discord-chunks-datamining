@@ -1,1 +1,1 @@
-{"id":"979696","type":"store","data":{"name":"CallChatToastsStore","functions":[{"name":"initialize","args":["e"]},{"name":"getToastsEnabled","args":["e"]},{"name":"getState","args":[]}],"events":["CALL_CHAT_TOASTS_SET_ENABLED","LOGOUT"]},"fromModule":{"id":"65100"}}
+{"id":"979696","type":"store","data":{"name":"CallChatToastsStore","functions":[{"name":"initialize","args":["e"]},{"name":"getToastsEnabled","args":["e"]},{"name":"getState","args":[]}],"events":["CALL_CHAT_TOASTS_SET_ENABLED","LOGOUT"]},"fromModule":{"id":"29446"}}
