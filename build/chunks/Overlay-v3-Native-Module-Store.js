@@ -2,7 +2,7 @@
 /** chunk id: 509140, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => P
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk579092 = require("./579092.js"),
@@ -27,11 +27,11 @@ let p = new Chunk579092.Yd("OverlayV3NativeModuleStore"),
   m = false,
   g = null,
   E = false,
-  b = new Set,
-  y = (() => {
-    let e = null;
-    async function t() {
-      v(), g = Chunk242297._.getInstance();
+  b = null,
+  y = new Set,
+  O = (() => {
+    async function e() {
+      I(), g = Chunk242297._.getInstance();
       try {
         await g.initialize(), h = true
       } catch (e) {
@@ -41,45 +41,48 @@ let p = new Chunk579092.Yd("OverlayV3NativeModuleStore"),
           crashType: "native"
         })
       } finally {
-        N.emitChange()
+        R.emitChange()
       }
     }
-    return () => (null == module && (e = exports()), module)
+    return () => (null == b && (b = module()), b)
   })();
 
-function O(e) {
+function v(e) {
   !__OVERLAY__ && f.iP && (m = e)
 }
 
-function v() {
-  !__OVERLAY__ && Chunk987650.iP && (p.verbose("Maybe Enable Overlay"), O(Chunk454991.v.oopEnabled), (0, Chunk145597.setOutOfProcessSupport)(true))
+function I() {
+  !__OVERLAY__ && Chunk987650.iP && (p.verbose("Maybe Enable Overlay"), v(Chunk454991.v.oopEnabled), (0, Chunk145597.setOutOfProcessSupport)(true))
 }
 
-function I(e) {
+function T(e) {
   let {
     oopEnabled: t
   } = e;
-  O(t)
+  v(t)
 }
 
-function T() {
-  return y(), false
+function S() {
+  return O(), false
 }
 
-function S(e) {
+function A(e) {
   let {
     pid: t,
     isCrashedDisabled: n
   } = e;
-  returntrue === n && (E = true), !!b.has(t) || true === E
+  returntrue === n && (E = true), !!y.has(t) || true === E
 }
 
-function A() {
-  return y(), false
+function C() {
+  return O(), false
 }
-class C extends(r = Chunk442837.ZP.Store) {
+class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk353926.Z)
+  }
+  get isModuleLoading() {
+    return null != b
   }
   get isOverlayEnabled() {
     return m
@@ -97,12 +100,12 @@ class C extends(r = Chunk442837.ZP.Store) {
     return g
   }
 }
-_(C, "displayName", "Overlay-v3-Native-Module-Store");
-let N = new C(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
-    POST_CONNECTION_OPEN: A,
-    EXPERIMENT_OVERRIDE_BUCKET: v,
-    OVERLAY_SET_ENABLED: I,
-    OVERLAY_V3_LOAD_NATIVE_MODULE: T,
-    OVERLAY_CRASHED: S
+_(N, "displayName", "Overlay-v3-Native-Module-Store");
+let R = new N(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
+    POST_CONNECTION_OPEN: C,
+    EXPERIMENT_OVERRIDE_BUCKET: I,
+    OVERLAY_SET_ENABLED: T,
+    OVERLAY_V3_LOAD_NATIVE_MODULE: S,
+    OVERLAY_CRASHED: A
   }),
-  R = N
+  P = R

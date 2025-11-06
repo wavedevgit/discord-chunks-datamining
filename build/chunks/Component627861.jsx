@@ -131,7 +131,7 @@ function ed(e) {
     return e
   }, [y, O]), S = i.useMemo(() => {
     if (null != g) return () => (0, C.aG)(g)
-  }, [g]), A = (0, B.dQ)(l.name, null == (t = f.activity) ? true : t.type);
+  }, [g]), A = (0, B.dQ)(l.name, null == (t = f.activity) ? true : t.type, v);
   if (v) {
     let e = (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
@@ -381,7 +381,7 @@ function ep(e) {
     onClick: () => {},
     disabled: true
   } : null != el ? el : true, [ec, ep, em, eh, el, P.author.id, P.id, x, A.id, A.guild_id, T, ed, C, eg]), eb = i.useMemo(() => ei && null != et ? {
-    label: ea.intl.string(ea.t.RscU7I),
+    label: ea.intl.string(ea.t["s+J8Dl"]),
     trackingArea: m.j_.PLAY,
     isDeadEnd: true,
     onClick: () => {
@@ -403,7 +403,7 @@ function ep(e) {
   }, {
     disableTrack: !eI
   });
-  let eT = (0, B.dQ)(S.name, null == (t = P.activity) ? true : t.type),
+  let eT = (0, B.dQ)(S.name, null == (t = P.activity) ? true : t.type, K),
     eS = (0, I.N)(S.id).some(e => (0, y.ig)(e) === o.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.YqE, {
         size: "xxs",

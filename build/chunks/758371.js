@@ -14,7 +14,7 @@ var Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk978967 = require("./978967.js");
 
-function l(e, t) {
+function l(e, t, n) {
   switch (t) {
     case a.mFx.LISTEN:
       return o.intl.formatToPlainString(o.t["/8czH4"], {
@@ -25,7 +25,7 @@ function l(e, t) {
         name: e
       });
     case a.mFx.JOIN:
-      return o.intl.string(o.t.pkq6Vq);
+      return n ? true : o.intl.string(o.t.pkq6Vq);
     case a.mFx.STREAM_REQUEST:
       return o.intl.string(s.default.DKHhec);
     case a.mFx.JOIN_REQUEST:

@@ -124,9 +124,9 @@ function Y() {
     })
   }
 }
-
-function W() {
+async function W() {
   if (!Chunk509140.Z.isOverlayEnabled) return void Y();
+  await ee();
   let e = new Set(Chunk594190.ZP.getRunningGames().filter(e => l.ZP.getOverlayEnabledForGame(e)).map(e => e.pid));
   for (let t of new Set([...R].filter(t => !e.has(t)))) H(exports);
   for (let e of R) V(module)
@@ -190,10 +190,10 @@ function $(e) {
   }
 }
 async function ee() {
-  await (0, Chunk932404.Nk)(), await (0, Chunk886189.H)()
+  Chunk509140.Z.isModuleLoaded || Chunk509140.Z.isModuleLoading || await (0, Chunk932404.Nk)(), w = await (0, Chunk886189.H)()
 }
 async function et(e) {
-  e.overlayMethod === f.gl.OutOfProcess || e.overlayMethod === f.gl.OutOfProcessLimitedInteraction ? (null == w && await ee(), V(e.pid, e.overlayMethod)) : H(e.pid), ey.emitChange()
+  e.overlayMethod === f.gl.OutOfProcess || e.overlayMethod === f.gl.OutOfProcessLimitedInteraction ? (await ee(), V(e.pid, e.overlayMethod)) : H(e.pid), ey.emitChange()
 }
 
 function en() {
