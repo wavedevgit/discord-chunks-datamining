@@ -134,8 +134,8 @@ function ed(e) {
       } = n.getState();
       !i && (setTimeout(() => {
         if ((0, h.kK)(t.current, HTMLTextAreaElement)) {
-          var e, n;
-          null == (e = t.current) || e.setSelectionRange(l.length, l.length), null == (n = t.current) || n.focus()
+          var e;
+          null == (e = t.current) || e.focus()
         }
       }, 0), (o && l.length > 0 || s.textValue.trim().length > 0 && s.textValue.trim() !== r || H.Z.getUploads(e.id, L.d.FirstThreadMessage).length > 0) && a())
     }, [n, e.id, r, t])
