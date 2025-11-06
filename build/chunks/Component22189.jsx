@@ -250,9 +250,7 @@ let ey = () => {
       name: "serverBoosts",
       title: Chunk388032.intl.string(Chunk388032.t["NyDu/6"]),
       subtitle: Chunk388032.intl.string(Chunk388032.t["4pEwXL"]),
-      description: eA ? Chunk388032.intl.format(Chunk388032.t.uPiIBe, {
-        link: "https://discord.com"
-      }) : Chunk388032.intl.string(Chunk388032.t.jsyNHm),
+      description: eA ? "" : Chunk388032.intl.string(Chunk388032.t.jsyNHm),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
       onCtaClick: eA ? true : eD,
       perkImage: Chunk46245,

@@ -336,7 +336,7 @@ function D() {
 }
 
 function x(e) {
-  if (null != e.last_used) return (0, r.jsx)(l.Text, {
+  if (null !== e.last_used) return (0, r.jsx)(l.Text, {
     variant: "text-sm/normal",
     children: T.intl.format(T.t["7JgxF5"], {
       lastUsed: (0, u.p)(e.last_used)

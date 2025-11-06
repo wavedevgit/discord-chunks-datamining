@@ -43,22 +43,22 @@ class l extends Chunk81825.Z {
     })
   }
   get isThirdPartyOutbound() {
-    return this.promotionType === Chunk397047.$.THIRD_PARTY_OUTBOUND
+    return this.promotionType === Chunk397047.$k.THIRD_PARTY_OUTBOUND
   }
   get isBogo() {
-    return this.promotionType === Chunk397047.$.BOGO
+    return this.promotionType === Chunk397047.$k.BOGO
   }
   get isMarketingMoment() {
-    return this.promotionType === Chunk397047.$.MARKETING_MOMENT
+    return this.promotionType === Chunk397047.$k.MARKETING_MOMENT
   }
   hasFlag(e) {
     return (0, a.yE)(this.flags, e)
   }
   isCountryRestricted(e) {
     switch (this.promotionType) {
-      case i.$.THIRD_PARTY_INBOUND:
+      case i.$k.THIRD_PARTY_INBOUND:
         return this.inboundRestrictedCountries.includes(e);
-      case i.$.THIRD_PARTY_OUTBOUND:
+      case i.$k.THIRD_PARTY_OUTBOUND:
         return this.outboundRestrictedCountries.includes(e);
       default:
         returnfalse
