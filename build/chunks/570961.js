@@ -83,8 +83,8 @@ function E(e, t) {
   }
 }
 async function S(e, t) {
+  if (!u.Z.hasChanges()) return;
   let n = u.Z.getChangedPrompts();
-  if (0 === n.length) return;
   null != t && t.ignoreDefaultPrompt && 1 === n.length && (0, g.RF)(n[0]) && (n = []);
   let l = u.Z.editedOnboardingPrompts.map(t => {
       if (!n.some(e => e.id === t.id)) return t;
