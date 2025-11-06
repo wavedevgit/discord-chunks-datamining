@@ -1,7 +1,7 @@
 /** Chunk was on 26494 **/
-/** chunk id: 562715, original params: e,n,t (module,exports,require) **/
+/** chunk id: 562715, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,27 +9,63 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk726542 = require("./726542.js"),
+  Chunk367907 = require("./367907.js"),
   Chunk298692 = require("./298692.js"),
+  Chunk626135 = require("./626135.js"),
   Chunk826380 = require("./826380.jsx"),
+  Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
-  var n, t;
+function f(e) {
+  var t, n;
   let {
-    connection: m
-  } = e, h = (0, r.ZP)(), x = null != (t = null != m.provider_id ? null == (n = s.Z.get(m.provider_id)) ? true : n.name : null) ? t : d.intl.string(d.t.NzCoRx), {
-    hasConnection: f,
-    canConnect: g,
-    startConnection: p,
-    loading: v
-  } = (0, u.B)(m.provider_id), j = i.useCallback(async () => {
-    await p("Guild Onboarding")
-  }, [p]), C = i.useMemo(() => {
-    if (null != m.provider_id) {
-      let e = s.Z.get(m.provider_id),
-        n = (null == e ? true : e.icon) != null ? (0, a.wj)(h) ? e.icon.darkPNG : e.icon.lightPNG : null;
-      if (null != n) return (0, l.jsx)("img", {
-        src: n,
+    connection: f,
+    guildId: g,
+    location: j
+  } = e, v = (0, a.ZP)(), x = null != (n = null != f.provider_id ? null == (t = c.Z.get(f.provider_id)) ? true : t.name : null) ? n : h.intl.string(h.t.NzCoRx), {
+    hasConnection: y,
+    canConnect: b,
+    startConnection: C,
+    loading: O
+  } = (0, u.B)(f.provider_id), w = r.useCallback(async () => {
+    var e, t, n;
+    d.default.track(p.rMx.GUILD_ONBOARDING_CONNECTION_CLICKED, (t = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          l = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), l.forEach(function(t) {
+          var l;
+          l = n[t], t in e ? Object.defineProperty(e, t, {
+            value: l,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = l
+        })
+      }
+      return e
+    }({}, (0, s.hH)(g)), n = n = {
+      connection_type: "provider",
+      provider_id: null != (e = f.provider_id) ? e : true,
+      location: j
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var l = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, l)
+      }
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+    }), t)), await C(j)
+  }, [C, g, f.provider_id, j]), Z = r.useMemo(() => {
+    if (null != f.provider_id) {
+      let e = c.Z.get(f.provider_id),
+        t = (null == e ? true : e.icon) != null ? (0, i.wj)(v) ? e.icon.darkPNG : e.icon.lightPNG : null;
+      if (null != t) return (0, l.jsx)("img", {
+        src: t,
         alt: x,
         width: 40,
         height: 40
@@ -41,14 +77,14 @@ function m(e) {
       height: 40,
       color: "currentColor"
     })
-  }, [m.provider_id, h, x]);
-  return (0, l.jsx)(c.Z, {
+  }, [f.provider_id, v, x]);
+  return (0, l.jsx)(m.Z, {
     displayName: x,
-    description: m.description,
-    icon: C,
-    isLoading: v,
-    isConnected: f,
-    canConnect: g,
-    onConnect: j
+    description: f.description,
+    icon: Z,
+    isLoading: O,
+    isConnected: y,
+    canConnect: b,
+    onConnect: w
   })
 }

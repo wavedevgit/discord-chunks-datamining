@@ -1,31 +1,31 @@
 /** Chunk was on 26494 **/
-/** chunk id: 788956, original params: e,n,t (module,exports,require) **/
+/** chunk id: 788956, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => r
+  d: () => a
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk457330 = require("./457330.js"),
   Chunk553795 = require("./553795.js");
 
-function r(e) {
-  let n = (0, i.e7)([o.Z], () => null != e ? o.Z.getAccount(null, e) : null),
-    t = (0, i.e7)([o.Z], () => o.Z.isFetching()),
-    r = null != n && !n.revoked;
+function a(e) {
+  let t = (0, r.e7)([o.Z], () => null != e ? o.Z.getAccount(null, e) : null),
+    n = (0, r.e7)([o.Z], () => o.Z.isFetching()),
+    a = null != t && !t.revoked;
   return {
-    loading: t,
-    hasConnection: r,
+    loading: n,
+    hasConnection: a,
     canConnect: null != e,
-    startConnection: l.useCallback(async n => {
+    startConnection: l.useCallback(async t => {
       if (null == e) return {
         success: false
       };
       try {
-        var t;
-        let l = await a.Z.authorize(e, {
-          location: null != n ? n : "Account Linking"
+        var n;
+        let l = await i.Z.authorize(e, {
+          location: null != t ? t : "Account Linking"
         });
-        if (l.ok && (null == (t = l.body) ? true : t.url) != null) return {
+        if (l.ok && (null == (n = l.body) ? true : n.url) != null) return {
           success: true,
           url: l.body.url
         };
@@ -38,6 +38,6 @@ function r(e) {
         }
       }
     }, [e]),
-    account: n
+    account: t
   }
 }

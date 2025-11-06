@@ -88,9 +88,9 @@ function H(e) {
   }), G = (0, u.Z)(null != (n = null == P ? true : P.id) ? n : L.lds), {
     authorizedAppToken: W,
     authorizedAppsFetchState: z
-  } = (0, l.cj)([C.Z], () => ({
-    authorizedAppToken: C.Z.getNewestTokenForApplication(null == G ? true : G.id),
-    authorizedAppsFetchState: C.Z.getFetchState()
+  } = (0, l.cj)([C.default], () => ({
+    authorizedAppToken: C.default.getNewestTokenForApplication(null == G ? true : G.id),
+    authorizedAppsFetchState: C.default.getFetchState()
   })), q = c.Z.useExperiment({
     location: "EmptyMessages"
   }).enabledDesktop;
@@ -99,7 +99,7 @@ function H(e) {
         withMutualGuilds: true
       }))
     }, [D, v, p, P]), i.useEffect(() => {
-      (null == P ? true : P.bot) && z === C.M.NOT_FETCHED && s.Z.fetch()
+      (null == P ? true : P.bot) && z === C.FetchState.NOT_FETCHED && s.Z.fetch()
     }, [null == P ? true : P.bot, z]), p.isSystemDM()) return H ? (0, r.jsx)(w.Z, {
     channel: p
   }) : (0, r.jsx)(N.Z, {

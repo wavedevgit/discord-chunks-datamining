@@ -34,6 +34,7 @@ function b(e) {
     startAuthorization: N
   } = (0, o.F)(C), O = (0, m.ZP)(_), P = null == O || null == (t = O.widgets) ? true : t.some(e => e instanceof d.q && e.applicationId === (null == C ? true : C.id));
   return null != y && null != y.edit_profile_upsell_image && null != C && S ? (0, a.jsx)(c.ZP, {
+    bypassAutoDismiss: true,
     contentTypes: E ? P ? [] : [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : T ? [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
@@ -54,6 +55,9 @@ function b(e) {
           applicationName: C.name
         }),
         body: r ? f.intl.string(f.t["63Kso0"]) : f.intl.string(f.t.HwXoeC),
+        onRequestClose: () => {
+          i(x.L.USER_DISMISS)
+        },
         actions: [r ? {
           text: f.intl.string(f.t.VSLDly),
           onClick: () => {

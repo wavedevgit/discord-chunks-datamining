@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  t = require.n(Chunk120356),
+  n = require.n(Chunk120356),
   Chunk210753 = require("./210753.js"),
   Chunk817053 = require("./817053.jsx"),
   Chunk932366 = require("./932366.js"),
@@ -20,12 +20,12 @@ function d(e) {
     coverImageUrl: a
   } = (0, r.$)(l);
   return null != a && "" !== a ? (0, i.jsx)("div", {
-    className: t()(c.coverContainer, o.placeholderCover),
+    className: n()(c.coverContainer, o.placeholderCover),
     children: (0, i.jsx)(s.o, {
       imageSrc: a
     })
   }) : (0, i.jsx)("div", {
-    className: t()(c.loadingCover, o.placeholderCover)
+    className: n()(c.loadingCover, o.placeholderCover)
   })
 }
 
@@ -33,13 +33,13 @@ function u(e) {
   let {
     applicationId: l,
     size: a = "default",
-    className: n
+    className: t
   } = e;
   return (0, i.jsxs)("div", {
-    className: t()(o.container, o.placeholderDetailsCard, {
+    className: n()(o.container, o.placeholderDetailsCard, {
       [o.sizeSmall]: "small" === a,
       [o.sizeMedium]: "medium" === a
-    }, n),
+    }, t),
     "aria-hidden": true,
     children: [null != l ? (0, i.jsx)(d, {
       applicationId: l
@@ -60,13 +60,13 @@ function p(e) {
   let {
     applicationIds: l,
     size: a = "default",
-    className: n
+    className: t
   } = e, r = "small" === a ? l.slice(0, 3) : l.slice(0, 4);
   return (0, i.jsx)("div", {
-    className: t()(o.container, o.placeholderCoverGrid, {
+    className: n()(o.container, o.placeholderCoverGrid, {
       [o.sizeSmall]: "small" === a,
       [o.sizeMedium]: "medium" === a
-    }, n),
+    }, t),
     "aria-hidden": true,
     children: r.map((e, l) => (0, i.jsx)(d, {
       applicationId: e

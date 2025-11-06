@@ -20,7 +20,7 @@ function f(t) {
     application: e,
     primaryCTAButtonProps: a,
     transitionState: s,
-    onClose: l,
+    onClose: r,
     hasAlreadyLinked: f,
     canStartAuthorization: p,
     bodyText: g,
@@ -28,14 +28,14 @@ function f(t) {
   } = t;
   return (0, i.jsxs)(o.IX, {
     transitionState: s,
-    onClose: l,
+    onClose: r,
     children: [(0, i.jsx)(c.y, {
       sku: n,
       title: m
     }), (0, i.jsxs)(o.fef, {
       children: [(0, i.jsxs)("div", {
         className: d.modalBody,
-        children: [(0, i.jsx)(r.Text, {
+        children: [(0, i.jsx)(l.Text, {
           variant: "text-md/normal",
           className: d.modalBodyText,
           children: g
@@ -43,14 +43,14 @@ function f(t) {
           isConnected: f,
           application: e
         })]
-      }), !p && !f && (0, i.jsx)(r.Text, {
+      }), !p && !f && (0, i.jsx)(l.Text, {
         variant: "text-md/normal",
         className: d.cannotLinkAccountWarning,
         color: "text-feedback-warning",
         children: u.intl.string(u.t.GDL8wb)
       }), !f && (0, i.jsx)("div", {
         className: d.expirationWarningContainer,
-        children: (0, i.jsx)(r.Text, {
+        children: (0, i.jsx)(l.Text, {
           variant: "text-xs/normal",
           color: "text-secondary",
           children: u.intl.formatToPlainString(u.t.TTj7ME, {
@@ -81,14 +81,14 @@ function x(t) {
             [d.statusIconConnected]: n,
             [d.statusIconDisconnected]: !n
           }),
-          children: n ? (0, i.jsx)(r.dz2, {
+          children: n ? (0, i.jsx)(l.dz2, {
             size: "sm",
             color: "currentColor"
-          }) : (0, i.jsx)(r.Dio, {
+          }) : (0, i.jsx)(l.Dio, {
             size: "sm",
             color: "currentColor"
           })
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
           className: d.statusText,
           color: "text-secondary",
@@ -96,7 +96,7 @@ function x(t) {
         })]
       }), (0, i.jsx)("div", {
         className: d.statusRight,
-        children: (0, i.jsx)(l.h, {
+        children: (0, i.jsx)(r.h, {
           application: e,
           iconSize: 20
         })

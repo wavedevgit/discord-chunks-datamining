@@ -385,11 +385,11 @@ function ec(e) {
           }), (null == ex ? true : ex.profileEffect) != null && !eD.current && (0, a.jsx)(j.Z, {
             skuId: ex.profileEffect.skuId,
             isHovering: e_
-          }), !eY && eX ? (0, a.jsx)(Y.Z, {
-            targetElementRef: eZ,
-            onClose: n
-          }) : null]
-        }), (0, a.jsx)(b.Z, {})]
+          })]
+        }), !eY && eX ? (0, a.jsx)(Y.Z, {
+          targetElementRef: eZ,
+          onClose: n
+        }) : null, (0, a.jsx)(b.Z, {})]
       })
     })
   })

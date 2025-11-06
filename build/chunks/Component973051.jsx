@@ -53,62 +53,62 @@ function x(e) {
   let {
     guild: n,
     prompts: x,
-    completeOnboarding: v,
-    setCurrentStep: _,
-    disableTracking: j,
-    previousPromptIndex: b
-  } = e, O = i.useRef(null), N = (0, l.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [y, P] = i.useState(null != (t = null == N ? true : N.response) && t), C = (0, l.e7)([c.Z], () => c.Z.get(n.id)), E = i.useRef(null), Z = i.useRef(null), D = i.useCallback(async () => {
-    if (null != C && null != N) {
+    completeOnboarding: _,
+    setCurrentStep: b,
+    disableTracking: v,
+    previousPromptIndex: O
+  } = e, j = i.useRef(null), y = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [N, P] = i.useState(null != (t = null == y ? true : y.response) && t), C = (0, o.e7)([c.Z], () => c.Z.get(n.id)), E = i.useRef(null), D = i.useRef(null), I = i.useCallback(async () => {
+    if (null != C && null != y) {
       try {
         await a.ZP.submitVerificationForm(n.id, h(g({}, C), {
-          formFields: [h(g({}, N), {
-            response: y
+          formFields: [h(g({}, y), {
+            response: N
           })]
         }))
       } catch (e) {}
-      v()
+      _()
     }
-  }, [n.id, C, N, y, v]);
+  }, [n.id, C, y, N, _]);
 
-  function I(e) {
+  function Z(e) {
     let [t] = e;
     t.isIntersecting && P(true)
   }
   return (i.useEffect(() => {
-    let e = new IntersectionObserver(I, {
+    let e = new IntersectionObserver(Z, {
         root: E.current,
         rootMargin: "0px",
         threshold: 0
       }),
-      t = Z.current;
+      t = D.current;
     return null != t && null != t.lastElementChild && e.observe(t.lastElementChild), () => {
       null != t && null != t.lastElementChild && e.unobserve(t.lastElementChild)
     }
-  }, [Z, E]), null == N) ? null : (0, r.jsx)("div", {
+  }, [D, E]), null == y) ? null : (0, r.jsx)("div", {
     className: f.prompt,
     children: (0, r.jsxs)("div", {
       className: f.promptContent,
       ref: E,
-      children: [(0, r.jsxs)(o.h21, {
+      children: [(0, r.jsxs)(l.h21, {
         className: f.scrollerContent,
-        ref: O,
-        children: [(0, r.jsx)(o.Text, {
+        ref: j,
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
-          children: p.intl.string(p.t["b1JC+l"])
-        }), (0, r.jsx)(o.Heading, {
+          children: m.intl.string(m.t["b1JC+l"])
+        }), (0, r.jsx)(l.Heading, {
           variant: "heading-xl/semibold",
-          children: p.intl.string(p.t.prJqwT)
+          children: m.intl.string(m.t.prJqwT)
         }), (0, r.jsx)("div", {
           className: f.termsFieldBody,
-          ref: Z,
-          children: N.values.map((e, t) => (0, r.jsxs)("div", {
+          ref: D,
+          children: y.values.map((e, t) => (0, r.jsxs)("div", {
             className: f.termsRow,
-            children: [(0, r.jsx)(o.Text, {
+            children: [(0, r.jsx)(l.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
               children: "".concat(t + 1, ".")
-            }), (0, r.jsx)(o.Text, {
+            }), (0, r.jsx)(l.Text, {
               variant: "text-sm/normal",
               className: f.termsRowContent,
               children: d.Z.parseGuildVerificationFormRule(e, true, {
@@ -123,39 +123,39 @@ function x(e) {
         className: f.navButtons,
         children: [(0, r.jsx)("div", {
           className: f.leftButtons,
-          children: false !== b && "cover" !== b && (0, r.jsx)(o.Button, {
+          children: false !== O && "cover" !== O && (0, r.jsx)(l.Button, {
             variant: "secondary",
             size: "md",
-            text: p.intl.string(p.t["13/7kX"]),
+            text: m.intl.string(m.t["13/7kX"]),
             onClick: () => {
-              !j && (u.default.track(m.rMx.GUILD_ONBOARDING_STEP_COMPLETED, h(g({}, (0, s.hH)(n.id)), {
+              !v && (u.default.track(p.rMx.GUILD_ONBOARDING_STEP_COMPLETED, h(g({}, (0, s.hH)(n.id)), {
                 step: false,
                 skipped: false,
                 back: true,
                 options_selected: 0,
                 in_onboarding: true,
                 is_final_step: false
-              })), "number" == typeof b && b >= 0 && u.default.track(m.rMx.GUILD_ONBOARDING_STEP_VIEWED, h(g({}, (0, s.hH)(n.id)), {
-                step: b,
-                required: x[b].required
-              }))), _(b)
+              })), "number" == typeof O && O >= 0 && u.default.track(p.rMx.GUILD_ONBOARDING_STEP_VIEWED, h(g({}, (0, s.hH)(n.id)), {
+                step: O,
+                required: x[O].required
+              }))), b(O)
             },
-            icon: o.j9r,
+            icon: l.j9r,
             iconPosition: "start"
           })
         }), (0, r.jsxs)("div", {
           className: f.rightButtons,
-          children: [(0, r.jsx)(o.Text, {
+          children: [(0, r.jsx)(l.Text, {
             className: f.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: y ? p.intl.string(p.t.arAe3I) : p.intl.string(p.t.D0CVAc)
-          }), (0, r.jsx)(o.Button, {
+            children: N ? m.intl.string(m.t.arAe3I) : m.intl.string(m.t.D0CVAc)
+          }), (0, r.jsx)(l.Button, {
             variant: "primary",
             size: "md",
-            text: "".concat(p.intl.string(p.t["8SuVoE"]), " \uD83C\uDF89"),
-            onClick: D,
-            disabled: !y
+            text: "".concat(m.intl.string(m.t["8SuVoE"]), " \uD83C\uDF89"),
+            onClick: I,
+            disabled: !N
           })]
         })]
       })]

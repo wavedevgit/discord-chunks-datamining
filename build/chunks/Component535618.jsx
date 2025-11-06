@@ -37,23 +37,23 @@ function R(t) {
     sku: e,
     onClose: s,
     giftCode: o,
-    channelContext: r,
+    channelContext: l,
     customGiftMessage: u
   } = t, [d, x] = a.useState({
     state: "LINK"
-  }), [p, m] = a.useState(false), C = (0, l.e7)([g.Z], () => g.Z.getApplication(e.applicationId));
+  }), [p, m] = a.useState(false), h = (0, r.e7)([g.Z], () => g.Z.getApplication(e.applicationId));
   a.useEffect(() => {
     o.redeemed && "LINK" === d.state && x({
       state: "ERROR",
       error: new c.yZ(y.intl.string(y.t.Iw2TUW), N.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED)
     })
   }, [o, d.state]);
-  let h = a.useCallback(async () => {
+  let C = a.useCallback(async () => {
     try {
       m(true), await f.Z.redeemGiftCode({
         code: o.code,
         options: {
-          channelId: r
+          channelId: l
         }
       }), x({
         state: "SUCCESS"
@@ -66,23 +66,23 @@ function R(t) {
     } finally {
       m(false)
     }
-  }, [o, x, r]);
-  if (null == C) return null;
+  }, [o, x, l]);
+  if (null == h) return null;
   switch (d.state) {
     case "LINK":
       return (0, i.jsx)(L, {
         sku: e,
-        application: C,
+        application: h,
         transitionState: n,
         onClose: s,
         successStateButtonText: y.intl.string(y.t.go1e4x),
-        onSuccessButtonClick: h,
+        onSuccessButtonClick: C,
         isSuccessButtonLoading: p
       });
     case "SUCCESS":
-      return (0, i.jsx)(Z, {
+      return (0, i.jsx)(G, {
         transitionState: n,
-        application: C,
+        application: h,
         sku: e,
         giftCode: o,
         customGiftMessage: u,
@@ -103,16 +103,16 @@ let k = t => {
     transitionState: n,
     onClose: e,
     error: a
-  } = t, s = m.default.getCurrentUser(), o = (0, h.QW)(a, s), l = (0, x.ZP)(), c = (0, u.wj)(l);
-  return (0, i.jsxs)(r.IX, {
+  } = t, s = m.default.getCurrentUser(), o = (0, C.QW)(a, s), r = (0, x.ZP)(), c = (0, u.wj)(r);
+  return (0, i.jsxs)(l.IX, {
     transitionState: n,
     onClose: e,
-    children: [(0, i.jsx)(r.xBx, {
+    children: [(0, i.jsx)(l.xBx, {
       graphic: {
         type: "image",
         src: c ? _ : b
       }
-    }), (0, i.jsx)(r.fef, {
+    }), (0, i.jsx)(l.fef, {
       children: o
     })]
   })
@@ -125,7 +125,7 @@ function L(t) {
     transitionState: a,
     onClose: s,
     successStateButtonText: o,
-    onSuccessButtonClick: l,
+    onSuccessButtonClick: r,
     isSuccessButtonLoading: c
   } = t, {
     hasAlreadyLinked: u,
@@ -133,10 +133,10 @@ function L(t) {
     startAuthorization: x,
     fetched: g
   } = (0, p.F)(e);
-  if (!g) return (0, i.jsx)(r.IX, {
+  if (!g) return (0, i.jsx)(l.IX, {
     transitionState: a,
     onClose: s,
-    children: (0, i.jsx)(r.fef, {
+    children: (0, i.jsx)(l.fef, {
       children: (0, i.jsx)("div", {
         className: A.loadingContainer,
         children: (0, i.jsx)(d.$jN, {})
@@ -146,16 +146,16 @@ function L(t) {
   let m = u ? {
     variant: "expressive",
     text: o,
-    onClick: l,
+    onClick: r,
     loading: c
   } : {
     variant: "primary",
     text: y.intl.string(y.t["VDAhr+"]),
     onClick: x,
-    icon: r.uIJ,
+    icon: l.uIJ,
     disabled: !f
   };
-  return (0, i.jsx)(v.M, {
+  return (0, i.jsx)(E.M, {
     sku: n,
     application: e,
     transitionState: a,
@@ -170,7 +170,7 @@ function L(t) {
   })
 }
 
-function Z(t) {
+function G(t) {
   let {
     transitionState: n,
     onClose: e,
@@ -178,37 +178,37 @@ function Z(t) {
     application: s,
     giftCode: c,
     customGiftMessage: u
-  } = t, f = (0, E.a)(s), x = (0, j.I)(s), p = (0, l.e7)([m.default], () => m.default.getUser(c.userId)), g = T.ZP.getName(p);
-  if (null == f) return (0, i.jsx)(r.IX, {
+  } = t, f = (0, S.a)(s), x = (0, j.I)(s), p = (0, r.e7)([m.default], () => m.default.getUser(c.userId)), g = T.ZP.getName(p);
+  if (null == f) return (0, i.jsx)(l.IX, {
     transitionState: n,
     onClose: e,
-    children: (0, i.jsx)(r.fef, {
+    children: (0, i.jsx)(l.fef, {
       children: (0, i.jsx)(d.$jN, {})
     })
   });
-  let h = f && !x ? {
+  let C = f && !x ? {
       variant: "primary",
       text: y.intl.string(y.t["s+J8Dl"]),
       onClick: () => {
-        C.Z.launchGame(s.id)
+        h.Z.launchGame(s.id)
       },
-      icon: r.rgF
+      icon: l.rgF
     } : {
       variant: "primary",
       text: y.intl.string(y.t.cpT0Cq),
       onClick: e
     },
     I = null != u && "" !== u;
-  return (0, i.jsxs)(r.IX, {
+  return (0, i.jsxs)(l.IX, {
     transitionState: n,
     onClose: e,
-    children: [(0, i.jsx)(S.y, {
+    children: [(0, i.jsx)(v.y, {
       sku: a,
       title: y.intl.formatToPlainString(y.t["6yrIzU"], {
         sender: g
       })
-    }), (0, i.jsxs)(r.fef, {
-      children: [I && (0, i.jsx)(r.xvT, {
+    }), (0, i.jsxs)(l.fef, {
+      children: [I && (0, i.jsx)(l.xvT, {
         variant: "text-md/normal",
         color: "text-secondary",
         className: A.customGiftMessage,
@@ -217,7 +217,7 @@ function Z(t) {
         className: o()({
           [A.giftSentToGameNoticeContainerPadding]: I
         }),
-        children: (0, i.jsx)(r.M14, {
+        children: (0, i.jsx)(l.M14, {
           type: "success",
           children: y.intl.formatToPlainString(y.t.W2znvX, {
             skuName: a.name,
@@ -225,8 +225,8 @@ function Z(t) {
           })
         })
       })]
-    }), (0, i.jsx)(r.Go$, {
-      actions: [h],
+    }), (0, i.jsx)(l.Go$, {
+      actions: [C],
       actionsFullWidth: true
     })]
   })

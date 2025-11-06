@@ -19,12 +19,12 @@ function d(t) {
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, i = (0, c.t)(t), u = (0, s.t)(null == i ? true : i.id, "AUTHORIZE_REQUEST"), d = e.includes("rpc") && u, f = e.includes("web") && (null == i ? true : i.connectionEntrypointUrl) != null, x = d || f, {
     token: p,
     fetched: g
-  } = (0, l.o)(null != (n = null == i ? true : i.parentId) ? n : null == i ? true : i.id);
+  } = (0, r.o)(null != (n = null == i ? true : i.parentId) ? n : null == i ? true : i.id);
   return {
     fetched: g,
     hasAlreadyLinked: g && null != p,
     canStartAuthorization: x,
-    startAuthorization: a.useCallback(() => null == i ? null : d ? (o.Z.dispatchToSubscriptions("AUTHORIZE_REQUEST", t => t.socket.application.id === i.id, {}), "rpc") : f ? ((0, r.q)({
+    startAuthorization: a.useCallback(() => null == i ? null : d ? (o.Z.dispatchToSubscriptions("AUTHORIZE_REQUEST", t => t.socket.application.id === i.id, {}), "rpc") : f ? ((0, l.q)({
       href: i.connectionEntrypointUrl
     }), "web") : null, [d, f, i]),
     connectionApp: i

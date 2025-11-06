@@ -1,5 +1,5 @@
 /** Chunk was on 26494 **/
-/** chunk id: 104265, original params: e,n,t (module,exports,require) **/
+/** chunk id: 104265, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
 }), require("./388685.js"), require("./953529.js");
@@ -21,37 +21,37 @@ var Chunk951288 = require("./951288.js"),
 
 function v(e) {
   let {
-    guildId: n,
-    option: t,
-    selected: a,
+    guildId: t,
+    option: n,
+    selected: i,
     onSelect: v,
-    hideMemberCount: j,
-    canBeNew: C
-  } = e, Z = (0, c.wj)((0, h.ZP)()), [y, w] = i.useState(false), N = y && !j, _ = i.useRef(null), {
-    reducedMotion: b
-  } = i.useContext(d.Sfi), k = (0, s.e7)([x.ZP], () => {
-    var e, n, l, i;
-    return (null == (e = t.emoji) ? true : e.id) != null && null != (i = null == (n = x.ZP.getCustomEmojiById(null == (l = t.emoji) ? true : l.id)) ? true : n.animated) && i
-  }), M = (0, f.Z)(n, 1e3), R = null == M || null == t.roleIds ? 0 : Math.max(...t.roleIds.map(e => M[e])), T = C && !a && t.isUnseen, A = (0, d.q_F)({
-    transform: a || b.enabled ? "scale(1)" : "scale(0.7)",
-    opacity: +!!a,
+    hideMemberCount: x,
+    canBeNew: y
+  } = e, b = (0, u.wj)((0, p.ZP)()), [C, O] = r.useState(false), w = C && !x, Z = r.useRef(null), {
+    reducedMotion: N
+  } = r.useContext(d.Sfi), _ = (0, c.e7)([h.ZP], () => {
+    var e, t, l, r;
+    return (null == (e = n.emoji) ? true : e.id) != null && null != (r = null == (t = h.ZP.getCustomEmojiById(null == (l = n.emoji) ? true : l.id)) ? true : t.animated) && r
+  }), P = (0, f.Z)(t, 1e3), k = null == P || null == n.roleIds ? 0 : Math.max(...n.roleIds.map(e => P[e])), I = y && !i && n.isUnseen, E = (0, d.q_F)({
+    transform: i || N.enabled ? "scale(1)" : "scale(0.7)",
+    opacity: +!!i,
     config: {
       duration: 150
     }
-  }, "animate-always"), E = (0, d.dQu)(u.Z.colors.BORDER_SUBTLE), I = (0, d.dQu)(u.Z.unsafe_rawColors.BRAND_500), P = (0, d.q_F)({
+  }, "animate-always"), D = (0, d.dQu)(s.Z.colors.BORDER_SUBTLE), M = (0, d.dQu)(s.Z.unsafe_rawColors.BRAND_500), R = (0, d.q_F)({
     from: {
-      color: I.spring()
+      color: M.spring()
     },
-    color: E.spring({
-      opacity: Z ? .5 : .25
+    color: D.spring({
+      opacity: b ? .5 : .25
     }),
     config: {
       duration: 300
     },
     delay: 500
-  }, "animate-always"), z = (0, d.Yzy)(N, {
+  }, "animate-always"), T = (0, d.Yzy)(w, {
     from: {
-      transform: b.enabled ? "translateX(0)" : "translateX(8px)",
+      transform: N.enabled ? "translateX(0)" : "translateX(8px)",
       opacity: 0
     },
     enter: {
@@ -65,70 +65,70 @@ function v(e) {
     config: {
       duration: 150
     }
-  }, "animate-always"), [B, S] = i.useState(false);
-  i.useEffect(() => {
-    if (N) return _.current = setTimeout(() => {
-      w(false), _.current = null
+  }, "animate-always"), [A, S] = r.useState(false);
+  r.useEffect(() => {
+    if (w) return Z.current = setTimeout(() => {
+      O(false), Z.current = null
     }, 3e3), () => {
-      null != _.current && clearTimeout(_.current)
+      null != Z.current && clearTimeout(Z.current)
     }
-  }, [N]);
-  let W = o()(p.optionButtonWrapper, {
-      [p.selected]: a,
-      [p.pressed]: B
+  }, [w]);
+  let B = o()(j.optionButtonWrapper, {
+      [j.selected]: i,
+      [j.pressed]: A
     }),
-    O = T ? {
-      borderColor: P.color
+    z = I ? {
+      borderColor: R.color
     } : {};
-  return (0, l.jsx)(r.animated.div, {
-    style: O,
-    className: W,
+  return (0, l.jsx)(a.animated.div, {
+    style: z,
+    className: B,
     children: (0, l.jsxs)(d.P3F, {
-      className: p.optionButton,
+      className: j.optionButton,
       onClick: () => {
-        w(!a), v(!a)
+        O(!i), v(!i)
       },
       onMouseDown: () => S(true),
       onMouseUp: () => S(false),
-      children: [null != t.emoji && (null != t.emoji.id || null != t.emoji.name) ? (0, l.jsx)(m.Z, {
-        animated: t.emoji.animated || k,
-        className: p.buttonEmoji,
-        emojiId: t.emoji.id,
-        emojiName: t.emoji.name
+      children: [null != n.emoji && (null != n.emoji.id || null != n.emoji.name) ? (0, l.jsx)(m.Z, {
+        animated: n.emoji.animated || _,
+        className: j.buttonEmoji,
+        emojiId: n.emoji.id,
+        emojiName: n.emoji.name
       }) : null, (0, l.jsxs)("div", {
-        className: p.buttonText,
+        className: j.buttonText,
         children: [(0, l.jsx)(d.Text, {
           variant: "text-md/medium",
           color: "header-primary",
-          children: t.title
-        }), t.description.length > 0 ? (0, l.jsx)(d.Text, {
+          children: n.title
+        }), n.description.length > 0 ? (0, l.jsx)(d.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: t.description
+          children: n.description
         }) : null]
-      }), (0, l.jsx)(r.animated.div, {
-        className: p.checkIcon,
-        style: A,
+      }), (0, l.jsx)(a.animated.div, {
+        className: j.checkIcon,
+        style: E,
         children: (0, l.jsx)(d.dz2, {
           size: "custom",
           width: 10,
           height: 10,
-          color: u.Z.unsafe_rawColors.WHITE_500.css
+          color: s.Z.unsafe_rawColors.WHITE_500.css
         })
-      }), z((e, n) => R > 0 && n && (0, l.jsx)(r.animated.div, {
-        className: p.memberCount,
+      }), T((e, t) => k > 0 && t && (0, l.jsx)(a.animated.div, {
+        className: j.memberCount,
         style: e,
         children: (0, l.jsx)(d.Text, {
           variant: "text-xs/normal",
           color: "always-white",
           children: g.intl.format(g.t.EgKsZA, {
-            memberCount: R
+            memberCount: k
           })
         })
-      })), T && (0, l.jsx)(d.IGR, {
-        color: u.Z.unsafe_rawColors.BRAND_260.css,
+      })), I && (0, l.jsx)(d.IGR, {
+        color: s.Z.unsafe_rawColors.BRAND_260.css,
         text: g.intl.string(g.t.y2b7CA),
-        className: p.newBadge
+        className: j.newBadge
       })]
     })
   })

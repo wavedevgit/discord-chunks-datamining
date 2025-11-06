@@ -18,7 +18,7 @@ let g = e => {
   let {
     application: t,
     reportId: n
-  } = e, [g, _] = i.useState(false), h = (0, l.e7)([u.Z], () => u.Z.getNewestTokenForApplication(t.id));
+  } = e, [g, _] = i.useState(false), h = (0, l.e7)([u.default], () => u.default.getNewestTokenForApplication(t.id));
   i.useEffect(() => {
     null != h && _(true)
   }, [h]);

@@ -2,7 +2,7 @@
 /** chunk id: 290511, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BN: () => j,
+  BN: () => M,
   FN: () => v,
   NE: () => d,
   NO: () => f,
@@ -12,7 +12,7 @@ require.d(exports, {
   Un: () => I,
   X: () => b,
   YW: () => _,
-  a4: () => M,
+  a4: () => L,
   ae: () => A,
   b3: () => g,
   cf: () => P,
@@ -23,9 +23,8 @@ require.d(exports, {
   l7: () => O,
   md: () => E,
   qm: () => p,
-  rZ: () => U,
-  t9: () => k,
-  vN: () => L,
+  rZ: () => k,
+  t9: () => j,
   yZ: () => C,
   yx: () => h,
   zz: () => T
@@ -183,14 +182,13 @@ function w(e) {
   return null == e || null == e.id && null == e.name
 }
 let D = new Set([Chunk981631.ABu.PLAYSTATION_STAGING, Chunk981631.ABu.CONTACTS, Chunk981631.ABu.DOMAIN, Chunk981631.ABu.TWITTER_LEGACY, Chunk981631.ABu.MASTODON, Chunk981631.ABu.INSTAGRAM, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.SKYPE]),
-  x = Object.values(Chunk981631.ABu).filter(e => !D.has(e)),
-  L = [];
+  x = Object.values(Chunk981631.ABu).filter(e => !D.has(e));
 
-function M(e) {
+function L(e) {
   return 0 === e.connection_type ? "app:".concat(e.application_id) : "provider:".concat(e.provider_id)
 }
 
-function j(e) {
+function M(e) {
   let [t, n] = e.split(":");
   return "app" === t && true !== n && "" !== n ? {
     type: 0,
@@ -201,18 +199,18 @@ function j(e) {
   } : null
 }
 
-function k(e) {
+function j(e) {
   let t = [];
   return 0 !== e.connection_type && 1 !== e.connection_type ? t.push("Invalid connection type") : (0 === e.connection_type ? ((0, a.Ew)(e.application_id) && t.push("Application ID is required for application connections"), (0, a.Ew)(e.provider_id) || t.push("Platform ID not allowed for application connections")) : 1 === e.connection_type && ((0, a.Ew)(e.provider_id) ? t.push("Platform ID is required for platform connections") : x.includes(e.provider_id) || t.push("Invalid platform ID"), (0, a.Ew)(e.application_id) || t.push("Application ID not allowed for platform connections")), null != e.description && e.description.length > m && t.push("Description must be ".concat(m, " characters or less"))), t
 }
 
-function U(e) {
+function k(e) {
   let t = [],
     n = new Set;
   for (let [r, i] of e.entries()) {
-    let e = k(i);
+    let e = j(i);
     t.push(...e.map(e => "Connection ".concat(r + 1, ": ").concat(e)));
-    let a = M(i);
+    let a = L(i);
     n.has(a) && t.push("Duplicate connection configuration"), n.add(a)
   }
   return t

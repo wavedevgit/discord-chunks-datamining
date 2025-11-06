@@ -72,7 +72,7 @@ let N = {
 function I(e) {
   let l, {
       widgetType: a,
-      onAddWidget: t,
+      onAddWidget: n,
       size: o = "default",
       loading: u = false,
       trackUserProfileEditAction: A
@@ -85,8 +85,8 @@ function I(e) {
     _ = "small" === o,
     {
       config: b
-    } = (0, x.G)(),
-    O = n.useMemo(() => {
+    } = (0, f.G)(),
+    S = t.useMemo(() => {
       switch (a) {
         case s.l.CURRENT_GAMES:
         case s.l.FAVORITE_GAMES:
@@ -105,31 +105,31 @@ function I(e) {
           })
       }
     }, [a, null == b ? true : b.application_id]),
-    R = n.useCallback(() => {
-      u || null == O || ((0, v.qH)(a, O), A({
+    O = t.useCallback(() => {
+      u || null == S || ((0, v.qH)(a, S), A({
         action: "WIDGET_ADDED",
         widgetEdited: a
-      }), (0, f.L$)(j.qb.WIDGET_ADDED), null == t || t())
-    }, [u, a, O, A, t]);
-  return (null != O && null != T && (l = T(O)), null == O) ? null : (0, i.jsxs)("div", {
+      }), (0, h.L$)(j.qb.WIDGET_ADDED), null == n || n())
+    }, [u, a, S, A, n]);
+  return (null != S && null != T && (l = T(S)), null == S) ? null : (0, i.jsxs)("div", {
     className: g.addButtonContainer,
     children: [(0, i.jsxs)(c.P3F, {
       className: r()(g.addButtonContent, _ && g.sizeSmall, u && g.loading),
-      onClick: R,
-      "aria-label": L(O),
+      onClick: O,
+      "aria-label": L(S),
       "aria-busy": u,
       children: [(() => {
-        if (null == O) return null;
-        let e = I(O);
+        if (null == S) return null;
+        let e = I(S);
         switch (e.variant) {
           case "details":
-            return (0, i.jsx)(h.i, {
+            return (0, i.jsx)(x.i, {
               className: g.placeholderPadding,
               applicationId: e.applicationId,
               size: o
             });
           case "grid":
-            return (0, i.jsx)(h.c, {
+            return (0, i.jsx)(x.c, {
               className: g.placeholderPadding,
               applicationIds: e.applicationIds,
               size: o
@@ -153,7 +153,7 @@ function I(e) {
           children: [(0, i.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "header-primary",
-            children: (0, v.mR)(O)
+            children: (0, v.mR)(S)
           }), null != l ? (0, i.jsx)("img", {
             src: l,
             alt: "",
@@ -164,8 +164,8 @@ function I(e) {
         })]
       })]
     }), (() => {
-      if (null == O) return null;
-      let e = I(O);
+      if (null == S) return null;
+      let e = I(S);
       return "application-widget" === e.variant ? (0, i.jsx)(E.T, {
         applicationId: e.applicationId,
         size: o

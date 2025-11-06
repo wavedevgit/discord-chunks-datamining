@@ -58,7 +58,7 @@ function S() {
       canDeauthorize: P,
       deauthorize: I
     } = function(e) {
-      let t = (0, s.e7)([b.Z], () => b.Z.getNewestTokenForApplication(e)),
+      let t = (0, s.e7)([b.default], () => b.default.getNewestTokenForApplication(e)),
         n = i.useCallback(() => {
           null != t && d.Z.delete(t.id)
         }, [t]);
