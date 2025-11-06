@@ -24,12 +24,12 @@ let d = {
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.XBrJT6),
     sound: "call_ringing"
   },
-  O = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
+  T = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV9),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel()),
     setValue: t => l.default.setNotifyMessagesInSelectedChannel(t)
   }),
-  T = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+  O = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOd"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["+B0XLE"]),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
@@ -43,5 +43,5 @@ let d = {
       count: e
     }),
     ContextProvider: Chunk299426.u,
-    buildLayout: () => [(0, Chunk407458.j)(d), O, (0, Chunk407458.j)(S), T]
+    buildLayout: () => [(0, Chunk407458.j)(d), T, (0, Chunk407458.j)(S), O]
   })

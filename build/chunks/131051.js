@@ -30,21 +30,21 @@ function c(t, e) {
       e = t
     }
   }
-  let O = (0, o.Z)(n, null != e ? e : "", d),
-    [T, I] = i.useState(O),
+  let T = (0, o.Z)(n, null != e ? e : "", d),
+    [O, I] = i.useState(T),
     g = function(t, e) {
       if (t.size !== e.size) returntrue;
       for (let n of t)
         if (!e.has(n)) returntrue;
       returnfalse
-    }(T, O);
+    }(O, T);
   return i.useEffect(() => {
-    g && I(O)
-  }, [g, O]), i.useMemo(() => {
+    g && I(T)
+  }, [g, T]), i.useMemo(() => {
     var t, e, i;
     let l = new s.Z;
     return {
-      node: null != (t = (0, a.Z)(n, T, l)) ? t : (e = function(t) {
+      node: null != (t = (0, a.Z)(n, O, l)) ? t : (e = function(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {},
             i = Object.keys(n);
@@ -75,5 +75,5 @@ function c(t, e) {
       }), e),
       directory: l
     }
-  }, [T, n])
+  }, [O, n])
 }

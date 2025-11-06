@@ -1,7 +1,7 @@
 /** Chunk was on 81014 **/
 /** chunk id: 36361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,9 +18,10 @@ var Chunk28682 = require("./28682.js"),
   Chunk142118 = require("./142118.jsx"),
   Chunk409322 = require("./409322.jsx"),
   Chunk670304 = require("./670304.jsx"),
-  Chunk357660 = require("./357660.jsx");
+  Chunk357660 = require("./357660.jsx"),
+  Chunk166292 = require("./166292.jsx");
 
-function v(e) {
+function g(e) {
   let {
     node: t
   } = e;
@@ -47,6 +48,10 @@ function v(e) {
       });
     case l.Jq.ACCORDION:
       return (0, r.jsx)(b.Z, {
+        node: t
+      });
+    case l.Jq.SPLIT:
+      return (0, r.jsx)(v.Z, {
         node: t
       });
     case l.Jq.TOGGLE:
@@ -80,15 +85,15 @@ function v(e) {
   }
 }
 
-function g(e) {
+function h(e) {
   let {
     node: t
   } = e;
-  return t.type === l.Jq.PANEL || t.type === l.Jq.PANE ? (0, r.jsx)(v, {
+  return t.type === l.Jq.PANEL || t.type === l.Jq.PANE ? (0, r.jsx)(g, {
     node: t
   }) : (0, r.jsx)(o.Z, {
     node: t,
-    children: (0, r.jsx)(v, {
+    children: (0, r.jsx)(g, {
       node: t
     })
   })

@@ -2,10 +2,11 @@
 /** chunk id: 509613, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   $l: () => O,
-  CB: () => S,
-  Em: () => A,
-  J9: () => f,
-  ON: () => N,
+  CB: () => T,
+  Em: () => f,
+  IC: () => d,
+  J9: () => N,
+  ON: () => b,
   Ql: () => function t(e, n) {
     if ("function" == typeof(null == e ? true : e.buildLayout)) {
       let n = e.buildLayout().map(e => t(e)),
@@ -33,11 +34,11 @@ require.d(exports, {
     }
     return e
   },
-  UO: () => _,
-  ax: () => I,
-  k4: () => d,
+  UO: () => A,
+  ax: () => g,
+  k4: () => S,
   m7: () => o,
-  qs: () => g,
+  qs: () => _,
   so: () => s,
   vB: () => a,
   wf: () => c,
@@ -105,10 +106,14 @@ function E(t, e) {
 }
 
 function d(t, e) {
-  return u(t, i.Jq.CATEGORY, e)
+  return u(t, i.Jq.SPLIT, e)
 }
 
 function S(t, e) {
+  return u(t, i.Jq.CATEGORY, e)
+}
+
+function T(t, e) {
   return u(t, i.Jq.ACCORDION, e)
 }
 
@@ -116,33 +121,33 @@ function O(t, e) {
   return u(t, i.Jq.LIST, e)
 }
 
-function T(t, e, n) {
+function I(t, e, n) {
   return r(l({}, n), {
     key: t,
     type: e
   })
 }
 
-function I(t, e) {
-  return T(t, i.Jq.BUTTON, e)
-}
-
 function g(t, e) {
-  return T(t, i.Jq.TOGGLE, e)
+  return I(t, i.Jq.BUTTON, e)
 }
 
 function _(t, e) {
-  return T(t, i.Jq.SLIDER, e)
+  return I(t, i.Jq.TOGGLE, e)
 }
 
 function A(t, e) {
-  return T(t, i.Jq.SELECT, e)
+  return I(t, i.Jq.SLIDER, e)
 }
 
 function f(t, e) {
-  return T(t, i.Jq.RADIO, e)
+  return I(t, i.Jq.SELECT, e)
 }
 
 function N(t, e) {
-  return T(t, i.Jq.CUSTOM, e)
+  return I(t, i.Jq.RADIO, e)
+}
+
+function b(t, e) {
+  return I(t, i.Jq.CUSTOM, e)
 }
