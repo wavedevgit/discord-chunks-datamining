@@ -20,6 +20,7 @@ let _ = {
   XSMALL: Chunk520816.xsmall,
   SMALL: Chunk520816.small,
   MEDIUM: Chunk520816.medium,
+  MEDIUM_LARGE: Chunk520816.mediumLarge,
   LARGE: Chunk520816.large,
   XLARGE: Chunk520816.xlarge
 };
@@ -34,6 +35,8 @@ function p(e) {
       return 30;
     case _.MEDIUM:
       return 40;
+    case _.MEDIUM_LARGE:
+      return 48;
     case _.LARGE:
       return 60;
     default:

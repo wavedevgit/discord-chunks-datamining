@@ -8,5 +8,6 @@ module.exports = {
   small: "small_b52e4f",
   xxsmall: "xxsmall_b52e4f",
   xsmall: "xsmall_b52e4f",
+  mediumLarge: "mediumLarge_b52e4f",
   xlarge: "xlarge_b52e4f"
 }

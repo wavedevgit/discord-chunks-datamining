@@ -2,81 +2,52 @@
 /** chunk id: 543388, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk913527 = require("./913527.js"),
-  a = require.n(Chunk913527),
-  Chunk28664 = require("./28664.jsx"),
+var Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk925329 = require("./925329.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk56651 = require("./56651.js");
 
-function d(e) {
+function c(e) {
   let {
     application: t,
-    timestamp: n
+    children: n
   } = e;
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.Z, {
-      size: l.A.LARGE,
+  return (0, r.jsx)(i.i_, {
+    asset: (0, r.jsx)(o.Z, {
+      size: o.A.MEDIUM_LARGE,
       game: t
-    }), (0, r.jsxs)("div", {
-      className: u.textContainer,
-      children: [(0, r.jsx)(s.Text, {
-        className: u.timestamp,
-        variant: "text-xs/medium",
-        color: "text-muted",
-        children: a()(n).format("LLLL")
-      }), (0, r.jsx)(s.Text, {
-        variant: "text-md/normal",
-        color: "interactive-active",
-        children: c.intl.format(c.t.J3s8JP, {
-          applicationName: t.name
-        })
-      })]
-    })]
-  })
-}
-
-function f(e) {
-  let {
-    application: t,
-    timestamp: n,
-    children: i
-  } = e;
-  return (0, r.jsx)(o.u, {
+    }),
+    body: s.intl.format(s.t.J3s8JP, {
+      applicationName: t.name
+    }),
     position: "top",
     asContainer: true,
-    "aria-label": c.intl.string(c.t["5nMcv1"]),
-    __unsupportedReactNodeAsText: (0, r.jsx)(d, {
-      application: t,
-      timestamp: n
-    }),
-    children: (0, r.jsx)(s.P3F, {
+    "aria-label": s.intl.string(s.t["5nMcv1"]),
+    children: (0, r.jsx)(a.P3F, {
       tag: "span",
-      children: i
+      children: n
     })
   })
 }
 
-function _(e) {
+function u(e) {
   let {
     application: t,
-    timestamp: n,
-    compact: i,
-    children: a
+    compact: n,
+    children: i
   } = e;
-  return (0, r.jsxs)(f, {
+  return (0, r.jsxs)(c, {
     application: t,
-    timestamp: n,
-    children: [i ? null : (0, r.jsx)(s.iWm, {
-      className: u.gameIcon,
+    children: [n ? null : (0, r.jsx)(a.iWm, {
+      className: l.gameIcon,
       size: "custom",
       width: 14,
       height: 14
-    }), a]
+    }), i]
   })
 }

@@ -96,7 +96,6 @@ let E = Chunk647438.memo(function(e) {
         })
       }) : (0, r.jsx)(c.Z, {
         application: v,
-        timestamp: T,
         compact: a,
         children: (0, r.jsx)(b, {
           timeFormatted: A,
