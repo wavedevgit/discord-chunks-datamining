@@ -70,7 +70,7 @@ function U(e) {
     variant: z = 0,
     guildId: q,
     onClick: X,
-    cardClassName: Q
+    className: Q
   } = e, J = i.useRef(null), $ = (0, f.e7)([b.Z], () => b.Z.get(K)), ee = (0, f.e7)([E.Z], () => (0, d.wjy)(E.Z.theme)), et = (0, f.e7)([p.Z], () => p.Z.useReducedMotion), {
     isHoveringOrFocusing: en
   } = (0, g.Z)(J), {
