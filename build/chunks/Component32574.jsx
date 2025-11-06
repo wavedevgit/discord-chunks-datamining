@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
 let m = function(e) {
   let {
     onSubmit: t
-  } = e, n = (0, i.e7)([c.default], () => c.default.getCurrentUser());
+  } = e, n = (0, r.e7)([c.default], () => c.default.getCurrentUser());
   return (0, a.jsx)(u.Q, {
     title: "Lorem ipsum dolor",
     actions: [{
@@ -33,15 +33,15 @@ let m = function(e) {
         })
       }
     }],
-    children: (0, a.jsxs)(r.Kqy, {
+    children: (0, a.jsxs)(i.Kqy, {
       gap: 8,
-      children: [(0, a.jsx)(r.Text, {
+      children: [(0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      }), (0, a.jsx)(r.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         children: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      }), (0, a.jsx)(r.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         children: "Ut enim ad minim veniam quis"
       })]

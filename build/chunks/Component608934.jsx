@@ -17,21 +17,21 @@ function l(e) {
     title: o
   } = e;
   return (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(i.Button, {
+    children: [(0, a.jsx)(r.Button, {
       variant: "primary",
       onClick: s,
       loading: t,
       disabled: t,
       text: t ? "Uploading…" : o
-    }), null != l && (0, a.jsx)(i.Text, {
+    }), null != l && (0, a.jsx)(r.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",
-      className: r.statusText,
+      className: i.statusText,
       children: l
-    }), n && (0, a.jsx)(i.Text, {
+    }), n && (0, a.jsx)(r.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-positive",
-      className: r.statusText,
+      className: i.statusText,
       children: "Logs uploaded successfully"
     })]
   })

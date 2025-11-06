@@ -89,13 +89,13 @@ let S = async () => {
 };
 
 function I(e) {
-  var t, n, r, o, m;
+  var t, n, i, o, m;
   let {
     offer: p,
     offerOptions: f,
     forceRefetch: b
-  } = e, [v, C] = i.useState(false), [S, E] = i.useState(false), [N, O] = i.useState(false), [P, I] = i.useState(false);
-  i.useEffect(() => {
+  } = e, [v, C] = r.useState(false), [S, E] = r.useState(false), [N, O] = r.useState(false), [P, I] = r.useState(false);
+  r.useEffect(() => {
     N && I(true);
     let e = setTimeout(() => {
       I(false)
@@ -158,7 +158,7 @@ function I(e) {
         b(), O(false)
       }
     };
-  i.useEffect(() => {
+  r.useEffect(() => {
     if (v) {
       let e = setTimeout(() => {
         C(false)
@@ -228,7 +228,7 @@ function I(e) {
         variant: "eyebrow",
         color: "always-white",
         children: ["Trial Length:", " ", (0, g.if)({
-          intervalType: null != (r = null == Z ? true : Z.interval) ? r : _.rV.MONTH,
+          intervalType: null != (i = null == Z ? true : Z.interval) ? i : _.rV.MONTH,
           intervalCount: null != (o = null == Z ? true : Z.interval_count) ? o : 1,
           capitalize: false
         })]
@@ -303,11 +303,11 @@ function I(e) {
 function w(e) {
   var t, n;
   let {
-    offer: r,
+    offer: i,
     offerOptions: o,
     forceRefetch: m
-  } = e, [p, g] = i.useState(false), [f, b] = i.useState(false), [v, _] = i.useState(false), [C, S] = i.useState(false);
-  i.useEffect(() => {
+  } = e, [p, g] = r.useState(false), [f, b] = r.useState(false), [v, _] = r.useState(false), [C, S] = r.useState(false);
+  r.useEffect(() => {
     v && S(true);
     let e = setTimeout(() => {
       S(false)
@@ -322,7 +322,7 @@ function w(e) {
     applied_at: O,
     discount_id: P,
     discount: I
-  } = r, w = null != (n = null == (t = o.find(e => {
+  } = i, w = null != (n = null == (t = o.find(e => {
     let {
       value: t
     } = e;
@@ -330,7 +330,7 @@ function w(e) {
   })) ? true : t.label) ? n : "Unknown", k = null != N, R = null != N && new Date(N).getTime() < Date.now(), A = async () => {
     _(true), k ? await Z({
       expiresAt: null
-    }) : await (0, u.ab)(true, r), m(), _(false)
+    }) : await (0, u.ab)(true, i), m(), _(false)
   }, Z = async e => {
     let {
       expiresAt: t
@@ -348,7 +348,7 @@ function w(e) {
       m(), _(false)
     }
   };
-  i.useEffect(() => {
+  r.useEffect(() => {
     if (p) {
       let e = setTimeout(() => {
         g(false)
@@ -471,7 +471,7 @@ function w(e) {
 }
 
 function k() {
-  let [e, t] = Chunk647438.useState([]), [n, r] = Chunk647438.useState([]), [l, s] = Chunk647438.useState(), [d, h] = Chunk647438.useState(), [x, g] = Chunk647438.useState([]), [_, T] = Chunk647438.useState([]), [k, R] = Chunk647438.useState(true), [A, Z] = Chunk647438.useState(10080), [D, L] = Chunk647438.useState([]), {
+  let [e, t] = Chunk647438.useState([]), [n, i] = Chunk647438.useState([]), [l, s] = Chunk647438.useState(), [d, h] = Chunk647438.useState(), [x, g] = Chunk647438.useState([]), [_, T] = Chunk647438.useState([]), [k, R] = Chunk647438.useState(true), [A, Z] = Chunk647438.useState(10080), [D, L] = Chunk647438.useState([]), {
     entitlements: M,
     deleteFractionalPremium: U,
     refreshEntitlementList: F
@@ -490,7 +490,7 @@ function k() {
           label: t,
           value: e.discount[t]
         }));
-      t(n), r(a), null == l && s(n[0].value), null == d && h(a[0].value)
+      t(n), i(a), null == l && s(n[0].value), null == d && h(a[0].value)
     })
   }, [module, require, l, Chunk105713, k]), Chunk647438.useEffect(() => {
     k && (R(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), N().then(e => {

@@ -21,7 +21,7 @@ function x(e) {
   let {
     markAsDismissed: t,
     onCTA: n
-  } = e, x = (0, i.e7)([o.default], () => o.default.getCurrentUser()), g = (0, c.M5)(x, u.PremiumTypes.TIER_2);
+  } = e, x = (0, r.e7)([o.default], () => o.default.getCurrentUser()), g = (0, c.M5)(x, u.PremiumTypes.TIER_2);
   return (0, a.jsx)("div", {
     className: p.popup,
     children: (0, a.jsxs)("div", {
@@ -59,8 +59,8 @@ function x(e) {
         },
         showGradient: true,
         subscriptionTier: u.Si.TIER_2,
-        size: r.zx.Sizes.LARGE,
-        color: r.zx.Colors.CUSTOM,
+        size: i.zx.Sizes.LARGE,
+        color: i.zx.Colors.CUSTOM,
         textOptions: {
           textOverride: m.intl.string(m.t.pj0XBN)
         },

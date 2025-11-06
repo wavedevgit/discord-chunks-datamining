@@ -326,19 +326,18 @@ let eO = {
             if (null == e) return;
             let {
               name: i
-            } = t.guild, l = {
+            } = t.guild, l = () => {
+              E.S.subscribeOnce(eh.CkL.LAYER_POP_COMPLETE, () => {
+                S.Z.deleteGuild(t.guild.id, i)
+              }), (0, s.xf)()
+            };
+            e.mfaEnabled ? (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, e_(ev({}, e), {
               header: ex.intl.formatToPlainString(ex.t.us7mC1, {
                 name: i
               }),
               confirmText: ex.intl.string(ex.t.l3hWP6),
               cancelText: ex.intl.string(ex.t["ETE/oC"]),
-              onConfirm: () => {
-                E.S.subscribeOnce(eh.CkL.LAYER_POP_COMPLETE, () => {
-                  S.Z.deleteGuild(t.guild.id, i)
-                }), (0, s.xf)()
-              }
-            };
-            e.mfaEnabled ? (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, e_(ev({}, e, l), {
+              onConfirm: l,
               children: (0, r.jsx)(a.Text, {
                 variant: "text-md/normal",
                 children: ex.intl.format(ex.t["Zuo+Vd"], {
@@ -348,14 +347,10 @@ let eO = {
             }))) : (0, a.ZDy)(async () => {
               let {
                 default: e
-              } = await n.e("95112").then(n.bind(n, 647748));
-              return t => (0, r.jsx)(e, e_(ev({}, t, l), {
-                validationText: i,
-                instructionText: ex.intl.string(ex.t.abprOC),
-                errorText: ex.intl.string(ex.t["c2/DS/"]),
-                children: ex.intl.format(ex.t["Zuo+Vd"], {
-                  name: i
-                })
+              } = await n.e("93197").then(n.bind(n, 848876));
+              return t => (0, r.jsx)(e, e_(ev({}, t), {
+                onConfirm: l,
+                guildName: i
               }))
             })
           }, label: ex.intl.string(ex.t.l3hWP6), ariaLabel: ex.intl.string(ex.t.l3hWP6), icon: (0, r.jsx)(a.XHJ, {

@@ -23,21 +23,31 @@ function u(e) {
     defaultExpanded: _ = false,
     onOpen: x,
     maxHeight: g
-  } = e, [f, N] = i.useState(_), h = true !== m, v = h ? m : f, E = i.useCallback(() => {
-    let e = !v;
-    h || N(e), null == p || p(e), e && null != x && x()
-  }, [v, h, p, x]), I = i.useMemo(() => {
-    if (null != g && v) return {
-      maxHeight: "number" == typeof g ? "".concat(g, "px") : g
-    }
-  }, [g, v]);
+  } = e, [f, N] = i.useState(_), h = i.useRef(null), [v, E] = i.useState(null), I = true !== m, j = I ? m : f;
+  i.useEffect(() => {
+    j && null != h.current && E(h.current.scrollHeight)
+  }, [j, u]);
+  let S = i.useCallback(() => {
+      let e = !j;
+      I || N(e), null == p || p(e), e && null != x && x()
+    }, [j, I, p, x]),
+    b = i.useMemo(() => {
+      if (j) {
+        if (null != g) return {
+          maxHeight: "number" == typeof g ? "".concat(g, "px") : g
+        };
+        if (null != v) return {
+          maxHeight: "".concat(v, "px")
+        }
+      }
+    }, [g, j, v]);
   return (0, l.jsxs)("div", {
     className: a()(c.accordionContainer, d, {
-      [c.opened]: v
+      [c.opened]: j
     }),
     children: [(0, l.jsxs)(s.P3F, {
       className: c.header,
-      onClick: E,
+      onClick: S,
       children: [null != n && (0, l.jsx)("div", {
         className: c.headerIconWrapper,
         children: n
@@ -54,7 +64,7 @@ function u(e) {
         })]
       }), (0, l.jsx)("div", {
         className: a()(c.caret, {
-          [c.opened]: v
+          [c.opened]: j
         }),
         children: (0, l.jsx)(o.Z, {
           width: 18,
@@ -63,10 +73,11 @@ function u(e) {
         })
       })]
     }), (0, l.jsx)("div", {
+      ref: h,
       className: a()(c.content, {
-        [c.opened]: v
+        [c.opened]: j
       }),
-      style: I,
+      style: b,
       children: u
     })]
   })

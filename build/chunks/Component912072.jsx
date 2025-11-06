@@ -17,12 +17,12 @@ var Chunk951288 = require("./951288.js"),
 function p(e) {
   let {
     devSettingsCategory: t
-  } = e, n = (0, s.e7)([d.ZP], () => d.ZP.allByCategory(t), [t], s.pF), r = i.useMemo(() => n.map(e => {
+  } = e, n = (0, s.e7)([d.ZP], () => d.ZP.allByCategory(t), [t], s.pF), i = r.useMemo(() => n.map(e => {
     let [t, n, {
-      label: i
+      label: r
     }] = e;
     return (0, a.jsx)(o.rsf, {
-      label: i,
+      label: r,
       description: t,
       checked: n,
       onChange: e => (0, c.Z)(t, e)
@@ -30,6 +30,6 @@ function p(e) {
   }), [n]);
   return (0, a.jsx)("div", {
     className: l()(m.panel, u.panel),
-    children: r
+    children: i
   })
 }

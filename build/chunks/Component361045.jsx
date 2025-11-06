@@ -29,28 +29,28 @@ function c(e) {
       })]
     }), (0, a.jsxs)("div", {
       className: o.content,
-      children: [(0, a.jsx)(i.P3F, {
+      children: [(0, a.jsx)(r.P3F, {
         className: o.closeIcon,
         onClick: () => t(l.L.USER_DISMISS),
-        children: (0, a.jsx)(i.Dio, {})
+        children: (0, a.jsx)(r.Dio, {})
       }), (0, a.jsx)("img", {
         src: n(414190),
         className: o.art,
         alt: ""
       }), (0, a.jsxs)("div", {
-        children: [(0, a.jsxs)(i.Heading, {
+        children: [(0, a.jsxs)(r.Heading, {
           variant: "heading-md/semibold",
           color: "header-primary",
           className: o.heading,
-          children: [s.intl.string(s.t.MLt8H4), (0, a.jsx)(r.Z, {
+          children: [s.intl.string(s.t.MLt8H4), (0, a.jsx)(i.Z, {
             className: o.betaTag
           })]
-        }), (0, a.jsx)(i.Text, {
+        }), (0, a.jsx)(r.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           children: s.intl.string(s.t["l+lSLp"])
         })]
-      }), (0, a.jsx)(i.Button, {
+      }), (0, a.jsx)(r.Button, {
         variant: "primary",
         text: s.intl.string(s.t["9WdoB+"]),
         fullWidth: true,

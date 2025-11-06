@@ -24,33 +24,33 @@ let o = e => {
         };
       case r.X.STREAM_ON_DESKTOP:
         return {
-          type: r.X.STREAM_ON_DESKTOP, target: e.target
+          type: r.X.STREAM_ON_DESKTOP, target: e.target, applications: e.applications
         };
       case r.X.PLAY_ACTIVITY:
         return {
-          type: r.X.PLAY_ACTIVITY, target: e.target
+          type: r.X.PLAY_ACTIVITY, target: e.target, applications: e.applications
         };
       case r.X.PLAY_ON_XBOX:
         return {
-          type: r.X.PLAY_ON_XBOX, target: e.target, externalIds: e.external_ids
+          type: r.X.PLAY_ON_XBOX, target: e.target, externalIds: e.external_ids, applications: e.applications
         };
       case r.X.PLAY_ON_PLAYSTATION:
         return {
-          type: r.X.PLAY_ON_PLAYSTATION, target: e.target, externalIds: e.external_ids
+          type: r.X.PLAY_ON_PLAYSTATION, target: e.target, externalIds: e.external_ids, applications: e.applications
         };
       case r.X.ACHIEVEMENT_IN_GAME:
         return {
           type: r.X.ACHIEVEMENT_IN_GAME, target: e.target, eventName: e.event_name, messages: {
             taskTitle: e.messages.task_title,
             taskDescription: e.messages.task_description
-          }
+          }, applications: e.applications
         };
       case r.X.ACHIEVEMENT_IN_ACTIVITY:
         return {
           type: r.X.ACHIEVEMENT_IN_ACTIVITY, target: e.target, eventName: e.event_name, messages: {
             taskTitle: e.messages.task_title,
             taskDescription: e.messages.task_description
-          }
+          }, applications: e.applications
         };
       default:
         return null

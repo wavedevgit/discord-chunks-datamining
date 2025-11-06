@@ -26,25 +26,25 @@ function _(e) {
   let {
     task: t,
     handleSubmit: n,
-    disabled: r
-  } = e, [l, s] = i.useState(t), o = i.useMemo(() => ({
+    disabled: i
+  } = e, [l, s] = r.useState(t), o = r.useMemo(() => ({
     task: l,
     setTask: s
   }), [l, s]);
-  return i.useEffect(() => {
+  return r.useEffect(() => {
     s(t)
   }, [t]), (0, a.jsxs)(u.y.Provider, {
     value: o,
     children: [(0, a.jsx)(x.Z, {}), (0, a.jsx)(h.Z, {
       onSubmit: n,
-      disabled: r
+      disabled: i
     })]
   })
 }
 let y = function(e) {
   let {
     onClose: t
-  } = e, [n, u] = i.useState(null), [h, x] = i.useState(true), [y, C] = i.useState(null), [S, E] = i.useState(false), T = i.useCallback(async () => {
+  } = e, [n, u] = r.useState(null), [h, x] = r.useState(true), [y, C] = r.useState(null), [S, E] = r.useState(false), T = r.useCallback(async () => {
     x(true), C(null);
     try {
       var e;
@@ -70,7 +70,7 @@ let y = function(e) {
     } finally {
       x(false)
     }
-  }, [t]), N = i.useCallback(async e => {
+  }, [t]), N = r.useCallback(async e => {
     if (null !== n) {
       E(true);
       try {
@@ -90,7 +90,7 @@ let y = function(e) {
   (0, l.ZP)(() => {
     T()
   });
-  let O = i.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
+  let O = r.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
   return (0, a.jsxs)("div", {
     className: v.background,
     children: [(0, a.jsx)("img", {
@@ -98,7 +98,7 @@ let y = function(e) {
       src: j,
       alt: ""
     }), O ? (0, a.jsx)(o.default, {
-      transitionState: r.Dvm.ENTERED,
+      transitionState: i.Dvm.ENTERED,
       entryPoint: s.cU.SAFETY_FLOWS,
       onClose: g.dG,
       onComplete: async () => {
@@ -109,43 +109,43 @@ let y = function(e) {
       dismissable: false
     }) : (0, a.jsx)("div", {
       className: v.safetyFlow,
-      children: h ? (0, a.jsx)(r.$jN, {
-        type: r.$jN.Type.SPINNING_CIRCLE
+      children: h ? (0, a.jsx)(i.$jN, {
+        type: i.$jN.Type.SPINNING_CIRCLE
       }) : (0, a.jsx)("div", {
         className: v.container,
-        children: (0, a.jsxs)(r.Kqy, {
+        children: (0, a.jsxs)(i.Kqy, {
           direction: "horizontal",
           justify: "start",
           className: v.body,
-          children: [null !== y && (0, a.jsxs)(r.Kqy, {
+          children: [null !== y && (0, a.jsxs)(i.Kqy, {
             direction: "vertical",
             justify: "space-between",
             align: "center",
             className: v.interimBody,
             padding: 16,
-            children: [(0, a.jsxs)(r.Kqy, {
+            children: [(0, a.jsxs)(i.Kqy, {
               direction: "vertical",
               gap: 4,
-              children: [(0, a.jsx)(r.Heading, {
+              children: [(0, a.jsx)(i.Heading, {
                 variant: "heading-xl/semibold",
                 children: b.intl.string(b.t.c6kn6F)
-              }), (0, a.jsx)(r.Text, {
+              }), (0, a.jsx)(i.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
                 children: b.intl.string(b.t.ZUEGFn)
               })]
-            }), (0, a.jsxs)(r.Kqy, {
+            }), (0, a.jsxs)(i.Kqy, {
               direction: "horizontal",
               justify: "center",
               align: "center",
-              children: [(0, a.jsx)(r.Button, {
+              children: [(0, a.jsx)(i.Button, {
                 fullWidth: true,
                 variant: "secondary",
                 text: b.intl.string(b.t["2jxGer"]),
                 onClick: () => {
                   (0, p.R)("safety_flows_modal")
                 }
-              }), (0, a.jsx)(r.Button, {
+              }), (0, a.jsx)(i.Button, {
                 fullWidth: true,
                 text: b.intl.string(b.t["7NqTJn"]),
                 onClick: () => {

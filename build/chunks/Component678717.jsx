@@ -31,16 +31,16 @@ function E(e) {
   let {
     resizableNode: t,
     onResize: n,
-    onResizeEnd: i
-  } = e, r = (0, d.Z)({
+    onResizeEnd: r
+  } = e, i = (0, d.Z)({
     minDimension: f.h,
     resizableDomNodeRef: t,
     onElementResize: n,
-    onElementResizeEnd: i,
+    onElementResizeEnd: r,
     orientation: d.y.HORIZONTAL_LEFT
   });
   return (0, a.jsx)("div", {
-    onMouseDown: r,
+    onMouseDown: i,
     className: C.resizeHandle
   })
 }
@@ -64,19 +64,19 @@ function N(e) {
   var t;
   let {
     isPopout: n = false
-  } = e, i = (0, v.F)(), {
-    TabBar: r,
+  } = e, r = (0, v.F)(), {
+    TabBar: i,
     renderSelectedTab: l,
     selectedTabId: o
   } = (0, j.ZP)({
-    tabs: i,
+    tabs: r,
     initialSelectedTabId: null != (t = f.Z.lastOpenTabId) ? t : true,
     onChangeTab: e => {
       (0, g.Qh)({
         lastOpenTabId: e
       })
     }
-  }, [i]);
+  }, [r]);
   return (0, u.Z)({
     type: s.ImpressionTypes.PANE,
     name: s.ImpressionNames.VIEW_PANEL_DEVTOOLS,
@@ -103,7 +103,7 @@ function N(e) {
       }), (0, a.jsx)(m.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(r, {}), l(), (0, a.jsx)(b.Br, {
+    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(b.Br, {
       className: C.layerContainer
     })]
   })
@@ -112,7 +112,7 @@ function N(e) {
 function O() {
   let e = Chunk647438.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
-    [n, r] = Chunk647438.useState(null),
+    [n, i] = Chunk647438.useState(null),
     l = Chunk647438.useCallback(e => (0, g.Qh)({
       sidebarWidth: e
     }), []);

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk320161 = require("./320161.jsx"),
   Chunk572004 = require("./572004.js"),
@@ -20,7 +20,7 @@ function p(e) {
     user: t,
     isVisible: n
   } = e, {
-    trackUserProfileAction: i
+    trackUserProfileAction: r
   } = (0, d.KZ)();
   return o.wS ? (0, a.jsx)(s.Z, {
     text: u.intl.string(u.t.y5MwJy),
@@ -30,11 +30,11 @@ function p(e) {
       decoration: "never",
       identifiable: "always"
     }),
-    onCopy: () => i({
+    onCopy: () => r({
       action: "COPY_USERNAME"
     }),
     children: e => {
-      var t, i;
+      var t, r;
       return (0, a.jsx)(l.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -52,8 +52,8 @@ function p(e) {
           })
         }
         return e
-      }({}, e), i = i = {
-        className: r()(m.copyButton, {
+      }({}, e), r = r = {
+        className: i()(m.copyButton, {
           [m.visible]: n
         }),
         "aria-label": u.intl.string(u.t.y5MwJy),
@@ -61,15 +61,15 @@ function p(e) {
           size: "xs",
           color: "currentColor"
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var a = Object.getOwnPropertySymbols(e);
           n.push.apply(n, a)
         }
         return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }), t))
     }
   }) : null

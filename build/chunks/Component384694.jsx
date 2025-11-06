@@ -61,7 +61,7 @@ let x = e => ({
           active: true,
           className: p.icon
         }), (0, l.jsx)(a.Text, {
-          variant: "text-sm/normal",
+          variant: "text-md/normal",
           className: p.label,
           children: t.label
         })]

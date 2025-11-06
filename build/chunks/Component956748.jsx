@@ -18,10 +18,10 @@ let s = e => {
     style: {
       opacity: s
     },
-    children: [(0, a.jsx)(i.qEK, {
+    children: [(0, a.jsx)(r.qEK, {
       src: null,
-      size: i.EFr.SIZE_32,
-      status: t ? r.Skl.ONLINE : true,
+      size: r.EFr.SIZE_32,
+      status: t ? i.Skl.ONLINE : true,
       statusColor: "var(--border-subtle)",
       "aria-hidden": true,
       imageClassName: l.nameplatePlaceholderAvatar

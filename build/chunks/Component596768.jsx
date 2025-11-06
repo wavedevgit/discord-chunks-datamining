@@ -63,8 +63,8 @@ let T = [{
         loggedTrigger: {
           experimentId: t,
           descriptor: n,
-          exposureType: i,
-          excluded: r,
+          exposureType: r,
+          excluded: i,
           timestamp: s,
           location: o,
           previouslyTracked: c
@@ -111,12 +111,12 @@ let T = [{
           }), (0, a.jsx)(v.Z9, {
             name: "Exposure type",
             children: (0, a.jsx)("code", {
-              children: i
+              children: r
             })
           }), (0, a.jsx)(v.Z9, {
             name: "Excluded",
             children: (0, a.jsx)(v.wl, {
-              value: r
+              value: i
             })
           }), (0, a.jsx)(v.Z9, {
             name: "Previously tracked",
@@ -135,7 +135,7 @@ let T = [{
   }];
 
 function O() {
-  let [e, t] = Chunk647438.useState(""), n = Chunk647438.useRef(null), r = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), x = Chunk658722.find(e => e.key === c), {
+  let [e, t] = Chunk647438.useState(""), n = Chunk647438.useRef(null), i = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), x = Chunk658722.find(e => e.key === c), {
     TabBar: g,
     renderSelectedTab: v
   } = (0, Chunk621060.ZP)({

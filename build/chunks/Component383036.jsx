@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk277790 = require("./277790.js");
 let g = e => {
-    let [t, n] = i.useState(0);
-    return i.useLayoutEffect(() => {
+    let [t, n] = r.useState(0);
+    return r.useLayoutEffect(() => {
       let e = d.Z.getPurchase;
       return d.Z.getPurchase = e => true, d.Z.emitChange(), n(1), () => {
         d.Z.getPurchase = e, d.Z.emitChange()

@@ -102,7 +102,7 @@ class N extends(r = Chunk442837.ZP.Store) {
 }
 _(N, "displayName", "Overlay-v3-Native-Module-Store");
 let R = new N(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
-    POST_CONNECTION_OPEN: C,
+    CONNECTION_OPEN: C,
     EXPERIMENT_OVERRIDE_BUCKET: I,
     OVERLAY_SET_ENABLED: T,
     OVERLAY_V3_LOAD_NATIVE_MODULE: S,

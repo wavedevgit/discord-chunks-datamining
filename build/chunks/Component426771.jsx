@@ -38,7 +38,7 @@ function x(e) {
       } = t, r = null == n ? true : n.ends_at;
       return null == r ? e : null == e || r < e ? r : e
     }, true);
-  true !== y ? _ = {
+  null != y ? _ = {
     type: "expiring",
     expiringAt: y
   } : P && (_ = {
@@ -73,7 +73,8 @@ function x(e) {
     U = null != Z.viewCtaTooltip && "" !== Z.viewCtaTooltip ? Z.viewCtaTooltip : true;
   return (0, r.jsxs)(u.aB, {
     label: Z.title,
-    isActive: P,
+    isActive: (null == _ ? true : _.type) === "active",
+    isWarning: (null == _ ? true : _.type) === "expiring",
     badge: Z.badge,
     onClick: () => Z.openModal(j),
     onMouseOver: () => w(true),

@@ -20,8 +20,8 @@ var Chunk951288 = require("./951288.js"),
 function g(e) {
   let {
     id: t
-  } = e, n = (0, i.e7)([o.default], () => o.default.getUser(t));
-  return null == n ? null : (0, a.jsx)(r.P3F, {
+  } = e, n = (0, r.e7)([o.default], () => o.default.getUser(t));
+  return null == n ? null : (0, a.jsx)(i.P3F, {
     className: x.entryAuthor,
     onClick: function() {
       (0, s.openUserProfileModal)({
@@ -29,7 +29,7 @@ function g(e) {
         userId: t
       })
     },
-    children: (0, a.jsx)(r.Text, {
+    children: (0, a.jsx)(i.Text, {
       variant: "text-md/semibold",
       children: n.username
     })
@@ -53,19 +53,19 @@ function f() {
       content: t
     } = e;
     if (!(0, m.g)(n, t)) return [];
-    let i = l[(0, c.T)(t)];
+    let r = l[(0, c.T)(t)];
     return (0, a.jsxs)("li", {
       className: x.locatorEntry,
       children: [(0, a.jsx)(g, {
         type: t.author_type,
         id: t.author_id
-      }), !i && (0, a.jsx)(r.Text, {
+      }), !r && (0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         children: "Expired or no matching presence"
-      }), (0, p.n2)(t) && (0, a.jsxs)(r.Text, {
+      }), (0, p.n2)(t) && (0, a.jsxs)(i.Text, {
         variant: "text-md/normal",
         children: ["Expired at ", t.expires_at]
-      }), s.has(t.id) && (0, a.jsx)(r.Text, {
+      }), s.has(t.id) && (0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         children: "Impression capped"
       })]
