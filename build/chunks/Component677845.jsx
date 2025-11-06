@@ -56,8 +56,8 @@ function S(e) {
   }, [I.id, R]);
   let U = (0, o.e7)([y.Z], () => I.isPrivate() || (0, h.b)(y.Z, M, I), [M, I]),
     B = (null == M ? true : M.afkChannelId) === I.id,
-    F = I.userLimit <= 0 || I.userLimit > 1,
-    V = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
+    V = I.userLimit <= 0 || I.userLimit > 1,
+    F = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
     H = (0, f.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     G = (0, u.KF)(I.id) !== u.jy.CAN_LAUNCH,
     W = null != R && R === I.id,
@@ -83,7 +83,7 @@ function S(e) {
     }
   }, {
     trackOnInitialLoad: true
-  }, []), null != M && !B && (!(D >= 2) || !V || G || H || W ? F && 1 === D && U && (V && !G ? z.push(e => (0, r.jsx)(C.h, {
+  }, []), null != M && !B && (!(D >= 2) || !F || G || H || W ? V && 1 === D && U && (F && !G ? z.push(e => (0, r.jsx)(C.h, {
     channel: I,
     guild: M,
     width: e,

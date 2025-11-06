@@ -2,7 +2,7 @@
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   XX: () => U,
-  ZP: () => F,
+  ZP: () => V,
   ul: () => B
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -111,15 +111,15 @@ function B(e) {
     })]
   })
 }
-let F = (0, Chunk888651.$)(function(e) {
+let V = (0, Chunk888651.$)(function(e) {
   var t;
   let {
     collapsed: l,
     user: f,
     channel: U,
     mute: B,
-    localMute: F,
-    localVideoDisabled: V,
+    localMute: V,
+    localVideoDisabled: F,
     deaf: H,
     video: G,
     embeddedApplication: W,
@@ -193,7 +193,7 @@ let F = (0, Chunk888651.$)(function(e) {
         }))
       })
     },
-    eF = e => eh ? (0, r.jsx)(x.$, L(k({}, e), {
+    eV = e => eh ? (0, r.jsx)(x.$, L(k({}, e), {
       channel: U,
       setIsHangStatusInputFocused: eS,
       setIsEmojiPickerOpen: eT
@@ -202,7 +202,7 @@ let F = (0, Chunk888651.$)(function(e) {
       channel: U,
       userId: f.id
     })) : null,
-    eV = () => (0, r.jsx)(j.Z, {
+    eF = () => (0, r.jsx)(j.Z, {
       userId: f.id,
       channel: U
     }),
@@ -237,8 +237,8 @@ let F = (0, Chunk888651.$)(function(e) {
               latched: J,
               disconnected: Q,
               mute: B,
-              localMute: F,
-              localVideoDisabled: V,
+              localMute: V,
+              localVideoDisabled: F,
               isStreaming: et,
               isGuest: er,
               video: G,
@@ -279,7 +279,7 @@ let F = (0, Chunk888651.$)(function(e) {
             })
           }
           let c = () => null;
-          return e_ && eA ? c = eF : et ? c = eH : ew && f.id !== I.default.getId() ? c = eV : e_ && (c = eF), (0, r.jsx)(s.yRy, {
+          return e_ && eA ? c = eV : et ? c = eH : ew && f.id !== I.default.getId() ? c = eF : e_ && (c = eV), (0, r.jsx)(s.yRy, {
             targetElementRef: ey,
             position: "right",
             renderPopout: c,

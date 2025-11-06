@@ -46,7 +46,7 @@ let k = Chunk647438.memo(e => {
     channel: P,
     sessionId: I,
     nick: D
-  } = e, k = O.id, L = (0, o.e7)([E.default], () => E.default.getId() === k, [k]), [U, B, F] = (0, o.Wu)([S.Z], () => L ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(k), false, S.Z.isLocalVideoDisabled(k)], [L, k]), V = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(k)), H = (0, c.Z)({
+  } = e, k = O.id, L = (0, o.e7)([E.default], () => E.default.getId() === k, [k]), [U, B, V] = (0, o.Wu)([S.Z], () => L ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(k), false, S.Z.isLocalVideoDisabled(k)], [L, k]), F = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(k)), H = (0, c.Z)({
     userId: k,
     checkSoundSharing: true
   }), G = (0, o.e7)([T.Z], () => T.Z.isCurrentUserPTTLatched()), W = L && G, z = (0, o.e7)([j.ZP], () => j.ZP.isGuestOrLurker(P.guild_id, k)), q = (0, o.e7)([f.Z], () => f.Z.getGuildRingingUsers(P.id).has(k)), Y = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).find(e => {
@@ -95,13 +95,13 @@ let k = Chunk647438.memo(e => {
       otherClientSessionType: null == ee || null == (t = ee.clientInfo) ? true : t.os,
       voicePlatform: en,
       localMute: U && !L,
-      localVideoDisabled: F,
+      localVideoDisabled: V,
       mute: a || U,
       deaf: s || B,
       speaking: H,
       latched: W,
       ringing: q,
-      priority: V,
+      priority: F,
       embeddedApplication: K[0],
       isStreaming: null != Q && Q.channelId === P.id,
       isWatching: null != $ && $.state !== M.jm8.ENDED,
@@ -148,7 +148,7 @@ let L = [],
       t && (Z(true), R.current.cancel(), T.current = e, A.current.delay())
     }, [t]), B = i.useCallback(e => {
       t && (A.current.cancel(), x === e && (Z(false), R.current.delay()))
-    }, [t, x]), F = (0, o.Wu)([I.Z], () => {
+    }, [t, x]), V = (0, o.Wu)([I.Z], () => {
       if (u) return [];
       let e = new Set;
       return null == N || N.forEach(t => {
@@ -160,8 +160,8 @@ let L = [],
         })
       }), Array.from(e)
     });
-    (0, p.Z)(F);
-    let V = (() => {
+    (0, p.Z)(V);
+    let F = (() => {
       if (null == N || 0 === N.length) return null;
       let e = u && N.length > d + 1 ? N.slice(0, d) : N,
         t = f.Z.getGuildRingingUsers(l.id),
@@ -200,13 +200,13 @@ let L = [],
         numUsers: N.length - d
       })), i
     })();
-    return null == V && null == y ? null : (0, r.jsxs)(O.eJ, {
+    return null == F && null == y ? null : (0, r.jsxs)(O.eJ, {
       className: a()(_, D.list, {
         [D.collapsed]: u,
         [D.withGuildIcon]: b,
         [D.isThread]: C
       }),
       collapsed: u,
-      children: [V, y]
+      children: [F, y]
     })
   }

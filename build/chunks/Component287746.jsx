@@ -452,7 +452,7 @@ class e4 extends Chunk647438.PureComponent {
           let {
             location: t,
             sectionName: n
-          } = null != (_ = (0, eF._U)(l)) ? _ : {}, r = e === T.bB.APPLICATION_LAUNCHER ? x.Z.lastShownEntrypoint() : E._b.TEXT, {
+          } = null != (_ = (0, eV._U)(l)) ? _ : {}, r = e === T.bB.APPLICATION_LAUNCHER ? x.Z.lastShownEntrypoint() : E._b.TEXT, {
             isAuthorized: i
           } = await (0, w.L)({
             applicationId: l.applicationId,
@@ -468,7 +468,7 @@ class e4 extends Chunk647438.PureComponent {
             shouldClear: false,
             shouldRefocus: true
           });
-          (0, eF.SC)(l)
+          (0, eV.SC)(l)
         }
         let n = await (0, A.Z)({
           command: l,
@@ -835,7 +835,7 @@ class e7 extends Chunk647438.PureComponent {
       let {
         activeView: t
       } = e;
-      (0, V.PG)(t, this.props.chatInputType)
+      (0, F.PG)(t, this.props.chatInputType)
     }), eQ(this, "handleOpenAppLauncher", e => {
       let {
         applicationId: t
@@ -897,7 +897,7 @@ let e6 = Chunk647438.memo(function(e) {
     chatInputType: i
   }), v = (0, ef.k)(t.id), O = (0, d.e7)([eS.Z], () => eS.Z.getVoiceChannelId()), x = (0, d.e7)([eC.Z], () => eC.Z.getChannel(O)), E = (0, d.e7)([eI.default], () => t.type !== eq.d4z.DM ? null : eI.default.getUser(t.getRecipientId())), S = (0, d.e7)([el.ZP, e_.default], () => el.ZP.getUserCombo(e_.default.getId(), t.id)), P = (0, b.iD)(t), I = (0, b.d7)(t), Z = P.length > 0 || t.rateLimitPerUser > 0 || null != S || null != I, {
     showLinkedLobbyApplicationLoadingIndicator: T
-  } = (0, eL.Z)(t.linkedLobby), N = (0, F.Z)("ChannelChat");
+  } = (0, eL.Z)(t.linkedLobby), N = (0, V.Z)("ChannelChat");
   return (0, r.jsx)(e7, {
     channel: t,
     isEditing: null != (0, d.e7)([eO.Z], () => eO.Z.getEditingMessageId(t.id)),

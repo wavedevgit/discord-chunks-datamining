@@ -167,7 +167,7 @@ function et(e) {
           item: e,
           channel: U,
           isBeforeGroup: null == e.content && $(el[t + 1])
-        }) : (0, r.jsx)(V.Z, {
+        }) : (0, r.jsx)(F.Z, {
           isUnread: l,
           isBeforeGroup: null == e.content && $(el[t + 1]),
           id: l ? Y.j1 : true,
@@ -182,7 +182,7 @@ function et(e) {
       }, "forum-post-action-bar-".concat(U.id));
       if (e.type === K.ys_.MESSAGE_GROUP_BLOCKED || e.type === K.ys_.MESSAGE_GROUP_IGNORED || e.type === K.ys_.MESSAGE_GROUP_SPAMMER) {
         let t;
-        return t = e.type === K.ys_.MESSAGE_GROUP_BLOCKED ? J.t["+FcYM/"] : e.type === K.ys_.MESSAGE_GROUP_IGNORED ? J.t["VFWjc+"] : J.t.xfkfTK, (0, r.jsx)(F.Z, {
+        return t = e.type === K.ys_.MESSAGE_GROUP_BLOCKED ? J.t["+FcYM/"] : e.type === K.ys_.MESSAGE_GROUP_IGNORED ? J.t["VFWjc+"] : J.t.xfkfTK, (0, r.jsx)(V.Z, {
           unreadId: Y.j1,
           messages: e,
           channel: U,

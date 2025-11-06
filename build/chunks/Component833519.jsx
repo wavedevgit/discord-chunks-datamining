@@ -94,9 +94,9 @@ function q(e) {
   (0, p.ZP)(() => {
     !en && (null == $ ? true : $.isGuildStageVoice()) && !ei && ((0, d.rn)(X), u.Z.updateStageStreamSize(X.channelId, false))
   });
-  let es = (0, b.c)(V.Yn.STREAM, t.user.id);
+  let es = (0, b.c)(F.Yn.STREAM, t.user.id);
   i.useEffect(() => {
-    W.info("Stream Tile State - activeStream: ".concat(null != ee, " | selected: ").concat(n, " | Video: ").concat(null != q, " | MediaEngine: ").concat(T.Z.supports(V.AN.VIDEO)))
+    W.info("Stream Tile State - activeStream: ".concat(null != ee, " | selected: ").concat(n, " | Video: ").concat(null != q, " | MediaEngine: ").concat(T.Z.supports(F.AN.VIDEO)))
   }, [q, ee, n]);
   let {
     allowGoLiveZoomPan: ec
@@ -121,12 +121,12 @@ function q(e) {
     stream: t.stream,
     width: O
   });
-  if (t.type === F.fO.HIDDEN_STREAM) return (0, r.jsx)(D.Z, {
+  if (t.type === V.fO.HIDDEN_STREAM) return (0, r.jsx)(D.Z, {
     selected: n,
     participant: t,
     width: O
   });
-  if (!(null != ee && !n && null != q && T.Z.supports(V.AN.VIDEO))) return (0, r.jsxs)("div", {
+  if (!(null != ee && !n && null != q && T.Z.supports(F.AN.VIDEO))) return (0, r.jsxs)("div", {
     className: a()(G.content, G.streamPreview, {
       [G.small]: eo
     }),

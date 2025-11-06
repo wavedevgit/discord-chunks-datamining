@@ -159,8 +159,8 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     isPendingMember: eL,
     disabled: eU,
     canAttachFiles: eB,
-    canEveryoneSendMessages: eF
-  } = (0, H.TE)(D, L, eD, I), eV = !A.dN.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eH = !eV || !(null == (n = L.commands) ? true : n.enabled) || !G || p !== q.GI, eG = (0, T.Z)(), {
+    canEveryoneSendMessages: eV
+  } = (0, H.TE)(D, L, eD, I), eF = !A.dN.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eH = !eF || !(null == (n = L.commands) ? true : n.enabled) || !G || p !== q.GI, eG = (0, T.Z)(), {
     fontSize: eW
   } = (0, d.cj)([_.Z], () => ({
     fontSize: _.Z.fontSize,
@@ -352,18 +352,18 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                 children: (0, r.jsx)(h.tEY, {
                   ringTarget: eN,
                   ringClassName: Q.focusRing,
-                  children: (0, r.jsx)(F.Z, {
+                  children: (0, r.jsx)(V.Z, {
                     ref: ew,
                     id: j,
                     focused: G,
-                    useSlate: eV,
+                    useSlate: eF,
                     textValue: p,
                     richValue: f,
                     disabled: eU,
                     placeholder: eg,
                     required: P,
                     accessibilityLabel: Z,
-                    isPreviewing: (ek || eL) && eF,
+                    isPreviewing: (ek || eL) && eV,
                     channel: D,
                     type: B.Ie.CREATE_ANNOUNCEMENT_POST,
                     canPasteFiles: eB,
@@ -412,7 +412,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
             className: J.footerPart,
             children: [(0, r.jsx)(ea, {
               channel: D
-            }), (0, r.jsx)(V.Z, {
+            }), (0, r.jsx)(F.Z, {
               type: B.Ie.CREATE_ANNOUNCEMENT_POST,
               disabled: eU,
               channel: D,
@@ -474,7 +474,7 @@ let er = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           channel: D,
           canMentionRoles: ef,
           canMentionChannels: eh,
-          useNewSlashCommands: eV,
+          useNewSlashCommands: eF,
           canOnlyUseTextCommands: false,
           canSendStickers: true,
           textValue: p,

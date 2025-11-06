@@ -1,4 +1,4 @@
-/** Chunk was on 29446 **/
+/** Chunk was on 65100 **/
 /** chunk id: 946734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk130370 = require("./130370.js");
 
-function I(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class P {
+class I {
   updateData(e) {
     let {
       userId: t,
@@ -73,7 +73,7 @@ class P {
     channelId: n,
     analyticsLocations: l
   }) {
-    I(this, "userId", true), I(this, "user", true), I(this, "channelId", true), I(this, "analyticsLocations", true), I(this, "generateNicknameGuildPairs", (0, j.oH)(e => {
+    P(this, "userId", true), P(this, "user", true), P(this, "channelId", true), P(this, "analyticsLocations", true), P(this, "generateNicknameGuildPairs", (0, j.oH)(e => {
       var t;
       return a()(g.ZP.getNicknameGuildsMapping(null != (t = null == e ? true : e.id) ? t : this.userId)).toPairs().map(e => {
         let [t, n] = e;
@@ -85,7 +85,7 @@ class P {
         let [n] = t;
         return n !== (null == e ? true : e.globalName)
       }).value()
-    })), I(this, "renderMoreAvatars", () => (0, i.jsx)(c.u, {
+    })), P(this, "renderMoreAvatars", () => (0, i.jsx)(c.u, {
       asContainer: true,
       tag: "span",
       text: C.intl.string(C.t["UTjRE/"]),
@@ -99,12 +99,12 @@ class P {
           className: Z.plusIcon
         })
       })
-    }, "more-avatars")), I(this, "handleClick", () => {
-      (0, m.openUserProfileModal)({
+    }, "more-avatars")), P(this, "handleClick", () => {
+      (0, f.openUserProfileModal)({
         userId: this.userId,
         channelId: this.channelId,
         sourceAnalyticsLocations: this.analyticsLocations,
-        section: x.oh.MUTUAL_GUILDS
+        section: O.oh.MUTUAL_GUILDS
       })
     }), this.userId = e, this.user = t, this.channelId = n, this.analyticsLocations = l
   }
@@ -113,14 +113,14 @@ class P {
 function E(e) {
   let {
     channel: t
-  } = e, n = t.getRecipientId(), r = (0, f.gc)(n), a = Array(r.length).fill(null), {
-    analyticsLocations: m
+  } = e, n = t.getRecipientId(), r = (0, m.gc)(n), a = Array(r.length).fill(null), {
+    analyticsLocations: f
   } = (0, h.ZP)(p.Z.AKA), g = function(e) {
     let {
       userId: t,
       channelId: n,
       analyticsLocations: i
-    } = e, r = (0, s.e7)([b.default], () => b.default.getUser(t), [t]), [a] = l.useState(() => new P({
+    } = e, r = (0, s.e7)([b.default], () => b.default.getUser(t), [t]), [a] = l.useState(() => new I({
       user: r,
       userId: t,
       channelId: n,
@@ -134,18 +134,18 @@ function E(e) {
     }), a
   }({
     userId: n,
-    analyticsLocations: m,
+    analyticsLocations: f,
     channelId: t.id
-  }), [j, y] = l.useState(false), x = l.useCallback(() => {
+  }), [j, y] = l.useState(false), O = l.useCallback(() => {
     y(true)
-  }, [y]), I = l.useCallback(() => {
+  }, [y]), P = l.useCallback(() => {
     y(false)
   }, [y]);
   return 0 === g.getNicknameGuildPairs().length && 0 === r.length ? (0, i.jsx)("div", {
     className: Z.spacer
   }) : (0, i.jsxs)(h.Gt, {
-    value: m,
-    children: [(0, i.jsx)(O.iz, {
+    value: f,
+    children: [(0, i.jsx)(x.iz, {
       className: Z.divider
     }), (0, i.jsx)(u.IGR, {
       text: C.intl.string(C.t.l1QVfj),
@@ -180,8 +180,8 @@ function E(e) {
       position: "bottom",
       className: Z.nicknames,
       delay: 0,
-      onTooltipShow: x,
-      onTooltipHide: I,
+      onTooltipShow: O,
+      onTooltipHide: P,
       children: g.renderNicknamePairs(!j)
     }) : null]
   })
