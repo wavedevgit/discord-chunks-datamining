@@ -35,6 +35,6 @@ let _ = (0, Chunk509613.x1)(Chunk313789.n.VOICE_AND_VIDEO_PANE, {
     icon: Chunk657707.S6n,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.B1fFpf),
     usePredicate: () => Chunk131951.Z.isSupported(),
-    legacySearchKey: Chunk726985.s6.VOICE_AND_VIDEO,
+    getLegacySearchKey: () => (0, Chunk526665.Ml)("VoiceAndVideoPanel") ? true : Chunk726985.s6.VOICE_AND_VIDEO,
     buildLayout: () => [f]
   })

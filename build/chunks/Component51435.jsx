@@ -22,6 +22,6 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.CONNECTIONS_PANE, {
   d = (0, Chunk509613.m7)(Chunk313789.n.CONNECTIONS_SIDEBAR_ITEM, {
     icon: Chunk657707.xPt,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
-    legacySearchKey: Chunk726985.s6.CONNECTIONS,
+    getLegacySearchKey: () => Chunk726985.s6.CONNECTIONS,
     buildLayout: () => [E]
   })

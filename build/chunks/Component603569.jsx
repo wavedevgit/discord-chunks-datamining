@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 603569, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  a: () => g
+  a: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk657707 = require("./657707.js"),
@@ -20,15 +20,15 @@ let O = (0, Chunk509613.x1)(Chunk313789.n.FAMILY_CENTER_PANE, {
     buildLayout: () => [],
     render: () => (0, Chunk951288.jsx)(Chunk54942.Z, {})
   }),
-  I = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
+  g = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk602698.default.RZqaJn),
     buildLayout: () => [O]
   }),
-  g = (0, Chunk509613.m7)(Chunk313789.n.FAMILY_CENTER_SIDEBAR_ITEM, {
+  I = (0, Chunk509613.m7)(Chunk313789.n.FAMILY_CENTER_SIDEBAR_ITEM, {
     icon: Chunk657707.BFJ,
     useTitle: () => Chunk388032.intl.string(Chunk602698.default.RZqaJn),
-    legacySearchKey: Chunk726985.s6.PRIVACY_FAMILY_CENTER,
-    buildLayout: () => [I],
+    getLegacySearchKey: () => Chunk726985.s6.PRIVACY_FAMILY_CENTER,
+    buildLayout: () => [g],
     trailing: {
       type: Chunk28682.PU.STRONGLY_DISCOURAGED_CUSTOM,
       getDismissibleContentTypes: () => [Chunk704215.z.FAMILY_CENTER_NEW_BADGE],

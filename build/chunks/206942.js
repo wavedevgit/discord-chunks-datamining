@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 206942, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => g
 }), require("./951288.js"), require("./647438.js");
 var Chunk442837 = require("./442837.js");
 require("./481060.js");
@@ -35,7 +35,7 @@ let d = {
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
     setValue: t => l.default.toggleDisableAllSounds(t)
   }),
-  I = (0, Chunk509613.$l)(Chunk313789.n.NOTIFICATION_SOUNDS_LIST, {
+  g = (0, Chunk509613.$l)(Chunk313789.n.NOTIFICATION_SOUNDS_LIST, {
     collapseAfter: 4,
     useCollapsibleTitle: (t, e) => t ? E.intl.formatToPlainString(E.t["0JYT98"], {
       count: e

@@ -20,9 +20,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk558270 = require("./558270.js");
 let b = "Make sure you're only uploading text files!",
   v = e => {
-    var t, n, r;
+    var t, n, i;
     let {
-      effect: i,
+      effect: r,
       onClick: l
     } = e, {
       deleteConfig: s
@@ -30,23 +30,23 @@ let b = "Make sure you're only uploading text files!",
     return (0, a.jsxs)(c.P3F, {
       className: f.previewCard,
       onClick: () => {
-        l(i)
+        l(r)
       },
       children: [(0, a.jsx)("div", {
         className: f.previewCardImage,
         style: {
-          backgroundImage: "url(".concat(null == (r = i.config) || null == (n = r.effects) || null == (t = n[0]) ? true : t.base64, ")")
+          backgroundImage: "url(".concat(null == (i = r.config) || null == (n = i.effects) || null == (t = n[0]) ? true : t.base64, ")")
         }
       }), (0, a.jsxs)("div", {
         className: f.previewCardFooter,
         children: [(0, a.jsx)(c.Text, {
           variant: "text-md/bold",
-          children: i.name
+          children: r.name
         }), (0, a.jsx)(c.Button, {
           variant: "critical-secondary",
           text: "Delete",
           onClick: e => {
-            e.preventDefault(), e.stopPropagation(), s(i.skuId)
+            e.preventDefault(), e.stopPropagation(), s(r.skuId)
           }
         })]
       })]
@@ -58,23 +58,23 @@ function j() {
     profileEffects: e,
     upsertConfig: t,
     clearAll: n
-  } = (0, Chunk373071.n6)(), [i, j] = Chunk647438.useState(), _ = Chunk647438.useRef(null), y = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [C, S] = Chunk647438.useState("");
+  } = (0, Chunk373071.n6)(), [r, j] = Chunk647438.useState(), _ = Chunk647438.useRef(null), y = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [C, S] = Chunk647438.useState("");
   Chunk647438.useEffect(() => {
     (0, Chunk365943.t)(true)
   }, []);
   let E = Chunk647438.useMemo(() => "" === C ? y : y.filter(e => {
-      var t, n, a, r;
-      let i = C.toLowerCase(),
+      var t, n, a, i;
+      let r = C.toLowerCase(),
         l = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
-        s = null != (r = null == (n = e.config.description) ? true : n.toLowerCase()) ? r : "";
-      return l.includes(i) || s.includes(i)
+        s = null != (i = null == (n = e.config.description) ? true : n.toLowerCase()) ? i : "";
+      return l.includes(r) || s.includes(r)
     }), [C, y]),
     T = Chunk647438.useCallback((e, n) => {
       if (null == n || !e.type.startsWith("text/")) return (0, m.Eo)(b);
-      let [a, r] = n.split(",");
+      let [a, i] = n.split(",");
       if (!a.includes("text/plain")) return (0, m.Eo)(b);
-      let i = JSON.parse(atob(r));
-      i.skuId = (0, s.Z)(), t(i), (0, m.XA)("Profile Effect (maybe??) imported!")
+      let r = JSON.parse(atob(i));
+      r.skuId = (0, s.Z)(), t(r), (0, m.XA)("Profile Effect (maybe??) imported!")
     }, [exports]),
     N = Chunk647438.useCallback(e => {
       var t;

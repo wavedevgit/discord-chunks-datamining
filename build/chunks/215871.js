@@ -21,7 +21,7 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.OVERLAY_PANE, {
   d = (0, Chunk509613.m7)(Chunk313789.n.OVERLAY_SIDEBAR_ITEM, {
     icon: Chunk657707.epB,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["9cb1Uz"]),
-    legacySearchKey: Chunk726985.s6.OVERLAY,
+    getLegacySearchKey: () => Chunk726985.s6.OVERLAY,
     usePredicate: Chunk168308.bC,
     buildLayout: () => [E]
   })

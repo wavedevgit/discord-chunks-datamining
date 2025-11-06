@@ -16,27 +16,28 @@ function s(t, e, n) {
         c = arguments.length > 2 && true !== arguments[2] && arguments[2],
         E = (null == (a = t.usePredicate) ? true : a.call(t)) === false || o,
         d = function(t, e, n, i) {
-          var s, a, o, c, E;
-          if (null != t.legacySearchKey) return e.length < 2 || i.has(t.legacySearchKey);
+          var s, a, o, c, E, d;
+          let S = null == (s = t.getLegacySearchKey) ? true : s.call(t);
+          if (null != S) return e.length < 2 || i.has(S);
           if (t.type === u.Jq.SECTION && t.hoisted) returntrue;
-          let d = "useTitle" in t ? null == (s = t.useTitle) ? true : s.call(t, false) : true,
-            S = "useNavigationTitle" in t ? null == (a = t.useNavigationTitle) ? true : a.call(t) : true,
-            T = "useSearchTerms" in t ? null == (o = t.useSearchTerms) ? true : o.call(t) : true;
-          if (n || null == d && null == S && null == T) returnfalse;
+          let T = "useTitle" in t ? null == (a = t.useTitle) ? true : a.call(t, false) : true,
+            O = "useNavigationTitle" in t ? null == (o = t.useNavigationTitle) ? true : o.call(t) : true,
+            g = "useSearchTerms" in t ? null == (c = t.useSearchTerms) ? true : c.call(t) : true;
+          if (n || null == T && null == O && null == g) returnfalse;
           if ("" === e) returntrue;
-          let O = e.toLowerCase();
-          for (let t of null != T ? T : [])
-            if (l()(O, t.toLowerCase())) returntrue;
-          let I = false;
-          if (null != d) {
-            let t = null == (c = (0, r.qgQ)(d)) ? true : c.toLowerCase();
-            null != t && (I = l()(O, t))
+          let I = e.toLowerCase();
+          for (let t of null != g ? g : [])
+            if (l()(I, t.toLowerCase())) returntrue;
+          let _ = false;
+          if (null != T) {
+            let t = null == (E = (0, r.qgQ)(T)) ? true : E.toLowerCase();
+            null != t && (_ = l()(I, t))
           }
-          if (null != S && !I) {
-            let t = null == (E = (0, r.qgQ)(S)) ? true : E.toLowerCase();
-            null != t && (I = l()(O, t))
+          if (null != O && !_) {
+            let t = null == (d = (0, r.qgQ)(O)) ? true : d.toLowerCase();
+            null != t && (_ = l()(I, t))
           }
-          return I
+          return _
         }(t, e, E, n) || c,
         S = false;
       if ((0, u.Lk)(t))

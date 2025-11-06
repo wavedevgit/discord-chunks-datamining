@@ -24,7 +24,7 @@ function b(e) {
   let {
     targetElementRef: n,
     onClose: b
-  } = e, [v, j] = r.useState(false), _ = (0, i.e7)([h.default], () => h.default.getId()), {
+  } = e, [v, j] = i.useState(false), _ = (0, r.e7)([h.default], () => h.default.getId()), {
     config: y,
     application: C
   } = (0, u.G)(), {
@@ -38,10 +38,10 @@ function b(e) {
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: r
+        markAsDismissed: i
       } = e;
       if (null == t) return null;
-      let i = t === l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
+      let r = t === l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
       return (0, a.jsx)(s.J2, {
         targetElementRef: n,
         position: "right",
@@ -53,15 +53,15 @@ function b(e) {
         title: f.intl.format(f.t.TXDztH, {
           applicationName: C.name
         }),
-        body: i ? f.intl.string(f.t["63Kso0"]) : f.intl.string(f.t.HwXoeC),
-        actions: [i ? {
+        body: r ? f.intl.string(f.t["63Kso0"]) : f.intl.string(f.t.HwXoeC),
+        actions: [r ? {
           text: f.intl.string(f.t.VSLDly),
           onClick: () => {
             j(true), (0, p.openUserProfileModal)({
               userId: _,
               section: g.oh.WIDGETS
             }).then(() => {
-              r(x.L.TAKE_ACTION), b()
+              i(x.L.TAKE_ACTION), b()
             }).finally(() => j(false))
           },
           loading: v
@@ -72,7 +72,7 @@ function b(e) {
               userId: _,
               section: g.oh.WIDGETS
             }).then(() => {
-              r(x.L.TAKE_ACTION), b()
+              i(x.L.TAKE_ACTION), b()
             }).finally(() => j(false))
           },
           loading: v

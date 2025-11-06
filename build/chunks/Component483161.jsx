@@ -35,7 +35,7 @@ let f = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
   b = (0, Chunk509613.m7)(Chunk313789.n.PROFILE_SIDEBAR_ITEM, {
     icon: Chunk657707.tBG,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+q"]),
-    legacySearchKey: Chunk726985.s6.PROFILE_CUSTOMIZATION,
+    getLegacySearchKey: () => Chunk726985.s6.PROFILE_CUSTOMIZATION,
     buildLayout: () => [N],
     stronglyDiscouragedCustomComponent: () => {
       var t;

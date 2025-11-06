@@ -27,7 +27,7 @@ function c() {
 function d(e) {
   let {
     riveName: t
-  } = e, n = i[t].riveSrc, c = r.useRef(null), d = (0, o.o8M)(n);
+  } = e, n = r[t].riveSrc, c = i.useRef(null), d = (0, o.o8M)(n);
   return (0, a.jsxs)(l.Kqy, {
     gap: 8,
     children: [(0, a.jsx)("label", {
@@ -43,12 +43,12 @@ function d(e) {
           var t;
           let a = null == (t = e.target.files) ? true : t[0];
           if (null == a) return;
-          let r = new FileReader;
-          r.onload = e => {
+          let i = new FileReader;
+          i.onload = e => {
             var t;
             let a = null == (t = e.target) ? true : t.result;
             (0, o.JGI)(n, a)
-          }, r.readAsArrayBuffer(a)
+          }, i.readAsArrayBuffer(a)
         },
         ref: c
       }), (0, a.jsx)(s.hU, {

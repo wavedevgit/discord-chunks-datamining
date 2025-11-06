@@ -18,10 +18,10 @@ require.d(exports, {
     }));
     let O = e.layout.map(e => t(e, n, u, T)).filter(t => null != t);
     if (0 === O.length && !("render" in e || e.type === i.Jq.SIDEBAR_ITEM && "onClick" in e)) return null;
-    let I = r(l({}, e), {
+    let g = r(l({}, e), {
       layout: O
     });
-    return u.register(I, null == (s = T.panel) ? true : s.key, null == (a = T.category) ? true : a.key, null == (o = T.accordion) ? true : o.key), I
+    return u.register(g, null == (s = T.panel) ? true : s.key, null == (a = T.category) ? true : a.key, null == (o = T.accordion) ? true : o.key), g
   }
 });
 var Chunk28682 = require("./28682.js");

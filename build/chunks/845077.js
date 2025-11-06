@@ -19,8 +19,8 @@ async function l() {
   return 204 === module.status ? null : module.body
 }
 async function s(e) {
-  return (await r.Z.post({
-    url: i.ANM.SAFETY_FLOWS_TASK,
+  return (await i.Z.post({
+    url: r.ANM.SAFETY_FLOWS_TASK,
     body: e,
     trackedActionData: {
       event: a.NetworkActionNames.USER_VERIFY

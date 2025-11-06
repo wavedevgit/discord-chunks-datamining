@@ -20,7 +20,7 @@ let o = (0, Chunk509613.x1)(Chunk313789.n.DEVELOPER_OPTIONS_PANE, {
   E = (0, Chunk509613.m7)(Chunk313789.n.DEVELOPER_OPTIONS_SIDEBAR_ITEM, {
     icon: Chunk657707.Che,
     useTitle: () => "Developer Options",
-    legacySearchKey: Chunk726985.s6.DEVELOPER_OPTIONS,
+    getLegacySearchKey: () => Chunk726985.s6.DEVELOPER_OPTIONS,
     usePredicate: () => Chunk906467.Z.isDeveloper,
     buildLayout: () => [c]
   })

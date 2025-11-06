@@ -28,7 +28,7 @@ let d = (0, Chunk509613.x1)(Chunk313789.n.POGGERMODE_PANE, {
       className: Chunk781652.poggermodeIcon
     }),
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AtCukI),
-    legacySearchKey: Chunk726985.s6.POGGERMODE,
+    getLegacySearchKey: () => Chunk726985.s6.POGGERMODE,
     usePredicate: () => (0, Chunk442837.e7)([Chunk351780.Z], () => Chunk351780.Z.settingsVisible),
     buildLayout: () => [S]
   })

@@ -21,6 +21,6 @@ let o = (0, Chunk509613.x1)(Chunk313789.n.ACCOUNT_PANE, {
   E = (0, Chunk509613.m7)(Chunk313789.n.ACCOUNT_SIDEBAR_ITEM, {
     icon: Chunk657707.tBG,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["JAIM/m"]),
-    legacySearchKey: Chunk726985.s6.ACCOUNT,
+    getLegacySearchKey: () => Chunk726985.s6.ACCOUNT,
     buildLayout: () => [c]
   })

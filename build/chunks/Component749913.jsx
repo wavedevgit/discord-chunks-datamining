@@ -467,6 +467,7 @@ let eu = Chunk647438.memo(function(e) {
         direction: "horizontal",
         gap: 8,
         justify: "end",
+        fullWidth: false,
         children: [(0, r.jsx)(eh, {
           parentChannel: t
         }), (0, r.jsx)(e_, {

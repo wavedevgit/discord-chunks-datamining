@@ -23,7 +23,7 @@ let E = (0, Chunk509613.x1)(Chunk313789.n.APPEARANCE_PANE, {
   S = (0, Chunk509613.m7)(Chunk313789.n.APPEARANCE_SIDEBAR_ITEM, {
     icon: Chunk657707.V3v,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
-    legacySearchKey: Chunk726985.s6.APPEARANCE,
+    getLegacySearchKey: () => Chunk726985.s6.APPEARANCE,
     buildLayout: () => [d],
     trailing: {
       type: Chunk28682.PU.BADGE_NEW,

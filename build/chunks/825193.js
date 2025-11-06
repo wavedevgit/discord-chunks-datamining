@@ -20,6 +20,6 @@ let o = (0, Chunk509613.x1)(Chunk313789.n.ADVANCED_PANE, {
   E = (0, Chunk509613.m7)(Chunk313789.n.ADVANCED_SIDEBAR_ITEM, {
     icon: Chunk657707.xhG,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["8/udY0"]),
-    legacySearchKey: Chunk726985.s6.SETTINGS_ADVANCED,
+    getLegacySearchKey: () => Chunk726985.s6.SETTINGS_ADVANCED,
     buildLayout: () => [c]
   })

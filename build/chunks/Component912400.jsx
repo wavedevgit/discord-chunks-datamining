@@ -22,6 +22,6 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.AUTHORIZED_APPS_PANE, {
   d = (0, Chunk509613.m7)(Chunk313789.n.AUTHORIZED_APPS_SIDEBAR_ITEM, {
     icon: Chunk657707.jje,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["f6kk+r"]),
-    legacySearchKey: Chunk726985.s6.AUTHORIZED_APPS,
+    getLegacySearchKey: () => Chunk726985.s6.AUTHORIZED_APPS,
     buildLayout: () => [E]
   })

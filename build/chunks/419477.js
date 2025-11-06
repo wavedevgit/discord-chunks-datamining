@@ -22,7 +22,7 @@ let E = (0, Chunk509613.x1)(Chunk313789.n.GIFT_PANE, {
   S = (0, Chunk509613.m7)(Chunk313789.n.GIFT_SIDEBAR_ITEM, {
     icon: Chunk657707.OgN,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["jcSP+g"]),
-    legacySearchKey: Chunk726985.s6.GIFT_INVENTORY,
+    getLegacySearchKey: () => Chunk726985.s6.GIFT_INVENTORY,
     buildLayout: () => [d],
     trailing: {
       type: Chunk28682.PU.BADGE_COUNT,

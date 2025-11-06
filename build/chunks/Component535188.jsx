@@ -14,7 +14,7 @@ let l = e => {
     disabled: l
   } = e, {
     task: s
-  } = (0, r.T)(), o = i.o[s.ui_component.component.type];
+  } = (0, i.T)(), o = r.o[s.ui_component.component.type];
   return null == o ? null : (0, a.jsx)(o, {
     configData: s.ui_component.component.data,
     onSubmit: n,

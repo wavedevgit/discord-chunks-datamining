@@ -160,10 +160,10 @@ function c(e) {
   } = e;
   return fetch(t).then(e => e.arrayBuffer()).then(e => new Promise((t, n) => {
     let a = new Uint8Array(e);
-    i.Ri(a, (e, a) => {
+    r.Ri(a, (e, a) => {
       null != e && n(e);
-      let r = Object.keys(a).reduce((e, t) => {
-          var n, r;
+      let i = Object.keys(a).reduce((e, t) => {
+          var n, i;
           return n = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -181,27 +181,27 @@ function c(e) {
               })
             }
             return e
-          }({}, e), r = r = {
-            [t]: JSON.parse(i.T8(a[t]))
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+          }({}, e), i = i = {
+            [t]: JSON.parse(r.T8(a[t]))
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var a = Object.getOwnPropertySymbols(e);
               n.push.apply(n, a)
             }
             return n
-          })(Object(r)).forEach(function(e) {
-            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
+          })(Object(i)).forEach(function(e) {
+            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
           }), n
         }, {}),
-        l = r["manifest.json"];
-      t(r["animations/".concat(l.animations[0].id, ".json")])
+        l = i["manifest.json"];
+      t(i["animations/".concat(l.animations[0].id, ".json")])
     })
   }))
 }
 
 function d() {
-  let [e, t] = Chunk647438.useState(true), [n, i] = Chunk647438.useState(400), [d, u] = Chunk647438.useState(400);
+  let [e, t] = Chunk647438.useState(true), [n, r] = Chunk647438.useState(400), [d, u] = Chunk647438.useState(400);
   return (0, Chunk951288.jsx)("div", {
     style: {
       margin: 24
@@ -220,7 +220,7 @@ function d() {
         direction: "horizontal",
         children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
           value: require.toString(),
-          onChange: e => i(Number(e)),
+          onChange: e => r(Number(e)),
           label: "Width"
         }), (0, Chunk951288.jsx)(Chunk481060.oil, {
           value: d.toString(),
@@ -237,7 +237,7 @@ function d() {
               type: "application/json"
             }),
             a = URL.createObjectURL(require),
-            r = document.createElement("a");
+            i = document.createElement("a");
           Chunk647438.href = Chunk951288, Chunk647438.download = "".concat(module.split("/").pop(), ".json"), document.body.appendChild(Chunk647438), Chunk647438.click(), document.body.removeChild(Chunk647438), URL.revokeObjectURL(Chunk951288)
         },
         text: "Download"

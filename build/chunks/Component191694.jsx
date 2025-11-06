@@ -22,7 +22,7 @@ let E = (0, Chunk509613.x1)(Chunk313789.n.REGISTERED_GAMES_PANE, {
   S = (0, Chunk509613.m7)(Chunk313789.n.REGISTERED_GAMES_SIDEBAR_ITEM, {
     icon: Chunk657707.iWm,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AVDyEj),
-    legacySearchKey: Chunk726985.s6.REGISTERED_GAMES,
+    getLegacySearchKey: () => Chunk726985.s6.REGISTERED_GAMES,
     usePredicate: Chunk168308.Jw,
     buildLayout: () => [d]
   })

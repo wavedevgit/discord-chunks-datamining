@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
 function E() {
   var e;
   let t = (0, Chunk442837.Wu)([Chunk55589.Z], () => Chunk55589.Z.getSortedChannels()[1]),
-    [n, i] = Chunk647438.useState(exports.length > 0 ? exports[0].channelId : true),
+    [n, r] = Chunk647438.useState(exports.length > 0 ? exports[0].channelId : true),
     {
       selectedChannel: l,
       options: d
@@ -100,10 +100,10 @@ function T() {
 function N() {
   let e = (0, Chunk442837.e7)([Chunk432877.ZP], () => Chunk432877.ZP.allByCategory(Chunk432877.zU.MESSAGING), [], Chunk442837.pF).map(e => {
     let [t, n, {
-      label: r
+      label: i
     }] = e;
     return (0, a.jsx)(c.rsf, {
-      label: r,
+      label: i,
       description: t,
       checked: n,
       onChange: e => (0, v.Z)(t, e)

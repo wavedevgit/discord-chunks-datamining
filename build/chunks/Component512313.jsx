@@ -17,16 +17,16 @@ function m(e) {
   var t;
   let {
     setting: n,
-    depth: i,
+    depth: r,
     highlight: l
-  } = e, s = null == (t = r.useContext(h)) ? true : t.get(n), o = null;
+  } = e, s = null == (t = i.useContext(h)) ? true : t.get(n), o = null;
   return null != s && s.length > 0 && (o = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(m, {
     setting: e,
-    depth: i + 1,
+    depth: r + 1,
     highlight: l
   }, e))), (0, a.jsx)(c.r, {
     title: n,
-    initExpanded: i <= 2,
+    initExpanded: r <= 2,
     highlight: l,
     children: o
   })
@@ -36,14 +36,15 @@ function p(e) {
   let {
     setting: t,
     depth: n
-  } = e, r = (0, s.Lk)(t) && (t.type === s.Jq.SIDEBAR_ITEM && t.layout.some(e => null == e ? true : e.layout.some(e => null != e.render)) || t.type === s.Jq.PANEL && t.layout.some(e => null != e.render) || t.type === s.Jq.PANE && null != t.render), i = null;
+  } = e, i = (0, s.Lk)(t) && (t.type === s.Jq.SIDEBAR_ITEM && t.layout.some(e => null == e ? true : e.layout.some(e => null != e.render)) || t.type === s.Jq.PANEL && t.layout.some(e => null != e.render) || t.type === s.Jq.PANE && null != t.render), r = null;
   if ((0, s.Lk)(t)) {
-    var l, o;
-    0 === t.layout.length && (null == (o = t.parent) || null == (l = o.parent) ? true : l.legacySearchKey) != null ? i = (0, a.jsx)(m, {
-      setting: t.parent.parent.legacySearchKey,
+    var l, o, d;
+    let e = null == (d = t.parent) || null == (o = d.parent) || null == (l = o.getLegacySearchKey) ? true : l.call(o);
+    0 === t.layout.length && null != e ? r = (0, a.jsx)(m, {
+      setting: e,
       depth: n + 1,
       highlight: true
-    }) : t.layout.length > 0 && (i = t.layout.map(e => (0, a.jsx)(p, {
+    }) : t.layout.length > 0 && (r = t.layout.map(e => (0, a.jsx)(p, {
       setting: e,
       depth: n + 1
     }, e.key)))
@@ -51,8 +52,8 @@ function p(e) {
   return (0, a.jsx)(c.r, {
     title: t.key,
     initExpanded: n <= 2,
-    highlight: r,
-    children: i
+    highlight: i,
+    children: r
   })
 }
 let h = Chunk647438.createContext(null);

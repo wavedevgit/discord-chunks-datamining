@@ -34,10 +34,10 @@ class b extends(a = Chunk647438.PureComponent) {
       onCaptchaVerify: a
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk951288.Fragment, {
-      children: module.map(e => e === p.PUi.CAPTCHA ? (0, r.jsx)(d.Z, {
+      children: module.map(e => e === p.PUi.CAPTCHA ? (0, i.jsx)(d.Z, {
         onVerify: a,
         theme: n
-      }, t) : (0, r.jsx)(c.Button, {
+      }, t) : (0, i.jsx)(c.Button, {
         onClick: () => this.handleClick(e),
         text: m.Z.getButtonTitle(e)
       }, e))

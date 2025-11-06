@@ -22,7 +22,7 @@ let E = (0, Chunk509613.x1)(Chunk313789.n.STREAMER_MODE_PANE, {
   S = (0, Chunk509613.m7)(Chunk313789.n.STREAMER_MODE_SIDEBAR_ITEM, {
     icon: Chunk657707.m3e,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.S5GfOW),
-    legacySearchKey: Chunk726985.s6.STREAMER_MODE,
+    getLegacySearchKey: () => Chunk726985.s6.STREAMER_MODE,
     usePredicate: function() {
       return !(0, Chunk526665.BK)("StreamerModeSidebarItem")
     },

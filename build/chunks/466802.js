@@ -22,7 +22,7 @@ let E = (0, Chunk509613.x1)(Chunk313789.n.NITRO_PANE, {
   S = (0, Chunk509613.m7)(Chunk313789.n.NITRO_SIDEBAR_ITEM, {
     icon: Chunk657707.SrA,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.Ipxkog),
-    legacySearchKey: Chunk726985.s6.PREMIUM,
+    getLegacySearchKey: () => Chunk726985.s6.PREMIUM,
     buildLayout: () => [d],
     trailing: {
       type: Chunk28682.PU.STRONGLY_DISCOURAGED_CUSTOM,

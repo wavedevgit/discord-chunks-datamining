@@ -24,7 +24,7 @@ let d = (0, Chunk509613.x1)(Chunk313789.n.CLIPS_PANE, {
   T = (0, Chunk509613.m7)(Chunk313789.n.CLIPS_SIDEBAR_ITEM, {
     icon: Chunk657707.AlX,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.z2jK6X),
-    legacySearchKey: Chunk726985.s6.CLIPS,
+    getLegacySearchKey: () => Chunk726985.s6.CLIPS,
     buildLayout: () => [S],
     usePredicate: () => !(0, Chunk526665.BK)("ClipsPanel")
   })

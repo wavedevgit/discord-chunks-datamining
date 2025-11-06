@@ -21,6 +21,6 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.KEYBINDS_PANE, {
   d = (0, Chunk509613.m7)(Chunk313789.n.KEYBINDS_SIDEBAR_ITEM, {
     icon: Chunk657707.YiA,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.T9DA2K),
-    legacySearchKey: Chunk726985.s6.KEYBINDS,
+    getLegacySearchKey: () => Chunk726985.s6.KEYBINDS,
     buildLayout: () => [E]
   })

@@ -54,7 +54,7 @@ function j(e, t) {
 
 function _() {
   var e, t;
-  let [n, i] = (0, Chunk647438.useState)(false), [s, d] = (0, Chunk647438.useState)(false), [h, g] = (0, Chunk647438.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
+  let [n, r] = (0, Chunk647438.useState)(false), [s, d] = (0, Chunk647438.useState)(false), [h, g] = (0, Chunk647438.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
     setToolsCache: T,
     removeToolsCache: N
   } = (0, Chunk396821.L3)(), {
@@ -160,12 +160,12 @@ function _() {
 function y(e) {
   let {
     nameplate: t
-  } = e, [n, i] = (0, r.useState)(320), s = (0, r.useRef)(null), o = (0, r.useRef)(null), c = (0, r.useRef)(null), d = (0, r.useRef)(document), u = (0, r.useCallback)(e => {
+  } = e, [n, r] = (0, i.useState)(320), s = (0, i.useRef)(null), o = (0, i.useRef)(null), c = (0, i.useRef)(null), d = (0, i.useRef)(document), u = (0, i.useCallback)(e => {
     if (null != s.current) {
       let t = s.current.getBoundingClientRect();
-      i(Math.max(264, Math.min(432, e.clientX - t.left)))
+      r(Math.max(264, Math.min(432, e.clientX - t.left)))
     }
-  }, []), m = (0, r.useCallback)(e => {
+  }, []), m = (0, i.useCallback)(e => {
     e.preventDefault(), e.stopPropagation();
     let t = e.currentTarget.ownerDocument;
     d.current = t;
@@ -177,7 +177,7 @@ function y(e) {
       };
     o.current = n, c.current = a, t.addEventListener("mousemove", n), t.addEventListener("mouseup", a)
   }, [u]);
-  return (0, r.useEffect)(() => () => {
+  return (0, i.useEffect)(() => () => {
     null != o.current && (d.current.removeEventListener("mousemove", o.current), o.current = null), null != c.current && (d.current.removeEventListener("mouseup", c.current), c.current = null)
   }, []), (0, a.jsx)(l.zJl, {
     className: b.previewsContainer,
@@ -215,12 +215,12 @@ function C(e) {
   let {
     src: t,
     onSetStatic: n,
-    removeAsset: r
+    removeAsset: i
   } = e;
   return (0, a.jsxs)("div", {
     className: b.uploaded,
     children: [(0, a.jsx)(l.P3F, {
-      onClick: () => r(t),
+      onClick: () => i(t),
       className: b.xicon,
       children: (0, a.jsx)(l.Dio, {
         size: "custom",
@@ -287,7 +287,7 @@ function E(e) {
 function T(e) {
   let {
     nameplate: t
-  } = e, n = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+  } = e, n = (0, r.e7)([d.default], () => d.default.getCurrentUser());
   return (0, a.jsx)("div", {
     className: b.preview,
     children: (0, a.jsxs)("div", {

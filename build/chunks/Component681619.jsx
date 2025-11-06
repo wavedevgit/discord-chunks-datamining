@@ -14,12 +14,12 @@ function c(e) {
   let {
     columns: t,
     data: n,
-    className: i,
+    className: r,
     rowClassName: c,
     onClickRow: d,
     selectedRowKey: u,
     rowHeight: m = 40
-  } = e, p = r.useMemo(() => t.map(e => (function(e) {
+  } = e, p = i.useMemo(() => t.map(e => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         a = Object.keys(n);
@@ -45,26 +45,26 @@ function c(e) {
   return (0, a.jsx)("div", {
     className: o.tableContainer,
     children: (0, a.jsx)(s.Tvr, {
-      className: i,
+      className: r,
       innerClassName: o.table,
       sections: h,
       sectionHeight: 40,
       renderSection: e => {
         let {
           section: t
-        } = e, r = o.tableHeader;
+        } = e, i = o.tableHeader;
         return (0, a.jsx)("div", {
-          className: r,
+          className: i,
           children: p.map(e => {
-            var r, i;
+            var i, r;
             let l = e.cellClassName,
               s = {
-                width: "calc(".concat(null != (i = e.cellWidth) ? i : "1fr", " - ").concat(16, "px)")
+                width: "calc(".concat(null != (r = e.cellWidth) ? r : "1fr", " - ").concat(16, "px)")
               };
             return (0, a.jsx)("div", {
               className: l,
               style: s,
-              children: null == (r = e.renderHeader) ? true : r.call(e, e, n)
+              children: null == (i = e.renderHeader) ? true : i.call(e, e, n)
             }, "dev-tools-th-".concat(t, "-").concat(e.key))
           })
         }, "dev-tools-header-".concat(t))
@@ -73,27 +73,27 @@ function c(e) {
       renderRow: e => {
         let {
           rowIndex: t
-        } = e, r = n[t];
-        if (null == r) return null;
-        let i = r.key,
+        } = e, i = n[t];
+        if (null == i) return null;
+        let r = i.key,
           h = l()(o.tableRow, {
-            [o.selectedTableRow]: i === u,
+            [o.selectedTableRow]: r === u,
             rowClassName: c
           });
         return (0, a.jsx)(s.P3F, {
           className: h,
-          onClick: () => null == d ? true : d(r),
+          onClick: () => null == d ? true : d(i),
           children: p.map(e => {
-            var n, i;
+            var n, r;
             let l = e.cellClassName,
               s = {
-                width: "calc(".concat(null != (i = e.cellWidth) ? i : "1fr", " - ").concat(16, "px)"),
+                width: "calc(".concat(null != (r = e.cellWidth) ? r : "1fr", " - ").concat(16, "px)"),
                 height: "calc(".concat(m, "px - ").concat(16, "px)")
               };
             return (0, a.jsx)("div", {
               className: l,
               style: s,
-              children: null == (n = e.render) ? true : n.call(e, r, true, t)
+              children: null == (n = e.render) ? true : n.call(e, i, true, t)
             }, "dev-tools-td-".concat(t, "-").concat(e.key))
           })
         }, "dev-tools-tr-".concat(t))

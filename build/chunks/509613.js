@@ -35,7 +35,7 @@ require.d(exports, {
     return e
   },
   UO: () => A,
-  ax: () => g,
+  ax: () => I,
   k4: () => S,
   m7: () => o,
   qs: () => _,
@@ -121,33 +121,33 @@ function O(t, e) {
   return u(t, i.Jq.LIST, e)
 }
 
-function I(t, e, n) {
+function g(t, e, n) {
   return r(l({}, n), {
     key: t,
     type: e
   })
 }
 
-function g(t, e) {
-  return I(t, i.Jq.BUTTON, e)
+function I(t, e) {
+  return g(t, i.Jq.BUTTON, e)
 }
 
 function _(t, e) {
-  return I(t, i.Jq.TOGGLE, e)
+  return g(t, i.Jq.TOGGLE, e)
 }
 
 function A(t, e) {
-  return I(t, i.Jq.SLIDER, e)
+  return g(t, i.Jq.SLIDER, e)
 }
 
 function f(t, e) {
-  return I(t, i.Jq.SELECT, e)
+  return g(t, i.Jq.SELECT, e)
 }
 
 function N(t, e) {
-  return I(t, i.Jq.RADIO, e)
+  return g(t, i.Jq.RADIO, e)
 }
 
 function b(t, e) {
-  return I(t, i.Jq.CUSTOM, e)
+  return g(t, i.Jq.CUSTOM, e)
 }

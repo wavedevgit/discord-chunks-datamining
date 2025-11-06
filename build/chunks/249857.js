@@ -21,7 +21,7 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.WINDOWS_PANE, {
   d = (0, Chunk509613.m7)(Chunk313789.n.WINDOWS_SIDEBAR_ITEM, {
     icon: Chunk657707.pzj,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.ZkDZov),
-    legacySearchKey: Chunk726985.s6.WINDOW_SETTINGS,
+    getLegacySearchKey: () => Chunk726985.s6.WINDOW_SETTINGS,
     usePredicate: () => Chunk358085.isPlatformEmbedded && (0, Chunk358085.isWindows)(),
     buildLayout: () => [E]
   })

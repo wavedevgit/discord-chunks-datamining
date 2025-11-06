@@ -24,7 +24,7 @@ let d = (0, Chunk509613.x1)(Chunk313789.n.SESSIONS_PANE, {
   T = (0, Chunk509613.m7)(Chunk313789.n.SESSIONS_SIDEBAR_ITEM, {
     icon: Chunk657707.dW3,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
-    legacySearchKey: Chunk726985.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
+    getLegacySearchKey: () => Chunk726985.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
     buildLayout: () => [S],
     trailing: {
       type: Chunk28682.PU.BADGE_NEW,

@@ -21,6 +21,6 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANE, {
   d = (0, Chunk509613.m7)(Chunk313789.n.PREMIUM_GUILD_SUBSCRIPTIONS_SIDEBAR_ITEM, {
     icon: Chunk657707.Ucv,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+CbP2v"]),
-    legacySearchKey: Chunk726985.s6.GUILD_BOOSTING,
+    getLegacySearchKey: () => Chunk726985.s6.GUILD_BOOSTING,
     buildLayout: () => [E]
   })

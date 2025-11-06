@@ -21,6 +21,6 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.LOCALE_PANE, {
   d = (0, Chunk509613.m7)(Chunk313789.n.LOCALE_SIDEBAR_ITEM, {
     icon: Chunk657707.os0,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.IHMsPn),
-    legacySearchKey: Chunk726985.s6.LANGUAGE,
+    getLegacySearchKey: () => Chunk726985.s6.LANGUAGE,
     buildLayout: () => [E]
   })
