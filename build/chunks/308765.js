@@ -226,7 +226,7 @@ let i = {
   },
   OverlayKeybindExperimentManager: {
     actions: ["POST_CONNECTION_OPEN", "EXPERIMENTS_FETCH_SUCCESS", "EXPERIMENT_OVERRIDE_BUCKET", "KEYBINDS_SET_KEYBIND", "OVERLAY_READY"],
-    inlineRequire: () => require("./991186.js").Z,
+    inlineRequire: () => require("./991186.js").ZP,
     neverLoadBeforeConnectionOpen: true
   },
   OverlayNegativeWidgetExperimentManager: {

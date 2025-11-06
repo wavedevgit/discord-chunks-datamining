@@ -8,7 +8,8 @@ require.d(exports, {
   Kd: () => k,
   UR: () => v,
   d2: () => j,
-  dU: () => T
+  dU: () => T,
+  m3: () => G
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./415506.js"), require("./539854.js"), require("./781311.js");
 var Chunk921738 = require("./921738.js"),
   i = require.n(Chunk921738),
@@ -259,4 +260,12 @@ function U(e) {
       return t === d.Mo.MOUSE_BUTTON ? "mouse".concat(n) : t === d.Mo.GAMEPAD_BUTTON ? "gamepad".concat(n) : "dev".concat(t, ",").concat(n)
     }).filter(l.lm);
   return t ? (false !== n.g.navigator.appVersion.indexOf("Mac OS X") ? r.map(w) : r).join(" + ").toUpperCase() : r.join("+")
+}
+
+function G(e, t) {
+  let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
+  return e.length === t.length && e.every((e, r) => {
+    let [i, a, o] = e, [s, l, c] = t[r];
+    return i === s && a === l && (!n || o === c)
+  })
 }
