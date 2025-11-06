@@ -165,7 +165,7 @@ let tr = (0, Chunk951752.l)(e => {
         urlOrigin: "deeplink"
       })
     }), (0, r.jsx)(g.Z, {
-      deepLinkType: e7.jE.USER_SETTINGS,
+      deepLinkType: e9.jE.USER_SETTINGS,
       path: t.pathname,
       search: t.search,
       paramsBuilder: function(e, t, n) {
@@ -419,7 +419,7 @@ let tc = [{
       guildId: n,
       channelId: i
     } = t.params;
-    (0, eu.c)(e9.M5.MARKETING_UNCLAIMED);
+    (0, eu.c)(e7.M5.MARKETING_UNCLAIMED);
     let l = e2.Z5c.CHANNEL(n, i);
     return (0, r.jsx)(a.l_, {
       to: l

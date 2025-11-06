@@ -71,9 +71,9 @@ function M(e) {
   } = e, {
     analyticsLocations: U,
     newestAnalyticsLocation: B
-  } = (0, d.ZP)(), V = (0, g.Dt)({
+  } = (0, d.ZP)(), F = (0, g.Dt)({
     channel: t
-  }), F = (0, a.e7)([_.Z], () => _.Z.isInProgress());
+  }), V = (0, a.e7)([_.Z], () => _.Z.isInProgress());
 
   function H() {
     (0, y.R6)(t, true, "Plus Button")
@@ -283,18 +283,18 @@ function M(e) {
             action: () => (0, g.$f)({
               channel: t
             }),
-            children: V
+            children: F
           }, "scheduled_message");
         case S.r.SUMMARIZE_THREAD:
           return (0, r.jsx)(s.sNh, {
             id: "summarize_thread",
             label: i,
             action: () => b.Z.summarizeThread(t),
-            icon: F ? (0, r.jsx)(s.$jN, {
+            icon: V ? (0, r.jsx)(s.$jN, {
               type: s.RAz.PULSING_ELLIPSIS
             }) : null,
-            disabled: F,
-            children: F ? null : (0, r.jsxs)(r.Fragment, {
+            disabled: V,
+            children: V ? null : (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(s.sNh, {
                 id: "summarize_thread_for_everyone",
                 label: T.intl.string(T.t.eCzSdd),

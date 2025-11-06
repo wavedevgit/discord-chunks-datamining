@@ -146,12 +146,12 @@ let L = Chunk647438.forwardRef(function(e, t) {
     return () => clearTimeout(e)
   }, []);
   let {
-    enabled: V
+    enabled: F
   } = P.c.useExperiment({
     location: "ActivitiesMiniShelf"
   }, {
     autoTrackExposure: true
-  }), F = i.useCallback(() => {
+  }), V = i.useCallback(() => {
     (0, _.Z)({
       context: null != l ? {
         type: "channel",
@@ -167,7 +167,7 @@ let L = Chunk647438.forwardRef(function(e, t) {
       channel_id: l.id,
       guild_id: l.getGuildId()
     })
-  }, [c, l]), G = V ? p.iWm : p.nG3;
+  }, [c, l]), G = F ? p.iWm : p.nG3;
   return (0, r.jsx)(m.Gt, {
     value: R,
     children: (0, r.jsx)(E.Z, {
@@ -201,7 +201,7 @@ let L = Chunk647438.forwardRef(function(e, t) {
               })]
             }), (0, r.jsxs)(p.P3F, {
               className: M.titleRight,
-              onClick: F,
+              onClick: V,
               children: [(0, r.jsx)(p.Text, {
                 variant: "eyebrow",
                 children: w.intl.string(w.t["K8+z4S"])

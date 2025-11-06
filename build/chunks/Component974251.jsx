@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk90274 = require("./90274.js");
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -100,7 +100,7 @@ let G = Chunk647438.memo(function(e) {
       let {
         default: e
       } = await Promise.all([n.e("61342"), n.e("69311")]).then(n.bind(n, 542055));
-      return t => (0, r.jsx)(e, H(F({}, t), {
+      return t => (0, r.jsx)(e, H(V({}, t), {
         channelId: W.id,
         onClipClick: e => el({
           clips: [e]
@@ -150,7 +150,7 @@ let G = Chunk647438.memo(function(e) {
   let eP = (0, r.jsx)(c.svS, {
       size: "refresh_sm",
       color: "currentColor",
-      colorClass: V.attachButtonPlus
+      colorClass: F.attachButtonPlus
     }),
     eI = (0, r.jsx)(c.yRy, {
       targetElementRef: Q,
@@ -172,12 +172,12 @@ let G = Chunk647438.memo(function(e) {
       renderPopout: e => {
         switch (eu) {
           case "recentClips":
-            return (0, r.jsx)(g.Z, H(F({}, e), {
+            return (0, r.jsx)(g.Z, H(V({}, e), {
               onOpenClips: eb,
               lastClipsSession: et
             }));
           case "attachMenu":
-            return (0, r.jsx)(R.Z, H(F({}, e), {
+            return (0, r.jsx)(R.Z, H(V({}, e), {
               onClose: () => ed(null),
               options: eS,
               channel: W,
@@ -194,10 +194,10 @@ let G = Chunk647438.memo(function(e) {
             throw Error("Invalid popout type provided")
         }
       },
-      children: e => (0, r.jsx)(M.Z, H(F({
+      children: e => (0, r.jsx)(M.Z, H(V({
         ref: Q,
-        className: a()(V.attachButton, G),
-        childClassName: V.attachButtonInner,
+        className: a()(F.attachButton, G),
+        childClassName: F.attachButtonInner,
         isActive: false,
         "aria-label": B.intl.string(B.t.d56gCa),
         onDoubleClick: eh ? () => {
@@ -211,7 +211,7 @@ let G = Chunk647438.memo(function(e) {
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: V.uploadInput,
+      className: F.uploadInput,
       children: (0, r.jsx)(u.Z, {
         ref: J,
         onChange: e => {
@@ -227,15 +227,15 @@ let G = Chunk647438.memo(function(e) {
         "aria-hidden": true
       })
     }), (0, r.jsx)("div", {
-      className: V.attachWrapper,
+      className: F.attachWrapper,
       children: (0, r.jsx)(w.Z, {
         channel: W,
         isOmniMenuOpen: "attachMenu" === eu,
         openOmniMenu: () => ed("attachMenu"),
         enabled: eO,
-        animationContainerClassName: V.buttonAnimation,
-        glowClassName: V.buttonAnimationGlow,
-        trinketsClassName: V.buttonAnimationTrinkets,
+        animationContainerClassName: F.buttonAnimation,
+        glowClassName: F.buttonAnimationGlow,
+        trinketsClassName: F.buttonAnimationTrinkets,
         children: eI
       })
     })]

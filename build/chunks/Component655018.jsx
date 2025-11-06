@@ -75,8 +75,8 @@ function B(e) {
   var t, n, l, o;
   let {
     channel: B,
-    setIsHangStatusInputFocused: V,
-    setIsEmojiPickerOpen: F,
+    setIsHangStatusInputFocused: F,
+    setIsEmojiPickerOpen: V,
     setPopoutRef: H
   } = e, G = i.useRef(null), W = (0, u.e7)([C.Z], () => C.Z.getCustomHangStatus()), z = (0, j.Z)(), q = (0, u.e7)([C.Z], () => C.Z.getFavoritedStatuses()), {
     defaultStatusVariant: Y,
@@ -94,8 +94,8 @@ function B(e) {
     Q.trim().length > 0 && eu && ed(false), null == ee && eu && ed(false)
   }, [Q, ee, eu]), i.useEffect(() => {
     var e;
-    en || Q !== (null != (e = null == W ? true : W.status) ? e : "") && "" !== Q.trim() ? V(true) : V(false)
-  }, [Q, null == W ? true : W.status, ee, null == W ? true : W.emoji, V, en]), i.useEffect(() => {
+    en || Q !== (null != (e = null == W ? true : W.status) ? e : "") && "" !== Q.trim() ? F(true) : F(false)
+  }, [Q, null == W ? true : W.status, ee, null == W ? true : W.emoji, F, en]), i.useEffect(() => {
     null == H || H(null == J ? true : J.current)
   }, [J, H]);
   let eg = i.useCallback(e => {
@@ -145,11 +145,11 @@ function B(e) {
       })))
     }, [B.id, ep]),
     eO = i.useCallback(() => {
-      V(false)
-    }, [V]),
+      F(false)
+    }, [F]),
     ex = i.useCallback(() => {
-      V(true)
-    }, [V]),
+      F(true)
+    }, [F]),
     eE = i.useCallback((e, t, n) => {
       var i;
       let l = (0, x.Z)(e),
@@ -224,7 +224,7 @@ function B(e) {
                 setCustomStatusEmoji: et,
                 selectedDefaultStatus: en || ef ? null : ei,
                 defaultStatusVariant: Y,
-                setIsEmojiPickerOpen: F
+                setIsEmojiPickerOpen: V
               })
             },
             trailing: null == W && null == ei || ec ? ec ? {

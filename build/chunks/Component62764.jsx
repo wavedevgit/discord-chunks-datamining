@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk127947 = require("./127947.js"),
   Chunk577650 = require("./577650.js");
 
-function F(e) {
+function V(e) {
   let {
     channel: t
   } = e, l = t.isArchivedThread(), a = (0, E.P0)(t), [o, c] = i.useState(false), d = () => {
@@ -179,7 +179,7 @@ function H(e) {
           message: Y,
           channel: q,
           useChatFontScaling: false,
-          className: a()(V.secondary, U.addReactButton, {
+          className: a()(F.secondary, U.addReactButton, {
             [U.hasNoReactions]: !es
           }),
           isForumToolbar: true,
@@ -187,7 +187,7 @@ function H(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: U.buttons,
-        children: [et ? (0, r.jsx)(F, {
+        children: [et ? (0, r.jsx)(V, {
           channel: q
         }) : (0, r.jsx)(c.u, {
           text: k.intl.string(k.t.F7oeDv),

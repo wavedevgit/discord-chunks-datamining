@@ -1,4 +1,4 @@
-/** Chunk was on 65100 **/
+/** Chunk was on 29446 **/
 /** chunk id: 99843, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   j: () => b
@@ -24,10 +24,10 @@ let v = e => {
     return (0, p.m$)({
       channelId: t.id
     }) ? (0, i.jsx)(r.u, {
-      text: f.intl.string(f.t.QyZ4Td),
+      text: m.intl.string(m.t.QyZ4Td),
       children: (0, i.jsx)(a.tQf, {
         size: "xs",
-        "aria-label": f.intl.string(f.t.VHXh8a),
+        "aria-label": m.intl.string(m.t.VHXh8a),
         color: a.TVs.colors.INTERACTIVE_NORMAL
       })
     }) : null
@@ -39,7 +39,7 @@ let v = e => {
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(r.u, {
         asContainer: true,
-        text: f.intl.string(f.t["5Q9+/L"]),
+        text: m.intl.string(m.t["5Q9+/L"]),
         position: "bottom",
         children: (0, i.jsxs)(a.P3F, {
           className: g.hoverableContainer,
@@ -88,13 +88,13 @@ let v = e => {
           }),
           onDoubleClick: e => e.stopPropagation(),
           onMouseEnter: () => {
-            h.default.track(m.rMx.GDM_EDIT_INTERACTED, {
+            h.default.track(f.rMx.GDM_EDIT_INTERACTED, {
               channel_id: t.id,
               action: "entry_point_hovered",
               location: o.Z.HEADER_BAR
             })
           },
-          "aria-label": f.intl.string(f.t["5Q9+/L"]),
+          "aria-label": m.intl.string(m.t["5Q9+/L"]),
           children: [(0, i.jsx)(u.Z, {
             className: g.gdmIcon,
             "aria-hidden": true,
