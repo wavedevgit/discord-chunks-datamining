@@ -196,7 +196,7 @@ let F = function() {
     applicationId: e
   }), []), eb = el || es, ex = Chunk647438.useCallback(() => {
     null != (0, Chunk258971.Uc)() ? (0, Chunk703656.op)() : (0, Chunk133743.Yp)()
-  }, []), ev = (0, Chunk392711.debounce)(e => {
+  }, []), ev = Chunk647438.useMemo(() => (0, Chunk392711.debounce)(e => {
     let {
       scrollTop: t,
       offsetHeight: n,
@@ -207,7 +207,7 @@ let F = function() {
       scroll_visible_percentile: (t + n) / r,
       current_page: a
     })
-  }, 200), eC = Chunk647438.useCallback((e, t) => {
+  }, 200), []), eC = Chunk647438.useCallback((e, t) => {
     n(e), ev({
       scrollTop: e.currentTarget.scrollTop,
       offsetHeight: e.currentTarget.offsetHeight,

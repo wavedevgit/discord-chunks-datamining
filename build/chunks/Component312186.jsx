@@ -150,7 +150,7 @@ class Z extends Chunk647438.PureComponent {
       shouldShowKeybindIndicators: t,
       showKeybindIndicators: n,
       shouldShowInviteNotification: r
-    } = this.props, l = !Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.TextChat), a = module !== Chunk981631._vf.DISABLED;
+    } = this.props, o = !Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.TextChat), a = module !== Chunk981631._vf.DISABLED;
     return (0, Chunk951288.jsxs)(Chunk481060.C3N, {
       children: [(0, Chunk951288.jsx)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t.IQv8Eo),
@@ -286,12 +286,12 @@ function j(e) {
   } = e, {
     avatarSizeMode: n,
     displayNameMode: r,
-    displayUserMode: o,
+    displayUserMode: l,
     notificationPositionMode: s,
     textChatDisabled: a,
     shouldShowKeybindIndicators: c,
     shouldShowInviteNotification: d
-  } = (0, l.cj)([h.default, y.Z], () => ({
+  } = (0, o.cj)([h.default, y.Z], () => ({
     avatarSizeMode: h.default.getAvatarSizeMode(),
     displayNameMode: h.default.getDisplayNameMode(),
     displayUserMode: h.default.getDisplayUserMode(),
@@ -306,7 +306,7 @@ function j(e) {
     onClose: t,
     avatarSizeMode: n,
     displayNameMode: r,
-    displayUserMode: o,
+    displayUserMode: l,
     notificationPositionMode: s,
     textChatDisabled: a,
     shouldShowKeybindIndicators: c,

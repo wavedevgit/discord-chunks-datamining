@@ -17,18 +17,15 @@ function s(e) {
       errorMessage: c,
       handleValidateKeywords: d
     } = function(e) {
-      let [t, n] = r.useState(null), a = r.useRef(null);
+      let [t, n] = r.useState(null);
       return {
         errorMessage: t,
-        handleValidateKeywords: r.useCallback(() => (0, i.debounce)(t => {
-          clearTimeout(a.current), a.current = setTimeout(() => {
-            try {
-              (0, l.km)(t, e), n(null)
-            } catch (e) {
-              n(e.message)
-            }
-            clearTimeout(a.current)
-          }, 500)
+        handleValidateKeywords: r.useMemo(() => (0, i.debounce)(t => {
+          try {
+            (0, l.km)(t, e), n(null)
+          } catch (e) {
+            n(e.message)
+          }
         }, 300, {
           leading: true,
           trailing: true
@@ -43,7 +40,7 @@ function s(e) {
       let n = t.currentTarget.value;
       "insertFromPaste" === t.nativeEvent.inputType && (n = u(n));
       let r = (0, a.Ac)(n);
-      o(n), e(r), d()(r)
+      o(n), e(r), d(r)
     }, [d, u, e])
   }
 }

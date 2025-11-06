@@ -91,7 +91,9 @@ let d = Chunk647438.forwardRef(function(e, t) {
           })
         }
         return e
-      }({}, N), s = s = {
+      }({
+        "data-migration-pending": true
+      }, N), s = s = {
         buttonRef: t,
         look: o.zx.Looks.BLANK,
         size: o.zx.Sizes.NONE,

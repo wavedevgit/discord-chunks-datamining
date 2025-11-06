@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js");
 var i, Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  l = require.n(Chunk392711),
   Chunk374470 = require("./374470.js"),
   Chunk902704 = require("./902704.js"),
   Chunk846519 = require("./846519.js"),
@@ -103,7 +103,7 @@ class E extends(i = Chunk647438.PureComponent) {
     (0, Chunk671999.J)(module, m.x, m.y)
   }
   constructor(...e) {
-    super(...e), g(this, "zone", o().uniqueId("ClickArea")), g(this, "interval", new c.Xp), g(this, "updateZone", () => {
+    super(...e), g(this, "zone", l().uniqueId("ClickArea")), g(this, "interval", new c.Xp), g(this, "updateZone", () => {
       let e = this.props.contentDomRef.current;
       if ((0, s.kK)(e)) {
         let {

@@ -46,19 +46,19 @@ function g(e) {
       className: p.notificationBody,
       children: [(0, i.jsx)("div", {
         className: p.iconContainer,
-        children: (0, i.jsx)(l.S6n, {
+        children: (0, i.jsx)(o.S6n, {
           size: "custom",
           color: "currentColor",
           height: 28,
           width: 28
         })
-      }), (0, i.jsx)(l.Text, {
+      }), (0, i.jsx)(o.Text, {
         variant: "text-sm/normal",
         children: h.intl.string(h.t.EFRNtK)
       })]
     }),
     onDismissClick: (e, n) => {
-      r("dismiss"), t(u.L.DISMISS), o.Z.updateNotificationStatus(n)
+      r("dismiss"), t(u.L.DISMISS), l.Z.updateNotificationStatus(n)
     },
     onNotificationShow: () => {
       t(u.L.AUTO_DISMISS), n()

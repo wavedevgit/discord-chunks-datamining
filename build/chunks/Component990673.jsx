@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk382790 = require("./382790.jsx"),
   Chunk430036 = require("./430036.jsx"),
   Chunk518084 = require("./518084.jsx"),
@@ -21,8 +21,8 @@ function d(e) {
     className: u
   } = e;
   return (0, i.jsxs)(a.ZP, {
-    className: l()(c.wrapper, u),
-    children: [(0, i.jsx)(o.Z, {
+    className: o()(c.wrapper, u),
+    children: [(0, i.jsx)(l.Z, {
       contained: true,
       dragStart: t,
       locked: d

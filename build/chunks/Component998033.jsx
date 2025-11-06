@@ -26,7 +26,7 @@ function O(e, t, n, O) {
     icon: v,
     title: b,
     body: E
-  } = (0, l.Xi)(e, t, n), {
+  } = (0, o.Xi)(e, t, n), {
     trackView: S,
     trackClick: x
   } = (0, f.R)(m.n0.TextChat, {
@@ -53,7 +53,7 @@ function O(e, t, n, O) {
       O && (0, a.GN)(c.Ay, c.yk), S()
     },
     onNotificationClick: () => {
-      if (o.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {
+      if (l.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {
         let n = (0, p.getPID)();
         d.default.isInstanceLocked() ? (x("unlock"), r.Z.setInputLocked(false, n)) : (x("jump"), (0, s.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.ZP.focus())
       } else(0, s.uL)(g.Z5c.CHANNEL(e.guild_id, e.id)), x("jump"), d.default.isInstanceLocked() && r.Z.setInstanceLocked(false)

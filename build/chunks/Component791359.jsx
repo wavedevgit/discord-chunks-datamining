@@ -64,7 +64,7 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
         in_voice_channel: y,
         games_detected: e
       })
-    }, [_, b, O, y, g]), P = o()(j, A);
+    }, [_, b, O, y, g]), P = i.useMemo(() => o()(j, A), [j]);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: s,
       position: "left",

@@ -153,7 +153,9 @@ function A(e) {
         },
         children: e => (0, r.jsx)("div", {
           ref: A,
-          children: (0, r.jsx)(d.zx, x(P(x(P({}, e), {
+          children: (0, r.jsx)(d.zx, x(P(x(P({
+            "data-migration-pending": true
+          }, e), {
             className: a()(j.button, j.buttonColor, {
               [j.greyButtonActive]: D,
               [j.disabled]: R

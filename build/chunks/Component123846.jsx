@@ -152,13 +152,13 @@ function D(e) {
     selectedJoinSourceType: P
   } = a, I = null != P && P !== j.gq.UNSPECIFIED, V = (0, d.e7)([b.Z], () => b.Z.hideInstantInvites, []);
   V && (c = []);
-  let M = s()(e => {
+  let M = l.useMemo(() => s()(e => {
     let t = e.trim();
     (0, g.Dr)(n, {
       selectedSourceInviteCode: "" !== t ? t : true,
       selectedJoinSourceType: true
     })
-  }, 300);
+  }, 300), [n]);
   l.useEffect(() => () => {
     M.cancel()
   }, [M]);

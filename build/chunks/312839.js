@@ -46,13 +46,13 @@ function d(e, t) {
 function u(e, t) {
   return {
     trackView() {
-      let n = l.default.isInstanceLocked() ? s.Sbl.LOCKED_OVERLAY : s.Sbl.UNLOCKED_OVERLAY;
+      let n = o.default.isInstanceLocked() ? s.Sbl.LOCKED_OVERLAY : s.Sbl.UNLOCKED_OVERLAY;
       i.Z.track(s.rMx.NOTIFICATION_VIEWED, d(c({}, t), {
         location: n
       })), i.Z.notificationEvent(e, a.bv.Viewed)
     },
     trackClick(n) {
-      let r = l.default.isInstanceLocked() ? s.Sbl.LOCKED_OVERLAY : s.Sbl.UNLOCKED_OVERLAY;
+      let r = o.default.isInstanceLocked() ? s.Sbl.LOCKED_OVERLAY : s.Sbl.UNLOCKED_OVERLAY;
       i.Z.track(s.rMx.NOTIFICATION_CLICKED, d(c({}, t), {
         location: r,
         action_type: n

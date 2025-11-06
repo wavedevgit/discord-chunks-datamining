@@ -21,7 +21,7 @@ let u = e => "".concat(e.toFixed(0), "%"),
       onInteraction: _,
       renderValue: p = u,
       "aria-label": h
-    } = e, m = i.useRef(null), g = i.useRef(o().debounce(() => null == _ ? true : _(s.U.SLIDER), 100));
+    } = e, m = i.useRef(null), g = i.useMemo(() => o().debounce(() => null == _ ? true : _(s.U.SLIDER), 100), [_]);
     i.useImperativeHandle(t, () => ({
       focus: () => {
         var e;
@@ -34,7 +34,7 @@ let u = e => "".concat(e.toFixed(0), "%"),
       activate: () => false
     }), []);
     let E = e => {
-      f(e), g.current()
+      f(e), g()
     };
     return (0, r.jsx)("div", {
       className: c.sliderContainer,

@@ -43,7 +43,7 @@ class b extends(i = Chunk647438.PureComponent) {
       locked: t,
       contained: n,
       className: i
-    } = this.props, l = null != module ? (0, Chunk951288.jsx)(Chunk178528.Z, {
+    } = this.props, o = null != module ? (0, Chunk951288.jsx)(Chunk178528.Z, {
       guildId: module,
       onDragStart: this.onDragStart
     }, module) : (0, Chunk951288.jsx)(Chunk711553.Z, {
@@ -51,7 +51,7 @@ class b extends(i = Chunk647438.PureComponent) {
       renderSettings: v,
       onDragStart: this.onDragStart,
       children: (0, Chunk951288.jsx)(Chunk483962.Z, {})
-    }), o = require ? "div" : Chunk518084.ZP;
+    }), l = require ? "div" : Chunk518084.ZP;
     return (0, Chunk951288.jsxs)(Chunk120356, {
       className: s()(Chunk585816.base, {
         [Chunk585816.widget]: !require

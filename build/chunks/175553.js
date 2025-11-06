@@ -19,10 +19,10 @@ function c(e, t) {
     {
       trackView: u,
       trackClick: h
-    } = (0, l.R)(s.n0.ActivityUserJoin, {
+    } = (0, o.R)(s.n0.ActivityUserJoin, {
       notif_type: s.n0.ActivityUserJoin,
       notif_user_id: e.id,
-      activity_type: o.mFx.JOIN,
+      activity_type: l.mFx.JOIN,
       activity_name: t.name
     });
   return {

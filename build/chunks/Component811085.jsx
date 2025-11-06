@@ -39,7 +39,7 @@ function g() {
   Chunk647438.useEffect(() => {
     b();
     let e = (0, Chunk392711.debounce)(b, 100);
-    window.addEventListener("resize", module)
+    return window.addEventListener("resize", module), () => window.removeEventListener("resize", module)
   }, [b]);
   let y = {
       [Chunk531441.Sn.ALL_GOOD]: {

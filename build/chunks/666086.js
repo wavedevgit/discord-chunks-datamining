@@ -4,8 +4,8 @@
 require.d(exports, {
   Z: () => I
 }), require("./388685.js");
-var Chunk392711 = require("./392711.js"),
-  Chunk106351 = require("./106351.js"),
+var Chunk106351 = require("./106351.js"),
+  Chunk846519 = require("./846519.js"),
   Chunk904245 = require("./904245.js"),
   Chunk147913 = require("./147913.js"),
   Chunk622822 = require("./622822.js"),
@@ -34,26 +34,26 @@ let y = 50,
 class v extends Chunk147913.Z {
   isChannelEligible(e, t) {
     switch (e.type) {
-      case i.d.DM:
-      case i.d.GROUP_DM:
+      case r.d.DM:
+      case r.d.GROUP_DM:
         returntrue;
-      case i.d.GUILD_TEXT:
+      case r.d.GUILD_TEXT:
         let n = f.Z.getGuild(t),
-          r = u.Z.getMemberCount(t);
-        return null != r && r <= y && (null == n ? true : n.rulesChannelId) !== e.id && !(0, s.Y3)(e) && !(0, l.Z)(e) && null == e.linkedLobby;
+          i = u.Z.getMemberCount(t);
+        return null != i && i <= y && (null == n ? true : n.rulesChannelId) !== e.id && !(0, s.Y3)(e) && !(0, l.Z)(e) && null == e.linkedLobby;
       default:
         returnfalse
     }
   }
-  maybeSendGiftingPromptSystemMessageDebounced(e, t, n, i) {
-    (0, r.debounce)(() => {
-      let r = p.Z.getChannelId();
-      !g.Z.isGiftIntentMessageInCooldown(n) && e === r && _.Z.isReady(e) && (a.Z.sendGiftingPromptSystemMessage(e, {
+  maybeSendGiftingPromptSystemMessageDelayed(e, t, n, r) {
+    new i.sW(O, () => {
+      let i = p.Z.getChannelId();
+      !g.Z.isGiftIntentMessageInCooldown(n) && e === i && _.Z.isReady(e) && (a.Z.sendGiftingPromptSystemMessage(e, {
         giftIntentType: t,
         recipientUserId: n,
-        giftIntentSecondaryAction: i
+        giftIntentSecondaryAction: r
       }), (0, m.PV)(n))
-    }, O)()
+    }).delay()
   }
   handleChannelSelect(e, t) {
     let {
@@ -68,7 +68,7 @@ class v extends Chunk147913.Z {
         i = g.Z.getFriendAnniversaries().filter(e => t.has(e));
       if (n && i.length > 0) {
         let e = i[0];
-        this.maybeSendGiftingPromptSystemMessageDebounced(r.id, E.hX.FRIEND_ANNIVERSARY, e, i.length > 1 ? E.X2.VIEW_ALL : E.X2.SEND_MESSAGE)
+        this.maybeSendGiftingPromptSystemMessageDelayed(r.id, E.hX.FRIEND_ANNIVERSARY, e, i.length > 1 ? E.X2.VIEW_ALL : E.X2.SEND_MESSAGE)
       }
     }
   }

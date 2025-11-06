@@ -36,15 +36,15 @@ let E = {
       dragging: t,
       locked: n,
       pinned: r,
-      dragStart: l,
-      className: o
+      dragStart: o,
+      className: l
     } = e;
     return (0, i.jsx)(O.Z, {
-      dragStart: l,
+      dragStart: o,
       locked: n,
       pinned: r,
       dragging: t,
-      className: o
+      className: l
     })
   },
   [Chunk981631.Odu.GUILDS](e) {
@@ -64,14 +64,14 @@ let E = {
       id: t,
       anchor: n,
       isPreviewingInGame: r,
-      locked: l,
-      pinned: o
+      locked: o,
+      pinned: l
     } = e;
     return (0, i.jsx)(_.Z, {
       anchor: n,
       id: t,
-      locked: l,
-      pinned: o,
+      locked: o,
+      pinned: l,
       widget: v.Odu.VOICE,
       isPreviewingInGame: r
     })
@@ -81,14 +81,14 @@ let E = {
       dragging: t,
       locked: n,
       dragStart: r,
-      className: l
+      className: o
     } = e;
     return (0, i.jsx)(m.Z, {
       dragStart: r,
       dragging: t,
       locked: n,
       pinned: false,
-      className: l
+      className: o
     })
   }
 };
@@ -105,14 +105,14 @@ class S extends Chunk647438.PureComponent {
         isPreviewingInGame: r
       },
       state: {
-        dragging: l
+        dragging: o
       }
-    } = this, o = E[e.type];
-    return null == o ? null : s => o({
+    } = this, l = E[e.type];
+    return null == l ? null : s => l({
       id: e.id,
       locked: i,
       pinned: e.pinned,
-      dragging: l,
+      dragging: o,
       isPreviewingInGame: r,
       anchor: t,
       size: n,
@@ -125,8 +125,8 @@ class S extends Chunk647438.PureComponent {
       widgetConfig: t,
       layoutSize: n,
       locked: r,
-      isPreviewingInGame: l,
-      isActiveRegion: o
+      isPreviewingInGame: o,
+      isActiveRegion: l
     } = this.props;
     if (null == module || null == exports) return null;
     let {
@@ -178,29 +178,29 @@ class S extends Chunk647438.PureComponent {
     }), b(this, "handleUpdate", (e, t, n, i, r) => {
       let {
         props: {
-          layoutSize: l
+          layoutSize: o
         },
         state: {
           lastLayoutUpdate: s
         }
       } = this;
-      if (!(0, f.validResolution)(l)) return;
-      let a = (0, p.jL)(n, l),
-        u = (0, p.Ox)(i, l);
-      (0, o.Os)(t), (0, o.nv)({
+      if (!(0, f.validResolution)(o)) return;
+      let a = (0, p.jL)(n, o),
+        u = (0, p.Ox)(i, o);
+      (0, l.Os)(t), (0, l.nv)({
         widgetId: t,
         anchor: a,
         size: u
       });
       let h = e === c.B.MOVE,
-        g = (0, p.PY)(n, l.width, l.height, r.width, r.height);
+        g = (0, p.PY)(n, o.width, o.height, r.width, r.height);
       this.setState({
         lastLayoutUpdate: {
           was_resized: null != s && s.was_resized || !h,
           was_dragged: null != s && s.was_dragged || h,
           widget_type: d.Z.getWidgetType(t),
-          window_width: l.width,
-          window_height: l.height,
+          window_width: o.width,
+          window_height: o.height,
           widget_width: r.width,
           widget_height: r.height,
           widget_left: g.left,
@@ -211,7 +211,7 @@ class S extends Chunk647438.PureComponent {
       let {
         layoutSize: t
       } = this.props;
-      (0, f.validResolution)(t) && (0, o.Os)(e)
+      (0, f.validResolution)(t) && (0, l.Os)(e)
     }), b(this, "handleDragStart", () => {
       let {
         widget: e

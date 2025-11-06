@@ -87,13 +87,13 @@ function g(e) {
     }),
     confirmText: t ? p.intl.string(p.t.TxyTbk) : true,
     onConfirmClick: t ? () => {
-      v("unlock"), l.Z.setInputLocked(false, (0, d.getPID)())
+      v("unlock"), o.Z.setInputLocked(false, (0, d.getPID)())
     } : true,
     onNotificationShow: () => {
-      _(), t && (0, o.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
+      _(), t && (0, l.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
     },
     onNotificationClick: (e, t) => {
-      v("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? l.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && l.Z.setInstanceLocked(false)
+      v("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? o.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && o.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
       v("dismiss")

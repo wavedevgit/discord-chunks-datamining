@@ -1,15 +1,16 @@
 /** Chunk was on 28532 **/
 /** chunk id: 916790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => D
 }), require("./35282.js"), require("./388685.js"), require("./49124.js"), require("./975844.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk392711 = require("./392711.js"),
+  Chunk299608 = require("./299608.js"),
+  o = require.n(Chunk299608),
   Chunk913527 = require("./913527.js"),
-  c = require.n(Chunk913527),
+  d = require.n(Chunk913527),
   Chunk28664 = require("./28664.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -29,10 +30,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk687278 = require("./687278.js"),
   Chunk451429 = require("./451429.js");
 
-function O(e) {
+function P(e) {
   return parseFloat(e.toFixed(3))
 }
-let P = [{
+let I = [{
   key: "store",
   cellClassName: Chunk687278.actionColumn,
   render(e) {
@@ -48,25 +49,25 @@ let P = [{
     let {
       trace: t
     } = e;
-    return "".concat(O(t.time), " ms")
+    return "".concat(P(t.time), " ms")
   }
 }];
 
-function I(e) {
+function w(e) {
   let {
     actionLog: t
   } = e, n = i.useMemo(() => t.traces.map(e => ({
     key: e.name,
     trace: e
   })), [t]);
-  return (0, a.jsx)(m.zJl, {
-    children: (0, a.jsx)(C.Z, {
-      columns: P,
+  return (0, a.jsx)(p.zJl, {
+    children: (0, a.jsx)(S.Z, {
+      columns: I,
       data: n
     })
   })
 }
-let w = [{
+let k = [{
   id: "action",
   name: "Action",
   group: Chunk621060.v0.NONE,
@@ -74,24 +75,24 @@ let w = [{
     var t;
     let {
       actionLog: n
-    } = e, i = c()(n.createdAt);
+    } = e, i = d()(n.createdAt);
     return (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsxs)(_.E, {
-        className: T.actionProperties,
-        children: [(0, a.jsx)(_.Z9, {
+      children: [(0, a.jsxs)(y.E, {
+        className: N.actionProperties,
+        children: [(0, a.jsx)(y.Z9, {
           name: "Created at",
           children: (0, a.jsx)("time", {
             dateTime: null == (t = n.createdAt) ? true : t.toISOString(),
-            title: (0, v.vc)(i, "LLLL"),
-            children: (0, v.Y4)(i)
+            title: (0, j.vc)(i, "LLLL"),
+            children: (0, j.Y4)(i)
           })
-        }), (0, a.jsxs)(_.Z9, {
+        }), (0, a.jsxs)(y.Z9, {
           name: "Total Time",
-          children: [O(n.totalTime), " ms"]
+          children: [P(n.totalTime), " ms"]
         })]
-      }), (0, a.jsx)(m.zJl, {
-        className: T.inspectorContainer,
-        children: (0, a.jsx)(j.Z, {
+      }), (0, a.jsx)(p.zJl, {
+        className: N.inspectorContainer,
+        children: (0, a.jsx)(_.Z, {
           data: n.action
         })
       })]
@@ -105,79 +106,79 @@ let w = [{
     let {
       actionLog: t
     } = e;
-    return (0, a.jsx)(I, {
+    return (0, a.jsx)(w, {
       actionLog: t
     })
   }
 }];
 
-function k(e) {
+function R(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, r = i.useMemo(() => t.error ? [...w, {
+  } = e, r = i.useMemo(() => t.error ? [...k, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(f.Z, {
-        className: T.errorIcon
+      children: [(0, a.jsx)(b.Z, {
+        className: N.errorIcon
       }), "Error"]
     }),
-    group: S.v0.NONE,
+    group: E.v0.NONE,
     render(e) {
       let {
         actionLog: t
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: l()(T.errorToolbar, N.toolbar),
+          className: l()(N.errorToolbar, O.toolbar),
           children: (0, a.jsx)("div", {
-            className: N.toolbarGroup,
-            children: (0, a.jsx)(u.zx, {
-              className: N.toolbarButton,
-              size: u.zx.Sizes.MIN,
+            className: O.toolbarGroup,
+            children: (0, a.jsx)(m.zx, {
+              className: O.toolbarButton,
+              size: m.zx.Sizes.MIN,
               onClick: () => console.error(t.error),
               children: "Log to Console"
             })
           })
-        }), (0, a.jsx)(m.zJl, {
-          className: T.inspectorContainer,
-          children: (0, a.jsx)(j.Z, {
+        }), (0, a.jsx)(p.zJl, {
+          className: N.inspectorContainer,
+          children: (0, a.jsx)(_.Z, {
             data: t.error
           })
         })]
       })
     }
-  }] : w, [t]), {
+  }] : k, [t]), {
     TabBar: s,
     renderSelectedTab: o
-  } = (0, S.ZP)({
+  } = (0, E.ZP)({
     tabs: r
   }, [r]);
-  return (0, a.jsxs)(y.Z, {
-    className: T.subPanel,
+  return (0, a.jsxs)(C.Z, {
+    className: N.subPanel,
     minHeight: 100,
     initialHeight: n,
-    children: [(0, a.jsx)(s, {}), (0, a.jsxs)(h.ZP, {
-      className: l()(N.headerBar, T.subPanelHeaderBar),
-      children: [(0, a.jsx)(h.ZP.Icon, {
-        icon: m.xVZ,
+    children: [(0, a.jsx)(s, {}), (0, a.jsxs)(x.ZP, {
+      className: l()(O.headerBar, N.subPanelHeaderBar),
+      children: [(0, a.jsx)(x.ZP.Icon, {
+        icon: p.xVZ,
         tooltip: t.name
-      }), (0, a.jsx)(h.ZP.Title, {
-        wrapperClassName: l()(N.headerTitle, N.dispatcherHeader),
-        className: N.headerTitleText,
+      }), (0, a.jsx)(x.ZP.Title, {
+        wrapperClassName: l()(O.headerTitle, O.dispatcherHeader),
+        className: O.headerTitleText,
         children: t.name
-      }), (0, a.jsx)(h.ZP.Icon, {
-        icon: m.TIy,
+      }), (0, a.jsx)(x.ZP.Icon, {
+        icon: p.TIy,
         tooltip: "Copy event data",
         onClick: () => {
           var e;
           let n = JSON.stringify(Object.keys(e = t.action).reduce((t, n) => {
             var a;
-            return t[n] = (a = e[n], E.Jn9.test(a) ? "REDACTED" : a), t
+            return t[n] = (a = e[n], T.Jn9.test(a) ? "REDACTED" : a), t
           }, {}), null, 2);
-          (0, b.JG)(n, () => (0, m.showToast)({
+          (0, v.JG)(n, () => (0, p.showToast)({
             id: "copy-action-log-name",
-            type: m.ToastType.SUCCESS,
+            type: p.ToastType.SUCCESS,
             message: "Copied action log data to clipboard"
           }))
         }
@@ -187,7 +188,7 @@ function k(e) {
     })]
   })
 }
-let R = [{
+let A = [{
     key: "action",
     cellClassName: Chunk687278.actionColumn,
     render(e) {
@@ -195,8 +196,8 @@ let R = [{
         actionLog: t
       } = e;
       return (0, a.jsxs)(a.Fragment, {
-        children: [t.error && (0, a.jsx)(f.Z, {
-          className: T.errorIcon
+        children: [t.error && (0, a.jsx)(b.Z, {
+          className: N.errorIcon
         }), t.name]
       })
     }
@@ -207,7 +208,7 @@ let R = [{
       let {
         actionLog: t
       } = e;
-      return "".concat(O(t.totalTime), " ms")
+      return "".concat(P(t.totalTime), " ms")
     }
   }, {
     key: "timestamp",
@@ -216,10 +217,10 @@ let R = [{
       let {
         actionLog: t
       } = e;
-      return c()(t.createdAt).format("HH:mm:ss.SSS")
+      return d()(t.createdAt).format("HH:mm:ss.SSS")
     }
   }],
-  A = {
+  Z = {
     searchType: Chunk886118.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -230,50 +231,51 @@ let R = [{
     throttleMs: 100
   };
 
-function Z() {
+function D() {
   let e = Chunk647438.useRef(null),
     [t, n] = Chunk647438.useState(""),
     r = function(e) {
-      let [t, n] = i.useState(e.logs), a = i.useCallback(() => {
-        (0, s.debounce)(() => {
+      let [t, n] = i.useState(e.logs);
+      return i.useEffect(() => {
+        let t = o()(() => {
           n([...e.logs])
-        }, 500)()
-      }, [e]);
-      return i.useEffect(() => (e.on("log", a), () => {
-        e.off("log", a)
-      }), [e, a]), t
+        }, 500);
+        return e.on("log", t), () => {
+          e.off("log", t)
+        }
+      }, [e]), t
     }(Chunk570140.Z.actionLogger),
-    o = Chunk647438.useMemo(() => Chunk120356.map(e => ({
+    s = Chunk647438.useMemo(() => Chunk120356.map(e => ({
       key: e.id.toString(),
       actionLog: e
     })).toReversed(), [Chunk120356]),
-    [c, u] = Chunk647438.useState(Chunk913527),
-    [h, x] = Chunk647438.useState(Chunk913527),
-    [f, b] = Chunk647438.useState(false),
+    [c, d] = Chunk647438.useState(Chunk299608),
+    [m, x] = Chunk647438.useState(Chunk299608),
+    [g, b] = Chunk647438.useState(false),
     [v, j] = Chunk647438.useState(),
     _ = Chunk647438.useCallback(e => {
       x(e)
     }, []);
-  (0, Chunk301801.BO)(exports, Chunk4912 ? c : Chunk913527, Chunk257785, A);
+  (0, Chunk301801.BO)(exports, Chunk886118 ? Chunk913527 : Chunk299608, Chunk428530, Z);
   let y = Chunk647438.useCallback(e => {
-      u(o), b(e)
-    }, [Chunk913527]),
-    S = exports.trim().length > 0,
-    E = Chunk647438.useMemo(() => Chunk621060 ? Chunk665149 : Chunk4912 ? c : Chunk913527, [Chunk913527, Chunk665149, Chunk621060, Chunk4912, c]),
-    O = Chunk4912 ? "Enable Event Tracking" : "Pause Event Tracking";
+      d(s), b(e)
+    }, [Chunk299608]),
+    C = exports.trim().length > 0,
+    E = Chunk647438.useMemo(() => Chunk484036 ? Chunk755721 : Chunk886118 ? Chunk913527 : Chunk299608, [Chunk299608, Chunk755721, Chunk484036, Chunk886118, Chunk913527]),
+    T = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
     className: l()(Chunk451429.panel, Chunk687278.panel),
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk687278.toolbar,
       children: [(0, Chunk951288.jsx)(Chunk28664.u, {
-        text: O,
+        text: Chunk981631,
         children: (0, Chunk951288.jsx)(Chunk481060.hU, {
           size: "sm",
-          variant: Chunk4912 ? "primary" : "active",
-          icon: Chunk4912 ? Chunk481060.o1U : Chunk481060.fpf,
-          "aria-label": O,
-          onClick: () => Chunk484036(!Chunk4912)
+          variant: Chunk886118 ? "primary" : "active",
+          icon: Chunk886118 ? Chunk481060.o1U : Chunk481060.fpf,
+          "aria-label": Chunk981631,
+          onClick: () => Chunk257785(!Chunk886118)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
         size: "sm",
@@ -283,12 +285,12 @@ function Z() {
         placeholder: "Search by action name"
       })]
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: R,
-      data: Chunk981631,
-      selectedRowKey: null == Chunk55935 ? true : Chunk55935.id.toString(),
+      columns: A,
+      data: Chunk621060,
+      selectedRowKey: null == Chunk572004 ? true : Chunk572004.id.toString(),
       onClickRow: e => j(e.actionLog)
-    }), null != Chunk55935 && (0, Chunk951288.jsx)(k, {
-      actionLog: Chunk55935,
+    }), null != Chunk572004 && (0, Chunk951288.jsx)(R, {
+      actionLog: Chunk572004,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300
     })]
   })

@@ -53,7 +53,7 @@ function p(e) {
   let {
     trackView: t,
     trackClick: n
-  } = (0, l.R)(d.n0.ClipsNotification, {
+  } = (0, o.R)(d.n0.ClipsNotification, {
     notif_type: d.n0.ClipsNotification
   });
   return {

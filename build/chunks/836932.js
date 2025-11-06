@@ -20,7 +20,7 @@ function d(e, t, n, d, u) {
     icon: f,
     title: g,
     body: m
-  } = (0, l.Xi)(e, t, n), {
+  } = (0, o.Xi)(e, t, n), {
     trackView: y,
     trackClick: O
   } = (0, s.R)(a.n0.ActivityInvite, {
@@ -38,19 +38,19 @@ function d(e, t, n, d, u) {
     icon: f,
     title: g,
     body: m,
-    hint: e => (0, o.QR)(e, (0, s.P)(), c.t.aB5xLy),
+    hint: e => (0, l.QR)(e, (0, s.P)(), c.t.aB5xLy),
     onNotificationShow: () => {
       y()
     },
     confirmText: c.intl.string(c.t.VJlc0S),
-    onConfirmClick: (l, o) => {
+    onConfirmClick: (o, l) => {
       i.Z.join({
         userId: n.id,
         sessionId: p,
         applicationId: d.id,
         channelId: e.id,
         messageId: t.id
-      }), r.Z.updateNotificationStatus(o), O("join")
+      }), r.Z.updateNotificationStatus(l), O("join")
     },
     onDismissClick: () => {
       O("dismiss")

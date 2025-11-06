@@ -87,9 +87,9 @@ function y(e) {
         onNotificationClick: (e, t) => {
           O("unlock");
           let c = (0, a.getPID)();
-          l.Z.updateNotificationStatus(t);
-          let u = o.default.isOverlayOOPEnabledForPid(c);
-          if (u ? l.Z.setInputLocked(false, c) : l.Z.setInstanceLocked(false), null == s.default.getCurrentUser()) return;
+          o.Z.updateNotificationStatus(t);
+          let u = l.default.isOverlayOOPEnabledForPid(c);
+          if (u ? o.Z.setInputLocked(false, c) : o.Z.setInstanceLocked(false), null == s.default.getCurrentUser()) return;
           let h = u ? {
             contextKey: r.u1M
           } : true;
@@ -133,9 +133,9 @@ function y(e) {
         onNotificationClick: (e, t) => {
           p("unlock");
           let s = (0, a.getPID)();
-          l.Z.updateNotificationStatus(t);
-          let c = o.default.isOverlayOOPEnabledForPid(s);
-          c ? l.Z.setInputLocked(false, s) : l.Z.setInstanceLocked(false);
+          o.Z.updateNotificationStatus(t);
+          let c = l.default.isOverlayOOPEnabledForPid(s);
+          c ? o.Z.setInputLocked(false, s) : o.Z.setInstanceLocked(false);
           let u = c ? {
             contextKey: r.u1M
           } : true;
