@@ -19,7 +19,6 @@ function o(e) {
   } = e;
   return (0, r.jsx)("ul", {
     className: l.memberList,
-    "data-member-count": n.length,
     "data-animated": "true",
     children: n.map(e => {
       let n = u ? (0, a.iD)(t, e) : null;
