@@ -2,7 +2,9 @@
 /** chunk id: 803567, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  MP: () => v,
+  Q4: () => O,
+  ZP: () => S
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -22,13 +24,16 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk419659 = require("./419659.js");
 let Chunk775322 = require("./775322.js"),
-  Chunk853453 = require("./853453.js"),
-  O = {
-    page: Chunk981631.ZY5.USER_SETTINGS,
-    section: Chunk981631.jXE.SETTINGS_VOICE_AND_VIDEO
-  };
+  Chunk853453 = require("./853453.js");
+var O = function(e) {
+  return e.NONE = "NONE", e.STANDARD = "STANDARD", e.KRISP = "KRISP", e
+}({});
+let v = {
+  page: Chunk981631.ZY5.USER_SETTINGS,
+  section: Chunk981631.jXE.SETTINGS_VOICE_AND_VIDEO
+};
 
-function v(e) {
+function I(e) {
   let t = e.currentTarget;
   d.default.track(m.rMx.NOISE_CANCELLATION_LINK_CLICKED, {
     text: t.text,
@@ -40,7 +45,7 @@ function v(e) {
   })
 }
 
-function I() {
+function T() {
   let e = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
     {
       noiseCancellation: t,
@@ -54,18 +59,18 @@ function I() {
       noiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported()
     }));
   if (!Chunk921801 && !Chunk463395) return null;
-  let d = +!!require,
-    p = exports ? 2 : Chunk626135,
+  let d = require ? "STANDARD" : "NONE",
+    p = exports ? "KRISP" : Chunk626135,
     h = [];
   return Chunk463395 && Chunk726985.push({
     name: Chunk388032.intl.string(Chunk388032.t.rdoNzt),
-    value: 2
+    value: "KRISP"
   }), Chunk921801 && Chunk726985.push({
     name: Chunk388032.intl.string(Chunk388032.t.qXeYHw),
-    value: 1
+    value: "STANDARD"
   }), Chunk726985.push({
     name: Chunk388032.intl.string(Chunk388032.t.wkYAlz),
-    value: 0
+    value: "NONE"
   }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     gap: 8,
     children: [(0, Chunk951288.jsx)(Chunk481060.FXm, {
@@ -73,7 +78,7 @@ function I() {
       description: Chunk388032.intl.string(Chunk388032.t.najZCV),
       options: Chunk726985,
       onChange: e => {
-        s.Z.setNoiseCancellation(2 === e, O), s.Z.setNoiseSuppression(1 === e, O)
+        s.Z.setNoiseCancellation("KRISP" === e, v), s.Z.setNoiseSuppression("STANDARD" === e, v)
       },
       value: Chunk738486
     }), Chunk463395 && (0, Chunk951288.jsx)(Chunk481060.Zbd, {
@@ -87,7 +92,7 @@ function I() {
           alt: ""
         }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
-          onClick: v,
+          onClick: I,
           children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
         })]
       })
@@ -95,7 +100,7 @@ function I() {
   })
 }
 
-function T() {
+function S() {
   let {
     inputMode: e,
     inputDeviceId: t,
@@ -138,7 +143,7 @@ function T() {
       })
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION,
-      children: (0, Chunk951288.jsx)(I, {})
+      children: (0, Chunk951288.jsx)(T, {})
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ADVANCED_VOICE_ACTIVITY,
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {

@@ -1,4 +1,4 @@
-/** Chunk was on 81014 **/
+/** Chunk was on 18729 **/
 /** chunk id: 481446, original params: e,t,n (module,exports,require) **/
 module.exports = {
   icon: "icon__64c86",

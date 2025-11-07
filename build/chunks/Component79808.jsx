@@ -1,4 +1,4 @@
-/** Chunk was on 81014 **/
+/** Chunk was on 18729 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -115,8 +115,8 @@ function y(e) {
   let I = l.useMemo(() => ({
       navTransition: T
     }), [T]),
-    A = () => D(g),
-    R = null != C ? j.get(C) : true;
+    R = () => D(g),
+    A = null != C ? j.get(C) : true;
   return (0, r.jsx)(u.j.Provider, {
     value: I,
     children: (0, r.jsxs)("div", {
@@ -125,11 +125,11 @@ function y(e) {
         root: y,
         header: h,
         footer: x,
-        onClose: A,
+        onClose: R,
         emptyState: P
       }), (0, r.jsx)(a.Z, {
-        onClose: A,
-        setting: null != R ? R : N
+        onClose: R,
+        setting: null != A ? A : N
       })]
     })
   })
