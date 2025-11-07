@@ -195,7 +195,7 @@ function R(e) {
         file: l,
         roles: e
       });
-      "object" == typeof a && "id" in a && p.M({
+      "object" == typeof a && "id" in a && p.MK({
         emojiId: a.id,
         userImage: {
           data: i,

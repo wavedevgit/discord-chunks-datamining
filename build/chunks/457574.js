@@ -1,47 +1,28 @@
-/** Chunk was on web.js **/
-/** chunk id: 457574, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 2262 **/
+/** chunk id: 457574, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => l,
-  Q: () => c
+  Q: () => l
 }), require("./35282.js");
-var Chunk481060 = require("./481060.js"),
-  Chunk768581 = require("./768581.js"),
-  Chunk539266 = require("./539266.js"),
-  Chunk598117 = require("./598117.js"),
-  Chunk221503 = require("./221503.js");
-
-function l() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-  if (!(0, Chunk539266.m)()) {
-    var t;
-    (0, Chunk481060.Mr3)(Chunk598117.Hj), null == (t = module.onClose) || exports.call(module);
-    return
-  }(0, Chunk221503.Q)({
-    onConfirm: () => {
-      var t;
-      (0, Chunk481060.Mr3)(Chunk598117.Hj), null == (t = module.onClose) || exports.call(module)
-    }
-  })
-}
-async function c(e) {
-  let t = i.ZP.getEmojiURL({
+var Chunk768581 = require("./768581.js"),
+  Chunk598117 = require("./598117.js");
+async function l(e) {
+  let t = r.ZP.getEmojiURL({
       id: e.id,
       animated: e.animated,
-      size: o.eT,
+      size: i.eT,
       forcePNG: true
     }),
     n = await fetch(t),
-    r = await n.blob(),
-    a = r.type;
+    l = await n.blob(),
+    a = l.type;
   (null == a || "application/octet-stream" === a) && (a = t.includes(".gif") ? "image/gif" : t.includes(".webp") ? "image/webp" : e.animated ? "image/gif" : "image/png");
-  let s = new File([r], "".concat(e.name, ".").concat(a.split("/")[1]), {
+  let s = new File([l], "".concat(e.name, ".").concat(a.split("/")[1]), {
     type: a
   });
   return {
     data: await new Promise((e, t) => {
       let n = new FileReader;
-      n.onloadend = () => e(n.result), n.onerror = t, n.readAsDataURL(r)
+      n.onloadend = () => e(n.result), n.onerror = t, n.readAsDataURL(l)
     }),
     file: s,
     image: null
