@@ -2,20 +2,21 @@
 /** chunk id: 607070, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X: () => b,
-  Z: () => J
+  X: () => y,
+  Z: () => $
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk780384 = require("./780384.js"),
   Chunk570140 = require("./570140.js"),
+  Chunk244827 = require("./244827.js"),
   Chunk695346 = require("./695346.js"),
   Chunk581883 = require("./581883.js"),
   Chunk12647 = require("./12647.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +25,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,15 +49,15 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e, t) {
+function E(e, t) {
   if (null == e) return {};
-  var n, r, i = E(e, t);
+  var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -64,17 +65,17 @@ function g(e, t) {
   return i
 }
 
-function E(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var b = function(e) {
+var y = function(e) {
   return e.DEFAULT = "default", e.HIGH = "high", e
 }({});
-let y = {
+let O = {
     fontSize: Chunk981631.yqN.FONT_SIZE_DEFAULT,
     zoom: Chunk981631.yqN.ZOOM_DEFAULT,
     keyboardModeEnabled: false,
@@ -101,8 +102,8 @@ let y = {
     enableCustomCursor: true,
     switchIconsEnabled: false
   },
-  O = y,
-  v = {
+  v = O,
+  I = {
     12: "font-size-12",
     14: "font-size-14",
     15: "font-size-15",
@@ -112,219 +113,219 @@ let y = {
     24: "font-size-24"
   };
 
-function I(e) {
-  return d.yqN.FONT_SIZES.indexOf(e) >= 0 ? e : d.yqN.FONT_SIZE_DEFAULT
-}
-
 function T(e) {
-  let t = I(e.fontSize);
-  if (t > d.yqN.FONT_SIZE_MAX || t < d.yqN.FONT_SIZE_MIN || O.fontSize === t) returnfalse;
-  (O = p({}, O)).fontSize = t
+  return f.yqN.FONT_SIZES.indexOf(e) >= 0 ? e : f.yqN.FONT_SIZE_DEFAULT
 }
 
 function S(e) {
-  if (e.zoom < d.yqN.ZOOM_MIN || e.zoom > d.yqN.ZOOM_MAX || O.zoom === e.zoom) returnfalse;
-  (O = p({}, O)).zoom = e.zoom, u.Z.setZoomFactor(O.zoom)
+  let t = T(e.fontSize);
+  if (t > f.yqN.FONT_SIZE_MAX || t < f.yqN.FONT_SIZE_MIN || v.fontSize === t) returnfalse;
+  (v = h({}, v)).fontSize = t
 }
 
-function A() {
-  let e = O.fontSize !== Chunk981631.yqN.FONT_SIZE_DEFAULT,
-    t = O.zoom !== Chunk981631.yqN.ZOOM_DEFAULT;
-  if (!module && !exports) returnfalse;
-  (O = p({}, O)).fontSize !== Chunk981631.yqN.FONT_SIZE_DEFAULT && (O.fontSize = Chunk981631.yqN.FONT_SIZE_DEFAULT), O.zoom !== Chunk981631.yqN.ZOOM_DEFAULT && (O.zoom = Chunk981631.yqN.ZOOM_DEFAULT, Chunk12647.Z.setZoomFactor(O.zoom))
+function A(e) {
+  if (e.zoom < f.yqN.ZOOM_MIN || e.zoom > f.yqN.ZOOM_MAX || v.zoom === e.zoom) returnfalse;
+  (v = h({}, v)).zoom = e.zoom, d.Z.setZoomFactor(v.zoom)
 }
 
 function C() {
-  if (O.keyboardModeEnabled) returnfalse;
-  (O = p({}, O)).keyboardModeEnabled = true
+  let e = v.fontSize !== Chunk981631.yqN.FONT_SIZE_DEFAULT,
+    t = v.zoom !== Chunk981631.yqN.ZOOM_DEFAULT;
+  if (!module && !exports) returnfalse;
+  (v = h({}, v)).fontSize !== Chunk981631.yqN.FONT_SIZE_DEFAULT && (v.fontSize = Chunk981631.yqN.FONT_SIZE_DEFAULT), v.zoom !== Chunk981631.yqN.ZOOM_DEFAULT && (v.zoom = Chunk981631.yqN.ZOOM_DEFAULT, Chunk12647.Z.setZoomFactor(v.zoom))
 }
 
 function N() {
-  if (!O.keyboardModeEnabled) returnfalse;
-  (O = p({}, O)).keyboardModeEnabled = false
+  if (v.keyboardModeEnabled) returnfalse;
+  (v = h({}, v)).keyboardModeEnabled = true
 }
 
 function R() {
-  (O = p({}, O)).colorblindMode = !O.colorblindMode
+  if (!v.keyboardModeEnabled) returnfalse;
+  (v = h({}, v)).keyboardModeEnabled = false
 }
 
 function P() {
-  (O = p({}, O)).lowContrastMode = !O.lowContrastMode
+  (v = h({}, v)).colorblindMode = !v.colorblindMode
 }
 
-function w(e) {
-  O.syncForcedColors = e.syncForcedColors
+function w() {
+  (v = h({}, v)).lowContrastMode = !v.lowContrastMode
 }
 
 function D(e) {
-  (O = p({}, O)).saturation = e.saturation
+  v.syncForcedColors = e.syncForcedColors
 }
 
-function x() {
-  (O = p({}, O)).desaturateUserColors = !O.desaturateUserColors
+function x(e) {
+  (v = h({}, v)).saturation = e.saturation
 }
 
-function L(e) {
-  O.roleStyle = e.roleStyle
+function L() {
+  (v = h({}, v)).desaturateUserColors = !v.desaturateUserColors
 }
 
 function M(e) {
-  O.displayNameStylesEnabled = e.enabled
+  v.roleStyle = e.roleStyle
 }
 
-function j() {
-  (O = p({}, O)).submitButtonEnabled = !O.submitButtonEnabled
+function j(e) {
+  v.displayNameStylesEnabled = e.enabled
 }
 
 function k() {
-  (O = p({}, O)).syncProfileThemeWithUserTheme = !O.syncProfileThemeWithUserTheme
+  (v = h({}, v)).submitButtonEnabled = !v.submitButtonEnabled
 }
 
-function U(e) {
-  if (O.systemPrefersReducedMotion === e.systemPrefersReducedMotion) returnfalse;
-  O = m(p({}, O), {
+function U() {
+  (v = h({}, v)).syncProfileThemeWithUserTheme = !v.syncProfileThemeWithUserTheme
+}
+
+function G(e) {
+  if (v.systemPrefersReducedMotion === e.systemPrefersReducedMotion) returnfalse;
+  v = g(h({}, v), {
     systemPrefersReducedMotion: e.systemPrefersReducedMotion
   })
 }
 
-function G(e) {
-  if (O.systemPrefersCrossfades === e.systemPrefersCrossfades) returnfalse;
-  O = m(p({}, O), {
+function B(e) {
+  if (v.systemPrefersCrossfades === e.systemPrefersCrossfades) returnfalse;
+  v = g(h({}, v), {
     systemPrefersCrossfades: e.systemPrefersCrossfades
   })
 }
 
-function B(e) {
-  if (O.prefersReducedMotion === e.prefersReducedMotion) returnfalse;
-  O = m(p({}, O), {
+function Z(e) {
+  if (v.prefersReducedMotion === e.prefersReducedMotion) returnfalse;
+  v = g(h({}, v), {
     prefersReducedMotion: e.prefersReducedMotion
   })
 }
 
-function Z(e) {
-  if (O.systemPrefersContrast === e.systemPrefersContrast) returnfalse;
-  O = m(p({}, O), {
+function F(e) {
+  if (v.systemPrefersContrast === e.systemPrefersContrast) returnfalse;
+  v = g(h({}, v), {
     systemPrefersContrast: e.systemPrefersContrast
   })
 }
 
-function F(e) {
-  O = m(p({}, O), {
+function V(e) {
+  v = g(h({}, v), {
     alwaysShowLinkDecorations: e.alwaysShowLinkDecorations
   })
 }
 
-function V(e) {
-  O = m(p({}, O), {
+function H(e) {
+  v = g(h({}, v), {
     enableCustomCursor: e.enableCustomCursor
   })
 }
 
-function H(e) {
+function Y(e) {
   var t;
-  return O = m(p({}, O), {
+  return v = g(h({}, v), {
     systemForcedColors: null != (t = e.systemForcedColors) ? t : "none"
   }), true
 }
 
-function Y() {
-  O.forcedColorsModalSeen = true
-}
-
 function W() {
-  O = m(p({}, O), {
-    keyboardNavigationExplainerModalSeen: true
-  })
+  v.forcedColorsModalSeen = true
 }
 
-function K(e) {
-  let {
-    messageGroupSpacing: t
-  } = e;
-  O = m(p({}, O), {
-    messageGroupSpacing: t
+function K() {
+  v = g(h({}, v), {
+    keyboardNavigationExplainerModalSeen: true
   })
 }
 
 function z(e) {
   let {
-    contrast: t
+    messageGroupSpacing: t
   } = e;
-  O = m(p({}, O), {
-    contrast: t
+  v = g(h({}, v), {
+    messageGroupSpacing: t
   })
 }
 
 function q(e) {
   let {
-    contrastMode: t
+    contrast: t
   } = e;
-  O = m(p({}, O), {
-    contrastMode: t
+  v = g(h({}, v), {
+    contrast: t
   })
 }
 
 function X(e) {
-  O = m(p({}, O), {
+  let {
+    contrastMode: t
+  } = e;
+  v = g(h({}, v), {
+    contrastMode: t
+  })
+}
+
+function Q(e) {
+  v = g(h({}, v), {
     switchIconsEnabled: e.switchIconsEnabled
   })
 }
-class Q extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+class J extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
-    this.waitFor(c.Z), isNaN((O = p({}, y, null != e ? e : null)).fontSize) && (O.fontSize = d.yqN.FONT_SIZE_DEFAULT), 0 > f.fP.indexOf(null != O.messageGroupSpacing ? O.messageGroupSpacing : false) && (O.messageGroupSpacing = null)
+    this.waitFor(u.Z), this.waitFor(l.Z), isNaN((v = h({}, O, null != e ? e : null)).fontSize) && (v.fontSize = f.yqN.FONT_SIZE_DEFAULT), 0 > _.fP.indexOf(null != v.messageGroupSpacing ? v.messageGroupSpacing : false) && (v.messageGroupSpacing = null)
   }
   get fontScale() {
-    return O.fontSize / Chunk981631.yqN.FONT_SIZE_DEFAULT * 100
+    return v.fontSize / Chunk981631.yqN.FONT_SIZE_DEFAULT * 100
   }
   get fontSize() {
-    return O.fontSize
+    return v.fontSize
   }
   get isFontScaledUp() {
-    return O.fontSize > Chunk981631.yqN.FONT_SIZE_DEFAULT
+    return v.fontSize > Chunk981631.yqN.FONT_SIZE_DEFAULT
   }
   get isFontScaledDown() {
-    return O.fontSize < Chunk981631.yqN.FONT_SIZE_DEFAULT
+    return v.fontSize < Chunk981631.yqN.FONT_SIZE_DEFAULT
   }
   get fontScaleClass() {
     var e;
-    let t = null != (e = v[this.fontSize]) ? module : "";
+    let t = null != (e = I[this.fontSize]) ? module : "";
     return this.isFontScaledUp ? "a11y-font-scaled-up ".concat(exports) : this.isFontScaledDown ? "a11y-font-scaled-down ".concat(exports) : "".concat(exports)
   }
   get zoom() {
-    return O.zoom
+    return v.zoom
   }
   get isZoomedIn() {
-    return O.zoom > Chunk981631.yqN.ZOOM_DEFAULT
+    return v.zoom > Chunk981631.yqN.ZOOM_DEFAULT
   }
   get isZoomedOut() {
-    return O.zoom < Chunk981631.yqN.ZOOM_DEFAULT
+    return v.zoom < Chunk981631.yqN.ZOOM_DEFAULT
   }
   get keyboardModeEnabled() {
-    return O.keyboardModeEnabled
+    return v.keyboardModeEnabled
   }
   get colorblindMode() {
-    return O.colorblindMode
+    return v.colorblindMode
   }
   get lowContrastMode() {
-    return O.lowContrastMode
+    return v.lowContrastMode
   }
   get saturation() {
-    return O.saturation
+    return v.saturation
   }
   get contrast() {
-    return O.contrast
+    return v.contrast
   }
   get desaturateUserColors() {
-    return O.desaturateUserColors
+    return v.desaturateUserColors
   }
   get forcedColorsModalSeen() {
-    return O.forcedColorsModalSeen
+    return v.forcedColorsModalSeen
   }
   get keyboardNavigationExplainerModalSeen() {
-    return O.keyboardNavigationExplainerModalSeen
+    return v.keyboardNavigationExplainerModalSeen
   }
   get messageGroupSpacing() {
-    return null != O.messageGroupSpacing ? O.messageGroupSpacing : Chunk695346.jU.getSetting() ? Chunk959517.c8 : Chunk959517.pq
+    return null != v.messageGroupSpacing ? v.messageGroupSpacing : Chunk695346.jU.getSetting() ? Chunk959517.c8 : Chunk959517.pq
   }
   get isMessageGroupSpacingIncreased() {
     let e = Chunk695346.jU.getSetting() ? Chunk959517.c8 : Chunk959517.pq;
@@ -335,65 +336,66 @@ class Q extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return this.messageGroupSpacing < module
   }
   get isSubmitButtonEnabled() {
-    return O.submitButtonEnabled
+    return v.submitButtonEnabled
   }
   get syncProfileThemeWithUserTheme() {
-    return O.syncProfileThemeWithUserTheme
+    return v.syncProfileThemeWithUserTheme
   }
   get systemPrefersReducedMotion() {
-    return O.systemPrefersReducedMotion
+    return v.systemPrefersReducedMotion
   }
   get rawPrefersReducedMotion() {
-    return O.prefersReducedMotion
+    return v.prefersReducedMotion
   }
   get useReducedMotion() {
-    switch (O.prefersReducedMotion) {
+    if (Chunk244827.Z.visible && Chunk244827.Z.enabled) returntrue;
+    switch (v.prefersReducedMotion) {
       case "no-preference":
         returnfalse;
       case "reduce":
         returntrue;
       default:
-        return "reduce" === O.systemPrefersReducedMotion
+        return "reduce" === v.systemPrefersReducedMotion
     }
   }
   get systemForcedColors() {
-    return O.systemForcedColors
+    return v.systemForcedColors
   }
   get syncForcedColors() {
-    return O.syncForcedColors
+    return v.syncForcedColors
   }
   get useForcedColors() {
-    return !!O.syncForcedColors && "active" === O.systemForcedColors
+    return !!v.syncForcedColors && "active" === v.systemForcedColors
   }
   get systemPrefersContrast() {
-    return O.systemPrefersContrast
+    return v.systemPrefersContrast
   }
   get systemPrefersCrossfades() {
-    return O.systemPrefersCrossfades
+    return v.systemPrefersCrossfades
   }
   get alwaysShowLinkDecorations() {
-    return O.alwaysShowLinkDecorations
+    return v.alwaysShowLinkDecorations
   }
   get enableCustomCursor() {
-    return O.enableCustomCursor
+    return v.enableCustomCursor
   }
   get roleStyle() {
-    return O.roleStyle
+    return v.roleStyle
   }
   get displayNameStylesEnabled() {
-    return O.displayNameStylesEnabled
+    return v.displayNameStylesEnabled
   }
   get isHighContrastModeEnabled() {
-    return "high" === O.contrastMode
+    return "high" === v.contrastMode
   }
   get isSwitchIconsEnabled() {
-    return O.switchIconsEnabled
+    return v.switchIconsEnabled
   }
   getUserAgnosticState() {
-    return O
+    return v
   }
 }
-_(Q, "displayName", "AccessibilityStore"), _(Q, "persistKey", "AccessibilityStore"), _(Q, "migrations", [() => {
+p(J, "displayName", "AccessibilityStore"), p(J, "persistKey", "AccessibilityStore"), p(J, "migrations", [() => {
   let e = "a11yFontScale",
     t = "a11yZoom",
     n = "a11yColorblindMode",
@@ -409,7 +411,7 @@ _(Q, "displayName", "AccessibilityStore"), _(Q, "persistKey", "AccessibilityStor
 }, e => {
   let {
     fontScale: t
-  } = e, n = g(e, ["fontScale"]), r = 16;
+  } = e, n = E(e, ["fontScale"]), r = 16;
   switch (t) {
     case 82:
       r = 12;
@@ -429,19 +431,19 @@ _(Q, "displayName", "AccessibilityStore"), _(Q, "persistKey", "AccessibilityStor
     case 150:
       r = 24
   }
-  return m(p({}, n), {
+  return g(h({}, n), {
     fontSize: r
   })
-}, e => m(p({}, e), {
+}, e => g(h({}, e), {
   darkSidebar: false
-}), e => m(p({}, e), {
+}), e => g(h({}, e), {
   messageGroupSpacing: null
-}), e => m(p({}, e), {
+}), e => g(h({}, e), {
   systemPrefersReducedMotion: "no-preference",
   prefersReducedMotion: "auto"
-}), e => m(p({}, e), {
+}), e => g(h({}, e), {
   alwaysShowLinkDecorations: e.saturation <= o.AE
-}), e => m(p({}, e), {
+}), e => g(h({}, e), {
   disableVoiceBackgrounds: false
 }), e => {
   try {
@@ -453,35 +455,35 @@ _(Q, "displayName", "AccessibilityStore"), _(Q, "persistKey", "AccessibilityStor
     delete e.hideGuildTags
   } catch (e) {}
   return e
-}, e => m(p({}, e), {
+}, e => g(h({}, e), {
   enableCustomCursor: true
 })]);
-let J = new Q(Chunk570140.Z, {
-  ACCESSIBILITY_SET_FONT_SIZE: T,
-  ACCESSIBILITY_SET_ZOOM: S,
-  ACCESSIBILITY_RESET_TO_DEFAULT: A,
-  ACCESSIBILITY_KEYBOARD_MODE_ENABLE: C,
-  ACCESSIBILITY_KEYBOARD_MODE_DISABLE: N,
-  ACCESSIBILITY_COLORBLIND_TOGGLE: R,
-  ACCESSIBILITY_LOW_CONTRAST_TOGGLE: P,
-  ACCESSIBILITY_SET_SATURATION: D,
-  ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: x,
-  ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: H,
-  ACCESSIBILITY_SYSTEM_PREFERS_CONTRAST_CHANGED: Z,
-  ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED: U,
-  ACCESSIBILITY_SYSTEM_PREFERS_CROSSFADES_CHANGED: G,
-  ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION: B,
-  ACCESSIBILITY_SET_SYNC_FORCED_COLORS: w,
-  ACCESSIBILITY_SET_ALWAYS_SHOW_LINK_DECORATIONS: F,
-  ACCESSIBILITY_SET_ENABLE_CUSTOM_CURSOR: V,
-  ACCESSIBILITY_SET_ROLE_STYLE: L,
-  ACCESSIBILITY_SET_DISPLAY_NAME_STYLES_ENABLED: M,
-  ACCESSIBILITY_FORCED_COLORS_MODAL_SEEN: Y,
-  KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN: W,
-  ACCESSIBILITY_SET_MESSAGE_GROUP_SPACING: K,
-  ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE: j,
-  ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE: k,
-  ACCESSIBILITY_SET_CONTRAST: z,
-  ACCESSIBILITY_SET_CONTRAST_MODE: q,
-  ACCESSIBILITY_SET_SWITCH_ICONS_ENABLED: X
+let $ = new J(Chunk570140.Z, {
+  ACCESSIBILITY_SET_FONT_SIZE: S,
+  ACCESSIBILITY_SET_ZOOM: A,
+  ACCESSIBILITY_RESET_TO_DEFAULT: C,
+  ACCESSIBILITY_KEYBOARD_MODE_ENABLE: N,
+  ACCESSIBILITY_KEYBOARD_MODE_DISABLE: R,
+  ACCESSIBILITY_COLORBLIND_TOGGLE: P,
+  ACCESSIBILITY_LOW_CONTRAST_TOGGLE: w,
+  ACCESSIBILITY_SET_SATURATION: x,
+  ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: L,
+  ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: Y,
+  ACCESSIBILITY_SYSTEM_PREFERS_CONTRAST_CHANGED: F,
+  ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED: G,
+  ACCESSIBILITY_SYSTEM_PREFERS_CROSSFADES_CHANGED: B,
+  ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION: Z,
+  ACCESSIBILITY_SET_SYNC_FORCED_COLORS: D,
+  ACCESSIBILITY_SET_ALWAYS_SHOW_LINK_DECORATIONS: V,
+  ACCESSIBILITY_SET_ENABLE_CUSTOM_CURSOR: H,
+  ACCESSIBILITY_SET_ROLE_STYLE: M,
+  ACCESSIBILITY_SET_DISPLAY_NAME_STYLES_ENABLED: j,
+  ACCESSIBILITY_FORCED_COLORS_MODAL_SEEN: W,
+  KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN: K,
+  ACCESSIBILITY_SET_MESSAGE_GROUP_SPACING: z,
+  ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE: k,
+  ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE: U,
+  ACCESSIBILITY_SET_CONTRAST: q,
+  ACCESSIBILITY_SET_CONTRAST_MODE: X,
+  ACCESSIBILITY_SET_SWITCH_ICONS_ENABLED: Q
 })
