@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk53281 = require("./53281.jsx"),
   Chunk110924 = require("./110924.js"),
   Chunk595519 = require("./595519.js"),
-  Chunk466721 = require("./466721.js"),
+  Chunk39952 = require("./39952.js"),
   Chunk924557 = require("./924557.js"),
   Chunk435064 = require("./435064.js"),
   Chunk712114 = require("./712114.jsx"),
@@ -127,9 +127,7 @@ let G = Chunk647438.memo(function(e) {
     eO = (0, x.Us)({
       location: "ChannelAttachButton"
     }),
-    eE = f.C.useExperiment({
-      location: "ChannelAttachButton"
-    }).enableAIFeatures,
+    eE = (0, f.o)(),
     ej = null != (l = null == en ? true : en.length) ? l : 0,
     eS = (0, D.Z)({
       canAttachFiles: eh,

@@ -7,25 +7,22 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk466721 = require("./466721.js"),
+  Chunk39952 = require("./39952.js"),
   Chunk346479 = require("./346479.js"),
   Chunk286934 = require("./286934.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(t) {
-  let n = r.C.useExperiment({
-      location: "useSummarizeThreadItem"
-    }),
-    e = (0, a.e7)([o.Z], () => o.Z.isInProgress());
-  return (null == n ? true : n.enableAIFeatures) && t.isThread() ? (0, i.jsx)(l.sNh, {
+  let n = (0, a.e7)([o.Z], () => o.Z.isInProgress());
+  return (0, r.o)() && t.isThread() ? (0, i.jsx)(l.sNh, {
     id: "summarize-thread",
-    label: e ? d.intl.string(d.t.oKECxB) : d.intl.string(d.t.EXfguE),
-    disabled: e,
-    icon: e ? (0, i.jsx)(l.$jN, {
+    label: n ? d.intl.string(d.t.oKECxB) : d.intl.string(d.t.EXfguE),
+    disabled: n,
+    icon: n ? (0, i.jsx)(l.$jN, {
       type: l.RAz.PULSING_ELLIPSIS
     }) : null,
     action: () => s.Z.summarizeThread(t),
-    children: e ? null : (0, i.jsxs)(i.Fragment, {
+    children: n ? null : (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(l.sNh, {
         id: "summarize_thread_for_everyone",
         label: d.intl.string(d.t.eCzSdd),

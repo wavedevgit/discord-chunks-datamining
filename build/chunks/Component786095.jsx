@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 /** chunk id: 786095, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => S
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -53,12 +53,12 @@ function v(e, t) {
 }
 let j = Chunk273504.fX.KEYWORD;
 
-function E(e, t) {
+function S(e, t) {
   let {
     perGuildMaxCount: n
   } = c.I6[j], {
-    isLoading: E,
-    saveRule: S,
+    isLoading: S,
+    saveRule: E,
     errorMessage: P
   } = (0, d.w)(), {
     createNewEditingRule: Z
@@ -88,7 +88,7 @@ function E(e, t) {
         })
       }, 400))
     },
-    k = async t => {
+    G = async t => {
       var n, r;
       if ((0, a.Zy)(), !await (0, g.XN)(t.name, e)) return;
       let i = v(m({}, t), {
@@ -96,17 +96,17 @@ function E(e, t) {
           keywordFilter: [...null != (r = null == (n = t.triggerMetadata) ? true : n.keywordFilter) ? r : [], e]
         })
       });
-      await S(i, x), A(i), null != P ? (0, l.showToast)((0, l.createToast)(O.intl.string(O.t.wH6L0r), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(O.intl.string(O.t["0rdYm2"]), l.ToastType.SUCCESS))
-    }, G = (0, r.jsx)(l.sNh, {
+      await E(i, x), A(i), null != P ? (0, l.showToast)((0, l.createToast)(O.intl.string(O.t.wH6L0r), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(O.intl.string(O.t["0rdYm2"]), l.ToastType.SUCCESS))
+    }, k = (0, r.jsx)(l.sNh, {
       id: "automod-rules-loading",
       label: O.intl.string(O.t.ZTNur7)
     });
-  return I || (G = (0, r.jsxs)(r.Fragment, {
+  return I || (k = (0, r.jsxs)(r.Fragment, {
     children: [M && (0, r.jsx)(l.sNh, {
       id: "add-first-rule",
       label: O.intl.string(O.t.f72Zqb),
       action: L,
-      disabled: E
+      disabled: S
     }), x.map(e => {
       let t = (0, c.V9)(j).reduce((t, n) => {
         let r = e.actions.find(e => {
@@ -130,15 +130,15 @@ function E(e, t) {
         }),
         group: "automod-rule-selection",
         checked: false,
-        disabled: E,
-        action: () => k(e)
+        disabled: S,
+        action: () => G(e)
       }, e.id)
     }), D && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "add-another-rule",
         label: O.intl.string(O.t["0K5jDE"]),
         action: L,
-        disabled: E
+        disabled: S
       })]
     })]
   })), (0, r.jsx)(l.sNh, {
@@ -149,6 +149,6 @@ function E(e, t) {
     onFocus: () => {
       _ || (T(true), N())
     },
-    children: G
+    children: k
   })
 }

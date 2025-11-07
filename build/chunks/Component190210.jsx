@@ -238,7 +238,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   } = (0, H.oR)(ei), {
     handleTab: e8,
     handleEnter: e4,
-    handleMoveSelection: e6
+    handleMoveSelection: e7
   } = function(e, t, n) {
     let i = r.useCallback(() => {
       var i, r;
@@ -256,7 +256,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
       }, [n])
     }
   }(eQ, eN, eB), {
-    expressionPickerView: e7,
+    expressionPickerView: e6,
     shouldHideExpressionPicker: e5,
     handleOuterClick: e9
   } = (0, H.iV)(k, eA), te = (0, H.aT)(p), {
@@ -378,7 +378,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                     onSubmit: eX,
                     onTab: e8,
                     onEnter: e4,
-                    onMoveSelection: e6,
+                    onMoveSelection: e7,
                     onSelectionChanged: eY,
                     onMaybeShowAutocomplete: e$,
                     onHideAutocomplete: e0,
@@ -479,7 +479,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           textValue: p,
           focused: G,
           isEditorIdle: te,
-          expressionPickerView: e7,
+          expressionPickerView: e6,
           type: k,
           editorRef: eA,
           onSendMessage: eX,

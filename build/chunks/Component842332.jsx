@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk544891 = require("./544891.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk466721 = require("./466721.js"),
+  Chunk39952 = require("./39952.js"),
   Chunk375954 = require("./375954.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
@@ -36,11 +36,7 @@ function h(e) {
     updateThreadSettings: l,
     threadSettings: d,
     textAreaState: h
-  } = e, [f, g] = i.useState(false), [m, b] = i.useState(false), {
-    enableAIFeatures: _
-  } = o.C.useExperiment({
-    location: "CreateThreadSidebar"
-  }), y = i.useCallback(async () => {
+  } = e, [f, g] = i.useState(false), [m, b] = i.useState(false), _ = (0, o.o)(), y = i.useCallback(async () => {
     if (_) {
       g(true);
       try {

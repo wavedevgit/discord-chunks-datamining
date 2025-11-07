@@ -1,7 +1,7 @@
 /** Chunk was on 89250 **/
 /** chunk id: 732393, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk433307 = require("./433307.js");
 
-function m(t) {
+function Z(t) {
   let {
     tag: n
   } = t, {
@@ -36,13 +36,13 @@ function m(t) {
   })
 }
 
-function Z(t) {
+function m(t) {
   let n = (0, a.e7)([h.Z], () => h.Z.getChannel(t), [t]),
     e = (0, c.C7)(n),
     s = (0, a.e7)([h.Z], () => h.Z.getChannel(null == n ? true : n.parent_id), [n]),
     o = (0, u.Vm)(s),
     v = (0, u.eV)(n),
-    Z = v.length >= f.Cn,
+    m = v.length >= f.Cn,
     b = (0, c.$R)(n);
   if (null == n) return (0, r.Zy)(), null;
   if (!e || __OVERLAY__ || !n.isForumPost() || (null == o ? true : o.length) === 0 || !b || n.isModeratorReportChannel()) return null;
@@ -50,15 +50,15 @@ function Z(t) {
     let e = v.includes(t);
     return (0, i.jsx)(l.S89, {
       id: t.id,
-      label: (0, i.jsx)(m, {
+      label: (0, i.jsx)(Z, {
         tag: t
       }),
-      disabled: Z && !e,
+      disabled: m && !e,
       action: () => (t => {
         let e = new Set(v);
         if (e.has(t)) e.delete(t);
         else {
-          if (Z) return;
+          if (m) return;
           e.add(t)
         }
         let i = Array.from(e).map(t => t.id);

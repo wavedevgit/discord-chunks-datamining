@@ -1,4 +1,4 @@
-/** Chunk was on 40157 **/
+/** Chunk was on 43233 **/
 /** chunk id: 765483, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -19,11 +19,11 @@ function f(e) {
     t = (0, c.P0)(e),
     {
       firstMessage: f
-    } = (0, i.e7)([a.Z], () => a.Z.getMessage(e.id), [e.id]);
+    } = (0, i.e7)([o.Z], () => o.Z.getMessage(e.id), [e.id]);
   return !t || n || null == f ? null : (0, r.jsx)(l.sNh, {
     id: "resolve-report",
-    label: s.intl.string(u.default["8yIKem"]),
-    action: () => o.Z.resolveFlag(e.id),
+    label: u.intl.string(s.default["8yIKem"]),
+    action: () => a.Z.resolveFlag(e.id),
     className: d.menuItem
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 /** chunk id: 429260, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => E,
+  ZP: () => S,
   eH: () => Z,
   wY: () => P
 });
@@ -26,7 +26,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk43617 = require("./43617.js");
 
-function E(e) {
+function S(e) {
   let t = (0, i.e7)([y.Z], () => y.Z.getGuildId()),
     n = (0, p.Q_)(t);
   return (0, h.a4)(e) ? (0, r.jsx)(a.sNh, {
@@ -38,7 +38,7 @@ function E(e) {
   }) : null
 }
 
-function S() {
+function E() {
   return (0, Chunk951288.jsx)(Chunk243778.ZP, {
     contentTypes: [Chunk704215.z.REPORT_TO_MOD_NEW_TAG],
     children: e => {
@@ -71,7 +71,7 @@ function P(e) {
         dismissAction: m.L.USER_DISMISS
       }), (0, f.tV)(e)
     },
-    icon: (0, r.jsx)(S, {}),
+    icon: (0, r.jsx)(E, {}),
     disabled: t
   }) : null
 }

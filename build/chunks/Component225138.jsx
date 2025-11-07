@@ -63,8 +63,8 @@ function B(e) {
     } = (0, c.ZP)([s.Z.MESSAGE_CONTEXT_MENU]),
     v = b,
     j = b.getAttribute("data-type"),
-    E = b.getAttribute("data-id"),
-    S = b.getAttribute("data-name");
+    S = b.getAttribute("data-id"),
+    E = b.getAttribute("data-name");
   if (null != p) o = l = u = p.url;
   else
     for (;
@@ -78,8 +78,8 @@ function B(e) {
       mediaItem: p,
       textSelection: P,
       favoriteableType: j,
-      favoriteableId: E,
-      favoriteableName: S,
+      favoriteableId: S,
+      favoriteableName: E,
       itemHref: l,
       itemSrc: o,
       itemSafeSrc: u,
@@ -119,17 +119,17 @@ function K(e) {
     type: s,
     id: c,
     name: B
-  }), ec = (0, R.Z)(t, n), eu = (0, I.Z)(t, n), ed = (0, A.Z)(t), ef = (0, j.Z)(t, n), eg = (0, E.Z)(t, n), eb = (0, x.Z)(t, n), ep = (0, M.Z)(t, n), ey = (0, P.Z)(t, n), eO = (0, C.ZP)(t), eh = (0, C.wY)(t), em = (0, C.eH)(t), ev = (0, L.Z)(t, n), ej = (0, g.Z)(null != K ? K : X, q, t, {
+  }), ec = (0, R.Z)(t, n), eu = (0, I.Z)(t, n), ed = (0, A.Z)(t), ef = (0, j.Z)(t, n), eg = (0, S.Z)(t, n), eb = (0, x.Z)(t, n), ep = (0, M.Z)(t, n), ey = (0, P.Z)(t, n), eO = (0, C.ZP)(t), eh = (0, C.wY)(t), em = (0, C.eH)(t), ev = (0, L.Z)(t, n), ej = (0, g.Z)(null != K ? K : X, q, t, {
     shouldHideMediaOptions: et
-  }), eE = (0, f.Z)(V, t, {
+  }), eS = (0, f.Z)(V, t, {
     shouldHideMediaOptions: et,
     contentType: null == i ? true : i.contentType,
     originalContentType: null == i ? true : i.originalContentType
-  }), eS = (0, F.Z)(t, i), eP = (0, u.Z)({
+  }), eE = (0, F.Z)(t, i), eP = (0, u.Z)({
     id: t.id,
     label: H.intl.string(H.t.zBoHlf),
     shiftId: "".concat(t.channel_id, "-").concat(t.id)
-  }), eZ = (0, D.Z)(t, n), e_ = (0, T.Z)(t, n), eT = (0, k.Z)(t, n), eI = (0, O.Z)(a, n.getGuildId()), eN = (0, h.Z)(t), ew = (0, S.Z)(t), eA = (0, G.Z)(t, n), ex = (0, z.Z)(t), eM = (0, m.Z)(t, n), eD = (0, y.Z)({
+  }), eZ = (0, D.Z)(t, n), e_ = (0, T.Z)(t, n), eT = (0, G.Z)(t, n), eI = (0, O.Z)(a, n.getGuildId()), eN = (0, h.Z)(t), ew = (0, E.Z)(t), eA = (0, k.Z)(t, n), ex = (0, z.Z)(t), eM = (0, m.Z)(t, n), eD = (0, y.Z)({
     commandType: o.yU.MESSAGE,
     commandTargetId: t.id,
     channel: n,
@@ -154,7 +154,7 @@ function K(e) {
     }), (0, r.jsxs)(l.kSQ, {
       children: [ep, eb, ey, Q && eO, Q && em, eh]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [es, eI, eE, eS, ex]
+      children: [es, eI, eS, eE, ex]
     }), (0, r.jsx)(l.kSQ, {
       children: ej
     }), (0, r.jsx)(l.kSQ, {

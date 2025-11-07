@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 /** chunk id: 720904, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => E
 }), require("./781311.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -24,7 +24,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk561782 = require("./561782.js");
 let j = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
 
-function E(e) {
+function S(e) {
   let {
     emoji: t,
     isFocused: n
@@ -61,7 +61,7 @@ function E(e) {
   })
 }
 
-function S(e, t) {
+function E(e, t) {
   let n = (0, c.MZ)(t.guild_id).filter(e => {
     var n;
     return !(e.useSpriteSheet && j.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !y.ZP.isEmojiPremiumLocked({
@@ -83,7 +83,7 @@ function S(e, t) {
           let {
             isFocused: t
           } = e;
-          return (0, r.jsx)(E, {
+          return (0, r.jsx)(S, {
             emoji: n,
             isFocused: t
           })
