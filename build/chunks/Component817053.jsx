@@ -73,10 +73,10 @@ function f(e) {
     source: o.m1.UserProfile,
     sourceUserId: n,
     trackEntryPointImpression: true
-  }), E = null != a ? a : u.intl.string(u.t.GIWFlF), j = u.intl.formatToPlainString(u.t["8QLQB+"], {
-    gameName: E
+  }), j = null != a ? a : u.intl.string(u.t.GIWFlF), g = u.intl.formatToPlainString(u.t["8QLQB+"], {
+    gameName: j
   }), A = e => f ? e : (0, i.jsx)(s.u, {
-    text: E,
+    text: j,
     children: e
   });
   return A(null == x ? (0, i.jsx)(c.tEY, {
@@ -92,7 +92,7 @@ function f(e) {
   }) : (0, i.jsx)(c.P3F, {
     innerRef: h,
     onClick: x,
-    "aria-label": j,
+    "aria-label": g,
     className: r()(p.clickable, m),
     children: (0, i.jsx)(v, {
       imageSrc: l,

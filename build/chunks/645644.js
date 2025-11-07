@@ -2,7 +2,7 @@
 /** chunk id: 645644, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => en
+  Z: () => er
 }), require("./388685.js"), require("./415506.js"), require("./642613.js");
 var Chunk772848 = require("./772848.js"),
   Chunk379649 = require("./379649.js"),
@@ -66,7 +66,7 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = 3,
+let P = 4,
   w = false,
   D = new Chunk710845.Z("OverlayUsageStatsManager");
 w || (D.verbose = () => {});
@@ -362,6 +362,9 @@ class U {
       overlayMethodStats: this.overlayMethodStats
     })
   }
+  setOverlayState(e) {
+    this.overlayState = e
+  }
   getSettingMethod() {
     return null == this.overlayMethod ? Chunk837268.gl[Chunk837268.gl.Disabled] : Chunk837268.gl[this.overlayMethod]
   }
@@ -416,7 +419,8 @@ class U {
         overlay_successfully_shown: this._successfullyShown
       }), Chunk145597), {
         original_method: Chunk837268.gl[Chunk145597.original_method],
-        any_other_method: Chunk830917
+        any_other_method: Chunk830917,
+        last_overlay_state: this.overlayState
       }),
       notifications: this.notificationAnalytics.getCounterAnalytics(this.uuid)
     }
@@ -459,7 +463,7 @@ class U {
   }
   constructor(e) {
     var t, n;
-    A(this, "game", true), A(this, "uuid", true), A(this, "overlayStatus", true), A(this, "overlayMethod", true), A(this, "overlayMethodStats", true), A(this, "notificationAnalytics", true), A(this, "widgetAnalytics", true), A(this, "screenAnalytics", true), A(this, "uiUnlockedCount", true), A(this, "uiLockedCount", true), A(this, "gameFocusChangedCount", true), A(this, "gameConcurrentGameCount", true), A(this, "overlayMessageAckCount", true), A(this, "overlayMessageCreateCount", true), A(this, "gameTimer", true), A(this, "gameFocusedTimer", true), A(this, "unlockedTimer", true), A(this, "rtcConnectionTimer", true), A(this, "desktopFocusedTimer", true), A(this, "desktopFocusChangedCount", true), A(this, "desktopMessageAckCount", true), A(this, "desktopMessageCreateCount", true), A(this, "soundboardShownTimer", true), A(this, "soundboardShownCount", true), A(this, "soundboardKeepOpenCount", true), A(this, "muteToggledCount", true), A(this, "_successfullyShown", true), this.game = e, this.uuid = k(), this.overlayMethod = null, this.overlayMethodStats = null, this.notificationAnalytics = new L, this.widgetAnalytics = new M, this.uiUnlockedCount = 0, this.uiLockedCount = 0, this.gameFocusChangedCount = 0, this.gameConcurrentGameCount = 0, this.overlayMessageAckCount = 0, this.overlayMessageCreateCount = 0, this.gameTimer = i.G9.startNew(), this.gameFocusedTimer = new i.G9, this.unlockedTimer = new i.G9, this.rtcConnectionTimer = new i.G9, this.desktopFocusedTimer = new i.G9, this.desktopFocusChangedCount = 0, this.desktopMessageAckCount = 0, this.desktopMessageCreateCount = 0, this.soundboardShownTimer = new i.G9, this.soundboardShownCount = 0, this.soundboardKeepOpenCount = 0, this.muteToggledCount = 0, this._successfullyShown = false, this.screenAnalytics = new j(e), this.overlayStatus = (0, d.b6)(e), this.overlayMethod = null != (n = null == (t = this.overlayStatus) ? true : t.overlayMethod) ? n : null, this.overlayMethodStats = this.buildOverlayMethodStats(this.overlayMethod, e), U.desktopMainWindowHasFocus && this.desktopFocusedTimer.start(), $.hasConnection() && this.rtcConnectionTimer.start()
+    A(this, "game", true), A(this, "uuid", true), A(this, "overlayStatus", true), A(this, "overlayMethod", true), A(this, "overlayMethodStats", true), A(this, "overlayState", true), A(this, "notificationAnalytics", true), A(this, "widgetAnalytics", true), A(this, "screenAnalytics", true), A(this, "uiUnlockedCount", true), A(this, "uiLockedCount", true), A(this, "gameFocusChangedCount", true), A(this, "gameConcurrentGameCount", true), A(this, "overlayMessageAckCount", true), A(this, "overlayMessageCreateCount", true), A(this, "gameTimer", true), A(this, "gameFocusedTimer", true), A(this, "unlockedTimer", true), A(this, "rtcConnectionTimer", true), A(this, "desktopFocusedTimer", true), A(this, "desktopFocusChangedCount", true), A(this, "desktopMessageAckCount", true), A(this, "desktopMessageCreateCount", true), A(this, "soundboardShownTimer", true), A(this, "soundboardShownCount", true), A(this, "soundboardKeepOpenCount", true), A(this, "muteToggledCount", true), A(this, "_successfullyShown", true), this.game = e, this.uuid = k(), this.overlayMethod = null, this.overlayMethodStats = null, this.overlayState = null, this.notificationAnalytics = new L, this.widgetAnalytics = new M, this.uiUnlockedCount = 0, this.uiLockedCount = 0, this.gameFocusChangedCount = 0, this.gameConcurrentGameCount = 0, this.overlayMessageAckCount = 0, this.overlayMessageCreateCount = 0, this.gameTimer = i.G9.startNew(), this.gameFocusedTimer = new i.G9, this.unlockedTimer = new i.G9, this.rtcConnectionTimer = new i.G9, this.desktopFocusedTimer = new i.G9, this.desktopFocusChangedCount = 0, this.desktopMessageAckCount = 0, this.desktopMessageCreateCount = 0, this.soundboardShownTimer = new i.G9, this.soundboardShownCount = 0, this.soundboardKeepOpenCount = 0, this.muteToggledCount = 0, this._successfullyShown = false, this.screenAnalytics = new j(e), this.overlayStatus = (0, d.b6)(e), this.overlayMethod = null != (n = null == (t = this.overlayStatus) ? true : t.overlayMethod) ? n : null, this.overlayMethodStats = this.buildOverlayMethodStats(this.overlayMethod, e), U.desktopMainWindowHasFocus && this.desktopFocusedTimer.start(), ee.hasConnection() && this.rtcConnectionTimer.start()
   }
 }
 
@@ -591,27 +595,33 @@ function J(e) {
   if (null == t) return void D.error("OVERLAY_UPDATE_OVERLAY_METHOD: Game not found", e, U.debug);
   e.overlayMethod !== f.gl.Disabled && (D.verbose("OVERLAY_UPDATE_OVERLAY_METHOD", e), t.setOverlayMethod(e.overlayMethod))
 }
+
+function $(e) {
+  let t = U.getByPid(e.pid);
+  if (null == t) return void D.error("OVERLAY_TRACK_STATE_CHANGED: Game not found", e, U.debug);
+  e.newState !== f.mM.OVERLAY_DISABLED && t.setOverlayState(e.newState)
+}
 A(U, "gamesByPid", {}), A(U, "gamesByName", {}), A(U, "desktopMainWindowHasFocus", document.hasFocus());
-class $ {
+class ee {
   static hasConnection() {
-    return $.connections.size > 0
+    return ee.connections.size > 0
   }
   static handleRTCConnectionState(e) {
     var t;
     let n = (null != (t = e.channelId) ? t : "unknown") + e.context;
     switch (e.state) {
       case T.hes.RTC_CONNECTED:
-        $.connections.add(n);
+        ee.connections.add(n);
         break;
       case T.hes.DISCONNECTED:
-        $.connections.delete(n)
+        ee.connections.delete(n)
     }
-    let r = $.hasConnection();
-    $.previousHasConnection !== r && (U.toggleRtcConnection(r), $.previousHasConnection = r)
+    let r = ee.hasConnection();
+    ee.previousHasConnection !== r && (U.toggleRtcConnection(r), ee.previousHasConnection = r)
   }
 }
-A($, "connections", new Set), A($, "previousHasConnection", false);
-class ee {
+A(ee, "connections", new Set), A(ee, "previousHasConnection", false);
+class et {
   static handleMessageAcked(e) {
     D.verbose("MESSAGE_ACKED", e);
     let t = h.Z.getGame();
@@ -639,11 +649,11 @@ class ee {
 w && !__OVERLAY__ && setInterval(async () => {
   for (let e of Object.values(U.debug.gamesByName)) D.verbose("Game analytics", await module.getAnalytics())
 }, 5e3);
-class et extends Chunk147913.Z {
+class en extends Chunk147913.Z {
   constructor(...e) {
     super(...e), A(this, "actions", __OVERLAY__ ? {
-      MESSAGE_ACKED: ee.handleMessageAcked,
-      MESSAGE_CREATE: ee.handleMessageCreate
+      MESSAGE_ACKED: et.handleMessageAcked,
+      MESSAGE_CREATE: et.handleMessageCreate
     } : {
       OVERLAY_FOCUSED: H,
       OVERLAY_NOTIFICATION_EVENT: F,
@@ -655,11 +665,12 @@ class et extends Chunk147913.Z {
       MESSAGE_ACKED: K,
       MESSAGE_CREATE: z,
       WINDOW_FOCUS: X,
-      RTC_CONNECTION_STATE: $.handleRTCConnectionState,
+      RTC_CONNECTION_STATE: ee.handleRTCConnectionState,
       AUDIO_TOGGLE_SELF_MUTE: q,
       OVERLAY_SUCCESSFULLY_SHOWN: Q,
-      OVERLAY_UPDATE_OVERLAY_METHOD: J
+      OVERLAY_UPDATE_OVERLAY_METHOD: J,
+      OVERLAY_TRACK_STATE_CHANGED: $
     })
   }
 }
-let en = new et
+let er = new en

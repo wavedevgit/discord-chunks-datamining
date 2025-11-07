@@ -1,5 +1,5 @@
-/** Chunk was on 98783 **/
-/** chunk id: 332031, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 70675 **/
+/** chunk id: 332031, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -12,13 +12,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e, t) {
-  let n = (0, l.e7)([o.Z], () => (0, a.Z)(o.Z.findActivity(e, e => e.type === s.IIU.STREAMING)), [e]);
-  return null == n ? null : (0, i.jsx)(r.sNh, {
+function d(e, n) {
+  let t = (0, i.e7)([u.Z], () => (0, a.Z)(u.Z.findActivity(e, e => e.type === o.IIU.STREAMING)), [e]);
+  return null == t ? null : (0, l.jsx)(r.sNh, {
     id: "watch-stream",
-    label: u.intl.string(u.t["7Xq/nV"]),
+    label: s.intl.string(s.t["7Xq/nV"]),
     action: () => {
-      null == t || t(), window.open(n, "_blank")
+      null == n || n(), window.open(t, "_blank")
     }
   })
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 98783 **/
-/** chunk id: 858488, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 70675 **/
+/** chunk id: 858488, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,48 +10,48 @@ var Chunk442837 = require("./442837.js"),
   Chunk699516 = require("./699516.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
+function o(e) {
   let {
-    user: t,
-    onAction: s,
-    appContext: u
-  } = e, d = t.id, [c, g] = (0, l.Wu)([a.Z], () => {
+    user: n,
+    onAction: o,
+    appContext: s
+  } = e, d = n.id, [c, g] = (0, i.Wu)([a.Z], () => {
     var e;
     return [a.Z.isFriend(d), null != (e = a.Z.getNickname(d)) ? e : null]
   }, [d]);
   if (!c) return null;
-  let f = null == g ? o.intl.string(o.t.BGYkaH) : o.intl.string(o.t["8pOYUE"]);
-  return (0, i.jsx)(r.sNh, {
+  let Z = null == g ? u.intl.string(u.t.BGYkaH) : u.intl.string(u.t["8pOYUE"]);
+  return (0, l.jsx)(r.sNh, {
     id: null == g ? "add-friend-nickname" : "edit-friend-nickname",
-    label: f,
+    label: Z,
     action: () => {
-      null == s || s(), (0, r.ZDy)(async () => {
+      null == o || o(), (0, r.ZDy)(async () => {
         let {
           default: e
-        } = await n.e("25070").then(n.bind(n, 670794));
-        return n => (0, i.jsx)(e, function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
-              var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
+        } = await t.e("25070").then(t.bind(t, 670794));
+        return t => (0, l.jsx)(e, function(e) {
+          for (var n = 1; n < arguments.length; n++) {
+            var t = null != arguments[n] ? arguments[n] : {},
+              l = Object.keys(t);
+            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            }))), l.forEach(function(n) {
+              var l;
+              l = t[n], n in e ? Object.defineProperty(e, n, {
+                value: l,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = i
+              }) : e[n] = l
             })
           }
           return e
         }({
-          user: t,
+          user: n,
           nickname: g
-        }, n))
+        }, t))
       }, {
-        contextKey: null != u ? (0, r.VnL)(u) : true
+        contextKey: null != s ? (0, r.VnL)(s) : true
       })
     }
   })

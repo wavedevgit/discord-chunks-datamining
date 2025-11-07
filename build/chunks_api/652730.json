@@ -1,1 +1,1 @@
-{"id":"652730","type":"store","data":{"name":"LurkerModePopoutStore","functions":[{"name":"initialize","args":[]},{"name":"shouldShowPopout","args":["e"]}],"events":[]},"fromModule":{"id":"88647"}}
+{"id":"652730","type":"store","data":{"name":"LurkerModePopoutStore","functions":[{"name":"initialize","args":[]},{"name":"shouldShowPopout","args":["e"]}],"events":[]},"fromModule":{"id":"13140"}}

@@ -1,7 +1,7 @@
 /** Chunk was on 29446 **/
 /** chunk id: 946734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +34,7 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class P {
+class E {
   updateData(e) {
     let {
       userId: t,
@@ -100,27 +100,27 @@ class P {
         })
       })
     }, "more-avatars")), I(this, "handleClick", () => {
-      (0, m.openUserProfileModal)({
+      (0, f.openUserProfileModal)({
         userId: this.userId,
         channelId: this.channelId,
         sourceAnalyticsLocations: this.analyticsLocations,
-        section: x.oh.MUTUAL_GUILDS
+        section: O.oh.MUTUAL_GUILDS
       })
     }), this.userId = e, this.user = t, this.channelId = n, this.analyticsLocations = l
   }
 }
 
-function E(e) {
+function P(e) {
   let {
     channel: t
-  } = e, n = t.getRecipientId(), r = (0, f.gc)(n), a = Array(r.length).fill(null), {
-    analyticsLocations: m
+  } = e, n = t.getRecipientId(), r = (0, m.gc)(n), a = Array(r.length).fill(null), {
+    analyticsLocations: f
   } = (0, h.ZP)(p.Z.AKA), g = function(e) {
     let {
       userId: t,
       channelId: n,
       analyticsLocations: i
-    } = e, r = (0, s.e7)([b.default], () => b.default.getUser(t), [t]), [a] = l.useState(() => new P({
+    } = e, r = (0, s.e7)([b.default], () => b.default.getUser(t), [t]), [a] = l.useState(() => new E({
       user: r,
       userId: t,
       channelId: n,
@@ -134,9 +134,9 @@ function E(e) {
     }), a
   }({
     userId: n,
-    analyticsLocations: m,
+    analyticsLocations: f,
     channelId: t.id
-  }), [j, y] = l.useState(false), x = l.useCallback(() => {
+  }), [j, y] = l.useState(false), O = l.useCallback(() => {
     y(true)
   }, [y]), I = l.useCallback(() => {
     y(false)
@@ -144,8 +144,8 @@ function E(e) {
   return 0 === g.getNicknameGuildPairs().length && 0 === r.length ? (0, i.jsx)("div", {
     className: Z.spacer
   }) : (0, i.jsxs)(h.Gt, {
-    value: m,
-    children: [(0, i.jsx)(O.iz, {
+    value: f,
+    children: [(0, i.jsx)(x.iz, {
       className: Z.divider
     }), (0, i.jsx)(u.IGR, {
       text: C.intl.string(C.t.l1QVfj),
@@ -180,7 +180,7 @@ function E(e) {
       position: "bottom",
       className: Z.nicknames,
       delay: 0,
-      onTooltipShow: x,
+      onTooltipShow: O,
       onTooltipHide: I,
       children: g.renderNicknamePairs(!j)
     }) : null]

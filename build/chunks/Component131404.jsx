@@ -1,7 +1,7 @@
 /** Chunk was on 56826 **/
 /** chunk id: 131404, original params: e,n,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => Y
+  default: () => V
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,6 +12,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk911969 = require("./911969.js"),
   Chunk947440 = require("./947440.jsx"),
   Chunk100527 = require("./100527.js"),
+  Chunk434500 = require("./434500.jsx"),
   Chunk441061 = require("./441061.jsx"),
   Chunk167675 = require("./167675.jsx"),
   Chunk737013 = require("./737013.jsx"),
@@ -44,101 +45,101 @@ var Chunk481060 = require("./481060.js"),
   Chunk332031 = require("./332031.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let Y = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let V = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: n,
     channel: t,
     channelSelected: a = false,
     showMute: s = true,
     showMediaItems: c = false,
-    showChannelCallItems: F = false,
-    showModalItems: Y = true,
-    targetIsUser: V = false,
-    context: K,
-    onSelect: W,
-    onHeightUpdate: z,
-    onInteraction: B
-  } = e, J = (0, D.Z)({
+    showChannelCallItems: L = false,
+    showModalItems: V = true,
+    targetIsUser: K = false,
+    context: W,
+    onSelect: z,
+    onHeightUpdate: B,
+    onInteraction: J
+  } = e, X = (0, G.Z)({
     userId: n.id,
     guildId: null
-  }), X = (0, I.Z)({
+  }), q = (0, A.Z)({
     user: n,
-    context: K
-  }), q = (0, N.Z)({
+    context: W
+  }), H = (0, m.Z)({
     user: n,
     channelId: t.id,
-    context: K
-  }), H = (0, S.Z)({
+    context: W
+  }), $ = (0, P.Z)({
     user: n
-  }), $ = (0, Q.Z)(n.id), ee = (0, A.Z)(t.id, a), en = (0, U.Z)({
+  }), ee = (0, F.Z)(n.id), en = (0, C.Z)(t.id, a), et = (0, M.Z)({
     user: n
-  }), et = (0, d.Z)(null, n), ei = (0, G.Z)(n.id), er = (0, R.O)(t.id, "DMUserContextMenu"), el = (0, R.Z)(n, er), ea = (0, x.Z)({
+  }), ei = (0, d.Z)(null, n), er = (0, Q.Z)(n.id), el = (0, w.O)(t.id, "DMUserContextMenu"), ea = (0, w.Z)(n, el), es = (0, S.Z)({
     user: n
-  }), es = (0, P.Z)({
+  }), eo = (0, N.Z)({
     user: n
-  }), eo = (0, M.Z)({
+  }), ed = (0, R.Z)({
     user: n
-  }), ed = (0, w.Z)(n.id), ec = (0, g.B)({
+  }), ec = (0, D.Z)(n.id), eu = (0, j.B)({
     userId: n.id,
     channelId: t.id,
     guildId: t.getGuildId()
-  }), eu = (0, T.Z)(n.id, t.id), ef = (0, E.Z)({
+  }), ef = (0, k.Z)(n.id, t.id), eh = (0, I.Z)({
     user: n,
     location: "DMUserContextMenu"
-  }), eh = (0, k.Z)({
+  }), eg = (0, U.Z)({
     user: n,
     location: "DMUserContextMenu"
-  }), eg = (0, b.ZP)(t), ej = (0, O.Z)({
+  }), ej = (0, O.ZP)(t), ep = (0, y.Z)({
     id: n.id,
-    label: L.intl.string(L.t["/AXYnE"])
-  }), ep = (0, O.Z)({
+    label: Y.intl.string(Y.t["/AXYnE"])
+  }), eb = (0, y.Z)({
     id: t.id,
-    label: L.intl.string(L.t.gFHI3k)
-  }), eb = (0, p.Z)(t), eO = (0, f.Z)(n.id), ey = (0, u.Z)(t.id), ev = (0, _.Z)(n), eZ = (0, h.Z)(n.id), e_ = (0, m.Z)({
+    label: Y.intl.string(Y.t.gFHI3k)
+  }), eO = (0, b.Z)(t), ey = (0, h.Z)(n.id), ev = (0, f.Z)(t.id), eZ = (0, x.Z)(n), e_ = (0, g.Z)(n.id), ex = (0, u.Z)(t.id, n.id), eS = (0, E.Z)({
     commandType: o.yU.USER,
     commandTargetId: n.id,
     channel: t,
     guildId: true,
-    onHeightUpdate: z
-  }), ex = (0, y.l)(t), eS = (0, y.P)(t), eP = (0, v.Z)(t), eN = (0, Z.Z)(t), em = (0, C.Z)({
+    onHeightUpdate: B
+  }), eP = (0, v.l)(t), eN = (0, v.P)(t), em = (0, Z.Z)(t), eE = (0, _.Z)(t), eI = (0, T.Z)({
     channel: t
-  }), eE = t.isManaged(), eI = n.isNonUserBot();
+  }), eA = t.isManaged(), eC = n.isNonUserBot();
   return (0, i.jsxs)(r.v2r, {
     navId: "user-context",
     onClose: l.Zy,
-    "aria-label": L.intl.string(L.t.liqwPJ),
-    onSelect: W,
-    onInteraction: B,
+    "aria-label": Y.intl.string(Y.t.liqwPJ),
+    onSelect: z,
+    onInteraction: J,
     children: [(0, i.jsx)(r.kSQ, {
-      children: !(eI && !(0, j.Z)(t.id)) && eb
+      children: !(eC && !(0, p.Z)(t.id)) && eO
     }), (0, i.jsxs)(r.kSQ, {
-      children: [ex, eP, eN]
+      children: [eP, em, eE]
     }), (0, i.jsx)(r.kSQ, {
-      children: !eI && ev
+      children: !eC && eZ
     }), (0, i.jsxs)(r.kSQ, {
-      children: [!eI && (0, i.jsxs)(i.Fragment, {
-        children: [Y && J, X, !eE && el, Y && q, Y && H, $]
-      }), (0, j.Z)(t.id) && J, ee]
-    }), !eI && (0, i.jsxs)(i.Fragment, {
+      children: [!eC && (0, i.jsxs)(i.Fragment, {
+        children: [V && X, q, !eA && ea, V && H, V && $, ee]
+      }), (0, p.Z)(t.id) && X, en]
+    }), !eC && (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(r.kSQ, {
-        children: c && ei
+        children: c && er
       }), (0, i.jsx)(r.kSQ, {
-        children: Y && et
+        children: V && ei
       }), (0, i.jsxs)(r.kSQ, {
-        children: [c && ed, Y && ec, c && eu, e_, Y && en, ea, es, eo, Y && eh, Y && ef, c && eZ]
+        children: [c && ec, V && eu, c && ef, eS, V && et, es, eo, ed, V && eg, V && eh, c && e_]
       }), (0, i.jsx)(r.kSQ, {
-        children: s && eg
-      }), F && (0, i.jsxs)(r.kSQ, {
-        children: [ey, eO]
+        children: s && ej
+      }), L && (0, i.jsxs)(r.kSQ, {
+        children: [ex, ev, ey]
       })]
-    }), (0, j.Z)(t.id) && (0, i.jsx)(r.kSQ, {
-      children: s && eg
+    }), (0, p.Z)(t.id) && (0, i.jsx)(r.kSQ, {
+      children: s && ej
     }), (0, i.jsx)(r.kSQ, {
-      children: eS
+      children: eN
     }), (0, i.jsx)(r.kSQ, {
-      children: em
+      children: eI
     }), (0, i.jsxs)(r.kSQ, {
-      children: [ej, !V && ep]
+      children: [ep, !K && eb]
     })]
   })
 }, {

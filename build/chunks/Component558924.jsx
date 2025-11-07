@@ -1,8 +1,8 @@
-/** Chunk was on 98783 **/
-/** chunk id: 558924, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 70675 **/
+/** chunk id: 558924, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  O: () => I,
-  Z: () => E
+  O: () => E,
+  Z: () => _
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -29,92 +29,92 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk604570 = require("./604570.js");
 
-function I(e, t) {
-  let n = (0, s.e7)([_.Z], () => _.Z.getVoiceChannelId()),
-    i = (0, s.e7)([h.Z], () => {
-      var e, t;
-      return null != (t = null == (e = h.Z.getChannel(n)) ? true : e.getGuildId()) ? t : true
+function E(e, n) {
+  let t = (0, o.e7)([j.Z], () => j.Z.getVoiceChannelId()),
+    l = (0, o.e7)([P.Z], () => {
+      var e, n;
+      return null != (n = null == (e = P.Z.getChannel(t)) ? true : e.getGuildId()) ? n : true
     }),
     {
-      enabled: l
-    } = O.Z.useExperiment({
-      guildId: i,
-      location: t
+      enabled: i
+    } = p.Z.useExperiment({
+      guildId: l,
+      location: n
     });
-  return l ? n : e
+  return i ? t : e
 }
 
-function E(e, t) {
-  let [n, l] = (0, s.Wu)([b.Z], () => [null != t ? b.Z.getParticipants(t) : null, null != t ? b.Z.getParticipant(t, e.id) : null], [t, e.id]), o = (0, s.e7)([h.Z], () => h.Z.getChannel(t)), m = (0, Z.s)(e, "context_menu", t), {
-    enabled: _
-  } = O.Z.useExperiment({
-    guildId: null == o ? true : o.guild_id,
+function _(e, n) {
+  let [t, i] = (0, o.Wu)([f.Z], () => [null != n ? f.Z.getParticipants(n) : null, null != n ? f.Z.getParticipant(n, e.id) : null], [n, e.id]), u = (0, o.e7)([P.Z], () => P.Z.getChannel(n)), O = (0, b.s)(e, "context_menu", n), {
+    enabled: j
+  } = p.Z.useExperiment({
+    guildId: null == u ? true : u.guild_id,
     location: "useRingHangupItem"
-  }), I = !m || (null == n ? true : n.length) === 0 || null == t, E = _ && (null == o ? true : o.guild_id) != null, S = null == l, C = null != l && l.type === j.fO.USER && l.ringing, U = [];
-  E && !I && (S || C) && U.push(u.z.RING_USER_TO_VC_NEW_BADGE);
-  let [D, L] = (0, v.US)(U), T = D === u.z.RING_USER_TO_VC_NEW_BADGE, {
+  }), E = !O || (null == t ? true : t.length) === 0 || null == n, _ = j && (null == u ? true : u.guild_id) != null, S = null == i, T = null != i && i.type === v.fO.USER && i.ringing, A = [];
+  _ && !E && (S || T) && A.push(s.z.RING_USER_TO_VC_NEW_BADGE);
+  let [U, M] = (0, m.US)(A), k = U === s.z.RING_USER_TO_VC_NEW_BADGE, {
     analyticsLocations: w
   } = (0, g.ZP)();
-  return ((0, f.Z)({
+  return ((0, Z.Z)({
     type: a.ImpressionTypes.MENU,
     name: a.ImpressionNames.RING_TO_GUILD_VC_MENU_ITEM_SHOWN,
     properties: {
-      voice_channel_id: t,
-      voice_guild_id: null == o ? true : o.guild_id,
+      voice_channel_id: n,
+      voice_guild_id: null == u ? true : u.guild_id,
       location_stack: w
     }
   }, {
-    disableTrack: I || !E
-  }, [e.id]), I) ? null : S ? (0, i.jsx)(d.sNh, {
+    disableTrack: E || !_
+  }, [e.id]), E) ? null : S ? (0, l.jsx)(d.sNh, {
     id: "ring",
-    label: E ? (0, i.jsxs)("div", {
-      className: y.label,
-      children: [N.intl.string(N.t["3Hv9qQ"]), T && (0, i.jsx)(A, {})]
+    label: _ ? (0, l.jsxs)("div", {
+      className: x.label,
+      children: [N.intl.string(N.t["3Hv9qQ"]), k && (0, l.jsx)(I, {})]
     }) : N.intl.string(N.t.bHa9kN),
-    subtext: E ? (0, i.jsx)(P, {
-      channel: o
+    subtext: _ ? (0, l.jsx)(C, {
+      channel: u
     }) : null,
     action: () => {
-      T && L(x.L.TAKE_ACTION), c.Z.ring(t, [e.id], "user_context_menu"), E && null != t && (0, p.Kh)(t)
+      k && M(y.L.TAKE_ACTION), c.Z.ring(n, [e.id], "user_context_menu"), _ && null != n && (0, h.Kh)(n)
     },
-    className: y.menuItem
-  }) : C ? (0, i.jsx)(d.sNh, {
+    className: x.menuItem
+  }) : T ? (0, l.jsx)(d.sNh, {
     id: "stop-ringing",
-    label: (0, i.jsxs)("div", {
-      className: y.label,
-      children: [N.intl.string(N.t.ygslb0), T && (0, i.jsx)(A, {})]
+    label: (0, l.jsxs)("div", {
+      className: x.label,
+      children: [N.intl.string(N.t.ygslb0), k && (0, l.jsx)(I, {})]
     }),
-    subtext: E ? (0, i.jsx)(d.Text, {
+    subtext: _ ? (0, l.jsx)(d.Text, {
       variant: "text-xs/medium",
-      className: r()(y.subtext, y.ringing),
+      className: r()(x.subtext, x.ringing),
       children: N.intl.format(N.t.dwfzZi, {
-        channelName: (0, i.jsx)(P, {
-          channel: o
+        channelName: (0, l.jsx)(C, {
+          channel: u
         })
       })
     }) : null,
     action: () => {
-      T && L(x.L.TAKE_ACTION), c.Z.stopRinging(t, [e.id])
+      k && M(y.L.TAKE_ACTION), c.Z.stopRinging(n, [e.id])
     },
-    className: y.menuItem
+    className: x.menuItem
   }) : null
 }
-let P = e => {
+let C = e => {
     let {
-      channel: t
-    } = e, n = (0, m.ZP)(t);
-    return (0, i.jsxs)("div", {
-      className: y.subtext,
-      children: [(0, i.jsx)(d.gj8, {
+      channel: n
+    } = e, t = (0, O.ZP)(n);
+    return (0, l.jsxs)("div", {
+      className: x.subtext,
+      children: [(0, l.jsx)(d.gj8, {
         size: "xs"
-      }), (0, i.jsx)(d.Text, {
+      }), (0, l.jsx)(d.Text, {
         variant: "text-xs/medium",
-        className: y.channelName,
-        children: n
+        className: x.channelName,
+        children: t
       })]
     })
   },
-  A = () => (0, Chunk951288.jsx)(Chunk481060.IGR, {
+  I = () => (0, Chunk951288.jsx)(Chunk481060.IGR, {
     color: Chunk831209.Z.BG_BRAND,
     text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
   })

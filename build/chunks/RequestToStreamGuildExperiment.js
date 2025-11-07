@@ -1,11 +1,11 @@
-/** Chunk was on 88647 **/
+/** Chunk was on 20037 **/
 /** chunk id: 763624, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => l
 });
 var Chunk818083 = require("./818083.js");
 
-function i(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -24,7 +24,7 @@ function i(e) {
   return e
 }
 
-function l(e, t) {
+function a(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -36,27 +36,27 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let a = {
+let i = {
     enableRequestToStream: false,
     enableVCStatusIcons: false,
     enableOpenTIVForPing: false,
     enableRequestToStreamOverlayNotification: false
   },
-  o = (0, Chunk818083.B)({
+  l = (0, Chunk818083.B)({
     kind: "guild",
     id: "2025-08_request_to_stream",
     label: "Request to Stream",
-    defaultConfig: a,
+    defaultConfig: i,
     treatments: [{
       id: 1,
       label: "VC Status Icons",
-      config: l(i({}, a), {
+      config: a(o({}, i), {
         enableVCStatusIcons: true
       })
     }, {
       id: 2,
       label: "Request to Stream without Overlay Notification",
-      config: l(i({}, a), {
+      config: a(o({}, i), {
         enableVCStatusIcons: true,
         enableRequestToStream: true,
         enableOpenTIVForPing: true
@@ -64,7 +64,7 @@ let a = {
     }, {
       id: 3,
       label: "Request to Stream with Overlay Notification",
-      config: l(i({}, a), {
+      config: a(o({}, i), {
         enableVCStatusIcons: true,
         enableRequestToStream: true,
         enableOpenTIVForPing: true,

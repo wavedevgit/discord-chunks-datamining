@@ -136,7 +136,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       (0, f.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387)), t = H.Z.isInChannel(k.Z.getVoiceChannelId(), d.id);
+        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387)), t = H.Z.isInChannel(k.Z.getVoiceChannelId(), d.id);
         return n => (0, r.jsx)(e, X(Q({}, n), {
           user: d,
           guildId: x,

@@ -1,9 +1,9 @@
-/** Chunk was on 88647 **/
+/** Chunk was on 66165 **/
 /** chunk id: 629049, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  n: () => i
+  Z: () => i
 });
-let r = (0, require("./722733.js").Z)({
+let i = (0, require("./722733.js").Z)({
   kind: "user",
   name: "2025-10-call-tile-popout",
   defaultConfig: {
@@ -14,13 +14,4 @@ let r = (0, require("./722733.js").Z)({
       enabled: true
     }
   }
-});
-
-function i(e) {
-  let {
-    location: t
-  } = e;
-  return r.getConfig({
-    location: t
-  })
-}
+})

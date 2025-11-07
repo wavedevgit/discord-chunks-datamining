@@ -40,14 +40,14 @@ let N = {
   [Chunk296009.l.PLAYED_GAMES]: {
     placeholder: () => ({
       variant: "grid",
-      applicationIds: [Chunk804919.L.PEAK, Chunk804919.L.APEX_LEGENDS, Chunk804919.L.REPO, Chunk804919.L.BALDURS_GATE_3]
+      applicationIds: [Chunk804919.L.PEAK, Chunk804919.L.BATTLEFIELD_6, Chunk804919.L.REPO, Chunk804919.L.BALDURS_GATE_3]
     }),
     getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t["pBR+4j"])
   },
   [Chunk296009.l.WANT_TO_PLAY_GAMES]: {
     placeholder: () => ({
       variant: "grid",
-      applicationIds: [Chunk804919.L.MARVEL_RIVALS, Chunk804919.L.WORLD_OF_WARCRAFT, Chunk804919.L.BATTLEFIELD_6, Chunk804919.L.RUST]
+      applicationIds: [Chunk804919.L.MARVEL_RIVALS, Chunk804919.L.WORLD_OF_WARCRAFT, Chunk804919.L.RUST, Chunk804919.L.SILKSONG]
     }),
     getAriaLabel: () => Chunk388032.intl.string(Chunk388032.t.NtoBi1)
   },
@@ -82,9 +82,9 @@ function I(e) {
       getAriaLabel: L,
       icon: T
     } = N[a],
-    _ = "small" === o,
+    b = "small" === o,
     {
-      config: b
+      config: _
     } = (0, f.G)(),
     S = t.useMemo(() => {
       switch (a) {
@@ -97,24 +97,24 @@ function I(e) {
             games: []
           });
         case s.l.APPLICATION:
-          let e = null == b ? true : b.application_id;
+          let e = null == _ ? true : _.application_id;
           if (null == e) return null;
           return new p.q({
             type: a,
             applicationId: e
           })
       }
-    }, [a, null == b ? true : b.application_id]),
+    }, [a, null == _ ? true : _.application_id]),
     O = t.useCallback(() => {
       u || null == S || ((0, v.qH)(a, S), A({
         action: "WIDGET_ADDED",
         widgetEdited: a
-      }), (0, h.L$)(j.qb.WIDGET_ADDED), null == n || n())
+      }), (0, h.L$)(g.qb.WIDGET_ADDED), null == n || n())
     }, [u, a, S, A, n]);
   return (null != S && null != T && (l = T(S)), null == S) ? null : (0, i.jsxs)("div", {
-    className: g.addButtonContainer,
+    className: E.addButtonContainer,
     children: [(0, i.jsxs)(c.P3F, {
-      className: r()(g.addButtonContent, _ && g.sizeSmall, u && g.loading),
+      className: r()(E.addButtonContent, b && E.sizeSmall, u && E.loading),
       onClick: O,
       "aria-label": L(S),
       "aria-busy": u,
@@ -124,18 +124,18 @@ function I(e) {
         switch (e.variant) {
           case "details":
             return (0, i.jsx)(x.i, {
-              className: g.placeholderPadding,
+              className: E.placeholderPadding,
               applicationId: e.applicationId,
               size: o
             });
           case "grid":
             return (0, i.jsx)(x.c, {
-              className: g.placeholderPadding,
+              className: E.placeholderPadding,
               applicationIds: e.applicationIds,
               size: o
             });
           case "application-widget":
-            return (0, i.jsx)(E.Z, {
+            return (0, i.jsx)(j.Z, {
               applicationId: e.applicationId,
               size: o
             });
@@ -143,13 +143,13 @@ function I(e) {
             return (0, d.vE)(e)
         }
       })(), (0, i.jsxs)("div", {
-        className: g.overlay,
+        className: E.overlay,
         children: [(0, i.jsx)(c.oFk, {
           size: "md",
           color: "currentColor",
-          className: g.addButton
+          className: E.addButton
         }), (0, i.jsxs)("div", {
-          className: g.title,
+          className: E.title,
           children: [(0, i.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "header-primary",
@@ -159,14 +159,14 @@ function I(e) {
             alt: "",
             width: 16,
             height: 16,
-            className: g.icon
+            className: E.icon
           }) : null]
         })]
       })]
     }), (() => {
       if (null == S) return null;
       let e = I(S);
-      return "application-widget" === e.variant ? (0, i.jsx)(E.T, {
+      return "application-widget" === e.variant ? (0, i.jsx)(j.T, {
         applicationId: e.applicationId,
         size: o
       }) : null

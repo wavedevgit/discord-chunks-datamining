@@ -1,7 +1,7 @@
-/** Chunk was on 98783 **/
-/** chunk id: 24311, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 70675 **/
+/** chunk id: 24311, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,54 +17,54 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function Z(e) {
+function b(e) {
   let {
-    user: t,
-    context: Z,
-    label: m,
-    joinCallVideo: v,
-    id: p,
-    onCall: O
-  } = e, h = (0, o.Aq)(), _ = (0, l.e7)([u.default], () => u.default.getId() === t.id), j = (0, l.e7)([c.Z], () => c.Z.isBlocked(t.id)), x = (0, l.e7)([g.Z, d.Z], () => g.Z.getVoiceChannelId() === d.Z.getDMFromUserId(t.id));
-  if (_ || Z === f.IlC.POPOUT || x || t.bot || t.isProvisional) return null;
+    user: n,
+    context: b,
+    label: O,
+    joinCallVideo: m,
+    id: h,
+    onCall: p
+  } = e, P = (0, u.Aq)(), j = (0, i.e7)([s.default], () => s.default.getId() === n.id), v = (0, i.e7)([c.Z], () => c.Z.isBlocked(n.id)), y = (0, i.e7)([g.Z, d.Z], () => g.Z.getVoiceChannelId() === d.Z.getDMFromUserId(n.id));
+  if (j || b === Z.IlC.POPOUT || y || n.bot || n.isProvisional) return null;
   let N = () => {
-      null == O || O(), a.Z.openPrivateChannel({
-        recipientIds: t.id,
+      null == p || p(), a.Z.openPrivateChannel({
+        recipientIds: n.id,
         joinCall: true,
-        joinCallVideo: v
-      }), h.dispatch(f.CkL.POPOUT_CLOSE), (0, r.pTH)()
+        joinCallVideo: m
+      }), P.dispatch(Z.CkL.POPOUT_CLOSE), (0, r.pTH)()
     },
-    y = !s.ZP.disableCallUserConfirmationPrompt;
-  return (0, i.jsx)(r.sNh, {
-    id: null != p ? p : "call",
-    label: null != m ? m : b.intl.string(b.t.JJogjm),
-    action: y ? () => {
+    x = !o.ZP.disableCallUserConfirmationPrompt;
+  return (0, l.jsx)(r.sNh, {
+    id: null != h ? h : "call",
+    label: null != O ? O : f.intl.string(f.t.JJogjm),
+    action: x ? () => {
       (0, r.ZDy)(async () => {
         let {
           default: e
-        } = await n.e("27157").then(n.bind(n, 736454));
-        return t => (0, i.jsx)(e, function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
-              var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
+        } = await t.e("27157").then(t.bind(t, 736454));
+        return n => (0, l.jsx)(e, function(e) {
+          for (var n = 1; n < arguments.length; n++) {
+            var t = null != arguments[n] ? arguments[n] : {},
+              l = Object.keys(t);
+            "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            }))), l.forEach(function(n) {
+              var l;
+              l = t[n], n in e ? Object.defineProperty(e, n, {
+                value: l,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = i
+              }) : e[n] = l
             })
           }
           return e
         }({
           onSubmit: N
-        }, t))
+        }, n))
       })
     } : N,
-    disabled: j
+    disabled: v
   })
 }
