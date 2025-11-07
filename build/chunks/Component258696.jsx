@@ -2,7 +2,7 @@
 /** chunk id: 258696, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => P
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,6 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk911969 = require("./911969.js"),
   Chunk607070 = require("./607070.js"),
+  Chunk533379 = require("./533379.js"),
   Chunk998698 = require("./998698.js"),
   Chunk211242 = require("./211242.js"),
   Chunk775685 = require("./775685.jsx"),
@@ -28,75 +29,78 @@ var Chunk951288 = require("./951288.js"),
   Chunk728386 = require("./728386.jsx"),
   Chunk564355 = require("./564355.js");
 
-function A(e) {
+function C(e) {
   let {
     disabled: t,
     channel: n
-  } = e, i = (0, _.Z)();
-  return null != i ? (0, r.jsx)(v.Z, {
+  } = e, i = (0, p.Z)();
+  return null != i ? (0, r.jsx)(I.Z, {
     giftingPromotionConfig: i,
     disabled: t,
     channel: n
-  }) : (0, r.jsx)(O.Z, {
+  }) : (0, r.jsx)(v.Z, {
     disabled: t,
     channel: n
   })
 }
 
-function C(e) {
-  var t, n, i, _, p, h, O;
+function N(e) {
+  var t, n, i, p, h, m, v;
   let {
-    type: v,
-    disabled: C,
-    channel: R,
-    handleSubmit: P,
-    isEmpty: w,
-    showAllButtons: D
-  } = e, x = (0, o.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), L = N(R.id, v, w), {
-    activeCommand: M,
-    activeCommandOption: j
-  } = (0, o.cj)([c.Z], () => ({
-    activeCommand: c.Z.getActiveCommand(R.id),
-    activeCommandOption: c.Z.getActiveOption(R.id)
+    type: I,
+    disabled: N,
+    channel: P,
+    handleSubmit: w,
+    isEmpty: D,
+    showAllButtons: x
+  } = e, L = (0, o.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), M = R(P.id, I, D), {
+    activeCommand: j,
+    activeCommandOption: k
+  } = (0, o.cj)([u.Z], () => ({
+    activeCommand: u.Z.getActiveCommand(P.id),
+    activeCommandOption: u.Z.getActiveOption(P.id)
   })), {
-    paymentsBlocked: k
-  } = u.Z.useExperiment({
+    paymentsBlocked: U
+  } = d.Z.useExperiment({
     location: "dc120b_3"
   }, {
     autoTrackExposure: false
-  }), U = [], G = !R.isDM() || true === R.recipients || R.recipients.length > 1, B = (0, o.e7)([m.default], () => G ? null : m.default.getUser(R.recipients[0])), Z = (0, f.Nt)() && (null == (t = v.confetti) ? true : t.button) != null;
-  return (a.tq || ((null == (p = v.gifts) ? true : p.button) != null && null == M && !k && (null == B || g.ZP.isPremiumEligible(B)) && U.push((0, r.jsx)(A, {
-    disabled: C,
-    channel: R
-  }, "gift")), (null == (h = v.gifs) ? true : h.button) != null && null == M && D && U.push((0, r.jsx)(b.Z, {
-    disabled: C,
-    type: v
-  }, "gif")), Z && null == M && U.push((0, r.jsx)(y.Z, {
-    disabled: C,
-    channel: R
-  }, "confetti")), !Z && (null == (O = v.stickers) ? true : O.button) != null && null == M && D && U.push((0, r.jsx)(S.Z, {
-    disabled: C,
-    type: v
-  }, "sticker"))), (null == (n = v.emojis) ? true : n.button) != null && (null == M || null != j && j.type !== s.jw.ATTACHMENT) && U.push((0, r.jsx)(E.Z, {
-    disabled: C,
-    type: v
-  }, "emoji")), U.push((0, r.jsx)(d.Z, {
-    channel: R,
-    type: v
-  }, "app-launcher")), (null == (i = v.submit) ? true : i.button) != null && ((null == (_ = v.submit) ? true : _.ignorePreference) || x) && U.push((0, r.jsx)(I.Z, {
-    onClick: P,
-    disabled: C || L
-  }, "submit")), 0 === U.length) ? null : (0, r.jsx)("div", {
-    className: T.buttons,
-    children: U
+  }), G = [], B = !P.isDM() || true === P.recipients || P.recipients.length > 1, Z = (0, o.e7)([g.default], () => B ? null : g.default.getUser(P.recipients[0])), F = (0, c.R)({
+    channel: P,
+    chatInputType: I
+  }), V = (0, _.Nt)() && (null == (t = I.confetti) ? true : t.button) != null;
+  return (a.tq || ((null == (h = I.gifts) ? true : h.button) != null && null == j && !U && (null == Z || E.ZP.isPremiumEligible(Z)) && G.push((0, r.jsx)(C, {
+    disabled: N,
+    channel: P
+  }, "gift")), (null == (m = I.gifs) ? true : m.button) != null && null == j && x && G.push((0, r.jsx)(y.Z, {
+    disabled: N,
+    type: I
+  }, "gif")), V && null == j && G.push((0, r.jsx)(O.Z, {
+    disabled: N,
+    channel: P
+  }, "confetti")), !V && (null == (v = I.stickers) ? true : v.button) != null && null == j && x && G.push((0, r.jsx)(T.Z, {
+    disabled: N,
+    type: I
+  }, "sticker"))), (null == (n = I.emojis) ? true : n.button) != null && (null == j || null != k && k.type !== s.jw.ATTACHMENT) && G.push((0, r.jsx)(b.Z, {
+    disabled: N,
+    type: I
+  }, "emoji")), F && G.push((0, r.jsx)(f.Z, {
+    channel: P,
+    type: I
+  }, "app-launcher")), (null == (i = I.submit) ? true : i.button) != null && ((null == (p = I.submit) ? true : p.ignorePreference) || L) && G.push((0, r.jsx)(S.Z, {
+    onClick: w,
+    disabled: N || M
+  }, "submit")), 0 === G.length) ? null : (0, r.jsx)("div", {
+    className: A.buttons,
+    children: G
   })
 }
 
-function N(e, t, n) {
-  return (0, o.e7)([p.Z, h.Z], () => {
-    let r = p.Z.getStickerPreview(e, t.drafts.type),
+function R(e, t, n) {
+  return (0, o.e7)([h.Z, m.Z], () => {
+    let r = h.Z.getStickerPreview(e, t.drafts.type),
       i = null != r && r.length > 0;
-    return 0 === h.Z.getUploads(e, t.drafts.type).length && n && !i
+    return 0 === m.Z.getUploads(e, t.drafts.type).length && n && !i
   })
 }
-let R = Chunk647438.memo(C)
+let P = Chunk647438.memo(N)

@@ -2,7 +2,7 @@
 /** chunk id: 775685, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,7 +15,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk541099 = require("./541099.js"),
   Chunk827498 = require("./827498.js"),
   Chunk663924 = require("./663924.jsx"),
-  Chunk533379 = require("./533379.js"),
   Chunk562129 = require("./562129.js"),
   Chunk570220 = require("./570220.js"),
   Chunk61356 = require("./61356.js"),
@@ -23,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk124886 = require("./124886.js");
 
-function O(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,20 +31,20 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,44 +55,44 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = Chunk647438.forwardRef(function(e, t) {
+let S = Chunk647438.forwardRef(function(e, t) {
   let {
     type: n
   } = e, a = (0, l.e7)([d.Z], () => d.Z.shouldShowPopup() && d.Z.activeViewType() === n), {
     Component: _,
-    events: p,
-    play: g
-  } = (0, h.Z)("ChannelAppLauncherButton"), O = i.useContext(m.ZP);
+    events: m,
+    play: y
+  } = (0, p.Z)("ChannelAppLauncherButton"), v = i.useContext(h.ZP);
   i.useEffect(() => {
     let e = () => {
-      p.onMouseEnter()
+      m.onMouseEnter()
     };
-    return O.on("command-sentinel-typed", e), () => {
-      O.off("command-sentinel-typed", e)
+    return v.on("command-sentinel-typed", e), () => {
+      v.off("command-sentinel-typed", e)
     }
-  }, [O, p]);
-  let I = i.useCallback(() => {
-      a ? u.y(f.ti.DISMISSED) : (u._(f._b.TEXT, n), c.ux()), g()
-    }, [a, n, g]),
+  }, [v, m]);
+  let S = i.useCallback(() => {
+      a ? u.y(f.ti.DISMISSED) : (u._(f._b.TEXT, n), c.ux()), y()
+    }, [a, n, y]),
     T = (0, r.jsx)(_, {
       size: "refresh_sm",
       color: "currentColor"
     });
   return (0, r.jsx)("div", {
-    className: o()(y.buttonContainer, E.t4),
+    className: o()(b.buttonContainer, g.t4),
     ref: t,
-    children: (0, r.jsx)(s.P3F, S(v({
+    children: (0, r.jsx)(s.P3F, I(O({
       tabIndex: 0,
-      className: o()(y.button, {
-        [y.buttonActive]: a
+      className: o()(b.button, {
+        [b.buttonActive]: a
       }),
-      onClick: I,
-      "aria-label": b.intl.string(b.t.erHFxI),
+      onClick: S,
+      "aria-label": E.intl.string(E.t.erHFxI),
       "aria-expanded": a,
       "aria-haspopup": "dialog",
       focusProps: {
@@ -104,31 +103,28 @@ let T = Chunk647438.forwardRef(function(e, t) {
           right: false
         }
       }
-    }, p), {
+    }, m), {
       children: T
     }))
   })
 });
 
-function A(e) {
+function T(e) {
   let {
     channel: t,
     type: n
-  } = e, a = i.useRef(null), o = (0, p.R)({
-    channel: t,
-    chatInputType: n
-  }), s = (0, g.Z)({
+  } = e, a = i.useRef(null), o = (0, m.Z)({
     type: n
   });
-  return o ? (0, r.jsxs)("div", {
-    className: y.channelAppLauncher,
-    children: [(0, r.jsx)(T, {
+  return (0, r.jsxs)("div", {
+    className: b.channelAppLauncher,
+    children: [(0, r.jsx)(S, {
       type: n,
       ref: a
-    }), s ? (0, r.jsx)(_.Z, {
+    }), o ? (0, r.jsx)(_.Z, {
       positionTargetRef: a,
       channel: t
     }) : null]
-  }) : null
+  })
 }
-let C = Chunk647438.memo(A)
+let A = Chunk647438.memo(T)

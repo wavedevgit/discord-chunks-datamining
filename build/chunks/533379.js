@@ -9,16 +9,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk873387 = require("./873387.js");
 
 function o(e) {
+  var t, n;
   let {
-    channel: t,
-    chatInputType: n
-  } = e, o = (0, a.g)(t), {
-    activeCommand: s
-  } = (0, r.cj)([i.Z], () => {
-    var e;
-    return {
-      activeCommand: (null == (e = n.commands) ? true : e.enabled) ? i.Z.getActiveCommand(t.id) : null
-    }
-  });
-  return null == s && o
+    channel: o,
+    chatInputType: s
+  } = e, l = null != (n = null == (t = s.commands) ? true : t.enabled) && n, c = (0, a.g)(o), {
+    activeCommand: u
+  } = (0, r.cj)([i.Z], () => ({
+    activeCommand: l ? i.Z.getActiveCommand(o.id) : null
+  }));
+  return l && c && null == u
 }

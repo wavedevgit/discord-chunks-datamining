@@ -471,7 +471,7 @@ function ej(e, t) {
   });
   let {
     activeCommand: e1,
-    activeCommandSection: e2
+    activeCommandSection: e3
   } = (0, _.cj)([v.Z], () => {
     var e, t;
     return {
@@ -479,7 +479,7 @@ function ej(e, t) {
       activeCommandSection: (null == (t = k.commands) ? true : t.enabled) ? v.Z.getActiveCommandSection(j.id) : null
     }
   }), {
-    isLurking: e3,
+    isLurking: e2,
     isPendingMember: e4,
     disabled: e8,
     canAttachFiles: e5,
@@ -547,9 +547,9 @@ function ej(e, t) {
     } = eM();
   (0, X.S)(ta, j.guild_id, j.id);
   let tD = null != H,
-    tx = e8 && !((e3 || e4) && e7) || tc && (null == (s = k.submit) ? true : s.useDisabledStylesOnSubmit),
+    tx = e8 && !((e2 || e4) && e7) || tc && (null == (s = k.submit) ? true : s.useDisabledStylesOnSubmit),
     tL = null;
-  null != e1 ? tL = null == F ? true : F(e1, e2, ed.attachButton) : (!e8 || e6) && (tL = null == Z ? true : Z(tD, ed.attachButton));
+  null != e1 ? tL = null == F ? true : F(e1, e3, ed.attachButton) : (!e8 || e6) && (tL = null == Z ? true : Z(tD, ed.attachButton));
   let tM = te && null != h && !e8 && k.showCharacterCount && null == e1,
     tj = te && !__OVERLAY__ && null != h && null == e1 && k.toolbarType !== Q.OW.NONE && !e8,
     tk = (0, et.c)({
@@ -622,7 +622,7 @@ function ej(e, t) {
           }), (0, r.jsxs)("div", {
             className: o()(ed.inner, {
               [ed.innerDisabled]: tx,
-              [ed.sansAttachButton]: k !== Q.Ie.EDIT && (null != tL || tx && null == tL || e3),
+              [ed.sansAttachButton]: k !== Q.Ie.EDIT && (null != tL || tx && null == tL || e2),
               [ed.sansAttachButtonCreateThread]: k === Q.Ie.THREAD_CREATION,
               [ed.sansAttachButtonCreatePost]: k === Q.Ie.CREATE_FORUM_POST || k === Q.Ie.FORWARD_MESSAGE_INPUT,
               [ed.sansAttachButtonUserProfileReply]: k === Q.Ie.USER_PROFILE_REPLY
@@ -642,7 +642,7 @@ function ej(e, t) {
                 placeholder: L,
                 required: P,
                 accessibilityLabel: M,
-                isPreviewing: (e3 || e4) && e7,
+                isPreviewing: (e2 || e4) && e7,
                 channel: j,
                 type: k,
                 canPasteFiles: e5,

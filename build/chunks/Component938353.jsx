@@ -133,7 +133,7 @@ function e1(e) {
   return e
 }
 
-function e2(e, t) {
+function e3(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -144,8 +144,8 @@ function e2(e, t) {
   return n
 }
 
-function e3(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : e2(Object(t)).forEach(function(n) {
+function e2(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : e3(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -405,7 +405,7 @@ class tn extends(r = Chunk647438.Component) {
     if (0 === d.length) return null;
     let f = d.map(t => {
         var n;
-        return e3(e1({}, (0, W.JD)(t, e)), {
+        return e2(e1({}, (0, W.JD)(t, e)), {
           original: t.url,
           srcIsAnimated: (0, eO.yE)(null != (n = t.flags) ? n : 0, eq.J0y.IS_ANIMATED)
         })
@@ -810,7 +810,7 @@ function tr(e) {
     isActiveChannelOrUnarchivableThread: v,
     isAutomodQuarantined: y
   }), P = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), w = (0, z.Z)(null == n ? true : n.id), D = (0, Q.Z)(r), x = (0, R.v)(r), L = (0, eN._)(n), k = (0, eS.ro)(r.id, r.channel_id), U = (0, C.m8)();
-  return (0, i.jsx)(tn, e3(e1(e3(e1({
+  return (0, i.jsx)(tn, e2(e1(e2(e1({
     canSuppressEmbeds: I,
     canDeleteAttachments: S
   }, N), {
@@ -859,7 +859,7 @@ let ti = e => {
     g = (0, R.v)(n),
     E = (0, eS.ro)(n.id, n.channel_id),
     b = (0, Q.Z)(n);
-  return (0, i.jsx)(tn, e3(e1({}, u), {
+  return (0, i.jsx)(tn, e2(e1({}, u), {
     message: n,
     channel: r,
     disableReactionReads: a,
