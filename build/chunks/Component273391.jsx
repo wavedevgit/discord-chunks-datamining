@@ -87,34 +87,22 @@ let j = new Chunk710845.Z("ImageEditor"),
       }, [M, z, G, D]),
       ee = r.useCallback(e => {
         if (null == T) return;
-        let t = C(T, e, V),
-          {
-            x: n,
-            y: l
-          } = N.current;
-        A(e), Z(t), $({
-          x: n,
-          y: l
-        }), null == K || K()
+        let t = C(T, e, V);
+        A(e), Z(t), $(), null == K || K()
       }, [T, $, V, K]),
       et = r.useCallback(() => {
         if (null == M.current || null == T) return;
         let e = (z + 90) % 360,
-          t = -N.current.x,
-          n = N.current.y,
-          l = T.height,
-          r = T.width,
-          i = C({
-            width: l,
-            height: r
+          t = T.height,
+          n = T.width,
+          l = C({
+            width: t,
+            height: n
           }, R, V);
-        $({
-          x: n,
-          y: t
-        }), L(e), P({
-          width: l,
-          height: r
-        }), Z(i), null == K || K()
+        L(e), P({
+          width: t,
+          height: n
+        }), Z(l), $(), null == K || K()
       }, [T, z, $, R, V, K]),
       en = r.useCallback(() => {
         null != M.current && (k(e => !e), $(), null == K || K())
@@ -222,16 +210,16 @@ let j = new Chunk710845.Z("ImageEditor"),
         P({
           width: e,
           height: t
-        }), w({
-          x: 0,
-          y: 0
         }), L(0), k(false);
         let n = Math.min(Math.max(e, t) / Math.min(e, t), 4);
         A(n), q(n), Q.current += 1, Z(C({
           width: e,
           height: t
-        }, n, V))
-      }, [M, V]),
+        }, n, V)), $({
+          x: 0,
+          y: 0
+        })
+      }, [M, V, $]),
       ed = r.useCallback(() => {
         ec()
       }, [ec]);
