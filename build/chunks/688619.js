@@ -425,21 +425,21 @@
     }
   });
   var e1 = d.unpack,
-    e3 = d.type,
-    e2 = y,
+    e2 = d.type,
+    e3 = y,
     e4 = E,
     e8 = f,
     e5 = k;
   e4.prototype.hsl = function() {
     return e5(this._rgb)
-  }, e2.hsl = function() {
+  }, e3.hsl = function() {
     for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
     return new(Function.prototype.bind.apply(e4, [null].concat(module, ["hsl"])))
   }, e8.format.hsl = W, e8.autodetect.push({
     p: 2,
     test: function() {
       for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
-      if ("array" === e3(e = e1(module, "hsl")) && 3 === module.length) return "hsl"
+      if ("array" === e2(e = e1(module, "hsl")) && 3 === module.length) return "hsl"
     }
   });
   var e6 = d.unpack,
@@ -632,20 +632,20 @@
     t$ = d.type,
     t0 = y,
     t1 = E,
-    t3 = f,
-    t2 = tG;
+    t2 = f,
+    t3 = tG;
   t1.prototype.lch = function() {
-    return t2(this._rgb)
+    return t3(this._rgb)
   }, t1.prototype.hcl = function() {
-    return t2(this._rgb).reverse()
+    return t3(this._rgb).reverse()
   }, t0.lch = function() {
     for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
     return new(Function.prototype.bind.apply(t1, [null].concat(module, ["lch"])))
   }, t0.hcl = function() {
     for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
     return new(Function.prototype.bind.apply(t1, [null].concat(module, ["hcl"])))
-  }, t3.format.lch = tz, t3.format.hcl = tQ, ["lch", "hcl"].forEach(function(e) {
-    return t3.autodetect.push({
+  }, t2.format.lch = tz, t2.format.hcl = tQ, ["lch", "hcl"].forEach(function(e) {
+    return t2.autodetect.push({
       p: 2,
       test: function() {
         for (var t = [], n = arguments.length; n--;) t[n] = arguments[n];
@@ -1007,10 +1007,10 @@
       if ("array" === nQ(e = nX(module, "oklch")) && 3 === module.length) return "oklch"
     }
   });
-  var n3 = E,
-    n2 = d.type;
-  n3.prototype.alpha = function(e, t) {
-    return (true === t && (t = false), true !== e && "number" === n2(e)) ? t ? (this._rgb[3] = e, this) : new n3([this._rgb[0], this._rgb[1], this._rgb[2], e], "rgb") : this._rgb[3]
+  var n2 = E,
+    n3 = d.type;
+  n2.prototype.alpha = function(e, t) {
+    return (true === t && (t = false), true !== e && "number" === n3(e)) ? t ? (this._rgb[3] = e, this) : new n2([this._rgb[0], this._rgb[1], this._rgb[2], e], "rgb") : this._rgb[3]
   }, E.prototype.clipped = function() {
     return this._rgb._clipped || false
   };
@@ -1493,10 +1493,10 @@
     r1 = function(e, t) {
       return e * t / 255
     },
-    r3 = function(e, t) {
+    r2 = function(e, t) {
       return e > t ? t : e
     },
-    r2 = function(e, t) {
+    r3 = function(e, t) {
       return e > t ? e : t
     },
     r4 = function(e, t) {
@@ -1513,7 +1513,7 @@
     };
   rJ.normal = r$(r0(function(e) {
     return e
-  })), rJ.multiply = r$(r0(r1)), rJ.screen = r$(r0(r4)), rJ.overlay = r$(r0(r8)), rJ.darken = r$(r0(r3)), rJ.lighten = r$(r0(r2)), rJ.dodge = r$(r0(r6)), rJ.burn = r$(r0(r5));
+  })), rJ.multiply = r$(r0(r1)), rJ.screen = r$(r0(r4)), rJ.overlay = r$(r0(r8)), rJ.darken = r$(r0(r2)), rJ.lighten = r$(r0(r3)), rJ.dodge = r$(r0(r6)), rJ.burn = r$(r0(r5));
   for (var r7 = rJ, r9 = d.type, ie = d.clip_rgb, it = d.TWOPI, ir = Math.pow, ii = Math.sin, ia = Math.cos, io = y, is = function(e, t, n, r, i) {
       true === e && (e = 300), true === t && (t = false), true === n && (n = 1), true === r && (r = 1), true === i && (i = [0, 1]);
       var a, o = 0;

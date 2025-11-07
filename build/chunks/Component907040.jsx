@@ -278,9 +278,9 @@ let eu = (e, t) => {
     } = eO, e1 = i.useMemo(() => ei(en({}, eq), {
       section: null != eQ ? eQ : Q.jXE.EMOJI_PICKER_POPOUT
     }), [eq, eQ]), {
-      analyticsLocations: e3
+      analyticsLocations: e2
     } = (0, b.ZP)(g.Z.EMOJI_PICKER), {
-      diversitySurrogate: e2
+      diversitySurrogate: e3
     } = (0, u.cj)([O.ZP], () => ({
       diversitySurrogate: O.ZP.diversitySurrogate
     })), e4 = (0, U.DV)(eB, c, l, eP), e8 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e5 = D.d4.useSetting(), e6 = i.useMemo(() => new Set(e5), [e5]), e7 = i.useCallback(e => {
@@ -379,7 +379,7 @@ let eu = (e, t) => {
         channelGuildId: eH,
         isBurstReaction: eY
       });
-    ef(eu, eF), e_(eu, e2, eV, eL), i.useEffect(() => {
+    ef(eu, eF), e_(eu, e3, eV, eL), i.useEffect(() => {
       eE || (0, T.ql)("")
     }, [eE]), i.useEffect(() => (M.default.track(Q.rMx.OPEN_POPOUT, en({
       type: null != e$ ? e$ : "Emoji Picker",
@@ -441,7 +441,7 @@ let eu = (e, t) => {
         autoFocus: eL,
         accessory: eM,
         headerClassName: ey,
-        diversitySurrogate: e2,
+        diversitySurrogate: e3,
         isBurstReaction: eY,
         onBurstReactionToggle: tm,
         renderHeader: eA,
@@ -484,7 +484,7 @@ let eu = (e, t) => {
             }, tu), {
               children: tp ? (0, r.jsx)(K.Z, {
                 collapsedSections: e6,
-                diversitySurrogate: e2,
+                diversitySurrogate: e3,
                 emojiGrid: tn,
                 emojiListRef: eF,
                 emojiSize: A,
@@ -525,7 +525,7 @@ let eu = (e, t) => {
       })
     }));
     return (0, r.jsx)(b.Gt, {
-      value: e3,
+      value: e2,
       children: tb
     })
   },

@@ -616,7 +616,7 @@ function e1(e) {
   })
 }
 
-function e3(e) {
+function e2(e) {
   var t, n;
   let {
     message: i,
@@ -644,7 +644,7 @@ function e3(e) {
   })
 }
 
-function e2(e) {
+function e3(e) {
   let {
     message: t,
     channel: n,
@@ -825,13 +825,13 @@ let ti = Object.freeze({
   [Chunk981631.uaV.STAGE_START]: eJ,
   [Chunk981631.uaV.STAGE_END]: e$,
   [Chunk981631.uaV.STAGE_SPEAKER]: e1,
-  [Chunk981631.uaV.STAGE_RAISE_HAND]: e3,
+  [Chunk981631.uaV.STAGE_RAISE_HAND]: e2,
   [Chunk981631.uaV.STAGE_TOPIC]: e0,
   [Chunk981631.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION]: Chunk504733.Z,
   [Chunk981631.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED]: Chunk563959.P,
   [Chunk981631.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED]: Chunk563959.e,
   [Chunk981631.uaV.PREMIUM_REFERRAL]: tt,
-  [Chunk981631.uaV.GUILD_DEADCHAT_REVIVE_PROMPT]: e2,
+  [Chunk981631.uaV.GUILD_DEADCHAT_REVIVE_PROMPT]: e3,
   [Chunk981631.uaV.CUSTOM_GIFT]: true,
   [Chunk981631.uaV.GUILD_GAMING_STATS_PROMPT]: e4,
   [Chunk981631.uaV.VOICE_HANGOUT_INVITE]: true,
