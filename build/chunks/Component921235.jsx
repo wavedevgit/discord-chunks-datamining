@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 921235, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -32,9 +32,9 @@ function O(e) {
   r.useEffect(() => {
     (0, u.FQ)("847199849233514549", true)
   }, []);
-  let E = (0, o.e7)([h.Z, f.default], () => !!a()(h.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== f.default.getId() && e.state === C.yb.SENT && !(0, y.Z)(e))),
-    j = (0, o.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
-    S = null != (t = b.ZP.useName(j)) ? t : _.intl.string(_.t.y1Wu2f),
+  let j = (0, o.e7)([f.Z, h.default], () => !!a()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === C.yb.SENT && !(0, y.Z)(e))),
+    E = (0, o.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
+    S = null != (t = b.ZP.useName(E)) ? t : v.intl.string(v.t.y1Wu2f),
     P = (0, o.e7)([d.Z], () => d.Z.getStickerById(x)),
     I = r.useCallback(async () => {
       if (null == l || "" === l) try {
@@ -45,39 +45,39 @@ function O(e) {
           type: "Send wave"
         })
       } catch (e) {
-        e.ok || 429 !== e.status || O(_.intl.string(_.t.Whhv4w))
+        e.ok || 429 !== e.status || O(v.intl.string(v.t.Whhv4w))
       }
     }, [n.id, n.type, l]),
-    Z = _.intl.formatToPlainString(_.t.m0zYbV, {
+    Z = v.intl.formatToPlainString(v.t.m0zYbV, {
       username: S
     }),
     T = null != l && "" !== l ? (0, i.jsx)(s.Text, {
-      className: v.error,
+      className: _.error,
       color: "text-danger",
       variant: "text-sm/normal",
       children: l
     }) : null;
-  return E ? (0, i.jsxs)("div", {
-    className: v.containerCompact,
+  return j ? (0, i.jsxs)("div", {
+    className: _.containerCompact,
     children: [(0, i.jsxs)(s.P3F, {
-      className: null != l && "" !== l ? v.compactButtonDisabled : v.compactButton,
-      "aria-label": _.intl.string(_.t.pJObYI),
+      className: null != l && "" !== l ? _.compactButtonDisabled : _.compactButton,
+      "aria-label": v.intl.string(v.t.pJObYI),
       onClick: I,
       children: [(0, i.jsx)(p.Z, {
         sticker: P,
         size: 24
       }), (0, i.jsx)(s.Text, {
-        className: v.text,
+        className: _.text,
         variant: "text-md/medium",
         children: Z
       })]
     }), T]
   }) : (0, i.jsxs)("div", {
-    className: v.containerExpanded,
+    className: _.containerExpanded,
     children: [(0, i.jsx)(p.Z, {
       sticker: P,
       size: 160,
-      className: v.stickerExpanded
+      className: _.stickerExpanded
     }), (0, i.jsx)(s.Button, {
       fullWidth: true,
       variant: "primary",

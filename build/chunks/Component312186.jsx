@@ -1,7 +1,8 @@
 /** Chunk was on 63141 **/
 /** chunk id: 312186, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk183322 = require("./183322.js"),
   Chunk197571 = require("./197571.js");
 
-function S(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +34,7 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x() {
+function S() {
   let e = Chunk237997.default.getNotificationPositionMode(),
     t = module !== Chunk981631._vf.DISABLED,
     n = Chunk556296.ZP.getOverlayKeybind(),
@@ -57,25 +58,25 @@ class Z extends Chunk647438.PureComponent {
     })
   }
   handleChangeNotificationPositionMode(e, t) {
-    s.Z.setNotificationPositionMode(t), x()
+    l.Z.setNotificationPositionMode(t), S()
   }
   handleChangeAvatarSizeMode(e) {
     let {
       value: t
     } = e;
-    s.Z.setAvatarSizeMode(t)
+    l.Z.setAvatarSizeMode(t)
   }
   handleChangeDisplayNameMode(e) {
     let {
       value: t
     } = e;
-    s.Z.setDisplayNameMode(t)
+    l.Z.setDisplayNameMode(t)
   }
   handleChangeDisplayUserMode(e) {
     let {
       value: t
     } = e;
-    s.Z.setDisplayUserMode(t)
+    l.Z.setDisplayUserMode(t)
   }
   renderHeader() {
     return (0, Chunk951288.jsxs)(Chunk600164.Z, {
@@ -150,7 +151,7 @@ class Z extends Chunk647438.PureComponent {
       shouldShowKeybindIndicators: t,
       showKeybindIndicators: n,
       shouldShowInviteNotification: r
-    } = this.props, o = !Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.TextChat), a = module !== Chunk981631._vf.DISABLED;
+    } = this.props, s = !Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.TextChat), a = module !== Chunk981631._vf.DISABLED;
     return (0, Chunk951288.jsxs)(Chunk481060.C3N, {
       children: [(0, Chunk951288.jsx)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t.IQv8Eo),
@@ -171,7 +172,7 @@ class Z extends Chunk647438.PureComponent {
       }), require && (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.XZTl9r),
         checked: exports,
-        onChange: e => s.Z.setShowKeybindIndicators(e)
+        onChange: e => l.Z.setShowKeybindIndicators(e)
       })]
     })
   }
@@ -253,7 +254,7 @@ class Z extends Chunk647438.PureComponent {
           value: 4,
           label: "Out of Memory"
         }],
-        onChange: e => null != e && p.ZP.crash(e)
+        onChange: e => null != e && h.ZP.crash(e)
       })
     })
   }
@@ -265,40 +266,40 @@ class Z extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), S(this, "state", {
+    super(...e), x(this, "state", {
       selectedSection: "GENERAL"
-    }), S(this, "handleSelectSection", e => {
+    }), x(this, "handleSelectSection", e => {
       this.setState({
         selectedSection: e
       })
-    }), S(this, "handleToggleTextChatNotifications", () => {
-      s.Z.setNotificationDisabledSetting(g.i.TEXT_CHAT, !this.props.textChatDisabled), x()
-    }), S(this, "handleToggleInviteNotification", () => {
+    }), x(this, "handleToggleTextChatNotifications", () => {
+      l.Z.setNotificationDisabledSetting(g.i.TEXT_CHAT, !this.props.textChatDisabled), S()
+    }), x(this, "handleToggleInviteNotification", () => {
       let e = this.props.shouldShowInviteNotification;
-      s.Z.setNotificationDisabledSetting(g.i.GAME_ACTIVITY, !e)
+      l.Z.setNotificationDisabledSetting(g.i.GAME_ACTIVITY, !e)
     })
   }
 }
 
-function j(e) {
+function C(e) {
   let {
     onClose: t
   } = e, {
     avatarSizeMode: n,
     displayNameMode: r,
-    displayUserMode: l,
-    notificationPositionMode: s,
+    displayUserMode: o,
+    notificationPositionMode: l,
     textChatDisabled: a,
     shouldShowKeybindIndicators: c,
     shouldShowInviteNotification: d
-  } = (0, o.cj)([h.default, y.Z], () => ({
-    avatarSizeMode: h.default.getAvatarSizeMode(),
-    displayNameMode: h.default.getDisplayNameMode(),
-    displayUserMode: h.default.getDisplayUserMode(),
-    notificationPositionMode: h.default.getNotificationPositionMode(),
-    textChatDisabled: y.Z.isNotificationDisabled(O.n0.TextChat),
-    shouldShowKeybindIndicators: h.default.showKeybindIndicators,
-    shouldShowInviteNotification: !y.Z.isNotificationDisabled(O.n0.ActivityInvite)
+  } = (0, s.cj)([p.default, y.Z], () => ({
+    avatarSizeMode: p.default.getAvatarSizeMode(),
+    displayNameMode: p.default.getDisplayNameMode(),
+    displayUserMode: p.default.getDisplayUserMode(),
+    notificationPositionMode: p.default.getNotificationPositionMode(),
+    textChatDisabled: y.Z.isNotificationDisabled(_.n0.TextChat),
+    shouldShowKeybindIndicators: p.default.showKeybindIndicators,
+    shouldShowInviteNotification: !y.Z.isNotificationDisabled(_.n0.ActivityInvite)
   })), u = (0, m.Z)({
     location: "Overlay Settings"
   });
@@ -306,8 +307,8 @@ function j(e) {
     onClose: t,
     avatarSizeMode: n,
     displayNameMode: r,
-    displayUserMode: l,
-    notificationPositionMode: s,
+    displayUserMode: o,
+    notificationPositionMode: l,
     textChatDisabled: a,
     shouldShowKeybindIndicators: c,
     showKeybindIndicators: u,

@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 903672, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -40,9 +40,9 @@ function N(e, t, n) {
     i = t ? v.ZP.roleFilter : null,
     l = t ? v.ZP.everyoneFilter : null,
     o = null;
-  null != e && null != r && (o = r === x.NgX.ALL_SERVERS ? null : e.getGuildId()), c.Z.fetchRecentMentions({
+  null != e && null != r && (o = r === E.NgX.ALL_SERVERS ? null : e.getGuildId()), c.Z.fetchRecentMentions({
     before: n,
-    limit: x.DJj,
+    limit: E.DJj,
     guildId: o,
     roles: i,
     everyone: l
@@ -68,14 +68,14 @@ function Z(e) {
     everyoneFilter: v.ZP.everyoneFilter
   })), j = (0, m.Us)({
     location: "RecentMentions"
-  }), C = (0, d.Z)(f), E = (0, d.Z)(b), P = (0, d.Z)(y);
+  }), x = (0, d.Z)(f), C = (0, d.Z)(b), P = (0, d.Z)(y);
   i.useEffect(() => {
     if (!v.ZP.hasLoadedEver) return void N(n, true);
-    (null != C && f !== C || null != E && b !== E || null != P && y !== P) && N(n, true)
-  }, [C, f, E, b, P, y, n, true]), (0, u.ZP)(() => {
+    (null != x && f !== x || null != C && b !== C || null != P && y !== P) && N(n, true)
+  }, [x, f, C, b, P, y, n, true]), (0, u.ZP)(() => {
     (null == l ? true : l.some(h.k5)) && (c.Z.clearMentions(), N(n, true))
   }), i.useEffect(() => () => {
-    c.Z.truncateMentions(x.DJj)
+    c.Z.truncateMentions(E.DJj)
   }, []);
   let Z = i.useCallback(() => null, []);
   return (0, r.jsx)(g.ZP, {
@@ -126,7 +126,7 @@ function T(e) {
     a = !!(0, p.qF)(l) && !o;
   return (0, r.jsxs)("div", {
     className: I.container,
-    children: [(0, r.jsx)(C.Z, {
+    children: [(0, r.jsx)(x.Z, {
       channel: l,
       gotoChannel: n,
       children: null != i ? (0, r.jsx)(s.M0o, {

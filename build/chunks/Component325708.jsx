@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 325708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y,
@@ -62,17 +62,17 @@ function y(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [C, _] = l.useState(f.ZP[y]), v = l.useCallback(e => {
+  }(t), [C, v] = l.useState(h.ZP[y]), _ = l.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
       [y]: e
     })
-  }, [y]), x = 5 === t ? h.at : h.Co, O = (0, h.WL)({
+  }, [y]), x = 5 === t ? f.at : f.Co, O = (0, f.WL)({
     maxWidth: n,
     minWidth: x
-  }), E = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), j = (0, s.clamp)(C, x, n), S = O ? j : j + E;
+  }), j = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(C, x, n), S = O ? E : E + j;
   l.useEffect(() => {
-    null == i || i(j, O)
-  }, [j, i, O]);
+    null == i || i(E, O)
+  }, [E, i, O]);
   let P = null != p ? p : l.Fragment;
   return (0, r.jsxs)(r.Fragment, {
     children: [!O && (0, r.jsx)("div", {
@@ -96,15 +96,15 @@ function y(e) {
           minWidth: x,
           maxWidth: n,
           resizableNode: g,
-          onResize: _,
-          onResizeEnd: v
+          onResize: v,
+          onResizeEnd: _
         }), (0, r.jsx)("div", {
           ref: g,
           className: o()(m.container, {
             [m.floating]: O
           }),
           style: {
-            width: j
+            width: E
           },
           children: a
         })]

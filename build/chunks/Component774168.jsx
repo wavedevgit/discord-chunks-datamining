@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 774168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -65,15 +65,15 @@ function p(e) {
     mentionCount: l,
     isTyping: o,
     canBadge: s
-  } = e, p = null != l && l > 0, f = null != (t = p ? l : r) ? t : 0, h = s && null != r && r > 0;
+  } = e, p = null != l && l > 0, h = null != (t = p ? l : r) ? t : 0, f = s && null != r && r > 0;
   return (0, i.jsxs)("div", {
     className: a()(u.chatIcon, n),
     children: [(0, i.jsx)(d, {
-      isBadged: h,
+      isBadged: f,
       isTyping: o
-    }), h && (0, i.jsx)(c.Z, {
+    }), f && (0, i.jsx)(c.Z, {
       hasMentions: p,
-      truncatedCount: f > 99 ? "99+" : f,
+      truncatedCount: h > 99 ? "99+" : h,
       className: u.badge
     })]
   })

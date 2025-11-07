@@ -1,7 +1,7 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 217871, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => E
 }), require("./388685.js"), require("./358797.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -38,17 +38,17 @@ let O = Chunk647438.memo(function(e) {
       }, 2e3);
       return () => clearTimeout(e)
     }, [a]);
-    let f = null != a ? "100%" : "200%",
-      h = (0, c.q_F)({
+    let h = null != a ? "100%" : "200%",
+      f = (0, c.q_F)({
         opacity: +!!u,
-        translateY: u ? "0" : f,
+        translateY: u ? "0" : h,
         pointerEvents: "none",
         width: n,
         config: l ? o.config.stiff : o.config.slow
       }, "animate-always");
     return null != a && (0, i.jsx)(o.animated.div, {
       className: x.messageComboScore,
-      style: h,
+      style: f,
       children: (0, i.jsx)(c.Text, {
         className: x.comboScore,
         variant: "text-sm/bold",
@@ -56,7 +56,7 @@ let O = Chunk647438.memo(function(e) {
       })
     })
   }),
-  E = Chunk647438.memo(function(e) {
+  j = Chunk647438.memo(function(e) {
     let {
       value: t,
       multiplier: n
@@ -81,7 +81,7 @@ let O = Chunk647438.memo(function(e) {
             color: u
           },
           variant: "text-sm/bold",
-          children: v.intl.format(v.t["6bgVlq"], {
+          children: _.intl.format(_.t["6bgVlq"], {
             multiplier: n
           })
         }), o && (0, i.jsxs)(i.Fragment, {
@@ -113,33 +113,33 @@ let O = Chunk647438.memo(function(e) {
         }), 1 === n && (0, i.jsx)(c.Text, {
           className: x.tip,
           variant: "text-sm/bold",
-          children: v.intl.string(v.t.b5Cpof)
+          children: _.intl.string(_.t.b5Cpof)
         })]
       })]
     })
   }),
-  j = Chunk647438.memo(function(e) {
+  E = Chunk647438.memo(function(e) {
     let {
       channelId: t
-    } = e, n = (0, s.e7)([f.default], () => f.default.getId()), l = (0, s.e7)([h.Z], () => h.Z.isTyping(t, n), [t, n]), a = (0, s.e7)([b.Z], () => b.Z.isEnabled()), d = (0, s.e7)([y.ZP], () => y.ZP.isComboing(n, t), [t, n]), {
+    } = e, n = (0, s.e7)([h.default], () => h.default.getId()), l = (0, s.e7)([f.Z], () => f.Z.isTyping(t, n), [t, n]), a = (0, s.e7)([b.Z], () => b.Z.isEnabled()), d = (0, s.e7)([y.ZP], () => y.ZP.isComboing(n, t), [t, n]), {
       ref: p,
       width: m = 0
-    } = (0, u.ZP)(), [g, C] = r.useState(false), v = (0, _.Z)(t), j = a && d && l;
+    } = (0, u.ZP)(), [g, C] = r.useState(false), _ = (0, v.Z)(t), E = a && d && l;
     r.useEffect(() => {
-      j && C(true);
-      let e = setTimeout(() => C(j), 1e3);
+      E && C(true);
+      let e = setTimeout(() => C(E), 1e3);
       return () => clearTimeout(e)
-    }, [j]);
+    }, [E]);
     let S = (0, c.q_F)({
         opacity: +!!g,
         transform: g ? "translateY(0)" : "translateY(100%)",
         pointerEvents: "none",
         config: o.config.stiff
       }),
-      P = r.useMemo(() => null != v ? v : {
+      P = r.useMemo(() => null != _ ? _ : {
         value: 0,
         multiplier: 1
-      }, [v]),
+      }, [_]),
       I = r.useRef(P);
     r.useEffect(() => {
       (P.multiplier > 1 || P.value > 0) && (I.current = P)
@@ -148,9 +148,9 @@ let O = Chunk647438.memo(function(e) {
       multiplier: Z,
       value: T
     } = r.useMemo(() => ({
-      value: j ? P.value : I.current.value,
-      multiplier: j ? P.multiplier : I.current.multiplier
-    }), [j, P, I]);
+      value: E ? P.value : I.current.value,
+      multiplier: E ? P.multiplier : I.current.multiplier
+    }), [E, P, I]);
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(O, {
         channelId: t,
@@ -159,7 +159,7 @@ let O = Chunk647438.memo(function(e) {
         ref: p,
         className: x.combo,
         style: S,
-        children: (0, i.jsx)(E, {
+        children: (0, i.jsx)(j, {
           value: T,
           multiplier: Z
         })

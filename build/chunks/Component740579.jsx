@@ -1,7 +1,7 @@
 /** Chunk was on 26775 **/
-/** chunk id: 740579, original params: t,e,r (module,exports,require) **/
+/** chunk id: 740579, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,22 +12,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk991249 = require("./991249.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function p(t) {
+function f(e) {
   let {
-    onSelect: e,
+    onSelect: t,
     onClose: r,
-    widget: p
-  } = t, b = (0, c.Z)(), f = (0, l.Z)(p), y = o.useRef(r), d = (0, u.Z)(p.id, "boolean" != typeof p.meta.horizontal || p.meta.horizontal);
+    widget: f
+  } = e, b = (0, c.Z)(), p = (0, a.Z)(f), y = o.useRef(r), O = (0, u.Z)(f.id, "boolean" != typeof f.meta.horizontal || f.meta.horizontal);
   return o.useEffect(() => {
     y.current = r
   }), o.useEffect(() => () => {
-    var t;
-    return null == (t = y.current) ? true : t.call(y)
+    var e;
+    return null == (e = y.current) ? true : e.call(y)
   }, []), (0, n.jsxs)(i.v2r, {
     navId: "overlay-video-widget-context-menu",
-    onClose: a.Zy,
+    onClose: l.Zy,
     "aria-label": s.intl.string(s.t.tPfVWi),
-    onSelect: e,
-    children: [b, d, f]
+    onSelect: t,
+    children: [b, O, p]
   })
 }

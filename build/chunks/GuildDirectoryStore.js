@@ -152,16 +152,16 @@ let y = new _(Chunk570140.Z, {
       [y.guildId]: c({}, x, y)
     });
     let O = null != (i = null == x ? true : x.primaryCategoryId) ? i : s.AR.UNCATEGORIZED,
-      j = null != (l = y.primaryCategoryId) ? l : s.AR.UNCATEGORIZED,
-      v = Object.assign({}, null == (n = g[b]) ? true : n[O]);
-    null != x && O !== j && delete v[y.guildId], g[b] = d(c({}, g[b]), {
-      [O]: v,
-      [j]: d(c({}, null == (r = g[b]) ? true : r[j]), {
+      v = null != (l = y.primaryCategoryId) ? l : s.AR.UNCATEGORIZED,
+      j = Object.assign({}, null == (n = g[b]) ? true : n[O]);
+    null != x && O !== v && delete j[y.guildId], g[b] = d(c({}, g[b]), {
+      [O]: j,
+      [v]: d(c({}, null == (r = g[b]) ? true : r[v]), {
         [y.guildId]: c({}, x, y)
       })
-    }), j !== O && null != m[b] && (m[b] = d(c({}, m[b]), {
+    }), v !== O && null != m[b] && (m[b] = d(c({}, m[b]), {
       [O]: (null == (o = m[b]) ? true : o[O]) > 0 ? (null == (u = m[b]) ? true : u[O]) - 1 : 0,
-      [j]: (null != (f = null == (p = m[b]) ? true : p[j]) ? f : 0) + 1
+      [v]: (null != (f = null == (p = m[b]) ? true : p[v]) ? f : 0) + 1
     }))
   },
   GUILD_DIRECTORY_CATEGORY_SELECT: function(e) {

@@ -1,4 +1,4 @@
-/** Chunk was on 29446 **/
+/** Chunk was on 57336 **/
 /** chunk id: 979696, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -14,20 +14,20 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let s = {
+let o = {
     toastsEnabledForChannel: {}
   },
-  o = s;
+  s = o;
 class c extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    o = null != e ? e : s
+    s = null != e ? e : o
   }
   getToastsEnabled(e) {
     var t;
-    return null == (t = o.toastsEnabledForChannel[e]) || t
+    return null == (t = s.toastsEnabledForChannel[e]) || t
   }
   getState() {
-    return o
+    return s
   }
 }
 a(c, "displayName", "CallChatToastsStore"), a(c, "persistKey", "CallChatToasts");
@@ -37,9 +37,9 @@ let u = new c(Chunk570140.Z, {
       channelId: t,
       toastsEnabled: n
     } = e;
-    o.toastsEnabledForChannel[t] = n
+    s.toastsEnabledForChannel[t] = n
   },
   LOGOUT: function() {
-    o.toastsEnabledForChannel = {}
+    s.toastsEnabledForChannel = {}
   }
 })

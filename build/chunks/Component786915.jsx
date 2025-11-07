@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 786915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -44,12 +44,12 @@ function C(e) {
     applicationId: t,
     stream: r,
     channel: C,
-    exitFullScreen: _,
-    appContext: v,
+    exitFullScreen: v,
+    appContext: _,
     analyticsLocation: x,
     guildScheduledEvent: O,
-    shouldPrioritizeGroupPlusIcon: E = false,
-    isRichPresenceInvite: j = false,
+    shouldPrioritizeGroupPlusIcon: j = false,
+    isRichPresenceInvite: E = false,
     iconClassName: S,
     look: P,
     size: I,
@@ -76,21 +76,21 @@ function C(e) {
     } = (0, c.ZP)(),
     M = null == C ? true : C.getGuildId(),
     R = (0, a.e7)([p.Z], () => null != M ? p.Z.getGuild(M) : null, [M]),
-    D = (0, a.e7)([f.Z], () => null != t ? f.Z.getApplicationActivity(t) : true),
-    L = null == t || E ? o.ejJ : o.gQj,
+    L = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : true),
+    D = null == t || j ? o.ejJ : o.gQj,
     k = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
-  return null != D && j ? (0, i.jsx)(m.Z, {
+  return null != L && E ? (0, i.jsx)(m.Z, {
     onClick: () => {
-      null != w && (0, u.v)(w, u.d.INVITE), s.h7(D, false, A)
+      null != w && (0, u.v)(w, u.d.INVITE), s.h7(L, false, A)
     },
-    iconComponent: L,
+    iconComponent: D,
     label: k,
     iconClassName: S,
     look: P,
     size: I,
     buttonText: Z,
     color: null != T ? T : true
-  }) : null != R && null != C && h.Z.can(g.Plq.CREATE_INSTANT_INVITE, C) ? (0, i.jsx)(m.Z, y({
+  }) : null != R && null != C && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, C) ? (0, i.jsx)(m.Z, y({
     onClick: () => {
       l()(null != R, "guild cannot be null"), l()(null != C, "channel cannot be null"), null != w && (0, u.v)(w, u.d.INVITE),
         function(e) {
@@ -138,13 +138,13 @@ function C(e) {
           channel: C,
           streamUserId: null == r ? true : r.ownerId,
           applicationId: t,
-          appContext: null != v ? v : A,
-          exitFullScreen: _,
+          appContext: null != _ ? _ : A,
+          exitFullScreen: v,
           analyticsLocation: x,
           guildScheduledEvent: O
         })
     },
-    iconComponent: L,
+    iconComponent: D,
     label: k,
     iconClassName: S,
     look: P,

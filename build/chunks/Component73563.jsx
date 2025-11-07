@@ -1,8 +1,8 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 73563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m,
-  e: () => f
+  e: () => h
 });
 var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,9 +31,9 @@ function p(e) {
   }
   return e
 }
-var f = ((i = {})[i.TOP = 0] = "TOP", i[i.BOTTOM = 1] = "BOTTOM", i);
+var h = ((i = {})[i.TOP = 0] = "TOP", i[i.BOTTOM = 1] = "BOTTOM", i);
 
-function h(e) {
+function f(e) {
   let {
     disableGradients: t = false,
     renderHeader: n,
@@ -87,7 +87,7 @@ function m(e) {
     idle: a,
     children: s,
     renderChatToasts: c,
-    renderVoiceChannelEffects: f,
+    renderVoiceChannelEffects: h,
     style: m
   } = e, g = function(e, t) {
     if (null == e) return {};
@@ -115,6 +115,6 @@ function m(e) {
     onDoubleClick: n,
     children: [s, null != t ? (0, r.jsx)(u.Z, p({
       size: "large"
-    }, t)) : null, (0, r.jsx)(h, p({}, g)), null == c ? true : c(), null == f ? true : f()]
+    }, t)) : null, (0, r.jsx)(f, p({}, g)), null == c ? true : c(), null == h ? true : h()]
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 761091, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -27,9 +27,9 @@ function O(e) {
     O = (0, d.j0)(e.id),
     v = (0, i.u)(e),
     j = (0, m.wK)(e),
-    C = (0, c.g)(e.id),
-    E = (0, r.e7)([a.Z], () => a.Z.getNewMemberActions(e.id), [e.id]),
-    x = (0, u.Z)(e.id),
+    x = (0, c.g)(e.id),
+    C = (0, r.e7)([a.Z], () => a.Z.getNewMemberActions(e.id), [e.id]),
+    E = (0, u.Z)(e.id),
     S = (0, s.PE)(e.id),
     I = (0, o.n2)(e.id),
     P = [],
@@ -40,5 +40,5 @@ function O(e) {
     A = (0, g.Z)(e.id),
     R = (0, f.BU)(e.id, "useGuildActionRows"),
     D = e.features.has(y.GuildFeatures.GAME_SERVERS);
-  return N && P.push(_.z.GUILD_HUB_HEADER_OPTIONS), !S && C && x && null != E && E.length > 0 ? P.push(_.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && P.push(_.z.GUILD_PREMIUM_PROGRESS_BAR), !N && C && P.push(_.z.GUILD_HOME), t && P.push(_.z.GUILD_SCHEDULED_EVENTS), !N && Z && w && P.push(_.z.CHANNELS_AND_ROLES), O && P.push(_.z.GUILD_ROLE_SUBSCRIPTIONS), v && P.push(_.z.GUILD_SHOP), j && P.push(_.z.GUILD_GAME_SHOP), (I && (Z || T) || n && e.features.has(y.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && P.push(_.z.GUILD_MOD_DASH_MEMBER_SAFETY), A && P.push(_.z.GUILD_BOOSTS), R && D && P.push(_.z.GAME_SERVERS), P
+  return N && P.push(_.z.GUILD_HUB_HEADER_OPTIONS), !S && x && E && null != C && C.length > 0 ? P.push(_.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && P.push(_.z.GUILD_PREMIUM_PROGRESS_BAR), !N && x && P.push(_.z.GUILD_HOME), t && P.push(_.z.GUILD_SCHEDULED_EVENTS), !N && Z && w && P.push(_.z.CHANNELS_AND_ROLES), O && P.push(_.z.GUILD_ROLE_SUBSCRIPTIONS), v && P.push(_.z.GUILD_SHOP), j && P.push(_.z.GUILD_GAME_SHOP), (I && (Z || T) || n && e.features.has(y.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && P.push(_.z.GUILD_MOD_DASH_MEMBER_SAFETY), A && P.push(_.z.GUILD_BOOSTS), R && D && P.push(_.z.GAME_SERVERS), P
 }

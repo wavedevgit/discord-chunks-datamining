@@ -1,4 +1,4 @@
-/** Chunk was on 86863 **/
+/** Chunk was on 43342 **/
 /** chunk id: 627325, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   w: () => x
@@ -30,16 +30,16 @@ function x(e) {
     voiceListRef: i,
     showSectionHeaders: o = false,
     query: l
-  } = e, a = P(), x = (0, s.e7)([p.default], () => (0, m.I5)(p.default.getCurrentUser())), w = _(l, x), C = Math.ceil(w.length / t), {
-    isNativeModuleLoaded: S,
-    isNativeModuleLoading: I,
-    catalogLastFetchTime: N
+  } = e, a = P(), x = (0, s.e7)([p.default], () => (0, m.I5)(p.default.getCurrentUser())), C = w(l, x), E = Math.ceil(C.length / t), {
+    isNativeModuleLoaded: I,
+    isNativeModuleLoading: T,
+    catalogLastFetchTime: S
   } = (0, s.cj)([b.Z], () => ({
     isNativeModuleLoaded: b.Z.isNativeModuleLoaded(),
     isNativeModuleLoading: b.Z.isNativeModuleLoading(),
     catalogLastFetchTime: b.Z.getCatalogLastFetchTime()
   }));
-  return l && 0 === w.length ? (0, r.jsxs)("div", {
+  return l && 0 === C.length ? (0, r.jsxs)("div", {
     className: j.iconMessage,
     children: [(0, r.jsx)(u._Ve, {
       width: 40,
@@ -66,10 +66,10 @@ function x(e) {
       variant: "text-sm/normal",
       color: "header-muted",
       children: y.intl.format(y.t["5afO9U"], {
-        onClick: S ? v.wV : v.r5
+        onClick: I ? g.wV : g.r5
       })
     })]
-  }) : I || null == N ? (0, r.jsx)("div", {
+  }) : T || null == S ? (0, r.jsx)("div", {
     className: j.loading,
     children: (0, r.jsx)(u.$jN, {
       type: u.$jN.Type.CHASING_DOTS,
@@ -80,14 +80,14 @@ function x(e) {
     className: j.container,
     renderRow: e => {
       let n = e * t,
-        i = w.slice(n, n + t);
-      return (0, r.jsx)(E, {
-        children: i.map((n, i) => (0, r.jsx)(g.J, {
+        i = C.slice(n, n + t);
+      return (0, r.jsx)(_, {
+        children: i.map((n, i) => (0, r.jsx)(v.J, {
           voiceFilter: n,
           hasNitro: x,
           analyticsContext: {
             reason: f.W.USER_SELECTION,
-            gridRows: C,
+            gridRows: E,
             gridColumns: t,
             interactedRow: e,
             interactedColumn: i
@@ -102,7 +102,7 @@ function x(e) {
       children: y.intl.string(h[e])
     }),
     sectionHeaderHeight: false === o ? true : e => O[e],
-    rowCount: C,
+    rowCount: E,
     rowHeight: 130,
     onScroll: n,
     ref: i,
@@ -110,7 +110,7 @@ function x(e) {
   })
 }
 
-function E(e) {
+function _(e) {
   let {
     children: t
   } = e, n = i.useRef(null);
@@ -127,7 +127,7 @@ let P = () => (0, Chunk442837.e7)([Chunk709706.Z], () => {
     var e;
     return !Object.keys(null != (e = Chunk709706.Z.getVoiceFilterModels()) ? module : {}).length && (Chunk709706.Z.getCatalogFetchFailed() || Chunk709706.Z.hasNativeModuleFailed())
   }),
-  _ = (e, t) => (0, s.Wu)([b.Z], () => {
+  w = (e, t) => (0, s.Wu)([b.Z], () => {
     let n = b.Z.getVoiceFilters(),
       r = b.Z.getSortedVoiceFilters();
     var i = t ? Object.values(n) : r;

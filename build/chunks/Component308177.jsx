@@ -29,16 +29,16 @@ let x = (0, Chunk112724.Z)(e => {
     channel: a,
     width: x,
     onScroll: O,
-    popoutType: j
+    popoutType: v
   } = e, {
-    selectedParticipantId: v,
+    selectedParticipantId: j,
     largeStream: C,
     chatOpen: I
   } = (0, l.cj)([s.Z], () => ({
     selectedParticipantId: s.Z.getSelectedParticipantId(a.id),
     largeStream: s.Z.getStageStreamSize(a.id),
     chatOpen: s.Z.getChatOpen(a.id)
-  }), [a.id]), S = (0, c.Io)(a.id), E = (0, c.Rk)(a.id, d.pV.AUDIENCE), Z = (0, l.e7)([o.Z], () => null != v ? o.Z.getParticipant(a.id, v) : null), P = (0, c.w8)(a.id, d.pV.SPEAKER), T = P.filter(y), N = null != P.find(e => e.type === d.Ui.STREAM), R = Math.floor((x - 32) / 102), w = x < 424 ? 1 : x < 624 ? 2 : x < 824 || I ? 3 : 4, A = {
+  }), [a.id]), S = (0, c.Io)(a.id), E = (0, c.Rk)(a.id, d.pV.AUDIENCE), Z = (0, l.e7)([o.Z], () => null != j ? o.Z.getParticipant(a.id, j) : null), P = (0, c.w8)(a.id, d.pV.SPEAKER), T = P.filter(y), N = null != P.find(e => e.type === d.Ui.STREAM), R = Math.floor((x - 32) / 102), w = x < 424 ? 1 : x < 624 ? 2 : x < 824 || I ? 3 : 4, A = {
     [d.pV.SPEAKER]: w,
     [d.pV.AUDIENCE]: R,
     [d.pV.SELECTED]: 1
@@ -93,7 +93,7 @@ let x = (0, Chunk112724.Z)(e => {
               channel: a,
               participant: l[0],
               width: H,
-              popoutType: j
+              popoutType: v
             })
           }, "selected-participant");
         case 1:
@@ -104,7 +104,7 @@ let x = (0, Chunk112724.Z)(e => {
               channel: a,
               participants: l,
               selectedParticipant: Z,
-              popoutType: j
+              popoutType: v
             })
           }, "speakers-".concat(t, "-").concat(n));
         case 2:

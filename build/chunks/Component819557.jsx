@@ -1,4 +1,4 @@
-/** Chunk was on 86863 **/
+/** Chunk was on 93886 **/
 /** chunk id: 819557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => c,
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk262441 = require("./262441.js");
 
@@ -16,9 +16,9 @@ function s(e) {
     children: t
   } = e;
   return (0, r.jsx)("div", {
-    className: a.cellGroup,
+    className: o.cellGroup,
     children: (0, r.jsx)("div", {
-      className: a.content,
+      className: o.content,
       children: t
     })
   })
@@ -28,53 +28,53 @@ function c(e) {
   let {
     icon: t,
     title: n,
-    description: i,
+    description: a,
     iconClassName: s,
     color: c,
-    listType: u = "icon",
-    completed: d = false,
-    index: p
+    listType: d = "icon",
+    completed: u = false,
+    index: _
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.cell,
+    className: o.cell,
     children: [(() => {
-      if ("numbered" === u && null != p)
-        if (d) return (0, r.jsx)("div", {
-          className: a.number,
+      if ("numbered" === d && null != _)
+        if (u) return (0, r.jsx)("div", {
+          className: o.number,
           children: (0, r.jsx)(l.sV5, {
             color: "green",
-            className: o()(a.icon, s)
+            className: i()(o.icon, s)
           })
         });
         else return (0, r.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           color: "text-brand",
-          className: a.number,
-          children: p + 1
+          className: o.number,
+          children: _ + 1
         });
       if (null != t) return (0, r.jsx)("div", {
-        className: a.iconContainer,
+        className: o.iconContainer,
         children: (0, r.jsx)(t, {
           color: null != c ? c : "currentColor",
-          className: o()(a.icon, s)
+          className: i()(o.icon, s)
         })
       })
     })(), (0, r.jsxs)("div", {
-      className: a.textContainer,
+      className: o.textContainer,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
-        className: o()({
-          [a.completedText]: d
+        className: i()({
+          [o.completedText]: u
         }),
         children: n
-      }), null != i && (0, r.jsx)(l.Text, {
+      }), null != a && (0, r.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
-        className: o()({
-          [a.completedText]: d
+        className: i()({
+          [o.completedText]: u
         }),
-        children: i
+        children: a
       })]
     })]
   })

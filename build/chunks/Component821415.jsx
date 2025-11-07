@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 821415, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -30,9 +30,9 @@ function x(e) {
       userId: a
     } = e,
     u = (0, d.IX)(n.application_id).data,
-    [p, f] = r.useState(false),
+    [p, h] = r.useState(false),
     [m, g] = r.useState(0),
-    b = (0, o.e7)([h.Z], () => h.Z.getChannelId() !== l.id);
+    b = (0, o.e7)([f.Z], () => f.Z.getChannelId() !== l.id);
   async function x() {
     g(1);
     try {
@@ -50,12 +50,12 @@ function x(e) {
     }
     g(2)
   }
-  if (b && (t = _.intl.string(C.default.qRXats)), n.type === y.IIU.PLAYING) {
+  if (b && (t = v.intl.string(C.default.qRXats)), n.type === y.IIU.PLAYING) {
     let e = null == u ? true : u.getIconURL(46);
     return (0, i.jsxs)("div", {
-      className: v.activityRow,
+      className: _.activityRow,
       children: [(0, i.jsxs)("div", {
-        className: v.activityRowContent,
+        className: _.activityRowContent,
         children: [p || null == e ? (0, i.jsx)(s.IMN, {
           size: "custom",
           width: 46,
@@ -63,12 +63,12 @@ function x(e) {
         }) : (0, i.jsx)("img", {
           src: e,
           alt: n.name,
-          onError: () => f(true)
+          onError: () => h(true)
         }), (0, i.jsxs)("div", {
           children: [(0, i.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-tertiary",
-            children: _.intl.string(_.t.BMTj28)
+            children: v.intl.string(v.t.BMTj28)
           }), (0, i.jsx)(s.Text, {
             variant: "text-md/medium",
             children: n.name
@@ -79,10 +79,10 @@ function x(e) {
         disabled: b || 2 === m,
         fullWidth: true,
         size: "sm",
-        text: 2 === m ? _.intl.string(C.default["8HU1M2"]) : _.intl.string(C.default.DKHhec),
+        text: 2 === m ? v.intl.string(C.default["8HU1M2"]) : v.intl.string(C.default.DKHhec),
         onClick: x
       }), null != t && (0, i.jsx)(s.Text, {
-        className: v.disabledReason,
+        className: _.disabledReason,
         variant: "text-xs/normal",
         color: "text-muted",
         children: t
@@ -95,12 +95,12 @@ function O(e) {
   let {
     userId: t,
     channel: n
-  } = e, s = (0, o.e7)([m.default], () => m.default.getUser(t)), c = (0, b.Z)(t, n.guild_id), d = (0, g.Z)(t, n.id), h = r.useMemo(() => l.uniqWith(c, (e, t) => {
+  } = e, s = (0, o.e7)([m.default], () => m.default.getUser(t)), c = (0, b.Z)(t, n.guild_id), d = (0, g.Z)(t, n.id), f = r.useMemo(() => l.uniqWith(c, (e, t) => {
     if (e.application_id === t.application_id) returntrue;
-    let n = f.Z.getGameByName(e.name),
-      i = f.Z.getGameByName(t.name);
+    let n = h.Z.getGameByName(e.name),
+      i = h.Z.getGameByName(t.name);
     return null != n && n === i || e.name === t.name
-  }), [c]), y = null == s || !d || 0 === h.length;
+  }), [c]), y = null == s || !d || 0 === f.length;
   return ((0, u.Z)({
     type: a.ImpressionTypes.POPOUT,
     name: a.ImpressionNames.VOICE_USER_ACTIVITY_POPOUT,
@@ -110,10 +110,10 @@ function O(e) {
   }), y) ? null : (0, i.jsx)(p.Z.Provider, {
     value: n.guild_id,
     children: (0, i.jsx)("div", {
-      className: v.root,
+      className: _.root,
       children: (0, i.jsx)("div", {
-        className: v.activityList,
-        children: h.map(e => (0, i.jsx)(x, {
+        className: _.activityList,
+        children: f.map(e => (0, i.jsx)(x, {
           activity: e,
           channel: n,
           userId: t

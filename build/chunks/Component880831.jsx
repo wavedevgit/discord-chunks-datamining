@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 880831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N,
@@ -42,15 +42,15 @@ function T(e) {
   } = (0, c.cj)([x.Z], () => ({
     isBlocked: x.Z.isBlockedForMessage(n),
     isIgnored: x.Z.isIgnoredForMessage(n)
-  }), [n]), s = (0, b.Uj)(n), d = r.useContext(h.Z), [v, E] = r.useState(false), j = (0, m.p)(), S = r.useCallback(e => {
-    "A" !== e.target.nodeName && (p.Z.updateChatOpen(n.channel_id, true), f.Z.jumpToMessage({
+  }), [n]), s = (0, b.Uj)(n), d = r.useContext(f.Z), [_, j] = r.useState(false), E = (0, m.p)(), S = r.useCallback(e => {
+    "A" !== e.target.nodeName && (p.Z.updateChatOpen(n.channel_id, true), h.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.id,
       flash: true
     }))
   }, [n.channel_id, n.id]), Z = null != n.content && "" !== n.content ? (0, g.ZP)(n, {
-    isInteracting: v,
-    shouldFilterKeywords: j
+    isInteracting: _,
+    shouldFilterKeywords: E
   }).content : null, {
     contentPlaceholder: T,
     renderedContent: N,
@@ -60,19 +60,19 @@ function T(e) {
     trailingIconClass: I.messageContentTrailingIcon,
     leadingIconClass: I.messageContentLeadingIcon,
     iconSize: P.WW
-  }), M = (0, C.cv)(n), R = M.length > 0 ? M.map(e => (0, i.jsx)(_.Z, {
+  }), M = (0, C.cv)(n), R = M.length > 0 ? M.map(e => (0, i.jsx)(v.Z, {
     className: I.sticker,
     size: 128,
     sticker: e,
-    isInteracting: v
+    isInteracting: _
   }, e.id)) : null;
   return (0, i.jsxs)(u.P3F, {
     className: I.toast,
     onMouseEnter: () => {
-      E(true)
+      j(true)
     },
     onMouseLeave: () => {
-      E(false)
+      j(false)
     },
     onClick: S,
     children: [(0, i.jsxs)("div", {
@@ -99,8 +99,8 @@ function N(e) {
     channelId: t,
     className: n
   } = e, [l, p] = r.useState(false), {
-    toastsHidden: f,
-    toastMessages: h
+    toastsHidden: h,
+    toastMessages: f
   } = function(e) {
     var t;
     let {
@@ -108,7 +108,7 @@ function N(e) {
       isFrozen: i,
       count: l,
       lingerMs: a
-    } = e, [o, s] = r.useState([]), [u, p] = r.useState(false), f = r.useRef(null), h = r.useRef(true), m = r.useCallback(() => {
+    } = e, [o, s] = r.useState([]), [u, p] = r.useState(false), h = r.useRef(null), f = r.useRef(true), m = r.useCallback(() => {
       s([]), p(true)
     }, []);
     r.useEffect(() => {
@@ -118,23 +118,23 @@ function N(e) {
           message: i,
           optimistic: r
         } = e;
-        t !== n || i.type === S.uaV.STAGE_START || i.type === S.uaV.STAGE_END || i.type === S.uaV.STAGE_TOPIC || i.type === S.uaV.STAGE_SPEAKER || i.type === S.uaV.STAGE_RAISE_HAND || r || (clearTimeout(h.current), h.current = setTimeout(m, a), s(e => [...e, i.id]))
+        t !== n || i.type === S.uaV.STAGE_START || i.type === S.uaV.STAGE_END || i.type === S.uaV.STAGE_TOPIC || i.type === S.uaV.STAGE_SPEAKER || i.type === S.uaV.STAGE_RAISE_HAND || r || (clearTimeout(f.current), f.current = setTimeout(m, a), s(e => [...e, i.id]))
       }
       return d.Z.subscribe("MESSAGE_CREATE", e), () => {
         d.Z.unsubscribe("MESSAGE_CREATE", e)
       }
     }, [n, m, l, a]), r.useEffect(() => () => {
-      clearTimeout(h.current)
+      clearTimeout(f.current)
     }, []), r.useEffect(() => {
       o.length > 3 && s(e => {
         let t = e.length - 3;
         return [...e.slice(t)]
       })
-    }, [o]), i && null == f.current ? f.current = o : i || null == f.current || (f.current = null);
-    let g = null != (t = f.current) ? t : o;
+    }, [o]), i && null == h.current ? h.current = o : i || null == h.current || (h.current = null);
+    let g = null != (t = h.current) ? t : o;
     return {
       toastsHidden: u,
-      toastMessages: (0, c.Wu)([v.Z], () => g.map(e => v.Z.getMessage(n, e)), [n, g]).filter(j.lm)
+      toastMessages: (0, c.Wu)([_.Z], () => g.map(e => _.Z.getMessage(n, e)), [n, g]).filter(E.lm)
     }
   }({
     channelId: t,
@@ -149,18 +149,18 @@ function N(e) {
   }), r.useLayoutEffect(() => {
     let e = {},
       t = 0;
-    for (let i of h) {
+    for (let i of f) {
       var n;
       let r = null != (n = m.current[i.id]) ? n : 0;
       e[i.id] = t, t += r + 8
     }(0, o.isEqual)(e, C.current) || b(e)
-  }, [h]);
-  let _ = h.map(e => ({
+  }, [f]);
+  let v = f.map(e => ({
       message: e,
       height: m.current[e.id],
       y: g[e.id]
     })),
-    x = (0, u.Yzy)(_, {
+    x = (0, u.Yzy)(v, {
       keys: e => e.message.id,
       from: () => ({
         opacity: 0
@@ -189,7 +189,7 @@ function N(e) {
         } = e;
         return {
           opacity: 0,
-          translateY: f ? n : -(null != t ? t : 0) - 8,
+          translateY: h ? n : -(null != t ? t : 0) - 8,
           pointerEvents: "none"
         }
       }

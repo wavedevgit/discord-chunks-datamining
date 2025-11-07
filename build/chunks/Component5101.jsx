@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 5101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => u,
@@ -18,7 +18,7 @@ function d(e) {
     transitionState: t,
     onClose: n,
     handleResolveFlag: d
-  } = e, [p, f] = r.useState(false);
+  } = e, [p, h] = r.useState(false);
   return (0, i.jsx)(l.Modal, {
     transitionState: t,
     onClose: n,
@@ -32,7 +32,7 @@ function d(e) {
     }],
     actionBarInput: (0, i.jsx)(o.Checkbox, {
       checked: p,
-      onChange: e => f(e),
+      onChange: e => h(e),
       label: c.intl.string(s.default["3puq5c"]),
       labelType: "secondary"
     })

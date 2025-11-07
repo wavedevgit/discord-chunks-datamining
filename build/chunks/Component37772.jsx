@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 37772, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -95,7 +95,7 @@ let B = Chunk647438.memo(function e(t) {
     et = (0, d.Z)(null == l ? true : l.id),
     {
       disableReactionCreates: en
-    } = (0, C.Z)(l),
+    } = (0, x.Z)(l),
     {
       content: er,
       hasSpoilerEmbeds: ei
@@ -118,7 +118,7 @@ let B = Chunk647438.memo(function e(t) {
     eu = (0, c.v)(s),
     ed = (0, _.ro)(s.id, s.channel_id),
     ep = (0, p.Z)(s),
-    eh = (0, x.iG)(s);
+    eh = (0, E.iG)(s);
   return ea ? (0, r.jsx)(e, U(G({}, t), {
     message: Y.message,
     channel: q,
@@ -128,7 +128,7 @@ let B = Chunk647438.memo(function e(t) {
     compact: R,
     count: 1,
     collapsedReason: i
-  }) : (0, r.jsx)(E.Z, {
+  }) : (0, r.jsx)(C.Z, {
     compact: R,
     className: o()(M, {
       [k.ephemeral]: (0, y.Pv)(s),
@@ -185,7 +185,7 @@ function F(e) {
     compact: i,
     collapsedReason: l
   } = e;
-  return (0, r.jsx)(E.Z, {
+  return (0, r.jsx)(C.Z, {
     className: t,
     compact: i,
     role: "group",

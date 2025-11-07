@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 426521, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => U
@@ -168,7 +168,7 @@ let G = Chunk647438.memo(function(e) {
       applicationId: l.applicationId
     }));
     let b = null != l.local_id,
-      x = (0, E.Z)({
+      E = (0, C.Z)({
         item: l,
         renderApplication: e => (0, r.jsx)(k, {
           applicationId: e
@@ -190,7 +190,7 @@ let G = Chunk647438.memo(function(e) {
         focusProps: {
           offset: 4
         },
-        "aria-label": x,
+        "aria-label": E,
         onClick: g,
         children: [h ? null : (0, r.jsx)("div", {
           className: T.unread
@@ -203,7 +203,7 @@ let G = Chunk647438.memo(function(e) {
           }), (0, r.jsxs)(o.Text, {
             variant: "text-md/normal",
             color: h ? "text-muted" : "text-default",
-            children: ["string" != typeof x ? x : p.Z.parse(x), R]
+            children: ["string" != typeof E ? E : p.Z.parse(E), R]
           }), (null == (t = l.message) ? true : t.content) != null ? (0, r.jsx)(D, {
             item: l
           }) : null, null != l.callout ? (0, r.jsx)(L, {
@@ -211,7 +211,7 @@ let G = Chunk647438.memo(function(e) {
           }) : null, (0, r.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: h ? "text-muted" : "header-secondary",
-            children: (0, C.a3)(y.default.extractTimestamp(l.id))
+            children: (0, x.a3)(y.default.extractTimestamp(l.id))
           }), m]
         })]
       }), b ? null : (0, r.jsx)(N.z, {
@@ -223,7 +223,7 @@ let G = Chunk647438.memo(function(e) {
     let {
       items: t
     } = e, n = g.d$.useSetting();
-    return (0, x.c)(t), (0, r.jsx)(r.Fragment, {
+    return (0, E.c)(t), (0, r.jsx)(r.Fragment, {
       children: t.map(e => (0, r.jsx)(G, {
         item: e,
         ackedBeforeId: n

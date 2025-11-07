@@ -1,7 +1,7 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 320781, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,13 +15,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk551869 = require("./551869.js");
 
-function f(e) {
+function h(e) {
   var t;
   let {
     channel: n
-  } = e, f = (0, o.eV)(n), {
-    firstMessage: h
-  } = (0, r.cj)([s.Z], () => s.Z.getMessage(n.id)), m = new Set((0, o.kn)(n, f)), g = null != (t = (0, a.KS)(n)) ? t : l.kBi;
+  } = e, h = (0, o.eV)(n), {
+    firstMessage: f
+  } = (0, r.cj)([s.Z], () => s.Z.getMessage(n.id)), m = new Set((0, o.kn)(n, h)), g = null != (t = (0, a.KS)(n)) ? t : l.kBi;
   return (0, i.jsxs)(u.ZP, {
     channelId: n.id,
     className: p.container,
@@ -34,7 +34,7 @@ function f(e) {
     }), (0, i.jsx)(u.Ot, {
       className: p.header,
       children: n.name
-    }), null == h && (0, i.jsx)(l.Text, {
+    }), null == f && (0, i.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
       children: d.intl.string(d.t.mE3KJN)

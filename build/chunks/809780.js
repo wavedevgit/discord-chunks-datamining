@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 809780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   As: () => F,
@@ -235,9 +235,9 @@ class z extends Chunk836560.EventEmitter {
         collapsedChannels: i,
         loadState: l
       } = this.state, o = u().findIndex(r, e => e.channelId === t), a = r[o], s = !a.collapsed;
-      i[t] = s, (0, C.BU)(n, t, e => {
+      i[t] = s, (0, x.BU)(n, t, e => {
         e.collapsedInInbox = s
-      }, C.fy.FREQUENT_USER_ACTION), this.setState({
+      }, x.fy.FREQUENT_USER_ACTION), this.setState({
         scrollToChannelIndex: o,
         collapsedChannels: i,
         loadState: "done" !== l || s || a.isFullyLoaded ? l : "loaded",
@@ -333,7 +333,7 @@ function K() {
 function Y(e, t, n, r) {
   if (null == r) return;
   let i = S.Z.getChannel(r);
-  if (null == i || !x.Ec.has(i.type) && A.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
+  if (null == i || !E.Ec.has(i.type) && A.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
   if (i.isPrivate()) {
     if (0 === w.ZP.getMentionCount(r)) return
   } else if (!(0, _.d)(i) && 0 === w.ZP.getMentionCount(r)) return;

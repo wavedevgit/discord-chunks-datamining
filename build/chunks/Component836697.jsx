@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 836697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -107,26 +107,26 @@ function y(e) {
 function O(e) {
   let {
     onActivate: t
-  } = e, [n, O] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), C = (0, f.Z)(), E = (0, a.Z)(v), x = i.useMemo(() => {
+  } = e, [n, O] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, f.Z)(), C = (0, a.Z)(v), E = i.useMemo(() => {
     let e = (0, h.qQ)({
       folderId: p.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: b.intl.string(b.t["scsU+l"]),
       expanded: n,
       guildIds: []
     });
-    for (let t of C) e.children.push((0, h.Mg)(t, e.id));
+    for (let t of x) e.children.push((0, h.Mg)(t, e.id));
     return e
-  }, [C, n]);
+  }, [x, n]);
   i.useEffect(() => {
     n && !j && s.Z.fetchRequestToJoinGuilds()
   }, [n, j]);
-  let S = null != v && C.includes(v);
+  let S = null != v && x.includes(v);
   return (i.useEffect(() => {
-    !n && S && E !== v && O(true)
-  }, [n, S, E, v]), 0 === C.length) ? null : (0, r.jsx)(y, {
+    !n && S && C !== v && O(true)
+  }, [n, S, C, v]), 0 === x.length) ? null : (0, r.jsx)(y, {
     onActivate: t,
     children: (0, r.jsx)(g.Z, {
-      folderNode: x,
+      folderNode: E,
       expanded: n,
       selected: S,
       draggable: false,

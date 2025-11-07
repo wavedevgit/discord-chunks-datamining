@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 891551, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -28,25 +28,25 @@ function m(e) {
     location: y
   } = e, {
     currentVolume: C,
-    muted: _
+    muted: v
   } = (0, a.cj)([u.Z], () => ({
     currentVolume: u.Z.getLocalVolume(m, g),
     muted: u.Z.isLocalMute(m, g)
   }));
-  return (0, i.jsx)(f.Z, {
+  return (0, i.jsx)(h.Z, {
     children: (0, i.jsx)(c.Z, {
       currentWindow: b,
-      iconClassName: l()(n, h.controlIcon),
+      iconClassName: l()(n, f.controlIcon),
       sliderClassName: r,
       className: t,
       value: (0, d.P)(C),
-      muted: _,
+      muted: v,
       maxValue: p.isPlatformEmbedded ? 200 : 100,
       onValueChange: e => {
-        e > 0 && _ && o.Z.toggleLocalMute(m, g), o.Z.setLocalVolume(m, (0, d.A)(e), g)
+        e > 0 && v && o.Z.toggleLocalMute(m, g), o.Z.setLocalVolume(m, (0, d.A)(e), g)
       },
       onToggleMute: () => {
-        null != y && (0, s.v)(y, s.d.VOLUME, _), o.Z.toggleLocalMute(m, g)
+        null != y && (0, s.v)(y, s.d.VOLUME, v), o.Z.toggleLocalMute(m, g)
       }
     })
   })

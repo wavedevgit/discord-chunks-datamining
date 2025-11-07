@@ -33,15 +33,15 @@ function _(e) {
       items: null != (e = null == r ? true : r.items) ? e : b,
       state: null != (n = null == r ? true : r.state) ? n : f.M.LOADING
     }
-  }), O = i.useMemo(() => y.map(e => e.message), [y]), j = (0, l.e7)([g.ZP], () => g.ZP.hasUnreadPins(t.id));
+  }), O = i.useMemo(() => y.map(e => e.message), [y]), v = (0, l.e7)([g.ZP], () => g.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
-    j && o.Z.ackPins(t.id)
-  }, [j, t.id]), (0, c.ZP)(() => {
+    v && o.Z.ackPins(t.id)
+  }, [v, t.id]), (0, c.ZP)(() => {
     O.some(d.k5) && o.Z.fetchPins(t.id, {
       reset: true
     })
   });
-  let v = i.useCallback(() => {
+  let j = i.useCallback(() => {
       o.Z.fetchPins(t.id)
     }, [t.id]),
     C = i.useCallback(() => {
@@ -55,7 +55,7 @@ function _(e) {
     "aria-label": m.intl.string(m.t["mp1N/2"]),
     children: (0, r.jsx)(p.ZP, {
       channel: t,
-      onFetch: v,
+      onFetch: j,
       messages: O,
       loading: x === f.M.LOADING,
       hasMore: x === f.M.LOADED_HAS_MORE,

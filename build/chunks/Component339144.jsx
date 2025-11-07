@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => L,
@@ -49,8 +49,8 @@ function D(e, t, n) {
 let L = Chunk647438.memo(function(e) {
     var t, l;
     let a, s, h, y, {
-        stream: E,
-        canGoLive: x,
+        stream: C,
+        canGoLive: E,
         guildId: T,
         isStreaming: L,
         channel: G,
@@ -73,7 +73,7 @@ let L = Chunk647438.memo(function(e) {
       {
         parentAnalyticsLocation: X
       } = (0, g.ZP)(),
-      Q = (0, C.Z)(z),
+      Q = (0, x.Z)(z),
       J = D(z, H, F),
       $ = i.useCallback(() => {
         var e;
@@ -100,8 +100,8 @@ let L = Chunk647438.memo(function(e) {
         })
       }, [X]),
       en = i.useCallback(() => {
-        (0, j.Z)(E)
-      }, [E]),
+        (0, j.Z)(C)
+      }, [C]),
       er = i.useCallback(() => {
         let e = null != G && (0, S.vd)(G.type) ? G : null,
           t = null != e ? e.getGuildId() : T;
@@ -167,7 +167,7 @@ let L = Chunk647438.memo(function(e) {
     let ep = null == Q ? null : (0, r.jsx)(k, {
         guildId: Q
       }),
-      eh = (null != B || null == F || (0, p.R)()) && (L || x) ? (L ? (a = false, s = () => {
+      eh = (null != B || null == F || (0, p.R)()) && (L || E) ? (L ? (a = false, s = () => {
         en(), (0, b.v)(X, b.d.STREAM, false)
       }, h = u.g5r, y = A.intl.string(A.t.S5anIc)) : U ? (a = false, s = () => {
         er(), (0, b.v)(X, b.d.STREAM, true)
@@ -198,7 +198,7 @@ let L = Chunk647438.memo(function(e) {
         onClick: et(V.applicationId),
         icon: u.PBZ
       }),
-      eb = null == E ? null : (0, r.jsx)(_.Z, {}),
+      eb = null == C ? null : (0, r.jsx)(_.Z, {}),
       e_ = es && ei && !eo ? (0, r.jsx)(M, {
         runningGame: B,
         startAuthorization: () => {
@@ -253,7 +253,7 @@ function k(e) {
   let {
     guildId: t
   } = e, n = i.useRef(null), [l, o] = (0, y.US)([s.z.GAME_SHOP_RTC_POPOVER], T.R.ACCOUNT_NAME_ZONE, true), a = i.useCallback(() => {
-    (0, E.Z)({
+    (0, C.Z)({
       guildId: t
     }), o(T.L.USER_DISMISS)
   }, [t, o]), c = i.useCallback(() => {
@@ -265,7 +265,7 @@ function k(e) {
       onClick: a,
       icon: u.EOn,
       ref: n
-    }), l === s.z.GAME_SHOP_RTC_POPOVER ? (0, r.jsx)(x.Z, {
+    }), l === s.z.GAME_SHOP_RTC_POPOVER ? (0, r.jsx)(E.Z, {
       onActionClick: a,
       onRequestClose: c,
       targetElementRef: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 614584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function E(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -44,7 +44,7 @@ function E(e) {
   return e
 }
 
-function j(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,7 +68,7 @@ let S = Chunk647438.memo(function(e) {
     setPopout: N,
     isReplySpineClickable: A,
     showReplySpine: w
-  } = e, M = S.state === h.Y.LOADED ? S.message : true, R = (0, y.Uj)(M), D = (0, u.p)(), L = s.d.useExperiment({
+  } = e, M = S.state === f.Y.LOADED ? S.message : true, R = (0, y.Uj)(M), L = (0, u.p)(), D = s.d.useExperiment({
     location: "repliedMessage"
   }).enabled, k = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = r.useMemo(() => {
     if (null == M) return null;
@@ -86,11 +86,11 @@ let S = Chunk647438.memo(function(e) {
       application: null == e ? true : e.application,
       username: null == R ? true : R.nick
     }));
-    if (e.type === x.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, f.B2)({
+    if (e.type === x.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, h.B2)({
       application: null == e ? true : e.application,
       username: null == R ? true : R.nick
     }));
-    if (e.type === x.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, f.hj)({
+    if (e.type === x.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, h.hj)({
       application: null == e ? true : e.application,
       username: null == R ? true : R.nick
     }));
@@ -99,29 +99,29 @@ let S = Chunk647438.memo(function(e) {
       let t = {
           formatInline: true,
           allowLinks: true,
-          shouldFilterKeywords: D
+          shouldFilterKeywords: L
         },
-        n = e.isFirstMessageInForumPost(P) ? j(E({}, t), {
+        n = e.isFirstMessageInForumPost(P) ? E(j({}, t), {
           noStyleAndInteraction: true,
           allowHeading: true,
           allowList: true,
-          allowGameMentions: L
-        }) : j(E({}, t), {
+          allowGameMentions: D
+        }) : E(j({}, t), {
           formatInline: true,
           allowHeading: k,
           allowList: k,
-          allowGameMentions: L
+          allowGameMentions: D
         });
       return (0, b.ZP)(e, n).content
     }
     return null
-  }, [M, R, P, k, D, L]), {
-    isReplyAuthorBlocked: F,
-    isReplyAuthorIgnored: V
+  }, [M, R, P, k, L, D]), {
+    isReplyAuthorBlocked: B,
+    isReplyAuthorIgnored: H
   } = (0, l.cj)([m.Z], () => ({
     isReplyAuthorBlocked: null != M && m.Z.isBlockedForMessage(M),
     isReplyAuthorIgnored: null != M && m.Z.isIgnoredForMessage(M)
-  }), [M]), B = (0, v.wq)(null == M ? true : M.author.id, P.id), H = (0, v.$3)(n, M), G = (0, v.Wl)(M, P, Z, N), W = (0, v.rY)(T, N), z = r.useCallback(() => {
+  }), [M]), V = (0, _.wq)(null == M ? true : M.author.id, P.id), F = (0, _.$3)(n, M), G = (0, _.Wl)(M, P, Z, N), z = (0, _.rY)(T, N), W = r.useCallback(() => {
     N({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
@@ -135,16 +135,16 @@ let S = Chunk647438.memo(function(e) {
     referencedMessage: S,
     content: U,
     compact: I,
-    isReplyAuthorBlocked: F,
-    isReplyAuthorIgnored: V,
+    isReplyAuthorBlocked: B,
+    isReplyAuthorIgnored: H,
     showAvatarPopout: T,
     showUsernamePopout: Z,
-    renderPopout: _.Z,
-    onClickAvatar: W,
+    renderPopout: v.Z,
+    onClickAvatar: z,
     onClickUsername: G,
-    onClickReply: H,
-    onContextMenu: B,
-    onPopoutRequestClose: z,
+    onClickReply: F,
+    onContextMenu: V,
+    onPopoutRequestClose: W,
     isReplySpineClickable: A,
     showReplySpine: w
   })

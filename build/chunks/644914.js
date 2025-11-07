@@ -1,8 +1,8 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 644914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   TE: () => C,
-  h_: () => _
+  h_: () => v
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
@@ -30,7 +30,7 @@ function C(e, t) {
   }), [t, e])
 }
 
-function _(e) {
+function v(e) {
   return {
     guildPopulated: function(e) {
       let t = (0, a.e7)([u.Z], () => u.Z.getChannel(null == e ? true : e.systemChannelId)),
@@ -52,8 +52,8 @@ function _(e) {
       }))
     }(e),
     guildPersonalized: function(e) {
-      let t = (0, a.e7)([h.Z], () => h.Z.hasLayers()),
-        n = (0, a.e7)([f.Z], () => f.Z.getGuild(null == e ? true : e.id));
+      let t = (0, a.e7)([f.Z], () => f.Z.hasLayers()),
+        n = (0, a.e7)([h.Z], () => h.Z.getGuild(null == e ? true : e.id));
       return (null == n ? true : n.icon) != null && !t
     }(e),
     guildChannelCreated: (0, a.e7)([d.ZP], () => {

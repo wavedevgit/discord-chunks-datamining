@@ -119,7 +119,7 @@ function w(e) {
               })
             }), (0, r.jsxs)(C.Z.Overlay, {
               className: N.overlay,
-              children: [(0, r.jsx)(v.Z, {
+              children: [(0, r.jsx)(j.Z, {
                 heading: P.intl.string(P.t["61W33d"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(O.Z, {
@@ -128,10 +128,10 @@ function w(e) {
                   animateOnHoverOrFocusOnly: true,
                   isHoveringOrFocusing: H
                 })
-              }), (0, r.jsx)(v.Z, {
+              }), (0, r.jsx)(j.Z, {
                 heading: P.intl.string(P.t["A//N4k"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(j.Z, {
+                children: (0, r.jsx)(v.Z, {
                   userId: n.id
                 })
               })]

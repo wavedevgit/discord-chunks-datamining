@@ -1,4 +1,4 @@
-/** Chunk was on 10150 **/
+/** Chunk was on 50433 **/
 /** chunk id: 303385, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -27,7 +27,7 @@ let g = e => {
   } = (0, c.n)({
     location: u.dr.QUESTS_BAR,
     questConfig: t.config
-  }), x = null == h ? true : h.progressBlur, j = (null == h ? true : h.label1) || (null == h ? true : h.label2), _ = null == h ? true : h.shineWipe, b = x ? 70 : 48, v = x ? 12 : 8, C = x ? false : false, y = x ? 0 : j ? false : 6;
+  }), x = null == h ? true : h.progressBlur, b = (null == h ? true : h.label1) || (null == h ? true : h.label2), _ = null == h ? true : h.shineWipe, j = x ? 70 : 48, v = x ? 12 : 8, C = x ? false : false, y = x ? 0 : b ? false : 6;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.animated.div, {
       className: m.rewardTileContainer,
@@ -40,12 +40,12 @@ let g = e => {
           output: [0, 82]
         }), n.to({
           range: [0, 1],
-          output: [1, 64 / b]
+          output: [1, 64 / j]
         })], (e, t, n) => "translate(".concat(e, "px, ").concat(t, "px) scale(").concat(n, ")"))
       },
       children: (0, r.jsx)(d.Z, {
         learnMoreStyle: "text",
-        learnMoreFontSize: s ? b / 64 * 12 : true,
+        learnMoreFontSize: s ? j / 64 * 12 : true,
         quest: t,
         questContent: l.jn.QUEST_BAR_V2,
         location: u.dr.QUESTS_BAR,
@@ -53,19 +53,19 @@ let g = e => {
         sourceQuestContent: l.jn.QUEST_BAR_V2,
         showShine: !_,
         style: {
-          width: b,
-          height: b,
+          width: j,
+          height: j,
           marginRight: v,
-          borderRadius: b / 64 * 8
+          borderRadius: j / 64 * 8
         }
       })
     }), (0, r.jsxs)(a.animated.div, {
       className: o()(m.rewardHighlightLogoCTA, {
         [m.rewardHighlightLogoCTAHeightBoost]: x,
-        [m.rewardHighlightLogoCTALabel]: j
+        [m.rewardHighlightLogoCTALabel]: b
       }),
       style: {
-        height: x ? b : true,
+        height: x ? j : true,
         transform: (0, a.to)([n.to({
           range: [0, 1],
           output: [0, C]
@@ -76,7 +76,7 @@ let g = e => {
       },
       children: [(0, r.jsx)("div", {
         className: o()({
-          [m.partnerBranding]: !x && !j
+          [m.partnerBranding]: !x && !b
         }),
         children: g
       }), x && (0, r.jsx)(a.animated.div, {
@@ -89,12 +89,12 @@ let g = e => {
         }
       }), (0, r.jsx)(a.animated.div, {
         className: o()(m.rewardHighlightCTA, {
-          [m.rewardHighlightCTALabel]: j
+          [m.rewardHighlightCTALabel]: b
         }),
         style: {
           opacity: n.to({
             range: [0, 1],
-            output: [j ? 1 : .7, 0]
+            output: [b ? 1 : .7, 0]
           })
         },
         children: (0, r.jsx)(i.Text, {

@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 359565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => y,
@@ -59,17 +59,17 @@ function b(e) {
       banner_type: "thread"
     }))
   }, [t]), (0, i.jsxs)("div", {
-    className: a()(h.chatHeaderBar, {
-      [h.narrow]: n
+    className: a()(f.chatHeaderBar, {
+      [f.narrow]: n
     }),
     children: [(0, i.jsx)(o.Text, {
-      className: h.chatHeaderBarText,
+      className: f.chatHeaderBarText,
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: t.isForumPost() ? f.intl.string(f.t["833FDn"]) : f.intl.string(f.t.rEeodK)
+      children: t.isForumPost() ? h.intl.string(h.t["833FDn"]) : h.intl.string(h.t.rEeodK)
     }), l ? (0, i.jsx)(o.Button, {
       variant: "secondary",
-      text: f.intl.string(f.t["0dvvEi"]),
+      text: h.intl.string(h.t["0dvvEi"]),
       onClick: () => {
         c.default.track(p.rMx.CHANNEL_BANNER_CTA_CLICKED, g(m({}, (0, s.hH)(t.getGuildId()), (0, s.v_)(t)), {
           banner_type: "thread",
@@ -91,17 +91,17 @@ function y(e) {
       banner_type: "thread"
     }))
   }, [t]), (0, i.jsxs)("div", {
-    className: a()(h.chatHeaderBar, {
-      [h.narrow]: n
+    className: a()(f.chatHeaderBar, {
+      [f.narrow]: n
     }),
     children: [(0, i.jsx)(o.Text, {
-      className: h.chatHeaderBarText,
+      className: f.chatHeaderBarText,
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: t.isForumPost() ? f.intl.string(f.t.E7oO8u) : f.intl.string(f.t["V/JF2N"])
+      children: t.isForumPost() ? h.intl.string(h.t.E7oO8u) : h.intl.string(h.t["V/JF2N"])
     }), l ? (0, i.jsx)(o.Button, {
       variant: "secondary",
-      text: f.intl.string(f.t.zA9d1J),
+      text: h.intl.string(h.t.zA9d1J),
       onClick: () => {
         c.default.track(p.rMx.CHANNEL_BANNER_CTA_CLICKED, g(m({}, (0, s.hH)(t.getGuildId()), (0, s.v_)(t)), {
           banner_type: "thread",

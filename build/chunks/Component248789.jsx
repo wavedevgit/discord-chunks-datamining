@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 248789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y: () => y
@@ -54,9 +54,9 @@ function y(e) {
     channelId: t,
     warningId: y,
     senderId: C
-  } = e, _ = r.useCallback(() => {
+  } = e, v = r.useCallback(() => {
     (0, u.T)(t, [y])
-  }, [t, y]), v = (0, a.e7)([c.Z], () => c.Z.isBlocked(C)), x = r.useMemo(() => ({
+  }, [t, y]), _ = (0, a.e7)([c.Z], () => c.Z.isBlocked(C)), x = r.useMemo(() => ({
     channelId: t,
     warningId: y,
     senderId: C,
@@ -74,7 +74,7 @@ function y(e) {
         cta: e
       }))
     }, [x]),
-    E = r.useCallback(() => {
+    j = r.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
           default: e
@@ -94,15 +94,15 @@ function y(e) {
           })
         }
       }, {
-        modalKey: h.X_
+        modalKey: f.X_
       }), O(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
     }, [t, C, y, O]),
-    j = r.useCallback(() => {
-      _(), O(p.NM.USER_BANNER_BLOCK_CONFIRM)
-    }, [_, O]),
+    E = r.useCallback(() => {
+      v(), O(p.NM.USER_BANNER_BLOCK_CONFIRM)
+    }, [v, O]),
     S = r.useCallback(() => {
-      _(), O(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
-    }, [_, O]),
+      v(), O(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
+    }, [v, O]),
     P = r.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
@@ -115,7 +115,7 @@ function y(e) {
           } = n;
           return (0, i.jsx)(e, {
             transitionState: r,
-            onBlock: j,
+            onBlock: E,
             onBlockAndReport: S,
             onCancel: () => {
               null == l || l(), O(p.NM.USER_BANNER_BLOCK_CANCEL)
@@ -126,20 +126,20 @@ function y(e) {
           })
         }
       })
-    }, [j, S, C, t, O]);
-  return (0, i.jsx)(f.Q, {
+    }, [E, S, C, t, O]);
+  return (0, i.jsx)(h.Q, {
     channelId: t,
     warningId: y,
     senderId: C,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
     header: m.intl.string(m.t.ZzlB5p),
     description: m.intl.string(m.t["D1aU+h"]),
-    onDismiss: _,
+    onDismiss: v,
     buttons: [{
       text: m.intl.string(m.t.Qyu4UK),
       variant: "primary",
-      onClick: E
-    }, ...v ? [] : [{
+      onClick: j
+    }, ..._ ? [] : [{
       text: m.intl.string(m.t["7q0bNY"]),
       variant: "secondary",
       onClick: P

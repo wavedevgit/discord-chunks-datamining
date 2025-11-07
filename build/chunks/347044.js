@@ -1,6 +1,5 @@
-/** Chunk was on 98206 **/
-/** chunk id: 347044, original params: e,n,t (module,exports,require) **/
-"use strict";
+/** Chunk was on 73709 **/
+/** chunk id: 347044, original params: e,r,t (module,exports,require) **/
 module.exports = {
   list: "list__83c7c",
   container: "container__83c7c",

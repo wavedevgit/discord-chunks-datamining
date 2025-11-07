@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 607361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -20,13 +20,13 @@ function p(e, t) {
     if (null == i) returnfalse;
     let l = c.Z.can(d.Plq.SEND_MESSAGES, i),
       p = o.ZP.getMember(i.guild_id, e),
-      f = r().keyBy(s.Z.getManyRoles(i.guild_id, null != (n = null == p ? true : p.roles) ? n : []), "id"),
-      h = u.BT({
+      h = r().keyBy(s.Z.getManyRoles(i.guild_id, null != (n = null == p ? true : p.roles) ? n : []), "id"),
+      f = u.BT({
         permission: d.Plq.STREAM,
         user: e,
         context: i,
-        roles: f
+        roles: h
       });
-    return l && h
+    return l && f
   })
 }

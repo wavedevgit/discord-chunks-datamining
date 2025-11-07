@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 877183, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => g
 });
@@ -15,17 +16,17 @@ var Chunk704215 = require("./704215.js"),
   Chunk312839 = require("./312839.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
-let f = e => (0, s.QR)(e, (0, u.P)(), p.t["z8/sgJ"]);
+let f = e => (0, l.QR)(e, (0, u.P)(), h.t["z8/sgJ"]);
 
 function g(e) {
   let {
     isFirstTimeNux: t
   } = e, {
-    icon: s,
+    icon: l,
     title: g,
     body: m,
     hint: y,
-    notifType: O
+    notifType: _
   } = function(e, t) {
     if (t.isFirstTimeNux) {
       var n, i;
@@ -47,8 +48,8 @@ function g(e) {
         }
         return e
       }({}, e), i = i = {
-        title: p.intl.string(p.t.xxADho),
-        body: p.intl.string(p.t.GtUrGD)
+        title: h.intl.string(h.t.xxADho),
+        body: h.intl.string(h.t.GtUrGD)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -63,18 +64,18 @@ function g(e) {
     return e
   }({
     icon: n(639525),
-    title: p.intl.string(p.t.r0ObgV),
-    body: p.intl.string(p.t.hc6XF7),
+    title: h.intl.string(h.t.r0ObgV),
+    body: h.intl.string(h.t.hc6XF7),
     hint: f,
-    notifType: h.n0.OopWelcomeNudge
+    notifType: p.n0.OopWelcomeNudge
   }, e), {
-    trackView: _,
-    trackClick: v
-  } = (0, u.R)(O, {
-    notif_type: O
+    trackView: O,
+    trackClick: b
+  } = (0, u.R)(_, {
+    notif_type: _
   });
   return {
-    icon: s,
+    icon: l,
     title: g,
     body: m,
     hint: y,
@@ -83,20 +84,20 @@ function g(e) {
         textAlign: "center",
         padding: 2
       },
-      children: p.intl.string(p.t["9MyuT0"])
+      children: h.intl.string(h.t["9MyuT0"])
     }),
-    confirmText: t ? p.intl.string(p.t.TxyTbk) : true,
+    confirmText: t ? h.intl.string(h.t.TxyTbk) : true,
     onConfirmClick: t ? () => {
-      v("unlock"), o.Z.setInputLocked(false, (0, d.getPID)())
+      b("unlock"), s.Z.setInputLocked(false, (0, d.getPID)())
     } : true,
     onNotificationShow: () => {
-      _(), t && (0, l.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
+      O(), t && (0, o.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
     },
     onNotificationClick: (e, t) => {
-      v("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? o.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && o.Z.setInstanceLocked(false)
+      b("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? s.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && s.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
-      v("dismiss")
+      b("dismiss")
     }
   }
 }

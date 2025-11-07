@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 428127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -74,15 +74,15 @@ function y(e) {
   } = (0, s.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), O = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
     mode: v,
     mentionCount: j,
-    targetChannelId: C
-  } = "bottom" === t ? h : y, E = v === f.x.HIDDEN, x = (0, c.q_F)({
+    targetChannelId: x
+  } = "bottom" === t ? h : y, C = v === f.x.HIDDEN, E = (0, c.q_F)({
     to: {
-      transform: E ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
+      transform: C ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
   }, O ? "respect-motion-settings" : "animate-never"), S = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null != C && d(C)
-  }, [d, C]);
+    e.preventDefault(), e.stopPropagation(), null != x && d(x)
+  }, [d, x]);
   return (0, r.jsx)("div", {
     className: o()(m.container, {
       [m.top]: "top" === t,
@@ -90,8 +90,8 @@ function y(e) {
     }),
     children: (0, r.jsx)(a.animated.div, {
       className: m.containerPadding,
-      style: x,
-      "aria-hidden": E,
+      style: E,
+      "aria-hidden": C,
       children: v === f.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
       }) : v === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {

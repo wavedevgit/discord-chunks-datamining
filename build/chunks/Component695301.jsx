@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 695301, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -22,7 +22,7 @@ let b = Chunk647438.memo(function(e) {
   let {
     guildNode: b,
     lowerBadge: _
-  } = e, y = b.id, O = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), v = (0, a.E)(O), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), E = (0, c.Z)(e => e.guildId), x = (0, f.Z)(y), {
+  } = e, y = b.id, O = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), v = (0, a.E)(O), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), C = (0, c.Z)(e => e.guildId), E = (0, f.Z)(y), {
     badge: S,
     unread: I,
     isMentionLowImportance: P
@@ -59,14 +59,14 @@ let b = Chunk647438.memo(function(e) {
     return e
   }({}, e), n = n = {
     guild: O,
-    unavailable: C,
+    unavailable: x,
     animatable: j,
-    selected: E === y,
+    selected: C === y,
     badge: S,
     isMentionLowImportance: P,
     lowerBadge: Z,
     unread: I,
-    mediaState: x,
+    mediaState: E,
     guildJoinRequestStatus: v
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

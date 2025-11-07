@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 779836, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -25,7 +25,7 @@ function y(e) {
     summary: t,
     channel: n
   } = e, r = (0, o.e7)([p.Z], () => p.Z.summaryFeedback(t)), l = (e, i) => {
-    e.stopPropagation(), (0, f.Z)({
+    e.stopPropagation(), (0, h.Z)({
       summary: t,
       channel: n,
       rating: i
@@ -60,14 +60,14 @@ function y(e) {
           color: "interactive-normal",
           children: g.intl.string(g.t["5ZsiE9"])
         }), (0, i.jsx)(s.P3F, {
-          onClick: e => l(e, h.aZ.GOOD),
+          onClick: e => l(e, f.aZ.GOOD),
           children: (0, i.jsx)(d.Z, {
             className: b.thumbIcon,
             width: 12,
             height: 12
           })
         }), (0, i.jsx)(s.P3F, {
-          onClick: e => l(e, h.aZ.BAD),
+          onClick: e => l(e, f.aZ.BAD),
           children: (0, i.jsx)(u.Z, {
             className: b.thumbIcon,
             width: 12,
@@ -86,9 +86,9 @@ function C(e) {
       channel: u,
       index: d
     } = e,
-    f = (0, o.e7)([p.Z], () => p.Z.selectedSummary(u.id));
-  if (null == f) return null;
-  let h = null != a.unreadId,
+    h = (0, o.e7)([p.Z], () => p.Z.selectedSummary(u.id));
+  if (null == h) return null;
+  let f = null != a.unreadId,
     g = null != a.content;
   return r = g ? (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.sVe, {
@@ -98,7 +98,7 @@ function C(e) {
     }), a.content]
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(y, {
-      summary: f,
+      summary: h,
       channel: u
     }), (0, i.jsx)(s.sVe, {
       size: "xs",
@@ -108,8 +108,8 @@ function C(e) {
   }), (0, i.jsx)(c.Z, {
     className: l()(b.summaryDivider, g ? b.summaryDividerStart : b.summaryDividerEnd),
     contentClassName: g ? b.summaryStartContent : b.summaryEndContent,
-    isUnread: h,
-    id: h ? m.j1 : true,
+    isUnread: f,
+    id: f ? m.j1 : true,
     children: r
   }, "divider-".concat(null != (n = null != (t = a.contentKey) ? t : a.unreadId) ? n : d))
 }

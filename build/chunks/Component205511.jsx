@@ -1,4 +1,4 @@
-/** Chunk was on 10150 **/
+/** Chunk was on 50433 **/
 /** chunk id: 205511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -37,9 +37,9 @@ function E(e) {
   let {
     quest: t,
     useReducedMotion: n
-  } = e, o = (0, g.n)(), l = (0, j.k3)(t.id, x.jn.QUEST_BAR_V2, x.jn.QUEST_BAR_V2), d = (0, j.g2)({
+  } = e, o = (0, g.n)(), l = (0, b.k3)(t.id, x.jn.QUEST_BAR_V2, x.jn.QUEST_BAR_V2), d = (0, b.g2)({
     useReducedMotion: n
-  }), _ = (0, p.O5)(), b = (0, m.aM)(), {
+  }), _ = (0, p.O5)(), j = (0, m.aM)(), {
     errorHints: E,
     startingConsoleQuest: O,
     startConsoleQuest: S
@@ -82,7 +82,7 @@ function E(e) {
                   }, {
                     content: x.jn.QUEST_BAR,
                     ctaContent: p.jZ.DEFIBRILLATOR_RECONNECT_CONSOLE,
-                    impressionId: b,
+                    impressionId: j,
                     sourceQuestContent: x.jn.QUEST_BAR_V2
                   })
                 }
@@ -102,7 +102,7 @@ function E(e) {
         })
       })
     }
-  }, [E, t, o, b]);
+  }, [E, t, o, j]);
   return (0, r.jsxs)("div", {
     className: C.microphoneUnit,
     children: [(0, r.jsxs)("div", {
@@ -185,14 +185,14 @@ let O = function(e) {
         },
         isComplete: s || o || c
       }, {
-        renderContent: () => (0, r.jsx)(b.y3, {
+        renderContent: () => (0, r.jsx)(j.y3, {
           children: (0, f.Pb)(t) ? v.intl.string(v.t["5tXqFe"]) : v.intl.formatToPlainString(v.t["+8JB6Y"], {
             gameTitle: l
           })
         }),
         isComplete: o || c
       }, {
-        renderContent: () => (0, r.jsx)(b.y3, {
+        renderContent: () => (0, r.jsx)(j.y3, {
           children: v.intl.formatToPlainString(v.t.HhfrYS, {
             numMinutes: n.targetMinutes
           })
@@ -204,7 +204,7 @@ let O = function(e) {
       isQuestComplete: c
     }
   }, [a, i.length, t, n.targetMinutes]);
-  return (0, r.jsx)(b.ZP, {
+  return (0, r.jsx)(j.ZP, {
     heading: v.intl.string(v.t.UPWlJu),
     steps: c,
     children: u && !p && !m && (0, r.jsx)(E, {

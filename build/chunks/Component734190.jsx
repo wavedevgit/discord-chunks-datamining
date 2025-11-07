@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 734190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -168,7 +168,7 @@ let k = Chunk647438.memo(function(e) {
     unread: y.ZP.hasUnread(t.id),
     mentionCount: y.ZP.getMentionCount(t.id),
     isMentionLowImportance: y.ZP.getIsMentionLowImportance(t.id)
-  })), V = (0, s.e7)([m.Z], () => m.Z.isMuted(t.id)), H = (0, C.p)({
+  })), V = (0, s.e7)([m.Z], () => m.Z.isMuted(t.id)), H = (0, x.p)({
     location: "GuildSidebarThreadListEntry"
   }), z = (0, s.e7)([O.default], () => O.default.getUser(t.ownerId)), W = i.useCallback(e => {
     (0, b.ok)(t, !e.shiftKey, N.on.CHANNEL_LIST)
@@ -269,11 +269,11 @@ let k = Chunk647438.memo(function(e) {
               children: t.name
             }), (0, r.jsxs)("div", {
               className: T.children,
-              children: [q > 0 && t.userLimit > 0 ? (0, r.jsx)(x.Z, {
+              children: [q > 0 && t.userLimit > 0 ? (0, r.jsx)(E.Z, {
                 userCount: q,
                 video: G,
                 channel: t
-              }) : null, (0, E.Z)(B) ? (0, r.jsx)(S.Z, {
+              }) : null, (0, C.Z)(B) ? (0, r.jsx)(S.Z, {
                 mentionsCount: B,
                 isMentionLowImportance: F
               }) : null]

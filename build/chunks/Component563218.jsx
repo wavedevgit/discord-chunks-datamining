@@ -1,7 +1,7 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 46931 **/
 /** chunk id: 563218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,43 +22,43 @@ let g = (e, t) => {
   })
 };
 
-function b(e) {
+function v(e) {
   let t, {
       embedId: n,
       className: a,
       style: o
     } = e,
-    b = (0, l.e7)([s.Z], () => s.Z.getWindow(m.KJ3.CHANNEL_CALL_POPOUT)),
-    y = (0, f.Z)(),
-    C = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
-  if (null == y || (0, p.Z)((0, d.p)(y.location)) || C !== h.Ez.PANEL) {
-    var _;
-    t = null != (_ = null == b ? true : b.window) ? _ : window
+    v = (0, l.e7)([c.Z], () => c.Z.getWindow(_.KJ3.CHANNEL_CALL_POPOUT)),
+    b = (0, p.Z)(),
+    E = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
+  if (null == b || (0, f.Z)((0, d.p)(b.location)) || E !== m.Ez.PANEL) {
+    var h;
+    t = null != (h = null == v ? true : v.window) ? h : window
   } else t = window;
-  let v = r.useRef(null),
-    x = r.useMemo(() => {
+  let y = i.useRef(null),
+    S = i.useMemo(() => {
       let e = null;
       return () => {
         null == e && (e = t.requestAnimationFrame(() => {
-          var t, i;
-          g(n, null != (i = null == (t = v.current) ? true : t.getBoundingClientRect()) ? i : null), e = null
+          var t, r;
+          g(n, null != (r = null == (t = y.current) ? true : t.getBoundingClientRect()) ? r : null), e = null
         }))
       }
     }, [n, t]);
-  return r.useEffect(() => (t.addEventListener("resize", x), c.S.subscribe(m.CkL.REMEASURE_TARGET, x), () => {
-    t.removeEventListener("resize", x), c.S.unsubscribe(m.CkL.REMEASURE_TARGET, x)
-  }), [x, t]), r.useLayoutEffect(() => {
-    let e = v.current;
+  return i.useEffect(() => (t.addEventListener("resize", S), s.S.subscribe(_.CkL.REMEASURE_TARGET, S), () => {
+    t.removeEventListener("resize", S), s.S.unsubscribe(_.CkL.REMEASURE_TARGET, S)
+  }), [S, t]), i.useLayoutEffect(() => {
+    let e = y.current;
     if (null == e) return;
     let t = e.ownerDocument.defaultView;
     if (null == t) return;
-    x();
-    let i = new t.ResizeObserver(x);
-    return i.observe(e), () => {
-      i.disconnect(), g(n, null)
+    S();
+    let r = new t.ResizeObserver(S);
+    return r.observe(e), () => {
+      r.disconnect(), g(n, null)
     }
-  }, [n, x]), (0, i.jsx)("div", {
-    ref: v,
+  }, [n, S]), (0, r.jsx)("div", {
+    ref: y,
     style: o,
     className: a
   })

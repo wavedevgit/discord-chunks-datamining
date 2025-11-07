@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 878752, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -31,14 +31,14 @@ function g(e) {
     guildId: null == t ? true : t.guild_id,
     location: "b7309a_1"
   }), {
-    enableViewerClipping: _
+    enableViewerClipping: v
   } = s.Z.useExperiment({
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: false
-  }), v = (0, a.Z)(u.Z);
+  }), _ = (0, a.Z)(u.Z);
   if (null == t || null != y) return null;
-  let x = _ && v,
+  let x = v && _,
     O = C && n;
   return x || O ? (0, i.jsxs)(l.Gt, {
     value: b,
@@ -46,9 +46,9 @@ function g(e) {
       className: m.voiceEffectsActionBar,
       children: [x && (0, i.jsx)(d.Z, {
         channel: t
-      }), O && (0, i.jsx)(p.Z, {}), O && (0, i.jsx)(f.Z, {
+      }), O && (0, i.jsx)(p.Z, {}), O && (0, i.jsx)(h.Z, {
         channel: t
-      }), O && (0, i.jsx)(h.Z, {})]
+      }), O && (0, i.jsx)(f.Z, {})]
     }), g && (0, i.jsx)("div", {
       className: m.divider
     })]

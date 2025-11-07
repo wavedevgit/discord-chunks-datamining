@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 525541, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -19,21 +19,21 @@ function u(e) {
     buttonText: u,
     buttonSize: d = "sm",
     navigateAwayOnReportSuccess: p = true,
-    onReportClick: f,
-    onReportSubmit: h,
+    onReportClick: h,
+    onReportSubmit: f,
     onMouseEnter: m,
     onMouseLeave: g
   } = e, b = (0, o.Q)(t), y = (0, s.V)(n.id, t);
   if (!b || null == y) return null;
   let C = () => {
-    null == h || h(), l.Z.closePrivateChannel(n.id, p)
+    null == f || f(), l.Z.closePrivateChannel(n.id, p)
   };
   return (0, i.jsx)(r.Button, {
     size: d,
     variant: "critical-primary",
     disabled: null == y,
     onClick: () => {
-      null == f || f(), (0, a.WL)(y, C)
+      null == h || h(), (0, a.WL)(y, C)
     },
     onMouseEnter: m,
     onMouseLeave: g,

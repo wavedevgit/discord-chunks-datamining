@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 518311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => em,
@@ -115,9 +115,9 @@ let eo = (0, Chunk313201.hQ)(),
     let {
       channel: n,
       onClose: i
-    } = e, l = null != (t = (0, P.ZP)(n)) ? t : "", a = (0, u.e7)([V.ZP], () => {
+    } = e, l = null != (t = (0, P.ZP)(n)) ? t : "", a = (0, u.e7)([H.ZP], () => {
       var e;
-      return null != (e = V.ZP.lastMessageId(n.id)) ? e : n.id
+      return null != (e = H.ZP.lastMessageId(n.id)) ? e : n.id
     });
     return (0, r.jsx)(p.P3F, {
       onClick: () => {
@@ -134,7 +134,7 @@ let eo = (0, Chunk313201.hQ)(),
           children: l
         }), (0, r.jsx)("span", {
           className: en.lastActiveTimestamp,
-          children: s()(K.default.extractTimestamp(a)).fromNow()
+          children: s()(Y.default.extractTimestamp(a)).fromNow()
         })]
       })
     })
@@ -144,7 +144,7 @@ let eo = (0, Chunk313201.hQ)(),
       onConfirm: t,
       channelIds: n
     } = e, i = ea(e, ["onConfirm", "channelIds"]);
-    let l = (0, u.Wu)([L.Z], () => Array.from(n).map(L.Z.getChannel), [n]);
+    let l = (0, u.Wu)([D.Z], () => Array.from(n).map(D.Z.getChannel), [n]);
     return (0, r.jsx)(c.Modal, el(er({
       title: et.intl.string(et.t.uFHxNd),
       subtitle: et.intl.string(et.t.rIsSqE),
@@ -165,11 +165,11 @@ let eo = (0, Chunk313201.hQ)(),
         children: et.intl.string(et.t.cjE7wH)
       })
     }, i), {
-      children: l.filter(Y.lm).sort((e, t) => {
+      children: l.filter(K.lm).sort((e, t) => {
         var n, i;
         let r = null != (n = e.lastMessageId) ? n : e.id,
           l = null != (i = t.lastMessageId) ? i : t.id;
-        return K.default.compare(l, r)
+        return Y.default.compare(l, r)
       }).map(e => (0, r.jsx)(ec, {
         onClose: i.onClose,
         channel: e
@@ -611,7 +611,7 @@ class ed extends(i = Chunk647438.PureComponent) {
       children: (0, r.jsx)(p.JcV, {
         containerRef: this._mobileCloseRef,
         children: (0, r.jsx)("div", {
-          children: (0, r.jsx)(_.Z, {
+          children: (0, r.jsx)(v.Z, {
             className: en.mobileToolsCloseIcon,
             closeAction: this.props.onClose,
             keybind: "ESC"
@@ -677,9 +677,9 @@ class ed extends(i = Chunk647438.PureComponent) {
     }), ei(this, "handleQueryChange", e => {
       let {
         channel: t
-      } = this.props, n = (0, E.v_)(t);
+      } = this.props, n = (0, j.v_)(t);
       y.Z.search(e, null == t ? true : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
-        W.default.track(ee.rMx.SEARCH_USER_LIST_STARTED, el(er({}, n), {
+        z.default.track(ee.rMx.SEARCH_USER_LIST_STARTED, el(er({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
           entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
           search_query_length: e.length
@@ -724,9 +724,9 @@ class ed extends(i = Chunk647438.PureComponent) {
         {
           channel: n
         } = this.props,
-        i = (0, E.v_)(n),
+        i = (0, j.v_)(n),
         r = true;
-      1 === e.length && (r = null == m.Z._openCachedDMChannel(e[0])), W.default.track(ee.rMx.CREATE_DM_USER_LIST_CLICKED, el(er({}, i), {
+      1 === e.length && (r = null == m.Z._openCachedDMChannel(e[0])), z.default.track(ee.rMx.CREATE_DM_USER_LIST_CLICKED, el(er({}, i), {
         is_new_dm: r,
         entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
         entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -740,7 +740,7 @@ class ed extends(i = Chunk647438.PureComponent) {
         location: "New Group DM"
       }).then(e => {
         let t = {};
-        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && m.Z.updateChannel(e, t, O.Z.NEW_GROUP_DM_INVITE_MODAL), W.default.track(ee.rMx.GDM_EDIT_INTERACTED, {
+        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && m.Z.updateChannel(e, t, O.Z.NEW_GROUP_DM_INVITE_MODAL), z.default.track(ee.rMx.GDM_EDIT_INTERACTED, {
           channel_id: e,
           channel_type: ee.d4z.GROUP_DM,
           location: O.Z.NEW_GROUP_DM_INVITE_MODAL,
@@ -750,14 +750,14 @@ class ed extends(i = Chunk647438.PureComponent) {
       })
     }), ei(this, "pushToExistingDM", (e, t) => {
       let n = this._searchCounter,
-        i = (0, E.v_)(e),
-        r = F.Z.getChannelId() === e.id;
+        i = (0, j.v_)(e),
+        r = B.Z.getChannelId() === e.id;
       m.Z.addRecipients(e.id, t, ee.Sbl.ADD_FRIENDS_TO_DM).then(n => {
         if (r) {
-          if (e.isDM() && n !== e.id) return void h.Z.call(n, false, true);
-          h.Z.ring(n, t, "dm_invite")
+          if (e.isDM() && n !== e.id) return void f.Z.call(n, false, true);
+          f.Z.ring(n, t, "dm_invite")
         }
-      }), W.default.track(ee.rMx.CREATE_DM_USER_LIST_CLICKED, el(er({}, i), {
+      }), z.default.track(ee.rMx.CREATE_DM_USER_LIST_CLICKED, el(er({}, i), {
         is_new_dm: true,
         entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
         entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -790,13 +790,13 @@ class ed extends(i = Chunk647438.PureComponent) {
         channel: t,
         invite: n
       } = this.props;
-      null != n && (0, z.JG)(e), null != this.copyTimeout && clearTimeout(this.copyTimeout), this.setState({
+      null != n && (0, W.JG)(e), null != this.copyTimeout && clearTimeout(this.copyTimeout), this.setState({
         copied: true
       }), this.copyTimeout = setTimeout(() => {
         this.setState({
           copied: false
         })
-      }, 1e3), W.default.track(ee.rMx.COPY_INSTANT_INVITE, {
+      }, 1e3), z.default.track(ee.rMx.COPY_INSTANT_INVITE, {
         server: null,
         channel: null != t ? t.id : null,
         channel_type: null != t ? t.type : null,
@@ -822,9 +822,9 @@ function ep(e) {
     onChange: o
   } = e, {
     analyticsLocations: s
-  } = (0, j.ZP)(O.Z.NEW_GROUP_DM_INVITE_MODAL);
+  } = (0, E.ZP)(O.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, Z.a)(O.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
-  let c = (0, P.pT)(Array.from(t), G.default, B.Z);
+  let c = (0, P.pT)(Array.from(t), G.default, V.Z);
   return (0, r.jsxs)("div", {
     className: en.customizationContainer,
     children: [(0, r.jsx)(T.B, {
@@ -851,16 +851,16 @@ function ep(e) {
   })
 }
 
-function ef(e) {
+function eh(e) {
   var {
     channel: t
   } = e, n = ea(e, ["channel"]);
-  let i = (0, u.cj)([U.Z, k.Z, H.Z], () => {
+  let i = (0, u.cj)([U.Z, k.Z, F.Z], () => {
     let e;
     return null != t && null != (e = k.Z.getInvite(t.id)) && e.isExpired() && (e = null), el(er({}, U.Z.getState()), {
       invite: e,
-      hideDiscriminator: H.Z.hidePersonalInformation,
-      hideInstantInvites: H.Z.hideInstantInvites
+      hideDiscriminator: F.Z.hidePersonalInformation,
+      hideInstantInvites: F.Z.hideInstantInvites
     })
   });
   return (0, r.jsx)(ed, er({
@@ -868,30 +868,30 @@ function ef(e) {
   }, n, i))
 }
 
-function eh(e) {
+function ef(e) {
   let {
     channel: t,
     location: n,
     subscribeToGlobalHotkey: i,
     initialPopoutOpen: a
-  } = e, [o, s] = l.useState(null != a && a), c = (0, Z.a)(n), u = "channel-invite-modal-".concat(null == t ? true : t.id), d = (0, p.VXO)(u), f = l.useCallback(() => (0, p.ZDy)(() => Promise.resolve(e => (0, r.jsx)(ef, el(er({}, e), {
+  } = e, [o, s] = l.useState(null != a && a), c = (0, Z.a)(n), u = "channel-invite-modal-".concat(null == t ? true : t.id), d = (0, p.VXO)(u), h = l.useCallback(() => (0, p.ZDy)(() => Promise.resolve(e => (0, r.jsx)(eh, el(er({}, e), {
     channel: t,
     inBornThisNamedExperiment: c
   }))), {
     modalKey: u
-  }), [t, u, c]), h = l.useCallback(() => c ? d ? (0, p.Mr3)(u) : f() : s(e => !e), [c, d, u, f, s]);
-  return l.useEffect(() => (i && q.S.subscribe(ee.CkL.TOGGLE_DM_CREATE, h), () => {
-    q.S.unsubscribe(ee.CkL.TOGGLE_DM_CREATE, h)
-  }), [i, h, c]), (0, x.ZP)(() => {
+  }), [t, u, c]), f = l.useCallback(() => c ? d ? (0, p.Mr3)(u) : h() : s(e => !e), [c, d, u, h, s]);
+  return l.useEffect(() => (i && q.S.subscribe(ee.CkL.TOGGLE_DM_CREATE, f), () => {
+    q.S.unsubscribe(ee.CkL.TOGGLE_DM_CREATE, f)
+  }), [i, f, c]), (0, x.ZP)(() => {
     (0, M._)()
   }), {
-    showModal: f,
-    renderPopout: e => (0, r.jsx)(ef, el(er({}, e), {
+    showModal: h,
+    renderPopout: e => (0, r.jsx)(eh, el(er({}, e), {
       onClose: e.closePopout,
       channel: t,
       inBornThisNamedExperiment: c
     })),
-    toggleVisible: h,
+    toggleVisible: f,
     popoutOpen: o,
     setPopoutOpen: s,
     inBornThisNamedExperiment: c
@@ -907,24 +907,24 @@ function em(e) {
     icon: s,
     tooltip: c,
     tooltipPosition: d = "bottom",
-    popoutPosition: f = "bottom",
-    popoutAlign: h = "right",
+    popoutPosition: h = "bottom",
+    popoutAlign: f = "right",
     subscribeToGlobalHotkey: m = false,
     location: g
   } = e, b = l.useRef(null), y = null != s ? s : null == i ? p.kL_ : p.ejJ, {
     showModal: C,
-    renderPopout: _,
-    toggleVisible: v,
+    renderPopout: v,
+    toggleVisible: _,
     popoutOpen: x,
     setPopoutOpen: O,
-    inBornThisNamedExperiment: E
-  } = eh({
+    inBornThisNamedExperiment: j
+  } = ef({
     initialPopoutOpen: null != i && i.isGroupDM() && 0 === i.recipients.length,
     channel: i,
     location: g,
     subscribeToGlobalHotkey: m
-  }), j = (0, u.e7)([G.default], () => G.default.getUser(null == i ? true : i.getRecipientId()));
-  return null != (t = null == j ? true : j.bot) && t || null != (n = null == j ? true : j.isProvisional) && n ? null : E ? (0, r.jsx)(Q.ZP.Icon, {
+  }), E = (0, u.e7)([G.default], () => G.default.getUser(null == i ? true : i.getRecipientId()));
+  return null != (t = null == E ? true : E.bot) && t || null != (n = null == E ? true : E.isProvisional) && n ? null : j ? (0, r.jsx)(Q.ZP.Icon, {
     ref: b,
     onClick: C,
     icon: y,
@@ -934,19 +934,19 @@ function em(e) {
     tooltipPosition: d
   }) : (0, r.jsx)(p.yRy, {
     targetElementRef: b,
-    renderPopout: _,
-    position: f,
+    renderPopout: v,
+    position: h,
     shouldShow: x,
     nudgeAlignIntoViewport: true,
     autoInvert: true,
-    align: h,
+    align: f,
     onRequestClose: () => O(false),
     animation: p.yRy.Animation.NONE,
     ignoreModalClicks: true,
     clickTrap: true,
     children: e => (0, r.jsx)(Q.ZP.Icon, el(er({}, e), {
       ref: b,
-      onClick: v,
+      onClick: _,
       icon: y,
       className: o,
       iconClassName: a,
@@ -968,20 +968,20 @@ function eg(e) {
   } = e, u = ea(e, ["channel", "popoutPosition", "popoutAlign", "fullWidth", "text", "icon", "subscribeToGlobalHotkey"]);
   let d = l.useRef(null),
     {
-      showModal: f,
-      renderPopout: h,
+      showModal: h,
+      renderPopout: f,
       toggleVisible: m,
       popoutOpen: g,
       setPopoutOpen: b,
       inBornThisNamedExperiment: y
-    } = eh({
+    } = ef({
       initialPopoutOpen: false,
       channel: t,
       location: "PrivateChannelRecipientsInviteTextButton",
       subscribeToGlobalHotkey: c
     });
   return y ? (0, r.jsx)(p.Button, el(er({}, u), {
-    onClick: f,
+    onClick: h,
     variant: "primary",
     buttonRef: d,
     text: o,
@@ -990,7 +990,7 @@ function eg(e) {
     fullWidth: a
   })) : (0, r.jsx)(p.yRy, {
     targetElementRef: d,
-    renderPopout: h,
+    renderPopout: f,
     position: n,
     shouldShow: g,
     nudgeAlignIntoViewport: true,
@@ -1014,7 +1014,7 @@ function eg(e) {
 
 function eb(e) {
   let t = ey(e);
-  return new Set((0, a.chain)(L.Z.getMutablePrivateChannels()).values().filter(e => (0, D.bc)(e.type)).filter(e => ey(e.recipients) === t).map(e => e.id).value())
+  return new Set((0, a.chain)(D.Z.getMutablePrivateChannels()).values().filter(e => (0, L.bc)(e.type)).filter(e => ey(e.recipients) === t).map(e => e.id).value())
 }
 
 function ey(e) {

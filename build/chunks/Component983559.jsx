@@ -81,7 +81,7 @@ function H(e) {
       duration: 150
     }
   }), $ = e => {
-    (0, j.openUserProfileModal)(G({
+    (0, v.openUserProfileModal)(G({
       sourceAnalyticsLocations: W,
       hideRestrictedProfile: true
     }, Y, e))
@@ -136,7 +136,7 @@ function H(e) {
               }), (0, r.jsx)(I.Z, {
                 userId: n.id,
                 className: U.toast
-              }), (0, r.jsx)(v.Z, {
+              }), (0, r.jsx)(j.Z, {
                 user: n,
                 displayProfile: B,
                 channelId: k.id,

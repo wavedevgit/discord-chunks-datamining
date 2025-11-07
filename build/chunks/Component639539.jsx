@@ -1,4 +1,4 @@
-/** Chunk was on 86863 **/
+/** Chunk was on 43342 **/
 /** chunk id: 639539, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => y
@@ -136,7 +136,7 @@ let f = e => {
       })]
     })
   },
-  v = e => {
+  g = e => {
     let {
       digits: t
     } = e;
@@ -154,17 +154,17 @@ let f = e => {
       })]
     })
   },
-  g = e => {
+  v = e => {
     let {
       countdown: t
     } = e;
     return (0, r.jsxs)("div", {
       className: p.digitsContainer,
-      children: [(0, r.jsx)(v, {
+      children: [(0, r.jsx)(g, {
         digits: t.hours
-      }), (0, r.jsx)(b, {}), (0, r.jsx)(v, {
+      }), (0, r.jsx)(b, {}), (0, r.jsx)(g, {
         digits: t.minutes
-      }), (0, r.jsx)(b, {}), (0, r.jsx)(v, {
+      }), (0, r.jsx)(b, {}), (0, r.jsx)(g, {
         digits: t.seconds
       })]
     })
@@ -205,7 +205,7 @@ function y(e) {
       })]
     }), (0, r.jsx)("div", {
       className: p.digitsContainer,
-      children: (0, r.jsx)(g, {
+      children: (0, r.jsx)(v, {
         countdown: s
       })
     })]

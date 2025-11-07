@@ -1,4 +1,4 @@
-/** Chunk was on 10150 **/
+/** Chunk was on 50433 **/
 /** chunk id: 43779, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -38,13 +38,13 @@ function S(e) {
     isVisibleInViewport: k,
     onReceiveErrorHints: I,
     sourceQuestContent: D
-  } = e, q = s.useRef(null), Q = s.useMemo(() => f.r.build(P.config), [P.config]), L = Q.defaultRewardName, V = Q.defaultRewardNameWithArticle, M = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
+  } = e, q = s.useRef(null), L = s.useMemo(() => f.r.build(P.config), [P.config]), Q = L.defaultRewardName, V = L.defaultRewardNameWithArticle, M = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
     ref: Z,
     scrollHeight: W
   } = (0, d.kE)(), U = 104 !== W, {
     onAssetLoadComplete: H
-  } = s.useContext(j.k), {
-    expansionSpring: z
+  } = s.useContext(b.k), {
+    expansionSpring: F
   } = (0, c.q_F)({
     expansionSpring: +!!A,
     config: (S = function(e) {
@@ -76,7 +76,7 @@ function S(e) {
     })(Object(w)).forEach(function(e) {
       Object.defineProperty(S, e, Object.getOwnPropertyDescriptor(w, e))
     }), S)
-  }), F = (null == (n = P.userStatus) ? true : n.completedAt) != null, G = (null == (o = P.userStatus) ? true : o.claimedAt) != null, K = (0, m.xN)(P.config), X = (0, m.LM)(P.config), {
+  }), z = (null == (n = P.userStatus) ? true : n.completedAt) != null, G = (null == (o = P.userStatus) ? true : o.claimedAt) != null, K = (0, m.xN)(P.config), X = (0, m.LM)(P.config), {
     completedRatio: Y,
     completedRatioDisplay: J
   } = (0, g.I)(P), $ = (0, g.Bd)(P, D, q), ee = s.useMemo(() => G && K ? y.intl.format(y.t["8Op4c4"], {
@@ -90,7 +90,7 @@ function S(e) {
     }, P.id)
   }) : G ? (0, r.jsx)(T, {
     questId: P.id,
-    children: L
+    children: Q
   }) : K ? y.intl.format(y.t.ro1sze, {
     balanceHook: () => (0, r.jsxs)(T, {
       questId: P.id,
@@ -105,7 +105,7 @@ function S(e) {
       questId: P.id,
       children: V
     }, P.id)
-  }), [L, G, V, P.id, X, K]), et = s.useMemo(() => {
+  }), [Q, G, V, P.id, X, K]), et = s.useMemo(() => {
     if (null != $) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -118,7 +118,7 @@ function S(e) {
     ref: q,
     children: [(0, r.jsxs)(i.animated.div, {
       style: {
-        maxHeight: z.to([0, 1], [104, (null != W ? W : 0) + 12])
+        maxHeight: F.to([0, 1], [104, (null != W ? W : 0) + 12])
       },
       className: E.rewardDescriptionContainer,
       children: [(0, r.jsx)(_.E, {
@@ -127,11 +127,11 @@ function S(e) {
         height: 80,
         children: (0, r.jsxs)("div", {
           className: E.assetWrapper,
-          children: [!G && F && (0, r.jsx)("div", {
+          children: [!G && z && (0, r.jsx)("div", {
             className: E.completionAnimation
           }), M && !G ? (0, r.jsxs)("div", {
             className: E.progressWrapper,
-            children: [F && (0, r.jsx)(c.Fmz, {
+            children: [z && (0, r.jsx)(c.Fmz, {
               importData: O,
               className: E.confetti,
               loop: false,
@@ -187,11 +187,11 @@ function S(e) {
         }), et]
       }), U && (0, r.jsx)(i.animated.div, {
         style: {
-          opacity: z.to([0, 1], [1, 0])
+          opacity: F.to([0, 1], [1, 0])
         },
         className: E.textOverflowBlur
       })]
-    }), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(j.Z, {
       quest: P,
       questContent: N,
       contentPosition: R,

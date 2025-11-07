@@ -1,4 +1,4 @@
-/** Chunk was on 10150 **/
+/** Chunk was on 50433 **/
 /** chunk id: 623249, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => O,
@@ -32,21 +32,21 @@ function O(e) {
   let {
     quest: n,
     errorHints: o,
-    transitionState: b,
+    transitionState: j,
     onClose: O,
     sourceQuestContent: T
   } = e, [w, P] = (0, s.useState)(o), N = (0, x.KX)(), A = (0, g.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), B = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), k = (0, v.g2)({
     useReducedMotion: B,
     className: E.colorTransition
-  }), I = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, h.Bz)(n), q = (0, l.e7)([m.Z], () => m.Z.getState().theme), Q = (0, d.wj)(q) ? C.BRd.DARK : C.BRd.LIGHT, {
-    startConsoleQuest: L,
+  }), I = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, h.Bz)(n), q = (0, l.e7)([m.Z], () => m.Z.getState().theme), L = (0, d.wj)(q) ? C.BRd.DARK : C.BRd.LIGHT, {
+    startConsoleQuest: Q,
     startingConsoleQuest: V
   } = (0, x.GI)({
     questId: n.id,
     beforeRequest: () => {
       k.startAnimation(), A({
         questId: n.id,
-        questContent: j.jn.CONNECTIONS_MODAL,
+        questContent: b.jn.CONNECTIONS_MODAL,
         questContentCTA: g.jZ.DEFIBRILLATOR,
         sourceQuestContent: T
       })
@@ -56,7 +56,7 @@ function O(e) {
     }
   });
   return (0, r.jsx)(i.Modal, {
-    transitionState: b,
+    transitionState: j,
     onClose: O,
     title: y.intl.string(y.t.W5lmKt),
     subtitle: N.message,
@@ -65,7 +65,7 @@ function O(e) {
       onClick: () => void(O(), (0, h.V$)({
         quest: n
       }, {
-        content: j.jn.CONNECTIONS_MODAL,
+        content: b.jn.CONNECTIONS_MODAL,
         ctaContent: g.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
         impressionId: R,
         sourceQuestContent: T
@@ -87,7 +87,7 @@ function O(e) {
           className: a()(E.refreshWrapper, {
             [E.disabled]: V
           }),
-          onClick: L,
+          onClick: Q,
           children: [k.render(), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
@@ -124,7 +124,7 @@ function O(e) {
             children: (0, r.jsx)("img", {
               className: E.gameTile,
               alt: n.config.messages.gameTitle,
-              src: (0, _.fh)(n, _.eC.GAME_TILE, Q).url
+              src: (0, _.fh)(n, _.eC.GAME_TILE, L).url
             })
           }) : null
         })]
@@ -188,10 +188,10 @@ function T(e) {
       default: t
     } = await Promise.resolve().then(n.bind(n, 623249));
     return function(n) {
-      return (0, r.jsx)(b.A, {
+      return (0, r.jsx)(j.A, {
         overrideVisibility: true,
         questOrQuests: e.quest,
-        questContent: j.jn.CONNECTIONS_MODAL,
+        questContent: b.jn.CONNECTIONS_MODAL,
         sourceQuestContent: e.sourceQuestContent,
         children: () => (0, r.jsx)(t, function(e) {
           for (var t = 1; t < arguments.length; t++) {

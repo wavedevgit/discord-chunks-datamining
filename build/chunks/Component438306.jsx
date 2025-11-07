@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 438306, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -27,23 +27,23 @@ function g(e) {
     children: [(0, i.jsx)(d.Kq, {
       channelType: t.type
     }), (0, i.jsx)(d.Ot, {
-      children: f.intl.format(f.t.I3R7Vn, {
+      children: h.intl.format(h.t.I3R7Vn, {
         channelName: n
       })
     }), (0, i.jsx)(d.jz, {
       className: m.markup,
-      children: f.intl.format(f.t.pYMVRT, {
+      children: h.intl.format(h.t.pYMVRT, {
         channelName: n,
         topicHook: () => s.Z.parseTopic(t.topic, true, {
           channelId: t.id
         })
       })
     }), g ? (0, i.jsx)("div", {
-      className: h.buttonContainer,
+      className: f.buttonContainer,
       children: (0, i.jsx)(l.Button, {
         size: "sm",
         variant: "secondary",
-        text: f.intl.string(f.t["3gUsJb"]),
+        text: h.intl.string(h.t["3gUsJb"]),
         onClick: () => {
           a.ZP.open(t.id)
         },

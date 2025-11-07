@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 575464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -26,12 +26,12 @@ function m(e) {
     comparator: b,
     selected: y,
     checked: C,
-    disabled: _ = false,
-    inlineUsername: v = true,
+    disabled: v = false,
+    inlineUsername: _ = true,
     onClick: x,
     onMouseEnter: O,
-    "aria-setsize": E,
-    "aria-posinset": j
+    "aria-setsize": j,
+    "aria-posinset": E
   } = e, S = (0, o.e7)([p.Z], () => p.Z.getStatus(r.id)), P = (0, a.JA)(String(r.id));
   return (0, i.jsx)(s.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -52,8 +52,8 @@ function m(e) {
     return e
   }({
     id: "user-row-".concat(m),
-    className: l()(h.friendWrapper, {
-      [h.disabled]: _
+    className: l()(f.friendWrapper, {
+      [f.disabled]: v
     }),
     onClick: () => {
       null != x && x(r.id)
@@ -64,44 +64,44 @@ function m(e) {
   }, P), n = n = {
     role: "option",
     "aria-selected": C,
-    "aria-disabled": _,
-    "aria-setsize": E,
-    "aria-posinset": j,
+    "aria-disabled": v,
+    "aria-setsize": j,
+    "aria-posinset": E,
     children: (0, i.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
-      className: l()(h.friend, {
-        [h.friendSelected]: y,
-        [h.twoRows]: !v
+      className: l()(f.friend, {
+        [f.friendSelected]: y,
+        [f.twoRows]: !_
       }),
       children: [(0, i.jsx)(u.Z, {
         user: r,
         status: S,
-        className: h.avatar
+        className: f.avatar
       }), (0, i.jsxs)(d.Z, {
-        className: h.match,
+        className: f.match,
         align: d.Z.Align.BASELINE,
-        direction: v ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
+        direction: _ ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
         children: [(0, i.jsx)(s.Text, {
           tag: "strong",
-          className: h.nickname,
+          className: f.nickname,
           "aria-hidden": true,
           variant: "text-md/medium",
-          children: null != b && b === r.tag ? f.ZP.getName(r) : null != b && "" !== b ? b : f.ZP.getName(r)
+          children: null != b && b === r.tag ? h.ZP.getName(r) : null != b && "" !== b ? b : h.ZP.getName(r)
         }), (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
           children: (0, i.jsx)(c.Z, {
             user: r,
             hideDiscriminator: g,
-            className: h.discordTag,
-            usernameClass: h.__invalid_weightMedium,
-            discriminatorClass: h.__invalid_weightMedium,
+            className: f.discordTag,
+            usernameClass: f.__invalid_weightMedium,
+            discriminatorClass: f.__invalid_weightMedium,
             forceUsername: true
           })
         })]
       }), (0, i.jsx)(s.FZ5, {
         checked: C,
-        disabled: _
+        disabled: v
       })]
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

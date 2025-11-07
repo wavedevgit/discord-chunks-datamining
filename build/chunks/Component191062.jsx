@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 191062, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk167207 = require("./167207.js");
 
-function h(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,7 +30,7 @@ let m = {
   g = e => {
     let {
       region: t,
-      className: n = f.regionSelectName
+      className: n = h.regionSelectName
     } = e, r = t.name.replace(/ \(VIP\)$/, "");
     return (0, i.jsx)("div", {
       className: n,
@@ -88,10 +88,10 @@ class y extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "renderOption", (e, t) => (0, i.jsx)(b, {
+    super(...e), f(this, "renderOption", (e, t) => (0, i.jsx)(b, {
       region: e.value,
       selected: t
-    }, e.value.id)), h(this, "getSelectedRegion", () => {
+    }, e.value.id)), f(this, "getSelectedRegion", () => {
       var e;
       let {
         regions: t,
@@ -112,7 +112,7 @@ class y extends Chunk647438.PureComponent {
         deprecated: false,
         hidden: false
       }
-    }), h(this, "handleChangeVoiceRegion", e => {
+    }), f(this, "handleChangeVoiceRegion", e => {
       let {
         value: t
       } = e, {

@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 82409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -77,9 +77,9 @@ function U(e) {
   var t, n;
   let {
     includePanelSpacing: l
-  } = e, a = (0, E.fJ)(), {
+  } = e, a = (0, C.fJ)(), {
     selectedFilter: h
-  } = (0, x.Z)(), P = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), Z = (0, s.Wu)([O.ZP, _.Z, S.Z], () => N.filter(e => !(0, I.YH)({
+  } = (0, E.Z)(), P = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), Z = (0, s.Wu)([O.ZP, _.Z, S.Z], () => N.filter(e => !(0, I.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
@@ -92,7 +92,7 @@ function U(e) {
     ReadStateStore_: O.ZP,
     GuildStore_: _.Z
   }) || (0, I.Tj)(e, S.Z.selectedItemInfo))), U = i.useCallback(e => {
-    h !== A.V5.BOOKMARKS && C.Z.loadMoreInbox({
+    h !== A.V5.BOOKMARKS && x.Z.loadMoreInbox({
       viewId: a,
       loadingTrigger: e
     })
@@ -181,7 +181,7 @@ function U(e) {
         isUnread: null != (i = O.ZP.hasUnread(c)) && i
       }
     }(q, X);
-    null != r && C.Z.inboxItemClick({
+    null != r && x.Z.inboxItemClick({
       message: r,
       channel: {
         id: r.channel_id
@@ -250,7 +250,7 @@ function U(e) {
 }
 
 function B(e) {
-  return (0, r.jsx)(E.HP, {
+  return (0, r.jsx)(C.HP, {
     children: (0, r.jsx)(U, M({}, e))
   })
 }

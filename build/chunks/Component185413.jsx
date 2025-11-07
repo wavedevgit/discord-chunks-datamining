@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 185413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => O
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk257803 = require("./257803.js");
 
-function v(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -64,32 +64,32 @@ function O(e) {
   let l = (0, a.e7)([d.Z], () => d.Z.getChannel(t), [t]),
     o = (0, a.e7)([p.Z], () => p.Z.getGuild(null == l ? true : l.getGuildId()));
   return (r.useEffect(() => {
-    f.default.track(y.rMx.OPEN_MODAL, {
+    h.default.track(y.rMx.OPEN_MODAL, {
       type: "Grant Channel Access"
     })
-  }, []), null == l || null == o) ? null : (0, i.jsx)(E, v({
+  }, []), null == l || null == o) ? null : (0, i.jsx)(j, _({
     guild: o,
     channel: l
   }, n))
 }
 
-function E(e) {
+function j(e) {
   var t, n, {
       guild: a,
       channel: d,
       onClose: p,
-      newChannel: f,
+      newChannel: h,
       inSettings: y
     } = e,
     O = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
-  let [E, j] = r.useState(""), [S, P] = r.useState({}), [I, Z] = r.useState(false), [T, N] = r.useState(null), A = r.useRef(null), {
+  let [j, E] = r.useState(""), [S, P] = r.useState({}), [I, Z] = r.useState(false), [T, N] = r.useState(null), A = r.useRef(null), {
     roles: w,
     members: M,
     getRichTag: R
-  } = (0, g.Q)(a, d, d.accessPermissions, E), D = m.Z.useSections({
+  } = (0, g.Q)(a, d, d.accessPermissions, j), L = m.Z.useSections({
     roles: w,
     members: M
-  }), L = f && 0 === Object.keys(S).length;
+  }), D = h && 0 === Object.keys(S).length;
   async function k() {
     if (null == d || 0 === Object.keys(S).length) return void p();
     Z(true);
@@ -101,7 +101,7 @@ function E(e) {
           let {
             row: n
           } = t;
-          null != n.id && "" !== n.id && (n.rowType === b.aC.ROLE ? i.push((0, h.rX)(n.id, e.type)) : n.rowType === b.aC.MEMBER && i.push((0, h.jZ)(n.id, e.type)))
+          null != n.id && "" !== n.id && (n.rowType === b.aC.ROLE ? i.push((0, f.rX)(n.id, e.type)) : n.rowType === b.aC.MEMBER && i.push((0, f.jZ)(n.id, e.type)))
         }), (0, s.hw)(e.id, i, n)
       }(d, S, y), p(), Z(false)
     } catch (t) {
@@ -112,39 +112,39 @@ function E(e) {
   let U = (0, u.zi)(d.type) ? o.W4G : o.gjC;
   return (0, i.jsx)(m.Z.Provider, {
     listRef: A,
-    query: E,
-    setQuery: j,
+    query: j,
+    setQuery: E,
     pendingAdditions: S,
     setPendingAdditions: P,
     roles: w,
     members: M,
     getRichTag: R,
-    children: (0, i.jsx)(l.Modal, (t = v({}, O), n = n = {
+    children: (0, i.jsx)(l.Modal, (t = _({}, O), n = n = {
       title: C.intl.string(C.t.dMJ3Y6),
       onClose: p,
       input: (0, i.jsxs)("div", {
         children: [(0, i.jsxs)(o.Text, {
-          className: _.channelName,
+          className: v.channelName,
           variant: "text-lg/normal",
           color: "header-secondary",
           children: [(0, i.jsx)(U, {
-            className: _.channelIcon,
+            className: v.channelIcon,
             size: "sm",
             color: "currentColor"
           }), d.name]
         }), d.isGuildStageVoice() && (0, i.jsx)(o.Text, {
           color: "header-secondary",
-          className: _.description,
+          className: v.description,
           variant: "text-sm/normal",
           children: C.intl.string(C.t.f7VbhF)
         }), (0, i.jsx)(m.Z.SearchBox, {
           placeholderText: C.intl.string(C.t.iezLLn)
         }), (0, i.jsx)(o.Text, {
-          className: _.subtext,
+          className: v.subtext,
           variant: "text-xs/normal",
           children: C.intl.string(C.t.rwFx85)
         }), null != T ? (0, i.jsx)(o.Text, {
-          className: _.subtext,
+          className: v.subtext,
           variant: "text-xs/normal",
           color: "text-danger",
           children: T.getAnyErrorMessage()
@@ -156,9 +156,9 @@ function E(e) {
         renderSection: m.Z.renderSection,
         rowHeight: m.Z.ROW_HEIGHT,
         renderRow: m.Z.renderRow,
-        sections: D
+        sections: L
       },
-      actions: L ? [{
+      actions: D ? [{
         variant: "secondary",
         text: C.intl.string(C.t.u46sxe),
         onClick: p

@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 890977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => C
@@ -37,7 +37,7 @@ function b(e) {
     className: t
   } = e;
   return (0, l.jsx)("div", {
-    ref: g(i || (i = n.t(f, 2))),
+    ref: g(i || (i = n.t(h, 2))),
     className: s()(m.glow, t)
   })
 }
@@ -47,7 +47,7 @@ function y(e) {
     className: t
   } = e;
   return (0, l.jsx)("div", {
-    ref: g(r || (r = n.t(h, 2))),
+    ref: g(r || (r = n.t(f, 2))),
     className: s()(m.trinkets, t)
   })
 }

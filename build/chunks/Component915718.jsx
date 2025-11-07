@@ -170,16 +170,16 @@ function D(e) {
   })), g = n.getRecipientId(), {
     notFriend: _,
     isBlocked: y
-  } = (0, l.cj)([v.Z], () => ({
-    notFriend: n.type === Z.d4z.DM && null != g && !v.Z.isFriend(g),
-    isBlocked: n.type === Z.d4z.DM && null != g && v.Z.isBlocked(g)
-  })), j = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, p.Z)(n.id), T = (0, l.e7)([O.Z], () => O.Z.hasLayers());
-  return (P && !T && E.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == j ? true : j.bot)) ? null : (0, r.jsx)(A, {
+  } = (0, l.cj)([j.Z], () => ({
+    notFriend: n.type === Z.d4z.DM && null != g && !j.Z.isFriend(g),
+    isBlocked: n.type === Z.d4z.DM && null != g && j.Z.isBlocked(g)
+  })), v = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, p.Z)(n.id), T = (0, l.e7)([O.Z], () => O.Z.hasLayers());
+  return (P && !T && E.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == v ? true : v.bot)) ? null : (0, r.jsx)(A, {
     channel: n,
     mode: s,
     inCall: o,
     callActive: d,
-    isProvisional: null != (t = null == j ? true : j.isProvisional) && t,
+    isProvisional: null != (t = null == v ? true : v.isProvisional) && t,
     callUnavailable: f,
     notFriend: _,
     isBlocked: y,

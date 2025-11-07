@@ -1,5 +1,6 @@
 /** Chunk was on 63141 **/
 /** chunk id: 613322, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   guildHeader: "guildHeader_b81b18",
   guildHeaderInner: "guildHeaderInner_b81b18",

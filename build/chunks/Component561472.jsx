@@ -1,7 +1,7 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 561472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,33 +21,33 @@ var Chunk951288 = require("./951288.js"),
   Chunk731994 = require("./731994.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let v = function(e) {
+let _ = function(e) {
   let {
     className: t,
     style: n,
-    channel: v,
+    channel: _,
     draftType: x
-  } = e, [O, E] = r.useState(true), j = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != v && p.Z.can(C.Plq.ATTACH_FILES, v), [v]), P = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(v.id)), I = v.getGuildId(), Z = x === c.d.FirstThreadMessage, T = (0, a.$5)(v), N = r.useMemo(() => !j && (v.isPrivate() && !v.isManaged() || null != I && !T && S && u.Z.canChatInGuild(I)), [S, T, v, I, j]), A = Z ? C.TPd.GUILD_THREADS_ONLY.has(v.type) ? _.intl.string(_.t.RBBLhL) : _.intl.string(_.t.gUx4eu) : O ? _.intl.format(_.t.dYP2Fc, {
-    destination: (0, s.F6)(v, h.default, f.Z, true)
-  }) : _.intl.string(_.t.h76ulG);
+  } = e, [O, j] = r.useState(true), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != _ && p.Z.can(C.Plq.ATTACH_FILES, _), [_]), P = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(_.id)), I = _.getGuildId(), Z = x === c.d.FirstThreadMessage, T = (0, a.$5)(_), N = r.useMemo(() => !E && (_.isPrivate() && !_.isManaged() || null != I && !T && S && u.Z.canChatInGuild(I)), [S, T, _, I, E]), A = Z ? C.TPd.GUILD_THREADS_ONLY.has(_.type) ? v.intl.string(v.t.RBBLhL) : v.intl.string(v.t.gUx4eu) : O ? v.intl.format(v.t.dYP2Fc, {
+    destination: (0, s.F6)(_, f.default, h.Z, true)
+  }) : v.intl.string(v.t.h76ulG);
   return P || !N ? null : (0, i.jsx)(b.Z, {
     className: t,
     style: n,
     title: A,
-    description: Z ? _.intl.string(_.t.lpgkzq) : _.intl.string(_.t.usQh4J),
+    description: Z ? v.intl.string(v.t.lpgkzq) : v.intl.string(v.t.usQh4J),
     icons: y.J6,
     onDrop: e => {
       if (P) returnfalse;
-      N && null != v && ((0, g.d)(e, v, x, {
+      N && null != _ && ((0, g.d)(e, _, x, {
         requireConfirm: O,
         showLargeMessageDialog: false,
         origin: "drag_drop"
       }), m.S.dispatchToLastSubscribed(C.CkL.TEXTAREA_FOCUS))
     },
-    onDragClear: () => E(true),
+    onDragClear: () => j(true),
     onDragOver: e => {
       if (P) returnfalse;
-      Z || e.shiftKey !== O || E(!e.shiftKey)
+      Z || e.shiftKey !== O || j(!e.shiftKey)
     }
   })
 }

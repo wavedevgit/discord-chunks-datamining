@@ -1,9 +1,9 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 140106, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ND: () => p,
-  P5: () => f,
-  g6: () => h
+  P5: () => h,
+  g6: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -47,12 +47,12 @@ let p = (e, t) => (0, l.ZDy)(async () => {
       allowRecentAvatarsSelection: false
     }, n))
   }),
-  f = (e, t) => {
+  h = (e, t) => {
     p(n => {
-      o.Z.setIcon(e, n.imageUri, t).catch(h)
+      o.Z.setIcon(e, n.imageUri, t).catch(f)
     }, [t])
   },
-  h = e => {
+  f = e => {
     var t;
     if ((null == e || null == (t = e.body) ? true : t.retry_after) != null) {
       let t = (0, r.Z)(new Date, e.body.retry_after);

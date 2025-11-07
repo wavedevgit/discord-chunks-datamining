@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 46931 **/
 /** chunk id: 179295, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -16,26 +16,26 @@ function u(e, t) {
     handleMouseDown: n,
     handleMouseMove: u,
     handleMouseUp: d,
-    handleMouseEnter: p
-  } = e, f = i.useRef(null), h = (0, r.e7)([a.Z], () => a.Z.getRTCConnection((0, l.V9)(t))), m = i.useCallback((e, t, i) => {
-    f.current = Date.now(), n(e, t, i)
+    handleMouseEnter: f
+  } = e, p = r.useRef(null), m = (0, i.e7)([a.Z], () => a.Z.getRTCConnection((0, l.V9)(t))), _ = r.useCallback((e, t, r) => {
+    p.current = Date.now(), n(e, t, r)
   }, [n]);
   return {
-    handleMouseUp: i.useCallback((e, t, n) => {
-      if (d(e, t, n), null != f.current) {
-        var i;
-        null != h && (i = Date.now() - f.current, o.default.track(s.rMx.PREMIUM_FEATURE_USAGE, {
-          feature_name: "".concat(c.QP.SHARED_CANVAS, "_").concat(e.type),
-          feature_tier: c.h1.FREE,
-          media_session_id: h.getMediaSessionId(),
-          parent_media_session_id: h.parentMediaSessionId,
-          guild_id: h.guildId,
-          duration: i
-        })), f.current = null
+    handleMouseUp: r.useCallback((e, t, n) => {
+      if (d(e, t, n), null != p.current) {
+        var r;
+        null != m && (r = Date.now() - p.current, o.default.track(c.rMx.PREMIUM_FEATURE_USAGE, {
+          feature_name: "".concat(s.QP.SHARED_CANVAS, "_").concat(e.type),
+          feature_tier: s.h1.FREE,
+          media_session_id: m.getMediaSessionId(),
+          parent_media_session_id: m.parentMediaSessionId,
+          guild_id: m.guildId,
+          duration: r
+        })), p.current = null
       }
-    }, [d, h]),
-    handleMouseDown: m,
+    }, [d, m]),
+    handleMouseDown: _,
     handleMouseMove: u,
-    handleMouseEnter: p
+    handleMouseEnter: f
   }
 }

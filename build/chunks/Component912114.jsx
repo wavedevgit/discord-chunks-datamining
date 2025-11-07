@@ -1,8 +1,8 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 912114, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => E,
-  default: () => j
+  B: () => j,
+  default: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -56,7 +56,7 @@ function O(e, t) {
   }), e
 }
 
-function E(e) {
+function j(e) {
   let {
     channel: t,
     previewIcon: n,
@@ -66,23 +66,23 @@ function E(e) {
     petite: s = false,
     className: u,
     allowRemovingIcon: d = true
-  } = e, m = true !== n ? n : (null == t ? true : t.icon) != null ? (0, h.x)(t, 120) : null, {
+  } = e, m = true !== n ? n : (null == t ? true : t.icon) != null ? (0, f.x)(t, 120) : null, {
     analyticsLocations: g
-  } = (0, f.ZP)(o, p.Z.GROUP_DM_ICON_EDITOR), b = s ? 32 : 64;
+  } = (0, h.ZP)(o, p.Z.GROUP_DM_ICON_EDITOR), b = s ? 32 : 64;
   return (0, i.jsxs)("div", {
-    className: a()(v.iconSection, u),
+    className: a()(_.iconSection, u),
     children: [(0, i.jsxs)(c.P3F, {
-      className: a()(v.iconContainer, {
-        [v.petite]: s
+      className: a()(_.iconContainer, {
+        [_.petite]: s
       }),
-      "aria-label": _.intl.string(_.t["0qPSMV"]),
+      "aria-label": v.intl.string(v.t["0qPSMV"]),
       onClick: () => (0, y.ND)(r, g),
       children: [null != m ? (0, i.jsx)("img", {
         src: m,
         alt: "",
-        className: v.iconImage
+        className: _.iconImage
       }) : (0, i.jsx)("div", {
-        className: v.iconPlaceholder,
+        className: _.iconPlaceholder,
         children: (0, i.jsx)(c.BFJ, {
           size: "custom",
           width: b,
@@ -90,7 +90,7 @@ function E(e) {
           color: "currentColor"
         })
       }), (0, i.jsx)("div", {
-        className: v.pencilIconWrapper,
+        className: _.pencilIconWrapper,
         children: (0, i.jsx)(c.vdY, {
           color: "currentColor",
           size: s ? "xs" : "refresh_sm"
@@ -99,8 +99,8 @@ function E(e) {
     }), null != m && d ? (0, i.jsx)(c.Avr, {
       variant: "critical",
       onClick: l,
-      "aria-label": _.intl.string(_.t["uY+Nk/"]),
-      text: _.intl.string(_.t["uY+Nk/"]),
+      "aria-label": v.intl.string(v.t["uY+Nk/"]),
+      text: v.intl.string(v.t["uY+Nk/"]),
       textVariant: "text-sm/medium",
       size: "sm",
       role: "button",
@@ -108,20 +108,20 @@ function E(e) {
     }) : null]
   })
 }
-let j = function(e) {
+let E = function(e) {
   let {
     channelId: t,
     onClose: n,
     transitionState: l,
     setHasPendingChanges: a,
-    closeOrShowDiscardChangesAlert: h,
-    location: j
+    closeOrShowDiscardChangesAlert: f,
+    location: E
   } = e, S = (0, s.e7)([g.Z], () => g.Z.getChannel(t)), P = null == S ? true : S.name, I = (0, m.cO)(S), [Z, T] = r.useState(null != P ? P : ""), [N, A] = r.useState(true), w = true !== N, {
     analyticsLocations: M
-  } = (0, f.ZP)(j, p.Z.GROUP_DM_EDIT_MODAL), R = {
+  } = (0, h.ZP)(E, p.Z.GROUP_DM_EDIT_MODAL), R = {
     channel_id: t,
     channel_type: null == S ? true : S.type,
-    location: j,
+    location: E,
     location_stack: M,
     old_name_set: "" !== P,
     old_icon_set: (null == S ? true : S.icon) != null
@@ -134,7 +134,7 @@ let j = function(e) {
     b.default.track(C.rMx.GDM_EDIT_INTERACTED, O(x({}, R), {
       action: "dismissed"
     }))
-  })), null == S) ? null : (0, i.jsx)(f.Gt, {
+  })), null == S) ? null : (0, i.jsx)(h.Gt, {
     value: M,
     children: (0, i.jsx)("form", {
       onSubmit: e => {
@@ -149,34 +149,34 @@ let j = function(e) {
             icon_changed: r
           })), i || r) {
           let e = {};
-          i && (e.name = Z), r && (e.icon = N), u.Z.updateChannel(t, e, j).catch(y.g6)
+          i && (e.name = Z), r && (e.icon = N), u.Z.updateChannel(t, e, E).catch(y.g6)
         }
         n()
       },
       children: (0, i.jsx)(o.Modal, {
-        title: _.intl.string(_.t["5Q9+/L"]),
+        title: v.intl.string(v.t["5Q9+/L"]),
         actions: [{
-          text: _.intl.string(_.t["ETE/oC"]),
+          text: v.intl.string(v.t["ETE/oC"]),
           variant: "secondary",
-          onClick: h
+          onClick: f
         }, {
-          text: _.intl.string(_.t["R3BPH+"]),
+          text: v.intl.string(v.t["R3BPH+"]),
           variant: "primary",
           type: "submit",
           disabled: Z === P && !w
         }],
-        onClose: () => Promise.resolve(h()),
+        onClose: () => Promise.resolve(f()),
         transitionState: l,
         children: (0, i.jsxs)("div", {
-          className: v.modalContent,
-          children: [(0, i.jsx)(E, {
+          className: _.modalContent,
+          children: [(0, i.jsx)(j, {
             channel: S,
             previewIcon: N,
             onIconChange: e => A(e.imageUri),
             onIconRemove: () => A(null),
             analyticsLocations: M
           }), (0, i.jsx)(c.oil, {
-            "aria-label": _.intl.string(_.t.GEGW3P),
+            "aria-label": v.intl.string(v.t.GEGW3P),
             placeholder: null != I ? I : "",
             value: Z,
             onChange: T,

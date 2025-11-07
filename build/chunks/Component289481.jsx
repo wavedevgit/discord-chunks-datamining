@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 289481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk550116 = require("./550116.js");
 
-function x(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -82,7 +82,7 @@ let S = Chunk647438.memo(function(e) {
     return (0, r.jsx)(a.animated.div, {
       ref: l,
       style: f,
-      children: (0, r.jsx)(I, x({}, e))
+      children: (0, r.jsx)(I, E({}, e))
     })
   }),
   I = Chunk647438.memo(function(e) {
@@ -110,7 +110,7 @@ let S = Chunk647438.memo(function(e) {
       (0, g.uL)(j.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
     };
     return (0, r.jsx)("div", {
-      className: E.channel,
+      className: C.channel,
       children: (0, r.jsx)(d.y5t, {
         component: (0, r.jsxs)(y.Z, {
           channel: a,
@@ -120,7 +120,7 @@ let S = Chunk647438.memo(function(e) {
           channelState: t,
           children: [(0, r.jsx)(_.Z, {
             channel: a
-          }), (0, r.jsx)(P, x({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(N, x({}, e))]
+          }), (0, r.jsx)(P, E({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(N, E({}, e))]
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(v.Z, {
           channel: t,
@@ -143,8 +143,8 @@ function P(e) {
     getNumUnreadChannels: l
   } = e, o = (0, s.Z)() && null != t.guildId;
   return (0, r.jsx)(d.M0o, {
-    className: E.markReadButton,
-    tooltip: o ? C.intl.string(C.t["5lLMhM"]) : C.intl.string(C.t.e6RscS),
+    className: C.markReadButton,
+    tooltip: o ? x.intl.string(x.t["5lLMhM"]) : x.intl.string(x.t.e6RscS),
     color: d.YX$.TERTIARY,
     icon: o ? (0, r.jsx)(d.W6s, {
       size: "xs",
@@ -171,10 +171,10 @@ function N(e) {
     getNumUnreadChannels: i
   } = e;
   return (0, r.jsx)(u.u, {
-    text: C.intl.string(C.t.iTcuma),
+    text: x.intl.string(x.t.iTcuma),
     children: (0, r.jsx)(d.P3F, {
-      className: o()(E.collapseButton, {
-        [E.collapsed]: t.collapsed
+      className: o()(C.collapseButton, {
+        [C.collapsed]: t.collapsed
       }),
       onClick: function() {
         n(t), (0, f.yw)(j.rMx.INBOX_CHANNEL_COLLAPSED, {

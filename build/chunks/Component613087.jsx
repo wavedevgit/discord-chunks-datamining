@@ -1,4 +1,4 @@
-/** Chunk was on 10150 **/
+/** Chunk was on 50433 **/
 /** chunk id: 613087, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B$: () => u,
@@ -67,11 +67,11 @@ let u = Chunk647438.createContext({
       unregisterComponent: f,
       expansionSpring: h,
       mountPoints: x
-    } = s.useContext(u), j = s.useRef(null), _ = s.useRef(null), b = s.useRef(true);
+    } = s.useContext(u), b = s.useRef(null), _ = s.useRef(null), j = s.useRef(true);
     s.useEffect(() => {
       m()
     }, [m]), s.useLayoutEffect(() => {
-      let e = j.current;
+      let e = b.current;
       return null != e && g(e, c, d), () => {
         null != e && f(c, d)
       }
@@ -80,9 +80,9 @@ let u = Chunk647438.createContext({
       let {
         height: t
       } = e;
-      b.current !== t && (m(), b.current = t)
+      j.current !== t && (m(), j.current = t)
     }, [m]);
-    (0, i.PM)(j, v);
+    (0, i.PM)(b, v);
     let C = null == (n = x.get(c)) ? true : n.current,
       y = null;
     return null == C ? y = null : p && null != h ? y = (0, r.jsxs)(r.Fragment, {
@@ -110,7 +110,7 @@ let u = Chunk647438.createContext({
         opacity: +(null == y && "collapsed" === d || null == C)
       },
       ref: t,
-      children: [l(j), y]
+      children: [l(b), y]
     })
   }),
   m = e => {
@@ -135,7 +135,7 @@ let u = Chunk647438.createContext({
         let n = new Map(e);
         return n.set(t, s.createRef()), n
       })
-    }, []), j = s.useCallback((e, t) => {
+    }, []), b = s.useCallback((e, t) => {
       let n = false;
       p(r => {
         var s;
@@ -183,7 +183,7 @@ let u = Chunk647438.createContext({
     return (0, r.jsx)(u.Provider, {
       value: {
         registerComponent: x,
-        unregisterComponent: j,
+        unregisterComponent: b,
         animatedComponents: i,
         expandedContentRef: n,
         collapsedContentRef: o,

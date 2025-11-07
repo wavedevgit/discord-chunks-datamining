@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 7782, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -37,7 +37,7 @@ let T = e => {
     } = e, l = (0, s.e7)([C.Z], () => C.Z.getMutualGuilds(t), [t]), a = r.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
       let {
         guild: n
-      } = e, r = null != n ? E.ZP.getGuildIconURL({
+      } = e, r = null != n ? j.ZP.getGuildIconURL({
         id: n.id,
         icon: n.icon,
         size: 24
@@ -67,7 +67,7 @@ let T = e => {
         children: a
       }), (0, i.jsx)(c.P3F, {
         onClick: () => {
-          (0, _.openUserProfileModal)({
+          (0, v.openUserProfileModal)({
             userId: t,
             channelId: n,
             section: P.oh.MUTUAL_GUILDS,
@@ -106,7 +106,7 @@ let T = e => {
         })
       },
       text: I.intl.string(I.t.l4Emac)
-    }), d = (0, f.n)({
+    }), d = (0, h.n)({
       userId: r
     });
     switch (n) {
@@ -181,22 +181,22 @@ let T = e => {
     } = e, l = r.useCallback(() => {
       (0, c.showToast)((0, c.createToast)(I.intl.string(I.t.a2j0hv), c.ToastType.FAILURE))
     }, []), a = r.useCallback(() => {
-      y.Z.closeChannelSidebar(v.uZ)
+      y.Z.closeChannelSidebar(_.uZ)
     }, []), o = r.useCallback(() => {
-      y.Z.closeChannelSidebar(v.uZ)
+      y.Z.closeChannelSidebar(_.uZ)
     }, []), {
       acceptMessageRequest: s,
       rejectMessageRequest: u,
       isAcceptLoading: d,
       isRejectLoading: p,
-      isOptimisticAccepted: f,
-      isOptimisticRejected: h
+      isOptimisticAccepted: h,
+      isOptimisticRejected: f
     } = (0, m.m)({
       user: O.default.getUser(n),
       onError: l,
       onAcceptSuccess: o,
       onRejectSuccess: a
-    }), g = d || p || f || h;
+    }), g = d || p || h || f;
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(c.Button, {
         variant: "primary",
@@ -222,7 +222,7 @@ let T = e => {
       showingBanner: r
     } = e, {
       channelId: l
-    } = (0, g._)(), u = (0, s.e7)([h.Z], () => null != l && h.Z.isSpam(l), [l]), d = (0, s.e7)([x.Z], () => x.Z.getRelationshipType(t), [t]), p = n.id === l, f = !o.tq && !p, m = !!o.tq || p || u, y = u || p ? (0, i.jsxs)("div", {
+    } = (0, g._)(), u = (0, s.e7)([f.Z], () => null != l && f.Z.isSpam(l), [l]), d = (0, s.e7)([x.Z], () => x.Z.getRelationshipType(t), [t]), p = n.id === l, h = !o.tq && !p, m = !!o.tq || p || u, y = u || p ? (0, i.jsxs)("div", {
       className: Z.inline,
       children: [(0, i.jsx)(A, {
         channelId: n.id,
@@ -236,10 +236,10 @@ let T = e => {
         relationshipType: d,
         userId: t,
         showingBanner: r
-      }), !r && (0, i.jsx)(j.Z, {
+      }), !r && (0, i.jsx)(E.Z, {
         otherUserId: t,
         channel: n,
-        navigateAwayOnReportSuccess: f
+        navigateAwayOnReportSuccess: h
       })]
     }), C = d !== S.OGo.PENDING_INCOMING || u || p ? null : (0, i.jsx)(c.Text, {
       color: "header-secondary",

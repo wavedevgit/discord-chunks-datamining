@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 773176, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eg
@@ -116,7 +116,7 @@ let ed = Chunk647438.memo(function(e) {
   let {
     channel: t,
     message: n
-  } = e, r = (0, m.q5)(t.guild_id).filter(e => !z.ZP.isEmojiFilteredOrLocked({
+  } = e, r = (0, m.q5)(t.guild_id).filter(e => !W.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: er.Hz.REACTION,
@@ -148,7 +148,7 @@ let ed = Chunk647438.memo(function(e) {
           })]
         }),
         label: c,
-        onClick: () => eh({
+        onClick: () => ef({
           type: null != l ? "remove" : "add",
           emoji: e,
           channel: t,
@@ -181,13 +181,13 @@ function ep(e) {
     canPublish: m,
     canReact: g,
     canConfigureJoin: b,
-    canReply: v,
+    canReply: _,
     canStartThread: x,
     canViewThread: T,
     canForward: N,
     isExpanded: A,
     showMoreUtilities: U,
-    showEmojiPicker: z,
+    showEmojiPicker: W,
     showMessageBookmarksActions: q,
     isMessageBookmark: en,
     setPopout: er,
@@ -205,33 +205,33 @@ function ep(e) {
       isFocused: s
     } = e, {
       author: d
-    } = n, p = (0, u.e7)([V.Z], () => V.Z.getGuild(t.guild_id), [t.guild_id]), m = (0, u.e7)([k.default], () => k.default.getId()), g = (0, D.$R)(t), b = (0, D.Gu)(t), {
-      firstMessage: _
-    } = (0, u.e7)([y.Z], () => y.Z.getMessage(t.id), [t.id]), v = L.nc.useSetting(), x = L.Sb.useSetting(), E = (0, u.e7)([B.Z], () => null == t.guild_id || B.Z.canChatInGuild(t.guild_id), [t]), {
-      canManageMessages: j,
+    } = n, p = (0, u.e7)([H.Z], () => H.Z.getGuild(t.guild_id), [t.guild_id]), m = (0, u.e7)([k.default], () => k.default.getId()), g = (0, L.$R)(t), b = (0, L.Gu)(t), {
+      firstMessage: v
+    } = (0, u.e7)([y.Z], () => y.Z.getMessage(t.id), [t.id]), _ = D.nc.useSetting(), x = D.Sb.useSetting(), j = (0, u.e7)([V.Z], () => null == t.guild_id || V.Z.canChatInGuild(t.guild_id), [t]), {
+      canManageMessages: E,
       canAddNewReactions: S
-    } = (0, u.cj)([H.Z], () => ({
-      canAddNewReactions: E && H.Z.can(ei.Plq.ADD_REACTIONS, t),
-      canManageMessages: H.Z.can(ei.Plq.MANAGE_MESSAGES, t)
-    }), [t, E]), P = (0, w.U)(t, n), I = (0, D.NE)(t, n), Z = (0, D.Ek)(n), T = (0, u.e7)([O.Z], () => null != t.guild_id && O.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([F.ZP], () => null != t.guild_id && F.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === m, U = (j || n.canDeleteOwnMessage(m)) && g && !ei.V$x.UNDELETABLE.has(n.type);
-    n.type === ei.uaV.AUTO_MODERATION_ACTION && (U = U && j), t.isModeratorReportChannel() && (U = U && n.id !== (null == _ ? true : _.id) && !(0, J.Z)(n));
-    let G = (0, Y.a4)(n),
-      z = (0, X.Z)(n, t),
-      q = !t.isSystemDM() && (0, K.Z)(n, m) && g && !b,
+    } = (0, u.cj)([F.Z], () => ({
+      canAddNewReactions: j && F.Z.can(ei.Plq.ADD_REACTIONS, t),
+      canManageMessages: F.Z.can(ei.Plq.MANAGE_MESSAGES, t)
+    }), [t, j]), P = (0, w.U)(t, n), I = (0, L.NE)(t, n), Z = (0, L.Ek)(n), T = (0, u.e7)([O.Z], () => null != t.guild_id && O.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([B.ZP], () => null != t.guild_id && B.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === m, U = (E || n.canDeleteOwnMessage(m)) && g && !ei.V$x.UNDELETABLE.has(n.type);
+    n.type === ei.uaV.AUTO_MODERATION_ACTION && (U = U && E), t.isModeratorReportChannel() && (U = U && n.id !== (null == v ? true : v.id) && !(0, J.Z)(n));
+    let G = (0, K.a4)(n),
+      W = (0, X.Z)(n, t),
+      q = !t.isSystemDM() && (0, Y.Z)(n, m) && g && !b,
       {
         disableReactionCreates: $
       } = (0, Q.Z)({
         channel: t,
-        canChat: E,
-        renderReactions: v,
+        canChat: j,
+        renderReactions: _,
         canAddNewReactions: S,
         isLurking: T,
         isGuest: N,
         isActiveChannelOrUnarchivableThread: g
       }),
-      ee = t.type === ei.d4z.GUILD_ANNOUNCEMENT && null != p && p.features.has(ei.GuildFeatures.NEWS) && (A || j) && (0, h.Z)(n),
+      ee = t.type === ei.d4z.GUILD_ANNOUNCEMENT && null != p && p.features.has(ei.GuildFeatures.NEWS) && (A || E) && (0, f.Z)(n),
       et = t.getGuildId(),
-      en = null != et && n.type === ei.uaV.USER_JOIN && H.Z.canWithPartialContext(ei.Plq.MANAGE_GUILD, {
+      en = null != et && n.type === ei.uaV.USER_JOIN && F.Z.canWithPartialContext(ei.Plq.MANAGE_GUILD, {
         guildId: et
       }),
       er = (0, C.a)(n),
@@ -242,11 +242,11 @@ function ep(e) {
       }),
       ea = (0, u.e7)([R.Z], () => null != R.Z.getSavedMessage(t.id, n.id)),
       eo = (0, c.Z)(a),
-      es = (0, u.e7)([f.Z], () => f.Z.keyboardModeEnabled);
+      es = (0, u.e7)([h.Z], () => h.Z.keyboardModeEnabled);
     return {
       channel: t,
       message: n,
-      canPin: z,
+      canPin: W,
       canEdit: q,
       canDelete: U,
       canReport: G,
@@ -254,9 +254,9 @@ function ep(e) {
       canStartThread: I,
       canViewThread: Z,
       canForward: er,
-      canCopy: W.wS,
+      canCopy: z.wS,
       hasDeveloperMode: x,
-      canReact: !$ && v,
+      canReact: !$ && _,
       canPublish: ee,
       canConfigureJoin: en,
       isExpanded: eo && !es && !i && !r && !l,
@@ -275,13 +275,13 @@ function ep(e) {
     }), er({
       moreUtilities: !U
     })
-  }, [U, er, n]), ef = r.useCallback(() => {
+  }, [U, er, n]), eh = r.useCallback(() => {
     er({
-      emojiPicker: !z
+      emojiPicker: !W
     })
-  }, [z, er]), eh = (0, D.$R)(t), eg = n.hasFlag(ei.iLy.CROSSPOSTED), eb = (0, Z.Z)(t), ey = (0, I.Nt)(), eC = eb && ey && !n.hasPotions(), e_ = r.useCallback(e => {
+  }, [W, er]), ef = (0, L.$R)(t), eg = n.hasFlag(ei.iLy.CROSSPOSTED), eb = (0, Z.Z)(t), ey = (0, I.Nt)(), eC = eb && ey && !n.hasPotions(), ev = r.useCallback(e => {
     try {
-      (0, E.qc)(t.id, n.id, e)
+      (0, j.qc)(t.id, n.id, e)
     } catch (e) {
       (0, d.showToast)((0, d.createToast)(el.intl.string(el.t.xsfC2S), d.ToastType.FAILURE))
     }
@@ -300,7 +300,7 @@ function ep(e) {
         label: el.intl.string(el.t.NpHUi1),
         icon: d.idN,
         onClick: () => (0, ee.zW)(t)
-      }, "configure") : null, eh ? (0, i.jsx)($.sF, {
+      }, "configure") : null, ef ? (0, i.jsx)($.sF, {
         label: el.intl.string(el.t.RpE9k7),
         icon: d.z7b,
         onClick: () => (0, ee.B8)(t, n)
@@ -316,7 +316,7 @@ function ep(e) {
         label: el.intl.string(el.t.rBIGBL),
         icon: d.or_,
         onClick: () => (0, ee.gK)(t, n)
-      }, "thread") : null, v && p ? (0, i.jsx)($.sF, {
+      }, "thread") : null, _ && p ? (0, i.jsx)($.sF, {
         label: el.intl.string(el.t["5IEsGx"]),
         icon: d.n$P,
         onClick: e => (0, ee.HH)(t, n, e)
@@ -328,9 +328,9 @@ function ep(e) {
           message: n
         }), (0, i.jsx)($.fO, {})]
       }), (0, i.jsx)(et.Z, {
-        togglePopout: ef,
+        togglePopout: eh,
         renderEmojiPicker: em,
-        shouldShow: z,
+        shouldShow: W,
         isFocused: es,
         channel: t,
         message: n
@@ -343,13 +343,13 @@ function ep(e) {
           }), (0, P.s)({
             channelId: t.id,
             message: n,
-            onRedeem: e_,
-            onClose: j.Qy,
+            onRedeem: ev,
+            onClose: E.Qy,
             source: S.YD.MessageExpandingButtons
           })
         }
       }, "add-confetti-potion") : null]
-    }) : null, v && !p ? (0, i.jsx)($.sF, {
+    }) : null, _ && !p ? (0, i.jsx)($.sF, {
       label: el.intl.string(el.t["5IEsGx"]),
       icon: d.n$P,
       onClick: e => (0, ee.HH)(t, n, e)
@@ -359,7 +359,7 @@ function ep(e) {
       onClick: () => (0, ee.Hd)(t, n)
     }, "edit") : null, N ? (0, i.jsx)($.sF, {
       label: el.intl.string(el.t.I3ltXO),
-      icon: _.Z,
+      icon: v.Z,
       onClick: () => (0, ee.ts)(t, n)
     }, "forward") : null, x && !N ? (0, i.jsx)($.sF, {
       label: el.intl.string(el.t.rBIGBL),
@@ -432,11 +432,11 @@ function ep(e) {
   })
 }
 
-function ef(e) {
+function eh(e) {
   let {
     channel: t,
     message: n
-  } = e, r = (0, u.e7)([v.Z], () => null != v.Z.getMessage(n.id), [n.id]), l = null == n.interaction || null != n.interactionData && (0, x.$s)(n.interactionData);
+  } = e, r = (0, u.e7)([_.Z], () => null != _.Z.getMessage(n.id), [n.id]), l = null == n.interaction || null != n.interactionData && (0, x.$s)(n.interactionData);
   return (0, i.jsxs)(i.Fragment, {
     children: [!r && l && (0, i.jsx)($.sF, {
       label: el.intl.string(el.t["5911Lb"]),
@@ -450,7 +450,7 @@ function ef(e) {
   })
 }
 
-function eh(e) {
+function ef(e) {
   let {
     type: t,
     emoji: n,
@@ -493,7 +493,7 @@ function em(e, t, n) {
         willClose: l,
         isBurst: a
       } = i;
-      eh({
+      ef({
         type: "add",
         emoji: r,
         channel: e,
@@ -517,7 +517,7 @@ let eg = Chunk647438.memo(function(e) {
       channel: t,
       message: n
     } = e;
-    return n.state === ei.yb.SEND_FAILED ? (0, i.jsx)(ef, {
+    return n.state === ei.yb.SEND_FAILED ? (0, i.jsx)(eh, {
       channel: t,
       message: n
     }) : null

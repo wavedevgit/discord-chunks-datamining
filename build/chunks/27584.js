@@ -1,7 +1,7 @@
-/** Chunk was on 6915 **/
-/** chunk id: 27584, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 26775 **/
+/** chunk id: 27584, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => u
 });
 var Chunk442837 = require("./442837.js"),
   Chunk846027 = require("./846027.js"),
@@ -10,13 +10,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function s(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : c.Yn.DEFAULT,
-    n = (0, r.e7)([i.default], () => i.default.getId()),
-    s = (0, r.e7)([o.Z], () => o.Z.supports(c.AN.DISABLE_VIDEO)),
-    u = (0, r.e7)([o.Z], () => o.Z.isLocalVideoDisabled(n, t), [n, t]);
-  return [(null == e || e === n) && s, u, e => {
-    let r = e ? a.ZUi.DISABLED : a.ZUi.MANUAL_ENABLED;
-    l.Z.setDisableLocalVideo(n, r, t)
+function u(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a.Yn.DEFAULT,
+    r = (0, n.e7)([i.default], () => i.default.getId()),
+    u = (0, n.e7)([l.Z], () => l.Z.supports(a.AN.DISABLE_VIDEO)),
+    s = (0, n.e7)([l.Z], () => l.Z.isLocalVideoDisabled(r, t), [r, t]);
+  return [(null == e || e === r) && u, s, e => {
+    let n = e ? c.ZUi.DISABLED : c.ZUi.MANUAL_ENABLED;
+    o.Z.setDisableLocalVideo(r, n, t)
   }]
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 562511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A2: () => g,
+  A2: () => v,
   S3: () => f
 });
 var Chunk647438 = require("./647438.js"),
@@ -18,7 +18,7 @@ var Chunk647438 = require("./647438.js"),
 
 function f(e) {
   let t = function(e) {
-    let t = (0, l.FT)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds);
+    let t = (0, o.FT)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds);
     return (0, a.e7)([c.Z, d.default, s.ZP], () => {
       var t, n;
       if (null === e) returnfalse;
@@ -31,7 +31,7 @@ function f(e) {
     }, [e]) && !t
   }(e);
   return ! function(e) {
-    let t = (0, l.FT)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds),
+    let t = (0, o.FT)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds),
       n = (0, a.e7)([_.Z], () => null === e ? null : _.Z.getGuildLastSeenInfo(e)),
       s = (0, a.e7)([d.default], () => {
         var e;
@@ -42,7 +42,7 @@ function f(e) {
         return null == (n = c.Z.getGuild(e)) || null == (t = n.profile) ? true : t.tag
       });
     if (r.useEffect(() => {
-        t && null === n && null != e && null != u && o.Z.dispatch({
+        t && null === n && null != e && null != u && l.Z.dispatch({
           type: "GUILD_TAG_CHANGED_COACHMARK_SEEN",
           guildId: e,
           lastSeenInfo: {
@@ -51,11 +51,11 @@ function f(e) {
         })
       }, [e, u, t, n]), null == u || (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === u) returnfalse;
     let f = (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === null,
-      g = null === n || (null == n ? true : n.tag) === u;
-    return f && !g && t
+      v = null === n || (null == n ? true : n.tag) === u;
+    return f && !v && t
   }(e) ? t ? "available" : null : "changed"
 }
 
-function g(e) {
+function v(e) {
   return null !== f(e)
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 641861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -28,7 +28,7 @@ function x(e) {
   let {
     recipientUser: t,
     voiceChannel: n
-  } = e, r = (0, y.ZP)(n), s = (0, f.s)(t, "RingToVoiceBanner", n.id), {
+  } = e, r = (0, y.ZP)(n), s = (0, h.s)(t, "RingToVoiceBanner", n.id), {
     userIsInCall: u,
     isUserRinging: m
   } = (0, o.cj)([p.Z], () => {
@@ -37,7 +37,7 @@ function x(e) {
       userIsInCall: null != e,
       isUserRinging: null != e && e.type === C.fO.USER && e.ringing
     }
-  }), x = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), E = null != x ? (0, g.EB)(x, 32, true) : null, j = !s || u && !m;
+  }), x = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), j = null != x ? (0, g.EB)(x, 32, true) : null, E = !s || u && !m;
   return ((0, d.Z)({
     type: a.ImpressionTypes.PAGE,
     name: a.ImpressionNames.RING_TO_GUILD_VC_BANNER_SHOWN,
@@ -46,32 +46,32 @@ function x(e) {
       voice_guild_id: null == n ? true : n.guild_id
     }
   }, {
-    disableTrack: j
-  }, [t.id]), j) ? null : (0, i.jsxs)("div", {
-    className: l()(v.themed, v.chatHeaderBar),
+    disableTrack: E
+  }, [t.id]), E) ? null : (0, i.jsxs)("div", {
+    className: l()(_.themed, _.chatHeaderBar),
     children: [(0, i.jsxs)("div", {
-      className: v.chatHeaderBarInfo,
-      children: [(0, i.jsx)(h.ZP, {
-        className: v.mask,
-        mask: h.QS.SQUIRCLE,
+      className: _.chatHeaderBarInfo,
+      children: [(0, i.jsx)(f.ZP, {
+        className: _.mask,
+        mask: f.QS.SQUIRCLE,
         width: 24,
         height: 24,
-        children: null == E ? (0, i.jsx)("div", {
-          className: l()(v.guildIcon, v.guildIconWithoutImage),
+        children: null == j ? (0, i.jsx)("div", {
+          className: l()(_.guildIcon, _.guildIconWithoutImage),
           children: (0, i.jsx)("div", {
-            className: v.guildAcronym,
+            className: _.guildAcronym,
             children: null != x ? (0, g.gM)(x) : null
           })
         }) : (0, i.jsx)("img", {
           alt: null == x ? true : x.name,
-          src: E,
-          className: v.guildIcon
+          src: j,
+          className: _.guildIcon
         })
       }), (0, i.jsx)(c.Text, {
-        className: v.chatHeaderBarText,
+        className: _.chatHeaderBarText,
         variant: "text-md/medium",
         color: "header-secondary",
-        children: _.intl.format(_.t.f2tNxH, {
+        children: v.intl.format(v.t.f2tNxH, {
           username: null == t ? true : t.globalName,
           channelName: (0, i.jsx)(c.Text, {
             variant: "text-md/semibold",
@@ -93,7 +93,7 @@ function O(e) {
     channelId: t,
     recipientUserId: n,
     isUserRinging: r
-  } = e, l = r ? _.intl.string(_.t.ygslb0) : _.intl.string(_.t["3Hv9qQ"]), a = r ? () => u.Z.stopRinging(t, [n]) : () => {
+  } = e, l = r ? v.intl.string(v.t.ygslb0) : v.intl.string(v.t["3Hv9qQ"]), a = r ? () => u.Z.stopRinging(t, [n]) : () => {
     u.Z.ring(t, [n], "dm_banner"), (0, m.Kh)(t)
   };
   return (0, i.jsx)(s.zxk, {

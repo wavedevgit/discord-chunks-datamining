@@ -1,7 +1,7 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 5200, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => _
+  Y: () => v
 }), require("./388685.js");
 var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,29 +23,29 @@ let b = ["embedded_cover"],
   };
 var C = ((i = C || {})[i.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", i[i.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", i);
 
-function _(e) {
+function v(e) {
   var t;
   let {
     context: n,
     activityItem: i,
     onClick: a,
     aspectRatio: C = 0,
-    animatedDivClass: _,
-    commandOrigin: v
+    animatedDivClass: v,
+    commandOrigin: _
   } = e, {
     onActivityItemSelected: x,
     imageBackground: O,
-    activityAction: E,
-    labelType: j
+    activityAction: j,
+    labelType: E
   } = (0, u.ZP)({
     context: n,
     activityItem: i,
     guildId: null != (t = n.channel.getGuildId()) ? t : true,
     locationObject: {},
     onActivityItemSelected: a,
-    embeddedActivitiesManager: f.Z,
+    embeddedActivitiesManager: h.Z,
     assetNames: b,
-    commandOrigin: v
+    commandOrigin: _
   }), [S, P] = l.useState(false), I = l.useCallback(() => {
     P(true)
   }, [P]), Z = l.useCallback(() => {
@@ -55,11 +55,11 @@ function _(e) {
     children: (0, r.jsx)("div", {
       className: g.badgeContainer,
       children: (0, r.jsx)(p.Z, {
-        labelType: j
+        labelType: E
       })
     })
-  }), [j]), N = l.useMemo(() => {
-    switch (E) {
+  }), [E]), N = l.useMemo(() => {
+    switch (j) {
       case u.JS.JOIN:
         return (0, r.jsx)("div", {
           className: g.activityAction,
@@ -88,7 +88,7 @@ function _(e) {
       default:
         return null
     }
-  }, [E]);
+  }, [j]);
   return (0, r.jsx)(c.P3F, {
     onClick: x,
     onFocus: I,
@@ -109,9 +109,9 @@ function _(e) {
           value: t
         } = e;
         return (0, r.jsx)(c.f6W, {
-          theme: h.BRd.DARK,
+          theme: f.BRd.DARK,
           children: e => (0, r.jsxs)(s.animated.div, {
-            className: o()(e, g.activityItem, _, {
+            className: o()(e, g.activityItem, v, {
               [g.activityItem_13_11]: 0 === C,
               [g.activityItem_16_9]: 1 === C
             }),
@@ -130,4 +130,4 @@ function _(e) {
     })
   })
 }
-_.AspectRatio = C
+v.AspectRatio = C

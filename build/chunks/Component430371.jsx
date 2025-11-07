@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 430371, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk394024 = require("./394024.js"),
   Chunk597843 = require("./597843.js");
 
-function E(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -44,7 +44,7 @@ function E(e) {
   return e
 }
 
-function j(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -71,26 +71,26 @@ function I(e) {
       inCall: w,
       channel: M,
       selectedParticipant: R,
-      showParticipants: D = true,
-      className: L,
+      showParticipants: L = true,
+      className: D,
       width: k,
       height: U,
-      layout: F,
-      idle: V
+      layout: B,
+      idle: H
     } = e,
-    B = f.Z.getVideoComponent(),
-    H = p.default.getId(),
-    [G, W] = r.useState(null),
-    z = (0, c.Z)(G),
-    [q, Y] = r.useState(true),
-    [K, X] = r.useState(false),
-    J = R.type === v.fO.ACTIVITY,
+    V = h.Z.getVideoComponent(),
+    F = p.default.getId(),
+    [G, z] = r.useState(null),
+    W = (0, c.Z)(G),
+    [q, K] = r.useState(true),
+    [Y, X] = r.useState(false),
+    J = R.type === _.fO.ACTIVITY,
     Q = (0, u.Z)(J ? R.applicationId : true),
     $ = !J && null != R.streamId,
     ee = U <= 2 * P + 144,
-    et = D && !ee,
+    et = L && !ee,
     en = (0, c.Z)(et),
-    ei = F === _.AEg.MINIMUM || F === _.AEg.NORMAL,
+    ei = B === v.AEg.MINIMUM || B === v.AEg.NORMAL,
     er = !ee && (!ei || J),
     el = (0, m.Z)(er, 100),
     ea = (null != (t = (0, c.Z)(R.id)) ? t : R.id) !== R.id,
@@ -103,47 +103,47 @@ function I(e) {
     ep = U > k / es + 72 + P + 8;
   n = et || J ? et ? false : false : 40 + Math.max(0, 72 - (U - ed) / 2), r.useEffect(() => {
     let e = setTimeout(() => {
-      Y(false)
+      K(false)
     }, 250);
     return () => {
       clearTimeout(e)
     }
   }, []);
-  let ef = q || null == z,
-    eh = ef ? "animate-never" : "animate-always",
+  let eh = q || null == W,
+    ef = eh ? "animate-never" : "animate-always",
     em = (0, s.q_F)({
       value: +!!et,
       delay: ep || !et ? 0 : 100,
-      config: j(E({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: true
       }),
       onStart: () => X(true),
-      onChange: () => h.S.dispatch(_.CkL.REMEASURE_TARGET),
+      onChange: () => f.S.dispatch(v.CkL.REMEASURE_TARGET),
       onRest: () => {
-        X(false), h.S.dispatch(_.CkL.REMEASURE_TARGET)
+        X(false), f.S.dispatch(v.CkL.REMEASURE_TARGET)
       }
-    }, eh),
+    }, ef),
     eg = (0, s.q_F)({
       value: +!!et,
-      config: j(E({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: true
       })
-    }, eh),
+    }, ef),
     eb = (0, s.q_F)({
       value: eu,
-      config: j(E({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: true
       })
-    }, en === et && eg.value.idle && !el || ea || ef ? "animate-never" : "animate-always"),
+    }, en === et && eg.value.idle && !el || ea || eh ? "animate-never" : "animate-always"),
     ey = (0, s.q_F)({
       value: n,
-      config: j(E({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: true
       })
-    }, eh),
+    }, ef),
     eC = (0, s.Yzy)(R, {
       keys: e => null == e ? true : e.id,
-      config: j(E({}, o.config.stiff), {
+      config: E(j({}, o.config.stiff), {
         clamp: true
       }),
       initial: null,
@@ -156,17 +156,17 @@ function I(e) {
       leave: {
         opacity: 0
       }
-    }, eh),
-    e_ = r.useCallback(e => {
-      W(e), Y(false)
+    }, ef),
+    ev = r.useCallback(e => {
+      z(e), K(false)
     }, []),
-    ev = et ? [] : (0, y.n3)(T, R, H),
+    e_ = et ? [] : (0, y.n3)(T, R, F),
     {
       visibleParticipants: ex,
       participantTileWidth: eO
     } = (0, C.ZB)(k, N);
   return (0, i.jsxs)("div", {
-    className: a()(O.root, x.flexCenter, L),
+    className: a()(O.root, x.flexCenter, D),
     children: [(0, i.jsxs)("div", {
       className: O.tileWrapper,
       style: {
@@ -199,13 +199,13 @@ function I(e) {
                   noBorder: eu >= k || ec >= U,
                   channel: M,
                   className: x.focusedVideo,
-                  videoComponent: B,
+                  videoComponent: V,
                   width: k,
                   participant: t,
                   onClick: l,
                   onDoubleClick: Z,
                   onContextMenu: I,
-                  onVideoResize: e_,
+                  onVideoResize: ev,
                   inCall: w,
                   popoutType: A
                 })
@@ -214,14 +214,14 @@ function I(e) {
           })
         }), er ? (0, i.jsx)(o.animated.div, {
           className: a()(O.actionRow, {
-            [O.idle]: V
+            [O.idle]: H
           }),
           style: {
             bottom: ey.value
           },
           children: (0, i.jsx)(d.Z, {
             channelId: M.id,
-            isParticipantsOpen: D,
+            isParticipantsOpen: L,
             isVertical: true
           })
         }) : null]
@@ -242,15 +242,15 @@ function I(e) {
           selectedParticipantId: R.id,
           inCall: w,
           popoutType: A,
-          paused: K || !D
+          paused: Y || !L
         })
       })]
-    }), ev.length > 0 ? (0, i.jsx)(b.Z, {
+    }), e_.length > 0 ? (0, i.jsx)(b.Z, {
       onContextMenuParticipant: I,
       width: k,
       height: U,
       channel: M,
-      participants: ev,
+      participants: e_,
       onSelectParticipant: l
     }) : null]
   })

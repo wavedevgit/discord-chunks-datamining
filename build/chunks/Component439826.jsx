@@ -1,4 +1,4 @@
-/** Chunk was on 10150 **/
+/** Chunk was on 50433 **/
 /** chunk id: 439826, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -45,7 +45,7 @@ function R(e) {
     ref: p,
     height: g = 0
   } = (0, u.ZP)([o]), f = (null == (t = n.userStatus) ? true : t.completedAt) != null, h = (0, x.z)(n), {
-    type: j,
+    type: b,
     hints: _
   } = s.useMemo(() => f || h ? {
     type: 2,
@@ -59,11 +59,11 @@ function R(e) {
   } : {
     type: 2,
     hints: []
-  }, [o, f, h, a]), v = 2 !== j, C = (0, d.q_F)({
+  }, [o, f, h, a]), v = 2 !== b, C = (0, d.q_F)({
     opacity: +!!v,
     height: v ? g : 0,
     config: w.Y
-  }), y = 0 === j ? d.Mgn : d.d3s, E = (0, m.Lq)(P.Ilk.RED_345), O = 0 === j ? E : l ? d.TVs.colors.TEXT_DEFAULT : d.TVs.colors.WHITE;
+  }), y = 0 === b ? d.Mgn : d.d3s, E = (0, m.Lq)(P.Ilk.RED_345), O = 0 === b ? E : l ? d.TVs.colors.TEXT_DEFAULT : d.TVs.colors.WHITE;
   return (0, r.jsx)(i.animated.div, {
     style: C,
     children: (0, r.jsxs)("div", {
@@ -79,9 +79,9 @@ function R(e) {
           color: l ? "text-muted" : "always-white",
           children: _.at(0)
         })]
-      }), 0 === j && (0, r.jsx)(d.Avr, {
+      }), 0 === b && (0, r.jsx)(d.Avr, {
         text: N.intl.string(N.t["yKJi+/"]),
-        onClick: () => (0, b.y)({
+        onClick: () => (0, j.y)({
           quest: n,
           errorHints: o,
           sourceQuestContent: c
@@ -97,48 +97,48 @@ function B(e) {
   var t, n, o, i, u;
   let {
     quest: m,
-    isHovering: b,
+    isHovering: j,
     errorHints: w,
     warningHints: B,
     isVisibleInViewport: k,
     onCtxMenuClose: I,
     onCtxMenuOpen: D,
     onCtxMenuSelect: q,
-    sourceQuestContent: Q
-  } = e, L = (0, h.PB)(m), V = (0, p.ZP)(), M = ((0, c.wj)(V) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, Z = (0, x.tP)(m), W = (null == (t = m.userStatus) ? true : t.claimedAt) != null, U = (0, x.B6)(m.config.expiresAt, {
+    sourceQuestContent: L
+  } = e, Q = (0, h.PB)(m), V = (0, p.ZP)(), M = ((0, c.wj)(V) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, Z = (0, x.tP)(m), W = (null == (t = m.userStatus) ? true : t.claimedAt) != null, U = (0, x.B6)(m.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), H = (null == (n = m.userStatus) ? true : n.enrolledAt) != null, z = (null == (o = m.userStatus) ? true : o.completedAt) != null, {
-    onAssetLoadComplete: F
+  }), H = (null == (n = m.userStatus) ? true : n.enrolledAt) != null, F = (null == (o = m.userStatus) ? true : o.completedAt) != null, {
+    onAssetLoadComplete: z
   } = s.useContext(O.k), G = s.useCallback(async () => {
-    L && ((0, h.zi)(m) || H ? (0, y.openVideoQuestModal)({
+    Q && ((0, h.zi)(m) || H ? (0, y.openVideoQuestModal)({
       quest: m,
-      questContent: j.jn.QUEST_HOME_DESKTOP,
-      sourceQuestContent: Q,
+      questContent: b.jn.QUEST_HOME_DESKTOP,
+      sourceQuestContent: L,
       sourceQuestContentCTA: f.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     }) : (0, _.R)(T.dr.QUEST_HOME_DESKTOP) ? await (0, y.enrollAndStartVideoQuestWithErrorHandling)(m, {
-      questContent: j.jn.QUEST_HOME_DESKTOP,
+      questContent: b.jn.QUEST_HOME_DESKTOP,
       questContentCTA: f.jZ.ACCEPT_QUEST,
-      sourceQuestContent: Q,
+      sourceQuestContent: L,
       sourceQuestContentCTA: f.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     }) : ((0, g.AH)(m.id, {
-      questContent: j.jn.QUEST_HOME_DESKTOP,
+      questContent: b.jn.QUEST_HOME_DESKTOP,
       questContentCTA: f.jZ.ACCEPT_QUEST,
-      sourceQuestContent: Q
+      sourceQuestContent: L
     }), (0, y.openVideoQuestModal)({
       quest: m,
-      questContent: j.jn.QUEST_HOME_DESKTOP,
-      sourceQuestContent: Q,
+      questContent: b.jn.QUEST_HOME_DESKTOP,
+      sourceQuestContent: L,
       sourceQuestContentCTA: f.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     })))
-  }, [L, m, H, Q]);
+  }, [Q, m, H, L]);
   return (0, r.jsxs)("div", {
     className: A.container,
     children: [(0, r.jsx)("div", {
       className: A.heroAssetWrapper,
       children: (0, r.jsx)(v.Z, {
         quest: m,
-        isInteracting: b,
+        isInteracting: j,
         hideAssets: !k,
         imageSize: {
           width: 1320,
@@ -165,8 +165,8 @@ function B(e) {
               className: A.eyebrowText,
               children: N.intl.string(N.t.SKNnqq)
             })
-          }), L && (0, r.jsx)(l.u, {
-            text: z ? N.intl.string(N.t.YsCuyF) : H ? N.intl.string(N.t["74KqrR"]) : (0, h.zi)(m) ? N.intl.string(N.t.I6JG46) : N.intl.string(N.t.umdNin),
+          }), Q && (0, r.jsx)(l.u, {
+            text: F ? N.intl.string(N.t.YsCuyF) : H ? N.intl.string(N.t["74KqrR"]) : (0, h.zi)(m) ? N.intl.string(N.t.I6JG46) : N.intl.string(N.t.umdNin),
             asContainer: true,
             tag: "span",
             children: (0, r.jsx)(d.P3F, {
@@ -182,12 +182,12 @@ function B(e) {
             onOpen: D,
             onClose: I,
             onSelect: q,
-            questContent: j.jn.QUEST_HOME_DESKTOP,
+            questContent: b.jn.QUEST_HOME_DESKTOP,
             quest: m,
             hideLearnMore: true,
             shouldShowDisclosure: true,
             showShareLink: true,
-            sourceQuestContent: Q,
+            sourceQuestContent: L,
             children: e => {
               var t, n;
               return (0, r.jsx)(d.P3F, (t = function(e) {
@@ -238,7 +238,7 @@ function B(e) {
             quest: m,
             separatorSpacing: C.US.MEDIUM,
             withGameTile: false,
-            onLoadComplete: F
+            onLoadComplete: z
           })
         }), (0, r.jsxs)("div", {
           className: A.bottomRow,
@@ -261,7 +261,7 @@ function B(e) {
         errorHints: w,
         warningHints: B,
         isDarkTheme: M,
-        sourceQuestContent: Q
+        sourceQuestContent: L
       })]
     })]
   })

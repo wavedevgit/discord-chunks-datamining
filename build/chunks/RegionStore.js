@@ -1,7 +1,7 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 903223, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var i, r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -49,7 +49,7 @@ class p extends(r = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : p[i] = "RegionStore";
-let f = new p(Chunk570140.Z, {
+let h = new p(Chunk570140.Z, {
   LOAD_REGIONS: function(e) {
     let t = a().sortBy(e.regions, e => e.name);
     null != e.guildId ? d[e.guildId] = t : u = t

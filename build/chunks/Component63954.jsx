@@ -1,8 +1,8 @@
-/** Chunk was on 10150 **/
+/** Chunk was on 50433 **/
 /** chunk id: 63954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H,
-  b: () => L
+  b: () => Q
 }), require("./388685.js"), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -71,9 +71,9 @@ function I(e, t) {
 }
 let D = ["png", "gif", "webp"],
   q = [...D, "jpg", "jpeg"],
-  Q = Array.from(new Set([...q, "gif", "mp4", "webm"]));
+  L = Array.from(new Set([...q, "gif", "mp4", "webm"]));
 
-function L(e) {
+function Q(e) {
   var t, n;
   return {
     code: "PREVIEW-MODE-CODE",
@@ -176,12 +176,12 @@ let M = "1193992107035983872",
   };
 
 function W() {
-  var e, t, o, d, u, B, L, M;
+  var e, t, o, d, u, B, Q, M;
   let [W, U] = Chunk647438.useState(Z), H = Chunk647438.useCallback(e => {
     U(I(k({}, e), {
       preview: true
     }))
-  }, []), [z, F] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [G, K] = Chunk647438.useState(false), [X, Y] = Chunk647438.useState(false), [J, $] = Chunk647438.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
+  }, []), [F, z] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [G, K] = Chunk647438.useState(false), [X, Y] = Chunk647438.useState(false), [J, $] = Chunk647438.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -342,7 +342,7 @@ function W() {
       className: Chunk188764.fields,
       children: (0, Chunk951288.jsx)(Chunk916028.Z, {
         onSelect: function(e) {
-          $(e), null != e && (F(function(e) {
+          $(e), null != e && (z(function(e) {
             if (null == e.userStatus) return O.a.UNENROLLED;
             if (null != e.userStatus.claimedAt) return O.a.CLAIMED;
             if (null != e.userStatus.completedAt) return O.a.COMPLETED_100;
@@ -420,26 +420,26 @@ function W() {
         title: "Hero",
         assetKey: "hero",
         onFileChange: et,
-        filters: Q,
+        filters: L,
         initialValue: W.config.assets.hero
       }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Hero Video (optional)",
         assetKey: "heroVideo",
         onFileChange: et,
-        filters: Q,
+        filters: L,
         initialValue: null != (B = W.config.assets.heroVideo) ? B : true
       }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Quest Bar Hero",
         assetKey: "questBarHero",
         onFileChange: et,
-        filters: Q,
+        filters: L,
         initialValue: W.config.assets.questBarHero
       }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Quest Bar Hero Video (optional)",
         assetKey: "questBarHeroVideo",
         onFileChange: et,
-        filters: Q,
-        initialValue: null != (L = W.config.assets.questBarHeroVideo) ? L : true
+        filters: L,
+        initialValue: null != (Q = W.config.assets.questBarHeroVideo) ? Q : true
       }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Game Tile",
         assetKey: "gameTile",
@@ -457,13 +457,13 @@ function W() {
           title: "Quest Video",
           assetKey: "videoPlayerVideo",
           onFileChange: en,
-          filters: Q,
+          filters: L,
           initialValue: null == eu ? true : eu.assets.video.url
         }), (0, Chunk951288.jsx)(Chunk210851.Z, {
           title: "Quest Video (Low Resolution)",
           assetKey: "videoPlayerVideoLowRes",
           onFileChange: en,
-          filters: Q,
+          filters: L,
           initialValue: null == eu || null == (e = eu.assets.videoLowRes) ? true : module.url
         }), (0, Chunk951288.jsx)(Chunk210851.Z, {
           title: "Video Player Thumbnail (optional)",
@@ -475,13 +475,13 @@ function W() {
           title: "Quest Bar Preview Video (optional)",
           assetKey: "questBarPreviewVideo",
           onFileChange: er,
-          filters: Q,
+          filters: L,
           initialValue: null == (t = W.config.videoMetadata) ? true : exports.assets.questBarPreviewVideo
         }), (0, Chunk951288.jsx)(Chunk210851.Z, {
           title: "Quest Home Video (optional)",
           assetKey: "questHomeVideo",
           onFileChange: er,
-          filters: Q,
+          filters: L,
           initialValue: null == (o = W.config.videoMetadata) ? true : Chunk512722.assets.questHomeVideo
         })]
       })]
@@ -502,7 +502,7 @@ function W() {
           assetKey: "nameWithArticle",
           onMessageChange: (e, n) => ea(e, n, t),
           initialValue: e.messages.nameWithArticle
-        }), e.type !== c.w.VIRTUAL_CURRENCY && (0, r.jsx)(b.Z, {
+        }), e.type !== c.w.VIRTUAL_CURRENCY && (0, r.jsx)(j.Z, {
           title: "Asset",
           assetKey: "asset",
           onFileChange: (e, n) => (function(e, t, n) {
@@ -522,7 +522,7 @@ function W() {
               }))
             }
           })(e, n, t),
-          filters: Q,
+          filters: L,
           initialValue: e.asset
         }), (0, r.jsxs)(p.Kqy, {
           direction: "vertical",
@@ -564,7 +564,7 @@ function W() {
         children: (0, Chunk951288.jsx)(Chunk815183.Z, {})
       }), (0, Chunk951288.jsx)(Chunk899457.Z, {
         onChange: function(e) {
-          switch (F(e), e) {
+          switch (z(e), e) {
             case O.a.UNENROLLED:
               H(I(k({}, W), {
                 userStatus: null
@@ -621,7 +621,7 @@ function W() {
               }))
           }
         },
-        value: z
+        value: F
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/bold",

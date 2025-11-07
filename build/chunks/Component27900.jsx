@@ -1,7 +1,7 @@
 /** Chunk was on 6524 **/
 /** chunk id: 27900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => M
+  default: () => C
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -27,7 +27,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -67,49 +67,49 @@ function A(e) {
     mediaEngineContext: a,
     onSelect: c,
     onShowProfile: S,
-    onWatchStream: h,
+    onWatchStream: _,
     appContext: P
-  } = e, A = (0, y.Z)({
+  } = e, A = (0, E.Z)({
     onAction: () => {
       null == S || S()
     }
-  }), I = (0, Z.Z)({
+  }), I = (0, y.Z)({
     user: t,
     context: P
-  }), M = (0, b.Z)({
+  }), C = (0, b.Z)({
     user: t,
     appContext: P
-  }), C = (0, p.Z)(t.id, h), x = (0, j.Z)(t.id), D = (0, v.Z)(t.id, a), N = (0, m.Z)({
+  }), M = (0, p.Z)(t.id, _), x = (0, j.Z)(t.id), D = (0, m.Z)(t.id, a), w = (0, v.Z)({
     user: t
-  }), T = (0, u.Z)(null, t), w = (0, f.Z)({
+  }), N = (0, u.Z)(null, t), T = (0, f.Z)({
     user: t,
     appContext: P
-  }), U = (0, O.Z)({
+  }), k = (0, O.Z)({
     user: t,
     appContext: P
-  }), k = (0, E.Z)({
+  }), U = (0, Z.Z)({
     user: t,
     appContext: P
   }), L = (0, s.Z)({
     id: t.id,
-    label: _.intl.string(_.t["/AXYnE"])
+    label: h.intl.string(h.t["/AXYnE"])
   }), R = (0, d.Z)(t), B = (0, g.Z)(t, n, o), V = t.isNonUserBot();
   return (0, l.jsxs)(r.v2r, {
     navId: "user-context",
     onClose: i.Zy,
-    "aria-label": _.intl.string(_.t.liqwPJ),
+    "aria-label": h.intl.string(h.t.liqwPJ),
     onSelect: c,
     children: [!V && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(r.kSQ, {
         children: R
       }), (0, l.jsxs)(r.kSQ, {
-        children: [A, I, M, C]
+        children: [A, I, C, M]
       }), (0, l.jsx)(r.kSQ, {
         children: x
       }), (0, l.jsx)(r.kSQ, {
-        children: T
+        children: N
       }), (0, l.jsxs)(r.kSQ, {
-        children: [D, N, w, k, U]
+        children: [D, w, T, U, k]
       }), (0, l.jsx)(r.kSQ, {
         children: B
       })]
@@ -127,54 +127,54 @@ function I(e) {
     onShowProfile: a,
     onWatchStream: c,
     appContext: g
-  } = e, S = (0, y.Z)({
+  } = e, S = (0, E.Z)({
     onAction: () => {
       null == a || a()
     }
-  }), h = (0, Z.Z)({
+  }), _ = (0, y.Z)({
     user: t,
     context: g
   }), P = (0, b.Z)({
     user: t,
     appContext: g
-  }), A = (0, p.Z)(t.id, c), I = (0, j.Z)(t.id), M = (0, v.Z)(t.id, n), C = (0, m.Z)({
+  }), A = (0, p.Z)(t.id, c), I = (0, j.Z)(t.id), C = (0, m.Z)(t.id, n), M = (0, v.Z)({
     user: t
   }), x = (0, u.Z)(null, t), D = (0, f.Z)({
     user: t,
     appContext: g
-  }), N = (0, O.Z)({
+  }), w = (0, O.Z)({
     user: t,
     appContext: g
-  }), T = (0, E.Z)({
+  }), N = (0, Z.Z)({
     user: t,
     appContext: g
-  }), w = (0, s.Z)({
+  }), T = (0, s.Z)({
     id: t.id,
-    label: _.intl.string(_.t["/AXYnE"])
-  }), U = (0, d.Z)(t), k = t.isNonUserBot();
+    label: h.intl.string(h.t["/AXYnE"])
+  }), k = (0, d.Z)(t), U = t.isNonUserBot();
   return (0, l.jsxs)(r.v2r, {
     navId: "user-context",
     onClose: i.Zy,
-    "aria-label": _.intl.string(_.t.liqwPJ),
+    "aria-label": h.intl.string(h.t.liqwPJ),
     onSelect: o,
-    children: [!k && (0, l.jsxs)(l.Fragment, {
+    children: [!U && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(r.kSQ, {
-        children: U
+        children: k
       }), (0, l.jsxs)(r.kSQ, {
-        children: [S, h, P, A]
+        children: [S, _, P, A]
       }), (0, l.jsx)(r.kSQ, {
         children: I
       }), (0, l.jsx)(r.kSQ, {
         children: x
       }), (0, l.jsxs)(r.kSQ, {
-        children: [M, C, D, T, N]
+        children: [C, M, D, N, w]
       })]
     }), (0, l.jsx)(r.kSQ, {
-      children: w
+      children: T
     })]
   })
 }
-let M = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let C = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   var {
     guildId: t,
     channelId: n
@@ -193,10 +193,10 @@ let M = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     }
     return r
   }(e, ["guildId", "channelId"]);
-  return null != t && null != n ? (0, l.jsx)(A, P(h({}, r), {
+  return null != t && null != n ? (0, l.jsx)(A, P(_({}, r), {
     guildId: t,
     channelId: n
-  })) : (0, l.jsx)(I, P(h({}, r), {
+  })) : (0, l.jsx)(I, P(_({}, r), {
     guildId: t,
     channelId: n
   }))

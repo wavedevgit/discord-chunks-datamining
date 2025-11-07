@@ -1,43 +1,43 @@
-/** Chunk was on 29446 **/
-/** chunk id: 24124, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 84983 **/
+/** chunk id: 24124, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
   GG: () => a,
-  R2: () => s,
-  h7: () => l,
-  rh: () => r
+  R2: () => r,
+  h7: () => i,
+  rh: () => s
 });
 var Chunk570140 = require("./570140.js");
 
-function l(e, t, n) {
-  return new Promise(l => {
+function i(e, t, l) {
+  return new Promise(i => {
     setTimeout(() => {
-      i.Z.dispatch({
+      n.Z.dispatch({
         type: "ACTIVITY_INVITE_MODAL_OPEN",
         activity: e,
         isPrivate: t,
-        context: n,
-        resolve: l
+        context: l,
+        resolve: i
       })
     }, 0)
   })
 }
 
-function r(e) {
-  i.Z.dispatch({
+function s(e) {
+  n.Z.dispatch({
     type: "ACTIVITY_INVITE_MODAL_QUERY",
     query: e
   })
 }
 
 function a(e) {
-  i.Z.dispatch({
+  n.Z.dispatch({
     type: "ACTIVITY_INVITE_MODAL_SEND",
     channelId: e
   })
 }
 
-function s(e) {
-  i.Z.dispatch({
+function r(e) {
+  n.Z.dispatch({
     type: "ACTIVITY_INVITE_MODAL_SEND",
     userId: e
   })

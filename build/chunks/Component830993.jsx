@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 830993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -51,12 +51,12 @@ function P(e) {
   }, [o, g]);
   (0, c.$)(v, "VoiceChannelActivities");
   let j = (0, u.ZP)(o),
-    C = Array.from((0, u.uF)(j).values()),
+    x = Array.from((0, u.uF)(j).values()),
     I = null != (t = null == g ? true : g.filter(_.lm)) ? t : [],
     P = (0, a.e7)([m.Z], () => {
       let e = {};
       return I.forEach(t => {
-        let n = m.Z.findActivity(t.user.id, e => [E.IIU.PLAYING, E.IIU.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) && (null == e.session_id || e.session_id === t.voiceState.sessionId) || e.type === E.IIU.LISTENING);
+        let n = m.Z.findActivity(t.user.id, e => [C.IIU.PLAYING, C.IIU.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) && (null == e.session_id || e.session_id === t.voiceState.sessionId) || e.type === C.IIU.LISTENING);
         if (null != n && !(0, p.Z)(n)) {
           var r, i, l, o;
           let a = "".concat(null != (i = n.application_id) ? i : "", ":").concat(null != (l = null == (r = n.party) ? true : r.id) ? l : t.user.id),
@@ -64,11 +64,11 @@ function P(e) {
               members: [],
               activity: n
             };
-          s.members.push(t), (0, d.Z)(s.activity, E.xjy.JOIN) || (s.activity = n), e[a] = s
+          s.members.push(t), (0, d.Z)(s.activity, C.xjy.JOIN) || (s.activity = n), e[a] = s
         }
       }), Object.values(e)
     }, [I], a.pF);
-  return P.length + C.length === 0 ? null : (0, r.jsxs)(s.Ttm, {
+  return P.length + x.length === 0 ? null : (0, r.jsxs)(s.Ttm, {
     className: S.container,
     children: [(0, r.jsx)(N, {
       channel: o,
@@ -76,7 +76,7 @@ function P(e) {
       voiceStatesCount: null != (l = null == g ? true : g.length) ? l : 0
     }), (0, r.jsx)("div", {
       className: S.headerDivider
-    }), C.map((e, t) => {
+    }), x.map((e, t) => {
       var n;
       return (0, r.jsx)(O.Z, {
         embeddedApp: e,
@@ -103,7 +103,7 @@ function P(e) {
         children: (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           tag: "span",
-          children: x.intl.format(x.t.ePyoY2, {
+          children: E.intl.format(E.t.ePyoY2, {
             onClick: () => {
               (0, s.ZDy)(async () => {
                 let {
@@ -155,7 +155,7 @@ function N(e) {
     channel: t,
     isChannelSelected: n,
     voiceStatesCount: i
-  } = e, l = (0, a.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, y.ZP)({
+  } = e, l = (0, a.e7)([g.Z], () => !g.Z.can(C.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, y.ZP)({
     channel: t,
     locked: l,
     video: s,
@@ -169,7 +169,7 @@ function N(e) {
       userCount: i,
       video: s,
       channel: t
-    }) : (0, r.jsx)(C.Z, {
+    }) : (0, r.jsx)(x.Z, {
       userCount: i
     })]
   })

@@ -1,7 +1,7 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 951211, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f,
+  Z: () => h,
   r: () => p
 }), require("./539854.js");
 var i, Chunk481060 = require("./481060.js"),
@@ -14,21 +14,21 @@ var i, Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   p = ((i = {}).UPLOAD_A_FILE = "UPLOAD_A_FILE", i.UPLOAD_TEXT_AS_FILE = "UPLOAD_TEXT_AS_FILE", i.INVITE_TO_PLAY_GAME = "INVITE_TO_GAME", i.INVITE_TO_LISTEN = "INVITE_TO_LISTEN", i.INVITE_TO_WATCH = "INVITE_TO_WATCH", i.CREATE_THREAD = "CREATE_THREAD", i.SLASH_COMMAND = "SLASH_COMMAND", i.CLIPS = "CLIPS", i.POLL = "POLL", i.ACTIVITY = "ACTIVITY", i.SCHEDULED_MESSAGE = "SCHEDULED_MESSAGE", i.SUMMARIZE_THREAD = "SUMMARIZE_THREAD", i);
 
-function f(e) {
+function h(e) {
   let {
     canAttachFiles: t,
     canStartThreads: n,
     useSlate: i,
     canUseApplicationCommands: p,
-    hasClips: f,
-    channel: h,
+    hasClips: h,
+    channel: f,
     activities: m,
     newClipsCount: g,
     canPostPolls: b,
     canLaunchActivities: y,
     appContext: C,
-    canSendScheduledMessages: _,
-    canSummarizeThreads: v
+    canSendScheduledMessages: v,
+    canSummarizeThreads: _
   } = e, x = [];
   return t && (x.push({
     type: "UPLOAD_A_FILE",
@@ -38,7 +38,7 @@ function f(e) {
     type: "UPLOAD_TEXT_AS_FILE",
     icon: r.xD0,
     display: d.intl.string(d.t["G9s+EM"])
-  })), f && t && C !== u.IlC.POPOUT && x.push({
+  })), h && t && C !== u.IlC.POPOUT && x.push({
     type: "CLIPS",
     icon: r.AlX,
     display: d.intl.string(d.t.o034cv),
@@ -65,7 +65,7 @@ function f(e) {
       type: "INVITE_TO_GAME",
       icon: r.xoD,
       display: d.intl.formatToPlainString(d.t["KHLo+F"], {
-        channel: (0, a.F6)(h, c.default, s.Z, true),
+        channel: (0, a.F6)(f, c.default, s.Z, true),
         game: null != e ? e.name : ""
       }),
       activity: e
@@ -73,7 +73,7 @@ function f(e) {
       type: "INVITE_TO_LISTEN",
       icon: r.iOO,
       display: d.intl.formatToPlainString(d.t.I479px, {
-        channel: (0, a.F6)(h, c.default, s.Z, true),
+        channel: (0, a.F6)(f, c.default, s.Z, true),
         name: null != e ? e.name : ""
       }),
       activity: e
@@ -81,16 +81,16 @@ function f(e) {
       type: "INVITE_TO_WATCH",
       icon: r.tEF,
       display: d.intl.formatToPlainString(d.t["EvCP/g"], {
-        channel: (0, a.F6)(h, c.default, s.Z, true),
+        channel: (0, a.F6)(f, c.default, s.Z, true),
         name: null != e ? e.name : ""
       }),
       activity: e
     }))
-  }), _ && x.push({
+  }), v && x.push({
     type: "SCHEDULED_MESSAGE",
     icon: r.T39,
     display: d.intl.string(d.t["3+ii4F"])
-  }), h.isThread() && v && x.push({
+  }), f.isThread() && _ && x.push({
     type: "SUMMARIZE_THREAD",
     icon: r.$2U,
     display: d.intl.string(d.t.EXfguE)

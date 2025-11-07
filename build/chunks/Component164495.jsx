@@ -1,4 +1,4 @@
-/** Chunk was on 10150 **/
+/** Chunk was on 50433 **/
 /** chunk id: 164495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y: () => B
@@ -87,7 +87,7 @@ let T = e => {
     } = e, s = (0, u.aM)(), a = (() => {
       var e;
       let n = null == (e = t.config.ctaConfig) ? true : e.buttonLabel;
-      return null != n ? n : (0, p.pO)(t) || t.config.features.includes(b.S7.NON_GAMING_PLAY_QUEST) ? C.intl.string(C.t.hvVgAZ) : C.intl.string(C.t.lwQdjB)
+      return null != n ? n : (0, p.pO)(t) || t.config.features.includes(j.S7.NON_GAMING_PLAY_QUEST) ? C.intl.string(C.t.hvVgAZ) : C.intl.string(C.t.lwQdjB)
     })();
     return (0, r.jsx)(o.zxk, {
       size: "sm",
@@ -171,7 +171,7 @@ let T = e => {
         isExpanded: h,
         className: x,
         ctaLabel: _,
-        onClick: b,
+        onClick: j,
         questContent: S = g.jn.QUEST_BAR_V2,
         sourceQuestContent: T
       } = e,
@@ -191,19 +191,19 @@ let T = e => {
         return s
       }(e, ["quest", "useReducedMotion", "isExpanded", "className", "ctaLabel", "onClick", "questContent", "sourceQuestContent"]);
     let P = (null == (t = u.userStatus) ? true : t.completedAt) != null,
-      N = (0, j.hf)({
+      N = (0, b.hf)({
         quest: u,
         questContent: S,
         sourceQuestContent: T
       }),
       A = s.useCallback(e => {
         var t;
-        null == b || b(e), (0, p.xN)(u.config) && (null == (t = u.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
+        null == j || j(e), (0, p.xN)(u.config) && (null == (t = u.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
           tab: v.AW.ORBS,
           analyticsLocations: [],
           analyticsSource: l.Z.QUEST_HOME_PAGE
         }) : N()
-      }, [b, u.config, null == (n = u.userStatus) ? true : n.claimedAt, N]),
+      }, [j, u.config, null == (n = u.userStatus) ? true : n.claimedAt, N]),
       {
         shouldUseShinyButton: R
       } = f.Z.useConfig({
@@ -242,34 +242,34 @@ let T = e => {
       popoutTargetElementRef: m,
       onGameSheetOpened: f,
       onGameSheetClosed: h
-    } = e, x = (null == (t = n.userStatus) ? true : t.completedAt) != null, j = (0, p.q8)(n), _ = d !== g.LI.SELECT && !l && !c, b = null;
-    return x ? b = (0, r.jsx)(A, {
+    } = e, x = (null == (t = n.userStatus) ? true : t.completedAt) != null, b = (0, p.q8)(n), _ = d !== g.LI.SELECT && !l && !c, j = null;
+    return x ? j = (0, r.jsx)(A, {
       quest: n,
       sourceQuestContent: s,
       useReducedMotion: o,
       isExpanded: a
-    }) : j ? b = (0, r.jsx)(S, {
+    }) : b ? j = (0, r.jsx)(S, {
       quest: n,
       sourceQuestContent: s,
       taskDetails: u
-    }) : (0, p.Rt)(n) ? b = (0, r.jsx)(P, {
+    }) : (0, p.Rt)(n) ? j = (0, r.jsx)(P, {
       quest: n
-    }) : d === g.LI.CONSOLE && i ? b = (0, r.jsx)(w, {
+    }) : d === g.LI.CONSOLE && i ? j = (0, r.jsx)(w, {
       quest: n,
       sourceQuestContent: s
-    }) : _ && (0, p.Pb)(n) ? b = (0, r.jsx)(N, {
+    }) : _ && (0, p.Pb)(n) ? j = (0, r.jsx)(N, {
       quest: n,
       sourceQuestContent: s,
       taskDetails: u,
       popoutTargetElementRef: m,
       onGameSheetOpened: f,
       onGameSheetClosed: h
-    }) : _ && (b = (0, r.jsx)(T, {
+    }) : _ && (j = (0, r.jsx)(T, {
       quest: n,
       sourceQuestContent: s
-    })), null == b ? null : (0, r.jsx)("div", {
+    })), null == j ? null : (0, r.jsx)("div", {
       className: y.cta,
-      children: b
+      children: j
     })
   };
 

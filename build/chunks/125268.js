@@ -1,16 +1,16 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 46931 **/
 /** chunk id: 125268, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  AX: () => c,
+  AX: () => s,
   BR: () => d,
   Bo: () => g,
-  Df: () => p,
-  LT: () => b,
-  ZZ: () => f,
+  Df: () => f,
+  LT: () => v,
+  ZZ: () => p,
   cV: () => u,
-  fW: () => m,
-  gr: () => h,
-  oW: () => s
+  fW: () => _,
+  gr: () => m,
+  oW: () => c
 });
 var Chunk261470 = require("./261470.js"),
   Chunk544891 = require("./544891.js"),
@@ -18,40 +18,40 @@ var Chunk261470 = require("./261470.js"),
   Chunk984063 = require("./984063.js"),
   Chunk981631 = require("./981631.js");
 
-function s(e, t, n, i, r) {
+function c(e, t, n, r, i) {
   l.Z.dispatch({
     type: "SHARED_CANVAS_DRAW_LINE_POINT",
     channelId: e,
     userId: n,
     lineId: t,
-    streamerId: i,
-    point: r
+    streamerId: r,
+    point: i
   })
 }
 
-function c(e, t, n, i) {
-  return r.tn.post({
+function s(e, t, n, r) {
+  return i.tn.post({
     url: o.ANM.SHARED_CANVAS_LINES(e, n),
     body: {
       line_id: t,
-      points: i
+      points: r
     },
     rejectWithError: false
   })
 }
 
-function u(e, t, n, i) {
+function u(e, t, n, r) {
   l.Z.dispatch({
     type: "SHARED_CANVAS_UPDATE_LINE_POINTS",
     userId: t,
     lineId: e,
-    newPoints: i,
+    newPoints: r,
     streamerId: n
   })
 }
 
 function d(e, t, n) {
-  return r.tn.post({
+  return i.tn.post({
     url: o.ANM.SHARED_CANVAS_EMOJI_HOSES(e, t),
     body: {
       emoji_hose: n
@@ -60,15 +60,15 @@ function d(e, t, n) {
   })
 }
 
-function p(e, t, n) {
-  r.tn.del({
+function f(e, t, n) {
+  i.tn.del({
     url: o.ANM.SHARED_CANVAS_EMOJI_HOSE(e, t, n),
-    backoff: new i.Z,
+    backoff: new r.Z,
     rejectWithError: true
   })
 }
 
-function f(e, t) {
+function p(e, t) {
   t.state = a.f.STOP, l.Z.dispatch({
     type: "SHARED_CANVAS_UPDATE_EMOJI_HOSE",
     emojiHose: t,
@@ -77,7 +77,7 @@ function f(e, t) {
   })
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   l.Z.dispatch({
     type: "SHARED_CANVAS_UPDATE_EMOJI_HOSE",
     emojiHose: e,
@@ -86,7 +86,7 @@ function h(e, t, n) {
   })
 }
 
-function m(e, t) {
+function _(e, t) {
   l.Z.dispatch({
     type: "SHARED_CANVAS_CLEAR_DRAWABLES",
     drawables: e,
@@ -101,7 +101,7 @@ function g(e) {
   })
 }
 
-function b() {
+function v() {
   Chunk570140.Z.dispatch({
     type: "TOGGLE_OVERLAY_CANVAS"
   })

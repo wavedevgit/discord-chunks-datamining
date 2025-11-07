@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 753898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -29,7 +29,7 @@ function x(e) {
     channel: n,
     children: x,
     user: O
-  } = e, E = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), j = null != (t = (0, d.ZP)(n)) ? t : "", {
+  } = e, j = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), E = null != (t = (0, d.ZP)(n)) ? t : "", {
     avatarDecorationSrc: S,
     eventHandlers: P,
     isAnimating: I
@@ -47,44 +47,44 @@ function x(e) {
     onMouseEnter: N,
     onMouseLeave: A,
     children: [(() => {
-      let e = !E && I;
+      let e = !j && I;
       return n.isMultiUserDM() ? (0, i.jsx)(m.v, {
         channel: n,
         editable: true,
         location: c.Z.EMPTY_GROUP_DM,
-        children: (0, i.jsx)(h.Z, {
+        children: (0, i.jsx)(f.Z, {
           channel: n,
           size: o.EFr.SIZE_80,
           experimentLocation: "empty_messages",
           animated: e,
-          "aria-label": j
+          "aria-label": E
         })
       }) : (0, i.jsx)(o.qEK, {
-        "aria-label": j,
+        "aria-label": E,
         size: o.EFr.SIZE_80,
         src: (0, u.x)(n, 80, e),
         avatarDecoration: S
       })
     })(), (0, i.jsx)(C.Ot, {
-      children: w ? (0, i.jsx)(f.Z, {
-        userName: j,
+      children: w ? (0, i.jsx)(h.Z, {
+        userName: E,
         displayNameStyles: null == O ? true : O.displayNameStyles,
         effectDisplayType: Z ? p.F.ANIMATED : p.F.STATIC,
         loop: true
-      }) : j
+      }) : E
     }), (0, i.jsx)(C.jz, {
       children: x
     }), n.isMultiUserDM() && (0, i.jsxs)(a.hE2, {
-      className: v.buttonContainer,
+      className: _.buttonContainer,
       children: [(0, i.jsx)(b.l, {
         channel: n,
-        text: _.intl.string(_.t["6Qgrev"]),
+        text: v.intl.string(v.t["6Qgrev"]),
         icon: o.ejJ
       }), (0, i.jsx)(a.zxk, {
         icon: o.vdY,
         variant: "secondary",
-        text: _.intl.string(_.t["5Q9+/L"]),
-        "aria-label": _.intl.string(_.t["5Q9+/L"]),
+        text: v.intl.string(v.t["5Q9+/L"]),
+        "aria-label": v.intl.string(v.t["5Q9+/L"]),
         onClick: () => (0, g.B)(n.id, c.Z.EMPTY_GROUP_DM)
       })]
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 698877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => s
@@ -17,8 +17,8 @@ function s(e) {
     isSelfStream: u,
     centerButton: d,
     onMouseEnter: p,
-    onMouseLeave: f,
-    renderNUXHighlight: h,
+    onMouseLeave: h,
+    renderNUXHighlight: f,
     buttonRef: m
   } = e, g = function(e, t) {
     if (null == e) return {};
@@ -40,9 +40,9 @@ function s(e) {
   let {
     Component: y,
     events: C,
-    play: _
+    play: v
   } = (0, l.P)(c ? "disable" : "enable");
-  return r.useEffect(() => () => _(), [c, _]), (0, i.jsx)(b, function(e) {
+  return r.useEffect(() => () => v(), [c, v]), (0, i.jsx)(b, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -66,12 +66,12 @@ function s(e) {
     disabled: !s,
     iconComponent: y,
     isActive: c,
-    color: (h ? n = "premiumGradient" : c && (n = "green"), n),
+    color: (f ? n = "premiumGradient" : c && (n = "green"), n),
     onMouseEnter: e => {
       null == p || p(e), C.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == f || f(e), C.onMouseLeave()
+      null == h || h(e), C.onMouseLeave()
     }
   }, g))
 }

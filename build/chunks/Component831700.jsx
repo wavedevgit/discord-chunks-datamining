@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ei
@@ -183,9 +183,9 @@ class en extends Chunk98597.ZP {
       canMoveMembers: _,
       showTutorial: v,
       hasActiveEvent: j,
-      embeddedApps: C,
-      isSubscriptionGated: E,
-      isFavoriteSuggestion: x,
+      embeddedApps: x,
+      isSubscriptionGated: C,
+      isFavoriteSuggestion: E,
       withGuildIcon: S,
       hasStartTime: I
     } = this.props, {
@@ -324,7 +324,7 @@ class en extends Chunk98597.ZP {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
-      null != t && (0, S.n)(t) && (0, x.hk)(t), this.handleVoiceConnect()
+      null != t && (0, S.n)(t) && (0, E.hk)(t), this.handleVoiceConnect()
     }), $(this, "handleVoiceStatusClick", e => {
       let {
         connected: t,
@@ -423,9 +423,9 @@ function ei(e) {
     guildId: t.id,
     location: "VoiceChannel"
   }), j = (0, a.e7)([_.Z], () => !!O && null != _.Z.getStartTime(n), [n, O]), {
-    isSubscriptionGated: C,
-    needSubscriptionToAccess: x
-  } = (0, I.Z)(n.id), S = (0, E.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == S ? true : S.channelId) === n.id, {
+    isSubscriptionGated: x,
+    needSubscriptionToAccess: E
+  } = (0, I.Z)(n.id), S = (0, C.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == S ? true : S.channelId) === n.id, {
     enableHangStatus: A,
     showEmptyChannelTopic: R
   } = (0, Z.bN)({
@@ -443,8 +443,8 @@ function ei(e) {
     isChannelSelected: o,
     isChannelCollapsed: s,
     voiceStates: c,
-    isSubscriptionGated: C,
-    needSubscriptionToAccess: x,
+    isSubscriptionGated: x,
+    needSubscriptionToAccess: E,
     enableConnectedUserLimit: true,
     enableActivities: true
   }), V = T && null == F;
@@ -454,8 +454,8 @@ function ei(e) {
     embeddedActivityType: q.IIU.PLAYING,
     video: h,
     hasActiveEvent: null != y,
-    isSubscriptionGated: C,
-    needSubscriptionToAccess: x
+    isSubscriptionGated: x,
+    needSubscriptionToAccess: E
   }, u, p, e), {
     connected: T,
     isFavoriteSuggestion: l && !N,

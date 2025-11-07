@@ -80,7 +80,7 @@ function ei(e) {
 }
 let el = "HasBeenInStageChannel",
   ea = e => {
-    (0, j.v)(f.Z.VOICE_CONTROL_TRAY, j.d.STAY_ON_TOP, e), C.hY(ee.KJ3.CHANNEL_CALL_POPOUT, e)
+    (0, v.v)(f.Z.VOICE_CONTROL_TRAY, v.d.STAY_ON_TOP, e), C.hY(ee.KJ3.CHANNEL_CALL_POPOUT, e)
   };
 
 function es(e) {
@@ -102,7 +102,7 @@ function es(e) {
     popoutOpen: l,
     popoutWindow: a,
     currentWindow: x
-  }), v = n === ee.IlC.POPOUT && U.isPlatformEmbedded && G.ZP.supportsFeature(ee.eRX.POPOUT_WINDOWS);
+  }), j = n === ee.IlC.POPOUT && U.isPlatformEmbedded && G.ZP.supportsFeature(ee.eRX.POPOUT_WINDOWS);
   return (0, r.jsxs)(r.Fragment, {
     children: [y ? (0, r.jsx)(w.Z, {
       context: (0, b.Z)(c.type),
@@ -110,19 +110,19 @@ function es(e) {
       currentWindow: x,
       sliderClassName: er.volumeSlider,
       location: d
-    }) : null, v ? (0, r.jsx)(R.Z, {
+    }) : null, j ? (0, r.jsx)(R.Z, {
       popoutWindowAlwaysOnTop: s,
       onToggleStayOnTop: ea
     }) : null, _ ? (0, r.jsx)(N.Z, {
       popoutOpen: l,
       onOpenPopout: () => {
-        (0, j.v)(d, j.d.POPOUT, true), (() => {
+        (0, v.v)(d, v.d.POPOUT, true), (() => {
           let e = t.getGuildId();
           null != e && null != h && (0, S.XU)(e, h), C.hP(t)
         })()
       },
       onClosePopout: () => {
-        (0, j.v)(d, j.d.POPOUT, false), u.Z.wait(() => C.xv(ee.KJ3.CHANNEL_CALL_POPOUT))
+        (0, v.v)(d, v.d.POPOUT, false), u.Z.wait(() => C.xv(ee.KJ3.CHANNEL_CALL_POPOUT))
       }
     }) : null, O]
   })
@@ -131,7 +131,7 @@ function es(e) {
 function eo(e) {
   let {
     channel: t
-  } = e, n = (0, v.bp)(), i = (0, o.e7)([M.Z], () => M.Z.can(ee.Plq.CREATE_INSTANT_INVITE, t)), l = (0, o.e7)([L.Z], () => L.Z.getGuild(t.guild_id)), a = (0, o.e7)([V.Z], () => V.Z.getStageInstanceByChannel(t.id)), s = i || (null == a ? true : a.invite_code) != null;
+  } = e, n = (0, j.bp)(), i = (0, o.e7)([M.Z], () => M.Z.can(ee.Plq.CREATE_INSTANT_INVITE, t)), l = (0, o.e7)([L.Z], () => L.Z.getGuild(t.guild_id)), a = (0, o.e7)([V.Z], () => V.Z.getStageInstanceByChannel(t.id)), s = i || (null == a ? true : a.invite_code) != null;
   return null != l && s ? (0, r.jsx)(E.Z, {
     size: "md",
     channel: t,
@@ -154,9 +154,9 @@ function ec(e) {
       idleProps: O
     } = e,
     {
-      analyticsLocations: j
+      analyticsLocations: v
     } = (0, g.ZP)(f.Z.VOICE_CONTROL_TRAY),
-    C = (0, v.bp)(),
+    C = (0, j.bp)(),
     I = (0, o.e7)([k.Z], () => k.Z.getVoiceChannelId() === c.id, [c.id]),
     S = (0, o.e7)([M.Z], () => M.Z.can(ee.Plq.CONNECT, c)),
     E = (0, F.w8)(c.id, B.pV.SPEAKER),
@@ -197,14 +197,14 @@ function ec(e) {
     },
     disableGradients: !I || 0 === R && T.e.TOP,
     renderBottomCenter: () => I ? (0, r.jsx)(g.Gt, {
-      value: j,
+      value: v,
       children: (0, r.jsx)(Q.Z, {
         channel: c,
         isOnStartStageScreen: L
       })
     }) : null,
     renderBottomRight: () => I ? (0, r.jsx)(g.Gt, {
-      value: j,
+      value: v,
       children: (0, r.jsx)(es, {
         channel: c,
         appContext: C,
@@ -251,14 +251,14 @@ function ed(e) {
   } = e, [s, u] = i.useState(false), b = i.useCallback(() => {
     u(!s)
   }, [s, u]), {
-    popoutWindow: j,
+    popoutWindow: v,
     popoutWindowAlwaysOnTop: C
   } = (0, o.cj)([I.Z], () => ({
     popoutWindow: I.Z.getWindow(ee.KJ3.CHANNEL_CALL_POPOUT),
     popoutWindowAlwaysOnTop: I.Z.getIsAlwaysOnTop(ee.KJ3.CHANNEL_CALL_POPOUT)
-  })), S = null != j && !j.closed, {
+  })), S = null != v && !v.closed, {
     analyticsLocations: E
-  } = (0, g.ZP)(f.Z.STAGE_CHANNEL_CALL), P = (0, v.bp)(), {
+  } = (0, g.ZP)(f.Z.STAGE_CHANNEL_CALL), P = (0, j.bp)(), {
     chatOpen: T,
     participantsListOpen: N
   } = (0, o.cj)([m.Z], () => ({
@@ -300,7 +300,7 @@ function ed(e) {
                 channel: t,
                 toggleRequestToSpeakSidebar: b,
                 showRequestToSpeakSidebar: s,
-                popoutWindow: j,
+                popoutWindow: v,
                 popoutWindowAlwaysOnTop: C,
                 popoutOpen: S,
                 popoutType: l,

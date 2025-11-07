@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 292853, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk245995 = require("./245995.js");
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -53,15 +53,15 @@ function g(e) {
     narrow: n
   } = e;
   return r.useEffect(() => {
-    c.default.track(d.rMx.CHANNEL_BANNER_VIEWED, m(h({}, (0, s.hH)(t.getGuildId()), (0, s.v_)(t)), {
+    c.default.track(d.rMx.CHANNEL_BANNER_VIEWED, m(f({}, (0, s.hH)(t.getGuildId()), (0, s.v_)(t)), {
       banner_type: "channel_opt_in"
     }))
   }, [t]), (0, i.jsxs)("div", {
-    className: a()(f.chatHeaderBar, {
-      [f.narrow]: n
+    className: a()(h.chatHeaderBar, {
+      [h.narrow]: n
     }),
     children: [(0, i.jsx)(o.Text, {
-      className: f.chatHeaderBarText,
+      className: h.chatHeaderBarText,
       variant: "text-sm/normal",
       color: "text-default",
       children: p.intl.string(p.t.iOWmmB)
@@ -69,7 +69,7 @@ function g(e) {
       size: "sm",
       variant: "primary",
       onClick: () => {
-        c.default.track(d.rMx.CHANNEL_BANNER_CTA_CLICKED, m(h({}, (0, s.hH)(t.getGuildId()), (0, s.v_)(t)), {
+        c.default.track(d.rMx.CHANNEL_BANNER_CTA_CLICKED, m(f({}, (0, s.hH)(t.getGuildId()), (0, s.v_)(t)), {
           banner_type: "channel_opt_in",
           cta_type: "add channel"
         })), (0, u.XQ)(t.guild_id, t.id, true, {

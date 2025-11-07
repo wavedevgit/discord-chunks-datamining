@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 459502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -23,9 +23,9 @@ function g(e) {
     channelId: t
   } = e, g = (0, r.e7)([s.Z], () => s.Z.getChannel(t), [t]), b = (0, d.sz)(t), y = null != (0, d.qY)(t), {
     canManageGuildEvent: C
-  } = (0, o.XJ)(g), _ = (0, r.cj)([u.ZP], () => b.reduce((e, t) => (e[t.id] = u.ZP.getUserCount(t.id, (0, p.DK)(t)), e), {}));
+  } = (0, o.XJ)(g), v = (0, r.cj)([u.ZP], () => b.reduce((e, t) => (e[t.id] = u.ZP.getUserCount(t.id, (0, p.DK)(t)), e), {}));
   return b.length < 1 || y ? null : (0, i.jsx)(i.Fragment, {
-    children: b.map(e => (0, i.jsx)(f.Z, {
+    children: b.map(e => (0, i.jsx)(h.Z, {
       icon: (0, i.jsx)(a.Que, {
         size: "custom",
         color: "currentColor",
@@ -33,10 +33,10 @@ function g(e) {
         width: 20
       }),
       color: l.Z.unsafe_rawColors.GREEN_360.css,
-      title: h.intl.formatToPlainString(C(e) ? h.t["1vGXqM"] : h.t.xMJyla, {
+      title: f.intl.formatToPlainString(C(e) ? f.t["1vGXqM"] : f.t.xMJyla, {
         eventName: e.name
       }),
-      description: h.intl.formatToPlainString(h.t.PTebCR, {
+      description: f.intl.formatToPlainString(f.t.PTebCR, {
         startTime: (0, p.ub)(e.scheduled_start_time).startDateTimeString
       }),
       onClick: () => {
@@ -80,7 +80,7 @@ function g(e) {
           eventId: e.id
         })
       },
-      userCount: _[e.id],
+      userCount: v[e.id],
       className: m.eventPrompt
     }, e.id))
   })

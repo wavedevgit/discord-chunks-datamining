@@ -1,15 +1,15 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 46931 **/
 /** chunk id: 88315, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P7: () => h,
-  RR: () => f,
+  P7: () => m,
+  RR: () => p,
   UN: () => u,
-  bg: () => m,
+  bg: () => _,
   hn: () => d,
-  np: () => p
+  np: () => f
 });
 var Chunk979590 = require("./979590.js"),
-  r = require.n(Chunk979590),
+  i = require.n(Chunk979590),
   Chunk866442 = require("./866442.js"),
   Chunk220082 = require("./220082.js"),
   Chunk594174 = require("./594174.js"),
@@ -25,45 +25,45 @@ function u(e) {
 function d(e, t) {
   let {
     width: n,
-    height: i,
-    left: r,
+    height: r,
+    left: i,
     top: l
   } = e.getBoundingClientRect();
   return {
-    x: (t.clientX - r) / n,
-    y: (t.clientY - l) / i
+    x: (t.clientX - i) / n,
+    y: (t.clientY - l) / r
   }
 }
 
-function p(e, t) {
+function f(e, t) {
   return Math.round(e * t * window.devicePixelRatio)
 }
 
-function f(e, t, n) {
+function p(e, t, n) {
   return {
-    x: p(e.x, t),
-    y: p(e.y, n),
+    x: f(e.x, t),
+    y: f(e.y, n),
     deltaTime: e.deltaTime
   }
 }
 
-function h(e) {
-  return e.type === s.W.LINE
+function m(e) {
+  return e.type === c.W.LINE
 }
 
-function m(e, t, n, i) {
-  var s;
+function _(e, t, n, r) {
+  var c;
   let u = o.default.getUser(e),
-    d = null == u ? true : u.getAvatarURL(null, c.Ks),
-    p = null != d ? null == (s = a.SR.getState().palette[d]) ? true : s[0] : null,
-    f = null != p ? "#".concat(r()({
-      r: p[0],
-      g: p[1],
-      b: p[2]
-    }).toHex()) : i,
-    h = (0, l.Bd)((0, l._i)(f)) > .5 ? n : t;
+    d = null == u ? true : u.getAvatarURL(null, s.Ks),
+    f = null != d ? null == (c = a.SR.getState().palette[d]) ? true : c[0] : null,
+    p = null != f ? "#".concat(i()({
+      r: f[0],
+      g: f[1],
+      b: f[2]
+    }).toHex()) : r,
+    m = (0, l.Bd)((0, l._i)(p)) > .5 ? n : t;
   return {
-    fillColor: f,
-    outlineColor: h
+    fillColor: p,
+    outlineColor: m
   }
 }

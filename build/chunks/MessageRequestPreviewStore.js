@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 748902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -21,13 +21,13 @@ function u(e, t, n) {
 let d = {},
   p = new Set;
 
-function f(e) {
+function h(e) {
   return s.Z.isMessageRequest(e) || c.Z.isSpam(e)
 }
 
-function h(e, t) {
+function f(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  if (!f(e) || null != t && e !== (null == t ? true : t.channel_id)) return;
+  if (!h(e) || null != t && e !== (null == t ? true : t.channel_id)) return;
   let i = null == t ? null : (0, a.e5)(t);
   d[e] = {
     loaded: true,
@@ -59,13 +59,13 @@ let g = new m(Chunk570140.Z, {
     let {
       channel: t
     } = e;
-    f(t.id) && p.add(t.id)
+    h(t.id) && p.add(t.id)
   },
   CHANNEL_UPDATES: function(e) {
     let {
       channels: t
     } = e;
-    for (let e of t) f(e.id) || (p.delete(e.id), delete d[e.id])
+    for (let e of t) h(e.id) || (p.delete(e.id), delete d[e.id])
   },
   CHANNEL_DELETE: function(e) {
     let {
@@ -75,7 +75,7 @@ let g = new m(Chunk570140.Z, {
   },
   MESSAGE_CREATE: function(e) {
     if (e.isPushNotification) returnfalse;
-    h(e.message.channel_id, e.message)
+    f(e.message.channel_id, e.message)
   },
   MESSAGE_UPDATE: function(e) {
     var t, n;
@@ -108,7 +108,7 @@ let g = new m(Chunk570140.Z, {
     }), t)
   },
   MESSAGE_DELETE: function(e) {
-    if (!f(e.channelId)) returnfalse;
+    if (!h(e.channelId)) returnfalse;
     d[e.channelId] = {
       loaded: true,
       error: false,
@@ -121,15 +121,15 @@ let g = new m(Chunk570140.Z, {
       supplementalData: n
     } = e, i = new Set([...t]);
     for (let e of (n.forEach(e => {
-        h(e.channel_id, e.message_preview), i.delete(e.channel_id)
-      }), Array.from(i))) h(e, null)
+        f(e.channel_id, e.message_preview), i.delete(e.channel_id)
+      }), Array.from(i))) f(e, null)
   },
   LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_ERROR: function(e) {
     let {
       requestedChannelIds: t
     } = e;
     t.forEach(e => {
-      h(e, null, true)
+      f(e, null, true)
     })
   }
 })

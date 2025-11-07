@@ -1,14 +1,14 @@
-/** Chunk was on 76511 **/
+/** Chunk was on 20037 **/
 /** chunk id: 251794, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => a,
-  z: () => s
+  q: () => l,
+  z: () => i
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js");
 
-function i(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,40 +27,40 @@ function i(e) {
   return e
 }
 
-function s(e) {
+function i(e) {
   let {
     guildId: t,
-    userId: s,
-    anaylticsLocations: a,
-    modReportId: o
+    userId: i,
+    anaylticsLocations: l,
+    modReportId: u
   } = e;
-  (0, l.ZDy)(async () => {
+  (0, o.ZDy)(async () => {
     let {
       default: e
     } = await n.e("72920").then(n.bind(n, 109730));
-    return n => (0, r.jsx)(e, i({
+    return n => (0, r.jsx)(e, a({
       guildId: t,
-      userId: s,
-      anaylticsLocations: a,
-      modReportId: o
+      userId: i,
+      anaylticsLocations: l,
+      modReportId: u
     }, n))
   })
 }
 
-function a(e) {
+function l(e) {
   let {
     guildId: t,
-    userId: s,
-    anaylticsLocations: a
+    userId: i,
+    anaylticsLocations: l
   } = e;
-  (0, l.ZDy)(async () => {
+  (0, o.ZDy)(async () => {
     let {
       default: e
     } = await n.e("76233").then(n.bind(n, 171494));
-    return n => (0, r.jsx)(e, i({
+    return n => (0, r.jsx)(e, a({
       guildId: t,
-      userId: s,
-      anaylticsLocations: a
+      userId: i,
+      anaylticsLocations: l
     }, n))
   })
 }

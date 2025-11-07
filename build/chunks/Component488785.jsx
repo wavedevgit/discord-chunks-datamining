@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 488785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -14,17 +14,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk607070 = require("./607070.js"),
   Chunk604729 = require("./604729.js");
-let h = [Chunk604729.emoji1, Chunk604729.emoji2, Chunk604729.emoji3, Chunk604729.emoji4],
+let f = [Chunk604729.emoji1, Chunk604729.emoji2, Chunk604729.emoji3, Chunk604729.emoji4],
   m = Chunk647438.memo(function(e) {
     var t;
     let {
       emoji: n,
       onAnimationEnd: l
-    } = e, s = (0, o.sample)(h), c = r.useCallback(() => {
+    } = e, s = (0, o.sample)(f), c = r.useCallback(() => {
       l(n.key)
     }, [n.key, l]);
     return (0, i.jsx)("div", {
-      className: a()(f.emoji, s),
+      className: a()(h.emoji, s),
       onAnimationEnd: c,
       children: (0, i.jsx)(d.Z, {
         emojiId: n.id,
@@ -74,7 +74,7 @@ function g(e) {
     o(t => t.filter(t => t.key !== e))
   }, []);
   return l ? null : (0, i.jsx)("div", {
-    className: f.container,
+    className: h.container,
     style: {
       top: n - 50,
       left: "52%"

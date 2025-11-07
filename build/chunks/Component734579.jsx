@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 734579, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -24,14 +24,14 @@ let O = Chunk647438.memo(function(e) {
   let {
     guild: t,
     selected: O
-  } = e, v = i.useRef(null), j = (0, a.f9)(), C = (0, l.e7)([g.Z], () => g.Z.hasLayers()), [E, x] = (0, d.ZT)([o.z.GAME_SHOP_NEW_BADGE], t.id), S = i.useCallback(() => {
+  } = e, v = i.useRef(null), j = (0, a.f9)(), x = (0, l.e7)([g.Z], () => g.Z.hasLayers()), [C, E] = (0, d.ZT)([o.z.GAME_SHOP_NEW_BADGE], t.id), S = i.useCallback(() => {
     var e, n;
-    x(_.L.USER_DISMISS);
+    E(_.L.USER_DISMISS);
     let r = null != (n = null == (e = h.Z.getStorefrontState(t.id)) ? true : e.activePage) ? n : 0;
     (0, p.uL)(b.Z5c.CHANNELS_GAME_SHOP(t.id, r))
-  }, [t, x]), I = i.useCallback(() => {
-    x(_.L.USER_DISMISS)
-  }, [x]), P = i.useCallback(e => {
+  }, [t, E]), I = i.useCallback(() => {
+    E(_.L.USER_DISMISS)
+  }, [E]), P = i.useCallback(e => {
     null != t && (0, c.jW)(e, async () => {
       let {
         default: e
@@ -85,11 +85,11 @@ let O = Chunk647438.memo(function(e) {
       selected: O,
       onClick: S,
       onContextMenu: P,
-      trailing: E === o.z.GAME_SHOP_NEW_BADGE ? (0, r.jsx)(s.IGR, {
+      trailing: C === o.z.GAME_SHOP_NEW_BADGE ? (0, r.jsx)(s.IGR, {
         text: y.intl.string(y.t.y2b7CA),
         color: u.Z.BG_BRAND
       }) : null
-    }), j || C || E !== o.z.GAME_SHOP_NEW_BADGE ? null : (0, r.jsx)(f.Z, {
+    }), j || x || C !== o.z.GAME_SHOP_NEW_BADGE ? null : (0, r.jsx)(f.Z, {
       onActionClick: S,
       onRequestClose: I,
       targetElementRef: v

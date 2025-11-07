@@ -91,7 +91,7 @@ function w(e) {
         applicationId: e.applicationId,
         channelId: A.id
       })
-    }, e.applicationId)), (0, r.jsx)(v.Z, {
+    }, e.applicationId)), (0, r.jsx)(j.Z, {
       user: t,
       className: R.card
     }), t.isProvisional && (0, r.jsx)(S.Z.Overlay, {
@@ -139,7 +139,7 @@ function w(e) {
       }), (0, r.jsx)(C.Z, {
         heading: t.bot ? N.intl.string(N.t["A//N4k"]) : N.intl.string(N.t.a6XYD9),
         headingColor: "header-primary",
-        children: (0, r.jsx)(j.Z, {
+        children: (0, r.jsx)(v.Z, {
           userId: t.id
         })
       })]

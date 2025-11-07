@@ -1,7 +1,7 @@
-/** Chunk was on 10150 **/
+/** Chunk was on 50433 **/
 /** chunk id: 415104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ function _(e) {
     className: d,
     questContent: u,
     contentPosition: _,
-    rowIndex: b,
+    rowIndex: j,
     impressionRef: v,
     sourceQuestContent: C
   } = e, [y, E] = s.useState(false), [O, S] = s.useState([]), T = (0, c.qb)(o), w = s.useMemo(() => (0, l.q8)(o), [o]), P = (0, i._F)(), N = s.useCallback(() => {
@@ -73,7 +73,7 @@ function _(e) {
     ref: e => {
       v.current = e, B.current = e
     },
-    className: a()(j.container, d),
+    className: a()(b.container, d),
     onMouseEnter: N,
     onMouseLeave: A,
     onFocus: N,
@@ -90,7 +90,7 @@ function _(e) {
       questContent: u,
       isHovering: y,
       contentPosition: _,
-      rowIndex: b,
+      rowIndex: j,
       onReceiveErrorHints: S,
       isVisibleInViewport: k,
       sourceQuestContent: C
@@ -98,7 +98,7 @@ function _(e) {
   })
 }
 
-function b(e) {
+function j(e) {
   return (0, r.jsx)(u.A, {
     questOrQuests: e.quest,
     questContent: e.questContent,

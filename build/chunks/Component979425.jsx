@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 46931 **/
 /** chunk id: 979425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -17,28 +17,28 @@ function d(e) {
   let {
     stream: t,
     isSmall: n,
-    selected: r,
+    selected: i,
     isSelfStream: d
   } = e;
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(s.Z, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(c.Z, {
       className: l()(u.absoluteFill, u.streamPreviewOpacity),
       stream: t,
       noText: true
-    }), !r && (0, i.jsxs)("div", {
+    }), !i && (0, r.jsxs)("div", {
       className: l()(u.content, u.streamUnavailable, {
         [u.small]: n
       }),
-      children: [(0, i.jsx)(o.Text, {
+      children: [(0, r.jsx)(o.Text, {
         className: u.streamUnavailableText,
         color: "always-white",
         variant: n ? "text-sm/semibold" : "text-md/semibold",
-        children: d ? c.intl.string(c.t.UeEwjy) : c.intl.string(c.t["1i3tSY"])
-      }), (0, i.jsx)(a.u, {
+        children: d ? s.intl.string(s.t.UeEwjy) : s.intl.string(s.t["1i3tSY"])
+      }), (0, r.jsx)(a.u, {
         asContainer: true,
-        text: d ? c.intl.string(c.t["ro/HN8"]) : c.intl.string(c.t.UPf6ZM),
-        children: (0, i.jsx)("div", {
-          children: (0, i.jsx)(o.o8v, {
+        text: d ? s.intl.string(s.t["ro/HN8"]) : s.intl.string(s.t.UPf6ZM),
+        children: (0, r.jsx)("div", {
+          children: (0, r.jsx)(o.o8v, {
             size: "md",
             color: "currentColor",
             className: u.stopStreamIcon,

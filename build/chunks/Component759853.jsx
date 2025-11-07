@@ -1,4 +1,4 @@
-/** Chunk was on 10150 **/
+/** Chunk was on 50433 **/
 /** chunk id: 759853, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -18,14 +18,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk675654 = require("./675654.js"),
   Chunk674386 = require("./674386.js"),
   Chunk197857 = require("./197857.js");
-let j = ["#51BC9D"],
+let b = ["#51BC9D"],
   _ = e => {
     var t;
     let {
       expansionSpring: n,
       overlayRef: o,
       quest: _,
-      progressBarRef: b,
+      progressBarRef: j,
       isExpanded: v,
       isHovered: C
     } = e, {
@@ -36,7 +36,7 @@ let j = ["#51BC9D"],
       wind: 0
     })), D = (0, i.uR)(A, B), q = s.useCallback(() => {
       if (T) return;
-      let e = b.current,
+      let e = j.current,
         t = w.current;
       if (null != t && null != e && D.isReady) {
         var n, r, s, o, a, i;
@@ -112,10 +112,10 @@ let j = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [b, w, D, T]), Q = (0, u.Z)(v);
+    }, [j, w, D, T]), L = (0, u.Z)(v);
     return (s.useEffect(() => {
-      O && v && !Q && (E(), q())
-    }, [v, O, E, q, Q]), s.useEffect(() => {
+      O && v && !L && (E(), q())
+    }, [v, O, E, q, L]), s.useEffect(() => {
       O && !P && N && setTimeout(() => {
         E(), q()
       }, 200)
@@ -152,7 +152,7 @@ let j = ["#51BC9D"],
         }), (0, r.jsx)(i.Ji, {
           ref: k,
           sprites: [x],
-          colors: j,
+          colors: b,
           spriteWidth: f.Ko,
           spriteHeight: f.Ko
         }), null != o.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {

@@ -1,9 +1,9 @@
-/** Chunk was on 29446 **/
+/** Chunk was on 40029 **/
 /** chunk id: 374386, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => l
+  G: () => i
 });
-let i = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-06_not_staff_dm_warning_opt_out",
   label: "Not-Staff DM Warning",
@@ -25,8 +25,8 @@ let i = (0, require("./818083.js").B)({
   }]
 });
 
-function l() {
-  return i.useExperiment({
+function i() {
+  return r.useExperiment({
     location: "default"
   }, {
     autoTrackExposure: false

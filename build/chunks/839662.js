@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 46931 **/
 /** chunk id: 839662, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -10,28 +10,28 @@ function l(e, t) {
   var n, l;
   let a = null,
     o = null,
-    s = null,
-    c = false,
+    c = null,
+    s = false,
     u = false,
     d = false;
   switch (e.type) {
-    case r.fO.ACTIVITY:
+    case i.fO.ACTIVITY:
       break;
-    case r.fO.USER:
-      a = e.streamId, s = e.voiceState, c = e.speaking, u = e.latched, d = e.ringing;
+    case i.fO.USER:
+      a = e.streamId, c = e.voiceState, s = e.speaking, u = e.latched, d = e.ringing;
       break;
-    case r.fO.STREAM:
+    case i.fO.STREAM:
       a = e.streamId, o = e.stream
   }
   return {
     streamId: a,
     stream: o,
-    speaking: c,
+    speaking: s,
     latched: u,
     ringing: d,
-    muted: null != (n = null == s ? true : s.isVoiceMuted()) && n,
-    deafen: null != (l = null == s ? true : s.isVoiceDeafened()) && l,
-    mirror: e.type === r.fO.USER && e.user.id === t,
-    hasVideo: (0, i.ZP)(e)
+    muted: null != (n = null == c ? true : c.isVoiceMuted()) && n,
+    deafen: null != (l = null == c ? true : c.isVoiceDeafened()) && l,
+    mirror: e.type === i.fO.USER && e.user.id === t,
+    hasVideo: (0, r.ZP)(e)
   }
 }

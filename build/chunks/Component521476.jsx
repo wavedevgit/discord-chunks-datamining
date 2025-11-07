@@ -1,7 +1,7 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 521476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => v
+  h: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -51,14 +51,14 @@ function C(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   var t, n;
   let {
     guild: r
   } = e, {
     analyticsLocations: c
-  } = (0, o.ZP)(a.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [u, d] = (0, f.ww)({
-    guildId: null != (t = null == r ? true : r.id) ? t : h.lds,
+  } = (0, o.ZP)(a.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [u, d] = (0, h.ww)({
+    guildId: null != (t = null == r ? true : r.id) ? t : f.lds,
     analyticsLocations: c
   }), p = d ? b.intl.string(b.t["9ph2v7"]) : b.intl.string(b.t.ldh9Cg), m = d ? b.intl.string(b.t["/PGQf0"]) : b.intl.string(b.t.WikgZ1);
   return (0, i.jsx)("div", {
@@ -86,7 +86,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guild: t
   } = e, n = (0, r.e7)([u.default, d.ZP], () => {
@@ -94,11 +94,11 @@ function v(e) {
     let e = u.default.getId();
     return (0, p.no)(d.ZP.getMember(t.id, e))
   }, [t]);
-  return n.has(m.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(m.q.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(_, {
+  return n.has(m.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(m.q.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(v, {
     guild: t
   }) : n.has(m.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(C, {
     guild: t
-  }) : (0, i.jsx)(_, {
+  }) : (0, i.jsx)(v, {
     guild: t
   })
 }

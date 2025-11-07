@@ -1,4 +1,4 @@
-/** Chunk was on 10150 **/
+/** Chunk was on 50433 **/
 /** chunk id: 457153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -21,29 +21,29 @@ let h = Chunk647438.forwardRef(function(e, t) {
   let {
     className: h,
     expansionSpring: x,
-    isExpanded: j,
+    isExpanded: b,
     isExpansionAnimationComplete: _,
-    quest: b,
+    quest: j,
     taskDetails: v,
     useReducedMotion: C,
     onCtxMenuOpen: y,
     onCtxMenuClose: E,
     onCtxMenuSelect: O,
     overlayRef: S
-  } = e, T = (null == (n = b.userStatus) ? true : n.completedAt) != null, w = (0, l.Jf)(b), P = s.useRef(null), N = (null == (o = b.userStatus) ? true : o.enrolledAt) != null, A = null != w ? w.percentComplete : v.percentComplete, [R, B] = s.useState(false);
+  } = e, T = (null == (n = j.userStatus) ? true : n.completedAt) != null, w = (0, l.Jf)(j), P = s.useRef(null), N = (null == (o = j.userStatus) ? true : o.enrolledAt) != null, A = null != w ? w.percentComplete : v.percentComplete, [R, B] = s.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [T && (0, r.jsx)(u.Z, {
       expansionSpring: x,
       overlayRef: S,
       progressBarRef: P,
-      quest: b,
-      isExpanded: j,
+      quest: j,
+      isExpanded: b,
       isHovered: R
     }), (0, r.jsx)(i.animated.div, {
       ref: t,
-      "aria-hidden": j && _,
+      "aria-hidden": b && _,
       className: a()(h, f.contentCollapsed, {
-        [f.contentCollapsedExpanded]: j,
+        [f.contentCollapsedExpanded]: b,
         [f.contentCollapsedAccepted]: N
       }),
       style: {
@@ -59,7 +59,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
         className: f.contentCollapsedWrapper,
         children: [T && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(m.Z, {
-            quest: b,
+            quest: j,
             onCtxMenuOpen: y,
             onCtxMenuClose: E,
             onCtxMenuSelect: O
@@ -68,12 +68,12 @@ let h = Chunk647438.forwardRef(function(e, t) {
           })]
         }), N ? (0, r.jsx)(p.Z, {
           contentLocation: "collapsed",
-          quest: b,
+          quest: j,
           progressBarRef: P,
           isExpanded: false,
           percentComplete: A
         }) : null, T && (0, r.jsx)(d.y, {
-          quest: b,
+          quest: j,
           useReducedMotion: C,
           isExpanded: false,
           awaitingConsoleConnections: false,

@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -234,7 +234,7 @@ class R extends(r = Chunk647438.PureComponent) {
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("31899")]).then(n.bind(n, 131404));
+        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("64807")]).then(n.bind(n, 131404));
         return n => (0, i.jsx)(e, w(Z({}, n), {
           channel: t,
           user: r
@@ -274,22 +274,22 @@ let D = Chunk647438.forwardRef(function(e, t) {
       autoTrackExposure: false
     }),
     j = o === n,
-    C = false,
-    E = false;
-  j && (C = u === S.WtW.VOICE, E = u === S.WtW.VIDEO);
-  let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
+    x = false,
+    C = false;
+  j && (x = u === S.WtW.VOICE, C = u === S.WtW.VIDEO);
+  let E = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, i.jsx)(R, w(Z({}, e), {
     ref: t,
     channelName: r,
     unread: O > 0,
     selected: g === n,
     badge: O,
-    audio: C,
-    video: E,
+    audio: x,
+    video: C,
     stream: p,
     isCurrentUserInThisDMCall: j,
     isGDMFacepileEnabled: v,
-    size: x,
+    size: E,
     treeItemProps: l
   }))
 })

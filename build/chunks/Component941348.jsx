@@ -1,4 +1,4 @@
-/** Chunk was on 10150 **/
+/** Chunk was on 50433 **/
 /** chunk id: 941348, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -21,9 +21,9 @@ let p = function(e) {
     isExpansionAnimationComplete: f,
     onCtxMenuOpened: h,
     onCtxMenuClosed: x,
-    onCtxMenuSelection: j,
+    onCtxMenuSelection: b,
     quest: _,
-    useReducedMotion: b,
+    useReducedMotion: j,
     collapsedHeight: v,
     onGameSheetOpened: C,
     onGameSheetClosed: y
@@ -39,11 +39,11 @@ let p = function(e) {
       isExpanded: g,
       isExpansionAnimationComplete: f,
       quest: _,
-      useReducedMotion: b,
+      useReducedMotion: j,
       taskDetails: w,
       onCtxMenuOpen: h,
       onCtxMenuClose: x,
-      onCtxMenuSelect: j,
+      onCtxMenuSelect: b,
       overlayRef: S
     }, E ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
       expansionSpring: m,
@@ -51,14 +51,14 @@ let p = function(e) {
       collapsedHeight: v,
       onCtxMenuOpen: h,
       onCtxMenuClose: x,
-      onCtxMenuSelect: j,
+      onCtxMenuSelect: b,
       onGameSheetOpened: C,
       onGameSheetClosed: y,
       overlayRef: S,
       isExpanded: g,
       isExpansionAnimationComplete: f,
       quest: _,
-      useReducedMotion: b,
+      useReducedMotion: j,
       ref: p,
       taskDetails: w,
       children: (0, r.jsxs)(r.Fragment, {
@@ -68,12 +68,12 @@ let p = function(e) {
         }), !T && (0, r.jsx)(a.Z, {
           quest: _,
           expansionSpring: m,
-          useReducedMotion: b,
+          useReducedMotion: j,
           isExpanded: g,
           isExpansionAnimationComplete: f,
           onCtxMenuOpen: h,
           onCtxMenuClose: x,
-          onCtxMenuSelect: j
+          onCtxMenuSelect: b
         })]
       })
     }), (0, r.jsx)("div", {

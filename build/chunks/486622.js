@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 486622, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => b
@@ -24,16 +24,16 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: r,
     onError: b
-  } = e, y = (0, h.Z)(), [C, _] = i.useState(false), [v, x] = i.useState(false), [O, E] = i.useState(false), [j, S] = i.useState(false), [P, I] = i.useState(false), Z = C || v || O, T = i.useCallback(async e => {
+  } = e, y = (0, f.Z)(), [C, v] = i.useState(false), [_, x] = i.useState(false), [O, j] = i.useState(false), [E, S] = i.useState(false), [P, I] = i.useState(false), Z = C || _ || O, T = i.useCallback(async e => {
     if (!Z) {
-      _(true);
+      v(true);
       try {
         await (0, p.e4)(e), S(true), null == n || n()
       } catch (t) {
         let e = new a.Hx(t);
         null == b || b(e)
       } finally {
-        _(false)
+        v(false)
       }
     }
   }, [Z, n, b]), N = i.useCallback(async e => {
@@ -64,14 +64,14 @@ function b(e) {
   }, [Z, r, b]), w = i.useCallback(async e => {
     if (Z) return;
     if (null != t && null == s.Z.getMutualGuilds(t.id)) {
-      E(true);
+      j(true);
       try {
         await (0, c.Z)(t.id, t.getAvatarURL(true, 80), {
           withMutualGuilds: true,
           withMutualFriendsCount: true
         })
       } catch (e) {} finally {
-        E(false)
+        j(false)
       }
     }
     let n = async () => {
@@ -84,7 +84,7 @@ function b(e) {
         other_user_id: null == t ? true : t.id
       }), await T(e)
     };
-    (0, f.H)({
+    (0, h.H)({
       channelId: e,
       onConfirm: n,
       onCancel: () => {
@@ -108,7 +108,7 @@ function b(e) {
         }), null != n && n()
       },
       r = u.kJ.getSetting();
-    null == r ? (0, f.V)({
+    null == r ? (0, h.V)({
       channel: e,
       onConfirm: i,
       onCancel: () => {
@@ -125,9 +125,9 @@ function b(e) {
     rejectAll: A,
     markAsNotSpam: M,
     isAcceptLoading: C,
-    isRejectLoading: v,
+    isRejectLoading: _,
     isUserProfileLoading: O,
-    isOptimisticAccepted: j,
+    isOptimisticAccepted: E,
     isOptimisticRejected: P
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 11799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y6: () => p
@@ -31,8 +31,8 @@ let p = () => {
       loading: O,
       items: v,
       hasMore: j,
-      cursor: C,
-      errored: E
+      cursor: x,
+      errored: C
     } = (0, i.cj)([c.Z], () => ({
       initialized: c.Z.initialized,
       loading: c.Z.loading,
@@ -41,7 +41,7 @@ let p = () => {
       cursor: c.Z.cursor,
       errored: c.Z.errored
     })), {
-      roleFilter: x,
+      roleFilter: E,
       everyoneFilter: S
     } = (0, i.cj)([a.ZP], () => ({
       everyoneFilter: a.ZP.everyoneFilter,
@@ -52,27 +52,27 @@ let p = () => {
     }, [t, y]);
     let I = (0, o.Z)();
     r.useEffect(() => () => {
-      p ? !I() && (E || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
-    }, [n, v, p, I, E]), r.useEffect(() => {
+      p ? !I() && (C || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
+    }, [n, v, p, I, C]), r.useEffect(() => {
       let e = g && t;
       (!y || e) && (0, s.jk)({
         limit: null != f ? f : h ? 8 : 20,
         with_mentions: h,
-        roles_filter: x,
+        roles_filter: E,
         everyone_filter: S
       })
-    }, [y, g, t, h, x, S, f]);
+    }, [y, g, t, h, E, S, f]);
     let P = r.useCallback(async e => {
-      !m.current && y && j && null != C && (e || !E) && (m.current = true, _(true), await (0, s.jk)({
-        after: C,
+      !m.current && y && j && null != x && (e || !C) && (m.current = true, _(true), await (0, s.jk)({
+        after: x,
         with_mentions: h,
-        roles_filter: x,
+        roles_filter: E,
         everyone_filter: S,
         limit: h ? 8 : 20
       }, () => {
         m.current = false
       }), _(false))
-    }, [y, j, C, E, h, x, S]);
+    }, [y, j, x, C, h, E, S]);
     return {
       initialized: y,
       loading: O,
@@ -83,7 +83,7 @@ let p = () => {
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = true)
       },
-      errored: E
+      errored: C
     }
   })({
     isFocused: true,

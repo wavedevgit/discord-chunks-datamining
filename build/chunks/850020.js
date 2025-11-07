@@ -1,22 +1,22 @@
-/** Chunk was on 97961 **/
-/** chunk id: 850020, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 93886 **/
+/** chunk id: 850020, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => i
+  K: () => o
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk271383 = require("./271383.js"),
   Chunk4242 = require("./4242.js");
 
-function i(t) {
+function o(e) {
   let {
-    user: e,
+    user: t,
     guildId: n
-  } = t, i = (0, a.e7)([o.ZP], () => null != n && null != e ? o.ZP.getMember(n, e.id) : null);
+  } = e, o = (0, a.e7)([i.ZP], () => null != n && null != t ? i.ZP.getMember(n, t.id) : null);
   return (0, r.useMemo)(() => {
-    var t;
-    if (null == e) return;
-    let r = (0, c.Pb)(null == i || null == (t = i.collectibles) ? true : t.nameplate);
-    return null != n && null != r ? r : e.nameplate
-  }, [i, n, e])
+    var e;
+    if (null == t) return;
+    let r = (0, l.Pb)(null == o || null == (e = o.collectibles) ? true : e.nameplate);
+    return null != n && null != r ? r : t.nameplate
+  }, [o, n, t])
 }

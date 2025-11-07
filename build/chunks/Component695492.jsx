@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 695492, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -18,7 +18,7 @@ function d(e) {
     channel: t,
     guild: d,
     width: p,
-    inPopout: f
+    inPopout: h
   } = e;
   return (0, i.jsx)(l.Z, {
     className: c.root,
@@ -65,7 +65,7 @@ function d(e) {
           }), r))
         }
       }, {
-        contextKey: f ? r.u1M : r.z1l
+        contextKey: h ? r.u1M : r.z1l
       }),
       callToAction: s.intl.string(s.t.VINpSK)
     })

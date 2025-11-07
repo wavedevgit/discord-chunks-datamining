@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 17030, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -25,22 +25,22 @@ function b(e) {
     selectedDefaultStatus: b,
     setIsEmojiPickerOpen: y,
     defaultStatusVariant: C
-  } = e, _ = r.useRef(null), v = (0, l.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), x = r.useCallback(() => null != t ? (0, i.jsx)(o.Z, {
+  } = e, v = r.useRef(null), _ = (0, l.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), x = r.useCallback(() => null != t ? (0, i.jsx)(o.Z, {
     emojiId: t.id,
     emojiName: t.name,
     animated: !!t.animated
-  }) : null != b ? (0, i.jsx)(f.Z, {
+  }) : null != b ? (0, i.jsx)(h.Z, {
     className: g.icon,
     userId: u.default.getId(),
     size: 20,
     hangStatusActivity: {
-      type: h.IIU.HANG_STATUS,
+      type: f.IIU.HANG_STATUS,
       state: b
     },
     fallbackVariant: C
   }) : null, [t, C, b]);
   return (0, i.jsx)(a.yRy, {
-    targetElementRef: _,
+    targetElementRef: v,
     onRequestOpen: () => y(true),
     onRequestClose: () => y(false),
     renderPopout: e => {
@@ -49,8 +49,8 @@ function b(e) {
         closePopout: r
       } = e;
       return (0, i.jsx)(c.Z, {
-        channel: v,
-        guildId: null != (t = null == v ? true : v.guild_id) ? t : true,
+        channel: _,
+        guildId: null != (t = null == _ ? true : _.guild_id) ? t : true,
         closePopout: r,
         onSelectEmoji: e => {
           let {
@@ -100,7 +100,7 @@ function b(e) {
         }
         return e
       }({}, e), l = l = {
-        ref: _,
+        ref: v,
         active: a,
         tabIndex: 0,
         renderButtonContents: null == t && null == b ? null : x

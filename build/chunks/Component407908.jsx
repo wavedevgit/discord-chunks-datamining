@@ -24,10 +24,10 @@ function b(e) {
     channel: b
   } = e, _ = i.useContext(p.AnalyticsContext), y = (0, c.Aq)(), x = g.intl.string(m.default["Beo/7v"]), {
     firstMessage: O
-  } = (0, a.cl)(b), j = null == O || null == (t = O.messageSnapshots) ? true : t[0], v = null == j || null == (n = j.moderatorReport) ? true : n.reported_user_id;
-  return b.isModeratorReportChannel() && null != v ? (0, r.jsx)(o.ZP.Icon, {
+  } = (0, a.cl)(b), v = null == O || null == (t = O.messageSnapshots) ? true : t[0], j = null == v || null == (n = v.moderatorReport) ? true : n.reported_user_id;
+  return b.isModeratorReportChannel() && null != j ? (0, r.jsx)(o.ZP.Icon, {
     onClick: () => {
-      (0, u.Kh)(b.id), (0, d.i)(), (0, s.r)(b.guild_id, v, b.id, {
+      (0, u.Kh)(b.id), (0, d.i)(), (0, s.r)(b.guild_id, j, b.id, {
         modViewPanel: f.k.INFO,
         sourceLocation: null != location ? location : _.location
       }), y.dispatch(h.CkL.POPOUT_CLOSE)

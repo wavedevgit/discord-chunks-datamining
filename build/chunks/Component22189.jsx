@@ -255,7 +255,7 @@ let ey = () => {
       onCtaClick: eA ? true : eD,
       perkImage: Chunk46245,
       hideOnNarrowScreen: !eA,
-      imageOverlayText: eA ? Chunk388032.intl.string(Chunk388032.t.lcYttS) : true
+      imageOverlayText: eA ? Chunk388032.intl.string(Chunk388032.t["/VzCKE"]).toLocaleUpperCase() : true
     },
     greyServerBoosts: {
       name: "greyServerBoosts",
@@ -263,7 +263,7 @@ let ey = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t["4pEwXL"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
       perkImage: Chunk371435.Z,
-      imageOverlayText: Chunk388032.intl.string(Chunk388032.t.lcYttS)
+      imageOverlayText: Chunk388032.intl.string(Chunk388032.t["/VzCKE"]).toLocaleUpperCase()
     },
     specialMemberPricing: {
       name: "specialMemberPricing",
@@ -318,7 +318,7 @@ let ey = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t["37MFFq"]),
       perkImage: Chunk83663.Z,
       description: Chunk388032.intl.string(Chunk388032.t.T1IS4j),
-      imageOverlayText: Chunk388032.intl.string(Chunk388032.t.lcYttS)
+      imageOverlayText: Chunk388032.intl.string(Chunk388032.t["/VzCKE"]).toLocaleUpperCase()
     },
     customAppIcons: {
       name: "customAppIcons",

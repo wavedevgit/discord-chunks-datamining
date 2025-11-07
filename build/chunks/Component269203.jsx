@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 269203, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -16,23 +16,23 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk496363 = require("./496363.js");
 
-function h(e) {
+function f(e) {
   var t;
   let {
     joinRequest: n,
     guild: s
   } = e, c = (0, r.e7)([u.default], () => u.default.getUser(n.userId));
   return (0, i.jsxs)("div", {
-    className: f.summaryContainer,
+    className: h.summaryContainer,
     children: [(0, i.jsxs)("div", {
-      className: f.summaryHeader,
+      className: h.summaryHeader,
       children: [null != s && (0, i.jsxs)("div", {
-        className: f.summaryHeaderClanInfo,
+        className: h.summaryHeaderClanInfo,
         children: [(0, i.jsx)(a.Z, {
           guild: s,
           active: true,
           size: a.Z.Sizes.SMOL,
-          className: f.guildIcon
+          className: h.guildIcon
         }), (0, i.jsx)(l.Heading, {
           variant: "heading-sm/semibold",
           color: "header-primary",
@@ -49,9 +49,9 @@ function h(e) {
       let t = e.field_type === o.QJ.MULTIPLE_CHOICE && null != e.response ? e.choices[e.response] : e.response;
       return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("hr", {
-          className: f.summarySeparator
+          className: h.summarySeparator
         }), (0, i.jsxs)("div", {
-          className: f.formResponseContainer,
+          className: h.formResponseContainer,
           children: [(0, i.jsx)(l.Text, {
             variant: "text-xs/semibold",
             color: "text-muted",
@@ -77,11 +77,11 @@ function m(e) {
   } = (0, s.Z)(t.id);
   return (0, i.jsx)(d.ZP, {
     channelId: t.id,
-    className: f.container,
+    className: h.container,
     children: null != r && null != r.formResponses ? (0, i.jsxs)("div", {
-      className: f.formContainer,
+      className: h.formContainer,
       children: [(0, i.jsx)("div", {
-        children: (0, i.jsx)(h, {
+        children: (0, i.jsx)(f, {
           guild: a,
           joinRequest: r
         })

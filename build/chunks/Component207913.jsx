@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 207913, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -86,9 +86,9 @@ function V(e) {
     nick: y,
     colorString: O
   } = (0, _.ZP)(t), {
-    avatarSrc: C,
-    eventHandlers: E
-  } = (0, x.Z)({
+    avatarSrc: x,
+    eventHandlers: C
+  } = (0, E.Z)({
     userId: t.author.id,
     size: d.EFr.SIZE_32,
     guildId: null == b ? true : b.id,
@@ -114,8 +114,8 @@ function V(e) {
     null != b && N.Z.requestMember(b.id, t.author.id)
   }, [b, t.author.id]), (0, r.jsx)(d.tEY, F(B({}, l), {
     children: (0, r.jsxs)("div", {
-      onMouseLeave: E.onMouseLeave,
-      onMouseEnter: E.onMouseEnter,
+      onMouseLeave: C.onMouseLeave,
+      onMouseEnter: C.onMouseEnter,
       className: U.messageContainer,
       children: [s && !a && (0, r.jsx)("div", {
         className: U.unreadDot
@@ -127,7 +127,7 @@ function V(e) {
         },
         children: S ? (0, r.jsx)(L.q, {
           "aria-label": "User Avatar",
-          src: C,
+          src: x,
           size: d.EFr.SIZE_32,
           cornerIconUrl: null != b ? (0, I.EB)(b, 24) : true,
           cornerIconOffsetX: 4,
@@ -258,7 +258,7 @@ function H(e) {
 function z(e) {
   let {
     message: t
-  } = e, n = (0, E.a3)(t.timestamp.getTime());
+  } = e, n = (0, C.a3)(t.timestamp.getTime());
   return (0, r.jsx)(O.Z, {
     timestamp: t.timestamp,
     className: U.timestamp,
@@ -284,7 +284,7 @@ function W(e) {
       isSelected: l
     } = e, {
       content: a
-    } = (0, C.Z)(t, {
+    } = (0, x.Z)(t, {
       hideSimpleEmbedContent: true,
       allowList: false,
       allowHeading: true,

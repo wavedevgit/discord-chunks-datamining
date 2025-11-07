@@ -1,4 +1,4 @@
-/** Chunk was on 10150 **/
+/** Chunk was on 50433 **/
 /** chunk id: 95985, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -23,15 +23,15 @@ let p = e => {
     activeScreen: f,
     popoutTargetElementRef: h,
     onGameSheetOpened: x,
-    onGameSheetClosed: j
-  } = e, _ = (0, o.eQ)(n), b = (0, o.vf)({
+    onGameSheetClosed: b
+  } = e, _ = (0, o.eQ)(n), j = (0, o.vf)({
     quest: n,
     isExpanded: m,
     activeScreen: f,
     sourceQuestContent: a.jn.QUEST_BAR_V2,
     popoutTargetElementRef: h,
     onGameSheetOpened: x,
-    onGameSheetClosed: j
+    onGameSheetClosed: b
   });
   return (0, r.jsxs)("div", {
     className: u.questProgressWrapper,
@@ -75,7 +75,7 @@ let p = e => {
           className: u.questProgressHint,
           color: "text-muted",
           variant: "text-xs/normal",
-          children: b
+          children: j
         })
       })]
     })]

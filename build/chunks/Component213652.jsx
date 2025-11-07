@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 213652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -25,7 +25,7 @@ function C(e) {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, o.ZP)(), C = (0, l.e7)([h.Z], () => h.Z.getSelectedParticipant(t.id)), _ = (null == C ? true : C.type) === g.fO.STREAM, v = (0, l.e7)([p.Z], () => _ ? p.Z.getActiveStreamForStreamKey(C.id) : null), {
+  } = (0, o.ZP)(), C = (0, l.e7)([f.Z], () => f.Z.getSelectedParticipant(t.id)), v = (null == C ? true : C.type) === g.fO.STREAM, _ = (0, l.e7)([p.Z], () => v ? p.Z.getActiveStreamForStreamKey(C.id) : null), {
     ignoreSenderPreference: x
   } = u.Z.useExperiment({
     location: "ActionBarClipsButton"
@@ -33,11 +33,11 @@ function C(e) {
     autoTrackExposure: false
   }), {
     viewerClippingAllowed: O,
-    isAtMaxSavingClipOperations: E
+    isAtMaxSavingClipOperations: j
   } = (0, l.cj)([s.Z], () => ({
-    viewerClippingAllowed: null != v && (s.Z.isViewerClippingAllowedForUser(v.ownerId) || x),
+    viewerClippingAllowed: null != _ && (s.Z.isViewerClippingAllowedForUser(_.ownerId) || x),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), j = s.Z.getSettings().clipsEnabled, S = (null == v ? true : v.ownerId) === f.default.getId(), P = !j || !(S || O) || E || null == C, I = r.useCallback(e => {
+  })), E = s.Z.getSettings().clipsEnabled, S = (null == _ ? true : _.ownerId) === h.default.getId(), P = !E || !(S || O) || j || null == C, I = r.useCallback(e => {
     var t, n;
     return (0, i.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -76,7 +76,7 @@ function C(e) {
     },
     disabled: P,
     iconComponent: I,
-    label: null == v ? b.intl.string(b.t.eg5qtV) : S || O ? j ? E ? true : b.intl.string(b.t.U4URzP) : b.intl.string(b.t.wSS1yN) : b.intl.string(b.t.aRifJX),
+    label: null == _ ? b.intl.string(b.t.eg5qtV) : S || O ? E ? j ? true : b.intl.string(b.t.U4URzP) : b.intl.string(b.t.wSS1yN) : b.intl.string(b.t.aRifJX),
     grow: false
   })
 }

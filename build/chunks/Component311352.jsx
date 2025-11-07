@@ -1,7 +1,7 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 311352, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -48,7 +48,7 @@ function j(e) {
     }({}, t))
   })
 }
-let C = e => {
+let x = e => {
     let {
       keybindString: t,
       children: n,
@@ -103,7 +103,7 @@ let C = e => {
       children: () => n
     })
   },
-  E = () => {
+  C = () => {
     let e = Chunk647438.useRef(null),
       {
         parentAnalyticsLocation: t
@@ -119,9 +119,9 @@ let C = e => {
       })),
       v = (0, Chunk399606.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP));
     if (!(Chunk704215 && Chunk239091) || null == Chunk611372 || require) return null;
-    let E = Chunk13140.BB(Chunk611372.shortcut, true);
-    return (0, Chunk951288.jsx)(C, {
-      keybindString: E,
+    let C = Chunk13140.BB(Chunk611372.shortcut, true);
+    return (0, Chunk951288.jsx)(x, {
+      keybindString: C,
       targetElementRef: module,
       children: (0, Chunk951288.jsx)(Chunk870569.Z, {
         ref: module,

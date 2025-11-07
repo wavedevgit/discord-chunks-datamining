@@ -1,7 +1,7 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 620304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,30 +27,30 @@ function j(e) {
   let {
     guild: t,
     withMargin: l
-  } = e, j = (0, b.Z)(t), C = (0, m.Z)(t.id), E = i.useCallback(() => {
+  } = e, j = (0, b.Z)(t), x = (0, m.Z)(t.id), C = i.useCallback(() => {
     (0, _.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-  }, [t.id]), x = (0, c.e7)([f.Z], () => {
+  }, [t.id]), E = (0, c.e7)([f.Z], () => {
     var e;
     return null != (e = f.Z.getCountForGuild(t.id)) ? e : 0
   });
   i.useEffect(() => {
-    x !== t.premiumSubscriberCount && (0, h.v)(t.id, t.premiumSubscriberCount)
-  }, [t.id, x, t.premiumSubscriberCount]);
-  let S = Math.min(x / j * 100, 100),
+    E !== t.premiumSubscriberCount && (0, h.v)(t.id, t.premiumSubscriberCount)
+  }, [t.id, E, t.premiumSubscriberCount]);
+  let S = Math.min(E / j * 100, 100),
     [I, P] = (0, u.q_F)(() => ({
-      width: x === t.premiumSubscriberCount ? "calc(".concat(S, "% - 4px)") : "0%",
+      width: E === t.premiumSubscriberCount ? "calc(".concat(S, "% - 4px)") : "0%",
       config: {
         tension: 250,
         damping: 5,
         mass: 1
       }
-    }), "respect-motion-settings", [x, t.premiumSubscriberCount]);
+    }), "respect-motion-settings", [E, t.premiumSubscriberCount]);
   i.useEffect(() => {
     P({
       width: "calc(".concat(S, "% - 4px)")
     })
   }, [S, P]);
-  let N = x >= j;
+  let N = E >= j;
   return (0, r.jsx)(u.P3F, {
     "aria-label": true,
     role: "button",
@@ -61,13 +61,13 @@ function j(e) {
       }
     },
     onClick: () => {
-      E()
+      C()
     },
     className: o()(v.container, {
       [v.containerWithMargin]: l
     }),
     onContextMenu: e => {
-      C && (0, d.jW)(e, async () => {
+      x && (0, d.jW)(e, async () => {
         let {
           default: e
         } = await n.e("8570").then(n.bind(n, 651138));
@@ -133,9 +133,9 @@ function j(e) {
             className: o()(v.text, v.boostCountText),
             variant: "text-xs/semibold",
             children: N ? O.intl.formatToPlainString(y.default["Ehpq+7"], {
-              appliedBoostCount: x
+              appliedBoostCount: E
             }) : O.intl.formatToPlainString(y.default["/rbPDs"], {
-              appliedBoostCount: x,
+              appliedBoostCount: E,
               maxBoostCount: j
             })
           }), (0, r.jsx)(g.Z, {
@@ -150,7 +150,7 @@ function j(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     guild: t,
     withMargin: n

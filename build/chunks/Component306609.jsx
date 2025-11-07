@@ -1,4 +1,4 @@
-/** Chunk was on 86863 **/
+/** Chunk was on 43342 **/
 /** chunk id: 306609, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   l: () => z
@@ -81,26 +81,26 @@ function z(e) {
     wide: n,
     showOutputDevices: o = false,
     showSearchBar: z = true
-  } = e, [B, G] = i.useState(""), {
+  } = e, [B, q] = i.useState(""), {
     analyticsLocations: W,
-    newestAnalyticsLocation: q
-  } = (0, m.ZP)(p.Z.VOICE_FILTER_POPOUT), K = i.useRef(null), X = (0, d.Z)({
+    newestAnalyticsLocation: X
+  } = (0, m.ZP)(p.Z.VOICE_FILTER_POPOUT), G = i.useRef(null), K = (0, d.Z)({
     minDimension: 400,
     maxDimension: 600,
-    resizableDomNodeRef: K,
+    resizableDomNodeRef: G,
     onElementResize: (e, t) => {},
     onElementResizeEnd: e => {},
     orientation: d.y.VERTICAL_TOP
   });
   (0, F.useSyncMessages)(V.messagesLoader);
-  let Q = (0, s.e7)([h.default], () => (0, E.I5)(h.default.getCurrentUser())),
-    J = (0, s.e7)([C.Z], () => C.Z.getCatalogUpdateTime()),
+  let Q = (0, s.e7)([h.default], () => (0, _.I5)(h.default.getCurrentUser())),
+    J = (0, s.e7)([E.Z], () => E.Z.getCatalogUpdateTime()),
     [$, ee] = i.useState(false),
     [et, en] = i.useState(false),
     {
       activeVoice: er
-    } = (0, S.o)(),
-    ei = (0, w.HM)({
+    } = (0, I.o)(),
+    ei = (0, C.HM)({
       location: W[0],
       autoTrackExposure: true
     }),
@@ -135,17 +135,17 @@ function z(e) {
     }),
     es = i.useRef(null);
   (0, u.ZP)(() => {
-    (0, I.r5)(), ei && (0, _.jG)(), x.default.track(M.rMx.VOICE_FILTER_PICKER_OPENED, {
+    (0, T.r5)(), ei && (0, w.jG)(), x.default.track(M.rMx.VOICE_FILTER_PICKER_OPENED, {
       active_voice_filter_id: null != er ? er : null
     })
   });
-  let ec = i.useCallback(() => G(""), [G]),
+  let ec = i.useCallback(() => q(""), [q]),
     eu = i.useRef(null),
-    ed = (0, v.bp)() !== M.IlC.OVERLAY;
+    ed = (0, g.bp)() !== M.IlC.OVERLAY;
   return (0, r.jsx)(m.Gt, {
     value: W,
     children: (0, r.jsxs)("div", {
-      ref: K,
+      ref: G,
       className: l()(U.voiceFiltersPopout, {
         [U.wide]: n,
         [U.notResizable]: !ed
@@ -155,17 +155,17 @@ function z(e) {
       },
       children: [ed && (0, r.jsx)("div", {
         className: U.resizeHandle,
-        onMouseDown: X,
+        onMouseDown: K,
         children: (0, r.jsx)("div", {
           className: U.resizePill
         })
       }), z && (0, r.jsx)(c.E1j, {
         placeholder: F.intl.string(F.t.hHCZJQ),
         autoFocus: true,
-        onChange: G,
+        onChange: q,
         query: B,
         onClear: ec
-      }), (0, r.jsx)(Z.w, {
+      }), (0, r.jsx)(k.w, {
         query: B,
         columns: n ? 5 : 4,
         handleScroll: e => {
@@ -185,7 +185,7 @@ function z(e) {
         className: U.upsellCountdownContainer,
         children: [null != J && (0, r.jsx)(a.animated.div, {
           style: eo,
-          children: (0, r.jsx)(k.J, {
+          children: (0, r.jsx)(D.J, {
             catalogUpdateTime: J,
             isScrolled: $
           })
@@ -199,7 +199,7 @@ function z(e) {
             children: (0, r.jsx)(y.p, {
               showUpsell: true,
               text: F.intl.format(F.t.XMDm8z, {
-                nitroTierName: (0, P.Px)(L.PremiumTypes.TIER_2),
+                nitroTierName: (0, P.Px)(R.PremiumTypes.TIER_2),
                 onClick: () => (0, j.i)()
               }),
               button: F.intl.string(F.t.cRCCJ3),
@@ -215,12 +215,12 @@ function z(e) {
             })
           })
         })]
-      }), (0, r.jsx)(T.l, {}), (0, r.jsx)(N.R, {}), (0, r.jsx)(D.y, {}), (0, r.jsxs)("div", {
+      }), (0, r.jsx)(N.l, {}), (0, r.jsx)(S.R, {}), (0, r.jsx)(Z.y, {}), (0, r.jsxs)("div", {
         className: l()(U.voiceFiltersFooter, {
           [U.hasActiveVoice]: null != er
         }),
-        children: [(0, r.jsx)(g.j, {
-          deviceType: R.h7.AUDIO_INPUT,
+        children: [(0, r.jsx)(v.j, {
+          deviceType: L.h7.AUDIO_INPUT,
           location: "VoiceFiltersPopout",
           onOpen: () => {
             var e;
@@ -229,8 +229,8 @@ function z(e) {
             })
           },
           popoutPosition: "top"
-        }), o && (0, r.jsx)(g.j, {
-          deviceType: R.h7.AUDIO_OUTPUT,
+        }), o && (0, r.jsx)(v.j, {
+          deviceType: L.h7.AUDIO_OUTPUT,
           location: "VoiceFiltersPopout",
           popoutPosition: "top"
         }), (0, r.jsx)(c.yRy, {
@@ -244,7 +244,7 @@ function z(e) {
             renderOutputDevices: o,
             renderOutputVolume: o,
             onClose: t,
-            onInteraction: (0, b.u)("AudioDeviceMenu", q, {
+            onInteraction: (0, b.u)("AudioDeviceMenu", X, {
               entrypoint: A.A5.THREE_DOT
             }),
             minimal: true

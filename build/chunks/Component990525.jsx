@@ -1,7 +1,7 @@
-/** Chunk was on 86863 **/
+/** Chunk was on 43342 **/
 /** chunk id: 990525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => w
+  J: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk478875 = require("./478875.js");
 
-function _(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,69 +44,69 @@ function _(e) {
   }
   return e
 }
-let w = e => {
+let C = e => {
   let {
     voiceFilter: t,
     hasNitro: n,
     analyticsContext: o
   } = e, {
-    activeVoice: w,
-    mostRecentlyRequestedVoiceId: C
-  } = (0, O.o)(), S = (0, j.z)(t.id), I = t.id === w, N = !t.available && !t.temporarilyAvailable, T = t.temporarilyAvailable && !n && !I, D = !I && t.id === C, [k, Z] = i.useState(false);
+    activeVoice: C,
+    mostRecentlyRequestedVoiceId: E
+  } = (0, O.o)(), I = (0, j.z)(t.id), T = t.id === C, S = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !T, Z = !T && t.id === E, [D, k] = i.useState(false);
   i.useEffect(() => {
-    let e = D ? setTimeout(() => Z(D), 200) : true;
+    let e = Z ? setTimeout(() => k(Z), 200) : true;
     return () => {
-      clearTimeout(e), Z(false)
+      clearTimeout(e), k(false)
     }
-  }, [D]);
-  let M = (0, g.J_)({
+  }, [Z]);
+  let M = (0, v.J_)({
       location: "voice_filter_item",
       autoTrackExposure: true,
       disable: !f.ZP.canCheckVoiceFilterFilesExist()
     }),
     A = (0, a.e7)([y.Z], () => y.Z.isVoiceFilterDownloaded(t.id), [t]),
-    L = null == S ? true : S.previewSoundURLs,
-    [R, V] = i.useState(0),
+    R = null == I ? true : I.previewSoundURLs,
+    [L, V] = i.useState(0),
     {
       isPlaying: F,
       playSound: U,
       stopSound: Y,
       preloadSound: H
-    } = (0, p.Z)(null != L ? L[R] : null, {
+    } = (0, p.Z)(null != R ? R[L] : null, {
       soundId: t.id
     }),
     z = P[t.styleKey],
     B = i.useCallback(() => {
-      n || !N ? ((0, b.v6)(w === t.id ? null : t.id, o), T && m.default.track(h.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, _({
+      n || !S ? ((0, b.v6)(C === t.id ? null : t.id, o), N && m.default.track(h.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, w({
         voice_filter_id: t.id
-      }, (0, v.w)(o)))) : (0, d.i)()
-    }, [n, N, w, t.id, o, T]),
-    G = i.useCallback(() => {
-      m.default.track(h.rMx.VOICE_FILTER_PREVIEW_PLAYED, _({
+      }, (0, g.w)(o)))) : (0, d.i)()
+    }, [n, S, C, t.id, o, N]),
+    q = i.useCallback(() => {
+      m.default.track(h.rMx.VOICE_FILTER_PREVIEW_PLAYED, w({
         voice_filter_id: t.id
-      }, (0, v.w)(o))), U({
+      }, (0, g.w)(o))), U({
         volume: .5,
         outputChannel: x.w.VOICE
-      }), (.25 > Math.random() || R > 0) && null != L && V(e => (e + 1) % L.length)
-    }, [o, U, R, L, t.id]),
-    W = null != S ? E.intl.string(S.name) : "";
+      }), (.25 > Math.random() || L > 0) && null != R && V(e => (e + 1) % R.length)
+    }, [o, U, L, R, t.id]),
+    W = null != I ? _.intl.string(I.name) : "";
   return (0, r.jsxs)("div", {
     className: l()(P.filter, z, {
-      [P.selected]: I,
-      [P.locked]: N && !I
+      [P.selected]: T,
+      [P.locked]: S && !T
     }),
     children: [(0, r.jsx)(c.u, {
       asContainer: true,
       shouldShow: M && !A,
-      "aria-label": E.intl.string(E.t.SQ7qMG),
+      "aria-label": _.intl.string(_.t.SQ7qMG),
       __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
         className: P.downloadRequiredContent,
         children: [(0, r.jsx)(u.Text, {
           variant: "text-sm/medium",
-          children: E.intl.string(E.t.SQ7qMG)
+          children: _.intl.string(_.t.SQ7qMG)
         }), (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
-          children: E.intl.string(E.t.TbnPVp)
+          children: _.intl.string(_.t.TbnPVp)
         })]
       }),
       children: (0, r.jsxs)(u.P3F, {
@@ -126,12 +126,12 @@ let w = e => {
             children: [(0, r.jsx)("img", {
               className: P.thumbnail,
               alt: "",
-              src: null == S ? true : S.iconURL,
+              src: null == I ? true : I.iconURL,
               draggable: false
             }), (0, r.jsx)("div", {
               className: P.insetBorder
             })]
-          }), I && (0, r.jsx)("div", {
+          }), T && (0, r.jsx)("div", {
             className: P.iconCircle,
             children: (0, r.jsx)(u.owK, {
               size: "md",
@@ -139,7 +139,7 @@ let w = e => {
               colorClass: P.checkmark,
               secondaryColor: s.Z.unsafe_rawColors.WHITE_500.css
             })
-          }), N && !I && (0, r.jsx)("div", {
+          }), S && !T && (0, r.jsx)("div", {
             className: l()([P.iconCircle, P.lockedCircle]),
             children: (0, r.jsx)(u.mBM, {
               size: "custom",
@@ -148,7 +148,7 @@ let w = e => {
               color: "currentColor",
               colorClass: P.lockedIcon
             })
-          }), T && (0, r.jsx)("div", {
+          }), N && (0, r.jsx)("div", {
             className: l()([P.iconCircle, P.iconBorder]),
             children: (0, r.jsx)("div", {
               className: l()([P.clockCircle]),
@@ -160,7 +160,7 @@ let w = e => {
                 colorClass: P.clockIcon
               })
             })
-          }), k && (0, r.jsx)("div", {
+          }), D && (0, r.jsx)("div", {
             className: P.spinnerWrapper,
             children: (0, r.jsx)(u.$jN, {
               type: u.$jN.Type.CHASING_DOTS,
@@ -179,15 +179,15 @@ let w = e => {
           }) : null]
         })]
       })
-    }), null != L && (0, r.jsx)(c.u, {
+    }), null != R && (0, r.jsx)(c.u, {
       asContainer: true,
-      text: E.intl.string(F ? E.t.ItuPbp : E.t["0gtbE8"]),
+      text: _.intl.string(F ? _.t.ItuPbp : _.t["0gtbE8"]),
       children: (0, r.jsx)(u.P3F, {
         className: l()([P.hoverButtonCircle, P.previewButton], {
           [P.visible]: F
         }),
-        onClick: F ? Y : G,
-        "aria-label": E.intl.formatToPlainString(E.t.gDzvjd, {
+        onClick: F ? Y : q,
+        "aria-label": _.intl.formatToPlainString(_.t.gDzvjd, {
           voiceFilterName: W
         }),
         children: F ? (0, r.jsx)(u.wNq, {

@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 977391, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => d,
@@ -25,24 +25,24 @@ function u(e) {
   let u = l / s.yqN.FONT_SIZE_DEFAULT,
     d = t ? o.iv : o.pk,
     p = t ? o.Pb : o.XX,
-    f = 0,
-    h = Array(n).fill(null).map(() => {
+    h = 0,
+    f = Array(n).fill(null).map(() => {
       let e = a().random(1, i);
-      return f += c * u, f += d * u, f += (e - 1) * p * u, e
+      return h += c * u, h += d * u, h += (e - 1) * p * u, e
     }),
-    m = h.map((e, t) => t),
+    m = f.map((e, t) => t),
     g = [];
   for (; g.length < r;) {
     let e = {
       width: a().random(140, 400),
       height: a().random(100, 320)
     };
-    g.push([m.splice(a().random(0, m.length - 1), 1)[0], e]), f += e.height + o.M9 * u
+    g.push([m.splice(a().random(0, m.length - 1), 1)[0], e]), h += e.height + o.M9 * u
   }
   return {
-    messages: h,
+    messages: f,
     attachmentSpecs: g,
-    totalHeight: f,
+    totalHeight: h,
     groupSpacing: c
   }
 }

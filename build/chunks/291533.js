@@ -15,12 +15,12 @@ let u = 12633 == require.j ? 18e4 : null;
 
 function _(e) {
   let t = (0, c.A2)(e),
-    n = (0, r.e7)([o.Z], () => o.Z.isOpen()),
+    n = (0, r.e7)([l.Z], () => l.Z.isOpen()),
     _ = (0, r.e7)([s.Z], () => s.Z.hasLayers()),
     {
       isQuestBarEmpty: p,
       hasLoadedQuestBar: f
-    } = (0, l.Ws)({
+    } = (0, o.Ws)({
       location: d.dr.QUESTS_BAR
     });
   return (0, i.bf)(t && !n && !_ && p && f ? a.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {

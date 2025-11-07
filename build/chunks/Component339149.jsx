@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 339149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => N,
@@ -25,7 +25,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk820093 = require("./820093.js");
 
-function E(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,14 +34,14 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -120,7 +120,7 @@ class I extends Chunk647438.PureComponent {
     return null != module ? module : Chunk388032.intl.string(Chunk388032.t.cw57ar)
   }
   constructor(...e) {
-    super(...e), E(this, "renderProgressBody", (e, t) => {
+    super(...e), C(this, "renderProgressBody", (e, t) => {
       let {
         state: n,
         application: r
@@ -208,9 +208,9 @@ class P extends(r = Chunk647438.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), E(this, "state", {
+    super(...e), C(this, "state", {
       animationScale: new s.Z.Value(0)
-    }), E(this, "handleOnClick", e => {
+    }), C(this, "handleOnClick", e => {
       let {
         onClick: t
       } = this.props;
@@ -228,7 +228,7 @@ function N(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-E(P, "defaultProps", {
+C(P, "defaultProps", {
   strokeSize: Chunk481060._3P.StrokeSizes.MEDIUM
 });
 let Z = Chunk442837.ZP.connectStores([Chunk941128.Z, Chunk417363.Z, Chunk812206.Z], () => {
@@ -264,6 +264,6 @@ let Z = Chunk442837.ZP.connectStores([Chunk941128.Z, Chunk417363.Z, Chunk812206.
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(P, x({}, n)) : null
-  }) : (0, i.jsx)(P, x({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(P, E({}, n)) : null
+  }) : (0, i.jsx)(P, E({}, n))
 })

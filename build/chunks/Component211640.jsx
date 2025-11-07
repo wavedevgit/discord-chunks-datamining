@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 211640, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -24,24 +24,24 @@ function m(e) {
     channel: g
   } = e, b = (0, r.e7)([d.Z], () => null != n && null != m && (0, o.CX)(n, m, [d.Z])), {
     messageReference: y
-  } = t, C = (0, r.e7)([u.Z], () => null != y ? u.Z.getMessage(y.channel_id, y.message_id) : null), _ = (0, r.e7)([c.Z], () => null != C ? c.Z.getChannel(C.channel_id) : null), v = (0, r.e7)([c.Z], () => {
+  } = t, C = (0, r.e7)([u.Z], () => null != y ? u.Z.getMessage(y.channel_id, y.message_id) : null), v = (0, r.e7)([c.Z], () => null != C ? c.Z.getChannel(C.channel_id) : null), _ = (0, r.e7)([c.Z], () => {
     var e, t;
     return null != (t = null == (e = c.Z.getChannel(g.id)) ? true : e.isArchivedThread()) && t
   });
   if (!b) return null;
-  let x = null == C ? h.intl.string(f.default["0IZbwC"]) : h.intl.string(f.default.Uj6oD4),
+  let x = null == C ? f.intl.string(h.default["0IZbwC"]) : f.intl.string(h.default.Uj6oD4),
     O = null == C,
-    E = "delete-message-".concat(t.id);
+    j = "delete-message-".concat(t.id);
   return (0, i.jsx)(p.Z, {
     text: x,
     icon: a.XHJ,
     onClick: () => {
-      null != _ && null != C && s.Z.confirmDelete(_, C, false, {
-        isFlagResolved: v,
+      null != v && null != C && s.Z.confirmDelete(v, C, false, {
+        isFlagResolved: _,
         moderatorReportChannelId: g.id
       })
     },
     disabled: O,
     color: l.zx.Colors.RED
-  }, E)
+  }, j)
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 185145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => g
@@ -33,9 +33,9 @@ function g(e) {
         color: "currentColor",
         className: m.bannerIcon
       }),
-      bannerHeader: h.intl.string(h.t["9UoK6Y"]),
-      bannerSubtext: h.intl.format(h.t["4ZwD5G"], {
-        link: f.cu
+      bannerHeader: f.intl.string(f.t["9UoK6Y"]),
+      bannerSubtext: f.intl.format(f.t["4ZwD5G"], {
+        link: h.cu
       }),
       textStyles: m.bannerContainer,
       headerStyles: m.bannerHeader,

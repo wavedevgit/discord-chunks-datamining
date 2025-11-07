@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 199649, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -25,21 +25,21 @@ function g(e) {
     children: y
   } = e, C = (0, r.e7)([c.Z], () => c.Z.isBlocked(b.getRecipientId()));
   (0, o.Z)(b.id);
-  let _ = (0, s.Z)(b.id),
-    v = b.isSystemDM(),
-    x = C && !v && !b.isMultiUserDM(),
+  let v = (0, s.Z)(b.id),
+    _ = b.isSystemDM(),
+    x = C && !_ && !b.isMultiUserDM(),
     O = {};
-  if (v) {
-    let e = _ ? m.intl.string(m.t["+KSnWX"]) : m.intl.string(m.t.hvVgAZ);
-    O.message = m.intl.string(m.t.Bt2N7D), O.subtitle = m.intl.string(m.t["n/Vzkw"]), O.buttonText = e, O.buttonIcon = _ ? l.rgF : true, O.onButtonClick = () => {
-      if (_) {
-        open(h.D2), u.default.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
+  if (_) {
+    let e = v ? m.intl.string(m.t["+KSnWX"]) : m.intl.string(m.t.hvVgAZ);
+    O.message = m.intl.string(m.t.Bt2N7D), O.subtitle = m.intl.string(m.t["n/Vzkw"]), O.buttonText = e, O.buttonIcon = v ? l.rgF : true, O.onButtonClick = () => {
+      if (v) {
+        open(f.D2), u.default.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
           cta_type: "chat_blocker",
-          target: h.D2
+          target: f.D2
         });
         return
       }
-      open(d.Z.getArticleURL(f.BhN.SYSTEM_DMS))
+      open(d.Z.getArticleURL(h.BhN.SYSTEM_DMS))
     }, O.imageSrc = n(780961)
   } else x && (O.message = m.intl.string(m.t["9T6N5/"]), O.buttonText = m.intl.string(m.t.XyHpKH), O.onButtonClick = () => {
     a.Z.unblockUser(b.getRecipientId())

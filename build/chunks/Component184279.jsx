@@ -1,7 +1,7 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 184279, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk405005 = require("./405005.js"),
   Chunk191986 = require("./191986.js");
-let f = () => (0, Chunk951288.jsx)("svg", {
+let h = () => (0, Chunk951288.jsx)("svg", {
   width: "46",
   height: "34",
   viewBox: "0 0 46 34",
@@ -25,11 +25,11 @@ let f = () => (0, Chunk951288.jsx)("svg", {
   })
 });
 
-function h(e) {
+function f(e) {
   var t;
   let {
     channel: n
-  } = e, h = null != (t = (0, a.ZP)(n)) ? t : "";
+  } = e, f = null != (t = (0, a.ZP)(n)) ? t : "";
   return (0, i.jsxs)("div", {
     id: (0, s.p)(n.id, n.id),
     className: d.headerContainer,
@@ -39,15 +39,15 @@ function h(e) {
       alt: ""
     }), (0, i.jsxs)("div", {
       className: d.chatBubbleContainer,
-      children: [(0, i.jsx)(f, {}), (0, i.jsxs)("div", {
+      children: [(0, i.jsx)(h, {}), (0, i.jsxs)("div", {
         className: d.chatBubble,
         children: [(0, i.jsx)(r.qEK, {
-          "aria-label": h,
+          "aria-label": f,
           size: r.EFr.SIZE_80,
           src: (0, l.x)(n, 80, false)
         }), (0, i.jsxs)(c.Ot, {
           className: d.emptyMessageHeader,
-          children: [h, (0, i.jsx)(o.Z, {
+          children: [f, (0, i.jsx)(o.Z, {
             className: d.flowerStar,
             size: 24,
             children: (0, i.jsx)(r.kmB, {

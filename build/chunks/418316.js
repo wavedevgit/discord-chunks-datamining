@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 418316, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -32,7 +32,7 @@ function f(e) {
 }
 
 function g(e) {
-  var t, n, r, g, m, b, _, y, O, v, j, C, E, x, S;
+  var t, n, r, g, m, b, _, y, O, v, j, x, C, E, S;
   let {
     item: I,
     renderApplication: P
@@ -51,14 +51,14 @@ function g(e) {
       let D = null != (j = null == (v = I.local_id) ? true : v.split("_").pop()) ? j : "unknown";
       return "Update to build ".concat(D, " available!");
     case d.DY.FRIEND_SUGGESTION_CREATED:
-      return a.Z.getRelationshipType(N), p.OGo.PENDING_OUTGOING, null != (C = I.body) ? C : "";
+      return a.Z.getRelationshipType(N), p.OGo.PENDING_OUTGOING, null != (x = I.body) ? x : "";
     case d.DY.GUILD_SCHEDULED_EVENT_STARTED:
       let L = I.guild_scheduled_event_id,
         M = null != L ? l.ZP.getGuildScheduledEvent(L) : null,
         k = null == M ? true : M.name,
-        G = null == (E = o.Z.getGuild(null == M ? true : M.guild_id)) ? true : E.name,
+        G = null == (C = o.Z.getGuild(null == M ? true : M.guild_id)) ? true : C.name,
         U = (0, l.Z2)(null != M ? M : true);
-      return (0, c.Ew)(G) || (0, c.Ew)(k) || !U ? null != (x = I.body) ? x : "" : h.intl.format(h.t.AyvfXR, {
+      return (0, c.Ew)(G) || (0, c.Ew)(k) || !U ? null != (E = I.body) ? E : "" : h.intl.format(h.t.AyvfXR, {
         event_name: k,
         guild_name: G
       });

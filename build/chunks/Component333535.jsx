@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 333535, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -22,13 +22,13 @@ function b(e) {
   let {
     threadId: t
   } = e, n = (0, l.e7)([s.Z], () => s.Z.getChannel(t)), b = (0, l.e7)([s.Z], () => s.Z.getChannel(null == n ? true : n.parent_id)), y = r.useCallback(() => {
-    null != n && null != b && ((0, o.yw)(h.rMx.MEDIA_POST_SHARE_PROMPT_CLICKED, {
+    null != n && null != b && ((0, o.yw)(f.rMx.MEDIA_POST_SHARE_PROMPT_CLICKED, {
       media_post_id: n.id
     }), (0, u.JG)((0, c.EO)(n, b)))
   }, [n, b]);
   return (0, i.jsxs)("div", {
     className: g.sharePromptContainer,
-    children: [(0, i.jsx)(f.Z, {}), (0, i.jsxs)("div", {
+    children: [(0, i.jsx)(h.Z, {}), (0, i.jsxs)("div", {
       className: g.sharePromptContent,
       children: [(0, i.jsx)(a.Text, {
         variant: "text-md/semibold",
@@ -38,7 +38,7 @@ function b(e) {
         variant: "text-sm/medium",
         color: "text-default",
         children: m.intl.format(m.t.WnfPV3, {
-          helpArticleUrl: d.Z.getCreatorSupportArticleURL(h.BhN.MEDIA_CHANNEL)
+          helpArticleUrl: d.Z.getCreatorSupportArticleURL(f.BhN.MEDIA_CHANNEL)
         })
       }), (0, i.jsx)(a.LZC, {
         size: 4

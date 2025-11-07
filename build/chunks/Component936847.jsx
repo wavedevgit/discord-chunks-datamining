@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 46931 **/
 /** chunk id: 936847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -10,35 +10,35 @@ var Chunk951288 = require("./951288.js"),
   Chunk112843 = require("./112843.js"),
   Chunk524484 = require("./524484.js");
 
-function c(e) {
+function s(e) {
   let {
     callTileRef: t,
     isFiring: n
-  } = e, i = (0, o.Z)(), l = (0, a.Z)(t);
-  return r.useEffect(() => {
-    n && null != l && null != t && i.fire(l.x + t.clientWidth / 2, l.y + t.clientHeight / 2, {
+  } = e, r = (0, o.Z)(), l = (0, a.Z)(t);
+  return i.useEffect(() => {
+    n && null != l && null != t && r.fire(l.x + t.clientWidth / 2, l.y + t.clientHeight / 2, {
       countMultiplier: 4
     })
-  }, [t, i, n, l]), null
+  }, [t, r, n, l]), null
 }
 
 function u(e) {
-  return (0, i.jsx)(l.Z, {
-    confettiLocation: s.Hn.CALL_TILE,
-    children: (0, i.jsx)(c, function(e) {
+  return (0, r.jsx)(l.Z, {
+    confettiLocation: c.Hn.CALL_TILE,
+    children: (0, r.jsx)(s, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = i
+          }) : e[t] = r
         })
       }
       return e

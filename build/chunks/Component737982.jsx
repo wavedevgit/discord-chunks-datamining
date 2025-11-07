@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 737982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -24,11 +24,11 @@ let O = Chunk647438.memo(function(e) {
   let {
     guildId: t,
     selected: n
-  } = e, O = (0, a.f9)(), v = (0, l.e7)([p.Z], () => p.Z.hasLayers()), [j, C] = (0, c.ZT)([o.z.GAME_SERVER_HOSTING_NEW_BADGE], t), E = j === o.z.GAME_SERVER_HOSTING_NEW_BADGE, [x, S] = (0, c.ZT)(O || v || !E ? [] : [o.z.GAME_SERVER_HOSTING_NEW_COACHMARK], t), I = i.useCallback(e => {
-    C(e), S(e)
-  }, [C, S]), P = i.useCallback(() => {
+  } = e, O = (0, a.f9)(), v = (0, l.e7)([p.Z], () => p.Z.hasLayers()), [j, x] = (0, c.ZT)([o.z.GAME_SERVER_HOSTING_NEW_BADGE], t), C = j === o.z.GAME_SERVER_HOSTING_NEW_BADGE, [E, S] = (0, c.ZT)(O || v || !C ? [] : [o.z.GAME_SERVER_HOSTING_NEW_COACHMARK], t), I = i.useCallback(e => {
+    x(e), S(e)
+  }, [x, S]), P = i.useCallback(() => {
     I(m.L.USER_DISMISS), (0, d.uL)(f.Z5c.CHANNEL(t, g.oC.GAME_SERVERS))
-  }, [t, I]), N = i.useRef(null), Z = x === o.z.GAME_SERVER_HOSTING_NEW_COACHMARK, w = i.useCallback(() => (0, r.jsx)(h.En, {
+  }, [t, I]), N = i.useRef(null), Z = E === o.z.GAME_SERVER_HOSTING_NEW_COACHMARK, w = i.useCallback(() => (0, r.jsx)(h.En, {
     channelRowRef: N,
     guildId: t,
     markAsDismissed: I
@@ -45,7 +45,7 @@ let O = Chunk647438.memo(function(e) {
       text: _.intl.string(b.default.vCzwM7),
       selected: n,
       onClick: P,
-      trailing: E ? (0, r.jsx)(s.IGR, {
+      trailing: C ? (0, r.jsx)(s.IGR, {
         disableColor: true,
         text: _.intl.string(_.t.y2b7CA),
         className: y.badge

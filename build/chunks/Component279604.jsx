@@ -1,10 +1,10 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 279604, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   KE: () => O,
   KT: () => y,
   Td: () => v,
-  ZP: () => E,
+  ZP: () => C,
   _C: () => j
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
@@ -101,7 +101,7 @@ function j(e, t) {
     analyticsLocations: n
   } = (0, a.ZP)(), {
     onToggle: r
-  } = C(e, t), d = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), p = v(e, t);
+  } = x(e, t), d = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), p = v(e, t);
   return {
     onActivate: i.useCallback(function(e) {
       var i;
@@ -132,7 +132,7 @@ function j(e, t) {
   }
 }
 
-function C(e, t) {
+function x(e, t) {
   let [n, r] = i.useState(false), [l, o] = i.useState(true);
   return {
     isLoading: n,
@@ -150,12 +150,12 @@ function C(e, t) {
   }
 }
 
-function E(e, t) {
+function C(e, t) {
   let {
     isLoading: l,
     error: a,
     onToggle: s
-  } = C(e, t), {
+  } = x(e, t), {
     onActivate: c
   } = j(e, t), u = i.useCallback(e => (e.stopPropagation(), s(false)), [s]);
   return {

@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  l = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk55935 = require("./55935.js"),
   Chunk388032 = require("./388032.jsx");
 
@@ -36,14 +36,14 @@ class u extends(r = Chunk647438.PureComponent) {
       showDays: t,
       showUnits: n,
       className: r
-    } = this.props, i = [e.days, e.hours, e.minutes, e.seconds], o = [c.intl.string(c.t["6m/6nM"]), c.intl.string(c.t.n7dksO), c.intl.string(c.t["1LyF1h"]), c.intl.string(c.t.QJyuxY)];
+    } = this.props, i = [e.days, e.hours, e.minutes, e.seconds], l = [c.intl.string(c.t["6m/6nM"]), c.intl.string(c.t.n7dksO), c.intl.string(c.t["1LyF1h"]), c.intl.string(c.t.QJyuxY)];
     if (0 === e.days) i.shift();
     else if (!t) {
       let e = i.shift();
       i[0] += 24 * e
     }
-    let s = l()(i).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, a.jsxs)("span", {
-      children: [e, n ? o[i.length - t - 1] : null]
+    let s = o()(i).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, a.jsxs)("span", {
+      children: [e, n ? l[i.length - t - 1] : null]
     }, t)]).flatten().value();
     return (0, a.jsx)("span", {
       className: r,

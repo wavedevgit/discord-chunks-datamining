@@ -1,7 +1,7 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 576954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  M: () => v
+  M: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function v(e) {
   let {
     senderId: t,
     channelId: n,
@@ -35,7 +35,7 @@ function _(e) {
       channelId: n,
       warningId: l,
       senderId: t,
-      warningType: h.pj.STRANGER_DANGER,
+      warningType: f.pj.STRANGER_DANGER,
       cta: m.NM.USER_MODAL_IGNORE
     }), s.Z.ignoreUser(t, "web_stranger_danger_more", n)
   }, [n, l, t]), u = r.useCallback(() => {
@@ -43,7 +43,7 @@ function _(e) {
       channelId: n,
       warningId: l,
       senderId: t,
-      warningType: h.pj.STRANGER_DANGER,
+      warningType: f.pj.STRANGER_DANGER,
       cta: m.NM.USER_MODAL_UNIGNORE
     }), s.Z.unignoreUser(t, "web_stranger_danger_more", n)
   }, [n, l, t]);
@@ -55,40 +55,40 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     channelId: t,
-    warningId: v,
+    warningId: _,
     senderId: x
   } = e, {
     isBlocked: O
   } = (0, a.cj)([p.Z], () => ({
     isBlocked: p.Z.isBlocked(x)
-  }), [x]), E = r.useCallback(() => {
-    (0, f.T)(t, [v])
-  }, [t, v]), j = (0, b.C2)(), S = r.useCallback(e => () => {
+  }), [x]), j = r.useCallback(() => {
+    (0, h.T)(t, [_])
+  }, [t, _]), E = (0, b.C2)(), S = r.useCallback(e => () => {
     s.Z.blockUser(x, {
       location: b.zr
     }).then(() => {
-      E()
+      j()
     }), (0, m.qc)({
       channelId: t,
-      warningId: v,
+      warningId: _,
       senderId: x,
-      warningType: h.pj.STRANGER_DANGER,
+      warningType: f.pj.STRANGER_DANGER,
       cta: e
     })
-  }, [E, t, v, x]);
+  }, [j, t, _, x]);
   r.useEffect(() => {
     (0, m.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
-      warningId: v,
+      warningId: _,
       senderId: x,
-      warningType: h.pj.STRANGER_DANGER
+      warningType: f.pj.STRANGER_DANGER
     }), c.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
-  }, [t, v, x]);
+  }, [t, _, x]);
   let P = () => {
       (0, o.ZDy)(async () => {
         let {
@@ -103,19 +103,19 @@ function v(e) {
             transitionState: r,
             onClose: l,
             channelId: t,
-            warningId: v,
+            warningId: _,
             senderId: x,
             description: C.intl.string(C.t.DJMZX6),
-            safetyTipRows: j.map((e, t) => (0, i.jsx)(u.q, {
+            safetyTipRows: E.map((e, t) => (0, i.jsx)(u.q, {
               index: t,
               listType: "numbered",
               title: e
             }, t)),
             actionRows: (0, i.jsxs)(i.Fragment, {
-              children: [(0, i.jsx)(_, {
+              children: [(0, i.jsx)(v, {
                 senderId: x,
                 channelId: t,
-                warningId: v
+                warningId: _
               }, "more-tips-button"), (0, i.jsx)(d.JZ, {
                 title: C.intl.string(C.t["5QYPO2"]),
                 description: C.intl.string(C.t.G08MKu),
@@ -160,9 +160,9 @@ function v(e) {
             onCancel: () => {
               null == l || l(), (0, m.qc)({
                 channelId: t,
-                warningId: v,
+                warningId: _,
                 senderId: x,
-                warningType: h.pj.STRANGER_DANGER,
+                warningType: f.pj.STRANGER_DANGER,
                 cta: r
               })
             }
@@ -181,21 +181,21 @@ function v(e) {
     };
   return (0, i.jsx)(g.Q, {
     channelId: t,
-    warningId: v,
+    warningId: _,
     senderId: x,
-    warningType: h.pj.STRANGER_DANGER,
+    warningType: f.pj.STRANGER_DANGER,
     header: C.intl.string(C.t.iOkDpM),
     description: C.intl.string(C.t.ISUbcM),
-    onDismiss: E,
+    onDismiss: j,
     buttons: [{
       text: C.intl.string(C.t["Qk/c48"]),
       variant: "primary",
       onClick: () => {
         P(), (0, m.qc)({
           channelId: t,
-          warningId: v,
+          warningId: _,
           senderId: x,
-          warningType: h.pj.STRANGER_DANGER,
+          warningType: f.pj.STRANGER_DANGER,
           cta: m.NM.OPEN_MORE_TIPS
         })
       }

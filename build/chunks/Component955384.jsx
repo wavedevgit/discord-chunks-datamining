@@ -1,7 +1,7 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 955384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,10 +22,10 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function h(e) {
   e.stopPropagation()
 }
-class h extends Chunk647438.PureComponent {
+class f extends Chunk647438.PureComponent {
   render() {
     let {
       className: e,
@@ -45,7 +45,7 @@ class h extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)("div", {
       className: module,
       ref: this.node,
-      onContextMenu: f,
+      onContextMenu: h,
       children: [Chunk957730({
         textValue: exports,
         richValue: require,

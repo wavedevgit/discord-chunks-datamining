@@ -1,4 +1,4 @@
-/** Chunk was on 27 **/
+/** Chunk was on 31899 **/
 /** chunk id: 987889, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -42,7 +42,7 @@ function j(e) {
   return e
 }
 
-function C(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = {
+let C = {
   [Chunk982183.ln.MENTION]: [Chunk982183.r0.SETTINGS],
   [Chunk982183.ln.REPLY]: [Chunk982183.r0.SETTINGS],
   [Chunk982183.ln.REACTION]: [Chunk982183.r0.SETTINGS],
@@ -62,7 +62,7 @@ let E = {
   [Chunk982183.ln.MESSAGE]: [Chunk982183.r0.SETTINGS]
 };
 
-function x(e) {
+function E(e) {
   let {
     label: t,
     onClick: n,
@@ -105,7 +105,7 @@ function S(e) {
     actionType: d
   } = e, p = (0, g.fJ)(), [h, f] = (0, i.useState)(false), [m, _] = (0, i.useState)(false), y = (0, i.useRef)(null), {
     openMenu: O,
-    closeMenu: E
+    closeMenu: C
   } = (0, b.z)();
   return (0, r.jsx)(a.yRy, {
     shouldShow: m,
@@ -115,7 +115,7 @@ function S(e) {
     autoInvert: false,
     targetElementRef: y,
     onRequestClose: () => {
-      _(false), E(n.id, d)
+      _(false), C(n.id, d)
     },
     renderPopout: e => (0, r.jsx)(a.VqE, {
       onClick: e => e.stopPropagation(),
@@ -143,9 +143,9 @@ function S(e) {
             viewId: p
           }), e.stopPropagation();
           let t = !m;
-          _(t), t ? O(n.id, d) : E(n.id, d)
+          _(t), t ? O(n.id, d) : C(n.id, d)
         },
-        children: (0, r.jsx)(s, C(j({}, e), {
+        children: (0, r.jsx)(s, x(j({}, e), {
           message: n,
           "aria-label": l,
           className: v.actionIcon,
@@ -185,7 +185,7 @@ let I = {
         message: t,
         savedMessage: i
       });
-      return (0, r.jsxs)(a.v2r, C(j({}, n), {
+      return (0, r.jsxs)(a.v2r, x(j({}, n), {
         navId: "message-reminder-create",
         "aria-label": O.intl.string(O.t.mJ3P0N),
         onClose: n.closePopout,
@@ -223,11 +223,11 @@ let I = {
         channel: t,
         renderPopoutProps: n
       } = e;
-      return t.isThread() ? (0, r.jsx)(f.Z, C(j({}, n), {
+      return t.isThread() ? (0, r.jsx)(f.Z, x(j({}, n), {
         channel: t,
         navId: "thread-context",
         label: O.intl.string(O.t["1NBjqb"])
-      })) : (0, r.jsx)(u.Z, C(j({}, n), {
+      })) : (0, r.jsx)(u.Z, x(j({}, n), {
         channel: t,
         navId: "channel-context",
         label: O.intl.string(O.t.Xm41aV)
@@ -246,7 +246,7 @@ function P(e) {
     return (0, i.useMemo)(() => {
       let e = _.ln.MENTION,
         r = new Set;
-      return t && r.add(_.r0.ACK), n && r.add(_.r0.BOOKMARK), E[e].forEach(e => r.add(e)), Array.from(r)
+      return t && r.add(_.r0.ACK), n && r.add(_.r0.BOOKMARK), C[e].forEach(e => r.add(e)), Array.from(r)
     }, [e, t, n])
   })(t, l);
   return (0, r.jsx)(a.Kqy, {
@@ -259,12 +259,12 @@ function P(e) {
       let i = I[e];
       switch (i.type) {
         case "standard":
-          return (0, r.jsx)(x, C(j({}, i), {
+          return (0, r.jsx)(E, x(j({}, i), {
             actionType: e,
             message: t
           }), e);
         case "menu":
-          return (0, r.jsx)(S, C(j({}, i), {
+          return (0, r.jsx)(S, x(j({}, i), {
             actionType: e,
             channel: n,
             message: t

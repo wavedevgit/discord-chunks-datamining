@@ -1,6 +1,5 @@
-/** Chunk was on 98206 **/
-/** chunk id: 162130, original params: e,n,t (module,exports,require) **/
-"use strict";
+/** Chunk was on 93886 **/
+/** chunk id: 162130, original params: e,t,n (module,exports,require) **/
 module.exports = {
   base: "base_e42a84",
   sparkle: "sparkle_e42a84 base_e42a84",

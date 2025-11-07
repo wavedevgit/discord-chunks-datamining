@@ -1,7 +1,7 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 737243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,59 +13,59 @@ var Chunk951288 = require("./951288.js"),
   Chunk697451 = require("./697451.jsx"),
   Chunk348238 = require("./348238.jsx"),
   Chunk614584 = require("./614584.jsx");
-let f = Chunk647438.memo(function(e) {
+let h = Chunk647438.memo(function(e) {
   var t, n;
   let {
-    message: f,
-    channel: h,
+    message: h,
+    channel: f,
     compact: m = false,
     interactionUsernameProfile: g,
     interactionAvatarProfile: b,
     interactionData: y,
     referencedUsernameProfile: C,
-    referencedAvatarProfile: _,
-    setPopout: v
+    referencedAvatarProfile: v,
+    setPopout: _
   } = e, {
     isInteractionUserBlocked: x,
     isInteractionUserIgnored: O
   } = (0, l.cj)([c.Z], () => ({
-    isInteractionUserBlocked: c.Z.isBlockedForMessage(f),
-    isInteractionUserIgnored: c.Z.isIgnoredForMessage(f)
-  }), [f]), E = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == f ? true : f.messageReference)), j = (0, d.wq)(null == (t = f.interaction) ? true : t.user.id, h.id), S = (0, d.Nk)(f.interaction, h, g, v), P = (0, d.NU)(b, v), I = (0, o.t0)(f), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, h.id), N = (0, d.JC)(Z, h, C, v), A = (0, d.rY)(_, v), w = (0, d.Xn)(y, v), M = r.useCallback(() => {
-    v({
+    isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
+    isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
+  }), [h]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, _), P = (0, d.NU)(b, _), I = (0, o.t0)(h), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, C, _), A = (0, d.rY)(v, _), w = (0, d.Xn)(y, _), M = r.useCallback(() => {
+    _({
       interactionUsernameProfile: false,
       interactionAvatarProfile: false,
       interactionData: false,
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [v]), R = r.useCallback(() => (0, p.Z)({
-    message: f,
-    channel: h,
+  }, [_]), R = r.useCallback(() => (0, p.Z)({
+    message: h,
+    channel: f,
     compact: m,
-    setPopout: v,
-    referencedAvatarProfile: _,
+    setPopout: _,
+    referencedAvatarProfile: v,
     referencedUsernameProfile: C,
-    replyReference: f.messageReference,
-    replyMessage: E,
+    replyReference: h.messageReference,
+    replyMessage: j,
     isReplySpineClickable: false,
     showReplySpine: false
-  }), [h, m, f, _, E, C, v]);
+  }), [f, m, h, v, j, C, _]);
   return (0, i.jsx)(u.Z, {
-    message: f,
-    channel: h,
+    message: h,
+    channel: f,
     compact: m,
     isInteractionUserBlocked: x,
     isInteractionUserIgnored: O,
     showAvatarPopout: b,
     showUsernamePopout: g,
     showDataPopout: y,
-    showTargetAvatarPopout: _,
+    showTargetAvatarPopout: v,
     showTargetUsernamePopout: C,
     onClickAvatar: P,
     onClickUsername: S,
     onClickCommand: w,
-    onUserContextMenu: j,
+    onUserContextMenu: E,
     onClickTargetAvatar: A,
     onClickTargetUsername: N,
     onTargetUserContextMenu: T,
@@ -74,13 +74,13 @@ let f = Chunk647438.memo(function(e) {
   })
 });
 
-function h(e, t, n) {
+function f(e, t, n) {
   let {
     message: r,
     channel: l,
     compact: a
   } = e;
-  return null != r.interaction && "" !== r.interaction.displayName ? (0, i.jsx)(f, function(e) {
+  return null != r.interaction && "" !== r.interaction.displayName ? (0, i.jsx)(h, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

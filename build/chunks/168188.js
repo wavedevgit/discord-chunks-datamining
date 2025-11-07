@@ -1,13 +1,13 @@
-/** Chunk was on 95661 **/
+/** Chunk was on 35535 **/
 /** chunk id: 168188, original params: t (module,exports,require) **/
 module.exports = function() {
   "use strict";
 
-  function t(t, e) {
+  function t(t, i) {
     this.scrollbar_ = {
       position_: 0,
       range_: 0
-    }, this.devicePixelRatio = e || 1, this.canvas_ = t, t.width = parseInt(t.width, 10) * this.devicePixelRatio, t.height = parseInt(t.height, 10) * this.devicePixelRatio, this.gridColor = "#CCC", this.textColor = "#000", this.backgroundColor = "#FFF", this.fontWeight = "normal", this.fontSize = 10, this.fontFamily = "sans-serif", this.timeLocales = [], this.timeOptions = {}, this.startTime_ = 0, this.endTime_ = 1, this.graph_ = null, this.scale_ = 1e3 / this.devicePixelRatio, this.updateScrollbarRange_(true)
+    }, this.devicePixelRatio = i || 1, this.canvas_ = t, t.width = parseInt(t.width, 10) * this.devicePixelRatio, t.height = parseInt(t.height, 10) * this.devicePixelRatio, this.gridColor = "#CCC", this.textColor = "#000", this.backgroundColor = "#FFF", this.fontWeight = "normal", this.fontSize = 10, this.fontFamily = "sans-serif", this.timeLocales = [], this.timeOptions = {}, this.startTime_ = 0, this.endTime_ = 1, this.graph_ = null, this.scale_ = 1e3 / this.devicePixelRatio, this.updateScrollbarRange_(true)
   }
   module.prototype = {
     setScale: function(t) {
@@ -20,11 +20,11 @@ module.exports = function() {
       return this.scrollbar_.position_ == this.scrollbar_.range_
     },
     updateScrollbarRange_: function(t) {
-      var e = this.getLength_() - this.canvas_.width;
-      e < 0 && (e = 0), this.scrollbar_.position_ > e && (t = true), this.scrollbar_.range_ = e, t && (this.scrollbar_.position_ = e, this.repaint())
+      var i = this.getLength_() - this.canvas_.width;
+      i < 0 && (i = 0), this.scrollbar_.position_ > i && (t = true), this.scrollbar_.range_ = i, t && (this.scrollbar_.position_ = i, this.repaint())
     },
-    setDateRange: function(t, e) {
-      this.startTime_ = t.getTime(), this.endTime_ = e.getTime(), this.endTime_ <= this.startTime_ && (this.startTime_ = this.endTime_ - 1), this.updateScrollbarRange_(true)
+    setDateRange: function(t, i) {
+      this.startTime_ = t.getTime(), this.endTime_ = i.getTime(), this.endTime_ <= this.startTime_ && (this.startTime_ = this.endTime_ - 1), this.updateScrollbarRange_(true)
     },
     updateEndDate: function(t) {
       this.endTime_ = t || new Date().getTime(), this.updateScrollbarRange_(this.graphScrolledToRightEdge_())
@@ -33,36 +33,36 @@ module.exports = function() {
       return new Date(this.startTime_)
     },
     setDataSeries: function(t) {
-      this.graph_ = new e(this.devicePixelRatio);
-      for (var i = 0; i < t.length; ++i) this.graph_.addDataSeries(t[i]);
+      this.graph_ = new i(this.devicePixelRatio);
+      for (var e = 0; e < t.length; ++e) this.graph_.addDataSeries(t[e]);
       this.repaint()
     },
     addDataSeries: function(t) {
-      this.graph_ || (this.graph_ = new e(this.devicePixelRatio)), this.graph_.addDataSeries(t), this.repaint()
+      this.graph_ || (this.graph_ = new i(this.devicePixelRatio)), this.graph_.addDataSeries(t), this.repaint()
     },
     repaint: function() {
       if (null !== this.canvas_.offsetParent) {
         this.repaintTimerRunning_ = false;
         var t = this.canvas_.width,
-          e = this.canvas_.height,
-          i = this.canvas_.getContext("2d");
-        if (i.fillStyle = this.backgroundColor, i.fillRect(0, 0, module, e), !(4 * this.fontSize > e) && !(module < 50)) {
-          i.save();
-          var n = this.scrollbar_.position_;
-          0 == this.scrollbar_.range_ && (n = this.getLength_() - module);
-          var r = this.startTime_ + n * this.scale_,
-            a = e;
-          e -= Math.ceil(this.fontSize * this.devicePixelRatio) + 4, this.drawTimeLabels(i, module, e, a, r), i.strokeStyle = this.gridColor, i.lineWidth = this.devicePixelRatio, i.strokeRect(1, 1, module - 1, e - 1), this.graph_ && (this.graph_.layout(module, e, this.fontSize, r, this.scale_), this.graph_.drawTicks(i), this.graph_.drawLines(i), this.graph_.drawLabels(i)), i.restore()
+          i = this.canvas_.height,
+          e = this.canvas_.getContext("2d");
+        if (e.fillStyle = this.backgroundColor, e.fillRect(0, 0, module, i), !(4 * this.fontSize > i) && !(module < 50)) {
+          e.save();
+          var s = this.scrollbar_.position_;
+          0 == this.scrollbar_.range_ && (s = this.getLength_() - module);
+          var a = this.startTime_ + s * this.scale_,
+            h = i;
+          i -= Math.ceil(this.fontSize * this.devicePixelRatio) + 4, this.drawTimeLabels(e, module, i, h, a), e.strokeStyle = this.gridColor, e.lineWidth = this.devicePixelRatio, e.strokeRect(1, 1, module - 1, i - 1), this.graph_ && (this.graph_.layout(module, i, this.fontSize, a, this.scale_), this.graph_.drawTicks(e), this.graph_.drawLines(e), this.graph_.drawLabels(e)), e.restore()
         }
       }
     },
-    drawTimeLabels: function(t, e, i, n, r) {
-      var a = 6e4 * Math.ceil(r / 6e4);
+    drawTimeLabels: function(t, i, e, s, a) {
+      var h = 6e4 * Math.ceil(a / 6e4);
       for (t.textBaseline = "bottom", t.textAlign = "center", t.fillStyle = this.textColor, t.strokeStyle = this.gridColor, t.lineWidth = this.devicePixelRatio, t.font = `${this.fontWeight} ${this.fontSize*this.devicePixelRatio}px ${this.fontFamily}`;;) {
-        var s = Math.round((a - r) / this.scale_);
-        if (s >= e) break;
-        var o = new Date(a).toLocaleTimeString(this.timeLocales, this.timeOptions);
-        t.fillText(o, s, n), t.beginPath(), t.lineTo(s, 1), t.lineTo(s, i), t.stroke(), a += 6e4
+        var n = Math.round((h - a) / this.scale_);
+        if (n >= i) break;
+        var r = new Date(h).toLocaleTimeString(this.timeLocales, this.timeOptions);
+        t.fillText(r, n, s), t.beginPath(), t.lineTo(n, 1), t.lineTo(n, e), t.stroke(), h += 6e4
       }
     },
     getDataSeriesCount: function() {
@@ -72,7 +72,7 @@ module.exports = function() {
       return !!this.graph_ && this.graph_.hasDataSeries(t)
     }
   };
-  var e = function() {
+  var i = function() {
     function t(t) {
       this.devicePixelRatio = t || 1, this.dataSeries_ = [], this.width_ = 0, this.height_ = 0, this.fontHeight_ = 0, this.startTime_ = 0, this.scale_ = 0, this.min_ = 0, this.max_ = 0, this.labels_ = []
     }
@@ -81,81 +81,81 @@ module.exports = function() {
         this.dataSeries_.push(t)
       },
       hasDataSeries: function(t) {
-        for (var e = 0; e < this.dataSeries_.length; ++e)
-          if (this.dataSeries_[e] == t) returntrue;
+        for (var i = 0; i < this.dataSeries_.length; ++i)
+          if (this.dataSeries_[i] == t) returntrue;
         returnfalse
       },
       getValues: function(t) {
         return t.isVisible() ? t.getValues(this.startTime_, this.scale_, this.width_) : null
       },
-      layout: function(t, e, i, n, r) {
-        this.width_ = t, this.height_ = e, this.fontHeight_ = i, this.startTime_ = n, this.scale_ = r;
-        for (var a = 0, s = 0, o = 0; o < this.dataSeries_.length; ++o) {
-          var h = this.getValues(this.dataSeries_[o]);
-          if (h)
-            for (var l = 0; l < h.length; ++l) h[l] > a ? a = h[l] : h[l] < s && (s = h[l])
+      layout: function(t, i, e, s, a) {
+        this.width_ = t, this.height_ = i, this.fontHeight_ = e, this.startTime_ = s, this.scale_ = a;
+        for (var h = 0, n = 0, r = 0; r < this.dataSeries_.length; ++r) {
+          var o = this.getValues(this.dataSeries_[r]);
+          if (o)
+            for (var l = 0; l < o.length; ++l) o[l] > h ? h = o[l] : o[l] < n && (n = o[l])
         }
-        this.layoutLabels_(s, a)
+        this.layoutLabels_(n, h)
       },
-      layoutLabels_: function(t, e) {
-        if (e - t < 1024) return void this.layoutLabelsBasic_(t, e, 2);
-        var i = ["", "k", "M", "G", "T", "P"],
-          n = 1;
-        for (t /= 1024, e /= 1024; i[n + 1] && e - t >= 1024;) t /= 1024, e /= 1024, ++n;
-        this.layoutLabelsBasic_(t, e, 2);
-        for (var r = 0; r < this.labels_.length; ++r) this.labels_[r] += " " + i[n];
-        this.min_ *= Math.pow(1024, n), this.max_ *= Math.pow(1024, n)
+      layoutLabels_: function(t, i) {
+        if (i - t < 1024) return void this.layoutLabelsBasic_(t, i, 2);
+        var e = ["", "k", "M", "G", "T", "P"],
+          s = 1;
+        for (t /= 1024, i /= 1024; e[s + 1] && i - t >= 1024;) t /= 1024, i /= 1024, ++s;
+        this.layoutLabelsBasic_(t, i, 2);
+        for (var a = 0; a < this.labels_.length; ++a) this.labels_[a] += " " + e[s];
+        this.min_ *= Math.pow(1024, s), this.max_ *= Math.pow(1024, s)
       },
-      layoutLabelsBasic_: function(t, e, i) {
+      layoutLabelsBasic_: function(t, i, e) {
         this.labels_ = [];
-        var n = e - t;
-        if (0 == n) {
-          this.min_ = this.max_ = e;
+        var s = i - t;
+        if (0 == s) {
+          this.min_ = this.max_ = i;
           return
         }
-        var r = 2 * this.fontHeight_ + 4,
-          a = 1 + this.height_ / r;
-        a < 2 ? a = 2 : a > 6 && (a = 6);
-        for (var s = Math.pow(10, -i), o = i; !(Math.ceil(n / s) + 1 <= a);) {
-          if (Math.ceil(n / (2 * s)) + 1 <= a) {
-            s *= 2;
+        var a = 2 * this.fontHeight_ + 4,
+          h = 1 + this.height_ / a;
+        h < 2 ? h = 2 : h > 6 && (h = 6);
+        for (var n = Math.pow(10, -e), r = e; !(Math.ceil(s / n) + 1 <= h);) {
+          if (Math.ceil(s / (2 * n)) + 1 <= h) {
+            n *= 2;
             break
           }
-          if (Math.ceil(n / (5 * s)) + 1 <= a) {
-            s *= 5;
+          if (Math.ceil(s / (5 * n)) + 1 <= h) {
+            n *= 5;
             break
           }
-          s *= 10, o > 0 && --o
+          n *= 10, r > 0 && --r
         }
-        this.max_ = Math.ceil(e / s) * s, this.min_ = Math.floor(t / s) * s;
-        for (var h = this.max_; h >= this.min_; h -= s) this.labels_.push(h.toFixed(o))
+        this.max_ = Math.ceil(i / n) * n, this.min_ = Math.floor(t / n) * n;
+        for (var o = this.max_; o >= this.min_; o -= n) this.labels_.push(o.toFixed(r))
       },
       drawTicks: function(t) {
-        e = this.width_ - 1, i = this.width_ - 1 - 10, t.fillStyle = this.gridColor, t.lineWidth = this.devicePixelRatio, t.beginPath();
-        for (var e, i, n = 1; n < this.labels_.length - 1; ++n) {
-          var r = Math.round(this.height_ * n / (this.labels_.length - 1));
-          t.moveTo(e, r), t.lineTo(i, r)
+        i = this.width_ - 1, e = this.width_ - 1 - 10, t.fillStyle = this.gridColor, t.lineWidth = this.devicePixelRatio, t.beginPath();
+        for (var i, e, s = 1; s < this.labels_.length - 1; ++s) {
+          var a = Math.round(this.height_ * s / (this.labels_.length - 1));
+          t.moveTo(i, a), t.lineTo(e, a)
         }
         t.stroke()
       },
       drawLines: function(t) {
-        var e = 0,
-          i = this.height_ - 1;
-        this.max_ && (e = i / (this.max_ - this.min_));
-        for (var n = this.dataSeries_.length - 1; n >= 0; --n) {
-          var r = this.getValues(this.dataSeries_[n]);
-          if (r) {
-            t.strokeStyle = this.dataSeries_[n].getColor(), t.lineWidth = this.devicePixelRatio, t.beginPath();
-            for (var a = 0; a < r.length; ++a) t.lineTo(a, i - Math.round((r[a] - this.min_) * e));
+        var i = 0,
+          e = this.height_ - 1;
+        this.max_ && (i = e / (this.max_ - this.min_));
+        for (var s = this.dataSeries_.length - 1; s >= 0; --s) {
+          var a = this.getValues(this.dataSeries_[s]);
+          if (a) {
+            t.strokeStyle = this.dataSeries_[s].getColor(), t.lineWidth = this.devicePixelRatio, t.beginPath();
+            for (var h = 0; h < a.length; ++h) t.lineTo(h, e - Math.round((a[h] - this.min_) * i));
             t.stroke()
           }
         }
       },
       drawLabels: function(t) {
         if (0 != this.labels_.length) {
-          var e = this.width_ - 3;
-          t.fillStyle = this.textColor, t.textAlign = "right", t.textBaseline = "top", t.fillText(this.labels_[0], e, 0), t.textBaseline = "bottom";
-          for (var i = (this.height_ - 1) / (this.labels_.length - 1), n = 1; n < this.labels_.length; ++n) t.fillText(this.labels_[n], e, i * n)
+          var i = this.width_ - 3;
+          t.fillStyle = this.textColor, t.textAlign = "right", t.textBaseline = "top", t.fillText(this.labels_[0], i, 0), t.textBaseline = "bottom";
+          for (var e = (this.height_ - 1) / (this.labels_.length - 1), s = 1; s < this.labels_.length; ++s) t.fillText(this.labels_[s], i, e * s)
         }
       }
     }, module

@@ -1,7 +1,7 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 10401, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 }), require("./388685.js");
 var i, Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
@@ -44,8 +44,8 @@ function p(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = {},
-  h = {},
+let h = {},
+  f = {},
   m = true,
   g = {},
   b = false;
@@ -53,9 +53,9 @@ let f = {},
 function y() {
   if (g = {}, !m)
     for (let [e, t] of Object.entries(Chunk268967.Z)) {
-      let n = false !== f[module];
+      let n = false !== h[module];
       if (g[module] = require, require && null != exports.prerequisites)
-        for (let n of exports.prerequisites) false !== f[require] && (g[module] = false)
+        for (let n of exports.prerequisites) false !== h[require] && (g[module] = false)
     }
 }
 class C extends(i = Chunk442837.ZP.Store) {
@@ -69,7 +69,7 @@ class C extends(i = Chunk442837.ZP.Store) {
     return !m
   }
   getIndicators() {
-    return h
+    return f
   }
   getData() {
     return Chunk268967.Z
@@ -80,28 +80,28 @@ class C extends(i = Chunk442837.ZP.Store) {
   }
 }
 u(C, "displayName", "TutorialIndicatorStore");
-let _ = new C(Chunk570140.Z, {
+let v = new C(Chunk570140.Z, {
   CONNECTION_OPEN: function(e) {
     let {
       tutorial: t
     } = e;
-    b = true, m = true, f = {}, null != t && (m = t.indicators_suppressed, t.indicators_confirmed.forEach(e => f[e] = false)), y()
+    b = true, m = true, h = {}, null != t && (m = t.indicators_suppressed, t.indicators_confirmed.forEach(e => h[e] = false)), y()
   },
   CONNECTION_CLOSED: function() {
     b = false
   },
   TUTORIAL_INDICATOR_DISMISS: function(e) {
-    f = p(d({}, f), {
+    h = p(d({}, h), {
       [e.tutorialId]: false
-    }), h = d({}, h), delete h[e.tutorialId], y()
+    }), f = d({}, f), delete f[e.tutorialId], y()
   },
   TUTORIAL_INDICATOR_SHOW: function(e) {
-    h = p(d({}, h), {
+    f = p(d({}, f), {
       [e.tutorialId]: e.renderData
     })
   },
   TUTORIAL_INDICATOR_HIDE: function(e) {
-    h = d({}, h), delete h[e.tutorialId]
+    f = d({}, f), delete f[e.tutorialId]
   },
   TUTORIAL_INDICATOR_SUPPRESS_ALL: function() {
     m = true

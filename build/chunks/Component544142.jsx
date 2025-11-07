@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 544142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -55,46 +55,46 @@ function O(e, t) {
   }), e
 }
 
-function E(e) {
+function j(e) {
   var t, l, p;
   let {
     userId: y,
     channel: C
-  } = e, _ = r.useRef(null), {
-    analyticsLocations: E
-  } = (0, d.ZP)(u.Z.USERNAME), j = (0, o.e7)([g.default], () => g.default.getUser(y)), S = (0, o.e7)([m.ZP], () => null != y ? m.ZP.getMember(C.guild_id, y) : null), P = (0, f.X7)(C.guild_id, null != y ? y : true, null != (t = null == S ? true : S.colorStrings) ? t : null);
+  } = e, v = r.useRef(null), {
+    analyticsLocations: j
+  } = (0, d.ZP)(u.Z.USERNAME), E = (0, o.e7)([g.default], () => g.default.getUser(y)), S = (0, o.e7)([m.ZP], () => null != y ? m.ZP.getMember(C.guild_id, y) : null), P = (0, h.X7)(C.guild_id, null != y ? y : true, null != (t = null == S ? true : S.colorStrings) ? t : null);
 
   function I(e) {
-    if (null == j) return null;
+    if (null == E) return null;
     (0, c.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("70675"), n.e("85994")]).then(n.bind(n, 654663));
       return t => (0, i.jsx)(e, O(x({}, t), {
-        user: j,
+        user: E,
         guildId: C.guild_id,
         channel: C
       }))
     })
   }
-  let Z = null != (p = null != (l = null == S ? true : S.nick) ? l : b.ZP.getName(j)) ? p : "???",
+  let Z = null != (p = null != (l = null == S ? true : S.nick) ? l : b.ZP.getName(E)) ? p : "???",
     T = null == S ? true : S.colorString;
-  return null == j ? (0, i.jsx)("span", {
-    className: a()(v.threadCreatorName, v.unknownCreatorName),
+  return null == E ? (0, i.jsx)("span", {
+    className: a()(_.threadCreatorName, _.unknownCreatorName),
     children: Z
   }) : (0, i.jsx)(d.Gt, {
-    value: E,
-    children: (0, i.jsx)(h.Z, {
-      targetElementRef: _,
-      user: j,
+    value: j,
+    children: (0, i.jsx)(f.Z, {
+      targetElementRef: v,
+      user: E,
       guildId: C.guild_id,
       channelId: C.id,
       roleId: null == S ? true : S.colorRoleId,
       clickTrap: true,
       children: e => (0, i.jsx)(s.P3F, O(x({}, e), {
-        innerRef: _,
+        innerRef: v,
         tag: "span",
-        className: v.threadCreatorName,
+        className: _.threadCreatorName,
         onContextMenu: I,
         children: (0, i.jsx)(s.PUh, {
           name: Z,
@@ -106,7 +106,7 @@ function E(e) {
   })
 }
 
-function j(e) {
+function E(e) {
   let {
     channel: t
   } = e, {
@@ -121,9 +121,9 @@ function j(e) {
       variant: "text-md/normal",
       color: "header-secondary",
       children: (0, i.jsx)("div", {
-        className: v.subtitle,
-        children: _.intl.format(_.t.imPXd5, {
-          usernameHook: (e, n) => (0, i.jsx)(E, {
+        className: _.subtitle,
+        children: v.intl.format(v.t.imPXd5, {
+          usernameHook: (e, n) => (0, i.jsx)(j, {
             userId: t.ownerId,
             channel: t
           }, n)
@@ -132,7 +132,7 @@ function j(e) {
     }), t.type === C.d4z.PRIVATE_THREAD ? (0, i.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: _.intl.string(_.t["1awbZG"])
+      children: v.intl.string(v.t["1awbZG"])
     }) : null]
   })
 }
@@ -145,13 +145,13 @@ function S(e) {
   return (0, i.jsxs)(y.ZP, {
     channelId: n.id,
     children: [(0, i.jsx)("div", {
-      className: v.iconWrapper,
+      className: _.iconWrapper,
       children: (0, i.jsx)(r, {
-        className: v.icon
+        className: _.icon
       })
     }), (0, i.jsx)(y.Ot, {
       children: n.name
-    }), (0, i.jsx)(j, {
+    }), (0, i.jsx)(E, {
       channel: n
     })]
   })

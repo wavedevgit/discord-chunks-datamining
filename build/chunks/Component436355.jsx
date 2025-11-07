@@ -1,4 +1,4 @@
-/** Chunk was on 86642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 436355, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -17,9 +17,9 @@ function p(e) {
   let {
     channel: t,
     user: p,
-    guild: f
-  } = e, h = (0, r.e7)([s.Z], () => null != p && null != f && (0, a.nX)(p, f, [s.Z])), m = (0, r.e7)([o.ZP], () => null == p || null == o.ZP.getMember(t.guild_id, p.id));
-  if (!h) return null;
+    guild: h
+  } = e, f = (0, r.e7)([s.Z], () => null != p && null != h && (0, a.nX)(p, h, [s.Z])), m = (0, r.e7)([o.ZP], () => null == p || null == o.ZP.getMember(t.guild_id, p.id));
+  if (!f) return null;
   let g = m ? d.intl.string(u.default.Ux67nW) : d.intl.string(u.default["snp/lJ"]),
     b = "kick-user-".concat(null == p ? true : p.id);
   return (0, i.jsx)(c.Z, {
