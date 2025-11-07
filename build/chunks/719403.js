@@ -1,18 +1,18 @@
-/** Chunk was on web.js **/
-/** chunk id: 719403, original params: e,t,n (module,exports,re quire) **/
+/** Chunk was on 64982 **/
+/** chunk id: 719403, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  t: () => u
+  t: () => d
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk889564 = require("./889564.js"),
   Chunk471613 = require("./471613.js"),
   Chunk267642 = require("./267642.js");
 
-function u(e) {
+function d(e) {
   let {
     guild: t
   } = e;
@@ -25,19 +25,19 @@ function u(e) {
     totalAnimatedEmoji: 0
   };
   let n = (0, c.y4)(t),
-    i = (0, o.e7)([l.Z], () => l.Z.getEmojis(t.id)),
-    [u, d] = r.useMemo(() => {
+    i = (0, a.e7)([o.Z], () => o.Z.getEmojis(t.id)),
+    [d, u] = r.useMemo(() => {
       let e = null == i ? true : i.filter(e => !(0, s.Kt)(e, t.id)),
-        [n, r] = a().partition(e, e => !e.animated);
+        [n, r] = l().partition(e, e => !e.animated);
       return [n, r]
     }, [i, t]),
-    f = Math.max(n - u.length, n - d.length);
+    g = Math.max(n - d.length, n - u.length);
   return {
     maxEmojiSlots: n,
-    availableEmojiSlots: f,
-    staticEmoji: u,
-    totalStaticEmoji: u.length,
-    animatedEmoji: d,
-    totalAnimatedEmoji: d.length
+    availableEmojiSlots: g,
+    staticEmoji: d,
+    totalStaticEmoji: d.length,
+    animatedEmoji: u,
+    totalAnimatedEmoji: u.length
   }
 }
