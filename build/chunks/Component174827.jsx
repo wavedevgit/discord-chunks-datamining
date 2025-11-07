@@ -65,8 +65,8 @@ function K(e) {
     step: ei,
     defaultPlanId: el,
     priceOptions: ea,
-    isPremium: es,
-    premiumBrandRefreshBackgroundClassName: eo
+    isPremium: eo,
+    premiumBrandRefreshBackgroundClassName: es
   } = (0, k.JL)(), {
     isGift: eC,
     giftRecipient: ed,
@@ -74,19 +74,19 @@ function K(e) {
     claimableRewards: eu
   } = (0, w.wD)(), {
     paymentModalBanner: ep
-  } = (0, I.zb)(), ex = (0, h.a5)(er), eh = (null == (t = (0, x.Z)()) ? true : t.planSelectionBanner) != null, ef = eC && ex && null != eu && eu.length > 0 && eh, e_ = (0, N.m)(et, ee), {
-    newPlans: em
+  } = (0, I.zb)(), ef = (0, h.a5)(er), eh = (null == (t = (0, f.Z)()) ? true : t.planSelectionBanner) != null, ex = eC && ef && null != eu && eu.length > 0 && eh, em = (0, N.m)(et, ee), {
+    newPlans: e_
   } = u.ZP.useExperiment({
     location: "d17fd6_3"
   }, {
     autoTrackExposure: false
-  }), ej = (0, o.e7)([v.default], () => v.default.getCurrentUser()), eg = !eC && null != en && en === F.Si.TIER_2 && null != ej && ej.hasHadPremium() && $ && null == X && (0, u.aQ)(e_), eb = (0, m.N)(J), ey = !eC && null != eb && null != en && F.nG[eb.trial_id].skus.includes(en), eL = (0, _.Ng)(), ev = null == eL || null == (n = eL.discount) ? true : n.plan_ids.some(e => F.GP[e].skuId === en), eS = !eC && null != eL && null != en && ev, eO = null != (l = ey || eS) && l, eE = i.useMemo(() => (0, P.V7)({
+  }), ej = (0, s.e7)([v.default], () => v.default.getCurrentUser()), eg = !eC && null != en && en === F.Si.TIER_2 && null != ej && ej.hasHadPremium() && $ && null == X && (0, u.aQ)(em), eb = (0, _.N)(J), ey = !eC && null != eb && null != en && F.nG[eb.trial_id].skus.includes(en), eL = (0, m.Ng)(), ev = null == eL || null == (n = eL.discount) ? true : n.plan_ids.some(e => F.GP[e].skuId === en), eS = !eC && null != eL && null != en && ev, eO = null != (l = ey || eS) && l, eE = i.useMemo(() => (0, P.V7)({
     skuId: en,
-    isPremium: es,
-    multiMonthPlans: eg ? em : [],
+    isPremium: eo,
+    multiMonthPlans: eg ? e_ : [],
     currentSubscription: X,
     defaultPlanId: el
-  }), [en, es, em, X, eg, el]), eP = eS && eE.includes(F.Xh.PREMIUM_MONTH_TIER_2) ? F.Xh.PREMIUM_MONTH_TIER_2 : eE[0], ew = (0, o.e7)([S.Z], () => S.Z.get(eP)), ek = [{
+  }), [en, eo, e_, X, eg, el]), eP = eS && eE.includes(F.Xh.PREMIUM_MONTH_TIER_2) ? F.Xh.PREMIUM_MONTH_TIER_2 : eE[0], ew = (0, s.e7)([S.Z], () => S.Z.get(eP)), ek = [{
     planId: null == ew ? true : ew.id,
     quantity: 1
   }], [eM, eI] = i.useState(eO), [eT, eA] = (0, p.ED)({
@@ -115,7 +115,7 @@ function K(e) {
     eB = eN && null == X && !!eO && (null == eT ? true : eT.subscriptionPeriodEnd) == null,
     eH = !eC && (null == ew ? true : ew.skuId) === F.Si.TIER_2 && (null == eb ? true : eb.referrer_id) != null,
     eU = null,
-    eF = (0, j.H)(s.I.PAYMENT_MODAL_BANNER);
+    eF = (0, j.H)(o.I.PAYMENT_MODAL_BANNER);
   return (eU = eC || en !== F.Si.TIER_2 || null == eF || "paymentModalBanner" !== eF.properties.properties.oneofKind ? null != ep ? ep : eH ? (0, r.jsx)(y.Z, {}) : (0, r.jsx)(b.Z, {}) : (0, r.jsx)(g.h, {
     componentId: eF.id,
     promotionBannerMarketingComponentFields: eF.properties.properties.paymentModalBanner
@@ -138,7 +138,7 @@ function K(e) {
         planGroup: W,
         subscriptionPeriodEnd: null == eT ? true : eT.subscriptionPeriodEnd,
         discountInvoiceItems: eS ? null == eT ? true : eT.invoiceItems : true,
-        useCompactGiftComponents: ef,
+        useCompactGiftComponents: ex,
         handleClose: Q
       }), eN && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("hr", {
@@ -151,11 +151,11 @@ function K(e) {
         })]
       })]
     }), (0, r.jsxs)(Z.O3, {
-      children: [ef && (0, r.jsx)(f.c, {}), (0, r.jsx)(C.mzw, {
+      children: [ex && (0, r.jsx)(x.c, {}), (0, r.jsx)(C.mzw, {
         "data-migration-pending": true,
         justify: c.Z.Justify.BETWEEN,
         align: c.Z.Align.CENTER,
-        className: eo,
+        className: es,
         children: (0, r.jsx)(L.y, {
           onStepChange: z,
           onBackClick: () => z(M.h8.SKU_SELECT),

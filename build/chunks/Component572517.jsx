@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 572517, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => x
+  c: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,40 +15,43 @@ var Chunk951288 = require("./951288.js"),
   Chunk897942 = require("./897942.jsx"),
   Chunk432483 = require("./432483.js");
 
-function x() {
+function f() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    x = (0, Chunk410030.ZP)(),
-    h = (0, Chunk780384.wj)(x),
-    f = (0, Chunk347896.Z)(),
-    _ = null == f ? true : f.planSelectionBanner,
+    f = (0, Chunk410030.ZP)(),
+    h = (0, Chunk780384.wj)(f),
+    x = (0, Chunk347896.Z)(),
+    m = null == x ? true : x.planSelectionBanner,
     {
-      claimableRewards: m
+      claimableRewards: _
     } = (0, Chunk987209.wD)();
-  if (null == _ || null == m) return null;
-  let j = null == (e = _.getBackgroundImageUrl) ? true : module.call(_, h),
+  if (null == m || null == _) return null;
+  let j = null == (e = m.getBackgroundImageUrl) ? true : module.call(m, h),
     g = (0, Chunk717401.Yr)(j),
-    b = null == (t = _.gradientConfig) ? true : exports.call(_, {
+    b = null == (t = m.gradientConfig) ? true : exports.call(m, {
       isDarkMode: h,
       isAndroid: false
     }),
-    y = (0, Chunk717401.Tl)(b);
+    y = (0, Chunk717401.Tl)(b, {
+      colorStops: [0, 12, 100]
+    }),
+    L = (0, Chunk717401.$q)(g, y);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
-    style: null != g ? g : y,
+    style: L,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk432483.avatar,
       children: (0, Chunk951288.jsx)(Chunk897942.Z, {
-        claimableRewards: m,
-        maxRewardImageSrc: _.getImageUrl(h, require),
+        claimableRewards: _,
+        maxRewardImageSrc: m.getImageUrl(h, require),
         size: Chunk481060.EFr.SIZE_40,
-        imageScaling: 2
+        imageScaling: 1.25
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       className: Chunk432483.bannerText,
       color: "always-white",
-      children: _.desktopBannerText(m.length)
+      children: m.desktopBannerText(_.length)
     })]
   })
 }

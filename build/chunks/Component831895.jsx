@@ -17,14 +17,14 @@ var Chunk951288 = require("./951288.js"),
 function p(e) {
   var t, n, l, p;
   let {
-    defaultCategory: x,
+    defaultCategory: f,
     onCategoryChange: h,
-    className: f
-  } = e, [_, m] = i.useState(x), [j, g] = i.useState(null), b = (0, o.Z)(), y = i.useMemo(() => [{
+    className: x
+  } = e, [m, _] = i.useState(f), [j, g] = i.useState(null), b = (0, s.Z)(), y = i.useMemo(() => [{
     name: c.intl.string(c.t["6Zuivx"]),
     value: C.KN.Trick,
     key: "Trick",
-    icon: (0, r.jsx)(s.yDF, {
+    icon: (0, r.jsx)(o.yDF, {
       size: "sm",
       color: "currentColor"
     }),
@@ -34,41 +34,41 @@ function p(e) {
     name: c.intl.string(c.t["2UeOlY"]),
     value: C.KN.Treat,
     key: "Treat",
-    icon: (0, r.jsx)(s.sq, {
+    icon: (0, r.jsx)(o.sq, {
       size: "sm",
       color: "currentColor"
     }),
     onMouseEnter: () => g(C.KN.Treat),
     onMouseLeave: () => g(null)
   }], []), L = i.useCallback(e => {
-    m(e.value), h(e.value)
+    _(e.value), h(e.value)
   }, [h]), v = null == b || null == (n = b.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, S = null == b || null == (p = b.segmentedControlAnimations) || null == (l = p.treat) ? true : l.getAnimationData;
   return (0, r.jsxs)("div", {
-    className: a()(u.container, f),
+    className: a()(u.container, x),
     children: [(0, r.jsx)(d.w, {
       options: y,
-      value: _,
+      value: m,
       onChange: L
     }), j === C.KN.Trick && null != v && (0, r.jsx)("div", {
       className: a()(u.animationOverlay, u.trickAnimation),
-      children: (0, r.jsx)(s.Fmz, {
+      children: (0, r.jsx)(o.Fmz, {
         shouldAnimate: true,
         loop: true,
         autoplay: true,
         className: u.lottieAnimation,
         importData: v,
-        renderer: s.Fmz.Renderers.SVG,
+        renderer: o.Fmz.Renderers.SVG,
         versionKey: +(j === C.KN.Trick)
       })
     }), j === C.KN.Treat && null != S && (0, r.jsx)("div", {
       className: a()(u.animationOverlay, u.treatAnimation),
-      children: (0, r.jsx)(s.Fmz, {
+      children: (0, r.jsx)(o.Fmz, {
         shouldAnimate: true,
         loop: true,
         autoplay: true,
         className: u.lottieAnimation,
         importData: S,
-        renderer: s.Fmz.Renderers.SVG,
+        renderer: o.Fmz.Renderers.SVG,
         versionKey: +(j === C.KN.Treat)
       })
     })]

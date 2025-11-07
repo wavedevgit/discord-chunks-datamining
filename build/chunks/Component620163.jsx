@@ -183,8 +183,8 @@ let eB = () => {
       hasTOTPEnabled: e$,
       developerMode: e0,
       isAdultUser: e1,
-      hasSecureFramesVerifiedUserIds: e2,
-      hasIgnoredUsers: e3,
+      hasSecureFramesVerifiedUserIds: e3,
+      hasIgnoredUsers: e2,
       hasBlockedUsers: e4,
       isEligibleForSensitiveContentDefaults: e8,
       inputMode: e5,
@@ -575,7 +575,7 @@ let eB = () => {
         section: eP.oAB.DATA_AND_PRIVACY,
         searchableTitles: [eD.intl.string(eD.t["5b3FNI"])],
         parent: eN.s6.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-        predicate: () => e2
+        predicate: () => e3
       },
       [eN.s6.PRIVACY_FAMILY_CENTER]: {
         section: eP.oAB.FAMILY_CENTER,
@@ -671,7 +671,7 @@ let eB = () => {
         parent: eN.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
         label: eD.intl.string(eD.t["3wRort"]),
         element: eT.ZP,
-        predicate: () => e3 || e4
+        predicate: () => e2 || e4
       },
       [eN.s6.BLOCKED_USERS]: {
         section: eP.oAB.CONTENT_AND_SOCIAL,
@@ -687,7 +687,7 @@ let eB = () => {
         searchableTitles: [eD.intl.string(eD.t["93ZDWE"])],
         label: eD.intl.string(eD.t["93ZDWE"]),
         element: eT.yo,
-        predicate: () => e3
+        predicate: () => e2
       },
       [eN.s6.PREMIUM]: {
         section: eP.oAB.PREMIUM,

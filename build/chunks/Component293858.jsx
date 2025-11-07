@@ -53,10 +53,10 @@ function y(e) {
       sendGiftMessage: F,
       claimableRewards: G,
       selectedGiftingPromotionReward: D
-    } = (0, x.wD)(),
+    } = (0, f.wD)(),
     {
       confirmationFooter: K
-    } = (0, f.zb)(),
+    } = (0, x.zb)(),
     z = (0, d.id)(k, N, G),
     V = (0, C.Z)(),
     W = (0, d.a5)(k),
@@ -72,7 +72,7 @@ function y(e) {
       onSubscriptionConfirmation: y
     })
   }, [F, N, R, B, H, U, y]), i.useEffect(() => {
-    null != V && null != V.reminderNotice && z && (0, o.wH)(s.z.GIFTING_PROMOTION_REMINDER, V.dismissibleContentVersion, {
+    null != V && null != V.reminderNotice && z && (0, s.wH)(o.z.GIFTING_PROMOTION_REMINDER, V.dismissibleContentVersion, {
       dismissAction: b.L.INDIRECT_ACTION
     })
   }, [V, z]);
@@ -117,9 +117,9 @@ function y(e) {
     }, e))
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(_.C3, {
+    children: [(0, r.jsxs)(m.C3, {
       children: [(0, r.jsx)(g.Z, {}), t]
-    }), null != K && K, J && null != Y && (0, r.jsx)(m.Z, {
+    }), null != K && K, J && null != Y && (0, r.jsx)(_.Z, {
       onClose: Q,
       selectedPromotionalDecoPurchaseRecord: Y,
       selectedGiftingPromotionReward: D

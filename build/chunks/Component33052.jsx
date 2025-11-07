@@ -24,7 +24,9 @@ function f() {
     _ = null == f ? true : f.planSelection;
   if (null == _ || null == require || 0 === require.length) return null;
   let p = (0, Chunk717401.Yr)(null == (e = _.getBannerImageUrl) ? true : module.call(_)),
-    h = (0, Chunk717401.Tl)(_.gradientConfig, 180);
+    h = (0, Chunk717401.Tl)(_.gradientConfig, {
+      defaultAngle: 180
+    });
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk897159.promotionalGiftMessage,
     style: null != p ? p : h,

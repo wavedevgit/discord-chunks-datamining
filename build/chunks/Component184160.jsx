@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 184160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  x: () => x
+  x: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,24 +16,24 @@ var Chunk512722 = require("./512722.js"),
   Chunk614223 = require("./614223.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e) {
+function f(e) {
   let {
     handleStepChange: t,
     handleClose: n
   } = e, {
     activeSubscription: i,
-    selectedSkuId: x,
+    selectedSkuId: f,
     setSelectedPlanId: h,
-    startedPaymentFlowWithPaymentSourcesRef: f
+    startedPaymentFlowWithPaymentSourcesRef: x
   } = (0, d.JL)(), {
-    isGift: _
-  } = (0, C.wD)(), m = null != i ? (0, o.Af)(i) : null, j = null != m ? (0, o.gq)(m.planId) : null, g = null != m ? (0, o.Rd)(m.planId) : null, b = (0, u.Kp)({
+    isGift: m
+  } = (0, C.wD)(), _ = null != i ? (0, s.Af)(i) : null, j = null != _ ? (0, s.gq)(_.planId) : null, g = null != _ ? (0, s.Rd)(_.planId) : null, b = (0, u.Kp)({
     isTrial: false,
-    isGift: _,
-    selectedSkuId: x,
-    startedPaymentFlowWithPaymentSources: f.current
+    isGift: m,
+    selectedSkuId: f,
+    startedPaymentFlowWithPaymentSources: x.current
   });
-  return l()(null != g, "Expected premium type"), (0, r.jsx)(s.Z, {
+  return l()(null != g, "Expected premium type"), (0, r.jsx)(o.Z, {
     premiumType: g,
     titleText: p.intl.string(p.t["7VcWW0"]),
     subtitleText: p.intl.format(p.t.Qk34Ik, {
@@ -46,7 +46,7 @@ function x(e) {
         variant: "primary",
         text: p.intl.string(p.t["3PatSz"]),
         onClick: () => {
-          b ? (h((0, u.nA)(x, i)), t(c.h8.REVIEW)) : t(c.h8.PLAN_SELECT)
+          b ? (h((0, u.nA)(f, i)), t(c.h8.REVIEW)) : t(c.h8.PLAN_SELECT)
         }
       }), (0, r.jsx)(a.Button, {
         variant: "secondary",
