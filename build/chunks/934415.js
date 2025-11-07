@@ -45,7 +45,7 @@ function I(e, t) {
   return e === t || e === O
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let i = h.Hn;
   return ((0, c.r8)(t) || t === O) && (i = r.IH(i, g.Plq.VIEW_CHANNEL)), I(t, y) && (i = r.IH(i, g.Plq.VIEW_CHANNEL), i = r.IH(i, g.Plq.CONNECT)), {
     id: e,
@@ -55,7 +55,7 @@ function T(e, t, n) {
   }
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   let i = h.Hn;
   return ((0, c.r8)(t) || t === O) && (i = r.IH(i, g.Plq.VIEW_CHANNEL)), (I(t, y) || I(t, v)) && (i = r.IH(i, g.Plq.VIEW_CHANNEL), i = r.IH(i, g.Plq.CONNECT)), {
     id: e,
@@ -68,17 +68,17 @@ function S(e, t, n) {
 function A(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     a = [];
-  return (n.length > 0 || r) && a.push(T(e, t, i.BN.ROLE)), n.forEach(e => {
-    a.push(S(e, t, i.BN.ROLE))
+  return (n.length > 0 || r) && a.push(S(e, t, i.BN.ROLE)), n.forEach(e => {
+    a.push(T(e, t, i.BN.ROLE))
   }), a
 }
 
 function C(e, t) {
-  return S(e, t, i.BN.MEMBER)
+  return T(e, t, i.BN.MEMBER)
 }
 
 function N(e, t) {
-  return S(e, t, i.BN.ROLE)
+  return T(e, t, i.BN.ROLE)
 }
 
 function R(e) {

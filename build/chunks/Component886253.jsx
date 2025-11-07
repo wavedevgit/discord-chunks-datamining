@@ -34,15 +34,15 @@ function b(e) {
     var e;
     return null != (e = l.Z.getApplication(t)) ? e : c.Z.getApplicationRecord(t)
   }, [t]), {
-    data: T
+    data: S
   } = (0, u.Z)(n);
   if (null == I) return null;
-  let S = (0, f.y)(I, 25),
+  let T = (0, f.y)(I, 25),
     {
       termsOfServiceUrl: A,
       privacyPolicyUrl: C
     } = I;
-  if ((null == T ? true : T.applicationId) !== t) return (0, r.jsx)(a.Modal, {
+  if ((null == S ? true : S.applicationId) !== t) return (0, r.jsx)(a.Modal, {
     actions: [{
       onClick: y,
       text: m.intl.string(m.t.BddRzS),
@@ -59,8 +59,8 @@ function b(e) {
       children: m.intl.string(m.t.omH3bq)
     })
   });
-  let N = null != S ? (0, r.jsx)("img", {
-    src: S.href,
+  let N = null != T ? (0, r.jsx)("img", {
+    src: T.href,
     alt: "",
     className: g.appIcon
   }) : true;

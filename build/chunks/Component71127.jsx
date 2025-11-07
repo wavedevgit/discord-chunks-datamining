@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 71127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -16,23 +16,23 @@ function u(e) {
   let {
     channel: t,
     maxWidth: n
-  } = e, u = (0, r.jsx)(o.ZP.Icon, {
-    icon: i.Dio,
+  } = e, u = (0, i.jsx)(o.ZP.Icon, {
+    icon: r.Dio,
     tooltip: c.intl.string(c.t.cpT0Cq),
     onClick: () => l.Z.toggleParticipantsList(t.id, false)
   });
-  return (0, r.jsx)(a.Z, {
+  return (0, i.jsx)(a.Z, {
     sidebarType: a.y.ParticipantsSidebar,
     maxWidth: n,
     floatingLayer: s.ZP,
-    children: (0, r.jsxs)(o.ZP, {
+    children: (0, i.jsxs)(o.ZP, {
       toolbar: u,
       "aria-label": c.intl.string(c.t["jNqDh/"]),
-      children: [(0, r.jsx)(o.ZP.Icon, {
-        icon: i.BFJ,
+      children: [(0, i.jsx)(o.ZP.Icon, {
+        icon: r.BFJ,
         disabled: true,
         "aria-label": c.intl.string(c.t["jNqDh/"])
-      }), (0, r.jsx)(o.ZP.Title, {
+      }), (0, i.jsx)(o.ZP.Title, {
         children: c.intl.string(c.t["jNqDh/"])
       })]
     })

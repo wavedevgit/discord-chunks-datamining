@@ -103,12 +103,12 @@ function m(e) {
   }, [n]);
   let {
     focusPath: I
-  } = y, [T, S] = r.useState(false), [A, C] = r.useState(E), [{
+  } = y, [S, T] = r.useState(false), [A, C] = r.useState(E), [{
     onItemFocusMemoizer: N,
     onItemMouseEnterMemoizer: R
   }] = r.useState(() => ({
     onItemFocusMemoizer: new o.$o(e => () => {
-      S(true), O({
+      T(true), O({
         type: i.B.SET_FOCUS_PATH,
         path: e.split(d)
       })
@@ -142,14 +142,14 @@ function m(e) {
         null == i || i.click()
     }
   }, [v, t, I, c, g]), w = r.useCallback(() => {
-    T || S(true)
-  }, [T]), D = r.useCallback(e => {
-    e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && T && S(false)
-  }, [T]), x = r.useCallback(() => {
+    S || T(true)
+  }, [S]), D = r.useCallback(e => {
+    e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && S && T(false)
+  }, [S]), x = r.useCallback(() => {
     O({
       type: i.B.SET_FOCUS_PATH,
       path: []
-    }), S(false)
+    }), T(false)
   }, []), L = r.useCallback(e => e.every((e, t) => I[t] === e), [I]), M = r.useCallback(() => ({
     role: "menu",
     id: t,

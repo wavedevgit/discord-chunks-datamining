@@ -32,15 +32,15 @@ let b = Date.now(),
   O = false,
   v = false,
   I = false,
-  T = false;
+  S = false;
 
-function S() {
-  return v || I || (0, Chunk358085.isAndroid)() && T
+function T() {
+  return v || I || (0, Chunk358085.isAndroid)() && S
 }
 
 function A() {
   let e = Chunk695346.CM.getSetting();
-  0 === module || null != r || Date.now() - b > Math.min(module * Chunk70956.Z.Millis.SECOND, Chunk981631.OSm) || S() ? O || Chunk570140.Z.dispatch({
+  0 === module || null != r || Date.now() - b > Math.min(module * Chunk70956.Z.Millis.SECOND, Chunk981631.OSm) || T() ? O || Chunk570140.Z.dispatch({
     type: "AFK",
     afk: true
   }) : O && Chunk570140.Z.dispatch({
@@ -50,7 +50,7 @@ function A() {
 }
 
 function C() {
-  Date.now() - b > Chunk981631.OSm || S() ? y || Chunk570140.Z.dispatch({
+  Date.now() - b > Chunk981631.OSm || T() ? y || Chunk570140.Z.dispatch({
     type: "IDLE",
     idle: true,
     idleSince: b
@@ -124,7 +124,7 @@ function L(e) {
   let {
     state: t
   } = e;
-  return T = t === m.$7l.BACKGROUND, r = null, b = Date.now(), N(), false
+  return S = t === m.$7l.BACKGROUND, r = null, b = Date.now(), N(), false
 }
 
 function M(e) {

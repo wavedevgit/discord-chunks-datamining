@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   LO: () => N,
-  On: () => S,
+  On: () => T,
   Vv: () => I,
-  _: () => T,
+  _: () => S,
   bp: () => R,
   ef: () => v,
   s6: () => O,
@@ -97,7 +97,7 @@ function I(e, t) {
   }), y("VOICE_STATE_UPDATE", e)
 }
 
-function T(e) {
+function S(e) {
   o.Z.dispatch({
     type: "REMOTE_COMMAND",
     sessionId: e,
@@ -107,7 +107,7 @@ function T(e) {
   }), y("DISCONNECT", e), O()
 }
 
-function S(e, t, n, r) {
+function T(e, t, n, r) {
   let i = (0, l.z)(n);
   null != i && (o.Z.dispatch({
     type: "REMOTE_COMMAND",

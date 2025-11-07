@@ -1,34 +1,35 @@
-/** Chunk was on 35755 **/
-/** chunk id: 888617, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 888617, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk990547 = require("./990547.js"),
   Chunk213609 = require("./213609.js"),
   Chunk541099 = require("./541099.js"),
   Chunk312871 = require("./312871.js");
 
-function o(e) {
+function s(e) {
   let {
     sectionName: t,
     numItems: n,
-    numVisibleItems: o
-  } = e;
+    numVisibleItems: s
+  } = e, l = () => {
+    (0, i.h)({
+      type: r.ImpressionTypes.VIEW,
+      name: r.ImpressionNames.APP_LAUNCHER_SECTION,
+      properties: {
+        section_name: t,
+        num_items: n,
+        num_visible_items: s,
+        source: a.Z.entrypoint()
+      }
+    })
+  }, c = 1;
   return {
-    trackSectionImpressionRef: (0, a.Z)({
-      onVisible: () => {
-        (0, l.h)({
-          type: i.ImpressionTypes.VIEW,
-          name: i.ImpressionNames.APP_LAUNCHER_SECTION,
-          properties: {
-            section_name: t,
-            num_items: n,
-            num_visible_items: o,
-            source: r.Z.entrypoint()
-          }
-        })
-      },
-      threshold: 1
+    trackSectionImpressionRef: (0, o.Z)({
+      onVisible: l,
+      threshold: c
     })
   }
 }

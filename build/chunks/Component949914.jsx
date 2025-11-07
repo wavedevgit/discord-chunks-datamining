@@ -133,7 +133,7 @@ let k = e => {
     } = (0, E.uP)(null == l ? true : l.id), V = (null == t ? true : t.paymentGateway) === D.gg$.APPLE_PARTNER;
     if (null == a || null == n || null == y) return null;
     let H = () => {
-        null != l && ((0, v.uL)(D.Z5c.CHANNEL(l.id, x.oC.ROLE_SUBSCRIPTIONS)), (0, T.default)(), f.Z.show(D.kVF.BACK_TO_PREVIOUS_SCREEN, true, M.intl.string(M.t.DvbaM4), () => (0, S.openUserSettings)(I.n.SUBSCRIPTIONS_PANEL, {
+        null != l && ((0, v.uL)(D.Z5c.CHANNEL(l.id, x.oC.ROLE_SUBSCRIPTIONS)), (0, S.default)(), f.Z.show(D.kVF.BACK_TO_PREVIOUS_SCREEN, true, M.intl.string(M.t.DvbaM4), () => (0, T.openUserSettings)(I.n.SUBSCRIPTIONS_PANEL, {
           section: D.oAB.SUBSCRIPTIONS,
           subsection: L.cP
         })))

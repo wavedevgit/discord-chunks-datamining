@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,9 +75,9 @@ function R(e) {
     required: a,
     label: o
   } = t;
-  return (0, r.jsx)(l.g, A(T({}, t), {
+  return (0, r.jsx)(l.g, A(S({}, t), {
     "data-mana-component": "select",
-    children: (0, r.jsx)(P, A(T({}, n), {
+    children: (0, r.jsx)(P, A(S({}, n), {
       id: i,
       required: a,
       label: o
@@ -93,7 +93,7 @@ function P(e) {
     disabled: l,
     readOnly: _,
     autoFocus: I,
-    clearable: S,
+    clearable: T,
     fullWidth: R,
     closeOnSelect: P = true,
     shouldFocusWrap: x,
@@ -157,16 +157,16 @@ function P(e) {
           eo && (e.preventDefault(), null == (o = Y.current) || null == (a = o.lastChild) || a.focus());
           break;
         case "Escape":
-          eo && S && (e.preventDefault(), e.stopPropagation(), ef())
+          eo && T && (e.preventDefault(), e.stopPropagation(), ef())
       }
-    }, [ef, eo, S, K, es]),
+    }, [ef, eo, T, K, es]),
     ep = i.useMemo(() => {
       let e = Array.isArray(V) ? V : [V];
       return ee.filter(t => (0, b._s)(t.value, e))
     }, [V, ee]),
     eh = i.useMemo(() => {
-      if (!R) return "".concat(Math.max(null != el ? el : 200, 200) * ("multiple" === t ? 1.5 : 1) + !!S * C + N + 8, "px")
-    }, [R, el, t, S]),
+      if (!R) return "".concat(Math.max(null != el ? el : 200, 200) * ("multiple" === t ? 1.5 : 1) + !!T * C + N + 8, "px")
+    }, [R, el, t, T]),
     em = i.useCallback(e => {
       if (es) return;
       let n = Array.from(e);
@@ -207,12 +207,12 @@ function P(e) {
   }, 10)), () => {
     null != eO.current && clearTimeout(eO.current)
   }), [et, $, W]), (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(m.q, A(T({
+    children: [(0, r.jsx)(m.q, A(S({
       ref: eb,
       disabled: l,
       readOnly: _,
       loading: et,
-      clearable: S,
+      clearable: T,
       fullWidth: R,
       isOpen: W,
       isInert: es,
@@ -225,7 +225,7 @@ function P(e) {
       children: (0, r.jsxs)(f.kL8, {
         "aria-label": M,
         buttonRef: er,
-        buttonProps: A(T({}, null != n ? {
+        buttonProps: A(S({}, null != n ? {
           id: n
         } : {}), {
           style: {
@@ -267,11 +267,11 @@ function P(e) {
       selectedItems: ep,
       onSelectionChange: em,
       listItems: ee
-    }), !R && ec, !es && W && (0, r.jsx)("div", A(T({
+    }), !R && ec, !es && W && (0, r.jsx)("div", A(S({
       ref: z.setFloating,
       className: v.selectDropdown
     }, Q()), {
-      style: T({}, q, J),
+      style: S({}, q, J),
       children: (0, r.jsx)(f.VqE, {
         children: (0, r.jsx)(d.w, {
           id: $,
@@ -281,7 +281,7 @@ function P(e) {
           selectedItems: ep,
           onSelectionChange: em,
           shouldFocusWrap: x,
-          renderListItem: e => (0, r.jsx)(h.W, T({}, e)),
+          renderListItem: e => (0, r.jsx)(h.W, S({}, e)),
           maxVisibleItems: G,
           loading: et,
           typeahead: true
@@ -315,7 +315,7 @@ function w(e, t) {
         selectedItems: [],
         onSelectionChange: () => {},
         shouldFocusWrap: false,
-        renderListItem: e => (0, r.jsx)(h.W, T({}, e))
+        renderListItem: e => (0, r.jsx)(h.W, S({}, e))
       })
     }), [e, t, o, n])
   }
@@ -343,7 +343,7 @@ function D(e) {
     items: i,
     layout: "inline",
     onRemove: a
-  }) : (0, r.jsx)(h.W, A(T({}, i[0]), {
+  }) : (0, r.jsx)(h.W, A(S({}, i[0]), {
     inInput: true
   }))
 }

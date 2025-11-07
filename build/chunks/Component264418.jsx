@@ -84,8 +84,8 @@ function O(e) {
       size: O = "md",
       actions: v,
       textLink: I,
-      gradientColor: T,
-      onRequestClose: S,
+      gradientColor: S,
+      onRequestClose: T,
       popoverRef: A,
       position: C,
       caretConfig: N,
@@ -97,10 +97,10 @@ function O(e) {
     align: null != (t = null == N ? true : N.align) ? t : "center",
     customOffset: null == N ? true : N.customOffset
   }), M = i.useCallback((e, t) => {
-    null == S || S(t)
-  }, [S]), j = i.useCallback(() => {
-    null == S || S("user:explicit")
-  }, [S]), k = i.useCallback(e => {
+    null == T || T(t)
+  }, [T]), j = i.useCallback(() => {
+    null == T || T("user:explicit")
+  }, [T]), k = i.useCallback(e => {
     D(e), L(t => E(m({}, t), {
       position: (0, _.z)(e)
     }))
@@ -108,7 +108,7 @@ function O(e) {
   return (0, r.jsx)(l.m, E(m({}, P), {
     position: w,
     onRequestClose: M,
-    gradientColor: T,
+    gradientColor: S,
     onPositionChange: k,
     scrollBehavior: R,
     children: (0, r.jsxs)("div", {
@@ -116,7 +116,7 @@ function O(e) {
       "data-mana-component": "popover",
       children: [(0, r.jsx)(d.u, {
         onClick: j,
-        variant: null != T ? "color-mix" : true
+        variant: null != S ? "color-mix" : true
       }), null != y && (0, r.jsx)("div", {
         className: o()(p.graphic, {
           [p["graphic--".concat(O)]]: null != O

@@ -32,8 +32,8 @@ let g = "33kozedd0zs6fbauka98psnc7zwom2s",
   O = "https://api.twitch.tv/helix",
   v = /live_user_(.*)-\{width\}/,
   I = 128,
-  T = null,
-  S = 0,
+  S = null,
+  T = 0,
   A = null,
   C = new Set,
   N = {};
@@ -72,7 +72,7 @@ class D {
     this._started || (this._started = true, Chunk553795.Z.isFetching() ? Chunk457330.Z.fetch() : this._check())
   }
   stop() {
-    this._started = false, A = null, S = 0, null != this._nextCheck && clearTimeout(this._nextCheck), Chunk570140.Z.dispatch({
+    this._started = false, A = null, T = 0, null != this._nextCheck && clearTimeout(this._nextCheck), Chunk570140.Z.dispatch({
       type: "STREAMING_UPDATE",
       stream: null
     })
@@ -163,7 +163,7 @@ class D {
     null != this._nextCheck && clearTimeout(this._nextCheck);
     let t = [Chunk981631.ABu.TWITCH],
       n = Date.now();
-    S <= require && (exports.push(Chunk981631.ABu.YOUTUBE), S = require + y), Promise.allSettled(module.filter(e => t.includes(e.type)).map(e => e.type === h.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
+    T <= require && (exports.push(Chunk981631.ABu.YOUTUBE), T = require + y), Promise.allSettled(module.filter(e => t.includes(e.type)).map(e => e.type === h.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
       if (this._started) {
         var t;
         let n = null == (t = e.find(e => "fulfilled" === e.status && null != e.value)) ? true : t.value;
@@ -190,15 +190,15 @@ function L() {
 
 function M(e) {
   var t;
-  if (a()(e.stream, T)) returnfalse;
-  T = null != (t = e.stream) ? t : null
+  if (a()(e.stream, S)) returnfalse;
+  S = null != (t = e.stream) ? t : null
 }
 class j extends(r = Chunk442837.ZP.Store) {
   initialize() {
     L(), this.waitFor(Chunk553795.Z, Chunk246946.Z), this.syncWith([Chunk246946.Z], L)
   }
   getStream() {
-    return T
+    return S
   }
 }
 m(j, "displayName", "ExternalStreamingStore");

@@ -1,7 +1,7 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 921235, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 }), require("./388685.js"), require("./583741.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,63 +22,63 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk315146 = require("./315146.js");
-let O = "749054660769218631";
+let x = "749054660769218631";
 
-function x(e) {
+function O(e) {
   var t;
   let {
     channel: n
-  } = e, [l, x] = i.useState("");
-  i.useEffect(() => {
+  } = e, [l, O] = r.useState("");
+  r.useEffect(() => {
     (0, u.FQ)("847199849233514549", true)
   }, []);
-  let E = (0, o.e7)([h.Z, f.default], () => !!a()(h.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== f.default.getId() && e.state === y.yb.SENT && !(0, _.Z)(e))),
+  let E = (0, o.e7)([h.Z, f.default], () => !!a()(h.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== f.default.getId() && e.state === C.yb.SENT && !(0, y.Z)(e))),
     j = (0, o.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
-    S = null != (t = b.ZP.useName(j)) ? t : C.intl.string(C.t.y1Wu2f),
-    P = (0, o.e7)([d.Z], () => d.Z.getStickerById(O)),
-    I = i.useCallback(async () => {
+    S = null != (t = b.ZP.useName(j)) ? t : _.intl.string(_.t.y1Wu2f),
+    P = (0, o.e7)([d.Z], () => d.Z.getStickerById(x)),
+    I = r.useCallback(async () => {
       if (null == l || "" === l) try {
-        await c.Z.sendGreetMessage(n.id, O), g.default.track(y.rMx.DM_EMPTY_ACTION, {
+        await c.Z.sendGreetMessage(n.id, x), g.default.track(C.rMx.DM_EMPTY_ACTION, {
           channel_id: n.id,
           channel_type: n.type,
           source: "Wave",
           type: "Send wave"
         })
       } catch (e) {
-        e.ok || 429 !== e.status || x(C.intl.string(C.t.Whhv4w))
+        e.ok || 429 !== e.status || O(_.intl.string(_.t.Whhv4w))
       }
     }, [n.id, n.type, l]),
-    Z = C.intl.formatToPlainString(C.t.m0zYbV, {
+    Z = _.intl.formatToPlainString(_.t.m0zYbV, {
       username: S
     }),
-    T = null != l && "" !== l ? (0, r.jsx)(s.Text, {
+    T = null != l && "" !== l ? (0, i.jsx)(s.Text, {
       className: v.error,
       color: "text-danger",
       variant: "text-sm/normal",
       children: l
     }) : null;
-  return E ? (0, r.jsxs)("div", {
+  return E ? (0, i.jsxs)("div", {
     className: v.containerCompact,
-    children: [(0, r.jsxs)(s.P3F, {
+    children: [(0, i.jsxs)(s.P3F, {
       className: null != l && "" !== l ? v.compactButtonDisabled : v.compactButton,
-      "aria-label": C.intl.string(C.t.pJObYI),
+      "aria-label": _.intl.string(_.t.pJObYI),
       onClick: I,
-      children: [(0, r.jsx)(p.Z, {
+      children: [(0, i.jsx)(p.Z, {
         sticker: P,
         size: 24
-      }), (0, r.jsx)(s.Text, {
+      }), (0, i.jsx)(s.Text, {
         className: v.text,
         variant: "text-md/medium",
         children: Z
       })]
     }), T]
-  }) : (0, r.jsxs)("div", {
+  }) : (0, i.jsxs)("div", {
     className: v.containerExpanded,
-    children: [(0, r.jsx)(p.Z, {
+    children: [(0, i.jsx)(p.Z, {
       sticker: P,
       size: 160,
       className: v.stickerExpanded
-    }), (0, r.jsx)(s.Button, {
+    }), (0, i.jsx)(s.Button, {
       fullWidth: true,
       variant: "primary",
       size: "md",

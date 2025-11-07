@@ -60,8 +60,8 @@ function E(e) {
       step: O,
       stepConfigs: v,
       setBodyNode: I,
-      setFooterNode: T,
-      setModalOverlayNode: S,
+      setFooterNode: S,
+      setModalOverlayNode: T,
       setReadySlideId: A,
       premiumBrandRefreshBackgroundClassName: C,
       selectedSkuId: N,
@@ -71,8 +71,8 @@ function E(e) {
     w = null != N && N in _.y7,
     D = v.find(e => e.key === O);
   i.useEffect(() => {
-    S(null)
-  }, [O, S]), l()(null != D, "Unknown step for current payment flow.");
+    T(null)
+  }, [O, T]), l()(null != D, "Unknown step for current payment flow.");
   let x = null != (c = null == D || null == (t = D.options) ? true : t.hideSlider) && c,
     L = null == D || null == (n = D.options) ? true : n.bodyClassName,
     M = null == D || null == (a = D.options) ? true : a.sliderBodyClassName;
@@ -113,10 +113,10 @@ function E(e) {
           }, e.key))
         })
       }), (0, r.jsx)("div", {
-        ref: e => T(e)
+        ref: e => S(e)
       }), (0, r.jsx)("div", {
         ref: e => {
-          S(e)
+          T(e)
         }
       })]
     })]

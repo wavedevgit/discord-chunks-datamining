@@ -32,8 +32,8 @@ let y = [Chunk186901.ff.AUTHENTICATION_FAILED, Chunk186901.ff.NOT_ENTITLED],
   O = "DispatchManagerStore",
   v = [],
   I = [],
-  T = false,
-  S = null,
+  S = false,
+  T = null,
   A = null,
   C = false,
   N = new Map,
@@ -43,14 +43,14 @@ let y = [Chunk186901.ff.AUTHENTICATION_FAILED, Chunk186901.ff.NOT_ENTITLED],
 function w() {
   let e = {
     queue: v,
-    paused: T,
+    paused: S,
     userActions: Array.from(N)
   };
   Chunk433517.K.set(O, module)
 }
 
 function D(e, t) {
-  return null != S && S.applicationId === e && S.branchId === t || null != A && A.applicationId === e && A.branchId === t
+  return null != T && T.applicationId === e && T.branchId === t || null != A && A.applicationId === e && A.branchId === t
 }
 
 function x() {
@@ -86,7 +86,7 @@ function M(e, t, n, r) {
     o = I.indexOf(i);
   false !== o && I.splice(o, 1);
   let s = L(e, t);
-  0 !== s && (n ? false === s && (v.push(a), x()) : (s > 0 && v.splice(s, 1), v.unshift(a), x())), !n && T && p.Z.resume(), w()
+  0 !== s && (n ? false === s && (v.push(a), x()) : (s > 0 && v.splice(s, 1), v.unshift(a), x())), !n && S && p.Z.resume(), w()
 }
 
 function j(e, t) {
@@ -140,7 +140,7 @@ function F(e) {
     branchId: n
   } = e, r = L(t, n);
   if (r < 1) returnfalse;
-  v.splice(0, 0, v.splice(r, 1)[0]), x(), T && p.Z.resume(), w()
+  v.splice(0, 0, v.splice(r, 1)[0]), x(), S && p.Z.resume(), w()
 }
 
 function V(e) {
@@ -155,9 +155,9 @@ function H(e) {
   let {
     state: t
   } = e;
-  !C && (C = true, x(), T || p.Z.resume());
-  let n = T;
-  T = t.paused, S = t.currentTask, A = t.nextTask;
+  !C && (C = true, x(), S || p.Z.resume());
+  let n = S;
+  S = t.paused, T = t.currentTask, A = t.nextTask;
   let r = false;
   v = v.filter(e => {
     let {
@@ -180,7 +180,7 @@ function H(e) {
       return r = true, false
     }
     returntrue
-  }), x(), (r || n !== T) && w()
+  }), x(), (r || n !== S) && w()
 }
 
 function Y() {
@@ -215,7 +215,7 @@ function W(e) {
 function K() {
   for (let e of Chunk594190.ZP.getRunningDiscordApplicationIds()) Chunk51025.al(module, module);
   let e = Chunk594190.ZP.getVisibleGame();
-  return T || null == module || module.pid === P || Chunk51025.wO(), P = null == module ? null : module.pid, false
+  return S || null == module || module.pid === P || Chunk51025.wO(), P = null == module ? null : module.pid, false
 }
 
 function z() {
@@ -240,7 +240,7 @@ class Q extends(r = Chunk442837.ZP.Store) {
       paused: null,
       userActions: null
     };
-    null != exports.queue && (v = X(exports.queue)), null != exports.paused && (T = exports.paused), null != exports.userActions && (N = new Map(Array.from(exports.userActions))), this.waitFor(Chunk417363.Z, Chunk594190.ZP), this.syncWith([Chunk594190.ZP], K), this.waitFor(Chunk173747.Z, Chunk314897.default, Chunk417363.Z)
+    null != exports.queue && (v = X(exports.queue)), null != exports.paused && (S = exports.paused), null != exports.userActions && (N = new Map(Array.from(exports.userActions))), this.waitFor(Chunk417363.Z, Chunk594190.ZP), this.syncWith([Chunk594190.ZP], K), this.waitFor(Chunk173747.Z, Chunk314897.default, Chunk417363.Z)
   }
   get activeItems() {
     return v.map(e => {
@@ -254,7 +254,7 @@ class Q extends(r = Chunk442837.ZP.Store) {
     return I.map(Chunk780570.CP)
   }
   get paused() {
-    return T
+    return S
   }
   getQueuePosition(e, t) {
     return L(e, t)

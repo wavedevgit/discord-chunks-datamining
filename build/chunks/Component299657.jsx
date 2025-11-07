@@ -48,7 +48,7 @@ let k = function(e) {
       sourceAnalyticsLocations: a,
       analyticsLocations: k
     } = (0, h.ZP)(p.Z.PREMIUM_MARKETING),
-    U = (0, s.e7)([T.Z], () => T.Z.hasFetchedSubscriptions()),
+    U = (0, s.e7)([S.Z], () => S.Z.hasFetchedSubscriptions()),
     G = (0, s.e7)([I.Z], () => I.Z.hasFetchedPaymentSources),
     B = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
     Z = null == B ? true : B.id,
@@ -70,7 +70,7 @@ let k = function(e) {
       await Promise.all([u.jg(), u.tZ(), (0, d.Y2)(null, null, M.JjL.DISCOVERY)]), K.current = Date.now() - e, W(false)
     })
   }, []), i.useEffect(() => {
-    Y || S.default.track(M.rMx.PREMIUM_MARKETING_PAGE_VIEWED, {
+    Y || T.default.track(M.rMx.PREMIUM_MARKETING_PAGE_VIEWED, {
       location_stack: a,
       load_duration_ms: K.current
     })

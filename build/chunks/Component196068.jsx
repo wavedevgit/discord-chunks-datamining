@@ -33,13 +33,13 @@ let v = e => {
   }, {
     autoTrackExposure: false,
     disable: v
-  }), T = i.useCallback(() => {
+  }), S = i.useCallback(() => {
     p.default.track(E.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, f.openUserSettings)(d.n.GIFT_PANEL, {
       section: E.oAB.INVENTORY
     }), u.ZP.dismissOutboundPromotionNotice()
   }, []);
   if (null == n) return null;
-  let S = e => (0, r.jsxs)(s.qXd, {
+  let T = e => (0, r.jsxs)(s.qXd, {
     color: s.DM8.PREMIUM_TIER_2,
     children: [(0, r.jsx)(s.RyX, {
       noticeType: E.kVF.OUTBOUND_PROMOTION,
@@ -53,7 +53,7 @@ let v = e => {
     }), I ? y.intl.string(y.t["5JMiOo"]) : y.intl.string(y.t["Pzh+G2"]), (0, r.jsx)(s.NoS, {
       noticeType: E.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
-        T(), null !== e && e(g.L.TAKE_ACTION)
+        S(), null !== e && e(g.L.TAKE_ACTION)
       },
       children: y.intl.string(y.t.jVcuVY)
     })]
@@ -71,7 +71,7 @@ let v = e => {
         visibleContent: t,
         markAsDismissed: n
       } = e;
-      if (t === o.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return S(n)
+      if (t === o.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return T(n)
     }
   })
 }

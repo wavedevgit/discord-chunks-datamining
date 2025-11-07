@@ -11,7 +11,7 @@ require.r(exports), require.d(exports, {
   removeAnalyticsToken: () => R,
   removeToken: () => N,
   setAnalyticsToken: () => I,
-  setToken: () => T,
+  setToken: () => S,
   showToken: () => C
 }), require("./388685.js");
 var Chunk433517 = require("./433517.js"),
@@ -88,15 +88,15 @@ function v(e) {
 
 function I(e) {
   if (null == e) return void N(l);
-  S(e, l)
-}
-
-function T(e, t) {
-  if (null == e) return void N(t);
-  r = e, S(e, t)
+  T(e, l)
 }
 
 function S(e, t) {
+  if (null == e) return void N(t);
+  r = e, T(e, t)
+}
+
+function T(e, t) {
   null != t && (_[t] = e), f ? P() : (i = r, p = _, g())
 }
 

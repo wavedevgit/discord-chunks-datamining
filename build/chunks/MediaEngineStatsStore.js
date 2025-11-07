@@ -2,7 +2,7 @@
 /** chunk id: 450109, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -30,7 +30,7 @@ function h(e) {
 
 function m(e, t, n, r, i) {
   var a, o, s, l, c, u, d, f, _, p, m, g, E, b, y, O, v, I;
-  let T = r.find(e => "video" === e.type);
+  let S = r.find(e => "video" === e.type);
   if (null == n && (n = {
       packetsSentOrReceived: 0,
       packetsLost: 0,
@@ -43,12 +43,12 @@ function m(e, t, n, r, i) {
       resolutionAggregated: 0,
       entropyAggregated: 0,
       minVersion: e
-    }), null == T) return n;
-  let S = h(T) ? null != (o = T.packetsSent) ? o : 0 : null != (s = T.packetsReceived) ? s : 0,
-    A = h(T) ? null != (l = T.packetsLost) ? l : 0 : null != (c = T.packetsLost) ? c : 0,
-    C = h(T) ? null != (u = T.frameRateEncode) ? u : 0 : null != (d = T.frameRateDecode) ? d : 0,
-    N = null != (f = null == (a = T.resolution) ? true : a.height) ? f : 0,
-    R = h(T) && null != (_ = T.videoEntropy) ? _ : 0;
+    }), null == S) return n;
+  let T = h(S) ? null != (o = S.packetsSent) ? o : 0 : null != (s = S.packetsReceived) ? s : 0,
+    A = h(S) ? null != (l = S.packetsLost) ? l : 0 : null != (c = S.packetsLost) ? c : 0,
+    C = h(S) ? null != (u = S.frameRateEncode) ? u : 0 : null != (d = S.frameRateDecode) ? d : 0,
+    N = null != (f = null == (a = S.resolution) ? true : a.height) ? f : 0,
+    R = h(S) && null != (_ = S.videoEntropy) ? _ : 0;
   n.numDatapoints += 1, n.frameRateAggregated += C, n.resolutionAggregated += N, n.entropyAggregated += R;
   let P = null == i ? true : i.find(e => "video" === e.type);
   if (null != P && t >= n.minVersion) {
@@ -58,8 +58,8 @@ function m(e, t, n, r, i) {
       r = h(P) ? null != (y = P.frameRateEncode) ? y : 0 : null != (O = P.frameRateDecode) ? O : 0,
       i = h(P) && null != (v = P.videoEntropy) ? v : 0,
       a = null != (I = null == (p = P.resolution) ? true : p.height) ? I : 0;
-    n.frameRateAggregated -= r, n.resolutionAggregated -= a, n.entropyAggregated -= i, n.packetsSentOrReceived = S - e, n.packetsLost = A - t
-  } else n.packetsSentOrReceived = S, n.packetsLost = A;
+    n.frameRateAggregated -= r, n.resolutionAggregated -= a, n.entropyAggregated -= i, n.packetsSentOrReceived = T - e, n.packetsLost = A - t
+  } else n.packetsSentOrReceived = T, n.packetsLost = A;
   return n.frameRate = n.frameRateAggregated / n.numDatapoints, n.resolution = n.resolutionAggregated / n.numDatapoints, n.entropy = n.entropyAggregated / n.numDatapoints, n.packetLossRate = n.packetsLost / (n.packetsSentOrReceived + n.packetsLost), n
 }
 
@@ -121,7 +121,7 @@ function I(e, t) {
   let n = f[e];
   return null == n || n.length <= t ? null : n[n.length - t - 1]
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk959457.Z)
   }
@@ -140,8 +140,8 @@ class T extends(r = Chunk442837.ZP.Store) {
     return null == e ? null : null != (i = null == (r = ("long" === n ? _ : p)[e]) ? true : r[t]) ? i : null
   }
 }
-c(T, "displayName", "MediaEngineStatsStore");
-let S = new T(Chunk570140.Z, {
+c(S, "displayName", "MediaEngineStatsStore");
+let T = new S(Chunk570140.Z, {
   MEDIA_ENGINE_CONNECTION_STATS: E,
   MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET: y,
   STREAM_UPDATE: v,

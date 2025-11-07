@@ -34,8 +34,8 @@ function b(e, t, n) {
       validationDetails: I
     } = t.displayValidation,
     {
-      labelProps: T,
-      fieldProps: S,
+      labelProps: S,
+      fieldProps: T,
       descriptionProps: A,
       errorMessageProps: C
     } = (0, d.U)({
@@ -68,20 +68,20 @@ function b(e, t, n) {
       })
     }) : "",
     L = (0, o.P)(x),
-    M = "presentation" === e[g] ? S["aria-describedby"] : [L["aria-describedby"], S["aria-describedby"]].filter(Boolean).join(" ") || true,
+    M = "presentation" === e[g] ? T["aria-describedby"] : [L["aria-describedby"], T["aria-describedby"]].filter(Boolean).join(" ") || true,
     j = e[E],
     k = (0, u.useMemo)(() => j || (0, a.E7)(n), [j, n]),
     U = (0, i.H)(t, n, "presentation" === e[g]);
   m.set(t, {
     ariaLabel: e["aria-label"],
-    ariaLabelledBy: [T.id, e["aria-labelledby"]].filter(Boolean).join(" ") || true,
+    ariaLabelledBy: [S.id, e["aria-labelledby"]].filter(Boolean).join(" ") || true,
     ariaDescribedBy: M,
     focusManager: k
   });
   let G = (0, u.useRef)(e.autoFocus);
   y = "presentation" === e[g] ? {
     role: "presentation"
-  } : (0, s.d)(S, {
+  } : (0, s.d)(T, {
     role: "group",
     "aria-disabled": e.isDisabled || true,
     "aria-describedby": M
@@ -104,7 +104,7 @@ function b(e, t, n) {
   let Z = (0, c.z)(e);
   return {
     labelProps: {
-      ...T,
+      ...S,
       onClick: () => {
         k.focusFirst()
       }

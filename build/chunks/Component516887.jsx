@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 516887, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -14,21 +14,21 @@ let u = Chunk647438.memo(function(e) {
   var t;
   let {
     className: n,
-    channel: i,
+    channel: r,
     section: l
-  } = e, u = null != l ? (0, s.ky)(l) : null, d = null != u ? (0, r.jsx)(o.u, {
+  } = e, u = null != l ? (0, s.ky)(l) : null, d = null != u ? (0, i.jsx)(o.u, {
     __unsupportedReactNodeAsText: null != (t = null == l ? true : l.name) ? t : "",
     position: "top",
-    children: (0, r.jsx)(u, {
-      channel: i,
+    children: (0, i.jsx)(u, {
+      channel: r,
       section: l,
       width: 24,
       height: 24
     })
   }) : null;
-  return (0, r.jsx)("div", {
+  return (0, i.jsx)("div", {
     className: a()(n, c.wrapper),
-    children: (0, r.jsx)("div", {
+    children: (0, i.jsx)("div", {
       className: c.icon,
       children: d
     })

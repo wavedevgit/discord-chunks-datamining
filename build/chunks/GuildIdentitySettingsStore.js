@@ -25,11 +25,11 @@ function I(e) {
   _ = e.guild, O = b.QZA.OPEN, v = {}, p = e.source
 }
 
-function T() {
+function S() {
   O = Chunk981631.QZA.CLOSED, v = {}, p = true
 }
 
-function S() {
+function T() {
   O = Chunk981631.QZA.SUBMITTING, v = {}
 }
 
@@ -120,7 +120,7 @@ function B() {
 }
 
 function Z() {
-  k(), T()
+  k(), S()
 }
 class F extends(h = Chunk442837.ZP.Store) {
   getFormState() {
@@ -194,7 +194,7 @@ let V = new F(Chunk570140.Z, {
   GUILD_IDENTITY_SETTINGS_INIT: I,
   GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: Z,
   GUILD_IDENTITY_SETTINGS_SET_GUILD: A,
-  GUILD_IDENTITY_SETTINGS_SUBMIT: S,
+  GUILD_IDENTITY_SETTINGS_SUBMIT: T,
   GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: C,
   USER_PROFILE_UPDATE_FAILURE: N,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: R,

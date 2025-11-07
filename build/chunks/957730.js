@@ -347,7 +347,7 @@ let V = Chunk428595.Z.RULES,
       parse(e) {
         let t = E.Z.getChannel(e[1]);
         return {
-          content: null == t ? e[0] : (0, l.F6)(t, C.default, S.Z, true, true)
+          content: null == t ? e[0] : (0, l.F6)(t, C.default, T.Z, true, true)
         }
       }
     },
@@ -461,7 +461,7 @@ function ei(e, t, n) {
 function ea(e) {
   let t, n = null == e ? true : e.getGuildId(),
     r = null != n ? I.Z.getGuild(n) : null,
-    a = T.Z.can(D.Plq.MENTION_EVERYONE, e);
+    a = S.Z.can(D.Plq.MENTION_EVERYONE, e);
   t = (null == e ? true : e.isPrivate()) ? e.recipients.map(e => ({
     userId: e,
     nick: null

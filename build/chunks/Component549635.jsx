@@ -2,7 +2,7 @@
 /** chunk id: 549635, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dt: () => T,
+  Dt: () => S,
   ZP: () => A,
   ze: () => I
 }), require("./997841.js");
@@ -89,12 +89,12 @@ function I(e, t) {
   })
 }
 
-function T(e) {
+function S(e) {
   let t = _.Z.toURLSafe(e);
   return null == t ? null : (t.searchParams.append("format", "webp"), t.toString())
 }
 
-function S(e) {
+function T(e) {
   let t, {
       media: n,
       obscured: i = false,
@@ -109,7 +109,7 @@ function S(e) {
       proxyUrl: b,
       alt: v,
       type: I,
-      maxWidth: S,
+      maxWidth: T,
       maxHeight: A
     } = n,
     N = O(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
@@ -120,7 +120,7 @@ function S(e) {
     w = null != d && 0 !== d && null != _ && 0 !== _;
   if ("VIDEO" === I && w && null != b) {
     var D;
-    let e = T(b);
+    let e = S(b);
     if (null == e) return null;
     let t = null != (D = n.renderLinkComponent) ? D : c.iT;
     return (0, r.jsx)(s.Z, y(E({}, N), {
@@ -169,7 +169,7 @@ function S(e) {
     children: t
   }) : null
 }
-let A = Chunk647438.memo(S);
+let A = Chunk647438.memo(T);
 
 function C(e, t, n, r, i) {
   return e && _.Z.isDiscordAssetUrl(t, r, i) ? (0, l.s$)(t, r, i) : (0, u.q)({

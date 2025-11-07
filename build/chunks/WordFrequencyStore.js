@@ -69,7 +69,7 @@ function I(e) {
   O(m, d), t && P.emitChange()
 }
 
-function T() {
+function S() {
   let e = Chunk240458.V.getCurrentConfig({
       location: "WordFrequencyStore"
     }, {
@@ -81,8 +81,8 @@ function T() {
   return module || exports
 }
 
-function S(e) {
-  return !!T() && (requestIdleCallback(() => {
+function T(e) {
+  return !!S() && (requestIdleCallback(() => {
     I(e)
   }), false)
 }
@@ -90,13 +90,13 @@ let A = e => {
     let {
       messages: t
     } = e;
-    return S(t)
+    return T(t)
   },
   C = e => {
     let {
       message: t
     } = e;
-    return S([t])
+    return T([t])
   },
   N = e => {
     h = o.t.createEstimate(f, _), m.clear(), g = 0

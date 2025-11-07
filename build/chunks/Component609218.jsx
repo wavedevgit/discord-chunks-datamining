@@ -71,12 +71,12 @@ function j(e) {
     z = (0, y.N)(),
     q = i.useCallback(() => {
       var e;
-      return null != (e = (0, g.fr)(z, S.Si.TIER_2)) ? e : C.intl.string(C.t.pj0XBN)
+      return null != (e = (0, g.fr)(z, T.Si.TIER_2)) ? e : C.intl.string(C.t.pj0XBN)
     }, [z]),
     X = (0, b.Z)({
       location: "PremiumUpsellPickerOverlay"
     }),
-    Q = (0, I.Z)(S.Si.TIER_2);
+    Q = (0, I.Z)(T.Si.TIER_2);
   if (X) {
     let e;
     e = F ? (0, m.rO)() ? w.Z : D.Z : (0, m.rO)() ? x.Z : L.Z;
@@ -136,7 +136,7 @@ function j(e) {
                 section: k,
                 object: A.qAy.BUTTON_CTA
               },
-              subscriptionTier: S.Si.TIER_2,
+              subscriptionTier: T.Si.TIER_2,
               onClick: () => {
                 G()
               },
@@ -172,7 +172,7 @@ function j(e) {
           }),
           variant: "heading-xl/bold",
           children: a
-        }), Y && (0, r.jsx)(T.Z, {
+        }), Y && (0, r.jsx)(S.Z, {
           affinities: V
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/medium",
@@ -195,7 +195,7 @@ function j(e) {
             section: k,
             object: A.qAy.BUTTON_CTA
           },
-          subscriptionTier: S.Si.TIER_2,
+          subscriptionTier: T.Si.TIER_2,
           size: c.zx.Sizes.SMALL,
           color: c.zx.Colors.CUSTOM,
           onClick: () => {

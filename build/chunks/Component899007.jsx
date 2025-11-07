@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk671955 = require("./671955.js"),
   Chunk66856 = require("./66856.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -73,7 +73,7 @@ function P(e) {
     displayProfile: n,
     guildId: a,
     channelId: h,
-    themeType: S,
+    themeType: T,
     animateOnHover: C,
     onOpenProfile: P,
     className: w,
@@ -92,7 +92,7 @@ function P(e) {
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(G) ? O.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), F = true !== D ? D : B, V = [I.l.MODAL, I.l.MODAL_V2].includes(S) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(T.avatar, w), {
+  })), F = true !== D ? D : B, V = [I.l.MODAL, I.l.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(S.avatar, w), {
     avatarDecorationSrc: Y,
     avatarSrc: W,
     eventHandlers: K
@@ -106,7 +106,7 @@ function P(e) {
     avatarDecoration: Y,
     size: V,
     "aria-label": t.username,
-    imageClassName: null != P ? T.overlay : true,
+    imageClassName: null != P ? S.overlay : true,
     status: k ? O.Skl.UNKNOWN : F,
     statusBackdropColor: j && !k ? (0, l.QFD)(x) : true,
     isMobile: Z,
@@ -117,9 +117,9 @@ function P(e) {
     className: H,
     children: z
   })) : (0, r.jsx)(l.P3F, N(A({}, K), {
-    className: o()(H, T.clickable),
+    className: o()(H, S.clickable),
     focusProps: {
-      ringClassName: T.focusRing
+      ringClassName: S.focusRing
     },
     onClick: () => {
       M({

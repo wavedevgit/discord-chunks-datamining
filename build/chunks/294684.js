@@ -164,7 +164,7 @@ var Chunk98405 = require("./98405.js"),
     return Chunk682564([Chunk98405.key, Chunk98405.value], false)
   }, true),
   em = function(e) {
-    this.entries = [], this.url = null, true !== e && (I(e) ? this.parseObject(e) : this.parseQuery("string" == typeof e ? "?" === q(e, 0) ? en(e, 1) : e : T(e)))
+    this.entries = [], this.url = null, true !== e && (I(e) ? this.parseObject(e) : this.parseQuery("string" == typeof e ? "?" === q(e, 0) ? en(e, 1) : e : S(e)))
   };
 em.prototype = {
   type: L,
@@ -178,13 +178,13 @@ em.prototype = {
       for (n = (t = C(e, u)).next; !(r = s(n, t)).done;) {
         if ((o = s(a = (i = C(v(r.value))).next, i)).done || (l = s(a, i)).done || !s(a, i).done) throw new H("Expected sequence with length 2");
         Q(c, {
-          key: T(o.value),
-          value: T(l.value)
+          key: S(o.value),
+          value: S(l.value)
         })
       } else
         for (var d in e) b(e, d) && Q(c, {
           key: d,
-          value: T(e[d])
+          value: S(e[d])
         })
   },
   parseQuery: function(e) {
@@ -216,12 +216,12 @@ if (Chunk477732(eE, {
     append: function(e, t) {
       var n = k(this);
       P(arguments.length, 2), Q(n.entries, {
-        key: T(e),
-        value: T(t)
+        key: S(e),
+        value: S(t)
       }), !c && this.length++, n.updateURL()
     },
     delete: function(e) {
-      for (var t = k(this), n = P(arguments.length, 1), r = t.entries, i = T(e), a = n < 2 ? true : arguments[1], o = true === a ? a : T(a), s = 0; s < r.length;) {
+      for (var t = k(this), n = P(arguments.length, 1), r = t.entries, i = S(e), a = n < 2 ? true : arguments[1], o = true === a ? a : S(a), s = 0; s < r.length;) {
         var l = r[s];
         if (l.key === i && (true === o || l.value === o)) {
           if (ee(r, s, 1), true !== o) break
@@ -232,18 +232,18 @@ if (Chunk477732(eE, {
     get: function(e) {
       var t = k(this).entries;
       P(arguments.length, 1);
-      for (var n = T(e), r = 0; r < t.length; r++)
+      for (var n = S(e), r = 0; r < t.length; r++)
         if (t[r].key === n) return t[r].value;
       return null
     },
     getAll: function(e) {
       var t = k(this).entries;
       P(arguments.length, 1);
-      for (var n = T(e), r = [], i = 0; i < t.length; i++) t[i].key === n && Q(r, t[i].value);
+      for (var n = S(e), r = [], i = 0; i < t.length; i++) t[i].key === n && Q(r, t[i].value);
       return r
     },
     has: function(e) {
-      for (var t = k(this).entries, n = P(arguments.length, 1), r = T(e), i = n < 2 ? true : arguments[1], a = true === i ? i : T(i), o = 0; o < t.length;) {
+      for (var t = k(this).entries, n = P(arguments.length, 1), r = S(e), i = n < 2 ? true : arguments[1], a = true === i ? i : S(i), o = 0; o < t.length;) {
         var s = t[o++];
         if (s.key === r && (true === a || s.value === a)) returntrue
       }
@@ -252,7 +252,7 @@ if (Chunk477732(eE, {
     set: function(e, t) {
       var n, r = k(this);
       P(arguments.length, 1);
-      for (var i = r.entries, a = false, o = T(e), s = T(t), l = 0; l < i.length; l++)(n = i[l]).key === o && (a ? ee(i, l--, 1) : (a = true, n.value = s));
+      for (var i = r.entries, a = false, o = S(e), s = S(t), l = 0; l < i.length; l++)(n = i[l]).key === o && (a ? ee(i, l--, 1) : (a = true, n.value = s));
       a || Q(i, {
         key: o,
         value: s
@@ -302,8 +302,8 @@ if (Chunk477732(eE, {
     eO = function(e) {
       if (I(e)) {
         var t, n = e.body;
-        if (O(n) === L) return eb(t = e.headers ? new Z(e.headers) : new Z, "content-type") || ey(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), S(e, {
-          body: A(0, T(n)),
+        if (O(n) === L) return eb(t = e.headers ? new Z(e.headers) : new Z, "content-type") || ey(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), T(e, {
+          body: A(0, S(n)),
           headers: A(0, t)
         })
       }

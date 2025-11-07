@@ -61,9 +61,9 @@ function I(e, t) {
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,7 +71,7 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -86,7 +86,7 @@ let A = e => {
   } = e, {
     giftRecipient: y,
     selectedGiftStyle: v,
-    setSelectedGiftStyle: S,
+    setSelectedGiftStyle: T,
     emojiConfetti: A,
     soundEffect: C,
     setEmojiConfetti: N,
@@ -95,7 +95,7 @@ let A = e => {
     orientation: "horizontal"
   }), {
     ref: L
-  } = x, M = T(x, ["ref"]), j = (0, d.MY)(y, t), k = j === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = j !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.Z)({
+  } = x, M = S(x, ["ref"]), j = (0, d.MY)(y, t), k = j === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = j !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.Z)({
     location: "GiftAnimationOptions"
   }), Z = e => {
     null != R && R(null == e ? true : e)
@@ -134,7 +134,7 @@ let A = e => {
       children: null != G && !B && G.map((e, t) => (0, r.jsx)(g.m, {
         isSelected: v === e,
         giftStyle: e,
-        setSelectedGiftStyle: S,
+        setSelectedGiftStyle: T,
         ref: 0 === t ? D : null,
         onFocus: () => w(true),
         onBlur: () => w(false)

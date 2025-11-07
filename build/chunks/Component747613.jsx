@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk330580 = require("./330580.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -119,7 +119,7 @@ let k = e => {
       },
       delay: a
     }, "animate-always");
-    return (0, r.jsx)(_.P3F, C(S({}, s), {
+    return (0, r.jsx)(_.P3F, C(T({}, s), {
       role: "option",
       "aria-selected": 0 === o,
       onClick: () => i(n),
@@ -127,7 +127,7 @@ let k = e => {
       children: (0, r.jsx)(c.animated.div, {
         "aria-label": j(n),
         className: I.diversityEmojiItemImage,
-        style: S({
+        style: T({
           backgroundImage: 'url("'.concat(l, '")')
         }, d)
       })
@@ -158,7 +158,7 @@ let k = e => {
           var {
             ref: n
           } = e, i = N(e, ["ref"]);
-          return (0, r.jsx)(c.animated.div, C(S({}, i), {
+          return (0, r.jsx)(c.animated.div, C(T({}, i), {
             id: t,
             ref: n,
             className: I.diversitySelectorOptions,

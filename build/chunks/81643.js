@@ -4,7 +4,7 @@
 require.d(exports, {
   AY: () => L,
   F5: () => x,
-  Jm: () => S,
+  Jm: () => T,
   L0: () => N,
   L5: () => I,
   M$: () => A,
@@ -15,7 +15,7 @@ require.d(exports, {
   l6: () => w,
   pY: () => R,
   sf: () => v,
-  yo: () => T
+  yo: () => S
 }), require("./388685.js"), require("./35282.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -47,12 +47,12 @@ function I() {
   return (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.VERIFIED_ADULT
 }
 
-function T() {
+function S() {
   let e = Chunk594174.default.getCurrentUser();
   return (null == module ? true : module.ageVerificationStatus) === Chunk911969.F$.VERIFIED_TEEN
 }
 
-function S() {
+function T() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
   return (null == module ? true : module.ageVerificationStatus) === Chunk911969.F$.VERIFIED_TEEN
 }

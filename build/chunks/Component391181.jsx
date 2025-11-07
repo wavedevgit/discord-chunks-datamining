@@ -138,11 +138,11 @@ function v(e) {
     onCopyProductLink: E,
     onTestDownload: y,
     onReportProduct: v
-  } = e, I = i.useRef(null), T = e => {
+  } = e, I = i.useRef(null), S = e => {
     e.stopPropagation()
   };
   return (0, r.jsx)("div", {
-    onClick: T,
+    onClick: S,
     children: (0, r.jsx)(s.yRy, {
       targetElementRef: I,
       position: "right",
@@ -198,8 +198,8 @@ function I(e) {
     onDeleteProduct: m,
     onCopyProductLink: E,
     onTestDownload: I,
-    disabled: T = false
-  } = e, S = (0, c.U)(t, y), A = null !== t.price_tier ? (0, u.T4)(t.price_tier, _.pK.USD) : true, C = (0, d.C)(t);
+    disabled: S = false
+  } = e, T = (0, c.U)(t, y), A = null !== t.price_tier ? (0, u.T4)(t.price_tier, _.pK.USD) : true, C = (0, d.C)(t);
 
   function N(e) {
     (0, l.jW)(e, () => Promise.resolve(e => (0, r.jsx)(O, b(g({}, e), {
@@ -223,16 +223,16 @@ function I(e) {
   return (0, r.jsxs)(s.kL8, {
     tag: "article",
     className: o()(h.productCardClickable, h.productCard, {
-      [h.disabled]: T
+      [h.disabled]: S
     }),
-    onClick: T ? true : i,
+    onClick: S ? true : i,
     onContextMenu: N,
     "aria-label": p.intl.formatToPlainString(p.t["X/yAKs"], {
       productName: t.name
     }),
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: S,
+      src: T,
       className: h.productThumbnail
     }), (0, r.jsxs)("div", {
       className: h.productInfo,
@@ -263,7 +263,7 @@ function I(e) {
         }), (0, r.jsx)(s.LZC, {
           size: 16
         }), t.published ? (0, r.jsx)(f.t, {}) : (0, r.jsx)(f.b, {})]
-      }), !T && (0, r.jsx)(v, {
+      }), !S && (0, r.jsx)(v, {
         product: t,
         guildId: n,
         showEditProduct: true,

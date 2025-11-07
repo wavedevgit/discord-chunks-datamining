@@ -259,9 +259,9 @@ function eO(e) {
       paymentElementsEnabled: ev
     } = (0, N.JL)(),
     eI = ev && m === R.h8.PAYMENT_TYPE ? R.h8.PAYMENT_ELEMENT : m,
-    eT = i.useMemo(() => (0, H.vP)(), []),
+    eS = i.useMemo(() => (0, H.vP)(), []),
     {
-      CREDIT_CARD_STEPS: eS,
+      CREDIT_CARD_STEPS: eT,
       PAYPAL_STEPS: eA,
       IDEAL_STEPS: eC,
       PAYMENT_REQUEST_STEPS: eN,
@@ -280,7 +280,7 @@ function eO(e) {
   function eM(e) {
     switch (e) {
       case R.h8.CREDIT_CARD_INFORMATION:
-        return eS;
+        return eT;
       case R.h8.CASH_APP_INFORMATION:
         return ex;
       default:
@@ -362,8 +362,8 @@ function eO(e) {
       combinedStripeElementsRef: tO,
       lastConfirmedSetupIntentRef: tv,
       stripePaymentElementProps: tI,
-      stripeAddressElementProps: tT,
-      addressElementKey: tS,
+      stripeAddressElementProps: tS,
+      addressElementKey: tT,
       remountAddressElement: tA
     } = (0, A.MM)({
       step: ej,
@@ -371,7 +371,7 @@ function eO(e) {
       paymentElementsEnabled: ev,
       handleStepChange: eW,
       logger: el,
-      shouldLogOnChangeEvents: eT || false,
+      shouldLogOnChangeEvents: eS || false,
       onBillingAddressChange: (e, t) => {
         e3({
           info: er({}, e2.info, e),
@@ -387,7 +387,7 @@ function eO(e) {
       let tN = (e, t) => {
           switch (e) {
             case J.He.CARD:
-              ei ? eW(R.h8.AWAITING_BROWSER_CHECKOUT) : (eZ(eS), eW(ev ? R.h8.PAYMENT_ELEMENT : R.h8.CREDIT_CARD_INFORMATION));
+              ei ? eW(R.h8.AWAITING_BROWSER_CHECKOUT) : (eZ(eT), eW(ev ? R.h8.PAYMENT_ELEMENT : R.h8.CREDIT_CARD_INFORMATION));
               break;
             case J.He.PAYPAL:
               eZ(eA), eW(R.h8.PAYPAL_INFORMATION);
@@ -592,12 +592,12 @@ function eO(e) {
           step: ej,
           onPurchaseComplete: () => y(ej),
           onHandoffFailure: () => {
-            eZ(eS), eW(R.h8.CREDIT_CARD_INFORMATION)
+            eZ(eT), eW(R.h8.CREDIT_CARD_INFORMATION)
           }
         })
       }), o = (0, r.jsx)(x.a, {
         onPrimaryClick: () => {
-          eZ(eS), eW(R.h8.CREDIT_CARD_INFORMATION)
+          eZ(eT), eW(R.h8.CREDIT_CARD_INFORMATION)
         },
         onBackClick: () => {
           eZ(eP), eW(R.h8.PAYMENT_TYPE)
@@ -605,7 +605,7 @@ function eO(e) {
       });
       break;
     case R.h8.EPS_INFORMATION:
-      n = (0, r.jsx)(S.Z, {
+      n = (0, r.jsx)(T.Z, {
         type: J.He.EPS,
         onAccountHolderNameChange: e => e3({
           info: ea(er({}, e2.info), {
@@ -627,7 +627,7 @@ function eO(e) {
       });
       break;
     case R.h8.IDEAL_INFORMATION:
-      n = (0, r.jsx)(T.Z, {
+      n = (0, r.jsx)(S.Z, {
         type: J.He.IDEAL,
         onAccountHolderNameChange: e => e3({
           info: ea(er({}, e2.info), {
@@ -645,7 +645,7 @@ function eO(e) {
       });
       break;
     case R.h8.PRZELEWY24_INFORMATION:
-      n = (0, r.jsx)(S.Z, {
+      n = (0, r.jsx)(T.Z, {
         type: J.He.PRZELEWY24,
         onNameChange: e => e3({
           info: ea(er({}, e2.info), {
@@ -904,8 +904,8 @@ function eO(e) {
         paymentElementSelectedType: tE,
         elementsRef: tO,
         stripePaymentElementProps: tI,
-        stripeAddressElementProps: tT,
-        addressElementKey: tS,
+        stripeAddressElementProps: tS,
+        addressElementKey: tT,
         billingAddressInfo: e2.info,
         onSetupError: () => {
           ty(), eW(R.h8.PAYMENT_TYPE)
@@ -959,7 +959,7 @@ function ev(e) {
     isValid: false
   })), [m, g] = i.useState(""), [E, b] = i.useState(""), [y, v] = i.useState(() => ({
     token: null
-  })), [I, T, S, A, C] = (0, l.Wu)([k.Z], () => [k.Z.braintreeEmail, k.Z.braintreeNonce, k.Z.error, k.Z.venmoUsername, k.Z.adyenPaymentData]), [N, R] = (0, l.Wu)([U.Z], () => [U.Z.error, U.Z.isAwaitingAuthentication]);
+  })), [I, S, T, A, C] = (0, l.Wu)([k.Z], () => [k.Z.braintreeEmail, k.Z.braintreeNonce, k.Z.error, k.Z.venmoUsername, k.Z.adyenPaymentData]), [N, R] = (0, l.Wu)([U.Z], () => [U.Z.error, U.Z.isAwaitingAuthentication]);
   i.useEffect(() => {
     let e = e => {
       let {
@@ -995,10 +995,10 @@ function ev(e) {
     hasRedirectURL: D,
     setHasRedirectURL: x,
     braintreeEmail: I,
-    braintreeNonce: T,
+    braintreeNonce: S,
     venmoUsername: A,
     adyenPaymentData: C,
-    paymentError: null != N ? N : S,
+    paymentError: null != N ? N : T,
     paymentAuthenticationState: R ? Y.wr.PENDING : null != N ? Y.wr.ERROR : Y.wr.NONE,
     purchaseError: L,
     setPurchaseError: M,

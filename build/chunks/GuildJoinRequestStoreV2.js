@@ -78,16 +78,16 @@ function I(e, t, n) {
   }
 }
 
-function T(e) {
+function S(e) {
   let {
     joinRequest: t
   } = e;
   k(t)
 }
-let S = false;
+let T = false;
 
 function A() {
-  S = true
+  T = true
 }
 
 function C(e) {
@@ -97,13 +97,13 @@ function C(e) {
     total: r,
     guildId: i
   } = e;
-  S = false, t === f.wB.SUBMITTED && v(i, r), n.forEach(e => {
+  T = false, t === f.wB.SUBMITTED && v(i, r), n.forEach(e => {
     k(e)
   })
 }
 
 function N() {
-  S = false
+  T = false
 }
 let R = e => "guild-join-request=".concat(e),
   P = (e, t) => "guild-".concat(e, "-").concat(t);
@@ -206,7 +206,7 @@ class q extends(r = Chunk442837.ZP.Store) {
     return y[e]
   }
   isFetching() {
-    return S
+    return T
   }
   hasFetched(e) {
     if (!b.has(e)) returnfalse;
@@ -229,7 +229,7 @@ class q extends(r = Chunk442837.ZP.Store) {
 }
 p(q, "displayName", "GuildJoinRequestStoreV2");
 let X = new q(Chunk570140.Z, {
-  GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS: T,
+  GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS: S,
   GUILD_JOIN_REQUESTS_FETCH_SUCCESS: C,
   GUILD_JOIN_REQUESTS_FETCH_START: A,
   GUILD_JOIN_REQUESTS_FETCH_FAILURE: N,

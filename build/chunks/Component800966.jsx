@@ -1,7 +1,7 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 800966, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => _
+  h: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,7 +21,7 @@ function m() {
   return (m = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
-      for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+      for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (e[i] = n[i])
     }
     return e
   }).apply(this, arguments)
@@ -30,17 +30,17 @@ function m() {
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
@@ -56,15 +56,15 @@ function b(e) {
     name: a.ImpressionNames.HD_STREAMING_POPOUT
   }, {
     disableTrack: t
-  }, [t]), (0, r.jsxs)("div", {
+  }, [t]), (0, i.jsxs)("div", {
     className: l()(h.popoutContainer, {
       [h.hidden]: t
     }),
-    children: [(0, r.jsx)("img", {
+    children: [(0, i.jsx)("img", {
       className: h.image,
       src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png",
       alt: "HD Streaming Nitro Perk"
-    }), (0, r.jsx)(o.zx, {
+    }), (0, i.jsx)(o.zx, {
       "data-migration-pending": true,
       className: h.closeButton,
       "aria-label": f.intl.string(f.t.cpT0Cq),
@@ -73,24 +73,24 @@ function b(e) {
       onClick: () => {
         n(), u.default.track(p.rMx.HD_STREAMING_POPOUT_DISMISSED)
       },
-      children: (0, r.jsx)(s.Dio, {
+      children: (0, i.jsx)(s.Dio, {
         size: "xs",
         className: h.closeIcon,
         color: "white"
       })
-    }), (0, r.jsx)("div", {
+    }), (0, i.jsx)("div", {
       className: h.infoContainerParent,
-      children: (0, r.jsxs)("div", {
+      children: (0, i.jsxs)("div", {
         className: h.infoContainer,
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, i.jsx)(s.Text, {
           className: h.infoText,
           variant: "text-sm/medium",
           children: f.intl.format(f.t.ruvD7i, {})
-        }), (0, r.jsxs)("div", {
+        }), (0, i.jsxs)("div", {
           className: h.poweredByNitroContainer,
-          children: [(0, r.jsx)(s.SrA, {
+          children: [(0, i.jsx)(s.SrA, {
             size: "xs"
-          }), (0, r.jsx)(s.Text, {
+          }), (0, i.jsx)(s.Text, {
             className: h.infoText,
             variant: "text-sm/medium",
             children: f.intl.string(f.t["BMw+7I"])
@@ -101,18 +101,18 @@ function b(e) {
   })
 }
 
-function _(e) {
-  var t, n, i = m({}, function(e) {
+function y(e) {
+  var t, n, r = m({}, function(e) {
     if (null == e) throw TypeError("Cannot destructure " + e);
     return e
   }(e));
-  return (0, r.jsx)(d.h, (t = g({}, i), n = n = {
-    renderComponent: e => (0, r.jsx)(b, g({}, e))
+  return (0, i.jsx)(d.h, (t = g({}, r), n = n = {
+    renderComponent: e => (0, i.jsx)(b, g({}, e))
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(n)).forEach(function(e) {

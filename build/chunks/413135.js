@@ -156,17 +156,17 @@ function I(e, t, n, r, i) {
   else if (n < 0)
     if (!i) return false;
     else n = 0;
-  if ("string" == typeof t && (t = c.from(t, r)), c.isBuffer(t)) return 0 === t.length ? false : T(e, t, n, r, i);
+  if ("string" == typeof t && (t = c.from(t, r)), c.isBuffer(t)) return 0 === t.length ? false : S(e, t, n, r, i);
   if ("number" == typeof t) {
     if (t &= 255, "function" == typeof Uint8Array.prototype.indexOf)
       if (i) return Uint8Array.prototype.indexOf.call(e, t, n);
       else return Uint8Array.prototype.lastIndexOf.call(e, t, n);
-    return T(e, [t], n, r, i)
+    return S(e, [t], n, r, i)
   }
   throw TypeError("val must be string, number or Buffer")
 }
 
-function T(e, t, n, r, i) {
+function S(e, t, n, r, i) {
   var a, o = 1,
     s = e.length,
     l = t.length;
@@ -195,7 +195,7 @@ function T(e, t, n, r, i) {
   return false
 }
 
-function S(e, t, n, r) {
+function T(e, t, n, r) {
   n = Number(n) || 0;
   var i = e.length - n;
   r ? (r = Number(r)) > i && (r = i) : r = i;
@@ -379,7 +379,7 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
   r || (r = "utf8");
   for (var a = false;;) switch (r) {
     case "hex":
-      return S(this, e, t, n);
+      return T(this, e, t, n);
     case "utf8":
     case "utf-8":
       return A(this, e, t, n);

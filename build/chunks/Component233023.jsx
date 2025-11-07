@@ -32,15 +32,15 @@ function m(e) {
     animateEmoji: O = true,
     hideEmoji: v = false,
     hideTooltip: I = false
-  } = e, T = (0, d.E)("ActivityStatus", g), {
-    defaultStatusVariant: S
+  } = e, S = (0, d.E)("ActivityStatus", g), {
+    defaultStatusVariant: T
   } = (0, l.bN)({
     guildId: null == g ? true : g.guild_id,
     location: "CustomStatusActivityStatus"
   });
   if (null == t && null == E) return null;
-  let A = null != E && T,
-    C = A && null != b ? (0, c.O8)(b, E, S) : null,
+  let A = null != E && S,
+    C = A && null != b ? (0, c.O8)(b, E, T) : null,
     N = null == t ? true : t.emoji,
     R = null != C ? C : null == t ? true : t.state,
     P = null != R && "" !== R,

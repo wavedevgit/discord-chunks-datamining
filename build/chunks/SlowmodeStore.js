@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   S: () => _,
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
@@ -109,7 +109,7 @@ function I() {
     Object.keys(p[e]).forEach(t => p[e][t].timer.stop()), p[e] = {}
   })
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk496675.Z)
   }
@@ -121,8 +121,8 @@ class T extends(r = Chunk442837.ZP.Store) {
     return this.getSlowmodeCooldownGuess(e.id, t) > 0 && e.rateLimitPerUser > 0
   }
 }
-d(T, "displayName", "SlowmodeStore");
-let S = new T(Chunk570140.Z, {
+d(S, "displayName", "SlowmodeStore");
+let T = new S(Chunk570140.Z, {
   SLOWMODE_RESET_COOLDOWN: y,
   SLOWMODE_SET_COOLDOWN: O,
   UPLOAD_START: E,

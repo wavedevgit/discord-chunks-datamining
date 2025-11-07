@@ -135,17 +135,17 @@ function j(e) {
     trinketsAnimation: D
   } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, j = null != n.firstTimeNotice && !s && N && P >= M, [k, U] = (0, f.XR)(j ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), G = null != k, B = I || G, Z = (0, O.Ft)(l), F = (0, p.yc)({
     location: "gift-button"
-  }), V = l.type === T.d4z.DM;
+  }), V = l.type === S.d4z.DM;
   if (s) return null;
   let H = () => {
       F && V && null != Z ? (0, m.Z)({
         giftRecipient: Z,
         analyticsLocations: b,
         analyticsObject: {
-          page: l.isPrivate() ? T.ZY5.DM_CHANNEL : T.ZY5.GUILD_CHANNEL,
-          section: T.jXE.CHANNEL_TEXT_AREA,
-          object: T.qAy.BUTTON_ICON,
-          objectType: T.AnalyticsObjectTypes.GIFT
+          page: l.isPrivate() ? S.ZY5.DM_CHANNEL : S.ZY5.GUILD_CHANNEL,
+          section: S.jXE.CHANNEL_TEXT_AREA,
+          object: S.qAy.BUTTON_ICON,
+          objectType: S.AnalyticsObjectTypes.GIFT
         }
       }) : (0, _.Z)({
         isGift: true,
@@ -153,15 +153,15 @@ function j(e) {
         initialPlanId: null,
         analyticsLocations: b,
         analyticsObject: {
-          page: l.isPrivate() ? T.ZY5.DM_CHANNEL : T.ZY5.GUILD_CHANNEL,
-          section: T.jXE.CHANNEL_TEXT_AREA,
-          object: T.qAy.GIFTING_PROMOTION_BUTTON,
-          objectType: T.AnalyticsObjectTypes.GIFT
+          page: l.isPrivate() ? S.ZY5.DM_CHANNEL : S.ZY5.GUILD_CHANNEL,
+          section: S.jXE.CHANNEL_TEXT_AREA,
+          object: S.qAy.GIFTING_PROMOTION_BUTTON,
+          objectType: S.AnalyticsObjectTypes.GIFT
         }
       })
     },
     Y = () => {
-      A(false), U(S.L.TAKE_ACTION), H()
+      A(false), U(T.L.TAKE_ACTION), H()
     },
     W = true !== w ? (0, r.jsx)(x, {
       config: w,

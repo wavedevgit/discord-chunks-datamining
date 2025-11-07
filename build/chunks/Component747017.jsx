@@ -31,8 +31,8 @@ function I(e) {
     activities: n,
     applicationStream: a,
     voiceChannel: I,
-    textClassName: T,
-    iconClassName: S,
+    textClassName: S,
+    iconClassName: T,
     textSize: A = "xs",
     animateEmoji: C = true,
     hasQuest: N = false,
@@ -64,8 +64,8 @@ function I(e) {
         stream: w,
         game: null == n ? true : n.find(c.Z),
         textVariant: "text-".concat(A, "/medium"),
-        textClassName: T,
-        iconClassName: S,
+        textClassName: S,
+        iconClassName: T,
         hideText: k,
         hideIcon: j,
         hideTooltip: P
@@ -79,16 +79,16 @@ function I(e) {
       return null != e ? (0, r.jsx)(E.Z, {
         activity: e,
         textVariant: "text-".concat(A, "/medium"),
-        textClassName: T,
-        iconClassName: S,
+        textClassName: S,
+        iconClassName: T,
         hideText: k,
         hideIcon: j,
         hideTooltip: P
       }) : null != I ? (0, r.jsx)(b.Z, {
         channel: I,
         textVariant: "text-".concat(A, "/medium"),
-        textClassName: T,
-        iconClassName: S,
+        textClassName: S,
+        iconClassName: T,
         hideText: k,
         hideTooltip: P
       }) : null
@@ -103,8 +103,8 @@ function I(e) {
       animateEmoji: C,
       hideEmoji: R,
       hideTooltip: P,
-      textClassName: T,
-      iconClassName: S,
+      textClassName: S,
+      iconClassName: T,
       tooltipClassName: G,
       voiceChannel: I,
       hangStatus: L,
@@ -114,7 +114,7 @@ function I(e) {
     className: G,
     children: [U(), (0, r.jsx)(s.xvT, {
       variant: "text-".concat(A, "/normal"),
-      className: o()(v.truncated, v.dot, T),
+      className: o()(v.truncated, v.dot, S),
       children: y.l
     }), B(), N && (0, r.jsx)(h.Z, {})]
   })

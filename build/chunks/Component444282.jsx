@@ -26,12 +26,12 @@ function b(e) {
     channelId: t,
     option: n,
     keyboardModeEnabled: a
-  } = e, b = i.useRef(null), [y, O] = i.useState(false), v = f.Z.getUpload(t, n.name, d.d.SlashCommand), I = i.useRef(null), T = e => {
+  } = e, b = i.useRef(null), [y, O] = i.useState(false), v = f.Z.getUpload(t, n.name, d.d.SlashCommand), I = i.useRef(null), S = e => {
     if (e.which === h.yXg.ENTER) {
       var t;
       e.preventDefault(), null == (t = b.current) || t.activateUploadDialogue()
     }
-  }, S = i.useCallback(() => {
+  }, T = i.useCallback(() => {
     O(true)
   }, []), A = i.useCallback(() => {
     O(false)
@@ -54,10 +54,10 @@ function b(e) {
   }, [t, n]);
   i.useEffect(() => {
     let e = I.current;
-    return null == v && (null == e || e.addEventListener("dragover", S, false), null == e || e.addEventListener("dragleave", A, false), null == e || e.addEventListener("drop", C, false)), () => {
-      null == e || e.removeEventListener("dragover", S, false), null == e || e.removeEventListener("dragleave", A, false), null == e || e.removeEventListener("drop", C, false)
+    return null == v && (null == e || e.addEventListener("dragover", T, false), null == e || e.addEventListener("dragleave", A, false), null == e || e.addEventListener("drop", C, false)), () => {
+      null == e || e.removeEventListener("dragover", T, false), null == e || e.removeEventListener("dragleave", A, false), null == e || e.removeEventListener("drop", C, false)
     }
-  }, [v, S, A, C]);
+  }, [v, T, A, C]);
   let N = e => {
     var r, i;
     if (null != t && (null == (i = e.currentTarget) || null == (r = i.files) ? true : r[0]) != null) {
@@ -98,7 +98,7 @@ function b(e) {
     id: n.name,
     channelId: t,
     keyboardModeEnabled: a,
-    onKeyDown: T,
+    onKeyDown: S,
     className: o()(g.emptyOption, {
       [g.emptyOptionActive]: y
     }),

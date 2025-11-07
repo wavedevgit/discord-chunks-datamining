@@ -112,7 +112,7 @@ class L extends Chunk647438.PureComponent {
     return (0, r.jsxs)(l.P3F, {
       onClick: t,
       className: C.previewContainer,
-      children: [(0, r.jsx)(T.Z, {
+      children: [(0, r.jsx)(S.Z, {
         className: C.previewImage,
         stream: e
       }), a ? (0, r.jsx)("div", {
@@ -181,10 +181,10 @@ function M(e) {
     user: t,
     channel: n
   } = e, a = D(e, ["user", "channel"]);
-  let [o, l] = (0, s.Wu)([b.Z, m.Z, g.Z, _.default], () => (0, O.p9)(n, b.Z, m.Z, g.Z, _.default)), c = (0, s.e7)([p.Z], () => p.Z.getStreamForUser(t.id, n.getGuildId())), d = (0, s.e7)([p.Z], () => p.Z.getActiveStreamForApplicationStream(c)), f = (0, s.e7)([h.default], () => h.default.getId()), y = (0, v.Cf)(c), I = (0, s.e7)([E.Z], () => (0, v.Um)(c, E.Z)), T = i.useMemo(() => ({
+  let [o, l] = (0, s.Wu)([b.Z, m.Z, g.Z, _.default], () => (0, O.p9)(n, b.Z, m.Z, g.Z, _.default)), c = (0, s.e7)([p.Z], () => p.Z.getStreamForUser(t.id, n.getGuildId())), d = (0, s.e7)([p.Z], () => p.Z.getActiveStreamForApplicationStream(c)), f = (0, s.e7)([h.default], () => h.default.getId()), y = (0, v.Cf)(c), I = (0, s.e7)([E.Z], () => (0, v.Um)(c, E.Z)), S = i.useMemo(() => ({
     [n.guild_id]: [t.id]
   }), [n.guild_id, t.id]);
-  return (0, u.$)(T, "StreamPreviewPopout"), (0, r.jsx)(L, w(R({}, a), {
+  return (0, u.$)(S, "StreamPreviewPopout"), (0, r.jsx)(L, w(R({}, a), {
     canWatch: o,
     unavailableReason: l,
     user: t,

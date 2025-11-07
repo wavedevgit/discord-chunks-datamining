@@ -53,7 +53,7 @@ let D = () => {
     let {
       markAsDismissed: t
     } = e, n = () => {
-      null == t || t(N.L.DISMISS), (0, h.Ll)(), (0, T.O)()
+      null == t || t(N.L.DISMISS), (0, h.Ll)(), (0, S.O)()
     };
     return (0, r.jsxs)("div", {
       className: w.editorHeader,
@@ -80,8 +80,8 @@ let D = () => {
     let {
       isCoachmark: t,
       markAsDismissed: n
-    } = e, i = (0, s.e7)([S.Z], () => S.Z.isUpsellPreview), a = () => {
-      null == n || n(N.L.DISMISS), (0, h.Ll)(), (0, T.O)(), t || (0, y.openUserSettings)(b.n.APPEARANCE_PANEL, {
+    } = e, i = (0, s.e7)([T.Z], () => T.Z.isUpsellPreview), a = () => {
+      null == n || n(N.L.DISMISS), (0, h.Ll)(), (0, S.O)(), t || (0, y.openUserSettings)(b.n.APPEARANCE_PANEL, {
         section: C.oAB.APPEARANCE
       })
     };
@@ -105,8 +105,8 @@ function M(e) {
   } = (0, p.ZP)(_.Z.APP_ICON_EDITOR), l = (0, s.e7)([O.default], () => O.default.getCurrentUser()), {
     isUpsellPreview: c,
     shouldEditorAnimate: m
-  } = (0, s.cj)([S.Z, f.Z], () => ({
-    isUpsellPreview: S.Z.isUpsellPreview,
+  } = (0, s.cj)([T.Z, f.Z], () => ({
+    isUpsellPreview: T.Z.isUpsellPreview,
     shouldEditorAnimate: t && !f.Z.useReducedMotion
   })), g = h.oq.getState().activePanel === h.wh.APP_ICON;
   i.useEffect(() => {
@@ -115,9 +115,9 @@ function M(e) {
       location_stack: a
     })
   }, [c, a]);
-  let E = (0, d.Z)(null, c ? T.O : C.dG4);
+  let E = (0, d.Z)(null, c ? S.O : C.dG4);
   return (i.useEffect(() => {
-    if (c && !g) return T.O
+    if (c && !g) return S.O
   }, [c, g]), null == l) ? null : (0, r.jsx)(p.Gt, {
     value: a,
     children: (0, r.jsx)("div", {

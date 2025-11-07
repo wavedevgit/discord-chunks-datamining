@@ -110,8 +110,8 @@ async function q(e, t, n) {
   D.verbose("loading early cache");
   let c = y.Z.getSocket();
   c.connect();
-  let u = null != (r = S.Z.getGuildId()) ? r : null,
-    d = null != (o = T.Z.getChannelId()) ? o : null,
+  let u = null != (r = T.Z.getGuildId()) ? r : null,
+    d = null != (o = S.Z.getChannelId()) ? o : null,
     f = performance.now(),
     _ = v.Z.loadCachedMessages.measureAsyncWithoutNesting(() => z(e, u, d)),
     E = v.Z.fetchGuildCache.measureAsync(() => J(e, n)),

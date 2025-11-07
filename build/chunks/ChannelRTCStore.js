@@ -84,7 +84,7 @@ let D = new Chunk710845.Z("ChannelRTCStore"),
 
 function W(e) {
   let t = M[e];
-  return null == t && (t = new S.ZP(e), M[e] = t), t
+  return null == t && (t = new T.ZP(e), M[e] = t), t
 }
 
 function K() {
@@ -152,7 +152,7 @@ function ee(e, t) {
 }
 
 function et(e) {
-  return e.size(S.sI.STREAM) > 0 || e.size(S.sI.VIDEO) > 0 || e.hasEmbeddedActivity()
+  return e.size(T.sI.STREAM) > 0 || e.size(T.sI.VIDEO) > 0 || e.hasEmbeddedActivity()
 }
 
 function en(e) {
@@ -160,11 +160,11 @@ function en(e) {
     n = W(e);
   if (0 === n.size() || y.Z.getVoiceChannelId() !== e) return void ee(e, null);
   let r = A.dF.NONE,
-    i = n.toArray(S.sI.STREAM).find(e => e.type === A.fO.STREAM && h.Z.getActiveStreamForStreamKey(e.id));
+    i = n.toArray(T.sI.STREAM).find(e => e.type === A.fO.STREAM && h.Z.getActiveStreamForStreamKey(e.id));
   if (null != i) a()(i.type === A.fO.STREAM, "Impossible condition"), r = i.id;
   else if (1 === n.size()) r = t;
-  else if (1 === n.size(S.sI.VIDEO)) {
-    let [e] = n.toArray(S.sI.VIDEO);
+  else if (1 === n.size(T.sI.VIDEO)) {
+    let [e] = n.toArray(T.sI.VIDEO);
     r = e.id
   } else {
     var o;
@@ -344,7 +344,7 @@ function eI(e) {
     channelId: t,
     id: n
   } = e, r = W(t);
-  null == n && r.toArray(S.sI.STREAM).forEach(e => {
+  null == n && r.toArray(T.sI.STREAM).forEach(e => {
     (0, A._5)(e) && r.updateParticipant(e.user.id)
   });
   let [, i] = Q(t);
@@ -361,7 +361,7 @@ function eI(e) {
   }
 }
 
-function eT(e) {
+function eS(e) {
   let {
     channelId: t,
     participantId: n
@@ -372,7 +372,7 @@ function eT(e) {
   null != a && a.type !== A.fO.ACTIVITY && (i.updateParticipantPoppedOut(n, true), X(a.user.id, [t]))
 }
 
-function eS(e) {
+function eT(e) {
   let {
     channelId: t,
     participantId: n
@@ -505,7 +505,7 @@ function ek(e) {
 }
 class eU extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, f.default, b.Z, y.Z, O.Z, v.default, I.Z, T.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.default], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(Z, null == e ? true : e.voiceParticipantsHidden)
+    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, f.default, b.Z, y.Z, O.Z, v.default, I.Z, S.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.default], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(Z, null == e ? true : e.voiceParticipantsHidden)
   }
   getState() {
     return {
@@ -521,31 +521,31 @@ class eU extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getSpeakingParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.SPEAKING)) ? t : x
+    return null != (t = W(e).toArray(T.sI.SPEAKING)) ? t : x
   }
   getFilteredParticipants(e) {
     var t;
     let n = W(e);
-    return null != (t = Z[e]) && t ? n.toArray(S.sI.FILTERED) : n.toArray(S.sI.NOT_POPPED_OUT)
+    return null != (t = Z[e]) && t ? n.toArray(T.sI.FILTERED) : n.toArray(T.sI.NOT_POPPED_OUT)
   }
   getVideoParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.VIDEO)) ? t : x
+    return null != (t = W(e).toArray(T.sI.VIDEO)) ? t : x
   }
   getStreamParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.STREAM)) ? t : x
+    return null != (t = W(e).toArray(T.sI.STREAM)) ? t : x
   }
   getActivityParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(S.sI.ACTIVITY)) ? t : x
+    return null != (t = W(e).toArray(T.sI.ACTIVITY)) ? t : x
   }
   getParticipant(e, t) {
     return W(e).getParticipant(t)
   }
   getUserParticipantCount(e) {
     let t = W(e);
-    return t.size() - t.size(S.sI.STREAM) - t.size(S.sI.ACTIVITY)
+    return t.size() - t.size(T.sI.STREAM) - t.size(T.sI.ACTIVITY)
   }
   getParticipantsOpen(e) {
     var t;
@@ -628,8 +628,8 @@ let eG = new eU(Chunk570140.Z, {
   CALL_UPDATE: e_,
   CALL_DELETE: ep,
   CHANNEL_RTC_SELECT_PARTICIPANT: eI,
-  CHANNEL_RTC_POPOUT_PARTICIPANT: eT,
-  CHANNEL_RTC_RETURN_PARTICIPANT: eS,
+  CHANNEL_RTC_POPOUT_PARTICIPANT: eS,
+  CHANNEL_RTC_RETURN_PARTICIPANT: eT,
   CHANNEL_RTC_UPDATE_LAYOUT: eN,
   CHANNEL_RTC_UPDATE_PARTICIPANTS_OPEN: em,
   CHANNEL_RTC_UPDATE_VOICE_PARTICIPANTS_HIDDEN: eg,

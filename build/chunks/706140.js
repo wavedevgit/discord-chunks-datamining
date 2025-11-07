@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  EM: () => S,
+  EM: () => T,
   Tt: () => A,
   cv: () => v,
   sx: () => N,
@@ -77,7 +77,7 @@ function v(e, t) {
 r = require("./808506.js").default;
 let I = {};
 
-function T(e) {
+function S(e) {
   return (0, a.e7)([l.Z], () => {
     var t, n;
     let r = null !== e ? null == (n = l.Z.settings.userContent) || null == (t = n.recurringDismissibleContentStates) ? true : t[e] : null;
@@ -85,10 +85,10 @@ function T(e) {
   })
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   let {
     lastDismissedVersion: r
-  } = T(e), o = (0, a.e7)([c.Z], () => c.Z.getGuildId()), s = null;
+  } = S(e), o = (0, a.e7)([c.Z], () => c.Z.getGuildId()), s = null;
   if (null != e) {
     let n = !(0, g.Bh)(e);
     l.Z.hasLoaded(b.yP.PRELOADED_USER_SETTINGS) ? s = n && (null == r || r < t) ? e : null : null != r && (s = n && r < t ? e : null)
@@ -108,7 +108,7 @@ function A(e, t, n) {
   let {
     lastDismissedAtMs: r,
     numTimesDismissed: o
-  } = T(e), s = (0, a.e7)([c.Z], () => c.Z.getGuildId()), l = null;
+  } = S(e), s = (0, a.e7)([c.Z], () => c.Z.getGuildId()), l = null;
   return null != e && (l = P(!(0, g.Bh)(e), r, o, t) ? e : null), [O(l, s, n), i.useCallback((e, t) => {
     null != l && (0, m.Ow)(l, {
       dismissAction: e,
@@ -122,7 +122,7 @@ function A(e, t, n) {
 function C(e, t, n) {
   let {
     lastDismissedObjectId: r
-  } = T(e), o = (0, a.e7)([c.Z], () => c.Z.getGuildId()), s = null;
+  } = S(e), o = (0, a.e7)([c.Z], () => c.Z.getGuildId()), s = null;
   if (null != e) {
     let n = !(0, g.Bh)(e);
     l.Z.hasLoaded(b.yP.PRELOADED_USER_SETTINGS) ? s = n && (null == r || 1 === d.default.compare(t, r)) ? e : null : null != r && (s = n && 1 === d.default.compare(t, r) ? e : null)

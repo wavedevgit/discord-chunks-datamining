@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 158969, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -28,43 +28,43 @@ let E = Chunk647438.memo(function(e) {
     let {
       message: t,
       notice: n,
-      compact: i = false,
+      compact: r = false,
       onDismiss: l
     } = e;
-    return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)("div", {
+    return (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsxs)("div", {
         className: a()(v.blockedNoticeContainer, {
-          [v.compact]: i
+          [v.compact]: r
         }),
-        children: [(0, r.jsx)("div", {
+        children: [(0, i.jsx)("div", {
           className: v.blockedNoticeIcon,
-          children: (0, r.jsx)(u.b7C, {
+          children: (0, i.jsx)(u.b7C, {
             size: "xs",
             color: "currentColor",
             className: v.shieldIcon
           })
-        }), (0, r.jsx)("div", {
+        }), (0, i.jsx)("div", {
           className: v.blockedNotice,
-          children: (0, r.jsx)(u.Text, {
+          children: (0, i.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "interactive-normal",
             children: n
           })
         })]
-      }), (0, r.jsx)("div", {
+      }), (0, i.jsx)("div", {
         className: a()(v.ephemeralAccessories, {
-          [v.compact]: i
+          [v.compact]: r
         }),
-        children: (0, r.jsx)(m.Z, {
+        children: (0, i.jsx)(m.Z, {
           message: t,
           onDeleteMessage: l,
-          children: (0, r.jsx)(u.Text, {
+          children: (0, i.jsx)(u.Text, {
             variant: "text-xs/normal",
             color: "interactive-normal",
             tag: "span",
             className: v.learnMore,
-            children: C.intl.format(C.t["Nd3Gh+"], {
-              helpUrl: h.Z.getArticleURL(y.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+            children: _.intl.format(_.t["Nd3Gh+"], {
+              helpUrl: h.Z.getArticleURL(C.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
             })
           })
         })
@@ -79,32 +79,32 @@ let E = Chunk647438.memo(function(e) {
       message: u,
       children: h,
       content: m,
-      onUpdate: y
-    } = e, j = null == (t = u.editedTimestamp) ? true : t.toString(), S = i.useRef(false), P = (0, c.e7)([f.Z], () => f.Z.getMessage(u.id), [u.id]), I = i.useCallback(() => {
+      onUpdate: C
+    } = e, j = null == (t = u.editedTimestamp) ? true : t.toString(), S = r.useRef(false), P = (0, c.e7)([f.Z], () => f.Z.getMessage(u.id), [u.id]), I = r.useCallback(() => {
       (null == P ? true : P.isBlockedEdit) ? (0, p.I)(u.id) : d.Z.deleteMessage(u.channel_id, u.id, true)
     }, [u, P]);
-    return i.useLayoutEffect(() => {
-      S.current ? null != y && y() : S.current = true
-    }, [y, u.content, m, j, h]), (0, r.jsxs)("div", {
+    return r.useLayoutEffect(() => {
+      S.current ? null != C && C() : S.current = true
+    }, [C, u.content, m, j, h]), (0, i.jsxs)("div", {
       id: (0, g.ut)(u),
-      className: a()(l, x.markup, {
-        [O.messageContent]: true,
-        [O.markupRtl]: "rtl" === s()(u.content),
+      className: a()(l, O.markup, {
+        [x.messageContent]: true,
+        [x.markupRtl]: "rtl" === s()(u.content),
         [v.blockedEdit]: null == P ? true : P.isBlockedEdit,
         [v.blockedSend]: !(null == P ? true : P.isBlockedEdit)
       }),
-      children: [null != h ? h : (0, b.L5)(u, m), (null == P ? true : P.isBlockedEdit) && null != u.timestamp && (0, r.jsxs)(r.Fragment, {
-        children: [" ", (0, r.jsx)(_.Z, {
+      children: [null != h ? h : (0, b.L5)(u, m), (null == P ? true : P.isBlockedEdit) && null != u.timestamp && (0, i.jsxs)(i.Fragment, {
+        children: [" ", (0, i.jsx)(y.Z, {
           timestamp: u.timestamp,
           isEdited: true,
           isInline: false,
-          children: (0, r.jsxs)("span", {
-            className: O.edited,
-            children: ["(", C.intl.string(C.t.Z7eEx9), ")"]
+          children: (0, i.jsxs)("span", {
+            className: x.edited,
+            children: ["(", _.intl.string(_.t.Z7eEx9), ")"]
           })
         })]
-      }), (0, r.jsx)(E, {
-        notice: null != (n = null == P ? true : P.errorMessage) ? n : C.intl.string(C.t.zQ69pv),
+      }), (0, i.jsx)(E, {
+        notice: null != (n = null == P ? true : P.errorMessage) ? n : _.intl.string(_.t.zQ69pv),
         message: u,
         compact: o,
         onDismiss: I

@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 900902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -25,14 +25,14 @@ let p = Chunk647438.memo(function(e) {
       author: m,
       repliedMessage: g,
       roleIcon: b
-    } = e, _ = (0, u.wq)(t.author.id, n.id), y = (0, u.XO)(t, n, p, h), C = (0, u.R9)(f, h), v = i.useCallback(() => {
+    } = e, y = (0, u.wq)(t.author.id, n.id), C = (0, u.XO)(t, n, p, h), _ = (0, u.R9)(f, h), v = r.useCallback(() => {
       h({
         usernameProfile: false,
         avatarProfile: false,
         referencedUsernameProfile: false
       })
     }, [h]);
-    return (0, r.jsx)(o.ZP, {
+    return (0, i.jsx)(o.ZP, {
       guildId: n.guild_id,
       message: t,
       channel: n,
@@ -44,9 +44,9 @@ let p = Chunk647438.memo(function(e) {
       renderPopout: c.Z,
       showAvatarPopout: f,
       showUsernamePopout: p,
-      onClickAvatar: C,
-      onClickUsername: y,
-      onContextMenu: _,
+      onClickAvatar: _,
+      onClickUsername: C,
+      onContextMenu: y,
       onPopoutRequestClose: v,
       roleIcon: b
     })
@@ -57,7 +57,7 @@ function h(e) {
   let {
     messageProps: t,
     setPopout: n,
-    messagePopouts: i,
+    messagePopouts: r,
     replyReference: o,
     author: s,
     repliedMessage: c,
@@ -69,24 +69,24 @@ function h(e) {
     groupId: g
   } = t, {
     usernameProfile: b,
-    avatarProfile: _
-  } = i;
+    avatarProfile: y
+  } = r;
   if ((0, l.Z)(d)) return null;
-  let y = d.id === g;
-  return y || h || null != o ? (0, r.jsx)(p, {
+  let C = d.id === g;
+  return C || h || null != o ? (0, i.jsx)(p, {
     message: d,
     channel: m,
     compact: h,
     subscribeToGroupId: g,
-    isGroupStart: y,
+    isGroupStart: C,
     groupId: g,
     setPopout: n,
     usernameProfile: b,
-    avatarProfile: _,
+    avatarProfile: y,
     author: s,
     repliedMessage: c,
     roleIcon: u
-  }) : (0, r.jsx)(f, {
+  }) : (0, i.jsx)(f, {
     compact: true,
     timestamp: d.timestamp,
     isInline: false,

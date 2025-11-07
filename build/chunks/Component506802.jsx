@@ -5,7 +5,7 @@ require.d(exports, {
   aM: () => k,
   gq: () => D,
   jS: () => U,
-  r6: () => S
+  r6: () => T
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -64,7 +64,7 @@ function v(e, t) {
 
 function I(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,14 +72,14 @@ function I(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var S = function(e) {
+var T = function(e) {
   return e.PRIMARY = "primary", e.GREY = "grey", e.BRAND = "brand", e.GREEN = "green", e.RED = "red", e
 }({});
 let A = 16,
@@ -340,7 +340,7 @@ class k extends(r = Chunk647438.Component) {
     })
   }
 }
-b(k, "Colors", S), b(k, "defaultProps", {
+b(k, "Colors", T), b(k, "defaultProps", {
   hideOnClick: true,
   position: "top",
   color: "primary",

@@ -39,13 +39,13 @@ let y = (0, Chunk191336.U)(e => ({
     } = (0, f.ZP)(d.Z.CLOUD_PLAY_POPOVER), I = (0, u.Z)({
       application: O,
       analyticsLocations: v
-    }), T = (0, h.Nj)(s.z.CLOUD_PLAY_NEW_BADGE), S = null != I && !T && n, {
+    }), S = (0, h.Nj)(s.z.CLOUD_PLAY_NEW_BADGE), T = null != I && !S && n, {
       activeEntryId: A,
       setActiveEntryId: C
-    } = y(), N = A === t.id, R = S && N ? [s.z.CLOUD_PLAY_POPOVER] : [], [P, w] = (0, m.US)(R), D = P === s.z.CLOUD_PLAY_POPOVER;
+    } = y(), N = A === t.id, R = T && N ? [s.z.CLOUD_PLAY_POPOVER] : [], [P, w] = (0, m.US)(R), D = P === s.z.CLOUD_PLAY_POPOVER;
     i.useEffect(() => {
-      S && null === A && C(t.id)
-    }, [A, S, t.id, C]);
+      T && null === A && C(t.id)
+    }, [A, T, t.id, C]);
     let x = () => {
       null == I || I()
     };

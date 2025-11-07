@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 184279, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -30,33 +30,33 @@ function h(e) {
   let {
     channel: n
   } = e, h = null != (t = (0, a.ZP)(n)) ? t : "";
-  return (0, r.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     id: (0, s.p)(n.id, n.id),
     className: d.headerContainer,
-    children: [(0, r.jsx)("img", {
+    children: [(0, i.jsx)("img", {
       src: p,
       className: d.wumpusImage,
       alt: ""
-    }), (0, r.jsxs)("div", {
+    }), (0, i.jsxs)("div", {
       className: d.chatBubbleContainer,
-      children: [(0, r.jsx)(f, {}), (0, r.jsxs)("div", {
+      children: [(0, i.jsx)(f, {}), (0, i.jsxs)("div", {
         className: d.chatBubble,
-        children: [(0, r.jsx)(i.qEK, {
+        children: [(0, i.jsx)(r.qEK, {
           "aria-label": h,
-          size: i.EFr.SIZE_80,
+          size: r.EFr.SIZE_80,
           src: (0, l.x)(n, 80, false)
-        }), (0, r.jsxs)(c.Ot, {
+        }), (0, i.jsxs)(c.Ot, {
           className: d.emptyMessageHeader,
-          children: [h, (0, r.jsx)(o.Z, {
+          children: [h, (0, i.jsx)(o.Z, {
             className: d.flowerStar,
             size: 24,
-            children: (0, r.jsx)(i.kmB, {
+            children: (0, i.jsx)(r.kmB, {
               size: "md",
               color: "currentColor",
               className: d.verified
             })
           })]
-        }), (0, r.jsx)(c.jz, {
+        }), (0, i.jsx)(c.jz, {
           children: u.intl.string(u.t.Rzvnig)
         })]
       })]

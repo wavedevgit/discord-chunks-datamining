@@ -51,7 +51,7 @@ function j(e) {
   } = e, {
     name: E,
     bot: O
-  } = n = (0, P.O)(n), v = null == O ? true : O.id, I = (0, p.ye)(n), S = T.ZP.getApplicationIconURL({
+  } = n = (0, P.O)(n), v = null == O ? true : O.id, I = (0, p.ye)(n), T = S.ZP.getApplicationIconURL({
     id: n.id,
     icon: n.icon,
     bot: O
@@ -113,7 +113,7 @@ function j(e) {
     videoBannerSrc: x,
     onClickBanner: z,
     bannerAspectRatio: M,
-    iconSrc: S,
+    iconSrc: T,
     info: Q,
     actions: X,
     onClickContent: z,
@@ -134,7 +134,7 @@ function k(e) {
   var t, n, o;
   let {
     app: c
-  } = e, u = (0, S.Eb)({
+  } = e, u = (0, T.Eb)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig

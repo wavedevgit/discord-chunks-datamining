@@ -362,7 +362,7 @@ function et(e) {
   } = e, s = (0, y.m)(U.PremiumTypes.TIER_2), c = (null == (t = (0, g.oq)().metadata) ? true : t.from) === g.tE.SHARE_MESSAGE;
   (0, D.hf)(s, h.Z.CUSTOM_THEMES_EDITOR);
   let u = () => {
-      (0, D.Vb)(), (0, E.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == a ? true : a.from) === g.tE.SETTING ? ((0, T.openUserSettings)(I.n.APPEARANCE_PANEL, {
+      (0, D.Vb)(), (0, E.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == a ? true : a.from) === g.tE.SETTING ? ((0, S.openUserSettings)(I.n.APPEARANCE_PANEL, {
         section: j.oAB.APPEARANCE
       }), (0, g.Ll)()) : (null == a ? true : a.from) === g.tE.CLIENT_THEMES_EDITOR ? (0, g.XO)(g.wh.CLIENT_THEMES) : (0, g.Ll)()
     },
@@ -379,7 +379,7 @@ function et(e) {
       }), (0, r.jsx)($, {
         disabled: !i,
         onApply: () => {
-          c && S.default.track(j.rMx.CUSTOM_THEME_SHARE_APPLIED, {}), n()
+          c && T.default.track(j.rMx.CUSTOM_THEME_SHARE_APPLIED, {}), n()
         }
       })]
     }) : (0, r.jsxs)(r.Fragment, {
@@ -412,40 +412,40 @@ function en(e) {
     location: "ClientThemeColorPickerTools"
   }).enabled, b = w.y.useConfig({
     location: "CustomThemesEditorV2"
-  }).enabled, y = (0, N.jJ)(), I = (0, N.SK)(), T = i.useRef(false), {
-    colors: S,
+  }).enabled, y = (0, N.jJ)(), I = (0, N.SK)(), S = i.useRef(false), {
+    colors: T,
     chassisMixAmount: C,
     gradientAngle: L,
     setColors: j,
     setChassisMixAmount: U,
     setGradientAngle: F
-  } = (0, A.Ig)(), [V, H] = i.useState(null != (t = S[0]) ? t : A.Dp), Y = (0, s.e7)([v.Z], () => v.Z.theme), W = (0, E.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
+  } = (0, A.Ig)(), [V, H] = i.useState(null != (t = T[0]) ? t : A.Dp), Y = (0, s.e7)([v.Z], () => v.Z.theme), W = (0, E.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
     analyticsLocations: z
   } = (0, m.ZP)(h.Z.CUSTOM_THEMES_EDITOR), q = (0, s.e7)([R.Z], () => R.Z.getSavedCustomTheme()), $ = async () => {
-    T.current = true, await (0, _.ZI)({
+    S.current = true, await (0, _.ZI)({
       theme: Y,
       customUserThemeSettings: {
-        colors: S,
+        colors: T,
         gradientColorStops: [],
         gradientAngle: L,
         baseMix: C
       }
-    }), (0, D.u7)(S, C, L, Y, z), null == a || a(k.L.TAKE_ACTION), W || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
+    }), (0, D.u7)(T, C, L, Y, z), null == a || a(k.L.TAKE_ACTION), W || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
   }, en = () => {
     y(N._m.RESET_BUTTON), (0, D.uf)()
-  }, er = S.length > 0;
+  }, er = T.length > 0;
   return (i.useEffect(() => () => {
-    T.current || y(N._m.EDITOR_CLOSE)
+    S.current || y(N._m.EDITOR_CLOSE)
   }, [y]), (0, p.ZP)(() => {
     if (!o) {
       var e;
-      let t = (null != (e = null == S ? true : S.length) ? e : 0) > 0,
+      let t = (null != (e = null == T ? true : T.length) ? e : 0) > 0,
         n = null != q;
       !t && n && b ? (A.Ig.getState().setAll({
         colors: q.colors,
         gradientAngle: q.gradient_angle,
         chassisMixAmount: q.base_mix
-      }), (0, N.Bv)(q.base_theme)) : (0, N.lT)(S, V, j)
+      }), (0, N.Bv)(q.base_theme)) : (0, N.lT)(T, V, j)
     }
   }), u) ? (0, r.jsxs)("div", {
     className: c ? Z.mobileContainer : Z.container,
@@ -471,10 +471,10 @@ function en(e) {
             children: B.intl.string(G.default.uSL2Gy)
           }), (0, r.jsx)(x.U, {
             onChange: e => {
-              H(e), 0 === S.length && (0, N.lT)(S, e, j)
+              H(e), 0 === T.length && (0, N.lT)(T, e, j)
             },
             value: V,
-            colors: S,
+            colors: T,
             setColors: j
           })]
         }), (0, r.jsxs)("div", {
@@ -483,13 +483,13 @@ function en(e) {
             variant: "text-sm/semibold",
             color: "text-secondary",
             children: B.intl.string(G.default.F1t0c8)
-          }), S.length > 1 && (0, r.jsx)(X, {
+          }), T.length > 1 && (0, r.jsx)(X, {
             gradientAngle: L,
             setGradientAngle: F
           }), (0, r.jsx)(Q, {
             chassisMixAmount: C,
             setChassisMixAmount: e => {
-              U(e), 0 === S.length && (0, N.lT)(S, V, j)
+              U(e), 0 === T.length && (0, N.lT)(T, V, j)
             }
           })]
         }), (0, r.jsxs)("div", {

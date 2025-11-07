@@ -35,17 +35,17 @@ function O(e) {
     guildEvent: g,
     eventPreview: O,
     recurrenceId: v
-  } = e, I = (0, _.Z)(i, g.id, v), T = null != g ? g : O, S = (0, o.e7)([c.ZP], () => c.ZP.getNick(i, null == n ? true : n.id), [i, n]);
-  v = null == T || null != v ? v : (0, h.DK)(T);
+  } = e, I = (0, _.Z)(i, g.id, v), S = null != g ? g : O, T = (0, o.e7)([c.ZP], () => c.ZP.getNick(i, null == n ? true : n.id), [i, n]);
+  v = null == S || null != v ? v : (0, h.DK)(S);
   let {
     startTime: A
-  } = (0, f.ZP)(null != g ? g : O, v), C = (0, d.Z)(v, g.id), N = (null == T ? true : T.scheduled_start_time) != null ? (0, h.lh)(C, A, new Date(T.scheduled_start_time)) : null;
-  if (null == T) return null;
+  } = (0, f.ZP)(null != g ? g : O, v), C = (0, d.Z)(v, g.id), N = (null == S ? true : S.scheduled_start_time) != null ? (0, h.lh)(C, A, new Date(S.scheduled_start_time)) : null;
+  if (null == S) return null;
   let {
     entity_type: R,
     status: P,
     recurrence_rule: w
-  } = T;
+  } = S;
   return (0, r.jsxs)("div", {
     className: a()(y.statusContainer, t),
     children: [(0, r.jsx)(E.z, {
@@ -60,12 +60,12 @@ function O(e) {
       className: y.spacer
     }), null != n && (0, r.jsx)(s.u, {
       text: b.intl.formatToPlainString(b.t["+3iypQ"], {
-        username: null != S ? S : u.ZP.getName(n)
+        username: null != T ? T : u.ZP.getName(n)
       }),
       children: (0, r.jsx)(l.qEK, {
         src: n.getAvatarURL(i, 20),
         size: l.EFr.SIZE_20,
-        "aria-label": null != S ? S : n.username,
+        "aria-label": null != T ? T : n.username,
         className: y.creator
       })
     }), (0, r.jsx)(s.u, {

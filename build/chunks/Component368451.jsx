@@ -2,7 +2,7 @@
 /** chunk id: 368451, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -137,7 +137,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     type: t,
     options: n,
@@ -145,27 +145,27 @@ function T(e) {
     maxValues: s,
     minValues: u,
     disabled: g
-  } = e, b = (0, h.Wo)(e), T = i.useMemo(() => n.filter(e => e.default).map(e => e.value), [n]), S = (0, _.CJ)();
-  l()(null != S, "StringSelectActionComponent must be rendered inside a ComponentStateContext");
+  } = e, b = (0, h.Wo)(e), S = i.useMemo(() => n.filter(e => e.default).map(e => e.value), [n]), T = (0, _.CJ)();
+  l()(null != T, "StringSelectActionComponent must be rendered inside a ComponentStateContext");
   let {
     state: A,
     executeStateUpdate: C,
     visualState: N,
     isDisabled: R,
     error: P
-  } = S.useComponentState(e, T.length > 0 ? {
+  } = T.useComponentState(e, S.length > 0 ? {
     type: t,
-    values: T
-  } : true), w = null != S.modal, D = s > 1, x = N === p.gH.LOADING, [L, M] = i.useState(false), [j, k] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(j), B = i.useMemo(() => n.some(e => null != e.emoji), [n]);
+    values: S
+  } : true), w = null != T.modal, D = s > 1, x = N === p.gH.LOADING, [L, M] = i.useState(false), [j, k] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(j), B = i.useMemo(() => n.some(e => null != e.emoji), [n]);
   i.useEffect(() => {
     if ((null == A ? true : A.type) === d.re.STRING_SELECT) {
       let e = new Set(A.values);
       k(e), G(e)
     } else {
-      let e = new Set(T);
+      let e = new Set(S);
       k(e), G(e)
     }
-  }, [a, T, A]);
+  }, [a, S, A]);
   let Z = i.useCallback(() => {
     U !== j && C({
       type: d.re.STRING_SELECT,

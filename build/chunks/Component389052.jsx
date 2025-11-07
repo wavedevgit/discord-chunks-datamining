@@ -69,10 +69,10 @@ function m(e) {
   } = t, v = (0, i.e7)([c.default], () => {
     var e;
     return (null == (e = c.default.getCurrentUser()) ? true : e.id) === O
-  }, [O]), I = (0, i.e7)([l.Z], () => l.Z.isBlocked(O), [O]), T = I ? "default" : "danger";
+  }, [O]), I = (0, i.e7)([l.Z], () => l.Z.isBlocked(O), [O]), S = I ? "default" : "danger";
   return v ? null : (0, r.jsx)(a.sNh, {
     id: "block",
-    color: null != T ? T : "default",
+    color: null != S ? S : "default",
     label: I ? d.intl.string(d.t.XyHpKH) : d.intl.string(d.t.l4Emac),
     action: I ? () => {
       null == E || E(), o.Z.unblockUser(O, {

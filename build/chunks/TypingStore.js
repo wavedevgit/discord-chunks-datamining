@@ -83,7 +83,7 @@ function O(e) {
     channelId: t,
     timeout: c,
     prevSend: i
-  }, S({
+  }, T({
     channelId: t,
     userId: n
   })
@@ -104,7 +104,7 @@ function I(e) {
   }))
 }
 
-function T(e, t) {
+function S(e, t) {
   return setTimeout(() => {
     s.Z.dispatch({
       type: "TYPING_STOP",
@@ -114,12 +114,12 @@ function T(e, t) {
   }, h)
 }
 
-function S(e) {
+function T(e) {
   let {
     channelId: t,
     userId: n
   } = e, r = p({}, y(t));
-  clearTimeout(r[n]), r[n] = T(t, n), E[t] = r
+  clearTimeout(r[n]), r[n] = S(t, n), E[t] = r
 }
 
 function A(e) {
@@ -167,7 +167,7 @@ class P extends(i = Chunk442837.ZP.Store) {
 }
 _(P, "displayName", "TypingStore");
 let w = new P(Chunk570140.Z, {
-  TYPING_START: S,
+  TYPING_START: T,
   TYPING_STOP: A,
   TYPING_START_LOCAL: O,
   TYPING_STOP_LOCAL: I,

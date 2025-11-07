@@ -1,7 +1,7 @@
-/** Chunk was on 84349 **/
-/** chunk id: 743161, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 81056 **/
+/** chunk id: 743161, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,70 +14,70 @@ var Chunk951288 = require("./951288.js"),
   Chunk314734 = require("./314734.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk604590 = require("./604590.js");
-let C = Chunk647438.memo(function(e) {
-  var n, t, {
-      context: C
+let O = Chunk647438.memo(function(e) {
+  var t, r, {
+      context: O
     } = e,
-    f = function(e, n) {
+    y = function(e, t) {
       if (null == e) return {};
-      var t, o, r = function(e, n) {
+      var r, n, o = function(e, t) {
         if (null == e) return {};
-        var t, o, r = {},
-          a = Object.keys(e);
-        for (o = 0; o < a.length; o++) t = a[o], n.indexOf(t) >= 0 || (r[t] = e[t]);
-        return r
-      }(e, n);
+        var r, n, o = {},
+          c = Object.keys(e);
+        for (n = 0; n < c.length; n++) r = c[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+        return o
+      }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (o = 0; o < a.length; o++) t = a[o], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (r[t] = e[t])
+        var c = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
       }
-      return r
+      return o
     }(e, ["context"]);
-  let m = (0, a.e7)([c.Z], () => c.Z.shouldShowModal());
-  r.useEffect(() => {
-    m || (0, i.Fvk)(l.e9)
+  let j = (0, c.e7)([p.Z], () => p.Z.shouldShowModal());
+  o.useEffect(() => {
+    j || (0, i.Fvk)(u.e9)
   });
-  let u = (0, b.Z)();
-  return (0, o.jsx)("span", {
-    style: l.u$,
-    children: (0, o.jsx)(i.Y0X, (n = function(e) {
-      for (var n = 1; n < arguments.length; n++) {
-        var t = null != arguments[n] ? arguments[n] : {},
-          o = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), o.forEach(function(n) {
-          var o;
-          o = t[n], n in e ? Object.defineProperty(e, n, {
-            value: o,
+  let g = (0, s.Z)();
+  return (0, n.jsx)("span", {
+    style: u.u$,
+    children: (0, n.jsx)(i.Y0X, (t = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var r = null != arguments[t] ? arguments[t] : {},
+          n = Object.keys(r);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(r, e).enumerable
+        }))), n.forEach(function(t) {
+          var n;
+          n = r[t], t in e ? Object.defineProperty(e, t, {
+            value: n,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[n] = o
+          }) : e[t] = n
         })
       }
       return e
     }({
-      className: s.root,
-      "aria-label": p.intl.string(p.t.shUONg),
+      className: f.root,
+      "aria-label": b.intl.string(b.t.shUONg),
       size: i.CgR.DYNAMIC
-    }, f), t = t = {
+    }, y), r = r = {
       parentComponent: "AppLauncherModal",
       "data-migration-pending": true,
-      children: (0, o.jsx)(d.Z, {
-        context: C,
-        entrypoint: _._b.VOICE,
-        initHistory: u
+      children: (0, n.jsx)(l.Z, {
+        context: O,
+        entrypoint: a._b.VOICE,
+        initHistory: g
       })
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
-      var t = Object.keys(e);
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+      var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        t.push.apply(t, o)
+        var n = Object.getOwnPropertySymbols(e);
+        r.push.apply(r, n)
       }
-      return t
-    })(Object(t)).forEach(function(e) {
-      Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(t, e))
-    }), n))
+      return r
+    })(Object(r)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+    }), t))
   })
 })

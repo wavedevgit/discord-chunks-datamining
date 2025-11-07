@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 45430, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -15,14 +15,14 @@ function c(e) {
     channelId: t,
     allPoppedOut: n = false
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: s.container,
-    children: [(0, r.jsx)(a.Z, {}), (0, r.jsxs)("div", {
+    children: [(0, i.jsx)(a.Z, {}), (0, i.jsxs)("div", {
       className: s.content,
-      children: [(0, r.jsx)(i.Heading, {
+      children: [(0, i.jsx)(r.Heading, {
         variant: "heading-lg/normal",
         children: n ? o.intl.string(o.t.KIConm) : o.intl.format(o.t.ilLVLr, {})
-      }), !n && (0, r.jsx)(i.Button, {
+      }), !n && (0, i.jsx)(r.Button, {
         variant: "secondary",
         size: "md",
         onClick: e => {

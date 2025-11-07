@@ -231,7 +231,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         statusTooltip: true,
         avatarDecoration: f,
         typingIndicatorRef: _
-      })), (0, r.jsx)(T.Z, {
+      })), (0, r.jsx)(S.Z, {
         confettiSpawnRef: p,
         shouldFire: d && null != h && t.id !== h.id,
         confettiLocation: x.Hn.MEMBER_USER
@@ -293,7 +293,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       activities: O,
       applicationStream: v,
       status: I,
-      shouldAnimateStatus: T = false,
+      shouldAnimateStatus: S = false,
       isMobile: R,
       premiumSince: D,
       channel: x,
@@ -334,9 +334,9 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       size: c.EFr.SIZE_32,
       animateOnHover: !(t || ef),
       guildId: L
-    }), eT = null != eo ? eo : {}, {
-      onFocus: eS
-    } = eT, eA = B(eT, ["onFocus"]), eC = (0, S.X7)(L, el, null != a ? a : null), [eN, eR] = i.useState(false);
+    }), eS = null != eo ? eo : {}, {
+      onFocus: eT
+    } = eS, eA = B(eS, ["onFocus"]), eC = (0, T.X7)(L, el, null != a ? a : null), [eN, eR] = i.useState(false);
     i.useEffect(() => {
       t && eR(false)
     }, [t]);
@@ -349,8 +349,8 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         e_(false)
       }, []),
       eL = i.useCallback(() => {
-        eh(true), null == eS || eS()
-      }, [eS]),
+        eh(true), null == eT || eT()
+      }, [eT]),
       eM = i.useCallback(() => {
         eh(false)
       }, []),
@@ -423,7 +423,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         }),
         avatar: (0, r.jsx)(q, {
           user: b,
-          shouldAnimateStatus: T,
+          shouldAnimateStatus: S,
           activities: O,
           status: I,
           eventHandlers: eI,

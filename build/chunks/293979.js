@@ -74,7 +74,7 @@ function M(e, t) {
     components: a
   } = e, s = (0, f.Z)(), [u, _] = r.useState(null), [p, h] = r.useState(null), [m, g] = r.useState({}), b = (0, o.e7)([N.Z], () => N.Z.getModalState(p), [p]), y = (0, d.Z)(() => new Set), O = r.useCallback(async () => {
     if (_(null), h(null), D(y)) {
-      let t = T.default.fromTimestamp(Date.now());
+      let t = S.default.fromTimestamp(Date.now());
       h(t), await G(e, s, t)
     }
   }, [s, e, y]);
@@ -201,7 +201,7 @@ async function G(e, t, n) {
     },
     preflight: l
   }), await l;
-  let c = o.map((e, t) => (0, S.B)(e, t)),
+  let c = o.map((e, t) => (0, T.B)(e, t)),
     d = k(e.customId, e.components, {
       uploads: o
     }),

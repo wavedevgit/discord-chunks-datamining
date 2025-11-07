@@ -49,9 +49,9 @@ function I(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let T = new Chunk727258.g8;
+let S = new Chunk727258.g8;
 
-function S(e, t) {
+function T(e, t) {
   for (let n of g.Z.getGuildIds()) !e(n) || u.Z.isLurking(n) || m.ZP.isCurrentUserGuest(n) || t(n)
 }
 
@@ -71,21 +71,21 @@ function A(e) {
 }
 
 function C(e, t) {
-  let n = T;
-  if (T = new c.g8, 0 === e.length && t.length > 0)
-    for (let e of t) T.addNode((0, c.Mg)(e));
+  let n = S;
+  if (S = new c.g8, 0 === e.length && t.length > 0)
+    for (let e of t) S.addNode((0, c.Mg)(e));
   else
     for (let t of e)
       if (0 !== t.guildIds.length)
-        if (null == t.folderId) T.addNode((0, c.Mg)(t.guildIds[0]));
+        if (null == t.folderId) S.addNode((0, c.Mg)(t.guildIds[0]));
         else {
           let e = (0, c.qQ)(t, true, p.Z.isFolderExpanded(t.folderId));
-          for (let n of (T.addNode(e), t.guildIds)) T.addNode((0, c.Mg)(n), e)
-        } for (let e of T.allNodes()) e.type === c.eD.GUILD && (u.Z.isLurking(e.id) || m.ZP.isCurrentUserGuest(e.id) || null == g.Z.getGuild(e.id) && !h.Z.isUnavailable(e.id)) && T.removeNode(e);
-  for (let e of Object.values(T.nodes)) e.type === c.eD.FOLDER && 0 === e.children.length && T.removeNode(e);
-  S(e => null == T.nodes[e], e => T.addNode((0, c.Mg)(e), T.root, false)), T.version = n.version;
-  let r = a()(n, T);
-  return r ? T = n : T.version = n.version + 1, !r
+          for (let n of (S.addNode(e), t.guildIds)) S.addNode((0, c.Mg)(n), e)
+        } for (let e of S.allNodes()) e.type === c.eD.GUILD && (u.Z.isLurking(e.id) || m.ZP.isCurrentUserGuest(e.id) || null == g.Z.getGuild(e.id) && !h.Z.isUnavailable(e.id)) && S.removeNode(e);
+  for (let e of Object.values(S.nodes)) e.type === c.eD.FOLDER && 0 === e.children.length && S.removeNode(e);
+  T(e => null == S.nodes[e], e => S.addNode((0, c.Mg)(e), S.root, false)), S.version = n.version;
+  let r = a()(n, S);
+  return r ? S = n : S.version = n.version + 1, !r
 }
 
 function N() {
@@ -105,12 +105,12 @@ function P(e) {
     targetId: n,
     moveToBelow: r,
     combine: i
-  } = e, a = T.getNode(t), o = T.getNode(n);
+  } = e, a = S.getNode(t), o = S.getNode(n);
   if (null == a || null == o) returnfalse;
   if (s()(!(i && a.type === c.eD.FOLDER), "[SORTED GUILDS] Can't combine a folder ".concat(a.id, " with another guilds list item")), s()(!(i && null != o.parentId), "[SORTED GUILDS] Can't combine with a guild ".concat(o.id, " that's already inside of a folder")), s()(a.type !== c.eD.FOLDER || null == o.parentId, "[SORTED GUILDS] Can't move a folder ".concat(a.id, " to inside of another folder ").concat(o.parentId)), i) {
-    let e = o.type !== c.eD.FOLDER ? T.convertToFolder(o) : o;
-    T.moveInto(a, e, r)
-  } else T.moveNextTo(a, o, r)
+    let e = o.type !== c.eD.FOLDER ? S.convertToFolder(o) : o;
+    S.moveInto(a, e, r)
+  } else S.moveNextTo(a, o, r)
 }
 
 function w(e) {
@@ -119,12 +119,12 @@ function w(e) {
     name: n
   } = e, r = t.shift();
   if (null == r) returnfalse;
-  let i = T.getNode(r);
+  let i = S.getNode(r);
   if (null == i) returnfalse;
-  let a = T.convertToFolder(i);
+  let a = S.convertToFolder(i);
   a.name = n, t.forEach(e => {
-    let t = T.getNode(e);
-    null != t && T.moveInto(t, a, true)
+    let t = S.getNode(e);
+    null != t && S.moveInto(t, a, true)
   })
 }
 
@@ -133,36 +133,36 @@ function D(e) {
     targetId: t,
     sourceIds: n
   } = e, r = v(e, ["targetId", "sourceIds"]);
-  let i = T.getNode(t);
+  let i = S.getNode(t);
   if (null == i || i.type !== c.eD.FOLDER) returnfalse;
   let a = "" === r.name ? true : r.name;
   if (a !== i.name) {
-    let e = T.cloneNode(i);
-    s()(e.id === i.id, "[SORTED GUILDS] Replacement folder node must have same id."), e.name = a, T.replaceNode(i, e)
+    let e = S.cloneNode(i);
+    s()(e.id === i.id, "[SORTED GUILDS] Replacement folder node must have same id."), e.name = a, S.replaceNode(i, e)
   }
-  let o = T.getNode(t);
+  let o = S.getNode(t);
   if (null == o) returnfalse;
   let l = o.children.map(e => e.id).filter(_.lm),
     u = new Set(l),
     d = new Set(n),
     f = new Set([...l].filter(e => !d.has(e)));
   n.filter(e => !u.has(e)).forEach(e => {
-    let t = T.getNode(e);
-    null != t && T.moveInto(t, o, true)
+    let t = S.getNode(e);
+    null != t && S.moveInto(t, o, true)
   }), f.forEach(e => {
-    let t = T.getNode(e);
-    null != t && T.moveNextTo(t, o, true)
+    let t = S.getNode(e);
+    null != t && S.moveNextTo(t, o, true)
   })
 }
 
 function x(e) {
   let {
     targetId: t
-  } = e, n = T.getNode(t);
+  } = e, n = S.getNode(t);
   if (null == n || n.type !== c.eD.FOLDER) returnfalse;
   n.children.map(e => e.id).filter(_.lm).forEach(e => {
-    let t = T.getNode(e);
-    null != t && T.moveNextTo(t, n, true)
+    let t = S.getNode(e);
+    null != t && S.moveNextTo(t, n, true)
   })
 }
 
@@ -180,7 +180,7 @@ function L(e) {
 function M(e) {
   let {
     folderId: t
-  } = e, n = T.getNode(t), r = p.Z.isFolderExpanded(t);
+  } = e, n = S.getNode(t), r = p.Z.isFolderExpanded(t);
   if (null == n || n.type !== c.eD.FOLDER || n.expanded === r) returnfalse;
   U(n, r)
 }
@@ -189,18 +189,18 @@ function j(e) {
   let {
     folderId: t,
     expanded: n
-  } = e, r = T.getNode(t);
+  } = e, r = S.getNode(t);
   if (null == r || r.type !== c.eD.FOLDER || r.expanded === n) returnfalse;
   U(r, n)
 }
 
 function k() {
-  for (let e of T.allNodes()) module.type === Chunk727258.eD.FOLDER && module.expanded && U(module, false)
+  for (let e of S.allNodes()) module.type === Chunk727258.eD.FOLDER && module.expanded && U(module, false)
 }
 
 function U(e, t) {
-  let n = T.cloneNode(e);
-  s()(n.id === e.id, "[SORTED GUILDS] setNodeExpanded: Replacement folder node must have same id."), n.expanded = t, T.replaceNode(e, n)
+  let n = S.cloneNode(e);
+  s()(n.id === e.id, "[SORTED GUILDS] setNodeExpanded: Replacement folder node must have same id."), n.expanded = t, S.replaceNode(e, n)
 }
 let G = (0, Chunk251625.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
   B = (0, Chunk251625.oH)((e, t) => e.getRoots().map(A)),
@@ -223,31 +223,31 @@ class V extends Chunk750041.Z {
     this.waitFor(Chunk430824.Z, Chunk9156.ZP, Chunk581883.Z, Chunk486472.Z, Chunk41776.Z, Chunk664915.Z, Chunk937111.Z)
   }
   getGuildsTree() {
-    return T
+    return S
   }
   getGuildFolders() {
-    return B(T, T.version)
+    return B(S, S.version)
   }
   getGuildFolderById(e) {
     return this.getGuildFolders().find(t => t.folderId === e)
   }
   getFlattenedGuildIds() {
-    return G(T, T.version)
+    return G(S, S.version)
   }
   getFlattenedGuildFolderList() {
-    return Z(T, T.version)
+    return Z(S, S.version)
   }
   getCompatibleGuildFolders() {
-    return F(T, T.version)
+    return F(S, S.version)
   }
   getFastListGuildFolders() {
-    return T.getRoots()
+    return S.getRoots()
   }
   takeSnapshot() {
     return {
       version: V.LATEST_SNAPSHOT_VERSION,
       data: {
-        tree: T.getSnapshot()
+        tree: S.getSnapshot()
       }
     }
   }
@@ -271,7 +271,7 @@ class V extends Chunk750041.Z {
       let e = this.readSnapshot(V.LATEST_SNAPSHOT_VERSION),
         t = null == module ? true : module.tree;
       if (null != exports)
-        for (let e of ((T = new Chunk727258.g8).loadSnapshot(exports), T.allNodes())) module.type === Chunk727258.eD.FOLDER && (module.expanded = Chunk664915.Z.isFolderExpanded(module.id))
+        for (let e of ((S = new Chunk727258.g8).loadSnapshot(exports), S.allNodes())) module.type === Chunk727258.eD.FOLDER && (module.expanded = Chunk664915.Z.isFolderExpanded(module.id))
     })
   }
 }

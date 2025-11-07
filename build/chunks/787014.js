@@ -70,7 +70,7 @@ function p(e) {
     defaultForumLayout: O,
     defaultTagSetting: v,
     iconEmoji: I,
-    themeColor: T
+    themeColor: S
   } = e;
   i.Z.dispatch({
     type: "CHANNEL_SETTINGS_UPDATE",
@@ -96,7 +96,7 @@ function p(e) {
     defaultForumLayout: O,
     defaultTagSetting: v,
     iconEmoji: I,
-    themeColor: T
+    themeColor: S
   })
 }
 async function h(e, t) {
@@ -117,8 +117,8 @@ async function h(e, t) {
     defaultReactionEmoji: O,
     rtcRegion: v,
     videoQualityMode: I,
-    autoArchiveDuration: T,
-    locked: S,
+    autoArchiveDuration: S,
+    locked: T,
     invitable: A,
     availableTags: C,
     defaultSortOrder: N,
@@ -147,8 +147,8 @@ async function h(e, t) {
       template: y,
       rtc_region: v,
       video_quality_mode: I,
-      auto_archive_duration: T,
-      locked: S,
+      auto_archive_duration: S,
+      locked: T,
       invitable: A,
       default_reaction_emoji: null != O ? {
         emoji_id: null == O ? true : O.emojiId,

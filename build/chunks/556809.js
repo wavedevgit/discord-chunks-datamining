@@ -38,10 +38,10 @@ let y = null,
   O = false,
   v = false,
   I = {},
-  T = (e, t) => {
+  S = (e, t) => {
     I[e] = t
   },
-  S = e => {
+  T = e => {
     delete I[e]
   },
   A = () => {
@@ -65,9 +65,9 @@ let y = null,
       if (o.Z.isFocused() && h.error("Main window is reported as focused when it should not be!"), n || r) {
         y = n ? "OverlayGameFocused" : "OverlayWindowFocused";
         let r = t.requestAnimationFrame(t => {
-          S(r), e(t)
+          T(r), e(t)
         });
-        return T(r, e), r
+        return S(r, e), r
       }
     } catch (e) {
       h.error("RAF redirect failed, falling back to original. Cause:", e), (0, l.D1)(e, d.default.getOverlayMethod(f.Z.getTargetPID()))

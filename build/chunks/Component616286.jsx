@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 616286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => E
@@ -23,37 +23,37 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(e) {
+function x(e) {
   let t = (0, s.e7)([m.Z], () => !(0, o.isEmpty)(m.Z.getTypingUsers(e)), [e]),
     n = (0, s.e7)([h.Z], () => h.Z.getVoiceChannelId() === e, [e]),
     {
-      unreadCount: r,
-      mentionCount: i
+      unreadCount: i,
+      mentionCount: r
     } = (0, s.cj)([f.ZP], () => ({
       unreadCount: f.ZP.getUnreadCount(e),
       mentionCount: f.ZP.getMentionCount(e)
     }), [e]);
   return {
-    unreadCount: r,
-    mentionCount: i,
+    unreadCount: i,
+    mentionCount: r,
     voiceChannelIsSelected: n,
     isTyping: t
   }
 }
 
-function x(e) {
+function O(e) {
   let {
     className: t,
     channelId: n
   } = e, {
-    unreadCount: i,
+    unreadCount: r,
     mentionCount: l,
     isTyping: a,
     voiceChannelIsSelected: o
-  } = O(n);
-  return (0, r.jsx)(_.Z, {
+  } = x(n);
+  return (0, i.jsx)(y.Z, {
     className: t,
-    unreadCount: i,
+    unreadCount: r,
     mentionCount: l,
     isTyping: a,
     canBadge: o
@@ -69,27 +69,27 @@ function E(e) {
     onClick: f,
     inPopout: h,
     showRequestToSpeakSidebar: m,
-    toggleRequestToSpeakSidebar: _
+    toggleRequestToSpeakSidebar: y
   } = e, E = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, i, r = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
+      var n, i, r = {},
         l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
-    return i
+    return r
   }(e, ["channelId", "className", "showingClassName", "onClick", "inPopout", "showRequestToSpeakSidebar", "toggleRequestToSpeakSidebar"]);
   let {
     parentAnalyticsLocation: j
   } = (0, u.ZP)(), {
     disabled: S
-  } = E, P = i.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
+  } = E, P = r.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
     isShowing: Z,
     unreadCount: T,
     mentionCount: N
@@ -97,9 +97,9 @@ function E(e) {
     let {
       unreadCount: t,
       mentionCount: n,
-      isTyping: r
-    } = O(e), [l, a] = i.useState(false);
-    return i.useEffect(() => {
+      isTyping: i
+    } = x(e), [l, a] = r.useState(false);
+    return r.useEffect(() => {
       a(t > 0);
       let e = setTimeout(() => {
         a(false)
@@ -108,35 +108,35 @@ function E(e) {
         clearTimeout(e), a(false)
       }
     }, [t]), {
-      isShowing: l || n > 0 || r,
+      isShowing: l || n > 0 || i,
       unreadCount: t,
       mentionCount: n
     }
-  }(n), A = i.useCallback(() => {
-    (0, p.v)(j, p.d.CHAT, !I), null == f || f(), !I && m && (null == _ || _()), c.Z.updateChatOpen(n, !I)
-  }, [n, I, f, m, _, j]), w = i.useCallback(e => {
+  }(n), A = r.useCallback(() => {
+    (0, p.v)(j, p.d.CHAT, !I), null == f || f(), !I && m && (null == y || y()), c.Z.updateChatOpen(n, !I)
+  }, [n, I, f, m, y, j]), w = r.useCallback(e => {
     let {
       className: t
     } = e;
-    return (0, r.jsx)(x, {
+    return (0, i.jsx)(O, {
       className: t,
       channelId: n
     })
-  }, [n]), M = i.useCallback(() => {
+  }, [n]), M = r.useCallback(() => {
     var e;
     null == (e = P.current) || e.focus()
   }, []);
   (0, g.yp)({
-    event: C.CkL.FOCUS_CHAT_BUTTON,
+    event: _.CkL.FOCUS_CHAT_BUTTON,
     handler: S ? null : M
   });
-  let [R, D] = i.useState(false), k = i.useCallback(() => {
+  let [R, D] = r.useState(false), L = r.useCallback(() => {
     h && D(true)
   }, [h]);
   (0, g.yp)({
-    event: C.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
-    handler: k
-  }), i.useEffect(() => {
+    event: _.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
+    handler: L
+  }), r.useEffect(() => {
     let e;
     return R && (e = setTimeout(() => {
       D(false)
@@ -144,23 +144,23 @@ function E(e) {
       clearTimeout(e)
     }
   }, [R]);
-  let L = [t = h && S ? v.intl.string(v.t.DPgc5h) : I ? v.intl.string(v.t.nthdxB) : v.intl.string(v.t["5KxXrK"])];
-  return N > 0 && L.push(v.intl.formatToPlainString(v.t["3l1GOx"], {
+  let k = [t = h && S ? v.intl.string(v.t.DPgc5h) : I ? v.intl.string(v.t.nthdxB) : v.intl.string(v.t["5KxXrK"])];
+  return N > 0 && k.push(v.intl.formatToPlainString(v.t["3l1GOx"], {
     mentionCount: N
-  })), T > 0 && L.push(v.intl.string(v.t.x5zAGZ)), (0, r.jsx)(y.Z, function(e) {
+  })), T > 0 && k.push(v.intl.string(v.t.x5zAGZ)), (0, i.jsx)(C.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        i = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      }))), i.forEach(function(t) {
+        var i;
+        i = n[t], t in e ? Object.defineProperty(e, t, {
+          value: i,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[t] = i
       })
     }
     return e
@@ -168,7 +168,7 @@ function E(e) {
     buttonRef: P,
     onClick: A,
     label: t,
-    "aria-label": L.join(", "),
+    "aria-label": k.join(", "),
     iconComponent: w,
     tooltipPosition: "bottom",
     wrapperClassName: a()(l, null != o && {

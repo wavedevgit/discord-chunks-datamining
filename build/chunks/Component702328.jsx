@@ -90,8 +90,8 @@ let z = () => {
       home: eO,
       whatsNew: ev,
       bestOfNitro: eI,
-      plans: eT,
-      compare: eS
+      plans: eS,
+      compare: eT
     } = eb,
     eA = em ? Chunk379039 : Chunk810392,
     {
@@ -172,7 +172,7 @@ let z = () => {
           })
         }), (0, Chunk951288.jsx)("div", {
           className: eA.premiumTierCardsContainer,
-          ref: eT.ref,
+          ref: eS.ref,
           children: (0, Chunk951288.jsx)(Chunk622535.$, {
             innerRef: require,
             onChange: e => ei(e),
@@ -187,7 +187,7 @@ let z = () => {
           })
         }), (0, Chunk951288.jsx)("div", {
           className: eA.planComparisonTableContainer,
-          ref: eS.ref,
+          ref: eT.ref,
           children: em ? (0, Chunk951288.jsx)(Chunk975978.Z, {}) : (0, Chunk951288.jsx)(Chunk8231.Z, {})
         })]
       }), !em && (0, Chunk951288.jsx)(Chunk349803.Z, {

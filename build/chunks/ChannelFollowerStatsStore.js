@@ -1,21 +1,21 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 606956, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
-var r, i, Chunk442837 = require("./442837.js"),
+var i, r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 let o = {};
-class s extends(i = Chunk442837.ZP.Store) {
+class s extends(r = Chunk442837.ZP.Store) {
   getFollowerStatsForChannel(e) {
     return o[e]
   }
-}(r = "displayName") in s ? Object.defineProperty(s, r, {
+}(i = "displayName") in s ? Object.defineProperty(s, i, {
   value: "ChannelFollowerStatsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : s[r] = "ChannelFollowerStatsStore";
+}) : s[i] = "ChannelFollowerStatsStore";
 let c = new s(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     o = {}

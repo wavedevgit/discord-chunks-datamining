@@ -26,7 +26,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -302,7 +302,7 @@ function eh(e) {
   if (null == t) t = e.channel;
   else {
     var n;
-    t = t.merge(C(S({}, e.channel.toJS()), {
+    t = t.merge(C(T({}, e.channel.toJS()), {
       bitrate: null != (n = e.channel.bitrate) ? n : t.bitrate
     }))
   }
@@ -315,7 +315,7 @@ function em(e) {
     overwrite: n
   } = e, r = J(t);
   if (null == r) returnfalse;
-  $(r.set("permissionOverwrites", C(S({}, r.permissionOverwrites), {
+  $(r.set("permissionOverwrites", C(T({}, r.permissionOverwrites), {
     [n.id]: n
   })))
 }
@@ -326,7 +326,7 @@ function eg(e) {
     overwriteId: n
   } = e, r = J(t);
   if (null == r) returnfalse;
-  let i = S({}, r.permissionOverwrites);
+  let i = T({}, r.permissionOverwrites);
   delete i[n], $(r.set("permissionOverwrites", i))
 }
 
@@ -379,11 +379,11 @@ function eI(e) {
   ev(i), eO(i)
 }
 
-function eT(e) {
+function eS(e) {
   eo(e.guild)
 }
 
-function eS(e) {
+function eT(e) {
   N.fileOnly("GuildDelete of ".concat(e.guild.id)), X(e.guild.id), B.delete(e.guild.id), f.Z.invalidate(e.guild.id)
 }
 
@@ -457,7 +457,7 @@ class ex extends(r = Chunk442837.ZP.Store) {
   }
   loadAllGuildAndPrivateChannelsFromDisk() {
     for (let e of Chunk430824.Z.getGuildIds()) z(module, 1, "loadAllGuildAndPrivateChannelsFromDisk");
-    return S({}, P, D)
+    return T({}, P, D)
   }
   getChannelIds(e) {
     var t, n;
@@ -507,7 +507,7 @@ class ex extends(r = Chunk442837.ZP.Store) {
     return a().values(L).filter(t => t.guild_id === e)
   }
   getInitialOverlayState() {
-    return S({}, P, D, L)
+    return T({}, P, D, L)
   }
   getDebugInfo() {
     return {
@@ -521,7 +521,7 @@ class ex extends(r = Chunk442837.ZP.Store) {
 function eL(e) {
   return null == w[e] ? null : Object.keys(w[e]).length
 }
-T(ex, "displayName", "ChannelStore");
+S(ex, "displayName", "ChannelStore");
 let eM = new ex(Chunk570140.Z, {
   BACKGROUND_SYNC: el,
   CACHE_LOADED_LAZY: e_,
@@ -535,8 +535,8 @@ let eM = new ex(Chunk570140.Z, {
   CONNECTION_OPEN: ea,
   CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: em,
   CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: eg,
-  GUILD_CREATE: eT,
-  GUILD_DELETE: eS,
+  GUILD_CREATE: eS,
+  GUILD_DELETE: eT,
   LOAD_ARCHIVED_THREADS_SUCCESS: ey,
   LOAD_CHANNELS: ec,
   LOAD_MESSAGES_AROUND_SUCCESS: eN,

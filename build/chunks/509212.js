@@ -7,9 +7,9 @@ require.d(exports, {
   $V: () => th,
   AV: () => eE,
   B2: () => tL,
-  B3: () => tT,
+  B3: () => tS,
   BM: () => tu,
-  Bg: () => eT,
+  Bg: () => eS,
   Bz: () => tc,
   C1: () => tb,
   C9: () => tE,
@@ -71,13 +71,13 @@ require.d(exports, {
   q8: () => tr,
   qe: () => tM,
   t2: () => eg,
-  u7: () => tS,
+  u7: () => tT,
   uN: () => tk,
   vB: () => tF,
   vQ: () => eC,
   vR: () => ew,
   wj: () => eN,
-  xN: () => eS,
+  xN: () => eT,
   xn: () => eO,
   yH: () => tO,
   yI: () => eu,
@@ -432,7 +432,7 @@ function eb(e) {
 function ey(e, t) {
   if (!eb(t)) returnfalse;
   let n = D.jn[t];
-  return (0, S.yE)(e.dismissedQuestContent, k.a_[n])
+  return (0, T.yE)(e.dismissedQuestContent, k.a_[n])
 }
 
 function eO(e) {
@@ -474,11 +474,11 @@ function eI(e) {
   }
 }
 
-function eT(e) {
+function eS(e) {
   return e.rewardsConfig.rewards.some(e => e.type === c.w.FRACTIONAL_PREMIUM)
 }
 
-function eS(e) {
+function eT(e) {
   return e.rewardsConfig.rewards.some(e => e.type === c.w.VIRTUAL_CURRENCY)
 }
 
@@ -626,7 +626,7 @@ let ez = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
     let s = null == (o = e.userStatus) || null == (a = o.progress) || null == (r = a[t.type]) || null == (n = r.heartbeat) ? true : n.lastBeatAt;
     if (null == s || !eq(e)) return 0;
     let l = Date.now() - new Date(s).valueOf();
-    return (0, i.floor)(l / T.Z.Millis.SECOND, 2)
+    return (0, i.floor)(l / S.Z.Millis.SECOND, 2)
   },
   eQ = (e, t) => {
     var n, r, i, a, o;
@@ -661,7 +661,7 @@ let ez = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
     return {
       progressSeconds: f,
       targetSeconds: d,
-      targetMinutes: Math.ceil(d / T.Z.Seconds.MINUTE),
+      targetMinutes: Math.ceil(d / S.Z.Seconds.MINUTE),
       percentComplete: ez(d, f),
       taskType: c,
       applications: p
@@ -790,7 +790,7 @@ function tc(e) {
 }
 
 function tu(e) {
-  return !!tr(e) && (0, n(952265).nf)(tS(e.id))
+  return !!tr(e) && (0, n(952265).nf)(tT(e.id))
 }
 
 function td() {
@@ -832,7 +832,7 @@ function t_(e, t) {
     impressionId: t.impressionId,
     sourceQuestContent: t.sourceQuestContent
   });
-  let r = tT(n);
+  let r = tS(n);
   if (1 === r.length) return (0, _.Z)({
     platformType: r.at(0)
   });
@@ -934,7 +934,7 @@ function tI(e) {
   return tv(e) && (null == (t = eO(e)) ? true : t.expirationMode) === l.n.PREMIUM_PERMANENT
 }
 
-function tT(e) {
+function tS(e) {
   let t = Object.keys(e.config.taskConfigV2.tasks),
     n = [];
   for (let e of t) switch (e) {
@@ -947,7 +947,7 @@ function tT(e) {
   return n
 }
 
-function tS(e) {
+function tT(e) {
   return "VIDEO-QUEST-".concat(e)
 }
 

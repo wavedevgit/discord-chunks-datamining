@@ -1,5 +1,6 @@
-/** Chunk was on 35755 **/
-/** chunk id: 556505, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 556505, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 }), require("./388685.js");
@@ -14,13 +15,13 @@ function c(e) {
   let {
     labelType: t,
     collapsed: n = false
-  } = e, c = t === a.ww.NEW ? o.intl.string(o.t.y2b7CA) : o.intl.string(o.t["/qdhkk"]), u = t === a.ww.NEW ? s.activityNewBadge : s.activityUpdatedBadge, [d, p] = l.useState(n ? "" : c);
-  return (l.useEffect(() => {
-    n ? p("") : t === a.ww.NEW ? p(o.intl.string(o.t.y2b7CA)) : t === a.ww.UPDATED && p(o.intl.string(o.t["/qdhkk"]))
-  }, [n, t]), t === a.ww.NONE) ? null : (0, i.jsx)(r.IGR, {
+  } = e, c = t === o.ww.NEW ? s.intl.string(s.t.y2b7CA) : s.intl.string(s.t["/qdhkk"]), u = t === o.ww.NEW ? l.activityNewBadge : l.activityUpdatedBadge, [d, f] = i.useState(n ? "" : c);
+  return (i.useEffect(() => {
+    n ? f("") : t === o.ww.NEW ? f(s.intl.string(s.t.y2b7CA)) : t === o.ww.UPDATED && f(s.intl.string(s.t["/qdhkk"]))
+  }, [n, t]), t === o.ww.NONE) ? null : (0, r.jsx)(a.IGR, {
     className: u,
     disableColor: true,
-    text: (0, i.jsx)("span", {
+    text: (0, r.jsx)("span", {
       children: d
     })
   })

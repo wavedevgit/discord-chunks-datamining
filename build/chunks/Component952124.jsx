@@ -51,9 +51,9 @@ function v(e) {
     viewProfileItem: y,
     onCloseProfile: v
   } = e, I = i.useRef(null), {
-    trackUserProfileAction: T
+    trackUserProfileAction: S
   } = (0, m.KZ)(), {
-    analyticsLocations: S,
+    analyticsLocations: T,
     newestAnalyticsLocation: A
   } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), C = c.J.useExperiment({
     location: "UserSettingsAuthedApps"
@@ -64,9 +64,9 @@ function v(e) {
     application: null != R ? R : true,
     guildId: n,
     onItemClick: () => {
-      T({
+      S({
         action: "MANAGE_APP",
-        analyticsLocations: S
+        analyticsLocations: T
       }), null == v || v()
     }
   }), w = (0, p.Z)({
@@ -74,41 +74,41 @@ function v(e) {
     guildId: n,
     location: A,
     color: "danger",
-    onBlock: () => T({
+    onBlock: () => S({
       action: "BLOCK",
-      analyticsLocations: S
+      analyticsLocations: T
     }),
-    onUnblock: () => T({
+    onUnblock: () => S({
       action: "UNBLOCK",
-      analyticsLocations: S
+      analyticsLocations: T
     })
   }), D = (0, h.Z)({
     user: t,
     guildId: n,
     location: A,
-    onIgnore: () => T({
+    onIgnore: () => S({
       action: "IGNORE",
-      analyticsLocations: S
+      analyticsLocations: T
     }),
-    onUnignore: () => T({
+    onUnignore: () => S({
       action: "UNIGNORE",
-      analyticsLocations: S
+      analyticsLocations: T
     })
   }), x = (0, d.Z)({
     applicationId: null == R ? true : R.id,
     user: t,
     guildId: n,
-    onSubmit: () => T({
+    onSubmit: () => S({
       action: "REPORT",
-      analyticsLocations: S
+      analyticsLocations: T
     }),
     color: "danger"
   }), L = (0, f.Z)({
     id: null == R ? true : R.id,
     label: b.intl.string(b.t["+NP/b2"]),
-    onSuccess: () => T({
+    onSuccess: () => S({
       action: "COPY_APP_ID",
-      analyticsLocations: S
+      analyticsLocations: T
     })
   }), M = [
     [y], C ? [P] : [],
@@ -116,9 +116,9 @@ function v(e) {
     [(0, u.Z)({
       application: R,
       label: b.intl.string(b.t.WqhZss),
-      onSuccess: () => T({
+      onSuccess: () => S({
         action: "COPY_APP_LINK",
-        analyticsLocations: S
+        analyticsLocations: T
       })
     }), L]
   ];

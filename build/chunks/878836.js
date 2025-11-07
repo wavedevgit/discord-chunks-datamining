@@ -103,7 +103,7 @@ let h = new Chunk710845.Z("useStripePaymentElementOptions"),
     });
     let {
       elementsAppearance: I,
-      elementsAppearanceOptions: T
+      elementsAppearanceOptions: S
     } = m(n);
     return {
       setupError: _,
@@ -117,6 +117,6 @@ let h = new Chunk710845.Z("useStripePaymentElementOptions"),
       setupIntentSecret: i,
       customPaymentMethods: y,
       isLoading: E,
-      elementsAppearanceOptions: T
+      elementsAppearanceOptions: S
     }
   }

@@ -62,10 +62,10 @@ function y(e, t, n, r) {
     largeGuildExactMatchRecentSenders: I
   } = (0, c.kB)("getMentionSuggestions", {
     autoTrackExposure: false
-  }), T = b(t, n), {
-    query: S
-  } = T;
-  if (S.length < _ || u.Z.getMaxWordCount() < h || u.Z.isFrequentlyUsedWord(S)) return f;
+  }), S = b(t, n), {
+    query: T
+  } = S;
+  if (T.length < _ || u.Z.getMaxWordCount() < h || u.Z.isFrequentlyUsedWord(T)) return f;
   let A = (0, l.Cq)(i.h8.USER),
     C = s.Z.getMessages(e.id).toArray(),
     N = new Set;
@@ -76,15 +76,15 @@ function y(e, t, n, r) {
   let R = false;
   I && (R = null != e.guild_id && (null != (g = o.Z.getMemberCount(e.guild_id)) ? g : 0) > m);
   let P = l.ZP.queryMentionSuggestionResults({
-    query: S,
+    query: T,
     channel: e,
     boosters: A,
     onlyExactMatch: O && (!v || R)
   });
-  return (R ? P = P.filter(e => N.has(e.user.id)) : v && (P = P.filter(e => "exact" === e.matchType || N.has(e.user.id))), E || y === a.eq.MENTION_SUGGESTIONS || !(S.length < p) || P.some(e => "exact" === e.matchType || v && N.has(e.user.id))) ? {
+  return (R ? P = P.filter(e => N.has(e.user.id)) : v && (P = P.filter(e => "exact" === e.matchType || N.has(e.user.id))), E || y === a.eq.MENTION_SUGGESTIONS || !(T.length < p) || P.some(e => "exact" === e.matchType || v && N.has(e.user.id))) ? {
     results: {
       suggestions: P,
-      queryInfo: T
+      queryInfo: S
     }
   } : f
 }

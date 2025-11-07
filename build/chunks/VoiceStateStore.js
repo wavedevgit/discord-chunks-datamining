@@ -35,12 +35,12 @@ function I(e, t) {
   return "".concat(e, ":").concat(t)
 }
 
-function T(e, t) {
+function S(e, t) {
   let n = e[t];
   return null == n && (n = {}, e[t] = n), n
 }
 
-function S(e) {
+function T(e) {
   var t;
   let n = null != (t = m[d.ME]) ? t : {};
   s().each(n, (t, n) => {
@@ -64,10 +64,10 @@ function N(e, t) {
 }
 
 function R(e, t, n) {
-  let r = T(m, null != e ? e : d.ME),
+  let r = S(m, null != e ? e : d.ME),
     i = r[t],
     a = n(i);
-  return i === a ? [false, a, i] : (null != i && (delete r[t], null != i.channelId && (delete T(b, i.channelId)[t], delete T(y, i.channelId)[t]), null != i.sessionId && delete T(O, t)[i.sessionId], N(null != e ? e : d.ME, t)), null != a && (r[t] = a, null != a.channelId && (T(b, a.channelId)[t] = a, a.selfVideo && (T(y, a.channelId)[t] = a, C(null != e ? e : d.ME, t))), null != a.sessionId && (T(O, t)[a.sessionId] = a)), [true, a, i])
+  return i === a ? [false, a, i] : (null != i && (delete r[t], null != i.channelId && (delete S(b, i.channelId)[t], delete S(y, i.channelId)[t]), null != i.sessionId && delete S(O, t)[i.sessionId], N(null != e ? e : d.ME, t)), null != a && (r[t] = a, null != a.channelId && (S(b, a.channelId)[t] = a, a.selfVideo && (S(y, a.channelId)[t] = a, C(null != e ? e : d.ME, t))), null != a.sessionId && (S(O, t)[a.sessionId] = a)), [true, a, i])
 }
 
 function P(e) {
@@ -166,14 +166,14 @@ function G(e) {
   let {
     channel: t
   } = e;
-  S(t.id)
+  T(t.id)
 }
 
 function B(e) {
   let {
     channelId: t
   } = e;
-  S(t)
+  T(t)
 }
 class Z extends(a = Chunk442837.ZP.Store) {
   getAllVoiceStates() {
@@ -183,13 +183,13 @@ class Z extends(a = Chunk442837.ZP.Store) {
     return h
   }
   getVoiceStates(e) {
-    return T(m, null != e ? e : d.ME)
+    return S(m, null != e ? e : d.ME)
   }
   getVoiceStatesForChannel(e) {
-    return T(b, e)
+    return S(b, e)
   }
   getVideoVoiceStatesForChannel(e) {
-    return T(y, e)
+    return S(y, e)
   }
   getVoiceState(e, t) {
     return this.getVoiceStates(e)[t]
@@ -201,17 +201,17 @@ class Z extends(a = Chunk442837.ZP.Store) {
   getVoiceStateForChannel(e) {
     var t;
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r;
-    return null == (t = T(b, e)) ? true : t[n]
+    return null == (t = S(b, e)) ? true : t[n]
   }
   getVoiceStateForUser(e) {
-    return Object.values(T(O, e))[0]
+    return Object.values(S(O, e))[0]
   }
   getDiscoverableVoiceStateForUser(e) {
-    return Object.values(T(O, e)).find(e => false !== e.discoverable)
+    return Object.values(S(O, e)).find(e => false !== e.discoverable)
   }
   getVoiceStateForSession(e, t) {
     var n;
-    return null != t ? null == (n = T(O, e)) ? true : n[t] : null
+    return null != t ? null == (n = S(O, e)) ? true : n[t] : null
   }
   getUserVoiceChannelId(e, t) {
     var n;
@@ -236,7 +236,7 @@ class Z extends(a = Chunk442837.ZP.Store) {
     return null != n && (t !== r || null != i && n.sessionId === i)
   }
   hasVideo(e) {
-    return Object.values(T(y, e)).length > 0
+    return Object.values(S(y, e)).length > 0
   }
   getVoicePlatformForChannel(e, t) {
     var n, a;

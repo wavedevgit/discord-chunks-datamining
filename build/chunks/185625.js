@@ -119,10 +119,10 @@ async function v(e, t) {
 }
 
 function I(e, t, n) {
-  return u.ZP.get("iar_skip_api_report_submit") ? Promise.resolve() : o.s.REPORT_TO_MOD.has(t.name) ? S(e, t, n) : T(e, t, n)
+  return u.ZP.get("iar_skip_api_report_submit") ? Promise.resolve() : o.s.REPORT_TO_MOD.has(t.name) ? T(e, t, n) : S(e, t, n)
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   return s.tn.post({
     url: _.ANM.SUBMIT_REPORT_MENU(D(t)),
     body: j(e, t, n),
@@ -130,7 +130,7 @@ function T(e, t, n) {
   })
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   let r = M(e, t, n);
   return s.tn.post({
     url: L(t),

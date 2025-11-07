@@ -1,12 +1,13 @@
-/** Chunk was on 35755 **/
-/** chunk id: 79984, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 79984, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -26,7 +27,7 @@ function d() {
       }
     }), []);
   return (0, Chunk951288.jsxs)("div", {
-    className: a()(Chunk75243.container, {
+    className: o()(Chunk75243.container, {
       [Chunk75243.noAnimation]: module
     }),
     children: [(0, Chunk951288.jsx)("div", {

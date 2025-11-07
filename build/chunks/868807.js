@@ -1,10 +1,10 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 868807, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   a: () => h
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
-  i = require.n(Chunk392711),
+  r = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -20,8 +20,8 @@ function h(e) {
   let {
     id: n
   } = e, {
-    loaded: r,
-    message: i,
+    loaded: i,
+    message: r,
     error: a
   } = (0, l.cj)([u.Z, s.Z, c.ZP], () => {
     let e = c.ZP.lastMessageId(n),
@@ -36,15 +36,15 @@ function h(e) {
     }
     return t
   }, [n]), o = (0, l.e7)([u.Z], () => u.Z.shouldLoadMessageRequestPreview(n), [n]);
-  return !r && null == i && o && (t = n, p.add(t), null == f && (f = setTimeout(m, 0))), {
-    loaded: r,
+  return !i && null == r && o && (t = n, p.add(t), null == f && (f = setTimeout(m, 0))), {
+    loaded: i,
     error: a,
-    message: i
+    message: r
   }
 }
 async function m() {
   try {
-    for (; !i().isEmpty(p);) await g()
+    for (; !r().isEmpty(p);) await g()
   } finally {
     f = null
   }

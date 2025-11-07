@@ -26,8 +26,8 @@ var Chunk373793 = require("./373793.js"),
   Chunk42530 = require("./42530.js"),
   Chunk981631 = require("./981631.js"),
   Chunk761652 = require("./761652.js");
-let T = new Set(["applicationCommandOption"]),
-  S = new Set([Chunk911969.jw.ATTACHMENT]),
+let S = new Set(["applicationCommandOption"]),
+  T = new Set([Chunk911969.jw.ATTACHMENT]),
   A = new Set(["line", "applicationCommand"]);
 
 function C(e, t, n, r) {
@@ -73,7 +73,7 @@ function C(e, t, n, r) {
       }
     }
     return i(n)
-  }, e.isInline = e => !!T.has(e.type) || d(e), e.isVoid = e => !!("applicationCommandOption" === e.type && S.has(e.optionType)) || f(e), e.deleteBackward = t => {
+  }, e.isInline = e => !!S.has(e.type) || d(e), e.isVoid = e => !!("applicationCommandOption" === e.type && T.has(e.optionType)) || f(e), e.deleteBackward = t => {
     M(e, () => p(t))
   }, e.deleteForward = t => {
     M(e, () => h(t))
@@ -215,7 +215,7 @@ function R(e, t, n) {
     g = "".concat(I.GI).concat(u.untranslatedName, " ").toLocaleLowerCase();
   p.startsWith(h) ? _ = f.substring(h.length).trim() : p.startsWith(g) && (_ = f.substring(g.length).trim());
   let v = [],
-    T = null,
+    S = null,
     A = null;
   if (null != u.options) {
     let e = new Set;
@@ -232,12 +232,12 @@ function R(e, t, n) {
               text: i
             }]
           };
-        v.push(a), 0 === r.text.length && null == T && (T = a)
+        v.push(a), 0 === r.text.length && null == S && (S = a)
       }
     for (let r of u.options)
       if (!e.has(r.name) && (r.required || null != c[r.name])) {
         let e, i;
-        _.length > 0 && !S.has(r.type) ? (e = _, _ = "") : e = null != (i = k(n, t, r.name)) ? i : "";
+        _.length > 0 && !T.has(r.type) ? (e = _, _ = "") : e = null != (i = k(n, t, r.name)) ? i : "";
         let a = {
           type: "applicationCommandOption",
           optionName: r.name,
@@ -247,7 +247,7 @@ function R(e, t, n) {
             text: e
           }]
         };
-        v.push(a), 0 === e.length && null == T && (T = a), null == i && (A = a)
+        v.push(a), 0 === e.length && null == S && (S = a), null == i && (A = a)
       }
   }
   l = _.length > 0 ? "".concat(I.GI).concat(u.displayName, " ").concat(_.replace(/\r|\n/g, " ")) : 0 === v.length ? "".concat(I.GI).concat(u.displayName, " ") : "".concat(I.GI).concat(u.displayName), v.unshift({
@@ -271,7 +271,7 @@ function R(e, t, n) {
     })
   });
   let N = null;
-  return null != T ? (b.Q.selectCommandOption(e, T.optionName), N = T.optionName) : null != A ? (b.Q.selectCommandOption(e, A.optionName, false), N = A.optionName) : b.Q.resetSelectionToEditorEnd(e), null == A && D(e, u), N
+  return null != S ? (b.Q.selectCommandOption(e, S.optionName), N = S.optionName) : null != A ? (b.Q.selectCommandOption(e, A.optionName, false), N = A.optionName) : b.Q.resetSelectionToEditorEnd(e), null == A && D(e, u), N
 }
 
 function P(e, t, n, r) {
@@ -332,7 +332,7 @@ function w(e, t) {
 }
 
 function D(e, t) {
-  if (null == t.options || 1 !== t.options.length || true === t.options[0].required || S.has(t.options[0].type) || m.cu(e).length > 0 || null == m.cr(e)) returnfalse;
+  if (null == t.options || 1 !== t.options.length || true === t.options[0].required || T.has(t.options[0].type) || m.cu(e).length > 0 || null == m.cr(e)) returnfalse;
   let n = y.bN.getFirstText(e);
   if (null == n) returnfalse;
   let r = t.options[0],

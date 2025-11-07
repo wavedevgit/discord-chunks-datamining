@@ -188,11 +188,11 @@ function G() {
     let e = Chunk695346.Ex.getSetting();
     require && exports && true === module && Chunk695346.Ex.updateSetting(true)
   }, [require, exports]);
-  let T = e => {
+  let S = e => {
     v(e)
   };
   if (Chunk273879) return null;
-  let S = Chunk631885 !== Chunk292352.dG.SETTINGS ? Chunk631885 : Chunk292352.dG.ACTIVITY,
+  let T = Chunk631885 !== Chunk292352.dG.SETTINGS ? Chunk631885 : Chunk292352.dG.ACTIVITY,
     A = L[Chunk731934];
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: module,

@@ -36,7 +36,7 @@ function I() {
   })
 }
 
-function T() {
+function S() {
   return (0, Chunk951288.jsx)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.BG7QsQ),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
@@ -44,7 +44,7 @@ function T() {
   })
 }
 
-function S() {
+function T() {
   let e = (0, Chunk695463.W)("UserSettingsDataAndPrivacy");
   return (0, Chunk951288.jsxs)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.SRZyHg),
@@ -62,7 +62,7 @@ function A() {
       page: Chunk441007.N.DATA_AND_PRIVACY
     }),
     children: (0, Chunk951288.jsxs)(Chunk481060.l09, {
-      children: [(0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)(I, {})]
+      children: [(0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)(I, {})]
     })
   })
 }

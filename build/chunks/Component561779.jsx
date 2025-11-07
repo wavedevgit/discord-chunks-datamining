@@ -147,7 +147,7 @@ class I extends(r = Chunk647438.PureComponent) {
       className: O,
       children: v,
       barStyles: I,
-      fillStyles: S,
+      fillStyles: T,
       mini: A,
       hideBubble: C,
       defaultValue: N,
@@ -194,7 +194,7 @@ class I extends(r = Chunk647438.PureComponent) {
       Y = null != P ? P(exports) : "".concat(F.toFixed(0), "%"),
       W = null != (e = null == D ? true : D(exports)) ? module : true;
     return (0, Chunk951288.jsx)(Chunk793030.gNt, b(g({}, Z), {
-      children: e => (0, i.jsx)(T, {
+      children: e => (0, i.jsx)(S, {
         active: n,
         keyboardFocused: r && p.Z.keyboardModeEnabled,
         children: a => {
@@ -243,7 +243,7 @@ class I extends(r = Chunk647438.PureComponent) {
                 style: I,
                 children: (0, i.jsx)("div", {
                   className: h.barFill,
-                  style: b(g({}, S), {
+                  style: b(g({}, T), {
                     width: V
                   })
                 })
@@ -466,7 +466,7 @@ class I extends(r = Chunk647438.PureComponent) {
   }
 }
 
-function T(e) {
+function S(e) {
   let {
     active: t,
     keyboardFocused: n,

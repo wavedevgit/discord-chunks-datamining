@@ -70,13 +70,13 @@ async function h(e) {
         body: y,
         rejectWithError: true,
         retries: null != c ? c.retries : true
-      }), v = null != (h = O.body.user_trial_offer) ? h : null, I = null != (m = O.body.user_discount) ? m : null, T = null != (g = O.body.user_discount_offer) ? g : null;
-      if (null != t && null != T && T.discount_id !== t) {
+      }), v = null != (h = O.body.user_trial_offer) ? h : null, I = null != (m = O.body.user_discount) ? m : null, S = null != (g = O.body.user_discount_offer) ? g : null;
+      if (null != t && null != S && S.discount_id !== t) {
         let e = Error("Returned user discount offer does not match offer ID request parameter");
         throw u.Z.captureException(e, _({
           extra: {
             offer_id: t,
-            user_discount_offer: T
+            user_discount_offer: S
           }
         }, f)), e
       }
@@ -84,11 +84,11 @@ async function h(e) {
         type: "BILLING_USER_OFFER_FETCH_SUCCESS",
         userTrialOffer: v,
         userDiscount: I,
-        userDiscountOffer: T
+        userDiscountOffer: S
       }), {
         userTrialOffer: v,
         userDiscount: I,
-        userDiscountOffer: T
+        userDiscountOffer: S
       }
     } catch (e) {
       a.Z.dispatch({

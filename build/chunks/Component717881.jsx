@@ -57,13 +57,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -114,7 +114,7 @@ function N(e) {
     showActions: E = true,
     hideHeader: y = false,
     showChannelDetails: O = false
-  } = e, I = S(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]);
+  } = e, I = T(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]);
   let A = (0, a.e7)([m.Z, p.Z], () => {
       var e;
       return p.Z.getChannel(null == (e = m.Z.getVoiceStateForUser(n.id)) ? true : e.channelId)
@@ -138,7 +138,7 @@ function N(e) {
       source: "UserActivity",
       other_user_id: n.id
     }, (0, u.Z)(null == P ? true : P.id)))
-  }, [null == t ? true : t.type, N, P, n.id]), (null == t ? true : t.type) !== b.IIU.HANG_STATUS || N) ? (0, r.jsx)(s.Z, T(v({}, I), {
+  }, [null == t ? true : t.type, N, P, n.id]), (null == t ? true : t.type) !== b.IIU.HANG_STATUS || N) ? (0, r.jsx)(s.Z, S(v({}, I), {
     activity: t,
     user: n,
     application: x,
@@ -146,7 +146,7 @@ function N(e) {
     activityGuild: null != w ? w : D,
     showChannelDetails: O,
     channel: O ? A : true,
-    renderActions: E ? () => (0, r.jsx)(C, T(v({}, I), {
+    renderActions: E ? () => (0, r.jsx)(C, S(v({}, I), {
       applicationStream: R,
       activity: t,
       user: n

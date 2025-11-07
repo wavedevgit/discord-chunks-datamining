@@ -1,10 +1,10 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 325708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _,
+  Z: () => y,
   y: () => g
 }), require("./388685.js");
-var r, Chunk951288 = require("./951288.js"),
+var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
@@ -16,13 +16,13 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk740492 = require("./740492.js"),
   Chunk36645 = require("./36645.js"),
   Chunk875675 = require("./875675.js"),
-  g = ((r = {})[r.PostSidebar = 0] = "PostSidebar", r[r.ThreadSidebar = 1] = "ThreadSidebar", r[r.CallChatSidebar = 2] = "CallChatSidebar", r[r.MessageRequestSidebar = 3] = "MessageRequestSidebar", r[r.HomeSidebar = 4] = "HomeSidebar", r[r.ParticipantsSidebar = 5] = "ParticipantsSidebar", r);
+  g = ((i = {})[i.PostSidebar = 0] = "PostSidebar", i[i.ThreadSidebar = 1] = "ThreadSidebar", i[i.CallChatSidebar = 2] = "CallChatSidebar", i[i.MessageRequestSidebar = 3] = "MessageRequestSidebar", i[i.HomeSidebar = 4] = "HomeSidebar", i[i.ParticipantsSidebar = 5] = "ParticipantsSidebar", i);
 
 function b(e) {
   let {
     resizableNode: t,
     onResize: n,
-    onResizeEnd: r,
+    onResizeEnd: i,
     maxWidth: l,
     minWidth: a
   } = e, o = (0, p.Z)({
@@ -30,24 +30,24 @@ function b(e) {
     maxDimension: l,
     resizableDomNodeRef: t,
     onElementResize: n,
-    onElementResizeEnd: r,
+    onElementResizeEnd: i,
     orientation: p.y.HORIZONTAL_LEFT,
     throttleDuration: 16
   });
-  return (0, i.jsx)("div", {
+  return (0, r.jsx)("div", {
     onMouseDown: o,
     className: m.resizeHandle
   })
 }
 
-function _(e) {
+function y(e) {
   let {
     sidebarType: t,
     maxWidth: n,
-    onWidthChange: r,
+    onWidthChange: i,
     children: a,
     floatingLayer: p
-  } = e, g = l.useRef(null), _ = function(e) {
+  } = e, g = l.useRef(null), y = function(e) {
     switch (e) {
       case 0:
         return "postSidebarWidth";
@@ -62,46 +62,46 @@ function _(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [y, C] = l.useState(f.ZP[_]), v = l.useCallback(e => {
+  }(t), [C, _] = l.useState(f.ZP[y]), v = l.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
-      [_]: e
+      [y]: e
     })
-  }, [_]), O = 5 === t ? h.at : h.Co, x = (0, h.WL)({
+  }, [y]), x = 5 === t ? h.at : h.Co, O = (0, h.WL)({
     maxWidth: n,
-    minWidth: O
-  }), E = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), j = (0, s.clamp)(y, O, n), S = x ? j : j + E;
+    minWidth: x
+  }), E = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), j = (0, s.clamp)(C, x, n), S = O ? j : j + E;
   l.useEffect(() => {
-    null == r || r(j, x)
-  }, [j, r, x]);
+    null == i || i(j, O)
+  }, [j, i, O]);
   let P = null != p ? p : l.Fragment;
-  return (0, i.jsxs)(i.Fragment, {
-    children: [!x && (0, i.jsx)("div", {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [!O && (0, r.jsx)("div", {
       style: {
         minWidth: S
       }
-    }), (0, i.jsx)(P, {
-      children: (0, i.jsxs)("div", {
+    }), (0, r.jsx)(P, {
+      children: (0, r.jsxs)("div", {
         className: o()(m.chatLayerWrapper, {
           [m.hidden]: false
         }),
-        children: [(0, i.jsx)("div", {
+        children: [(0, r.jsx)("div", {
           className: o()(m.chatTarget, {
-            [m.floating]: x,
-            [m.notFloating]: !x
+            [m.floating]: O,
+            [m.notFloating]: !O
           }),
           style: {
             width: S
           }
-        }), !x && (0, i.jsx)(b, {
-          minWidth: O,
+        }), !O && (0, r.jsx)(b, {
+          minWidth: x,
           maxWidth: n,
           resizableNode: g,
-          onResize: C,
+          onResize: _,
           onResizeEnd: v
-        }), (0, i.jsx)("div", {
+        }), (0, r.jsx)("div", {
           ref: g,
           className: o()(m.container, {
-            [m.floating]: x
+            [m.floating]: O
           }),
           style: {
             width: j

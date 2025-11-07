@@ -63,8 +63,8 @@ let y = ["discordapp.com/gifts", "discord.com/gifts"],
   O = 3,
   v = [Chunk226951.Z.escape(window.GLOBAL_ENV.GIFT_CODE_HOST), ...y.map(e => _.Z.escape(e))].join("|"),
   I = RegExp("(?: |^|https?://)(?:".concat(v, ")/([a-z0-9-]+)"), "gi"),
-  T = [...["discord.com/billing/promotions", "promos.discord.gg"].map(e => _.Z.escape(e))].join("|"),
-  S = RegExp("(?: |^|https?://)(?:".concat(T, ")(/|(/)?\\?code=)([a-z0-9-]+)"), "gi"),
+  S = [...["discord.com/billing/promotions", "promos.discord.gg"].map(e => _.Z.escape(e))].join("|"),
+  T = RegExp("(?: |^|https?://)(?:".concat(S, ")(/|(/)?\\?code=)([a-z0-9-]+)"), "gi"),
   A = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789",
   C = (e, t) => Array(t).fill(true).map(() => "[".concat(A, "]{").concat(e, "}")).join("-?"),
   N = C(4, 4),
@@ -107,7 +107,7 @@ let Z = e => {
     if (null == e) return [];
     let n = new Set;
     for (; null != (t = I.exec(e)) && n.size < O;) n.add(B(t[1]));
-    for (; null != (t = S.exec(e)) && n.size < O;) n.add(B(t[t.length - 1]));
+    for (; null != (t = T.exec(e)) && n.size < O;) n.add(B(t[t.length - 1]));
     return Array.from(n)
   };
 

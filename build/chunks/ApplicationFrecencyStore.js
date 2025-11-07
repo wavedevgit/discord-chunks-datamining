@@ -81,24 +81,24 @@ function v(e) {
     command: n
   } = e;
   if (!E.includes(n.type) || (null == (t = u.ZP.getLaunchState(n.applicationId)) ? true : t.isLaunching)) returnfalse;
-  T(n.applicationId)
+  S(n.applicationId)
 }
 
 function I(e) {
   let {
     applicationId: t
   } = e;
-  T(t)
+  S(t)
 }
 
-function T(e) {
+function S(e) {
   b.pendingUsages.push({
     key: e,
     timestamp: Date.now()
   }), y.track(e), y.compute()
 }
 
-function S() {
+function T() {
   var e, t;
   let n = null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.applicationFrecency) ? true : module.applications) ? exports : {};
   y.overwriteHistory(a().mapValues(require, e => g(h({}, e), {
@@ -107,7 +107,7 @@ function S() {
 }
 class A extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (b = e), this.waitFor(u.ZP, d.Z), this.syncWith([d.Z], S)
+    null != e && (b = e), this.waitFor(u.ZP, d.Z), this.syncWith([d.Z], T)
   }
   getState() {
     return b

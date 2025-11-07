@@ -62,8 +62,8 @@ let y = 20 * Chunk70956.Z.Millis.SECOND,
   O = 3,
   v = +Chunk70956.Z.Millis.MINUTE,
   I = .25,
-  T = .1,
-  S = 5 * Chunk70956.Z.Millis.SECOND,
+  S = .1,
+  T = 5 * Chunk70956.Z.Millis.SECOND,
   A = 2,
   C = 8;
 
@@ -273,9 +273,9 @@ class x extends Chunk47770.Z {
   handleHello(e) {
     var t, n, r;
     if (this.serverVersion = null != (t = e.v) ? t : g, this.serverVersion <= 3) {
-      let t = d.isPlatformEmbedded ? I : T;
+      let t = d.isPlatformEmbedded ? I : S;
       this.heartbeatInterval = e.heartbeat_interval * t
-    } else this.heartbeatInterval = e.heartbeat_interval * this.heartbeatIntervalModifier, d.isPlatformEmbedded || (this.heartbeatInterval = Math.min(S, null != (n = this.heartbeatInterval) ? n : NaN));
+    } else this.heartbeatInterval = e.heartbeat_interval * this.heartbeatIntervalModifier, d.isPlatformEmbedded || (this.heartbeatInterval = Math.min(T, null != (n = this.heartbeatInterval) ? n : NaN));
     let i = (0, s.zO)() - this.connectionStartTime;
     this.logger.info("[HELLO] heartbeat interval: ".concat(null != (r = this.heartbeatInterval) ? r : "??", ", version: ").concat(this.serverVersion, ", took ").concat(i, " ms")), this.startHeartbeater()
   }

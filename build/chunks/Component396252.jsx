@@ -31,12 +31,12 @@ function g(e) {
     avatarSrc: v,
     eventHandlers: {
       onMouseEnter: I,
-      onMouseLeave: T
+      onMouseLeave: S
     }
   } = (0, f.m)(true);
   return (0, r.jsx)("div", {
     onMouseEnter: I,
-    onMouseLeave: T,
+    onMouseLeave: S,
     children: (0, r.jsx)(_.Z, {
       className: a()(m.mainContainer, {
         [m.compact]: i

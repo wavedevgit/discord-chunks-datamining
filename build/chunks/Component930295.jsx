@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -112,7 +112,7 @@ class N extends(r = Chunk647438.Component) {
       useMouseEnter: t
     } = this.props, n = this.shouldShowPopout(this.props, this.state);
     return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-      children: [module(S(I({
+      children: [module(T(I({
         onMouseDown: this.handlePreload
       }, exports ? {
         onMouseEnter: this.handleMouseEnter
@@ -202,7 +202,7 @@ class N extends(r = Chunk647438.Component) {
       let {
         renderPopout: n
       } = this.props;
-      return this.state.isLoading ? this.props.loadingComponent : n(S(I({}, e), {
+      return this.state.isLoading ? this.props.loadingComponent : n(T(I({}, e), {
         updatePosition: t,
         closePopout: this.close,
         setPopoutRef: this.handleSetPopoutRef

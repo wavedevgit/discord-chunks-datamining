@@ -126,8 +126,8 @@ function L(e) {
       [C.disableInteraction]: F
     }),
     disableInteraction: F,
-    childrenRepliedMessage: (0, S.Z)(i, M, K, z, a),
-    childrenExecutedCommand: (0, T.Z)(i, M, a),
+    childrenRepliedMessage: (0, T.Z)(i, M, K, z, a),
+    childrenExecutedCommand: (0, S.Z)(i, M, a),
     childrenHeader: (0, v.Z)(w(R({}, e), {
       guildId: M.guild_id,
       author: X,

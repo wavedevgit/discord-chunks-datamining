@@ -164,7 +164,7 @@ function G(e) {
     hotspotLocation: y
   } = e, v = (0, d.O)(), {
     analyticsLocations: I
-  } = (0, p.ZP)(_.Z.VIDEO_BACKGROUND_IMAGE_OPTION), S = (0, s.e7)([g.Z], () => null != y && g.Z.hasHotspot(y)), A = b ? (0, r.jsx)(h.Z, {
+  } = (0, p.ZP)(_.Z.VIDEO_BACKGROUND_IMAGE_OPTION), T = (0, s.e7)([g.Z], () => null != y && g.Z.hasHotspot(y)), A = b ? (0, r.jsx)(h.Z, {
     className: R.backgroundImageOption,
     src: i,
     loop: true,
@@ -177,7 +177,7 @@ function G(e) {
   });
 
   function P() {
-    null != y && S && (m.Kw(y), E.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
+    null != y && T && (m.Kw(y), E.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
       type: C.cd.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
       location: v.location,
       location_stack: I
@@ -210,7 +210,7 @@ function G(e) {
         size: "xxs",
         color: "currentColor"
       })
-    }) : null, S && (0, r.jsx)(c.IGR, {
+    }) : null, T && (0, r.jsx)(c.IGR, {
       text: N.intl.string(N.t.y2b7CA),
       className: R.newTextBadge
     })]
@@ -236,10 +236,10 @@ function Z(e) {
     onClick: t,
     tooltipText: n,
     disabled: i = false
-  } = e, a = (0, s.e7)([g.Z], () => g.Z.hasHotspot(S.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
+  } = e, a = (0, s.e7)([g.Z], () => g.Z.hasHotspot(T.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
 
   function o() {
-    m.Kw(S.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
+    m.Kw(T.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
   }
   let l = a ? N.intl.string(N.t["5TUJOv"]) : n;
   return (0, r.jsxs)(c.jSM, {
@@ -282,7 +282,7 @@ function F(e) {
     analyticsLocations: i
   } = (0, p.ZP)(_.Z.VIDEO_BACKGROUND_CUSTOM_UPSELL);
   return (0, f.ZP)(() => {
-    E.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
+    E.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
       type: C.cd.VIDEO_BACKGROUNDS_INLINE,
       location: n.location,
       location_stack: i

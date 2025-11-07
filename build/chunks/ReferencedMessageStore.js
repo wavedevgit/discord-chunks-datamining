@@ -142,7 +142,7 @@ function I(e) {
   return O(Object.values(t), e => O(Object.values(e), e => y(e)))
 }
 
-function T(e) {
+function S(e) {
   let {
     data: t
   } = e;
@@ -154,7 +154,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     message: t
   } = e;
@@ -274,13 +274,13 @@ let U = new k(Chunk570140.Z, {
   LOCAL_MESSAGES_LOADED: v,
   LOAD_MESSAGES_SUCCESS: v,
   LOAD_MESSAGES_AROUND_SUCCESS: v,
-  SEARCH_MESSAGES_SUCCESS: T,
-  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: T,
+  SEARCH_MESSAGES_SUCCESS: S,
+  MOD_VIEW_SEARCH_MESSAGES_SUCCESS: S,
   LOAD_THREADS_SUCCESS: M,
   LOAD_ARCHIVED_THREADS_SUCCESS: M,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: A,
   LOAD_FORUM_POSTS: j,
-  MESSAGE_CREATE: S,
+  MESSAGE_CREATE: T,
   MESSAGE_UPDATE: C,
   MESSAGE_DELETE: w,
   MESSAGE_DELETE_BULK: D,

@@ -13,7 +13,7 @@ var Chunk754793 = require("./754793.js"),
   f = [1, 2, 3, 4, 5, 7, 9, 13, 17, 25, 33, 49, 65, 97, 129, 193, 257, 385, 513, 769, 1025, 1537, 2049, 3073, 4097, 6145, 8193, 12289, 16385, 24577, 0, 0],
   _ = [16, 16, 16, 16, 17, 17, 18, 18, 19, 19, 20, 20, 21, 21, 22, 22, 23, 23, 24, 24, 25, 25, 26, 26, 27, 27, 28, 28, 29, 29, 64, 64];
 module.exports = function(e, t, n, p, h, m, g, E) {
-  var b, y, O, v, I, T, S, A, C, N = E.bits,
+  var b, y, O, v, I, S, T, A, C, N = E.bits,
     R = 0,
     P = 0,
     w = 0,
@@ -40,10 +40,10 @@ module.exports = function(e, t, n, p, h, m, g, E) {
   if (j > 0 && (e === s || 1 !== D)) return false;
   for (R = 1, F[1] = 0; R < i; R++) F[R + 1] = F[R] + Z[R];
   for (P = 0; P < p; P++) 0 !== t[n + P] && (g[F[t[n + P]]++] = P);
-  if (e === s ? (G = V = g, T = 19) : e === l ? (G = u, B -= 257, V = d, H -= 257, T = 256) : (G = f, V = _, T = false), U = 0, P = 0, R = w, I = m, L = x, M = 0, O = false, v = (k = 1 << x) - 1, e === l && k > a || e === c && k > o) return 1;
+  if (e === s ? (G = V = g, S = 19) : e === l ? (G = u, B -= 257, V = d, H -= 257, S = 256) : (G = f, V = _, S = false), U = 0, P = 0, R = w, I = m, L = x, M = 0, O = false, v = (k = 1 << x) - 1, e === l && k > a || e === c && k > o) return 1;
   for (;;) {
-    S = R - M, g[P] < T ? (A = 0, C = g[P]) : g[P] > T ? (A = V[H + g[P]], C = G[B + g[P]]) : (A = 96, C = 0), b = 1 << R - M, w = y = 1 << L;
-    do h[I + (U >> M) + (y -= b)] = S << 24 | A << 16 | C; while (0 !== y);
+    T = R - M, g[P] < S ? (A = 0, C = g[P]) : g[P] > S ? (A = V[H + g[P]], C = G[B + g[P]]) : (A = 96, C = 0), b = 1 << R - M, w = y = 1 << L;
+    do h[I + (U >> M) + (y -= b)] = T << 24 | A << 16 | C; while (0 !== y);
     for (b = 1 << R - 1; U & b;) b >>= 1;
     if (0 !== b ? (U &= b - 1, U += b) : U = 0, P++, 0 == --Z[R]) {
       if (R === D) break;

@@ -54,22 +54,22 @@ function O(e) {
     icons: b,
     fileSize: y,
     onClose: O
-  } = e, v = (0, l.Dt)(), I = null != b ? b : m.J6, T = (0, u.Z)({
+  } = e, v = (0, l.Dt)(), I = null != b ? b : m.J6, S = (0, u.Z)({
     location: "UploadError"
-  }), S = () => {
+  }), T = () => {
     (0, c.Z)(), O(), p.default.track(g.rMx.PREMIUM_PROMOTION_OPENED, {
       location_section: g.jXE.FILE_UPLOAD_UPSELL_MODAL,
       location_object: g.qAy.NAVIGATION_LINK
     }), (0, _.uL)(g.Z5c.APPLICATION_STORE)
   };
-  return i ? T ? (0, r.jsx)(f.Z, {
+  return i ? S ? (0, r.jsx)(f.Z, {
     transitionState: o,
     onClose: O,
-    handleLearnMore: S
+    handleLearnMore: T
   }) : (0, r.jsx)(d.Z, {
     transitionState: o,
     onClose: O,
-    handleLearnMore: S,
+    handleLearnMore: T,
     fileSize: y
   }) : (0, r.jsx)(s.Y0, {
     size: s.Cg.DYNAMIC,

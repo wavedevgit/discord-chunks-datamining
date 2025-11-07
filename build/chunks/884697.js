@@ -12,13 +12,13 @@ require.d(exports, {
   QG: () => j,
   Qf: () => el,
   Vw: () => I,
-  XM: () => T,
+  XM: () => S,
   Y: () => W,
   Yq: () => J,
   bl: () => V,
   eu: () => en,
   f_: () => N,
-  gc: () => S,
+  gc: () => T,
   hC: () => es,
   iC: () => G,
   jT: () => H,
@@ -93,15 +93,15 @@ let O = e => (null == e ? true : e.premiumType) != null,
     let r;
     return C(e, r = n ? t ? h.tuJ.MOBILE_PREMIUM_TIER_2 : h.tuJ.MOBILE : t ? h.tuJ.PREMIUM_TIER_2 : h.tuJ.DEFAULT)
   },
-  T = (e, t, n) => {
+  S = (e, t, n) => {
     let r = I(e, t, n);
     return null == r ? "" : (0, l.T4)(null == r ? true : r.amount, null == r ? true : r.currency)
   },
-  S = e => (0, s.isAndroid)() || (0, s.isIOS)() ? e ? h.tuJ.MOBILE_PREMIUM_TIER_2 : h.tuJ.MOBILE : e ? h.tuJ.PREMIUM_TIER_2 : h.tuJ.DEFAULT,
+  T = e => (0, s.isAndroid)() || (0, s.isIOS)() ? e ? h.tuJ.MOBILE_PREMIUM_TIER_2 : h.tuJ.MOBILE : e ? h.tuJ.PREMIUM_TIER_2 : h.tuJ.DEFAULT,
   A = e => {
     let t = e.bundledProducts;
     if (null == t) return 0;
-    let n = S(false);
+    let n = T(false);
     return t.reduce((e, t) => {
       var r;
       let i = C(t, n);
@@ -120,7 +120,7 @@ let O = e => (null == e ? true : e.premiumType) != null,
   R = (e, t) => {
     let n = A(e);
     if (n <= 0) return N;
-    let r = C(e, S(t));
+    let r = C(e, T(t));
     return null == r ? N : {
       original: n,
       discountPercentage: Math.round((n - r.amount) / n * 100)

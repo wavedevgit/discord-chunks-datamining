@@ -59,13 +59,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -153,7 +153,7 @@ class D extends Chunk651655.Z {
     let {
       channelId: r,
       analyticsLocation: i
-    } = e, o = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
+    } = e, o = T(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
       location: s
     } : true, f = (0, u.d)(), p = v({
       mobile_network_type: _.Z.getType()
@@ -173,7 +173,7 @@ class D extends Chunk651655.Z {
     }
     let h = this.createResponseHandler(e.nonce, t),
       m = new AbortController;
-    this.startQueueMetricTimers(e.nonce), a.tn.post(T(v({
+    this.startQueueMetricTimers(e.nonce), a.tn.post(S(v({
       url: b.ANM.MESSAGES(r),
       body: p,
       context: l,
@@ -191,7 +191,7 @@ class D extends Chunk651655.Z {
     let {
       channelId: r,
       analyticsLocation: i
-    } = e, o = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
+    } = e, o = T(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
       location: s
     } : true, f = (0, u.d)(), p = v({
       mobile_network_type: _.Z.getType()
@@ -211,7 +211,7 @@ class D extends Chunk651655.Z {
     }
     let h = this.createResponseHandler(e.nonce, t),
       m = new AbortController;
-    this.startQueueMetricTimers(e.nonce), a.tn.post(T(v({
+    this.startQueueMetricTimers(e.nonce), a.tn.post(S(v({
       url: b.ANM.MESSAGES_ANNOUNCEMENT(r),
       body: p,
       context: l,
@@ -271,7 +271,7 @@ class D extends Chunk651655.Z {
         channelId: n,
         messageId: r,
         isCrossposted: i
-      } = e, o = S(e, ["channelId", "messageId", "isCrossposted"]);
+      } = e, o = T(e, ["channelId", "messageId", "isCrossposted"]);
       let s = new AbortController,
         l = this.createResponseHandler(r, t),
         c = {

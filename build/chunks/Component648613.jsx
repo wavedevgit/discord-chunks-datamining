@@ -84,8 +84,8 @@ function I(e) {
     postSuccessGuild: b,
     onSubscribeModalClose: v,
     premiumModalAnalyticsLocation: I,
-    applicationId: T,
-    giftMessage: S,
+    applicationId: S,
+    giftMessage: T,
     confirmationFooter: A,
     paymentModalBanner: C,
     isGift: N,
@@ -145,8 +145,8 @@ function I(e) {
         trialId: o,
         postSuccessGuild: b,
         onClose: v,
-        applicationId: T,
-        giftMessage: S,
+        applicationId: S,
+        giftMessage: T,
         confirmationFooter: A,
         paymentModalBanner: C
       })

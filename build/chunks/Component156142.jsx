@@ -147,7 +147,7 @@ function M(e) {
       selectedCollection: e,
       selectedStory: null
     })
-  }, S = e => {
+  }, T = e => {
     D.setState({
       selectedStory: e
     })
@@ -157,7 +157,7 @@ function M(e) {
     (0, O.JG)(e, () => (0, _.CF)({
       id: "playground-link-copied",
       message: "Copied playground link",
-      type: T.pC.SUCCESS
+      type: S.pC.SUCCESS
     }))
   };
   return (0, r.jsxs)("div", {
@@ -217,7 +217,7 @@ function M(e) {
           children: null != m ? (0, r.jsx)(v.N, {
             groups: m.groups,
             selectedStory: u,
-            onStorySelect: S
+            onStorySelect: T
           }) : null
         }), (0, r.jsx)("div", {
           className: C.content,

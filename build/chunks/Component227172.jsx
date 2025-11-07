@@ -75,7 +75,7 @@ let k = {
     } = (0, R.Z)(null == V ? true : V.src), Q = (0, o.e7)([E.default], () => E.default.locale), {
       streamPreviewUrl: J,
       stream: $
-    } = (0, T.Z)(y), {
+    } = (0, S.Z)(y), {
       displayParticipants: ee,
       participant1: et,
       participant2: en,
@@ -95,7 +95,7 @@ let k = {
         applicationImageSrc: null == V ? true : V.src,
         avatarSrcs: ee.map(e => e.getAvatarURL(b.guild_id, 128)),
         description: t,
-        timestamp: (0, S.yh)(y, Q),
+        timestamp: (0, T.yh)(y, Q),
         colors: [q, X],
         channelId: e
       })
@@ -114,7 +114,7 @@ let k = {
           Icon: ea,
           "aria-label": j.intl.string(j.t.YR4cHH)
         }),
-        userDescription: (0, S.kr)(y) ? j.t.vPg1JT : j.t.rPqqts,
+        userDescription: (0, T.kr)(y) ? j.t.vPg1JT : j.t.rPqqts,
         title: W,
         subtitle: Y,
         badges: ef,

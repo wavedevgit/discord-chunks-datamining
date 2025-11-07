@@ -30,8 +30,8 @@ function m(e, t) {
     v = null != h && null != (o = null == (r = f.ZP.getMember(h, g)) ? true : r.roles) ? o : [],
     I = s.Z.isViewingRoles(h),
     {
-      computedPermissions: T,
-      hasBaseAccessPermissions: S,
+      computedPermissions: S,
+      hasBaseAccessPermissions: T,
       hasSendMessagesPermission: A
     } = b(_, e instanceof c.Sf && e.isThread());
   return {
@@ -40,8 +40,8 @@ function m(e, t) {
     roleIds: v,
     isImpersonating: I,
     commandTypes: t,
-    computedPermissions: T,
-    hasBaseAccessPermissions: S,
+    computedPermissions: S,
+    hasBaseAccessPermissions: T,
     hasSendMessagesPermission: A,
     allowNsfw: E(_, y, m)
   }

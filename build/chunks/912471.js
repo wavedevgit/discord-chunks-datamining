@@ -47,8 +47,8 @@ function I(e) {
   }
   return e
 }
-let T = 26,
-  S = 15 * Chunk70956.Z.Millis.MINUTE,
+let S = 26,
+  T = 15 * Chunk70956.Z.Millis.MINUTE,
   A = Chunk70956.Z.Millis.SECOND,
   C = "LAST_CLIENT_HEARTBEAT_SESSION",
   N = "user",
@@ -66,7 +66,7 @@ let T = 26,
 
 function U() {
   if (null != P) return;
-  let e = 0 === x ? 0 : S - (performance.now() - x);
+  let e = 0 === x ? 0 : T - (performance.now() - x);
   Chunk960048.Z.addBreadcrumb({
     message: "Received Last Heartbeat Event Timestamp. Time Until Next Heartbeat: ".concat(module / 1e3, " seconds. Scheduling Heartbeat")
   }), P = {
@@ -76,7 +76,7 @@ function U() {
         type: "interval",
         id: setInterval(() => {
           F()
-        }, S)
+        }, T)
       }
     }, module)
   }
@@ -129,15 +129,15 @@ async function F() {
   });
   let r = I({
     client_heartbeat_initialization_timestamp: exports.createdAtTimestamp,
-    client_heartbeat_version: T
+    client_heartbeat_version: S
   }, (0, Chunk343420.O)(), Z());
   Chunk626135.default.track(Chunk981631.rMx.CLIENT_HEARTBEAT, Chunk772848), x = performance.now(), (0, Chunk188471.Z)()
 }
 
 function V() {
-  if (!(null != k && (0, Chunk733879.y)()) || performance.now() - x <= S) return;
+  if (!(null != k && (0, Chunk733879.y)()) || performance.now() - x <= T) return;
   let e = {
-    client_heartbeat_version: T
+    client_heartbeat_version: S
   };
   Chunk626135.default.track(Chunk981631.rMx.CLIENT_HEARTBEAT_SKIPPED, module)
 }
@@ -148,7 +148,7 @@ function Y() {
   let e = [];
   return null != k && (j && module.push("foregrounded"), M !== Chunk981631.hes.DISCONNECTED && M !== Chunk981631.hes.RTC_DISCONNECTED && module.push("rtc_connected")), {
     active: module.length > 0,
-    ver: T,
+    ver: S,
     reasons: module
   }
 }
@@ -165,7 +165,7 @@ function z() {
   null == w && (w = {
     id: setInterval(() => {
       V()
-    }, S),
+    }, T),
     type: "interval"
   })
 }

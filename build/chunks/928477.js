@@ -107,7 +107,7 @@ function k(e) {
       let e = j(t, n);
       b = "" !== e ? e : w.intl.string(w.t["7Xm5QI"])
     }
-    let y = (0, S.WD)(t),
+    let y = (0, T.WD)(t),
       O = g.Z.getChannel(I.default.castMessageIdAsChannelId(n)),
       v = await Z(t, [], true, () => {
         let e = null != n ? R.ANM.CHANNEL_MESSAGE_THREADS(t.id, n) : R.ANM.CHANNEL_THREADS(t.id);
@@ -152,7 +152,7 @@ function G(e) {
     let p, h = 0,
       [g, b] = (0, m.Z)(e);
     g && (e = b, h = (0, v.pj)(h, R.iLy.SUPPRESS_NOTIFICATIONS));
-    let y = (0, S.WD)(t, null),
+    let y = (0, T.WD)(t, null),
       O = R.ANM.CHANNEL_THREADS(t.id) + "?use_nested_fields=true",
       I = {
         name: n,
@@ -166,7 +166,7 @@ function G(e) {
       };
     if (null != d && d.length > 0) try {
       let e = await u(d);
-      p = e.uploaderFile, I.message.attachments = e.files.map((e, t) => (0, T.B)(e, t))
+      p = e.uploaderFile, I.message.attachments = e.files.map((e, t) => (0, S.B)(e, t))
     } catch (i) {
       let {
         file: e,
@@ -218,7 +218,7 @@ async function Z(e, t, n, r) {
       channelId: i.body.id
     }))
   } catch (r) {
-    var c, f, p, m, E, b, v, I, T;
+    var c, f, p, m, E, b, v, I, S;
     if ((null == (c = r.body) ? true : c.code) === R.evJ.TOO_MANY_THREADS) o.Z.show({
       title: s ? w.intl.string(w.t.vWNFkx) : w.intl.string(w.t["1KEdvB"]),
       body: s ? w.intl.string(w.t.KGaiEK) : w.intl.string(w.t.P0wT5S)
@@ -255,7 +255,7 @@ async function Z(e, t, n, r) {
           guildId: e.getGuildId(),
           analyticsLocations: null != t ? t : [],
           code: null == (I = r.body) ? true : I.code,
-          reason: null == (T = r.body) ? true : T.reason
+          reason: null == (S = r.body) ? true : S.reason
         });
       return new Promise((e, t) => {
         null == r.body && t(), u.Z.addConditionalChangeListener(() => {
@@ -273,7 +273,7 @@ async function Z(e, t, n, r) {
       body: w.intl.string(w.t.fEptJP)
     })
   }
-  let S = await new Promise((e, t) => {
+  let T = await new Promise((e, t) => {
     null == i.body && t(), g.Z.addConditionalChangeListener(() => {
       let t = g.Z.getChannel(i.body.id);
       if (null != t) return a.Z.wait(() => {
@@ -283,9 +283,9 @@ async function Z(e, t, n, r) {
   });
   try {
     await l.Z.fetchMessages({
-      channelId: S.id,
+      channelId: T.id,
       limit: R.AQB
     })
   } catch (e) {}
-  return S
+  return T
 }

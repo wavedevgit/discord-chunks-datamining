@@ -314,8 +314,8 @@ class g extends Chunk47770.Z {
       }), this.decryptionFailures = e.transport.decryptionFailures, this.routingFailures = e.transport.routingFailures, this.appendTargetRates(this.outboundStats, e.transport.availableOutgoingBitrate, r), i().forEach(e.rtp.inbound, (t, n) => {
         i().forEach(t, t => {
           if ("audio" === t.type) {
-            var r, a, o, s, l, c, u, d, _, p, h, m, g, E, b, y, O, v, I, T;
-            let S = null != (r = e.transport.ping) ? r : 0,
+            var r, a, o, s, l, c, u, d, _, p, h, m, g, E, b, y, O, v, I, S;
+            let T = null != (r = e.transport.ping) ? r : 0,
               A = t.packetsReceived,
               C = t.packetsLost,
               N = t.bytesReceived,
@@ -355,7 +355,7 @@ class g extends Chunk47770.Z {
                 o = 0,
                 s = e.mosBuckets,
                 l = null != (m = e.decryptFailureBeforeSuccessCount) ? m : M.decryptSuccessCount > 0 ? M.decryptFailureCount : true;
-              r > 0 && a >= 0 && (o = this.calculateMos(S + D, i().clamp(a / (r + a), 0, 1)), s[Math.floor(o)]++), this.inboundStats[n] = f({
+              r > 0 && a >= 0 && (o = this.calculateMos(T + D, i().clamp(a / (r + a), 0, 1)), s[Math.floor(o)]++), this.inboundStats[n] = f({
                 packetsReceived: A,
                 bytesReceived: N,
                 packetsLost: C,
@@ -401,7 +401,7 @@ class g extends Chunk47770.Z {
               accelerateRateSum: null != (O = t.accelerateRate) ? O : 0,
               expandRateSum: null != (v = t.expandRate) ? v : 0,
               preemptiveExpandRateSum: null != (I = t.preemptiveExpandRate) ? I : 0,
-              speechExpandRateSum: null != (T = t.speechExpandRate) ? T : 0,
+              speechExpandRateSum: null != (S = t.speechExpandRate) ? S : 0,
               numRateSamples: 1
             }
           }

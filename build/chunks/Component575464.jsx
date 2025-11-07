@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 575464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -20,78 +20,78 @@ var Chunk120356 = require("./120356.js"),
 function m(e) {
   var t, n;
   let {
-    user: i,
+    user: r,
     row: m,
     hideDiscriminator: g,
     comparator: b,
-    selected: _,
-    checked: y,
-    disabled: C = false,
+    selected: y,
+    checked: C,
+    disabled: _ = false,
     inlineUsername: v = true,
-    onClick: O,
-    onMouseEnter: x,
+    onClick: x,
+    onMouseEnter: O,
     "aria-setsize": E,
     "aria-posinset": j
-  } = e, S = (0, o.e7)([p.Z], () => p.Z.getStatus(i.id)), P = (0, a.JA)(String(i.id));
-  return (0, r.jsx)(s.P3F, (t = function(e) {
+  } = e, S = (0, o.e7)([p.Z], () => p.Z.getStatus(r.id)), P = (0, a.JA)(String(r.id));
+  return (0, i.jsx)(s.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        i = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      }))), i.forEach(function(t) {
+        var i;
+        i = n[t], t in e ? Object.defineProperty(e, t, {
+          value: i,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[t] = i
       })
     }
     return e
   }({
     id: "user-row-".concat(m),
     className: l()(h.friendWrapper, {
-      [h.disabled]: C
+      [h.disabled]: _
     }),
     onClick: () => {
-      null != O && O(i.id)
+      null != x && x(r.id)
     },
     onMouseEnter: () => {
-      null != x && x(m)
+      null != O && O(m)
     }
   }, P), n = n = {
     role: "option",
-    "aria-selected": y,
-    "aria-disabled": C,
+    "aria-selected": C,
+    "aria-disabled": _,
     "aria-setsize": E,
     "aria-posinset": j,
-    children: (0, r.jsxs)(d.Z, {
+    children: (0, i.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
       className: l()(h.friend, {
-        [h.friendSelected]: _,
+        [h.friendSelected]: y,
         [h.twoRows]: !v
       }),
-      children: [(0, r.jsx)(u.Z, {
-        user: i,
+      children: [(0, i.jsx)(u.Z, {
+        user: r,
         status: S,
         className: h.avatar
-      }), (0, r.jsxs)(d.Z, {
+      }), (0, i.jsxs)(d.Z, {
         className: h.match,
         align: d.Z.Align.BASELINE,
         direction: v ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, i.jsx)(s.Text, {
           tag: "strong",
           className: h.nickname,
           "aria-hidden": true,
           variant: "text-md/medium",
-          children: null != b && b === i.tag ? f.ZP.getName(i) : null != b && "" !== b ? b : f.ZP.getName(i)
-        }), (0, r.jsx)(s.Text, {
+          children: null != b && b === r.tag ? f.ZP.getName(r) : null != b && "" !== b ? b : f.ZP.getName(r)
+        }), (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: (0, r.jsx)(c.Z, {
-            user: i,
+          children: (0, i.jsx)(c.Z, {
+            user: r,
             hideDiscriminator: g,
             className: h.discordTag,
             usernameClass: h.__invalid_weightMedium,
@@ -99,16 +99,16 @@ function m(e) {
             forceUsername: true
           })
         })]
-      }), (0, r.jsx)(s.FZ5, {
-        checked: y,
-        disabled: C
+      }), (0, i.jsx)(s.FZ5, {
+        checked: C,
+        disabled: _
       })]
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(n)).forEach(function(e) {

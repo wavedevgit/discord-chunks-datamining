@@ -31,10 +31,10 @@ function E(e, t, n) {
     {
       isInvalid: v,
       validationErrors: I,
-      validationDetails: T
+      validationDetails: S
     } = t.displayValidation,
     {
-      labelProps: S,
+      labelProps: T,
       fieldProps: A,
       descriptionProps: C,
       errorMessageProps: N
@@ -93,7 +93,7 @@ function E(e, t, n) {
       }
     }),
     labelProps: {
-      ...S,
+      ...T,
       onClick: () => {
         k.focusFirst()
       }
@@ -154,6 +154,6 @@ function E(e, t, n) {
     },
     isInvalid: v,
     validationErrors: I,
-    validationDetails: T
+    validationDetails: S
   }
 }

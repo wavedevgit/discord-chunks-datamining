@@ -32,8 +32,8 @@ function b() {
     O = Chunk695346.cC.useSetting(),
     v = Chunk695346.vF.useSetting(),
     I = Chunk695346.H1.useSetting(),
-    T = Chunk695346.ev.useSetting(),
-    S = Chunk695346.x4.useSetting(),
+    S = Chunk695346.ev.useSetting(),
+    T = Chunk695346.x4.useSetting(),
     A = Chunk695346.RS.useSetting(),
     C = Chunk695346.NA.useSetting(),
     N = Chunk695346.nc.useSetting(),
@@ -86,7 +86,7 @@ function b() {
           }), (0, Chunk951288.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_INLINE_MEDIA_UPLOADS,
             children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-              checked: S,
+              checked: T,
               description: Chunk388032.intl.formatToPlainString(Chunk388032.t.qjjvqO, {
                 maxSize: 10
               }),
@@ -130,7 +130,7 @@ function b() {
           }), (0, Chunk951288.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_EMOJI_EMOTICONS,
             children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-              checked: T,
+              checked: S,
               description: Chunk454585.Z.parse(Chunk388032.intl.string(Chunk388032.t["20dvuQ"])),
               onChange: Chunk695346.ev.updateSetting,
               label: Chunk388032.intl.string(Chunk388032.t["79qal8"])

@@ -28,8 +28,8 @@ function y(e) {
     stream: O,
     handleGoLive: v,
     showReportOption: I = false,
-    disableChangeWindows: T = false,
-    minimal: S = false,
+    disableChangeWindows: S = false,
+    minimal: T = false,
     appContext: A = m.IlC.APP
   } = e, {
     desktopSourceId: C,
@@ -47,7 +47,7 @@ function y(e) {
     (null == C ? true : C.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
       e.context === E.Yn.STREAM && e.presentDesktopSourcePicker("window")
     }): v()
-  }, [C, v]), U = null != (t = null == C ? true : C.startsWith("prepicked:")) && t, G = (0, _.isMac)() && _.isPlatformEmbedded && U && (null != (n = null == N ? true : N.windows.length) ? n : 0) > 0, B = (0, _.isMac)() && _.isPlatformEmbedded && U && (null != (y = null == N ? true : N.applications.length) ? y : 0) > 0, Z = G ? b.intl.string(b.t.qDK8gQ) : B ? b.intl.string(b.t["3m8w+Q"]) : S ? b.intl.string(b.t.eAktHv) : b.intl.string(b.t.qntSal), F = i.useCallback(() => {
+  }, [C, v]), U = null != (t = null == C ? true : C.startsWith("prepicked:")) && t, G = (0, _.isMac)() && _.isPlatformEmbedded && U && (null != (n = null == N ? true : N.windows.length) ? n : 0) > 0, B = (0, _.isMac)() && _.isPlatformEmbedded && U && (null != (y = null == N ? true : N.applications.length) ? y : 0) > 0, Z = G ? b.intl.string(b.t.qDK8gQ) : B ? b.intl.string(b.t["3m8w+Q"]) : T ? b.intl.string(b.t.eAktHv) : b.intl.string(b.t.qntSal), F = i.useCallback(() => {
     let {
       preset: e,
       resolution: t,
@@ -83,11 +83,11 @@ function y(e) {
     }) : null,
     H = M ? (0, r.jsx)(o.S89, {
       id: "stream-settings-audio-enable",
-      label: S ? b.intl.string(b.t.af2Tw1) : b.intl.string(b.t.ZJEHt7),
+      label: T ? b.intl.string(b.t.af2Tw1) : b.intl.string(b.t.ZJEHt7),
       checked: R,
       action: F
     }) : null,
-    Y = !P || T || j ? null : (0, r.jsx)(o.sNh, {
+    Y = !P || S || j ? null : (0, r.jsx)(o.sNh, {
       id: "change-windows",
       label: Z,
       icon: o.hGI,
@@ -100,7 +100,7 @@ function y(e) {
       icon: o.g5r,
       action: () => (0, u.Z)(O)
     });
-  return S ? (0, r.jsxs)(r.Fragment, {
+  return T ? (0, r.jsxs)(r.Fragment, {
     children: [W, Y, V, H]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [V, I ? L : null, H, Y, W]

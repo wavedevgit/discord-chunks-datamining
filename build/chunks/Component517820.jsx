@@ -171,7 +171,7 @@ function H(e) {
   let {
     message: n,
     compact: a
-  } = e, o = C.default.getUser((0, E.Sw)(n)), s = null == (t = S.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id, c = null != s && null != o ? A.ZP.getMember(s, o.id) : null, {
+  } = e, o = C.default.getUser((0, E.Sw)(n)), s = null == (t = T.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id, c = null != s && null != o ? A.ZP.getMember(s, o.id) : null, {
     avatarSrc: u,
     avatarDecorationSrc: d,
     eventHandlers: f
@@ -201,7 +201,7 @@ function H(e) {
             variant: "text-xs/medium",
             color: "text-default",
             children: L.intl.string(L.t.qlFrXW)
-          }), (0, r.jsx)(T.Z, {
+          }), (0, r.jsx)(S.Z, {
             targetElementRef: h,
             user: o,
             guildId: s,
@@ -253,10 +253,10 @@ function Y(e) {
     dmsSent: u,
     raidType: h,
     resolvedReason: y
-  } = (0, E.FL)(n), O = (0, f.e7)([S.Z], () => S.Z.getChannel(n.channel_id), [n.channel_id]), v = null != (t = null == O ? true : O.guild_id) ? t : null, {
+  } = (0, E.FL)(n), O = (0, f.e7)([T.Z], () => T.Z.getChannel(n.channel_id), [n.channel_id]), v = null != (t = null == O ? true : O.guild_id) ? t : null, {
     shouldShowIncidentActions: I
-  } = (0, m.mI)(v), T = (0, R.sR)(n.author.id, n.channel_id), A = e => {
-    T(e)
+  } = (0, m.mI)(v), S = (0, R.sR)(n.author.id, n.channel_id), A = e => {
+    S(e)
   }, C = i.useCallback(() => {
     let e = null == O ? true : O.guild_id;
     null != e && (0, b.kW)(n.id, e)
@@ -336,7 +336,7 @@ function W(e) {
   let {
     message: n,
     compact: a
-  } = e, o = null == (t = S.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id, {
+  } = e, o = null == (t = T.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id, {
     raidDatetime: s,
     decisionId: c,
     suspiciousMentionActivityUntil: u

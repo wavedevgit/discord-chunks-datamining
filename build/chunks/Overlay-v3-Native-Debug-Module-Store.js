@@ -33,11 +33,11 @@ let g = new Chunk579092.Yd("OverlayV3NativeClickZoneStore"),
   v = {},
   I = false;
 
-function T(e) {
+function S(e) {
   return !a()(e, y)
 }
 
-function S(e) {
+function T(e) {
   let t = setTimeout(() => {
     R(t)
   }, E);
@@ -59,8 +59,8 @@ function A(e, t) {
   if (null == b) return void g.error("Overlay module not found");
   let r = null != (n = null == b ? true : b.getLastAssociatedPID()) ? n : u.UNSET_PID;
   try {
-    let n = S(e);
-    T(e) && (0, d.bs)(r, "capture_zones_set", {
+    let n = T(e);
+    S(e) && (0, d.bs)(r, "capture_zones_set", {
       source: t,
       capture_zones: n,
       rawZones: e

@@ -222,9 +222,9 @@ let W = function(e) {
   w.pj.has(i.planId) && D.JwP.ALL_PAUSEABLE.has(i.status) && !K || (z = false);
   let q = (0, C.Ng)(),
     X = null == q || null == (t = q.discount) ? true : t.amount,
-    Q = (0, T.t7)(),
-    J = (0, T.lr)(),
-    $ = (0, S.W)(),
+    Q = (0, S.t7)(),
+    J = (0, S.lr)(),
+    $ = (0, T.W)(),
     ee = () => {
       (i.status === D.O0b.ACTIVE || i.status === D.O0b.PAST_DUE || i.status === D.O0b.PAUSED) && er(P.R.PAUSE_SELECT)
     },

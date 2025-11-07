@@ -32,9 +32,9 @@ let f = {
         b(e), O("")
       }, []), I = i.useCallback(() => {
         b(null)
-      }, []), T = i.useCallback(() => {
-        b((0, a.Lg)((0, a.iT)()))
       }, []), S = i.useCallback(() => {
+        b((0, a.Lg)((0, a.iT)()))
+      }, []), T = i.useCallback(() => {
         "day" === p ? b((0, o.sG)("2024-12-25")) : b((0, o.wG)("2024-12-25T15:30"))
       }, [p]), A = i.useCallback(() => {
         if (_ && null == E) O("This field is required");
@@ -74,13 +74,13 @@ let f = {
             variant: "secondary",
             size: "sm",
             text: "Set Today",
-            onClick: T,
+            onClick: S,
             disabled: f
           }), (0, r.jsx)(u.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Set Dec 25",
-            onClick: S,
+            onClick: T,
             disabled: f
           }), (0, r.jsx)(u.zxk, {
             variant: "primary",

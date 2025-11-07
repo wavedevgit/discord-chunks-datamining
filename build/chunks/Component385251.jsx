@@ -57,12 +57,12 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = {
+let T = {
   page: Chunk981631.ZY5.USER_SETTINGS,
   section: Chunk981631.jXE.SETTINGS_PREMIUM,
   object: Chunk981631.qAy.CARD
@@ -154,7 +154,7 @@ let N = function(e) {
       let {
         PremiumBrandRefreshSubscriptionCancellationModal: i
       } = await n.e("26526").then(n.bind(n, 48813));
-      return n => (0, r.jsx)(i, T(v({}, n), {
+      return n => (0, r.jsx)(i, S(v({}, n), {
         premiumSubscription: t,
         analyticsLocation: _,
         analyticsLocations: N,
@@ -175,7 +175,7 @@ let N = function(e) {
       className: b.activeSubButtons,
       children: [(0, r.jsx)(i.aML, {
         text: n,
-        children: n => (0, r.jsx)(i.Button, T(v({}, n), {
+        children: n => (0, r.jsx)(i.Button, S(v({}, n), {
           variant: "expressive",
           disabled: e,
           text: E.intl.string(E.t["dylp/7"]),
@@ -184,7 +184,7 @@ let N = function(e) {
             (0, s.Z)({
               analyticsLocations: N,
               analyticsLocation: _,
-              analyticsObject: S,
+              analyticsObject: T,
               subscription: t
             })
           }

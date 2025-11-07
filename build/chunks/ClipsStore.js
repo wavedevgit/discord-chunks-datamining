@@ -60,8 +60,8 @@ function y(e, t) {
 let O = "default",
   v = [],
   I = [],
-  T = [],
-  S = 0,
+  S = [],
+  T = 0,
   A = null,
   C = null,
   N = {},
@@ -151,7 +151,7 @@ function B(e) {
     streamKey: n,
     thumbnail: r
   } = e;
-  if (S += 1, M.hasTakenDecoupledClip = M.hasTakenDecoupledClip || t === p.X9.DECOUPLED, null != n && null != r) {
+  if (T += 1, M.hasTakenDecoupledClip = M.hasTakenDecoupledClip || t === p.X9.DECOUPLED, null != n && null != r) {
     var i;
     let e = Date.now();
     w = null != w ? w : e, D[n] = [...null != (i = D[n]) ? i : [], {
@@ -170,7 +170,7 @@ function Z(e) {
 }
 
 function F() {
-  S = Math.max(S - 1, 0)
+  T = Math.max(T - 1, 0)
 }
 
 function V(e) {
@@ -178,14 +178,14 @@ function V(e) {
   let {
     clip: r
   } = e;
-  S = Math.max(S - 1, 0), C = y(E({
+  T = Math.max(T - 1, 0), C = y(E({
     applicationName: r.applicationName,
     ended: false
   }, C), {
     newClipIds: [...null != (t = null == C ? true : C.newClipIds) ? t : [], r.id]
   }), M = y(E({}, M), {
     newClipIds: [...null != (n = M.newClipIds) ? n : [], r.id]
-  }), T = T.filter(e => {
+  }), S = S.filter(e => {
     let {
       id: t
     } = e;
@@ -197,14 +197,14 @@ function H(e) {
   let {
     clip: t
   } = e;
-  T = [t, ...T]
+  S = [t, ...S]
 }
 
 function Y(e) {
   let {
     clipId: t
   } = e;
-  T = T.filter(e => {
+  S = S.filter(e => {
     let {
       id: n
     } = e;
@@ -371,7 +371,7 @@ class ec extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return I
   }
   getPendingClips() {
-    return T
+    return S
   }
   getUserAgnosticState() {
     return M
@@ -405,7 +405,7 @@ class ec extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return M.hardwareClassificationVersion
   }
   getIsAtMaxSaveClipOperations() {
-    return S >= Chunk356659.Kw
+    return T >= Chunk356659.Kw
   }
   getLastClipsError() {
     return R

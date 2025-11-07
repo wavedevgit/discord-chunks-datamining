@@ -92,12 +92,12 @@ function I(e) {
   }
 }
 
-function T(e) {
+function S(e) {
   var t;
   return null != (t = y[e]) ? t : {}
 }
 
-function S(e, t) {
+function T(e, t) {
   var n, r;
   let i = null == (n = y[e]) ? true : n.error,
     a = null == (r = y[e]) ? true : r.error_description;
@@ -105,11 +105,11 @@ function S(e, t) {
 }
 
 function A(e) {
-  s.default.track(h.rMx.OVERLAY_HOOK_RESULT, T(e))
+  s.default.track(h.rMx.OVERLAY_HOOK_RESULT, S(e))
 }
 
 function C(e, t) {
-  e !== l.UNSET_PID && S(e, {
+  e !== l.UNSET_PID && T(e, {
     host_crash_count: 1,
     error: t.message,
     error_description: t.stack
@@ -117,7 +117,7 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  e !== l.UNSET_PID && S(e, {
+  e !== l.UNSET_PID && T(e, {
     renderer_crash_count: 1,
     error: t.message,
     error_description: t.stack
@@ -153,7 +153,7 @@ function D(e) {
   let {
     createWindowTriggeringPID: t
   } = e;
-  return S(t, {
+  return T(t, {
     mounting_started_at: new Date().getTime()
   }), true
 }
@@ -162,20 +162,20 @@ function x(e) {
   var t, n;
   let {
     createWindowTriggeringPID: r
-  } = e, i = null != (n = null == (t = T(r)) ? true : t.mounting_started_at) ? n : new Date().getTime(), a = {
+  } = e, i = null != (n = null == (t = S(r)) ? true : t.mounting_started_at) ? n : new Date().getTime(), a = {
     renderer_started: true,
     fullscreen_type: (0, f.hs)(r),
     graphics_info_after: new Date().getTime() - i
   };
-  return S(r, a), true
+  return T(r, a), true
 }
 
 function L(e) {
   var t, n;
   let {
     createWindowTriggeringPID: r
-  } = e, i = null != (n = null == (t = T(r)) ? true : t.mounting_started_at) ? n : new Date().getTime();
-  return S(r, {
+  } = e, i = null != (n = null == (t = S(r)) ? true : t.mounting_started_at) ? n : new Date().getTime();
+  return T(r, {
     renderer_started_after: new Date().getTime() - i
   }), true
 }
@@ -198,8 +198,8 @@ function k(e) {
   var t, n;
   let {
     pid: r
-  } = e, i = null != (n = null == (t = T(r)) ? true : t.mounting_started_at) ? n : new Date().getTime();
-  return S(r, {
+  } = e, i = null != (n = null == (t = S(r)) ? true : t.mounting_started_at) ? n : new Date().getTime();
+  return T(r, {
     total_mount_time_ms: null != i ? new Date().getTime() - i : true,
     success: true
   }), v(r), true
@@ -209,7 +209,7 @@ class U extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk371651.default, Chunk509140.Z, Chunk594190.ZP)
   }
   getData(e) {
-    return T(e)
+    return S(e)
   }
   getCrashExtra(e, t) {
     return P(e, t)

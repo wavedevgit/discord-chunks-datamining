@@ -132,8 +132,8 @@ function J(e) {
     selectedSkuId: eO,
     setSelectedSkuId: ev,
     selectedPlan: eI,
-    setSelectedPlanId: eT,
-    setSelectedPlanNotification: eS,
+    setSelectedPlanId: eS,
+    setSelectedPlanNotification: eT,
     setStep: eA,
     setPurchaseError: eC,
     paymentAuthenticationState: eN,
@@ -198,12 +198,12 @@ function J(e) {
       discount_id: null != eq ? eq.discount_id : e0
     }))
   }), i.useEffect(() => {
-    if (null == eI && (null != eU && null != eg ? eT(eU) : eT(j)), null != ec) ev(ec);
+    if (null == eI && (null != eU && null != eg ? eS(eU) : eS(j)), null != ec) ev(ec);
     else if (null != j) {
       var e;
       ev(null == (e = A.Z.get(j)) ? true : e.skuId)
     }
-  }, [eT, eI, ev, j, ec, eU, eg]);
+  }, [eS, eI, ev, j, ec, eU, eg]);
   let e1 = i.useCallback(() => {
       let e = (0, R.MY)(eH) === R.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD,
         t = Date.now();
@@ -236,7 +236,7 @@ function J(e) {
         } = t,
         o = Date.now();
       if (e === x.h8.CONFIRM && (e1(), null == m || m(i), em)) return void e2();
-      eA(e), null == eu || eu(e), eC(null), eS(null), e === x.h8.ADD_PAYMENT_STEPS && (u.Z.wait(f.fw), u.Z.wait(_.pB));
+      eA(e), null == eu || eu(e), eC(null), eT(null), e === x.h8.ADD_PAYMENT_STEPS && (u.Z.wait(f.fw), u.Z.wait(_.pB));
       let s = null != n ? n : eR;
       if (null === s || a) return void N.default.track(F.rMx.PAYMENT_FLOW_LOADED, q(K({}, eQ), {
         initial_step: null != s ? s : e,
@@ -249,8 +249,8 @@ function J(e) {
         step_duration_ms: o - e3,
         flow_duration_ms: o - eP.startTime
       }))
-    }, [eA, eu, eC, eS, eR, eg, eQ, e3, eP.startTime, e1, m, em, e2, eL]);
-  (0, I.bp)(eR, eN, e4, ey), (0, x.dZ)(eR, eb, ey), (0, T.p)(eR, ew, e4), (0, E.Z)(e2), (0, S.w)(eD, () => B(false), eV), (0, I.D6)(eN);
+    }, [eA, eu, eC, eT, eR, eg, eQ, e3, eP.startTime, e1, m, em, e2, eL]);
+  (0, I.bp)(eR, eN, e4, ey), (0, x.dZ)(eR, eb, ey), (0, S.p)(eR, ew, e4), (0, E.Z)(e2), (0, T.w)(eD, () => B(false), eV), (0, I.D6)(eN);
   let e8 = {
       initialPlanId: j,
       subscriptionTier: k,
@@ -320,14 +320,14 @@ function $(e) {
     startedPaymentFlowWithPaymentSourcesRef: O
   } = (0, D.JL)(), {
     isGift: v
-  } = (0, w.wD)(), I = O.current, T = (0, k.Z)({
+  } = (0, w.wD)(), I = O.current, S = (0, k.Z)({
     isGift: v,
     skuId: E,
     referralTrialOfferId: o
-  }), [S, A] = i.useState(true), N = (0, l.e7)([C.Z], () => C.Z.applicationIdsFetched.has(V.CL));
+  }), [T, A] = i.useState(true), N = (0, l.e7)([C.Z], () => C.Z.applicationIdsFetched.has(V.CL));
   return (i.useEffect(() => {
     A(!_ || !h || g)
-  }, [g, h, _]), (0, p.Z)("Payment Modal", S, 5, {
+  }, [g, h, _]), (0, p.Z)("Payment Modal", T, 5, {
     hasFetchedSubscriptions: _,
     hasFetchedSubscriptionPlans: h,
     currencyLoading: g
@@ -336,9 +336,9 @@ function $(e) {
       app_context: Q
     }
   }), i.useEffect(() => {
-    if (N || (0, d.yD)(V.CL), S || f) return;
+    if (N || (0, d.yD)(V.CL), T || f) return;
     let e = (0, j.Kp)({
-      isTrial: T,
+      isTrial: S,
       isGift: v,
       selectedSkuId: E,
       startedPaymentFlowWithPaymentSources: I
@@ -347,7 +347,7 @@ function $(e) {
       emitPaymentFlowLoadedEvent: true,
       trackedFromStep: c
     }) : null != n ? a(x.h8.REVIEW) : e ? (b((0, j.nA)(E, u, y)), a(x.h8.REVIEW)) : null != t ? a(x.h8.PLAN_SELECT) : a(x.h8.SKU_SELECT)
-  }, [c, u, f, N, n, S, a, t, E, b, T, y, v, I]), S) ? (0, r.jsx)(B.Z, {}) : f ? (0, r.jsx)(m.Vq, {
+  }, [c, u, f, N, n, T, a, t, E, b, S, y, v, I]), T) ? (0, r.jsx)(B.Z, {}) : f ? (0, r.jsx)(m.Vq, {
     onClose: s
   }) : null
 }

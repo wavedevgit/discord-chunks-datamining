@@ -38,7 +38,7 @@ let O = {},
   v = 0,
   I = "47835198259242069";
 
-function T(e, t, n) {
+function S(e, t, n) {
   let r = O[e];
   if (null == r) returnfalse;
   let i = r;
@@ -47,7 +47,7 @@ function T(e, t, n) {
   return a && v++, a
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = O[e];
   return !(null == n || (0, c.d)(n.primaryGuild, t.primary_guild)) && (null == n.primaryGuild || null != t.primary_guild) && (n.primaryGuild = (0, c.l)(t.primary_guild), O[n.id] = n, v++, true)
 }
@@ -162,7 +162,7 @@ function L(e) {
     R(e)
   }), r.forEach(e => {
     e.members.forEach(t => {
-      T(t.user.id, e.id, t.avatar), S(t.user.id, t.user)
+      S(t.user.id, e.id, t.avatar), T(t.user.id, t.user)
     })
   }), null != O[m.default.getId()] && (O[I] = new _.Z({
     id: I,
@@ -180,7 +180,7 @@ function M(e) {
   } = e;
   t.forEach(e => {
     e.members.forEach(t => {
-      T(t.user.id, e.id, t.avatar), S(t.user.id, t.user)
+      S(t.user.id, e.id, t.avatar), T(t.user.id, t.user)
     })
   }), null == n || n.forEach(e => {
     var t;
@@ -327,7 +327,7 @@ function q(e) {
     if (null == t) return;
     R(t);
     let i = null == r ? true : r.avatar;
-    null != i && T(t.id, n, i)
+    null != i && S(t.id, n, i)
   })
 }
 
@@ -421,7 +421,7 @@ function eo(e) {
 
 function es(e) {
   let t = R(e.user);
-  return T(e.user.id, e.guildId, e.avatar) || t
+  return S(e.user.id, e.guildId, e.avatar) || t
 }
 
 function el(e) {
@@ -433,7 +433,7 @@ function el(e) {
       var n;
       let t = null == (n = e.item.member) ? true : n.user;
       if (null == t) continue;
-      S(t.id, t)
+      T(t.id, t)
     } returnfalse
 }
 
@@ -443,14 +443,14 @@ function ec(e) {
   } = e, n = false;
   for (let e of t) n = e.members.reduce((t, n) => {
     let r = R(n.user);
-    return T(n.user.id, e.guildId, n.avatar) || r || t
+    return S(n.user.id, e.guildId, n.avatar) || r || t
   }, false) || n;
   return n
 }
 
 function eu(e) {
   let t = false;
-  for (let n of e.members) R(n.user) && (t = true), T(n.user.id, e.guildId, n.avatar) && (t = true);
+  for (let n of e.members) R(n.user) && (t = true), S(n.user.id, e.guildId, n.avatar) && (t = true);
   return t
 }
 
@@ -500,7 +500,7 @@ function ep(e) {
       avatar: i,
       discriminator: a,
       bot: o
-    }), T(n, t.id, s)
+    }), S(n, t.id, s)
   })
 }
 
@@ -568,7 +568,7 @@ function eI(e) {
   return null != n && (i = i || R(n)), null != r && (i = i || R(r)), i
 }
 
-function eT(e) {
+function eS(e) {
   let {
     users: t,
     familyCenterTeenActivity: n
@@ -578,7 +578,7 @@ function eT(e) {
   return [...t, ...r].reduce((e, t) => R(t) || e, false)
 }
 
-function eS(e) {
+function eT(e) {
   let {
     users: t
   } = e;
@@ -772,8 +772,8 @@ class ej extends Chunk750041.Z {
       LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS: z,
       PASSIVE_UPDATE_V2: eu,
       LOCAL_MESSAGES_LOADED: ed,
-      FAMILY_CENTER_INITIAL_LOAD: eT,
-      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: eS,
+      FAMILY_CENTER_INITIAL_LOAD: eS,
+      FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: eT,
       FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: eC,
       FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: eN,
       FAMILY_CENTER_REQUEST_LINK_SUCCESS: eA,

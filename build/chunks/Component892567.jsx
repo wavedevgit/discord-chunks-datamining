@@ -2,7 +2,7 @@
 /** chunk id: 892567, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,13 +25,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk7284 = require("./7284.js"),
   Chunk492333 = require("./492333.js");
 let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
-  T = Chunk647438.memo(function(e) {
+  S = Chunk647438.memo(function(e) {
     var t;
     let {
       userName: n,
       displayNameStyles: a,
       effectDisplayType: s = b.F.STATIC,
-      inProfile: T = false,
+      inProfile: S = false,
       textClassName: A,
       loop: C = false,
       shouldWrap: N = false,
@@ -39,7 +39,7 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       shouldUnderlineOnHover: P = false
     } = e, w = (0, O.j)({
       displayNameStyles: a,
-      inProfile: T
+      inProfile: S
     }), {
       useReducedMotion: D,
       saturation: x
@@ -58,18 +58,18 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       ratio: U.minContrastRatio,
       saturationFactor: x
     }).hex()) : [], [a, M, k, U.minContrastRatio, x, j]);
-    if (!M || !T && !L || null == a) return n;
+    if (!M || !S && !L || null == a) return n;
     let F = (0, y.K)(k, Z, {
         shouldWrap: N,
         fontOpacity: I.includes(a.fontId) ? R : 1
       }),
-      V = S(k);
+      V = T(k);
     return (0, r.jsxs)("div", {
       className: l()(v.container, w, A, {
         [v.showEffect]: s !== b.F.PLAIN,
         [v.animated]: s === b.F.ANIMATED && !D,
         [v.loop]: C,
-        [v.inProfile]: T
+        [v.inProfile]: S
       }),
       style: F,
       children: [(0, r.jsx)("span", {
@@ -89,7 +89,7 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
     })
   });
 
-function S(e) {
+function T(e) {
   switch (e) {
     case c.m.GRADIENT:
     case c.m.GLOW:

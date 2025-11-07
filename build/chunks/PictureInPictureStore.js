@@ -127,7 +127,7 @@ function I(e) {
   m[t] = n
 }
 
-function T(e) {
+function S(e) {
   let {
     id: t
   } = e;
@@ -141,7 +141,7 @@ function T(e) {
   }
 }
 
-function S(e) {
+function T(e) {
   let {
     id: t
   } = e;
@@ -229,8 +229,8 @@ let R = new N(Chunk570140.Z, {
   PICTURE_IN_PICTURE_CLOSE: y,
   PICTURE_IN_PICTURE_MOVE: O,
   PICTURE_IN_PICTURE_RESIZE: v,
-  PICTURE_IN_PICTURE_HIDE: T,
-  PICTURE_IN_PICTURE_SHOW: S,
+  PICTURE_IN_PICTURE_HIDE: S,
+  PICTURE_IN_PICTURE_SHOW: T,
   PICTURE_IN_PICTURE_UPDATE_RECT: I,
   PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: A,
   LOGOUT: C

@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 862679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -22,62 +22,62 @@ let d = function(e) {
     onButtonClick: m,
     imageSrc: g,
     animationSrc: b,
-    secondaryButtonText: _,
-    onSecondaryButtonClick: y,
-    children: C,
+    secondaryButtonText: y,
+    onSecondaryButtonClick: C,
+    children: _,
     useReducedMotion: v = false,
-    buttonVariant: O
-  } = e, x = (0, a.e7)([c.ZP], () => c.ZP.getState().isMembersOpen);
-  if (l.tq && x) return null;
-  if (null == t) return (0, r.jsx)(r.Fragment, {
-    children: i.Children.only(C)
+    buttonVariant: x
+  } = e, O = (0, a.e7)([c.ZP], () => c.ZP.getState().isMembersOpen);
+  if (l.tq && O) return null;
+  if (null == t) return (0, i.jsx)(i.Fragment, {
+    children: r.Children.only(_)
   });
   let E = null;
-  return null != g ? E = (0, r.jsx)("img", {
+  return null != g ? E = (0, i.jsx)("img", {
     alt: "",
     src: g,
     className: u.image
-  }) : null != b && (E = (0, r.jsx)(o.Fmz, {
+  }) : null != b && (E = (0, i.jsx)(o.Fmz, {
     importData: b,
     shouldAnimate: !v,
     className: u.animation
-  })), (0, r.jsxs)("div", {
+  })), (0, i.jsxs)("div", {
     className: u.wrapper,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, i.jsxs)("div", {
       className: u.content,
-      children: [E, (0, r.jsxs)("div", {
+      children: [E, (0, i.jsxs)("div", {
         className: u.text,
-        children: [(0, r.jsx)(o.Heading, {
+        children: [(0, i.jsx)(o.Heading, {
           variant: "heading-md/semibold",
           className: u.title,
           children: t
-        }), null != n && (0, r.jsx)(o.Text, {
+        }), null != n && (0, i.jsx)(o.Text, {
           color: "text-muted",
           variant: "text-xs/normal",
           children: n
         })]
       })]
-    }), (0, r.jsxs)("div", {
+    }), (0, i.jsxs)("div", {
       className: u.buttonContainer,
-      children: [null != _ && (0, r.jsx)("div", {
+      children: [null != y && (0, i.jsx)("div", {
         className: u.button,
-        children: (0, r.jsx)(o.Avr, {
+        children: (0, i.jsx)(o.Avr, {
           textVariant: "text-sm/semibold",
-          text: _,
-          onClick: y
+          text: y,
+          onClick: C
         })
-      }), null != p && (0, r.jsx)("div", {
+      }), null != p && (0, i.jsx)("div", {
         className: u.button,
-        children: (0, r.jsx)(o.Button, {
+        children: (0, i.jsx)(o.Button, {
           text: p,
           size: "sm",
-          variant: null != O ? O : "secondary",
+          variant: null != x ? x : "secondary",
           onClick: m,
           loading: h,
           icon: f
         })
       })]
-    }), null != d && (0, r.jsx)(s.Z, {
+    }), null != d && (0, i.jsx)(s.Z, {
       className: u.countdown,
       deadline: d
     })]

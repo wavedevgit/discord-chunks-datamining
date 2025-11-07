@@ -8,10 +8,10 @@ require.d(exports, {
   NZ: () => w,
   Pq: () => N,
   Q1: () => v,
-  RK: () => T,
+  RK: () => S,
   _0: () => I,
   hz: () => C,
-  yi: () => S
+  yi: () => T
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -79,7 +79,7 @@ function I(e, t) {
   }).catch(e => (e.code === E.evJ.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK && u.Z.showFailedToast(b.wQ.GENERIC_ERROR), e))
 }
 
-function T(e, t) {
+function S(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = null == e ? true : e.getGuildId();
   i()(null != r, "This channel cannot be guildless.");
@@ -97,7 +97,7 @@ function T(e, t) {
   })
 }
 
-function S(e) {
+function T(e) {
   let t = null == e ? true : e.getGuildId();
   return i()(null != t, "This channel cannot be guildless."), o.tn.patch({
     url: E.ANM.UPDATE_VOICE_STATE(t),
@@ -154,7 +154,7 @@ async function R(e, t, n, r) {
   if ("" === t) return;
   d.Z.getVoiceChannelId() !== e.id && (0, p.TM)(e);
   let i = await (0, m.me)(e.id, t, n, r);
-  return T(e, false, true), i
+  return S(e, false, true), i
 }
 async function P(e, t, n) {
   if ("" !== t) return await (0, m.Dk)(e.id, t, n)

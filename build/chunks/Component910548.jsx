@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk465687 = require("./465687.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -138,7 +138,7 @@ let w = ["TOP_LEFT", "TOP_RIGHT"],
       },
       leafRotationDirection: false
     },
-    BOTTOM_LEFT: C(S({}, M), {
+    BOTTOM_LEFT: C(T({}, M), {
       getConfettiPosition: e => ({
         x: e - x,
         y: L
@@ -148,7 +148,7 @@ let w = ["TOP_LEFT", "TOP_RIGHT"],
         y: false
       }
     }),
-    BOTTOM_RIGHT: C(S({}, M), {
+    BOTTOM_RIGHT: C(T({}, M), {
       getConfettiPosition: e => ({
         x: x,
         y: L
@@ -253,7 +253,7 @@ function et(e) {
   } = e, u = i.useRef(null), [_, p] = i.useState(null), [h] = i.useState(null != a ? a : Y()), {
     createMultipleConfettiAt: m,
     confettiCanvas: g
-  } = i.useContext(f.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = J(_, h), v = w.includes(h), T = v && "exit" === _, S = i.useCallback(e => {
+  } = i.useContext(f.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = J(_, h), v = w.includes(h), S = v && "exit" === _, T = i.useCallback(e => {
     p(e)
   }, []), A = i.useCallback(() => {
     "exit" === _ && (null == t || t())
@@ -337,11 +337,11 @@ function et(e) {
       children: (0, r.jsx)(d.kci, {
         animationRef: C,
         className: o()(I.easterEggAnimation, {
-          [I.easterEggAnimationHideLeaf]: T
+          [I.easterEggAnimationHideLeaf]: S
         }),
         nextScene: O,
         sceneSegments: R,
-        onScenePlay: S,
+        onScenePlay: T,
         onSceneComplete: A,
         importData: Q,
         pauseWhileUnfocused: false
@@ -361,8 +361,8 @@ function en(e) {
     c = H(n),
     u = (0, h.Z)(n),
     {
-      createMultipleConfettiAt: T,
-      addClickListener: S
+      createMultipleConfettiAt: S,
+      addClickListener: T
     } = i.useContext(f.h),
     [A, C] = i.useState(false),
     R = i.useRef(null),
@@ -397,9 +397,9 @@ function en(e) {
           var e;
           let t = null == (e = R.current) ? true : e.getBoundingClientRect();
           if (null == t) return;
-          T(t.left + t.width / 2, t.top + t.height / 2)
+          S(t.left + t.width / 2, t.top + t.height / 2)
         } else C(true)
-    }, [T, P, A]),
+    }, [S, P, A]),
     M = i.useCallback(() => {
       C(false)
     }, []),
@@ -413,7 +413,7 @@ function en(e) {
     k = i.useCallback((e, t) => {
       (null == t ? true : t.id.startsWith(V)) && j()
     }, [j]);
-  i.useEffect(() => S(k));
+  i.useEffect(() => T(k));
   let U = (0, r.jsx)(d.P3F, {
     className: I.iconWrapper,
     innerRef: R,

@@ -39,11 +39,11 @@ let _ = {
         O = n.rects.reference[m] + n.rects.reference[h] - _[h] - n.rects.popper[m],
         v = _[h] - n.rects.reference[h],
         I = (0, o.Z)(u),
-        T = I ? "y" === h ? I.clientHeight || 0 : I.clientWidth || 0 : 0,
-        S = O / 2 - v / 2,
+        S = I ? "y" === h ? I.clientHeight || 0 : I.clientWidth || 0 : 0,
+        T = O / 2 - v / 2,
         A = g[b],
-        C = T - E[m] - g[y],
-        N = T / 2 - E[m] / 2 + S,
+        C = S - E[m] - g[y],
+        N = S / 2 - E[m] / 2 + T,
         R = (0, l.u)(A, N, C),
         P = h;
       n.modifiersData[a] = (t = {}, t[P] = R, t.centerOffset = R - N, t)

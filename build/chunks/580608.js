@@ -7,7 +7,7 @@ require.d(exports, {
   GK: () => v,
   IH: () => o,
   U2: () => O,
-  cW: () => S,
+  cW: () => T,
   dW: () => g,
   jH: () => d,
   q_: () => h,
@@ -115,18 +115,18 @@ function v(e, t, n, r) {
       let t = e.calendar.getEras(),
         a = t.indexOf(e.era);
       if (a < 0) throw Error("Invalid era: " + e.era);
-      a = T(a, n, 0, t.length - 1, null == r ? true : r.round), i.era = t[a], d(i);
+      a = S(a, n, 0, t.length - 1, null == r ? true : r.round), i.era = t[a], d(i);
       break
     }
     case "year":
       var a, o;
-      (null == (a = (o = i.calendar).isInverseEra) ? true : a.call(o, i)) && (n = -n), i.year = T(e.year, n, false / 0, 9999, null == r ? true : r.round), i.year === false / 0 && (i.year = 1), i.calendar.balanceYearMonth && i.calendar.balanceYearMonth(i, e);
+      (null == (a = (o = i.calendar).isInverseEra) ? true : a.call(o, i)) && (n = -n), i.year = S(e.year, n, false / 0, 9999, null == r ? true : r.round), i.year === false / 0 && (i.year = 1), i.calendar.balanceYearMonth && i.calendar.balanceYearMonth(i, e);
       break;
     case "month":
-      i.month = T(e.month, n, 1, e.calendar.getMonthsInYear(e), null == r ? true : r.round);
+      i.month = S(e.month, n, 1, e.calendar.getMonthsInYear(e), null == r ? true : r.round);
       break;
     case "day":
-      i.day = T(e.day, n, 1, e.calendar.getDaysInMonth(e), null == r ? true : r.round);
+      i.day = S(e.day, n, 1, e.calendar.getDaysInMonth(e), null == r ? true : r.round);
       break;
     default:
       throw Error("Unsupported field " + t)
@@ -145,17 +145,17 @@ function I(e, t, n, r) {
         let e = t >= 12;
         a = 12 * !!e, o = e ? 23 : 11
       }
-      i.hour = T(t, n, a, o, null == r ? true : r.round);
+      i.hour = S(t, n, a, o, null == r ? true : r.round);
       break
     }
     case "minute":
-      i.minute = T(e.minute, n, 0, 59, null == r ? true : r.round);
+      i.minute = S(e.minute, n, 0, 59, null == r ? true : r.round);
       break;
     case "second":
-      i.second = T(e.second, n, 0, 59, null == r ? true : r.round);
+      i.second = S(e.second, n, 0, 59, null == r ? true : r.round);
       break;
     case "millisecond":
-      i.millisecond = T(e.millisecond, n, 0, 999, null == r ? true : r.round);
+      i.millisecond = S(e.millisecond, n, 0, 999, null == r ? true : r.round);
       break;
     default:
       throw Error("Unsupported field " + t)
@@ -163,7 +163,7 @@ function I(e, t, n, r) {
   return i
 }
 
-function T(e, t, n, r, i = false) {
+function S(e, t, n, r, i = false) {
   if (i) {
     (e += Math.sign(t)) < n && (e = r);
     let i = Math.abs(t);
@@ -172,7 +172,7 @@ function T(e, t, n, r, i = false) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   let n;
   if (null != t.years && 0 !== t.years || null != t.months && 0 !== t.months || null != t.weeks && 0 !== t.weeks || null != t.days && 0 !== t.days) {
     let i = o((0, r.IO)(e), {
@@ -189,7 +189,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return S(e, f(t))
+  return T(e, f(t))
 }
 
 function C(e, t, n, o) {
@@ -213,7 +213,7 @@ function C(e, t, n, o) {
         _ = (0, r.ZI)(e) - e.offset,
         p = Math.floor(_ / a),
         m = _ % a;
-      return _ = T(p, n, Math.floor(u / a), Math.floor(f / a), null == o ? true : o.round) * a + m, (0, r.Mw)((0, r.FD)(_, e.timeZone), e.calendar)
+      return _ = S(p, n, Math.floor(u / a), Math.floor(f / a), null == o ? true : o.round) * a + m, (0, r.Mw)((0, r.FD)(_, e.timeZone), e.calendar)
     }
     case "minute":
     case "second":

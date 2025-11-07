@@ -2,7 +2,7 @@
 /** chunk id: 819366, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -87,18 +87,18 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     className: t,
     userId: u,
     channelId: b,
     parsedUserId: O,
-    content: T,
-    inlinePreview: S = false,
+    content: S,
+    inlinePreview: T = false,
     viewingChannelId: A
   } = e, C = i.useRef(null), {
     analyticsLocations: N
-  } = (0, c.ZP)(l.Z.USER_MENTION), R = (0, o.e7)([m.default], () => m.default.getUser(u)), P = (0, o.e7)([_.Z], () => _.Z.getChannel(b)), w = null != P ? P.getGuildId() : null, D = S || null == R || null == w || null == b ? true : e => {
+  } = (0, c.ZP)(l.Z.USER_MENTION), R = (0, o.e7)([m.default], () => m.default.getUser(u)), P = (0, o.e7)([_.Z], () => _.Z.getChannel(b)), w = null != P ? P.getGuildId() : null, D = T || null == R || null == w || null == b ? true : e => {
     null != P && (0, s.jW)(e, async () => {
       let {
         default: e
@@ -114,7 +114,7 @@ function T(e) {
   if (null == R) return (0, r.jsx)(I, {
     userId: O,
     className: t,
-    children: T
+    children: S
   });
   let M = e => (0, r.jsx)(d.Z, v(y({
     ref: C,
@@ -123,7 +123,7 @@ function T(e) {
   }, e), {
     children: "@".concat(null != L ? L : x)
   }));
-  return S ? (0, r.jsx)(c.Gt, {
+  return T ? (0, r.jsx)(c.Gt, {
     value: N,
     children: M()
   }) : (0, r.jsx)(c.Gt, {

@@ -6,9 +6,9 @@ require.d(exports, {
   PI: () => I,
   RT: () => D,
   XM: () => R,
-  bc: () => T,
+  bc: () => S,
   ls: () => P,
-  xZ: () => S
+  xZ: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -44,9 +44,9 @@ function I(e) {
     })
   })
 }
-let T = 7e3;
+let S = 7e3;
 
-function S(e, t) {
+function T(e, t) {
   return C((0, s.e7)([p.Z], () => p.Z.getWidget(e), [e]), t)
 }
 let A = (e, t) => Date.now() - e < t;

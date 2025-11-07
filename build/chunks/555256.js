@@ -7,7 +7,7 @@ require.d(exports, {
   E: () => d,
   P: () => ee,
   S: () => u,
-  a: () => S,
+  a: () => T,
   b: () => g,
   c: () => Y,
   d: () => en,
@@ -242,7 +242,7 @@ let O = new y,
     var t;
     return (null == (t = window.UserLeap) ? true : t.forceDirectEmbed) || "web" !== e
   };
-class T {
+class S {
   constructor(e) {
     l(this, "storage"), l(this, "tempStorage", {}), l(this, "isStorageAvailable");
     try {
@@ -282,8 +282,8 @@ class T {
     this.isStorageAvailable && this.storage ? this.storage.clear() : this.tempStorage = {}
   }
 }
-let S = new T("sessionStorage"),
-  A = new T("localStorage");
+let T = new S("sessionStorage"),
+  A = new S("localStorage");
 class C {
   constructor(e) {
     l(this, "payload"), l(this, "promise"), l(this, "reject", () => {}), l(this, "resolve", () => {}), this.payload = e, this.promise = new Promise((e, t) => {

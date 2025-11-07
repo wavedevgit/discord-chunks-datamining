@@ -242,7 +242,7 @@ function el() {
 
 function ec(e) {
   var t, n, a, o, c, _, h, m;
-  let y, S, A, N, q, {
+  let y, T, A, N, q, {
       clientId: $,
       responseType: en,
       redirectUri: er,
@@ -265,8 +265,8 @@ function ec(e) {
       callback: eO,
       callbackWithoutPost: ev,
       onClose: eI,
-      disclosures: eT,
-      isExternalStandaloneOAuthPage: eS = false,
+      disclosures: eS,
+      isExternalStandaloneOAuthPage: eT = false,
       isTwoWayLinkDiscordConsent: eA = false
     } = e,
     eC = null != eh ? null == eu ? true : eu.get(eh) : true,
@@ -275,7 +275,7 @@ function ec(e) {
   i.useEffect(() => {
     D.default.isAuthenticated() && !eR && E.Z.getExperiments()
   }, [eR]);
-  let [eP, ew] = i.useState(null), [eD, ex] = i.useState(null), [eL, eM] = i.useState(null), [ej, ek] = i.useState(false), [eU, eG] = i.useState(false), eB = null == eP ? true : eP.guilds, [eZ, eF] = i.useState(null != e_ ? e_ : null), [eV, eH] = i.useState(null != ep ? ep : null), [eY, eW] = i.useState(L.Hn), [eK, ez] = i.useState(false), eq = i.useMemo(() => (null == eP ? true : eP.user) != null ? new w.Z(eP.user) : null, [null == eP ? true : eP.user]), eX = (0, T.Z)(null != (t = null == eP ? true : eP.application) ? t : null), eQ = i.useMemo(() => null == eB ? true : eB.find(e => e.id === eZ), [eB, eZ]), [eJ, e$] = i.useState(null), e0 = i.useMemo(() => {
+  let [eP, ew] = i.useState(null), [eD, ex] = i.useState(null), [eL, eM] = i.useState(null), [ej, ek] = i.useState(false), [eU, eG] = i.useState(false), eB = null == eP ? true : eP.guilds, [eZ, eF] = i.useState(null != e_ ? e_ : null), [eV, eH] = i.useState(null != ep ? ep : null), [eY, eW] = i.useState(L.Hn), [eK, ez] = i.useState(false), eq = i.useMemo(() => (null == eP ? true : eP.user) != null ? new w.Z(eP.user) : null, [null == eP ? true : eP.user]), eX = (0, S.Z)(null != (t = null == eP ? true : eP.application) ? t : null), eQ = i.useMemo(() => null == eB ? true : eB.find(e => e.id === eZ), [eB, eZ]), [eJ, e$] = i.useState(null), e0 = i.useMemo(() => {
     var e;
     return null == eC && null == eh && (null != (e = null == ed ? true : ed.length) ? e : 0) === 0 && null == er
   }, [eC, null == ed ? true : ed.length, er, eh]), [e1, e2] = i.useState(null);
@@ -307,8 +307,8 @@ function ec(e) {
       return null != t ? t : L.Hn
     }, [null == e3 ? true : e3.permissions, ef, e0]),
     e7 = i.useRef(false),
-    [e9, te] = i.useState(null != eT ? eT : []),
-    [tt, tn] = i.useState(null != eT && eT.length > 0);
+    [e9, te] = i.useState(null != eS ? eS : []),
+    [tt, tn] = i.useState(null != eS && eS.length > 0);
   i.useEffect(() => {
     if (e7.current) return;
     let e = async () => {
@@ -330,11 +330,11 @@ function ec(e) {
         e7.current = false
       }
     };
-    if (null == eT) {
+    if (null == eS) {
       if (!D.default.isAuthenticated()) return void(0, k.c$)(eN, "oauth2_error_not_authenticated");
       e()
     }
-  }, [$, eN, eT, te, eM, tn, ex]);
+  }, [$, eN, eS, te, eM, tn, ex]);
   let tr = i.useCallback(async e => {
       if (null != ev) {
         ek(true), ev(e);
@@ -457,7 +457,7 @@ function ec(e) {
       e && eG(true)
     }, []),
     tc = (0, l.O)(tl);
-  if (eL instanceof Error) return eS ? {
+  if (eL instanceof Error) return eT ? {
     body: (0, r.jsx)(X.Lk, {
       message: eL.message
     })
@@ -558,7 +558,7 @@ function ec(e) {
           selectedGuildId: eZ,
           onChannelChange: eH
         }) : null]
-      }), e8.includes(d.x.BOT) && !f.fS(e6, L.Hn) && (A = "AUTHORIZE_BOT_PERMISSIONS"), to.length > 1 && (S = "SELECT_INSTALL_TYPE"), t_ = tO && null == eQ || ty && null == eV, tf = true;
+      }), e8.includes(d.x.BOT) && !f.fS(e6, L.Hn) && (A = "AUTHORIZE_BOT_PERMISSIONS"), to.length > 1 && (T = "SELECT_INSTALL_TYPE"), t_ = tO && null == eQ || ty && null == eV, tf = true;
       break;
     case "AUTHORIZE_BOT_PERMISSIONS":
       if (null == eP) return {
@@ -571,7 +571,7 @@ function ec(e) {
         deniedPermissions: eY,
         onPermissionsChange: td,
         guild: eQ
-      }), S = "AUTHORIZE_SCOPES", tf = true
+      }), T = "AUTHORIZE_SCOPES", tf = true
   }
   let tI = [];
   if (tp && null != eP) {
@@ -598,9 +598,9 @@ function ec(e) {
     showLogout: eg || false,
     location: eN,
     scopes: e8
-  })), tm && (tI.push(null != S ? {
+  })), tm && (tI.push(null != T ? {
     variant: "secondary",
-    onClick: () => ex(S),
+    onClick: () => ex(T),
     text: ee.intl.string(ee.t["13/7kX"])
   } : {
     variant: "secondary",

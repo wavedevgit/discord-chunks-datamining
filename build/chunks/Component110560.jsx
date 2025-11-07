@@ -103,7 +103,7 @@ function B(e) {
     sourceQuestContent: c
   } = e;
   (0, s.ZDy)(async () => {
-    let e = (0, S.i)("openQuestsRewardCodeModal"),
+    let e = (0, T.i)("openQuestsRewardCodeModal"),
       s = C.r.build(t.config).rewardPlatforms.length > 1;
     if (e && !s) {
       let {
@@ -145,7 +145,7 @@ function Z(e, t) {
 
 function F(e, t, i) {
   (0, s.ZDy)(async () => {
-    if ((0, S.i)("openQuestInGameRewardModal")) {
+    if ((0, T.i)("openQuestInGameRewardModal")) {
       let {
         default: a
       } = await n.e("76418").then(n.bind(n, 34251));
@@ -168,7 +168,7 @@ function F(e, t, i) {
 
 function V(e, t, i) {
   (0, s.ZDy)(async () => {
-    if ((0, S.i)("openQuestOrbsRewardModal")) {
+    if ((0, T.i)("openQuestOrbsRewardModal")) {
       let {
         default: a
       } = await n.e("74560").then(n.bind(n, 246855));
@@ -190,7 +190,7 @@ function V(e, t, i) {
 
 function H(e, t, i, a) {
   (0, s.ZDy)(async () => {
-    if ((0, S.i)("openQuestCollectibleRewardModal")) {
+    if ((0, T.i)("openQuestCollectibleRewardModal")) {
       let {
         default: o
       } = await n.e("41023").then(n.bind(n, 305815));
@@ -264,7 +264,7 @@ function K() {
 let z = .2;
 
 function q(e) {
-  let t = (0, T.T)({
+  let t = (0, S.T)({
       quest: e
     }),
     n = {

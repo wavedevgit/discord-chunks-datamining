@@ -88,8 +88,8 @@ function g(e) {
     setDevice: y,
     getLabel: O,
     getLocation: v
-  } = m(t), [I, T] = i.useState(f), S = v(n[n.length - 1]), [A, C] = (0, l.Ls)(t, {
-    location: S
+  } = m(t), [I, S] = i.useState(f), T = v(n[n.length - 1]), [A, C] = (0, l.Ls)(t, {
+    location: T
   }), N = I ? A.concat(C) : A, {
     id: R,
     name: P
@@ -123,9 +123,9 @@ function g(e) {
     label: d.intl.string(d.t.E99UMh),
     dontCloseOnAction: true,
     action: () => {
-      T(true), s.default.track(c.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
+      S(true), s.default.track(c.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
         device_type: t,
-        location: S,
+        location: T,
         shown_device_count: A.length,
         hidden_device_count: C.length,
         location_stack: n

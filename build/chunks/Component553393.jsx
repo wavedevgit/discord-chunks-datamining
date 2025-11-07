@@ -130,7 +130,7 @@ function k(e) {
         questContentCTA: E.jZ.OPEN_DISCLOSURE,
         trackGuildAndChannelMetadata: true,
         sourceQuestContent: y.jn.MEMBERS_LIST
-      }), (0, S.openDisclosureModal)(G, {
+      }), (0, T.openDisclosureModal)(G, {
         content: y.jn.MEMBERS_LIST,
         ctaContent: E.jZ.OPEN_DISCLOSURE,
         sourceQuestContent: y.jn.MEMBERS_LIST
@@ -143,7 +143,7 @@ function k(e) {
         questContentCTA: E.jZ.LEARN_MORE,
         trackGuildAndChannelMetadata: true,
         sourceQuestContent: y.jn.MEMBERS_LIST
-      }), (0, S.navigateToQuestHome)({
+      }), (0, T.navigateToQuestHome)({
         fromContent: y.jn.MEMBERS_LIST,
         questId: G.id
       })
@@ -265,7 +265,7 @@ function k(e) {
               }),
               className: w.assetTile,
               src: (0, v.fh)(G, v.eC.GAME_TILE, $).url
-            }), "reward" === em.tileAssetType && (0, r.jsx)(T.Z, {
+            }), "reward" === em.tileAssetType && (0, r.jsx)(S.Z, {
               className: w.assetTile,
               quest: G,
               questContent: y.jn.MEMBERS_LIST,

@@ -73,15 +73,15 @@ function D(e) {
   return (0, r.jsxs)(c.Kqy, {
     gap: 20,
     children: [d(w), E.Z.isEnabled() ? null : (0, r.jsx)(c.Text, {
-      className: S.permissionWarning,
+      className: T.permissionWarning,
       color: "interactive-normal",
       variant: "text-sm/normal",
-      children: T.intl.format(T.t.stagfJ, {
+      children: S.intl.format(S.t.stagfJ, {
         onEnableClick: () => u.Z.enable(true)
       })
     }), y ? null : (0, r.jsx)(c.rsf, {
-      label: T.intl.string(T.t["3Ppr1h"]),
-      description: T.intl.string(T.t.WNbX4O),
+      label: S.intl.string(S.t["3Ppr1h"]),
+      description: S.intl.string(S.t.WNbX4O),
       checked: x,
       onChange: e => {
         m.qF.updateSetting(e), b.default.track(O.rMx.UPDATE_USER_SETTINGS_LOCAL, {
@@ -91,8 +91,8 @@ function D(e) {
     }), !t && (0, r.jsx)(h.F, {
       setting: v.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
       children: (0, r.jsx)(_.j, {
-        label: n ? true : T.intl.string(T.t.FsQ3OR),
-        helperText: !i && R() ? T.intl.format(T.t.aJYgRt, {
+        label: n ? true : S.intl.string(S.t.FsQ3OR),
+        helperText: !i && R() ? S.intl.format(S.t.aJYgRt, {
           onCameraSettingsClick: () => {
             null == C || C(), window.open(P(w)), b.default.track(O.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
               location_stack: N
@@ -107,7 +107,7 @@ function D(e) {
     }), (0, r.jsx)(h.F, {
       setting: v.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
       children: (0, r.jsx)(g.Z, {
-        className: S.spacingTop24,
+        className: T.spacingTop24,
         onLearnMore: a,
         selectedBackgroundOption: o,
         onSelectBackgroundOption: l,

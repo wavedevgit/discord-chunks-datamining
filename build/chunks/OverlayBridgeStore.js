@@ -5,7 +5,7 @@ let r;
 require.r(exports), require.d(exports, {
   OverlayPIDStatus: () => W,
   default: () => e1,
-  getOverlayURL: () => eT
+  getOverlayURL: () => eS
 }), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./853839.js"), require("./570086.js"), require("./479048.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./358797.js"), require("./415506.js"), require("./49124.js");
 var i, Chunk807864 = require("./807864.js"),
   Chunk442837 = require("./442837.js"),
@@ -228,11 +228,11 @@ async function eE(e) {
     if (k.ZP.supportsFeature(B.eRX.CREATE_HOST_ON_ATTACH))
       if (q.size > 0) {
         e_ = "reconcile.getOverlayURL";
-        let t = await eT();
+        let t = await eS();
         e_ = "reconcile.createHostProcess", e.createHostProcess(t, eC, eA)
       } else e_ = "reconcile.destroyHostProcess", e.destroyHostProcess(), eI((0, U.getPID)());
     else if (Q) {
-      let t = await eT();
+      let t = await eS();
       e.createHostProcess(t, eC, eA)
     } else e.destroyHostProcess(), eI((0, U.getPID)())
   } catch (t) {
@@ -301,7 +301,7 @@ async function eO(e) {
     el.verbose("updateIntendedOverlayPIDs: retrying failed overlay pid ".concat(n)), await r(n), i = true
   }
   for (let t of null != (n = e.added) ? n : []) {
-    let n = S.default.getTrackedGameByPid(t);
+    let n = T.default.getTrackedGameByPid(t);
     if (null == n) {
       el.error("updateIntendedOverlayPIDs: Tracked game not found for pid=".concat(t));
       continue
@@ -339,14 +339,14 @@ let ev = eh("updateIntendedOverlayPIDs", e => (el.info("updateIntendedOverlayPID
     C.Z.isOverlayV3EnabledForPID(e) || (0, U.setPID)(U.UNSET_PID)
   });
 
-function eT() {
+function eS() {
   return new Promise(e => {
     e0.addConditionalChangeListener(() => {
       if (null != r) return e(r), false
     })
   })
 }
-let eS = eh("setOverlayEnabled", async e => {
+let eT = eh("setOverlayEnabled", async e => {
   if (!(0, U.supportsLegacy)()) return;
   if (Q === e) return void el.verbose("setOverlayEnabled: no change", {
     newOverlayEnabled: e
@@ -403,7 +403,7 @@ function eP(e) {
     case B.BmY.CONNECT:
       let t = w.default.getToken();
       if (null == t) break;
-      (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), Z.bv), Promise.all([(0, T.Z)(t, e.pid), o.ZP.PersistedStore.getAllStates()]).then(t => {
+      (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), Z.bv), Promise.all([(0, S.Z)(t, e.pid), o.ZP.PersistedStore.getAllStates()]).then(t => {
         let [n, r] = t, {
           pid: i,
           token: a
@@ -482,7 +482,7 @@ function ek(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "9c7e3f0ca265e8089a3e0afe96dd28de6d4f3d9f"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "8c55567786a3de2aebe8f73ae4ff78059b3a0091"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {
@@ -533,7 +533,7 @@ function eH(e) {
   let {
     legacyEnabled: t
   } = e;
-  return eS(t), false
+  return eT(t), false
 }
 
 function eY(e) {
@@ -597,7 +597,7 @@ function eq(e) {
 }
 
 function eX() {
-  Chunk353926.Z.hasLoadedExperiments && !z && (z = true, eS(Chunk454991.v.legacyEnabled))
+  Chunk353926.Z.hasLoadedExperiments && !z && (z = true, eT(Chunk454991.v.legacyEnabled))
 }
 
 function eQ() {
@@ -616,7 +616,7 @@ class e$ extends(i = Chunk442837.ZP.Store) {
     return null != module && this.isInputLocked(module)
   }
   isInputLocked(e) {
-    return S.default.isOverlayOOPEnabledForPid(e) ? N.Z.isInputLocked(e) : !en.has(e)
+    return T.default.isOverlayOOPEnabledForPid(e) ? N.Z.isInputLocked(e) : !en.has(e)
   }
   DEV_isInputLockedV3(e) {
     return N.Z.isInputLocked(e)

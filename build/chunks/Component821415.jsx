@@ -1,7 +1,7 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 821415, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,21 +23,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk405143 = require("./405143.js");
 
-function O(e) {
+function x(e) {
   let t, {
       activity: n,
       channel: l,
       userId: a
     } = e,
     u = (0, d.IX)(n.application_id).data,
-    [p, f] = i.useState(false),
-    [m, g] = i.useState(0),
+    [p, f] = r.useState(false),
+    [m, g] = r.useState(0),
     b = (0, o.e7)([h.Z], () => h.Z.getChannelId() !== l.id);
-  async function O() {
+  async function x() {
     g(1);
     try {
       await c.Z.sendActivityInvite({
-        type: _.mFx.STREAM_REQUEST,
+        type: y.mFx.STREAM_REQUEST,
         channelId: l.id,
         activity: n,
         content: "<@".concat(a, ">"),
@@ -50,38 +50,38 @@ function O(e) {
     }
     g(2)
   }
-  if (b && (t = C.intl.string(y.default.qRXats)), n.type === _.IIU.PLAYING) {
+  if (b && (t = _.intl.string(C.default.qRXats)), n.type === y.IIU.PLAYING) {
     let e = null == u ? true : u.getIconURL(46);
-    return (0, r.jsxs)("div", {
+    return (0, i.jsxs)("div", {
       className: v.activityRow,
-      children: [(0, r.jsxs)("div", {
+      children: [(0, i.jsxs)("div", {
         className: v.activityRowContent,
-        children: [p || null == e ? (0, r.jsx)(s.IMN, {
+        children: [p || null == e ? (0, i.jsx)(s.IMN, {
           size: "custom",
           width: 46,
           height: 46
-        }) : (0, r.jsx)("img", {
+        }) : (0, i.jsx)("img", {
           src: e,
           alt: n.name,
           onError: () => f(true)
-        }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(s.Text, {
+        }), (0, i.jsxs)("div", {
+          children: [(0, i.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-tertiary",
-            children: C.intl.string(C.t.BMTj28)
-          }), (0, r.jsx)(s.Text, {
+            children: _.intl.string(_.t.BMTj28)
+          }), (0, i.jsx)(s.Text, {
             variant: "text-md/medium",
             children: n.name
           })]
         })]
-      }), (0, r.jsx)(s.Button, {
+      }), (0, i.jsx)(s.Button, {
         loading: 1 === m,
         disabled: b || 2 === m,
         fullWidth: true,
         size: "sm",
-        text: 2 === m ? C.intl.string(y.default["8HU1M2"]) : C.intl.string(y.default.DKHhec),
-        onClick: O
-      }), null != t && (0, r.jsx)(s.Text, {
+        text: 2 === m ? _.intl.string(C.default["8HU1M2"]) : _.intl.string(C.default.DKHhec),
+        onClick: x
+      }), null != t && (0, i.jsx)(s.Text, {
         className: v.disabledReason,
         variant: "text-xs/normal",
         color: "text-muted",
@@ -91,29 +91,29 @@ function O(e) {
   }
 }
 
-function x(e) {
+function O(e) {
   let {
     userId: t,
     channel: n
-  } = e, s = (0, o.e7)([m.default], () => m.default.getUser(t)), c = (0, b.Z)(t, n.guild_id), d = (0, g.Z)(t, n.id), h = i.useMemo(() => l.uniqWith(c, (e, t) => {
+  } = e, s = (0, o.e7)([m.default], () => m.default.getUser(t)), c = (0, b.Z)(t, n.guild_id), d = (0, g.Z)(t, n.id), h = r.useMemo(() => l.uniqWith(c, (e, t) => {
     if (e.application_id === t.application_id) returntrue;
     let n = f.Z.getGameByName(e.name),
-      r = f.Z.getGameByName(t.name);
-    return null != n && n === r || e.name === t.name
-  }), [c]), _ = null == s || !d || 0 === h.length;
+      i = f.Z.getGameByName(t.name);
+    return null != n && n === i || e.name === t.name
+  }), [c]), y = null == s || !d || 0 === h.length;
   return ((0, u.Z)({
     type: a.ImpressionTypes.POPOUT,
     name: a.ImpressionNames.VOICE_USER_ACTIVITY_POPOUT,
     properties: {}
   }, {
-    disableTrack: _
-  }), _) ? null : (0, r.jsx)(p.Z.Provider, {
+    disableTrack: y
+  }), y) ? null : (0, i.jsx)(p.Z.Provider, {
     value: n.guild_id,
-    children: (0, r.jsx)("div", {
+    children: (0, i.jsx)("div", {
       className: v.root,
-      children: (0, r.jsx)("div", {
+      children: (0, i.jsx)("div", {
         className: v.activityList,
-        children: h.map(e => (0, r.jsx)(O, {
+        children: h.map(e => (0, i.jsx)(x, {
           activity: e,
           channel: n,
           userId: t

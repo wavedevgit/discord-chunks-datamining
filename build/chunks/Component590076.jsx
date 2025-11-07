@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 590076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -21,14 +21,14 @@ function h(e) {
     channelId: n,
     streamerId: l,
     stream: u
-  } = e, h = i.useRef(null), m = (0, o.e7)([c.default], () => c.default.getCurrentUser());
+  } = e, h = r.useRef(null), m = (0, o.e7)([c.default], () => c.default.getCurrentUser());
   a()(null != m, "user cannot be null"), (0, p.Z)(h, m, l, n);
   let {
     handleClick: g,
     handleMouseDown: b,
-    handleMouseEnter: _,
-    handleMouseMove: y,
-    handleMouseUp: C
+    handleMouseEnter: y,
+    handleMouseMove: C,
+    handleMouseUp: _
   } = (0, d.Z)({
     user: m,
     channelId: n,
@@ -37,14 +37,14 @@ function h(e) {
     focused: t,
     canvas: h.current
   });
-  return (0, r.jsx)(s.Z, {
-    children: (0, r.jsx)("canvas", {
+  return (0, i.jsx)(s.Z, {
+    children: (0, i.jsx)("canvas", {
       ref: h,
       onClick: g,
       onMouseDown: b,
-      onMouseEnter: _,
-      onMouseMove: y,
-      onMouseUp: C,
+      onMouseEnter: y,
+      onMouseMove: C,
+      onMouseUp: _,
       className: f.sharedCanvas
     })
   })
@@ -59,20 +59,20 @@ function m(e) {
   }, {
     autoTrackExposure: true
   });
-  return !t || e.hasScreenMessage ? null : (0, r.jsx)(h, function(e) {
+  return !t || e.hasScreenMessage ? null : (0, i.jsx)(h, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        i = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      }))), i.forEach(function(t) {
+        var i;
+        i = n[t], t in e ? Object.defineProperty(e, t, {
+          value: i,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[t] = i
       })
     }
     return e

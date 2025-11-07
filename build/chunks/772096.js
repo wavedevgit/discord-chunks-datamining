@@ -76,8 +76,8 @@ let y = ["http:", "https:", "discord:", "tel:", "sms:", "mailto:"],
   O = [Chunk172244.b.TEXT, Chunk172244.b.UNDERLINE, Chunk172244.b.STRONG, Chunk172244.b.ITALICS, Chunk172244.b.STRIKETHROUGH, Chunk172244.b.INLINE_CODE, Chunk172244.b.SPOILER, Chunk172244.b.LINE_BREAK, Chunk172244.b.TIMESTAMP],
   v = [...O, Chunk172244.b.EMOJI, Chunk172244.b.CUSTOM_EMOJI],
   I = [Chunk172244.b.LIST, Chunk172244.b.HEADING, Chunk172244.b.BLOCK_QUOTE, Chunk172244.b.SUBTEXT],
-  T = [Chunk172244.b.TEXT],
-  S = [Chunk172244.b.UNDERLINE, Chunk172244.b.STRONG, Chunk172244.b.ITALICS, Chunk172244.b.STRIKETHROUGH, Chunk172244.b.INLINE_CODE, Chunk172244.b.SPOILER, Chunk172244.b.LINE_BREAK, Chunk172244.b.TIMESTAMP, Chunk172244.b.EMOJI, Chunk172244.b.CUSTOM_EMOJI, Chunk172244.b.LIST, Chunk172244.b.HEADING, Chunk172244.b.BLOCK_QUOTE, Chunk172244.b.SUBTEXT];
+  S = [Chunk172244.b.TEXT],
+  T = [Chunk172244.b.UNDERLINE, Chunk172244.b.STRONG, Chunk172244.b.ITALICS, Chunk172244.b.STRIKETHROUGH, Chunk172244.b.INLINE_CODE, Chunk172244.b.SPOILER, Chunk172244.b.LINE_BREAK, Chunk172244.b.TIMESTAMP, Chunk172244.b.EMOJI, Chunk172244.b.CUSTOM_EMOJI, Chunk172244.b.LIST, Chunk172244.b.HEADING, Chunk172244.b.BLOCK_QUOTE, Chunk172244.b.SUBTEXT];
 
 function A(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [];
@@ -184,7 +184,7 @@ let P = g(h({}, l().defaultRules.link), {
       }),
       M = n.allowEmojiLinks ? v : O,
       j = [...M, ...I],
-      k = [...T, ...S],
+      k = [...S, ...T],
       U = A(t(E, L), j, [f.b.EMOJI]),
       G = A(t(y, L), k);
     if (null == U || null == G || 0 === C(U).trim().length) return u();

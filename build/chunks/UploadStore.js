@@ -97,18 +97,18 @@ function I(e) {
     channelId: t,
     file: n
   } = e;
-  S(t, n)
+  T(t, n)
 }
 
-function T(e) {
+function S(e) {
   let {
     channelId: t,
     file: n
   } = e;
-  S(t, n)
+  T(t, n)
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = f[e];
   if (null == n) returnfalse;
   f[e] = n.map(e => e.id === t.id ? l({}, e, t) : e);
@@ -161,7 +161,7 @@ function P(e) {
     var i;
     null != (i = r.nonce) || r.id
   }
-  S(t, n)
+  T(t, n)
 }
 
 function w(e) {
@@ -194,7 +194,7 @@ let x = new D(Chunk570140.Z, {
   CONNECTION_OPEN: y,
   LOGOUT: O,
   UPLOAD_START: v,
-  UPLOAD_COMPRESSION_PROGRESS: T,
+  UPLOAD_COMPRESSION_PROGRESS: S,
   UPLOAD_PROGRESS: I,
   UPLOAD_COMPLETE: A,
   UPLOAD_FAIL: C,

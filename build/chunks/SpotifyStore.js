@@ -257,7 +257,7 @@ function eb(e, t, n) {
     startTime: f
   };
   let g = "presence change";
-  n && (g = "started", S.default.track(w.rMx.SPOTIFY_LISTEN_ALONG_STARTED, {
+  n && (g = "started", T.default.track(w.rMx.SPOTIFY_LISTEN_ALONG_STARTED, {
     party_id: u.id,
     other_user_id: e
   })), $.info("Listen along ".concat(g, ": ").concat(s.accountId, " to ").concat(e, " playing ").concat(c, " on ").concat(l.name))
@@ -319,7 +319,7 @@ function eI(e) {
   eg(t)
 }
 
-function eT(e) {
+function eS(e) {
   let {
     accountId: t,
     isPlaying: n,
@@ -360,7 +360,7 @@ function eT(e) {
     type: "SPOTIFY_NEW_TRACK",
     track: o,
     connectionId: t
-  }), S.default.track(w.rMx.ACTIVITY_UPDATED, {
+  }), T.default.track(w.rMx.ACTIVITY_UPDATED, {
     party_platform: w.ABu.SPOTIFY,
     track_id: o.id,
     has_images: true,
@@ -372,7 +372,7 @@ function eT(e) {
   }))
 }
 
-function eS(e) {
+function eT(e) {
   let {
     id: t
   } = e;
@@ -453,7 +453,7 @@ function ew() {
 
 function eD(e) {
   if (e === b.default.getId()) {
-    let t = T.Z.isCurrentClientInVoiceChannel(),
+    let t = S.Z.isCurrentClientInVoiceChannel(),
       n = (0, p.O)({
         userId: e,
         checkSoundSharing: true,
@@ -513,45 +513,45 @@ function ek(e, t, n) {
     progress_ms: O,
     is_playing: v,
     repeat_state: I,
-    item: T,
-    context: S
+    item: S,
+    context: T
   } = n;
-  if (null != T && T.type === P.Hw.TRACK) {
-    let e = T.id;
-    null != T.linked_from && null != T.linked_from.id && (e = T.linked_from.id), E = {
+  if (null != S && S.type === P.Hw.TRACK) {
+    let e = S.id;
+    null != S.linked_from && null != S.linked_from.id && (e = S.linked_from.id), E = {
       id: e,
-      name: T.name,
-      duration: T.duration_ms,
+      name: S.name,
+      duration: S.duration_ms,
       type: P.Hw.TRACK,
       album: {
-        id: null != (s = null == (r = T.album) ? true : r.id) ? s : "",
-        name: null != (l = null == (i = T.album) ? true : i.name) ? l : "",
-        image: null == (a = T.album) ? true : a.images[0],
-        type: null != (c = null == (o = T.album) ? true : o.type) ? c : P.Hw.ALBUM
+        id: null != (s = null == (r = S.album) ? true : r.id) ? s : "",
+        name: null != (l = null == (i = S.album) ? true : i.name) ? l : "",
+        image: null == (a = S.album) ? true : a.images[0],
+        type: null != (c = null == (o = S.album) ? true : o.type) ? c : P.Hw.ALBUM
       },
-      artists: Array.isArray(T.artists) ? T.artists.filter(e => (0, N.lm)(e.id) && (0, N.lm)(e.name)) : [],
-      isLocal: T.is_local || false
+      artists: Array.isArray(S.artists) ? S.artists.filter(e => (0, N.lm)(e.id) && (0, N.lm)(e.name)) : [],
+      isLocal: S.is_local || false
     }
-  } else null != T && T.type === P.Hw.EPISODE && (E = {
-    id: T.id,
-    name: T.name,
-    duration: T.duration_ms,
+  } else null != S && S.type === P.Hw.EPISODE && (E = {
+    id: S.id,
+    name: S.name,
+    duration: S.duration_ms,
     type: P.Hw.EPISODE,
     album: {
-      id: null != (h = null == (u = T.show) ? true : u.id) ? h : "",
-      name: null != (m = null == (d = T.show) ? true : d.name) ? m : "",
-      image: null == (f = T.show) ? true : f.images[0],
-      type: null != (g = null == (p = T.album) ? true : p.type) ? g : P.Hw.SHOW
+      id: null != (h = null == (u = S.show) ? true : u.id) ? h : "",
+      name: null != (m = null == (d = S.show) ? true : d.name) ? m : "",
+      image: null == (f = S.show) ? true : f.images[0],
+      type: null != (g = null == (p = S.album) ? true : p.type) ? g : P.Hw.SHOW
     },
     artists: [],
     isLocal: false
   });
   if (null != y && true !== y.is_active && (y = M(x({}, y), {
       is_active: true
-    })), null != S && [P.Hw.PLAYLIST, P.Hw.ALBUM].includes(S.type)) {
+    })), null != T && [P.Hw.PLAYLIST, P.Hw.ALBUM].includes(T.type)) {
     let n = eB.getPlayerState(e);
-    b = null != n && null != n.context && n.context.uri === S.uri ? Promise.resolve(n.context) : S.type === P.Hw.ALBUM ? Promise.resolve(S) : R.rC.get(e, t, {
-      url: S.href
+    b = null != n && null != n.context && n.context.uri === T.uri ? Promise.resolve(n.context) : T.type === P.Hw.ALBUM ? Promise.resolve(T) : R.rC.get(e, t, {
+      url: T.href
     }).then(e => {
       let {
         body: t
@@ -698,8 +698,8 @@ let eB = new eG(Chunk570140.Z, {
     SPOTIFY_ACCOUNT_ACCESS_TOKEN: ev,
     SPOTIFY_ACCOUNT_ACCESS_TOKEN_REVOKE: eI,
     SPOTIFY_PROFILE_UPDATE: eM,
-    SPOTIFY_PLAYER_STATE: eT,
-    SPOTIFY_PLAYER_PLAY: eS,
+    SPOTIFY_PLAYER_STATE: eS,
+    SPOTIFY_PLAYER_PLAY: eT,
     ACTIVITY_PLAY: eN,
     ACTIVITY_SYNC: eR,
     ACTIVITY_SYNC_STOP: ey,

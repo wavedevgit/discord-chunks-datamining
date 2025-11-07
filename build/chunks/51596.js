@@ -83,14 +83,14 @@ function x(e) {
 
 function L(e) {
   let t;
-  if (T.Z.isOpen()) return;
+  if (S.Z.isOpen()) return;
   let n = y.Z.getGuildId(),
     r = b.Z.getChannelId(n);
   if (null != r) {
     let e = g.Z.getChannel(r);
     t = null != e ? e.type : null
   }
-  O.default.track(S.rMx.QUICKSWITCHER_OPENED, {
+  O.default.track(T.rMx.QUICKSWITCHER_OPENED, {
     source: e,
     current_guild_id: n,
     current_channel_id: r,
@@ -104,7 +104,7 @@ function M(e, t) {
     queryMode: r,
     query: i,
     maxQueryLength: a
-  } = T.Z.getProps(), o = y.Z.getGuildId(), s = b.Z.getChannelId(o), l = n[(0, u.gJ)(u.a8.DOWN, false, n)], c = I.Z.isEmail(i), d = I.Z.isPhoneNumber(i), f = I.Z.isUserTagLike(i), _ = null != s && (0, A.AB)(s), p = e => null == e ? null : e.type === u.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
+  } = S.Z.getProps(), o = y.Z.getGuildId(), s = b.Z.getChannelId(o), l = n[(0, u.gJ)(u.a8.DOWN, false, n)], c = I.Z.isEmail(i), d = I.Z.isPhoneNumber(i), f = I.Z.isUserTagLike(i), _ = null != s && (0, A.AB)(s), p = e => null == e ? null : e.type === u.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
     current_channel_id: _ ? true : s,
     current_channel_static_route: _ ? s : true,
     current_guild_id: o,
@@ -117,12 +117,12 @@ function M(e, t) {
     query: c || d || f ? null : i,
     top_result_type: p(l),
     top_result_score: null != l ? l.score : null,
-    num_results_total: T.Z.getResultTotals(),
-    num_results_users: T.Z.getResultTotals(u.h8.USER),
-    num_results_text_channels: T.Z.getResultTotals(u.h8.TEXT_CHANNEL),
-    num_results_voice_channels: T.Z.getResultTotals(u.h8.VOICE_CHANNEL),
-    num_results_guilds: T.Z.getResultTotals(u.h8.GUILD),
-    num_results_group_dms: T.Z.getResultTotals(u.h8.GROUP_DM)
+    num_results_total: S.Z.getResultTotals(),
+    num_results_users: S.Z.getResultTotals(u.h8.USER),
+    num_results_text_channels: S.Z.getResultTotals(u.h8.TEXT_CHANNEL),
+    num_results_voice_channels: S.Z.getResultTotals(u.h8.VOICE_CHANNEL),
+    num_results_guilds: S.Z.getResultTotals(u.h8.GUILD),
+    num_results_group_dms: S.Z.getResultTotals(u.h8.GROUP_DM)
   };
   if (null != s) {
     let e = g.Z.getChannel(s);
@@ -190,12 +190,12 @@ function Z(e) {
 
 function F(e) {
   let t, m = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  j(), (0, r.pTH)(), M(S.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
+  j(), (0, r.pTH)(), M(T.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
   let {
     type: b,
     record: y
   } = e, O = {
-    page: S.ZY5.QUICK_SWITCHER
+    page: T.ZY5.QUICK_SWITCHER
   };
   switch (b) {
     case u.h8.GUILD:
@@ -223,19 +223,19 @@ function F(e) {
       a.Z.openPrivateChannel({
         recipientIds: [y.id],
         location: "Quickswitcher"
-      }), s.Z.channelListScrollTo(S.ME, g.Z.getDMFromUserId(y.id));
+      }), s.Z.channelListScrollTo(T.ME, g.Z.getDMFromUserId(y.id));
       break;
     case u.h8.GROUP_DM:
       (0, _.Kh)(y.id, {
         navigationReplace: true
-      }), s.Z.channelListScrollTo(S.ME, y.id);
+      }), s.Z.channelListScrollTo(T.ME, y.id);
       break;
     case u.h8.APPLICATION:
       let I = E.Z.getActiveLibraryApplication(y.id);
       R(y.id, I, {
         analyticsParams: {
-          source: S.Sbl.QUICK_SWITCHER,
-          location: S.Sbl.QUICK_SWITCHER
+          source: T.Sbl.QUICK_SWITCHER,
+          location: T.Sbl.QUICK_SWITCHER
         }
       });
       break;
@@ -259,14 +259,14 @@ function F(e) {
       } else if (e.record.type === d.Ky.PLAYGROUND) {
         if (!(0, v.vP)()) return;
         {
-          var T;
+          var S;
           let {
             PlaygroundStore: t
-          } = n(156142), r = null != (T = e.record.collectionId) ? T : null;
+          } = n(156142), r = null != (S = e.record.collectionId) ? S : null;
           t.setState({
             selectedCollection: r,
             selectedStory: null
-          }), (0, l.jN)(S.S9g.COMPONENT_PLAYGROUND)
+          }), (0, l.jN)(T.S9g.COMPONENT_PLAYGROUND)
         }
       } else(0, f.Z)(y.path, {
         navigationReplace: true

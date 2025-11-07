@@ -131,13 +131,13 @@ function w(e) {
       guildBoostProps: r,
       type: i
     } = eO.current;
-    eh ? h.default.track(T.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
+    eh ? h.default.track(S.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
       type: "".concat(i, " - Tier ").concat(null == r ? true : r.boostedGuildTier),
       guild_id: null == r ? true : r.guild.id,
       channel_id: null == r ? true : r.channelId,
       location: e,
       location_stack: t
-    }) : h.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
+    }) : h.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
       type: i,
       source: n,
       location: e,
@@ -147,17 +147,17 @@ function w(e) {
   }, [eh, et, en]);
   let ev = (0, s.e7)([g.Z], () => g.Z.affinities),
     eI = ev.length > 1 && P(w),
-    eT = (0, s.e7)([g.Z], () => g.Z.hasFetched);
+    eS = (0, s.e7)([g.Z], () => g.Z.hasFetched);
   i.useEffect(() => {
-    eT || u.MH()
-  }, [eT]);
-  let eS = () => {
+    eS || u.MH()
+  }, [eS]);
+  let eT = () => {
       if (eh) return (0, r.jsx)(p.Z, {
         analyticsLocation: L,
         guild: D.guild,
         onClose: Y
       });
-      let e = ea ? S.intl.string(S.t.pj0XBN) : true;
+      let e = ea ? T.intl.string(T.t.pj0XBN) : true;
       if (eE)
         if (null != em) {
           var t, n;
@@ -165,7 +165,7 @@ function w(e) {
             intervalType: null == em || null == (t = em.subscription_trial) ? true : t.interval,
             intervalCount: null == em || null == (n = em.subscription_trial) ? true : n.interval_count
           })
-        } else null != eg && (e = S.intl.formatToPlainString(S.t.bkQ4bH, {
+        } else null != eg && (e = T.intl.formatToPlainString(T.t.bkQ4bH, {
           percent: eg.discount.amount
         }));
       return (0, r.jsx)(y.Z, {
@@ -257,11 +257,11 @@ function w(e) {
           color: ea ? l.zx.Colors.CUSTOM : l.zx.Colors.PRIMARY,
           look: l.zx.Looks.LINK,
           children: q
-        }) : null, eS()]
+        }) : null, eT()]
       }), !er && !ea && (0, r.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
-        text: null != ei ? ei : S.intl.string(S.t["13/7kX"]),
+        text: null != ei ? ei : T.intl.string(T.t["13/7kX"]),
         onClick: Y
       })]
     }), ea ? (0, r.jsx)(c.olH, {

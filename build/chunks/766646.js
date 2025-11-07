@@ -25,8 +25,8 @@ var Chunk512722 = require("./512722.js"),
   Chunk70722 = require("./70722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
-let T = 3e5,
-  S = 6e4,
+let S = 3e5,
+  T = 6e4,
   A = {},
   C = new Chunk846519.V7,
   N = false,
@@ -89,10 +89,10 @@ async function j(e, t) {
       rejectWithError: false
     })
   } catch (t) {
-    new p.Z("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", t), r === e && C.start(S, n);
+    new p.Z("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", t), r === e && C.start(T, n);
     return
   }
-  r === e && (N ? C.start(S, n) : C.start(T, n))
+  r === e && (N ? C.start(T, n) : C.start(S, n))
 }
 
 function k(e, t) {

@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 389303, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -11,13 +11,13 @@ var Chunk314897 = require("./314897.js"),
   Chunk85243 = require("./85243.js");
 
 function c(e) {
-  if (!e.isGuildVoice() || o.ZP.getGuildScheduledEventsByIndex(o.bN.CHANNEL_EVENT_ACTIVE(e.id)).length < 1 || !i.Z.can(s.AN, e)) returnfalse;
+  if (!e.isGuildVoice() || o.ZP.getGuildScheduledEventsByIndex(o.bN.CHANNEL_EVENT_ACTIVE(e.id)).length < 1 || !r.Z.can(s.AN, e)) returnfalse;
   let t = new Set(l.ZP.getVoiceStatesForChannel(e).map(e => e.user.id)),
-    n = r.default.getId();
-  for (let r of t)
-    if (r !== n && a.BT({
+    n = i.default.getId();
+  for (let i of t)
+    if (i !== n && a.BT({
         permission: s.AN,
-        user: r,
+        user: i,
         context: e
       })) returnfalse;
   returntrue

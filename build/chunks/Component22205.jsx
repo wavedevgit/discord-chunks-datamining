@@ -79,7 +79,7 @@ function x(e) {
     L = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
-    M = (0, d.e7)([T.Z], () => T.Z.getFocusedRunningGame()),
+    M = (0, d.e7)([S.Z], () => S.Z.getFocusedRunningGame()),
     j = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
@@ -105,7 +105,7 @@ function x(e) {
     }) : null,
     k = g ? null : N.intl.string(N.t.oEJEFq),
     U = null != (t = null == I ? true : I.isStaff()) && t || null != (n = null == I ? true : I.isStaffPersonal()) && n;
-  return (0, r.jsx)(S.Y, {
+  return (0, r.jsx)(T.Y, {
     title: N.intl.string(N.t.U38qZj),
     body: j,
     hint: U ? k : true,
@@ -138,7 +138,7 @@ class L extends Chunk647438.PureComponent {
       error: e,
       info: t
     });
-    let r = T.Z.getTargetPID();
+    let r = S.Z.getTargetPID();
     p.Z.setOverlayCrashed(r, e), p.Z.setInputLocked(true, r);
     let i = (0, O.V6)(e, v.gl.OutOfProcess, {
       extra: {

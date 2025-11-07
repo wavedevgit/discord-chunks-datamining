@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 563218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -29,35 +29,35 @@ function b(e) {
       style: o
     } = e,
     b = (0, l.e7)([s.Z], () => s.Z.getWindow(m.KJ3.CHANNEL_CALL_POPOUT)),
-    _ = (0, f.Z)(),
-    y = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
-  if (null == _ || (0, p.Z)((0, d.p)(_.location)) || y !== h.Ez.PANEL) {
-    var C;
-    t = null != (C = null == b ? true : b.window) ? C : window
+    y = (0, f.Z)(),
+    C = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
+  if (null == y || (0, p.Z)((0, d.p)(y.location)) || C !== h.Ez.PANEL) {
+    var _;
+    t = null != (_ = null == b ? true : b.window) ? _ : window
   } else t = window;
-  let v = i.useRef(null),
-    O = i.useMemo(() => {
+  let v = r.useRef(null),
+    x = r.useMemo(() => {
       let e = null;
       return () => {
         null == e && (e = t.requestAnimationFrame(() => {
-          var t, r;
-          g(n, null != (r = null == (t = v.current) ? true : t.getBoundingClientRect()) ? r : null), e = null
+          var t, i;
+          g(n, null != (i = null == (t = v.current) ? true : t.getBoundingClientRect()) ? i : null), e = null
         }))
       }
     }, [n, t]);
-  return i.useEffect(() => (t.addEventListener("resize", O), c.S.subscribe(m.CkL.REMEASURE_TARGET, O), () => {
-    t.removeEventListener("resize", O), c.S.unsubscribe(m.CkL.REMEASURE_TARGET, O)
-  }), [O, t]), i.useLayoutEffect(() => {
+  return r.useEffect(() => (t.addEventListener("resize", x), c.S.subscribe(m.CkL.REMEASURE_TARGET, x), () => {
+    t.removeEventListener("resize", x), c.S.unsubscribe(m.CkL.REMEASURE_TARGET, x)
+  }), [x, t]), r.useLayoutEffect(() => {
     let e = v.current;
     if (null == e) return;
     let t = e.ownerDocument.defaultView;
     if (null == t) return;
-    O();
-    let r = new t.ResizeObserver(O);
-    return r.observe(e), () => {
-      r.disconnect(), g(n, null)
+    x();
+    let i = new t.ResizeObserver(x);
+    return i.observe(e), () => {
+      i.disconnect(), g(n, null)
     }
-  }, [n, O]), (0, r.jsx)("div", {
+  }, [n, x]), (0, i.jsx)("div", {
     ref: v,
     style: o,
     className: a

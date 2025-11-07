@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 127608, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -11,17 +11,17 @@ var Chunk481060 = require("./481060.js"),
 function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
@@ -33,7 +33,7 @@ function o() {
       let {
         default: e
       } = await Promise.all([require.e("32996"), require.e("74023")]).then(require.bind(require, 431583));
-      return t => (0, r.jsx)(e, a({
+      return t => (0, i.jsx)(e, a({
         source: "Screenshare Unavailable"
       }, t))
     })
@@ -42,22 +42,22 @@ function o() {
       default: t
     } = await require.e("67753").then(require.bind(require, 873809));
     return n => {
-      var i, o;
-      return (0, r.jsx)(t, (i = a({}, n), o = o = {
+      var r, o;
+      return (0, i.jsx)(t, (r = a({}, n), o = o = {
         header: l.intl.string(l.t.GFr0GR),
         body: l.intl.string(l.t.QSk6E8),
         confirmText: l.intl.string(l.t["BK8LK+"]),
         onConfirm: e
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
         }
         return n
       })(Object(o)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
-      }), i))
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
+      }), r))
     }
   })
 }

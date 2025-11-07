@@ -26,7 +26,7 @@ var r, Chunk348327 = require("./348327.js"),
   Chunk88751 = require("./88751.js"),
   Chunk427679 = require("./427679.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -241,7 +241,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return null != (r = null == (n = x(e)) ? true : n.getParticipant(t)) ? r : null
   }
 }
-S(et, "displayName", "StageChannelParticipantStore");
+T(et, "displayName", "StageChannelParticipantStore");
 let en = new et(Chunk570140.Z, {
   CONNECTION_OPEN: Z,
   OVERLAY_INITIALIZE: Z,

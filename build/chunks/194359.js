@@ -2,7 +2,7 @@
 /** chunk id: 194359, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js"), require("./35282.js");
 var Chunk544891 = require("./544891.js"),
   Chunk780384 = require("./780384.js"),
@@ -91,7 +91,7 @@ function I(e, t, n) {
   }
   throw e
 }
-let T = {
+let S = {
     sendRequest(e) {
       let {
         discordTag: t,
@@ -139,25 +139,25 @@ let T = {
       function t() {
         i.uv.announce(E.intl.string(E.t["3goNa5"]))
       }
-      return T.addRelationship(e, t)
+      return S.addRelationship(e, t)
     },
     cancelFriendRequest(e, t) {
       function n() {
         i.uv.announce(E.intl.string(E.t.pLUaxR))
       }
-      return T.removeRelationship(e, t, n)
+      return S.removeRelationship(e, t, n)
     },
     removeFriend(e, t) {
       function n() {
         i.uv.announce(E.intl.string(E.t.vGSLa2))
       }
-      T.removeRelationship(e, t, n)
+      S.removeRelationship(e, t, n)
     },
     blockUser(e, t) {
       function n() {
         i.uv.announce(E.intl.string(E.t.mU0Vrp))
       }
-      return T.addRelationship({
+      return S.addRelationship({
         userId: e,
         context: t,
         type: m.OGo.BLOCKED
@@ -167,7 +167,7 @@ let T = {
       function n() {
         i.uv.announce(E.intl.string(E.t["9t1au7"]))
       }
-      return T.removeRelationship(e, t, n)
+      return S.removeRelationship(e, t, n)
     },
     removeRelationship: (e, t, n) => r.tn.del({
       url: m.ANM.USER_RELATIONSHIP(e),
@@ -257,4 +257,4 @@ let T = {
       c.Z.showFailedToast(), i.uv.announce(E.intl.string(E.t.n6Jo3E))
     })
   },
-  S = T
+  T = S

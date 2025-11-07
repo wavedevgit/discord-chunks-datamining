@@ -206,9 +206,9 @@ function k(e) {
       color: "currentColor",
       className: o()(C.icon, N)
     })
-  }, "activity")), P === S.YE.XBOX || w === T.wR.XBOX ? K.push((0, r.jsx)(y.Z, {
+  }, "activity")), P === T.YE.XBOX || w === S.wR.XBOX ? K.push((0, r.jsx)(y.Z, {
     className: o()(C.icon, N)
-  }, "xbox")) : (P === S.YE.PLAYSTATION || w === T.wR.PLAYSTATION) && K.push((0, r.jsx)(b.Z, {
+  }, "xbox")) : (P === T.YE.PLAYSTATION || w === S.wR.PLAYSTATION) && K.push((0, r.jsx)(b.Z, {
     className: o()(C.icon, N)
   }, "playstation")), v && K.push((0, r.jsx)(l.u, {
     text: A.intl.string(A.t["JH1SJ+"]),
@@ -266,8 +266,8 @@ let U = function(e) {
     onDoubleClick: b,
     onContextMenu: y,
     onMouseLeave: O,
-    onMouseDown: T,
-    priority: S,
+    onMouseDown: S,
+    priority: T,
     speaking: N,
     latched: P,
     collapsed: x,
@@ -296,11 +296,11 @@ let U = function(e) {
   }, Q = e => {
     null == O || O(e, Y)
   }, J = e => {
-    null == T || T(e, Y)
+    null == S || S(e, Y)
   };
 
   function $() {
-    return S && !x ? (0, r.jsx)(l.u, {
+    return T && !x ? (0, r.jsx)(l.u, {
       text: A.intl.string(A.t.BVK71i),
       children: (0, r.jsx)("div", {
         className: o()(C.iconPriortySpeaker, {

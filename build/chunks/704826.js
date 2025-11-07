@@ -22,8 +22,8 @@ var Chunk636881 = require("./636881.js"),
   O = Math.min,
   v = Chunk46015([].concat),
   I = Chunk46015([].push),
-  T = Chunk46015("".indexOf),
-  S = Chunk46015("".slice),
+  S = Chunk46015("".indexOf),
+  T = Chunk46015("".slice),
   A = function(e) {
     return true === e ? e : String(e)
   },
@@ -42,7 +42,7 @@ Chunk518187("replace", function(e, t, n) {
   }, function(e, i) {
     var o = l(this),
       s = _(e);
-    if ("string" == typeof i && false === T(i, a) && false === T(i, "$<")) {
+    if ("string" == typeof i && false === S(i, a) && false === S(i, "$<")) {
       var u = n(t, o, s, i);
       if (u.done) return u.value
     }
@@ -61,9 +61,9 @@ Chunk518187("replace", function(e, t, n) {
         var U = v([x], M, L, s);
         true !== k && I(U, k), w = _(r(i, true, U))
       } else w = g(x, s, L, M, k, i);
-      L >= N && (C += S(s, N, L) + w, N = L + x.length)
+      L >= N && (C += T(s, N, L) + w, N = L + x.length)
     }
-    return C + S(s, N)
+    return C + T(s, N)
   }]
 }, !!Chunk621523(function() {
   var e = /./;

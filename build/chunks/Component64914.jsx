@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -82,14 +82,14 @@ function P(e) {
 function w() {
   let [e] = Chunk647438.useState(() => R()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), f = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), h = Chunk647438.useCallback(e => {
     g.bm.updateSetting(!e)
-  }, []), T = Chunk647438.useCallback(e => {
-    e ? (0, s.h7j)(e => (0, r.jsx)(b.Z, S({}, e))) : l.mc()
+  }, []), S = Chunk647438.useCallback(e => {
+    e ? (0, s.h7j)(e => (0, r.jsx)(b.Z, T({}, e))) : l.mc()
   }, []), A = Chunk647438.useCallback(e => {
     (0, u.BV)(e, c.Z.USER_SETTINGS)
   }, []), N = Chunk647438.useCallback(e => {
     (0, s.h7j)(t => {
       let n = e ? I.intl.format(I.t.LYXRxL, {}) : I.intl.format(I.t.uDP3Kz, {});
-      return (0, r.jsx)(s.ConfirmModal, C(S({
+      return (0, r.jsx)(s.ConfirmModal, C(T({
         header: I.intl.string(I.t.aqpAvn),
         confirmText: I.intl.string(I.t.vT7ckk),
         cancelText: I.intl.string(I.t["ETE/oC"]),
@@ -154,7 +154,7 @@ function w() {
           label: Chunk388032.intl.string(Chunk388032.t.erOqlh),
           description: Chunk388032.intl.string(Chunk388032.t["52hMnD"]),
           checked: null != Chunk433517,
-          onChange: T
+          onChange: S
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
       }), (0, Chunk951288.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN,

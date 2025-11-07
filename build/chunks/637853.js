@@ -2,7 +2,7 @@
 /** chunk id: 637853, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ee: () => S,
+  Ee: () => T,
   L6: () => M,
   N4: () => U,
   O5: () => I,
@@ -65,7 +65,7 @@ function I(e, t) {
   return !(null != e && e.features.has(g.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && e.features.has(g.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && null != t
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let r = new Set;
   e.forEach(e => {
     e.options.forEach(e => {
@@ -79,8 +79,8 @@ function T(e, t, n) {
   return [i.filter(e => r.has(e.id) || null != e.parent_id && r.has(e.parent_id)), i.filter(e => !r.has(e.id) && !(null != e.parent_id && r.has(e.parent_id)))]
 }
 
-function S(e, t, n) {
-  return T(t, n, l.ZP.getChannels(e)[l.sH].map(e => {
+function T(e, t, n) {
+  return S(t, n, l.ZP.getChannels(e)[l.sH].map(e => {
     let {
       channel: t
     } = e;
@@ -89,7 +89,7 @@ function S(e, t, n) {
 }
 
 function A(e, t, n) {
-  return T(t, n, (0, r.e7)([l.ZP], () => l.ZP.getChannels(e))[l.sH].map(e => {
+  return S(t, n, (0, r.e7)([l.ZP], () => l.ZP.getChannels(e))[l.sH].map(e => {
     let {
       channel: t
     } = e;

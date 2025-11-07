@@ -1,6 +1,9 @@
-/** Chunk was on 35755 **/
-/** chunk id: 754738, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 754738, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  b: () => l
+  b: () => r
 });
-var i, l = ((i = {})[i.APPENDS_REMAINING_ACTIVITIES = 1] = "APPENDS_REMAINING_ACTIVITIES", i[i.DEFAULT = 0] = "DEFAULT", i)
+var r = function(e) {
+  return e[e.APPENDS_REMAINING_ACTIVITIES = 1] = "APPENDS_REMAINING_ACTIVITIES", e[e.DEFAULT = 0] = "DEFAULT", e
+}({})

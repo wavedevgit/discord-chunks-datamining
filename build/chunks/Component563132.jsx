@@ -94,7 +94,7 @@ let [Q, J, $] = (0, Chunk975104.Z)();
 function ee(e) {
   var t, n, o;
   let {
-    loadId: S,
+    loadId: T,
     activeSubscription: K,
     stepConfigs: q,
     breadcrumbs: J = [],
@@ -122,8 +122,8 @@ function ee(e) {
     hasFetchedSubscriptionPlans: eO,
     priceOptions: ev,
     setCurrency: eI,
-    currencyLoading: eT,
-    currencies: eS
+    currencyLoading: eS,
+    currencies: eT
   } = (0, D.Z)({
     activeSubscription: K,
     skuIDs: $,
@@ -147,7 +147,7 @@ function ee(e) {
     purchaseErrorBlockRef: eG,
     setPurchaseError: eB
   } = (0, j.Z)(), eZ = (0, u.Z)(() => {
-    let e = null != S ? S : (0, l.Z)();
+    let e = null != T ? T : (0, l.Z)();
     return N.Z.addBreadcrumb({
       message: "Checkout session ID: ".concat(e)
     }), {
@@ -202,8 +202,8 @@ function ee(e) {
       } = e;
       return t === ei
     })),
-    tT = null == tI ? true : tI.compositeInstanceId,
-    tS = (0, c.e7)([T.Z], () => null != eF ? T.Z.getForSKU(eF) : null, [eF]),
+    tS = null == tI ? true : tI.compositeInstanceId,
+    tT = (0, c.e7)([S.Z], () => null != eF ? S.Z.getForSKU(eF) : null, [eF]),
     [tA, tC] = i.useState(null),
     tN = null != (o = null == K ? true : K.inReverseTrial) && o && !ee,
     tR = (0, b.Z)({
@@ -246,8 +246,8 @@ function ee(e) {
       setPaymentSourceId: eE,
       priceOptions: ev,
       setCurrency: eI,
-      currencyLoading: eT,
-      currencies: eS
+      currencyLoading: eS,
+      currencies: eT
     }, eA), {
       hasAcceptedTerms: eC,
       setHasAcceptedTerms: eN,
@@ -280,7 +280,7 @@ function ee(e) {
       setModalOverlayNode: e8,
       selectedSkuId: eF,
       selectedSku: tp,
-      selectedStoreListing: tS,
+      selectedStoreListing: tT,
       selectedPlan: eV,
       setSelectedSkuId: eY,
       setSelectedPlanId: eW,
@@ -301,7 +301,7 @@ function ee(e) {
       application: tb,
       purchaseType: er,
       isEmbeddedIAP: tv,
-      activitySessionId: tT,
+      activitySessionId: tS,
       devShelfFetchState: tO,
       entitlementsGranted: tn,
       setEntitlementsGranted: tr,

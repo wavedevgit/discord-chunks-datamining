@@ -86,7 +86,7 @@ function O(e) {
     loaded: t,
     firstMessage: n
   } = (0, a.cj)([d.Z], () => d.Z.getMessage(e.id)), r = (0, a.e7)([l.Z], () => l.Z.getChannel(e.parent_id));
-  return null != r && y(t, n) && T(r, e.id), {
+  return null != r && y(t, n) && S(r, e.id), {
     loaded: t,
     firstMessage: n
   }
@@ -100,21 +100,21 @@ function v(e, t) {
       firstMessage: i
     } = d.Z.getMessage(t);
     y(r, i) && (E.request(e.id, t), n = true)
-  }), n && null == b && (b = setTimeout(S, 0))
+  }), n && null == b && (b = setTimeout(T, 0))
 }
 
 function I(e) {
   v(e, (0, u.U)(e.id).slice(0, p))
 }
 
-function T(e, t) {
+function S(e, t) {
   if (E.hasRequested(e.id, t)) return;
   let n = (0, u.U)(e.id),
     r = n.findIndex(e => e === t),
     i = n.slice(r, r + h).filter(t => !E.hasRequested(e.id, t));
   v(e, i)
 }
-async function S() {
+async function T() {
   try {
     for (; E.hasNext();) await A(E.next())
   } finally {

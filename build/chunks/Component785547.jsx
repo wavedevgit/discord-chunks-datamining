@@ -237,7 +237,7 @@ class j extends(r = Chunk647438.Component) {
         let {
           libraryApplication: e
         } = this.props;
-        await d.h(e.id, e.branchId, e.getFlags() & ~S.eHb.HIDDEN), (0, p.uL)(S.Z5c.APPLICATION_LIBRARY)
+        await d.h(e.id, e.branchId, e.getFlags() & ~T.eHb.HIDDEN), (0, p.uL)(T.Z5c.APPLICATION_LIBRARY)
       } catch (e) {
         new _.Z("LibraryApplicationButton").error(e)
       }

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   FS: () => A,
-  ZP: () => S
+  ZP: () => T
 }), require("./388685.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -106,7 +106,7 @@ function I(e, t, n) {
   })
 }
 
-function T(e, t) {
+function S(e, t) {
   var n;
   let r = null != (n = t.get(E.X8)) ? n : E.Hy;
   e.push({
@@ -118,10 +118,10 @@ function T(e, t) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     filterOutEmptyCurrentGuild: t = false
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = arguments.length > 2 && true !== arguments[2] && arguments[2], o = (0, i.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.isPremium(o, b.PremiumTypes.TIER_2), [E, y, S] = (0, i.Wu)([p.Z], () => [p.Z.getSounds(), p.Z.getFavorites(), p.Z.isFetching()]), A = (0, g.t)(), N = (0, m.h)(e, false), R = (0, i.Wu)([s.Z], () => {
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = arguments.length > 2 && true !== arguments[2] && arguments[2], o = (0, i.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.isPremium(o, b.PremiumTypes.TIER_2), [E, y, T] = (0, i.Wu)([p.Z], () => [p.Z.getSounds(), p.Z.getFavorites(), p.Z.isFetching()]), A = (0, g.t)(), N = (0, m.h)(e, false), R = (0, i.Wu)([s.Z], () => {
     let e = [];
     return N.forEach(t => {
       let n = s.Z.getGuild(t);
@@ -143,10 +143,10 @@ function S(e) {
     let e = 0,
       r = 0,
       i = [];
-    return n ? (T(i, E), {
+    return n ? (S(i, E), {
       categories: i,
       allSounds: E,
-      isFetching: S,
+      isFetching: T,
       soundCounts: {
         favoriteSoundCount: 0,
         unlockedCustomSoundCount: 0,
@@ -176,26 +176,26 @@ function S(e) {
       allSounds: E,
       filterOutEmptyCurrentGuild: t,
       sortSoundsFn: A
-    }), P || T(i, E), v({
+    }), P || S(i, E), v({
       sections: i,
       guilds: R,
       currentGuildId: null == w ? true : w.id,
       allSounds: E,
       hasNitro: u,
       sortSoundsFn: A
-    }), P && T(i, E), i.forEach(t => {
+    }), P && S(i, E), i.forEach(t => {
       t.categoryInfo.type === h.bg.GUILD && (t.categoryInfo.isNitroLocked ? r += t.items.length : e += t.items.length)
     }), {
       categories: i,
       allSounds: E,
-      isFetching: S,
+      isFetching: T,
       soundCounts: {
         favoriteSoundCount: y.size,
         unlockedCustomSoundCount: e,
         lockedCustomSoundCount: r
       }
     })
-  }, [N, E, y, j, M, L, x, w, D, t, P, R, n, S, u, A])
+  }, [N, E, y, j, M, L, x, w, D, t, P, R, n, T, u, A])
 }
 
 function A(e, t, n) {

@@ -113,12 +113,12 @@ let O = {
     24: "font-size-24"
   };
 
-function T(e) {
+function S(e) {
   return f.yqN.FONT_SIZES.indexOf(e) >= 0 ? e : f.yqN.FONT_SIZE_DEFAULT
 }
 
-function S(e) {
-  let t = T(e.fontSize);
+function T(e) {
+  let t = S(e.fontSize);
   if (t > f.yqN.FONT_SIZE_MAX || t < f.yqN.FONT_SIZE_MIN || v.fontSize === t) returnfalse;
   (v = h({}, v)).fontSize = t
 }
@@ -459,7 +459,7 @@ p(J, "displayName", "AccessibilityStore"), p(J, "persistKey", "AccessibilityStor
   enableCustomCursor: true
 })]);
 let $ = new J(Chunk570140.Z, {
-  ACCESSIBILITY_SET_FONT_SIZE: S,
+  ACCESSIBILITY_SET_FONT_SIZE: T,
   ACCESSIBILITY_SET_ZOOM: A,
   ACCESSIBILITY_RESET_TO_DEFAULT: C,
   ACCESSIBILITY_KEYBOARD_MODE_ENABLE: N,

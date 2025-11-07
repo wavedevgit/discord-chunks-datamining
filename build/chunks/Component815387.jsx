@@ -324,7 +324,7 @@ function eF(e) {
     guildId: n.guild_id,
     messageId: t.id
   });
-  return n.isThread() ? (0, r.jsx)(eT.Z, {
+  return n.isThread() ? (0, r.jsx)(eS.Z, {
     message: t,
     channel: n,
     compact: i,
@@ -753,7 +753,7 @@ function tt(e) {
     message: t,
     compact: n
   } = e;
-  return (0, r.jsx)(S.Z, {
+  return (0, r.jsx)(T.Z, {
     userTrialOfferId: t.referralTrialOfferId,
     canRenderReferralEmbed: true,
     compact: n

@@ -69,7 +69,7 @@ function m(e) {
     return (null == (e = u.default.getCurrentUser()) ? true : e.id) === E
   }, [E]), v = (0, l.n)({
     userId: E
-  }), [I, T] = (0, a.Wu)([c.Z], () => [c.Z.isFriend(E), c.Z.isBlocked(E)], [E]), [S, A] = i.useState(false);
+  }), [I, S] = (0, a.Wu)([c.Z], () => [c.Z.isFriend(E), c.Z.isBlocked(E)], [E]), [T, A] = i.useState(false);
   if (y || O) return null;
 
   function C() {
@@ -106,15 +106,15 @@ function m(e) {
     action: C
   }) : (0, r.jsx)(o.sNh, {
     id: "add-friend",
-    label: S ? d.intl.string(d.t.xMH6vD) : v,
+    label: T ? d.intl.string(d.t.xMH6vD) : v,
     action: () => {
-      S || (s.Z.addRelationship({
+      T || (s.Z.addRelationship({
         userId: E,
         context: {
           location: f
         }
       }), A(true), null == p || p())
     },
-    disabled: T || S && !I
+    disabled: S || T && !I
   })
 }

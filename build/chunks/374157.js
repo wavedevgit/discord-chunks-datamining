@@ -180,14 +180,14 @@ function* _(e) {
     O = a.bN.richValue(e),
     v = m ? false : 1,
     I = null != (r = null == (t = b.path) ? true : t[0]) ? r : 0,
-    T = null != (i = null == (n = y.path) ? true : n[0]) ? i : O.length - 1,
-    S = m ? T : I,
-    A = m ? I : T,
-    C = S;
+    S = null != (i = null == (n = y.path) ? true : n[0]) ? i : O.length - 1,
+    T = m ? S : I,
+    A = m ? I : S,
+    C = T;
   for (;;) {
     let t = O[C],
       n = null != (u = C === I ? null == (o = b.path) ? true : o[1] : null) ? u : 0,
-      r = null != (d = C === T ? null == (l = y.path) ? true : l[1] : null) ? d : t.children.length - 1,
+      r = null != (d = C === S ? null == (l = y.path) ? true : l[1] : null) ? d : t.children.length - 1,
       i = m ? r : n,
       p = m ? n : r,
       h = i;

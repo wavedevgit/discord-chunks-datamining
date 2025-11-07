@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -67,7 +67,7 @@ let A = () => {
   var e, t;
   let i = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId(), []),
     v = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(Chunk120356), [Chunk120356]),
-    T = (0, Chunk442837.e7)([Chunk937111.Z], () => null != Chunk120356 ? Chunk937111.Z.getRequest(Chunk120356) : null, [Chunk120356]),
+    S = (0, Chunk442837.e7)([Chunk937111.Z], () => null != Chunk120356 ? Chunk937111.Z.getRequest(Chunk120356) : null, [Chunk120356]),
     A = (0, Chunk843611.TH)(),
     C = (null == (e = (0, Chunk843611.LX)(A.pathname, Chunk981631.Z5c.CHANNEL(null == v ? true : v.id, Chunk176505.oC.GUILD_ONBOARDING))) ? true : module.isExact) === true;
   if (null == v || !(0, Chunk983736.Dc)(v) || C) return null;
@@ -75,7 +75,7 @@ let A = () => {
       (0, Chunk305325.hk)(v.id)
     },
     R = () => {
-      (0, Chunk481060.h7j)(e => (0, r.jsx)(c.ConfirmModal, S(I({
+      (0, Chunk481060.h7j)(e => (0, r.jsx)(c.ConfirmModal, T(I({
         header: b.intl.string(b.t.aIz1oV),
         confirmText: b.intl.string(b.t["cY+Oob"]),
         cancelText: b.intl.string(b.t["ETE/oC"]),
@@ -98,7 +98,7 @@ let A = () => {
         }, t))
       })
     },
-    w = null != (t = null == T ? true : T.applicationStatus) ? exports : Chunk246364.wB.STARTED,
+    w = null != (t = null == S ? true : S.applicationStatus) ? exports : Chunk246364.wB.STARTED,
     D = null,
     x = null,
     L = null,

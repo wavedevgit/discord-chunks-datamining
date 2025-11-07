@@ -65,8 +65,8 @@ let O = {
   },
   v = O,
   I = false,
-  T = false,
-  S = {},
+  S = false,
+  T = {},
   A = null,
   C = false,
   N = 864e5,
@@ -124,7 +124,7 @@ function M(e) {
       c = (null == l ? true : l.id) === s.ownerId,
       u = _.Z.can(m.Plq.ADMINISTRATOR, s);
     if (t.includes("is_owner") && !c || t.includes("is_admin") && !u) continue;
-    null == (S = null != S ? S : {})[e.key] && (S[e.key] = e);
+    null == (T = null != T ? T : {})[e.key] && (T[e.key] = e);
     let f = p.Z.getGuildId(),
       g = null != f && f === s.id;
     if ((!t.includes("is_viewing") || g) && !i) returntrue
@@ -166,14 +166,14 @@ function B() {
 }
 
 function Z() {
-  T = true
+  S = true
 }
 
 function F(e) {
   let {
     key: t
   } = e;
-  v.hiddenSurveys[t] = true, A = null, S = null != S ? S : {}, delete S[t]
+  v.hiddenSurveys[t] = true, A = null, T = null != T ? T : {}, delete T[t]
 }
 
 function V() {
@@ -185,7 +185,7 @@ function H(e) {
 }
 
 function Y() {
-  let e = Object.values(S = null != S ? S : {})[0];
+  let e = Object.values(T = null != T ? T : {})[0];
   return null != module && L(module) ? void U({
     type: "SURVEY_FETCHED",
     survey: module

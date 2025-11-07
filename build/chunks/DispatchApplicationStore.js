@@ -59,8 +59,8 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = 200,
-  S = 200,
+let S = 200,
+  T = 200,
   A = +Chunk70956.Z.Millis.MINUTE,
   C = {},
   N = "content",
@@ -209,7 +209,7 @@ function H(e) {
   M = (M = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...M]).slice(0, S)
+  }, ...M]).slice(0, T)
 }
 
 function Y(e) {
@@ -218,7 +218,7 @@ function Y(e) {
   L = (L = [{
     bytes: e,
     timestamp: t
-  }, ...L]).slice(0, S).filter(e => {
+  }, ...L]).slice(0, T).filter(e => {
     let {
       timestamp: t
     } = e;
@@ -230,11 +230,11 @@ function W(e) {
   j = (j = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...j]).slice(0, S)
+  }, ...j]).slice(0, T)
 }
-let K = a().throttle(H, T),
-  z = a().throttle(Y, T),
-  q = a().throttle(W, T);
+let K = a().throttle(H, S),
+  z = a().throttle(Y, S),
+  q = a().throttle(W, S);
 
 function X(e, t, n) {
   let r = n(C[t]),

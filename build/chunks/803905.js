@@ -4,7 +4,7 @@
 require.d(exports, {
   $0: () => N,
   AN: () => M,
-  Ct: () => S,
+  Ct: () => T,
   EQ: () => G,
   Ej: () => I,
   ME: () => h,
@@ -14,7 +14,7 @@ require.d(exports, {
   Uw: () => D,
   ZE: () => L,
   _G: () => y,
-  _O: () => T,
+  _O: () => S,
   _y: () => m,
   do: () => j,
   g7: () => R,
@@ -69,8 +69,8 @@ let _ = new f(Chunk848246.q.ANIMATED_EMOJIS),
   O = new f(Chunk848246.q.PREMIUM_GUILD_MEMBER_PROFILE),
   v = new f("profileBadges"),
   I = new f(Chunk848246.q.PROFILE_PREMIUM_FEATURES, "custom banner and avatar decoration"),
-  T = new f("collectibles"),
-  S = new f("appIcons"),
+  S = new f("collectibles"),
+  T = new f("appIcons"),
   A = new f(Chunk848246.q.CLIENT_THEMES),
   C = new f("boostDiscount"),
   N = new f("freeBoosts"),
@@ -87,9 +87,9 @@ let j = new f(Chunk848246.q.INCREASED_GUILD_LIMIT),
   U = new f("increasedVideoUploadQuality"),
   G = new f("uploadLargeFiles"),
   B = Object.freeze({
-    [Chunk474936.Si.TIER_0]: new Chunk575691.Z(Chunk474936.Si.TIER_0, [_, p, h, v, M, U, G, S]),
-    [Chunk474936.Si.TIER_1]: new Chunk575691.Z(Chunk474936.Si.TIER_1, [_, p, b, y, v, C, R, D, U, G, S]),
-    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [_, p, h, m, g, b, y, O, v, I, A, C, N, R, P, D, x, L, M, j, k, U, G, S, T, w, E])
+    [Chunk474936.Si.TIER_0]: new Chunk575691.Z(Chunk474936.Si.TIER_0, [_, p, h, v, M, U, G, T]),
+    [Chunk474936.Si.TIER_1]: new Chunk575691.Z(Chunk474936.Si.TIER_1, [_, p, b, y, v, C, R, D, U, G, T]),
+    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [_, p, h, m, g, b, y, O, v, I, A, C, N, R, P, D, x, L, M, j, k, U, G, T, S, w, E])
   }),
   Z = [C, N];
 

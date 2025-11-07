@@ -67,13 +67,13 @@ function I(e) {
   d = false
 }
 
-function T(e) {
+function S(e) {
   let {
     applicationId: t
   } = e;
   f.suggestedGamesIds = f.suggestedGamesIds.filter(e => e !== t), f.suggestedWishlistGamesIds = f.suggestedWishlistGamesIds.filter(e => e !== t)
 }
-class S extends Chunk442837.ZP.Store {
+class T extends Chunk442837.ZP.Store {
   initialize() {
     this.waitFor(Chunk594174.default)
   }
@@ -152,7 +152,7 @@ class S extends Chunk442837.ZP.Store {
     return f
   }
 }
-let A = new S(Chunk570140.Z, {
+let A = new T(Chunk570140.Z, {
   WIDGET_PENDING_SET: m,
   WIDGET_PENDING_SAVE_START: O,
   WIDGET_PENDING_SAVE_SUCCESS: v,
@@ -161,5 +161,5 @@ let A = new S(Chunk570140.Z, {
   WIDGET_SUGGESTED_FETCH_FAILURE: b,
   WIDGET_SUGGESTED_FETCH_START: y,
   WIDGET_PENDING_CLEAR: g,
-  WIDGET_SUGGESTED_REMOVE_GAME: T
+  WIDGET_SUGGESTED_REMOVE_GAME: S
 })

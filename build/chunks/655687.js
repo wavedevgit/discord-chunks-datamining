@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 655687, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -12,7 +12,7 @@ function a(e) {
     channel: t,
     isReadonly: n = false,
     isCreatingThread: a = false
-  } = e, o = (0, r.ZP)(t, true), s = (0, r.ZP)(t, false);
+  } = e, o = (0, i.ZP)(t, true), s = (0, i.ZP)(t, false);
   return null == t || null == o ? {
     placeholder: l.intl.string(l.t.MKDeyL),
     accessibilityLabel: l.intl.string(l.t.MKDeyL)
@@ -29,14 +29,14 @@ function a(e) {
     accessibilityLabel: l.intl.formatToPlainString(l.t.KffKoR, {
       channel: s
     })
-  } : i.TPd.THREADS.has(t.type) ? {
+  } : r.TPd.THREADS.has(t.type) ? {
     placeholder: l.intl.formatToPlainString(l.t["8lzR/R"], {
       channel: o
     }),
     accessibilityLabel: l.intl.formatToPlainString(l.t.UZIMWS, {
       channel: s
     })
-  } : t.type === i.d4z.DM ? {
+  } : t.type === r.d4z.DM ? {
     placeholder: l.intl.formatToPlainString(l.t["4c+CAx"], {
       channel: o
     }),

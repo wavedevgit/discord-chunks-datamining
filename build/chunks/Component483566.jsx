@@ -107,15 +107,15 @@ function g(e) {
     badge: O,
     icon: v = null,
     interactiveLabel: I = false,
-    ref: T
-  } = e, S = h(e), {
+    ref: S
+  } = e, T = h(e), {
     labelId: A,
     controlId: C,
     errorMessageId: N,
     describedById: R,
     helperTextId: P,
     descriptionId: w
-  } = S, D = "group" === b || "radiogroup" === b, x = D ? "span" : "label", L = D ? "fieldset" : "div", M = D ? (0, r.jsx)("legend", {
+  } = T, D = "group" === b || "radiogroup" === b, x = D ? "span" : "label", L = D ? "fieldset" : "div", M = D ? (0, r.jsx)("legend", {
     id: A,
     children: (0, r.jsx)(s.n, {
       children: t
@@ -147,10 +147,10 @@ function g(e) {
     }) : null]
   }) : null;
   return (0, r.jsx)(d.z.Provider, {
-    value: S,
+    value: T,
     children: (0, r.jsxs)(L, {
       role: b,
-      ref: T,
+      ref: S,
       className: f.container,
       "data-layout": y,
       "data-disabled": a,
@@ -169,7 +169,7 @@ function g(e) {
         })]
       }) : null, (0, r.jsxs)("div", {
         className: f.control,
-        children: ["function" == typeof _ ? _(S) : _, (0, r.jsx)(E, {
+        children: ["function" == typeof _ ? _(T) : _, (0, r.jsx)(E, {
           successMessage: m,
           errorMessage: p,
           helperText: c,

@@ -149,7 +149,7 @@ function x(e) {
   let {
     minValues: n,
     maxValues: a
-  } = e, s = i.useRef(null), u = i.useRef(null), [h, m] = i.useState(false), g = (0, S.CJ)();
+  } = e, s = i.useRef(null), u = i.useRef(null), [h, m] = i.useState(false), g = (0, T.CJ)();
   l()(null != g, "FileUploadActionComponent must be used within a ComponentStateContextProvider");
   let E = g.channelId;
   l()(null != E, "FileUploadActionComponent must be used inside a channel");
@@ -178,7 +178,7 @@ function x(e) {
           maxValues: a
         })
       });
-      if ((0, T.Bf)(e, j.guild_id)) return (0, I.G)(j, e);
+      if ((0, S.Bf)(e, j.guild_id)) return (0, I.G)(j, e);
       let n = e.map(e => {
         let n = (0, A.VD)(O),
           r = {

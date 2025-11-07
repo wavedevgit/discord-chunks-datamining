@@ -84,7 +84,7 @@ function I(e) {
   }
 }
 
-function T(e) {
+function S(e) {
   let t = e.slice(0, E),
     n = (0, i.e7)([o.Z], () => t.some(e => o.Z.isFetchingProduct(e)));
   return r.useEffect(() => {
@@ -99,7 +99,7 @@ function T(e) {
   }
 }
 
-function S() {
+function T() {
   let e = [];
   for (let t of Chunk215023.gj) {
     let n = Chunk597688.Z.getProduct(exports);
@@ -122,11 +122,11 @@ function A(e) {
     isValidating: u
   } = I(e.id), {
     isFetching: d
-  } = T(c);
+  } = S(c);
   return {
     defaultWishlistId: t,
     wishlist: n,
-    popularCollectiblesProducts: s ? [] : S(),
+    popularCollectiblesProducts: s ? [] : T(),
     isFetchingWishlist: a,
     isValidatingPopularProducts: !s && u,
     isFetchingPopularProducts: !s && d,

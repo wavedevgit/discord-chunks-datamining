@@ -1,9 +1,9 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 748902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
 }), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
+var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk786761 = require("./786761.js"),
   Chunk594174 = require("./594174.js"),
@@ -28,14 +28,14 @@ function f(e) {
 function h(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (!f(e) || null != t && e !== (null == t ? true : t.channel_id)) return;
-  let r = null == t ? null : (0, a.e5)(t);
+  let i = null == t ? null : (0, a.e5)(t);
   d[e] = {
     loaded: true,
     error: n,
-    message: r
+    message: i
   }
 }
-class m extends(r = Chunk442837.ZP.Store) {
+class m extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk355298.Z, Chunk333984.Z, Chunk594174.default)
   }
@@ -79,28 +79,28 @@ let g = new m(Chunk570140.Z, {
   },
   MESSAGE_UPDATE: function(e) {
     var t, n;
-    let r = e.message.channel_id;
-    if (null == r) returnfalse;
-    let i = d[r];
-    if (null == i || null == i.message) returnfalse;
-    d[r] = (t = function(e) {
+    let i = e.message.channel_id;
+    if (null == i) returnfalse;
+    let r = d[i];
+    if (null == r || null == r.message) returnfalse;
+    d[i] = (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
+        }))), i.forEach(function(t) {
           u(e, t, n[t])
         })
       }
       return e
-    }({}, i), n = n = {
-      message: (0, a.wi)(i.message, e.message)
+    }({}, r), n = n = {
+      message: (0, a.wi)(r.message, e.message)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var i = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, i)
       }
       return n
     })(Object(n)).forEach(function(e) {
@@ -119,10 +119,10 @@ let g = new m(Chunk570140.Z, {
     let {
       requestedChannelIds: t,
       supplementalData: n
-    } = e, r = new Set([...t]);
+    } = e, i = new Set([...t]);
     for (let e of (n.forEach(e => {
-        h(e.channel_id, e.message_preview), r.delete(e.channel_id)
-      }), Array.from(r))) h(e, null)
+        h(e.channel_id, e.message_preview), i.delete(e.channel_id)
+      }), Array.from(i))) h(e, null)
   },
   LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_ERROR: function(e) {
     let {

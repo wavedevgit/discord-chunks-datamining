@@ -44,22 +44,22 @@ function C(e) {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.USER_PROFILE_ACTIVITY_BUTTONS), M = w === A.l.MODAL || w === A.l.MODAL_V2;
   return x || !D || null == P || M ? (0, s.Z)(C) ? (0, r.jsx)(O.Z, {
-    platformType: S.ABu.XBOX,
+    platformType: T.ABu.XBOX,
     icon: () => (0, r.jsx)(h.Z, {}),
     onAction: N
   }) : (0, o.Z)(C) ? (0, r.jsx)(O.Z, {
-    platformType: S.ABu.PLAYSTATION,
+    platformType: T.ABu.PLAYSTATION,
     icon: () => (0, r.jsx)(p.Z, {}),
     onAction: N
   }) : (0, l.Z)(C) ? (0, r.jsx)(I.Z, {
     activity: C,
     onAction: N
-  }) : (0, i.Z)(C, S.xjy.JOIN) || (0, a.Z)(C) ? (0, r.jsx)(b.Z, {
+  }) : (0, i.Z)(C, T.xjy.JOIN) || (0, a.Z)(C) ? (0, r.jsx)(b.Z, {
     user: n,
     activity: C,
     onAction: N,
     onClose: R
-  }) : (null == C ? true : C.type) === S.IIU.HANG_STATUS ? (0, r.jsx)(E.Z, {
+  }) : (null == C ? true : C.type) === T.IIU.HANG_STATUS ? (0, r.jsx)(E.Z, {
     user: n,
     activity: C,
     onAction: N,
@@ -68,7 +68,7 @@ function C(e) {
     user: n,
     activity: C,
     onAction: N
-  }) : (0, i.Z)(C, S.xjy.INSTANCE) ? (0, r.jsx)(y.Z, {
+  }) : (0, i.Z)(C, T.xjy.INSTANCE) ? (0, r.jsx)(y.Z, {
     user: n,
     activity: C,
     onAction: N
@@ -76,7 +76,7 @@ function C(e) {
     activity: C,
     onAction: N,
     onClose: R
-  }) : null : (0, r.jsx)(T.Z, {
+  }) : null : (0, r.jsx)(S.Z, {
     application: P,
     onAction: N,
     onClose: R,

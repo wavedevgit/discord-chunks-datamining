@@ -60,9 +60,9 @@ let b = "overlay-negative-experiment-notification-settings",
   O = false,
   v = false,
   I = true,
-  T = new Chunk579092.Yd("OverlayNegativeWidgetExperimentManager");
+  S = new Chunk579092.Yd("OverlayNegativeWidgetExperimentManager");
 
-function S(e) {
+function T(e) {
   switch (e) {
     case p.Odu.VOICE:
     case p.Odu.TEXT:
@@ -81,7 +81,7 @@ let A = {
 };
 
 function C(e) {
-  let [t] = l.Z.getWidgetsByTypeAndLayout(e, S(e));
+  let [t] = l.Z.getWidgetsByTypeAndLayout(e, T(e));
   if (null != t || ([t] = l.Z.getWidgetsByType(e), null != t)) return t;
   for (let t of Object.values(l.Z.getAllWidgets()))
     if (t.type === e) return t
@@ -204,7 +204,7 @@ class L extends Chunk147913.Z {
       for (let t of Object.values(Chunk981631.Odu)) module._settings.initializeWidget(exports);
       for (let t of Chunk579092) await module._settings.restoreWidget(exports);
       for (let t of require) await module._settings.unpinWidget(exports);
-      require.size > 0 && T.info("Experiment Override: Widgets", {
+      require.size > 0 && S.info("Experiment Override: Widgets", {
         widgetsToRestore: Chunk579092,
         widgetsToOverride: require
       })
@@ -228,7 +228,7 @@ class L extends Chunk147913.Z {
       for (let e of w()) this._settings.initializeNotification(e);
       for (let e of n) await this._settings.restoreNotification(e);
       for (let e of t) await this._settings.disableNotification(e);
-      t.size > 0 && T.info("Experiment Override: Notifications", {
+      t.size > 0 && S.info("Experiment Override: Notifications", {
         notificationsToRestore: n,
         notificationsToOverride: t
       })
@@ -240,7 +240,7 @@ class L extends Chunk147913.Z {
         try {
           await this.processWidgetExperiment(e), await this.processNotificationExperiment(e)
         } catch (e) {
-          T.error("Experiments processing failed", {
+          S.error("Experiments processing failed", {
             error: e
           })
         } finally {

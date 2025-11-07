@@ -2,7 +2,7 @@
 /** chunk id: 242297, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _: () => T
+  _: () => S
 }), require("./415506.js"), require("./388685.js");
 var Chunk579806 = require("./579806.js"),
   Chunk710845 = require("./710845.js"),
@@ -59,9 +59,9 @@ function I(e) {
   var t, n, r, i;
   null == (t = e.setFocusCallback) || t.call(e, b), null == (n = e.setFocusLostCallback) || n.call(e, y), null == (r = e.setSuccessfullyShownCallback) || r.call(e, O), null == (i = e.setOnWindowHandleInitializedCallback) || i.call(e, v), (0, d.bs)(null, "native_module_callbacks_setup"), E.verbose("Native module callbacks setup")
 }
-class T {
+class S {
   static getInstance() {
-    return null == this.instance && (this.instance = new T), this.instance
+    return null == this.instance && (this.instance = new S), this.instance
   }
   async initialize() {
     return await this.prepareOverlayModule()
@@ -237,4 +237,4 @@ class T {
     g(this, "module", null), g(this, "modulePromise", null), g(this, "isCrashedDisabled", false), g(this, "lastAssociatedPID", null), g(this, "trackedGamePids", new Set)
   }
 }
-g(T, "instance", null)
+g(S, "instance", null)

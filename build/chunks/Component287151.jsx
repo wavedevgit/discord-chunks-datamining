@@ -156,8 +156,8 @@ class em extends(r = Chunk647438.PureComponent) {
         useChatFontScaling: y,
         message: v,
         hideEmoji: I,
-        animationStartPosition: T,
-        emojiSize: S
+        animationStartPosition: S,
+        emojiSize: T
       } = this.props,
       {
         shouldShowTooltip: A,
@@ -230,7 +230,7 @@ class em extends(r = Chunk647438.PureComponent) {
                   children: [k && (0, i.jsx)(O.Z, {
                     messageId: v.id,
                     emoji: c,
-                    startPosition: T,
+                    startPosition: S,
                     targetPosition: j
                   }), U && (0, i.jsx)(Q.Z, {
                     count: r,
@@ -247,7 +247,7 @@ class em extends(r = Chunk647438.PureComponent) {
                   }),
                   emojiId: c.id,
                   emojiName: c.name,
-                  size: S,
+                  size: T,
                   animated: c.animated
                 })]
               }), l ? null : (0, i.jsx)(E.Z, {
@@ -536,7 +536,7 @@ let eg = Chunk647438.memo(e => {
       burst_colors: n,
       message: r,
       emoji: a
-    } = e, o = t === Y.O.BURST, s = (0, T.v)(o && null != n ? n : []), l = (0, _.e7)([H.Z], () => true !== H.Z.getEffectForEmojiId(r.getChannelId(), r.id, a)), c = (0, _.e7)([g.Z], () => g.Z.useReducedMotion), u = M.Yk.useSetting(), d = B.default.getCurrentUser(), f = (0, V.I5)(d), p = (0, _.e7)([H.Z], () => H.Z.getReactionPickerAnimation(r.id, a.name, a.id)), h = o && (l || null != p);
+    } = e, o = t === Y.O.BURST, s = (0, S.v)(o && null != n ? n : []), l = (0, _.e7)([H.Z], () => true !== H.Z.getEffectForEmojiId(r.getChannelId(), r.id, a)), c = (0, _.e7)([g.Z], () => g.Z.useReducedMotion), u = M.Yk.useSetting(), d = B.default.getCurrentUser(), f = (0, V.I5)(d), p = (0, _.e7)([H.Z], () => H.Z.getReactionPickerAnimation(r.id, a.name, a.id)), h = o && (l || null != p);
     return (0, i.jsx)(em, el(eo({}, e), {
       colors: s,
       isBurstReaction: o,
@@ -605,7 +605,7 @@ let eg = Chunk647438.memo(e => {
       return {
         joinedEmojiSourceGuild: (null == e ? true : e.type) === I.B.GUILD ? k.Z.getGuild(null == e ? true : e.guildId) : true
       }
-    }), [u, d] = a.useState(true), [f, p] = a.useState(true), [m, g] = a.useState(null), [E, b] = a.useState(false), [y, O] = a.useState(false), [T, A] = a.useState(false), C = null != c, N = null != (t = null == u ? true : u.isDiscoverable()) && t, R = G.Z.getGuildId(), P = null != R && (R === (null == u ? true : u.id) || R === (null == c ? true : c.id)), w = B.default.getCurrentUser(), D = (0, W.a)({
+    }), [u, d] = a.useState(true), [f, p] = a.useState(true), [m, g] = a.useState(null), [E, b] = a.useState(false), [y, O] = a.useState(false), [S, A] = a.useState(false), C = null != c, N = null != (t = null == u ? true : u.isDiscoverable()) && t, R = G.Z.getGuildId(), P = null != R && (R === (null == u ? true : u.id) || R === (null == c ? true : c.id)), w = B.default.getCurrentUser(), D = (0, W.a)({
       sourceType: m,
       expressionSourceApplication: null != f ? f : null,
       isPremium: V.ZP.isPremium(w),
@@ -618,19 +618,19 @@ let eg = Chunk647438.memo(e => {
       shouldHideRoleSubscriptionCTA: false
     });
     if (a.useEffect(() => {
-        E && !T && (async () => {
+        E && !S && (async () => {
           r(), O(true);
-          let e = null != n ? await (0, S.Fi)(n) : null;
+          let e = null != n ? await (0, T.Fi)(n) : null;
           if (null != e) switch (g(e.type), e.type) {
-            case S.w6.APPLICATION:
+            case T.w6.APPLICATION:
               p(e.application);
               break;
-            case S.w6.GUILD:
+            case T.w6.GUILD:
               d(e.guild)
           } else d(null);
           O(false), A(true), r()
         })()
-      }, [n, E, T, r]), C) return null;
+      }, [n, E, S, r]), C) return null;
     let x = () => {
         b(!E)
       },

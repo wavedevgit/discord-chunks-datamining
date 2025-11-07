@@ -96,7 +96,7 @@ function D(e) {
     children: n
   } = e;
   return (0, r.jsx)("ul", {
-    "aria-label": T.intl.string(T.t.sJpqBS),
+    "aria-label": S.intl.string(S.t.sJpqBS),
     className: t,
     children: n
   })
@@ -108,7 +108,7 @@ function x(e) {
     children: n
   } = e;
   return (0, r.jsx)("div", {
-    "aria-label": T.intl.string(T.t.sJpqBS),
+    "aria-label": S.intl.string(S.t.sJpqBS),
     role: "group",
     className: t,
     children: n
@@ -125,7 +125,7 @@ function L(e) {
     ref: a
   } = i, o = P(i, ["ref"]);
   return (0, r.jsx)("div", R(C({
-    "aria-label": T.intl.string(T.t.sJpqBS),
+    "aria-label": S.intl.string(S.t.sJpqBS),
     ref: a
   }, o), {
     className: t,
@@ -145,7 +145,7 @@ function M(e) {
   } = (0, v.dv)();
   return (0, r.jsx)(c.P3F, {
     role: "checkbox",
-    className: o()(t, S.enabled),
+    className: o()(t, T.enabled),
     onClick: n,
     "aria-checked": i,
     ref: a ? l : true,
@@ -168,7 +168,7 @@ function j(e) {
   } = (0, v.dv)();
   return (0, r.jsx)(c.P3F, {
     role: "radio",
-    className: o()(n, S.enabled),
+    className: o()(n, T.enabled),
     onClick: a,
     "aria-checked": s,
     tabIndex: t,
@@ -280,7 +280,7 @@ function G(e) {
   } = e, a = (0, g.n)(), o = p.QK.useSetting(), s = 212;
   return (0, r.jsx)(_.ZP, {
     className: i,
-    imageClassName: S.attachmentImage,
+    imageClassName: T.attachmentImage,
     src: null != n.proxy_url && "" !== n.proxy_url ? n.proxy_url : n.url,
     alt: null != (t = n.description) ? t : (0, b.fw)(n.filename),
     responsive: true,
@@ -385,11 +385,11 @@ function H(e) {
   } = e, a = {
     width: n,
     height: n,
-    background: S.radioBackground,
+    background: T.radioBackground,
     "aria-hidden": true
   };
   return t ? (0, r.jsx)(m.Z, R(C({}, a), {
-    foreground: S.radioForeground,
+    foreground: T.radioForeground,
     className: i
   })) : (0, r.jsx)(h.Z, R(C({}, a), {
     className: i
@@ -403,8 +403,8 @@ function Y(e) {
     className: i
   } = e, a = .85 * n;
   return (0, r.jsx)("div", {
-    className: o()(S.checkbox, {
-      [S.checkboxSelected]: t
+    className: o()(T.checkbox, {
+      [T.checkboxSelected]: t
     }, i),
     style: {
       width: n,

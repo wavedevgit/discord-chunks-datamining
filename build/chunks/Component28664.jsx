@@ -84,8 +84,8 @@ function y(e) {
     tag: O = "span",
     position: v = "top",
     align: I = "center",
-    spacing: T,
-    layerContext: S,
+    spacing: S,
+    layerContext: T,
     targetElementRef: A,
     anchorRef: C,
     caretConfig: N,
@@ -156,9 +156,9 @@ function y(e) {
     content: k,
     position: v,
     align: I,
-    spacing: T,
+    spacing: S,
     caretConfig: N,
-    layerContext: null != S ? S : j,
+    layerContext: null != T ? T : j,
     animationStyle: e,
     positionKey: U
   }) : null);

@@ -33,10 +33,10 @@ function E(e) {
     var n;
     let r = 2 * m;
     return (null == (n = a[t + 1]) ? true : n.type) === d.Qi.BUILT_IN && (r += g), h + r
-  }, [a]), T = i.useCallback((e, t) => {
+  }, [a]), S = i.useCallback((e, t) => {
     var n;
     return t ? (null == (n = a[e + 1]) ? true : n.type) === d.Qi.BUILT_IN ? 0 : 2 * m : 0 === e ? 0 : 2 * m
-  }, [a]), S = i.useCallback((e, t) => {
+  }, [a]), T = i.useCallback((e, t) => {
     let i = a[t];
     if (null == i) return;
     let o = (0, f.ky)(i),
@@ -78,11 +78,11 @@ function E(e) {
       store: c.Xn,
       categories: a,
       className: _.list,
-      renderCategoryListItem: S,
+      renderCategoryListItem: T,
       rowCount: a.length,
       categoryHeight: I,
       listPadding: p,
-      getScrollOffsetForIndex: T
+      getScrollOffsetForIndex: S
     })
   })
 }

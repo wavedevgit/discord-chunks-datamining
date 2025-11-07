@@ -347,11 +347,11 @@ async function J(e) {
   let p = A.Z.getSettings().clipsEnabled && null != m.Z.getCurrentUserActiveStream(),
     h = l && A.Z.getSettings().decoupledClipsEnabled && (null == (t = c.ZP.getVisibleGame()) ? true : t.windowHandle) != null && b.Z.hasClipsSource(),
     E = null != e && null != m.Z.getActiveStreamForStreamKey(e) && f,
-    O = (0, S.n7)() && A.Z.getSettings().clipsEnabled && null == m.Z.getCurrentUserActiveStream() && null != y.Z.getChannelId();
+    O = (0, T.n7)() && A.Z.getSettings().clipsEnabled && null == m.Z.getCurrentUserActiveStream() && null != y.Z.getChannelId();
   if (!p && !h && !E && !O) return;
   let I = m.Z.getCurrentUserActiveStream(),
-    T = null != I ? (0, u.V9)(I) : true,
-    C = null != e ? e : T,
+    S = null != I ? (0, u.V9)(I) : true,
+    C = null != e ? e : S,
     N = (() => {
       let e = null != C ? (0, u.my)(C).ownerId : true;
       return e === g.default.getId() ? x.X9.STREAMER : null != e ? x.X9.VIEWER : h ? x.X9.DECOUPLED : x.X9.VOICE
@@ -401,7 +401,7 @@ async function J(e) {
     a.Z.dispatch({
       type: "CLIPS_SAVE_CLIP",
       clip: e
-    }), "manual" === n && (0, S.NS)() && X(e)
+    }), "manual" === n && (0, T.NS)() && X(e)
   } catch (e) {
     x.jF.error("Clip Failed to Save", e), null == P || P.stop(), (0, _.GN)("clip_error", .5), a.Z.dispatch({
       type: "CLIPS_SAVE_CLIP_ERROR"
@@ -492,7 +492,7 @@ function ei() {
 }
 async function ea(e) {
   var t;
-  if (!(0, T.isDesktop)() || (null == (t = s.Z.clips) ? true : t.loadClipsDirectory) == null) return;
+  if (!(0, S.isDesktop)() || (null == (t = s.Z.clips) ? true : t.loadClipsDirectory) == null) return;
   let n = await s.Z.clips.loadClipsDirectory(e),
     r = [];
   for (let e of n) {
@@ -508,7 +508,7 @@ async function ea(e) {
 }
 async function eo(e) {
   var t;
-  (0, T.isDesktop)() && (null == (t = s.Z.clips) ? true : t.deleteClip) != null && (await s.Z.clips.deleteClip(e), a.Z.dispatch({
+  (0, S.isDesktop)() && (null == (t = s.Z.clips) ? true : t.deleteClip) != null && (await s.Z.clips.deleteClip(e), a.Z.dispatch({
     type: "CLIPS_DELETE_CLIP",
     filepath: e
   }))

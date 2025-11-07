@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 931056, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -14,30 +14,30 @@ let s = [],
 
 function d(e, t) {
   let [n, d] = function(e, t) {
-    let [n, l] = r.useMemo(() => (function(e, t) {
+    let [n, l] = i.useMemo(() => (function(e, t) {
       if (!t.isPrivate()) return [u, c];
       let n = e.filter(e => {
           var t, n;
           return (null == (t = e.application) ? true : t.id) != null && (null == (n = e.activity) ? true : n.party_id) != null
         }),
-        r = n.map(e => e.id);
-      return [n, r]
-    })(e, t), [e, t]), a = (0, i.Wu)([o.Z], () => {
+        i = n.map(e => e.id);
+      return [n, i]
+    })(e, t), [e, t]), a = (0, r.Wu)([o.Z], () => {
       let e = [];
       return n.forEach(t => {
         null != o.Z.findActivity(t.author.id, e => {
-          var n, r, i;
-          return e.application_id === (null == (n = t.application) ? true : n.id) && (null == (r = e.party) ? true : r.id) === (null == (i = t.activity) ? true : i.party_id)
+          var n, i, r;
+          return e.application_id === (null == (n = t.application) ? true : n.id) && (null == (i = e.party) ? true : i.id) === (null == (r = t.activity) ? true : r.party_id)
         }, null, true) && e.push(t.id)
       }), e
     }, [n]);
-    return [l, r.useMemo(() => (function(e, t) {
+    return [l, i.useMemo(() => (function(e, t) {
       if (0 === e.length) return s;
       let n = [];
       return e.forEach(e => {
-        var r, i;
-        let l = null == (r = e.application) ? true : r.id,
-          a = null == (i = e.activity) ? true : i.party_id;
+        var i, r;
+        let l = null == (i = e.application) ? true : i.id,
+          a = null == (r = e.activity) ? true : r.party_id;
         if (e.id in t || null == l || null == a) return;
         let o = e.timestamp.getTime(),
           s = {
@@ -52,7 +52,7 @@ function d(e, t) {
       }), n
     })(n, a), [n, a])]
   }(e, t);
-  return r.useEffect(() => {
+  return i.useEffect(() => {
     for (let e of d) a.Z.isSubscribed(e) || (0, l.L)(e)
   }, [d]), [n, d]
 }

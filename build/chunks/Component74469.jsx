@@ -29,7 +29,7 @@ let v = (0, Chunk313201.hQ)(),
       availablePrimaryGuilds: t,
       pendingPrimaryGuildId: n,
       onChange: l
-    } = e, [I, T] = (0, c.US)([o.z.GUILD_TAG_USER_PROFILE_NEW_BADGE]), S = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), A = (0, a.e7)([h.default], () => {
+    } = e, [I, S] = (0, c.US)([o.z.GUILD_TAG_USER_PROFILE_NEW_BADGE]), T = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), A = (0, a.e7)([h.default], () => {
       var e;
       return (0, d.Pb)(null == (e = h.default.getCurrentUser()) ? true : e.primaryGuild).guildId
     }), C = true !== n ? n : A, N = i.useMemo(() => t.reduce((e, t) => {
@@ -41,7 +41,7 @@ let v = (0, Chunk313201.hQ)(),
     }, []), [t]), R = i.useCallback(e => {
       var t, n, i;
       if (null == e) return null;
-      let a = S.get(e.value);
+      let a = T.get(e.value);
       if (null == a) return null;
       let o = null == (t = a.profile) ? true : t.tag;
       return null == o ? null : (0, r.jsx)(m.Z, {
@@ -52,10 +52,10 @@ let v = (0, Chunk313201.hQ)(),
         guildIcon: a.icon,
         guildIconSize: 32
       })
-    }, [S]), P = i.useCallback(e => {
+    }, [T]), P = i.useCallback(e => {
       var t;
       if (null == e) return null;
-      let n = S.get(e.value);
+      let n = T.get(e.value);
       return null == n || null == (null == (t = n.profile) ? true : t.tag) ? null : (0, r.jsx)(u.Ft, {
         guildId: n.id,
         guildName: n.name,
@@ -63,10 +63,10 @@ let v = (0, Chunk313201.hQ)(),
         iconSize: 32,
         animate: false
       })
-    }, [S]), w = i.useCallback(e => {
+    }, [T]), w = i.useCallback(e => {
       var t, n, i;
       if (null == e) return null;
-      let a = S.get(e.value);
+      let a = T.get(e.value);
       if (null == a) return null;
       let o = null == (t = a.profile) ? true : t.tag;
       return null == o ? null : (0, r.jsx)(f.m0, {
@@ -77,16 +77,16 @@ let v = (0, Chunk313201.hQ)(),
         textColor: "interactive-normal",
         textVariant: "text-sm/semibold"
       })
-    }, [S]), D = i.useCallback(e => {
+    }, [T]), D = i.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, r.jsx)(r.Fragment, {
         children: R(t)
       })
     }, [R]), x = i.useCallback(e => {
-      T(g.L.TAKE_ACTION), null == l || l(e)
-    }, [T, l]), L = i.useCallback(e => e === C, [C]), M = i.useCallback(e => e, []), j = i.useCallback(() => {
-      T(g.L.TAKE_ACTION), null == l || l(null)
-    }, [T, l]), k = i.useRef(null);
+      S(g.L.TAKE_ACTION), null == l || l(e)
+    }, [S, l]), L = i.useCallback(e => e === C, [C]), M = i.useCallback(e => e, []), j = i.useCallback(() => {
+      S(g.L.TAKE_ACTION), null == l || l(null)
+    }, [S, l]), k = i.useRef(null);
     return (0, p.Z)(k, b.Y_.GUILD_TAG), (0, r.jsxs)(_.Z, {
       title: y.intl.string(y.t.Pdd1nd),
       titleId: v,

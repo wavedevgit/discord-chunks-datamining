@@ -22,7 +22,7 @@ var Chunk620014 = require("./620014.js"),
   Chunk822480 = require("./822480.js"),
   Chunk58834 = require("./58834.js"),
   Chunk453342 = require("./453342.js"),
-  S = 1,
+  T = 1,
   A = 2,
   C = 4,
   N = "[object Arguments]",
@@ -54,7 +54,7 @@ var Chunk620014 = require("./620014.js"),
   ee = {};
 
 function et(e, t, n, R, P, w) {
-  var D, M = t & S,
+  var D, M = t & T,
     j = t & A,
     U = t & C;
   if (n && (D = P ? n(e, R, P, w) : n(e)), true !== D) return D;
@@ -81,7 +81,7 @@ function et(e, t, n, R, P, w) {
   }) : y(e) && e.forEach(function(r, i) {
     D.set(i, et(r, t, n, i, e, w))
   });
-  var V = U ? j ? _ : f : j ? T : I,
+  var V = U ? j ? _ : f : j ? S : I,
     H = G ? true : V(e);
   return i(H || e, function(r, i) {
     H && (r = e[i = r]), a(D, i, et(r, t, n, i, e, w))

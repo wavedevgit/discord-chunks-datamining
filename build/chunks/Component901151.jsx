@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
 let v = 3,
   I = 3;
 
-function T(e) {
+function S(e) {
   let {
     applications: t
   } = e, n = i.useMemo(() => t.sort((e, t) => u.default.compare(t.id, e.id)), [t]), a = i.useMemo(() => {
@@ -115,7 +115,7 @@ function T(e) {
   })
 }
 
-function S() {
+function T() {
   let e = Chunk695346._j.useSetting();
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
@@ -163,9 +163,9 @@ function C() {
   } = (0, Chunk749876.Z)(true);
   return (0, Chunk951288.jsx)(Chunk546957.Z, {
     children: module ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : exports.length > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [(0, Chunk951288.jsx)(T, {
+      children: [(0, Chunk951288.jsx)(S, {
         applications: exports
-      }), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)("div", {
+      }), (0, Chunk951288.jsx)(T, {}), (0, Chunk951288.jsx)("div", {
         className: Chunk42101.divider
       }), (0, Chunk951288.jsx)(A, {})]
     }) : (0, Chunk951288.jsxs)("div", {

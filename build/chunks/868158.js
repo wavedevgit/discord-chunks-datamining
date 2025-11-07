@@ -60,13 +60,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -94,12 +94,12 @@ function w(e, t) {
       merged_members: i,
       merged_presences: a
     } = e,
-    o = S(e, ["guilds", "merged_members", "merged_presences"]);
+    o = T(e, ["guilds", "merged_members", "merged_presences"]);
   let s = k(P, null == a ? true : a.friends),
     l = null != (n = null == r ? true : r.map((e, t) => {
       let n = k(P, null == a ? true : a.guilds[t]),
         r = k(P, null == i ? true : i[t]);
-      return T(v({}, e), {
+      return S(v({}, e), {
         unavailable: true === e.voice_states,
         presences: n,
         members: r
@@ -113,7 +113,7 @@ function w(e, t) {
       voice_states: e.voice_states,
       unavailable: false
     }));
-  return null != c && l.push(c), P = {}, T(v({}, o), {
+  return null != c && l.push(c), P = {}, S(v({}, o), {
     presences: s,
     guilds: l
   })
@@ -140,7 +140,7 @@ function x(e, t, n) {
       merged_members: c,
       guilds: u
     } = e,
-    d = S(e, ["users", "relationships", "private_channels", "merged_members", "guilds"]);
+    d = T(e, ["users", "relationships", "private_channels", "merged_members", "guilds"]);
   G(n);
   let f = k(P = o().keyBy(a, e => e.id), s);
   null == l || l.forEach(e => {
@@ -149,7 +149,7 @@ function x(e, t, n) {
   });
   let _ = null != (r = null == u ? true : u.map((e, t) => true === e.unavailable ? e : (e.members = k(P, null == c ? true : c[t]), Z(e)))) ? r : [],
     p = L(t, u, e => Z(e));
-  return null != p && _.push(p), T(v({}, d), {
+  return null != p && _.push(p), S(v({}, d), {
     users: a,
     presences: [],
     relationships: f,

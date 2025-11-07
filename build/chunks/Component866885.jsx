@@ -86,7 +86,7 @@ function V(e) {
   let {
     channel: _,
     isLoading: p
-  } = e, [C, G] = i.useState(false), B = (0, s.e7)([S.ZP], () => S.ZP.getCurrentEmbeddedActivity()), Z = null == B ? true : B.applicationId, F = (0, s.e7)([S.ZP], () => null != Z && S.ZP.isProxyTicketRefreshing(Z), [Z]), V = (0, s.e7)([S.ZP], () => S.ZP.getActivityPanelMode()), H = (0, h.q)(Z), Y = null == B ? true : B.launchId, W = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == _ ? true : _.id)), {
+  } = e, [C, G] = i.useState(false), B = (0, s.e7)([T.ZP], () => T.ZP.getCurrentEmbeddedActivity()), Z = null == B ? true : B.applicationId, F = (0, s.e7)([T.ZP], () => null != Z && T.ZP.isProxyTicketRefreshing(Z), [Z]), V = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), H = (0, h.q)(Z), Y = null == B ? true : B.launchId, W = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == _ ? true : _.id)), {
     dockedRect: K,
     isHidden: z
   } = (0, s.cj)([O.Z], () => {
@@ -154,7 +154,7 @@ function V(e) {
       onMouseDown: n,
       onMouseLeave: i,
       onJumpToChannel: () => {
-        eo(), (0, T.tg)(x.Ez.PANEL)
+        eo(), (0, S.tg)(x.Ez.PANEL)
       },
       channel: _,
       applicationId: B.applicationId,
@@ -256,7 +256,7 @@ let H = e => {
   var {
     channel: t
   } = e, n = Z(e, ["channel"]);
-  let i = S.ZP.getCurrentEmbeddedActivity();
+  let i = T.ZP.getCurrentEmbeddedActivity();
   (0, C.Z)({
     connectedEmbeddedActivity: i
   });

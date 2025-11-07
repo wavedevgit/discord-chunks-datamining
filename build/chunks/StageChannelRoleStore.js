@@ -59,14 +59,14 @@ function I(e, t) {
   } : y
 }
 
-function T(e, t) {
+function S(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   null == b[t] && (b[t] = {});
   let r = I(e, t, n);
   return b[t][e] = r, r
 }
 
-function S(e, t) {
+function T(e, t) {
   var n;
   if (null == t) returnfalse;
   let r = l.Z.getChannel(t);
@@ -118,7 +118,7 @@ function w(e) {
       userId: n,
       channelId: r
     } = t;
-    return S(n, r) || e
+    return T(n, r) || e
   }, false)
 }
 
@@ -160,9 +160,9 @@ class M extends(r = Chunk442837.ZP.Store) {
     if (null == e || null == t || e === (null == (n = f.default.getCurrentUser()) ? true : n.id) && (0, g.NE)()) return y;
     let a = null == (r = b[t]) ? true : r[e];
     if (null != a)
-      if (i && null == a.moderator) return T(e, t, true);
+      if (i && null == a.moderator) return S(e, t, true);
       else return a;
-    return T(e, t, i)
+    return S(e, t, i)
   }
 }
 E(M, "displayName", "StageChannelRoleStore");

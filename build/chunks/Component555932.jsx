@@ -81,9 +81,9 @@ function O(e) {
     guild: t
   } = e, n = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [s, h] = i.useState(false), [g, E] = i.useState(0), O = i.useRef(null), v = s || n, {
     fillFactor: I,
-    totalAvailableBoostsCount: T
+    totalAvailableBoostsCount: S
   } = i.useMemo(() => (0, c.Hl)(t), [t]), {
-    progressBarFillWidthFactor: S,
+    progressBarFillWidthFactor: T,
     isProgressBarAnimationComplete: A,
     setShouldFireConfetti: C,
     shouldFireConfetti: N,
@@ -93,7 +93,7 @@ function O(e) {
     isRevealed: v,
     useReducedMotion: n,
     premiumTier: t.premiumTier,
-    guildBoostCount: T
+    guildBoostCount: S
   });
   return i.useEffect(() => {
     let e = window.setTimeout(() => {
@@ -105,11 +105,11 @@ function O(e) {
   }, []), (0, r.jsxs)("div", {
     className: p.progressBar,
     role: "progressbar",
-    "aria-valuenow": T,
+    "aria-valuenow": S,
     "aria-valuetext": t.premiumTier === f.Eu4.NONE ? _.intl.formatToPlainString(_.t.Ukqm9v, {
-      numSubscriptionsApplied: T
+      numSubscriptionsApplied: S
     }) : _.intl.formatToPlainString(_.t.qWunaU, {
-      numSubscriptionsApplied: T,
+      numSubscriptionsApplied: S,
       tierName: (0, c.nW)(t.premiumTier, {
         useLevels: false
       })
@@ -119,7 +119,7 @@ function O(e) {
       children: [(0, r.jsx)(a.animated.div, {
         className: p.progressBarFill,
         style: {
-          width: S.to({
+          width: T.to({
             range: [0, 1],
             output: [0, 100]
           }).to(e => "".concat(e, "%"))
@@ -135,7 +135,7 @@ function O(e) {
       setShouldFireConfetti: C,
       tier: e,
       tierMarkerAnimationPosition: R,
-      totalAvailableBoostsCount: T,
+      totalAvailableBoostsCount: S,
       children: (0, c.nW)(e)
     }, e)), (0, r.jsx)(u.Z, {
       confettiCount: g,

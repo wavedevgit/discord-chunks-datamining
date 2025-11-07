@@ -76,9 +76,9 @@ function U(e) {
   } = (0, g.Z)(J), {
     primaryIconAsset: er,
     primaryIconLabel: ei
-  } = i.useMemo(() => (0, I.FE)($, W), [$, W]), ea = (0, f.e7)([T.Z], () => {
+  } = i.useMemo(() => (0, I.FE)($, W), [$, W]), ea = (0, f.e7)([S.Z], () => {
     var e, t;
-    return null != q && null != (t = null == (e = T.Z.getStorefrontState(q)) ? true : e.activePage) ? t : 0
+    return null != q && null != (t = null == (e = S.Z.getStorefrontState(q)) ? true : e.activePage) ? t : 0
   }), eo = i.useMemo(() => {
     var e, t;
     if ((null == $ || null == (t = $.tenantMetadata) || null == (e = t.socialLayer) ? true : e.expiresAt) == null) return null;
@@ -98,7 +98,7 @@ function U(e) {
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)(_.kL8, {
       onClick: null != X ? X : () => {
-        null != q && (0, S.Z)({
+        null != q && (0, T.Z)({
           guildId: q,
           pageIndex: ea,
           skuId: K,

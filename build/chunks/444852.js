@@ -201,7 +201,7 @@ class V extends Chunk861687.Z {
           let m = this.getMediaSessionId(),
             g = this.getRTCConnectionId(),
             E = this.getGoLiveSource();
-          (0, T.q)().then(b => {
+          (0, S.q)().then(b => {
             var y, O, v;
             let I = null;
             if (null != b) {
@@ -220,7 +220,7 @@ class V extends Chunk861687.Z {
                 gpu_memory: i
               }
             }
-            let T = (null != e ? e : 0) + (null != t ? t : 0) + (null != n ? n : 0) + (null != r ? r : 0) + (null != i ? i : 0) + (null != a ? a : 0) + (null != c ? c : 0) + (null != _ ? _ : 0) + (null != f ? f : 0),
+            let S = (null != e ? e : 0) + (null != t ? t : 0) + (null != n ? n : 0) + (null != r ? r : 0) + (null != i ? i : 0) + (null != a ? a : 0) + (null != c ? c : 0) + (null != _ ? _ : 0) + (null != f ? f : 0),
               A = (null == E || null == (y = E.desktopSource) ? true : y.sourcePid) != null ? h.ZP.getGameForPID(E.desktopSource.sourcePid) : null,
               {
                 gameName: C,
@@ -228,7 +228,7 @@ class V extends Chunk861687.Z {
                 exe: R,
                 distributor: P
               } = (0, p.G8)(A);
-            S.default.track(D.rMx.SCREENSHARE_FINISHED, M({
+            T.default.track(D.rMx.SCREENSHARE_FINISHED, M({
               screenshare_frames: e,
               videohook_frames: t,
               hybrid_dxgi_frames: n,
@@ -241,7 +241,7 @@ class V extends Chunk861687.Z {
               quartz_frames: c,
               screencapturekit_frames: _,
               go_live_camera_frames: f,
-              total_frames: T,
+              total_frames: S,
               desktop_capturer_type: u,
               media_session_id: m,
               rtc_connection_id: g,
@@ -258,7 +258,7 @@ class V extends Chunk861687.Z {
           })
         }), null == (i = this._connection) || i.on(a.Sh.SoundshareAttached, () => {
           let e = this.getGoLiveSource();
-          (null == e ? true : e.desktopSource) != null && S.default.track(D.rMx.SOUNDSHARE_ATTACHED, M({}, (0, P.Z)(null == e ? true : e.desktopSource), this.getSoundshareAnalyticsProperties()))
+          (null == e ? true : e.desktopSource) != null && T.default.track(D.rMx.SOUNDSHARE_ATTACHED, M({}, (0, P.Z)(null == e ? true : e.desktopSource), this.getSoundshareAnalyticsProperties()))
         }), null == (s = this._connection) || s.on(a.Sh.SoundshareFailed, e => {
           let {
             failureCode: t,
@@ -268,7 +268,7 @@ class V extends Chunk861687.Z {
           this.reportSoundshareFailure(null == i ? true : i.desktopSource, t, n, r)
         }), null == (c = this._connection) || c.on(a.Sh.SoundshareSpeaking, () => {
           let e = this.getGoLiveSource();
-          (null == e ? true : e.desktopSource) != null && (S.default.track(D.rMx.SOUNDSHARE_TRANSMITTING, M({}, (0, P.Z)(null == e ? true : e.desktopSource), this.getSoundshareAnalyticsProperties())), null != b.Z.getHookError(D.K3D.SOUND) && l.Z.dispatch({
+          (null == e ? true : e.desktopSource) != null && (T.default.track(D.rMx.SOUNDSHARE_TRANSMITTING, M({}, (0, P.Z)(null == e ? true : e.desktopSource), this.getSoundshareAnalyticsProperties())), null != b.Z.getHookError(D.K3D.SOUND) && l.Z.dispatch({
             type: "MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING"
           }))
         }), null == (u = this._connection) || u.on(a.Sh.SoundshareTrace, e => {
@@ -301,7 +301,7 @@ class V extends Chunk861687.Z {
           if (this._firstFrameDelivered) return;
           this._firstFrameDelivered = true;
           let t = this.getStreamAnalyticsProperties();
-          S.default.track(D.rMx.RECEIVER_FIRST_FRAME_DELIVERED, {
+          T.default.track(D.rMx.RECEIVER_FIRST_FRAME_DELIVERED, {
             guild_id: t.guild_id,
             channel_id: t.channel_id,
             rtc_connection_id: t.rtc_connection_id,
@@ -320,7 +320,7 @@ class V extends Chunk861687.Z {
           })
         }), null == (f = this._connection) || f.on(a.Sh.FirstFrameEncryptedStats, e => {
           let t = this.getStreamAnalyticsProperties();
-          S.default.track(D.rMx.STREAMER_FIRST_FRAME_ENCRYPTED, {
+          T.default.track(D.rMx.STREAMER_FIRST_FRAME_ENCRYPTED, {
             guild_id: t.guild_id,
             channel_id: t.channel_id,
             rtc_connection_id: t.rtc_connection_id,
@@ -366,7 +366,7 @@ class V extends Chunk861687.Z {
     let a = null != (i = null == e ? true : e.soundshareSession) ? i : "";
     null == this.soundshareFailuresReported[a] && (this.soundshareFailuresReported[a] = new Set);
     let o = null != t && !this.soundshareFailuresReported[a].has(t);
-    o && this.soundshareFailuresReported[a].add(t), (null == t || o) && S.default.track(D.rMx.SOUNDSHARE_FAILED, M({
+    o && this.soundshareFailuresReported[a].add(t), (null == t || o) && T.default.track(D.rMx.SOUNDSHARE_FAILED, M({
       soundshare_failure_code: t,
       soundshare_failure_reason: n,
       soundshare_failure_will_retry: r
@@ -452,7 +452,7 @@ class V extends Chunk861687.Z {
       } : {};
     o.getOutboundStats().forEach(t => {
       var r;
-      (null != (r = t.num_frames) ? r : 0) > 0 && S.default.track(D.rMx.VIDEO_STREAM_ENDED, k(M({}, a, i, s, this.videoStreamStats.getStats(), t, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), u, p), {
+      (null != (r = t.num_frames) ? r : 0) > 0 && T.default.track(D.rMx.VIDEO_STREAM_ENDED, k(M({}, a, i, s, this.videoStreamStats.getStats(), t, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), u, p), {
         app_hardware_acceleration_enabled: A.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,
@@ -466,7 +466,7 @@ class V extends Chunk861687.Z {
     }), o.getInboundParticipants().forEach(t => {
       var r;
       let l = o.getInboundStats(t);
-      (null != (r = null == l ? true : l.num_frames) ? r : 0) > 0 && S.default.track(D.rMx.VIDEO_STREAM_ENDED, k(M({}, a, i, s, this.videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), u, p), {
+      (null != (r = null == l ? true : l.num_frames) ? r : 0) > 0 && T.default.track(D.rMx.VIDEO_STREAM_ENDED, k(M({}, a, i, s, this.videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), u, p), {
         app_hardware_acceleration_enabled: A.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,

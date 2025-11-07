@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,7 +44,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -196,16 +196,16 @@ let w = {
       skuId: g,
       onRedeemVirtualCurrency: E,
       isRedeeming: I,
-      orbRedemptionError: T,
-      orbProductContext: S
+      orbRedemptionError: S,
+      orbProductContext: T
     } = (0, y.C)(), A = (0, b.cR)(), C = (0, i.useRef)(A);
     (0, o.ZP)(() => {
       p(v.rMx.PAYMENT_FLOW_LOADED)
     }), (0, i.useEffect)(() => {
       c === f.A.COMPLETED && n()
     }, [c, n]), (0, i.useEffect)(() => {
-      null != T && null !== C.current && (p(v.rMx.PAYMENT_FLOW_FAILED, T), C.current = null)
-    }, [T, p]);
+      null != S && null !== C.current && (p(v.rMx.PAYMENT_FLOW_FAILED, S), C.current = null)
+    }, [S, p]);
     let N = (0, i.useCallback)(() => {
       C.current = A, p(v.rMx.PAYMENT_FLOW_COMPLETED), E(() => {
         d(f.A.COMPLETED), p(v.rMx.PAYMENT_FLOW_SUCCEEDED)
@@ -215,14 +215,14 @@ let w = {
       type: a.$jN.Type.WANDERING_CUBES
     });
     let R = null != (t = C.current) ? t : A,
-      P = null != S ? S.orbPriceAmount : null;
+      P = null != T ? T.orbPriceAmount : null;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(h.Z, {}), (0, r.jsxs)(m.C3, {
         children: [(0, r.jsxs)(a.Kqy, {
           direction: "vertical",
           gap: 8,
           children: [(0, r.jsx)(O.gY, {
-            error: T
+            error: S
           }), (0, r.jsx)(O.f4, {
             skuId: g
           })]

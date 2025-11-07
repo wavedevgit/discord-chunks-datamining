@@ -27,9 +27,9 @@ function E(e) {
   } = e, [E, b, y] = (0, s.Wu)([p.Z], () => [p.Z.getApplication(t), p.Z.isInvalidApplication(t), p.Z.getApplicationFetchState(t)], [t]), O = (0, s.e7)([d.Z], () => {
     var e;
     return null != (e = d.Z.getGuildId()) ? e : true
-  }), [v, I] = i.useState(false), T = i.useCallback(e => {
+  }), [v, I] = i.useState(false), S = i.useCallback(e => {
     e && I(true)
-  }, []), S = (0, a.O)(T), A = i.useCallback(() => {
+  }, []), T = (0, a.O)(S), A = i.useCallback(() => {
     f.default.track(h.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: t,
       device_platform: o.tq ? "mobile_web" : "desktop_web",
@@ -50,7 +50,7 @@ function E(e) {
       channel_id: n.channel_id
     })
   }, [v, O, b, n.author.id, n.channel_id]), b) ? (0, r.jsxs)(c.Z, {
-    containerRef: S,
+    containerRef: T,
     children: [(0, r.jsx)(c.Z.Header, {
       text: m.intl.string(m.t.j4KtLa)
     }), (0, r.jsx)(c.Z.Body, {
@@ -66,7 +66,7 @@ function E(e) {
       })
     })]
   }) : null == E || y === p.M.FETCHING ? (0, r.jsxs)(c.Z, {
-    containerRef: S,
+    containerRef: T,
     children: [(0, r.jsx)(c.Z.Header, {
       text: m.intl.string(m.t.m9hXGR)
     }), (0, r.jsx)(c.Z.Body, {

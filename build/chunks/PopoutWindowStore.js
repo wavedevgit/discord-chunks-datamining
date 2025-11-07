@@ -60,9 +60,9 @@ function I(e, t) {
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -70,7 +70,7 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -161,7 +161,7 @@ function V(e) {
     defaultWidth: s,
     defaultHeight: l,
     defaultAlwaysOnTop: c = false
-  } = n, u = T(n, ["defaultWidth", "defaultHeight", "defaultAlwaysOnTop"]), d = I(O({}, u), {
+  } = n, u = S(n, ["defaultWidth", "defaultHeight", "defaultAlwaysOnTop"]), d = I(O({}, u), {
     width: null != s ? s : u.width,
     height: null != l ? l : u.height
   }), p = c, g = C[t];

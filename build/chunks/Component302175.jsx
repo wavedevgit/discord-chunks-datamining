@@ -90,8 +90,8 @@ function G(e) {
     onClose: O,
     onHover: v
   } = e, {
-    analyticsLocations: T
-  } = (0, _.ZP)(), S = n !== C.A3.INACTIVE, R = (0, I.Z)(t), [L, M] = i.useState(false), [k, G] = i.useState(false), B = k, Z = i.useCallback(() => {
+    analyticsLocations: S
+  } = (0, _.ZP)(), T = n !== C.A3.INACTIVE, R = (0, I.Z)(t), [L, M] = i.useState(false), [k, G] = i.useState(false), B = k, Z = i.useCallback(() => {
     let e = m.Z.getGuild(t);
     null != e && (0, p.u)({
       analyticsLocation: {
@@ -99,10 +99,10 @@ function G(e) {
         section: N.jXE.GUILD_POWERUPS_MARKETING_PERKS_SECTION
       },
       numberOfBoostsToAdd: 1,
-      analyticsLocations: T,
+      analyticsLocations: S,
       guild: e
     })
-  }, [t, T]), F = i.useCallback(() => {
+  }, [t, S]), F = i.useCallback(() => {
     O(), (0, A.Z)(t, f.Z.GUILD_POWERUPS_MARKETING, b)
   }, [t, b, O]), V = {
     tension: 400,
@@ -155,7 +155,7 @@ function G(e) {
           quantity: u,
           decorator: null != g ? g : ""
         }),
-        isEnabled: S
+        isEnabled: T
       }), (0, r.jsxs)(s.animated.div, {
         style: W,
         className: x.buttonsContainer,
@@ -191,7 +191,7 @@ function B(e) {
     guildId: t,
     powerup: n,
     onClose: a
-  } = e, [o, s] = i.useState(false), l = (0, S.ZP)(t, n).type, c = (0, v.Z)(n, o);
+  } = e, [o, s] = i.useState(false), l = (0, T.ZP)(t, n).type, c = (0, v.Z)(n, o);
   return (0, r.jsx)(G, {
     guildId: t,
     activeStatus: l,
@@ -215,7 +215,7 @@ let Z = 3,
     }, [n.id]);
     let o = (0, E.BU)(n.id, "GuildPowerupsMarketingPowerupCards"),
       s = (0, u.e7)([b.Z], () => b.Z.getLowestGameCostForGuild(n.id)),
-      l = (0, T.Z)(n.id),
+      l = (0, S.Z)(n.id),
       d = (null != l ? l : []).slice(0, Z);
     return 0 === d.length ? null : (0, r.jsxs)("div", {
       ref: t,

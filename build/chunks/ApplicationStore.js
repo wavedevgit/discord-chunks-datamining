@@ -89,17 +89,17 @@ function I(e) {
   let {
     application: t
   } = e;
-  S(t)
-}
-
-function T(e) {
-  let {
-    application: t
-  } = e;
-  S(t)
+  T(t)
 }
 
 function S(e) {
+  let {
+    application: t
+  } = e;
+  T(t)
+}
+
+function T(e) {
   b(o.ZP.createFromServer(e))
 }
 
@@ -352,7 +352,7 @@ let K = new W(Chunk570140.Z, {
   LOGOUT: y,
   OVERLAY_INITIALIZE: O,
   APPLICATION_FETCH: v,
-  APPLICATION_FETCH_SUCCESS: T,
+  APPLICATION_FETCH_SUCCESS: S,
   APPLICATION_FETCH_FAIL: C,
   APPLICATIONS_FETCH: N,
   APPLICATIONS_FETCH_SUCCESS: P,

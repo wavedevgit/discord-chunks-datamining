@@ -152,7 +152,7 @@ function k(e) {
         application_id: n.id
       })
     }))
-  }, [null == n ? true : n.id, o, l]), _ = (0, u.e7)([y.Z, E.Z], () => E.Z.getChannel(y.Z.getChannelId())), p = (0, u.e7)([b.Z], () => b.Z.can(A.Plq.SEND_MESSAGES, _)), v = null != t, T = null == t && p && (!d || null != l), N = [];
+  }, [null == n ? true : n.id, o, l]), _ = (0, u.e7)([y.Z, E.Z], () => E.Z.getChannel(y.Z.getChannelId())), p = (0, u.e7)([b.Z], () => b.Z.can(A.Plq.SEND_MESSAGES, _)), v = null != t, S = null == t && p && (!d || null != l), N = [];
   return (null != t || null != o) && (null != o && N.push({
     variant: "secondary",
     text: C.intl.string(C.t.cpT0Cq),
@@ -163,11 +163,11 @@ function k(e) {
       guildName: null == t ? true : t.name
     }),
     onClick: s
-  }), T && N.push({
+  }), S && N.push({
     variant: "primary",
     text: C.intl.string(C.t["0cCDKP"]),
     onClick: f
-  })), (0, r.jsx)(S.j, D(P({}, a), {
+  })), (0, r.jsx)(T.j, D(P({}, a), {
     actions: N,
     children: (0, r.jsx)(U, P({
       guild: t,
@@ -221,7 +221,7 @@ function G(e) {
       application_id: t.id
     })
   }, [a, t.id]);
-  return (0, r.jsx)(S.j, D(P({}, n), {
+  return (0, r.jsx)(T.j, D(P({}, n), {
     actions: [{
       variant: "primary",
       text: C.intl.string(C.t["31Bci5"]),
@@ -260,7 +260,7 @@ function G(e) {
 }
 
 function B(e) {
-  return (0, r.jsx)(S.j, D(P({}, e), {
+  return (0, r.jsx)(T.j, D(P({}, e), {
     title: C.intl.string(C.t.j2d6Km),
     subtitle: C.intl.string(C.t["/B7kXy"]),
     actions: [{
@@ -300,14 +300,14 @@ function V(e) {
   } = e;
   i.useEffect(() => {
     if (null == a || "" === a.search) return;
-    let e = null != document.referrer && "" !== document.referrer ? T.Z.toURLSafe(document.referrer) : null;
+    let e = null != document.referrer && "" !== document.referrer ? S.Z.toURLSafe(document.referrer) : null;
     (null == e || e.host !== window.location.host || e.pathname !== A.Z5c.OAUTH2_AUTHORIZE) && (0, m.uL)(A.Z5c.INDEX)
   }, [a]);
   let o = null != a ? (0, s.parse)(a.search) : {},
     l = null != (n = null != (t = o.error_description) ? t : o.error) ? n : C.intl.string(C.t.mqn873);
-  return (0, r.jsx)(S.G, {
+  return (0, r.jsx)(T.G, {
     removeChildWrapper: true,
-    children: (0, r.jsx)(S.j, {
+    children: (0, r.jsx)(T.j, {
       transitionState: c.Dvm.ENTERED,
       hideHeader: true,
       children: (0, r.jsx)(Z, {

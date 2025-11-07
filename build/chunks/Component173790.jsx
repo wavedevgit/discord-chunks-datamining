@@ -1,7 +1,8 @@
-/** Chunk was on 35755 **/
-/** chunk id: 173790, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 173790, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,74 +24,76 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk30787 = require("./30787.js"),
   Chunk413097 = require("./413097.js");
+let I = 2048,
+  S = 84;
 
-function C(e) {
+function T(e) {
   var t;
   let {
     context: n,
-    application: s,
+    application: l,
     sectionName: c
-  } = e, C = "channel" === n.type ? n.channel : true, P = (0, r.e7)([p.Z], () => p.Z.entrypoint()), A = null != (t = (0, d.q)(s.id === x.bi.BUILT_IN ? null : s.id)) ? t : s, _ = (0, f.ye)(A) ? E : g.Z, O = l.useRef(null), [I, S] = l.useState(false), {
-    iconURL: T,
-    name: L
-  } = l.useMemo(() => (0, f.sl)(A, {
-    fakeAppIconURL: j,
-    size: 84
-  }), [A]), R = (0, u.PL)(true, true), Z = (0, u.LD)(null == C ? true : C.guild_id, true), w = l.useMemo(() => (0, u.If)(n, A.id), [R, Z, n, A.id]), k = !w.isGuildInstalled && !w.isUserInstalled;
-  return l.useEffect(() => {
-    k && u.ZP.queryInstallOnDemandApp(A.id, null == C ? true : C.id)
-  }, [A.id, null == C ? true : C.id, k]), (0, i.jsxs)(o.u2D, {
-    className: N.container,
+  } = e, I = "channel" === n.type ? n.channel : true, T = (0, a.e7)([f.Z], () => f.Z.entrypoint()), C = null != (t = (0, d.q)(l.id === b.bi.BUILT_IN ? null : l.id)) ? t : l, N = (0, p.ye)(C) ? A : E.Z, R = i.useRef(null), [P, w] = i.useState(false), {
+    iconURL: D,
+    name: x
+  } = i.useMemo(() => (0, p.sl)(C, {
+    fakeAppIconURL: v,
+    size: S
+  }), [C]), L = (0, u.PL)(true, true), M = (0, u.LD)(null == I ? true : I.guild_id, true), j = i.useMemo(() => (0, u.If)(n, C.id), [L, M, n, C.id]), k = !j.isGuildInstalled && !j.isUserInstalled;
+  return i.useEffect(() => {
+    k && u.ZP.queryInstallOnDemandApp(C.id, null == I ? true : I.id)
+  }, [C.id, null == I ? true : I.id, k]), (0, r.jsxs)(s.u2D, {
+    className: O.container,
     fade: true,
-    ref: O,
+    ref: R,
     role: "region",
-    "aria-label": b.intl.formatToPlainString(b.t["4OP4Uk"], {
-      applicationName: L
+    "aria-label": y.intl.formatToPlainString(y.t["4OP4Uk"], {
+      applicationName: x
     }),
-    children: [(0, i.jsx)(y.Z, {
-      application: A,
+    children: [(0, r.jsx)(g.Z, {
+      application: C,
       context: n,
-      name: L,
-      iconURL: T,
-      scrollerRef: O,
+      name: x,
+      iconURL: D,
+      scrollerRef: R,
       sectionName: c
-    }), null != T && (0, i.jsx)(h.Z, {
-      src: T,
-      className: N.appIcon
-    }), (0, i.jsx)(a.Z, {
+    }), null != D && (0, r.jsx)(h.Z, {
+      src: D,
+      className: O.appIcon
+    }), (0, r.jsx)(o.Z, {
       size: 54
-    }), (0, i.jsx)(_, {
+    }), (0, r.jsx)(N, {
       context: n,
-      application: A,
+      application: C,
       sectionName: c,
-      hasCommands: I
-    }), P === m._b.TEXT ? (0, i.jsx)(v.Z, {
+      hasCommands: P
+    }), T === _._b.TEXT ? (0, r.jsx)(m.Z, {
       context: n,
-      application: A,
+      application: C,
       sectionName: c,
       installOnDemand: k,
-      setHasCommands: S
+      setHasCommands: w
     }) : null]
   })
 }
 
-function E(e) {
+function A(e) {
   let {
     context: t,
     application: n,
-    sectionName: l,
-    hasCommands: r
-  } = e, a = (0, c.Z)({
+    sectionName: i,
+    hasCommands: a
+  } = e, o = (0, c.Z)({
     applicationId: n.id,
-    size: 2048,
+    size: I,
     names: ["embedded_cover"]
-  }), o = (0, f.yJ)(n), u = null != o && null != o.activity_preview_video_asset_id ? (0, s.Z)(n.id, o.activity_preview_video_asset_id) : null;
-  return (0, i.jsx)(g.Z, {
+  }), s = (0, p.yJ)(n), u = null != s && null != s.activity_preview_video_asset_id ? (0, l.Z)(n.id, s.activity_preview_video_asset_id) : null;
+  return (0, r.jsx)(E.Z, {
     context: t,
     application: n,
-    imageCoverUrl: a.url,
+    imageCoverUrl: o.url,
     videoUrl: u,
-    sectionName: l,
-    hasCommands: r
+    sectionName: i,
+    hasCommands: a
   })
 }

@@ -110,11 +110,11 @@ let w = {
       }
     }), [l, c] = i.useState(() => o);
     if (null != t.code) return (0, r.jsx)("div", {
-      className: T.claimedFooterContainer,
+      className: S.claimedFooterContainer,
       children: (0, r.jsxs)("div", {
-        className: T.claimedFooter,
+        className: S.claimedFooter,
         children: [(0, r.jsx)("div", {
-          className: T.claimedFooterCode,
+          className: S.claimedFooterCode,
           children: (0, r.jsx)(a.xvT, {
             variant: "text-md/medium",
             color: "text-primary",
@@ -136,18 +136,18 @@ let w = {
   L = () => Object.entries(w).map(e => {
     let [t, n] = e;
     return (0, r.jsx)("div", {
-      className: T.promoCardContainer,
+      className: S.promoCardContainer,
       children: (0, r.jsxs)("div", {
-        className: T.wrap,
+        className: S.wrap,
         children: [(0, r.jsxs)("div", {
-          className: T.promoCardContent,
+          className: S.promoCardContent,
           children: [(0, r.jsx)("div", {
-            className: T.lockIconContainer,
+            className: S.lockIconContainer,
             children: (0, r.jsx)(a.mBM, {
               size: "refresh_sm"
             })
           }), (0, r.jsxs)("div", {
-            className: T.promoCardContentText,
+            className: S.promoCardContentText,
             children: [(0, r.jsx)(a.X6q, {
               variant: "heading-lg/semibold",
               color: "text-primary",
@@ -159,10 +159,10 @@ let w = {
             })]
           })]
         }), (0, r.jsx)("div", {
-          className: T.promoCardAssetContainer,
+          className: S.promoCardAssetContainer,
           children: (0, r.jsx)(s.Eep, {
             src: n.asset,
-            className: T.promoCardAsset,
+            className: S.promoCardAsset,
             width: 100,
             height: 100,
             zoomable: false
@@ -181,20 +181,20 @@ let w = {
     let u = D(t[0].partnerId),
       d = (0, r.jsx)(s.Eep, {
         src: t[0].asset,
-        className: T.promoCardAsset,
+        className: S.promoCardAsset,
         width: 100,
         height: 100,
         zoomable: false
       });
     return (0, r.jsxs)("div", {
       children: [l.map((e, t) => (0, r.jsxs)("div", {
-        className: T.promoCardContainer,
+        className: S.promoCardContainer,
         children: [(0, r.jsxs)("div", {
-          className: T.wrap,
+          className: S.wrap,
           children: [(0, r.jsxs)("div", {
-            className: T.promoCardContent,
+            className: S.promoCardContent,
             children: [u, (0, r.jsxs)("div", {
-              className: T.promoCardContentText,
+              className: S.promoCardContentText,
               children: [(0, r.jsx)(a.X6q, {
                 variant: "heading-lg/semibold",
                 color: "text-primary",
@@ -220,14 +220,14 @@ let w = {
               }
             })]
           }), (0, r.jsx)("div", {
-            className: T.promoCardAssetContainer,
+            className: S.promoCardAssetContainer,
             children: d
           })]
         }), null != e.code && (0, r.jsx)(x, {
           recurrence: e
         })]
       }, e.id)), n && (0, r.jsx)(a.P3F, {
-        className: T.extraCodeButton,
+        className: S.extraCodeButton,
         onClick: () => {
           o(false), c([...l, ...t.slice(1)])
         },
@@ -245,7 +245,7 @@ let w = {
     } = e, n = () => {
       let e = 1.8;
       return (0, r.jsx)("div", {
-        className: T.progressBarIndicator,
+        className: S.progressBarIndicator,
         style: {
           left: "".concat(t - e, "%")
         },
@@ -253,9 +253,9 @@ let w = {
       })
     };
     return (0, r.jsxs)("div", {
-      className: T.progressBar,
+      className: S.progressBar,
       children: [t > 0 && t < 100 && (0, r.jsx)(n, {}), (0, r.jsx)("div", {
-        className: T.progressBarFill,
+        className: S.progressBarFill,
         style: {
           width: "".concat(t, "%")
         }
@@ -316,9 +316,9 @@ let w = {
           t = new Date(e.getFullYear(), e.getMonth() + 1, 0).getDate(),
           n = e.getDate() / t * 100;
         return l ? (0, r.jsx)(L, {}) : (0, r.jsxs)("div", {
-          className: T.container,
+          className: S.container,
           children: [(0, r.jsx)("div", {
-            className: T.progressHeader,
+            className: S.progressHeader,
             children: (0, r.jsx)(a.xvT, {
               variant: "text-md/medium",
               color: "text-secondary",
@@ -329,7 +329,7 @@ let w = {
           }), (0, r.jsx)(j, {
             percentage: n
           }), (0, r.jsx)("div", {
-            className: T.cards,
+            className: S.cards,
             children: Object.entries(u).map(e => {
               let [t, n] = e;
               return (0, r.jsx)(M, {

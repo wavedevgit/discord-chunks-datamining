@@ -48,7 +48,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,8 +59,8 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -100,8 +100,8 @@ function R(e) {
     innerClassname: g,
     transparent: v = false,
     hidden: I = false,
-    toolbar: T,
-    mobileToolbar: S,
+    toolbar: S,
+    mobileToolbar: T,
     "aria-label": A,
     "aria-labelledby": C,
     scrollable: R,
@@ -121,10 +121,10 @@ function R(e) {
   });
 
   function B() {
-    if (null == T) return null;
+    if (null == S) return null;
     let e = null != s && !w;
-    return i.tq ? S : (0, r.jsxs)(r.Fragment, {
-      children: [T, e && !(0, y.AB)(s) ? (0, r.jsx)(_.ZP, {
+    return i.tq ? T : (0, r.jsxs)(r.Fragment, {
+      children: [S, e && !(0, y.AB)(s) ? (0, r.jsx)(_.ZP, {
         guildId: m,
         channelId: s,
         className: O.search
@@ -179,9 +179,9 @@ function w(e) {
   } = (0, l.ZP)(s.Z.HEADER_BAR);
   return (0, r.jsx)(l.Gt, {
     value: i,
-    children: t ? (0, r.jsx)(R, S(I({}, n), {
+    children: t ? (0, r.jsx)(R, T(I({}, n), {
       className: n.className
-    })) : (0, r.jsx)(P, S(I({}, n), {
+    })) : (0, r.jsx)(P, T(I({}, n), {
       className: n.className
     }))
   })

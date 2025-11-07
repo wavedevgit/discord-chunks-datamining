@@ -39,7 +39,7 @@ function I(e) {
   delete O[t.id]
 }
 
-function T(e) {
+function S(e) {
   var t;
   let {
     channel: n
@@ -47,7 +47,7 @@ function T(e) {
   n.isVocal() || (O[n.guild_id] = null != (t = O[n.guild_id]) ? t : new Set, O[n.guild_id].add(n.id))
 }
 
-function S(e) {
+function T(e) {
   let {
     guildId: t,
     channelIds: n
@@ -129,11 +129,11 @@ class D extends(r = Chunk442837.ZP.Store) {
 }
 b(D, "displayName", "NewChannelsStore");
 let x = new D(Chunk570140.Z, {
-  BULK_CLEAR_RECENTS: S,
+  BULK_CLEAR_RECENTS: T,
   CHANNEL_ACK: () => true,
   CHANNEL_SELECT: A,
   SIDEBAR_VIEW_CHANNEL: C,
   SIDEBAR_VIEW_GUILD: N,
   GUILD_DELETE: I,
-  CHANNEL_CREATE: T
+  CHANNEL_CREATE: S
 })

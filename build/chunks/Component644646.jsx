@@ -2,7 +2,7 @@
 /** chunk id: 644646, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk858191 = require("./858191.js");
 
-function T(e) {
+function S(e) {
   let {
     appFocused: t,
     location: n
@@ -42,12 +42,12 @@ function T(e) {
     shinePaused: !t
   }) : null
 }
-let S = function(e) {
+let T = function(e) {
   let t, {
       className: n,
       quest: a,
       autoplay: h = true,
-      learnMoreStyle: S = null,
+      learnMoreStyle: T = null,
       learnMoreFontSize: A,
       sourceQuestContent: C,
       lazyLoad: N = false,
@@ -134,7 +134,7 @@ let S = function(e) {
       src: M.url,
       onLoad: e.onLoadComplete
     })
-  }), null == S ? (0, r.jsx)("div", {
+  }), null == T ? (0, r.jsx)("div", {
     className: o()(I.questRewardTile, n),
     style: R,
     children: t
@@ -142,10 +142,10 @@ let S = function(e) {
     className: o()(I.questRewardTileInteractive, I.questRewardTile, I.rewardHighlight, n),
     onClick: k,
     style: R,
-    children: [t, P && !L && (0, r.jsx)(T, {
+    children: [t, P && !L && (0, r.jsx)(S, {
       appFocused: x,
       location: w
-    }), "text" === S && (0, r.jsx)(c.Text, {
+    }), "text" === T && (0, r.jsx)(c.Text, {
       color: "always-white",
       variant: "text-xs/normal",
       className: I.questRewardTileDetailsLearnMore,
@@ -153,7 +153,7 @@ let S = function(e) {
         fontSize: A
       },
       children: v.intl.format(v.t.DYAleT, {})
-    }), "icon" === S && (0, r.jsx)("div", {
+    }), "icon" === T && (0, r.jsx)("div", {
       className: I.questRewardTileDetailsLearnMore,
       children: (0, r.jsx)(c.d3s, {
         size: "xxs",

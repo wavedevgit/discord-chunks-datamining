@@ -25,7 +25,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk987650 = require("./987650.js"),
   Chunk757744 = require("./757744.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,14 +34,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -182,7 +182,7 @@ function $(e) {
   let {
     initialized: t
   } = e;
-  if (Z = C(S({}, Z), {
+  if (Z = C(T({}, Z), {
       windowHandleSentToNative: t
     }), t) {
     let e = null != L ? L : d.UNSET_PID;
@@ -204,7 +204,7 @@ function er(e) {
   let {
     createWindowTriggeringPID: t
   } = e;
-  Z = C(S({}, Z), {
+  Z = C(T({}, Z), {
     popoutOpened: true
   }), K(t), k = t, L = t, (0, d.setPID)(t)
 }
@@ -223,7 +223,7 @@ function ea(e) {
     error: n,
     nativeWindowHandle: r
   } = e;
-  o.Z.updateOverlayState(t, f.mM.OVERLAY_CRASHED_DISABLED), Z = C(S({}, Z), {
+  o.Z.updateOverlayState(t, f.mM.OVERLAY_CRASHED_DISABLED), Z = C(T({}, Z), {
     errorMessage: "Error in _createOutOfProcessOverlayHostWindow: " + n
   }), (0, _.bs)(t, "renderer_window_mounting_failed", {
     error: n,
@@ -272,13 +272,13 @@ function eu(e) {
 
 function ed() {
   var e;
-  Z = C(S({}, Z), {
+  Z = C(T({}, Z), {
     showInactiveCalled: true
   }), null == w || null == (e = w.onNativePopoutShowInactiveSuccess) || module.call(w)
 }
 
 function ef() {
-  Z = C(S({}, Z), {
+  Z = C(T({}, Z), {
     allDone: true
   }), P.forEach(e => {
     Q(e)
@@ -289,7 +289,7 @@ function e_(e) {
   let {
     update: t
   } = e;
-  Z = S({}, Z, t)
+  Z = T({}, Z, t)
 }
 
 function ep(e) {
@@ -381,7 +381,7 @@ class eb extends(r = Chunk442837.ZP.Store) {
     return null != (t = B[e]) ? t : null
   }
 }
-T(eb, "displayName", "Overlay-V3-Store");
+S(eb, "displayName", "Overlay-V3-Store");
 let ey = new eb(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
     OVERLAY_UPDATE_OVERLAY_METHOD: eh,
     OVERLAY_UPDATE_OVERLAY_STATE: em,

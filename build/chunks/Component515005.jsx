@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -90,7 +90,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
       preferAnimation: a = true,
       getStickerItemProps: l,
       getStickerRowProps: I,
-      gutterWidth: S,
+      gutterWidth: T,
       inspectedStickerPosition: N,
       isScrolling: D,
       isUsingKeyboardNavigation: x,
@@ -109,16 +109,16 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
     } = e, {
       location: W
     } = (0, d.O)(), K = B + 2 * G, z = i.useMemo(() => ({
-      gridColumnGap: S,
+      gridColumnGap: T,
       gridTemplateColumns: "repeat(auto-fill, ".concat(K, "px)"),
       height: K,
       paddingRight: t ? true : K
-    }), [t, S, K]), q = i.useMemo(() => ({
+    }), [t, T, K]), q = i.useMemo(() => ({
       width: B,
       height: B,
       padding: G
     }), [G, B]), [X, Q] = (0, f.Z)(null, 300);
-    return (0, r.jsx)("div", A(T({
+    return (0, r.jsx)("div", A(S({
       className: v.row,
       style: z
     }, null == I ? true : I(j)), {
@@ -126,7 +126,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
         var d;
         let f = e.visibleRowIndex === (null == N ? true : N.rowIndex) && e.columnIndex === (null == N ? true : N.columnIndex),
           I = e.type === m.al.STICKER && F && f,
-          S = t => {
+          T = t => {
             if ((null == D ? true : D.current) === true || (null == x ? true : x.current) === true) return;
             let n = t.altKey;
             n && e.type === m.al.STICKER && !(0, g.gM)(e.sticker.id) && Q(e.sticker.id), null == M || M(e, n)
@@ -142,7 +142,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
               let {
                 default: t
               } = await Promise.all([n.e("93626"), n.e("97162")]).then(n.bind(n, 136735));
-              return n => (0, r.jsx)(t, T({
+              return n => (0, r.jsx)(t, S({
                 guildId: e.guild_id
               }, n))
             }))
@@ -156,7 +156,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
           J = C(U, ["ref", "tabIndex", "onFocus"]);
         switch (e.type) {
           case m.al.CREATE_STICKER:
-            return (0, r.jsx)("div", A(T({}, J), {
+            return (0, r.jsx)("div", A(S({}, J), {
               children: (0, r.jsxs)(c.P3F, {
                 "aria-label": e.name,
                 className: o()(v.createSticker, k, {
@@ -191,10 +191,10 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
                   let {
                     default: e
                   } = await n.e("39010").then(n.bind(n, 269254));
-                  return t => (0, r.jsx)(e, T({}, t))
+                  return t => (0, r.jsx)(e, S({}, t))
                 })
               };
-            return (0, i.createElement)("div", A(T({}, J), {
+            return (0, i.createElement)("div", A(S({}, J), {
               key: e.sticker.id
             }), (0, r.jsxs)(c.P3F, {
               className: o()(v.sticker, k, {
@@ -205,7 +205,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
               tabIndex: K,
               onFocus: null != z ? z : R,
               onMouseMove: R,
-              onClick: S,
+              onClick: T,
               onContextMenu: l,
               style: q,
               "data-type": _.S.STICKER,

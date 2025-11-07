@@ -195,8 +195,8 @@ u(l({}, {
 let O = 30,
   v = 80,
   I = 20,
-  T = 30,
-  S = 40,
+  S = 30,
+  T = 40,
   A = 15;
 
 function C(e) {
@@ -210,7 +210,7 @@ function C(e) {
     o = r,
     s = i,
     l = a;
-  s < O && (s += T), l > v && (l -= S), l < I && (l += A);
+  s < O && (s += S), l > v && (l -= T), l < I && (l += A);
   let c = 360 / (t + 1);
   for (; n.length < t;) {
     (o -= c) < 0 && (o += 360);

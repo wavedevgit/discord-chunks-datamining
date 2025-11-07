@@ -2,7 +2,7 @@
 /** chunk id: 247206, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Cm: () => S,
+  Cm: () => T,
   Hc: () => O,
   IV: () => v,
   JO: () => w,
@@ -16,7 +16,7 @@ require.d(exports, {
   Yy: () => m,
   aP: () => E,
   m8: () => P,
-  xx: () => T,
+  xx: () => S,
   yf: () => N
 });
 var Chunk286379 = require("./286379.js");
@@ -157,7 +157,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     messageId: t,
     channelId: n,
@@ -180,7 +180,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     attachments: t,
     embeds: n

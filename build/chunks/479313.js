@@ -5,11 +5,11 @@ require.d(exports, {
   $l: () => P,
   Fc: () => C,
   G1: () => O,
-  JR: () => S,
+  JR: () => T,
   U$: () => A,
   ZP: () => w,
   e7: () => I,
-  wv: () => T,
+  wv: () => S,
   yK: () => v
 }), require("./35282.js");
 var Chunk647438 = require("./647438.js"),
@@ -100,7 +100,7 @@ function I() {
   })
 }
 
-function T(e, t) {
+function S(e, t) {
   null != e && null != t && y(e, t), l.Z.dispatch({
     type: "SET_SELECTED_SUMMARY",
     channelId: e,
@@ -108,7 +108,7 @@ function T(e, t) {
   })
 }
 
-function S(e, t) {
+function T(e, t) {
   l.Z.dispatch({
     type: "UPDATE_VISIBLE_MESSAGES",
     topVisibleMessage: null != e ? e : null,
@@ -227,8 +227,8 @@ async function P(e) {
 }
 let w = {
   setSummaryFeedback: A,
-  updateVisibleMessages: S,
-  setSelectedSummary: T,
+  updateVisibleMessages: T,
+  setSelectedSummary: S,
   setHighlightedSummary: v,
   fetchSummaries: O,
   fetchSummariesBulk: N,

@@ -33,8 +33,8 @@ function I(e) {
     selectPlan: i,
     selected: o,
     priceOptions: I,
-    shouldShowUpdatedPaymentModal: T,
-    isEligibleForDiscount: S,
+    shouldShowUpdatedPaymentModal: S,
+    isEligibleForDiscount: T,
     discountAmountOff: A,
     isEligibleForTrial: C
   } = e, N = (0, l.e7)([d.default], () => d.default.locale), R = (0, l.e7)([f.Z], () => f.Z.get(n)), {
@@ -55,7 +55,7 @@ function I(e) {
   j && (M = (0, h.UV)(R, P, I));
   let k = (0, h.aS)(n, false, P, I),
     U = (0, h.Ap)(I.paymentSourceId),
-    G = null != M && !T,
+    G = null != M && !S,
     B = (0, b.Ng)(),
     Z = (0, g.Vi)(),
     F = R.interval === y.rV.YEAR ? O.t.ECT4A5 : O.t.v9QeON,
@@ -83,7 +83,7 @@ function I(e) {
       children: [(0, r.jsxs)("div", {
         className: a()(v.planOptionInterval, {
           [v.optionSelected]: o || D,
-          [v.updatedOptionSelected]: T && (o || D)
+          [v.updatedOptionSelected]: S && (o || D)
         }),
         children: [(0, h.L7)(R.interval, P, U, R.intervalCount, D, (0, h.Rd)(R.id)), D && Y()]
       }), D && (0, r.jsx)("div", {
@@ -93,12 +93,12 @@ function I(e) {
         })
       })]
     }),
-    K = () => S && null != A && R.interval === y.rV.MONTH ? (0, m.T4)(k.amount - A, k.currency) : C ? (0, m.T4)(0, k.currency, {
+    K = () => T && null != A && R.interval === y.rV.MONTH ? (0, m.T4)(k.amount - A, k.currency) : C ? (0, m.T4)(0, k.currency, {
       minimumFractionDigits: 0,
       maximumFractionDigits: 0
     }) : (0, m.T4)(k.amount, k.currency),
     z = () => {
-      if (S && null != A && R.interval === y.rV.MONTH) {
+      if (T && null != A && R.interval === y.rV.MONTH) {
         var e;
         return O.intl.format(O.t["VeE/4E"], {
           numMonths: null != (e = null == B ? true : B.discount.user_usage_limit) ? e : y.rt,
@@ -147,7 +147,7 @@ function I(e) {
           className: v.planOptionCurrentPlan,
           children: ["(", O.intl.string(O.t.ymSxhy), ")"]
         }), !D && Y()]
-      }), T ? (0, r.jsx)("div", {
+      }), S ? (0, r.jsx)("div", {
         className: a()({
           [v.optionPriceSelected]: o
         }),
@@ -160,13 +160,13 @@ function I(e) {
         }),
         children: (0, m.T4)(k.amount, k.currency)
       })]
-    }), T && (0, r.jsx)("div", {
+    }), S && (0, r.jsx)("div", {
       className: v.planOptionSubtextContainer,
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
         color: o ? "text-default" : "interactive-normal",
         className: a()(v.planOptionSubtext, {
-          [v.discountPlanOptionSubtext]: S
+          [v.discountPlanOptionSubtext]: T
         }),
         children: z()
       })

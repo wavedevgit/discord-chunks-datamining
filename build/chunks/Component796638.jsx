@@ -1,8 +1,8 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 796638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZB: () => b,
-  ZP: () => _,
+  ZP: () => y,
   cF: () => f
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
@@ -34,29 +34,29 @@ function b(e, t) {
       cropSelfVideo: false
     },
     {
-      tileWidth: r,
+      tileWidth: i,
       tileMinWidth: o,
       tileMargin: s,
       limit: u,
       cropSelfVideo: p,
       version: f
     } = n,
-    [b, _] = i.useState(Date.now());
-  i.useEffect(() => {
+    [b, y] = r.useState(Date.now());
+  r.useEffect(() => {
     let e = setTimeout(() => {
-      _(Date.now())
+      y(Date.now())
     }, m);
     return () => {
       clearTimeout(e)
     }
   }, [t]);
-  let y = i.useRef({}),
+  let C = r.useRef({}),
     {
-      visibleParticipants: C,
+      visibleParticipants: _,
       participantTileWidth: v
-    } = i.useMemo(() => {
+    } = r.useMemo(() => {
       let n = Date.now(),
-        i = (0, l.sortBy)(t, e => (function(e) {
+        r = (0, l.sortBy)(t, e => (function(e) {
           let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Date.now();
           switch (e.type) {
             case d.fO.ACTIVITY:
@@ -66,29 +66,29 @@ function b(e, t) {
               return "\x02".concat((0, a.Z)(e.userNick, e.user));
             case d.fO.USER:
               var n;
-              let r = "\x06";
-              return e.speaking ? r = "\x03" : t - e.lastSpoke < m ? r = "\x04" : (null == (n = e.voiceState) ? true : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
+              let i = "\x06";
+              return e.speaking ? i = "\x03" : t - e.lastSpoke < m ? i = "\x04" : (null == (n = e.voiceState) ? true : n.selfVideo) && (i = "\x05"), "".concat(i).concat(function(e) {
                 let t = String(864e13).length;
                 return String(864e13 - e).padStart(t, "0")
               }(e.lastSpoke)).concat((0, a.Z)(e.userNick, e.user))
           }
         })(e, n)),
-        [f, h] = (0, l.partition)(i, d.Io),
+        [f, h] = (0, l.partition)(r, d.Io),
         b = f.findIndex(g),
-        _ = null;
-      false !== b && (_ = f[b], f.splice(b, 1));
-      let C = null == _ || p ? e : e - r - s,
-        v = Math.max(0, Math.min(Math.floor((C - s) / (o + s)), u, t.length)),
-        O = Math.min((C - s) / v - s, r),
-        x = Math.max(0, v - h.length),
+        y = null;
+      false !== b && (y = f[b], f.splice(b, 1));
+      let _ = null == y || p ? e : e - i - s,
+        v = Math.max(0, Math.min(Math.floor((_ - s) / (o + s)), u, t.length)),
+        x = Math.min((_ - s) / v - s, i),
+        O = Math.max(0, v - h.length),
         E = h.slice(0, v),
-        j = f.slice(0, x),
-        S = Array(x);
-      if (x > 0) {
+        j = f.slice(0, O),
+        S = Array(O);
+      if (O > 0) {
         let e = [];
         for (let t of j) {
-          let n = y.current[t.id];
-          null != n && n < x ? S[n] = t : e.push(t)
+          let n = C.current[t.id];
+          null != n && n < O ? S[n] = t : e.push(t)
         }
         for (let t = 0; t < S.length; t++) {
           if (null != S[t]) continue;
@@ -98,24 +98,24 @@ function b(e, t) {
         }
       }
       let P = S.filter(c.lm);
-      y.current = (0, l.keyBy)((0, l.range)(P.length), e => P[e].id);
+      C.current = (0, l.keyBy)((0, l.range)(P.length), e => P[e].id);
       let I = [...E, ...P];
-      return null != _ && (p && I.length >= v ? I[Math.max(0, I.length - 1)] = _ : I.push(_)), {
+      return null != y && (p && I.length >= v ? I[Math.max(0, I.length - 1)] = y : I.push(y)), {
         visibleParticipants: I,
-        participantTileWidth: O
+        participantTileWidth: x
       }
-    }, [e, t, b, f, p, u, s, o, r]);
+    }, [e, t, b, f, p, u, s, o, i]);
   return {
-    visibleParticipants: C,
+    visibleParticipants: _,
     participantTileWidth: v
   }
 }
 
-function _(e) {
+function y(e) {
   let {
     participants: t,
     participantTileWidth: n,
-    selectedParticipantId: i,
+    selectedParticipantId: r,
     onDoubleClick: l,
     onContextMenu: a,
     onClick: o,
@@ -124,19 +124,19 @@ function _(e) {
     popoutType: d,
     paused: f = false
   } = e;
-  return (0, r.jsx)("div", {
+  return (0, i.jsx)("div", {
     className: p.root,
     children: t.map(e => {
       if (null == e) return null;
       let t = g(e);
-      return (0, r.jsx)("div", {
+      return (0, i.jsx)("div", {
         className: p.tileSizer,
         style: t ? {
           flexShrink: 0
         } : true,
-        children: (0, r.jsx)(u.ZP, {
+        children: (0, i.jsx)(u.ZP, {
           participant: e,
-          selected: i === e.id,
+          selected: r === e.id,
           channel: s,
           className: p.tile,
           fit: u.BP.COVER,

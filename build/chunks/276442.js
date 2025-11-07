@@ -73,8 +73,8 @@ function O(e) {
   } = e, {
     contextMetadata: v,
     step: I,
-    paymentSources: T,
-    paymentSourceId: S,
+    paymentSources: S,
+    paymentSourceId: T,
     setPaymentSourceId: A,
     purchaseError: C,
     setPurchaseError: N,
@@ -88,8 +88,8 @@ function O(e) {
   } = (0, d.JL)(), {
     isGift: j
   } = (0, u.wD)(), k = b(g({}, (0, s.fL)()), {
-    paymentSources: T,
-    paymentSourceId: S,
+    paymentSources: S,
+    paymentSourceId: T,
     setPaymentSourceId: A,
     purchaseError: C,
     setPurchaseError: N,
@@ -98,7 +98,7 @@ function O(e) {
     selectedSkuId: w,
     isGift: j
   }), U = (0, o.N)(m), G = !j && null != U && null != w && h.nG[U.trial_id].skus.includes(w), B = () => {
-    c(Object.values(T).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
+    c(Object.values(S).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
       trackedFromStep: M ? f.h8.PAYMENT_ELEMENT : f.h8.PAYMENT_TYPE
     })
   }, Z = null != E ? E : B;

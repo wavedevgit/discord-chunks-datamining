@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 677845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -38,30 +38,30 @@ function S(e) {
     inCall: T,
     totalNumberOfParticipants: N,
     popoutType: A
-  } = e, w = (0, m.bp)() === E.IlC.POPOUT, M = (0, o.e7)([_.Z], () => _.Z.getGuild(I.guild_id), [I.guild_id]), {
+  } = e, w = (0, m.bp)() === E.IlC.POPOUT, M = (0, o.e7)([y.Z], () => y.Z.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
-  } = (0, O.d)(), D = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), k = (0, b.bt)(I.id, t), L = i.useCallback(() => {
+  } = (0, x.d)(), D = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), L = (0, b.bt)(I.id, t), k = r.useCallback(() => {
     (0, a.j)(() => {
-      O.d.setState({
+      x.d.setState({
         dismissedActivityEntryPointTileChannel: I.id
       })
     })
   }, [I.id]);
-  i.useEffect(() => {
+  r.useEffect(() => {
     null != R && I.id !== R && (0, a.j)(() => {
-      O.d.setState({
+      x.d.setState({
         dismissedActivityEntryPointTileChannel: null
       })
     })
   }, [I.id, R]);
-  let U = (0, o.e7)([y.Z], () => I.isPrivate() || (0, h.b)(y.Z, M, I), [M, I]),
-    B = (null == M ? true : M.afkChannelId) === I.id,
-    F = I.userLimit <= 0 || I.userLimit > 1,
-    V = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
+  let U = (0, o.e7)([C.Z], () => I.isPrivate() || (0, h.b)(C.Z, M, I), [M, I]),
+    F = (null == M ? true : M.afkChannelId) === I.id,
+    V = I.userLimit <= 0 || I.userLimit > 1,
+    B = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
     H = (0, f.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     G = (0, u.KF)(I.id) !== u.jy.CAN_LAUNCH,
     W = null != R && R === I.id,
-    z = k.map(e => t => (0, r.jsx)(v.ZP, {
+    z = L.map(e => t => (0, i.jsx)(v.ZP, {
       participant: e,
       channel: I,
       className: j.tile,
@@ -78,36 +78,36 @@ function S(e) {
     properties: {
       total_participants: N,
       can_invite: U,
-      is_afk_channel: B,
+      is_afk_channel: F,
       channel_user_limit: I.userLimit
     }
   }, {
     trackOnInitialLoad: true
-  }, []), null != M && !B && (!(D >= 2) || !V || G || H || W ? F && 1 === D && U && (V && !G ? z.push(e => (0, r.jsx)(C.h, {
+  }, []), null != M && !F && (!(D >= 2) || !B || G || H || W ? V && 1 === D && U && (B && !G ? z.push(e => (0, i.jsx)(_.h, {
     channel: I,
     guild: M,
     width: e,
     inPopout: w,
-    handleClose: L,
+    handleClose: k,
     userParticipantCount: D
-  })) : z.push(e => (0, r.jsx)(x.Z, {
+  })) : z.push(e => (0, i.jsx)(O.Z, {
     width: e,
     channel: I,
     guild: M,
     inPopout: w
-  }))) : z.push(e => (0, r.jsx)(C.h, {
+  }))) : z.push(e => (0, i.jsx)(_.h, {
     channel: I,
     guild: M,
     width: e,
     inPopout: w,
-    handleClose: L,
+    handleClose: k,
     userParticipantCount: D
   })));
-  let q = i.useCallback(e => {
+  let q = r.useCallback(e => {
     var t, n;
-    return null != (n = null == (t = k[e]) ? true : t.id) ? n : "empty-tile"
-  }, [k]);
-  return (0, r.jsx)(g.Z, {
+    return null != (n = null == (t = L[e]) ? true : t.id) ? n : "empty-tile"
+  }, [L]);
+  return (0, i.jsx)(g.Z, {
     className: Z,
     keyExtractor: q,
     paddingTop: 64,

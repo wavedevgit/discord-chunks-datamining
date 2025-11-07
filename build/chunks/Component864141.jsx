@@ -85,7 +85,7 @@ function N(e) {
       children: [(0, r.jsx)(b.Z, {
         text: B,
         tags: U(),
-        contextMenu: (0, r.jsx)(T.Z, {
+        contextMenu: (0, r.jsx)(S.Z, {
           display: "voice",
           user: t,
           onClose: R
@@ -108,10 +108,10 @@ function N(e) {
               voiceChannel: i,
               onAction: D,
               onClose: R
-            }), P === S.l.MODAL_V2 && G()]
-          }), P === S.l.MODAL && G()]
+            }), P === T.l.MODAL_V2 && G()]
+          }), P === T.l.MODAL && G()]
         })
-      }), P !== S.l.MODAL && P !== S.l.MODAL_V2 && G()]
+      }), P !== T.l.MODAL && P !== T.l.MODAL_V2 && G()]
     })
   })
 }

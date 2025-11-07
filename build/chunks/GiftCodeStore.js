@@ -33,17 +33,17 @@ let p = 0x7fffffff,
   v = {},
   I = new Set;
 
-function T(e) {
+function S(e) {
   let t = u.Z.createFromServer(e),
     n = t.code;
   if (m.has(n)) m.set(n, m.get(n).merge(t));
   else if (m.set(n, t), null != t.expiresAt) {
     let e = new s.V7;
-    h[n] = e, S(n)
+    h[n] = e, T(n)
   }
 }
 
-function S(e) {
+function T(e) {
   let t = m.get(e);
   if (null == t || null == t.expiresAt) return;
   let n = t.expiresAt.valueOf() - a()().valueOf();
@@ -51,7 +51,7 @@ function S(e) {
   else {
     let t = h[e];
     if (null == t) return;
-    t.start(Math.min(p, n), () => S(e))
+    t.start(Math.min(p, n), () => T(e))
   }
 }
 
@@ -88,7 +88,7 @@ function P(e) {
   let {
     giftCode: t
   } = e;
-  return g = g.filter(e => e !== t.code), b.includes(t.code) || (b = [...b, t.code]), T(t)
+  return g = g.filter(e => e !== t.code), b.includes(t.code) || (b = [...b, t.code]), S(t)
 }
 
 function w(e) {
@@ -118,7 +118,7 @@ function L(e) {
   let {
     giftCode: t
   } = e;
-  T(t)
+  S(t)
 }
 
 function M(e) {
@@ -151,7 +151,7 @@ function U(e) {
     skuId: n,
     subscriptionPlanId: r
   } = e;
-  t.forEach(T);
+  t.forEach(S);
   let i = (0, d.Bg)(n, r);
   O[i] = Date.now(), y.delete(i)
 }

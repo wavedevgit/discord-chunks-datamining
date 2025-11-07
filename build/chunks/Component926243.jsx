@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -95,7 +95,7 @@ let R = (e, t) => "".concat(e, ":").concat(t),
       rowIndex: m,
       size: b,
       surrogateCodePoint: I,
-      allowAnimatedEmoji: S,
+      allowAnimatedEmoji: T,
       selectedItemClassName: N,
       inNitroLockedSection: R
     } = e, P = C(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
@@ -111,7 +111,7 @@ let R = (e, t) => "".concat(e, ":").concat(t),
       },
       x = d && !R;
     return (0, r.jsx)(l.tEY, {
-      children: (0, r.jsx)("button", A(T({}, P), {
+      children: (0, r.jsx)("button", A(S({}, P), {
         className: o()(v.emojiItem, {
           [v.emojiItemLarge]: a,
           [v.emojiItemMedium]: c,
@@ -132,7 +132,7 @@ let R = (e, t) => "".concat(e, ":").concat(t),
           emoji: n,
           size: b,
           surrogateCodePoint: I,
-          allowAnimatedEmoji: S,
+          allowAnimatedEmoji: T,
           isLocked: x
         })
       }))
@@ -151,7 +151,7 @@ function w(e) {
     isScrolling: y,
     isUsingKeyboardNavigation: v,
     showEmojiFavoriteTooltip: I,
-    surrogateCodePoint: S,
+    surrogateCodePoint: T,
     selectedItemClassName: N,
     getEmojiItemProps: w,
     isMediumSize: D,
@@ -182,7 +182,7 @@ function w(e) {
       let {
         default: e
       } = await n.e("39010").then(n.bind(n, 269254));
-      return t => (0, r.jsx)(e, T({}, t))
+      return t => (0, r.jsx)(e, S({}, t))
     })
   }, $ = function() {
     var e;
@@ -194,7 +194,7 @@ function w(e) {
       tabIndex: c,
       onFocus: u
     } = s, d = C(s, ["ref", "tabIndex", "onFocus"]);
-    return (0, i.createElement)("li", A(T({}, d), {
+    return (0, i.createElement)("li", A(S({}, d), {
       key: a,
       ref: Y
     }), Z !== R(q, f) && (0, r.jsx)(P, {
@@ -224,7 +224,7 @@ function w(e) {
       columnIndex: q,
       rowIndex: f,
       size: K,
-      surrogateCodePoint: S,
+      surrogateCodePoint: T,
       selectedItemClassName: N,
       inNitroLockedSection: B
     }))

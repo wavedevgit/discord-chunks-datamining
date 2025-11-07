@@ -32,8 +32,8 @@ function E(e) {
     pendingDisplayNameStyles: O,
     pronouns: v,
     className: I,
-    tagClassName: T,
-    isTryItOut: S,
+    tagClassName: S,
+    isTryItOut: T,
     onOpenProfile: A,
     onClose: C,
     nicknameVariant: N = "heading-lg/bold"
@@ -85,8 +85,8 @@ function E(e) {
         user: t,
         usernameIcon: i,
         forceUsername: true,
-        forcePomelo: S,
-        className: a()(g.userTag, T),
+        forcePomelo: T,
+        className: a()(g.userTag, S),
         usernameClass: g.userTagUsername,
         discriminatorClass: g.userTagDiscriminator,
         hideBotTag: true
@@ -99,7 +99,7 @@ function E(e) {
           text: m.intl.string(m.t.GI2A8C),
           delay: h.vB,
           children: (0, r.jsx)(s.Text, {
-            className: a()(g.pronounsText, T),
+            className: a()(g.pronounsText, S),
             variant: "text-sm/medium",
             color: "header-primary",
             children: v

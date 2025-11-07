@@ -32,9 +32,9 @@ function b(e) {
     analyticsLocations: v
   } = (0, l.ZP)(s.Z.USER_PROFILE_ACTIVITY_CLOUD_PLAY_SECTION), {
     data: I
-  } = (0, c.IX)(n), T = (0, o.q)(I, s.Z.USER_PROFILE_ACTIVITY_CLOUD_PLAY_SECTION), {
-    themeType: S
-  } = (0, p.z)(), A = S === m.l.MODAL || S === m.l.MODAL_V2, C = (0, f.L)(null != (t = null == O ? true : O.application_id) ? t : n), N = T && A && null != I && !C, R = N ? [i.z.CLOUD_PLAY_NEW_BADGE] : [], [P] = (0, d.US)(R);
+  } = (0, c.IX)(n), S = (0, o.q)(I, s.Z.USER_PROFILE_ACTIVITY_CLOUD_PLAY_SECTION), {
+    themeType: T
+  } = (0, p.z)(), A = T === m.l.MODAL || T === m.l.MODAL_V2, C = (0, f.L)(null != (t = null == O ? true : O.application_id) ? t : n), N = S && A && null != I && !C, R = N ? [i.z.CLOUD_PLAY_NEW_BADGE] : [], [P] = (0, d.US)(R);
   return N ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_.Z, {
       className: E.cloudPlayDivider

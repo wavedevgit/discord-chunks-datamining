@@ -182,7 +182,7 @@ let M = Chunk647438.forwardRef(function(e, t) {
       trackUserProfileAction: R
     } = (0, b.KZ)(), P = (0, h.p)({
       location: "CustomStatusBubble"
-    }), w = null != _ ? S.Hp : 0, D = S.hT + w, x = S.YF + w, M = i.useRef(null), j = i.useRef(null), k = i.useRef(null), U = i.useRef(D), G = i.useRef(x), B = null != _ && null == p, [Z, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!B && I), K = I && Z, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
+    }), w = null != _ ? T.Hp : 0, D = T.hT + w, x = T.YF + w, M = i.useRef(null), j = i.useRef(null), k = i.useRef(null), U = i.useRef(D), G = i.useRef(x), B = null != _ && null == p, [Z, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!B && I), K = I && Z, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
     i.useEffect(() => () => q.stop(), [q]), i.useEffect(() => {
       null == N || N.onInteractionPopoutTargetRefChange(M)
     }, [N]);
@@ -190,7 +190,7 @@ let M = Chunk647438.forwardRef(function(e, t) {
       maxHeight: "".concat(U.current, "px"),
       config: {
         clamp: true,
-        duration: S.R1
+        duration: T.R1
       }
     }));
     i.useLayoutEffect(() => {
@@ -204,21 +204,21 @@ let M = Chunk647438.forwardRef(function(e, t) {
     let J = e => {
         Y && (e ? Q({
           maxHeight: "".concat(Math.min(G.current, x), "px"),
-          delay: z ? 0 : S.zS,
+          delay: z ? 0 : T.zS,
           config: {
             clamp: true,
-            duration: z ? 0 : S.R1
+            duration: z ? 0 : T.R1
           }
         }) : Q({
           maxHeight: "".concat(Math.min(U.current, D), "px"),
           delay: 0
-        }), z ? H(!e) : q.start(e ? S.zS : S.Sq, () => H(!e)))
+        }), z ? H(!e) : q.start(e ? T.zS : T.Sq, () => H(!e)))
       },
       $ = null != _ ? (0, r.jsx)(f.Z, {
         emoji: _,
         animate: m,
         hideTooltip: false,
-        tooltipDelay: T.vB,
+        tooltipDelay: S.vB,
         className: C.statusEmoji
       }) : null,
       ee = null != p ? (0, r.jsx)(u.Text, {
@@ -356,9 +356,9 @@ function U(e) {
     interactionType: d,
     interactionSource: f,
     resetInteraction: _
-  } = (0, y.Xo)(), p = f === T.n_.STATUS && d === T.P.REACT, h = f === T.n_.STATUS && d === T.P.REPLY, m = p || h, E = i.useRef(null), I = i.useRef(t), S = i.useRef(n);
+  } = (0, y.Xo)(), p = f === S.n_.STATUS && d === S.P.REACT, h = f === S.n_.STATUS && d === S.P.REPLY, m = p || h, E = i.useRef(null), I = i.useRef(t), T = i.useRef(n);
   i.useEffect(() => {
-    f === T.n_.STATUS && ((I.current !== t || S.current !== n) && _(), I.current = t, S.current = n)
+    f === S.n_.STATUS && ((I.current !== t || T.current !== n) && _(), I.current = t, T.current = n)
   }, [f, _, t, n]);
   let [A, N] = i.useState(false), P = i.useCallback(e => {
     (e || !m) && N(e)
@@ -372,7 +372,7 @@ function U(e) {
     channelId: s,
     themeType: l,
     sourceDetails: M(),
-    sourceType: T.n_.STATUS,
+    sourceType: S.n_.STATUS,
     onAction: u,
     onClose: () => N(false),
     children: () => (0, r.jsx)(j, w(R({}, c), {
@@ -385,7 +385,7 @@ function U(e) {
       renderToolbar: e => (0, r.jsx)(v.ZP, {
         targetRef: E,
         user: a,
-        sourceType: T.n_.STATUS,
+        sourceType: S.n_.STATUS,
         isVisible: A && !m,
         isExpandable: e,
         onAction: u
@@ -420,9 +420,9 @@ let G = Chunk647438.forwardRef(function(e, t) {
     })
   }
   let I = null != (n = null == g ? true : g.emoji) ? n : null,
-    T = null != (i = null == g ? true : g.state) ? i : null,
-    S = null != T && "" !== T ? T : null;
-  return null != I || null != S || O ? null == I && null == S ? (0, r.jsx)(p.Gt, {
+    S = null != (i = null == g ? true : g.state) ? i : null,
+    T = null != S && "" !== S ? S : null;
+  return null != I || null != T || O ? null == I && null == T ? (0, r.jsx)(p.Gt, {
     value: b,
     children: (0, r.jsx)(M, R({
       onCloseProfile: o,
@@ -434,13 +434,13 @@ let G = Chunk647438.forwardRef(function(e, t) {
     children: (0, r.jsx)(U, R({
       user: a,
       emoji: I,
-      text: S
+      text: T
     }, h))
   }) : O ? (0, r.jsx)(p.Gt, {
     value: b,
     children: (0, r.jsx)(k, R({
       emoji: I,
-      text: S,
+      text: T,
       onCloseProfile: o,
       ref: t
     }, h))
@@ -448,7 +448,7 @@ let G = Chunk647438.forwardRef(function(e, t) {
     value: b,
     children: (0, r.jsx)(j, R({
       emoji: I,
-      text: S,
+      text: T,
       ref: t
     }, h))
   }) : null

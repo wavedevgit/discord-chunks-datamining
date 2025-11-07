@@ -75,7 +75,7 @@ function j(e) {
     loading: s = false
   } = e, {
     hasPaymentSources: l
-  } = (0, S.JL)(), c = l ? A.h8.REVIEW : A.h8.ADD_PAYMENT_STEPS;
+  } = (0, T.JL)(), c = l ? A.h8.REVIEW : A.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Button, {
       onClick: () => t(c),
@@ -102,14 +102,14 @@ function k(e) {
     recommendedGiftSkuIds: L,
     giftingOrigin: M,
     setValidatingGiftRecipient: k
-  } = (0, T.wD)(), {
+  } = (0, S.wD)(), {
     selectedSkuId: B,
     setSelectedSkuId: Z,
     selectedSkuPricePreview: F,
     paymentSourceId: V,
     skuPricePreviewsById: H,
     skusById: Y
-  } = (0, S.JL)(), W = (0, i.e7)([y.default], () => y.default.getCurrentUser()), {
+  } = (0, T.JL)(), W = (0, i.e7)([y.default], () => y.default.getCurrentUser()), {
     enabled: K,
     giftRecommendationAlgorithm: z
   } = p.G.useExperiment({

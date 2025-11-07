@@ -346,8 +346,8 @@ function e2() {
   })
 }
 let e6 = e => (0, r.jsx)(T.Z, eM({}, e)),
-  e7 = () => (0, Chunk951288.jsx)(Chunk270759.Z, {}),
-  e9 = () => (0, Chunk951288.jsx)(Chunk779715.Z, {}),
+  e9 = () => (0, Chunk951288.jsx)(Chunk270759.Z, {}),
+  e7 = () => (0, Chunk951288.jsx)(Chunk779715.Z, {}),
   te = () => (0, Chunk951288.jsx)(Chunk927220.Z, {}),
   tt = () => (0, Chunk951288.jsx)(Chunk745052.Z, {}),
   tn = () => (0, Chunk951288.jsx)(Chunk179742.Z, {}),
@@ -676,13 +676,13 @@ function ta() {
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.ME_ACTIVITY,
                   exact: true,
-                  render: e9,
+                  render: e7,
                   impressionName: Chunk990547.ImpressionNames.ACTIVITIES,
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.ME,
                   exact: true,
-                  render: e7,
+                  render: e9,
                   impressionName: Chunk990547.ImpressionNames.FRIENDS,
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {

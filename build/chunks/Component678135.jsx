@@ -2,7 +2,7 @@
 /** chunk id: 678135, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -27,12 +27,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk448239 = require("./448239.js");
 
-function T(e) {
+function S(e) {
   var t, n;
   let {
     user: i,
-    guild: T,
-    canUsePremiumCustomization: S,
+    guild: S,
+    canUsePremiumCustomization: T,
     onUpsellClick: A,
     pendingBanner: C,
     pendingAccentColor: N,
@@ -57,17 +57,17 @@ function T(e) {
     shouldOpenBadgeTooltip: K,
     hideExampleButton: z = false,
     interactive: q = true
-  } = e, X = (0, c.ZP)(i.id, null == T ? true : T.id), Q = (0, o.e7)([p.ZP], () => null != T ? p.ZP.getMember(T.id, i.id) : null), J = (0, h.Ys)({
+  } = e, X = (0, c.ZP)(i.id, null == S ? true : S.id), Q = (0, o.e7)([p.ZP], () => null != S ? p.ZP.getMember(S.id, i.id) : null), J = (0, h.Ys)({
     pendingValue: D,
     userValue: null == i ? true : i.avatarDecoration,
     guildValue: null == Q ? true : Q.avatarDecoration,
-    guildId: null == T ? true : T.id
+    guildId: null == S ? true : S.id
   }), {
     avatarSrc: $,
     avatarDecorationSrc: ee
   } = (0, d.Z)({
     userId: null == i ? true : i.id,
-    guildId: null == T ? true : T.id,
+    guildId: null == S ? true : S.id,
     avatarDecorationOverride: J,
     avatarOverride: w,
     size: s.EFr.SIZE_80,
@@ -76,7 +76,7 @@ function T(e) {
     pendingValue: j,
     userValue: null == X || null == (t = X._userProfile) ? true : t.profileEffect,
     guildValue: null == X || null == (n = X._guildMemberProfile) ? true : n.profileEffect,
-    guildId: null == T ? true : T.id
+    guildId: null == S ? true : S.id
   }), {
     theme: en,
     primaryColor: er
@@ -84,21 +84,21 @@ function T(e) {
     user: i,
     displayProfile: X,
     pendingThemeColors: M,
-    isPreview: S
+    isPreview: T
   }), ei = (0, r.jsxs)(f.Z, {
     user: i,
     displayProfile: X,
     themeType: O.l.POPOUT,
     pendingThemeColors: M,
     className: a()(I.container, B),
-    forceShowPremium: S,
+    forceShowPremium: T,
     children: [(0, r.jsxs)("div", {
       className: I.header,
       children: [(0, r.jsx)(g.Z, {
         user: i,
         displayProfile: X,
-        guildId: null == T ? true : T.id,
-        canUsePremiumCustomization: S,
+        guildId: null == S ? true : S.id,
+        canUsePremiumCustomization: T,
         pendingBanner: C,
         pendingAccentColor: N,
         isTryItOut: Z,
@@ -108,9 +108,9 @@ function T(e) {
         })
       }), (0, r.jsx)(m.Z, {
         user: i,
-        guild: T,
+        guild: S,
         displayProfile: X,
-        canUsePremiumCustomization: S,
+        canUsePremiumCustomization: T,
         previewAvatar: $,
         previewAvatarDecorationSrc: ee,
         previewTheme: en,
@@ -129,7 +129,7 @@ function T(e) {
     }), (0, r.jsx)(E.Z, {
       user: i,
       displayProfile: X,
-      guild: T,
+      guild: S,
       pendingAvatar: w,
       pendingNickname: x,
       pendingGlobalName: L,

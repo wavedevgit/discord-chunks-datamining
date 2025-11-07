@@ -97,8 +97,8 @@ class v {
   }
 }
 let I = v.empty(),
-  T = false,
-  S = null;
+  S = false,
+  T = null;
 
 function A(e, t, n) {
   return "".concat(e, ":").concat(t, ":").concat(n)
@@ -119,7 +119,7 @@ function N() {
 }
 
 function R() {
-  null != S && (S.destroy(), S = null)
+  null != T && (T.destroy(), T = null)
 }
 
 function P(e) {
@@ -226,7 +226,7 @@ function G(e) {
   } = e, n = l.Z.getMediaEngine();
   if (R(), !n.supports(d.AN.CONNECTION_REPLAY) || 0 === t.length) return;
   let r = n.createReplayConnection(d.Yn.DEFAULT, t);
-  null != r && (S = r, r.on(a.Sh.Video, (e, t, n, i, a) => {
+  null != r && (T = r, r.on(a.Sh.Video, (e, t, n, i, a) => {
     o.Z.dispatch({
       type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT",
       mediaEngineConnectionId: r.mediaEngineConnectionId,
@@ -245,7 +245,7 @@ function Z(e) {
   let {
     value: t
   } = e;
-  T = t
+  S = t
 }
 
 function F(e) {
@@ -294,7 +294,7 @@ class V extends(r = Chunk442837.ZP.Store) {
     return I
   }
   shouldRecordNextConnection() {
-    return T
+    return S
   }
   getSimulcastDebugOverride(e, t) {
     let n = O(e, t);

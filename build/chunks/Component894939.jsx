@@ -36,7 +36,7 @@ function C(e) {
       guildId: t,
       soundId: n
     } = e;
-    return _.Z.getSound(t === T.hY ? T.X8 : t, n)
+    return _.Z.getSound(t === S.hY ? S.X8 : t, n)
   })
 }
 
@@ -85,7 +85,7 @@ function R() {
           value: Chunk710111.hY
         },
         onChange: e => {
-          n(null == e ? T.hY : e.id)
+          n(null == e ? S.hY : e.id)
         },
         renderOptionSuffix: Chunk970813,
         hideDivider: true

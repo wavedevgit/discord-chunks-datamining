@@ -103,8 +103,8 @@ function G(e) {
     endDate: I,
     onClickDetails: E
   }));
-  let T = v ? x.intl.string(x.t["2cHUti"]) : x.intl.string(x.t.O13yhz),
-    S = i.useCallback(() => h(false), []),
+  let S = v ? x.intl.string(x.t["2cHUti"]) : x.intl.string(x.t.O13yhz),
+    T = i.useCallback(() => h(false), []),
     {
       outboundTitle: A,
       outboundTermsAndConditions: C
@@ -135,7 +135,7 @@ function G(e) {
             })]
           })]
         }), !l && (0, r.jsx)(u.Button, {
-          text: T,
+          text: S,
           onClick: () => h(true),
           disabled: l,
           size: "sm"
@@ -150,12 +150,12 @@ function G(e) {
       })]
     }), f && (0, r.jsx)(u.u_l, {
       renderModal: e => (0, r.jsx)(b.Z, U(j({}, e), {
-        onClose: S,
+        onClose: T,
         onClaim: s,
         code: a,
         outboundPromotion: n
       })),
-      onCloseRequest: S
+      onCloseRequest: T
     })]
   })
 }
@@ -168,7 +168,7 @@ let B = function() {
       return null == t
     }),
     a = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk74538.ZP.isPremiumExactly(Chunk594174.default.getCurrentUser(), Chunk474936.PremiumTypes.TIER_2)),
-    s = l().groupBy(exports, e => (0, S.Bg)(e.skuId, e.subscriptionPlanId, e.giftStyle)),
+    s = l().groupBy(exports, e => (0, T.Bg)(e.skuId, e.subscriptionPlanId, e.giftStyle)),
     [_, p] = Chunk647438.useState(false);
   Chunk647438.useEffect(() => {
     Chunk570140.Z.wait(() => {
@@ -315,7 +315,7 @@ let B = function() {
             skuId: t,
             subscriptionPlanId: n,
             giftStyle: i
-          } = (0, S.Z0)(e);
+          } = (0, T.Z0)(e);
           return (0, r.jsx)(N.Z, {
             className: L.skuCard,
             skuId: t,

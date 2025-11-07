@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 125268, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   AX: () => c,
@@ -18,40 +18,40 @@ var Chunk261470 = require("./261470.js"),
   Chunk984063 = require("./984063.js"),
   Chunk981631 = require("./981631.js");
 
-function s(e, t, n, r, i) {
+function s(e, t, n, i, r) {
   l.Z.dispatch({
     type: "SHARED_CANVAS_DRAW_LINE_POINT",
     channelId: e,
     userId: n,
     lineId: t,
-    streamerId: r,
-    point: i
+    streamerId: i,
+    point: r
   })
 }
 
-function c(e, t, n, r) {
-  return i.tn.post({
+function c(e, t, n, i) {
+  return r.tn.post({
     url: o.ANM.SHARED_CANVAS_LINES(e, n),
     body: {
       line_id: t,
-      points: r
+      points: i
     },
     rejectWithError: false
   })
 }
 
-function u(e, t, n, r) {
+function u(e, t, n, i) {
   l.Z.dispatch({
     type: "SHARED_CANVAS_UPDATE_LINE_POINTS",
     userId: t,
     lineId: e,
-    newPoints: r,
+    newPoints: i,
     streamerId: n
   })
 }
 
 function d(e, t, n) {
-  return i.tn.post({
+  return r.tn.post({
     url: o.ANM.SHARED_CANVAS_EMOJI_HOSES(e, t),
     body: {
       emoji_hose: n
@@ -61,9 +61,9 @@ function d(e, t, n) {
 }
 
 function p(e, t, n) {
-  i.tn.del({
+  r.tn.del({
     url: o.ANM.SHARED_CANVAS_EMOJI_HOSE(e, t, n),
-    backoff: new r.Z,
+    backoff: new i.Z,
     rejectWithError: true
   })
 }

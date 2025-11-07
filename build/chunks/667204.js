@@ -80,7 +80,7 @@ function Z(e, t) {
   }), e
 }
 async function F(e) {
-  var t, n, r, o, l, u, d, p, h, m, g, E, b, v, T, S, A;
+  var t, n, r, o, l, u, d, p, h, m, g, E, b, v, S, T, A;
   let {
     command: C,
     optionValues: w,
@@ -178,7 +178,7 @@ async function F(e) {
             if ((0, L.BH)(a.text)) t = a.text.trim();
             else {
               let e = (0, _.K)(a.text, null == (v = j.guild) ? true : v.id, j.channel.id);
-              (null == e ? true : e.type) === "userMention" ? t = e.userId: (null == e ? true : e.type) === "roleMention" ? t = e.roleId : (null == e ? true : e.type) === "textMention" && "@everyone" === e.text ? t = null == (T = j.guild) ? true : T.id : i()(false, "Failed to resolve ".concat(a.text))
+              (null == e ? true : e.type) === "userMention" ? t = e.userId: (null == e ? true : e.type) === "roleMention" ? t = e.roleId : (null == e ? true : e.type) === "textMention" && "@everyone" === e.text ? t = null == (S = j.guild) ? true : S.id : i()(false, "Failed to resolve ".concat(a.text))
             } break;
         case c.jw.BOOLEAN:
           "text" === a.type && (t = (0, R.Kl)(a.text.trim()));
@@ -226,7 +226,7 @@ async function F(e) {
   if (C.inputType === x.iw.BUILT_IN || C.inputType === x.iw.BUILT_IN_TEXT || C.inputType === x.iw.BUILT_IN_INTEGRATION) return;
   let J = {
       version: C.version,
-      id: null != (S = null == (t = C.rootCommand) ? true : t.id) ? S : C.id,
+      id: null != (T = null == (t = C.rootCommand) ? true : t.id) ? T : C.id,
       guild_id: C.guildId,
       name: null != (A = null == (n = C.rootCommand) ? true : n.name) ? A : C.untranslatedName,
       type: C.type,
@@ -357,7 +357,7 @@ async function K(e, t, n) {
       name: n.name,
       name_localized: e.displayName,
       type: c.B8.APPLICATION_COMMAND,
-      user: (0, E.pe)(T.default.getCurrentUser())
+      user: (0, E.pe)(S.default.getCurrentUser())
     },
     interaction_data: n
   });
@@ -427,10 +427,10 @@ async function q(e, t) {
   }
 }
 async function X(e, t, n, r) {
-  let i = (0, S.dg)(n),
+  let i = (0, T.dg)(n),
     a = e => {
       null == r || r(i, e), m.yr(t, M.evJ.ENTITY_TOO_LARGE, k.intl.formatToPlainString(k.t.fxEKdS, {
-        maxSize: (0, S.Ng)(i)
+        maxSize: (0, T.Ng)(i)
       }))
     },
     {

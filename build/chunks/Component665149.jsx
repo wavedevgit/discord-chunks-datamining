@@ -4,7 +4,7 @@
 require.d(exports, {
   JO: () => v,
   ZP: () => C,
-  iz: () => T
+  iz: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -131,8 +131,8 @@ let y = 24,
       onClick: O,
       onContextMenu: v,
       tooltip: I = null,
-      tooltipColor: T,
-      tooltipPosition: S = "bottom",
+      tooltipColor: S,
+      tooltipPosition: T = "bottom",
       tooltipAlign: A,
       tooltipDisabled: C,
       tooltipSpacing: N,
@@ -159,8 +159,8 @@ let y = 24,
     return null == G && "string" == typeof I && (G = I), (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
       text: I,
-      color: T,
-      position: S,
+      color: S,
+      position: T,
       align: A,
       hideOnClick: R,
       shouldShow: !C,
@@ -170,7 +170,7 @@ let y = 24,
           onMouseEnter: g,
           onMouseLeave: y,
           onFocus: I,
-          onBlur: T
+          onBlur: S
         } = e;
         return null == O ? (0, r.jsx)("div", {
           ref: t,
@@ -190,7 +190,7 @@ let y = 24,
             onMouseEnter: g,
             onMouseLeave: y,
             onFocus: I,
-            onBlur: T
+            onBlur: S
           }, k))
         }) : (0, r.jsxs)(c.P3F, {
           innerRef: t,
@@ -200,7 +200,7 @@ let y = 24,
           onMouseEnter: g,
           onMouseLeave: y,
           onFocus: I,
-          onBlur: T,
+          onBlur: S,
           className: o()(n, {
             [_.iconWrapper]: true,
             [_.clickable]: !l && null != O,
@@ -236,7 +236,7 @@ let y = 24,
       ref: t
     }))
   }),
-  T = e => {
+  S = e => {
     let {
       className: t
     } = e;
@@ -245,7 +245,7 @@ let y = 24,
     })
   };
 
-function S(e) {
+function T(e) {
   let {
     direction: t = "right",
     className: n
@@ -308,5 +308,5 @@ let A = e => {
     })
   })
 };
-A.Icon = v, A.ChannelIcon = I, A.Title = O, A.Divider = T, A.Caret = S;
+A.Icon = v, A.ChannelIcon = I, A.Title = O, A.Divider = S, A.Caret = T;
 let C = A

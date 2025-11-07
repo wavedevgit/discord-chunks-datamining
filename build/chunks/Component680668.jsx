@@ -2,7 +2,7 @@
 /** chunk id: 680668, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./997841.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -46,9 +46,9 @@ function I(e) {
   return e
 }
 
-function T(e) {
-  var t, v, T;
-  let S, A, C, {
+function S(e) {
+  var t, v, S;
+  let T, A, C, {
       onTransitionToInviteChannel: N,
       onAcceptInstantInvite: R,
       guild: P,
@@ -91,7 +91,7 @@ function T(e) {
     }, [w, D, K, B, N, R]);
   if (null == P) {
     if (null == w.guild) return (0, r.jsx)(E.Z, {});
-    (P = m.Qs(w.guild)).premiumTier = null != (T = w.guild.premium_tier) ? T : b.Eu4.NONE
+    (P = m.Qs(w.guild)).premiumTier = null != (S = w.guild.premium_tier) ? S : b.Eu4.NONE
   }
   let ee = (0, g.e)({
     isVoiceChannel: F,
@@ -131,7 +131,7 @@ function T(e) {
     })
   })), F ? (A = (0, r.jsx)(_.Z.Channel, {
     channel: G
-  }), S = (0, r.jsxs)("span", {
+  }), T = (0, r.jsxs)("span", {
     className: O.infoTitle,
     children: [y.intl.format(y.t["2wimj5"], {
       guildName: P.name
@@ -142,10 +142,10 @@ function T(e) {
         isBannerVisible: false
       })
     })]
-  })) : null != j && j >= 5 || null != k && k > 0 ? S = (0, r.jsx)(_.Z.Data, {
+  })) : null != j && j >= 5 || null != k && k > 0 ? T = (0, r.jsx)(_.Z.Data, {
     members: j,
     membersOnline: k
-  }) : Z && (S = (0, r.jsx)(_.Z.Channel, {
+  }) : Z && (T = (0, r.jsx)(_.Z.Channel, {
     channel: G,
     guild: P
   })), (0, r.jsxs)(_.Z, {
@@ -162,7 +162,7 @@ function T(e) {
         }), (0, r.jsx)(_.Z.Info, {
           title: A,
           onClick: J,
-          children: S
+          children: T
         })]
       }), (0, r.jsx)("div", {
         className: O.buttonContainer,

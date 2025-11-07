@@ -41,7 +41,7 @@ let R = (e, t) => {
     } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), w = (0, p.Nx)(), D = (0, v.$)(), x = (0, h.Z)(), L = null != x, M = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
       visibilityPercentageRef: j,
       visibilityPercentage: k
-    } = (0, T.E)(!M), U = (0, l.e7)([_.Z], () => _.Z.affinities), G = !L && U.length > 0, B = (0, m.H)(s.I.MARKETING_PAGE_BANNER);
+    } = (0, S.E)(!M), U = (0, l.e7)([_.Z], () => _.Z.affinities), G = !L && U.length > 0, B = (0, m.H)(s.I.MARKETING_PAGE_BANNER);
     return (0, r.jsx)(f.Gt, {
       value: P,
       children: (0, r.jsx)("div", {
@@ -59,7 +59,7 @@ let R = (e, t) => {
               className: N.heroOfferCountdown
             }) : (0, r.jsx)("div", {
               className: N.offerPillContainer,
-              children: (0, r.jsx)(S.Z, {
+              children: (0, r.jsx)(T.Z, {
                 enablePremiumBrandRefresh: true
               })
             })), (0, r.jsx)("div", {

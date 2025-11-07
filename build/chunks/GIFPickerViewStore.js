@@ -59,9 +59,9 @@ let _ = "mp4",
   O = "fixed_width.mp4",
   v = "fixed_width_small.mp4",
   I = "downsized_small.mp4",
-  T = "original.mp4",
-  S = m,
-  A = j(S) ? Chunk377108.EO.VIDEO : Chunk377108.EO.IMAGE,
+  S = "original.mp4",
+  T = m,
+  A = j(T) ? Chunk377108.EO.VIDEO : Chunk377108.EO.IMAGE,
   C = null,
   N = "",
   R = "",
@@ -85,7 +85,7 @@ function j(e) {
     case O:
     case v:
     case I:
-    case T:
+    case S:
     case _:
     case p:
     case h:
@@ -177,7 +177,7 @@ class V extends(r = Chunk442837.ZP.Store) {
     return w
   }
   getSelectedFormat() {
-    return S
+    return T
   }
   getSuggestions() {
     return D

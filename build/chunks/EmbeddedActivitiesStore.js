@@ -26,7 +26,7 @@ var i, Chunk442837 = require("./442837.js"),
   Chunk918559 = require("./918559.js"),
   Chunk981631 = require("./981631.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -116,7 +116,7 @@ function J(e) {
     O = null != y && null != (n = L.get(y)) ? n : R,
     v = null != O && 0 === O.length,
     I = null != (r = j.get(u.id)) ? r : R,
-    T = I.find(e => e.applicationId === d),
+    S = I.find(e => e.applicationId === d),
     A = p.map(e => e.userId),
     N = c.default.getId(),
     P = A.some(e => e === N),
@@ -137,7 +137,7 @@ function J(e) {
       customId: null != (a = null == G ? true : G.customId) ? a : null == Z ? true : Z.customId,
       proxyTicket: h
     };
-  P && null != G && D.set(G.applicationId, C(S({}, G, F), {
+  P && null != G && D.set(G.applicationId, C(T({}, G, F), {
     proxyTicket: null != (o = F.proxyTicket) ? o : G.proxyTicket
   }));
   let V = !M;
@@ -148,7 +148,7 @@ function J(e) {
     location: u,
     participants: p,
     isFirstActivityInChannel: v,
-    isStart: null == T,
+    isStart: null == S,
     referrerId: F.referrerId,
     customId: F.customId,
     inviterUserId: null == B ? true : B.inviterUserId,
@@ -256,8 +256,8 @@ function ea(e) {
     isFirstActivityInChannel: g,
     isStart: b,
     referrerId: O,
-    customId: T,
-    inviterUserId: S,
+    customId: S,
+    inviterUserId: T,
     proxyTicket: A
   } = e, C = (0, m.ZP)(i), N = c.default.getSessionId();
   if (null == C || null == N || (null == (t = D.get(i)) ? true : t.location.id) === l.id) returnfalse;
@@ -276,7 +276,7 @@ function ea(e) {
     compositeInstanceId: s,
     location: l,
     referrerId: O,
-    customId: T,
+    customId: S,
     proxyTicket: A
   };
   D.set(i, x), _.S.dispatch(I.CkL.OPEN_EMBEDDED_ACTIVITY, {
@@ -286,7 +286,7 @@ function ea(e) {
     isStart: b,
     participants: p,
     embeddedActivity: x,
-    inviterUserId: S
+    inviterUserId: T
   }), (0, h.R)() ? (z = v.Ez.ACTIVITY_POPOUT_WINDOW, o.Z.wait(() => {
     o.Z.dispatch({
       type: "ACTIVITY_POPOUT_WINDOW_OPEN"
@@ -316,7 +316,7 @@ function el(e) {
   if (null == n) returnfalse;
   let r = D.get(null != (t = n.application_id) ? t : "");
   if (null == r) returnfalse;
-  D.set(r.applicationId, S({}, r))
+  D.set(r.applicationId, T({}, r))
 }
 
 function ec(e) {
@@ -324,7 +324,7 @@ function ec(e) {
     applicationId: t,
     config: n
   } = e, r = D.get(t);
-  null != r && D.set(r.applicationId, C(S({}, r), {
+  null != r && D.set(r.applicationId, C(T({}, r), {
     config: n
   }))
 }
@@ -409,7 +409,7 @@ function eh(e) {
     channelId: n,
     proxyTicket: r
   } = e, i = k(n, t), a = U.get(i);
-  null != a && U.set(i, C(S({}, a), {
+  null != a && U.set(i, C(T({}, a), {
     proxyTicket: r
   }))
 }
@@ -420,7 +420,7 @@ function em(e) {
     proxyTicket: n
   } = e, r = D.get(t);
   if (null == r) returnfalse;
-  D.set(t, C(S({}, r), {
+  D.set(t, C(T({}, r), {
     proxyTicket: n
   }))
 }
@@ -487,14 +487,14 @@ function eI(e) {
   z = t
 }
 
-function eT(e) {
+function eS(e) {
   let {
     focusedActivityLayout: t
   } = e;
   q = t
 }
 
-function eS(e) {
+function eT(e) {
   let {
     applicationId: t,
     layoutMode: n
@@ -526,7 +526,7 @@ class eR extends(i = Chunk442837.ZP.PersistedStore) {
     var t;
     this.waitFor(c.default, u.Z, d.Z, f.default);
     let n = new Set(null != (t = null == e ? true : e.everLaunchedActivities) ? t : []);
-    null != e && (N = C(S({}, e), {
+    null != e && (N = C(T({}, e), {
       everLaunchedActivities: n
     }))
   }
@@ -646,25 +646,25 @@ class eR extends(i = Chunk442837.ZP.PersistedStore) {
     return X
   }
 }
-T(eR, "displayName", "EmbeddedActivitiesStore"), T(eR, "persistKey", "EmbeddedActivities"), T(eR, "migrations", [e => C(S({}, e), {
+S(eR, "displayName", "EmbeddedActivitiesStore"), S(eR, "persistKey", "EmbeddedActivities"), S(eR, "migrations", [e => C(T({}, e), {
   seenFeaturedActivities: [],
   shouldShowNewActivityIndicator: false
-}), e => (delete e.seenFeaturedActivities, S({}, e)), e => (delete e.seenActivities, S({}, e)), e => (delete e.currentFreeActivity, delete e.lastFreeActivityRotationTimestampMs, delete e.freePeriodActivities, delete e.shouldShowFreeActivityIndicator, S({}, e)), e => C(S({}, e), {
+}), e => (delete e.seenFeaturedActivities, T({}, e)), e => (delete e.seenActivities, T({}, e)), e => (delete e.currentFreeActivity, delete e.lastFreeActivityRotationTimestampMs, delete e.freePeriodActivities, delete e.shouldShowFreeActivityIndicator, T({}, e)), e => C(T({}, e), {
   seenNewActivities: {},
   seenUpdatedActivities: {}
 }), e => {
   var t;
   let n = new Set(null != (t = e.everLaunchedActivities) ? t : []);
-  return C(S({}, e), {
+  return C(T({}, e), {
     everLaunchedActivities: n
   })
-}, e => (delete e.usersHavePlayedByApp, S({}, e)), e => (e.surfacesToShowNewActivityIndicator = new Set, e.shouldShowNewActivityIndicator && e.surfacesToShowNewActivityIndicator.add(s.eR.VOICE_LAUNCHER), delete e.shouldShowNewActivityIndicator, S({}, e)), e => C(S({}, e), {
+}, e => (delete e.usersHavePlayedByApp, T({}, e)), e => (e.surfacesToShowNewActivityIndicator = new Set, e.shouldShowNewActivityIndicator && e.surfacesToShowNewActivityIndicator.add(s.eR.VOICE_LAUNCHER), delete e.shouldShowNewActivityIndicator, T({}, e)), e => C(T({}, e), {
   lastCheckedForBadgeableActivities: null
-}), e => (delete e.surfacesToShowNewActivityIndicator, C(S({}, e), {
+}), e => (delete e.surfacesToShowNewActivityIndicator, C(T({}, e), {
   dateRangesForSurfaces: {}
 }))]);
 let eP = new eR(Chunk570140.Z, {
-    ACTIVITY_LAYOUT_MODE_UPDATE: eS,
+    ACTIVITY_LAYOUT_MODE_UPDATE: eT,
     CONNECTION_OPEN_SUPPLEMENTAL: et,
     GUILD_CREATE: en,
     CHANNEL_DELETE: er,
@@ -685,7 +685,7 @@ let eP = new eR(Chunk570140.Z, {
     EMBEDDED_ACTIVITY_FETCH_SHELF_FAIL: ed,
     EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE: ev,
     EMBEDDED_ACTIVITY_SET_PANEL_MODE: eI,
-    EMBEDDED_ACTIVITY_SET_FOCUSED_LAYOUT: eT,
+    EMBEDDED_ACTIVITY_SET_FOCUSED_LAYOUT: eS,
     CHANNEL_SELECT: eA,
     POPOUT_WINDOW_CLOSE: eN
   }),

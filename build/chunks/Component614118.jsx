@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk54602 = require("./54602.js");
 
 function O(e) {
-  var t, n, O, v, I, T, S, A;
+  var t, n, O, v, I, S, T, A;
   let {
     guildId: C,
     skuId: N
@@ -85,7 +85,7 @@ function O(e) {
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/semibold",
             lineClamp: 1,
-            children: (0, d.T4)(null != (I = null == (t = P.price) ? true : t.amount) ? I : 0, null != (T = null == (n = P.price) ? true : n.currency) ? T : E.pK.USD)
+            children: (0, d.T4)(null != (I = null == (t = P.price) ? true : t.amount) ? I : 0, null != (S = null == (n = P.price) ? true : n.currency) ? S : E.pK.USD)
           })]
         })]
       }), (0, r.jsxs)(a.hE2, {
@@ -100,7 +100,7 @@ function O(e) {
           variant: "primary",
           onClick: M,
           text: b.intl.format(b.t.Xp5WTn, {
-            price: (0, d.T4)(null != (S = null == (O = P.price) ? true : O.amount) ? S : 0, null != (A = null == (v = P.price) ? true : v.currency) ? A : E.pK.USD)
+            price: (0, d.T4)(null != (T = null == (O = P.price) ? true : O.amount) ? T : 0, null != (A = null == (v = P.price) ? true : v.currency) ? A : E.pK.USD)
           }),
           fullWidth: true
         }), (0, r.jsx)(m.Z, {

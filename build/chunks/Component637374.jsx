@@ -343,7 +343,7 @@ class z extends Chunk647438.Component {
         }
       })
     }), F(this, "handleVerificationClick", e => {
-      e.stopPropagation(), e.preventDefault(), (0, T.openUserSettings)(I.n.ACCOUNT_PANEL, {
+      e.stopPropagation(), e.preventDefault(), (0, S.openUserSettings)(I.n.ACCOUNT_PANEL, {
         section: U.oAB.ACCOUNT
       })
     }), F(this, "handleAccept", e => {
@@ -371,7 +371,7 @@ class z extends Chunk647438.Component {
       let {
         giftCode: t
       } = this.props;
-      null != t && t.isSubscription && (e.preventDefault(), (0, T.openUserSettings)(I.n.NITRO_PANEL, {
+      null != t && t.isSubscription && (e.preventDefault(), (0, S.openUserSettings)(I.n.NITRO_PANEL, {
         section: U.oAB.PREMIUM
       }))
     }), F(this, "handleClaimPromotion", e => {
@@ -421,7 +421,7 @@ let q = (0, Chunk112724.Z)((0, Chunk730749.Z)(z)),
       gifter: o,
       currentUser: r,
       subscriptionPlan: null != i && null != i.subscriptionPlanId ? (0, M.oE)(i.subscriptionPlanId) : null,
-      isSelfGift: null != i ? S.default.getId() === i.userId : S.default.getId() === n.id,
+      isSelfGift: null != i ? T.default.getId() === i.userId : T.default.getId() === n.id,
       resolved: A.Z.getIsResolved(t),
       libraryApplication: null != a && (null == i ? true : i.entitlementBranches) != null ? x.z2(i.entitlementBranches, a, C.Z) : null
     }

@@ -49,18 +49,18 @@ function b(e) {
   } = (0, h.sI)(), {
     experiments: O,
     overridesInfo: v
-  } = (0, _.Qb)(), I = i.useMemo(() => null == n ? null : null != b[n] ? b[n] : O[n], [b, O, n]), T = i.useMemo(() => {
+  } = (0, _.Qb)(), I = i.useMemo(() => null == n ? null : null != b[n] ? b[n] : O[n], [b, O, n]), S = i.useMemo(() => {
     if (null == n);
     else if (null != y[n]) return y[n];
     else if (null != v[n]) return v[n]
-  }, [y, v, n]), S = s.default.getId(), A = (0, p.aN)(I, S), C = i.useMemo(() => (0, u.rB)(I, A), [A, I]), N = (0, a.e7)([l.default], () => {
+  }, [y, v, n]), T = s.default.getId(), A = (0, p.aN)(I, T), C = i.useMemo(() => (0, u.rB)(I, A), [A, I]), N = (0, a.e7)([l.default], () => {
     let e = l.default.getCurrentUser();
     return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
   });
   if (null == n || null == I) return null;
   let R = (0, u.ak)(I).find(e => e.value === c),
     P = null != R ? m.su.EXPERIMENT_TREATMENT : m.su.EXPERIMENT,
-    w = null != T && null != R && T.variantId === R.value,
+    w = null != S && null != R && S.variantId === R.value,
     D = () => {
       null != R && (w ? (0, d.rX)(I.system, n, null) : (0, d.rX)(I.system, n, R.value))
     },
@@ -110,7 +110,7 @@ function b(e) {
       children: (0, r.jsx)(f.y, {
         experiment: I,
         experimentId: n,
-        overrideInfo: T
+        overrideInfo: S
       })
     })]
   }) : null

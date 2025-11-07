@@ -61,7 +61,7 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = e => {
+let S = e => {
     let {
       startingScreen: t,
       analyticsLocations: i
@@ -77,7 +77,7 @@ let T = e => {
       }))
     })
   },
-  S = e => {
+  T = e => {
     let {
       user: t
     } = e, {
@@ -110,7 +110,7 @@ let T = e => {
       let e = [];
       for (let n = 0; n < p.Q; n++)
         if ((null == t ? true : t[n]) !== true) {
-          let i = (0, r.jsx)(S, {
+          let i = (0, r.jsx)(T, {
             user: t[n]
           }, t[n].id);
           e.push(i)
@@ -185,7 +185,7 @@ let T = e => {
           variant: "primary",
           disabled: false === l || true === d,
           text: g.intl.string(g.t.Lm2nFc),
-          onClick: () => T({
+          onClick: () => S({
             startingScreen: h.SelectFriendsModalScreens.SELECT_FRIENDS,
             analyticsLocations: []
           })

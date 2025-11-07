@@ -62,7 +62,7 @@ function u(e) {
 }
 
 function d(e, t) {
-  var n, i, a, o, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, T, S, A, C, N, R, P, w, D;
+  var n, i, a, o, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, S, T, A, C, N, R, P, w, D;
   let x = e.substreams.find(e => !e.isRTX && !e.isFlexFEC);
   if (null == x) return;
   let L = e.substreams.reduce((e, t) => e + s(t.rtpStats), 0),
@@ -96,8 +96,8 @@ function d(e, t) {
     frameRateInput: e.inputFrameRate,
     frameRateEncode: e.encodeFrameRate,
     firCount: null != (I = null == (a = x.rtcpStats) ? true : a.firPackets) ? I : 0,
-    nackCount: null != (T = null == (o = x.rtcpStats) ? true : o.nackPackets) ? T : 0,
-    pliCount: null != (S = null == (c = x.rtcpStats) ? true : c.pliPackets) ? S : 0,
+    nackCount: null != (S = null == (o = x.rtcpStats) ? true : o.nackPackets) ? S : 0,
+    pliCount: null != (T = null == (c = x.rtcpStats) ? true : c.pliPackets) ? T : 0,
     qpSum: e.qpSum,
     bandwidthLimitedResolution: e.bwLimitedResolution,
     framesDroppedRateLimiter: e.framesDroppedRateLimiter,
@@ -331,19 +331,19 @@ function _(e, t, n, i) {
   } = E, I = {};
   null != O && (I.availableOutgoingBitrate = O.sendBandwidth, I.ping = O.rtt, I.decryptionFailures = O.decryptionFailures, null != O.routingFailures && (I.routingFailures = O.routingFailures), I.localAddress = O.localAddress, I.pacerDelay = O.pacerDelay, null != O.receiverReports && (I.receiverReports = O.receiverReports), I.receiverBitrateEstimate = O.receiverBitrateEstimate, I.outboundBitrateEstimate = O.outboundBitrateEstimate, I.inboundBitrateEstimate = null != (l = O.inboundBitrateEstimate) ? l : 0, I.packetsReceived = O.packetsReceived, I.packetsSent = O.packetsSent, null != O.secureFramesProtocolVersion && (I.secureFramesProtocolVersion = O.secureFramesProtocolVersion)), (null == O ? true : O.bytesReceived) == null && (null == m || Number.isNaN(m)) || (I.bytesReceived = null != (_ = null != (c = null == O ? true : O.bytesReceived) ? c : m) ? _ : true), (null == O ? true : O.bytesSent) == null && (null == g || Number.isNaN(g)) || (I.bytesSent = null != (h = null != (p = null == O ? true : O.bytesSent) ? p : g) ? h : true);
   let {
-    screenshare: T,
-    camera: S,
+    screenshare: S,
+    camera: T,
     audioDevice: A
   } = E;
   return {
     mediaEngineConnectionId: e,
     transport: I,
-    screenshare: T,
-    camera: null != S ? {
-      capturedFramesDropped: S.capturedFramesDropped,
-      capturedFramesCount: S.capturedFramesCount,
-      capturedFramesMean: S.capturedFramesMean,
-      capturedFramesStdev: S.capturedFramesStdev
+    screenshare: S,
+    camera: null != T ? {
+      capturedFramesDropped: T.capturedFramesDropped,
+      capturedFramesCount: T.capturedFramesCount,
+      capturedFramesMean: T.capturedFramesMean,
+      capturedFramesStdev: T.capturedFramesStdev
     } : null,
     clips: v,
     audioDevice: A,

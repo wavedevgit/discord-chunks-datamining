@@ -39,21 +39,21 @@ function C(e) {
     previousPremiumSubscription: o
   } = e;
   if (!t) returnfalse;
-  if (null != r && r.status === S.O0b.ENDED) {
+  if (null != r && r.status === T.O0b.ENDED) {
     let e = r.endedAt,
-      t = r.hasPremiumAtLeast(T.PremiumTypes.TIER_2);
+      t = r.hasPremiumAtLeast(S.PremiumTypes.TIER_2);
     if (null != e && t && i()().subtract(A, "days").isBefore(e)) returnfalse
   }
-  if (null != o && o.status === S.O0b.ENDED) {
+  if (null != o && o.status === T.O0b.ENDED) {
     let e = o.endedAt,
-      t = o.hasPremiumAtLeast(T.PremiumTypes.TIER_2);
+      t = o.hasPremiumAtLeast(S.PremiumTypes.TIER_2);
     if (null != e && t && i()().subtract(A, "days").isBefore(e)) returnfalse
   }
   if (null != n) {
-    let e = n.hasPremiumAtLeast(T.PremiumTypes.TIER_2),
+    let e = n.hasPremiumAtLeast(S.PremiumTypes.TIER_2),
       t = c.default.getCurrentUser(),
-      r = !!(null == n ? true : n.hasActiveTrial) && p.ZP.isPremiumExactly(t, T.PremiumTypes.TIER_0),
-      i = (0, _.isAndroid)() && n.paymentGateway !== S.gg$.GOOGLE;
+      r = !!(null == n ? true : n.hasActiveTrial) && p.ZP.isPremiumExactly(t, S.PremiumTypes.TIER_0),
+      i = (0, _.isAndroid)() && n.paymentGateway !== T.gg$.GOOGLE;
     if (e || r || i) returnfalse
   }
   return !(a.tq && f.Z.isFractionalPremiumActive())
@@ -90,8 +90,8 @@ function N() {
     p = (0, Chunk639119.N)(),
     O = (0, Chunk104494.Ng)(),
     I = new Date(null != (e = null == Chunk913527 ? true : Chunk913527.endDate) ? module : 0).valueOf(),
-    T = Date.now(),
-    S = Chunk474936 > Chunk1844;
+    S = Date.now(),
+    T = Chunk474936 > Chunk1844;
   (0, Chunk921022.Z)({
     delay: Chunk981631 ? false : Chunk1844 - Chunk474936
   });

@@ -1,28 +1,29 @@
-/** Chunk was on 35755 **/
-/** chunk id: 182906, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 182906, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk558522 = require("./558522.jsx"),
   Chunk568126 = require("./568126.js");
 
-function o(e) {
+function s(e) {
   let {
     imageBackground: t,
     applicationName: n,
-    imageClassName: o,
-    imageNotFoundClassName: s
-  } = e, [c, u] = l.useState(false);
-  return "not-found" === t.state || c ? (0, i.jsx)("div", {
-    className: s,
-    children: (0, i.jsx)(r.Z, {
-      className: a.brokenImageIcon
+    imageClassName: s,
+    imageNotFoundClassName: l
+  } = e, [c, u] = i.useState(false);
+  return "not-found" === t.state || c ? (0, r.jsx)("div", {
+    className: l,
+    children: (0, r.jsx)(a.Z, {
+      className: o.brokenImageIcon
     })
-  }) : "loading" === t.state ? null : (0, i.jsx)("img", {
+  }) : "loading" === t.state ? null : (0, r.jsx)("img", {
     alt: n,
-    className: o,
+    className: s,
     src: t.url,
     onError: () => u(true)
   })

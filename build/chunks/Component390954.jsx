@@ -2,7 +2,7 @@
 /** chunk id: 390954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js"), require("./642613.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -117,7 +117,7 @@ b(I, "defaultProps", {
   hideDivider: false,
   onEditClick: () => {}
 });
-class T extends Chunk647438.PureComponent {
+class S extends Chunk647438.PureComponent {
   renderFooter() {
     let {
       paymentSources: e
@@ -222,4 +222,4 @@ class T extends Chunk647438.PureComponent {
     })
   }
 }
-let S = T
+let T = S

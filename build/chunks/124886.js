@@ -1,5 +1,6 @@
-/** Chunk was on 13140 **/
-/** chunk id: 124886, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 124886, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   buttonContainer: "buttonContainer_e6e74f",
   button: "button_e6e74f",

@@ -120,8 +120,8 @@ function P(e) {
         }), (0, r.jsxs)(O.Z, {
           user: n,
           displayProfile: G,
-          themeType: S.l.POPOUT,
-          children: [(0, r.jsx)(T.Z, {
+          themeType: T.l.POPOUT,
+          children: [(0, r.jsx)(S.Z, {
             children: (0, r.jsx)(I.Z, {
               user: n,
               viewProfileItem: W()
@@ -132,13 +132,13 @@ function P(e) {
               user: n,
               displayProfile: G,
               guildId: N,
-              themeType: S.l.POPOUT
+              themeType: T.l.POPOUT
             }), (0, r.jsx)(g.Z, {
               user: n,
               displayProfile: G,
               guildId: N,
               channelId: P,
-              themeType: S.l.POPOUT,
+              themeType: T.l.POPOUT,
               onOpenProfile: Y ? H : true
             })]
           }), (0, r.jsxs)(a.Ttm, {
@@ -151,7 +151,7 @@ function P(e) {
               onOpenProfile: Y ? H : true,
               tags: (0, r.jsx)(E.Z, {
                 displayProfile: G,
-                themeType: S.l.POPOUT,
+                themeType: T.l.POPOUT,
                 onClose: M
               })
             }), (0, r.jsx)(y.Z, {

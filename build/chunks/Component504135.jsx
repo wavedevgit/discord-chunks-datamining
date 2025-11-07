@@ -68,8 +68,8 @@ function E(e) {
     hasSubmenu: O,
     disabled: v,
     isFocused: I,
-    menuItemProps: T,
-    action: S,
+    menuItemProps: S,
+    action: T,
     onClose: A,
     onFocus: C,
     className: N,
@@ -85,9 +85,9 @@ function E(e) {
     var t;
     if (null == M || M({
         type: c.U.DEFAULT
-      }), null == S) returnfalse;
-    e.shiftKey && w || D || A(), e.persist(), null == L || L(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => S(e))
-  }, [S, A, L, w, D, M]);
+      }), null == T) returnfalse;
+    e.shiftKey && w || D || A(), e.persist(), null == L || L(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => T(e))
+  }, [T, A, L, w, D, M]);
   return i.useEffect(() => {
     I && ((0, u.F)(j), null == C || C())
   }, [I, C]), (0, r.jsxs)(s.P3F, g(h({
@@ -99,7 +99,7 @@ function E(e) {
     }),
     onClick: v ? true : k,
     "aria-disabled": v
-  }, T), {
+  }, S), {
     "data-menu-item": "true",
     children: [null != p && (0, r.jsx)("div", {
       className: o()(_.iconContainerLeft, {

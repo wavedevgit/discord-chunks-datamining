@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk641984 = require("./641984.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -105,8 +105,8 @@ function M(e) {
     canManageRoles: p,
     onAddRole: h,
     onRemoveRole: b
-  } = e, S = i.useRef({}), C = (e, t) => {
-    null != t ? S.current[e] = t : delete S.current[e]
+  } = e, T = i.useRef({}), C = (e, t) => {
+    null != t ? T.current[e] = t : delete T.current[e]
   }, [P, M] = i.useState(f), [j, k] = i.useState(D), [U, G] = i.useState(false), B = i.useRef(null), Z = i.useRef(null), F = i.useRef(0);
   i.useLayoutEffect(() => {
     F.current = 0
@@ -120,7 +120,7 @@ function M(e) {
       let t = e === x - 1 ? r : D;
       for (let e = 0, r = n.length; r < f.length; r++) {
         let i = f[r],
-          a = S.current[i.id];
+          a = T.current[i.id];
         if (null == a) {
           0 === F.current && n.push(i);
           continue
@@ -179,7 +179,7 @@ function M(e) {
           ref: t
         } = e, n = R(e, ["ref"]);
         return (0, r.jsxs)("div", N(A({
-          className: T.root,
+          className: S.root,
           "aria-label": W,
           ref: t
         }, n), {
@@ -188,7 +188,7 @@ function M(e) {
             text: I.intl.string(I.t.XnXtCt),
             children: (0, r.jsx)(u.P3F, {
               onClick: X,
-              className: T.collapseButton,
+              className: S.collapseButton,
               children: (0, r.jsx)(m.Z, {
                 direction: m.Z.Directions.LEFT,
                 width: 12,
@@ -201,7 +201,7 @@ function M(e) {
             children: (0, r.jsx)(u.P3F, {
               innerRef: B,
               onClick: q,
-              className: T.expandButton,
+              className: S.expandButton,
               children: (0, r.jsx)(u.Text, {
                 variant: "text-xs/medium",
                 children: "+".concat(f.length - P.length)
@@ -241,8 +241,8 @@ function j(e) {
     });
     let n = null != c ? c : [];
     n.includes(e) || (n = [...n, e]), f.Z.updateMemberRoles(a.id, t.id, n, [e], [])
-  }, [c, a.id, t.id, o]), T = y && null != s;
-  return 0 !== u.length || T ? (0, r.jsx)(M, {
+  }, [c, a.id, t.id, o]), S = y && null != s;
+  return 0 !== u.length || S ? (0, r.jsx)(M, {
     user: t,
     currentUser: n,
     guild: a,

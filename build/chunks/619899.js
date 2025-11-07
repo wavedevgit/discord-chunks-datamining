@@ -225,15 +225,15 @@ let y = (0, Chunk191336.U)(e => ({
       return a
     }, [o, e])
   },
-  T = (e, t) => p(f({}, e), {
+  S = (e, t) => p(f({}, e), {
     asset: t.src
   }),
-  S = (e, t) => {
+  T = (e, t) => {
     if (e.type !== o.Z.AVATAR_DECORATION) return e;
     let n = (0, i.cloneDeep)(e);
     if (n.items.length > 0) {
       let r = n.items[0];
-      e.name = t.name.replace(".png", ""), n.items[0] = T(r, t)
+      e.name = t.name.replace(".png", ""), n.items[0] = S(r, t)
     }
     return n
   },
@@ -251,11 +251,11 @@ let y = (0, Chunk191336.U)(e => ({
       if (!t || 0 === r.length || 0 === e.length) return e;
       if (null != n) {
         let t = i[n];
-        return null == t ? e : e.map(e => S(e, t))
+        return null == t ? e : e.map(e => T(e, t))
       }
       return e.map((e, t) => {
         let n = t % r.length;
-        return S(e, r[n])
+        return T(e, r[n])
       })
     }, [e, t, n, i])
   },
@@ -267,7 +267,7 @@ let y = (0, Chunk191336.U)(e => ({
     return r.useMemo(() => {
       if (null == e || e.type !== o.Z.AVATAR_DECORATION || 0 === e.items.length) return e;
       let r = A(t, i, n);
-      return null == r ? e : S(e, r)
+      return null == r ? e : T(e, r)
     }, [e, t, n, i])
   },
   R = e => {
@@ -278,6 +278,6 @@ let y = (0, Chunk191336.U)(e => ({
     return r.useMemo(() => {
       if (null == e) return null;
       let r = A(t, i, n);
-      return null == r ? e : T(e, r)
+      return null == r ? e : S(e, r)
     }, [e, t, n, i])
   }

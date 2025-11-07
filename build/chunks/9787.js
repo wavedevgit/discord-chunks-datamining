@@ -54,12 +54,12 @@ function v() {
   }
 }
 let I = Chunk647438.createContext(null),
-  T = Chunk647438.createContext(null),
-  S = () => {
+  S = Chunk647438.createContext(null),
+  T = () => {
     var e;
     return (null == (e = Chunk647438.useContext(I)) ? true : module.id) || null
   },
-  A = () => Chunk647438.useContext(T);
+  A = () => Chunk647438.useContext(S);
 
 function C(e) {
   return "data-floating-ui-" + e
@@ -174,8 +174,8 @@ function z(e, t) {
     escapeKey: v,
     outsidePress: I
   } = K(m), {
-    escapeKey: T,
-    outsidePress: S
+    escapeKey: S,
+    outsidePress: T
   } = K(g), N = i.useRef(false), R = (0, a.iW)(e => {
     var t;
     if (!n || !c || !u || "Escape" !== e.key || N.current) return;
@@ -273,7 +273,7 @@ function z(e, t) {
       }, 5 * !!(0, o.Pf)())
     }
     let _ = (0, a.Me)(s.floating);
-    u && (_.addEventListener("keydown", T ? P : R, T), _.addEventListener("compositionstart", i), _.addEventListener("compositionend", d)), y && _.addEventListener(f, S ? D : w, S);
+    u && (_.addEventListener("keydown", S ? P : R, S), _.addEventListener("compositionstart", i), _.addEventListener("compositionend", d)), y && _.addEventListener(f, T ? D : w, T);
     let p = [];
     return h && ((0, o.kK)(s.domReference) && (p = (0, o.Kx)(s.domReference)), (0, o.kK)(s.floating) && (p = p.concat((0, o.Kx)(s.floating))), !(0, o.kK)(s.reference) && s.reference && s.reference.contextElement && (p = p.concat((0, o.Kx)(s.reference.contextElement)))), (p = p.filter(e => {
       var t;
@@ -283,11 +283,11 @@ function z(e, t) {
         passive: true
       })
     }), () => {
-      u && (_.removeEventListener("keydown", T ? P : R, T), _.removeEventListener("compositionstart", i), _.removeEventListener("compositionend", d)), y && _.removeEventListener(f, S ? D : w, S), p.forEach(e => {
+      u && (_.removeEventListener("keydown", S ? P : R, S), _.removeEventListener("compositionstart", i), _.removeEventListener("compositionend", d)), y && _.removeEventListener(f, T ? D : w, T), p.forEach(e => {
         e.removeEventListener("scroll", t)
       }), window.clearTimeout(e)
     }
-  }, [l, s, u, y, f, n, r, h, c, v, I, R, T, P, w, S, D]), i.useEffect(() => {
+  }, [l, s, u, y, f, n, r, h, c, v, I, R, S, P, w, T, D]), i.useEffect(() => {
     l.current.insideReactTree = false
   }, [l, y, f]);
   let x = i.useMemo(() => ({
@@ -326,7 +326,7 @@ function q(e) {
     open: t = false,
     onOpenChange: n,
     elements: r
-  } = e, o = O(), s = i.useRef({}), [l] = i.useState(() => v()), c = null != S(), [u, d] = i.useState(r.reference), f = (0, a.iW)((e, t, r) => {
+  } = e, o = O(), s = i.useRef({}), [l] = i.useState(() => v()), c = null != T(), [u, d] = i.useState(r.reference), f = (0, a.iW)((e, t, r) => {
     s.current.openEvent = e ? t : true, l.emit("openchange", {
       open: e,
       event: t,

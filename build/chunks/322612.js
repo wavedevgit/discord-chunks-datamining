@@ -27,9 +27,9 @@ function O(e, t, n) {
   let O = (0, m.useRef)(""),
     {
       locale: I,
-      direction: T
+      direction: S
     } = (0, g.j)(),
-    S = (0, i.J)(),
+    T = (0, i.J)(),
     {
       ariaLabel: A,
       ariaLabelledBy: C,
@@ -218,7 +218,7 @@ function O(e, t, n) {
   e === (0, m.useMemo)(() => t.segments.find(e => e.isEditable), [t.segments]) || t.isInvalid || (N = true);
   let q = (0, f.Me)(),
     X = !t.isDisabled && !t.isReadOnly && e.isEditable,
-    Q = "literal" === e.type ? "" : S.of(e.type),
+    Q = "literal" === e.type ? "" : T.of(e.type),
     J = (0, _.b)({
       "aria-label": `${Q}${A?`, ${A}`:""}${C?", ":""}`,
       "aria-labelledby": C
@@ -231,7 +231,7 @@ function O(e, t, n) {
   let $ = {
     caretColor: "transparent"
   };
-  if ("rtl" === T) {
+  if ("rtl" === S) {
     $.unicodeBidi = "embed";
     let t = w[e.type];
     ("numeric" === t || "2-digit" === t) && ($.direction = "ltr")

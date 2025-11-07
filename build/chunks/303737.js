@@ -7,7 +7,7 @@ require.d(exports, {
   g4: () => E,
   m7: () => g,
   r4: () => v,
-  sO: () => T,
+  sO: () => S,
   yL: () => I
 }), require("./539854.js"), require("./388685.js"), require("./993155.js"), require("./953529.js");
 var Chunk991637 = require("./991637.js"),
@@ -161,6 +161,6 @@ function I(e, t) {
   }
 }
 
-function T(e) {
+function S(e) {
   return (0, f.H2)(e) && e.features.has(p.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED) && (0, c.$F)() && (0, c.hQ)(e.id)
 }

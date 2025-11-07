@@ -2,7 +2,7 @@
 /** chunk id: 862077, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -46,13 +46,13 @@ function I(e) {
   return e
 }
 
-function T(e) {
+function S(e) {
   let {
     user: t,
     guildId: n,
     setPopoutRef: v,
-    channelId: T,
-    messageId: S,
+    channelId: S,
+    messageId: T,
     roleId: A,
     openedAt: C,
     onHide: N,
@@ -64,8 +64,8 @@ function T(e) {
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
-    channelId: T,
-    messageId: S,
+    channelId: S,
+    messageId: T,
     roleId: A
   }), L = i.useRef(null), M = (0, _.ZP)(t.id, n);
   i.useEffect(() => {
@@ -108,7 +108,7 @@ function T(e) {
                 }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
                   children: b.intl.format(w ? b.t["8F+WNz"] : b.t["/cZp5s"], {
-                    username: u.ZP.getName(n, T, t)
+                    username: u.ZP.getName(n, S, t)
                   })
                 })]
               }), (0, r.jsxs)(o.Kqy, {

@@ -28,7 +28,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,7 +53,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -154,16 +154,16 @@ function F(e) {
     defaultForumLayout: O,
     defaultTagSetting: v,
     iconEmoji: I,
-    themeColor: S
+    themeColor: T
   } = e;
   if (null == o) returnfalse;
-  null != t && (o = o.set("name", t)), null != r && (o = o.set("topic", r)), null != i && (o = o.set("bitrate", i)), null != a && (o = o.set("userLimit", a)), null != s && (o = o.set("nsfw", s)), null != l && (o = o.set("flags", l)), null != c && (o = o.set("rateLimitPerUser", c)), null != u && (o = o.set("defaultThreadRateLimitPerUser", u)), null != d && (o = o.set("threadMetadata", A(T({}, o.threadMetadata), {
+  null != t && (o = o.set("name", t)), null != r && (o = o.set("topic", r)), null != i && (o = o.set("bitrate", i)), null != a && (o = o.set("userLimit", a)), null != s && (o = o.set("nsfw", s)), null != l && (o = o.set("flags", l)), null != c && (o = o.set("rateLimitPerUser", c)), null != u && (o = o.set("defaultThreadRateLimitPerUser", u)), null != d && (o = o.set("threadMetadata", A(S({}, o.threadMetadata), {
     autoArchiveDuration: d
-  }))), null != f && (o = o.set("threadMetadata", A(T({}, o.threadMetadata), {
+  }))), null != f && (o = o.set("threadMetadata", A(S({}, o.threadMetadata), {
     locked: f
-  }))), null != _ && (o = o.set("threadMetadata", A(T({}, o.threadMetadata), {
+  }))), null != _ && (o = o.set("threadMetadata", A(S({}, o.threadMetadata), {
     invitable: _
-  }))), null != p && (o = o.set("defaultAutoArchiveDuration", p)), null != h && (o = o.set("template", h)), null != n && (o = o.set("type", n)), true !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), true !== m && (o = o.set("defaultReactionEmoji", m)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), true !== I && (o = o.set("iconEmoji", I)), null != S && (o = o.set("themeColor", S)), Z()
+  }))), null != p && (o = o.set("defaultAutoArchiveDuration", p)), null != h && (o = o.set("template", h)), null != n && (o = o.set("type", n)), true !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), true !== m && (o = o.set("defaultReactionEmoji", m)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), true !== I && (o = o.set("iconEmoji", I)), null != T && (o = o.set("themeColor", T)), Z()
 }
 
 function V(e) {
@@ -189,11 +189,11 @@ function H(e) {
 }
 
 function Y(e) {
-  R = T({}, R), delete R[e.code]
+  R = S({}, R), delete R[e.code]
 }
 
 function W(e) {
-  R = A(T({}, R), {
+  R = A(S({}, R), {
     [e.invite.code]: V(e.invite)
   })
 }

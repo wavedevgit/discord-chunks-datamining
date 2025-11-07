@@ -4,7 +4,7 @@
 require.d(exports, {
   Gy: () => C,
   Vy: () => N,
-  a0: () => S,
+  a0: () => T,
   rC: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -59,12 +59,12 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = e => {
+let T = e => {
     let {
       skuId: t,
       isGift: n,
@@ -136,11 +136,11 @@ let S = e => {
       hideErrors: b,
       disablePurchases: O,
       paymentContextOverrides: I
-    } = e, S = b ? v({
+    } = e, T = b ? v({
       purchasePreviewError: null,
       purchaseError: null
     }, I) : v({}, I);
-    O && (S.disablePurchasesForStorybook = true);
+    O && (T.disablePurchasesForStorybook = true);
     let A = "".concat(i, "-").concat(a, "-").concat(f);
     return (0, r.jsx)(h.PaymentContextProvider, {
       stepConfigs: d,
@@ -150,7 +150,7 @@ let S = e => {
       activeSubscription: null,
       purchaseType: u,
       excludeSubscriptionPlansBySKU: _,
-      children: (0, r.jsx)(y.$, T(v({}, S), {
+      children: (0, r.jsx)(y.$, S(v({}, T), {
         children: (0, r.jsx)(m.c1, {
           children: (0, r.jsx)(p.KB, {
             isGift: a,

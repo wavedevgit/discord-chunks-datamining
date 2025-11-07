@@ -150,14 +150,14 @@ let et = Chunk647438.memo(function(e) {
     preview: b,
     subscribeToGroupId: y,
     hideGuildTag: v
-  } = e, I = (0, k.ZP)(t, n), T = i.useMemo(() => (0, F.x)({
+  } = e, I = (0, k.ZP)(t, n), S = i.useMemo(() => (0, F.x)({
     message: t,
     channel: a,
     user: null == t ? true : t.author,
     compact: s,
     isRepliedMessage: false
-  }), [t, a, s]), S = i.useRef(null), A = (0, l.e7)([R.Z], () => R.Z.getGuild(o)), C = i.useMemo(() => eo(s, g, c, A), [s, g, c, A]), N = i.useMemo(() => null == c ? null : 1 === C && null != A ? (0, r.jsx)(u.yRy, {
-    targetElementRef: S,
+  }), [t, a, s]), T = i.useRef(null), A = (0, l.e7)([R.Z], () => R.Z.getGuild(o)), C = i.useMemo(() => eo(s, g, c, A), [s, g, c, A]), N = i.useMemo(() => null == c ? null : 1 === C && null != A ? (0, r.jsx)(u.yRy, {
+    targetElementRef: T,
     animation: u.yRy.Animation.TRANSLATE,
     align: "center",
     autoInvert: true,
@@ -173,7 +173,7 @@ let et = Chunk647438.memo(function(e) {
         onClick: t
       } = e;
       return (0, r.jsx)(O.Z, Q(q({
-        ref: S
+        ref: T
       }, c), {
         className: W.roleIcon,
         onClick: t
@@ -212,7 +212,7 @@ let et = Chunk647438.memo(function(e) {
       onContextMenu: h,
       onPopoutRequestClose: E,
       decorations: {
-        [U.a.SYSTEM_TAG]: T,
+        [U.a.SYSTEM_TAG]: S,
         [U.a.BADGES]: D
       },
       renderRemixTag: true,
@@ -290,7 +290,7 @@ function er(e) {
     return null != (e = o.displayCompactAvatars) ? e : N.ZP.displayCompactAvatars
   }), U = (0, V.Z)(h), G = g ? J : $, {
     pendingAvatarDecoration: B
-  } = (0, T.Z)({
+  } = (0, S.Z)({
     guildId: c
   }), Z = (0, b.Ys)({
     pendingValue: h.author.id === (null == j ? true : j.id) ? B : true,
@@ -301,7 +301,7 @@ function er(e) {
     avatarSrc: F,
     avatarDecorationSrc: Y,
     eventHandlers: W
-  } = (0, S.Z)({
+  } = (0, T.Z)({
     userId: h.author.id,
     guildId: c,
     size: G,
@@ -463,10 +463,10 @@ let es = Chunk647438.memo(function(e) {
       className: E,
       channel: b,
       preview: O
-    } = e, I = i.useMemo(() => null != s ? e => s(e, t) : true, [s, t]), [, T] = (0, h.ZP)(t.author.id, e.guildId), S = (0, l.e7)([P.Z, R.Z], () => {
+    } = e, I = i.useMemo(() => null != s ? e => s(e, t) : true, [s, t]), [, S] = (0, h.ZP)(t.author.id, e.guildId), T = (0, l.e7)([P.Z, R.Z], () => {
       let n = R.Z.getGuild(e.guildId);
       return null != t.author && null != n && P.Z.canManageUser(H.Plq.MODERATE_MEMBERS, t.author, n)
-    }, [t.author, e.guildId]), A = T && S, C = er({
+    }, [t.author, e.guildId]), A = S && T, C = er({
       props: e,
       guildId: e.guildId,
       handleRenderPopout: I,

@@ -4,7 +4,7 @@
 require.d(exports, {
   LN: () => v,
   T3: () => b,
-  aR: () => S,
+  aR: () => T,
   q1: () => y,
   rD: () => O,
   xf: () => E
@@ -85,7 +85,7 @@ function I(e) {
   return (0, i.e7)([f.Z], () => f.Z.hasConsented(t, e))
 }
 
-function T(e) {
+function S(e) {
   let t = (0, h.M)();
   return r.useCallback(async n => {
     if (null == t) return;
@@ -99,9 +99,9 @@ function T(e) {
   }, [t, e])
 }
 
-function S(e) {
+function T(e) {
   return {
     hasConsented: I(e),
-    updateConsent: T(e)
+    updateConsent: S(e)
   }
 }

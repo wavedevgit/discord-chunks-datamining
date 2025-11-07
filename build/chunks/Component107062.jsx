@@ -78,7 +78,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
     } = (0, C.n)(n), {
       primaryColor: B,
       secondaryColor: Z
-    } = (0, T.Z)(null == M ? true : M.src), F = (0, a.e7)([g.default], () => g.default.locale), {
+    } = (0, S.Z)(null == M ? true : M.src), F = (0, a.e7)([g.default], () => g.default.locale), {
       displayParticipants: V,
       participant1: H,
       participant2: Y,
@@ -117,8 +117,8 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
       autoTrackExposure: true
     });
     if (null == j) return null;
-    let J = (0, r.jsx)(S.PZ, {
-        location: S.Gt.POPOUT,
+    let J = (0, r.jsx)(T.PZ, {
+        location: T.Gt.POPOUT,
         entry: n
       }),
       $ = (0, r.jsx)(A.wG, {

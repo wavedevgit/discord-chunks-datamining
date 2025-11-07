@@ -25,8 +25,8 @@ let m = 40,
   O = 4,
   v = 6,
   I = 24,
-  T = 2,
-  S = 4,
+  S = 2,
+  T = 4,
   A = [0, 0, 0, 0, 0],
   C = 200;
 
@@ -86,7 +86,7 @@ function L(e) {
     segmentValue: i,
     segmentIndex: a,
     constrainMin: o
-  } = e, s = o ? (I - T) * i + T : I * i;
+  } = e, s = o ? (I - S) * i + S : I * i;
   0 !== s && D(t, a * (2 * y + O) * n, (r / 2 - s / 2) * n, s * n, y * n)
 }
 
@@ -148,7 +148,7 @@ function G(e) {
   } = e, {
     ref: g,
     width: E
-  } = (0, c.ZP)(), b = i.useMemo(() => P(s), [s]), y = i.useRef(true), O = M(n, E), v = i.useRef(l), T = i.useRef(d), A = i.useRef(null), N = window.devicePixelRatio, {
+  } = (0, c.ZP)(), b = i.useMemo(() => P(s), [s]), y = i.useRef(true), O = M(n, E), v = i.useRef(l), S = i.useRef(d), A = i.useRef(null), N = window.devicePixelRatio, {
     lastBackgroundFillColor: R,
     backgroundFillColor: w,
     lastActiveFillColor: D,
@@ -200,7 +200,7 @@ function G(e) {
         a = y.current;
       if (null == r || null == i || null == a) return;
       let o = false;
-      (v.current !== l || T.current !== d) && (v.current = l, T.current = d, A.current = n), null != A.current && n > A.current + C && (A.current = null);
+      (v.current !== l || S.current !== d) && (v.current = l, S.current = d, A.current = n), null != A.current && n > A.current + C && (A.current = null);
       let s = r.height / N;
       i.clearRect(0, 0, r.width, r.height), i.beginPath();
       let [c, u] = U(R, w, n, A.current);
@@ -249,7 +249,7 @@ function G(e) {
       width: b
     },
     ref: g,
-    height: (I + 2 * S) * window.devicePixelRatio,
+    height: (I + 2 * T) * window.devicePixelRatio,
     width: (null != E ? E : 0) * window.devicePixelRatio
   })
 }

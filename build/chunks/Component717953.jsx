@@ -68,8 +68,8 @@ function I(e) {
     return null == (t = p.Z.settings.appearance) || null == (e = t.clientThemeSettings) ? true : e.customUserThemeSettings
   }), {
     shouldShowNewBadge: I,
-    markNewBadgeAsDismissed: T
-  } = (0, g.w)(), S = (0, _.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), A = (0, d.ZP)(), C = (0, u.wjy)(A) ? O.darkOverlay : O.lightOverlay, N = null != a && null != a.colors && a.colors.length > 0, R = (0, l.e7)([h.Z], () => h.Z.getSavedCustomTheme()), P = N, w = N || null != R, D = i.useMemo(() => {
+    markNewBadgeAsDismissed: S
+  } = (0, g.w)(), T = (0, _.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), A = (0, d.ZP)(), C = (0, u.wjy)(A) ? O.darkOverlay : O.lightOverlay, N = null != a && null != a.colors && a.colors.length > 0, R = (0, l.e7)([h.Z], () => h.Z.getSavedCustomTheme()), P = N, w = N || null != R, D = i.useMemo(() => {
     let e, t;
     if (N) e = a.colors, t = a.gradientAngle;
     else {
@@ -81,8 +81,8 @@ function I(e) {
       background: "var(--background-gradient), ".concat(n)
     }
   }, [N, a, R]), x = (0, f.Sl)(E.Il.WHITE).hex, L = (0, f.Sl)(E.Il.RED_430).hex, M = w ? x : true, j = i.useCallback(() => {
-    I && T(), null == n || n()
-  }, [I, T, n]);
+    I && S(), null == n || n()
+  }, [I, S, n]);
   return (0, r.jsxs)("div", {
     className: O.badgeContainer,
     children: [(0, r.jsxs)(m.S4, {
@@ -94,7 +94,7 @@ function I(e) {
       showBadge: false,
       showLockedBadge: false,
       style: D,
-      children: [!S && !w && (0, r.jsx)(v, {}), (0, r.jsx)("div", {
+      children: [!T && !w && (0, r.jsx)(v, {}), (0, r.jsx)("div", {
         className: O.borderOverlay
       }), (0, r.jsx)(s.V3v, {
         color: M,

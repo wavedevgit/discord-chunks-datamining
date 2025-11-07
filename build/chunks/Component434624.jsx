@@ -2,7 +2,7 @@
 /** chunk id: 434624, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => T
+  l: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -87,8 +87,8 @@ let v = Chunk647438.memo(function(e) {
       burst_colors: O,
       readOnly: v,
       isLurking: I,
-      isGuest: T,
-      isPendingMember: S,
+      isGuest: S,
+      isPendingMember: T,
       type: A,
       emojiSize: C
     } = e,
@@ -116,7 +116,7 @@ let v = Chunk647438.memo(function(e) {
   return (0, r.jsxs)("div", {
     className: o()(w.reaction, w.reactionInner, m, {
       [w.reactionMe]: R,
-      [w.reactionReadOnly]: v && !I && !S && !T
+      [w.reactionReadOnly]: v && !I && !T && !S
     }),
     style: L,
     children: [(0, r.jsx)(c.Z, {
@@ -139,7 +139,7 @@ function I(e) {
   var t;
   return "".concat(e.type === f.O.BURST ? "burst:" : "").concat(null != (t = e.emoji.id) ? t : 0, ":").concat(e.emoji.name)
 }
-let T = Chunk647438.memo(function(e) {
+let S = Chunk647438.memo(function(e) {
   var {
     showImmediate: t,
     reactions: n

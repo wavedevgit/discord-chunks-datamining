@@ -156,7 +156,7 @@ function j(e) {
   } = e, n = (0, o.e7)([b.Z], () => b.Z.getChannel(t)), i = N.intl.string(N.t.zLZPmk).toLowerCase(), a = "text", s = true;
   if (null != n) {
     var l;
-    i = (0, f.YO)(n) ? n.name : N.intl.string(N.t["/YzI63"]), a = (0, f.YO)(n) ? null != (l = (0, S.wl)(n)) ? l : "text" : "locked", s = (0, _.B)(n.type)
+    i = (0, f.YO)(n) ? n.name : N.intl.string(N.t["/YzI63"]), a = (0, f.YO)(n) ? null != (l = (0, T.wl)(n)) ? l : "text" : "locked", s = (0, _.B)(n.type)
   }
   return s ? (0, r.jsx)(m.Z, {
     iconType: a,
@@ -205,7 +205,7 @@ function B(e) {
   } = e, i = (0, o.e7)([y.Z], () => y.Z.getDetectableGame(n)), a = null != i ? (0, r.jsx)("img", {
     alt: "",
     className: R.icon,
-    src: T.ZP.getApplicationIconURL({
+    src: S.ZP.getApplicationIconURL({
       id: i.id,
       icon: i.icon,
       size: 32

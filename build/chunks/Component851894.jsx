@@ -131,7 +131,7 @@ function B(e) {
   }), {
     pendingDisplayNameStyles: q
   } = (0, h.mD)(M, null == a ? true : a.id);
-  return (i.useEffect(() => () => c.Z.wait(S.W3), []), i.useEffect(() => {
+  return (i.useEffect(() => () => c.Z.wait(T.W3), []), i.useEffect(() => {
     null != V && f.ZP.trackWithMetadata(P.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
       destination_pane: P.jXE.SETTINGS_CUSTOMIZE_PROFILE,
@@ -148,7 +148,7 @@ function B(e) {
       children: [(0, r.jsx)(R.Z, {
         guildId: a.id,
         onChange: e => {
-          null != e && (0, S.HP)(e)
+          null != e && (0, T.HP)(e)
         }
       }), (0, r.jsx)(m.Z, {
         profilePreviewTitle: (0, r.jsx)(l.Heading, {
@@ -163,7 +163,7 @@ function B(e) {
           pendingDisplayNameStyles: q,
           user: M,
           guild: a,
-          canUsePremiumCustomization: T.ZP.canUsePremiumProfileCustomization(M),
+          canUsePremiumCustomization: S.ZP.canUsePremiumProfileCustomization(M),
           onUpsellClick: G
         })),
         nameplatePreview: (0, r.jsx)(p.Z, j(L({}, W), {

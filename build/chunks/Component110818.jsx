@@ -192,7 +192,7 @@ let I = {
     END: 375
   }
 };
-class T extends Chunk647438.PureComponent {
+class S extends Chunk647438.PureComponent {
   getStyle(e) {
     let {
       animation: t
@@ -227,7 +227,7 @@ class T extends Chunk647438.PureComponent {
     })
   }
 }
-let S = Object.freeze({
+let T = Object.freeze({
     IDLE_ENTRY: {
       toValue: 1,
       duration: 1500
@@ -289,23 +289,23 @@ class C extends(a = Chunk647438.PureComponent) {
     })]).start()
   }
   animateIdleEntry() {
-    this.animateEntry(S.IDLE_ENTRY)
+    this.animateEntry(T.IDLE_ENTRY)
   }
   animateError() {
-    this.animateEntry(S.ERROR)
+    this.animateEntry(T.ERROR)
   }
   animateIdleLoop() {
     this.animateIdleLoopBackground(), this.animateIdleLoopForeground()
   }
   animateBoostStart() {
     Chunk748780.Z.parallel([Chunk748780.Z.timing(this.foregroundAnimation.y, {
-      toValue: S.BOOST_START.toValue,
-      duration: S.BOOST_START.duration,
-      delay: S.BOOST_START.delay
+      toValue: T.BOOST_START.toValue,
+      duration: T.BOOST_START.duration,
+      delay: T.BOOST_START.delay
     }), Chunk748780.Z.timing(this.backgroundAnimation.y, {
-      toValue: S.BOOST_START.toValue,
-      duration: S.BOOST_START.duration * A,
-      delay: S.BOOST_START.delay
+      toValue: T.BOOST_START.toValue,
+      duration: T.BOOST_START.duration * A,
+      delay: T.BOOST_START.delay
     })]).start()
   }
   render() {
@@ -325,10 +325,10 @@ class C extends(a = Chunk647438.PureComponent) {
           className: Chunk298185.tier2Foreground
         })]
       }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(T, {
+        children: [(0, Chunk951288.jsx)(S, {
           className: Chunk298185.tier2Background,
           animation: this.backgroundAnimation
-        }), (0, Chunk951288.jsx)(T, {
+        }), (0, Chunk951288.jsx)(S, {
           className: Chunk298185.tier2Foreground,
           animation: this.foregroundAnimation
         })]
@@ -353,15 +353,15 @@ class C extends(a = Chunk647438.PureComponent) {
       y: 0
     })), h(this, "didUnmount", false), h(this, "animateIdleLoopBackground", () => {
       this.didUnmount || (this.backgroundAnimation.x.setValue(0), f.Z.timing(this.backgroundAnimation.x, {
-        toValue: S.IDLE_LOOP.toValue,
-        duration: S.IDLE_LOOP.duration * A,
+        toValue: T.IDLE_LOOP.toValue,
+        duration: T.IDLE_LOOP.duration * A,
         easing: f.Z.Easing.linear
       }).start(this.animateIdleLoopBackground))
     }), h(this, "animateIdleLoopForeground", () => {
       this.didUnmount || (this.foregroundAnimation.x.setValue(0), f.Z.timing(this.foregroundAnimation.x, {
-        toValue: S.IDLE_LOOP.toValue,
-        duration: S.IDLE_LOOP.duration,
-        easing: S.IDLE_LOOP.easing
+        toValue: T.IDLE_LOOP.toValue,
+        duration: T.IDLE_LOOP.duration,
+        easing: T.IDLE_LOOP.easing
       }).start(this.animateIdleLoopForeground))
     }), h(this, "handleScenePlay", e => {
       switch (e) {

@@ -2,8 +2,8 @@
 /** chunk id: 463208, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => S,
-  o: () => T
+  I: () => T,
+  o: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -159,7 +159,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   var t;
   let {
     disabled: n = false,
@@ -171,7 +171,7 @@ function T(e) {
     placeholder: h = "",
     maxLength: g,
     value: y,
-    defaultValue: T,
+    defaultValue: S,
     minLength: A,
     error: C,
     defaultDirty: N = false,
@@ -193,7 +193,7 @@ function T(e) {
     defaultDirty: N
   }), {
     setShouldValidate: G
-  } = U, B = O(y, T), Z = "object" == typeof R && "type" in R && "tags" === R.type, F = e => {
+  } = U, B = O(y, S), Z = "object" == typeof R && "type" in R && "tags" === R.type, F = e => {
     var t, n;
     let r = e.currentTarget.value;
     null == (t = j.onChange) || t.call(j, r, u), G(true), null == (n = B.setHasValue) || n.call(B, "" !== r)
@@ -245,7 +245,7 @@ function T(e) {
       children: [q, (0, r.jsx)(s.tEY, E(m({
         ringTarget: W
       }, c), {
-        children: (0, r.jsx)(S, E(m({
+        children: (0, r.jsx)(T, E(m({
           name: u,
           className: p.input,
           disabled: n,
@@ -256,7 +256,7 @@ function T(e) {
           maxLength: g,
           minLength: A,
           value: y,
-          defaultValue: T,
+          defaultValue: S,
           "data-mana-component": "text-input"
         }, j), {
           onChange: F,
@@ -269,7 +269,7 @@ function T(e) {
   }))
 }
 
-function S(e) {
+function T(e) {
   var {
     value: t,
     defaultValue: n,

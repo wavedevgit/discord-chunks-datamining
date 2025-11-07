@@ -3,10 +3,10 @@
 "use strict";
 require.r(exports), require.d(exports, {
   USER_SETTINGS_MODAL_KEY: () => b,
-  getUserSettingsSectionsByWebUserSettings: () => T,
+  getUserSettingsSectionsByWebUserSettings: () => S,
   getWebUserSettingsByUserSettingsSections: () => I,
   openUserSettings: () => y,
-  openUserSettingsFromParsedUrl: () => S
+  openUserSettingsFromParsedUrl: () => T
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
@@ -167,14 +167,14 @@ function I() {
   ])
 }
 
-function T() {
+function S() {
   let e = I(),
     t = new Map;
   for (let [n, r] of module.entries()) exports.set(Chunk951288, require);
   return exports
 }
 
-function S(e) {
+function T(e) {
   let {
     match: t,
     urlOrigin: n,

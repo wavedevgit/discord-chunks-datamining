@@ -60,14 +60,14 @@ let O = new Set,
   v = {},
   I = {};
 
-function T(e) {
+function S(e) {
   v = a().omitBy(v, t => {
     let n = t.guildId === e;
     return n && delete I[t.parentId], n
   })
 }
 
-function S(e) {
+function T(e) {
   v = a().omitBy(v, t => t.parentId === e), delete I[e]
 }
 
@@ -144,7 +144,7 @@ function M(e) {
   let {
     guild: t
   } = e;
-  T(t.id)
+  S(t.id)
 }
 
 function j(e) {
@@ -195,7 +195,7 @@ function B(e) {
   let {
     channel: t
   } = e;
-  S(t.id)
+  T(t.id)
 }
 
 function Z(e) {

@@ -250,7 +250,7 @@ let ef = e => {
     } = e, E = a.id, O = i.useMemo(() => D.ZP.createFromServer(a), [a]), v = (0, G.yE)(O.flags, ee.udG.EMBEDDED), I = (0, p.e7)([K.Z], () => {
       var e, t, n, r;
       return null == (r = K.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[E]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
-    }, [E]), C = S.w.useExperiment({
+    }, [E]), C = T.w.useExperiment({
       location: "oauth2_authorize"
     }), x = a.bot, M = (0, p.e7)([L.Z], () => L.Z.getDMFromUserId(null == x ? true : x.id)), {
       appDMChannelMuteConfig: j,
@@ -409,7 +409,7 @@ let ef = e => {
             allowMobilePush: e
           })
         })
-      }, W.fy.INFREQUENT_USER_ACTION), T.ZP.trackWithMetadata(ee.rMx.NOTIFICATION_SETTINGS_UPDATED, {
+      }, W.fy.INFREQUENT_USER_ACTION), S.ZP.trackWithMetadata(ee.rMx.NOTIFICATION_SETTINGS_UPDATED, {
         update_type: et.I.AUTHORIZED_APP_DM_PUSH_NOTIFICATION,
         application_id: a.id,
         label: e ? Z.ZB.Unmuted : Z.ZB.Muted
@@ -562,7 +562,7 @@ let ef = e => {
         let e = Chunk191336.trim().toLowerCase();
         return "" === module || null == require ? require : require.length < 100 ? require.filter(t => l()(e, t.application.name.toLowerCase())) : require.filter(t => t.application.name.toLowerCase().includes(e))
       }, [require, Chunk191336]),
-      T = () => null == require || null == Chunk87051 || exports !== Chunk881998.FetchState.FETCHED ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
+      S = () => null == require || null == Chunk87051 || exports !== Chunk881998.FetchState.FETCHED ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
         className: Chunk197571.marginTop20,
         type: Chunk481060.$jN.Type.SPINNING_CIRCLE
       }) : 0 === require.length ? Chunk493683(Chunk388032.intl.string(Chunk388032.t.CpPv5l), Chunk388032.intl.string(Chunk388032.t["E+SM6T"])) : 0 === Chunk87051.length ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {

@@ -34,10 +34,10 @@ function y(e) {
     placeholder: y,
     currentBio: O,
     disabled: v = false
-  } = e, [I, T] = i.useState(null != f ? f : O), [S, A] = i.useState((0, s.JM)(I)), C = i.useRef(false);
+  } = e, [I, S] = i.useState(null != f ? f : O), [T, A] = i.useState((0, s.JM)(I)), C = i.useRef(false);
 
   function N(e, t, n) {
-    t !== I && (T(t), A(n), c(t))
+    t !== I && (S(t), A(n), c(t))
   }
 
   function R() {
@@ -51,7 +51,7 @@ function y(e) {
   i.useEffect(() => {
     if (true === f) {
       let e = (0, s.JM)(O);
-      T(O), A(e)
+      S(O), A(e)
     }
   }, [f, O]);
   let P = (0, u.wy)("AboutMeSection");
@@ -71,7 +71,7 @@ function y(e) {
       placeholder: y,
       channel: E,
       textValue: I,
-      richValue: S,
+      richValue: T,
       emojiPickerCloseOnModalOuterClick: P,
       parentModalKey: P ? d.USER_SETTINGS_MODAL_KEY : true,
       type: o.Ie.PROFILE_BIO_INPUT,

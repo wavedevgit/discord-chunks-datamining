@@ -25,8 +25,8 @@ require.d(exports, {
   c$: () => ti,
   dp: () => tn,
   f9: () => L,
-  hg: () => T,
-  l1: () => S,
+  hg: () => S,
+  l1: () => T,
   n9: () => A,
   nI: () => d,
   o8: () => D,
@@ -86,10 +86,10 @@ var Chunk230367 = require("./230367.js"),
   I = function(e) {
     return e[e.MINT_APPLE = 0] = "MINT_APPLE", e[e.CITRUS_SHERBERT = 1] = "CITRUS_SHERBERT", e[e.RETRO_RAINCLOUD = 2] = "RETRO_RAINCLOUD", e[e.HANAMI = 3] = "HANAMI", e[e.SUNRISE = 4] = "SUNRISE", e[e.COTTON_CANDY = 5] = "COTTON_CANDY", e[e.LOFI_VIBES = 6] = "LOFI_VIBES", e[e.DESERT_KHAKI = 7] = "DESERT_KHAKI", e[e.SUNSET = 8] = "SUNSET", e[e.CHROMA_GLOW = 9] = "CHROMA_GLOW", e[e.FOREST = 10] = "FOREST", e[e.CRIMSON_MOON = 11] = "CRIMSON_MOON", e[e.MIDNIGHT_BLURPLE = 12] = "MIDNIGHT_BLURPLE", e[e.MARS = 13] = "MARS", e[e.DUSK = 14] = "DUSK", e[e.UNDER_THE_SEA = 15] = "UNDER_THE_SEA", e[e.EASTER_EGG = 16] = "EASTER_EGG", e[e.RETRO_STORM = 17] = "RETRO_STORM", e[e.NEON_NIGHTS = 18] = "NEON_NIGHTS", e[e.SEPIA = 19] = "SEPIA", e[e.STRAWBERRY_LEMONADE = 20] = "STRAWBERRY_LEMONADE", e[e.AURORA = 21] = "AURORA", e[e.BLURPLE_TWILIGHT = 22] = "BLURPLE_TWILIGHT", e
   }({}),
-  T = function(e) {
+  S = function(e) {
     return e[e.AUTO = 0] = "AUTO", e[e.H12 = 1] = "H12", e[e.H23 = 2] = "H23", e
   }({}),
-  S = function(e) {
+  T = function(e) {
     return e[e.LAUNCH_PAD_DISABLED = 0] = "LAUNCH_PAD_DISABLED", e[e.LAUNCH_PAD_GESTURE_FULL_SCREEN = 1] = "LAUNCH_PAD_GESTURE_FULL_SCREEN", e[e.LAUNCH_PAD_GESTURE_RIGHT_EDGE = 2] = "LAUNCH_PAD_GESTURE_RIGHT_EDGE", e[e.LAUNCH_PAD_PULL_TAB = 3] = "LAUNCH_PAD_PULL_TAB", e
   }({}),
   A = function(e) {
@@ -2405,7 +2405,7 @@ class eO extends Chunk495852.C {
           a.status = s.Gm.internalBinaryRead(e, e.uint32(), n, a.status);
           break;
         case 2:
-          a.customStatus = eT.internalBinaryRead(e, e.uint32(), n, a.customStatus);
+          a.customStatus = eS.internalBinaryRead(e, e.uint32(), n, a.customStatus);
           break;
         case 3:
           a.showCurrentGame = s.D5.internalBinaryRead(e, e.uint32(), n, a.showCurrentGame);
@@ -2426,7 +2426,7 @@ class eO extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.status && s.Gm.internalBinaryWrite(e.status, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.customStatus && eT.internalBinaryWrite(e.customStatus, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.showCurrentGame && s.D5.internalBinaryWrite(e.showCurrentGame, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), "0" !== e.statusExpiresAtMs && t.tag(4, r.TD.Bit64).fixed64(e.statusExpiresAtMs), e.statusCreatedAtMs && s.wA.internalBinaryWrite(e.statusCreatedAtMs, t.tag(5, r.TD.LengthDelimited).fork(), n).join();
+    e.status && s.Gm.internalBinaryWrite(e.status, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.customStatus && eS.internalBinaryWrite(e.customStatus, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.showCurrentGame && s.D5.internalBinaryWrite(e.showCurrentGame, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), "0" !== e.statusExpiresAtMs && t.tag(4, r.TD.Bit64).fixed64(e.statusExpiresAtMs), e.statusCreatedAtMs && s.wA.internalBinaryWrite(e.statusCreatedAtMs, t.tag(5, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -2440,7 +2440,7 @@ class eO extends Chunk495852.C {
       no: 2,
       name: "custom_status",
       kind: "message",
-      T: () => eT
+      T: () => eS
     }, {
       no: 3,
       name: "show_current_game",
@@ -2546,8 +2546,8 @@ class eI extends Chunk495852.C {
     }])
   }
 }
-let eT = new eI;
-class eS extends Chunk495852.C {
+let eS = new eI;
+class eT extends Chunk495852.C {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, a.C, {
@@ -2595,7 +2595,7 @@ class eS extends Chunk495852.C {
     }])
   }
 }
-let eA = new eS;
+let eA = new eT;
 class eC extends Chunk495852.C {
   create(e) {
     let t = {};
@@ -2757,7 +2757,7 @@ class eR extends Chunk495852.C {
       no: 9,
       name: "timestamp_hour_cycle",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.TimestampHourCycle", T]
+      T: () => ["discord_protos.discord_users.v1.TimestampHourCycle", S]
     }, {
       no: 10,
       name: "happening_now_cards_disabled",
@@ -2767,7 +2767,7 @@ class eR extends Chunk495852.C {
       no: 11,
       name: "launch_pad_mode",
       kind: "enum",
-      T: () => ["discord_protos.discord_users.v1.LaunchPadMode", S]
+      T: () => ["discord_protos.discord_users.v1.LaunchPadMode", T]
     }, {
       no: 12,
       name: "ui_density",

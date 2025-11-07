@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 274459, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -25,8 +25,8 @@ function b(e) {
     onComplete: u
   } = e, {
     emoji: b,
-    sentAt: _
-  } = n, y = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), [C, v] = i.useState(true), O = !y, x = (0, o.Yzy)(C, {
+    sentAt: y
+  } = n, C = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), [_, v] = r.useState(true), x = !C, O = (0, o.Yzy)(_, {
     from: {
       rotate: false
     },
@@ -44,24 +44,24 @@ function b(e) {
       "leave" === n && u()
     }
   });
-  return (i.useEffect(() => {
+  return (r.useEffect(() => {
     let e;
-    return Date.now() - _ >= m ? (0, d.H)(t) : e = setTimeout(() => {
-      v(false), O && (0, d.H)(t)
-    }, O ? h : f), () => {
+    return Date.now() - y >= m ? (0, d.H)(t) : e = setTimeout(() => {
+      v(false), x && (0, d.H)(t)
+    }, x ? h : f), () => {
       null != e && clearTimeout(e)
     }
-  }, [_, t, O]), O) ? null : x((e, t) => {
+  }, [y, t, x]), x) ? null : O((e, t) => {
     var n;
     let {
-      rotate: i
+      rotate: r
     } = e;
-    return t && (0, r.jsx)(l.animated.div, {
+    return t && (0, i.jsx)(l.animated.div, {
       className: p.voiceChannelEffectEmojiContainer,
       style: {
-        transform: i.to(g)
+        transform: r.to(g)
       },
-      children: (0, r.jsx)(s.Z, {
+      children: (0, i.jsx)(s.Z, {
         className: p.voiceChannelEffectEmoji,
         emojiId: b.id,
         emojiName: b.name,

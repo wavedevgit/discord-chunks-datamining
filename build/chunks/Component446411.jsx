@@ -121,8 +121,8 @@ function et(e) {
     autoMute: O,
     volume: v,
     onPlay: I,
-    onPause: T,
-    onEnded: S,
+    onPause: S,
+    onEnded: T,
     onControlsHide: C,
     onControlsShow: R,
     onVolumeChange: P,
@@ -161,7 +161,7 @@ function et(e) {
       height: W,
       responsive: p,
       autoPlay: y,
-      onEnded: S,
+      onEnded: T,
       naturalWidth: d.width,
       naturalHeight: d.height,
       onVolumeChange: P,
@@ -169,7 +169,7 @@ function et(e) {
       autoMute: O,
       volume: v,
       onPlay: I,
-      onPause: T,
+      onPause: S,
       onMute: D,
       onControlsHide: C,
       onControlsShow: R,
@@ -608,7 +608,7 @@ class er extends(r = Chunk647438.PureComponent) {
         animated: false,
         srcIsAnimated: Chunk647438.srcIsAnimated
       }),
-      T = {
+      S = {
         containerClassName: s()(Chunk715697, {
           [Chunk781452.embedMedia]: !Chunk120356,
           [Chunk781452.embedImage]: !Chunk120356,
@@ -633,14 +633,14 @@ class er extends(r = Chunk647438.PureComponent) {
         srcIsAnimated: Chunk647438.srcIsAnimated,
         mosaicStyleAlt: true
       },
-      S = null != (t = null == (e = Chunk647438.url.split(".").pop()) ? true : module.split("?")[0]) ? exports : "";
-    return "jpg" === Chunk592125 && (S = "jpeg"), (0, Chunk951288.jsx)(Chunk947849.h.Consumer, {
+      T = null != (t = null == (e = Chunk647438.url.split(".").pop()) ? true : module.split("?")[0]) ? exports : "";
+    return "jpg" === Chunk592125 && (T = "jpeg"), (0, Chunk951288.jsx)(Chunk947849.h.Consumer, {
       children: e => (0, i.jsx)(j.G.Consumer, {
         children: t => {
           let {
             disableAnimations: r
           } = t;
-          return u(Y(V({}, T), {
+          return u(Y(V({}, S), {
             autoPlay: f && !r && !n,
             renderAccessory: I ? e : null,
             handlePreloadImage: v[y],

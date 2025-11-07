@@ -60,8 +60,8 @@ function O(e, t) {
 }
 let v = new Chunk710845.Z("PaymentElement.web.stories"),
   I = "Color Text",
-  T = "Color Background",
-  S = "Input Background Color",
+  S = "Color Background",
+  T = "Input Background Color",
   A = "Tab Background Color",
   C = e => ({
     key: d.h8.ADD_PAYMENT_STEPS,
@@ -101,7 +101,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
       storyType: E
     } = e, y = (0, f.Z)(), {
       stripePaymentElementProps: I,
-      stripeAddressElementProps: T
+      stripeAddressElementProps: S
     } = (0, c.MM)({
       step: d.h8.PAYMENT_ELEMENT,
       handleStepChange: h.dG4,
@@ -111,7 +111,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
       shouldLogOnChangeEvents: true,
       continueSessionToInitialStep: true
     }), {
-      elementsOptions: S,
+      elementsOptions: T,
       isLoading: A,
       setupError: R
     } = (0, l.S)({
@@ -145,7 +145,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
             }),
             children: (0, r.jsxs)(i.Elements, {
               stripe: y,
-              options: b({}, S),
+              options: b({}, T),
               children: ["stripe-address-element" === E ? (0, r.jsx)("div", {
                 className: g.hidden,
                 children: (0, r.jsx)(c.Q5, O(b({}, I), {
@@ -153,7 +153,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
                 }))
               }) : (0, r.jsx)(c.Q5, O(b({}, I), {
                 step: d.h8.PAYMENT_ELEMENT
-              })), ("joined-payment-address-elements" === E || "stripe-address-element" === E) && (0, r.jsx)(c.wk, O(b({}, T), {
+              })), ("joined-payment-address-elements" === E || "stripe-address-element" === E) && (0, r.jsx)(c.wk, O(b({}, S), {
                 billingAddressInfo: {
                   email: "",
                   name: "",
@@ -196,12 +196,12 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
       defaultValue: "#2f3035"
     },
     colorBackground: {
-      label: T,
+      label: S,
       type: "text",
       defaultValue: "#ffffff"
     },
     inputBackgroundColor: {
-      label: S,
+      label: T,
       type: "text",
       defaultValue: "#00000014"
     },

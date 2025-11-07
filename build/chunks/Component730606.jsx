@@ -121,8 +121,8 @@ function w(e) {
   i.useEffect(() => {
     let e = () => P(p.current + 1),
       t = () => P(p.current - 1);
-    return h.S.subscribe(T.CkL.MODAL_CAROUSEL_NEXT, e), h.S.subscribe(T.CkL.MODAL_CAROUSEL_PREV, t), () => {
-      h.S.unsubscribe(T.CkL.MODAL_CAROUSEL_NEXT, e), h.S.unsubscribe(T.CkL.MODAL_CAROUSEL_PREV, t)
+    return h.S.subscribe(S.CkL.MODAL_CAROUSEL_NEXT, e), h.S.subscribe(S.CkL.MODAL_CAROUSEL_PREV, t), () => {
+      h.S.unsubscribe(S.CkL.MODAL_CAROUSEL_NEXT, e), h.S.unsubscribe(S.CkL.MODAL_CAROUSEL_PREV, t)
     }
   }, [P, C]);
   let w = t[f],
@@ -139,17 +139,17 @@ function w(e) {
       children: e => L ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(v.Z, {
           onClick: e => {
-            e.stopPropagation(), h.S.dispatch(T.CkL.MODAL_CAROUSEL_PREV)
+            e.stopPropagation(), h.S.dispatch(S.CkL.MODAL_CAROUSEL_PREV)
           },
           icon: s.j9r,
-          tooltip: S.intl.string(S.t.vgfxaA),
+          tooltip: T.intl.string(T.t.vgfxaA),
           className: o()(A.navPrev, e)
         }), (0, r.jsx)(v.Z, {
           onClick: e => {
-            e.stopPropagation(), h.S.dispatch(T.CkL.MODAL_CAROUSEL_NEXT)
+            e.stopPropagation(), h.S.dispatch(S.CkL.MODAL_CAROUSEL_NEXT)
           },
           icon: s.d4D,
-          tooltip: S.intl.string(S.t.XiOHRX),
+          tooltip: T.intl.string(T.t.XiOHRX),
           className: o()(A.navNext, e)
         })]
       }) : true

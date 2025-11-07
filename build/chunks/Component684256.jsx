@@ -1,12 +1,13 @@
-/** Chunk was on 35755 **/
-/** chunk id: 684256, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 684256, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk895924 = require("./895924.js"),
   Chunk827498 = require("./827498.js"),
@@ -20,50 +21,50 @@ function h(e) {
   let {
     context: t,
     entrypoint: n,
-    title: r,
+    title: a,
     look: h,
-    items: v,
-    sectionName: y,
-    sectionOverallPosition: g
-  } = e, x = (0, u.s)(), b = l.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
-  return (0, i.jsxs)("section", {
-    className: f.container,
-    "aria-label": m.intl.formatToPlainString(m.t.iobNIB, {
-      sectionTitle: r
+    items: m,
+    sectionName: g,
+    sectionOverallPosition: E
+  } = e, b = (0, u.s)(), y = i.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
+  return (0, r.jsxs)("section", {
+    className: p.container,
+    "aria-label": _.intl.formatToPlainString(_.t.iobNIB, {
+      sectionTitle: a
     }),
-    children: [(0, i.jsxs)("div", {
-      className: f.header,
-      children: [(0, i.jsx)(p.Z, {
-        className: f.backButton
-      }), (0, i.jsx)(o.Heading, {
+    children: [(0, r.jsxs)("div", {
+      className: p.header,
+      children: [(0, r.jsx)(f.Z, {
+        className: p.backButton
+      }), (0, r.jsx)(s.Heading, {
         variant: "heading-md/medium",
         color: "header-primary",
-        children: r
+        children: a
       })]
-    }), (0, i.jsx)(o.Ttm, {
-      children: (0, i.jsx)("div", {
-        className: a()({
-          [f.appGrid]: h !== d.U4.ROW,
-          [f.rows]: h === d.U4.ROW
+    }), (0, r.jsx)(s.Ttm, {
+      children: (0, r.jsx)("div", {
+        className: o()({
+          [p.appGrid]: h !== d.U4.ROW,
+          [p.rows]: h === d.U4.ROW
         }),
-        children: v.map((e, n) => {
+        children: m.map((e, n) => {
           let {
-            application: l,
-            installOnDemand: r,
-            showsPromoted: a
+            application: i,
+            installOnDemand: a,
+            showsPromoted: o
           } = e;
-          return (0, i.jsx)(b, {
+          return (0, r.jsx)(y, {
             context: t,
-            application: l,
+            application: i,
             look: h,
-            sectionName: y,
+            sectionName: g,
             resultsPosition: n,
-            location: s.Vh.APP_LAUNCHER_LIST_VIEW_ALL,
-            installOnDemand: r,
-            isOneClickCTA: x,
-            sectionOverallPosition: g,
-            showsPromoted: a
-          }, l.id)
+            location: l.Vh.APP_LAUNCHER_LIST_VIEW_ALL,
+            installOnDemand: a,
+            isOneClickCTA: b,
+            sectionOverallPosition: E,
+            showsPromoted: o
+          }, i.id)
         })
       })
     })]

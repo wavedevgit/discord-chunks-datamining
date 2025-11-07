@@ -89,18 +89,18 @@ function _(e) {
       }
       e.addEventListener(n, r), e.addEventListener("error", i)
     }, [O, v]),
-    T = i.useMemo(() => m.size > 0 || !E, [E, m]);
+    S = i.useMemo(() => m.size > 0 || !E, [E, m]);
   i.useEffect(() => {
-    T || (y.current = true)
-  }, [T]);
-  let S = i.useMemo(() => ({
+    S || (y.current = true)
+  }, [S]);
+  let T = i.useMemo(() => ({
     registerAsset: I,
     unregisterAsset: v,
     hasError: p,
-    isLoading: T && !y.current
-  }), [I, v, p, T]);
+    isLoading: S && !y.current
+  }), [I, v, p, S]);
   return (0, r.jsx)(c.Provider, {
-    value: S,
+    value: T,
     children: t
   })
 }

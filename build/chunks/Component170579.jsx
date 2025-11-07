@@ -69,8 +69,8 @@ let y = e => {
         onClose: O,
         isGift: v,
         upgradeToPremiumType: I,
-        className: T,
-        showTrialBadge: S = false,
+        className: S,
+        showTrialBadge: T = false,
         showDiscountBadge: A = false
       } = e,
       C = I === m.PremiumTypes.TIER_2;
@@ -82,8 +82,8 @@ let y = e => {
       className: a()({
         [E.headerBackground]: !C,
         [E.tier2HeaderBackground]: C
-      }, T),
-      children: [(S || A) && (0, r.jsx)(d.Z, {
+      }, S),
+      children: [(T || A) && (0, r.jsx)(d.Z, {
         className: E.trialBadgeSparkles
       }), g(), (0, r.jsxs)(s.Z, {
         align: s.Z.Align.START,
@@ -94,7 +94,7 @@ let y = e => {
             className: a()(E.headerIcon, {
               [E.nonTier2]: !C
             })
-          }), (S || A) && (0, r.jsx)(y, {
+          }), (T || A) && (0, r.jsx)(y, {
             isTier0: I === m.PremiumTypes.TIER_0,
             discountAmount: A ? R : true
           })]

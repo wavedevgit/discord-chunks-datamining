@@ -85,12 +85,12 @@ function I(e) {
     disabled: b,
     label: v,
     colorPickerMiddle: I,
-    colorPickerFooter: T,
-    showEyeDropper: S
-  } = e, A = i.useRef(null), C = (0, u.dQu)(c.Z.colors.BACKGROUND_BASE_LOW).hex(), N = c.Z.colors.BACKGROUND_ACCENT.css, R = (0, _.DP)(a), P = (0, l.Rf)(a), w = P === C ? N : P, D = (0, f.Lq)(R ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), x = (0, d.Z)(I), L = (0, d.Z)(T), [M, j] = i.useState((0, s.Z)());
+    colorPickerFooter: S,
+    showEyeDropper: T
+  } = e, A = i.useRef(null), C = (0, u.dQu)(c.Z.colors.BACKGROUND_BASE_LOW).hex(), N = c.Z.colors.BACKGROUND_ACCENT.css, R = (0, _.DP)(a), P = (0, l.Rf)(a), w = P === C ? N : P, D = (0, f.Lq)(R ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), x = (0, d.Z)(I), L = (0, d.Z)(S), [M, j] = i.useState((0, s.Z)());
   return i.useEffect(() => {
-    (x !== I || L !== T) && j((0, s.Z)())
-  }, [T, I, L, x]), (0, r.jsx)(u.yRy, {
+    (x !== I || L !== S) && j((0, s.Z)())
+  }, [S, I, L, x]), (0, r.jsx)(u.yRy, {
     targetElementRef: A,
     positionKey: M,
     renderPopout: e => (0, r.jsx)(u.Z$W, y(E({}, e), {
@@ -98,8 +98,8 @@ function I(e) {
       onChange: t,
       suggestedColors: g,
       middle: I,
-      footer: T,
-      showEyeDropper: S
+      footer: S,
+      showEyeDropper: T
     })),
     onRequestClose: n,
     children: e => {

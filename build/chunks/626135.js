@@ -72,13 +72,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -406,13 +406,13 @@ function q(e) {
     let {
       location: e
     } = a;
-    a = v({}, S(a, ["location"]), V(e))
+    a = v({}, T(a, ["location"]), V(e))
   }
   if (null != a.source) {
     let {
       source: e
     } = a;
-    a = v({}, S(a, ["source"]), H(e))
+    a = v({}, T(a, ["source"]), H(e))
   }
   a.client_performance_cpu = h.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = h.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = h.Z.getCPUCoreCount(), a.accessibility_features = Y(), a.rendered_locale = y.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - U) / 1e3);
   let o = h.Z.getProcessUptime();
@@ -490,7 +490,7 @@ function es(e, t) {
 function el() {
   return (0, Chunk772848.Z)()
 }
-let ec = T(v({}, Chunk990547), {
+let ec = S(v({}, Chunk990547), {
   getCampaignParams: Chunk990547.getCampaignParams,
   setSystemAccessibilityFeatures: W,
   expandEventProperties: q,

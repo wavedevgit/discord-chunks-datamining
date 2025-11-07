@@ -30,14 +30,14 @@ let v = e => {
     locationSection: a,
     transitionState: v,
     onClose: I
-  } = e, T = (0, h.vx)(_.Z.boostSlots);
+  } = e, S = (0, h.vx)(_.Z.boostSlots);
   o()(null != t || null != n, "Must either provide slots or an initial selected guild"), o()(!(null == t ? true : t.some(e => e.isOnCooldown())), "If slots are provided, they must not be on cooldown");
-  let S = [null == t ? "UNUSED_QUANTITY_SELECT" : null, null == n ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
+  let T = [null == t ? "UNUSED_QUANTITY_SELECT" : null, null == n ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
     [A, C] = (0, l.Wu)([d.Z], () => [d.Z.isModifyingAppliedBoost, d.Z.applyBoostError]),
-    [N, R] = i.useState(S[0]),
+    [N, R] = i.useState(T[0]),
     [P, w] = i.useState(false),
     [D, x] = i.useState(n),
-    [L, M] = i.useState(null != t ? t : T.slice(0, 1)),
+    [L, M] = i.useState(null != t ? t : S.slice(0, 1)),
     j = i.useMemo(() => null == L ? [] : L.map(e => {
       let {
         premiumGuildSubscription: t
@@ -53,7 +53,7 @@ let v = e => {
       location_section: a
     }), Promise.resolve()),
     G = {
-      UNUSED_QUANTITY_SELECT: () => (o()(null != t || 0 !== T.length, "Cannot provide no slots if there are no other available slots"), (0, r.jsx)(s.Modal, {
+      UNUSED_QUANTITY_SELECT: () => (o()(null != t || 0 !== S.length, "Cannot provide no slots if there are no other available slots"), (0, r.jsx)(s.Modal, {
         transitionState: v,
         onClose: U,
         size: "md",
@@ -77,9 +77,9 @@ let v = e => {
             className: O.quantitySelectorWrapper,
             children: [(0, r.jsx)(c.FiK, {
               value: L.length,
-              onChange: e => M(T.slice(0, e)),
+              onChange: e => M(S.slice(0, e)),
               minValue: 1,
-              maxValue: T.length
+              maxValue: S.length
             }), (0, r.jsx)(c.Text, {
               className: O.quantitySelectorLabel,
               variant: "text-md/normal",
@@ -102,7 +102,7 @@ let v = e => {
         let e = L.filter(e => (0, h.tl)(e)).length,
           t = L.length,
           n = j.length,
-          i = "CONFIRM" === S[0] ? U : () => R(S[S.indexOf(N) - 1]),
+          i = "CONFIRM" === T[0] ? U : () => R(T[T.indexOf(N) - 1]),
           a = async () => {
             if (w(false), null != D && (null == L ? true : L.length) !== 0) {
               o()(!L.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");

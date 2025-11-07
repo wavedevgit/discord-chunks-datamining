@@ -14,12 +14,12 @@ require.d(exports, {
   YB: () => b,
   Yo: () => _,
   ZU: () => N,
-  aq: () => S,
+  aq: () => T,
   dj: () => p,
   eV: () => R,
   hS: () => g,
   hb: () => w,
-  lj: () => T,
+  lj: () => S,
   mB: () => E,
   o4: () => c,
   qA: () => y,
@@ -259,13 +259,13 @@ let I = (0, Chunk427164.le)({
   }
 });
 
-function T(e) {
+function S(e) {
   return I.getConfig({
     location: e
   })
 }
 
-function S(e) {
+function T(e) {
   return I.useConfig({
     location: e
   })
@@ -420,5 +420,5 @@ function D(e) {
 }
 
 function x() {
-  T("OVERLAY_INITIALIZED"), C("OVERLAY_INITIALIZED"), D("OVERLAY_INITIALIZED")
+  S("OVERLAY_INITIALIZED"), C("OVERLAY_INITIALIZED"), D("OVERLAY_INITIALIZED")
 }

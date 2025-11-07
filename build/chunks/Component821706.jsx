@@ -147,12 +147,12 @@ function I(e) {
     }))
   })
 }
-let T = {
+let S = {
     [Chunk981631.OGo.FRIEND]: Chunk481060._uN,
     [Chunk981631.OGo.PENDING_OUTGOING]: Chunk481060.iHX,
     [Chunk981631.OGo.PENDING_INCOMING]: Chunk481060.iHX
   },
-  S = {
+  T = {
     [Chunk981631.OGo.FRIEND]: () => Chunk388032.intl.string(Chunk388032.t.G7jMpU),
     [Chunk981631.OGo.PENDING_OUTGOING]: () => Chunk388032.intl.string(Chunk388032.t["s/+byI"]),
     [Chunk981631.OGo.PENDING_INCOMING]: () => Chunk388032.intl.string(Chunk388032.t["6QQCQ+"])
@@ -166,8 +166,8 @@ function A(e) {
     analyticsLocation: a,
     shouldShowTooltip: o
   } = e, s = E(e, ["type", "user", "relationshipType", "analyticsLocation", "shouldShowTooltip"]);
-  let l = T[i],
-    c = S[i]();
+  let l = S[i],
+    c = T[i]();
   return (0, r.jsx)(I, h({
     type: t,
     user: n,

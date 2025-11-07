@@ -176,13 +176,13 @@
     return n.r = s(0, o(255, n.r - a(-(t / 100 * 255)))), n.g = s(0, o(255, n.g - a(-(t / 100 * 255)))), n.b = s(0, o(255, n.b - a(-(t / 100 * 255)))), c(n)
   }
 
-  function T(e, t) {
+  function S(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
     return n.l -= t / 100, n.l = k(n.l), c(n)
   }
 
-  function S(e, t) {
+  function T(e, t) {
     var n = c(e).toHsl(),
       r = (n.h + t) % 360;
     return n.h = r < 0 ? 360 + r : r, c(n)
@@ -387,7 +387,7 @@
       return this._applyModification(I, arguments)
     },
     darken: function() {
-      return this._applyModification(T, arguments)
+      return this._applyModification(S, arguments)
     },
     desaturate: function() {
       return this._applyModification(b, arguments)
@@ -399,7 +399,7 @@
       return this._applyModification(O, arguments)
     },
     spin: function() {
-      return this._applyModification(S, arguments)
+      return this._applyModification(T, arguments)
     },
     _applyCombination: function(e, t) {
       return e.apply(null, [this].concat([].slice.call(t)))

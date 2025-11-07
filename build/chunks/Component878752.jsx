@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 878752, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -25,31 +25,31 @@ function g(e) {
     showRightDivider: g = false
   } = e, {
     analyticsLocations: b
-  } = (0, l.ZP)(i.Z.VOICE_CONTROL_TRAY), _ = (0, o.Z)(), {
-    isSharedCanvasEnabled: y
+  } = (0, l.ZP)(r.Z.VOICE_CONTROL_TRAY), y = (0, o.Z)(), {
+    isSharedCanvasEnabled: C
   } = c.Z.useExperiment({
     guildId: null == t ? true : t.guild_id,
     location: "b7309a_1"
   }), {
-    enableViewerClipping: C
+    enableViewerClipping: _
   } = s.Z.useExperiment({
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: false
   }), v = (0, a.Z)(u.Z);
-  if (null == t || null != _) return null;
-  let O = C && v,
-    x = y && n;
-  return O || x ? (0, r.jsxs)(l.Gt, {
+  if (null == t || null != y) return null;
+  let x = _ && v,
+    O = C && n;
+  return x || O ? (0, i.jsxs)(l.Gt, {
     value: b,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, i.jsxs)("div", {
       className: m.voiceEffectsActionBar,
-      children: [O && (0, r.jsx)(d.Z, {
+      children: [x && (0, i.jsx)(d.Z, {
         channel: t
-      }), x && (0, r.jsx)(p.Z, {}), x && (0, r.jsx)(f.Z, {
+      }), O && (0, i.jsx)(p.Z, {}), O && (0, i.jsx)(f.Z, {
         channel: t
-      }), x && (0, r.jsx)(h.Z, {})]
-    }), g && (0, r.jsx)("div", {
+      }), O && (0, i.jsx)(h.Z, {})]
+    }), g && (0, i.jsx)("div", {
       className: m.divider
     })]
   }) : null

@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 438306, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -21,16 +21,16 @@ var Chunk442837 = require("./442837.js"),
 function g(e) {
   let {
     channel: t
-  } = e, n = (0, o.ZP)(t, true), g = (0, i.e7)([u.Z], () => u.Z.can(p.Plq.MANAGE_CHANNELS, t) && c.dF.has(t.type));
-  return (0, r.jsxs)(d.ZP, {
+  } = e, n = (0, o.ZP)(t, true), g = (0, r.e7)([u.Z], () => u.Z.can(p.Plq.MANAGE_CHANNELS, t) && c.dF.has(t.type));
+  return (0, i.jsxs)(d.ZP, {
     channelId: t.id,
-    children: [(0, r.jsx)(d.Kq, {
+    children: [(0, i.jsx)(d.Kq, {
       channelType: t.type
-    }), (0, r.jsx)(d.Ot, {
+    }), (0, i.jsx)(d.Ot, {
       children: f.intl.format(f.t.I3R7Vn, {
         channelName: n
       })
-    }), (0, r.jsx)(d.jz, {
+    }), (0, i.jsx)(d.jz, {
       className: m.markup,
       children: f.intl.format(f.t.pYMVRT, {
         channelName: n,
@@ -38,9 +38,9 @@ function g(e) {
           channelId: t.id
         })
       })
-    }), g ? (0, r.jsx)("div", {
+    }), g ? (0, i.jsx)("div", {
       className: h.buttonContainer,
-      children: (0, r.jsx)(l.Button, {
+      children: (0, i.jsx)(l.Button, {
         size: "sm",
         variant: "secondary",
         text: f.intl.string(f.t["3gUsJb"]),

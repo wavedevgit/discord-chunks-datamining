@@ -61,9 +61,9 @@ function v(e) {
     sourceDetails: b,
     setPopoutRef: v,
     onAction: I,
-    onClose: T
+    onClose: S
   } = e, {
-    resetInteraction: S,
+    resetInteraction: T,
     setInteractionToast: A
   } = (0, f.Xo)(), {
     theme: C
@@ -72,12 +72,12 @@ function v(e) {
     null == v || v(null == P ? true : P.current)
   }, [P, v]), i.useEffect(() => {
     let e = e => {
-      e.key === E.vn.ESCAPE && (e.stopPropagation(), S())
+      e.key === E.vn.ESCAPE && (e.stopPropagation(), T())
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
     }
-  }, [T, S]);
+  }, [S, T]);
   let w = async e => {
     if (null == e) return;
     _ === h.n_.AVATAR ? I({
@@ -115,7 +115,7 @@ function v(e) {
         emoji: t,
         willClose: n
       } = e;
-      await w(t), n && (S(), null == T || T())
+      await w(t), n && (T(), null == S || S())
     },
     pickerIntention: m.Hz.PROFILE
   })

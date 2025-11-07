@@ -137,7 +137,7 @@ function Z(e) {
     isSubgame: O = false,
     parentGame: v
   } = e, I = (0, s.cj)([_.ZP, E.Z, b.Z], () => (0, _.FZ)(t, _.ZP, E.Z, b.Z)), {
-    canToggleDetection: T,
+    canToggleDetection: S,
     isCurrentGameDetectionEnabled: R
   } = (0, s.cj)([_.ZP], () => ({
     canToggleDetection: null == v || _.ZP.isDetectionEnabled(v),
@@ -200,7 +200,7 @@ function Z(e) {
   function z() {
     if (D) return;
     let e = null != I.id ? E.Z.getDetectableGame(I.id) : null;
-    y.default.track(S.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
+    y.default.track(T.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? true : e.id,
       game_name: (0, g.le)(I) ? I.gameName : I.name
     }), L(true), (0, c.ZDy)(async () => {
@@ -213,7 +213,7 @@ function Z(e) {
           detectedActivity: {
             name: null != (i = I.name) ? i : "",
             application_id: null != (o = null != (a = null == e ? true : e.id) ? a : I.id) ? o : true,
-            type: S.IIU.PLAYING
+            type: T.IIU.PLAYING
           },
           onSubmitted: () => {}
         }))
@@ -310,7 +310,7 @@ function Z(e) {
   function J() {
     let {
       detectable: e
-    } = I, t = e && T ? (0, r.jsx)(c.tEF, {
+    } = I, t = e && S ? (0, r.jsx)(c.tEF, {
       size: "md",
       color: "currentColor",
       className: N.toggleIconOn,
@@ -318,7 +318,7 @@ function Z(e) {
     }) : (0, r.jsx)(c.kZF, {
       size: "md",
       color: "currentColor",
-      className: T ? N.toggleIconOff : N.toggleIconInactive,
+      className: S ? N.toggleIconOff : N.toggleIconInactive,
       colorClass: N.fill
     });
     return (0, r.jsx)("div", {
@@ -326,7 +326,7 @@ function Z(e) {
       children: (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         text: C.intl.string(C.t.QmitzM),
-        children: e => T ? (0, r.jsx)(c.P3F, M(x({}, e), {
+        children: e => S ? (0, r.jsx)(c.P3F, M(x({}, e), {
           "aria-label": C.intl.string(C.t.QmitzM),
           className: N.toggleIcon,
           onClick: K,
@@ -458,7 +458,7 @@ let H = (0, Chunk251625.oH)(function() {
         }, (0, _.rH)(e)))
       })
     }
-    return i.useEffect(() => ((0, p.Ky)(), p.P7), []), (0, r.jsxs)(T.Z, {
+    return i.useEffect(() => ((0, p.Ky)(), p.P7), []), (0, r.jsxs)(S.Z, {
       title: n ? C.intl.string(C.t.AVDyEj) : null,
       className: t,
       children: [null != l ? (0, r.jsx)(Z, {

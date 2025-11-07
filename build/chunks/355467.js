@@ -298,7 +298,7 @@ function F(e, t) {
 }
 
 function V(e) {
-  return S.i.includes(e.type)
+  return T.i.includes(e.type)
 }
 
 function H(e) {
@@ -702,7 +702,7 @@ async function es(e, t, n, r) {
     }), t;
     let e = t.fields.adyen_redirect_url;
     if (null == e) throw Y("redirect url cannot be null on a redirect for adyen.");
-    return eT(e), {
+    return eS(e), {
       redirectConfirmation: true
     }
   }
@@ -1042,7 +1042,7 @@ function eb(e, t) {
 async function ey(e, t) {
   if (null == e) throw Y("redirect url cannot be null on a redirect for adyen.");
   if (null == t) throw Y("Payment source cannot be null on a redirect.");
-  return I.j8d.has(t.type) ? (eT(e), {
+  return I.j8d.has(t.type) ? (eS(e), {
     redirectConfirmation: true,
     redirectURL: e
   }) : {
@@ -1060,7 +1060,7 @@ async function eO(e, t) {
   if (null == n) throw Y("Stripe cannot be null on a redirect.");
   if (I.j8d.has(t.type)) {
     let e = await ek(t.type);
-    return eT(await eA({
+    return eS(await eA({
       stripe: n,
       paymentSource: t,
       clientSecret: r,
@@ -1069,7 +1069,7 @@ async function eO(e, t) {
       redirectConfirmation: true
     }
   }
-  return await eS({
+  return await eT({
     stripe: n,
     clientSecret: r,
     paymentMethodId: i,
@@ -1102,10 +1102,10 @@ async function eI(e) {
   returntrue
 }
 
-function eT(e) {
+function eS(e) {
   window.open(e)
 }
-async function eS(e) {
+async function eT(e) {
   let t, {
       stripe: n,
       paymentSource: r,

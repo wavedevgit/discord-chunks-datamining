@@ -104,7 +104,7 @@ function I(e, t) {
   o = s.lv(c, o, _.ZP), o = s.iK(0 + t.length, o), p.Z.updateSearchEditorState(e, o)
 }
 
-function T(e, t) {
+function S(e, t) {
   let n = v(e);
   if (null == n) return;
   let r = n.endsWith(" ") ? n + t : n + " " + t;
@@ -115,7 +115,7 @@ function T(e, t) {
   })
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   let r = (0, u.Tm)(e),
     i = h.Z.getEditorState(r);
   if (null == i) return;
@@ -139,7 +139,7 @@ let C = {
   cleanUpSearchState: b,
   fetchMessages: O,
   setSearchInputText: I,
-  appendToSearchInputText: T,
+  appendToSearchInputText: S,
   getSearchInputText: v,
   ensureSearchInputDecorators: function(e) {
     let t, n = (0, u.Tm)(e),
@@ -168,6 +168,6 @@ let C = {
       replace: r
     })
   },
-  transitionQueryStateToSearchContext: S,
+  transitionQueryStateToSearchContext: T,
   cleanUpPrivateChannelSearchState: A
 }

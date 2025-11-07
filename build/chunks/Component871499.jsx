@@ -92,8 +92,8 @@ function I(e) {
     iconComponent: b,
     themeable: v = false,
     disabled: I = false,
-    isActive: T = false,
-    tooltipPosition: S = "top",
+    isActive: S = false,
+    tooltipPosition: T = "top",
     shouldShowTooltip: A = true,
     forceTooltipOpen: C = false,
     buttonRef: N,
@@ -107,7 +107,7 @@ function I(e) {
   return (0, r.jsx)(_.Z, {
     children: (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
-      position: S,
+      position: T,
       text: t,
       "aria-label": P,
       shouldShow: A,
@@ -117,7 +117,7 @@ function I(e) {
           onClick: t,
           onContextMenu: c,
           onMouseEnter: _,
-          onMouseLeave: S
+          onMouseLeave: T
         } = e, A = O(e, ["onClick", "onContextMenu", "onMouseEnter", "onMouseLeave"]);
         return (0, r.jsxs)(l.zx, y(E({
           look: null != w ? w : l.zx.Looks.BLANK,
@@ -136,7 +136,7 @@ function I(e) {
             null == _ || _(), null == a || a(e)
           },
           onMouseLeave: e => {
-            null == S || S(), null == u || u(e)
+            null == T || T(), null == u || u(e)
           },
           onContextMenu: e => {
             null == c || c(), null == d || d(e)
@@ -145,14 +145,14 @@ function I(e) {
             null == _ || _(), null == a || a(e)
           },
           onBlur: e => {
-            null == S || S(), null == u || u(e)
+            null == T || T(), null == u || u(e)
           },
           disabled: I,
           innerClassName: o()(m.lineHeightReset, {
             [m.buttonInnerWithText]: null != D
           }),
           className: o()({
-            [m.active]: T
+            [m.active]: S
           }, f),
           wrapperClassName: p,
           buttonRef: N,
@@ -164,7 +164,7 @@ function I(e) {
             className: o()(h, {
               [m.controlIcon]: null == D,
               [m.themeable]: v,
-              [m.active]: T
+              [m.active]: S
             }),
             color: g
           }), D]
@@ -173,7 +173,7 @@ function I(e) {
     })
   })
 }
-let T = {
+let S = {
     disconnect: Chunk119421.disconnect,
     join: Chunk119421.join,
     red: Chunk119421.red,
@@ -185,7 +185,7 @@ let T = {
     activeLight: Chunk119421.activeLight,
     premiumGradient: Chunk119421.premiumGradient
   },
-  S = {
+  T = {
     disconnect: Chunk119421.disconnect,
     join: Chunk119421.join,
     red: Chunk119421.redGlow,
@@ -229,16 +229,16 @@ function A(e) {
       grow: false,
       onContextMenu: j,
       iconClassName: o()(b, m.centerIcon, k && m.fullRegionIcon),
-      className: o()(x || R ? g : null, l && m.active, m.centerButton, S[w], k && m.fullRegionButton, G && m.attachedButton)
+      className: o()(x || R ? g : null, l && m.active, m.centerButton, T[w], k && m.fullRegionButton, G && m.attachedButton)
     }));
   return x ? B : (0, r.jsxs)("div", {
     ref: n,
-    className: o()(m.attachedCaretButtonContainer, A && m.popoutOpen, g, U && [m.fullRegionDropdownButton, T[w]]),
+    className: o()(m.attachedCaretButtonContainer, A && m.popoutOpen, g, U && [m.fullRegionDropdownButton, S[w]]),
     children: [B, null != v ? (0, r.jsx)(_.Z, {
       children: (0, r.jsx)(c.P3F, {
         "aria-label": h.intl.string(h.t.PdRCRg),
         onClick: C ? true : v,
-        className: o()(m.contextMenuNub, N && m.attachedCaret, S[D], A && [m.popoutOpen, m.active], C && m.disabled),
+        className: o()(m.contextMenuNub, N && m.attachedCaret, T[D], A && [m.popoutOpen, m.active], C && m.disabled),
         children: (0, r.jsx)(d.Z, {
           className: o()(m.contextMenuCaret, A && m.open, C && m.disabled)
         })

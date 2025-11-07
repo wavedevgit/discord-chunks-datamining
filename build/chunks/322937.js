@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 322937, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $: () => a
@@ -12,8 +12,8 @@ function a(e) {
     communicationDisabledUntil: t,
     userId: n,
     guildId: a
-  } = null != e ? e : {}, o = (0, i.Z)(null != t ? Date.parse(t) : Date.now()), s = o.seconds, c = (0, r.useRef)(null);
-  return (0, r.useEffect)(() => null == e || null == a || null == n ? void clearTimeout(c.current) : (s <= 0 && null == c.current && (c.current = setTimeout(() => {
+  } = null != e ? e : {}, o = (0, r.Z)(null != t ? Date.parse(t) : Date.now()), s = o.seconds, c = (0, i.useRef)(null);
+  return (0, i.useEffect)(() => null == e || null == a || null == n ? void clearTimeout(c.current) : (s <= 0 && null == c.current && (c.current = setTimeout(() => {
     l.Z.clearGuildMemberTimeout(a, n)
   }, 1e3)), () => {
     null != c.current && (clearTimeout(c.current), c.current = null)

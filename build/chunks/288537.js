@@ -21,8 +21,8 @@ var r, Chunk754793 = require("./754793.js"),
   O = 2,
   v = 3,
   I = 4,
-  T = 0,
-  S = 2,
+  S = 0,
+  T = 2,
   A = 8,
   C = 9,
   N = 15,
@@ -201,7 +201,7 @@ function e_() {
 
 function ep(e) {
   var t;
-  return e && e.state ? (e.total_in = e.total_out = 0, e.data_type = S, (t = e.state).pending = 0, t.pending_out = 0, t.wrap < 0 && (t.wrap = -t.wrap), t.status = t.wrap ? G : H, e.adler = +(2 !== t.wrap), t.last_flush = c, a._tr_init(t), p) : Q(e, m)
+  return e && e.state ? (e.total_in = e.total_out = 0, e.data_type = T, (t = e.state).pending = 0, t.pending_out = 0, t.wrap < 0 && (t.wrap = -t.wrap), t.status = t.wrap ? G : H, e.adler = +(2 !== t.wrap), t.last_flush = c, a._tr_init(t), p) : Q(e, m)
 }
 
 function eh(e) {
@@ -300,5 +300,5 @@ r = [new ed(0, 0, 0, 0, function(e, t) {
   }
   return (e.insert = 0, t === f) ? (et(e, true), 0 === e.strm.avail_out) ? z : q : (e.strstart > e.block_start && (et(e, false), e.strm.avail_out), W)
 }), new ed(4, 4, 8, 4, es), new ed(4, 5, 16, 8, es), new ed(4, 6, 32, 32, es), new ed(4, 4, 16, 16, el), new ed(8, 16, 32, 32, el), new ed(8, 16, 128, 128, el), new ed(8, 32, 128, 256, el), new ed(32, 128, 258, 1024, el), new ed(32, 258, 258, 4096, el)], exports.deflateInit = function(e, t) {
-  return eg(e, t, A, N, R, T)
+  return eg(e, t, A, N, R, S)
 }, exports.deflateInit2 = eg, exports.deflateReset = eh, exports.deflateResetKeep = ep, exports.deflateSetHeader = em, exports.deflate = eE, exports.deflateEnd = eb, exports.deflateSetDictionary = ey, exports.deflateInfo = "pako deflate (from Nodeca project)"

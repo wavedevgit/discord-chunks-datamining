@@ -30,7 +30,7 @@ function m(e) {
   } = e, O = (0, a.e7)([u.Z], () => u.Z.getEffectForEmojiId(t, n, m)), v = g ? h : p, I = i.useMemo(() => (0, _.Zn)(m, E, t, {
     key: O,
     messageId: n
-  }), [E, O, m, t, n]), [T, S] = i.useState(false), A = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), C = c.Yk.useSetting(), N = i.useCallback(() => {
+  }), [E, O, m, t, n]), [S, T] = i.useState(false), A = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), C = c.Yk.useSetting(), N = i.useCallback(() => {
     o.Z.dispatch({
       type: "BURST_REACTION_EFFECT_CLEAR",
       channelId: t,
@@ -40,22 +40,22 @@ function m(e) {
   }, [m, t, n]);
   return (i.useEffect(() => {
     let e = () => {
-      if (T) return;
+      if (S) return;
       let e = (0, d.vJ)("".concat(Date.now()).concat(t).concat(n).concat(m.name)) % 10;
-      (e += b > 4 ? 4 : b - 1) > 7 && (S(true), (0, l.T6)({
+      (e += b > 4 ? 4 : b - 1) > 7 && (T(true), (0, l.T6)({
         channelId: t,
         messageId: n,
         emoji: m,
         key: u.I.RANDOM
       }))
     };
-    if (T || A && !C || !C) return;
+    if (S || A && !C || !C) return;
     e();
     let r = setInterval(e, 5e3);
     return () => {
       clearInterval(r)
     }
-  }, [C, t, b, m, m.name, T, n, A]), null == O) ? null : (0, r.jsx)(f.Z, {
+  }, [C, t, b, m, m.name, S, n, A]), null == O) ? null : (0, r.jsx)(f.Z, {
     className: v.effect,
     effect: I,
     onComplete: N,

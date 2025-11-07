@@ -4,7 +4,7 @@
 let r, i, a, o;
 require.d(exports, {
   Z: () => U,
-  o: () => S
+  o: () => T
 }), require("./388685.js"), require("./539854.js");
 var s, Chunk348327 = require("./348327.js"),
   c = require.n(Chunk348327),
@@ -53,12 +53,12 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = 6,
+let T = 6,
   A = 7,
   C = N();
 
@@ -159,7 +159,7 @@ function L(e) {
     status: t,
     emoji: n
   };
-  return false === a && i.length < S ? (i.push(o), r = true) : a >= 0 && (i.splice(a, 1), r = true), !!r && (C.favoritedStatuses = i, true)
+  return false === a && i.length < T ? (i.push(o), r = true) : a >= 0 && (i.splice(a, 1), r = true), !!r && (C.favoritedStatuses = i, true)
 }
 
 function M() {
@@ -218,10 +218,10 @@ class k extends(s = Chunk442837.ZP.PersistedStore) {
 }
 O(k, "displayName", "HangStatusStore"), O(k, "persistKey", "HangStatusStore"), O(k, "migrations", [e => {
   if (null != e.currentDefaultStatus && null == e.currentDefaultStatus.gameActivityHangStatus) {
-    let t = T(v({}, e.currentDefaultStatus), {
+    let t = S(v({}, e.currentDefaultStatus), {
       gameActivityHangStatus: null
     });
-    return T(v({}, e), {
+    return S(v({}, e), {
       currentDefaultStatus: t
     })
   }

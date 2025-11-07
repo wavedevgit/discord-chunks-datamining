@@ -60,8 +60,8 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
-  S = e => {
+let S = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
+  T = e => {
     null != e && c.ZP.trackWithMetadata(g.rMx.EXPRESSION_TOOLTIP_VIEWED, {
       type: E.cd.STICKER_IN_MESSAGE_HOVER,
       expression_id: e.id,
@@ -109,7 +109,7 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
             __unsupportedReactNodeAsText: (0, d.Y)(A),
             "aria-label": false,
             onTooltipShow: () => {
-              S(y)
+              T(y)
             },
             children: (0, r.jsx)(s.P3F, {
               innerRef: c,
@@ -120,7 +120,7 @@ let T = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
               tag: "span",
               children: (0, r.jsx)(h.Z, {
                 isInteracting: o,
-                size: T,
+                size: S,
                 sticker: null != y ? y : t
               })
             })

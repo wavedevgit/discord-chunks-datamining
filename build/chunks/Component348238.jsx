@@ -99,7 +99,7 @@ function w(e, t, n) {
         decoration: "never"
       })),
       o = "<@".concat(e, ">");
-    E.S.dispatchToLastSubscribed(S.CkL.INSERT_TEXT, {
+    E.S.dispatchToLastSubscribed(T.CkL.INSERT_TEXT, {
       plainText: a,
       rawText: o
     }), l.Z.startTyping(t)
@@ -150,7 +150,7 @@ function B(e, t, a, s) {
   } = t, {
     id: u,
     flags: d
-  } = e, f = (0, b.yE)(d, S.iLy.EPHEMERAL), _ = (0, c.bp)();
+  } = e, f = (0, b.yE)(d, T.iLy.EPHEMERAL), _ = (0, c.bp)();
   return i.useCallback((e, t) => {
     if (f) return;
     if (!y.isPlatformEmbedded) {
@@ -231,10 +231,10 @@ function Y(e) {
   } = e, o = n.author.id, s = "".concat(t, ":").concat(o), l = i.useRef(r), c = q(n, a), [u, d] = i.useState(r);
   l.current = u || l.current;
   let f = i.useCallback(e => {
-      (0, _.T6)(), u || (E.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, s, true), c(e), d(true))
+      (0, _.T6)(), u || (E.S.dispatchKeyed(T.LPv.ANIMATE_CHAT_AVATAR, s, true), c(e), d(true))
     }, [u, s, c]),
     p = i.useCallback(() => {
-      E.S.dispatchKeyed(S.LPv.ANIMATE_CHAT_AVATAR, s, false), d(false)
+      E.S.dispatchKeyed(T.LPv.ANIMATE_CHAT_AVATAR, s, false), d(false)
     }, [s]);
   return {
     hasHovered: l.current,
@@ -267,7 +267,7 @@ function K(e, t) {
     let {
       messageReference: n
     } = e;
-    (null == t || (0, T.Z)(t)) && s.Z.jumpToMessage({
+    (null == t || (0, S.Z)(t)) && s.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.message_id,
       flash: true,

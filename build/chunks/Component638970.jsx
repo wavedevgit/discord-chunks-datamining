@@ -118,7 +118,7 @@ function M(e) {
     guildId: a
   }), B = t.id === n.id, Z = (0, s.e7)([p.Z, _.Z], () => {
     let e = B ? p.Z.getStatus() : _.Z.getStatus(t.id, a);
-    return e === T.Sk.OFFLINE || e === T.Sk.INVISIBLE
+    return e === S.Sk.OFFLINE || e === S.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: F
   } = (0, u.U)({
@@ -153,7 +153,7 @@ function M(e) {
         })
       },
       variant: "secondary",
-      text: S.intl.string(S.t.pD1L1u),
+      text: T.intl.string(T.t.pD1L1u),
       textVariant: "text-xs/medium"
     })
   }) : null, el = i.useCallback(() => {
@@ -187,7 +187,7 @@ function M(e) {
     children: [(0, r.jsx)(l.nn4, {
       children: (0, r.jsx)(l.H, {
         id: R,
-        children: S.intl.string(S.t.J6STd9)
+        children: T.intl.string(T.t.J6STd9)
       })
     }), (0, r.jsxs)("div", {
       ref: W,
@@ -210,7 +210,7 @@ function M(e) {
               children: (0, r.jsx)(l.Text, {
                 variant: "text-xs/medium",
                 color: "none",
-                children: S.intl.format(S.t.wv8Q7k, {
+                children: T.intl.format(T.t.wv8Q7k, {
                   activitiesCount: ea.length
                 })
               })

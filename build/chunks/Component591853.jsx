@@ -4,8 +4,8 @@
 require.d(exports, {
   St: () => eb,
   WT: () => ey,
-  jL: () => eS,
-  wG: () => eT,
+  jL: () => eT,
+  wG: () => eS,
   yR: () => eg
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -179,7 +179,7 @@ function ey(e) {
     buttons: s = [],
     header: f,
     onVoiceChannelPreview: m
-  } = e, [g, E] = i.useState(false), [b, y] = i.useState(null), v = i.useRef(null), I = (0, c.e7)([G.Z], () => null != t && es.TPd.CONTENT_ENTRY_EMBEDS.has(t.type) && G.Z.can(es.Plq.SEND_MESSAGES, t)), [S, A] = i.useState(false), [C, N] = i.useState(false), {
+  } = e, [g, E] = i.useState(false), [b, y] = i.useState(null), v = i.useRef(null), I = (0, c.e7)([G.Z], () => null != t && es.TPd.CONTENT_ENTRY_EMBEDS.has(t.type) && G.Z.can(es.Plq.SEND_MESSAGES, t)), [T, A] = i.useState(false), [C, N] = i.useState(false), {
     voiceBar: R,
     joinVoiceButton: P
   } = eC({
@@ -201,7 +201,7 @@ function ey(e) {
           surface_type: eo.Kd.GUILD_MEMBER_LIST,
           channel_id: null == t ? true : t.id,
           guild_id: null == t ? true : t.guild_id
-        }), (0, T.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), A(true), N(false), g) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
+        }), (0, S.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), A(true), N(false), g) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
       else {
         var o;
         let e = await h.Z.getOrEnsurePrivateChannel(n.id);
@@ -221,7 +221,7 @@ function ey(e) {
     }
   }, H = async e => {
     let r;
-    if ((0, T.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), g) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
+    if ((0, S.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), g) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
     else {
       let e = await h.Z.openPrivateChannel({
           recipientIds: n.id
@@ -261,14 +261,14 @@ function ey(e) {
   return (0, r.jsx)("div", {
     ref: v,
     style: {
-      pointerEvents: S ? "none" : "all"
+      pointerEvents: T ? "none" : "all"
     },
     children: (0, r.jsx)(p.EqS, {
       containerRef: v,
       children: (0, r.jsxs)("div", {
         children: [(0, r.jsx)(ea.Z, {
           sent: C,
-          shown: S,
+          shown: T,
           className: eu.toastContainer
         }), null != z ? z : (0, r.jsx)(er.Z, {
           children: (0, r.jsxs)("div", {
@@ -339,7 +339,7 @@ let eO = e => {
     o(true)
   }, []);
   let s = !!b.Z.keyboardModeEnabled && !a,
-    l = (0, S.wC)(null == t ? true : t.guild_id).slice(0, 5).map(e => null == e.id ? {
+    l = (0, T.wC)(null == t ? true : t.guild_id).slice(0, 5).map(e => null == e.id ? {
       emoji: e,
       url: e.url
     } : {
@@ -464,7 +464,7 @@ function eI(e) {
   })
 }
 
-function eT(e) {
+function eS(e) {
   var t, {
       title: n,
       subtitle: i,
@@ -496,7 +496,7 @@ function eT(e) {
   } = (0, z.rv)({
     entry: E,
     showCoverImage: _
-  }), T = b ? O : true;
+  }), S = b ? O : true;
   return (0, r.jsxs)("div", {
     className: eu.popoutContentWrapper,
     children: [(0, r.jsx)(ev, ep(ef({
@@ -513,13 +513,13 @@ function eT(e) {
             image: v,
             smallImage: I,
             aspectRatio: _ ? "none" : true,
-            onClick: null != l ? l : T,
+            onClick: null != l ? l : S,
             size: Q.J.SIZE_72
           })
         }), (0, r.jsxs)("div", {
           className: eu.popoutHeroBody,
           children: [(0, r.jsx)(eI, {
-            onClick: null != c ? c : T,
+            onClick: null != c ? c : S,
             children: (0, r.jsx)(p.Heading, {
               variant: "heading-md/medium",
               className: o()(eu.popoutHeroTextPrimary, {
@@ -529,7 +529,7 @@ function eT(e) {
               children: n
             })
           }), null != i ? (0, r.jsx)(eI, {
-            onClick: null != u ? u : T,
+            onClick: null != u ? u : S,
             children: (0, r.jsx)(p.Text, {
               variant: "text-sm/normal",
               className: eu.popoutHeroTextSecondary,
@@ -547,7 +547,7 @@ function eT(e) {
   })
 }
 
-function eS(e) {
+function eT(e) {
   var t, {
       title: n,
       subtitle: a,
@@ -576,16 +576,16 @@ function eS(e) {
     }, {
       onOpened: () => null == _ ? true : _(eo.xP.OPENED_GAME_PROFILE)
     }),
-    T = O ? I : true,
+    S = O ? I : true,
     {
-      activity: S,
+      activity: T,
       activityApplication: w,
       fallbackApplication: D
     } = (0, $.Z)(y),
     {
       largeImage: x,
       smallImage: L
-    } = (0, z.YC)(S, null != w ? w : D),
+    } = (0, z.YC)(T, null != w ? w : D),
     {
       largeImage: M
     } = (0, z.rv)({
@@ -623,13 +623,13 @@ function eS(e) {
           children: (0, r.jsx)(Q.E, {
             image: x,
             smallImage: L,
-            onClick: null != l ? l : T,
+            onClick: null != l ? l : S,
             size: Q.J.SIZE_72
           })
         }), (0, r.jsxs)("div", {
           className: eu.streamingPopoutHeaderText,
           children: [(0, r.jsx)(eI, {
-            onClick: null != u ? u : T,
+            onClick: null != u ? u : S,
             children: (0, r.jsx)(p.Heading, {
               variant: "heading-md/semibold",
               className: eu.popoutTextPrimary,
@@ -637,7 +637,7 @@ function eS(e) {
               children: n
             })
           }), null != a ? (0, r.jsx)(eI, {
-            onClick: null != d ? d : T,
+            onClick: null != d ? d : S,
             children: (0, r.jsx)(p.Text, {
               variant: "text-sm/normal",
               className: eu.popoutTextSecondary,

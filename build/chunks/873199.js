@@ -1,6 +1,9 @@
-/** Chunk was on 35755 **/
-/** chunk id: 873199, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 873199, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  o: () => l
+  o: () => r
 }), require("./388685.js");
-var i, l = ((i = {})[i.LIST = 1] = "LIST", i[i.LIST_WITH_IMAGE = 2] = "LIST_WITH_IMAGE", i[i.GALLERY = 3] = "GALLERY", i[i.EXPANDABLE_LIST = 4] = "EXPANDABLE_LIST", i[i.BANNER_CARDS = 5] = "BANNER_CARDS", i[i.SMALL_BANNER_CARDS = 6] = "SMALL_BANNER_CARDS", i[i.BANNER_IMAGE = 7] = "BANNER_IMAGE", i)
+var r = function(e) {
+  return e[e.LIST = 1] = "LIST", e[e.LIST_WITH_IMAGE = 2] = "LIST_WITH_IMAGE", e[e.GALLERY = 3] = "GALLERY", e[e.EXPANDABLE_LIST = 4] = "EXPANDABLE_LIST", e[e.BANNER_CARDS = 5] = "BANNER_CARDS", e[e.SMALL_BANNER_CARDS = 6] = "SMALL_BANNER_CARDS", e[e.BANNER_IMAGE = 7] = "BANNER_IMAGE", e
+}({})

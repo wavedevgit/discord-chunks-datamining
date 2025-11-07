@@ -62,13 +62,13 @@ function O(e, t) {
 function v() {}
 let I = [Chunk727785.h8.VOICE_CHANNEL];
 
-function T(e) {
+function S(e) {
   e.setOptions({
     voiceChannelGuildFilter: null
   }), e.setLimit(1 / 0)
 }
 
-function S(e) {
+function T(e) {
   let {
     height: t
   } = e;
@@ -80,13 +80,13 @@ function S(e) {
 }
 
 function A() {
-  return (0, Chunk951288.jsx)(S, {
+  return (0, Chunk951288.jsx)(T, {
     height: 16
   }, "footer")
 }
 
 function C() {
-  return (0, Chunk951288.jsx)(S, {
+  return (0, Chunk951288.jsx)(T, {
     height: 8
   }, "header")
 }
@@ -203,20 +203,20 @@ function x(e) {
   } = (0, l.Z)({
     visible: true,
     autocompleterResultTypes: I,
-    autocompleterBeforeCreateSearchContext: T
+    autocompleterBeforeCreateSearchContext: S
   }), v = R(b), {
-    focusedIndex: S,
+    focusedIndex: T,
     setFocusedIndex: P
   } = D(b);
   i.useEffect(() => {
     let {
       current: e
     } = c;
-    null == e || e.isItemVisible(0, S, true) || e.scrollToIndex({
+    null == e || e.isItemVisible(0, T, true) || e.scrollToIndex({
       section: 0,
-      row: S
+      row: T
     })
-  }, [S]);
+  }, [T]);
   let x = null != v ? v.length : O.length;
 
   function L(e) {
@@ -234,7 +234,7 @@ function x(e) {
       id: i.id,
       channel: i,
       category: o,
-      focused: S === t,
+      focused: T === t,
       onMouseEnter: () => f.current && P(t),
       onClick: () => {
         a(i.id), n()
@@ -256,26 +256,26 @@ function x(e) {
         break;
       case "enter": {
         let e = (() => {
-          if (null != v) return v[S];
-          let e = O[S];
+          if (null != v) return v[T];
+          let e = O[T];
           if ((null == e ? true : e.type) === h.h8.VOICE_CHANNEL) return e.record
         })();
         null == e ? a(true) : a(e.id), n();
         break
       }
       case "arrowup":
-        0 === S ? P(x - 1) : P(S - 1);
+        0 === T ? P(x - 1) : P(T - 1);
         break;
       case "arrowdown":
-        S >= x - 1 ? P(0) : P(S + 1)
+        T >= x - 1 ? P(0) : P(T + 1)
     }
   }
   let j = (() => {
     if (null != v) {
       var e;
-      return null == (e = v[S]) ? true : e.id
+      return null == (e = v[T]) ? true : e.id
     }
-    let t = O[S];
+    let t = O[T];
     if ((null == t ? true : t.type) === h.h8.VOICE_CHANNEL) return t.record.id
   })();
   return (0, r.jsx)(o.IX, {

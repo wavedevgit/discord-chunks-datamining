@@ -1,9 +1,9 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 673125, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
 }), require("./539854.js"), require("./388685.js");
-var r, Chunk442837 = require("./442837.js"),
+var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk633302 = require("./633302.js"),
   Chunk594174 = require("./594174.js"),
@@ -24,10 +24,10 @@ function p(e, t, n) {
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
+    }))), i.forEach(function(t) {
       p(e, t, n[t])
     })
   }
@@ -37,18 +37,18 @@ let h = {},
   m = {},
   g = {},
   b = true,
-  _ = null;
+  y = null;
 
-function y(e) {
+function C(e) {
   if (null == m[e]) {
     let t = o.default.getUser(e);
     if (null == t) return;
     let n = t.getAvatarURL(null, d.Ks),
-      r = new Image;
-    r.src = n, m[e] = r
+      i = new Image;
+    i.src = n, m[e] = i
   }
 }
-class C extends(r = Chunk442837.ZP.Store) {
+class _ extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default)
   }
@@ -65,22 +65,22 @@ class C extends(r = Chunk442837.ZP.Store) {
     return g[e]
   }
   getDrawMode() {
-    return _
+    return y
   }
 }
-p(C, "displayName", "SharedCanvasStore");
-let v = new C(Chunk570140.Z, {
+p(_, "displayName", "SharedCanvasStore");
+let v = new _(Chunk570140.Z, {
   SHARED_CANVAS_UPDATE_LINE_POINTS: function(e) {
     let {
       lineId: t,
       newPoints: n,
-      userId: r,
-      streamerId: i
-    } = e, l = h[i];
-    if (null == l) h[i] = [{
+      userId: i,
+      streamerId: r
+    } = e, l = h[r];
+    if (null == l) h[r] = [{
       type: c.W.LINE,
       id: t,
-      userId: r,
+      userId: i,
       points: n
     }];
     else {
@@ -88,30 +88,30 @@ let v = new C(Chunk570140.Z, {
       null == e ? l.push({
         type: c.W.LINE,
         id: t,
-        userId: r,
+        userId: i,
         points: n
       }) : (0, u.P7)(e) && e.points.push(...n)
     }
-    y(r)
+    C(i)
   },
   SHARED_CANVAS_UPDATE_EMOJI_HOSE: function(e) {
-    var t, n, r, i, l;
+    var t, n, i, r, l;
     let {
       emojiHose: o,
       streamerId: u,
       userId: p
-    } = e, m = (i = f({}, o), l = l = {
+    } = e, m = (r = f({}, o), l = l = {
       type: c.W.EMOJI_HOSE
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var i = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, i)
       }
       return n
     })(Object(l)).forEach(function(e) {
-      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-    }), i);
+      Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+    }), r);
     if (null == h[u]) h[u] = [m];
     else {
       let e = h[u].findIndex(e => e.id === o.id);
@@ -122,11 +122,11 @@ let v = new C(Chunk570140.Z, {
       let e = null != o.emojiName ? a.ZP.convertNameToSurrogate(o.emojiName) : null;
       g[b] = new Image, g[b].src = (0, s.qc)({
         id: o.emojiId,
-        name: null != (r = null != e ? e : o.emojiName) ? r : "",
+        name: null != (i = null != e ? e : o.emojiName) ? i : "",
         animated: false
       }, d.qh)
     }
-    y(p)
+    C(p)
   },
   SHARED_CANVAS_CLEAR_DRAWABLES: function(e) {
     let {
@@ -142,7 +142,7 @@ let v = new C(Chunk570140.Z, {
     let {
       drawMode: t
     } = e;
-    _ = t
+    y = t
   },
   TOGGLE_OVERLAY_CANVAS: function(e) {
     let {} = e;

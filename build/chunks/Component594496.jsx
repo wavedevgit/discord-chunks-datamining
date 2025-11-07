@@ -43,8 +43,8 @@ function j(e) {
   var t, n, i, j;
   let {
     guild: k
-  } = e, U = (0, o.e7)([S.default], () => {
-    let e = S.default.getCurrentUser();
+  } = e, U = (0, o.e7)([T.default], () => {
+    let e = T.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
   }), G = (0, d.m)(x.PremiumTypes.TIER_2), {
     pendingAvatar: B,
@@ -80,7 +80,7 @@ function j(e) {
   }), q = null != k ? k : K;
   a()(null != q, "guild should not be null");
   let X = (0, u.gS)(q.id),
-    Q = (0, o.e7)([T.ZP], () => null == q.id ? null : T.ZP.getMember(q.id, U.id)),
+    Q = (0, o.e7)([S.ZP], () => null == q.id ? null : S.ZP.getMember(q.id, U.id)),
     J = (0, o.e7)([I.Z], () => I.Z.getGuildMemberProfile(U.id, q.id)),
     $ = (0, c.cL)({
       location: "GuildIdentityCustomizationSections"

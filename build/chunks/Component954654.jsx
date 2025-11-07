@@ -84,7 +84,7 @@ function L(e) {
 function M(e, t) {
   switch (e.type) {
     case s.re.ACTION_ROW:
-      return (0, r.jsx)(S.Z, x(w({}, e), {
+      return (0, r.jsx)(T.Z, x(w({}, e), {
         renderComponents: L
       }), t);
     case s.re.BUTTON:
@@ -114,7 +114,7 @@ function M(e, t) {
     case s.re.SEPARATOR:
       return (0, r.jsx)(y.Z, w({}, e), t);
     case s.re.CONTENT_INVENTORY_ENTRY:
-      return (0, r.jsx)(T.Z, w({}, e), t);
+      return (0, r.jsx)(S.Z, w({}, e), t);
     case s.re.CONTAINER:
       return (0, r.jsx)(A.Z, x(w({}, e), {
         renderComponents: L

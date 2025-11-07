@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 400321, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -20,7 +20,7 @@ function a(e) {
     deadDrawables: p
   } = e;
   null == d.current[t.id] && (d.current[t.id] = Date.now()), n.lineCap = "round", n.lineJoin = "round";
-  let f = t.points.map(e => (0, r.RR)(e, a, o)),
+  let f = t.points.map(e => (0, i.RR)(e, a, o)),
     h = d.current[t.id],
     m = e => h + e.deltaTime + 1500 >= Date.now(),
     g = e => h + e.deltaTime <= Date.now() && m(e),
@@ -29,20 +29,20 @@ function a(e) {
     m(t.points[t.points.length - 1]) || p.push(t);
     return
   }
-  let _ = (e, t) => {
-      let r = null;
+  let y = (e, t) => {
+      let i = null;
       n.lineWidth = t * window.devicePixelRatio, n.strokeStyle = e, n.beginPath(), n.moveTo(b.x, b.y);
       for (let e = 1; e < f.length; e++) {
         let t = f[e];
-        g(t) && (n.lineTo(t.x, t.y), r = t)
+        g(t) && (n.lineTo(t.x, t.y), i = t)
       }
-      return n.stroke(), r
+      return n.stroke(), i
     },
     {
-      fillColor: y,
-      outlineColor: C
-    } = (0, r.bg)(t.userId, c, u, s),
-    v = _(C, 6 + l.q2),
-    O = null != v && g(v);
-  O && (0, i.I)(n, v.x, v.y, C, l.q2), _(y, 6), O && (0, i.T)(n, v.x, v.y, t.userId)
+      fillColor: C,
+      outlineColor: _
+    } = (0, i.bg)(t.userId, c, u, s),
+    v = y(_, 6 + l.q2),
+    x = null != v && g(v);
+  x && (0, r.I)(n, v.x, v.y, _, l.q2), y(C, 6), x && (0, r.T)(n, v.x, v.y, t.userId)
 }

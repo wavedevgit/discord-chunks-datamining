@@ -73,7 +73,7 @@ let y = false,
       o.Z.unsubscribe(e, n), setTimeout(t, 0)
     };
     o.Z.subscribe(e, n)
-  }), T = e => new Promise(t => {
+  }), S = e => new Promise(t => {
     let n = new Map;
     e.forEach(r => {
       let i = () => {
@@ -84,7 +84,7 @@ let y = false,
       };
       n.set(r, i), o.Z.subscribe(r, i)
     })
-  }), S = () => {
+  }), T = () => {
     if (!Chunk763296.Z.shouldFetchDefaultSounds()) return Promise.resolve();
     Chunk570140.Z.dispatch({
       type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS"
@@ -106,7 +106,7 @@ let y = false,
     Chunk570140.Z.dispatch({
       type: "SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FETCH"
     });
-    let e = T(["SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_SUCCESS", "SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FAILURE"]);
+    let e = S(["SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_SUCCESS", "SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FAILURE"]);
     return v(), module
   }, N = async () => {
     if (__OVERLAY__) return Chunk570140.Z.dispatch({
@@ -115,7 +115,7 @@ let y = false,
     let e = performance.now(),
       t = !y;
     y = true;
-    let n = await Promise.all([S(), A(), C()]);
+    let n = await Promise.all([T(), A(), C()]);
     if (exports) {
       let t = performance.now() - module;
       Chunk626135.default.track(Chunk981631.rMx.EXPRESSION_PICKER_SOUNDBOARD_SOUNDS_LOADED, {

@@ -540,6 +540,6 @@ class k extends Chunk476326.ZP {
         r = t.total + e,
         i = n - this.loaded;
       this.emit("progress", n, r, i), this.loaded = n
-    }), this.channelId = t, this.preCompressionSize = null != (s = null == (a = e.file) ? true : a.size) ? s : 0, this.currentSize = null != (l = null == (o = e.file) ? true : o.size) ? l : 0, this.reactNativeFileIndex = r, null != i && (this.allowOptimization = i), e.platform === I.ow.WEB && null != e.compressionMetadata && (this.mimeType = e.compressionMetadata.originalContentType), this._abortController = new AbortController, null != this.origin && (this.uploadAnalytics.origin = "string" == typeof this.origin ? this.origin : I.BS[this.origin]), this._uploadHttpClient = new S.LD, this._libdiscoreEnabled = false, this._resumptionEnabled = false
+    }), this.channelId = t, this.preCompressionSize = null != (s = null == (a = e.file) ? true : a.size) ? s : 0, this.currentSize = null != (l = null == (o = e.file) ? true : o.size) ? l : 0, this.reactNativeFileIndex = r, null != i && (this.allowOptimization = i), e.platform === I.ow.WEB && null != e.compressionMetadata && (this.mimeType = e.compressionMetadata.originalContentType), this._abortController = new AbortController, null != this.origin && (this.uploadAnalytics.origin = "string" == typeof this.origin ? this.origin : I.BS[this.origin]), this._uploadHttpClient = new T.LD, this._libdiscoreEnabled = false, this._resumptionEnabled = false
   }
 }

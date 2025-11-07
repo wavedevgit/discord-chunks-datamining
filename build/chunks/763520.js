@@ -1,10 +1,10 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 763520, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => h,
   o: () => g
 }), require("./388685.js");
-var r, Chunk379649 = require("./379649.js"),
+var i, Chunk379649 = require("./379649.js"),
   Chunk710845 = require("./710845.js"),
   Chunk314897 = require("./314897.js"),
   Chunk592125 = require("./592125.js"),
@@ -22,7 +22,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var h = ((r = {}).SELF_VIDEO = "self_video", r.SELF_STREAM = "self_stream", r.REMOTE_VIDEO = "remote_video", r.REMOTE_STREAM = "remote_stream", r.CHANGE_VIDEO_BACKGROUND = "change_video_background", r.REPLAY_VIDEO_STREAM = "replay_video_stream", r);
+var h = ((i = {}).SELF_VIDEO = "self_video", i.SELF_STREAM = "self_stream", i.REMOTE_VIDEO = "remote_video", i.REMOTE_STREAM = "remote_stream", i.CHANGE_VIDEO_BACKGROUND = "change_video_background", i.REPLAY_VIDEO_STREAM = "replay_video_stream", i);
 let m = new Map;
 class g {
   onSpinnerStarted() {
@@ -30,14 +30,14 @@ class g {
   }
   trackSpinnerDuration(e, t, n) {
     if (null == this.spinnerVisibleStart) return;
-    let r = function(e) {
+    let i = function(e) {
         var t;
         let n = (null != (t = m.get(e)) ? t : 0) + 1;
         return m.set(e, n), n
       }(n),
-      l = (0, i.zO)() - this.spinnerVisibleStart;
-    if (this.spinnerVisibleStart = null, l < 0) return void this.logger.warn("spinner duration is negative: ".concat(l, " ms\n        [").concat(e, ", count for stream: ").concat(r, "]"));
-    this.logger.info("spinner visible for ".concat(l, " ms\n      [").concat(e, ", count for stream: ").concat(r, "]"));
+      l = (0, r.zO)() - this.spinnerVisibleStart;
+    if (this.spinnerVisibleStart = null, l < 0) return void this.logger.warn("spinner duration is negative: ".concat(l, " ms\n        [").concat(e, ", count for stream: ").concat(i, "]"));
+    this.logger.info("spinner visible for ".concat(l, " ms\n      [").concat(e, ", count for stream: ").concat(i, "]"));
     let f = c.Z.getGuildId(),
       h = u.Z.getUserVoiceChannelId(f, a.default.getId()),
       g = function(e) {
@@ -54,7 +54,7 @@ class g {
       duration_video_spinner_visible_ms: l,
       rtc_connection_id: c.Z.getRTCConnectionId(),
       media_session_id: c.Z.getMediaSessionId(),
-      event_count_for_stream: r,
+      event_count_for_stream: i,
       guild_id: f,
       channel_id: h,
       channel_type: g,

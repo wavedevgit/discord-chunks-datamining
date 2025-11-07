@@ -120,8 +120,8 @@ let v = e => {
     let g = (0, o.e7)([_.Z], () => _.Z.hidePersonalInformation),
       y = g || d || t.isNonUserBot(),
       I = t.toString(),
-      T = c ? null : O(t),
-      S = t.isVerifiedBot(),
+      S = c ? null : O(t),
+      T = t.isVerifiedBot(),
       A = p.ZP.getName(t),
       C = i ? I : null != n ? n : A,
       N = t.hasUniqueUsername() || l;
@@ -133,8 +133,8 @@ let v = e => {
       return (0, r.jsx)(v, E({
         primary: e,
         secondary: n,
-        botType: T,
-        botVerified: S,
+        botType: S,
+        botVerified: T,
         showStreamerModeTooltip: g && p.ZP.isNameConcealed(e),
         displayNameStyles: C !== I ? t.displayNameStyles : null,
         displayNameStylesType: h
@@ -142,8 +142,8 @@ let v = e => {
     }
     return (0, r.jsx)(f.Z, E({
       name: C,
-      botType: T,
-      botVerified: S,
+      botType: S,
+      botVerified: T,
       discriminator: y || C !== I ? null : null != s ? s : t.discriminator
     }, m))
   }

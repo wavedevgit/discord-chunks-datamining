@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 331197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -43,13 +43,13 @@ function E(e) {
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
     suppress: M
-  } = (0, _.Z)(t), R = (0, l.e7)([y.Z], () => y.Z.isDeaf()), D = w || M || R, k = (0, m.sR)({
+  } = (0, y.Z)(t), R = (0, l.e7)([C.Z], () => C.Z.isDeaf()), D = w || M || R, L = (0, m.sR)({
     isSoundboardButtonDisabled: D
-  }), [L, U] = (0, f.cv)(k), {
-    analyticsLocations: B
+  }), [k, U] = (0, f.cv)(L), {
+    analyticsLocations: F
   } = (0, u.ZP)(), {
-    isHovered: F,
-    setIsHovered: V,
+    isHovered: V,
+    setIsHovered: B,
     onMouseEnter: H,
     onMouseLeave: G
   } = (0, h.Z)(200, 300);
@@ -60,71 +60,71 @@ function E(e) {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
       return t => {
-        var n, i;
-        return (0, r.jsx)(e, (n = function(e) {
+        var n, r;
+        return (0, i.jsx)(e, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              i = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            }))), i.forEach(function(t) {
+              var i;
+              i = n[t], t in e ? Object.defineProperty(e, t, {
+                value: i,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = r
+              }) : e[t] = i
             })
           }
           return e
         }({
           guildId: A,
-          sourceAnalyticsLocations: B
-        }, t), i = i = {
+          sourceAnalyticsLocations: F
+        }, t), r = r = {
           onInteraction: (0, p.u)("SoundboardContextMenu", P)
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
+            var i = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, i)
           }
           return n
-        })(Object(i)).forEach(function(e) {
-          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+        })(Object(r)).forEach(function(e) {
+          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
         }), n))
       }
     })
   }
 
   function z() {
-    (0, d.v)(P, d.d.SOUNDBOARD), j === O.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != j ? (Z(), H()) : Z(), null == S || S(O.D.SOUNDBOARD))
+    (0, d.v)(P, d.d.SOUNDBOARD), j === x.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != j ? (Z(), H()) : Z(), null == S || S(x.D.SOUNDBOARD))
   }
-  let q = i.useRef(null);
-  return (0, r.jsx)(s.y, {
+  let q = r.useRef(null);
+  return (0, i.jsx)(s.y, {
     targetElementRef: q,
-    shouldShow: F && (j === O.D.SOUNDBOARD || null == j) || j === O.D.SOUNDBOARD,
+    shouldShow: V && (j === x.D.SOUNDBOARD || null == j) || j === x.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      V(false), null == S || S(true)
+      B(false), null == S || S(true)
     },
     renderPopout: e => {
       let {
         closePopout: n
       } = e;
-      return D ? null : (0, r.jsx)(C.Z, {
-        children: (0, r.jsx)("div", {
+      return D ? null : (0, i.jsx)(_.Z, {
+        children: (0, i.jsx)("div", {
           onMouseEnter: H,
           onMouseLeave: G,
-          children: (0, r.jsx)(b.Z, {
+          children: (0, i.jsx)(b.Z, {
             guildId: A,
             channel: t,
             onClose: n,
-            gridNotice: L === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
+            gridNotice: k === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(g.o, {
               onClose: n,
               markAsDismissed: U
             }),
@@ -133,11 +133,11 @@ function E(e) {
         })
       })
     },
-    children: () => (0, r.jsx)(v.d, {
+    children: () => (0, i.jsx)(v.d, {
       ref: q,
       isTrayButton: true,
       themeable: E,
-      label: w ? x.intl.string(x.t["Ox4/zU"]) : M ? x.intl.string(x.t["+YBKYI"]) : R ? x.intl.string(x.t.X1lQli) : true,
+      label: w ? O.intl.string(O.t["Ox4/zU"]) : M ? O.intl.string(O.t["+YBKYI"]) : R ? O.intl.string(O.t.X1lQli) : true,
       iconComponent: I,
       disabled: D,
       onContextMenu: W,
@@ -148,8 +148,8 @@ function E(e) {
       onMouseLeave: () => {
         null == j && (G(), N())
       },
-      isActive: F || j === O.D.SOUNDBOARD,
-      color: F || j === O.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: V || j === x.D.SOUNDBOARD,
+      color: V || j === x.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

@@ -190,14 +190,14 @@ function V(e) {
     guildId: d
   } = e;
   i.useEffect(() => {
-    S.default.track(x.rMx.PASSPORT_ROLE_POPOUT_VIEWED, U({
+    T.default.track(x.rMx.PASSPORT_ROLE_POPOUT_VIEWED, U({
       other_user_id: s,
       role_id: l
     }, (0, b.JS)(u), (0, b.hH)(d)))
   }, [s, l, u, d]);
-  let f = (0, c.e7)([T.ZP], () => {
+  let f = (0, c.e7)([S.ZP], () => {
     var e, t;
-    return null != (t = null == (e = T.ZP.getSelfMember(d)) ? true : e.roles.includes(l)) && t
+    return null != (t = null == (e = S.ZP.getSelfMember(d)) ? true : e.roles.includes(l)) && t
   }, [d, l]);
   return t = 1 === o.length && 1 === o[0].length ? M.intl.string(M.t.jDym4E) : 1 === o.length ? M.intl.format(M.t["0eBj3x"], {}) : M.intl.format(M.t.D7uftB, {}), (0, r.jsxs)("div", {
     className: j.popout,

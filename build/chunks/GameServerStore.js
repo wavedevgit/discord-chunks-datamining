@@ -163,7 +163,7 @@ function v(e) {
   } = e, r = _(t);
   n.forEach(e => {
     r.entitlements[e.id] = e
-  }), T(t, r)
+  }), S(t, r)
 }
 
 function I(e) {
@@ -173,10 +173,10 @@ function I(e) {
   } = e, r = _(t);
   n.forEach(e => {
     delete r.entitlements[e.id]
-  }), T(t, r)
+  }), S(t, r)
 }
 
-function T(e, t) {
+function S(e, t) {
   let n = E(e, t.entitlements);
   d = u(l({}, d), {
     [e]: u(l({}, t), {
@@ -184,7 +184,7 @@ function T(e, t) {
     })
   })
 }
-class S extends(r = Chunk442837.ZP.Store) {
+class T extends(r = Chunk442837.ZP.Store) {
   getState() {
     return d
   }
@@ -207,8 +207,8 @@ class S extends(r = Chunk442837.ZP.Store) {
     return null != e && (null == (t = d[e]) ? true : t.hasFetchedInstances) === true
   }
 }
-s(S, "displayName", "GameServerStore");
-let A = new S(Chunk570140.Z, {
+s(T, "displayName", "GameServerStore");
+let A = new T(Chunk570140.Z, {
   LOGOUT: f,
   GAME_SERVER_FETCH_CATALOG_SUCCESS: p,
   GAME_SERVER_FETCH_INSTANCES_SUCCESS: h,

@@ -130,7 +130,7 @@ function ef(e, t) {
 function e_(e, t, n) {
   var r, i;
   if ((null == n ? true : n.targetType) === er.Iq.ROLE_SUBSCRIPTIONS_PURCHASE) return et.oC.ROLE_SUBSCRIPTIONS;
-  if ((null == n ? true : n.targetType) == null && !M.tx.has(t.type) && (0, T.s)(e)) return et.oC.GUILD_HOME;
+  if ((null == n ? true : n.targetType) == null && !M.tx.has(t.type) && (0, S.s)(e)) return et.oC.GUILD_HOME;
   let a = k.Z.getChannel(t.id);
   return F.Z.can($.Plq.VIEW_CHANNEL, a) ? t.id : null != (i = null == (r = U.ZP.getDefaultChannel(e, true, $.Plq.CREATE_INSTANT_INVITE)) ? true : r.id) ? i : t.id
 }
@@ -165,14 +165,14 @@ function eh(e) {
   if (!f && !_ && !(null == i ? true : i.forceTransition) && s && V.Z.getGuildId() !== t) return;
   let {
     type: p
-  } = r, g = k.Z.getChannel(r.id), E = e_(t, r, i), y = p === $.d4z.GUILD_STAGE_VOICE, T = $.Z5c.CHANNEL(t, E);
+  } = r, g = k.Z.getChannel(r.id), E = e_(t, r, i), y = p === $.d4z.GUILD_STAGE_VOICE, S = $.Z5c.CHANNEL(t, E);
   M.tx.has(p) ? (0, O.h)(() => {
     Promise.resolve().then(n.bind(n, 287734)).then(e => {
       let {
         default: n
       } = e, o = () => {
         if (y) {
-          (0, L.Cq)(r instanceof M.Sf ? r : (0, M.createChannelRecord)(r)), (0, x.uL)(T);
+          (0, L.Cq)(r instanceof M.Sf ? r : (0, M.createChannelRecord)(r)), (0, x.uL)(S);
           return
         }(null == i ? true : i.muteOnJoinVoiceChannel) && X.Z.setSelfMute(d.Yn.DEFAULT, true), n.selectVoiceChannel(E), c === er.Iq.STREAM && null != l && J.iV({
           streamType: en.lo.GUILD,
@@ -197,7 +197,7 @@ function eh(e) {
     inviterUserId: null == i ? true : i.inviterUserId,
     analyticsLocations: a,
     commandOrigin: b.bB.CHAT
-  })), ep(r, i)(T)
+  })), ep(r, i)(S)
 }
 
 function em(e) {
@@ -209,7 +209,7 @@ function em(e) {
     let e = {
       guildScheduledEventId: t.id
     };
-    null != n && (e.welcomeModalChannelId = n), (0, S.P3)(t, e)
+    null != n && (e.welcomeModalChannelId = n), (0, T.P3)(t, e)
   })
 }
 

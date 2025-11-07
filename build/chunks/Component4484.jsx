@@ -80,7 +80,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
     "aria-describedby": eE,
     "aria-labelledby": eb,
     "aria-autocomplete": ey
-  } = e, eO = i.useRef(null), ev = i.useRef(null), eI = i.useRef(true), eT = i.useRef(true), eS = B || Z, eA = i.useCallback((e, t, n) => {
+  } = e, eO = i.useRef(null), ev = i.useRef(null), eI = i.useRef(true), eS = i.useRef(true), eT = B || Z, eA = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -114,15 +114,15 @@ let k = Chunk647438.forwardRef(function(e, t) {
         (0, R.L)(e, k.id, null, true)
       }), l)
       if ("parent" === t) try {
-        eT.current = false, e.onChange()
+        eS.current = false, e.onChange()
       } finally {
-        eT.current = true
+        eS.current = true
       } else e.onChange()
   }, [k.id, k.guild_id, es]), eC = i.useCallback(() => {
     eI.current = false
   }, []), eN = i.useCallback(() => {
     eI.current = true
-  }, []), eR = (0, T.Z)({
+  }, []), eR = (0, S.Z)({
     channel: k,
     chatInputType: a,
     canUseCommands: ea,
@@ -176,7 +176,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
       ignoreTrailingEmptyNodes: true
     }), r, e)
   }, [k.id, eR, ee, eP, ea]);
-  (0, S.Z)(t, eR, k, ew), (0, N.Z)(eR, eO, K);
+  (0, T.Z)(t, eR, k, ew), (0, N.Z)(eR, eO, K);
   let {
     handleKeyDown: eD,
     handleKeyUp: ex
@@ -195,12 +195,12 @@ let k = Chunk647438.forwardRef(function(e, t) {
   }), {
     handlePaste: eL,
     handleGlobalPaste: eM
-  } = (0, C.Z)(eR, eS, W), ej = i.useCallback(e => {
+  } = (0, C.Z)(eR, eT, W), ej = i.useCallback(e => {
     null == et || et()
   }, [et]), ek = i.useCallback(e => {
-    e !== ev.current ? eT.current && (null == Y || Y(null, (0, g.sk)(e, {
+    e !== ev.current ? eS.current && (null == Y || Y(null, (0, g.sk)(e, {
       mode: "raw"
-    }), e)) : eT.current && et()
+    }), e)) : eS.current && et()
   }, [et, Y]);
   i.useLayoutEffect(() => {
     eI.current && (ev.current = n, eA(eR, "parent", {
@@ -237,7 +237,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
         guildId: k.guild_id,
         className: o()(j.slateTextArea, H),
         placeholder: F,
-        readOnly: eS,
+        readOnly: eT,
         spellCheck: ei,
         autoFocus: !es,
         canFocus: !B,

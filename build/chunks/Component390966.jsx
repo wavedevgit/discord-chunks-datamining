@@ -2,7 +2,7 @@
 /** chunk id: 390966, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  z: () => T
+  z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -147,7 +147,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     startTime: t,
     status: n,
@@ -155,8 +155,8 @@ function T(e) {
     className: s,
     endTime: u,
     liveText: p,
-    textVariant: T = "text-sm/semibold",
-    isNew: S,
+    textVariant: S = "text-sm/semibold",
+    isNew: T,
     recurrenceRule: A,
     guildEventId: C,
     recurrenceId: N
@@ -211,7 +211,7 @@ function T(e) {
       [g.isRecurring]: null != W
     }),
     tooltipText: Y,
-    children: [S && n === h.p1.SCHEDULED ? (0, r.jsx)(v, {}) : (0, r.jsx)(F, {
+    children: [T && n === h.p1.SCHEDULED ? (0, r.jsx)(v, {}) : (0, r.jsx)(F, {
       color: V,
       size: "custom",
       width: E,
@@ -220,7 +220,7 @@ function T(e) {
       className: g.eventStatusLabel,
       children: [(0, r.jsx)(d.Text, {
         color: H,
-        variant: T,
+        variant: S,
         children: Z
       }), null != W && (0, r.jsx)(d.Text, {
         color: "header-secondary",

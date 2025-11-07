@@ -59,7 +59,7 @@ function R(e) {
       pronouns: null == R ? true : R.pronouns,
       tags: (0, r.jsx)(_.Z, {
         displayProfile: R,
-        themeType: S.l.POPOUT,
+        themeType: T.l.POPOUT,
         onClose: L
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
@@ -71,7 +71,7 @@ function R(e) {
           onOpenProfile: D
         })]
       })
-    }), (0, r.jsx)(T.Z, {
+    }), (0, r.jsx)(S.Z, {
       user: t,
       onOpenProfile: e => null == D ? true : D({
         section: e

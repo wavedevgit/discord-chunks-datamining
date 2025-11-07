@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -181,11 +181,11 @@ class x extends Chunk839548.Z {
               mode: this.chooseEncryptionMode(e.modes, r),
               codecs: this.codecs
             }), this.on(m.Sh.Stats, this.handleStats);
-            let T = this.getUserOptions();
-            for (let e of (T.forEach(e => {
+            let S = this.getUserOptions();
+            for (let e of (S.forEach(e => {
                 var t, n;
                 return this.logger.info("Creating user: ".concat(e.id, " with audio SSRC: ").concat(e.ssrc, " and video SSRCs: ").concat(null != (n = null == (t = e.videoSsrcs) ? true : t.join(",")) ? n : 0))
-              }), this.mergeUsers(T), this.emit(m.Sh.RemoteStreamsReady, T.length), Object.keys(this.localSpeakingFlags))) e !== this.userId && this.setSpeakingFlags(e, this.localSpeakingFlags[e])
+              }), this.mergeUsers(S), this.emit(m.Sh.RemoteStreamsReady, S.length), Object.keys(this.localSpeakingFlags))) e !== this.userId && this.setSpeakingFlags(e, this.localSpeakingFlags[e])
           })
         })
       };
@@ -647,7 +647,7 @@ class x extends Chunk839548.Z {
         let r = e.findIndex(e => e.rid === t.rid);
         if (false === r) return void n(Error("Invalid rid"));
         let i = [];
-        l()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = T({}, e[r]), i.push(T({}, e[r]))), this.conn.setTransportOptions({
+        l()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = S({}, e[r]), i.push(S({}, e[r]))), this.conn.setTransportOptions({
           streamParameters: i
         })
       }
@@ -765,7 +765,7 @@ class x extends Chunk839548.Z {
       };
       this.experimentFlags.has(O.V8.RESET_DECODER_ON_ERRORS) && (n.params["reset-on-errors"] = "1"), this.experimentFlags.has(O.V8.SOFTWARE_FALLBACK_ON_ERRORS) && (n.params["fallback-after-errors"] = "3"), this.experimentFlags.has(O.V8.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS) && (n.params["fallback-on-consecutive-errors"] = "1"), this.experimentFlags.has(O.V8.SIGNAL_AV1_HARDWARE_DECODE) && (n.params["hardware-av1-decode"] = "1");
       let r = this.hardwareH264 && this.useElectronVideo ? "1" : "0";
-      n.params["hardware-h264"] = r, c.push(n), o.name === t && (u = A(T({}, n), {
+      n.params["hardware-h264"] = r, c.push(n), o.name === t && (u = A(S({}, n), {
         params: this.getCodecParams(o.name, false)
       }), this.experimentFlags.has(O.V8.VIDEOTOOLBOX_RATE_CONTROL) && (u.params["fixed-rate-presentation-timestamps"] = "1"), this.experimentFlags.has(O.V8.LOW_LATENCY_RATE_CONTROL) && (u.params["low-latency-rate-control"] = "1"), u.params["hardware-h264"] = r)
     }
@@ -780,7 +780,7 @@ class x extends Chunk839548.Z {
     return this.keyframeInterval > 0 && this.clipsKeyFrameInterval > 0 ? Math.min(this.keyframeInterval, this.clipsKeyFrameInterval) : Math.max(this.keyframeInterval, this.clipsKeyFrameInterval)
   }
   getConnectionTransportOptions() {
-    let e = A(T({
+    let e = A(S({
       selfMute: this.selfMute,
       inputMode: Chunk149396.GO[this.inputMode],
       inputModeOptions: this.createInputModeOptions(),
@@ -897,7 +897,7 @@ class x extends Chunk839548.Z {
         i.forEach((t, n) => {
           if (t.rid === e.rid) {
             let r = this.simulcastLQDisabledSsrc !== e.ssrc && e.active;
-            i[n] = A(T({}, t), {
+            i[n] = A(S({}, t), {
               ssrc: e.ssrc,
               rtxSsrc: e.rtxSsrc,
               active: r

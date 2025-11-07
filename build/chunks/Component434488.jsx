@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 434488, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => I
@@ -33,29 +33,29 @@ function I(e) {
   let {
     channel: t,
     guild: n,
-    width: i,
+    width: r,
     inPopout: l,
     handleClose: a,
     userParticipantCount: o
   } = e;
-  return i < 250 ? (0, r.jsx)(Z, {
+  return r < 250 ? (0, i.jsx)(Z, {
     channel: t,
     guild: n,
-    width: i,
+    width: r,
     inPopout: l,
     handleClose: a,
     userParticipantCount: o
-  }) : o > 1 ? (0, r.jsx)(N, {
+  }) : o > 1 ? (0, i.jsx)(N, {
     channel: t,
     guild: n,
-    width: i,
+    width: r,
     inPopout: l,
     handleClose: a,
     userParticipantCount: o
-  }) : (0, r.jsx)(T, {
+  }) : (0, i.jsx)(T, {
     channel: t,
     guild: n,
-    width: i,
+    width: r,
     inPopout: l
   })
 }
@@ -64,7 +64,7 @@ function Z(e) {
   let {
     channel: t,
     inPopout: n,
-    handleClose: i
+    handleClose: r
   } = e, {
     analyticsLocations: l,
     newestAnalyticsLocation: o
@@ -75,14 +75,14 @@ function Z(e) {
   }, {
     autoTrackExposure: true
   }), f = d ? u.iWm : u.gQj;
-  return (0, r.jsx)(g.Gt, {
+  return (0, i.jsx)(g.Gt, {
     value: l,
-    children: (0, r.jsxs)(x.Z, {
+    children: (0, i.jsxs)(O.Z, {
       className: S.root,
-      children: [(0, r.jsx)(c.u, {
+      children: [(0, i.jsx)(c.u, {
         asContainer: true,
         text: j.intl.string(j.t.qJvTKQ),
-        children: (0, r.jsx)(u.P3F, {
+        children: (0, i.jsx)(u.P3F, {
           onClick: () => {
             (0, b.Z)({
               context: null != t ? {
@@ -96,9 +96,9 @@ function Z(e) {
             })
           },
           className: S.clickableTile,
-          children: (0, r.jsx)("div", {
+          children: (0, i.jsx)("div", {
             className: S.iconContainer,
-            children: (0, r.jsx)(f, {
+            children: (0, i.jsx)(f, {
               size: "custom",
               color: "currentColor",
               width: 40,
@@ -106,12 +106,12 @@ function Z(e) {
             })
           })
         })
-      }), (0, r.jsx)(u.f6W, {
+      }), (0, i.jsx)(u.f6W, {
         theme: E.BRd.DARK,
-        children: e => (0, r.jsx)(u.P3F, {
-          onClick: i,
+        children: e => (0, i.jsx)(u.P3F, {
+          onClick: r,
           className: a()(e, S.shelfButtonCloseButton),
-          children: (0, r.jsx)(u.k$p, {
+          children: (0, i.jsx)(u.k$p, {
             size: "md",
             color: "currentColor",
             className: S.closeButtonIcon,
@@ -129,8 +129,8 @@ function T(e) {
     guild: l,
     inPopout: o
   } = e;
-  i.useEffect(() => {
-    O.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+  r.useEffect(() => {
+    x.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity invite",
       n_participants: 1
     })
@@ -138,7 +138,7 @@ function T(e) {
   let {
     analyticsLocations: s,
     newestAnalyticsLocation: c
-  } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_INVITE), d = (0, C._k)({
+  } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_INVITE), d = (0, _._k)({
     location: "single_user_tile"
   }), {
     enabled: f
@@ -154,21 +154,21 @@ function T(e) {
         default: e
       } = await Promise.all([n.e("49049"), n.e("7654"), n.e("68971")]).then(n.bind(n, 560114));
       return n => {
-        var i, a;
-        return (0, r.jsx)(e, (i = function(e) {
+        var r, a;
+        return (0, i.jsx)(e, (r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              i = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            }))), i.forEach(function(t) {
+              var i;
+              i = n[t], t in e ? Object.defineProperty(e, t, {
+                value: i,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = r
+              }) : e[t] = i
             })
           }
           return e
@@ -176,23 +176,23 @@ function T(e) {
           guild: l,
           channel: t,
           source: E.t4x.ACTIVITY_ENTRY_POINT_TILE
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
+            var i = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, i)
           }
           return n
         })(Object(a)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
-        }), i))
+          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
+        }), r))
       }
     }, {
       contextKey: o ? u.u1M : u.z1l
     })
   }
 
-  function _() {
+  function y() {
     (0, b.Z)({
       context: null != t ? {
         type: "channel",
@@ -204,32 +204,32 @@ function T(e) {
       analyticsLocation: c
     })
   }
-  let y = f ? u.iWm : u.nG3,
+  let C = f ? u.iWm : u.nG3,
     v = d.isInCallEntrypointEnabled ? u.oLu : u.iFz;
-  return (0, r.jsx)(g.Gt, {
+  return (0, i.jsx)(g.Gt, {
     value: s,
-    children: (0, r.jsx)(u.f6W, {
+    children: (0, i.jsx)(u.f6W, {
       disableAdaptiveTheme: true,
       theme: E.BRd.MIDNIGHT,
-      children: e => (0, r.jsxs)(x.Z, {
+      children: e => (0, i.jsxs)(O.Z, {
         className: a()(S.root, S.singleUserRoot, e),
-        children: [(0, r.jsx)("img", {
+        children: [(0, i.jsx)("img", {
           src: P,
           className: S.art,
           alt: ""
-        }), (0, r.jsxs)(u.ButtonGroup, {
+        }), (0, i.jsxs)(u.ButtonGroup, {
           justify: "center",
           align: "center",
-          children: [(0, r.jsx)(u.Button, {
+          children: [(0, i.jsx)(u.Button, {
             variant: "secondary",
             icon: v,
             text: d.isInCallEntrypointEnabled ? j.intl.string(j.t["EE+P0H"]) : j.intl.string(j.t["6Qgrev"]),
             onClick: h
-          }), (0, r.jsx)(u.Button, {
+          }), (0, i.jsx)(u.Button, {
             variant: "secondary",
-            icon: y,
+            icon: C,
             text: j.intl.string(j.t.qnFavR),
-            onClick: _
+            onClick: y
           })]
         })]
       })
@@ -246,7 +246,7 @@ function N(e) {
     userParticipantCount: c
   } = e;
   (0, d.ZP)(() => {
-    O.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    x.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity suggestion",
       n_participants: c
     })
@@ -257,52 +257,52 @@ function N(e) {
     {
       analyticsLocations: b
     } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_SUGGESTION),
-    C = i.useMemo(() => ({
+    _ = r.useMemo(() => ({
       channel: t,
       type: "channel"
     }), [t]);
-  return (0, r.jsx)(g.Gt, {
+  return (0, i.jsx)(g.Gt, {
     value: b,
-    children: (0, r.jsxs)(x.Z, {
+    children: (0, i.jsxs)(O.Z, {
       className: S.root,
-      children: [s > 300 ? (0, r.jsx)(u.Text, {
+      children: [s > 300 ? (0, i.jsx)(u.Text, {
         className: S.heading,
         variant: s > 550 ? "text-md/semibold" : "text-sm/semibold",
         children: j.intl.string(j.t["7BKMcG"])
-      }) : null, (0, r.jsx)("div", {
+      }) : null, (0, i.jsx)("div", {
         className: a()(S.activitiesContainer, {
           [S.activitiesContainerSmol]: s <= 300
         }),
-        children: p.map(e => (0, r.jsx)(h.Y, {
-          context: C,
+        children: p.map(e => (0, i.jsx)(h.Y, {
+          context: _,
           activityItem: e,
           aspectRatio: h.Y.AspectRatio.SIXTEEN_BY_NINE,
           animatedDivClass: S.activitySuggestion,
-          commandOrigin: _.bB.VOICE_TILE_ACTIVITY_SUGGESTIONS
+          commandOrigin: y.bB.VOICE_TILE_ACTIVITY_SUGGESTIONS
         }, e.application.id))
-      }), (0, r.jsxs)(u.P3F, {
+      }), (0, i.jsxs)(u.P3F, {
         className: S.checkboxContainer,
         onClick: function() {
-          O.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          x.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: c
-          }), (0, y.Q3)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
+          }), (0, C.Q3)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
         },
-        children: [(0, r.jsx)(v.Z, {}), (0, r.jsx)(u.Text, {
+        children: [(0, i.jsx)(v.Z, {}), (0, i.jsx)(u.Text, {
           variant: "text-sm/medium",
           children: j.intl.string(j.t["5E9SB9"])
         })]
-      }), (0, r.jsx)(u.P3F, {
+      }), (0, i.jsx)(u.P3F, {
         className: S.closeButtonContainer,
         onClick: function() {
-          O.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          x.default.track(E.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "temporary",
             n_participants: c
           }), l()
         },
-        children: (0, r.jsx)(u.Dio, {
+        children: (0, i.jsx)(u.Dio, {
           size: "md",
           color: "currentColor",
           className: S.closeButton

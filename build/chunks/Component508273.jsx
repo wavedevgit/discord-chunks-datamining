@@ -25,8 +25,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk492681 = require("./492681.js");
-let T = 292,
-  S = 36,
+let S = 292,
+  T = 36,
   A = 48;
 
 function C(e) {
@@ -39,7 +39,7 @@ function C(e) {
   } = e, f = i.useRef(null), [p, m] = i.useState(true), [C, R] = i.useState(false), P = t.state === O.r2o.ACCEPTING, w = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
-    R((null != (t = null == (e = f.current) ? true : e.clientHeight) ? t : 0) > T)
+    R((null != (t = null == (e = f.current) ? true : e.clientHeight) ? t : 0) > S)
   }, [R]);
   let D = (0, _.PC)(t),
     x = i.useCallback(() => {
@@ -51,7 +51,7 @@ function C(e) {
     M = i.useMemo(() => {
       var e;
       return C && (null == (e = f.current) ? true : e.clientHeight) != null ? {
-        height: p ? T : f.current.clientHeight + S + A,
+        height: p ? S : f.current.clientHeight + T + A,
         transition: w ? true : "height 0.2s ease"
       } : {}
     }, [p, C, w]);

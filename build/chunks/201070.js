@@ -63,11 +63,11 @@ function O(e, t) {
 let v = false,
   I = new Chunk710845.Z("MemberSafetySearchManager");
 
-function T(e) {
+function S(e) {
   return "guild_".concat(e)
 }
 
-function S(e) {
+function T(e) {
   return {
     requestState: e,
     abortController: null,
@@ -83,7 +83,7 @@ let A = (0, Chunk191336.U)(e => ({}));
 
 function C(e, t) {
   let n = A.getState()[e];
-  return null == n && (n = S(1)), n = b({}, n, t), (0, s.j)(() => {
+  return null == n && (n = T(1)), n = b({}, n, t), (0, s.j)(() => {
     A.setState(t => O(b({}, t), {
       [e]: n
     }))
@@ -96,7 +96,7 @@ function N(e) {
 
 function R(e) {
   let t = N(e);
-  return null == t && C(e, t = S(1)), t
+  return null == t && C(e, t = T(1)), t
 }
 
 function P(e) {
@@ -149,7 +149,7 @@ function L(e) {
 }
 
 function M(e) {
-  P(T(e))
+  P(S(e))
 }
 
 function j(e) {
@@ -265,7 +265,7 @@ function Z(e, t) {
     nextPageChunkNumber: a
   } = B(t), {
     previousPagination: o
-  } = R(T(e)), s = t.currentPage, l = null != (n = null == o ? true : o.currentPage) ? n : 0, c = g.Z.getElasticSearchPaginationByGuildId(e);
+  } = R(S(e)), s = t.currentPage, l = null != (n = null == o ? true : o.currentPage) ? n : 0, c = g.Z.getElasticSearchPaginationByGuildId(e);
   switch (true) {
     case null == c:
     case r === a && 0 === r:
@@ -320,7 +320,7 @@ async function H(e) {
   var t, n, r;
   let i = g.Z.getSearchStateByGuildId(e),
     o = g.Z.getPaginationStateByGuildId(e),
-    s = T(e),
+    s = S(e),
     l = R(s),
     [c, u] = F(e, l, o),
     d = U(k(i), u),
@@ -346,14 +346,14 @@ async function H(e) {
 function Y(e) {
   return A(t => {
     var n;
-    return (null == (n = t[T(e)]) ? true : n.requestState) === 2
+    return (null == (n = t[S(e)]) ? true : n.requestState) === 2
   })
 }
 
 function W(e) {
   return A(t => {
     var n;
-    return (null == (n = t[T(e)]) ? true : n.requestState) === 4
+    return (null == (n = t[S(e)]) ? true : n.requestState) === 4
   })
 }
 class K extends Chunk147913.Z {
@@ -385,13 +385,13 @@ class K extends Chunk147913.Z {
     let {
       guildId: t
     } = e;
-    return x(T(t))
+    return x(S(t))
   }
   handleGuildMemberSearchStillIndexing(e) {
     let {
       guildId: t
     } = e;
-    return L(T(t))
+    return L(S(t))
   }
   handleNewMemberTimestampRefresh(e) {
     let {

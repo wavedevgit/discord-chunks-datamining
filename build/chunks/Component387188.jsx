@@ -104,7 +104,7 @@ function I(e) {
       rawText: o,
       addSpace: true
     })
-  }, [v, o]), T = i.useMemo(() => null == v ? null : {
+  }, [v, o]), S = i.useMemo(() => null == v ? null : {
     src: h.ZP.getEmojiURL({
       id: v.id,
       animated: v.animated,
@@ -124,14 +124,14 @@ function I(e) {
     compact: n,
     contentClassName: y.content,
     children: (0, r.jsx)("span", {
-      children: null == v || null == T ? b.intl.format(b.t.k6Jc9Y, {
+      children: null == v || null == S ? b.intl.format(b.t.k6Jc9Y, {
         username: p.nick,
         usernameHook: O
       }) : b.intl.format(b.t.IihHB0, {
         username: p.nick,
         usernameHook: O,
         emojiPreview: (0, r.jsx)(f.Y, {
-          node: T,
+          node: S,
           isInteracting: l
         }),
         emojiName: (0, r.jsx)(c.P3F, {

@@ -1,12 +1,13 @@
-/** Chunk was on 35755 **/
-/** chunk id: 387658, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 387658, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => H
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk140835 = require("./140835.jsx"),
   Chunk246521 = require("./246521.jsx"),
   Chunk442837 = require("./442837.js"),
@@ -34,61 +35,62 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk202874 = require("./202874.js"),
   Chunk698342 = require("./698342.js");
-let Z = "placeholder",
-  w = [, , , , , ].fill(Z);
+let L = 5,
+  M = "placeholder",
+  j = [, , , , , ].fill(M);
 
 function k(e) {
   var t, n;
   let {
-    context: r,
-    command: a,
-    section: s,
+    context: a,
+    command: o,
+    section: l,
     sectionName: c
-  } = e, d = l.useCallback(() => {
-    let e = N.Z.entrypoint();
-    b.y(j.ti.COMMAND), (0, g.Mo)({
-      command: a,
-      location: v.Vh.APP_LAUNCHER_APPLICATION_VIEW,
+  } = e, d = i.useCallback(() => {
+    let e = O.Z.entrypoint();
+    y.y(v.ti.COMMAND), (0, E.Mo)({
+      command: o,
+      location: m.Vh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c
-    }), "channel" === r.type && (m.Po({
-      channelId: r.channel.id,
-      command: a,
-      section: s,
-      location: v.Vh.APP_LAUNCHER_APPLICATION_VIEW,
+    }), "channel" === a.type && (_.Po({
+      channelId: a.channel.id,
+      command: o,
+      section: l,
+      location: m.Vh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c,
       source: e,
-      commandOrigin: v.bB.APPLICATION_LAUNCHER
-    }), x.S.dispatch(I.CkL.FOCUS_CHANNEL_TEXT_AREA, {
-      channelId: r.channel.id
+      commandOrigin: m.bB.APPLICATION_LAUNCHER
+    }), b.S.dispatch(R.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+      channelId: a.channel.id
     }))
-  }, [r, a, s, c]), p = (null != (n = null == (t = a.options) ? true : t.length) ? n : 0) > 0, f = l.useMemo(() => (0, _.ae)(a.displayDescription, true), [a.displayDescription]), h = l.useMemo(() => (0, i.jsxs)("div", {
-    className: R.commandTextContainer,
-    children: [(0, i.jsx)(u.Text, {
+  }, [a, o, l, c]), f = (null != (n = null == (t = o.options) ? true : t.length) ? n : 0) > 0, p = i.useMemo(() => (0, C.ae)(o.displayDescription, true), [o.displayDescription]), h = i.useMemo(() => (0, r.jsxs)("div", {
+    className: x.commandTextContainer,
+    children: [(0, r.jsx)(u.Text, {
       variant: "text-sm/semibold",
       color: "header-primary",
-      children: a.displayName
-    }), (0, i.jsx)(u.Text, {
+      children: o.displayName
+    }), (0, r.jsx)(u.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
       lineClamp: 1,
-      children: f
+      children: p
     })]
-  }), [a.displayName, f]);
-  return (0, i.jsxs)(u.P3F, {
-    className: R.command,
+  }), [o.displayName, p]);
+  return (0, r.jsxs)(u.P3F, {
+    className: x.command,
     onClick: d,
-    children: [(0, i.jsx)(u.Rny, {
-      className: R.commandFocusBlock,
+    children: [(0, r.jsx)(u.Rny, {
+      className: x.commandFocusBlock,
       children: h
-    }), p ? (0, i.jsx)(o.F, {}) : (0, i.jsx)(U, {
-      context: r,
-      command: a,
+    }), f ? (0, r.jsx)(s.F, {}) : (0, r.jsx)(G, {
+      context: a,
+      command: o,
       sectionName: c
     })]
   })
 }
 
-function M() {
+function U() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     {
       styleLarge: t,
@@ -103,7 +105,7 @@ function M() {
         height: "auto"
       }
     }), []),
-    r = Chunk647438.useMemo(() => (0, Chunk951288.jsxs)("div", {
+    a = Chunk647438.useMemo(() => (0, Chunk951288.jsxs)("div", {
       className: Chunk698342.commandTextContainerPlaceholder,
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk202874.textPlaceholder,
@@ -128,107 +130,107 @@ function M() {
       })]
     }), [exports, require]);
   return (0, Chunk951288.jsx)("div", {
-    className: a()(Chunk698342.command, Chunk202874.loadingAnimation, {
+    className: o()(Chunk698342.command, Chunk202874.loadingAnimation, {
       [Chunk202874.noAnimation]: module
     }),
     children: Chunk120356
   })
 }
 
-function U(e) {
+function G(e) {
   let {
     context: t,
     command: n,
-    sectionName: r
+    sectionName: a
   } = e;
-  (0, f.PL)(true, true), (0, f.em)(t, true, true);
-  let a = (0, C.D)(t),
-    [o, c] = l.useState(false),
-    d = l.useCallback(async e => {
+  (0, p.PL)(true, true), (0, p.em)(t, true, true);
+  let o = (0, I.D)(t),
+    [s, c] = i.useState(false),
+    d = i.useCallback(async e => {
       if ("channel" !== t.type) return;
       e.stopPropagation();
-      let i = N.Z.lastShownEntrypoint();
+      let r = O.Z.lastShownEntrypoint();
       try {
         let {
           isAuthorized: e
-        } = await (0, y.L)({
+        } = await (0, g.L)({
           applicationId: n.applicationId,
           channel: "channel" === t.type ? t.channel : true,
           commandIntegrationTypes: n.integration_types,
           appLauncherContext: {
-            entrypoint: i,
-            location: v.Vh.APP_LAUNCHER_APPLICATION_VIEW,
-            sectionName: r
+            entrypoint: r,
+            location: m.Vh.APP_LAUNCHER_APPLICATION_VIEW,
+            sectionName: a
           }
         });
         e && (await (0, A.Y$)({
           command: n,
           optionValues: {},
-          context: a,
-          sectionName: r,
-          commandOrigin: v.bB.APP_LAUNCHER_APPLICATION_VIEW
-        }), b.y(j.ti.COMMAND))
+          context: o,
+          sectionName: a,
+          commandOrigin: m.bB.APP_LAUNCHER_APPLICATION_VIEW
+        }), y.y(v.ti.COMMAND))
       } finally {
         c(false)
       }
-    }, [n, t, r, a]);
-  return (0, i.jsx)(u.Button, {
+    }, [n, t, a, o]);
+  return (0, r.jsx)(u.Button, {
     type: "submit",
     onClick: d,
-    disabled: o,
+    disabled: s,
     variant: "secondary",
-    "aria-label": T.intl.formatToPlainString(T.t.UXw6W2, {
+    "aria-label": w.intl.formatToPlainString(w.t.UXw6W2, {
       commandName: n.untranslatedName
     }),
-    text: T.intl.string(T.t.TXNS7S),
-    icon: s.U,
+    text: w.intl.string(w.t.TXNS7S),
+    icon: l.U,
     iconPosition: "end",
     size: "md"
   })
 }
 
-function D(e) {
+function B(e) {
   let {
     context: t,
     commands: n,
-    section: l,
-    headerName: r,
-    sectionName: a,
-    children: o
+    section: i,
+    headerName: a,
+    sectionName: o,
+    children: s
   } = e;
-  return 0 === n.length ? null : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)("div", {
-      className: R.commandListHeader,
-      children: [(0, i.jsx)(u.Heading, {
+  return 0 === n.length ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
+      className: x.commandListHeader,
+      children: [(0, r.jsx)(u.Heading, {
         variant: "heading-sm/semibold",
-        children: r
-      }), o]
-    }), (0, i.jsx)("ul", {
-      className: R.commandContainer,
-      "aria-label": r,
-      children: n.map((e, n) => e === Z ? (0, i.jsx)(M, {}, e + n) : (0, i.jsx)(k, {
+        children: a
+      }), s]
+    }), (0, r.jsx)("ul", {
+      className: x.commandContainer,
+      "aria-label": a,
+      children: n.map((e, n) => e === M ? (0, r.jsx)(U, {}, e + n) : (0, r.jsx)(k, {
         context: t,
         command: e,
-        section: l,
-        sectionName: a
+        section: i,
+        sectionName: o
       }, e.id))
     })]
   })
 }
 
-function H(e) {
+function Z(e) {
   var t;
   let {
     context: n,
-    application: r,
-    sectionName: a,
-    installOnDemand: o,
-    setHasCommands: s
+    application: a,
+    sectionName: o,
+    installOnDemand: s,
+    setHasCommands: l
   } = e, {
     filterSection: c,
     commandsByActiveSection: u,
-    sectionDescriptors: p,
-    loading: m
+    sectionDescriptors: f,
+    loading: _
   } = h.wi({
     context: n,
     filters: {
@@ -236,49 +238,49 @@ function H(e) {
     },
     options: {
       placeholderCount: 0,
-      limit: S.tn,
+      limit: P.tn,
       includeFrecency: true,
-      allowApplicationState: o,
-      installOnDemand: o,
-      applicationId: r.id
+      allowApplicationState: s,
+      installOnDemand: s,
+      applicationId: a.id
     },
     allowFetch: true
-  }), f = null != (t = p.find(e => e.id === r.id)) ? t : null, {
-    sortOrder: v,
-    setSortOrder: y,
-    commands: g,
-    canSort: x
-  } = (0, P.Z)({
-    sectionId: r.id,
+  }), p = null != (t = f.find(e => e.id === a.id)) ? t : null, {
+    sortOrder: m,
+    setSortOrder: g,
+    commands: E,
+    canSort: b
+  } = (0, T.Z)({
+    sectionId: a.id,
     commandsByActiveSection: u
   });
-  l.useEffect(() => {
-    c(r.id)
-  }, [r.id, c]);
-  let b = (0, E.Z)({
+  i.useEffect(() => {
+    c(a.id)
+  }, [a.id, c]);
+  let y = (0, S.Z)({
     context: n,
-    commands: g,
-    limit: 5
+    commands: E,
+    limit: L
   });
-  return (l.useEffect(() => {
-    s(g.length > 0)
-  }, [s, g]), m || 0 !== g.length) ? (0, i.jsxs)("ul", {
-    className: R.contentContainer,
-    children: [(0, i.jsx)(D, {
+  return (i.useEffect(() => {
+    l(E.length > 0)
+  }, [l, E]), _ || 0 !== E.length) ? (0, r.jsxs)("ul", {
+    className: x.contentContainer,
+    children: [(0, r.jsx)(B, {
       context: n,
-      section: f,
-      commands: b,
-      headerName: T.intl.string(T.t.acSE0h),
-      sectionName: a
-    }), (0, i.jsx)(D, {
+      section: p,
+      commands: y,
+      headerName: w.intl.string(w.t.acSE0h),
+      sectionName: o
+    }), (0, r.jsx)(B, {
       context: n,
-      section: f,
-      commands: m ? w : g,
-      headerName: T.intl.string(T.t.DUU9L3),
-      sectionName: a,
-      children: x && (0, i.jsx)(O.Z, {
-        sortOrder: v,
-        onSortOptionClick: y
+      section: p,
+      commands: _ ? j : E,
+      headerName: w.intl.string(w.t.DUU9L3),
+      sectionName: o,
+      children: b && (0, r.jsx)(N.Z, {
+        sortOrder: m,
+        onSortOptionClick: g
       })
     })]
   }) : null

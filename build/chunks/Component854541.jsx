@@ -79,8 +79,8 @@ function I(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let T = Chunk647438.lazy(() => Promise.all([require.e("3115"), require.e("28102")]).then(require.bind(require, 534828))),
-  S = 7,
+let S = Chunk647438.lazy(() => Promise.all([require.e("3115"), require.e("28102")]).then(require.bind(require, 534828))),
+  T = 7,
   A = () => Promise.resolve();
 
 function C(e) {
@@ -101,14 +101,14 @@ function N(e) {
     gradientStart: y,
     gradientEnd: v,
     gradientDegrees: I = 180
-  } = e, T = (0, s.JA)("color-".concat(t)), S = {};
+  } = e, S = (0, s.JA)("color-".concat(t)), T = {};
   if (m && null != y && null != v) {
     let e = (0, c.Rf)(y),
       t = (0, c.Rf)(v);
-    S = {
+    T = {
       background: "linear-gradient(".concat(I, "deg, ").concat(e, ", ").concat(t, ")")
     }
-  } else S = {
+  } else T = {
     backgroundColor: null != t ? (0, c.Rf)(t) : d.backgroundColor
   };
   let A = m ? y : t,
@@ -140,9 +140,9 @@ function N(e) {
         start: y,
         end: v
       } : t),
-      style: b({}, d, S),
-      "aria-label": null != E ? E : m ? "Gradient ".concat(y, "-").concat(v) : S.backgroundColor
-    }, T), {
+      style: b({}, d, T),
+      "aria-label": null != E ? E : m ? "Gradient ".concat(y, "-").concat(v) : T.backgroundColor
+    }, S), {
       children: [i ? (0, r.jsx)(f.vdY, {
         size: "custom",
         className: g.colorPickerDropper,
@@ -256,7 +256,7 @@ function w(e) {
     }, k = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.Suspense, {
         fallback: null,
-        children: (0, r.jsx)(T, {
+        children: (0, r.jsx)(S, {
           onChange: M,
           onChangeComplete: e => {
             let {
@@ -269,7 +269,7 @@ function w(e) {
       }), p, (0, r.jsx)(f.oil, {
         value: w.input.slice(1),
         onChange: x,
-        maxLength: S - 1,
+        maxLength: T - 1,
         leading: "#",
         trailing: E && null != I ? {
           icon: f.ilE,
@@ -313,7 +313,7 @@ function x(e) {
     renderGradientCustomButton: E,
     gradientDegrees: y,
     allowBlackCustomColor: I
-  } = e, T = e => (0, r.jsx)("div", {
+  } = e, S = e => (0, r.jsx)("div", {
     className: g.colorPickerRow,
     children: m ? e.map(e => (0, r.jsx)(N, {
       gradientStart: e.start,
@@ -332,7 +332,7 @@ function x(e) {
       disabled: d,
       isGradient: false
     }, e))
-  }), S = a.slice(0, a.length / 2), C = a.slice(a.length / 2, a.length), R = (0, l.ZP)({
+  }), T = a.slice(0, a.length / 2), C = a.slice(a.length / 2, a.length), R = (0, l.ZP)({
     id: "color-picker",
     isEnabled: true,
     scrollToStart: A,
@@ -378,7 +378,7 @@ function x(e) {
               disabled: d
             })
           }), (0, r.jsxs)("div", {
-            children: [T(S), T(C)]
+            children: [S(T), S(C)]
           })]
         }))
       }

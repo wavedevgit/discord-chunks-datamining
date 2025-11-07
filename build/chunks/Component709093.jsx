@@ -2,7 +2,7 @@
 /** chunk id: 709093, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -72,7 +72,7 @@ function I(e) {
     })]
   })
 }
-let T = function(e) {
+let S = function(e) {
   var t, n, i;
   let {
     hideCloseButton: u = false,
@@ -80,8 +80,8 @@ let T = function(e) {
     onClose: g,
     upgradeToPremiumType: E,
     isEligibleForTrial: b = false,
-    showTrialBadge: T = false,
-    showDiscountBadge: S = false
+    showTrialBadge: S = false,
+    showDiscountBadge: T = false
   } = e, A = E === _.PremiumTypes.TIER_2, C = (0, c.Fv)(b), N = (0, d.Ng)(), R = null == N || null == (t = N.discount) ? true : t.amount, P = A ? O : y, {
     step: w,
     breadcrumbs: D,
@@ -142,7 +142,7 @@ let T = function(e) {
           children: Z
         })
       })]
-    }), (T || S) && (0, r.jsx)(f.Z, {
+    }), (S || T) && (0, r.jsx)(f.Z, {
       discountAmount: R
     }), U && (0, r.jsx)(v, {
       isOneStepCheckout: C,

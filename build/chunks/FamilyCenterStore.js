@@ -60,8 +60,8 @@ let h = null,
   O = null,
   v = x(),
   I = false,
-  T = false,
-  S = null,
+  S = false,
+  T = null,
   A = null,
   C = [],
   N = [],
@@ -141,7 +141,7 @@ function B(e) {
 }
 
 function Z() {
-  T = true
+  S = true
 }
 
 function F(e) {
@@ -160,7 +160,7 @@ function F(e) {
     totalSpendCurrency: f,
     invoices: _
   } = n;
-  h = o, m = l, U(r), k(a), G(i), j(t), null != _ && B(_), C = c, N = u, R = d, P = f, T = false, S = s.default.fromTimestamp(Date.now()), I = true
+  h = o, m = l, U(r), k(a), G(i), j(t), null != _ && B(_), C = c, N = u, R = d, P = f, S = false, T = s.default.fromTimestamp(Date.now()), I = true
 }
 
 function V(e) {
@@ -194,7 +194,7 @@ function Y(e) {
     totalSpendCurrency: d,
     invoices: f
   } = t;
-  h = a, m = o, U(n), k(r), G(i), null != f && B(f), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now()), R = u, P = d
+  h = a, m = o, U(n), k(r), G(i), null != f && B(f), C = l, N = c, S = false, T = s.default.fromTimestamp(Date.now()), R = u, P = d
 }
 
 function W(e) {
@@ -289,7 +289,7 @@ function en(e) {
 }
 
 function er() {
-  h = null, m = null, g = {}, b = L(), y = M(), D = {}, T = false, S = null, v = x(), E = false, C = [], N = [], R = null, P = null, w = {}
+  h = null, m = null, g = {}, b = L(), y = M(), D = {}, S = false, T = null, v = x(), E = false, C = [], N = [], R = null, P = null, w = {}
 }
 class ei extends Chunk750041.Z {
   initialize() {
@@ -353,7 +353,7 @@ class ei extends Chunk750041.Z {
     return A
   }
   isLoading() {
-    return T
+    return S
   }
   getTopUserActivities() {
     return C
@@ -371,7 +371,7 @@ class ei extends Chunk750041.Z {
     return w[e]
   }
   canRefetch() {
-    return null === S || Chunk709054.default.age(S) > Chunk292352.Of
+    return null === T || Chunk709054.default.age(T) > Chunk292352.Of
   }
   constructor() {
     super({

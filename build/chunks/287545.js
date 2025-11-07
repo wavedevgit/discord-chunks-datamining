@@ -179,7 +179,7 @@ function Q(e) {
     M = y.default.getCurrentUser();
   if (null == M) return;
   let j = C.ZP.getShelfActivities(I),
-    k = S.Z.getState().shelfOrder,
+    k = T.Z.getState().shelfOrder,
     G = (0, N.Z)({
       applicationId: r,
       activityConfigs: j
@@ -199,7 +199,7 @@ function Q(e) {
     };
   F[r] = K;
   let z = V[r];
-  (0, T.Ew)(b.nonce) || b.nonce === (null == z ? true : z.nonce) || (z = true), O.default.track(U.rMx.ACTIVITY_SESSION_JOINED, {
+  (0, S.Ew)(b.nonce) || b.nonce === (null == z ? true : z.nonce) || (z = true), O.default.track(U.rMx.ACTIVITY_SESSION_JOINED, {
     channel_id: v,
     guild_id: I,
     media_session_id: W[0],

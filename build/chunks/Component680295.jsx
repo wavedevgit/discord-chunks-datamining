@@ -2,7 +2,7 @@
 /** chunk id: 680295, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S,
+  Z: () => T,
   n: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -58,7 +58,7 @@ let I = e => {
       profileEffectConfig: E,
       noBorderRadius: O = false,
       introDelay: v = f.lG
-    } = e, I = i.useRef(null), [T, S] = i.useState([]);
+    } = e, I = i.useRef(null), [S, T] = i.useState([]);
     (0, b.Z)(E);
     let [A, C] = i.useState(0), [N, R] = i.useState(0), {
       accessibilityLabel: P
@@ -72,15 +72,15 @@ let I = e => {
     i.useEffect(() => {
       j.current = v
     }), i.useEffect(() => {
-      D(-j.current), S((0, m.H)(E.effects))
+      D(-j.current), T((0, m.H)(E.effects))
     }, [E]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
-      T.forEach(n => {
+      S.forEach(n => {
         let r = n.start + n.duration;
         r > e && (e = r), n.loop && n.start < t && (t = n.start)
       }), C(t), R(e)
-    }, [R, T]);
+    }, [R, S]);
     let [k, U] = i.useState(false);
     return i.useEffect(() => {
       true === u || l || (x(), D(0)), !l && k && M.current && (x(), D(0)), a && l && !M.current && (L(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? D(d === _.Q.FromStart ? 0 : A) : D(0))
@@ -93,7 +93,7 @@ let I = e => {
       role: "img",
       children: (0, r.jsx)("div", {
         className: O ? y.innerNoRadius : y.inner,
-        children: T.map((e, i) => {
+        children: S.map((e, i) => {
           if (!M.current && E.animationType === s.y.ANIMATION_TYPE_PERSISTENT && null != E.staticFrameSrc && 0 === i && true === u) {
             var a, o, l, c;
             let {
@@ -126,7 +126,7 @@ let I = e => {
       })
     })
   },
-  T = e => {
+  S = e => {
     let {
       config: t,
       useThumbnail: n,
@@ -159,7 +159,7 @@ let I = e => {
       })
     })
   },
-  S = e => {
+  T = e => {
     let t = (0, d.n)(),
       n = (0, l.e7)([c.Z], () => c.Z.useReducedMotion),
       [a, o] = i.useState(false),
@@ -167,7 +167,7 @@ let I = e => {
       _ = (0, u.ex)(null == f ? true : f.config),
       p = (0, m.C)(null == f ? true : f.config),
       g = null != _ ? _ : p;
-    return null != f && null != g && (t || e.shopPreview || f.config.animationType !== s.y.ANIMATION_TYPE_INTERMITTENT) ? !t && e.shopPreview || !t && f.config.animationType === s.y.ANIMATION_TYPE_PERSISTENT || n || false === e.autoPlay && false === e.isHovering ? (0, r.jsx)(T, {
+    return null != f && null != g && (t || e.shopPreview || f.config.animationType !== s.y.ANIMATION_TYPE_INTERMITTENT) ? !t && e.shopPreview || !t && f.config.animationType === s.y.ANIMATION_TYPE_PERSISTENT || n || false === e.autoPlay && false === e.isHovering ? (0, r.jsx)(S, {
       useThumbnail: e.useThumbnail,
       config: g,
       bannerAdjustment: e.bannerAdjustment,

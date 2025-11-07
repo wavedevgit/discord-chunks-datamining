@@ -48,11 +48,11 @@ function I() {
   h = true
 }
 
-function T() {
+function S() {
   p = null, h = false
 }
 
-function S(e) {
+function T(e) {
   let {
     activePromotion: t
   } = e;
@@ -193,9 +193,9 @@ let j = new M(Chunk570140.Z, {
   ACTIVE_PROMOTIONS_FETCH_SUCCESS: A,
   ACTIVE_PROMOTIONS_FETCH: C,
   ACTIVE_PROMOTIONS_FETCH_FAIL: N,
-  ACTIVE_BOGO_PROMOTION_FETCH_SUCCESS: S,
+  ACTIVE_BOGO_PROMOTION_FETCH_SUCCESS: T,
   ACTIVE_BOGO_PROMOTION_FETCH: I,
-  ACTIVE_BOGO_PROMOTION_FETCH_FAIL: T,
+  ACTIVE_BOGO_PROMOTION_FETCH_FAIL: S,
   OUTBOUND_PROMOTION_NOTICE_DISMISS: P,
   OUTBOUND_PROMOTIONS_SEEN: w,
   LOGOUT: x,

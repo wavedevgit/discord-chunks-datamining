@@ -56,7 +56,7 @@ function B(e) {
     F = (0, u.O)(),
     V = (0, s.e7)([A.Z], () => A.Z.getChannel(I), [I]),
     H = (null == V || null == (t = V.isThread) ? true : t.call(V)) ? null == V ? true : V.parent_id : I,
-    Y = (0, s.e7)([S.default], () => S.default.getId()),
+    Y = (0, s.e7)([T.default], () => T.default.getId()),
     {
       embeddedActivity: W,
       currentEmbeddedActivity: K,
@@ -78,7 +78,7 @@ function B(e) {
     }, [d.id, q]),
     J = null == Q ? true : Q.details,
     $ = i.useMemo(() => {
-      let e = new T.ZP(d);
+      let e = new S.ZP(d);
       return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = j.wT), e
     }, [d]),
     ee = (0, h.s5)({

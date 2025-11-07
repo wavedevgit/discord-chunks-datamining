@@ -161,13 +161,13 @@ function O(e) {
     async scrollToEnd() {}
   }), v = O.containerProps, {
     ref: I
-  } = v, T = g(v, ["ref"]);
+  } = v, S = g(v, ["ref"]);
   return (0, c.Tbt)(I), (0, r.jsx)(s.bG, {
     navigator: O,
     children: (0, r.jsx)("div", m(p({
       ref: I,
       className: h
-    }, T), {
+    }, S), {
       role: "listbox",
       children: i ? (0, r.jsx)(c.Ttm, {
         className: f.quickSelectScroller,

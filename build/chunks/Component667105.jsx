@@ -247,7 +247,7 @@ function Z(e) {
               questContentPosition: s,
               questContentRowIndex: f,
               sourceQuestContent: O
-            }), b ? (0, S.R)(R.dr.QUEST_HOME_DESKTOP) ? await (0, C.enrollAndStartVideoQuestWithErrorHandling)(n, {
+            }), b ? (0, T.R)(R.dr.QUEST_HOME_DESKTOP) ? await (0, C.enrollAndStartVideoQuestWithErrorHandling)(n, {
               questContent: o,
               questContentCTA: t,
               sourceQuestContent: O,
@@ -265,7 +265,7 @@ function Z(e) {
               questContent: o,
               sourceQuestContent: O,
               sourceQuestContentCTA: h.jZ.ACCEPT_QUEST
-            })) : G && ((0, S.R)(R.dr.QUEST_HOME_DESKTOP) ? await (0, p.AH)(n.id, {
+            })) : G && ((0, T.R)(R.dr.QUEST_HOME_DESKTOP) ? await (0, p.AH)(n.id, {
               questContent: o,
               questContentCTA: t,
               questContentPosition: s,
@@ -337,7 +337,7 @@ function Z(e) {
           tooltipText: null,
           onClick: v
         };
-        if ((0, T.i)("useCtaConfig")) return {
+        if ((0, S.i)("useCtaConfig")) return {
           tooltipText: null,
           onClick: v,
           text: (0, g.wj)(n.config) ? D.intl.string(D.t.bAGFz3) : D.intl.string(D.t.vTgCWx)

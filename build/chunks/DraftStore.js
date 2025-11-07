@@ -86,7 +86,7 @@ function v(e) {
       timestamp: Date.now(),
       draft: r
     }
-  } else S(n, i);
+  } else T(n, i);
   return "DRAFT_SAVE" === t
 }
 
@@ -95,10 +95,10 @@ function I(e) {
     channelId: t,
     draftType: n
   } = e;
-  return S(t, n)
+  return T(t, n)
 }
 
-function T(e) {
+function S(e) {
   let {
     channelId: t,
     draft: n
@@ -113,7 +113,7 @@ function T(e) {
   })
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : u.default.getId();
   if (null == n) returnfalse;
   let r = O(n),
@@ -169,7 +169,7 @@ function P(e) {
         timestamp: Date.now(),
         draft: n
       }
-    }), S(t.parent_id, 1), S(t.parent_id, 2)
+    }), T(t.parent_id, 1), T(t.parent_id, 2)
   }
 }
 
@@ -185,7 +185,7 @@ function x() {
   for (let [e, t] of Chunk709054.default.entries(b))
     for (let [n, r] of Chunk709054.default.entries(exports)) {
       let t = r[0];
-      null != exports && ("" === exports.draft || "" === exports.draft.trim()) && S(require, 0, module)
+      null != exports && ("" === exports.draft || "" === exports.draft.trim()) && T(require, 0, module)
     }
 }
 class L extends(r = Chunk442837.ZP.PersistedStore) {
@@ -268,5 +268,5 @@ let M = new L(Chunk570140.Z, {
   DRAFT_SAVE: v,
   DRAFT_CHANGE: v,
   DRAFT_CLEAR: I,
-  THREAD_SETTINGS_DRAFT_CHANGE: T
+  THREAD_SETTINGS_DRAFT_CHANGE: S
 })

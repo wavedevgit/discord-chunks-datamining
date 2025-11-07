@@ -59,13 +59,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -101,7 +101,7 @@ let C = e => {
       orbPriceAmount: n,
       loading: o,
       onClick: s
-    } = e, l = S(e, ["orbBalance", "orbPriceAmount", "loading", "onClick"]);
+    } = e, l = T(e, ["orbBalance", "orbPriceAmount", "loading", "onClick"]);
     let c = v({
       variant: "active",
       type: "submit",
@@ -111,15 +111,15 @@ let C = e => {
     return null === n ? (0, r.jsx)(a.aML, {
       "data-migration-pending": true,
       text: b.intl.string(b.t["c/rcUu"]),
-      children: e => (0, r.jsx)(i.zxk, T(v({}, e, c), {
+      children: e => (0, r.jsx)(i.zxk, S(v({}, e, c), {
         disabled: true
       }))
     }) : null === t || n > t ? (0, r.jsx)(a.aML, {
       text: b.intl.string(b.t.keFvXM),
-      children: e => (0, r.jsx)(i.zxk, T(v({}, e, c), {
+      children: e => (0, r.jsx)(i.zxk, S(v({}, e, c), {
         disabled: true
       }))
-    }) : (0, r.jsx)(i.zxk, T(v({}, c), {
+    }) : (0, r.jsx)(i.zxk, S(v({}, c), {
       loading: o,
       onClick: s
     }))

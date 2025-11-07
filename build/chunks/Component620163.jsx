@@ -168,7 +168,7 @@ let eB = () => {
       unseenGiftCount: t,
       showPrepaidPaymentPastDueWarning: h,
       searchParams: I,
-      numOfPendingFamilyRequests: T,
+      numOfPendingFamilyRequests: S,
       isOverlaySupported: L,
       isClipsBetaTagShowing: ej = false,
       shouldMergeGameSettings: eU,
@@ -310,7 +310,7 @@ let eB = () => {
         searchableTitles: [eD.intl.string(eD.t.URyqtP)],
         label: eD.intl.string(eD.t.URyqtP),
         ariaLabel: eD.intl.string(eD.t.URyqtP),
-        element: eT.Z,
+        element: eS.Z,
         predicate: () => eU
       },
       [eN.s6.GAMES_MY_GAMES]: {
@@ -348,7 +348,7 @@ let eB = () => {
         },
         onSettingsClose: () => {
           l.Z.wait(() => {
-            (0, S.It)(), (0, u.P6)(), d.Z.clearSubsection(eP.oAB.PROFILE_CUSTOMIZATION)
+            (0, T.It)(), (0, u.P6)(), d.Z.clearSubsection(eP.oAB.PROFILE_CUSTOMIZATION)
           })
         },
         url: eP.Z5c.SETTINGS("profile-customization")
@@ -583,7 +583,7 @@ let eB = () => {
         label: eD.intl.string(eL.default.gntCQT),
         ariaLabel: eD.intl.string(eL.default.gntCQT),
         element: es.Z,
-        badgeCount: T,
+        badgeCount: S,
         newIndicator: (0, r.jsx)(s.IGR, {
           text: eD.intl.string(eD.t.y2b7CA),
           color: v.Z.BG_BRAND
@@ -670,7 +670,7 @@ let eB = () => {
         section: eP.oAB.CONTENT_AND_SOCIAL,
         parent: eN.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
         label: eD.intl.string(eD.t["3wRort"]),
-        element: eS.ZP,
+        element: eT.ZP,
         predicate: () => e3 || e4
       },
       [eN.s6.BLOCKED_USERS]: {
@@ -678,7 +678,7 @@ let eB = () => {
         parent: eN.s6.RESTRICTED_USERS,
         label: eD.intl.string(eD.t.PFOUKW),
         searchableTitles: [eD.intl.string(eD.t.PFOUKW)],
-        element: eS.GF,
+        element: eT.GF,
         predicate: () => e4
       },
       [eN.s6.IGNORED_USERS]: {
@@ -686,7 +686,7 @@ let eB = () => {
         parent: eN.s6.RESTRICTED_USERS,
         searchableTitles: [eD.intl.string(eD.t["93ZDWE"])],
         label: eD.intl.string(eD.t["93ZDWE"]),
-        element: eS.yo,
+        element: eT.yo,
         predicate: () => e3
       },
       [eN.s6.PREMIUM]: {

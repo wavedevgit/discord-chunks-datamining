@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -70,7 +70,7 @@ let C = e => {
     price: a,
     onSelect: s,
     shouldDisplayHeader: I = false,
-    className: S,
+    className: T,
     previewHeaderClassName: C,
     hideProfilePreview: N = false
   } = e, {
@@ -100,7 +100,7 @@ let C = e => {
       null != t && null != s && s(t)
     };
   return (0, r.jsxs)("div", {
-    className: S,
+    className: T,
     children: [I && (0, r.jsx)("div", {
       className: o()(v.previewTitleContainer, C),
       children: (0, r.jsx)(d.gNt, {
@@ -108,7 +108,7 @@ let C = e => {
         children: k && (0, r.jsx)(d.yRy, {
           targetElementRef: L,
           preload: () => (0, p.Z)(P.id, P.getAvatarURL(null, 80)),
-          renderPopout: e => (0, r.jsx)(_.Z, A(T({}, e), {
+          renderPopout: e => (0, r.jsx)(_.Z, A(S({}, e), {
             user: P,
             pendingAvatar: P.getAvatarURL(null, (0, d.pxk)(d.EFr.SIZE_80)),
             pendingAvatarDecoration: (0, g.M)(M) ? M : null,
@@ -119,7 +119,7 @@ let C = e => {
           })),
           align: "center",
           position: "right",
-          children: e => (0, r.jsx)(d.P3F, A(T({}, e), {
+          children: e => (0, r.jsx)(d.P3F, A(S({}, e), {
             className: v.previewLink,
             innerRef: L,
             children: (0, r.jsx)(d.Text, {

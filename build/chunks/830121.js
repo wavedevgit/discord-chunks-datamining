@@ -131,7 +131,7 @@ function eo(e) {
     if (et(F, r)) returntrue;
     if ([H, Y, W, K, z].some(e => et(e, r))) {
       var t, n;
-      return null != (n = null == (t = r.pathname) ? true : t.toUpperCase().includes(S.g.INVITE)) && n
+      return null != (n = null == (t = r.pathname) ? true : t.toUpperCase().includes(T.g.INVITE)) && n
     }
   }
   returnfalse
@@ -141,7 +141,7 @@ function es(e) {
   if (null == e) return [];
   let t = new Set,
     n = [],
-    r = J(e = e.replace(X, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(T.Z.URL_REGEX),
+    r = J(e = e.replace(X, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(S.Z.URL_REGEX),
     i = e.match(Z);
   if (null == (r = (null != r ? r : []).concat(null != i ? i : [])) || 0 === r.length) return [];
   for (let e of r) {
@@ -164,27 +164,27 @@ function es(e) {
     if ((null == i ? true : i.match(N)) != null && ("https:" === r.protocol || "http:" === r.protocol)) {
       let t = (0, y.mb)(i.substring(1), r.search);
       if (v.Z.getInvite(t), e.includes("\\")) continue;
-      d(S.g.INVITE, t)
-    }(null == c ? true : c.match(N)) != null && d(S.g.TEMPLATE, c.substring(1));
+      d(T.g.INVITE, t)
+    }(null == c ? true : c.match(N)) != null && d(T.g.TEMPLATE, c.substring(1));
     let f = null == u ? true : u.match(P);
     if (null != f) {
       let t = f[1].toUpperCase();
-      if (t === S.g.INVITE) {
+      if (t === T.g.INVITE) {
         if (e.includes("\\")) continue;
         let t = (0, y.mb)(f[2], r.search);
-        d(S.g.INVITE, t)
+        d(T.g.INVITE, t)
       } else d(t, f[2])
-    }(null == u ? true : u.match(R)) != null && d(S.g.CHANNEL_LINK, u.replace("/channels/", ""));
+    }(null == u ? true : u.match(R)) != null && d(T.g.CHANNEL_LINK, u.replace("/channels/", ""));
     let _ = ei(r.pathname);
-    if (null != _ && d(S.g.EVENT, "".concat(_.guildId, "-").concat(_.guildEventId) + (null != _.recurrenceId ? "-".concat(_.recurrenceId) : "")), null != (null == u ? true : u.match(G)) && null != r.query) {
+    if (null != _ && d(T.g.EVENT, "".concat(_.guildId, "-").concat(_.guildEventId) + (null != _.recurrenceId ? "-".concat(_.recurrenceId) : "")), null != (null == u ? true : u.match(G)) && null != r.query) {
       let e = (0, O.y)(r.query),
         t = e.clientId;
-      null == t || "" === t || (null == (a = e.scopes) ? true : a.some(e => e !== E.x.APPLICATIONS_COMMANDS)) || d(S.g.APP_OAUTH2_LINK, t)
+      null == t || "" === t || (null == (a = e.scopes) ? true : a.some(e => e !== E.x.APPLICATIONS_COMMANDS)) || d(T.g.APP_OAUTH2_LINK, t)
     }
     let h = null == u ? true : u.match(D);
     if (null != h) {
       let e = h[2];
-      d(S.g.APP_DIRECTORY_PROFILE, e)
+      d(T.g.APP_DIRECTORY_PROFILE, e)
     }
     let m = null == u ? true : u.match(x);
     if (null != m) {
@@ -192,25 +192,25 @@ function es(e) {
         t = m[3];
       if (null != t) {
         let n = (0, b.l)(e, t);
-        d(S.g.APP_DIRECTORY_STOREFRONT_SKU, n)
-      } else d(S.g.APP_DIRECTORY_STOREFRONT, e)
+        d(T.g.APP_DIRECTORY_STOREFRONT_SKU, n)
+      } else d(T.g.APP_DIRECTORY_STOREFRONT, e)
     }
     let g = null == u ? true : u.match(L);
     if (null != g) {
       let e = g[1];
-      d(S.g.ACTIVITY_BOOKMARK, e)
+      d(T.g.ACTIVITY_BOOKMARK, e)
     }
     let I = null == u ? true : u.match(M);
-    null != I && d(S.g.GUILD_PRODUCT, "".concat(I[1], "-").concat(I[2]));
-    let T = null == u ? true : u.match(k);
-    null != T && d(S.g.SERVER_SHOP, T[1]);
+    null != I && d(T.g.GUILD_PRODUCT, "".concat(I[1], "-").concat(I[2]));
+    let S = null == u ? true : u.match(k);
+    null != S && d(T.g.SERVER_SHOP, S[1]);
     let A = null == u ? true : u.match(j);
-    null != A && d(S.g.SOCIAL_LAYER_STOREFRONT, "".concat(A[3], "-").concat(null != (o = A[1]) ? o : A[2]));
+    null != A && d(T.g.SOCIAL_LAYER_STOREFRONT, "".concat(A[3], "-").concat(null != (o = A[1]) ? o : A[2]));
     let w = el(e);
-    if (null != w && d(S.g.QUESTS_EMBED, w), "/shop" === u) {
+    if (null != w && d(T.g.QUESTS_EMBED, w), "/shop" === u) {
       let e = null != r.query ? (0, p.parse)(r.query).tab : null,
         t = null == (s = r.hash) ? true : s.match(B);
-      d(S.g.COLLECTIBLES_SHOP, "".concat(null != e ? e : "", "-").concat(null != (l = null == t ? true : t[1]) ? l : ""))
+      d(T.g.COLLECTIBLES_SHOP, "".concat(null != e ? e : "", "-").concat(null != (l = null == t ? true : t[1]) ? l : ""))
     }
   }
   return n

@@ -31,8 +31,8 @@ function g(e) {
     align: O = "center",
     spacing: v = p,
     caretConfig: I,
-    layerContext: T,
-    animationStyle: S,
+    layerContext: S,
+    animationStyle: T,
     positionKey: A
   } = e, C = i.useRef(null), {
     isRichTooltip: N
@@ -74,14 +74,14 @@ function g(e) {
           }) : b
         })]
       });
-      return S ? (0, r.jsx)(s.animated.div, {
-        style: S,
+      return T ? (0, r.jsx)(s.animated.div, {
+        style: T,
         children: O
       }) : O
     }
   });
-  return null != T ? (0, r.jsx)(l.mh4, {
-    layerContext: T,
+  return null != S ? (0, r.jsx)(l.mh4, {
+    layerContext: S,
     children: P
   }) : P
 }

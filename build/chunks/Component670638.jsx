@@ -120,7 +120,7 @@ function D(e) {
         ctaContent: p.jZ.CONTEXT_MENU_COPY_LINK,
         impressionId: N,
         sourceQuestContent: e.sourceQuestContent
-      }), (0, o.showToast)((0, o.createToast)(S.intl.string(S.t["+5kSoW"]), o.ToastType.SUCCESS)))
+      }), (0, o.showToast)((0, o.createToast)(T.intl.string(T.t["+5kSoW"]), o.ToastType.SUCCESS)))
     }, [N, e.quest.id, e.questContent, e.questContentPosition, e.sourceQuestContent, P]),
     G = () => {
       (0, O.openDisclosureModal)(e.quest, {
@@ -176,8 +176,8 @@ function D(e) {
     variant: "fixed",
     onSelect: Z,
     navId: "quests-entry",
-    "aria-label": S.intl.string(S.t.ogxXGq),
-    onClose: null != (t = null == e ? true : e.onClose) ? t : T.dG,
+    "aria-label": T.intl.string(T.t.ogxXGq),
+    onClose: null != (t = null == e ? true : e.onClose) ? t : S.dG,
     children: [(0, r.jsxs)(o.kSQ, {
       children: [(0, r.jsx)(o.sNh, {
         id: "play-game",
@@ -186,43 +186,43 @@ function D(e) {
         icon: o.zFc
       }), P && (0, r.jsx)(o.sNh, {
         id: "share-link",
-        label: S.intl.string(S.t.RDE0Sc),
+        label: T.intl.string(T.t.RDE0Sc),
         action: U,
         icon: o.TIy
       }), K && z]
     }, "major-actions"), (0, r.jsxs)(o.kSQ, {
       children: [!e.hideLearnMore && (0, r.jsx)(o.sNh, {
         id: "learn-more",
-        label: S.intl.string(S.t["Ws2Bl+"]),
+        label: T.intl.string(T.t["Ws2Bl+"]),
         action: B,
         icon: o.qDn
       }), X && (0, r.jsx)(o.sNh, {
         id: "display-disclosure",
-        label: S.intl.string(S.t.GcsZKJ),
+        label: T.intl.string(T.t.GcsZKJ),
         action: G
       }), u && (0, r.jsx)(o.sNh, {
         id: "hide-entrypoint",
-        label: S.intl.string(S.t.NN79E9),
+        label: T.intl.string(T.t.NN79E9),
         action: F,
-        subtext: S.intl.string(S.t.RK9gxo)
+        subtext: T.intl.string(T.t.RK9gxo)
       })]
     }, "minor-actions"), e.quest.preview && (0, r.jsxs)(o.kSQ, {
-      label: S.intl.string(S.t["Ape+mm"]),
+      label: T.intl.string(T.t["Ape+mm"]),
       children: [(0, r.jsx)(o.sNh, {
         id: "dismiss",
-        label: S.intl.string(S.t.JF6W66),
+        label: T.intl.string(T.t.JF6W66),
         action: x
       }), (0, r.jsx)(o.sNh, {
         id: "enrollment",
-        label: S.intl.string(S.t.taqkwK),
+        label: T.intl.string(T.t.taqkwK),
         action: W
       }), (0, r.jsx)(o.sNh, {
         id: "progress",
-        label: S.intl.string(S.t.cKSLr4),
+        label: T.intl.string(T.t.cKSLr4),
         action: j
       }), (0, r.jsx)(o.sNh, {
         id: "complete",
-        label: S.intl.string(S.t.jQEfRT),
+        label: T.intl.string(T.t.jQEfRT),
         action: w
       }), (0, m.$J)(e.quest) && (0, r.jsxs)(o.sNh, {
         id: "console",
@@ -242,7 +242,7 @@ function D(e) {
         })]
       }), (0, r.jsx)(o.sNh, {
         id: "copy-quest-id",
-        label: S.intl.string(S.t.oisrFi),
+        label: T.intl.string(T.t.oisrFi),
         action: () => {
           (0, d.JG)(e.quest.id)
         }
@@ -250,7 +250,7 @@ function D(e) {
         location: v.dr.QUEST_PREVIEW_TOOL_2
       }) && (0, r.jsx)(o.sNh, {
         id: "preview",
-        label: S.intl.string(S.t.tx5Ax5),
+        label: T.intl.string(T.t.tx5Ax5),
         action: q
       })]
     }, "preview-controls")]

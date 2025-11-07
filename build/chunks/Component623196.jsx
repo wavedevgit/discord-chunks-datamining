@@ -49,8 +49,8 @@ function O() {
   if (null == module) return null;
   let v = (0, Chunk88658.$6)(exports, module) || require,
     I = null != exports && o()().diff(o()(exports.created_at), "days") < Chunk981631.eBq,
-    T = v && I,
-    S = module.isStaff(),
+    S = v && I,
+    T = module.isStaff(),
     A = !module.verified,
     C = () => {
       y({
@@ -80,7 +80,7 @@ function O() {
       description: Chunk388032.intl.format(Chunk388032.t.P3kNfr, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.GDPR_REQUEST_DATA)
       })
-    }), T ? (0, Chunk951288.jsx)(Chunk481060.Zbd, {
+    }), S ? (0, Chunk951288.jsx)(Chunk481060.Zbd, {
       className: Chunk672413.card,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
@@ -88,7 +88,7 @@ function O() {
           date: o()(exports.created_at).add(Chunk981631.eBq, "days").format("MMMM Do YYYY")
         })
       })
-    }) : S ? (0, Chunk951288.jsx)(Chunk481060.Zbd, {
+    }) : T ? (0, Chunk951288.jsx)(Chunk481060.Zbd, {
       className: Chunk672413.card,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",

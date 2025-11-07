@@ -113,7 +113,7 @@ let B = e => {
           entry: t
         }));
       case l.s.TOP_GAME:
-        return (0, r.jsx)(S.ZP, L(D({}, n), {
+        return (0, r.jsx)(T.ZP, L(D({}, n), {
           entry: t
         }));
       case l.s.TOP_ARTIST:
@@ -182,7 +182,7 @@ let B = e => {
           entry: t
         }));
       case l.s.TOP_ARTIST:
-        return (0, r.jsx)(T.Z, L(D({}, n), {
+        return (0, r.jsx)(S.Z, L(D({}, n), {
           entry: t
         }));
       case l.s.LISTENED_SESSION:
@@ -211,15 +211,15 @@ let B = e => {
       v = null == (t = p.default.getCurrentUser()) ? true : t.isStaff(),
       {
         isRich: I,
-        appName: T
+        appName: S
       } = (0, R.n)(_.entry),
-      S = i.useMemo(() => ({
+      T = i.useMemo(() => ({
         entry: _.entry,
         channelId: _.channel.id,
         guildId: _.channel.guild_id,
         requestId: _.requestId,
-        richPresenceName: I ? T : true
-      }), [T, _.channel.guild_id, _.channel.id, _.entry, _.requestId, I]),
+        richPresenceName: I ? S : true
+      }), [S, _.channel.guild_id, _.channel.id, _.entry, _.requestId, I]),
       A = i.useRef(false),
       [C, N] = i.useState(false),
       [w, x] = i.useState(false),
@@ -245,8 +245,8 @@ let B = e => {
       }, []),
       V = i.useCallback(function(e) {
         let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-        (0, h.L)(e, D({}, S, t))
-      }, [S]),
+        (0, h.L)(e, D({}, T, t))
+      }, [T]),
       Y = i.useMemo(() => o().throttle(e => {
         (0, h.L)(P.xP.CARD_POPOUT_OPEN, e)
       }, U, {
@@ -265,7 +265,7 @@ let B = e => {
         ref: l,
         onMouseEnter: () => {
           A.current = true, setTimeout(() => {
-            A.current && N(true), Y(S)
+            A.current && N(true), Y(T)
           }, 100)
         },
         onMouseLeave: W,
@@ -287,7 +287,7 @@ let B = e => {
           position: "left",
           shouldShow: C,
           positionKey: g,
-          onRequestOpen: () => Y(S),
+          onRequestOpen: () => Y(T),
           onRequestClose: () => {
             w && W()
           },

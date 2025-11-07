@@ -5,7 +5,7 @@ require.d(exports, {
   $G: () => M,
   AH: () => N,
   BU: () => F,
-  BX: () => S,
+  BX: () => T,
   EX: () => et,
   Fr: () => q,
   Fz: () => z,
@@ -13,7 +13,7 @@ require.d(exports, {
   Ko: () => w,
   Pe: () => X,
   R6: () => Q,
-  Tm: () => T,
+  Tm: () => S,
   UP: () => j,
   Vj: () => P,
   WU: () => K,
@@ -75,7 +75,7 @@ function I(e) {
   return e
 }
 
-function T(e) {
+function S(e) {
   switch (e.type) {
     case y.aib.GUILD:
       return e.guildId;
@@ -90,7 +90,7 @@ function T(e) {
   }
 }
 
-function S(e) {
+function T(e) {
   let t = (0, g.ad)({
     location: "getSearchHistoryStateId"
   });
@@ -98,7 +98,7 @@ function S(e) {
     var n;
     return null != (n = d.Z.getChannelId(y.ME)) ? n : null
   }
-  return T(e)
+  return S(e)
 }
 
 function A(e) {

@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 488785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -20,13 +20,13 @@ let h = [Chunk604729.emoji1, Chunk604729.emoji2, Chunk604729.emoji3, Chunk604729
     let {
       emoji: n,
       onAnimationEnd: l
-    } = e, s = (0, o.sample)(h), c = i.useCallback(() => {
+    } = e, s = (0, o.sample)(h), c = r.useCallback(() => {
       l(n.key)
     }, [n.key, l]);
-    return (0, r.jsx)("div", {
+    return (0, i.jsx)("div", {
       className: a()(f.emoji, s),
       onAnimationEnd: c,
-      children: (0, r.jsx)(d.Z, {
+      children: (0, i.jsx)(d.Z, {
         emojiId: n.id,
         emojiName: n.name,
         animated: null != (t = n.animated) && t
@@ -38,49 +38,49 @@ function g(e) {
   let {
     channelId: t,
     callHeight: n
-  } = e, l = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), [a, o] = i.useState([]);
-  i.useEffect(() => {
+  } = e, l = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), [a, o] = r.useState([]);
+  r.useEffect(() => {
     function e(e) {
       let {
         channelId: n,
-        emoji: r
+        emoji: i
       } = e;
-      n !== t || l || null == r || o(e => [...e, function(e) {
+      n !== t || l || null == i || o(e => [...e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = i
           })
         }
         return e
       }({
         key: (0, s.Z)()
-      }, r)])
+      }, i)])
     }
     return u.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
       u.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
     }
   }, [t, l]);
-  let d = i.useCallback(e => {
+  let d = r.useCallback(e => {
     o(t => t.filter(t => t.key !== e))
   }, []);
-  return l ? null : (0, r.jsx)("div", {
+  return l ? null : (0, i.jsx)("div", {
     className: f.container,
     style: {
       top: n - 50,
       left: "52%"
     },
     "aria-hidden": true,
-    children: a.map(e => (0, r.jsx)(m, {
+    children: a.map(e => (0, i.jsx)(m, {
       emoji: e,
       onAnimationEnd: d
     }, e.key))

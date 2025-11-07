@@ -137,11 +137,11 @@ let ef = (e, t) => ec({
       assetUrl: e ? $.ZP : et.ZP
     },
     showYourStyle: {
-      thumbnail: S,
+      thumbnail: T,
       assetUrl: e ? ei.Z : ea.Z
     },
     yourSpace: {
-      thumbnail: T,
+      thumbnail: S,
       assetUrl: e ? eo.Z : es.Z
     },
     emojis: {
@@ -163,14 +163,14 @@ let ef = (e, t) => ec({
       location: "useBentoBoxes"
     }), I = Chunk340625.Z.useExperiment({
       location: "useBentoBoxes"
-    }), T = (0, Chunk647438.useCallback)(() => {
+    }), S = (0, Chunk647438.useCallback)(() => {
       (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
         section: Chunk981631.oAB.PROFILE_CUSTOMIZATION,
         analyticsLocations: module
       }, () => (0, Chunk829716.I)({
         analyticsLocations: module
       }))
-    }, [module]), S = () => {
+    }, [module]), T = () => {
       {
         letChunk518596 = require("./518596.jsx");
         exports(Chunk313789.n.APPEARANCE_PANEL, {

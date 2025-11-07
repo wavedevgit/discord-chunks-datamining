@@ -223,8 +223,8 @@ class U extends Chunk647438.Component {
       useSlate: E,
       spellcheckEnabled: y,
       useNewSlashCommands: O,
-      canOnlyUseTextCommands: T,
-      className: S,
+      canOnlyUseTextCommands: S,
+      className: T,
       id: N,
       required: P,
       maxCharacterCount: D,
@@ -386,10 +386,10 @@ class U extends Chunk647438.Component {
           maxCharacterCount: c,
           type: u
         } = this.props,
-        d = null != i ? (0, S.im)(i) : null,
-        g = (0, S.Mo)(),
+        d = null != i ? (0, T.im)(i) : null,
+        g = (0, T.Mo)(),
         b = null != (r = null != d ? d : g) ? r : a,
-        y = (0, S._K)(i, this._getEditorWindow()) ? a : b;
+        y = (0, T._K)(i, this._getEditorWindow()) ? a : b;
       if (null == l || !y.isPrivate() && !o || y.isPrivate() && y.isManaged()) returnfalse;
       let O = (e, t) => {
           var n, r;
@@ -418,7 +418,7 @@ class U extends Chunk647438.Component {
         v = null != s ? s : c,
         {
           files: I,
-          errors: T
+          errors: S
         } = G(e.clipboardData, u.uploadLongMessages ? v : null);
       return (j("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
@@ -434,7 +434,7 @@ class U extends Chunk647438.Component {
             path: null == t ? true : t.path
           }
         }
-      })), 0 === I.length) ? ((null == T ? true : T.some(e => {
+      })), 0 === I.length) ? ((null == S ? true : S.some(e => {
         let {
           error: t
         } = e;
@@ -443,7 +443,7 @@ class U extends Chunk647438.Component {
         title: P.intl.string(P.t.azO1Pe),
         help: P.intl.string(P.t["Koklr/"])
       }), false) : (e.preventDefault(), e.stopPropagation(), this.saveCurrentText(), O(I), this.focus(), true)
-    }), this._unsubscribe = T.p8.subscribe(e => {
+    }), this._unsubscribe = S.p8.subscribe(e => {
       requestAnimationFrame(() => {
         this.setState({
           popup: e
@@ -452,7 +452,7 @@ class U extends Chunk647438.Component {
     }), this.state = {
       focused: false,
       submitting: false,
-      popup: T.p8.getState()
+      popup: S.p8.getState()
     }
   }
 }

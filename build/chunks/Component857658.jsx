@@ -36,8 +36,8 @@ let I = (0, Chunk608787.Un)({
     name: "CustomThemeColorPickerControlV2",
     renderLoader: v
   }),
-  T = 5,
-  S = "#000000";
+  S = 5,
+  T = "#000000";
 
 function A(e, t) {
   return e.length < 1 ? 0 : t / (e.length - 1) * 80 + 10
@@ -89,7 +89,7 @@ function N(e) {
   let {
     color: t
   } = e, n = i.useMemo(() => ({
-    backgroundColor: (0, u.FX)(t) ? t : S
+    backgroundColor: (0, u.FX)(t) ? t : T
   }), [t]);
   return (0, r.jsx)("div", {
     className: O.hexColorPreview,
@@ -111,13 +111,13 @@ function P(e) {
     className: a,
     colors: o,
     setColors: s
-  } = e, c = (0, h.Z)(), [v, S] = i.useState(0), [A, P] = i.useState(t);
+  } = e, c = (0, h.Z)(), [v, T] = i.useState(0), [A, P] = i.useState(t);
   i.useEffect(() => {
     if (o.length > 0 && v < o.length) {
       let e = o[v];
       (0, u.FX)(e) && (P(e), n(e))
     }
-    v >= o.length && S(0)
+    v >= o.length && T(0)
   }, [v, o, n]);
   let w = e => {
       let t = e.trim();
@@ -147,20 +147,20 @@ function P(e) {
         (0, E.J4)(), D(e)
       } catch (e) {}
     }, j = () => {
-      if (o.length === T) return;
+      if (o.length === S) return;
       0 === o.length && (0, g.ft)(), (0, E.gG)();
       let e = o.length > 0 ? o[o.length - 1] : A,
         t = o.length > 0 ? R(e) : e,
         n = [...o, t];
-      s(n), S(n.length - 1)
+      s(n), T(n.length - 1)
     }, k = e => {
       if (o.length > 1) {
         (0, E.JL)();
         let t = o.filter((t, n) => n !== e);
-        s(t), v >= t.length ? S(t.length - 1) : v > e && S(v - 1)
+        s(t), v >= t.length ? T(t.length - 1) : v > e && T(v - 1)
       }
     }, U = e => {
-      S(e), (0, E.w8)()
+      T(e), (0, E.w8)()
     }, G = o.length > 1;
   return (0, r.jsxs)("div", {
     className: l()(O.container, a),
@@ -205,7 +205,7 @@ function P(e) {
           })
         })]
       })]
-    }), o.length < T && (0, r.jsx)(_.zxk, {
+    }), o.length < S && (0, r.jsx)(_.zxk, {
       variant: "secondary",
       size: "md",
       onClick: j,

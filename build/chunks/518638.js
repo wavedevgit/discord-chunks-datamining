@@ -2,8 +2,8 @@
 /** chunk id: 518638, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A2: () => T,
-  BU: () => S,
+  A2: () => S,
+  BU: () => T,
   Pz: () => O,
   Qf: () => R,
   ZC: () => N,
@@ -56,14 +56,14 @@ async function I() {
     rejectWithError: false
   })).body.map(v)
 }
-async function T(e) {
+async function S(e) {
   return v((await r.tn.post({
     url: E.ANM.CLAIM_OUTBOUND_PROMOTION_CODE(e),
     rejectWithError: false
   })).body)
 }
 
-function S(e, t) {
+function T(e, t) {
   var n;
   return null != t.outboundRedemptionUrlFormat && "" !== t.outboundRedemptionUrlFormat ? t.outboundRedemptionUrlFormat.replace(b, encodeURIComponent(e)) : null != (n = t.outboundRedemptionPageLink) ? n : ""
 }

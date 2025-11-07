@@ -2,7 +2,7 @@
 /** chunk id: 258609, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => T
+  default: () => S
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -121,7 +121,7 @@ class I extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
 }
 l(I, "displayName", "GameConsoleStore"), l(I, "persistKey", "GameConsoleStore");
-let T = new I(Chunk570140.Z, {
+let S = new I(Chunk570140.Z, {
   REMOTE_SESSION_CONNECT: h,
   REMOTE_SESSION_DISCONNECT: m,
   WAIT_FOR_REMOTE_SESSION: g,

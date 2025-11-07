@@ -4,7 +4,7 @@
 require.d(exports, {
   $E: () => x,
   T6: () => w,
-  TW: () => T,
+  TW: () => S,
   U0: () => R,
   WO: () => L,
   rU: () => P,
@@ -66,11 +66,11 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var T = function(e) {
+var S = function(e) {
   return e.MESSAGE = "Message", e.FORUM_TOOLBAR = "Forum Toolbar", e.MOBILE_MEDIA_VIEWER = "Mobile Media Viewer", e.MESSAGE_HOVER_BAR = "Message Hover Bar", e.MESSAGE_INLINE_BUTTON = "Message Inline Button", e.MESSAGE_CONTEXT_MENU = "Message Context Menu", e.MESSAGE_REACTION_PICKER = "Message Reaction Picker", e.MESSAGE_SHORTCUT = "Message Shortcut", e.DOUBLE_TAP = "Double Tap", e
 }({});
 
-function S(e, t, n) {
+function T(e, t, n) {
   let {
     headers: r,
     status: i,
@@ -211,7 +211,7 @@ async function P(e, t, n) {
       name: n.name
     }))
   }).catch(r => {
-    S(r, () => P(e, t, n, a, {
+    T(r, () => P(e, t, n, a, {
       burst: f,
       isRetry: true
     }), {
@@ -248,7 +248,7 @@ async function D(e, t, n) {
     oldFormErrors: true,
     rejectWithError: false
   }).catch(n => {
-    S(n, () => D(e, t, {
+    T(n, () => D(e, t, {
       isRetry: true
     }), {
       isRetry: i
@@ -264,7 +264,7 @@ async function x(e, t, n, i) {
     oldFormErrors: true,
     rejectWithError: false
   }).catch(r => {
-    S(r, () => x(e, t, n, {
+    T(r, () => x(e, t, n, {
       isRetry: true
     }), {
       isRetry: a
@@ -305,7 +305,7 @@ async function L(e) {
       name: a.name
     }))
   }).catch(async e => {
-    if (S(e, () => L({
+    if (T(e, () => L({
         channelId: t,
         messageId: n,
         emoji: a,

@@ -84,21 +84,21 @@ let I = Chunk647438.forwardRef(function(e, t) {
     onClose: b,
     "aria-label": v,
     "aria-labelledby": I
-  } = e, T = O(e, ["children", "className", "subsection", "onAction", "onClose", "aria-label", "aria-labelledby"]);
+  } = e, S = O(e, ["children", "className", "subsection", "onAction", "onClose", "aria-label", "aria-labelledby"]);
   let {
-    themeType: S
+    themeType: T
   } = (0, f.z)(), {
     analyticsLocations: A
   } = (0, l.ZP)(), {
     context: C
   } = (0, c.KZ)();
-  return S === p.l.MODAL || S === p.l.MODAL_V2 || (null == C ? true : C.userId) == null ? (0, r.jsx)("article", {
+  return T === p.l.MODAL || T === p.l.MODAL_V2 || (null == C ? true : C.userId) == null ? (0, r.jsx)("article", {
     "aria-label": v,
     "aria-labelledby": I,
     children: (0, r.jsx)(d.Z.Overlay, y(E({
       ref: t,
       className: o()(m.card, i)
-    }, T), {
+    }, S), {
       children: n
     }))
   }) : (0, r.jsx)("article", {
@@ -121,7 +121,7 @@ let I = Chunk647438.forwardRef(function(e, t) {
       children: (0, r.jsx)(d.Z.Overlay, y(E({
         ref: t,
         className: o()(m.card, i)
-      }, T), {
+      }, S), {
         children: n
       }))
     })

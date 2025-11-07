@@ -43,8 +43,8 @@ let p = 365,
   O = [Chunk859334.Ci.SU.weekday, Chunk859334.Ci.MO.weekday, Chunk859334.Ci.TU.weekday, Chunk859334.Ci.WE.weekday, Chunk859334.Ci.TH.weekday],
   v = [Chunk859334.Ci.TU.weekday, Chunk859334.Ci.WE.weekday, Chunk859334.Ci.TH.weekday, Chunk859334.Ci.FR.weekday, Chunk859334.Ci.SA.weekday],
   I = [Chunk859334.Ci.SA.weekday, Chunk859334.Ci.SU.weekday],
-  T = [Chunk859334.Ci.FR.weekday, Chunk859334.Ci.SA.weekday],
-  S = [Chunk859334.Ci.SU.weekday, Chunk859334.Ci.MO.weekday],
+  S = [Chunk859334.Ci.FR.weekday, Chunk859334.Ci.SA.weekday],
+  T = [Chunk859334.Ci.SU.weekday, Chunk859334.Ci.MO.weekday],
   A = [Chunk859334.Ci.SU.weekday, Chunk859334.Ci.MO.weekday, Chunk859334.Ci.TU.weekday, Chunk859334.Ci.WE.weekday, Chunk859334.Ci.TH.weekday, Chunk859334.Ci.FR.weekday, Chunk859334.Ci.SA.weekday],
   C = new Set([0, 6]);
 
@@ -224,7 +224,7 @@ function W(e) {
 function K(e) {
   let t = x(e.toDate().getDay()),
     n = x(e.toDate().getUTCDay());
-  return n.weekday - t.weekday > 0 ? S : n.weekday - t.weekday < 0 ? T : I
+  return n.weekday - t.weekday > 0 ? T : n.weekday - t.weekday < 0 ? S : I
 }
 
 function z(e, t) {

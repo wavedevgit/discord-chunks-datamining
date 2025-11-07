@@ -61,8 +61,8 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = 20,
-  S = 18,
+let S = 20,
+  T = 18,
   A = 77,
   C = {
     tension: 800,
@@ -90,9 +90,9 @@ let T = 20,
 
 function R(e) {
   return {
-    "--custom-emoji-sprite-size": "".concat(S, "px"),
-    "--custom-emoji-sprite-row": Math.floor(e / T),
-    "--custom-emoji-sprite-col": e % T
+    "--custom-emoji-sprite-size": "".concat(T, "px"),
+    "--custom-emoji-sprite-row": Math.floor(e / S),
+    "--custom-emoji-sprite-col": e % S
   }
 }
 let P = function(e) {
@@ -102,8 +102,8 @@ let P = function(e) {
     renderButtonContents: a,
     active: y,
     onClick: v,
-    "aria-controls": T,
-    focusProps: S,
+    "aria-controls": S,
+    focusProps: T,
     ref: P
   } = e, [w, D] = i.useState(false), [x, L] = i.useState(50), M = w || y, j = (0, h.l)(b, "emojiButton", M ? "Hovered" : "Normal"), k = R(x), U = i.useCallback(() => {
     if (M) return;
@@ -140,10 +140,10 @@ let P = function(e) {
         null == v || v(t), null == (n = e.onClick) || n.call(e)
       },
       "aria-label": E.intl.string(E.t["59QgaD"]),
-      "aria-controls": T,
+      "aria-controls": S,
       "aria-expanded": y,
       "aria-haspopup": "dialog",
-      focusProps: S,
+      focusProps: T,
       onContextMenu: e.onContextMenu,
       children: null != a ? a() : (0, r.jsx)(u.AMe, {
         config: C,

@@ -67,8 +67,8 @@ async function y(e) {
     isGift: O,
     baseAnalyticsData: v,
     analyticsLocation: I,
-    analyticsLocations: T,
-    flowStartTime: S,
+    analyticsLocations: S,
+    flowStartTime: T,
     subscriptionPlan: A,
     planGroup: C,
     trialId: N,
@@ -96,7 +96,7 @@ async function y(e) {
         tax: null == F ? true : F.tax,
         expected_amount: null == F ? true : F.total,
         expected_currency: null == F ? true : F.currency,
-        duration_ms: Date.now() - S
+        duration_ms: Date.now() - T
       })), E) return;
     if (U === p.GZQ.ONE_TIME) i()(null != j, "SKU must exist and be fetched."), i()(null != k, "SKUPricePreview must exist."), e = await (0, c.ZZ)(j.applicationId, j.id, {
       expectedAmount: k.amount,
@@ -134,14 +134,14 @@ async function y(e) {
       } else if (w && null != D && null != P && null != x) e = p.Uk1.has(P.type) ? await (0, o.G)(x, D, P, R.currency) : await (0, o.Mg)(x, {
         paymentSource: P,
         currency: R.currency
-      }, t, n, T, I, B);
+      }, t, n, S, I, B);
       else if (null != x) {
         let r = (0, f.al)(x, A.id, 1, new Set(C)),
           i = {
             paymentSource: P,
             currency: R.currency
           };
-        x.status === p.O0b.PAUSED && (i.status = p.O0b.ACTIVE), x.isPausedAllowsResumeButNotUpdates || (i.items = r), e = await (0, o.Mg)(x, i, t, n, T, I, B)
+        x.status === p.O0b.PAUSED && (i.status = p.O0b.ACTIVE), x.isPausedAllowsResumeButNotUpdates || (i.items = r), e = await (0, o.Mg)(x, i, t, n, S, I, B)
       } else e = await (0, l.Ld)({
         planId: A.id,
         currency: R.currency,
@@ -161,7 +161,7 @@ async function y(e) {
       payment_error_code: null == e ? true : e.code,
       payment_source_id: null == P ? true : P.id,
       payment_source_type: null == P ? true : P.type,
-      duration_ms: Date.now() - S
+      duration_ms: Date.now() - T
     }))
   } finally {
     E || r(false)

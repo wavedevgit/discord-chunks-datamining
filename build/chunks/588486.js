@@ -164,7 +164,7 @@ class E extends Chunk495852.C {
           a.engineFeatureFlags.push(e.string());
           break;
         case 30:
-          a.debugConfig = T.internalBinaryRead(e, e.uint32(), n, a.debugConfig);
+          a.debugConfig = S.internalBinaryRead(e, e.uint32(), n, a.debugConfig);
           break;
         case 31:
           a.expectedEndDate = c.E.internalBinaryRead(e, e.uint32(), n, a.expectedEndDate);
@@ -193,7 +193,7 @@ class E extends Chunk495852.C {
       t.join()
     }
     for (let n = 0; n < e.engineFeatureFlags.length; n++) t.tag(29, r.TD.LengthDelimited).string(e.engineFeatureFlags[n]);
-    e.debugConfig && T.internalBinaryWrite(e.debugConfig, t.tag(30, r.TD.LengthDelimited).fork(), n).join(), e.expectedEndDate && c.E.internalBinaryWrite(e.expectedEndDate, t.tag(31, r.TD.LengthDelimited).fork(), n).join();
+    e.debugConfig && S.internalBinaryWrite(e.debugConfig, t.tag(30, r.TD.LengthDelimited).fork(), n).join(), e.expectedEndDate && c.E.internalBinaryWrite(e.expectedEndDate, t.tag(31, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -347,7 +347,7 @@ class E extends Chunk495852.C {
       no: 30,
       name: "debug_config",
       kind: "message",
-      T: () => T
+      T: () => S
     }, {
       no: 31,
       name: "expected_end_date",
@@ -595,4 +595,4 @@ class I extends Chunk495852.C {
     }])
   }
 }
-let T = new I
+let S = new I

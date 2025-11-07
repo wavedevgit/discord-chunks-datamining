@@ -32,9 +32,9 @@ let p = {
       O = n.altBoundary,
       v = n.padding,
       I = n.tether,
-      T = true === I || I,
-      S = n.tetherOffset,
-      A = true === S ? 0 : S,
+      S = true === I || I,
+      T = n.tetherOffset,
+      A = true === T ? 0 : T,
       C = (0, u.Z)(t, {
         boundary: b,
         rootBoundary: y,
@@ -72,11 +72,11 @@ let p = {
           H = x[w],
           Y = H + C[Z],
           W = H - C[F],
-          K = T ? -M[V] / 2 : 0,
+          K = S ? -M[V] / 2 : 0,
           z = R === r.BL ? L[V] : M[V],
           q = R === r.BL ? -M[V] : -L[V],
           X = t.elements.arrow,
-          Q = T && X ? (0, l.Z)(X) : {
+          Q = S && X ? (0, l.Z)(X) : {
             width: 0,
             height: 0
           },
@@ -91,7 +91,7 @@ let p = {
           eo = null != (B = null == U ? true : U[w]) ? B : 0,
           es = H + en - eo - ea,
           el = H + er - eo,
-          ec = (0, s.u)(T ? (0, _.VV)(Y, es) : Y, H, T ? (0, _.Fp)(W, el) : W);
+          ec = (0, s.u)(S ? (0, _.VV)(Y, es) : Y, H, S ? (0, _.Fp)(W, el) : W);
         x[w] = ec, G[w] = ec - H
       }
       if (E) {
@@ -105,7 +105,7 @@ let p = {
           eE = null != (eu = null == U ? true : U[D]) ? eu : 0,
           eb = eg ? eh : e_ - L[ep] - M[ep] - eE + k.altAxis,
           ey = eg ? e_ + L[ep] + M[ep] - eE - k.altAxis : em,
-          eO = T && eg ? (0, s.q)(eb, e_, ey) : (0, s.u)(T ? eb : eh, e_, T ? ey : em);
+          eO = S && eg ? (0, s.q)(eb, e_, ey) : (0, s.u)(S ? eb : eh, e_, S ? ey : em);
         x[D] = eO, G[D] = eO - e_
       }
       t.modifiersData[p] = G

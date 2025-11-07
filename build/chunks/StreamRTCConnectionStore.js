@@ -25,7 +25,7 @@ var i, Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk70722 = require("./70722.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ function T(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let S = {},
+let T = {},
   A = {},
   C = {},
   N = {},
@@ -87,7 +87,7 @@ function k(e) {
     channelId: r,
     ownerId: E.default.getId()
   });
-  if (S[_] = {
+  if (T[_] = {
       appContext: i,
       analyticsLocations: d
     }, l().forEach(D, e => {
@@ -115,7 +115,7 @@ function U(e) {
     appContext: t,
     streamKey: n
   } = e;
-  S[n] = {
+  T[n] = {
     appContext: t,
     analyticsLocations: true
   }, l().forEach(D, e => {
@@ -142,10 +142,10 @@ function G(e) {
       streamRegion: i,
       streamApplication: A[t],
       streamSourceType: Q(N[t]),
-      actionContext: null == (l = S[t]) ? true : l.appContext,
+      actionContext: null == (l = T[t]) ? true : l.appContext,
       numViewers: null != a ? a.length : 0,
       goLiveModalDurationMs: R[t],
-      analyticsLocations: null == (c = S[t]) ? true : c.analyticsLocations
+      analyticsLocations: null == (c = T[t]) ? true : c.analyticsLocations
     });
     o = x(t, n, r, e), D[t] = o
   }
@@ -342,7 +342,7 @@ class J extends(i = Chunk442837.ZP.Store) {
     return null == r ? true : r.get(t)
   }
 }
-T(J, "displayName", "StreamRTCConnectionStore");
+S(J, "displayName", "StreamRTCConnectionStore");
 let $ = new J(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : {
   CONNECTION_OPEN: M,
   CONNECTION_CLOSED: j,

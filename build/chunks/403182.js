@@ -11,7 +11,7 @@ require.d(exports, {
   nA: () => I,
   qF: () => m,
   uV: () => y,
-  vY: () => S
+  vY: () => T
 }), require("./35282.js"), require("./388685.js");
 var Chunk112456 = require("./112456.js"),
   i = require.n(Chunk112456),
@@ -108,14 +108,14 @@ function I(e, t) {
   return Array.from(e).some(e => e.size > n)
 }
 
-function T(e) {
+function S(e) {
   let t = 0;
   for (let n of e) t += n.size;
   return t
 }
 
-function S(e) {
-  return T(e) > A()
+function T(e) {
+  return S(e) > A()
 }
 
 function A() {

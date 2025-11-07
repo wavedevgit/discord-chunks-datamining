@@ -104,7 +104,7 @@ function j() {
       let {
         backToSettings: n
       } = e;
-      null != t && (T.Z.isFullServerPreview(t) && (0, g.uL)(A.Z5c.CHANNEL(t)), _.ZP.shouldShowOnboarding(t) && (f.Z.finishOnboarding(t), (0, p.EI)(t)), (0, I.mL)(t), n && m.Z.open(t, o), o === A.pNK.ROLE_SUBSCRIPTIONS && (0, h.GN)(t))
+      null != t && (S.Z.isFullServerPreview(t) && (0, g.uL)(A.Z5c.CHANNEL(t)), _.ZP.shouldShowOnboarding(t) && (f.Z.finishOnboarding(t), (0, p.EI)(t)), (0, I.mL)(t), n && m.Z.open(t, o), o === A.pNK.ROLE_SUBSCRIPTIONS && (0, h.GN)(t))
     };
   return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,
@@ -186,7 +186,7 @@ function k(e) {
   let {
     guildId: t
   } = e;
-  return (0, s.e7)([T.Z], () => T.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
+  return (0, s.e7)([S.Z], () => S.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
     className: o()(w.settingsWrapper, {
       [w.windows]: (0, v.isWindows)(),
       [w.osx]: (0, v.isMac)()

@@ -127,19 +127,19 @@ class I extends(r = Chunk647438.Component) {
       className: O,
       id: v,
       rows: I,
-      flex: T,
-      autosize: S,
+      flex: S,
+      autosize: T,
       required: A,
       onInvalid: C,
       inputRef: N
-    } = this.props, R = S ? Chunk639317.g : "textarea", P = this.hasError(), w = null != (t = this.props["aria-labelledby"]) ? exports : null == (e = this.context) ? true : module.titleId, D = this.getAriaDescribedBy();
+    } = this.props, R = T ? Chunk639317.g : "textarea", P = this.hasError(), w = null != (t = this.props["aria-labelledby"]) ? exports : null == (e = this.context) ? true : module.titleId, D = this.getAriaDescribedBy();
     return (0, Chunk951288.jsxs)("div", {
       className: s()(Chunk979712.inputWrapper, {
-        [Chunk8542.flex]: T
+        [Chunk8542.flex]: S
       }),
       children: [(0, Chunk951288.jsxs)("div", {
         className: s()(Chunk8542.inputMaxLength, {
-          [Chunk8542.flex]: T
+          [Chunk8542.flex]: S
         }),
         children: [(0, Chunk951288.jsx)(Chunk793030.tEY, {
           children: (0, Chunk951288.jsx)(R, {

@@ -120,29 +120,29 @@ function I(e, t) {
     b = p(t, ["toValueMin", "toValueMax", "tension", "friction", "loop", "reverse", "invert", "callback", "type", "shouldLoop", "durationMin", "durationMax"]),
     y = e._value,
     O = v(t.duration, g, E),
-    T = v(t.toValue, i, a),
-    S = r[h](e, _(d({}, b), {
-      toValue: T,
+    S = v(t.toValue, i, a),
+    T = r[h](e, _(d({}, b), {
+      toValue: S,
       tension: o,
       friction: s,
       duration: O
     })),
-    A = S;
+    A = T;
   if (c || u) {
     let i = v(t.duration, g, E);
     n = r[h](e, _(d({}, b), {
-      toValue: c ? y : -T,
+      toValue: c ? y : -S,
       tension: o,
       friction: s,
       duration: i
-    })), A = r.sequence([S, n])
+    })), A = r.sequence([T, n])
   }
   l ? A.start(() => {
     (!m || m && m()) && (f ? f(I.bind(null, e, t)) : I(e, t))
   }) : A.start(f)
 }
 
-function T(e) {
+function S(e) {
   for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
   return e.interpolate({
     inputRange: [0, 1],
@@ -150,15 +150,15 @@ function T(e) {
   })
 }
 Chunk681667.inject.ApplyAnimatedValues(y, e => e);
-let S = {
+let T = {
     CLAMP: "clamp"
   },
   A = _(d({}, Chunk681667), {
     Easing: a(),
     accelerate: O,
     animate: I,
-    interpolate: T,
-    Extrapolate: S,
+    interpolate: S,
+    Extrapolate: T,
     div: Chunk681667.createAnimatedComponent("div"),
     span: Chunk681667.createAnimatedComponent("span"),
     img: Chunk681667.createAnimatedComponent("img"),

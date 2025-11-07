@@ -1,11 +1,11 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 870991, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  D8: () => i,
+  D8: () => r,
   E4: () => l
 });
 var Chunk388032 = require("./388032.jsx");
-let i = "https://discord.com/safety/understanding-and-avoiding-common-scams";
+let r = "https://discord.com/safety/understanding-and-avoiding-common-scams";
 
 function l() {
   return [{

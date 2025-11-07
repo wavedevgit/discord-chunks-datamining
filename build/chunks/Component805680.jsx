@@ -197,7 +197,7 @@ function Q(e) {
   }), el = (0, x.Iu)(e => e.activeView), ec = (0, C.fQ)(W), {
     renderWindow: eu,
     windowDispatch: ed
-  } = i.useContext(T.ZP), ef = (0, d.e7)([N.Z], () => !N.Z.hasLoadedStickerPacks), e_ = (0, S.V2)({
+  } = i.useContext(S.ZP), ef = (0, d.e7)([N.Z], () => !N.Z.hasLoadedStickerPacks), e_ = (0, T.V2)({
     location: "expression_picker"
   }), ep = (0, d.e7)([w.Z], () => w.Z.isOpen()), eh = null != et, em = (0, _.Jw)(null != et ? et : ""), eg = (null == (t = K.gifs) ? true : t.allowSending) && !c.tq && null != F, eE = (null == (n = K.stickers) ? true : n.allowSending) && null != H, eb = !(null == (a = K.expressionPicker) ? true : a.onlyEmojis) && (eg || eE), ey = (0, O.qt)({
     location: "expression_picker",
@@ -228,12 +228,12 @@ function Q(e) {
       eu.removeEventListener("mousedown", eO), eu.removeEventListener("contextmenu", eO), ed.unsubscribe(M.CkL.POPOUT_CLOSE, ev), D.S.unsubscribe(M.CkL.CLOSE_GIF_PICKER, e)
     }
   }, [el, ev, eO, eu, ed]), (0, p.Tbt)(en);
-  let [eI, eT] = (0, b.US)(e_ ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eS, eA] = i.useState(false);
+  let [eI, eS] = (0, b.US)(e_ ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eT, eA] = i.useState(false);
   i.useEffect(() => {
     el === L.X1.SOUNDBOARD && eA(true)
   }, [el]), i.useEffect(() => () => {
-    eS && eT(j.L.TAKE_ACTION)
-  }, [eS, eT]), i.useEffect(() => {
+    eT && eS(j.L.TAKE_ACTION)
+  }, [eT, eS]), i.useEffect(() => {
     (0, x.ql)("")
   }, []), i.useEffect(() => {
     (!eh && (0, _.$s)() || eh && !em) && (0, x._Q)()

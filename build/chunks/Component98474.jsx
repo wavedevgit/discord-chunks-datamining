@@ -2,7 +2,7 @@
 /** chunk id: 98474, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -61,13 +61,13 @@ let O = 450,
   v = .5,
   I = [];
 
-function T(e) {
+function S(e) {
   let {
     messageId: t,
     emoji: n,
     startPosition: g,
     targetPosition: b
-  } = e, [T, S] = i.useState(0), [A, C] = i.useState(0), [N, R] = i.useState(null), {
+  } = e, [S, T] = i.useState(0), [A, C] = i.useState(0), [N, R] = i.useState(null), {
     confettiCanvas: P
   } = i.useContext(u.h), w = (0, a.uR)(P, N), D = i.useMemo(() => [{
     src: null == n.id ? p.ZP.getURL(n.name) : _.ZP.getEmojiURL({
@@ -115,20 +115,20 @@ function T(e) {
       let {
         x: t
       } = e;
-      S(t)
+      T(t)
     }
   });
   return i.useEffect(() => {
-    T > 0 && A > 0 && w.createConfetti(y(E({}, h.We), {
+    S > 0 && A > 0 && w.createConfetti(y(E({}, h.We), {
       position: {
         type: "static",
         value: {
-          x: T,
+          x: S,
           y: A
         }
       }
     }))
-  }, [w, T, A]), (0, r.jsxs)(r.Fragment, {
+  }, [w, S, A]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Ji, {
       ref: R,
       sprites: D,

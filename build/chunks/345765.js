@@ -33,8 +33,8 @@ let y = 4,
   O = 2 * Chunk70956.Z.Millis.MINUTE,
   v = Chunk206583.YN.GLOBAL_FEED,
   I = 15 * Chunk70956.Z.Millis.MINUTE,
-  T = new Map,
-  S = new Set,
+  S = new Map,
+  T = new Set,
   A = new Map,
   C = null,
   N = (0, Chunk392711.debounce)(Chunk564990.yK, 3e3, {
@@ -55,7 +55,7 @@ function P(e, t) {
 }
 
 function w(e) {
-  if (S.has(e) || e === g.YN.GAME_PROFILE_FEED && (!(0, s._J)("ContentInventoryManager") || true !== m.Z.getFeed(e))) returnfalse;
+  if (T.has(e) || e === g.YN.GAME_PROFILE_FEED && (!(0, s._J)("ContentInventoryManager") || true !== m.Z.getFeed(e))) returnfalse;
   if (e === v) {
     if (!(0, _.sA)("ContentInventoryManager") || h.Z.hidden && null != m.Z.getFeed(e) || !d.Z.isFocused() || !l.Z.isConnected()) returnfalse;
     let t = u.Z.getIdleSince();
@@ -68,8 +68,8 @@ function D(e) {
   P(e, {
     loading: false
   });
-  let t = T.get(e);
-  true !== t && (clearTimeout(t), T.delete(e))
+  let t = S.get(e);
+  true !== t && (clearTimeout(t), S.delete(e))
 }
 
 function x() {
@@ -83,7 +83,7 @@ function x() {
   P(v, {
     loading: false,
     nextFetchDate: new Date(Date.now() + Chunk570140)
-  }), T.set(v, setTimeout(() => L({
+  }), S.set(v, setTimeout(() => L({
     feedId: v,
     feature: Chunk126313.L.INBOX
   }), Chunk570140))
@@ -96,7 +96,7 @@ async function L(e) {
   } = e;
   if (w(t) || r) try {
     let e = m.Z.getFeed(t);
-    S.add(t), P(t, {
+    T.add(t), P(t, {
       loading: true
     });
     let r = await (0, p.mt)({
@@ -108,7 +108,7 @@ async function L(e) {
       type: "CONTENT_INVENTORY_SET_FEED",
       feedId: t,
       feed: r
-    }), A.set(t, 0), S.delete(t), P(t, {
+    }), A.set(t, 0), T.delete(t), P(t, {
       loading: false
     }), t === v && (C = null, x())
   } catch (o) {
@@ -116,7 +116,7 @@ async function L(e) {
     let e = null != (i = A.get(t)) ? i : 0;
     if (e < y) {
       let i = f.Z.Millis.MINUTE * Math.pow(2, e) + R(e);
-      T.set(t, setTimeout(() => L({
+      S.set(t, setTimeout(() => L({
         feedId: t,
         feature: n,
         force: r
@@ -125,7 +125,7 @@ async function L(e) {
       type: "CONTENT_INVENTORY_CLEAR_FEED",
       feedId: t
     });
-    S.delete(t)
+    T.delete(t)
   }
 }
 

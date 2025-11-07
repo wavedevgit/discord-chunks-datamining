@@ -50,8 +50,8 @@ let y = (e, t, n, r) => {
       entry: n
     }), {
       user: I,
-      details: T,
-      appName: S
+      details: S,
+      appName: T
     } = (0, g.n)(n), {
       primaryColor: A,
       secondaryColor: C
@@ -79,8 +79,8 @@ let y = (e, t, n, r) => {
         }),
         entry: n,
         userDescription: E.t.rPqqts,
-        title: S,
-        subtitle: T,
+        title: T,
+        subtitle: S,
         badges: (0, r.jsx)(p.Gk, {
           location: p.Gt.POPOUT,
           children: _.Hs.map((e, t) => (0, r.jsx)(e, {

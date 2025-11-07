@@ -86,7 +86,7 @@ function I(e) {
   } = e;
   return t.forEach(e => b(e)), true
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk338949.Z), Chunk338949.Z.hasRenderDebugMode(Chunk837268.GO.LegacyOverlayLogging) && y()
   }
@@ -100,7 +100,7 @@ class T extends(r = Chunk442837.ZP.Store) {
     return m.filter(e => "error" === e.level || "crash" === e.level)
   }
 }
-u(T, "displayName", "OverlayRPCLogStore"), new T(Chunk570140.Z, {
+u(S, "displayName", "OverlayRPCLogStore"), new S(Chunk570140.Z, {
   OVERLAY_RENDER_DEBUG_MODE: v,
   OVERLAY_ADD_LOGS_BATCH: I
 })

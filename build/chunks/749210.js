@@ -133,8 +133,8 @@ let F = {
         lurkLocation: E
       } = f,
       I = null != (t = f.lurker) && t,
-      T = v.default.getCurrentUser();
-    if (null != (r = null == T ? true : T.hasFlag(N.xW$.QUARANTINED)) && r) return (0, _.default)(), new Promise((e, t) => t(Error()));
+      S = v.default.getCurrentUser();
+    if (null != (r = null == S ? true : S.hasFlag(N.xW$.QUARANTINED)) && r) return (0, _.default)(), new Promise((e, t) => t(Error()));
     if ((0, c.hO)(e)) return (0, l.mN)(R.L0.JOIN_LARGE_GUILD_UNDERAGE), new Promise((e, t) => t(Error()));
     o.Z.wait(() => o.Z.dispatch({
       type: "GUILD_JOIN",
@@ -187,7 +187,7 @@ let F = {
     } catch (t) {
       if ((null == (i = t.body) ? true : i.code) === N.evJ.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED && (0, l.mN)(R.L0.JOIN_LARGE_GUILD_UNDERAGE), (null == (s = t.body) ? true : s.code) === N.evJ.TOO_MANY_USER_GUILDS) {
         let e = v.default.getCurrentUser();
-        S.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? k(N.tHP) : k(N.DZw)
+        T.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? k(N.tHP) : k(N.DZw)
       }
       throw (null == (u = t.body) ? true : u.code) === N.evJ.GUILD_AT_CAPACITY && G(), I && (null == (d = t.body) ? true : d.code) === N.evJ.UNKNOWN_GUILD && U(e), t
     }
@@ -327,7 +327,7 @@ let F = {
         secondary_color: null,
         tertiary_color: null
       },
-      permissions: T.Hn
+      permissions: S.Hn
     };
     try {
       let t = await a.tn.post({

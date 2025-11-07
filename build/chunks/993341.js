@@ -63,12 +63,12 @@ function s(e, t) {
     focusableProps: I
   } = (0, o.kc)(e, t);
   h && (I.tabIndex = l ? false : I.tabIndex);
-  let T = (0, r.d)(I, O, (0, i.z)(e, {
+  let S = (0, r.d)(I, O, (0, i.z)(e, {
     labelable: true
   }));
   return {
     isPressed: v,
-    buttonProps: (0, r.d)(n, T, {
+    buttonProps: (0, r.d)(n, S, {
       "aria-haspopup": e["aria-haspopup"],
       "aria-expanded": e["aria-expanded"],
       "aria-controls": e["aria-controls"],

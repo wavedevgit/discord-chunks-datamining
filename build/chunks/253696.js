@@ -54,7 +54,7 @@ function g(e) {
     rowSize: p,
     isBurstReaction: m,
     analyticsObject: g
-  } = e, E = o.Z.getChannel(s.Z.getChannelId()), b = null == E ? true : E.getGuildId(), y = n === f.Hz.REACTION ? a.ZP.emojiReactionFrecencyWithoutFetchingLatest.frequently.slice() : a.ZP.emojiFrecencyWithoutFetchingLatest.frequently.slice(), O = null != E ? a.ZP.getDisambiguatedEmojiContext(E.getGuildId()).favoriteEmojisWithoutFetchingLatest : [], v = n === f.Hz.REACTION ? a.ZP.emojiReactionFrecencyWithoutFetchingLatest.numFrequentlyItems : a.ZP.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems, I = y.slice(0, v), T = null != b ? a.ZP.getGuildEmoji(b) : [], S = Object.values(null != (t = a.ZP.getDisambiguatedEmojiContext(null == E ? true : E.getGuildId()).groupedCustomEmojis) ? t : {}).reduce((e, t) => e += t.length, 0), {
+  } = e, E = o.Z.getChannel(s.Z.getChannelId()), b = null == E ? true : E.getGuildId(), y = n === f.Hz.REACTION ? a.ZP.emojiReactionFrecencyWithoutFetchingLatest.frequently.slice() : a.ZP.emojiFrecencyWithoutFetchingLatest.frequently.slice(), O = null != E ? a.ZP.getDisambiguatedEmojiContext(E.getGuildId()).favoriteEmojisWithoutFetchingLatest : [], v = n === f.Hz.REACTION ? a.ZP.emojiReactionFrecencyWithoutFetchingLatest.numFrequentlyItems : a.ZP.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems, I = y.slice(0, v), S = null != b ? a.ZP.getGuildEmoji(b) : [], T = Object.values(null != (t = a.ZP.getDisambiguatedEmojiContext(null == E ? true : E.getGuildId()).groupedCustomEmojis) ? t : {}).reduce((e, t) => e += t.length, 0), {
     topEmojis: A,
     newlyAddedEmojis: C
   } = (0, u._)({
@@ -80,8 +80,8 @@ function g(e) {
     num_animated_expressions_frecent: I.filter(e => null == e ? true : e.animated).length,
     num_custom_expressions_frecent: I.filter(l.ZP.isCustomEmoji).length,
     num_standard_expressions_frecent: I.filter(e => null == e.id).length,
-    num_current_guild_expressions: T.length,
-    num_custom_expressions_total: S,
+    num_current_guild_expressions: S.length,
+    num_custom_expressions_total: T,
     num_expressions_top_server: N.length,
     num_animated_expressions_top_server: N.filter(e => e.animated).length,
     num_expressions_newly_added: R.length,

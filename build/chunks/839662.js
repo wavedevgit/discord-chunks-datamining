@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 839662, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -14,12 +14,12 @@ function l(e, t) {
     c = false,
     u = false;
   switch (e.type) {
-    case i.fO.ACTIVITY:
+    case r.fO.ACTIVITY:
       break;
-    case i.fO.USER:
+    case r.fO.USER:
       a = e.streamId, s = e.voiceState, c = e.speaking, u = e.ringing;
       break;
-    case i.fO.STREAM:
+    case r.fO.STREAM:
       a = e.streamId, o = e.stream
   }
   return {
@@ -29,7 +29,7 @@ function l(e, t) {
     ringing: u,
     muted: null != (n = null == s ? true : s.isVoiceMuted()) && n,
     deafen: null != (l = null == s ? true : s.isVoiceDeafened()) && l,
-    mirror: e.type === i.fO.USER && e.user.id === t,
-    hasVideo: (0, r.ZP)(e)
+    mirror: e.type === r.fO.USER && e.user.id === t,
+    hasVideo: (0, i.ZP)(e)
   }
 }

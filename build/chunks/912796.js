@@ -197,8 +197,8 @@ function v(e, {
   }).map(e => `(${e})`).join(t)
 }
 let I = /\b\B/,
-  T = "[a-zA-Z]\\w*",
-  S = "[a-zA-Z_]\\w*",
+  S = "[a-zA-Z]\\w*",
+  T = "[a-zA-Z_]\\w*",
   A = "\\b\\d+(\\.\\d+)?",
   C = "(-?)(\\b0[xX][a-fA-F0-9]+|(\\b\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)",
   N = "\\b(0b[01]+)",
@@ -271,12 +271,12 @@ let I = /\b\B/,
   },
   B = {
     scope: "title",
-    begin: T,
+    begin: S,
     relevance: 0
   },
   Z = {
     scope: "title",
-    begin: S,
+    begin: T,
     relevance: 0
   };
 var F = Object.freeze({
@@ -309,10 +309,10 @@ var F = Object.freeze({
     })
   },
   HASH_COMMENT_MODE: U,
-  IDENT_RE: T,
+  IDENT_RE: S,
   MATCH_NOTHING_RE: I,
   METHOD_GUARD: {
-    begin: "\\.\\s*" + S,
+    begin: "\\.\\s*" + T,
     relevance: 0
   },
   NUMBER_MODE: {
@@ -327,7 +327,7 @@ var F = Object.freeze({
   RE_STARTERS_RE: R,
   SHEBANG: P,
   TITLE_MODE: B,
-  UNDERSCORE_IDENT_RE: S,
+  UNDERSCORE_IDENT_RE: T,
   UNDERSCORE_TITLE_MODE: Z
 });
 
@@ -720,24 +720,24 @@ let em = r,
         return i.starts && m(i.starts, e), a.returnEnd ? 0 : n.length
       }
 
-      function T() {
+      function S() {
         let e = [];
         for (let t = w; t !== C; t = t.parent) t.scope && e.unshift(t.scope);
         e.forEach(e => x.openNode(e))
       }
-      let S = {};
+      let T = {};
 
       function A(n, r) {
         let a = r && r[0];
         if (L += n, null == a) return _(), 0;
-        if ("begin" === S.type && "end" === r.type && S.index === r.index && "" === a) {
+        if ("begin" === T.type && "end" === r.type && T.index === r.index && "" === a) {
           if (L += t.slice(r.index, r.index + 1), !o) {
             let t = Error(`0 width match regex (${e})`);
-            throw t.languageName = e, t.badRule = S.rule, t
+            throw t.languageName = e, t.badRule = T.rule, t
           }
           return 1
         }
-        if (S = r, "begin" === r.type) return O(r);
+        if (T = r, "begin" === r.type) return O(r);
         if ("illegal" !== r.type || i) {
           if ("end" === r.type) {
             let e = I(r);
@@ -758,7 +758,7 @@ let em = r,
         w = a || N,
         D = {},
         x = new c.__emitter(c);
-      T();
+      S();
       let L = "",
         M = 0,
         j = 0,
@@ -845,7 +845,7 @@ let em = r,
       e.classList.add("hljs"), e.classList.add(`language-${r}`)
     }
 
-    function T(e) {
+    function S(e) {
       let t = null,
         n = f(e);
       if (u(n)) return;
@@ -872,7 +872,7 @@ let em = r,
         text: r
       })
     }
-    let S = () => {
+    let T = () => {
       N(), ei("10.6.0", "initHighlighting() deprecated.  Use highlightAll() now.")
     };
 
@@ -889,7 +889,7 @@ let em = r,
         C || window.addEventListener("DOMContentLoaded", e, false), C = true;
         return
       }
-      document.querySelectorAll(c.cssSelector).forEach(T)
+      document.querySelectorAll(c.cssSelector).forEach(S)
     }
 
     function R(t, n) {
@@ -943,18 +943,18 @@ let em = r,
     }
 
     function M(e) {
-      return ei("10.7.0", "highlightBlock will be removed entirely in v12.0"), ei("10.7.0", "Please use highlightElement now."), T(e)
+      return ei("10.7.0", "highlightBlock will be removed entirely in v12.0"), ei("10.7.0", "Please use highlightElement now."), S(e)
     }
     for (let n in Object.assign(e, {
         highlight: g,
         highlightAuto: v,
         highlightAll: N,
-        highlightElement: T,
+        highlightElement: S,
         highlightBlock: M,
         configure: function(e) {
           c = eg(c, e)
         },
-        initHighlighting: S,
+        initHighlighting: T,
         initHighlightingOnLoad: A,
         registerLanguage: R,
         unregisterLanguage: function(e) {

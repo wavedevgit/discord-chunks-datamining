@@ -8,9 +8,9 @@ require.d(exports, {
   RJ: () => P,
   Sd: () => M,
   XW: () => L,
-  el: () => T,
+  el: () => S,
   fP: () => A,
-  fQ: () => S,
+  fQ: () => T,
   t$: () => I
 }), require("./539854.js"), require("./388685.js"), require("./290780.js");
 var Chunk647438 = require("./647438.js"),
@@ -43,7 +43,7 @@ let v = e => {
     let t = o.Wp.useSetting();
     return (0, b.WD)(t, e)
   },
-  T = e => {
+  S = e => {
     let {
       collapsedStickersCategories: t,
       filteredStickers: n,
@@ -74,9 +74,9 @@ let v = e => {
             v = d.findIndex(e => e.type === E.Ih.RECENT),
             I = t.length;
           null != i && s === i.id && o && t.length < (0, f.A3)(i.premiumTier) && I++;
-          let T = Math.ceil(I / e);
-          p[g] = r ? 0 : T;
-          for (let a = 0; a < T; a++) {
+          let S = Math.ceil(I / e);
+          p[g] = r ? 0 : S;
+          for (let a = 0; a < S; a++) {
             let o = a * e,
               s = o + e,
               l = t.slice(o, s).map((e, t) => ({
@@ -114,7 +114,7 @@ let v = e => {
       }
     }, [t, n, i, o, s, u, d])
   },
-  S = e => true,
+  T = e => true,
   A = () => {
     Chunk647438.useEffect(() => {
       (0, Chunk268350.$p)()

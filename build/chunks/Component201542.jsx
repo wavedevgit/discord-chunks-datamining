@@ -26,13 +26,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk589826 = require("./589826.js");
 let I = Chunk647438.lazy(() => require.e("89792").then(require.bind(require, 711635)));
 
-function T(e) {
+function S(e) {
   let t = (b.TC.indexOf(e) + 1) % b.TC.length,
     n = b.TC[t];
   (0, u.C)(n, d.Ir.VOICE_MESSAGE)
 }
 
-function S(e) {
+function T(e) {
   let {
     played: t,
     duration: n,
@@ -261,13 +261,13 @@ let N = Chunk647438.memo(function(e) {
       onDrag: ep,
       onDragStart: ef,
       onDragEnd: e_
-    }), (0, r.jsx)(S, {
+    }), (0, r.jsx)(T, {
       played: k,
       currentTime: G,
       duration: Z
     }), (0, r.jsx)(l.P3F, {
       className: v.playbackRateContainer,
-      onClick: () => T(j),
+      onClick: () => S(j),
       "aria-label": ey,
       children: (0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",

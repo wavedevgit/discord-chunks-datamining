@@ -286,7 +286,7 @@ let U = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk246946.Z, Chunk82142.Z,
     skuId: t,
     subscriptionPlanId: n,
     giftStyle: r
-  } = e, i = S.Z.get(t);
+  } = e, i = T.Z.get(t);
   if (null == i) throw Error("SKU was unavailable while rendering gift.");
   let a = v.Z.getForGifterSKUAndPlan(O.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
   return {

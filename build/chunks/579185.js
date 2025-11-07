@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 579185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -7,17 +7,17 @@ var Chunk647438 = require("./647438.js"),
   Chunk846519 = require("./846519.js");
 
 function l(e, t) {
-  let [n, l] = r.useState(false), a = r.useRef(new i.sW(t, () => l(false))), o = r.useRef(new i.sW(e, () => l(true))), s = r.useCallback(() => {
+  let [n, l] = i.useState(false), a = i.useRef(new r.sW(t, () => l(false))), o = i.useRef(new r.sW(e, () => l(true))), s = i.useCallback(() => {
     a.current.cancel(), o.current.cancel()
   }, []);
-  r.useEffect(() => s, [s]);
-  let c = r.useCallback(() => {
+  i.useEffect(() => s, [s]);
+  let c = i.useCallback(() => {
     s(), a.current.delay()
   }, [s]);
   return {
     isHovered: n,
     setIsHovered: l,
-    onMouseEnter: r.useCallback(() => {
+    onMouseEnter: i.useCallback(() => {
       s(), o.current.delay()
     }, [s]),
     onMouseLeave: c,

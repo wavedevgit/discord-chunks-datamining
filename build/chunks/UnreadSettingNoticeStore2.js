@@ -1,9 +1,9 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 390289, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
 }), require("./388685.js"), require("./997841.js");
-var r, Chunk442837 = require("./442837.js"),
+var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk314897 = require("./314897.js"),
   Chunk592125 = require("./592125.js"),
@@ -18,7 +18,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk490897 = require("./490897.js"),
   Chunk526761 = require("./526761.js");
 
-function _(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = [{
+let C = [{
     timeSinceJoin: +Chunk70956.Z.Millis.HOUR,
     sends: 1,
     viewTime: +Chunk70956.Z.Millis.MINUTE
@@ -43,12 +43,12 @@ let y = [{
     sends: 10,
     viewTime: 30 * Chunk70956.Z.Millis.MINUTE
   }],
-  C = 5 * y[y.length - 1].viewTime,
+  _ = 5 * C[C.length - 1].viewTime,
   v = Chunk70956.Z.Millis.WEEK,
-  O = {
+  x = {
     channels: {}
   },
-  x = new Set,
+  O = new Set,
   E = null,
   j = 0,
   S = 0;
@@ -56,7 +56,7 @@ let y = [{
 function P() {
   if (null == E || !T(E)) returnfalse;
   let e = Z(E);
-  if (module.lastActionTime > Date.now() - Chunk70956.Z.Millis.DAY && module.viewDuration > C) returnfalse;
+  if (module.lastActionTime > Date.now() - Chunk70956.Z.Millis.DAY && module.viewDuration > _) returnfalse;
   let t = Date.now();
   module.lastActionTime = exports, module.viewDuration += exports - j, j = exports
 }
@@ -68,15 +68,15 @@ function I() {
 }
 
 function Z(e) {
-  return e in O.channels || (O.channels[e] = {
+  return e in x.channels || (x.channels[e] = {
     lastActionTime: 0,
     viewDuration: 0,
     numSends: 0
-  }), O.channels[e]
+  }), x.channels[e]
 }
 
 function T(e) {
-  if (!u.ZP.useNewNotifications || x.has(e)) returnfalse;
+  if (!u.ZP.useNewNotifications || O.has(e)) returnfalse;
   let t = o.Z.getBasicChannel(e);
   if (null == t || null == t.guild_id || u.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || N(t.guild_id, t.id) || N(t.guild_id, t.parent_id)) returnfalse;
   let n = u.ZP.resolveUnreadSetting(t);
@@ -88,16 +88,16 @@ function N(e, t) {
   let n = u.ZP.getChannelOverrides(e)[t];
   return null != n && !!(null != n.message_notifications && n.message_notifications !== m.bL.NULL || null != n.flags && (0, p.EB)(n.flags, b.ic.UNREADS_ALL_MESSAGES | b.ic.UNREADS_ONLY_MENTIONS))
 }
-class A extends(r = Chunk442837.ZP.PersistedStore) {
+class A extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (O.channels = e.channels), this.syncWith([u.ZP], I), this.waitFor(a.default, o.Z, s.Z, c.Z, u.ZP)
+    null != e && (x.channels = e.channels), this.syncWith([u.ZP], I), this.waitFor(a.default, o.Z, s.Z, c.Z, u.ZP)
   }
   getState() {
-    return O
+    return x
   }
   getLastActionTime(e) {
     var t, n;
-    return null != (n = null == (t = O.channels[e]) ? true : t.lastActionTime) ? n : 0
+    return null != (n = null == (t = x.channels[e]) ? true : t.lastActionTime) ? n : 0
   }
   maybeAutoUpgradeChannel(e) {
     if (!T(e)) returnfalse;
@@ -105,17 +105,17 @@ class A extends(r = Chunk442837.ZP.PersistedStore) {
     return null != t && null != t.guild_id && !! function(e) {
       var t;
       let n = s.Z.getGuild(e.guild_id),
-        r = null != (t = null == n ? true : n.joinedAt) ? t : new Date,
-        i = Math.min(f.default.age(e.id), Date.now() - r.getTime()),
-        l = O.channels[e.id];
+        i = null != (t = null == n ? true : n.joinedAt) ? t : new Date,
+        r = Math.min(f.default.age(e.id), Date.now() - i.getTime()),
+        l = x.channels[e.id];
       if (null == l || l.lastActionTime < Date.now() - v) returnfalse;
-      for (let e of y)
-        if (i < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) returntrue;
+      for (let e of C)
+        if (r < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) returntrue;
       returnfalse
-    }(t) && (delete O.channels[e], x.add(e), (0, h.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), true)
+    }(t) && (delete x.channels[e], O.add(e), (0, h.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), true)
   }
 }
-_(A, "displayName", "UnreadSettingNoticeStore2"), _(A, "persistKey", "UnreadSettingNoticeStore2");
+y(A, "displayName", "UnreadSettingNoticeStore2"), y(A, "persistKey", "UnreadSettingNoticeStore2");
 let w = new A(Chunk570140.Z, {
     CHANNEL_SELECT: function() {
       let e = P();
@@ -124,11 +124,11 @@ let w = new A(Chunk570140.Z, {
     CONNECTION_OPEN: function() {
       E = Chunk944486.Z.getChannelId(), j = Date.now(), I();
       let e = Date.now() - v;
-      Chunk709054.default.forEach(O.channels, (t, n) => {
+      Chunk709054.default.forEach(x.channels, (t, n) => {
         let {
-          lastActionTime: r
+          lastActionTime: i
         } = t;
-        r < e && delete O.channels[n]
+        i < e && delete x.channels[n]
       })
     },
     MESSAGE_CREATE: function(e) {

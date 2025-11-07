@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 119315, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   r: () => o
@@ -12,7 +12,7 @@ let o = e => {
   let {
     left: t,
     top: n = 0,
-    right: i = 0,
+    right: r = 0,
     bottom: o,
     size: s = 8,
     alert: c = false,
@@ -20,7 +20,7 @@ let o = e => {
     maskColor: d = 2,
     additionalStyles: p
   } = e;
-  return (0, r.jsx)("span", {
+  return (0, i.jsx)("span", {
     className: l()(a.dot, {
       [a.alert]: c,
       [a.blurpleTreatment]: u,
@@ -35,7 +35,7 @@ let o = e => {
       width: s,
       left: t,
       top: n,
-      right: i,
+      right: r,
       bottom: o
     }
   })

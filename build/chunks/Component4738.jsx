@@ -144,7 +144,7 @@ function _(e) {
     return null != g ? g(e, t) : t
   }
 
-  function T(e) {
+  function S(e) {
     return (0, r.jsx)(f, {
       page: e,
       totalPageCount: E,
@@ -153,7 +153,7 @@ function _(e) {
     }, e.key)
   }
 
-  function S(e) {
+  function T(e) {
     let {
       pages: t,
       hasMultiplePages: n
@@ -169,7 +169,7 @@ function _(e) {
             case c.s.PAGE:
               return I(e);
             case c.s.GAP:
-              return T(e);
+              return S(e);
             case c.s.NEXT:
               return O(e);
             default:
@@ -185,6 +185,6 @@ function _(e) {
     maxVisiblePages: a,
     hideMaxPage: h,
     onPageChange: b,
-    children: S
+    children: T
   })
 }

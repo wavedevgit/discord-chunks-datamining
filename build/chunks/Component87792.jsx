@@ -112,12 +112,12 @@ function Z(e) {
           subText: t
         }, n.event_id)
       }
-      if ((0, p.f0)(n)) return (0, r.jsx)(T.Z, {
+      if ((0, p.f0)(n)) return (0, r.jsx)(S.Z, {
         guildId: n.entity_id
       }, n.event_id);
       if ((0, p.m4)(n)) {
         let e = _.Z.getPurchaseInfo(n.entity_id);
-        return null == e ? null : (0, r.jsx)(S.Z, {
+        return null == e ? null : (0, r.jsx)(T.Z, {
           skuId: e.sku_id,
           subscriptionPlanId: e.subscription_plan_id,
           total: e.total,

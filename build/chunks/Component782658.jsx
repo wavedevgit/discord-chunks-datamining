@@ -83,7 +83,7 @@ function D(e) {
         context: D("Invite Button Embed")
       })
     },
-    V = (0, r.jsx)(S.Z, {
+    V = (0, r.jsx)(T.Z, {
       onTransitionToInviteChannel: Z,
       onAcceptInstantInvite: F,
       currentUserId: G,
@@ -112,7 +112,7 @@ function D(e) {
     default:
       switch ((0, p.VR)(j)) {
         case p.wx.GROUP_DM:
-          V = (0, r.jsx)(T.Z, {
+          V = (0, r.jsx)(S.Z, {
             onTransitionToInviteChannel: Z,
             onAcceptInstantInvite: F,
             currentUserId: G,

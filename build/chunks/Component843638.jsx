@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 843638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -15,10 +15,10 @@ var Chunk442837 = require("./442837.js"),
 function u(e) {
   let {
     selectedParticipant: t
-  } = (0, i.cj)([o.Z], () => ({
+  } = (0, r.cj)([o.Z], () => ({
     selectedParticipant: o.Z.getSelectedParticipant(e)
   }), [e]);
-  return (0, r.jsx)(l.S8, {
+  return (0, i.jsx)(l.S8, {
     id: "call-grid-view",
     label: c.intl.string(c.t["3jrUBj"]),
     checked: null == t,

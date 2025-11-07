@@ -56,12 +56,12 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = 104,
+let T = 104,
   A = 16;
 
 function C(e) {
@@ -80,19 +80,19 @@ function C(e) {
     null != e && (e.onload = () => {
       let t = Math.max(.66, Math.min(e.naturalWidth / e.naturalHeight, 4));
       1 === t ? p({
-        width: S,
-        height: S
+        width: T,
+        height: T
       }) : t > 1 ? p({
-        width: S * t,
+        width: T * t,
         height: true
       }) : p({
         width: true,
-        height: S / t
+        height: T / t
       }), f(true)
     })
   }, []);
   let m = (0, u.Z)(h),
-    g = Math.max(16, (A + S - (null != (t = null == m ? true : m.width) ? t : 0)) / 2);
+    g = Math.max(16, (A + T - (null != (t = null == m ? true : m.width) ? t : 0)) / 2);
   return (0, r.jsx)("img", {
     ref: h,
     src: l,
@@ -103,11 +103,11 @@ function C(e) {
     alt: "",
     style: {
       width: null != (n = _.width) ? n : "initial",
-      maxHeight: null != (a = _.height) ? a : S,
+      maxHeight: null != (a = _.height) ? a : T,
       height: "unset",
       marginLeft: g,
       marginRight: g,
-      marginTop: null != _.height ? S - _.height - 33 : false
+      marginTop: null != _.height ? T - _.height - 33 : false
     }
   })
 }
@@ -262,7 +262,7 @@ class R extends Chunk647438.Component {
       }), t()
     });
     let s = e.ignoreDraft ? "" : p.Z.getDraft(this.props.channelId, e.draftType);
-    this.state = T(v({}, (0, f.eK)(s)), {
+    this.state = S(v({}, (0, f.eK)(s)), {
       textFocused: true,
       hasSpoiler: null != (i = null == (t = e.upload) ? true : t.spoiler) && i,
       filename: null != (a = null == (n = e.upload) ? true : n.filename) ? a : "",
@@ -274,7 +274,7 @@ class R extends Chunk647438.Component {
 
 function P(e) {
   let t = (0, _.Z)();
-  return e.upload.item.platform !== d.ow.WEB ? null : (0, r.jsx)(R, T(v({}, e), {
+  return e.upload.item.platform !== d.ow.WEB ? null : (0, r.jsx)(R, S(v({}, e), {
     file: e.upload.item.file,
     messageMaxLength: t
   }))

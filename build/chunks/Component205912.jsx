@@ -2,7 +2,7 @@
 /** chunk id: 205912, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => T
+  M: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -77,7 +77,7 @@ function I(e, t) {
   return i
 }
 
-function T(e) {
+function S(e) {
   var {
     value: t,
     onChange: n,
@@ -85,8 +85,8 @@ function T(e) {
     maxValue: E,
     placeholderValue: y,
     granularity: I = "day",
-    hourCycle: T,
-    hideTimeZone: S = false
+    hourCycle: S,
+    hideTimeZone: T = false
   } = e, A = v(e, ["value", "onChange", "minValue", "maxValue", "placeholderValue", "granularity", "hourCycle", "hideTimeZone"]);
   let {
     i18n: C
@@ -149,8 +149,8 @@ function T(e) {
         maxValue: E,
         placeholderValue: y,
         granularity: I,
-        hourCycle: T,
-        hideTimeZone: S,
+        hourCycle: S,
+        hideTimeZone: T,
         "data-mana-component": "date-picker",
         className: g.datePicker,
         children: [(0, r.jsxs)(s.Z, {

@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 545594, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   i: () => o
@@ -13,31 +13,31 @@ function o(e) {
   let {
     bannerIcon: t,
     bannerHeader: n,
-    bannerSubtext: i,
+    bannerSubtext: r,
     textStyles: o,
     headerStyles: s,
     containerStyles: c,
     children: u
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: l()(a.spamBanner, c),
-    children: [(0, r.jsxs)("div", {
+    children: [(0, i.jsxs)("div", {
       className: l()(a.bannerTextContainer, o),
-      children: [null != t && ("string" == typeof t ? (0, r.jsx)("img", {
+      children: [null != t && ("string" == typeof t ? (0, i.jsx)("img", {
         src: t,
         alt: "",
         className: a.bannerIcon
-      }) : t), (0, r.jsxs)("div", {
+      }) : t), (0, i.jsxs)("div", {
         className: a.bannerText,
-        children: [(0, r.jsx)("div", {
+        children: [(0, i.jsx)("div", {
           className: l()(a.bannerHeader, s),
           children: n
-        }), null != i && (0, r.jsx)("div", {
+        }), null != r && (0, i.jsx)("div", {
           className: a.bannerSubtext,
-          children: i
+          children: r
         })]
       })]
-    }), (0, r.jsx)("div", {
+    }), (0, i.jsx)("div", {
       className: a.actionButtons,
       children: u
     })]

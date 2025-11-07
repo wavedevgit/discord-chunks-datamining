@@ -179,7 +179,7 @@ function F(e) {
         invite_inviter_id: null == (e = s.inviter) ? true : e.id
       })
     }, [null == (t = s.inviter) ? true : t.id, b.id]),
-    v = (0, c.e7)([T.Z], () => null != s.guild ? T.Z.getGuild(s.guild.id) : null, [s]),
+    v = (0, c.e7)([S.Z], () => null != s.guild ? S.Z.getGuild(s.guild.id) : null, [s]),
     N = (0, O.Z)([b.id])[0],
     D = (0, c.e7)([_.ZP], () => {
       var e;
@@ -195,7 +195,7 @@ function F(e) {
       })
     }),
     j = I.Z.getChannel(null == (n = s.channel) ? true : n.id),
-    k = (0, c.e7)([S.Z], () => null != j && S.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, j), [j]),
+    k = (0, c.e7)([T.Z], () => null != j && T.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, j), [j]),
     {
       analyticsLocations: U
     } = (0, h.ZP)(p.Z.INVITE_EMBED),
@@ -262,10 +262,10 @@ function V(e) {
     onView: v
   } = e, {
     bot: I,
-    icon: T
-  } = t, S = N.ZP.getApplicationIconURL({
+    icon: S
+  } = t, T = N.ZP.getApplicationIconURL({
     id: t.id,
-    icon: T,
+    icon: S,
     bot: I
   }), A = (0, y.G)(t), C = (0, b.E)(t), R = n.length, P = i.useMemo(() => [{
     label: _,
@@ -278,7 +278,7 @@ function V(e) {
   return (0, r.jsx)(m.W, G(k({
     header: t.name,
     title: L.intl.string(L.t["7vb6nw"]),
-    iconSrc: S
+    iconSrc: T
   }, C), {
     onClickBanner: A,
     info: (0, r.jsxs)("div", {

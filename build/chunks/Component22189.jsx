@@ -83,7 +83,7 @@ let ey = () => {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, Chunk410030.ZP)(), n = (0, Chunk424218.BU)(Chunk474936.Uq / 1024, {
     useKibibytes: true
-  }), eb = (0, Chunk399606.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), ey = null != eb ? Chunk74538.ZP.getPremiumPlanItem(eb) : null, eO = (null != ey ? Chunk74538.ZP.getSkuIdForPlan(ey.planId) : null) === Chunk474936.Si.TIER_2, ev = Chunk594174.default.getCurrentUser(), eI = (0, Chunk74538.I5)(ev, Chunk474936.PremiumTypes.TIER_2), eT = (0, Chunk74538.I5)(ev, Chunk474936.PremiumTypes.TIER_0), eS = (0, Chunk779618.Z)(Chunk131951.Z), {
+  }), eb = (0, Chunk399606.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), ey = null != eb ? Chunk74538.ZP.getPremiumPlanItem(eb) : null, eO = (null != ey ? Chunk74538.ZP.getSkuIdForPlan(ey.planId) : null) === Chunk474936.Si.TIER_2, ev = Chunk594174.default.getCurrentUser(), eI = (0, Chunk74538.I5)(ev, Chunk474936.PremiumTypes.TIER_2), eS = (0, Chunk74538.I5)(ev, Chunk474936.PremiumTypes.TIER_0), eT = (0, Chunk779618.Z)(Chunk131951.Z), {
     isFractionalPremiumActive: eA
   } = (0, Chunk975298.Z)(), eC = null != eb && eb.hasPremiumAtLeast(Chunk474936.PremiumTypes.TIER_2), eN = (0, Chunk266454.Nj)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eR = (0, Chunk594928.cL)({
     location: "usePremiumPerksCards"
@@ -152,9 +152,9 @@ let ey = () => {
       title: Chunk388032.intl.string(Chunk388032.t.z2jK6X),
       subtitle: Chunk388032.intl.string(Chunk388032.t["hxy0/R"]),
       description: Chunk388032.intl.string(Chunk388032.t.Z6v86b),
-      descriptionCta: eS ? Chunk388032.intl.string(Chunk388032.t.jVcuVY) : Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
+      descriptionCta: eT ? Chunk388032.intl.string(Chunk388032.t.jVcuVY) : Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
       pillText: Chunk388032.intl.string(Chunk388032.t.EYxi0o),
-      onCtaClick: eS ? eM : ek,
+      onCtaClick: eT ? eM : ek,
       perkImage: Chunk766491
     } : {
       name: "clips",
@@ -373,9 +373,9 @@ let ey = () => {
       title: Chunk388032.intl.string(Chunk388032.t.XQCSri),
       subtitle: Chunk388032.intl.string(Chunk388032.t.HC5wVV),
       description: Chunk388032.intl.string(Chunk388032.t.ee7wQ7),
-      descriptionCta: eI || eT ? Chunk388032.intl.string(Chunk388032.t.y9TxXV) : Chunk388032.intl.string(Chunk388032.t.d8o6lc),
-      isPremiumGetCta: !(eI || eT),
-      onCtaClick: eI || eT ? ej : true,
+      descriptionCta: eI || eS ? Chunk388032.intl.string(Chunk388032.t.y9TxXV) : Chunk388032.intl.string(Chunk388032.t.d8o6lc),
+      isPremiumGetCta: !(eI || eS),
+      onCtaClick: eI || eS ? ej : true,
       perkImage: Chunk607762
     },
     referralProgram: {

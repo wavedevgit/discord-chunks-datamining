@@ -189,18 +189,18 @@
         n.current = e
       }, [e]), n.current
     },
-    T = function(e) {
+    S = function(e) {
       return null !== e && "object" === i(e)
     },
-    S = function(e) {
-      return T(e) && "function" == typeof e.then
+    T = function(e) {
+      return S(e) && "function" == typeof e.then
     },
     A = function(e) {
-      return T(e) && "function" == typeof e.elements && "function" == typeof e.createToken && "function" == typeof e.createPaymentMethod && "function" == typeof e.confirmCardPayment
+      return S(e) && "function" == typeof e.elements && "function" == typeof e.createToken && "function" == typeof e.createPaymentMethod && "function" == typeof e.confirmCardPayment
     },
     C = "[object Object]",
     N = function e(t, n) {
-      if (!T(t) || !T(n)) return t === n;
+      if (!S(t) || !S(n)) return t === n;
       var r = Array.isArray(t);
       if (r !== Array.isArray(n)) returnfalse;
       var i = Object.prototype.toString.call(t) === C;
@@ -221,8 +221,8 @@
       return u.every(_)
     },
     R = function(e, t, n) {
-      return T(e) ? Object.keys(e).reduce(function(i, o) {
-        var s = !T(t) || !N(e[o], t[o]);
+      return S(e) ? Object.keys(e).reduce(function(i, o) {
+        var s = !S(t) || !N(e[o], t[o]);
         return n.includes(o) ? (s && console.warn("Unsupported prop change: options.".concat(o, " is not a mutable property.")), i) : s ? r(r({}, i || {}), {}, a({}, o, e[o])) : i
       }, null) : null
     },
@@ -234,7 +234,7 @@
     },
     D = function(e) {
       var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : P;
-      if (S(e)) return {
+      if (T(e)) return {
         tag: "async",
         stripePromise: Promise.resolve(e).then(function(e) {
           return w(e, t)
@@ -454,8 +454,8 @@
             b = n.onNetworksChange,
             y = n.onConfirm,
             O = n.onCancel,
-            T = n.onShippingAddressChange,
-            S = n.onShippingRateChange,
+            S = n.onShippingAddressChange,
+            T = n.onShippingRateChange,
             A = z("mounts <".concat(r, ">")),
             C = "elements" in A ? A.elements : null,
             N = "checkoutSdk" in A ? A.checkoutSdk : null,
@@ -464,7 +464,7 @@
             D = P[1],
             x = t.useRef(null),
             L = t.useRef(null);
-          v(w, "blur", d), v(w, "focus", f), v(w, "escape", h), v(w, "click", m), v(w, "loaderror", g), v(w, "loaderstart", E), v(w, "networkschange", b), v(w, "confirm", y), v(w, "cancel", O), v(w, "shippingaddresschange", T), v(w, "shippingratechange", S), v(w, "change", p), _ && (i = "expressCheckout" === e ? _ : function() {
+          v(w, "blur", d), v(w, "focus", f), v(w, "escape", h), v(w, "click", m), v(w, "loaderror", g), v(w, "loaderstart", E), v(w, "networkschange", b), v(w, "confirm", y), v(w, "cancel", O), v(w, "shippingaddresschange", S), v(w, "shippingratechange", T), v(w, "change", p), _ && (i = "expressCheckout" === e ? _ : function() {
             _(w)
           }), v(w, "ready", i), t.useLayoutEffect(function() {
             if (null === x.current && null !== L.current && (C || N)) {
@@ -647,9 +647,9 @@
     eO = J("paymentRequestButton", $),
     ev = J("linkAuthentication", $),
     eI = J("address", $),
-    eT = J("shippingAddress", $),
-    eS = J("paymentMethodMessaging", $),
+    eS = J("shippingAddress", $),
+    eT = J("paymentMethodMessaging", $),
     eA = J("affirmMessage", $),
     eC = J("afterpayClearpayMessage", $);
-  e.AddressElement = eI, e.AffirmMessageElement = eA, e.AfterpayClearpayMessageElement = eC, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = W, e.CurrencySelectorElement = ey, e.Elements = j, e.ElementsConsumer = G, e.EmbeddedCheckout = eo, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = e_, e.IbanElement = ep, e.IdealBankElement = eh, e.LinkAuthenticationElement = ev, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eS, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eT, e.useCheckout = q, e.useElements = U, e.useStripe = es
+  e.AddressElement = eI, e.AffirmMessageElement = eA, e.AfterpayClearpayMessageElement = eC, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = W, e.CurrencySelectorElement = ey, e.Elements = j, e.ElementsConsumer = G, e.EmbeddedCheckout = eo, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = e_, e.IbanElement = ep, e.IdealBankElement = eh, e.LinkAuthenticationElement = ev, e.P24BankElement = em, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eT, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eS, e.useCheckout = q, e.useElements = U, e.useStripe = es
 })

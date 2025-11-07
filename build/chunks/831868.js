@@ -22,8 +22,8 @@ var f = 0,
   O = 19,
   v = 573,
   I = 15,
-  T = 16,
-  S = 7,
+  S = 16,
+  T = 7,
   A = 256,
   C = 16,
   N = 17,
@@ -62,7 +62,7 @@ function H(e, t) {
 }
 
 function Y(e, t, n) {
-  e.bi_valid > T - n ? (e.bi_buf |= t << e.bi_valid & 65535, H(e, e.bi_buf), e.bi_buf = t >> T - e.bi_valid, e.bi_valid += n - T) : (e.bi_buf |= t << e.bi_valid & 65535, e.bi_valid += n)
+  e.bi_valid > S - n ? (e.bi_buf |= t << e.bi_valid & 65535, H(e, e.bi_buf), e.bi_buf = t >> S - e.bi_valid, e.bi_valid += n - S) : (e.bi_buf |= t << e.bi_valid & 65535, e.bi_valid += n)
 }
 
 function W(e, t, n) {
@@ -124,7 +124,7 @@ function Q() {
   for (; module <= 279;) M[2 * module + 1] = 7, module++, l[7]++;
   for (; module <= 287;) M[2 * module + 1] = 8, module++, l[8]++;
   for (X(M, b + 1, l), e = 0; module < y; module++) j[2 * module + 1] = 5, j[2 * module] = K(module, 5);
-  r = new Z(M, P, E + 1, b, I), i = new Z(j, w, 0, y, I), a = new Z([], D, 0, O, S)
+  r = new Z(M, P, E + 1, b, I), i = new Z(j, w, 0, y, I), a = new Z([], D, 0, O, T)
 }
 
 function J(e) {

@@ -22,8 +22,8 @@ var r, Chunk98405 = require("./98405.js"),
   Chunk338045 = require("./338045.js"),
   Chunk294684 = require("./294684.js"),
   Chunk199838 = require("./199838.js"),
-  T = Chunk199838.set,
-  S = Chunk199838.getterFor("URL"),
+  S = Chunk199838.set,
+  T = Chunk199838.getterFor("URL"),
   A = Chunk294684.URLSearchParams,
   C = Chunk294684.getState,
   N = Chunk127849.URL,
@@ -200,8 +200,8 @@ var r, Chunk98405 = require("./98405.js"),
   eO = {},
   ev = {},
   eI = {},
-  eT = {},
   eS = {},
+  eT = {},
   eA = {},
   eC = {},
   eN = {},
@@ -256,7 +256,7 @@ eF.prototype = {
               l.isSpecial() && em[l.scheme] === l.port && (l.port = null);
               return
             }
-            d = "", "file" === l.scheme ? c = eL : l.isSpecial() && n && n.scheme === l.scheme ? c = eT : l.isSpecial() ? c = eN : "/" === i[u + 1] ? (c = eS, u++) : (l.cannotBeABaseURL = true, U(l.path, ""), c = eG)
+            d = "", "file" === l.scheme ? c = eL : l.isSpecial() && n && n.scheme === l.scheme ? c = eS : l.isSpecial() ? c = eN : "/" === i[u + 1] ? (c = eT, u++) : (l.cannotBeABaseURL = true, U(l.path, ""), c = eG)
           } else {
             if (t) return W;
             d = "", c = eI, u = 0;
@@ -271,14 +271,14 @@ eF.prototype = {
           }
           c = "file" === n.scheme ? eL : eA;
           continue;
-        case eT:
+        case eS:
           if ("/" === a && "/" === i[u + 1]) c = eR, u++;
           else {
             c = eA;
             continue
           }
           break;
-        case eS:
+        case eT:
           if ("/" === a) {
             c = eP;
             break
@@ -574,28 +574,28 @@ eF.prototype = {
 var eV = function(e) {
     var t = f(this, eH),
       n = O(arguments.length, 1) > 1 ? arguments[1] : true,
-      r = T(t, new eF(e, false, n));
+      r = S(t, new eF(e, false, n));
     a || (t.href = r.serialize(), t.origin = r.getOrigin(), t.protocol = r.getProtocol(), t.username = r.getUsername(), t.password = r.getPassword(), t.host = r.getHost(), t.hostname = r.getHostname(), t.port = r.getPort(), t.pathname = r.getPathname(), t.search = r.getSearch(), t.searchParams = r.getSearchParams(), t.hash = r.getHash())
   },
   eH = eV.prototype,
   eY = function(e, t) {
     return {
       get: function() {
-        return S(this)[e]()
+        return T(this)[e]()
       },
       set: t && function(e) {
-        return S(this)[t](e)
+        return T(this)[t](e)
       },
       configurable: true,
       enumerable: true
     }
   };
 if (Chunk507604 && (Chunk573078(eH, "href", eY("serialize", "setHref")), Chunk573078(eH, "origin", eY("getOrigin")), Chunk573078(eH, "protocol", eY("getProtocol", "setProtocol")), Chunk573078(eH, "username", eY("getUsername", "setUsername")), Chunk573078(eH, "password", eY("getPassword", "setPassword")), Chunk573078(eH, "host", eY("getHost", "setHost")), Chunk573078(eH, "hostname", eY("getHostname", "setHostname")), Chunk573078(eH, "port", eY("getPort", "setPort")), Chunk573078(eH, "pathname", eY("getPathname", "setPathname")), Chunk573078(eH, "search", eY("getSearch", "setSearch")), Chunk573078(eH, "searchParams", eY("getSearchParams")), Chunk573078(eH, "hash", eY("getHash", "setHash"))), Chunk556585(eH, "toJSON", function() {
-    return S(this).serialize()
+    return T(this).serialize()
   }, {
     enumerable: true
   }), Chunk556585(eH, "toString", function() {
-    return S(this).serialize()
+    return T(this).serialize()
   }, {
     enumerable: true
   }), N) {

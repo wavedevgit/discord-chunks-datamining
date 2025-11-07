@@ -95,8 +95,8 @@ function v(e) {
 function I(e) {
   return e.replace(/start|end/g, e => d[e])
 }
-let T = ["left", "right"],
-  S = ["right", "left"],
+let S = ["left", "right"],
+  T = ["right", "left"],
   A = ["top", "bottom"],
   C = ["bottom", "top"];
 
@@ -104,8 +104,8 @@ function N(e, t, n) {
   switch (e) {
     case "top":
     case "bottom":
-      if (n) return t ? S : T;
-      return t ? T : S;
+      if (n) return t ? T : S;
+      return t ? S : T;
     case "left":
     case "right":
       return t ? A : C;

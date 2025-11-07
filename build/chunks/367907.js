@@ -81,7 +81,7 @@ function M(e) {
     o = d.ZP.getChannels(e),
     s = o[d.sH].length,
     l = o[d.Zb].length,
-    u = S.Z.getVoiceStates(e);
+    u = T.Z.getVoiceStates(e);
   return {
     guild_id: n.id,
     guild_size_total: f.Z.getMemberCount(e),
@@ -177,7 +177,7 @@ function F(e) {
   if (null == n) {
     let n = false;
     if (t.isDM()) {
-      let e = T.default.getUser(t.recipients[0]);
+      let e = S.default.getUser(t.recipients[0]);
       null != e && (n = e.bot)
     }
     return {
@@ -214,7 +214,7 @@ function V(e, t, n) {
     video_stream_count: 0,
     video_enabled: n
   };
-  return i()(S.Z.getVoiceStates(e)).filter(e => e.channelId === t).filter(e => e.userId !== c.default.getId()).forEach(e => {
+  return i()(T.Z.getVoiceStates(e)).filter(e => e.channelId === t).filter(e => e.userId !== c.default.getId()).forEach(e => {
     r.voice_state_count++, (e.selfVideo || e.selfStream) && r.video_stream_count++
   }), r
 }
@@ -223,7 +223,7 @@ function H(e, t) {
   let n = {
     custom_status_count: 0
   };
-  return i()(S.Z.getVoiceStates(e)).forEach(e => {
+  return i()(T.Z.getVoiceStates(e)).forEach(e => {
     e.channelId === t && null != E.Z.findActivity(e.userId, e => e.type === P.IIU.CUSTOM_STATUS) && n.custom_status_count++
   }), n
 }

@@ -62,11 +62,11 @@ module.exports = function(e, t) {
       if (y) {
         var I = s.processHTML(y, e.props.blockRenderMap);
         if (I) {
-          var T = I.contentBlocks,
-            S = I.entityMap;
-          if (T) {
-            var A = r.createFromArray(T);
-            e.update(p(e._latestEditorState, A, S));
+          var S = I.contentBlocks,
+            T = I.entityMap;
+          if (S) {
+            var A = r.createFromArray(S);
+            e.update(p(e._latestEditorState, A, T));
             return
           }
         }

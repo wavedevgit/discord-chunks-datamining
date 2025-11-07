@@ -59,7 +59,7 @@ let x = 24,
         className: D.benefitsList,
         "aria-labelledby": m,
         children: l.map((e, t) => (0, r.jsx)("li", {
-          children: (0, r.jsx)(S.Z, {
+          children: (0, r.jsx)(T.Z, {
             guildId: a,
             benefit: e
           }, (0, h.ab)(e))
@@ -174,7 +174,7 @@ let x = 24,
       canOpenModal: O,
       cannotOpenReason: v,
       isCheckingTrialEligibility: I
-    } = (0, N.Z)(p, n, a, d), S = (0, s.e7)([_.Z], () => _.Z.isSyncing), {
+    } = (0, N.Z)(p, n, a, d), T = (0, s.e7)([_.Z], () => _.Z.isSyncing), {
       activeSubscription: x,
       activeSubscriptionListing: L
     } = (0, E.Z)(a), M = (null == L ? true : L.id) === t, j = (null == x ? true : x.status) === P.O0b.CANCELED, [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useCallback(e => {
@@ -230,10 +230,10 @@ let x = 24,
               }), (0, r.jsx)(c.Button, {
                 fullWidth: true,
                 text: w.intl.string(w.t.fM5ZsX),
-                disabled: !O || S,
+                disabled: !O || T,
                 loading: I,
                 onClick: y,
-                icon: T.Z,
+                icon: S.Z,
                 variant: "primary"
               })]
             }), (0, r.jsxs)(c.Kqy, {

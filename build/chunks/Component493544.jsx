@@ -4,7 +4,7 @@
 require.d(exports, {
   ID: () => I,
   NM: () => A,
-  Xi: () => S,
+  Xi: () => T,
   ZP: () => P,
   bT: () => C
 });
@@ -83,8 +83,8 @@ let I = {
     DIVIDER: "DIVIDER",
     CUSTOM: "CUSTOM"
   },
-  T = Chunk647438.createContext(null);
-class S extends(r = Chunk647438.PureComponent) {
+  S = Chunk647438.createContext(null);
+class T extends(r = Chunk647438.PureComponent) {
   renderContent() {
     let e = this.props,
       {
@@ -122,7 +122,7 @@ function A(e) {
     })
   })
 }
-g(S, "defaultProps", {
+g(T, "defaultProps", {
   paddingTop: 60,
   paddingBottom: 60
 });
@@ -179,7 +179,7 @@ let P = function(e) {
     mobileSidebarOpen: b,
     toggleSidebar: y,
     hideSidebar: O = false
-  } = e, v = a.useRef(null), I = a.useRef(null), S = (0, _.Z)(o), A = (0, f.Yzy)(O, {
+  } = e, v = a.useRef(null), I = a.useRef(null), T = (0, _.Z)(o), A = (0, f.Yzy)(O, {
     from: {
       position: "absolute",
       opacity: 0
@@ -193,10 +193,10 @@ let P = function(e) {
     v.current = e, null != E && (E.current = e)
   }, [E]);
   a.useLayoutEffect(() => {
-    null != v.current && S !== o && v.current.scrollTo({
+    null != v.current && T !== o && v.current.scrollTo({
       to: 0
     })
-  }, [o, S, v]);
+  }, [o, T, v]);
   let P = (0, i.jsx)(R, {
     isMobile: u.tq,
     mobileSidebarOpen: b,
@@ -233,7 +233,7 @@ let P = function(e) {
       children: [t, (0, i.jsxs)(f.yWw, {
         className: s()(m.contentRegionScroller, O ? m.contentRegionHiddenSidebar : m.contentRegionShownSidebar),
         ref: C,
-        children: [(0, i.jsx)(T.Provider, {
+        children: [(0, i.jsx)(S.Provider, {
           value: v.current,
           children: (0, i.jsx)("div", {
             ref: I,
@@ -257,7 +257,7 @@ let P = function(e) {
         children: [t, (0, i.jsxs)(f.yWw, {
           className: s()(m.contentRegionScroller, O ? m.contentRegionHiddenSidebar : m.contentRegionShownSidebar),
           ref: C,
-          children: [(0, i.jsx)(T.Provider, {
+          children: [(0, i.jsx)(S.Provider, {
             value: v.current,
             children: (0, i.jsx)(f.njP.Panel, {
               id: o,

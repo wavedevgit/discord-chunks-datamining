@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   CM: () => A,
-  Cf: () => T,
-  ID: () => S,
+  Cf: () => S,
+  ID: () => T,
   Ju: () => P,
   Ls: () => y,
   Xz: () => R,
@@ -128,14 +128,14 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_BIO",
     bio: e
   })
 }
 
-function S(e) {
+function T(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS",
     pronouns: e

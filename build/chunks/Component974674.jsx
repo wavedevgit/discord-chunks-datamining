@@ -64,9 +64,9 @@ function I(e, t) {
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,7 +74,7 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -95,7 +95,7 @@ function N(e) {
     size: t,
     isMobile: n,
     isTyping: i
-  } = e, a = T(e, ["size", "isMobile", "isTyping"]);
+  } = e, a = S(e, ["size", "isMobile", "isTyping"]);
   let o = (0, g.UC)(t),
     s = o.status * (n && !i ? g.EW : 1),
     l = o.status * (i ? g.D6 : 1),
@@ -502,11 +502,11 @@ function Z(e) {
     isTyping: O = false,
     avatarDecoration: v,
     typingOffset: I,
-    specs: T
-  } = e, S = {
+    specs: S
+  } = e, T = {
     width: (0, g.px)(n),
     height: (0, g.px)(n)
-  }, A = null == p || h ? true : R(p, E, y), C = T.size * m.hs, N = P(E, n, y, O), w = null != v && (0, r.jsx)("svg", {
+  }, A = null == p || h ? true : R(p, E, y), C = S.size * m.hs, N = P(E, n, y, O), w = null != v && (0, r.jsx)("svg", {
     width: C + I,
     height: C,
     viewBox: "0 0 ".concat(C + I, " ").concat(C),
@@ -531,7 +531,7 @@ function Z(e) {
   });
   return null != i || null != a ? (0, r.jsxs)(l.P3F, {
     className: o()(b.wrapper, b.pointer, f),
-    style: S,
+    style: T,
     onClick: i,
     tabIndex: _,
     onContextMenu: c,
@@ -544,7 +544,7 @@ function Z(e) {
     children: [t, w]
   }) : (0, r.jsxs)("div", {
     className: o()(b.wrapper, f),
-    style: S,
+    style: T,
     onContextMenu: null != c ? c : true,
     onMouseEnter: null != u ? u : true,
     onMouseLeave: null != d ? d : true,
@@ -588,8 +588,8 @@ function V(e) {
     isSpeaking: E = false,
     isLatched: y = false,
     statusTooltip: v = false,
-    statusTooltipDelay: T,
-    statusBackdropColor: S,
+    statusTooltipDelay: S,
+    statusBackdropColor: T,
     "aria-hidden": A = false,
     "aria-label": C,
     imageClassName: N,
@@ -629,13 +629,13 @@ function V(e) {
           isLatched: y,
           className: N
         })
-      }), null != B && null != S ? L(S, l, V, B) : null, null != B ? (0, r.jsx)(d.aM, {
+      }), null != B && null != T ? L(T, l, V, B) : null, null != B ? (0, r.jsx)(d.aM, {
         "data-migration-pending": true,
         text: v ? (0, p.u5)(B) : null,
         "aria-label": false,
         position: "top",
         spacing: 5 + 1.5 * V.stroke,
-        delay: T,
+        delay: S,
         children: e => (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("rect", I(O({}, e, D(V, B, l, f)), {
             fill: W,
@@ -684,7 +684,7 @@ function W(e) {
     isLatched: E = false,
     size: y,
     src: v,
-    status: S,
+    status: T,
     statusColor: R,
     statusTooltip: P = false,
     statusTooltipDelay: w,
@@ -697,7 +697,7 @@ function W(e) {
     avatarTooltipAsset: K,
     avatarTooltipText: z,
     avatarTooltipTitle: q
-  } = e, X = (0, u.vj)(S, R), Q = i.useId(), J = i.useId(), [$] = i.useState(() => O({
+  } = e, X = (0, u.vj)(T, R), Q = i.useId(), J = i.useId(), [$] = i.useState(() => O({
     fill: a
   }, B({
     size: y,
@@ -708,10 +708,10 @@ function W(e) {
     fill: X
   }, B({
     size: y,
-    status: S,
+    status: T,
     isMobile: f,
     isTyping: _
-  })), [X, y, S, f, _]), et = (0, l.q_F)({
+  })), [X, y, T, f, _]), et = (0, l.q_F)({
     config: A,
     from: $,
     to: ee
@@ -722,7 +722,7 @@ function W(e) {
     avatarCutoutHeight: ea,
     avatarCutoutRadius: eo,
     fill: es
-  } = et, el = T(et, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), ec = (0, g.px)(y), eu = (0, g.UC)(y), ed = eu.status * g.D6, ef = eu.status * g.EW, e_ = null != S ? (eu.status * g.D6 - eu.status) / 2 : 0, ep = eu.size + Math.ceil(e_), [eh, em, eg] = (0, l.q_F)({
+  } = et, el = S(et, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), ec = (0, g.px)(y), eu = (0, g.UC)(y), ed = eu.status * g.D6, ef = eu.status * g.EW, e_ = null != T ? (eu.status * g.D6 - eu.status) / 2 : 0, ep = eu.size + Math.ceil(e_), [eh, em, eg] = (0, l.q_F)({
     config: {
       tension: 450,
       friction: 20,
@@ -738,7 +738,7 @@ function W(e) {
     }, {
       scale: 1
     }] : []
-  }, C() ? "animate-always" : "animate-never", [V, S]);
+  }, C() ? "animate-always" : "animate-never", [V, T]);
   return (0, r.jsx)(Z, I(O({}, e), {
     ariaLabel: M,
     ariaHidden: x,
@@ -781,15 +781,15 @@ function W(e) {
           isLatched: E,
           className: k
         })
-      }), null != D && L(D, f, eu, S), (0, r.jsx)(d.aM, {
+      }), null != D && L(D, f, eu, T), (0, r.jsx)(d.aM, {
         "data-migration-pending": true,
-        text: P ? (0, p.u5)(S) : null,
+        text: P ? (0, p.u5)(T) : null,
         "aria-label": false,
         position: "top",
         spacing: H(eu.status, eu.stroke, f, _),
         delay: w,
         children: e => (0, r.jsxs)(s.animated.g, {
-          transform: eh.scale.to(e => "scale(".concat(e, ") ").concat(Y(eu, e, S))),
+          transform: eh.scale.to(e => "scale(".concat(e, ") ").concat(Y(eu, e, T))),
           children: [(0, r.jsxs)("svg", {
             width: ed,
             height: ef,
@@ -830,7 +830,7 @@ let z = Chunk647438.memo(function(e) {
   var {
     statusColor: t,
     status: n
-  } = e, a = T(e, ["statusColor", "status"]);
+  } = e, a = S(e, ["statusColor", "status"]);
   let {
     isMobile: o = false,
     isTyping: s = false

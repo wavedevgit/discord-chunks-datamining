@@ -1,8 +1,8 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 849171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   OV: () => D,
-  ZP: () => L
+  ZP: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk958185 = require("./958185.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk826405 = require("./826405.js"),
+  Chunk890280 = require("./890280.js"),
   Chunk835473 = require("./835473.js"),
   Chunk522474 = require("./522474.js"),
   Chunk314897 = require("./314897.js"),
@@ -42,20 +42,20 @@ function D(e) {
   let {
     avatarSize: t,
     guildId: n,
-    channelId: i,
+    channelId: r,
     users: l
   } = e, a = null != t ? t : c.EFr.SIZE_32, o = (0, c.pxk)(a);
-  return (0, r.jsx)(C.ZP, {
+  return (0, i.jsx)(_.ZP, {
     size: o,
     guildId: n,
     users: l,
     max: 4,
     renderUser: e => {
-      if (null == e || e === C.ag) return null;
-      let t = A.ZP.getName(n, i, e);
-      return (0, r.jsx)(s.u, {
+      if (null == e || e === _.ag) return null;
+      let t = A.ZP.getName(n, r, e);
+      return (0, i.jsx)(s.u, {
         text: t,
-        children: (0, r.jsx)("img", {
+        children: (0, i.jsx)("img", {
           src: e.getAvatarURL(n, o),
           alt: t,
           className: M.avatar
@@ -65,72 +65,72 @@ function D(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   var t, n;
   let {
     participants: l,
     application: s,
     channel: h,
     width: g
-  } = e, b = g > 400 ? 2 : +(g > 300), [_] = g > 400 ? [c.EFr.SIZE_56, 56] : g > 300 ? [c.EFr.SIZE_32, 32] : [c.EFr.SIZE_24, 24], y = (0, o.Wu)([T.default, I.default], () => Array.from(l).map(e => (0, f.J)(e, I.default) ? null : T.default.getUser(e.userId)).filter(N.lm)), C = (0, o.e7)([d.ZP], () => {
+  } = e, b = g > 400 ? 2 : +(g > 300), [y] = g > 400 ? [c.EFr.SIZE_56, 56] : g > 300 ? [c.EFr.SIZE_32, 32] : [c.EFr.SIZE_24, 24], C = (0, o.Wu)([T.default, I.default], () => Array.from(l).map(e => (0, f.J)(e, I.default) ? null : T.default.getUser(e.userId)).filter(N.lm)), _ = (0, o.e7)([d.ZP], () => {
     var e;
     return null != (e = d.ZP.getEmbeddedActivitiesForChannel(h.id).find(e => e.applicationId === s.id)) ? e : d.ZP.getEmbeddedActivitiesForStartingChannel(h.id).find(e => e.applicationId === s.id)
   }), {
     analyticsLocations: v
-  } = (0, E.ZP)(), O = (0, u.O)(), x = A.ZP.getName(h.getGuildId(), h.id, null == y ? true : y[0]), S = (0, m.s5)({
+  } = (0, E.ZP)(), x = (0, u.O)(), O = A.ZP.getName(h.getGuildId(), h.id, null == C ? true : C[0]), S = (0, m.s5)({
     userId: null == (t = T.default.getCurrentUser()) ? true : t.id,
     channelId: h.id,
     application: s
-  }) === m.Fw.CAN_JOIN, P = null != (n = h.getGuildId()) ? n : true, Z = i.useId(), R = s.id, k = i.useMemo(() => ({
+  }) === m.Fw.CAN_JOIN, P = null != (n = h.getGuildId()) ? n : true, Z = r.useId(), R = s.id, L = r.useMemo(() => ({
     channel: h,
     type: "channel"
   }), [h]), {
-    submitting: L
+    submitting: k
   } = (0, j.Z)({
     applicationId: R,
-    context: k,
+    context: L,
     launchingComponentId: Z
   });
-  return (0, r.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: M.splash,
-    children: [(0, r.jsx)(D, {
-      avatarSize: _,
+    children: [(0, i.jsx)(D, {
+      avatarSize: y,
       guildId: P,
       channelId: h.id,
-      users: y
-    }), (0, r.jsx)(c.Text, {
+      users: C
+    }), (0, i.jsx)(c.Text, {
       className: a()(M.subheader, {
         [M.small]: 0 === b,
         [M.medium]: 1 === b
       }),
       variant: "text-sm/normal",
-      children: y.length > 1 ? w.intl.formatToPlainString(w.t.cpe6CK, {
-        username: x,
-        count: y.length - 1
+      children: C.length > 1 ? w.intl.formatToPlainString(w.t.cpe6CK, {
+        username: O,
+        count: C.length - 1
       }) : w.intl.formatToPlainString(w.t["7Uuia2"], {
-        username: x
+        username: O
       })
-    }), (0, r.jsx)(c.Text, {
+    }), (0, i.jsx)(c.Text, {
       className: a()(M.header, {
         [M.small]: 0 === b,
         [M.medium]: 1 === b
       }),
       variant: "text-sm/normal",
       children: s.name
-    }), (0, r.jsx)("div", {
+    }), (0, i.jsx)("div", {
       className: M.buttons,
-      children: S ? (0, r.jsx)(c.Button, {
+      children: S ? (0, i.jsx)(c.Button, {
         text: w.intl.string(w.t["4i2vj+"]),
         onClick: function(e) {
-          e.stopPropagation(), null != C && (0, p.Z)({
-            applicationId: C.applicationId,
+          e.stopPropagation(), null != _ && (0, p.Z)({
+            applicationId: _.applicationId,
             activityChannelId: h.id,
-            locationObject: O.location,
+            locationObject: x.location,
             analyticsLocations: v,
             componentId: Z
           })
         },
-        loading: L,
+        loading: k,
         size: 2 === b ? "md" : "sm",
         variant: "overlay-primary"
       }) : null
@@ -138,7 +138,7 @@ function k(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     participant: t,
     width: n,
@@ -147,7 +147,7 @@ function L(e) {
     channel: s
   } = e, {
     analyticsLocations: c
-  } = (0, E.ZP)(x.Z.ACTIVITY_TILE), {
+  } = (0, E.ZP)(O.Z.ACTIVITY_TILE), {
     applicationId: u
   } = t, d = (0, g.Z)(), p = null != d && (0, h.p)(d.location) === s.id && d.applicationId === u, [f] = (0, S.Z)([u]), {
     url: m
@@ -155,32 +155,32 @@ function L(e) {
     applicationId: u,
     names: R,
     size: 1024
-  }), C = !l && p, j = !p, I = !p && !l, T = (0, o.e7)([Z.Z, P.Z], () => (0, O.Z)({
+  }), _ = !l && p, j = !p, I = !p && !l, T = (0, o.e7)([Z.Z, P.Z], () => (0, x.Z)({
     LayerStore: Z.Z,
     PopoutWindowStore: P.Z
   }));
-  return i.useEffect(() => {
-    if (C && null != d && !T) {
+  return r.useEffect(() => {
+    if (_ && null != d && !T) {
       let e = (0, v.Z)(d.location.id, d.applicationId);
-      (0, y.jy)(e)
+      (0, C.jy)(e)
     }
-  }, [C, d, T]), (0, r.jsx)(E.Gt, {
+  }, [_, d, T]), (0, i.jsx)(E.Gt, {
     value: c,
-    children: (0, r.jsxs)("div", {
+    children: (0, i.jsxs)("div", {
       className: M.container,
-      children: [C && null != d && (0, r.jsx)(_.Z, {
+      children: [_ && null != d && (0, i.jsx)(y.Z, {
         className: M.iframe,
         embedId: (0, v.Z)(d.location.id, u)
-      }), j && null != f && null != m && "" !== m ? (0, r.jsx)("img", {
+      }), j && null != f && null != m && "" !== m ? (0, i.jsx)("img", {
         className: M.splashImage,
         alt: f.name,
         src: m
-      }) : null, I && null != f && (0, r.jsx)(k, {
+      }) : null, I && null != f && (0, i.jsx)(L, {
         width: n,
         channel: s,
         participants: t.participants,
         application: f
-      }), a || j ? null : (0, r.jsx)("div", {
+      }), a || j ? null : (0, i.jsx)("div", {
         className: M.clickShield
       })]
     })

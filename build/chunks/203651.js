@@ -130,11 +130,11 @@ function I(e) {
   return o
 }
 
-function T(e) {
+function S(e) {
   return /[/+]json($|[^-\w])/i.test(e)
 }
 
-function S(e) {
+function T(e) {
   this.req = e, this.xhr = this.req.xhr, this.text = "HEAD" !== this.req.method && ("" === this.xhr.responseType || "text" === this.xhr.responseType) || true === this.xhr.responseType ? this.xhr.responseText : null, this.statusText = this.req.xhr.statusText;
   let t = this.xhr.status;
   1223 === t && (t = 204), this._setStatusProperties(t), this.headers = I(this.xhr.getAllResponseHeaders()), this.header = this.headers, this.header["content-type"] = this.xhr.getResponseHeader("content-type"), this._setHeaderProperties(this.header), null === this.text && e._responseType ? this.body = this.xhr.response : this.body = "HEAD" === this.req.method ? null : this._parseBody(this.text ? this.text : this.xhr.response)
@@ -146,7 +146,7 @@ function A(e, t) {
     let e, t = null,
       r = null;
     try {
-      r = new S(n)
+      r = new T(n)
     } catch (e) {
       return (t = Error("Parser is unable to parse the response")).parse = true, t.original = e, n.xhr ? (t.rawResponse = true === n.xhr.responseType ? n.xhr.responseText : n.xhr.response, t.status = n.xhr.status ? n.xhr.status : null, t.statusCode = t.status) : (t.rawResponse = null, t.status = null), n.callback(t)
     }
@@ -172,16 +172,16 @@ E.serializeObject = y, E.parseString = v, E.types = {
 }, E.parse = {
   "application/x-www-form-urlencoded": v,
   "application/json": JSON.parse
-}, _(S.prototype, Chunk509337.prototype), S.prototype._parseBody = function(e) {
+}, _(T.prototype, Chunk509337.prototype), T.prototype._parseBody = function(e) {
   let t = E.parse[this.type];
-  return this.req._parser ? this.req._parser(this, e) : (!t && T(this.type) && (t = E.parse["application/json"]), t && e && (e.length > 0 || e instanceof Object) ? t(e) : null)
-}, S.prototype.toError = function() {
+  return this.req._parser ? this.req._parser(this, e) : (!t && S(this.type) && (t = E.parse["application/json"]), t && e && (e.length > 0 || e instanceof Object) ? t(e) : null)
+}, T.prototype.toError = function() {
   let e = this.req,
     t = module.method,
     n = module.url,
     r = Error(`cannot ${exports} ${require} (${this.status})`);
   return r.status = this.status, r.method = exports, r.url = require, r
-}, E.Response = S, Chunk206339(A.prototype), _(A.prototype, Chunk615252.prototype), A.prototype.type = function(e) {
+}, E.Response = T, Chunk206339(A.prototype), _(A.prototype, Chunk615252.prototype), A.prototype.type = function(e) {
   return this.set("Content-Type", E.types[e] || e), this
 }, A.prototype.accept = function(e) {
   return this.set("Accept", E.types[e] || e), this
@@ -260,7 +260,7 @@ E.serializeObject = y, E.parseString = v, E.types = {
   if (this._withCredentials && (exports.withCredentials = true), !this._formData && "GET" !== this.method && "HEAD" !== this.method && "string" != typeof require && !this._isHost(require)) {
     let e = this._header["content-type"],
       t = this._serializer || E.serialize[module ? module.split(";")[0] : ""];
-    !exports && T(module) && (t = E.serialize["application/json"]), exports && (n = exports(require))
+    !exports && S(module) && (t = E.serialize["application/json"]), exports && (n = exports(require))
   }
   for (let e in this.header) null !== this.header[module] && p(this.header, module) && exports.setRequestHeader(module, this.header[module]);
   this._responseType && (exports.responseType = this._responseType), this.emit("request", this), exports.send(true === require ? null : require)

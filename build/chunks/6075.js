@@ -275,10 +275,10 @@ function V(e, {
     let n = v.Z.read(e, Z);
     t ? C.gif = C.gif ? (0, r.wB)({}, C.gif, n) : n : C = (0, r.wB)({}, C, n)
   }
-  let F = T.Z.get(C, t);
+  let F = S.Z.get(C, t);
   F && (t ? C.composite = F : C = (0, r.wB)({}, C, F));
   let ea = (a.Z.USE_JPEG || a.Z.USE_WEBP) && a.Z.USE_EXIF && a.Z.USE_THUMBNAIL && I.Z.get(e, C.Thumbnail, D);
-  if (ea ? (A = true, C.Thumbnail = ea) : delete C.Thumbnail, R && (t ? (C.file || (C.file = {}), C.file.FileType = R) : C.FileType = R, A = true), !A) throw new S.Z.MetadataMissingError;
+  if (ea ? (A = true, C.Thumbnail = ea) : delete C.Thumbnail, R && (t ? (C.file || (C.file = {}), C.file.FileType = R) : C.FileType = R, A = true), !A) throw new T.Z.MetadataMissingError;
   if (n) return Promise.all(N).then(() => C);
   return C;
 

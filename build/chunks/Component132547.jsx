@@ -84,7 +84,7 @@ let L = e => {
             onChange: e => F(e),
             threshold: .1,
             active: true,
-            children: (0, r.jsx)(S.Z, {
+            children: (0, r.jsx)(T.Z, {
               buttonVisibilityRef: U,
               className: D.heroHeading,
               enablePremiumBrandRefresh: X,
@@ -105,7 +105,7 @@ let L = e => {
               setIsAllPerksVisible: B,
               previousComponent: A.MQ.HOME
             })
-          }), (0, r.jsx)(T.Z, {
+          }), (0, r.jsx)(S.Z, {
             className: D.giftNitro,
             location: d.Z.PREMIUM_MARKETING_GIFT_SECTION,
             analyticsLocation: {

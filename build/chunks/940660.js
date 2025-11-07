@@ -41,13 +41,13 @@ var a, Chunk76466 = require("./76466.js"),
   Chunk205558 = require("./205558.js"),
   Chunk246974 = require("./246974.js"),
   Chunk997962 = require("./997962.js"),
-  T = Chunk740336("draft_tree_data_support"),
-  S = "&nbsp;",
+  S = Chunk740336("draft_tree_data_support"),
+  T = "&nbsp;",
   A = " ",
   C = RegExp("\r", "g"),
   N = RegExp("\n", "g"),
   R = RegExp("^\n", "g"),
-  P = RegExp(S, "g"),
+  P = RegExp(T, "g"),
   w = RegExp("&#13;?", "g"),
   D = RegExp("&#8203;?", "g"),
   x = ["bold", "bolder", "500", "600", "700", "800", "900"],
@@ -116,7 +116,7 @@ var a, Chunk76466 = require("./76466.js"),
       var t;
       return this.contentBlocks = [], this.currentDepth = 0, (t = this.blockConfigs).push.apply(t, this._toBlockConfigs([e], b())), this._trimCurrentText(), "" !== this.currentText && this.blockConfigs.push(this._makeBlockConfig()), this
     }, exports.getContentBlocks = function() {
-      return 0 === this.contentBlocks.length && (T ? this._toContentBlocks(this.blockConfigs) : this._toFlatContentBlocks(this.blockConfigs)), {
+      return 0 === this.contentBlocks.length && (S ? this._toContentBlocks(this.blockConfigs) : this._toFlatContentBlocks(this.blockConfigs)), {
         contentBlocks: this.contentBlocks,
         entityMap: this.entityMap
       }
@@ -151,7 +151,7 @@ var a, Chunk76466 = require("./76466.js"),
           this._trimCurrentText(), "" !== this.currentText && n.push(this._makeBlockConfig());
           var c = this.currentDepth,
             u = this.wrapper;
-          if (this.wrapper = "pre" === a ? "pre" : this.wrapper, "string" != typeof l && (l = this.disambiguate(a, this.wrapper) || l[0] || "unstyled"), !T && v(i) && ("unordered-list-item" === l || "ordered-list-item" === l)) {
+          if (this.wrapper = "pre" === a ? "pre" : this.wrapper, "string" != typeof l && (l = this.disambiguate(a, this.wrapper) || l[0] || "unstyled"), !S && v(i) && ("unordered-list-item" === l || "ordered-list-item" === l)) {
             var d = i;
             this.currentDepth = B(d, this.currentDepth)
           }

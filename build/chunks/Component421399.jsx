@@ -137,7 +137,7 @@ function B(e) {
     displayNameStyles: eo
   } = n, es = (0, l.e7)([f.Z], () => f.Z.roleStyle), el = "username" === es, ec = "dot" === es, eu = (0, I.X$)(), ed = (0, E.j)({
     displayNameStyles: eo
-  }), ef = (0, l.e7)([S.Z], () => null == n.guildId || null == n.colorRoleId ? null : S.Z.getRole(n.guildId, n.colorRoleId)), e_ = (0, v.yH)(null != q ? q : $, ef), ep = (0, N.Z)(a), eh = i.useContext(c.d), em = (null == eh ? true : eh.animate) || U, eg = e_ && (0, O.S2)(n), eE = el && eg, eb = (null == h ? true : h.isPrivate()) && null != eo;
+  }), ef = (0, l.e7)([T.Z], () => null == n.guildId || null == n.colorRoleId ? null : T.Z.getRole(n.guildId, n.colorRoleId)), e_ = (0, v.yH)(null != q ? q : $, ef), ep = (0, N.Z)(a), eh = i.useContext(c.d), em = (null == eh ? true : eh.animate) || U, eg = e_ && (0, O.S2)(n), eE = el && eg, eb = (null == h ? true : h.isPrivate()) && null != eo;
   (0, R.Z)({
     shouldSubscribe: eb || eE,
     subscribeToGroupId: X,
@@ -163,7 +163,7 @@ function B(e) {
         color: er
       } : true
     }
-  }, eI = (0, u.EJ)(et + en), eT = {
+  }, eI = (0, u.EJ)(et + en), eS = {
     className: o()(w.username, ed, {
       [eO]: eE,
       [w.usernameColorOnName]: "username" === es && null != er
@@ -179,13 +179,13 @@ function B(e) {
       shouldUnderlineOnHover: null != V
     }) : eI,
     "data-text": et + en
-  }, eS = i.useMemo(() => L && !B ? (0, r.jsx)(y.ZP, {
+  }, eT = i.useMemo(() => L && !B ? (0, r.jsx)(y.ZP, {
     primaryGuild: n.primaryGuild,
     userId: a.author.id,
     contextGuildId: $,
     className: w.clanTagChiplet,
     badgeSize: P.Gg.SIZE_12
-  }) : null, [L, n.primaryGuild, $, a.author.id, B]), eA = null != D ? D : a.author, eC = null != W && null != U ? (0, r.jsx)(T.Z, {
+  }) : null, [L, n.primaryGuild, $, a.author.id, B]), eA = null != D ? D : a.author, eC = null != W && null != U ? (0, r.jsx)(S.Z, {
     targetElementRef: Q,
     user: eA,
     renderPopout: W,
@@ -208,15 +208,15 @@ function B(e) {
         children: [(0, r.jsx)(d.P3F, M(x({
           tag: "span",
           innerRef: Q
-        }, n, eT), {
-          className: o()(eT.className, w.clickable, F)
-        })), eS]
+        }, n, eS), {
+          className: o()(eS.className, w.clickable, F)
+        })), eT]
       })
     }
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(d.P3F, M(x({}, eT), {
-      className: o()(eT.className, F)
-    })), eS]
+    children: [(0, r.jsx)(d.P3F, M(x({}, eS), {
+      className: o()(eS.className, F)
+    })), eT]
   }), eN = null != z ? z[0] : null, eR = null != z ? z[1] : null;
   return (0, r.jsxs)(p.Gt, {
     value: ee,

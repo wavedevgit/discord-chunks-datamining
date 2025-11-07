@@ -22,7 +22,7 @@ function _(e) {
     onSuccess: m,
     onClose: g,
     requirementsUpdated: E
-  } = e, [b, y] = i.useState(""), [O, v] = i.useState(""), [I, T] = i.useState(""), [S, A] = i.useState(null), [C, N] = i.useState(null), R = (0, o.e7)([c.Z], () => c.Z.getErrors()), P = (0, o.e7)([c.Z], () => c.Z.getFormState()), w = i.useRef(null);
+  } = e, [b, y] = i.useState(""), [O, v] = i.useState(""), [I, S] = i.useState(""), [T, A] = i.useState(null), [C, N] = i.useState(null), R = (0, o.e7)([c.Z], () => c.Z.getErrors()), P = (0, o.e7)([c.Z], () => c.Z.getFormState()), w = i.useRef(null);
   async function D(e) {
     e.preventDefault(), (0, l.b9)();
     let t = false;
@@ -72,7 +72,7 @@ function _(e) {
           required: true
         }), (0, r.jsx)(s.oil, {
           label: f.intl.string(f.t["8dM4FO"]),
-          error: null != (p = null != (_ = null == R || null == (n = R.new_password) ? true : n[0]) ? _ : S) ? p : true,
+          error: null != (p = null != (_ = null == R || null == (n = R.new_password) ? true : n[0]) ? _ : T) ? p : true,
           type: "password",
           value: O,
           onChange: v,
@@ -83,7 +83,7 @@ function _(e) {
           error: null != C ? C : true,
           type: "password",
           value: I,
-          onChange: T,
+          onChange: S,
           autoComplete: "new-password",
           required: true
         })]

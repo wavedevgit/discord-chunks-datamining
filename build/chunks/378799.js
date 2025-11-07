@@ -168,12 +168,12 @@ function v(e) {
 }
 let I = "keyboard-layout-map";
 
-function T() {
+function S() {
   var e;
   return null != (e = Chunk433517.K.get(I)) ? module : null
 }
 
-function S(e) {
+function T(e) {
   a.K.set(I, e)
 }
 class A {
@@ -240,7 +240,7 @@ class A {
     this._internalKeyLayoutMap = null, this.keyMap = O(d({}, this._defaultKeyMap)), this._initializeInternalLayoutMap(), this.keyCodeMap = this._buildKeyCodeMapFromKeyMap(), this.updateCaches(), this.save()
   }
   save() {
-    S(this.keyMap)
+    T(this.keyMap)
   }
   getLayoutMap() {
     return null == this._internalKeyLayoutMap ? y() : this._internalKeyLayoutMap
@@ -262,7 +262,7 @@ class A {
   }
   constructor(e = {}) {
     u(this, "keyCodeMap", true), u(this, "keyMap", true), u(this, "_internalKeyLayoutMap", null), u(this, "_defaultKeyMap", true), u(this, "_cachedKeyCodeMapEntries", []), u(this, "_cachedKeyMapEntries", []), u(this, "_cachedKeyLayoutMapEntries", []), u(this, "_cachedAllEvents", []), this._defaultKeyMap = e;
-    let t = T();
+    let t = S();
     null != t ? this.keyMap = t : this.keyMap = O(d({}, e)), this._initializeInternalLayoutMap(), this.keyCodeMap = this._buildKeyCodeMapFromKeyMap(), this.updateCaches(), this.save()
   }
 }

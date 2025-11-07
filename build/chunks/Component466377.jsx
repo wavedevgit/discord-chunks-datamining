@@ -63,13 +63,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -113,7 +113,7 @@ function P(e) {
       animation: A = "default",
       parentComponent: C
     } = e,
-    R = S(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]);
+    R = T(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]);
   let P = n === g.Dv.ENTERING || n === g.Dv.ENTERED;
   i.useContext(h.Z)({
     type: l.ImpressionTypes.PAGE,
@@ -139,7 +139,7 @@ function P(e) {
   }), [k, M]);
   return (0, r.jsx)(g.zM.Provider, {
     value: U,
-    children: (0, r.jsx)(_.V, T(v({
+    children: (0, r.jsx)(_.V, S(v({
       className: y.focusLock,
       role: f,
       returnRef: I,
@@ -200,8 +200,8 @@ function x(e) {
     children: n,
     scrollerRef: i,
     scrollbarType: a
-  } = e, s = S(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = D(a);
-  return (0, r.jsx)(l, T(v({
+  } = e, s = T(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = D(a);
+  return (0, r.jsx)(l, S(v({
     "data-migration-pending": true,
     className: o()(y.content, t),
     ref: i
@@ -257,7 +257,7 @@ function j(e) {
   var {
     className: t,
     scrollerRef: n
-  } = e, i = S(e, ["className", "scrollerRef"]);
+  } = e, i = T(e, ["className", "scrollerRef"]);
   return (0, r.jsx)(d.Tvr, v({
     className: t,
     ref: n

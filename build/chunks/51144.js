@@ -2,7 +2,7 @@
 /** chunk id: 51144, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  EO: () => T,
+  EO: () => S,
   Fc: () => I,
   Ft: () => C,
   W5: () => A,
@@ -130,14 +130,14 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   return v(e, {
     minDaysOld: 0,
     maxDaysOld: 7
   })
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   if (null == e) return s.intl.string(s.t.sKdZ6U);
   if (!h(e.username)) return d;
   let r = n;
@@ -149,7 +149,7 @@ function S(e, t, n) {
 function A(e, t) {
   let n = c({}, p, t),
     r = "auto" !== n.identifiable || i.Z.hidePersonalInformation;
-  return S(e, n, r)
+  return T(e, n, r)
 }
 
 function C(e) {
@@ -168,7 +168,7 @@ let R = {
   isNameConcealed: e => 2 === e.length && e.endsWith("…"),
   getUserTag: A,
   useUserTag: function(e, t) {
-    return S(e, c({}, p, t), (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation))
+    return T(e, c({}, p, t), (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation))
   },
   getUserIsStaff: N,
   getFormattedName: y,

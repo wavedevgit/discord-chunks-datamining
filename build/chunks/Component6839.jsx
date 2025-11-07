@@ -118,14 +118,14 @@ let er = e => {
       messageId: a
     } = e, [s, l] = i.useState(true), [c, u] = i.useState([]), d = i.useMemo(() => {
       if (null == c || c.length < 1) return;
-      let e = (0, S.Zn)(t, c[0], n, {
-        emojiSize: T.M.LARGE,
+      let e = (0, T.Zn)(t, c[0], n, {
+        emojiSize: S.M.LARGE,
         messageId: a
       });
-      return (0, r.jsx)(T.Z, {
+      return (0, r.jsx)(S.Z, {
         className: Y.__invalid_effect,
         effect: e,
-        emojiSize: T.M.LARGE,
+        emojiSize: S.M.LARGE,
         onComplete: () => l(false)
       })
     }, [c, t, n, a]);
@@ -449,16 +449,16 @@ function eu(e) {
     var e, n;
     let r = null != (n = D.Z.getMessage(t.getChannelId(), t.id)) ? n : null == (e = O.Z.getMessage(G.default.castMessageIdAsChannelId(t.id))) ? true : e.firstMessage;
     return null != r ? r.reactions : []
-  }, [t]), m = el(h), E = m[0], [b, T] = ec(n, null != E ? {
+  }, [t]), m = el(h), E = m[0], [b, S] = ec(n, null != E ? {
     emoji: E.emoji,
     reactionType: E.burst_count > 0 ? I.O.BURST : I.O.NORMAL
-  } : null, m), S = i.useMemo(() => {
+  } : null, m), T = i.useMemo(() => {
     var e;
     return null == b ? null : null != (e = h.find(e => (0, F.ir)(e.emoji, b.emoji))) ? e : null
   }, [h, b]), A = (0, u.e7)([g.Z], () => g.Z.saturation), N = (0, u.e7)([C.Z], () => (0, f.wj)(C.Z.theme));
   if (i.useEffect(() => {
-      (0 === h.length || null == b && null == S) && setImmediate(s)
-    }, [s, h.length, S, b]), null == b || null == S) return (0, r.jsx)(_.$jN, {});
+      (0 === h.length || null == b && null == T) && setImmediate(s)
+    }, [s, h.length, T, b]), null == b || null == T) return (0, r.jsx)(_.$jN, {});
   if (null == d) throw Error("MessageReactions.render: Message does not have a channelId");
   return (0, r.jsx)(v.Z.Provider, {
     value: null != p ? p : true,
@@ -476,7 +476,7 @@ function eu(e) {
           let n = e.burst_count > 0;
           return (0, r.jsx)(ei, {
             isSelected: ed(b, e, n ? I.O.BURST : I.O.NORMAL),
-            setSelected: T,
+            setSelected: S,
             reactionType: n ? I.O.BURST : I.O.NORMAL,
             emoji: e.emoji,
             count: n ? e.burst_count : e.count,
@@ -485,7 +485,7 @@ function eu(e) {
         })
       }), (0, r.jsx)(es, {
         message: t,
-        reaction: S,
+        reaction: T,
         guildId: p,
         channel: d,
         reactionType: b.reactionType,

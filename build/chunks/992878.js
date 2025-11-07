@@ -1,5 +1,6 @@
-/** Chunk was on 84349 **/
-/** chunk id: 992878, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 992878, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   rowIcon: "rowIcon_cb32c7",
   appDetailsRowContainer: "appDetailsRowContainer_cb32c7",

@@ -73,13 +73,13 @@ function v(e) {
 }
 let I = e => g.get(e);
 
-function T(e, {
+function S(e, {
   blocked: t
 } = {}) {
   let n = indexedDB.deleteDatabase(e);
   return t && (n.onblocked = e => t(e.oldVersion, e)), v(n).then(() => {})
 }
-let S = ["get", "getKey", "getAll", "getAllKeys", "count"],
+let T = ["get", "getKey", "getAll", "getAllKeys", "count"],
   A = ["put", "add", "delete", "clear"],
   C = new Map;
 
@@ -89,7 +89,7 @@ function N(e, t) {
   let n = t.replace(/FromIndex$/, ""),
     r = t !== n,
     i = A.includes(n);
-  if (!(n in (r ? IDBIndex : IDBObjectStore).prototype) || !i && !S.includes(n)) return;
+  if (!(n in (r ? IDBIndex : IDBObjectStore).prototype) || !i && !T.includes(n)) return;
   let a = async function(e, ...t) {
     let a = this.transaction(e, i ? "readwrite" : "readonly"),
       o = a.store;
@@ -411,7 +411,7 @@ let ep = (e, t) => {
       })
     }))
   };
-(async () => ec() && Promise.allSettled([T("replayStorage"), T("sprig.replay")]))();
+(async () => ec() && Promise.allSettled([S("replayStorage"), S("sprig.replay")]))();
 let ev = new class {
     openDB() {
       return function(e, t, {
@@ -452,7 +452,7 @@ let ev = new class {
     }
     async deleteDB() {
       try {
-        await T("sprigReplay")
+        await S("sprigReplay")
       } catch {}
     }
     async bulkAdd(e, t) {
@@ -554,7 +554,7 @@ let ev = new class {
     }
   },
   eI = [],
-  eT, eS, eA, eC, eN, eR, eP = [],
+  eS, eT, eA, eC, eN, eR, eP = [],
   ew = false,
   eD = 0,
   ex = false,
@@ -568,7 +568,7 @@ let ev = new class {
     triggerSnapshot: n,
     forceInit: r = false
   }) => {
-    ex && !r || (l.a.isStorageAvailable ? (eP = [], eM.splice(0), eI.splice(0), eD = 0, eN = n, eS = e, eT = {
+    ex && !r || (l.a.isStorageAvailable ? (eP = [], eM.splice(0), eI.splice(0), eD = 0, eN = n, eT = e, eS = {
       responseGroupUuid: t.responseGroupUuid,
       surveyId: t.surveyId,
       userAgent: t.userAgent,
@@ -594,7 +594,7 @@ let ev = new class {
     if (module) {
       Chunk555256.b.info("Read stored session state", module);
       let t = JSON.parse(module);
-      ew = exports.disabled, eT = exports.metadata, eP = exports.uploadUrls, eD = exports.currentIndex, eA = exports.expirationTimestamp, exports.pendingEventTimestamp && (Chunk555256.b.info(`Uploading with pending timestamp: ${exports.pendingEventTimestamp}`), eY(exports.pendingEventTimestamp))
+      ew = exports.disabled, eS = exports.metadata, eP = exports.uploadUrls, eD = exports.currentIndex, eA = exports.expirationTimestamp, exports.pendingEventTimestamp && (Chunk555256.b.info(`Uploading with pending timestamp: ${exports.pendingEventTimestamp}`), eY(exports.pendingEventTimestamp))
     } else eA = 1e3 * eC + Date.now()
   }, eY = async e => {
     let t = Date.now(),
@@ -629,13 +629,13 @@ let ev = new class {
     let {
       surveyId: e,
       responseGroupUuid: t
-    } = eT, n = {
+    } = eS, n = {
       responseGroupUuid: exports,
       surveyId: module,
       index: eD + 1
     };
     Chunk555256.b.info("Fetching always-on upload urls", require);
-    let r = await eW(() => (0, Chunk555256.s)(`${eS}/sdk/1/replayUrls`, {
+    let r = await eW(() => (0, Chunk555256.s)(`${eT}/sdk/1/replayUrls`, {
       method: "POST",
       body: JSON.stringify(require),
       headers: (0, Chunk555256.g)(window.UserLeap)
@@ -663,7 +663,7 @@ let ev = new class {
       data: {
         tag: "Sprig_Meta",
         payload: {
-          ...eT,
+          ...eS,
           index: a,
           visitorId: window.UserLeap.visitorId ?? "",
           timestamp: i,
@@ -686,7 +686,7 @@ window.addEventListener("beforeunload", async () => {
     eI.length && (e = eI[0].timestamp);
     let t = {
       disabled: ew,
-      metadata: eT,
+      metadata: eS,
       uploadUrls: eP,
       currentIndex: eD,
       pendingEventTimestamp: module,

@@ -55,11 +55,11 @@ function B(e) {
       o = x.Z.getCurrentlySelectedChannelId(),
       s = C.ZP.getCurrentSidebarChannelId(null == (n = t.messageReference) ? true : n.channel_id),
       l = o === a && s === (null == r ? true : r.id);
-    null == r || null == i || l || null == a || (S.Z.openModReportAsSidebar({
+    null == r || null == i || l || null == a || (T.Z.openModReportAsSidebar({
       channelId: r.id,
       baseChannelId: a,
       guildId: r.guild_id
-    }), (0, T.Kh)(a), M.default.track(k.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+    }), (0, S.Kh)(a), M.default.track(k.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
       moderator_report_id: t.channel_id,
       destination_channel_id: a,
       destination_message_id: t.id
@@ -180,7 +180,7 @@ function V(e) {
     y = (0, p.A)((null != (a = h.editedTimestamp) ? a : h.timestamp).valueOf()),
     {
       content: O,
-      hasSpoilerEmbeds: T
+      hasSpoilerEmbeds: S
     } = (0, v.Z)(h, {
       hideSimpleEmbedContent: E,
       isInteracting: false,
@@ -191,24 +191,24 @@ function V(e) {
       allowDevLinks: b,
       previewLinkTarget: true
     }),
-    S = (0, o.e7)([N.Z], () => N.Z.getChannel(s.channel_id));
-  return null == S ? null : (0, r.jsx)("div", {
+    T = (0, o.e7)([N.Z], () => N.Z.getChannel(s.channel_id));
+  return null == T ? null : (0, r.jsx)("div", {
     className: G.container,
     children: (0, r.jsxs)("div", {
       className: G.content,
       children: [(0, r.jsx)(F, {
         mergedMessageRecord: h,
         content: O,
-        channel: S,
+        channel: T,
         reportingUserId: null == l || null == (n = l.moderatorReport) ? true : n.reporting_user_id,
         reportedTimestamp: s.timestamp
       }), (0, I.Z)({
         channelMessageProps: {
           message: h,
-          channel: S,
+          channel: T,
           compact: false
         },
-        hasSpoilerEmbeds: T,
+        hasSpoilerEmbeds: S,
         isInteracting: false,
         isMessageSnapshot: true,
         renderThreadAccessory: false,

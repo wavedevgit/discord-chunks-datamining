@@ -67,12 +67,12 @@ var Chunk80556 = require("./80556.js"),
       })
     })))
   },
-  T = function(e) {
+  S = function(e) {
     return r({}, e, {
       key: e.key || p()
     })
   },
-  S = function(e, t, n) {
+  T = function(e, t, n) {
     var i = t.map(function(e) {
       return r({}, e, {
         parentRef: n
@@ -81,9 +81,9 @@ var Chunk80556 = require("./80556.js"),
     return e.concat(i.reverse())
   },
   A = function(e, t) {
-    return e.map(T).reduce(function(n, i, a) {
+    return e.map(S).reduce(function(n, i, a) {
       Array.isArray(i.children) || g(false);
-      var s = i.children.map(T),
+      var s = i.children.map(S),
         l = new o(r({}, v(i, t), {
           prevSibling: 0 === a ? null : e[a - 1].key,
           nextSibling: a === e.length - 1 ? null : e[a + 1].key,
@@ -92,7 +92,7 @@ var Chunk80556 = require("./80556.js"),
           }))
         }));
       n = n.set(l.getKey(), l);
-      for (var c = S([], s, l); c.length > 0;) {
+      for (var c = T([], s, l); c.length > 0;) {
         var u = c.pop(),
           d = u.parentRef,
           f = d.getChildKeys(),
@@ -102,7 +102,7 @@ var Chunk80556 = require("./80556.js"),
           p || g(false);
           break
         }
-        var h = u.children.map(T),
+        var h = u.children.map(S),
           m = new o(r({}, v(u, t), {
             parent: d.getKey(),
             children: b(h.map(function(e) {
@@ -111,7 +111,7 @@ var Chunk80556 = require("./80556.js"),
             prevSibling: 0 === _ ? null : f.get(_ - 1),
             nextSibling: _ === f.size - 1 ? null : f.get(_ + 1)
           }));
-        n = n.set(m.getKey(), m), c = S(c, h, m)
+        n = n.set(m.getKey(), m), c = T(c, h, m)
       }
       return n
     }, O())

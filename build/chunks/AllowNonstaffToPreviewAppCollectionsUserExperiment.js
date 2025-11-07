@@ -1,9 +1,10 @@
-/** Chunk was on 35755 **/
-/** chunk id: 568100, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 568100, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => i
+  Z: () => r
 });
-let i = (0, require("./818083.js").B)({
+let r = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-01_allow_nonstaff_to_preview_app_collections",
   label: "Allow Non-Staff to Preview App Collections",

@@ -97,7 +97,7 @@ function I(e, t, n, r) {
   }
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   return {
     top: e.top - n,
     left: e.left - t,
@@ -108,7 +108,7 @@ function T(e, t, n) {
   }
 }
 
-function S(e) {
+function T(e) {
   switch (e) {
     case "top":
       return "bottom";
@@ -275,7 +275,7 @@ class R extends(r = Chunk647438.Component) {
   calculatePositionStyle(e, t, n, r) {
     let {
       spacing: i = 0
-    } = this.props, a = C(this.props), o = n.getBoundingClientRect(), s = T(a, o.left, o.top);
+    } = this.props, a = C(this.props), o = n.getBoundingClientRect(), s = S(a, o.left, o.top);
     switch (e) {
       case "top":
         return this.getHorizontalAlignmentStyle(s, t, n, {
@@ -334,7 +334,7 @@ class R extends(r = Chunk647438.Component) {
       d = null,
       f = 0;
     if (exports && s < 0) {
-      let t = S(module),
+      let t = T(module),
         i = this.calculatePositionStyle(exports, require, r);
       d = Chunk951288.style, f = Chunk951288.nudge;
       let a = I(exports, Chunk585483, require, r);
@@ -346,7 +346,7 @@ class R extends(r = Chunk647438.Component) {
         let i, a = Chunk120356.position;
         if ((i = "top" === Chunk647438 || "bottom" === Chunk647438 ? "overlap_vertical" : "left" === Chunk647438 || "right" === Chunk647438 ? "overlap_horizontal" : Chunk647438) !== module && Chunk951288 !== exports) {
           let e = this.calculatePositionStyle(Chunk951288, require, r, Chunk647438),
-            t = I(S(Chunk647438), module.style, require, r);
+            t = I(T(Chunk647438), module.style, require, r);
           exports > Chunk512722 && (o = m({
             position: Chunk647438
           }, module), l = exports)

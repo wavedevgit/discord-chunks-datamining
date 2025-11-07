@@ -1,5 +1,6 @@
-/** Chunk was on 84349 **/
-/** chunk id: 698342, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 698342, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   contentContainer: "contentContainer_c94584",
   commandListHeader: "commandListHeader_c94584",

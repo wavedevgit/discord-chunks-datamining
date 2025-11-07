@@ -103,10 +103,10 @@ function M(e) {
     step: n,
     onClose: () => t(false),
     giftingOrigin: B
-  }) : (0, r.jsx)(S.Z, {
+  }) : (0, r.jsx)(T.Z, {
     step: n,
     onClose: () => t(false)
-  }), er = i.useMemo(() => [y.WA, ...k ? [T.Dd] : [], v.n, ...y.yp, y.wo, {
+  }), er = i.useMemo(() => [y.WA, ...k ? [S.Dd] : [], v.n, ...y.yp, y.wo, {
     key: g.h8.CONFIRM,
     renderStep: e => (0, r.jsx)(I.x, L(D({}, e), {
       confettiCanvas: Y,

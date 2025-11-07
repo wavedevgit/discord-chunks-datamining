@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk187951 = require("./187951.js"),
   Chunk223223 = require("./223223.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -60,7 +60,7 @@ let A = e => {
       avatarDecorationOverride: t,
       size: (0, d.y9)(u.EFr.SIZE_40)
     });
-    return null == t ? n : (0, r.jsx)("img", S({
+    return null == t ? n : (0, r.jsx)("img", T({
       src: a,
       alt: t.label,
       className: v.avatarDecoration

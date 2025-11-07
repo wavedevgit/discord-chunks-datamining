@@ -32,7 +32,7 @@ function h(e) {
   }), [u]);
   (0, r.b)(() => {
     let e = h || U.root;
-    if (U.getTreeNode(e.scopeRef) && p && !T(p, e.scopeRef)) {
+    if (U.getTreeNode(e.scopeRef) && p && !S(p, e.scopeRef)) {
       let t = U.getTreeNode(p);
       t && (e = t)
     }
@@ -59,7 +59,7 @@ function h(e) {
   }, [u]), (0, r.b)(() => () => {
     var e, t, n;
     let r = null != (n = null == (t = U.getTreeNode(u)) || null == (e = t.parent) ? true : e.scopeRef) ? n : null;
-    (u === p || T(u, p)) && (!r || U.getTreeNode(r)) && (p = r), U.removeTreeNode(u)
+    (u === p || S(u, p)) && (!r || U.getTreeNode(r)) && (p = r), U.removeTreeNode(u)
   }, [u]);
   let E = (0, d.useMemo)(() => m(u), []),
     b = (0, d.useMemo)(() => ({
@@ -98,7 +98,7 @@ function m(e) {
         }, r);
       f.currentNode = v(u, r) ? u : d;
       let _ = f.nextNode();
-      return !_ && l && (f.currentNode = d, _ = f.nextNode()), _ && S(_, true), _
+      return !_ && l && (f.currentNode = d, _ = f.nextNode()), _ && T(_, true), _
     },
     focusPrevious(t = {}) {
       var n;
@@ -117,7 +117,7 @@ function m(e) {
         }, r);
       f.currentNode = v(u, r) ? u : d;
       let _ = f.previousNode();
-      return !_ && l && (f.currentNode = d, _ = f.previousNode()), _ && S(_, true), _
+      return !_ && l && (f.currentNode = d, _ = f.previousNode()), _ && T(_, true), _
     },
     focusFirst(t = {}) {
       let n = e.current,
@@ -131,7 +131,7 @@ function m(e) {
         }, n);
       a.currentNode = n[0].previousElementSibling;
       let o = a.nextNode();
-      return o && S(o, true), o
+      return o && T(o, true), o
     },
     focusLast(t = {}) {
       let n = e.current,
@@ -145,7 +145,7 @@ function m(e) {
         }, n);
       a.currentNode = n[n.length - 1].nextElementSibling;
       let o = a.previousNode();
-      return o && S(o, true), o
+      return o && T(o, true), o
     }
   }
 }
@@ -195,10 +195,10 @@ function y(e, t) {
         if (!n) return;
         a.currentNode = n;
         let o = t.shiftKey ? a.previousNode() : a.nextNode();
-        o || (a.currentNode = t.shiftKey ? r[r.length - 1].nextElementSibling : r[0].previousElementSibling, o = t.shiftKey ? a.previousNode() : a.nextNode()), t.preventDefault(), o && S(o, true)
+        o || (a.currentNode = t.shiftKey ? r[r.length - 1].nextElementSibling : r[0].previousElementSibling, o = t.shiftKey ? a.previousNode() : a.nextNode()), t.preventDefault(), o && T(o, true)
       },
       d = t => {
-        (!p || T(p, e)) && v((0, i.NI)(t), e.current) ? (p = e, n.current = (0, i.NI)(t)) : E(e) && !I((0, i.NI)(t), e) ? n.current ? n.current.focus() : p && p.current && C(p.current) : E(e) && (n.current = (0, i.NI)(t))
+        (!p || S(p, e)) && v((0, i.NI)(t), e.current) ? (p = e, n.current = (0, i.NI)(t)) : E(e) && !I((0, i.NI)(t), e) ? n.current ? n.current.focus() : p && p.current && C(p.current) : E(e) && (n.current = (0, i.NI)(t))
       },
       f = t => {
         s.current && cancelAnimationFrame(s.current), s.current = requestAnimationFrame(() => {
@@ -241,7 +241,7 @@ function I(e, t = null) {
   returnfalse
 }
 
-function T(e, t) {
+function S(e, t) {
   var n;
   let r = null == (n = U.getTreeNode(t)) ? true : n.parent;
   for (; r;) {
@@ -251,7 +251,7 @@ function T(e, t) {
   returnfalse
 }
 
-function S(e, t = false) {
+function T(e, t = false) {
   if (null == e || t) {
     if (null != e) try {
       e.focus()
@@ -275,7 +275,7 @@ function A(e, t = true) {
 }
 
 function C(e, t = true) {
-  S(A(e, t))
+  T(A(e, t))
 }
 
 function N(e, t) {
@@ -321,7 +321,7 @@ function w(e, t, n) {
       o = (0, a.r3)(r ? r[0] : true);
     if (!t || n) return;
     let s = () => {
-      (!p || T(p, e)) && v((0, i.vY)(o), e.current) && (p = e)
+      (!p || S(p, e)) && v((0, i.vY)(o), e.current) && (p = e)
     };
     return o.addEventListener("focusin", s, false), null == r || r.forEach(e => e.addEventListener("focusin", s, false)), () => {
       o.removeEventListener("focusin", s, false), null == r || r.forEach(e => e.removeEventListener("focusin", s, false))
@@ -344,7 +344,7 @@ function w(e, t, n) {
       if (a && a.isConnected && a !== r.body || (a = true, i.nodeToRestore = true), (!s || !I(s, e)) && a) {
         o.currentNode = a;
         do s = t.shiftKey ? o.previousNode() : o.nextNode(); while (I(s, e));
-        t.preventDefault(), t.stopPropagation(), s ? S(s, true) : O(a) ? S(a, true) : n.blur()
+        t.preventDefault(), t.stopPropagation(), s ? T(s, true) : O(a) ? T(a, true) : n.blur()
       }
     };
     return n || r.addEventListener("keydown", i, true), () => {
@@ -384,7 +384,7 @@ function D(e) {
   e.dispatchEvent(new CustomEvent(_, {
     bubbles: true,
     cancelable: true
-  })) && S(e)
+  })) && T(e)
 }
 
 function x(e, t, n) {
@@ -416,7 +416,7 @@ function L(e, t = {}) {
       });
       r.contains(u) && (d.currentNode = u);
       let f = d.nextNode();
-      return !f && l && (d.currentNode = r, f = d.nextNode()), f && S(f, true), f
+      return !f && l && (d.currentNode = r, f = d.nextNode()), f && T(f, true), f
     },
     focusPrevious(n = t) {
       let r = e.current;
@@ -433,7 +433,7 @@ function L(e, t = {}) {
       if (r.contains(u)) d.currentNode = u;
       else {
         let e = M(d);
-        return e && S(e, true), null != e ? e : null
+        return e && T(e, true), null != e ? e : null
       }
       let f = d.previousNode();
       if (!f && l) {
@@ -442,7 +442,7 @@ function L(e, t = {}) {
         if (!e) return null;
         f = e
       }
-      return f && S(f, true), null != f ? f : null
+      return f && T(f, true), null != f ? f : null
     },
     focusFirst(n = t) {
       let r = e.current;
@@ -454,7 +454,7 @@ function L(e, t = {}) {
         tabbable: i,
         accept: a
       }).nextNode();
-      return o && S(o, true), o
+      return o && T(o, true), o
     },
     focusLast(n = t) {
       let r = e.current;
@@ -466,7 +466,7 @@ function L(e, t = {}) {
         tabbable: i,
         accept: a
       }));
-      return o && S(o, true), null != o ? o : null
+      return o && T(o, true), null != o ? o : null
     }
   }
 }

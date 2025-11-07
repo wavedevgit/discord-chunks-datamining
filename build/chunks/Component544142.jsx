@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 544142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -23,31 +23,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk149623 = require("./149623.js");
 
-function O(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
 }
 
-function x(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -58,11 +58,11 @@ function x(e, t) {
 function E(e) {
   var t, l, p;
   let {
-    userId: _,
-    channel: y
-  } = e, C = i.useRef(null), {
+    userId: y,
+    channel: C
+  } = e, _ = r.useRef(null), {
     analyticsLocations: E
-  } = (0, d.ZP)(u.Z.USERNAME), j = (0, o.e7)([g.default], () => g.default.getUser(_)), S = (0, o.e7)([m.ZP], () => null != _ ? m.ZP.getMember(y.guild_id, _) : null), P = (0, f.X7)(y.guild_id, null != _ ? _ : true, null != (t = null == S ? true : S.colorStrings) ? t : null);
+  } = (0, d.ZP)(u.Z.USERNAME), j = (0, o.e7)([g.default], () => g.default.getUser(y)), S = (0, o.e7)([m.ZP], () => null != y ? m.ZP.getMember(C.guild_id, y) : null), P = (0, f.X7)(C.guild_id, null != y ? y : true, null != (t = null == S ? true : S.colorStrings) ? t : null);
 
   function I(e) {
     if (null == j) return null;
@@ -70,33 +70,33 @@ function E(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("70675"), n.e("85994")]).then(n.bind(n, 654663));
-      return t => (0, r.jsx)(e, x(O({}, t), {
+      return t => (0, i.jsx)(e, O(x({}, t), {
         user: j,
-        guildId: y.guild_id,
-        channel: y
+        guildId: C.guild_id,
+        channel: C
       }))
     })
   }
   let Z = null != (p = null != (l = null == S ? true : S.nick) ? l : b.ZP.getName(j)) ? p : "???",
     T = null == S ? true : S.colorString;
-  return null == j ? (0, r.jsx)("span", {
+  return null == j ? (0, i.jsx)("span", {
     className: a()(v.threadCreatorName, v.unknownCreatorName),
     children: Z
-  }) : (0, r.jsx)(d.Gt, {
+  }) : (0, i.jsx)(d.Gt, {
     value: E,
-    children: (0, r.jsx)(h.Z, {
-      targetElementRef: C,
+    children: (0, i.jsx)(h.Z, {
+      targetElementRef: _,
       user: j,
-      guildId: y.guild_id,
-      channelId: y.id,
+      guildId: C.guild_id,
+      channelId: C.id,
       roleId: null == S ? true : S.colorRoleId,
       clickTrap: true,
-      children: e => (0, r.jsx)(s.P3F, x(O({}, e), {
-        innerRef: C,
+      children: e => (0, i.jsx)(s.P3F, O(x({}, e), {
+        innerRef: _,
         tag: "span",
         className: v.threadCreatorName,
         onContextMenu: I,
-        children: (0, r.jsx)(s.PUh, {
+        children: (0, i.jsx)(s.PUh, {
           name: Z,
           colorString: null != T ? T : null,
           colorStrings: P
@@ -112,27 +112,27 @@ function j(e) {
   } = e, {
     threadMetadata: n
   } = t;
-  return null == n ? (0, r.jsx)("div", {
+  return null == n ? (0, i.jsx)("div", {
     style: {
       marginTop: false
     }
-  }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.Text, {
+  }) : (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: (0, r.jsx)("div", {
+      children: (0, i.jsx)("div", {
         className: v.subtitle,
-        children: C.intl.format(C.t.imPXd5, {
-          usernameHook: (e, n) => (0, r.jsx)(E, {
+        children: _.intl.format(_.t.imPXd5, {
+          usernameHook: (e, n) => (0, i.jsx)(E, {
             userId: t.ownerId,
             channel: t
           }, n)
         })
       })
-    }), t.type === y.d4z.PRIVATE_THREAD ? (0, r.jsx)(s.Text, {
+    }), t.type === C.d4z.PRIVATE_THREAD ? (0, i.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: C.intl.string(C.t["1awbZG"])
+      children: _.intl.string(_.t["1awbZG"])
     }) : null]
   })
 }
@@ -141,17 +141,17 @@ function S(e) {
   var t;
   let {
     channel: n
-  } = e, i = null != (t = (0, p.KS)(n)) ? t : s.or_;
-  return (0, r.jsxs)(_.ZP, {
+  } = e, r = null != (t = (0, p.KS)(n)) ? t : s.or_;
+  return (0, i.jsxs)(y.ZP, {
     channelId: n.id,
-    children: [(0, r.jsx)("div", {
+    children: [(0, i.jsx)("div", {
       className: v.iconWrapper,
-      children: (0, r.jsx)(i, {
+      children: (0, i.jsx)(r, {
         className: v.icon
       })
-    }), (0, r.jsx)(_.Ot, {
+    }), (0, i.jsx)(y.Ot, {
       children: n.name
-    }), (0, r.jsx)(j, {
+    }), (0, i.jsx)(j, {
       channel: n
     })]
   })

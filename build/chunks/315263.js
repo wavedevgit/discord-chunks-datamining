@@ -166,7 +166,7 @@ function Z(e) {
       n(t, r)
     }), true
   };
-  if (null != R && R.type === m.g.QUESTS_EMBED && (0, T.c)({
+  if (null != R && R.type === m.g.QUESTS_EMBED && (0, S.c)({
       location: k.dr.EMBED_MOBILE
     })) return e => {
     var t, r, a;
@@ -262,7 +262,7 @@ function Z(e) {
       urlOrigin: "link_click"
     }), true)
   }
-  return H && (null == Z ? true : Z.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, S.navigateToQuestHome)({
+  return H && (null == Z ? true : Z.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, T.navigateToQuestHome)({
     fromContent: i.j.QUEST_BADGE
   }), true) : H && (null == Z ? true : Z.startsWith("/quest-home")) ? e => (null == e || e.preventDefault(), (0, A.uL)(j.Z5c.QUEST_HOME_V2 + (null != F ? F : "")), true) : H && (null == Z ? true : Z.startsWith("/quest-preview")) ? e => {
     if (null == e || e.preventDefault(), (0, I.T)({

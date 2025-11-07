@@ -143,7 +143,7 @@ function F(e) {
     message: n,
     onRedeem: a,
     buttonUseState: s
-  } = e, l = null != n, c = l && (0, S.Uw)(n), d = (0, O.Qj)(t.id, l), {
+  } = e, l = null != n, c = l && (0, T.Uw)(n), d = (0, O.Qj)(t.id, l), {
     price: p,
     fetchingPrice: h,
     error: g
@@ -151,12 +151,12 @@ function F(e) {
     entitlement: E,
     fetchedEntitlement: b,
     error: v
-  } = (0, C.t6)(I.D1), T = g || v, {
+  } = (0, C.t6)(I.D1), S = g || v, {
     analyticsLocations: A
   } = (0, _.ZP)([f.Z.CONFETTI_POTION_MODAL]), R = null != E && !E.consumed, P = h || !b;
   (0, i.useEffect)(() => () => {
-    T && (0, y.SN)(I.D1)
-  }, [T, l]);
+    S && (0, y.SN)(I.D1)
+  }, [S, l]);
   let w = (0, i.useCallback)(() => {
       null != d && ((0, u.pTH)(), a(d))
     }, [d, a]),
@@ -207,14 +207,14 @@ let V = e => {
       if (null == c) return;
       let t = null == (e = d.current) ? true : e.getBoundingClientRect();
       if (null == t) return;
-      let n = (0, S.NV)(c),
+      let n = (0, T.NV)(c),
         {
           x: r,
           y: i,
           width: a,
           height: o
         } = t;
-      (0, T.I)(n, {
+      (0, S.I)(n, {
         x: r,
         y: i,
         w: a,

@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 95764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -22,30 +22,30 @@ function b(e) {
   let {
     channelId: t,
     onClick: n
-  } = e, b = (0, o.bp)(), _ = (0, m.qY)(t), y = (0, l.e7)([d.Z], () => d.Z.getChannel(t), [t]), {
-    canManageGuildEvent: C
-  } = (0, s.XJ)(y), v = C(_), O = i.useRef(null);
-  if (null == _) return null;
-  let x = () => {
-      if (null != y && (0, h.Z)(y)) return void(0, p.lC)(y, b);
+  } = e, b = (0, o.bp)(), y = (0, m.qY)(t), C = (0, l.e7)([d.Z], () => d.Z.getChannel(t), [t]), {
+    canManageGuildEvent: _
+  } = (0, s.XJ)(C), v = _(y), x = r.useRef(null);
+  if (null == y) return null;
+  let O = () => {
+      if (null != C && (0, h.Z)(C)) return void(0, p.lC)(C, b);
       n()
     },
     E = () => {
-      f.Z.endEvent(_.id, _.guild_id)
+      f.Z.endEvent(y.id, y.guild_id)
     };
-  return v ? (0, r.jsx)(a.yRy, {
-    targetElementRef: O,
+  return v ? (0, i.jsx)(a.yRy, {
+    targetElementRef: x,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(c.Z, {
-        children: (0, r.jsx)(a.v2r, {
+      return (0, i.jsx)(c.Z, {
+        children: (0, i.jsx)(a.v2r, {
           navId: "exit-options",
           onSelect: () => {},
           "aria-label": g.intl.string(g.t["K6/mk3"]),
           onClose: t,
-          children: (0, r.jsx)(a.sNh, {
+          children: (0, i.jsx)(a.sNh, {
             id: "end-voice-event",
             color: "danger",
             action: E,
@@ -62,14 +62,14 @@ function b(e) {
       let {
         onClick: t
       } = e;
-      return (0, r.jsx)(u.Z, {
-        buttonRef: O,
+      return (0, i.jsx)(u.Z, {
+        buttonRef: x,
         label: g.intl.string(g.t["6vrfgt"]),
-        onClick: x,
+        onClick: O,
         onPopoutClick: t
       })
     }
-  }) : (0, r.jsx)(u.Z, {
+  }) : (0, i.jsx)(u.Z, {
     label: g.intl.string(g.t["6vrfgt"]),
     onClick: n
   })

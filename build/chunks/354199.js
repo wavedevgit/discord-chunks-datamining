@@ -21,8 +21,8 @@ var Chunk754675 = require("./754675.js"),
   O = "[object Int16Array]",
   v = "[object Int32Array]",
   I = "[object Uint8Array]",
-  T = "[object Uint8ClampedArray]",
-  S = "[object Uint16Array]",
+  S = "[object Uint8ClampedArray]",
+  T = "[object Uint16Array]",
   A = "[object Uint32Array]";
 module.exports = function(e, t, n) {
   var C = e.constructor;
@@ -40,8 +40,8 @@ module.exports = function(e, t, n) {
     case O:
     case v:
     case I:
-    case T:
     case S:
+    case T:
     case A:
       return s(e, n);
     case u:

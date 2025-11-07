@@ -86,7 +86,7 @@ function I(e) {
   a.add(r), y.set(i, a), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
 }
 
-function T(e) {
+function S(e) {
   var t;
   let n = v(e),
     r = h.get(n);
@@ -96,7 +96,7 @@ function T(e) {
   null == (t = y.get(r.saveData.channelId)) || t.delete(i), b.delete(i), E.delete(i), g = Date.now()
 }
 
-function S() {
+function T() {
   m = true
 }
 
@@ -122,7 +122,7 @@ function R(e) {
   let {
     savedMessageData: t
   } = e;
-  return T(t)
+  return S(t)
 }
 
 function P(e) {
@@ -272,7 +272,7 @@ class B extends(r = Chunk442837.ZP.Store) {
 }
 u(B, "displayName", "SavedMessagesStore");
 let Z = new B(Chunk570140.Z, {
-  POST_CONNECTION_OPEN: S,
+  POST_CONNECTION_OPEN: T,
   LOGOUT: A,
   SAVED_MESSAGES_UPDATE: C,
   SAVED_MESSAGE_CREATE: N,

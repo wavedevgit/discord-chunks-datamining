@@ -21,8 +21,8 @@ var Chunk687249 = require("./687249.js"),
   Chunk661233 = require("./661233.js"),
   Chunk357361 = require("./357361.js"),
   Chunk438330 = require("./438330.js"),
-  T = 1,
-  S = 2,
+  S = 1,
+  T = 2,
   A = 4,
   C = "[object Arguments]",
   N = "[object Array]",
@@ -53,8 +53,8 @@ var Chunk687249 = require("./687249.js"),
   $ = {};
 
 function ee(e, t, n, N, R, P) {
-  var w, L = t & T,
-    M = t & S,
+  var w, L = t & S,
+    M = t & T,
     k = t & A;
   if (n && (w = R ? n(e, N, R, P) : n(e)), true !== w) return w;
   if (!O(e)) return e;

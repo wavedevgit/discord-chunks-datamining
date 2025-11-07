@@ -1,5 +1,6 @@
-/** Chunk was on 35755 **/
-/** chunk id: 880308, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 880308, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   g: () => c
 });

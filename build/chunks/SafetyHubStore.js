@@ -34,8 +34,8 @@ let d = {},
   O = false,
   v = null,
   I = Chunk800530.bK.DIDNT_VIOLATE_POLICY,
-  T = "",
   S = "",
+  T = "",
   A = "",
   C = 0,
   N = null,
@@ -56,7 +56,7 @@ function x(e) {
     username: o,
     appealEligibility: s
   } = e;
-  d = a()(t, "id"), _ = n, E = r, b = i, p = false, h = true, m = null, S = o, y = s
+  d = a()(t, "id"), _ = n, E = r, b = i, p = false, h = true, m = null, T = o, y = s
 }
 
 function L(e) {
@@ -78,7 +78,7 @@ function j(e) {
     username: i,
     isAppealEligible: a
   } = e;
-  d[t.id] = t, f[t.id] = l.OY.SUCCESS, _ = n, p = false, m = null, E = r, b = a, h = true, S = i
+  d[t.id] = t, f[t.id] = l.OY.SUCCESS, _ = n, p = false, m = null, E = r, b = a, h = true, T = i
 }
 
 function k(e) {
@@ -97,7 +97,7 @@ function U(e) {
 }
 
 function G() {
-  g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, T = ""
+  g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, S = ""
 }
 
 function B(e) {
@@ -111,7 +111,7 @@ function Z(e) {
   let {
     userInput: t
   } = e;
-  T = t
+  S = t
 }
 
 function F(e) {
@@ -193,7 +193,7 @@ function $(e) {
 function ee() {
   p = false, d = {}, _ = {
     state: Chunk531441.Sn.ALL_GOOD
-  }, g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, T = "", y = []
+  }, g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, S = "", y = []
 }
 class et extends(r = Chunk442837.ZP.Store) {
   isFetching() {
@@ -233,7 +233,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return I
   }
   getFreeTextAppealReason() {
-    return T
+    return S
   }
   getIsSubmitting() {
     return O
@@ -242,7 +242,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return v
   }
   getUsername() {
-    return S
+    return T
   }
   getAgeVerificationWebviewUrl() {
     return A

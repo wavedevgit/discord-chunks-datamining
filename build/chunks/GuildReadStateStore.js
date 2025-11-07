@@ -27,7 +27,7 @@ var Chunk398758 = require("./398758.js"),
   Chunk176505 = require("./176505.js"),
   Chunk490897 = require("./490897.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -114,7 +114,7 @@ function U(e, t) {
 
 function G(e, t) {
   let n = P(e);
-  return n.mentionCounts = S({}, t.mentionCounts), n.unreadByType = S({}, t.unreadByType), n
+  return n.mentionCounts = T({}, t.mentionCounts), n.unreadByType = T({}, t.unreadByType), n
 }
 
 function B(e) {
@@ -573,5 +573,5 @@ class ey extends Chunk750041.Z {
     })
   }
 }
-T(ey, "displayName", "GuildReadStateStore"), T(ey, "LATEST_SNAPSHOT_VERSION", 1);
+S(ey, "displayName", "GuildReadStateStore"), S(ey, "LATEST_SNAPSHOT_VERSION", 1);
 let eO = new ey

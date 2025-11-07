@@ -152,7 +152,7 @@ function U(e) {
     questContent: a,
     questContentPosition: o,
     sourceQuestContent: l
-  } = e, c = n >= g.OH.COMPLETED, f = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), _ = (0, s.e7)([E.Z], () => E.Z.isEnrolling(t.id)), p = (0, m.q8)(t), h = (0, m.Vl)(t), b = (0, S.Ks)({
+  } = e, c = n >= g.OH.COMPLETED, f = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), _ = (0, s.e7)([E.Z], () => E.Z.isEnrolling(t.id)), p = (0, m.q8)(t), h = (0, m.Vl)(t), b = (0, T.Ks)({
     progressState: n,
     quest: t,
     questContent: a,
@@ -224,7 +224,7 @@ let B = e => {
     isQuestExpired: _,
     isExpanded: p,
     isAnimating: y,
-    contentPosition: S,
+    contentPosition: T,
     sourceQuestContent: A
   } = e, N = (0, g._Q)(n), w = (0, g.B6)(null == (t = n.userStatus) ? true : t.completedAt, {
     year: "numeric",
@@ -237,13 +237,13 @@ let B = e => {
     questContent: b.jn.QUESTS_EMBED,
     sourceQuestContent: A
   }), Y = (0, s.e7)([E.Z], () => null != E.Z.questEnrollmentBlockedUntil, []), W = () => {
-    (0, T.navigateToQuestHome)({
+    (0, S.navigateToQuestHome)({
       fromContent: a,
       questId: n.id
     }), Z({
       questId: n.id,
       questContent: a,
-      questContentPosition: S,
+      questContentPosition: T,
       questContentCTA: h.jZ.LEARN_MORE,
       sourceQuestContent: A
     })
@@ -280,7 +280,7 @@ let B = e => {
             location: C.dr.QUESTS_CARD,
             quest: n,
             questContent: a,
-            questContentPosition: S,
+            questContentPosition: T,
             sourceQuestContent: A
           })]
         })
@@ -314,7 +314,7 @@ let B = e => {
           text: R.intl.string(R.t.V293qn)
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
-          onClick: () => (0, T.openQuestMinorEnrollmentBlockModal)(n, a, A),
+          onClick: () => (0, S.openQuestMinorEnrollmentBlockModal)(n, a, A),
           text: R.intl.string(R.t.vY9GgG)
         })]
       }) : (0, r.jsxs)(u.ButtonGroup, {

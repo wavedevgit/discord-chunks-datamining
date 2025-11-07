@@ -1,9 +1,9 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 890977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => y
+  b: () => C
 }), require("./49124.js");
-var r, i, Chunk951288 = require("./951288.js"),
+var i, r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
@@ -19,15 +19,15 @@ function g(e) {
   let t = (0, d.e7)([p.Z], () => p.Z.useReducedMotion),
     n = a.useRef(null);
   return a.useEffect(() => {
-    let r;
-    return null != n.current && (r = u().loadAnimation({
+    let i;
+    return null != n.current && (i = u().loadAnimation({
       container: n.current,
       renderer: "svg",
       loop: true,
       autoplay: !t,
       animationData: JSON.parse(JSON.stringify(e))
     })), () => {
-      null == r || r.destroy()
+      null == i || i.destroy()
     }
   }, [n, t, e]), n
 }
@@ -37,26 +37,26 @@ function b(e) {
     className: t
   } = e;
   return (0, l.jsx)("div", {
-    ref: g(r || (r = n.t(f, 2))),
+    ref: g(i || (i = n.t(f, 2))),
     className: s()(m.glow, t)
   })
 }
 
-function _(e) {
+function y(e) {
   let {
     className: t
   } = e;
   return (0, l.jsx)("div", {
-    ref: g(i || (i = n.t(h, 2))),
+    ref: g(r || (r = n.t(h, 2))),
     className: s()(m.trinkets, t)
   })
 }
-let y = e => {
+let C = e => {
   let {
     children: t,
     animationContainerClassName: n,
-    glowClassName: r,
-    trinketsClassName: i,
+    glowClassName: i,
+    trinketsClassName: r,
     onMount: o
   } = e;
   return a.useEffect(() => {
@@ -64,14 +64,14 @@ let y = e => {
   }, [o]), (0, l.jsxs)("div", {
     className: n,
     children: [(0, l.jsx)(b, {
-      className: r
+      className: i
     }), (0, l.jsx)("div", {
       className: m.circleLayer
     }), (0, l.jsx)("div", {
       className: m.entrypoint,
       children: t
-    }), (0, l.jsx)(_, {
-      className: i
+    }), (0, l.jsx)(y, {
+      className: r
     })]
   })
 }

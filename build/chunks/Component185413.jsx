@@ -1,7 +1,7 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 185413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => O
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,49 +25,49 @@ var Chunk951288 = require("./951288.js"),
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
 }
 
-function O(e, t) {
+function x(e, t) {
   if (null == e) return {};
-  var n, r, i = function(e, t) {
+  var n, i, r = function(e, t) {
     if (null == e) return {};
-    var n, r, i = {},
+    var n, i, r = {},
       l = Object.keys(e);
-    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-    return i
+    for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+    return r
   }(e, t);
   if (Object.getOwnPropertySymbols) {
     var l = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
   }
-  return i
+  return r
 }
 
-function x(e) {
+function O(e) {
   var {
     channelId: t
-  } = e, n = O(e, ["channelId"]);
+  } = e, n = x(e, ["channelId"]);
   let l = (0, a.e7)([d.Z], () => d.Z.getChannel(t), [t]),
     o = (0, a.e7)([p.Z], () => p.Z.getGuild(null == l ? true : l.getGuildId()));
-  return (i.useEffect(() => {
-    f.default.track(_.rMx.OPEN_MODAL, {
+  return (r.useEffect(() => {
+    f.default.track(y.rMx.OPEN_MODAL, {
       type: "Grant Channel Access"
     })
-  }, []), null == l || null == o) ? null : (0, r.jsx)(E, v({
+  }, []), null == l || null == o) ? null : (0, i.jsx)(E, v({
     guild: o,
     channel: l
   }, n))
@@ -79,38 +79,38 @@ function E(e) {
       channel: d,
       onClose: p,
       newChannel: f,
-      inSettings: _
+      inSettings: y
     } = e,
-    x = O(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
-  let [E, j] = i.useState(""), [S, P] = i.useState({}), [I, Z] = i.useState(false), [T, N] = i.useState(null), A = i.useRef(null), {
+    O = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
+  let [E, j] = r.useState(""), [S, P] = r.useState({}), [I, Z] = r.useState(false), [T, N] = r.useState(null), A = r.useRef(null), {
     roles: w,
     members: M,
     getRichTag: R
   } = (0, g.Q)(a, d, d.accessPermissions, E), D = m.Z.useSections({
     roles: w,
     members: M
-  }), k = f && 0 === Object.keys(S).length;
-  async function L() {
+  }), L = f && 0 === Object.keys(S).length;
+  async function k() {
     if (null == d || 0 === Object.keys(S).length) return void p();
     Z(true);
     try {
       await
       function(e, t, n) {
-        let r = [];
+        let i = [];
         return Object.values(t).forEach(t => {
           let {
             row: n
           } = t;
-          null != n.id && "" !== n.id && (n.rowType === b.aC.ROLE ? r.push((0, h.rX)(n.id, e.type)) : n.rowType === b.aC.MEMBER && r.push((0, h.jZ)(n.id, e.type)))
-        }), (0, s.hw)(e.id, r, n)
-      }(d, S, _), p(), Z(false)
+          null != n.id && "" !== n.id && (n.rowType === b.aC.ROLE ? i.push((0, h.rX)(n.id, e.type)) : n.rowType === b.aC.MEMBER && i.push((0, h.jZ)(n.id, e.type)))
+        }), (0, s.hw)(e.id, i, n)
+      }(d, S, y), p(), Z(false)
     } catch (t) {
       let e = new c.Hx(t);
       Z(false), N(e)
     }
   }
   let U = (0, u.zi)(d.type) ? o.W4G : o.gjC;
-  return (0, r.jsx)(m.Z.Provider, {
+  return (0, i.jsx)(m.Z.Provider, {
     listRef: A,
     query: E,
     setQuery: j,
@@ -119,32 +119,32 @@ function E(e) {
     roles: w,
     members: M,
     getRichTag: R,
-    children: (0, r.jsx)(l.Modal, (t = v({}, x), n = n = {
-      title: y.intl.string(y.t.dMJ3Y6),
+    children: (0, i.jsx)(l.Modal, (t = v({}, O), n = n = {
+      title: C.intl.string(C.t.dMJ3Y6),
       onClose: p,
-      input: (0, r.jsxs)("div", {
-        children: [(0, r.jsxs)(o.Text, {
-          className: C.channelName,
+      input: (0, i.jsxs)("div", {
+        children: [(0, i.jsxs)(o.Text, {
+          className: _.channelName,
           variant: "text-lg/normal",
           color: "header-secondary",
-          children: [(0, r.jsx)(U, {
-            className: C.channelIcon,
+          children: [(0, i.jsx)(U, {
+            className: _.channelIcon,
             size: "sm",
             color: "currentColor"
           }), d.name]
-        }), d.isGuildStageVoice() && (0, r.jsx)(o.Text, {
+        }), d.isGuildStageVoice() && (0, i.jsx)(o.Text, {
           color: "header-secondary",
-          className: C.description,
+          className: _.description,
           variant: "text-sm/normal",
-          children: y.intl.string(y.t.f7VbhF)
-        }), (0, r.jsx)(m.Z.SearchBox, {
-          placeholderText: y.intl.string(y.t.iezLLn)
-        }), (0, r.jsx)(o.Text, {
-          className: C.subtext,
+          children: C.intl.string(C.t.f7VbhF)
+        }), (0, i.jsx)(m.Z.SearchBox, {
+          placeholderText: C.intl.string(C.t.iezLLn)
+        }), (0, i.jsx)(o.Text, {
+          className: _.subtext,
           variant: "text-xs/normal",
-          children: y.intl.string(y.t.rwFx85)
-        }), null != T ? (0, r.jsx)(o.Text, {
-          className: C.subtext,
+          children: C.intl.string(C.t.rwFx85)
+        }), null != T ? (0, i.jsx)(o.Text, {
+          className: _.subtext,
           variant: "text-xs/normal",
           color: "text-danger",
           children: T.getAnyErrorMessage()
@@ -158,25 +158,25 @@ function E(e) {
         renderRow: m.Z.renderRow,
         sections: D
       },
-      actions: k ? [{
+      actions: L ? [{
         variant: "secondary",
-        text: y.intl.string(y.t.u46sxe),
+        text: C.intl.string(C.t.u46sxe),
         onClick: p
       }] : [{
         variant: "secondary",
-        text: y.intl.string(y.t["ETE/oC"]),
+        text: C.intl.string(C.t["ETE/oC"]),
         onClick: p
       }, {
         variant: "primary",
-        text: y.intl.string(y.t.i4jeWR),
-        onClick: L,
+        text: C.intl.string(C.t.i4jeWR),
+        onClick: k,
         loading: I
       }]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var i = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, i)
       }
       return n
     })(Object(n)).forEach(function(e) {

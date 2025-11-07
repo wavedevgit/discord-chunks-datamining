@@ -1,7 +1,7 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 191062, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 }), require("./704826.js"), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,10 +31,10 @@ let m = {
     let {
       region: t,
       className: n = f.regionSelectName
-    } = e, i = t.name.replace(/ \(VIP\)$/, "");
-    return (0, r.jsx)("div", {
+    } = e, r = t.name.replace(/ \(VIP\)$/, "");
+    return (0, i.jsx)("div", {
       className: n,
-      children: i
+      children: r
     })
   };
 class b extends Chunk647438.PureComponent {
@@ -57,7 +57,7 @@ class b extends Chunk647438.PureComponent {
     })
   }
 }
-class _ extends Chunk647438.PureComponent {
+class y extends Chunk647438.PureComponent {
   componentDidMount() {
     null == this.props.regions && Chunk771340.Z.fetchRegions(null)
   }
@@ -71,7 +71,7 @@ class _ extends Chunk647438.PureComponent {
         label: exports.name,
         value: exports
       },
-      i = module.filter(e => !e.deprecated && !e.hidden).map(e => ({
+      r = module.filter(e => !e.deprecated && !e.hidden).map(e => ({
         label: e.name,
         value: e,
         key: e.id
@@ -88,7 +88,7 @@ class _ extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "renderOption", (e, t) => (0, r.jsx)(b, {
+    super(...e), h(this, "renderOption", (e, t) => (0, i.jsx)(b, {
       region: e.value,
       selected: t
     }, e.value.id)), h(this, "getSelectedRegion", () => {
@@ -122,6 +122,6 @@ class _ extends Chunk647438.PureComponent {
     })
   }
 }
-let y = Chunk442837.ZP.connectStores([Chunk903223.Z], () => ({
+let C = Chunk442837.ZP.connectStores([Chunk903223.Z], () => ({
   regions: Chunk903223.Z.getRegions(null)
-}))(_)
+}))(y)

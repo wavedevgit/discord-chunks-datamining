@@ -2,8 +2,8 @@
 /** chunk id: 436444, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => T,
-  Z: () => S
+  P: () => S,
+  Z: () => T
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -74,20 +74,20 @@ function I(e) {
       throw Error("Unsupported Boosting tier: ".concat(e))
   }
 }
-let T = {
+let S = {
     [Chunk981631.Eu4.NONE]: 0,
     [Chunk981631.Eu4.TIER_1]: 1 / 3,
     [Chunk981631.Eu4.TIER_2]: 2 / 3,
     [Chunk981631.Eu4.TIER_3]: 1
   },
-  S = function(e) {
+  T = function(e) {
     let {
       children: t,
       confettiTriggerRef: n,
       guild: i,
       isProgressBarAnimationComplete: b,
       setConfettiCount: O,
-      setShouldFireConfetti: S,
+      setShouldFireConfetti: T,
       tier: A,
       tierMarkerAnimationPosition: C,
       totalAvailableBoostsCount: N
@@ -166,7 +166,7 @@ let T = {
           [E.progressBarMarkerCurrent]: j
         }),
         style: {
-          left: "".concat(100 * T[A], "%")
+          left: "".concat(100 * S[A], "%")
         }
       }, e, V), {
         children: [!L && (0, r.jsx)("div", {
@@ -174,7 +174,7 @@ let T = {
         }), L && A === p.Eu4.TIER_3 ? (0, r.jsx)(_.m, {
           confettiTriggerRef: n,
           setConfettiCount: O,
-          setShouldFireConfetti: S,
+          setShouldFireConfetti: T,
           children: G
         }) : G, (0, r.jsxs)(s.Text, {
           className: E.progressBarMarkerLabel,

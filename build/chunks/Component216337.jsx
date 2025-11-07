@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 216337, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -24,25 +24,25 @@ let h = () => require.e("43841").then(require.t.bind(require, 737848, 19)).then(
     let {
       channel: t,
       isLastItem: n
-    } = e, i = (0, l.e7)([o.Z], () => o.Z.useReducedMotion), m = (0, l.e7)([u.Z], () => u.Z.can(d.Plq.SEND_MESSAGES_IN_THREADS, t)), g = (0, s.Gu)(t), b = (0, l.e7)([c.default], () => c.default.getId());
-    return n ? m && !g && t.ownerId !== b ? (0, r.jsxs)("div", {
+    } = e, r = (0, l.e7)([o.Z], () => o.Z.useReducedMotion), m = (0, l.e7)([u.Z], () => u.Z.can(d.Plq.SEND_MESSAGES_IN_THREADS, t)), g = (0, s.Gu)(t), b = (0, l.e7)([c.default], () => c.default.getId());
+    return n ? m && !g && t.ownerId !== b ? (0, i.jsxs)("div", {
       className: f.box,
-      children: [(0, r.jsx)(a.Fmz, {
+      children: [(0, i.jsx)(a.Fmz, {
         importData: h,
-        shouldAnimate: !i,
+        shouldAnimate: !r,
         className: f.animation
-      }), (0, r.jsxs)("div", {
+      }), (0, i.jsxs)("div", {
         className: f.textContainer,
-        children: [(0, r.jsx)(a.Heading, {
+        children: [(0, i.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           children: p.intl.string(p.t.OmBThA)
-        }), (0, r.jsx)(a.Text, {
+        }), (0, i.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           children: p.intl.string(p.t.zcs5ko)
         })]
       })]
-    }) : null : (0, r.jsx)("div", {
+    }) : null : (0, i.jsx)("div", {
       className: f.divider
     })
   })

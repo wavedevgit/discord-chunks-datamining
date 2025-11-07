@@ -2,7 +2,7 @@
 /** chunk id: 590956, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => T,
+  Y: () => S,
   c: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -83,7 +83,7 @@ let I = e => {
       position: a,
       shouldShow: !g,
       onTooltipShow: () => {
-        s && S({
+        s && T({
           emojiNode: n,
           isCustomEmoji: false
         })
@@ -103,7 +103,7 @@ let I = e => {
       }))
     }));
     if (!s) return I();
-    let T = e => (0, r.jsx)(_.Az, v(y({}, e), {
+    let S = e => (0, r.jsx)(_.Az, v(y({}, e), {
       node: n
     }));
     return (0, r.jsx)(l.yRy, {
@@ -115,12 +115,12 @@ let I = e => {
       onRequestClose: () => {
         b(false)
       },
-      renderPopout: T,
+      renderPopout: S,
       targetElementRef: f,
       children: I
     })
   },
-  T = e => {
+  S = e => {
     let {
       node: t,
       isInteracting: n,
@@ -128,7 +128,7 @@ let I = e => {
       enableClick: u = true,
       channelId: g,
       messageId: b
-    } = e, [O, I] = i.useState(String(Date.now())), [T, A] = i.useState(false), [C, N] = i.useState(false), R = i.useRef(null), P = function() {
+    } = e, [O, I] = i.useState(String(Date.now())), [S, A] = i.useState(false), [C, N] = i.useState(false), R = i.useRef(null), P = function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
       return (0, r.jsx)(c.Z, v(y({}, e), {
         emojiName: t.name,
@@ -146,7 +146,7 @@ let I = e => {
       position: a,
       shouldShow: !C,
       onTooltipShow: () => {
-        A(true), u && (S({
+        A(true), u && (T({
           emojiNode: t,
           isCustomEmoji: true,
           nonce: w
@@ -163,7 +163,7 @@ let I = e => {
           A(false), N(true), null == e || null == (n = e.onClick) || n.call(e, t)
         } : true,
         onMouseLeave: () => {
-          T && (f.default.track(h.rMx.CLOSE_POPOUT, {
+          S && (f.default.track(h.rMx.CLOSE_POPOUT, {
             nonce: w
           }), A(false))
         },
@@ -198,7 +198,7 @@ let I = e => {
       children: D
     })
   },
-  S = e => {
+  T = e => {
     let {
       emojiNode: t,
       isCustomEmoji: n,

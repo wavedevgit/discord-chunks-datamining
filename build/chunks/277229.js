@@ -39,10 +39,10 @@ function _() {
   return Chunk358085.isPlatformEmbedded
 }
 async function p() {
-  var e, t, n, r, a, o, s, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, T, S, A, C, N, R, P, w, D, x, L, M, j, k;
+  var e, t, n, r, a, o, s, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, S, T, A, C, N, R, P, w, D, x, L, M, j, k;
   let U = Chunk848479.Z.getMemoryUsageElectronProcessTypeDetails();
   if (null == U) return null;
-  let G = [null != (y = null == (e = U.unknown) ? true : module.wss_priv_kb) ? y : false, null != (O = null == (t = U.main) ? true : exports.wss_priv_kb) ? O : false, null != (v = null == (n = U.renderer) ? true : require.wss_priv_kb) ? v : false, null != (I = null == (r = U.gpu) ? true : Chunk147913.wss_priv_kb) ? I : false, null != (T = null == (a = U.crashpad) ? true : Chunk626135.wss_priv_kb) ? T : false, null != (S = null == (o = U.utility) ? true : Chunk70956.wss_priv_kb) ? S : false],
+  let G = [null != (y = null == (e = U.unknown) ? true : module.wss_priv_kb) ? y : false, null != (O = null == (t = U.main) ? true : exports.wss_priv_kb) ? O : false, null != (v = null == (n = U.renderer) ? true : require.wss_priv_kb) ? v : false, null != (I = null == (r = U.gpu) ? true : Chunk147913.wss_priv_kb) ? I : false, null != (S = null == (a = U.crashpad) ? true : Chunk626135.wss_priv_kb) ? S : false, null != (T = null == (o = U.utility) ? true : Chunk70956.wss_priv_kb) ? T : false],
     B = {
       electron_process_memory_private: G,
       electron_process_memory_private_and_shared: [null != (A = null == (s = U.unknown) ? true : Chunk358085.wss_kb) ? A : false, null != (C = null == (c = U.main) ? true : Chunk981631.wss_kb) ? C : false, null != (N = null == (u = U.renderer) ? true : u.wss_kb) ? N : false, null != (R = null == (d = U.gpu) ? true : d.wss_kb) ? R : false, null != (P = null == (f = U.crashpad) ? true : f.wss_kb) ? P : false, null != (w = null == (_ = U.utility) ? true : _.wss_kb) ? w : false],

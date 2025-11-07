@@ -61,19 +61,19 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = new Chunk598077.Z({
+let T = new Chunk598077.Z({
   id: "???",
   username: "???"
 });
 
 function A(e) {
   var t;
-  return null == e.author ? S : null != e.webhook_id ? new d.Z(e.author) : null != (t = p.default.getUser(e.author.id)) ? t : new d.Z(e.author)
+  return null == e.author ? T : null != e.webhook_id ? new d.Z(e.author) : null != (t = p.default.getUser(e.author.id)) ? t : new d.Z(e.author)
 }
 
 function C(e) {
@@ -82,7 +82,7 @@ function C(e) {
 
 function N(e) {
   var t;
-  return new u.pi(T(v({}, e), {
+  return new u.pi(S(v({}, e), {
     timestamp: new Date(e.timestamp),
     editedTimestamp: null != e.edited_timestamp ? new Date(e.edited_timestamp) : null,
     attachments: D(e),
@@ -100,7 +100,7 @@ function R(e) {
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     O = N(e),
     I = null != (i = null == (t = e.mentions) ? true : t.map(e => e.id)) ? i : [],
-    S = null != (a = e.mention_roles) ? a : [],
+    T = null != (a = e.mention_roles) ? a : [],
     R = null != (o = e.mention_channels) ? o : [],
     P = null != (l = e.mention_games) ? l : [],
     w = e.message_reference,
@@ -111,21 +111,21 @@ function R(e) {
     G = null != e.interaction ? c.Z.createFromServer(e.interaction) : null,
     B = e.type === y.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
     Z = e.content;
-  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (p = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, Z = ""), C(e)) ? T(v({}, L), {
+  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (p = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, Z = ""), C(e)) ? S(v({}, L), {
     id: e.id,
     channel_id: e.channel_id,
     type: y.uaV.DEFAULT,
     author: D,
     timestamp: O.timestamp,
     isUnsupported: true
-  }) : T(v({}, e, L, O.toJS()), {
+  }) : S(v({}, e, L, O.toJS()), {
     author: D,
     webhookId: e.webhook_id,
     blocked: _.Z.isBlockedForMessage(e) || null != B && _.Z.isBlocked(B),
     ignored: _.Z.isIgnoredForMessage(e) || null != B && _.Z.isIgnored(B),
     mentionEveryone: e.mention_everyone,
     mentions: I,
-    mentionRoles: S,
+    mentionRoles: T,
     mentionChannels: R,
     mentionGames: P,
     messageReference: w,
@@ -134,7 +134,7 @@ function R(e) {
       channelId: e.channel_id,
       mentionEveryone: null != (d = e.mention_everyone) && d,
       mentionUsers: I,
-      mentionRoles: S,
+      mentionRoles: T,
       mentionGames: P.map(e => e.id)
     }),
     giftCodes: (0, m.Fp)(e) ? (0, m.Q_)(null == e ? true : e.embeds[0].url) : (0, m.Q_)(e.content),
@@ -157,7 +157,7 @@ function R(e) {
 }
 
 function P(e, t) {
-  return null != t.edited_timestamp ? T(v({}, t), {
+  return null != t.edited_timestamp ? S(v({}, t), {
     reactions: e.reactions,
     interaction_data: e.interaction_data
   }) : v({}, e, t)
@@ -181,7 +181,7 @@ function w(e, t) {
 }
 
 function D(e) {
-  return null == e.attachments ? [] : e.attachments.map(e => T(v({}, e), {
+  return null == e.attachments ? [] : e.attachments.map(e => S(v({}, e), {
     spoiler: e.filename.startsWith(b._j)
   }))
 }

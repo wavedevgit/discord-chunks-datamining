@@ -118,7 +118,7 @@ let $ = (e, t, i) => {
       buttonVisibilityRef: N
     } = ea(), {
       analyticsLocations: P
-    } = (0, _.ZP)(f.Z.PREMIUM_MARKETING_HERO_CTA), w = (0, S.H)(o.I.MARKETING_PAGE_BANNER), M = null;
+    } = (0, _.ZP)(f.Z.PREMIUM_MARKETING_HERO_CTA), w = (0, T.H)(o.I.MARKETING_PAGE_BANNER), M = null;
     null != w && "marketingPageBanner" === w.properties.properties.oneofKind ? M = (0, r.jsx)(A.u, {
       componentId: w.id,
       promotionBannerMarketingComponentFields: w.properties.properties.marketingPageBanner
@@ -127,7 +127,7 @@ let $ = (e, t, i) => {
     }) : c ? M = (0, r.jsx)(Z.Z, {}) : p && (M = (0, r.jsx)(R._, {}));
     let G = (0, s.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()),
       K = null != G && G.status === V.O0b.CANCELED && null != O,
-      z = (0, T.N)(),
+      z = (0, S.N)(),
       q = (0, I.Ng)(),
       X = (0, I.Wp)(q, F.Si.TIER_2) ? F.Si.TIER_2 : true,
       Q = null != G && G.status !== V.O0b.ACCOUNT_HOLD && G.hasAnyPremiumNitro,
@@ -198,7 +198,7 @@ let $ = (e, t, i) => {
       buttonVisibilityRef: g
     } = ea(), {
       analyticsLocations: E
-    } = (0, _.ZP)(f.Z.PREMIUM_MARKETING_HERO_CTA), y = (0, s.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), O = null != y && y.status === V.O0b.CANCELED && null != d, v = (0, T.N)(), S = (0, I.Ng)(), A = (0, I.Wp)(S, F.Si.TIER_2) ? F.Si.TIER_2 : true, C = null != y && y.status !== V.O0b.ACCOUNT_HOLD && y.hasAnyPremiumNitro, N = (0, h.Z)().isFractionalPremiumActive && !C && !O;
+    } = (0, _.ZP)(f.Z.PREMIUM_MARKETING_HERO_CTA), y = (0, s.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), O = null != y && y.status === V.O0b.CANCELED && null != d, v = (0, S.N)(), T = (0, I.Ng)(), A = (0, I.Wp)(T, F.Si.TIER_2) ? F.Si.TIER_2 : true, C = null != y && y.status !== V.O0b.ACCOUNT_HOLD && y.hasAnyPremiumNitro, N = (0, h.Z)().isFractionalPremiumActive && !C && !O;
     return (0, r.jsxs)("div", {
       className: a()(Y.container, i),
       "data-testid": "subscriber-nitro-home-hero-header",
@@ -350,15 +350,15 @@ let $ = (e, t, i) => {
       discountedPrice: s
     } = e, {
       analyticsLocations: c
-    } = (0, _.ZP)(f.Z.PREMIUM_MARKETING_HERO_CTA), d = (0, v.W)(), m = (0, y.Vi)(), g = (0, O._O)(), b = H.intl.string(H.t.qYKftX), I = (0, N.b)(), T = (0, r.jsx)(et, {
+    } = (0, _.ZP)(f.Z.PREMIUM_MARKETING_HERO_CTA), d = (0, v.W)(), m = (0, y.Vi)(), g = (0, O._O)(), b = H.intl.string(H.t.qYKftX), I = (0, N.b)(), S = (0, r.jsx)(et, {
       className: t
-    }), S = H.intl.string(H.t.ifwQZb), {
+    }), T = H.intl.string(H.t.ifwQZb), {
       fractionalState: A,
       endsAt: C
     } = (0, h.Z)(), R = (0, p.ZP)(C, p.aj.CREDITS_ENDS_IN);
-    d || m ? T = (0, r.jsx)(er, {
+    d || m ? S = (0, r.jsx)(er, {
       isEligibleForBogoPromotion: m
-    }) : I && (b = H.intl.string(H.t.qYKftX), T = (0, r.jsx)(en, {}));
+    }) : I && (b = H.intl.string(H.t.qYKftX), S = (0, r.jsx)(en, {}));
     let P = null;
     if (A === F.a$.NONE || d) P = n ? (0, r.jsx)(G.Z, {
       enablePremiumBrandRefresh: true,
@@ -411,7 +411,7 @@ let $ = (e, t, i) => {
       value: c,
       children: (0, r.jsx)(ei.Provider, {
         value: {
-          headingText: S,
+          headingText: T,
           headingTop: P,
           showPill: g,
           userDiscountOffer: o,
@@ -423,7 +423,7 @@ let $ = (e, t, i) => {
           isEligibleForBogoPromotion: m,
           isInReverseTrial: d,
           shouldShowReferralProgressBar: I
-        }) : T
+        }) : S
       })
     })
   }

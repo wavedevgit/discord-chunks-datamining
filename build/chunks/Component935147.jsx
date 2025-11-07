@@ -98,17 +98,17 @@ function K(e) {
     tryItOutBanner: $,
     tryItOutAvatarDecoration: ee,
     tryItOutProfileEffect: et
-  } = (0, a.cj)([S.Z], () => {
-    let e = S.Z.getAllPending(),
-      t = S.Z.getErrors();
-    return W(H({}, e, S.Z.getAllTryItOut()), {
+  } = (0, a.cj)([T.Z], () => {
+    let e = T.Z.getAllPending(),
+      t = T.Z.getErrors();
+    return W(H({}, e, T.Z.getAllTryItOut()), {
       errors: t
     })
   }), {
     preset: en,
     onShuffle: er
   } = (0, g.Z)(), ei = i.useRef(null);
-  (0, T.Z)(ei, B.Y_.TRY_IT_OUT);
+  (0, S.Z)(ei, B.Y_.TRY_IT_OUT);
   let ea = (0, p.p)("TryOutPremiumSection"),
     {
       analyticsLocations: eo,

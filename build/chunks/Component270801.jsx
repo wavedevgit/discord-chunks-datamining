@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 270801, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -19,48 +19,48 @@ let c = () => require.e("49812").then(require.t.bind(require, 48603, 19)).then(e
   u = e => {
     var t, n;
     let u = (0, a.Dt)();
-    return (0, r.jsxs)(i.IX, (t = function(e) {
+    return (0, i.jsxs)(r.IX, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          i = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), i.forEach(function(t) {
+          var i;
+          i = n[t], t in e ? Object.defineProperty(e, t, {
+            value: i,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = i
         })
       }
       return e
     }({}, e), n = n = {
       size: "sm",
-      children: [(0, r.jsx)("div", {
+      children: [(0, i.jsx)("div", {
         className: s.animationContainer,
-        children: (0, r.jsx)(l.Fmz, {
+        children: (0, i.jsx)(l.Fmz, {
           importData: c,
           className: s.animationMiddle
         })
-      }), (0, r.jsx)(i.fef, {
-        children: (0, r.jsxs)("div", {
+      }), (0, i.jsx)(r.fef, {
+        children: (0, i.jsxs)("div", {
           className: s.manaContainer,
-          children: [(0, r.jsx)(l.Heading, {
+          children: [(0, i.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
             className: s.header,
             id: u,
             children: o.intl.format(o.t.z9qozJ, {
               guildName: e.guildName
             })
-          }), (0, r.jsx)(l.Text, {
+          }), (0, i.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: "header-secondary",
             children: o.intl.string(o.t.nwpqyc)
           })]
         })
-      }), (0, r.jsx)(i.Go$, {
+      }), (0, i.jsx)(r.Go$, {
         actions: [{
           variant: "primary",
           onClick: () => {
@@ -73,8 +73,8 @@ let c = () => require.e("49812").then(require.t.bind(require, 48603, 19)).then(e
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var i = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, i)
       }
       return n
     })(Object(n)).forEach(function(e) {

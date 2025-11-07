@@ -57,18 +57,18 @@ function v(e) {
   return e
 }
 let I = 5e3,
-  T = "UserSettingsProtoLastWriteTimes",
-  S = Date.now();
+  S = "UserSettingsProtoLastWriteTimes",
+  T = Date.now();
 
 function A() {}
 Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
-  S = Date.now()
+  T = Date.now()
 }), Chunk570140.Z.subscribe("CONNECTION_CLOSED", () => {
-  S = Date.now()
+  T = Date.now()
 }), "undefined" != typeof document && (document.addEventListener("mousedown", () => {
-  S = 0
+  T = 0
 }), document.addEventListener("keydown", () => {
-  S = 0
+  T = 0
 }));
 class C {
   getEditInfo() {
@@ -134,8 +134,8 @@ class C {
   }
   saveLastSendTime() {
     var e;
-    let t = null != (e = Chunk433517.K.get(T)) ? module : {};
-    exports[this.type] = Date.now(), Chunk433517.K.set(T, exports)
+    let t = null != (e = Chunk433517.K.get(S)) ? module : {};
+    exports[this.type] = Date.now(), Chunk433517.K.set(S, exports)
   }
   loadIfUncached(e, t) {
     m.Z.hasLoaded(e) && true !== t || this.loadIfNecessary(t)

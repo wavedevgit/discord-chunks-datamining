@@ -200,8 +200,8 @@ function X(e, t, n) {
     unusual_dm_activity_until: b,
     collectibles: y,
     display_name_styles: O
-  } = n, v = I.ZP.getMember(e, t.id), T = (0, f.bN)(O);
-  null != v && v.nick === c && v.avatar === d && i().isEqual(v.roles, l) && (0, u.sr)(null != (r = v.avatarDecoration) ? r : null, null != _ ? _ : null) && v.premiumSince === h && v.isPending === m && v.joinedAt === g && v.communicationDisabledUntil === E && v.flags === p && (null != (a = v.unusualDMActivityUntil) ? a : null) === (null != b ? b : null) && i().isEqual(null != (o = v.collectibles) ? o : null, null != y ? y : null) && i().isEqual(null != (s = v.displayNameStyles) ? s : null, null != T ? T : null) || q({
+  } = n, v = I.ZP.getMember(e, t.id), S = (0, f.bN)(O);
+  null != v && v.nick === c && v.avatar === d && i().isEqual(v.roles, l) && (0, u.sr)(null != (r = v.avatarDecoration) ? r : null, null != _ ? _ : null) && v.premiumSince === h && v.isPending === m && v.joinedAt === g && v.communicationDisabledUntil === E && v.flags === p && (null != (a = v.unusualDMActivityUntil) ? a : null) === (null != b ? b : null) && i().isEqual(null != (o = v.collectibles) ? o : null, null != y ? y : null) && i().isEqual(null != (s = v.displayNameStyles) ? s : null, null != S ? S : null) || q({
     type: "GUILD_MEMBER_ADD",
     guildId: e,
     user: t,
@@ -216,7 +216,7 @@ function X(e, t, n) {
     unusualDMActivityUntil: b,
     flags: p,
     collectibles: y,
-    displayNameStyles: T
+    displayNameStyles: S
   })
 }
 
@@ -276,7 +276,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
   g.Z.initialGuild.measure(() => {
     a.ZP.Emitter.batched(() => {
       let t = P.Fx(e, D.Wb.identifyStartTime);
-      null != S.default.getCurrentUser() && (q({
+      null != T.default.getCurrentUser() && (q({
         type: "GUILD_CREATE",
         guild: t
       }), q({

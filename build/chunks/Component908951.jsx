@@ -86,7 +86,7 @@ function x(e) {
     null == e ? await f.fG(t, n, r, G, R) : await f.tq(t, e, n, r, G, R), F(false), H(n)
   }, W = async (e, n, r) => {
     F(true);
-    let i = await (0, T.hz)({
+    let i = await (0, S.hz)({
         subscriptionId: t.id,
         paymentSourceId: null == e ? true : e.id,
         renewal: true,
@@ -107,7 +107,7 @@ function x(e) {
     let n = y.Z.get(t.planIdForCurrencies);
     l()(null != e, "paymentSource not specified for change"), l()(null != n, "Unable to fetch plan");
     let r = (0, v.DE)(n.id, e.id, false);
-    return r.length > 0 ? r[0] : S.pKx.USD
+    return r.length > 0 ? r[0] : T.pKx.USD
   }, z = e => {
     null != e && W(e, K(e), Y)
   }, q = e => {
@@ -122,7 +122,7 @@ function x(e) {
       onCloseCallback: () => {
         (0, d.fw)()
       },
-      onCloseRequest: S.dG4
+      onCloseRequest: T.dG4
     })
   }, Q = () => {
     let e = t.paymentSourceId;

@@ -52,7 +52,7 @@ function O(e, t) {
         dataOffset: t,
         length: e.getUint32(f + c) - (t - (f + d))
       }])
-    } else if (T(e, f, t)) {
+    } else if (S(e, f, t)) {
       a.hasAppMarkers = true;
       let t = (0, r.oH)(e, f + u, l);
       a.pngTextChunks || (a.pngTextChunks = []), a.pngTextChunks.push({
@@ -60,7 +60,7 @@ function O(e, t) {
         type: t,
         offset: f + d
       })
-    } else if (S(e, f)) a.hasAppMarkers = true, a.tiffHeaderOffset = f + d;
+    } else if (T(e, f)) a.hasAppMarkers = true, a.tiffHeaderOffset = f + d;
     else if (i.Z.USE_ICC && t && A(e, f)) {
       a.hasAppMarkers = true;
       let t = e.getUint32(f + c),
@@ -93,12 +93,12 @@ function I(e, t) {
   return (0, r.oH)(e, t + u, l) === p && (0, r.oH)(e, t + d, f.length) === f
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   let i = (0, r.oH)(e, t + u, l);
   return i === _ || i === p || i === h && n
 }
 
-function S(e, t) {
+function T(e, t) {
   return (0, r.oH)(e, t + u, l) === E
 }
 

@@ -84,7 +84,7 @@ function I(e) {
   delete h[t]
 }
 
-function T(e) {
+function S(e) {
   let {
     channel: {
       guild_id: t
@@ -94,7 +94,7 @@ function T(e) {
   h[t] = true, p === t && y(t)
 }
 
-function S(e) {
+function T(e) {
   let {
     channels: t
   } = e, n = false;
@@ -185,9 +185,9 @@ let j = new M(Chunk570140.Z, {
   GUILD_CREATE: v,
   GUILD_UPDATE: v,
   GUILD_DELETE: I,
-  CHANNEL_CREATE: T,
-  CHANNEL_DELETE: T,
-  CHANNEL_UPDATES: S,
+  CHANNEL_CREATE: S,
+  CHANNEL_DELETE: S,
+  CHANNEL_UPDATES: T,
   GUILD_MEMBER_UPDATE: A,
   CURRENT_USER_UPDATE: C,
   GUILD_ROLE_CREATE: N,

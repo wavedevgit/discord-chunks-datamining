@@ -134,25 +134,25 @@ let G = (e, t, n) => (0, i.wj)(e) ? t : n,
       soundboard: {
         title: _.intl.string(_.t["lGcW+c"]),
         description: _.intl.string(_.t["/fDyO+"]),
-        imageSource: G(i, I, T),
+        imageSource: G(i, I, S),
         imageClassName: t.soundboardImage
       },
       stickers: {
         title: _.intl.string(_.t["1c+xwT"]),
         description: _.intl.string(_.t.hJG8ZN),
-        imageSource: G(i, S, j),
+        imageSource: G(i, T, j),
         imageClassName: t.stickersImage
       },
       stickersBurst: {
         title: _.intl.string(_.t.tzdIwI),
         description: _.intl.string(_.t.hJG8ZN),
-        imageSource: G(i, S, j),
+        imageSource: G(i, T, j),
         imageClassName: t.stickersImage
       },
       stickersPremiumPerk: {
         title: _.intl.string(_.t.tzdIwI),
         description: _.intl.string(_.t.FXlU24),
-        imageSource: G(i, S, j),
+        imageSource: G(i, T, j),
         imageClassName: t.stickersImage
       },
       streaming: {

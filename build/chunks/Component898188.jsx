@@ -25,9 +25,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk530815 = require("./530815.js");
-let T = 60;
+let S = 60;
 
-function S(e) {
+function T(e) {
   let {
     action: t
   } = e, n = (0, l.e7)([_.Z], () => _.Z.getChannel(t.channelId)), i = (0, d.ZP)(n, true);
@@ -104,7 +104,7 @@ function C(e) {
       style: {
         marginBottom: D.interpolate({
           inputRange: [0, 1],
-          outputRange: [-T, 0]
+          outputRange: [-S, 0]
         })
       },
       children: (0, r.jsxs)(c.P3F, {
@@ -122,7 +122,7 @@ function C(e) {
             children: v.intl.format(v.t["/beONw"], {
               step: y.title
             })
-          }), (0, r.jsx)(S, {
+          }), (0, r.jsx)(T, {
             action: y
           })]
         }), (0, r.jsx)("div", {
@@ -139,7 +139,7 @@ function C(e) {
       style: {
         marginBottom: w.interpolate({
           inputRange: [0, 1],
-          outputRange: [-T, 0]
+          outputRange: [-S, 0]
         })
       },
       children: [(0, r.jsx)(A, {

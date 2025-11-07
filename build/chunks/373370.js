@@ -89,7 +89,7 @@ function I(e) {
   }, i)
 }
 
-function T(e) {
+function S(e) {
   let t, {
       quest: n,
       taskDetails: r,
@@ -113,7 +113,7 @@ function T(e) {
   }, i)
 }
 
-function S(e) {
+function T(e) {
   let t, {
       quest: n,
       taskDetails: r,
@@ -302,14 +302,14 @@ function D(e) {
     hasNitro: _,
     collectibleRewardDuration: p
   });
-  if ((0, l.$J)(t)) return T({
+  if ((0, l.$J)(t)) return S({
     quest: t,
     taskDetails: n,
     withoutMarkdown: o,
     hasNitro: _,
     collectibleRewardDuration: p
   });
-  if ((0, l.$H)(t)) return S({
+  if ((0, l.$H)(t)) return T({
     quest: t,
     taskDetails: n,
     withoutMarkdown: o,

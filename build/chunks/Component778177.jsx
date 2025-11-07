@@ -121,7 +121,7 @@ let X = (e, t, n) => {
     if (null == s) return (0, r.jsx)("strong", {
       children: l
     });
-    let c = S.default.getUser(s.id),
+    let c = T.default.getUser(s.id),
       u = (0, P.AH)(e),
       d = (0, P.s5)(e),
       f = y.Z.getChannel(u),
@@ -138,7 +138,7 @@ let X = (e, t, n) => {
     }, "display-nick-".concat(t, "-").concat(s.id)), (0, r.jsx)("span", {
       className: B.displayUsername,
       children: N.ZP.getUserTag(s, {
-        identifiable: T.Z.enabled && T.Z.hidePersonalInformation ? "never" : "always"
+        identifiable: S.Z.enabled && S.Z.hidePersonalInformation ? "never" : "always"
       })
     }, "display-username-".concat(t, "-").concat(s.id))]
   },

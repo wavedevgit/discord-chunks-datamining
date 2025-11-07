@@ -2,7 +2,7 @@
 /** chunk id: 560223, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -85,15 +85,15 @@ let I = e => {
       })
     })
   },
-  T = e => {
+  S = e => {
     let {
       className: t,
       variant: n,
       noBackground: a = false,
       leftAlignHeaders: b = false,
       showAllPerksButton: O,
-      headerClassname: T
-    } = e, S = i.useRef(null), A = n === h.gM.WHATS_NEW, C = (0, _.x)();
+      headerClassname: S
+    } = e, T = i.useRef(null), A = n === h.gM.WHATS_NEW, C = (0, _.x)();
     i.useEffect(() => {
       A && C()
     }, [C, A]);
@@ -126,7 +126,7 @@ let I = e => {
       }),
       k = j.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
-      ref: S,
+      ref: T,
       className: o()(E.section, {
         [E.centerAlignSection]: !b,
         [E.leftAlignSection]: b
@@ -135,7 +135,7 @@ let I = e => {
         showAllPerksButton: O,
         leftAlignHeaders: b,
         title: N.title,
-        headerClassname: T
+        headerClassname: S
       }), (0, r.jsx)(s.Text, {
         variant: "text-lg/normal",
         color: "header-primary",

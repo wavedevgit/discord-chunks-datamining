@@ -1,9 +1,9 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 155409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
 });
-var r, Chunk951288 = require("./951288.js"),
+var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk374470 = require("./374470.js"),
   Chunk442837 = require("./442837.js"),
@@ -24,16 +24,16 @@ function p(e, t, n) {
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
+    }))), i.forEach(function(t) {
       p(e, t, n[t])
     })
   }
   return e
 }
-class h extends(r = Chunk647438.Component) {
+class h extends(i = Chunk647438.Component) {
   componentDidMount() {
     let {
       visible: e,
@@ -51,19 +51,19 @@ class h extends(r = Chunk647438.Component) {
     let {
       position: t,
       offsetX: n,
-      offsetY: r,
-      tutorialId: i,
+      offsetY: i,
+      tutorialId: r,
       visible: l,
       windowSize: a
     } = e;
-    i !== this.props.tutorialId ? s.Z.hide(i) : (l !== this.props.visible || t !== this.props.position || n !== this.props.offsetX || r !== this.props.offsetY || a !== this.props.windowSize) && this.show(this.props.visible)
+    r !== this.props.tutorialId ? s.Z.hide(r) : (l !== this.props.visible || t !== this.props.position || n !== this.props.offsetX || i !== this.props.offsetY || a !== this.props.windowSize) && this.show(this.props.visible)
   }
   show(e) {
     let {
       childRef: t,
       tutorialId: n,
-      position: r,
-      offsetX: i,
+      position: i,
+      offsetX: r,
       offsetY: l,
       visible: o,
       inlineSpecs: c,
@@ -79,7 +79,7 @@ class h extends(r = Chunk647438.Component) {
         bottom: p
       } = e.getBoundingClientRect();
       s.Z.show(n, {
-        position: r,
+        position: i,
         targetWidth: d - c,
         targetHeight: p - o,
         autoInvert: u,
@@ -88,7 +88,7 @@ class h extends(r = Chunk647438.Component) {
           y: o
         },
         offset: {
-          x: i,
+          x: r,
           y: l
         }
       })
@@ -99,13 +99,13 @@ class h extends(r = Chunk647438.Component) {
       inlineSpecs: e,
       tutorialId: t,
       children: n,
-      visible: r,
+      visible: i,
       windowFocused: a,
       position: o,
       autoInvert: s
     } = this.props, c = Chunk10401.Z.getData()[exports];
     return null != module && null != Chunk451478 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [require, r && (0, Chunk951288.jsx)(Chunk5560.V, f({
+      children: [require, i && (0, Chunk951288.jsx)(Chunk5560.V, f({
         autoInvert: Chunk260300,
         position: Chunk442837,
         tutorialId: exports,
@@ -119,17 +119,17 @@ class h extends(r = Chunk647438.Component) {
 function m(e) {
   var t, n;
   let {
-    tutorialId: r
-  } = e, l = (0, o.e7)([d.Z], () => d.Z.shouldShow(r), [r]), a = (0, o.e7)([c.Z], () => c.Z.isFocused()), s = (0, o.e7)([c.Z], () => c.Z.windowSize(), []);
-  return (0, i.jsx)(h, (t = f({}, e), n = n = {
+    tutorialId: i
+  } = e, l = (0, o.e7)([d.Z], () => d.Z.shouldShow(i), [i]), a = (0, o.e7)([c.Z], () => c.Z.isFocused()), s = (0, o.e7)([c.Z], () => c.Z.windowSize(), []);
+  return (0, r.jsx)(h, (t = f({}, e), n = n = {
     visible: l,
     windowFocused: a,
     windowSize: s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(n)).forEach(function(e) {

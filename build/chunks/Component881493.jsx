@@ -35,7 +35,7 @@ let h = () => {
     } catch (e) {
       v(true), y(false)
     }
-  }, T = [{
+  }, S = [{
     text: Chunk388032.intl.string(Chunk388032.t.h9tkAK),
     onClick: () => Chunk120356(),
     variant: "secondary"
@@ -50,9 +50,9 @@ let h = () => {
   }];
   if (null == m) return null;
   let {
-    intervalType: S,
+    intervalType: T,
     intervalCount: A
-  } = m, C = (0, Chunk937615.og)("".concat(g), S, A);
+  } = m, C = (0, Chunk937615.og)("".concat(g), T, A);
   return (0, Chunk951288.jsxs)(Chunk793030.Modal, {
     size: "md",
     transitionState: module,
@@ -61,11 +61,11 @@ let h = () => {
     })),
     subtitle: 0 !== require.total ? Chunk388032.intl.format(Chunk388032.t.ycyeBx, {
       renewalDate: require.subscriptionPeriodStart,
-      rate: (0, Chunk937615.og)((0, Chunk937615.T4)(require.total, require.currency), S, A)
+      rate: (0, Chunk937615.og)((0, Chunk937615.T4)(require.total, require.currency), T, A)
     }) : Chunk388032.intl.format(Chunk388032.t["+y0Tjy"], {
       renewalDate: require.subscriptionPeriodStart
     }),
-    actions: T,
+    actions: S,
     onClose: async () => Chunk120356(),
     children: [(0, Chunk951288.jsxs)(Chunk811334.aO, {
       isPremiumRebrand: true,

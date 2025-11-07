@@ -67,7 +67,7 @@ var t = t || function(e) {
               if (E.readyState !== E.DONE) return e.apply(this, arguments)
             }
           },
-          T = {
+          S = {
             create: true,
             exclusive: false
           };
@@ -79,9 +79,9 @@ var t = t || function(e) {
         }
         if (e.chrome && b && b !== u && (t = (t.slice || t.webkitSlice).call(t, 0, t.size, u), y = true), s && "download" !== c && (c += ".download"), (b === u || s) && (g = e), !l) return void v();
         d += t.size, l(e.TEMPORARY, d, I(function(e) {
-          e.root.getDirectory("saved", T, I(function(e) {
+          e.root.getDirectory("saved", S, I(function(e) {
             var n = function() {
-              e.getFile(c, T, I(function(e) {
+              e.getFile(c, S, I(function(e) {
                 e.createWriter(I(function(n) {
                   n.onwriteend = function(t) {
                     g.location.href = e.toURL(), E.readyState = E.DONE, p(E, "writeend", t), _(e)

@@ -78,11 +78,11 @@ function f(e) {
     isPositioned: false
   }), [y, O] = i.useState(o);
   l(y, o) || O(o);
-  let [v, I] = i.useState(null), [T, S] = i.useState(null), A = i.useCallback(e => {
+  let [v, I] = i.useState(null), [S, T] = i.useState(null), A = i.useCallback(e => {
     e !== P.current && (P.current = e, I(e))
   }, []), C = i.useCallback(e => {
-    e !== w.current && (w.current = e, S(e))
-  }, []), N = _ || v, R = p || T, P = i.useRef(null), w = i.useRef(null), D = i.useRef(E), x = null != m, L = d(m), M = d(f), j = d(g), k = i.useCallback(() => {
+    e !== w.current && (w.current = e, T(e))
+  }, []), N = _ || v, R = p || S, P = i.useRef(null), w = i.useRef(null), D = i.useRef(E), x = null != m, L = d(m), M = d(f), j = d(g), k = i.useCallback(() => {
     if (!P.current || !w.current) return;
     let e = {
       placement: t,

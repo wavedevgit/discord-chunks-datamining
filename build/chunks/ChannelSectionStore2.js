@@ -4,7 +4,7 @@
 require.d(exports, {
   D5: () => L,
   ZP: () => J,
-  uZ: () => S
+  uZ: () => T
 });
 var r, Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
@@ -57,12 +57,12 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = "message_requests",
+let T = "message_requests",
   A = false,
   C = false,
   N = true,
@@ -142,7 +142,7 @@ function Z(e) {
     channelId: r,
     details: i
   };
-  return t === c.tI.VIEW_MOD_REPORT && (o = T(v({}, o), {
+  return t === c.tI.VIEW_MOD_REPORT && (o = S(v({}, o), {
     baseChannelId: n
   })), R[a] = o, true
 }

@@ -72,7 +72,7 @@ function I(e) {
   }
 }
 
-function T(e, t) {
+function S(e, t) {
   let [n, r] = i.useState(false), [a, o] = i.useState(null), [s, l] = i.useState(1);
   return i.useEffect(() => {
     let n = 5e4;
@@ -101,7 +101,7 @@ function T(e, t) {
   }
 }
 
-function S(e) {
+function T(e) {
   let {
     text: t,
     language: i
@@ -274,8 +274,8 @@ function P(e) {
   }) : I += " " + m.intl.formatToPlainString(m.t["1+gGcK"], {
     formattedBytes: (0, h.IC)(p)
   }));
-  let T = (null == b ? true : b.slice(0, O).join("\n")) + I,
-    P = (0, f.nM)(T),
+  let S = (null == b ? true : b.slice(0, O).join("\n")) + I,
+    P = (0, f.nM)(S),
     w = l || O < y;
   return (0, r.jsxs)("div", {
     className: o()(E, g.container),
@@ -285,7 +285,7 @@ function P(e) {
       }),
       children: null == s ? (0, r.jsx)(u.$jN, {
         className: g.spinner
-      }) : (0, r.jsx)(S, {
+      }) : (0, r.jsx)(T, {
         text: P,
         language: d
       })
@@ -346,7 +346,7 @@ function w(e) {
         className: g.modalTextContainer,
         children: null == l ? (0, r.jsx)(u.$jN, {
           className: g.spinner
-        }) : (0, r.jsx)(S, {
+        }) : (0, r.jsx)(T, {
           text: p,
           language: f
         })
@@ -382,7 +382,7 @@ let D = Chunk647438.memo(function(e) {
     fileContents: m,
     bytesLeft: E,
     hadError: b
-  } = T(t, s);
+  } = S(t, s);
   return b ? (0, r.jsx)(d.Z, {
     url: t,
     fileName: n,

@@ -183,10 +183,10 @@ let w = (e, t) => n => {
       }),
       children: (0, r.jsxs)(l.P3F, {
         onClick: b,
-        children: [null != n.image && (0, r.jsx)(T.Z, {
+        children: [null != n.image && (0, r.jsx)(S.Z, {
           source: (0, I.Z)(n),
           className: P.banner
-        }), (0, r.jsx)(S.ZP, {
+        }), (0, r.jsx)(T.ZP, {
           name: n.name,
           description: null != (t = n.description) ? t : true,
           descriptionClassName: P.eventDescription,

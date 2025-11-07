@@ -1,7 +1,7 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 3861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,15 +20,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk394024 = require("./394024.js");
-let C = (0, Chunk112724.Z)(e => {
+let _ = (0, Chunk112724.Z)(e => {
   let {
     participants: t,
     filteredParticipants: n,
     selectedParticipant: a,
-    participantsVersion: C,
+    participantsVersion: _,
     layout: v,
-    onSelectParticipant: O,
-    onContextMenuParticipant: x,
+    onSelectParticipant: x,
+    onContextMenuParticipant: O,
     onFullscreenParticipant: E,
     channel: j,
     hasConnectPermission: S,
@@ -43,57 +43,57 @@ let C = (0, Chunk112724.Z)(e => {
     awaitingRemoteSessionInfo: R,
     callContainerDimensions: D
   } = e;
-  i.useEffect(() => {
+  r.useEffect(() => {
     d.S.dispatch(b.CkL.REMEASURE_TARGET)
   }, [T, N, D.width, D.height]);
-  let k = i.useMemo(() => n.filter(e => e.type !== _.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, C]),
-    L = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(j.id), [j.id]);
-  if ((null == R ? true : R.channelId) === j.id) return (0, r.jsx)(f.Z, {
+  let L = r.useMemo(() => n.filter(e => e.type !== y.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, _]),
+    k = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(j.id), [j.id]);
+  if ((null == R ? true : R.channelId) === j.id) return (0, i.jsx)(f.Z, {
     height: N
   });
-  if ((null == j ? true : j.isGuildVocalOrThread()) && !I) return (0, r.jsx)(p.Z, {
+  if ((null == j ? true : j.isGuildVocalOrThread()) && !I) return (0, i.jsx)(p.Z, {
     channel: j,
     participants: t,
     hasConnectPermission: S
   });
-  if (w === b.WtW.VOICE) return (0, r.jsx)(c.Z, {
+  if (w === b.WtW.VOICE) return (0, i.jsx)(c.Z, {
     guildId: j.guild_id,
     width: T,
-    className: y.voiceCallWrapper,
+    className: C.voiceCallWrapper,
     participants: t,
-    onContextMenu: x
+    onContextMenu: O
   });
   if (n = I ? n : t, null == a) {
     if (0 === n.length) {
-      let e = t.length > 0 && !L;
-      return (0, r.jsx)(g.Z, {
+      let e = t.length > 0 && !k;
+      return (0, i.jsx)(g.Z, {
         channelId: j.id,
         allPoppedOut: e
       })
     }
-    return (0, r.jsx)(u.Z, {
-      className: y.videoGridWrapper,
+    return (0, i.jsx)(u.Z, {
+      className: C.videoGridWrapper,
       justify: u.Z.Justify.CENTER,
       align: u.Z.Align.CENTER,
-      children: (0, r.jsx)(h.Z, {
+      children: (0, i.jsx)(h.Z, {
         channel: j,
-        className: y.videoGrid,
-        participants: k,
+        className: C.videoGrid,
+        participants: L,
         totalNumberOfParticipants: t.length,
-        onClick: O,
+        onClick: x,
         onDoubleClick: E,
-        onContextMenu: x,
+        onContextMenu: O,
         inCall: I,
         popoutType: M
       })
     })
   }
-  return (0, r.jsx)(m.Z, {
+  return (0, i.jsx)(m.Z, {
     onFullscreenParticipant: E,
-    onContextMenuParticipant: x,
-    onSelectParticipant: O,
+    onContextMenuParticipant: O,
+    onSelectParticipant: x,
     selectedParticipant: a,
-    filteredParticipants: k,
+    filteredParticipants: L,
     participants: t,
     popoutType: M,
     className: P,

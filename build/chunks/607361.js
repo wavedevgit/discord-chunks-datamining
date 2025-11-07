@@ -1,10 +1,10 @@
-/** Chunk was on 20037 **/
+/** Chunk was on 86642 **/
 /** chunk id: 607361, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  r = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk592125 = require("./592125.js"),
   Chunk271383 = require("./271383.js"),
@@ -13,20 +13,20 @@ var Chunk392711 = require("./392711.js"),
   Chunk700785 = require("./700785.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e, t) {
-  return (0, a.e7)([c.Z, i.Z, l.ZP, u.Z], () => {
+function p(e, t) {
+  return (0, l.e7)([c.Z, a.Z, o.ZP, s.Z], () => {
     var n;
-    let r = i.Z.getChannel(t);
-    if (null == r) returnfalse;
-    let a = c.Z.can(b.Plq.SEND_MESSAGES, r),
-      _ = l.ZP.getMember(r.guild_id, e),
-      d = o().keyBy(u.Z.getManyRoles(r.guild_id, null != (n = null == _ ? true : _.roles) ? n : []), "id"),
-      f = s.BT({
-        permission: b.Plq.STREAM,
+    let i = a.Z.getChannel(t);
+    if (null == i) returnfalse;
+    let l = c.Z.can(d.Plq.SEND_MESSAGES, i),
+      p = o.ZP.getMember(i.guild_id, e),
+      f = r().keyBy(s.Z.getManyRoles(i.guild_id, null != (n = null == p ? true : p.roles) ? n : []), "id"),
+      h = u.BT({
+        permission: d.Plq.STREAM,
         user: e,
-        context: r,
-        roles: d
+        context: i,
+        roles: f
       });
-    return a && f
+    return l && h
   })
 }

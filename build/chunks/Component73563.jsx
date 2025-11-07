@@ -1,10 +1,10 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 73563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m,
   e: () => f
 });
-var r, Chunk951288 = require("./951288.js"),
+var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
@@ -16,57 +16,57 @@ var r, Chunk951288 = require("./951288.js"),
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
 }
-var f = ((r = {})[r.TOP = 0] = "TOP", r[r.BOTTOM = 1] = "BOTTOM", r);
+var f = ((i = {})[i.TOP = 0] = "TOP", i[i.BOTTOM = 1] = "BOTTOM", i);
 
 function h(e) {
   let {
     disableGradients: t = false,
     renderHeader: n,
-    renderBottomLeft: r,
+    renderBottomLeft: i,
     renderBottomCenter: a,
     renderBottomRight: o,
     renderCenter: u
   } = e, p = l.useRef(null);
-  return (0, i.jsx)(s.JcV, {
+  return (0, r.jsx)(s.JcV, {
     containerRef: p,
-    children: (0, i.jsxs)("div", {
+    children: (0, r.jsxs)("div", {
       className: d.videoControls,
       ref: p,
-      children: [0 !== t && true !== t && (0, i.jsx)("div", {
+      children: [0 !== t && true !== t && (0, r.jsx)("div", {
         className: d.gradientTop
-      }), 1 !== t && true !== t && (0, i.jsx)("div", {
+      }), 1 !== t && true !== t && (0, r.jsx)("div", {
         className: d.gradientBottom
-      }), (0, i.jsx)("div", {
+      }), (0, r.jsx)("div", {
         className: d.topControls,
         children: null == n ? true : n()
-      }), null == u ? true : u(), (0, i.jsxs)("div", {
+      }), null == u ? true : u(), (0, r.jsxs)("div", {
         className: d.bottomControls,
-        children: [(0, i.jsx)(c.Z, {
+        children: [(0, r.jsx)(c.Z, {
           grow: 1,
           align: c.Z.Align.CENTER,
           className: d.edgeControls,
-          children: null == r ? true : r()
-        }), (0, i.jsx)(c.Z, {
+          children: null == i ? true : i()
+        }), (0, r.jsx)(c.Z, {
           grow: 1,
           justify: c.Z.Justify.CENTER,
           align: c.Z.Align.CENTER,
           children: null == a ? true : a()
-        }), (0, i.jsx)(c.Z, {
+        }), (0, r.jsx)(c.Z, {
           grow: 1,
           justify: c.Z.Justify.END,
           align: c.Z.Align.CENTER,
@@ -82,7 +82,7 @@ function m(e) {
   var {
     screenMessage: t,
     onDoubleClick: n,
-    onActive: r,
+    onActive: i,
     onForceIdle: l,
     idle: a,
     children: s,
@@ -91,30 +91,30 @@ function m(e) {
     style: m
   } = e, g = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, i, r = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
+      var n, i, r = {},
         l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
-    return i
+    return r
   }(e, ["screenMessage", "onDoubleClick", "onActive", "onForceIdle", "idle", "children", "renderChatToasts", "renderVoiceChannelEffects", "style"]);
-  return (0, i.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: o()(d.root, {
       [d.idle]: a
     }),
     style: m,
-    onMouseMove: r,
-    onMouseDown: r,
+    onMouseMove: i,
+    onMouseDown: i,
     onMouseLeave: l,
     onDoubleClick: n,
-    children: [s, null != t ? (0, i.jsx)(u.Z, p({
+    children: [s, null != t ? (0, r.jsx)(u.Z, p({
       size: "large"
-    }, t)) : null, (0, i.jsx)(h, p({}, g)), null == c ? true : c(), null == f ? true : f()]
+    }, t)) : null, (0, r.jsx)(h, p({}, g)), null == c ? true : c(), null == f ? true : f()]
   })
 }

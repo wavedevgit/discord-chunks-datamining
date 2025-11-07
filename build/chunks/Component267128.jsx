@@ -160,7 +160,7 @@ function j(e, t) {
     onContextMenu: l,
     onPopoutRequestClose: c
   } = e, u = (null == a ? true : a.state) === g.Y.LOADED ? a.message : true;
-  return null == u || u.type === N.uaV.USER_JOIN || u.type === N.uaV.ROLE_SUBSCRIPTION_PURCHASE || u.type === N.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || u.type === N.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || u.type === N.uaV.GUILD_GAMING_STATS_PROMPT || u.type === N.uaV.POLL_RESULT ? null : (0, r.jsx)(S.Z, {
+  return null == u || u.type === N.uaV.USER_JOIN || u.type === N.uaV.ROLE_SUBSCRIPTION_PURCHASE || u.type === N.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || u.type === N.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || u.type === N.uaV.GUILD_GAMING_STATS_PROMPT || u.type === N.uaV.POLL_RESULT ? null : (0, r.jsx)(T.Z, {
     message: u,
     channel: i,
     compact: true,
@@ -241,7 +241,7 @@ function U(e, t, n, i, a, s) {
       iconSize: v
     } = s,
     I = null == t || "" === t || Array.isArray(t) && 0 === t.length,
-    S = (0, b.cv)(E).length > 0,
+    T = (0, b.cv)(E).length > 0,
     A = null != E.interaction,
     C = E.hasFlag(N.iLy.IS_VOICE_MESSAGE),
     D = E.isPoll(),
@@ -265,20 +265,20 @@ function U(e, t, n, i, a, s) {
         className: o()(P.repliedTextContent, w.markup),
         children: null == E || null == (M = E.poll) || null == (L = M.question) ? true : L.text
       })
-    } else x ? l = (0, m.N4)(E) : S ? l = R.intl.string(R.t.kHdYCW) : A ? l = R.intl.string(R.t["E+6SSY"]) : C ? l = R.intl.string(R.t.XC3A52) : E.hasFlag(N.iLy.IS_COMPONENTS_V2) ? l = R.intl.string(R.t.Xxat6S) : (l = R.intl.string(R.t["6hGo0c"]), d = (0, r.jsx)(c.XBm, {
+    } else x ? l = (0, m.N4)(E) : T ? l = R.intl.string(R.t.kHdYCW) : A ? l = R.intl.string(R.t["E+6SSY"]) : C ? l = R.intl.string(R.t.XC3A52) : E.hasFlag(N.iLy.IS_COMPONENTS_V2) ? l = R.intl.string(R.t.Xxat6S) : (l = R.intl.string(R.t["6hGo0c"]), d = (0, r.jsx)(c.XBm, {
       size: "custom",
       color: "currentColor",
       className: y,
       width: v,
       height: v
     }));
-  else u = (0, r.jsx)(T.ZP, {
+  else u = (0, r.jsx)(S.ZP, {
     message: E,
     content: t,
     className: a,
     compact: true
   });
-  return S ? d = (0, r.jsx)(c.B7q, {
+  return T ? d = (0, r.jsx)(c.B7q, {
     size: "custom",
     color: "currentColor",
     className: y,
@@ -326,15 +326,15 @@ function G(e) {
     b = M(e, m, s.type),
     y = j(e, m),
     v = k(e, p, E),
-    T = i.useMemo(() => e.compact ? (0, A.Z)((0, O.vc)(l()(), "LT")) : null, [e.compact]);
+    S = i.useMemo(() => e.compact ? (0, A.Z)((0, O.vc)(l()(), "LT")) : null, [e.compact]);
   null != n && null != a && (t = R.intl.formatToPlainString(R.t.RhbQ2K, {
     author: null == a ? true : a.nick,
     repliedAuthor: null == n ? true : n.nick
   }));
-  let S = s.type === N.uaV.CONTEXT_MENU_COMMAND;
+  let T = s.type === N.uaV.CONTEXT_MENU_COMMAND;
   return (0, r.jsxs)("div", {
     id: (0, I.Gq)(s),
-    className: o()(P.repliedMessage, T, S ? P.contextCommandMessage : {
+    className: o()(P.repliedMessage, S, T ? P.contextCommandMessage : {
       [P.messageSpine]: !f && _
     }),
     "aria-label": t,

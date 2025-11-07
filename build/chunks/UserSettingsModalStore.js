@@ -68,12 +68,12 @@ function I() {
   u = Chunk981631.QZA.CLOSED, h = null, m = null, d = null, f = {}, _ = {}, E = null, b = [], y = null
 }
 
-function T(e) {
+function S(e) {
   var t;
   d = e.section, E = null, b = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (f[d] = e.subsection)
 }
 
-function S(e) {
+function T(e) {
   let {
     forSection: t
   } = e;
@@ -168,8 +168,8 @@ let x = new D(Chunk570140.Z, {
   LOGOUT: I,
   USER_SETTINGS_MODAL_SUBMIT: N,
   USER_SETTINGS_MODAL_SUBMIT_FAILURE: w,
-  USER_SETTINGS_MODAL_SET_SECTION: T,
-  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: S,
+  USER_SETTINGS_MODAL_SET_SECTION: S,
+  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: T,
   USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: A,
   USER_SETTINGS_MODAL_UPDATE_ACCOUNT: C,
   USER_SETTINGS_MODAL_SUBMIT_COMPLETE: P,

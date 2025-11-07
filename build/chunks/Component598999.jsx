@@ -218,9 +218,9 @@ function H(e) {
     renderItem: g,
     getProTip: E,
     scrollerClassName: b,
-    className: T,
-    listName: S
-  } = e, R = i.useRef(null), w = (0, p.Z)(S, R), L = (0, u.e7)([y.ZP], () => y.ZP.hasNotice()), B = (0, u.e7)([O.Z], () => O.Z.windowSize());
+    className: S,
+    listName: T
+  } = e, R = i.useRef(null), w = (0, p.Z)(T, R), L = (0, u.e7)([y.ZP], () => y.ZP.hasNotice()), B = (0, u.e7)([O.Z], () => O.Z.windowSize());
   i.useEffect(() => {
     v.default.track(A.rMx.OPEN_POPOUT, {
       type: t
@@ -293,7 +293,7 @@ function H(e) {
   L && (K.maxHeight -= k);
   let z = null != d && a;
   return (0, r.jsx)("div", {
-    className: o()(T, N.messagesPopoutWrap),
+    className: o()(S, N.messagesPopoutWrap),
     style: K,
     onClick: G,
     onDoubleClick: G,
@@ -349,7 +349,7 @@ function Y(e) {
   });
 
   function P(e, n) {
-    if ((0, T.Z)(e) && !R) {
+    if ((0, S.Z)(e) && !R) {
       let {
         id: r,
         channel_id: i
@@ -368,7 +368,7 @@ function Y(e) {
     let i = [];
     return null == n ? [] : (i.push((0, r.jsxs)("div", {
       className: N.messageGroupWrapper,
-      children: [(0, r.jsx)(S.Z, {
+      children: [(0, r.jsx)(T.Z, {
         className: N.messageGroupCozy,
         message: t,
         channel: n

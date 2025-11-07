@@ -71,7 +71,7 @@ function P(e, t, n) {
     streamType: null != e ? A.lo.GUILD : A.lo.CALL,
     guildId: e,
     channelId: t,
-    appContext: __OVERLAY__ ? S.IlC.OVERLAY : S.IlC.APP
+    appContext: __OVERLAY__ ? T.IlC.OVERLAY : T.IlC.APP
   }, n))
 }
 
@@ -112,7 +112,7 @@ function x(e, t) {
     type: "STREAM_WATCH",
     streamKey: a,
     allowMultiple: o || n
-  }), o || null != t && t.noFocus || T.Z.selectParticipant(e.channelId, a)
+  }), o || null != t && t.noFocus || S.Z.selectParticipant(e.channelId, a)
 }
 
 function L(e, t) {
@@ -130,7 +130,7 @@ function M(e, t) {
   } = e;
   if (null != n && D(n, r)) return;
   x(e, t);
-  let i = f.Z.getWindowOpen(S.KJ3.CHANNEL_CALL_POPOUT),
+  let i = f.Z.getWindowOpen(T.KJ3.CHANNEL_CALL_POPOUT),
     a = E.Z.getVoiceChannelId();
   i && a === r || (0, d.Z)(e)
 }
@@ -141,7 +141,7 @@ function j(e) {
   n && k(e, t), s.Z.dispatch({
     type: "STREAM_STOP",
     streamKey: e,
-    appContext: __OVERLAY__ ? S.IlC.OVERLAY : S.IlC.APP
+    appContext: __OVERLAY__ ? T.IlC.OVERLAY : T.IlC.APP
   })
 }
 
@@ -167,7 +167,7 @@ async function U(e, t, n) {
   });
   try {
     let e = await o.tn.get({
-      url: S.ANM.STREAM_PREVIEW(r),
+      url: T.ANM.STREAM_PREVIEW(r),
       query: {
         version: Date.now()
       },
@@ -191,7 +191,7 @@ async function U(e, t, n) {
 async function G(e) {
   try {
     await I.Z.post({
-      url: S.ANM.STREAM_NOTIFY(e),
+      url: T.ANM.STREAM_NOTIFY(e),
       oldFormErrors: true,
       trackedActionData: {
         event: a.NetworkActionNames.STREAM_NOTIFY
@@ -209,7 +209,7 @@ function B(e) {
 
 function Z(e, t) {
   o.tn.patch({
-    url: S.ANM.STREAM(e),
+    url: T.ANM.STREAM(e),
     body: {
       region: t
     },

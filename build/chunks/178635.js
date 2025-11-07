@@ -147,7 +147,7 @@ function v(e) {
   });
   if (r) returntrue;
   let i = null != (t = f.Z.getFeedbackConfig(e)) ? t : O[e],
-    a = [T, I, A],
+    a = [S, I, A],
     o = null != (n = i.eligibilityChecks) ? n : [];
   return a.every(e => e(i)) && o.every(e => e(i))
 }
@@ -164,11 +164,11 @@ function I(e) {
   })), !r && !i
 }
 
-function T(e) {
+function S(e) {
   return Math.random() < e.chance
 }
 
-function S(e, t) {
+function T(e, t) {
   var n, a, o;
   let s, l = null == (n = u.A2.getSetting()[t.feedbackType]) ? true : n.lastImpressionTime;
   return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (s = null != (a = i.K.get(t.storageKey)) ? a : true) || Number.isNaN(s) || u.A2.updateSetting(e => E(m({}, e), {
@@ -185,7 +185,7 @@ function A(e) {
       } = t;
       return n === e.group
     }))
-    if (!S(e, t)) returnfalse;
+    if (!T(e, t)) returnfalse;
   returntrue
 }
 

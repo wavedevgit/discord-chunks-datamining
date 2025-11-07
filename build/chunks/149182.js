@@ -51,9 +51,9 @@
   var v = Object.getPrototypeOf,
     I = v && v(v(D([])));
   I && I !== r && i.call(I, o) && (O = I);
-  var T = y.prototype = E.prototype = Object.create(O);
+  var S = y.prototype = E.prototype = Object.create(O);
 
-  function S(e) {
+  function T(e) {
     ["next", "throw", "return"].forEach(function(t) {
       e[t] = function(e) {
         return this._invoke(t, e)
@@ -188,25 +188,25 @@
       done: true
     }
   }
-  b.prototype = T.constructor = y, y.constructor = b, y[l] = b.displayName = "GeneratorFunction", u.isGeneratorFunction = function(e) {
+  b.prototype = S.constructor = y, y.constructor = b, y[l] = b.displayName = "GeneratorFunction", u.isGeneratorFunction = function(e) {
     var t = "function" == typeof e && e.constructor;
     return !!t && (t === b || "GeneratorFunction" === (t.displayName || t.name))
   }, u.mark = function(e) {
-    return Object.setPrototypeOf ? Object.setPrototypeOf(e, y) : (e.__proto__ = y, l in e || (e[l] = "GeneratorFunction")), e.prototype = Object.create(T), e
+    return Object.setPrototypeOf ? Object.setPrototypeOf(e, y) : (e.__proto__ = y, l in e || (e[l] = "GeneratorFunction")), e.prototype = Object.create(S), e
   }, u.awrap = function(e) {
     return {
       __await: e
     }
-  }, S(A.prototype), A.prototype[s] = function() {
+  }, T(A.prototype), A.prototype[s] = function() {
     return this
   }, u.AsyncIterator = A, u.async = function(e, t, n, r) {
     var i = new A(d(e, t, n, r));
     return u.isGeneratorFunction(t) ? i : i.next().then(function(e) {
       return e.done ? e.value : i.next()
     })
-  }, S(T), T[l] = "Generator", T[o] = function() {
+  }, T(S), S[l] = "Generator", S[o] = function() {
     return this
-  }, T.toString = function() {
+  }, S.toString = function() {
     return "[object Generator]"
   }, u.keys = function(e) {
     var t = [];

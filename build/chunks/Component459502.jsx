@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 459502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -21,66 +21,66 @@ var Chunk442837 = require("./442837.js"),
 function g(e) {
   let {
     channelId: t
-  } = e, g = (0, i.e7)([s.Z], () => s.Z.getChannel(t), [t]), b = (0, d.sz)(t), _ = null != (0, d.qY)(t), {
-    canManageGuildEvent: y
-  } = (0, o.XJ)(g), C = (0, i.cj)([u.ZP], () => b.reduce((e, t) => (e[t.id] = u.ZP.getUserCount(t.id, (0, p.DK)(t)), e), {}));
-  return b.length < 1 || _ ? null : (0, r.jsx)(r.Fragment, {
-    children: b.map(e => (0, r.jsx)(f.Z, {
-      icon: (0, r.jsx)(a.Que, {
+  } = e, g = (0, r.e7)([s.Z], () => s.Z.getChannel(t), [t]), b = (0, d.sz)(t), y = null != (0, d.qY)(t), {
+    canManageGuildEvent: C
+  } = (0, o.XJ)(g), _ = (0, r.cj)([u.ZP], () => b.reduce((e, t) => (e[t.id] = u.ZP.getUserCount(t.id, (0, p.DK)(t)), e), {}));
+  return b.length < 1 || y ? null : (0, i.jsx)(i.Fragment, {
+    children: b.map(e => (0, i.jsx)(f.Z, {
+      icon: (0, i.jsx)(a.Que, {
         size: "custom",
         color: "currentColor",
         height: 20,
         width: 20
       }),
       color: l.Z.unsafe_rawColors.GREEN_360.css,
-      title: h.intl.formatToPlainString(y(e) ? h.t["1vGXqM"] : h.t.xMJyla, {
+      title: h.intl.formatToPlainString(C(e) ? h.t["1vGXqM"] : h.t.xMJyla, {
         eventName: e.name
       }),
       description: h.intl.formatToPlainString(h.t.PTebCR, {
         startTime: (0, p.ub)(e.scheduled_start_time).startDateTimeString
       }),
       onClick: () => {
-        y(e) ? (0, a.ZDy)(async () => {
+        C(e) ? (0, a.ZDy)(async () => {
           let {
             default: t
           } = await Promise.all([n.e("84722"), n.e("51885")]).then(n.bind(n, 296864));
           return n => {
-            var i, l;
-            return (0, r.jsx)(t, (i = function(e) {
+            var r, l;
+            return (0, i.jsx)(t, (r = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
-                  r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                  i = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                   return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                  var r;
-                  r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
+                }))), i.forEach(function(t) {
+                  var i;
+                  i = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: i,
                     enumerable: true,
                     configurable: true,
                     writable: true
-                  }) : e[t] = r
+                  }) : e[t] = i
                 })
               }
               return e
             }({}, n), l = l = {
               event: e
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
+                var i = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, i)
               }
               return n
             })(Object(l)).forEach(function(e) {
-              Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-            }), i))
+              Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+            }), r))
           }
         }) : (0, c.bO)({
           eventId: e.id
         })
       },
-      userCount: C[e.id],
+      userCount: _[e.id],
       className: m.eventPrompt
     }, e.id))
   })

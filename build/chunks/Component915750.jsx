@@ -136,7 +136,7 @@ class L {
     var p = this;
     A(this, "id", true), A(this, "quests", true), A(this, "questContent", true), A(this, "triggeredByStatusChange", true), A(this, "trackGuildAndChannelMetadata", true), A(this, "questContentPosition", true), A(this, "questContentRowIndex", true), A(this, "sourceQuestContent", true), A(this, "heartbeatTimeoutId", true), A(this, "lastBeatTime", true), A(this, "minViewTimeReachedTimeoutId", true), A(this, "minViewTimeSeconds", true), A(this, "minViewportPercentage", true), A(this, "isQuestEnrollmentBlocked", true), A(this, "isRunning", false), A(this, "onMinViewTimeReached", () => {
       this.quests.forEach(e => {
-        (0, T.T)().info("".concat(e.config.messages.questName, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, b._b)(this.questContent)), {
+        (0, S.T)().info("".concat(e.config.messages.questName, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, b._b)(this.questContent)), {
           impressionId: this.id
         });
         let t = false,
@@ -149,7 +149,7 @@ class L {
         (0, u.S)((0, b._b)(this.questContent)).then(n => {
           (0, b.dA)({
             questId: e.id,
-            event: S.rMx.QUEST_CONTENT_VIEWED,
+            event: T.rMx.QUEST_CONTENT_VIEWED,
             trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
             properties: C({
               min_view_time_seconds: this.minViewTimeSeconds,
@@ -169,11 +169,11 @@ class L {
       p.quests.forEach(t => {
         if (null != p.lastBeatTime) {
           let n = Math.round(Date.now() - p.lastBeatTime);
-          (0, T.T)().info("".concat(t.config.messages.questName, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
+          (0, S.T)().info("".concat(t.config.messages.questName, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
             impressionId: p.id
           }), (0, b.dA)({
             questId: t.id,
-            event: S.rMx.QUEST_CONTENT_VIEW_TIME,
+            event: T.rMx.QUEST_CONTENT_VIEW_TIME,
             properties: C({
               is_termination_beat: e,
               viewed_time_ms: n,
@@ -206,11 +206,11 @@ class L {
       this.stop(false), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * R), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds);
       let e = (0, y.jY)(this.questContent);
       this.quests.forEach(t => {
-        (0, T.T)().info("".concat(t.config.messages.questName, " Quest became visible at ").concat((0, b._b)(this.questContent)), {
+        (0, S.T)().info("".concat(t.config.messages.questName, " Quest became visible at ").concat((0, b._b)(this.questContent)), {
           impressionId: this.id
         }), (0, b.dA)({
           questId: t.id,
-          event: S.rMx.QUEST_CONTENT_LOADED,
+          event: T.rMx.QUEST_CONTENT_LOADED,
           properties: C({
             triggered_by_status_change: this.triggeredByStatusChange,
             metadata_raw: null != e ? e : null

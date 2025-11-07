@@ -2,7 +2,7 @@
 /** chunk id: 938117, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -61,13 +61,13 @@ function I(e, t) {
   }), e
 }
 
-function T(e) {
+function S(e) {
   let {
     onLearnMore: t,
     selectedBackgroundOption: y,
     onSelectBackgroundOption: v,
-    currentDeviceId: T,
-    smallerBackgroundOptions: S,
+    currentDeviceId: S,
+    smallerBackgroundOptions: T,
     className: A
   } = e, C = (0, a.e7)([l.default], () => l.default.getCurrentUser()), [N, R] = i.useState(null), P = (0, p.Z)(), w = c.ZP.canUseCustomBackgrounds(C);
   i.useEffect(() => {
@@ -90,10 +90,10 @@ function T(e) {
       onSelectBackgroundOption: t,
       selectedBackgroundOption: n
     } = j.current;
-    e ? (0, _.FU)(n, T, {
+    e ? (0, _.FU)(n, S, {
       track: false
     }).catch(() => t(null)) : null != n && t(null)
-  }, [T]);
+  }, [S]);
   let k = function(e, t) {
       let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
       return new Promise(async r => {
@@ -107,10 +107,10 @@ function T(e) {
       })
     },
     U = e => {
-      v(e), (0, _.FU)(e, T, {
+      v(e), (0, _.FU)(e, S, {
         location: L.location
       }).then(() => R(null)).catch(() => {
-        R(b.intl.string(b.t.ejrSLe)), (0, _.FU)(null, T, {
+        R(b.intl.string(b.t.ejrSLe)), (0, _.FU)(null, S, {
           location: L.location
         })
       })
@@ -140,7 +140,7 @@ function T(e) {
         onSelectOption: U,
         onUpsellClick: G,
         onAddBackgroundImage: k,
-        smallerOptions: S
+        smallerOptions: T
       })
     })
   }) : null

@@ -106,7 +106,7 @@ function $(e) {
   }, [l.username]);
   let b = !l.isClaimed(),
     O = _ && !l.hasUniqueUsername() && !l.hasVerifiedEmailOrPhone() || b,
-    T = O ? Y.intl.string(Y.t["7Ngnyr"]) : true;
+    S = O ? Y.intl.string(Y.t["7Ngnyr"]) : true;
   return (0, r.jsxs)("div", {
     className: o()(W.field, s),
     children: [(0, r.jsx)("div", {
@@ -157,7 +157,7 @@ function $(e) {
         })
       })
     }), (0, r.jsx)(d.u, {
-      text: T,
+      text: S,
       children: (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: W.fieldButton,

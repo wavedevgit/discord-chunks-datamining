@@ -57,10 +57,10 @@ function f(e) {
     enabled: b,
     autoFocusElement: y,
     useVirtualFocus: O
-  } = e, v = r.useRef(b), I = u(c(t, f, _)), [T, S] = r.useState(false), [A, C] = r.useState(false), [N, R] = r.useState(false), [P] = r.useState(() => new o.$o(e => {
+  } = e, v = r.useRef(b), I = u(c(t, f, _)), [S, T] = r.useState(false), [A, C] = r.useState(false), [N, R] = r.useState(false), [P] = r.useState(() => new o.$o(e => {
     let [t, n] = e.split(",").map(Number);
     return () => {
-      S(true), g({
+      T(true), g({
         type: i.s.SET_FOCUSED_POSITION,
         x: t,
         y: n
@@ -92,21 +92,21 @@ function f(e) {
     }, [g, f, _, m, t, w]),
     [L, M] = r.useState(false);
   r.useEffect(() => {
-    if (!L || !T) return;
+    if (!L || !S) return;
     M(false);
     let e = u(c(t, f, _));
     if (null != e) return void w(e);
-    S(false);
+    T(false);
     let n = u(c(t));
     null != n && w(n)
-  }, [t, L, T, w, f, _]);
+  }, [t, L, S, w, f, _]);
   let j = r.useCallback(e => {
     v.current && null == e && M(true)
   }, []);
   r.useEffect(() => {
-    T && A && null != I && (w(I), C(false))
+    S && A && null != I && (w(I), C(false))
   }, [A, I]), r.useEffect(() => {
-    T && (N || D(f, _), R(false))
+    S && (N || D(f, _), R(false))
   }, [f, _]);
   let k = r.useCallback(e => {
       if (!v.current) return;
@@ -135,11 +135,11 @@ function f(e) {
           }), null != p ? p(f, _, e) : null != I && I.click()
       }
     }, [x, g, y, I, p, f, _]),
-    U = r.useCallback(e => e.currentTarget !== e.target ? (T || (S(true), R(true)), false) : T ? (x(false), false) : void(E && null != I ? D(f, _) : x(true)), [T, E, I, x, D, f, _]),
+    U = r.useCallback(e => e.currentTarget !== e.target ? (S || (T(true), R(true)), false) : S ? (x(false), false) : void(E && null != I ? D(f, _) : x(true)), [S, E, I, x, D, f, _]),
     G = r.useCallback(e => {
       if (e.target !== e.currentTarget) {
         if (e.currentTarget.contains(e.relatedTarget)) returnfalse;
-        S(false)
+        T(false)
       }
     }, []),
     B = r.useMemo(() => Math.max(...n), [n]),
@@ -147,12 +147,12 @@ function f(e) {
       role: "grid",
       "aria-rowcount": n.length,
       "aria-colcount": B,
-      tabIndex: T && E ? false : 0,
+      tabIndex: S && E ? false : 0,
       "data-ref-id": t,
       onKeyDown: k,
       onFocus: U,
       onBlur: G
-    }), [n.length, B, T, E, t, k, U, G]),
+    }), [n.length, B, S, E, t, k, U, G]),
     F = r.useCallback((e, n) => {
       let r = {
         role: "gridcell",

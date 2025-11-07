@@ -51,8 +51,8 @@ var Chunk260674 = require("./260674.js"),
     return "string" == typeof e || "number" == typeof e || "boolean" == typeof e || "symbol" == typeof e || "bigint" == typeof e
   },
   h = {},
-  m = function e(t, n, a, o, s, c, d, f, m, g, E, b, y, O, v, I, T, S) {
-    for (var A, C = t, N = S, R = 0, P = false; true !== (N = N.get(h)) && !P;) {
+  m = function e(t, n, a, o, s, c, d, f, m, g, E, b, y, O, v, I, S, T) {
+    for (var A, C = t, N = T, R = 0, P = false; true !== (N = N.get(h)) && !P;) {
       var w = N.get(t);
       if (R += 1, true !== w)
         if (w === R) throw RangeError("Cyclic object value");
@@ -62,10 +62,10 @@ var Chunk260674 = require("./260674.js"),
     if ("function" == typeof g ? C = g(n, C) : C instanceof Date ? C = y(C) : "comma" === a && l(C) && (C = i.maybeMap(C, function(e) {
         return e instanceof Date ? y(e) : e
       })), null === C) {
-      if (c) return m && !I ? m(n, _.encoder, T, "key", O) : n;
+      if (c) return m && !I ? m(n, _.encoder, S, "key", O) : n;
       C = ""
     }
-    if (p(C) || i.isBuffer(C)) return m ? [v(I ? n : m(n, _.encoder, T, "key", O)) + "=" + v(m(C, _.encoder, T, "value", O))] : [v(n) + "=" + v(String(C))];
+    if (p(C) || i.isBuffer(C)) return m ? [v(I ? n : m(n, _.encoder, S, "key", O)) + "=" + v(m(C, _.encoder, S, "value", O))] : [v(n) + "=" + v(String(C))];
     var D = [];
     if (true === C) return D;
     if ("comma" === a && l(C)) I && m && (C = i.maybeMap(C, m)), A = [{
@@ -85,9 +85,9 @@ var Chunk260674 = require("./260674.js"),
       if (!d || null !== U) {
         var G = b && f ? String(k).replace(/\./g, "%2E") : String(k),
           B = l(C) ? "function" == typeof a ? a(M, G) : M : M + (b ? "." + G : "[" + G + "]");
-        S.set(t, R);
+        T.set(t, R);
         var Z = r();
-        Z.set(h, S), u(D, e(U, B, a, o, s, c, d, f, "comma" === a && I && l(C) ? null : m, g, E, b, y, O, v, I, T, Z))
+        Z.set(h, T), u(D, e(U, B, a, o, s, c, d, f, "comma" === a && I && l(C) ? null : m, g, E, b, y, O, v, I, S, Z))
       }
     }
     return D

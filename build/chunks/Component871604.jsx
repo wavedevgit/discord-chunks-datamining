@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -71,7 +71,7 @@ function R(e) {
   var {
     user: t,
     closePopout: n
-  } = e, S = C(e, ["user", "closePopout"]);
+  } = e, T = C(e, ["user", "closePopout"]);
   let N = i.useRef(null),
     R = (0, a.e7)([y.Z], () => {
       var e;
@@ -95,7 +95,7 @@ function R(e) {
           applicationId: R.id
         }, R))
     }, [R, w, D, null == P ? true : P.guild_id, n]),
-    L = w ? T.intl.string(T.t["Cia+A8"]) : T.intl.string(T.t.NgXl3C);
+    L = w ? S.intl.string(S.t["Cia+A8"]) : S.intl.string(S.t.NgXl3C);
   if (null == R || !(0, d.Eb)(R)) return null;
   let {
     customInstallUrl: M
@@ -109,12 +109,12 @@ function R(e) {
       return (0, r.jsx)(o.v2r, {
         navId: "user-bot-profile-add-app",
         onClose: t,
-        "aria-label": T.intl.string(T.t.dbkxVm),
+        "aria-label": S.intl.string(S.t.dbkxVm),
         onSelect: true,
         children: (0, r.jsx)(o.kSQ, {
           children: (0, r.jsx)(o.sNh, {
             id: "copy",
-            label: T.intl.string(T.t.XWDihq),
+            label: S.intl.string(S.t.XWDihq),
             action: () => (0, g.JG)((0, u.J)(R))
           })
         })
@@ -131,7 +131,7 @@ function R(e) {
         icon: k,
         onContextMenu: t,
         onClick: x
-      }, n, S))
+      }, n, T))
     }
   }) : (0, r.jsx)(v.O1, A({
     action: "PRESS_ADD_APP",
@@ -139,5 +139,5 @@ function R(e) {
     icon: k,
     onClick: x,
     variant: "primary"
-  }, S))
+  }, T))
 }

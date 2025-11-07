@@ -166,7 +166,7 @@ function I(e) {
       ref: u,
       lineHeight: d,
       lineCount: h
-    } = T(),
+    } = S(),
     m = i.useMemo(() => {
       if (null == d || null == h) return {
         key: 0
@@ -220,7 +220,7 @@ function I(e) {
   })
 }
 
-function T() {
+function S() {
   let e = Chunk647438.useRef(null),
     [t, n] = Chunk647438.useState(null),
     [r, a] = Chunk647438.useState(null);

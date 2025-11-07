@@ -6,7 +6,7 @@ require.d(exports, {
   OQ: () => O,
   RE: () => I,
   Xe: () => N,
-  dv: () => T,
+  dv: () => S,
   rS: () => v,
   t0: () => y
 }), require("./388685.js"), require("./539854.js");
@@ -98,7 +98,7 @@ function I(e, t, n) {
     rejectWithError: false
   })
 }
-async function T(e) {
+async function S(e) {
   let {
     guildId: t,
     emojiId: n,
@@ -120,7 +120,7 @@ async function T(e) {
   }
 }
 
-function S(e) {
+function T(e) {
   if (p.Z.totalUnavailableGuilds > 0 || !f.Z.isConnected()) return e;
   let t = e.map(e => {
     var t;
@@ -136,7 +136,7 @@ function A(e) {
 
 function C(e) {
   let t = A(e);
-  null != t && _.DZ.updateAsync("favoriteEmojis", e => (e.emojis = S(e.emojis), i().size(e.emojis) >= E.oX) ? (m.Z.show({
+  null != t && _.DZ.updateAsync("favoriteEmojis", e => (e.emojis = T(e.emojis), i().size(e.emojis) >= E.oX) ? (m.Z.show({
     title: b.intl.string(b.t["+XYXtZ"]),
     body: b.intl.formatToPlainString(b.t.JaIyFi, {
       count: E.oX
@@ -147,7 +147,7 @@ function C(e) {
 function N(e) {
   let t = A(e);
   null != t && _.DZ.updateAsync("favoriteEmojis", e => {
-    if (e.emojis = S(e.emojis), !e.emojis.includes(t)) returnfalse;
+    if (e.emojis = T(e.emojis), !e.emojis.includes(t)) returnfalse;
     e.emojis = e.emojis.filter(e => t !== e)
   }, E.fy.INFREQUENT_USER_ACTION)
 }

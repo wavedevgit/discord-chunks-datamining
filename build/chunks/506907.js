@@ -30,9 +30,9 @@ function u(e) {
       firstDayOfWeek: v
     } = e,
     I = (0, c.useMemo)(() => h(_.calendar), [h, _.calendar]),
-    [T, S] = (0, l.z)(e.value, null != (t = e.defaultValue) ? t : null, e.onChange),
-    A = (0, c.useMemo)(() => T ? (0, a.Mw)((0, a.WG)(T), I) : null, [T, I]),
-    C = (0, c.useMemo)(() => T && "timeZone" in T ? T.timeZone : _.timeZone, [T, _.timeZone]),
+    [S, T] = (0, l.z)(e.value, null != (t = e.defaultValue) ? t : null, e.onChange),
+    A = (0, c.useMemo)(() => S ? (0, a.Mw)((0, a.WG)(S), I) : null, [S, I]),
+    C = (0, c.useMemo)(() => S && "timeZone" in S ? S.timeZone : _.timeZone, [S, _.timeZone]),
     N = (0, c.useMemo)(() => e.focusedValue ? (0, r.Me)((0, a.Mw)((0, a.WG)(e.focusedValue), I), g, E) : true, [e.focusedValue, I, g, E]),
     R = (0, c.useMemo)(() => (0, r.Me)(e.defaultFocusedValue ? (0, a.Mw)((0, a.WG)(e.defaultFocusedValue), I) : A || (0, a.Mw)((0, o.Lg)(C), I), g, E), [e.defaultFocusedValue, A, C, I, g, E]),
     [P, w] = (0, l.z)(N, R, e.onFocusChange),
@@ -66,8 +66,8 @@ function u(e) {
   function B(t) {
     if (!e.isDisabled && !e.isReadOnly) {
       let e = t;
-      if (null === e) return void S(null);
-      e = (0, r.Me)(e, g, E), (e = (0, r.UC)(e, D, y)) && (e = (0, a.Mw)(e, (null == T ? true : T.calendar) || new(0, s.IQ)), T && "hour" in T ? S(T.set(e)) : S(e))
+      if (null === e) return void T(null);
+      e = (0, r.Me)(e, g, E), (e = (0, r.UC)(e, D, y)) && (e = (0, a.Mw)(e, (null == S ? true : S.calendar) || new(0, s.IQ)), S && "hour" in S ? T(S.set(e)) : T(e))
     }
   }(0, r.wp)(P, g, E) ? w((0, r.Me)(P, g, E)): 0 > P.compare(D) ? x((0, r.N2)(P, m, p, g, E)) : P.compare(j) > 0 && x((0, r.Yn)(P, m, p, g, E));
   let Z = (0, c.useMemo)(() => !!A && (!!(y && y(A)) || (0, r.wp)(A, g, E)), [A, y, g, E]),

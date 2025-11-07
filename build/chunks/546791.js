@@ -7,10 +7,10 @@ require.d(exports, {
   LI: () => b,
   MH: () => D,
   Qr: () => E,
-  _p: () => S,
+  _p: () => T,
   f0: () => v,
   iB: () => O,
-  jV: () => T,
+  jV: () => S,
   k0: () => N,
   lW: () => P,
   lx: () => y,
@@ -72,11 +72,11 @@ let f = 60,
   O = e => e.display_type === c.MY.USER_ADD || e.display_type === c.MY.USER_INTERACTION || e.display_type === c.MY.USER_CALLED,
   v = e => e.display_type === c.MY.GUILD_ADD || e.display_type === c.MY.GUILD_INTERACTION,
   I = e => e.display_type === c.MY.PURCHASES,
-  T = e => {
+  S = e => {
     for (let t of Object.values(c.MY))
       if (t.toString() === e) return t
   },
-  S = e => {
+  T = e => {
     let t = A(e);
     return 0 === t.size ? [] : Array.from(t.entries()).sort((e, t) => e[1].priority - t[1].priority)
   },

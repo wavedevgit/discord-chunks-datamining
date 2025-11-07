@@ -52,13 +52,13 @@ function _(e) {
       loading: O = false,
       confirmButtonColor: v = s.Button.Colors.RED,
       focusCancel: I = false,
-      impression: T
+      impression: S
     } = e,
-    S = i.useRef(null);
+    T = i.useRef(null);
   return i.useEffect(() => {
     I || setTimeout(() => {
       var e;
-      return null == (e = S.current) ? true : e.focus()
+      return null == (e = T.current) ? true : e.focus()
     }, 0)
   }, [I]), i.useLayoutEffect(() => () => null == E ? true : E()), null != _ && (t = (0, r.jsx)(s.Button, {
     "data-migration-pending": true,
@@ -75,7 +75,7 @@ function _(e) {
     children: _
   })), null != f && (n = (0, r.jsx)(s.Button, {
     "data-migration-pending": true,
-    buttonRef: S,
+    buttonRef: T,
     type: "submit",
     size: s.Button.Sizes.MEDIUM,
     color: v,
@@ -92,7 +92,7 @@ function _(e) {
   })), (0, r.jsxs)(c.Y0, {
     className: p,
     transitionState: y,
-    impression: T,
+    impression: S,
     parentComponent: "ConfirmModal",
     children: [null != a ? (0, r.jsx)(c.xB, {
       "data-migration-pending": true,

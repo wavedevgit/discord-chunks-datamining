@@ -86,8 +86,8 @@ function p(e) {
     required: O,
     onQueryChange: v,
     onKeyDown: I,
-    onFocus: T,
-    onBlur: S
+    onFocus: S,
+    onBlur: T
   } = b, {
     isOpen: A,
     setIsOpen: C,
@@ -113,9 +113,9 @@ function p(e) {
       errorMessage: h,
       successMessage: m,
       wrapTags: g,
-      onBlur: S,
+      onBlur: T,
       onQueryChange: v,
-      onFocus: T,
+      onFocus: S,
       onKeyDown: I,
       showChevronButton: true,
       ref: N.setReference

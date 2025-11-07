@@ -5,7 +5,7 @@ require.d(exports, {
   D$: () => P,
   N4: () => j,
   UI: () => R,
-  Uu: () => S,
+  Uu: () => T,
   cS: () => w,
   cZ: () => k,
   e1: () => B,
@@ -66,13 +66,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S() {
+function T() {
   return {
     text: true,
     image: true,
@@ -125,19 +125,19 @@ function L(e) {
   let n = null == e || null == (t = e.answers) ? true : t.map((e, t) => {
       var n, r;
       let i = null == (n = e.poll_media) ? true : n.emoji,
-        a = T(v({}, e.poll_media), {
+        a = S(v({}, e.poll_media), {
           emoji: null != i ? {
             id: i.id,
             name: null != (r = i.name) ? r : ""
           } : true
         });
-      return T(v({}, e), {
+      return S(v({}, e), {
         answer_id: t + 1,
         poll_media: a
       })
     }),
     r = (null == e ? true : e.duration) != null ? x(e.duration) : "0";
-  return T(v({}, e), {
+  return S(v({}, e), {
     expiry: r,
     answers: n
   })

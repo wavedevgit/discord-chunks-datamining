@@ -5,7 +5,7 @@ require.d(exports, {
   FH: () => C,
   YG: () => A,
   ZP: () => w,
-  uo: () => S
+  uo: () => T
 }), require("./35282.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,12 +58,12 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = /\.gif($|\?|#)/i,
+let T = /\.gif($|\?|#)/i,
   A = /\.webp($|\?|#)/i,
   C = /\.avif($|\?|#)/i,
   N = /\.png($|\?|#)/i,
@@ -77,7 +77,7 @@ class w extends(r = Chunk647438.Component) {
       animated: r,
       srcIsAnimated: i
     } = e;
-    return r || S.test(null != n && "" !== n ? n : t) || null != i && i && (A.test(null != n && "" !== n ? n : t) || C.test(null != n && "" !== n ? n : t))
+    return r || T.test(null != n && "" !== n ? n : t) || null != i && i && (A.test(null != n && "" !== n ? n : t) || C.test(null != n && "" !== n ? n : t))
   }
   static isSrcPNG(e) {
     let {
@@ -195,10 +195,10 @@ class w extends(r = Chunk647438.Component) {
       }).enabled) return;
     let v = await fetch(a.url).catch(() => true),
       I = null == v || null == (t = v.headers) ? true : t.get("content-length"),
-      T = null != I ? Number(I) : null,
-      S = Date.now() - l;
+      S = null != I ? Number(I) : null,
+      T = Date.now() - l;
     m.default.track(b.rMx.IMAGE_LOADING_COMPLETED, {
-      duration_ms: S,
+      duration_ms: T,
       requested_height: a.height,
       requested_width: a.width,
       height: g,
@@ -212,7 +212,7 @@ class w extends(r = Chunk647438.Component) {
       data_saving_mode: p.ZP.dataSavingMode,
       low_quality_image_mode: p.ZP.dataSavingMode,
       trigger: o,
-      size: T,
+      size: S,
       message_id: null == O || null == (n = O.message) ? true : n.id,
       message_sent_timestamp: null == O || null == (r = O.message) ? true : r.timestamp.getTime(),
       connection_type: h.Z.getType(),
@@ -246,7 +246,7 @@ class w extends(r = Chunk647438.Component) {
       {
         format: l,
         quality: c
-      } = w.getFormatQuality(T(v({}, this.props), {
+      } = w.getFormatQuality(S(v({}, this.props), {
         freeze: t
       }));
     return (0, f.Q4)({
@@ -322,8 +322,8 @@ class w extends(r = Chunk647438.Component) {
       maxWidth: y,
       maxHeight: O,
       onClick: I,
-      renderAccessory: T,
-      tabIndex: S,
+      renderAccessory: S,
+      tabIndex: T,
       limitResponsiveWidth: A,
       useFullWidth: C,
       placeholder: N,
@@ -346,7 +346,7 @@ class w extends(r = Chunk647438.Component) {
       mediaLayoutType: this.getType(),
       limitResponsiveWidth: A,
       useFullWidth: C,
-      tabIndex: S,
+      tabIndex: T,
       width: U,
       height: G,
       src: "",
@@ -382,7 +382,7 @@ class w extends(r = Chunk647438.Component) {
         if (w.isAnimated(this.props)) {
           B.onMouseLeave = this.onMouseLeave;
           let e = (Chunk286379 || L || M) && (null == Chunk740492 || Chunk740492) && w.visibilityObserver.isVisible(this);
-          module ? (B.src = this.getSrc(k), B.renderAccessory = T) : (B.src = this.getSrc(k, !Chunk797614 || !Chunk286379), B.renderAccessory = this.renderAccessory), null != Chunk134432 && (B.children = t => {
+          module ? (B.src = this.getSrc(k), B.renderAccessory = S) : (B.src = this.getSrc(k, !Chunk797614 || !Chunk286379), B.renderAccessory = this.renderAccessory), null != Chunk134432 && (B.children = t => {
             let {
               src: n,
               size: r,

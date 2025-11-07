@@ -28,9 +28,9 @@ function h(e, t, n) {
     onRowAction: O,
     onCellAction: v,
     escapeKeyBehavior: I = "clearSelection",
-    shouldSelectOnPressUp: T
+    shouldSelectOnPressUp: S
   } = e, {
-    selectionManager: S
+    selectionManager: T
   } = t;
   e["aria-label"] || e["aria-labelledby"] || console.warn("An aria-label or aria-labelledby prop is required for accessibility.");
   let A = (0, d.X)({
@@ -54,7 +54,7 @@ function h(e, t, n) {
       collectionProps: P
     } = (0, p.g)({
       ref: n,
-      selectionManager: S,
+      selectionManager: T,
       keyboardDelegate: R,
       isVirtualized: h,
       scrollRef: b,
@@ -68,22 +68,22 @@ function h(e, t, n) {
       onRowAction: O,
       onCellAction: v
     },
-    shouldSelectOnPressUp: T
+    shouldSelectOnPressUp: S
   });
   let D = (0, o.j)({
-      selectionManager: S,
+      selectionManager: T,
       hasItemActions: !!(O || v)
     }),
     x = (0, l.z)(e, {
       labelable: true
     }),
     L = (0, u.useCallback)(e => {
-      if (S.isFocused) {
-        e.currentTarget.contains(e.target) || S.setFocused(false);
+      if (T.isFocused) {
+        e.currentTarget.contains(e.target) || T.setFocused(false);
         return
       }
-      e.currentTarget.contains(e.target) && S.setFocused(true)
-    }, [S]),
+      e.currentTarget.contains(e.target) && T.setFocused(true)
+    }, [T]),
     M = (0, u.useMemo)(() => ({
       onBlur: P.onBlur,
       onFocus: L
@@ -94,7 +94,7 @@ function h(e, t, n) {
     k = (0, c.d)(x, {
       role: "grid",
       id: w,
-      "aria-multiselectable": "multiple" === S.selectionMode ? "true" : true
+      "aria-multiselectable": "multiple" === T.selectionMode ? "true" : true
     }, t.isKeyboardNavigationDisabled ? M : P, 0 === t.collection.size && {
       tabIndex: j ? false : 0
     } || true, D);

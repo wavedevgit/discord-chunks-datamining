@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 811423, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -12,10 +12,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(e, t) {
-  let n = (0, i.e7)([o.Z], () => o.Z.getChannel(t)),
+  let n = (0, r.e7)([o.Z], () => o.Z.getChannel(t)),
     c = null == n ? true : n.getGuildId();
-  return null == e ? null : (0, r.jsx)(l.kSQ, {
-    children: (0, r.jsx)(l.sNh, {
+  return null == e ? null : (0, i.jsx)(l.kSQ, {
+    children: (0, i.jsx)(l.sNh, {
       id: "report-app",
       color: "danger",
       label: s.intl.string(s.t.NgA5vp),

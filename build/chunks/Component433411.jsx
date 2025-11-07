@@ -32,7 +32,7 @@ function b(e) {
     isTryItOut: v = false
   } = e, {
     analyticsLocations: I
-  } = (0, c.ZP)(), T = (0, f.Z)("enable_avatar_decoration_uploads"), S = (0, h.i3)({
+  } = (0, c.ZP)(), S = (0, f.Z)("enable_avatar_decoration_uploads"), T = (0, h.i3)({
     user: t,
     guildId: null == n ? true : n.id
   }), {
@@ -45,7 +45,7 @@ function b(e) {
     analyticsLocations: I,
     guild: n,
     isTryItOut: v
-  }), [I, n, v]), R = v || true !== A ? null != A : null != S;
+  }), [I, n, v]), R = v || true !== A ? null != A : null != T;
 
   function P() {
     v ? (0, p.Xz)(null) : (0, h.PO)(null, null == n ? true : n.id)
@@ -76,7 +76,7 @@ function b(e) {
           onClick: P
         })
       })]
-    }), t.isStaff() && T && (0, r.jsx)(O, {
+    }), t.isStaff() && S && (0, r.jsx)(O, {
       user: t
     })]
   })

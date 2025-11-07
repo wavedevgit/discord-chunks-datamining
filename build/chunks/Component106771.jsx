@@ -1,7 +1,8 @@
-/** Chunk was on 35755 **/
-/** chunk id: 106771, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 106771, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,90 +17,95 @@ var Chunk951288 = require("./951288.js"),
   Chunk934347 = require("./934347.js"),
   Chunk413097 = require("./413097.js");
 
-function h(e) {
+function h(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function m(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      h(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function g(e) {
   var t;
   let {
     command: n,
     application: h,
-    onClick: v,
-    query: y,
-    searchResultsPosition: g
-  } = e, x = l.useCallback(e => {
-    if ((0, s.BQ)(h)) {
-      let t = h instanceof o.ZP ? h : o.ZP.createFromServer(h);
-      (0, a.vq)(e, e => (0, i.jsx)(u.Z, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = i
-          })
-        }
-        return e
-      }({
+    onClick: g,
+    query: E,
+    searchResultsPosition: b
+  } = e, y = i.useCallback(e => {
+    if ((0, l.BQ)(h)) {
+      let t = h instanceof s.ZP ? h : s.ZP.createFromServer(h);
+      (0, o.vq)(e, e => (0, r.jsx)(u.Z, m({
         application: t
       }, e)))
     }
   }, [h]), {
-    iconURL: b,
-    name: N,
-    description: j
-  } = l.useMemo(() => (0, s.sl)(h, {
-    fakeAppIconURL: f
-  }), [h]), C = l.useMemo(() => {
+    iconURL: O,
+    name: v,
+    description: I
+  } = i.useMemo(() => (0, l.sl)(h, {
+    fakeAppIconURL: p
+  }), [h]), S = i.useMemo(() => {
     var e;
-    let t = null != (e = null == n ? true : n.displayDescription) ? e : j;
+    let t = null != (e = null == n ? true : n.displayDescription) ? e : I;
     return null == t ? null : (0, c.ae)(t, true)
-  }, [j, null == n ? true : n.displayDescription]), {
-    trackSearchResultsItemImpressionRef: E
-  } = (0, p.Z)({
+  }, [I, null == n ? true : n.displayDescription]), {
+    trackSearchResultsItemImpressionRef: T
+  } = (0, f.Z)({
     applicationId: h.id,
     commandId: null == n ? true : n.id,
-    query: y,
-    searchResultsPosition: g
+    query: E,
+    searchResultsPosition: b
   });
-  return (0, i.jsx)(r.P3F, {
-    className: m.clickable,
+  return (0, r.jsx)(a.P3F, {
+    className: _.clickable,
     innerRef: e => {
-      E.current = e
+      T.current = e
     },
-    onClick: v,
-    onContextMenu: x,
-    children: (0, i.jsxs)(r.Rny, {
-      className: m.focusBlock,
-      children: [(0, i.jsx)(d.Z, {
-        src: b,
-        className: m.icon,
+    onClick: g,
+    onContextMenu: y,
+    children: (0, r.jsxs)(a.Rny, {
+      className: _.focusBlock,
+      children: [(0, r.jsx)(d.Z, {
+        src: O,
+        className: _.icon,
         "aria-hidden": true,
         rendersPlaceholder: true
-      }), (0, i.jsxs)("div", {
-        className: m.cmdDetails,
-        children: [(0, i.jsx)(r.Heading, {
+      }), (0, r.jsxs)("div", {
+        className: _.cmdDetails,
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           color: "header-primary",
           lineClamp: 1,
-          children: null != (t = null == n ? true : n.displayName) ? t : N
-        }), (0, i.jsx)(r.Text, {
+          children: null != (t = null == n ? true : n.displayName) ? t : v
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
-          children: C
+          children: S
         })]
-      }), null != n ? (0, i.jsx)(r.Text, {
-        className: m.cmdAppName,
+      }), null != n ? (0, r.jsx)(a.Text, {
+        className: _.cmdAppName,
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: N
-      }) : null, (0, i.jsx)("div", {
-        className: m.underline
+        children: v
+      }) : null, (0, r.jsx)("div", {
+        className: _.underline
       })]
     })
   })

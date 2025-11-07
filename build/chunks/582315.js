@@ -28,19 +28,19 @@ function p(e) {
     isDisabled: O,
     onAction: v,
     allowsDifferentPressOrigin: I,
-    linkBehavior: T = "action"
-  } = e, S = (0, i.tv)();
+    linkBehavior: S = "action"
+  } = e, T = (0, i.tv)();
   t = (0, a.Me)(t);
   let A = e => {
     if ("keyboard" === e.pointerType && (0, r.FJ)(e)) n.toggleSelection(p);
     else {
       if ("none" === n.selectionMode) return;
       if (n.isLink(p)) {
-        if ("selection" === T && g.current) {
+        if ("selection" === S && g.current) {
           let t = n.getItemProps(p);
-          S.open(g.current, e, t.href, t.routerOptions), n.setSelectedKeys(n.selectedKeys);
+          T.open(g.current, e, t.href, t.routerOptions), n.setSelectedKeys(n.selectedKeys);
           return
-        } else if ("override" === T || "none" === T) return
+        } else if ("override" === S || "none" === S) return
       }
       "single" === n.selectionMode ? n.isSelected(p) && !n.disallowEmptySelection ? n.toggleSelection(p) : n.replaceSelection(p) : e && e.shiftKey ? n.extendSelection(p) : "toggle" === n.selectionBehavior || e && ((0, o.y)(e) || "touch" === e.pointerType || "virtual" === e.pointerType) ? n.toggleSelection(p) : n.replaceSelection(p)
     }
@@ -57,9 +57,9 @@ function p(e) {
       e.target === g.current && n.setFocusedKey(p)
     }
   };
-  let N = n.isLink(p) && "override" === T,
+  let N = n.isLink(p) && "override" === S,
     R = v && "action" === e.UNSTABLE_itemBehavior,
-    P = n.isLink(p) && "selection" !== T && "none" !== T,
+    P = n.isLink(p) && "selection" !== S && "none" !== S,
     w = !O && n.canSelectItem(p) && !N && !R,
     D = (v || P) && !O,
     x = D && ("replace" === n.selectionBehavior ? !w : !w || n.isEmpty),
@@ -77,7 +77,7 @@ function p(e) {
           bubbles: true
         }))
       }
-      P && g.current && S.open(g.current, e, B.href, B.routerOptions)
+      P && g.current && T.open(g.current, e, B.href, B.routerOptions)
     },
     F = {
       ref: g
@@ -117,7 +117,7 @@ function p(e) {
     }
   }), K = e => {
     "touch" === j.current && U.current && e.preventDefault()
-  }, z = "none" !== T && n.isLink(p) ? e => {
+  }, z = "none" !== S && n.isLink(p) ? e => {
     i.nG.isOpening || e.preventDefault()
   } : true;
   return {

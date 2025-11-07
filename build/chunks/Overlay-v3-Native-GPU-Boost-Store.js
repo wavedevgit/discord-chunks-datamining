@@ -66,11 +66,11 @@ function I(e) {
   n === c.GO.DisabledGPUBoost && E(t), n === c.GO.ForceGPUBoost && g(c.zS.DEV_FORCED_GPU_BOOST, t)
 }
 
-function T() {
+function S() {
   b()
 }
 
-function S(e) {
+function T(e) {
   g(c.zS.OVERLAY_UNLOCKED, !e.locked)
 }
 
@@ -99,9 +99,9 @@ f(N, "displayName", "Overlay-v3-Native-GPU-Boost-Store");
 let R = new N(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
     OVERLAY_SET_GPU_BOOST_REQUESTED: v,
     OVERLAY_RENDER_DEBUG_MODE: I,
-    OVERLAY_CRASHED: T,
+    OVERLAY_CRASHED: S,
     OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: A,
     OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: C,
-    OVERLAY_SET_INPUT_LOCKED: S
+    OVERLAY_SET_INPUT_LOCKED: T
   }),
   P = R

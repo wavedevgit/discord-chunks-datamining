@@ -61,8 +61,8 @@ function y(e, t) {
 let O = "scientist:triggered",
   v = "exerimentOverrides",
   I = "userExperimentOverrides",
-  T = "guildExperimentOverrides",
-  S = 1,
+  S = "guildExperimentOverrides",
+  T = 1,
   A = new Chunk710845.Z("ExperimentStore"),
   C = false,
   N = {},
@@ -474,7 +474,7 @@ function ec(e) {
   let {
     isSwitchingAccount: t
   } = e;
-  s.K.remove(O), t || (s.K.remove(v), s.K.remove(I), s.K.remove(T), M = {}, j = {}), D = {}, w = y(E({}, w), {
+  s.K.remove(O), t || (s.K.remove(v), s.K.remove(I), s.K.remove(S), M = {}, j = {}), D = {}, w = y(E({}, w), {
     rawUserExperiments: []
   }), N = {}, C = false
 }
@@ -485,7 +485,7 @@ function eu() {
 
 function ed() {
   let e = Chunk433517.K.get(O);
-  if (null == module || module.v !== S) return {};
+  if (null == module || module.v !== T) return {};
   let t = module.e,
     n = Date.now(),
     r = false;
@@ -517,7 +517,7 @@ function ef() {
 
 function e_() {
   var e, t, n;
-  let r = [null != (e = Chunk433517.K.get(v)) ? module : {}, null != (t = Chunk433517.K.get(I)) ? exports : {}, null != (n = Chunk433517.K.get(T)) ? require : {}];
+  let r = [null != (e = Chunk433517.K.get(v)) ? module : {}, null != (t = Chunk433517.K.get(I)) ? exports : {}, null != (n = Chunk433517.K.get(S)) ? require : {}];
   M = {}, j = {};
   let a = !i().isEmpty(Chunk392711[0]);
   for (let e of Chunk392711)
@@ -537,7 +537,7 @@ function ep() {
     })
   }
   try {
-    Chunk433517.K.set(T, j)
+    Chunk433517.K.set(S, j)
   } catch (e) {
     A.error("Error saving guild experiment overrides, unsaved data will be lost", module), Chunk626135.default.track(Chunk981631.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
       module: "discord_app",
@@ -549,7 +549,7 @@ function ep() {
 function eh(e) {
   try {
     s.K.set(O, {
-      v: S,
+      v: T,
       e: e
     })
   } catch (e) {

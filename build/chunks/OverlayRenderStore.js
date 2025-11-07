@@ -100,7 +100,7 @@ let D = new Chunk710845.Z("OverlayRenderStore"),
 
 function W(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : g.l6.Info;
-  (0, T._l)({
+  (0, S._l)({
     pid: e,
     name: t,
     type: g.C7.Renderer,
@@ -456,7 +456,7 @@ function em(e) {
   }, e))
 }
 async function eg(e, t) {
-  if (!S.iP) return void D.verbose("setOverlayEnabled: not supported");
+  if (!T.iP) return void D.verbose("setOverlayEnabled: not supported");
   D.info("setOverlayEnabled: supported", {
     newLegacyEnabled: e,
     newOopEnabled: t
@@ -529,17 +529,17 @@ function ev(e) {
   }), ee(t) ? eI() : eo(t)) : es(t), true
 }
 async function eI() {
-  await eT(), await (0, Chunk379649._v)(2e3);
+  await eS(), await (0, Chunk379649._v)(2e3);
   let e = Q(),
     t = new Set([...Chunk594190.ZP.getRunningGames().filter(e => f.ZP.getOverlayEnabledForGame(e)).map(e => e.pid), ...module]);
   for (let n of (D.info("Retracking ".concat(exports.size, " games (").concat(module.length, " already tracked)")), exports)) await eo(require), await (0, Chunk379649._v)(16);
   D.info("Retracked ".concat(module.length, " games"))
 }
-async function eT() {
+async function eS() {
   for (let e of Q()) await es(module), await (0, Chunk379649._v)(16)
 }
 
-function eS(e) {
+function eT(e) {
   return D.error("Overlay reload for pid", {
     pid: e.pid
   }), eI(), true
@@ -595,7 +595,7 @@ function eM() {
 }
 
 function ej() {
-  j = false, Z = null, eT()
+  j = false, Z = null, eS()
 }
 class ek extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -686,7 +686,7 @@ let eU = new ek(Chunk570140.Z, !k ? {} : {
     OVERLAY_UPDATE_OVERLAY_STATE: eN,
     OVERLAY_SET_LIMITED_INTERACTION_OVERRIDE: eR,
     OVERLAY_CRASHED: eA,
-    OVERLAY_RELOAD: eS,
+    OVERLAY_RELOAD: eT,
     OVERLAY_FOCUSED: eD,
     OVERLAY_SUCCESSFULLY_SHOWN: ex,
     OVERLAY_RENDER_DEBUG_MODE: eP,

@@ -1,12 +1,12 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 823789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => i
+  N: () => r
 });
 var Chunk570140 = require("./570140.js");
 
-function i(e, t) {
-  r.Z.dispatch({
+function r(e, t) {
+  i.Z.dispatch({
     type: "VIDEO_ZOOM_UPDATE",
     streamId: e,
     zoom: t

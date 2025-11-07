@@ -4,7 +4,7 @@
 require.d(exports, {
   JS: () => I,
   Qv: () => C,
-  ZP: () => S,
+  ZP: () => T,
   fD: () => A,
   w1: () => N
 }), require("./997841.js"), require("./704826.js"), require("./35282.js");
@@ -31,9 +31,9 @@ var Chunk493683 = require("./493683.js"),
   I = function(e) {
     return e[e.START = 0] = "START", e[e.JOIN = 1] = "JOIN", e[e.LEAVE = 2] = "LEAVE", e
   }({});
-let T = 250;
+let S = 250;
 
-function S(e) {
+function T(e) {
   let {
     activityItem: t,
     context: n,
@@ -41,7 +41,7 @@ function S(e) {
     onActivityItemSelected: a,
     embeddedActivitiesManager: o,
     assetNames: s = ["embedded_cover"],
-    backgroundResolution: l = T,
+    backgroundResolution: l = S,
     launchingComponentId: c,
     commandOrigin: d,
     source: f
@@ -52,7 +52,7 @@ function S(e) {
     applicationId: _.id,
     size: l,
     names: s
-  }), I = null != h.activity_preview_video_asset_id ? (0, g.Z)(_.id, h.activity_preview_video_asset_id) : null, S = (0, p.ZP)("channel" === n.type ? n.channel : true).find(e => {
+  }), I = null != h.activity_preview_video_asset_id ? (0, g.Z)(_.id, h.activity_preview_video_asset_id) : null, T = (0, p.ZP)("channel" === n.type ? n.channel : true).find(e => {
     let {
       embeddedActivity: t
     } = e;
@@ -73,7 +73,7 @@ function S(e) {
   return {
     imageBackground: v,
     videoUrl: I,
-    joinableEmbeddedApp: S,
+    joinableEmbeddedApp: T,
     activityAction: R,
     onActivityItemSelected: P,
     labelType: O ? E.label_type : i.ww.NONE,
@@ -124,9 +124,9 @@ function N(e) {
     customId: O,
     referrerId: v,
     onConfirmActivityLaunchChecksAlertOpen: I
-  } = e, T = null != (t = null == n ? true : n.id) ? t : "", S = C({
+  } = e, S = null != (t = null == n ? true : n.id) ? t : "", T = C({
     context: o,
-    applicationId: T,
+    applicationId: S,
     fetchesApplication: y
   }), {
     analyticsLocations: A
@@ -136,15 +136,15 @@ function N(e) {
       applicationId: ""
     })
   };
-  switch (S) {
+  switch (T) {
     case 0:
       return async () => {
         if (R) {
           try {
             await s.Z.launchFrame({
-              applicationId: T
+              applicationId: S
             }), null == p || p({
-              applicationId: T
+              applicationId: S
             })
           } catch (e) {}
           return
@@ -159,7 +159,7 @@ function N(e) {
           return
         }
         await (0, _.Z)({
-          targetApplicationId: T,
+          targetApplicationId: S,
           locationObject: c,
           channelId: e,
           analyticsLocations: A,
@@ -171,13 +171,13 @@ function N(e) {
           referrerId: v,
           onConfirmActivityLaunchChecksAlertOpen: I
         }).then(e => e && (null == p ? true : p({
-          applicationId: T
+          applicationId: S
         })))
       };
     case 1:
       return async () => {
         d.ZP.isLaunchingActivity() || await (0, f.Z)({
-          applicationId: T,
+          applicationId: S,
           activityChannelId: "channel" === o.type ? o.channel.id : true,
           locationObject: c,
           analyticsLocations: A,
@@ -187,16 +187,16 @@ function N(e) {
           customId: O,
           referrerId: v
         }).then(e => e && (null == p ? true : p({
-          applicationId: T
+          applicationId: S
         })))
       };
     case 2:
       return () => {
         d.ZP.isLaunchingActivity() || (null != N && u.leaveActivity({
           location: N.location,
-          applicationId: T
+          applicationId: S
         }), null == p || p({
-          applicationId: T
+          applicationId: S
         }))
       }
   }

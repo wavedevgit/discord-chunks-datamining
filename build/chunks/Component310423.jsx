@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -73,7 +73,7 @@ let C = {
   };
 
 function R(e) {
-  return (0, r.jsx)(l.Text, A(T({}, C), {
+  return (0, r.jsx)(l.Text, A(S({}, C), {
     color: "header-primary",
     children: e
   }))
@@ -85,7 +85,7 @@ function P(e) {
       option: g,
       channel: v,
       guild: I,
-      messageId: S,
+      messageId: T,
       parentOptionKey: w,
       commandOptionSpec: D,
       sourceAnalyticsLocations: x
@@ -93,7 +93,7 @@ function P(e) {
     L = null != w ? w + " " + g.name : g.name;
   if (g.type === c.jw.SUB_COMMAND || g.type === c.jw.SUB_COMMAND_GROUP) {
     let e = [(0, r.jsxs)(i.Fragment, {
-        children: [" ", (0, r.jsx)(l.Text, A(T({}, C), {
+        children: [" ", (0, r.jsx)(l.Text, A(S({}, C), {
           children: null != (n = null == D ? true : D.name_localized) ? n : g.name
         }))]
       }, L)],
@@ -102,7 +102,7 @@ function P(e) {
       option: t,
       channel: v,
       guild: I,
-      messageId: S,
+      messageId: T,
       parentOptionKey: L,
       commandOptionSpec: s[t.name],
       sourceAnalyticsLocations: x
@@ -116,12 +116,12 @@ function P(e) {
         t = E.default.getUser(e);
       if (null != t) {
         let e = (0, b.ij)(t, v);
-        f = (0, r.jsxs)(_.Z, A(T({}, N), {
+        f = (0, r.jsxs)(_.Z, A(S({}, N), {
           onClick: () => (0, p.openUserProfileModal)({
             userId: t.id,
             guildId: v.guild_id,
             channelId: v.id,
-            messageId: S,
+            messageId: T,
             sourceAnalyticsLocations: x
           }),
           children: [y.ME, e.nick]
@@ -132,7 +132,7 @@ function P(e) {
     case c.jw.CHANNEL: {
       let e = g.value.toString(),
         t = h.Z.getChannel(e);
-      null != t && (f = (0, r.jsxs)(_.Z, A(T({}, N), {
+      null != t && (f = (0, r.jsxs)(_.Z, A(S({}, N), {
         children: [y.zy, t.name]
       })));
       break
@@ -140,7 +140,7 @@ function P(e) {
     case c.jw.ROLE: {
       let e = g.value.toString(),
         t = null != I ? m.Z.getRole(I.id, e) : true;
-      null != t && (f = (0, r.jsxs)(_.Z, A(T({}, N), {
+      null != t && (f = (0, r.jsxs)(_.Z, A(S({}, N), {
         children: [y.ME, t.name]
       })));
       break
@@ -155,7 +155,7 @@ function P(e) {
         let t = E.default.getUser(e);
         if (null != t) {
           let e = (0, b.ij)(t, v);
-          f = (0, r.jsxs)(_.Z, A(T({}, N), {
+          f = (0, r.jsxs)(_.Z, A(S({}, N), {
             onClick: () => (0, p.openUserProfileModal)({
               userId: t.id,
               guildId: v.guild_id,
@@ -176,7 +176,7 @@ function P(e) {
     }
   }
   return null == f && (f = R(null == M ? true : M.toString())), [(0, r.jsxs)(i.Fragment, {
-    children: [(0, r.jsxs)(l.Text, A(T({}, C), {
+    children: [(0, r.jsxs)(l.Text, A(S({}, C), {
       children: [" ", null != (d = null == D ? true : D.name_localized) ? d : g.name, ": "]
     })), f]
   }, L)]
@@ -196,7 +196,7 @@ function w(e) {
       onCopy: O,
       copyRef: I
     } = (0, d.Z)(m, null == b || null == (t = b.application_command) ? true : t.id),
-    S = (0, s.e7)([g.Z], () => g.Z.getGuild(m.guild_id), [m.guild_id]);
+    T = (0, s.e7)([g.Z], () => g.Z.getGuild(m.guild_id), [m.guild_id]);
   if (i.useEffect(() => {
       (null == b || b.type === c.yU.CHAT && true === b.application_command) && f.OG(m.id, E)
     }, [m.id, E, b]), null == b) h = (0, r.jsx)(l.$jN, {
@@ -209,14 +209,14 @@ function w(e) {
     for (let n of null != (_ = b.options) ? _ : []) e = e.concat(P({
       option: n,
       channel: m,
-      guild: S,
+      guild: T,
       messageId: E,
       parentOptionKey: null,
       commandOptionSpec: t[n.name],
       sourceAnalyticsLocations: y
     }));
     h = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(l.Text, A(T({}, C), {
+      children: [(0, r.jsxs)(l.Text, A(S({}, C), {
         children: ["/", null != (p = null == (a = b.application_command) ? true : a.name_localized) ? p : b.name]
       })), e]
     })

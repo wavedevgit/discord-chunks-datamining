@@ -145,7 +145,7 @@ let z = Chunk647438.forwardRef(function(e, t) {
       role: E,
       onRemove: O,
       guildId: v,
-      disableBorderColor: T,
+      disableBorderColor: S,
       onMouseDown: C
     } = e,
     N = (0, u.JA)(E.id),
@@ -159,7 +159,7 @@ let z = Chunk647438.forwardRef(function(e, t) {
       guildId: v
     }),
     D = (0, _.e7)([b.Z], () => b.Z.roleStyle),
-    x = (0, S._f)(v, E, E.colorStrings),
+    x = (0, T._f)(v, E, E.colorStrings),
     L = (null == (a = E.tags) ? true : a.guild_connections) === null,
     M = i.useCallback(e => {
       (0, m.jW)(e, async () => {
@@ -195,9 +195,9 @@ let z = Chunk647438.forwardRef(function(e, t) {
   let W = i.useMemo(() => {
     var t;
     return G({
-      borderColor: T ? true : V
+      borderColor: S ? true : V
     }, null != (t = e.style) ? t : {})
-  }, [V, T, e.style]);
+  }, [V, S, e.style]);
   return (0, r.jsx)(h.tEY, {
     children: (0, r.jsxs)("div", Z(G({
       ref: t,
@@ -342,15 +342,15 @@ function Q(e) {
   let v = i.useCallback(e => {
       var t;
       let r = s.filter(t => t !== e.id);
-      (null == (t = e.tags) ? true : t.guild_connections) === null ? g.Z.unassignGuildRoleConnection(a.id, e.id) : T.Z.updateMemberRoles(a.id, n.id, r, [], [e.id])
+      (null == (t = e.tags) ? true : t.guild_connections) === null ? g.Z.unassignGuildRoleConnection(a.id, e.id) : S.Z.updateMemberRoles(a.id, n.id, r, [], [e.id])
     }, [s, a.id, n.id]),
     I = i.useCallback(e => {
       let t = s;
-      t.includes(e) || (t = [...t, e]), T.Z.updateMemberRoles(a.id, n.id, t, [e], [])
+      t.includes(e) || (t = [...t, e]), S.Z.updateMemberRoles(a.id, n.id, t, [e], [])
     }, [s, a.id, n.id]),
-    [S, A] = i.useState(null),
+    [T, A] = i.useState(null),
     N = (0, _.Wu)([w.Z], () => w.Z.getManyRoles(a.id, s).sort(C.Z)),
-    R = i.useMemo(() => null != S ? N.slice(0, S) : N, [N, S]),
+    R = i.useMemo(() => null != T ? N.slice(0, T) : N, [N, T]),
     P = s.length - R.length;
   i.useLayoutEffect(() => {
     if (f) return;
@@ -392,7 +392,7 @@ function Q(e) {
         disableBorderColor: b
       }, e.id)
     });
-  return null != S && 0 !== P ? t = (0, r.jsx)(q, Z(G({}, e), {
+  return null != T && 0 !== P ? t = (0, r.jsx)(q, Z(G({}, e), {
     numRolesHidden: P
   })) : B && (t = (0, r.jsx)(X, Z(G({}, e), {
     handleAddRole: I

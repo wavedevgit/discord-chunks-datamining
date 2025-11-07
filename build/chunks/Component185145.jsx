@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 185145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => g
@@ -22,13 +22,13 @@ function g(e) {
   let {
     guild: t,
     disabledUntil: n
-  } = e, [g, b] = (0, d.i)(t.id), _ = (0, i.e7)([c.ZP, s.default], () => c.ZP.getMember(t.id, s.default.getId()), [t.id]);
-  return (0, u.$)(_), (0, r.jsxs)("div", {
-    children: [g ? (0, r.jsx)(p.Z, {
+  } = e, [g, b] = (0, d.i)(t.id), y = (0, r.e7)([c.ZP, s.default], () => c.ZP.getMember(t.id, s.default.getId()), [t.id]);
+  return (0, u.$)(y), (0, i.jsxs)("div", {
+    children: [g ? (0, i.jsx)(p.Z, {
       onClose: () => b(t.id),
       guildName: t.name
-    }) : null, (0, r.jsx)(o.i, {
-      bannerIcon: (0, r.jsx)(l.YlB, {
+    }) : null, (0, i.jsx)(o.i, {
+      bannerIcon: (0, i.jsx)(l.YlB, {
         size: "md",
         color: "currentColor",
         className: m.bannerIcon
@@ -39,9 +39,9 @@ function g(e) {
       }),
       textStyles: m.bannerContainer,
       headerStyles: m.bannerHeader,
-      children: (0, r.jsx)(l.Text, {
+      children: (0, i.jsx)(l.Text, {
         variant: "text-sm/semibold",
-        children: (0, r.jsx)(a.Z, {
+        children: (0, i.jsx)(a.Z, {
           deadline: new Date(n),
           showUnits: true,
           stopAtOneSec: true

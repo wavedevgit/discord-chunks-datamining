@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 888651, original params: e,t,n (module,exports,require) **/
 if (require.d(exports, {
     $: () => f,
@@ -14,19 +14,19 @@ var Chunk861044 = require("./861044.js"),
 let d = "DRAGGABLE_USER";
 
 function p(e) {
-  return (0, r.G)(d, {
+  return (0, i.G)(d, {
     canDrop(e) {
       var t, n;
       let {
-        channel: r
-      } = e, i = r.getGuildId(), l = null != (n = null == (t = a.Z.getGuild(i)) ? true : t.maxVideoChannelUsers) ? n : false, d = c.ZP.countVoiceStatesForChannel(r.id), p = null != i && s.Z.hasVideo(r.id) && l > 0 && d >= l + 1;
-      return o.Z.can(u.Plq.MOVE_MEMBERS, r) && o.Z.can(u.Plq.CONNECT, r) && !p
+        channel: i
+      } = e, r = i.getGuildId(), l = null != (n = null == (t = a.Z.getGuild(r)) ? true : t.maxVideoChannelUsers) ? n : false, d = c.ZP.countVoiceStatesForChannel(i.id), p = null != r && s.Z.hasVideo(i.id) && l > 0 && d >= l + 1;
+      return o.Z.can(u.Plq.MOVE_MEMBERS, i) && o.Z.can(u.Plq.CONNECT, i) && !p
     },
     drop(e, t) {
       let {
         channel: n
-      } = e, r = s.Z.getVoiceStateForUser(t.getItem().user.id);
-      (null == r ? true : r.channelId) !== n.id && l.Z.setChannel(n.getGuildId(), t.getItem().user.id, n.id)
+      } = e, i = s.Z.getVoiceStateForUser(t.getItem().user.id);
+      (null == i ? true : i.channelId) !== n.id && l.Z.setChannel(n.getGuildId(), t.getItem().user.id, n.id)
     }
   }, (e, t) => ({
     connectUserDropTarget: e.dropTarget(),
@@ -35,7 +35,7 @@ function p(e) {
 }
 
 function f(e) {
-  return (0, i.E)(d, {
+  return (0, r.E)(d, {
     canDrag(e) {
       let {
         user: t,

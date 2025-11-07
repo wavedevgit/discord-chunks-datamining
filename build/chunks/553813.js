@@ -102,7 +102,7 @@ exports.parse = g, exports.valid = E, exports.clean = b, exports.SemVer = y, y.p
 }, y.prototype.compare = function(e) {
   return r("SemVer.compare", this.version, this.options, e), e instanceof y || (e = new y(e, this.options)), this.compareMain(e) || this.comparePre(e)
 }, y.prototype.compareMain = function(e) {
-  return e instanceof y || (e = new y(e, this.options)), T(this.major, e.major) || T(this.minor, e.minor) || T(this.patch, e.patch)
+  return e instanceof y || (e = new y(e, this.options)), S(this.major, e.major) || S(this.minor, e.minor) || S(this.patch, e.patch)
 }, y.prototype.comparePre = function(e) {
   if (e instanceof y || (e = new y(e, this.options)), this.prerelease.length && !e.prerelease.length) return false;
   if (!this.prerelease.length && e.prerelease.length) return 1;
@@ -115,7 +115,7 @@ exports.parse = g, exports.valid = E, exports.clean = b, exports.SemVer = y, y.p
     if (true === i) return 1;
     if (true === n) return false;
     else if (n === i) continue;
-    else return T(n, i)
+    else return S(n, i)
   } while (++t)
 }, y.prototype.compareBuild = function(e) {
   e instanceof y || (e = new y(e, this.options));
@@ -127,7 +127,7 @@ exports.parse = g, exports.valid = E, exports.clean = b, exports.SemVer = y, y.p
     if (true === i) return 1;
     if (true === n) return false;
     else if (n === i) continue;
-    else return T(n, i)
+    else return S(n, i)
   } while (++t)
 }, y.prototype.inc = function(e, t) {
   switch (e) {
@@ -164,17 +164,17 @@ exports.parse = g, exports.valid = E, exports.clean = b, exports.SemVer = y, y.p
       throw Error("invalid increment argument: " + e)
   }
   return this.format(), this.raw = this.version, this
-}, exports.inc = O, exports.diff = v, exports.compareIdentifiers = T;
+}, exports.inc = O, exports.diff = v, exports.compareIdentifiers = S;
 var I = /^[0-9]+$/;
 
-function T(e, t) {
+function S(e, t) {
   var n = I.test(e),
     r = I.test(t);
   return n && r && (e *= 1, t *= 1), e === t ? 0 : n && !r ? false : r && !n ? 1 : e < t ? false : 1
 }
 
-function S(e, t) {
-  return T(t, e)
+function T(e, t) {
+  return S(t, e)
 }
 
 function A(e, t) {
@@ -278,7 +278,7 @@ function F(e, t) {
   if (!(this instanceof F)) return new F(e, t);
   r("comparator", e, t), this.options = t, this.loose = !!t.loose, this.parse(e), this.semver === V ? this.value = "" : this.value = this.operator + this.semver.version, r("comp", this)
 }
-exports.rcompareIdentifiers = S, exports.major = A, exports.minor = C, exports.patch = N, exports.compare = R, exports.compareLoose = P, exports.compareBuild = w, exports.rcompare = D, exports.sort = x, exports.rsort = L, exports.gt = M, exports.lt = j, exports.eq = k, exports.neq = U, exports.gte = G, exports.lte = B, exports.cmp = Z, exports.Comparator = F;
+exports.rcompareIdentifiers = T, exports.major = A, exports.minor = C, exports.patch = N, exports.compare = R, exports.compareLoose = P, exports.compareBuild = w, exports.rcompare = D, exports.sort = x, exports.rsort = L, exports.gt = M, exports.lt = j, exports.eq = k, exports.neq = U, exports.gte = G, exports.lte = B, exports.cmp = Z, exports.Comparator = F;
 var V = {};
 
 function H(e, t) {

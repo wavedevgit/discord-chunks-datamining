@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk761652 = require("./761652.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,14 +37,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -103,7 +103,7 @@ function N(e, t, n, i, a) {
       })
     }
   };
-  "" !== m.Z.getDraft(e, m.d.ChannelMessage) ? (0, l.h7j)(t => (0, r.jsx)(l.ConfirmModal, C(S({
+  "" !== m.Z.getDraft(e, m.d.ChannelMessage) ? (0, l.h7j)(t => (0, r.jsx)(l.ConfirmModal, C(T({
     header: I.intl.string(I.t.pe26Cj),
     confirmText: I.intl.string(I.t.VkKicb),
     cancelText: I.intl.string(I.t["ETE/oC"]),
@@ -144,16 +144,16 @@ function R(e) {
     type: "contextless"
   }, {
     command: I
-  } = u.YZ(b, null != (t = n.commandKey) ? t : ""), T = p.dN.useSetting(), S = i.useMemo(() => {
-    if (null == I || null == l || I.untranslatedName !== n.commandName || T) returnfalse;
+  } = u.YZ(b, null != (t = n.commandKey) ? t : ""), S = p.dN.useSetting(), T = i.useMemo(() => {
+    if (null == I || null == l || I.untranslatedName !== n.commandName || S) returnfalse;
     let e = l.isPrivate();
     if ((0, _.xl)(l) || !e && !c) returnfalse;
     let t = (null == I ? true : I.applicationId) === O.bi.BUILT_IN;
     return !!e || !!t || !!m
-  }, [l, I, c, m, n.commandName, T]), A = i.useCallback(e => {
+  }, [l, I, c, m, n.commandName, S]), A = i.useCallback(e => {
     null == e || e.stopPropagation(), null != l && null != n.commandName && null != n.commandKey && N(l.id, n.commandName, n.commandKey, d.Vh.MENTION)
   }, [l, n.commandKey, n.commandName]);
-  return S ? (0, r.jsxs)(f.Z, {
+  return T ? (0, r.jsxs)(f.Z, {
     role: "link",
     onClick: A,
     children: [v.GI, s]

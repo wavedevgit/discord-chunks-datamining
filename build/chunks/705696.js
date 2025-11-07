@@ -29,8 +29,8 @@ function v(e) {
       selectionManager: n,
       keyboardDelegate: v,
       ref: I,
-      autoFocus: T = false,
-      shouldFocusWrap: S = false,
+      autoFocus: S = false,
+      shouldFocusWrap: T = false,
       disallowEmptySelection: A = false,
       disallowSelectAll: C = false,
       escapeKeyBehavior: N = "clearSelection",
@@ -67,25 +67,25 @@ function v(e) {
         case "ArrowDown":
           if (v.getKeyBelow) {
             let t = null != n.focusedKey ? null == (i = v.getKeyBelow) ? true : i.call(v, n.focusedKey) : null == (a = v.getFirstKey) ? true : a.call(v);
-            null == t && S && (t = null == (l = v.getFirstKey) ? true : l.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t))
+            null == t && T && (t = null == (l = v.getFirstKey) ? true : l.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t))
           }
           break;
         case "ArrowUp":
           if (v.getKeyAbove) {
             let t = null != n.focusedKey ? null == (c = v.getKeyAbove) ? true : c.call(v, n.focusedKey) : null == (u = v.getLastKey) ? true : u.call(v);
-            null == t && S && (t = null == (d = v.getLastKey) ? true : d.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t))
+            null == t && T && (t = null == (d = v.getLastKey) ? true : d.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t))
           }
           break;
         case "ArrowLeft":
           if (v.getKeyLeftOf) {
             let t = null != n.focusedKey ? null == (f = v.getKeyLeftOf) ? true : f.call(v, n.focusedKey) : null;
-            null == t && S && (t = "rtl" === j ? null == (_ = v.getFirstKey) ? true : _.call(v, n.focusedKey) : null == (p = v.getLastKey) ? true : p.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t, "rtl" === j ? "first" : "last"))
+            null == t && T && (t = "rtl" === j ? null == (_ = v.getFirstKey) ? true : _.call(v, n.focusedKey) : null == (p = v.getLastKey) ? true : p.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t, "rtl" === j ? "first" : "last"))
           }
           break;
         case "ArrowRight":
           if (v.getKeyRightOf) {
             let t = null != n.focusedKey ? null == (m = v.getKeyRightOf) ? true : m.call(v, n.focusedKey) : null;
-            null == t && S && (t = "rtl" === j ? null == (E = v.getLastKey) ? true : E.call(v, n.focusedKey) : null == (b = v.getFirstKey) ? true : b.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t, "rtl" === j ? "last" : "first"))
+            null == t && T && (t = "rtl" === j ? null == (E = v.getLastKey) ? true : E.call(v, n.focusedKey) : null == (b = v.getFirstKey) ? true : b.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t, "rtl" === j ? "last" : "first"))
           }
           break;
         case "Home":
@@ -197,13 +197,13 @@ function v(e) {
     var t;
     e.stopPropagation(), n.setFocused(false), (null == (t = e.detail) ? true : t.clearFocusKey) && n.setFocusedKey(null)
   } : true);
-  let Y = (0, E.useRef)(T),
+  let Y = (0, E.useRef)(S),
     W = (0, E.useRef)(false);
   (0, E.useEffect)(() => {
     if (Y.current) {
       var e, t, r, i;
       let a = null;
-      "first" === T && (a = null != (r = null == (e = v.getFirstKey) ? true : e.call(v)) ? r : null), "last" === T && (a = null != (i = null == (t = v.getLastKey) ? true : t.call(v)) ? i : null);
+      "first" === S && (a = null != (r = null == (e = v.getFirstKey) ? true : e.call(v)) ? r : null), "last" === S && (a = null != (i = null == (t = v.getLastKey) ? true : t.call(v)) ? i : null);
       let o = n.selectedKeys;
       if (o.size) {
         for (let e of o)

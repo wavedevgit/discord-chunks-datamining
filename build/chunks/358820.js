@@ -60,12 +60,12 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = new Chunk710845.Z("VoiceFilterActionCreators"),
+let T = new Chunk710845.Z("VoiceFilterActionCreators"),
   A = 1e3,
   C = (0, Chunk392711.debounce)(() => {
     Chunk570140.Z.dispatch({
@@ -97,7 +97,7 @@ function P(e) {
       downloadedBytes: n,
       totalBytes: r
     } = t;
-    s.Z.dispatch(T(v({
+    s.Z.dispatch(S(v({
       type: "VOICE_FILTER_DOWNLOAD_PROGRESS"
     }, e), {
       downloadedBytes: n,
@@ -114,16 +114,16 @@ function P(e) {
         reason: null != (a = null == t ? true : t.reason) ? a : null
       })
     }
-    s.Z.dispatch(T(v({
+    s.Z.dispatch(S(v({
       type: "VOICE_FILTER_FILE_READY"
     }, e), {
       analyticsContext: t
     }))
   }).catch(t => {
-    if (null == t ? true : t.USER_CANCELED_DOWNLOAD) S.info("User canceled the download for Voice Filter dependency", e);
+    if (null == t ? true : t.USER_CANCELED_DOWNLOAD) T.info("User canceled the download for Voice Filter dependency", e);
     else {
       let n = "Failed to download voice filter dependency";
-      S.error(n, v({
+      T.error(n, v({
         reason: t
       }, e)), u.default.track(y.rMx.VOICE_FILTER_ERROR, {
         error_message: n,
@@ -139,7 +139,7 @@ function P(e) {
         }
       })
     }
-    s.Z.dispatch(T(v({
+    s.Z.dispatch(S(v({
       type: "VOICE_FILTER_DOWNLOAD_FAILED"
     }, e), {
       error: t
@@ -155,7 +155,7 @@ async function w(e) {
   let n = performance.now();
   try {
     let r = p.ZP.getVoiceFilters();
-    S.info("Setting voice filter in native module:", e), await r.setVoiceFilter({
+    T.info("Setting voice filter in native module:", e), await r.setVoiceFilter({
       name: e
     }), s.Z.dispatch({
       type: "VOICE_FILTER_APPLIED",
@@ -164,7 +164,7 @@ async function w(e) {
       activationDurationMs: performance.now() - n
     })
   } catch (t) {
-    S.error("failed to set voice filter", t), s.Z.dispatch({
+    T.error("failed to set voice filter", t), s.Z.dispatch({
       type: "VOICE_FILTER_APPLY_FAILED",
       voiceFilterId: e,
       error: t
@@ -209,7 +209,7 @@ async function x(e) {
   return (0, o.dZ)(i) && await (0, E.A)(i), r
 }
 async function L() {
-  if (!Chunk709706.Z.isNativeModuleLoaded()) return void S.info("Voice Filter catalog refresh ignored, module not loaded.");
+  if (!Chunk709706.Z.isNativeModuleLoaded()) return void T.info("Voice Filter catalog refresh ignored, module not loaded.");
   if (!N) try {
     N = true;
     let e = Chunk998502.ZP.getVoiceFilters(),
@@ -221,7 +221,7 @@ async function L() {
       initialModelState: require
     })
   } catch (e) {
-    S.warn("Failed to refresh voice filters catalog: ".concat(module.message)), Chunk626135.default.track(Chunk981631.rMx.VOICE_FILTER_ERROR, {
+    T.warn("Failed to refresh voice filters catalog: ".concat(module.message)), Chunk626135.default.track(Chunk981631.rMx.VOICE_FILTER_ERROR, {
       error_message: "Failed to refresh voice filters catalog",
       cause: (0, Chunk460366.X)(module)
     }), Chunk960048.Z.captureException(module), await Chunk570140.Z.dispatch({
@@ -264,7 +264,7 @@ async function j() {
         (null == (e = Chunk709706.Z.getVoiceFilter(require)) ? true : module.available) !== true ? (0, Chunk743498.v6)(null) : (0, Chunk743498.v6)(require)
       }
       Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceFiltersFailed, e => {
-        S.warn("Voice Filters failed in process: ".concat(e)), u.default.track(y.rMx.VOICE_FILTER_ERROR, {
+        T.warn("Voice Filters failed in process: ".concat(e)), u.default.track(y.rMx.VOICE_FILTER_ERROR, {
           error_message: "Voice Filters failed in process",
           cause: (0, d.X)(Error(e))
         }), _.Z.captureException(Error("Voice Filters failed in process", {
@@ -272,7 +272,7 @@ async function j() {
         }))
       })
     } catch (e) {
-      S.warn("Failed to load Voice Filters module: ".concat(module.message)), Chunk626135.default.track(Chunk981631.rMx.VOICE_FILTER_ERROR, {
+      T.warn("Failed to load Voice Filters module: ".concat(module.message)), Chunk626135.default.track(Chunk981631.rMx.VOICE_FILTER_ERROR, {
         error_message: "Failed to load Voice Filters module",
         cause: (0, Chunk460366.X)(module)
       }), Chunk960048.Z.captureException(module), Chunk570140.Z.dispatch({

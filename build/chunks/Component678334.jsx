@@ -75,7 +75,7 @@ function L(e) {
     invoicePreview: ec,
     inReverseTrial: eu,
     premiumBrandRefreshBackgroundClassName: ed
-  } = (0, T.JL)(), {
+  } = (0, S.JL)(), {
     isGift: ef,
     selectedGiftStyle: e_,
     customGiftMessage: ep,
@@ -88,9 +88,9 @@ function L(e) {
   let ev = null == Q ? true : Q.id,
     eI = (0, A.sE)(Z, J.paymentSourceId, ev),
     {
-      analyticsLocations: eT
+      analyticsLocations: eS
     } = (0, d.ZP)(),
-    eS = (0, N.m)(er, en),
+    eT = (0, N.m)(er, en),
     [eA, eC] = i.useState(eI),
     [eN, eR] = i.useState(false),
     {
@@ -112,7 +112,7 @@ function L(e) {
   let eU = (0, _.Iw)(et === P.GZQ.ONE_TIME ? f.Z.getProduct(ei) : true),
     eG = null !== eU,
     eB = async () => {
-      await (0, S.H)({
+      await (0, T.H)({
         setPurchaseState: n,
         setHasAcceptedTerms: $,
         setIsSubmitting: eC,
@@ -122,13 +122,13 @@ function L(e) {
         isGift: ef,
         baseAnalyticsData: G,
         analyticsLocation: V,
-        analyticsLocations: eT,
+        analyticsLocations: eS,
         flowStartTime: B,
         subscriptionPlan: Q,
         planGroup: F,
         trialId: Z,
         priceOptions: J,
-        paymentSource: eS,
+        paymentSource: eT,
         isPrepaidPaymentPastDue: ex,
         openInvoiceId: Y,
         premiumSubscription: t,
@@ -149,7 +149,7 @@ function L(e) {
       makePurchase: eB,
       onNext: s,
       onPurchaseError: U,
-      paymentSource: eS,
+      paymentSource: eT,
       paymentSourceId: en,
       purchaseTokenAuthState: H,
       setPurchaseState: n
@@ -187,7 +187,7 @@ function L(e) {
       isPrepaid: ew,
       isTrial: q,
       makePurchase: eB,
-      needsPaymentSource: null == eS && !eD,
+      needsPaymentSource: null == eT && !eD,
       onNext: s,
       inReverseTrial: eu,
       onPaymentSourceAdd: X

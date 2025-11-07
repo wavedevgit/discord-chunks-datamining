@@ -2,7 +2,7 @@
 /** chunk id: 506357, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -56,17 +56,17 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function T(e) {
   var t, O;
   let {
     onDismiss: I
-  } = e, S = (0, a.e7)([f.Z], () => f.Z.getGuildId()), A = (0, a.e7)([d.Z], () => null != S ? d.Z.getChannelId(S) : null, [S]), C = null != S ? S : null, N = (0, a.e7)([u.Z], () => null != C ? u.Z.getGuild(C) : null, [C]), {
+  } = e, T = (0, a.e7)([f.Z], () => f.Z.getGuildId()), A = (0, a.e7)([d.Z], () => null != T ? d.Z.getChannelId(T) : null, [T]), C = null != T ? T : null, N = (0, a.e7)([u.Z], () => null != C ? u.Z.getGuild(C) : null, [C]), {
     shouldShowIncidentActions: R,
     incidentData: P,
     isUnderLockdown: w
@@ -85,7 +85,7 @@ function S(e) {
           {
             default: t
           } = await n.e("58175").then(n.bind(n, 664452));
-        return n => (0, r.jsx)(t, T(v({}, n), {
+        return n => (0, r.jsx)(t, S(v({}, n), {
           guildId: N.id,
           analyticsData: e
         }))

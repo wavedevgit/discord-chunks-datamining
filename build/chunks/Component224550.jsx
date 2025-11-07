@@ -38,8 +38,8 @@ let g = (e, t, n, r) => {
         isTrial: O,
         isOrbCheckout: v,
         isEmbeddedIAP: I,
-        renewalInvoice: T,
-        paymentSourceType: S,
+        renewalInvoice: S,
+        paymentSourceType: T,
         hide: A,
         purchaseType: C,
         productLine: N,
@@ -52,9 +52,9 @@ let g = (e, t, n, r) => {
       L = (0, i.e7)([o.Z], () => o.Z.inReverseTrial());
     if (A) return null;
     let M = null == e.planGroup ? [] : e.planGroup;
-    if (null != T) {
-      let e = c.ZP.getIntervalForInvoice(T);
-      t = e.intervalType, n = e.intervalCount, s = (0, u.og)((0, u.T4)(T.total, T.currency), t, n), E = (0, u.og)((0, u.T4)(T.subtotal, T.currency), t, n)
+    if (null != S) {
+      let e = c.ZP.getIntervalForInvoice(S);
+      t = e.intervalType, n = e.intervalCount, s = (0, u.og)((0, u.T4)(S.total, S.currency), t, n), E = (0, u.og)((0, u.T4)(S.subtotal, S.currency), t, n)
     } else null != b && (t = b.interval, n = b.intervalCount);
     let j = (0, a.K)({
         purchaseType: C || f.GZQ.SUBSCRIPTION,
@@ -83,7 +83,7 @@ let g = (e, t, n, r) => {
       let e = "";
       e = D === _.Vt.ORB_PROFILE_BADGE ? h.intl.string(h.t.APcKRo) : D === _.Vt.FRACTIONAL_PREMIUM ? h.intl.string(h.t.FhJ74j) : h.intl.string(h.t["Sxed/G"]), Array.isArray(G) ? G = [...G, " ".concat(e)] : G += " ".concat(e)
     } else if (I)
-      if (null != s && (null == T ? true : T.subscriptionPeriodEnd) != null) G = h.intl.format(h.t["2VPTay"], {
+      if (null != s && (null == S ? true : S.subscriptionPeriodEnd) != null) G = h.intl.format(h.t["2VPTay"], {
         subtotalRate: E
       });
       else switch (t) {
@@ -191,10 +191,10 @@ let g = (e, t, n, r) => {
         })]
       }), "" !== G && (0, r.jsx)("div", {
         children: G
-      }), S === f.HeQ.PAYSAFE_CARD && (0, r.jsx)("div", {
+      }), T === f.HeQ.PAYSAFE_CARD && (0, r.jsx)("div", {
         className: m.paymentSourceNoticeCopy,
         children: h.intl.string(h.t.kj9VLI)
-      }), S === f.HeQ.SOFORT && (0, r.jsxs)("div", {
+      }), T === f.HeQ.SOFORT && (0, r.jsxs)("div", {
         className: m.paymentSourceNoticeCopy,
         children: [h.intl.string(h.t["UYy1/h"]), " "]
       })]

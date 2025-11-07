@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 257511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -14,15 +14,15 @@ function s(e) {
   let {
     appliedTags: t,
     setAppliedTags: n,
-    wrap: i
+    wrap: r
   } = e, s = null != n ? e => {
     t.has(e) && (t.delete(e), n(new Set(t)))
   } : true;
-  return (0, r.jsx)("div", {
+  return (0, i.jsx)("div", {
     className: l()(o.tags, {
-      [o.wrap]: i
+      [o.wrap]: r
     }),
-    children: Array.from(t).map(e => (0, r.jsx)(a.Z, {
+    children: Array.from(t).map(e => (0, i.jsx)(a.Z, {
       tag: e,
       onRemove: s,
       size: null == s ? a.Z.Sizes.SMALL : a.Z.Sizes.MEDIUM

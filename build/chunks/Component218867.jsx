@@ -34,8 +34,8 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
     sectionHeaderHeight: O,
     sectionFooterHeight: v,
     listHeaderHeight: I,
-    stickyHeaders: T = false,
-    className: S,
+    stickyHeaders: S = false,
+    className: T,
     hideScrollbar: A = false,
     fade: C = false,
     initialScrollTop: N = 0,
@@ -173,10 +173,10 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
             top: s,
             bottom: l
           }
-        } = i, c = G(o), u = s - (T ? c : 0) - r <= M.current, d = l + r >= M.current + D;
+        } = i, c = G(o), u = s - (S ? c : 0) - r <= M.current, d = l + r >= M.current + D;
         if (u) {
           let i = M.current + c - s,
-            a = T ? M.current - i : s;
+            a = S ? M.current - i : s;
           null == (t = L.current) || t.scrollTo({
             to: 0 === e ? 0 : a - r,
             animate: n
@@ -222,7 +222,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
         node: e
       })
     }
-  }), [G, T, H, D]);
+  }), [G, S, H, D]);
   let {
     visibleItems: q,
     listOffset: X
@@ -258,11 +258,11 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
           E = 0,
           b = s,
           y = b + u >= e && b <= t;
-        for (null != p && (T || y) && l.push(p(a)), y || T || (r += u); g + u + d < c - m;) {
+        for (null != p && (S || y) && l.push(p(a)), y || S || (r += u); g + u + d < c - m;) {
           let i = U(a, E, n),
             o = s + g + u,
             c = o + i;
-          if (c <= e) r = c - (T ? u : 0);
+          if (c <= e) r = c - (S ? u : 0);
           else if (c > e && o < t) l.push(f(n, {
             sectionIndex: a,
             sectionRowIndex: E
@@ -279,7 +279,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
       visibleItems: i,
       listOffset: r
     }
-  }, [U, B, G, Z, d, f, _, h, p, P, W, T, m, k, D]), Q = i.useMemo(() => {
+  }, [U, B, G, Z, d, f, _, h, p, P, W, S, m, k, D]), Q = i.useMemo(() => {
     var e, t, n;
     return {
       top: X,
@@ -292,7 +292,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
   }), [H]), $ = A ? s.xVE : s.h21;
   return (0, r.jsxs)($, {
     fade: C,
-    className: o()(c.scroller, S),
+    className: o()(c.scroller, T),
     ref: L,
     onScroll: z,
     children: [(0, r.jsx)("div", {

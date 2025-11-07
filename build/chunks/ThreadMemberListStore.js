@@ -149,7 +149,7 @@ function I(e) {
   }), null == (n = e.removedMemberIds) || n.forEach(t => y[e.id].removeUserId(t))
 }
 
-function T(e) {
+function S(e) {
   let {
     threadId: t,
     guildId: n,
@@ -158,7 +158,7 @@ function T(e) {
   null != a && (y[t] = new O(n, a, t), y[t].rebuild(r.map(e => e.user_id)))
 }
 
-function S(e) {
+function T(e) {
   return N(e.user.id)
 }
 
@@ -278,12 +278,12 @@ let j = new M(Chunk570140.Z, {
   THREAD_UPDATE: w,
   THREAD_DELETE: D,
   CHANNEL_UPDATES: L,
-  THREAD_MEMBER_LIST_UPDATE: T,
-  USER_UPDATE: S,
+  THREAD_MEMBER_LIST_UPDATE: S,
+  USER_UPDATE: T,
   PRESENCE_UPDATES: A,
-  GUILD_MEMBER_ADD: S,
-  GUILD_MEMBER_UPDATE: S,
-  GUILD_MEMBER_REMOVE: S,
+  GUILD_MEMBER_ADD: T,
+  GUILD_MEMBER_UPDATE: T,
+  GUILD_MEMBER_REMOVE: T,
   PRESENCES_REPLACE: R,
   GUILD_MEMBERS_CHUNK_BATCH: P,
   GUILD_ROLE_UPDATE: x,

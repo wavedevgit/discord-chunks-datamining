@@ -84,11 +84,11 @@ function I(e) {
     previewUrl: b = g,
     disableMediaViewer: v = false,
     action: I,
-    caretConfig: T = {
+    caretConfig: S = {
       position: "bottom",
       align: "center"
     },
-    badge: S,
+    badge: T,
     textLink: A,
     onWatchVideo: C,
     onRequestClose: N,
@@ -154,14 +154,14 @@ function I(e) {
       children: [(0, r.jsx)(_.N, {
         onClick: M
       }), (0, r.jsx)(d.$, {
-        caretConfig: T
+        caretConfig: S
       }), (0, r.jsx)("div", {
         className: m.assetContainer,
         children: k
       }), (0, r.jsx)(f.Y, {
         title: t,
         body: n,
-        badge: S,
+        badge: T,
         textLink: A
       }), null != I ? (0, r.jsx)(u.k, {
         actions: [I]

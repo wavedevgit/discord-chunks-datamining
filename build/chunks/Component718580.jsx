@@ -77,14 +77,14 @@ function I(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let T = {
+let S = {
   mass: 1,
   tension: 300,
   friction: 28,
   clamp: true
 };
 
-function S(e, t) {
+function T(e, t) {
   return null == e ? null : e.index > t.index ? "backwards" : e.index < t.index ? "forwards" : null
 }
 
@@ -122,7 +122,7 @@ function N(e) {
   });
   let R = I.activeSlide,
     P = (0, p.Z)(I.activeSlide),
-    w = null != (t = I.directionOverride) ? t : S(null != P ? C[P] : null, C[R]),
+    w = null != (t = I.directionOverride) ? t : T(null != P ? C[P] : null, C[R]),
     {
       reducedMotion: D
     } = i.useContext(d.Sfi),
@@ -143,7 +143,7 @@ function N(e) {
     ref: j,
     width: k = 0,
     height: U = 0
-  } = (0, _.ZP)(R), G = b({}, T, I.springConfig, D.enabled ? {
+  } = (0, _.ZP)(R), G = b({}, S, I.springConfig, D.enabled ? {
     clamp: true
   } : null), B = (0, f.q_F)({
     width: null != (n = I.width) ? n : k,

@@ -127,7 +127,7 @@ function U(e) {
           children: (0, i.jsx)(f.Den, {
             className: R.bottomDivider,
             ref: l,
-            children: m.map((e, t) => (0, i.jsx)(T.Z, {
+            children: m.map((e, t) => (0, i.jsx)(S.Z, {
               className: s()(R.paymentRow, R.bottomDivider),
               payment: e,
               locale: n,
@@ -229,7 +229,7 @@ function Z(e) {
     })), [t]),
     s = (0, d.Wu)([O.Z], () => O.Z.getPlanIdsForSkus(Array.from(o))),
     l = a.useCallback(() => s.length === r.size, [s, r]),
-    c = a.useMemo(() => t.filter(e => e.currency !== S.pKx.DISCORD_ORB), [t]);
+    c = a.useMemo(() => t.filter(e => e.currency !== T.pKx.DISCORD_ORB), [t]);
   return a.useEffect(() => {
     l() || _.Z.wait(() => {
       o.forEach(e => (0, m.GZ)(e, true, true, true, true))

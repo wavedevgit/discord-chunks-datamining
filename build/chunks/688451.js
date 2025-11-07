@@ -115,14 +115,14 @@ function v(e, t) {
 }
 
 function I(e) {
-  T(e), e.p.forEach(A), e.p = null
-}
-
-function T(e) {
-  e === G && (G = e.l)
+  S(e), e.p.forEach(A), e.p = null
 }
 
 function S(e) {
+  e === G && (G = e.l)
+}
+
+function T(e) {
   return G = {
     p: [],
     l: G,
@@ -360,13 +360,13 @@ var ee = new(function() {
           }
         }
         if ("function" != typeof n && r(6), true !== i && "function" != typeof i && r(7), a(e)) {
-          var c = S(t),
+          var c = T(t),
             u = M(t, e, true),
             d = true;
           try {
             o = n(u), d = false
           } finally {
-            d ? I(c) : T(c)
+            d ? I(c) : S(c)
           }
           return "undefined" != typeof Promise && o instanceof Promise ? o.then(function(e) {
             return v(c, i), C(e, c)
@@ -401,9 +401,9 @@ var ee = new(function() {
     var t = module.prototype;
     return exports.createDraft = function(e) {
       a(e) || r(8), i(e) && (e = j(e));
-      var t = S(this),
+      var t = T(this),
         n = M(this, e, true);
-      return n[W].C = true, T(t), n
+      return n[W].C = true, S(t), n
     }, exports.finishDraft = function(e, t) {
       var n = (e && e[W]).A;
       return v(n, t), C(true, n)

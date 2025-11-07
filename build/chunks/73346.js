@@ -52,8 +52,8 @@ function I(e) {
   return e
 }
 require("./388032.jsx"), l().shim();
-let T = !Chunk873546.tq && !Chunk873546.Em && false !== (0, Chunk526167.vu)(),
-  S = 3;
+let S = !Chunk873546.tq && !Chunk873546.Em && false !== (0, Chunk526167.vu)(),
+  T = 3;
 
 function A(e, t) {
   let {
@@ -89,7 +89,7 @@ function C(e, t, n, r) {
     default:
       r = "webp"
   }
-  "webp" !== r || T || (r = "png");
+  "webp" !== r || S || (r = "png");
   let s = "string" == typeof t ? t : t.id,
     l = i = "https:";
   return a = null != o ? "".concat(l, "//").concat(o, "/app-assets/").concat(e, "/store/").concat(s, ".").concat(r) : "".concat(l).concat(window.GLOBAL_ENV.API_ENDPOINT).concat(O.ANM.STORE_ASSET(e, s, r)), null != n && (a += "?size=".concat((0, f.oO)(n * (0, f.x_)()))), a
@@ -202,7 +202,7 @@ function j(e, t, n) {
     type: O.AzA.HAS_FREE_PREMIUM_CONTENT
   });
   let s = r.releaseDate;
-  return null != s && o()().diff(s, "months") < S && (r.accessType === O.kGb.EARLY_ACCESS ? a.push({
+  return null != s && o()().diff(s, "months") < T && (r.accessType === O.kGb.EARLY_ACCESS ? a.push({
     type: O.AzA.EARLY_ACCESS,
     releaseDate: s
   }) : a.push({

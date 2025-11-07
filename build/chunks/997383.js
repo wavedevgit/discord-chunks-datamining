@@ -2,7 +2,7 @@
 /** chunk id: 997383, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./781311.js"), require("./457542.js"), require("./539854.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -46,10 +46,10 @@ let O = 100,
   v = Object.freeze({}),
   I = 300;
 
-function T(e, t) {
+function S(e, t) {
   return t.frecencyBoosters ? (0, _.Cq)(e) : {}
 }
-class S {
+class T {
   createSearchContext() {
     null == this.userSearchContext && (this.userSearchContext = Chunk279779.Z.getUserSearchContext(this.parseUserResults, this._limit))
   }
@@ -118,7 +118,7 @@ class S {
   }
   queryTextChannels(e, t) {
     if (!this._include(E.h8.TEXT_CHANNEL)) return [];
-    let n = T(E.h8.TEXT_CHANNEL, this.options),
+    let n = S(E.h8.TEXT_CHANNEL, this.options),
       {
         allowSnowflake: r,
         blacklist: i
@@ -139,7 +139,7 @@ class S {
     let {
       allowSnowflake: n,
       voiceChannelGuildFilter: r
-    } = this.options, i = T(E.h8.VOICE_CHANNEL, this.options);
+    } = this.options, i = S(E.h8.VOICE_CHANNEL, this.options);
     return _.ZP.queryChannels({
       query: e,
       guildId: r,
@@ -152,7 +152,7 @@ class S {
   }
   queryGuilds(e, t) {
     if (!this._include(E.h8.GUILD)) return [];
-    let n = T(E.h8.GUILD, this.options),
+    let n = S(E.h8.GUILD, this.options),
       {
         allowSnowflake: r,
         blacklist: i
@@ -175,7 +175,7 @@ class S {
     let {
       allowSnowflake: i,
       userFilters: a
-    } = this.options, o = T(E.h8.USER, this.options);
+    } = this.options, o = S(E.h8.USER, this.options);
     if ((null == a ? true : a.thread) != null) {
       let t = s.Z.getMemberListSections(a.thread),
         r = [];
@@ -209,7 +209,7 @@ class S {
     if (!this._include(E.h8.GROUP_DM)) return [];
     let {
       blacklist: n
-    } = this.options, r = T(E.h8.GROUP_DM, this.options), i = null != n ? e => !n.has("channel:".concat(e.id)) : true;
+    } = this.options, r = S(E.h8.GROUP_DM, this.options), i = null != n ? e => !n.has("channel:".concat(e.id)) : true;
     return _.ZP.queryGroupDMs({
       query: e,
       limit: t,

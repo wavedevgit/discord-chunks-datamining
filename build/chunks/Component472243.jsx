@@ -29,9 +29,9 @@ function y(e) {
     type: O,
     textValue: v,
     maxCharacterCount: I,
-    showRemainingCharsAfterCount: T,
-    className: S
-  } = e, A = (0, o.e7)([_.default], () => p.ZP.canUseIncreasedMessageLength(_.default.getCurrentUser())), C = (0, d.Z)(), N = null != I ? I : C, R = null != (y = null != T ? T : I) ? y : C / 10, P = v.length, w = null != O.upsellLongMessages && (null != P ? P : 0) > m.J6R && A, D = null != O.upsellLongMessages && !A, x = (null == (n = (0, f.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2, L = N - P, M = L > R, j = L < 0 && x, k = 0 === L ? E.intl.string(E.t.tU6YQ7) : L > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
+    showRemainingCharsAfterCount: S,
+    className: T
+  } = e, A = (0, o.e7)([_.default], () => p.ZP.canUseIncreasedMessageLength(_.default.getCurrentUser())), C = (0, d.Z)(), N = null != I ? I : C, R = null != (y = null != S ? S : I) ? y : C / 10, P = v.length, w = null != O.upsellLongMessages && (null != P ? P : 0) > m.J6R && A, D = null != O.upsellLongMessages && !A, x = (null == (n = (0, f.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2, L = N - P, M = L > R, j = L < 0 && x, k = 0 === L ? E.intl.string(E.t.tU6YQ7) : L > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
     count: L
   }) : E.intl.string(E.t.YSRIqa), {
     analyticsLocations: U
@@ -41,7 +41,7 @@ function y(e) {
   return (0, r.jsx)(u.Gt, {
     value: U,
     children: (0, r.jsxs)("div", {
-      className: a()(S, b.characterCount),
+      className: a()(T, b.characterCount),
       children: [(0, r.jsxs)("div", {
         className: b.flairContainer,
         children: [w && G ? (0, r.jsx)(s.u, {

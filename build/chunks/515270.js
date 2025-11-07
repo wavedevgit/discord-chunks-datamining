@@ -105,7 +105,7 @@ function v(e) {
       let e = t.map(e => (0, c.sg)(e.blockEntry[0])).join("\n"),
         n = t[0].lang;
       if (null != n && null != r.Z.getLanguage(n)) {
-        let r = S(e, n);
+        let r = T(e, n);
         if (null != r && r.length === t.length) {
           let e = [];
           for (let n = 0; n < t.length; n++) {
@@ -145,16 +145,16 @@ let I = {
     maxAge: +Chunk70956.Z.Millis.MINUTE,
     updateAgeOnGet: true
   },
-  T = new(a())(I);
+  S = new(a())(I);
 
-function S(e, t) {
+function T(e, t) {
   let n = "".concat(e, "-").concat(t),
-    r = T.get(n);
+    r = S.get(n);
   if (null != r) return r;
   let i = s.default.highlight(t, e, false);
   if (null == i || i.illegal) return null;
   let a = i.value.split("\n");
-  return T.set(n, a), a
+  return S.set(n, a), a
 }
 
 function A(e) {

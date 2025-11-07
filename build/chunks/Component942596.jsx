@@ -366,7 +366,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     else if (e.type === B.IIU.HANG_STATUS && null != a) o = Z.intl.formatToPlainString(Z.t.IAZiW2, {
       guildName: a.name
     }), t = () => {
-      (0, S.X)(a.id)
+      (0, T.X)(a.id)
     };
     else if (!(0, L.Z)(e)) {
       if (o = r, s = r, (0, M.Z)(e) && null != r) {
@@ -440,9 +440,9 @@ class $ extends(r = Chunk647438.PureComponent) {
     } = e;
     return null == n ? null : (0, x.Z)(e) ? (0, i.jsx)(X, {
       timestamps: n
-    }) : (0, i.jsx)(T.ZP, {
+    }) : (0, i.jsx)(S.ZP, {
       start: n.start,
-      location: T.ZP.Locations.USER_ACTIVITY,
+      location: S.ZP.Locations.USER_ACTIVITY,
       className: F.playTime,
       isApplicationStreaming: null != t
     })

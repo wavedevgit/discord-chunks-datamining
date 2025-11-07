@@ -68,11 +68,11 @@ function O(e) {
     entry: O,
     onSelect: v,
     disableGameProfileLinks: I
-  } = e, T = i.useRef(null), S = i.useContext(_.Ir), A = (0, d.Z)({
+  } = e, S = i.useRef(null), T = i.useContext(_.Ir), A = (0, d.Z)({
     userId: n.id,
     guildId: m,
     channelId: null == E ? true : E.id,
-    onAction: S
+    onAction: T
   }), C = (0, l.Z)({
     id: n.id,
     label: p.intl.string(p.t["/AXYnE"])
@@ -87,7 +87,7 @@ function O(e) {
     sourceUserId: O.author_id
   });
   return (0, r.jsx)(o.yRy, {
-    targetElementRef: T,
+    targetElementRef: S,
     align: "top",
     position: "right",
     disablePointerEvents: false,
@@ -108,7 +108,7 @@ function O(e) {
               id: "game-profile",
               label: p.intl.string(p.t.f7aVGn),
               action: e => {
-                w(e), null == S || S()
+                w(e), null == T || T()
               }
             })]
           }), (0, r.jsxs)(o.kSQ, {
@@ -121,7 +121,7 @@ function O(e) {
       asContainer: true,
       text: p.intl.string(p.t["UKOtz+"]),
       children: (0, r.jsx)(o.P3F, b(g({
-        innerRef: T,
+        innerRef: S,
         className: h.menuIcon
       }, e), {
         children: (0, r.jsx)(o.xhG, {

@@ -99,10 +99,10 @@ let q = (0, Chunk663993.Un)({
                 children: (0, r.jsxs)(P.yP, {
                   children: [null != a ? (0, r.jsx)(Q, {}) : null, (0, r.jsxs)("div", {
                     className: o()(z.appAsidePanelWrapper, u && z.mobileAppAsidePanelWrapper),
-                    children: [(0, r.jsx)(S.K, {}), (0, r.jsx)("div", {
+                    children: [(0, r.jsx)(T.K, {}), (0, r.jsx)("div", {
                       className: z.notAppAsidePanel,
                       "data-app-not-dev-tools": true,
-                      children: (0, r.jsx)(T.m, {
+                      children: (0, r.jsx)(S.m, {
                         children: (0, r.jsx)(D.OR, {
                           children: (0, r.jsx)(E.Z.Provider, {
                             value: b.Z,

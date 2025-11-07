@@ -85,7 +85,7 @@ function I(e) {
     "aria-label": _,
     delay: h = O,
     dataMeticulousIgnore: E
-  } = e, [I, T] = i.useState(0), [S, A] = i.useState(false), [C, N] = i.useState(false), [R] = i.useState(() => new o.V7), [P] = i.useState(() => new o.V7);
+  } = e, [I, S] = i.useState(0), [T, A] = i.useState(false), [C, N] = i.useState(false), [R] = i.useState(() => new o.V7), [P] = i.useState(() => new o.V7);
   if (i.useEffect(() => () => {
       R.stop(), P.stop()
     }, [R, P]), !c.wS) return (0, r.jsx)(r.Fragment, {
@@ -93,10 +93,10 @@ function I(e) {
   });
   let w = I >= v.length - 1,
     D = w ? s.r6K.RED : s.r6K.GREEN,
-    x = S ? D : s.r6K.PRIMARY,
+    x = T ? D : s.r6K.PRIMARY,
     L = () => {
       var e;
-      if (!S) return t;
+      if (!T) return t;
       let n = (0, a.clamp)(I - 1, 0, v.length - 1),
         i = null != (e = v[n]) ? e : v[0];
       return (0, r.jsx)(s.UkV, {
@@ -105,10 +105,10 @@ function I(e) {
       })
     },
     M = (e, t) => {
-      !C && S && t.phase === d.UkZ.LEAVE && A(false)
+      !C && T && t.phase === d.UkZ.LEAVE && A(false)
     },
     j = () => {
-      null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), C || T(I + 1), N(true), A(true), R.start(b, () => N(false)), P.start(y, () => T(0))
+      null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), C || S(I + 1), N(true), A(true), R.start(b, () => N(false)), P.start(y, () => S(0))
     };
   return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
@@ -129,7 +129,7 @@ function I(e) {
           null == t || t(), j()
         },
         onMouseEnter: () => {
-          if (!S) {
+          if (!T) {
             null == n || n();
             return
           }

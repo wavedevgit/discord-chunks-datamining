@@ -114,7 +114,7 @@ let K = 0,
       es.current !== F.xAR && window.cancelAnimationFrame(es.current), es.current = window.requestAnimationFrame(() => {
         E.kJ.setInspectedExpressionPosition(t, n, y.u.MOUSE_EVENT), E.kJ.setSearchPlaceholder(r), es.current = F.xAR
       })
-    }, []), e_ = (0, u.e7)([T.qc], () => T.qc.hasHotspot(T.v6.FAVORITE_EMOJI_TOOLTIP), []), ep = i.useMemo(() => l().memoize((e, t) => {
+    }, []), e_ = (0, u.e7)([S.qc], () => S.qc.hasHotspot(S.v6.FAVORITE_EMOJI_TOOLTIP), []), ep = i.useMemo(() => l().memoize((e, t) => {
       let n = a[e],
         i = m[t.sectionIndex],
         o = () => {
@@ -196,7 +196,7 @@ let K = 0,
           children: u
         }, l)
       }), [m, t, ed, H, K]),
-      em = (0, S.B4)(),
+      em = (0, T.B4)(),
       eg = i.useCallback((e, n) => {
         let i = m[e],
           a = eu(e),
@@ -246,8 +246,8 @@ let K = 0,
       collapsedSections: y,
       setCollapsedSections: O,
       getEmojiItemProps: I,
-      getEmojiRowProps: T,
-      rowCount: S,
+      getEmojiRowProps: S,
+      rowCount: T,
       isUsingKeyboardNavigation: N,
       channelGuildId: D,
       channelId: M,
@@ -278,7 +278,7 @@ let K = 0,
       sectionDescriptors: f,
       setCollapsedSections: O,
       getEmojiItemProps: I,
-      getEmojiRowProps: T,
+      getEmojiRowProps: S,
       isScrolling: B,
       isUsingKeyboardNavigation: N,
       allowAnimatedEmoji: z,
@@ -359,7 +359,7 @@ let K = 0,
         renderSection: eu,
         renderSectionHeader: ed,
         renderSectionFooter: ef,
-        rowCount: S,
+        rowCount: T,
         rowCountBySection: _,
         rowHeight: ea(o),
         sectionHeaderHeight: ep,

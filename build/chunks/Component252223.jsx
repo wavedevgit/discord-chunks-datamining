@@ -194,7 +194,7 @@ function Z(e) {
   let et = function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
         t = true === e || D;
-      if (null != L) return (0, r.jsx)(T.Z, {
+      if (null != L) return (0, r.jsx)(S.Z, {
         stream: L,
         game: Y,
         textVariant: "text-".concat(h, "/medium"),
@@ -231,7 +231,7 @@ function Z(e) {
           hideText: false,
           canTruncate: false
         };
-      return null != L && e.push((0, r.jsx)(T.Z, M(x({
+      return null != L && e.push((0, r.jsx)(S.Z, M(x({
         stream: L,
         game: null == n ? true : n.find(f.Z)
       }, t), {
@@ -271,7 +271,7 @@ function Z(e) {
       [w.textXs]: "xs" === h,
       [w.textSm]: "sm" === h
     }),
-    eo = () => null == Z && null == V ? null : (0, r.jsx)(S.Z, {
+    eo = () => null == Z && null == V ? null : (0, r.jsx)(T.Z, {
       customStatusActivity: Z,
       textSize: h,
       animateEmoji: O,

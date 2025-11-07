@@ -599,7 +599,7 @@ function ef(e) {
       getAutocompletions: ec
     },
     [A.dCx.ANSWER_IN]: {
-      regex: S.e,
+      regex: T.e,
       mutable: true,
       follows: [A.dCx.FILTER_IN],
       componentType: "ANSWER",
@@ -634,7 +634,7 @@ function ef(e) {
       regex: W(C.intl.string(C.t.us8IQi)),
       componentType: "FILTER",
       key: Y(C.intl.string(C.t.us8IQi)),
-      validator: () => (0, T.Z)({
+      validator: () => (0, S.Z)({
         location: "SearchTokens"
       }),
       plainText: C.intl.string(C.t.us8IQi),

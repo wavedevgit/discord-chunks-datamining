@@ -130,16 +130,16 @@ function eI(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let eT = ew(null),
-  eS = 20,
+let eS = ew(null),
+  eT = 20,
   eA = 16,
   eC = 1,
   eN = 25,
   eR = [0, 5, 10, 15, 20, 25];
 
 function eP() {
-  let e = ew(eT);
-  f().isEqual(module, eT) || (Chunk626135.default.track(Chunk981631.rMx.OVERLAY_SETTINGS_UPDATED, module), eT = module)
+  let e = ew(eS);
+  f().isEqual(module, eS) || (Chunk626135.default.track(Chunk981631.rMx.OVERLAY_SETTINGS_UPDATED, module), eS = module)
 }
 
 function ew(e) {
@@ -242,13 +242,13 @@ function ex(e) {
           className: eh.groupCollapsedAction,
           children: [s.action, l ? (0, r.jsx)(h.CJ0, {
             size: "custom",
-            width: eS,
-            height: eS,
+            width: eT,
+            height: eT,
             color: "var(--interactive-active)"
           }) : (0, r.jsx)(h.Fbu, {
             size: "custom",
-            width: eS,
-            height: eS,
+            width: eT,
+            height: eT,
             color: "var(--interactive-active)"
           })]
         })
@@ -282,7 +282,7 @@ function ej(e) {
       }
     }
     return (0, A.b6)(o, false, [Q.Z, $.Z])
-  }, [o, u]), p = (0, _.e7)([A.ZP, Q.Z, $.Z], () => null == o ? null : (0, A.FZ)(o, A.ZP, Q.Z, $.Z), [o], l()), [g, E] = i.useState(f), [y, I] = i.useState(d), [T, S] = i.useState(false);
+  }, [o, u]), p = (0, _.e7)([A.ZP, Q.Z, $.Z], () => null == o ? null : (0, A.FZ)(o, A.ZP, Q.Z, $.Z), [o], l()), [g, E] = i.useState(f), [y, I] = i.useState(d), [S, T] = i.useState(false);
   i.useEffect(() => {
     E(f), I(d)
   }, [f, d]);
@@ -448,8 +448,8 @@ function ej(e) {
   });
   let [er, ei] = i.useMemo(() => W ? ["text-muted", h.TVs.colors.TEXT_MUTED.css] : Y && q ? ["text-feedback-warning", h.TVs.colors.TEXT_FEEDBACK_WARNING.css] : Y && z ? ["text-feedback-positive", h.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : Y && X ? ["text-primary", h.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", h.TVs.colors.INTERACTIVE_NORMAL.css], [W, Y, q, z, X]);
   return null == o ? null : (0, r.jsxs)(ex, {
-    onExpand: S,
-    className: T ? eh.expandedContainer : true,
+    onExpand: T,
+    className: S ? eh.expandedContainer : true,
     title: (0, r.jsxs)(r.Fragment, {
       children: [null != (a = null != (n = null != (t = null == s ? true : s.name) ? t : null == p ? true : p.name) ? n : null == o ? true : o.gameName) ? a : "", null != p && p.verified ? (0, r.jsx)(h.aML, {
         "data-migration-pending": true,

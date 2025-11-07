@@ -4,7 +4,7 @@
 require.d(exports, {
   NK: () => N,
   R6: () => A,
-  ok: () => S,
+  ok: () => T,
   vN: () => C
 });
 var Chunk512722 = require("./512722.js"),
@@ -30,7 +30,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   if (!(0, _.WF)(e.id)) return void(0, d.V)();
   f.UI.dispatch(I.CkL.POPOUT_CLOSE);
   let r = !o().isEmpty(y.Z.getVoiceStatesForChannel(e.id));
@@ -55,7 +55,7 @@ function S(e, t, n) {
     return
   }
   let l = b.Z.getChannelId();
-  e.parent_id === l || (0, T.ME)(l) || (0, h.Kh)(e.parent_id), (0, p.uL)(I.Z5c.CHANNEL_THREAD_VIEW((0, u.e)(e), (0, T.ME)(l) ? T.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
+  e.parent_id === l || (0, S.ME)(l) || (0, h.Kh)(e.parent_id), (0, p.uL)(I.Z5c.CHANNEL_THREAD_VIEW((0, u.e)(e), (0, S.ME)(l) ? S.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
     source: v.on.FORUM
   } : true), setTimeout(() => {
     O.S.dispatch(I.CkL.FOCUS_CHANNEL_TEXT_AREA, {
@@ -84,7 +84,7 @@ function A(e, t, n) {
 }
 
 function C(e, t) {
-  (0, p.uL)(I.Z5c.CHANNEL(e, (0, T.ME)(t) ? T.oC.GUILD_HOME : t)), s.Z.dispatch({
+  (0, p.uL)(I.Z5c.CHANNEL(e, (0, S.ME)(t) ? S.oC.GUILD_HOME : t)), s.Z.dispatch({
     type: "SIDEBAR_CLOSE",
     baseChannelId: t
   })

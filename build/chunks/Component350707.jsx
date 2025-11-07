@@ -1,11 +1,11 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 350707, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => E,
-  cy: () => O,
+  cy: () => x,
   iu: () => v
 }), require("./388685.js");
-var r, i, l, Chunk951288 = require("./951288.js"),
+var i, r, l, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   c = require.n(Chunk120356),
@@ -18,7 +18,7 @@ var r, i, l, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk105853 = require("./105853.js");
 
-function _(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,34 +27,34 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      _(e, t, n[t])
+    }))), i.forEach(function(t) {
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function C(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var v = ((i = {}).CENTER = "center", i.LEFT = "left", i),
-  O = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
-class x extends Chunk647438.PureComponent {
+var v = ((r = {}).CENTER = "center", r.LEFT = "left", r),
+  x = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
+class O extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       uniqueId: e
@@ -74,8 +74,8 @@ class x extends Chunk647438.PureComponent {
       renderMedia: e,
       textAlign: t,
       isLongText: n,
-      title: r,
-      body: i,
+      title: i,
+      body: r,
       className: l,
       forceTheme: o,
       onClickSkipAll: s
@@ -91,13 +91,13 @@ class x extends Chunk647438.PureComponent {
           [Chunk105853.titleCenter]: Chunk981631,
           [Chunk105853.titleLeft]: Chunk626135
         }),
-        children: r
-      }), (0, Chunk951288.jsx)("string" == typeof i ? "p" : "div", {
+        children: i
+      }), (0, Chunk951288.jsx)("string" == typeof r ? "p" : "div", {
         className: c()({
           [Chunk105853.bodyCenter]: Chunk981631,
           [Chunk105853.bodyLeft]: Chunk626135
         }),
-        children: i
+        children: r
       }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
         className: Chunk105853.buttonContainer,
         justify: Chunk626135 ? Chunk600164.Z.Justify.BETWEEN : Chunk600164.Z.Justify.CENTER,
@@ -118,9 +118,9 @@ class x extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), y(this, "state", {
       confirmed: false
-    }), _(this, "handleDismiss", () => {
+    }), y(this, "handleDismiss", () => {
       let {
         onClickComplete: e
       } = this.props;
@@ -130,14 +130,14 @@ class x extends Chunk647438.PureComponent {
     })
   }
 }
-class E extends(r = Chunk647438.PureComponent) {
+class E extends(i = Chunk647438.PureComponent) {
   render() {
     let e = this.props,
       {
         renderMedia: t,
         textAlign: n,
-        onComplete: r,
-        onSkipAll: i,
+        onComplete: i,
+        onSkipAll: r,
         isLongText: l,
         title: o,
         body: s,
@@ -148,21 +148,21 @@ class E extends(r = Chunk647438.PureComponent) {
       } = module,
       h = function(e, t) {
         if (null == e) return {};
-        var n, r, i = function(e, t) {
+        var n, i, r = function(e, t) {
           if (null == e) return {};
-          var n, r, i = {},
+          var n, i, r = {},
             l = Object.keys(e);
-          for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-          return i
+          for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+          return r
         }(e, t);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
         }
-        return i
+        return r
       }(module, ["renderMedia", "textAlign", "onComplete", "onSkipAll", "isLongText", "title", "body", "children", "spacing", "forceTheme", "innerRef"]),
       m = "top" === Chunk626135.position || "bottom" === Chunk626135.position ? "center" : "top";
-    return (0, Chunk951288.jsx)(Chunk481060.yRy, C(y({
+    return (0, Chunk951288.jsx)(Chunk481060.yRy, _(C({
       targetElementRef: Chunk600164
     }, Chunk626135), {
       align: Chunk981631,
@@ -173,9 +173,9 @@ class E extends(r = Chunk647438.PureComponent) {
     }))
   }
   constructor(...e) {
-    super(...e), _(this, "onClickComplete", e => {
+    super(...e), y(this, "onClickComplete", e => {
       e(), this.props.onComplete()
-    }), _(this, "onClickSkipAll", e => {
+    }), y(this, "onClickSkipAll", e => {
       let {
         onSkipAll: t,
         uniqueId: n
@@ -183,31 +183,31 @@ class E extends(r = Chunk647438.PureComponent) {
       e(), t(), h.default.track(m.rMx.DISMISS_ALL_TUTORIALS, {
         tutorial: n
       })
-    }), _(this, "renderPopoutContent", e => {
+    }), y(this, "renderPopoutContent", e => {
       let {
         closePopout: t,
         position: n
       } = e, {
-        forceTheme: r,
-        isLongText: i,
+        forceTheme: i,
+        isLongText: r,
         arrowAlignment: l,
         renderMedia: o
       } = this.props, s = null != o;
       return (0, a.jsx)(p.f6W, {
-        theme: r,
-        children: e => (0, a.jsx)(x, C(y({}, this.props), {
+        theme: i,
+        children: e => (0, a.jsx)(O, _(C({}, this.props), {
           className: c()({
             [b.bottom]: "bottom" === n,
-            [b.contentNarrowNoMedia]: !i && !s,
-            [b.contentNarrowWithMedia]: !i && s,
-            [b.contentWideNoMedia]: i && !s,
-            [b.contentWideWithMedia]: i && s,
+            [b.contentNarrowNoMedia]: !r && !s,
+            [b.contentNarrowWithMedia]: !r && s,
+            [b.contentWideNoMedia]: r && !s,
+            [b.contentWideWithMedia]: r && s,
             [b.right]: "right" === n,
             [b.top]: "top" === n,
             [b.left]: "left" === n,
             [b.arrowAlignmentTop]: "top" === l,
             [b.arrowAlignmentMiddle]: "middle" === l,
-            "force-theme": null != r
+            "force-theme": null != i
           }, e),
           onClickComplete: () => this.onClickComplete(t),
           onClickSkipAll: () => this.onClickSkipAll(t)
@@ -216,6 +216,6 @@ class E extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-_(E, "TextAlignments", v), _(E, "defaultProps", {
+y(E, "TextAlignments", v), y(E, "defaultProps", {
   textAlign: "left"
 })

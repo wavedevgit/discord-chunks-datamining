@@ -1,5 +1,6 @@
-/** Chunk was on 84349 **/
-/** chunk id: 42659, original params: e,n,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 42659, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   stickyContainer: "stickyContainer__57d3f",
   stickyBannerContainer: "stickyBannerContainer__57d3f",

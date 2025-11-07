@@ -28,8 +28,8 @@ function d(e, t, n) {
   } = e, O = e.isDisabled || t.isDisabled, v = t.selectedValue === d, I = e => {
     e.stopPropagation(), t.setSelectedValue(d)
   }, {
-    pressProps: T,
-    isPressed: S
+    pressProps: S,
+    isPressed: T
   } = (0, l.r)({
     onPressStart: h,
     onPressEnd: m,
@@ -56,7 +56,7 @@ function d(e, t, n) {
     focusableProps: N
   } = (0, c.kc)((0, i.d)(e, {
     onFocus: () => t.setLastFocusedValue(d)
-  }), n), R = (0, i.d)(T, N), P = (0, a.z)(e, {
+  }), n), R = (0, i.d)(S, N), P = (0, a.z)(e, {
     labelable: true
   }), w = false;
   null != t.selectedValue ? t.selectedValue === d && (w = 0) : (t.lastFocusedValue === d || null == t.lastFocusedValue) && (w = 0), O && (w = true);
@@ -89,6 +89,6 @@ function d(e, t, n) {
     }),
     isDisabled: O,
     isSelected: v,
-    isPressed: S || C
+    isPressed: T || C
   }
 }

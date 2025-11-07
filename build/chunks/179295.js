@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 179295, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -17,20 +17,20 @@ function u(e, t) {
     handleMouseMove: u,
     handleMouseUp: d,
     handleMouseEnter: p
-  } = e, f = r.useRef(null), h = (0, i.e7)([a.Z], () => a.Z.getRTCConnection((0, l.V9)(t))), m = r.useCallback((e, t, r) => {
-    f.current = Date.now(), n(e, t, r)
+  } = e, f = i.useRef(null), h = (0, r.e7)([a.Z], () => a.Z.getRTCConnection((0, l.V9)(t))), m = i.useCallback((e, t, i) => {
+    f.current = Date.now(), n(e, t, i)
   }, [n]);
   return {
-    handleMouseUp: r.useCallback((e, t, n) => {
+    handleMouseUp: i.useCallback((e, t, n) => {
       if (d(e, t, n), null != f.current) {
-        var r;
-        null != h && (r = Date.now() - f.current, o.default.track(s.rMx.PREMIUM_FEATURE_USAGE, {
+        var i;
+        null != h && (i = Date.now() - f.current, o.default.track(s.rMx.PREMIUM_FEATURE_USAGE, {
           feature_name: "".concat(c.QP.SHARED_CANVAS, "_").concat(e.type),
           feature_tier: c.h1.FREE,
           media_session_id: h.getMediaSessionId(),
           parent_media_session_id: h.parentMediaSessionId,
           guild_id: h.guildId,
-          duration: r
+          duration: i
         })), f.current = null
       }
     }, [d, h]),

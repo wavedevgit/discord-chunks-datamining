@@ -58,7 +58,7 @@ function f(e) {
   i.useEffect(() => {
     (null == y ? true : y.type) === n && b(y.value)
   }, [n, y]);
-  let T = {
+  let S = {
     value: E,
     placeholder: _,
     minLength: p,
@@ -74,12 +74,12 @@ function f(e) {
   };
   switch (u) {
     case o.PT.SMALL:
-      t = (0, r.jsx)(a.oil, d({}, T));
+      t = (0, r.jsx)(a.oil, d({}, S));
       break;
     case o.PT.PARAGRAPH:
       t = (0, r.jsx)(a.Kx8, d({
         autosize: true
-      }, T))
+      }, S))
   }
   return null != f ? (0, r.jsx)(a.xJW, {
     title: f,

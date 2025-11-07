@@ -96,7 +96,7 @@ let B = 80,
   };
 
 function z(e) {
-  T.default.track(w.rMx.PREMIUM_PROMOTION_OPENED, {
+  S.default.track(w.rMx.PREMIUM_PROMOTION_OPENED, {
     location_page: null != e.guild_id ? w.ZY5.GUILD_CHANNEL : w.ZY5.DM_CHANNEL,
     location_section: w.jXE.STICKER_POPOUT
   }), (0, y.z)()
@@ -156,7 +156,7 @@ let X = e => {
         let {
           channel: e
         } = m.current;
-        T.default.track(w.rMx.OPEN_POPOUT, k({
+        S.default.track(w.rMx.OPEN_POPOUT, k({
           type: w.jXE.STICKER_POPOUT,
           guild_id: e.getGuildId(),
           sticker_pack_id: n.pack_id
@@ -207,7 +207,7 @@ let X = e => {
       [A, C] = i.useState(null),
       [N, P] = i.useState(false),
       j = I.default.getCurrentUser(),
-      U = S.ZP.canUseCustomStickersEverywhere(j),
+      U = T.ZP.canUseCustomStickersEverywhere(j),
       B = (0, s.e7)([v.Z], () => v.Z.getGuild(n.guild_id)),
       Z = null != B,
       [H, W] = i.useState(false),
@@ -252,7 +252,7 @@ let X = e => {
         } = ee.current;
         e()
       }, [N, A]), (0, _.ZP)(() => {
-        T.default.track(w.rMx.OPEN_POPOUT, k({
+        S.default.track(w.rMx.OPEN_POPOUT, k({
           type: ei
         }, J))
       }), !N) return (0, r.jsx)(b.SE, {

@@ -56,13 +56,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function T(e) {
   let t;
   switch (e) {
     case m.NA.EMOJIS:
@@ -139,7 +139,7 @@ let A = e => {
       x = (0, h.rO)(),
       L = i.useRef(null),
       M = i.useRef(0),
-      j = S(n),
+      j = T(n),
       k = i.useMemo(() => (0, s.debounce)(() => {
         p.default.track(g.rMx.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
           box_type: (0, s.snakeCase)(n)
@@ -212,10 +212,10 @@ let A = e => {
         onBlur: G,
         onMouseLeave: G
       };
-    return D ? (0, r.jsx)(d.$1m, T(v({}, Y), {
+    return D ? (0, r.jsx)(d.$1m, S(v({}, Y), {
       color: "purple",
       children: (0, r.jsx)(H, {})
-    })) : (0, r.jsx)("div", T(v({}, Y), {
+    })) : (0, r.jsx)("div", S(v({}, Y), {
       children: (0, r.jsx)(H, {})
     }))
   }

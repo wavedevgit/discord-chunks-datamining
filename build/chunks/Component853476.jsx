@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 853476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -16,8 +16,8 @@ function s(e) {
     className: n
   } = e, s = (0, l.Z)(t);
   if (null == s) return null;
-  let c = s === i.u.CAMERA_SEND_LOW_FPS ? o.intl.string(o.t["1NyoVt"]) : true;
-  return null != c ? (0, r.jsx)(a.Z, {
+  let c = s === r.u.CAMERA_SEND_LOW_FPS ? o.intl.string(o.t["1NyoVt"]) : true;
+  return null != c ? (0, i.jsx)(a.Z, {
     className: n,
     errorMessage: c,
     avError: s

@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 86863, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   n: () => f
@@ -19,7 +19,7 @@ let f = e => {
     user: n,
     application: f,
     oauth2Token: h
-  } = e, m = (0, i.e7)([s.ZP], () => s.ZP.getSelfEmbeddedActivities());
+  } = e, m = (0, r.e7)([s.ZP], () => s.ZP.getSelfEmbeddedActivities());
   if (!n.bot || null == f) return null;
 
   function g() {
@@ -30,25 +30,25 @@ let f = e => {
       applicationId: f.id
     })
   }
-  return (0, r.jsx)(a.Button, {
+  return (0, i.jsx)(a.Button, {
     variant: "secondary",
     size: "sm",
     text: p.intl.string(p.t["5S3sQF"]),
     onClick: () => {
-      (0, a.h7j)(e => (0, r.jsx)(l.u_l, function(e) {
+      (0, a.h7j)(e => (0, i.jsx)(l.u_l, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          }))), i.forEach(function(t) {
+            var i;
+            i = n[t], t in e ? Object.defineProperty(e, t, {
+              value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = i
           })
         }
         return e

@@ -28,8 +28,8 @@ function v(e) {
   var t, n, v;
   let {
     application: I,
-    customId: T,
-    customLink: S,
+    customId: S,
+    customLink: T,
     referrerId: A,
     message: C
   } = e, N = null == I || null == (t = I.bot) ? true : t.id, R = (0, c.ms)({
@@ -44,7 +44,7 @@ function v(e) {
     if (null == x) return;
     let e = E.ZP.getEmbeddedActivitiesForChannel(x).filter(e => e.applicationId === I.id);
     return e.length > 0 ? e[0].compositeInstanceId : true
-  }), j = (0, i.e7)([E.ZP], () => E.ZP.getCurrentEmbeddedActivity()), k = (0, b.Z)(), U = L === y.jy.CAN_LAUNCH, G = null != M && (null == j ? true : j.compositeInstanceId) === M, B = null != T ? T : S.customId, Z = [];
+  }), j = (0, i.e7)([E.ZP], () => E.ZP.getCurrentEmbeddedActivity()), k = (0, b.Z)(), U = L === y.jy.CAN_LAUNCH, G = null != M && (null == j ? true : j.compositeInstanceId) === M, B = null != S ? S : T.customId, Z = [];
   U && Z.push({
     label: null == M ? O.intl.string(O.t.RscU7I) : G ? O.intl.string(O.t.DPfdsq) : O.intl.string(O.t.sqe0hj),
     trackingArea: f.j_.PLAY,
@@ -84,10 +84,10 @@ function v(e) {
       bot: I.bot
     }),
     info: (0, r.jsx)("div", {
-      children: S.description
+      children: T.description
     }),
-    staticBannerSrc: S.getAssetURL(),
-    title: S.title,
+    staticBannerSrc: T.getAssetURL(),
+    title: T.title,
     trackingConfig: {
       id: I.id,
       linkType: u.U.CUSTOM_ACTIVITY_LINK,

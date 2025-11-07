@@ -20,7 +20,7 @@ require.d(exports, {
   JT: () => el,
   JY: () => N,
   L1: () => ew,
-  NA: () => eS,
+  NA: () => eT,
   OW: () => e_,
   Ok: () => eO,
   Ou: () => W,
@@ -29,7 +29,7 @@ require.d(exports, {
   QK: () => eD,
   QZ: () => P,
   R$: () => O,
-  RS: () => eT,
+  RS: () => eS,
   R_: () => eF,
   Rt: () => e1,
   SE: () => ej,
@@ -48,7 +48,7 @@ require.d(exports, {
   _j: () => eV,
   bh: () => es,
   bm: () => ef,
-  cC: () => T,
+  cC: () => S,
   cP: () => Y,
   co: () => eE,
   d$: () => F,
@@ -83,7 +83,7 @@ require.d(exports, {
   tU: () => ev,
   uL: () => Z,
   uh: () => eX,
-  vF: () => S,
+  vF: () => T,
   x4: () => eI,
   xM: () => ed,
   xq: () => ee,
@@ -131,13 +131,13 @@ let y = (0, Chunk560997.Zc)("textAndImages", "useLegacyChatInput", e => {
   }, e => o.D5.create({
     value: e
   })),
-  T = (0, Chunk560997.Zc)("textAndImages", "renderSpoilers", e => {
+  S = (0, Chunk560997.Zc)("textAndImages", "renderSpoilers", e => {
     var t;
     return null != (t = null == e ? true : e.value) ? t : g.A2N.ON_CLICK
   }, e => o.Gm.create({
     value: e
   })),
-  S = (0, Chunk560997.Zc)("textAndImages", "useThreadSidebar", e => {
+  T = (0, Chunk560997.Zc)("textAndImages", "useThreadSidebar", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -408,13 +408,13 @@ let eg = new Set(Object.values(Chunk981631.Skl)),
   }, e => o.D5.create({
     value: e
   })), "text", "inlineAttachmentMedia"),
-  eT = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "inlineEmbedMedia", e => {
+  eS = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "inlineEmbedMedia", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })), "text", "inlineEmbedMedia"),
-  eS = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "renderEmbeds", e => {
+  eT = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "renderEmbeds", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({

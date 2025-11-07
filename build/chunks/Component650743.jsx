@@ -2,7 +2,7 @@
 /** chunk id: 650743, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -47,12 +47,12 @@ function I(e) {
   return e
 }
 
-function T(e) {
+function S(e) {
   let {
     soundboardSound: t,
     closePicker: v
-  } = e, T = (0, d.Iu)(e => e.searchQuery), S = (0, i.e7)([E.Z], () => null != t && E.Z.isFavoriteSound(t.soundId)), A = (0, i.e7)([_.Z], () => _.Z.getGuild(null == t ? true : t.guildId)), C = (0, i.e7)([l.Z], () => l.Z.useReducedMotion, []), N = (0, i.e7)([h.Z], () => h.Z.isFocused()), R = (0, i.e7)([p.ZP], () => p.ZP.getKeybindForAction(b.kg4.SOUNDBOARD_HOLD));
-  if (null != t && T.length > 0) return (0, r.jsx)(f.Z, {
+  } = e, S = (0, d.Iu)(e => e.searchQuery), T = (0, i.e7)([E.Z], () => null != t && E.Z.isFavoriteSound(t.soundId)), A = (0, i.e7)([_.Z], () => _.Z.getGuild(null == t ? true : t.guildId)), C = (0, i.e7)([l.Z], () => l.Z.useReducedMotion, []), N = (0, i.e7)([h.Z], () => h.Z.isFocused()), R = (0, i.e7)([p.ZP], () => p.ZP.getKeybindForAction(b.kg4.SOUNDBOARD_HOLD));
+  if (null != t && S.length > 0) return (0, r.jsx)(f.Z, {
     graphicPrimary: null != t.emojiId || null != t.emojiName ? (0, r.jsx)(s.Z, {
       emojiId: t.emojiId,
       emojiName: t.emojiName,
@@ -68,7 +68,7 @@ function T(e) {
     }) : null,
     titlePrimary: t.name,
     titleSecondary: null == A ? true : A.name,
-    isFavorite: S
+    isFavorite: T
   });
   let P = () => {
       v(), (0, o.ZDy)(async () => {

@@ -101,7 +101,7 @@ function B(e) {
     var e;
     return null == (e = R.Z.getGuild(a)) ? true : e.ownerId
   }, [a]), _ = (0, l.e7)([P.default], () => P.default.getUser(t.userId), [t.userId]), p = (0, l.e7)([A.Z], () => A.Z.getChannel(o), [o]);
-  return null == _ || null == p ? null : (0, r.jsx)(T.Z, {
+  return null == _ || null == p ? null : (0, r.jsx)(S.Z, {
     targetElementRef: c,
     userId: t.userId,
     guildId: a,
@@ -160,7 +160,7 @@ function Z(e) {
   let f = (0, b.Z)(a),
     p = (0, l.e7)([R.Z], () => {
       let e = R.Z.getGuild(a);
-      return null == e ? null : (0, S.lV)(e)
+      return null == e ? null : (0, T.lV)(e)
     }, [a]),
     h = (0, l.Wu)([C.ZP, P.default], () => {
       let e = C.ZP.getMembers(a),
@@ -225,13 +225,13 @@ function F(e) {
     inlinePreview: d = false
   } = e, {
     analyticsLocations: f
-  } = (0, m.ZP)(h.Z.ROLE_MENTION), _ = (0, l.e7)([p.Z], () => p.Z.roleStyle), g = (0, l.e7)([N.Z], () => null == o || null == t ? null : N.Z.getRole(o, t)), E = (0, I.yH)(o, g), b = !d && null != g && !(0, v.Gr)(g), T = b && "dot" === _, S = b && "username" === _, A = E && null != g ? g.colorStrings : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, U(j({
+  } = (0, m.ZP)(h.Z.ROLE_MENTION), _ = (0, l.e7)([p.Z], () => p.Z.roleStyle), g = (0, l.e7)([N.Z], () => null == o || null == t ? null : N.Z.getRole(o, t)), E = (0, I.yH)(o, g), b = !d && null != g && !(0, v.Gr)(g), S = b && "dot" === _, T = b && "username" === _, A = E && null != g ? g.colorStrings : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, U(j({
     ref: C,
     className: x.roleMention,
-    color: S ? g.color : null,
-    roleColors: S ? A : null
+    color: T ? g.color : null,
+    roleColors: T ? A : null
   }, e), {
-    children: [T && null != g.color && (0, r.jsx)(u.FhE, {
+    children: [S && null != g.color && (0, r.jsx)(u.FhE, {
       color: (0, s.Rf)(g.color),
       colors: A,
       className: L.roleDot,

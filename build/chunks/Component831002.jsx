@@ -1,8 +1,8 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 831002, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $A: () => v,
-  j8: () => O
+  j8: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -29,30 +29,30 @@ var Chunk388032 = require("./388032.jsx");
 function v(e) {
   let t = (0, a.e7)([h.Z], () => h.Z.getChannel(e), [e]),
     n = (0, a.e7)([m.Z], () => m.Z.can(b.yP, t)),
-    i = (0, y.sP)(),
-    l = (0, a.e7)([_.Z], () => _.Z.getStageInstanceByChannel(e), [e]),
+    r = (0, C.sP)(),
+    l = (0, a.e7)([y.Z], () => y.Z.getStageInstanceByChannel(e), [e]),
     u = (0, p.bp)(),
     d = () => {
-      (0, y.u1)() ? s.Z.showAgeVerificationGetStartedModal({
+      (0, C.u1)() ? s.Z.showAgeVerificationGetStartedModal({
         entryPoint: c.cU.START_STAGE_PROMPT
       }): null != t && (0, g.T)(t, u)
     };
-  return (null == t ? true : t.isGuildStageVoice()) && n && !i ? null != l ? (0, r.jsx)(o.sNh, {
+  return (null == t ? true : t.isGuildStageVoice()) && n && !r ? null != l ? (0, i.jsx)(o.sNh, {
     id: "edit-stage",
-    label: C.intl.string(C.t["I+9bLx"]),
+    label: _.intl.string(_.t["I+9bLx"]),
     action: d
-  }) : (0, r.jsx)(o.sNh, {
+  }) : (0, i.jsx)(o.sNh, {
     id: "start-stage",
-    label: C.intl.string(C.t.OYbHfv),
+    label: _.intl.string(_.t.OYbHfv),
     action: d
   }) : null
 }
 
-function O(e) {
+function x(e) {
   let t = (0, a.e7)([h.Z], () => h.Z.getChannel(e), [e]);
   l()(null != t, "useNotificationSettingsItem: channel cannot be undefined");
   let n = (0, f.Mn)("StageChannelCallOverflowMenu"),
-    r = (0, d.ZP)(t),
-    i = (0, u.Z)(t);
-  return n ? r : i
+    i = (0, d.ZP)(t),
+    r = (0, u.Z)(t);
+  return n ? i : r
 }

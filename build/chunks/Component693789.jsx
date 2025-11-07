@@ -140,8 +140,8 @@ function v(e) {
     submitting: m = false,
     type: v = "button",
     style: I,
-    wrapperClassName: T,
-    className: S,
+    wrapperClassName: S,
+    className: T,
     innerClassName: A,
     onClick: C,
     onDoubleClick: N,
@@ -160,7 +160,7 @@ function v(e) {
   } = e, Z = h(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
   let F = _ || m,
     V = F && (null != w || null != D),
-    H = V ? null : T,
+    H = V ? null : S,
     Y = y(k, t),
     W = i.useRef(false);
   i.useEffect(() => {
@@ -183,7 +183,7 @@ function v(e) {
       disabled: _,
       style: I,
       rel: M,
-      className: o()(S, O({
+      className: o()(T, O({
         look: t,
         color: n,
         size: a,
@@ -203,7 +203,7 @@ function v(e) {
     }))
   }));
   return V ? (0, r.jsxs)("span", {
-    className: o()(u.disabledButtonWrapper, T, a, {
+    className: o()(u.disabledButtonWrapper, S, a, {
       [u.grow]: d,
       [u.fullWidth]: s
     }),
@@ -229,15 +229,15 @@ v.Looks = g, v.Colors = E, v.Sizes = b, v.Link = function(e) {
     onMouseDown: O,
     onMouseUp: v,
     children: I,
-    rel: T
-  } = e, S = h(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
-  return (0, r.jsx)(s.rU, p(f({}, S), {
+    rel: S
+  } = e, T = h(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
+  return (0, r.jsx)(s.rU, p(f({}, T), {
     to: m,
     onClick: y,
     onMouseUp: v,
     onMouseDown: O,
     style: c,
-    rel: T,
+    rel: S,
     className: o()(d, u.button, t, n, i, {
       [u.fullWidth]: a,
       [u.grow]: l

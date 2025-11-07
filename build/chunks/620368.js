@@ -25,21 +25,21 @@ function u(e) {
     [y, O] = (0, c.useState)(null),
     [v, I] = (0, c.useState)(null);
   if (d && (y = d, "hour" in d && (v = d)), p && !(h in p)) throw Error("Invalid granularity " + h + " for value " + p.toString());
-  let T = (null == d ? true : d.calendar.identifier) === "gregory" && "BC" === d.era,
-    S = (0, c.useMemo)(() => ({
+  let S = (null == d ? true : d.calendar.identifier) === "gregory" && "BC" === d.era,
+    T = (0, c.useMemo)(() => ({
       granularity: h,
       timeZone: m,
       hideTimeZone: e.hideTimeZone,
       hourCycle: e.hourCycle,
       shouldForceLeadingZeros: e.shouldForceLeadingZeros,
-      showEra: T
-    }), [h, e.hourCycle, e.shouldForceLeadingZeros, m, e.hideTimeZone, T]),
+      showEra: S
+    }), [h, e.hourCycle, e.shouldForceLeadingZeros, m, e.hideTimeZone, S]),
     {
       minValue: A,
       maxValue: C,
       isDateUnavailable: N
     } = e,
-    R = (0, c.useMemo)(() => (0, r.p2)(d, A, C, N, S), [d, A, C, N, S]),
+    R = (0, c.useMemo)(() => (0, r.p2)(d, A, C, N, T), [d, A, C, N, T]),
     P = (0, o.Q3)({
       ...e,
       value: d,
@@ -76,12 +76,12 @@ function u(e) {
     isInvalid: w,
     formatValue(e, t) {
       if (!g) return "";
-      let n = (0, r.oE)(t, S);
+      let n = (0, r.oE)(t, T);
       return new(0, a.C)(e, n).format(g)
     },
     getDateFormatter(e, t) {
       let n = {
-          ...S,
+          ...T,
           ...t
         },
         i = (0, r.oE)({}, n);

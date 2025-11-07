@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 316595, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -20,7 +20,7 @@ function p(e) {
     animationContainerClassName: p,
     glowClassName: f,
     trinketsClassName: h
-  } = e, m = (0, l.e7)([u.Z], () => u.Z.hasCurrentUserSentMessageSinceAppStart()), g = i.useMemo(() => {
+  } = e, m = (0, l.e7)([u.Z], () => u.Z.hasCurrentUserSentMessageSinceAppStart()), g = r.useMemo(() => {
     let e = [];
     return m && n && e.push(a.z.ACTIVITIES_CHAT_BUTTON_NUX_V2), e
   }, [m, n]), b = () => {
@@ -28,13 +28,13 @@ function p(e) {
       dismissAction: d.L.AUTO_DISMISS
     }), 1e4)
   };
-  return (0, r.jsx)(c.ZP, {
+  return (0, i.jsx)(c.ZP, {
     contentTypes: g,
     children: e => {
       let {
         visibleContent: n
       } = e;
-      return n === a.z.ACTIVITIES_CHAT_BUTTON_NUX_V2 ? (0, r.jsx)(o.b, {
+      return n === a.z.ACTIVITIES_CHAT_BUTTON_NUX_V2 ? (0, i.jsx)(o.b, {
         animationContainerClassName: p,
         glowClassName: f,
         trinketsClassName: h,

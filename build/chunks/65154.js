@@ -2,7 +2,7 @@
 /** chunk id: 65154, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $A: () => T,
+  $A: () => S,
   $B: () => C,
   $j: () => s,
   AN: () => W,
@@ -43,7 +43,7 @@ require.d(exports, {
   jg: () => E,
   kS: () => F,
   mC: () => A,
-  mN: () => S,
+  mN: () => T,
   n4: () => Y,
   pM: () => o,
   pk: () => k,
@@ -92,8 +92,8 @@ let d = 100,
   O = 1 / 15,
   v = .8,
   I = .4,
-  T = 6e5,
-  S = 16e3,
+  S = 6e5,
+  T = 16e3,
   A = 1e7,
   C = 5e3,
   N = 15e3,

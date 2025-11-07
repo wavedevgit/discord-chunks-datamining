@@ -72,13 +72,13 @@ function I(e) {
   g.delete(t), a = n
 }
 
-function T(e) {
+function S(e) {
   let {
     testModeApplicationId: t
   } = e;
   r = t
 }
-class S extends(o = Chunk442837.ZP.PersistedStore) {
+class T extends(o = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     r = (m = p({}, null != e ? e : h)).applicationId, i = m.originURL, this.waitFor(f.Z, c.Z, d.Z), this.syncWith([d.Z, c.Z], () => true), f.Z.whenInitialized(() => {
       E = true
@@ -120,12 +120,12 @@ class S extends(o = Chunk442837.ZP.PersistedStore) {
     })
   }
 }
-_(S, "displayName", "TestModeStore"), _(S, "persistKey", "TestModeStore");
-let A = new S(Chunk570140.Z, {
+_(T, "displayName", "TestModeStore"), _(T, "persistKey", "TestModeStore");
+let A = new T(Chunk570140.Z, {
   DEVELOPER_TEST_MODE_AUTHORIZATION_START: O,
   DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: v,
   DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL: I,
-  OVERLAY_INITIALIZE: T,
+  OVERLAY_INITIALIZE: S,
   DEVELOPER_TEST_MODE_RESET_ERROR: b,
   LOGOUT: y,
   DEVELOPER_TEST_MODE_RESET: y

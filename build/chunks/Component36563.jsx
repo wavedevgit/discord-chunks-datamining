@@ -91,8 +91,8 @@ function I(e) {
     channelId: g,
     className: b,
     size: I = u.EFr.SIZE_24,
-    overflowCountVariant: T,
-    overflowCountColor: S = "interactive-normal",
+    overflowCountVariant: S,
+    overflowCountColor: T = "interactive-normal",
     overflowCountClassName: A,
     hideOverflowCount: C = false,
     disableUsernameTooltip: N = false,
@@ -170,7 +170,7 @@ function I(e) {
     })
   }, W = () => {
     if (!V) return null;
-    let e = null != T ? T : v(I);
+    let e = null != S ? S : v(I);
     return (0, r.jsx)(u.yRy, {
       targetElementRef: B,
       renderPopout: H,
@@ -189,7 +189,7 @@ function I(e) {
         }),
         children: (0, r.jsx)(u.Text, {
           variant: e,
-          color: S,
+          color: T,
           children: F > 99 ? ">99" : "+".concat(F)
         })
       }))

@@ -27,7 +27,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk978967 = require("./978967.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -69,7 +69,7 @@ function C(e, t) {
 function N(e) {
   let {
     currentUserId: t,
-    message: T,
+    message: S,
     application: A,
     channel: N,
     analyticsLocations: R,
@@ -88,8 +88,8 @@ function N(e) {
     if (t === A.id) returntrue;
     let n = h.Z.getGameByApplication(A);
     return null != n && t === n.id
-  })), j = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()), k = (0, i.e7)([m.Z], () => m.Z.getChannelId()), U = b.default.extractTimestamp(T.id) + y.O < Date.now(), G = (0, r.jsx)(r.Fragment, {
-    children: (0, o._0)(T, N, t)
+  })), j = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()), k = (0, i.e7)([m.Z], () => m.Z.getChannelId()), U = b.default.extractTimestamp(S.id) + y.O < Date.now(), G = (0, r.jsx)(r.Fragment, {
+    children: (0, o._0)(S, N, t)
   }), {
     newestAnalyticsLocation: B
   } = (0, l.ZP)(R, s.Z.REQUEST_TO_STREAM_INVITE_EMBED), Z = I.intl.string(v.default["5+172e"]), F = false;
@@ -101,7 +101,7 @@ function N(e) {
     bannerAspectRatio: x,
     iconSrc: null != L ? L : true,
     info: G,
-    actions: T.author.id === t ? [] : [{
+    actions: S.author.id === t ? [] : [{
       label: Z,
       trackingArea: u.j_.STREAM,
       disabled: F,
@@ -110,7 +110,7 @@ function N(e) {
           let {
             default: e
           } = await Promise.all([n.e("38697"), n.e("4093"), n.e("47863"), n.e("39173")]).then(n.bind(n, 60594));
-          return t => (0, r.jsx)(e, C(S({}, t), {
+          return t => (0, r.jsx)(e, C(T({}, t), {
             analyticsLocation: B
           }))
         }))
@@ -121,7 +121,7 @@ function N(e) {
       linkType: O.U.REQUEST_TO_STREAM,
       guildId: N.guild_id,
       channelId: N.id,
-      messageId: T.id,
+      messageId: S.id,
       onView: P,
       isDeadEnd: U
     }

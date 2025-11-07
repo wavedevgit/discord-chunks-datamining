@@ -403,8 +403,8 @@ class y extends Chunk47770.Z {
         framesDropped: O,
         framesCodecError: v,
         framesCodec: I,
-        framesNetwork: T,
-        packets: S,
+        framesNetwork: S,
+        packets: T,
         packetsLost: A,
         nackCount: C,
         pliCount: N,
@@ -434,8 +434,8 @@ class y extends Chunk47770.Z {
       avg_fps: i > 0 ? Math.round((null != I ? I : 0) / i) : 0,
       num_bytes: y,
       num_packets_lost: A,
-      num_packets: S,
-      num_frames: T,
+      num_packets: T,
+      num_frames: S,
       num_frames_codec_error: v,
       time_to_first_frame_ms: e.timeToFirstFrame,
       num_frames_dropped: O,
@@ -476,19 +476,19 @@ class y extends Chunk47770.Z {
       let r = t;
       if (null != r) {
         let t = r.ssrc,
-          T = this.outboundStats[t];
-        null == T && (console.warn("Unknown outbound video stream with SSRC: ".concat(t)), T = new _.nt(this.timestampProducer), this.outboundStats[t] = T), null == T.timeToFirstFrame && (r.framesEncoded > 0 || (null != (i = r.frameRateInput) ? i : 0) > 0) && (T.timeToFirstFrame = Math.max(0, e - T.startTime)), null != g && g >= 0 && this.videoEntropy.addSample(g);
-        let S = n.find(e => e.ssrc === t);
+          S = this.outboundStats[t];
+        null == S && (console.warn("Unknown outbound video stream with SSRC: ".concat(t)), S = new _.nt(this.timestampProducer), this.outboundStats[t] = S), null == S.timeToFirstFrame && (r.framesEncoded > 0 || (null != (i = r.frameRateInput) ? i : 0) > 0) && (S.timeToFirstFrame = Math.max(0, e - S.startTime)), null != g && g >= 0 && this.videoEntropy.addSample(g);
+        let T = n.find(e => e.ssrc === t);
         var i, a, o, c, u, f, p, m, E, b, y, O, v = true;
         if (this.connection.context === s.Yn.STREAM) {
           var I = this.connection.getRemoteVideoSinkWants(t);
-          (null == I || 0 === I) && (null == S ? true : S.quality) === h && (I = this.connection.getRemoteVideoSinkWants("any")), v = (null != I ? I : 0) > 0
+          (null == I || 0 === I) && (null == T ? true : T.quality) === h && (I = this.connection.getRemoteVideoSinkWants("any")), v = (null != I ? I : 0) > 0
         }
         let A = this.videoStopped.value || !v;
-        if (A !== T.isVideoStopped && T.setVideoStopped(A, _.Mq.SenderStopped), !A) {
-          T.appendAndIncrementStats(_.z4.parseOutboundStats(r, e)), T.encoderCodec !== _.u7.UNKNOWN && d.add(T.encoderCodec);
-          let t = null == S ? true : S.maxBitrate;
-          T.appendTargetRates(null == S ? true : S.maxFrameRate, null != (o = r.bitrateTarget) ? o : Math.min(null != (a = l.availableOutgoingBitrate) ? a : 0, null != t ? t : 0), t, l.availableOutgoingBitrate), T.averageEncodeTime = null != (c = r.averageEncodeTime) ? c : 0, T.framesDroppedRateLimiter = null != (u = r.framesDroppedRateLimiter) ? u : null, T.framesDroppedEncoderQueue = null != (f = r.framesDroppedEncoderQueue) ? f : null, T.framesDroppedCongestionWindow = null != (p = r.framesDroppedCongestionWindow) ? p : null, T.framesDroppedEncoder = null != (m = r.framesDroppedEncoder) ? m : null, this.hqSimulcastStreamEncoded.value = null != (E = r.hqSimulcastStreamEncoded) && E, this.lqSimulcastStreamEncoded.value = null != (b = r.lqSimulcastStreamEncoded) && b, this.bothSimulcastStreamsEncoded.value = this.hqSimulcastStreamEncoded.value && this.lqSimulcastStreamEncoded.value, this.bandwidthLimitedResolution.value = null != (y = r.bandwidthLimitedResolution) && y, this.bandwidthLimitedFramerate.value = null != (O = r.bandwidthLimitedFrameRate) && O
+        if (A !== S.isVideoStopped && S.setVideoStopped(A, _.Mq.SenderStopped), !A) {
+          S.appendAndIncrementStats(_.z4.parseOutboundStats(r, e)), S.encoderCodec !== _.u7.UNKNOWN && d.add(S.encoderCodec);
+          let t = null == T ? true : T.maxBitrate;
+          S.appendTargetRates(null == T ? true : T.maxFrameRate, null != (o = r.bitrateTarget) ? o : Math.min(null != (a = l.availableOutgoingBitrate) ? a : 0, null != t ? t : 0), t, l.availableOutgoingBitrate), S.averageEncodeTime = null != (c = r.averageEncodeTime) ? c : 0, S.framesDroppedRateLimiter = null != (u = r.framesDroppedRateLimiter) ? u : null, S.framesDroppedEncoderQueue = null != (f = r.framesDroppedEncoderQueue) ? f : null, S.framesDroppedCongestionWindow = null != (p = r.framesDroppedCongestionWindow) ? p : null, S.framesDroppedEncoder = null != (m = r.framesDroppedEncoder) ? m : null, this.hqSimulcastStreamEncoded.value = null != (E = r.hqSimulcastStreamEncoded) && E, this.lqSimulcastStreamEncoded.value = null != (b = r.lqSimulcastStreamEncoded) && b, this.bothSimulcastStreamsEncoded.value = this.hqSimulcastStreamEncoded.value && this.lqSimulcastStreamEncoded.value, this.bandwidthLimitedResolution.value = null != (y = r.bandwidthLimitedResolution) && y, this.bandwidthLimitedFramerate.value = null != (O = r.bandwidthLimitedFrameRate) && O
         }
       }
     }), this.paused.value || i().forEach(t.rtp.inbound, (t, n) => {

@@ -2,7 +2,7 @@
 /** chunk id: 355045, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,12 +25,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk375646 = require("./375646.js");
-let T = function(e) {
+let S = function(e) {
   let {
     closeLayer: t,
     guild: n,
     onCtaVisibilityChange: a
-  } = e, T = i.useRef(null), S = (0, s.e7)([m.default], () => m.default.getCurrentUser()), A = (0, s.e7)([g.Z], () => g.Z.boostSlots), {
+  } = e, S = i.useRef(null), T = (0, s.e7)([m.default], () => m.default.getCurrentUser()), A = (0, s.e7)([g.Z], () => g.Z.boostSlots), {
     analyticsLocations: C
   } = (0, d.ZP)(), {
     fractionalState: N
@@ -108,11 +108,11 @@ let T = function(e) {
     }), (0, r.jsxs)("div", {
       className: I.guildBoostCtas,
       children: [(0, r.jsx)(l.$, {
-        innerRef: T,
+        innerRef: S,
         onChange: a,
         threshold: .9,
         children: (0, r.jsx)("div", {
-          ref: T,
+          ref: S,
           className: o()(I.guildBoostCta, I.guildBoostCtaBoostWrapper),
           children: (0, r.jsx)(b.Z, {
             className: I.guildBoostCtaBoost,
@@ -131,7 +131,7 @@ let T = function(e) {
             fullWidth: true
           })
         })
-      }), E.ZP.hasFreeBoosts(S, N) || E.ZP.isPremium(S, O.PremiumTypes.TIER_2) ? (0, r.jsxs)(c.zx, {
+      }), E.ZP.hasFreeBoosts(T, N) || E.ZP.isPremium(T, O.PremiumTypes.TIER_2) ? (0, r.jsxs)(c.zx, {
         "data-migration-pending": true,
         className: o()(I.guildBoostCta, I.guildBoostCtaSecondary),
         innerClassName: o()(I.__invalid_guildBoostCtaContent, I.guildBoostCtaGiftContent),

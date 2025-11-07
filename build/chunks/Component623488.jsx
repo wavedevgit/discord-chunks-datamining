@@ -87,8 +87,8 @@ function h(e) {
     actionMenu: O,
     showOpaqueBackground: v = false,
     hideRoleTag: I = false,
-    lineClamp: T = 1,
-    cardWidth: S = 332,
+    lineClamp: S = 1,
+    cardWidth: T = 332,
     cardHeight: A,
     thumbnailHeight: C = 187,
     descriptionTextVariant: N = "text-sm/normal",
@@ -121,7 +121,7 @@ function h(e) {
           children: (0, r.jsx)(l.Z, {
             variant: N,
             color: "text-muted",
-            lineClamp: T,
+            lineClamp: S,
             text: i
           })
         }), g && (0, r.jsx)(p, {
@@ -160,7 +160,7 @@ function h(e) {
     children: D
   }) : (0, r.jsx)("div", {
     style: {
-      width: S,
+      width: T,
       height: A
     },
     children: (0, r.jsx)(o.kL8, {

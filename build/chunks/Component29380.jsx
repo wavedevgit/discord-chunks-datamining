@@ -1,7 +1,8 @@
-/** Chunk was on 35755 **/
-/** chunk id: 29380, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 29380, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,74 +17,74 @@ var Chunk951288 = require("./951288.js"),
   Chunk827498 = require("./827498.js"),
   Chunk160973 = require("./160973.js"),
   Chunk783097 = require("./783097.js"),
-  Chunk826405 = require("./826405.js"),
+  Chunk890280 = require("./890280.js"),
   Chunk176412 = require("./176412.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function y(e) {
   let {
     context: t,
     application: n,
-    sectionName: b,
-    primaryEntryPointCommand: N
-  } = e, j = l.useId(), C = l.useCallback(() => {
-    d.y(m.ti.ACTIVITY)
-  }, []), E = l.useCallback(() => {
-    p.Z.shouldShowModal() && C()
-  }, [C]), {
-    submitting: P,
+    sectionName: y,
+    primaryEntryPointCommand: O
+  } = e, v = i.useId(), I = i.useCallback(() => {
+    d.y(_.ti.ACTIVITY)
+  }, []), S = i.useCallback(() => {
+    f.Z.shouldShowModal() && I()
+  }, [I]), {
+    submitting: T,
     wasSubmitting: A
-  } = (0, v.Z)({
+  } = (0, m.Z)({
     applicationId: n.id,
     context: t,
-    launchingComponentId: j,
-    onSubmissionComplete: C
-  }), [_, O] = l.useState(false), I = (0, o.Qv)({
+    launchingComponentId: v,
+    onSubmissionComplete: I
+  }), [C, N] = i.useState(false), R = (0, s.Qv)({
     applicationId: n.id,
     context: t
-  }), S = l.useMemo(() => (0, h.XZ)(N.displayName), [N.displayName]), {
-    onActivityItemSelected: T,
-    buttonVariant: L,
-    buttonText: R
-  } = (0, y.P7)({
+  }), P = i.useMemo(() => (0, h.XZ)(O.displayName), [O.displayName]), {
+    onActivityItemSelected: w,
+    buttonVariant: D,
+    buttonText: x
+  } = (0, g.P7)({
     context: t,
     application: n,
-    location: s.Vh.APP_LAUNCHER_APPLICATION_VIEW,
-    sectionName: b,
-    commandName: S,
-    autoDismissOnClick: I === o.JS.LEAVE || (0, c.g)(n),
-    launchingComponentId: j,
-    submitting: null != A ? A : P,
-    onConfirmActivityLaunchChecksAlertOpen: E
+    location: l.Vh.APP_LAUNCHER_APPLICATION_VIEW,
+    sectionName: y,
+    commandName: P,
+    autoDismissOnClick: R === s.JS.LEAVE || (0, c.g)(n),
+    launchingComponentId: v,
+    submitting: null != A ? A : T,
+    onConfirmActivityLaunchChecksAlertOpen: S
   }), {
-    disabled: Z,
-    reason: w
-  } = (0, f.Z)({
+    disabled: L,
+    reason: M
+  } = (0, p.Z)({
     context: t,
     application: n,
-    activityAction: I
+    activityAction: R
   });
-  return (0, i.jsx)(r.u, {
-    shouldShow: null != w,
-    __unsupportedReactNodeAsText: w,
-    children: (0, i.jsx)(a.Button, {
+  return (0, r.jsx)(a.u, {
+    shouldShow: null != M,
+    __unsupportedReactNodeAsText: M,
+    children: (0, r.jsx)(o.Button, {
       type: "submit",
       size: "md",
-      variant: L,
-      disabled: Z,
-      loading: _,
+      variant: D,
+      disabled: L,
+      loading: C,
       onClick: () => {
-        O(true), T(), u.default.track(g.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+        N(true), w(), u.default.track(E.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
           application_id: n.id,
-          button_action: m._y.USE_APP_COMMAND
+          button_action: _._y.USE_APP_COMMAND
         })
       },
-      "aria-label": x.intl.formatToPlainString(x.t["XjP/R+"], {
-        buttonText: R,
+      "aria-label": b.intl.formatToPlainString(b.t["XjP/R+"], {
+        buttonText: x,
         applicationName: n.name
       }),
-      text: R
+      text: x
     })
   })
 }

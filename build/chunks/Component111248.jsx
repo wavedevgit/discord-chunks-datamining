@@ -1,7 +1,7 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 111248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,40 +18,40 @@ var Chunk951288 = require("./951288.js"),
   Chunk354459 = require("./354459.js"),
   Chunk330831 = require("./330831.js"),
   Chunk315091 = require("./315091.js");
-let _ = "CameraPreviewPosition";
+let y = "CameraPreviewPosition";
 
-function y(e) {
+function C(e) {
   let {
     width: t,
     onContextMenuParticipant: n,
     height: l,
-    channel: y,
-    participants: C,
+    channel: C,
+    participants: _,
     onSelectParticipant: v
-  } = e, [O, x] = function() {
-    let [e, t] = i.useState(() => s.K.get(_, h.VD2.BOTTOM_RIGHT));
-    return [e, i.useCallback(e => {
-      s.K.set(_, e), t(e)
+  } = e, [x, O] = function() {
+    let [e, t] = r.useState(() => s.K.get(y, h.VD2.BOTTOM_RIGHT));
+    return [e, r.useCallback(e => {
+      s.K.set(y, e), t(e)
     }, [])]
-  }(), E = i.useRef(null), j = null == y.getGuildId() ? 70 : 50, S = (0, o.e7)([p.Z], () => p.Z.pipWidth(m.cL.CAMERA_PREVIEW)), P = C.length, I = S * P + 8 * (P - 1), Z = i.useMemo(() => ({
+  }(), E = r.useRef(null), j = null == C.getGuildId() ? 70 : 50, S = (0, o.e7)([p.Z], () => p.Z.pipWidth(m.cL.CAMERA_PREVIEW)), P = _.length, I = S * P + 8 * (P - 1), Z = r.useMemo(() => ({
     minWidth: m.Rv[m.cL.CAMERA_PREVIEW] * P + 8 * (P - 1),
     maxWidth: m.$i[m.cL.CAMERA_PREVIEW] * P + 8 * (P - 1)
   }), [P]);
-  i.useLayoutEffect(() => {
+  r.useLayoutEffect(() => {
     var e;
     null == (e = E.current) || e.ensureIsInPosition()
-  }, [C.length]);
-  let T = i.useCallback(e => {
+  }, [_.length]);
+  let T = r.useCallback(e => {
       let t = 0 === P ? e : (e - 8 * (P - 1)) / P;
       c.d7(t, m.cL.CAMERA_PREVIEW)
     }, [P]),
-    N = i.useCallback((e, t) => {
-      x(t)
-    }, [x]);
-  return (0, r.jsx)("div", {
+    N = r.useCallback((e, t) => {
+      O(t)
+    }, [O]);
+  return (0, i.jsx)("div", {
     className: g.container,
-    children: (0, r.jsx)(d._, {
-      position: O,
+    children: (0, i.jsx)(d._, {
+      position: x,
       id: 0,
       width: I,
       ref: E,
@@ -64,11 +64,11 @@ function y(e) {
       edgeOffsetLeft: 16,
       edgeOffsetRight: 16,
       resizeConfig: Z,
-      children: (0, r.jsx)("div", {
+      children: (0, i.jsx)("div", {
         className: g.tileContainer,
-        children: C.map(e => (0, r.jsx)(f.ZP, {
+        children: _.map(e => (0, i.jsx)(f.ZP, {
           participant: e,
-          channel: y,
+          channel: C,
           onContextMenu: n,
           className: a()(g.tile, b.elevationHigh),
           fit: f.BP.COVER,

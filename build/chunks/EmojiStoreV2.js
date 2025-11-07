@@ -102,7 +102,7 @@ class J {
   }
   isUsable(e) {
     if (0 === e.roles.length) returntrue;
-    let t = S.ZP.getMember(this.id, this._userId);
+    let t = T.ZP.getMember(this.id, this._userId);
     return null != t && !!(t.roles.some(t => e.roles.includes(t)) || (0, y.yH)(e))
   }
   emojiIds() {
@@ -402,12 +402,12 @@ function eI(e) {
   er = +!!e.guilds.every(e => null != e.emojis.items), eO()
 }
 
-function eT(e) {
+function eS(e) {
   for (let t in eb(), e.emojis) ev(t);
   er = 1, eO()
 }
 
-function eS() {
+function eT() {
   Q.pendingUsages = [], Q.emojiReactionPendingUsages = []
 }
 
@@ -454,9 +454,9 @@ function eD(e) {
 }
 
 function ex(e, t) {
-  if (s().isEmpty(e) && s().isEmpty(Q.pendingUsages) && T.Z.hasLoaded(Y.yP.FRECENCY_AND_FAVORITES_SETTINGS))
+  if (s().isEmpty(e) && s().isEmpty(Q.pendingUsages) && S.Z.hasLoaded(Y.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["thumbsup", "eyes", "laughing", "watermelon", "fork_and_knife", "yum", "weary", "tired_face", "poop", "100"]) eg.track(e);
-  if (s().isEmpty(t) && s().isEmpty(Q.emojiReactionPendingUsages) && T.Z.hasLoaded(Y.yP.FRECENCY_AND_FAVORITES_SETTINGS))
+  if (s().isEmpty(t) && s().isEmpty(Q.emojiReactionPendingUsages) && S.Z.hasLoaded(Y.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["100", "100", "thumbsup", "thumbsup", "thumbsdown", "thumbsdown", "heart", "point_up", "eyes", "weary", "laughing", "white_check_mark", "x"]) eE.track(e)
 }
 
@@ -552,7 +552,7 @@ function eZ(e) {
 }
 class eF extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(E.Z, S.ZP, A.Z, C.Z, N.Z, I.default, U.Z, R.ZP, O.Z, B.Z, T.Z, P.default), null != e && (null != e.pendingUsages && (Q.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (Q.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (Q.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([T.Z], eL)
+    this.waitFor(E.Z, T.ZP, A.Z, C.Z, N.Z, I.default, U.Z, R.ZP, O.Z, B.Z, S.Z, P.default), null != e && (null != e.pendingUsages && (Q.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (Q.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (Q.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([S.Z], eL)
   }
   getState() {
     return Q
@@ -685,10 +685,10 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
 }
 W(eF, "displayName", "EmojiStore"), W(eF, "persistKey", "EmojiStoreV2"), W(eF, "migrations", [e => K({}, e)]);
 let eV = new eF(Chunk570140.Z, {
-  LOGOUT: eS,
+  LOGOUT: eT,
   BACKGROUND_SYNC: eA,
   CONNECTION_OPEN: eI,
-  OVERLAY_INITIALIZE: eT,
+  OVERLAY_INITIALIZE: eS,
   CACHED_EMOJIS_LOADED: ef,
   GUILD_MEMBER_UPDATE: ew,
   GUILD_CREATE: eC,

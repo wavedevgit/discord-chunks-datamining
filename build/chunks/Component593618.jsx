@@ -95,7 +95,7 @@ function V(e) {
       } = e;
       return t.id
     }), ...Object.values(A.Z.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]),
-    r = (0, S.ZP)(t),
+    r = (0, T.ZP)(t),
     a = i.useMemo(() => r.map(e => e.id), [r]),
     o = (0, c.e7)([L.ZP], () => L.ZP.getVoiceStates(t), [t]),
     s = (0, c.Wu)([w.Z], () => w.Z.getBlockedOrIgnoredIDs()),
@@ -112,7 +112,7 @@ function V(e) {
     }),
     d = (0, c.Wu)([I.Z], () => l().flatMap(a, t => {
       if (t === e.afkChannelId) return [];
-      let n = I.Z.getMutableParticipants(t, T.pV.SPEAKER).filter(e => e.type === T.Ui.VOICE).map(e => {
+      let n = I.Z.getMutableParticipants(t, S.pV.SPEAKER).filter(e => e.type === S.Ui.VOICE).map(e => {
         let {
           user: t
         } = e;
@@ -122,7 +122,7 @@ function V(e) {
     })),
     _ = (0, c.e7)([I.Z], () => {
       let e = 0;
-      for (let t of a) e += I.Z.getParticipantCount(t, T.pV.AUDIENCE);
+      for (let t of a) e += I.Z.getParticipantCount(t, S.pV.AUDIENCE);
       return e
     }),
     h = (0, c.Wu)([R.Z], () => {

@@ -2,7 +2,7 @@
 /** chunk id: 987106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -75,7 +75,7 @@ function I(e) {
   }
 }
 
-function T(e) {
+function S(e) {
   let {
     url: t,
     onSelect: n
@@ -95,7 +95,7 @@ function T(e) {
   }) : null
 }
 
-function S(e) {
+function T(e) {
   let t, {
       label: n,
       style: i,
@@ -105,7 +105,7 @@ function S(e) {
       skuId: O
     } = e,
     {
-      executeStateUpdate: S,
+      executeStateUpdate: T,
       visualState: A,
       isDisabled: C
     } = (0, h.Ee)(e),
@@ -122,14 +122,14 @@ function S(e) {
       href: null != b ? b : "",
       shouldConfirm: true
     })
-  } : R ? null != N && false === N.disabled ? N.onClick : o.noop : () => S(), (0, r.jsxs)(s.zx, {
+  } : R ? null != N && false === N.disabled ? N.onClick : o.noop : () => T(), (0, r.jsxs)(s.zx, {
     "data-migration-pending": true,
     color: I(i),
     size: s.zx.Sizes.SMALL,
     disabled: _ || A === m.gH.DISABLED || C || P,
     onClick: t,
     onContextMenu: e => {
-      L && (0, c.vq)(e, e => (0, r.jsx)(T, v(y({}, e), {
+      L && (0, c.vq)(e, e => (0, r.jsx)(S, v(y({}, e), {
         url: b
       })))
     },

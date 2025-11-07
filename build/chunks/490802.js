@@ -47,8 +47,8 @@ function h(e) {
     isDisabled: O = false,
     isReadOnly: v = false,
     isRequired: I = false,
-    minValue: T,
-    maxValue: S,
+    minValue: S,
+    maxValue: T,
     isDateUnavailable: A
   } = e, C = e.value || e.defaultValue || e.placeholderValue || null, [N, R] = (0, r.iZ)(C, e.granularity), P = R || "UTC";
   if (C && !(N in C)) throw Error("Invalid granularity " + N + " for value " + C.toString());
@@ -119,7 +119,7 @@ function h(e) {
         (t.length >= n.length || t.length === n.length - 1 && Y.dayPeriod && !W.dayPeriod) && Q(X)
       }
     },
-    en = (0, d.useMemo)(() => (0, r.p2)(x, T, S, A, Z), [x, T, S, A, Z]),
+    en = (0, d.useMemo)(() => (0, r.p2)(x, S, T, A, Z), [x, S, T, A, Z]),
     er = (0, c.Q3)({
       ...e,
       value: x,

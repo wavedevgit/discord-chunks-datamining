@@ -124,7 +124,7 @@ function F(e) {
     }), true;
     {
       let t = b.default.getSessionId();
-      return n === b.default.getId() && a !== t && null != T.Z.getChannelId() ? e : U(n, r) || e
+      return n === b.default.getId() && a !== t && null != S.Z.getChannelId() ? e : U(n, r) || e
     }
   }, false)
 }
@@ -352,7 +352,7 @@ function ei(e) {
 j();
 class ea extends(c = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.syncWith([I.Z], () => true), this.waitFor(b.default, y.Z, I.Z, T.Z, _.ZP, S.Z), (null == e ? true : e.selfStreamParticipantsHidden) !== true && Object.assign(L, null == e ? true : e.selfStreamParticipantsHidden)
+    this.syncWith([I.Z], () => true), this.waitFor(b.default, y.Z, I.Z, S.Z, _.ZP, T.Z), (null == e ? true : e.selfStreamParticipantsHidden) !== true && Object.assign(L, null == e ? true : e.selfStreamParticipantsHidden)
   }
   getState() {
     return {

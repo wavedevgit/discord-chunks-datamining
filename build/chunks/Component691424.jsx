@@ -138,7 +138,7 @@ function H(e) {
 }
 
 function Y(e, t, n) {
-  let r = T.Z.getGuild(e);
+  let r = S.Z.getGuild(e);
   if (null == e || null == r) return;
   let i = t => {
     r.features.has(M.GuildFeatures.COMMUNITY) && (0, y.uL)(M.Z5c.CHANNEL(e, t))
@@ -178,7 +178,7 @@ function W(e) {
   let {
     text: t
   } = e, [n, a] = i.useState(false), o = () => {
-    (0, S.JG)(t, () => a(true), () => a(false))
+    (0, T.JG)(t, () => a(true), () => a(false))
   };
   return (0, r.jsx)(l.P3F, {
     onClick: o,
@@ -234,7 +234,7 @@ let K = {
       return (0, r.jsx)("pre", {
         children: (0, r.jsxs)("div", {
           className: k.codeContainer,
-          children: [S.wS ? (0, r.jsx)("div", {
+          children: [T.wS ? (0, r.jsx)("div", {
             className: k.codeActions,
             children: (0, r.jsx)(W, {
               text: e.content
@@ -343,7 +343,7 @@ let K = {
   },
   guild: {
     react: (e, t, n) => {
-      let i = T.Z.getGuild(e.guildId);
+      let i = S.Z.getGuild(e.guildId);
       return (0, r.jsx)(p.Z, {
         guild: i,
         children: (0, A.S)(e, t, n)

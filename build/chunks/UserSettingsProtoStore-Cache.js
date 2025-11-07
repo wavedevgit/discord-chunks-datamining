@@ -68,20 +68,20 @@ function v(e) {
   } = (0, p.xt)(E.proto, _.Z[h.yP.PRELOADED_USER_SETTINGS]);
   r && A(E), E.proto = n, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = true, Object.values(y).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = false, e.editInfo.loading = false)
-  }), S()
+  }), T()
 }
 
 function I() {
-  S()
+  T()
 }
 
-function T() {
-  S(), Object.values(y).forEach(e => {
+function S() {
+  T(), Object.values(y).forEach(e => {
     e.proto = e.ProtoClass.create(), e.editInfo = (0, h.JC)()
   })
 }
 
-function S() {
+function T() {
   Object.values(y).forEach(e => {
     if (null != e.editInfo.timeout) {
       var t, n;
@@ -224,5 +224,5 @@ let x = new D(Chunk570140.Z, {
   CONNECTION_CLOSED: I,
   CONNECTION_RESUMED: I,
   OVERLAY_INITIALIZE: C,
-  LOGOUT: T
+  LOGOUT: S
 })

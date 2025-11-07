@@ -125,7 +125,7 @@ function I(e) {
       validation: j,
       disabled: L,
       children: [(0, r.jsx)(s.tEY, {
-        children: (0, r.jsx)(T, E(m({
+        children: (0, r.jsx)(S, E(m({
           autosize: f,
           className: o()(_.textArea, p.scrollbarDefault),
           style: {
@@ -144,7 +144,7 @@ function I(e) {
           ref: P
         }))
       }), M ? null : (0, r.jsxs)(r.Fragment, {
-        children: [C ? (0, r.jsx)(S, {
+        children: [C ? (0, r.jsx)(T, {
           value: n,
           maxLength: g,
           hasError: j.hasError
@@ -157,7 +157,7 @@ function I(e) {
   }))
 }
 
-function T(e) {
+function S(e) {
   var {
     "aria-labelledby": t,
     autosize: n
@@ -174,7 +174,7 @@ function T(e) {
   }))
 }
 
-function S(e) {
+function T(e) {
   var t;
   let {
     value: n,

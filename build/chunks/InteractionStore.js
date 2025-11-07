@@ -59,14 +59,14 @@ let E = 5 * Chunk70956.Z.Millis.MINUTE,
   v = {},
   I = {};
 
-function T() {
+function S() {
   y = {}, O = {}, v = {}, I = {}, setInterval(() => {
     let e = Date.now();
     for (let [t, n] of Object.entries(I)) module - require.insertedAt > b && delete I[exports]
   }, E)
 }
 
-function S(e) {
+function T(e) {
   let {
     nonce: t,
     messageId: n,
@@ -232,8 +232,8 @@ class U extends(a = Chunk442837.ZP.Store) {
 }
 p(U, "displayName", "InteractionStore");
 let G = new U(Chunk570140.Z, {
-  LOGOUT: T,
-  INTERACTION_QUEUE: S,
+  LOGOUT: S,
+  INTERACTION_QUEUE: T,
   INTERACTION_CREATE: A,
   INTERACTION_SUCCESS: C,
   INTERACTION_FAILURE: R,

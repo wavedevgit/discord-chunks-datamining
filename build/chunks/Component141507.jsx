@@ -69,20 +69,20 @@ let w = e => {
         return null == (e = M[t]) ? true : e[n]
       }, [M, B]);
     switch (null == Z ? true : Z.type) {
-      case S.ld.EMOJI:
+      case T.ld.EMOJI:
         t = null == Z ? true : Z.emoji;
         break;
-      case S.ld.EXPAND_OR_COLLAPSE_EMOJIS:
+      case T.ld.EXPAND_OR_COLLAPSE_EMOJIS:
         t = {
           type: "EXPAND_OR_COLLAPSE_EMOJI",
           guildId: null == Z ? true : Z.guildId,
           allNamesString: null == Z ? true : Z.name
         };
         break;
-      case S.ld.SOUNDMOJI:
+      case T.ld.SOUNDMOJI:
         t = null;
         break;
-      case S.ld.CREATE_EMOJI:
+      case T.ld.CREATE_EMOJI:
       default:
         t = {
           type: "CREATE_EMOJI",
@@ -99,7 +99,7 @@ let w = e => {
       {
         newlyAddedEmojis: z
       } = (0, I.Z)(j, k),
-      q = (null == Z ? true : Z.type) === S.ld.EMOJI ? Z.subCategory : A.t0.NONE;
+      q = (null == Z ? true : Z.type) === T.ld.EMOJI ? Z.subCategory : A.t0.NONE;
     if (i.useEffect(() => {
         let e = Date.now();
         return () => {
@@ -149,7 +149,7 @@ let w = e => {
         alt: ""
       })
     }
-    let J = null != F ? (0, r.jsx)(T.Z, {
+    let J = null != F ? (0, r.jsx)(S.Z, {
       className: N.__invalid_guildIcon,
       guild: F,
       shouldAnimate: !H && V

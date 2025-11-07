@@ -69,7 +69,7 @@ function c(e) {
       keywords: E,
       contains: []
     },
-    T = {
+    S = {
       begin: ".?html`",
       end: "",
       starts: {
@@ -79,7 +79,7 @@ function c(e) {
         subLanguage: "xml"
       }
     },
-    S = {
+    T = {
       begin: ".?css`",
       end: "",
       starts: {
@@ -134,7 +134,7 @@ function c(e) {
         }]
       }), e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]
     },
-    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, C, {
+    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, T, A, C, {
       match: /\$\d+/
     }, v];
   I.contains = R.concat({
@@ -259,7 +259,7 @@ function c(e) {
       label: "shebang",
       binary: "node",
       relevance: 5
-    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, C, N, {
+    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, T, A, C, N, {
       match: /\$\d+/
     }, v, L, {
       scope: "attr",

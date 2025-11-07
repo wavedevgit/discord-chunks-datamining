@@ -64,13 +64,13 @@ let v = l().defaultRules.link,
     section: Chunk981631.jXE.SETTINGS_CHANGELOG
   };
 
-function T() {
+function S() {
   Chunk626135.default.track(Chunk981631.rMx.PREMIUM_PROMOTION_OPENED, {
     location: I
   })
 }
 
-function S(e, t) {
+function T(e, t) {
   return null == t ? [] : t.split(" ").map(t => e[t])
 }
 let A = e => {
@@ -81,7 +81,7 @@ let A = e => {
       styleSheet: a = {}
     } = e, s = (0, c.xSt)(), l = parseInt(t, 10), u = s + (isNaN(l) ? 1 : l) - 1;
     return i.createElement("h".concat(u), {
-      className: o()(...S(a, r))
+      className: o()(...T(a, r))
     }, n)
   },
   C = null != Chunk454585.Z ? Chunk454585.Z.defaultRules : null,
@@ -92,7 +92,7 @@ let A = e => {
           a = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
           o = i.startsWith("/activities");
         return r = a ? e => {
-          T(), (0, p.openUserSettings)(_.n.NITRO_PANEL, {
+          S(), (0, p.openUserSettings)(_.n.NITRO_PANEL, {
             section: m.oAB.PREMIUM
           }), n.changeLog.track(m.rMx.CHANGE_LOG_CTA_CLICKED, {
             cta_type: "nitro"

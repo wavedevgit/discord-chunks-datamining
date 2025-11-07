@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 774168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -18,36 +18,36 @@ function d(e) {
     height: n = 24,
     isBadged: l = false,
     isTyping: a = false
-  } = e, [c] = i.useState(() => (0, o.Z)());
-  return (0, r.jsxs)("svg", {
+  } = e, [c] = r.useState(() => (0, o.Z)());
+  return (0, i.jsxs)("svg", {
     width: t,
     height: n,
     viewBox: "0 0 24 24",
-    children: [(0, r.jsx)("defs", {
-      children: (0, r.jsxs)("mask", {
+    children: [(0, i.jsx)("defs", {
+      children: (0, i.jsxs)("mask", {
         id: c,
-        children: [(0, r.jsx)("rect", {
+        children: [(0, i.jsx)("rect", {
           fill: "white",
           width: "100%",
           height: "100%"
-        }), a && (0, r.jsx)("g", {
+        }), a && (0, i.jsx)("g", {
           fill: "black",
           transform: "translate(5.5, ".concat(10.5, ") scale(").concat(11 / 24, ")"),
-          children: (0, r.jsx)(s.IJ0, {
+          children: (0, i.jsx)(s.IJ0, {
             dotRadius: 3.5,
             spacing: 3,
             fill: "black"
           })
-        }), l && (0, r.jsx)("circle", {
+        }), l && (0, i.jsx)("circle", {
           cx: "20",
           cy: "19",
           r: "10",
           fill: "red"
         })]
       })
-    }), (0, r.jsx)("g", {
+    }), (0, i.jsx)("g", {
       mask: "url(#".concat(c, ")"),
-      children: (0, r.jsx)(s.kBi, {
+      children: (0, i.jsx)(s.kBi, {
         size: "custom",
         width: t,
         height: n,
@@ -61,17 +61,17 @@ function p(e) {
   var t;
   let {
     className: n,
-    unreadCount: i,
+    unreadCount: r,
     mentionCount: l,
     isTyping: o,
     canBadge: s
-  } = e, p = null != l && l > 0, f = null != (t = p ? l : i) ? t : 0, h = s && null != i && i > 0;
-  return (0, r.jsxs)("div", {
+  } = e, p = null != l && l > 0, f = null != (t = p ? l : r) ? t : 0, h = s && null != r && r > 0;
+  return (0, i.jsxs)("div", {
     className: a()(u.chatIcon, n),
-    children: [(0, r.jsx)(d, {
+    children: [(0, i.jsx)(d, {
       isBadged: h,
       isTyping: o
-    }), h && (0, r.jsx)(c.Z, {
+    }), h && (0, i.jsx)(c.Z, {
       hasMentions: p,
       truncatedCount: f > 99 ? "99+" : f,
       className: u.badge

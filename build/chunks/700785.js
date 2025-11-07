@@ -40,7 +40,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,14 +49,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -109,7 +109,7 @@ function j(e) {
     lurkerPermissionsMask: c = R
   } = e;
   if (l) return M(r.id, n, A, i);
-  let d = (o = null != o ? S({}, E.Z.getUnsafeMutableRoles(r.id), o) : E.Z.getUnsafeMutableRoles(r.id))[(0, _.lV)(r)],
+  let d = (o = null != o ? T({}, E.Z.getUnsafeMutableRoles(r.id), o) : E.Z.getUnsafeMutableRoles(r.id))[(0, _.lV)(r)],
     f = null != d ? d.permissions : N;
   if (null != n)
     for (let e = 0; e < n.roles.length; e++) {
@@ -143,7 +143,7 @@ function k(e) {
         excludeGuildPermissions: s
       }), false)
     }
-    l = null != (c = r.computeLurkerPermissionsAllowList()) ? c : l, i = null != i ? S({}, r.permissionOverwrites, i) : r.permissionOverwrites;
+    l = null != (c = r.computeLurkerPermissionsAllowList()) ? c : l, i = null != i ? T({}, r.permissionOverwrites, i) : r.permissionOverwrites;
     let e = r.getGuildId();
     t = null != e ? b.Z.getGuild(e) : null
   } else i = null != i ? i : {}, t = r;
@@ -202,7 +202,7 @@ function U(e) {
         excludeGuildPermissions: p
       }), t)
     }
-    E = null != (r = o.computeLurkerPermissionsAllowList()) ? r : E, s = null != s ? S({}, o.permissionOverwrites, s) : o.permissionOverwrites;
+    E = null != (r = o.computeLurkerPermissionsAllowList()) ? r : E, s = null != s ? T({}, o.permissionOverwrites, s) : o.permissionOverwrites;
     let e = o.getGuildId();
     i = null != e ? b.Z.getGuild(e) : null
   } else s = null != s ? s : {}, i = o;
@@ -231,8 +231,8 @@ function B(e, t) {
     guild_id: n
   } = e;
   if (null == t || null == n || n !== t.guild_id) returnfalse;
-  let r = S({}, e.permissionOverwrites),
-    i = S({}, t.permissionOverwrites);
+  let r = T({}, e.permissionOverwrites),
+    i = T({}, t.permissionOverwrites);
   return null == r[n] && (r[n] = Y(n)), null == i[n] && (i[n] = Y(n)), Object.keys(r).length === Object.keys(i).length && !Object.keys(r).some(e => {
     let t = r[e],
       n = i[e];

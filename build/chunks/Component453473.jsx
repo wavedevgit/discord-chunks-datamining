@@ -150,7 +150,7 @@ function W(e) {
   }, [n, l]), f = i.useCallback(() => {
     c(!l), l ? null == n || n() : null == t || t()
   }, [n, t, l]);
-  i.useEffect(() => (T.S.subscribe(L.CkL.TOGGLE_FOR_LATER, f), () => void T.S.unsubscribe(L.CkL.TOGGLE_FOR_LATER, f)), [f]);
+  i.useEffect(() => (S.S.subscribe(L.CkL.TOGGLE_FOR_LATER, f), () => void S.S.unsubscribe(L.CkL.TOGGLE_FOR_LATER, f)), [f]);
   let h = (0, _.e7)([N.Z], () => N.Z.hasOverdueReminder(), []);
 
   function m() {
@@ -183,7 +183,7 @@ function K(e) {
     closePopout: n
   } = e, a = i.useRef(null), o = (0, m.Z)("for-later", a), [s, l] = i.useState(new Date);
   return i.useEffect(() => {
-    let e = setInterval(() => l(new Date), S.Z.Millis.MINUTE);
+    let e = setInterval(() => l(new Date), T.Z.Millis.MINUTE);
     return () => {
       clearInterval(e)
     }

@@ -1,21 +1,22 @@
-/** Chunk was on 35755 **/
-/** chunk id: 676161, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 676161, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 }), require("./642613.js");
 var Chunk647438 = require("./647438.js"),
   Chunk700089 = require("./700089.js"),
   Chunk654455 = require("./654455.js"),
   Chunk496158 = require("./496158.js");
 
-function o(e) {
+function s(e) {
   let {
     context: t,
     commands: n,
-    limit: o = n.length
-  } = e, s = (0, a.D)(t), c = (0, l.R)(s), u = i.useMemo(() => n.reduce((e, t) => (e[t.id] = t, e), {}), [n]);
-  return i.useMemo(() => c.map(e => u[e]).filter(e => null != e).sort((e, t) => {
-    let n = r.ZP.getScoreWithoutLoadingLatest(s, e);
-    return r.ZP.getScoreWithoutLoadingLatest(s, t) - n
-  }).slice(0, o), [c, u, s, o])
+    limit: s = n.length
+  } = e, l = (0, o.D)(t), c = (0, i.R)(l), u = r.useMemo(() => n.reduce((e, t) => (e[t.id] = t, e), {}), [n]);
+  return r.useMemo(() => c.map(e => u[e]).filter(e => null != e).sort((e, t) => {
+    let n = a.ZP.getScoreWithoutLoadingLatest(l, e);
+    return a.ZP.getScoreWithoutLoadingLatest(l, t) - n
+  }).slice(0, s), [c, u, l, s])
 }

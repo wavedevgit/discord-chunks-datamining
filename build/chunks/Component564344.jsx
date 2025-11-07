@@ -56,7 +56,7 @@ function R() {
         }), y.S.dispatch(I.CkL.EMPHASIZE_NOTICE);
         return
       }
-      t === S.NB.GUILD && null == e && null != a && (0, d.Fq)(a), w(t)
+      t === T.NB.GUILD && null == e && null != a && (0, d.Fq)(a), w(t)
     }
   }
   Chunk647438.useEffect(() => {

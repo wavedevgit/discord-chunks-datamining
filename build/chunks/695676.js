@@ -1,12 +1,15 @@
-/** Chunk was on 35755 **/
-/** chunk id: 695676, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 695676, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  gc: () => r,
+  gc: () => i,
   hH: () => o,
   uX: () => a
 });
-var i, Chunk647438 = require("./647438.js"),
-  r = ((i = {}).HOME = "home", i.LIST = "list", i.APPLICATION = "application", i);
+var Chunk647438 = require("./647438.js"),
+  i = function(e) {
+    return e.HOME = "home", e.LIST = "list", e.APPLICATION = "application", e
+  }({});
 let a = Chunk647438.createContext({
   history: [],
   discard: {},

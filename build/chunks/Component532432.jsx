@@ -35,16 +35,16 @@ function m(e) {
     forcedDivider: v,
     withHighlight: I = false
   } = e, {
-    newestAnalyticsLocation: T
-  } = (0, c.ZP)(), S = I ? l.gtL : s.zx, A = i.useCallback(() => {
+    newestAnalyticsLocation: S
+  } = (0, c.ZP)(), T = I ? l.gtL : s.zx, A = i.useCallback(() => {
     (0, u.$r)({
       uploadType: f.pC.AVATAR,
-      analyticsSource: T,
+      analyticsSource: S,
       filters: O ? h : true,
       guildId: E,
       isTryItOut: O
     })
-  }, [E, T, O]);
+  }, [E, S, O]);
   return (0, r.jsx)(d.Z, {
     className: b,
     title: m,
@@ -53,7 +53,7 @@ function m(e) {
     forcedDivider: v,
     children: (0, r.jsxs)("div", {
       className: p.buttonsContainer,
-      children: [(0, r.jsx)(S, {
+      children: [(0, r.jsx)(T, {
         className: o()({
           [p.buttonHighlighted]: I
         }),

@@ -32,8 +32,8 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let T = false,
-  S = Chunk981631.Skl.ONLINE,
+let S = false,
+  T = Chunk981631.Skl.ONLINE,
   A = Chunk981631.Skl.UNKNOWN,
   C = 0,
   N = [],
@@ -80,20 +80,20 @@ function G(e) {
 }
 
 function B() {
-  w = true, A = S, Z()
+  w = true, A = T, Z()
 }
 
 function Z() {
   var e;
-  if (C = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0, P = Chunk517100.Z.isAFK(), w) S = A;
-  else if (T) S = Chunk981631.Skl.INVISIBLE;
+  if (C = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0, P = Chunk517100.Z.isAFK(), w) T = A;
+  else if (S) T = Chunk981631.Skl.INVISIBLE;
   else {
     let e = Chunk695346.co.getSetting();
-    S = module !== Chunk981631.Skl.UNKNOWN ? module : Chunk981631.Skl.ONLINE
+    T = module !== Chunk981631.Skl.UNKNOWN ? module : Chunk981631.Skl.ONLINE
   }
-  S === Chunk981631.Skl.ONLINE && C > 0 && (S = Chunk981631.Skl.IDLE);
+  T === Chunk981631.Skl.ONLINE && C > 0 && (T = Chunk981631.Skl.IDLE);
   let t = false,
-    n = w || S === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(G);
+    n = w || T === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(G);
   a()(N, require) || (N = require, R = j(require), t = true);
   let r = Chunk797258.Z.getRemoteActivities();
   D !== r && (D = r, t = true);
@@ -102,15 +102,15 @@ function Z() {
 }
 
 function F(e) {
-  return T = e.invisible, Z()
+  return S = e.invisible, Z()
 }
 
 function V() {
-  return T = false, Z()
+  return S = false, Z()
 }
 
 function H() {
-  w = false, A = Chunk981631.Skl.UNKNOWN, Z(), Chunk158776.Z.setCurrentUserOnConnectionOpen(S, L)
+  w = false, A = Chunk981631.Skl.UNKNOWN, Z(), Chunk158776.Z.setCurrentUserOnConnectionOpen(T, L)
 }
 
 function Y() {
@@ -122,14 +122,14 @@ class W extends(r = Chunk442837.ZP.Store) {
   }
   getLocalPresence() {
     return {
-      status: S,
+      status: T,
       since: C,
       activities: R,
       afk: P
     }
   }
   getStatus() {
-    return S
+    return T
   }
   getActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];

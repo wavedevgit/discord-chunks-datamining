@@ -117,12 +117,12 @@ function D(e) {
     alwaysShowLinkDecorations: B,
     confettiMode: Z,
     highContrastMode: F
-  } = (0, l.cj)([I.default, d.Z, T.Z, S.Z, O.Z, v.Z], () => {
+  } = (0, l.cj)([I.default, d.Z, S.Z, T.Z, O.Z, v.Z], () => {
     var e;
     return {
       locale: I.default.locale,
-      theme: null != n ? n : T.Z.theme,
-      focused: o ? O.Z.getWindowFocused(t) : S.Z.isFocused(),
+      theme: null != n ? n : S.Z.theme,
+      focused: o ? O.Z.getWindowFocused(t) : T.Z.isFocused(),
       currentWindow: o && null != (e = O.Z.getWindow(t)) ? e : window,
       fontScale: d.Z.fontScale,
       fontScaleClass: d.Z.fontScaleClass,

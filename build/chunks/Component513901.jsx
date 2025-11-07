@@ -31,8 +31,8 @@ function O(e) {
     className: O,
     sectionTitle: v,
     forcedDivider: I = false,
-    withTutorial: T = false,
-    showBorder: S = false,
+    withTutorial: S = false,
+    showBorder: T = false,
     isTryItOut: A = false
   } = e, {
     analyticsLocations: C
@@ -64,13 +64,13 @@ function O(e) {
   function L() {
     A ? (0, d.Ju)(null) : (0, p.UK)(null, null == n ? true : n.id)
   }
-  let M = T ? l.gtL : s.zx;
+  let M = S ? l.gtL : s.zx;
   return (0, r.jsx)(h.Z, {
     forcedDivider: I,
     borderType: m.Y.PREMIUM,
     hasBackground: true,
     title: v,
-    showBorder: S,
+    showBorder: T,
     errors: w,
     className: O,
     children: (0, r.jsxs)("div", {
@@ -79,7 +79,7 @@ function O(e) {
         size: s.zx.Sizes.SMALL,
         onClick: D,
         className: o()({
-          [y.buttonHighlighted]: T
+          [y.buttonHighlighted]: S
         }),
         children: b.intl.string(b.t["/dRfCf"])
       }), x && (0, r.jsx)("div", {

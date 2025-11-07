@@ -80,7 +80,7 @@ function x(e) {
   let {
     appId: t,
     message: a
-  } = e, o = (0, T.R)(t), {
+  } = e, o = (0, S.R)(t), {
     data: u
   } = (0, d.IX)(t), [_, p, m, E] = (0, s.Wu)([f.Z, g.Z, h.Z], () => {
     var e;
@@ -94,7 +94,7 @@ function x(e) {
   }, [t, p]);
   let b = _.subscriptions.length,
     O = _.otps.length,
-    S = i.useMemo(() => b > 0 && O > 0 ? N.intl.formatToPlainString(N.t["jA648+"], {
+    T = i.useMemo(() => b > 0 && O > 0 ? N.intl.formatToPlainString(N.t["jA648+"], {
       subCount: b,
       itemCount: O
     }) : b > 0 ? N.intl.formatToPlainString(N.t.GSfibA, {
@@ -136,7 +136,7 @@ function x(e) {
     title: N.intl.formatToPlainString(N.t.XDRjs5, {
       appName: u.name
     }),
-    description: S,
+    description: T,
     link: "".concat(location.protocol, "//").concat(location.host).concat(A.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(u.id, C.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: x,
     iconSrc: E,
@@ -167,7 +167,7 @@ function L(e) {
   } = (0, d.IX)(null == m ? true : m.applicationId), O = (0, s.e7)([h.Z], () => {
     var e;
     return null == (e = h.Z.getBasicChannel(u.channel_id)) ? true : e.guild_id
-  }, [u]), P = i.useMemo(() => null != b ? (0, v.y)(b, 45) : true, [b]), w = (0, T.R)(null != (a = null == b ? true : b.id) ? a : ""), {
+  }, [u]), P = i.useMemo(() => null != b ? (0, v.y)(b, 45) : true, [b]), w = (0, S.R)(null != (a = null == b ? true : b.id) ? a : ""), {
     openModal: x,
     subscriptionPurchaseButtonState: L
   } = (0, p.Z)({
@@ -269,7 +269,7 @@ function L(e) {
         variant: "secondary",
         onClick: V,
         text: N.intl.string(N.t.DXYfjO)
-      }), j ? null != g ? (0, r.jsx)(S.pV, {
+      }), j ? null != g ? (0, r.jsx)(T.pV, {
         onClick: x,
         appId: b.id,
         subscriptionType: k ? "user" : "guild",
@@ -282,7 +282,7 @@ function L(e) {
         variant: "primary",
         text: N.intl.string(N.t.uuzaAK),
         onClick: G
-      }) : (0, r.jsx)(S.YG, {
+      }) : (0, r.jsx)(T.YG, {
         appId: b.id,
         sku: m,
         icon: l.EOn,

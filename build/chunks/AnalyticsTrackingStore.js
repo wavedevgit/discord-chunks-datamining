@@ -60,8 +60,8 @@ let m = "x-science-test",
   O = 36e5,
   v = b,
   I = y,
-  T = O,
-  S = g,
+  S = O,
+  T = g,
   A = 0,
   C = 0,
   N = 0,
@@ -128,7 +128,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         shouldFlushOnNextTick: t = false
       } = e;
       null == W && Q() && (W = t ? setTimeout($, 0) : z($, {
-        timeout: S
+        timeout: T
       }))
     }
 
@@ -234,14 +234,14 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         type: "timeout",
         id: setTimeout(() => {
           et(), e()
-        }, Math.floor(Math.random() * (T - I) + I))
+        }, Math.floor(Math.random() * (S - I) + I))
       }
     }
 
     function ei() {
       if (!en()) return
     }
-    S = null != y ? y : g, H.handleConnectionOpen = function(e) {
+    T = null != y ? y : g, H.handleConnectionOpen = function(e) {
       let {
         analyticsToken: t,
         user: n

@@ -1,34 +1,37 @@
-/** Chunk was on 35755 **/
-/** chunk id: 41558, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 41558, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => c
 });
-var i, Chunk951288 = require("./951288.js"),
+var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk258253 = require("./258253.js"),
-  c = ((i = c || {})[i.VIEW_MORE = 0] = "VIEW_MORE", i[i.VIEW_LESS = 1] = "VIEW_LESS", i);
+  l = function(e) {
+    return e[e.VIEW_MORE = 0] = "VIEW_MORE", e[e.VIEW_LESS = 1] = "VIEW_LESS", e
+  }(l || {});
 
-function u(e) {
+function c(e) {
   let {
     title: t,
     buttonType: n,
     onClickViewButton: i
   } = e;
-  return (0, l.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: s.header,
-    children: [(0, l.jsx)(a.Text, {
+    children: [(0, r.jsx)(a.Text, {
       variant: "text-md/medium",
       color: "header-primary",
       children: t
-    }), null != n && null != i && (0, l.jsx)(a.P3F, {
+    }), null != n && null != i && (0, r.jsx)(a.P3F, {
       className: s.viewMore,
       onClick: i,
       "aria-label": o.intl.formatToPlainString(o.t["bj/2kV"], {
         title: t
       }),
-      children: (0, l.jsx)(a.Text, {
+      children: (0, r.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "text-brand",
         children: 0 === n ? o.intl.format(o.t.gVw57p, {}) : o.intl.string(o.t.nPGLFQ)
@@ -36,7 +39,7 @@ function u(e) {
     })]
   })
 }
-u.buttonTypes = c, u.Loading = function() {
+c.buttonTypes = l, c.Loading = function() {
   let e = Chunk647438.useMemo(() => ({
     width: "".concat(10 + 20 * Math.random(), "%")
   }), []);

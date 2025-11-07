@@ -1,7 +1,8 @@
-/** Chunk was on 35755 **/
-/** chunk id: 160973, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 160973, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => _
 });
 var Chunk442837 = require("./442837.js"),
   Chunk595519 = require("./595519.js"),
@@ -14,33 +15,33 @@ var Chunk442837 = require("./442837.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function _(e) {
   let t, {
       context: n,
-      application: m,
-      activityAction: f
+      application: _,
+      activityAction: p
     } = e,
     h = "channel" === n.type ? n.channel : true,
-    v = (0, i.e7)([c.Z], () => c.Z.can(d.Pl.USE_EMBEDDED_ACTIVITIES, h)),
-    y = (0, r.KF)(null == h ? true : h.id),
-    g = false;
-  switch (f) {
-    case o.JS.LEAVE:
-      g = false;
+    m = (0, r.e7)([c.Z], () => c.Z.can(d.Pl.USE_EMBEDDED_ACTIVITIES, h)),
+    g = (0, a.KF)(null == h ? true : h.id),
+    E = false;
+  switch (p) {
+    case s.JS.LEAVE:
+      E = false;
       break;
-    case o.JS.START:
-      null == h ? g = false : (null == h ? true : h.isGuildVoice()) ? y !== r.jy.CAN_LAUNCH && (g = true) : (0, l.WS)(h) || (g = true);
+    case s.JS.START:
+      null == h ? E = false : (null == h ? true : h.isGuildVoice()) ? g !== a.jy.CAN_LAUNCH && (E = true) : (0, i.WS)(h) || (E = true);
       break;
-    case o.JS.JOIN:
-      (null == h ? true : h.isGuildVoice()) ? g = !v: (0, l.WS)(h) || (g = true)
+    case s.JS.JOIN:
+      (null == h ? true : h.isGuildVoice()) ? E = !m: (0, i.WS)(h) || (E = true)
   }
-  if (f !== o.JS.LEAVE) {
-    let e = m instanceof s.ZP ? m.embeddedActivityConfig : m.embedded_activity_config,
-      n = (0, a.Z)((0, u.getOS)());
-    null == e || e.supported_platforms.includes(n) ? (null == h ? true : h.isThread()) && (g = true, t = p.intl.string(p.t.ddSR3v)) : (g = false, t = p.intl.string(p.t.z2YTgJ))
+  if (p !== s.JS.LEAVE) {
+    let e = _ instanceof l.ZP ? _.embeddedActivityConfig : _.embedded_activity_config,
+      n = (0, o.Z)((0, u.getOS)());
+    null == e || e.supported_platforms.includes(n) ? (null == h ? true : h.isThread()) && (E = true, t = f.intl.string(f.t.ddSR3v)) : (E = false, t = f.intl.string(f.t.z2YTgJ))
   }
-  return g && null == t && (t = p.intl.string(p.t.f41E1g)), {
-    disabled: g,
+  return E && null == t && (t = f.intl.string(f.t.f41E1g)), {
+    disabled: E,
     reason: t
   }
 }

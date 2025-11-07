@@ -1,5 +1,6 @@
-/** Chunk was on 35755 **/
-/** chunk id: 783685, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 783685, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
@@ -17,25 +18,25 @@ function d(e) {
     botUserId: t,
     applicationId: n,
     analyticsLocations: d
-  } = e, [p, m] = l.useState(false), f = l.useRef(null), h = l.useCallback(async () => {
-    a.default.track(c.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+  } = e, [f, _] = i.useState(false), p = i.useRef(null), h = i.useCallback(async () => {
+    o.default.track(c.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
       application_id: n,
-      button_action: o._y.OPEN_APP_DM
-    }), m(true);
+      button_action: s._y.OPEN_APP_DM
+    }), _(true);
     try {
-      await (0, s.W)({
+      await (0, l.W)({
         appId: n,
         botId: t,
         analyticsLocations: d
       })
     } catch (e) {}
-    clearTimeout(f.current), m(false)
+    clearTimeout(p.current), _(false)
   }, [t, n, d]);
-  return (0, i.jsx)(r.Button, {
+  return (0, r.jsx)(a.Button, {
     type: "submit",
     size: "md",
     variant: "secondary",
-    loading: p,
+    loading: f,
     onClick: h,
     "aria-label": u.intl.string(u.t.AUM8hY),
     text: u.intl.string(u.t.AUM8hY)

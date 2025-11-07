@@ -26,7 +26,7 @@ var Chunk754700 = require("./754700.js"),
   Chunk5881 = require("./5881.js"),
   Chunk46140 = require("./46140.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function T(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let S = +Chunk70956.Z.Millis.MINUTE,
+let T = +Chunk70956.Z.Millis.MINUTE,
   A = 2,
   C = +Chunk70956.Z.Millis.SECOND,
   N = (0, Chunk5881.T)({
@@ -154,19 +154,19 @@ class x extends Chunk147913.Z {
     return N.log("~ getActivelyProgressingActivityQuestIds -> Actively progressing questIds: ", Array.from(module.keys())), module
   }
   constructor(...e) {
-    super(...e), T(this, "heartbeats", {
+    super(...e), S(this, "heartbeats", {
       [r.X.PLAY_ON_DESKTOP]: new Map,
       [r.X.STREAM_ON_DESKTOP]: new Map,
       [r.X.PLAY_ACTIVITY]: new Map
-    }), T(this, "calculateHeartbeatDurationMs", e => {
+    }), S(this, "calculateHeartbeatDurationMs", e => {
       let t = b.Z.quests.get(e);
-      if (null == t || null == t.config || null == t.userStatus) return S;
+      if (null == t || null == t.config || null == t.userStatus) return T;
       let {
         progressSeconds: n,
         targetSeconds: i
       } = (0, E.il)(t, r.T.DESKTOP), a = Math.max(0, (i - n) * p.Z.Millis.SECOND);
-      return a <= S ? a + C : S
-    }), T(this, "initiateHeartbeat", (e, t, n) => {
+      return a <= T ? a + C : T
+    }), S(this, "initiateHeartbeat", (e, t, n) => {
       let i = this.heartbeats[t];
       if (i.has(e)) return void N.log("~ initiateHeartbeat -> Heartbeat already initiated for questId: ".concat(e));
       let a = () => {
@@ -197,7 +197,7 @@ class x extends Chunk147913.Z {
         } else N.log("~ initiateHeartbeat -> Quest ".concat(e, " is no longer actively progressing, terminating heartbeat")), this.terminateHeartbeat(e, t)
       };
       N.log("~ initiateHeartbeat -> Initiating heartbeat for Quest ".concat(e)), a()
-    }), T(this, "terminateHeartbeat", (e, t) => {
+    }), S(this, "terminateHeartbeat", (e, t) => {
       let n = this.heartbeats[t],
         r = b.Z.quests,
         i = n.get(e);
@@ -209,19 +209,19 @@ class x extends Chunk147913.Z {
           terminal: true
         }))
       }
-    }), T(this, "handleSendHeartbeatSuccess", e => {
+    }), S(this, "handleSendHeartbeatSuccess", e => {
       let {
         questId: t,
         userStatus: n
       } = e;
       if (N.log("~ handleSendHeartbeatSuccess -> Heartbeat succeeded for questId: ".concat(t, ")")), null != n.completedAt)
         for (let e of (N.log("~ handleSendHeartbeatSuccess -> Quest ".concat(t, " completed, terminating any heartbeats for it")), Object.keys(this.heartbeats))) this.terminateHeartbeat(t, e)
-    }), T(this, "handleSendHeartbeatFailure", e => {
+    }), S(this, "handleSendHeartbeatFailure", e => {
       let {
         questId: t
       } = e;
       N.log("~ handleSendHeartbeatFailure -> Heartbeat failed for questId: ".concat(t))
-    }), T(this, "actions", {
+    }), S(this, "actions", {
       QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: () => this.syncHeartbeats([r.X.PLAY_ON_DESKTOP, r.X.STREAM_ON_DESKTOP], "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS"),
       QUESTS_ENROLL_SUCCESS: () => this.syncHeartbeats([r.X.PLAY_ON_DESKTOP, r.X.STREAM_ON_DESKTOP, r.X.PLAY_ACTIVITY], "QUESTS_ENROLL_SUCCESS", e => !D(e)),
       QUESTS_SEND_HEARTBEAT_SUCCESS: this.handleSendHeartbeatSuccess,

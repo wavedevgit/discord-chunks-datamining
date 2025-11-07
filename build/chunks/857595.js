@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ej: () => v,
-  HU: () => S,
+  HU: () => T,
   Nc: () => E,
   Qj: () => _,
   TX: () => I,
@@ -14,7 +14,7 @@ require.d(exports, {
   cq: () => f,
   eN: () => N,
   f1: () => h,
-  gs: () => T,
+  gs: () => S,
   ky: () => w,
   lq: () => m,
   o2: () => b,
@@ -147,14 +147,14 @@ function I(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_ALWAYS_SHOW_LINK_DECORATIONS",
     alwaysShowLinkDecorations: e
   })
 }
 
-function S(e) {
+function T(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_ENABLE_CUSTOM_CURSOR",
     enableCustomCursor: e

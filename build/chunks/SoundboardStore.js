@@ -32,15 +32,15 @@ let b = new Map,
   O = new Map,
   v = new Set,
   I = 0,
-  T = 0,
   S = 0,
+  T = 0,
   A = 0,
   C = new Set,
   N = new Map,
   R = false;
 
 function P() {
-  b.clear(), y.clear(), A = 0, O.clear(), N.clear(), R = false, T = 0, S = 0, I = 0
+  b.clear(), y.clear(), A = 0, O.clear(), N.clear(), R = false, S = 0, T = 0, I = 0
 }
 
 function w() {
@@ -48,7 +48,7 @@ function w() {
 }
 
 function D() {
-  T = 1
+  S = 1
 }
 
 function x(e) {
@@ -61,7 +61,7 @@ function x(e) {
       sounds: n
     } = e;
     b.set(t, n)
-  }), T = 2
+  }), S = 2
 }
 
 function L(e) {
@@ -106,18 +106,18 @@ function G(e) {
 }
 
 function B() {
-  S = 1
+  T = 1
 }
 
 function Z(e) {
   let {
     topSoundsForGuilds: t
   } = e;
-  y = new Map(t), S = 2, A = Date.now()
+  y = new Map(t), T = 2, A = Date.now()
 }
 
 function F() {
-  S = 2, A = 0
+  T = 2, A = 0
 }
 
 function V(e) {
@@ -212,7 +212,7 @@ class Q extends(r = Chunk442837.ZP.Store) {
     return Array.from(b.values()).flat().find(t => t.soundId === e)
   }
   isFetchingSounds() {
-    return 1 === T
+    return 1 === S
   }
   isFetchingDefaultSounds() {
     return 1 === I
@@ -249,17 +249,17 @@ class Q extends(r = Chunk442837.ZP.Store) {
     return R
   }
   shouldFetchTopSoundsForGuilds() {
-    return (0, Chunk771784.cI)("SoundboardStore") && (0 === S || 2 === S && Date.now() - A > 864e5)
+    return (0, Chunk771784.cI)("SoundboardStore") && (0 === T || 2 === T && Date.now() - A > 864e5)
   }
   hasFetchedTopSoundsForGuilds() {
-    return 2 === S
+    return 2 === T
   }
   hasFetchedAllSounds() {
-    let e = [T, I];
-    return (0, Chunk771784.cI)("SoundboardStore") && module.push(S), module.every(e => 2 === e)
+    let e = [S, I];
+    return (0, Chunk771784.cI)("SoundboardStore") && module.push(T), module.every(e => 2 === e)
   }
   isFetchingAnySounds() {
-    return [T, I, S].some(e => 1 === e)
+    return [S, I, T].some(e => 1 === e)
   }
 }
 E(Q, "displayName", "SoundboardStore");

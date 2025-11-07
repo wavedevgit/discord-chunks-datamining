@@ -33,18 +33,18 @@ function E(e) {
     showPremiumIcon: O = true,
     showResetThemeButton: v = false,
     forcedDivider: I
-  } = e, T = (0, d.ZP)(t.id, b), {
-    primaryColor: S,
+  } = e, S = (0, d.ZP)(t.id, b), {
+    primaryColor: T,
     secondaryColor: A
   } = (0, f.Z)({
     user: t,
-    displayProfile: T,
+    displayProfile: S,
     pendingThemeColors: i,
     isPreview: true
   }), C = _.ZP.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(b, 80), R = (0, c.dQu)(l.Z.unsafe_rawColors.PRIMARY_530).hex(), P = (0, u.Cf)(N, R, false);
-  if (null == S || null == A) return null;
+  if (null == T || null == A) return null;
   let w = e => {
-    o(s()(e, null == T ? true : T.themeColors) ? true : e)
+    o(s()(e, null == S ? true : S.themeColors) ? true : e)
   };
   return (0, r.jsx)(h.Z, {
     title: m.intl.string(m.t.DMeO2X),
@@ -58,7 +58,7 @@ function E(e) {
         className: g.sparkleContainer,
         children: (0, r.jsx)(p.Z, {
           onChange: e => w([e, A]),
-          color: S,
+          color: T,
           suggestedColors: P,
           showEyeDropper: true,
           label: (0, r.jsx)(c.Text, {
@@ -72,7 +72,7 @@ function E(e) {
       }), (0, r.jsx)("div", {
         className: g.sparkleContainer,
         children: (0, r.jsx)(p.Z, {
-          onChange: e => w([S, e]),
+          onChange: e => w([T, e]),
           color: A,
           suggestedColors: P,
           showEyeDropper: true,

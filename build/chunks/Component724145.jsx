@@ -80,7 +80,7 @@ let k = () => (0, Chunk951288.jsx)("div", {
       markAsDismissed: o
     } = e, {
       analyticsLocations: s
-    } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), [u, d] = (0, l.Wu)([T.default, C.Z], () => [C.Z.gradientPreset, A.ZP.isPremium(T.default.getCurrentUser())]), _ = (0, b.N)(), p = (0, A.Rt)({
+    } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), [u, d] = (0, l.Wu)([S.default, C.Z], () => [C.Z.gradientPreset, A.ZP.isPremium(S.default.getCurrentUser())]), _ = (0, b.N)(), p = (0, A.Rt)({
       intervalType: null == _ || null == (t = _.subscription_trial) ? true : t.interval,
       intervalCount: null == _ || null == (n = _.subscription_trial) ? true : n.interval_count
     }), g = d ? M.intl.string(M.t.IJI7yk) : (null == _ || null == (i = _.subscription_trial) ? true : i.sku_id) === L.Si.TIER_2 ? p : M.intl.string(M.t.mr4K7D), E = e => {
@@ -162,7 +162,7 @@ function Z(e) {
     shouldEditorAnimate: n && !p.Z.useReducedMotion
   })), u = (0, g.oq)().activePanel === g.wh.CLIENT_THEMES, f = (0, R.q)();
   i.useEffect(() => f(D.rMx.CLIENT_THEME_PREVIEW_VIEWED), [f]), i.useEffect(() => {
-    s && S.default.track(D.rMx.PREMIUM_UPSELL_VIEWED, {
+    s && T.default.track(D.rMx.PREMIUM_UPSELL_VIEWED, {
       type: L.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       location_stack: a
     })

@@ -33,7 +33,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function T(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,13 +58,13 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 class C extends(r = Chunk647438.PureComponent) {
   get analyticsLocation() {
-    return A(T({}, this.props.analyticsContext.location), {
+    return A(S({}, this.props.analyticsContext.location), {
       object: Chunk981631.qAy.BUTTON_CTA
     })
   }
@@ -153,7 +153,7 @@ class C extends(r = Chunk647438.PureComponent) {
         let {
           default: e
         } = await n.e("53195").then(n.bind(n, 918306));
-        return n => (0, i.jsx)(e, A(T({}, n), {
+        return n => (0, i.jsx)(e, A(S({}, n), {
           libraryApplication: t,
           onPlay: this.handleClick
         }))
@@ -183,7 +183,7 @@ function N(e) {
     applicationId: t,
     libraryApplication: n
   } = e, r = (0, _.O)(), [a, o] = (0, l.Wu)([m.Z, h.Z, g.Z], () => [m.Z.isConnected(t) || h.Z.isLaunchable(t) || null != n && g.Z.isLaunchable(n.id, n.branchId), h.Z.launchingGames.has(t)], [t, n]), s = (0, l.e7)([p.ZP], () => new Set(p.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, l.e7)([g.Z], () => null != n ? g.Z.getState(n.id, n.branchId) : null, [n]);
-  return (0, i.jsx)(C, A(T({}, e), {
+  return (0, i.jsx)(C, A(S({}, e), {
     analyticsContext: r,
     isLaunchable: a,
     isLaunching: o,

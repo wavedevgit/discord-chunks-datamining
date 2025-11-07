@@ -57,7 +57,7 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
         "aria-setsize": D,
         "aria-posinset": a,
         children: (0, r.jsx)(c.P3F, {
-          "aria-label": S.intl.string(S.t.y3LQCG),
+          "aria-label": T.intl.string(T.t.y3LQCG),
           className: o()(A.stickerCategory, A.stickerCategoryGeneric, {
             [A.stickerCategoryGenericDisabled]: w && !E,
             [A.stickerCategoryGenericSelected]: !g && E && 0 === t,
@@ -78,7 +78,7 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
         "aria-setsize": D,
         "aria-posinset": a,
         children: (0, r.jsx)(c.P3F, {
-          "aria-label": S.intl.string(S.t.RxAmVC),
+          "aria-label": T.intl.string(T.t.RxAmVC),
           className: o()(A.stickerCategory, A.stickerCategoryGeneric, A.stickerCategoryGenericLast, {
             [A.stickerCategoryGenericDisabled]: w && !R,
             [A.stickerCategoryGenericSelected]: !g && R && t === C
@@ -131,7 +131,7 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
               onClick: () => {
                 L.type === y.Ih.PACK && m.default.track(I.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
                   location: null == p ? true : p.location,
-                  tab: T.X1.STICKER,
+                  tab: S.X1.STICKER,
                   sticker_pack_id: L.id,
                   guild_id: _
                 }), l()

@@ -1,7 +1,8 @@
-/** Chunk was on 35755 **/
-/** chunk id: 561160, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 561160, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  A: () => o
+  A: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,15 +10,15 @@ var Chunk481060 = require("./481060.js"),
   Chunk176412 = require("./176412.js"),
   Chunk291190 = require("./291190.js");
 
-function o(e) {
+function s(e) {
   let {
     searchQuery: t,
     textContent: n,
-    type: o
+    type: s
   } = e;
-  return (0, r.Bm)(o, t), (0, i.jsx)("div", {
-    className: a.emptyStateContainer,
-    children: (0, i.jsx)(l.Text, {
+  return (0, a.Bm)(s, t), (0, r.jsx)("div", {
+    className: o.emptyStateContainer,
+    children: (0, r.jsx)(i.Text, {
       variant: "text-md/medium",
       color: "text-muted",
       children: n

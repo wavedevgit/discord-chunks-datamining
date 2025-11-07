@@ -1,4 +1,4 @@
-/** Chunk was on 13140 **/
+/** Chunk was on 86642 **/
 /** chunk id: 233715, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -14,12 +14,12 @@ function s(e) {
     children: t,
     className: n,
     flashKey: l
-  } = e, [s, c] = i.useState(false), u = i.useRef(null);
-  return i.useEffect(() => (c(true), u.current = window.setTimeout(() => {
+  } = e, [s, c] = r.useState(false), u = r.useRef(null);
+  return r.useEffect(() => (c(true), u.current = window.setTimeout(() => {
     c(false)
   }, 2e3), () => {
     null != u.current && clearTimeout(u.current)
-  }), [l]), (0, r.jsx)("div", {
+  }), [l]), (0, i.jsx)("div", {
     "data-flash": s,
     className: a()(o.flash, n),
     children: t

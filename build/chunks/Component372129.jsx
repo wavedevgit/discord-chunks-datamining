@@ -110,7 +110,7 @@ let h = e => {
       },
       I = async e => {
         null == g || g(true), await p(e, l), O(true), null == g || g(false)
-      }, T = async e => {
+      }, S = async e => {
         var t, i, o;
         if (e.stopPropagation(), e.preventDefault(), (null == (t = e.currentTarget) ? true : t.files) == null || (null == (o = e.currentTarget) || null == (i = o.files) ? true : i.length) === 0) return;
         let s = e.currentTarget.files;
@@ -125,7 +125,7 @@ let h = e => {
       };
     return (0, r.jsx)(o.Z, {
       ref: t,
-      onChange: T,
+      onChange: S,
       filters: null != m ? m : (0, s.Zj)(),
       multiple: c,
       disabled: u,

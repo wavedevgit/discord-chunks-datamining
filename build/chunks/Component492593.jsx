@@ -84,8 +84,8 @@ let O = function(e) {
     childrenRepliedMessage: O,
     childrenExecutedCommand: v,
     childrenHeader: I,
-    childrenSystemMessage: T,
-    childrenButtons: S,
+    childrenSystemMessage: S,
+    childrenButtons: T,
     childrenMessageContent: A,
     childrenAccessories: C,
     messageRef: N,
@@ -141,10 +141,10 @@ let O = function(e) {
           onMouseLeave: F,
           children: [O, v, (0, r.jsxs)("div", {
             className: p.contents,
-            children: [T, I, null == T && A]
-          }), C, null != S ? (0, r.jsx)("div", {
+            children: [S, I, null == S && A]
+          }), C, null != T ? (0, r.jsx)("div", {
             className: p.buttonContainer,
-            children: S
+            children: T
           }) : null]
         }))
       }))

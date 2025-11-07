@@ -116,7 +116,7 @@ let L = "1001",
         keyCombo: t,
         combo: n,
         layoutMapBacktick: o,
-        env: S.Cg[(0, y.dU)()],
+        env: T.Cg[(0, y.dU)()],
         backtickEventShape: (0, b.T_)("`"),
         backquoteKeyShape: (0, b.T_)(null != o ? o : "`"),
         nativeBackquoteKeyShape: (0, b.T_)(null != s ? s : "`")
@@ -133,7 +133,7 @@ function G(e) {
     rawBacktickShape: r
   }), null) : (U("Default overlay keybind is unsupported", e, n, {
     rawBacktickCode: i
-  }), [...n, [S.Mo.KEYBOARD_KEY, i, (0, y.dU)()]])
+  }), [...n, [T.Mo.KEYBOARD_KEY, i, (0, y.dU)()]])
 }
 let B = () => {
     let e = x();

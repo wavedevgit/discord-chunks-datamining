@@ -5,9 +5,9 @@ require.d(exports, {
   DM: () => E,
   Ey: () => b,
   No: () => I,
-  Ry: () => S,
+  Ry: () => T,
   qX: () => A,
-  u3: () => T
+  u3: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -142,7 +142,7 @@ function I(e) {
   }))
 }
 
-function T(e) {
+function S(e) {
   var {
     children: t,
     href: n,
@@ -160,7 +160,7 @@ function T(e) {
   }))
 }
 
-function S(e) {
+function T(e) {
   let {
     onClick: t,
     noticeType: n,

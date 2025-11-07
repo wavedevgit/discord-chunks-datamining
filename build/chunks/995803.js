@@ -244,9 +244,9 @@ function b(e) {
     O = y.height,
     v = y.width,
     I = b[1],
-    T = r.useState(true),
-    S = T[0],
-    A = T[1],
+    S = r.useState(true),
+    T = S[0],
+    A = S[1],
     C = d.fitCanvasToArtboardHeight,
     N = d.shouldResizeCanvasToContainer,
     R = d.useDevicePixelRatio,
@@ -293,9 +293,9 @@ function b(e) {
           height: r
         })
       }
-      l && (S || o) && l && l(), S && A(false)
+      l && (T || o) && l && l(), T && A(false)
     }
-  }, [i, a, w, D, j, S, A, O, v, p, h, l, N, C, R, n]), r.useEffect(function() {
+  }, [i, a, w, D, j, T, A, O, v, p, h, l, N, C, R, n]), r.useEffect(function() {
     I({
       width: 0,
       height: 0
@@ -323,11 +323,11 @@ var y, O = function() {
       this.observer.unobserve(e), this.elementsMap.delete(e)
     }, module
   }(),
-  T = function() {
+  S = function() {
     return y || (y = new I), y
   };
 
-function S(e) {
+function T(e) {
   var t = e.setContainerRef,
     n = e.setCanvasRef,
     r = e.className,
@@ -409,10 +409,10 @@ function A(e, t) {
     }, []),
     v = {
       observe: r.useCallback(function(e, t) {
-        T().registerCallback(e, t)
+        S().registerCallback(e, t)
       }, []),
       unobserve: r.useCallback(function(e) {
-        T().removeCallback(e)
+        S().removeCallback(e)
       }, [])
     },
     I = v.observe,
@@ -441,7 +441,7 @@ function A(e, t) {
     f && C && (f.isPlaying ? (f.stop(f.animationNames), f.play(C)) : f.isPaused && (f.stop(f.animationNames), f.pause(C)))
   }, [C, f]);
   var N = r.useCallback(function(e) {
-    return a.default.createElement(S, o({
+    return a.default.createElement(T, o({
       setContainerRef: O,
       setCanvasRef: y
     }, e))
