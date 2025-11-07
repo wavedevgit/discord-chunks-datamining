@@ -1,4 +1,4 @@
-/** Chunk was on 34297 **/
+/** Chunk was on 10150 **/
 /** chunk id: 210851, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => i
@@ -18,10 +18,10 @@ let i = function(e) {
   } = e, [p, m] = s.useState(null), g = s.useRef(null);
   return s.useEffect(() => () => {
     null != g.current && URL.revokeObjectURL(g.current)
-  }, []), (0, r.jsx)(a.gNt, {
+  }, []), (0, r.jsx)(o.gNt, {
     label: u,
     description: "Supported asset formats: ".concat(l.join(", ")),
-    children: (0, r.jsx)(o.Z, {
+    children: (0, r.jsx)(a.Z, {
       filename: null != (n = null != (t = null == p ? true : p.name) ? t : c) ? n : "",
       filters: [{
         name: u,

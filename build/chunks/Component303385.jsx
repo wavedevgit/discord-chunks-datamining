@@ -1,4 +1,4 @@
-/** Chunk was on 34297 **/
+/** Chunk was on 10150 **/
 /** chunk id: 303385, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk509442 = require("./509442.js"),
   Chunk481060 = require("./481060.js"),
   Chunk497505 = require("./497505.js"),
@@ -27,12 +27,12 @@ let g = e => {
   } = (0, c.n)({
     location: u.dr.QUESTS_BAR,
     questConfig: t.config
-  }), x = null == h ? true : h.progressBlur, _ = (null == h ? true : h.label1) || (null == h ? true : h.label2), b = null == h ? true : h.shineWipe, j = x ? 70 : 48, v = x ? 12 : 8, C = x ? false : false, y = x ? 0 : _ ? false : 6;
+  }), x = null == h ? true : h.progressBlur, j = (null == h ? true : h.label1) || (null == h ? true : h.label2), b = null == h ? true : h.shineWipe, _ = x ? 70 : 48, v = x ? 12 : 8, C = x ? false : false, y = x ? 0 : j ? false : 6;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.animated.div, {
+    children: [(0, r.jsx)(a.animated.div, {
       className: m.rewardTileContainer,
       style: {
-        transform: (0, o.to)([n.to({
+        transform: (0, a.to)([n.to({
           range: [0, 1],
           output: [0, 0]
         }), n.to({
@@ -40,12 +40,12 @@ let g = e => {
           output: [0, 82]
         }), n.to({
           range: [0, 1],
-          output: [1, 64 / j]
+          output: [1, 64 / _]
         })], (e, t, n) => "translate(".concat(e, "px, ").concat(t, "px) scale(").concat(n, ")"))
       },
       children: (0, r.jsx)(d.Z, {
         learnMoreStyle: "text",
-        learnMoreFontSize: s ? j / 64 * 12 : true,
+        learnMoreFontSize: s ? _ / 64 * 12 : true,
         quest: t,
         questContent: l.jn.QUEST_BAR_V2,
         location: u.dr.QUESTS_BAR,
@@ -53,20 +53,20 @@ let g = e => {
         sourceQuestContent: l.jn.QUEST_BAR_V2,
         showShine: !b,
         style: {
-          width: j,
-          height: j,
+          width: _,
+          height: _,
           marginRight: v,
-          borderRadius: j / 64 * 8
+          borderRadius: _ / 64 * 8
         }
       })
-    }), (0, r.jsxs)(o.animated.div, {
-      className: a()(m.rewardHighlightLogoCTA, {
+    }), (0, r.jsxs)(a.animated.div, {
+      className: o()(m.rewardHighlightLogoCTA, {
         [m.rewardHighlightLogoCTAHeightBoost]: x,
-        [m.rewardHighlightLogoCTALabel]: _
+        [m.rewardHighlightLogoCTALabel]: j
       }),
       style: {
-        height: x ? j : true,
-        transform: (0, o.to)([n.to({
+        height: x ? _ : true,
+        transform: (0, a.to)([n.to({
           range: [0, 1],
           output: [0, C]
         }), n.to({
@@ -75,11 +75,11 @@ let g = e => {
         })], (e, t) => "translate(".concat(e, "px, ").concat(t, "px)"))
       },
       children: [(0, r.jsx)("div", {
-        className: a()({
-          [m.partnerBranding]: !x && !_
+        className: o()({
+          [m.partnerBranding]: !x && !j
         }),
         children: g
-      }), x && (0, r.jsx)(o.animated.div, {
+      }), x && (0, r.jsx)(a.animated.div, {
         className: m.rewardHighlightLogoCTADivider,
         style: {
           opacity: n.to({
@@ -87,14 +87,14 @@ let g = e => {
             output: [.1, 0]
           })
         }
-      }), (0, r.jsx)(o.animated.div, {
-        className: a()(m.rewardHighlightCTA, {
-          [m.rewardHighlightCTALabel]: _
+      }), (0, r.jsx)(a.animated.div, {
+        className: o()(m.rewardHighlightCTA, {
+          [m.rewardHighlightCTALabel]: j
         }),
         style: {
           opacity: n.to({
             range: [0, 1],
-            output: [_ ? 1 : .7, 0]
+            output: [j ? 1 : .7, 0]
           })
         },
         children: (0, r.jsx)(i.Text, {

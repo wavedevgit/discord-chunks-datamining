@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Yr: () => P,
-  ZP: () => D,
+  ZP: () => x,
   gN: () => R,
   sI: () => w
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
@@ -93,7 +93,11 @@ function P(e) {
 var w = function(e) {
   return e.VIDEO = "VIDEO", e.STREAM = "STREAM", e.FILTERED = "FILTERED", e.SPEAKING = "SPEAKING", e.ACTIVITY = "ACTIVITY", e.NOT_POPPED_OUT = "NOT_POPPED_OUT", e
 }({});
-class D {
+
+function D(e) {
+  return u.default.getId() === e && p.Z.isCurrentUserPTTLatched()
+}
+class x {
   get version() {
     return this.participantByIndex.version
   }
@@ -143,6 +147,7 @@ class D {
         });
         return t && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, C(T({}, n), {
           speaking: t,
+          latched: D(e),
           lastSpoke: this.lastSpoke[e],
           soundsharing: p.Z.isSoundSharing(e)
         })), true
@@ -207,6 +212,7 @@ class D {
         userId: e,
         checkIsMuted: true
       }),
+      latched: D(e),
       lastSpoke: null != (i = this.lastSpoke[e]) ? i : 0,
       soundsharing: p.Z.isSoundSharing(e),
       ringing: w,
@@ -215,11 +221,11 @@ class D {
       localVideoDisabled: _.Z.isLocalVideoDisabled(S.id),
       isPoppedOut: this.poppedOutParticipants.has(S.id)
     }), v.push(b));
-    let D = null != (o = c.Z.getStreamForUser(e, P)) ? o : c.Z.getActiveStreamForUser(e, P);
-    if (null != D && D.channelId === this.channelId) {
-      let t = (0, l.V9)(D),
+    let x = null != (o = c.Z.getStreamForUser(e, P)) ? o : c.Z.getActiveStreamForUser(e, P);
+    if (null != x && x.channelId === this.channelId) {
+      let t = (0, l.V9)(x),
         n = this.getParticipant(t),
-        r = D.ownerId === u.default.getId() && c.Z.isSelfStreamHidden(this.channelId),
+        r = x.ownerId === u.default.getId() && c.Z.isSelfStreamHidden(this.channelId),
         i = (null == n ? true : n.type) === O.fO.STREAM ? {
           maxResolution: null != n.maxResolution ? T({}, n.maxResolution) : true,
           maxFrameRate: n.maxFrameRate
@@ -230,7 +236,7 @@ class D {
         userVideo: null != (d = null == A ? true : A.selfVideo) && d,
         user: S,
         userNick: E.ZP.getName(P, this.channelId, S),
-        stream: D,
+        stream: x,
         isPoppedOut: this.poppedOutParticipants.has(t)
       }), v.push(y)
     }

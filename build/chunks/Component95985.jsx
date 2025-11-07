@@ -1,4 +1,4 @@
-/** Chunk was on 34297 **/
+/** Chunk was on 10150 **/
 /** chunk id: 95985, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -23,15 +23,15 @@ let p = e => {
     activeScreen: f,
     popoutTargetElementRef: h,
     onGameSheetOpened: x,
-    onGameSheetClosed: _
-  } = e, b = (0, a.eQ)(n), j = (0, a.vf)({
+    onGameSheetClosed: j
+  } = e, b = (0, o.eQ)(n), _ = (0, o.vf)({
     quest: n,
     isExpanded: m,
     activeScreen: f,
-    sourceQuestContent: o.jn.QUEST_BAR_V2,
+    sourceQuestContent: a.jn.QUEST_BAR_V2,
     popoutTargetElementRef: h,
     onGameSheetOpened: x,
-    onGameSheetClosed: _
+    onGameSheetClosed: j
   });
   return (0, r.jsxs)("div", {
     className: u.questProgressWrapper,
@@ -48,10 +48,10 @@ let p = e => {
         children: (0, r.jsx)(i.Z, {
           className: u.questProgressRewardTile,
           quest: n,
-          questContent: o.jn.QUEST_BAR_V2,
+          questContent: a.jn.QUEST_BAR_V2,
           autoplay: false,
           location: d.dr.QUESTS_BAR,
-          sourceQuestContent: o.jn.QUEST_BAR_V2
+          sourceQuestContent: a.jn.QUEST_BAR_V2
         })
       })
     }), (0, r.jsxs)("div", {
@@ -75,7 +75,7 @@ let p = e => {
           className: u.questProgressHint,
           color: "text-muted",
           variant: "text-xs/normal",
-          children: j
+          children: _
         })
       })]
     })]

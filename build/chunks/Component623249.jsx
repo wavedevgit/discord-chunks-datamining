@@ -1,4 +1,4 @@
-/** Chunk was on 34297 **/
+/** Chunk was on 10150 **/
 /** chunk id: 623249, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => O,
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -31,22 +31,22 @@ function O(e) {
   var t;
   let {
     quest: n,
-    errorHints: a,
-    transitionState: j,
+    errorHints: o,
+    transitionState: _,
     onClose: O,
     sourceQuestContent: T
-  } = e, [w, P] = (0, s.useState)(a), N = (0, x.KX)(), R = (0, g.O5)(), A = null == (t = (0, f.WD)()) ? true : t.getId(), B = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), k = (0, v.g2)({
+  } = e, [w, P] = (0, s.useState)(o), N = (0, x.KX)(), A = (0, g.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), B = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), k = (0, v.g2)({
     useReducedMotion: B,
     className: E.colorTransition
-  }), I = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, h.Bz)(n), q = (0, l.e7)([m.Z], () => m.Z.getState().theme), L = (0, d.wj)(q) ? C.BRd.DARK : C.BRd.LIGHT, {
-    startConsoleQuest: Q,
+  }), I = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, h.Bz)(n), q = (0, l.e7)([m.Z], () => m.Z.getState().theme), Q = (0, d.wj)(q) ? C.BRd.DARK : C.BRd.LIGHT, {
+    startConsoleQuest: L,
     startingConsoleQuest: V
   } = (0, x.GI)({
     questId: n.id,
     beforeRequest: () => {
-      k.startAnimation(), R({
+      k.startAnimation(), A({
         questId: n.id,
-        questContent: _.jn.CONNECTIONS_MODAL,
+        questContent: j.jn.CONNECTIONS_MODAL,
         questContentCTA: g.jZ.DEFIBRILLATOR,
         sourceQuestContent: T
       })
@@ -56,7 +56,7 @@ function O(e) {
     }
   });
   return (0, r.jsx)(i.Modal, {
-    transitionState: j,
+    transitionState: _,
     onClose: O,
     title: y.intl.string(y.t.W5lmKt),
     subtitle: N.message,
@@ -65,9 +65,9 @@ function O(e) {
       onClick: () => void(O(), (0, h.V$)({
         quest: n
       }, {
-        content: _.jn.CONNECTIONS_MODAL,
+        content: j.jn.CONNECTIONS_MODAL,
         ctaContent: g.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
-        impressionId: A,
+        impressionId: R,
         sourceQuestContent: T
       })),
       text: y.intl.string(y.t["qiS+xj"])
@@ -84,10 +84,10 @@ function O(e) {
           color: "header-secondary",
           children: y.intl.string(y.t["+/hZM/"])
         }), (0, r.jsxs)(u.P3F, {
-          className: o()(E.refreshWrapper, {
+          className: a()(E.refreshWrapper, {
             [E.disabled]: V
           }),
-          onClick: Q,
+          onClick: L,
           children: [k.render(), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
@@ -124,7 +124,7 @@ function O(e) {
             children: (0, r.jsx)("img", {
               className: E.gameTile,
               alt: n.config.messages.gameTitle,
-              src: (0, b.fh)(n, b.eC.GAME_TILE, L).url
+              src: (0, b.fh)(n, b.eC.GAME_TILE, Q).url
             })
           }) : null
         })]
@@ -138,12 +138,12 @@ function S(e) {
     icon: t,
     text: n,
     errors: s = [],
-    gameTile: a
+    gameTile: o
   } = e, i = s.length > 0, l = i ? u._3e : u.B_b;
   return (0, r.jsxs)("div", {
     className: E.connectionRow,
     children: [(0, r.jsxs)("div", {
-      className: o()(E.connectionRowHeader, {
+      className: a()(E.connectionRowHeader, {
         [E.connectionRowHeaderError]: i
       }),
       children: [(0, r.jsxs)("div", {
@@ -155,10 +155,10 @@ function S(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: E.connectionRowHeaderContent,
-        children: [a, (0, r.jsx)(l, {
+        children: [o, (0, r.jsx)(l, {
           color: "currentColor",
           size: "sm",
-          className: o()({
+          className: a()({
             [E.success]: !i,
             [E.error]: i
           })
@@ -188,10 +188,10 @@ function T(e) {
       default: t
     } = await Promise.resolve().then(n.bind(n, 623249));
     return function(n) {
-      return (0, r.jsx)(j.A, {
+      return (0, r.jsx)(_.A, {
         overrideVisibility: true,
         questOrQuests: e.quest,
-        questContent: _.jn.CONNECTIONS_MODAL,
+        questContent: j.jn.CONNECTIONS_MODAL,
         sourceQuestContent: e.sourceQuestContent,
         children: () => (0, r.jsx)(t, function(e) {
           for (var t = 1; t < arguments.length; t++) {

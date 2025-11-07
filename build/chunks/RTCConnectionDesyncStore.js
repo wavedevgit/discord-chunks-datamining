@@ -46,6 +46,7 @@ function v(e, t, n) {
     voiceState: r,
     voicePlatform: null,
     speaking: false,
+    latched: false,
     lastSpoke: 0,
     soundsharing: false,
     ringing: false,

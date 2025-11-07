@@ -1,12 +1,12 @@
-/** Chunk was on 34297 **/
+/** Chunk was on 10150 **/
 /** chunk id: 415104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk617136 = require("./617136.js"),
   Chunk509212 = require("./509212.js"),
   Chunk113434 = require("./113434.js"),
@@ -23,16 +23,16 @@ var Chunk951288 = require("./951288.js"),
 function b(e) {
   var t, n;
   let {
-    quest: a,
+    quest: o,
     className: d,
     questContent: u,
     contentPosition: b,
-    rowIndex: j,
+    rowIndex: _,
     impressionRef: v,
     sourceQuestContent: C
-  } = e, [y, E] = s.useState(false), [O, S] = s.useState([]), T = (0, c.qb)(a), w = s.useMemo(() => (0, l.q8)(a), [a]), P = (0, i._F)(), N = s.useCallback(() => {
+  } = e, [y, E] = s.useState(false), [O, S] = s.useState([]), T = (0, c.qb)(o), w = s.useMemo(() => (0, l.q8)(o), [o]), P = (0, i._F)(), N = s.useCallback(() => {
     E(true), P({
-      questId: a.id,
+      questId: o.id,
       event: x.rMx.QUEST_HOVER,
       properties: {
         content_id: u,
@@ -41,9 +41,9 @@ function b(e) {
       },
       sourceQuestContent: C
     }), w && (0, p.loadVideoQuestModal)()
-  }, [P, a.id, u, w, C, b]), R = s.useCallback(() => {
+  }, [P, o.id, u, w, C, b]), A = s.useCallback(() => {
     E(false), P({
-      questId: a.id,
+      questId: o.id,
       event: x.rMx.QUEST_HOVER_OFF,
       properties: {
         content_id: u,
@@ -52,7 +52,7 @@ function b(e) {
       },
       sourceQuestContent: C
     })
-  }, [P, a.id, u, C, b]), A = s.useContext(g.t), {
+  }, [P, o.id, u, C, b]), R = s.useContext(g.t), {
     visibilityElementRef: B,
     almostVisibleInViewport: k
   } = function(e) {
@@ -67,30 +67,30 @@ function b(e) {
       }, true),
       almostVisibleInViewport: t
     }
-  }(null != (n = null == A || null == (t = A.current) ? true : t.getScrollerNode()) ? n : null);
+  }(null != (n = null == R || null == (t = R.current) ? true : t.getScrollerNode()) ? n : null);
   return (0, r.jsxs)("div", {
-    id: "quest-tile-".concat(a.id),
+    id: "quest-tile-".concat(o.id),
     ref: e => {
       v.current = e, B.current = e
     },
-    className: o()(_.container, d),
+    className: a()(j.container, d),
     onMouseEnter: N,
-    onMouseLeave: R,
+    onMouseLeave: A,
     onFocus: N,
-    onBlur: R,
+    onBlur: A,
     children: [(0, r.jsx)(f.Z, {
-      quest: a,
+      quest: o,
       isHovering: y,
       errorHints: O,
       warningHints: T,
       isVisibleInViewport: k,
       sourceQuestContent: C
     }), (0, r.jsx)(h.Z, {
-      quest: a,
+      quest: o,
       questContent: u,
       isHovering: y,
       contentPosition: b,
-      rowIndex: j,
+      rowIndex: _,
       onReceiveErrorHints: S,
       isVisibleInViewport: k,
       sourceQuestContent: C
@@ -98,7 +98,7 @@ function b(e) {
   })
 }
 
-function j(e) {
+function _(e) {
   return (0, r.jsx)(u.A, {
     questOrQuests: e.quest,
     questContent: e.questContent,

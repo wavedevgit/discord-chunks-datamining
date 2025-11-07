@@ -355,7 +355,14 @@ function em(e) {
     })]
   }) : eX, e0 = l.useRef(null), e1 = (0, M.Y)({
     location: "PrivateChannel"
-  }) && (null == p ? true : p.displayNameStyles) != null, e8 = (0, f.Z)();
+  }) && (null == p ? true : p.displayNameStyles) != null, e8 = (0, f.Z)(), e5 = [(0, I.ZP)({
+    channel: t,
+    unread: ek
+  }), (0, I.Yb)({
+    channel: t,
+    muted: eT,
+    userStatus: F
+  })].filter(Boolean).join(", ");
   return (0, r.jsx)(d.mh, {
     id: t.id,
     children: e => {
@@ -401,10 +408,7 @@ function em(e) {
             innerRef: ev,
             to: et.Z5c.CHANNEL(et.ME, t.id),
             className: er.link,
-            "aria-label": (0, I.ZP)({
-              channel: t,
-              unread: ek
-            })
+            "aria-label": e5
           }, l), {
             children: (0, r.jsx)(P.Z, {
               ref: e0,

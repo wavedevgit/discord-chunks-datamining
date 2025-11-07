@@ -1,4 +1,4 @@
-/** Chunk was on 34297 **/
+/** Chunk was on 10150 **/
 /** chunk id: 321025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => i
@@ -16,7 +16,7 @@ function i(e) {
     animatedComponentProps: i,
     recalculateAnimationPositions: l,
     mountPoints: c
-  } = s.useContext(o.B$);
+  } = s.useContext(a.B$);
   return s.useEffect(() => {
     l()
   }, [l, n]), (0, r.jsx)("div", {
@@ -34,12 +34,12 @@ function i(e) {
       let {
         id: n,
         collapsedLeft: s,
-        expandedLeft: o,
+        expandedLeft: a,
         collapsedTop: i,
         expandedTop: l,
         width: d
       } = e, u = c.get(n);
-      return (0, r.jsx)(a.animated.div, {
+      return (0, r.jsx)(o.animated.div, {
         ref: u,
         style: {
           zIndex: 2,
@@ -47,9 +47,9 @@ function i(e) {
           top: 0,
           left: 0,
           width: d,
-          transform: (0, a.to)([t.to({
+          transform: (0, o.to)([t.to({
             range: [0, 1],
-            output: [s, o]
+            output: [s, a]
           }), t.to({
             range: [0, 1],
             output: [i, l]

@@ -1,4 +1,4 @@
-/** Chunk was on 34297 **/
+/** Chunk was on 10150 **/
 /** chunk id: 795057, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => d,
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js");
 require("./509212.js"), require("./373370.js"), require("./566078.js"), require("./388032.jsx");
 var Chunk879615 = require("./879615.js");
@@ -19,7 +19,7 @@ function l(e) {
     hasNextStep: s
   } = e;
   return (0, r.jsxs)("li", {
-    className: a()(i.stepWrapper, {
+    className: o()(i.stepWrapper, {
       [i.stepWrapperComplete]: n
     }, {
       [i.stepWrapperWithNextStep]: s
@@ -28,9 +28,9 @@ function l(e) {
       className: i.stepIndicator,
       children: [(0, r.jsx)("div", {
         className: i.stepIconWrapper,
-        children: n && (0, r.jsx)(o.sV5, {
+        children: n && (0, r.jsx)(a.sV5, {
           className: i.stepIcon,
-          color: o.TVs.colors.WHITE
+          color: a.TVs.colors.WHITE
         })
       }), s && (0, r.jsx)("div", {
         className: i.stepConnector
@@ -46,7 +46,7 @@ function c(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)(o.Text, {
+  return (0, r.jsx)(a.Text, {
     color: "text-muted",
     variant: "text-xs/medium",
     children: t
@@ -62,7 +62,7 @@ let d = function(e) {
     className: i.wrapper,
     children: [(0, r.jsx)("div", {
       className: i.headingWrapper,
-      children: (0, r.jsx)(o.Heading, {
+      children: (0, r.jsx)(a.Heading, {
         className: i.heading,
         color: "header-primary",
         variant: "text-xs/semibold",

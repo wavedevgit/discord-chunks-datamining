@@ -1,4 +1,4 @@
-/** Chunk was on 34297 **/
+/** Chunk was on 10150 **/
 /** chunk id: 941348, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -21,13 +21,13 @@ let p = function(e) {
     isExpansionAnimationComplete: f,
     onCtxMenuOpened: h,
     onCtxMenuClosed: x,
-    onCtxMenuSelection: _,
+    onCtxMenuSelection: j,
     quest: b,
-    useReducedMotion: j,
+    useReducedMotion: _,
     collapsedHeight: v,
     onGameSheetOpened: C,
     onGameSheetClosed: y
-  } = e, E = (null == (t = b.userStatus) ? true : t.completedAt) != null, O = s.useRef(null), S = s.useRef(null), T = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, w = (0, a.Rf)(b);
+  } = e, E = (null == (t = b.userStatus) ? true : t.completedAt) != null, O = s.useRef(null), S = s.useRef(null), T = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, w = (0, o.Rf)(b);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: p,
     collapsedContentRef: O,
@@ -39,11 +39,11 @@ let p = function(e) {
       isExpanded: g,
       isExpansionAnimationComplete: f,
       quest: b,
-      useReducedMotion: j,
+      useReducedMotion: _,
       taskDetails: w,
       onCtxMenuOpen: h,
       onCtxMenuClose: x,
-      onCtxMenuSelect: _,
+      onCtxMenuSelect: j,
       overlayRef: S
     }, E ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, r.jsx)(c.Z, {
       expansionSpring: m,
@@ -51,29 +51,29 @@ let p = function(e) {
       collapsedHeight: v,
       onCtxMenuOpen: h,
       onCtxMenuClose: x,
-      onCtxMenuSelect: _,
+      onCtxMenuSelect: j,
       onGameSheetOpened: C,
       onGameSheetClosed: y,
       overlayRef: S,
       isExpanded: g,
       isExpansionAnimationComplete: f,
       quest: b,
-      useReducedMotion: j,
+      useReducedMotion: _,
       ref: p,
       taskDetails: w,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Z, {
           expansionSpring: m,
           isExpanded: g
-        }), !T && (0, r.jsx)(o.Z, {
+        }), !T && (0, r.jsx)(a.Z, {
           quest: b,
           expansionSpring: m,
-          useReducedMotion: j,
+          useReducedMotion: _,
           isExpanded: g,
           isExpansionAnimationComplete: f,
           onCtxMenuOpen: h,
           onCtxMenuClose: x,
-          onCtxMenuSelect: _
+          onCtxMenuSelect: j
         })]
       })
     }), (0, r.jsx)("div", {

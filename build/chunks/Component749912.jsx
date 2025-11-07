@@ -1,4 +1,4 @@
-/** Chunk was on 34297 **/
+/** Chunk was on 10150 **/
 /** chunk id: 749912, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -65,9 +65,9 @@ let d = [{
       taskDuration: n = 10,
       taskConfigV2: u
     } = e;
-    return (0, r.jsxs)(a.Kqy, {
+    return (0, r.jsxs)(o.Kqy, {
       gap: 20,
-      children: [(0, r.jsx)(a.PhF, {
+      children: [(0, r.jsx)(o.PhF, {
         label: "Task Type(s)",
         className: i.taskPresetSelect,
         placeholder: "Select Task Preset",
@@ -82,9 +82,9 @@ let d = [{
           let t = s.X.PLAY_ON_PLAYSTATION in e || s.X.PLAY_ON_XBOX in e,
             n = s.X.PLAY_ON_DESKTOP in e || s.X.PLAY_ON_DESKTOP_V2 in e,
             r = s.X.STREAM_ON_DESKTOP in e,
-            a = s.X.WATCH_VIDEO in e,
-            o = s.X.PLAY_ACTIVITY in e;
-          return t && n ? 4 : t ? 3 : n ? 0 : r ? 1 : a ? 2 : o ? 5 : true
+            o = s.X.WATCH_VIDEO in e,
+            a = s.X.PLAY_ACTIVITY in e;
+          return t && n ? 4 : t ? 3 : n ? 0 : r ? 1 : o ? 2 : a ? 5 : true
         }(u.tasks),
         select: e => {
           t(c(l({}, u), {
@@ -153,13 +153,13 @@ let d = [{
           }))
         },
         serialize: String
-      }), (0, r.jsx)(a.oil, {
+      }), (0, r.jsx)(o.oil, {
         label: "Task Duration",
-        value: String(n / o.Z.Seconds.MINUTE),
+        value: String(n / a.Z.Seconds.MINUTE),
         onChange: function(e) {
           let n = Number(e);
           if (isNaN(n)) return;
-          n *= o.Z.Seconds.MINUTE;
+          n *= a.Z.Seconds.MINUTE;
           let r = Object.fromEntries(Object.entries(u.tasks).map(e => {
             let [t, r] = e;
             return [t, c(l({}, r), {

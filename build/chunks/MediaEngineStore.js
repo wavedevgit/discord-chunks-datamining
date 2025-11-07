@@ -228,8 +228,8 @@ let e$ = {
   e0 = (0, Chunk46973.Mt)((0, Chunk46973.jj)());
 ej.enableNativeLogger(true);
 let e1 = {},
-  e3 = new Set([Chunk65154.Yn.DEFAULT]),
-  e2 = e0.supports(Chunk65154.AN.AUTO_ENABLE),
+  e2 = new Set([Chunk65154.Yn.DEFAULT]),
+  e3 = e0.supports(Chunk65154.AN.AUTO_ENABLE),
   e4 = false,
   e8 = Chunk65154.Yn.STREAM,
   e5 = performance.now(),
@@ -344,7 +344,7 @@ function tH(e) {
 
 function tY(e) {
   let t = tF(e.context),
-    n = !e2 || t.mute || t.deaf;
+    n = !e3 || t.mute || t.deaf;
   e.context === eP.Yn.DEFAULT ? n = n || te || tt || tn || !en.Z.didHavePermission(eC.Eu.AUDIO) : e.context === eP.Yn.STREAM && (n = true), e.setSelfMute(n), e.setSelfDeaf(t.deaf), e.context === eP.Yn.DEFAULT && T.Z.updateNativeMute()
 }
 
@@ -370,7 +370,7 @@ function tK() {
       let t = tB(),
         n = tF().videoHook,
         i = t1(),
-        a = i ? t3() ? Chunk70722.zj : Chunk70722.ZM : 0,
+        a = i ? t2() ? Chunk70722.zj : Chunk70722.ZM : 0,
         s = (0, Chunk358085.isWindows)() && (0, Chunk412412.t)("updateVideo").enabled;
       e0.setGoLiveSource({
         desktopDescription: {
@@ -382,7 +382,7 @@ function tK() {
           useCaptureDeviceForEncode: s,
           useLoopback: r.getExperimentalSoundshare(),
           useQuartzCapturer: true,
-          allowScreenCaptureKit: t2(),
+          allowScreenCaptureKit: t3(),
           videoHookStaleFrameTimeoutMs: eY,
           graphicsCaptureStaleFrameTimeoutMs: eW,
           hdrCaptureMode: exports,
@@ -753,11 +753,11 @@ function t1() {
   return (0, Chunk358085.isWindows)() && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.c5)
 }
 
-function t3() {
+function t2() {
   return (0, Chunk358085.isWindows)() && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.sN)
 }
 
-function t2() {
+function t3() {
   return (0, Chunk358085.isMac)() && e0.supports(Chunk65154.AN.SCREEN_CAPTURE_KIT) && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.C7)
 }
 
@@ -829,7 +829,7 @@ function ne() {
 }
 
 function nt() {
-  e2 || e0.enable().then(() => Chunk570140.Z.dispatch({
+  e3 || e0.enable().then(() => Chunk570140.Z.dispatch({
     type: "MEDIA_ENGINE_SET_AUDIO_ENABLED",
     enabled: true,
     unmute: false
@@ -1434,11 +1434,11 @@ function n1(e) {
   }), t5.update()
 }
 
-function n3(e) {
+function n2(e) {
   e0.setDebugLogging(e.enabled)
 }
 
-function n2(e) {
+function n3(e) {
   let {
     level: t
   } = e;
@@ -1643,14 +1643,14 @@ function rm(e) {
   let {
     application: t
   } = e;
-  e3.add(t.id)
+  e2.add(t.id)
 }
 
 function rg(e) {
   let {
     application: t
   } = e;
-  e3.delete(t.id)
+  e2.delete(t.id)
 }
 
 function rE(e) {
@@ -1660,7 +1660,7 @@ function rE(e) {
   } = e;
   if (!n) switch (t) {
     case "audio":
-      e2 = false, e0.eachConnection(tY);
+      e3 = false, e0.eachConnection(tY);
       break;
     case "video":
       tK(false)
@@ -1668,7 +1668,7 @@ function rE(e) {
 }
 
 function rb(e) {
-  e2 = e.enabled, e.unmute && t7({
+  e3 = e.enabled, e.unmute && t7({
     mute: false,
     deaf: false
   }), e0.eachConnection(tY)
@@ -1716,7 +1716,7 @@ function rO(e) {
       useCaptureDeviceForEncode: false,
       useLoopback: r.getExperimentalSoundshare(),
       useQuartzCapturer: true,
-      allowScreenCaptureKit: t2(),
+      allowScreenCaptureKit: t3(),
       videoHookStaleFrameTimeoutMs: eY,
       graphicsCaptureStaleFrameTimeoutMs: eW,
       hdrCaptureMode: f
@@ -1950,7 +1950,7 @@ class rU extends(u = Chunk442837.ZP.Store) {
     return ty
   }
   isEnabled() {
-    return e2
+    return e3
   }
   isMute() {
     return this.isSelfMute() || te
@@ -2098,7 +2098,7 @@ class rU extends(u = Chunk442837.ZP.Store) {
           shortcut: i
         }
       } = t;
-      r === eT.pM4.PUSH_TO_TALK && e3.has(n) && (e[n] = i)
+      r === eT.pM4.PUSH_TO_TALK && e2.has(n) && (e[n] = i)
     }), module
   }
   getInputDeviceId() {
@@ -2278,7 +2278,7 @@ class rU extends(u = Chunk442837.ZP.Store) {
     tk = e
   }
   supportsScreenSoundshare() {
-    return (0, Chunk358085.isMac)() ? e0.supports(Chunk65154.AN.SOUNDSHARE) && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.yG) && t2() : (0, Chunk358085.isWindows)() ? e0.supports(Chunk65154.AN.SCREEN_SOUNDSHARE) && this.getExperimentalSoundshare() : !!(0, Chunk358085.isLinux)() && e0.supports(Chunk65154.AN.SCREEN_SOUNDSHARE)
+    return (0, Chunk358085.isMac)() ? e0.supports(Chunk65154.AN.SOUNDSHARE) && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.yG) && t3() : (0, Chunk358085.isWindows)() ? e0.supports(Chunk65154.AN.SCREEN_SOUNDSHARE) && this.getExperimentalSoundshare() : !!(0, Chunk358085.isLinux)() && e0.supports(Chunk65154.AN.SCREEN_SOUNDSHARE)
   }
   getVideoStreamParameters() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT,
@@ -2385,8 +2385,8 @@ let rB = r = new rU(Chunk570140.Z, {
   AUDIO_SET_NOISE_CANCELLATION: nQ,
   AUDIO_SET_KRISP_MODEL_OVERRIDE: nJ,
   AUDIO_SET_DISPLAY_SILENCE_WARNING: n1,
-  AUDIO_SET_DEBUG_LOGGING: n3,
-  AUDIO_SET_KRISP_SUPPRESSION_LEVEL: n2,
+  AUDIO_SET_DEBUG_LOGGING: n2,
+  AUDIO_SET_KRISP_SUPPRESSION_LEVEL: n3,
   AUDIO_SET_NOISE_CANCELLATION_ENABLE_STATS: n$,
   MEDIA_ENGINE_SET_VIDEO_HOOK: n4,
   MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE: n8,

@@ -145,7 +145,7 @@ let T = e => {
     return (0, r.jsx)(h.PaymentContextProvider, {
       stepConfigs: d,
       applicationId: n,
-      skuIDs: [i],
+      skuIDs: null != i ? [i] : [],
       isGift: a,
       activeSubscription: null,
       purchaseType: u,

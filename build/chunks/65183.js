@@ -644,9 +644,9 @@
       return "function" == typeof e.mergeDeep ? e.mergeDeep.apply(e, t) : t[t.length - 1]
     })
   }, eX.prototype.sort = function(e) {
-    return tM(t2(this, e))
+    return tM(t3(this, e))
   }, eX.prototype.sortBy = function(e, t) {
-    return tM(t2(this, t, e))
+    return tM(t3(this, t, e))
   }, eX.prototype.withMutations = function(e) {
     var t = this.asMutable();
     return e(t), t.wasAltered() ? t.__ensureOwner(this.__ownerID) : this
@@ -678,11 +678,11 @@
     this.ownerID = e, this.bitmap = t, this.nodes = n
   }
 
-  function e3(e, t, n) {
+  function e2(e, t, n) {
     this.ownerID = e, this.count = t, this.nodes = n
   }
 
-  function e2(e, t, n) {
+  function e3(e, t, n) {
     this.ownerID = e, this.keyHash = t, this.entries = n
   }
 
@@ -735,11 +735,11 @@
   }
 
   function tn(e) {
-    return e.constructor === e4 || e.constructor === e2
+    return e.constructor === e4 || e.constructor === e3
   }
 
   function tr(e, t, n, r, i) {
-    if (e.keyHash === r) return new e2(t, r, [e.entry, i]);
+    if (e.keyHash === r) return new e3(t, r, [e.entry, i]);
     var a, o = (0 === n ? e.keyHash : e.keyHash >>> n) & N,
       s = (0 === n ? r : r >>> n) & N,
       l = o === s ? [tr(e, t, n + A, r, i)] : (a = new e4(t, r, i), o < s ? [e, a] : [a, e]);
@@ -765,7 +765,7 @@
 
   function to(e, t, n, r, i) {
     for (var a = 0, o = Array(C), s = 0; 0 !== n; s++, n >>>= 1) o[s] = 1 & n ? t[a++] : true;
-    return o[r] = i, new e3(e, a + 1, o)
+    return o[r] = i, new e2(e, a + 1, o)
   }
 
   function ts(e, t, n) {
@@ -880,12 +880,12 @@
       m = u ? p ? c : c ^ l : c | l,
       g = u ? p ? t_(f, d, p, h) : th(f, d, h) : tp(f, d, p, h);
     return h ? (this.bitmap = m, this.nodes = g, this) : new e1(e, m, g)
-  }, e3.prototype.get = function(e, t, n, r) {
+  }, e2.prototype.get = function(e, t, n, r) {
     true === t && (t = eM(n));
     var i = (0 === e ? t : t >>> e) & N,
       a = this.nodes[i];
     return a ? a.get(e + A, t, n, r) : r
-  }, e3.prototype.update = function(e, t, n, r, i, a, o) {
+  }, e2.prototype.update = function(e, t, n, r, i, a, o) {
     true === n && (n = eM(r));
     var s = (0 === t ? n : n >>> t) & N,
       l = i === R,
@@ -900,12 +900,12 @@
     } else f++;
     var _ = e && e === this.ownerID,
       p = t_(c, s, d, _);
-    return _ ? (this.count = f, this.nodes = p, this) : new e3(e, f, p)
-  }, e2.prototype.get = function(e, t, n, r) {
+    return _ ? (this.count = f, this.nodes = p, this) : new e2(e, f, p)
+  }, e3.prototype.get = function(e, t, n, r) {
     for (var i = this.entries, a = 0, o = i.length; a < o; a++)
       if (eS(n, i[a][0])) return i[a][1];
     return r
-  }, e2.prototype.update = function(e, t, n, r, i, a, o) {
+  }, e3.prototype.update = function(e, t, n, r, i, a, o) {
     true === n && (n = eM(r));
     var s = i === R;
     if (n !== this.keyHash) return s ? this : (x(o), x(a), tr(this, e, t, n, [r, i]));
@@ -915,17 +915,17 @@
     if (x(o), (s || !d) && x(a), s && 2 === u) return new e4(e, this.keyHash, l[1 ^ c]);
     var f = e && e === this.ownerID,
       _ = f ? l : M(l);
-    return (d ? s ? c === u - 1 ? _.pop() : _[c] = _.pop() : _[c] = [r, i] : _.push([r, i]), f) ? (this.entries = _, this) : new e2(e, this.keyHash, _)
+    return (d ? s ? c === u - 1 ? _.pop() : _[c] = _.pop() : _[c] = [r, i] : _.push([r, i]), f) ? (this.entries = _, this) : new e3(e, this.keyHash, _)
   }, e4.prototype.get = function(e, t, n, r) {
     return eS(n, this.entry[0]) ? this.entry[1] : r
   }, e4.prototype.update = function(e, t, n, r, i, a, o) {
     var s = i === R,
       l = eS(r, this.entry[0]);
     return (l ? i === this.entry[1] : s) ? this : (x(o), s) ? void x(a) : l ? e && e === this.ownerID ? (this.entry[1] = i, this) : new e4(e, this.keyHash, [r, i]) : (x(a), tr(this, e, t, eM(r), [r, i]))
-  }, e0.prototype.iterate = e2.prototype.iterate = function(e, t) {
+  }, e0.prototype.iterate = e3.prototype.iterate = function(e, t) {
     for (var n = this.entries, r = 0, i = n.length - 1; r <= i; r++)
       if (false === e(n[t ? i - r : r])) returnfalse
-  }, e1.prototype.iterate = e3.prototype.iterate = function(e, t) {
+  }, e1.prototype.iterate = e2.prototype.iterate = function(e, t) {
     for (var n = this.nodes, r = 0, i = n.length - 1; r <= i; r++) {
       var a = n[t ? i - r : r];
       if (a && false === a.iterate(e, t)) returnfalse
@@ -1551,7 +1551,7 @@
     }).flatten(true)
   }
 
-  function t3(e, t) {
+  function t2(e, t) {
     var n = nt(e);
     return n.size = e.size && 2 * e.size - 1, n.__iterateUncached = function(n, r) {
       var i = this,
@@ -1568,7 +1568,7 @@
     }, n
   }
 
-  function t2(e, t, n) {
+  function t3(e, t, n) {
     t || (t = nr);
     var r = g(e),
       i = 0,
@@ -1925,9 +1925,9 @@
     var t = u.call(arguments, 1);
     return this.union.apply(this, t)
   }, nd.prototype.sort = function(e) {
-    return nE(t2(this, e))
+    return nE(t3(this, e))
   }, nd.prototype.sortBy = function(e, t) {
-    return nE(t2(this, t, e))
+    return nE(t3(this, t, e))
   }, nd.prototype.wasAltered = function() {
     return this._map.wasAltered()
   }, nd.prototype.__iterate = function(e, t) {
@@ -2210,7 +2210,7 @@
       return !this.every(nL(e), t)
     },
     sort: function(e) {
-      return t6(this, t2(this, e))
+      return t6(this, t3(this, e))
     },
     values: function() {
       return this.__iterator(H)
@@ -2321,7 +2321,7 @@
       return this.skipWhile(nL(e), t)
     },
     sortBy: function(e, t) {
-      return t6(this, t2(this, t, e))
+      return t6(this, t3(this, t, e))
     },
     take: function(e) {
       return this.slice(0, Math.max(0, e))
@@ -2507,7 +2507,7 @@
       return (e = k(this, e)) >= 0 && (true !== this.size ? this.size === 1 / 0 || e < this.size : false !== this.indexOf(e))
     },
     interpose: function(e) {
-      return t6(this, t3(this, e))
+      return t6(this, t2(this, e))
     },
     interleave: function() {
       var e = [this].concat(M(arguments)),

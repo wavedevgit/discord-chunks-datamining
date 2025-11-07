@@ -1,4 +1,4 @@
-/** Chunk was on 34297 **/
+/** Chunk was on 10150 **/
 /** chunk id: 478977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -47,15 +47,15 @@ let d = function(e) {
     onChange: d,
     title: u
   } = e, p = s.useRef(null);
-  return (0, r.jsx)(o.gNt, {
+  return (0, r.jsx)(a.gNt, {
     label: u,
-    children: (0, r.jsx)(o.yRy, {
+    children: (0, r.jsx)(a.yRy, {
       targetElementRef: p,
-      renderPopout: e => (0, r.jsx)(o.Z$W, c(l({}, e), {
+      renderPopout: e => (0, r.jsx)(a.Z$W, c(l({}, e), {
         value: n,
-        onChange: e => d(t, (0, a.Rf)(e))
+        onChange: e => d(t, (0, o.Rf)(e))
       })),
-      children: e => (0, r.jsx)(o.P3F, c(l({}, e), {
+      children: e => (0, r.jsx)(a.P3F, c(l({}, e), {
         innerRef: p,
         tag: "span",
         "aria-label": "Select a color",
@@ -63,7 +63,7 @@ let d = function(e) {
         style: {
           backgroundColor: n
         },
-        children: (0, r.jsx)(o.ilE, {
+        children: (0, r.jsx)(a.ilE, {
           size: "xs",
           color: "currentColor",
           className: i.swatchIcon

@@ -1,4 +1,4 @@
-/** Chunk was on 34297 **/
+/** Chunk was on 10150 **/
 /** chunk id: 308069, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk509442 = require("./509442.js"),
   Chunk481060 = require("./481060.js"),
   Chunk617136 = require("./617136.js"),
@@ -26,7 +26,7 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
     let {
       quest: t,
       expansionSpring: n,
-      onCtxMenuSelect: a,
+      onCtxMenuSelect: o,
       onCtxMenuOpen: g,
       onCtxMenuClose: C,
       useReducedMotion: y,
@@ -35,7 +35,7 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
     } = e, S = (0, d.aM)(), {
       status: T
     } = (0, m.n)({
-      location: _.dr.QUESTS_BAR,
+      location: j.dr.QUESTS_BAR,
       questConfig: t.config
     }), w = null == T ? true : T.progressBlur, P = s.useCallback(() => {
       (0, f.openDisclosureModal)(t, {
@@ -50,15 +50,15 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
         impressionId: S,
         sourceQuestContent: p.jn.QUEST_BAR_V2
       })
-    }, [S, t]), R = E && O, A = (0, r.jsx)(l.P3F, {
+    }, [S, t]), A = E && O, R = (0, r.jsx)(l.P3F, {
       onClick: N,
-      className: o()(j.clickable, {
-        [j.logo]: R
+      className: a()(_.clickable, {
+        [_.logo]: A
       }),
       children: (0, r.jsx)(v, {
         quest: t,
         withGameTile: false,
-        logotypeClassName: j.partnerBranding,
+        logotypeClassName: _.partnerBranding,
         logotypeStyle: {
           height: w ? 32 : 24,
           maxWidth: w ? 130 : 92,
@@ -70,8 +70,8 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
       })
     });
     return (0, r.jsxs)(i.animated.div, {
-      className: o()(j.wrapper, j.rewardHighlightWrapper, {
-        [j.interactable]: R
+      className: a()(_.wrapper, _.rewardHighlightWrapper, {
+        [_.interactable]: A
       }),
       style: {
         transform: (0, i.to)([n.to({
@@ -80,7 +80,7 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
         })], e => "translateY(".concat(e, "px"))
       },
       children: [(0, r.jsx)(i.animated.div, {
-        className: j.opaqueExpandedBackground,
+        className: _.opaqueExpandedBackground,
         style: {
           opacity: n.to({
             range: [0, 1],
@@ -90,11 +90,11 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
       }), (0, r.jsx)(x.Z, {
         quest: t,
         expansionSpring: n,
-        isFullyExpanded: R,
-        partnerBranding: A,
+        isFullyExpanded: A,
+        partnerBranding: R,
         useReducedMotion: y
       }), (0, r.jsxs)(i.animated.div, {
-        className: j.promotedBadgeWrapper,
+        className: _.promotedBadgeWrapper,
         style: {
           opacity: n.to({
             range: [0, 1],
@@ -102,7 +102,7 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
           })
         },
         children: [(0, r.jsxs)(l.P3F, {
-          className: j.promotedBadge,
+          className: _.promotedBadge,
           onClick: P,
           children: [(0, r.jsx)(l.Text, {
             color: "always-white",
@@ -110,12 +110,12 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
             children: b.intl.string(b.t.o6FLcF)
           }), (0, r.jsx)(l.idN, {
             color: l.TVs.colors.WHITE,
-            className: j.promotedBadgeIcon
+            className: _.promotedBadgeIcon
           })]
         }), (0, r.jsx)(h.r, {
           onOpen: g,
           onClose: C,
-          onSelect: a,
+          onSelect: o,
           questContent: p.jn.QUEST_BAR_V2,
           quest: t,
           shouldShowDisclosure: true,
@@ -141,12 +141,12 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
               }
               return e
             }({}, e), n = n = {
-              className: j.submenuWrapper,
+              className: _.submenuWrapper,
               "aria-label": b.intl.string(b.t.DEoVWZ),
               children: (0, r.jsx)(l.xhG, {
                 size: "md",
                 color: "currentColor",
-                className: o()(j.submenuIcon, j.white)
+                className: a()(_.submenuIcon, _.white)
               })
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);

@@ -2,7 +2,7 @@
 /** chunk id: 358221, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eG
+  Z: () => eB
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
@@ -182,7 +182,7 @@ function en(e) {
 function er(e) {
   let t = W(e);
   if (0 === t.size()) return;
-  let n = ek(e) || et(t) ? C.WtW.VIDEO : C.WtW.VOICE;
+  let n = eU(e) || et(t) ? C.WtW.VIDEO : C.WtW.VOICE;
   n === C.WtW.VOICE ? (delete U[e], delete G[e]) : U[e] = n
 }
 
@@ -247,28 +247,32 @@ function ed(e) {
   return q(e => e.updateParticipantSpeaking(t))
 }
 
-function ef(e) {
+function ef() {
+  return q(e => e.updateParticipantSpeaking(m.default.getId()))
+}
+
+function e_(e) {
   let {
     user: t
   } = e;
   return X(t.id)
 }
 
-function e_(e) {
+function ep(e) {
   let {
     channelId: t
   } = e;
   return q(e => e.rebuild(), [t])
 }
 
-function ep(e) {
+function eh(e) {
   let {
     channelId: t
   } = e;
   return ei(t)
 }
 
-function eh(e) {
+function em(e) {
   let {
     guild: t
   } = e, n = [];
@@ -279,7 +283,7 @@ function eh(e) {
   s().forEach(n, e => ei(e))
 }
 
-function em(e) {
+function eg(e) {
   let {
     channelId: t,
     participantsOpen: n
@@ -287,7 +291,7 @@ function em(e) {
   B[t] = n
 }
 
-function eg(e) {
+function eE(e) {
   let {
     channelId: t,
     voiceParticipantsHidden: n
@@ -295,7 +299,7 @@ function eg(e) {
   Z[t] = n
 }
 
-function eE(e) {
+function eb(e) {
   let {
     channelId: t,
     selfStreamHidden: n
@@ -307,7 +311,7 @@ function eE(e) {
   X(r, [t])
 }
 
-function eb(e) {
+function ey(e) {
   let {
     channelId: t,
     large: n
@@ -315,7 +319,7 @@ function eb(e) {
   H[t] = n
 }
 
-function ey(e) {
+function eO(e) {
   let {
     channelId: t,
     dismissed: n
@@ -323,7 +327,7 @@ function ey(e) {
   Y[t] = n
 }
 
-function eO(e) {
+function ev(e) {
   let {
     channelId: t,
     chatOpen: n
@@ -331,7 +335,7 @@ function eO(e) {
   F[t] = n, n && (V[t] = false)
 }
 
-function ev(e) {
+function eI(e) {
   let {
     channelId: t,
     participantsListOpen: n
@@ -339,7 +343,7 @@ function ev(e) {
   V[t] = n, n && (F[t] = false)
 }
 
-function eI(e) {
+function eS(e) {
   let {
     channelId: t,
     id: n
@@ -361,7 +365,7 @@ function eI(e) {
   }
 }
 
-function eS(e) {
+function eT(e) {
   let {
     channelId: t,
     participantId: n
@@ -372,7 +376,7 @@ function eS(e) {
   null != a && a.type !== A.fO.ACTIVITY && (i.updateParticipantPoppedOut(n, true), X(a.user.id, [t]))
 }
 
-function eT(e) {
+function eA(e) {
   let {
     channelId: t,
     participantId: n
@@ -382,7 +386,7 @@ function eT(e) {
   null != i && i.type !== A.fO.ACTIVITY && X(i.user.id, [t])
 }
 
-function eA(e) {
+function eC(e) {
   let {
     channel: t
   } = e;
@@ -398,7 +402,7 @@ function eA(e) {
   returnfalse
 }
 
-function eC(e) {
+function eN(e) {
   let {
     channel: {
       id: t
@@ -407,7 +411,7 @@ function eC(e) {
   return delete F[t], delete V[t], delete H[t], ei(t)
 }
 
-function eN(e) {
+function eR(e) {
   let {
     channelId: t,
     layout: n,
@@ -416,16 +420,6 @@ function eN(e) {
   G[t] = w(R({}, G[t]), {
     [r]: n
   })
-}
-
-function eR(e) {
-  let {
-    streamKey: t
-  } = e, {
-    channelId: n,
-    ownerId: r
-  } = (0, _.my)(t);
-  return X(r, [n])
 }
 
 function eP(e) {
@@ -440,10 +434,12 @@ function eP(e) {
 
 function ew(e) {
   let {
-    channelId: t,
-    userId: n
-  } = e;
-  return X(n, [t])
+    streamKey: t
+  } = e, {
+    channelId: n,
+    ownerId: r
+  } = (0, _.my)(t);
+  return X(r, [n])
 }
 
 function eD(e) {
@@ -456,12 +452,20 @@ function eD(e) {
 
 function ex(e) {
   let {
+    channelId: t,
+    userId: n
+  } = e;
+  return X(n, [t])
+}
+
+function eL(e) {
+  let {
     userId: t
   } = e;
   return X(t)
 }
 
-function eL(e) {
+function eM(e) {
   let {
     channelId: t,
     senderUserId: n,
@@ -469,20 +473,6 @@ function eL(e) {
     maxFrameRate: i
   } = e;
   return q(e => e.updateParticipantQuality(n, r, i), [t])
-}
-
-function eM(e) {
-  let {
-    channelId: t,
-    guildId: n,
-    ringing: r
-  } = e;
-  if (!p.Z.getCurrentConfig({
-      guildId: n,
-      location: "guild_ring_start"
-    }).enabled) returnfalse;
-  let i = W(t);
-  return r.forEach(e => i.updateGuildRingingUsers(e, true)), q(e => e.rebuild(), [t])
 }
 
 function ej(e) {
@@ -496,14 +486,28 @@ function ej(e) {
       location: "guild_ring_start"
     }).enabled) returnfalse;
   let i = W(t);
-  return r.forEach(e => i.updateGuildRingingUsers(e, false)), q(e => e.rebuild(), [t])
+  return r.forEach(e => i.updateGuildRingingUsers(e, true)), q(e => e.rebuild(), [t])
 }
 
 function ek(e) {
+  let {
+    channelId: t,
+    guildId: n,
+    ringing: r
+  } = e;
+  if (!p.Z.getCurrentConfig({
+      guildId: n,
+      location: "guild_ring_start"
+    }).enabled) returnfalse;
+  let i = W(t);
+  return r.forEach(e => i.updateGuildRingingUsers(e, false)), q(e => e.rebuild(), [t])
+}
+
+function eU(e) {
   var t;
   return !!(null == (t = E.Z.getChannel(e)) ? true : t.isGuildVocalOrThread())
 }
-class eU extends(r = Chunk442837.ZP.PersistedStore) {
+class eG extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, f.default, b.Z, y.Z, O.Z, v.default, I.Z, S.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.default], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(Z, null == e ? true : e.voiceParticipantsHidden)
   }
@@ -576,13 +580,13 @@ class eU extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getMode(e) {
     var t;
-    return null != (t = U[e]) ? t : ek(e) ? C.WtW.VIDEO : C.WtW.VOICE
+    return null != (t = U[e]) ? t : eU(e) ? C.WtW.VIDEO : C.WtW.VOICE
   }
   getLayout(e) {
     var t, n;
     let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : C.IlC.APP;
     if (__OVERLAY__) return C.AEg.NORMAL;
-    let i = ek(e);
+    let i = eU(e);
     return null != (n = null == (t = G[e]) ? true : t[r]) ? n : i ? C.AEg.NO_CHAT : C.AEg.NORMAL
   }
   getChatOpen(e) {
@@ -611,8 +615,8 @@ class eU extends(r = Chunk442837.ZP.PersistedStore) {
     return null != n && "isPoppedOut" in n && n.isPoppedOut
   }
 }
-N(eU, "displayName", "ChannelRTCStore"), N(eU, "persistKey", "ChannelRTCStore");
-let eG = new eU(Chunk570140.Z, {
+N(eG, "displayName", "ChannelRTCStore"), N(eG, "persistKey", "ChannelRTCStore");
+let eB = new eG(Chunk570140.Z, {
   CONNECTION_OPEN: K,
   CONNECTION_OPEN_SUPPLEMENTAL: ea,
   THREAD_LIST_SYNC: ea,
@@ -621,36 +625,37 @@ let eG = new eU(Chunk570140.Z, {
   CHANNEL_SELECT: es,
   CHANNEL_RTC_ACTIVE_CHANNELS: ea,
   VOICE_STATE_UPDATES: el,
-  CHANNEL_CREATE: eA,
-  CHANNEL_DELETE: eC,
-  THREAD_DELETE: eC,
-  CALL_CREATE: e_,
-  CALL_UPDATE: e_,
-  CALL_DELETE: ep,
-  CHANNEL_RTC_SELECT_PARTICIPANT: eI,
-  CHANNEL_RTC_POPOUT_PARTICIPANT: eS,
-  CHANNEL_RTC_RETURN_PARTICIPANT: eT,
-  CHANNEL_RTC_UPDATE_LAYOUT: eN,
-  CHANNEL_RTC_UPDATE_PARTICIPANTS_OPEN: em,
-  CHANNEL_RTC_UPDATE_VOICE_PARTICIPANTS_HIDDEN: eg,
-  CHANNEL_RTC_UPDATE_STAGE_STREAM_SIZE: eb,
-  CHANNEL_RTC_UPDATE_STAGE_VIDEO_LIMIT_BOOST_UPSELL_DISMISSED: ey,
-  STREAM_UPDATE_SELF_HIDDEN: eE,
-  CHANNEL_RTC_UPDATE_CHAT_OPEN: eO,
-  CHANNEL_RTC_UPDATE_PARTCIPANTS_LIST_OPEN: ev,
-  RTC_CONNECTION_VIDEO: ew,
-  RTC_CONNECTION_PLATFORM: eD,
-  AUDIO_SET_LOCAL_VIDEO_DISABLED: ex,
-  MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED: eL,
-  STREAM_CLOSE: eR,
-  STREAM_DELETE: eR,
-  STREAM_WATCH: eP,
+  CHANNEL_CREATE: eC,
+  CHANNEL_DELETE: eN,
+  THREAD_DELETE: eN,
+  CALL_CREATE: ep,
+  CALL_UPDATE: ep,
+  CALL_DELETE: eh,
+  CHANNEL_RTC_SELECT_PARTICIPANT: eS,
+  CHANNEL_RTC_POPOUT_PARTICIPANT: eT,
+  CHANNEL_RTC_RETURN_PARTICIPANT: eA,
+  CHANNEL_RTC_UPDATE_LAYOUT: eR,
+  CHANNEL_RTC_UPDATE_PARTICIPANTS_OPEN: eg,
+  CHANNEL_RTC_UPDATE_VOICE_PARTICIPANTS_HIDDEN: eE,
+  CHANNEL_RTC_UPDATE_STAGE_STREAM_SIZE: ey,
+  CHANNEL_RTC_UPDATE_STAGE_VIDEO_LIMIT_BOOST_UPSELL_DISMISSED: eO,
+  STREAM_UPDATE_SELF_HIDDEN: eb,
+  CHANNEL_RTC_UPDATE_CHAT_OPEN: ev,
+  CHANNEL_RTC_UPDATE_PARTCIPANTS_LIST_OPEN: eI,
+  RTC_CONNECTION_VIDEO: eD,
+  RTC_CONNECTION_PLATFORM: ex,
+  AUDIO_SET_LOCAL_VIDEO_DISABLED: eL,
+  MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED: eM,
+  STREAM_CLOSE: eP,
+  STREAM_DELETE: eP,
+  STREAM_WATCH: ew,
   SPEAKING: ed,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: ed,
   GUILD_SOUNDBOARD_SOUND_PLAY_END: ed,
-  GUILD_RING_START: eM,
-  GUILD_RING_STOP: ej,
-  USER_UPDATE: ef,
-  GUILD_MEMBER_UPDATE: ef,
-  GUILD_DELETE: eh
+  PUSH_TO_TALK_STATE_CHANGE: ef,
+  GUILD_RING_START: ej,
+  GUILD_RING_STOP: ek,
+  USER_UPDATE: e_,
+  GUILD_MEMBER_UPDATE: e_,
+  GUILD_DELETE: em
 })

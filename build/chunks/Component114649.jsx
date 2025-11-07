@@ -1,0 +1,62 @@
+/** Chunk was on 32249 **/
+/** chunk id: 114649, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => E
+});
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk692547 = require("./692547.js"),
+  Chunk28664 = require("./28664.jsx"),
+  Chunk481060 = require("./481060.js"),
+  Chunk509212 = require("./509212.js"),
+  Chunk113434 = require("./113434.js"),
+  Chunk497505 = require("./497505.js"),
+  Chunk937797 = require("./937797.js"),
+  Chunk969227 = require("./969227.js"),
+  Chunk536687 = require("./536687.jsx"),
+  Chunk46140 = require("./46140.js"),
+  Chunk388032 = require("./388032.jsx");
+
+function E() {
+  var e, t, n;
+  let {
+    quest: E,
+    sourceQuestContent: g,
+    onClose: O
+  } = Chunk647438.useContext(Chunk536687.VideoQuestModalContext), {
+    enabled: h
+  } = Chunk937797.EO.useConfig({
+    location: Chunk46140.dr.VIDEO_MODAL
+  }), b = (0, Chunk113434.tP)(E), S = null != (0, Chunk509212.LM)(E.config), y = (0, Chunk969227.D)({
+    quest: E,
+    questContent: Chunk497505.jn.QUEST_HOME_DESKTOP,
+    sourceQuestContent: g,
+    onClick: O,
+    shouldShowShopIfAlreadyClaimed: true
+  }), C = (null == (e = E.userStatus) ? true : module.claimedAt) != null ? S ? Chunk388032.intl.string(Chunk388032.t.WYchde) : Chunk388032.intl.string(Chunk388032.t.vTgCWx) : Chunk388032.intl.string(Chunk388032.t.cfY4PE), _ = (null == (t = E.userStatus) ? true : exports.completedAt) == null && h ? b ? Chunk388032.intl.string(Chunk388032.t.NJ6Bnm) : Chunk388032.intl.string(Chunk388032.t.USNO1K) : true;
+  return (0, Chunk951288.jsx)(Chunk28664.u, {
+    text: _,
+    children: (0, Chunk951288.jsx)("div", {
+      children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+        variant: h ? "secondary" : "primary",
+        fullWidth: true,
+        icon: ((e, t) => {
+          var n, r;
+          if (t && (null == (n = e.userStatus) ? true : n.claimedAt) == null) return {
+            type: "rive",
+            asset: a.ax1,
+            riveProps: {
+              dataBinding: {
+                locked: (null == (r = e.userStatus) ? true : r.completedAt) === null,
+                fill: l.Z.colors.ICON_PRIMARY
+              }
+            }
+          }
+        })(E, h),
+        onClick: y,
+        text: C,
+        disabled: (null == (n = E.userStatus) ? true : require.completedAt) == null
+      })
+    })
+  })
+}

@@ -44,71 +44,73 @@ function p(e) {
     userId: t,
     size: n,
     speaking: i = false,
-    muted: d = false,
-    deafen: _ = false,
-    src: p,
-    disabled: h = false,
-    ringing: m,
-    ringingType: g = 0,
-    avatarClassName: E,
-    renderIcon: b,
-    style: y,
-    onClick: O,
-    onContextMenu: v,
-    className: I
-  } = e, S = (0, o.e7)([c.Z], () => null != t && c.Z.isLocalMute(t)), T = () => {
-    let e = S ? s.v0G : _ ? s.wE8 : s.nRN;
-    return d || _ || S ? (0, r.jsx)("div", {
+    latched: d = false,
+    muted: _ = false,
+    deafen: p = false,
+    src: h,
+    disabled: m = false,
+    ringing: g,
+    ringingType: E = 0,
+    avatarClassName: b,
+    renderIcon: y,
+    style: O,
+    onClick: v,
+    onContextMenu: I,
+    className: S
+  } = e, T = (0, o.e7)([c.Z], () => null != t && c.Z.isLocalMute(t)), A = () => {
+    let e = T ? s.v0G : p ? s.wE8 : s.nRN;
+    return _ || p || T ? (0, r.jsx)("div", {
       className: u.statusContainer,
       children: (0, r.jsx)(e, {
         className: u.status,
         color: s.TVs.colors.WHITE.css
       }, "status")
     }) : null
-  }, A = () => (0, r.jsx)("div", {
+  }, C = () => (0, r.jsx)("div", {
     className: a()(u.border, {
-      [u.speaking]: i
+      [u.speaking]: i,
+      [u.latched]: d && !i
     })
-  }, "border"), C = () => d && i ? (0, r.jsxs)(r.Fragment, {
-    children: [A(), T()]
-  }) : d || _ || S ? (0, r.jsx)(r.Fragment, {
-    children: T()
-  }) : (0, r.jsx)(r.Fragment, {
+  }, "border"), N = () => _ && i ? (0, r.jsxs)(r.Fragment, {
+    children: [C(), A()]
+  }) : _ || p || T ? (0, r.jsx)(r.Fragment, {
     children: A()
-  }), N = () => {
+  }) : (0, r.jsx)(r.Fragment, {
+    children: C()
+  }), R = () => {
     let e = (0, s.pxk)(n),
       t = (0, r.jsx)("img", {
-        src: p,
+        src: h,
         alt: " ",
-        className: a()(u.voiceAvatar, E, {
-          [u.ringingOutgoing]: m && 0 === g
+        className: a()(u.voiceAvatar, b, {
+          [u.ringingOutgoing]: g && 0 === E
         })
       });
-    if (h) return t;
+    if (m) return t;
     let i = l.QS.AVATAR_DEFAULT;
-    return null != b ? i = n === s.EFr.SIZE_32 ? l.QS.AVATAR_CALL_ICON_32 : l.QS.AVATAR_CALL_ICON : (d || _ || S) && (i = l.QS.AVATAR_VOICE_CALL_80), (0, r.jsxs)("div", {
+    return null != y ? i = n === s.EFr.SIZE_32 ? l.QS.AVATAR_CALL_ICON_32 : l.QS.AVATAR_CALL_ICON : (_ || p || T) && (i = l.QS.AVATAR_VOICE_CALL_80), (0, r.jsxs)("div", {
       className: u.callAvatarMaskContainer,
       children: [(0, r.jsxs)(l.ZP, {
         className: u.callAvatarMask,
         width: e,
         height: e,
         mask: i,
-        children: [null == b ? true : b(), t]
-      }), C()]
+        children: [null == y ? true : y(), t]
+      }), N()]
     })
-  }, R = a()(u.wrapper, {
-    [u.clickable]: null != O,
-    [u.ringingOutgoing]: m && 0 === g,
-    [u.ringingIncoming]: m && 1 === g
-  }, I), P = (0, s.pxk)(n), w = f({
-    height: P,
-    width: P
-  }, y);
+  }, P = a()(u.wrapper, {
+    [u.clickable]: null != v,
+    [u.ringingOutgoing]: g && 0 === E,
+    [u.ringingIncoming]: g && 1 === E
+  }, S), w = (0, s.pxk)(n), D = f({
+    height: w,
+    width: w
+  }, O);
   return (0, r.jsx)("div", {
-    style: w,
-    onContextMenu: v,
-    className: R,
-    children: N()
+    style: D,
+    onContextMenu: I,
+    className: P,
+    children: R()
   })
 }
 p.RingingType = _;

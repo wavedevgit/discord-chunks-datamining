@@ -1,4 +1,4 @@
-/** Chunk was on 73155 **/
+/** Chunk was on 42922 **/
 /** chunk id: 412331, original params: e,o,t (module,exports,require) **/
 module.exports = {
   cont: "cont__370d1",
@@ -10,5 +10,6 @@ module.exports = {
   seekableBar: "seekableBar__370d1",
   bufferHovered: "bufferHovered__370d1",
   timeDisplay: "timeDisplay__370d1",
-  grabber: "grabber__370d1"
+  grabber: "grabber__370d1",
+  rounded: "rounded__370d1"
 }

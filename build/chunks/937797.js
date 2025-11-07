@@ -3,7 +3,9 @@
 "use strict";
 require.d(exports, {
   CD: () => o,
-  DL: () => i
+  DL: () => i,
+  EO: () => l,
+  m_: () => s
 });
 var Chunk427164 = require("./427164.js");
 let i = (0, Chunk427164.le)({
@@ -53,6 +55,27 @@ let i = (0, Chunk427164.le)({
   variations: {
     1: {
       enabled: true
+    }
+  }
+});
+var s = function(e) {
+  return e[e.DISPLAY_ADVERTISER_CTA_ALWAYS = 0] = "DISPLAY_ADVERTISER_CTA_ALWAYS", e[e.OVERLAY_SHARE_ON_VIDEO = 1] = "OVERLAY_SHARE_ON_VIDEO", e
+}({});
+let l = (0, Chunk427164.le)({
+  name: "2025-10-desktop-video-quest-cta-relocation",
+  kind: "user",
+  defaultConfig: {
+    enabled: false,
+    variant: null
+  },
+  variations: {
+    1: {
+      enabled: true,
+      variant: 0
+    },
+    2: {
+      enabled: true,
+      variant: 1
     }
   }
 })

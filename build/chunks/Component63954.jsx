@@ -1,13 +1,13 @@
-/** Chunk was on 34297 **/
+/** Chunk was on 10150 **/
 /** chunk id: 63954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => U,
-  b: () => Q
+  Z: () => H,
+  b: () => L
 }), require("./388685.js"), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk278074 = require("./278074.js"),
   Chunk754700 = require("./754700.js"),
   Chunk887003 = require("./887003.js"),
@@ -71,9 +71,9 @@ function I(e, t) {
 }
 let D = ["png", "gif", "webp"],
   q = [...D, "jpg", "jpeg"],
-  L = Array.from(new Set([...q, "gif", "mp4", "webm"]));
+  Q = Array.from(new Set([...q, "gif", "mp4", "webm"]));
 
-function Q(e) {
+function L(e) {
   var t, n;
   return {
     code: "PREVIEW-MODE-CODE",
@@ -176,19 +176,19 @@ let M = "1193992107035983872",
   };
 
 function W() {
-  var e, t, a, d, u, B, Q, M;
-  let [W, H] = Chunk647438.useState(Z), U = Chunk647438.useCallback(e => {
-    H(I(k({}, e), {
+  var e, t, o, d, u, B, L, M;
+  let [W, U] = Chunk647438.useState(Z), H = Chunk647438.useCallback(e => {
+    U(I(k({}, e), {
       preview: true
     }))
-  }, []), [F, z] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [K, G] = Chunk647438.useState(false), [X, Y] = Chunk647438.useState(false), [J, $] = Chunk647438.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
+  }, []), [z, F] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [G, K] = Chunk647438.useState(false), [X, Y] = Chunk647438.useState(false), [J, $] = Chunk647438.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
   function et(e, t) {
     if ("hero" === e || "questBarHero" === e || "gameTile" === e || "logotype" === e || "heroVideo" === e || "questBarHeroVideo" === e) {
       var n, r;
-      U(I(k({}, W), {
+      H(I(k({}, W), {
         config: (n = W.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
@@ -224,7 +224,7 @@ function W() {
       default:
         return
     }
-    U(I(k({}, W), {
+    H(I(k({}, W), {
       config: I(k({}, W.config), {
         taskConfigV2: I(k({}, W.config.taskConfigV2), {
           tasks: I(k({}, n), {
@@ -239,7 +239,7 @@ function W() {
 
   function er(e, t) {
     var n, r, s;
-    U(I(k({}, W), {
+    H(I(k({}, W), {
       config: I(k({}, W.config), {
         videoMetadata: I(k({}, W.config.videoMetadata), {
           messages: null != (s = null == (n = W.config.videoMetadata) ? true : n.messages) ? s : {},
@@ -254,7 +254,7 @@ function W() {
   function es(e, t) {
     if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
       var n, r;
-      U(I(k({}, W), {
+      H(I(k({}, W), {
         config: (n = W.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
@@ -266,14 +266,14 @@ function W() {
     }
   }
 
-  function ea(e, t) {
+  function eo(e, t) {
     let n = W.config.taskConfigV2.tasks,
       r = n[l.X.WATCH_VIDEO];
     if (null == r) return;
     let s = I(k({}, r.messages), {
       [e]: t
     });
-    U(I(k({}, W), {
+    H(I(k({}, W), {
       config: I(k({}, W.config), {
         taskConfigV2: I(k({}, W.config.taskConfigV2), {
           tasks: I(k({}, n), {
@@ -286,10 +286,10 @@ function W() {
     }))
   }
 
-  function eo(e, t, n) {
+  function ea(e, t, n) {
     if ("name" === e || "nameWithArticle" === e) {
       var r, s;
-      U(I(k({}, W), {
+      H(I(k({}, W), {
         config: (r = W.config, s = {
           [e]: t
         }, (0, i.EQ)(r).with({
@@ -306,7 +306,7 @@ function W() {
   }
 
   function ei(e, t) {
-    U(I(k({}, W), {
+    H(I(k({}, W), {
       config: I(k({}, W.config), {
         colors: I(k({}, W.config.colors), {
           [e]: t
@@ -330,7 +330,7 @@ function W() {
       return 10 * Chunk70956.Z.Seconds.MINUTE
     }, [W.config.taskConfigV2.tasks]),
     ed = Chunk647438.useMemo(() => Chunk754700.X.WATCH_VIDEO in W.config.taskConfigV2.tasks, [W.config.taskConfigV2.tasks]);
-  o()(false !== W.preview && null != W.preview, "Preview config must have property preview: true");
+  a()(false !== W.preview && null != W.preview, "Preview config must have property preview: true");
   let eu = W.config.taskConfigV2.tasks[Chunk754700.X.WATCH_VIDEO];
   return (0, Chunk951288.jsxs)(Chunk481060.zJl, {
     className: Chunk188764.container,
@@ -342,7 +342,7 @@ function W() {
       className: Chunk188764.fields,
       children: (0, Chunk951288.jsx)(Chunk916028.Z, {
         onSelect: function(e) {
-          $(e), null != e && (z(function(e) {
+          $(e), null != e && (F(function(e) {
             if (null == e.userStatus) return O.a.UNENROLLED;
             if (null != e.userStatus.claimedAt) return O.a.CLAIMED;
             if (null != e.userStatus.completedAt) return O.a.COMPLETED_100;
@@ -350,7 +350,7 @@ function W() {
               n = t.progressSeconds,
               r = t.targetSeconds;
             return n / r >= 1 ? O.a.COMPLETED_100 : n / r >= .75 ? O.a.COMPLETED_75 : n / r >= .5 ? O.a.COMPLETED_50 : n / r >= .25 ? O.a.COMPLETED_25 : O.a.ENROLLED
-          }(e)), U(e))
+          }(e)), H(e))
         },
         quest: J
       })
@@ -364,7 +364,7 @@ function W() {
         taskDuration: ec,
         taskConfigV2: W.config.taskConfigV2,
         onSelect: function(e) {
-          U(I(k({}, W), {
+          H(I(k({}, W), {
             config: I(k({}, W.config), {
               taskConfigV2: e
             })
@@ -396,17 +396,17 @@ function W() {
         children: [(0, Chunk951288.jsx)(Chunk602683.Z, {
           title: "Video Title",
           assetKey: "videoTitle",
-          onMessageChange: ea,
+          onMessageChange: eo,
           initialValue: null == eu ? true : eu.messages.videoTitle
         }), (0, Chunk951288.jsx)(Chunk602683.Z, {
           title: "End CTA Title",
           assetKey: "videoEndCtaTitle",
-          onMessageChange: ea,
+          onMessageChange: eo,
           initialValue: null == eu ? true : eu.messages.videoEndCtaTitle
         }), (0, Chunk951288.jsx)(Chunk602683.Z, {
           title: "End CTA Subtitle",
           assetKey: "videoEndCtaSubtitle",
-          onMessageChange: ea,
+          onMessageChange: eo,
           initialValue: null == eu ? true : eu.messages.videoEndCtaSubtitle
         })]
       })]
@@ -420,26 +420,26 @@ function W() {
         title: "Hero",
         assetKey: "hero",
         onFileChange: et,
-        filters: L,
+        filters: Q,
         initialValue: W.config.assets.hero
       }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Hero Video (optional)",
         assetKey: "heroVideo",
         onFileChange: et,
-        filters: L,
+        filters: Q,
         initialValue: null != (B = W.config.assets.heroVideo) ? B : true
       }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Quest Bar Hero",
         assetKey: "questBarHero",
         onFileChange: et,
-        filters: L,
+        filters: Q,
         initialValue: W.config.assets.questBarHero
       }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Quest Bar Hero Video (optional)",
         assetKey: "questBarHeroVideo",
         onFileChange: et,
-        filters: L,
-        initialValue: null != (Q = W.config.assets.questBarHeroVideo) ? Q : true
+        filters: Q,
+        initialValue: null != (L = W.config.assets.questBarHeroVideo) ? L : true
       }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Game Tile",
         assetKey: "gameTile",
@@ -457,13 +457,13 @@ function W() {
           title: "Quest Video",
           assetKey: "videoPlayerVideo",
           onFileChange: en,
-          filters: L,
+          filters: Q,
           initialValue: null == eu ? true : eu.assets.video.url
         }), (0, Chunk951288.jsx)(Chunk210851.Z, {
           title: "Quest Video (Low Resolution)",
           assetKey: "videoPlayerVideoLowRes",
           onFileChange: en,
-          filters: L,
+          filters: Q,
           initialValue: null == eu || null == (e = eu.assets.videoLowRes) ? true : module.url
         }), (0, Chunk951288.jsx)(Chunk210851.Z, {
           title: "Video Player Thumbnail (optional)",
@@ -475,40 +475,40 @@ function W() {
           title: "Quest Bar Preview Video (optional)",
           assetKey: "questBarPreviewVideo",
           onFileChange: er,
-          filters: L,
+          filters: Q,
           initialValue: null == (t = W.config.videoMetadata) ? true : exports.assets.questBarPreviewVideo
         }), (0, Chunk951288.jsx)(Chunk210851.Z, {
           title: "Quest Home Video (optional)",
           assetKey: "questHomeVideo",
           onFileChange: er,
-          filters: L,
-          initialValue: null == (a = W.config.videoMetadata) ? true : Chunk512722.assets.questHomeVideo
+          filters: Q,
+          initialValue: null == (o = W.config.videoMetadata) ? true : Chunk512722.assets.questHomeVideo
         })]
       })]
     }), ee.map((e, t) => (0, r.jsxs)("div", {
       children: [(0, r.jsxs)(p.Heading, {
         variant: "heading-md/semibold",
-        className: A.subheading,
+        className: R.subheading,
         children: ["Reward #", t + 1]
       }), (0, r.jsxs)("div", {
-        className: A.fields,
+        className: R.fields,
         children: [(0, r.jsx)(v.Z, {
           title: "Name",
           assetKey: "name",
-          onMessageChange: (e, n) => eo(e, n, t),
+          onMessageChange: (e, n) => ea(e, n, t),
           initialValue: e.messages.name
         }), (0, r.jsx)(v.Z, {
           title: "Name With Article",
           assetKey: "nameWithArticle",
-          onMessageChange: (e, n) => eo(e, n, t),
+          onMessageChange: (e, n) => ea(e, n, t),
           initialValue: e.messages.nameWithArticle
-        }), e.type !== c.w.VIRTUAL_CURRENCY && (0, r.jsx)(j.Z, {
+        }), e.type !== c.w.VIRTUAL_CURRENCY && (0, r.jsx)(_.Z, {
           title: "Asset",
           assetKey: "asset",
           onFileChange: (e, n) => (function(e, t, n) {
             if ("asset" === e) {
               var r;
-              U(I(k({}, W), {
+              H(I(k({}, W), {
                 config: (r = W.config, (0, i.EQ)(r).with({
                   configVersion: 2
                 }, e => I(k({}, e), {
@@ -522,7 +522,7 @@ function W() {
               }))
             }
           })(e, n, t),
-          filters: L,
+          filters: Q,
           initialValue: e.asset
         }), (0, r.jsxs)(p.Kqy, {
           direction: "vertical",
@@ -564,21 +564,21 @@ function W() {
         children: (0, Chunk951288.jsx)(Chunk815183.Z, {})
       }), (0, Chunk951288.jsx)(Chunk899457.Z, {
         onChange: function(e) {
-          switch (z(e), e) {
+          switch (F(e), e) {
             case O.a.UNENROLLED:
-              U(I(k({}, W), {
+              H(I(k({}, W), {
                 userStatus: null
               }));
               break;
             case O.a.ENROLLED:
-              U(I(k({}, W), {
+              H(I(k({}, W), {
                 userStatus: V({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
             case O.a.COMPLETED_25:
-              U(I(k({}, W), {
+              H(I(k({}, W), {
                 userStatus: V({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .25 * ec
@@ -586,7 +586,7 @@ function W() {
               }));
               break;
             case O.a.COMPLETED_50:
-              U(I(k({}, W), {
+              H(I(k({}, W), {
                 userStatus: V({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .5 * ec
@@ -594,7 +594,7 @@ function W() {
               }));
               break;
             case O.a.COMPLETED_75:
-              U(I(k({}, W), {
+              H(I(k({}, W), {
                 userStatus: V({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .75 * ec
@@ -602,7 +602,7 @@ function W() {
               }));
               break;
             case O.a.COMPLETED_100:
-              U(I(k({}, W), {
+              H(I(k({}, W), {
                 userStatus: V({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
@@ -611,7 +611,7 @@ function W() {
               }));
               break;
             case O.a.CLAIMED:
-              U(I(k({}, W), {
+              H(I(k({}, W), {
                 userStatus: V({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
@@ -621,7 +621,7 @@ function W() {
               }))
           }
         },
-        value: F
+        value: z
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/bold",
@@ -692,7 +692,7 @@ function W() {
               children: (0, Chunk951288.jsx)(Chunk134483.Z, {
                 channelId: "123",
                 previewQuest: W,
-                isParticipatingOverride: K
+                isParticipatingOverride: G
               })
             })
           })
@@ -701,9 +701,9 @@ function W() {
         className: Chunk188764.toggleSwitch,
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Is Participating:",
-          checked: K,
+          checked: G,
           onChange: function(e) {
-            G(e)
+            K(e)
           }
         })
       }), (0, Chunk951288.jsxs)(Chunk456799.Z, {
@@ -738,7 +738,7 @@ function W() {
             (0, Chunk481060.ZDy)(async () => {
               let {
                 default: e
-              } = await Promise.all([require.e("13193"), require.e("32249"), require.e("73155")]).then(require.bind(require, 536687));
+              } = await Promise.all([require.e("13193"), require.e("32249"), require.e("42922")]).then(require.bind(require, 536687));
               return t => {
                 var n;
                 return (0, r.jsx)(e, I(k({}, t), {
@@ -757,7 +757,7 @@ function W() {
     })]
   })
 }
-class H extends Chunk647438.Component {
+class U extends Chunk647438.Component {
   componentDidCatch(e) {
     this.setState({
       error: e
@@ -800,4 +800,4 @@ class H extends Chunk647438.Component {
     })
   }
 }
-let U = H
+let H = U

@@ -1,4 +1,4 @@
-/** Chunk was on 34297 **/
+/** Chunk was on 10150 **/
 /** chunk id: 457153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk509442 = require("./509442.js"),
   Chunk113434 = require("./113434.js"),
   Chunk497505 = require("./497505.js"),
@@ -17,33 +17,33 @@ var Chunk951288 = require("./951288.js"),
   Chunk743294 = require("./743294.js"),
   Chunk557579 = require("./557579.js");
 let h = Chunk647438.forwardRef(function(e, t) {
-  var n, a;
+  var n, o;
   let {
     className: h,
     expansionSpring: x,
-    isExpanded: _,
+    isExpanded: j,
     isExpansionAnimationComplete: b,
-    quest: j,
+    quest: _,
     taskDetails: v,
     useReducedMotion: C,
     onCtxMenuOpen: y,
     onCtxMenuClose: E,
     onCtxMenuSelect: O,
     overlayRef: S
-  } = e, T = (null == (n = j.userStatus) ? true : n.completedAt) != null, w = (0, l.Jf)(j), P = s.useRef(null), N = (null == (a = j.userStatus) ? true : a.enrolledAt) != null, R = null != w ? w.percentComplete : v.percentComplete, [A, B] = s.useState(false);
+  } = e, T = (null == (n = _.userStatus) ? true : n.completedAt) != null, w = (0, l.Jf)(_), P = s.useRef(null), N = (null == (o = _.userStatus) ? true : o.enrolledAt) != null, A = null != w ? w.percentComplete : v.percentComplete, [R, B] = s.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [T && (0, r.jsx)(u.Z, {
       expansionSpring: x,
       overlayRef: S,
       progressBarRef: P,
-      quest: j,
-      isExpanded: _,
-      isHovered: A
+      quest: _,
+      isExpanded: j,
+      isHovered: R
     }), (0, r.jsx)(i.animated.div, {
       ref: t,
-      "aria-hidden": _ && b,
-      className: o()(h, f.contentCollapsed, {
-        [f.contentCollapsedExpanded]: _,
+      "aria-hidden": j && b,
+      className: a()(h, f.contentCollapsed, {
+        [f.contentCollapsedExpanded]: j,
         [f.contentCollapsedAccepted]: N
       }),
       style: {
@@ -59,7 +59,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
         className: f.contentCollapsedWrapper,
         children: [T && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(m.Z, {
-            quest: j,
+            quest: _,
             onCtxMenuOpen: y,
             onCtxMenuClose: E,
             onCtxMenuSelect: O
@@ -68,12 +68,12 @@ let h = Chunk647438.forwardRef(function(e, t) {
           })]
         }), N ? (0, r.jsx)(p.Z, {
           contentLocation: "collapsed",
-          quest: j,
+          quest: _,
           progressBarRef: P,
           isExpanded: false,
-          percentComplete: R
+          percentComplete: A
         }) : null, T && (0, r.jsx)(d.y, {
-          quest: j,
+          quest: _,
           useReducedMotion: C,
           isExpanded: false,
           awaitingConsoleConnections: false,

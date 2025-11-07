@@ -1,4 +1,4 @@
-/** Chunk was on 34297 **/
+/** Chunk was on 10150 **/
 /** chunk id: 694802, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -41,14 +41,14 @@ function l(e) {
 let c = function(e) {
   let {
     quest: t
-  } = e, n = (0, a.qb)(t);
+  } = e, n = (0, o.qb)(t);
   if (0 === n.length) return null;
   let s = n.at(0);
-  return s === o.intl.string(o.t.BV6xDm) ? (0, r.jsx)(l, {
-    header: o.intl.string(o.t.onh6ct),
-    children: o.intl.string(o.t.arVHRA)
-  }) : s === o.intl.string(o.t.MFGxFM) ? (0, r.jsx)(l, {
-    header: o.intl.string(o.t.JPihZA),
-    children: o.intl.string(o.t.MFGxFM)
+  return s === a.intl.string(a.t.BV6xDm) ? (0, r.jsx)(l, {
+    header: a.intl.string(a.t.onh6ct),
+    children: a.intl.string(a.t.arVHRA)
+  }) : s === a.intl.string(a.t.MFGxFM) ? (0, r.jsx)(l, {
+    header: a.intl.string(a.t.JPihZA),
+    children: a.intl.string(a.t.MFGxFM)
   }) : null
 }
