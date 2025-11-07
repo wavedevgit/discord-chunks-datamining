@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 28767, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   popoutContainer: "popoutContainer_a912c3",
   customColorsHeader: "customColorsHeader_a912c3",

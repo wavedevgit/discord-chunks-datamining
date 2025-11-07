@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 539437, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   wrapper: "wrapper__83b1d",
   actions: "actions__83b1d",

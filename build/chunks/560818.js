@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 560818, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   upsellContainer: "upsellContainer__73000",
   upsellContent: "upsellContent__73000",

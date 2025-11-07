@@ -1,9 +1,8 @@
 /** Chunk was on 64982 **/
 /** chunk id: 975464, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   C: () => j,
-  Z: () => v
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -60,7 +59,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guild: t
   } = e, n = (0, u.Z)(t), {
@@ -68,8 +67,8 @@ function v(e) {
     eligibilityError: p,
     eligibility: f
   } = n, b = (0, c.j)(f), {
-    isLoading: v,
-    error: _,
+    isLoading: _,
+    error: v,
     creatorMonetizationOnboardingMarketing: O
   } = (0, d.Z)(t.id);
   return (i.useEffect(() => {
@@ -85,7 +84,7 @@ function v(e) {
     }
   }, {
     disableTrack: null == t.id || null == f
-  }), m || null == f || v) ? (0, r.jsx)(a.$jN, {}) : f.actionRequired ? (0, r.jsx)(h.Z, {
+  }), m || null == f || _) ? (0, r.jsx)(a.$jN, {}) : f.actionRequired ? (0, r.jsx)(h.Z, {
     guild: t
   }) : null != p ? (0, r.jsx)(a.M14, {
     type: "critical",
@@ -97,7 +96,7 @@ function v(e) {
       monetizationEligibility: n
     }), (0, r.jsx)(j, {
       onboardingMarketing: O,
-      onboardingMarketingError: _
+      onboardingMarketingError: v
     })]
   })
 }

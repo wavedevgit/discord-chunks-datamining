@@ -502,7 +502,7 @@ function W() {
           assetKey: "nameWithArticle",
           onMessageChange: (e, n) => ea(e, n, t),
           initialValue: e.messages.nameWithArticle
-        }), e.type !== c.w.VIRTUAL_CURRENCY && (0, r.jsx)(_.Z, {
+        }), e.type !== c.w.VIRTUAL_CURRENCY && (0, r.jsx)(b.Z, {
           title: "Asset",
           assetKey: "asset",
           onFileChange: (e, n) => (function(e, t, n) {

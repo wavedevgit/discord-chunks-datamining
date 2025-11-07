@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 38703, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => b
 });
@@ -87,8 +86,8 @@ function b() {
       (0, c.l_)(t)
     }, []),
     {
-      handleDragStart: v,
-      handleDragReset: _,
+      handleDragStart: _,
+      handleDragReset: v,
       handleDragComplete: O,
       draggingId: C
     } = (0, Chunk710344.Z)(x, j),
@@ -118,8 +117,8 @@ function b() {
       children: x.map((e, t) => (0, r.jsx)(u.Z, {
         connection: e,
         index: t,
-        onDragStart: v,
-        onDragReset: _,
+        onDragStart: _,
+        onDragReset: v,
         onDragComplete: O,
         draggingId: C
       }, e.id))

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 922112, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => b
 }), require("./953529.js");
@@ -25,9 +24,9 @@ let b = function(e) {
     index: b,
     onDragComplete: x,
     onDragStart: j,
-    onDragReset: v
+    onDragReset: _
   } = e, {
-    title: _,
+    title: v,
     channelId: O,
     description: C
   } = l, y = u.Z.getChannel(O), N = null;
@@ -48,7 +47,7 @@ let b = function(e) {
       index: b,
       onDragStart: j,
       onDragComplete: x,
-      onDragReset: v
+      onDragReset: _
     }),
     Z = i.useCallback(e => {
       (0, m.XG)(l.channelId, e)
@@ -136,7 +135,7 @@ let b = function(e) {
           className: h.resourceChannelTitle,
           variant: "text-md/semibold",
           color: "header-primary",
-          children: _
+          children: v
         }), !E && (0, r.jsx)(o.Text, {
           className: h.resourceChannelDescription,
           variant: "text-xs/medium",

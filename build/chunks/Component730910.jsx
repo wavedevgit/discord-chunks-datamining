@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 730910, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => A
 }), require("./388685.js");
@@ -90,15 +89,15 @@ function L(e) {
     return null != e && !O.Z.isEducationUpsellDismissed(e)
   }), B = (0, u.ZP)(), F = i.useRef(null), [{
     spring: H
-  }, z] = (0, d.q_F)(() => ({
+  }, W] = (0, d.q_F)(() => ({
     spring: 0
   }), "animate-always");
   i.useEffect(() => {
     function e() {
-      z({
+      W({
         spring: 1,
         config: l.config.gentle
-      }), z({
+      }), W({
         spring: 0,
         config: l.config.gentle,
         delay: 1e3
@@ -107,10 +106,10 @@ function L(e) {
     return p.S.subscribe(P.CkL.EMPHASIZE_NOTICE, e), () => {
       p.S.unsubscribe(P.CkL.EMPHASIZE_NOTICE, e)
     }
-  }, [z]);
-  let W = (0, d.dQu)(s.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
+  }, [W]);
+  let z = (0, d.dQu)(s.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
     V = (0, d.dQu)(s.Z.unsafe_rawColors.PRIMARY_160).hex(),
-    K = (0, c.wj)(B) ? W : V,
+    K = (0, c.wj)(B) ? z : V,
     Y = H.to({
       range: [0, 1],
       output: [K, (0, d.dQu)(s.Z.colors.STATUS_DANGER).hex()]
@@ -124,12 +123,12 @@ function L(e) {
   }
   let q = A === C.xh[C.xh.length - 1],
     X = async () => {
-      let e = _.Z.advancedMode;
+      let e = v.Z.advancedMode;
       if (k) try {
-        if (A === C.PG.DEFAULT_CHANNELS) await (0, h.DO)(t).then(() => e ? (0, v.rS)(t, {
+        if (A === C.PG.DEFAULT_CHANNELS) await (0, h.DO)(t).then(() => e ? (0, _.rS)(t, {
           ignoreDefaultPrompt: true
         }) : Promise.resolve());
-        else if (A === C.PG.CUSTOMIZATION_QUESTIONS) await (0, v.rS)(t, {
+        else if (A === C.PG.CUSTOMIZATION_QUESTIONS) await (0, _.rS)(t, {
           ignoreDefaultPrompt: true
         });
         else if (A === C.PG.HOME_SETTINGS) {

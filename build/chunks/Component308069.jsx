@@ -52,13 +52,13 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
       })
     }, [S, t]), A = E && O, R = (0, r.jsx)(l.P3F, {
       onClick: N,
-      className: a()(_.clickable, {
-        [_.logo]: A
+      className: a()(b.clickable, {
+        [b.logo]: A
       }),
       children: (0, r.jsx)(v, {
         quest: t,
         withGameTile: false,
-        logotypeClassName: _.partnerBranding,
+        logotypeClassName: b.partnerBranding,
         logotypeStyle: {
           height: w ? 32 : 24,
           maxWidth: w ? 130 : 92,
@@ -70,8 +70,8 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
       })
     });
     return (0, r.jsxs)(i.animated.div, {
-      className: a()(_.wrapper, _.rewardHighlightWrapper, {
-        [_.interactable]: A
+      className: a()(b.wrapper, b.rewardHighlightWrapper, {
+        [b.interactable]: A
       }),
       style: {
         transform: (0, i.to)([n.to({
@@ -80,7 +80,7 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
         })], e => "translateY(".concat(e, "px"))
       },
       children: [(0, r.jsx)(i.animated.div, {
-        className: _.opaqueExpandedBackground,
+        className: b.opaqueExpandedBackground,
         style: {
           opacity: n.to({
             range: [0, 1],
@@ -94,7 +94,7 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
         partnerBranding: R,
         useReducedMotion: y
       }), (0, r.jsxs)(i.animated.div, {
-        className: _.promotedBadgeWrapper,
+        className: b.promotedBadgeWrapper,
         style: {
           opacity: n.to({
             range: [0, 1],
@@ -102,15 +102,15 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
           })
         },
         children: [(0, r.jsxs)(l.P3F, {
-          className: _.promotedBadge,
+          className: b.promotedBadge,
           onClick: P,
           children: [(0, r.jsx)(l.Text, {
             color: "always-white",
             variant: "text-xs/normal",
-            children: b.intl.string(b.t.o6FLcF)
+            children: _.intl.string(_.t.o6FLcF)
           }), (0, r.jsx)(l.idN, {
             color: l.TVs.colors.WHITE,
-            className: _.promotedBadgeIcon
+            className: b.promotedBadgeIcon
           })]
         }), (0, r.jsx)(h.r, {
           onOpen: g,
@@ -141,12 +141,12 @@ let v = (0, Chunk509442.animated)(Chunk685613.ZP),
               }
               return e
             }({}, e), n = n = {
-              className: _.submenuWrapper,
-              "aria-label": b.intl.string(b.t.DEoVWZ),
+              className: b.submenuWrapper,
+              "aria-label": _.intl.string(_.t.DEoVWZ),
               children: (0, r.jsx)(l.xhG, {
                 size: "md",
                 color: "currentColor",
-                className: a()(_.submenuIcon, _.white)
+                className: a()(b.submenuIcon, b.white)
               })
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);

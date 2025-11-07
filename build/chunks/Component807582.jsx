@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 807582, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => m
 }), require("./953529.js");
@@ -25,9 +24,9 @@ let m = e => {
       onClick: x
     } = e,
     j = p.features.has(m),
-    v = (0, o.AR)(p.id, "GuildSettingsBoostPerks"),
-    _ = (0, c._p)(m);
-  return !j && m === d.GuildFeatures.VANITY_URL && v ? null : (j ? (null != _ && (i = u.intl.string(u.t.hUgjyP)), t = (0, r.jsxs)(r.Fragment, {
+    _ = (0, o.AR)(p.id, "GuildSettingsBoostPerks"),
+    v = (0, c._p)(m);
+  return !j && m === d.GuildFeatures.VANITY_URL && _ ? null : (j ? (null != v && (i = u.intl.string(u.t.hUgjyP)), t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Ucv, {
       color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: g.unlockedIcon
@@ -36,14 +35,14 @@ let m = e => {
       className: g.description,
       children: u.intl.string(u.t["0O+87i"])
     })]
-  })) : (null != _ && (i = u.intl.string(u.t.L2wYYj)), t = (0, r.jsxs)(r.Fragment, {
+  })) : (null != v && (i = u.intl.string(u.t.L2wYYj)), t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Ucv, {
       color: "currentColor",
       className: g.icon
     }), (0, r.jsx)(s.Heading, {
       variant: "eyebrow",
       className: g.description,
-      children: null != _ && (0, c.e9)(_)
+      children: null != v && (0, c.e9)(v)
     })]
   })), n = h || null == i ? (0, r.jsx)("div", {
     className: l()(g.availabilityIndicator, f),

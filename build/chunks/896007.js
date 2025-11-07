@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 896007, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   ZP: () => h,
   vE: () => f
@@ -27,13 +26,13 @@ function f(e) {
     canManageRoles: b,
     canManageBans: x,
     canAccessMembersPage: j,
-    canViewGuildAnalytics: v,
-    isOwner: _,
+    canViewGuildAnalytics: _,
+    isOwner: v,
     isGuildAdmin: O,
     canManageGuildExpressions: C
   } = e, y = () => (0, s.X$)({
     guild: c,
-    isOwner: _,
+    isOwner: v,
     canManageGuildRoleSubscriptions: (0, s.H2)(c),
     isMonetizationWaitlistEnabledForGuild: (0, r.mG)(c.id),
     isGuildEligibleForRoleSubscriptions: (0, a.kT)(c.id),
@@ -95,7 +94,7 @@ function f(e) {
     section: m,
     label: u.intl.string(u.t["5tbTdV"])
   }), E.push(g(d.pNK.SAFETY, N)), E.push(g(d.pNK.MODERATION, N)), E.push(g(d.pNK.AUDIT_LOG, N)), E.push(g(d.pNK.BANS, N)), E.push(g(d.pNK.GUILD_AUTOMOD, N)));
-  let S = c.features.has(d.GuildFeatures.COMMUNITY) && v,
+  let S = c.features.has(d.GuildFeatures.COMMUNITY) && _,
     T = y();
   return (f || S || T) && (E.push({
     section: p

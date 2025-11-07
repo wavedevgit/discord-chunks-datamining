@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 516448, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => x
 }), require("./388685.js");
@@ -26,7 +25,7 @@ function x(e) {
   } = e, {
     editStateId: n,
     guildId: x
-  } = (0, s.N)(), [j, v] = o.UE(n), [_, O] = o.R7(n), C = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
+  } = (0, s.N)(), [j, _] = o.UE(n), [v, O] = o.R7(n), C = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
     isFullServerGating: y
   } = (0, c.Z)(x), N = (0, a.mY)();
   return (0, r.jsx)(d.Z, {
@@ -40,15 +39,15 @@ function x(e) {
         description: b.intl.string(b.t.kHalVA),
         children: [(0, r.jsx)(u.Z, {
           channelBenefits: j,
-          intangibleBenefits: _,
+          intangibleBenefits: v,
           subscriptionListings: C,
           onImport: function(e, t) {
-            v(t => t.concat(e)), O(e => e.concat(t))
+            _(t => t.concat(e)), O(e => e.concat(t))
           }
         }), (0, r.jsx)(u.w, {
           guildId: x,
           onImport: function(e) {
-            v(t => {
+            _(t => {
               let n = new Set(t.map(e => {
                 let {
                   ref_id: t

@@ -87,7 +87,7 @@ let T = e => {
     } = e, s = (0, u.aM)(), a = (() => {
       var e;
       let n = null == (e = t.config.ctaConfig) ? true : e.buttonLabel;
-      return null != n ? n : (0, p.pO)(t) || t.config.features.includes(_.S7.NON_GAMING_PLAY_QUEST) ? C.intl.string(C.t.hvVgAZ) : C.intl.string(C.t.lwQdjB)
+      return null != n ? n : (0, p.pO)(t) || t.config.features.includes(b.S7.NON_GAMING_PLAY_QUEST) ? C.intl.string(C.t.hvVgAZ) : C.intl.string(C.t.lwQdjB)
     })();
     return (0, r.jsx)(o.zxk, {
       size: "sm",
@@ -149,7 +149,7 @@ let T = e => {
     } = e, {
       applications: c
     } = s;
-    return (0, r.jsx)(b.Z, {
+    return (0, r.jsx)(_.Z, {
       quest: t,
       sourceQuestContent: n,
       applications: null != c ? c : [],
@@ -170,8 +170,8 @@ let T = e => {
         useReducedMotion: m,
         isExpanded: h,
         className: x,
-        ctaLabel: b,
-        onClick: _,
+        ctaLabel: _,
+        onClick: b,
         questContent: S = g.jn.QUEST_BAR_V2,
         sourceQuestContent: T
       } = e,
@@ -198,12 +198,12 @@ let T = e => {
       }),
       A = s.useCallback(e => {
         var t;
-        null == _ || _(e), (0, p.xN)(u.config) && (null == (t = u.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
+        null == b || b(e), (0, p.xN)(u.config) && (null == (t = u.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
           tab: v.AW.ORBS,
           analyticsLocations: [],
           analyticsSource: l.Z.QUEST_HOME_PAGE
         }) : N()
-      }, [_, u.config, null == (n = u.userStatus) ? true : n.claimedAt, N]),
+      }, [b, u.config, null == (n = u.userStatus) ? true : n.claimedAt, N]),
       {
         shouldUseShinyButton: R
       } = f.Z.useConfig({
@@ -218,11 +218,11 @@ let T = e => {
       buttonShineClassName: y.shine,
       "data-migration-pending": true
     }, w), {
-      children: null != b ? b : C.intl.string(C.t.cfY4PE)
+      children: null != _ ? _ : C.intl.string(C.t.cfY4PE)
     })) : (0, r.jsx)(o.zxk, O(E({
       fullWidth: true,
       onClick: A,
-      text: null != b ? b : C.intl.string(C.t.cfY4PE)
+      text: null != _ ? _ : C.intl.string(C.t.cfY4PE)
     }, w), {
       size: w.size === a.zx.Sizes.MEDIUM ? "md" : "sm"
     }))
@@ -242,34 +242,34 @@ let T = e => {
       popoutTargetElementRef: m,
       onGameSheetOpened: f,
       onGameSheetClosed: h
-    } = e, x = (null == (t = n.userStatus) ? true : t.completedAt) != null, j = (0, p.q8)(n), b = d !== g.LI.SELECT && !l && !c, _ = null;
-    return x ? _ = (0, r.jsx)(A, {
+    } = e, x = (null == (t = n.userStatus) ? true : t.completedAt) != null, j = (0, p.q8)(n), _ = d !== g.LI.SELECT && !l && !c, b = null;
+    return x ? b = (0, r.jsx)(A, {
       quest: n,
       sourceQuestContent: s,
       useReducedMotion: o,
       isExpanded: a
-    }) : j ? _ = (0, r.jsx)(S, {
+    }) : j ? b = (0, r.jsx)(S, {
       quest: n,
       sourceQuestContent: s,
       taskDetails: u
-    }) : (0, p.Rt)(n) ? _ = (0, r.jsx)(P, {
+    }) : (0, p.Rt)(n) ? b = (0, r.jsx)(P, {
       quest: n
-    }) : d === g.LI.CONSOLE && i ? _ = (0, r.jsx)(w, {
+    }) : d === g.LI.CONSOLE && i ? b = (0, r.jsx)(w, {
       quest: n,
       sourceQuestContent: s
-    }) : b && (0, p.Pb)(n) ? _ = (0, r.jsx)(N, {
+    }) : _ && (0, p.Pb)(n) ? b = (0, r.jsx)(N, {
       quest: n,
       sourceQuestContent: s,
       taskDetails: u,
       popoutTargetElementRef: m,
       onGameSheetOpened: f,
       onGameSheetClosed: h
-    }) : b && (_ = (0, r.jsx)(T, {
+    }) : _ && (b = (0, r.jsx)(T, {
       quest: n,
       sourceQuestContent: s
-    })), null == _ ? null : (0, r.jsx)("div", {
+    })), null == b ? null : (0, r.jsx)("div", {
       className: y.cta,
-      children: _
+      children: b
     })
   };
 

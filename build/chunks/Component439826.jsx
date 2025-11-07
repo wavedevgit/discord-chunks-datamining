@@ -46,7 +46,7 @@ function R(e) {
     height: g = 0
   } = (0, u.ZP)([o]), f = (null == (t = n.userStatus) ? true : t.completedAt) != null, h = (0, x.z)(n), {
     type: j,
-    hints: b
+    hints: _
   } = s.useMemo(() => f || h ? {
     type: 2,
     hints: []
@@ -77,11 +77,11 @@ function R(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-xs/medium",
           color: l ? "text-muted" : "always-white",
-          children: b.at(0)
+          children: _.at(0)
         })]
       }), 0 === j && (0, r.jsx)(d.Avr, {
         text: N.intl.string(N.t["yKJi+/"]),
-        onClick: () => (0, _.y)({
+        onClick: () => (0, b.y)({
           quest: n,
           errorHints: o,
           sourceQuestContent: c
@@ -97,7 +97,7 @@ function B(e) {
   var t, n, o, i, u;
   let {
     quest: m,
-    isHovering: _,
+    isHovering: b,
     errorHints: w,
     warningHints: B,
     isVisibleInViewport: k,
@@ -116,7 +116,7 @@ function B(e) {
       questContent: j.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: Q,
       sourceQuestContentCTA: f.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
-    }) : (0, b.R)(T.dr.QUEST_HOME_DESKTOP) ? await (0, y.enrollAndStartVideoQuestWithErrorHandling)(m, {
+    }) : (0, _.R)(T.dr.QUEST_HOME_DESKTOP) ? await (0, y.enrollAndStartVideoQuestWithErrorHandling)(m, {
       questContent: j.jn.QUEST_HOME_DESKTOP,
       questContentCTA: f.jZ.ACCEPT_QUEST,
       sourceQuestContent: Q,
@@ -138,7 +138,7 @@ function B(e) {
       className: A.heroAssetWrapper,
       children: (0, r.jsx)(v.Z, {
         quest: m,
-        isInteracting: _,
+        isInteracting: b,
         hideAssets: !k,
         imageSize: {
           width: 1320,

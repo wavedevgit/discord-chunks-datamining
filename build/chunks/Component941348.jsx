@@ -22,12 +22,12 @@ let p = function(e) {
     onCtxMenuOpened: h,
     onCtxMenuClosed: x,
     onCtxMenuSelection: j,
-    quest: b,
-    useReducedMotion: _,
+    quest: _,
+    useReducedMotion: b,
     collapsedHeight: v,
     onGameSheetOpened: C,
     onGameSheetClosed: y
-  } = e, E = (null == (t = b.userStatus) ? true : t.completedAt) != null, O = s.useRef(null), S = s.useRef(null), T = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, w = (0, o.Rf)(b);
+  } = e, E = (null == (t = _.userStatus) ? true : t.completedAt) != null, O = s.useRef(null), S = s.useRef(null), T = (null == (n = _.userStatus) ? true : n.enrolledAt) != null, w = (0, o.Rf)(_);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: p,
     collapsedContentRef: O,
@@ -38,8 +38,8 @@ let p = function(e) {
       expansionSpring: m,
       isExpanded: g,
       isExpansionAnimationComplete: f,
-      quest: b,
-      useReducedMotion: _,
+      quest: _,
+      useReducedMotion: b,
       taskDetails: w,
       onCtxMenuOpen: h,
       onCtxMenuClose: x,
@@ -57,8 +57,8 @@ let p = function(e) {
       overlayRef: S,
       isExpanded: g,
       isExpansionAnimationComplete: f,
-      quest: b,
-      useReducedMotion: _,
+      quest: _,
+      useReducedMotion: b,
       ref: p,
       taskDetails: w,
       children: (0, r.jsxs)(r.Fragment, {
@@ -66,9 +66,9 @@ let p = function(e) {
           expansionSpring: m,
           isExpanded: g
         }), !T && (0, r.jsx)(a.Z, {
-          quest: b,
+          quest: _,
           expansionSpring: m,
-          useReducedMotion: _,
+          useReducedMotion: b,
           isExpanded: g,
           isExpansionAnimationComplete: f,
           onCtxMenuOpen: h,

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 166805, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   P: () => O
 }), require("./388685.js");
@@ -23,14 +22,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk356086 = require("./356086.js");
 
-function _(e) {
+function v(e) {
   let {
     guildId: t
   } = e, {
     guildProfile: c,
     fetchGuildProfile: m,
-    fetchStatus: _
-  } = (0, g.u)(t), O = _ !== u.a.FETCHED, {
+    fetchStatus: v
+  } = (0, g.u)(t), O = v !== u.a.FETCHED, {
     fetchedEmbed: C,
     embedEnabled: y,
     embedChannelId: N
@@ -63,7 +62,7 @@ function _(e) {
     }), w ? (0, r.jsx)(a.xvT, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      className: v.subtext,
+      className: _.subtext,
       children: j.intl.string(j.t["zCGuJ+"])
     }) : null, y ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(x.m, {
@@ -74,9 +73,9 @@ function _(e) {
         widgetChannelId: N,
         enableLocalUpdate: true
       }), (0, r.jsxs)("div", {
-        className: v.twoColumns,
+        className: _.twoColumns,
         children: [(0, r.jsx)("div", {
-          className: v.column,
+          className: _.column,
           children: (0, r.jsx)(a.gNt, {
             label: j.intl.string(j.t.TRyLUh),
             children: (0, r.jsx)(d.Z, {
@@ -84,7 +83,7 @@ function _(e) {
             })
           })
         }), (0, r.jsx)("div", {
-          className: v.column,
+          className: _.column,
           children: (0, r.jsx)(a.gNt, {
             label: j.intl.string(j.t.VECJcK),
             children: (0, r.jsx)(d.Z, {
@@ -93,11 +92,11 @@ function _(e) {
           })
         })]
       }), (0, r.jsx)("div", {
-        className: v.divider
+        className: _.divider
       }), (0, r.jsxs)("div", {
-        className: v.twoColumns,
+        className: _.twoColumns,
         children: [(0, r.jsx)("div", {
-          className: v.column,
+          className: _.column,
           children: (0, r.jsx)(a.gNt, {
             label: j.intl.string(j.t.XVGbn1),
             description: j.intl.string(j.t["+baN11"]),
@@ -106,7 +105,7 @@ function _(e) {
             })
           })
         }), (0, r.jsx)("img", {
-          className: v.column,
+          className: _.column,
           "data-accessibility": "desaturate",
           alt: "",
           src: n(329488)
@@ -123,7 +122,7 @@ function O(e) {
   return (0, r.jsx)(o.C3N, {
     label: j.intl.string(j.t["qlhNb+"]),
     description: j.intl.string(j.t["dNn/1i"]),
-    children: n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(_, {
+    children: n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(v, {
       guildId: t
     })
   })

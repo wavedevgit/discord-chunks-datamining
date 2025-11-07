@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 927731, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => I
 }), require("./388685.js");
@@ -94,7 +93,7 @@ function E(e) {
       modalKey: N
     }) : S()
   }, [t, T, S, l, A, D]), k = x.Lo(R), G = i.useCallback(() => R.forEach(x.GM), [R]), M = (0, b.mY)(), U = (0, o.e7)([g.Z], () => g.Z.getProps().subsection);
-  return i.useEffect(() => (U === v.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && L(), () => {
+  return i.useEffect(() => (U === _.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && L(), () => {
     (0, u.Mr3)(N)
   }), [U, L]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -126,7 +125,7 @@ function E(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-md/normal",
           color: "interactive-active",
-          children: _.intl.string(_.t.PiFnny)
+          children: v.intl.string(v.t.PiFnny)
         })]
       })]
     }), (0, r.jsx)(c.W, {
@@ -160,8 +159,8 @@ function I(e) {
     maxTiers: a
   } = (0, p.s1)(t), s = l.map(e => e.id);
   return (0, r.jsx)(u.gNt, {
-    label: _.intl.string(_.t["72+Sos"]),
-    description: _.intl.format(_.t.nHRSvM, {
+    label: v.intl.string(v.t["72+Sos"]),
+    description: v.intl.format(v.t.nHRSvM, {
       maxTiers: a
     }),
     children: (0, r.jsx)(E, {

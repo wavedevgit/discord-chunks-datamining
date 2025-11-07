@@ -67,7 +67,7 @@ let u = Chunk647438.createContext({
       unregisterComponent: f,
       expansionSpring: h,
       mountPoints: x
-    } = s.useContext(u), j = s.useRef(null), b = s.useRef(null), _ = s.useRef(true);
+    } = s.useContext(u), j = s.useRef(null), _ = s.useRef(null), b = s.useRef(true);
     s.useEffect(() => {
       m()
     }, [m]), s.useLayoutEffect(() => {
@@ -80,7 +80,7 @@ let u = Chunk647438.createContext({
       let {
         height: t
       } = e;
-      _.current !== t && (m(), _.current = t)
+      b.current !== t && (m(), b.current = t)
     }, [m]);
     (0, i.PM)(j, v);
     let C = null == (n = x.get(c)) ? true : n.current,
@@ -94,7 +94,7 @@ let u = Chunk647438.createContext({
             output: [1, 0]
           })
         },
-        children: l(b)
+        children: l(_)
       }), C), "expanded" === d && (0, o.createPortal)((0, r.jsx)(a.animated.div, {
         style: {
           position: "absolute",
@@ -103,9 +103,9 @@ let u = Chunk647438.createContext({
             output: [0, 1]
           })
         },
-        children: l(b)
+        children: l(_)
       }), C)]
-    }) : "collapsed" === d && (y = (0, o.createPortal)(l(b), C)), (0, r.jsxs)("div", {
+    }) : "collapsed" === d && (y = (0, o.createPortal)(l(_), C)), (0, r.jsxs)("div", {
       style: {
         opacity: +(null == y && "collapsed" === d || null == C)
       },
@@ -150,7 +150,7 @@ let u = Chunk647438.createContext({
         let n = new Map(t);
         return n.delete(e), n
       })
-    }, []), b = s.useCallback(() => {
+    }, []), _ = s.useCallback(() => {
       let e = [];
       for (let t in i) {
         if (null == i[t] || null == n.current || null == o.current) continue;
@@ -187,7 +187,7 @@ let u = Chunk647438.createContext({
         animatedComponents: i,
         expandedContentRef: n,
         collapsedContentRef: o,
-        recalculateAnimationPositions: b,
+        recalculateAnimationPositions: _,
         animatedComponentProps: m,
         expansionSpring: a,
         mountPoints: f

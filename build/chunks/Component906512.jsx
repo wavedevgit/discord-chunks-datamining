@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 906512, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => S
 }), require("./388685.js");
@@ -138,10 +137,10 @@ let N = [{
   S = e => {
     let {
       guild: t
-    } = e, [n, l] = i.useState(0), [a, _] = i.useState(0), [O, C] = i.useState(), S = (0, s.e7)([m.Z], () => m.Z.can(f.Plq.ADMINISTRATOR, t)), T = null == O ? true : O.offsetWidth, P = null == O ? true : O.offsetHeight;
+    } = e, [n, l] = i.useState(0), [a, v] = i.useState(0), [O, C] = i.useState(), S = (0, s.e7)([m.Z], () => m.Z.can(f.Plq.ADMINISTRATOR, t)), T = null == O ? true : O.offsetWidth, P = null == O ? true : O.offsetHeight;
     return i.useEffect(() => {
-      null != T && l(T / 2), null != P && _(P / 2)
-    }, [T, P, l, _]), i.useEffect(() => {
+      null != T && l(T / 2), null != P && v(P / 2)
+    }, [T, P, l, v]), i.useEffect(() => {
       (0, u.Kw)(h.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
     }, []), (0, r.jsxs)("div", {
       className: x.container,
@@ -169,7 +168,7 @@ let N = [{
           width: 256
         }), (0, r.jsx)("img", {
           alt: "",
-          src: v,
+          src: _,
           className: x.sparkles
         })]
       }), (0, r.jsx)(d.Heading, {

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 354103, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   V: () => j
 }), require("./953529.js");
@@ -24,10 +23,10 @@ var Chunk951288 = require("./951288.js"),
 function j(e) {
   let {
     guild: t
-  } = e, n = i.useRef(null), j = (0, o.g1)(t.id, "GuildSettingsBoostPerks"), v = (0, l.e7)([c.Z], () => c.Z.hideInstantInvites);
+  } = e, n = i.useRef(null), j = (0, o.g1)(t.id, "GuildSettingsBoostPerks"), _ = (0, l.e7)([c.Z], () => c.Z.hideInstantInvites);
   (0, u.Z)(n, h.KsC.BOOST_PERKS_VANITY_URL);
   let {
-    vanityURLCode: _,
+    vanityURLCode: v,
     vanityURLUses: O,
     originalVanityURLCode: C,
     errorDetails: y,
@@ -41,7 +40,7 @@ function j(e) {
   })), E = null == t ? true : t.id;
   return (i.useEffect(() => {
     null == E || N || (0, g.U5)(E)
-  }, [N, E]), null == t) ? null : v ? (0, r.jsx)(s.Z, {}) : (0, r.jsxs)("div", {
+  }, [N, E]), null == t) ? null : _ ? (0, r.jsx)(s.Z, {}) : (0, r.jsxs)("div", {
     ref: n,
     children: [(0, r.jsxs)(a.vwX, {
       className: x.title,
@@ -59,7 +58,7 @@ function j(e) {
       })
     }), (0, r.jsx)(f.z, {
       guild: t,
-      vanityURLCode: _,
+      vanityURLCode: v,
       vanityURLUses: O,
       originalVanityURLCode: C,
       errorDetails: y

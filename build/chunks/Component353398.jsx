@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 353398, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Q5: () => T,
   Sf: () => S,
@@ -66,7 +65,7 @@ class I extends(r = Chunk442837.ZP.Store) {
     }), E(this, "setError", e => {
       this.error = e, this.emitChange()
     }), E(this, "save", async () => {
-      await x.Z.updateGuildTemplate(_.Z.getProps().guild.id, this.getTemplate().code, this.name, this.description), this.emitChange()
+      await x.Z.updateGuildTemplate(v.Z.getProps().guild.id, this.getTemplate().code, this.name, this.description), this.emitChange()
     })
   }
 }
@@ -303,7 +302,7 @@ function L(e) {
       children: (0, i.jsx)(h.Z, {
         buttonLook: m.zx.Looks.FILLED,
         buttonColor: m.zx.Colors.BRAND,
-        value: (0, v.Z)(n.code)
+        value: (0, _.Z)(n.code)
       })
     }), n.isDirty && (0, i.jsx)(p.Text, {
       color: "text-feedback-warning",

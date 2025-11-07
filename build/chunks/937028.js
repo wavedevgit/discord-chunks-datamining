@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 937028, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   checklist: "checklist__42e04",
   container: "container__42e04",

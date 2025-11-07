@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 858783, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   label: "label__27da5",
   createLabel: "createLabel__27da5",

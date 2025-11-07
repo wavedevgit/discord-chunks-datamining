@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 463939, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => S
 });
@@ -62,64 +61,64 @@ function N(e) {
     periodEndDate: a
   } = (0, b.j0)(t), s = null != a ? d()(a).add(15, "days").toISOString() : true, o = (0, m.Zo)(s, "MMM D");
   switch (n) {
-    case v.x_.OPEN:
+    case _.x_.OPEN:
       return (0, l.jsxs)(l.Fragment, {
-        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjS, {
+        children: [null != o ? v.intl.formatToPlainString(v.t.I6YOjS, {
           payoutDate: o
-        }) : _.intl.string(_.t.G5ATX6), (0, l.jsx)(f.Z, {
+        }) : v.intl.string(v.t.G5ATX6), (0, l.jsx)(f.Z, {
           className: O.statusScheduledIcon
         })]
       });
-    case v.x_.CANCELED:
+    case _.x_.CANCELED:
       return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t["0SrNPx"]), (0, l.jsx)(g.k$p, {
+        children: [v.intl.string(v.t["0SrNPx"]), (0, l.jsx)(g.k$p, {
           size: "md",
           color: "currentColor",
           className: O.statusErrorIcon
         })]
       });
-    case v.x_.PAYOUT_DEFERRED:
-      if ((null == i ? true : i.includes(v.XL.PAYOUT_SEIZED)) === true) return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t["0SrNPx"]), (0, l.jsx)(g.k$p, {
+    case _.x_.PAYOUT_DEFERRED:
+      if ((null == i ? true : i.includes(_.XL.PAYOUT_SEIZED)) === true) return (0, l.jsxs)(l.Fragment, {
+        children: [v.intl.string(v.t["0SrNPx"]), (0, l.jsx)(g.k$p, {
           size: "md",
           color: "currentColor",
           className: O.statusErrorIcon
         })]
       });
       return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t.OtZ5kz), (0, l.jsx)(h.Z, {
+        children: [v.intl.string(v.t.OtZ5kz), (0, l.jsx)(h.Z, {
           className: O.statusDeferredIcon
         })]
       })
   }
   switch (r) {
-    case v.jw.MANUAL:
-    case v.jw.OPEN:
-    case v.jw.PENDING:
-    case v.jw.PROCESSING:
-    case v.jw.SUBMITTED:
-    case v.jw.PENDING_FUNDS:
-    case v.jw.CANCELED:
-    case v.jw.ERROR:
+    case _.jw.MANUAL:
+    case _.jw.OPEN:
+    case _.jw.PENDING:
+    case _.jw.PROCESSING:
+    case _.jw.SUBMITTED:
+    case _.jw.PENDING_FUNDS:
+    case _.jw.CANCELED:
+    case _.jw.ERROR:
       return (0, l.jsxs)(l.Fragment, {
-        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjS, {
+        children: [null != o ? v.intl.formatToPlainString(v.t.I6YOjS, {
           payoutDate: o
-        }) : _.intl.string(_.t.ubdQTt), (0, l.jsx)(f.Z, {
+        }) : v.intl.string(v.t.ubdQTt), (0, l.jsx)(f.Z, {
           className: O.statusScheduledIcon
         })]
       });
-    case v.jw.PAID:
+    case _.jw.PAID:
       return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t.eoSslJ), (0, l.jsx)(g.owK, {
+        children: [v.intl.string(v.t.eoSslJ), (0, l.jsx)(g.owK, {
           size: "md",
           color: "currentColor",
           className: O.statusPaidIcon
         })]
       });
-    case v.jw.DEFERRED:
-    case v.jw.DEFERRED_INTERNAL:
-    case v.jw.REJECTED:
-    case v.jw.RISK_REVIEW:
+    case _.jw.DEFERRED:
+    case _.jw.DEFERRED_INTERNAL:
+    case _.jw.REJECTED:
+    case _.jw.RISK_REVIEW:
       return (0, l.jsxs)(l.Fragment, {
         children: [p.Z.getStatusErrorText(r), (0, l.jsx)(g.k$p, {
           size: "md",

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 29605, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   FT: () => Q,
   L3: () => J,
@@ -82,7 +81,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
       id: s.id,
       animated: s.animated,
       size: 32
-    }), [v] = (0, h.q_F)(() => ({
+    }), [_] = (0, h.q_F)(() => ({
       from: {
         scale: 2
       },
@@ -94,7 +93,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
         tension: 1500,
         friction: 115
       }
-    }), d ? "respect-motion-settings" : "animate-never"), [_] = (0, h.q_F)(() => ({
+    }), d ? "respect-motion-settings" : "animate-never"), [v] = (0, h.q_F)(() => ({
       from: {
         opacity: 0
       },
@@ -107,17 +106,17 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
       }
     }), d ? "respect-motion-settings" : "animate-never"), O = k.ZP.useUserTag(s.user);
     return (0, r.jsxs)("div", {
-      className: a()(W.emojiRow, V.card),
+      className: a()(z.emojiRow, V.card),
       role: "row",
       children: [(0, r.jsx)("div", {
-        className: W.emojiColumn,
+        className: z.emojiColumn,
         children: (0, r.jsx)(p.u, {
-          text: s.available ? null : z.intl.string(z.t.KUzI73),
+          text: s.available ? null : W.intl.string(W.t.KUzI73),
           children: (0, r.jsx)(u.animated.div, {
-            className: a()(W.emojiImage, {
-              [W.emojiDisabled]: !s.available
+            className: a()(z.emojiImage, {
+              [z.emojiDisabled]: !s.available
             }),
-            style: (t = K({}, d ? v : {}, d ? _ : {}), n = n = {
+            style: (t = K({}, d ? _ : {}, d ? v : {}), n = n = {
               backgroundImage: "url(".concat(f, ")")
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
@@ -132,17 +131,17 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
           })
         })
       }), (0, r.jsx)("div", {
-        className: W.column,
+        className: z.column,
         children: (0, r.jsx)("div", {
-          className: W.emojiAliasInputContainer,
+          className: z.emojiAliasInputContainer,
           children: (0, r.jsx)(j.Z, {
             className: a()({
-              [W.emojiAliasInputDisabled]: c
+              [z.emojiAliasInputDisabled]: c
             }),
             disabled: c,
             minLen: 1,
             maxLen: H.Yc,
-            name: z.intl.string(z.t.qUpzYO),
+            name: W.intl.string(W.t.qUpzYO),
             autoComplete: "off",
             value: null != g ? g : "",
             onBlur: () => {
@@ -160,7 +159,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
           })
         })
       }), (0, r.jsx)("div", {
-        className: W.column,
+        className: z.column,
         children: (0, r.jsx)(C.Z, {
           avatar: (0, r.jsx)(h.qEK, {
             src: s.user.getAvatarURL(l, 20),
@@ -173,20 +172,20 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
           })
         })
       }), !c && (0, r.jsxs)("div", {
-        className: W.emojiRowTools,
+        className: z.emojiRowTools,
         children: [null == o ? null : (0, r.jsx)(p.u, {
-          text: z.intl.string(z.t.FOYn8U),
-          "aria-label": z.intl.string(z.t.FOYn8U),
+          text: W.intl.string(W.t.FOYn8U),
+          "aria-label": W.intl.string(W.t.FOYn8U),
           children: (0, r.jsx)(h.hU, {
             size: "sm",
             variant: "secondary",
             icon: h.vdY,
             onClick: () => o(s, l),
-            "aria-label": z.intl.string(z.t.FOYn8U)
+            "aria-label": W.intl.string(W.t.FOYn8U)
           })
         }), (0, r.jsx)(p.u, {
-          text: z.intl.string(z.t["+euLPe"]),
-          "aria-label": z.intl.string(z.t["+euLPe"]),
+          text: W.intl.string(W.t["+euLPe"]),
+          "aria-label": W.intl.string(W.t["+euLPe"]),
           children: (0, r.jsx)(h.hU, {
             size: "sm",
             variant: "critical-secondary",
@@ -197,12 +196,12 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
                   status: t
                 } = e;
                 429 === t && b.Z.show({
-                  title: z.intl.string(z.t.iufib1),
-                  body: z.intl.string(z.t.Whhv4w)
+                  title: W.intl.string(W.t.iufib1),
+                  body: W.intl.string(W.t.Whhv4w)
                 })
               })
             },
-            "aria-label": z.intl.string(z.t["+euLPe"])
+            "aria-label": W.intl.string(W.t["+euLPe"])
           })
         })]
       })]
@@ -219,23 +218,23 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
       newlyAddedEmojiIds: c
     } = e;
     return t ? (0, r.jsx)(h.$jN, {
-      className: W.spinner,
+      className: z.spinner,
       type: h.$jN.Type.SPINNING_CIRCLE
     }) : 0 === i.length && 0 === l.length ? (0, r.jsxs)(h.ubH, {
       theme: a,
-      className: W.empty,
+      className: z.empty,
       children: [(0, r.jsx)(h.oxh, {
         darkSrc: n(458601),
         lightSrc: n(673557),
         width: 272,
         height: 212
       }), (0, r.jsx)(h.OZU, {
-        note: z.intl.string(z.t.RBbtMy),
-        children: z.intl.string(z.t.lxsmBd)
+        note: W.intl.string(W.t.RBbtMy),
+        children: W.intl.string(W.t.lxsmBd)
       })]
     }) : (0, r.jsxs)("div", {
       children: [(0, r.jsx)(J, {
-        title: z.intl.string(z.t.sMOuuS),
+        title: W.intl.string(W.t.sMOuuS),
         maxSlots: (0, L.y4)(s),
         emojiCount: i.length,
         children: (0, r.jsx)(Q, {
@@ -245,7 +244,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
           newlyAddedEmojiIds: c
         })
       }), (0, r.jsx)(J, {
-        title: z.intl.string(z.t.wWjQye),
+        title: W.intl.string(W.t.wWjQye),
         maxSlots: (0, L.y4)(s),
         emojiCount: l.length,
         children: (0, r.jsx)(Q, {
@@ -266,7 +265,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
     } = e, a = Math.max(n - i, 0);
     return (0, r.jsx)(h.C3N, {
       label: t,
-      description: z.intl.format(z.t.sgL8sI, {
+      description: W.intl.format(W.t.sgL8sI, {
         count: a
       }),
       children: l
@@ -285,40 +284,40 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
     return 0 === t.length ? (0, r.jsx)(h.ubH, {
       theme: d,
       children: (0, r.jsx)(h.OZU, {
-        children: z.intl.string(z.t.SpxYoT)
+        children: W.intl.string(W.t.SpxYoT)
       })
     }) : (0, r.jsxs)("div", {
       role: "table",
-      "aria-label": z.intl.string(z.t.sMOuuS),
-      className: W.table,
+      "aria-label": W.intl.string(W.t.sMOuuS),
+      className: z.table,
       children: [(0, r.jsxs)("div", {
         role: "rowgroup",
-        className: W.tableHeader,
+        className: z.tableHeader,
         children: [(0, r.jsx)("div", {
           role: "columnheader",
-          className: W.emojiColumn,
+          className: z.emojiColumn,
           children: (0, r.jsx)(h.Text, {
             variant: "text-sm/semibold",
-            children: z.intl.string(z.t.Z0i3Gp)
+            children: W.intl.string(W.t.Z0i3Gp)
           })
         }), (0, r.jsx)("div", {
           role: "columnheader",
-          className: W.columnLabel,
+          className: z.columnLabel,
           children: (0, r.jsx)(h.Text, {
             variant: "text-sm/semibold",
-            children: z.intl.string(z.t.giajw6)
+            children: W.intl.string(W.t.giajw6)
           })
         }), (0, r.jsx)("div", {
           role: "columnheader",
-          className: W.columnLabel,
+          className: z.columnLabel,
           children: (0, r.jsx)(h.Text, {
             variant: "text-sm/semibold",
-            children: z.intl.string(z.t.edavpq)
+            children: W.intl.string(W.t.edavpq)
           })
         })]
       }), (0, r.jsx)("div", {
         role: "rowgroup",
-        className: W.tableBody,
+        className: z.tableBody,
         children: o.map(e => {
           var t;
           return (0, r.jsx)(q, {
@@ -342,11 +341,11 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
       c = Math.min(o - l, o - a),
       d = s.premiumTier,
       u = (0, L.FZ)(d);
-    return null == u || d === F.Eu4.TIER_3 || c > 0 ? null : (c > o ? (t = z.intl.formatToPlainString(z.t.j0UH0m, {
+    return null == u || d === F.Eu4.TIER_3 || c > 0 ? null : (c > o ? (t = W.intl.formatToPlainString(W.t.j0UH0m, {
       level: u
-    }), n = z.intl.formatToPlainString(z.t.VQeyK6, {
+    }), n = W.intl.formatToPlainString(W.t.VQeyK6, {
       level: u
-    }), i = F.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = z.intl.string(z.t.zT9SxY), n = z.intl.formatToPlainString(z.t.dBZ1RU, {
+    }), i = F.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = W.intl.string(W.t.zT9SxY), n = W.intl.formatToPlainString(W.t.dBZ1RU, {
       level: u
     }), i = F.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(T.Z, {
       header: t,

@@ -1,9 +1,8 @@
 /** Chunk was on 64982 **/
 /** chunk id: 478777, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => j,
-  u: () => v
+  u: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,13 +42,13 @@ function x(e) {
 function j(e) {
   let {
     saveOnClose: t
-  } = e, a = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([g.Z], () => g.Z.getEditedConnections()), v = (0, l.e7)([g.Z], () => g.Z.isSubmitting()), _ = i.useRef(a);
+  } = e, a = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([g.Z], () => g.Z.getEditedConnections()), _ = (0, l.e7)([g.Z], () => g.Z.isSubmitting()), v = i.useRef(a);
   i.useEffect(() => {
-    _.current = a
+    v.current = a
   }, [a]), i.useEffect(() => {
     let {
       current: e
-    } = _;
+    } = v;
     return () => {
       t && null != e && (0, u.ss)(e)
     }
@@ -137,7 +136,7 @@ function j(e) {
       }), (0, r.jsxs)("button", {
         className: b.addConnectionButton,
         onClick: O,
-        disabled: !T || v,
+        disabled: !T || _,
         type: "button",
         children: [(0, r.jsx)(s.oFk, {
           size: "custom",
@@ -160,7 +159,7 @@ function j(e) {
   })
 }
 
-function v() {
+function _() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildId()),
     t = (0, Chunk442837.e7)([Chunk926958.Z], () => Chunk926958.Z.isSubmitting()),
     n = (0, Chunk442837.e7)([Chunk926958.Z], () => Chunk926958.Z.getErrors());

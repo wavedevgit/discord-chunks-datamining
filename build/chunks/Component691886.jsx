@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 691886, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => y
 }), require("./539854.js"), require("./388685.js");
@@ -25,7 +24,7 @@ function j(e) {
   return String(e)
 }
 
-function v(e) {
+function _(e) {
   let {
     icon: t,
     title: n,
@@ -51,8 +50,8 @@ function v(e) {
   })
 }
 
-function _() {
-  return (0, Chunk951288.jsx)(v, {
+function v() {
+  return (0, Chunk951288.jsx)(_, {
     icon: (0, Chunk951288.jsx)(Chunk481060.qJs, {
       size: "md",
       color: "currentColor",
@@ -72,7 +71,7 @@ function O(e) {
   let a = (0, d.KS)(i),
     s = (0, c.F6)(i, p.default, m.Z),
     o = null != l ? (0, c.F6)(l, p.default, m.Z) : true;
-  return (0, r.jsx)(v, {
+  return (0, r.jsx)(_, {
     icon: null != a && (0, r.jsx)(a, {
       className: x.labelIcon
     }),
@@ -87,7 +86,7 @@ function C(e) {
   } = e;
   return null != t ? (0, r.jsx)(O, {
     channelId: t
-  }) : (0, r.jsx)(_, {})
+  }) : (0, r.jsx)(v, {})
 }
 
 function y(e) {
@@ -97,8 +96,8 @@ function y(e) {
     value: a,
     initialChannelId: d,
     omitChannelIds: x,
-    "aria-labelledby": v,
-    onChange: _
+    "aria-labelledby": _,
+    onChange: v
   } = e, O = b.intl.string(b.t.d7YJMK), y = (0, s.e7)([g.Z], () => g.Z.getCategories(l), [l]), N = (0, f.m7)(null != a ? a : h.lds), E = i.useMemo(() => {
     let e = [{
         value: null,
@@ -148,7 +147,7 @@ function y(e) {
             return e
           }({}, t), i = i = {
             guildId: l,
-            onSubmit: _
+            onSubmit: v
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -160,7 +159,7 @@ function y(e) {
             Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
           }), n))
         }
-      }) : _(e)
+      }) : v(e)
     },
     isSelected: e => null != a && j(e) === j(a),
     serialize: j,
@@ -169,6 +168,6 @@ function y(e) {
       let [t] = e;
       return C(t)
     },
-    "aria-labelledby": v
+    "aria-labelledby": _
   })
 }

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 601374, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   triggerContainer: "triggerContainer_b6c6eb",
   triggerMainContainer: "triggerMainContainer_b6c6eb",

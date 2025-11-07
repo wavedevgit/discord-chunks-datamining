@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 464610, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => b
 }), require("./472816.js"), require("./794429.js");
@@ -80,10 +79,10 @@ function b(e) {
         numRules: t
       }
     }, [d, b]),
-    v = (0, m.Q)(t),
-    _ = v[u.u.CAPTCHA_AND_RAID_PROTECTION],
-    O = v[u.u.DM_AND_SPAM_PROTECTION],
-    C = v[u.u.PERMISSIONS],
+    _ = (0, m.Q)(t),
+    v = _[u.u.CAPTCHA_AND_RAID_PROTECTION],
+    O = _[u.u.DM_AND_SPAM_PROTECTION],
+    C = _[u.u.PERMISSIONS],
     y = (0, o.pr)(t.id);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Heading, {
@@ -99,8 +98,8 @@ function b(e) {
         icon: n(14215),
         title: p.intl.string(p.t["53eF5o"]),
         subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {
-          enabled: _.filter(e => e.enabled).length,
-          total: _.length
+          enabled: v.filter(e => e.enabled).length,
+          total: v.length
         }),
         page: u.u.CAPTCHA_AND_RAID_PROTECTION
       }), (0, r.jsx)("div", {

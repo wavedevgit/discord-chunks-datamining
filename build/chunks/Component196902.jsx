@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 196902, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => x
 });
@@ -26,8 +25,8 @@ let x = function(e) {
     tag: i,
     badge: x,
     primaryColor: j,
-    secondaryColor: v,
-    isDisabled: _ = false
+    secondaryColor: _,
+    isDisabled: v = false
   } = e, O = (0, a.e7)([m.Z], () => m.Z.getProps().originalProfile), C = null != O && O.tag !== i;
 
   function y(e) {
@@ -55,9 +54,9 @@ let x = function(e) {
               width: 40,
               height: 40,
               primaryTintColor: j,
-              secondaryTintColor: v
+              secondaryTintColor: _
             }),
-            disabled: _,
+            disabled: v,
             value: null != i ? i : "",
             onChange: y
           })

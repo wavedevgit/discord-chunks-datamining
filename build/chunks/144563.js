@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 144563, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   scroller: "scroller_d80a13",
   headerHeading: "headerHeading_d80a13",

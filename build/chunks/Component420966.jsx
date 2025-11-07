@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 420966, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   V: () => f,
   Z: () => h
@@ -39,10 +38,10 @@ function h(e) {
   }, [b]), j = (0, l.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[f.id]
-  }, [f.id, t.id]), v = (0, c.fI)(f), _ = (0, u.Z)(t.id, f);
+  }, [f.id, t.id]), _ = (0, c.fI)(f), v = (0, u.Z)(t.id, f);
   i.useEffect(() => {
-    v && b(g.ZI.PERMISSIONS)
-  }, [v, b]);
+    _ && b(g.ZI.PERMISSIONS)
+  }, [_, b]);
   let O = (0, o.e)(t, f);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -102,9 +101,9 @@ function h(e) {
           color: "currentColor"
         })
       }) : null]
-    }), null != _ ? (0, r.jsx)(a.Wn, {
+    }), null != v ? (0, r.jsx)(a.Wn, {
       messageType: a.QYI.WARNING,
-      children: _
+      children: v
     }) : null, (0, r.jsxs)(a.njP, {
       className: p.tabBar,
       "aria-label": m.intl.string(m.t["+1H47t"]),
@@ -115,7 +114,7 @@ function h(e) {
       children: [(0, r.jsx)(a.njP.Item, {
         className: p.tabBarItem,
         id: g.ZI.DISPLAY,
-        disabled: v,
+        disabled: _,
         children: m.intl.string(m.t.hmdomw)
       }), (0, r.jsx)(a.njP.Item, {
         className: p.tabBarItem,
@@ -124,13 +123,13 @@ function h(e) {
       }), (0, r.jsx)(a.njP.Item, {
         className: p.tabBarItem,
         id: g.ZI.VERIFICATIONS,
-        disabled: v,
+        disabled: _,
         children: m.intl.string(m.t["5//Muu"])
       }), (0, r.jsx)(a.njP.Item, {
         className: p.tabBarItem,
         id: g.ZI.MEMBERS,
-        disabled: v,
-        children: v ? m.intl.string(m.t["kg//+7"]) : m.intl.formatToPlainString(m.t.bHnZWW, {
+        disabled: _,
+        children: _ ? m.intl.string(m.t["kg//+7"]) : m.intl.formatToPlainString(m.t.bHnZWW, {
           numMembers: String(j)
         })
       })]

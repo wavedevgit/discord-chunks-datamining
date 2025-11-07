@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 263155, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => U
 }), require("./388685.js"), require("./953529.js"), require("./781311.js"), require("./539854.js");
@@ -77,8 +76,8 @@ let G = "WELCOME_CHANNEL",
         welcomeChannel: o,
         onEdit: f,
         onChannelReorder: h,
-        isDropHovered: v,
-        index: _
+        isDropHovered: _,
+        index: v
       } = e,
       O = i.useRef(null),
       C = (0, u.e7)([N.Z], () => N.Z.getChannel(o.channel_id)),
@@ -105,7 +104,7 @@ let G = "WELCOME_CHANNEL",
         type: G,
         item: {
           channel: o,
-          index: _
+          index: v
         },
         end: (e, t) => {
           null == e || t.didDrop() || h(e.channel, null, true)
@@ -114,10 +113,10 @@ let G = "WELCOME_CHANNEL",
       [, U] = (0, d.L)({
         accept: G,
         hover: e => {
-          h(e.channel, _, false)
+          h(e.channel, v, false)
         },
         drop: e => {
-          h(e.channel, _, true)
+          h(e.channel, v, true)
         }
       });
     return i.useLayoutEffect(() => (M(U(O)), () => {
@@ -136,7 +135,7 @@ let G = "WELCOME_CHANNEL",
       className: A.warningIcon
     }), (0, r.jsxs)("div", {
       className: a()(A.welcomeChannel, {
-        [A.dragging]: v
+        [A.dragging]: _
       }),
       ref: O,
       "data-dnd-name": o.description,
@@ -150,7 +149,7 @@ let G = "WELCOME_CHANNEL",
             welcomeChannel: o,
             onChannelReorder: h,
             onShowDeleteModal: R,
-            index: _
+            index: v
           }))
         })
       },
@@ -271,8 +270,8 @@ let G = "WELCOME_CHANNEL",
         className: A.previewContainer,
         children: [(0, r.jsxs)("div", {
           className: A.welcomeHeader,
-          children: [(0, r.jsx)(v.Z, {
-            size: v.Z.Sizes.LARGER,
+          children: [(0, r.jsx)(_.Z, {
+            size: _.Z.Sizes.LARGER,
             className: A.icon,
             guild: t,
             animate: true,
@@ -283,7 +282,7 @@ let G = "WELCOME_CHANNEL",
             children: D.intl.format(D.t["0aydCN"], {
               guildName: t.name,
               guildNameHook: (e, n) => (0, r.jsxs)("span", {
-                children: [(0, r.jsx)(_.Z, {
+                children: [(0, r.jsx)(v.Z, {
                   guild: t,
                   className: A.headerGuildBadge,
                   flowerStarClassName: A.flowerStar

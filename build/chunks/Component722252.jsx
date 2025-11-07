@@ -1,7 +1,7 @@
 /** Chunk was on 86736 **/
 /** chunk id: 722252, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 }), require("./415506.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,10 +10,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk208884 = require("./208884.js"),
   Chunk453628 = require("./453628.jsx"),
   Chunk996987 = require("./996987.jsx"),
-  Chunk231338 = require("./231338.js"),
-  Chunk388032 = require("./388032.jsx"),
   Chunk55667 = require("./55667.js");
-class m extends Chunk647438.PureComponent {
+class u extends Chunk647438.PureComponent {
   getOverwriteValue(e) {
     let {
       allow: t,
@@ -60,7 +58,7 @@ class m extends Chunk647438.PureComponent {
           children: (0, i.jsx)(a.t6m, {
             size: "sm",
             color: "currentColor",
-            className: p.icon
+            className: d.icon
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -82,33 +80,34 @@ class m extends Chunk647438.PureComponent {
       flag: l
     } = e, {
       permissions: s,
-      locked: p,
-      permissionRender: m
-    } = this.props, b = null == m ? true : m(l), g = !!(p || b), f = "string" == typeof b && "" !== b ? a.t6m : true, h = null == s ? (0, i.jsx)(c.Z, {
+      locked: d,
+      permissionRender: u,
+      hasBypassSlowmodePermission: p
+    } = this.props, m = null == u ? true : u(l), b = !!(d || m), g = "string" == typeof m && "" !== m ? a.t6m : true, f = null == s ? (0, i.jsx)(c.Z, {
       label: n,
       description: (0, o._u)(r),
-      icon: f,
-      disabled: g,
+      icon: g,
+      disabled: b,
       value: this.getOverwriteValue(l),
       onChange: e => this.handleChange(l, e)
     }, String(l)) : (0, i.jsx)(a.rsf, {
       label: n,
       description: (0, o._u)(r),
-      icon: f,
-      disabled: g,
+      icon: g,
+      disabled: b,
       checked: this.getPermissionValue(l, s),
       onChange: e => this.handleChange(l, e)
-    }, String(l));
+    }, String(l)), h = (0, o.ih)(l, p);
     return (0, i.jsxs)(i.Fragment, {
       children: [t > 0 && (0, i.jsx)(a.izJ, {}), (0, i.jsxs)(a.Kqy, {
         gap: 8,
-        children: [h, l === d.Pl.MANAGE_MESSAGES ? (0, i.jsx)(a.Wn, {
-          messageType: a.QYI.WARNING,
-          children: u.intl.string(u.t["2XIdPp"])
-        }) : null, "string" == typeof b && "" !== b && (0, i.jsx)(a.Text, {
+        children: [f, null != h && (0, i.jsx)(a.M14, {
+          type: "warning",
+          children: h
+        }), "string" == typeof m && "" !== m && (0, i.jsx)(a.Text, {
           variant: "text-xs/medium",
           color: "text-feedback-critical",
-          children: b
+          children: m
         })]
       })]
     })
@@ -129,4 +128,4 @@ class m extends Chunk647438.PureComponent {
     })
   }
 }
-let b = m
+let p = u

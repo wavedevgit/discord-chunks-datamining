@@ -115,7 +115,7 @@ function c(e) {
       status: i(s({}, d.status), {
         label1: (null == (e = d.status) ? true : e.label1) && !f,
         label2: (null == (t = d.status) ? true : t.label2) && !f,
-        shineWipe: (null == (n = d.status) ? true : n.shineWipe) || f
+        shineWipe: null == (n = d.status) ? true : n.shineWipe
       })
     }) : {
       enabled: false,

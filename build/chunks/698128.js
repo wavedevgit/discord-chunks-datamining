@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 698128, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   table: "table__16462",
   tableContainer: "tableContainer__16462",

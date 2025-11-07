@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 507317, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => j
 });
@@ -23,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
 let j = function(e) {
   let {
     guild: t
-  } = e, j = t.features.has(m.GuildFeatures.BANNER), v = i.useCallback((e, i) => {
+  } = e, j = t.features.has(m.GuildFeatures.BANNER), _ = i.useCallback((e, i) => {
     if (null == e || true === i) return void g.Z.saveGuild(t.id, {
       homeHeader: null
     });
@@ -62,7 +61,7 @@ let j = function(e) {
         uploadType: f.pC.HOME_HEADER
       }, n))
     })
-  }, [t.id]), _ = i.useCallback(e => {
+  }, [t.id]), v = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, a.yw)(m.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: {
         section: m.jXE.GUILD_SETTINGS_ONBOARDING,
@@ -87,7 +86,7 @@ let j = function(e) {
       homeHeader: e
     }) : null,
     disabled: !j,
-    onChange: v,
+    onChange: _,
     hint: b.intl.string(b.t.NyXznh),
     enabled: j,
     maxFileSizeBytes: h.B
@@ -103,7 +102,7 @@ let j = function(e) {
         className: x.boostIndicator,
         guild: t,
         guildFeature: m.GuildFeatures.BANNER,
-        onClick: _
+        onClick: v
       })]
     }), (0, r.jsxs)("div", {
       className: x.section,
@@ -116,7 +115,7 @@ let j = function(e) {
         }), (0, r.jsx)("div", {
           className: x.uploadButton,
           children: (0, r.jsx)(d.Z, {
-            onChange: v,
+            onChange: _,
             maxFileSizeBytes: h.B,
             text: b.intl.string(b.t.yG2pUi),
             size: "md",
@@ -138,7 +137,7 @@ let j = function(e) {
         className: x.boostIndicator,
         guild: t,
         guildFeature: m.GuildFeatures.BANNER,
-        onClick: _
+        onClick: v
       })]
     }), (0, r.jsxs)("div", {
       className: x.section,
@@ -153,13 +152,13 @@ let j = function(e) {
           variant: "expressive",
           icon: l.Ucv,
           text: b.intl.string(b.t["+7XY31"]),
-          onClick: _
+          onClick: v
         })]
       }), (0, r.jsx)("div", {
         children: (0, r.jsx)(l.P3F, {
           "aria-hidden": true,
           tabIndex: false,
-          onClick: _,
+          onClick: v,
           children: O
         })
       })]

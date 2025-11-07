@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 257466, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   container: "container__99486",
   preview: "preview__99486",

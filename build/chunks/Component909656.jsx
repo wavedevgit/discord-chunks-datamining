@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 909656, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => S
 }), require("./388685.js"), require("./953529.js");
@@ -48,9 +47,9 @@ function S(e) {
     imageCTA: B,
     imageAriaLabel: F,
     setFilename: H
-  } = (0, _.Z)(null == u ? true : u.cover_image_asset), z = (0, p.Dt)();
+  } = (0, v.Z)(null == u ? true : u.cover_image_asset), W = (0, p.Dt)();
 
-  function W(e, t) {
+  function z(e, t) {
     a()(null != e, "Null value not allowed"), null != t && H(t.name), R(e)
   }
   let V = i.useMemo(() => {
@@ -62,7 +61,7 @@ function S(e) {
     var e;
     (null == u || null == (e = u.cover_image_asset) ? true : e.application_id) != null && R((0, b._W)(u.cover_image_asset.application_id, u.cover_image_asset, I))
   }, [null == u ? true : u.cover_image_asset]);
-  let Y = (0, v.mY)(),
+  let Y = (0, _.mY)(),
     q = i.useMemo(() => y.kL.map(e => ({
       label: (0, y.eJ)(e),
       value: e
@@ -150,7 +149,7 @@ function S(e) {
       value: P,
       autosize: true,
       onChange: w,
-      "aria-labelledby": z,
+      "aria-labelledby": W,
       disabled: Y
     }), (0, r.jsx)(m.izJ, {
       className: E.divider
@@ -167,11 +166,11 @@ function S(e) {
         iconWrapperClassName: E.coverImageUploaderIconWrapper,
         imageClassName: E.coverImageUploaderInner,
         iconClassName: E.coverImageUploaderIcon,
-        onChange: W,
+        onChange: z,
         "aria-label": F,
         disabled: Y
       }), (0, r.jsx)(f.Z, {
-        onChange: W,
+        onChange: z,
         "aria-label": F,
         disabled: Y,
         text: B,

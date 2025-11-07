@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 769998, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => h
 });
@@ -27,13 +26,13 @@ function h(e) {
     guildId: b,
     toggled: x,
     onToggleAction: j
-  } = e, v = e => () => j(e), _ = (0, d.c)(n.type, n, h), O = null == (t = n.metadata) ? true : t.durationSeconds, C = null != O ? (0, m.getFriendlyDurationString)(O) : null, y = (0, i.e7)([c.Z, o.Z], () => c.Z.can(g.Plq.MODERATE_MEMBERS, o.Z.getGuild(b)), [b]);
-  if (null == _) return null;
+  } = e, _ = e => () => j(e), v = (0, d.c)(n.type, n, h), O = null == (t = n.metadata) ? true : t.durationSeconds, C = null != O ? (0, m.getFriendlyDurationString)(O) : null, y = (0, i.e7)([c.Z, o.Z], () => c.Z.can(g.Plq.MODERATE_MEMBERS, o.Z.getGuild(b)), [b]);
+  if (null == v) return null;
   let {
     headerText: N,
     descriptionText: E,
     icon: I
-  } = _;
+  } = v;
   return (0, r.jsxs)("div", {
     className: f.actionContainer,
     children: [(0, r.jsx)("div", {
@@ -60,7 +59,7 @@ function h(e) {
         }) : p.intl.format(p.t.mvHxze, {
           friendlyDurationString: C
         }), y && (0, r.jsx)(s.P3F, {
-          onClick: v(true),
+          onClick: _(true),
           className: f.editChannel,
           tag: "span",
           role: "link",
@@ -75,7 +74,7 @@ function h(e) {
         children: (0, r.jsx)(a.$q, {
           type: a.M0.INVERTED,
           value: x,
-          onChange: v(false),
+          onChange: _(false),
           disabled: !y,
           className: f.__invalid_actionCheckbox
         })

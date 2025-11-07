@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 469351, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   t: () => w
 }), require("./388685.js"), require("./314940.js");
@@ -39,7 +38,7 @@ function w(e) {
     hasValidApplication: n
   } = e, {
     listingsLoaded: w
-  } = (0, C.eD)(t), Z = (0, a.e7)([v.Z], () => v.Z.getGuild(t)), R = (0, a.e7)([_.default], () => _.default.getCurrentUser()), D = null != Z && (0, x.eM)(Z, R), {
+  } = (0, C.eD)(t), Z = (0, a.e7)([_.Z], () => _.Z.getGuild(t)), R = (0, a.e7)([v.default], () => v.default.getCurrentUser()), D = null != Z && (0, x.eM)(Z, R), {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
   (0, g.P)(Z);

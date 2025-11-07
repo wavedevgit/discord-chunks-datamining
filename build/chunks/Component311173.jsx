@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 311173, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => b
 }), require("./388685.js"), require("./953529.js");
@@ -53,8 +52,8 @@ function b(e) {
     valueError: b,
     errors: x,
     validatePatternsChanged: j,
-    validateEditingValueChanged: v
-  } = (0, d.Z)(l, s), [_] = i.useState(() => ({
+    validateEditingValueChanged: _
+  } = (0, d.Z)(l, s), [v] = i.useState(() => ({
     tags: g,
     value: "",
     selections: [],
@@ -76,13 +75,13 @@ function b(e) {
   }, {}), [x, g]), C = i.useCallback(e => {
     j(e, g)
   }, [j, g]), y = i.useCallback(e => {
-    v(e)
-  }, [v]);
+    _(e)
+  }, [_]);
   return (0, r.jsxs)("div", {
     className: a()(p.keywordsContainer, o),
     children: [(0, r.jsx)(c.Z, {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
-      initialValue: _,
+      initialValue: v,
       onChangeTags: C,
       onChangeNewTagValue: y,
       tagErrors: O,

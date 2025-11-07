@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 716130, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => O
 }), require("./388685.js");
@@ -40,7 +39,7 @@ function j(e) {
   return e
 }
 
-function v(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +52,7 @@ function v(e, t) {
   }), e
 }
 
-function _(e) {
+function v(e) {
   let {
     guild: t,
     prejoinOnly: n,
@@ -61,8 +60,8 @@ function _(e) {
   } = e, c = (0, s.e7)([p.Z], () => p.Z.editedOnboardingPrompts), u = c.filter(e => e.inOnboarding), g = u.length, {
     drag: f,
     drop: j,
-    dragSourcePosition: v,
-    setIsDraggable: _
+    dragSourcePosition: _,
+    setIsDraggable: v
   } = (0, d.Z)({
     type: "ONBOARDING_PROMPT_CARD",
     index: g,
@@ -72,14 +71,14 @@ function _(e) {
     onDragReset: () => {}
   }), O = i.useRef(null);
   return i.useEffect(() => {
-    _(false)
-  }, [_]), i.useEffect(() => {
+    v(false)
+  }, [v]), i.useEffect(() => {
     f(j(O))
   }, [f, j, O]), (0, r.jsxs)("div", {
     ref: O,
     className: a()(x.separatorSection, {
-      [x.dropIndicatorBefore]: null != v && g < v,
-      [x.dropIndicatorAfter]: null != v && g > v
+      [x.dropIndicatorBefore]: null != _ && g < _,
+      [x.dropIndicatorAfter]: null != _ && g > _
     }),
     children: [!l && u.length < h.b3 ? (0, r.jsxs)(o.P3F, {
       className: x.addPrompt,
@@ -133,10 +132,10 @@ function O(e) {
     handleDragComplete: S
   } = (0, u.Z)(N, e => {
     let t = e.findIndex(e => "separator" === e.id),
-      n = e.slice(0, t).map(e => v(j({}, e.data), {
+      n = e.slice(0, t).map(e => _(j({}, e.data), {
         inOnboarding: true
       })),
-      r = e.slice(t + 1).map(e => v(j({}, e.data), {
+      r = e.slice(t + 1).map(e => _(j({}, e.data), {
         inOnboarding: false,
         required: false
       }));
@@ -172,7 +171,7 @@ function O(e) {
         onPromptDragReset: I,
         onPromptDragComplete: S
       }, e.id))]
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       guild: d,
       prejoinOnly: n,
       postjoinOnly: i

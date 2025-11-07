@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 237245, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   w: () => I
 }), require("./388685.js"), require("./781311.js"), require("./953529.js");
@@ -67,10 +66,10 @@ function E(e) {
     settingsGuild: E,
     settingsMetadata: I,
     settingsProfile: S
-  } = e, T = E.id, [P, w] = i.useState(false), [Z, R] = i.useState(null), D = E.features.has(_.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, m.A)({
+  } = e, T = E.id, [P, w] = i.useState(false), [Z, R] = i.useState(null), D = E.features.has(v.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, m.A)({
     guildId: E.id
   })) ? t : 0, L = i.useCallback(() => {
-    R(null), f.Z.init(T, _.pNK.ACCESS)
+    R(null), f.Z.init(T, v.pNK.ACCESS)
   }, [T]), k = i.useCallback(async e => {
     try {
       w(true), await e(), R(null)
@@ -84,7 +83,7 @@ function E(e) {
       })
     } catch (e) {
       throw "object" == typeof e && "message" in e ? R(e.message) : R(C.intl.formatToPlainString(C.t.aTVNes, {
-        statusPageURL: _.yXt.STATUS
+        statusPageURL: v.yXt.STATUS
       })), e
     }
   }, [T]), M = i.useCallback(async (e, t, n) => {
@@ -102,8 +101,8 @@ function E(e) {
     }] : [];
     await M(r, e, n)
   }, [M]), B = i.useCallback(e => {
-    if (l.isAgeRestricted !== (E.ownerConfiguredContentLevel === _.V_K.AGE_RESTRICTED) && k(async () => {
-        let e = l.isAgeRestricted ? _.V_K.AGE_RESTRICTED : _.V_K.DEFAULT;
+    if (l.isAgeRestricted !== (E.ownerConfiguredContentLevel === v.V_K.AGE_RESTRICTED) && k(async () => {
+        let e = l.isAgeRestricted ? v.V_K.AGE_RESTRICTED : v.V_K.DEFAULT;
         await G({
           ownerConfiguredContentLevel: e
         })
@@ -113,9 +112,9 @@ function E(e) {
         termRules: n = []
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
       k(async () => {
-        if (E.features.has(_.GuildFeatures.DISCOVERABLE)) {
+        if (E.features.has(v.GuildFeatures.DISCOVERABLE)) {
           let e = new Set(E.features);
-          e.delete(_.GuildFeatures.DISCOVERABLE), await G({
+          e.delete(v.GuildFeatures.DISCOVERABLE), await G({
             features: e
           })
         }
@@ -127,9 +126,9 @@ function E(e) {
       } = l;
       if (null == t) return;
       k(async () => {
-        if (E.features.has(_.GuildFeatures.DISCOVERABLE)) {
+        if (E.features.has(v.GuildFeatures.DISCOVERABLE)) {
           let e = new Set(E.features);
-          e.delete(_.GuildFeatures.DISCOVERABLE), await G({
+          e.delete(v.GuildFeatures.DISCOVERABLE), await G({
             features: e
           })
         }
@@ -146,7 +145,7 @@ function E(e) {
         if (h.verificationDirty && await U(t, r, e), h.guildDirty) {
           (0, b.UA)(E, x);
           let e = new Set(E.features);
-          e.add(_.GuildFeatures.DISCOVERABLE), e.delete(_.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), await G({
+          e.add(v.GuildFeatures.DISCOVERABLE), e.delete(v.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), await G({
             features: e,
             discoverySplash: E.discoverySplash,
             description: E.description,
@@ -185,7 +184,7 @@ function E(e) {
       });
       e()
     })(e => (e => {
-      if (l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED) return void(0, s.ZDy)(async () => {
+      if (l.joinType === j.A.DISCOVERABLE && l.settingsView === _.U.ELIGIBLE_DISABLED) return void(0, s.ZDy)(async () => {
         let {
           default: t
         } = await n.e("67376").then(n.bind(n, 207252));
@@ -196,7 +195,7 @@ function E(e) {
       });
       e()
     })(() => B(e)))
-  }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, z = null != E.description && I.primaryCategoryId !== O.o3 && I.keywords.length > 0;
+  }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === _.U.ELIGIBLE_DISABLED, W = null != E.description && I.primaryCategoryId !== O.o3 && I.keywords.length > 0;
   return (0, r.jsx)(a.Z, {
     message: H ? C.intl.string(C.t.V2G2Yr) : true,
     onSaveText: H ? C.intl.string(C.t["qjtt/p"]) : true,
@@ -204,7 +203,7 @@ function E(e) {
     errorMessage: Z,
     onReset: L,
     onSave: F,
-    disabled: H && !z
+    disabled: H && !W
   })
 }
 

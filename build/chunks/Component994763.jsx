@@ -2,7 +2,7 @@
 /** chunk id: 994763, original params: e,n,t (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => j
+  default: () => Z
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk409059 = require("./409059.js"),
   Chunk918658 = require("./918658.jsx"),
   Chunk163400 = require("./163400.js"),
-  Chunk190263 = require("./190263.js"),
+  Chunk194201 = require("./194201.js"),
   Chunk984802 = require("./984802.js"),
   Chunk210887 = require("./210887.js"),
   Chunk524329 = require("./524329.js"),
@@ -36,17 +36,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function G(e) {
+function A(e) {
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
     t = arguments.length > 2 ? arguments[2] : true;
-  s.ZP.trackWithMetadata(R.rMx.SETTINGS_PANE_VIEWED, {
+  s.ZP.trackWithMetadata(N.rMx.SETTINGS_PANE_VIEWED, {
     settings_type: "guild",
     origin_pane: n,
     destination_pane: e,
     location: t
   })
 }
-let L = {
+let G = {
   canManageGuild: false,
   canManageChannels: false,
   canManageRoles: false,
@@ -61,9 +61,9 @@ let L = {
   isOwnerWithRequiredMfaLevel: false,
   isGuildAdmin: false
 };
-class A extends Chunk647438.PureComponent {
+class L extends Chunk647438.PureComponent {
   componentDidMount() {
-    G(this.props.section, null, this.props.analyticsLocation)
+    A(this.props.section, null, this.props.analyticsLocation)
   }
   componentWillUnmount() {
     Chunk434404.Z.close()
@@ -85,7 +85,7 @@ class A extends Chunk647438.PureComponent {
       canAccessMembersPage: g,
       canViewGuildAnalytics: f
     } = this.props;
-    t !== n && G(t, n), (r || i || a || c || l || s || u || g || d || h) && (u || t !== R.pNK.AUDIT_LOG) && (a || t !== R.pNK.ROLES) && (s || t !== R.pNK.EMOJI) && (s || t !== R.pNK.STICKERS) && (s || t !== R.pNK.SOUNDBOARD) && (c || t !== R.pNK.BANS) && (f || t !== R.pNK.ANALYTICS) && (g || t !== R.pNK.MEMBERS) || (0, o.xf)()
+    t !== n && A(t, n), (r || i || a || c || l || s || u || g || d || h) && (u || t !== N.pNK.AUDIT_LOG) && (a || t !== N.pNK.ROLES) && (s || t !== N.pNK.EMOJI) && (s || t !== N.pNK.STICKERS) && (s || t !== N.pNK.SOUNDBOARD) && (c || t !== N.pNK.BANS) && (f || t !== N.pNK.ANALYTICS) && (g || t !== N.pNK.MEMBERS) || (0, o.xf)()
   }
   render() {
     var e, n;
@@ -100,11 +100,11 @@ class A extends Chunk647438.PureComponent {
       canManageRoles: h,
       canManageGuildExpressions: g,
       canManageWebhooks: f,
-      canUnlinkChannels: p,
-      canManageBans: _,
+      canUnlinkChannels: _,
+      canManageBans: p,
       canAccessMembersPage: b,
-      canViewGuildAnalytics: y,
-      isOwner: I,
+      canViewGuildAnalytics: I,
+      isOwner: y,
       isOwnerWithRequiredMfaLevel: S,
       showDirtyGuildTemplateIndicator: m,
       memberCount: C,
@@ -112,10 +112,10 @@ class A extends Chunk647438.PureComponent {
       onboardingEnabled: O,
       welcomeScreenEmpty: D,
       guildMetadata: k,
-      pinPermissionMigrationAvailable: E
+      permissionMigrationAvailable: E
     } = this.props;
     if (null == Chunk100527) return null;
-    let R = (0, Chunk896007.vE)({
+    let N = (0, Chunk896007.vE)({
         guild: Chunk100527,
         isGuildAdmin: Chunk367907,
         canManageGuild: Chunk906732,
@@ -126,7 +126,7 @@ class A extends Chunk647438.PureComponent {
         canUnlinkChannels: Chunk751189,
         canManageBans: Chunk409059,
         canAccessMembersPage: Chunk163400,
-        canViewGuildAnalytics: Chunk190263,
+        canViewGuildAnalytics: Chunk194201,
         isOwner: Chunk984802,
         isOwnerWithRequiredMfaLevel: Chunk210887,
         showDirtyGuildTemplateIndicator: Chunk524329,
@@ -136,15 +136,15 @@ class A extends Chunk647438.PureComponent {
         welcomeScreenEmpty: Chunk496675,
         guildMetadata: Chunk999382,
         section: Chunk442837,
-        pinPermissionMigrationAvailable: Chunk359191
+        permissionMigrationAvailable: Chunk359191
       }),
-      G = (null == (n = Chunk981631.find(e => e.section === a)) || null == (e = exports.predicate) ? true : module.call(exports)) !== false,
-      L = (0, Chunk978946.r)();
+      A = (null == (n = Chunk981631.find(e => e.section === a)) || null == (e = exports.predicate) ? true : module.call(exports)) !== false,
+      G = (0, Chunk978946.r)();
     return (0, Chunk951288.jsxs)("div", {
       children: [(0, Chunk951288.jsx)(Chunk503089.ZP, {
         theme: require,
         sidebarTheme: Chunk647438,
-        section: G && null != Chunk442837 ? Chunk442837 : L,
+        section: A && null != Chunk442837 ? Chunk442837 : G,
         onSetSection: Chunk434404.Z.setSection,
         onClose: Chunk37234.xf,
         title: "" !== Chunk100527.name ? Chunk100527.name : Chunk388032.intl.string(Chunk388032.t["154/bL"]),
@@ -156,7 +156,7 @@ class A extends Chunk647438.PureComponent {
   }
 }
 
-function j() {
+function Z() {
   var e, n, t;
   let {
     guild: o,
@@ -166,34 +166,34 @@ function j() {
     isGuildMetadataLoaded: M
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), {
     analyticsLocations: T
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS), N = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), G = (0, Chunk984802.Ll)(), j = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != Chunk37234 ? Chunk984933.ZP.getChannels(Chunk37234.id).SELECTABLE : null, [Chunk37234]), x = (0, Chunk442837.cj)([Chunk496675.Z], () => null != Chunk37234 ? Chunk496675.Z.getGuildPermissionProps(Chunk37234) : L), Z = null == Chunk37234 ? true : Chunk37234.id, U = (0, Chunk442837.e7)([Chunk496675.Z], () => null != Chunk37234 && Chunk496675.Z.canAccessGuildSettings(Chunk37234));
+  } = (0, Chunk906732.ZP)(Chunk100527.Z.GUILD_SETTINGS), R = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), A = (0, Chunk984802.Ll)(), Z = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != Chunk37234 ? Chunk984933.ZP.getChannels(Chunk37234.id).SELECTABLE : null, [Chunk37234]), j = (0, Chunk442837.cj)([Chunk496675.Z], () => null != Chunk37234 ? Chunk496675.Z.getGuildPermissionProps(Chunk37234) : G), x = null == Chunk37234 ? true : Chunk37234.id, U = (0, Chunk442837.e7)([Chunk496675.Z], () => null != Chunk37234 && Chunk496675.Z.canAccessGuildSettings(Chunk37234));
   Chunk647438.useEffect(() => {
-    Chunk896007 || null == Z || (0, Chunk456268.aC)(Z)
-  }, [Chunk896007, Z]);
-  let H = null != (e = null == Chunk37234 ? true : Chunk37234.features.has(Chunk981631.GuildFeatures.COMMUNITY)) && module;
+    Chunk896007 || null == x || (0, Chunk456268.aC)(x)
+  }, [Chunk896007, x]);
+  let W = null != (e = null == Chunk37234 ? true : Chunk37234.features.has(Chunk981631.GuildFeatures.COMMUNITY)) && module;
   Chunk647438.useEffect(() => {
-    null != Z && H && ((0, Chunk745752.eM)(Z), (0, Chunk524329.RM)(Z))
-  }, [Z, H]), Chunk647438.useEffect(() => {
-    null != Z && (0, Chunk526120.cP)(Z)
-  }, [Z]);
-  let W = (0, Chunk442837.e7)([Chunk409059.Z], () => {
+    null != x && W && ((0, Chunk745752.eM)(x), (0, Chunk524329.RM)(x))
+  }, [x, W]), Chunk647438.useEffect(() => {
+    null != x && (0, Chunk526120.cP)(x)
+  }, [x]);
+  let H = (0, Chunk442837.e7)([Chunk409059.Z], () => {
       var e;
       return (null == Chunk37234 ? true : Chunk37234.id) != null && (null == (e = Chunk409059.Z.getForGuild(Chunk37234.id)) ? true : module.isDirty) === true
     }, [Chunk37234]),
     B = (0, Chunk442837.e7)([Chunk650774.Z], () => Chunk650774.Z.getMemberCount(null == Chunk37234 ? true : Chunk37234.id), [Chunk37234]);
   Chunk647438.useEffect(() => {
-    null != Z && x.canManageGuild && Chunk751189.Z.loadTemplatesForGuild(Z)
-  }, [Z, x.canManageGuild]), Chunk647438.useEffect(() => {
+    null != x && j.canManageGuild && Chunk751189.Z.loadTemplatesForGuild(x)
+  }, [x, j.canManageGuild]), Chunk647438.useEffect(() => {
     U || Chunk434404.Z.close()
   }, [U]);
   let F = (0, Chunk442837.e7)([Chunk359191.Z], () => Chunk359191.Z.getCurrentPage()),
-    K = (0, Chunk442837.e7)([Chunk45966.Z], () => null != Z && Chunk45966.Z.getEnabled(Z)),
-    Y = (0, Chunk442837.e7)([Chunk995532.Z], () => null != Z && Chunk995532.Z.isEmpty(Z)),
-    z = (0, Chunk163400.F)(Z).length > 0,
-    V = (0, Chunk190263.D)(Chunk37234);
+    K = (0, Chunk442837.e7)([Chunk45966.Z], () => null != x && Chunk45966.Z.getEnabled(x)),
+    Y = (0, Chunk442837.e7)([Chunk995532.Z], () => null != x && Chunk995532.Z.isEmpty(x)),
+    z = (0, Chunk163400.F)(x).length > 0,
+    V = (0, Chunk194201.Z)(Chunk37234);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: Chunk978946,
-    children: (0, Chunk951288.jsx)(A, (n = function(e) {
+    children: (0, Chunk951288.jsx)(L, (n = function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},
           r = Object.keys(t);
@@ -214,19 +214,19 @@ function j() {
       guild: Chunk37234,
       section: Chunk503089,
       theme: Chunk388032,
-      sidebarTheme: G,
-      channels: j,
-      showDirtyGuildTemplateIndicator: W,
+      sidebarTheme: A,
+      channels: Z,
+      showDirtyGuildTemplateIndicator: H,
       analyticsLocation: Chunk367907,
       memberCount: B
-    }, x), t = t = {
+    }, j), t = t = {
       canUnlinkChannels: z,
-      canViewGuildAnalytics: x.canViewGuildAnalytics,
+      canViewGuildAnalytics: j.canViewGuildAnalytics,
       onboardingStep: F,
       onboardingEnabled: K,
       welcomeScreenEmpty: Y,
       guildMetadata: Chunk918658,
-      pinPermissionMigrationAvailable: V
+      permissionMigrationAvailable: V
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(exports, Object.getOwnPropertyDescriptors(require)) : (function(e, n) {
       var t = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

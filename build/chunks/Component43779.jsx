@@ -121,7 +121,7 @@ function S(e) {
         maxHeight: z.to([0, 1], [104, (null != W ? W : 0) + 12])
       },
       className: E.rewardDescriptionContainer,
-      children: [(0, r.jsx)(b.E, {
+      children: [(0, r.jsx)(_.E, {
         showPlaceholder: !k,
         width: 80,
         height: 80,
@@ -191,7 +191,7 @@ function S(e) {
         },
         className: E.textOverflowBlur
       })]
-    }), (0, r.jsx)(_.Z, {
+    }), (0, r.jsx)(b.Z, {
       quest: P,
       questContent: N,
       contentPosition: R,

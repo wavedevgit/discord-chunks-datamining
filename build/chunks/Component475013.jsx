@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 475013, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => E,
   _: () => N
@@ -78,14 +77,14 @@ function E(e) {
     setEditRoleId: y,
     selectedSection: N,
     setSelectedSection: E
-  }) : h ? (0, r.jsx)(_.Z, {
+  }) : h ? (0, r.jsx)(v.Z, {
     setEditRoleId: y,
     guild: n,
     everyoneRole: o,
     otherRoles: m,
     setSelectedSection: E,
     refToScroller: t
-  }) : (0, r.jsx)(v.Z, {
+  }) : (0, r.jsx)(_.Z, {
     guild: n,
     everyoneRole: o,
     setEditRoleId: y

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 822591, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   X: () => R,
   Z: () => L
@@ -112,9 +111,9 @@ let Z = "dismissedCommunityFeaturesUpsell",
         j(e.body.eligible_for_admin_server)
       }).catch(() => j(false))
     });
-    let v = (0, a.e7)([x.Z], () => x.Z.getGuild("942897714956472401")),
-      _ = l.features.has(E.GuildFeatures.COMMUNITY) && p >= 1e3 && h && null == v;
-    if (t && n && !_) return null;
+    let _ = (0, a.e7)([x.Z], () => x.Z.getGuild("942897714956472401")),
+      v = l.features.has(E.GuildFeatures.COMMUNITY) && p >= 1e3 && h && null == _;
+    if (t && n && !v) return null;
     let C = async () => {
       try {
         let e = await s.tn.post({
@@ -125,7 +124,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         O.Z.close(), (0, f.X)(e.body.id)
       } catch (e) {}
     };
-    return c && !_ ? null : (0, r.jsxs)("div", {
+    return c && !v ? null : (0, r.jsxs)("div", {
       className: S.upsellContainer,
       children: [(0, r.jsxs)("div", {
         className: S.upsellContent,
@@ -158,7 +157,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         })
       }), (0, r.jsxs)("div", {
         className: S.upsellFooter,
-        children: [_ && (0, r.jsx)("div", {
+        children: [v && (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: S.upsellButton,
           children: (0, r.jsx)(g.Button, {
@@ -224,7 +223,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       } = e;
       t.type === E.d4z.GUILD_TEXT && m.push({
         value: t.id,
-        label: (0, p.F6)(t, _.default, v.Z, true)
+        label: (0, p.F6)(t, v.default, _.Z, true)
       })
     });
     let f = () => {

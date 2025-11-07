@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 863562, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => h
 }), require("./388685.js");
@@ -23,17 +22,17 @@ let h = e => {
     isDisabled: l,
     sticker: h,
     canManageSticker: b
-  } = e, [x, j] = i.useState(false), [v, _] = (0, d.Z)(null, 4e3), O = async () => {
-    _(null), j(true);
+  } = e, [x, j] = i.useState(false), [_, v] = (0, d.Z)(null, 4e3), O = async () => {
+    v(null), j(true);
     try {
       await (0, g.Um)(h)
     } catch (e) {
-      _(e.body.message), j(false)
+      v(e.body.message), j(false)
     }
   }, C = u.ZP.useUserTag(h.user);
   return (0, r.jsx)(s.u, {
-    forceOpen: null != v,
-    text: v,
+    forceOpen: null != _,
+    text: _,
     asContainer: true,
     children: (0, r.jsxs)("div", {
       className: a()(f.wrapper, t, {

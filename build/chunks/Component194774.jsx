@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 194774, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   h: () => b
 });
@@ -25,11 +24,11 @@ function b(e) {
     canManageGuild: n
   } = e, b = t.features.has(g.GuildFeatures.INVITE_SPLASH), x = n && b, {
     analyticsLocations: j
-  } = (0, a.ZP)(), v = i.useCallback(e => {
+  } = (0, a.ZP)(), _ = i.useCallback(e => {
     d.Z.updateGuild({
       splash: e
     })
-  }, []), _ = i.useCallback(e => {
+  }, []), v = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
       analyticsLocations: j,
@@ -44,7 +43,7 @@ function b(e) {
       splash: e
     }) : null,
     disabled: !x,
-    onChange: v,
+    onChange: _,
     hint: f.intl.string(f.t.uPvxqJ),
     enabled: x,
     maxFileSizeBytes: p.B,
@@ -54,7 +53,7 @@ function b(e) {
     "aria-hidden": true,
     tabIndex: false,
     className: h.upsell,
-    onClick: _,
+    onClick: v,
     children: O
   })
 }

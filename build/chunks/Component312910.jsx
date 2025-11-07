@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 312910, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => E
 });
@@ -35,20 +34,20 @@ let O = {
       analyticsLocations: n
     } = (0, s.ZP)(), i = (0, u.Z)(t.id).available, a = x.oCV[x.Eu4.TIER_1] - i;
     return (0, r.jsxs)("div", {
-      className: _.upsellContainer,
+      className: v.upsellContainer,
       children: [(0, r.jsx)(l.Heading, {
-        className: _.upsellHeader,
+        className: v.upsellHeader,
         variant: "heading-xl/semibold",
-        children: v.intl.string(v.t.hzCkyg)
+        children: _.intl.string(_.t.hzCkyg)
       }), (0, r.jsx)(l.Text, {
-        className: _.upsellDescription,
+        className: v.upsellDescription,
         variant: "text-md/normal",
-        children: v.intl.string(v.t.jcesAE)
+        children: _.intl.string(_.t.jcesAE)
       }), (0, r.jsxs)(l.ButtonGroup, {
-        className: _.upsellButtons,
+        className: v.upsellButtons,
         children: [(0, r.jsx)(l.Button, {
           variant: "overlay-primary",
-          text: v.intl.string(v.t.Q5dbTi),
+          text: _.intl.string(_.t.Q5dbTi),
           onClick: () => (0, d.Z)({
             analyticsLocations: n,
             analyticsLocation: O,
@@ -57,7 +56,7 @@ let O = {
           })
         }), (0, r.jsx)(l.Button, {
           variant: "overlay-primary",
-          text: v.intl.string(v.t.hvVgAZ),
+          text: _.intl.string(_.t.hvVgAZ),
           onClick: () => (0, o.f)({
             guildId: t.id,
             location: {
@@ -97,11 +96,11 @@ let O = {
       d = (0, f.FZ)(s),
       u = (0, f.A3)(s),
       g = a.length;
-    return null == d || s === x.Eu4.TIER_3 || o > 0 ? null : (g > u ? (t = v.intl.formatToPlainString(v.t.ZtAY1f, {
+    return null == d || s === x.Eu4.TIER_3 || o > 0 ? null : (g > u ? (t = _.intl.formatToPlainString(_.t.ZtAY1f, {
       level: d
-    }), n = v.intl.formatToPlainString(v.t["13hOWm"], {
+    }), n = _.intl.formatToPlainString(_.t["13hOWm"], {
       level: d
-    }), i = x.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = v.intl.string(v.t.zT9SxY), n = v.intl.formatToPlainString(v.t.YaW9wI, {
+    }), i = x.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = _.intl.string(_.t.zT9SxY), n = _.intl.formatToPlainString(_.t.YaW9wI, {
       level: d,
       numAdditional: (0, f.ig)(d)
     }), i = x.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.Z, {

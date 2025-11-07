@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 558324, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => o
 }), require("./388685.js"), require("./781311.js");
@@ -37,14 +36,14 @@ let o = e => {
       }
       return i
     }(e, ["tags", "tagsLabel", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
-  let [j, v] = i.useState(null != d ? d : ""), _ = i.useCallback(() => {
+  let [j, _] = i.useState(null != d ? d : ""), v = i.useCallback(() => {
     let e = j.trim();
     if (0 !== e.length) {
       if (null != f && o.length >= f) {
         null == m || m(s.intl.string(s.t.Xx7XeB));
         return
       }
-      g(e), v("")
+      g(e), _("")
     }
   }, [j, f, g, m, o.length]), O = i.useCallback(e => {
     switch (e.key) {
@@ -54,9 +53,9 @@ let o = e => {
       case a.vn.ENTER:
       case a.vn.TAB:
       case a.vn.COMMA:
-        e.preventDefault(), e.stopPropagation(), _()
+        e.preventDefault(), e.stopPropagation(), v()
     }
-  }, [_, j.length, u, o]);
+  }, [v, j.length, u, o]);
   return (0, r.jsx)(l.oil, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -84,10 +83,10 @@ let o = e => {
   }, x), n = n = {
     value: j,
     onKeyDown: O,
-    onChange: v,
+    onChange: _,
     maxLength: p,
     disabled: h,
-    onBlur: _,
+    onBlur: v,
     placeholder: b
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

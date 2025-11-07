@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 273282, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   c: () => j
 });
@@ -27,8 +26,8 @@ function j(e) {
     canManageGuild: n,
     buttonClassName: j
   } = e, {
-    analyticsLocations: v
-  } = (0, a.ZP)(), _ = t.features.has(p.GuildFeatures.INVITE_SPLASH), O = n && _, C = i.useRef(null), {
+    analyticsLocations: _
+  } = (0, a.ZP)(), v = t.features.has(p.GuildFeatures.INVITE_SPLASH), O = n && v, C = i.useRef(null), {
     enabled: y
   } = c.Z.useConfig({
     location: "GuildSettingsInviteBackgroundUploadButton"
@@ -39,16 +38,16 @@ function j(e) {
   }, []), E = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, g.E6)({
       guild: t,
-      analyticsLocations: v,
+      analyticsLocations: _,
       analyticsSection: p.jXE.GUILD_INVITE_BACKGROUND,
       analyticsObject: p.qAy.BUTTON_CTA,
       perks: (0, f.o9)()
     })
-  }, [v, t]), I = i.useCallback(() => {
+  }, [_, t]), I = i.useCallback(() => {
     var e;
     null == (e = C.current) || e.activateUploadDialogue()
   }, []);
-  return _ ? (0, r.jsxs)("div", {
+  return v ? (0, r.jsxs)("div", {
     className: j,
     children: [(0, r.jsx)(l.zxk, {
       disabled: !O,

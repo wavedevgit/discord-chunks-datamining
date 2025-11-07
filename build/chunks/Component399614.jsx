@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 399614, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => b
 });
@@ -58,8 +57,8 @@ let h = [],
       id: e.channelId
     })), [b]), {
       handleDragStart: j,
-      handleDragReset: v,
-      handleDragComplete: _
+      handleDragReset: _,
+      handleDragComplete: v
     } = (0, s.Z)(x, c.lq), O = i.useCallback((e, n) => {
       let r = d.Z.getSettings();
       null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
@@ -84,8 +83,8 @@ let h = [],
         resourceChannel: e,
         index: n,
         onDragStart: j,
-        onDragReset: v,
-        onDragComplete: _
+        onDragReset: _,
+        onDragComplete: v
       }, e.channelId)), b.length < o.x3 && (0, r.jsxs)(a.P3F, {
         className: m.addActionItem,
         onClick: C,

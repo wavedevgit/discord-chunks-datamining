@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 561646, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   scroller: "scroller__16663",
   noticeContainer: "noticeContainer__16663",

@@ -28,6 +28,7 @@ let b = function(t) {
     initiateAgeVerification: O
   } = (0, p.WD)({
     onComplete: b,
+    entryPoint: d.cU.RETRY_MODAL,
     isRetry: true
   }), _ = r.useMemo(() => (0, o.Z)(), []);
   r.useEffect(() => {
@@ -39,7 +40,7 @@ let b = function(t) {
     buttonText: g.intl.string(g.t.RtOE1v),
     buttonLoading: m,
     onButtonPress: () => {
-      O(d.cU.RETRY_MODAL), (0, d.x3)(_, d.d_.RETRY, d.sU.GET_STARTED)
+      O(), (0, d.x3)(_, d.d_.RETRY, d.sU.GET_STARTED)
     }
   }, {
     title: g.intl.string(g.t["LZO+Hd"]),

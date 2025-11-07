@@ -6,7 +6,7 @@ require.d(exports, {
   KY: () => k,
   Uo: () => E,
   fU: () => T,
-  qw: () => R,
+  qw: () => N,
   tn: () => M
 }), require("./290780.js");
 var Chunk647438 = require("./647438.js"),
@@ -75,11 +75,11 @@ function k(e) {
 
 function E(e, n) {
   let t = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null;
-  (0, p.n)(e, n), (0, u.y5)(n.map(e => ({
+  (0, _.n)(e, n), (0, u.y5)(n.map(e => ({
     channelId: e,
     readStateType: w.W.CHANNEL,
-    messageId: y.ZP.lastMessageId(e)
-  }))), null != t && (0, _.uL)(S.Z5c.CHANNEL(e, t))
+    messageId: I.ZP.lastMessageId(e)
+  }))), null != t && (0, p.uL)(S.Z5c.CHANNEL(e, t))
 }
 
 function M(e, n, t, r) {
@@ -121,9 +121,9 @@ function T(e) {
   return null == o ? 0 : 0 === o.length ? a.index + 2 - i : o[o.length - 1].index + 2 - i
 }
 
-function R(e) {
+function N(e) {
   var n;
   return O.intl.formatToPlainString(O.t["8N0BHR"], {
-    timeAgo: c()(I.default.extractTimestamp(null != (n = y.ZP.lastMessageId(e)) ? n : e)).fromNow()
+    timeAgo: c()(y.default.extractTimestamp(null != (n = I.ZP.lastMessageId(e)) ? n : e)).fromNow()
   })
 }

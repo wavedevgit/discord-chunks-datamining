@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 878341, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   table: "table_e7d73e",
   tableHeader: "tableHeader_e7d73e",

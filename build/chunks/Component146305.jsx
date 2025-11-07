@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 146305, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => eO
 });
@@ -76,7 +75,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk566386 = require("./566386.js");
 
-function ev(e) {
+function e_(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -95,7 +94,7 @@ function ev(e) {
   return e
 }
 
-function e_(e, t) {
+function ev(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -162,9 +161,9 @@ let eO = {
       case eh.pNK.ROLES:
         return {
           section: eh.pNK.ROLES, impressionName: i.ImpressionNames.GUILD_SETTINGS_ROLES, label: ex.intl.string(ex.t["LPJmL/"]), element: V.Z, type: o.bT.MINIMAL, ariaLabel: ex.intl.string(ex.t.KXcEC9), notice: {
-            stores: [W.Z],
+            stores: [z.Z],
             element: V._
-          }, predicate: () => t.canManageRoles, icon: t.pinPermissionMigrationAvailable ? (0, r.jsx)("div", {
+          }, predicate: () => t.canManageRoles, icon: t.permissionMigrationAvailable ? (0, r.jsx)("div", {
             className: ej.redDot
           }) : true
         };
@@ -253,7 +252,7 @@ let eO = {
         return {
           section: eh.pNK.ONBOARDING, label: ex.intl.string(ex.t["LdxCK/"]), element: H.Z, ariaLabel: ex.intl.string(ex.t["LdxCK/"]), newIndicatorDismissibleContentTypes: t.onboardingEnabled ? null : [l.z.COMMUNITY_ONBOARDING_NEW_BADGE], notice: {
             stores: [U.Z, M.Z, G.Z],
-            element: z.Z
+            element: W.Z
           }, predicate: () => (0, f.wC)(t.guild.id), decoration: function(e, t) {
             if (p.Z.getEnabled(e)) return ex.intl.string(ex.t.pPSmxg).toUpperCase();
             if ((0, F.C)(e)) return ex.intl.string(ex.t["HDF4o/"]).toUpperCase();
@@ -290,9 +289,9 @@ let eO = {
           }, predicate: () => t.canManageGuild && t.guild.features.has(eh.GuildFeatures.COMMUNITY) && !t.welcomeScreenEmpty && !t.guild.features.has(eh.GuildFeatures.GUILD_SERVER_GUIDE)
         };
       case eh.pNK.ROLE_SUBSCRIPTIONS:
-        return e_(ev({}, eN), {
+        return ev(e_({}, eN), {
           section: eh.pNK.ROLE_SUBSCRIPTIONS,
-          element: v.Z,
+          element: _.Z,
           type: o.bT.CUSTOM,
           predicate: () => eC ? t.monetizationPredicate() && ((0, x.sy)(t.guild) || c.Z.hasSeenCreatorOnboardingForGuild(t.guild.id)) : t.monetizationPredicate(),
           newIndicatorDismissibleContentTypes: (0, j.sO)(t.guild) ? [l.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE] : null
@@ -303,7 +302,7 @@ let eO = {
         };
       case eh.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE:
         return {
-          section: eh.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, impressionName: i.ImpressionNames.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS, newIndicator: 2022 === new Date().getFullYear(), label: ex.intl.string(ex.t.ipTYsk), ariaLabel: ex.intl.string(ex.t.ipTYsk), element: _.Z, predicate: () => t.monetizationPredicate() && (0, x.sy)(t.guild)
+          section: eh.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, impressionName: i.ImpressionNames.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS, newIndicator: 2022 === new Date().getFullYear(), label: ex.intl.string(ex.t.ipTYsk), ariaLabel: ex.intl.string(ex.t.ipTYsk), element: v.Z, predicate: () => t.monetizationPredicate() && (0, x.sy)(t.guild)
         };
       case eh.pNK.GUILD_PREMIUM:
         return {
@@ -331,7 +330,7 @@ let eO = {
                 S.Z.deleteGuild(t.guild.id, i)
               }), (0, s.xf)()
             };
-            e.mfaEnabled ? (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, e_(ev({}, e), {
+            e.mfaEnabled ? (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, ev(e_({}, e), {
               header: ex.intl.formatToPlainString(ex.t.us7mC1, {
                 name: i
               }),
@@ -348,7 +347,7 @@ let eO = {
               let {
                 default: e
               } = await n.e("93197").then(n.bind(n, 848876));
-              return t => (0, r.jsx)(e, e_(ev({}, t), {
+              return t => (0, r.jsx)(e, ev(e_({}, t), {
                 onConfirm: l,
                 guildName: i
               }))

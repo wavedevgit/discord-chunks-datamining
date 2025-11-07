@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 11265, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => g
 }), require("./388685.js");
@@ -23,7 +22,7 @@ let g = Chunk647438.memo(function(e) {
     onExpand: f,
     disableAnimation: h,
     disableBackground: b
-  } = e, [x, j] = i.useState(true), [v, _] = i.useState(false), {
+  } = e, [x, j] = i.useState(true), [_, v] = i.useState(false), {
     ref: O,
     height: C = 0
   } = (0, c.ZP)(), {
@@ -61,14 +60,14 @@ let g = Chunk647438.memo(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t),
     onStart: () => {
-      _(false)
+      v(false)
     },
     onRest: () => {
-      _(true)
+      v(true)
     }
   }, x || h ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
-    _(false), I(m)
+    v(false), I(m)
   }, [m]), i.useLayoutEffect(() => {
     let e = setTimeout(() => {
       j(false)
@@ -81,7 +80,7 @@ let g = Chunk647438.memo(function(e) {
     }),
     children: (0, r.jsxs)(s.animated.div, {
       className: a()(u.contentExpandContainer, {
-        [u.showOverflow]: m && v
+        [u.showOverflow]: m && _
       }),
       style: S,
       children: [(0, r.jsx)(o.P3F, {

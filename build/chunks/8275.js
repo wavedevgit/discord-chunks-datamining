@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 8275, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   container: "container_eeaef9",
   labelContainer: "labelContainer_eeaef9",

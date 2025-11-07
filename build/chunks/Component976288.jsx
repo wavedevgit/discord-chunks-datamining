@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 976288, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   d: () => R
 }), require("./953529.js"), require("./388685.js");
@@ -363,7 +362,7 @@ function R(e) {
     }
   });
   if (null == o) return null;
-  let c = i === _.U.ELIGIBLE_DISABLED;
+  let c = i === v.U.ELIGIBLE_DISABLED;
   return (0, r.jsxs)("div", {
     className: N.settings,
     children: [(0, r.jsx)(I, {
@@ -385,7 +384,7 @@ function R(e) {
     }), (0, r.jsx)(Z, {}), (0, r.jsx)(w, {
       preferredLocale: o.preferredLocale
     }), (0, r.jsx)(Z, {}), (0, r.jsx)("div", {
-      children: (0, r.jsx)(v.A, {
+      children: (0, r.jsx)(_.A, {
         requireTerms: t,
         rules: n
       })

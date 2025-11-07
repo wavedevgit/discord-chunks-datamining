@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 181339, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => T,
   w: () => P
@@ -36,8 +35,8 @@ function I(e) {
     isExpanded: n,
     selectedChannelId: l,
     className: s
-  } = e, h = (0, m.BT)(t), x = (0, p.Z)(t), [j, v] = i.useState(x), _ = (0, o.e7)([b.Z], () => b.Z.getChannel(l), [l]), O = (0, u.ZP)(_), I = async () => {
-    v(!j);
+  } = e, h = (0, m.BT)(t), x = (0, p.Z)(t), [j, _] = i.useState(x), v = (0, o.e7)([b.Z], () => b.Z.getChannel(l), [l]), O = (0, u.ZP)(v), I = async () => {
+    _(!j);
     try {
       var e;
       await (0, g.f6)(t, !x);
@@ -53,7 +52,7 @@ function I(e) {
         (0, d.yw)(y.rMx.GUILD_RAID_ALERTS_SETUP, e)
       }
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3v"]), c.ToastType.FAILURE)), v(!x)
+      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3v"]), c.ToastType.FAILURE)), _(!x)
     }
   };
   return (0, r.jsxs)("div", {
@@ -92,7 +91,7 @@ function S(e) {
     selectedChannelId: i,
     setSelectedChannelId: l,
     className: g
-  } = e, m = null != (t = n.safetyAlertsChannelId) ? t : null, h = (0, o.Wu)([x.ZP, _.default, v.Z, j.Z], () => {
+  } = e, m = null != (t = n.safetyAlertsChannelId) ? t : null, h = (0, o.Wu)([x.ZP, v.default, _.Z, j.Z], () => {
     let e = x.ZP.getChannels(n.id)[x.sH].filter(e => {
       let {
         channel: t
@@ -104,7 +103,7 @@ function S(e) {
       } = e;
       return {
         value: t.id,
-        label: (0, u.F6)(t, _.default, v.Z, true)
+        label: (0, u.F6)(t, v.default, _.Z, true)
       }
     });
     return null != m ? e : [...e]

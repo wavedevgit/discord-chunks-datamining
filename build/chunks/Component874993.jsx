@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 874993, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => O
 }), require("./388685.js"), require("./472816.js"), require("./794429.js"), require("./953529.js");
@@ -38,8 +37,8 @@ function O(e) {
   } = (0, l.cj)([s.Z], () => s.Z.getProps()), S = null != (n = null != (t = null == E ? true : E.id) ? t : O) ? n : j.lds, T = null != y, [P] = (0, u.RD)(S), {
     rulesByTriggerType: w
   } = (0, u.pH)(S), Z = {
-    [g.vh.MEMBERS]: v.intl.string(v.t.sx4E5v),
-    [g.vh.CONTENT]: v.intl.string(v.t.fphZb0)
+    [g.vh.MEMBERS]: _.intl.string(_.t.sx4E5v),
+    [g.vh.CONTENT]: _.intl.string(_.t.fphZb0)
   }, R = i.useMemo(() => Object.values(null != w ? w : {}).flat().filter(c.lm), [w]), D = {
     isInEditMode: T,
     setEditingRule: N
@@ -77,19 +76,19 @@ function O(e) {
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: v.intl.string(v.t.uRelgx)
+      children: _.intl.string(_.t.uRelgx)
     }), (0, r.jsx)("div", {
-      className: _.descriptionContainer,
+      className: v.descriptionContainer,
       children: (0, r.jsxs)("div", {
-        className: _.description,
+        className: v.description,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: v.intl.string(v.t.EwuSCR)
+          children: _.intl.string(_.t.EwuSCR)
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
-          className: _.helpUrl,
-          children: v.intl.format(v.t["B+sgGt"], {
+          className: v.helpUrl,
+          children: _.intl.format(_.t["B+sgGt"], {
             helpUrl: d.Z.getArticleURL(j.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
@@ -98,7 +97,7 @@ function O(e) {
       let [t, n] = e;
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
       let l = null != Z[t] ? (0, r.jsx)("div", {
-        className: _.categoryHeader,
+        className: v.categoryHeader,
         children: (0, r.jsx)(a.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
@@ -106,7 +105,7 @@ function O(e) {
         })
       }) : null;
       return (0, r.jsxs)("div", {
-        className: _.categoryContainer,
+        className: v.categoryContainer,
         children: [l, (0, r.jsx)(r.Fragment, {
           children: n.map(e => {
             var t;
@@ -122,12 +121,12 @@ function O(e) {
     }), null != E && (0, r.jsx)(o.k0, {
       guild: E,
       withDivider: false,
-      className: _.explicitContentFilterSection
+      className: v.explicitContentFilterSection
     }), (0, r.jsx)(f.Z, {
       guildId: S,
       existingRules: R
     }), T && (0, r.jsx)("div", {
-      className: _.endSpacer
+      className: v.endSpacer
     })]
   })
 }

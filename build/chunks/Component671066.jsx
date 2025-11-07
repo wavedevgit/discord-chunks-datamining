@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 671066, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => p
 });
@@ -24,13 +23,13 @@ function p(e) {
     triggerType: p,
     toggled: f,
     onToggleAction: h
-  } = e, b = e => () => h(e), x = (0, u.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, v = (0, i.e7)([d.default, c.Z, o.Z], () => {
+  } = e, b = e => () => h(e), x = (0, u.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, _ = (0, i.e7)([d.default, c.Z, o.Z], () => {
     let e = o.Z.getChannel(j);
     return null == e ? null : (0, s.F6)(e, d.default, c.Z)
   }, [j]);
   if (null == x) return null;
   let {
-    headerText: _,
+    headerText: v,
     descriptionText: O,
     icon: C
   } = x;
@@ -47,7 +46,7 @@ function p(e) {
       className: m.actionTextContainer,
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-sm/semibold",
-        children: _
+        children: v
       }), (0, r.jsx)(a.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
@@ -55,8 +54,8 @@ function p(e) {
       }), f && (0, r.jsxs)(a.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: [null != v && g.intl.format(g.t["8Sr/ar"], {
-          channelName: v
+        children: [null != _ && g.intl.format(g.t["8Sr/ar"], {
+          channelName: _
         }), (0, r.jsx)(a.P3F, {
           onClick: b(true),
           className: m.editChannel,

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 279988, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => m
 }), require("./388685.js");
@@ -27,8 +26,8 @@ let m = function(e) {
     onRemove: b,
     canRemove: x,
     title: j,
-    actionsLocation: v,
-    fieldStyle: _
+    actionsLocation: _,
+    fieldStyle: v
   } = e, O = n.values, C = O.slice(0, 1), y = O.length - C.length;
   return (0, r.jsxs)(d.Z, {
     field: n,
@@ -40,8 +39,8 @@ let m = function(e) {
     onRemove: b,
     title: j,
     canRemove: x,
-    actionsLocation: v,
-    fieldStyle: _,
+    actionsLocation: _,
+    fieldStyle: v,
     children: [(0, r.jsx)(c.EK, {
       terms: C,
       channelId: t

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 215124, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => g
 });
@@ -29,7 +28,7 @@ function g(e) {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
     return (null == n ? true : n.status) === d.x_.OPEN || (null == n ? true : n.status) === d.x_.PAYOUT_DEFERRED
-  }), x = p.length > 0, j = f.length > 0, v = b.length > 0;
+  }), x = p.length > 0, j = f.length > 0, _ = b.length > 0;
   return null == m ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
@@ -41,7 +40,7 @@ function g(e) {
     }), (0, r.jsx)(l.Button, {
       variant: "critical-primary",
       text: u.intl.string(u.t.FrOFSo),
-      disabled: !h || x || j || v,
+      disabled: !h || x || j || _,
       onClick: () => {
         (0, l.ZDy)(async () => {
           let {

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 450215, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => y
 }), require("./388685.js");
@@ -37,7 +36,7 @@ function y(e) {
     groupListingId: I,
     onBeforeDispatchNewListing: S,
     onAfterDispatchNewListing: T
-  } = e, [P, w] = i.useState(s), Z = (0, c.e7)([f.Z], () => f.Z.getSubscriptionListing(P)), R = null == Z, [D, A] = i.useState(R), L = null == Z ? true : Z.subscription_plans[0], k = null != (t = null == Z ? true : Z.published) && t, G = null != (n = null == Z ? true : Z.archived) && n, M = !G && !k && true !== Z, U = true === Z, B = (0, h.mY)(), [F] = x._T(P), [H] = x.mR(P), [z] = x.PK(P), [W] = x.d9(P, 1024), V = "" !== F ? F : O.intl.string(O.t.QWhe9G), K = "" !== F && null != W && "" !== z && null != H && !B, Y = x.rU(P), {
+  } = e, [P, w] = i.useState(s), Z = (0, c.e7)([f.Z], () => f.Z.getSubscriptionListing(P)), R = null == Z, [D, A] = i.useState(R), L = null == Z ? true : Z.subscription_plans[0], k = null != (t = null == Z ? true : Z.published) && t, G = null != (n = null == Z ? true : Z.archived) && n, M = !G && !k && true !== Z, U = true === Z, B = (0, h.mY)(), [F] = x._T(P), [H] = x.mR(P), [W] = x.PK(P), [z] = x.d9(P, 1024), V = "" !== F ? F : O.intl.string(O.t.QWhe9G), K = "" !== F && null != z && "" !== W && null != H && !B, Y = x.rU(P), {
     loading: q,
     error: X,
     handleCreateOrUpdateFromEditState: J
@@ -54,12 +53,12 @@ function y(e) {
       }),
       children: [(0, r.jsx)("div", {
         className: C.headerImageContainer,
-        children: null == W ? (0, r.jsx)(j.Z, {
+        children: null == z ? (0, r.jsx)(j.Z, {
           className: C.starIcon,
           "aria-hidden": true
         }) : (0, r.jsx)("img", {
           className: C.headerImage,
-          src: W,
+          src: z,
           alt: V
         })
       }), (0, r.jsxs)("div", {
@@ -73,15 +72,15 @@ function y(e) {
         }), (0, r.jsxs)("div", {
           className: C.headerDescriptionContainer,
           children: [M && (0, r.jsx)(d.IGR, {
-            color: (0, u.Lq)(_.Ilk.YELLOW_300),
+            color: (0, u.Lq)(v.Ilk.YELLOW_300),
             text: O.intl.string(O.t.vosPk5),
             className: C.draftBadge
           }), G && (0, r.jsx)(d.IGR, {
-            color: (0, u.Lq)(_.Ilk.PRIMARY_500),
+            color: (0, u.Lq)(v.Ilk.PRIMARY_500),
             text: O.intl.string(O.t.nhbtEl),
             className: C.archivedBadge
           }), U && (0, r.jsx)(d.IGR, {
-            color: (0, u.Lq)(_.Ilk.PRIMARY_500),
+            color: (0, u.Lq)(v.Ilk.PRIMARY_500),
             text: O.intl.string(O.t.aiwXeq),
             className: C.unsavedBadge
           }), null != L && (0, r.jsxs)(d.Text, {
@@ -126,7 +125,7 @@ function y(e) {
       editStateId: P,
       guildId: l,
       groupListingId: I,
-      children: (0, r.jsx)(v.Z, {
+      children: (0, r.jsx)(_.Z, {
         allSubscriptionListings: y,
         priceTiers: N,
         loading: et,

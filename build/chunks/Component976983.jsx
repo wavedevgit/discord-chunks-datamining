@@ -1,8 +1,7 @@
 /** Chunk was on 64982 **/
 /** chunk id: 976983, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  B: () => v,
+  B: () => _,
   Z: () => j
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js");
@@ -57,21 +56,21 @@ function j(e) {
   var t, i, a, c;
   let {
     guild: j,
-    prompt: v,
-    singleColumn: _,
+    prompt: _,
+    singleColumn: v,
     promptIndex: O,
     option: C,
     hasError: y,
     onDragStart: N,
     onDragComplete: E,
     onDragReset: I
-  } = e, S = null, T = s().findIndex(v.options, e => e.id === C.id), {
+  } = e, S = null, T = s().findIndex(_.options, e => e.id === C.id), {
     drag: P,
     dragSourcePosition: w,
     drop: Z,
     setIsDraggable: R
   } = (0, d.Z)({
-    type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(v.id),
+    type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(_.id),
     index: T,
     optionId: C.id,
     onDragStart: N,
@@ -86,7 +85,7 @@ function j(e) {
       [h.hasError]: y || null != S,
       [h.dropIndicatorBefore]: null != w && T < w,
       [h.dropIndicatorAfter]: null != w && T > w,
-      [h.singleColumn]: _
+      [h.singleColumn]: v
     }),
     onClick: () => (0, o.ZDy)(async () => {
       let {
@@ -94,17 +93,17 @@ function j(e) {
       } = await n.e("1862").then(n.bind(n, 801001));
       return t => (0, r.jsx)(e, x(b({}, t), {
         guild: j,
-        prompt: v,
+        prompt: _,
         option: C,
         index: O,
         onSave: e => {
-          (0, m.Kk)(j, v.id, {
-            options: v.options.map(t => t.id === C.id ? e : t)
+          (0, m.Kk)(j, _.id, {
+            options: _.options.map(t => t.id === C.id ? e : t)
           })
         },
         onDelete: () => {
-          (0, m.Kk)(j, v.id, {
-            options: v.options.filter(e => e.id !== C.id)
+          (0, m.Kk)(j, _.id, {
+            options: _.options.filter(e => e.id !== C.id)
           })
         }
       }))
@@ -152,7 +151,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guild: t,
     prompt: i,

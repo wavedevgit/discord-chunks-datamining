@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 442182, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   ZP: () => G
 }), require("./781311.js"), require("./642613.js"), require("./388685.js");
@@ -67,7 +66,7 @@ function Z(e, t) {
 async function R(e, t, n) {
   let i = e.roles.filter(e => e !== n);
   try {
-    await v.Z.updateMemberRoles(t, e.id, i, [], [n])
+    await _.Z.updateMemberRoles(t, e.id, i, [], [n])
   } catch (t) {
     let e = new g.Z(t);
     (0, d.h7j)(t => (0, r.jsx)(s.Modal, Z(w({}, t), {
@@ -99,7 +98,7 @@ function D(e) {
   function x(e) {
     if (e.stopPropagation(), !g) {
       if (e.shiftKey) return void R(t, l, o);
-      let n = _.Z.getRole(o);
+      let n = v.Z.getRole(o);
       (0, d.h7j)(e => (0, r.jsx)(s.Modal, Z(w({}, e), {
         title: S.intl.string(S.t["7sFNfW"]),
         subtitle: S.intl.format(S.t.scORUv, {
@@ -299,10 +298,10 @@ function G(e) {
   } = (0, C.Z)(0), {
     scrolledToTop: f,
     handleScroll: h
-  } = (0, y.V)(), b = l.managed || s, v = (0, O.e)(t.id, l.id), _ = (0, o.e7)([j.Z], () => {
+  } = (0, y.V)(), b = l.managed || s, _ = (0, O.e)(t.id, l.id), v = (0, o.e7)([j.Z], () => {
     var e, n;
     return null != (n = null == (e = j.Z.getRoleMemberCount(t.id)) ? true : e[l.id]) ? n : 0
-  }) > v.length, N = () => {
+  }) > _.length, N = () => {
     x.default.track(I.rMx.OPEN_MODAL, {
       type: "Add Role Members",
       location_page: "Role Settings",
@@ -338,7 +337,7 @@ function G(e) {
             setQuery: g,
             locked: b,
             handleAddClick: N
-          }), _ ? (0, r.jsx)(d.Wn, {
+          }), v ? (0, r.jsx)(d.Wn, {
             className: T.searchWarning,
             messageType: d.QYI.INFO,
             children: S.intl.string(S.t.RQxHZ8)
@@ -352,7 +351,7 @@ function G(e) {
       roleId: l.id,
       locked: b,
       onScroll: h,
-      roleMembers: v,
+      roleMembers: _,
       handleAddClick: N
     })]
   })

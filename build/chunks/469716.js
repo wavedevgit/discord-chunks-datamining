@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 469716, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   keywordTextAreaContainer: "keywordTextAreaContainer__4546e",
   keywordTextArea: "keywordTextArea__4546e",

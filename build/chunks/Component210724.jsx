@@ -43,7 +43,7 @@ function D(e) {
     isExpanded: t,
     questId: n
   } = e;
-  return (0, b.qI)({
+  return (0, _.qI)({
     mode: t ? R.NH.EXPANDED : R.NH.COLLAPSED,
     questContent: v.jn.QUEST_BAR_V2,
     questId: n,
@@ -64,9 +64,9 @@ function Q(e) {
   } = e, m = (0, E.T)({
     quest: o,
     location: R.dr.QUESTS_BAR
-  }), b = (0, y.Z)({
+  }), _ = (0, y.Z)({
     location: R.dr.QUESTS_BAR
-  }), Q = (0, c.e7)([_.Z], () => null != _.Z.questEnrollmentBlockedUntil), {
+  }), Q = (0, c.e7)([b.Z], () => null != b.Z.questEnrollmentBlockedUntil), {
     isQuestBarVisible: L,
     reason: V
   } = (0, w.qN)({
@@ -75,7 +75,7 @@ function Q(e) {
   }), M = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), Z = (0, c.e7)([f.Z], () => f.Z.hasLayers()), W = s.useRef(null), U = s.useMemo(() => (0, j.q8)(o), [o]), H = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, z = (0, u.Z)(H), F = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
     hasError: G,
     isLoading: K
-  } = (0, T.d7)(), X = s.useContext(N.T) || b && L && !K && !Q, Y = s.useRef(X), J = s.useRef(false), $ = s.useRef(false), [ee, et] = s.useState(false), [en, er] = s.useState(false), [es, eo] = s.useState(false), [ea, ei] = s.useState(true), [el, ec] = s.useState(true), ed = s.useRef(null), eu = s.useCallback(e => {
+  } = (0, T.d7)(), X = s.useContext(N.T) || _ && L && !K && !Q, Y = s.useRef(X), J = s.useRef(false), $ = s.useRef(false), [ee, et] = s.useState(false), [en, er] = s.useState(false), [es, eo] = s.useState(false), [ea, ei] = s.useState(true), [el, ec] = s.useState(true), ed = s.useRef(null), eu = s.useCallback(e => {
     F || (ei(false), eo(e))
   }, [F]), ep = s.useCallback(() => {
     eu(true)
@@ -96,9 +96,9 @@ function Q(e) {
       withDelay: t = false
     } = e;
     t ? J.current = window.setTimeout(ep, 75) : ep()
-  }, [ep, es]), eb = s.useCallback(() => {
+  }, [ep, es]), e_ = s.useCallback(() => {
     ej()
-  }, [ej]), e_ = s.useCallback(() => {
+  }, [ej]), eb = s.useCallback(() => {
     window.clearTimeout(J.current), ee || en || $.current || eu(false)
   }, [ee, en, eu]), ev = s.useCallback(() => {
     var e;
@@ -126,8 +126,8 @@ function Q(e) {
         impression_id: null == (e = W.current) ? true : e.getId()
       },
       sourceQuestContent: v.jn.QUEST_BAR_V2
-    }), $.current = false, e_()
-  }, [e_, o]);
+    }), $.current = false, eb()
+  }, [eb, o]);
   s.useEffect(() => {
     en && eC()
   }, [en, eC]), s.useLayoutEffect(() => {
@@ -200,7 +200,7 @@ function Q(e) {
       })
     }
   }, [G, o.id]), s.useEffect(() => {
-    if (!b) {
+    if (!_) {
       var e;
       (0, h.dA)({
         questId: o.id,
@@ -214,7 +214,7 @@ function Q(e) {
         sourceQuestContent: v.jn.QUEST_BAR_V2
       })
     }
-  }, [b, o.id]), s.useEffect(() => {
+  }, [_, o.id]), s.useEffect(() => {
     if (!X && el && !K) {
       var e;
       (0, h.dA)({
@@ -230,8 +230,8 @@ function Q(e) {
       })
     }
   }, [X, el, K, o.id, V]), s.useEffect(() => {
-    (!L || Q) && x.Z.clearTracking(), X && el && !K && !G && b && x.Z.stopTracking(o.id)
-  }, [L, Q, X, el, K, G, b, o.id]);
+    (!L || Q) && x.Z.clearTracking(), X && el && !K && !G && _ && x.Z.stopTracking(o.id)
+  }, [L, Q, X, el, K, G, _, o.id]);
   let {
     enabled: eT,
     status: ew
@@ -239,7 +239,7 @@ function Q(e) {
     location: R.dr.QUESTS_BAR,
     questConfig: o.config
   }), eP = (null == ew ? true : ew.progressBlur) && !H ? 88 : 70;
-  if (!b || !X && el && !K || G) return G ? m.log("Not rendered due to asset error") : b || m.log("Not rendered due to ineligibility"), null;
+  if (!_ || !X && el && !K || G) return G ? m.log("Not rendered due to asset error") : _ || m.log("Not rendered due to ineligibility"), null;
   let eN = eP + 78 * !!F;
   return (0, r.jsx)(O.A, {
     questOrQuests: o,
@@ -257,8 +257,8 @@ function Q(e) {
         "aria-hidden": !X,
         onMouseLeave: eC,
         onMouseEnter: ev,
-        onFocus: eb,
-        onBlur: e_,
+        onFocus: e_,
+        onBlur: eb,
         className: a()(I.wrapper, {
           [I.wrapperInvisible]: !X,
           [I.wrapperVisible]: X && el

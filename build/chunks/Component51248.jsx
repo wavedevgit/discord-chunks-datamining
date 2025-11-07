@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 51248, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => g
 });
@@ -28,9 +27,9 @@ function g(e) {
     saveEditingRule: b
   } = (0, c.w)(), {
     updateRule: x
-  } = (0, o.pH)(t), j = null != f, v = j && !(0, s.Vb)(f), _ = j || p || v, O = async () => {
-    if (!p && !v) return g();
-    null == f || v || x(f);
+  } = (0, o.pH)(t), j = null != f, _ = j && !(0, s.Vb)(f), v = j || p || _, O = async () => {
+    if (!p && !_) return g();
+    null == f || _ || x(f);
     let e = n.find(e => {
       let {
         id: t
@@ -54,7 +53,7 @@ function g(e) {
   })), (0, r.jsx)(i.W, {
     component: "div",
     className: u.saveNoticeContainer,
-    children: _ && (0, r.jsx)(a.oXn, {
+    children: v && (0, r.jsx)(a.oXn, {
       children: (0, r.jsx)(l.Z, {
         submitting: m,
         disabled: m,

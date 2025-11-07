@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 399829, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => Z
 }), require("./388685.js");
@@ -259,7 +258,7 @@ let Z = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk905128.Z, Chunk999382.
     a = o()(null != Chunk120356 ? Chunk120356 : []).uniqBy(e => e.userId),
     s = a.map(e => ({
       user: C.default.getUser(e.userId),
-      nick: _.ZP.getNick(n, e.userId)
+      nick: v.ZP.getNick(n, e.userId)
     })).filter(e => null != e.user).value();
   return {
     guildId: require,

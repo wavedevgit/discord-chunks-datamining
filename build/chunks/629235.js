@@ -26,6 +26,7 @@ let u = function(e) {
     initiateAgeVerification: h
   } = (0, o.WD)({
     onComplete: t,
+    entryPoint: i.cU.EXPRESSIVE_GET_STARTED,
     shouldShowExpressiveModal: true,
     classificationId: u
   });
@@ -44,7 +45,7 @@ let u = function(e) {
         title: d.intl.string(a),
         description: d.intl.string(r),
         onClick: async t => {
-          (0, i.x3)(t, i.d_.EXPRESSIVE_PRIMARY, i.sU.METHOD_SELECT, e), null == n || n(), await h(i.cU.EXPRESSIVE_GET_STARTED, e)
+          (0, i.x3)(t, i.d_.EXPRESSIVE_PRIMARY, i.sU.METHOD_SELECT, e), null == n || n(), await h(e)
         }
       }
     }).filter(e => null != e),

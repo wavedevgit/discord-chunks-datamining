@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 486217, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   grid: "grid_d87d30",
   placeholderCard: "placeholderCard_d87d30",

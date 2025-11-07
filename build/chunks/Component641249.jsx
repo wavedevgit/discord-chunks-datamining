@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 641249, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => x
 }), require("./388685.js");
@@ -54,9 +53,9 @@ function x() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [x, j] = Chunk290348.XZ(module, exports), v = (0, Chunk971792.Z)(exports, module), {
-    setCurrentTab: _
-  } = (0, Chunk798680.dw)(), O = () => _(Chunk798680.ue.EMOJIS), C = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)), y = null != C ? (0, Chunk443106.Z)(C) : true;
+  } = (0, Chunk727843.N)(), [x, j] = Chunk290348.XZ(module, exports), _ = (0, Chunk971792.Z)(exports, module), {
+    setCurrentTab: v
+  } = (0, Chunk798680.dw)(), O = () => v(Chunk798680.ue.EMOJIS), C = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)), y = null != C ? (0, Chunk443106.Z)(C) : true;
 
   function N(e) {
     null == x ? j(new Set(e)) : j(new Set([...x, ...e]))
@@ -80,7 +79,7 @@ function x() {
       tierEmojiIds: x,
       guildId: exports,
       onRemoveEmoji: function(e) {
-        e.roles.filter(e => e !== (null == v ? true : v.id)).length > 0 ? E(e.id) : (0, l.ZDy)(async () => {
+        e.roles.filter(e => e !== (null == _ ? true : _.id)).length > 0 ? E(e.id) : (0, l.ZDy)(async () => {
           let {
             default: t
           } = await n.e("59128").then(n.bind(n, 28564));

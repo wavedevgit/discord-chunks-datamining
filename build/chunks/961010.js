@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 961010, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   mainContainer: "mainContainer_c615b7",
   textArea: "textArea_c615b7",

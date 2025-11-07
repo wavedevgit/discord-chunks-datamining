@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 675377, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => F
 }), require("./388685.js");
@@ -105,7 +104,7 @@ function H(e) {
   })
 }
 
-function z(e) {
+function W(e) {
   let {
     currentTier: t,
     availableSounds: n,
@@ -142,7 +141,7 @@ function z(e) {
     })]
   })
 }
-let W = e => {
+let z = e => {
     var {
       renderPopoutBody: t,
       renderPopoutChildren: n,
@@ -185,7 +184,7 @@ let W = e => {
   },
   V = () => {
     let e = Chunk647438.useRef(null);
-    return (0, Chunk951288.jsx)(W, {
+    return (0, Chunk951288.jsx)(z, {
       renderPopoutBody: () => (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
@@ -207,14 +206,14 @@ let W = e => {
 function K(e) {
   let {
     guild: t
-  } = e, [l, a] = (0, c.Wu)([_.Z], () => {
+  } = e, [l, a] = (0, c.Wu)([v.Z], () => {
     var e;
-    return [null != (e = _.Z.getSoundsForGuild(t.id)) ? e : L.Hy, _.Z.isFetchingSounds() || _.Z.isFetchingDefaultSounds()]
+    return [null != (e = v.Z.getSoundsForGuild(t.id)) ? e : L.Hy, v.Z.isFetchingSounds() || v.Z.isFetchingDefaultSounds()]
   }), {
     canCreateExpressions: s
   } = (0, j.XJ)(t), o = i.useRef(null), d = (0, f.ZP)(), u = t.premiumTier, m = (0, P.yw)(t, l, u);
   i.useEffect(() => {
-    (0, v.w)()
+    (0, _.w)()
   }, []);
   let p = i.useMemo(() => l.reduce((e, t) => (e[t.soundId] = new Audio((0, O.Z)(t.soundId)), e), {}), [l]),
     h = 0 === l.length && !a;
@@ -275,7 +274,7 @@ function K(e) {
         className: G.tableTitle,
         variant: "heading-md/bold",
         color: "header-primary",
-        children: (0, r.jsx)(z, {
+        children: (0, r.jsx)(W, {
           guildId: t.id,
           currentTier: u,
           availableSounds: m
@@ -318,17 +317,17 @@ function Y(e) {
     user: f,
     userId: h,
     emojiId: x,
-    emojiName: _
+    emojiName: v
   } = t, {
     analyticsLocations: O
   } = (0, b.ZP)(), C = (0, c.e7)([I.default], () => null != f ? f : I.default.getUser(h), [h, f]), {
     canManageGuildExpression: E
-  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != x || null != _, [w, R] = i.useState(false), D = (0, y.z)(t, o.id);
+  } = (0, j.XJ)(o), S = i.useMemo(() => E(t), [t, E]), P = null != x || null != v, [w, R] = i.useState(false), D = (0, y.z)(t, o.id);
   async function A() {
     if (!w) {
       R(true);
       try {
-        await (0, v.AA)(o.id, d)
+        await (0, _.AA)(o.id, d)
       } catch (e) {
         R(false)
       }
@@ -354,7 +353,7 @@ function Y(e) {
     }),
     children: [P ? (0, r.jsx)(p.Z, {
       emojiId: x,
-      emojiName: _,
+      emojiName: v,
       className: G.emoji
     }) : (0, r.jsx)(g.XBm, {
       size: "md",

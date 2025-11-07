@@ -1,6 +1,8 @@
 /** Chunk was on 64982 **/
 /** chunk id: 518936, original params: e,t,n (module,exports,require) **/
-"use strict";
+require.d(exports, {
+  Z: () => r
+});
 
 function r() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "",
@@ -8,6 +10,3 @@ function r() {
     n = window.GLOBAL_ENV.GUILD_TEMPLATE_HOST;
   return "".concat(exports ? "".concat(location.protocol) : "", "//").concat(require).concat("/".concat(module))
 }
-require.d(exports, {
-  Z: () => r
-})

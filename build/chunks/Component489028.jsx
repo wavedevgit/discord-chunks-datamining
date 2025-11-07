@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 489028, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => P
 }), require("./388685.js");
@@ -57,11 +56,11 @@ function T(e) {
     error: m
   } = (0, d.Z)(), {
     fetchSubscriptionsSettings: p
-  } = (0, j.JH)(), f = (0, v.mY)(), h = i.useMemo(() => n.map(e => ({
+  } = (0, j.JH)(), f = (0, _.mY)(), h = i.useMemo(() => n.map(e => ({
     label: e.name,
     value: e.id
   })), [n]), b = async () => {
-    await u(t, o, y.wW.GUILD_ROLE_SUBSCRIPTIONS) && (p(t.id), (0, _.B)({
+    await u(t, o, y.wW.GUILD_ROLE_SUBSCRIPTIONS) && (p(t.id), (0, v.B)({
       title: E.intl.string(E.t["AP/2qe"]),
       body: E.intl.string(E.t.kHMgaK)
     }))
@@ -94,14 +93,14 @@ let P = e => {
   let {
     guild: t
   } = e, n = (0, l.e7)([h.default], () => h.default.getCurrentUser()), a = (0, f.eM)(t, n), d = (0, c.Ob)(t), j = (0, l.e7)([b.Z], () => b.Z.isFocused()), {
-    teams: v,
-    loading: _
+    teams: _,
+    loading: v
   } = (0, p.Z)({
     refreshOnDepChange: j
-  }), y = i.useMemo(() => v.filter(e => {
+  }), y = i.useMemo(() => _.filter(e => {
     var t;
     return e.payout_account_status !== N.C.BLOCKED && (0, m.Z)(null != (t = null == n ? true : n.id) ? t : C.lds, e)
-  }), [v, n]), P = y.length > 0, w = i.useCallback(async () => {
+  }), [_, n]), P = y.length > 0, w = i.useCallback(async () => {
     x.default.track(C.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
       is_onboarding_v2: d,
       has_eligible_team: P,
@@ -114,7 +113,7 @@ let P = e => {
     onClick: w,
     children: e
   }) : e, [w, a]);
-  return _ ? (0, r.jsx)(s.$jN, {}) : (0, r.jsxs)(s.Kqy, {
+  return v ? (0, r.jsx)(s.$jN, {}) : (0, r.jsxs)(s.Kqy, {
     gap: 32,
     children: [!a && (0, r.jsx)("div", {
       className: I.nonOwnerNotice,

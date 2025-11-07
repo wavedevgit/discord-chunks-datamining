@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 404270, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => x
 });
@@ -24,7 +23,7 @@ let x = e => {
   var t;
   let {
     className: n
-  } = e, i = (0, a.e7)([c.default], () => c.default.getCurrentUser()), x = (0, a.e7)([o.default], () => o.default.locale), j = (0, a.e7)([u.Z], () => u.Z.getPremiumTypeSubscription()), v = (0, a.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : true), _ = null != (t = (0, a.e7)([d.Z], () => null != v ? d.Z.getForSkuAndInterval((0, m.Wz)(f.Si.GUILD), v.interval, v.intervalCount) : true)) ? t : f.GP[f.Xh.PREMIUM_MONTH_GUILD];
+  } = e, i = (0, a.e7)([c.default], () => c.default.getCurrentUser()), x = (0, a.e7)([o.default], () => o.default.locale), j = (0, a.e7)([u.Z], () => u.Z.getPremiumTypeSubscription()), _ = (0, a.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : true), v = null != (t = (0, a.e7)([d.Z], () => null != _ ? d.Z.getForSkuAndInterval((0, m.Wz)(f.Si.GUILD), _.interval, _.intervalCount) : true)) ? t : f.GP[f.Xh.PREMIUM_MONTH_GUILD];
   return (0, r.jsxs)("div", {
     className: l()(b.wrapper, n),
     children: [(0, r.jsx)(s.Heading, {
@@ -64,9 +63,9 @@ let x = e => {
       }({
         currentUser: i,
         locale: x,
-        guildBoostingPlanId: _.id,
-        interval: _.interval,
-        intervalCount: _.intervalCount
+        guildBoostingPlanId: v.id,
+        interval: v.interval,
+        intervalCount: v.intervalCount
       })
     })]
   })

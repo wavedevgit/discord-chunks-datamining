@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 546221, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => C
 });
@@ -22,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk150043 = require("./150043.js");
 
-function v(e) {
+function _(e) {
   let {
     payoutsByPeriod: t,
     team: n
@@ -44,7 +43,7 @@ function v(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     guildId: t,
     totalPayoutsForPeriod: n
@@ -106,14 +105,14 @@ let O = e => {
             value: y.subscriberChange
           })
         })]
-      }), (0, r.jsx)(_, {
+      }), (0, r.jsx)(v, {
         guildId: s,
         totalPayoutsForPeriod: O
       })]
     }), (0, r.jsx)(i.C3N, {
       label: x.intl.string(x.t["+5Rmhl"]),
       className: j.formSection,
-      children: (0, r.jsx)(v, {
+      children: (0, r.jsx)(_, {
         payoutsByPeriod: C,
         team: m
       })

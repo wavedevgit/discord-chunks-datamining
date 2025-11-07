@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 591026, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => b
 }), require("./388685.js");
@@ -54,7 +53,7 @@ function b(e) {
   let {
     rule: b,
     onChangeRule: x
-  } = e, [j, v] = i.useState(null == (t = b.triggerMetadata) ? true : t.mentionTotalLimit), _ = (0, s.a)(b.guildId, false);
+  } = e, [j, _] = i.useState(null == (t = b.triggerMetadata) ? true : t.mentionTotalLimit), v = (0, s.a)(b.guildId, false);
   return (0, r.jsxs)("div", {
     className: p.cardContentsContainer,
     children: [(0, r.jsxs)(d.Z, {
@@ -85,7 +84,7 @@ function b(e) {
           children: (0, r.jsx)(a.FiK, {
             value: j,
             onChange: e => {
-              v(e), x(h(f({}, b), {
+              _(e), x(h(f({}, b), {
                 triggerMetadata: h(f({}, b.triggerMetadata), {
                   mentionTotalLimit: e
                 })
@@ -96,7 +95,7 @@ function b(e) {
             className: p.stepper
           })
         })]
-      }), _ ? (0, r.jsxs)("div", {
+      }), v ? (0, r.jsxs)("div", {
         className: p.mentionLimitContainer,
         children: [(0, r.jsx)("div", {
           className: p.mentionLimitIconContainer,

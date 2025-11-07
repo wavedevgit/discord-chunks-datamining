@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 564488, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => g
 }), require("./388685.js");
@@ -25,7 +24,7 @@ let g = Chunk647438.memo(function(e) {
     setEditingRule: h
   } = (0, s.V)(), {
     isLoading: b
-  } = (0, s.w)(), [x] = i.useState(() => !(0, l.Vb)(t)), j = (null == p ? true : p.id) === t.id || n, v = (0, a.U)(null == t ? true : t.id), _ = j && null != p ? p : t, O = i.useMemo(() => (0, o.af)(t.name), [null == t ? true : t.name]), C = i.useCallback(() => {
+  } = (0, s.w)(), [x] = i.useState(() => !(0, l.Vb)(t)), j = (null == p ? true : p.id) === t.id || n, _ = (0, a.U)(null == t ? true : t.id), v = j && null != p ? p : t, O = i.useMemo(() => (0, o.af)(t.name), [null == t ? true : t.name]), C = i.useCallback(() => {
     f(t.guildId, t.triggerType)
   }, [t.guildId, t.triggerType, f]), y = i.useCallback(e => {
     b || h(e, true)
@@ -40,11 +39,11 @@ let g = Chunk647438.memo(function(e) {
   }, [j, m, O, t, h]);
   return (0, r.jsx)(d.Z, {
     renderHeader: (0, r.jsx)(u.Z, {
-      rule: _,
-      forceSetup: x && !j && !v,
+      rule: v,
+      forceSetup: x && !j && !_,
       triggerType: t.triggerType,
       isEditMode: j,
-      isDefaultRule: v,
+      isDefaultRule: _,
       onChangeRule: y,
       onSetupRule: C
     }),
@@ -52,7 +51,7 @@ let g = Chunk647438.memo(function(e) {
     isExpanded: j,
     onExpand: N,
     children: j && (0, r.jsx)(c.Z, {
-      rule: _,
+      rule: v,
       isLoading: b,
       onChangeRule: y
     })

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 31441, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   progressBar: "progressBar_c44edb",
   bar: "bar_c44edb",

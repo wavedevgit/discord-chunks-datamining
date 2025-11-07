@@ -32,7 +32,7 @@ function O(e) {
   let {
     quest: n,
     errorHints: o,
-    transitionState: _,
+    transitionState: b,
     onClose: O,
     sourceQuestContent: T
   } = e, [w, P] = (0, s.useState)(o), N = (0, x.KX)(), A = (0, g.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), B = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), k = (0, v.g2)({
@@ -56,7 +56,7 @@ function O(e) {
     }
   });
   return (0, r.jsx)(i.Modal, {
-    transitionState: _,
+    transitionState: b,
     onClose: O,
     title: y.intl.string(y.t.W5lmKt),
     subtitle: N.message,
@@ -124,7 +124,7 @@ function O(e) {
             children: (0, r.jsx)("img", {
               className: E.gameTile,
               alt: n.config.messages.gameTitle,
-              src: (0, b.fh)(n, b.eC.GAME_TILE, Q).url
+              src: (0, _.fh)(n, _.eC.GAME_TILE, Q).url
             })
           }) : null
         })]
@@ -188,7 +188,7 @@ function T(e) {
       default: t
     } = await Promise.resolve().then(n.bind(n, 623249));
     return function(n) {
-      return (0, r.jsx)(_.A, {
+      return (0, r.jsx)(b.A, {
         overrideVisibility: true,
         questOrQuests: e.quest,
         questContent: j.jn.CONNECTIONS_MODAL,

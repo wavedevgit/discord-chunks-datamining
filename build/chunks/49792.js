@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 49792, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   paymentInfoGroup: "paymentInfoGroup_c0544c",
   metricsContainer: "metricsContainer_c0544c",

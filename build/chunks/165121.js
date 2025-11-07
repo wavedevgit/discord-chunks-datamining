@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 165121, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   editCard: "editCard_a25a68",
   toggled: "toggled_a25a68",

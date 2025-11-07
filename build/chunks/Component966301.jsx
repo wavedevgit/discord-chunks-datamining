@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 966301, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   ZP: () => E,
   Zm: () => S
@@ -158,7 +157,7 @@ function I(e) {
       className: y.links,
       children: [(0, r.jsx)(s.Anchor, {
         target: "_blank",
-        href: _.EYA.GUILD_ONBOARDING_EXAMPLES,
+        href: v.EYA.GUILD_ONBOARDING_EXAMPLES,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-link",
@@ -183,7 +182,7 @@ function I(e) {
       prompts: o
     }), n && (0, r.jsx)(j.Z, {}), (0, r.jsx)("div", {
       className: y.prompts,
-      children: a ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(v.Z, {
+      children: a ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(_.Z, {
         postjoinOnly: d,
         guildId: t.id
       })

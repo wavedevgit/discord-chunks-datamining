@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 94228, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   dragging: "dragging_f7c056",
   draggableInputContainer: "draggableInputContainer_f7c056",

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 708510, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   O: () => I
 });
@@ -38,16 +37,16 @@ function N(e) {
     }
   }, [n]);
   switch (t.joinType) {
-    case _.A.INVITE:
+    case v.A.INVITE:
       return (0, r.jsx)(x.A, {
         requireTerms: t.requireTerms,
         rules: t.termRules
       });
-    case _.A.APPLY:
+    case v.A.APPLY:
       return (0, r.jsx)(h.r, {
         pendingFields: t.pendingVerificationFields
       });
-    case _.A.DISCOVERABLE:
+    case v.A.DISCOVERABLE:
       return (0, r.jsx)(b.c, {
         fetchDiscoveryData: l,
         settingsView: t.settingsView,

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 260107, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   mainContainer: "mainContainer_c5e6a1",
   ruleIconContainer: "ruleIconContainer_c5e6a1",

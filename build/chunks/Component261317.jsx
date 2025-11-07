@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 261317, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => Z
 });
@@ -61,10 +60,10 @@ let Z = function() {
     B = null != (e = A.badge) ? module : Chunk131085.QV["0"],
     F = null != (t = A.badgeColorPrimary) ? exports : Chunk131085.Ek["0"].primary,
     H = null != (n = A.badgeColorSecondary) ? require : Chunk131085.Ek["0"].secondary,
-    z = () => {
+    W = () => {
       (0, Chunk441536.Z)(D.id, Chunk100527.Z.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), Chunk434404.Z.close()
     },
-    W = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    z = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk196902.Z, {
         className: Chunk764009.section,
         guildId: D.id,
@@ -145,16 +144,16 @@ let Z = function() {
         }) : (0, Chunk951288.jsx)("div", {
           className: Chunk764009.boostingLinkContainer,
           children: R ? (0, Chunk951288.jsx)(Chunk465682.v, {
-            onClick: z
+            onClick: W
           }) : (0, Chunk951288.jsx)(Chunk585961.P, {
-            onClick: z
+            onClick: W
           })
         }), U ? (0, Chunk951288.jsx)(Chunk481060.nuw, {
           children: (0, Chunk951288.jsx)("div", {
             className: Chunk764009.disabledForm,
-            children: W
+            children: z
           })
-        }) : W]
+        }) : z]
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk764009.sidebarContainer,
         children: [(0, Chunk951288.jsx)(Chunk978088.Z, {

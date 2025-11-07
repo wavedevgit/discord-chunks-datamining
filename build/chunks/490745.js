@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 490745, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   override: "override_fa2640",
   settingsColumn: "settingsColumn_fa2640",

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 12078, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => O
 }), require("./35282.js");
@@ -22,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk453921 = require("./453921.js");
 
-function v(e) {
+function _(e) {
   let {
     profile: t,
     canManageGuild: n,
@@ -56,7 +55,7 @@ function v(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     isDiscoverable: t,
     profile: n,
@@ -128,7 +127,7 @@ function O(e) {
     label: x.intl.string(x.t.BSVog8),
     children: (0, r.jsxs)("div", {
       className: j.grid,
-      children: [(0, r.jsx)(v, {
+      children: [(0, r.jsx)(_, {
         profile: n,
         canManageGuild: u,
         handleClick: C(null),
@@ -159,7 +158,7 @@ function O(e) {
             })
           })
         }, t)
-      }), (0, r.jsx)(_, {
+      }), (0, r.jsx)(v, {
         canManageGuild: u,
         isDiscoverable: p,
         profile: n,

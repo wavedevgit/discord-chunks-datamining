@@ -867,6 +867,8 @@ function em(e) {
       return j.t.Ed6hF1;
     case x.rsA.GUILD_MIGRATE_PIN_PERMISSION:
       return j.t["3Ne7MA"];
+    case x.rsA.GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION:
+      return j.t["naflH+"];
     default:
       return null
   }

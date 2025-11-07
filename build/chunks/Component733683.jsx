@@ -1,9 +1,8 @@
 /** Chunk was on 64982 **/
 /** chunk id: 733683, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => E,
-  x: () => v
+  x: () => _
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,8 +28,8 @@ function j(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let v = false,
-  _ = (0, Chunk624138.Mg)(Chunk477690.Z.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
+let _ = false,
+  v = (0, Chunk624138.Mg)(Chunk477690.Z.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
   O = (0, Chunk624138.Mg)(Chunk477690.Z.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
   C = {
     tension: 140,
@@ -187,13 +186,13 @@ class N extends(r = Chunk647438.Component) {
       children: [(0, i.jsx)("rect", {
         x: "0",
         y: "0",
-        width: _,
+        width: v,
         height: e,
         fill: "white"
       }), t.map(e => (0, i.jsx)("circle", {
-        cx: _ / 2,
+        cx: v / 2,
         cy: e.y,
-        r: _ / 2,
+        r: v / 2,
         fill: "black"
       }, e.key))]
     })
@@ -243,8 +242,8 @@ class N extends(r = Chunk647438.Component) {
         height: r
       },
       children: [(0, Chunk951288.jsxs)("svg", {
-        viewBox: "0 0 ".concat(_, " ").concat(r),
-        width: _,
+        viewBox: "0 0 ".concat(v, " ").concat(r),
+        width: v,
         height: r,
         children: [this.renderProgressMask(r), this.renderProgressBar(r, require)]
       }), (0, Chunk951288.jsx)("div", {

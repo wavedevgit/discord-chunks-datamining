@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 980989, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   creatorGuildCarousel: "creatorGuildCarousel__2485e",
   guildCard: "guildCard__2485e " + require("./169400.js").card,

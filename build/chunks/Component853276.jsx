@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 853276, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => f
 }), require("./388685.js"), require("./781311.js");
@@ -98,7 +97,7 @@ function f(e) {
     isSelecting: b,
     error: x,
     forceShowErrorTooltip: j
-  } = e, v = i.useRef(null), _ = i.useRef(null), [O, C] = i.useState(false), {
+  } = e, _ = i.useRef(null), v = i.useRef(null), [O, C] = i.useState(false), {
     ref: y,
     width: N = 0
   } = (0, d.ZP)(O), {
@@ -117,9 +116,9 @@ function f(e) {
     }, [n]),
     D = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-      if (t.trim().length <= 0 && f(), null != v.current && null != y.current && null != _.current) {
+      if (t.trim().length <= 0 && f(), null != _.current && null != y.current && null != v.current) {
         var n;
-        v.current.scrollTo(0, 0), v.current.setSelectionRange(0, 0), v.current.scrollLeft = 0, y.current.scrollLeft = 0, (null == (n = _.current) ? true : n.ref) != null && (_.current.ref.scrollLeft = 0)
+        _.current.scrollTo(0, 0), _.current.setSelectionRange(0, 0), _.current.scrollLeft = 0, y.current.scrollLeft = 0, (null == (n = v.current) ? true : n.ref) != null && (v.current.ref.scrollLeft = 0)
       }
       C(false), l(e)
     }, [t, y, l, f]),
@@ -156,13 +155,13 @@ function f(e) {
           [m.isSelecting]: b,
           [m.isEditing]: O
         }),
-        ref: _,
+        ref: v,
         children: [(0, r.jsx)("input", {
           className: a()(m.chipletInput, {
             [m.isEditing]: O,
             [m.isSelecting]: b
           }),
-          ref: v,
+          ref: _,
           onChange: R,
           onKeyDownCapture: A,
           value: t,

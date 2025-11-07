@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 346163, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => h
 });
@@ -28,8 +27,8 @@ function h(e) {
     }),
     {
       error: j,
-      loading: v,
-      createEnableRequest: _,
+      loading: _,
+      createEnableRequest: v,
       submittedRequest: O
     } = (0, d.Z)(null == e ? true : e.id),
     {
@@ -66,10 +65,10 @@ function h(e) {
   return r.useEffect(() => {
     D && N()
   }, [N, D]), {
-    resubmittingEnableRequest: v,
+    resubmittingEnableRequest: _,
     resubmissionError: j,
     isGuildOwner: x,
-    createEnableRequest: _,
+    createEnableRequest: v,
     resubmittedRequest: O,
     eligibilityLoading: C,
     eligibilityError: y,

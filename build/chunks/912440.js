@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 912440, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   settings: "settings__17efa",
   twoColumns: "twoColumns__17efa",

@@ -24,7 +24,7 @@ let p = e => {
     popoutTargetElementRef: h,
     onGameSheetOpened: x,
     onGameSheetClosed: j
-  } = e, b = (0, o.eQ)(n), _ = (0, o.vf)({
+  } = e, _ = (0, o.eQ)(n), b = (0, o.vf)({
     quest: n,
     isExpanded: m,
     activeScreen: f,
@@ -64,7 +64,7 @@ let p = e => {
           className: u.questProgressHint,
           color: "header-primary",
           variant: "text-sm/semibold",
-          children: b
+          children: _
         })
       }), (0, r.jsx)(l.l7, {
         inState: t,
@@ -75,7 +75,7 @@ let p = e => {
           className: u.questProgressHint,
           color: "text-muted",
           variant: "text-xs/normal",
-          children: _
+          children: b
         })
       })]
     })]

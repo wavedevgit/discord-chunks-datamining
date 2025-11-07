@@ -84,7 +84,7 @@ let N = (0, Chunk663993.Un)({
     name: "CollectiblesShop"
   }),
   Z = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("36599"), require.e("76692"), require.e("8271"), require.e("15851"), require.e("51453"), require.e("7654"), require.e("845"), require.e("86736"), require.e("6850"), require.e("58227"), require.e("44686"), require.e("30378"), require.e("64982"), require.e("95140")]).then(require.bind(require, 994763)),
+    createPromise: () => Promise.all([require.e("70018"), require.e("36599"), require.e("76692"), require.e("8271"), require.e("15851"), require.e("51453"), require.e("7654"), require.e("845"), require.e("86736"), require.e("6850"), require.e("58227"), require.e("44686"), require.e("30378"), require.e("64982"), require.e("95140")]).then(require.bind(require, 994763)),
     webpackId: 994763,
     name: "GuildSettings"
   }),

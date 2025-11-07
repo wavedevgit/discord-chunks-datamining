@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 541575, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => x
 }), require("./953529.js");
@@ -55,17 +54,17 @@ let x = function(e) {
     guild: t,
     disabled: x,
     role: j
-  } = e, v = (0, o.oC)(t.id, j), {
-    analyticsLocations: _
+  } = e, _ = (0, o.oC)(t.id, j), {
+    analyticsLocations: v
   } = (0, a.ZP)(), O = t.features.has(g.GuildFeatures.ROLE_ICONS), C = e => {
     O || ((0, l.yw)(g.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: b(h({}, e), {
         section: g.jXE.CUSTOM_ROLE_ICONS_TOOLTIP
       }),
       guild_id: null == t ? true : t.id,
-      location_stack: _
+      location_stack: v
     }), (0, c.Z)({
-      analyticsLocations: _,
+      analyticsLocations: v,
       analyticsSourceLocation: {
         page: g.ZY5.GUILD_SETTINGS,
         section: g.jXE.GUILD_ROLE_EDIT_UPSELL_MODAL,
@@ -99,7 +98,7 @@ let x = function(e) {
       className: f.rolePreviewArea,
       children: [(0, r.jsx)("div", {
         className: f.previewContainer,
-        children: null != v ? (0, r.jsx)(d.Z, b(h({}, v), {
+        children: null != _ ? (0, r.jsx)(d.Z, b(h({}, _), {
           className: f.roleIconPreview,
           enableTooltip: false
         })) : (0, r.jsx)(i.FmF, {
@@ -125,7 +124,7 @@ let x = function(e) {
         variant: "primary",
         disabled: x,
         text: p.intl.string(p.t.mD1oGB)
-      }), null != v ? (0, r.jsx)(i.Button, {
+      }), null != _ ? (0, r.jsx)(i.Button, {
         onClick: () => {
           (0, u._l)(j.id, null, null)
         },

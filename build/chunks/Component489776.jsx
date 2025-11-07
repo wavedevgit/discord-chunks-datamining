@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 489776, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => h
 }), require("./388685.js");
@@ -53,11 +52,11 @@ function h(e) {
     guildId: t,
     triggerType: n
   } = e, h = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [b] = i.useState(h), [x, j] = i.useState(false), {
-    editingRule: v,
-    createNewEditingRule: _
+    editingRule: _,
+    createNewEditingRule: v
   } = (0, d.V)(), {
     getDefaultRuleName: O
-  } = c.I6[n], C = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [y, N] = i.useState(C ? v : b), E = (0, s.q_F)({
+  } = c.I6[n], C = !(0, o.Vb)(_) && (null == _ ? true : _.triggerType) === n, [y, N] = i.useState(C ? _ : b), E = (0, s.q_F)({
     opacity: +!C,
     pointerEvents: C ? "none" : "all",
     config: f(p({}, l.config.stiff), {
@@ -70,13 +69,13 @@ function h(e) {
       clamp: true
     }),
     onStart: () => {
-      N(C ? v : b)
+      N(C ? _ : b)
     },
     onRest: () => {
-      N(C ? v : b), j(C)
+      N(C ? _ : b), j(C)
     }
   });
-  return null == v || C ? (0, r.jsxs)("div", {
+  return null == _ || C ? (0, r.jsxs)("div", {
     className: m.mainRuleContainer,
     style: {
       height: C ? "auto" : "60px"
@@ -94,7 +93,7 @@ function h(e) {
       children: (0, r.jsxs)(s.P3F, {
         className: m.addAnotherRuleCardContainer,
         onClick: () => {
-          _(t, n)
+          v(t, n)
         },
         children: [(0, r.jsx)(s.oFk, {
           size: "custom",

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 912864, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   customHeader: "customHeader__5906b",
   quickSelect: "quickSelect__5906b",

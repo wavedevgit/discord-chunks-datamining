@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 269464, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   O: () => h
 });
@@ -24,9 +23,9 @@ function h(e) {
     canManageGuild: n
   } = e, h = t.features.has(d.GuildFeatures.BANNER), b = t.features.has(d.GuildFeatures.ANIMATED_BANNER), x = h && n, {
     analyticsLocations: j
-  } = (0, a.ZP)(), v = i.useCallback((e, n) => {
+  } = (0, a.ZP)(), _ = i.useCallback((e, n) => {
     (0, c.f4)(t, j, e, n)
-  }, [j, t]), _ = i.useCallback(e => {
+  }, [j, t]), v = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, c.E6)({
       guild: t,
       analyticsLocations: j,
@@ -41,7 +40,7 @@ function h(e) {
       banner: e
     }, b) : null,
     disabled: !x,
-    onChange: v,
+    onChange: _,
     hint: p.intl.string(p.t.uPvxqJ),
     onOpenImageSelectModal: () => (0, c.mw)({
       uploadType: g.pC.GUILD_BANNER,
@@ -51,7 +50,7 @@ function h(e) {
           imageUri: t,
           file: n
         } = e;
-        return v(t, n)
+        return _(t, n)
       },
       analyticsLocation: {
         page: d.ZY5.GUILD_SETTINGS,
@@ -65,7 +64,7 @@ function h(e) {
     "aria-hidden": true,
     tabIndex: false,
     className: f.upsell,
-    onClick: _,
+    onClick: v,
     children: O
   })
 }

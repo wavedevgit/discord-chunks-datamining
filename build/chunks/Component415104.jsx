@@ -1,7 +1,7 @@
 /** Chunk was on 10150 **/
 /** chunk id: 415104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,14 +20,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk88036 = require("./88036.js");
 
-function b(e) {
+function _(e) {
   var t, n;
   let {
     quest: o,
     className: d,
     questContent: u,
-    contentPosition: b,
-    rowIndex: _,
+    contentPosition: _,
+    rowIndex: b,
     impressionRef: v,
     sourceQuestContent: C
   } = e, [y, E] = s.useState(false), [O, S] = s.useState([]), T = (0, c.qb)(o), w = s.useMemo(() => (0, l.q8)(o), [o]), P = (0, i._F)(), N = s.useCallback(() => {
@@ -37,22 +37,22 @@ function b(e) {
       properties: {
         content_id: u,
         content_name: (0, i._b)(u),
-        content_position: b
+        content_position: _
       },
       sourceQuestContent: C
     }), w && (0, p.loadVideoQuestModal)()
-  }, [P, o.id, u, w, C, b]), A = s.useCallback(() => {
+  }, [P, o.id, u, w, C, _]), A = s.useCallback(() => {
     E(false), P({
       questId: o.id,
       event: x.rMx.QUEST_HOVER_OFF,
       properties: {
         content_id: u,
         content_name: (0, i._b)(u),
-        content_position: b
+        content_position: _
       },
       sourceQuestContent: C
     })
-  }, [P, o.id, u, C, b]), R = s.useContext(g.t), {
+  }, [P, o.id, u, C, _]), R = s.useContext(g.t), {
     visibilityElementRef: B,
     almostVisibleInViewport: k
   } = function(e) {
@@ -89,8 +89,8 @@ function b(e) {
       quest: o,
       questContent: u,
       isHovering: y,
-      contentPosition: b,
-      rowIndex: _,
+      contentPosition: _,
+      rowIndex: b,
       onReceiveErrorHints: S,
       isVisibleInViewport: k,
       sourceQuestContent: C
@@ -98,7 +98,7 @@ function b(e) {
   })
 }
 
-function _(e) {
+function b(e) {
   return (0, r.jsx)(u.A, {
     questOrQuests: e.quest,
     questContent: e.questContent,
@@ -108,7 +108,7 @@ function _(e) {
     sourceQuestContent: e.sourceQuestContent,
     children: t => {
       var n, s;
-      return (0, r.jsx)(b, (n = function(e) {
+      return (0, r.jsx)(_, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

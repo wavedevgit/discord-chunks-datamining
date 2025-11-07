@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 729311, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => Z,
   j: () => R
@@ -37,10 +36,10 @@ var Chunk951288 = require("./951288.js"),
 function w(e) {
   let {
     guild: t
-  } = e, a = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, C.Z)(t), b = (0, l.e7)([v.Z], () => v.Z.editedDefaultChannelIds), x = h.filter(e => !b.has(e.id)), [_, O] = i.useState(false);
+  } = e, a = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, C.Z)(t), b = (0, l.e7)([_.Z], () => _.Z.editedDefaultChannelIds), x = h.filter(e => !b.has(e.id)), [v, O] = i.useState(false);
   return (i.useEffect(() => {
     f || a || (0, m.S)(t.id)
-  }, [t.id, f, a]), _ || 0 === x.length) ? null : (0, r.jsxs)("div", {
+  }, [t.id, f, a]), v || 0 === x.length) ? null : (0, r.jsxs)("div", {
     className: T.recommendations,
     children: [(0, r.jsx)(o.Text, {
       variant: "text-md/medium",
@@ -164,17 +163,17 @@ function w(e) {
 function Z(e) {
   let {
     saveOnClose: t = false
-  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), s = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([O.Z], () => O.Z.advancedMode), g = i.useRef(null), [m, p] = i.useState(false), v = i.useRef(n);
+  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), s = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([O.Z], () => O.Z.advancedMode), g = i.useRef(null), [m, p] = i.useState(false), _ = i.useRef(n);
   return (i.useEffect(() => {
-    v.current = n
+    _.current = n
   }), i.useEffect(() => {
     if (t) {
       let {
         current: e
-      } = v;
+      } = _;
       return () => {
         null != e && (0, j.DO)(e).then(() => {
-          u && (0, _.rS)(e, {
+          u && (0, v.rS)(e, {
             ignoreDefaultPrompt: true
           }).catch(() => {})
         }).catch(() => {})

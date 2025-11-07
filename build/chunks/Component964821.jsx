@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 964821, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => x
 }), require("./953529.js");
@@ -26,8 +25,8 @@ function x(e) {
     index: l,
     onDragStart: x,
     onDragReset: j,
-    onDragComplete: v,
-    draggingId: _
+    onDragComplete: _,
+    draggingId: v
   } = e, O = (0, d.ZP)(), {
     drag: C,
     drop: y,
@@ -38,7 +37,7 @@ function x(e) {
     index: l,
     optionId: t.id,
     onDragStart: () => x(t.id),
-    onDragComplete: e => v(e),
+    onDragComplete: e => _(e),
     onDragReset: () => j()
   }), I = i.useCallback(() => {
     (0, p.xI)(l)

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 34112, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => k
 }), require("./781311.js"), require("./539338.js"), require("./388685.js");
@@ -93,8 +92,8 @@ function k(e) {
     x = i.useMemo(() => [...a, l], [a, l]),
     {
       draggingId: j,
-      handleDragStart: v,
-      handleDragReset: _,
+      handleDragStart: _,
+      handleDragReset: v,
       handleDragComplete: I
     } = (0, S.Z)(x),
     T = i.useCallback(e => {
@@ -110,15 +109,15 @@ function k(e) {
         highestRole: m,
         currentPosition: l,
         memberCount: null != (i = null == g ? true : g[o.id]) ? i : 0,
-        onDragStart: v,
-        onDragReset: _,
+        onDragStart: _,
+        onDragReset: v,
         onDragComplete: I,
         disableHover: null != j,
         disableDrag: a.length !== b.length,
         setEditRoleId: t,
         setSelectedSection: s
       }, o.id)
-    }, [b, n, m, g, v, _, I, j, a, t, s]);
+    }, [b, n, m, g, _, v, I, j, a, t, s]);
   return (0, r.jsx)(p.Xi, {
     sections: [Math.max(b.length, 1)],
     sectionHeight: d,
@@ -151,8 +150,8 @@ function M(e) {
     role: d,
     guild: p,
     highestRole: x,
-    currentPosition: v,
-    memberCount: _,
+    currentPosition: _,
+    memberCount: v,
     onDragStart: O,
     onDragReset: C,
     onDragComplete: y,
@@ -164,7 +163,7 @@ function M(e) {
     type: L,
     item: () => (O(d.id), {
       id: d.id,
-      position: v
+      position: _
     }),
     canDrag: () => M && !G,
     collect: e => ({
@@ -175,9 +174,9 @@ function M(e) {
       if (null == n) return void C();
       y(n.roleId)
     }
-  }), [d, O, C, y, G, M, v]), [{
+  }), [d, O, C, y, G, M, _]), [{
     isDragging: H
-  }, z] = (0, s.c)(F), W = i.useMemo(() => ({
+  }, W] = (0, s.c)(F), z = i.useMemo(() => ({
     accept: L,
     canDrop: () => !G,
     collect: e => {
@@ -193,7 +192,7 @@ function M(e) {
     })
   }), [G, d]), [{
     dragSourcePosition: V
-  }, K] = (0, o.L)(W), Y = i.useCallback(e => {
+  }, K] = (0, o.L)(z), Y = i.useCallback(e => {
     (0, m.jW)(e, async () => {
       let {
         default: e
@@ -206,7 +205,7 @@ function M(e) {
   }, [p, d]), q = (0, b.e)(p, d);
   if (H) return (0, r.jsx)("div", {
     ref: e => {
-      z(e)
+      W(e)
     },
     className: a()(Z.roleRow, Z.roleRowDragging)
   });
@@ -217,18 +216,18 @@ function M(e) {
   return (0, r.jsxs)(g.P3F, {
     className: a()(Z.roleRow, {
       [Z.roleRowDisableHover]: N,
-      [Z.containerDragBefore]: null != V && v < V,
-      [Z.containerDragAfter]: null != V && v > V
+      [Z.containerDragBefore]: null != V && _ < V,
+      [Z.containerDragAfter]: null != V && _ > V
     }),
     onClick: X,
     onContextMenu: Y,
     innerRef: e => {
-      z(K(e))
+      W(K(e))
     },
     "data-dnd-name": d.name,
     "aria-label": w.intl.formatToPlainString(w.t.Vu0Acc, {
       name: d.name,
-      count: "".concat(_)
+      count: "".concat(v)
     }),
     children: [(0, r.jsx)("div", {
       className: a()(Z.dragIcon, R.dragSpacing, {
@@ -267,7 +266,7 @@ function M(e) {
     }), (0, r.jsx)(u.u, {
       text: w.intl.string(w.t.CW75t0),
       "aria-label": w.intl.formatToPlainString(w.t.Fgs8fD, {
-        count: "".concat(_)
+        count: "".concat(v)
       }),
       position: "right",
       children: (0, r.jsxs)(g.P3F, {
@@ -278,7 +277,7 @@ function M(e) {
         children: [(0, r.jsx)(g.Text, {
           variant: "text-md/normal",
           color: "none",
-          children: _
+          children: v
         }), (0, r.jsx)(g.tBG, {
           size: "custom",
           color: "currentColor",
@@ -325,12 +324,12 @@ function U(e) {
     hasGradient: f,
     stops: h,
     gradientId: b
-  } = (0, d.De)(null == (t = o.colorStrings) ? true : t.primaryColor, null == (n = o.colorStrings) ? true : n.secondaryColor, null == (i = o.colorStrings) ? true : i.tertiaryColor), j = (0, v.yH)(s, o), O = (0, x.p9)({
+  } = (0, d.De)(null == (t = o.colorStrings) ? true : t.primaryColor, null == (n = o.colorStrings) ? true : n.secondaryColor, null == (i = o.colorStrings) ? true : i.tertiaryColor), j = (0, _.yH)(s, o), O = (0, x.p9)({
     guildId: s,
     roleId: o.id,
     size: c
   });
-  if (null != O) return (0, r.jsx)(_.Z, A(D({}, O), {
+  if (null != O) return (0, r.jsx)(v.Z, A(D({}, O), {
     className: m,
     enableTooltip: u
   }));

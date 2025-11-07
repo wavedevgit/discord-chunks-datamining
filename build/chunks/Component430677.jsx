@@ -1,8 +1,7 @@
 /** Chunk was on 64982 **/
 /** chunk id: 430677, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,8 +20,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk768581 = require("./768581.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197530 = require("./197530.js");
-let v = function(e) {
-  var t, l, v, _, O;
+let _ = function(e) {
+  var t, l, _, v, O;
   let {
     guildId: C,
     action: y,
@@ -129,8 +128,8 @@ let v = function(e) {
       }) : (0, r.jsx)("div", {
         className: j.actionItemEmojiWrapper,
         children: (0, r.jsx)(p.Z, {
-          emojiId: null == (v = y.emoji) ? true : v.id,
-          emojiName: null == (_ = y.emoji) ? true : _.name,
+          emojiId: null == (_ = y.emoji) ? true : _.id,
+          emojiName: null == (v = y.emoji) ? true : v.name,
           size: p.R.MEDIUM,
           defaultComponent: (0, r.jsx)(H, {})
         })

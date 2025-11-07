@@ -39,14 +39,14 @@ function E(e) {
     useReducedMotion: n
   } = e, o = (0, g.n)(), l = (0, j.k3)(t.id, x.jn.QUEST_BAR_V2, x.jn.QUEST_BAR_V2), d = (0, j.g2)({
     useReducedMotion: n
-  }), b = (0, p.O5)(), _ = (0, m.aM)(), {
+  }), _ = (0, p.O5)(), b = (0, m.aM)(), {
     errorHints: E,
     startingConsoleQuest: O,
     startConsoleQuest: S
   } = (0, h.GI)({
     questId: t.id,
     beforeRequest: () => {
-      b({
+      _({
         questId: t.id,
         questContent: x.jn.QUEST_BAR_V2,
         questContentCTA: p.jZ.DEFIBRILLATOR,
@@ -82,7 +82,7 @@ function E(e) {
                   }, {
                     content: x.jn.QUEST_BAR,
                     ctaContent: p.jZ.DEFIBRILLATOR_RECONNECT_CONSOLE,
-                    impressionId: _,
+                    impressionId: b,
                     sourceQuestContent: x.jn.QUEST_BAR_V2
                   })
                 }
@@ -102,7 +102,7 @@ function E(e) {
         })
       })
     }
-  }, [E, t, o, _]);
+  }, [E, t, o, b]);
   return (0, r.jsxs)("div", {
     className: C.microphoneUnit,
     children: [(0, r.jsxs)("div", {
@@ -152,7 +152,7 @@ let O = function(e) {
       steps: [{
         renderContent: () => {
           var e, n;
-          return (0, r.jsx)(b.Q, (e = function(e) {
+          return (0, r.jsx)(_.Q, (e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -185,14 +185,14 @@ let O = function(e) {
         },
         isComplete: s || o || c
       }, {
-        renderContent: () => (0, r.jsx)(_.y3, {
+        renderContent: () => (0, r.jsx)(b.y3, {
           children: (0, f.Pb)(t) ? v.intl.string(v.t["5tXqFe"]) : v.intl.formatToPlainString(v.t["+8JB6Y"], {
             gameTitle: l
           })
         }),
         isComplete: o || c
       }, {
-        renderContent: () => (0, r.jsx)(_.y3, {
+        renderContent: () => (0, r.jsx)(b.y3, {
           children: v.intl.formatToPlainString(v.t.HhfrYS, {
             numMinutes: n.targetMinutes
           })
@@ -204,7 +204,7 @@ let O = function(e) {
       isQuestComplete: c
     }
   }, [a, i.length, t, n.targetMinutes]);
-  return (0, r.jsx)(_.ZP, {
+  return (0, r.jsx)(b.ZP, {
     heading: v.intl.string(v.t.UPWlJu),
     steps: c,
     children: u && !p && !m && (0, r.jsx)(E, {

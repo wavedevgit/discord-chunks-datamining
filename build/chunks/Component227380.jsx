@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 227380, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => I
 }), require("./953529.js"), require("./388685.js");
@@ -119,7 +118,7 @@ let I = e => {
     failedItemsOnly: c = false
   } = e, [g, I] = (0, u.Wu)([j.ZP], () => [j.ZP.getDiscoveryChecklist(l), j.ZP.isLoading()], [l]), {
     nsfwProperties: S
-  } = null != g ? g : {}, T = null == t ? true : t.features.has(v.GuildFeatures.PARTNERED), P = null == S ? true : S.channels_banned_keywords, w = (0, u.e7)([f.ZP], () => {
+  } = null != g ? g : {}, T = null == t ? true : t.features.has(_.GuildFeatures.PARTNERED), P = null == S ? true : S.channels_banned_keywords, w = (0, u.e7)([f.ZP], () => {
     var e, n, r;
     if (null == P) return [];
     let i = null != (n = (null != (e = f.ZP.getChannels(t.id)) ? e : {})[f.sH]) ? n : [],
@@ -137,62 +136,62 @@ let I = e => {
       className: O.loadingText,
       variant: "heading-md/semibold",
       color: "header-secondary",
-      children: _.intl.string(_.t.e1gm0f)
+      children: v.intl.string(v.t.e1gm0f)
     }), (0, r.jsx)(p.$jN, {
       className: O.__invalid_spinner
     })]
   });
-  let Z = T ? _.t["WH+1Yz"] : _.t.a4MYDO,
+  let Z = T ? v.t["WH+1Yz"] : v.t.a4MYDO,
     R = [{
-      name: _.intl.string(_.t.yvk9py),
-      failingName: _.intl.string(_.t["IY/UT/"]),
-      description: _.intl.string(_.t.hSLSM6),
-      failingDescription: _.intl.format(_.t.odsGgy, {
-        termsURL: v.EYA.TERMS,
-        guidelinesURL: h.Z.getArticleURL(v.BhN.PUBLIC_GUILD_GUILDLINES)
+      name: v.intl.string(v.t.yvk9py),
+      failingName: v.intl.string(v.t["IY/UT/"]),
+      description: v.intl.string(v.t.hSLSM6),
+      failingDescription: v.intl.format(v.t.odsGgy, {
+        termsURL: _.EYA.TERMS,
+        guidelinesURL: h.Z.getArticleURL(_.BhN.PUBLIC_GUILD_GUILDLINES)
       }),
       checked: null == g ? true : g.safeEnvironment
     }, {
-      name: _.intl.formatToPlainString(_.t.NYovA2, {
+      name: v.intl.formatToPlainString(v.t.NYovA2, {
         minMembers: g.minimumGuildSize
       }),
-      failingName: _.intl.formatToPlainString(_.t.wvJwYs, {
+      failingName: v.intl.formatToPlainString(v.t.wvJwYs, {
         minMembers: g.minimumGuildSize.toLocaleString()
       }),
       description: null,
-      failingDescription: _.intl.format(Z, {
+      failingDescription: v.intl.format(Z, {
         minMembers: g.minimumGuildSize.toLocaleString()
       }),
       checked: null == g ? true : g.size
     }, {
-      name: _.intl.string(_.t.PtxOCK),
-      failingName: _.intl.string(_.t.JPF5IL),
-      description: _.intl.formatToPlainString(_.t.VT0bQJ, {
+      name: v.intl.string(v.t.PtxOCK),
+      failingName: v.intl.string(v.t.JPF5IL),
+      description: v.intl.formatToPlainString(v.t.VT0bQJ, {
         minimumGuildAge: Math.ceil(g.minimumGuildAge / 7)
       }),
-      failingDescription: _.intl.formatToPlainString(_.t.jYwM1Y, {
+      failingDescription: v.intl.formatToPlainString(v.t.jYwM1Y, {
         minimumGuildAge: Math.ceil(g.minimumGuildAge / 7),
         passDate: d()(b.default.extractTimestamp(l)).add(g.minimumGuildAge, "days").format("LL")
       }),
       checked: null == g ? true : g.age
     }, {
-      name: (null == g ? true : g.healthScorePending) ? _.intl.string(_.t.G77ud0) : _.intl.string(_.t["95nW0H"]),
-      failingName: _.intl.string(_.t["+GHxPy"]),
-      description: _.intl.string(_.t.rTWJwX),
+      name: (null == g ? true : g.healthScorePending) ? v.intl.string(v.t.G77ud0) : v.intl.string(v.t["95nW0H"]),
+      failingName: v.intl.string(v.t["+GHxPy"]),
+      description: v.intl.string(v.t.rTWJwX),
       failingDescription: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(p.Text, {
           color: "text-muted",
           className: O.healthFailingDescription,
           variant: "text-sm/normal",
-          children: _.intl.string(_.t.LjqS0G)
+          children: v.intl.string(v.t.LjqS0G)
         }), (null == g ? true : g.engagementHealthy) ? null : (0, r.jsx)(p.Text, {
           color: "text-danger",
           variant: "text-sm/normal",
-          children: _.intl.string(_.t.X8Lt77)
+          children: v.intl.string(v.t.X8Lt77)
         }), (null == g ? true : g.retentionHealthy) ? null : (0, r.jsx)(p.Text, {
           color: "text-danger",
           variant: "text-sm/normal",
-          children: _.intl.string(_.t.esdy89)
+          children: v.intl.string(v.t.esdy89)
         }), (() => {
           if (null == g || null == g.healthScore) returnfalse;
           let {
@@ -218,28 +217,28 @@ let I = e => {
               guildChecklist: g
             }))
           }),
-          children: _.intl.string(_.t.qyiTH8)
+          children: v.intl.string(v.t.qyiTH8)
         })]
       }),
-      pendingDescription: (null == g ? true : g.size) ? _.intl.format(_.t.ALtXIF, {
+      pendingDescription: (null == g ? true : g.size) ? v.intl.format(v.t.ALtXIF, {
         checkBackHook: (e, t) => (0, r.jsx)("strong", {
           className: O.healthPending,
           children: e
         }, t)
-      }) : _.intl.formatToPlainString(_.t["6S/96D"], {
+      }) : v.intl.formatToPlainString(v.t["6S/96D"], {
         minMembers: 200
       }),
       checked: null == g ? true : g.healthy,
       pending: null == g ? true : g.healthScorePending
     }, {
-      name: _.intl.string(_.t["AUUV/x"]),
-      failingName: _.intl.string(_.t["jURyO+"]),
-      description: _.intl.string(_.t.wikb1q),
+      name: v.intl.string(v.t["AUUV/x"]),
+      failingName: v.intl.string(v.t["jURyO+"]),
+      description: v.intl.string(v.t.wikb1q),
       failingDescription: (0, r.jsxs)(r.Fragment, {
         children: [(null == S ? true : S.channels) != null ? (0, r.jsx)(p.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
-          children: _.intl.format(_.t["T+DQYY"], {
+          children: v.intl.format(v.t["T+DQYY"], {
             channelHook: (e, t) => (0, r.jsx)("span", {
               className: O.doesNot,
               children: e
@@ -258,7 +257,7 @@ let I = e => {
         }) : null, (null == S ? true : S.name) != null ? (0, r.jsx)(p.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
-          children: _.intl.format(_.t.KVD8E3, {
+          children: v.intl.format(v.t.KVD8E3, {
             nameHook: (e, t) => (0, r.jsx)("span", {
               className: O.doesNot,
               children: e
@@ -267,7 +266,7 @@ let I = e => {
         }) : null, (null == S ? true : S.description) != null ? (0, r.jsx)(p.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
-          children: _.intl.format(_.t["/W9Kel"], {
+          children: v.intl.format(v.t["/W9Kel"], {
             descriptionHook: (e, t) => (0, r.jsx)("span", {
               className: O.doesNot,
               children: e
@@ -276,16 +275,16 @@ let I = e => {
         }) : null, (null == S ? true : S.icon) != null || (null == S ? true : S.discovery_splash) != null || (null == S ? true : S.invite_splash) != null || (null == S ? true : S.banner) != null ? (0, r.jsx)(p.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
-          children: _.intl.string(_.t.WVKQ6q)
+          children: v.intl.string(v.t.WVKQ6q)
         }) : null]
       }),
       checked: null == S || 0 === Object.keys(S).length
     }, {
-      name: _.intl.string(_.t.lSXnL9),
-      failingName: _.intl.string(_.t.awA3Pb),
-      description: _.intl.string(_.t.QbBJ7R),
-      failingDescription: _.intl.format(_.t.kBXInb, {
-        onClick: () => x.Z.setSection(v.pNK.SAFETY, v.KsC.SAFETY_PERMISSIONS)
+      name: v.intl.string(v.t.lSXnL9),
+      failingName: v.intl.string(v.t.awA3Pb),
+      description: v.intl.string(v.t.QbBJ7R),
+      failingDescription: v.intl.format(v.t.kBXInb, {
+        onClick: () => x.Z.setSection(_.pNK.SAFETY, _.KsC.SAFETY_PERMISSIONS)
       }),
       checked: null == g ? true : g.protected
     }];

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 813922, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => b
 });
@@ -50,23 +49,23 @@ function h(e, t) {
 }
 
 function b(e) {
-  var t, n, b, x, j, v;
+  var t, n, b, x, j, _;
   let {
-    rule: _,
+    rule: v,
     onChangeRule: O
   } = e, C = i.useCallback(e => {
-    O(h(f({}, _), {
-      triggerMetadata: h(f({}, _.triggerMetadata), {
+    O(h(f({}, v), {
+      triggerMetadata: h(f({}, v.triggerMetadata), {
         keywordFilter: e
       })
     }))
-  }, [O, _]), y = i.useCallback(e => {
-    O(h(f({}, _), {
-      triggerMetadata: h(f({}, _.triggerMetadata), {
+  }, [O, v]), y = i.useCallback(e => {
+    O(h(f({}, v), {
+      triggerMetadata: h(f({}, v.triggerMetadata), {
         allowList: e
       })
     }))
-  }, [O, _]);
+  }, [O, v]);
   return (0, r.jsxs)("div", {
     className: p.cardContentsContainer,
     children: [(0, r.jsxs)(d.Z, {
@@ -75,16 +74,16 @@ function b(e) {
       children: [(0, r.jsx)(o.Z, {
         onChangeText: C,
         maxWordCount: g.RH,
-        initialValue: null == (t = _.triggerMetadata) ? true : t.keywordFilter
+        initialValue: null == (t = v.triggerMetadata) ? true : t.keywordFilter
       }), (0, r.jsx)(s.Z, {
-        rule: _,
+        rule: v,
         onChangeRule: O,
-        collapsed: (null == _ || null == (n = _.triggerMetadata) ? true : n.regexPatterns) == null || (null == _ || null == (b = _.triggerMetadata) ? true : b.regexPatterns.length) === 0
+        collapsed: (null == v || null == (n = v.triggerMetadata) ? true : n.regexPatterns) == null || (null == v || null == (b = v.triggerMetadata) ? true : b.regexPatterns.length) === 0
       }), (0, r.jsx)(l.Z, {
         onChange: y,
-        initialValue: null == (x = _.triggerMetadata) ? true : x.allowList,
+        initialValue: null == (x = v.triggerMetadata) ? true : x.allowList,
         maxWordCount: g.n4,
-        collapsed: (null == (j = _.triggerMetadata) ? true : j.allowList) == null || (null == (v = _.triggerMetadata) ? true : v.allowList.length) === 0
+        collapsed: (null == (j = v.triggerMetadata) ? true : j.allowList) == null || (null == (_ = v.triggerMetadata) ? true : _.allowList.length) === 0
       })]
     }), (0, r.jsx)(u.Z, {
       type: u.Z.Type.ARROW_DOWN
@@ -92,7 +91,7 @@ function b(e) {
       step: 2,
       header: m.intl.string(m.t["18TOiQ"]),
       children: (0, r.jsx)(a.Z, {
-        rule: _,
+        rule: v,
         onChangeRule: O
       })
     }), (0, r.jsx)(u.Z, {
@@ -101,7 +100,7 @@ function b(e) {
       step: 3,
       header: m.intl.string(m.t.u5xPPW),
       children: (0, r.jsx)(c.Z, {
-        rule: _,
+        rule: v,
         onChangeRule: O,
         onlyRoles: true
       })

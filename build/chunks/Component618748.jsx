@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 618748, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => G
 }), require("./953529.js");
@@ -42,7 +41,7 @@ function L(e) {
   let {
     application: t,
     guild: n
-  } = e, l = (0, v.YB)(n.id), a = (0, v.qi)(n.id), s = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.Wu)([h.Z], () => a.map(e => h.Z.getRole(n.id, e.role_id)), [n.id, a]).some(e => null != e && 0 !== e.color), c = a.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
+  } = e, l = (0, _.YB)(n.id), a = (0, _.qi)(n.id), s = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.Wu)([h.Z], () => a.map(e => h.Z.getRole(n.id, e.role_id)), [n.id, a]).some(e => null != e && 0 !== e.color), c = a.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
     title: D.intl.string(D.t.p2Rsdl),
     items: [{
       description: D.intl.string(D.t.zbO7fU),
@@ -113,7 +112,7 @@ function G(e) {
   return (0, o.P)(n), t = s ? a === w.KsC.ROLE_SUBSCRIPTION_EMOJI ? T.ue.EMOJIS : T.ue.TIERS : T.ue.PAYMENT, (0, r.jsx)(j.l, {
     guildId: n.id,
     refetchOnMount: true,
-    children: (0, r.jsx)(_.in, {
+    children: (0, r.jsx)(v.in, {
       guildId: n.id,
       children: (0, r.jsx)(T.M7, {
         initialTab: t,
@@ -134,13 +133,13 @@ function M(e) {
     d = null != o && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED),
     {
       currentTab: p,
-      setCurrentTab: v
+      setCurrentTab: _
     } = (0, T.dw)(),
-    _ = (0, j.f)(),
+    v = (0, j.f)(),
     I = (0, i.e7)([b.default], () => b.default.getCurrentUser()),
     R = (0, C.Z)(n.id),
     G = null != n && (0, f.eM)(n, I);
-  if (!_) return (0, r.jsx)(a.$jN, {});
+  if (!v) return (0, r.jsx)(a.$jN, {});
   switch (p) {
     case T.ue.BASIC_INFO:
       t = (0, r.jsx)(E.Z, {
@@ -190,7 +189,7 @@ function M(e) {
           selectedItem: p,
           type: "top",
           look: "brand",
-          onItemSelect: v,
+          onItemSelect: _,
           children: [(0, r.jsx)(s.Z, {
             id: T.ue.BASIC_INFO,
             disabledTooltip: D.intl.string(D.t.NVDuUX),

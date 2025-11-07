@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 998164, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => j
 });
@@ -118,15 +117,15 @@ let j = function(e) {
     var t;
     let r = null == (t = n[e]) ? true : t.channelId;
     null != r && (0, c.Hr)(r)
-  }, [n]), v = n.map(e => f(p({}, e), {
+  }, [n]), _ = n.map(e => f(p({}, e), {
     id: e.channelId
-  })), _ = i.useCallback(e => {
+  })), v = i.useCallback(e => {
     (0, c.hS)(e)
   }, []), {
     handleDragStart: O,
     handleDragReset: C,
     handleDragComplete: y
-  } = (0, s.Z)(v, _);
+  } = (0, s.Z)(_, v);
   return (0, r.jsxs)("div", {
     className: m.section,
     children: [n.map((e, n) => (0, r.jsx)(u.Z, {

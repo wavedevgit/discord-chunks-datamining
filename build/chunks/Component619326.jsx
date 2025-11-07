@@ -1,8 +1,7 @@
 /** Chunk was on 64982 **/
 /** chunk id: 619326, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,7 +58,7 @@ function j(e) {
   return (0, u.Lq)(t ? m.Ilk.WHITE_500 : m.Ilk.PRIMARY_530)
 }
 
-function v(e) {
+function _(e) {
   let {
     value: t,
     onChange: n,
@@ -70,11 +69,11 @@ function v(e) {
     n(u)
   }
 
-  function v(e) {
+  function _(e) {
     n(e), g(e)
   }
-  let _ = t === m.p6O,
-    O = _ ? u : t,
+  let v = t === m.p6O,
+    O = v ? u : t,
     C = (0, r.jsx)(c.dz2, {
       size: "custom",
       width: 32,
@@ -104,13 +103,13 @@ function v(e) {
       return i
     }(y, ["ref"]),
     I = (0, o.jm)({
-      isSelected: _,
+      isSelected: v,
       label: p.intl.formatToPlainString(p.t.ZC69mL, {
         colorHex: m.Pbq
       })
     }),
     S = (0, o.jm)({
-      isSelected: !_,
+      isSelected: !v,
       label: p.intl.formatToPlainString(p.t["3kiLZZ"], {
         colorHex: (0, s.Rf)(t)
       })
@@ -135,7 +134,7 @@ function v(e) {
           style: {
             backgroundColor: m.Pbq
           },
-          children: _ ? C : null
+          children: v ? C : null
         }), (0, r.jsx)(c.Text, {
           className: f.swatchDescription,
           color: "header-secondary",
@@ -159,7 +158,7 @@ function v(e) {
           style: {
             "--custom-color": (0, s.Rf)(O)
           },
-          children: _ ? null : C
+          children: v ? null : C
         }), (0, r.jsx)(c.Text, {
           className: f.swatchDescription,
           color: "header-secondary",
@@ -172,7 +171,7 @@ function v(e) {
         onRequestOpen: x,
         renderPopout: e => (0, r.jsx)(c.Z$W, b(h({}, e), {
           value: t,
-          onChange: v
+          onChange: _
         })),
         children: e => (0, r.jsx)(c.P3F, b(h({}, e), {
           innerRef: d,
@@ -191,7 +190,7 @@ function v(e) {
   }))
 }
 
-function _(e) {
+function v(e) {
   let t, {
       value: n,
       onChange: i,
@@ -201,7 +200,7 @@ function _(e) {
       ref: a,
       width: s
     } = (0, d.ZP)();
-  return t = null == s || s < 440 ? (0, r.jsx)(v, {
+  return t = null == s || s < 440 ? (0, r.jsx)(_, {
     value: n,
     onChange: i,
     disabled: l

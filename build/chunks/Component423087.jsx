@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 423087, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => O
 }), require("./388685.js");
@@ -52,7 +51,7 @@ function j(e, t) {
   }), e
 }
 
-function v(e) {
+function _(e) {
   let {
     palette: t,
     badge: n,
@@ -77,7 +76,7 @@ function v(e) {
   }))
 }
 
-function _(e) {
+function v(e) {
   let {
     badge: t,
     primary: n,
@@ -87,7 +86,7 @@ function _(e) {
     setShowColorPopout: g,
     palettePopoutTargetRef: m,
     handleChange: f
-  } = e, v = (0, o.jm)({
+  } = e, _ = (0, o.jm)({
     isSelected: l,
     label: h.intl.formatToPlainString(h.t.hr4D2X, {
       primaryColor: n,
@@ -113,7 +112,7 @@ function _(e) {
     },
     shouldShow: d,
     onRequestClose: () => g(false),
-    children: e => (0, r.jsx)(c.P3F, j(x({}, e, v), {
+    children: e => (0, r.jsx)(c.P3F, j(x({}, e, _), {
       innerRef: m,
       onClick: () => {
         g(e => !e)
@@ -155,12 +154,12 @@ let O = function(e) {
         id: e.controlId,
         "aria-describedby": C,
         className: b.pickerGrid,
-        children: [p.Ek.map(e => (0, r.jsx)(v, {
+        children: [p.Ek.map(e => (0, r.jsx)(_, {
           palette: e,
           badge: l,
           isSelected: e.primary === a && e.secondary === s,
           onClick: () => E(e)
-        }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(_, {
+        }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(v, {
           badge: l,
           primary: a,
           secondary: s,

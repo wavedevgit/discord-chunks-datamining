@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 453921, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   grid: "grid_ec9088",
   itemContainer: "itemContainer_ec9088",

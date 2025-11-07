@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 40175, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   settingsHeader: "settingsHeader__4b8d8",
   bannedUser: "bannedUser__4b8d8",

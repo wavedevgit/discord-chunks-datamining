@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 660962, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   ZP: () => ee
 }), require("./388685.js");
@@ -80,13 +79,13 @@ function q(e) {
     selectedStyle: i,
     disabled: l,
     shouldShowUpsell: s
-  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9Kbe)), d = (0, f.ZP)(), h = (0, v.oC)(n, t), x = {
+  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9Kbe)), d = (0, f.ZP)(), h = (0, _.oC)(n, t), x = {
     dark: {
-      src: z,
+      src: W,
       name: t.name
     },
     light: {
-      src: W,
+      src: z,
       name: t.name
     }
   };
@@ -122,7 +121,7 @@ function q(e) {
               children: [(0, r.jsx)(m.Rny, {
                 children: (0, r.jsx)("div", {
                   className: F.roleStyleMessageContainer,
-                  children: (0, r.jsx)(_.Z, {
+                  children: (0, r.jsx)(v.Z, {
                     author: {
                       nick: o.author.username,
                       guildId: n,
@@ -261,12 +260,12 @@ function Q(e) {
     colorStrings: t.colorStrings,
     colorString: t.colorString
   }, c = {
-    src: z,
-    name: t.name
-  }, d = {
     src: W,
     name: t.name
-  }, u = (0, v.oC)(n, t), p = [G.BRd.DARK, G.BRd.DARKER, G.BRd.MIDNIGHT, G.BRd.LIGHT];
+  }, d = {
+    src: z,
+    name: t.name
+  }, u = (0, _.oC)(n, t), p = [G.BRd.DARK, G.BRd.DARKER, G.BRd.MIDNIGHT, G.BRd.LIGHT];
   return (0, r.jsx)(m.Rny, {
     children: (0, r.jsx)("div", {
       className: a()(F.previewContainer, {
@@ -280,7 +279,7 @@ function Q(e) {
           className: a()(t, F.messageWrapper),
           children: [(0, r.jsx)("div", {
             className: F.messageContainer,
-            children: (0, r.jsx)(_.Z, {
+            children: (0, r.jsx)(v.Z, {
               author: o,
               message: s,
               roleIcon: null != u ? u : (0, g.ap)(e) ? d : c,

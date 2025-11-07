@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 530198, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => Z
 }), require("./388685.js"), require("./953529.js");
@@ -52,7 +51,7 @@ function j(e, t) {
   }), e
 }
 
-function v(e) {
+function _(e) {
   var t, n;
   let i, {
     theme: l,
@@ -101,7 +100,7 @@ function v(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     titleText: t,
     fieldText: n,
@@ -169,11 +168,11 @@ function O(e) {
     onConfigurationChange: m,
     locked: p,
     operator: x
-  } = e, j = (null == c ? true : c.configuration) != null, v = null != (n = null == c ? true : c.index) ? n : false, [_, O] = function(e, t) {
+  } = e, j = (null == c ? true : c.configuration) != null, _ = null != (n = null == c ? true : c.index) ? n : false, [v, O] = function(e, t) {
     let n = null != t ? t : f.iO.GREATER_THAN,
       r = Math.round(Number(null != e ? e : 0));
     return n === f.iO.GREATER_THAN ? r = Math.max(1, r + 1) : n === f.iO.LESS_THAN && (r = Math.max(0, r - 1)), [r.toString(), n]
-  }(null == c || null == (t = c.configuration) ? true : t.value, x), [C, y] = i.useState(_), N = null != s ? h.intl.format(s, {
+  }(null == c || null == (t = c.configuration) ? true : t.value, x), [C, y] = i.useState(v), N = null != s ? h.intl.format(s, {
     count: C,
     metadataHook: () => C
   }) : (0, r.jsx)("span", {
@@ -225,7 +224,7 @@ function O(e) {
                 connectionMetadataField: o,
                 operator: n,
                 value: t
-              }, v)
+              }, _)
             }
           },
           disabled: p || !j
@@ -398,7 +397,7 @@ function E(e) {
       platform: l,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       titleText: h.intl.string(h.t.yz2CIA),
       fieldText: h.intl.string(h.t.E2iT8K),
       metadataField: f.PC.TWITTER_VERIFIED,
@@ -433,7 +432,7 @@ function I(e) {
       platform: l,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       titleText: h.intl.string(h.t.oWM95M),
       fieldText: h.intl.string(h.t["0cKdka"]),
       metadataField: f.PC.REDDIT_MOD,
@@ -441,7 +440,7 @@ function I(e) {
       platform: l,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       titleText: h.intl.string(h.t["06rDHU"]),
       fieldText: h.intl.string(h.t.kCAN58),
       metadataField: f.PC.REDDIT_GOLD,
@@ -468,7 +467,7 @@ function S(e) {
       platform: l,
       onConfigurationChange: n,
       locked: i
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       titleText: h.intl.string(h.t.IhXLyx),
       fieldText: h.intl.string(h.t["0JyE8I"]),
       metadataField: f.PC.PAYPAL_VERIFIED,
@@ -520,7 +519,7 @@ function T(e) {
       onConfigurationChange: n,
       locked: i,
       operator: f.iO.LESS_THAN
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       titleText: h.intl.string(h.t.TEEYwa),
       fieldText: h.intl.string(h.t["39wASN"]),
       metadataField: f.PC.EBAY_TOP_RATED_SELLER,
@@ -539,7 +538,7 @@ function P(e) {
     locked: i
   } = e, l = m.Z.get(p.ABu.TIKTOK);
   return (0, r.jsxs)(C, {
-    children: [(0, r.jsx)(_, {
+    children: [(0, r.jsx)(v, {
       titleText: h.intl.string(h.t.QHHwRR),
       fieldText: h.intl.string(h.t.E2iT8K),
       metadataField: f.PC.TIKTOK_VERIFIED,
@@ -625,7 +624,7 @@ function w(e) {
         }, e.key);
       case f.xn.BOOLEAN_EQUAL:
       case f.xn.BOOLEAN_NOT_EQUAL:
-        return (0, r.jsx)(_, {
+        return (0, r.jsx)(v, {
           titleText: e.name,
           fieldText: e.description,
           metadataField: e.key,
@@ -698,7 +697,7 @@ function Z(e) {
   }
   return (0, r.jsxs)("div", {
     className: b.container,
-    children: [(0, r.jsx)(v, {
+    children: [(0, r.jsx)(_, {
       theme: s,
       platform: d,
       integration: c,

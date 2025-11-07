@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 982086, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   container: "container__4a4f2",
   flexContainer: "flexContainer__4a4f2",

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 744277, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   periodColumn: "periodColumn__5d2ba",
   amountColumn: "amountColumn__5d2ba",

@@ -53,12 +53,12 @@ function H(e) {
     onClick: i,
     reducedMotion: l,
     isExpanded: d
-  } = e, [p, g] = s.useState(false), f = s.useRef(null), x = (0, w.fh)(o, w.eC.QUEST_BAR_HERO_VIDEO), j = (0, P.z0)(o, c.X.WATCH_VIDEO, P.n1.VIDEO, P.O.THUMBNAIL), b = (0, E.km)(e => e.getVideoProgressState);
+  } = e, [p, g] = s.useState(false), f = s.useRef(null), x = (0, w.fh)(o, w.eC.QUEST_BAR_HERO_VIDEO), j = (0, P.z0)(o, c.X.WATCH_VIDEO, P.n1.VIDEO, P.O.THUMBNAIL), _ = (0, E.km)(e => e.getVideoProgressState);
   s.useEffect(() => {
     null != f.current && (d && (!l || p) ? (f.current.currentTime = 0, f.current.play()) : f.current.pause())
   }, [f, p, l, d]);
-  let _ = b(o.id),
-    v = (null == (t = o.userStatus) ? true : t.completedAt) != null && _ === E.iw.COMPLETED,
+  let b = _(o.id),
+    v = (null == (t = o.userStatus) ? true : t.completedAt) != null && b === E.iw.COMPLETED,
     C = !v && (!l || p);
   return (0, r.jsxs)(m.P3F, {
     className: U.videoQuestPreviewCont,
@@ -142,8 +142,8 @@ function G(e) {
     containerRef: u,
     isExpanded: h,
     onAcceptQuest: j,
-    onGameSheetOpened: b,
-    onGameSheetClosed: _
+    onGameSheetOpened: _,
+    onGameSheetClosed: b
   } = e, v = s.useRef(null), y = (0, d.e7)([C.Z], () => C.Z.isEnrolling(t.id), [t]), E = s.useMemo(() => (0, w.fh)(t, w.eC.QUEST_BAR_HERO), [t]), S = (0, T.CR)({
     quest: t
   }), {
@@ -176,8 +176,8 @@ function G(e) {
             quest: t,
             taskDetails: n,
             popoutTargetElementRef: v,
-            onGameSheetOpened: b,
-            onGameSheetClosed: _
+            onGameSheetOpened: _,
+            onGameSheetClosed: b
           })]
         }), (0, r.jsx)("div", {
           className: U.cta,
@@ -308,12 +308,12 @@ function X(e) {
     onGameSheetClosed: j
   } = e, C = (null == (t = n.userStatus) ? true : t.completedAt) != null, E = o.percentComplete > 0, O = (0, v.z)(n), [S, T, w] = (0, v.me)(n, o), P = s.useRef(null), N = s.useRef(null), R = (0, v._s)({
     quest: n
-  }), W = (0, _.q8)(n), z = (0, v.Jf)(n), F = s.useCallback(() => {
+  }), W = (0, b.q8)(n), z = (0, v.Jf)(n), F = s.useCallback(() => {
     (0, A.openVideoQuestModal)({
       quest: n,
       questContent: y.jn.QUEST_BAR_V2,
       sourceQuestContent: y.jn.QUEST_BAR_V2,
-      sourceQuestContentCTA: b.jZ.QUEST_BAR_VIDEO_QUEST_PREVIEW
+      sourceQuestContentCTA: _.jZ.QUEST_BAR_VIDEO_QUEST_PREVIEW
     })
   }, [n]), G = null != z ? z.percentComplete : o.percentComplete;
   return (0, r.jsxs)(r.Fragment, {
@@ -356,7 +356,7 @@ function X(e) {
         onGameSheetOpened: x,
         onGameSheetClosed: j
       }), (0, r.jsx)(B.n, {
-        children: !C && !(0, _.Gd)(n) && (0, l.EQ)(S).with(y.LI.SELECT, () => (0, r.jsx)(V.Z, {
+        children: !C && !(0, b.Gd)(n) && (0, l.EQ)(S).with(y.LI.SELECT, () => (0, r.jsx)(V.Z, {
           onConsole: () => w(M.cd.CONSOLE),
           onDesktop: () => w(M.cd.DESKTOP)
         })).with(y.LI.DESKTOP, () => (0, r.jsx)(q.Z, {
@@ -396,13 +396,13 @@ function X(e) {
   })
 }
 async function Y(e, t, n, r) {
-  let s = (0, _.q8)(e);
+  let s = (0, b.q8)(e);
   return s && (0, S.R)(M.dr.QUESTS_BAR) ? void await (0, A.enrollAndStartVideoQuestWithErrorHandling)(e, {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: r,
     sourceQuestContentCTA: n
-  }) : (0, _.Rt)(e) && (0, S.R)(M.dr.QUESTS_BAR) ? void await (0, j.AH)(e.id, {
+  }) : (0, b.Rt)(e) && (0, S.R)(M.dr.QUESTS_BAR) ? void await (0, j.AH)(e.id, {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: r
@@ -437,8 +437,8 @@ let J = Chunk647438.forwardRef(function(e, t) {
     taskDetails: O
   } = e, {
     launchInGameActivity: S
-  } = (0, v.zB)(C), T = (0, _.Rt)(C), w = s.useCallback(async () => {
-    let e = T ? b.jZ.START_QUEST : b.jZ.ACCEPT_QUEST;
+  } = (0, v.zB)(C), T = (0, b.Rt)(C), w = s.useCallback(async () => {
+    let e = T ? _.jZ.START_QUEST : _.jZ.ACCEPT_QUEST;
     await Y(C, y.jn.QUEST_BAR_V2, e, y.jn.QUEST_BAR_V2), T && S()
   }, [C, S, T]), P = (null == (n = C.userStatus) ? true : n.enrolledAt) != null, N = d && u;
   return (0, r.jsxs)(i.animated.div, {

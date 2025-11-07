@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 582066, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => j
 });
@@ -26,11 +25,11 @@ function j(e) {
   var t, n;
   let {
     guildId: i
-  } = e, j = (0, a.e7)([g.Z], () => g.Z.getGuild(i)), v = (0, a.e7)([m.default], () => m.default.getCurrentUser()), {
-    onAdoptTag: _,
+  } = e, j = (0, a.e7)([g.Z], () => g.Z.getGuild(i)), _ = (0, a.e7)([m.default], () => m.default.getCurrentUser()), {
+    onAdoptTag: v,
     isAdopting: O
-  } = (0, u.Z)(i), C = (null == v || null == (t = v.primaryGuild) ? true : t.identityGuildId) === i && (null == v || null == (n = v.primaryGuild) ? true : n.identityEnabled) === true;
-  if (null != v && null != j && (0, c.jq)(j)) return (0, r.jsxs)("div", {
+  } = (0, u.Z)(i), C = (null == _ || null == (t = _.primaryGuild) ? true : t.identityGuildId) === i && (null == _ || null == (n = _.primaryGuild) ? true : n.identityEnabled) === true;
+  if (null != _ && null != j && (0, c.jq)(j)) return (0, r.jsxs)("div", {
     className: x.container,
     children: [(0, r.jsx)(s.Text, {
       className: x.section,
@@ -43,7 +42,7 @@ function j(e) {
       className: l()(x.section, x.body),
       children: [(0, r.jsx)(f.l, {
         avatar: (0, r.jsx)(o.Z, {
-          user: v,
+          user: _,
           guildId: i,
           avatarSize: s.EFr.SIZE_40,
           "aria-hidden": true
@@ -54,12 +53,12 @@ function j(e) {
           guildTag: j.profile.tag,
           inline: false
         }),
-        username: p.ZP.getName(i, null, v),
+        username: p.ZP.getName(i, null, _),
         message: b.intl.string(b.t["6OSasb"])
       }), (0, r.jsx)(s.Button, {
         variant: "primary",
         text: b.intl.string(b.t.cQDYRu),
-        onClick: _,
+        onClick: v,
         loading: O,
         disabled: C,
         fullWidth: true

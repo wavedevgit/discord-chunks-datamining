@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 964269, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   howItWorksContainer: "howItWorksContainer_dd30dc",
   howItWorksCard: "howItWorksCard_dd30dc " + require("./169400.js").card,

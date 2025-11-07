@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 266665, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => Z
 }), require("./388685.js");
@@ -42,8 +41,8 @@ function w(e) {
       selectedItem: p,
       onClick: f,
       currentPosition: b,
-      onDragStart: v,
-      onDragReset: _,
+      onDragStart: _,
+      onDragReset: v,
       onDragComplete: O,
       roleStyle: y
     } = e,
@@ -54,14 +53,14 @@ function w(e) {
     Z = (0, x._f)(c.id, d, d.colorStrings),
     [, R] = (0, s.c)({
       type: P,
-      item: () => (v(d.id), {
+      item: () => (_(d.id), {
         id: d.id,
         position: b
       }),
       canDrag: () => S,
       end: (e, t) => {
         let n = t.getDropResult();
-        if (null == n) return void _();
+        if (null == n) return void v();
         O(n.roleId)
       }
     }),
@@ -167,7 +166,7 @@ function Z(e) {
     currentRoleId: n,
     setCurrentRoleId: l,
     setSelectedSection: s
-  } = e, o = (0, c.e7)([O.Z], () => O.Z.roles), g = (0, c.e7)([v.Z], () => v.Z.getHighestRole(t)), h = (0, c.e7)([f.Z], () => f.Z.roleStyle), [x, j] = i.useState(o.length), {
+  } = e, o = (0, c.e7)([O.Z], () => O.Z.roles), g = (0, c.e7)([_.Z], () => _.Z.getHighestRole(t)), h = (0, c.e7)([f.Z], () => f.Z.roleStyle), [x, j] = i.useState(o.length), {
     scrolledToTop: C,
     handleScroll: I
   } = (0, N.V)(), {
@@ -196,8 +195,8 @@ function Z(e) {
         children: [(0, r.jsxs)(u.P3F, {
           className: T.title,
           onClick: () => l(null),
-          children: [(0, r.jsx)(_.Z, {
-            direction: _.Z.Directions.LEFT
+          children: [(0, r.jsx)(v.Z, {
+            direction: v.Z.Directions.LEFT
           }), (0, r.jsx)(u.Text, {
             className: T.titleText,
             variant: "text-md/semibold",

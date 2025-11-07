@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 870472, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Q: () => c,
   V: () => o
@@ -184,7 +183,7 @@ function c(e, t) {
         }
       }), null != e && (e.preventDefault(), e.stopPropagation()), null == (t = i.current) || t.focus()
     }, [i, u]),
-    v = r.useCallback(e => {
+    _ = r.useCallback(e => {
       u(t => {
         let {
           tags: n
@@ -197,7 +196,7 @@ function c(e, t) {
         }
       })
     }, [u]),
-    _ = r.useCallback(function(e) {
+    v = r.useCallback(function(e) {
       let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
         r = !(arguments.length > 2) || true === arguments[2] || arguments[2];
       !(o.trim().length <= 0) && ((0, a.flushSync)(() => {
@@ -281,15 +280,15 @@ function c(e, t) {
       }), e.preventDefault(), e.stopPropagation())
     }, [l, i, u, c.length, o]),
     N = r.useCallback(e => {
-      e.relatedTarget !== e.currentTarget && _(e, false, false)
-    }, [_]);
+      e.relatedTarget !== e.currentTarget && v(e, false, false)
+    }, [v]);
   return {
     handlePasteEvent: p,
-    handleInputChange: v,
+    handleInputChange: _,
     handleKeyDown: r.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
-      "Meta" !== e.key && (s.ye.has(e.key) ? _(e) : "Backspace" === e.key ? O(e) : "Escape" === e.key ? j(e) : "a" === e.key && t ? y(e) : s.Bd.has(e.key) && t && C(e))
-    }, [_, O, j, y, C]),
+      "Meta" !== e.key && (s.ye.has(e.key) ? v(e) : "Backspace" === e.key ? O(e) : "Escape" === e.key ? j(e) : "a" === e.key && t ? y(e) : s.Bd.has(e.key) && t && C(e))
+    }, [v, O, j, y, C]),
     handleContainerKeyUp: r.useCallback(e => {
       if (document.activeElement !== l.current) return;
       let t = e.metaKey || e.ctrlKey;

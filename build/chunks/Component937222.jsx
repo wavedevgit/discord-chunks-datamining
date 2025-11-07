@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 937222, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   F: () => h
 });
@@ -29,13 +28,13 @@ function h(e) {
     enabled: j
   } = s.Z.useConfig({
     location: "GuildSettingsBannerUploadButton"
-  }), v = i.useCallback(e => {
+  }), _ = i.useCallback(e => {
     let {
       imageUri: n,
       file: r
     } = e;
     (0, c.f4)(t, b, n, r)
-  }, [b, t]), _ = i.useCallback(e => {
+  }, [b, t]), v = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, c.E6)({
       guild: t,
       analyticsLocations: b,
@@ -47,14 +46,14 @@ function h(e) {
     (0, c.mw)({
       uploadType: m.pC.GUILD_BANNER,
       maxFileSizeBytes: p.B,
-      onComplete: v,
+      onComplete: _,
       analyticsLocation: {
         page: u.ZY5.GUILD_SETTINGS,
         section: u.jXE.GUILD_BANNER
       },
       analyticsLocations: b
     })
-  }, [b, v]);
+  }, [b, _]);
   return x ? (0, r.jsx)("div", {
     className: h,
     children: (0, r.jsx)(l.zxk, {
@@ -66,10 +65,10 @@ function h(e) {
   }) : j ? (0, r.jsx)("div", {
     className: h,
     children: (0, r.jsx)(o.v, {
-      onClick: _
+      onClick: v
     })
   }) : (0, r.jsx)(d.P, {
     className: h,
-    onClick: _
+    onClick: v
   })
 }

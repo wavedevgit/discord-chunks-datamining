@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 17699, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => k
 }), require("./388685.js"), require("./781311.js"), require("./953529.js"), require("./539854.js");
@@ -78,15 +77,15 @@ function R(e) {
     onClose: g
   } = e, [m, h] = i.useState(false), [b, x] = i.useState(null), {
     analyticsLocations: j
-  } = (0, f.ZP)(), _ = null != (t = null == j ? true : j[0]) ? t : null;
+  } = (0, f.ZP)(), v = null != (t = null == j ? true : j[0]) ? t : null;
   async function C() {
     if (null != l) {
       x(null), h(true);
       try {
-        await d.Z.unbanUser(l.id, a.id), g(), v.default.track(I.rMx.GUILD_BAN_REMOVED, Z(w({}, (0, p.hH)(l.id)), {
+        await d.Z.unbanUser(l.id, a.id), g(), _.default.track(I.rMx.GUILD_BAN_REMOVED, Z(w({}, (0, p.hH)(l.id)), {
           target_user_id: a.id,
           reason: s.reason,
-          location: _
+          location: v
         }))
       } catch (e) {
         x(new u.Z(e)), h(false)
@@ -304,7 +303,7 @@ function k() {
   let {
     guild: c,
     searchQuery: u
-  } = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps(), [], Chunk392711.isEqual), p = null != Chunk479531 && Chunk479531.trim().length > 0, f = (0, Chunk110924.Z)(Chunk367907), h = Chunk367907 !== Chunk906732, [x] = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getBans(), [], Chunk136015.Q), v = null != (e = null == Chunk246946 ? true : Chunk246946.size) ? module : 0, O = (0, Chunk410030.ZP)(), C = null != (t = null == Chunk239091 ? true : Chunk239091.id) ? exports : Chunk981631.lds, N = Chunk647438.useRef(null), E = Chunk647438.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+  } = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps(), [], Chunk392711.isEqual), p = null != Chunk479531 && Chunk479531.trim().length > 0, f = (0, Chunk110924.Z)(Chunk367907), h = Chunk367907 !== Chunk906732, [x] = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getBans(), [], Chunk136015.Q), _ = null != (e = null == Chunk246946 ? true : Chunk246946.size) ? module : 0, O = (0, Chunk410030.ZP)(), C = null != (t = null == Chunk239091 ? true : Chunk239091.id) ? exports : Chunk981631.lds, N = Chunk647438.useRef(null), E = Chunk647438.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
     if (null == t || 0 === e.trim().length) returnfalse;
     let [
       [n], r
@@ -333,15 +332,15 @@ function k() {
     F = Chunk647438.useMemo(() => a().chunk(R, M.pageSize), [M.pageSize, R]),
     H = Chunk647438.useCallback(e => {
       var t, n, r;
-      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * M.pageSize > R.length && k && !p && (z.current = null != (r = null == (n = R[R.length - 1]) ? true : n.id) ? r : null, B(z.current)), (null != F[e - 1] || k) && U(t => Z(w({}, t), {
+      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * M.pageSize > R.length && k && !p && (W.current = null != (r = null == (n = R[R.length - 1]) ? true : n.id) ? r : null, B(W.current)), (null != F[e - 1] || k) && U(t => Z(w({}, t), {
         currentPage: e
       }))
     }, [M.pageSize, R, k, F, B, Chunk367907]),
-    z = Chunk647438.useRef(null);
+    W = Chunk647438.useRef(null);
   Chunk647438.useEffect(() => {
-    B(z.current)
+    B(W.current)
   }, [B]);
-  let W = Chunk647438.useMemo(() => {
+  let z = Chunk647438.useMemo(() => {
     var e;
     return null != (e = F[M.currentPage - 1]) ? module : []
   }, [F, M.currentPage]);
@@ -355,7 +354,7 @@ function k() {
       children: [!G && (0, Chunk951288.jsx)(A, {
         guild: Chunk239091,
         bans: Chunk246946,
-        sortedBans: W,
+        sortedBans: z,
         ref: Chunk84613
       }), !k && G && (0, Chunk951288.jsxs)(Chunk481060.ubH, {
         theme: Chunk51144,

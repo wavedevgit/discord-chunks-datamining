@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 822693, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   m: () => j
 }), require("./953529.js"), require("./388685.js"), require("./290780.js");
@@ -28,8 +27,8 @@ function j(e) {
     guildId: l,
     widgetEnabled: f,
     widgetChannelId: j,
-    className: v,
-    enableLocalUpdate: _
+    className: _,
+    enableLocalUpdate: v
   } = e, O = (0, a.e7)([c.ZP], () => c.ZP.getChannels(l)), C = i.useMemo(() => {
     let e = [...O[c.sH], ...O[c.Zb]].filter(e => {
       let {
@@ -55,14 +54,14 @@ function j(e) {
       label: h.intl.string(h.t.u197b7)
     }), e
   }, [O, l, j]), y = i.useCallback(e => {
-    _ ? (0, p.c)(l, f, e !== b ? e : null) : m.Z.updateEmbed(l, f, e !== b ? e : null)
-  }, [l, f, _]);
+    v ? (0, p.c)(l, f, e !== b ? e : null) : m.Z.updateEmbed(l, f, e !== b ? e : null)
+  }, [l, f, v]);
   return (0, r.jsx)(s.q4e, {
     label: t,
     description: n,
     options: C,
     value: j,
     onChange: y,
-    className: v
+    className: _
   })
 }

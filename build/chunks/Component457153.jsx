@@ -22,26 +22,26 @@ let h = Chunk647438.forwardRef(function(e, t) {
     className: h,
     expansionSpring: x,
     isExpanded: j,
-    isExpansionAnimationComplete: b,
-    quest: _,
+    isExpansionAnimationComplete: _,
+    quest: b,
     taskDetails: v,
     useReducedMotion: C,
     onCtxMenuOpen: y,
     onCtxMenuClose: E,
     onCtxMenuSelect: O,
     overlayRef: S
-  } = e, T = (null == (n = _.userStatus) ? true : n.completedAt) != null, w = (0, l.Jf)(_), P = s.useRef(null), N = (null == (o = _.userStatus) ? true : o.enrolledAt) != null, A = null != w ? w.percentComplete : v.percentComplete, [R, B] = s.useState(false);
+  } = e, T = (null == (n = b.userStatus) ? true : n.completedAt) != null, w = (0, l.Jf)(b), P = s.useRef(null), N = (null == (o = b.userStatus) ? true : o.enrolledAt) != null, A = null != w ? w.percentComplete : v.percentComplete, [R, B] = s.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [T && (0, r.jsx)(u.Z, {
       expansionSpring: x,
       overlayRef: S,
       progressBarRef: P,
-      quest: _,
+      quest: b,
       isExpanded: j,
       isHovered: R
     }), (0, r.jsx)(i.animated.div, {
       ref: t,
-      "aria-hidden": j && b,
+      "aria-hidden": j && _,
       className: a()(h, f.contentCollapsed, {
         [f.contentCollapsedExpanded]: j,
         [f.contentCollapsedAccepted]: N
@@ -59,7 +59,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
         className: f.contentCollapsedWrapper,
         children: [T && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(m.Z, {
-            quest: _,
+            quest: b,
             onCtxMenuOpen: y,
             onCtxMenuClose: E,
             onCtxMenuSelect: O
@@ -68,12 +68,12 @@ let h = Chunk647438.forwardRef(function(e, t) {
           })]
         }), N ? (0, r.jsx)(p.Z, {
           contentLocation: "collapsed",
-          quest: _,
+          quest: b,
           progressBarRef: P,
           isExpanded: false,
           percentComplete: A
         }) : null, T && (0, r.jsx)(d.y, {
-          quest: _,
+          quest: b,
           useReducedMotion: C,
           isExpanded: false,
           awaitingConsoleConnections: false,

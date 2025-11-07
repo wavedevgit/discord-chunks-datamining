@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 67152, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   ZP: () => R,
   av: () => T,
@@ -44,7 +43,7 @@ let y = e => {
     } = e;
     return (0, r.jsx)("div", {
       className: C.cell,
-      children: (0, p.T4)(null != t ? t : 0, v.pKx.USD)
+      children: (0, p.T4)(null != t ? t : 0, _.pKx.USD)
     })
   },
   E = e => {
@@ -186,7 +185,7 @@ let y = e => {
           let l = null != i ? o()(i).add(15, "days").toISOString() : true,
             a = (0, h.Zo)(l, "MMM D");
           switch (e) {
-            case _.x_.OPEN:
+            case v.x_.OPEN:
               return (0, r.jsxs)(r.Fragment, {
                 children: [null != a ? O.intl.formatToPlainString(O.t.I6YOjS, {
                   payoutDate: a
@@ -194,7 +193,7 @@ let y = e => {
                   className: C.statusScheduledIcon
                 })]
               });
-            case _.x_.CANCELED:
+            case v.x_.CANCELED:
               return (0, r.jsxs)(r.Fragment, {
                 children: [O.intl.string(O.t["0SrNPx"]), (0, r.jsx)(u.k$p, {
                   size: "md",
@@ -202,8 +201,8 @@ let y = e => {
                   className: C.statusErrorIcon
                 })]
               });
-            case _.x_.PAYOUT_DEFERRED:
-              if ((null == n ? true : n.includes(_.XL.PAYOUT_SEIZED)) === true) return (0, r.jsxs)(r.Fragment, {
+            case v.x_.PAYOUT_DEFERRED:
+              if ((null == n ? true : n.includes(v.XL.PAYOUT_SEIZED)) === true) return (0, r.jsxs)(r.Fragment, {
                 children: [O.intl.string(O.t["0SrNPx"]), (0, r.jsx)(u.k$p, {
                   size: "md",
                   color: "currentColor",
@@ -217,14 +216,14 @@ let y = e => {
               })
           }
           switch (t) {
-            case _.jw.MANUAL:
-            case _.jw.OPEN:
-            case _.jw.PENDING:
-            case _.jw.PROCESSING:
-            case _.jw.SUBMITTED:
-            case _.jw.PENDING_FUNDS:
-            case _.jw.CANCELED:
-            case _.jw.ERROR:
+            case v.jw.MANUAL:
+            case v.jw.OPEN:
+            case v.jw.PENDING:
+            case v.jw.PROCESSING:
+            case v.jw.SUBMITTED:
+            case v.jw.PENDING_FUNDS:
+            case v.jw.CANCELED:
+            case v.jw.ERROR:
               return (0, r.jsxs)(r.Fragment, {
                 children: [null != a ? O.intl.formatToPlainString(O.t.I6YOjS, {
                   payoutDate: a
@@ -232,7 +231,7 @@ let y = e => {
                   className: C.statusScheduledIcon
                 })]
               });
-            case _.jw.PAID:
+            case v.jw.PAID:
               return (0, r.jsxs)(r.Fragment, {
                 children: [O.intl.string(O.t.eoSslJ), (0, r.jsx)(u.owK, {
                   size: "md",
@@ -240,10 +239,10 @@ let y = e => {
                   className: C.statusPaidIcon
                 })]
               });
-            case _.jw.DEFERRED:
-            case _.jw.DEFERRED_INTERNAL:
-            case _.jw.REJECTED:
-            case _.jw.RISK_REVIEW:
+            case v.jw.DEFERRED:
+            case v.jw.DEFERRED_INTERNAL:
+            case v.jw.REJECTED:
+            case v.jw.RISK_REVIEW:
               return (0, r.jsxs)(r.Fragment, {
                 children: [b.Z.getStatusErrorText(t), (0, r.jsx)(u.k$p, {
                   size: "md",

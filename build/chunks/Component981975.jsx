@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 981975, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => T
 }), require("./388685.js"), require("./539854.js"), require("./472816.js"), require("./794429.js");
@@ -69,7 +68,7 @@ function S(e) {
       color: "header-secondary",
       className: y.headerNoConfigSubtitle,
       children: C.intl.format(C.t.q5f7tK, {
-        helpdeskArticleUrl: m.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
+        helpdeskArticleUrl: m.Z.getArticleURL(v.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(d.Button, {
       disabled: n,
@@ -158,7 +157,7 @@ function T(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           children: C.intl.format(C.t.q5f7tK, {
-            helpdeskArticleUrl: m.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
+            helpdeskArticleUrl: m.Z.getArticleURL(v.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, l) {
@@ -256,7 +255,7 @@ function T(e) {
         children: (0, r.jsx)(j.Z, {
           guild: t,
           role: n,
-          selectedSection: v.ZI.VERIFICATIONS,
+          selectedSection: _.ZI.VERIFICATIONS,
           setSelectedSection: s
         })
       }), (null != R ? R : 0) > 0 ? (0, r.jsxs)("div", {

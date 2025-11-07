@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 313364, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => Z
 });
@@ -76,9 +75,9 @@ function Z(e) {
               }, "header"), (0, r.jsx)("div", {
                 children: (0, r.jsxs)("div", {
                   className: P.tableContainer,
-                  children: [(0, r.jsx)(_.Z, {
+                  children: [(0, r.jsx)(v.Z, {
                     guild: n
-                  }), (0, r.jsx)(v.Z, {
+                  }), (0, r.jsx)(_.Z, {
                     guild: n
                   }), A ? (0, r.jsxs)("div", {
                     className: P.mainTableContainer,

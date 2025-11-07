@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 495892, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => P
 }), require("./539854.js"), require("./388685.js");
@@ -23,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk260107 = require("./260107.js");
 
-function _(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -77,7 +76,7 @@ function C(e) {
     }, i)), e
   }, []), [t, n]);
   return 0 === l.length ? null : (0, r.jsx)("div", {
-    className: v.actionRuleListContainer,
+    className: _.actionRuleListContainer,
     children: l
   })
 }
@@ -103,7 +102,7 @@ let y = e => {
       }
       return i
     }(e, ["className", "children"]);
-    return (0, r.jsx)(s.P3F, O(_({
+    return (0, r.jsx)(s.P3F, O(v({
       className: t,
       onClick: y,
       onMouseDown: y,
@@ -119,18 +118,18 @@ function E(e) {
     rule: n,
     onChangeRule: i,
     onContextMenu: l
-  } = e, o = () => i(O(_({}, n), {
+  } = e, o = () => i(O(v({}, n), {
     enabled: !n.enabled
   }));
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: v.ruleTextContainer,
+      className: _.ruleTextContainer,
       children: (0, r.jsx)(b.Z, {
         rule: n,
         onChangeRule: i
       })
     }), (0, r.jsxs)(N, {
-      className: v.actionContainer,
+      className: _.actionContainer,
       children: [(0, r.jsx)(s.rsf, {
         onChange: o,
         checked: null != (t = null == n ? true : n.enabled) && t
@@ -142,11 +141,11 @@ function E(e) {
           onClick: e => {
             y(e), l(e)
           },
-          className: v.menuIconButton,
+          className: _.menuIconButton,
           children: (0, r.jsx)(s.Huf, {
             size: "md",
             color: "currentColor",
-            className: v.menuIcon
+            className: _.menuIcon
           })
         })
       })]
@@ -156,9 +155,9 @@ function E(e) {
 
 function I(e) {
   return (0, m.r5)(e, m.vT.ALPHA) ? (0, r.jsx)(c.Z, {
-    className: v.alphaBetaTag
+    className: _.alphaBetaTag
   }) : (0, m.r5)(e, m.vT.BETA) ? (0, r.jsx)(d.Z, {
-    className: v.alphaBetaTag
+    className: _.alphaBetaTag
   }) : null
 }
 
@@ -174,7 +173,7 @@ function S(e) {
     updateRule: h
   } = (0, g.pH)(t.guildId), [b, x] = i.useState(t.enabled), E = (0, l.throttle)(async () => {
     if (!d) {
-      let e = O(_({}, t), {
+      let e = O(v({}, t), {
         enabled: !b
       });
       x(!b);
@@ -191,28 +190,28 @@ function S(e) {
   } = c, Z = !(0, u.Vb)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: v.ruleIconContainer,
+      className: _.ruleIconContainer,
       children: (0, r.jsx)(w, {
         size: "md",
         color: "currentColor",
-        className: v.ruleIcon
+        className: _.ruleIcon
       })
     }), (0, r.jsxs)("div", {
-      className: v.ruleTextContainer,
+      className: _.ruleTextContainer,
       children: [(0, r.jsxs)(s.Heading, {
         variant: "text-md/semibold",
         color: "header-primary",
-        className: v.ruleTextHeaderContainer,
+        className: _.ruleTextHeaderContainer,
         children: [(0, r.jsxs)("div", {
-          className: v.ruleTextHeader,
+          className: _.ruleTextHeader,
           children: [S, I(t.triggerType)]
         }), (0, r.jsx)(s.Text, {
-          className: v.ruleSubtextHeader,
+          className: _.ruleSubtextHeader,
           variant: "text-sm/normal",
           children: T
         })]
       }), Z && (0, r.jsx)(s.Text, {
-        className: v.ruleTextDescription,
+        className: _.ruleTextDescription,
         variant: "text-sm/normal",
         children: P
       }), (0, r.jsx)(C, {
@@ -220,7 +219,7 @@ function S(e) {
         triggerType: t.triggerType
       })]
     }), (0, r.jsxs)(N, {
-      className: v.actionContainer,
+      className: _.actionContainer,
       children: [(0, r.jsx)(s.rsf, {
         onChange: E,
         checked: null != b && b
@@ -232,11 +231,11 @@ function S(e) {
           onClick: e => {
             y(e), o(e)
           },
-          className: v.menuIconButton,
+          className: _.menuIconButton,
           children: (0, r.jsx)(s.Huf, {
             size: "md",
             color: "currentColor",
-            className: v.menuIcon
+            className: _.menuIcon
           })
         })
       })]
@@ -257,31 +256,31 @@ function T(e) {
   } = l;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: v.ruleIconContainer,
+      className: _.ruleIconContainer,
       children: (0, r.jsx)(c, {
         color: "currentColor",
         size: "md",
-        className: v.ruleIcon
+        className: _.ruleIcon
       })
     }), (0, r.jsxs)("div", {
-      className: v.ruleTextContainer,
+      className: _.ruleTextContainer,
       children: [(0, r.jsx)(s.Heading, {
-        className: v.ruleTextHeader,
+        className: _.ruleTextHeader,
         variant: "text-md/semibold",
         color: "header-primary",
         children: (0, r.jsxs)("div", {
-          className: v.ruleTextHeader,
+          className: _.ruleTextHeader,
           children: [a, I(t)]
         })
       }), (0, r.jsx)(s.Text, {
-        className: v.ruleTextDescription,
+        className: _.ruleTextDescription,
         variant: "text-sm/normal",
         children: o
       }), (0, r.jsx)(C, {
         triggerType: t
       })]
     }), (0, r.jsx)(N, {
-      className: v.actionContainer,
+      className: _.actionContainer,
       children: (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
@@ -306,7 +305,7 @@ function P(e) {
       let {
         default: e
       } = await n.e("25443").then(n.bind(n, 46577));
-      return n => (0, r.jsx)(e, _({
+      return n => (0, r.jsx)(e, v({
         rule: t
       }, n))
     }))
@@ -323,7 +322,7 @@ function P(e) {
     isDefaultRule: a,
     onContextMenu: g
   })), (0, r.jsx)(s.P3F, {
-    className: v.mainContainer,
+    className: _.mainContainer,
     onContextMenu: g,
     children: m
   })

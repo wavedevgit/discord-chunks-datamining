@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 853714, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => B
 }), require("./388685.js");
@@ -122,7 +121,7 @@ let G = Chunk647438.forwardRef((e, t) => {
     onChannelContextMenu: e => {
       let {
         log: t
-      } = s, i = v.Z.getGuild(l);
+      } = s, i = _.Z.getGuild(l);
       null != t.options.channel && "string" != typeof t.options.channel && null != i && (0, m.jW)(e, async () => {
         let {
           default: e
@@ -140,7 +139,7 @@ let G = Chunk647438.forwardRef((e, t) => {
         case P.KFR.CHANNEL:
         case P.KFR.CHANNEL_OVERWRITE:
           let i = j.Z.getChannel(t.targetId),
-            a = v.Z.getGuild(l);
+            a = _.Z.getGuild(l);
           if (null != i && null != a) return (0, m.jW)(e, async () => {
             let {
               default: e

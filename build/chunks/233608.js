@@ -114,11 +114,11 @@ let D = {
       case O.d4z.GUILD_FORUM:
       case O.d4z.GUILD_MEDIA:
         let d = C ? a.intl.string(a.t.aSjPgw) : a.intl.string(a.t.TS7Cnb),
-          U = C ? a.t.YjJTtH : a.t["1MTnqY"];
+          G = C ? a.t.YjJTtH : a.t["1MTnqY"];
         return [A.zO(g, a.intl.string(a.t.ouHggI)), A.Ny(g, a.intl.string(a.t.Ny49TN)), A.vq(g, d, {
           showPrivateThreads: false,
           showCreateThreads: false,
-          sectionDescription: c ? a.intl.format(U, {
+          sectionDescription: c ? a.intl.format(G, {
             setUpAutomod: () => {
               C || (0, S.MO)(), s.Z.open(t, O.pNK.GUILD_AUTOMOD)
             }

@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 112824, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   R: () => x,
   Z: () => j
@@ -63,7 +62,7 @@ function j(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), n)
     })
-  }), v = (0, r.jsxs)(r.Fragment, {
+  }), _ = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: h.itemContent,
       children: [(0, r.jsx)(c.Heading, {
@@ -97,7 +96,7 @@ function j(e) {
     text: f.intl.string(f.t["E5v/a/"]),
     children: (0, r.jsx)("div", {
       className: l()(h.simpleItemWrapper, h.disabled),
-      children: v
+      children: _
     })
   }) : (0, r.jsx)(c.P3F, {
     onClick: () => {
@@ -111,9 +110,9 @@ function j(e) {
       })
     },
     className: l()(h.simpleItemWrapper, h.clickable),
-    children: v
+    children: _
   }) : (0, r.jsx)("div", {
     className: h.simpleItemWrapper,
-    children: v
+    children: _
   })
 }

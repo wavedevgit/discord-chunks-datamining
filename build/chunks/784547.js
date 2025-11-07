@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 784547, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   card: "card__09fdc",
   dragHandle: "dragHandle__09fdc",

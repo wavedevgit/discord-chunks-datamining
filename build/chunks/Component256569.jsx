@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 256569, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => h
 }), require("./388685.js"), require("./358797.js");
@@ -78,7 +77,7 @@ function h(e) {
     placeholder: p,
     className: h,
     maxTags: b
-  } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), _ = (0, g.V)(n), {
+  } = e, x = i.useRef(null), j = i.useRef(null), _ = i.useRef(null), v = (0, g.V)(n), {
     handlePasteEvent: O,
     handleInputChange: C,
     handleKeyDown: y,
@@ -89,8 +88,8 @@ function h(e) {
     handleUnselectTag: T,
     handleResetTagSelections: P,
     handleInputBlurEvent: w
-  } = (0, g.Q)(_, {
-    scrollerRef: v,
+  } = (0, g.Q)(v, {
+    scrollerRef: _,
     mainInputRef: x,
     mainContainerRef: j
   }), {
@@ -100,7 +99,7 @@ function h(e) {
       selections: D,
       isSelecting: A
     }
-  } = _, L = (0, o.Z)(R), [k, G] = i.useState(false), M = i.useCallback(() => {
+  } = v, L = (0, o.Z)(R), [k, G] = i.useState(false), M = i.useCallback(() => {
     var e;
     G(false), P(), null == (e = x.current) || e.focus({
       preventScroll: true
@@ -134,7 +133,7 @@ function h(e) {
     tabIndex: 0,
     onKeyUp: N,
     children: [(0, r.jsxs)(f, {
-      ref: v,
+      ref: _,
       onClick: M,
       children: [R.map((e, t) => (0, r.jsx)(d.Z, {
         value: e,

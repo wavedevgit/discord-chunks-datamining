@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 853813, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => I
 });
@@ -96,7 +95,7 @@ function I(e) {
     }, [T.id, null == P ? true : P.id]), null == P) return null;
   switch (I) {
     case y.ZI.DISPLAY:
-      t = (0, r.jsx)(v.ZP, {
+      t = (0, r.jsx)(_.ZP, {
         guild: T,
         role: P,
         locked: R,
@@ -123,7 +122,7 @@ function I(e) {
       });
       break;
     case y.ZI.MEMBERS:
-      t = (0, r.jsx)(_.ZP, {
+      t = (0, r.jsx)(v.ZP, {
         guild: T,
         role: P,
         locked: R,

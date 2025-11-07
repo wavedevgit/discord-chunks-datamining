@@ -1,7 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 24318, original params: e,t,n (module,exports,require) **/
-"use strict";
-
 function r(e) {
   return "".concat(location.protocol).concat(window.GLOBAL_ENV.API_ENDPOINT, "/guilds/").concat(e, "/widget.json")
 }

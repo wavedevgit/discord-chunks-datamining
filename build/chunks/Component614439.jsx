@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 614439, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   J: () => P,
   Z: () => Z
@@ -102,10 +101,10 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         }), H(exports), k(module), M(module.every(e => true === e))
       }
     }, [D]);
-    let z = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk796027 ? Chunk999382.Z.getErrors() : null);
+    let W = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk796027 ? Chunk999382.Z.getErrors() : null);
     if (null == Chunk796027 || null == D) return null;
-    let W = e => {
-        v.Z.updateGuild({
+    let z = e => {
+        _.Z.updateGuild({
           discoverySplash: e
         })
       },
@@ -133,7 +132,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             reasonsToJoin: D.reasonsToJoin,
             socialLinks: D.socialLinks,
             about: D.about
-          }), v.Z.saveGuild(s.id, {
+          }), _.Z.saveGuild(s.id, {
             discoverySplash: s.discoverySplash,
             description: s.description
           })
@@ -236,18 +235,18 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           guild: Chunk796027,
                           guildMetadata: D,
                           disabled: !Z
-                        }), (null == z ? true : z.category) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+                        }), (null == W ? true : W.category) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
                           color: "text-danger",
                           className: Chunk133190.error,
                           variant: "text-sm/normal",
-                          children: z.category
+                          children: W.category
                         }) : null]
                       })
                     })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (() => {
                       if (null != Chunk796027) return (0, Chunk951288.jsx)(Chunk481060.gNt, {
                         label: Chunk388032.intl.string(Chunk388032.t["8bT/Cu"]),
                         description: Chunk388032.intl.string(Chunk388032.t.WCWT7A),
-                        errorMessage: (null == z ? true : z.discovery_splash) != null ? z.discovery_splash : true,
+                        errorMessage: (null == W ? true : W.discovery_splash) != null ? W.discovery_splash : true,
                         layout: "horizontal",
                         children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
                           gap: 16,
@@ -259,7 +258,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                               size: 512 * (0, p.x_)()
                             }),
                             disabled: !Z,
-                            onChange: W,
+                            onChange: z,
                             hint: Chunk388032.intl.string(Chunk388032.t.uPvxqJ),
                             imageClassName: Chunk133190.imageUploaderInnerSquare,
                             hideSize: true
@@ -268,7 +267,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                             color: Chunk755721.zx.Colors.PRIMARY,
                             children: [Chunk388032.intl.string(Chunk388032.t.yG2pUi), (0, Chunk951288.jsx)(Chunk813197.ZP, {
                               disabled: !Z,
-                              onChange: W
+                              onChange: z
                             })]
                           })]
                         })
@@ -280,7 +279,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       placeholder: Chunk388032.intl.string(Chunk388032.t.rFa9Ui),
                       onChange: e => {
                         var t;
-                        v.Z.updateGuild({
+                        _.Z.updateGuild({
                           description: null != (t = null == e ? true : e.replaceAll("\n", "")) ? t : ""
                         })
                       },
@@ -295,7 +294,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       return (0, Chunk951288.jsx)(Chunk481060.gNt, {
                         label: Chunk388032.intl.string(Chunk388032.t.vUmXsR),
                         description: Chunk388032.intl.string(Chunk388032.t.esnBnW),
-                        errorMessage: (null == z ? true : z.reasons_to_join) != null ? z.reasons_to_join : true,
+                        errorMessage: (null == W ? true : W.reasons_to_join) != null ? W.reasons_to_join : true,
                         children: (0, Chunk951288.jsx)(Chunk328159.Z, {
                           reasonMinLength: 10,
                           reasonMaxLength: 128,
@@ -306,7 +305,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     })(), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.Kx8, {
                       label: Chunk388032.intl.string(Chunk388032.t["lu+BmJ"]),
                       description: Chunk388032.intl.string(Chunk388032.t.ozSi8g),
-                      error: (null == z ? true : z.about) != null ? z.about : true,
+                      error: (null == W ? true : W.about) != null ? W.about : true,
                       showCharacterCount: true,
                       rows: 10,
                       value: D.about,
@@ -321,7 +320,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     }, "text-area-".concat(R)), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsxs)(Chunk481060.gNt, {
                       label: Chunk388032.intl.string(Chunk388032.t.V5mNyb),
                       description: Chunk388032.intl.string(Chunk388032.t.d3kA9a),
-                      errorMessage: (null == z ? true : z.social_links) != null ? z.social_links : true,
+                      errorMessage: (null == W ? true : W.social_links) != null ? W.social_links : true,
                       children: [D.socialLinks.map((e, t) => {
                         let n = F[t],
                           i = Object.values(N.z).find(e => e.presentation === n),
@@ -382,10 +381,10 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                             } : true
                           })]
                         }, "social-container-" + t)
-                      }), (null == z ? true : z.social_links) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+                      }), (null == W ? true : W.social_links) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
                         color: "text-danger",
                         variant: "text-sm/normal",
-                        children: z.social_links
+                        children: W.social_links
                       }) : null, (0, Chunk951288.jsx)(Chunk481060.Button, {
                         variant: "secondary",
                         size: "sm",
@@ -410,10 +409,10 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           disabled: !Z
                         })
                       })]
-                    }), (null == z ? true : z.is_published) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+                    }), (null == W ? true : W.is_published) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
                       color: "text-danger",
                       variant: "text-sm/normal",
-                      children: z.is_published
+                      children: W.is_published
                     }) : null]
                   })]
                 }), !D.isPublished && (0, Chunk951288.jsx)("div", {

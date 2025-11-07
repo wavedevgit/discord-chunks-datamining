@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 53774, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   analyticsCard: "analyticsCard__0dfec",
   analyticsCardTitle: "analyticsCardTitle__0dfec",

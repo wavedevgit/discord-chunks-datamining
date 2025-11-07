@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 426434, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => x
 });
@@ -27,11 +26,11 @@ function x(e) {
     } = e,
     x = n.mfaLevel,
     j = (0, l.e7)([u.Z], () => null != n && u.Z.can(f.Plq.MANAGE_GUILD, n), [n]),
-    v = (0, l.e7)([g.default], () => g.default.getCurrentUser()),
-    _ = (0, d.eM)(n, v),
-    O = null == v ? true : v.mfaEnabled,
+    _ = (0, l.e7)([g.default], () => g.default.getCurrentUser()),
+    v = (0, d.eM)(n, _),
+    O = null == _ ? true : _.mfaEnabled,
     C = x === f.BpS.ELEVATED,
-    y = _ && O,
+    y = v && O,
     N = (0, i.throttle)(async e => {
       y && await m.Z.updateMFALevel({
         guildId: n.id,
@@ -40,7 +39,7 @@ function x(e) {
       })
     }, 1e3);
   if (!j) return null;
-  y || (t = _ ? h.intl.format(h.t.nFwNyR, {
+  y || (t = v ? h.intl.format(h.t.nFwNyR, {
     settingsHook: () => (0, c.openUserSettings)(o.n.ACCOUNT_PANEL, {
       section: f.oAB.ACCOUNT
     })
@@ -60,7 +59,7 @@ function x(e) {
         children: [h.intl.string(h.t["a/93J6"]), " ", t]
       })]
     }), !y || C && E ? (0, r.jsx)(a.u, {
-      text: E ? h.intl.string(h.t["KG1V/E"]) : _ ? h.intl.string(h.t.NmsheT) : h.intl.string(h.t.LieBta),
+      text: E ? h.intl.string(h.t["KG1V/E"]) : v ? h.intl.string(h.t.NmsheT) : h.intl.string(h.t.LieBta),
       children: (0, r.jsx)(p.Z, {
         checked: C,
         disabled: true,

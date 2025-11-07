@@ -1,6 +1,5 @@
 /** Chunk was on 64982 **/
 /** chunk id: 474024, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => x
 });
@@ -25,25 +24,25 @@ function x(e) {
   let {
     profile: n,
     canManageGuild: l
-  } = e, x = n.id, j = s.Y.VISIBLE.has(n.visibility), v = (0, o.e7)([d.Z], () => {
+  } = e, x = n.id, j = s.Y.VISIBLE.has(n.visibility), _ = (0, o.e7)([d.Z], () => {
     var e;
     return (null == (e = d.Z.getProfile(x)) ? true : e.visibility) === u.k.PUBLIC_WITH_RECRUITMENT
-  }, [x]), _ = i.useRef(null);
-  (0, p.Z)(_, f.KsC.PROFILE_VISIBILITY);
+  }, [x]), v = i.useRef(null);
+  (0, p.Z)(v, f.KsC.PROFILE_VISIBILITY);
   let O = i.useCallback(() => {
       j ? m.Z.updateGuildProfile(x, {
         visibility: u.k.RESTRICTED
       }) : m.Z.updateGuildProfile(x, {
-        visibility: v ? u.k.PUBLIC_WITH_RECRUITMENT : u.k.PUBLIC
+        visibility: _ ? u.k.PUBLIC_WITH_RECRUITMENT : u.k.PUBLIC
       })
-    }, [x, v, j]),
+    }, [x, _, j]),
     C = i.useCallback(() => {
       m.Z.setSection(f.pNK.ACCESS, f.KsC.ACCESS_DISCOVERABLE)
     }, []),
     y = null == (t = n.features) ? true : t.includes(f.GuildFeatures.DISCOVERABLE);
   return (0, r.jsxs)("div", {
     className: b.twoColumnContainer,
-    ref: _,
+    ref: v,
     children: [(0, r.jsxs)("div", {
       className: b.column,
       children: [(0, r.jsx)(c.rsf, {
