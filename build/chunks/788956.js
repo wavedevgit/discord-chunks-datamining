@@ -9,8 +9,8 @@ var Chunk647438 = require("./647438.js"),
   Chunk553795 = require("./553795.js");
 
 function a(e) {
-  let t = (0, r.e7)([o.Z], () => null != e ? o.Z.getAccount(null, e) : null),
-    n = (0, r.e7)([o.Z], () => o.Z.isFetching()),
+  let t = (0, i.e7)([o.Z], () => null != e ? o.Z.getAccount(null, e) : null),
+    n = (0, i.e7)([o.Z], () => o.Z.isFetching()),
     a = null != t && !t.revoked;
   return {
     loading: n,
@@ -22,7 +22,7 @@ function a(e) {
       };
       try {
         var n;
-        let l = await i.Z.authorize(e, {
+        let l = await r.Z.authorize(e, {
           location: null != t ? t : "Account Linking"
         });
         if (l.ok && (null == (n = l.body) ? true : n.url) != null) return {

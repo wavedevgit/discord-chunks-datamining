@@ -27,7 +27,7 @@ function f(e) {
     canConnect: b,
     startConnection: C,
     loading: O
-  } = (0, u.B)(f.provider_id), w = r.useCallback(async () => {
+  } = (0, u.B)(f.provider_id), Z = i.useCallback(async () => {
     var e, t, n;
     d.default.track(p.rMx.GUILD_ONBOARDING_CONNECTION_CLICKED, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -60,10 +60,10 @@ function f(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)), await C(j)
-  }, [C, g, f.provider_id, j]), Z = r.useMemo(() => {
+  }, [C, g, f.provider_id, j]), w = i.useMemo(() => {
     if (null != f.provider_id) {
       let e = c.Z.get(f.provider_id),
-        t = (null == e ? true : e.icon) != null ? (0, i.wj)(v) ? e.icon.darkPNG : e.icon.lightPNG : null;
+        t = (null == e ? true : e.icon) != null ? (0, r.wj)(v) ? e.icon.darkPNG : e.icon.lightPNG : null;
       if (null != t) return (0, l.jsx)("img", {
         src: t,
         alt: x,
@@ -81,10 +81,10 @@ function f(e) {
   return (0, l.jsx)(m.Z, {
     displayName: x,
     description: f.description,
-    icon: Z,
+    icon: w,
     isLoading: O,
     isConnected: y,
     canConnect: b,
-    onConnect: w
+    onConnect: Z
   })
 }

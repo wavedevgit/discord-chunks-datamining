@@ -23,22 +23,22 @@ function v(e) {
   let {
     guildId: t,
     option: n,
-    selected: i,
+    selected: r,
     onSelect: v,
     hideMemberCount: x,
     canBeNew: y
-  } = e, b = (0, u.wj)((0, p.ZP)()), [C, O] = r.useState(false), w = C && !x, Z = r.useRef(null), {
-    reducedMotion: N
-  } = r.useContext(d.Sfi), _ = (0, c.e7)([h.ZP], () => {
-    var e, t, l, r;
-    return (null == (e = n.emoji) ? true : e.id) != null && null != (r = null == (t = h.ZP.getCustomEmojiById(null == (l = n.emoji) ? true : l.id)) ? true : t.animated) && r
-  }), P = (0, f.Z)(t, 1e3), k = null == P || null == n.roleIds ? 0 : Math.max(...n.roleIds.map(e => P[e])), I = y && !i && n.isUnseen, E = (0, d.q_F)({
-    transform: i || N.enabled ? "scale(1)" : "scale(0.7)",
-    opacity: +!!i,
+  } = e, b = (0, u.wj)((0, p.ZP)()), [C, O] = i.useState(false), Z = C && !x, w = i.useRef(null), {
+    reducedMotion: _
+  } = i.useContext(d.Sfi), N = (0, c.e7)([h.ZP], () => {
+    var e, t, l, i;
+    return (null == (e = n.emoji) ? true : e.id) != null && null != (i = null == (t = h.ZP.getCustomEmojiById(null == (l = n.emoji) ? true : l.id)) ? true : t.animated) && i
+  }), P = (0, f.Z)(t, 1e3), k = null == P || null == n.roleIds ? 0 : Math.max(...n.roleIds.map(e => P[e])), E = y && !r && n.isUnseen, I = (0, d.q_F)({
+    transform: r || _.enabled ? "scale(1)" : "scale(0.7)",
+    opacity: +!!r,
     config: {
       duration: 150
     }
-  }, "animate-always"), D = (0, d.dQu)(s.Z.colors.BORDER_SUBTLE), M = (0, d.dQu)(s.Z.unsafe_rawColors.BRAND_500), R = (0, d.q_F)({
+  }, "animate-always"), D = (0, d.dQu)(s.Z.colors.BORDER_SUBTLE), M = (0, d.dQu)(s.Z.unsafe_rawColors.BRAND_500), A = (0, d.q_F)({
     from: {
       color: M.spring()
     },
@@ -49,9 +49,9 @@ function v(e) {
       duration: 300
     },
     delay: 500
-  }, "animate-always"), T = (0, d.Yzy)(w, {
+  }, "animate-always"), R = (0, d.Yzy)(Z, {
     from: {
-      transform: N.enabled ? "translateX(0)" : "translateX(8px)",
+      transform: _.enabled ? "translateX(0)" : "translateX(8px)",
       opacity: 0
     },
     enter: {
@@ -65,20 +65,20 @@ function v(e) {
     config: {
       duration: 150
     }
-  }, "animate-always"), [A, S] = r.useState(false);
-  r.useEffect(() => {
-    if (w) return Z.current = setTimeout(() => {
-      O(false), Z.current = null
+  }, "animate-always"), [T, S] = i.useState(false);
+  i.useEffect(() => {
+    if (Z) return w.current = setTimeout(() => {
+      O(false), w.current = null
     }, 3e3), () => {
-      null != Z.current && clearTimeout(Z.current)
+      null != w.current && clearTimeout(w.current)
     }
-  }, [w]);
+  }, [Z]);
   let B = o()(j.optionButtonWrapper, {
-      [j.selected]: i,
-      [j.pressed]: A
+      [j.selected]: r,
+      [j.pressed]: T
     }),
-    z = I ? {
-      borderColor: R.color
+    z = E ? {
+      borderColor: A.color
     } : {};
   return (0, l.jsx)(a.animated.div, {
     style: z,
@@ -86,12 +86,12 @@ function v(e) {
     children: (0, l.jsxs)(d.P3F, {
       className: j.optionButton,
       onClick: () => {
-        O(!i), v(!i)
+        O(!r), v(!r)
       },
       onMouseDown: () => S(true),
       onMouseUp: () => S(false),
       children: [null != n.emoji && (null != n.emoji.id || null != n.emoji.name) ? (0, l.jsx)(m.Z, {
-        animated: n.emoji.animated || _,
+        animated: n.emoji.animated || N,
         className: j.buttonEmoji,
         emojiId: n.emoji.id,
         emojiName: n.emoji.name
@@ -108,14 +108,14 @@ function v(e) {
         }) : null]
       }), (0, l.jsx)(a.animated.div, {
         className: j.checkIcon,
-        style: E,
+        style: I,
         children: (0, l.jsx)(d.dz2, {
           size: "custom",
           width: 10,
           height: 10,
           color: s.Z.unsafe_rawColors.WHITE_500.css
         })
-      }), T((e, t) => k > 0 && t && (0, l.jsx)(a.animated.div, {
+      }), R((e, t) => k > 0 && t && (0, l.jsx)(a.animated.div, {
         className: j.memberCount,
         style: e,
         children: (0, l.jsx)(d.Text, {
@@ -125,7 +125,7 @@ function v(e) {
             memberCount: k
           })
         })
-      })), I && (0, l.jsx)(d.IGR, {
+      })), E && (0, l.jsx)(d.IGR, {
         color: s.Z.unsafe_rawColors.BRAND_260.css,
         text: g.intl.string(g.t.y2b7CA),
         className: j.newBadge

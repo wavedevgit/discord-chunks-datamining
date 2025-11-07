@@ -1,23 +1,23 @@
 /** Chunk was on 26494 **/
 /** chunk id: 298692, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => i
+  B: () => r
 });
 var Chunk647438 = require("./647438.js"),
   Chunk788956 = require("./788956.js");
 
-function i(e) {
+function r(e) {
   let {
     loading: t,
     hasConnection: n,
-    canConnect: i,
+    canConnect: r,
     startConnection: o,
     account: a
-  } = (0, r.d)(e);
+  } = (0, i.d)(e);
   return {
     loading: t,
     hasConnection: n,
-    canConnect: i,
+    canConnect: r,
     startConnection: l.useCallback(async e => {
       let t = await o(e);
       if (t.success && null != t.url) {

@@ -15,11 +15,11 @@ function a(e) {
     guildId: n,
     location: a
   } = e;
-  return t.connection_type === o.zz.APPLICATION ? (0, l.jsx)(r.Z, {
+  return t.connection_type === o.zz.APPLICATION ? (0, l.jsx)(i.Z, {
     connection: t,
     guildId: n,
     location: a
-  }) : t.connection_type === o.zz.PROVIDER_CONNECTED_ACCOUNT ? (0, l.jsx)(i.Z, {
+  }) : t.connection_type === o.zz.PROVIDER_CONNECTED_ACCOUNT ? (0, l.jsx)(r.Z, {
     connection: t,
     guildId: n,
     location: a

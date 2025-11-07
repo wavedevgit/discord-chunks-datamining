@@ -22,12 +22,12 @@ function d(e) {
     onChange: d,
     canBeNew: m,
     memberCounts: p
-  } = e, h = r.useMemo(() => {
+  } = e, h = i.useMemo(() => {
     let e = new Map;
     return t.forEach(t => {
       e.set(t.id, t)
     }), e
-  }, [t]), f = r.useMemo(() => {
+  }, [t]), f = i.useMemo(() => {
     let e = [];
     return t.forEach(t => {
       e.push({
@@ -36,25 +36,25 @@ function d(e) {
         key: t.id
       })
     }), e
-  }, [t]), g = r.useCallback(e => {
-    var t, n, r, i;
+  }, [t]), g = i.useCallback(e => {
+    var t, n, i, r;
     if (null == e) return;
     let o = h.get(e.value);
     if (null != o && u(o.emoji)) return (0, l.jsx)(a.Z, {
       emojiId: null == (t = o.emoji) ? true : t.id,
       emojiName: null == (n = o.emoji) ? true : n.name,
-      animated: null != (i = null == (r = o.emoji) ? true : r.animated) && i
+      animated: null != (r = null == (i = o.emoji) ? true : i.animated) && r
     })
-  }, [h]), j = r.useCallback((e, t) => {
+  }, [h]), j = i.useCallback((e, t) => {
     if (null == e || t.inPill) return;
     let n = h.get(e.value);
     if (null == n || !u(n.emoji)) return;
-    let r = null == p || null == n.roleIds ? 0 : Math.max(...n.roleIds.map(e => p[e])),
-      a = null != p && r > 0;
+    let i = null == p || null == n.roleIds ? 0 : Math.max(...n.roleIds.map(e => p[e])),
+      a = null != p && i > 0;
     return (0, l.jsxs)("div", {
       className: s.suffix,
       children: [m && n.isUnseen && (0, l.jsx)(o.IGR, {
-        color: i.Z.unsafe_rawColors.BRAND_260.css,
+        color: r.Z.unsafe_rawColors.BRAND_260.css,
         text: c.intl.string(c.t.y2b7CA),
         className: s.newBadge
       }), a && (0, l.jsx)("div", {
@@ -64,12 +64,12 @@ function d(e) {
           variant: "text-xs/normal",
           color: "always-white",
           children: c.intl.format(c.t.EgKsZA, {
-            memberCount: r
+            memberCount: i
           })
         })
       })]
     })
-  }, [m, p, h]), v = r.useCallback(e => {
+  }, [m, p, h]), v = i.useCallback(e => {
     let t = [];
     e.forEach(e => {
       let n = h.get(e);
