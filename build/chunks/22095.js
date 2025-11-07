@@ -150,7 +150,7 @@ async function M() {
   if (!Chunk569984.Z.isFetchingCurrentQuests) {
     Chunk570140.Z.dispatch({
       type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
-    }), Chunk705006.Z.recordQuestRequestAttempt(Chunk981631.ANM.QUESTS_CURRENT_QUESTS, "fetch_quests");
+    });
     try {
       let e = await Chunk544891.tn.get({
           url: Chunk981631.ANM.QUESTS_CURRENT_QUESTS,
@@ -168,15 +168,11 @@ async function M() {
         quests: Chunk990547,
         excludedQuests: Chunk479531,
         questEnrollmentBlockedUntil: require
-      }), Chunk705006.Z.recordQuestRequestApiResponse(Chunk981631.ANM.QUESTS_CURRENT_QUESTS, {
-        wasSuccessful: true
       })
     } catch (e) {
       Chunk570140.Z.dispatch({
         type: "QUESTS_FETCH_CURRENT_QUESTS_FAILURE",
         error: new Chunk479531.Z(module)
-      }), Chunk705006.Z.recordQuestRequestApiResponse(Chunk981631.ANM.QUESTS_CURRENT_QUESTS, {
-        wasSuccessful: false
       })
     }
   }
@@ -489,51 +485,55 @@ function Q(e) {
   })
 }
 async function J(e, t) {
-  var n, r, c, d, _, p, E;
-  a.Z.dispatch({
+  var n, r, c, d, _, p, E, b;
+  let O = Date.now();
+  m.Z.recordQuestRequestAttempt("/quests/decision", t, e), a.Z.dispatch({
     type: "QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN",
     placement: e
-  }), m.Z.recordQuestRequestAttempt("/quests/decision", t);
+  });
   try {
     let o = await (0, l.Gg)(),
-      E = await (0, s.Gy)(),
-      b = (await i.tn.get({
-        url: T.ANM.QUEST_FETCH_QUEST_TO_DELIVER(e, null == o ? true : o.uuid, E.uuid),
+      b = await (0, s.Gy)(),
+      v = (await i.tn.get({
+        url: T.ANM.QUEST_FETCH_QUEST_TO_DELIVER(e, null == o ? true : o.uuid, b.uuid),
         rejectWithError: false
       })).body,
-      O = b.quest,
-      v = null != O ? (0, g.q6)(O) : true;
+      I = v.quest,
+      S = null != I ? (0, g.q6)(I) : true;
     if (a.Z.dispatch({
         type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS",
-        quest: v,
+        quest: S,
         adDecisionData: {
-          ad_id: null == (n = b.ad_identifiers) ? true : n.ad_id,
-          adset_id: null == (r = b.ad_identifiers) ? true : r.adset_id,
-          ad_set_id: null == (c = b.ad_identifiers) ? true : c.ad_set_id,
-          campaign_id: null == (d = b.ad_identifiers) ? true : d.campaign_id,
-          creative_id: null == (_ = b.ad_identifiers) ? true : _.creative_id,
-          creative_type: null == (p = b.ad_identifiers) ? true : p.creative_type,
-          decision_id: b.request_id,
-          is_targeted: null != b.ad_identifiers
+          ad_id: null == (n = v.ad_identifiers) ? true : n.ad_id,
+          adset_id: null == (r = v.ad_identifiers) ? true : r.adset_id,
+          ad_set_id: null == (c = v.ad_identifiers) ? true : c.ad_set_id,
+          campaign_id: null == (d = v.ad_identifiers) ? true : d.campaign_id,
+          creative_id: null == (_ = v.ad_identifiers) ? true : _.creative_id,
+          creative_type: null == (p = v.ad_identifiers) ? true : p.creative_type,
+          decision_id: v.request_id,
+          is_targeted: null != v.ad_identifiers
         },
-        metadataRaw: b.metadata_raw,
-        adContext: b.ad_context,
-        responseTtlSeconds: b.response_ttl_seconds,
-        placement: e
+        metadataRaw: v.metadata_raw,
+        adContext: v.ad_context,
+        responseTtlSeconds: v.response_ttl_seconds,
+        placement: e,
+        fetchedAt: O
       }), m.Z.recordQuestRequestApiResponse("/quests/decision", {
         wasSuccessful: true,
-        adRequestId: String(b.request_id)
-      }), null == v) return;
-    e === y.Ok.DESKTOP_ACCOUNT_PANEL_AREA && h.Z.startTracking(v.id), f.default.track(T.rMx.QUEST_DECISION_RECEIVED, P(N({}, (0, u.Z)()), {
-      quest_id: v.id,
+        adRequestId: String(v.request_id),
+        currentQuestId: null != (E = null == S ? true : S.id) ? E : null,
+        currentFetchedAt: O
+      }), null == S) return;
+    e === y.Ok.DESKTOP_ACCOUNT_PANEL_AREA && h.Z.startTracking(S.id), f.default.track(T.rMx.QUEST_DECISION_RECEIVED, P(N({}, (0, u.Z)()), {
+      quest_id: S.id,
       caller_source: t,
-      ad_request_id: String(b.request_id)
+      ad_request_id: String(v.request_id)
     }))
   } catch (n) {
     m.Z.recordQuestRequestApiResponse("/quests/decision", {
       wasSuccessful: false
     }), f.default.track(T.rMx.QUEST_DECISION_ROUNDTRIP_ERROR, P(N({}, (0, u.Z)()), {
-      reason: null != (E = null == n ? true : n.message) ? E : null,
+      reason: null != (b = null == n ? true : n.message) ? b : null,
       api_error: new o.Z(n).getAnyErrorMessage(),
       caller_source: t
     })), a.Z.dispatch({

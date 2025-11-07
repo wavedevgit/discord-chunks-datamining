@@ -60,7 +60,7 @@ require.d(exports, {
   hF: () => tU,
   hQ: () => ec,
   iQ: () => et,
-  il: () => e3,
+  il: () => e2,
   jY: () => tj,
   lQ: () => $,
   nc: () => eY,
@@ -668,7 +668,7 @@ let ez = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
     }
   },
   e1 = e => o.T.ALL.has(e) ? e : null,
-  e2 = e => {
+  e3 = e => {
     var t, n;
     let {
       quest: r,
@@ -692,7 +692,7 @@ let ez = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
       includeTaskTypes: i
     })
   },
-  e3 = (e, t) => {
+  e2 = (e, t) => {
     if (e5(e)) return {
       progressSeconds: 0,
       targetSeconds: 1,
@@ -700,7 +700,7 @@ let ez = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
       percentComplete: 0,
       taskType: o.X.STREAM_ON_DESKTOP
     };
-    if (tn(e)) return e2({
+    if (tn(e)) return e3({
       quest: e,
       includeTaskTypes: null != t ? t : tc(e) ? o.T.CONSOLE : o.T.ALL
     });

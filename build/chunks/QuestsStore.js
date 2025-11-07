@@ -412,20 +412,23 @@ function eG(e) {
     adDecisionData: r,
     adContext: o,
     responseTtlSeconds: s,
-    metadataRaw: l
+    metadataRaw: l,
+    fetchedAt: c
   } = e;
   d = Date.now(), i = false, (a = new Map(a)).set(n, false);
   let {
-    enableNewRequestBehavior: c
+    enableNewRequestBehavior: u
   } = U.Z.getConfig({
     location: "handleFetchQuestToDeliverSuccess"
   });
-  if (c) {
-    var u;
+  if (u) {
+    var f, _, p;
     let e = {
-      questId: null != (u = null == t ? true : t.id) ? u : null,
-      fetchedAt: d,
-      ttlMillis: eB(s)
+      questId: null != (f = null == t ? true : t.id) ? f : null,
+      fetchedAt: c,
+      ttlMillis: eB(s),
+      adSetId: null != (_ = null == r ? true : r.ad_set_id) ? _ : null,
+      adRequestId: null != (p = null == r ? true : r.decision_id) ? p : null
     };
     (A = new Map(A)).set(n, e)
   } else null == t ? I.delete(n) : I.set(n, {
