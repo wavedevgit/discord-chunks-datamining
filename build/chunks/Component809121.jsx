@@ -59,7 +59,7 @@ function G(e) {
     guildId: n,
     instance: t
   } = e, [i, l] = a.useState(false), s = a.useCallback(() => {
-    l(true), (0, p.WX)(n, t.id).finally(() => {
+    l(true), (0, j.WX)(n, t.id).finally(() => {
       l(false)
     })
   }, [n, t.id]);
@@ -104,7 +104,7 @@ function V(e) {
   let {
     guildId: n
   } = e, [t, i] = a.useState(false), l = a.useCallback(() => {
-    i(true), (0, p.mF)(n).finally(() => {
+    i(true), (0, j.mF)(n).finally(() => {
       i(false)
     })
   }, [n]);
@@ -137,9 +137,9 @@ function W(e) {
   let {
     guildId: n,
     instance: t
-  } = e, i = (0, N.Z)(t), [p, E] = (0, g.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), Z = p !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, W = (0, o.e7)([x.Z], () => x.Z.getDetectableGame(t.gameId)), L = a.useCallback(() => {
+  } = e, i = (0, N.Z)(t), [j, E] = (0, g.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), Z = j !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, W = (0, o.e7)([x.Z], () => x.Z.getDetectableGame(t.gameId)), L = a.useCallback(() => {
     var e;
-    (0, j.wz)(n, t.gameId, null != (e = null == W ? true : W.name) ? e : "", t.id), Z || null == t.providerType ? (0, S.Z)(n, t) : (0, P.Z)({
+    (0, p.wz)(n, t.gameId, null != (e = null == W ? true : W.name) ? e : "", t.id), Z || null == t.providerType ? (0, S.Z)(n, t) : (0, P.Z)({
       provider: t.providerType,
       onAccept: () => {
         E(T.L.TAKE_ACTION), (0, S.Z)(n, t)
@@ -150,7 +150,7 @@ function W(e) {
     animateCopyIcon: U
   } = (0, O.Z)(n, t.id, m.Z.GAME_SERVER_GAME, null != i ? i : ""), F = (0, I.Z)(t.gameId, "cover"), K = (0, b.Z)(n), q = a.useCallback(() => {
     var e;
-    (0, j.$M)(n, t.id), (0, v.q)({
+    (0, p.$M)(n, t.id), (0, v.q)({
       href: null != (e = t.gameServerPanelUrl) ? e : ""
     })
   }, [t.gameServerPanelUrl, n, t.id]), H = a.useMemo(() => {
