@@ -168,7 +168,10 @@ function X() {
 }
 
 function Q(e) {
-  P.has(e) && Z.allDone && o.Z.successfullyShown(e)
+  if (Z.allDone) {
+    if (!P.has(e)) return void o.Z.updateOverlayState(e, f.mM.WAITING_FOR_SUCCESSFUL_SHOW);
+    o.Z.successfullyShown(e)
+  }
 }
 
 function J(e) {
@@ -186,7 +189,7 @@ function $(e) {
       windowHandleSentToNative: t
     }), t) {
     let e = null != L ? L : d.UNSET_PID;
-    o.Z.updateOverlayState(e, f.mM.WAITING_FOR_REACT_INITIALIZATION), (0, _.bs)(e, "window_handle_initialized")
+    Z.reactInitializationStarted ? o.Z.updateOverlayState(e, f.mM.WAITING_FOR_SUCCESSFUL_SHOW) : o.Z.updateOverlayState(e, f.mM.WAITING_FOR_REACT_INITIALIZATION), (0, _.bs)(e, "window_handle_initialized")
   }
 }
 async function ee() {
@@ -280,7 +283,7 @@ function ed() {
 function ef() {
   Z = C(T({}, Z), {
     allDone: true
-  }), P.forEach(e => {
+  }), R.forEach(e => {
     Q(e)
   })
 }

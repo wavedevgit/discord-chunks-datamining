@@ -25,7 +25,7 @@ let d = new Chunk710845.Z("OverlayWidgetPinManager"),
   _ = 288e5,
   p = false,
   h = new Set([Chunk981631.Odu.GO_LIVE]),
-  m = new Set([Chunk837268.mM.WAITING_FOR_POPOUT_OPEN, Chunk837268.mM.WAITING_FOR_REACT_INITIALIZATION, Chunk837268.mM.WAITING_FOR_PID_FOCUS]),
+  m = new Set([Chunk837268.mM.WAITING_FOR_POPOUT_OPEN, Chunk837268.mM.WAITING_FOR_REACT_INITIALIZATION, Chunk837268.mM.WAITING_FOR_PID_FOCUS, Chunk837268.mM.WAITING_FOR_SUCCESSFUL_SHOW]),
   g = e => {
     let t = f[e];
     return null == t || Date.now() - t < _

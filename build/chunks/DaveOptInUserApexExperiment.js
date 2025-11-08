@@ -2,16 +2,18 @@
 /** chunk id: 529558, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => a,
-  m: () => i
+  NJ: () => o,
+  Th: () => s,
+  m8: () => a
 });
-var Chunk818083 = require("./818083.js");
-let i = (0, Chunk818083.B)({
+var Chunk818083 = require("./818083.js"),
+  Chunk427164 = require("./427164.js");
+let a = (0, Chunk818083.B)({
     kind: "user",
     id: "2023-08_secure_frames_encryption",
     label: "Allowing testing DAVE protocol for voice/video",
     defaultConfig: {
-      protocolVersionFloor: 0,
+      protocolVersionFloor: 1,
       canSupportDaveProtocol: false
     },
     treatments: [{
@@ -23,7 +25,7 @@ let i = (0, Chunk818083.B)({
       }
     }]
   }),
-  a = (0, Chunk818083.B)({
+  o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-06_dave_for_browser",
     label: "Allowing testing DAVE protocol for browser",
@@ -57,4 +59,16 @@ let i = (0, Chunk818083.B)({
         preload: true
       }
     }]
+  }),
+  s = (0, Chunk427164.le)({
+    kind: "user",
+    name: "2025-11-dave-opt-in",
+    defaultConfig: {
+      allowOptIn: false
+    },
+    variations: {
+      1: {
+        allowOptIn: true
+      }
+    }
   })
