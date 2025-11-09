@@ -74,14 +74,14 @@ function A(e) {
     selectedColors: w,
     onClose: B
   } = e, Z = (0, c.ZP)(), M = (0, s.wjy)(Z), [G, Y] = (0, o.useState)(M), H = (0, S.ZP)(t.id, null), {
-    bannerSrc: F
+    bannerSrc: z
   } = (0, j.Z)({
     displayProfile: H,
     size: 413,
     canAnimate: false
-  }), z = (0, a.cj)([v.Z, d.Z], () => null == n ? v.Z.getAllPending() : d.Z.getAllPending()), U = (0, _.SD)({
+  }), F = (0, a.cj)([v.Z, d.Z], () => null == n ? v.Z.getAllPending() : d.Z.getAllPending()), U = (0, _.SD)({
     userId: t.id,
-    image: z.pendingAvatar
+    image: F.pendingAvatar
   }), {
     userNameplate: q,
     guildNameplate: K,
@@ -115,7 +115,7 @@ function A(e) {
         onClick: W,
         innerClassName: E.closeButton
       })
-    }), null != F && (0, l.jsx)(C.Z, {
+    }), null != z && (0, l.jsx)(C.Z, {
       user: t,
       displayProfile: H,
       themeType: k.l.MODAL_V2,
@@ -124,7 +124,7 @@ function A(e) {
       children: (0, l.jsx)("div", {
         className: E.bannerBackground,
         style: {
-          backgroundImage: "url(".concat(F, ")")
+          backgroundImage: "url(".concat(z, ")")
         }
       })
     }), (0, l.jsx)(s.f6W, {
@@ -135,7 +135,7 @@ function A(e) {
         children: [(0, l.jsx)(b.Z, R(D({
           user: t,
           guild: n
-        }, z), {
+        }, F), {
           pendingAvatar: U,
           pendingGlobalName: r,
           pendingDisplayNameStyles: J.displayNameStyles,
