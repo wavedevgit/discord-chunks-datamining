@@ -8,7 +8,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk302221 = require("./302221.js"),
-  Chunk781176 = require("./781176.js");
+  Chunk587137 = require("./587137.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -49,7 +49,7 @@ class d extends(r = Chunk647438.PureComponent) {
       className: module,
       children: (0, Chunk951288.jsx)("canvas", {
         ref: this.canvas,
-        className: Chunk781176.canvas,
+        className: Chunk587137.canvas,
         width: exports,
         height: require
       })

@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk952265 = require("./952265.js"),
   Chunk602091 = require("./602091.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk233477 = require("./233477.js");
+  Chunk592923 = require("./592923.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,7 +77,7 @@ class T extends Chunk647438.PureComponent {
     });
     return (0, Chunk951288.jsx)(exports, {
       children: (0, Chunk951288.jsx)("div", {
-        className: o()(Chunk233477.layer, !require && Chunk233477.inactive),
+        className: o()(Chunk592923.layer, !require && Chunk592923.inactive),
         children: Chunk392711
       })
     })

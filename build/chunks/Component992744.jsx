@@ -1,4 +1,4 @@
-/** Chunk was on 14953 **/
+/** Chunk was on 30025 **/
 /** chunk id: 992744, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk984370 = require("./984370.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk503484 = require("./503484.js"),
+  Chunk483710 = require("./483710.js"),
   Chunk66737 = require("./66737.js"),
   Chunk525377 = require("./525377.js");
 let g = () => {
@@ -22,7 +22,7 @@ let g = () => {
   }, []);
   let t = (0, Chunk780384.wj)(module) ? Chunk66737 : Chunk525377;
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk503484.container,
+    className: Chunk483710.container,
     children: [(0, Chunk951288.jsxs)(Chunk984370.Z, {
       toolbar: (0, Chunk951288.jsx)(Chunk647438.Fragment, {}),
       children: [(0, Chunk951288.jsx)(Chunk984370.Z.Icon, {
@@ -32,17 +32,17 @@ let g = () => {
         children: Chunk388032.intl.string(Chunk388032.t["8LKchl"])
       })]
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk503484.content,
+      className: Chunk483710.content,
       children: [(0, Chunk951288.jsx)("img", {
         alt: "",
-        className: Chunk503484.splashImage,
+        className: Chunk483710.splashImage,
         src: exports
       }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
-        className: Chunk503484.splashHeader,
+        className: Chunk483710.splashHeader,
         variant: "heading-lg/medium",
         children: Chunk388032.intl.string(Chunk388032.t.m9gRVN)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk503484.splashText,
+        className: Chunk483710.splashText,
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.wC3j56)
       })]

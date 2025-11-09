@@ -1,4 +1,4 @@
-/** Chunk was on 99904 **/
+/** Chunk was on 22740 **/
 /** chunk id: 581302, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -9,14 +9,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk703656 = require("./703656.js"),
   Chunk52647 = require("./52647.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk906406 = require("./906406.js");
+  Chunk103663 = require("./103663.js");
 let c = function() {
   let {
     resetOnboardingExperience: e,
     resetQuestStatus: t
   } = (0, Chunk52647.Z)();
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk906406.container,
+    className: Chunk103663.container,
     children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
       label: "Virtual Currency Configuration",
       description: "Click the button below to reset your onboarding state for Virtual Currency.",

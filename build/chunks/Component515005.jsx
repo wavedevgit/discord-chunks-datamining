@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk490095 = require("./490095.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk940992 = require("./940992.js");
+  Chunk950244 = require("./950244.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,8 +81,8 @@ function N(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions),
-  P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewPadding),
+let R = (0, Chunk468194.Mg)(Chunk950244.__invalid_stickerPickerPreviewDimensions),
+  P = (0, Chunk468194.Mg)(Chunk950244.__invalid_stickerPickerPreviewPadding),
   w = 250,
   D = Chunk647438.memo(function(e) {
     let {
@@ -141,7 +141,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
             }), (0, c.ZDy)(async () => {
               let {
                 default: t
-              } = await Promise.all([n.e("93626"), n.e("97162")]).then(n.bind(n, 136735));
+              } = await Promise.all([n.e("93626"), n.e("38236")]).then(n.bind(n, 136735));
               return n => (0, r.jsx)(t, S({
                 guildId: e.guild_id
               }, n))

@@ -16,8 +16,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk434624 = require("./434624.jsx"),
   Chunk287151 = require("./287151.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk127947 = require("./127947.js"),
-  Chunk893973 = require("./893973.js");
+  Chunk487111 = require("./487111.js"),
+  Chunk639543 = require("./639543.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -94,7 +94,7 @@ class S extends Chunk647438.PureComponent {
       visibleReactionsCount: A
     } = this.props, {
       disableTransitionAppear: C
-    } = this.state, N = v ? Chunk893973 : Chunk127947, R = A > 0;
+    } = this.state, N = v ? Chunk639543 : Chunk487111, R = A > 0;
     if (!R && !y) return null;
     let P = y || R;
     return (0, Chunk951288.jsxs)(Chunk215569.W, {

@@ -1,4 +1,4 @@
-/** Chunk was on 31899 **/
+/** Chunk was on 94709 **/
 /** chunk id: 373274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => eb,
@@ -53,7 +53,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk53425 = require("./53425.jsx"),
   Chunk424785 = require("./424785.jsx"),
   Chunk770202 = require("./770202.jsx"),
-  Chunk437621 = require("./437621.jsx"),
+  Chunk79556 = require("./79556.jsx"),
   Chunk428127 = require("./428127.jsx"),
   Chunk950969 = require("./950969.jsx"),
   Chunk233657 = require("./233657.jsx"),
@@ -63,7 +63,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk776677 = require("./776677.js");
+  Chunk344110 = require("./344110.js");
 
 function eu(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -198,14 +198,14 @@ class ef extends(r = Chunk647438.PureComponent) {
       guildChannelsVersion: a
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk776677.positionedContainer,
+      className: Chunk344110.positionedContainer,
       children: (0, Chunk951288.jsx)(Chunk950969.Z, {
         ref: this.unreadTopRef,
         textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT3),
         textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LJ"]),
         hide: null == module && (r || null != exports || null != require),
-        className: Chunk776677.unreadTop,
-        barClassName: Chunk776677.unreadBar,
+        className: Chunk344110.unreadTop,
+        barClassName: Chunk344110.unreadBar,
         guildId: Chunk647438,
         guildChannels: Chunk392711,
         guildChannelsVersion: a,
@@ -230,8 +230,8 @@ class ef extends(r = Chunk647438.PureComponent) {
       textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT3),
       textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LJ"]),
       hide: null == r && Chunk647438,
-      className: Chunk776677.unreadBottom,
-      barClassName: Chunk776677.unreadBar,
+      className: Chunk344110.unreadBottom,
+      barClassName: Chunk344110.unreadBar,
       guildId: module,
       guildChannels: exports,
       guildChannelsVersion: require,

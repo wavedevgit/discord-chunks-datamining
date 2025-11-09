@@ -1,4 +1,4 @@
-/** Chunk was on 50433 **/
+/** Chunk was on 33311 **/
 /** chunk id: 63954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H,
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk134483 = require("./134483.jsx"),
   Chunk683650 = require("./683650.jsx"),
   Chunk70956 = require("./70956.js"),
-  Chunk188764 = require("./188764.js");
+  Chunk745776 = require("./745776.js");
 
 function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -333,13 +333,13 @@ function W() {
   a()(false !== W.preview && null != W.preview, "Preview config must have property preview: true");
   let eu = W.config.taskConfigV2.tasks[Chunk754700.X.WATCH_VIDEO];
   return (0, Chunk951288.jsxs)(Chunk481060.zJl, {
-    className: Chunk188764.container,
+    className: Chunk745776.container,
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/bold",
-      className: Chunk188764.heading,
+      className: Chunk745776.heading,
       children: "Quest Preview Tool"
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk188764.fields,
+      className: Chunk745776.fields,
       children: (0, Chunk951288.jsx)(Chunk916028.Z, {
         onSelect: function(e) {
           $(e), null != e && (z(function(e) {
@@ -356,10 +356,10 @@ function W() {
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
-      className: Chunk188764.subheading,
+      className: Chunk745776.subheading,
       children: "Task Config"
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk188764.fields,
+      className: Chunk745776.fields,
       children: (0, Chunk951288.jsx)(Chunk749912.Z, {
         taskDuration: ec,
         taskConfigV2: W.config.taskConfigV2,
@@ -373,10 +373,10 @@ function W() {
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
-      className: Chunk188764.subheading,
+      className: Chunk745776.subheading,
       children: "Messages"
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk188764.fields,
+      className: Chunk745776.fields,
       children: [(0, Chunk951288.jsx)(Chunk602683.Z, {
         title: "Quest Name",
         assetKey: "questName",
@@ -412,10 +412,10 @@ function W() {
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
-      className: Chunk188764.subheading,
+      className: Chunk745776.subheading,
       children: "Assets"
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk188764.fields,
+      className: Chunk745776.fields,
       children: [(0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Hero",
         assetKey: "hero",
@@ -539,12 +539,12 @@ function W() {
       })]
     }, t)), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
-      className: Chunk188764.subheading,
+      className: Chunk745776.subheading,
       children: "Colors & Quest States"
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk188764.fields,
+      className: Chunk745776.fields,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk188764.fields,
+        className: Chunk745776.fields,
         style: {
           marginBottom: 0
         },
@@ -560,7 +560,7 @@ function W() {
           value: W.config.colors.secondary
         })]
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk188764.fields,
+        className: Chunk745776.fields,
         children: (0, Chunk951288.jsx)(Chunk815183.Z, {})
       }), (0, Chunk951288.jsx)(Chunk899457.Z, {
         onChange: function(e) {
@@ -625,23 +625,23 @@ function W() {
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/bold",
-      className: Chunk188764.heading,
+      className: Chunk745776.heading,
       children: "Component Previews"
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk188764.componentPreviews,
+      className: Chunk745776.componentPreviews,
       children: [(0, Chunk951288.jsxs)(Chunk456799.Z, {
         withBorder: true,
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-sm/semibold",
           children: "Quest Bar"
         }), (0, Chunk951288.jsxs)("div", {
-          className: Chunk188764.questBarPreviewWrapper,
+          className: Chunk745776.questBarPreviewWrapper,
           children: [(null == (d = W.userStatus) ? true : Chunk820827.claimedAt) != null && (0, Chunk951288.jsx)(Chunk481060.Text, {
             color: "text-secondary",
             variant: "text-sm/normal",
             children: "The Quest Bar is hidden when the user has claimed the reward."
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk188764.questBarPreview,
+            className: Chunk745776.questBarPreview,
             children: (0, Chunk951288.jsx)(Chunk78826.p, {
               isPreview: true,
               source: "preview",
@@ -665,7 +665,7 @@ function W() {
           questId: "0",
           children: (0, Chunk951288.jsx)(Chunk415104.Z, {
             quest: W,
-            className: Chunk188764.questTile,
+            className: Chunk745776.questTile,
             questContent: Chunk497505.jn.QUEST_HOME_DESKTOP,
             contentPosition: 0,
             rowIndex: 0,
@@ -682,13 +682,13 @@ function W() {
           variant: "text-sm/normal",
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk188764.questBarPreviewWrapper,
+          className: Chunk745776.questBarPreviewWrapper,
           children: (0, Chunk951288.jsx)(Chunk78826.p, {
             isPreview: true,
             source: "preview",
             questId: "0",
             children: (0, Chunk951288.jsx)("div", {
-              className: Chunk188764.questChannelCallHeaderPreview,
+              className: Chunk745776.questChannelCallHeaderPreview,
               children: (0, Chunk951288.jsx)(Chunk134483.Z, {
                 channelId: "123",
                 previewQuest: W,
@@ -698,7 +698,7 @@ function W() {
           })
         })]
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk188764.toggleSwitch,
+        className: Chunk745776.toggleSwitch,
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Is Participating:",
           checked: G,
@@ -719,7 +719,7 @@ function W() {
           sourceQuestContent: Chunk497505.jn.INTERNAL_PREVIEW_TOOL
         }, W.id)]
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk188764.toggleSwitch,
+        className: Chunk745776.toggleSwitch,
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Invalid Quests Embed:",
           checked: X,
@@ -738,7 +738,7 @@ function W() {
             (0, Chunk481060.ZDy)(async () => {
               let {
                 default: e
-              } = await Promise.all([require.e("13193"), require.e("32249"), require.e("42922")]).then(require.bind(require, 536687));
+              } = await Promise.all([require.e("13193"), require.e("32249"), require.e("24949")]).then(require.bind(require, 536687));
               return t => {
                 var n;
                 return (0, r.jsx)(e, I(k({}, t), {
@@ -769,9 +769,9 @@ class U extends Chunk647438.Component {
       renderKey: t
     } = this.state;
     return null != module ? (0, Chunk951288.jsxs)("div", {
-      className: Chunk188764.errorBoundary,
+      className: Chunk745776.errorBoundary,
       children: [(0, Chunk951288.jsx)(Chunk481060.Mgn, {
-        className: Chunk188764.errorBoundaryIcon
+        className: Chunk745776.errorBoundaryIcon
       }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: "Something broke in the Quest preview tool :("
@@ -780,9 +780,9 @@ class U extends Chunk647438.Component {
         text: "Reset",
         onClick: this.handleResetState
       }), null != module.message && (0, Chunk951288.jsx)(Chunk481060.Zbd, {
-        className: Chunk188764.errorMessageWrapper,
+        className: Chunk745776.errorMessageWrapper,
         children: (0, Chunk951288.jsx)("code", {
-          className: Chunk188764.errorMessage,
+          className: Chunk745776.errorMessage,
           children: module.message
         })
       })]

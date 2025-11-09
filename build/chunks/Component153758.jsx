@@ -6,11 +6,11 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk334405 = require("./334405.js");
+var Chunk515527 = require("./515527.js");
 
 function a() {
   return (0, Chunk951288.jsx)("div", {
     role: "separator",
-    className: Chunk334405.separator
+    className: Chunk515527.separator
   })
 }

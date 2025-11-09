@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk5888 = require("./5888.js"),
   Chunk198358 = require("./198358.jsx"),
-  Chunk506945 = require("./506945.js"),
+  Chunk552788 = require("./552788.js"),
   Chunk388032 = require("./388032.jsx");
 
 function o() {
@@ -22,13 +22,13 @@ function o() {
     children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
-      children: Chunk388032.intl.format(Chunk506945.default.nPTMHj, {
+      children: Chunk388032.intl.format(Chunk552788.default.nPTMHj, {
         numMessages: module
       })
     }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
-      children: Chunk388032.intl.format(Chunk506945.default.ixvOza, {
+      children: Chunk388032.intl.format(Chunk552788.default.ixvOza, {
         percent: 100 - exports
       })
     })]

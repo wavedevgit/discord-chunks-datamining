@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 931805, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => g,
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk258971 = require("./258971.js"),
   Chunk49898 = require("./49898.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk912743 = require("./912743.js");
+  Chunk794628 = require("./794628.js");
 
 function u(e) {
   let {
@@ -32,13 +32,13 @@ function u(e) {
 
 function g() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk912743.rowContainer,
+    className: Chunk794628.rowContainer,
     children: [(0, Chunk951288.jsx)("div", {
       children: Chunk388032.intl.string(Chunk388032.t.AKcFUj)
     }), (0, Chunk951288.jsx)(Chunk481060.rgF, {
       size: "xs",
       color: "currentColor",
-      className: Chunk912743.linkIcon
+      className: Chunk794628.linkIcon
     })]
   })
 }

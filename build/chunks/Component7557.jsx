@@ -9,7 +9,7 @@ var r, i, Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk600164 = require("./600164.jsx"),
-  Chunk501640 = require("./501640.js");
+  Chunk367990 = require("./367990.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,7 +26,7 @@ class f extends(r = Chunk647438.PureComponent) {
     } = this.props;
     return (0, Chunk951288.jsx)("input", {
       ref: this.setCodeBlockRef,
-      className: l()(Chunk501640.input, module),
+      className: l()(Chunk367990.input, module),
       maxLength: 1,
       value: null != this.props.code ? this.props.code : true,
       autoFocus: this.props.autoFocus,
@@ -73,7 +73,7 @@ class _ extends(i = Chunk647438.PureComponent) {
       codes: n
     } = this.state, r = [];
     for (let e = 0; module < require.length; module++) module === require.length / 2 && r.push((0, Chunk951288.jsx)("div", {
-      className: Chunk501640.spacer
+      className: Chunk367990.spacer
     }, "spacer")), r.push((0, Chunk951288.jsx)(f, {
       ref: t => this.setCodeBlockRef(e, t),
       code: require[module],

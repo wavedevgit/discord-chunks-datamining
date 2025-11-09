@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk34305 = require("./34305.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk77839 = require("./77839.js");
+  Chunk936390 = require("./936390.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -101,7 +101,7 @@ class v extends Chunk647438.PureComponent {
       installShortcutStartMenu: n
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk77839.body,
+      className: Chunk936390.body,
       children: [(0, Chunk804739.Q)() ? (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
@@ -126,7 +126,7 @@ class v extends Chunk647438.PureComponent {
       children: [(0, Chunk951288.jsx)(Chunk957657.Z, {
         currentRoute: Chunk981631.Z5c.APPLICATION_LIBRARY_SETTINGS
       }), (0, Chunk951288.jsx)(Chunk481060.w0Z, {
-        className: Chunk77839.scroller,
+        className: Chunk936390.scroller,
         children: this.renderBody()
       })]
     })

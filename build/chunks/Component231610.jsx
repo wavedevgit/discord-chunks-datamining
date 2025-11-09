@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 231610, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk619326 = require("./619326.jsx"),
   Chunk553204 = require("./553204.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk549556 = require("./549556.js");
+  Chunk510569 = require("./510569.js");
 
 function p() {
   let {
@@ -104,17 +104,17 @@ function p() {
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Rny, {
         children: (0, Chunk951288.jsxs)("div", {
-          className: Chunk549556.previewContainer,
+          className: Chunk510569.previewContainer,
           "aria-hidden": true,
           children: [(0, Chunk951288.jsx)(Chunk893729.Z, {
             guildId: exports,
             role: b,
-            className: Chunk549556.messageContainer,
+            className: Chunk510569.messageContainer,
             theme: "light"
           }), (0, Chunk951288.jsx)(Chunk893729.Z, {
             guildId: exports,
             role: b,
-            className: Chunk549556.messageContainer,
+            className: Chunk510569.messageContainer,
             theme: "dark"
           })]
         })

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk703656 = require("./703656.js"),
   Chunk546247 = require("./546247.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk816282 = require("./816282.js");
+  Chunk195124 = require("./195124.js");
 let Chunk575703 = require("./575703.js"),
   Chunk2984 = require("./2984.js"),
   x = [Chunk981631.Z5c.LOGIN, Chunk981631.Z5c.LOGIN_HANDOFF, Chunk981631.Z5c.LOGIN_ONE_TIME, Chunk981631.Z5c.REGISTER, Chunk981631.Z5c.INVITE(""), Chunk981631.Z5c.GIFT_CODE(""), Chunk981631.Z5c.GUILD_TEMPLATE_LOGIN(""), Chunk981631.Z5c.GUILD_TEMPLATE(""), Chunk981631.Z5c.DISABLE_EMAIL_NOTIFICATIONS, Chunk981631.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, Chunk981631.Z5c.BILLING_PREMIUM_SUBSCRIBE, Chunk981631.Z5c.BILLING_PAYMENT_SOURCES_CREATE, Chunk981631.Z5c.BILLING_PAYMENTS, Chunk981631.Z5c.BILLING_PREMIUM_SWITCH_PLAN, Chunk981631.Z5c.BILLING_GUILD_SUBSCRIPTIONS_PURCHASE, Chunk981631.Z5c.VERIFY, Chunk981631.Z5c.VERIFY_HUB_EMAIL, Chunk981631.Z5c.REJECT_IP, Chunk981631.Z5c.REJECT_MFA, Chunk981631.Z5c.AUTHORIZE_IP, Chunk981631.Z5c.AUTHORIZE_PAYMENT, Chunk981631.Z5c.RESET, Chunk981631.Z5c.HANDOFF, Chunk981631.Z5c.REPORT, Chunk981631.Z5c.REPORT_SECOND_LOOK, Chunk981631.Z5c.ACCOUNT_REVERT("")];
@@ -82,13 +82,13 @@ class S extends Chunk647438.Component {
       }))
     });
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk816282.characterBackground,
+      className: Chunk195124.characterBackground,
       children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
         forceLevel: 1,
         children: null != module ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)(Chunk133853.Z, {
             show: true,
-            className: Chunk816282.logo
+            className: Chunk195124.logo
           }), (0, Chunk951288.jsx)(Chunk568154.h, {
             splash: module,
             children: exports

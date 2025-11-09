@@ -1,4 +1,4 @@
-/** Chunk was on 99904 **/
+/** Chunk was on 22740 **/
 /** chunk id: 916790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -27,15 +27,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk681619 = require("./681619.jsx"),
   Chunk621060 = require("./621060.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk687278 = require("./687278.js"),
-  Chunk451429 = require("./451429.js");
+  Chunk578970 = require("./578970.js"),
+  Chunk866403 = require("./866403.js");
 
 function P(e) {
   return parseFloat(e.toFixed(3))
 }
 let I = [{
   key: "store",
-  cellClassName: Chunk687278.actionColumn,
+  cellClassName: Chunk578970.actionColumn,
   render(e) {
     let {
       trace: t
@@ -44,7 +44,7 @@ let I = [{
   }
 }, {
   key: "time",
-  cellClassName: Chunk687278.totalTimeColumn,
+  cellClassName: Chunk578970.totalTimeColumn,
   render(e) {
     let {
       trace: t
@@ -190,7 +190,7 @@ function R(e) {
 }
 let A = [{
     key: "action",
-    cellClassName: Chunk687278.actionColumn,
+    cellClassName: Chunk578970.actionColumn,
     render(e) {
       let {
         actionLog: t
@@ -203,7 +203,7 @@ let A = [{
     }
   }, {
     key: "total time",
-    cellClassName: Chunk687278.totalTimeColumn,
+    cellClassName: Chunk578970.totalTimeColumn,
     render(e) {
       let {
         actionLog: t
@@ -212,7 +212,7 @@ let A = [{
     }
   }, {
     key: "timestamp",
-    cellClassName: Chunk687278.totalTimeColumn,
+    cellClassName: Chunk578970.totalTimeColumn,
     render(e) {
       let {
         actionLog: t
@@ -265,9 +265,9 @@ function D() {
     T = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
-    className: l()(Chunk451429.panel, Chunk687278.panel),
+    className: l()(Chunk866403.panel, Chunk578970.panel),
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk687278.toolbar,
+      className: Chunk578970.toolbar,
       children: [(0, Chunk951288.jsx)(Chunk28664.u, {
         text: Chunk981631,
         children: (0, Chunk951288.jsx)(Chunk481060.hU, {

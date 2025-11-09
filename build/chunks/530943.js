@@ -1,3 +1,0 @@
-/** Chunk was on 15716 **/
-/** chunk id: 530943, original params: a (module,exports,require) **/
-module.exports = JSON.parse('{"JA5C7L":["Borrar"],"db85vU":["No hay objetos para mostrar"],"bPKiId":["No hay resultados para \\"",[1,"query"],"\\""],"WfH9in":["Cerrar"],"m3Vfcs":["No me muestres esto de nuevo."],"cgdAs2":["(Se abrir\xe1 en una nueva pesta\xf1a)"],"/Y7vRd":["Presiona Eliminar para quitar la etiqueta."],"VMNfsY":["Seleccionadas"],"A+pfVR":["Selecciona..."],"YpT3kk":["Ampliar y reproducir video"]}')

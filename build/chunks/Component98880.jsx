@@ -45,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk992878 = require("./992878.js"),
+  Chunk159498 = require("./159498.js"),
   Chunk413097 = require("./413097.js"),
   Chunk969728 = require("./969728.js");
 
@@ -338,9 +338,9 @@ function et() {
   return (0, Chunk951288.jsx)(Chunk28664.u, {
     text: Chunk388032.intl.string(Chunk388032.t.CfTySQ),
     children: (0, Chunk951288.jsx)("div", {
-      className: Chunk992878.devShelfBadge,
+      className: Chunk159498.devShelfBadge,
       children: (0, Chunk951288.jsx)(Chunk880448.Z, {
-        className: Chunk992878.devShelfIcon
+        className: Chunk159498.devShelfIcon
       })
     })
   })

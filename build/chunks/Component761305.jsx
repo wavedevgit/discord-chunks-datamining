@@ -17,7 +17,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk197571 = require("./197571.js");
+  Chunk10198 = require("./10198.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,21 +71,21 @@ class E extends(r = Chunk647438.PureComponent) {
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk10198.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.Z33eiP)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.format(Chunk388032.t.NRWtfC, {
           guildName: require.name
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk197571.marginTop40,
+        className: Chunk10198.marginTop40,
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
           fullWidth: true,
           onClick: () => exports(module)
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk197571.marginTop8,
+        className: Chunk10198.marginTop8,
         children: (0, Chunk951288.jsx)(Chunk481060.Avr, {
           text: Chunk388032.intl.string(Chunk388032.t["cGmT/J"]),
           onClick: () => {
@@ -103,14 +103,14 @@ class E extends(r = Chunk647438.PureComponent) {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Ee, {
         src: require("./105020.js"),
-        className: Chunk197571.marginBottom20
+        className: Chunk10198.marginBottom20
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk10198.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.ox9hIS)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t["/dcuR5"])
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk197571.marginTop40,
+        className: Chunk10198.marginTop40,
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
           fullWidth: true,

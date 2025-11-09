@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk391371 = require("./391371.js");
+  Chunk950106 = require("./950106.js");
 
 function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -172,7 +172,7 @@ function Q() {
         user: exports,
         nameplate: V
       }, Chunk373230), {
-        className: null == V ? Chunk391371.nameplatePreviewPlaceholder : true,
+        className: null == V ? Chunk950106.nameplatePreviewPlaceholder : true,
         isHighlighted: true
       })),
       children: (0, Chunk951288.jsx)(Chunk532495.Z, {})
@@ -190,7 +190,7 @@ function Q() {
         })
       })
     }), er && !Y && (0, Chunk951288.jsx)(Chunk53691.p, {
-      className: Chunk391371.floatingNitroUpsell,
+      className: Chunk950106.floatingNitroUpsell,
       showUpsell: er && !ee,
       text: Chunk388032.intl.format(Chunk388032.t.TmfgI2, {
         onClick: () => (0, Chunk267717.y)({

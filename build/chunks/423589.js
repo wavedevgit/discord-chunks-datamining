@@ -1,9 +1,10 @@
-/** Chunk was on 24358 **/
-/** chunk id: 423589, original params: t,i,e (module,exports,require) **/
+/** Chunk was on 24521 **/
+/** chunk id: 423589, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Mn: () => L,
-  OD: () => S,
-  W9: () => g
+  Mn: () => g,
+  OD: () => b,
+  W9: () => u
 }), require("./388685.js"), require("./997841.js");
 var Chunk442837 = require("./442837.js"),
   Chunk798140 = require("./798140.js"),
@@ -15,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g() {
+function u() {
   return [{
     label: Chunk388032.intl.string(Chunk388032.t["8ot6gv"]),
     value: Chunk969943.Oe.MINUTES_15
@@ -36,22 +37,22 @@ function g() {
     value: Chunk969943.Oe.ALWAYS
   }]
 }
-let _ = {
+let h = {
   ignoreMute: false,
   ignoreUnreadSetting: true,
   ignoreNotificationSetting: false
 };
 
-function S(t) {
-  let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : _;
-  return r.default.keys(t).filter(e => {
-    var n, s;
-    let r = t[e].message_notifications !== d.bL.NULL,
-      o = a.yE(null != (n = t[e].flags) ? n : 0, c.ic.UNREADS_ALL_MESSAGES) || a.yE(null != (s = t[e].flags) ? s : 0, c.ic.UNREADS_ONLY_MENTIONS);
-    return !i.ignoreUnreadSetting && o || !i.ignoreNotificationSetting && r || !i.ignoreMute && (0, l.m$)(t[e])
+function b(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : h;
+  return o.default.keys(e).filter(n => {
+    var i, l;
+    let o = e[n].message_notifications !== r.bL.NULL,
+      s = c.yE(null != (i = e[n].flags) ? i : 0, d.ic.UNREADS_ALL_MESSAGES) || c.yE(null != (l = e[n].flags) ? l : 0, d.ic.UNREADS_ONLY_MENTIONS);
+    return !t.ignoreUnreadSetting && s || !t.ignoreNotificationSetting && o || !t.ignoreMute && (0, a.m$)(e[n])
   })
 }
 
-function L(t) {
-  return (0, n.e7)([s.ZP], () => s.ZP.useNewNotifications)
+function g(e) {
+  return (0, i.e7)([l.ZP], () => l.ZP.useNewNotifications)
 }

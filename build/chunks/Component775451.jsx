@@ -17,10 +17,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk82856 = require("./82856.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk152935 = require("./152935.js");
+  Chunk522323 = require("./522323.js");
 let m = {
-    START: Chunk152935.alignLeft,
-    END: Chunk152935.alignRight
+    START: Chunk522323.alignLeft,
+    END: Chunk522323.alignRight
   },
   g = e => {
     let {

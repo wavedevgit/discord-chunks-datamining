@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk239091 = require("./239091.js"),
   Chunk129861 = require("./129861.jsx"),
   Chunk600164 = require("./600164.jsx"),
-  Chunk7675 = require("./7675.js");
+  Chunk526229 = require("./526229.js");
 class u extends Chunk647438.PureComponent {
   handleContextMenu(e, t) {
     (0, a.jW)(e, async () => {
@@ -76,12 +76,12 @@ class u extends Chunk647438.PureComponent {
       header: t
     } = this.props, n = module.map(e => this.renderUser(e));
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk7675.userList,
+      className: Chunk526229.userList,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk7675.header,
+        className: Chunk526229.header,
         children: exports
       }), (0, Chunk951288.jsx)(Chunk481060.zJl, {
-        className: Chunk7675.content,
+        className: Chunk526229.content,
         fade: true,
         children: require
       })]

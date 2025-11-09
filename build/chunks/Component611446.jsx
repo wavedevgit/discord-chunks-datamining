@@ -14,7 +14,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk858597 = require("./858597.jsx"),
   Chunk486213 = require("./486213.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk767770 = require("./767770.js"),
+  Chunk523547 = require("./523547.js"),
   _ = ((i = {}).ACTIONS = "ACTIONS", i.SAFETY_TIPS = "SAFETY_TIPS", i.ABOUT_SAFETY_ALERTS = "ABOUT_SAFETY_ALERTS", i);
 let E = t => {
   let {

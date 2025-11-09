@@ -20,13 +20,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk583901 = require("./583901.jsx"),
   Chunk576157 = require("./576157.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk531421 = require("./531421.js"),
+  Chunk24864 = require("./24864.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk279457 = require("./279457.js");
+  Chunk617385 = require("./617385.js");
 
 function v() {
   return (0, Chunk951288.jsxs)("svg", {
-    className: Chunk279457.newRing,
+    className: Chunk617385.newRing,
     width: "68",
     height: "68",
     viewBox: "0 0 68 68",

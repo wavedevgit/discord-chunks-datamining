@@ -1,0 +1,15 @@
+/** Chunk was on 50642 **/
+/** chunk id: 321918, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  contentWarningPopout: "contentWarningPopout_d2eed6",
+  header: "header_d2eed6",
+  body: "body_d2eed6",
+  animation: "animation_d2eed6",
+  buttonWrapper: "buttonWrapper_d2eed6",
+  buttonContainer: "buttonContainer_d2eed6",
+  button: "button_d2eed6",
+  buttonHint: "buttonHint_d2eed6",
+  content: "content_d2eed6",
+  footer: "footer_d2eed6",
+  icon: "icon_d2eed6"
+}

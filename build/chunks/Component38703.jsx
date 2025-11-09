@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 38703, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk407810 = require("./407810.js");
+  Chunk212329 = require("./212329.js");
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -93,9 +93,9 @@ function b() {
     } = (0, Chunk710344.Z)(x, j),
     y = module.length < Chunk290511.yx;
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk407810.connectionsSection,
+    className: Chunk212329.connectionsSection,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk407810.connectionsSectionHeader,
+      className: Chunk212329.connectionsSectionHeader,
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/bold",
         children: Chunk388032.intl.string(Chunk388032.t.Cl8F8H)
@@ -113,7 +113,7 @@ function b() {
         })
       })]
     }), module.length > 0 && (0, Chunk951288.jsx)("div", {
-      className: Chunk407810.connectionsList,
+      className: Chunk212329.connectionsList,
       children: x.map((e, t) => (0, r.jsx)(u.Z, {
         connection: e,
         index: t,
@@ -123,7 +123,7 @@ function b() {
         draggingId: C
       }, e.id))
     }), (0, Chunk951288.jsxs)("button", {
-      className: Chunk407810.addConnectionButton,
+      className: Chunk212329.addConnectionButton,
       onClick: b,
       disabled: !y || exports,
       type: "button",

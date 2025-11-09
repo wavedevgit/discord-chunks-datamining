@@ -1,4 +1,4 @@
-/** Chunk was on 99904 **/
+/** Chunk was on 22740 **/
 /** chunk id: 715495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk711325 = require("./711325.jsx"),
   Chunk852630 = require("./852630.jsx"),
   Chunk731994 = require("./731994.js"),
-  Chunk30827 = require("./30827.js");
+  Chunk761804 = require("./761804.js");
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -83,9 +83,9 @@ function _() {
   }, [N]);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk30827.controls,
+      className: Chunk761804.controls,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk30827.toggles,
+        className: Chunk761804.toggles,
         children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           size: "sm",
           onClick: () => {
@@ -102,7 +102,7 @@ function _() {
           text: "Toggle Gradients"
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk30827.themePicker,
+        className: Chunk761804.themePicker,
         children: [require && (0, Chunk951288.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk951288.jsx)(Chunk711325.Z, {
           selected: null == Chunk996746 || null == (e = Chunk996746.palette) ? true : module.name,
           onSelect: e => {
@@ -111,11 +111,11 @@ function _() {
         })]
       })]
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk30827.main,
+      className: Chunk761804.main,
       children: [(0, Chunk951288.jsx)(y, {
         nameplate: Chunk996746
       }, null == Chunk996746 || null == (t = Chunk996746.palette) ? true : exports.name), (0, Chunk951288.jsxs)("div", {
-        className: Chunk30827.buttons,
+        className: Chunk761804.buttons,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
           children: "Drag background image to screen"
@@ -130,7 +130,7 @@ function _() {
             O(t, t, (0, p.xh)(a)), T(t, t, m.jD)
           }
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk30827.uploadedArea,
+          className: Chunk761804.uploadedArea,
           children: Object.values(_).map(e => {
             let {
               url: t

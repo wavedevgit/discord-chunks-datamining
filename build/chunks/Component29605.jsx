@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 29605, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   FT: () => Q,
@@ -47,8 +47,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk878341 = require("./878341.js"),
-  Chunk620842 = require("./620842.js");
+  Chunk52116 = require("./52116.js"),
+  Chunk504401 = require("./504401.js");
 
 function K(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -364,7 +364,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
       variant: "heading-sm/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.jrXfyw)
     }), (0, Chunk951288.jsxs)("ul", {
-      className: Chunk878341.emojiUploadUploadRequirementsList,
+      className: Chunk52116.emojiUploadUploadRequirementsList,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         tag: "li",
@@ -503,9 +503,9 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
         emoji: e
       }) : true;
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk878341.emojiSettings,
+      className: Chunk52116.emojiSettings,
       children: [0 === Chunk51144 ? null : (0, Chunk951288.jsx)(Chunk327802.Z, {
-        className: Chunk878341.emojiUploadContainer,
+        className: Chunk52116.emojiUploadContainer,
         onDrop: ec
       }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 20,
@@ -522,10 +522,10 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
           })]
         }), (0, Chunk951288.jsx)($, {
           guild: Chunk120356,
-          staticEmojiCount: Chunk620842,
+          staticEmojiCount: Chunk504401,
           animatedEmojiCount: J
         }), (0, Chunk951288.jsxs)("div", {
-          className: Chunk878341.uploader,
+          className: Chunk52116.uploader,
           children: [eu && (0, Chunk951288.jsx)(Chunk481060.Wn, {
             messageType: Chunk481060.QYI.INFO,
             children: Chunk388032.intl.format(Chunk388032.t.uMkfTo, {
@@ -541,7 +541,7 @@ let Y = d().throttle(Chunk80932.OQ, 1e3),
               },
               disabled: Chunk372444
             }), (0, Chunk951288.jsx)("div", {
-              className: Chunk878341.fileInput,
+              className: Chunk52116.fileInput,
               children: (0, Chunk951288.jsx)(Chunk372129.ZP, {
                 ref: module,
                 onChange: ed,

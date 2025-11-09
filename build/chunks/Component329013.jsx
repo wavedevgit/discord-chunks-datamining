@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk505575 = require("./505575.js");
+  Chunk352334 = require("./352334.js");
 let D = () => {
     (0, Chunk266454.Q3)(Chunk704215.z.CLIENT_THEMES_SPARKLE_PREVIEW, {
       dismissAction: Chunk921944.L.PRIMARY,
@@ -50,7 +50,7 @@ let D = () => {
         percent: null == Chunk857595 ? true : Chunk857595.discount.amount
       }) : Chunk388032.intl.string(Chunk388032.t.mr4K7D);
       return (0, Chunk951288.jsxs)("div", {
-        className: Chunk505575.tryItOutButtons,
+        className: Chunk352334.tryItOutButtons,
         children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "secondary",
           text: Chunk388032.intl.string(Chunk388032.t["E+COuA"]),
@@ -74,7 +74,7 @@ let D = () => {
     }, [Chunk704215, require]);
     let g = Chunk780384 && Chunk704215 && (0, Chunk951288.jsxs)("div", {
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk505575.previewThemeButton,
+          className: Chunk352334.previewThemeButton,
           children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "secondary",
             fullWidth: true,
@@ -82,7 +82,7 @@ let D = () => {
             onClick: () => D()
           })
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk505575.premiumTier2Divider
+          className: Chunk352334.premiumTier2Divider
         }), (0, Chunk951288.jsx)(Chunk165583.ZP, {
           type: Chunk474936.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
           subscriptionTier: Chunk474936.Si.TIER_2
@@ -96,7 +96,7 @@ let D = () => {
           }), Chunk266454]
         });
         return Chunk704215 && (e = (0, Chunk951288.jsx)("div", {
-          className: Chunk505575.colorThemesBackground,
+          className: Chunk352334.colorThemesBackground,
           children: module
         })), module
       })();
@@ -104,10 +104,10 @@ let D = () => {
       children: [(0, Chunk951288.jsxs)(Chunk705262.ZP, {
         type: Chunk705262.yH.SETTINGS,
         children: [(0, Chunk951288.jsx)(Chunk705262.ZP.Basic, {
-          className: Chunk505575.basicThemeSelectors
+          className: Chunk352334.basicThemeSelectors
         }), (0, Chunk951288.jsx)(L, {}), (0, Chunk951288.jsx)(Chunk607270.Z, {}), Chunk984802]
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk505575.divider
+        className: Chunk352334.divider
       })]
     })
   };

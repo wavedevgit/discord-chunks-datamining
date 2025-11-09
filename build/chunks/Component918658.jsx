@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk302463 = require("./302463.js"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk829675 = require("./829675.js");
+  Chunk342325 = require("./342325.js");
 
 function D(e) {
   let {
@@ -108,28 +108,28 @@ function j() {
     };
   return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,
-    className: Chunk829675.notice,
+    className: Chunk342325.notice,
     children: [(0, Chunk951288.jsxs)(D, {
       onClick: () => G({
         backToSettings: true
       }),
-      className: Chunk829675.backButton,
+      className: Chunk342325.backButton,
       children: [(0, Chunk951288.jsx)(Chunk671533.Z, {
         width: 16,
         height: 16,
         direction: Chunk671533.Z.Directions.LEFT,
-        className: Chunk829675.backArrow
+        className: Chunk342325.backArrow
       }), j]
     }), U && Chunk755721 ? (0, Chunk951288.jsx)("div", {
-      className: Chunk829675.noticeContents,
+      className: Chunk342325.noticeContents,
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk829675.noticeText,
+        className: Chunk342325.noticeText,
         children: Chunk388032.intl.string(Chunk388032.t.PxbiAf)
       })
     }) : (0, Chunk951288.jsxs)("div", {
-      className: Chunk829675.noticeContents,
+      className: Chunk342325.noticeContents,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk829675.noticeText,
+        className: Chunk342325.noticeText,
         children: Chunk755721 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["0PHahI"], {
           numRoles: Object.keys(Chunk120356).length
         }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.vMlK8t, {

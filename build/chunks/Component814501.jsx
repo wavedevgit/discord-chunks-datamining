@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk29594 = require("./29594.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk328310 = require("./328310.js");
+  Chunk823795 = require("./823795.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -181,7 +181,7 @@ function S() {
       direction: "vertical",
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
-        className: Chunk328310.labelSpacing,
+        className: Chunk823795.labelSpacing,
         children: "This section tests the orderSKU function, order signing, and 3DS authentication with example parameters. Check the console for detailed logs."
       }), (0, Chunk951288.jsxs)("div", {
         style: {
@@ -189,7 +189,7 @@ function S() {
         },
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
-          className: Chunk328310.labelSpacing,
+          className: Chunk823795.labelSpacing,
           children: "Payment Source:"
         }), (0, Chunk951288.jsx)(Chunk481060.PhF, O(b({}, x), {
           options: D,
@@ -200,7 +200,7 @@ function S() {
         })), !P && (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: Chunk328310.labelSpacing,
+          className: Chunk823795.labelSpacing,
           children: "Loading payment sources..."
         })]
       }), (0, Chunk951288.jsxs)("div", {
@@ -230,7 +230,7 @@ function S() {
           disabled: Chunk563132 || null == y || "" === y || !C
         })]
       }), null != Chunk981631 && (0, Chunk951288.jsx)("div", {
-        className: Chunk328310.labelSpacing,
+        className: Chunk823795.labelSpacing,
         children: Chunk981631.split("\n").map((e, t) => (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           style: {

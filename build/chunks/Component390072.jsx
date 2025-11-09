@@ -1,8 +1,7 @@
-/** Chunk was on 27978 **/
-/** chunk id: 390072, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** Chunk was on 43157 **/
+/** chunk id: 390072, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,38 +10,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk11868 = require("./11868.jsx"),
   Chunk217804 = require("./217804.js"),
   Chunk765305 = require("./765305.js"),
-  Chunk831272 = require("./831272.js");
+  Chunk910497 = require("./910497.js");
 
-function d(e) {
+function u(e) {
   let {
-    guildScheduledEvent: t,
-    channel: n,
-    onClose: d
-  } = e, h = t.entity_type === c.WX.EXTERNAL, g = i.useCallback(e => (0, a.Qt)(t, d)(e), [t, d]), m = (0, o.u)(t, n);
+    guildScheduledEvent: n,
+    channel: t,
+    onClose: u
+  } = e, _ = n.entity_type === a.WX.EXTERNAL, h = r.useCallback(e => (0, c.Qt)(n, u)(e), [n, u]), m = (0, o.u)(n, t);
   if (null == m) return null;
   let {
-    IconComponent: p,
-    locationName: f
-  } = m, _ = (0, r.jsxs)(r.Fragment, {
-    children: [null != p && (0, r.jsx)(p, {
+    IconComponent: f,
+    locationName: x
+  } = m, g = (0, l.jsxs)(l.Fragment, {
+    children: [null != f && (0, l.jsx)(f, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
-      className: u.channelIcon
-    }), (0, r.jsx)(s.Text, {
+      className: d.channelIcon
+    }), (0, l.jsx)(i.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      className: u.locationText,
-      children: (0, l.m)(f, true)
+      className: d.locationText,
+      children: (0, s.m)(x, true)
     })]
   });
-  return (0, r.jsx)("div", {
-    className: u.row,
-    children: null != g ? (0, r.jsx)(s.P3F, {
-      className: h ? u.externalLocation : u.channelLocation,
-      onClick: g,
-      children: _
-    }) : _
+  return (0, l.jsx)("div", {
+    className: d.row,
+    children: null != h ? (0, l.jsx)(i.P3F, {
+      className: _ ? d.externalLocation : d.channelLocation,
+      onClick: h,
+      children: g
+    }) : g
   })
 }

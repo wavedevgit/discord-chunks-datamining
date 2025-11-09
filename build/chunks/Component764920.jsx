@@ -10,21 +10,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk572539 = require("./572539.jsx"),
   Chunk531578 = require("./531578.js"),
-  Chunk790444 = require("./790444.js");
+  Chunk875169 = require("./875169.js");
 let c = {
   [Chunk531578.aZ.BAD]: {
-    face: Chunk790444.sadFace,
+    face: Chunk875169.sadFace,
     "animated-face": "Emoji Neg",
-    thumb: Chunk790444.thumbsDown
+    thumb: Chunk875169.thumbsDown
   },
   [Chunk531578.aZ.NEUTRAL]: {
-    face: Chunk790444.neutralFace,
+    face: Chunk875169.neutralFace,
     "animated-face": "Emoji Mid"
   },
   [Chunk531578.aZ.GOOD]: {
-    face: Chunk790444.happyFace,
+    face: Chunk875169.happyFace,
     "animated-face": "Emoji Happy",
-    thumb: Chunk790444.thumbsUp
+    thumb: Chunk875169.thumbsUp
   }
 };
 

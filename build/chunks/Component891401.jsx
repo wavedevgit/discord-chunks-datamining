@@ -1,4 +1,4 @@
-/** Chunk was on 99904 **/
+/** Chunk was on 22740 **/
 /** chunk id: 891401, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -10,11 +10,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk605236 = require("./605236.js"),
   Chunk675478 = require("./675478.js"),
-  Chunk715639 = require("./715639.js");
+  Chunk436799 = require("./436799.js");
 
 function u() {
   return (0, Chunk951288.jsx)(Chunk481060.Ttm, {
-    className: Chunk715639.container,
+    className: Chunk436799.container,
     children: (0, Chunk951288.jsx)(m, {})
   })
 }
@@ -29,7 +29,7 @@ function m() {
     n = null != exports ? new Date(exports) : null;
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
-      className: Chunk715639.header,
+      className: Chunk436799.header,
       variant: "heading-lg/semibold",
       children: "Tenure Badges"
     }), (0, Chunk951288.jsxs)("p", {
@@ -39,7 +39,7 @@ function m() {
         children: "Not Dismissed"
       })]
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk715639.tenureBadgeControls,
+      className: Chunk436799.tenureBadgeControls,
       children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         text: "Reset Level Up DC",

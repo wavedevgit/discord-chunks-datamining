@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk37113 = require("./37113.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk556865 = require("./556865.js");
+  Chunk298291 = require("./298291.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -206,7 +206,7 @@ function R() {
       description: Chunk388032.intl.string(Chunk388032.t["QyB/jK"]),
       layout: "horizontal",
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk556865.keyRecorder,
+        className: Chunk298291.keyRecorder,
         children: (0, Chunk951288.jsx)(Chunk825209.Z, {
           defaultValue: R.shortcut,
           onChange: G
@@ -217,7 +217,7 @@ function R() {
       description: Chunk388032.intl.string(Chunk388032.t["5zxkdo"]),
       layout: "horizontal",
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk556865.keyRecorder,
+        className: Chunk298291.keyRecorder,
         children: (0, Chunk951288.jsx)(Chunk825209.Z, {
           defaultValue: P.shortcut,
           onChange: B

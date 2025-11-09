@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk294218 = require("./294218.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk129633 = require("./129633.js");
+  Chunk509447 = require("./509447.js");
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -142,17 +142,17 @@ class F extends Chunk647438.PureComponent {
       jumping: e
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk481060.P3F, {
-      className: Chunk129633.jumpButton,
+      className: Chunk509447.jumpButton,
       onClick: this.handleClickJump,
       children: [(0, Chunk951288.jsx)("div", {
-        className: o()(Chunk129633.__invalid_text, {
+        className: o()(Chunk509447.__invalid_text, {
           hidden: module
         }),
         children: Chunk388032.intl.string(Chunk388032.t.k5WiPf)
       }), (0, Chunk951288.jsx)(Chunk481060.$jN, {
         type: Chunk481060.$jN.Type.PULSING_ELLIPSIS,
-        className: o()(Chunk129633.loading, {
-          [Chunk129633.visible]: module
+        className: o()(Chunk509447.loading, {
+          [Chunk509447.visible]: module
         })
       })]
     })
@@ -171,13 +171,13 @@ class F extends Chunk647438.PureComponent {
       children: (0, Chunk951288.jsx)(Chunk481060.Dio, {
         size: "md",
         color: "currentColor",
-        className: Chunk129633.closeIcon
+        className: Chunk509447.closeIcon
       })
     }) : null
   }
   render() {
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk129633.actionButtons,
+      className: Chunk509447.actionButtons,
       children: [this.renderJumpButton(), this.renderCloseButton()]
     })
   }

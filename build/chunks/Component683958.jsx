@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk617266 = require("./617266.jsx"),
   Chunk333861 = require("./333861.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk963354 = require("./963354.js"),
+  Chunk599286 = require("./599286.js"),
   Chunk621054 = require("./621054.js");
 let S = [Chunk911969.yU.CHAT],
   C = () => {

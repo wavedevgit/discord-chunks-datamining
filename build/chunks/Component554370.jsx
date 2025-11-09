@@ -48,11 +48,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk987650 = require("./987650.js"),
   Chunk757744 = require("./757744.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk977594 = require("./977594.js");
+  Chunk250928 = require("./250928.js");
 let K = !Chunk358085.isPlatformEmbedded && false,
   X = K ? (0, Chunk951288.jsx)(Chunk70097.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
-    className: Chunk977594.videoDev,
+    className: Chunk250928.videoDev,
     autoPlay: true,
     loop: true,
     muted: true
@@ -169,7 +169,7 @@ function er(e) {
 
 function el() {
   return (0, Chunk442837.e7)([Chunk338949.Z], () => Chunk338949.Z.hasRenderDebugMode(Chunk837268.GO.WindowContainer)) ? (0, Chunk951288.jsx)("div", {
-    className: Chunk977594.windowContainerDebug
+    className: Chunk250928.windowContainerDebug
   }) : null
 }
 

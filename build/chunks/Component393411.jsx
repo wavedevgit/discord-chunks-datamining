@@ -37,7 +37,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk965406 = require("./965406.js");
+  Chunk587277 = require("./587277.js");
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -166,12 +166,12 @@ function V(e) {
 
 function H() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk965406.wordMark,
+    className: Chunk587277.wordMark,
     children: [(0, Chunk951288.jsx)(Chunk754347.Z, {
-      className: Chunk965406.discordWordmark,
+      className: Chunk587277.discordWordmark,
       "aria-label": Chunk388032.intl.string(Chunk388032.t.FSOz78)
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk965406.classicWordmark
+      className: Chunk587277.classicWordmark
     })]
   })
 }
@@ -183,11 +183,11 @@ function Y() {
   return (0, Chunk951288.jsx)(F, {
     wordMark: (0, Chunk951288.jsx)(H, {}),
     subscriptionInfo: (0, Chunk951288.jsx)("div", {
-      className: Chunk965406.planInfo,
+      className: Chunk587277.planInfo,
       children: Chunk388032.intl.string(Chunk388032.t.R0GJL2)
     }),
     buttons: (0, Chunk951288.jsx)(Chunk987997.Z, {
-      className: Chunk965406.toolsButton,
+      className: Chunk587277.toolsButton,
       onClick: () => (0, Chunk963249.Z)({
         subscriptionTier: Chunk474936.Si.TIER_1,
         analyticsLocations: module,
@@ -196,7 +196,7 @@ function Y() {
       text: Chunk388032.intl.string(Chunk388032.t["/ygMUY"])
     }),
     statusClasses: {
-      [Chunk965406.tier1]: true
+      [Chunk587277.tier1]: true
     }
   })
 }

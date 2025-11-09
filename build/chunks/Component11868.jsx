@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk139712 = require("./139712.jsx"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk182279 = require("./182279.js");
+  Chunk98435 = require("./98435.js");
 let w = (e, t) => n => {
     n.stopPropagation(), u.default.selectVoiceChannel(e.channel_id, false), null == t || t(n)
   },

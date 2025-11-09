@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk39377 = require("./39377.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk126373 = require("./126373.js");
+  Chunk288428 = require("./288428.js");
 let g = [{
     feature: Chunk981631.Qa3.SINGLE_PLAYER,
     getText: () => Chunk388032.intl.string(Chunk388032.t["V+/FjO"]),
@@ -127,7 +127,7 @@ class _ extends Chunk647438.PureComponent {
       }, t)
     });
     return 0 === exports.length ? null : (0, Chunk951288.jsxs)("div", {
-      className: Chunk126373.features,
+      className: Chunk288428.features,
       children: [(0, Chunk951288.jsx)(Chunk770146.Z, {
         children: Chunk388032.intl.string(Chunk388032.t.XXENra)
       }), exports]

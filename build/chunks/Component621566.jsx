@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk51144 = require("./51144.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk559577 = require("./559577.js");
+  Chunk585871 = require("./585871.js");
 let S = e => {
     let {
       channel: t,
@@ -143,7 +143,7 @@ class N extends Chunk647438.Component {
       size: "sm",
       loading: Chunk647438
     }), (0, Chunk951288.jsxs)(Chunk481060.P3F, {
-      className: Chunk559577.resultWrapper,
+      className: Chunk585871.resultWrapper,
       onClick: this.handleClick,
       children: [module, exports]
     })

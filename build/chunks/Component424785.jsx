@@ -1,4 +1,4 @@
-/** Chunk was on 31899 **/
+/** Chunk was on 94709 **/
 /** chunk id: 424785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => X
@@ -43,8 +43,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk55940 = require("./55940.js"),
-  Chunk556295 = require("./556295.js");
+  Chunk33082 = require("./33082.js"),
+  Chunk783499 = require("./783499.js");
 
 function z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -100,11 +100,11 @@ class Y extends Chunk98597.ZP {
       sortingPosition: t,
       isUserOver: n
     } = this.props;
-    if (require) return Chunk55940.containerUserOver;
+    if (require) return Chunk33082.containerUserOver;
     if (null != exports)
-      if (module > exports) return Chunk55940.containerDragAfter;
-      else return Chunk55940.containerDragBefore;
-    return Chunk55940.containerDefault
+      if (module > exports) return Chunk33082.containerDragAfter;
+      else return Chunk33082.containerDragBefore;
+    return Chunk33082.containerDefault
   }
   renderVoiceUsers() {
     let {
@@ -149,7 +149,7 @@ class Y extends Chunk98597.ZP {
       shouldShowGuildVerificationPopout: j
     } = this.state, x = this.getVoiceStatesCount(), C = (0, Chunk951288.jsxs)("li", {
       className: o()(this.getModeClass(), {
-        [Chunk55940.disabled]: this.isDisabled()
+        [Chunk33082.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
       children: [(0, Chunk951288.jsx)(Chunk481060.yRy, {
@@ -163,9 +163,9 @@ class Y extends Chunk98597.ZP {
           text: this.getTooltipText(),
           children: (0, Chunk951288.jsxs)(Chunk473403.ZP, {
             ref: this.channelItemRef,
-            className: Chunk55940.iconVisibility,
+            className: Chunk33082.iconVisibility,
             iconClassName: o()({
-              [Chunk556295.iconLive]: null != Chunk888651
+              [Chunk783499.iconLive]: null != Chunk888651
             }),
             channel: module,
             selected: !Chunk922482 && exports,

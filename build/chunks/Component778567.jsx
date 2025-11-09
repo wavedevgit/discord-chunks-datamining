@@ -1,4 +1,4 @@
-/** Chunk was on 52557 **/
+/** Chunk was on 15582 **/
 /** chunk id: 778567, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk732380 = require("./732380.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk367155 = require("./367155.js");
+  Chunk918139 = require("./918139.js");
 let f = Chunk63063.Z.getArticleURL(Chunk981631.BhN.CUSTOM_PROFILES_WISHLIST);
 
 function p(e) {

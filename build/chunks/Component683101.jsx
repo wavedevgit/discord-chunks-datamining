@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk294218 = require("./294218.jsx"),
   Chunk592125 = require("./592125.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk374815 = require("./374815.js");
+  Chunk909602 = require("./909602.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,10 +60,10 @@ class T extends Chunk647438.PureComponent {
     let d = "search-result-".concat(module.id);
     return (0, Chunk951288.jsx)(Chunk481060.tEY, {
       ringTarget: this.hitRef,
-      ringClassName: Chunk374815.__invalid_searchResultFocusRing,
+      ringClassName: Chunk909602.__invalid_searchResultFocusRing,
       offset: 4,
       children: (0, Chunk951288.jsxs)("li", A(_({
-        className: Chunk374815.container
+        className: Chunk909602.container
       }, exports), {
         "aria-posinset": 1 + require + Chunk647438,
         "aria-setsize": Chunk374470,
@@ -72,13 +72,13 @@ class T extends Chunk647438.PureComponent {
           tabIndex: false,
           onClick: this.handleMessageClick,
           innerRef: this.containerRef,
-          className: Chunk374815.searchResult,
+          className: Chunk909602.searchResult,
           focusProps: {
             enabled: false
           },
           children: (0, Chunk951288.jsx)("div", {
             ref: this.hitRef,
-            className: Chunk374815.message,
+            className: Chunk909602.message,
             children: (0, Chunk951288.jsx)(Chunk294218.Z, {
               id: d,
               message: module,
@@ -90,10 +90,10 @@ class T extends Chunk647438.PureComponent {
             })
           }, module.id)
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk374815.buttonsContainer,
+          className: Chunk909602.buttonsContainer,
           "aria-hidden": true,
           children: (0, Chunk951288.jsx)(Chunk481060.P3F, {
-            className: Chunk374815.button,
+            className: Chunk909602.button,
             onClick: this.jumpTo,
             children: Chunk388032.intl.string(Chunk388032.t.k5WiPf)
           })
