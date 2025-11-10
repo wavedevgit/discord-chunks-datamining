@@ -26,8 +26,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk356379 = require("./356379.js");
 
 function T(t) {
-  let {} = t, [e, r] = n.useState(E.ij.WELCOME), l = E.bq[e], T = n.useCallback(() => {
-    if (e >= E.ij.END_SUMMARY) return void(0, d.xf)();
+  let {} = t, [e, r] = n.useState(v.ij.WELCOME), l = v.bq[e], T = n.useCallback(() => {
+    if (e >= v.ij.END_SUMMARY) return void(0, d.xf)();
     r(e + 1)
   }, [e]);
   return (0, i.jsx)(s.f6W, {
@@ -38,33 +38,33 @@ function T(t) {
       children: [(0, i.jsxs)(s.MyZ, {
         activeSlide: l,
         children: [(0, i.jsx)(s.Mi4, {
-          id: E.yD.WELCOME,
-          children: (0, i.jsx)(v.Z, {})
-        }), (0, i.jsx)(s.Mi4, {
-          id: E.yD.MESSAGES,
-          children: (0, i.jsx)(f.Z, {})
-        }), (0, i.jsx)(s.Mi4, {
-          id: E.yD.EMOJIS,
-          children: (0, i.jsx)(o.Z, {})
-        }), (0, i.jsx)(s.Mi4, {
-          id: E.yD.VOICE,
+          id: v.yD.WELCOME,
           children: (0, i.jsx)(m.Z, {})
         }), (0, i.jsx)(s.Mi4, {
-          id: E.yD.GUILDS,
+          id: v.yD.MESSAGES,
+          children: (0, i.jsx)(f.Z, {})
+        }), (0, i.jsx)(s.Mi4, {
+          id: v.yD.EMOJIS,
+          children: (0, i.jsx)(o.Z, {})
+        }), (0, i.jsx)(s.Mi4, {
+          id: v.yD.VOICE,
+          children: (0, i.jsx)(y.Z, {})
+        }), (0, i.jsx)(s.Mi4, {
+          id: v.yD.GUILDS,
           children: (0, i.jsx)(h.Z, {})
         }), (0, i.jsx)(s.Mi4, {
-          id: E.yD.FRIENDS,
+          id: v.yD.FRIENDS,
           children: (0, i.jsx)(x.Z, {
             step: e
           })
         }), (0, i.jsx)(s.Mi4, {
-          id: E.yD.GAMING,
+          id: v.yD.GAMING,
           children: (0, i.jsx)(p.Z, {})
         }), (0, i.jsx)(s.Mi4, {
-          id: E.yD.QUESTS,
-          children: (0, i.jsx)(y.Z, {})
+          id: v.yD.QUESTS,
+          children: (0, i.jsx)(E.Z, {})
         }), (0, i.jsx)(s.Mi4, {
-          id: E.yD.END,
+          id: v.yD.END,
           children: (0, i.jsx)(u.Z, {
             step: e
           })
@@ -83,7 +83,7 @@ function T(t) {
           })]
         }), (0, i.jsx)(c.Z, {
           activeSlide: l,
-          totalSlides: Object.keys(E.yD).length,
+          totalSlides: Object.keys(v.yD).length,
           className: D.stepIndicator
         }), (0, i.jsx)(s.P3F, {
           onClick: d.xf,

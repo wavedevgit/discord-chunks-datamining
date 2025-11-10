@@ -5,7 +5,7 @@ require.d(exports, {
   ij: () => l,
   yD: () => a
 });
-var i, n, l = ((i = {})[i.WELCOME = 0] = "WELCOME", i[i.MESSAGES = 1] = "MESSAGES", i[i.EMOJIS = 2] = "EMOJIS", i[i.VOICE = 3] = "VOICE", i[i.GUILDS = 4] = "GUILDS", i[i.FRIENDS_INTRO = 5] = "FRIENDS_INTRO", i[i.FRIENDS_BEST = 6] = "FRIENDS_BEST", i[i.GAMING = 7] = "GAMING", i[i.QUESTS = 8] = "QUESTS", i[i.END_REWARD = 9] = "END_REWARD", i[i.END_CLAIM = 10] = "END_CLAIM", i[i.END_SUMMARY = 11] = "END_SUMMARY", i),
+var i, n, l = ((i = {})[i.WELCOME = 0] = "WELCOME", i[i.MESSAGES = 1] = "MESSAGES", i[i.EMOJIS = 2] = "EMOJIS", i[i.VOICE = 3] = "VOICE", i[i.GUILDS = 4] = "GUILDS", i[i.FRIENDS_INTRO = 5] = "FRIENDS_INTRO", i[i.FRIENDS_TRANSITION = 6] = "FRIENDS_TRANSITION", i[i.FRIENDS_BEST = 7] = "FRIENDS_BEST", i[i.FRIENDS_LEAVE = 8] = "FRIENDS_LEAVE", i[i.GAMING = 9] = "GAMING", i[i.QUESTS = 10] = "QUESTS", i[i.END_REWARD = 11] = "END_REWARD", i[i.END_CLAIM = 12] = "END_CLAIM", i[i.END_SUMMARY = 13] = "END_SUMMARY", i),
   a = ((n = {}).WELCOME = "0", n.MESSAGES = "1", n.EMOJIS = "2", n.VOICE = "3", n.GUILDS = "4", n.FRIENDS = "5", n.GAMING = "6", n.QUESTS = "7", n.END = "8", n);
 let s = {
   0: "0",
@@ -15,9 +15,11 @@ let s = {
   4: "4",
   5: "5",
   6: "5",
-  7: "6",
-  8: "7",
-  9: "8",
-  10: "8",
-  11: "8"
+  7: "5",
+  8: "5",
+  9: "6",
+  10: "7",
+  11: "8",
+  12: "8",
+  13: "8"
 }
