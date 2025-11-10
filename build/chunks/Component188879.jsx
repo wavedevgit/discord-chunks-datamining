@@ -222,7 +222,7 @@ let T = e => {
       isAppealEligible: C,
       isDsaEligible: w,
       violationType: L
-    } = (0, b.YG)(n), N = (0, d.e7)([g.Z], () => g.Z.getAppealEligibility()), I = (0, _.P)(), k = null != p && null != p.flagged_content && p.flagged_content.length > 0, Z = (0, E.e)(), M = !!(null == p ? true : p.is_coppa) && N.includes(h.tG.AGE_VERIFY_ELIGIBLE), R = M && N.includes(h.tG.AGE_VERIFY_GLOBAL_ELIGIBLE), H = {
+    } = (0, b.YG)(n), N = (0, d.e7)([g.Z], () => g.Z.getAppealEligibility()), I = (0, _.P)(), k = null != p && null != p.flagged_content && p.flagged_content.length > 0, Z = (0, v.e)(), M = !!(null == p ? true : p.is_coppa) && N.includes(h.tG.AGE_VERIFY_ELIGIBLE), R = !!(null == p ? true : p.is_coppa) && N.includes(h.tG.AGE_VERIFY_GLOBAL_ELIGIBLE), H = {
       accountStanding: I,
       classificationId: n,
       hasFlaggedContent: k,
@@ -281,9 +281,9 @@ let T = e => {
                 is_violative_content_shown: k,
                 is_dsa_eligible: w,
                 violation_type: L
-              }), M ? R ? f.Z.openV2(n, c) : f.Z.open(n, c) : C && (u.Z.increment({
+              }), R ? f.Z.openV2(n, c) : M ? f.Z.open(n, c) : C && (u.Z.increment({
                 name: s.V.APPEAL_INGESTION_VIEW
-              }), v.Z.open(n))
+              }), E.Z.open(n))
             },
             isAppealEligible: C || M
           })

@@ -7,9 +7,9 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk194983 = require("./194983.jsx"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk834129 = require("./834129.jsx"),
+  Chunk318713 = require("./318713.jsx"),
   Chunk271383 = require("./271383.js"),
   Chunk709054 = require("./709054.js"),
   Chunk884902 = require("./884902.js"),
@@ -33,34 +33,36 @@ function g(e) {
       roleColorStrings: null != (i = null == o ? true : o.colorStrings) ? i : null
     }
   }, [t]), _ = (0, d.X7)(t.guildId, t.userId, null != x ? x : null);
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsxs)("div", {
     className: m.systemMessageContainer,
-    contentClassName: m.systemMessageContent,
-    iconNode: (0, r.jsx)(a.Ucv, {
+    children: [(0, r.jsx)(a.Ucv, {
       className: m.icon,
       color: "currentColor",
       size: "sm"
-    }),
-    iconContainerClassName: m.iconContainer,
-    timestampClassName: m.timestamp,
-    timestamp: n,
-    timestampFormat: "L",
-    compact: true,
-    children: (0, r.jsxs)("span", {
+    }), (0, r.jsx)("span", {
       className: m.boostMessage,
-      children: [(0, r.jsx)(a.PUh, {
-        className: m.boostMessageUser,
-        variant: "text-md/semibold",
-        name: g,
-        colorString: null != v ? v : null,
-        colorStrings: _
-      }), (0, r.jsx)(i.xvT, {
+      children: (0, r.jsxs)(i.xvT, {
+        tag: "span",
         variant: "text-md/medium",
         lineClamp: 1,
-        children: (0, r.jsx)(l.Z, {
-          children: f.intl.string(p.default.plwH8d)
-        })
-      })]
-    })
+        children: [(0, r.jsx)(l.u, {
+          text: g,
+          shouldShow: true,
+          asContainer: true,
+          delay: 1e3,
+          children: (0, r.jsx)(a.PUh, {
+            className: m.boostMessageUser,
+            variant: "text-md/semibold",
+            name: g,
+            colorString: null != v ? v : null,
+            colorStrings: _
+          })
+        }), f.intl.string(p.default.plwH8d)]
+      })
+    }), (0, r.jsx)(s.Z, {
+      timestamp: n,
+      timestampFormat: "L",
+      className: m.timestamp
+    })]
   })
 }

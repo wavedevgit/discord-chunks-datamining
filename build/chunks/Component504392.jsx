@@ -48,8 +48,8 @@ function L(e) {
     (0, v.Sn)(t), (0, v.BN)(t)
   }, [t]), (0, T.Wj)(t);
   let U = (0, a.e7)([x.Z], () => x.Z.getStateForGuild(t)),
-    M = (0, _.Z)(t),
-    D = i.useRef(false),
+    D = (0, _.Z)(t),
+    M = i.useRef(false),
     {
       shouldShow: G,
       modalConfig: V
@@ -67,15 +67,15 @@ function L(e) {
     }), e
   }, []), [null == U ? true : U.powerupCatalog, L]), X = K.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), H = (0, y.f)(X, t);
   return (i.useEffect(() => {
-    if (null != o && !D.current)
+    if (null != o && !M.current)
       for (let e of K)
         for (let n of e.listings) {
           if (("singleLevel" === n.type || "singlePerk" === n.type) && n.powerup.skuId === o) {
-            (0, Z.KE)(t, n.powerup), D.current = true;
+            (0, Z.KE)(t, n.powerup), M.current = true;
             return
           }
           if ("multiPerk" === n.type && (n.group === o || n.powerups.some(e => e.skuId === o))) {
-            D.current = true;
+            M.current = true;
             let e = H[n.group];
             if (null == e) return;
             e.openModal(n.powerups, {
@@ -83,7 +83,7 @@ function L(e) {
                 let e = new URL(window.location.href);
                 e.searchParams.delete(N.am);
                 let t = e.pathname + e.search + e.hash;
-                (0, p.dL)(t), D.current = false
+                (0, p.dL)(t), M.current = false
               }
             });
             return
@@ -207,7 +207,7 @@ function L(e) {
         })
       }), (0, r.jsxs)("div", {
         className: k.sidebarContainer,
-        children: [M ? (0, r.jsx)(w.Z, {
+        children: [D ? (0, r.jsx)(w.Z, {
           guildId: t
         }) : (0, r.jsx)(I.Z, {
           guildId: t
