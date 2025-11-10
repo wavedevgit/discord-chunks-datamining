@@ -1,7 +1,7 @@
 /** Chunk was on 99063 **/
 /** chunk id: 270394, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => V
+  Z: () => q
 }), require("./997841.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -108,7 +108,7 @@ function K(e) {
         }), r && null != l && (0, i.jsx)(g.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: (0, C.F6)(l, A.default, k.Z, true)
+          children: (0, C.F6)(l, D.default, k.Z, true)
         })]
       })]
     }), (0, i.jsx)(S.Z, {
@@ -166,7 +166,7 @@ function z(e) {
       variant: "text-sm/normal",
       children: a ? "..." : n.code
     }),
-    inviteSourceTrailingContent: !a && (0, D.yE)(null != (t = n.flags) ? t : 0, u.$.IS_APPLICATION_BYPASS) ? (0, i.jsxs)("div", {
+    inviteSourceTrailingContent: !a && (0, A.yE)(null != (t = n.flags) ? t : 0, u.$.IS_APPLICATION_BYPASS) ? (0, i.jsxs)("div", {
       className: B.bypass,
       children: [(0, i.jsx)(g.Text, {
         className: B.text,
@@ -192,15 +192,15 @@ function z(e) {
   })
 }
 
-function q(e) {
+function V(e) {
   let {
     applicationId: t,
     channel: r,
     showChannel: l = false,
     inviteDisabled: a = false
-  } = e, o = (0, _.q)(t), s = (0, p.e7)([A.default], () => {
+  } = e, o = (0, _.q)(t), s = (0, p.e7)([D.default], () => {
     var e;
-    return A.default.getUser(null == (e = r.linkedLobby) ? true : e.linked_by)
+    return D.default.getUser(null == (e = r.linkedLobby) ? true : e.linked_by)
   }), c = (0, T.Y)(r);
   return (0, i.jsx)(K, {
     isDisabled: a,
@@ -238,7 +238,7 @@ function q(e) {
   })
 }
 
-function V(e) {
+function q(e) {
   let {
     invites: t,
     guild: l,
@@ -266,7 +266,7 @@ function V(e) {
       data: e
     }))], [O, _, f]),
     N = () => {
-      (0, g.ZDy)(async () => e => (0, i.jsx)(w.default, F(G({}, e), {
+      (0, g.ZDy)(async () => e => (0, i.jsx)(P.default, F(G({}, e), {
         channel: u,
         guild: l,
         source: M.t4x.SETTINGS_INVITE
@@ -275,9 +275,9 @@ function V(e) {
     [E, T] = r.useState(62),
     k = () => {
       let e = {
-        source: I.Zu.GUILD_SETTINGS
+        source: w.Zu.GUILD_SETTINGS
       };
-      (0, g.ZDy)(async () => t => (0, i.jsx)(P.default, F(G({}, t), {
+      (0, g.ZDy)(async () => t => (0, i.jsx)(I.default, F(G({}, t), {
         guildId: l.id,
         analyticsData: e
       })))
@@ -407,7 +407,7 @@ function V(e) {
             }, e.data.code);
           case "channel":
             var r;
-            return (0, i.jsx)(q, {
+            return (0, i.jsx)(V, {
               applicationId: null == (r = e.data.linkedLobby) ? true : r.application_id,
               channel: e.data,
               showChannel: b,

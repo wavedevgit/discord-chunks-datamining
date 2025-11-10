@@ -96,7 +96,7 @@ let j = e => {
       additionalMenuItems: l
     } = e, {
       trackUserProfileEditAction: o
-    } = (0, f.KZ)(), u = e => {
+    } = (0, g.KZ)(), u = e => {
       if (e.shiftKey) {
         (0, p.y8)(i.type), o({
           action: "WIDGET_REMOVED",
@@ -108,7 +108,7 @@ let j = e => {
           default: e
         } = await n.e("70887").then(n.bind(n, 37668));
         return t => (0, r.jsx)(e, O(v({}, t), {
-          userId: g.default.getId(),
+          userId: f.default.getId(),
           widget: i,
           trackUserProfileEditAction: o
         }))

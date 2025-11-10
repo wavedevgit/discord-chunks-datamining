@@ -43,13 +43,13 @@ function v(e) {
   }, [C, n.type]);
   let {
     trackUserProfileAction: N
-  } = (0, d.KZ)(), A = (0, f.Z)({
+  } = (0, d.KZ)(), A = (0, g.Z)({
     widgetType: n.type,
     onAction: N
   }), Z = E && null != j && !h, {
     isDragging: R,
     dragSourcePosition: G
-  } = (0, g.q)({
+  } = (0, f.q)({
     dropRef: T,
     dragRef: k,
     userId: t,
@@ -101,12 +101,12 @@ let O = e => {
     onMouseLeave: o,
     dragSourcePosition: c,
     index: s
-  } = e, u = null != c, d = u && s < c, g = u && s > c;
+  } = e, u = null != c, d = u && s < c, f = u && s > c;
   return i ? n : (0, r.jsx)("div", {
     ref: t,
     className: l()(y.dragAndDropHitbox, {
       [y.dropIndicatorBefore]: d,
-      [y.dropIndicatorAfter]: g
+      [y.dropIndicatorAfter]: f
     }),
     onMouseEnter: a,
     onMouseLeave: o,

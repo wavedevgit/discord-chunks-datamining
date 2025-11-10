@@ -12,5 +12,8 @@ module.exports = {
   splashVideo: "splashVideo__0bef9",
   tileBuyButton: "tileBuyButton__0bef9",
   tilePrice: "tilePrice__0bef9",
-  tilePriceWithVisibleBuyButton: "tilePriceWithVisibleBuyButton__0bef9 tilePrice__0bef9"
+  tilePriceWithVisibleBuyButton: "tilePriceWithVisibleBuyButton__0bef9 tilePrice__0bef9",
+  socialLayerStorefrontCardContainer: "socialLayerStorefrontCardContainer__0bef9",
+  socialLayerStorefrontCardBackgroundImage: "socialLayerStorefrontCardBackgroundImage__0bef9",
+  socialLayerStorefrontCardImage: "socialLayerStorefrontCardImage__0bef9"
 }

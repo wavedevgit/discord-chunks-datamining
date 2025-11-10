@@ -12,15 +12,15 @@ var Chunk87051 = require("./87051.js"),
   Chunk526761 = require("./526761.js");
 
 function d(e, n) {
-  let a = _.ZP.getGuildFlags(e);
+  let a = o.ZP.getGuildFlags(e);
   n === c.s8.ALL_MESSAGES ? t.Z.updateGuildNotificationSettings(e, {
     message_notifications: r.bL.ALL_MESSAGES,
     flags: (0, i.Q4)(a, s.vc.UNREADS_ALL_MESSAGES)
-  }, o.ZB.PresetAll) : n === c.s8.MENTIONS ? t.Z.updateGuildNotificationSettings(e, {
+  }, _.ZB.PresetAll) : n === c.s8.MENTIONS ? t.Z.updateGuildNotificationSettings(e, {
     message_notifications: r.bL.ONLY_MENTIONS,
     flags: (0, i.Q4)(a, s.vc.UNREADS_ONLY_MENTIONS)
-  }, o.ZB.PresetMentions) : n === c.s8.NOTHING && t.Z.updateGuildNotificationSettings(e, {
+  }, _.ZB.PresetMentions) : n === c.s8.NOTHING && t.Z.updateGuildNotificationSettings(e, {
     message_notifications: r.bL.NO_MESSAGES,
     flags: (0, i.Q4)(a, s.vc.UNREADS_ONLY_MENTIONS)
-  }, o.ZB.PresetNothing)
+  }, _.ZB.PresetNothing)
 }

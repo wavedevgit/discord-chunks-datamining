@@ -1,16 +1,16 @@
 /** Chunk was on 33213 **/
 /** chunk id: 640678, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  t: () => o
+  t: () => a
 });
 var Chunk163400 = require("./163400.js"),
   Chunk995532 = require("./995532.js"),
   Chunk496675 = require("./496675.js"),
   Chunk896007 = require("./896007.js");
 
-function o(e) {
+function a(e) {
   var t, n;
-  let o = s.Z.getGuildPermissionProps(e),
+  let a = s.Z.getGuildPermissionProps(e),
     c = (0, i.p)(e.id).length > 0;
   return l.ZP.generateSections((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -31,7 +31,7 @@ function o(e) {
     return e
   }({
     showDirtyGuildTemplateIndicator: false
-  }, o), n = n = {
+  }, a), n = n = {
     canUnlinkChannels: c,
     welcomeScreenEmpty: r.Z.isEmpty(e.id)
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

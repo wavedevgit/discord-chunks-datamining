@@ -2,8 +2,8 @@
 /** chunk id: 626799, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => j,
-  Z: () => M
+  $: () => M,
+  Z: () => L
 }), require("./388685.js"), require("./415506.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,6 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk730749 = require("./730749.jsx"),
   Chunk112724 = require("./112724.jsx"),
   Chunk812206 = require("./812206.js"),
-  Chunk164670 = require("./164670.js"),
   Chunk283595 = require("./283595.js"),
   Chunk558314 = require("./558314.js"),
   Chunk55563 = require("./55563.js"),
@@ -29,7 +28,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk350003 = require("./350003.js");
 
-function C(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,20 +37,20 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
 }
 
-function R(e, t) {
+function N(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,12 +61,12 @@ function R(e, t) {
   return n
 }
 
-function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class w extends(r = Chunk647438.Component) {
+class P extends(r = Chunk647438.Component) {
   get analyticsLocation() {
     let {
       analyticsContext: {
@@ -75,7 +74,7 @@ class w extends(r = Chunk647438.Component) {
       },
       analyticsSection: t
     } = this.props;
-    return P(N({}, module), {
+    return R(C({}, module), {
       section: null != exports ? exports : Chunk981631.jXE.APPLICATION_EMBED,
       object: Chunk981631.qAy.CARD
     })
@@ -86,7 +85,7 @@ class w extends(r = Chunk647438.Component) {
       skuId: t,
       storeListing: n
     } = this.props;
-    (null == module || null == require) && (0, Chunk558381.km)(exports), (0, Chunk164670.K$)(module) && null != require && null == require.headerBackground && (0, Chunk558381.rV)(require.id)
+    (null == module || null == require) && (0, Chunk558381.km)(exports)
   }
   renderViewInStoreButton() {
     return (0, Chunk951288.jsx)(Chunk755721.zx.Link, {
@@ -122,36 +121,36 @@ class w extends(r = Chunk647438.Component) {
     })
   }
   constructor(...e) {
-    super(...e), C(this, "state", {
+    super(...e), A(this, "state", {
       playing: false,
       muted: true
-    }), C(this, "handleToggleMute", () => {
+    }), A(this, "handleToggleMute", () => {
       this.setState({
         muted: !this.state.muted
       })
-    }), C(this, "handleMouseEnter", () => {
+    }), A(this, "handleMouseEnter", () => {
       this.setState({
         playing: true
       })
-    }), C(this, "handleMouseLeave", () => {
+    }), A(this, "handleMouseLeave", () => {
       this.setState({
         playing: false
       })
-    }), C(this, "getStoreListingLocation", () => {
+    }), A(this, "getStoreListingLocation", () => {
       let {
         sku: e
       } = this.props;
       if (null == e) throw Error("Should not be link to ApplicationStoreListing without SKU");
-      return (0, I.ZI)(e.id, {
+      return (0, v.ZI)(e.id, {
         slug: e.slug,
         analyticsSource: this.analyticsLocation
       })
-    }), C(this, "handleActionButtonClick", e => e.preventDefault()), C(this, "handleBuyButtonClick", e => e.preventDefault()), C(this, "handleLinkClick", e => {
+    }), A(this, "handleActionButtonClick", e => e.preventDefault()), A(this, "handleBuyButtonClick", e => e.preventDefault()), A(this, "handleLinkClick", e => {
       let {
         onEmbedClick: t
       } = this.props;
       null != t && t(e)
-    }), C(this, "renderApplicationTile", (e, t) => {
+    }), A(this, "renderApplicationTile", (e, t) => {
       let {
         inLibrary: n,
         width: r,
@@ -176,7 +175,7 @@ class w extends(r = Chunk647438.Component) {
         isHorizontal: u,
         isEmbed: true
       })
-    }), C(this, "renderActions", e => {
+    }), A(this, "renderActions", e => {
       let {
         inLibrary: t,
         application: n,
@@ -185,20 +184,20 @@ class w extends(r = Chunk647438.Component) {
         renderCustomActions: o
       } = this.props;
       if (null != o) return (0, i.jsx)("div", {
-        className: A.tileActions,
+        className: T.tileActions,
         children: o()
       });
       if (null == n) return null;
       let s = null != n && n.primarySkuId === r,
-        c = null != a && a.hasFlag(S.eHb.HIDDEN);
+        c = null != a && a.hasFlag(I.eHb.HIDDEN);
       return (0, i.jsxs)("div", {
-        className: A.tileActions,
+        className: T.tileActions,
         children: [!s || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {
           application: n,
           customDisabledColor: l.zx.Colors.PRIMARY,
           size: l.zx.Sizes.SMALL,
-          className: A.actionButton,
-          source: S.Sbl.MESSAGE_EMBED,
+          className: T.actionButton,
+          source: I.Sbl.MESSAGE_EMBED,
           onClick: this.handleActionButtonClick
         }), t && !c || e.premium ? null : (0, i.jsx)(f.Z, {
           type: f.Z.Types.EMBED,
@@ -209,24 +208,24 @@ class w extends(r = Chunk647438.Component) {
     })
   }
 }
-C(w, "defaultProps", {
+A(P, "defaultProps", {
   renderFallback: Chunk981631.dG4
 });
-let D = [Chunk55563.Z, Chunk558314.Z, Chunk283595.Z, Chunk551428.Z];
+let w = [Chunk55563.Z, Chunk558314.Z, Chunk283595.Z, Chunk551428.Z];
 
-function x(e) {
+function D(e) {
   let {
     skuId: t
-  } = e, n = O.Z.get(t), r = null != n ? g.Z.getApplication(n.applicationId) : null;
+  } = e, n = y.Z.get(t), r = null != n ? g.Z.getApplication(n.applicationId) : null;
   return {
     sku: n,
     application: r,
-    fetchFailed: O.Z.didFetchingSkuFail(t),
-    inLibrary: null != n && b.Z.hasApplication(n.applicationId, n.applicationId, true),
-    storeListing: null != n ? v.Z.getForSKU(n.id) : null,
-    libraryApplication: null != n ? b.Z.getLibraryApplication(n.applicationId, n.applicationId, true) : null
+    fetchFailed: y.Z.didFetchingSkuFail(t),
+    inLibrary: null != n && E.Z.hasApplication(n.applicationId, n.applicationId, true),
+    storeListing: null != n ? O.Z.getForSKU(n.id) : null,
+    libraryApplication: null != n ? E.Z.getLibraryApplication(n.applicationId, n.applicationId, true) : null
   }
 }
-let L = (0, Chunk112724.Z)((0, Chunk730749.Z)(w)),
-  M = Chunk442837.ZP.connectStores(D, x)(L),
-  j = (0, Chunk730749.Z)(Chunk442837.ZP.connectStores(D, x)(w))
+let x = (0, Chunk112724.Z)((0, Chunk730749.Z)(P)),
+  L = Chunk442837.ZP.connectStores(w, D)(x),
+  M = (0, Chunk730749.Z)(Chunk442837.ZP.connectStores(w, D)(P))

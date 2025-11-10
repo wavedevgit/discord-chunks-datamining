@@ -1,7 +1,7 @@
 /** Chunk was on 99063 **/
 /** chunk id: 490655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk446856 = require("./446856.js");
 
-function I(e, t) {
+function w(e, t) {
   switch (e) {
     case N.b4C.APPLICATION:
       var n;
@@ -50,25 +50,25 @@ function I(e, t) {
       return ""
   }
 }
-let P = Chunk647438.memo(function(e) {
+let I = Chunk647438.memo(function(e) {
   let {
     section: t,
     sectionId: n,
     guild: l,
-    channel: P,
-    integrations: w,
+    channel: I,
+    integrations: P,
     editedIntegration: T,
     webhooks: Z,
     editedWebhook: k,
-    isFetchingWebhooks: A,
-    refToScroller: D,
+    isFetchingWebhooks: D,
+    refToScroller: A,
     errors: R,
     hasChanges: L
-  } = e, M = (0, o.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), U = (0, o.cj)([g.ZP], () => g.ZP.getChannels(null == l ? true : l.id)), B = (0, o.cj)([f.Z], () => a().keyBy(U.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), W = (0, o.cj)([f.Z], () => a().keyBy(U.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), H = null != P ? P : M, G = t === N.b4C.APPLICATION ? n : null, [F, K] = r.useState(d.$x), z = r.useCallback(() => L() ? (h.S.dispatch(N.CkL.SHAKE_APP, {
+  } = e, M = (0, o.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), U = (0, o.cj)([g.ZP], () => g.ZP.getChannels(null == l ? true : l.id)), B = (0, o.cj)([f.Z], () => a().keyBy(U.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), W = (0, o.cj)([f.Z], () => a().keyBy(U.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), H = null != I ? I : M, G = t === N.b4C.APPLICATION ? n : null, [F, K] = r.useState(d.$x), z = r.useCallback(() => L() ? (h.S.dispatch(N.CkL.SHAKE_APP, {
     duration: 300,
     intensity: F
-  }), K(Math.min(F + d.d7, d.w6)), h.S.dispatch(N.CkL.EMPHASIZE_NOTICE), false) : (K(d.$x), true), [L, F]), q = r.useCallback(e => !!z() && (c.Z.setSection(e), true), [z]), {
-    applicationIntegrations: V,
+  }), K(Math.min(F + d.d7, d.w6)), h.S.dispatch(N.CkL.EMPHASIZE_NOTICE), false) : (K(d.$x), true), [L, F]), V = r.useCallback(e => !!z() && (c.Z.setSection(e), true), [z]), {
+    applicationIntegrations: q,
     applicationBotIds: Y,
     builtInIntegrations: J,
     customWebhooks: Q,
@@ -79,8 +79,8 @@ let P = Chunk647438.memo(function(e) {
       n = {},
       i = [],
       r = [];
-    if (null != w)
-      for (let i of w)
+    if (null != P)
+      for (let i of P)
         if ("discord" === i.type) {
           if (null != i.application) {
             var l;
@@ -99,9 +99,9 @@ let P = Chunk647438.memo(function(e) {
       customWebhooks: i,
       followedChannelWebhooks: r
     }
-  }, [w, B, W, Z]);
+  }, [P, B, W, Z]);
   r.useEffect(() => {
-    if (!A) switch (t) {
+    if (!D) switch (t) {
       case N.b4C.TWITCH:
         null == J[N.ABu.TWITCH] && c.Z.setSection(N.b4C.OVERVIEW);
         break;
@@ -109,9 +109,9 @@ let P = Chunk647438.memo(function(e) {
         null == J[N.ABu.YOUTUBE] && c.Z.setSection(N.b4C.OVERVIEW);
         break;
       case N.b4C.APPLICATION:
-        null != G && (G in Y || G in V) || c.Z.setSection(N.b4C.OVERVIEW)
+        null != G && (G in Y || G in q) || c.Z.setSection(N.b4C.OVERVIEW)
     }
-  }, [V, Y, J, G, t, A]), r.useEffect(() => {
+  }, [q, Y, J, G, t, D]), r.useEffect(() => {
     (null == l ? true : l.id) != null && b.Z.getEntitlementsForGuildFetchState(l.id) === b.M.NOT_FETCHED && m.i1(l.id)
   }, [null == l ? true : l.id]), r.useEffect(() => () => {
     c.Z.setSection(N.b4C.OVERVIEW, null)
@@ -157,7 +157,7 @@ let P = Chunk647438.memo(function(e) {
       break;
     case N.b4C.APPLICATION:
       var ee;
-      let et = null != G ? null != (ee = V[Y[G]]) ? ee : V[G] : null;
+      let et = null != G ? null != (ee = q[Y[G]]) ? ee : q[G] : null;
       null != et && ($ = (0, i.jsx)(j.Z, {
         guild: l,
         applicationIntegration: et,
@@ -179,7 +179,7 @@ let P = Chunk647438.memo(function(e) {
     case N.b4C.WEBHOOKS:
       $ = (0, i.jsx)(C.Z, {
         guild: l,
-        channel: P,
+        channel: I,
         customWebhooks: Q,
         editedWebhook: k,
         selectableWebhookChannels: function(e) {
@@ -201,7 +201,7 @@ let P = Chunk647438.memo(function(e) {
           return e
         }({}, B, W),
         canNavigate: z,
-        refToScroller: D,
+        refToScroller: A,
         errors: R
       });
       break;
@@ -213,12 +213,12 @@ let P = Chunk647438.memo(function(e) {
     default:
       $ = (0, i.jsx)(_.Z, {
         guild: l,
-        channel: P,
-        applicationIntegrations: V,
+        channel: I,
+        applicationIntegrations: q,
         builtInIntegrations: J,
         customWebhooks: Q,
         followedChannelWebhooks: X,
-        isLoadingWebhooks: A || null == l,
+        isLoadingWebhooks: D || null == l,
         canCreateWebhook: null != H,
         onManageCustomWebhooks: () => {
           c.Z.setSection(N.b4C.WEBHOOKS)
@@ -249,15 +249,15 @@ let P = Chunk647438.memo(function(e) {
       className: E.breadcrumbs,
       children: t === N.b4C.OVERVIEW ? (0, i.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
-        children: I(N.b4C.OVERVIEW)
+        children: w(N.b4C.OVERVIEW)
       }) : (0, i.jsx)(s.OoM, {
         activeId: t.toString(),
         breadcrumbs: [N.b4C.OVERVIEW, t].map(e => ({
           id: e.toString(),
-          label: I(e, V[G])
+          label: w(e, q[G])
         })),
         onBreadcrumbClick: e => {
-          t !== parseInt(e.id) && q(parseInt(e.id))
+          t !== parseInt(e.id) && V(parseInt(e.id))
         },
         renderCustomBreadcrumb: (e, t) => (0, i.jsx)(s.Heading, {
           variant: "heading-lg/semibold",

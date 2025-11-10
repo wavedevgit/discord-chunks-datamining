@@ -33,7 +33,7 @@ let f = function(e) {
 };
 
 function E(e, t, n) {
-  var E, g, d, S;
+  var E, g, S, O;
   return (e => {
     switch (e) {
       case o.jj.BLOCK_MESSAGE:
@@ -58,7 +58,7 @@ function E(e, t, n) {
       }
     })(e)) ? E : "",
     descriptionText: null != (g = f(e, n)) ? g : "",
-    helperText: null != (d = ((e, t) => {
+    helperText: null != (S = ((e, t) => {
       var n, r, f;
       switch (e) {
         case o.jj.QUARANTINE_USER:
@@ -83,8 +83,8 @@ function E(e, t, n) {
           })
         }
       }
-    })(e, t)) ? d : null,
-    icon: null != (S = (e => {
+    })(e, t)) ? S : null,
+    icon: null != (O = (e => {
       switch (e) {
         case o.jj.BLOCK_MESSAGE:
           return r.k$p;
@@ -95,7 +95,7 @@ function E(e, t, n) {
         case o.jj.QUARANTINE_USER:
           return r.ics
       }
-    })(e)) ? S : r.k$p,
+    })(e)) ? O : r.k$p,
     isEditable: e !== o.jj.QUARANTINE_USER
   } : null
 }

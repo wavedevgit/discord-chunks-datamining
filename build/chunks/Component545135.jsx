@@ -71,17 +71,17 @@ function w(e) {
   let {
     guild: t,
     onSelect: r,
-    hideSettings: a
+    hideSettings: o
   } = e, u = t.id, w = E.ZP.getDefaultChannel(u), I = (0, b._k)({
     location: "guild_context_menu"
-  }), U = (0, l.e7)([O.default], () => {
+  }), R = (0, l.e7)([O.default], () => {
     let e = O.default.getCurrentUser();
     return s()(null != e, "GuildContextMenu: user cannot be undefined"), (0, h.eM)(t, e)
   }, [t]), T = (0, x.Z)({
     guild: t,
     source: M.t4x.GUILD_CONTEXT_MENU,
     channel: I.isGuildEntrypointEnabled ? null : w
-  }), R = (0, m.Z)(u), B = (0, P.Z)(t), C = (0, L.Z)(t), Q = (0, Z.Z)(t), Y = (0, y.Z)({
+  }), U = (0, m.Z)(u), C = (0, P.Z)(t), B = (0, L.Z)(t), Q = (0, Z.Z)(t), Y = (0, y.Z)({
     guildId: t.id,
     userId: f.default.getId(),
     analyticsLocation: {
@@ -89,15 +89,15 @@ function w(e) {
       section: M.jXE.CHAT_USERNAME,
       object: M.qAy.CONTEXT_MENU_ITEM
     }
-  }), H = (0, j.Z)(t), V = (0, g.Z)(t.id), q = (0, d.Z)({
+  }), H = (0, j.Z)(t), V = (0, g.Z)(t.id), F = (0, d.Z)({
     id: t.id,
     label: G.intl.string(G.t["94lLD7"])
-  }), F = (0, N.Z)(t, {
+  }), q = (0, N.Z)(t, {
     section: M.jXE.GUILD_LIST
-  }), W = (0, S.Z)(t.id), X = (0, v.Z)(t.id), J = (0, _.Z)(t), K = (0, p.Mn)("GuildContextMenu"), z = (0, A.p)(t);
+  }), W = (0, S.Z)(t.id), X = (0, v.Z)(t.id), J = (0, _.Z)(t), z = (0, p.Mn)("GuildContextMenu"), K = (0, A.p)(t);
 
   function $() {
-    (0, o.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("53961").then(n.bind(n, 402979));
@@ -106,16 +106,16 @@ function w(e) {
       }))
     })
   }
-  return t.features.has(M.GuildFeatures.HUB) ? (0, i.jsxs)(o.v2r, {
+  return t.features.has(M.GuildFeatures.HUB) ? (0, i.jsxs)(a.v2r, {
     navId: "guild-context",
     onClose: c.Zy,
     "aria-label": G.intl.string(G.t.HpQykc),
     onSelect: r,
-    children: [(0, i.jsxs)(o.kSQ, {
-      children: [T, (0, i.jsx)(o.sNh, {
+    children: [(0, i.jsxs)(a.kSQ, {
+      children: [T, (0, i.jsx)(a.sNh, {
         id: "privacy",
         label: G.intl.string(G.t.IlFwwR),
-        action: () => (0, o.ZDy)(async () => {
+        action: () => (0, a.ZDy)(async () => {
           let {
             default: e
           } = await n.e("86722").then(n.bind(n, 264333));
@@ -124,32 +124,32 @@ function w(e) {
           }))
         })
       }), Y]
-    }), U ? null : (0, i.jsx)(o.kSQ, {
-      children: (0, i.jsx)(o.sNh, {
+    }), R ? null : (0, i.jsx)(a.kSQ, {
+      children: (0, i.jsx)(a.sNh, {
         id: "leave-guild",
         label: G.intl.string(G.t.Dv8gFT),
         action: $,
         color: "danger"
       })
-    }), (0, i.jsx)(o.kSQ, {
-      children: q
+    }), (0, i.jsx)(a.kSQ, {
+      children: F
     })]
-  }) : (0, i.jsxs)(o.v2r, {
+  }) : (0, i.jsxs)(a.v2r, {
     navId: "guild-context",
     onClose: c.Zy,
     "aria-label": G.intl.string(G.t.HpQykc),
     onSelect: r,
-    children: [(0, i.jsx)(o.kSQ, {
-      children: F
-    }), (0, i.jsx)(o.kSQ, {
+    children: [(0, i.jsx)(a.kSQ, {
+      children: q
+    }), (0, i.jsx)(a.kSQ, {
       children: T
-    }), (0, i.jsxs)(o.kSQ, {
-      children: [B, K || __OVERLAY__ ? null : C, K && !__OVERLAY__ ? X : null, R, W]
-    }), (0, i.jsxs)(o.kSQ, {
-      children: [a ? null : Q, __OVERLAY__ ? null : (0, i.jsx)(o.sNh, {
+    }), (0, i.jsxs)(a.kSQ, {
+      children: [C, z || __OVERLAY__ ? null : B, z && !__OVERLAY__ ? X : null, U, W]
+    }), (0, i.jsxs)(a.kSQ, {
+      children: [o ? null : Q, __OVERLAY__ ? null : (0, i.jsx)(a.sNh, {
         id: "privacy",
         label: G.intl.string(G.t.BayiAo),
-        action: () => (0, o.ZDy)(async () => {
+        action: () => (0, a.ZDy)(async () => {
           let {
             default: e
           } = await n.e("86722").then(n.bind(n, 264333));
@@ -158,19 +158,19 @@ function w(e) {
           }))
         })
       }), Y]
-    }), (0, i.jsxs)(o.kSQ, {
+    }), (0, i.jsxs)(a.kSQ, {
       children: [H, V]
-    }), (0, i.jsxs)(o.kSQ, {
-      children: [J, !U && (0, i.jsx)(o.sNh, {
+    }), (0, i.jsxs)(a.kSQ, {
+      children: [J, !R && (0, i.jsx)(a.sNh, {
         id: "leave-guild",
         label: G.intl.string(G.t.J2TBi3),
         action: $,
         color: "danger"
       })]
-    }), (0, i.jsx)(o.kSQ, {
-      children: z
-    }), (0, i.jsx)(o.kSQ, {
-      children: q
+    }), (0, i.jsx)(a.kSQ, {
+      children: K
+    }), (0, i.jsx)(a.kSQ, {
+      children: F
     })]
   })
 }
@@ -178,7 +178,7 @@ function w(e) {
 function I(e) {
   let {
     analyticsLocations: t
-  } = (0, u.ZP)(a.Z.CONTEXT_MENU);
+  } = (0, u.ZP)(o.Z.CONTEXT_MENU);
   return (0, i.jsx)(u.Gt, {
     value: t,
     children: (0, i.jsx)(w, k({}, e))

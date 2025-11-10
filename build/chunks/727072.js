@@ -3,7 +3,7 @@
 require.d(exports, {
   I2: () => j,
   RD: () => p,
-  mY: () => O,
+  mY: () => d,
   pH: () => A
 }), require("./539854.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
@@ -47,8 +47,8 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let d = {},
-  S = (0, Chunk51835.F)((e, t) => ({
+let S = {},
+  O = (0, Chunk51835.F)((e, t) => ({
     rules: {},
     fetching: false,
     error: null,
@@ -60,7 +60,7 @@ let d = {},
         triggerType: o
       } = n, {
         rules: c
-      } = t(), f = null != (r = c[i]) ? r : {}, d = null != (l = f[o]) ? l : [], S = d.some(e => e.id === u), O = d.filter(e => !(0, s.U)(e.id) || e.triggerType !== o), j = S ? O.map(e => e.id === u ? n : e) : [...O, n];
+      } = t(), f = null != (r = c[i]) ? r : {}, S = null != (l = f[o]) ? l : [], O = S.some(e => e.id === u), d = S.filter(e => !(0, s.U)(e.id) || e.triggerType !== o), j = O ? d.map(e => e.id === u ? n : e) : [...d, n];
       (0, a.j)(() => {
         e({
           rules: g(E({}, c), {
@@ -94,9 +94,9 @@ let d = {},
       if (function(e) {
           var t;
           let n = Date.now();
-          return n - (null != (t = d[e]) ? t : 0) > 2e4
+          return n - (null != (t = S[e]) ? t : 0) > 2e4
         }(n)) {
-        d[n] = Date.now();
+        S[n] = Date.now();
         try {
           let r = await (0, o.$Y)(n),
             l = (e => {
@@ -136,13 +136,13 @@ let d = {},
       }
     }
   })),
-  O = (e, t) => {
+  d = (e, t) => {
     var n, r;
-    return (null != (r = null == (n = S.getState().rules[e]) ? true : n[t]) ? r : []).length
+    return (null != (r = null == (n = O.getState().rules[e]) ? true : n[t]) ? r : []).length
   };
 
 function j(e) {
-  let [t, n] = r.useState(false), [i, a] = S(e => [e.syncRules, e.fetching], l.X);
+  let [t, n] = r.useState(false), [i, a] = O(e => [e.syncRules, e.fetching], l.X);
   return [t, r.useCallback(async () => {
     if (!a && null != e) try {
       n(true), await i(e)
@@ -162,7 +162,7 @@ function p(e) {
 }
 
 function A(e) {
-  return S(t => {
+  return O(t => {
     var n;
     return {
       rulesByTriggerType: null != (n = t.rules[null != e ? e : f.lds]) ? n : {},

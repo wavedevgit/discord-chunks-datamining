@@ -17,8 +17,8 @@ function u(e) {
     dragRef: n,
     userId: u,
     widget: d,
-    index: g,
-    disableInteraction: f = false,
+    index: f,
+    disableInteraction: g = false,
     onReorder: p
   } = e, m = (0, s.Z)(u), {
     isDragging: b,
@@ -34,13 +34,13 @@ function u(e) {
     type: "WIDGET",
     item: {
       widgetType: d.type,
-      index: g,
+      index: f,
       itemType: "WIDGET",
       itemPreviewProps: {
         widget: d
       }
     },
-    canDrag: () => !f,
+    canDrag: () => !g,
     collect: e => ({
       handlerId: e.getHandlerId(),
       isDragging: e.isDragging()
@@ -56,7 +56,7 @@ function u(e) {
     dragSourcePosition: j
   }, x] = (0, l.L)({
     accept: "WIDGET",
-    canDrop: () => !f,
+    canDrop: () => !g,
     collect: e => {
       let t = null,
         n = e.getItem();
@@ -66,11 +66,11 @@ function u(e) {
       }
     },
     drop: e => {
-      let t = null != g ? g : 0;
+      let t = null != f ? f : 0;
       y(e.index, t), e.index = t
     }
   });
-  return null == g || f ? {
+  return null == f || g ? {
     isDragging: false,
     dragSourcePosition: null
   } : (v(n), x(t), {

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk5036 = require("./5036.js"),
@@ -79,48 +79,48 @@ function Y(e, t) {
 let W = Chunk647438.memo(function(e) {
   let {
     guild: t,
-    onClose: l,
+    onClose: a,
     onSelect: W
-  } = e, q = (0, o.e7)([C.default], () => C.default.getCurrentUser());
-  a()(null != q, "GuildHeaderPopout: user cannot be undefined"), r.useEffect(() => {
+  } = e, J = (0, o.e7)([M.default], () => M.default.getCurrentUser());
+  l()(null != J, "GuildHeaderPopout: user cannot be undefined"), r.useEffect(() => {
     U.default.track(L.rMx.GUILD_DROPDOWN_MENU_VIEWED, {
       guild_id: t.id
     })
   });
-  let J = (0, o.e7)([M.ZP], () => M.ZP.isGuildCollapsed(t.id), [t.id]),
+  let V = (0, o.e7)([C.ZP], () => C.ZP.isGuildCollapsed(t.id), [t.id]),
     {
-      canAccessSettings: V,
-      canManageChannels: z,
-      showGuildAnalytics: X
+      canAccessSettings: z,
+      canManageChannels: X,
+      showGuildAnalytics: q
     } = (0, o.cj)([A.Z], () => ({
       canAccessSettings: A.Z.canAccessGuildSettings(t),
       canManageChannels: A.Z.can(L.Plq.MANAGE_CHANNELS, t),
       showGuildAnalytics: A.Z.can(L.Plq.VIEW_GUILD_ANALYTICS, t) && t.features.has(L.GuildFeatures.COMMUNITY)
     }), [t]),
-    K = (0, v.N8)(t),
-    $ = (0, T.eM)(t, q),
-    ee = (0, o.e7)([w.Z], () => w.Z.isLurking(t.id), [t.id]),
-    et = (0, o.e7)([k.ZP], () => k.ZP.isCurrentUserGuest(t.id)),
-    en = (0, x.Z)(t.id, true),
+    K = (0, m.N8)(t),
+    $ = (0, k.eM)(t, J),
+    ee = (0, o.e7)([_.Z], () => _.Z.isLurking(t.id), [t.id]),
+    et = (0, o.e7)([T.ZP], () => T.ZP.isCurrentUserGuest(t.id)),
+    en = (0, v.Z)(t.id, true),
     ei = (0, b.ZP)(t),
     er = (0, I.Z)({
       source: L.t4x.GUILD_HEADER,
       guild: t
     }),
-    el = (0, j.Z)({
+    ea = (0, j.Z)({
       guildId: t.id,
-      userId: q.id,
+      userId: J.id,
       analyticsLocation: {
         page: L.ZY5.GUILD_CHANNEL,
         section: L.jXE.GUILD_DROPDOWN_MENU
       },
       icon: c.vdY
     }),
-    ea = t.features.has(L.GuildFeatures.HUB),
+    el = t.features.has(L.GuildFeatures.HUB),
     eo = t.id === R._,
     ec = t.id === L.STv,
-    ed = (0, E.Z)(t.id),
-    es = (0, p.Z)(t),
+    es = (0, E.Z)(t.id),
+    ed = (0, p.Z)(t),
     eu = (0, h.Z)(t),
     eg = (0, O.Z)(t, true),
     eb = (0, y.Z)(t),
@@ -158,21 +158,21 @@ let W = Chunk647438.memo(function(e) {
     onSelect: W,
     navId: "guild-header-popout",
     variant: "fixed",
-    onClose: l,
+    onClose: a,
     "aria-label": F.intl.string(F.t.HpQykc),
     children: (0, i.jsx)(c.sNh, {
       id: "leave-guild",
       label: F.intl.string(F.t.J2TBi3),
       icon: c.PBZ,
       action: () => {
-        Z.Z.leaveGuild(t.id, true)
+        S.Z.leaveGuild(t.id, true)
       }
     })
   }) : eo ? (0, i.jsxs)(c.v2r, {
     onSelect: W,
     navId: "favorites-header-popout",
     variant: "fixed",
-    onClose: l,
+    onClose: a,
     "aria-label": F.intl.string(F.t.HpQykc),
     children: [(0, i.jsxs)(c.kSQ, {
       children: [ef && (0, i.jsx)(c.sNh, {
@@ -201,23 +201,23 @@ let W = Chunk647438.memo(function(e) {
       children: (0, i.jsx)(c.S89, {
         id: "hide-muted-channels",
         label: F.intl.string(F.t.UwOLJO),
-        checked: J,
-        action: () => d.Z.toggleCollapseGuild(t.id)
+        checked: V,
+        action: () => s.Z.toggleCollapseGuild(t.id)
       })
     })]
-  }) : ea ? (0, i.jsxs)(c.v2r, {
+  }) : el ? (0, i.jsxs)(c.v2r, {
     onSelect: W,
     navId: "guild-header-popout",
     variant: "fixed",
-    onClose: l,
+    onClose: a,
     "aria-label": F.intl.string(F.t.HpQykc),
     children: [(0, i.jsxs)(c.kSQ, {
-      children: [V ? (0, i.jsx)(c.sNh, {
+      children: [z ? (0, i.jsx)(c.sNh, {
         id: "settings",
         label: F.intl.string(F.t["154/bL"]),
         icon: ep ? c.Ncx : c.ewm,
         action: () => {
-          Z.Z.open(t.id, (0, N.r)())
+          S.Z.open(t.id, (0, N.r)())
         }
       }) : null, er, (0, i.jsx)(c.sNh, {
         id: "privacy",
@@ -231,7 +231,7 @@ let W = Chunk647438.memo(function(e) {
             guild: t
           }))
         })
-      }), el]
+      }), ea]
     }), $ ? null : (0, i.jsx)(c.kSQ, {
       children: (0, i.jsx)(c.sNh, {
         id: "leave",
@@ -245,7 +245,7 @@ let W = Chunk647438.memo(function(e) {
     onSelect: W,
     navId: "guild-header-popout",
     variant: "fixed",
-    onClose: l,
+    onClose: a,
     "aria-label": F.intl.string(F.t.HpQykc),
     children: [(0, i.jsxs)(c.kSQ, {
       children: [(0, i.jsx)(c.sNh, {
@@ -253,52 +253,52 @@ let W = Chunk647438.memo(function(e) {
         label: F.intl.string(F.t.VJEVbu),
         icon: c.Ucv,
         action: () => {
-          (0, m.f)({
+          (0, x.f)({
             guildId: t.id,
             location: {
               section: L.jXE.GUILD_HEADER_POPOUT
             }
           })
         }
-      }), (0, S.up)(t) && (0, S.jq)(t) && (0, i.jsx)(c.sNh, {
+      }), (0, D.up)(t) && (0, D.jq)(t) && (0, i.jsx)(c.sNh, {
         id: "guild-tag",
         label: F.intl.string(B.default.mf2OwH),
-        icon: (0, i.jsx)(D.m0, {
+        icon: (0, i.jsx)(w.m0, {
           guildId: t.id,
           guildBadge: t.profile.badge,
           guildTag: t.profile.tag,
           inline: false
         }),
-        action: () => (0, _.Z)(t.id)
+        action: () => (0, Z.Z)(t.id)
       })]
     }), (0, i.jsxs)(c.kSQ, {
-      children: [$ && q.isStaff() && eh ? (0, i.jsx)(c.sNh, {
+      children: [$ && J.isStaff() && eh ? (0, i.jsx)(c.sNh, {
         id: "create-deadchat",
         label: "Deadchat Ping",
         icon: c.eQA,
         action: () => {
-          (0, s.j8)(t.id, L.uaV.GUILD_DEADCHAT_REVIVE_PROMPT)
+          (0, d.j8)(t.id, L.uaV.GUILD_DEADCHAT_REVIVE_PROMPT)
         }
-      }) : null, $ && q.isStaff() && ej ? (0, i.jsx)(c.sNh, {
+      }) : null, $ && J.isStaff() && ej ? (0, i.jsx)(c.sNh, {
         id: "create-gaming-ping",
         label: "Gaming Stats Ping",
         icon: c.eQA,
         action: () => {
-          (0, s.j8)(t.id, L.uaV.GUILD_GAMING_STATS_PROMPT)
+          (0, d.j8)(t.id, L.uaV.GUILD_GAMING_STATS_PROMPT)
         }
-      }) : null, er, V ? (0, i.jsx)(c.sNh, {
+      }) : null, er, z ? (0, i.jsx)(c.sNh, {
         id: "settings",
         label: F.intl.string(F.t["154/bL"]),
         icon: ep ? c.Ncx : c.ewm,
         action: () => {
-          Z.Z.open(t.id, (0, N.r)())
+          S.Z.open(t.id, (0, N.r)())
         }
-      }) : null, X ? (0, i.jsx)(c.sNh, {
+      }) : null, q ? (0, i.jsx)(c.sNh, {
         id: "insights",
         label: F.intl.string(F.t["0wWfUG"]),
         icon: c.IeX,
-        action: () => Z.Z.open(t.id, L.pNK.ANALYTICS)
-      }) : null, z ? (0, i.jsxs)(i.Fragment, {
+        action: () => S.Z.open(t.id, L.pNK.ANALYTICS)
+      }) : null, X ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.sNh, {
           id: "create-channel",
           label: F.intl.string(F.t["fUYU+j"]),
@@ -326,9 +326,9 @@ let W = Chunk647438.memo(function(e) {
             }))
           })
         })]
-      }) : null, en, es, eu, ei, eb]
+      }) : null, en, ed, eu, ei, eb]
     }), (0, i.jsxs)(c.kSQ, {
-      children: [ed, (0, i.jsx)(c.sNh, {
+      children: [es, (0, i.jsx)(c.sNh, {
         id: "notifications",
         label: (0, i.jsx)("div", {
           className: H.newBadgeRow,
@@ -357,11 +357,11 @@ let W = Chunk647438.memo(function(e) {
         })
       })]
     }), (0, i.jsxs)(c.kSQ, {
-      children: [el, (0, i.jsx)(c.S89, {
+      children: [ea, (0, i.jsx)(c.S89, {
         id: "hide-muted-channels",
         label: F.intl.string(F.t.UwOLJO),
-        checked: J,
-        action: () => d.Z.toggleCollapseGuild(t.id)
+        checked: V,
+        action: () => s.Z.toggleCollapseGuild(t.id)
       })]
     }), (0, i.jsxs)(c.kSQ, {
       children: [eg, K && t.features.has(L.GuildFeatures.COMMUNITY) ? (0, i.jsx)(c.sNh, {

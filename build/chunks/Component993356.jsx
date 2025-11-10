@@ -42,7 +42,7 @@ function b(e) {
         mobilePush: c.ZP.isMobilePushEnabled(e.id),
         messageNotifications: c.ZP.getMessageNotifications(e.id),
         notifyHighlights: c.ZP.getNotifyHighlights(e.id)
-      }), [e.id]), h = S === u.gLR.DISABLED, f = (0, o.Z)(e.id);
+      }), [e.id]), h = S === u.gLR.DISABLED, f = (0, a.Z)(e.id);
 
       function E(t, n) {
         l.Z.updateGuildNotificationSettings(e.id, t, n)
@@ -60,7 +60,7 @@ function b(e) {
               label: n,
               action: () => E({
                 message_notifications: t
-              }, a.UE.notifications(t)),
+              }, o.UE.notifications(t)),
               checked: t === p
             }, t)
           })
@@ -70,14 +70,14 @@ function b(e) {
             label: d.intl.format(d.t.OWiWAp, {}),
             action: () => E({
               suppress_everyone: !t
-            }, a.UE.suppressEveryone(!t)),
+            }, o.UE.suppressEveryone(!t)),
             checked: t
           }), (0, i.jsx)(s.S89, {
             id: "suppress-roles",
             label: d.intl.string(d.t["O/QdoD"]),
             action: () => E({
               suppress_roles: !n
-            }, a.UE.suppressRoles(!n)),
+            }, o.UE.suppressRoles(!n)),
             checked: n
           }), (0, i.jsx)(s.S89, {
             id: "suppress-highlights",
@@ -85,7 +85,7 @@ function b(e) {
             action: () => {
               E({
                 notify_highlights: h ? u.gLR.ENABLED : u.gLR.DISABLED
-              }, a.UE.highlights(h))
+              }, o.UE.highlights(h))
             },
             checked: h
           }), f]
@@ -95,7 +95,7 @@ function b(e) {
             label: d.intl.string(d.t.h1DL66),
             action: () => E({
               mobile_push: !b
-            }, a.UE.mobilePush(!b)),
+            }, o.UE.mobilePush(!b)),
             checked: b
           })
         })]

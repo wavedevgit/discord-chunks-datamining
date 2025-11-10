@@ -1,7 +1,7 @@
 /** Chunk was on 15582 **/
 /** chunk id: 408986, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,23 +15,23 @@ var Chunk37234 = require("./37234.js"),
   Chunk661462 = require("./661462.jsx"),
   Chunk527639 = require("./527639.js");
 
-function f(e) {
+function g(e) {
   let {
     user: t,
     onClose: n
   } = e, {
-    trackUserProfileAction: f
+    trackUserProfileAction: g
   } = (0, o.KZ)(), {
     mutualGuilds: p,
     isFetching: m
   } = (0, c.Z)(t);
   return (0, r.jsx)(d.F, {
-    className: g.scroller,
+    className: f.scroller,
     fade: true,
     children: null == p && m ? Array.from({
       length: 10
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: g.guildsLoadingItem,
+      className: f.guildsLoadingItem,
       children: [(0, r.jsx)(a.ZT, {
         width: 40,
         opacity: .08
@@ -49,7 +49,7 @@ function f(e) {
         guild: a,
         nick: o,
         onSelect: () => {
-          f({
+          g({
             action: "PRESS_MUTUAL_GUILD"
           }), (0, l.X)(a.id), n(), (0, i.xf)()
         }

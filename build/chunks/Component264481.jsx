@@ -80,7 +80,7 @@ function P(e) {
     guildId: n,
     channelId: c,
     onClose: s
-  } = e, u = g.ZP.getName(n, c, t), d = m.intl.formatToPlainString(m.t.sjSitP, {
+  } = e, u = f.ZP.getName(n, c, t), d = m.intl.formatToPlainString(m.t.sjSitP, {
     name: u
   }), [p] = i.useState(() => {
     var e;
@@ -95,7 +95,7 @@ function P(e) {
     bodyText: p,
     children: (0, r.jsx)("div", {
       className: b.buttonRow,
-      children: (0, r.jsx)(f.O1, {
+      children: (0, r.jsx)(g.O1, {
         icon: l.kBi,
         text: m.intl.string(m.t["g33r/P"]),
         onClick: h
@@ -139,10 +139,10 @@ function w(e) {
     bodyText: m.intl.string(m.t.KpjsU9),
     children: [(0, r.jsx)(I, {}), (0, r.jsxs)("div", {
       className: b.buttonRow,
-      children: [(0, r.jsx)(f.O1, {
+      children: [(0, r.jsx)(g.O1, {
         text: m.intl.string(m.t["/Hl24U"]),
         onClick: n
-      }), (0, r.jsx)(f.O1, {
+      }), (0, r.jsx)(g.O1, {
         text: m.intl.string(m.t.GTCx0p),
         onClick: a
       })]

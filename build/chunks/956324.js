@@ -12,9 +12,9 @@ function l(e) {
     canManageGuild: t,
     canManageRoles: n,
     canBanMembers: l,
-    canManageNicknames: o,
+    canManageNicknames: a,
     canCreateEmojisAndStickers: c,
-    canManageEmojisAndStickers: a,
+    canManageEmojisAndStickers: o,
     canManageWebhooks: u,
     canViewAuditLog: d
   } = (0, i.cj)([r.Z], () => ({
@@ -27,5 +27,5 @@ function l(e) {
     canManageWebhooks: r.Z.can(s.Plq.MANAGE_WEBHOOKS, e),
     canViewAuditLog: r.Z.can(s.Plq.VIEW_AUDIT_LOG, e)
   }), [e]);
-  return t || n || l || o || c || a || u || d
+  return t || n || l || a || c || o || u || d
 }

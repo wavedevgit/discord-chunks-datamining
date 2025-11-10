@@ -843,6 +843,7 @@ function nr(e) {
     index: 0,
     name: e,
     disabled: true,
+    guid: true,
     hardwareId: true,
     containerId: true
   }
@@ -861,6 +862,7 @@ function ni(e, t) {
     name: e.name,
     disabled: false,
     facing: e.facing,
+    guid: e.originalId,
     hardwareId: e.hardwareId,
     containerId: e.containerId
   })).keyBy("id").value()

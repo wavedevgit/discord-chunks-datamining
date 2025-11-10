@@ -1,47 +1,61 @@
 /** Chunk was on 15076 **/
 /** chunk id: 74888, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
-});
+  Z: () => f
+}), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk528011 = require("./528011.js"),
   Chunk413684 = require("./413684.jsx"),
   Chunk298812 = require("./298812.jsx"),
+  Chunk763359 = require("./763359.jsx"),
   Chunk200115 = require("./200115.jsx"),
   Chunk406205 = require("./406205.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk23922 = require("./23922.js");
 
-function m(e) {
+function p(e) {
   return (0, i.jsx)("div", {
-    className: g.sectionHeader,
+    className: x.sectionHeader,
     children: (0, i.jsx)(a.Heading, {
       variant: "text-xs/bold",
-      className: g.sectionHeaderTitle,
+      className: x.sectionHeaderTitle,
       color: "text-muted",
       children: e.title
     })
   })
 }
 
-function x(e) {
+function v(e) {
+  return (0, i.jsx)("div", {
+    className: x.sectionDescription,
+    children: (0, i.jsx)(a.Text, {
+      variant: "text-sm/normal",
+      color: "text-secondary",
+      children: e.description
+    })
+  })
+}
+
+function j(e) {
   return (0, i.jsxs)("div", {
-    children: [null != e.title && (0, i.jsx)(m, {
+    children: [null != e.title && (0, i.jsx)(p, {
       title: e.title
     }), (0, i.jsx)("div", {
-      className: l()(g.sectionContent, {
-        [g.sectionContentPadding]: true !== e.noPadding
+      className: l()(x.sectionContent, {
+        [x.sectionContentPadding]: true !== e.noPadding,
+        [x.sectionContentContained]: true !== e.noContainer
       }),
       children: e.children
     })]
   })
 }
 
-function p(e) {
+function f(e) {
   var t, n, {
       guildId: s
     } = e,
@@ -60,6 +74,7 @@ function p(e) {
       }
       return s
     }(e, ["guildId"]);
+  let a = (0, o.Tz)(s);
   return (0, i.jsxs)(r.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -78,30 +93,41 @@ function p(e) {
     }
     return e
   }({}, l), n = n = {
-    title: h.intl.string(h.t.h850Ss),
+    title: m.intl.string(m.t.h850Ss),
     actions: [{
-      text: h.intl.string(h.t.i4jeWR),
+      text: m.intl.string(m.t.i4jeWR),
       onClick: l.onClose
     }],
-    children: [(0, i.jsx)(x, {
+    children: [(0, i.jsx)(j, {
       noPadding: true,
-      children: (0, i.jsx)(c.Z, {
+      noContainer: true,
+      children: (0, i.jsx)(h.Z, {
         guildId: s
       })
-    }), (0, i.jsx)(x, {
-      title: h.intl.string(h.t.R9Ej96),
+    }), (0, i.jsx)(j, {
+      title: m.intl.string(m.t.R9Ej96),
       noPadding: true,
-      children: (0, i.jsx)(u.Z, {
+      children: (0, i.jsx)(g.Z, {
         guildId: s
       })
-    }), (0, i.jsx)(x, {
-      title: h.intl.string(h.t["31DySj"]),
-      children: (0, i.jsx)(o.Z, {
+    }), (0, i.jsx)(j, {
+      title: m.intl.string(m.t["31DySj"]),
+      children: (0, i.jsx)(d.Z, {
         guildId: s
       })
-    }), (0, i.jsx)(m, {
-      title: h.intl.string(h.t.JrySi3)
-    }), (0, i.jsx)(d.Z, {
+    }), a && (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsx)(p, {
+        title: m.intl.string(m.t.D9yVAH)
+      }), (0, i.jsx)(v, {
+        description: m.intl.string(m.t["0PhAOH"])
+      }), (0, i.jsx)(j, {
+        children: (0, i.jsx)(u.Z, {
+          guildId: s
+        })
+      })]
+    }), (0, i.jsx)(p, {
+      title: m.intl.string(m.t.JrySi3)
+    }), (0, i.jsx)(c.Z, {
       guildId: s
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

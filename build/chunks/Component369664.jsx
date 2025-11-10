@@ -284,16 +284,13 @@ let eW = Chunk647438.memo(function() {
     [eM, ek] = Chunk647438.useState(null);
   Chunk647438.useEffect(() => {
     if ((0, Chunk358085.isWindows)() && Chunk458725) {
-      let e = (0, Chunk992774.zS)();
-      module.getInputDevices(t => {
-        let n = t.find(e => e.hardwareId === ef.hardwareId);
-        if ((null == n ? true : n.guid) != null) {
-          var r, i, a, o;
-          eT(n.guid), null == (i = e.getDeviceOSMuted) || null == (r = i.call(e, n.guid)) || r.then(e => ex(e)), null == (o = e.getDeviceOSVolume) || null == (a = o.call(e, n.guid)) || a.then(e => ek(e))
-        }
-      })
+      let i = (0, Chunk992774.zS)();
+      if ((null == Chunk475808 ? true : Chunk475808.guid) != null) {
+        var e, t, n, r;
+        Chunk70722(Chunk475808.guid), null == (t = Chunk647438.getDeviceOSMuted) || null == (e = exports.call(Chunk647438, Chunk475808.guid)) || module.then(e => ex(e)), null == (r = Chunk647438.getDeviceOSVolume) || null == (n = Chunk951288.call(Chunk647438, Chunk475808.guid)) || require.then(e => ek(e))
+      }
     }
-  }, [Chunk458725, Chunk475808.hardwareId]);
+  }, [Chunk458725, Chunk475808.guid]);
   let eU = null != Chunk579806 ? Chunk933429.zD[Chunk579806] : null,
     eW = null != Chunk579806 ? Chunk933429.o[Chunk579806] : null,
     eK = null != Chunk579806 ? Chunk933429.nA[Chunk579806] : null,

@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function g(e) {
   return e
 }
 
-function f(e, t) {
+function g(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -58,7 +58,7 @@ function p(e) {
     dropAfterClassName: d,
     "aria-label": p,
     children: m
-  } = e, b = f(e, ["index", "className", "draggingClassName", "dropBeforeClassName", "dropAfterClassName", "aria-label", "children"]);
+  } = e, b = g(e, ["index", "className", "draggingClassName", "dropBeforeClassName", "dropAfterClassName", "aria-label", "children"]);
   let h = i.useRef(null),
     {
       isDragging: y,
@@ -72,12 +72,12 @@ function p(e) {
         itemId: l,
         itemType: u,
         itemPreviewProps: d,
-        onReorder: g,
-        onEnd: f,
+        onReorder: f,
+        onEnd: g,
         disableDefaultPreview: p = true
       } = e, m = "".concat(u, "_").concat(a), b = i.useCallback((e, t) => {
-        null == g || g(e, t)
-      }, [g]), h = i.useMemo(() => ({
+        null == f || f(e, t)
+      }, [f]), h = i.useMemo(() => ({
         id: l,
         index: r,
         itemType: u,
@@ -91,7 +91,7 @@ function p(e) {
           handlerId: e.getHandlerId(),
           isDragging: e.isDragging()
         }),
-        end: f
+        end: g
       });
       i.useEffect(() => {
         p && O((0, s.r)(), {
@@ -119,7 +119,7 @@ function p(e) {
         isDragging: y,
         dragSourcePosition: j
       }
-    }(g({
+    }(f({
       dragRef: h,
       dropRef: h,
       index: t
@@ -141,8 +141,8 @@ function m(e) {
       "aria-label": a,
       iconSize: l = "sm"
     } = e,
-    o = f(e, ["buttonRef", "aria-label", "iconSize"]);
-  return (0, r.jsx)(u.P3F, (t = g({
+    o = g(e, ["buttonRef", "aria-label", "iconSize"]);
+  return (0, r.jsx)(u.P3F, (t = f({
     innerRef: i,
     "aria-label": null != a ? a : d.intl.string(d.t.Zc1neM)
   }, o), n = n = {

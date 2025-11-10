@@ -1,7 +1,7 @@
 /** Chunk was on 32249 **/
 /** chunk id: 114649, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,28 +17,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx");
 
-function E() {
+function g() {
   var e, t, n;
   let {
-    quest: E,
-    sourceQuestContent: g,
+    quest: g,
+    sourceQuestContent: E,
     onClose: O
   } = Chunk647438.useContext(Chunk536687.VideoQuestModalContext), {
-    enabled: h
+    enabled: b
   } = Chunk937797.EO.useConfig({
     location: Chunk46140.dr.VIDEO_MODAL
-  }), b = (0, Chunk113434.tP)(E), S = null != (0, Chunk509212.LM)(E.config), y = (0, Chunk969227.D)({
-    quest: E,
+  }), h = (0, Chunk113434.tP)(g), S = null != (0, Chunk509212.LM)(g.config), C = (0, Chunk969227.D)({
+    quest: g,
     questContent: Chunk497505.jn.QUEST_HOME_DESKTOP,
-    sourceQuestContent: g,
+    sourceQuestContent: E,
     onClick: O,
     shouldShowShopIfAlreadyClaimed: true
-  }), C = (null == (e = E.userStatus) ? true : module.claimedAt) != null ? S ? Chunk388032.intl.string(Chunk388032.t.WYchde) : Chunk388032.intl.string(Chunk388032.t.vTgCWx) : Chunk388032.intl.string(Chunk388032.t.cfY4PE), _ = (null == (t = E.userStatus) ? true : exports.completedAt) == null && h ? b ? Chunk388032.intl.string(Chunk388032.t.NJ6Bnm) : Chunk388032.intl.string(Chunk388032.t.USNO1K) : true;
+  }), y = (null == (e = g.userStatus) ? true : module.claimedAt) != null ? S ? Chunk388032.intl.string(Chunk388032.t.WYchde) : Chunk388032.intl.string(Chunk388032.t.vTgCWx) : Chunk388032.intl.string(Chunk388032.t.cfY4PE), _ = (null == (t = g.userStatus) ? true : exports.completedAt) == null && b ? h ? Chunk388032.intl.string(Chunk388032.t.NJ6Bnm) : Chunk388032.intl.string(Chunk388032.t.USNO1K) : true;
   return (0, Chunk951288.jsx)(Chunk28664.u, {
     text: _,
     children: (0, Chunk951288.jsx)("div", {
       children: (0, Chunk951288.jsx)(Chunk481060.Button, {
-        variant: h ? "secondary" : "primary",
+        variant: b ? "secondary" : "primary",
         fullWidth: true,
         icon: ((e, t) => {
           var n, r;
@@ -52,10 +52,10 @@ function E() {
               }
             }
           }
-        })(E, h),
-        onClick: y,
-        text: C,
-        disabled: (null == (n = E.userStatus) ? true : require.completedAt) == null
+        })(g, b),
+        onClick: C,
+        text: y,
+        disabled: (null == (n = g.userStatus) ? true : require.completedAt) == null
       })
     })
   })

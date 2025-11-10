@@ -19,12 +19,12 @@ function d() {
     d = (0, Chunk172416.Un)({
       location: "useAvailableWidgetTypes"
     }),
-    g = (0, Chunk880421.k)({
+    f = (0, Chunk880421.k)({
       location: "useAvailableWidgetTypes"
     }),
-    f = d || require;
+    g = d || require;
   return Chunk647438.useMemo(() => {
     let e = new Set(exports.map(e => e.type));
-    return Object.values(Chunk296009.l).filter(t => (t !== i.l.APPLICATION || !!g) && (!o.Ki.includes(t) || !!f) && !e.has(t))
-  }, [exports, f, g])
+    return Object.values(Chunk296009.l).filter(t => (t !== i.l.APPLICATION || !!f) && (!o.Ki.includes(t) || !!g) && !e.has(t))
+  }, [exports, g, f])
 }

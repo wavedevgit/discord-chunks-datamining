@@ -1,7 +1,7 @@
 /** Chunk was on 99063 **/
 /** chunk id: 335049, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -47,7 +47,7 @@ function E(e) {
   return e
 }
 
-function I(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function I(e, t) {
   }), e
 }
 
-function P(e) {
+function I(e) {
   let {
     guild: t,
     id: l,
@@ -74,7 +74,7 @@ function P(e) {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, i.jsx)(e, I(E({}, t), {
+      return t => (0, i.jsx)(e, w(E({}, t), {
         id: l,
         label: N.intl.string(N.t.oJ1Muw)
       }))
@@ -82,7 +82,7 @@ function P(e) {
   }, [l]);
   switch (a) {
     case m.Kw.CHANNEL:
-      return (0, i.jsx)(w, {
+      return (0, i.jsx)(P, {
         guild: t,
         id: l,
         isLocked: o,
@@ -108,7 +108,7 @@ function P(e) {
   }
 }
 
-function w(e) {
+function P(e) {
   let {
     guild: t,
     id: n,
@@ -174,7 +174,7 @@ function T(e) {
       let {
         default: e
       } = await n.e("14486").then(n.bind(n, 786746));
-      return t => (0, i.jsx)(e, I(E({}, t), {
+      return t => (0, i.jsx)(e, w(E({}, t), {
         guild: l,
         role: m
       }))

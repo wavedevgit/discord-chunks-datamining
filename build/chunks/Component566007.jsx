@@ -17,7 +17,7 @@ function o(e) {
       channelId: u,
       disableInteraction: d
     } = e,
-    g = function(e, t) {
+    f = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -32,7 +32,7 @@ function o(e) {
       }
       return i
     }(e, ["user", "widget", "guildId", "channelId", "disableInteraction"]);
-  let f = c.games[0];
+  let g = c.games[0];
   return (0, r.jsx)(a.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -54,11 +54,11 @@ function o(e) {
     userId: o.id,
     widget: c,
     disableInteraction: d
-  }, g), n = n = {
-    children: null != f ? (0, r.jsx)(l.Z, {
+  }, f), n = n = {
+    children: null != g ? (0, r.jsx)(l.Z, {
       user: o,
       widgetType: c.type,
-      game: f,
+      game: g,
       guildId: s,
       channelId: u,
       disableInteraction: d

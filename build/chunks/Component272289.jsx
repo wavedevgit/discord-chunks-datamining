@@ -33,7 +33,7 @@ function s(e) {
     onAddGame: u
   } = (0, o.K)(t), {
     trackUserProfileEditAction: d
-  } = (0, a.KZ)(), g = i.useCallback((e, n, r) => {
+  } = (0, a.KZ)(), f = i.useCallback((e, n, r) => {
     u(e), (0, l.ES)(t, {
       applicationId: e,
       gameName: n,
@@ -63,6 +63,6 @@ function s(e) {
     return e
   }({
     games: s,
-    onClick: g
+    onClick: f
   }, n))
 }

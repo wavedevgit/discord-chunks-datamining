@@ -39,9 +39,9 @@ function h(e) {
       }
       return i
     }(e, ["gameName", "onClick"]);
-  let f = null != i ? i : p.intl.string(p.t.GIWFlF),
+  let g = null != i ? i : p.intl.string(p.t.GIWFlF),
     h = p.intl.formatToPlainString(p.t["3mb1s5"], {
-      game: f
+      game: g
     }),
     y = (0, l.e7)([u.Z], () => u.Z.suggestedFetchIsLoading);
   return (0, d.kO)(s.applicationId) || y ? (0, r.jsx)("div", {
@@ -51,7 +51,7 @@ function h(e) {
     children: (0, r.jsxs)(c.P3F, {
       className: b.addButton,
       onClick: a,
-      children: [(0, r.jsx)(g.Z, (t = function(e) {
+      children: [(0, r.jsx)(f.Z, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -118,7 +118,7 @@ function y(e) {
         color: "text-secondary",
         children: p.intl.string(p.t.zMUr6Z)
       })]
-    }), (0, r.jsx)(f.Z, {
+    }), (0, r.jsx)(g.Z, {
       games: n,
       renderGame: e => {
         let {

@@ -314,10 +314,13 @@ class tn extends(r = Chunk647438.Component) {
         guildId: r
       }, r);
       else if (n === T.g.SOCIAL_LAYER_STOREFRONT) {
-        let [e, t] = r.split("-");
+        let [e, t] = r.split("-"), {
+          channel: n
+        } = this.props;
         return (0, i.jsx)(ea.Z, {
           guildId: t,
-          skuId: e
+          skuId: e,
+          channel: n
         }, r)
       } else if (n === T.g.QUESTS_EMBED) return (0, i.jsx)(ee.Z, {
         questId: r

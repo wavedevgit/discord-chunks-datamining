@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 987491, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => G
+  Z: () => L
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -40,27 +40,27 @@ function A(e) {
   } = e;
   switch (r) {
     case f.wB.REJECTED:
-      t = O.t["7YSJ6f"], n = O.t.i05OUR;
+      t = P.t["7YSJ6f"], n = P.t.i05OUR;
       break;
     case f.wB.APPROVED:
-      t = O.t.bv82GS, n = O.t.D4OUHT;
+      t = P.t.bv82GS, n = P.t.D4OUHT;
       break;
     default:
-      t = O.t["/wqiSv"], n = O.t.o47YZs
+      t = P.t["/wqiSv"], n = P.t.o47YZs
   }
   return (0, l.jsxs)("div", {
-    className: I.emptyContainer,
+    className: y.emptyContainer,
     children: [(0, l.jsx)(u.dz2, {
       size: "md",
       color: "currentColor",
-      className: I.checkmark
+      className: y.checkmark
     }), (0, l.jsx)(u.Heading, {
       variant: "heading-md/medium",
-      children: O.intl.string(t)
+      children: P.intl.string(t)
     }), (0, l.jsx)(u.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
-      children: O.intl.string(n)
+      children: P.intl.string(n)
     })]
   })
 }
@@ -74,35 +74,35 @@ function M(e) {
     children: (0, l.jsxs)("tr", {
       className: R.tableHeaderRow,
       children: [(0, l.jsx)("th", {
-        className: I.headerCell,
+        className: y.headerCell,
         children: (0, l.jsx)(u.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
-          children: O.intl.string(O.t.Es7n9c)
+          children: P.intl.string(P.t.Es7n9c)
         })
       }), (0, l.jsx)("th", {
-        className: a()(I.headerCell, w.mediumCol),
+        className: a()(y.headerCell, w.mediumCol),
         children: (0, l.jsxs)(u.P3F, {
-          className: I.sortItem,
+          className: y.sortItem,
           onClick: n,
           children: [(0, l.jsx)(u.Text, {
             variant: "eyebrow",
             color: "interactive-normal",
-            children: O.intl.string(O.t.EZ5QWL)
-          }), t === f.Nw.TIMESTAMP_ASC ? (0, l.jsx)(E.Z, {
-            className: I.sortIcon,
-            direction: E.Z.Directions.UP
-          }) : (0, l.jsx)(E.Z, {
-            className: I.sortIcon,
-            direction: E.Z.Directions.DOWN
+            children: P.intl.string(P.t.EZ5QWL)
+          }), t === f.Nw.TIMESTAMP_ASC ? (0, l.jsx)(S.Z, {
+            className: y.sortIcon,
+            direction: S.Z.Directions.UP
+          }) : (0, l.jsx)(S.Z, {
+            className: y.sortIcon,
+            direction: S.Z.Directions.DOWN
           })]
         })
       }), (0, l.jsx)("th", {
-        className: a()(I.headerCell, I.moreOptionsCol),
+        className: a()(y.headerCell, y.moreOptionsCol),
         children: (0, l.jsx)(u.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
-          children: O.intl.string(O.t["5Q9xGr"])
+          children: P.intl.string(P.t["5Q9xGr"])
         })
       })]
     })
@@ -118,7 +118,7 @@ let Z = Chunk647438.memo(function(e) {
     } = t, {
       analyticsLocations: s
     } = (0, j.ZP)(), o = r.useCallback(e => {
-      e.stopPropagation(), e.preventDefault(), (0, S.openUserProfileModal)({
+      e.stopPropagation(), e.preventDefault(), (0, T.openUserProfileModal)({
         userId: n.id,
         joinRequestId: i,
         sourceAnalyticsLocations: s
@@ -139,7 +139,7 @@ let Z = Chunk647438.memo(function(e) {
           children: (0, l.jsxs)(u.P3F, {
             onClick: o,
             className: w.nameContainer,
-            children: [n.globalName, (0, l.jsx)(C.ZP, {
+            children: [n.globalName, (0, l.jsx)(_.ZP, {
               primaryGuild: null == n ? true : n.primaryGuild,
               userId: null == n ? true : n.id,
               contextGuildId: a,
@@ -156,7 +156,7 @@ let Z = Chunk647438.memo(function(e) {
           children: (0, l.jsx)(u.P3F, {
             onClick: o,
             tag: "span",
-            children: P.ZP.getUserTag(n)
+            children: O.ZP.getUserTag(n)
           })
         })
       })]
@@ -170,7 +170,7 @@ let Z = Chunk647438.memo(function(e) {
       guildId: s,
       createdAt: x,
       applicationStatus: j
-    } = t, b = r.useMemo(() => new T.Z(t.user), [t.user]), h = (0, p.L)({
+    } = t, b = r.useMemo(() => new E.Z(t.user), [t.user]), h = (0, p.L)({
       guildId: s
     }), g = (0, c.e7)([N.Z], () => N.Z.getGuild(s)), v = j === f.wB.SUBMITTED;
     return null == b ? null : (0, l.jsxs)("tr", {
@@ -191,9 +191,9 @@ let Z = Chunk647438.memo(function(e) {
           children: o()(x).format("lll")
         })
       }), (0, l.jsx)("td", {
-        className: I.moreOptionsCol,
+        className: y.moreOptionsCol,
         children: v && (0, l.jsx)(d.u, {
-          text: O.intl.string(O.t.x8Nn4M),
+          text: P.intl.string(P.t.x8Nn4M),
           children: (0, l.jsx)(u.P3F, {
             onClick: e => {
               (0, m.jW)(e, async () => {
@@ -293,7 +293,7 @@ let Z = Chunk647438.memo(function(e) {
     })
   };
 
-function G(e) {
+function L(e) {
   let {
     guildId: t,
     currentTab: n
@@ -301,7 +301,7 @@ function G(e) {
     guildId: t
   }), o = (0, c.e7)([h.Z], () => h.Z.isFetching()), {
     guildJoinRequests: d
-  } = (0, _.j)({
+  } = (0, C.j)({
     guildId: t,
     applicationStatus: n,
     sortOrder: s
@@ -315,13 +315,13 @@ function G(e) {
     b.Z.setSelectedSortOrder(t, e), await m(e, n)
   }, [s, t, m, n]);
   return null == a ? null : (0, l.jsx)("div", {
-    className: y.mainTableContainer,
+    className: I.mainTableContainer,
     children: (0, l.jsx)(u.Den, {
-      className: y.horizatonalScroller,
+      className: I.horizatonalScroller,
       ref: i,
       orientation: "horizontal",
       children: (0, l.jsxs)("table", {
-        className: I.table,
+        className: y.table,
         children: [(0, l.jsx)(M, {
           sortOrder: s,
           onSortChange: x

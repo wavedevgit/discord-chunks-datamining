@@ -21,18 +21,18 @@ function p(e) {
     n = (0, c.Z)(e);
   if (__OVERLAY__ || !n) return null;
   let p = n => {
-    o.Z.open(e.id, n), t.dispatch(d.CkL.POPOUT_CLOSE), (0, r.pTH)()
+    a.Z.open(e.id, n), t.dispatch(d.CkL.POPOUT_CLOSE), (0, r.pTH)()
   };
   return (0, i.jsx)(r.sNh, {
     id: "guild-settings",
     label: b.intl.string(b.t["154/bL"]),
     action: () => p(),
-    children: (0, a.t)(e).map(t => {
+    children: (0, o.t)(e).map(t => {
       let {
         section: n,
-        label: o
+        label: a
       } = t;
-      if (null == o) return null;
+      if (null == a) return null;
       switch (n) {
         case d.pNK.DELETE:
           return null;
@@ -56,13 +56,13 @@ function p(e) {
                 }
               })
             },
-            label: o
+            label: a
           }, n);
         default:
           return (0, i.jsx)(r.sNh, {
             id: n,
             action: () => p(n),
-            label: o
+            label: a
           }, n)
       }
     })

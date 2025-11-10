@@ -20,30 +20,30 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk505411 = require("./505411.js");
-let b = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
+let h = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
 
 function S(e) {
-  var t, n, S, y;
+  var t, n, S, C;
   let {
-    tooltipPosition: C
+    tooltipPosition: y
   } = e, {
     quest: _,
     sourceQuestContent: x,
     onClose: j
-  } = o.useContext(E.VideoQuestModalContext), {
-    enabled: T
+  } = o.useContext(g.VideoQuestModalContext), {
+    enabled: D
   } = d.EO.useConfig({
-    location: g.dr.VIDEO_MODAL
-  }), [D, P] = o.useState(false), R = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), I = o.useRef(null == (t = _.userStatus) ? true : t.completedAt), [N, w] = o.useState(false), {
+    location: E.dr.VIDEO_MODAL
+  }), [T, P] = o.useState(false), R = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), I = o.useRef(null == (t = _.userStatus) ? true : t.completedAt), [N, w] = o.useState(false), {
     completedRatio: A,
     completedRatioDisplay: k
-  } = (0, c.I)(_), L = o.useMemo(() => m.r.build(_.config).defaultRewardName, [_]), M = (null == (n = _.userStatus) ? true : n.completedAt) != null, V = (null == (S = _.userStatus) ? true : S.claimedAt) != null, Z = O.intl.formatToPlainString(M && !V && T ? O.t.NRp4K4 : O.t["12IWP2"], {
-    rewardName: L
+  } = (0, c.I)(_), M = o.useMemo(() => m.r.build(_.config).defaultRewardName, [_]), L = (null == (n = _.userStatus) ? true : n.completedAt) != null, V = (null == (S = _.userStatus) ? true : S.claimedAt) != null, Z = O.intl.formatToPlainString(L && !V && D ? O.t.NRp4K4 : O.t["12IWP2"], {
+    rewardName: M
   });
   o.useEffect(() => {
     var e, t;
-    null == I.current && (null == (e = _.userStatus) ? true : e.completedAt) != null && T && w(true), I.current = null == (t = _.userStatus) ? true : t.completedAt
-  }, [null == (y = _.userStatus) ? true : y.completedAt, T]);
+    null == I.current && (null == (e = _.userStatus) ? true : e.completedAt) != null && D && w(true), I.current = null == (t = _.userStatus) ? true : t.completedAt
+  }, [null == (C = _.userStatus) ? true : C.completedAt, D]);
   let F = (0, v.D)({
       quest: _,
       questContent: u.jn.QUEST_HOME_DESKTOP,
@@ -51,17 +51,17 @@ function S(e) {
       onClick: j,
       shouldShowShopIfAlreadyClaimed: false
     }),
-    B = M && T;
+    B = L && D;
   return (0, r.jsxs)("div", {
-    className: h.progressWrapper,
-    children: [M && (0, r.jsx)(a.Fmz, {
-      importData: b,
-      className: h.confetti,
+    className: b.progressWrapper,
+    children: [L && (0, r.jsx)(a.Fmz, {
+      importData: h,
+      className: b.confetti,
       loop: false,
       autoplay: false,
       shouldAnimate: N && !R
     }), (0, r.jsx)(i.u, {
-      position: C,
+      position: y,
       text: Z,
       onTooltipShow: () => {
         P(true)
@@ -70,7 +70,7 @@ function S(e) {
         P(false)
       },
       children: (0, r.jsx)(a.P3F, {
-        className: h.progressCont,
+        className: b.progressCont,
         style: B ? {
           cursor: "pointer"
         } : true,
@@ -81,14 +81,14 @@ function S(e) {
           quest: _,
           size: 48,
           percentComplete: A,
-          percentCompleteText: D ? k : true,
+          percentCompleteText: T ? k : true,
           percentCompleteTextVariant: "text-sm/medium",
           children: (0, r.jsx)(f.Z, {
-            className: h.questProgressRewardTile,
+            className: b.questProgressRewardTile,
             quest: _,
             questContent: u.jn.VIDEO_MODAL,
             autoplay: false,
-            location: g.dr.VIDEO_MODAL,
+            location: E.dr.VIDEO_MODAL,
             sourceQuestContent: x
           })
         })

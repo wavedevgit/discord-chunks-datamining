@@ -28,19 +28,19 @@ function v(e) {
     animate: n,
     interactionEnabled: l,
     backgroundColor: v,
-    preloadedBuffers: E,
-    duration: g,
+    preloadedBuffers: g,
+    duration: E,
     rounded: O,
-    maxSeekableTime: h,
-    onClick: b,
+    maxSeekableTime: b,
+    onClick: h,
     onScrubBack: S,
-    onScrubForward: y
-  } = e, [C, _] = o.useState(null), [x, j] = o.useState(null), [T, D] = o.useState(null), [P, R] = o.useState(false), I = o.useRef(null), N = e => {
+    onScrubForward: C
+  } = e, [y, _] = o.useState(null), [x, j] = o.useState(null), [D, T] = o.useState(null), [P, R] = o.useState(false), I = o.useRef(null), N = e => {
     I.current = e, _(e)
   };
   o.useEffect(() => {
-    null != C && (null == h ? D(null) : D(f(h, g, C)))
-  }, [C, h, g]);
+    null != y && (null == b ? T(null) : T(f(b, E, y)))
+  }, [y, b, E]);
   let w = (0, c.Z)(e => {
       N(e.contentRect)
     }),
@@ -56,17 +56,17 @@ function v(e) {
   let k = e => {
       j(e.clientX)
     },
-    L = o.useCallback(e => {
+    M = o.useCallback(e => {
       let {
         key: t
       } = e;
-      t === d.mR.ArrowLeft && null != S ? (e.preventDefault(), e.stopPropagation(), S()) : t === d.mR.ArrowRight && null != y && (e.preventDefault(), e.stopPropagation(), y())
-    }, [S, y]),
-    M = null != x && null != C ? p(x, C, g) : 0,
-    V = (0, u.yv)(M),
-    Z = null != C ? C.right - f(t / 100 * g, g, C) : null,
-    F = null != x && null != C ? C.right - x : null,
-    B = null != T && null != C ? C.right - T : null;
+      t === d.mR.ArrowLeft && null != S ? (e.preventDefault(), e.stopPropagation(), S()) : t === d.mR.ArrowRight && null != C && (e.preventDefault(), e.stopPropagation(), C())
+    }, [S, C]),
+    L = null != x && null != y ? p(x, y, E) : 0,
+    V = (0, u.yv)(L),
+    Z = null != y ? y.right - f(t / 100 * E, E, y) : null,
+    F = null != x && null != y ? y.right - x : null,
+    B = null != D && null != y ? y.right - D : null;
   return (0, r.jsxs)("div", {
     className: m.cont,
     ref: A,
@@ -76,7 +76,7 @@ function v(e) {
       }),
       ignoreKeyPress: true,
       onClick: e => {
-        l && null != b && b(p(e.clientX, e.currentTarget.getBoundingClientRect(), g))
+        l && null != h && h(p(e.clientX, e.currentTarget.getBoundingClientRect(), E))
       },
       onMouseEnter: e => {
         l && (null != A.current && N(A.current.getBoundingClientRect()), R(true), k(e))
@@ -87,7 +87,7 @@ function v(e) {
       onMouseMove: e => {
         l && P && k(e)
       },
-      onKeyDown: L,
+      onKeyDown: M,
       tabIndex: l ? true : false,
       focusProps: {
         offset: {
@@ -95,7 +95,7 @@ function v(e) {
           bottom: 12
         }
       },
-      children: [null == E ? true : E.map(e => (0, r.jsx)("div", {
+      children: [null == g ? true : g.map(e => (0, r.jsx)("div", {
         className: i()(m.buffer, {
           [m.bufferHovered]: P,
           [m.rounded]: O

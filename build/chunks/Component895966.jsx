@@ -1,7 +1,7 @@
 /** Chunk was on 32249 **/
 /** chunk id: 895966, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,20 +20,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk946232 = require("./946232.js");
 
-function h() {
+function b() {
   var e;
   let {
     quest: t,
     sourceQuestContent: n,
     isPortrait: l,
-    onClose: h
-  } = Chunk647438.useContext(Chunk536687.VideoQuestModalContext), b = (0, Chunk915750.aM)(), S = (0, Chunk113434.tP)(exports), y = Chunk647438.useRef(null), {
-    isHoveringOrFocusing: C
-  } = (0, Chunk104505.Z)(y), _ = (0, Chunk431130.p)({
+    onClose: b
+  } = Chunk647438.useContext(Chunk536687.VideoQuestModalContext), h = (0, Chunk915750.aM)(), S = (0, Chunk113434.tP)(exports), C = Chunk647438.useRef(null), {
+    isHoveringOrFocusing: y
+  } = (0, Chunk104505.Z)(C), _ = (0, Chunk431130.p)({
     quest: exports,
-    onClose: h,
+    onClose: b,
     sourceQuestContent: require,
-    impressionId: b
+    impressionId: h
   }), x = null == (e = exports.config.videoMetadata) ? true : module.messages.videoEndCtaSubtitle, j = true !== x && !(0, Chunk624138.Ew)(x);
   return (0, Chunk951288.jsx)(Chunk681715.u, {
     text: Chunk388032.intl.string(Chunk388032.t.EuHF34),
@@ -44,7 +44,7 @@ function h() {
         className: i()(Chunk946232.contentHeaderGameInfo, Chunk946232.contentHeaderGameInfoHoverable, {
           [Chunk946232.contentHeaderGameInfoHoverableExpired]: S
         }),
-        ref: y,
+        ref: C,
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk946232.contentFooterAdDetailedInfo,
           children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
@@ -69,7 +69,7 @@ function h() {
             }),
             children: (0, Chunk951288.jsx)(Chunk481060.owK, {
               size: "xs",
-              color: C ? Chunk481060.TVs.colors.ICON_PRIMARY.css : Chunk481060.TVs.colors.ICON_TERTIARY.css
+              color: y ? Chunk481060.TVs.colors.ICON_PRIMARY.css : Chunk481060.TVs.colors.ICON_TERTIARY.css
             })
           }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-sm/medium",
@@ -77,7 +77,7 @@ function h() {
               [Chunk946232.adDetailsTextPrimaryPortrait]: Chunk120356,
               [Chunk946232.addFourPxMarginRight]: Chunk120356
             }),
-            color: C ? "text-primary" : "text-secondary",
+            color: y ? "text-primary" : "text-secondary",
             lineClamp: 1,
             children: exports.config.messages.gamePublisher
           }), j ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -92,7 +92,7 @@ function h() {
               }),
               variant: "heading-sm/medium",
               lineClamp: Chunk120356 ? true : 1,
-              color: C ? "text-primary" : "text-secondary",
+              color: y ? "text-primary" : "text-secondary",
               children: x
             })]
           }) : null]

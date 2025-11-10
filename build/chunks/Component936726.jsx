@@ -1,7 +1,7 @@
 /** Chunk was on 99063 **/
 /** chunk id: 936726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => w
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -66,19 +66,19 @@ function E(e, t) {
   })
 }
 
-function I(e) {
+function w(e) {
   let {
     id: t,
     webhook: n,
     editedWebhook: l,
     channelOptions: h,
-    isExpanded: I,
-    isNew: P,
-    errors: w,
+    isExpanded: w,
+    isNew: I,
+    errors: P,
     onToggleExpand: T
-  } = e, [Z, k] = r.useState(false), [A] = r.useState(new s.V7);
-  r.useEffect(() => () => A.stop(), [A]);
-  let D = r.useMemo(() => E(n, n.avatar), [n]),
+  } = e, [Z, k] = r.useState(false), [D] = r.useState(new s.V7);
+  r.useEffect(() => () => D.stop(), [D]);
+  let A = r.useMemo(() => E(n, n.avatar), [n]),
     R = r.useCallback(() => {
       let e = "".concat((0, o.K0)(false)).concat(y.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
@@ -130,7 +130,7 @@ function I(e) {
     })
   });
   let U = null;
-  return I && null != l && (U = (0, i.jsxs)("div", {
+  return w && null != l && (U = (0, i.jsxs)("div", {
     className: C.body,
     children: [(0, i.jsx)(c.izJ, {
       className: C.topDivider
@@ -151,10 +151,10 @@ function I(e) {
             makeURL: e => E(n, e),
             imageClassName: C.avatarUploaderInner,
             showIcon: true
-          }), null != w.avatar && "" !== w.avatar ? (0, i.jsx)(c.Text, {
+          }), null != P.avatar && "" !== P.avatar ? (0, i.jsx)(c.Text, {
             color: "text-danger",
             variant: "text-sm/normal",
-            children: w.avatar
+            children: P.avatar
           }) : null]
         })
       }), (0, i.jsxs)(m.Z, {
@@ -172,7 +172,7 @@ function I(e) {
                 })
               },
               maxLength: 80,
-              error: w.name
+              error: P.name
             })
           }), (0, i.jsx)(m.Z.Child, {
             basis: "50%",
@@ -231,7 +231,7 @@ function I(e) {
                 }, s), {
                   "aria-label": "",
                   onClick: () => {
-                    null == t || t(), k(true), c.uvj.announce(_.intl.string(_.t.wwdb3g)), A.start(1e3, () => k(false)), R()
+                    null == t || t(), k(true), c.uvj.announce(_.intl.string(_.t.wwdb3g)), D.start(1e3, () => k(false)), R()
                   },
                   disabled: null == n.token || "" === n.token
                 }))
@@ -249,22 +249,22 @@ function I(e) {
   })), (0, i.jsx)(c.Zbd, {
     editable: true,
     id: t,
-    className: a()(C.card, P ? C.pulse : null),
+    className: a()(C.card, I ? C.pulse : null),
     children: (0, i.jsxs)(m.Z, {
       direction: m.Z.Direction.VERTICAL,
       children: [(0, i.jsx)(c.P3F, {
         className: C.header,
-        "aria-expanded": I,
+        "aria-expanded": w,
         onClick: T,
         children: (0, i.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
           children: [(0, i.jsx)(O.Z, {
             name: n.name,
-            imageSrc: D,
+            imageSrc: A,
             details: M
           }), (0, i.jsx)(f.Z, {
             className: C.expandIcon,
-            expanded: I,
+            expanded: w,
             "aria-hidden": true
           })]
         })
