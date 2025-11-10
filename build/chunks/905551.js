@@ -60,7 +60,8 @@ function h(e) {
 }
 
 function x(e) {
-  let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+    n = arguments.length > 2 ? arguments[2] : true;
   return t ? (setTimeout(() => {
     r.Z.dispatch({
       type: "GAME_SERVER_FETCH_INSTANCES_SUCCESS",
@@ -70,7 +71,8 @@ function x(e) {
   }, 5e3), Promise.resolve()) : a.tn.get({
     url: p.ANM.GAME_SERVERS(e),
     rejectWithError: true,
-    retries: 2
+    retries: 2,
+    signal: n
   }).then(t => {
     if (null != t.body) {
       let n = t.body.reduce((e, t) => (e[t.id] = (0, c.Z)(t), e), {});

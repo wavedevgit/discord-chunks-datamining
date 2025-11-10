@@ -17,18 +17,20 @@ function i(e) {
     useTitle: c,
     useSubtitle: s,
     useDisabled: u,
-    useDisabledMessage: d
-  } = n, f = c(), b = null == s ? true : s(), p = i(), y = null != (t = null == u ? true : u()) && t, j = null == d ? true : d();
+    useDisabledMessage: d,
+    useBadge: f
+  } = n, b = c(), p = null == s ? true : s(), y = i(), j = null != (t = null == u ? true : u()) && t, m = null == d ? true : d(), v = null == f ? true : f();
   return (0, r.jsxs)(o.X, {
     children: [(0, r.jsx)(l.rsf, {
-      label: f,
-      description: b,
-      checked: p,
+      label: b,
+      description: p,
+      badge: v,
+      checked: y,
       onChange: e => a(e),
-      disabled: y
-    }), y && null != j ? (0, r.jsx)(l.Wn, {
+      disabled: j
+    }), j && null != m ? (0, r.jsx)(l.Wn, {
       messageType: l.QYI.WARNING,
-      children: j
+      children: m
     }) : null]
   })
 }

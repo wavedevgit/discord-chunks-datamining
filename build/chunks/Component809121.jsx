@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk500104 = require("./500104.js");
 
-function Z(e) {
+function k(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -59,7 +59,7 @@ function G(e) {
     guildId: n,
     instance: t
   } = e, [i, l] = a.useState(false), s = a.useCallback(() => {
-    l(true), (0, j.WX)(n, t.id).finally(() => {
+    l(true), (0, p.WX)(n, t.id).finally(() => {
       l(false)
     })
   }, [n, t.id]);
@@ -73,7 +73,7 @@ function G(e) {
 }
 
 function A(e) {
-  return (0, r.jsx)(u.Button, Z({
+  return (0, r.jsx)(u.Button, k({
     fullWidth: true,
     text: R.intl.string(w.default.tkbVdf),
     variant: "secondary",
@@ -83,15 +83,15 @@ function A(e) {
 }
 
 function D(e) {
-  return (0, r.jsx)(u.Button, Z({
+  return (0, r.jsx)(u.Button, k({
     fullWidth: true,
     text: R.intl.string(w.default["fQCcM/"]),
     variant: "primary"
   }, e))
 }
 
-function B(e) {
-  return (0, r.jsx)(u.Button, Z({
+function M(e) {
+  return (0, r.jsx)(u.Button, k({
     fullWidth: true,
     text: R.intl.string(w.default.gWMqnI),
     variant: "primary",
@@ -100,11 +100,11 @@ function B(e) {
   }, e))
 }
 
-function V(e) {
+function B(e) {
   let {
     guildId: n
   } = e, [t, i] = a.useState(false), l = a.useCallback(() => {
-    i(true), (0, j.mF)(n).finally(() => {
+    i(true), (0, p.mF)(n).finally(() => {
       i(false)
     })
   }, [n]);
@@ -117,7 +117,7 @@ function V(e) {
   })
 }
 
-function M(e) {
+function V(e) {
   let {
     instance: n
   } = e;
@@ -127,7 +127,7 @@ function M(e) {
     variant: "secondary",
     onClick: () => {
       (0, v.q)({
-        href: E.uz[n.providerType]
+        href: P.uz[n.providerType]
       })
     }
   })
@@ -137,20 +137,20 @@ function W(e) {
   let {
     guildId: n,
     instance: t
-  } = e, i = (0, N.Z)(t), [j, E] = (0, g.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), Z = j !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, W = (0, o.e7)([x.Z], () => x.Z.getDetectableGame(t.gameId)), L = a.useCallback(() => {
+  } = e, i = (0, N.Z)(t), [p, P] = (0, g.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), k = p !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, W = (0, o.e7)([x.Z], () => x.Z.getDetectableGame(t.gameId)), L = a.useCallback(() => {
     var e;
-    (0, p.wz)(n, t.gameId, null != (e = null == W ? true : W.name) ? e : "", t.id), Z || null == t.providerType ? (0, S.Z)(n, t) : (0, P.Z)({
+    (0, j.wz)(n, t.gameId, null != (e = null == W ? true : W.name) ? e : "", t.id), k || null == t.providerType ? (0, S.Z)(n, t) : (0, E.Z)({
       provider: t.providerType,
       onAccept: () => {
-        E(T.L.TAKE_ACTION), (0, S.Z)(n, t)
+        P(T.L.TAKE_ACTION), (0, S.Z)(n, t)
       }
     })
-  }, [t, Z, E, n, null == W ? true : W.name]), {
+  }, [t, k, P, n, null == W ? true : W.name]), {
     handleCopyServerIp: z,
     animateCopyIcon: U
   } = (0, O.Z)(n, t.id, m.Z.GAME_SERVER_GAME, null != i ? i : ""), F = (0, I.Z)(t.gameId, "cover"), K = (0, b.Z)(n), q = a.useCallback(() => {
     var e;
-    (0, p.$M)(n, t.id), (0, v.q)({
+    (0, j.$M)(n, t.id), (0, v.q)({
       href: null != (e = t.gameServerPanelUrl) ? e : ""
     })
   }, [t.gameServerPanelUrl, n, t.id]), H = a.useMemo(() => {
@@ -178,7 +178,7 @@ function W(e) {
         });
       case s.V.STARTUP_FAILED:
       case s.V.MISSING_STOCK:
-        return K ? (0, r.jsx)(B, {
+        return K ? (0, r.jsx)(M, {
           onClick: q
         }) : (0, r.jsx)(D, {
           onClick: L,
@@ -194,13 +194,13 @@ function W(e) {
         });
       case s.V.PROVIDER_ERRORED:
         return (0, r.jsxs)(r.Fragment, {
-          children: [K ? (0, r.jsx)(M, {
+          children: [K ? (0, r.jsx)(V, {
             guildId: n,
             instance: t
           }) : (0, r.jsx)(D, {
             onClick: L,
             disabled: true
-          }), (0, r.jsx)(V, {
+          }), (0, r.jsx)(B, {
             guildId: n,
             instance: t
           })]
@@ -227,18 +227,18 @@ function W(e) {
         return null
     }
   }, [t.status, t.gameServerPanelUrl, K]);
-  return (0, r.jsxs)(y.Z, {
+  return (0, r.jsxs)(C.Z, {
     actions: H,
     children: [(0, r.jsxs)("div", {
-      className: k.serverDetailsContainer,
+      className: Z.serverDetailsContainer,
       children: [(0, r.jsxs)("div", {
-        className: k.serverHeader,
+        className: Z.serverHeader,
         children: [(0, r.jsx)("img", {
           src: null != F ? F : "",
           alt: "",
-          className: k.gameImage
+          className: Z.gameImage
         }), (0, r.jsxs)("div", {
-          className: k.serverInfo,
+          className: Z.serverInfo,
           children: [(0, r.jsx)(u.Heading, {
             variant: "heading-md/medium",
             children: t.name
@@ -250,9 +250,9 @@ function W(e) {
         })]
       }), (0, r.jsx)("div", {
         children: (0, r.jsxs)("div", {
-          className: k.detailsGrid,
+          className: Z.detailsGrid,
           children: [(0, r.jsxs)("div", {
-            className: k.detailItem,
+            className: Z.detailItem,
             children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
@@ -262,22 +262,22 @@ function W(e) {
               children: "".concat(null != t.onlineConnectionsCount && t.onlineConnectionsCount >= 0 ? t.onlineConnectionsCount : "—", " / ").concat(null != t.maxConnectionsCount && t.maxConnectionsCount >= 0 ? t.maxConnectionsCount : "—")
             })]
           }), (0, r.jsxs)("div", {
-            className: k.detailItem,
+            className: Z.detailItem,
             children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
               children: R.intl.string(w.default["7phwMG"])
             }), (0, r.jsx)("div", {
-              className: k.serverIpContainer,
+              className: Z.serverIpContainer,
               children: null == i ? (0, r.jsx)(u.Text, {
                 variant: "text-sm/medium",
                 children: "—"
-              }) : Z ? (0, r.jsxs)(r.Fragment, {
+              }) : k ? (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(u.Text, {
                   variant: "text-sm/medium",
                   children: i
                 }), (0, r.jsx)(u.P3F, {
-                  className: k.copyButton,
+                  className: Z.copyButton,
                   "aria-label": R.intl.string(R.t.OpuAlK),
                   onClick: z,
                   children: U ? (0, r.jsx)(u.dz2, {
@@ -288,10 +288,10 @@ function W(e) {
                 })]
               }) : null != t.providerType && (0, r.jsx)(f.Z, {
                 onClick: () => {
-                  (0, P.Z)({
+                  (0, E.Z)({
                     provider: t.providerType,
                     onAccept: () => {
-                      E(T.L.TAKE_ACTION), z()
+                      P(T.L.TAKE_ACTION), z()
                     }
                   })
                 },
@@ -299,18 +299,18 @@ function W(e) {
               })
             })]
           }), (0, r.jsxs)("div", {
-            className: k.detailItem,
+            className: Z.detailItem,
             children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
               children: R.intl.string(w.default["n+ZX7y"])
             }), (0, r.jsxs)("div", {
-              className: k.statusContainer,
+              className: Z.statusContainer,
               children: [t.status === s.V.STARTING ? (0, r.jsx)(u.$jN, {
                 type: u.RAz.SPINNING_CIRCLE_SIMPLE,
-                className: k.statusLoading
+                className: Z.statusLoading
               }) : (0, r.jsx)("span", {
-                className: l()(k.statusIndicator, null != t.status && k[t.status])
+                className: l()(Z.statusIndicator, null != t.status && Z[t.status])
               }), (0, r.jsx)(u.Text, {
                 variant: "text-sm/medium",
                 children: function(e) {
@@ -339,13 +339,13 @@ function W(e) {
                 position: "top",
                 text: Y,
                 children: (0, r.jsx)(u.idN, {
-                  className: k.statusTooltipIcon,
+                  className: Z.statusTooltipIcon,
                   size: "xs"
                 })
               })]
             })]
           }), (0, r.jsxs)("div", {
-            className: k.detailItem,
+            className: Z.detailItem,
             children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
@@ -358,13 +358,13 @@ function W(e) {
         })
       })]
     }), K && (0, r.jsx)("div", {
-      className: k.overflowMenu,
-      children: (0, r.jsx)(C.Z, {
+      className: Z.overflowMenu,
+      children: (0, r.jsx)(y.Z, {
         guildId: n,
         instance: t
       })
     }), (0, r.jsx)("div", {
-      className: k.imageBackground,
+      className: Z.imageBackground,
       children: (0, r.jsx)(h.b, {
         imageUrl: null != F ? F : ""
       })

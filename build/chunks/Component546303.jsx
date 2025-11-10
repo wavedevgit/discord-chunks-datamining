@@ -18,7 +18,7 @@ var r, a, Chunk951288 = require("./951288.js"),
   Chunk269794 = require("./269794.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk62525 = require("./62525.js");
-let p = (r = function(e) {
+let j = (r = function(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -68,35 +68,35 @@ function h(e) {
     }, [null == t ? true : t.catalog, null == t ? true : t.instances]),
     h = a.length >= _.YX;
   return 0 === r.length ? (0, i.jsx)("div", {
-    className: j.container,
+    className: p.container,
     children: (0, i.jsx)(c.$jN, {
       type: c.RAz.SPINNING_CIRCLE,
-      className: j.spinner
+      className: p.spinner
     })
   }) : (0, i.jsxs)("div", {
-    className: j.container,
+    className: p.container,
     children: [(0, i.jsx)(s.X6q, {
-      className: j.heading,
+      className: p.heading,
       variant: "heading-md/semibold",
       children: b.intl.string(v.default["3vWDMz"])
     }), h && (0, i.jsx)("div", {
-      className: j.maxInstancesWarning,
+      className: p.maxInstancesWarning,
       children: (0, i.jsx)(f.C, {})
     }), (0, i.jsx)(s.zJl, {
-      className: j.gameContainerWrapper,
+      className: p.gameContainerWrapper,
       children: (0, i.jsx)("div", {
-        className: j.gameContainer,
+        className: p.gameContainer,
         children: r.map((e, t) => (0, i.jsx)(g.Z, {
           guildId: n,
           game: e,
           onClick: () => (0, x.Z)({
             guildId: n,
-            stepConfig: p,
+            stepConfig: j,
             initialGameServerGame: e,
             analyticsLocation: d.Z.GAME_SERVER_PAGE_SIDEBAR
           }),
-          imageClassName: j.image,
-          titleClassName: j.title,
+          imageClassName: p.image,
+          titleClassName: p.title,
           disabled: h,
           location: d.Z.GAME_SERVER_PAGE_SIDEBAR
         }, "sidebar-game-".concat(t, "-").concat(e.id)))

@@ -3,8 +3,8 @@
 require.d(exports, {
   N4: () => b,
   P2: () => f,
-  Q9: () => j,
-  aB: () => p,
+  Q9: () => p,
+  aB: () => j,
   c: () => _,
   rL: () => x,
   uf: () => v
@@ -120,7 +120,7 @@ function b(e) {
   })
 }
 
-function j(e) {
+function p(e) {
   let {
     title: n,
     textColor: t,
@@ -141,7 +141,7 @@ function j(e) {
     }), i]
   })
 }
-let p = Chunk647438.forwardRef(function(e, n) {
+let j = Chunk647438.forwardRef(function(e, n) {
   let {
     className: t,
     label: a,

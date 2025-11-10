@@ -2,7 +2,8 @@
 /** chunk id: 288047, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  bH: () => i
+  ZQ: () => i,
+  bH: () => a
 });
 let r = (0, require("./818083.js").B)({
   kind: "user",
@@ -21,6 +22,14 @@ let r = (0, require("./818083.js").B)({
 });
 
 function i(e) {
+  return r.useExperiment({
+    location: e
+  }, {
+    autoTrackExposure: false
+  })
+}
+
+function a(e) {
   return r.getCurrentConfig({
     location: e
   }).showSettingsToggle
