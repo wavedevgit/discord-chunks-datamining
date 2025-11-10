@@ -1,7 +1,7 @@
-/** Chunk was on 30378 **/
+/** Chunk was on 81242 **/
 /** chunk id: 101017, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => i
 }), require("./539854.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -9,7 +9,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk905128 = require("./905128.js"),
   Chunk131085 = require("./131085.js");
 
-function c() {
+function i() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
     t = (0, Chunk442837.e7)([Chunk905128.Z], () => {
       var t;
@@ -20,16 +20,16 @@ function c() {
         kind: e
       })),
       r = [];
-    return (null == module ? true : module.features) == null || Object.keys(Chunk131085.Ct).forEach(i => {
-      let s = a.Ct[i],
-        l = a.AC[i],
-        c = null == t ? true : t[l],
-        d = null == c ? true : c.title,
-        o = s.map(e => ({
+    return (null == module ? true : module.features) == null || Object.keys(Chunk131085.Ct).forEach(a => {
+      let s = l.Ct[a],
+        o = l.AC[a],
+        i = null == t ? true : t[o],
+        c = null == i ? true : i.title,
+        d = s.map(e => ({
           kind: e,
-          packName: d
+          packName: c
         }));
-      e.features.has(i) ? n.push(...o) : r.push(...o)
+      e.features.has(a) ? n.push(...d) : r.push(...d)
     }), {
       unlockedBadges: require,
       lockedBadges: Chunk647438

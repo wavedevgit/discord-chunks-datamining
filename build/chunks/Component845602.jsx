@@ -1,13 +1,13 @@
-/** Chunk was on 47285 **/
+/** Chunk was on 81242 **/
 /** chunk id: 845602, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => k,
-  Z: () => x
+  E: () => C,
+  Z: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk957537 = require("./957537.js"),
   Chunk839008 = require("./839008.js"),
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk583931 = require("./583931.js"),
   Chunk842926 = require("./842926.js");
 
-function x() {
+function k() {
   var e;
   let [t, n] = Chunk647438.useState(() => {
     let e = Math.floor(Math.random() * Chunk141006.tl.length);
@@ -34,7 +34,7 @@ function x() {
       tertiary_color: null
     }
   }), {
-    gradientStyle: o,
+    gradientStyle: s,
     gradientClassname: c
   } = (0, Chunk481060.Icv)({
     colorStrings: (0, Chunk606318.DX)(exports),
@@ -50,7 +50,7 @@ function x() {
         avatar: Chunk957537.Z,
         username: "Cherry",
         usernameStyle: Chunk120356,
-        usernameClassName: s()(Chunk839008, Chunk842926.animateGradient),
+        usernameClassName: o()(Chunk839008, Chunk842926.animateGradient),
         message: Chunk388032.intl.string(Chunk388032.t["6OSasb"])
       })
     }), (0, Chunk951288.jsx)(Chunk797967.default, {
@@ -100,24 +100,24 @@ function x() {
   })
 }
 
-function k(e) {
+function C(e) {
   let {
     guildId: t
-  } = e, [n, o] = a.useState(C.x_.HEART), s = (0, g.Z)(), l = a.useMemo(() => ({
-    unlockedBadges: s.unlockedBadges.slice(0, 10),
+  } = e, [n, s] = a.useState(x.x_.HEART), o = (0, p.Z)(), l = a.useMemo(() => ({
+    unlockedBadges: o.unlockedBadges.slice(0, 10),
     lockedBadges: []
-  }), [s]);
+  }), [o]);
   return (0, r.jsxs)("div", {
-    className: j.container,
+    className: h.container,
     children: [(0, r.jsx)("div", {
-      className: j.messageContainer,
-      children: (0, r.jsx)(p.l, {
+      className: h.messageContainer,
+      children: (0, r.jsx)(g.l, {
         avatar: c.Z,
         username: "Roka",
         usernameStyle: {
           color: "var(--brand-400)"
         },
-        message: h.intl.string(h.t["6OSasb"]),
+        message: j.intl.string(j.t["6OSasb"]),
         decorations: (0, r.jsx)(m.S, {
           guildId: t,
           tag: "GGEZ",
@@ -126,7 +126,7 @@ function k(e) {
       })
     }), (0, r.jsx)(u.g, {
       selectedBadge: n,
-      onBadgeClicked: o,
+      onBadgeClicked: s,
       badgeCollection: l
     })]
   })

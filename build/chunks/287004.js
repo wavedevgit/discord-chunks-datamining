@@ -1,75 +1,75 @@
-/** Chunk was on 30378 **/
+/** Chunk was on 81242 **/
 /** chunk id: 287004, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => o
 });
 var Chunk823379 = require("./823379.js"),
   Chunk131085 = require("./131085.js"),
   Chunk388032 = require("./388032.jsx");
 
-function l(e) {
+function o(e) {
   switch (e) {
-    case i.x_.SWORD:
+    case a.x_.SWORD:
       return s.intl.string(s.t["+4RpVO"]);
-    case i.x_.WATER_DROP:
+    case a.x_.WATER_DROP:
       return s.intl.string(s.t["08tAb0"]);
-    case i.x_.SKULL:
+    case a.x_.SKULL:
       return s.intl.string(s.t["0opW02"]);
-    case i.x_.TOADSTOOL:
+    case a.x_.TOADSTOOL:
       return s.intl.string(s.t.M90TUl);
-    case i.x_.MOON:
+    case a.x_.MOON:
       return s.intl.string(s.t.G8H5XZ);
-    case i.x_.LIGHTNING:
+    case a.x_.LIGHTNING:
       return s.intl.string(s.t.hcPaJA);
-    case i.x_.LEAF:
+    case a.x_.LEAF:
       return s.intl.string(s.t.Zg3hHZ);
-    case i.x_.HEART:
+    case a.x_.HEART:
       return s.intl.string(s.t.WjcnZD);
-    case i.x_.FIRE:
+    case a.x_.FIRE:
       return s.intl.string(s.t.OLVr2Z);
-    case i.x_.COMPASS:
+    case a.x_.COMPASS:
       return s.intl.string(s.t.fSU0qj);
-    case i.x_.CROSSHAIRS:
+    case a.x_.CROSSHAIRS:
       return s.intl.string(s.t.FImC7X);
-    case i.x_.FLOWER:
+    case a.x_.FLOWER:
       return s.intl.string(s.t.Kswg0Y);
-    case i.x_.FORCE:
+    case a.x_.FORCE:
       return s.intl.string(s.t.ALJkb2);
-    case i.x_.GEM:
+    case a.x_.GEM:
       return s.intl.string(s.t.Xpb5FV);
-    case i.x_.LAVA:
+    case a.x_.LAVA:
       return s.intl.string(s.t.Q9Mv1c);
-    case i.x_.PSYCHIC:
+    case a.x_.PSYCHIC:
       return s.intl.string(s.t.qCL3jX);
-    case i.x_.SMOKE:
+    case a.x_.SMOKE:
       return s.intl.string(s.t.HWyuRl);
-    case i.x_.SNOW:
+    case a.x_.SNOW:
       return s.intl.string(s.t["YTpD+b"]);
-    case i.x_.SOUND:
+    case a.x_.SOUND:
       return s.intl.string(s.t["8MDV4p"]);
-    case i.x_.SUN:
+    case a.x_.SUN:
       return s.intl.string(s.t.q4KKjI);
-    case i.x_.WIND:
+    case a.x_.WIND:
       return s.intl.string(s.t.jTxbHc);
-    case i.x_.BUNNY:
+    case a.x_.BUNNY:
       return s.intl.string(s.t.s0jeu5);
-    case i.x_.DOG:
+    case a.x_.DOG:
       return s.intl.string(s.t.teQDPB);
-    case i.x_.FROG:
+    case a.x_.FROG:
       return s.intl.string(s.t.SAUCGD);
-    case i.x_.GOAT:
+    case a.x_.GOAT:
       return s.intl.string(s.t.Mpxtar);
-    case i.x_.CAT:
+    case a.x_.CAT:
       return s.intl.string(s.t.qCpIw3);
-    case i.x_.DIAMOND:
+    case a.x_.DIAMOND:
       return s.intl.string(s.t["zE/nMU"]);
-    case i.x_.CROWN:
+    case a.x_.CROWN:
       return s.intl.string(s.t.Rp2AbV);
-    case i.x_.TROPHY:
+    case a.x_.TROPHY:
       return s.intl.string(s.t.Jw25U0);
-    case i.x_.MONEY_BAG:
+    case a.x_.MONEY_BAG:
       return s.intl.string(s.t.s2U0Nw);
-    case i.x_.DOLLAR_SIGN:
+    case a.x_.DOLLAR_SIGN:
       return s.intl.string(s.t.AWIIQw);
     default:
       (0, r.vE)(e)

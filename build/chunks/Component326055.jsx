@@ -1,7 +1,7 @@
-/** Chunk was on 47285 **/
+/** Chunk was on 81242 **/
 /** chunk id: 326055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => h
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,46 +21,46 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk802795 = require("./802795.js");
 
-function j(e) {
+function h(e) {
   var t, n, {
-      guildId: j,
+      guildId: h,
       powerup: v
     } = e,
-    x = function(e, t) {
+    k = function(e, t) {
       if (null == e) return {};
       var n, r, a = function(e, t) {
         if (null == e) return {};
         var n, r, a = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+          s = Object.keys(e);
+        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
         return a
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+        var s = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
       }
       return a
     }(e, ["guildId", "powerup"]);
-  let [k, y] = a.useState(true), O = a.useMemo(() => {
+  let [C, O] = a.useState(true), y = a.useMemo(() => {
     switch (v.skuId) {
-      case o.IN:
+      case s.IN:
         return (0, r.jsx)(m.E, {
-          guildId: j
+          guildId: h
         });
-      case o.If:
+      case s.If:
         return (0, r.jsx)(m.Z, {});
-      case o.A$:
+      case s.A$:
         return (0, r.jsx)(b.Z, {});
       default:
         return
     }
-  }, [v, j]);
-  (0, c.$)(j, v, c.w.DETAIL);
-  let w = (0, d.Z)(j),
-    S = _.Rx[v.skuId],
-    P = null != S ? _.Cp[S] : null,
-    E = (0, s.e7)([i.Z], () => i.Z.getStateForGuild(j)),
-    N = null != P ? null == E ? true : E.allPowerups[P] : null;
+  }, [v, h]);
+  (0, c.$)(h, v, c.w.DETAIL);
+  let S = (0, d.Z)(h),
+    P = f.Rx[v.skuId],
+    w = null != P ? f.Cp[P] : null,
+    N = (0, o.e7)([i.Z], () => i.Z.getStateForGuild(h)),
+    E = null != w ? null == N ? true : N.allPowerups[w] : null;
   return (0, r.jsxs)(l.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -80,58 +80,58 @@ function j(e) {
     return e
   }({
     "data-migration-pending": true,
-    className: h.modal,
+    className: j.modal,
     size: l.CgR.DYNAMIC
-  }, x), n = n = {
+  }, k), n = n = {
     parentComponent: "GuildPowerupPerkModal",
     children: [(0, r.jsxs)(l.hzk, {
       "data-migration-pending": true,
-      className: h.modalContentContainer,
+      className: j.modalContentContainer,
       scrollbarType: "none",
       children: [(0, r.jsxs)("div", {
-        className: h.sidebar,
+        className: j.sidebar,
         children: [(0, r.jsx)(l.$1m, {
-          className: h.powerupImage,
-          children: (0, r.jsx)(p.m, {
+          className: j.powerupImage,
+          children: (0, r.jsx)(g.m, {
             powerup: v
           })
         }), (0, r.jsxs)("div", {
-          className: h.contentContainer,
+          className: j.contentContainer,
           children: [(0, r.jsx)(l.Heading, {
             variant: "heading-xl/extrabold",
             children: v.title
           }), (0, r.jsx)(l.Text, {
-            className: h.description,
+            className: j.description,
             variant: "text-sm/normal",
             children: v.description
-          }), null != N && (0, r.jsx)(l.Text, {
-            className: h.description,
+          }), null != E && (0, r.jsx)(l.Text, {
+            className: j.description,
             variant: "text-sm/normal",
-            children: C.intl.formatToPlainString(f.default.NAFGkH, {
-              level: N.title
+            children: x.intl.formatToPlainString(_.default.NAFGkH, {
+              level: E.title
             })
-          }), (0, r.jsx)(g.q, {
+          }), (0, r.jsx)(p.q, {
             powerup: v
-          }), null != k && (0, r.jsx)(l.Text, {
-            className: h.error,
+          }), null != C && (0, r.jsx)(l.Text, {
+            className: j.error,
             color: "status-danger",
             variant: "text-sm/semibold",
-            children: k
-          }), w && (0, r.jsx)(u.ZP, {
-            className: h.footer,
-            guildId: j,
+            children: C
+          }), S && (0, r.jsx)(u.ZP, {
+            className: j.footer,
+            guildId: h,
             powerup: v,
-            onError: y
+            onError: O
           })]
         })]
-      }), null != O && (0, r.jsx)("div", {
-        className: h.exampleImage,
-        children: O
+      }), null != y && (0, r.jsx)("div", {
+        className: j.exampleImage,
+        children: y
       })]
     }), (0, r.jsx)(l.olH, {
       "data-migration-pending": true,
-      className: h.close,
-      onClick: x.onClose
+      className: j.close,
+      onClick: k.onClose
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

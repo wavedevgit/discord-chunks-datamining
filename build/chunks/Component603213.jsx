@@ -1,4 +1,4 @@
-/** Chunk was on 47285 **/
+/** Chunk was on 81242 **/
 /** chunk id: 603213, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => u
@@ -16,11 +16,11 @@ function u(e) {
   let {
     powerup: t
   } = e;
-  return t.skuId === a.A$ ? (0, r.jsx)(o.xvT, {
+  return t.skuId === a.A$ ? (0, r.jsx)(s.xvT, {
     className: d.learnMore,
     variant: "text-sm/medium",
     children: c.intl.format(i.default.fXE30d, {
-      helpDeskArticle: s.Z.getArticleURL(l.BhN.GUILD_VANITY_URL)
+      helpDeskArticle: o.Z.getArticleURL(l.BhN.GUILD_VANITY_URL)
     })
   }) : null
 }

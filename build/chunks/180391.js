@@ -1,5 +1,5 @@
-/** Chunk was on 64982 **/
-/** chunk id: 180391, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 58121 **/
+/** chunk id: 180391, original params: e,n,t (module,exports,require) **/
 module.exports = {
   welcomeMessageContainer: "welcomeMessageContainer__6f212",
   avatar: "avatar__6f212",

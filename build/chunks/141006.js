@@ -1,7 +1,7 @@
-/** Chunk was on 30378 **/
+/** Chunk was on 81242 **/
 /** chunk id: 141006, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Eg: () => i,
+  Eg: () => a,
   SK: () => r,
   tl: () => s
 });
@@ -10,7 +10,7 @@ let r = {
     secondary_color: 0xffbbec,
     tertiary_color: 0xffc3a0
   },
-  i = {
+  a = {
     primary_color: 0x9e6bff,
     secondary_color: 0x9fc1ff,
     tertiary_color: null

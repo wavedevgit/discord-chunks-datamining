@@ -1,7 +1,7 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 384 **/
 /** chunk id: 273282, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => j
+  c: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,70 +9,61 @@ var Chunk951288 = require("./951288.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk884858 = require("./884858.js"),
   Chunk813197 = require("./813197.jsx"),
-  Chunk892803 = require("./892803.js"),
   Chunk434404 = require("./434404.js"),
   Chunk465682 = require("./465682.jsx"),
   Chunk821458 = require("./821458.jsx"),
-  Chunk585961 = require("./585961.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk30513 = require("./30513.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk43628 = require("./43628.js");
 
-function j(e) {
+function b(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: j
+    buttonClassName: b
   } = e, {
-    analyticsLocations: _
-  } = (0, a.ZP)(), v = t.features.has(p.GuildFeatures.INVITE_SPLASH), O = n && v, C = i.useRef(null), {
-    enabled: y
-  } = c.Z.useConfig({
-    location: "GuildSettingsInviteBackgroundUploadButton"
-  }), N = i.useCallback(e => {
-    d.Z.updateGuild({
+    analyticsLocations: x
+  } = (0, a.ZP)(), j = t.features.has(g.GuildFeatures.INVITE_SPLASH), _ = n && j, v = i.useRef(null), O = i.useCallback(e => {
+    c.Z.updateGuild({
       splash: e
     })
-  }, []), E = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, g.E6)({
+  }, []), C = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
-      analyticsLocations: _,
-      analyticsSection: p.jXE.GUILD_INVITE_BACKGROUND,
-      analyticsObject: p.qAy.BUTTON_CTA,
-      perks: (0, f.o9)()
+      analyticsLocations: x,
+      analyticsSection: g.jXE.GUILD_INVITE_BACKGROUND,
+      analyticsObject: g.qAy.BUTTON_CTA,
+      perks: (0, m.o9)()
     })
-  }, [_, t]), I = i.useCallback(() => {
+  }, [x, t]), y = i.useCallback(() => {
     var e;
-    null == (e = C.current) || e.activateUploadDialogue()
+    null == (e = v.current) || e.activateUploadDialogue()
   }, []);
-  return v ? (0, r.jsxs)("div", {
-    className: j,
+  return j ? (0, r.jsxs)("div", {
+    className: b,
     children: [(0, r.jsx)(l.zxk, {
-      disabled: !O,
+      disabled: !_,
       variant: "primary",
-      text: b.intl.string(b.t.yG2pUi),
-      onClick: I
+      text: f.intl.string(f.t.yG2pUi),
+      onClick: y
     }), (0, r.jsx)("div", {
-      className: x.hiddenInputContainer,
+      className: h.hiddenInputContainer,
       children: (0, r.jsx)(o.ZP, {
-        ref: C,
-        disabled: !O,
-        onChange: N,
-        maxFileSizeBytes: h.B,
-        onFileSizeError: () => (0, s.Z)(h.B),
+        ref: v,
+        disabled: !_,
+        onChange: O,
+        maxFileSizeBytes: p.B,
+        onFileSizeError: () => (0, s.Z)(p.B),
         tabIndex: false,
         "aria-hidden": true
       })
     })]
-  }) : y ? (0, r.jsx)("div", {
-    className: j,
-    children: (0, r.jsx)(u.v, {
-      onClick: E
+  }) : (0, r.jsx)("div", {
+    className: b,
+    children: (0, r.jsx)(d.v, {
+      onClick: C
     })
-  }) : (0, r.jsx)(m.P, {
-    className: j,
-    onClick: E
   })
 }
