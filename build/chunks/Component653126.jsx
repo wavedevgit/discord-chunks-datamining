@@ -2,7 +2,7 @@
 /** chunk id: 653126, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,121 +24,129 @@ var Chunk951288 = require("./951288.js"),
   Chunk659755 = require("./659755.jsx"),
   Chunk406667 = require("./406667.jsx"),
   Chunk268865 = require("./268865.jsx"),
+  Chunk361110 = require("./361110.js"),
   Chunk29121 = require("./29121.js"),
   Chunk215023 = require("./215023.js"),
   Chunk374874 = require("./374874.js");
-let j = Chunk647438.memo(function(e) {
+let k = Chunk647438.memo(function(e) {
     let {
       product: t,
       hideWishlistButton: n,
       hideProductName: i,
-      hideVariantSwitcher: j,
-      hidePrice: k,
-      hidePrimaryCTA: I,
-      hideSecondaryCTA: T,
-      badgeOverride: L,
-      skipLimitedTimeCheck: B,
-      onClickCard: P,
-      onClickPrimaryCTA: A,
-      onClickSecondaryCTA: N,
-      onMouseEnter: R,
-      onMouseLeave: Z,
-      onFocus: w,
-      onBlur: H,
-      primaryCTAText: D,
-      secondaryCTAIcon: M,
-      productNameClassName: F,
-      badgeClassName: W,
-      cardClassName: V,
-      prioritizedCurrency: U,
-      onClickAnalytics: z
-    } = e, G = (0, p.Nd)(), K = null == G ? true : G.tab, Y = (0, O.zQ)(t), q = l.useRef(null), {
-      isHoveringOrFocusing: J
-    } = (0, d.Z)(q), {
-      handleCardVisibilityChange: Q
-    } = (0, g.E)(t.skuId, K === S.AW.CATALOG ? "full" : K), X = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, z), $ = t.type === a.Z.VARIANTS_GROUP && !j, ee = !I || !T, et = !k || $, en = ee || $;
+      hideVariantSwitcher: k,
+      hidePrice: I,
+      hidePrimaryCTA: T,
+      hideSecondaryCTA: L,
+      badgeOverride: B,
+      skipLimitedTimeCheck: P,
+      onClickCard: A,
+      onClickPrimaryCTA: N,
+      onClickSecondaryCTA: R,
+      onMouseEnter: Z,
+      onMouseLeave: w,
+      onFocus: H,
+      onBlur: D,
+      primaryCTAText: M,
+      secondaryCTAIcon: F,
+      productNameClassName: W,
+      badgeClassName: V,
+      cardClassName: U,
+      prioritizedCurrency: z,
+      onClickAnalytics: G
+    } = e, {
+      previewingVariantIndex: K,
+      handleEntering: Y,
+      handleLeaving: q
+    } = (0, O.f)(t), J = (0, p.Nd)(), Q = null == J ? true : J.tab, X = (0, S.zQ)(t), $ = l.useRef(null), {
+      isHoveringOrFocusing: ee
+    } = (0, d.Z)($), {
+      handleCardVisibilityChange: et
+    } = (0, g.E)(t.skuId, Q === y.AW.CATALOG ? "full" : Q), en = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, G), er = t.type === a.Z.VARIANTS_GROUP && !k, el = !T || !L, ei = !I || er, es = el || er;
     return (0, r.jsx)(o.$, {
-      innerRef: q,
-      onChange: Q,
+      innerRef: $,
+      onChange: et,
       threshold: 0,
       children: (0, r.jsx)(c.kL8, {
-        ref: q,
-        onClick: null != P ? P : X,
-        "aria-label": Y,
-        className: s()(V, y.productCardContainer, {
-          [y.hovered]: J
+        ref: $,
+        onClick: null != A ? A : en,
+        "aria-label": X,
+        className: s()(U, j.productCardContainer, {
+          [j.hovered]: ee
         }),
-        onFocus: () => null == w ? true : w(t.skuId),
-        onBlur: () => null == H ? true : H(t.skuId),
-        onMouseEnter: () => null == R ? true : R(t.skuId),
-        onMouseLeave: () => null == Z ? true : Z(t.skuId),
+        onFocus: () => null == H ? true : H(t.skuId),
+        onBlur: () => null == D ? true : D(t.skuId),
+        onMouseEnter: () => null == Z ? true : Z(t.skuId),
+        onMouseLeave: () => null == w ? true : w(t.skuId),
         children: (0, r.jsxs)("div", {
-          className: y.productCardContentContainer,
+          className: j.productCardContentContainer,
           children: [(0, r.jsx)("div", {
-            className: s()(y.productPreviewContainer, {
-              [y.hasBottomContent]: !i || et || en
+            className: s()(j.productPreviewContainer, {
+              [j.hasBottomContent]: !i || ei || es
             }),
             children: (0, r.jsx)(v.Z, {
               skuId: t.skuId,
-              isCardHovered: J
+              isCardHovered: ee,
+              overrideVariantIndex: K
             })
           }), (0, r.jsxs)("div", {
-            className: y.headerContainer,
+            className: j.headerContainer,
             children: [(0, r.jsx)(f.Z, {
               skuId: t.skuId,
-              badgeOverride: L,
-              className: W,
-              prioritizedCurrency: U,
-              skipLimitedTimeCheck: B
+              badgeOverride: B,
+              className: V,
+              prioritizedCurrency: z,
+              skipLimitedTimeCheck: P
             }), !n && (0, r.jsx)(x.Z, {
               skuId: t.skuId,
-              isCardHovered: J
+              isCardHovered: ee
             })]
           }), (0, r.jsxs)("div", {
-            className: y.footerContainer,
+            className: j.footerContainer,
             children: [(0, r.jsx)("div", {
-              className: y.footerGradient
+              className: j.footerGradient
             }), (0, r.jsxs)("div", {
-              className: y.footerContent,
+              className: j.footerContent,
               children: [!i && (0, r.jsx)(h.Z, {
                 skuId: t.skuId,
                 className: s()({
-                  [y.shadowOnHover]: en
-                }, F)
-              }), et && (0, r.jsxs)("div", {
-                className: s()(y.footerInfoContainer, {
-                  [y.removePaddingOnHover]: !$
+                  [j.shadowOnHover]: es
+                }, W)
+              }), ei && (0, r.jsxs)("div", {
+                className: s()(j.footerInfoContainer, {
+                  [j.removePaddingOnHover]: !er
                 }),
-                children: [!k && (0, r.jsx)("div", {
-                  className: y.priceContainer,
+                children: [!I && (0, r.jsx)("div", {
+                  className: j.priceContainer,
                   "aria-hidden": true,
                   children: (0, r.jsx)(C.Z, {
                     skuId: t.skuId,
-                    prioritizedCurrency: U
+                    prioritizedCurrency: z
                   })
-                }), $ && (0, r.jsx)(E.Z, {
+                }), er && (0, r.jsx)(E.Z, {
                   skuId: t.skuId,
-                  isCollapsed: !J
+                  isCollapsed: !ee,
+                  onVariantEnter: Y,
+                  onVariantExit: q
                 })]
-              }), ee && (0, r.jsx)("div", {
-                className: y.footerButtonContainer,
+              }), el && (0, r.jsx)("div", {
+                className: j.footerButtonContainer,
                 children: (0, r.jsxs)(c.ButtonGroup, {
                   wrap: false,
                   fullWidth: true,
-                  children: [!I && (0, r.jsx)(m.Z, {
+                  children: [!T && (0, r.jsx)(m.Z, {
                     skuId: t.skuId,
-                    cardRef: q,
-                    onClick: A,
-                    text: D,
-                    prioritizedCurrency: U,
-                    onClickAnalytics: z
-                  }), !T && (0, r.jsx)(_.Z, {
-                    skuId: t.skuId,
-                    cardRef: q,
+                    cardRef: $,
                     onClick: N,
-                    icon: M,
-                    prioritizedCurrency: U,
-                    onClickAnalytics: z
+                    text: M,
+                    prioritizedCurrency: z,
+                    onClickAnalytics: G
+                  }), !L && (0, r.jsx)(_.Z, {
+                    skuId: t.skuId,
+                    cardRef: $,
+                    onClick: R,
+                    icon: F,
+                    prioritizedCurrency: z,
+                    onClickAnalytics: G
                   })]
                 })
               })]
@@ -148,7 +156,7 @@ let j = Chunk647438.memo(function(e) {
       })
     })
   }),
-  k = e => {
+  I = e => {
     let {
       skuId: t
     } = e, n = function(e, t) {
@@ -166,7 +174,7 @@ let j = Chunk647438.memo(function(e) {
       }
       return l
     }(e, ["skuId"]), l = (0, b.LJ)(t);
-    return null == l ? null : (0, r.jsx)(j, function(e) {
+    return null == l ? null : (0, r.jsx)(k, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
