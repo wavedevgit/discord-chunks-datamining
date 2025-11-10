@@ -24,7 +24,7 @@ function c(e, t, n) {
 function u() {
   return [{
     name: Chunk388032.intl.string(Chunk388032.t["Sp2NF+"]),
-    extensions: ["jpg", "jpeg", "png", "gif", "webp", "avif"]
+    extensions: ["jpg", "jpeg", "jfif", "png", "gif", "webp", "avif"]
   }]
 }
 

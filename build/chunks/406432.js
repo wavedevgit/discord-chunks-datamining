@@ -22,7 +22,7 @@ let o = (e, t) => {
     let [n, r] = e.split("/");
     return n === t
   },
-  l = /\.(png|jpe?g|webp|gif|heic|heif|dng|avif)$/i,
+  l = /\.(png|jpe?g|jfif|webp|gif|heic|heif|dng|avif)$/i,
   c = e => null != e && l.test(e),
   u = e => s(e, "image"),
   d = /\.(webp|gif|avif)$/i,

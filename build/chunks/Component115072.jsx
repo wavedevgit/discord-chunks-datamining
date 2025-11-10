@@ -66,7 +66,7 @@ function E(e) {
         return "Linux"
     }
     return ""
-  }((0, _.getOS)())), [en, ei] = r.useState(""), [er, ea] = r.useState(""), [el, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(false), [em, ep] = r.useState(false), [ev, ef] = r.useState(false), [eh, eg] = r.useState(null);
+  }((0, _.getOS)())), [en, ei] = r.useState(""), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(false), [em, ep] = r.useState(false), [ef, ev] = r.useState(false), [eh, eg] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -76,19 +76,19 @@ function E(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "a0251d1299a486d8875ea0c7cf8ddb3b4cbebc29" !== e.body.hash) {
-        let e = new Date("1762814617109"),
+      if (null != e.body && "8459a8859e8ffdfc4f4f782bc24c97fc7c39c616" !== e.body.hash) {
+        let e = new Date("1762815705378"),
           t = new Date,
           n = (0, j.TD)(t, e);
         n.hours > 6 && eg(n.hours)
       }
     })
   }, []);
-  let ex = (0, l.e7)([b.default], () => {
+  let ex = (0, a.e7)([b.default], () => {
       let e = b.default.getCurrentUser();
       return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
     }),
-    eb = (0, l.e7)([m.C], () => {
+    eb = (0, a.e7)([m.C], () => {
       var e;
       return null == (e = m.C.getCurrentBuildOverride().overrides) ? true : e.discord_web
     }),
@@ -109,16 +109,16 @@ function E(e) {
     });
   async function eO() {
     var e, t;
-    if (ef(false), "" === M || "" === W || null == V) return void ed(true);
+    if (ev(false), "" === M || "" === W || null == V) return void ed(true);
     let r = null == U || null == (e = U.features) ? true : e.find(e => (0, O.pD)(e) === X);
     ep(true), ed(false);
-    let a = (0, S.D)(z.map(e => {
+    let l = (0, S.D)(z.map(e => {
         let {
           item: t
         } = e;
         return t
       })),
-      l = await (0, O.ZD)({
+      a = await (0, O.ZD)({
         name: M,
         description: W,
         priority: V,
@@ -132,19 +132,19 @@ function E(e) {
         operatingSystem: ee,
         operatingSystemVersion: en,
         clientVersion: er,
-        clientBuildNumber: el,
+        clientBuildNumber: ea,
         locale: es
       } : {
         overridePlatformInformation: K
-      }, a).catch(() => ef(true));
-    ep(false), null != l && l.ok ? (ex && window.open(l.body.permalink_url, "_blank"), L(), (0, u.ZDy)(async () => {
+      }, l).catch(() => ev(true));
+    ep(false), null != a && a.ok ? (ex && window.open(a.body.permalink_url, "_blank"), L(), (0, u.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
       return t => {
         var n, r;
         return (0, i.jsx)(e, (n = C({}, t), r = r = {
-          asanaTask: l.body
+          asanaTask: a.body
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -156,7 +156,7 @@ function E(e) {
           Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
         }), n))
       }
-    })) : ef(true)
+    })) : ev(true)
   }
   r.useEffect(() => {
     async function e() {
@@ -178,7 +178,7 @@ function E(e) {
       var n;
       return e.filename === t.name && (null == (n = e.item.file) ? true : n.size) === t.size
     }) || G([...z, new d.ZP({
-      id: (0, a.Z)(),
+      id: (0, l.Z)(),
       file: t,
       platform: d.ow.WEB,
       origin: "clipboard"
@@ -348,11 +348,11 @@ function E(e) {
             label: w.intl.string(w.t["wy1M/t"]),
             placeholder: "Client Version",
             value: er,
-            onChange: e => ea(e)
+            onChange: e => el(e)
           }), (0, i.jsx)(u.oil, {
             label: w.intl.string(w.t.f7kbVu),
             placeholder: "Client Build Number",
-            value: el,
+            value: ea,
             onChange: e => eo(e)
           }), (0, i.jsx)(u.oil, {
             label: w.intl.string(w.t["4Z5+zg"]),
@@ -375,7 +375,7 @@ function E(e) {
             onChange: e => {
               var t, n;
               (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && G([...z, ...Array.from(e.currentTarget.files).map(e => new d.ZP({
-                id: (0, a.Z)(),
+                id: (0, l.Z)(),
                 file: e,
                 platform: d.ow.WEB,
                 origin: "file_picker"
@@ -391,8 +391,8 @@ function E(e) {
             children: z.length > 0 && z.map(e => (0, i.jsxs)("div", {
               className: P.attachment,
               children: [(0, i.jsxs)("div", {
-                children: [(0, i.jsx)(f.r, {
-                  size: v.q.SMALL,
+                children: [(0, i.jsx)(v.r, {
+                  size: f.q.SMALL,
                   upload: e
                 }), (0, i.jsx)("div", {
                   className: P.removeAttachment,
@@ -418,7 +418,7 @@ function E(e) {
               })]
             }, e.id))
           })
-        }) : null, ev ? (0, i.jsx)(u.Text, {
+        }) : null, ef ? (0, i.jsx)(u.Text, {
           color: "text-danger",
           variant: "text-sm/normal",
           children: "Something went wrong, try again!"

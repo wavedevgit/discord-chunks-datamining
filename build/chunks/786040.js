@@ -2,12 +2,13 @@
 /** chunk id: 786040, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J7: () => b,
-  LJ: () => O,
-  Zh: () => m,
-  rC: () => y,
-  tA: () => g,
-  wO: () => E
+  J7: () => O,
+  LJ: () => I,
+  Zh: () => E,
+  rC: () => v,
+  tA: () => b,
+  wO: () => y,
+  zp: () => m
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk979554 = require("./979554.js"),
@@ -21,14 +22,21 @@ var Chunk647438 = require("./647438.js"),
   Chunk956472 = require("./956472.js"),
   Chunk619899 = require("./619899.js"),
   Chunk215023 = require("./215023.js"),
-  Chunk981631 = require("./981631.js"),
-  m = function(e) {
+  Chunk981631 = require("./981631.js");
+let m = Chunk647438.createContext({
+  flattenProductVariants: false
+});
+
+function g() {
+  return Chunk647438.useContext(m).flattenProductVariants
+}
+var E = function(e) {
     return e.NONE = "none", e.NEW = "new", e.ORBS_EXCLUSIVE = "orbs_exclusive", e.LIMITED_TIME = "limited_time", e
   }({}),
-  g = function(e) {
+  b = function(e) {
     return e.FIAT = "fiat", e.ORBS = "orbs", e
   }({});
-let E = (e, t, n) => r => {
+let y = (e, t, n) => r => {
     l.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == n ? true : n.sessionId,
       sku_id: e.skuId,
@@ -42,7 +50,7 @@ let E = (e, t, n) => r => {
       cta_name: r
     })
   },
-  b = (e, t, n) => {
+  O = (e, t, n) => {
     let i = (0, u.Nd)(),
       l = null == i ? true : i.tab,
       {
@@ -66,7 +74,7 @@ let E = (e, t, n) => r => {
       })
     }, [e, l, p, _, n])(t)
   },
-  y = e => {
+  v = e => {
     if (null == e) return null;
     if (e.type === i.Z.VARIANTS_GROUP) {
       if (null == e.variants || 0 === e.variants.length) return null;
@@ -77,8 +85,11 @@ let E = (e, t, n) => r => {
     }
     return e.type
   },
-  O = e => {
-    let t = (0, a.e7)([c.Z], () => c.Z.getCategoryForProduct(e)),
-      n = null == t ? true : t.products.find(t => t.skuId === e);
+  I = e => {
+    let t = g(),
+      n = (0, a.e7)([c.Z], () => {
+        var n;
+        return t ? c.Z.getProduct(e) : null == (n = c.Z.getCategoryForProduct(e)) ? true : n.products.find(t => t.skuId === e)
+      });
     return (0, _.Cr)(n)
   }

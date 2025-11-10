@@ -15,6 +15,10 @@ let o = [{
     name: e => "image".concat(e, ".jpg"),
     type: "image/jpeg"
   }, {
+    reName: /\.jfif$/i,
+    name: e => "image".concat(e, ".jpg"),
+    type: "image/jpeg"
+  }, {
     reName: /\.png$/i,
     name: e => "image".concat(e, ".png"),
     type: "image/png"
