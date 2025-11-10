@@ -54,8 +54,8 @@ function y(e) {
     target: m,
     defaultTarget: v,
     onClose: g,
-    sidebarHeader: h,
-    sidebarFooter: x,
+    sidebarHeader: x,
+    sidebarFooter: h,
     onPanelChange: O,
     emptyState: P
   } = e, S = null != m && (null == (t = j.entry(m)) ? true : t.targetPanelKey) != null ? m : v;
@@ -123,8 +123,8 @@ function y(e) {
       className: f.container,
       children: [(0, r.jsx)(c.P, {
         root: y,
-        header: h,
-        footer: x,
+        header: x,
+        footer: h,
         onClose: R,
         emptyState: P
       }), (0, r.jsx)(a.Z, {

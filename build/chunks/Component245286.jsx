@@ -93,7 +93,7 @@ function S(e) {
     emptyState: _,
     sidebarFooter: v.Z,
     onPanelChange: e => {
-      let t = (0, h.getUserSettingsSectionsByWebUserSettings)().get(e);
+      let t = (0, x.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (P({
         destinationPanel: t,
         originPanel: y.current

@@ -16,12 +16,13 @@ var Chunk28682 = require("./28682.js"),
   Chunk867694 = require("./867694.jsx"),
   Chunk4794 = require("./4794.jsx"),
   Chunk142118 = require("./142118.jsx"),
+  Chunk149865 = require("./149865.jsx"),
   Chunk409322 = require("./409322.jsx"),
   Chunk670304 = require("./670304.jsx"),
   Chunk357660 = require("./357660.jsx"),
   Chunk166292 = require("./166292.jsx");
 
-function g(e) {
+function x(e) {
   let {
     node: t
   } = e;
@@ -31,14 +32,18 @@ function g(e) {
     case l.Jq.SIDEBAR_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
     case l.Jq.PANEL:
-      return (0, r.jsx)(m.T, {
+      return (0, r.jsx)(v.T, {
         node: t
       });
     case l.Jq.PANE:
-      return (0, r.jsx)(j.Z, {
+      return (0, r.jsx)(m.Z, {
         node: t
       });
     case l.Jq.LIST:
+      return (0, r.jsx)(j.Z, {
+        node: t
+      });
+    case l.Jq.FIELD_SET:
       return (0, r.jsx)(y.Z, {
         node: t
       });
@@ -51,7 +56,7 @@ function g(e) {
         node: t
       });
     case l.Jq.SPLIT:
-      return (0, r.jsx)(v.Z, {
+      return (0, r.jsx)(g.Z, {
         node: t
       });
     case l.Jq.TOGGLE:
@@ -89,11 +94,11 @@ function h(e) {
   let {
     node: t
   } = e;
-  return t.type === l.Jq.PANEL || t.type === l.Jq.PANE ? (0, r.jsx)(g, {
+  return t.type === l.Jq.PANEL || t.type === l.Jq.PANE ? (0, r.jsx)(x, {
     node: t
   }) : (0, r.jsx)(o.Z, {
     node: t,
-    children: (0, r.jsx)(g, {
+    children: (0, r.jsx)(x, {
       node: t
     })
   })

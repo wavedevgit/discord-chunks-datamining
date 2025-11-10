@@ -29,13 +29,13 @@ function u(e) {
     }),
     v = null != p ? m.slice(0, p) : m,
     g = null != p ? m.slice(p) : [],
-    h = null != y ? y : l.Fragment,
-    x = null != (t = null == j ? true : j(d, g.length)) ? t : (n = g.length, d ? c.intl.formatToPlainString(c.t["3SHL+d"], {
+    x = null != y ? y : l.Fragment,
+    h = null != (t = null == j ? true : j(d, g.length)) ? t : (n = g.length, d ? c.intl.formatToPlainString(c.t["3SHL+d"], {
       count: n
     }) : c.intl.formatToPlainString(c.t["8JRFyZ"], {
       count: n
     }));
-  return (0, r.jsx)(h, {
+  return (0, r.jsx)(x, {
     children: (0, r.jsxs)(o.Kqy, {
       gap: 8,
       children: [v.map((e, t) => (0, r.jsxs)(l.Fragment, {
@@ -47,7 +47,7 @@ function u(e) {
         children: [(0, r.jsx)(o.izJ, {
           className: s.hoverDivider
         }), (0, r.jsx)(a.I, {
-          title: x,
+          title: h,
           isOpen: d,
           setIsOpen: f,
           compact: true,

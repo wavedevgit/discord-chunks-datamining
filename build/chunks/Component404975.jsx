@@ -26,7 +26,7 @@ function v(e) {
     footer: o,
     onClose: y,
     emptyState: v
-  } = e, h = p.Z.useField("showNavigationMobile"), x = l.useRef(null), O = l.useMemo(() => {
+  } = e, x = p.Z.useField("showNavigationMobile"), h = l.useRef(null), O = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -49,7 +49,7 @@ function v(e) {
     return t.layout.forEach(t => {
       t.hoisted ? e.push(t) : n.push(t)
     }), [e, n]
-  }, [t.layout]), C = (0, f.Ll)(), _ = (0, u.Z)("settings-sidebar", x);
+  }, [t.layout]), C = (0, f.Ll)(), _ = (0, u.Z)("settings-sidebar", h);
   return (0, r.jsx)(s.f6W, {
     theme: C,
     children: e => (0, r.jsx)(d.ZP, {
@@ -61,7 +61,7 @@ function v(e) {
         return (0, r.jsxs)("div", {
           className: i()(m.sidebar, e, {
             [m.mobile]: c.tq,
-            [m.mobileNavigationOpen]: h
+            [m.mobileNavigationOpen]: x
           }),
           children: [(0, r.jsxs)("div", {
             className: m.fixedContent,
@@ -123,7 +123,7 @@ function v(e) {
                 }({
                   ref: e => {
                     var t;
-                    x.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+                    h.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
                   },
                   className: m.navScroller,
                   fade: true

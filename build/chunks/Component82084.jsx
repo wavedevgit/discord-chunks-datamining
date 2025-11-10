@@ -23,9 +23,9 @@ function b(e) {
       onPanelChange: m,
       sidebarHeader: v,
       sidebarFooter: g,
-      emptyState: h
+      emptyState: x
     } = e,
-    x = function(e, t) {
+    h = function(e, t) {
       if (null == e) return {};
       var n, r, l = function(e, t) {
         if (null == e) return {};
@@ -72,16 +72,16 @@ function b(e) {
         })
       }
       return e
-    }({}, x), n = n = {
+    }({}, h), n = n = {
       children: (0, r.jsx)(d.Z, {
-        onClose: x.onClose,
+        onClose: h.onClose,
         root: b,
         directory: p,
         target: y,
         defaultTarget: j,
         onPanelChange: m,
         sidebarHeader: v,
-        emptyState: h,
+        emptyState: x,
         sidebarFooter: g
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
