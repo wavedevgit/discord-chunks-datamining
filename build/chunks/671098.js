@@ -9,7 +9,7 @@ var Chunk835913 = require("./835913.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
 async function o(e, t) {
-  await (0, i.PS)(e, e => (e.guildRecentsDismissedAt = r.E.fromDate(new Date), true), i.fy.INFREQUENT_USER_ACTION), l.Z.dispatch({
+  await (0, l.PS)(e, e => (e.guildRecentsDismissedAt = r.E.fromDate(new Date), true), l.fy.INFREQUENT_USER_ACTION), i.Z.dispatch({
     type: "BULK_CLEAR_RECENTS",
     guildId: e,
     channelIds: t

@@ -112,8 +112,7 @@ class g extends Chunk647438.Component {
         isDragging: false
       }), (0, d.openUploadError)({
         title: u.intl.string(u.t.azO1Pe),
-        help: u.intl.string(u.t["Koklr/"]),
-        icons: t.props.icons
+        help: u.intl.string(u.t["Koklr/"])
       })), false)
     }), f(this, "handleDragOver", e => {
       var t, n, r;
