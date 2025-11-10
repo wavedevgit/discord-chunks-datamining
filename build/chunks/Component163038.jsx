@@ -68,6 +68,7 @@ function B(e) {
   return null == p ? null : (0, r.jsxs)(c.P3F, {
     className: G.footerContainer,
     onClick: h,
+    "aria-label": p.accessibilityLabel,
     children: [null != p.originIconUrl ? (0, r.jsx)("img", {
       className: G.originIcon,
       src: p.originIconUrl,

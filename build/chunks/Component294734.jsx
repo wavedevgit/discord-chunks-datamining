@@ -57,6 +57,7 @@ function R(e) {
   return null == _ ? null : (0, r.jsxs)(c.P3F, {
     className: C.footerContainer,
     onClick: p,
+    "aria-label": _.accessibilityLabel,
     children: [null != _.originIconUrl ? (0, r.jsx)("img", {
       className: C.originIcon,
       src: _.originIconUrl,
