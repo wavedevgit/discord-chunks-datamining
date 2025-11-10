@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk529554 = require("./529554.js"),
   Chunk866403 = require("./866403.js");
-let O = [{
+let N = [{
   key: "event",
   cellClassName: Chunk529554.eventColumn,
   render(e) {
@@ -111,7 +111,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(p.ZP, {
-          className: l()(N.headerBar, T.subPanelHeaderBar),
+          className: l()(O.headerBar, T.subPanelHeaderBar),
           children: [(0, a.jsx)(p.ZP.Icon, {
             icon: u.IeX,
             tooltip: t
@@ -332,7 +332,7 @@ function Z() {
         placeholder: "Search by event name"
       })
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: O,
+      columns: N,
       data: Chunk594174,
       selectedRowKey: Chunk572004,
       onClickRow: e => b(e.key)

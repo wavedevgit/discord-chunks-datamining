@@ -28,7 +28,7 @@ let C = [Chunk704215.z.GUILD_POWERUP_PERKS_COACHMARK, Chunk704215.z.GUILD_POWERU
   E = [Chunk704215.C.ADOPT_CLAN_IDENTITY_NOTICE],
   T = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
 
-function N(e) {
+function O(e) {
   switch (e) {
     case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
@@ -44,7 +44,7 @@ function N(e) {
       return "ADOPT_CLAN_IDENTITY_NOTICE"
   }
 }
-async function O(e, t, n) {
+async function N(e, t, n) {
   await s.tn.patch({
     url: _.ANM.APPLIED_BOOST_MODIFY_END_DATE,
     body: {
@@ -114,13 +114,13 @@ function I() {
           variant: "primary",
           text: "Set Half Boosts expiring in 1 day",
           onClick: () => {
-            O(module, Chunk913527.slice(Math.floor(Chunk913527.length / 2)), false)
+            N(module, Chunk913527.slice(Math.floor(Chunk913527.length / 2)), false)
           }
         }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Reset End Date",
           onClick: () => {
-            O(module, Chunk913527, true)
+            N(module, Chunk913527, true)
           }
         })]
       })]
@@ -142,7 +142,7 @@ function I() {
       children: (0, Chunk951288.jsx)(Chunk481060.C3N, {
         label: "Reset Guild Level DCs",
         children: S.map(t => (0, a.jsx)(c.rsf, {
-          label: N(t),
+          label: O(t),
           checked: n.includes(t),
           onChange: n => {
             n ? (0, p.Qd)(t, e, false) : ((0, g.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
@@ -154,7 +154,7 @@ function I() {
       children: (0, Chunk951288.jsx)(Chunk481060.C3N, {
         label: "Reset Server Tag Guild Level DCs",
         children: E.map(t => (0, a.jsx)(c.rsf, {
-          label: N(t),
+          label: O(t),
           checked: n.includes(t),
           onChange: n => {
             n ? (0, p.Qd)(t, e, false) : ((0, g.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))

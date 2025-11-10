@@ -72,8 +72,8 @@ function S(e) {
   var t, n, i, s, f, S, E;
   let {
     subscription: T,
-    onUpdated: N
-  } = e, [O, P] = r.useState(false), [I, w] = r.useState(false), [k, R] = r.useState(false), [A, Z] = r.useState(false), [D, L] = r.useState(null), M = e => (null == e && (e = T.status), e in _) ? _[e] : "Unknown status ".concat(e), U = e => {
+    onUpdated: O
+  } = e, [N, P] = r.useState(false), [I, w] = r.useState(false), [k, R] = r.useState(false), [A, Z] = r.useState(false), [D, L] = r.useState(null), M = e => (null == e && (e = T.status), e in _) ? _[e] : "Unknown status ".concat(e), U = e => {
     let t = new Date(e);
     return p.default.fromTimestamp(t.getTime())
   }, F = async e => {
@@ -109,7 +109,7 @@ function S(e) {
       url: "/debug/subscriptions/".concat(T.id),
       body: r,
       rejectWithError: false
-    }), N()
+    }), O()
   }, B = async () => {
     try {
       await c.tn.post({
@@ -125,7 +125,7 @@ function S(e) {
     } catch (e) {
       L(e.body.message)
     }
-    N()
+    O()
   }, G = (null == (t = b.GP[T.planIdFromItems]) ? true : t.premiumType) === b.PremiumTypes.TIER_0, z = null == (n = T.metadata) ? true : n.ended_at, V = null != z ? new Date(z).toISOString().substring(0, 10) : "", H = [{
     id: "id",
     label: "ID: ".concat(T.id)
@@ -230,7 +230,7 @@ function S(e) {
         className: j.collapsablePane,
         children: [(0, a.jsxs)(d.P3F, {
           onClick: () => {
-            P(!O)
+            P(!N)
           },
           className: j.collapsablePaneHeader,
           children: [(0, a.jsx)("div", {
@@ -239,9 +239,9 @@ function S(e) {
               children: "Metadata"
             })
           }), (0, a.jsx)(u.Z, {
-            direction: O ? u.Z.Directions.UP : u.Z.Directions.DOWN
+            direction: N ? u.Z.Directions.UP : u.Z.Directions.DOWN
           })]
-        }), O && (0, a.jsx)("ul", {
+        }), N && (0, a.jsx)("ul", {
           className: j.collapsiblePaneList,
           children: Object.entries(T.metadata).map(e => {
             let [t, n] = e;

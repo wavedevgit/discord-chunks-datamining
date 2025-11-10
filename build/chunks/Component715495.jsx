@@ -56,9 +56,9 @@ function _() {
   var e, t;
   let [n, i] = (0, Chunk647438.useState)(false), [s, d] = (0, Chunk647438.useState)(false), [h, g] = (0, Chunk647438.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
     setToolsCache: T,
-    removeToolsCache: N
+    removeToolsCache: O
   } = (0, Chunk396821.L3)(), {
-    setImgCache: O
+    setImgCache: N
   } = (0, Chunk396821.W_)(), P = (0, Chunk647438.useCallback)(e => {
     let t = _[e];
     null != t && g({
@@ -79,8 +79,8 @@ function _() {
       preview: true
     }))
   }, []), w = (0, Chunk647438.useCallback)(e => {
-    N(e)
-  }, [N]);
+    O(e)
+  }, [O]);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk761804.controls,
@@ -127,7 +127,7 @@ function _() {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               a = await n.arrayBuffer();
-            O(t, t, (0, p.xh)(a)), T(t, t, m.jD)
+            N(t, t, (0, p.xh)(a)), T(t, t, m.jD)
           }
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk761804.uploadedArea,
@@ -196,12 +196,12 @@ function y(e) {
       }), (0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
         children: "DMs"
-      }), (0, a.jsx)(N, {
+      }), (0, a.jsx)(O, {
         nameplate: t
       }), (0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
         children: "RTC"
-      }), (0, a.jsx)(O, {
+      }), (0, a.jsx)(N, {
         nameplate: t
       }), (0, a.jsx)("div", {
         className: b.resizeHandle,
@@ -320,7 +320,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function O(e) {
   let {
     nameplate: t
   } = e;
@@ -350,7 +350,7 @@ function N(e) {
   })
 }
 
-function O(e) {
+function N(e) {
   let {
     nameplate: t
   } = e;

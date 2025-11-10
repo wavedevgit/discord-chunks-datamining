@@ -116,8 +116,8 @@ function ec(e) {
     eS = (0, $.F)(eC),
     eE = (0, s.e7)([G.Z], () => G.Z.hidePersonalInformation),
     eT = (0, f.p)(),
-    eN = F.Sb.useSetting(),
-    eO = (0, $.I)(ey),
+    eO = F.Sb.useSetting(),
+    eN = (0, $.I)(ey),
     eP = (0, q.g)(n),
     eI = (0, v.Z)({
       analyticsLocations: eg
@@ -191,7 +191,7 @@ function ec(e) {
               user: t,
               displayProfile: ex,
               themeType: er.l.POPOUT
-            }), (0, a.jsx)(N.Z, {
+            }), (0, a.jsx)(O.Z, {
               user: t,
               displayProfile: ex,
               themeType: er.l.POPOUT,
@@ -214,7 +214,7 @@ function ec(e) {
               nickname: V.ZP.getName(em, null, t),
               onOpenProfile: eh ? true : eF,
               pronouns: null == ex ? true : ex.pronouns,
-              tags: (0, a.jsx)(O.Z, {
+              tags: (0, a.jsx)(N.Z, {
                 displayProfile: ex,
                 themeType: er.l.POPOUT,
                 onClose: n,
@@ -298,7 +298,7 @@ function ec(e) {
                         className: el.statusPickerModalMenu,
                         "aria-label": ei.intl.string(ei.t.E13trI),
                         onClose: t,
-                        children: eO
+                        children: eN
                       })
                     },
                     onClick: i.tq ? () => {
@@ -334,7 +334,7 @@ function ec(e) {
                             hideScroller: true,
                             onClose: r,
                             onSelect: true,
-                            children: eO
+                            children: eN
                           })
                         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                           var n = Object.keys(e);
@@ -371,7 +371,7 @@ function ec(e) {
                         children: eP
                       })
                     }
-                  }), !__OVERLAY__ && z.wS && eN && (0, a.jsx)(J.V4, {
+                  }), !__OVERLAY__ && z.wS && eO && (0, a.jsx)(J.V4, {
                     action: "COPY_USER_ID",
                     icon: c.VuL,
                     label: ei.intl.string(ei.t["/AXYnE"]),

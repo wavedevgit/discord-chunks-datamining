@@ -2,7 +2,7 @@
 /** chunk id: 719075, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,61 +17,61 @@ var Chunk951288 = require("./951288.js"),
   Chunk786040 = require("./786040.js"),
   Chunk445794 = require("./445794.js"),
   Chunk956472 = require("./956472.js"),
-  Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk189084 = require("./189084.js");
-let b = e => {
+let _ = e => {
     let {
       product: t,
       prioritizedCurrency: n
-    } = e, g = (0, i.e7)([a.default], () => a.default.getCurrentUser()), b = o.ZP.canUseCollectibles(g), {
-      isDisabled: v
+    } = e, g = (0, i.e7)([a.default], () => a.default.getCurrentUser()), _ = o.ZP.canUseCollectibles(g), {
+      isDisabled: b
     } = (0, u.G)(t.skuId), {
-      isPurchased: E,
-      isPartiallyOwnedBundle: x
-    } = (0, d.L)(t), O = (0, c.G1)(t), S = (0, c.rN)(t), y = l.useMemo(() => (0, c.BH)(t, b), [t, b]), j = (0, f.Iw)(t), {
-      displayPrices: k,
-      hasSufficientOrbs: I
+      isPurchased: v,
+      isPartiallyOwnedBundle: E
+    } = (0, d.L)(t), x = (0, c.G1)(t), O = (0, c.rN)(t), S = l.useMemo(() => (0, c.BH)(t, _), [t, _]), y = (0, f.Iw)(t), {
+      checkoutEligiblePrices: j,
+      hasSufficientOrbs: k,
+      shouldCheckoutWithOrbs: I
     } = (0, h.Ip)({
       product: t,
-      isPremiumUser: b,
+      isPremiumUser: _,
       prioritizedCurrency: n,
-      hasDiscountOffer: null != j
-    }), T = O && !b;
-    return v ? (0, r.jsx)(s.Text, {
+      hasDiscountOffer: null != y
+    }), T = x && !_;
+    return b ? (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "text-tertiary",
-      children: m.intl.string(m.t.wu4gyV)
-    }) : x ? (0, r.jsx)(s.Text, {
+      children: C.intl.string(C.t.wu4gyV)
+    }) : E ? (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "text-tertiary",
-      children: m.intl.string(m.t.BEjTij)
-    }) : E && !T ? (0, r.jsx)(s.Text, {
+      children: C.intl.string(C.t.BEjTij)
+    }) : v && !T ? (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "text-tertiary",
-      children: m.intl.string(m.t["6cfuDj"])
-    }) : S ? (0, r.jsx)(s.Text, {
-      variant: "text-md/bold",
-      children: m.intl.string(m.t.nBtvYB)
+      children: C.intl.string(C.t["6cfuDj"])
     }) : O ? (0, r.jsx)(s.Text, {
       variant: "text-md/bold",
-      children: m.intl.string(m.t.rt69oo)
-    }) : 0 === k.length ? null : (0, r.jsx)(p.F, {
-      price: k[0],
-      discount: y,
-      nitroIconType: b ? "default" : true,
+      children: C.intl.string(C.t.nBtvYB)
+    }) : x ? (0, r.jsx)(s.Text, {
+      variant: "text-md/bold",
+      children: C.intl.string(C.t.rt69oo)
+    }) : 0 === j.length ? null : (0, r.jsx)(p.F, {
+      price: j[0],
+      discount: S,
+      nitroIconType: _ ? "default" : true,
       nitroIconSize: "sm",
-      discountOfferAmount: j,
-      className: k[0].currency !== C.pK.DISCORD_ORB || I ? true : _.insufficientOrbs,
+      discountOfferAmount: y,
+      className: I && !k ? m.insufficientOrbs : true,
       variant: "text-md/bold"
     })
   },
-  v = e => {
+  b = e => {
     let {
       skuId: t,
       prioritizedCurrency: n
     } = e, l = (0, g.LJ)(t);
-    return null == l ? null : (0, r.jsx)(b, {
+    return null == l ? null : (0, r.jsx)(_, {
       product: l,
       prioritizedCurrency: n
     })

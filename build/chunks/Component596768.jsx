@@ -1,7 +1,7 @@
 /** Chunk was on 22740 **/
 /** chunk id: 596768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => N
 }), require("./388685.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -54,7 +54,7 @@ let T = [{
       return t.toLocaleString()
     }
   }],
-  N = [{
+  O = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -134,18 +134,18 @@ let T = [{
     }
   }];
 
-function O() {
+function N() {
   let [e, t] = Chunk647438.useState(""), n = Chunk647438.useRef(null), i = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), x = Chunk658722.find(e => e.key === c), {
     TabBar: g,
     renderSelectedTab: v
   } = (0, Chunk621060.ZP)({
-    tabs: N
-  }, []), O = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk647438.useCallback(e => {
+    tabs: O
+  }, []), N = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk647438.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
-  }, []), I = O ? "Stop Tracking" : "Start Tracking";
+  }, []), I = N ? "Stop Tracking" : "Start Tracking";
   return (0, Chunk951288.jsxs)("div", {
     ref: require,
     className: l()(Chunk866403.panel, Chunk529554.panel),
@@ -155,10 +155,10 @@ function O() {
         text: I,
         children: (0, Chunk951288.jsx)(Chunk481060.hU, {
           size: "sm",
-          variant: O ? "active" : "primary",
-          icon: O ? Chunk481060.fpf : Chunk481060.o1U,
+          variant: N ? "active" : "primary",
+          icon: N ? Chunk481060.fpf : Chunk481060.o1U,
           "aria-label": I,
-          onClick: () => P(!O)
+          onClick: () => P(!N)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.E1j, {
         size: "sm",

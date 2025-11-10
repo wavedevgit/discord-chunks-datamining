@@ -186,7 +186,7 @@ function tm(e) {
   }), S = (0, K.Z)(), {
     updateOpenPopoutRef: E,
     highlightBadge: T,
-    setHighlightBadge: N
+    setHighlightBadge: O
   } = function() {
     let e = r.useRef(null),
       t = r.useCallback(t => {
@@ -212,7 +212,7 @@ function tm(e) {
       highlightBadge: i ? n : true,
       setHighlightBadge: a
     }
-  }(), O = (0, er.A)(p);
+  }(), N = (0, er.A)(p);
   if (null == o) return null;
   let P = x && h !== e9.I_8 && h !== e9.ME && null != h ? h : true;
   return (0, a.jsx)(b.Z, {
@@ -251,11 +251,11 @@ function tm(e) {
       fixed: true,
       ignoreModalClicks: true,
       onRequestClose: () => {
-        u(), N(true)
+        u(), O(true)
       },
       children: e => (E(e), (0, a.jsxs)(g.P3F, ts(tl({
         innerRef: y,
-        style: O
+        style: N
       }, e), {
         onClick: t => {
           var n;
@@ -505,13 +505,13 @@ class tp extends Chunk647438.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, F.Z)(e, t, e9.jXE.ACCOUNT_PANEL), (0, B.v)(N.Z.ACCOUNT, B.d.MIC, n)
+      (0, F.Z)(e, t, e9.jXE.ACCOUNT_PANEL), (0, B.v)(O.Z.ACCOUNT, B.d.MIC, n)
     }), ti(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, U.Z)(e, e9.jXE.ACCOUNT_PANEL), (0, B.v)(N.Z.ACCOUNT, B.d.DEAFEN, !t)
+      (0, U.Z)(e, e9.jXE.ACCOUNT_PANEL), (0, B.v)(O.Z.ACCOUNT, B.d.DEAFEN, !t)
     }), ti(this, "handleOpenAccountSettings", () => {
       this.dismissTooltips(), eU.Z.isConnected() ? (0, eb.openUserSettings)(eg.n.VOICE_AND_VIDEO_PANEL, {
         section: e9.oAB.VOICE
@@ -528,10 +528,10 @@ class tp extends Chunk647438.PureComponent {
           user: t,
           premiumSubscription: this.props.premiumSubscription,
           webBuildOverride: this.props.webBuildOverride,
-          onInteraction: (0, G.u)("UserSettingsCogContextMenu", N.Z.ACCOUNT)
+          onInteraction: (0, G.u)("UserSettingsCogContextMenu", O.Z.ACCOUNT)
         }))
       })
-    }), ti(this, "audioOnInteractionHandler", (0, G.u)("AudioDeviceMenu", N.Z.ACCOUNT)), ti(this, "handleInputAudioContextMenu", (e, t) => {
+    }), ti(this, "audioOnInteractionHandler", (0, G.u)("AudioDeviceMenu", O.Z.ACCOUNT)), ti(this, "handleInputAudioContextMenu", (e, t) => {
       this.dismissTooltips(), (0, f.jW)(e, async () => {
         let {
           default: e
@@ -542,7 +542,7 @@ class tp extends Chunk647438.PureComponent {
           } = (0, ef.G)({
             location: "Account"
           });
-          return (0, a.jsx)(O.Gt, {
+          return (0, a.jsx)(N.Gt, {
             value: t,
             children: (0, a.jsx)(e, {
               onClose: f.Zy,
@@ -560,7 +560,7 @@ class tp extends Chunk647438.PureComponent {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 659580));
-        return () => (0, a.jsx)(O.Gt, {
+        return () => (0, a.jsx)(N.Gt, {
           value: t,
           children: (0, a.jsx)(e, {
             onClose: f.Zy,
@@ -1047,11 +1047,11 @@ function tb(e) {
   }) : W;
   let {
     analyticsLocations: q
-  } = (0, O.ZP)(N.Z.AUDIO_INPUT_BUTTON), Y = (0, e_.Hu)({
-    location: N.Z.AUDIO_INPUT_BUTTON,
+  } = (0, N.ZP)(O.Z.AUDIO_INPUT_BUTTON), Y = (0, e_.Hu)({
+    location: O.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: true
   }), J = (0, ey.av)({
-    location: N.Z.AUDIO_INPUT_BUTTON,
+    location: O.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: true
   });
   r.useEffect(() => () => z(), [S, z]);
@@ -1100,7 +1100,7 @@ function tb(e) {
     } = (0, ef.G)({
       location: "MicrophoneButton"
     });
-  return ed ? (0, a.jsx)(O.Gt, {
+  return ed ? (0, a.jsx)(N.Gt, {
     value: q,
     children: (0, a.jsx)(g.yRy, {
       targetElementRef: E,
@@ -1108,10 +1108,10 @@ function tb(e) {
         let {
           closePopout: t
         } = e;
-        return C(), (0, a.jsx)(O.Gt, {
+        return C(), (0, a.jsx)(N.Gt, {
           value: q,
           children: ed ? (0, a.jsx)(M.Z, {
-            onInteraction: (0, G.u)("AudioDeviceMenu", N.Z.ACCOUNT),
+            onInteraction: (0, G.u)("AudioDeviceMenu", O.Z.ACCOUNT),
             onClose: t,
             maybeRenderPTTCheckbox: true,
             renderInputProfiles: eu.length > 0,
@@ -1120,7 +1120,7 @@ function tb(e) {
             renderInputVolume: true,
             renderSettingsButton: true
           }) : (0, a.jsx)(L.default, {
-            onInteraction: (0, G.u)("AudioDeviceMenu", N.Z.ACCOUNT),
+            onInteraction: (0, G.u)("AudioDeviceMenu", O.Z.ACCOUNT),
             onClose: t,
             renderInputDevices: true,
             renderInputProfiles: eu.length > 0,
@@ -1211,7 +1211,7 @@ function tb(e) {
         })
       }
     })
-  }) : (0, a.jsx)(O.Gt, {
+  }) : (0, a.jsx)(N.Gt, {
     value: q,
     children: (0, a.jsxs)("div", {
       ref: E,
@@ -1300,10 +1300,10 @@ function tb(e) {
                 t === u.z.VOICE_FILTER_EARLY_ACCESS_COACHMARK ? s = (0, a.jsx)(eP.U, {
                   markAsDismissed: i,
                   onCTA: () => $(true)
-                }) : t === u.z.VOICE_FILTER_LAUNCH_COACHMARK ? s = (0, a.jsx)(eO.n, {
+                }) : t === u.z.VOICE_FILTER_LAUNCH_COACHMARK ? s = (0, a.jsx)(eN.n, {
                   markAsDismissed: i,
                   onCTA: () => $(true)
-                }) : t === u.z.VOICE_FILTER_FIRST_USE_COACHMARK && (s = (0, a.jsx)(eN.v, {
+                }) : t === u.z.VOICE_FILTER_FIRST_USE_COACHMARK && (s = (0, a.jsx)(eO.v, {
                   markAsDismissed: i,
                   onCTA: () => $(true)
                 }));
@@ -1386,12 +1386,12 @@ function tv(e) {
     location: "HeadphonesButton"
   }), C = (0, Z.Z)(t, n, i), {
     analyticsLocations: S
-  } = (0, O.ZP)(N.Z.AUDIO_OUTPUT_BUTTON), E = r.useRef(null);
+  } = (0, N.ZP)(O.Z.AUDIO_OUTPUT_BUTTON), E = r.useRef(null);
   r.useEffect(() => () => f(), [h, f]);
   let T = r.useCallback(e => {
     o(e, S)
   }, [o, S]);
-  return y ? (0, a.jsx)(O.Gt, {
+  return y ? (0, a.jsx)(N.Gt, {
     value: S,
     children: (0, a.jsx)(g.yRy, {
       targetElementRef: E,
@@ -1399,10 +1399,10 @@ function tv(e) {
         let {
           closePopout: t
         } = e;
-        return m(), (0, a.jsx)(O.Gt, {
+        return m(), (0, a.jsx)(N.Gt, {
           value: S,
           children: (0, a.jsx)(M.Z, {
-            onInteraction: (0, G.u)("AudioDeviceMenu", N.Z.ACCOUNT),
+            onInteraction: (0, G.u)("AudioDeviceMenu", O.Z.ACCOUNT),
             onClose: t,
             renderOutputDevices: true,
             renderOutputVolume: true,
@@ -1484,7 +1484,7 @@ function tv(e) {
         })
       }
     })
-  }) : (0, a.jsx)(O.Gt, {
+  }) : (0, a.jsx)(N.Gt, {
     value: S,
     children: (0, a.jsx)(e2.Z, {
       plated: null != d,
