@@ -2,7 +2,7 @@
 /** chunk id: 708383, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk893607 = require("./893607.js"),
   Chunk703656 = require("./703656.js"),
   Chunk981631 = require("./981631.js");
-class p extends Chunk647438.Component {
+class h extends Chunk647438.Component {
   componentDidUpdate(e) {
     let {
       location: t
@@ -51,13 +51,13 @@ class p extends Chunk647438.Component {
     return null
   }
 }
-let h = () => (0, Chunk951288.jsxs)(Chunk843611.rs, {
+let p = () => (0, Chunk951288.jsxs)(Chunk843611.rs, {
   children: [(0, Chunk951288.jsx)(Chunk765717.Z, {
     path: Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
       optional: true
     }), ":messageId?"),
-    component: p
+    component: h
   }), (0, Chunk951288.jsx)(Chunk765717.Z, {
-    component: p
+    component: h
   })]
 })

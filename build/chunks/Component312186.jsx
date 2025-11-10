@@ -254,7 +254,7 @@ class Z extends Chunk647438.PureComponent {
           value: 4,
           label: "Out of Memory"
         }],
-        onChange: e => null != e && h.ZP.crash(e)
+        onChange: e => null != e && p.ZP.crash(e)
       })
     })
   }
@@ -292,14 +292,14 @@ function j(e) {
     textChatDisabled: a,
     shouldShowKeybindIndicators: c,
     shouldShowInviteNotification: d
-  } = (0, s.cj)([p.default, y.Z], () => ({
-    avatarSizeMode: p.default.getAvatarSizeMode(),
-    displayNameMode: p.default.getDisplayNameMode(),
-    displayUserMode: p.default.getDisplayUserMode(),
-    notificationPositionMode: p.default.getNotificationPositionMode(),
-    textChatDisabled: y.Z.isNotificationDisabled(O.n0.TextChat),
-    shouldShowKeybindIndicators: p.default.showKeybindIndicators,
-    shouldShowInviteNotification: !y.Z.isNotificationDisabled(O.n0.ActivityInvite)
+  } = (0, s.cj)([h.default, y.Z], () => ({
+    avatarSizeMode: h.default.getAvatarSizeMode(),
+    displayNameMode: h.default.getDisplayNameMode(),
+    displayUserMode: h.default.getDisplayUserMode(),
+    notificationPositionMode: h.default.getNotificationPositionMode(),
+    textChatDisabled: y.Z.isNotificationDisabled(b.n0.TextChat),
+    shouldShowKeybindIndicators: h.default.showKeybindIndicators,
+    shouldShowInviteNotification: !y.Z.isNotificationDisabled(b.n0.ActivityInvite)
   })), u = (0, m.Z)({
     location: "Overlay Settings"
   });

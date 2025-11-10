@@ -89,16 +89,16 @@ let N = Chunk647438.memo(function(e) {
     let n = (0, r.e7)([x.Z], () => !p.isPlatformEmbedded || x.Z.isWindowHandleInitialized()),
       a = (0, r.e7)([d.Z], () => d.Z.getWindow(e)),
       _ = (0, r.e7)([h.default], () => h.default.getFocusedPID()),
-      l = o.useMemo(() => !p.isPlatformEmbedded || null != _ && _ !== m.UNSET_PID, [_]),
+      l = o.useMemo(() => !p.isPlatformEmbedded || null != _ && _ !== C.UNSET_PID, [_]),
       [u, g] = o.useState(false),
       I = o.useRef(false),
-      y = o.useCallback(() => {
+      w = o.useCallback(() => {
         let e = x.Z.getTargetPID(),
           n = null != f.Z.getVoiceChannelId();
         i.Z.track(T.rMx.OVERLAY_INITIALIZED, {
           voice_widget_connected: n,
           text_widget_connected: x.Z.isPinned(T.Odu.TEXT),
-          overlay_render_method: v.gl[w.default.getOverlayMethod(e)],
+          overlay_render_method: v.gl[y.default.getOverlayMethod(e)],
           unpinned_widget_types: s.Z.getAllUnpinnedPinnedWidgets(t)
         }), (0, B.ry)()
       }, [t]),
@@ -121,8 +121,8 @@ let N = Chunk647438.memo(function(e) {
         }
         await new Promise(t => {
           e.setTimeout(() => t(), 100)
-        }), W.current || (g(true), y())
-      }, [y]),
+        }), W.current || (g(true), w())
+      }, [w]),
       D = o.useRef(false);
     o.useEffect(() => {
       if (!I.current && ((0, S.Z)("hasUseEffectFired", true), (0, S.Z)("trackedPidFocused", l), n)) {
@@ -136,13 +136,13 @@ let N = Chunk647438.memo(function(e) {
     }, [A, l, e, a, n]), (0, c.zq)(() => {
       clearInterval(N.current), W.current = true
     });
-    let E = (0, r.e7)([b.Z], () => b.Z.windowSize(null != a ? (0, C.ZY)(a) : true)),
+    let E = (0, r.e7)([b.Z], () => b.Z.windowSize(null != a ? (0, m.ZY)(a) : true)),
       L = (0, r.e7)([x.Z], () => x.Z.getFocusedWindowHandle());
     return o.useEffect(() => {
       if (null == a || !u || a.innerHeight !== E.height || a.innerWidth !== E.width) return;
       let e = a.requestAnimationFrame(() => {
         e = a.requestAnimationFrame(() => {
-          i.Z.overlayUIFocusedPid(null != _ ? _ : m.UNSET_PID, L)
+          i.Z.overlayUIFocusedPid(null != _ ? _ : C.UNSET_PID, L)
         })
       });
       return () => {
@@ -156,6 +156,6 @@ let N = Chunk647438.memo(function(e) {
     windowKey: n,
     title: "Discord Overlay",
     hideModals: g,
-    children: [(0, a.jsx)(y.Z, {}), (0, a.jsx)(_.Co, {})]
+    children: [(0, a.jsx)(w.Z, {}), (0, a.jsx)(_.Co, {})]
   }) : null
 })

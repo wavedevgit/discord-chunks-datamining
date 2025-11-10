@@ -66,19 +66,19 @@ function y(e) {
     case u.nc.GO_LIVE_VOICE: {
       let {
         game: t,
-        voiceGuild: h
+        voiceGuild: p
       } = e, {
         trackView: y,
-        trackClick: O
+        trackClick: b
       } = (0, c.R)(u.n0.GoLiveNudge, {
         notif_type: u.n0.GoLiveNudge
       });
       return {
         icon: n(847881),
         title: null,
-        body: p.intl.formatToPlainString(p.t.z9znpa, {
+        body: h.intl.formatToPlainString(h.t.z9znpa, {
           game: t.name,
-          server: h.name
+          server: p.name
         }),
         hint: () => (0, i.jsx)(m, {}),
         renderFooter: () => (0, i.jsx)(m, {}),
@@ -86,12 +86,12 @@ function y(e) {
           y()
         },
         onNotificationClick: (e, t) => {
-          O("unlock");
+          b("unlock");
           let c = (0, a.getPID)();
           s.Z.updateNotificationStatus(t);
           let u = o.default.isOverlayOOPEnabledForPid(c);
           if (u ? s.Z.setInputLocked(false, c) : s.Z.setInstanceLocked(false), null == l.default.getCurrentUser()) return;
-          let p = u ? {
+          let h = u ? {
             contextKey: r.u1M
           } : true;
           (0, r.ZDy)(async () => {
@@ -101,13 +101,13 @@ function y(e) {
             return t => (0, i.jsx)(e, g(f({}, t), {
               sourcePID: c,
               selectSource: false,
-              guildId: h.id,
+              guildId: p.id,
               analyticsLocation: d.Sbl.OVERLAY_NUDGE
             }))
-          }, p)
+          }, h)
         },
         onDismissClick: () => {
-          O("dismiss")
+          b("dismiss")
         }
       }
     }
@@ -116,14 +116,14 @@ function y(e) {
         game: t
       } = e, {
         trackView: l,
-        trackClick: h
+        trackClick: p
       } = (0, c.R)(u.n0.GoLiveNonVoiceNudge, {
         notif_type: u.n0.GoLiveNonVoiceNudge
       });
       return {
         icon: n(847881),
         title: null,
-        body: p.intl.formatToPlainString(p.t["0SVWgF"], {
+        body: h.intl.formatToPlainString(h.t["0SVWgF"], {
           game: t.name
         }),
         hint: () => (0, i.jsx)(m, {}),
@@ -132,7 +132,7 @@ function y(e) {
           l()
         },
         onNotificationClick: (e, t) => {
-          h("unlock");
+          p("unlock");
           let l = (0, a.getPID)();
           s.Z.updateNotificationStatus(t);
           let c = o.default.isOverlayOOPEnabledForPid(l);
@@ -153,7 +153,7 @@ function y(e) {
           }, u)
         },
         onDismissClick: () => {
-          h("dismiss")
+          p("dismiss")
         }
       }
     }

@@ -192,7 +192,7 @@ class el extends Chunk647438.Component {
         let {
           channel: t
         } = this.props, n = M.Z.getLastEditableMessage(t.id);
-        null != n && h.Z.startEditMessageRecord(t.id, n)
+        null != n && p.Z.startEditMessageRecord(t.id, n)
       }
     }), en(this, "handleTextareaChange", (e, t, n) => {
       let {
@@ -200,7 +200,7 @@ class el extends Chunk647438.Component {
           id: i
         }
       } = this.props;
-      p.Z.changeDraft(i, this.state.textValue, R.d.ChannelMessage), "" !== t ? g.Z.startTyping(i) : g.Z.stopTyping(i), this.setState({
+      h.Z.changeDraft(i, this.state.textValue, R.d.ChannelMessage), "" !== t ? g.Z.startTyping(i) : g.Z.stopTyping(i), this.setState({
         textValue: t,
         richValue: n
       })
@@ -215,7 +215,7 @@ class el extends Chunk647438.Component {
       return 0 === t.length ? Promise.resolve({
         shouldClear: false,
         shouldRefocus: true
-      }) : (0, F.v)({
+      }) : (0, H.v)({
         openWarningPopout: e => this.setState({
           contentWarningProps: e
         }),
@@ -234,10 +234,10 @@ class el extends Chunk647438.Component {
           shouldClear: false,
           shouldRefocus: false
         };
-        let l = h.Z.getSendMessageOptionsForReply(i);
-        return (h.Z.sendMessage(n.id, I.ZP.parse(n, t), true, er(ei({}, l), {
+        let l = p.Z.getSendMessageOptionsForReply(i);
+        return (p.Z.sendMessage(n.id, I.ZP.parse(n, t), true, er(ei({}, l), {
           location: $.dy.OVERLAY
-        })), this.setState((0, x.H2)()), (0, N.A6)(n.id), r) ? (f.Z.deactivateAllRegions(), {
+        })), this.setState((0, x.H2)()), (0, T.A6)(n.id), r) ? (f.Z.deactivateAllRegions(), {
           shouldClear: false,
           shouldRefocus: false
         }) : {
@@ -303,14 +303,14 @@ class ea extends Chunk647438.PureComponent {
       activated: c,
       chatKeybind: d,
       pinned: u,
-      isPreviewingInGame: p,
-      dragging: h,
+      isPreviewingInGame: h,
+      dragging: p,
       pendingReply: f
     } = this.props;
     if (null == exports) return null;
     let g = a || Chunk430742,
       y = !Chunk120356 && null != exports && exports.isNSFW(),
-      O = !Chunk144144 || Chunk442837;
+      b = !Chunk144144 || Chunk442837;
     return e = Chunk655687 && null != Chunk512722 ? (0, Chunk951288.jsx)(Chunk340501.Z, {
       guild: Chunk512722,
       channelId: exports.id
@@ -389,16 +389,16 @@ class ea extends Chunk647438.PureComponent {
     r ? c = Q.t_t.IN_GAME_ACTIVE : n && t || s ? c = Q.t_t.IN_GAME_TEXT : n && (c = Q.t_t.PINNED);
     let d = t && !r || s,
       u = n && (d || r),
-      p = n && r,
-      h = n && d && !r,
+      h = n && r,
+      p = n && d && !r,
       f = (0, Y.Z)(l);
     return (0, i.jsx)(q.ZP, {
       className: o()(f, {
         [et.widgetWrapper]: !n,
         [et.widgetWrapperPinned]: n,
-        [et.locked]: h,
+        [et.locked]: p,
         [et.inGame]: u,
-        [et.inGameActive]: p,
+        [et.inGameActive]: h,
         [et.pinned]: n,
         "overlay-unlocked": !t
       }, a),
@@ -493,30 +493,30 @@ function ec(e) {
     s = (0, c.e7)([z.Z], () => z.Z.getChannelId(r)),
     o = (0, c.e7)([k.Z], () => k.Z.getChannel(s)),
     l = (0, c.e7)([W.ZP], () => W.ZP.getOverlayChatKeybind()),
-    a = null != l ? (0, H.BB)(l.shortcut, true) : "]",
-    [d, u, p] = (0, c.Wu)([G.default], () => [G.default.getTextWidgetOpacity(), G.default.getActiveRegions(), !t && G.default.isPreviewingInGame()]),
-    h = (0, c.e7)([L.Z], () => L.Z.getGuild(r)),
+    a = null != l ? (0, F.BB)(l.shortcut, true) : "]",
+    [d, u, h] = (0, c.Wu)([G.default], () => [G.default.getTextWidgetOpacity(), G.default.getActiveRegions(), !t && G.default.isPreviewingInGame()]),
+    p = (0, c.e7)([L.Z], () => L.Z.getGuild(r)),
     f = (0, c.e7)([A.Z], () => null != r && A.Z.didAgree(r)),
     g = null != o && o.isPrivate() ? o.getRecipientId() : null,
-    m = (0, c.e7)([T.Z], () => null != s ? T.Z.getPendingReply(s) : true),
-    _ = (0, c.e7)([U.default], () => null != g ? U.default.getUser(g) : null),
+    m = (0, c.e7)([N.Z], () => null != s ? N.Z.getPendingReply(s) : true),
+    v = (0, c.e7)([U.default], () => null != g ? U.default.getUser(g) : null),
     {
-      placeholder: b
+      placeholder: _
     } = (0, y.Z)({
       channel: o
     });
-  return null != o && null != h && Q.TPd.GUILD_THREADS_ONLY.has(o.type) ? (0, i.jsx)(O.Z, {}) : (0, i.jsx)(ea, ei({
-    guild: h,
+  return null != o && null != p && Q.TPd.GUILD_THREADS_ONLY.has(o.type) ? (0, i.jsx)(b.Z, {}) : (0, i.jsx)(ea, ei({
+    guild: p,
     channel: o,
-    user: _,
+    user: v,
     opacity: d,
     nsfwAgree: f,
     chatKeybind: a,
     activated: u.has(Q.O0n.TEXT_WIDGET),
-    isPreviewingInGame: p,
+    isPreviewingInGame: h,
     pendingReply: m,
     contained: t,
-    placeholder: b,
+    placeholder: _,
     widget: Q.Odu.TEXT
   }, n))
 }

@@ -2,28 +2,26 @@
 /** chunk id: 32300, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F3: () => x,
-  J0: () => O,
+  F3: () => w,
   NW: () => d,
   OV: () => l,
-  RD: () => v,
+  RD: () => y,
   Rb: () => u,
   Se: () => m,
-  Sy: () => D,
+  Sy: () => P,
   XE: () => f,
   YB: () => b,
   Yo: () => _,
-  ZU: () => N,
-  aq: () => T,
+  ZU: () => A,
+  aq: () => I,
   dj: () => p,
-  eV: () => R,
+  eV: () => C,
   hS: () => g,
-  hb: () => w,
-  lj: () => S,
+  hb: () => R,
+  lj: () => v,
   mB: () => E,
   o4: () => c,
-  qA: () => y,
-  tU: () => C,
+  tU: () => T,
   td: () => h
 });
 var Chunk348327 = require("./348327.js"),
@@ -199,44 +197,10 @@ function b(e) {
     autoTrackExposure: t
   }).enabled
 }
-let y = (0, Chunk818083.B)({
-  kind: "user",
-  id: "2025-07_overlay_oop_nudge",
-  label: "Overlay OOP Nudge",
-  commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN,
-  defaultConfig: {
-    useContextualNudge: false,
-    disableNudge: false
-  },
-  treatments: [{
-    id: 1,
-    label: "Enable Contextual Nudge",
-    config: {
-      useContextualNudge: true,
-      disableNudge: false
-    }
-  }, {
-    id: 2,
-    label: "No Nudge",
-    config: {
-      useContextualNudge: false,
-      disableNudge: true
-    }
-  }]
-});
-
-function O(e) {
-  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return y.getCurrentConfig({
-    location: e
-  }, {
-    autoTrackExposure: t
-  })
-}
-var v = function(e) {
+var y = function(e) {
   return e[e.GREEN_BUTTON_WITH_TEXT = 0] = "GREEN_BUTTON_WITH_TEXT", e[e.GRAY_BUTTON_WITH_TEXT = 1] = "GRAY_BUTTON_WITH_TEXT", e[e.SINGLE_ICON_BUTTON = 2] = "SINGLE_ICON_BUTTON", e
 }({});
-let I = (0, Chunk427164.le)({
+let O = (0, Chunk427164.le)({
   name: "2025-08-overlay-stream-watch-nudge",
   kind: "user",
   defaultConfig: {
@@ -259,18 +223,18 @@ let I = (0, Chunk427164.le)({
   }
 });
 
-function S(e) {
-  return I.getConfig({
+function v(e) {
+  return O.getConfig({
     location: e
   })
 }
 
-function T(e) {
-  return I.useConfig({
+function I(e) {
+  return O.useConfig({
     location: e
   })
 }
-let A = (0, Chunk818083.B)({
+let S = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-10_overlay_v3_one_click_go_live",
   label: "Overlay V3 One Click Go Live",
@@ -295,15 +259,15 @@ let A = (0, Chunk818083.B)({
   }]
 });
 
-function C(e) {
+function T(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return A.getCurrentConfig({
+  return S.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
-let N = (0, Chunk818083.B)({
+let A = (0, Chunk818083.B)({
   id: "2025-10_overlay_default_keybind",
   label: "Overlay Default Keybind",
   kind: "user",
@@ -331,15 +295,15 @@ let N = (0, Chunk818083.B)({
   }]
 });
 
-function R(e) {
+function C(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return N.getCurrentConfig({
+  return A.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
-let P = (0, Chunk818083.B)({
+let N = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-10_overlay_negative_widget_testing",
   label: "Overlay Negative Widget Testing",
@@ -403,22 +367,22 @@ let P = (0, Chunk818083.B)({
   }]
 });
 
-function w(e) {
-  let t = D(e, false);
-  if (i()(P.definition.defaultConfig, t)) return "control";
-  let n = P.definition.treatments.find(e => i()(e.config, t));
+function R(e) {
+  let t = P(e, false);
+  if (i()(N.definition.defaultConfig, t)) return "control";
+  let n = N.definition.treatments.find(e => i()(e.config, t));
   return null == n ? "control" : "treatment-".concat(n.id)
 }
 
-function D(e) {
+function P(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return P.getCurrentConfig({
+  return N.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
   })
 }
 
-function x() {
-  S("OVERLAY_INITIALIZED"), C("OVERLAY_INITIALIZED"), D("OVERLAY_INITIALIZED")
+function w() {
+  v("OVERLAY_INITIALIZED"), T("OVERLAY_INITIALIZED"), P("OVERLAY_INITIALIZED")
 }

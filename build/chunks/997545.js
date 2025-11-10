@@ -562,10 +562,10 @@ class x extends Chunk839548.Z {
     }
   }
   clearGoLiveDevices() {
-    null != this.goLiveSourceIdentifier && this.setDesktopEncodingOptions(1280, 720, 30), null != this.conn.clearGoLiveDevices && this.conn.clearGoLiveDevices()
+    null != this.conn.clearGoLiveDevices && this.conn.clearGoLiveDevices()
   }
   clearDesktopSource() {
-    null != this.goLiveSourceIdentifier && this.setDesktopEncodingOptions(1280, 720, 30), this.goLiveSourceIdentifier = null, null != this.conn.clearDesktopSource ? this.conn.clearDesktopSource() : this.conn.setDesktopSource("", false, "")
+    this.goLiveSourceIdentifier = null, null != this.conn.clearDesktopSource ? this.conn.clearDesktopSource() : this.conn.setDesktopSource("", false, "")
   }
   setDesktopSourceStatusCallback(e) {
     var t, n;

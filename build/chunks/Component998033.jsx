@@ -2,7 +2,7 @@
 /** chunk id: 998033, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,18 +21,18 @@ var Chunk13245 = require("./13245.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(e, t, n, O) {
-  var _;
+function b(e, t, n, b) {
+  var v;
   let {
-    icon: b,
-    title: v,
+    icon: _,
+    title: O,
     body: E
   } = (0, s.Xi)(e, t, n), {
     trackView: x,
     trackClick: S
   } = (0, f.R)(m.n0.TextChat, {
     notif_type: m.n0.TextChat,
-    notif_user_id: null == (_ = t.author) ? true : _.id,
+    notif_user_id: null == (v = t.author) ? true : v.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,
@@ -40,8 +40,8 @@ function O(e, t, n, O) {
     channel_type: e.type
   });
   return {
-    icon: b,
-    title: v,
+    icon: _,
+    title: O,
     body: E,
     renderFooter: e => e ? (0, i.jsx)("div", {
       style: {
@@ -51,12 +51,12 @@ function O(e, t, n, O) {
     }) : null,
     maxBodyLines: 2,
     onNotificationShow: () => {
-      O && (0, a.GN)(c.Ay, c.yk), x()
+      b && (0, a.GN)(c.Ay, c.yk), x()
     },
     onNotificationClick: () => {
-      if (o.default.isOverlayOOPEnabledForPid((0, h.getPID)())) {
-        let n = (0, h.getPID)();
-        d.default.isInstanceLocked() ? (S("unlock"), r.Z.setInputLocked(false, n)) : (S("jump"), (0, l.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && p.ZP.focus())
+      if (o.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {
+        let n = (0, p.getPID)();
+        d.default.isInstanceLocked() ? (S("unlock"), r.Z.setInputLocked(false, n)) : (S("jump"), (0, l.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.ZP.focus())
       } else(0, l.uL)(g.Z5c.CHANNEL(e.guild_id, e.id)), S("jump"), d.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {

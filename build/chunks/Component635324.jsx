@@ -31,7 +31,7 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
   }(e.authorizeProps, ["authorizations", "permissions"]);
   let u = "OAuth2Authorize_".concat(t, "_").concat(d.guildId, "_").concat(d.channelId);
 
-  function p(e) {
+  function h(e) {
     let {
       location: n
     } = e;
@@ -41,9 +41,9 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
       location: n
     })
   }
-  let h = l.Hn;
+  let p = l.Hn;
   try {
-    h = r.vB(null != c ? c : 0)
+    p = r.vB(null != c ? c : 0)
   } catch (e) {}(0, s.ZDy)(async () => {
     let {
       OAuth2AuthorizeModal: e
@@ -69,8 +69,8 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
         return e
       }({}, t, d), r = r = {
         authorizations: new Map(a),
-        permissions: h,
-        callback: p
+        permissions: p,
+        callback: h
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -85,7 +85,7 @@ __OVERLAY__ && Chunk570140.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", fu
   }, {
     modalKey: u,
     onCloseRequest: () => {
-      (0, s.Mr3)(u), p({})
+      (0, s.Mr3)(u), h({})
     }
   })
 })

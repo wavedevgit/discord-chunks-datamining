@@ -19,7 +19,7 @@ function c(e, t) {
     d = (0, r.ov)(e),
     {
       trackView: u,
-      trackClick: p
+      trackClick: h
     } = (0, s.R)(l.n0.ActivityUserJoin, {
       notif_type: l.n0.ActivityUserJoin,
       notif_user_id: e.id,
@@ -35,7 +35,7 @@ function c(e, t) {
       u()
     },
     onDismissClick: () => {
-      p("dismiss")
+      h("dismiss")
     }
   }
 }

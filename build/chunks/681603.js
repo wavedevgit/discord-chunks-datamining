@@ -23,7 +23,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk145597 = require("./145597.js"),
   Chunk981631 = require("./981631.js");
 
-function v(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -52,28 +52,28 @@ class E extends Chunk647438.Component {
       postableChannelCount: s
     } = this.props;
     if (null != t && (t !== e.selectedGuild || i && !e.isMemberPending)) {
-      var u, p;
-      (0, c.Q)(b.rMx.GUILD_VIEWED, (u = v({}, i ? {
+      var u, h;
+      (0, c.Q)(_.rMx.GUILD_VIEWED, (u = O({}, i ? {
         is_pending: i,
         preview_enabled: r
-      } : {}), p = p = {
+      } : {}), h = h = {
         postable_channels: s
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(h)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(p)).forEach(function(e) {
-        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(p, e))
-      }), u)), (0, a.a)(b.rMx.GUILD_VIEWED_CLICKSTREAM, {
+      })(Object(h)).forEach(function(e) {
+        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(h, e))
+      }), u)), (0, a.a)(_.rMx.GUILD_VIEWED_CLICKSTREAM, {
         guildId: t
       })
     }
     if (null != n && n !== e.selectedChannel) {
       let e = (0, l.K)(d.Z.getChannel(n), true);
-      (0, c.Q)(b.rMx.CHANNEL_OPENED, v({}, e, (0, o.$H)(n))), (0, a.a)(b.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      (0, c.Q)(_.rMx.CHANNEL_OPENED, O({}, e, (0, o.$H)(n))), (0, a.a)(_.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: n
       })
     }
@@ -93,7 +93,7 @@ let x = Chunk442837.ZP.connectStores([Chunk914010.Z, Chunk944486.Z, Chunk430824.
       let {
         channel: t
       } = e;
-      return f.Z.can(r.$e(b.Plq.SEND_MESSAGES, b.Plq.VIEW_CHANNEL), t)
+      return f.Z.can(r.$e(_.Plq.SEND_MESSAGES, _.Plq.VIEW_CHANNEL), t)
     }).length : 0,
     d = null != Chunk731429 && null != Chunk647438 && null != (n = null == (e = Chunk271383.ZP.getMember(Chunk647438, Chunk731429.id)) ? true : module.isPending) && require;
   return {

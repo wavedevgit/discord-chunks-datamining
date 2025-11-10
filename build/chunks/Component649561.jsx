@@ -40,8 +40,8 @@ function w(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let N = 10 * Chunk70956.Z.Millis.SECOND,
-  T = new Chunk579092.Yd("LegacyOverlayErrorBoundary");
+let T = 10 * Chunk70956.Z.Millis.SECOND,
+  N = new Chunk579092.Yd("LegacyOverlayErrorBoundary");
 
 function D() {
   let e = (0, Chunk145597.getPID)(),
@@ -59,7 +59,7 @@ function D() {
 }
 class k extends Chunk647438.PureComponent {
   componentDidMount() {
-    this.notificationTimer = setTimeout(this.hideNotification, N), Chunk13245.Z.track(Chunk981631.rMx.NOTIFICATION_VIEWED, {
+    this.notificationTimer = setTimeout(this.hideNotification, T), Chunk13245.Z.track(Chunk981631.rMx.NOTIFICATION_VIEWED, {
       notif_type: Chunk987650.n0.OverlayCrashed
     })
   }
@@ -83,13 +83,13 @@ class k extends Chunk647438.PureComponent {
       observe: false,
       children: (0, Chunk951288.jsx)(Chunk481060.f6W, {
         theme: Chunk981631.BRd.DARK,
-        children: r => (0, i.jsxs)(h.P3F, {
+        children: r => (0, i.jsxs)(p.P3F, {
           innerRef: this.contentDomRef,
           className: o()(r, P.container),
           onClick: e => e.stopPropagation(),
           children: [(0, i.jsx)(y.ZP, {
             expand: true,
-            icon: (0, i.jsx)(_.Z, {
+            icon: (0, i.jsx)(v.Z, {
               width: 40,
               height: 40,
               className: P.notificationIcon
@@ -156,19 +156,19 @@ let R = a().throttle(() => {
 });
 class A extends Chunk647438.PureComponent {
   componentDidCatch(e, t) {
-    let n = (0, O.s1)().location;
+    let n = (0, b.s1)().location;
     this.setState({
       error: e,
       info: t
-    }), T.error("ErrorBoundary caught error: ".concat(e.message), {
+    }), N.error("ErrorBoundary caught error: ".concat(e.message), {
       error: e,
       info: t
     });
-    let i = (0, v.getPID)(),
-      r = (0, v.getRPCAuthToken)();
+    let i = (0, O.getPID)(),
+      r = (0, O.getRPCAuthToken)();
     (0, g.lW)({
       type: C.BmY.DISPATCH,
-      pid: (0, v.getPID)(),
+      pid: (0, O.getPID)(),
       token: r,
       payloads: [{
         type: "OVERLAY_CRASHED",

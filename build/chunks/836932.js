@@ -14,16 +14,16 @@ var Chunk224706 = require("./224706.js"),
 
 function d(e, t, n, d, u) {
   if (null == t.activity) return null;
-  let p = t.activity.type,
-    h = u.session_id;
-  if (null == h) return null;
+  let h = t.activity.type,
+    p = u.session_id;
+  if (null == p) return null;
   let {
     icon: f,
     title: g,
     body: m
   } = (0, s.Xi)(e, t, n), {
     trackView: y,
-    trackClick: O
+    trackClick: b
   } = (0, l.R)(a.n0.ActivityInvite, {
     notif_type: a.n0.ActivityInvite,
     notif_user_id: n.id,
@@ -32,7 +32,7 @@ function d(e, t, n, d, u) {
     guild_id: e.guild_id,
     channel_id: e.id,
     channel_type: e.type,
-    activity_type: p,
+    activity_type: h,
     activity_name: u.name
   });
   return {
@@ -47,14 +47,14 @@ function d(e, t, n, d, u) {
     onConfirmClick: (s, o) => {
       i.Z.join({
         userId: n.id,
-        sessionId: h,
+        sessionId: p,
         applicationId: d.id,
         channelId: e.id,
         messageId: t.id
-      }), r.Z.updateNotificationStatus(o), O("join")
+      }), r.Z.updateNotificationStatus(o), b("join")
     },
     onDismissClick: () => {
-      O("dismiss")
+      b("dismiss")
     }
   }
 }

@@ -2,7 +2,7 @@
 /** chunk id: 194295, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk278323 = require("./278323.js"),
   Chunk13245 = require("./13245.js"),
@@ -14,8 +14,8 @@ var Chunk278323 = require("./278323.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e, t, n, p) {
-  let h = t.username,
+function h(e, t, n, h) {
+  let p = t.username,
     f = u.intl.format(u.t.VDODnv, {
       username: "",
       game: n.name
@@ -32,7 +32,7 @@ function p(e, t, n, p) {
     });
   return {
     icon: g,
-    title: h,
+    title: p,
     body: f,
     hint: e => (0, o.QR)(e, (0, a.P)(), u.t.Odi54y),
     confirmText: u.intl.string(u.t["fgP/wX"]),
@@ -44,7 +44,7 @@ function p(e, t, n, p) {
       i.Z.sendActivityInvite({
         channelId: e.id,
         type: c.mFx.JOIN,
-        activity: p,
+        activity: h,
         location: l.default.isInstanceLocked() ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
       }), y("join"), r.Z.updateNotificationStatus(n)
     },

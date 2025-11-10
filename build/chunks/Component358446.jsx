@@ -44,9 +44,9 @@ function g(e) {
   return {
     icon: null,
     body: (0, i.jsxs)("div", {
-      className: h.notificationBody,
+      className: p.notificationBody,
       children: [(0, i.jsx)("div", {
-        className: h.iconContainer,
+        className: p.iconContainer,
         children: (0, i.jsx)(s.S6n, {
           size: "custom",
           color: "currentColor",
@@ -55,7 +55,7 @@ function g(e) {
         })
       }), (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: p.intl.string(p.t.EFRNtK)
+        children: h.intl.string(h.t.EFRNtK)
       })]
     }),
     onDismissClick: (e, n) => {

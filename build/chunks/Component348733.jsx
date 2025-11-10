@@ -23,19 +23,19 @@ function y(e) {
   let {
     locked: t,
     keybind: n
-  } = e, s = r.useRef(null), p = (0, a.Wu)([c.Z], () => c.Z.getNotifications()), y = (0, a.e7)([d.default], () => d.default.getNotificationPositionMode());
-  if ((0, a.e7)([h.Z], () => h.Z.isNotificationDisabled(f.n0.TextChat)) || y === g._vf.DISABLED) return null;
-  let _ = p.filter(e => !t || e.status !== g._1z.TIMED_OUT),
-    b = (0, l.groupBy)(_, e => e.type);
+  } = e, s = r.useRef(null), h = (0, a.Wu)([c.Z], () => c.Z.getNotifications()), y = (0, a.e7)([d.default], () => d.default.getNotificationPositionMode());
+  if ((0, a.e7)([p.Z], () => p.Z.isNotificationDisabled(f.n0.TextChat)) || y === g._vf.DISABLED) return null;
+  let v = h.filter(e => !t || e.status !== g._1z.TIMED_OUT),
+    _ = (0, l.groupBy)(v, e => e.type);
   return (0, i.jsx)(u.Z, {
     contentDomRef: s,
     observeInterval: 200,
     children: (0, i.jsx)("div", {
       ref: s,
       className: o()(m.container, m[y]),
-      children: Object.entries(b).map(e => {
+      children: Object.entries(_).map(e => {
         let [r, s] = e;
-        return 0 === s.length ? null : (0, i.jsx)(O, {
+        return 0 === s.length ? null : (0, i.jsx)(b, {
           locked: t,
           keybind: n,
           position: y,
@@ -46,7 +46,7 @@ function y(e) {
   })
 }
 
-function O(e) {
+function b(e) {
   let {
     notification: t,
     position: n,
@@ -55,7 +55,7 @@ function O(e) {
   } = e;
   return (0, i.jsx)("div", {
     className: m.notificationGroup,
-    children: (0, i.jsx)(p.Z, {
+    children: (0, i.jsx)(h.Z, {
       zIndex: 100,
       position: n,
       notification: t,

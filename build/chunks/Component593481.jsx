@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   QR: () => y,
-  Yj: () => O,
-  ZP: () => b
+  Yj: () => b,
+  ZP: () => _
 });
 var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,7 +16,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk866497 = require("./866497.js"),
   Chunk197571 = require("./197571.js");
 
-function h(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,11 +44,11 @@ let f = e => e.stopPropagation(),
       }, n)
     })
   }),
-  O = (e, t) => (0, r.jsx)("div", {
+  b = (e, t) => (0, r.jsx)("div", {
     className: u.hintSubtleText,
     children: t
   });
-class _ extends(i = Chunk647438.PureComponent) {
+class v extends(i = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     let {
       expand: n
@@ -204,25 +204,25 @@ class _ extends(i = Chunk647438.PureComponent) {
     })
   }
   constructor(e) {
-    super(e), h(this, "handleDismiss", e => {
+    super(e), p(this, "handleDismiss", e => {
       e.stopPropagation();
       let {
         onDismissClick: t
       } = this.props;
       null == t || t(e)
-    }), h(this, "handleConfirmClick", e => {
+    }), p(this, "handleConfirmClick", e => {
       e.stopPropagation();
       let {
         onConfirmClick: t
       } = this.props;
       null == t || t(e)
-    }), h(this, "handleCancelClick", e => {
+    }), p(this, "handleCancelClick", e => {
       e.stopPropagation();
       let {
         onCancelClick: t
       } = this.props;
       null == t || t(e)
-    }), h(this, "handleMouseEnter", () => {
+    }), p(this, "handleMouseEnter", () => {
       this.props.disabled || this.setState({
         expanded: true
       })
@@ -235,9 +235,9 @@ class _ extends(i = Chunk647438.PureComponent) {
     }
   }
 }
-h(_, "defaultProps", {
+p(v, "defaultProps", {
   maxBodyLines: true,
   expand: false,
   disabled: false
 });
-let b = _
+let _ = v

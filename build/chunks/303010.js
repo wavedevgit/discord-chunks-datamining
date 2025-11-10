@@ -1,14 +1,9 @@
-/** Chunk was on 63141 **/
-/** chunk id: 303010, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** Chunk was on 27278 **/
+/** chunk id: 303010, original params: e,n,t (module,exports,require) **/
 module.exports = {
   overlayBackgroundNux: "overlayBackgroundNux__3db18",
-  overlayInprocessBackgroundNux: "overlayInprocessBackgroundNux__3db18",
   mainContainer: "mainContainer__3db18",
   mainTitleContainer: "mainTitleContainer__3db18",
   widgetCalloutContainer: "widgetCalloutContainer__3db18",
-  widgetCallout: "widgetCallout__3db18",
-  nuxImage: "nuxImage__3db18",
-  mainTitleBody: "mainTitleBody__3db18",
-  mainTitle: "mainTitle__3db18"
+  widgetCallout: "widgetCallout__3db18"
 }

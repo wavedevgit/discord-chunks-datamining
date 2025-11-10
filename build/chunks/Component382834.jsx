@@ -1,10 +1,11 @@
 /** Chunk was on 1272 **/
 /** chunk id: 382834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => m
+  d: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk813820 = require("./813820.js"),
   Chunk907862 = require("./907862.js"),
   Chunk100527 = require("./100527.js"),
   Chunk336197 = require("./336197.js"),
@@ -16,17 +17,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk398300 = require("./398300.js");
-let m = e => {
+let _ = e => {
+  var t;
   let {
-    targetElementRef: t
-  } = e, n = true === (0, i.e7)([o.default], () => c.ZP.isPremiumExactly(o.default.getCurrentUser(), p.PremiumTypes.TIER_2)) ? h.intl.string(h.t.CMKNhr) : h.intl.string(h.t.E1ONHQ);
-  return (0, r.jsx)(l.J2, {
-    targetElementRef: t,
-    title: h.intl.string(h.t["V8J+16"]),
-    body: n,
+    targetElementRef: n
+  } = e, _ = (0, i.e7)([c.default], () => c.default.getCurrentUser()), b = false === u.ZP.isPremiumExactly(_, f.PremiumTypes.TIER_2), E = (null == _ || null == (t = _.premiumState) ? true : t.premiumSource) === l.d3.FRACTIONAL_NITRO && (null == _ ? true : _.premiumState.premiumSubscriptionType) !== l.W$.TIER_2, O = true === (null == _ || b || E) ? g.intl.string(g.t.E1ONHQ) : g.intl.string(g.t.CMKNhr);
+  return (0, r.jsx)(a.J2, {
+    targetElementRef: n,
+    title: g.intl.string(g.t["V8J+16"]),
+    body: O,
     graphic: {
       type: "image",
-      src: g.Z
+      src: m.Z
     },
     badge: {
       type: "beta",
@@ -39,13 +41,13 @@ let m = e => {
       align: "start"
     },
     actions: [{
-      text: h.intl.string(h.t["CDdYB/"]),
+      text: g.intl.string(g.t["CDdYB/"]),
       onClick: () => {
-        (0, s.Z)(f.Z5c.NITRO_HOME), (0, u.wQ)({
-          analyticsLocations: [a.Z.HOME_PAGE_PREMIUM_TAB]
-        }), (0, d.ow)()
+        (0, o.Z)(h.Z5c.NITRO_HOME), (0, d.wQ)({
+          analyticsLocations: [s.Z.HOME_PAGE_PREMIUM_TAB]
+        }), (0, p.ow)()
       }
     }],
-    onRequestClose: d.ow
+    onRequestClose: p.ow
   })
 }
