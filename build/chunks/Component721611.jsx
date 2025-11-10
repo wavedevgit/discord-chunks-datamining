@@ -1,19 +1,21 @@
 /** Chunk was on 36415 **/
 /** chunk id: 721611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
+  Chunk512722 = require("./512722.js"),
+  c = require.n(Chunk512722),
   Chunk509442 = require("./509442.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk996435 = require("./996435.js"),
   Chunk567163 = require("./567163.js");
 
-function f(e) {
+function p(e) {
   var t;
   let {
     category: n,
@@ -21,14 +23,14 @@ function f(e) {
     active: o
   } = e, {
     useTitle: a,
-    useNavigationTitle: u,
+    useNavigationTitle: s,
     key: f
-  } = n, b = null == a ? true : a(), p = null != (t = null == u ? true : u()) ? t : b;
-  return null == p ? null : (0, r.jsx)(c.mh, {
+  } = n, p = null == a ? true : a(), y = null != (t = null == s ? true : s()) ? t : p;
+  return c()(null != y, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.mh, {
     id: f,
     children: e => {
       var t, n;
-      return (0, r.jsx)(s.P3F, (t = function(e) {
+      return (0, r.jsx)(d.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -49,10 +51,10 @@ function f(e) {
         onClick: l,
         tag: "li",
         className: i()({
-          [d.active]: o
+          [b.active]: o
         })
       }, e), n = n = {
-        children: p
+        children: y
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -67,10 +69,10 @@ function f(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     categories: t
-  } = e, [n, o] = l.useState(t[0].key), [i, c] = (0, s.q_F)(() => ({
+  } = e, [n, o] = l.useState(t[0].key), [i, a] = (0, d.q_F)(() => ({
     y: 0,
     config: {
       mass: .1,
@@ -79,22 +81,22 @@ function b(e) {
     }
   }));
   return l.useEffect(() => {
-    c({
+    a({
       y: 36 * Math.max(t.findIndex(e => e.key === n), 0)
     })
-  }, [t, n, c]), (0, r.jsxs)("div", {
-    className: d.subnav,
+  }, [t, n, a]), (0, r.jsxs)("div", {
+    className: b.subnav,
     children: [(0, r.jsx)("div", {
-      className: d.track,
-      children: (0, r.jsx)(a.animated.div, {
-        className: d.thumb,
+      className: b.track,
+      children: (0, r.jsx)(s.animated.div, {
+        className: b.thumb,
         style: i
       })
     }), (0, r.jsx)("ul", {
-      children: t.map(e => (0, r.jsx)(f, {
+      children: t.map(e => (0, r.jsx)(p, {
         onClick: () => {
           var t;
-          o(t = e.key), u.Z.setState({
+          o(t = e.key), f.Z.setState({
             targetKey: t,
             showNavigationMobile: false
           })

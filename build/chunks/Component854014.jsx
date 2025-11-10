@@ -92,7 +92,7 @@ function p(e) {
     showNavigationMobile: false
   }) : t.onClick, p = l.useMemo(() => {
     var e;
-    return null != (e = null == i ? true : i.layout.flatMap(e => e.layout)) ? e : []
+    return (null != (e = null == i ? true : i.layout.flatMap(e => e.layout)) ? e : []).filter(e => null != e.useTitle || null != e.useNavigationTitle)
   }, [i]);
   return (0, r.jsxs)(r.Fragment, {
     children: [o ? (0, r.jsx)("li", {
