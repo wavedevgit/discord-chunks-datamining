@@ -19,12 +19,12 @@ let p = Chunk647438.forwardRef((e, o) => {
     size: n = 42,
     strokeWidth: p = 3,
     glowBlur: _ = .4,
-    percentCompleteText: C,
-    percentCompleteTextVariant: u = "text-lg/medium",
+    percentCompleteText: u,
+    percentCompleteTextVariant: C = "text-lg/medium",
     children: v
-  } = e, m = (0, l.E)(t, a > 0), g = n / 2, x = n / 2 - p / 2, B = 2 * Math.PI * x, y = B - a * B, P = {
+  } = e, m = (0, l.E)(t, a > 0), g = n / 2, x = n / 2 - p / 2, B = 2 * Math.PI * x, P = B - a * B, y = {
     strokeDasharray: "".concat(B, " ").concat(B),
-    strokeDashoffset: y
+    strokeDashoffset: P
   }, b = {
     strokeDasharray: "".concat(B, " ").concat(B),
     strokeDashoffset: -a * B
@@ -33,7 +33,7 @@ let p = Chunk647438.forwardRef((e, o) => {
   }, {
     progressTextAnimation: S
   } = (0, s.q_F)({
-    progressTextAnimation: +(null != C && 1 !== a),
+    progressTextAnimation: +(null != u && 1 !== a),
     config: c.Y
   });
   return (0, r.jsxs)("div", {
@@ -50,10 +50,10 @@ let p = Chunk647438.forwardRef((e, o) => {
         children: [(0, r.jsx)("div", {
           className: d()(f.coverContent, f.progressTextOverlay)
         }), (0, r.jsx)(s.Text, {
-          variant: u,
+          variant: C,
           color: "text-primary",
           className: f.progressText,
-          children: C
+          children: u
         })]
       })]
     }), (0, r.jsxs)("svg", {
@@ -108,7 +108,7 @@ let p = Chunk647438.forwardRef((e, o) => {
         cx: g,
         cy: g,
         stroke: m.foreground,
-        style: P
+        style: y
       })]
     })]
   })

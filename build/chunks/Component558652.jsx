@@ -82,7 +82,6 @@ function g() {
           selectedSortMethod: module
         }), (0, Chunk951288.jsx)(Chunk264282.Z, {
           onChange: g,
-          optionClassName: Chunk937018.filterSortOption,
           selectedFilters: require
         })]
       })]

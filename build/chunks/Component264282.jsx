@@ -3,9 +3,8 @@
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk755721 = require("./755721.js"),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk509212 = require("./509212.js"),
   Chunk113434 = require("./113434.js"),
@@ -15,40 +14,41 @@ var Chunk755721 = require("./755721.js"),
 let d = function(e) {
   let {
     onChange: t,
-    optionClassName: n,
-    selectedFilters: d
-  } = e, p = (0, s.N8)();
+    selectedFilters: n
+  } = e, d = (0, s.N8)(), p = i.useCallback(e => r => {
+    let i = e.filter(e => r.includes(e.filter));
+    t([...n.filter(t => !e.some(e => e.filter === t.filter)), ...i])
+  }, [n, t]);
   return (0, r.jsx)(o.Z, {
-    renderPopout: (e, s) => {
+    renderPopout: (e, i) => {
       let {
-        closePopout: f
+        closePopout: s
       } = e;
       return (0, r.jsxs)("div", {
-        children: [p.map((e, c) => (0, r.jsxs)("div", {
-          className: u.filterOptionGroup,
-          children: [(0, r.jsx)(o.g, {
-            id: s,
-            children: e.heading
-          }), e.options.map((e, s) => (0, r.jsx)(i.$q, {
-            className: n,
-            innerClassName: u.checkboxInput,
-            onChange: n => {
-              t(n.currentTarget.checked ? [...d, e] : d.filter(t => t.filter !== e.filter))
-            },
-            reverse: true,
-            type: i.M0.INVERTED,
-            value: false !== d.findIndex(t => t.filter === e.filter),
-            children: (0, r.jsx)(l.Text, {
-              variant: "text-md/normal",
-              children: (0, a.Nt)(e.filter)
-            })
-          }, s))]
-        }, c)), (0, r.jsx)("div", {
+        children: [d.map((e, t) => {
+          let s = e.options.map(e => ({
+              label: (0, a.Nt)(e.filter),
+              value: e.filter
+            })),
+            c = n.filter(t => e.options.some(e => e.filter === t.filter)).map(e => e.filter);
+          return (0, r.jsxs)("div", {
+            className: u.filterOptionGroup,
+            children: [(0, r.jsx)(o.g, {
+              id: i,
+              children: e.heading
+            }), (0, r.jsx)(l.cOn, {
+              "aria-labelledby": i,
+              options: s,
+              selectedValues: c,
+              onChange: p(e.options)
+            })]
+          }, t)
+        }), (0, r.jsx)("div", {
           className: u.filterOptionGroup,
           children: (0, r.jsx)(l.Button, {
             fullWidth: true,
             onClick: () => {
-              t([]), f()
+              t([]), s()
             },
             size: "sm",
             text: c.intl.string(c.t.VkKicb),
@@ -58,8 +58,8 @@ let d = function(e) {
       })
     },
     children: (e, t) => {
-      var n, i;
-      return (0, r.jsx)(l.Button, (n = function(e) {
+      var i, a;
+      return (0, r.jsx)(l.Button, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -76,25 +76,25 @@ let d = function(e) {
           })
         }
         return e
-      }({}, e), i = i = {
+      }({}, e), a = a = {
         buttonRef: t,
         size: "sm",
         text: c.intl.formatToPlainString(c.t.CEfkXl, {
-          numSelectedFilters: d.length
+          numSelectedFilters: n.length
         }),
         icon: l.gXV,
         iconPosition: "end",
         variant: "secondary"
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-      }), n))
+      })(Object(a)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+      }), i))
     }
   })
 }
