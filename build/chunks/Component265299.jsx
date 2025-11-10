@@ -27,12 +27,12 @@ function h(e) {
   } = (0, l.J2)({
     fetchPolicy: "cache-or-network",
     callerSource: "embed"
-  }), g = i.useMemo(() => n.find(e => e.id === t), [t, n]), E = i.useMemo(() => h.find(e => e.id === t), [t, h]), b = i.useMemo(() => (null == g ? true : g.config.features.includes(a.S.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE)) === true, [null == g ? true : g.config.features]);
+  }), g = i.useMemo(() => (0, s._x)(t, n, h), [t, n, h]), E = i.useMemo(() => h.find(e => e.id === t), [t, h]), b = i.useMemo(() => (null == g ? true : g.config.features.includes(a.S.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE)) === true, [null == g ? true : g.config.features]);
   return m ? (0, r.jsx)(o.$jN, {
     className: p.spinner
-  }) : null != E ? (0, r.jsx)(d.W, {
+  }) : null == g ? null != E ? (0, r.jsx)(d.W, {
     questId: t
-  }) : null == g ? (0, r.jsx)(f.o, {
+  }) : (0, r.jsx)(f.o, {
     questId: t,
     reason: f.X.NOT_FOUND
   }) : (0, s.HJ)(g) && !b ? (0, r.jsx)(f.o, {

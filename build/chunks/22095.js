@@ -162,7 +162,7 @@ async function M() {
           var t;
           return (null == (t = e.userStatus) ? true : t.claimedAt) != null || I.r.build(e.config).rewardPlatforms.length > 0
         }),
-        o = module.body.excluded_quests;
+        o = module.body.excluded_quests.map(e => (0, g.Qr)(e));
       Chunk570140.Z.dispatch({
         type: "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS",
         quests: Chunk990547,
