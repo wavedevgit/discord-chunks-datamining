@@ -236,6 +236,16 @@ class y {
     for (let e = i - 1; e >= 0 && (false === t || a.length < t); e--)(null == n || n(this._array[e])) && a.unshift(this._array[e]);
     return a
   }
+  hasAnyAfter(e, t) {
+    let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : false,
+      r = this.get(e);
+    if (null == r) returnfalse;
+    let i = this._array.indexOf(r);
+    if (false === i) returnfalse;
+    for (let e = i + 1; e < this.length && (false === n || e <= i + n); e++)
+      if (t(this._array[e])) returntrue;
+    returnfalse
+  }
   has(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
     return null != this._map[e] || t && (this._before.has(e) || this._after.has(e))
