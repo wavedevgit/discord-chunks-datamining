@@ -475,12 +475,12 @@ class ea extends Chunk647438.PureComponent {
       let {
         dragStart: t
       } = this.props;
-      t(j.B.MOVE, e.clientX, e.clientY)
+      t(C.B.MOVE, e.clientX, e.clientY)
     }), en(this, "resizeDragStart", e => {
       let {
         dragStart: t
       } = this.props;
-      t(j.B.RESIZE_SOUTH_EAST, e.clientX, e.clientY)
+      t(C.B.RESIZE_SOUTH_EAST, e.clientX, e.clientY)
     })
   }
 }

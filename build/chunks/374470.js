@@ -17,6 +17,7 @@ function i(e) {
   return isNaN(t) ? 0 : t
 }
 require.d(exports, {
+  MD: () => d,
   Mg: () => i,
   VG: () => l,
   kK: () => r,
@@ -49,6 +50,15 @@ function u(e, t) {
   let n = e.parentElement;
   for (; null != n;) {
     if (n.classList.contains(t)) return n;
+    n = n.parentElement
+  }
+  return null
+}
+
+function d(e, t) {
+  let n = e.parentElement;
+  for (; null != n;) {
+    if (null != n.getAttribute(t)) return n;
     n = n.parentElement
   }
   return null

@@ -180,8 +180,7 @@ function ed() {
     type: "webauthn",
     challenge: V
   }), H && module.push({
-    type: "totp",
-    backup_codes_allowed: Y
+    type: "totp"
   }), Y && module.push({
     type: "backup"
   }), F && module.push({

@@ -2,12 +2,14 @@
 /** chunk id: 393347, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Cp: () => f,
   RR: () => c,
   X5: () => l,
-  cv: () => _,
-  dp: () => h,
+  cv: () => m,
+  dp: () => b,
+  dr: () => E,
   oo: () => a,
-  uY: () => p
+  uY: () => g
 });
 var Chunk119576 = require("./119576.js");
 
@@ -308,7 +310,62 @@ let l = function(e) {
     }
   };
 
-function u(e) {
+function u(e, t) {
+  return {
+    top: e.top - t.height,
+    right: e.right - t.width,
+    bottom: e.bottom - t.height,
+    left: e.left - t.width
+  }
+}
+
+function d(e) {
+  return r.mA.some(t => e[t] >= 0)
+}
+let f = function(e) {
+  return true === e && (e = {}), {
+    name: "hide",
+    options: e,
+    async fn(t) {
+      let {
+        rects: n
+      } = t, {
+        strategy: i = "referenceHidden",
+        ...a
+      } = (0, r.ku)(e, t);
+      switch (i) {
+        case "referenceHidden": {
+          let e = u(await o(t, {
+            ...a,
+            elementContext: "reference"
+          }), n.reference);
+          return {
+            data: {
+              referenceHiddenOffsets: e,
+              referenceHidden: d(e)
+            }
+          }
+        }
+        case "escaped": {
+          let e = u(await o(t, {
+            ...a,
+            altBoundary: true
+          }), n.floating);
+          return {
+            data: {
+              escapedOffsets: e,
+              escaped: d(e)
+            }
+          }
+        }
+        default:
+          return {}
+      }
+    }
+  }
+};
+
+function _(e) {
   let t = min(...e.map(e => e.left)),
     n = min(...e.map(e => e.top));
   return {
@@ -318,34 +375,34 @@ function u(e) {
     height: max(...e.map(e => e.bottom)) - n
   }
 }
-let d = new Set(["left", "top"]);
-async function f(e, t) {
+let p = new Set(["left", "top"]);
+async function h(e, t) {
   let {
     placement: n,
     platform: i,
     elements: a
-  } = e, o = await (null == i.isRTL ? true : i.isRTL(a.floating)), s = (0, r.k3)(n), l = (0, r.hp)(n), c = "y" === (0, r.Qq)(n), u = d.has(s) ? false : 1, f = o && c ? false : 1, _ = (0, r.ku)(t, e), {
-    mainAxis: p,
+  } = e, o = await (null == i.isRTL ? true : i.isRTL(a.floating)), s = (0, r.k3)(n), l = (0, r.hp)(n), c = "y" === (0, r.Qq)(n), u = p.has(s) ? false : 1, d = o && c ? false : 1, f = (0, r.ku)(t, e), {
+    mainAxis: _,
     crossAxis: h,
     alignmentAxis: m
-  } = "number" == typeof _ ? {
-    mainAxis: _,
+  } = "number" == typeof f ? {
+    mainAxis: f,
     crossAxis: 0,
     alignmentAxis: null
   } : {
-    mainAxis: _.mainAxis || 0,
-    crossAxis: _.crossAxis || 0,
-    alignmentAxis: _.alignmentAxis
+    mainAxis: f.mainAxis || 0,
+    crossAxis: f.crossAxis || 0,
+    alignmentAxis: f.alignmentAxis
   };
   return l && "number" == typeof m && (h = "end" === l ? false * m : m), c ? {
-    x: h * f,
-    y: p * u
+    x: h * d,
+    y: _ * u
   } : {
-    x: p * u,
-    y: h * f
+    x: _ * u,
+    y: h * d
   }
 }
-let _ = function(e) {
+let m = function(e) {
     return true === e && (e = 0), {
       name: "offset",
       options: e,
@@ -356,7 +413,7 @@ let _ = function(e) {
           y: a,
           placement: o,
           middlewareData: s
-        } = t, l = await f(t, e);
+        } = t, l = await h(t, e);
         return o === (null == (n = s.offset) ? true : n.placement) && null != (r = s.arrow) && r.alignmentOffset ? {} : {
           x: i + l.x,
           y: a + l.y,
@@ -368,7 +425,7 @@ let _ = function(e) {
       }
     }
   },
-  p = function(e) {
+  g = function(e) {
     return true === e && (e = {}), {
       name: "shift",
       options: e,
@@ -430,7 +487,53 @@ let _ = function(e) {
       }
     }
   },
-  h = function(e) {
+  E = function(e) {
+    return true === e && (e = {}), {
+      options: e,
+      fn(t) {
+        let {
+          x: n,
+          y: i,
+          placement: a,
+          rects: o,
+          middlewareData: s
+        } = t, {
+          offset: l = 0,
+          mainAxis: c = true,
+          crossAxis: u = true
+        } = (0, r.ku)(e, t), d = {
+          x: n,
+          y: i
+        }, f = (0, r.Qq)(a), _ = (0, r.Rn)(f), h = d[_], m = d[f], g = (0, r.ku)(l, t), E = "number" == typeof g ? {
+          mainAxis: g,
+          crossAxis: 0
+        } : {
+          mainAxis: 0,
+          crossAxis: 0,
+          ...g
+        };
+        if (c) {
+          let e = "y" === _ ? "height" : "width",
+            t = o.reference[_] - o.floating[e] + E.mainAxis,
+            n = o.reference[_] + o.reference[e] - E.mainAxis;
+          h < t ? h = t : h > n && (h = n)
+        }
+        if (u) {
+          var b, y;
+          let e = "y" === _ ? "width" : "height",
+            t = p.has((0, r.k3)(a)),
+            n = o.reference[f] - o.floating[e] + (t && (null == (b = s.offset) ? true : b[f]) || 0) + (t ? 0 : E.crossAxis),
+            i = o.reference[f] + o.reference[e] + (t ? 0 : (null == (y = s.offset) ? true : y[f]) || 0) - (t ? E.crossAxis : 0);
+          m < n ? m = n : m > i && (m = i)
+        }
+        return {
+          [_]: h,
+          [f]: m
+        }
+      }
+    }
+  },
+  b = function(e) {
     return true === e && (e = {}), {
       name: "size",
       options: e,

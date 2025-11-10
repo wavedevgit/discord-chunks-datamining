@@ -2,10 +2,11 @@
 /** chunk id: 290161, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => b
+  default: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk966044 = require("./966044.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk490173 = require("./490173.jsx"),
@@ -22,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk631553 = require("./631553.jsx"),
   Chunk981631 = require("./981631.js");
 require("./635324.jsx"), require("./29973.jsx"), require("./308765.js"), require("./913487.js"), require("./606206.js"), Chunk442837.ZP.initialize();
-let b = function() {
+let v = function() {
   return Chunk647438.useEffect(() => (Chunk367207.Z.initialize(), Chunk503737.Z.initialize(), Chunk241890.Z.init(), () => {
     Chunk367207.Z.terminate(), Chunk503737.Z.terminate()
   }), []), (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
@@ -32,7 +33,7 @@ let b = function() {
           appContext: Chunk981631.IlC.OVERLAY,
           renderWindow: window,
           children: (0, Chunk951288.jsxs)(Chunk314910.yP, {
-            children: [(0, Chunk951288.jsx)(Chunk631553.Z, {}), (0, Chunk951288.jsx)(Chunk481060.nKe, {}), (0, Chunk951288.jsx)(Chunk490173.Z, {}), (0, Chunk951288.jsx)(Chunk314910.Un, {})]
+            children: [(0, Chunk951288.jsx)(Chunk631553.Z, {}), (0, Chunk951288.jsx)(Chunk481060.nKe, {}), (0, Chunk951288.jsx)(Chunk490173.Z, {}), (0, Chunk951288.jsx)(Chunk966044.uZ, {}), (0, Chunk951288.jsx)(Chunk314910.Un, {})]
           })
         })]
       })

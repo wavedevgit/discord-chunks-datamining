@@ -2,13 +2,14 @@
 /** chunk id: 329816, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => J
+  Z: () => $
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
+  Chunk966044 = require("./966044.jsx"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk335854 = require("./335854.js"),
@@ -51,7 +52,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk302821 = require("./302821.js");
 require("./29973.jsx"), Promise.resolve().then(require.bind(require, 62883)).then(e => {
-  B.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, false) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, false)
+  Z.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, false) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, false)
 }), (0, Chunk335854.E)({
   getDefaultLinkInterceptor: Chunk315263.default
 }), (0, Chunk663993.Un)({
@@ -61,15 +62,15 @@ require("./29973.jsx"), Promise.resolve().then(require.bind(require, 62883)).the
   createPromise: () => Promise.all([require.e("50448"), require.e("82821"), require.e("30634"), require.e("58493")]).then(require.bind(require, 80753)),
   webpackId: 80753
 });
-let q = (0, Chunk663993.Un)({
+let X = (0, Chunk663993.Un)({
     createPromise: () => require.e("67110").then(require.bind(require, 177741)),
     webpackId: 177741
   }),
-  X = (0, Chunk663993.Un)({
+  Q = (0, Chunk663993.Un)({
     createPromise: () => require.e("13474").then(require.bind(require, 420541)),
     webpackId: 420541
   }),
-  Q = Chunk647438.memo(function() {
+  J = Chunk647438.memo(function() {
     let e = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
       t = (0, Chunk526665.wy)("AppSkeleton"),
       n = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.getLayers().includes(Chunk981631.S9g.USER_SETTINGS)),
@@ -80,54 +81,54 @@ let q = (0, Chunk663993.Un)({
       show: module || Chunk647438 || !Chunk120356
     })
   }),
-  J = function(e) {
+  $ = function(e) {
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, B.getPlatform)(), u = s.tq || s.Em, h = (0, c.e7)([m.Z], () => m.Z.useForcedColors ? "yes" : "no"), j = i.useRef(document.body), U = "".concat(h);
-    return (0, A.G)(), (0, R.G)("AppSkeleton"), (0, r.jsx)(M.w, {
-      children: (0, r.jsxs)(g.Z, {
-        children: [(0, r.jsx)(F.Z, {
+    } = e, a = (0, Z.getPlatform)(), d = s.tq || s.Em, m = (0, u.e7)([g.Z], () => g.Z.useForcedColors ? "yes" : "no"), k = i.useRef(document.body), G = "".concat(m);
+    return (0, C.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(j.w, {
+      children: (0, r.jsxs)(E.Z, {
+        children: [(0, r.jsx)(V.Z, {
           skipsSettingDefaultPageTitle: n
-        }), (0, r.jsx)(p.T, {
-          children: (0, r.jsx)(N.Z, {
-            children: (0, r.jsxs)(d.JcV, {
-              containerRef: j,
-              children: [(0, r.jsx)(Y.Co, {}), (0, r.jsx)(H.ZP, {}), (0, r.jsx)(l.OUJ, {}), (0, r.jsx)(x.Wu, {
-                appContext: K.IlC.APP,
+        }), (0, r.jsx)(h.T, {
+          children: (0, r.jsx)(R.Z, {
+            children: (0, r.jsxs)(f.JcV, {
+              containerRef: k,
+              children: [(0, r.jsx)(W.Co, {}), (0, r.jsx)(Y.ZP, {}), (0, r.jsx)(c.OUJ, {}), (0, r.jsx)(L.Wu, {
+                appContext: z.IlC.APP,
                 renderWindow: window,
-                children: (0, r.jsxs)(P.yP, {
-                  children: [null != a ? (0, r.jsx)(Q, {}) : null, (0, r.jsxs)("div", {
-                    className: o()(z.appAsidePanelWrapper, u && z.mobileAppAsidePanelWrapper),
-                    children: [(0, r.jsx)(T.K, {}), (0, r.jsx)("div", {
-                      className: z.notAppAsidePanel,
+                children: (0, r.jsxs)(w.yP, {
+                  children: [null != a ? (0, r.jsx)(J, {}) : null, (0, r.jsxs)("div", {
+                    className: o()(q.appAsidePanelWrapper, d && q.mobileAppAsidePanelWrapper),
+                    children: [(0, r.jsx)(A.K, {}), (0, r.jsx)("div", {
+                      className: q.notAppAsidePanel,
                       "data-app-not-dev-tools": true,
-                      children: (0, r.jsx)(S.m, {
-                        children: (0, r.jsx)(D.OR, {
-                          children: (0, r.jsx)(E.Z.Provider, {
-                            value: b.Z,
-                            children: (0, r.jsxs)(I.p, {
+                      children: (0, r.jsx)(T.m, {
+                        children: (0, r.jsx)(x.OR, {
+                          children: (0, r.jsx)(b.Z.Provider, {
+                            value: y.Z,
+                            children: (0, r.jsxs)(S.p, {
                               children: [(0, r.jsx)("div", {
-                                className: o()(u ? z.mobileApp : z.app),
+                                className: o()(d ? q.mobileApp : q.app),
                                 children: t
-                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(O.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(k.Z, {}), (0, r.jsx)(w.Ox, {}), (0, r.jsx)(P.Un, {}), (0, r.jsx)(D.ot, {}), (0, r.jsx)(d.Ixi, {
-                                appContext: K.IlC.APP
-                              }), (0, r.jsx)(y.Z, {}), (0, r.jsx)(L.Z, {}), (0, r.jsx)(q, {}), (0, r.jsx)(X, {})]
+                              }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(f.nKe, {}), (0, r.jsx)(U.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(f.Ixi, {
+                                appContext: z.IlC.APP
+                              }), (0, r.jsx)(O.Z, {}), (0, r.jsx)(M.Z, {}), (0, r.jsx)(X, {}), (0, r.jsx)(Q, {})]
                             })
                           })
                         })
                       })
-                    }), (0, r.jsx)(v.Z, {}), (0, r.jsx)(V.Z, {
-                      mobile: u
-                    }), (0, r.jsx)(C.Z, {
-                      mobile: u
+                    }), (0, r.jsx)(I.Z, {}), (0, r.jsx)(H.Z, {
+                      mobile: d
+                    }), (0, r.jsx)(N.Z, {
+                      mobile: d
                     })]
                   }), false]
                 })
-              }), (0, r.jsx)(l.OUJ, {})]
+              }), (0, r.jsx)(c.OUJ, {})]
             })
           })
         })]
       })
-    }, U)
+    }, G)
   }
