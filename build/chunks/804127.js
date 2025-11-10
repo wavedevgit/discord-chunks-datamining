@@ -19,8 +19,8 @@ function s(e) {
     requiresPlatformSelection: s,
     rewardCode: l,
     selectedPlatformType: c,
-    preview: u
-  } = e, [d, m] = r.useState(false), [p, C] = r.useState(false), f = r.useCallback(async (e, t, n) => {
+    preview: d
+  } = e, [u, m] = r.useState(false), [p, C] = r.useState(false), f = r.useCallback(async (e, t, n) => {
     try {
       C(true), await (0, i.QB)(e, t, n), m(false), C(false)
     } catch (e) {
@@ -35,11 +35,11 @@ function s(e) {
   }, []);
   return r.useEffect(() => {
     var e, r;
-    true === u || null != l || d || t || p || n || s || (m(false), (null == (e = o.userStatus) ? true : e.claimedAt) == null && null != c ? f(o.id, c, a) : (null == (r = o.userStatus) ? true : r.claimedAt) != null && h(o.id))
-  }, [f, h, d, t, p, n, a, o, s, l, c, u]), {
+    true === d || null != l || u || t || p || n || s || (m(false), (null == (e = o.userStatus) ? true : e.claimedAt) == null && null != c ? f(o.id, c, a) : (null == (r = o.userStatus) ? true : r.claimedAt) != null && h(o.id))
+  }, [f, h, u, t, p, n, a, o, s, l, c, d]), {
     claimCode: f,
     fetchCode: h,
-    hasError: d,
+    hasError: u,
     setHasError: m
   }
 }
@@ -77,8 +77,8 @@ function c(e) {
     hasError: i,
     onDismiss: s,
     quest: c,
-    questContent: u,
-    questContentCTA: d = o.jZ.GET_REWARD_CODE,
+    questContent: d,
+    questContentCTA: u = o.jZ.GET_REWARD_CODE,
     questContentPosition: m,
     requiresPlatformSelection: p,
     selectedPlatformType: C,
@@ -87,18 +87,18 @@ function c(e) {
   } = e, j = (0, o.O5)(), y = l(e);
   return r.useCallback(() => {
     var e;
-    p && null != C ? (n(c.id, C, u), j({
+    p && null != C ? (n(c.id, C, d), j({
       questId: c.id,
-      questContent: u,
-      questContentCTA: d,
+      questContent: d,
+      questContentCTA: u,
       questContentPosition: m,
       sourceQuestContent: h
-    })) : i ? (null == (e = c.userStatus) ? true : e.claimedAt) != null ? a(c.id) : null != C && (n(c.id, C, u), j({
+    })) : i ? (null == (e = c.userStatus) ? true : e.claimedAt) != null ? a(c.id) : null != C && (n(c.id, C, d), j({
       questId: c.id,
-      questContent: u,
-      questContentCTA: d,
+      questContent: d,
+      questContentCTA: u,
       questContentPosition: m,
       sourceQuestContent: h
     })) : (null != f && y(), s())
-  }, [n, a, i, s, c.id, null == (t = c.userStatus) ? true : t.claimedAt, u, d, m, p, C, j, f, h, y])
+  }, [n, a, i, s, c.id, null == (t = c.userStatus) ? true : t.claimedAt, d, u, m, p, C, j, f, h, y])
 }

@@ -49,8 +49,8 @@ let A = new Chunk710845.Z("EmojiStudio"),
         i = false === r ? l : l.substring(0, r);
       return j.ZP.sanitizeEmojiName(i)
     }(D)), [Y, q] = r.useState(null), K = r.useRef(Date.now()), X = r.useRef(0), Q = r.useRef(0), $ = r.useRef(false), ee = r.useRef(null), [et, en] = r.useState(false), el = r.useRef(null);
-    r.useEffect(() => ((0, E.g)(false), () => {
-      (0, E.g)(false)
+    r.useEffect(() => ((0, _.g)(false), () => {
+      (0, _.g)(false)
     }), []), r.useEffect(() => {
       if (null == h) return;
       let e = g.Z.getEmojiRawAsset(h.id);
@@ -61,7 +61,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
       Z(true), (0, C.Q)(h).then(e => {
         k(e), q(e.data), W(h.name), Z(false)
       }).catch(e => {
-        A.error("Failed to fetch emoji image", e), F(_.ze.MISSING_IMAGE_DATA), Z(false)
+        A.error("Failed to fetch emoji image", e), F(E.ze.MISSING_IMAGE_DATA), Z(false)
       })
     }, [h]);
     let er = r.useCallback(e => {
@@ -84,8 +84,8 @@ let A = new Chunk710845.Z("EmojiStudio"),
       })
     });
     let ei = r.useCallback(async () => {
-        if (F(null), null == L) return void F(_.ze.MISSING_GUILD);
-        if (null == D || (null == D ? true : D.file) == null || null == Y) return void F(_.ze.MISSING_IMAGE_DATA);
+        if (F(null), null == L) return void F(E.ze.MISSING_GUILD);
+        if (null == D || (null == D ? true : D.file) == null || null == Y) return void F(E.ze.MISSING_IMAGE_DATA);
         let e = null;
         try {
           e = await (0, d.rS)({
@@ -131,7 +131,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
             F((0, I.zg)(e)), A.error("Failed to delete emoji.", e);
             return
           }
-        }(0, E.g)(false), (0, u.Mr3)(_.Hj), er({
+        }(0, _.g)(false), (0, u.Mr3)(E.Hj), er({
           reason: "uploaded"
         }), $.current = true, (0, O.y)({
           emoji: e,
@@ -140,7 +140,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
       }, [L, D, h, Y, er, V]),
       ea = r.useCallback(() => {
         var e;
-        F(null), null != D && q(D.data), Q.current = 0, (0, E.g)(false), null == (e = ee.current) || e.reset()
+        F(null), null != D && q(D.data), Q.current = 0, (0, _.g)(false), null == (e = ee.current) || e.reset()
       }, [ee, D]),
       eo = r.useCallback(() => {
         (0, C.E)({
@@ -153,10 +153,10 @@ let A = new Chunk710845.Z("EmojiStudio"),
           imageDataTimestamp: n = 0,
           error: l
         } = e, r = null;
-        null != t && j.ZP.isDataTooBig(t) && (r = _.ze.TOO_BIG), F(null != l ? l : r), n < X.current || null != t && (q(t), X.current = n)
+        null != t && j.ZP.isDataTooBig(t) && (r = E.ze.TOO_BIG), F(null != l ? l : r), n < X.current || null != t && (q(t), X.current = n)
       }, []),
       eu = r.useCallback(() => {
-        Q.current++, (0, E.g)(true)
+        Q.current++, (0, _.g)(true)
       }, []),
       ec = T ? M.intl.string(M.t.FOYn8U) : M.intl.string(M.t.iMJO37);
     return G || null == D ? (0, l.jsx)("main", {

@@ -52,11 +52,11 @@ function A(e) {
   })
 }
 
-function Z(e) {
+function D(e) {
   let {
     onVideoLoaded: n,
     isLoading: t
-  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), b = (0, c.ZP)(), f = (0, l.apv)(b), x = f ? S.Z : P.Z, h = f ? E.Z : L.Z, C = r.useRef(null), _ = r.useRef(null), [j, g] = r.useState(false), [y, v] = r.useState(false), [N, O] = r.useState(false);
+  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), b = (0, c.ZP)(), f = (0, l.apv)(b), h = f ? S.Z : P.Z, x = f ? E.Z : L.Z, C = r.useRef(null), _ = r.useRef(null), [j, g] = r.useState(false), [y, v] = r.useState(false), [N, O] = r.useState(false);
   r.useEffect(() => {
     j && y && N && n()
   }, [j, y, N, n]), r.useEffect(() => {
@@ -85,7 +85,7 @@ function Z(e) {
       controls: false,
       onCanPlayThrough: r.useCallback(() => v(true), []),
       children: (0, a.jsx)("source", {
-        src: h,
+        src: x,
         type: "video/webm"
       })
     }), (0, a.jsx)(p.Z, {
@@ -98,7 +98,7 @@ function Z(e) {
       onCanPlayThrough: r.useCallback(() => g(true), []),
       onEnded: T,
       children: (0, a.jsx)("source", {
-        src: x,
+        src: h,
         type: "video/webm"
       })
     }), (0, a.jsxs)("div", {
@@ -110,7 +110,7 @@ function Z(e) {
   })
 }
 
-function D(e) {
+function Z(e) {
   let {
     isLoading: n,
     onClose: t,
@@ -130,14 +130,14 @@ function D(e) {
   };
   return (0, a.jsxs)("div", {
     className: w.contentContainer,
-    children: [(0, a.jsx)(Z, {
+    children: [(0, a.jsx)(D, {
       isLoading: n,
       onVideoLoaded: s
     }), (0, a.jsxs)("div", {
       className: w.copyContainer,
       children: [(0, a.jsxs)("div", {
         className: w.heading,
-        children: [(0, a.jsx)(x.M, {
+        children: [(0, a.jsx)(h.M, {
           shouldUseThemeColor: true,
           className: w.orbsIcon
         }), (0, a.jsx)(l.Heading, {
@@ -181,14 +181,14 @@ function k(e) {
   } = e, d = null != (t = (0, _.B4)(i.id)) ? t : i, u = (null == (n = d.userStatus) ? true : n.claimedAt) != null, {
     balance: m,
     error: p
-  } = (0, f.A)(), b = (0, C.LM)(d.config), [x, N] = r.useState(u ? "success" : "loading"), [O, w] = r.useState(false), P = r.useCallback(() => {
+  } = (0, f.A)(), b = (0, C.LM)(d.config), [h, N] = r.useState(u ? "success" : "loading"), [O, w] = r.useState(false), P = r.useCallback(() => {
     w(true)
   }, []);
   r.useEffect(() => {
-    u || "loading" !== x || (0, h.QB)(d.id, j.y$.CROSS_PLATFORM, c).then(() => N("success")).catch(() => N("error"))
-  }, [d.id, u, x, c]);
-  let S = !O || "loading" === x || null == m && null == p,
-    L = "error" === x || null == b || null == m && null != p;
+    u || "loading" !== h || (0, x.QB)(d.id, j.y$.CROSS_PLATFORM, c).then(() => N("success")).catch(() => N("error"))
+  }, [d.id, u, h, c]);
+  let S = !O || "loading" === h || null == m && null == p,
+    L = "error" === h || null == b || null == m && null != p;
   return (0, a.jsx)(g.Z, {
     onClose: s,
     transitionState: o,
@@ -199,7 +199,7 @@ function k(e) {
     rewardContentHasError: L,
     rewardContent: L ? null : (0, a.jsx)(y.Z, {
       rewardName: T.intl.string(T.t.Lmysvd),
-      children: (0, a.jsx)(D, {
+      children: (0, a.jsx)(Z, {
         onClose: s,
         orbsEarned: b,
         orbsBalance: m,

@@ -630,7 +630,7 @@ class tl extends Chunk647438.PureComponent {
             channel: e
           }, "pins")), e.isArchivedThread() || s.push((0, r.jsx)(J.Z, {
             channelId: e.id
-          }, "members")), null != t && (0, v.Lp)(e) && s.push((0, r.jsx)(et.Z, {
+          }, "members")), null != t && (0, j.Lp)(e) && s.push((0, r.jsx)(et.Z, {
             channel: e
           }, "summaries")), s.push((0, r.jsx)(eZ.Z, {
             channel: e
@@ -648,7 +648,7 @@ class tl extends Chunk647438.PureComponent {
             channel: e
           }, "pins")), s.push((0, r.jsx)(J.Z, {
             channelId: e.id
-          }, "members")), (0, v.Lp)(e) && s.push((0, r.jsx)(et.Z, {
+          }, "members")), (0, j.Lp)(e) && s.push((0, r.jsx)(et.Z, {
             channel: e
           }, "summaries"));
           break;
@@ -806,7 +806,7 @@ let ta = (0, Chunk112724.Z)(tl),
     }, [s]), I = (0, B.Z)(), P = (0, p.e7)([eV.Z], () => {
       var e;
       return (null != (e = null == I ? true : I.channelId) ? e : eV.Z.getVoiceChannelId()) === (null == c ? true : c.id)
-    }), R = (0, p.e7)([C.ZP], () => null != c ? C.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), w = (0, p.e7)([eB.Z], () => eB.Z.isConnected()), A = (0, j.Z)(w), D = w && false === A;
+    }), R = (0, p.e7)([C.ZP], () => null != c ? C.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), w = (0, p.e7)([eB.Z], () => eB.Z.isConnected()), A = (0, v.Z)(w), D = w && false === A;
     i.useEffect(() => {
       P && D && null != R && null != c && m.Z.selectParticipant(c.id, (0, T.gN)({
         applicationId: R.applicationId,
@@ -869,12 +869,12 @@ let ta = (0, Chunk112724.Z)(tl),
         channel: e,
         inCurrentVoiceChannel: t
       } = eb.current;
-      null != l && null != e && ef && e.id === l && !t && ((0, ev.Cq)(e), a(null))
+      null != l && null != e && ef && e.id === l && !t && ((0, ej.Cq)(e), a(null))
     }, [l, ef]);
-    let e_ = (0, v.ts)(c),
+    let e_ = (0, j.ts)(c),
       ey = null != c && c.isPrivate(),
-      ex = (0, j.Z)(ey),
-      eO = (0, j.Z)(null == c ? true : c.id);
+      ex = (0, v.Z)(ey),
+      eO = (0, v.Z)(null == c ? true : c.id);
     i.useEffect(() => {
       let e = ex && !ey,
         t = ex && ey && (null == c ? true : c.id) !== eO;
@@ -882,7 +882,7 @@ let ta = (0, Chunk112724.Z)(tl),
         dismissAction: e2.L.AUTO
       })
     }, [null == c ? true : c.id, eO, ey, ex]);
-    let ej = (0, f.f9)();
+    let ev = (0, f.f9)();
     return (0, r.jsx)(ta, tr(tn({
       guildId: null == c ? true : c.guild_id,
       channelId: s,
@@ -894,7 +894,7 @@ let ta = (0, Chunk112724.Z)(tl),
       layout: Q,
       needSubscriptionToAccess: x,
       isLurking: Y,
-      hasModalOpen: ej,
+      hasModalOpen: ev,
       section: et,
       channelSidebarState: en,
       guildSidebarState: ei,

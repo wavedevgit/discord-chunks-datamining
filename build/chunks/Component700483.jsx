@@ -127,11 +127,11 @@ function ed(e) {
   let {
     channel: t,
     onSelect: n
-  } = e, o = (0, j.bp)(), {
+  } = e, o = (0, v.bp)(), {
     canManageGuildEvent: c
   } = (0, C.XJ)(t), p = (0, l.e7)([Y.Z], () => Y.Z.getStageInstanceByChannel(t.id), [t.id]), h = (0, l.e7)([x.ZP], () => x.ZP.getGuildScheduledEvent(null == p ? true : p.guild_scheduled_event_id)), {
     suppress: f
-  } = (0, Z.Z)(t), g = M.default.getId(), [_] = (0, er.Z)(t), y = W.ZP.isModerator(g, t.id), O = (0, V.B)(t.id), v = c(h), {
+  } = (0, Z.Z)(t), g = M.default.getId(), [_] = (0, er.Z)(t), y = W.ZP.isModerator(g, t.id), O = (0, V.B)(t.id), j = c(h), {
     parentAnalyticsLocation: I
   } = (0, u.ZP)(), S = i.useRef(null), E = () => (function(e) {
     let {
@@ -144,7 +144,7 @@ function ed(e) {
     channel: t,
     appContext: o
   });
-  return (y || v) && null != p ? (0, r.jsx)(a.yRy, {
+  return (y || j) && null != p ? (0, r.jsx)(a.yRy, {
     targetElementRef: S,
     renderPopout: e => {
       let {
@@ -249,8 +249,8 @@ let eh = Chunk647438.memo(function(e) {
     mute: c
   } = (0, Z.Z)(t), d = (0, V.B)(t.id), m = (0, ee.Z)(t.id), x = (0, l.e7)([_.default], () => null != _.default.getAwaitingRemoteSessionInfo()), {
     cameraUnavailable: O,
-    enabled: v
-  } = (0, I.Z)(), j = (0, E.Z)(t), {
+    enabled: j
+  } = (0, I.Z)(), v = (0, E.Z)(t), {
     limit: C,
     reachedLimit: w
   } = (0, S.Z)(t), A = (0, l.e7)([H.default], () => H.default.getCurrentUser()), M = (0, l.e7)([k.Z], () => (0, y.Z)(k.Z)), U = (0, l.e7)([G.Z], () => G.Z.getVoiceChannelId() === t.id, [t.id]), F = (0, l.e7)([p.Z], () => p.Z.getStreamParticipants(t.id)[0], [t.id]), B = (0, q.PK)(t.id), z = C > 0, W = w && !B || null != F && F.user.id !== (null == A ? true : A.id), Y = (0, b.u)("AudioDeviceMenu", n, {
@@ -286,8 +286,8 @@ let eh = Chunk647438.memo(function(e) {
       return (0, r.jsx)(L.C, {
         ref: K,
         centerButton: true,
-        hasPermission: j,
-        enabled: v,
+        hasPermission: v,
+        enabled: j,
         cameraUnavailable: O,
         onChange: P.r,
         onCameraUnavailable: N.Z,
@@ -352,7 +352,7 @@ let eh = Chunk647438.memo(function(e) {
         currentUser: A,
         exitFullScreen: () => null,
         canGoLive: M,
-        hasPermission: j,
+        hasPermission: v,
         disabled: W
       }) : null, (0, r.jsx)(ep, {
         channelId: t.id
@@ -402,7 +402,7 @@ let eg = Chunk647438.memo(function(e) {
         channelId: null == t ? true : t.id
       }) : null, (0, r.jsx)("div", {
         className: ea.separator
-      }), u && s && !o ? (0, r.jsx)(v.Z, {
+      }), u && s && !o ? (0, r.jsx)(j.Z, {
         highlight: true,
         channel: t
       }) : null, (0, r.jsx)("div", {

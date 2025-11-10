@@ -1,7 +1,7 @@
 /** Chunk was on 2262 **/
 /** chunk id: 384694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => E
+  q: () => _
 }), require("./467055.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,13 +24,13 @@ let x = e => ({
     value: e.id
   }),
   j = e => d.Z.can(b.Plq.CREATE_GUILD_EXPRESSIONS, e),
-  E = e => {
+  _ = e => {
     let {
       onChange: t,
       selected: n,
       onError: d,
-      labelledBy: E,
-      isEmojiAnimated: _,
+      labelledBy: _,
+      isEmojiAnimated: E,
       label: O,
       required: y,
       errorMessage: C
@@ -47,9 +47,9 @@ let x = e => ({
       }({
         guild: n,
         emojis: o.ZP.getGuildEmoji(t),
-        isEmojiAnimated: _
+        isEmojiAnimated: E
       })]
-    })), [I, _]), S = r.useMemo(() => Object.values(I).filter(j).map(x), [I]), w = r.useCallback(e => {
+    })), [I, E]), S = r.useMemo(() => Object.values(I).filter(j).map(x), [I]), w = r.useCallback(e => {
       let [t] = e;
       if (null == t || null == t.value) return null;
       let n = I[t.value];
@@ -109,7 +109,7 @@ let x = e => ({
       renderOptionLabel: M,
       renderOptionValue: w,
       value: n,
-      "aria-labelledby": E,
+      "aria-labelledby": _,
       placeholder: S.length < 1 ? v.intl.string(v.t.jHpxwo) : v.intl.string(v.t["4mqeQO"]),
       isDisabled: S.length < 1
     })

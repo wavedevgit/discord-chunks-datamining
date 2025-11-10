@@ -1,7 +1,7 @@
 /** Chunk was on 76418 **/
 /** chunk id: 34251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,12 +18,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk522144 = require("./522144.js");
 
-function g(e) {
+function h(e) {
   let {
     quest: t,
     rewardName: n,
     location: a,
-    sourceQuestContent: s
+    sourceQuestContent: o
   } = e;
   return (0, r.jsxs)("div", {
     className: C.contentContainer,
@@ -35,8 +35,8 @@ function g(e) {
         learnMoreStyle: null,
         quest: t,
         questContent: a,
-        location: f.dr.INGAME_REWARD_MODAL,
-        sourceQuestContent: s
+        location: p.dr.INGAME_REWARD_MODAL,
+        sourceQuestContent: o
       })
     }), (0, r.jsxs)("div", {
       className: C.copyContainer,
@@ -62,38 +62,38 @@ function g(e) {
   })
 }
 
-function h(e) {
+function g(e) {
   var t, n;
   let {
     initialQuest: i,
     onClose: u,
     transitionState: x,
     location: C,
-    sourceQuestContent: h
-  } = e, _ = null != (n = (0, l.B4)(i.id)) ? n : i, j = a.useMemo(() => (0, o.K)(_.config), [_]), v = (null == (t = _.userStatus) ? true : t.claimedAt) != null, N = !_.preview && !v, [y, b] = a.useState(N ? "loading" : "claimed");
+    sourceQuestContent: g
+  } = e, _ = null != (n = (0, l.B4)(i.id)) ? n : i, j = a.useMemo(() => (0, s.K)(_.config), [_]), v = (null == (t = _.userStatus) ? true : t.claimedAt) != null, y = !_.preview && !v, [N, b] = a.useState(y ? "loading" : "claimed");
   a.useEffect(() => {
-    if (N) {
-      let e = c.r.build(_.config),
-        t = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : d.y$.CROSS_PLATFORM;
-      (0, s.QB)(_.id, t, C).then(() => b("claimed")).catch(() => b("error"))
+    if (y) {
+      let e = d.r.build(_.config),
+        t = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : c.y$.CROSS_PLATFORM;
+      (0, o.QB)(_.id, t, C).then(() => b("claimed")).catch(() => b("error"))
     }
-  }, [_, C, N]);
-  let w = "error" === y || null == j;
+  }, [_, C, y]);
+  let w = "error" === N || null == j;
   return (0, r.jsx)(m.Z, {
     onClose: u,
     transitionState: x,
     quest: _,
-    sourceQuestContent: h,
-    location: f.dr.INGAME_REWARD_MODAL,
-    isRewardContentLoading: "loading" === y,
+    sourceQuestContent: g,
+    location: p.dr.INGAME_REWARD_MODAL,
+    isRewardContentLoading: "loading" === N,
     rewardContentHasError: w,
-    rewardContent: w ? null : (0, r.jsx)(p.Z, {
+    rewardContent: w ? null : (0, r.jsx)(f.Z, {
       rewardName: j.messages.name,
-      children: (0, r.jsx)(g, {
+      children: (0, r.jsx)(h, {
         quest: _,
         rewardName: j.messages.name,
         location: C,
-        sourceQuestContent: h
+        sourceQuestContent: g
       })
     })
   })

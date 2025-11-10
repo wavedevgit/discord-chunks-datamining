@@ -179,18 +179,18 @@ function H(e) {
     isFavoritesSearch: b
   });
   let {
-    showNoResultsAlt: v
-  } = l, j = v ? L.intl.string(L.t["VrK/2R"]) : L.intl.string(L.t.V6nAfF);
+    showNoResultsAlt: j
+  } = l, v = j ? L.intl.string(L.t["VrK/2R"]) : L.intl.string(L.t.V6nAfF);
   return (0, r.jsxs)(U, {
     children: [(0, r.jsx)("div", {
       className: a()(M.noResultsImage, {
-        [M.alt]: v
+        [M.alt]: j
       })
     }), (0, r.jsx)("div", {
       className: a()(M.emptyResultsText, M.noResults, {
-        [M.alt]: v
+        [M.alt]: j
       }),
-      children: j
+      children: v
     })]
   })
 }
@@ -319,13 +319,13 @@ let F = [],
       ei = en === o.z.SEARCH_AUTHOR_TYPE_SEARCH_RESULTS_HINT,
       el = i.useCallback(() => {
         if (n.isSearching) return;
-        let e = "".concat(v.ZP[A.dCx.FILTER_AUTHOR_TYPE].key, " ").concat(L.intl.string(L.t.tPZo4p)) + " ";
+        let e = "".concat(j.ZP[A.dCx.FILTER_AUTHOR_TYPE].key, " ").concat(L.intl.string(L.t.tPZo4p)) + " ";
         S.Z.appendToSearchInputText(t, e)
       }, [t, n.isSearching]);
     return (0, r.jsxs)("section", {
       className: M.searchResultsWrap,
       "aria-label": L.intl.string(L.t["zkoeq/"]),
-      children: [(0, r.jsx)(j.Z, {
+      children: [(0, r.jsx)(v.Z, {
         searchContext: t,
         searchMode: I,
         onSearchModeChange: q,
@@ -422,7 +422,7 @@ function V(e) {
   }), y = (0, s.e7)([R.Z], () => {
     var e;
     return null != (e = R.Z.getSearchMode(o)) ? e : A.QIO.NEWEST
-  }), v = i.useCallback(e => {
+  }), j = i.useCallback(e => {
     if (c.isSearching) return;
     I.Z.updateSearchMode(t, e);
     let n = S.Z.getSearchInputText(t);
@@ -431,7 +431,7 @@ function V(e) {
       searchQueryString: n,
       offset: 0
     })
-  }, [c.isSearching, t]), j = i.useCallback(e => {
+  }, [c.isSearching, t]), v = i.useCallback(e => {
     if (c.isSearching) return;
     let n = S.Z.getSearchInputText(t);
     null != n && S.Z.fetchMessages({
@@ -454,8 +454,8 @@ function V(e) {
       renderEmbeds: f.NA.useSetting(),
       isFeedbackVisible: l,
       dismissFeedbackEntrypoint: a,
-      onPageChange: j,
-      onSearchModeChange: v,
+      onPageChange: v,
+      onSearchModeChange: j,
       searchMode: y,
       onBlockedResultsClick: Z,
       searchResultsQuery: C,

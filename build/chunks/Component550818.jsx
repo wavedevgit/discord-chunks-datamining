@@ -71,16 +71,16 @@ function I(e) {
         themeOverride: E,
         children: (0, r.jsx)(l.u2D, {
           children: (0, r.jsxs)("div", {
-            className: v.container,
+            className: j.container,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: j,
-              className: v.preview,
+              src: v,
+              className: j.preview,
               "aria-hidden": true
             }), (0, r.jsxs)("div", {
-              className: v.body,
+              className: j.body,
               children: [(0, r.jsxs)("div", {
-                className: v.headerContainer,
+                className: j.headerContainer,
                 children: [(0, r.jsx)(m.Z, {
                   user: t
                 }), (0, r.jsx)(s.Heading, {

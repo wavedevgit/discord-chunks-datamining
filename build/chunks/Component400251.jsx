@@ -110,7 +110,7 @@ function T(e) {
             className: I.overflowIcon
           })
         })
-      }) : null, (0, r.jsx)(v.Z, {
+      }) : null, (0, r.jsx)(j.Z, {
         targetElementRef: d,
         onRequestOpen: () => s(true),
         onRequestClose: () => s(false),
@@ -162,12 +162,12 @@ let N = e => {
     o(true);
     try {
       h ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
-        source: j.vtS.DIRECTORY_ENTRY
+        source: v.vtS.DIRECTORY_ENTRY
       })
     } finally {
       o(false)
     }
-  }, v = y.ZP.getGuildSplashURL({
+  }, j = y.ZP.getGuildSplashURL({
     id: l.guildId,
     splash: l.splash,
     size: 300 * (0, m.x_)()
@@ -192,8 +192,8 @@ let N = e => {
       className: I.cardHeader,
       children: [(0, r.jsx)("div", {
         className: I.splash,
-        children: null != v && (0, r.jsx)("img", {
-          src: v,
+        children: null != j && (0, r.jsx)("img", {
+          src: j,
           alt: "",
           className: I.splashImage
         })

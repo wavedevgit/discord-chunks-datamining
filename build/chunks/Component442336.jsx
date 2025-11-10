@@ -63,7 +63,7 @@ function b(e) {
         muted: !b
       }, d.UE.muted(!b)) : x(e => !e)
     },
-    v = f.intl.string(f.t.h850Ss);
+    j = f.intl.string(f.t.h850Ss);
   return (0, r.jsx)(a.yRy, {
     targetElementRef: n,
     shouldShow: y,
@@ -85,9 +85,9 @@ function b(e) {
       return (0, r.jsx)(u.ZP.Icon, m(g({}, e), {
         ref: n,
         onClick: O,
-        tooltip: i ? null : v,
+        tooltip: i ? null : j,
         icon: b || _ !== h.bL.ALL_MESSAGES ? a.owu : a.Dkj,
-        "aria-label": v,
+        "aria-label": j,
         selected: i
       }))
     }

@@ -85,7 +85,7 @@ function V(e) {
     ec ? ((t = es.width / k.I0) > es.height && (e = (t = es.height) * k.I0), eu = (es.height - t) / 2) : ((e = Math.min(es.height * k.I0)) > es.width && (t = (e = es.width) / k.I0), ed = (es.width - e) / 2)
   }
   let eh = J.get(null != (l = null == Y ? true : Y.id) ? l : ""),
-    ef = (0, s.e7)([v.Z], () => v.Z.getChannelId()),
+    ef = (0, s.e7)([j.Z], () => j.Z.getChannelId()),
     eg = (0, s.Wu)([O.ZP], () => {
       var e;
       return null == Q ? [] : Array.from(null != (e = null == eh ? true : eh.embeddedActivity.userIds) ? e : []).map(e => O.ZP.getMember(Q.guild_id, e))
@@ -149,7 +149,7 @@ function V(e) {
     e_ = (0, L.y)();
   if (null == Y) return null;
   let ey = [];
-  null != eh && (ey = Array.from(eh.embeddedActivity.userIds).map(e => j.default.getUser(e)).filter(e => null != e && true !== e));
+  null != eh && (ey = Array.from(eh.embeddedActivity.userIds).map(e => v.default.getUser(e)).filter(e => null != e && true !== e));
   let ex = e => {
     var t;
     if (null == e || true === e || e === w.ag) return null;

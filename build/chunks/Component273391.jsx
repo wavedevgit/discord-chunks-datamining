@@ -1,7 +1,7 @@
 /** Chunk was on 2262 **/
 /** chunk id: 273391, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  v: () => _
+  v: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -39,16 +39,16 @@ function x(e) {
   return e
 }
 let j = new Chunk710845.Z("ImageEditor"),
-  E = {
+  _ = {
     width: 288,
     height: 288
   },
-  _ = Chunk647438.forwardRef(function(e, t) {
+  E = Chunk647438.forwardRef(function(e, t) {
     let {
       file: n,
       imageUri: i,
       onUpdate: m,
-      onThrottledEdit: _
+      onThrottledEdit: E
     } = e, N = r.useRef({
       x: 0,
       y: 0
@@ -63,7 +63,7 @@ let j = new Chunk710845.Z("ImageEditor"),
     }), [z, L] = r.useState(0), [U, B] = r.useState({
       x: 0,
       y: 0
-    }), [F, J] = r.useState(false), H = "image/gif" === n.type, V = (0, s.v)(n.type), W = V && !H, [Y, q] = r.useState(null), K = (0, d.h)(null != _ ? _ : b.dG, 500), X = r.useRef(null), Q = r.useRef(0);
+    }), [F, J] = r.useState(false), H = "image/gif" === n.type, V = (0, s.v)(n.type), W = V && !H, [Y, q] = r.useState(null), K = (0, d.h)(null != E ? E : b.dG, 500), X = r.useRef(null), Q = r.useRef(0);
     r.useEffect(() => {
       (0, g.Z)()
     }, []);
@@ -166,7 +166,7 @@ let j = new Chunk710845.Z("ImageEditor"),
           let t = I({
               file: n,
               image: l,
-              cropDimensions: E,
+              cropDimensions: _,
               cropOriginCoordinates: N.current,
               maxDimensions: r,
               imageRotation: z,
@@ -185,7 +185,7 @@ let j = new Chunk710845.Z("ImageEditor"),
           null == (s = es.current) || s.call(es), es.current = null
         } else e = W ? i : (0, o.PT)({
           image: l,
-          cropDimensions: E,
+          cropDimensions: _,
           cropOriginCoordinates: N.current,
           maxDimensions: r,
           imageRotation: z
@@ -257,8 +257,8 @@ let j = new Chunk710845.Z("ImageEditor"),
           className: p.overlay,
           style: {
             opacity: +(null != T),
-            width: E.width,
-            height: E.height
+            width: _.width,
+            height: _.height
           },
           children: (0, l.jsx)(c.Text, {
             className: p.panHint,

@@ -95,25 +95,25 @@ let N = Chunk647438.memo(function(e) {
       y = o.useCallback(() => {
         let e = x.Z.getTargetPID(),
           n = null != f.Z.getVoiceChannelId();
-        i.Z.track(W.rMx.OVERLAY_INITIALIZED, {
+        i.Z.track(T.rMx.OVERLAY_INITIALIZED, {
           voice_widget_connected: n,
-          text_widget_connected: x.Z.isPinned(W.Odu.TEXT),
+          text_widget_connected: x.Z.isPinned(T.Odu.TEXT),
           overlay_render_method: v.gl[w.default.getOverlayMethod(e)],
           unpinned_widget_types: s.Z.getAllUnpinnedPinnedWidgets(t)
         }), (0, B.ry)()
       }, [t]),
-      T = o.useRef(false),
+      W = o.useRef(false),
       N = o.useRef(null),
       A = o.useCallback(async (e, t) => {
         try {
-          if (await Z(e, N), T.current) return;
+          if (await Z(e, N), W.current) return;
           (0, S.Z)("cssLoaded", true)
         } catch (e) {
           P.error("Timed out waiting for CSS to load", e), i.Z.setOverlayCrashed(x.Z.getTargetPID(), e), (0, S.Z)("errorMessage", "CSS failed load");
           return
         }
         try {
-          if (await k(e, t), T.current) return;
+          if (await k(e, t), W.current) return;
           (0, B.Dv)()
         } catch (e) {
           i.Z.setOverlayCrashed(x.Z.getTargetPID(), e), (0, S.Z)("errorMessage", "showInactive failed");
@@ -121,7 +121,7 @@ let N = Chunk647438.memo(function(e) {
         }
         await new Promise(t => {
           e.setTimeout(() => t(), 100)
-        }), T.current || (g(true), y())
+        }), W.current || (g(true), y())
       }, [y]),
       D = o.useRef(false);
     o.useEffect(() => {
@@ -134,7 +134,7 @@ let N = Chunk647438.memo(function(e) {
         I.current = true, (0, S.Z)("reactInitializationStarted", true), A(a, e)
       }
     }, [A, l, e, a, n]), (0, c.zq)(() => {
-      clearInterval(N.current), T.current = true
+      clearInterval(N.current), W.current = true
     });
     let E = (0, r.e7)([b.Z], () => b.Z.windowSize(null != a ? (0, C.ZY)(a) : true)),
       L = (0, r.e7)([x.Z], () => x.Z.getFocusedWindowHandle());
@@ -149,9 +149,9 @@ let N = Chunk647438.memo(function(e) {
         a.cancelAnimationFrame(e)
       }
     }, [u, a, _, L, E]), u
-  }(n, T.$S), g = (0, r.e7)([h.default], () => h.default.isFocusedPidInputLocked());
+  }(n, W.$S), g = (0, r.e7)([h.default], () => h.default.isFocusedPidInputLocked());
   return l ? (0, a.jsxs)(u.Z, {
-    themeOverride: W.BRd.MIDNIGHT,
+    themeOverride: T.BRd.MIDNIGHT,
     withTitleBar: t,
     windowKey: n,
     title: "Discord Overlay",
