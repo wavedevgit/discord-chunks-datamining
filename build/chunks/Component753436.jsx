@@ -1,4 +1,4 @@
-/** Chunk was on 15582 **/
+/** Chunk was on 77678 **/
 /** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => j
@@ -30,8 +30,8 @@ function O(e) {
     gameName: o,
     children: c
   } = e, {
-    registerDragHandleRef: f,
-    manageFocusOnReorder: g
+    registerDragHandleRef: g,
+    manageFocusOnReorder: f
   } = (0, d.C)(), p = i.useRef(null);
   return (0, r.jsx)(u.yW, {
     index: t,
@@ -46,7 +46,7 @@ function O(e) {
       positionNumber: t + 1
     }),
     onReorder: (e, t) => (0, s.Eq)(n, e, t),
-    onEnd: () => g(a.applicationId),
+    onEnd: () => f(a.applicationId),
     className: v.container,
     dropBeforeClassName: v.dropIndicatorBefore,
     dropAfterClassName: v.dropIndicatorAfter,
@@ -55,7 +55,7 @@ function O(e) {
       ref: p,
       className: v.dragHandleContainer,
       children: [c, (0, r.jsx)(u.e_, {
-        buttonRef: f(a.applicationId),
+        buttonRef: g(a.applicationId),
         className: v.dragHandle,
         focusProps: {
           ringTarget: p
@@ -85,7 +85,7 @@ function j(e) {
   } = (0, o.f)(e => ({
     isDragging: e.isDragging()
   })), C = () => (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(f.Z, {
+    children: [(0, r.jsx)(g.Z, {
       imageSrc: x,
       gameName: _,
       applicationId: t.applicationId,
@@ -94,7 +94,7 @@ function j(e) {
       className: l()(I ? v.socialProofBackdrop : true, null == x || u ? true : y.hoverActiveEffect),
       hideTooltip: T,
       coverRef: j
-    }), E && (0, r.jsx)(g.Z, {
+    }), E && (0, r.jsx)(f.Z, {
       game: t,
       widgetType: i,
       className: v.removeGameButton,

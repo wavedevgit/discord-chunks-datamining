@@ -19,12 +19,13 @@ function f(e) {
   let {
     wishlistItems: t = [],
     profileOwner: n,
-    onClick: f
+    onClick: f,
+    wishlistId: g
   } = e, {
-    analyticsLocations: g
+    analyticsLocations: m
   } = (0, a.ZP)(), {
-    cards: m,
-    singleItem: b
+    cards: b,
+    singleItem: _
   } = (0, i.useMemo)(() => {
     let e = [],
       r = null;
@@ -34,29 +35,33 @@ function f(e) {
       l.isOwned || ((0, o.Q)(l) ? e.push((0, u.c)(l, {
         moreCount: a ? t.length - 4 + 1 : true,
         profileOwner: n,
-        analyticsLocations: g,
-        onViewWishlist: f
+        analyticsLocations: m,
+        onViewWishlist: f,
+        wishlistId: g
       })) : (0, c.F)(l) && e.push((0, s.J)(l, {
         moreCount: a ? t.length - 4 + 1 : true,
         profileOwner: n,
-        analyticsLocations: g,
-        onViewWishlist: f
+        analyticsLocations: m,
+        onViewWishlist: f,
+        wishlistId: g
       })), 1 === e.length && null == r && (r = l))
     }
     return {
       cards: e,
       singleItem: r
     }
-  }, [t, n, g, f]);
-  if (0 === m.length) return null;
-  let _ = 1 === m.length && null != b,
-    y = m;
-  return _ && ((0, o.Q)(b) ? y = (0, u.g)(b, {
+  }, [t, n, m, f, g]);
+  if (0 === b.length) return null;
+  let y = 1 === b.length && null != _,
+    x = b;
+  return y && ((0, o.Q)(_) ? x = (0, u.g)(_, {
     profileOwner: n,
-    analyticsLocations: g
-  }) : (0, c.F)(b) && (y = (0, s.B)(b, {
+    analyticsLocations: m,
+    wishlistId: g
+  }) : (0, c.F)(_) && (x = (0, s.B)(_, {
     profileOwner: n,
-    analyticsLocations: g
+    analyticsLocations: m,
+    wishlistId: g
   }))), (0, r.jsxs)(d.Z.Overlay, {
     className: h.container,
     children: [(0, r.jsx)("div", {
@@ -67,7 +72,7 @@ function f(e) {
       })
     }), (0, r.jsx)("div", {
       className: h.cardsContainer,
-      children: y
+      children: x
     })]
   })
 }

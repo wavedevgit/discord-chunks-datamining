@@ -1,7 +1,7 @@
 /** Chunk was on 45227 **/
 /** chunk id: 439293, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => d
 }), require("./314940.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,23 +11,23 @@ var Chunk278074 = require("./278074.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk191684 = require("./191684.js");
 
-function c(e) {
+function d(e) {
   let {
     step: t,
     onClose: n,
-    isGift: c
-  } = e, d = (0, r.EQ)(t).with(a.h8.REVIEW, () => c ? o.intl.string(o.t.wKaVLC) : o.intl.string(o.t.Whxhpm)).with(a.h8.ADD_PAYMENT_STEPS, () => o.intl.string(o.t.QiGOak)).with(a.h8.GIFT_CUSTOMIZATION, () => o.intl.string(o.t["JCFN/y"])).with(a.h8.AWAITING_PURCHASE_TOKEN_AUTH, () => o.intl.string(o.t.lDbi6H)).with(a.h8.CONFIRM, () => "").otherwise(() => null);
-  return null == d ? null : (0, i.jsxs)(l.xBx, {
+    isGift: d
+  } = e, c = (0, l.EQ)(t).with(r.h8.REVIEW, () => d ? s.intl.string(s.t.wKaVLC) : s.intl.string(s.t.Whxhpm)).with(r.h8.ADD_PAYMENT_STEPS, () => s.intl.string(s.t.QiGOak)).with(r.h8.GIFT_CUSTOMIZATION, () => s.intl.string(s.t["JCFN/y"])).with(r.h8.AWAITING_PURCHASE_TOKEN_AUTH, () => s.intl.string(s.t.lDbi6H)).with(r.h8.CONFIRM, () => "").otherwise(() => null);
+  return null == c ? null : (0, i.jsxs)(a.xBx, {
     "data-migration-pending": true,
-    className: s.headerContainerGift,
-    separator: t !== a.h8.CONFIRM,
-    children: [(0, i.jsx)(l.Heading, {
+    className: o.headerContainerGift,
+    separator: t !== r.h8.CONFIRM,
+    children: [(0, i.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
-      children: d
-    }), (0, i.jsx)(l.olH, {
+      children: c
+    }), (0, i.jsx)(a.olH, {
       "data-migration-pending": true,
       onClick: n,
-      className: s.closeButtonGift
+      className: o.closeButtonGift
     })]
   })
 }

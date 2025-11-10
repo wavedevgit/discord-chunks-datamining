@@ -1,8 +1,8 @@
 /** Chunk was on 39380 **/
-/** chunk id: 70399, original params: e,l,a (module,exports,require) **/
+/** chunk id: 70399, original params: e,a,l (module,exports,require) **/
 require.d(exports, {
   T: () => v,
-  Z: () => m
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -15,45 +15,45 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk373942 = require("./373942.js");
 
-function m(e) {
+function p(e) {
   let {
-    applicationId: l,
-    size: a = "default"
-  } = e, t = (0, s.e7)([d.Z], () => d.Z.getApplicationWidgetApplicationConfig(l));
+    applicationId: a,
+    size: l = "default"
+  } = e, t = (0, s.e7)([o.Z], () => o.Z.getApplicationWidgetApplicationConfig(a));
   return (0, i.jsxs)("div", {
-    className: n()(p.container, {
-      [p.sizeSmall]: "small" === a
+    className: n()(m.container, {
+      [m.sizeSmall]: "small" === l
     }),
     children: [(0, i.jsxs)("div", {
-      className: p.content,
+      className: m.content,
       children: [(0, i.jsx)("div", {
-        className: p.header
+        className: m.header
       }), (0, i.jsx)("div", {
-        className: p.divider
+        className: m.divider
       }), (0, i.jsxs)("div", {
-        className: p.stats,
+        className: m.stats,
         children: [(0, i.jsx)("div", {
-          className: p.stat
+          className: m.stat
         }), (0, i.jsx)("div", {
-          className: p.stat
+          className: m.stat
         }), (0, i.jsx)("div", {
-          className: p.stat
+          className: m.stat
         }), (0, i.jsx)("div", {
-          className: p.stat
+          className: m.stat
         }), (0, i.jsx)("div", {
-          className: p.stat
+          className: m.stat
         }), (0, i.jsx)("div", {
-          className: p.stat
+          className: m.stat
         })]
       })]
     }), (0, i.jsx)("div", {
-      className: p.imageContainer,
+      className: m.imageContainer,
       children: (null == t ? true : t.mini_preview_image) != null ? (0, i.jsx)("img", {
         src: t.mini_preview_image,
         alt: "",
-        className: p.previewImage
+        className: m.previewImage
       }) : (0, i.jsx)("div", {
-        className: p.previewImagePlaceholder
+        className: m.previewImagePlaceholder
       })
     })]
   })
@@ -61,27 +61,27 @@ function m(e) {
 
 function v(e) {
   let {
-    applicationId: l,
-    size: a = "default"
-  } = e, t = (0, o.q)(l), {
+    applicationId: a,
+    size: l = "default"
+  } = e, t = (0, d.q)(a), {
     hasAlreadyLinked: n,
     canStartAuthorization: s,
-    startAuthorization: d,
-    fetched: m
+    startAuthorization: o,
+    fetched: p
   } = (0, c.F)(t);
-  return "default" !== a || null == t ? null : (0, i.jsxs)("div", {
-    className: p.footer,
+  return "default" !== l || null == t ? null : (0, i.jsxs)("div", {
+    className: m.footer,
     children: [(0, i.jsx)(r.uIJ, {
       size: "xs"
     }), (0, i.jsx)(r.xvT, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      children: m ? n ? u.intl.format(u.t.wiyuG9, {
+      children: p ? n ? u.intl.format(u.t.wiyuG9, {
         applicationName: t.name
       }) : s ? u.intl.format(u.t.RNWFOQ, {
-        onConnect: d
+        onConnect: o
       }) : u.intl.string(u.t["9TX4UT"]) : (0, i.jsx)("div", {
-        className: p.footerPlaceholder
+        className: m.footerPlaceholder
       })
     })]
   })

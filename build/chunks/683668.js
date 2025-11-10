@@ -7,8 +7,8 @@ var Chunk647438 = require("./647438.js"),
   Chunk877481 = require("./877481.js");
 
 function s(t) {
-  let [n, e] = i.useState(null);
-  return i.useEffect(() => {
-    a.Z.isLaunchable(t).then(e)
+  let [n, e] = a.useState(null);
+  return a.useEffect(() => {
+    i.Z.isLaunchable(t).then(e)
   }, [t]), n
 }

@@ -33,15 +33,16 @@ function g(e, t) {
     profileOwner: l,
     analyticsLocations: a,
     onViewWishlist: s,
-    isSingleCard: u = false
-  } = t, h = null != n && n > 0, g = h ? p.intl.string(p.t.TxBQzD) : p.intl.string(p.t.ilhtIa), m = e.collectiblesItem.type === i.Z.PROFILE_EFFECT;
+    isSingleCard: u = false,
+    wishlistId: h
+  } = t, g = null != n && n > 0, m = g ? p.intl.string(p.t.TxBQzD) : p.intl.string(p.t.ilhtIa), b = e.collectiblesItem.type === i.Z.PROFILE_EFFECT;
   return (0, r.jsx)(d.Z, {
     onCardClick: () => {
-      if (h) return void s();
+      if (g) return void s();
       f(e, l, a)
     },
-    tooltipText: g,
-    shouldScalePreview: !m,
+    tooltipText: m,
+    shouldScalePreview: !b,
     renderPreview: () => (0, r.jsx)(o.Z, {
       item: e,
       profileOwner: l,
@@ -50,23 +51,27 @@ function g(e, t) {
     }),
     moreCount: n,
     isSingleCard: u,
-    analyticsLocations: a
+    skuId: e.skuId,
+    analyticsLocations: a,
+    wishlistId: h
   }, e.skuId)
 }
 
 function m(e, t) {
   let {
     profileOwner: n,
-    analyticsLocations: l
-  } = t, s = g(e, {
+    analyticsLocations: l,
+    wishlistId: s
+  } = t, o = g(e, {
     profileOwner: n,
     analyticsLocations: l,
     onViewWishlist: () => {},
-    isSingleCard: true
+    isSingleCard: true,
+    wishlistId: s
   });
   return (0, r.jsxs)("div", {
     className: h.singleItemContainer,
-    children: [s, (0, r.jsxs)("div", {
+    children: [o, (0, r.jsxs)("div", {
       className: h.singleItemInfo,
       children: [(0, r.jsx)(a.P3F, {
         onClick: () => {

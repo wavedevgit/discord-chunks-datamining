@@ -170,6 +170,7 @@ function H(e) {
               children: (0, r.jsx)(D.Z, {
                 profileOwner: n,
                 wishlistItems: ei.items,
+                wishlistId: er,
                 onClick: () => {
                   null == $ || $({
                     section: L.oh.WISHLIST

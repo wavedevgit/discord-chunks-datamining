@@ -816,6 +816,18 @@ let q = {
       } = this.getDiscordUtils();
       if (null != t) return t(e)
     },
+    ToolServiceSetStatusCallback(e) {
+      let {
+        toolServiceSetStatusCallback: t
+      } = this.getDiscordUtils();
+      null != t && t(e)
+    },
+    ToolServiceSetAllowed(e) {
+      let {
+        toolServiceSetAllowed: t
+      } = this.getDiscordUtils();
+      if (null != t) return t(e)
+    },
     isModuleVersionAtLeast(e, t) {
       var n, r, i;
       let a = [...null != N ? N : [0, 0, 0]];

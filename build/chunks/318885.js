@@ -73,7 +73,7 @@ async function E(e, t) {
       overlay_render_method: null != S ? a.gl[S] : null,
       media_session_id: u.Z.getMediaSessionId(),
       overlay_game_elevated: null == O ? true : O.elevated,
-      input_service_initialized: i.ZP.isInputServiceInitialized(),
+      input_service_initialized: i.ZP.isSystemServiceInitialized("input-service"),
       hardware_display_count: null != (E = await (null === r.Z || true === r.Z || null == (l = r.Z.hardware) || null == (n = l.getDisplayCount) ? true : n.call(l))) ? E : null
     };
   switch (__OVERLAY__ && (T.overlay_render_method = a.gl[a.gl.Hook]), t = m({}, T, t), e) {

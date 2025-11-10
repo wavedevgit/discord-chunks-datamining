@@ -1,7 +1,7 @@
 /** Chunk was on 21021 **/
-/** chunk id: 519193, original params: t,n,i (module,exports,require) **/
+/** chunk id: 519193, original params: t,n,a (module,exports,require) **/
 require.d(exports, {
-  SocialLayerStorefrontItemClaimedSuccessfullyModal: () => p
+  SocialLayerStorefrontItemClaimedSuccessfullyModal: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,54 +16,54 @@ var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk40399 = require("./40399.js");
 
-function p(t) {
+function h(t) {
   let {
     transitionState: n,
-    onClose: i,
-    sku: p,
-    application: m
-  } = t, h = (0, c.a)(m), {
-    fetched: T,
-    hasAlreadyLinked: v,
-    canStartAuthorization: I,
-    startAuthorization: g
-  } = (0, s.F)(m), C = (0, r.I)(m);
-  if (!T || null == h) return (0, a.jsx)(e.IX, {
+    onClose: a,
+    sku: h,
+    application: p
+  } = t, f = (0, l.a)(p), {
+    fetched: j,
+    hasAlreadyLinked: g,
+    canStartAuthorization: v,
+    startAuthorization: C
+  } = (0, o.F)(p), y = (0, c.I)(p);
+  if (!j || null == f) return (0, i.jsx)(s.IX, {
     transitionState: n,
-    onClose: i,
-    children: (0, a.jsx)(e.fef, {
-      children: (0, a.jsx)(l.$jN, {})
+    onClose: a,
+    children: (0, i.jsx)(s.fef, {
+      children: (0, i.jsx)(e.$jN, {})
     })
   });
-  if (v) {
-    let t = h && !C ? {
+  if (g) {
+    let t = f && !y ? {
       variant: "primary",
       text: x.intl.string(x.t["s+J8Dl"]),
       onClick: () => {
-        o.Z.launchGame(m.id)
+        r.Z.launchGame(p.id)
       },
-      icon: e.rgF
+      icon: s.rgF
     } : {
       variant: "primary",
       text: x.intl.string(x.t.cpT0Cq),
-      onClick: i
+      onClick: a
     };
-    return (0, a.jsxs)(e.IX, {
+    return (0, i.jsxs)(s.IX, {
       transitionState: n,
-      onClose: i,
-      children: [(0, a.jsx)(d.y, {
-        sku: p,
+      onClose: a,
+      children: [(0, i.jsx)(u.y, {
+        sku: h,
         title: x.intl.string(x.t["5glWta"])
-      }), (0, a.jsx)(e.fef, {
-        children: (0, a.jsx)(l.Text, {
+      }), (0, i.jsx)(s.fef, {
+        children: (0, i.jsx)(e.Text, {
           variant: "text-md/normal",
-          className: f.modalBodyText,
+          className: m.modalBodyText,
           children: x.intl.formatToPlainString(x.t.W2znvX, {
-            skuName: p.name,
-            applicationName: m.name
+            skuName: h.name,
+            applicationName: p.name
           })
         })
-      }), (0, a.jsx)(e.Go$, {
+      }), (0, i.jsx)(s.Go$, {
         actions: [t],
         actionsFullWidth: true
       })]
@@ -72,20 +72,20 @@ function p(t) {
     let t = {
       variant: "primary",
       text: x.intl.string(x.t["VDAhr+"]),
-      onClick: g,
-      icon: e.uIJ,
-      disabled: !I
+      onClick: C,
+      icon: s.uIJ,
+      disabled: !v
     };
-    return (0, a.jsx)(u.M, {
-      sku: p,
-      application: m,
+    return (0, i.jsx)(d.M, {
+      sku: h,
+      application: p,
       transitionState: n,
-      onClose: i,
-      hasAlreadyLinked: v,
-      canStartAuthorization: I,
+      onClose: a,
+      hasAlreadyLinked: g,
+      canStartAuthorization: v,
       primaryCTAButtonProps: t,
       bodyText: x.intl.formatToPlainString(x.t.Qmkje8, {
-        applicationName: m.name
+        applicationName: p.name
       }),
       title: x.intl.string(x.t.GPAtvf)
     })

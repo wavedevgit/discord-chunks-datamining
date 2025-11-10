@@ -166,7 +166,12 @@ let V = new Chunk710845.Z("RunningGameStore"),
   q = [],
   X = true,
   Q = {
-    state: "unknown"
+    "input-service": {
+      state: "unknown"
+    },
+    "tool-service": {
+      state: "unknown"
+    }
   },
   J = new Set,
   $ = [],
@@ -605,11 +610,10 @@ function e4() {
 
 function e8(e) {
   let {
-    inputServiceStatus: t,
+    status: t,
     modules: n
   } = e;
-  if (!n.includes("input-service")) returnfalse;
-  Q = t
+  for (let e of n) Q[e] = t
 }!__OVERLAY__ && ((0, Chunk358085.isDesktop)() || Chunk987650.iP) && (es = function() {
   let e = [],
     t = new Set;
@@ -838,7 +842,7 @@ class e5 extends(i = Chunk442837.ZP.Store) {
     return null != (n = null == (t = er.find(t => (0, g.Z)(e, t.windowHandle))) ? true : t.name) ? n : null
   }
   get canShowAdminWarning() {
-    return X && !this.isInputServiceInitialized()
+    return X && !this.isSystemServiceInitialized("input-service")
   }
   isDetectionEnabled(e) {
     return ew(e)
@@ -847,11 +851,15 @@ class e5 extends(i = Chunk442837.ZP.Store) {
     var t;
     ep.add(null != (t = (0, p.F)(e)) ? t : e)
   }
-  getInputServiceStatus() {
-    return Q
+  getSystemServiceStatus(e) {
+    var t;
+    return null != (t = Q[e]) ? t : {
+      state: "unknown"
+    }
   }
-  isInputServiceInitialized() {
-    return "running" === Q.state
+  isSystemServiceInitialized(e) {
+    var t;
+    return (null == (t = Q[e]) ? true : t.state) === "running"
   }
 }
 G(e5, "displayName", "RunningGameStore");

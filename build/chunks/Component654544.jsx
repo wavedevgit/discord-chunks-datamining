@@ -1,4 +1,4 @@
-/** Chunk was on 15582 **/
+/** Chunk was on 77678 **/
 /** chunk id: 654544, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -17,7 +17,7 @@ function u(e) {
     handleOpenCollectiblesShop: n,
     handleOpenGameShop: u,
     socialLayerStorefrontApplicationId: d
-  } = e, f = i.useRef(null), [g, p] = i.useState(false), m = (0, l.q)(d), b = i.useMemo(() => {
+  } = e, g = i.useRef(null), [f, p] = i.useState(false), m = (0, l.q)(d), b = i.useMemo(() => {
     if (null == m) return c.intl.string(c.t.apFNLU);
     let e = o.ZP.getApplicationIconURL({
       id: m.id,
@@ -50,7 +50,7 @@ function u(e) {
     })]
   }), [n, u, b, m]);
   return (0, r.jsx)(a.yRy, {
-    targetElementRef: f,
+    targetElementRef: g,
     position: "bottom",
     onRequestOpen: () => p(true),
     onRequestClose: () => p(false),
@@ -84,10 +84,10 @@ function u(e) {
       }
       return e
     }({
-      buttonRef: f,
+      buttonRef: g,
       variant: "secondary",
       size: "sm",
-      icon: g ? a.Dio : a.CJ0,
+      icon: f ? a.Dio : a.CJ0,
       iconPosition: "end",
       text: t
     }, e))

@@ -1,4 +1,4 @@
-/** Chunk was on 15582 **/
+/** Chunk was on 77678 **/
 /** chunk id: 778567, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk918139 = require("./918139.js");
-let g = Chunk63063.Z.getArticleURL(Chunk981631.BhN.CUSTOM_PROFILES_WISHLIST);
+let f = Chunk63063.Z.getArticleURL(Chunk981631.BhN.CUSTOM_PROFILES_WISHLIST);
 
 function p(e) {
   let {
@@ -31,7 +31,7 @@ function p(e) {
           color: "text-primary",
           children: d.intl.string(d.t.b2nFyA)
         }), (0, r.jsx)(a.Text, {
-          className: f.menuItemDescription,
+          className: g.menuItemDescription,
           variant: "text-xs/medium",
           color: "text-tertiary",
           children: d.intl.string(d.t.dw58pE)
@@ -47,7 +47,7 @@ function p(e) {
         children: d.intl.string(d.t.hvVgAZ)
       }),
       icon: a.Gr1,
-      action: () => window.open(g)
+      action: () => window.open(f)
     })]
   }) : null, [t, n, c]);
   return null == m ? null : (0, r.jsx)(o.Gt, {

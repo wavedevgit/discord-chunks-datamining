@@ -1,12 +1,12 @@
 /** Chunk was on 45227 **/
 /** chunk id: 444448, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => x
+  d: () => C
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  r = require.n(Chunk512722),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk987209 = require("./987209.jsx"),
@@ -20,47 +20,47 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk261112 = require("./261112.js");
 
-function x(e) {
+function C(e) {
   var t;
   let {
     handleClose: n
   } = e, {
-    skusById: l,
-    selectedSkuId: x,
+    skusById: a,
+    selectedSkuId: C,
     application: j
-  } = (0, d.JL)(), {
-    isGift: C,
-    giftRecipient: y
-  } = (0, c.wD)();
-  a()(null != x, "Expected selectedSkuId"), a()(null != j, "Expected application");
-  let _ = l[x];
-  return (a()(null != _, "Expected sku"), r.useEffect(() => {
-    C || ((0, m.U)(), n(), (0, p.I)({
-      sku: _,
+  } = (0, c.JL)(), {
+    isGift: b,
+    giftRecipient: _
+  } = (0, d.wD)();
+  r()(null != C, "Expected selectedSkuId"), r()(null != j, "Expected application");
+  let I = a[C];
+  return (r()(null != I, "Expected sku"), l.useEffect(() => {
+    b || ((0, p.U)(), n(), (0, m.I)({
+      sku: I,
       application: j
     }))
-  }, [C, _, j, n]), C) ? (0, i.jsxs)(u.C3, {
+  }, [b, I, j, n]), b) ? (0, i.jsxs)(u.C3, {
     children: [(0, i.jsx)(g.Z, {}), (0, i.jsx)(f.Z, {}), (0, i.jsxs)("div", {
       className: h.confirmation,
-      children: [(0, i.jsx)(v.A, {
-        sku: _,
+      children: [(0, i.jsx)(x.A, {
+        sku: I,
         shape: "square",
         containerClassName: h.skuImage
-      }), (0, i.jsx)(s.Heading, {
+      }), (0, i.jsx)(o.Heading, {
         variant: "heading-xxl/bold",
         className: h.confirmationHeader,
-        children: b.intl.string(b.t["5glWta"])
-      }), (0, i.jsx)(s.Text, {
+        children: v.intl.string(v.t["5glWta"])
+      }), (0, i.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: b.intl.formatToPlainString(b.t["2VjPTw"], {
-          itemName: _.name,
-          giftRecipient: null != (t = null == y ? true : y.username) ? t : "your recipient"
+        children: v.intl.formatToPlainString(v.t["2VjPTw"], {
+          itemName: I.name,
+          giftRecipient: null != (t = null == _ ? true : _.username) ? t : "your recipient"
         })
       }), (0, i.jsx)("div", {
         className: h.divider
-      }), (0, i.jsx)(o.zxk, {
+      }), (0, i.jsx)(s.zxk, {
         onClick: n,
-        text: b.intl.string(b.t.cpT0Cq),
+        text: v.intl.string(v.t.cpT0Cq),
         fullWidth: true
       })]
     })]

@@ -1,9 +1,9 @@
-/** Chunk was on 88295 **/
+/** Chunk was on 85952 **/
 /** chunk id: 489618, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => r
+  Z: () => i
 });
-let r = (0, require("./818083.js").B)({
+let i = (0, require("./818083.js").B)({
   kind: "user",
   id: "2025-07_right_click_redemption",
   label: "Right Click Redemption",

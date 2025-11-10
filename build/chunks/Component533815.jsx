@@ -1,7 +1,7 @@
-/** Chunk was on 15582 **/
+/** Chunk was on 77678 **/
 /** chunk id: 533815, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,13 +14,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk145624 = require("./145624.js");
 
-function f(e) {
+function g(e) {
   let {
     game: t,
     widgetType: n,
     iconSize: i = "refresh_sm",
-    className: f,
-    buttonRef: g,
+    className: g,
+    buttonRef: f,
     onRemove: p
   } = e, {
     trackUserProfileEditAction: m
@@ -28,7 +28,7 @@ function f(e) {
   return (0, r.jsx)(l.u, {
     text: u.intl.string(u.t.HUvyDc),
     children: (0, r.jsx)(o.P3F, {
-      innerRef: g,
+      innerRef: f,
       onClick: () => {
         (0, s.$b)(n, t.applicationId), o.uvj.announce(u.intl.string(u.t["08HmMj"])), m({
           action: "GAME_REMOVED",
@@ -37,7 +37,7 @@ function f(e) {
         }), null == p || p()
       },
       "aria-label": u.intl.string(u.t.HUvyDc),
-      className: a()(f, d.clickable),
+      className: a()(g, d.clickable),
       children: (0, r.jsx)(o.XHJ, {
         size: i,
         className: d.icon,

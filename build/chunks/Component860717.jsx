@@ -1,4 +1,4 @@
-/** Chunk was on 15582 **/
+/** Chunk was on 77678 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Q
@@ -343,13 +343,13 @@ function W(e) {
 
 function z() {
   let e = function() {
-      let e = Chunk647438.useContext(V);
+      let e = Chunk647438.useContext(q);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
       return module
     }(),
     {
       game: t
-    } = q(module.widget);
+    } = Y(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
     className: Chunk895652.socialProof,
     applicationId: exports.id,
@@ -376,7 +376,7 @@ function K(e, t) {
   return r
 }
 
-function Y(e, t) {
+function V(e, t) {
   var n, r;
   if (null == e || "skeleton" === t.mode) return null;
   let i = null == (r = e.match(N)) || null == (n = r[0]) ? true : n.slice(2, false);
@@ -384,11 +384,11 @@ function Y(e, t) {
   let a = t.variables[i];
   return null == a || "unfurled_media" !== a.type ? null : a.media
 }
-let V = Chunk647438.createContext(null);
+let q = Chunk647438.createContext(null);
 
-function q(e) {
-  return (0, o.cj)([f.Z, w.Z, P.Z], () => {
-    let t = f.Z.getApplication(e.applicationId);
+function Y(e) {
+  return (0, o.cj)([g.Z, w.Z, P.Z], () => {
+    let t = g.Z.getApplication(e.applicationId);
     return {
       application: t,
       game: null != t ? P.Z.getGameByApplication(t) : null,
@@ -457,13 +457,13 @@ let Q = Object.assign(function(e) {
     cta: a,
     subtle: u = false
   } = e, {
-    application: f,
+    application: g,
     game: m,
     config: b
-  } = q(n), h = null == f ? true : f.getIconURL(16), y = (0, x.O)(t.id).data, v = null == y ? true : y.find(e => e.application_id === n.applicationId), j = (0, p.Z)({
+  } = Y(n), h = null == g ? true : g.getIconURL(16), y = (0, x.O)(t.id).data, v = null == y ? true : y.find(e => e.application_id === n.applicationId), j = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == m ? true : m.id,
-    source: g.m1.UserProfile,
+    source: f.m1.UserProfile,
     sourceUserId: t.id,
     trackEntryPointImpression: true
   }), {
@@ -471,7 +471,7 @@ let Q = Object.assign(function(e) {
     hasAlreadyLinked: w,
     canStartAuthorization: E,
     startAuthorization: N
-  } = (0, d.F)(f), Z = null == a && P && !w && E, G = (0, r.jsxs)(r.Fragment, {
+  } = (0, d.F)(g), Z = null == a && P && !w && E, G = (0, r.jsxs)(r.Fragment, {
     children: [null != h ? (0, r.jsx)("img", {
       className: C.appIcon,
       src: h,
@@ -482,7 +482,7 @@ let Q = Object.assign(function(e) {
       className: C.appIconPlaceholder
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
-      children: (null == f ? true : f.name) != null ? f.name : (0, r.jsx)("div", {
+      children: (null == g ? true : g.name) != null ? g.name : (0, r.jsx)("div", {
         className: C.textPlaceholder
       })
     })]
@@ -540,7 +540,7 @@ let Q = Object.assign(function(e) {
         case "HERO":
           var r;
           return {
-            type: "HERO", body: n.body.map(t), title: K(n.title, e), image: Y(n.image, e), imagePlaceholder: null == (r = e.config) ? true : r.hero_placeholder_image
+            type: "HERO", body: n.body.map(t), title: K(n.title, e), image: V(n.image, e), imagePlaceholder: null == (r = e.config) ? true : r.hero_placeholder_image
           };
         case "GRID":
           return {
@@ -556,7 +556,7 @@ let Q = Object.assign(function(e) {
           };
         case "TEXT_WITH_IMAGE":
           return {
-            type: "TEXT_WITH_IMAGE", content: K(n.content, e), image: Y(n.image, e), imagePosition: n.imagePosition
+            type: "TEXT_WITH_IMAGE", content: K(n.content, e), image: V(n.image, e), imagePosition: n.imagePosition
           };
         case "SEPARATOR":
         case "SOCIAL_PROOF":
@@ -575,7 +575,7 @@ let Q = Object.assign(function(e) {
       icon: s.iWm,
       action: j
     }) : null,
-    children: [(0, r.jsx)(V.Provider, {
+    children: [(0, r.jsx)(q.Provider, {
       value: e,
       children: (0, r.jsx)(X, {
         widget: n,

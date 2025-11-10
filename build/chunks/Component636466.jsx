@@ -21,18 +21,19 @@ function h(e, t) {
     onViewWishlist: i,
     isSingleCard: l = false,
     profileOwner: p,
-    analyticsLocations: h
-  } = t, f = null != n && n > 0, g = f ? d.intl.string(d.t.TxBQzD) : d.intl.string(d.t.ilhtIa);
+    analyticsLocations: h,
+    wishlistId: f
+  } = t, g = null != n && n > 0, m = g ? d.intl.string(d.t.TxBQzD) : d.intl.string(d.t.ilhtIa);
   return (0, r.jsx)(a.Z, {
     onCardClick: () => {
-      if (f) return void i();
+      if (g) return void i();
       (0, s.P)(e.sku, {
         isGift: true,
         giftRecipient: p,
         giftingOrigin: c.Wt.USER_PROFILE_WISHLIST
       })
     },
-    tooltipText: g,
+    tooltipText: m,
     shouldScalePreview: false,
     renderPreview: () => (0, r.jsx)(o.A, {
       containerClassName: u.card,
@@ -43,7 +44,9 @@ function h(e, t) {
     }),
     moreCount: n,
     isSingleCard: l,
-    analyticsLocations: h
+    skuId: e.skuId,
+    analyticsLocations: h,
+    wishlistId: f
   }, e.skuId)
 }
 
@@ -89,16 +92,18 @@ function f(e) {
 function g(e, t) {
   let {
     profileOwner: n,
-    analyticsLocations: i
-  } = t, l = h(e, {
+    analyticsLocations: i,
+    wishlistId: l
+  } = t, a = h(e, {
     profileOwner: n,
     analyticsLocations: i,
     onViewWishlist: () => {},
-    isSingleCard: true
+    isSingleCard: true,
+    wishlistId: l
   });
   return (0, r.jsx)(f, {
     item: e,
-    card: l,
+    card: a,
     profileOwner: n
   })
 }

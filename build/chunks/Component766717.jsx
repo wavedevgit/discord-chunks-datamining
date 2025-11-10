@@ -17,24 +17,28 @@ function o(e) {
     renderPreview: c,
     moreCount: d,
     isSingleCard: u = false,
-    analyticsLocations: p
-  } = e, h = o ? s.cardPreview : s.cardPreviewNoScale, f = u ? s.cardSingle : s.card, g = null != d && d > 0;
+    skuId: p,
+    analyticsLocations: h,
+    wishlistId: f
+  } = e, g = o ? s.cardPreview : s.cardPreviewNoScale, m = u ? s.cardSingle : s.card, b = null != d && d > 0;
   return (0, r.jsx)(i.u, {
     text: n,
     position: "top",
     children: (0, r.jsxs)(l.P3F, {
       onClick: () => {
-        t(), (0, a.pQ)({
-          action: g ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-          analyticsLocations: p
+        t(), (0, a.Er)({
+          action: b ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
+          analyticsLocations: h,
+          skuId: b ? null : p,
+          wishlistId: f
         })
       },
-      className: f,
+      className: m,
       "aria-label": n,
       children: [(0, r.jsx)("div", {
-        className: h,
+        className: g,
         children: c()
-      }), g && (0, r.jsx)("div", {
+      }), b && (0, r.jsx)("div", {
         className: s.moreOverlay,
         children: (0, r.jsxs)(l.Text, {
           variant: "text-xs/medium",

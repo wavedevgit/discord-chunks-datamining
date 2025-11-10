@@ -1,4 +1,4 @@
-/** Chunk was on 15582 **/
+/** Chunk was on 77678 **/
 /** chunk id: 5136, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   r: () => l
@@ -19,12 +19,12 @@ function l(e) {
     itemType: e.getItemType()
   }), []), {
     isDragging: d,
-    clientOffset: f,
-    itemType: g
+    clientOffset: g,
+    itemType: f
   } = (0, i.f)(u), p = (0, a.zPA)();
   (0, r.useEffect)(() => (c.current = requestAnimationFrame(function e(r) {
     if (p || null == t) return;
-    if (c.current = requestAnimationFrame(e), false === d || null == f || "WIDGET" !== g) {
+    if (c.current = requestAnimationFrame(e), false === d || null == g || "WIDGET" !== f) {
       t.style.overflowAnchor = "auto", t.style.overscrollBehavior = "auto", s.current = r;
       return
     }
@@ -32,12 +32,12 @@ function l(e) {
     let i = Math.min(32, 0 !== s.current ? r - s.current : 16) / 1e3;
     s.current = r;
     let a = t.getBoundingClientRect(),
-      u = f.y,
+      u = g.y,
       m = u - a.top,
       b = a.bottom - u,
       h = 0;
     m >= 0 && m < n ? h = -l * Math.pow(1 - m / n, o) : b >= 0 && b < n && (h = l * Math.pow(1 - b / n, o)), 0 !== h && (t.scrollTop += h * i)
   }), () => {
     null !== c.current && cancelAnimationFrame(c.current), c.current = null, s.current = 0
-  }), [t, d, f, g, n, l, o, p])
+  }), [t, d, g, f, n, l, o, p])
 }

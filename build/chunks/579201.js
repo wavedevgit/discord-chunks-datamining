@@ -8,5 +8,5 @@ var Chunk442837 = require("./442837.js"),
   Chunk885110 = require("./885110.js");
 
 function o(t) {
-  return (0, i.e7)([s.Z, a.Z], () => null != s.Z.getApplicationActivity(t.id, true) || null != a.Z.getApplication(t.id), [t.id])
+  return (0, a.e7)([s.Z, i.Z], () => null != s.Z.getApplicationActivity(t.id, true) || null != i.Z.getApplication(t.id), [t.id])
 }

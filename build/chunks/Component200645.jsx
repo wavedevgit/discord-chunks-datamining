@@ -56,7 +56,7 @@ function E() {
   let e = (0, Chunk865066.O9)(),
     [t, n] = Chunk647438.useState(false),
     [c, d] = Chunk647438.useState(() => (0, Chunk865066.aL)()),
-    f = (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.getInputServiceStatus()),
+    f = (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.getSystemServiceStatus("input-service")),
     m = Chunk647438.useCallback(async () => {
       require(true), Chunk823379 ? await (0, Chunk865066.OK)("windows-settings") : await (0, Chunk865066.sU)("windows-settings"), require(false), Chunk358085((0, Chunk865066.aL)())
     }, [Chunk823379]);

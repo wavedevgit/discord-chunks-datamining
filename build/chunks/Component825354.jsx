@@ -1,7 +1,7 @@
-/** Chunk was on 15582 **/
+/** Chunk was on 77678 **/
 /** chunk id: 825354, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,17 +13,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk923915 = require("./923915.js");
 
-function f(e) {
+function g(e) {
   let {
     widget: t,
     userId: n,
     className: a,
-    menuItems: f
-  } = e, g = i.useRef(null), p = () => {
+    menuItems: g
+  } = e, f = i.useRef(null), p = () => {
     (0, s.G1)(n, t)
   };
   return (0, r.jsx)(o.yRy, {
-    targetElementRef: g,
+    targetElementRef: f,
     align: "top",
     position: "right",
     disablePointerEvents: false,
@@ -45,7 +45,7 @@ function f(e) {
             action: p,
             color: "danger",
             icon: o.U65
-          }, "flag-widget"), f]
+          }, "flag-widget"), g]
         })
       })
     },
@@ -69,7 +69,7 @@ function f(e) {
         }
         return e
       }({}, e), n = n = {
-        innerRef: g,
+        innerRef: f,
         "aria-label": u.intl.string(u.t.xpSHSk),
         className: l()(d.button, a),
         children: (0, r.jsx)(o.xhG, {

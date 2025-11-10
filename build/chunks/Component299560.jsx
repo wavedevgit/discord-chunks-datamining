@@ -1,7 +1,7 @@
 /** Chunk was on 39380 **/
-/** chunk id: 299560, original params: e,l,a (module,exports,require) **/
+/** chunk id: 299560, original params: e,a,l (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk73686 = require("./73686.js");
-let N = {
+let I = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: () => ({
       variant: "details",
@@ -57,118 +57,118 @@ let N = {
       applicationId: e.applicationId
     }),
     icon: e => {
-      var l;
-      return null == (l = o.Z.getApplication(e.applicationId)) ? true : l.getIconURL(16)
+      var a;
+      return null == (a = d.Z.getApplication(e.applicationId)) ? true : a.getIconURL(16)
     },
     getAriaLabel: e => {
-      var l, a;
-      return A.intl.formatToPlainString(A.t.KfGahB, {
-        applicationName: null != (a = null == (l = o.Z.getApplication(e.applicationId)) ? true : l.name) ? a : ""
+      var a, l;
+      return N.intl.formatToPlainString(N.t.KfGahB, {
+        applicationName: null != (l = null == (a = d.Z.getApplication(e.applicationId)) ? true : a.name) ? l : ""
       })
     }
   }
 };
 
-function I(e) {
-  let l, {
-      widgetType: a,
+function E(e) {
+  let a, {
+      widgetType: l,
       onAddWidget: n,
-      size: o = "default",
+      size: d = "default",
       loading: u = false,
-      trackUserProfileEditAction: A
+      trackUserProfileEditAction: N
     } = e,
     {
-      placeholder: I,
+      placeholder: E,
       getAriaLabel: L,
-      icon: T
-    } = N[a],
-    b = "small" === o,
+      icon: _
+    } = I[l],
+    b = "small" === d,
     {
-      config: _
-    } = (0, f.G)(),
-    S = t.useMemo(() => {
-      switch (a) {
+      config: O
+    } = (0, x.G)(),
+    T = t.useMemo(() => {
+      switch (l) {
         case s.l.CURRENT_GAMES:
         case s.l.FAVORITE_GAMES:
         case s.l.PLAYED_GAMES:
         case s.l.WANT_TO_PLAY_GAMES:
-          return new m.zy({
-            type: a,
+          return new p.zy({
+            type: l,
             games: []
           });
         case s.l.APPLICATION:
-          let e = null == _ ? true : _.application_id;
+          let e = null == O ? true : O.application_id;
           if (null == e) return null;
-          return new p.q({
-            type: a,
+          return new m.q({
+            type: l,
             applicationId: e
           })
       }
-    }, [a, null == _ ? true : _.application_id]),
-    O = t.useCallback(() => {
-      u || null == S || ((0, v.qH)(a, S), A({
+    }, [l, null == O ? true : O.application_id]),
+    S = t.useCallback(() => {
+      u || null == T || ((0, v.qH)(l, T), N({
         action: "WIDGET_ADDED",
-        widgetEdited: a
-      }), (0, h.L$)(g.qb.WIDGET_ADDED), null == n || n())
-    }, [u, a, S, A, n]);
-  return (null != S && null != T && (l = T(S)), null == S) ? null : (0, i.jsxs)("div", {
-    className: E.addButtonContainer,
+        widgetEdited: l
+      }), (0, j.L$)(g.qb.WIDGET_ADDED), null == n || n())
+    }, [u, l, T, N, n]);
+  return (null != T && null != _ && (a = _(T)), null == T) ? null : (0, i.jsxs)("div", {
+    className: A.addButtonContainer,
     children: [(0, i.jsxs)(c.P3F, {
-      className: r()(E.addButtonContent, b && E.sizeSmall, u && E.loading),
-      onClick: O,
-      "aria-label": L(S),
+      className: r()(A.addButtonContent, b && A.sizeSmall, u && A.loading),
+      onClick: S,
+      "aria-label": L(T),
       "aria-busy": u,
       children: [(() => {
-        if (null == S) return null;
-        let e = I(S);
+        if (null == T) return null;
+        let e = E(T);
         switch (e.variant) {
           case "details":
-            return (0, i.jsx)(x.i, {
-              className: E.placeholderPadding,
+            return (0, i.jsx)(h.i, {
+              className: A.placeholderPadding,
               applicationId: e.applicationId,
-              size: o
+              size: d
             });
           case "grid":
-            return (0, i.jsx)(x.c, {
-              className: E.placeholderPadding,
+            return (0, i.jsx)(h.c, {
+              className: A.placeholderPadding,
               applicationIds: e.applicationIds,
-              size: o
+              size: d
             });
           case "application-widget":
-            return (0, i.jsx)(j.Z, {
+            return (0, i.jsx)(f.Z, {
               applicationId: e.applicationId,
-              size: o
+              size: d
             });
           default:
-            return (0, d.vE)(e)
+            return (0, o.vE)(e)
         }
       })(), (0, i.jsxs)("div", {
-        className: E.overlay,
+        className: A.overlay,
         children: [(0, i.jsx)(c.oFk, {
           size: "md",
           color: "currentColor",
-          className: E.addButton
+          className: A.addButton
         }), (0, i.jsxs)("div", {
-          className: E.title,
+          className: A.title,
           children: [(0, i.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "header-primary",
-            children: (0, v.mR)(S)
-          }), null != l ? (0, i.jsx)("img", {
-            src: l,
+            children: (0, v.mR)(T)
+          }), null != a ? (0, i.jsx)("img", {
+            src: a,
             alt: "",
             width: 16,
             height: 16,
-            className: E.icon
+            className: A.icon
           }) : null]
         })]
       })]
     }), (() => {
-      if (null == S) return null;
-      let e = I(S);
-      return "application-widget" === e.variant ? (0, i.jsx)(j.T, {
+      if (null == T) return null;
+      let e = E(T);
+      return "application-widget" === e.variant ? (0, i.jsx)(f.T, {
         applicationId: e.applicationId,
-        size: o
+        size: d
       }) : null
     })()]
   })

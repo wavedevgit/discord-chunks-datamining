@@ -1,53 +1,65 @@
-/** Chunk was on 45227 **/
-/** chunk id: 517730, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 517730, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  I: () => l
+  I: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js");
-let l = e => {
-  let {
-    sku: t,
-    application: l
-  } = e;
-  (0, r.ZDy)(async () => {
-    let {
-      SocialLayerStorefrontItemClaimedSuccessfullyModal: e
-    } = await n.e("21021").then(n.bind(n, 519193));
-    return n => {
-      var r, a;
-      return (0, i.jsx)(e, (r = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = i
-          })
-        }
-        return e
-      }({}, n), a = a = {
-        sku: t,
-        application: l
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
-        }
-        return n
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
-      }), r))
-    }
-  }, {
-    modalKey: "social-layer-storefront-item-claimed-successfully-modal"
-  })
+
+function a(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
 }
+
+function o(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      a(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function s(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function l(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let c = "social-layer-storefront-item-claimed-successfully-modal",
+  u = e => {
+    let {
+      sku: t,
+      application: a
+    } = e;
+    (0, i.ZDy)(async () => {
+      let {
+        SocialLayerStorefrontItemClaimedSuccessfullyModal: e
+      } = await n.e("21021").then(n.bind(n, 519193));
+      return n => (0, r.jsx)(e, l(o({}, n), {
+        sku: t,
+        application: a
+      }))
+    }, {
+      modalKey: c
+    })
+  }

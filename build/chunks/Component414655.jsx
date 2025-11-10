@@ -1,4 +1,4 @@
-/** Chunk was on 15582 **/
+/** Chunk was on 77678 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -92,7 +92,7 @@ function C(e) {
       currentUser: h.default.getCurrentUser(),
       wishlistSettings: null != e ? v.Z.getWishlistSettings(t.id, e) : null
     }
-  }), C = (0, g.c)({
+  }), C = (0, f.c)({
     location: "user-profile-modal-v2-wishlist"
   }), {
     analyticsLocations: D
@@ -112,7 +112,7 @@ function C(e) {
       analyticsLocations: D
     })
   }, [n, A, D]), B = i.useCallback(() => {
-    (0, o.pT)(), (0, f.mK)({
+    (0, o.pT)(), (0, g.mK)({
       analyticsLocations: D,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
     })

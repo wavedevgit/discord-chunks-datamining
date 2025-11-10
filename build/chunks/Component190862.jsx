@@ -1,4 +1,4 @@
-/** Chunk was on 15582 **/
+/** Chunk was on 77678 **/
 /** chunk id: 190862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -65,11 +65,11 @@ let y = e => {
           widget: t
         }, n));
       case i.l.WANT_TO_PLAY_GAMES:
-        return (0, r.jsx)(g.Z, b({
+        return (0, r.jsx)(f.Z, b({
           widget: t
         }, n));
       case i.l.PLAYED_GAMES:
-        return (0, r.jsx)(f.Z, b({
+        return (0, r.jsx)(g.Z, b({
           widget: t
         }, n));
       default:
@@ -84,9 +84,9 @@ let y = e => {
     } = e, u = h(e, ["widget", "user", "disableInteraction"]);
     let {
       shouldShowSuggestions: d,
-      handleDismissSuggestions: f
-    } = (0, c.h)(t), g = (0, a.e7)([l.default], () => l.default.getId() === n.id), v = g && !i && d, O = (0, o.mR)(t), j = (0, o.Hy)(t, {
-      isCurrentUser: g
+      handleDismissSuggestions: g
+    } = (0, c.h)(t), f = (0, a.e7)([l.default], () => l.default.getId() === n.id), v = f && !i && d, O = (0, o.mR)(t), j = (0, o.Hy)(t, {
+      isCurrentUser: f
     }), x = (0, o.kQ)(t), _ = 1 === (0, o.Gv)(t.type);
     return (0, r.jsx)(y, b({
       widget: t,
@@ -94,7 +94,7 @@ let y = e => {
       disableInteraction: i,
       headerTitle: O,
       headerSubtitle: j,
-      headerActionButtons: g && !_ ? [(0, r.jsx)(s.yX, {
+      headerActionButtons: f && !_ ? [(0, r.jsx)(s.yX, {
         disabled: x,
         widgetType: t.type,
         widget: t
@@ -102,7 +102,7 @@ let y = e => {
       trailingContent: v && (0, r.jsx)(p.Z, {
         userId: n.id,
         widgetType: t.type,
-        onDismiss: f,
+        onDismiss: g,
         className: m.suggestedGames
       })
     }, u))

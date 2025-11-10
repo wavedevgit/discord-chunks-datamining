@@ -2,14 +2,14 @@
 /** chunk id: 372113, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
-  Chunk28664 = require("./28664.jsx"),
+  Chunk681715 = require("./681715.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -32,48 +32,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk868317 = require("./868317.js");
-
-function w(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
+let w = (e, t, n) => (0, A.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
 
 function D(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      w(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function x(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let M = (e, t, n) => (0, A.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
-
-function j(e) {
   let {
     containerSize: t,
     onClick: n,
@@ -99,7 +60,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function x(e) {
   var t, n, r, i, a;
   let {
     quest: o,
@@ -144,60 +105,55 @@ function k(e) {
   }) : u
 }
 
-function U(e) {
+function L(e) {
+  var t;
   let {
-    quest: t,
-    progressState: n,
-    isCollectibleQuest: i,
-    questContent: a,
-    questContentPosition: o,
-    sourceQuestContent: l
-  } = e, c = n >= g.OH.COMPLETED, f = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), _ = (0, s.e7)([E.Z], () => E.Z.isEnrolling(t.id)), p = (0, m.q8)(t), h = (0, m.Vl)(t), b = (0, T.Ks)({
-    progressState: n,
-    quest: t,
-    questContent: a,
-    isCollectibleQuest: i,
-    questContentPosition: o,
+    quest: n,
+    progressState: i,
+    isCollectibleQuest: a,
+    questContent: o,
+    questContentPosition: c,
+    sourceQuestContent: f
+  } = e, _ = i >= g.OH.COMPLETED, p = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), h = (0, s.e7)([E.Z], () => E.Z.isEnrolling(n.id)), b = (0, m.q8)(n), y = (0, m.Vl)(n), O = (0, T.Ks)({
+    progressState: i,
+    quest: n,
+    questContent: o,
+    isCollectibleQuest: a,
+    questContentPosition: c,
     inGiftInventory: false,
-    isVideoQuest: p,
-    inGameQuest: h,
-    sourceQuestContent: l
-  }), y = c && !f;
-  return (0, r.jsx)(u.aML, {
-    text: b.tooltipText,
-    tooltipContentClassName: P.ctaTooltipText,
-    children: e => {
-      var t;
-      return y ? (0, r.jsx)(G, {
-        ctaConfig: b,
-        tooltipProps: e
-      }) : (0, r.jsx)(u.Button, L(D({}, e), {
-        fullWidth: true,
-        variant: "primary",
-        disabled: null == b.onClick,
-        loading: _,
-        onClick: null != (t = b.onClick) ? t : true,
-        text: b.text
-      }))
-    }
-  }, b.tooltipText)
+    isVideoQuest: b,
+    inGameQuest: y,
+    sourceQuestContent: f
+  }), v = _ && !p;
+  return (0, r.jsx)(l.u, {
+    text: O.tooltipText,
+    children: v ? (0, r.jsx)(M, {
+      ctaConfig: O
+    }) : (0, r.jsx)(u.Button, {
+      fullWidth: true,
+      variant: "primary",
+      disabled: null == O.onClick,
+      loading: h,
+      onClick: null != (t = O.onClick) ? t : true,
+      text: O.text
+    })
+  }, O.tooltipText)
 }
 
-function G(e) {
+function M(e) {
   var t, n;
   let {
-    ctaConfig: i,
-    tooltipProps: a
+    ctaConfig: i
   } = e, {
-    shouldUseShinyButton: s
+    shouldUseShinyButton: a
   } = y.Z.useConfig({
     location: "QuestsCardFooter"
-  }), l = (0, u.MgI)(), d = !!(null == l ? true : l.fullWidth);
-  return s ? (0, r.jsx)("div", {
+  }), s = (0, u.MgI)(), l = !!(null == s ? true : s.fullWidth);
+  return a ? (0, r.jsx)("div", {
     className: o()({
-      [P.fullWidthShinyCtaButtonWrapper]: d
+      [P.fullWidthShinyCtaButtonWrapper]: l
     }),
-    children: (0, r.jsx)(u.gtL, L(D({}, a), {
+    children: (0, r.jsx)(u.gtL, {
       "data-migration-pending": true,
       fullWidth: true,
       wrapperClassName: P.ctaButtonWrapper,
@@ -205,16 +161,16 @@ function G(e) {
       disabled: null == i.onClick,
       onClick: null != (t = i.onClick) ? t : true,
       children: i.text
-    }))
-  }) : (0, r.jsx)(u.Button, L(D({}, a), {
+    })
+  }) : (0, r.jsx)(u.Button, {
     fullWidth: true,
     variant: "primary",
     disabled: null == i.onClick,
     onClick: null != (n = i.onClick) ? n : true,
     text: i.text
-  }))
+  })
 }
-let B = e => {
+let j = e => {
   var t;
   let {
     quest: n,
@@ -226,11 +182,11 @@ let B = e => {
     isAnimating: y,
     contentPosition: T,
     sourceQuestContent: A
-  } = e, N = (0, g._Q)(n), w = (0, g.B6)(null == (t = n.userStatus) ? true : t.completedAt, {
+  } = e, N = (0, g._Q)(n), M = (0, g.B6)(null == (t = n.userStatus) ? true : t.completedAt, {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), D = N >= g.OH.ACCEPTED, x = N >= g.OH.COMPLETED, L = (0, m.Xv)(n.config), G = p || y, B = (0, g.t5)(n, C.dr.QUESTS_CARD, a, A), Z = (0, h.O5)(), F = i.useMemo(() => v.r.build(n.config), [n.config]), V = (0, g.Rf)(n), H = (0, O.DD)({
+  }), j = N >= g.OH.ACCEPTED, k = N >= g.OH.COMPLETED, U = (0, m.Xv)(n.config), G = p || y, B = (0, g.t5)(n, C.dr.QUESTS_CARD, a, A), Z = (0, h.O5)(), F = i.useMemo(() => v.r.build(n.config), [n.config]), V = (0, g.Rf)(n), H = (0, O.DD)({
     quest: n,
     taskDetails: V,
     location: C.dr.QUESTS_CARD,
@@ -247,7 +203,7 @@ let B = e => {
       questContentCTA: h.jZ.LEARN_MORE,
       sourceQuestContent: A
     })
-  }, K = (0, s.e7)([f.default], () => f.default.locale), z = _ && !x;
+  }, K = (0, s.e7)([f.default], () => f.default.locale), z = _ && !k;
   return (0, r.jsx)("div", {
     className: P.root,
     children: (0, r.jsxs)("div", {
@@ -287,7 +243,7 @@ let B = e => {
       }), (0, r.jsxs)("div", {
         className: P.taskDetails,
         children: [(0, r.jsx)(u.Text, {
-          variant: M(a, c, D),
+          variant: w(a, c, j),
           className: P.taskInstructions,
           children: _ ? R.intl.formatToPlainString(R.t["ge+AJp"], {
             questName: n.config.messages.questName
@@ -295,13 +251,13 @@ let B = e => {
         }), (0, r.jsx)(u.Text, {
           variant: "lg" === c ? "text-sm/medium" : "text-xs/medium",
           color: "text-muted",
-          children: k({
+          children: x({
             quest: n,
             locale: K,
             isQuestExpired: _,
             sharedQuestFields: F,
             collectibleQuestRewardDescription: H,
-            formattedCompletionDate: w
+            formattedCompletionDate: M
           })
         })]
       }), Y ? (0, r.jsxs)(u.ButtonGroup, {
@@ -322,14 +278,14 @@ let B = e => {
         align: "center",
         justify: "end",
         fullWidth: "lg" !== c,
-        children: [(0, r.jsx)(j, {
+        children: [(0, r.jsx)(D, {
           containerSize: c,
           onClick: W,
           text: R.intl.string(R.t.LLLLPD)
-        }), !z && (0, r.jsx)(U, {
+        }), !z && (0, r.jsx)(L, {
           quest: n,
           progressState: N,
-          isCollectibleQuest: L,
+          isCollectibleQuest: U,
           questContent: a,
           sourceQuestContent: A
         })]

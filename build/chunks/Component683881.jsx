@@ -1,7 +1,7 @@
-/** Chunk was on 15582 **/
+/** Chunk was on 77678 **/
 /** chunk id: 683881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk79116 = require("./79116.js"),
@@ -13,20 +13,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk778414 = require("./778414.jsx"),
   Chunk599026 = require("./599026.js");
 
-function f(e) {
+function g(e) {
   var t;
   let {
     scrollerRef: n
   } = e, {
-    isDragging: f,
-    item: g,
+    isDragging: g,
+    item: f,
     sourceClientOffset: p
   } = (0, i.f)(e => ({
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
   })), m = (0, a.e7)([o.default], () => o.default.getCurrentUser()), b = (0, l.zPA)();
-  if (true !== f || null == p || null == g) return null;
+  if (true !== g || null == p || null == f) return null;
   let h = null == n || null == (t = n.current) ? true : t.getBoundingClientRect();
   if (null == h || null == m) return null;
   let y = function(e, t) {
@@ -71,7 +71,7 @@ function f(e) {
       })
     }
     return null
-  }(g, m);
+  }(f, m);
   if (null == y) return null;
   let v = p.x - h.left - 60 * !!b,
     O = p.y - h.top;

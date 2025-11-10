@@ -1,4 +1,4 @@
-/** Chunk was on 15582 **/
+/** Chunk was on 77678 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -41,13 +41,13 @@ function w(e) {
     voiceActivityStatusEnabled: D
   } = (0, l.U)({
     location: "UserProfileModalV2Activity"
-  }), k = (0, f.b)({
+  }), k = (0, g.b)({
     location: "UserProfileModalV2Activity"
   }), {
     live: N,
     recent: A,
     stream: Z
-  } = (0, g.Z)(t.id), {
+  } = (0, f.Z)(t.id), {
     voiceChannel: R,
     voiceActivity: G
   } = (0, p.Z)({

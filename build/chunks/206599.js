@@ -1,4 +1,4 @@
-/** Chunk was on 15582 **/
+/** Chunk was on 77678 **/
 /** chunk id: 206599, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => d,
@@ -36,22 +36,22 @@ function u(e) {
       }
     }, [l, i, e, o, u])
   }(e);
-  let f = r.useMemo(() => {
+  let g = r.useMemo(() => {
       var t;
       return null != (t = d[e]) ? t : []
     }, [d, e]),
-    g = r.useCallback(t => {
+    f = r.useCallback(t => {
       o(t, e)
     }, [o, e]);
-  (0, s.qU)(f);
-  let p = (0, s.kN)(f),
+  (0, s.qU)(g);
+  let p = (0, s.kN)(g),
     [m, b] = r.useState([]),
-    h = (t = f.map(e => a.Z.isFetching(e)), r.useMemo(() => t.join("\x1f"), [t]));
+    h = (t = g.map(e => a.Z.isFetching(e)), r.useMemo(() => t.join("\x1f"), [t]));
   return r.useEffect(() => {
-    let t = f.filter(e => a.Z.noDataAvailable(e));
+    let t = g.filter(e => a.Z.noDataAvailable(e));
     t.length > 0 && u(t, e)
-  }, [h, f, e, u, p]), r.useEffect(() => {
-    b(f.map(e => {
+  }, [h, g, e, u, p]), r.useEffect(() => {
+    b(g.map(e => {
       let t = p[e];
       return {
         applicationId: e,
@@ -59,9 +59,9 @@ function u(e) {
         imageSrc: null == t ? true : t.coverImageUrl
       }
     }))
-  }, [f, p, e, n, l]), {
+  }, [g, p, e, n, l]), {
     games: m,
-    onAddGame: g
+    onAddGame: f
   }
 }
 
@@ -72,11 +72,11 @@ function d(e, t) {
   r.useEffect(() => {
     !n && e && l.Z.fetchSuggestedGames()
   }, [n, e]);
-  let f = n && !u;
+  let g = n && !u;
   r.useEffect(() => {
     var e, n;
-    if (!f) return;
+    if (!g) return;
     let r = t.map(e => e.games).flat();
     if (!a) d(null != (e = s.suggestedGamesIds) ? e : [], null != (n = s.suggestedWishlistGamesIds) ? n : [], r)
-  }, [f])
+  }, [g])
 }

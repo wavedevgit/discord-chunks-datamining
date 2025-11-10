@@ -2,18 +2,19 @@
 /** chunk id: 461655, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => _
 }), require("./953529.js"), require("./997841.js");
 var Chunk314877 = require("./314877.js"),
   Chunk81825 = require("./81825.js"),
   Chunk630388 = require("./630388.js"),
+  Chunk959546 = require("./959546.js"),
   Chunk46141 = require("./46141.js"),
   Chunk659181 = require("./659181.js"),
   Chunk255078 = require("./255078.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
 
-function d(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,12 +22,12 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class f extends Chunk81825.Z {
+class _ extends Chunk81825.Z {
   static createFromServer(e) {
-    let t = null != e.payment_source ? o.ZP.createFromServer(e.payment_source) : null,
-      n = null != e.sku ? s.Z.createFromServer(e.sku) : null,
-      r = null != e.subscription ? l.Z.createFromServer(e.subscription) : null;
-    return new f({
+    let t = null != e.payment_source ? s.ZP.createFromServer(e.payment_source) : null,
+      n = null != e.sku ? l.Z.createFromServer(e.sku) : null,
+      r = null != e.subscription ? c.Z.createFromServer(e.subscription) : null;
+    return new _({
       id: e.id,
       createdAt: new Date(e.created_at),
       currency: e.currency,
@@ -48,7 +49,8 @@ class f extends Chunk81825.Z {
       downloadableRefundInvoices: e.downloadable_refund_invoices,
       hasInvoiceURL: e.has_invoice_url,
       hasRefundInvoiceURLs: e.has_refund_invoice_urls,
-      premiumRefundDisqualificationReasons: e.premium_refund_disqualification_reasons
+      premiumRefundDisqualificationReasons: e.premium_refund_disqualification_reasons,
+      entitlements: null != e.entitlements ? e.entitlements.map(e => o.Z.createFromServer(e)) : true
     })
   }
   get isPurchasedViaApple() {
@@ -71,7 +73,7 @@ class f extends Chunk81825.Z {
       let {
         planId: t
       } = e;
-      return u.Z1.has(t)
+      return d.Z1.has(t)
     })
   }
   get isGift() {
@@ -91,6 +93,6 @@ class f extends Chunk81825.Z {
     return null != this.sku && this.sku.productLine === Chunk981631.POd.COLLECTIBLES
   }
   constructor(e) {
-    super(), d(this, "id", true), d(this, "createdAt", true), d(this, "currency", true), d(this, "tax", true), d(this, "taxInclusive", true), d(this, "amount", true), d(this, "amountRefunded", true), d(this, "status", true), d(this, "description", true), d(this, "hasInvoiceURL", true), d(this, "hasRefundInvoiceURLs", true), d(this, "downloadableInvoice", true), d(this, "downloadableRefundInvoices", true), d(this, "flags", true), d(this, "paymentSource", true), d(this, "paymentGateway", true), d(this, "subscription", true), d(this, "skuId", true), d(this, "skuPrice", true), d(this, "sku", true), d(this, "premiumRefundDisqualificationReasons", true), this.id = e.id, this.amount = e.amount, this.amountRefunded = e.amountRefunded, this.createdAt = e.createdAt, this.currency = e.currency, this.description = e.description, this.paymentSource = e.paymentSource, this.paymentGateway = e.paymentGateway, this.status = e.status, this.tax = e.tax, this.taxInclusive = e.taxInclusive, this.subscription = e.subscription, this.skuId = e.skuId, this.skuPrice = e.skuPrice, this.sku = e.sku, this.flags = e.flags, this.downloadableInvoice = e.downloadableInvoice, this.downloadableRefundInvoices = e.downloadableRefundInvoices, this.hasInvoiceURL = e.hasInvoiceURL, this.hasRefundInvoiceURLs = e.hasRefundInvoiceURLs, this.premiumRefundDisqualificationReasons = e.premiumRefundDisqualificationReasons
+    super(), f(this, "id", true), f(this, "createdAt", true), f(this, "currency", true), f(this, "tax", true), f(this, "taxInclusive", true), f(this, "amount", true), f(this, "amountRefunded", true), f(this, "status", true), f(this, "description", true), f(this, "hasInvoiceURL", true), f(this, "hasRefundInvoiceURLs", true), f(this, "downloadableInvoice", true), f(this, "downloadableRefundInvoices", true), f(this, "flags", true), f(this, "paymentSource", true), f(this, "paymentGateway", true), f(this, "subscription", true), f(this, "skuId", true), f(this, "skuPrice", true), f(this, "sku", true), f(this, "premiumRefundDisqualificationReasons", true), f(this, "entitlements", true), this.id = e.id, this.amount = e.amount, this.amountRefunded = e.amountRefunded, this.createdAt = e.createdAt, this.currency = e.currency, this.description = e.description, this.paymentSource = e.paymentSource, this.paymentGateway = e.paymentGateway, this.status = e.status, this.tax = e.tax, this.taxInclusive = e.taxInclusive, this.subscription = e.subscription, this.skuId = e.skuId, this.skuPrice = e.skuPrice, this.sku = e.sku, this.flags = e.flags, this.downloadableInvoice = e.downloadableInvoice, this.downloadableRefundInvoices = e.downloadableRefundInvoices, this.hasInvoiceURL = e.hasInvoiceURL, this.hasRefundInvoiceURLs = e.hasRefundInvoiceURLs, this.premiumRefundDisqualificationReasons = e.premiumRefundDisqualificationReasons, this.entitlements = e.entitlements
   }
 }
