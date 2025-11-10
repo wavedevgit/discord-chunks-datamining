@@ -1,3 +1,0 @@
-/** Chunk was on 60675 **/
-/** chunk id: 170097, original params: e (module,exports,require) **/
-module.exports = JSON.parse('{"JA5C7L":["Temizle"],"db85vU":["G\xf6sterilecek \xf6ğe yok"],"bPKiId":["\\"",[1,"query"],"\\" i\xe7in sonu\xe7 bulunamadı"],"WfH9in":["Kapat"],"m3Vfcs":["Bunu bir daha g\xf6sterme?"],"cgdAs2":["(Yeni bir sekmede a\xe7ılır)"],"/Y7vRd":["Kaldırmak i\xe7in sil butonuna bas."],"VMNfsY":["Se\xe7ilenler"],"A+pfVR":["Se\xe7..."],"YpT3kk":["G\xf6r\xfcnt\xfcy\xfc b\xfcy\xfct ve videoyu oynat"]}')

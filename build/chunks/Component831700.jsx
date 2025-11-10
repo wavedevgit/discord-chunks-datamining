@@ -1,4 +1,4 @@
-/** Chunk was on 94709 **/
+/** Chunk was on 31899 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ei
@@ -52,7 +52,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk33082 = require("./33082.js");
+  Chunk55940 = require("./55940.js");
 
 function $(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -111,11 +111,11 @@ class en extends Chunk98597.ZP {
       sortingPosition: t,
       isUserOver: n
     } = this.props;
-    if (require) return Chunk33082.containerUserOver;
+    if (require) return Chunk55940.containerUserOver;
     if (null != exports)
-      if (module > exports) return Chunk33082.containerDragAfter;
-      else return Chunk33082.containerDragBefore;
-    return Chunk33082.containerDefault
+      if (module > exports) return Chunk55940.containerDragAfter;
+      else return Chunk55940.containerDragBefore;
+    return Chunk55940.containerDefault
   }
   renderSubtitle() {
     var e;
@@ -160,7 +160,7 @@ class en extends Chunk98597.ZP {
       channelInfo: e
     } = this.props;
     return null == module ? null : (0, Chunk951288.jsx)("div", {
-      className: Chunk33082.channelInfo,
+      className: Chunk55940.channelInfo,
       children: module
     })
   }
@@ -194,7 +194,7 @@ class en extends Chunk98597.ZP {
     } = this.state, Z = this.getVoiceStatesCount(), w = (0, Chunk951288.jsxs)("li", {
       ref: this.ref,
       className: o()(this.getModeClass(), {
-        [Chunk33082.disabled]: this.isDisabled()
+        [Chunk55940.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
       children: [(0, Chunk951288.jsx)("div", {
@@ -211,9 +211,9 @@ class en extends Chunk98597.ZP {
             text: this.getTooltipText(),
             children: (0, Chunk951288.jsxs)(Chunk473403.ZP, {
               ref: this.channelItemRef,
-              className: Chunk33082.iconVisibility,
+              className: Chunk55940.iconVisibility,
               iconClassName: o()({
-                [Chunk33082.iconLive]: Chunk557135 || Chunk66999
+                [Chunk55940.iconLive]: Chunk557135 || Chunk66999
               }),
               hasActiveEvent: Chunk557135,
               channel: module,

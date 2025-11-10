@@ -6,12 +6,12 @@ require.d(exports, {
 });
 var Chunk760919 = require("./760919.js"),
   Chunk372780 = require("./372780.js"),
-  Chunk973805 = require("./973805.js");
+  Chunk216397 = require("./216397.js");
 let s = new Chunk760919.Z({
   id: "p3",
   cssId: "display-p3",
   name: "P3",
   base: Chunk372780.Z,
-  fromBase: Chunk973805.Z.fromBase,
-  toBase: Chunk973805.Z.toBase
+  fromBase: Chunk216397.Z.fromBase,
+  toBase: Chunk216397.Z.toBase
 })

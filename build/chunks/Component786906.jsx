@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk707878 = require("./707878.jsx"),
   Chunk518084 = require("./518084.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk507161 = require("./507161.js");
+  Chunk846602 = require("./846602.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -74,7 +74,7 @@ class Z extends Chunk647438.Component {
       showOpacitySlider: g
     } = this.state;
     return Chunk523746 && !require ? (0, Chunk951288.jsxs)(Chunk518084.ZP.Bar, {
-      className: Chunk507161.opacityHeader,
+      className: Chunk846602.opacityHeader,
       children: [(0, Chunk951288.jsx)(Chunk707878.Z, {}), (0, Chunk951288.jsx)(Chunk984370.Z.Icon, {
         icon: Chunk481060.Dio,
         onClick: this.handleCloseOpacitySettings,
@@ -83,7 +83,7 @@ class Z extends Chunk647438.Component {
     }) : (0, Chunk951288.jsx)(Chunk518084.ZP.Background, {
       opacityOverride: require || Chunk933557 ? null : 1,
       children: (0, Chunk951288.jsx)("div", {
-        className: o()(module, exports, Chunk507161.headerContainer),
+        className: o()(module, exports, Chunk846602.headerContainer),
         onMouseDown: Chunk13245,
         onContextMenu: Chunk287734,
         children: (0, Chunk951288.jsxs)(Chunk984370.Z, {
@@ -94,7 +94,7 @@ class Z extends Chunk647438.Component {
           children: [Chunk933557 || require || Chunk131704 ? null : (0, Chunk951288.jsx)(Chunk481060.Vni, {
             size: "custom",
             color: "currentColor",
-            className: o()(Chunk507161.dragIcon, exports),
+            className: o()(Chunk846602.dragIcon, exports),
             width: 20,
             height: 20
           }), (0, Chunk910611.ud)({
@@ -178,14 +178,14 @@ function C(e) {
     }
     return r
   }(e, ["channel"]);
-  let r = (0, l.e7)([O.Z, m.Z], () => {
-      let e = O.Z.getVoiceChannelId();
+  let r = (0, l.e7)([_.Z, m.Z], () => {
+      let e = _.Z.getVoiceChannelId();
       return m.Z.getChannel(e)
     }),
     s = (0, l.e7)([y.Z], () => y.Z.getGuild(t.guild_id)),
     o = (0, l.e7)([g.Z], () => g.Z.isCallActive(t.id)),
     a = (0, u.ZP)(t),
-    c = (0, l.e7)([_.Z], () => !!t.isDM() && null != t.getRecipientId() && _.Z.isBlocked(t.getRecipientId()));
+    c = (0, l.e7)([O.Z], () => !!t.isDM() && null != t.getRecipientId() && O.Z.isBlocked(t.getRecipientId()));
   return (0, i.jsx)(Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

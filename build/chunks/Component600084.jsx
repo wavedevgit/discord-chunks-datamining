@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 600084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -40,8 +40,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk40036 = require("./40036.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk963392 = require("./963392.js"),
+  Chunk197571 = require("./197571.js");
 
 function V(e) {
   let {
@@ -73,7 +73,7 @@ function F(e) {
     showingBanner: h
   } = e, C = (0, d.ZP)(p), {
     type: _
-  } = p, P = (0, l.e7)([O.default], () => p.isPrivate() ? O.default.getUser(p.getRecipientId()) : null), A = j.ZP.useUserTag(P), {
+  } = p, P = (0, l.e7)([j.default], () => p.isPrivate() ? j.default.getUser(p.getRecipientId()) : null), A = O.ZP.useUserTag(P), {
     canManageRoles: M,
     canReadMessageHistory: R
   } = (0, l.cj)([x.Z], () => ({

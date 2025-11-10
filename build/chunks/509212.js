@@ -665,7 +665,7 @@ let eX = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
     let a = Math.min(r * e0, e$(e, t));
     return Math.max((0, i.floor)(a, 2), 0)
   },
-  e2 = e => {
+  e3 = e => {
     var t, n, r;
     let {
       quest: i,
@@ -686,7 +686,7 @@ let eX = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
       applications: p
     }
   },
-  e3 = e => o.T.ALL.has(e) ? e : null,
+  e2 = e => o.T.ALL.has(e) ? e : null,
   e4 = e => {
     var t, n;
     let {
@@ -699,14 +699,14 @@ let eX = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
           a = null == t || null == (r = t.heartbeat) ? true : r.lastBeatAt;
         return null != i && null != a ? new Date(i).valueOf() > new Date(a).valueOf() ? false : 1 : null == i && null == a && (null == e ? true : e.updatedAt) != null && (null == t ? true : t.updatedAt) != null ? new Date(e.updatedAt).valueOf() > new Date(t.updatedAt).valueOf() ? false : 1 : null != i && null == a ? false : 1
       }).filter(A.lm)) {
-      let t = e3(e.eventName);
-      if (null != t && (null == i ? true : i.has(t))) return e2({
+      let t = e2(e.eventName);
+      if (null != t && (null == i ? true : i.has(t))) return e3({
         quest: r,
         taskType: t,
         includeTaskTypes: i
       })
     }
-    return e2({
+    return e3({
       quest: r,
       includeTaskTypes: i
     })
@@ -724,21 +724,21 @@ let eX = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
       includeTaskTypes: null != t ? t : td(e) ? o.T.CONSOLE : o.T.ALL
     });
     if (ta(e))
-      if (ts(e)) return e2({
+      if (ts(e)) return e3({
         quest: e,
         taskType: o.X.WATCH_VIDEO_ON_MOBILE
       });
-      else return e2({
+      else return e3({
         quest: e,
         taskType: o.X.WATCH_VIDEO
       });
-    return eZ(e) ? e2({
+    return eZ(e) ? e3({
       quest: e,
       taskType: o.X.PLAY_ON_DESKTOP
-    }) : eB(e) ? e2({
+    }) : eB(e) ? e3({
       quest: e,
       taskType: o.X.PLAY_ACTIVITY
-    }) : e2({
+    }) : e3({
       quest: e,
       taskType: o.X.STREAM_ON_DESKTOP
     })

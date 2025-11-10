@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 304745, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => P
@@ -43,7 +43,7 @@ function P(e) {
     surface: c.eR.VOICE_LAUNCHER
   }), k = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), U = !A, B = r.useCallback(e => {
     "focus" !== e.type && R()
-  }, [R]), H = (0, v.bp)() === j.IlC.POPOUT, {
+  }, [R]), H = (0, v.bp)() === O.IlC.POPOUT, {
     parentAnalyticsLocation: V,
     newestAnalyticsLocation: F
   } = (0, g.ZP)(), G = r.useCallback(() => {
@@ -71,7 +71,7 @@ function P(e) {
       return W.current && !c && l(E.L.AUTO_DISMISS), W.current !== c && (W.current = c), (0, i.jsx)(s.yRy, {
         targetElementRef: q,
         fixed: true,
-        shouldShow: w && (P === O.D.ACTIVITY || null == P),
+        shouldShow: w && (P === j.D.ACTIVITY || null == P),
         animation: s.yRy.Animation.FADE,
         animationPosition: "top",
         position: "top",

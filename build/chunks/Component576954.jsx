@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 576954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => _
@@ -61,16 +61,16 @@ function _(e) {
     warningId: _,
     senderId: x
   } = e, {
-    isBlocked: O
+    isBlocked: j
   } = (0, a.cj)([p.Z], () => ({
     isBlocked: p.Z.isBlocked(x)
-  }), [x]), j = r.useCallback(() => {
+  }), [x]), O = r.useCallback(() => {
     (0, h.T)(t, [_])
   }, [t, _]), E = (0, b.C2)(), S = r.useCallback(e => () => {
     s.Z.blockUser(x, {
       location: b.zr
     }).then(() => {
-      j()
+      O()
     }), (0, m.qc)({
       channelId: t,
       warningId: _,
@@ -78,7 +78,7 @@ function _(e) {
       warningType: f.pj.STRANGER_DANGER,
       cta: e
     })
-  }, [j, t, _, x]);
+  }, [O, t, _, x]);
   r.useEffect(() => {
     (0, m.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
@@ -134,7 +134,7 @@ function _(e) {
       (0, o.ZDy)(async () => {
         let {
           default: a
-        } = await Promise.all([n.e("97652"), n.e("20838")]).then(n.bind(n, 744373));
+        } = await Promise.all([n.e("97652"), n.e("72442")]).then(n.bind(n, 744373));
         return n => {
           var o, s;
           return (0, i.jsx)(a, (o = function(e) {
@@ -186,7 +186,7 @@ function _(e) {
     warningType: f.pj.STRANGER_DANGER,
     header: C.intl.string(C.t.iOkDpM),
     description: C.intl.string(C.t.ISUbcM),
-    onDismiss: j,
+    onDismiss: O,
     buttons: [{
       text: C.intl.string(C.t["Qk/c48"]),
       variant: "primary",
@@ -199,7 +199,7 @@ function _(e) {
           cta: m.NM.OPEN_MORE_TIPS
         })
       }
-    }, ...O ? [] : [{
+    }, ...j ? [] : [{
       text: C.intl.string(C.t.ie0QdN),
       variant: "critical-primary",
       onClick: () => I(m.NM.USER_BANNER_BLOCK_CONFIRM, m.NM.USER_BANNER_BLOCK_CANCEL)

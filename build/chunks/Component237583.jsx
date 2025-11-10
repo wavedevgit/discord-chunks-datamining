@@ -10,8 +10,8 @@ var r, Chunk951288 = require("./951288.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk598077 = require("./598077.js"),
-  Chunk231246 = require("./231246.js"),
-  Chunk492297 = require("./492297.js");
+  Chunk322991 = require("./322991.js"),
+  Chunk103126 = require("./103126.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,22 +38,22 @@ class p extends(r = Chunk647438.PureComponent) {
     } = this.props, i = [], a = module.length === exports ? module.length : exports - 1, o = 0;
     for (; Chunk120356 < Chunk647438 && Chunk120356 < module.length;) {
       let t = Chunk120356 === module.length - 1;
-      Chunk951288.push(require(module[Chunk120356] || null, exports ? null : Chunk231246.avatarMasked, "user-".concat(Chunk120356), exports)), Chunk120356++
+      Chunk951288.push(require(module[Chunk120356] || null, exports ? null : Chunk322991.avatarMasked, "user-".concat(Chunk120356), exports)), Chunk120356++
     }
     if (Chunk120356 < module.length) {
       let t = Math.min(module.length - Chunk120356, 99);
-      Chunk951288.push(r("+".concat(exports), Chunk231246.moreUsers, "more-users", exports))
+      Chunk951288.push(r("+".concat(exports), Chunk322991.moreUsers, "more-users", exports))
     }
     return Chunk951288
   }
   renderIcon() {
     return this.props.icon ? (0, Chunk951288.jsx)("div", {
-      className: Chunk231246.iconContainer,
+      className: Chunk322991.iconContainer,
       children: (0, Chunk951288.jsx)(Chunk481060.gj8, {
         size: "xs",
         color: "currentColor",
-        colorClass: Chunk231246.foreground,
-        className: Chunk231246.icon
+        colorClass: Chunk322991.foreground,
+        className: Chunk322991.icon
       })
     }) : null
   }
@@ -62,7 +62,7 @@ class p extends(r = Chunk647438.PureComponent) {
       className: e
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
-      className: s()(module, Chunk231246.container),
+      className: s()(module, Chunk322991.container),
       ref: e => {
         this._ref = e
       },

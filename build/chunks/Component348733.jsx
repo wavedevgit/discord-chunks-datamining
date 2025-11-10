@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk624864 = require("./624864.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk745466 = require("./745466.js");
+  Chunk991168 = require("./991168.js");
 
 function y(e) {
   let {
@@ -25,8 +25,8 @@ function y(e) {
     keybind: n
   } = e, s = r.useRef(null), p = (0, a.Wu)([c.Z], () => c.Z.getNotifications()), y = (0, a.e7)([d.default], () => d.default.getNotificationPositionMode());
   if ((0, a.e7)([h.Z], () => h.Z.isNotificationDisabled(f.n0.TextChat)) || y === g._vf.DISABLED) return null;
-  let O = p.filter(e => !t || e.status !== g._1z.TIMED_OUT),
-    b = (0, l.groupBy)(O, e => e.type);
+  let _ = p.filter(e => !t || e.status !== g._1z.TIMED_OUT),
+    b = (0, l.groupBy)(_, e => e.type);
   return (0, i.jsx)(u.Z, {
     contentDomRef: s,
     observeInterval: 200,
@@ -35,7 +35,7 @@ function y(e) {
       className: o()(m.container, m[y]),
       children: Object.entries(b).map(e => {
         let [r, s] = e;
-        return 0 === s.length ? null : (0, i.jsx)(_, {
+        return 0 === s.length ? null : (0, i.jsx)(O, {
           locked: t,
           keybind: n,
           position: y,
@@ -46,7 +46,7 @@ function y(e) {
   })
 }
 
-function _(e) {
+function O(e) {
   let {
     notification: t,
     position: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 128557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M,
@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231873 = require("./231873.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk797553 = require("./797553.js");
+  Chunk183334 = require("./183334.js");
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -131,7 +131,7 @@ function M(e) {
         }), null != e && (0, u.ZDy)(async () => {
           let {
             default: t
-          } = await Promise.all([n.e("49049"), n.e("7654"), n.e("89334")]).then(n.bind(n, 560114));
+          } = await Promise.all([n.e("49049"), n.e("7654"), n.e("68971")]).then(n.bind(n, 560114));
           return n => (0, i.jsx)(t, A(N({}, n), {
             guild: e,
             source: P.t4x.CHANNEL_WELCOME,
@@ -277,7 +277,7 @@ function M(e) {
       completed: U,
       onClick: V
     })
-  }, "message")), (0, j.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
+  }, "message")), (0, O.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: W ? {
       opacity: K[Q.length]
@@ -302,7 +302,7 @@ function M(e) {
   }, "addapp")));
   let $ = _ ? Z.intl.string(Z.t["1ach9C"]) : Z.intl.string(Z.t["ezm+/j"]);
   p && ($ = Z.intl.string(Z.t["gwyU/J"]));
-  let ee = "".concat(O.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
+  let ee = "".concat(j.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, i.jsx)(S.ZP, {
     channelId: t.id,
     children: (0, i.jsx)("div", {

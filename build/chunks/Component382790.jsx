@@ -18,9 +18,9 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk483962 = require("./483962.jsx"),
   Chunk711553 = require("./711553.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk499231 = require("./499231.js");
+  Chunk585816 = require("./585816.js");
 
-function O(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,8 +54,8 @@ class v extends(i = Chunk647438.PureComponent) {
       children: (0, Chunk951288.jsx)(Chunk483962.Z, {})
     }), o = require ? "div" : Chunk518084.ZP;
     return (0, Chunk951288.jsxs)(Chunk120356, {
-      className: l()(Chunk499231.base, {
-        [Chunk499231.widget]: !require
+      className: l()(Chunk585816.base, {
+        [Chunk585816.widget]: !require
       }, i),
       children: [(0, Chunk951288.jsx)(Chunk416568.Z, {
         isOverlay: true,
@@ -65,7 +65,7 @@ class v extends(i = Chunk647438.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), O(this, "onDragStart", e => {
+    super(...e), _(this, "onDragStart", e => {
       let {
         dragStart: t
       } = this.props;
@@ -73,7 +73,7 @@ class v extends(i = Chunk647438.PureComponent) {
     })
   }
 }
-O(v, "defaultProps", {
+_(v, "defaultProps", {
   contained: false
 });
 let E = Chunk442837.ZP.connectStores([Chunk914010.Z], () => ({

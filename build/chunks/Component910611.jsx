@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 910611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   TS: () => H,
@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk161655 = require("./161655.js");
+  Chunk97009 = require("./97009.js");
 
 function L(e) {
   var t;
@@ -46,7 +46,7 @@ function L(e) {
     children: r
   } = e, l = (0, d.q)(null == (t = n.linkedLobby) ? true : t.application_id), [a, o] = (0, m.US)([s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], true, true);
   if (null == l) return null;
-  let p = j.ZP.getApplicationIconURL({
+  let p = O.ZP.getApplicationIconURL({
       id: l.id,
       icon: l.icon,
       size: 14
@@ -216,20 +216,20 @@ function D(e) {
             onContextMenu: m,
             onClick: p,
             className: a()(R.parentChannelName, R.cursorPointer),
-            children: (0, h.F6)(l, O.default, _.Z)
+            children: (0, h.F6)(l, j.default, _.Z)
           }), (0, i.jsx)(T.Z.Caret, {})]
         })
       }
-      let j = (null == l ? true : l.type) != null && A.TPd.GUILD_THREADS_ONLY.has(l.type);
+      let O = (null == l ? true : l.type) != null && A.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, i.jsxs)(r.Fragment, {
-        children: [x, B(j ? null : b, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(T.Z.Title, {
+        children: [x, B(O ? null : b, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(T.Z.Title, {
           level: C,
           onContextMenu: d,
           onClick: c,
           className: a()({
             [R.cursorPointer]: s,
-            [R.forumPostTitle]: j,
-            [R.forumPostSidebarTitle]: s && j
+            [R.forumPostTitle]: O,
+            [R.forumPostSidebarTitle]: s && O
           }),
           children: v
         })]
@@ -259,7 +259,7 @@ let k = e => {
   var t, n, l;
   let {
     channel: a
-  } = e, s = (0, o.e7)([O.default], () => O.default.getCurrentUser()), c = (0, o.e7)([O.default], () => O.default.getUser(a.getRecipientId())), u = (0, S.G)(), d = (0, o.e7)([C.Z], () => null != c ? C.Z.getUserProfile(c.id) : null), h = null != d && (null != (t = null == d ? true : d.fetchEndedAt) ? t : 0) > 0;
+  } = e, s = (0, o.e7)([j.default], () => j.default.getCurrentUser()), c = (0, o.e7)([j.default], () => j.default.getUser(a.getRecipientId())), u = (0, S.G)(), d = (0, o.e7)([C.Z], () => null != c ? C.Z.getUserProfile(c.id) : null), h = null != d && (null != (t = null == d ? true : d.fetchEndedAt) ? t : 0) > 0;
   return (r.useEffect(() => {
     (null == s ? true : s.isStaff()) && null != c && !c.isStaff() && (0, v.Z)(c.id, c.getAvatarURL(true, 80), {
       dispatchWait: true,

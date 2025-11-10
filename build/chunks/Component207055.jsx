@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 207055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => U
@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk262317 = require("./262317.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk524484 = require("./524484.js"),
-  Chunk106252 = require("./106252.js");
+  Chunk968080 = require("./968080.js");
 let D = Chunk647438.memo(e => {
   var t, n, r, l;
   let {
@@ -46,7 +46,7 @@ let D = Chunk647438.memo(e => {
     channel: P,
     sessionId: I,
     nick: L
-  } = e, D = x.id, k = (0, o.e7)([j.default], () => j.default.getId() === D, [D]), [U, B, H] = (0, o.Wu)([S.Z], () => k ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(D), false, S.Z.isLocalVideoDisabled(D)], [k, D]), V = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(D)), F = (0, c.Z)({
+  } = e, D = x.id, k = (0, o.e7)([O.default], () => O.default.getId() === D, [D]), [U, B, H] = (0, o.Wu)([S.Z], () => k ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(D), false, S.Z.isLocalVideoDisabled(D)], [k, D]), V = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(D)), F = (0, c.Z)({
     userId: D,
     checkSoundSharing: true
   }), G = (0, o.e7)([T.Z], () => T.Z.isCurrentUserPTTLatched()), z = k && G, W = (0, o.e7)([E.ZP], () => E.ZP.isGuestOrLurker(P.guild_id, D)), q = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(P.id).has(D)), K = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).find(e => {
@@ -54,7 +54,7 @@ let D = Chunk647438.memo(e => {
       userIds: t
     } = e;
     return t.has(D)
-  }), [D, P.id]), Y = (0, p.Z)(null != K ? [K.applicationId] : []), X = (0, v.Z)(D, P.guild_id)[0], J = null != (n = (0, d.IX)(null == X ? true : X.application_id).data) ? n : true, [Q, $] = (0, o.Wu)([O.Z], () => [O.Z.getStreamForUser(D, P.getGuildId()), O.Z.getActiveStreamForUser(D, P.getGuildId())], [P, D]), ee = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(I)), et = A.ZP.useName(x), en = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(P.id, D), [P.id, D]), {
+  }), [D, P.id]), Y = (0, p.Z)(null != K ? [K.applicationId] : []), X = (0, v.Z)(D, P.guild_id)[0], J = null != (n = (0, d.IX)(null == X ? true : X.application_id).data) ? n : true, [Q, $] = (0, o.Wu)([j.Z], () => [j.Z.getStreamForUser(D, P.getGuildId()), j.Z.getActiveStreamForUser(D, P.getGuildId())], [P, D]), ee = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(I)), et = A.ZP.useName(x), en = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(P.id, D), [P.id, D]), {
     enableHangStatus: ei
   } = (0, m.bN)({
     guildId: P.guild_id,
@@ -140,15 +140,15 @@ let k = [],
       className: y,
       children: C,
       isThread: v = false
-    } = e, [O, E] = r.useState(null), [S, Z] = r.useState(false), T = r.useRef(null), N = (0, _.Es)(l.id, null != c ? c : k), A = r.useRef(new s.sW(50, () => {
+    } = e, [j, E] = r.useState(null), [S, Z] = r.useState(false), T = r.useRef(null), N = (0, _.Es)(l.id, null != c ? c : k), A = r.useRef(new s.sW(50, () => {
       E(T.current), T.current = null
     })), R = r.useRef(new s.sW(175, () => {
       E(null)
     })), U = r.useCallback(e => {
       t && (Z(true), R.current.cancel(), T.current = e, A.current.delay())
     }, [t]), B = r.useCallback(e => {
-      t && (A.current.cancel(), O === e && (Z(false), R.current.delay()))
-    }, [t, O]), H = (0, o.Wu)([I.Z], () => {
+      t && (A.current.cancel(), j === e && (Z(false), R.current.delay()))
+    }, [t, j]), H = (0, o.Wu)([I.Z], () => {
       if (u) return [];
       let e = new Set;
       return null == N || N.forEach(t => {
@@ -175,7 +175,7 @@ let k = [],
           return (0, i.jsx)(D, {
             user: a,
             nick: o,
-            isSelfOnOtherClient: j.default.getId() === a.id && s.sessionId !== j.default.getSessionId(),
+            isSelfOnOtherClient: O.default.getId() === a.id && s.sessionId !== O.default.getSessionId(),
             mute: s.isVoiceMuted(),
             deaf: s.isVoiceDeafened(),
             video: s.selfVideo,
@@ -188,7 +188,7 @@ let k = [],
             showPreview: U,
             hidePreview: B,
             previewIsOpen: S,
-            shouldShowHoverPopout: O === a.id,
+            shouldShowHoverPopout: j === a.id,
             tabIndex: f,
             location: m
           }, "voice-user-".concat(a.id, "-").concat(c))

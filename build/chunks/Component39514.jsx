@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk423527 = require("./423527.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10198 = require("./10198.js");
+  Chunk197571 = require("./197571.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -108,14 +108,14 @@ class R extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Ee, {
         src: require("./167969.js"),
-        className: Chunk10198.marginBottom8
+        className: Chunk197571.marginBottom8
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
-        className: l()(Chunk10198.marginTop8, Chunk10198.marginBottom8),
+        className: l()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.KPowgn)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t.j8734b)
       }), (0, Chunk951288.jsx)("div", {
-        className: l()(Chunk10198.marginTop40, Chunk10198.marginBottom8),
+        className: l()(Chunk197571.marginTop40, Chunk197571.marginBottom8),
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
           fullWidth: true,
@@ -131,12 +131,12 @@ class R extends Chunk647438.PureComponent {
   renderAppOpened() {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
-        className: Chunk10198.marginBottom8,
+        className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.csrAMJ)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t["m1+IBn"])
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk10198.marginTop40,
+        className: Chunk197571.marginTop40,
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           text: Chunk388032.intl.string(Chunk388032.t["qsI+EH"]),
           fullWidth: true,

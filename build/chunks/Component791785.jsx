@@ -47,7 +47,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk695694 = require("./695694.js");
+  Chunk876414 = require("./876414.js");
 
 function W(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -205,7 +205,7 @@ function J(e) {
       eI(null == (e = A.Z.get(j)) ? true : e.skuId)
     }
   }, [eT, eS, eI, j, ec, eG, eE]);
-  let e2 = i.useCallback(() => {
+  let e3 = i.useCallback(() => {
       let e = (0, R.MY)(eY) === R.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD,
         t = Date.now();
       N.default.track(F.rMx.PAYMENT_FLOW_SUCCEEDED, q(K({}, eJ), {
@@ -225,7 +225,7 @@ function J(e) {
       });
       eH && null != eY && null != a && n && (0, O.n)(a) && (0, y.Ni)(eY.id)
     }, [eJ, eK, eW, eY, eH, ez, ew.startTime, e0, a]),
-    e3 = i.useMemo(() => () => null == B ? true : B(ey === L.A.COMPLETED, ev), [B, ey, ev]),
+    e2 = i.useMemo(() => () => null == B ? true : B(ey === L.A.COMPLETED, ev), [B, ey, ev]),
     e4 = (0, s.Z)(() => Date.now(), [eP]),
     e8 = i.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
@@ -236,7 +236,7 @@ function J(e) {
           emitPaymentFlowLoadedEvent: a
         } = t,
         o = Date.now();
-      if (e === x.h8.CONFIRM && (e2(), null == m || m(i), eg)) return void e3();
+      if (e === x.h8.CONFIRM && (e3(), null == m || m(i), eg)) return void e2();
       eC(e), null == eu || eu(e), eN(null), eA(null), e === x.h8.ADD_PAYMENT_STEPS && (u.Z.wait(f.fw), u.Z.wait(_.pB));
       let s = null != n ? n : eP;
       if (null === s || a) return void N.default.track(F.rMx.PAYMENT_FLOW_LOADED, q(K({}, eJ), {
@@ -250,13 +250,13 @@ function J(e) {
         step_duration_ms: o - e4,
         flow_duration_ms: o - ew.startTime
       }))
-    }, [eC, eu, eN, eA, eP, eE, eJ, e4, ew.startTime, e2, m, eg, e3, eM]);
-  (0, I.bp)(eP, eR, e8, eO), (0, x.dZ)(eP, ey, eO), (0, S.p)(eP, eD, e8), (0, E.Z)(e3), (0, T.w)(ex, () => B(false), eH), (0, I.D6)(eR);
+    }, [eC, eu, eN, eA, eP, eE, eJ, e4, ew.startTime, e3, m, eg, e2, eM]);
+  (0, I.bp)(eP, eR, e8, eO), (0, x.dZ)(eP, ey, eO), (0, S.p)(eP, eD, e8), (0, E.Z)(e2), (0, T.w)(ex, () => B(false), eH), (0, I.D6)(eR);
   let e5 = {
       initialPlanId: j,
       subscriptionTier: k,
       handleStepChange: e8,
-      handleClose: e3,
+      handleClose: e2,
       analyticsData: eJ,
       setAnalyticsData: e$,
       trialId: W,
@@ -276,7 +276,7 @@ function J(e) {
     e6 = (0, G.U)({
       renderHeader: ea,
       referralTrialOfferId: el,
-      handleClose: e3
+      handleClose: e2
     });
   return (0, r.jsx)(c.UkV, {
     className: Y.shaker,

@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 786915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -47,8 +47,8 @@ function C(e) {
     exitFullScreen: v,
     appContext: _,
     analyticsLocation: x,
-    guildScheduledEvent: O,
-    shouldPrioritizeGroupPlusIcon: j = false,
+    guildScheduledEvent: j,
+    shouldPrioritizeGroupPlusIcon: O = false,
     isRichPresenceInvite: E = false,
     iconClassName: S,
     look: P,
@@ -77,7 +77,7 @@ function C(e) {
     M = null == C ? true : C.getGuildId(),
     R = (0, a.e7)([p.Z], () => null != M ? p.Z.getGuild(M) : null, [M]),
     L = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : true),
-    D = null == t || j ? o.ejJ : o.gQj,
+    D = null == t || O ? o.ejJ : o.gQj,
     k = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
   return null != L && E ? (0, i.jsx)(m.Z, {
     onClick: () => {
@@ -107,7 +107,7 @@ function C(e) {
           null == c || c(), (0, o.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("49049"), n.e("7654"), n.e("89334")]).then(n.bind(n, 560114));
+            } = await Promise.all([n.e("49049"), n.e("7654"), n.e("68971")]).then(n.bind(n, 560114));
             return n => {
               var o, s;
               return (0, i.jsx)(e, (o = y({}, n), s = s = {
@@ -141,7 +141,7 @@ function C(e) {
           appContext: null != _ ? _ : A,
           exitFullScreen: v,
           analyticsLocation: x,
-          guildScheduledEvent: O
+          guildScheduledEvent: j
         })
     },
     iconComponent: D,

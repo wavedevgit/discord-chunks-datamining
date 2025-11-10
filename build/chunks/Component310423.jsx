@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk739566 = require("./739566.js"),
   Chunk761652 = require("./761652.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk949892 = require("./949892.js");
+  Chunk466002 = require("./466002.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,7 +69,7 @@ let C = {
     color: "header-secondary"
   },
   N = {
-    className: o()("mention", Chunk949892.mention)
+    className: o()("mention", Chunk466002.mention)
   };
 
 function R(e) {

@@ -1,4 +1,4 @@
-/** Chunk was on 36415 **/
+/** Chunk was on 18729 **/
 /** chunk id: 914578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk924983 = require("./924983.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk530785 = require("./530785.js");
+  Chunk989281 = require("./989281.js");
 
 function v(e) {
   let {
@@ -51,7 +51,7 @@ function g() {
     t = Chunk906467.Z.isDeveloper;
   return (0, Chunk951288.jsxs)("div", {
     children: [exports && (0, Chunk951288.jsx)(Chunk481060.P3F, {
-      className: Chunk530785.devToolsEducation,
+      className: Chunk989281.devToolsEducation,
       onClick: () => (0, Chunk31336.d8)(),
       children: (0, Chunk951288.jsx)(Chunk924983.$, {
         legacy: false
@@ -59,7 +59,7 @@ function g() {
     }), (0, Chunk951288.jsx)(Chunk604227.Z, {
       compact: true
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk530785.links,
+      className: Chunk989281.links,
       children: [(0, Chunk951288.jsx)(Chunk481060.Anchor, {
         href: Chunk981631.EYA.PRIVACY,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -69,7 +69,7 @@ function g() {
           children: Chunk388032.intl.string(Chunk388032.t["Knf/f/"])
         })
       }), (0, Chunk951288.jsx)("span", {
-        className: Chunk530785.bullet,
+        className: Chunk989281.bullet,
         "aria-hidden": "true",
         children: "•"
       }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
@@ -81,7 +81,7 @@ function g() {
           children: Chunk388032.intl.string(Chunk388032.t.uFSTGq)
         })
       }), (0, Chunk951288.jsx)("span", {
-        className: Chunk530785.bullet,
+        className: Chunk989281.bullet,
         "aria-hidden": "true",
         children: "•"
       }), (0, Chunk951288.jsx)(Chunk481060.yRy, {

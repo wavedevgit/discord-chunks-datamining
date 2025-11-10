@@ -61,7 +61,7 @@ function p(e) {
     action: () => (0, l.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("75139")]).then(n.bind(n, 241865));
+      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("26861")]).then(n.bind(n, 241865));
       return n => (0, r.jsx)(t, d(s({}, n), {
         channelType: c.d4z.GUILD_TEXT,
         guildId: e.id
@@ -73,7 +73,7 @@ function p(e) {
     action: () => (0, l.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("75139")]).then(n.bind(n, 241865));
+      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("26861")]).then(n.bind(n, 241865));
       return n => (0, r.jsx)(t, d(s({}, n), {
         channelType: c.d4z.GUILD_CATEGORY,
         guildId: e.id

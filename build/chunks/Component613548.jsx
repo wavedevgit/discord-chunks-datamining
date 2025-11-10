@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 613548, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk185935 = require("./185935.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk611295 = require("./611295.js");
+  Chunk956235 = require("./956235.js");
 
 function M(e) {
   let {
@@ -107,7 +107,7 @@ function R(e) {
   }, "video-warning")), u && !R && U.push((0, i.jsx)(d.yRy, {
     targetElementRef: l,
     position: "bottom",
-    renderPopout: () => (0, i.jsx)(O.Z, {
+    renderPopout: () => (0, i.jsx)(j.Z, {
       children: (0, i.jsx)(Z.Z, {
         channel: t
       })
@@ -158,7 +158,7 @@ function R(e) {
       [w.lastButton]: n
     }),
     onClick: () => p.Z.toggleParticipantsList(t.id, !P)
-  }, "participants-list-button")), A && U.push((0, i.jsx)(j.T, {
+  }, "participants-list-button")), A && U.push((0, i.jsx)(O.T, {
     channelId: t.id,
     className: a()(w.button, {
       [w.lastButton]: P

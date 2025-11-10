@@ -1,7 +1,7 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 616286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => j
+  T: () => O
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -41,7 +41,7 @@ function x(e) {
   }
 }
 
-function O(e) {
+function j(e) {
   let {
     className: t,
     channelId: n
@@ -60,7 +60,7 @@ function O(e) {
   })
 }
 
-function j(e) {
+function O(e) {
   let t;
   var {
     channelId: n,
@@ -70,7 +70,7 @@ function j(e) {
     inPopout: f,
     showRequestToSpeakSidebar: m,
     toggleRequestToSpeakSidebar: y
-  } = e, j = function(e, t) {
+  } = e, O = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -89,7 +89,7 @@ function j(e) {
     parentAnalyticsLocation: E
   } = (0, u.ZP)(), {
     disabled: S
-  } = j, P = r.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
+  } = O, P = r.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
     isShowing: Z,
     unreadCount: T,
     mentionCount: N
@@ -118,7 +118,7 @@ function j(e) {
     let {
       className: t
     } = e;
-    return (0, i.jsx)(O, {
+    return (0, i.jsx)(j, {
       className: t,
       channelId: n
     })
@@ -175,5 +175,5 @@ function j(e) {
       [o]: Z
     }),
     forceTooltipOpen: R
-  }, j))
+  }, O))
 }

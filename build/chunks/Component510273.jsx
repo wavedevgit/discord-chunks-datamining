@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk955204 = require("./955204.js"),
   Chunk818765 = require("./818765.js"),
   Chunk674680 = require("./674680.jsx"),
-  Chunk192505 = require("./192505.js");
+  Chunk229450 = require("./229450.js");
 let f = e => {
     let {
       color: t

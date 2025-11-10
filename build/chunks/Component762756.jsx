@@ -1,4 +1,4 @@
-/** Chunk was on 22740 **/
+/** Chunk was on 99904 **/
 /** chunk id: 762756, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -14,7 +14,7 @@ var a, Chunk951288 = require("./951288.js"),
   Chunk1964 = require("./1964.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk296068 = require("./296068.js");
+  Chunk222198 = require("./222198.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,15 +46,15 @@ class b extends(a = Chunk647438.PureComponent) {
   render() {
     return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 16,
-      className: Chunk296068.verification,
+      className: Chunk222198.verification,
       align: "center",
       direction: "vertical",
       justify: "center",
       children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
         fullWidth: false,
-        className: s()(Chunk296068.container, {
-          [Chunk296068.isMobile]: Chunk873546.tq
+        className: s()(Chunk222198.container, {
+          [Chunk222198.isMobile]: Chunk873546.tq
         }),
         align: "center",
         direction: "vertical",
@@ -65,9 +65,9 @@ class b extends(a = Chunk647438.PureComponent) {
           justify: "center",
           gap: 16,
           children: [(0, Chunk951288.jsx)("div", {
-            className: Chunk296068.image
+            className: Chunk222198.image
           }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
-            className: Chunk296068.textContainer,
+            className: Chunk222198.textContainer,
             gap: 4,
             align: "center",
             direction: "vertical",
@@ -96,7 +96,7 @@ class b extends(a = Chunk647438.PureComponent) {
         justify: "center",
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          className: Chunk296068.footer,
+          className: Chunk222198.footer,
           children: Chunk388032.intl.string(Chunk388032.t.qqYun3)
         }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
           gap: 8,
@@ -105,16 +105,16 @@ class b extends(a = Chunk647438.PureComponent) {
           justify: "center",
           children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/semibold",
-            className: Chunk296068.footer,
+            className: Chunk222198.footer,
             children: Chunk388032.intl.format(Chunk388032.t.WL51ZR, {
               supportURL: Chunk63063.Z.getSubmitRequestURL()
             })
           }), (0, Chunk951288.jsx)("div", {
-            className: s()(Chunk296068.footer, Chunk296068.footerBullet),
+            className: s()(Chunk222198.footer, Chunk222198.footerBullet),
             children: "•"
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/semibold",
-            className: Chunk296068.footer,
+            className: Chunk222198.footer,
             children: Chunk388032.intl.format(Chunk388032.t.Hv7ztc, {
               logoutOnClick: this.props.onLogout
             })

@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 705563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -19,7 +19,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk360328 = require("./360328.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk982539 = require("./982539.js");
+  Chunk482722 = require("./482722.js");
 
 function C(e) {
   let {
@@ -29,8 +29,8 @@ function C(e) {
   } = e, v = p.default.cast(t), {
     joinRequest: _,
     isModmin: x,
-    guildId: O,
-    maxMembers: j
+    guildId: j,
+    maxMembers: O
   } = (0, r.cj)([h.Z, u.Z, d.Z], () => {
     let e = h.Z.getRequest(v),
       t = u.Z.getGuild(null == e ? true : e.guildId);
@@ -40,7 +40,7 @@ function C(e) {
       guildId: null == t ? true : t.id,
       maxMembers: null == t ? true : t.maxMembers
     }
-  }), E = (0, r.e7)([c.Z], () => null != O ? c.Z.getMemberCount(O) : 0), S = null != j && (null != E ? E : 0) >= j, {
+  }), E = (0, r.e7)([c.Z], () => null != j ? c.Z.getMemberCount(j) : 0), S = null != O && (null != E ? E : 0) >= O, {
     approveRequest: P,
     rejectRequest: I,
     submitting: Z

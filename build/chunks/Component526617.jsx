@@ -51,7 +51,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk957825 = require("./957825.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk25220 = require("./25220.js");
+  Chunk412553 = require("./412553.js");
 
 function X(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -322,10 +322,10 @@ function eu(e) {
       nitroTierName: e,
       onClick: e$
     })
-  }, [e$]), e1 = i.useCallback(e => eJ(e, t) ? er : en, [t, eJ]), e2 = i.useCallback(e => {
+  }, [e$]), e1 = i.useCallback(e => eJ(e, t) ? er : en, [t, eJ]), e3 = i.useCallback(e => {
     let t = e === eB.length - 1;
     return eF && t ? 50 : eF && e === eZ ? 20 : 0
-  }, [eB.length, eF, eZ]), e3 = i.useCallback((e, t) => (0, r.jsx)("div", {
+  }, [eB.length, eF, eZ]), e2 = i.useCallback((e, t) => (0, r.jsx)("div", {
     children: t
   }, e), []), e4 = i.useCallback((e, n) => {
     let i = "".concat(e.key),
@@ -481,12 +481,12 @@ function eu(e) {
       renderRow: eQ,
       renderSectionHeader: e4,
       renderSectionFooter: e8,
-      renderSection: e3,
+      renderSection: e2,
       renderCategoryList: e9,
       renderHeaderAccessories: e7,
       rowHeight: et,
       sectionHeaderHeight: e1,
-      sectionFooterHeight: e2,
+      sectionFooterHeight: e3,
       listPadding: eV,
       itemNodeWidth: ei,
       gridNavigatorId: eR,

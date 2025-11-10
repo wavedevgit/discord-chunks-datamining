@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 430371, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -22,10 +22,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk796638 = require("./796638.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk450906 = require("./450906.js"),
-  Chunk74246 = require("./74246.js");
+  Chunk394024 = require("./394024.js"),
+  Chunk597843 = require("./597843.js");
 
-function j(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -114,7 +114,7 @@ function I(e) {
     em = (0, s.q_F)({
       value: +!!et,
       delay: ep || !et ? 0 : 100,
-      config: E(j({}, o.config.stiff), {
+      config: E(O({}, o.config.stiff), {
         clamp: true
       }),
       onStart: () => X(true),
@@ -125,25 +125,25 @@ function I(e) {
     }, ef),
     eg = (0, s.q_F)({
       value: +!!et,
-      config: E(j({}, o.config.stiff), {
+      config: E(O({}, o.config.stiff), {
         clamp: true
       })
     }, ef),
     eb = (0, s.q_F)({
       value: eu,
-      config: E(j({}, o.config.stiff), {
+      config: E(O({}, o.config.stiff), {
         clamp: true
       })
     }, en === et && eg.value.idle && !el || ea || eh ? "animate-never" : "animate-always"),
     ey = (0, s.q_F)({
       value: n,
-      config: E(j({}, o.config.stiff), {
+      config: E(O({}, o.config.stiff), {
         clamp: true
       })
     }, ef),
     eC = (0, s.Yzy)(R, {
       keys: e => null == e ? true : e.id,
-      config: E(j({}, o.config.stiff), {
+      config: E(O({}, o.config.stiff), {
         clamp: true
       }),
       initial: null,
@@ -163,17 +163,17 @@ function I(e) {
     e_ = et ? [] : (0, y.n3)(T, R, F),
     {
       visibleParticipants: ex,
-      participantTileWidth: eO
+      participantTileWidth: ej
     } = (0, C.ZB)(k, N);
   return (0, i.jsxs)("div", {
-    className: a()(O.root, x.flexCenter, D),
+    className: a()(j.root, x.flexCenter, D),
     children: [(0, i.jsxs)("div", {
-      className: O.tileWrapper,
+      className: j.tileWrapper,
       style: {
         opacity: $ && q ? 0 : 1
       },
       children: [(0, i.jsxs)(o.animated.div, {
-        className: O.videoFrame,
+        className: j.videoFrame,
         style: {
           top: eg.value.to(e => -e * P / 2)
         },
@@ -181,7 +181,7 @@ function I(e) {
           style: {
             width: eb.value
           },
-          className: O.videoWrapper,
+          className: j.videoWrapper,
           children: (0, i.jsx)("div", {
             className: x.videoSizer,
             style: {
@@ -213,8 +213,8 @@ function I(e) {
             })
           })
         }), er ? (0, i.jsx)(o.animated.div, {
-          className: a()(O.actionRow, {
-            [O.idle]: H
+          className: a()(j.actionRow, {
+            [j.idle]: H
           }),
           style: {
             bottom: ey.value
@@ -226,7 +226,7 @@ function I(e) {
           })
         }) : null]
       }), (0, i.jsx)(o.animated.div, {
-        className: O.participantsWrapperAnimated,
+        className: j.participantsWrapperAnimated,
         style: {
           translateY: em.value.to(e => e * P / 2),
           opacity: em.value,
@@ -238,7 +238,7 @@ function I(e) {
           onContextMenu: I,
           onDoubleClick: Z,
           participants: ex,
-          participantTileWidth: eO,
+          participantTileWidth: ej,
           selectedParticipantId: R.id,
           inCall: w,
           popoutType: A,

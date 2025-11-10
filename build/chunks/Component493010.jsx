@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 493010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk229 = require("./229.js");
+  Chunk952899 = require("./952899.js");
 let _ = function(e) {
   let {
     channel: t,
@@ -35,7 +35,7 @@ let _ = function(e) {
   let x = r.useCallback(() => {
       o.Z.updateChatOpen(t.id, false), m.S.safeDispatch(b.CkL.FOCUS_CHAT_BUTTON)
     }, [t.id]),
-    O = (0, i.jsx)(h.ZP.Icon, {
+    j = (0, i.jsx)(h.ZP.Icon, {
       icon: a.Dio,
       tooltip: C.intl.string(C.t.cpT0Cq),
       onClick: x
@@ -48,7 +48,7 @@ let _ = function(e) {
       channel: t,
       draftType: f.d.ChannelMessage
     }), (0, i.jsxs)(h.ZP, {
-      toolbar: O,
+      toolbar: j,
       "aria-label": C.intl.string(C.t.BIYAqa),
       children: [(0, i.jsx)(h.ZP.ChannelIcon, {
         icon: a.kBi,

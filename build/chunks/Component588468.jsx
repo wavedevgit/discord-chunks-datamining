@@ -37,7 +37,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk537221 = require("./537221.js");
+  Chunk512746 = require("./512746.js");
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -233,7 +233,7 @@ class q extends Y {
       className: e
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
-      className: s()(module, Chunk537221.divider)
+      className: s()(module, Chunk512746.divider)
     })
   }
   constructor(...e) {
@@ -267,7 +267,7 @@ class X extends Y {
           mode: "username",
           identifiable: Chunk647438 ? "never" : "always"
         }), Chunk647438 || exports.hasUniqueUsername() ? null : (0, Chunk951288.jsxs)("span", {
-          className: Chunk537221.descriptionDiscriminator,
+          className: Chunk512746.descriptionDiscriminator,
           children: ["#", exports.discriminator]
         })]
       })]
@@ -289,7 +289,7 @@ class Q extends Y {
     } = this.props, d = null == Chunk392711 ? Chunk699516.Z.getNickname(exports.id) : null, _ = null != (e = null != require ? require : Chunk313666) ? module : Chunk51144.ZP.getName(exports);
     return (0, Chunk951288.jsxs)(Chunk965386.RX, {
       className: s()({
-        [Chunk537221.verticalLayout]: "vertical-suggestion" === Chunk91192
+        [Chunk512746.verticalLayout]: "vertical-suggestion" === Chunk91192
       }),
       children: [(0, Chunk951288.jsx)(Chunk965386.Tw, {
         children: (0, Chunk951288.jsx)(Chunk481060.qEK, {
@@ -299,13 +299,13 @@ class Q extends Y {
           status: Chunk647438
         })
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk537221.autocompleteContentWrapper,
+        className: Chunk512746.autocompleteContentWrapper,
         "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t["9v/R+j"], {
           name: Chunk607070
         }),
         children: [(0, Chunk951288.jsx)(Chunk965386.z5, {
           children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-            className: Chunk537221.autocompleteRowHeading,
+            className: Chunk512746.autocompleteRowHeading,
             color: "interactive-active",
             variant: "text-sm/medium",
             children: Chunk607070
@@ -316,13 +316,13 @@ class Q extends Y {
               mode: "username",
               identifiable: Chunk120356 ? "never" : "always"
             }), Chunk120356 || exports.hasUniqueUsername() ? null : (0, Chunk951288.jsxs)("span", {
-              className: Chunk537221.descriptionDiscriminator,
+              className: Chunk512746.descriptionDiscriminator,
               children: ["#", exports.discriminator]
             })]
           }) : r
         })]
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk537221.keyComboContainer,
+        className: Chunk512746.keyComboContainer,
         children: c ? (0, Chunk951288.jsx)(Chunk481060.M2$, {
           shortcut: "tab",
           dim: true
@@ -358,7 +358,7 @@ class J extends Y {
       children: [(0, Chunk951288.jsx)(Chunk965386.z5, {
         children: (0, Chunk951288.jsxs)(Chunk965386.BR, {
           children: [Chunk120356 && (0, Chunk951288.jsx)(Chunk481060.FhE, {
-            className: Chunk537221.roleDot,
+            className: Chunk512746.roleDot,
             color: r,
             colors: c,
             tooltip: false
@@ -406,7 +406,7 @@ class ee extends Y {
     return (0, Chunk951288.jsxs)(Chunk965386.RX, {
       children: [null != require && (0, Chunk951288.jsx)(Chunk965386.Tw, {
         children: (0, Chunk951288.jsx)(require, {
-          className: Chunk537221.icon
+          className: Chunk512746.icon
         })
       }), (0, Chunk951288.jsx)(Chunk965386.z5, {
         children: (0, Chunk951288.jsx)(Chunk965386.BR, {
@@ -428,8 +428,8 @@ class et extends Y {
         children: (0, Chunk951288.jsx)(Chunk481060.XZC, {
           size: "xs",
           color: "currentColor",
-          className: Chunk537221.icon,
-          colorClass: Chunk537221.iconForeground
+          className: Chunk512746.icon,
+          colorClass: Chunk512746.iconForeground
         })
       }), (0, Chunk951288.jsx)(Chunk965386.z5, {
         children: (0, Chunk951288.jsx)(Chunk965386.BR, {
@@ -473,14 +473,14 @@ class er extends Y {
       guild: n
     } = this.props, r = Chunk695346.Yk.getSetting(), a = null != module.id || "" !== module.url ? (0, Chunk951288.jsx)("img", {
       alt: "",
-      className: Chunk537221.emojiImage,
+      className: Chunk512746.emojiImage,
       src: null != module.id ? Chunk768581.ZP.getEmojiURL({
         id: module.id,
         animated: module.animated && r,
         size: Chunk185923.$U
       }) : module.url
     }) : (0, Chunk951288.jsx)("span", {
-      className: Chunk537221.emojiRaw,
+      className: Chunk512746.emojiRaw,
       children: module.surrogates
     }), o = null != require ? (0, Chunk951288.jsx)(Chunk965386.dY, {
       children: require.name
@@ -567,7 +567,7 @@ class el extends Y {
       game: e
     } = this.props, t = (0, Chunk951288.jsx)("img", {
       alt: "",
-      className: Chunk537221.icon,
+      className: Chunk512746.icon,
       src: Chunk768581.ZP.getApplicationIconURL({
         id: module.id,
         icon: module.icon,
@@ -600,9 +600,9 @@ class ec extends(r = Chunk647438.PureComponent) {
         id: null != Chunk120356 ? Chunk120356 : ""
       },
       children: (0, Chunk951288.jsx)("div", {
-        className: s()(Chunk537221.autocomplete, require),
+        className: s()(Chunk512746.autocomplete, require),
         children: (0, Chunk951288.jsx)("div", G(k({
-          className: s()(Chunk537221.autocompleteInner, r)
+          className: s()(Chunk512746.autocompleteInner, r)
         }, Chunk392711), {
           children: exports
         }))

@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 400023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Y
@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk406534 = require("./406534.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk266834 = require("./266834.js");
+  Chunk151227 = require("./151227.js");
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -106,7 +106,7 @@ let q = (0, Chunk509442.animated)(Chunk481060.eTT),
       messageDisplayCompact: v,
       channelStream: _,
       uploads: x,
-      hasUnreads: j,
+      hasUnreads: O,
       editingMessageId: S,
       fontSize: P,
       keyboardModeEnabled: I,
@@ -133,7 +133,7 @@ let q = (0, Chunk509442.animated)(Chunk481060.eTT),
       messages: g,
       channel: m,
       compact: v,
-      hasUnreads: j,
+      hasUnreads: O,
       focusId: S,
       placeholderHeight: Y.totalHeight,
       canLoadMore: null == T,
@@ -213,9 +213,9 @@ let q = (0, Chunk509442.animated)(Chunk481060.eTT),
         var t;
         X.ref.current = e, ea.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
       }),
-      ec = (0, c.e7)([O.Z], () => {
+      ec = (0, c.e7)([j.Z], () => {
         var e;
-        let t = null == (e = O.Z.settings.appearance) ? true : e.clientThemeSettings;
+        let t = null == (e = j.Z.settings.appearance) ? true : e.clientThemeSettings;
         return (null == t ? true : t.backgroundGradientPresetId) != null || (null == t ? true : t.customUserThemeSettings) != null
       }),
       eu = r.useMemo(() => R ? D ? F.chatTypingGradientAtBottom : F.chatTypingGradientNotAtBottom : F.chatGradient, [R, D]),
@@ -292,7 +292,7 @@ let q = (0, Chunk509442.animated)(Chunk481060.eTT),
         canManageMessages: i
       }
     }(t), {
-      messageGroupSpacing: O,
+      messageGroupSpacing: j,
       fontSize: E,
       messageDisplayCompact: w,
       renderSpoilers: L,
@@ -342,7 +342,7 @@ let q = (0, Chunk509442.animated)(Chunk481060.eTT),
         }, {
           autoTrackExposure: false
         }),
-        o = null != (n = null == (t = A.default.getUser(j.default.getId())) ? true : t.hasFlag(H.xW$.SPAMMER)) && n,
+        o = null != (n = null == (t = A.default.getUser(O.default.getId())) ? true : t.hasFlag(H.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
         u = (0, b.Z)("use_topic_dividers_in_chat"),
         d = (0, c.Wu)([_.Z], () => {
@@ -382,7 +382,7 @@ let q = (0, Chunk509442.animated)(Chunk481060.eTT),
       value: (0, M.Z)(L, d),
       children: (0, i.jsx)(D.v, {
         children: (0, i.jsx)(K, z(G({}, u), {
-          messageGroupSpacing: O,
+          messageGroupSpacing: j,
           showNewMessagesBar: true,
           channel: t,
           messageDisplayCompact: !o && (a || w),

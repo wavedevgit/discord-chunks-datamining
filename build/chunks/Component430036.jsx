@@ -56,7 +56,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk970980 = require("./970980.js");
+  Chunk442010 = require("./442010.js");
 
 function en(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -259,7 +259,8 @@ class el extends Chunk647438.Component {
       draftType: R.d.ChannelMessage,
       editorTextContent: this.state.textValue,
       setValue: e => this.handleTextareaChange(null, e, (0, x.JM)(e)),
-      canOnlyUseTextCommands: e
+      canOnlyUseTextCommands: e,
+      chatInputType: E.Ie.OVERLAY
     })), R.Z.addChangeListener(this.draftDidChange);
     let n = R.Z.getDraft(e.channel.id, R.d.ChannelMessage);
     this.state = er(ei({}, (0, x.eK)(n)), {
@@ -309,16 +310,16 @@ class ea extends Chunk647438.PureComponent {
     if (null == exports) return null;
     let g = a || Chunk430742,
       y = !Chunk120356 && null != exports && exports.isNSFW(),
-      _ = !Chunk144144 || Chunk442837;
+      O = !Chunk144144 || Chunk442837;
     return e = Chunk655687 && null != Chunk512722 ? (0, Chunk951288.jsx)(Chunk340501.Z, {
       guild: Chunk512722,
       channelId: exports.id
     }) : (0, Chunk951288.jsx)(Chunk400023.Z, {
       channel: exports,
-      className: Chunk970980.messages,
+      className: Chunk442010.messages,
       forceCompact: Chunk239091,
       showNewMessagesBar: !Chunk144144,
-      scrollerClassName: Chunk239091 ? Chunk970980.scroller : true,
+      scrollerClassName: Chunk239091 ? Chunk442010.scroller : true,
       showingQuarantineBanner: false
     }, exports.id), (0, Chunk951288.jsx)(Chunk249458.G.Provider, {
       value: {
@@ -332,9 +333,9 @@ class ea extends Chunk647438.PureComponent {
         }), (0, Chunk951288.jsx)(Chunk518084.ZP.Background, {
           opacityOverride: a || Chunk430742 ? null : eo,
           children: (0, Chunk951288.jsx)("div", {
-            className: o()(Chunk970980.messagesContainer, {
-              [Chunk970980.isDragging]: Chunk904245,
-              [Chunk970980.disableHoverStates]: Chunk239091 && a && !Chunk442837
+            className: o()(Chunk442010.messagesContainer, {
+              [Chunk442010.isDragging]: Chunk904245,
+              [Chunk442010.disableHoverStates]: Chunk239091 && a && !Chunk442837
             }),
             children: module
           })
@@ -342,27 +343,27 @@ class ea extends Chunk647438.PureComponent {
           children: Chunk823748 ? (0, Chunk951288.jsx)(Chunk518084.ZP.Background, {
             opacityOverride: a || Chunk430742 ? null : eo,
             children: (0, Chunk951288.jsxs)("div", {
-              className: Chunk970980.footerContent,
+              className: Chunk442010.footerContent,
               children: [(0, Chunk951288.jsx)(el, {
                 channel: exports,
                 placeholder: require,
                 isTemporarilyActive: Chunk442837,
                 pendingReply: Chunk13245
               }), (0, Chunk951288.jsx)("div", {
-                className: Chunk970980.typingWrapper,
+                className: Chunk442010.typingWrapper,
                 children: (0, Chunk951288.jsx)(Chunk738619.ZP, {
                   channel: exports,
-                  className: Chunk970980.typing,
+                  className: Chunk442010.typing,
                   isInTextChannel: true
                 })
               })]
             })
           }) : (0, Chunk951288.jsx)("div", {
-            className: Chunk970980.activateContainer,
+            className: Chunk442010.activateContainer,
             children: (0, Chunk951288.jsx)(Chunk518084.ZP.Background, {
               opacityOverride: Chunk987650.wF.LOWER,
               children: (0, Chunk951288.jsx)("div", {
-                className: o()(Chunk970980.activateKeybind, Chunk970980.__invalid_mediumBackgroundOpacity),
+                className: o()(Chunk442010.activateKeybind, Chunk442010.__invalid_mediumBackgroundOpacity),
                 children: null != exports.name && exports.name.length > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["9TkYMO"], {
                   keybind: Chunk481060,
                   channelName: exports.isMultiUserDM() ? exports.name : "#".concat(exports.name)
@@ -427,8 +428,8 @@ class ea extends Chunk647438.PureComponent {
     if (null == exports || !this.shouldDisplay()) return null;
     let l = (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk786906.Z, {
-        draggableClassName: Chunk970980.draggableStartArea,
-        className: Chunk970980.headerDefault,
+        draggableClassName: Chunk442010.draggableStartArea,
+        className: Chunk442010.headerDefault,
         channel: exports,
         locked: module,
         pinned: require,
@@ -438,7 +439,7 @@ class ea extends Chunk647438.PureComponent {
         onContextMenu: this.handleContextMenu,
         onMouseDown: this.moveDragStart
       }), this.renderContent(), module || Chunk120356 ? null : (0, Chunk951288.jsx)("div", {
-        className: Chunk970980.resizeIcon,
+        className: Chunk442010.resizeIcon,
         onMouseDown: this.resizeDragStart
       })]
     });
@@ -463,7 +464,7 @@ class ea extends Chunk647438.PureComponent {
       null != t && null != r && (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("55599")]).then(n.bind(n, 131404));
+        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("64807")]).then(n.bind(n, 131404));
         return n => (0, i.jsx)(e, er(ei({}, n), {
           user: r,
           channelSelected: true,
@@ -498,16 +499,16 @@ function ec(e) {
     f = (0, c.e7)([A.Z], () => null != r && A.Z.didAgree(r)),
     g = null != o && o.isPrivate() ? o.getRecipientId() : null,
     m = (0, c.e7)([T.Z], () => null != s ? T.Z.getPendingReply(s) : true),
-    O = (0, c.e7)([U.default], () => null != g ? U.default.getUser(g) : null),
+    _ = (0, c.e7)([U.default], () => null != g ? U.default.getUser(g) : null),
     {
       placeholder: b
     } = (0, y.Z)({
       channel: o
     });
-  return null != o && null != h && Q.TPd.GUILD_THREADS_ONLY.has(o.type) ? (0, i.jsx)(_.Z, {}) : (0, i.jsx)(ea, ei({
+  return null != o && null != h && Q.TPd.GUILD_THREADS_ONLY.has(o.type) ? (0, i.jsx)(O.Z, {}) : (0, i.jsx)(ea, ei({
     guild: h,
     channel: o,
-    user: O,
+    user: _,
     opacity: d,
     nsfwAgree: f,
     chatKeybind: a,

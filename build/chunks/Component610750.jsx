@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk52647 = require("./52647.js"),
-  Chunk609778 = require("./609778.js");
+  Chunk605532 = require("./605532.js");
 let s = {
   title: "Orb Onboarding",
   stories: [{
@@ -18,7 +18,7 @@ let s = {
         resetOnboardingExperience: e
       } = (0, Chunk52647.Z)();
       return (0, Chunk951288.jsxs)("div", {
-        className: Chunk609778.verticalContainer,
+        className: Chunk605532.verticalContainer,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           color: "text-feedback-info",

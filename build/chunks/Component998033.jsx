@@ -2,7 +2,7 @@
 /** chunk id: 998033, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,8 +21,8 @@ var Chunk13245 = require("./13245.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n, _) {
-  var O;
+function O(e, t, n, O) {
+  var _;
   let {
     icon: b,
     title: v,
@@ -32,7 +32,7 @@ function _(e, t, n, _) {
     trackClick: S
   } = (0, f.R)(m.n0.TextChat, {
     notif_type: m.n0.TextChat,
-    notif_user_id: null == (O = t.author) ? true : O.id,
+    notif_user_id: null == (_ = t.author) ? true : _.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,
@@ -51,7 +51,7 @@ function _(e, t, n, _) {
     }) : null,
     maxBodyLines: 2,
     onNotificationShow: () => {
-      _ && (0, a.GN)(c.Ay, c.yk), x()
+      O && (0, a.GN)(c.Ay, c.yk), x()
     },
     onNotificationClick: () => {
       if (o.default.isOverlayOOPEnabledForPid((0, h.getPID)())) {

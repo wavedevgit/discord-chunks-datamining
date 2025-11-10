@@ -48,7 +48,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk114644 = require("./114644.js"),
+  Chunk269142 = require("./269142.js"),
   Chunk167969 = require("./167969.js"),
   Chunk557256 = require("./557256.js");
 
@@ -298,25 +298,25 @@ class et extends Chunk647438.Component {
         "data-migration-pending": true,
         transitionState: Chunk979554,
         size: Chunk481060.CgR.SMALL,
-        className: Chunk114644.modal,
+        className: Chunk269142.modal,
         "aria-labelledby": Chunk120356,
         parentComponent: "GiftCodeModal",
         children: [null != Chunk647438.giftStyle && !Chunk728345 && !Chunk812206 && (0, Chunk951288.jsx)(Chunk981632.Z, {
           defaultAnimationState: this.getDefaultAnimationStatus(),
           idleAnimationState: this.getIdleAnimationStatus(),
           giftStyle: Chunk647438.giftStyle,
-          className: Chunk114644.seasonalGiftIcon
+          className: Chunk269142.seasonalGiftIcon
         }), !Chunk728345 && (0, Chunk951288.jsx)("div", {
-          className: Chunk114644.backSplash
+          className: Chunk269142.backSplash
         }), !Chunk812206 && (0, Chunk951288.jsx)(Chunk481060.olH, {
           "data-migration-pending": true,
           onClick: require,
-          className: Chunk114644.closeButton
+          className: Chunk269142.closeButton
         }), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
           "data-migration-pending": true,
           className: l()({
-            [Chunk114644.content]: !Chunk728345,
-            [Chunk114644.contentCustomGift]: Chunk728345
+            [Chunk269142.content]: !Chunk728345,
+            [Chunk269142.contentCustomGift]: Chunk728345
           }),
           children: [!Chunk812206 && (null == Chunk647438.giftStyle || Chunk728345 && Chunk597688) ? (0, Chunk951288.jsx)(Chunk925329.Z, {
             size: Chunk925329.A.LARGE,
@@ -328,31 +328,31 @@ class et extends Chunk647438.Component {
           }), (0, Chunk951288.jsxs)(Chunk481060.Heading, {
             id: Chunk120356,
             className: l()({
-              [Chunk114644.customGiftHeader]: Chunk728345 && !Chunk597688,
-              [Chunk114644.header]: !Chunk728345 || Chunk597688
+              [Chunk269142.customGiftHeader]: Chunk728345 && !Chunk597688,
+              [Chunk269142.header]: !Chunk728345 || Chunk597688
             }),
             variant: "heading-sm/semibold",
             children: [(0, Chunk951288.jsx)("div", {
               className: l()({
-                [Chunk114644.customGiftHeaderText]: Chunk728345
+                [Chunk269142.customGiftHeaderText]: Chunk728345
               }),
               children: this.firstHeaderText
             }), (0, Chunk951288.jsx)("div", {
               children: this.secondHeaderText
             })]
           }), !(Chunk728345 && !Chunk597688) && (0, Chunk951288.jsx)(Chunk481060.Text, {
-            className: Chunk114644.body,
+            className: Chunk269142.body,
             variant: "text-sm/normal",
             children: this.bodyText
           }), Chunk728345 && !Chunk812206 && null != Chunk647438.giftStyle && !Chunk597688 && !Chunk745510 && (0, Chunk951288.jsx)(Chunk981632.Z, {
             defaultAnimationState: this.getDefaultAnimationStatus(),
             idleAnimationState: this.getIdleAnimationStatus(),
-            className: Chunk114644.giftAnimation,
+            className: Chunk269142.giftAnimation,
             giftStyle: Chunk647438.giftStyle
           }), this.state.opened && !Chunk745510 && Chunk812206 && (0, Chunk951288.jsx)(Chunk551425.Z, {
             giftCode: Chunk647438
           }), Chunk745510 && (0, Chunk951288.jsx)(Chunk481060.Text, {
-            className: Chunk114644.body,
+            className: Chunk269142.body,
             variant: "text-md/normal",
             children: this.errorMessage
           }), Chunk728345 && this.state.opened && !this.state.accepted && !Chunk745510 && null != Chunk533307 && "" !== Chunk533307 && !Chunk313201 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -363,7 +363,7 @@ class et extends Chunk647438.Component {
                 sender: Chunk51144.ZP.getName(Chunk906732)
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-              className: Chunk114644.customMessage,
+              className: Chunk269142.customMessage,
               variant: "text-md/semibold",
               children: Chunk533307
             })]

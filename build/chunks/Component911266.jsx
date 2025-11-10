@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 911266, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -18,27 +18,27 @@ var Chunk951288 = require("./951288.js"),
   Chunk111810 = require("./111810.js"),
   Chunk287941 = require("./287941.js"),
   Chunk235894 = require("./235894.js"),
-  Chunk485933 = require("./485933.js");
+  Chunk874341 = require("./874341.js");
 let C = e => {
   let {
     message: t,
     hovering: n,
     compact: l
-  } = e, C = r.useRef((0, o.random)(false, 24)).current, v = (0, s.e7)([h.Z], () => h.Z.confettiMode), _ = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), x = r.useRef(0), O = r.useRef(null), j = r.useRef(null), [E, S] = r.useState(false), P = r.useMemo(() => !n && !v && !_, [v, n, _]);
+  } = e, C = r.useRef((0, o.random)(false, 24)).current, v = (0, s.e7)([h.Z], () => h.Z.confettiMode), _ = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), x = r.useRef(0), j = r.useRef(null), O = r.useRef(null), [E, S] = r.useState(false), P = r.useMemo(() => !n && !v && !_, [v, n, _]);
   if (r.useEffect(() => {
       n || S(false), n && v && S(true)
     }, [n, v]), r.useEffect(() => {
-      !_ && (E || (false === n && (x.current = 0, null != O.current && (clearTimeout(O.current), O.current = null)), x.current = Date.now(), O.current = setTimeout(() => {
+      !_ && (E || (false === n && (x.current = 0, null != j.current && (clearTimeout(j.current), j.current = null)), x.current = Date.now(), j.current = setTimeout(() => {
         let e = x.current;
         if (0 !== e && false !== n && !(Date.now() - e < 1e3) && !v) {
-          if (null != j.current) {
+          if (null != O.current) {
             var i;
             let {
               x: e,
               y: n,
               width: r,
               height: l
-            } = null == (i = j.current) ? true : i.getBoundingClientRect();
+            } = null == (i = O.current) ? true : i.getBoundingClientRect();
             (0, g.Z)(t, {
               x: e,
               y: n - 20,
@@ -67,7 +67,7 @@ let C = e => {
       forcePNG: true
     });
   return (0, i.jsxs)("div", {
-    ref: j,
+    ref: O,
     className: y.emojiWrapper,
     style: {
       right: "".concat(256 + C, "px")

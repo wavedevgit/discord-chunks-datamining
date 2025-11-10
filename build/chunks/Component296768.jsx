@@ -21,8 +21,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk426482 = require("./426482.jsx"),
   Chunk644941 = require("./644941.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk456486 = require("./456486.js"),
-  Chunk276145 = require("./276145.js");
+  Chunk226788 = require("./226788.js"),
+  Chunk414642 = require("./414642.js");
 let b = e => {
   let {
     game: t,

@@ -1,4 +1,4 @@
-/** Chunk was on 18764 **/
+/** Chunk was on 26473 **/
 /** chunk id: 241306, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk296643 = require("./296643.jsx"),
   Chunk343312 = require("./343312.jsx"),
   Chunk162190 = require("./162190.js"),
-  Chunk578499 = require("./578499.js");
+  Chunk333275 = require("./333275.js");
 
 function u() {
   let {
@@ -20,17 +20,17 @@ function u() {
   if (null == module) return null;
   let u = null == module ? true : module.plans.find(e => e.id === n);
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk578499.container,
+    className: Chunk333275.container,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk578499.content,
+      className: Chunk333275.content,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk578499.headerContainer,
+        className: Chunk333275.headerContainer,
         children: [(0, Chunk951288.jsx)("img", {
           src: null != require ? require : "",
-          className: Chunk578499.image,
+          className: Chunk333275.image,
           alt: module.name
         }), (0, Chunk951288.jsxs)("div", {
-          className: Chunk578499.header,
+          className: Chunk333275.header,
           children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
             variant: "heading-lg/semibold",
             color: "text-primary",
@@ -42,7 +42,7 @@ function u() {
           })]
         })]
       }), null != u && (0, Chunk951288.jsx)("div", {
-        className: Chunk578499.statsGrid,
+        className: Chunk333275.statsGrid,
         children: u.specifications.map((e, n) => {
           var t;
           return (0, r.jsxs)(i.Fragment, {
@@ -63,11 +63,11 @@ function u() {
           }, n)
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk578499.poweredBy,
+        className: Chunk333275.poweredBy,
         children: (0, Chunk951288.jsx)(Chunk296643.Z, {})
       })]
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk578499.imageBackground,
+      className: Chunk333275.imageBackground,
       children: (0, Chunk951288.jsx)(Chunk441494.b, {
         imageUrl: null != require ? require : ""
       })

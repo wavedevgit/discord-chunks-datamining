@@ -1,0 +1,17 @@
+/** Chunk was on 64982 **/
+/** chunk id: 605041, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  container: "container_d7a3d0",
+  headerActions: "headerActions_d7a3d0",
+  header: "header_d7a3d0",
+  headerExpanded: "headerExpanded_d7a3d0",
+  headerImageContainer: "headerImageContainer_d7a3d0",
+  headerImage: "headerImage_d7a3d0",
+  starIcon: "starIcon_d7a3d0",
+  headerListingInfo: "headerListingInfo_d7a3d0",
+  headerDescriptionContainer: "headerDescriptionContainer_d7a3d0",
+  draftBadge: "draftBadge_d7a3d0",
+  archivedBadge: "archivedBadge_d7a3d0",
+  unsavedBadge: "unsavedBadge_d7a3d0",
+  pencilIcon: "pencilIcon_d7a3d0"
+}

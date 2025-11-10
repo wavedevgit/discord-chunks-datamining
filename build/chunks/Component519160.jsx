@@ -11,7 +11,7 @@ var r, Chunk951288 = require("./951288.js"),
   s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk112724 = require("./112724.jsx"),
-  Chunk664533 = require("./664533.js");
+  Chunk582235 = require("./582235.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -134,9 +134,9 @@ class y extends(r = Chunk647438.Component) {
       className: r
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
-      className: s()(Chunk664533.singleItemWrapper, Chunk664533.viewport, r),
+      className: s()(Chunk582235.singleItemWrapper, Chunk582235.viewport, r),
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk664533.singleItem,
+        className: Chunk582235.singleItem,
         style: {
           width: require.width,
           height: require.height
@@ -170,7 +170,7 @@ class y extends(r = Chunk647438.Component) {
         children: a(e, t - c, this.interpolateValueForItem(t - c))
       }, t));
     return (0, Chunk951288.jsx)(Chunk748780.Z.div, {
-      className: Chunk664533.carousel,
+      className: Chunk582235.carousel,
       style: {
         opacity: r,
         left: Chunk748780.Z.add(exports.interpolate({
@@ -190,7 +190,7 @@ class y extends(r = Chunk647438.Component) {
     if (module.length <= 0) throw Error("Carousel has no items");
     return 1 === module.length ? this.renderSingleItem() : (0, Chunk951288.jsx)("div", {
       className: s()({
-        [Chunk664533.viewport]: require
+        [Chunk582235.viewport]: require
       }, exports),
       children: this.renderCarouselItems()
     })

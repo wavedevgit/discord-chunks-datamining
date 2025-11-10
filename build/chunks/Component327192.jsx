@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk856651 = require("./856651.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk465631 = require("./465631.js");
+  Chunk11049 = require("./11049.js");
 
 function H(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -459,7 +459,7 @@ function J() {
   }
   let t = (0, Chunk122021.fq)();
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk465631.connectionsContainer,
+    className: Chunk11049.connectionsContainer,
     children: [exports.slice(0, 10).map(e => (0, r.jsx)(g.Z, {
       type: e.type,
       className: V.__invalid_accountButton,
@@ -467,10 +467,10 @@ function J() {
     }, e.type)), (0, Chunk951288.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t.QqTz8b),
       children: (0, Chunk951288.jsx)("div", {
-        className: o()(Chunk465631.accountAddWrapper, Chunk465631.__invalid_accountButton),
+        className: o()(Chunk11049.accountAddWrapper, Chunk11049.__invalid_accountButton),
         children: (0, Chunk951288.jsx)(Chunk481060.tEY, {
           children: (0, Chunk951288.jsx)("button", {
-            className: o()(Chunk465631.accountAddInner, Chunk465631.accountButtonInner),
+            className: o()(Chunk11049.accountAddInner, Chunk11049.accountButtonInner),
             type: "button",
             onClick: module,
             "aria-label": Chunk388032.intl.string(Chunk388032.t.Zhcj9X),

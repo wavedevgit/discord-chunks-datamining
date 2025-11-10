@@ -1,1 +1,1 @@
-{"id":"961675","type":"store","data":{"name":"ForumChannelAdminOnboardingGuideStore","functions":[{"name":"initialize","args":["e"]},{"name":"hasHidden","args":["e"]},{"name":"getState","args":[]}],"events":["ADMIN_ONBOARDING_GUIDE_HIDE"]},"fromModule":{"id":"30025"}}
+{"id":"961675","type":"store","data":{"name":"ForumChannelAdminOnboardingGuideStore","functions":[{"name":"initialize","args":["e"]},{"name":"hasHidden","args":["e"]},{"name":"getState","args":[]}],"events":["ADMIN_ONBOARDING_GUIDE_HIDE"]},"fromModule":{"id":"14953"}}

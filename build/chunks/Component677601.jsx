@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 677601, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eW
@@ -93,7 +93,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk354459 = require("./354459.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk563712 = require("./563712.js");
+  Chunk598411 = require("./598411.js");
 
 function eB(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -130,13 +130,13 @@ function eV(e, t) {
   }), e
 }
 let eF = {
-    [Chunk981631.AEg.NORMAL]: Chunk563712.normal,
-    [Chunk981631.AEg.MINIMUM]: Chunk563712.minimum,
-    [Chunk981631.AEg.NO_CHAT]: Chunk563712.noChat,
-    [Chunk981631.AEg.FULL_SCREEN]: Chunk563712.fullScreen
+    [Chunk981631.AEg.NORMAL]: Chunk598411.normal,
+    [Chunk981631.AEg.MINIMUM]: Chunk598411.minimum,
+    [Chunk981631.AEg.NO_CHAT]: Chunk598411.noChat,
+    [Chunk981631.AEg.FULL_SCREEN]: Chunk598411.fullScreen
   },
   eG = {
-    [Chunk981631.IlC.POPOUT]: Chunk563712.popout,
+    [Chunk981631.IlC.POPOUT]: Chunk598411.popout,
     [Chunk981631.IlC.APP]: null,
     [Chunk981631.IlC.OVERLAY]: null,
     [Chunk981631.IlC.CALL_TILE_POPOUT]: null
@@ -303,10 +303,10 @@ class ez extends Chunk647438.PureComponent {
       resizedHeight: p
     } = this.state, f = Chunk647438 === Chunk981631.WtW.VIDEO, m = module !== Chunk981631.AEg.NO_CHAT && module !== Chunk981631.AEg.FULL_SCREEN && null != Chunk990547, g = Chunk981631.BRd.MIDNIGHT;
     return (0, Chunk951288.jsxs)("div", {
-      className: a()(Chunk563712.wrapper, eF[module], eG[Chunk512722], {
-        [Chunk563712.poppedOut]: this.popoutOpen && !this.inPopout && module !== Chunk981631.AEg.NO_CHAT && exports.isPrivate(),
-        [Chunk563712.video]: Chunk570140,
-        [Chunk563712.sidebarOpen]: Chunk120356 || Chunk704215
+      className: a()(Chunk598411.wrapper, eF[module], eG[Chunk512722], {
+        [Chunk598411.poppedOut]: this.popoutOpen && !this.inPopout && module !== Chunk981631.AEg.NO_CHAT && exports.isPrivate(),
+        [Chunk598411.video]: Chunk570140,
+        [Chunk598411.sidebarOpen]: Chunk120356 || Chunk704215
       }),
       ref: e => {
         this._wrapperRef.current = e, this.props.wrapperRef.current = e
@@ -335,7 +335,7 @@ class ez extends Chunk647438.PureComponent {
         onResize: this.handleCallResize,
         onResizeEnd: this.props.updateStoredCallHeaderHeight
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk563712.channelChatWrapper,
+        className: Chunk598411.channelChatWrapper,
         ref: e => {
           this._channelChatRef.current = e, this.props.channelChatRef.current = e
         },
@@ -438,7 +438,7 @@ class ez extends Chunk647438.PureComponent {
                 return (0, g.jW)(t, async () => {
                   let {
                     default: t
-                  } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("10493")]).then(n.bind(n, 131404));
+                  } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("31589")]).then(n.bind(n, 131404));
                   return n => (0, i.jsx)(t, eV(eH({}, n), {
                     showChannelCallItems: true,
                     showMediaItems: true,
@@ -452,7 +452,7 @@ class ez extends Chunk647438.PureComponent {
                 return (0, g.jW)(t, async () => {
                   let {
                     default: t
-                  } = await Promise.all([n.e("79695"), n.e("66165"), n.e("92775")]).then(n.bind(n, 354589));
+                  } = await Promise.all([n.e("79695"), n.e("66165"), n.e("49062")]).then(n.bind(n, 354589));
                   return n => (0, i.jsx)(t, eV(eH({}, n), {
                     showChannelCallItems: true,
                     showMediaItems: true,
@@ -470,7 +470,7 @@ class ez extends Chunk647438.PureComponent {
                 return s()(null != l, "GuildID null for guild voice channel"), (0, g.jW)(t, async () => {
                   let {
                     default: t
-                  } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("87157")]).then(n.bind(n, 757387));
+                  } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("96306")]).then(n.bind(n, 757387));
                   return n => (0, i.jsx)(t, eV(eH({}, n), {
                     showMediaItems: true,
                     showChannelCallItems: true,
@@ -509,7 +509,7 @@ class ez extends Chunk647438.PureComponent {
         let n = e.getGuildId();
         null != n && (0, V.uL)((0, eg.LY)(n)), B.hP(e)
       };
-      null == t || (0, O.R)() ? n() : (0, I.Z)({
+      null == t || (0, j.R)() ? n() : (0, I.Z)({
         onConfirm: n
       })
     }), eB(this, "handleStayOnTop", e => {
@@ -665,7 +665,7 @@ class ez extends Chunk647438.PureComponent {
         channel: n,
         inCall: r
       } = this.props;
-      return !e || t || this.popoutOpen && !this.inPopout && r ? null : (0, i.jsx)(ej.ZP, {
+      return !e || t || this.popoutOpen && !this.inPopout && r ? null : (0, i.jsx)(eO.ZP, {
         children: (0, i.jsx)(X.Z, {
           className: eU.chatToasts,
           channelId: n.id
@@ -728,9 +728,9 @@ let eW = function(e) {
     ref: g
   } = (0, _.ZP)(), {
     ref: b
-  } = (0, _.ZP)(), y = (0, U.bp)(), O = (0, L.Z)(), E = (0, u.e7)([ep.Z], () => {
+  } = (0, _.ZP)(), y = (0, U.bp)(), j = (0, L.Z)(), E = (0, u.e7)([ep.Z], () => {
     var e;
-    return (null != (e = null == O ? true : O.channelId) ? e : ep.Z.getVoiceChannelId()) === n.id
+    return (null != (e = null == j ? true : j.channelId) ? e : ep.Z.getVoiceChannelId()) === n.id
   }), {
     participants: I,
     filteredParticipants: T,
@@ -771,9 +771,9 @@ let eW = function(e) {
     C.ZP.updatedUnsyncedSettings({
       callHeaderHeight: e
     })
-  }, []), er = null != (t = null == q ? true : q.id) ? t : null, eh = (0, P.Z)(er, n.id), ef = (0, u.e7)([j.Z], () => j.Z.getFetchState(), []), em = (0, x.Z)(ef);
+  }, []), er = null != (t = null == q ? true : q.id) ? t : null, eh = (0, P.Z)(er, n.id), ef = (0, u.e7)([O.Z], () => O.Z.getFetchState(), []), em = (0, x.Z)(ef);
   r.useEffect(() => {
-    ef === j.O.ERROR && em !== j.O.ERROR && (0, h.showToast)((0, h.createToast)(ek.intl.string(ek.t["AlJyI+"]), h.ToastType.FAILURE))
+    ef === O.O.ERROR && em !== O.O.ERROR && (0, h.showToast)((0, h.createToast)(ek.intl.string(ek.t["AlJyI+"]), h.ToastType.FAILURE))
   }, [ef, em]);
   let eg = (0, u.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivityForChannel(n.id), [n]);
   r.useEffect(() => {
@@ -785,7 +785,7 @@ let eW = function(e) {
       null != t ? eC.ZP.unblockDisplaySleep(t) : e = true
     }
   }, [E, w]);
-  let eb = (0, eO.Z)(n, true),
+  let eb = (0, ej.Z)(n, true),
     {
       hasParticipantsPanel: ey
     } = (0, eZ.Z)({
@@ -804,7 +804,7 @@ let eW = function(e) {
     value: ex,
     children: (0, i.jsx)(v.Z, {
       page: eD.ZY5.CHANNEL_CALL,
-      children: (0, i.jsx)(ej.B2, {
+      children: (0, i.jsx)(eO.B2, {
         children: (0, i.jsxs)(eA._A, {
           children: [(0, i.jsx)(ez, {
             channel: n,
@@ -851,7 +851,7 @@ let eW = function(e) {
             theme: eP,
             canPopout: o,
             popoutType: s
-          }), !n.isPrivate() && (0, i.jsx)(eA.YR, {}), (0, i.jsx)(ej.H_, {})]
+          }), !n.isPrivate() && (0, i.jsx)(eA.YR, {}), (0, i.jsx)(eO.H_, {})]
         })
       })
     })

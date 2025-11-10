@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk931810 = require("./931810.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk607180 = require("./607180.js"),
+  Chunk197571 = require("./197571.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -37,7 +37,7 @@ class T extends Chunk647438.PureComponent {
       autoThreshold: e
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk600164.Z, {
-      className: Chunk10198.marginBottom4,
+      className: Chunk197571.marginBottom4,
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.I1Zuq0),
         checked: module,
@@ -60,7 +60,7 @@ class T extends Chunk647438.PureComponent {
   }
   render() {
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk10198.marginBottom20,
+      className: Chunk197571.marginBottom20,
       children: (0, Chunk951288.jsxs)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t["sqUm+k"]),
         role: "group",

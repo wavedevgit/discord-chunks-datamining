@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => o
 });
 var Chunk665352 = require("./665352.js"),
-  Chunk973805 = require("./973805.js");
+  Chunk216397 = require("./216397.js");
 let o = new Chunk665352.Z({
   id: "hsl",
   name: "HSL",
@@ -24,7 +24,7 @@ let o = new Chunk665352.Z({
       name: "Lightness"
     }
   },
-  base: Chunk973805.Z,
+  base: Chunk216397.Z,
   fromBase: e => {
     let t = Math.max(...e),
       r = Math.min(...e),

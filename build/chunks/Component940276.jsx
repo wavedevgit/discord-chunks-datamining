@@ -13,9 +13,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk797670 = require("./797670.jsx"),
   Chunk304432 = require("./304432.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk959067 = require("./959067.js"),
+  Chunk500275 = require("./500275.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk62023 = require("./62023.js");
+  Chunk378976 = require("./378976.js");
 
 function h(e) {
   let {
@@ -66,9 +66,9 @@ let m = function() {
     }), require("")
   }, v = (0, Chunk647438.useId)();
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk62023.wrapper,
+    className: Chunk378976.wrapper,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk62023.headerContainer,
+      className: Chunk378976.headerContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.E1j, {
         query: exports,
         onChange: require,
@@ -92,9 +92,9 @@ let m = function() {
           "aria-expanded": true
         }
       }), module.length > 0 && (0, Chunk951288.jsxs)("div", {
-        className: Chunk62023.controlsContainer,
+        className: Chunk378976.controlsContainer,
         children: [(0, Chunk951288.jsx)(Chunk481060.PhF, {
-          className: Chunk62023.select,
+          className: Chunk378976.select,
           variant: "text-only",
           options: [{
             label: Chunk388032.intl.string(Chunk388032.t.STMPJ2),
@@ -103,10 +103,10 @@ let m = function() {
             label: Chunk388032.intl.string(Chunk388032.t.CbaapP),
             value: Chunk304432.W.RECENTLY_JOINED
           }, {
-            label: Chunk388032.intl.string(Chunk959067.default.ZI51JZ),
+            label: Chunk388032.intl.string(Chunk500275.default.ZI51JZ),
             value: Chunk304432.W.ACTIVITY_SHARING_ON
           }, {
-            label: Chunk388032.intl.string(Chunk959067.default["+kxafn"]),
+            label: Chunk388032.intl.string(Chunk500275.default["+kxafn"]),
             value: Chunk304432.W.ACTIVITY_SHARING_OFF
           }],
           select: e => {
@@ -128,17 +128,17 @@ let m = function() {
     }), (0, Chunk951288.jsx)(Chunk481060.nn4, {
       "aria-live": "polite",
       role: "region",
-      children: Chunk388032.intl.format(Chunk959067.default.EvzDff, {
+      children: Chunk388032.intl.format(Chunk500275.default.EvzDff, {
         count: module.length
       })
     }), (0, Chunk951288.jsxs)("ul", {
-      className: Chunk62023.guildsList,
+      className: Chunk378976.guildsList,
       id: v,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["7hB4kg"]),
       children: [0 === module.length && (0, Chunk951288.jsx)("div", {
-        className: Chunk62023.noResultsContainer,
+        className: Chunk378976.noResultsContainer,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          className: Chunk62023.noResultsText,
+          className: Chunk378976.noResultsText,
           variant: "text-lg/medium",
           children: Chunk388032.intl.string(Chunk388032.t["Xe+fJM"])
         })

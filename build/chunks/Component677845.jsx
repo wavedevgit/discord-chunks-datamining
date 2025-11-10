@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 677845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk251564 = require("./251564.js"),
   Chunk695492 = require("./695492.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk53155 = require("./53155.js");
+  Chunk312439 = require("./312439.js");
 
 function S(e) {
   let {
@@ -38,7 +38,7 @@ function S(e) {
     inCall: T,
     totalNumberOfParticipants: N,
     popoutType: A
-  } = e, w = (0, m.bp)() === j.IlC.POPOUT, M = (0, o.e7)([y.Z], () => y.Z.getGuild(I.guild_id), [I.guild_id]), {
+  } = e, w = (0, m.bp)() === O.IlC.POPOUT, M = (0, o.e7)([y.Z], () => y.Z.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
   } = (0, x.d)(), L = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), D = (0, b.bt)(I.id, t), k = r.useCallback(() => {
     (0, a.j)(() => {
@@ -90,7 +90,7 @@ function S(e) {
     inPopout: w,
     handleClose: k,
     userParticipantCount: L
-  })) : W.push(e => (0, i.jsx)(O.Z, {
+  })) : W.push(e => (0, i.jsx)(j.Z, {
     width: e,
     channel: I,
     guild: M,

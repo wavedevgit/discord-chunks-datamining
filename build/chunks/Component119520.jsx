@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk480916 = require("./480916.js"),
   Chunk986035 = require("./986035.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk937401 = require("./937401.js");
+  Chunk624066 = require("./624066.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -27,7 +27,7 @@ class d extends Chunk647438.PureComponent {
       }
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk937401.matureListing,
+      className: Chunk624066.matureListing,
       children: (0, Chunk951288.jsx)(Chunk986035.Z, {
         modalType: Chunk480916.it.NSFW_APP_LISTING,
         onAgree: this.handleAgree,

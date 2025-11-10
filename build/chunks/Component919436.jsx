@@ -1,4 +1,4 @@
-/** Chunk was on 94709 **/
+/** Chunk was on 31899 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -27,7 +27,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk674552 = require("./674552.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk117000 = require("./117000.js");
+  Chunk514483 = require("./514483.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -194,7 +194,7 @@ class R extends(r = Chunk647438.PureComponent) {
           hovered: !Chunk199902 && Chunk93687,
           selected: !Chunk199902 && require,
           unread: !Chunk199902 && Chunk358221,
-          className: Chunk117000.pill
+          className: Chunk514483.pill
         }), (0, Chunk951288.jsx)(Chunk662146.Z, {
           text: null != exports ? exports : "",
           selected: require,
@@ -234,7 +234,7 @@ class R extends(r = Chunk647438.PureComponent) {
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("55599")]).then(n.bind(n, 131404));
+        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("64807")]).then(n.bind(n, 131404));
         return n => (0, i.jsx)(e, w(Z({}, n), {
           channel: t,
           user: r

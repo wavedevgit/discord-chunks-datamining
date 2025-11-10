@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 518311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => em,
@@ -56,7 +56,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk575464 = require("./575464.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk497072 = require("./497072.js");
+  Chunk918324 = require("./918324.js");
 
 function ei(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -272,7 +272,7 @@ class ed extends(i = Chunk647438.PureComponent) {
     let n = this.getRemaining(),
       i = 0 === exports.size || require < 0;
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk497072.addButton,
+      className: Chunk918324.addButton,
       children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
@@ -323,10 +323,10 @@ class ed extends(i = Chunk647438.PureComponent) {
       let t = G.default.getUser(e);
       null != t && o.push(X.ZP.getName(t))
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk497072.searchBar,
+      className: Chunk918324.searchBar,
       children: [(0, Chunk951288.jsx)(Chunk794433.Z, {
         ref: this.searchBarRef,
-        className: Chunk497072.searchBarComponent,
+        className: Chunk918324.searchBarComponent,
         autoFocus: true,
         placeholder: 0 === Chunk392711.size ? Chunk388032.intl.string(Chunk388032.t.Wxnb6q) : "",
         disabled: this.isPartyFull(),
@@ -357,14 +357,14 @@ class ed extends(i = Chunk647438.PureComponent) {
       results: t
     } = this.props;
     return this.isNotFriends() || !module ? null : this.isPartyFull() ? (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk497072.popoutContent,
+      className: Chunk918324.popoutContent,
       variant: "text-md/normal",
       color: "text-secondary",
       children: Chunk388032.intl.format(Chunk388032.t.xYr004, {
         number: this.getMaxParticipants()
       })
     }) : 0 === exports.length ? (0, Chunk951288.jsx)("div", {
-      className: Chunk497072.noResults,
+      className: Chunk918324.noResults,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-muted",
@@ -373,8 +373,8 @@ class ed extends(i = Chunk647438.PureComponent) {
     }) : (0, Chunk951288.jsx)(Chunk481060.aVo, {
       ref: this.scrollerRef,
       sections: [exports.length],
-      className: Chunk497072.scroller,
-      innerClassName: Chunk497072.scrollerInner,
+      className: Chunk918324.scroller,
+      innerClassName: Chunk918324.scrollerInner,
       renderRow: this.renderRow,
       rowHeight: this.getRowHeight,
       renderSection: this.renderSection,
@@ -410,7 +410,7 @@ class ed extends(i = Chunk647438.PureComponent) {
       sectionHeight: 0,
       rowHeight: 32,
       renderRow: () => (0, Chunk951288.jsx)("div", {
-        className: Chunk497072.noResults,
+        className: Chunk918324.noResults,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           color: "text-muted",
@@ -420,8 +420,8 @@ class ed extends(i = Chunk647438.PureComponent) {
     } : {
       ref: this.scrollerRef,
       sections: [exports.length],
-      className: Chunk497072.scroller,
-      innerClassName: Chunk497072.scrollerInner,
+      className: Chunk918324.scroller,
+      innerClassName: Chunk918324.scrollerInner,
       renderRow: this.renderRow,
       rowHeight: this.getRowHeight,
       renderSection: this.renderSection,
@@ -541,25 +541,25 @@ class ed extends(i = Chunk647438.PureComponent) {
       actions: null != Chunk392711 ? Chunk392711 : [],
       children: this.renderBody()
     }) : (0, Chunk951288.jsxs)("div", {
-      className: Chunk497072.popout,
+      className: Chunk918324.popout,
       children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
-        className: Chunk497072.popoutContent,
+        className: Chunk918324.popoutContent,
         variant: "heading-lg/semibold",
         color: "text-primary",
         children: this.getTitle()
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk497072.popoutContent,
+        className: Chunk918324.popoutContent,
         variant: "text-md/normal",
         color: "text-secondary",
         children: this.getSubtitle()
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk497072.popoutContent,
+        className: Chunk918324.popoutContent,
         children: this.renderSearchBar()
       }), this.renderPopoutBody(), null != Chunk647438 && (0, Chunk951288.jsx)("div", {
-        className: Chunk497072.footer,
+        className: Chunk918324.footer,
         children: Chunk647438
       }), null != Chunk392711 && (0, Chunk951288.jsx)("div", {
-        className: Chunk497072.popoutContent,
+        className: Chunk918324.popoutContent,
         children: (0, Chunk951288.jsx)(Chunk793030.hE2, {
           padding: {
             top: 12
@@ -677,7 +677,7 @@ class ed extends(i = Chunk647438.PureComponent) {
     }), ei(this, "handleQueryChange", e => {
       let {
         channel: t
-      } = this.props, n = (0, j.v_)(t);
+      } = this.props, n = (0, O.v_)(t);
       y.Z.search(e, null == t ? true : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
         z.default.track(ee.rMx.SEARCH_USER_LIST_STARTED, el(er({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
@@ -724,7 +724,7 @@ class ed extends(i = Chunk647438.PureComponent) {
         {
           channel: n
         } = this.props,
-        i = (0, j.v_)(n),
+        i = (0, O.v_)(n),
         r = true;
       1 === e.length && (r = null == m.Z._openCachedDMChannel(e[0])), z.default.track(ee.rMx.CREATE_DM_USER_LIST_CLICKED, el(er({}, i), {
         is_new_dm: r,
@@ -740,17 +740,17 @@ class ed extends(i = Chunk647438.PureComponent) {
         location: "New Group DM"
       }).then(e => {
         let t = {};
-        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && m.Z.updateChannel(e, t, O.Z.NEW_GROUP_DM_INVITE_MODAL), z.default.track(ee.rMx.GDM_EDIT_INTERACTED, {
+        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && m.Z.updateChannel(e, t, j.Z.NEW_GROUP_DM_INVITE_MODAL), z.default.track(ee.rMx.GDM_EDIT_INTERACTED, {
           channel_id: e,
           channel_type: ee.d4z.GROUP_DM,
-          location: O.Z.NEW_GROUP_DM_INVITE_MODAL,
+          location: j.Z.NEW_GROUP_DM_INVITE_MODAL,
           new_name_set: "" !== this.state.newChannelName,
           new_icon_set: null != this.state.previewIcon
         })
       })
     }), ei(this, "pushToExistingDM", (e, t) => {
       let n = this._searchCounter,
-        i = (0, j.v_)(e),
+        i = (0, O.v_)(e),
         r = B.Z.getChannelId() === e.id;
       m.Z.addRecipients(e.id, t, ee.Sbl.ADD_FRIENDS_TO_DM).then(n => {
         if (r) {
@@ -822,8 +822,8 @@ function ep(e) {
     onChange: o
   } = e, {
     analyticsLocations: s
-  } = (0, E.ZP)(O.Z.NEW_GROUP_DM_INVITE_MODAL);
-  if (!(0, Z.a)(O.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
+  } = (0, E.ZP)(j.Z.NEW_GROUP_DM_INVITE_MODAL);
+  if (!(0, Z.a)(j.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
   let c = (0, P.pT)(Array.from(t), G.default, V.Z);
   return (0, r.jsxs)("div", {
     className: en.customizationContainer,
@@ -916,15 +916,15 @@ function em(e) {
     renderPopout: v,
     toggleVisible: _,
     popoutOpen: x,
-    setPopoutOpen: O,
-    inBornThisNamedExperiment: j
+    setPopoutOpen: j,
+    inBornThisNamedExperiment: O
   } = ef({
     initialPopoutOpen: null != i && i.isGroupDM() && 0 === i.recipients.length,
     channel: i,
     location: g,
     subscribeToGlobalHotkey: m
   }), E = (0, u.e7)([G.default], () => G.default.getUser(null == i ? true : i.getRecipientId()));
-  return null != (t = null == E ? true : E.bot) && t || null != (n = null == E ? true : E.isProvisional) && n ? null : j ? (0, r.jsx)(Q.ZP.Icon, {
+  return null != (t = null == E ? true : E.bot) && t || null != (n = null == E ? true : E.isProvisional) && n ? null : O ? (0, r.jsx)(Q.ZP.Icon, {
     ref: b,
     onClick: C,
     icon: y,
@@ -940,7 +940,7 @@ function em(e) {
     nudgeAlignIntoViewport: true,
     autoInvert: true,
     align: f,
-    onRequestClose: () => O(false),
+    onRequestClose: () => j(false),
     animation: p.yRy.Animation.NONE,
     ignoreModalClicks: true,
     clickTrap: true,

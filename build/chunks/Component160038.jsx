@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk379267 = require("./379267.js");
+  Chunk827297 = require("./827297.js");
 let _ = () => {
     Chunk131951.Z.getMediaEngine().once(Chunk46973.aB.ConnectionStats, e => {
       let t = JSON.stringify(Object.values(O.Yn).map(t => {

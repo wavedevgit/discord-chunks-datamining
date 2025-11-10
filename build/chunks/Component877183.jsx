@@ -26,7 +26,7 @@ function g(e) {
     title: g,
     body: m,
     hint: y,
-    notifType: _
+    notifType: O
   } = function(e, t) {
     if (t.isFirstTimeNux) {
       var n, i;
@@ -69,10 +69,10 @@ function g(e) {
     hint: f,
     notifType: p.n0.OopWelcomeNudge
   }, e), {
-    trackView: O,
+    trackView: _,
     trackClick: b
-  } = (0, u.R)(_, {
-    notif_type: _
+  } = (0, u.R)(O, {
+    notif_type: O
   });
   return {
     icon: l,
@@ -91,7 +91,7 @@ function g(e) {
       b("unlock"), s.Z.setInputLocked(false, (0, d.getPID)())
     } : true,
     onNotificationShow: () => {
-      O(), t && (0, o.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
+      _(), t && (0, o.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
     },
     onNotificationClick: (e, t) => {
       b("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? s.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && s.Z.setInstanceLocked(false)

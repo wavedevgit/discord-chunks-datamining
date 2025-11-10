@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 453470, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => v
@@ -26,9 +26,9 @@ function v(e) {
     channelId: t,
     warningId: v,
     senderId: _
-  } = e, x = (0, b.E4)(), O = r.useCallback(() => {
+  } = e, x = (0, b.E4)(), j = r.useCallback(() => {
     (0, p.T)(t, [v])
-  }, [t, v]), j = e => {
+  }, [t, v]), O = e => {
     o.Z.updateChannelOverrideSettings(null, t, {
       muted: true
     }, g.ZB.Muted), c.Z.showMuteSuccessToast(_, t), (0, f.qc)({
@@ -37,7 +37,7 @@ function v(e) {
       senderId: _,
       warningType: h.pj.LIKELY_ATO,
       cta: e
-    }), O()
+    }), j()
   };
   return r.useEffect(() => {
     (0, f.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
@@ -55,7 +55,7 @@ function v(e) {
     warningType: h.pj.LIKELY_ATO,
     header: C.intl.string(C.t.R8UsiI),
     description: C.intl.string(C.t.lI8nQl),
-    onDismiss: O,
+    onDismiss: j,
     buttons: [{
       text: C.intl.string(C.t.tC1pvL),
       variant: "primary",
@@ -87,7 +87,7 @@ function v(e) {
                 description: C.intl.string(C.t.w2ve0t),
                 buttonText: C.intl.string(C.t.ftIK2A),
                 onButtonPress: () => {
-                  j(f.NM.USER_MODAL_MUTE), l()
+                  O(f.NM.USER_MODAL_MUTE), l()
                 }
               }, "likely-ato-mute")],
               learnMore: (0, i.jsx)(a.P3F, {
@@ -118,7 +118,7 @@ function v(e) {
       }
     }, {
       text: C.intl.string(C.t.ftIK2A),
-      onClick: () => j(f.NM.USER_BANNER_MUTE)
+      onClick: () => O(f.NM.USER_BANNER_MUTE)
     }]
   })
 }

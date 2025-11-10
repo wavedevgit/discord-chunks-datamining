@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 146610, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -12,11 +12,11 @@ var Chunk120356 = require("./120356.js"),
   Chunk169903 = require("./169903.js"),
   Chunk67152 = require("./67152.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk710905 = require("./710905.js"),
-  Chunk896519 = require("./896519.js");
+  Chunk183190 = require("./183190.js"),
+  Chunk698128 = require("./698128.js");
 let m = [{
     key: "tier_name",
-    cellClassName: Chunk710905.tierNameColumn,
+    cellClassName: Chunk183190.tierNameColumn,
     renderHeader: () => Chunk388032.intl.string(Chunk388032.t["2Uiha2"]),
     render(e) {
       let t, {
@@ -39,14 +39,14 @@ let m = [{
     }
   }, {
     key: "subscribers",
-    cellClassName: l()(Chunk710905.subscribersColumn, Chunk896519.cellAlignRight),
+    cellClassName: l()(Chunk183190.subscribersColumn, Chunk698128.cellAlignRight),
     renderHeader: () => Chunk388032.intl.string(Chunk388032.t.zu8go1),
     render: e => (0, r.jsx)(c.av, {
       children: e.roleMemberCount
     })
   }, {
     key: "price",
-    cellClassName: l()(Chunk710905.priceColumn, Chunk896519.cellAlignRight),
+    cellClassName: l()(Chunk183190.priceColumn, Chunk698128.cellAlignRight),
     renderHeader: () => Chunk388032.intl.string(Chunk388032.t.NcrbWI),
     render(e) {
       let {

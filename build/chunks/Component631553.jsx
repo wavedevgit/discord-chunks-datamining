@@ -74,9 +74,9 @@ var Chunk266454 = require("./266454.js"),
   Chunk757744 = require("./757744.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk735831 = require("./735831.js");
+  Chunk722363 = require("./722363.js");
 
-function eO(e, t, n) {
+function e_(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -92,7 +92,7 @@ function ev(e) {
 }
 
 function eE(e) {
-  (0, _.jW)(e, async () => {
+  (0, O.jW)(e, async () => {
     let {
       default: e
     } = await n.e("92780").then(n.bind(n, 930381));
@@ -105,7 +105,7 @@ function eE(e) {
           "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), i.forEach(function(t) {
-            eO(e, t, n[t])
+            e_(e, t, n[t])
           })
         }
         return e
@@ -133,10 +133,10 @@ let ex = e => {
       locked: s
     } = e, o = s ? m.P3F : "div";
     return (0, r.jsx)(o, {
-      className: l()(e_.overlayBackground, {
-        [e_.overlayActive]: !s,
-        [e_.overlayLocked]: s,
-        [e_.previewMode]: !s && i
+      className: l()(eO.overlayBackground, {
+        [eO.overlayActive]: !s,
+        [eO.overlayLocked]: s,
+        [eO.previewMode]: !s && i
       }),
       onMouseDown: e => {
         let {
@@ -148,7 +148,7 @@ let ex = e => {
       },
       onContextMenu: eE,
       children: s ? null : (0, r.jsx)("div", {
-        className: e_.closeContainer,
+        className: eO.closeContainer,
         children: (0, r.jsx)(b.Z, {
           variant: b.Z.Variants.BOLD,
           keybind: t,
@@ -195,12 +195,12 @@ class eZ extends Chunk647438.Component {
       if (!e.locked && this.props.locked) {
         if (window.addEventListener("contextmenu", ev, false), null != eb) {
           let e = Date.now() - eb;
-          O.Z.track(em.rMx.OVERLAY_LOCKED, {
+          _.Z.track(em.rMx.OVERLAY_LOCKED, {
             unlocked_duration: e
           }), eb = null
         }
         x.Z.disable(), this.activeKeyEventShapes = [], Y.default.isPinned(em.Odu.TEXT) && (x.Z.setLayout(E.Xq), x.Z.enable())
-      } else e.locked && !this.props.locked && (window.removeEventListener("contextmenu", ev, false), null == eb && (eb = Date.now(), O.Z.track(em.rMx.OVERLAY_UNLOCKED)), x.Z.disable(), this.activeKeyEventShapes = [], x.Z.setLayout(E.Sr), x.Z.enable());
+      } else e.locked && !this.props.locked && (window.removeEventListener("contextmenu", ev, false), null == eb && (eb = Date.now(), _.Z.track(em.rMx.OVERLAY_UNLOCKED)), x.Z.disable(), this.activeKeyEventShapes = [], x.Z.setLayout(E.Sr), x.Z.enable());
       e.keybindKeyCodes !== this.props.keybindKeyCodes && (this.lockEventShape = (0, $.d2)(this.props.keybindKeyCodes))
     }
   }
@@ -250,7 +250,7 @@ class eZ extends Chunk647438.Component {
       if (true !== module.setPerfInfoCallback) {
         var f;
         module.setPerfInfoCallback(e => {
-          O.Z.track(em.rMx.OVERLAY_PERF_INFO, e)
+          _.Z.track(em.rMx.OVERLAY_PERF_INFO, e)
         }), null == (f = module.broadcastCommand) || Chunk442837.call(module, {
           message: "set_perf_report_interval",
           interval: 15 * Chunk70956.Z.Millis.MINUTE
@@ -264,7 +264,7 @@ class eZ extends Chunk647438.Component {
           confirmText: ey.intl.string(ey.t["3PatSz"]),
           cancelText: ey.intl.string(ey.t["ETE/oC"]),
           onConfirmSecondary: () => {
-            O.Z.disableExternalLinkAlert()
+            _.Z.disableExternalLinkAlert()
           },
           onConfirm: () => J.ZP.send("OPEN_EXTERNAL_URL", t)
         })
@@ -279,9 +279,9 @@ class eZ extends Chunk647438.Component {
     return (0, Chunk951288.jsx)(Chunk600164.Z, {
       justify: Chunk600164.Z.Justify.CENTER,
       align: Chunk600164.Z.Align.CENTER,
-      className: Chunk735831.invalidContainer,
+      className: Chunk722363.invalidContainer,
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk735831.inactiveContainer,
+        className: Chunk722363.inactiveContainer,
         children: Chunk388032.intl.format(Chunk388032.t.ketnW0, Chunk145597.OVERLAY_MIN_RESOLUTION)
       })
     })
@@ -306,9 +306,9 @@ class eZ extends Chunk647438.Component {
     let g = module || Chunk120356,
       m = Chunk314897.default.getId();
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk735831.overlay,
+      className: Chunk722363.overlay,
       children: [(0, Chunk951288.jsx)(Chunk708383.Z, {}), Chunk120356 && (0, Chunk951288.jsx)("header", {
-        className: Chunk735831.previewingInGameHeader,
+        className: Chunk722363.previewingInGameHeader,
         children: Chunk388032.intl.string(Chunk388032.t.iOq96m)
       }), i, (!module || Chunk921738.has(Chunk981631.O0n.TEXT_WIDGET)) && (0, Chunk951288.jsx)(ex, {
         locked: module,
@@ -317,8 +317,8 @@ class eZ extends Chunk647438.Component {
         isPreviewingInGame: Chunk120356
       }), (0, Chunk145597.validResolution)(c) ? (0, Chunk951288.jsx)(Chunk312178.Z, {
         className: l()({
-          [Chunk735831.layoutLocked]: module,
-          [Chunk735831.layoutUnlocked]: !module
+          [Chunk722363.layoutLocked]: module,
+          [Chunk722363.layoutUnlocked]: !module
         })
       }) : module ? null : this.renderInvalidSizeMessage(), (0, Chunk951288.jsx)(Chunk107200.Z, {}), null != Chunk954955 && null != u && (0, Chunk951288.jsx)(Chunk923532.Z, {
         streamerId: Chunk481060,
@@ -330,16 +330,16 @@ class eZ extends Chunk647438.Component {
         locked: Chunk704215,
         keybind: exports
       }), (0, Chunk951288.jsx)(Chunk681603.Z, {}), (0, Chunk951288.jsx)("div", {
-        className: Chunk735831.overlayMountPx
+        className: Chunk722363.overlayMountPx
       })]
     })
   }
   constructor(e) {
-    super(e), eO(this, "didUpdate", false), eO(this, "debouncedForceUpdate", u()(() => {
+    super(e), e_(this, "didUpdate", false), e_(this, "debouncedForceUpdate", u()(() => {
       this.forceUpdate()
-    }, 500)), eO(this, "handleWindowResize", () => {
+    }, 500)), e_(this, "handleWindowResize", () => {
       F.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : this.debouncedForceUpdate()
-    }), eO(this, "activeKeyEventShapes", []), eO(this, "lockEventShape", (0, $.d2)(this.props.keybindKeyCodes)), eO(this, "getActiveKeyEventIndex", e => this.activeKeyEventShapes.findIndex(t => h()(t, e))), eO(this, "onKeyDownGlobal", e => {
+    }), e_(this, "activeKeyEventShapes", []), e_(this, "lockEventShape", (0, $.d2)(this.props.keybindKeyCodes)), e_(this, "getActiveKeyEventIndex", e => this.activeKeyEventShapes.findIndex(t => h()(t, e))), e_(this, "onKeyDownGlobal", e => {
       let t = eS(e),
         n = this.getActiveKeyEventIndex(t) > false,
         i = [16, 17, 18, 91].includes(e.keyCode);
@@ -348,8 +348,8 @@ class eZ extends Chunk647438.Component {
         locked: r,
         activeRegions: s
       } = this.props;
-      t.keyCode === c().codes.esc && r && s.has(em.O0n.TEXT_WIDGET) && O.Z.deactivateAllRegions()
-    }), eO(this, "onKeyUpGlobal", e => {
+      t.keyCode === c().codes.esc && r && s.has(em.O0n.TEXT_WIDGET) && _.Z.deactivateAllRegions()
+    }), e_(this, "onKeyUpGlobal", e => {
       let t = eS(e),
         n = this.getActiveKeyEventIndex(t);
       n > false && this.activeKeyEventShapes.splice(n, 1)
@@ -375,8 +375,8 @@ function eC() {
     activeRegions: Chunk237997.default.getActiveRegions(),
     isPreviewingInGame: Chunk237997.default.isPreviewingInGame(),
     trackedGame: Chunk237997.default.getTrackedGame((0, Chunk145597.getPID)())
-  })), d = (0, Chunk442837.e7)([Chunk451478.Z], () => Chunk451478.Z.windowSize()), u = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getOverlayKeybind()), p = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getVoiceChannelId()), h = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(Chunk498607)), g = (0, Chunk442837.e7)([Chunk430824.Z], () => null != h ? Chunk430824.Z.getGuild(h.guild_id) : null), m = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)), y = (0, Chunk442837.e7)([Chunk131951.Z], () => (0, Chunk74299.Z)(Chunk131951.Z)), _ = (0, Chunk442837.e7)([Chunk199902.Z], () => null != Chunk199902.Z.getCurrentUserActiveStream()), {
-    analyticsLocations: O
+  })), d = (0, Chunk442837.e7)([Chunk451478.Z], () => Chunk451478.Z.windowSize()), u = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getOverlayKeybind()), p = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getVoiceChannelId()), h = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(Chunk498607)), g = (0, Chunk442837.e7)([Chunk430824.Z], () => null != h ? Chunk430824.Z.getGuild(h.guild_id) : null), m = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)), y = (0, Chunk442837.e7)([Chunk131951.Z], () => (0, Chunk74299.Z)(Chunk131951.Z)), O = (0, Chunk442837.e7)([Chunk199902.Z], () => null != Chunk199902.Z.getCurrentUserActiveStream()), {
+    analyticsLocations: _
   } = (0, Chunk906732.ZP)(Chunk100527.Z.OVERLAY), {
     showKeybindIndicators: b,
     dismissKeybindNotification: E

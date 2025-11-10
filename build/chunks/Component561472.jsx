@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 561472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -27,7 +27,7 @@ let _ = function(e) {
     style: n,
     channel: _,
     draftType: x
-  } = e, [O, j] = r.useState(true), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != _ && p.Z.can(C.Plq.ATTACH_FILES, _), [_]), P = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(_.id)), I = _.getGuildId(), Z = x === c.d.FirstThreadMessage, T = (0, a.$5)(_), N = r.useMemo(() => !E && (_.isPrivate() && !_.isManaged() || null != I && !T && S && u.Z.canChatInGuild(I)), [S, T, _, I, E]), A = Z ? C.TPd.GUILD_THREADS_ONLY.has(_.type) ? v.intl.string(v.t.RBBLhL) : v.intl.string(v.t.gUx4eu) : O ? v.intl.format(v.t.dYP2Fc, {
+  } = e, [j, O] = r.useState(true), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), S = (0, l.e7)([p.Z], () => null != _ && p.Z.can(C.Plq.ATTACH_FILES, _), [_]), P = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(_.id)), I = _.getGuildId(), Z = x === c.d.FirstThreadMessage, T = (0, a.$5)(_), N = r.useMemo(() => !E && (_.isPrivate() && !_.isManaged() || null != I && !T && S && u.Z.canChatInGuild(I)), [S, T, _, I, E]), A = Z ? C.TPd.GUILD_THREADS_ONLY.has(_.type) ? v.intl.string(v.t.RBBLhL) : v.intl.string(v.t.gUx4eu) : j ? v.intl.format(v.t.dYP2Fc, {
     destination: (0, s.F6)(_, f.default, h.Z, true)
   }) : v.intl.string(v.t.h76ulG);
   return P || !N ? null : (0, i.jsx)(b.Z, {
@@ -39,15 +39,15 @@ let _ = function(e) {
     onDrop: e => {
       if (P) returnfalse;
       N && null != _ && ((0, g.d)(e, _, x, {
-        requireConfirm: O,
+        requireConfirm: j,
         showLargeMessageDialog: false,
         origin: "drag_drop"
       }), m.S.dispatchToLastSubscribed(C.CkL.TEXTAREA_FOCUS))
     },
-    onDragClear: () => j(true),
+    onDragClear: () => O(true),
     onDragOver: e => {
       if (P) returnfalse;
-      Z || e.shiftKey !== O || j(!e.shiftKey)
+      Z || e.shiftKey !== j || O(!e.shiftKey)
     }
   })
 }

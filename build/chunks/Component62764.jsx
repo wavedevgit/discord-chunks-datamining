@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 62764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -38,16 +38,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk228392 = require("./228392.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk68468 = require("./68468.js"),
-  Chunk243777 = require("./243777.js"),
-  Chunk487111 = require("./487111.js"),
-  Chunk332103 = require("./332103.js");
+  Chunk43617 = require("./43617.js"),
+  Chunk319720 = require("./319720.js"),
+  Chunk127947 = require("./127947.js"),
+  Chunk577650 = require("./577650.js");
 
 function V(e) {
   let {
     channel: t
-  } = e, l = t.isArchivedThread(), a = (0, j.P0)(t), [o, c] = r.useState(false), d = () => {
-    c(true), O.Z.resolveFlag(t.id).then(() => {
+  } = e, l = t.isArchivedThread(), a = (0, O.P0)(t), [o, c] = r.useState(false), d = () => {
+    c(true), j.Z.resolveFlag(t.id).then(() => {
       c(false)
     })
   };
@@ -86,8 +86,8 @@ function F(e) {
     isLastItem: l = false,
     parentChannelId: s
   } = e, {
-    ref: O,
-    width: j
+    ref: j,
+    width: O
   } = (0, h.ZP)(), [S, k] = r.useState(3), [F, G] = r.useState(!n), [z, W] = (0, f.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: K
   } = (0, M.cl)(q), Y = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
@@ -105,7 +105,7 @@ function F(e) {
     }
   }, [n]);
   r.useLayoutEffect(() => {
-    let e = O.current;
+    let e = j.current;
     if (null == e || !n) return;
     let t = new IntersectionObserver(el, {
       threshold: 1
@@ -116,8 +116,8 @@ function F(e) {
   });
   let [ea, eo] = r.useState(true);
   if (r.useEffect(() => {
-      null != j && (k(Math.floor((j - 280) / 58)), eo(false))
-    }, [j]), null == q || null == K) return null;
+      null != O && (k(Math.floor((O - 280) / 58)), eo(false))
+    }, [O]), null == q || null == K) return null;
   let es = K.reactions.length > 0,
     ec = () => {
       (0, R.B)({
@@ -133,7 +133,7 @@ function F(e) {
       className: a()(U.container, {
         [U.header]: F
       }),
-      ref: O,
+      ref: j,
       children: [et ? (0, i.jsx)("div", {
         className: U.reportedMessageActions,
         children: (0, i.jsx)(P.Z, {

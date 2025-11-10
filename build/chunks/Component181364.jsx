@@ -45,7 +45,7 @@ function h(e) {
     notifType: d.n0.WelcomeNudge
   }, e), {
     trackView: y,
-    trackClick: _
+    trackClick: O
   } = (0, c.R)(m, {
     notif_type: m
   });
@@ -65,10 +65,10 @@ function h(e) {
       y()
     },
     onNotificationClick: (e, n) => {
-      _("unlock"), t === d.nc.NEWS && r.Z.updateNotificationStatus(n), o.default.isOverlayOOPEnabledForPid((0, a.getPID)()) ? r.Z.setInputLocked(false, (0, a.getPID)()) : l.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
+      O("unlock"), t === d.nc.NEWS && r.Z.updateNotificationStatus(n), o.default.isOverlayOOPEnabledForPid((0, a.getPID)()) ? r.Z.setInputLocked(false, (0, a.getPID)()) : l.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
-      _("dismiss")
+      O("dismiss")
     }
   }
 }

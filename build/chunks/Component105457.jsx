@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 105457, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -13,8 +13,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk321918 = require("./321918.js"),
-  Chunk602009 = require("./602009.js");
+  Chunk960296 = require("./960296.js"),
+  Chunk430864 = require("./430864.js");
 
 function m(e) {
   let {
@@ -54,7 +54,7 @@ function m(e) {
     x = r.useCallback(() => {
       null == g || g(), t()
     }, [g, t]),
-    O = r.useRef(null);
+    j = r.useRef(null);
   return r.useEffect(() => {
     let e, t = c.Z.theme,
       i = false;
@@ -62,8 +62,8 @@ function m(e) {
       let [{
         default: r
       }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, a.wj)(t) ? v.dark() : v.light()]);
-      i || null == O.current || (e = r.loadAnimation({
-        container: O.current,
+      i || null == j.current || (e = r.loadAnimation({
+        container: j.current,
         renderer: "svg",
         loop: true,
         autoplay: true,
@@ -81,7 +81,7 @@ function m(e) {
         className: h.body,
         children: [null != v && (0, i.jsx)("div", {
           className: h.animation,
-          ref: O
+          ref: j
         }), (0, i.jsxs)("div", {
           className: h.content,
           children: [(0, i.jsx)("div", {

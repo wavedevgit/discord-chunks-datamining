@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 325708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y,
@@ -15,7 +15,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk347469 = require("./347469.js"),
   Chunk740492 = require("./740492.js"),
   Chunk36645 = require("./36645.js"),
-  Chunk994425 = require("./994425.js"),
+  Chunk875675 = require("./875675.js"),
   g = ((i = {})[i.PostSidebar = 0] = "PostSidebar", i[i.ThreadSidebar = 1] = "ThreadSidebar", i[i.CallChatSidebar = 2] = "CallChatSidebar", i[i.MessageRequestSidebar = 3] = "MessageRequestSidebar", i[i.HomeSidebar = 4] = "HomeSidebar", i[i.ParticipantsSidebar = 5] = "ParticipantsSidebar", i);
 
 function b(e) {
@@ -66,16 +66,16 @@ function y(e) {
     d.ZP.updatedUnsyncedSettings({
       [y]: e
     })
-  }, [y]), x = 5 === t ? f.at : f.Co, O = (0, f.WL)({
+  }, [y]), x = 5 === t ? f.at : f.Co, j = (0, f.WL)({
     maxWidth: n,
     minWidth: x
-  }), j = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(C, x, n), S = O ? E : E + j;
+  }), O = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(C, x, n), S = j ? E : E + O;
   l.useEffect(() => {
-    null == i || i(E, O)
-  }, [E, i, O]);
+    null == i || i(E, j)
+  }, [E, i, j]);
   let P = null != p ? p : l.Fragment;
   return (0, r.jsxs)(r.Fragment, {
-    children: [!O && (0, r.jsx)("div", {
+    children: [!j && (0, r.jsx)("div", {
       style: {
         minWidth: S
       }
@@ -86,13 +86,13 @@ function y(e) {
         }),
         children: [(0, r.jsx)("div", {
           className: o()(m.chatTarget, {
-            [m.floating]: O,
-            [m.notFloating]: !O
+            [m.floating]: j,
+            [m.notFloating]: !j
           }),
           style: {
             width: S
           }
-        }), !O && (0, r.jsx)(b, {
+        }), !j && (0, r.jsx)(b, {
           minWidth: x,
           maxWidth: n,
           resizableNode: g,
@@ -101,7 +101,7 @@ function y(e) {
         }), (0, r.jsx)("div", {
           ref: g,
           className: o()(m.container, {
-            [m.floating]: O
+            [m.floating]: j
           }),
           style: {
             width: E

@@ -1,4 +1,4 @@
-/** Chunk was on 94709 **/
+/** Chunk was on 31899 **/
 /** chunk id: 862149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
-  Chunk405029 = require("./405029.js");
+  Chunk495940 = require("./495940.js");
 
 function u(e) {
   let {
@@ -54,19 +54,19 @@ function p() {
       gap: 12,
       padding: 4
     },
-    className: l()(Chunk405029.wrapper, {
-      [Chunk405029.noAnimation]: module
+    className: l()(Chunk495940.wrapper, {
+      [Chunk495940.noAnimation]: module
     }),
     children: [(0, Chunk951288.jsx)("div", {
-      className: l()(Chunk405029.avatar, Chunk405029.loadingAnimation)
+      className: l()(Chunk495940.avatar, Chunk495940.loadingAnimation)
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk405029.lineContainer,
+      className: Chunk495940.lineContainer,
       children: [(0, Chunk951288.jsx)(d, {
-        className: l()(Chunk405029.lineMedium, Chunk405029.loadingAnimation)
+        className: l()(Chunk495940.lineMedium, Chunk495940.loadingAnimation)
       }), (0, Chunk951288.jsx)(d, {
-        className: l()(Chunk405029.lineShort, Chunk405029.loadingAnimation)
+        className: l()(Chunk495940.lineShort, Chunk495940.loadingAnimation)
       }), (0, Chunk951288.jsx)(d, {
-        className: l()(Chunk405029.lineLong, Chunk405029.loadingAnimation)
+        className: l()(Chunk495940.lineLong, Chunk495940.loadingAnimation)
       })]
     })]
   })

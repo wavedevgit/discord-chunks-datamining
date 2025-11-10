@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk970648 = require("./970648.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk976914 = require("./976914.js");
+  Chunk78224 = require("./78224.js");
 let j = "mweb_handoff_nonce",
   b = "mweb_handoff_nonce_expiration",
   I = +Chunk70956.Z.Millis.MINUTE,
@@ -84,14 +84,14 @@ let j = "mweb_handoff_nonce",
       children: [Chunk388032.intl.string(Chunk388032.t.uJ1JsY), (0, Chunk951288.jsx)("br", {}), Chunk388032.intl.string(Chunk388032.t.GHVWAs)]
     }) : S.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55r) : y.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTp) : true;
     return null != C && S.has(C) ? (0, Chunk951288.jsx)("div", {
-      className: Chunk976914.errorContainer,
+      className: Chunk78224.errorContainer,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         color: "interactive-normal",
         variant: "text-sm/semibold",
         children: P
       })
     }) : (0, Chunk951288.jsxs)("div", {
-      className: Chunk976914.container,
+      className: Chunk78224.container,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/semibold",
         children: P
@@ -114,7 +114,7 @@ let j = "mweb_handoff_nonce",
           }), window.location.href = exports.toString()
         },
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          className: Chunk976914.buttonText,
+          className: Chunk78224.buttonText,
           variant: "text-sm/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.NcC759)
         })

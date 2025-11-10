@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 111248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -16,8 +16,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk27457 = require("./27457.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk468032 = require("./468032.js"),
-  Chunk285236 = require("./285236.js");
+  Chunk330831 = require("./330831.js"),
+  Chunk315091 = require("./315091.js");
 let y = "CameraPreviewPosition";
 
 function C(e) {
@@ -28,33 +28,33 @@ function C(e) {
     channel: C,
     participants: v,
     onSelectParticipant: _
-  } = e, [x, O] = function() {
+  } = e, [x, j] = function() {
     let [e, t] = r.useState(() => s.K.get(y, f.VD2.BOTTOM_RIGHT));
     return [e, r.useCallback(e => {
       s.K.set(y, e), t(e)
     }, [])]
-  }(), j = r.useRef(null), E = null == C.getGuildId() ? 70 : 50, S = (0, o.e7)([p.Z], () => p.Z.pipWidth(m.cL.CAMERA_PREVIEW)), P = v.length, I = S * P + 8 * (P - 1), Z = r.useMemo(() => ({
+  }(), O = r.useRef(null), E = null == C.getGuildId() ? 70 : 50, S = (0, o.e7)([p.Z], () => p.Z.pipWidth(m.cL.CAMERA_PREVIEW)), P = v.length, I = S * P + 8 * (P - 1), Z = r.useMemo(() => ({
     minWidth: m.Rv[m.cL.CAMERA_PREVIEW] * P + 8 * (P - 1),
     maxWidth: m.$i[m.cL.CAMERA_PREVIEW] * P + 8 * (P - 1)
   }), [P]);
   r.useLayoutEffect(() => {
     var e;
-    null == (e = j.current) || e.ensureIsInPosition()
+    null == (e = O.current) || e.ensureIsInPosition()
   }, [v.length]);
   let T = r.useCallback(e => {
       let t = 0 === P ? e : (e - 8 * (P - 1)) / P;
       c.d7(t, m.cL.CAMERA_PREVIEW)
     }, [P]),
     N = r.useCallback((e, t) => {
-      O(t)
-    }, [O]);
+      j(t)
+    }, [j]);
   return (0, i.jsx)("div", {
     className: g.container,
     children: (0, i.jsx)(d._, {
       position: x,
       id: 0,
       width: I,
-      ref: j,
+      ref: O,
       onMove: N,
       onResize: T,
       maxX: t,

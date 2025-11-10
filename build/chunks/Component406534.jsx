@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 406534, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => et
@@ -127,13 +127,13 @@ function et(e) {
     eg = et.length > 0 && (null == (t = et.first()) ? true : t.isFirstMessageInForumPost(U)),
     eb = (0, s.ts)(U),
     ey = (0, l.e7)([E.Z], () => E.Z.shouldShowTopicsBar() && !ed),
-    eC = (0, O.P)(U.id),
+    eC = (0, j.P)(U.id),
     ev = (0, _.z)(U.id, X.zr),
     e_ = (0, d.k)(U.id),
     ex = (0, D.Z)(),
-    eO = function(e, t) {
+    ej = function(e, t) {
       if (e.isDM() && null != t)
-        if (t.type === v.pj.STRANGER_DANGER) return (0, i.jsx)(j.M, {
+        if (t.type === v.pj.STRANGER_DANGER) return (0, i.jsx)(O.M, {
           channelId: e.id,
           warningId: t.id,
           senderId: e.getRecipientId()
@@ -150,7 +150,7 @@ function et(e) {
       });
       return null
     }(U, null != (n = null != eC ? eC : ev) ? n : e_),
-    ej = U.isForumPost() && !eg ? (0, i.jsx)(m.Z, {
+    eO = U.isForumPost() && !eg ? (0, i.jsx)(m.Z, {
       postId: U.id
     }) : null,
     eE = (0, b.Z)(U.id),
@@ -385,7 +385,7 @@ function et(e) {
     channelStreamMarkup: eI,
     newMessagesBar: r,
     jumpToPresentBar: h,
-    forumPostActionBar: ej,
-    safetyWarningBanner: eO
+    forumPostActionBar: eO,
+    safetyWarningBanner: ej
   }
 }

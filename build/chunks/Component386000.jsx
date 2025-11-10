@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 386000, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -41,10 +41,10 @@ function d(e) {
     parentAnalyticsLocation: y
   } = (0, a.ZP)(), C = t || n || d, v = p ? u.d : u.Z, _ = (0, o.Z)(t, n, d, h), {
     events: x,
-    play: O,
-    Component: j
-  } = (0, c.b)(C), E = n || d ? l.v0G : j;
-  return r.useEffect(() => () => O(), [O, C]), (0, i.jsx)(v, function(e) {
+    play: j,
+    Component: O
+  } = (0, c.b)(C), E = n || d ? l.v0G : O;
+  return r.useEffect(() => () => j(), [j, C]), (0, i.jsx)(v, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

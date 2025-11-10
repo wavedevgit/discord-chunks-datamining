@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk536687 = require("./536687.jsx"),
   Chunk431130 = require("./431130.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk946232 = require("./946232.js");
+  Chunk430799 = require("./430799.js");
 
 function b() {
   var e;
@@ -39,19 +39,19 @@ function b() {
     text: Chunk388032.intl.string(Chunk388032.t.EuHF34),
     children: (0, Chunk951288.jsx)(Chunk481060.P3F, {
       onClick: () => _(Chunk497505.jn.VIDEO_MODAL, Chunk617136.jZ.OPEN_GAME_LINK),
-      className: Chunk946232.adInfoClickable,
+      className: Chunk430799.adInfoClickable,
       children: (0, Chunk951288.jsxs)("div", {
-        className: i()(Chunk946232.contentHeaderGameInfo, Chunk946232.contentHeaderGameInfoHoverable, {
-          [Chunk946232.contentHeaderGameInfoHoverableExpired]: S
+        className: i()(Chunk430799.contentHeaderGameInfo, Chunk430799.contentHeaderGameInfoHoverable, {
+          [Chunk430799.contentHeaderGameInfoHoverableExpired]: S
         }),
         ref: C,
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk946232.contentFooterAdDetailedInfo,
+          className: Chunk430799.contentFooterAdDetailedInfo,
           children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-md/medium",
             color: "header-primary",
-            className: i()(Chunk946232.adDetailsTextSecondary, {
-              [Chunk946232.adDetailsTextSecondaryPortrait]: Chunk120356
+            className: i()(Chunk430799.adDetailsTextSecondary, {
+              [Chunk430799.adDetailsTextSecondaryPortrait]: Chunk120356
             }),
             lineClamp: Chunk120356 ? true : 1,
             children: Chunk388032.intl.format(Chunk388032.t.EQa7os, {
@@ -59,13 +59,13 @@ function b() {
             })
           })
         }), (0, Chunk951288.jsxs)("div", {
-          className: i()(Chunk946232.contentFooterAdDetailedInfo, {
-            [Chunk946232.contentFooterAdDetailedInfoPortrait]: Chunk120356
+          className: i()(Chunk430799.contentFooterAdDetailedInfo, {
+            [Chunk430799.contentFooterAdDetailedInfoPortrait]: Chunk120356
           }),
           children: [(0, Chunk951288.jsx)("div", {
-            className: i()(Chunk946232.adDetailsTextPrimary, {
-              [Chunk946232.adDetailsTextPrimaryPortrait]: Chunk120356,
-              [Chunk946232.addFourPxMarginRight]: Chunk120356
+            className: i()(Chunk430799.adDetailsTextPrimary, {
+              [Chunk430799.adDetailsTextPrimaryPortrait]: Chunk120356,
+              [Chunk430799.addFourPxMarginRight]: Chunk120356
             }),
             children: (0, Chunk951288.jsx)(Chunk481060.owK, {
               size: "xs",
@@ -73,9 +73,9 @@ function b() {
             })
           }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-sm/medium",
-            className: i()(Chunk946232.adDetailsTextPrimary, {
-              [Chunk946232.adDetailsTextPrimaryPortrait]: Chunk120356,
-              [Chunk946232.addFourPxMarginRight]: Chunk120356
+            className: i()(Chunk430799.adDetailsTextPrimary, {
+              [Chunk430799.adDetailsTextPrimaryPortrait]: Chunk120356,
+              [Chunk430799.addFourPxMarginRight]: Chunk120356
             }),
             color: y ? "text-primary" : "text-secondary",
             lineClamp: 1,
@@ -83,12 +83,12 @@ function b() {
           }), j ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
             children: [(0, Chunk951288.jsx)("div", {
               "aria-hidden": "true",
-              className: i()(Chunk946232.dotSpacer, {
-                [Chunk946232.dotSpacerPortrait]: Chunk120356
+              className: i()(Chunk430799.dotSpacer, {
+                [Chunk430799.dotSpacerPortrait]: Chunk120356
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
-              className: i()(Chunk946232.adDetailsTextSecondary, {
-                [Chunk946232.adDetailsTextSecondaryPortrait]: Chunk120356
+              className: i()(Chunk430799.adDetailsTextSecondary, {
+                [Chunk430799.adDetailsTextSecondaryPortrait]: Chunk120356
               }),
               variant: "heading-sm/medium",
               lineClamp: Chunk120356 ? true : 1,

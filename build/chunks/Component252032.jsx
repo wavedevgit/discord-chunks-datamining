@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 252032, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -22,9 +22,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk955384 = require("./955384.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk224837 = require("./224837.js"),
-  Chunk5898 = require("./5898.js");
+  Chunk360514 = require("./360514.js");
 
-function O(e) {
+function j(e) {
   let {
     value: t,
     channel: n
@@ -38,7 +38,7 @@ function O(e) {
   })
 }
 
-function j(e) {
+function O(e) {
   let {
     channel: t,
     message: n
@@ -46,7 +46,7 @@ function j(e) {
     id: s
   } = t, {
     id: c
-  } = n, f = t.getGuildId(), g = (0, l.e7)([p.Z], () => p.Z.getGuild(f), [f]), y = t.type === v.d4z.GUILD_ANNOUNCEMENT, j = null != g && g.features.has(v.GuildFeatures.NEWS), S = y && j, {
+  } = n, f = t.getGuildId(), g = (0, l.e7)([p.Z], () => p.Z.getGuild(f), [f]), y = t.type === v.d4z.GUILD_ANNOUNCEMENT, O = null != g && g.features.has(v.GuildFeatures.NEWS), S = y && O, {
     editingMessage: P,
     editingTextValue: I,
     editingRichValue: Z
@@ -115,7 +115,7 @@ function j(e) {
     onChange: a.Z.updateEditMessage,
     onConfirmDelete: b.Z.confirmDelete,
     saveMessage: N,
-    validateEdit: O,
+    validateEdit: j,
     children: A
   }) : null
 }
@@ -160,7 +160,7 @@ function S(e, t, n) {
     channel: l,
     compact: a
   } = e;
-  return n ? (0, i.jsx)(j, {
+  return n ? (0, i.jsx)(O, {
     channel: l,
     message: r
   }) : (0, i.jsx)(y.ZP, {

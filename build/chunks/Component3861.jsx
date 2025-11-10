@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 3861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk45430 = require("./45430.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk450906 = require("./450906.js");
+  Chunk394024 = require("./394024.js");
 let v = (0, Chunk112724.Z)(e => {
   let {
     participants: t,
@@ -28,8 +28,8 @@ let v = (0, Chunk112724.Z)(e => {
     participantsVersion: v,
     layout: _,
     onSelectParticipant: x,
-    onContextMenuParticipant: O,
-    onFullscreenParticipant: j,
+    onContextMenuParticipant: j,
+    onFullscreenParticipant: O,
     channel: E,
     hasConnectPermission: S,
     className: P,
@@ -61,7 +61,7 @@ let v = (0, Chunk112724.Z)(e => {
     width: T,
     className: C.voiceCallWrapper,
     participants: t,
-    onContextMenu: O
+    onContextMenu: j
   });
   if (n = I ? n : t, null == a) {
     if (0 === n.length) {
@@ -81,16 +81,16 @@ let v = (0, Chunk112724.Z)(e => {
         participants: D,
         totalNumberOfParticipants: t.length,
         onClick: x,
-        onDoubleClick: j,
-        onContextMenu: O,
+        onDoubleClick: O,
+        onContextMenu: j,
         inCall: I,
         popoutType: M
       })
     })
   }
   return (0, i.jsx)(m.Z, {
-    onFullscreenParticipant: j,
-    onContextMenuParticipant: O,
+    onFullscreenParticipant: O,
+    onContextMenuParticipant: j,
     onSelectParticipant: x,
     selectedParticipant: a,
     filteredParticipants: D,

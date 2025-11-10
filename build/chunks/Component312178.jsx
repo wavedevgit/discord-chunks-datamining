@@ -40,7 +40,7 @@ let E = {
       dragStart: s,
       className: o
     } = e;
-    return (0, i.jsx)(_.Z, {
+    return (0, i.jsx)(O.Z, {
       dragStart: s,
       locked: n,
       pinned: r,
@@ -68,7 +68,7 @@ let E = {
       locked: s,
       pinned: o
     } = e;
-    return (0, i.jsx)(O.Z, {
+    return (0, i.jsx)(_.Z, {
       anchor: n,
       id: t,
       locked: s,
@@ -138,8 +138,8 @@ class x extends Chunk647438.PureComponent {
       anchor: p,
       minSize: f
     } = module, g = (0, Chunk434529.w_)(Chunk237997, require), m = (0, Chunk434529.KR)(Chunk451478, require), {
-      resizeX: _,
-      resizeY: O,
+      resizeX: O,
+      resizeY: _,
       dragAnywhere: b
     } = exports, v = (0, Chunk906037.eM)({
       locked: Chunk647438,

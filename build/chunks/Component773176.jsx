@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 773176, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eg
@@ -60,7 +60,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk271425 = require("./271425.js");
+  Chunk785727 = require("./785727.js");
 
 function eo(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -207,13 +207,13 @@ function ep(e) {
       author: d
     } = n, p = (0, u.e7)([H.Z], () => H.Z.getGuild(t.guild_id), [t.guild_id]), m = (0, u.e7)([k.default], () => k.default.getId()), g = (0, L.$R)(t), b = (0, L.Gu)(t), {
       firstMessage: v
-    } = (0, u.e7)([y.Z], () => y.Z.getMessage(t.id), [t.id]), _ = D.nc.useSetting(), x = D.Sb.useSetting(), j = (0, u.e7)([V.Z], () => null == t.guild_id || V.Z.canChatInGuild(t.guild_id), [t]), {
+    } = (0, u.e7)([y.Z], () => y.Z.getMessage(t.id), [t.id]), _ = D.nc.useSetting(), x = D.Sb.useSetting(), O = (0, u.e7)([V.Z], () => null == t.guild_id || V.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: E,
       canAddNewReactions: S
     } = (0, u.cj)([F.Z], () => ({
-      canAddNewReactions: j && F.Z.can(ei.Plq.ADD_REACTIONS, t),
+      canAddNewReactions: O && F.Z.can(ei.Plq.ADD_REACTIONS, t),
       canManageMessages: F.Z.can(ei.Plq.MANAGE_MESSAGES, t)
-    }), [t, j]), P = (0, w.U)(t, n), I = (0, L.NE)(t, n), Z = (0, L.Ek)(n), T = (0, u.e7)([O.Z], () => null != t.guild_id && O.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([B.ZP], () => null != t.guild_id && B.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === m, U = (E || n.canDeleteOwnMessage(m)) && g && !ei.V$x.UNDELETABLE.has(n.type);
+    }), [t, O]), P = (0, w.U)(t, n), I = (0, L.NE)(t, n), Z = (0, L.Ek)(n), T = (0, u.e7)([j.Z], () => null != t.guild_id && j.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([B.ZP], () => null != t.guild_id && B.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === m, U = (E || n.canDeleteOwnMessage(m)) && g && !ei.V$x.UNDELETABLE.has(n.type);
     n.type === ei.uaV.AUTO_MODERATION_ACTION && (U = U && E), t.isModeratorReportChannel() && (U = U && n.id !== (null == v ? true : v.id) && !(0, J.Z)(n));
     let G = (0, K.a4)(n),
       W = (0, X.Z)(n, t),
@@ -222,7 +222,7 @@ function ep(e) {
         disableReactionCreates: $
       } = (0, Q.Z)({
         channel: t,
-        canChat: j,
+        canChat: O,
         renderReactions: _,
         canAddNewReactions: S,
         isLurking: T,
@@ -281,7 +281,7 @@ function ep(e) {
     })
   }, [W, er]), ef = (0, L.$R)(t), eg = n.hasFlag(ei.iLy.CROSSPOSTED), eb = (0, Z.Z)(t), ey = (0, I.Nt)(), eC = eb && ey && !n.hasPotions(), ev = r.useCallback(e => {
     try {
-      (0, j.qc)(t.id, n.id, e)
+      (0, O.qc)(t.id, n.id, e)
     } catch (e) {
       (0, d.showToast)((0, d.createToast)(el.intl.string(el.t.xsfC2S), d.ToastType.FAILURE))
     }

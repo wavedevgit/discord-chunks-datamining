@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 5200, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y: () => v
@@ -15,7 +15,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk513202 = require("./513202.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk482538 = require("./482538.js");
+  Chunk748788 = require("./748788.js");
 let b = ["embedded_cover"],
   y = {
     tension: 800,
@@ -34,8 +34,8 @@ function v(e) {
     commandOrigin: _
   } = e, {
     onActivityItemSelected: x,
-    imageBackground: O,
-    activityAction: j,
+    imageBackground: j,
+    activityAction: O,
     labelType: E
   } = (0, u.ZP)({
     context: n,
@@ -59,7 +59,7 @@ function v(e) {
       })
     })
   }), [E]), N = l.useMemo(() => {
-    switch (j) {
+    switch (O) {
       case u.JS.JOIN:
         return (0, r.jsx)("div", {
           className: g.activityAction,
@@ -88,7 +88,7 @@ function v(e) {
       default:
         return null
     }
-  }, [j]);
+  }, [O]);
   return (0, r.jsx)(c.P3F, {
     onClick: x,
     onFocus: I,
@@ -119,7 +119,7 @@ function v(e) {
               transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
             },
             children: [(0, r.jsx)(d.Z, {
-              imageBackground: O,
+              imageBackground: j,
               applicationName: i.application.name,
               imageClassName: g.activitySuggestionImage,
               imageNotFoundClassName: g.brokenImageIconWrapper

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   QR: () => y,
-  Yj: () => _,
+  Yj: () => O,
   ZP: () => b
 });
 var i, Chunk951288 = require("./951288.js"),
@@ -13,8 +13,8 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk294033 = require("./294033.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk681212 = require("./681212.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk866497 = require("./866497.js"),
+  Chunk197571 = require("./197571.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,13 +26,13 @@ function h(e, t, n) {
 }
 let f = e => e.stopPropagation(),
   g = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk681212.clickBlocker,
+    className: Chunk866497.clickBlocker,
     onClick: f,
     onMouseEnter: f,
     onMouseOver: f
   }),
   m = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk681212.divider
+    className: Chunk866497.divider
   }),
   y = (e, t, n) => (0, r.jsx)("div", {
     className: u.keybindMessage,
@@ -44,11 +44,11 @@ let f = e => e.stopPropagation(),
       }, n)
     })
   }),
-  _ = (e, t) => (0, r.jsx)("div", {
+  O = (e, t) => (0, r.jsx)("div", {
     className: u.hintSubtleText,
     children: t
   });
-class O extends(i = Chunk647438.PureComponent) {
+class _ extends(i = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     let {
       expand: n
@@ -74,12 +74,12 @@ class O extends(i = Chunk647438.PureComponent) {
   renderCloseButton() {
     return "function" == typeof this.props.title ? null : (0, Chunk951288.jsx)(Chunk481060.P3F, {
       onClick: this.handleDismiss,
-      className: Chunk681212.dismissButton,
+      className: Chunk866497.dismissButton,
       "aria-label": Chunk388032.intl.string(Chunk388032.t.LnEgqX),
       children: (0, Chunk951288.jsx)(Chunk481060.Dio, {
         size: "xs",
         color: "currentColor",
-        className: Chunk681212.dismissIcon
+        className: Chunk866497.dismissIcon
       })
     })
   }
@@ -102,7 +102,7 @@ class O extends(i = Chunk647438.PureComponent) {
     }
     return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [(0, Chunk951288.jsx)(m, {}), (0, Chunk951288.jsx)("div", {
-        className: "string" == typeof module ? Chunk681212.hintText : true,
+        className: "string" == typeof module ? Chunk866497.hintText : true,
         children: module
       }, "hint-text")]
     }, "hint-text")
@@ -151,10 +151,10 @@ class O extends(i = Chunk647438.PureComponent) {
     return null == module ? null : "string" == typeof module ? (0, Chunk951288.jsx)(Chunk481060.qEK, {
       src: module,
       size: Chunk481060.EFr.SIZE_40,
-      className: Chunk681212.avatar,
+      className: Chunk866497.avatar,
       "aria-hidden": true
     }) : (0, Chunk951288.jsx)("div", {
-      className: Chunk681212.avatar,
+      className: Chunk866497.avatar,
       children: module
     })
   }
@@ -165,14 +165,14 @@ class O extends(i = Chunk647438.PureComponent) {
       maxBodyLines: n
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk681212.content,
+      className: Chunk866497.content,
       children: [this.renderIcon(), (0, Chunk951288.jsxs)("div", {
-        className: Chunk681212.details,
+        className: Chunk866497.details,
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk681212.title,
+          className: Chunk866497.title,
           children: "function" == typeof exports ? exports(this.handleDismiss) : exports
         }), null != module ? (0, Chunk951288.jsx)("div", {
-          className: l()(Chunk681212.body, Chunk10198.marginTop4),
+          className: l()(Chunk866497.body, Chunk197571.marginTop4),
           style: {
             WebkitLineClamp: require,
             lineClamp: require
@@ -196,9 +196,9 @@ class O extends(i = Chunk647438.PureComponent) {
       onMouseOver: require ? true : this.handleMouseEnter,
       onFocus: require ? true : this.handleMouseEnter,
       onClick: null != module ? module : true,
-      className: l()(Chunk681212.container, {
-        [Chunk681212.themePrimary]: true,
-        [Chunk681212.clickable]: null != module && !exports
+      className: l()(Chunk866497.container, {
+        [Chunk866497.themePrimary]: true,
+        [Chunk866497.clickable]: null != module && !exports
       }),
       children: [this.renderCloseButton(), this.renderContent(), this.renderFooter(), exports ? (0, Chunk951288.jsx)(g, {}) : null]
     })
@@ -235,9 +235,9 @@ class O extends(i = Chunk647438.PureComponent) {
     }
   }
 }
-h(O, "defaultProps", {
+h(_, "defaultProps", {
   maxBodyLines: true,
   expand: false,
   disabled: false
 });
-let b = O
+let b = _

@@ -24,8 +24,8 @@ function m(e) {
     m = (0, o.x)(e),
     y = (0, c.Z)(e),
     {
-      trackView: _,
-      trackClick: O
+      trackView: O,
+      trackClick: _
     } = (0, p.R)(f.n0.IncomingCall, {
       notif_type: f.n0.IncomingCall,
       notif_user_id: y,
@@ -41,7 +41,7 @@ function m(e) {
     confirmText: g.intl.string(g.t["0D/6Rz"]),
     cancelText: g.intl.string(g.t.BVN4pL),
     onNotificationShow: () => {
-      _()
+      O()
     },
     onConfirmClick: () => {
       if (h.TPd.CALLABLE.has(e.type)) r.Z.callPrivateChannel(e.id);
@@ -49,7 +49,7 @@ function m(e) {
         if (e.type !== h.d4z.GUILD_VOICE) return;
         s.default.selectVoiceChannel(e.id)
       }
-      O("join"), r.Z.track(h.rMx.VOICE_CHANNEL_SELECTED, {
+      _("join"), r.Z.track(h.rMx.VOICE_CHANNEL_SELECTED, {
         location: "Overlay Notificaiton",
         guild_id: e.guild_id,
         channel_id: e.id,
@@ -57,10 +57,10 @@ function m(e) {
       })
     },
     onCancelClick: () => {
-      i.Z.stopRinging(e.id), O("decline")
+      i.Z.stopRinging(e.id), _("decline")
     },
     onDismissClick: () => {
-      O("dismiss")
+      _("dismiss")
     }
   }
 }

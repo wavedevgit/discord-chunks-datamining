@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 190210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ei
@@ -51,8 +51,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk224837 = require("./224837.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk310069 = require("./310069.js"),
-  Chunk744114 = require("./744114.js");
+  Chunk593514 = require("./593514.js"),
+  Chunk564355 = require("./564355.js");
 
 function $(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -138,8 +138,8 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     autoCompletePosition: ev,
     disableThemedBackground: e_ = false,
     emojiPickerCloseOnModalOuterClick: ex,
-    parentModalKey: eO
-  } = e, ej = O.Z.useField("channelDrafts")[L.id], eE = null != (l = null == ej ? true : ej.title) ? l : "", eS = null == ej ? true : ej.heroFile, eP = null == (o = null == ej ? true : ej.publish) || o, eI = null == (u = null == ej ? true : ej.createThread) || u;
+    parentModalKey: ej
+  } = e, eO = j.Z.useField("channelDrafts")[L.id], eE = null != (l = null == eO ? true : eO.title) ? l : "", eS = null == eO ? true : eO.heroFile, eP = null == (o = null == eO ? true : eO.publish) || o, eI = null == (u = null == eO ? true : eO.createThread) || u;
   s()(null != k, "chat input type must be set");
   let {
     analyticsLocations: eZ
@@ -173,7 +173,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     let t = e => {
         if (e.shouldClear) {
           var t;
-          (0, O.c)(L.id, {
+          (0, j.c)(L.id, {
             title: "",
             heroFile: null
           }), null == (t = eA.current) || t.blur()
@@ -298,11 +298,11 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     var e;
     if (null == eS) return;
     let t = null == (e = R.Z.getUploads(L.id, k.drafts.type).find(e => e.filename === eS.name)) ? true : e.id;
-    null != t && m.Z.remove(L.id, t, w.d.ChannelMessage), (0, O.c)(L.id, {
+    null != t && m.Z.remove(L.id, t, w.d.ChannelMessage), (0, j.c)(L.id, {
       heroFile: null
     })
   }, [L.id, eS, k.drafts.type]);
-  return (0, i.jsx)(j.f6, {
+  return (0, i.jsx)(O.f6, {
     value: eq,
     children: (0, i.jsxs)(v.Gt, {
       value: eZ,
@@ -331,7 +331,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                   onRemoveHeroImage: tb
                 }) : null, null != eS ? null : (0, i.jsx)(eo, {
                   channel: L,
-                  onImageUploaded: e => (0, O.c)(L.id, {
+                  onImageUploaded: e => (0, j.c)(L.id, {
                     heroFile: e
                   }),
                   onFocus: () => to(true)
@@ -342,7 +342,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                   className: J.titleInput,
                   placeholder: X.intl.string(X.t.Z8fYjO),
                   value: eE,
-                  onChange: e => (0, O.c)(L.id, {
+                  onChange: e => (0, j.c)(L.id, {
                     title: e.target.value
                   })
                 })]
@@ -497,7 +497,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
         onSelectSticker: tl,
         channel: L,
         closeOnModalOuterClick: ex,
-        parentModalKey: eO,
+        parentModalKey: ej,
         position: "top",
         align: "right",
         positionLayerClassName: Q.expressionPickerPositionLayer
@@ -511,7 +511,7 @@ function er(e) {
   let {
     channelId: r,
     canCreateThread: l
-  } = e, a = O.Z.useField("channelDrafts")[r], o = null == (t = null == a ? true : a.createThread) || t, s = null == (n = null == a ? true : a.publish) || n;
+  } = e, a = j.Z.useField("channelDrafts")[r], o = null == (t = null == a ? true : a.createThread) || t, s = null == (n = null == a ? true : a.publish) || n;
   return (0, i.jsxs)(f.v2r, {
     "aria-label": X.intl.string(X.t["9WnJyo"]),
     navId: "send-announcement-options",
@@ -523,7 +523,7 @@ function er(e) {
       checked: l && o,
       disabled: !l,
       action: () => {
-        (0, O.c)(r, {
+        (0, j.c)(r, {
           createThread: !o
         })
       }
@@ -532,7 +532,7 @@ function er(e) {
       label: X.intl.string(X.t.MFGE51),
       checked: s,
       action: () => {
-        (0, O.c)(r, {
+        (0, j.c)(r, {
           publish: !s
         })
       }

@@ -1,7 +1,7 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 921235, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 }), require("./388685.js"), require("./583741.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,18 +21,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk901461 = require("./901461.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk352749 = require("./352749.js");
+  Chunk315146 = require("./315146.js");
 let x = "749054660769218631";
 
-function O(e) {
+function j(e) {
   var t;
   let {
     channel: n
-  } = e, [l, O] = r.useState("");
+  } = e, [l, j] = r.useState("");
   r.useEffect(() => {
     (0, u.FQ)("847199849233514549", true)
   }, []);
-  let j = (0, o.e7)([f.Z, h.default], () => !!a()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === C.yb.SENT && !(0, y.Z)(e))),
+  let O = (0, o.e7)([f.Z, h.default], () => !!a()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === C.yb.SENT && !(0, y.Z)(e))),
     E = (0, o.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
     S = null != (t = b.ZP.useName(E)) ? t : v.intl.string(v.t.y1Wu2f),
     P = (0, o.e7)([d.Z], () => d.Z.getStickerById(x)),
@@ -45,7 +45,7 @@ function O(e) {
           type: "Send wave"
         })
       } catch (e) {
-        e.ok || 429 !== e.status || O(v.intl.string(v.t.Whhv4w))
+        e.ok || 429 !== e.status || j(v.intl.string(v.t.Whhv4w))
       }
     }, [n.id, n.type, l]),
     Z = v.intl.formatToPlainString(v.t.m0zYbV, {
@@ -57,7 +57,7 @@ function O(e) {
       variant: "text-sm/normal",
       children: l
     }) : null;
-  return j ? (0, i.jsxs)("div", {
+  return O ? (0, i.jsxs)("div", {
     className: _.containerCompact,
     children: [(0, i.jsxs)(s.P3F, {
       className: null != l && "" !== l ? _.compactButtonDisabled : _.compactButton,

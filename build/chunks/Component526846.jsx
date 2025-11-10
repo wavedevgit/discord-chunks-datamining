@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 526846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => k
@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk558317 = require("./558317.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk915062 = require("./915062.js");
+  Chunk201512 = require("./201512.js");
 let R = Chunk973693.Y.APP_LAUNCHER_IN_VOICE_BANNER,
   L = "vc-activities-".concat((0, Chunk772848.Z)());
 
@@ -72,7 +72,7 @@ function D(e) {
       return null == e ? null : e.type === u.C.APPLICATION_BANNER ? e : null
     }, [null == h ? true : h.application_directory_collection_items]),
     {
-      trackItemImpressionRef: O
+      trackItemImpressionRef: j
     } = (0, b.Z)({
       applicationId: null != (t = null == C ? true : C.application.id) ? t : "",
       applicationFlags: null == C ? true : C.application.flags,
@@ -87,7 +87,7 @@ function D(e) {
     containerWidth: 584
   })), (0, i.jsxs)(p.P3F, {
     className: M.clickableBanner,
-    innerRef: O,
+    innerRef: j,
     onClick: () => {
       o(), (0, y.Z)({
         context: {
@@ -132,7 +132,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
   }, [_, x]), r.useEffect(() => {
     o || s()
   }, [s, o]);
-  let E = (0, O.bp)(),
+  let E = (0, j.bp)(),
     {
       analyticsLocations: R,
       newestAnalyticsLocation: k
@@ -170,7 +170,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
   }, [c, l]), G = H ? p.iWm : p.nG3;
   return (0, i.jsx)(m.Gt, {
     value: R,
-    children: (0, i.jsx)(j.Z, {
+    children: (0, i.jsx)(O.Z, {
       children: (0, i.jsxs)(p.VqE, {
         ref: t,
         "aria-labelledby": L,

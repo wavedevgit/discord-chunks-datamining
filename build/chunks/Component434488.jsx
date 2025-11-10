@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 434488, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => I
@@ -21,12 +21,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk895924 = require("./895924.js"),
   Chunk266454 = require("./266454.js"),
   Chunk340541 = require("./340541.js"),
-  Chunk448239 = require("./448239.jsx"),
+  Chunk416345 = require("./416345.jsx"),
   Chunk626135 = require("./626135.js"),
   Chunk607187 = require("./607187.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk954289 = require("./954289.js"),
+  Chunk348130 = require("./348130.js"),
   Chunk359165 = require("./359165.js");
 
 function I(e) {
@@ -77,7 +77,7 @@ function Z(e) {
   }), h = d ? u.iWm : u.gQj;
   return (0, i.jsx)(g.Gt, {
     value: l,
-    children: (0, i.jsxs)(O.Z, {
+    children: (0, i.jsxs)(j.Z, {
       className: S.root,
       children: [(0, i.jsx)(c.u, {
         asContainer: true,
@@ -107,7 +107,7 @@ function Z(e) {
           })
         })
       }), (0, i.jsx)(u.f6W, {
-        theme: j.BRd.DARK,
+        theme: O.BRd.DARK,
         children: e => (0, i.jsx)(u.P3F, {
           onClick: r,
           className: a()(e, S.shelfButtonCloseButton),
@@ -130,7 +130,7 @@ function T(e) {
     inPopout: o
   } = e;
   r.useEffect(() => {
-    x.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    x.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity invite",
       n_participants: 1
     })
@@ -152,7 +152,7 @@ function T(e) {
     (0, u.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("49049"), n.e("7654"), n.e("89334")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("49049"), n.e("7654"), n.e("68971")]).then(n.bind(n, 560114));
       return n => {
         var r, a;
         return (0, i.jsx)(e, (r = function(e) {
@@ -175,7 +175,7 @@ function T(e) {
         }({}, n), a = a = {
           guild: l,
           channel: t,
-          source: j.t4x.ACTIVITY_ENTRY_POINT_TILE
+          source: O.t4x.ACTIVITY_ENTRY_POINT_TILE
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -210,8 +210,8 @@ function T(e) {
     value: s,
     children: (0, i.jsx)(u.f6W, {
       disableAdaptiveTheme: true,
-      theme: j.BRd.MIDNIGHT,
-      children: e => (0, i.jsxs)(O.Z, {
+      theme: O.BRd.MIDNIGHT,
+      children: e => (0, i.jsxs)(j.Z, {
         className: a()(S.root, S.singleUserRoot, e),
         children: [(0, i.jsx)("img", {
           src: P,
@@ -246,7 +246,7 @@ function N(e) {
     userParticipantCount: c
   } = e;
   (0, d.ZP)(() => {
-    x.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    x.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity suggestion",
       n_participants: c
     })
@@ -263,7 +263,7 @@ function N(e) {
     }), [t]);
   return (0, i.jsx)(g.Gt, {
     value: b,
-    children: (0, i.jsxs)(O.Z, {
+    children: (0, i.jsxs)(j.Z, {
       className: S.root,
       children: [s > 300 ? (0, i.jsx)(u.Text, {
         className: S.heading,
@@ -283,7 +283,7 @@ function N(e) {
       }), (0, i.jsxs)(u.P3F, {
         className: S.checkboxContainer,
         onClick: function() {
-          x.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          x.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: c
@@ -296,7 +296,7 @@ function N(e) {
       }), (0, i.jsx)(u.P3F, {
         className: S.closeButtonContainer,
         onClick: function() {
-          x.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          x.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "temporary",
             n_participants: c

@@ -1,7 +1,7 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 912114, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => j,
+  B: () => O,
   default: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk140106 = require("./140106.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk653841 = require("./653841.js");
+  Chunk358993 = require("./358993.js");
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -43,7 +43,7 @@ function x(e) {
   return e
 }
 
-function O(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,7 +56,7 @@ function O(e, t) {
   }), e
 }
 
-function j(e) {
+function O(e) {
   let {
     channel: t,
     previewIcon: n,
@@ -128,10 +128,10 @@ let E = function(e) {
   };
   return (r.useEffect(() => {
     a(Z !== P || w)
-  }, [Z, P, w, a]), (0, d.ZP)(() => (b.default.track(C.rMx.GDM_EDIT_INTERACTED, O(x({}, R), {
+  }, [Z, P, w, a]), (0, d.ZP)(() => (b.default.track(C.rMx.GDM_EDIT_INTERACTED, j(x({}, R), {
     action: "opened"
   })), () => {
-    b.default.track(C.rMx.GDM_EDIT_INTERACTED, O(x({}, R), {
+    b.default.track(C.rMx.GDM_EDIT_INTERACTED, j(x({}, R), {
       action: "dismissed"
     }))
   })), null == S) ? null : (0, i.jsx)(h.Gt, {
@@ -141,7 +141,7 @@ let E = function(e) {
         e.preventDefault();
         let i = Z !== P,
           r = true !== N;
-        if (b.default.track(C.rMx.GDM_EDIT_INTERACTED, O(x({}, R), {
+        if (b.default.track(C.rMx.GDM_EDIT_INTERACTED, j(x({}, R), {
             action: "saved",
             new_name_set: "" !== Z,
             new_icon_set: (r ? N : null == S ? true : S.icon) != null,
@@ -169,7 +169,7 @@ let E = function(e) {
         transitionState: l,
         children: (0, i.jsxs)("div", {
           className: _.modalContent,
-          children: [(0, i.jsx)(j, {
+          children: [(0, i.jsx)(O, {
             channel: S,
             previewIcon: N,
             onIconChange: e => A(e.imageUri),

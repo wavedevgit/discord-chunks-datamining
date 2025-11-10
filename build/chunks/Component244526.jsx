@@ -14,7 +14,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk122289 = require("./122289.js"),
   Chunk624138 = require("./624138.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk942957 = require("./942957.js");
+  Chunk916648 = require("./916648.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -93,23 +93,23 @@ class m extends(r = Chunk647438.PureComponent) {
         type: this.typeString
       }), (0, Chunk951288.jsxs)(Chunk600164.Z, {
         direction: Chunk600164.Z.Direction.VERTICAL,
-        className: Chunk942957.descriptionWrapper,
+        className: Chunk916648.descriptionWrapper,
         children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
           align: Chunk600164.Z.Align.CENTER,
           children: [this.renderDescription(), Chunk987032 && module ? (0, Chunk951288.jsx)("div", {
-            className: Chunk942957.defaultIndicator,
+            className: Chunk916648.defaultIndicator,
             children: Chunk388032.intl.string(Chunk388032.t.bBvAEH)
           }) : null, r ? (0, Chunk951288.jsx)("div", {
-            className: Chunk942957.premiumIndicator,
+            className: Chunk916648.premiumIndicator,
             children: Chunk388032.intl.string(Chunk388032.t.YCrcPL)
           }) : null, Chunk987032 && exports.invalid ? (0, Chunk951288.jsx)("div", {
-            className: Chunk942957.invalidIndicator,
+            className: Chunk916648.invalidIndicator,
             children: Chunk388032.intl.string(Chunk388032.t["851k93"])
           }) : null]
         }), require && null != Chunk46141 ? (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          className: Chunk942957.subText,
+          className: Chunk916648.subText,
           children: Chunk46141
         }) : null]
       })]

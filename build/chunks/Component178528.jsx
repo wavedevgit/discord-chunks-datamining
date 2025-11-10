@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk477863 = require("./477863.js");
+  Chunk613322 = require("./613322.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -85,7 +85,7 @@ class M extends Chunk647438.PureComponent {
     if (e.guild !== t) {
       let {
         scrollTop: e
-      } = _.Z.getGuildDimensions(n);
+      } = O.Z.getGuildDimensions(n);
       this.setAnimatedValue(null != e ? e : 0)
     }
   }
@@ -168,8 +168,8 @@ class M extends Chunk647438.PureComponent {
         controller: Chunk619915,
         renderBanner: Chunk554747,
         bannerVisible: Chunk598056,
-        className: Chunk477863.guildHeader,
-        headerClassName: Chunk477863.guildHeaderInner,
+        className: Chunk613322.guildHeader,
+        headerClassName: Chunk613322.guildHeaderInner,
         onMouseDown: Chunk647438,
         disableBannerAnimation: false,
         communityInfoVisible: Chunk905423,
@@ -185,7 +185,7 @@ class M extends Chunk647438.PureComponent {
         })
       }) : null,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk477863.channelList,
+        className: Chunk613322.channelList,
         children: null != Chunk442837 ? (0, Chunk951288.jsx)(Chunk680089, (e = L({}, Chunk509442), t = t = {
           guild: Chunk442837,
           disableManageChannels: true,
@@ -203,7 +203,7 @@ class M extends Chunk647438.PureComponent {
           withBannerPadding: false
         })
       }), null != Chunk442837 && (0, Chunk951288.jsx)("section", {
-        className: Chunk477863.panels,
+        className: Chunk613322.panels,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWK),
         children: (0, Chunk951288.jsx)(Chunk840780.Z, {
           guildId: Chunk442837.id
@@ -233,7 +233,7 @@ function z(e) {
   var t;
   let {
     guildId: n
-  } = e, r = (0, o.e7)([E.Z], () => E.Z.getGuild(n)), s = (0, o.e7)([b.ZP], () => b.ZP.getChannels(n)), l = (0, o.e7)([O.Z], () => O.Z.getCategories(n)), {
+  } = e, r = (0, o.e7)([E.Z], () => E.Z.getGuild(n)), s = (0, o.e7)([b.ZP], () => b.ZP.getChannels(n)), l = (0, o.e7)([_.Z], () => _.Z.getCategories(n)), {
     mutedChannels: d,
     collapseMuted: u
   } = (0, o.cj)([j.ZP], () => ({
@@ -241,7 +241,7 @@ function z(e) {
     collapseMuted: j.ZP.isGuildCollapsed(n)
   })), p = (0, o.e7)([I.ZP], () => I.ZP.getVoiceStates(n)), h = (0, o.e7)([y.Z], () => y.Z.getCollapsed()), {
     scrollTo: f
-  } = (0, o.e7)([_.Z], () => _.Z.getGuildDimensions(n)), P = (0, g.Z)(e => {
+  } = (0, o.e7)([O.Z], () => O.Z.getGuildDimensions(n)), P = (0, g.Z)(e => {
     let {
       channelId: t
     } = e;

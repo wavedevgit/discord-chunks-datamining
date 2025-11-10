@@ -2,7 +2,7 @@
 /** chunk id: 94161, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,24 +11,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk574583 = require("./574583.js"),
   Chunk318766 = require("./318766.jsx"),
   Chunk28546 = require("./28546.js"),
+  Chunk541716 = require("./541716.js"),
   Chunk957825 = require("./957825.js"),
-  Chunk744114 = require("./744114.js");
+  Chunk564355 = require("./564355.js");
 
-function f(e, t) {
+function _(e, t) {
   let {
     disabled: n,
-    type: a
-  } = e, [f, _, p] = (0, c.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), h = i.useCallback(() => {
-    (0, c.RO)(u.X1.EMOJI, a)
-  }, [a]);
+    type: a,
+    pickerView: _ = d.X1.EMOJI
+  } = e, [p, h, m] = (0, c.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), g = i.useCallback(() => {
+    (0, c.RO)(_, a)
+  }, [a, _]);
   return n ? null : (0, r.jsx)("div", {
-    className: o()(u.CT, d.buttonContainer),
+    className: o()(d.CT, f.buttonContainer),
     ref: t,
     children: (0, r.jsx)(l.Z, {
-      className: d.emojiButton,
-      onClick: h,
-      active: f === u.X1.EMOJI && _ === a,
-      "aria-controls": p,
+      className: f.emojiButton,
+      onClick: g,
+      active: p === _ && h === a,
+      "aria-controls": m,
       tabIndex: 0,
       focusProps: {
         offset: {
@@ -37,8 +39,9 @@ function f(e, t) {
           left: false,
           right: false
         }
-      }
+      },
+      allowKeybindHint: a === u.Ie.NORMAL
     })
   })
 }
-let _ = Chunk647438.memo(Chunk647438.forwardRef(f))
+let p = Chunk647438.memo(Chunk647438.forwardRef(_))

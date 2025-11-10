@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 211640, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk375954 = require("./375954.js"),
   Chunk496675 = require("./496675.js"),
   Chunk796263 = require("./796263.jsx"),
-  Chunk68468 = require("./68468.js"),
+  Chunk43617 = require("./43617.js"),
   Chunk388032 = require("./388032.jsx");
 
 function m(e) {
@@ -30,8 +30,8 @@ function m(e) {
   });
   if (!b) return null;
   let x = null == C ? f.intl.string(h.default["0IZbwC"]) : f.intl.string(h.default.Uj6oD4),
-    O = null == C,
-    j = "delete-message-".concat(t.id);
+    j = null == C,
+    O = "delete-message-".concat(t.id);
   return (0, i.jsx)(p.Z, {
     text: x,
     icon: a.XHJ,
@@ -41,7 +41,7 @@ function m(e) {
         moderatorReportChannelId: g.id
       })
     },
-    disabled: O,
+    disabled: j,
     color: l.zx.Colors.RED
-  }, j)
+  }, O)
 }

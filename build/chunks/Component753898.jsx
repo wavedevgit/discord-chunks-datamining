@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 753898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -21,33 +21,33 @@ var Chunk951288 = require("./951288.js"),
   Chunk518950 = require("./518950.js"),
   Chunk967128 = require("./967128.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk40036 = require("./40036.js");
+  Chunk963392 = require("./963392.js");
 
 function x(e) {
   var t;
   let {
     channel: n,
     children: x,
-    user: O
-  } = e, j = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), E = null != (t = (0, d.ZP)(n)) ? t : "", {
+    user: j
+  } = e, O = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), E = null != (t = (0, d.ZP)(n)) ? t : "", {
     avatarDecorationSrc: S,
     eventHandlers: P,
     isAnimating: I
   } = (0, y.Z)({
-    userId: null == O ? true : O.id,
+    userId: null == j ? true : j.id,
     size: o.EFr.SIZE_80,
     animateOnHover: true
   }), [Z, T] = r.useState(false), N = r.useCallback(() => {
     P.onMouseEnter(), T(true)
   }, [P]), A = r.useCallback(() => {
     P.onMouseLeave(), T(false)
-  }, [P]), w = !n.isMultiUserDM() && (null == O ? true : O.displayNameStyles) != null;
+  }, [P]), w = !n.isMultiUserDM() && (null == j ? true : j.displayNameStyles) != null;
   return (0, i.jsxs)(C.ZP, {
     channelId: n.id,
     onMouseEnter: N,
     onMouseLeave: A,
     children: [(() => {
-      let e = !j && I;
+      let e = !O && I;
       return n.isMultiUserDM() ? (0, i.jsx)(m.v, {
         channel: n,
         editable: true,
@@ -68,7 +68,7 @@ function x(e) {
     })(), (0, i.jsx)(C.Ot, {
       children: w ? (0, i.jsx)(h.Z, {
         userName: E,
-        displayNameStyles: null == O ? true : O.displayNameStyles,
+        displayNameStyles: null == j ? true : j.displayNameStyles,
         effectDisplayType: Z ? p.F.ANIMATED : p.F.STATIC,
         loop: true
       }) : E

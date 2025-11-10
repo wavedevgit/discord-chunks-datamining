@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk874893 = require("./874893.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk86603 = require("./86603.js");
+  Chunk3498 = require("./3498.js");
 
 function N(e) {
   let {
@@ -66,20 +66,20 @@ function N(e) {
 let v = [{
     id: Chunk231338.BR.LIGHT,
     label: Chunk388032.intl.string(Chunk388032.t.K2sFfo),
-    className: l()("theme-light", Chunk86603.themeOption)
+    className: l()("theme-light", Chunk3498.themeOption)
   }, {
     id: Chunk231338.BR.DARK,
     label: Chunk388032.intl.string(Chunk388032.t.SMPT1k),
-    className: l()("theme-dark", Chunk86603.themeOption)
+    className: l()("theme-dark", Chunk3498.themeOption)
   }, {
     id: Chunk231338.BR.DARKER,
     label: Chunk388032.intl.string(Chunk388032.t.b8Cei3),
-    className: l()("theme-darker", Chunk86603.themeOption),
+    className: l()("theme-darker", Chunk3498.themeOption),
     new: true
   }, {
     id: Chunk231338.BR.MIDNIGHT,
     label: Chunk388032.intl.string(Chunk388032.t.Do4ZJx),
-    className: l()("theme-midnight", Chunk86603.themeOption),
+    className: l()("theme-midnight", Chunk3498.themeOption),
     new: true
   }],
   k = [{

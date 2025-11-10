@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk930180 = require("./930180.js"),
   Chunk430104 = require("./430104.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk464757 = require("./464757.js");
+  Chunk250043 = require("./250043.js");
 
 function g(e) {
   if (!e && (0, p.u1)()) return void s.Z.showAgeVerificationGetStartedModal({
@@ -59,13 +59,13 @@ function E(e) {
 function b() {
   let e = (0, Chunk623633.Z)();
   return null == module ? null : (0, Chunk951288.jsxs)(Chunk481060.qXd, {
-    className: Chunk464757.container,
+    className: Chunk250043.container,
     color: Chunk481060.DM8.DEFAULT,
     children: [Chunk388032.intl.string(Chunk388032.t.Ul1RJQ), (0, Chunk951288.jsx)(E, {
       channelId: module.id
     }), (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
       size: "sm",
-      className: Chunk464757.buttonGroup,
+      className: Chunk250043.buttonGroup,
       children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "overlay-primary",
         text: Chunk388032.intl.string(Chunk388032.t.MpO0px),

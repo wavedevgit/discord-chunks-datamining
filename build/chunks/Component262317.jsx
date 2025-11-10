@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   XX: () => U,
@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk927923 = require("./927923.js"),
   Chunk70722 = require("./70722.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk2628 = require("./2628.js");
+  Chunk92024 = require("./92024.js");
 
 function D(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -150,7 +150,7 @@ let H = (0, Chunk888651.$)(function(e) {
     hangStatusActivity: eg,
     requestToStreamActivity: eb,
     showHangStatus: ey
-  } = e, eC = r.useRef(null), [ev, e_] = r.useState(false), ex = r.useRef(null), [eO, ej] = r.useState(false), [eE, eS] = r.useState(false), [eP, eI] = r.useState(false), [eZ, eT] = r.useState(false), eN = eE || eZ || eP, eA = eO || eN, ew = (null == eb ? true : eb.session_id) != null, eM = () => {
+  } = e, eC = r.useRef(null), [ev, e_] = r.useState(false), ex = r.useRef(null), [ej, eO] = r.useState(false), [eE, eS] = r.useState(false), [eP, eI] = r.useState(false), [eZ, eT] = r.useState(false), eN = eE || eZ || eP, eA = ej || eN, ew = (null == eb ? true : eb.session_id) != null, eM = () => {
     e_(!ev)
   }, eR = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
@@ -159,12 +159,12 @@ let H = (0, Chunk888651.$)(function(e) {
     (et || ey || ew) && (null == ea || ea(h.id))
   }, eD = e => {
     e ? ex.current = setTimeout(() => {
-      ej(true)
+      eO(true)
     }, 150 * !!es) : clearTimeout(ex.current)
   };
   r.useEffect(() => () => clearTimeout(ex.current), []);
   let ek = e => {
-      e && ej(false)
+      e && eO(false)
     },
     eU = () => {
       if (!(et && (0, v.p9)(U, A.Z, Z.Z, T.Z, b.default)[0])) return;
@@ -180,7 +180,7 @@ let H = (0, Chunk888651.$)(function(e) {
       (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("87157")]).then(n.bind(n, 757387));
+        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("96306")]).then(n.bind(n, 757387));
         return t => (0, i.jsx)(e, k(D({}, t), {
           user: h,
           guildId: U.guild_id,
@@ -193,11 +193,11 @@ let H = (0, Chunk888651.$)(function(e) {
         }))
       })
     },
-    eH = e => ef ? (0, i.jsx)(O.$, k(D({}, e), {
+    eH = e => ef ? (0, i.jsx)(j.$, k(D({}, e), {
       channel: U,
       setIsHangStatusInputFocused: eS,
       setIsEmojiPickerOpen: eT
-    })) : null != eg ? (0, i.jsx)(j.I, k(D({}, e), {
+    })) : null != eg ? (0, i.jsx)(O.I, k(D({}, e), {
       hangStatusActivity: eg,
       channel: U,
       userId: h.id

@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 614584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function j(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -73,7 +73,7 @@ let S = Chunk647438.memo(function(e) {
   }).enabled, k = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = r.useMemo(() => {
     if (null == M) return null;
     let e = (0, o.Z)(M);
-    if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
+    if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(j.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
       username: null != R ? R.nick : e.author.username,
       usernameHook: e => e
     }));
@@ -94,19 +94,19 @@ let S = Chunk647438.memo(function(e) {
       application: null == e ? true : e.application,
       username: null == R ? true : R.nick
     }));
-    else if (e.type === x.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : O.intl.string(O.t.wnn1Dc);
+    else if (e.type === x.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : j.intl.string(j.t.wnn1Dc);
     if (null != e.content && "" !== e.content) {
       let t = {
           formatInline: true,
           allowLinks: true,
           shouldFilterKeywords: L
         },
-        n = e.isFirstMessageInForumPost(P) ? E(j({}, t), {
+        n = e.isFirstMessageInForumPost(P) ? E(O({}, t), {
           noStyleAndInteraction: true,
           allowHeading: true,
           allowList: true,
           allowGameMentions: D
-        }) : E(j({}, t), {
+        }) : E(O({}, t), {
           formatInline: true,
           allowHeading: k,
           allowList: k,

@@ -21,20 +21,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk361207 = require("./361207.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk789053 = require("./789053.js");
+  Chunk394369 = require("./394369.js");
 let v = [{
     getOs: () => Chunk388032.intl.string(Chunk388032.t.NK5ySJ),
-    icon: Chunk789053.apple,
+    icon: Chunk394369.apple,
     url: () => (0, Chunk361207.w4)("osx", false),
     platformKey: 0
   }, {
     getOs: () => Chunk388032.intl.string(Chunk388032.t.OvKGE6),
-    icon: Chunk789053.windows,
+    icon: Chunk394369.windows,
     url: () => (0, Chunk361207.w4)("win", false),
     platformKey: 1
   }, {
     getOs: () => Chunk388032.intl.string(Chunk388032.t.dJB4PN),
-    icon: Chunk789053.linux,
+    icon: Chunk394369.linux,
     url: [{
       url: () => (0, Chunk361207.w4)("linux", false, "deb"),
       getText: () => Chunk388032.intl.string(Chunk388032.t.Sodsus)
@@ -46,12 +46,12 @@ let v = [{
   }],
   O = [{
     getOs: () => Chunk388032.intl.string(Chunk388032.t.wCVyNT),
-    icon: Chunk789053.ios,
+    icon: Chunk394369.ios,
     url: () => Chunk981631.fzT.IOS,
     platformKey: 3
   }, {
     getOs: () => Chunk388032.intl.string(Chunk388032.t.wuQpJD),
-    icon: Chunk789053.android,
+    icon: Chunk394369.android,
     url: () => Chunk981631.fzT.ANDROID,
     platformKey: 4
   }],

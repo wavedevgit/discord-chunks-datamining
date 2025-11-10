@@ -1,7 +1,7 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 185413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => j
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk71080 = require("./71080.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk908346 = require("./908346.js");
+  Chunk257803 = require("./257803.js");
 
 function _(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -57,7 +57,7 @@ function x(e, t) {
   return r
 }
 
-function O(e) {
+function j(e) {
   var {
     channelId: t
   } = e, n = x(e, ["channelId"]);
@@ -67,13 +67,13 @@ function O(e) {
     h.default.track(y.rMx.OPEN_MODAL, {
       type: "Grant Channel Access"
     })
-  }, []), null == l || null == o) ? null : (0, i.jsx)(j, _({
+  }, []), null == l || null == o) ? null : (0, i.jsx)(O, _({
     guild: o,
     channel: l
   }, n))
 }
 
-function j(e) {
+function O(e) {
   var t, n, {
       guild: a,
       channel: d,
@@ -81,12 +81,12 @@ function j(e) {
       newChannel: h,
       inSettings: y
     } = e,
-    O = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
-  let [j, E] = r.useState(""), [S, P] = r.useState({}), [I, Z] = r.useState(false), [T, N] = r.useState(null), A = r.useRef(null), {
+    j = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
+  let [O, E] = r.useState(""), [S, P] = r.useState({}), [I, Z] = r.useState(false), [T, N] = r.useState(null), A = r.useRef(null), {
     roles: w,
     members: M,
     getRichTag: R
-  } = (0, g.Q)(a, d, d.accessPermissions, j), L = m.Z.useSections({
+  } = (0, g.Q)(a, d, d.accessPermissions, O), L = m.Z.useSections({
     roles: w,
     members: M
   }), D = h && 0 === Object.keys(S).length;
@@ -112,14 +112,14 @@ function j(e) {
   let U = (0, u.zi)(d.type) ? o.W4G : o.gjC;
   return (0, i.jsx)(m.Z.Provider, {
     listRef: A,
-    query: j,
+    query: O,
     setQuery: E,
     pendingAdditions: S,
     setPendingAdditions: P,
     roles: w,
     members: M,
     getRichTag: R,
-    children: (0, i.jsx)(l.Modal, (t = _({}, O), n = n = {
+    children: (0, i.jsx)(l.Modal, (t = _({}, j), n = n = {
       title: C.intl.string(C.t.dMJ3Y6),
       onClose: p,
       input: (0, i.jsxs)("div", {

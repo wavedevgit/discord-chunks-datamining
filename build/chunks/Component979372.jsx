@@ -9,19 +9,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk433769 = require("./433769.js");
+  Chunk632065 = require("./632065.js");
 let l = {
     SIZE: {
       default: true,
-      reduced: Chunk433769.sizeReduced
+      reduced: Chunk632065.sizeReduced
     },
     COLOR: {
       default: true,
-      muted: Chunk433769.colorMuted
+      muted: Chunk632065.colorMuted
     },
     WEIGHT: {
       default: true,
-      reduced: Chunk433769.weightReduced
+      reduced: Chunk632065.weightReduced
     }
   },
   c = Chunk647438.createContext({

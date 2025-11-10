@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 493754, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => b,
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk496675 = require("./496675.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk759877 = require("./759877.js");
+  Chunk811130 = require("./811130.js");
 
 function b(e) {
   let {
@@ -34,7 +34,7 @@ function b(e) {
   null == s || s(), (0, c.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("49049"), n.e("7654"), n.e("89334")]).then(n.bind(n, 560114));
+    } = await Promise.all([n.e("49049"), n.e("7654"), n.e("68971")]).then(n.bind(n, 560114));
     return n => {
       var o, s;
       return (0, i.jsx)(e, (o = function(e) {
@@ -89,8 +89,8 @@ function y(e) {
     analyticsLocation: C,
     className: v,
     size: _ = "sm"
-  } = e, x = null == r ? true : r.getGuildId(), O = null == r ? true : r.id, j = (0, s.e7)([p.Z], () => null != x ? p.Z.getGuild(x) : null, [x]), E = (0, s.e7)([u.ZP], () => u.ZP.getActiveEventByChannel(O), [O]);
-  if (!(null != j && null != r && h.Z.can(f.Plq.CREATE_INSTANT_INVITE, r))) return null;
+  } = e, x = null == r ? true : r.getGuildId(), j = null == r ? true : r.id, O = (0, s.e7)([p.Z], () => null != x ? p.Z.getGuild(x) : null, [x]), E = (0, s.e7)([u.ZP], () => u.ZP.getActiveEventByChannel(j), [j]);
+  if (!(null != O && null != r && h.Z.can(f.Plq.CREATE_INSTANT_INVITE, r))) return null;
   let S = m.intl.string(m.t.VINpSK);
   return null != t ? S = m.intl.string(m.t["6VQaqd"]) : null != n && (S = m.intl.string(m.t["OzOM/q"])), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
@@ -100,8 +100,8 @@ function y(e) {
         variant: "secondary",
         text: S,
         onClick: () => {
-          o()(null != j, "guild cannot be null"), o()(null != r, "channel cannot be null"), b({
-            guild: j,
+          o()(null != O, "guild cannot be null"), o()(null != r, "channel cannot be null"), b({
+            guild: O,
             channel: r,
             streamUserId: null == t ? true : t.ownerId,
             applicationId: n,

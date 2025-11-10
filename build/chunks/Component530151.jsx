@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk86826 = require("./86826.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk180678 = require("./180678.js");
+  Chunk248241 = require("./248241.js");
 
 function U(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -490,7 +490,7 @@ let q = () => (0, Chunk951288.jsx)(H, {
   },
   X = [{
     key: "name",
-    cellClassName: Chunk180678.nameCell,
+    cellClassName: Chunk248241.nameCell,
     render: e => (0, r.jsxs)(I.Z, {
       align: I.Z.Align.CENTER,
       children: [(0, r.jsx)(S.Z, {
@@ -504,16 +504,16 @@ let q = () => (0, Chunk951288.jsx)(H, {
     })
   }, {
     key: "progress",
-    cellClassName: Chunk180678.progressCell,
-    headerCellClassName: Chunk180678.progressCellHeader,
-    bodyCellClassName: Chunk180678.progressCellBody,
+    cellClassName: Chunk248241.progressCell,
+    headerCellClassName: Chunk248241.progressCellHeader,
+    bodyCellClassName: Chunk248241.progressCellBody,
     render: (e, t) => (0, r.jsx)(W, {
       item: e,
       cellProps: t
     })
   }, {
     key: "actions",
-    cellClassName: Chunk180678.actionsCell,
+    cellClassName: Chunk248241.actionsCell,
     render(e, t) {
       let n, i;
       return e.finished ? n = null != e.libraryApplication ? (0, r.jsx)(b.Z, {
@@ -561,17 +561,17 @@ class $ extends Chunk647438.PureComponent {
       analyticsContext: s
     } = this.props;
     return 0 === module.length ? null : (0, Chunk951288.jsxs)("div", {
-      className: Chunk180678.gameUpdates,
+      className: Chunk248241.gameUpdates,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk180678.headerRow,
+        className: Chunk248241.headerRow,
         children: [(0, Chunk951288.jsx)(Chunk86826.Z, {
-          className: a()(Chunk180678.headerCell, Chunk180678.networkProgress),
+          className: a()(Chunk248241.headerCell, Chunk248241.networkProgress),
           title: Chunk388032.intl.string(Chunk388032.t.ytoXKr),
           getHistoricalTotalBytes: Chunk417363.Z.getHistoricalTotalBytesDownloaded,
           color: Chunk981631.Ilk.GREEN_360,
           animate: Chunk647438
         }), (0, Chunk951288.jsx)(Chunk86826.Z, {
-          className: a()(Chunk180678.headerCell, Chunk180678.diskProgress),
+          className: a()(Chunk248241.headerCell, Chunk248241.diskProgress),
           title: Chunk388032.intl.string(Chunk388032.t.SjohhI),
           getHistoricalTotalBytes: Chunk417363.Z.getHistoricalTotalBytesWritten,
           color: Chunk981631.Ilk.BLUE_345,
@@ -581,8 +581,8 @@ class $ extends Chunk647438.PureComponent {
         hasHeader: false,
         columns: X,
         data: module,
-        className: Chunk180678.table,
-        rowClassName: Chunk180678.row,
+        className: Chunk248241.table,
+        rowClassName: Chunk248241.row,
         rowComponent: G,
         cellProps: {
           paused: exports,
@@ -626,7 +626,7 @@ class $ extends Chunk647438.PureComponent {
             })
           }
         },
-        bodyCellClassName: Chunk180678.cell
+        bodyCellClassName: Chunk248241.cell
       })]
     })
   }

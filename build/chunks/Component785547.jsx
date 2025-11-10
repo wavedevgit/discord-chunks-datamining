@@ -27,7 +27,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk701560 = require("./701560.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk806698 = require("./806698.js");
+  Chunk767248 = require("./767248.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -196,7 +196,7 @@ class j extends(r = Chunk647438.Component) {
       size: Chunk481060.Exd.Sizes.XSMALL,
       foregroundColor: require.paused ? Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css : Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
       backgroundColor: Chunk692547.Z.unsafe_rawColors.TRANSPARENT.css,
-      className: Chunk806698.progress
+      className: Chunk767248.progress
     })
   }
   renderActionButton(e, t) {

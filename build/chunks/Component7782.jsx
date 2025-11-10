@@ -1,4 +1,4 @@
-/** Chunk was on 50642 **/
+/** Chunk was on 57336 **/
 /** chunk id: 7782, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk90985 = require("./90985.js");
+  Chunk291738 = require("./291738.js");
 let T = e => {
     let {
       userId: t,
@@ -37,7 +37,7 @@ let T = e => {
     } = e, l = (0, s.e7)([C.Z], () => C.Z.getMutualGuilds(t), [t]), a = r.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
       let {
         guild: n
-      } = e, r = null != n ? j.ZP.getGuildIconURL({
+      } = e, r = null != n ? O.ZP.getGuildIconURL({
         id: n.id,
         icon: n.icon,
         size: 24
@@ -90,7 +90,7 @@ let T = e => {
       relationshipType: n,
       userId: r,
       showingBanner: l
-    } = e, a = null == (t = O.default.getUser(r)) ? true : t.bot, o = () => {
+    } = e, a = null == (t = j.default.getUser(r)) ? true : t.bot, o = () => {
       u.Z.addRelationship({
         userId: r,
         context: {
@@ -192,7 +192,7 @@ let T = e => {
       isOptimisticAccepted: h,
       isOptimisticRejected: f
     } = (0, m.m)({
-      user: O.default.getUser(n),
+      user: j.default.getUser(n),
       onError: l,
       onAcceptSuccess: o,
       onRejectSuccess: a
