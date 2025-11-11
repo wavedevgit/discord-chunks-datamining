@@ -75,7 +75,7 @@ function A(e) {
 }
 
 function C() {
-  returnfalse
+  return O(), false
 }
 class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
