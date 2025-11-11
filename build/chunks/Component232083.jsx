@@ -2,12 +2,13 @@
 /** chunk id: 232083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
-}), require("./388685.js");
-var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js"),
-  Chunk442837 = require("./442837.js"),
+});
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk442837 = require("./442837.js"),
   Chunk314897 = require("./314897.js"),
   Chunk733231 = require("./733231.jsx"),
+  Chunk141014 = require("./141014.jsx"),
   Chunk385153 = require("./385153.jsx"),
   Chunk623132 = require("./623132.jsx"),
   Chunk34335 = require("./34335.jsx"),
@@ -53,9 +54,9 @@ function f(e) {
     return i
   }(e, ["games", "user", "widgetType"]);
   let {
-    registerItemRef: l,
+    registerItemRef: o,
     manageFocusOnDelete: c
-  } = (0, o.C)();
+  } = (0, l.C)();
   return (0, r.jsx)("ul", {
     className: d.cardList,
     children: t.map((e, t) => (0, r.jsx)("li", {
@@ -64,7 +65,7 @@ function f(e) {
         user: n,
         game: e,
         widgetType: i,
-        coverRef: l(e.applicationId),
+        coverRef: o(e.applicationId),
         onRemoveGame: c
       }, a))
     }, e.applicationId))
@@ -78,9 +79,12 @@ function p(e) {
     widgetType: d,
     disableInteraction: p,
     games: m
-  } = e, b = (0, a.e7)([l.default], () => l.default.getId() === s.id), {
+  } = e, b = (0, i.e7)([a.default], () => a.default.getId() === s.id), {
     getManageButtonForWidget: h
-  } = (0, u.j)(), y = h(d), [v, O] = i.useState(false), j = v ? m : m.slice(0, 2), x = m.length > 2, _ = (0, r.jsxs)(r.Fragment, {
+  } = (0, u.j)(), y = h(d), {
+    expanded: v,
+    setExpanded: O
+  } = (0, o.g)(), j = v ? m : m.slice(0, 2), x = m.length > 2, _ = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f, (t = g({}, e), n = n = {
       games: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -97,7 +101,7 @@ function p(e) {
       onClick: () => O(e => !e)
     })]
   });
-  return b && !p ? (0, r.jsx)(o.d, {
+  return b && !p ? (0, r.jsx)(l.d, {
     emptyListFallbackRef: y,
     children: _
   }) : _

@@ -330,7 +330,7 @@ async function es(e) {
       enabledLegacy: null != (r = null == i ? true : i.legacyEnabled) && r,
       overlayMethod: b.gl.Disabled
     };
-  await eu(e, a), $(e), eU.emitChange(), await s.Z.updateTrackedGame(e, null)
+  await eu(e, a, true), $(e), eU.emitChange(), await s.Z.updateTrackedGame(e, null)
 }
 async function el(e) {
   var t;
@@ -363,10 +363,11 @@ async function ec(e) {
 }
 async function eu(e, t) {
   var n;
-  let r = t.overlayMethod;
-  et(e, "state", r === b.gl.Disabled ? b.mM.OVERLAY_DISABLED : b.mM.WAITING_FOR_MODULE_TRACKING), et(e, "overlayMethod", r), et(e, "source", t.source), et(e, "oopEnabled", t.enabledOOP), et(e, "legacyEnabled", t.enabledLegacy), D.verbose("Updating overlay method for pid ".concat(e, ' "').concat(null == (n = X(e)) ? true : n.gameName, '" to ').concat((0, v.P_)(r))), eU.emitChange();
-  let i = X(e);
-  return null != i && await s.Z.updateTrackedGame(e, i), s.Z.updateOverlayMethod(e, r)
+  let r = arguments.length > 2 && true !== arguments[2] && arguments[2],
+    i = t.overlayMethod;
+  et(e, "state", i === b.gl.Disabled ? r ? b.mM.OVERLAY_TEARING_DOWN : b.mM.OVERLAY_DISABLED : b.mM.WAITING_FOR_MODULE_TRACKING), et(e, "overlayMethod", i), et(e, "source", t.source), et(e, "oopEnabled", t.enabledOOP), et(e, "legacyEnabled", t.enabledLegacy), D.verbose("Updating overlay method for pid ".concat(e, ' "').concat(null == (n = X(e)) ? true : n.gameName, '" to ').concat((0, v.P_)(i))), eU.emitChange();
+  let a = X(e);
+  return null != a && await s.Z.updateTrackedGame(e, a), s.Z.updateOverlayMethod(e, i)
 }
 async function ed() {
   let e = new Set(Chunk594190.ZP.getRunningGames().filter(e => f.ZP.getOverlayEnabledForGame(e)).map(e => e.pid)),

@@ -599,7 +599,7 @@ function J(e) {
 function $(e) {
   let t = U.getByPid(e.pid);
   if (null == t) return void D.error("OVERLAY_TRACK_STATE_CHANGED: Game not found", e, U.debug);
-  e.newState !== f.mM.OVERLAY_DISABLED && t.setOverlayState(e.newState)
+  e.newState !== f.mM.OVERLAY_TEARING_DOWN && t.setOverlayState(e.newState)
 }
 A(U, "gamesByPid", {}), A(U, "gamesByName", {}), A(U, "desktopMainWindowHasFocus", document.hasFocus());
 class ee {

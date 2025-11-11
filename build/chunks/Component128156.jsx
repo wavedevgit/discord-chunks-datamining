@@ -56,8 +56,8 @@ function w(e) {
   }), L = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, M = (0, i.e7)([u.Z, s.Z], () => {
     let e = B ? u.Z.getStatus() : s.Z.getStatus(t.id);
     return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
-  }), U = N.length > 0 || null != Z, F = D && null == Z && null == G && null != R, H = !M && (U || F), W = A.length > 0;
-  if (!H && !W && L) return (0, r.jsx)("div", {
+  }), U = N.length > 0 || null != Z, F = D && null == Z && null == G && null != R, W = !M && (U || F), H = A.length > 0;
+  if (!W && !H && L) return (0, r.jsx)("div", {
     className: I.cards,
     children: Array.from({
       length: 8
@@ -72,7 +72,7 @@ function w(e) {
       })]
     }, t))
   });
-  if (!H && !W && !L) {
+  if (!W && !H && !L) {
     var z;
     return B ? (0, r.jsx)(v.Uf, {
       onClose: C
@@ -86,7 +86,7 @@ function w(e) {
   return (0, r.jsxs)(j.F, {
     className: I.scroller,
     fade: true,
-    children: [H ? (0, r.jsx)(O.Z, {
+    children: [W ? (0, r.jsx)(O.Z, {
       heading: P.intl.string(P.t.J6STd9),
       children: (0, r.jsxs)("ul", {
         className: I.cards,
@@ -120,7 +120,7 @@ function w(e) {
           })
         })]
       })
-    }) : null, W ? (0, r.jsx)(O.Z, {
+    }) : null, H ? (0, r.jsx)(O.Z, {
       heading: P.intl.string(P.t.jzgEoL),
       introText: B ? P.intl.format(P.t["4bk9Ak"], {
         learnMoreHook: (e, t) => (0, r.jsx)(a.Anchor, {

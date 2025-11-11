@@ -2,7 +2,7 @@
 /** chunk id: 607550, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 }), require("./539854.js"), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -96,7 +96,16 @@ function y(e) {
   } = e;
   a.Z.captureException(t)
 }
-class O extends Chunk442837.ZP.Store {
+
+function O(e) {
+  var t;
+  let {
+    recipientId: r,
+    skuId: i
+  } = e, a = n(621853).Z.getFirstWishlistId(r);
+  null != a && null != s[a] && (null == (t = s[a].data) ? true : t.hasSkuId(i)) && (s[a].updatedAt = true)
+}
+class v extends Chunk442837.ZP.Store {
   get(e) {
     var t;
     return null != (t = s[e]) ? t : u()
@@ -128,7 +137,7 @@ class O extends Chunk442837.ZP.Store {
     return this.get(e).updatedAt
   }
 }
-let v = new O(Chunk570140.Z, {
+let I = new v(Chunk570140.Z, {
   WISHLIST_FETCH_START: f,
   WISHLIST_FETCH_SUCCESS: _,
   WISHLIST_FETCH_FAILURE: p,
@@ -137,5 +146,6 @@ let v = new O(Chunk570140.Z, {
   WISHLIST_REMOVE_SKU_SUCCESS: g,
   WISHLIST_REMOVE_SKU_FAILURE: E,
   WISHLIST_UPDATE_VISIBILITY_SUCCESS: b,
-  WISHLIST_UPDATE_VISIBILITY_FAILURE: y
+  WISHLIST_UPDATE_VISIBILITY_FAILURE: y,
+  WISHLIST_ITEM_PURCHASED: O
 })

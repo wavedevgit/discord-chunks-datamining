@@ -1113,6 +1113,12 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
   Chunk819640.Z.hasLayers() && (require("./355467.js").tZ(), Chunk821849.Gn(Chunk509545.Z.getFetchedSKUIDs()))
 }), Y(["USER_SUBSCRIPTIONS_UPDATE"], () => {
   Chunk232567.k(), Chunk819640.Z.hasLayers() && require("./355467.js").jg()
+}), Y(["WISHLIST_ITEM_PURCHASED"], e => {
+  q({
+    type: "WISHLIST_ITEM_PURCHASED",
+    recipientId: e.recipient_id,
+    skuId: e.sku_id
+  })
 }), Y(["USER_PREMIUM_GUILD_SUBSCRIPTION_SLOT_CREATE"], e => {
   q({
     type: "GUILD_BOOST_SLOT_CREATE",

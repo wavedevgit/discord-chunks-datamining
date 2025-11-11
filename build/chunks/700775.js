@@ -29,7 +29,7 @@ class d extends Chunk147913.Z {
       old_state: e.oldState,
       pid: e.pid,
       init_session_id: u.get(e.pid)
-    }), (e.newState === o.mM.OVERLAY_RENDERING || e.newState === o.mM.OVERLAY_DISABLED || e.newState === o.mM.OVERLAY_CRASHED_DISABLED) && u.delete(e.pid))
+    }), (e.newState === o.mM.OVERLAY_RENDERING || e.newState === o.mM.OVERLAY_DISABLED || e.newState === o.mM.OVERLAY_CRASHED_DISABLED || e.newState === o.mM.OVERLAY_TEARING_DOWN) && u.delete(e.pid))
   }
   handleRunningGamesChange(e) {
     for (let t of e.removed) u.delete(t.pid)

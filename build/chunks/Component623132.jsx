@@ -288,7 +288,7 @@ function Z(e) {
   } = (0, _.Z)(D), B = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, M = g.default.getCurrentUser(), U = (null == M ? true : M.id) === t.id, F = 1 === (0, m.Gv)(s), H = !u && U, W = H && (0, m.vI)(s), z = H && !F, {
+  }, M = g.default.getCurrentUser(), U = (null == M ? true : M.id) === t.id, F = 1 === (0, m.Gv)(s), W = !u && U, H = W && (0, m.vI)(s), z = W && !F, {
     registerDragHandleRef: K
   } = (0, h.C)(), V = i.useRef(null);
   if (L) return (0, r.jsx)(v.i, {});
@@ -322,7 +322,7 @@ function Z(e) {
           applicationId: D,
           userId: t.id,
           gameName: G
-        }, B)), W ? (0, r.jsx)(A, {
+        }, B)), H ? (0, r.jsx)(A, {
           text: k,
           user: t,
           guildId: n,

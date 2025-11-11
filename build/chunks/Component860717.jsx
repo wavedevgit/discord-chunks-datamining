@@ -202,9 +202,9 @@ function R(e) {
     case "TEXT":
       return (0, r.jsx)(F, D({}, t));
     case "TEXT_WITH_IMAGE":
-      return (0, r.jsx)(H, D({}, t));
-    case "SEPARATOR":
       return (0, r.jsx)(W, D({}, t));
+    case "SEPARATOR":
+      return (0, r.jsx)(H, D({}, t));
     case "SOCIAL_PROOF":
       return (0, r.jsx)(z, {})
   }
@@ -298,7 +298,7 @@ function F(e) {
   })
 }
 
-function H(e) {
+function W(e) {
   let {
     content: t,
     image: n,
@@ -328,7 +328,7 @@ function H(e) {
   })
 }
 
-function W(e) {
+function H(e) {
   let {
     size: t = "small",
     divider: n = false
