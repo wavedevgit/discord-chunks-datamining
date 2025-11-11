@@ -1,16 +1,17 @@
 /** Chunk was on 38058 **/
 /** chunk id: 272289, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => u
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk86419 = require("./86419.js"),
   Chunk206599 = require("./206599.js"),
+  Chunk141014 = require("./141014.jsx"),
   Chunk977416 = require("./977416.jsx");
 
-function s(e) {
+function u(e) {
   var {
     widgetType: t
   } = e, n = function(e, t) {
@@ -29,22 +30,24 @@ function s(e) {
     return i
   }(e, ["widgetType"]);
   let {
-    games: s,
-    onAddGame: u
+    games: u,
+    onAddGame: d
   } = (0, o.K)(t), {
-    trackUserProfileEditAction: d
-  } = (0, a.KZ)(), g = i.useCallback((e, n, r) => {
-    u(e), (0, l.ES)(t, {
+    setExpanded: g
+  } = (0, c.g)(), {
+    trackUserProfileEditAction: f
+  } = (0, a.KZ)(), p = i.useCallback((e, n, r) => {
+    d(e), g(true), (0, l.ES)(t, {
       applicationId: e,
       gameName: n,
       imageSrc: r
-    }), d({
+    }), f({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: t
     })
-  }, [u, t, d]);
-  return (0, r.jsx)(c.Z, function(e) {
+  }, [d, t, f, g]);
+  return (0, r.jsx)(s.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -62,7 +65,7 @@ function s(e) {
     }
     return e
   }({
-    games: s,
-    onClick: g
+    games: u,
+    onClick: p
   }, n))
 }
