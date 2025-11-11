@@ -143,7 +143,8 @@ let M = (0, Chunk884697.IC)(90),
         riveEventTargetRef: K
       }) : null, (0, r.jsx)("div", {
         className: s()(D.banner, {
-          [D.rivBanner]: ea
+          [D.rivBanner]: ea,
+          [D.responsive]: ei
         }),
         style: null != es ? {
           background: es
