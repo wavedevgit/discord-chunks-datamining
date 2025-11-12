@@ -1,3 +1,3 @@
 /** Chunk was on 71102 **/
 /** chunk id: 638215, original params: e (module,exports,require) **/
-module.exports = JSON.parse('{"JA5C7L":["Fjern"],"db85vU":["Ingen elementer \xe5 vise"],"bPKiId":["Ingen resultater for \xab",[1,"query"],"\xbb"],"WfH9in":["Lukk"],"m3Vfcs":["Ikke vise dette igjen?"],"cgdAs2":["(\xc5pnes i en ny fane)"],"/Y7vRd":["Trykk p\xe5 x for \xe5 fjerne."],"VMNfsY":["Valgt"],"A+pfVR":["Velg\xa0…"],"YpT3kk":["Forst\xf8rr og spill video"]}')
+module.exports = JSON.parse('{"/cp93l":["Neste m\xe5ned"],"raS6yf":["Forrige m\xe5ned"],"JA5C7L":["Fjern"],"I8kUqR":["\xc5pne kalender"],"db85vU":["Ingen elementer \xe5 vise"],"bPKiId":["Ingen resultater for \xab",[1,"query"],"\xbb"],"WfH9in":["Lukk"],"m3Vfcs":["Ikke vise dette igjen?"],"cgdAs2":["(\xc5pnes i en ny fane)"],"/Y7vRd":["Trykk p\xe5 x for \xe5 fjerne."],"VMNfsY":["Valgt"],"A+pfVR":["Velg\xa0…"],"YpT3kk":["Forst\xf8rr og spill video"]}')

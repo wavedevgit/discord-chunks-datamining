@@ -1117,10 +1117,10 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         var p, h, m, g;
         let t, o;
         if (_.length >= r) break;
-        e instanceof j.Z ? (o = e, t = null == (m = F.ZP.getNick(c, o.id)) ? true : m.toLocaleLowerCase()) : (t = null == (g = e.nick) ? true : g.toLocaleLowerCase(), o = l[e.userId]);
+        if (e instanceof j.Z ? (o = e, t = null == (m = F.ZP.getNick(c, o.id)) ? true : m.toLocaleLowerCase()) : (t = null == (g = e.nick) ? true : g.toLocaleLowerCase(), o = l[e.userId]), null == o || o.id === s || o.bot) continue;
         let f = null == (p = z.Z.getNickname(o.id)) ? true : p.toLocaleLowerCase(),
           E = null == (h = el.ZP.getGlobalName(o)) ? true : h.toLocaleLowerCase();
-        if (null == o || o.id === s || o.bot || !ei.BT({
+        if (!ei.BT({
             permission: ec.Plq.VIEW_CHANNEL,
             user: o,
             context: n

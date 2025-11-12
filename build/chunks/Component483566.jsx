@@ -156,11 +156,11 @@ function g(e) {
       "data-disabled": a,
       "aria-describedby": D ? R : true,
       disabled: D ? a : true,
-      children: [M, j || k ? (0, r.jsxs)("div", {
+      children: [M, j && n ? (0, r.jsx)(s.n, {
+        children: U
+      }) : null, j && !n || k ? (0, r.jsxs)("div", {
         className: f.labelContainer,
-        children: [n ? (0, r.jsx)(s.n, {
-          children: U
-        }) : U, k && (0, r.jsx)(u.x, {
+        children: [n ? null : U, k && (0, r.jsx)(u.x, {
           variant: "text-sm/normal",
           color: "text-secondary",
           className: f.description,

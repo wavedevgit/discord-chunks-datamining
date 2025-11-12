@@ -75,7 +75,7 @@ function O(e) {
   var t, n, i, o, s;
   let {
     compact: _ = false
-  } = e, m = (0, d.Dt)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "467322", v = "020be2d1405b9d0908aa706bb0dc15e94d46a332".substring(0, 7), I = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), S = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), T = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), A = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, C = y(), N = [E, O, "(".concat(v, ")")];
+  } = e, m = (0, d.Dt)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "467356", v = "f4ca614b0dcbf0633bbd48c258c26a1f1a995561".substring(0, 7), I = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), S = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), T = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), A = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, C = y(), N = [E, O, "(".concat(v, ")")];
   return (null != I && (N.push("Host ".concat(I)), null != T && N.push(T.toLowerCase()), null != S && N.push("(".concat(S, ")"))), N.push("Build Override: ".concat(null != A ? A.id : "N/A")), null != C && N.push(C), _) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z, {
       copyValue: N.join(" "),
