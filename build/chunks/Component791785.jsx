@@ -180,7 +180,7 @@ function $(e) {
       eligible_for_discount: eJ
     }, t)),
     e1 = (0, G.m)(eU, ek),
-    e2 = null != eV ? eV.getDiscountIdIfExists() : true;
+    e3 = null != eV ? eV.getDiscountIdIfExists() : true;
   i.useEffect(() => {
     e0(e => {
       let n = null != eS ? (0, D.aS)(eS.id, false, eY, eM) : true;
@@ -197,7 +197,7 @@ function $(e) {
       continue_session_initial_step: eb,
       custom_checkout_flow: eF,
       has_saved_payment_source: ej,
-      discount_id: null != eQ ? eQ.discount_id : e2
+      discount_id: null != eQ ? eQ.discount_id : e3
     }))
   }), i.useEffect(() => {
     if (null == eS && (null != eB && null != eb ? eA(eB) : eA(k)), null != eu) eT(eu);
@@ -206,7 +206,7 @@ function $(e) {
       eT(null == (e = C.Z.get(k)) ? true : e.skuId)
     }
   }, [eA, eS, eT, k, eu, eB, eb]);
-  let e3 = i.useCallback(() => {
+  let e2 = i.useCallback(() => {
       let e = (0, P.MY)(eW) === P.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD,
         t = Date.now();
       R.default.track(V.rMx.PAYMENT_FLOW_SUCCEEDED, X(z({}, e$), {
@@ -235,7 +235,7 @@ function $(e) {
           emitPaymentFlowLoadedEvent: a
         } = t,
         o = Date.now();
-      if (e === L.h8.CONFIRM && (e3(), null == m || m(i), eE)) return void e4();
+      if (e === L.h8.CONFIRM && (e2(), null == m || m(i), eE)) return void e4();
       eN(e), null == ed || ed(e), eR(null), eC(null), e === L.h8.ADD_PAYMENT_STEPS && (u.Z.wait(f.fw), u.Z.wait(_.pB));
       let s = null != n ? n : eD;
       if (null === s || a) return void R.default.track(V.rMx.PAYMENT_FLOW_LOADED, X(z({}, e$), {
@@ -249,7 +249,7 @@ function $(e) {
         step_duration_ms: o - e8,
         flow_duration_ms: o - ew.startTime
       }))
-    }, [eN, ed, eR, eC, eD, eb, e$, e8, ew.startTime, e3, m, eE, e4, ej]);
+    }, [eN, ed, eR, eC, eD, eb, e$, e8, ew.startTime, e2, m, eE, e4, ej]);
   (0, T.bp)(eD, eP, e5, ev), (0, L.dZ)(eD, eO, ev), (0, S.p)(eD, ex, e5), (0, E.Z)(e4), (0, A.w)(eL, () => Z(false), eY), (0, T.D6)(eP);
   let e6 = {
       initialPlanId: k,
