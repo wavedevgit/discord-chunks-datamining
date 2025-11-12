@@ -1,15 +1,11 @@
 /** Chunk was on 1272 **/
 /** chunk id: 443589, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
-  Chunk509442 = require("./509442.js"),
   Chunk990547 = require("./990547.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk213609 = require("./213609.js"),
@@ -18,135 +14,90 @@ var Chunk951288 = require("./951288.js"),
   Chunk752048 = require("./752048.js"),
   Chunk626135 = require("./626135.js"),
   Chunk479446 = require("./479446.js"),
-  Chunk522558 = require("./522558.js"),
   Chunk441623 = require("./441623.js"),
   Chunk317271 = require("./317271.js"),
   Chunk674701 = require("./674701.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk427954 = require("./427954.js"),
-  Chunk286389 = require("./286389.js");
+  Chunk388032 = require("./388032.jsx");
 
-function N(e) {
+function O(e) {
   let {
     recipientUser: t,
     giftIntentType: n,
-    analyticsPage: l,
-    shouldHighlight: N
+    analyticsPage: O
   } = e, {
-    analyticsLocations: j
-  } = (0, d.ZP)(), {
-    isHovered: P,
-    setIsHovered: x,
-    onMouseEnter: A,
-    onMouseLeave: Z
-  } = (0, h.Z)(200, 300), {
-    enableEmojiCTA: w
-  } = b.w.useExperiment({
-    location: "GiftIntentActionButton"
-  }, {
-    autoTrackExposure: false
-  });
+    analyticsLocations: y
+  } = (0, s.ZP)(), {
+    isHovered: v,
+    setIsHovered: I,
+    onMouseEnter: C,
+    onMouseLeave: S
+  } = (0, u.Z)(200, 300);
   i.useEffect(() => {
-    let e = g.Z.getUserAffinity(t.id);
-    (0, p.h)({
-      name: o.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
-      type: o.ImpressionTypes.VIEW,
+    let e = d.Z.getUserAffinity(t.id);
+    (0, o.h)({
+      name: l.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
+      type: l.ImpressionTypes.VIEW,
       properties: {
         gift_intent_type: n,
         affinity: null == e ? true : e.communicationProbability
       }
     })
   }, [t, n]);
-  let L = i.useCallback(e => {
-      "focus" !== e.type && A()
-    }, [A]),
-    R = e => {
+  let T = e => {
       e.stopPropagation();
-      let r = g.Z.getUserAffinity(t.id);
-      m.default.track(I.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+      let r = d.Z.getUserAffinity(t.id);
+      p.default.track(b.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
         gift_intent_type: n,
         affinity: null == r ? true : r.communicationProbability
-      }), (0, f.Z)({
+      }), (0, c.Z)({
         isGift: true,
         initialPlanId: null,
         giftRecipient: t,
-        analyticsLocation: (0, O.F)(n).actionButton,
-        analyticsLocations: j,
+        analyticsLocation: (0, g.F)(n).actionButton,
+        analyticsLocations: y,
         analyticsObject: {
-          page: l,
-          section: I.jXE.FRIENDS_LIST_FRIEND_ROW,
-          object: I.qAy.BUTTON_CTA,
-          objectType: I.AnalyticsObjectTypes.GIFT
+          page: O,
+          section: b.jXE.FRIENDS_LIST_FRIEND_ROW,
+          object: b.qAy.BUTTON_CTA,
+          objectType: b.AnalyticsObjectTypes.GIFT
         },
-        giftMessage: D()
+        giftMessage: N()
       })
     },
-    D = () => n === v.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/N3"], {
-      numberOfYears: E.Z.getFriendAnniversaryYears(t.id)
-    }) : (0, _.Ou)(n),
-    M = () => n === v.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, _.Ou)(n),
-    k = i.useRef(null);
-  return (0, r.jsx)(u.yRy, {
-    targetElementRef: k,
-    animation: u.yRy.Animation.FADE,
+    N = () => n === _.hX.FRIEND_ANNIVERSARY ? E.intl.formatToPlainString(E.t["L2s/N3"], {
+      numberOfYears: h.Z.getFriendAnniversaryYears(t.id)
+    }) : (0, f.Ou)(n),
+    j = i.useRef(null);
+  return (0, r.jsx)(a.yRy, {
+    targetElementRef: j,
+    animation: a.yRy.Animation.FADE,
     nudgeAlignIntoViewport: false,
     scrollBehavior: "close",
-    shouldShow: P,
+    shouldShow: v,
     position: "right",
     align: "top",
     spacing: 9,
     onRequestClose: () => {
-      x(false)
+      I(false)
     },
-    renderPopout: e => (0, r.jsx)(y.Z, {
+    renderPopout: e => (0, r.jsx)(m.Z, {
       giftIntentType: n,
-      premiumGiftIntentCardType: y.U.COACHMARK,
+      premiumGiftIntentCardType: m.U.COACHMARK,
       recipientUser: t,
-      onMouseEnter: A,
-      onMouseLeave: Z,
+      onMouseEnter: C,
+      onMouseLeave: S,
       popoutPosition: e.position,
-      analyticsPage: l,
-      analyticsSection: I.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,
-      giftIntentSecondaryAction: v.X2.SEND_MESSAGE,
+      analyticsPage: O,
+      analyticsSection: b.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,
+      giftIntentSecondaryAction: _.X2.SEND_MESSAGE,
       glow: true
     }),
-    children: () => w ? (0, r.jsx)(u.P3F, {
-      innerRef: k,
-      "aria-label": M(),
-      onClick: R,
-      className: a()(T.actionButton, S.popoutButton, {
-        [T.highlight]: N
-      }),
-      onMouseEnter: L,
-      onMouseLeave: Z,
-      children: (0, r.jsx)(s.animated.div, {
-        className: S.spriteContainer,
-        children: (0, r.jsx)("div", {
-          className: S.sprite
-        })
-      })
-    }) : (0, r.jsx)(c.zx, {
-      "data-migration-pending": true,
-      buttonRef: k,
-      onClick: R,
-      onMouseEnter: L,
-      onMouseLeave: Z,
-      children: (0, r.jsxs)("div", {
-        className: S.pillContentContainer,
-        children: [(0, r.jsx)(u.OgN, {
-          size: "custom",
-          width: 14,
-          height: 14,
-          color: "currentColor"
-        }), (0, r.jsx)(u.Text, {
-          variant: "text-sm/medium",
-          color: "always-white",
-          className: S.pillButtonText,
-          children: M()
-        })]
-      })
+    children: () => (0, r.jsx)(a.hU, {
+      icon: a.OgN,
+      "aria-label": n === _.hX.FRIEND_ANNIVERSARY ? E.intl.string(E.t["4LohBA"]) : (0, f.Ou)(n),
+      onClick: T
     })
   })
 }

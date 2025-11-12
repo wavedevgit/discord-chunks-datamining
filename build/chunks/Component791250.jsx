@@ -149,10 +149,8 @@ let eb = e => {
       o = (0, p.e7)([v.Z], () => v.Z.useReducedMotion),
       {
         enabled: d
-      } = B.w.useExperiment({
+      } = B.w.getConfig({
         location: "Friends Tab"
-      }, {
-        autoTrackExposure: false
       }),
       f = s && d;
     i.useEffect(() => {

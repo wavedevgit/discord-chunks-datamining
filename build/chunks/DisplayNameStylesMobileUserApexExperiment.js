@@ -3,9 +3,7 @@
 "use strict";
 require.d(exports, {
   JH: () => s,
-  cL: () => c,
-  fN: () => o,
-  wL: () => l
+  fN: () => o
 });
 var Chunk818083 = require("./818083.js"),
   Chunk427164 = require("./427164.js");
@@ -58,30 +56,8 @@ let o = (0, Chunk818083.B)({
         enabled: true
       }
     }]
-  }),
-  l = (0, Chunk427164.le)({
-    name: "2025-09-display-name-styles-ga",
-    kind: "user",
-    defaultConfig: {
-      enabled: false
-    },
-    variations: {
-      1: {
-        enabled: true
-      }
-    }
   });
-
-function c(e) {
-  let {
-    location: t
-  } = e, n = s.useExperiment({
-    location: t
-  }).enabled;
-  return l.useConfig({
-    location: t
-  }).enabled && n
-}(0, Chunk427164.le)({
+(0, Chunk427164.le)({
   name: "2025-10-display-name-styles-mobile",
   kind: "user",
   defaultConfig: {

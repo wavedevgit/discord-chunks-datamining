@@ -76,10 +76,8 @@ function w() {
   if (L(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
-  } = Chunk522558.w.getCurrentConfig({
+  } = Chunk522558.w.getConfig({
     location: "PremiumGiftingIntentStore updateFriendAnniversaries"
-  }, {
-    autoTrackExposure: false
   });
   if (module) {
     for (let e of Chunk699516.Z.getFriendIDs()) {
@@ -182,10 +180,8 @@ function K(e) {
   L();
   let {
     enabled: t
-  } = p.w.getCurrentConfig({
+  } = p.w.getConfig({
     location: "PremiumGiftingIntentStore generateFriendAnniversaries"
-  }, {
-    autoTrackExposure: false
   });
   if (!t) return;
   N = e;
@@ -215,10 +211,8 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
       userId: t
     } = e, {
       enabled: n
-    } = p.w.getCurrentConfig({
+    } = p.w.getConfig({
       location: "PremiumGiftingIntentStore isTopAffinityFriendAnniversary"
-    }, {
-      autoTrackExposure: false
     });
     return !!n && A.has(t)
   }

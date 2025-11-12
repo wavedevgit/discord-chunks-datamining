@@ -73,9 +73,9 @@ function E(e, t) {
 }
 
 function b(e, t) {
-  (0, c.cL)({
+  c.JH.useExperiment({
     location: "useGuildMemberOrUserPendingDisplayNameStyles"
-  }) || (t = true);
+  }).enabled || (t = true);
   let n = (0, s.e7)([p.ZP], () => true === t || null == e ? null : p.ZP.getMember(t, e.id)),
     {
       pendingUserDisplayNameStyles: r,

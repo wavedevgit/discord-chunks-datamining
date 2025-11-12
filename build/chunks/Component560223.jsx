@@ -107,9 +107,9 @@ let I = e => {
       x = (0, u.bg)({
         location: "PremiumPerks"
       }),
-      L = (0, c.cL)({
+      L = c.JH.useExperiment({
         location: "PremiumPerks"
-      }),
+      }).enabled,
       M = f.Z.useExperiment({
         location: "PremiumPerks"
       }).enabled,

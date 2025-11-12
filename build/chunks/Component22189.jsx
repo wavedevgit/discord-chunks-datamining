@@ -85,9 +85,9 @@ let ey = () => {
     useKibibytes: true
   }), eb = (0, Chunk399606.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), ey = null != eb ? Chunk74538.ZP.getPremiumPlanItem(eb) : null, eO = (null != ey ? Chunk74538.ZP.getSkuIdForPlan(ey.planId) : null) === Chunk474936.Si.TIER_2, ev = Chunk594174.default.getCurrentUser(), eI = (0, Chunk74538.I5)(ev, Chunk474936.PremiumTypes.TIER_2), eS = (0, Chunk74538.I5)(ev, Chunk474936.PremiumTypes.TIER_0), eT = (0, Chunk779618.Z)(Chunk131951.Z), {
     isFractionalPremiumActive: eA
-  } = (0, Chunk975298.Z)(), eC = null != eb && eb.hasPremiumAtLeast(Chunk474936.PremiumTypes.TIER_2), eN = (0, Chunk266454.Nj)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eR = (0, Chunk594928.cL)({
+  } = (0, Chunk975298.Z)(), eC = null != eb && eb.hasPremiumAtLeast(Chunk474936.PremiumTypes.TIER_2), eN = (0, Chunk266454.Nj)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eR = Chunk594928.JH.useExperiment({
     location: "usePremiumPerksCards"
-  }), eP = (0, Chunk300284.Z)({
+  }).enabled, eP = (0, Chunk300284.Z)({
     scrollPosition: Chunk526761.Y_.TRY_IT_OUT,
     analyticsLocations: module
   }), ew = () => {

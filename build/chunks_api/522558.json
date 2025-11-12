@@ -1,1 +1,1 @@
-{"id":"522558","type":"experiment","data":{"kind":"user","id":"2024-08_friend_anniversaries","label":"Friend Anniversaries","commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","defaultConfig":{"enabled":false,"enableEmojiCTA":false},"treatments":[{"id":1,"label":"Friend anniversaries enabled with text CTA","config":{"enabled":true,"enableEmojiCTA":false}},{"id":2,"label":"Friend anniversaries enabled with emoji CTA","config":{"enabled":true,"enableEmojiCTA":true}}]},"fromModule":{"id":"web.js"}}
+{"id":"522558","type":"unknown","data":{},"fromModule":{"id":"web.js"}}

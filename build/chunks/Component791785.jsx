@@ -219,10 +219,8 @@ function $(e) {
       }));
       let {
         enabled: n
-      } = b.w.getCurrentConfig({
+      } = b.w.getConfig({
         location: "PaymentModal emitPaymentFlowSuccess"
-      }, {
-        autoTrackExposure: false
       });
       eY && null != eW && null != a && n && (0, O.n)(a) && (0, y.Ni)(eW.id)
     }, [e$, ez, eK, eW, eY, eq, eD.startTime, e1, a]),

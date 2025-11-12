@@ -119,10 +119,8 @@ class O extends Chunk317770.Z {
     }), b(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
-      } = m.w.getCurrentConfig({
+      } = m.w.getConfig({
         location: "PremiumManager"
-      }, {
-        autoTrackExposure: false
       });
       e && (0, c._)()
     }), b(this, "_handlePremiumPaymentModalOpen", e => {

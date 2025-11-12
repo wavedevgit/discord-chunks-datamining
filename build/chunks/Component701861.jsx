@@ -144,8 +144,7 @@ class P extends Chunk647438.PureComponent {
           children: [null != c && (0, r.jsx)(p.Z, {
             recipientUser: e,
             giftIntentType: c,
-            analyticsPage: I.ZY5.FRIENDS_LIST,
-            shouldHighlight: t
+            analyticsPage: I.ZY5.FRIENDS_LIST
           }), (0, r.jsx)(E.Z, {
             icon: o.kBi,
             tooltip: S.intl.string(S.t["g33r/P"]),

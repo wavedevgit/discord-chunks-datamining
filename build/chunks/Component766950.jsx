@@ -115,11 +115,11 @@ function L(e) {
               setSelectedFontId: W,
               displayName: z,
               className: I.selectionSubSection
-            }), (0, l.jsx)(k.Z, {
+            }), (0, l.jsx)(y.Z, {
               selectedEffectId: $,
               setSelectedEffectId: eu,
               className: I.selectionSubSection
-            }), (0, l.jsx)(y.Z, {
+            }), (0, l.jsx)(k.Z, {
               selectedColors: ea,
               setSelectedColors: ep,
               selectedEffectId: $,

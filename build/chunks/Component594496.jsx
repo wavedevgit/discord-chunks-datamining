@@ -82,9 +82,9 @@ function j(e) {
   let X = (0, u.gS)(q.id),
     Q = (0, o.e7)([S.ZP], () => null == q.id ? null : S.ZP.getMember(q.id, U.id)),
     J = (0, o.e7)([I.Z], () => I.Z.getGuildMemberProfile(U.id, q.id)),
-    $ = (0, c.cL)({
+    $ = c.JH.useExperiment({
       location: "GuildIdentityCustomizationSections"
-    }),
+    }).enabled,
     ee = A.ZP.canUsePremiumProfileCustomization(U),
     et = (0, f.gd)(B, null == Q ? true : Q.avatar),
     en = (0, f.f$)(F, null == J ? true : J.banner),

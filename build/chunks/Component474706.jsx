@@ -37,7 +37,7 @@ function f() {
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk487276.textSection,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-        variant: "text-md/medium",
+        variant: "text-md/bold",
         color: "always-white",
         children: _.heading()
       }), null != _.subheading && (0, Chunk951288.jsx)(Chunk481060.Text, {

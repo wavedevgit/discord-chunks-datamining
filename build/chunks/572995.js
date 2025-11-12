@@ -159,9 +159,9 @@ let ef = (e, t) => ec({
     } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_MARKETING_BENTO_BOX), t = (0, Chunk300284.Z)({
       scrollPosition: Chunk526761.Y_.TRY_IT_OUT,
       analyticsLocations: module
-    }), v = (0, Chunk594928.cL)({
+    }), v = Chunk594928.JH.useExperiment({
       location: "useBentoBoxes"
-    }), I = Chunk340625.Z.useExperiment({
+    }).enabled, I = Chunk340625.Z.useExperiment({
       location: "useBentoBoxes"
     }), S = (0, Chunk647438.useCallback)(() => {
       (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
