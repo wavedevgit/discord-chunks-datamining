@@ -113,9 +113,14 @@ let z = Chunk647438.memo(function(e) {
     }), eh(null)
   }
   r.useEffect(() => {
-    let e = () => {
-      var e;
-      return null == (e = $.current) ? true : e.activateUploadDialogue()
+    let e = e => {
+      let {
+        channelId: t
+      } = e;
+      if (t === W.id) {
+        var n;
+        null == (n = $.current) || n.activateUploadDialogue()
+      }
     };
     return N.S.subscribe(k.CkL.UPLOAD_FILE, e), () => {
       N.S.unsubscribe(k.CkL.UPLOAD_FILE, e)

@@ -107,18 +107,19 @@ function j(e) {
         disabled: R,
         type: N
       }, "sticker")
-    }), N === S.Ie.NORMAL && (X.push({
+    }), X.push({
       key: "upload",
       node: (0, r.jsx)(D.z, {
         disabled: R,
+        inputType: N,
         channel: j
       }, "upload")
-    }), et || X.push({
+    }), N !== S.Ie.NORMAL || et || X.push({
       key: "spacer",
       node: (0, r.jsx)("div", {
         className: L.spacer
       }, "spacer")
-    }))), (null == (a = N.emojis) ? true : a.button) != null && (null == V || null != H && H.type !== u.jw.ATTACHMENT)) {
+    })), (null == (a = N.emojis) ? true : a.button) != null && (null == V || null != H && H.type !== u.jw.ATTACHMENT)) {
     let e = K && null != q ? q : x.X1.EMOJI;
     X.push({
       key: "emoji",

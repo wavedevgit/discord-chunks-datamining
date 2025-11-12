@@ -579,7 +579,7 @@ function eG(e, t) {
       className: ep.hiddenAppLauncherAnchor
     }),
     tz = tk ? (0, r.jsx)(v.Z, {
-      align: tj ? "left" : "right",
+      align: tj && G !== ee.Ie.SIDEBAR ? "left" : "right",
       positionTargetRef: eJ,
       channel: U
     }) : null,

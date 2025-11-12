@@ -81,6 +81,7 @@ function C(e) {
       align: null != n ? n : "right",
       spacing: 24,
       autoInvert: true,
+      nudgeAlignIntoViewport: true,
       clickTrap: true,
       children: e => {
         let {

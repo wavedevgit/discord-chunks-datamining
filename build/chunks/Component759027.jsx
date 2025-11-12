@@ -37,7 +37,8 @@ let _ = {
     [Chunk362786.Id.ADMIN]: "Admin",
     [Chunk362786.Id.USER]: "User",
     [Chunk362786.Id.FRACTIONAL_PREMIUM]: "Fractional Premium",
-    [Chunk362786.Id.DEFERRED_START]: "Deferred Start"
+    [Chunk362786.Id.DEFERRED_START]: "Deferred Start",
+    [Chunk362786.Id.USER_TEMPORARY_BAN]: "User Temp Ban"
   },
   C = [{
     label: "Unpaid",

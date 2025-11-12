@@ -61,7 +61,9 @@ function b(e) {
             channel_id: a.id,
             guild_id: a.guild_id,
             action_type: "upload_file"
-          }), p.S.dispatch(m.CkL.UPLOAD_FILE), (0, u.fE)({
+          }), p.S.dispatch(m.CkL.UPLOAD_FILE, {
+            channelId: a.id
+          }), (0, u.fE)({
             message: t,
             channel: a,
             shouldMention: true

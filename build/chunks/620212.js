@@ -13,6 +13,8 @@ let s = {
   comboKeysBindGlobal: true,
   action() {
     let e = Chunk592125.Z.getChannel(Chunk944486.Z.getChannelId());
-    return null == module || module.isManaged() || Chunk585483.S.dispatch(Chunk981631.CkL.UPLOAD_FILE), false
+    return null == module || module.isManaged() || Chunk585483.S.dispatch(Chunk981631.CkL.UPLOAD_FILE, {
+      channelId: module.id
+    }), false
   }
 }
