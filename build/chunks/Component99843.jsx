@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk782196 = require("./782196.js");
-let g = e => {
+let m = e => {
     let {
       channel: t
     } = e;
@@ -42,7 +42,7 @@ let g = e => {
         text: f.intl.string(f.t["5Q9+/L"]),
         position: "bottom",
         children: (0, r.jsxs)(o.P3F, {
-          className: m.hoverableContainer,
+          className: g.hoverableContainer,
           onClick: () => {
             (0, u.B)(i, s.Z.HEADER_BAR)
           },
@@ -96,23 +96,22 @@ let g = e => {
           },
           "aria-label": f.intl.string(f.t["5Q9+/L"]),
           children: [(0, r.jsx)(d.Z, {
-            className: m.gdmIcon,
+            className: g.gdmIcon,
             "aria-hidden": true,
             channel: t,
             size: o.EFr.SIZE_20,
-            facepileSizeOverride: o.EFr.SIZE_24,
-            experimentLocation: "header_bar"
+            facepileSizeOverride: o.EFr.SIZE_24
           }), (0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "header-primary",
             children: null != h ? h : ""
           }), (0, r.jsx)(o.vdY, {
-            className: m.editIcon,
+            className: g.editIcon,
             size: "xs",
             color: "currentColor"
           })]
         })
-      }), (0, r.jsx)(g, {
+      }), (0, r.jsx)(m, {
         channel: t
       })]
     })

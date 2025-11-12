@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  u = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk700582 = require("./700582.jsx"),
@@ -89,27 +89,27 @@ function I(e) {
     icon: n,
     label: i,
     subLabel: s,
-    selected: o,
-    disabled: u,
+    selected: u,
+    disabled: o,
     onPressDestination: d,
-    "aria-setsize": p,
-    "aria-posinset": b
-  } = e, m = r.useRef(false), h = r.useCallback(() => {
-    u || null == d || d(t)
-  }, [d, u, t]);
+    "aria-setsize": b,
+    "aria-posinset": p
+  } = e, h = r.useRef(false), m = r.useCallback(() => {
+    o || null == d || d(t)
+  }, [d, o, t]);
   return (0, f.zq)(() => () => {
-    m.current && (m.current = false, null == d || d(t, {
+    h.current && (h.current = false, null == d || d(t, {
       transitionToDestination: false,
       closeAfterSend: false
     }))
   }), (0, l.jsxs)(c.P3F, {
     className: a()(T.destinationRow, {
-      [T.disabled]: u
+      [T.disabled]: o
     }),
-    onClick: h,
-    "aria-selected": o,
-    "aria-setsize": p,
-    "aria-posinset": b,
+    onClick: m,
+    "aria-selected": u,
+    "aria-setsize": b,
+    "aria-posinset": p,
     children: [(0, l.jsxs)("div", {
       className: T.identity,
       children: [(0, l.jsx)("div", {
@@ -133,7 +133,7 @@ function I(e) {
     }), (0, l.jsx)("div", {
       className: T.checkbox,
       children: (0, l.jsx)(c.FZ5, {
-        checked: o
+        checked: u
       })
     })]
   })
@@ -148,14 +148,14 @@ function F(e) {
     a = Z.ZP.useUserTag(t, {
       decoration: "never"
     }),
-    s = (0, u.e7)([O.Z], () => O.Z.getNickname(t.id)),
-    o = (0, u.e7)([C.Z], () => C.Z.getStatus(t.id));
+    s = (0, o.e7)([O.Z], () => O.Z.getNickname(t.id)),
+    u = (0, o.e7)([C.Z], () => C.Z.getStatus(t.id));
   return (0, l.jsx)(I, A(D({}, r), {
     icon: (0, l.jsx)(d.Z, {
       "aria-hidden": true,
       size: c.EFr.SIZE_32,
       user: t,
-      status: o
+      status: u
     }),
     label: null != s ? s : i,
     subLabel: null != n ? n : a
@@ -167,14 +167,13 @@ function R(e) {
     channel: t,
     subLabel: n
   } = e, r = k(e, ["channel", "subLabel"]);
-  let i = (0, b.ZP)(t),
+  let i = (0, p.ZP)(t),
     a = (0, g._)(t);
   return (0, l.jsx)(I, A(D({}, r), {
-    icon: (0, l.jsx)(m.Z, {
+    icon: (0, l.jsx)(h.Z, {
       "aria-hidden": true,
       size: c.EFr.SIZE_32,
-      channel: t,
-      experimentLocation: "application-command-modal"
+      channel: t
     }),
     label: i,
     subLabel: null != n ? n : a
@@ -186,13 +185,13 @@ function q(e) {
     channel: t,
     subLabel: n
   } = e, r = k(e, ["channel", "subLabel"]);
-  let i = (0, u.e7)([j.Z], () => j.Z.getGuild(null == t ? true : t.guild_id)),
-    a = (0, b.ZP)(t),
-    s = (0, u.e7)([x.Z, P.default, O.Z], () => {
+  let i = (0, o.e7)([j.Z], () => j.Z.getGuild(null == t ? true : t.guild_id)),
+    a = (0, p.ZP)(t),
+    s = (0, o.e7)([x.Z, P.default, O.Z], () => {
       let e = x.Z.getChannel(t.parent_id);
-      return null == e ? null : (0, b.F6)(e, P.default, O.Z, false)
+      return null == e ? null : (0, p.F6)(e, P.default, O.Z, false)
     }),
-    d = (0, u.e7)([_.ZP], () => _.ZP.lastMessageTimestamp(t.id, N.W.CHANNEL)),
+    d = (0, o.e7)([_.ZP], () => _.ZP.lastMessageTimestamp(t.id, N.W.CHANNEL)),
     f = null == i ? true : i.name;
   if (t.isThread() || t.isForumPost()) {
     let e = t.isForumPost() ? c.Mmi : c.VL1;
@@ -215,14 +214,14 @@ function q(e) {
         }), (0, l.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-secondary",
-          children: (0, E.Xf)(o()(d))
+          children: (0, E.Xf)(u()(d))
         })]
       }) : null]
     })
   }
   return (0, l.jsx)(I, A(D({}, r), {
-    icon: (0, l.jsx)(h.Z, {
-      size: h.E.SMALL_32,
+    icon: (0, l.jsx)(m.Z, {
+      size: m.E.SMALL_32,
       guild: i,
       channel: t
     }),
@@ -238,22 +237,22 @@ function U(e) {
     handleToggleDestination: i,
     disableSelection: a,
     originDestination: s
-  } = e, o = r.useMemo(() => {
+  } = e, u = r.useMemo(() => {
     var e;
     return null != (e = null == n ? true : n.map(y.hC)) ? e : []
   }, [n]);
   return r.useMemo(() => {
-    let e = t.filter(e => e.type !== p.h8.HEADER);
+    let e = t.filter(e => e.type !== b.h8.HEADER);
     return e.map((t, n) => {
       let {
         type: r,
-        record: u
-      } = t, c = r === p.h8.USER ? {
+        record: o
+      } = t, c = r === b.h8.USER ? {
         type: "user",
-        id: u.id
+        id: o.id
       } : {
         type: "channel",
-        id: u.id
+        id: o.id
       }, d = (0, y.hC)(c), f = null != s ? function(e, t) {
         if (t instanceof v.Sf && (0, v.Km)(t.type)) {
           if (null != t.rateLimitPerUser && t.rateLimitPerUser > 0 && !(S.Z.can(L.Plq.MANAGE_CHANNELS, t) || S.Z.can(L.Plq.MANAGE_MESSAGES, t))) return {
@@ -267,22 +266,22 @@ function U(e) {
             label: M.intl.string(M.t.mD4gqe)
           }
         }
-      }(s, u) : null, b = o.includes(d), m = {
+      }(s, o) : null, p = u.includes(d), h = {
         destination: c,
         subLabel: null != f ? f.label : true,
-        disabled: a && !b || null != f,
-        selected: b,
+        disabled: a && !p || null != f,
+        selected: p,
         onPressDestination: i,
         "aria-posinset": n + 1,
         "aria-setsize": e.length
       };
-      return r === p.h8.USER ? (0, l.jsx)(F, D({
-        user: u
-      }, m), d) : r === p.h8.GROUP_DM ? (0, l.jsx)(R, D({
-        channel: u
-      }, m), d) : r === p.h8.TEXT_CHANNEL || r === p.h8.VOICE_CHANNEL ? (0, l.jsx)(q, D({
-        channel: u
-      }, m), d) : void(0, w.vE)(r)
+      return r === b.h8.USER ? (0, l.jsx)(F, D({
+        user: o
+      }, h), d) : r === b.h8.GROUP_DM ? (0, l.jsx)(R, D({
+        channel: o
+      }, h), d) : r === b.h8.TEXT_CHANNEL || r === b.h8.VOICE_CHANNEL ? (0, l.jsx)(q, D({
+        channel: o
+      }, h), d) : void(0, w.vE)(r)
     })
-  }, [a, i, s, t, o])
+  }, [a, i, s, t, u])
 }

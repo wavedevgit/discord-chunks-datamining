@@ -55,8 +55,7 @@ let S = e => {
       children: [(0, s.jsx)(h.Z, {
         "aria-hidden": true,
         size: i.EFr.SIZE_32,
-        channel: t,
-        experimentLocation: "forward-modal"
+        channel: t
       }), (0, s.jsxs)("div", {
         className: P.resultText,
         children: [(0, s.jsx)(i.Text, {

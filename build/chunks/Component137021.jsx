@@ -35,7 +35,7 @@ function Z(e) {
     onCopyLink: O,
     onShare: C,
     transitionState: L
-  } = e, [T] = (0, c.Z)([t]), N = (0, i.e7)([p.default], () => p.default.getCurrentUser()), [w, R] = l.useState(false), [k, D] = l.useState(""), [M, A] = l.useState("");
+  } = e, [T] = (0, c.Z)([t]), N = (0, s.e7)([p.default], () => p.default.getCurrentUser()), [w, R] = l.useState(false), [k, D] = l.useState(""), [M, A] = l.useState("");
   l.useEffect(() => {
     A((0, o.H)({
       applicationId: t,
@@ -90,13 +90,13 @@ function Z(e) {
         null != n && await u.Z.sendMessage(e, d.ZP.parse(n, t), false, {
           location: v.dy.ACTIVITY_SHARE
         })
-      }), (0, s.showToast)((0, s.createToast)(S.intl.formatToPlainString(S.t.jQULqL, {
+      }), (0, i.showToast)((0, i.createToast)(S.intl.formatToPlainString(S.t.jQULqL, {
         applicationName: T.name
-      }), s.ToastType.SUCCESS)), C(true), _()
+      }), i.ToastType.SUCCESS)), C(true), _()
     }, [P, M, _, C, T]),
     Y = l.useCallback(() => {
       (0, m.JG)(M, () => {
-        O(), (0, s.showToast)((0, s.createToast)(S.intl.string(S.t.t5VZ88), s.ToastType.SUCCESS))
+        O(), (0, i.showToast)((0, i.createToast)(S.intl.string(S.t.t5VZ88), i.ToastType.SUCCESS))
       })
     }, [M, O]),
     B = V.length > 0 ? (0, r.jsx)(x.Q, {
@@ -112,7 +112,7 @@ function Z(e) {
         className: E.noResultsImg,
         src: j,
         alt: ""
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: S.intl.string(S.t.V6nAfF)
@@ -124,7 +124,7 @@ function Z(e) {
     title: S.intl.string(S.t.r9qKow),
     subtitle: P,
     size: "md",
-    input: (0, r.jsx)(s.E1j, {
+    input: (0, r.jsx)(i.E1j, {
       ref: z,
       query: k,
       onChange: Q,

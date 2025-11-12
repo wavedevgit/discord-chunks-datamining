@@ -1,7 +1,7 @@
 /** Chunk was on 38388 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => D
+  Z: () => R
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,7 +13,6 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk358221 = require("./358221.js"),
   Chunk43267 = require("./43267.js"),
   Chunk933557 = require("./933557.js"),
-  Chunk93687 = require("./93687.js"),
   Chunk266076 = require("./266076.jsx"),
   Chunk199902 = require("./199902.js"),
   Chunk19780 = require("./19780.js"),
@@ -29,7 +28,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk514483 = require("./514483.js");
 
-function N(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,20 +37,20 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Z(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
 }
 
-function w(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,35 +62,35 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = {
+let w = {
   friction: 28,
   tension: 600
 };
 
-function A(e) {
+function T(e) {
   switch (e) {
     case "height":
     case "opacity":
-      return Z({
+      return N({
         duration: 150
-      }, T);
+      }, w);
     case "scale":
-      return Z({}, T);
+      return N({}, w);
     default:
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
 }
-class R extends(r = Chunk647438.PureComponent) {
+class A extends(r = Chunk647438.PureComponent) {
   componentWillEnter(e) {
     let {
       controller: t
     } = this.state;
     e(), t.update({
-      immediate: !v.Z.isFocused(),
+      immediate: !O.Z.isFocused(),
       height: 1,
       opacity: 1,
       scale: 1,
-      config: A
+      config: T
     }).start().then(() => this.setState({
       animating: false
     }))
@@ -105,7 +104,7 @@ class R extends(r = Chunk647438.PureComponent) {
       scale: 1,
       opacity: 1,
       height: 1,
-      config: A
+      config: T
     }).start().then(e)
   }
   componentWillLeave(e) {
@@ -115,11 +114,11 @@ class R extends(r = Chunk647438.PureComponent) {
     this.setState({
       animating: true
     }, () => t.update({
-      immediate: !v.Z.isFocused(),
+      immediate: !O.Z.isFocused(),
       height: 0,
       opacity: 0,
       scale: 0,
-      config: A
+      config: T
     }).start().then(e))
   }
   componentWillUnmount() {
@@ -158,12 +157,11 @@ class R extends(r = Chunk647438.PureComponent) {
       stream: s,
       isCurrentUserInThisDMCall: u,
       unread: d,
-      isGDMFacepileEnabled: p,
-      treeItemProps: h
+      treeItemProps: p
     } = this.props, {
-      hovered: f,
-      animating: m
-    } = this.state, b = module.isMultiUserDM() && null == module.icon && Chunk43267, _ = () => (0, Chunk951288.jsx)(Chunk481060.LYs, Z({
+      hovered: h,
+      animating: g
+    } = this.state, m = module.isMultiUserDM() && null == module.icon, b = () => (0, Chunk951288.jsx)(Chunk481060.LYs, N({
       to: Chunk981631.Z5c.CHANNEL(Chunk981631.ME, module.id),
       onMouseEnter: () => this.setState({
         hovered: true
@@ -171,7 +169,7 @@ class R extends(r = Chunk647438.PureComponent) {
       onMouseLeave: () => this.setState({
         hovered: false
       }),
-      selected: require || Chunk93687,
+      selected: require || Chunk933557,
       ariaLabel: null != exports ? Chunk388032.intl.formatToPlainString(Chunk388032.t.hKarnZ, {
         mentions: r,
         name: exports
@@ -183,15 +181,14 @@ class R extends(r = Chunk647438.PureComponent) {
         channel: module,
         size: Chunk481060.EFr.SIZE_40,
         facepileSizeOverride: Chunk481060.EFr.SIZE_32,
-        experimentLocation: "unread_gdm",
         "aria-hidden": true
       }) : true
-    }, Chunk933557));
+    }, Chunk43267));
     return (0, Chunk951288.jsx)(Chunk509442.animated.div, {
       style: this.getAnimatedStyle(),
       children: (0, Chunk951288.jsxs)(Chunk682662.H, {
         children: [(0, Chunk951288.jsx)(Chunk276952.Z, {
-          hovered: !Chunk199902 && Chunk93687,
+          hovered: !Chunk199902 && Chunk933557,
           selected: !Chunk199902 && require,
           unread: !Chunk199902 && Chunk358221,
           className: Chunk514483.pill
@@ -218,24 +215,24 @@ class R extends(r = Chunk647438.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), N(this, "state", {
+    super(...e), P(this, "state", {
       hovered: false,
       animating: true,
       controller: new o.Controller({
         scale: 0,
         height: 0,
         opacity: 0,
-        config: A
+        config: T
       })
-    }), N(this, "handleContextMenu", e => {
+    }), P(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, r = t.type === S.d4z.DM ? O.default.getUser(t.getRecipientId()) : null;
+      } = this.props, r = t.type === E.d4z.DM ? y.default.getUser(t.getRecipientId()) : null;
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("31899")]).then(n.bind(n, 131404));
-        return n => (0, i.jsx)(e, w(Z({}, n), {
+        return n => (0, i.jsx)(e, Z(N({}, n), {
           channel: t,
           user: r
         }))
@@ -243,7 +240,7 @@ class R extends(r = Chunk647438.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("25421")]).then(n.bind(n, 354741));
-        return n => (0, i.jsx)(e, w(Z({}, n), {
+        return n => (0, i.jsx)(e, Z(N({}, n), {
           channel: t,
           selected: false
         }))
@@ -251,45 +248,37 @@ class R extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-N(R, "defaultProps", {
+P(A, "defaultProps", {
   badge: 0,
   audio: false,
   video: false,
   isCurrentUserInThisDMCall: false
 });
-let D = Chunk647438.forwardRef(function(e, t) {
+let R = Chunk647438.forwardRef(function(e, t) {
   let n = e.channel.id,
     r = (0, h.ZP)(e.channel),
     l = (0, a.Ie)(n, 2),
-    o = (0, s.e7)([b.Z], () => b.Z.getChannelId(), []),
-    u = (0, s.e7)([d.Z], () => null != o ? d.Z.getMode(o) : S.WtW.VOICE, [o]),
-    p = (0, s.e7)([m.Z], () => m.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    g = (0, s.e7)([y.Z], () => y.Z.getChannelId(), []),
-    O = (0, s.e7)([_.ZP], () => _.ZP.getMentionCount(n), [n]),
-    {
-      isFacepileEnabled: v
-    } = f.Z.useExperiment({
-      location: "unread_direct_message"
-    }, {
-      autoTrackExposure: false
-    }),
-    j = o === n,
-    x = false,
-    C = false;
-  j && (x = u === S.WtW.VOICE, C = u === S.WtW.VIDEO);
-  let E = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, i.jsx)(R, w(Z({}, e), {
+    o = (0, s.e7)([m.Z], () => m.Z.getChannelId(), []),
+    u = (0, s.e7)([d.Z], () => null != o ? d.Z.getMode(o) : E.WtW.VOICE, [o]),
+    p = (0, s.e7)([g.Z], () => g.Z.getAllApplicationStreamsForChannel(n).length > 0),
+    f = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
+    y = (0, s.e7)([b.ZP], () => b.ZP.getMentionCount(n), [n]),
+    O = o === n,
+    v = false,
+    j = false;
+  O && (v = u === E.WtW.VOICE, j = u === E.WtW.VIDEO);
+  let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
+  return (0, i.jsx)(A, Z(N({}, e), {
     ref: t,
     channelName: r,
-    unread: O > 0,
-    selected: g === n,
-    badge: O,
-    audio: x,
-    video: C,
+    unread: y > 0,
+    selected: f === n,
+    badge: y,
+    audio: v,
+    video: j,
     stream: p,
-    isCurrentUserInThisDMCall: j,
-    isGDMFacepileEnabled: v,
-    size: E,
+    isCurrentUserInThisDMCall: O,
+    size: x,
     treeItemProps: l
   }))
 })

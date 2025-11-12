@@ -1,7 +1,7 @@
 /** Chunk was on 64648 **/
 /** chunk id: 81155, original params: t,e,o (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,53 +24,56 @@ let c = [{
   postBold: "lievable!"
 }];
 
-function b(t) {
+function p(t) {
   let {
     punConfig: e
   } = t;
-  return (0, l.jsxs)(l.Fragment, {
-    children: [e.preBold, (0, l.jsx)("b", {
-      children: (0, l.jsx)("i", {
+  return (0, n.jsxs)(n.Fragment, {
+    children: [e.preBold, (0, n.jsx)("b", {
+      children: (0, n.jsx)("i", {
         children: e.bold
       })
     }), e.postBold]
   })
 }
 
-function p(t) {
+function b(t) {
   let {
     transitionState: e,
     onClose: o,
-    asanaTask: p
+    asanaTask: b
   } = t;
-  n.useEffect(() => {
-    (0, a.GN)("success", .1)
+  l.useEffect(() => {
+    (0, r.GN)("success", .1)
   }, []);
-  let m = n.useRef(c[Math.floor(Math.random() * c.length)]).current;
-  return (0, l.jsx)(s.Y0X, {
+  let m = l.useRef(c[Math.floor(Math.random() * c.length)]).current;
+  return (0, n.jsx)(i.Y0X, {
+    "data-migration-pending": true,
     className: u.bugReporterSubmitModalRoot,
     transitionState: e,
     "aria-label": d.intl.string(d.t.mCCdwi),
     parentComponent: "BugReporterSubmitModal",
-    children: (0, l.jsxs)(s.hzk, {
+    children: (0, n.jsxs)(i.hzk, {
+      "data-migration-pending": true,
       style: {
         overflow: "hidden",
         paddingRight: "0px"
       },
       className: u.modalContent,
       paddingFix: false,
-      children: [(0, l.jsx)(s.olH, {
+      children: [(0, n.jsx)(i.olH, {
+        "data-migration-pending": true,
         onClick: () => {
           null == o || o()
         },
         className: u.closeButton
-      }), (0, l.jsxs)(s.Text, {
+      }), (0, n.jsxs)(i.Text, {
         className: u.submitText,
         variant: "text-sm/normal",
-        children: ["Thanks for submitting a ", (0, l.jsx)(r.Z, {
-          onClick: () => (0, i.Z)(p.permalink_url),
+        children: ["Thanks for submitting a ", (0, n.jsx)(s.Z, {
+          onClick: () => (0, a.Z)(b.permalink_url),
           children: "bug"
-        }), "!", (0, l.jsx)("br", {}), (0, l.jsx)(b, {
+        }), "!", (0, n.jsx)("br", {}), (0, n.jsx)(p, {
           punConfig: m
         })]
       })]

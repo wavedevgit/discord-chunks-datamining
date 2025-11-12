@@ -18,7 +18,7 @@ function b(e) {
   let {
     query: t,
     queryMode: n
-  } = (0, i.F_)(e), r = f.M, l = null;
+  } = (0, s.F_)(e), r = f.M, l = null;
   return null != n && f.M.includes(n) && (r = [n], l = n), {
     query: t,
     queryMode: l,
@@ -30,7 +30,7 @@ function h(e) {
   let {
     targetDestination: t,
     selectedDestinations: n,
-    originDestination: i,
+    originDestination: s,
     includeMissingDMs: f = false
   } = e, h = (0, l.e7)([u.default], () => u.default.getId()), p = r.useMemo(() => ({
     searchOptions: {
@@ -56,7 +56,7 @@ function h(e) {
       query: e,
       resultTypes: t
     })
-  }, [m, x]), (0, s.D)();
+  }, [m, x]), (0, i.D)();
   let _ = (0, l.e7)([o.Z], () => o.Z.getFrequentlyWithoutFetchingLatest()),
     O = (0, l.e7)([a.Z], () => a.Z.isConnected()),
     C = "" !== g;
@@ -69,10 +69,10 @@ function h(e) {
       frequentChannels: _,
       selectedDestinations: n,
       pinnedDestinations: P,
-      originDestination: i,
+      originDestination: s,
       includeMissingDMs: f,
       isConnected: O
-    }), [y, C, E, t, _, n, P, i, f, O]),
+    }), [y, C, E, t, _, n, P, s, f, O]),
     updateSearchText: S
   }
 }

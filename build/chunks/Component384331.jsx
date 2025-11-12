@@ -46,8 +46,7 @@ function _(e) {
     icon: (0, l.jsx)(u.Z, {
       "aria-hidden": true,
       size: o.EFr.SIZE_32,
-      channel: n,
-      experimentLocation: "forward-failed-retry-modal"
+      channel: n
     }),
     label: t
   })
@@ -56,7 +55,7 @@ function _(e) {
 function v(e) {
   let {
     user: n
-  } = e, t = j.ZP.useName(n), r = (0, i.e7)([p.Z], () => p.Z.getNickname(n.id)), c = (0, i.e7)([m.Z], () => m.Z.getStatus(n.id));
+  } = e, t = m.ZP.useName(n), r = (0, i.e7)([p.Z], () => p.Z.getNickname(n.id)), c = (0, i.e7)([b.Z], () => b.Z.getStatus(n.id));
   return (0, l.jsx)(x, {
     icon: (0, l.jsx)(a.Z, {
       "aria-hidden": true,
@@ -88,9 +87,9 @@ function P(e) {
   } = e, {
     channel: t,
     user: r
-  } = (0, i.cj)([f.Z, b.default], () => ({
+  } = (0, i.cj)([f.Z, j.default], () => ({
     channel: "channel" === n.type ? f.Z.getChannel(n.id) : null,
-    user: "user" === n.type ? b.default.getUser(n.id) : null
+    user: "user" === n.type ? j.default.getUser(n.id) : null
   }));
   return (null == t ? true : t.isGroupDM()) ? (0, l.jsx)(_, {
     channel: t

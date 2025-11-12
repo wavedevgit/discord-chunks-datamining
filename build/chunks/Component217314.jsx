@@ -1,7 +1,7 @@
 /** Chunk was on 40029 **/
 /** chunk id: 217314, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,16 +18,16 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk97009 = require("./97009.js");
 
-function m(e) {
+function g(e) {
   let t = e.channel.getRecipientId(),
     n = e.channel.isSystemDM(),
-    m = (0, i.e7)([u.default], () => u.default.getUser(t)),
-    g = (0, i.e7)([c.Z], () => c.Z.getStatus(t)),
+    g = (0, i.e7)([u.default], () => u.default.getUser(t)),
+    m = (0, i.e7)([c.Z], () => c.Z.getStatus(t)),
     _ = (0, i.e7)([c.Z], () => c.Z.isMobileOnline(t)),
     j = (0, i.e7)([d.Z], () => d.Z.getNickname(t)),
-    x = h.ZP.useUserTag(m),
+    x = h.ZP.useUserTag(g),
     v = (0, l.j)({
-      displayNameStyles: null == m ? true : m.displayNameStyles
+      displayNameStyles: null == g ? true : g.displayNameStyles
     }),
     y = (0, s.m$)({
       channelId: e.channel.id
@@ -35,14 +35,14 @@ function m(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.nn4, {
       children: b.intl.string(b.t.EJRzg7)
-    }), null != m && !n && (0, r.jsx)("div", {
+    }), null != g && !n && (0, r.jsx)("div", {
       children: (0, r.jsx)(o.qEK, {
-        status: g,
+        status: m,
         isMobile: _,
         className: f.avatar,
         size: o.EFr.SIZE_20,
-        "aria-label": h.ZP.getName(m),
-        src: m.getAvatarURL(true, 20)
+        "aria-label": h.ZP.getName(g),
+        src: g.getAvatarURL(true, 20)
       })
     }), (0, r.jsx)(p.Z.Title, {
       level: e.level,
@@ -54,7 +54,7 @@ function m(e) {
           text: x,
           position: "bottom",
           className: v,
-          children: null != j ? j : h.ZP.getName(m)
+          children: null != j ? j : h.ZP.getName(g)
         }), y && (0, r.jsx)(a.u, {
           text: b.intl.string(b.t.QyZ4Td),
           children: (0, r.jsx)(o.tQf, {

@@ -75,11 +75,11 @@ class k {
   }) {
     P(this, "userId", true), P(this, "user", true), P(this, "channelId", true), P(this, "analyticsLocations", true), P(this, "generateNicknameGuildPairs", (0, j.oH)(e => {
       var t;
-      return o()(m.ZP.getNicknameGuildsMapping(null != (t = null == e ? true : e.id) ? t : this.userId)).toPairs().map(e => {
+      return o()(g.ZP.getNicknameGuildsMapping(null != (t = null == e ? true : e.id) ? t : this.userId)).toPairs().map(e => {
         let [t, n] = e;
         return [t, n.map(e => {
           var t;
-          return null == (t = g.Z.getGuild(e)) ? true : t.name
+          return null == (t = m.Z.getGuild(e)) ? true : t.name
         }).filter(x.lm)]
       }).filter(t => {
         let [n] = t;
@@ -115,7 +115,7 @@ function S(e) {
     channel: t
   } = e, n = t.getRecipientId(), a = (0, b.gc)(n), o = Array(a.length).fill(null), {
     analyticsLocations: f
-  } = (0, p.ZP)(h.Z.AKA), m = function(e) {
+  } = (0, p.ZP)(h.Z.AKA), g = function(e) {
     let {
       userId: t,
       channelId: n,
@@ -141,7 +141,7 @@ function S(e) {
   }, [x]), P = i.useCallback(() => {
     x(false)
   }, [x]);
-  return 0 === m.getNicknameGuildPairs().length && 0 === a.length ? (0, r.jsx)("div", {
+  return 0 === g.getNicknameGuildPairs().length && 0 === a.length ? (0, r.jsx)("div", {
     className: O.spacer
   }) : (0, r.jsxs)(p.Gt, {
     value: f,
@@ -157,32 +157,32 @@ function S(e) {
       showUserPopout: false,
       renderUser: (e, t, n) => {
         var i;
-        let o = m.user,
+        let o = g.user,
           l = a[n];
         return null == l || null == o ? null : (0, r.jsx)(c.u, {
           asContainer: true,
-          text: null == (i = g.Z.getGuild(l)) ? true : i.name,
+          text: null == (i = m.Z.getGuild(l)) ? true : i.name,
           position: "bottom",
           children: (0, r.jsx)("img", {
             alt: "",
             className: O.avatar,
-            onClick: m.handleClick,
+            onClick: g.handleClick,
             src: o.getAvatarURL(l, 16),
             "aria-hidden": true
           })
         }, l[1])
       },
-      renderMoreUsers: m.renderMoreAvatars,
+      renderMoreUsers: g.renderMoreAvatars,
       guildId: true,
       max: 3,
       className: O.avatars
-    }) : null, m.getNicknameGuildPairs().length > 0 ? (0, r.jsx)(s.Z, {
+    }) : null, g.getNicknameGuildPairs().length > 0 ? (0, r.jsx)(s.Z, {
       position: "bottom",
       className: O.nicknames,
       delay: 0,
       onTooltipShow: y,
       onTooltipHide: P,
-      children: m.renderNicknamePairs(!j)
+      children: g.renderNicknamePairs(!j)
     }) : null]
   })
 }

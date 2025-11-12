@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk413140 = require("./413140.js"),
   Chunk430864 = require("./430864.js");
 
-function m(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -68,7 +68,7 @@ class j extends Chunk647438.Component {
     }) : null
   }
   constructor(...e) {
-    super(...e), m(this, "_mouseDown", false), m(this, "_mouseUp", false), m(this, "handleOpenTopic", e => {
+    super(...e), g(this, "_mouseDown", false), g(this, "_mouseUp", false), g(this, "handleOpenTopic", e => {
       let t = e.target;
       if ((0, l.kK)(t)) {
         if (_(t)) return;
@@ -78,15 +78,15 @@ class j extends Chunk647438.Component {
         let {
           default: e
         } = await n.e("65631").then(n.bind(n, 10722));
-        return t => (0, r.jsx)(e, g({}, t, this.props))
+        return t => (0, r.jsx)(e, m({}, t, this.props))
       })
-    }), m(this, "onMouseDown", () => {
+    }), g(this, "onMouseDown", () => {
       this._mouseDown = true
-    }), m(this, "onMouseMove", () => {
+    }), g(this, "onMouseMove", () => {
       this._mouseDown && (this._mouseDown = false)
-    }), m(this, "onMouseUp", e => {
+    }), g(this, "onMouseUp", e => {
       this._mouseDown && e.button !== h.AeJ.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
-    }), m(this, "handleContextMenu", e => {
+    }), g(this, "handleContextMenu", e => {
       let {
         channel: t,
         guild: i
@@ -106,13 +106,13 @@ class j extends Chunk647438.Component {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        }(g({}, n), {
+        }(m({}, n), {
           channel: t,
           guild: i,
           includeTopic: true
         }))
       })
-    }), m(this, "handleClick", e => {
+    }), g(this, "handleClick", e => {
       if (this._mouseUp) {
         this._mouseUp = false;
         return

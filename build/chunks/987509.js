@@ -50,7 +50,7 @@ async function g(e) {
 }
 
 function y(e) {
-  if ("user" !== e.type) return (0, i.Z)(e.id);
+  if ("user" !== e.type) return (0, s.Z)(e.id);
   {
     let t = c.default.getUser(e.id);
     return null != t ? {
@@ -96,9 +96,9 @@ function S(e) {
   } = e;
   if (n) return x(v(t, f));
   let b = null != c && c.length > 0 ? c.map(e => y(e)) : [],
-    h = s.Z.getChannelHistory(),
-    p = h.length > 0 ? h.map(e => (0, i.Z)(e)) : [],
-    m = a.length > 0 ? a.map(e => (0, i.Z)(e.id)) : [],
+    h = i.Z.getChannelHistory(),
+    p = h.length > 0 ? h.map(e => (0, s.Z)(e)) : [],
+    m = a.length > 0 ? a.map(e => (0, s.Z)(e.id)) : [],
     g = v([...b, null != u ? y(u) : null, ...p, ...m], f),
     S = (null == o ? true : o.find(e => (0, r.isEqual)(e, d))) != null,
     E = null == d || S ? [] : [d.id];

@@ -15,13 +15,13 @@ var Chunk951288 = require("./951288.js"),
 function d(e) {
   let {
     previewMessage: t
-  } = e, n = u.jU.useSetting(), {
+  } = e, n = o.jU.useSetting(), {
     content: d
   } = (0, a.ZP)(t, {
     allowHeading: true,
     allowLinks: true
   }), f = t.attachments.map((e, t) => {
-    let n = (0, o.Yi)({
+    let n = (0, u.Yi)({
       src: e.url,
       containerClassName: c.previewImage,
       imageContainerClassName: c.previewImage,

@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
-  u = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -85,8 +85,8 @@ function T(e) {
     destination: t,
     icon: n,
     label: i,
-    subLabel: a,
-    selected: u,
+    subLabel: u,
+    selected: a,
     disabled: o,
     onPressDestination: f,
     "aria-setsize": h,
@@ -100,7 +100,7 @@ function T(e) {
       [C.disabled]: o
     }),
     onClick: o ? true : p,
-    "aria-selected": u,
+    "aria-selected": a,
     "aria-setsize": h,
     "aria-posinset": m
   }, g), {
@@ -121,20 +121,20 @@ function T(e) {
           className: C.subLabel,
           variant: "text-xs/normal",
           color: "text-muted",
-          children: a
+          children: u
         })]
       })]
     }), (0, l.jsx)("div", {
       className: C.checkbox,
       children: (0, l.jsx)(d.FZ5, {
-        checked: !!u,
+        checked: !!a,
         disabled: o
       })
     })]
   }))
 }
 
-function w(e) {
+function D(e) {
   var {
     user: t,
     subLabel: n
@@ -143,21 +143,21 @@ function w(e) {
     s = L.ZP.useUserTag(t, {
       decoration: "never"
     }),
-    a = (0, o.e7)([P.Z], () => P.Z.getNickname(t.id)),
-    u = (0, o.e7)([Z.Z], () => Z.Z.getStatus(t.id));
+    u = (0, o.e7)([P.Z], () => P.Z.getNickname(t.id)),
+    a = (0, o.e7)([Z.Z], () => Z.Z.getStatus(t.id));
   return (0, l.jsx)(T, A(M({}, r), {
     icon: (0, l.jsx)(f.Z, {
       "aria-hidden": true,
       size: d.EFr.SIZE_32,
       user: t,
-      status: u
+      status: a
     }),
-    label: null != a ? a : i,
+    label: null != u ? u : i,
     subLabel: null != n ? n : s
   }))
 }
 
-function D(e) {
+function w(e) {
   var {
     channel: t,
     subLabel: n
@@ -168,8 +168,7 @@ function D(e) {
     icon: (0, l.jsx)(b.Z, {
       "aria-hidden": true,
       size: d.EFr.SIZE_32,
-      channel: t,
-      experimentLocation: "forward-modal"
+      channel: t
     }),
     label: i,
     subLabel: null != n ? n : s
@@ -183,7 +182,7 @@ function R(e) {
   } = e, r = I(e, ["channel", "subLabel"]);
   let i = (0, o.e7)([S.Z], () => S.Z.getGuild(null == t ? true : t.guild_id)),
     s = (0, m.ZP)(t),
-    a = (0, o.e7)([E.Z, j.default, P.Z], () => {
+    u = (0, o.e7)([E.Z, j.default, P.Z], () => {
       let e = E.Z.getChannel(t.parent_id);
       return null == e ? null : (0, m.F6)(e, j.default, P.Z, false)
     }),
@@ -200,7 +199,7 @@ function R(e) {
         variant: "text-xs/medium",
         color: "text-secondary",
         lineClamp: 1,
-        children: a
+        children: u
       }), null != c ? (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(d.Text, {
           className: C.subLabelSeparator,
@@ -210,7 +209,7 @@ function R(e) {
         }), (0, l.jsx)(d.Text, {
           variant: "text-xs/medium",
           color: "text-secondary",
-          children: (0, x.Xf)(u()(c))
+          children: (0, O.Xf)(a()(c))
         })]
       }) : null]
     })
@@ -232,8 +231,8 @@ function U(e) {
     message: n,
     originChannel: i,
     selectedDestinations: s,
-    handleToggleDestination: a,
-    disableSelection: u,
+    handleToggleDestination: u,
+    disableSelection: a,
     rowClassName: c,
     validateDestination: o
   } = e, d = r.useMemo(() => {
@@ -265,21 +264,21 @@ function U(e) {
         message: n,
         destination: b,
         subLabel: null != p ? p.label : true,
-        disabled: u && !E || null != p,
+        disabled: a && !E || null != p,
         selected: E,
-        onPressDestination: a,
+        onPressDestination: u,
         "aria-posinset": s + 1,
         "aria-setsize": t.length,
         className: c
       };
-    return f === h.h8.USER ? (0, l.jsx)(w, M({
+    return f === h.h8.USER ? (0, l.jsx)(D, M({
       user: m
-    }, S)) : f === h.h8.GROUP_DM ? (0, l.jsx)(D, M({
+    }, S)) : f === h.h8.GROUP_DM ? (0, l.jsx)(w, M({
       channel: m
     }, S)) : f === h.h8.TEXT_CHANNEL || f === h.h8.VOICE_CHANNEL ? (0, l.jsx)(R, M({
       channel: m
-    }, S)) : void(0, O.vE)(f)
-  }, [u, a, n, i, t, d, c, o]);
+    }, S)) : void(0, x.vE)(f)
+  }, [a, u, n, i, t, d, c, o]);
   return {
     sections: [t.length],
     sectionHeight: 0,

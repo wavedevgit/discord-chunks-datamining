@@ -2,7 +2,7 @@
 /** chunk id: 810123, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   E: () => d,
-  Z: () => m
+  Z: () => b
 });
 var l, Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -18,22 +18,22 @@ let f = {
   h = {
     SMALL_32: [13, 11, 10, 10, 10, 10, 10]
   },
-  m = function(e) {
+  b = function(e) {
     let {
       className: n,
       iconClassName: t,
       size: l,
       channel: i,
       guild: d,
-      locked: m,
+      locked: b,
       hasActiveThreads: p
     } = e;
     if (null == d) return null;
-    let b = (0, s.EB)(d, 48),
-      j = h[l],
+    let j = (0, s.EB)(d, 48),
+      m = h[l],
       g = f[l],
       y = (0, o.KS)(i, d, {
-        locked: m,
+        locked: b,
         hasActiveThreads: p
       });
     if (null == y) return null;
@@ -43,9 +43,9 @@ let f = {
       className: n,
       children: [(0, r.jsx)(a.ZP, {
         mask: a.QS.GUILD_ICON_WITH_CHANNEL_TYPE,
-        children: null != b ? (0, r.jsx)("img", {
+        children: null != j ? (0, r.jsx)("img", {
           alt: "",
-          src: b,
+          src: j,
           className: u.channelGuildIcon,
           style: {
             width: g,
@@ -54,7 +54,7 @@ let f = {
         }) : (0, r.jsx)("div", {
           className: c()(u.channelGuildIcon, u.acronym),
           style: {
-            fontSize: O.length - 1 > j.length ? j[j.length - 1] : j[O.length - 1],
+            fontSize: O.length - 1 > m.length ? m[m.length - 1] : m[O.length - 1],
             width: g,
             height: g
           },

@@ -57,8 +57,7 @@ function b(e) {
     "aria-hidden": true
   }) : t.isGroupDM() ? (0, r.jsx)(f.Z, {
     channel: t,
-    size: c.EFr.SIZE_24,
-    experimentLocation: "ForLaterChannelHeader"
+    size: c.EFr.SIZE_24
   }) : (0, r.jsx)("div", {
     className: a()(m.icon, m.dmIcon),
     children: (0, r.jsx)(o.kBi, {

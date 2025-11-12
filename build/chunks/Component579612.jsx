@@ -43,8 +43,7 @@ function m(e) {
     "aria-hidden": true,
     className: h.searchResultGDMChannelIcon,
     channel: t,
-    size: o.EFr.SIZE_20,
-    experimentLocation: "search_popout"
+    size: o.EFr.SIZE_20
   });
   let i = (0, l.KS)(t);
   return null == i ? null : (0, r.jsx)(i, {
