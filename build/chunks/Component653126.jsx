@@ -61,7 +61,7 @@ let k = Chunk647438.memo(function(e) {
       isHoveringOrFocusing: ee
     } = (0, d.Z)($), {
       handleCardVisibilityChange: et
-    } = (0, g.E)(t.skuId, Q === y.AW.CATALOG ? "full" : Q), en = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, G), er = t.type === a.Z.VARIANTS_GROUP && !k, el = !T || !L, ei = !I || er, es = el || er;
+    } = (0, g.E)(t.skuId, Q === y.AW.CATALOG ? "full" : Q), en = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, G), er = t.type === a.Z.VARIANTS_GROUP && !k, el = !T || !L, ei = !(I && i) || er, es = ei || el, ea = el || er;
     return (0, r.jsx)(o.$, {
       innerRef: $,
       onChange: et,
@@ -81,7 +81,7 @@ let k = Chunk647438.memo(function(e) {
           className: j.productCardContentContainer,
           children: [(0, r.jsx)("div", {
             className: s()(j.productPreviewContainer, {
-              [j.hasBottomContent]: !i || ei || es
+              [j.hasBottomContent]: !i || ei || ea
             }),
             children: (0, r.jsx)(v.Z, {
               skuId: t.skuId,
@@ -100,28 +100,27 @@ let k = Chunk647438.memo(function(e) {
               skuId: t.skuId,
               isCardHovered: ee
             })]
-          }), (0, r.jsxs)("div", {
+          }), es && (0, r.jsxs)("div", {
             className: j.footerContainer,
             children: [(0, r.jsx)("div", {
               className: j.footerGradient
             }), (0, r.jsxs)("div", {
               className: j.footerContent,
-              children: [!i && (0, r.jsx)(h.Z, {
-                skuId: t.skuId,
-                className: s()({
-                  [j.shadowOnHover]: es
-                }, W)
-              }), ei && (0, r.jsxs)("div", {
-                className: s()(j.footerInfoContainer, {
-                  [j.removePaddingOnHover]: !er
-                }),
-                children: [!I && (0, r.jsx)("div", {
-                  className: j.priceContainer,
-                  "aria-hidden": true,
-                  children: (0, r.jsx)(C.Z, {
+              children: [ei && (0, r.jsxs)("div", {
+                className: j.footerInfoContainer,
+                children: [!(i && I) && (0, r.jsxs)("div", {
+                  className: j.footerInfoLeft,
+                  children: [!i && (0, r.jsx)(h.Z, {
                     skuId: t.skuId,
-                    prioritizedCurrency: z
-                  })
+                    className: W
+                  }), !I && (0, r.jsx)("div", {
+                    className: j.priceContainer,
+                    "aria-hidden": true,
+                    children: (0, r.jsx)(C.Z, {
+                      skuId: t.skuId,
+                      prioritizedCurrency: z
+                    })
+                  })]
                 }), er && (0, r.jsx)(E.Z, {
                   skuId: t.skuId,
                   isCollapsed: !ee,
@@ -132,6 +131,7 @@ let k = Chunk647438.memo(function(e) {
                 className: j.footerButtonContainer,
                 children: (0, r.jsxs)(c.ButtonGroup, {
                   wrap: false,
+                  className: j.footerButtonGroup,
                   fullWidth: true,
                   children: [!T && (0, r.jsx)(m.Z, {
                     skuId: t.skuId,
