@@ -503,10 +503,10 @@ let eP = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
     value: e
   })), "text", "gifAutoPlay"), "gifAutoPlay", () => {
     var e;
-    return (!Chunk244827.Z.visible || !Chunk244827.Z.enabled) && (null == (e = Chunk263937.Z.getOverride("gifAutoPlay")) ? true : module.value)
+    return !Chunk244827.Z.active && (null == (e = Chunk263937.Z.getOverride("gifAutoPlay")) ? true : module.value)
   }, () => (0, Chunk442837.e7)([Chunk244827.Z, Chunk263937.Z], () => {
     var e;
-    return (!Chunk244827.Z.visible || !Chunk244827.Z.enabled) && (null == (e = Chunk263937.Z.getOverride("gifAutoPlay")) ? true : module.value)
+    return !Chunk244827.Z.active && (null == (e = Chunk263937.Z.getOverride("gifAutoPlay")) ? true : module.value)
   })),
   ex = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateEmoji", e => {
     var t;
@@ -515,10 +515,10 @@ let eP = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
     value: e
   })), "text", "animateEmoji"), "animateEmoji", () => {
     var e;
-    return (!Chunk244827.Z.visible || !Chunk244827.Z.enabled) && (null == (e = Chunk263937.Z.getOverride("animateEmoji")) ? true : module.value)
+    return !Chunk244827.Z.active && (null == (e = Chunk263937.Z.getOverride("animateEmoji")) ? true : module.value)
   }, () => (0, Chunk442837.e7)([Chunk244827.Z, Chunk263937.Z], () => {
     var e;
-    return (!Chunk244827.Z.visible || !Chunk244827.Z.enabled) && (null == (e = Chunk263937.Z.getOverride("animateEmoji")) ? true : module.value)
+    return !Chunk244827.Z.active && (null == (e = Chunk263937.Z.getOverride("animateEmoji")) ? true : module.value)
   })),
   eL = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateStickers", e => {
     var t;
@@ -527,10 +527,10 @@ let eP = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
     value: e
   })), "text", "animateStickers"), "animateStickers", () => {
     var e;
-    return Chunk244827.Z.visible && Chunk244827.Z.enabled ? Chunk611480.yr.NEVER_ANIMATE : null == (e = Chunk263937.Z.getOverride("animateStickers")) ? true : module.value
+    return Chunk244827.Z.active ? Chunk611480.yr.NEVER_ANIMATE : null == (e = Chunk263937.Z.getOverride("animateStickers")) ? true : module.value
   }, () => (0, Chunk442837.e7)([Chunk244827.Z, Chunk263937.Z], () => {
     var e;
-    return Chunk244827.Z.visible && Chunk244827.Z.enabled ? Chunk611480.yr.NEVER_ANIMATE : null == (e = Chunk263937.Z.getOverride("animateStickers")) ? true : module.value
+    return Chunk244827.Z.active ? Chunk611480.yr.NEVER_ANIMATE : null == (e = Chunk263937.Z.getOverride("animateStickers")) ? true : module.value
   })),
   eM = [],
   ej = (0, Chunk560997.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eM, e => e),

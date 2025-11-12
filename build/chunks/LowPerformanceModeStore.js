@@ -86,6 +86,9 @@ class _ extends(r = Chunk442837.ZP.PersistedStore) {
   get visible() {
     return u.visible
   }
+  get active() {
+    return u.enabled && u.visible
+  }
 }
 o(_, "displayName", "LowPerformanceModeStore"), o(_, "persistKey", "LowPerformanceModeStore");
 let p = new _(Chunk570140.Z, {

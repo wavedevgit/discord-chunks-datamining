@@ -348,7 +348,7 @@ class J extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return v.prefersReducedMotion
   }
   get useReducedMotion() {
-    if (Chunk244827.Z.visible && Chunk244827.Z.enabled) returntrue;
+    if (Chunk244827.Z.active) returntrue;
     switch (v.prefersReducedMotion) {
       case "no-preference":
         returnfalse;
