@@ -158,6 +158,10 @@ class O extends Chunk81825.Z {
     var e;
     return (0, Chunk111361.I5)(this, Chunk474936.PremiumTypes.TIER_2) && (null == (e = this.premiumState) ? true : module.premiumSource) === Chunk813820.d3.FRACTIONAL_NITRO
   }
+  isPremiumWithPremiumGroup() {
+    var e;
+    return (0, Chunk111361.I5)(this, Chunk474936.PremiumTypes.TIER_2) && (null == (e = this.premiumState) ? true : module.premiumSource) === Chunk813820.d3.SUBSCRIPTION_GROUP
+  }
   hasUrgentMessages() {
     return this.hasFlag(Chunk981631.xW$.HAS_UNREAD_URGENT_MESSAGES)
   }
@@ -191,6 +195,10 @@ class O extends Chunk81825.Z {
   get nameplate() {
     var e;
     return (0, Chunk4242.Pb)(null == (e = this.collectibles) ? true : module.nameplate)
+  }
+  get premiumGroupRole() {
+    var e, t;
+    return null != (t = null == (e = this.premiumState) ? true : module.premiumSubscriptionGroupRole) ? exports : Chunk813820.bF.UNSPECIFIED
   }
   constructor(e) {
     var t, n, i, a, o, c, d, f, _, p, m, E, b, y, O, v, I, S, T, A, C, N, R, P, w, D, x, L, M, j, k, U, G, B;
