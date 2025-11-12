@@ -83,14 +83,18 @@ function F() {
 }
 
 function V(e, t) {
-  if (null != w && (null != t && (B[e] = t), !R.has(e))) try {
-    w.trackGame(e), R.add(e), (0, _.PY)(e, "maybeTrackGame", {
-      newOverlayMethod: null != t ? f.gl[t] : null
-    }), o.Z.updateOverlayState(e, f.mM.WAITING_FOR_POPOUT_OPEN)
-  } catch (t) {
-    N.error("Error tracking game:", t), (0, _.PV)(e, t, {
-      crashType: "renderer"
-    })
+  if (null != w) {
+    null != t && (B[e] = t);
+    try {
+      if (w.trackGame(e), R.has(e)) return;
+      R.add(e), (0, _.PY)(e, "maybeTrackGame", {
+        newOverlayMethod: null != t ? f.gl[t] : null
+      }), o.Z.updateOverlayState(e, f.mM.WAITING_FOR_POPOUT_OPEN)
+    } catch (t) {
+      N.error("Error tracking game:", t), (0, _.PV)(e, t, {
+        crashType: "renderer"
+      })
+    }
   }
 }
 

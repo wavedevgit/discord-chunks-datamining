@@ -90,54 +90,56 @@ function O(e) {
     layerContext: C,
     targetElementRef: N,
     anchorRef: R,
-    positionKey: P
-  } = e, w = b(e, ["children", "title", "body", "asset", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey"]);
-  let D = (0, _.c)(N),
-    x = i.useId(),
-    L = null != h && ("string" != typeof h || "" !== h),
-    M = i.useMemo(() => (0, r.jsxs)("div", {
+    positionKey: P,
+    ariaHidden: w = false
+  } = e, D = b(e, ["children", "title", "body", "asset", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey", "ariaHidden"]);
+  let x = (0, _.c)(N),
+    L = i.useId(),
+    M = w ? true : L,
+    j = null != h && ("string" != typeof h || "" !== h),
+    k = i.useMemo(() => (0, r.jsxs)("div", {
       className: p.richTooltipContent,
       children: [null != y && (0, r.jsx)("div", {
         className: p.assetContainer,
         children: y
       }), (0, r.jsxs)("div", {
         className: p.textContent,
-        children: [L && (0, r.jsx)(o.Text, {
+        children: [j && (0, r.jsx)(o.Text, {
           variant: "text-sm/bold",
           children: h
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
-          color: L ? "text-secondary" : "text-primary",
+          color: j ? "text-secondary" : "text-primary",
           children: g
         })]
       })]
-    }), [y, h, g, L]),
+    }), [y, h, g, j]),
     {
-      isVisible: j,
-      triggerProps: k
+      isVisible: U,
+      triggerProps: G
     } = (0, d.l)(m({
-      targetElementRef: D.targetElementRef
-    }, w)),
-    U = null != P ? P : "".concat((0, u.Sw)(null != h ? h : ""), "|").concat((0, u.Sw)(g)),
-    G = (0, f.Q)({
-      shouldShow: j
+      targetElementRef: x.targetElementRef
+    }, D)),
+    B = null != P ? P : "".concat((0, u.Sw)(null != h ? h : ""), "|").concat((0, u.Sw)(g)),
+    Z = (0, f.Q)({
+      shouldShow: U
     });
   if (O) {
-    let e = E(m({}, k), {
-      onFocus: (0, u.tS)(k.onFocus, e => {
+    let e = w ? G : E(m({}, G), {
+      onFocus: (0, u.tS)(G.onFocus, e => {
         let t = e.target;
         if (null != t) {
           var n;
-          let e = (0, u.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, x);
+          let e = (0, u.QV)(null != (n = t.getAttribute("aria-describedby")) ? n : true, L);
           t.setAttribute("aria-describedby", e)
         }
       }),
-      onBlur: (0, u.tS)(k.onBlur, e => {
+      onBlur: (0, u.tS)(G.onBlur, e => {
         let t = e.target;
         if (null != t) {
           let e = t.getAttribute("aria-describedby");
           if (null != e) {
-            let n = e.split(" ").filter(e => e !== x);
+            let n = e.split(" ").filter(e => e !== L);
             n.length > 0 ? t.setAttribute("aria-describedby", n.join(" ")) : t.removeAttribute("aria-describedby")
           }
         }
@@ -147,35 +149,35 @@ function O(e) {
       tag: v,
       children: n,
       triggerHandlers: e,
-      triggerRef: D.triggerRef
+      triggerRef: x.triggerRef
     })
   } else {
     if (!i.isValidElement(n)) return null;
-    t = (0, u.C9)(n, k, x, D.triggerRef)
+    t = (0, u.C9)(n, G, M, x.triggerRef)
   }
-  let B = G((e, t) => t ? (0, r.jsx)(c.pn, {
+  let F = Z((e, t) => t ? (0, r.jsx)(c.pn, {
     isRichTooltip: true,
     children: (0, r.jsx)(l.N, {
-      isVisible: j,
+      isVisible: U,
       isRendered: true,
-      targetElementRef: D.targetElementRef,
+      targetElementRef: x.targetElementRef,
       anchorRef: R,
-      id: x,
-      content: M,
+      id: L,
+      content: k,
       position: I,
       align: S,
       spacing: T,
       caretConfig: A,
       layerContext: null != C ? C : s.nz,
       animationStyle: e,
-      positionKey: U,
+      positionKey: B,
       "data-mana-component": "rich-tooltip"
     })
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [t, null != M ? (0, r.jsx)(a.n, {
-      id: x,
-      children: M
-    }) : null, B]
+    children: [t, w || null == k ? null : (0, r.jsx)(a.n, {
+      id: L,
+      children: k
+    }), F]
   })
 }

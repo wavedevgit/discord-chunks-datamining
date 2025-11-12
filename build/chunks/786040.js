@@ -31,7 +31,7 @@ function g() {
   return Chunk647438.useContext(m).flattenProductVariants
 }
 var E = function(e) {
-    return e.NONE = "none", e.NEW = "new", e.ORBS_EXCLUSIVE = "orbs_exclusive", e.LIMITED_TIME = "limited_time", e
+    return e.NONE = "none", e.NEW = "new", e.ORBS_EXCLUSIVE = "orbs_exclusive", e.LIMITED_TIME = "limited_time", e.NITRO_EXCLUSIVE = "nitro_exclusive", e
   }({}),
   b = function(e) {
     return e.FIAT = "fiat", e.ORBS = "orbs", e

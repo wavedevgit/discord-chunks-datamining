@@ -32,33 +32,36 @@ let v = e => {
     } = e, {
       isPurchased: v,
       isPartiallyOwnedBundle: E
-    } = (0, g.L)(t), {
-      isFetching: x,
-      category: O
-    } = (0, p.l)(t.skuId), S = (null == O ? true : O.unpublishedAt) != null ? (0, d.OT)(O.unpublishedAt) : null, y = (0, s.e7)([o.default], () => o.default.getCurrentUser()), j = c.ZP.canUseCollectibles(y), k = (0, C.Iw)(t), {
-      isOrbExclusive: I
+    } = (0, g.L)(t), x = (0, d.G1)(t), {
+      isFetching: O,
+      category: S
+    } = (0, p.l)(t.skuId), y = (null == S ? true : S.unpublishedAt) != null ? (0, d.OT)(S.unpublishedAt) : null, j = (0, s.e7)([o.default], () => o.default.getCurrentUser()), k = c.ZP.canUseCollectibles(j), I = (0, C.Iw)(t), {
+      isOrbExclusive: T
     } = (0, m.Ip)({
       product: t,
-      isPremiumUser: j,
+      isPremiumUser: k,
       prioritizedCurrency: h,
-      hasDiscountOffer: null != k
-    }), T = n;
-    if (null == T && (null == S || l ? !E && !v && (0, d.Yq)(t.skuId) ? T = f.Zh.NEW : I && (T = f.Zh.ORBS_EXCLUSIVE) : T = f.Zh.LIMITED_TIME), null == T || T === f.Zh.NONE || x) return null;
-    let L = null;
-    switch (T) {
+      hasDiscountOffer: null != I
+    }), L = n;
+    if (null == L && (null == y || l ? !E && !v && (0, d.Yq)(t.skuId) ? L = f.Zh.NEW : T ? L = f.Zh.ORBS_EXCLUSIVE : x && (L = f.Zh.NITRO_EXCLUSIVE) : L = f.Zh.LIMITED_TIME), null == L || L === f.Zh.NONE || O) return null;
+    let B = null;
+    switch (L) {
       case f.Zh.LIMITED_TIME:
-        L = null != S ? S > 1 ? _.intl.formatToPlainString(_.t.Io7ozn, {
-          days: S
+        B = null != y ? y > 1 ? _.intl.formatToPlainString(_.t.Io7ozn, {
+          days: y
         }) : _.intl.string(_.t.Bc13HF) : _.intl.string(_.t["h/uBCR"]);
         break;
       case f.Zh.NEW:
-        L = _.intl.string(_.t.y2b7CA);
+        B = _.intl.string(_.t.y2b7CA);
+        break;
+      case f.Zh.NITRO_EXCLUSIVE:
+        B = _.intl.string(_.t.X3Ekj8);
         break;
       case f.Zh.ORBS_EXCLUSIVE:
-        L = _.intl.string(_.t["0TmQRG"])
+        B = _.intl.string(_.t["0TmQRG"])
     }
     return (0, r.jsx)(a.IGR, {
-      text: L,
+      text: B,
       disableColor: true,
       className: i()(u, b.productCardBadge)
     })

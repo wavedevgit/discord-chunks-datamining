@@ -81,9 +81,10 @@ let h = {
         caretAlign: l,
         customOffset: c,
         delay: d,
-        spacing: p
-      } = e, h = _(e, ["text", "position", "align", "caretAlign", "customOffset", "delay", "spacing"]);
-      let m = i.useMemo(() => {
+        spacing: p,
+        ariaHidden: h
+      } = e, m = _(e, ["text", "position", "align", "caretAlign", "customOffset", "delay", "spacing", "ariaHidden"]);
+      let g = i.useMemo(() => {
         if ("center" !== l && null != l) return "custom" === l ? {
           align: l,
           customOffset: c
@@ -97,8 +98,9 @@ let h = {
         align: o,
         delay: d,
         spacing: p,
-        caretConfig: m
-      }, h), {
+        caretConfig: g,
+        ariaHidden: h
+      }, m), {
         children: (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Hover me"
@@ -187,6 +189,11 @@ let h = {
         label: "Keyboard Shortcut",
         type: "text",
         defaultValue: "mod+k"
+      },
+      ariaHidden: {
+        label: "Aria Hidden",
+        type: "boolean",
+        defaultValue: false
       }
     }
   }, {
