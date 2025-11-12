@@ -100,19 +100,18 @@ let k = Chunk647438.memo(function(e) {
               skuId: t.skuId,
               isCardHovered: ee
             })]
-          }), es && (0, r.jsxs)("div", {
-            className: j.footerContainer,
+          }), es && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
               className: j.footerGradient
             }), (0, r.jsxs)("div", {
-              className: j.footerContent,
+              className: j.footerContainer,
               children: [ei && (0, r.jsxs)("div", {
                 className: j.footerInfoContainer,
                 children: [!(i && I) && (0, r.jsxs)("div", {
                   className: j.footerInfoLeft,
                   children: [!i && (0, r.jsx)(h.Z, {
                     skuId: t.skuId,
-                    className: W
+                    className: s()(W, j.productName)
                   }), !I && (0, r.jsx)("div", {
                     className: j.priceContainer,
                     "aria-hidden": true,
