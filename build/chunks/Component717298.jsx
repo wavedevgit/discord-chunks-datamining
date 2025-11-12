@@ -68,8 +68,9 @@ function X(e) {
     el = !(0, w.isLinux)(),
     eo = "confirm" === er,
     es = !K && null != s && !eo,
-    ea = q && et.sourceType !== u.vA.CAMERA,
-    ec = i.useMemo(() => {
+    ea = eo || et.sourceType === u.vA.CAMERA,
+    ec = q && et.sourceType !== u.vA.CAMERA,
+    ed = i.useMemo(() => {
       let e = [{
         name: V.intl.string(V.t.tHoi7u),
         value: u.vA.WINDOW,
@@ -86,9 +87,9 @@ function X(e) {
       }), e
     }, [q]),
     {
-      sourceType: ed
+      sourceType: eu
     } = et,
-    eu = i.useCallback(async e => {
+    ef = i.useCallback(async e => {
       b.eo.updateSetting(et.notifyFriends), b.I0.updateSetting(et.hidePreview);
       let [t, r] = await (0, E.Z)(e.hasOwnProperty("pid") ? e.pid : e, {
         preset: et.preset,
@@ -106,19 +107,19 @@ function X(e) {
         body: V.intl.string(V.t.MIJCzr)
       }), n()
     }, [n, et, Q]);
-  async function ef(e) {
+  async function ep(e) {
     await (0, g.Z)({
       channelId: e
-    }) && null != s && eu(s)
+    }) && null != s && ef(s)
   }
-  let ep = i.useCallback(() => {
+  let eh = i.useCallback(() => {
     var e;
-    eu({
+    ef({
       id: "prepicked:" + et.nativeSourceType,
       name: null != (e = Z.ZP.getLastPickedContentTitle()) ? e : V.intl.string(V.t.KKcy95),
       url: ""
     })
-  }, [eu, et.nativeSourceType]);
+  }, [ef, et.nativeSourceType]);
   return (0, r.jsx)(k.Yw, {
     state: et,
     dispatch: en,
@@ -139,16 +140,16 @@ function X(e) {
       size: p.CgR.DYNAMIC,
       transitionState: l,
       parentComponent: "GoLiveModalV2",
-      children: [es ? (0, r.jsx)(A.Z, {
+      children: [es ? (0, r.jsx)(R.Z, {
         className: o()(J.channelSelectorComponent, J.withFooter),
-        onSelectChannel: ef
+        onSelectChannel: ep
       }) : eo ? (0, r.jsx)(M.Z, {}) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(p.xBx, {
           separator: false,
           className: J.header,
           children: (0, r.jsx)(p.sY7, {
             className: J.segmentedControl,
-            value: ed,
+            value: eu,
             look: "pill",
             optionClassName: J.segmentedControlOption,
             onChange: e => {
@@ -160,15 +161,19 @@ function X(e) {
                 sourceType: t
               })
             },
-            options: ec
+            options: ed
           })
         }), (0, r.jsx)(p.hzk, {
           className: J.content,
-          children: q && ed !== u.vA.CAMERA ? (0, r.jsx)(D.Z, {
-            onSourceSelect: ep
+          children: q && eu !== u.vA.CAMERA ? (0, r.jsx)(D.Z, {
+            onSourceSelect: eh
           }) : (0, r.jsx)(B.Z, {
             onClick: function(e) {
-              return eu(e)
+              var t;
+              (null == (t = e.id) ? true : t.startsWith(u.vA.CAMERA)) ? en({
+                type: "set_selected_source",
+                source: e
+              }): ef(e)
             }
           })
         })]
@@ -184,7 +189,7 @@ function X(e) {
             className: J.rightButtonGroup,
             children: [ei && (0, r.jsx)(G.Z, {
               onClose: n
-            }), ea && !eo && (0, r.jsx)(R.Z, {
+            }), ec && !ea && (0, r.jsx)(A.Z, {
               mainCTADisabled: !el && "" === et.nativeSourceType,
               mainCTAOnClick: () => {
                 (0, T.t)(), (0, T.T)(et.nativeSourceType)
@@ -192,15 +197,15 @@ function X(e) {
               align: "right",
               ctaText: V.intl.string(V.t.FiBjwU),
               hideOptionsButton: !ei
-            }), eo && !ea && (0, r.jsx)(R.Z, {
+            }), ea && !ec && (0, r.jsx)(A.Z, {
               mainCTADisabled: null == et.selectedSource,
               mainCTAOnClick: () => {
-                null != et.selectedChannel ? ef(et.selectedChannel) : null != et.selectedSource && eu(et.selectedSource)
+                null != et.selectedChannel ? ep(et.selectedChannel) : null != et.selectedSource && ef(et.selectedSource)
               },
               align: "right",
               hideOptionsButton: !ei,
               ctaText: V.intl.string(z.default["5AyH/p"])
-            }), (!ei || !(eo || ea)) && (0, r.jsx)(L.Z, {
+            }), (!ei || !(ea || ec)) && (0, r.jsx)(L.Z, {
               align: "right"
             })]
           })]

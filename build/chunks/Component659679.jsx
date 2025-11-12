@@ -24,13 +24,13 @@ function g(e) {
     username: g,
     roleColor: v,
     roleColorStrings: x
-  } = (0, o.cj)([c.ZP], () => {
+  } = (0, l.cj)([c.ZP], () => {
     var e, n, r, i;
-    let o = c.ZP.getMember(t.guildId, t.userId);
+    let l = c.ZP.getMember(t.guildId, t.userId);
     return {
       username: null != (n = c.ZP.getNick(t.guildId, t.userId)) ? n : null == (e = t.user) ? true : e.username,
-      roleColor: null != (r = null == o ? true : o.colorString) ? r : null,
-      roleColorStrings: null != (i = null == o ? true : o.colorStrings) ? i : null
+      roleColor: null != (r = null == l ? true : l.colorString) ? r : null,
+      roleColorStrings: null != (i = null == l ? true : l.colorStrings) ? i : null
     }
   }, [t]), _ = (0, d.X7)(t.guildId, t.userId, null != x ? x : null);
   return (0, r.jsxs)("div", {
@@ -45,7 +45,7 @@ function g(e) {
         tag: "span",
         variant: "text-md/medium",
         lineClamp: 1,
-        children: [(0, r.jsx)(l.u, {
+        children: [(0, r.jsx)(o.u, {
           text: g,
           shouldShow: true,
           asContainer: true,

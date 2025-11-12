@@ -1,12 +1,15 @@
 /** Chunk was on 47863 **/
 /** chunk id: 615161, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E_: () => C,
-  Ti: () => y,
-  Yw: () => S
+  E_: () => P,
+  Ti: () => w,
+  Yw: () => O
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
+  Chunk856901 = require("./856901.js"),
   Chunk268146 = require("./268146.js"),
   Chunk442837 = require("./442837.js"),
   Chunk579806 = require("./579806.js"),
@@ -19,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk37113 = require("./37113.js"),
   Chunk761274 = require("./761274.js");
 
-function _(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +41,7 @@ function _(e) {
   return e
 }
 
-function g(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +53,7 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = {
+let b = {
     screenSources: [],
     windowSources: [],
     deviceSources: [],
@@ -69,73 +72,81 @@ let x = {
     nativeSourceType: "",
     discordSourceId: ""
   },
-  v = Chunk647438.createContext(x),
-  j = Chunk647438.createContext(() => {
+  S = Chunk647438.createContext(b),
+  y = Chunk647438.createContext(() => {
     throw Error("Using uninitialized GoLiveModalContextDispatch")
   });
 
-function b(e, t) {
+function C(e, t) {
+  var n, r, i;
   switch (t.type) {
     case "set_mute_audio":
-      return g(_({}, e), {
+      return j(v({}, e), {
         muteStreamAudio: t.value
       });
     case "set_notify_friends":
-      return g(_({}, e), {
+      return j(v({}, e), {
         notifyFriends: t.value
       });
     case "set_has_permission":
-      return g(_({}, e), {
+      return j(v({}, e), {
         hasPermission: t.value
       });
     case "set_source_candidates":
-      return g(_({}, e), {
+      return j(v({}, e), {
         screenSources: t.screenSources,
         windowSources: t.windowSources,
         deviceSources: t.deviceSources,
         fetchingSources: false
       });
     case "set_preset":
-      return g(_({}, e), {
+      return j(v({}, e), {
         preset: t.preset
       });
     case "set_source_type":
-      let n = {
+      let l = {
         sourceType: t.sourceType,
         selectedSource: true
       };
-      return t.sourceType === l.vA.CAMERA && ((e.preset === h.ApplicationStreamPresets.PRESET_DOCUMENTS || e.preset === h.ApplicationStreamPresets.PRESET_AUTO) && (n.preset = h.ApplicationStreamPresets.PRESET_VIDEO), e.resolution === h.ApplicationStreamResolutions.RESOLUTION_SOURCE && (n.resolution = h.ApplicationStreamResolutions.RESOLUTION_720)), _({}, e, n);
+      return t.sourceType === a.vA.CAMERA ? ((e.preset === g.ApplicationStreamPresets.PRESET_DOCUMENTS || e.preset === g.ApplicationStreamPresets.PRESET_AUTO) && (l.preset = g.ApplicationStreamPresets.PRESET_VIDEO), e.resolution === g.ApplicationStreamResolutions.RESOLUTION_SOURCE && (l.resolution = g.ApplicationStreamResolutions.RESOLUTION_720)) : l.selectedSource = null, v({}, e, l);
     case "set_native_source_type":
-      return g(_({}, e), {
+      return j(v({}, e), {
         nativeSourceType: t.sourceType
       });
     case "set_resolution":
-      return g(_({}, e), {
+      return j(v({}, e), {
         resolution: t.resolution
       });
     case "set_fps":
-      return g(_({}, e), {
+      return j(v({}, e), {
         fps: t.fps
       });
     case "set_hide_preview":
-      return g(_({}, e), {
+      return j(v({}, e), {
         hidePreview: t.hidePreview
       });
-    case "set_selected_source":
-      return g(_({}, e), {
-        selectedSource: t.source
-      });
+    case "set_selected_source": {
+      let i = t.source,
+        l = j(v({}, e), {
+          selectedSource: i
+        }),
+        c = null == i ? true : i.name;
+      if (null != i && (null == (n = i.id) ? true : n.startsWith(a.vA.CAMERA)) && null != c) {
+        let e = o().maxBy(Object.values(h.Z.getInputDevices()), e => (0, s.default)(c, e.name));
+        l.audioSourceId = null != (r = null == e ? true : e.id) ? r : h.Z.getInputDeviceId()
+      }
+      return l
+    }
     case "set_audio_source":
-      var r;
-      return g(_({}, e), {
-        audioSourceId: null != (r = t.audioSourceId) ? r : u.Z.getInputDeviceId()
+      return j(v({}, e), {
+        audioSourceId: null != (i = t.audioSourceId) ? i : h.Z.getInputDeviceId()
       });
     case "set_selected_channel":
-      return g(_({}, e), {
+      return j(v({}, e), {
         selectedChannel: t.channelId
       });
     case "set_discord_source_id":
-      return g(_({}, e), {
+      return j(v({}, e), {
         discordSourceId: t.sourceId
       });
     default:
@@ -143,44 +154,44 @@ function b(e, t) {
   }
 }
 
-function S(e) {
+function O(e) {
   let {
     dispatch: t,
     state: n,
     children: i
   } = e;
-  return (0, r.jsx)(j.Provider, {
+  return (0, r.jsx)(y.Provider, {
     value: t,
-    children: (0, r.jsx)(v.Provider, {
+    children: (0, r.jsx)(S.Provider, {
       value: n,
       children: i
     })
   })
 }
 
-function y(e, t, n) {
+function w(e, t, n) {
   var r, l;
   let {
-    defaultAutoQuality: v,
-    allowAutoQuality: j
-  } = (0, f._I)({
+    defaultAutoQuality: o,
+    allowAutoQuality: s
+  } = (0, m._I)({
     location: "useCreateGoLiveModalState"
   }), {
-    preset: S,
-    resolution: y,
-    fps: C,
+    preset: a,
+    resolution: S,
+    fps: y,
     soundshareEnabled: O
-  } = (0, o.cj)([d.Z], () => d.Z.getState());
-  v && (S = h.ApplicationStreamPresets.PRESET_AUTO);
-  let w = (0, o.e7)([u.Z], () => u.Z.getInputDeviceId()),
-    P = null != (r = c.I0.useSetting()) && r,
-    T = null != (l = c.eo.useSetting()) && l;
-  S in h.ApplicationStreamPresets && (S !== h.ApplicationStreamPresets.PRESET_AUTO || j) || (S = h.ApplicationStreamPresets.PRESET_VIDEO), (0, p.Z)(h.ApplicationStreamPresets.PRESET_CUSTOM, y, C, t, n) || (y = h.ApplicationStreamResolutions.RESOLUTION_720, C = h.ApplicationStreamFPS.FPS_30);
-  let [Z, I] = i.useReducer(b, g(_({}, x), {
+  } = (0, c.cj)([p.Z], () => p.Z.getState());
+  o && (a = g.ApplicationStreamPresets.PRESET_AUTO);
+  let w = (0, c.e7)([h.Z], () => h.Z.getInputDeviceId()),
+    P = null != (r = f.I0.useSetting()) && r,
+    T = null != (l = f.eo.useSetting()) && l;
+  a in g.ApplicationStreamPresets && (a !== g.ApplicationStreamPresets.PRESET_AUTO || s) || (a = g.ApplicationStreamPresets.PRESET_VIDEO), (0, _.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, S, y, t, n) || (S = g.ApplicationStreamResolutions.RESOLUTION_720, y = g.ApplicationStreamFPS.FPS_30);
+  let [Z, I] = i.useReducer(C, j(v({}, b), {
     muteStreamAudio: !O,
-    preset: S,
-    resolution: y,
-    fps: C,
+    preset: a,
+    resolution: S,
+    fps: y,
     hidePreview: P,
     notifyFriends: T,
     selectedSource: e,
@@ -188,12 +199,12 @@ function y(e, t, n) {
   }));
   return i.useEffect(() => {
     var e, t;
-    a.Z.hasPermission(m.Eu.SCREEN_RECORDING, {
+    u.Z.hasPermission(x.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
     }).then(e => I({
       type: "set_has_permission",
       value: e
-    })), null == (e = (t = s.Z.window).getMediaSourceId) || e.call(t).then(e => {
+    })), null == (e = (t = d.Z.window).getMediaSourceId) || e.call(t).then(e => {
       I({
         type: "set_discord_source_id",
         sourceId: null != e ? e : ""
@@ -205,6 +216,6 @@ function y(e, t, n) {
   }
 }
 
-function C() {
-  return [Chunk647438.useContext(v), Chunk647438.useContext(j)]
+function P() {
+  return [Chunk647438.useContext(S), Chunk647438.useContext(y)]
 }

@@ -28,19 +28,19 @@ function m(e) {
   }, [v]);
   return x <= 0 ? null : (0, r.jsxs)("div", {
     className: f.container,
-    children: [(0, r.jsx)(o.Mgn, {
+    children: [(0, r.jsx)(l.Mgn, {
       color: s.Z.colors.TEXT_FEEDBACK_WARNING,
       className: f.icon
-    }), (0, r.jsx)(l.xvT, {
+    }), (0, r.jsx)(o.xvT, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",
       children: p.intl.string(d.default.n5hQhc)
-    }), (0, r.jsxs)(l.xvT, {
+    }), (0, r.jsxs)(o.xvT, {
       variant: "text-sm/medium",
       children: [p.intl.formatToPlainString(d.default.iAaAiG, {
         boostCount: x,
         perksString: n.join(", ")
-      }), null == m ? true : m.map((e, t) => (0, r.jsx)(l.xvT, {
+      }), null == m ? true : m.map((e, t) => (0, r.jsx)(o.xvT, {
         variant: "text-sm/medium",
         color: "text-feedback-warning",
         className: f.warning,

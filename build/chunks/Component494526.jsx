@@ -30,9 +30,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk819286 = require("./819286.js"),
   Chunk197571 = require("./197571.js");
 let Chunk515695 = require("./515695.js"),
-  A = new Chunk710845.Z("LoginQRSocket");
+  T = new Chunk710845.Z("LoginQRSocket");
 
-function T(e) {
+function A(e) {
   let {
     text: t = ""
   } = e, [n, s] = i.useState(false);
@@ -92,7 +92,7 @@ function P(e) {
     case 0:
     case 1:
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(T, {
+        children: [(0, r.jsx)(A, {
           text: 1 === t.step ? "https://discord.com/ra/".concat(t.fingerprint) : ""
         }), (0, r.jsx)(m.Dx, {
           className: O.marginBottom8,
@@ -173,21 +173,21 @@ function R(e) {
     }), [c, u] = i.useState(null), d = (0, h.Z)(), m = i.useMemo(() => new l.Z(1500, 3e4), []), p = (0, g.Z)(() => {
       o({
         step: 0
-      }), d ? n(e => e + 1) : (A.info("document is not visible, will defer reconnection when document becomes visible."), s(true))
+      }), d ? n(e => e + 1) : (T.info("document is not visible, will defer reconnection when document becomes visible."), s(true))
     }), f = i.useCallback(() => {
-      A.error("Could not complete QR code login, trying to restart with a new QR code."), o({
+      T.error("Could not complete QR code login, trying to restart with a new QR code."), o({
         step: 0
       }), m.pending || m.fail(p)
     }, [p, m]);
     return i.useEffect(() => {
-      d && r && 0 === a.step && (A.info("reconnecting, now that document is visible"), s(false), n(e => e + 1))
+      d && r && 0 === a.step && (T.info("reconnecting, now that document is visible"), s(false), n(e => e + 1))
     }, [a, d, r, s]), i.useEffect(() => {
       let t = Date.now(),
         n = "".concat(window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT, "/?v=2");
       n.startsWith("//") && (n = "wss:".concat(n));
       let r = new WebSocket(n);
-      A.info("[0ms] connecting to ".concat(n));
-      let i = e => A.info("[".concat("".concat(Date.now() - t, "ms"), "] ").concat(e)),
+      T.info("[0ms] connecting to ".concat(n));
+      let i = e => T.info("[".concat("".concat(Date.now() - t, "ms"), "] ").concat(e)),
         s = null,
         l = null,
         a = null,

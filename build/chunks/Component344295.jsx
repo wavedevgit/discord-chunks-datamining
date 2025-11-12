@@ -68,8 +68,8 @@ function W(e) {
 }
 Chunk442837.ZP.initialize();
 let H = "Accept Invite Page",
-  z = "register",
-  K = "login",
+  K = "register",
+  z = "login",
   q = e => {
     var {
       className: t
@@ -137,7 +137,7 @@ class J extends Chunk647438.PureComponent {
     } = this.props, s = this.getInviteKey();
     if (s !== this.getInviteKey(e)) Y(s);
     else if (t.state === D.r2o.APP_NOT_OPENED) this.handleContinue();
-    else if (this.getMode() === K && r !== e.authenticated && r) {
+    else if (this.getMode() === z && r !== e.authenticated && r) {
       let e = S.default.getFingerprint();
       if (null != e) {
         let t = (0, o.s)(e);
@@ -152,14 +152,14 @@ class J extends Chunk647438.PureComponent {
         callback: this.handleContinue
       })
     }
-    if (n !== e.nativeAppState && n === D.kEZ.OPEN && this.track(D.rMx.INVITE_APP_INVOKED, false), this.getMode() === z && r && !e.authenticated) {
+    if (n !== e.nativeAppState && n === D.kEZ.OPEN && this.track(D.rMx.INVITE_APP_INVOKED, false), this.getMode() === K && r && !e.authenticated) {
       let {
         channel: e
       } = t;
       if (null != e)
         if ((0, b.c)(M.M5.INVITE_UNCLAIMED), null != t.guild) {
           var l, c, u;
-          let e = (0, A.yE)(null != (u = t.flags) ? u : 0, a.$.IS_APPLICATION_BYPASS),
+          let e = (0, T.yE)(null != (u = t.flags) ? u : 0, a.$.IS_APPLICATION_BYPASS),
             n = (null == (l = t.guild.features) ? true : l.includes(D.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (c = t.guild.features) ? true : c.includes(D.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL));
           i(!e && n ? D.Z5c.GUILD_MEMBER_VERIFICATION(t.guild.id) : D.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
         } else h.ZP.transitionToInvite(t, i)
@@ -171,7 +171,7 @@ class J extends Chunk647438.PureComponent {
   }
   getMode() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props;
-    return Chunk188785.a ? z : module.login ? K : z
+    return Chunk188785.a ? K : module.login ? z : K
   }
   track(e, t, n) {
     let {
@@ -298,7 +298,7 @@ class J extends Chunk647438.PureComponent {
         var l;
         if (require && (0, Chunk630388.yE)(null != (l = module.flags) ? l : 0, Chunk533800.$.IS_GUEST_INVITE)) return Chunk447543.ZP.openApp(module.code), Chunk298444.x.set(Chunk978684.J, module.code), this.renderAppOpened(() => Chunk647438(Chunk981631.Z5c.APP));
         if (require || !Chunk436620.KO) return this.renderAuthenticatedOrDownload();
-        if (this.getMode() === K) return (0, Chunk951288.jsx)(Chunk781428.Z, {
+        if (this.getMode() === z) return (0, Chunk951288.jsx)(Chunk781428.Z, {
           invite: module,
           transitionTo: Chunk647438,
           location: Chunk120356

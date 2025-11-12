@@ -16,4 +16,4 @@ n = {
     u > 0 && (i.set(c, u - 1), s++)
   }
   return 2 * s / (e.length + t.length - (n - 1) * 2)
-}, exports.stringSimilarity
+}, exports.default = exports.stringSimilarity

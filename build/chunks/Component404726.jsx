@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   v: () => d
-}), require("./388685.js");
+}), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk943239 = require("./943239.js"),
-  Chunk995803 = require("./995803.js"),
+  Chunk902778 = require("./902778.js"),
+  Chunk948890 = require("./948890.js"),
   Chunk150677 = require("./150677.js"),
   Chunk213305 = require("./213305.js"),
   Chunk402453 = require("./402453.jsx"),
@@ -119,44 +119,78 @@ function f(e) {
   (0, o.useViewModelInstance)(d);
   let {
     theme: f,
-    saturation: _
+    saturation: p
   } = (0, c.ZF)(), {
-    highContrastModeEnabled: p
-  } = i.useContext(l.S), h = i.useRef(null);
+    highContrastModeEnabled: h
+  } = i.useContext(l.S), m = i.useRef(null), g = _();
   i.useEffect(() => {
-    if (null == t || null == t.viewModelInstance || null == u) return;
-    let e = r[null != n ? n : ""];
-    Object.entries(u).forEach(n => {
-      var r, i, a, o, s, l, c, u;
-      let [d, m] = n, g = "object" == typeof m && "type" in m, E = g ? m.type : e[d], b = g ? m.value : m;
-      switch (E) {
-        case "color":
-          let [y, O, v, I] = b.resolve({
-            theme: f,
-            saturation: _,
-            highContrastModeEnabled: p
-          }).rgba();
-          null == (i = t.viewModelInstance) || null == (r = i.color(d)) || r.rgba(y, O, v, 255 * I);
-          break;
-        case "number":
-          let S = null == (a = t.viewModelInstance) ? true : a.number(d);
-          null != S && (S.value = b);
-          break;
-        case "boolean":
-          let T = null == (o = t.viewModelInstance) ? true : o.boolean(d);
-          null != T && (T.value = b);
-          break;
-        case "trigger":
-          null != b && ("boolean" == typeof b ? b : 0 !== b) && (null == (s = h.current) ? true : s[d]) !== b && (null == (c = t.viewModelInstance) || null == (l = c.trigger(d)) || l.trigger());
-          break;
-        case "string":
-          let A = null == (u = t.viewModelInstance) ? true : u.string(d);
-          null != A && (A.value = b);
-          break;
-        default:
-          console.warn("Unknown property type: ".concat(E))
+    let e = new AbortController;
+    return async function() {
+      if (null == t || null == t.viewModelInstance || null == u) return;
+      let i = r[null != n ? n : ""];
+      for (let n of Object.entries(u)) {
+        var a, o, s, l, c, d, _, E, b;
+        if (e.signal.aborted) return;
+        let r = n[0],
+          u = n[1],
+          y = null != u && "object" == typeof u && "type" in u,
+          O = y ? u.type : i[r],
+          v = y ? u.value : u;
+        switch (O) {
+          case "color":
+            let [I, S, T, A] = v.resolve({
+              theme: f,
+              saturation: p,
+              highContrastModeEnabled: h
+            }).rgba();
+            null == (o = t.viewModelInstance) || null == (a = o.color(r)) || a.rgba(I, S, T, 255 * A);
+            break;
+          case "number":
+            let C = null == (s = t.viewModelInstance) ? true : s.number(r);
+            null != C && (C.value = v);
+            break;
+          case "boolean":
+            let N = null == (l = t.viewModelInstance) ? true : l.boolean(r);
+            null != N && (N.value = v);
+            break;
+          case "trigger":
+            null != v && ("boolean" == typeof v ? v : 0 !== v) && (null == (c = m.current) ? true : c[r]) !== v && (null == (_ = t.viewModelInstance) || null == (d = _.trigger(r)) || d.trigger());
+            break;
+          case "string":
+            let R = null == (E = t.viewModelInstance) ? true : E.string(r);
+            null != R && (R.value = v);
+            break;
+          case "image":
+            if (null != v) {
+              let n = await g(v, e.signal);
+              if (e.signal.aborted) return;
+              let i = null == (b = t.viewModelInstance) ? true : b.image(r);
+              null != i && (i.value = n)
+            }
+            break;
+          default:
+            console.warn("Unknown property type: ".concat(O))
+        }
       }
-    }), h.current = u
-  }, [u, t, n, r, f, null == t ? true : t.viewModelInstance, _, p])
+    }(), () => {
+      e.abort(), m.current = u
+    }
+  }, [u, t, n, r, f, null == t ? true : t.viewModelInstance, p, h, g])
 }
-Chunk995803.RuntimeLoader.setWasmUrl(Chunk943239)
+
+function _() {
+  let e = Chunk647438.useRef({});
+  return Chunk647438.useCallback(async (t, n) => {
+    if ("string" != typeof t) return Promise.resolve(t);
+    {
+      if (null != e.current[t]) return Promise.resolve(e.current[t]);
+      let r = await fetch(t, {
+          signal: n
+        }),
+        i = await r.arrayBuffer(),
+        a = await (0, o.decodeImage)(new Uint8Array(i));
+      return e.current[t] = a, a
+    }
+  }, [])
+}
+Chunk948890.RuntimeLoader.setWasmUrl(Chunk902778)

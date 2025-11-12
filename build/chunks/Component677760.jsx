@@ -88,7 +88,7 @@ let C = e => {
   }
 };
 
-function A(e) {
+function T(e) {
   let {
     invite: t,
     onAcceptInvite: n
@@ -104,7 +104,7 @@ function A(e) {
   })
 }
 
-function T(e) {
+function A(e) {
   var {
     children: t,
     cardChildren: n,
@@ -156,7 +156,7 @@ function Z(e) {
   let {
     invite: t
   } = e;
-  return null != t && (0, E.JI)(t) ? (0, r.jsx)(T, N(S({
+  return null != t && (0, E.JI)(t) ? (0, r.jsx)(A, N(S({
     startAnimHeightPx: 0,
     innerStyle: () => y.guildInfoInner
   }, e), {
@@ -174,7 +174,7 @@ function P(e) {
     2: y.inviteCardInnerError,
     0: y.inviteCardInnerLoading
   };
-  return (0, r.jsx)(T, N(S({
+  return (0, r.jsx)(A, N(S({
     startAnimHeightPx: 200,
     innerStyle: e => n[e]
   }, e), {
@@ -186,7 +186,7 @@ function P(e) {
             invite: t
           }));
         case 2:
-          return (0, r.jsx)(A, N(S({}, e), {
+          return (0, r.jsx)(T, N(S({}, e), {
             invite: t
           }));
         default:

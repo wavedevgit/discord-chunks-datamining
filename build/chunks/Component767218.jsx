@@ -23,15 +23,15 @@ function p(e) {
     className: u.container,
     children: [(0, i.jsxs)("div", {
       className: u.headerContainer,
-      children: [(0, i.jsx)(o.Ucv, {
+      children: [(0, i.jsx)(l.Ucv, {
         size: "sm",
         color: 0 !== n ? a.Z.colors.HEADER_MUTED : a.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
-      }), (0, i.jsx)(l.X6q, {
+      }), (0, i.jsx)(o.X6q, {
         color: 0 !== n ? "header-muted" : "header-primary",
         variant: "heading-lg/semibold",
         children: t
       })]
-    }), (0, i.jsx)(l.xvT, {
+    }), (0, i.jsx)(o.xvT, {
       color: "header-muted",
       variant: "text-sm/medium",
       children: (() => {

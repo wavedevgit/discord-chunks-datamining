@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -29,7 +29,7 @@ function w(e) {
     guildId: t
   } = e, {
     state: n,
-    lowestGameServerCost: o
+    lowestGameServerCost: l
   } = (0, s.cj)([f.Z], () => ({
     state: f.Z.getStateForGuild(t),
     lowestGameServerCost: f.Z.getLowestGameCostForGuild(t)
@@ -55,17 +55,17 @@ function w(e) {
     children: [(0, r.jsxs)("div", {
       className: j.imageContainer,
       children: [(0, r.jsx)("img", {
-        className: l()(h.background, b.image, j.image),
+        className: o()(h.background, b.image, j.image),
         src: C.Z,
         alt: ""
       }), (0, r.jsx)("div", {
-        className: l()(b.image, j.gradient)
+        className: o()(b.image, j.gradient)
       })]
     }), (0, r.jsx)(d.Q9, {
       title: _.intl.string(x.default["B3OfL/"]),
       textColor: E,
       footer: (0, r.jsx)(d.uf, {
-        cost: null != o ? o : 0,
+        cost: null != l ? l : 0,
         costDecorator: "+",
         status: I
       }),
@@ -79,7 +79,7 @@ function w(e) {
       children: (0, r.jsx)(c.Button, {
         variant: "primary",
         fullWidth: true,
-        text: _.intl.string(x.default.PuvU5b),
+        text: Object.values(n.entitlements).length > 0 ? _.intl.string(x.default.PuvU5b) : _.intl.string(x.default.b62EHM),
         onClick: e => {
           e.stopPropagation(), (0, g.Z)({
             guildId: t,

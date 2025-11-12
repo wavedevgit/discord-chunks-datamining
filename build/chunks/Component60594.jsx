@@ -122,8 +122,8 @@ function es(e) {
     resolution: eu,
     fps: ef,
     soundshareEnabled: ep
-  } = (0, f.cj)([T.Z], () => T.Z.getState()), eh = i.useRef(null), em = i.useRef(Date.now()), e_ = (0, f.e7)([N.Z, Z.Z], () => Z.Z.getChannel(N.Z.getVoiceChannelId())), eg = (0, f.e7)([C.ZP, A.Z], () => (0, D.isWindows)() ? (0, W.Z)(C.ZP, A.Z) : null), ex = (0, f.e7)([R.default], () => {
-    let e = R.default.getCurrentUser();
+  } = (0, f.cj)([T.Z], () => T.Z.getState()), eh = i.useRef(null), em = i.useRef(Date.now()), e_ = (0, f.e7)([N.Z, Z.Z], () => Z.Z.getChannel(N.Z.getVoiceChannelId())), eg = (0, f.e7)([C.ZP, R.Z], () => (0, D.isWindows)() ? (0, W.Z)(C.ZP, R.Z) : null), ex = (0, f.e7)([A.default], () => {
+    let e = A.default.getCurrentUser();
     return a()(null != e, "GoLiveModal: user cannot be undefined"), e
   }), ev = null != (t = null == e_ ? true : e_.getGuildId()) ? t : K, ej = (0, f.e7)([I.Z], () => {
     var e;
@@ -139,8 +139,8 @@ function es(e) {
   ed !== q.ApplicationStreamPresets.PRESET_CUSTOM && (eu = eb, ef = eS), (0, G.Z)(ed, eu, ef, ex, ej) || (eu = eb, ef = eS);
   let eZ = (0, S.Dt)(),
     [eI, eE] = i.useState((w = L && !eO, k ? 0 : w ? 2 : 3)),
-    [eN, eR] = i.useState(eO),
-    [eA, eM] = i.useState(null),
+    [eN, eA] = i.useState(eO),
+    [eR, eM] = i.useState(null),
     [ek, eD] = i.useState(eO ? {
       id: "prepicked:",
       name: et.intl.string(et.t.KKcy95),
@@ -153,12 +153,12 @@ function es(e) {
     [eV, eJ] = i.useState(ep),
     [eX, eK] = i.useState(null != (s = P.I0.getSetting()) && s),
     [eY, eq] = i.useState(null != K ? K : null),
-    eQ = null != (d = null == e_ ? true : e_.id) ? d : eA,
+    eQ = null != (d = null == e_ ? true : e_.id) ? d : eR,
     [e$, e1] = i.useState(eO ? "" : true);
   async function e0() {
     var e, t;
     a()(null != eg || null != ek, "got nothing to stream");
-    let n = null != (e = null == e_ ? true : e_.id) ? e : eA;
+    let n = null != (e = null == e_ ? true : e_.id) ? e : eR;
     a()(null != n, "Received null target channel ID");
     let r = Z.Z.getChannel(n),
       i = null != (t = null == r ? true : r.getGuildId()) ? t : K;
@@ -200,7 +200,7 @@ function es(e) {
     e0(), ea()
   }
   i.useEffect(() => {
-    let e = (0, D.isWindows)() ? (0, W.Z)(C.ZP, A.Z) : null,
+    let e = (0, D.isWindows)() ? (0, W.Z)(C.ZP, R.Z) : null,
       t = (null == e ? true : e.id) != null ? j.Z.getApplication(e.id) : null;
     M.default.track(Q.rMx.OPEN_MODAL, {
       type: "Go Live Modal",
@@ -215,7 +215,7 @@ function es(e) {
       let i = (0, U.Z)(e, ex, ej),
         [l, o] = null != i ? i : [t, n];
       e !== eG && (t = l, n = o);
-      let s = null != (r = null == e_ ? true : e_.id) ? r : eA;
+      let s = null != (r = null == e_ ? true : e_.id) ? r : eR;
       a()(null != s, "Received null target channel ID");
       let c = Z.Z.getChannel(s);
       if (!(0, G.Z)(e, t, n, ex, ej, c)) {
@@ -223,7 +223,7 @@ function es(e) {
         t = e, n = r
       }
       n !== eW && ez(n), t !== eF && eH(t), l !== t || o !== n ? eU(q.ApplicationStreamPresets.PRESET_CUSTOM) : e !== eG && eU(e)
-    }, [e_, eA, ex, ej, eW, eF, eG]),
+    }, [e_, eR, ex, ej, eW, eF, eG]),
     e3 = i.useCallback(e => {
       (0, F.t)(), (0, F.T)(null != e ? e : e$)
     }, [e$]);
@@ -248,7 +248,7 @@ function es(e) {
     } else e2()
   }
   let e4 = i.useCallback(e => {
-      eD(e), null != e && (eC && (null == e ? true : e.id.startsWith("camera:")) !== true ? e1(e.id.split(":")[1]) : e1(true), eE(3), eR(true))
+      eD(e), null != e && (eC && (null == e ? true : e.id.startsWith("camera:")) !== true ? e1(e.id.split(":")[1]) : e1(true), eE(3), eA(true))
     }, [eC]),
     e7 = i.useCallback(e => {
       eq(e);
@@ -412,7 +412,7 @@ function es(e) {
                 children: (0, r.jsx)("div", {
                   className: en.modalSize,
                   children: (0, r.jsx)(z.default, {
-                    selectedChannelId: null != (e = null == e_ ? true : e_.id) ? e : eA,
+                    selectedChannelId: null != (e = null == e_ ? true : e_.id) ? e : eR,
                     selectedPreset: eG,
                     selectedResolution: eF,
                     selectedSource: ek,

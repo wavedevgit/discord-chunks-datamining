@@ -21,10 +21,10 @@ var Chunk951288 = require("./951288.js"),
 function x(e) {
   let {
     guildId: t
-  } = e, n = (0, l.Wu)([c.Z], () => {
+  } = e, n = (0, o.Wu)([c.Z], () => {
     var e;
     return null != (e = c.Z.getAppliedGuildBoostsForGuild(t)) ? e : []
-  }, [t]), x = i.useMemo(() => n.sort((e, t) => f.default.extractTimestamp(e.id) < f.default.extractTimestamp(t.id) ? 1 : false), [n]), _ = (0, l.Wu)([d.ZP], () => {
+  }, [t]), x = i.useMemo(() => n.sort((e, t) => f.default.extractTimestamp(e.id) < f.default.extractTimestamp(t.id) ? 1 : false), [n]), _ = (0, o.Wu)([d.ZP], () => {
     let e = new Set;
     return x.forEach(n => {
       null == d.ZP.getMember(t, n.userId) && e.add(n.userId)
@@ -37,19 +37,19 @@ function x(e) {
     [t]: _
   } : {}, [t, _]);
   (0, s.$)(b, "GuildPowerupsRecentActivity");
-  let h = (0, l.e7)([p.Z], () => {
+  let h = (0, o.e7)([p.Z], () => {
     var e;
     return null == (e = p.Z.getGuild(t)) ? true : e.premiumSubscriberCount
   });
   return (i.useEffect(() => {
     h !== n.length && (0, a.C0)(t)
   }, [t, h, n.length]), 0 === x.length) ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.X6q, {
+    children: [(0, r.jsx)(l.X6q, {
       className: v.header,
       variant: "eyebrow",
       color: "text-secondary",
       children: g.intl.string(g.t.yM9Krm)
-    }), (0, r.jsx)(o.zJl, {
+    }), (0, r.jsx)(l.zJl, {
       className: v.container,
       fade: true,
       children: x.map((e, t) => (0, r.jsx)(m.Z, {

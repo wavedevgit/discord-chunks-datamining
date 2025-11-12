@@ -109,14 +109,14 @@ function I(e) {
     smarterSourceOrdering: N
   } = (0, j.E)({
     location: "GoLiveSourceGrid"
-  }), R = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), A = (0, d.cj)([p.ZP], () => {
+  }), A = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), R = (0, d.cj)([p.ZP], () => {
     let e = p.ZP.getCandidateGames(),
       t = {};
     for (let n of e) null != n.windowHandle && (t[n.windowHandle] = n.exeName);
     return t
-  }), M = (0, d.e7)([_.Z], () => _.Z.quests), k = (0, S.jx)(M, R, n);
+  }), M = (0, d.e7)([_.Z], () => _.Z.quests), k = (0, S.jx)(M, A, n);
   i.useEffect(() => ((0, h.Ky)(), h.P7), []);
-  let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, S.ov)(t, null == k ? true : k.source.id, T, A) - (0, S.ov)(e, null == k ? true : k.source.id, T, A)) : n, [k, N, n, T, A]);
+  let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, S.ov)(t, null == k ? true : k.source.id, T, R) - (0, S.ov)(e, null == k ? true : k.source.id, T, R)) : n, [k, N, n, T, R]);
   if (g) {
     if (false === I) {
       let e = false;

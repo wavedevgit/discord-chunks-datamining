@@ -9,10 +9,10 @@ var Chunk647438 = require("./647438.js"),
   Chunk60482 = require("./60482.js");
 
 function a(e) {
-  let t = (0, i.e7)([l.Z], () => l.Z.getStateForGuild(e));
+  let t = (0, i.e7)([o.Z], () => o.Z.getStateForGuild(e));
   return r.useMemo(() => {
     var e;
     let n = Object.values(null != (e = null == t ? true : t.entitlements) ? e : {});
-    return 0 === n.length ? [] : (0, o.h)(n)
+    return 0 === n.length ? [] : (0, l.h)(n)
   }, [null == t ? true : t.entitlements])
 }

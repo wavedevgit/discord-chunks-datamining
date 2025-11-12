@@ -69,7 +69,7 @@ function w() {
     audioSourceId: Z
   }] = (0, Chunk615161.E_)(), [I, E] = (0, Chunk72897.Ls)(Chunk65154.h7.AUDIO_INPUT, {
     location: "StreamSettingsSummary"
-  }), N = I.concat(E), [R, A] = null != (n = (0, Chunk396678.Z)(Chunk728345)) ? require : [Chunk925329, Chunk556389], M = (0, Chunk672811.L)(Chunk728345), k = (0, Chunk891180.M)(R), D = T === Chunk268146.vA.CAMERA, B = null != P, L = null != P ? null == P || null == (e = P.id) ? true : module.startsWith(Chunk268146.vA.CAMERA) : D, G = Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_AUTO, U = B ? true : Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_VIDEO ? Chunk388032.intl.string(Chunk529822.default.MuHUFe) : Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_DOCUMENTS ? Chunk388032.intl.string(Chunk529822.default.y0JuYR) : Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_AUTO ? Chunk388032.intl.string(Chunk529822.default.m4jtlc) : true, F = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getUseSystemScreensharePicker() && (0, Chunk358085.isLinux)());
+  }), N = I.concat(E), [A, R] = null != (n = (0, Chunk396678.Z)(Chunk728345)) ? require : [Chunk925329, Chunk556389], M = (0, Chunk672811.L)(Chunk728345), k = (0, Chunk891180.M)(A), D = T === Chunk268146.vA.CAMERA, B = null != P, L = null != P ? null == P || null == (e = P.id) ? true : module.startsWith(Chunk268146.vA.CAMERA) : D, G = Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_AUTO, U = B ? true : Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_VIDEO ? Chunk388032.intl.string(Chunk529822.default.MuHUFe) : Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_DOCUMENTS ? Chunk388032.intl.string(Chunk529822.default.y0JuYR) : Chunk728345 === Chunk37113.ApplicationStreamPresets.PRESET_AUTO ? Chunk388032.intl.string(Chunk529822.default.m4jtlc) : true, F = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getUseSystemScreensharePicker() && (0, Chunk358085.isLinux)());
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk214795.root,
     children: [B && (0, Chunk951288.jsx)(O, {
@@ -100,7 +100,7 @@ function w() {
           children: [(0, Chunk951288.jsx)(C, {}), (0, Chunk951288.jsx)("span", {
             children: k
           }), (0, Chunk951288.jsx)(C, {}), (0, Chunk951288.jsx)("span", {
-            children: "".concat(A, "fps")
+            children: "".concat(R, "fps")
           })]
         }), w && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)(C, {}), (0, Chunk951288.jsxs)("span", {

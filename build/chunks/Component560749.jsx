@@ -102,7 +102,7 @@ function E(e) {
     let e = new Set(y.map(e => e.id)),
       t = new Set(S.map(e => e.id));
     return [...S.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, u.Z)(e.id)).filter(C.lm), ...y.filter(e => !t.has(e.id)).map(e => (0, u.Z)(e.id)).filter(C.lm)]
-  }, [y, S]), R = "" !== a ? m : E;
+  }, [y, S]), A = "" !== a ? m : E;
   return (0, r.jsxs)("div", {
     className: o()(Z.root, n),
     children: [(0, r.jsx)("div", {
@@ -120,7 +120,7 @@ function E(e) {
         }),
         autoFocus: true
       })
-    }), R.length > 0 ? (0, r.jsx)(c.aVo, {
+    }), A.length > 0 ? (0, r.jsx)(c.aVo, {
       renderListHeader: function() {
         return (0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
@@ -128,13 +128,13 @@ function E(e) {
           children: T.intl.string(P.default.FZ9Fl7)
         })
       },
-      sections: [R.length],
+      sections: [A.length],
       sectionHeight: 0,
       rowHeight: 48,
       renderRow: function(e) {
         let {
           rowIndex: n
-        } = e, i = R[n];
+        } = e, i = A[n];
         return (0, r.jsx)(I, {
           result: i,
           onSelectChannel: t

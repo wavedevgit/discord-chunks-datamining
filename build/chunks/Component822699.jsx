@@ -367,8 +367,8 @@ let eC = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk
     isAuthenticated: C.default.isAuthenticated(),
     giftCode: c,
     guildTemplateCode: u,
-    gift: null != c ? A.Z.get(c) : null,
-    invite: null != o ? T.Z.getInvite(o) : null,
+    gift: null != c ? T.Z.get(c) : null,
+    invite: null != o ? A.Z.getInvite(o) : null,
     guildTemplate: null != u ? j.Z.getGuildTemplate(u) : null,
     hasLoadedExperiments: v.Z.hasLoadedExperiments
   }

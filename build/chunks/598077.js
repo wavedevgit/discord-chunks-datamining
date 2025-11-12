@@ -162,6 +162,10 @@ class O extends Chunk81825.Z {
     var e;
     return (0, Chunk111361.I5)(this, Chunk474936.PremiumTypes.TIER_2) && (null == (e = this.premiumState) ? true : module.premiumSource) === Chunk813820.d3.SUBSCRIPTION_GROUP
   }
+  isFractionalPremiumWithNoSubscription() {
+    var e;
+    return (0, Chunk111361.I5)(this, Chunk474936.PremiumTypes.TIER_2) && (null == (e = this.premiumState) ? true : module.premiumSource) === Chunk813820.d3.FRACTIONAL_NITRO && this.premiumState.premiumSubscriptionType !== Chunk813820.W$.TIER_2
+  }
   hasUrgentMessages() {
     return this.hasFlag(Chunk981631.xW$.HAS_UNREAD_URGENT_MESSAGES)
   }

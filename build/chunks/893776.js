@@ -333,12 +333,15 @@ let w = {
     l.Z.dispatch({
       type: "LOGIN"
     });
-    let t = (await o.tn.post({
+    let t = (await g.Z.post({
       url: b.ANM.ONE_TIME_LOGIN,
       body: {
         ticket: e
       },
       oldFormErrors: true,
+      trackedActionData: {
+        event: i.NetworkActionNames.USER_ONE_TIME_LOGIN
+      },
       rejectWithError: true
     })).body.token;
     if (!t) throw Error("No token in response");

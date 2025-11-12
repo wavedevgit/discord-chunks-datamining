@@ -106,7 +106,7 @@ function W(e) {
     enableGoLiveCaptureCard: l
   } = O.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), s = S.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, p] = i.useState(null), [x, j] = i.useState(null), [y, C] = i.useState(null), w = null != y && y.length > 0, [P, T] = i.useState(c.vA.WINDOW), [I, E] = i.useState(false), R = i.useRef(null), M = i.useRef(new u.Xp), D = (0, d.e7)([_.ZP], () => _.ZP.getRunningGames()), U = H((0, d.e7)([v.Z], () => v.Z.quests), D, x), W = i.useMemo(() => null == x ? null : [...x].sort((e, t) => F(t, null == U ? true : U.source.id) - F(e, null == U ? true : U.source.id)), [U, x]);
+  }), s = S.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, p] = i.useState(null), [x, j] = i.useState(null), [y, C] = i.useState(null), w = null != y && y.length > 0, [P, T] = i.useState(c.vA.WINDOW), [I, E] = i.useState(false), A = i.useRef(null), M = i.useRef(new u.Xp), D = (0, d.e7)([_.ZP], () => _.ZP.getRunningGames()), U = H((0, d.e7)([v.Z], () => v.Z.quests), D, x), W = i.useMemo(() => null == x ? null : [...x].sort((e, t) => F(t, null == U ? true : U.source.id) - F(e, null == U ? true : U.source.id)), [U, x]);
   i.useEffect(() => {
     let e = M.current;
     return (0, Z.t)({
@@ -134,7 +134,7 @@ function W(e) {
     }
   }, []);
   let z = i.useCallback(e => {
-      null !== e && (R.current = e, E(!e.isScrolledToTop()))
+      null !== e && (A.current = e, E(!e.isScrolledToTop()))
     }, []),
     [V, J] = i.useState(true);
   i.useEffect(() => {
@@ -172,7 +172,7 @@ function W(e) {
         [G.selected]: l
       }),
       onClick: () => n(e, null),
-      children: (0, r.jsx)(A.Z, {
+      children: (0, r.jsx)(R.Z, {
         source: e,
         selectedSource: t
       }, e.id)
@@ -211,7 +211,7 @@ function W(e) {
       ref: z,
       className: G.sourceScroller,
       onScroll: function() {
-        let e = R.current;
+        let e = A.current;
         null != e && E(!e.isScrolledToTop())
       },
       children: [P === c.vA.WINDOW && null != U && (0, r.jsx)(b.Z, {
@@ -244,7 +244,7 @@ function z(e) {
     className: o()(G.nativeSourceSingleTypeButton, G.nativePickerRadioItem),
     children: (0, r.jsxs)("div", {
       className: G.nativeSourceSingleTypeButtonInner,
-      children: [(0, r.jsx)(R.Z, {
+      children: [(0, r.jsx)(A.Z, {
         className: G.nativeSourceSingleTypeImage
       }), (0, r.jsx)(f.Text, {
         variant: "text-md/medium",
@@ -416,7 +416,7 @@ function X(e) {
     variant: "text-md/normal",
     color: "text-danger",
     children: null != s && s.length > 0 ? s : L.intl.string(L.t.CKsXk3)
-  }) : (0, r.jsx)(R.Z, {
+  }) : (0, r.jsx)(A.Z, {
     animated: true,
     className: G.nativePickerGuide
   })

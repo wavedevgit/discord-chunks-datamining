@@ -315,9 +315,9 @@ class ee extends(r = Chunk647438.PureComponent) {
       className: q.header,
       children: [(0, i.jsx)(E.Dx, {
         className: Y.marginBottom8,
-        children: K.intl.string(K.t["7fNJgA"])
+        children: z.intl.string(z.t["7fNJgA"])
       }, "title"), false === (0, U.isAndroidWeb)() ? (0, i.jsx)(E.DK, {
-        children: K.intl.string(K.t.euS7r4)
+        children: z.intl.string(z.t.euS7r4)
       }, "subtitle") : null]
     }), (0, i.jsxs)(j.Z, {
       direction: j.Z.Direction.HORIZONTAL,
@@ -333,17 +333,17 @@ class ee extends(r = Chunk647438.PureComponent) {
               }))
             },
             variant: "secondary",
-            text: K.intl.string(K.t["1MrpWO"]),
+            text: z.intl.string(z.t["1MrpWO"]),
             icon: g.V7D
           })
         }), n, (0, i.jsx)(g.y5t, {
           children: (0, i.jsxs)(E.gO, {
             className: Y.marginTop20,
-            children: [(0, i.jsx)(T.Z, {
+            children: [(0, i.jsx)(A.Z, {
               alpha2: o.alpha2,
               countryCode: o.code.split(" ")[0],
               className: Y.marginBottom20,
-              label: K.intl.string(K.t.tUjnxr),
+              label: z.intl.string(z.t.tUjnxr),
               error: null != (t = this.renderError("login")) ? t : this.renderError("email"),
               onChange: (e, t) => this.setState({
                 login: e,
@@ -358,7 +358,7 @@ class ee extends(r = Chunk647438.PureComponent) {
               autoFocus: !d && !c && !u,
               required: true
             }), (0, i.jsx)(E.II, {
-              label: K.intl.string(K.t["CIGa+7"]),
+              label: z.intl.string(z.t["CIGa+7"]),
               error: this.renderError("password"),
               onChange: e => this.setState({
                 password: e
@@ -374,14 +374,14 @@ class ee extends(r = Chunk647438.PureComponent) {
             }), (0, i.jsx)("div", {
               className: a()(Y.marginBottom20, Y.marginTop4),
               children: (0, i.jsx)(g.Avr, {
-                text: K.intl.string(K.t.wWIufs),
+                text: z.intl.string(z.t.wWIufs),
                 textVariant: "text-sm/normal",
                 onClick: this.handleForgotPassword
               })
             }), (0, i.jsx)("div", {
               className: Y.marginBottom8,
               children: (0, i.jsx)(g.Button, {
-                text: K.intl.string(K.t.dKhVQN),
+                text: z.intl.string(z.t.dKhVQN),
                 fullWidth: true,
                 type: "submit",
                 loading: l === H.u34.LOGGING_IN
@@ -390,11 +390,11 @@ class ee extends(r = Chunk647438.PureComponent) {
               className: Y.marginTop4,
               children: [(0, i.jsx)("span", {
                 className: q.needAccount,
-                children: K.intl.string(K.t.tmE73r)
+                children: z.intl.string(z.t.tmE73r)
               }), (0, i.jsx)("span", {
                 className: q.smallRegisterLink,
                 children: (0, i.jsx)(g.Avr, {
-                  text: K.intl.string(K.t.pV8xeR),
+                  text: z.intl.string(z.t.pV8xeR),
                   textVariant: "text-sm/normal",
                   onClick: this.handleGotoRegister
                 })
@@ -668,27 +668,27 @@ class ee extends(r = Chunk647438.PureComponent) {
         e === u.B.ONE_TIME_LOGIN ? (0, g.h7j)(e => {
           let t = [{
             variant: "primary",
-            text: K.intl.string(K.t.BddRzS),
+            text: z.intl.string(z.t.BddRzS),
             onClick: e.onClose,
             fullWidth: true
           }];
           return (0, i.jsx)(d.Modal, X(Q({
-            title: K.intl.string(K.t["6Ecyts"]),
+            title: z.intl.string(z.t["6Ecyts"]),
             actions: t
           }, e), {
             children: (0, i.jsx)(g.Text, {
               variant: "text-md/normal",
-              children: K.intl.string(K.t.iAcrqV)
+              children: z.intl.string(z.t.iAcrqV)
             })
           }))
         }) : (0, g.h7j)(e => (0, i.jsx)(g.ConfirmModal, X(Q({
-          header: K.intl.string(K.t.f5Pi7A),
-          confirmText: K.intl.string(K.t.BddRzS),
+          header: z.intl.string(z.t.f5Pi7A),
+          confirmText: z.intl.string(z.t.BddRzS),
           className: c.tq ? q.mobile : ""
         }, e), {
           children: (0, i.jsx)(g.Text, {
             variant: "text-md/normal",
-            children: K.intl.format(K.t["6u5hQ9"], {
+            children: z.intl.format(z.t["6u5hQ9"], {
               email: t
             })
           })
@@ -756,7 +756,7 @@ J(ee, "defaultProps", {
 });
 let et = function(e) {
   (0, P.M)();
-  let t = (0, h.cj)([D.Z, k.Z, w.default, N.Z, A.Z], () => ({
+  let t = (0, h.cj)([D.Z, k.Z, w.default, N.Z, T.Z], () => ({
     authenticated: w.default.isAuthenticated(),
     handoffAvailable: D.Z.isHandoffAvailable(),
     user: D.Z.user,
@@ -764,7 +764,7 @@ let et = function(e) {
     mfaTicket: w.default.getMFATicket(),
     mfaMethods: w.default.getMFAMethods(),
     defaultRoute: k.Z.defaultRoute,
-    country: A.Z.getCountryCode(),
+    country: T.Z.getCountryCode(),
     hasLoggedInAccounts: N.Z.getHasLoggedInAccounts()
   }));
   return (0, i.jsx)(ee, Q({}, e, t))
