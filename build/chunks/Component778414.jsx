@@ -109,7 +109,7 @@ function U(e) {
   } = (0, d.o)(null == n ? true : n.id), a = (0, P.Z)(t.id), l = (0, v.k)({
     location: "ApplicationWidgetUpsell"
   }), o = a.some(e => e instanceof h.q && e.applicationId === (null == n ? true : n.id));
-  return null == n || !l || null == i || o ? null : (0, r.jsx)(g.ZP, {
+  return null == n || !l || null == i || o ? null : (0, r.jsx)(f.ZP, {
     contentTypes: [c.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
     children: e => {
       let {
@@ -131,13 +131,13 @@ function F(e) {
     guildId: n,
     channelId: a
   } = e, l = (0, P.Z)(t.id), c = (0, o.e7)([m.default], () => m.default.getId() === t.id), s = (() => {
-    let [e, t] = (0, o.Wu)([b.Z], () => [b.Z.ipCountryCode, b.Z.ipCountryCodeRequest]), n = (0, f.U)();
+    let [e, t] = (0, o.Wu)([b.Z], () => [b.Z.ipCountryCode, b.Z.ipCountryCodeRequest]), n = (0, g.U)();
     return i.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
     }, [e, t, n]), "GB" === e && n
   })(), d = (0, v.k)({
     location: "UserProfileModalV2Widgets"
-  }), g = 0 === l.length && c, j = i.useMemo(() => l.filter(y.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
+  }), f = 0 === l.length && c, j = i.useMemo(() => l.filter(y.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
   (0, O.J)(c, j);
   var I = t.id;
   (0, _.s)(x);
@@ -159,7 +159,7 @@ function F(e) {
       index: i
     }, e.type)), c && (0, r.jsx)(S.Z, {})]
   });
-  if (g)
+  if (f)
     if (d) return (0, r.jsx)(D.Z, {});
     else return (0, r.jsx)(A.Z, {});
   return c ? (0, r.jsx)(E.K, {

@@ -17,7 +17,7 @@ function u(e) {
     handleOpenCollectiblesShop: n,
     handleOpenGameShop: u,
     socialLayerStorefrontApplicationId: d
-  } = e, g = i.useRef(null), [f, p] = i.useState(false), m = (0, l.q)(d), b = i.useMemo(() => {
+  } = e, f = i.useRef(null), [g, p] = i.useState(false), m = (0, l.q)(d), b = i.useMemo(() => {
     if (null == m) return c.intl.string(c.t.apFNLU);
     let e = o.ZP.getApplicationIconURL({
       id: m.id,
@@ -50,7 +50,7 @@ function u(e) {
     })]
   }), [n, u, b, m]);
   return (0, r.jsx)(a.yRy, {
-    targetElementRef: g,
+    targetElementRef: f,
     position: "bottom",
     onRequestOpen: () => p(true),
     onRequestClose: () => p(false),
@@ -84,10 +84,10 @@ function u(e) {
       }
       return e
     }({
-      buttonRef: g,
+      buttonRef: f,
       variant: "secondary",
       size: "sm",
-      icon: f ? a.Dio : a.CJ0,
+      icon: g ? a.Dio : a.CJ0,
       iconPosition: "end",
       text: t
     }, e))

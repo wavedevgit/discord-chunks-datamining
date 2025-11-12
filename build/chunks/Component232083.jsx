@@ -14,7 +14,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk34335 = require("./34335.jsx"),
   Chunk112794 = require("./112794.js");
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function g(e) {
   return e
 }
 
-function f(e) {
+function g(e) {
   var {
     games: t,
     user: n,
@@ -60,7 +60,7 @@ function f(e) {
   return (0, r.jsx)("ul", {
     className: d.cardList,
     children: t.map((e, t) => (0, r.jsx)("li", {
-      children: (0, r.jsx)(s.Z, g({
+      children: (0, r.jsx)(s.Z, f({
         index: t,
         user: n,
         game: e,
@@ -85,7 +85,7 @@ function p(e) {
     expanded: v,
     setExpanded: O
   } = (0, o.g)(), j = v ? m : m.slice(0, 2), x = m.length > 2, _ = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(f, (t = g({}, e), n = n = {
+    children: [(0, r.jsx)(g, (t = f({}, e), n = n = {
       games: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

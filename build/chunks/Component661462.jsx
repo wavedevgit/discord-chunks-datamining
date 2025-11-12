@@ -106,11 +106,11 @@ function v(e) {
   }) : i === p.oh.MUTUAL_GUILDS ? (0, r.jsx)(d.Z, {
     user: t,
     onClose: m
-  }) : i === p.oh.WIDGETS ? (0, r.jsx)(g.C, {
+  }) : i === p.oh.WIDGETS ? (0, r.jsx)(f.C, {
     user: t,
     guildId: o,
     channelId: c
-  }) : i === p.oh.WISHLIST ? (0, r.jsx)(f.Z, {
+  }) : i === p.oh.WISHLIST ? (0, r.jsx)(g.Z, {
     profileOwner: t
   }) : null
 }
@@ -124,8 +124,8 @@ function O(e) {
     guildId: s,
     channelId: u,
     items: d,
-    initialSection: g,
-    initialSubsection: f,
+    initialSection: f,
+    initialSubsection: g,
     onClose: p
   } = e, {
     trackUserProfileAction: y
@@ -137,9 +137,9 @@ function O(e) {
     let {
       section: t
     } = e;
-    return t === g
+    return t === f
   })) ? t : d[0]), {
-    subsection: f
+    subsection: g
   }));
   return (0, r.jsxs)("div", {
     className: m.container,

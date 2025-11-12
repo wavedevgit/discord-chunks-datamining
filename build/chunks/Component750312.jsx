@@ -1,8 +1,8 @@
 /** Chunk was on 38058 **/
 /** chunk id: 750312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
-}), require("./388685.js");
+  Z: () => j
+});
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -12,107 +12,111 @@ var Chunk951288 = require("./951288.js"),
   Chunk313201 = require("./313201.js"),
   Chunk314897 = require("./314897.js"),
   Chunk785717 = require("./785717.jsx"),
-  Chunk403239 = require("./403239.js"),
+  Chunk86419 = require("./86419.js"),
   Chunk982072 = require("./982072.js"),
-  Chunk781040 = require("./781040.jsx"),
+  Chunk780899 = require("./780899.jsx"),
+  Chunk939974 = require("./939974.jsx"),
   Chunk840367 = require("./840367.jsx"),
   Chunk34335 = require("./34335.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk415734 = require("./415734.js");
 
-function v(e) {
+function O(e) {
   let {
-    userId: t,
+    index: t,
     widget: n,
-    children: a,
-    disableInteraction: h,
-    className: v,
-    index: j,
-    trailingContent: x,
-    headerTitle: _,
-    headerSubtitle: P,
-    headerActionButtons: I,
-    dragHandleAdditionalMenuItems: w
-  } = e, S = (0, s.Dt)(), E = (0, c.e7)([u.default], () => u.default.getId() === t), T = i.useRef(null), {
-    registerManageWidgetButtonRef: C,
-    manageFocusOnReorder: D
-  } = (0, b.j)(), k = i.useRef(null);
+    additionalManageWidgetMenuItems: a,
+    children: o
+  } = e, c = i.useRef(null), u = i.useRef(null), {
+    registerManageWidgetButtonRef: d,
+    manageFocusOnReorder: g
+  } = (0, h.j)();
   i.useLayoutEffect(() => {
-    let e = C(n.type);
-    return e(k.current), () => e(null)
-  }, [C, n.type]);
-  let {
-    trackUserProfileAction: N
-  } = (0, d.KZ)(), A = (0, f.Z)({
-    widgetType: n.type,
-    onAction: N
-  }), Z = E && null != j && !h, {
-    isDragging: R,
-    dragSourcePosition: G
-  } = (0, g.q)({
-    dropRef: T,
-    dragRef: k,
-    userId: t,
-    widget: n,
-    index: j,
-    disableInteraction: !Z,
-    onReorder: () => D(n.type)
-  }), [L, B] = i.useState(false);
-  return (0, r.jsx)(O, {
-    ref: T,
-    disableInteraction: !Z,
-    onMouseEnter: () => B(true),
-    onMouseLeave: () => B(false),
-    dragSourcePosition: G,
-    index: null != j ? j : 0,
-    children: (0, r.jsxs)("section", {
-      ref: A,
-      className: l()(y.container, v, {
-        [y.isDragging]: R
-      }),
-      "aria-labelledby": S,
-      children: [Z && (0, r.jsx)(p.Z, {
-        buttonRef: k,
-        widget: n,
-        className: l()(y.dragHandleButton, {
-          [y.opacity]: L || R
-        }),
-        additionalMenuItems: w
-      }), (0, r.jsx)(m.Z, {
-        userId: t,
-        headingId: S,
-        title: _,
-        subtitle: P,
-        actionButtons: I,
-        widget: n,
-        disableInteraction: h
-      }), (0, r.jsxs)(o.y5t, {
-        children: [a, x]
-      })]
-    })
+    let e = d(n.type);
+    return e(c.current), () => e(null)
+  }, [d, n.type]);
+  let b = i.useMemo(() => {
+      var e;
+      return null != (e = n.id) ? e : (0, s.hQ)()
+    }, [n.id]),
+    {
+      isDragging: O,
+      dragSourcePosition: j
+    } = (0, p.Y9)({
+      dragRef: c,
+      dropRef: u,
+      index: t,
+      listType: "WIDGETS",
+      itemType: "WIDGET",
+      itemId: b,
+      itemPreviewProps: {
+        widget: n
+      },
+      onReorder: f.IM,
+      onEnd: () => g(n.type)
+    }),
+    x = null != j,
+    _ = x && t < j,
+    P = x && t > j;
+  return (0, r.jsxs)("div", {
+    ref: u,
+    className: l()(v.dragAndDropTarget, {
+      [v.dropIndicatorBefore]: _,
+      [v.dropIndicatorAfter]: P,
+      [v.isDragging]: O
+    }),
+    "aria-label": y.intl.formatToPlainString(y.t.YLczh4, {
+      positionNumber: t + 1
+    }),
+    children: [(0, r.jsx)(m.Z, {
+      buttonRef: c,
+      widget: n,
+      className: v.dragHandleButton,
+      additionalMenuItems: a
+    }), o]
   })
 }
-let O = e => {
+
+function j(e) {
   let {
-    ref: t,
-    children: n,
-    disableInteraction: i,
-    onMouseEnter: a,
-    onMouseLeave: o,
-    dragSourcePosition: c,
-    index: s
-  } = e, u = null != c, d = u && s < c, g = u && s > c;
-  return i ? n : (0, r.jsx)("div", {
-    ref: t,
-    className: l()(y.dragAndDropHitbox, {
-      [y.dropIndicatorBefore]: d,
-      [y.dropIndicatorAfter]: g
-    }),
-    onMouseEnter: a,
-    onMouseLeave: o,
-    "aria-label": h.intl.formatToPlainString(h.t.YLczh4, {
-      positionNumber: s + 1
-    }),
-    children: n
+    userId: t,
+    widget: n,
+    children: i,
+    disableInteraction: a,
+    className: f,
+    index: p,
+    trailingContent: m,
+    headerTitle: h,
+    headerSubtitle: y,
+    headerActionButtons: j,
+    additionalManageWidgetMenuItems: x
+  } = e, _ = (0, s.Dt)(), P = (0, c.e7)([u.default], () => u.default.getId() === t), {
+    trackUserProfileAction: I
+  } = (0, d.KZ)(), w = (0, g.Z)({
+    widgetType: n.type,
+    onAction: I
+  }), S = P && null != p && !a, E = () => (0, r.jsxs)("div", {
+    className: l()(v.container, f),
+    children: [(0, r.jsx)(b.Z, {
+      userId: t,
+      headingId: _,
+      title: h,
+      subtitle: y,
+      actionButtons: j,
+      widget: n,
+      disableInteraction: a
+    }), (0, r.jsxs)(o.y5t, {
+      children: [i, m]
+    })]
+  });
+  return (0, r.jsx)("section", {
+    ref: w,
+    "aria-labelledby": _,
+    children: S ? (0, r.jsx)(O, {
+      index: null != p ? p : 0,
+      widget: n,
+      additionalManageWidgetMenuItems: x,
+      children: E()
+    }) : E()
   })
 }

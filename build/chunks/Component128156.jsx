@@ -41,13 +41,13 @@ function w(e) {
     voiceActivityStatusEnabled: D
   } = (0, l.U)({
     location: "UserProfileModalV2Activity"
-  }), k = (0, g.b)({
+  }), k = (0, f.b)({
     location: "UserProfileModalV2Activity"
   }), {
     live: N,
     recent: A,
     stream: Z
-  } = (0, f.Z)(t.id), {
+  } = (0, g.Z)(t.id), {
     voiceChannel: R,
     voiceActivity: G
   } = (0, p.Z)({

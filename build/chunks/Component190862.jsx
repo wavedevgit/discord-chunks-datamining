@@ -59,11 +59,11 @@ let O = e => {
     } = e, n = v(e, ["widget"]);
     switch (t.type) {
       case a.l.FAVORITE_GAMES:
-        return (0, r.jsx)(f.Z, y({
+        return (0, r.jsx)(g.Z, y({
           widget: t
         }, n));
       case a.l.CURRENT_GAMES:
-        return (0, r.jsx)(g.Z, y({
+        return (0, r.jsx)(f.Z, y({
           widget: t
         }, n));
       case a.l.WANT_TO_PLAY_GAMES:
@@ -83,11 +83,11 @@ let O = e => {
       widget: t,
       user: n,
       disableInteraction: a
-    } = e, g = v(e, ["widget", "user", "disableInteraction"]);
+    } = e, f = v(e, ["widget", "user", "disableInteraction"]);
     let {
-      shouldShowSuggestions: f,
+      shouldShowSuggestions: g,
       handleDismissSuggestions: p
-    } = (0, s.h)(t), m = (0, l.e7)([o.default], () => o.default.getId() === n.id), j = m && !a && f, x = (0, c.mR)(t), _ = (0, c.Hy)(t, {
+    } = (0, s.h)(t), m = (0, l.e7)([o.default], () => o.default.getId() === n.id), j = m && !a && g, x = (0, c.mR)(t), _ = (0, c.Hy)(t, {
       isCurrentUser: m
     }), P = (0, c.kQ)(t), I = 1 === (0, c.Gv)(t.type), [w, S] = i.useState(false);
     return (0, r.jsx)(d.N, {
@@ -113,6 +113,6 @@ let O = e => {
           onDismiss: p,
           className: h.suggestedGames
         })
-      }, g))
+      }, f))
     })
   }

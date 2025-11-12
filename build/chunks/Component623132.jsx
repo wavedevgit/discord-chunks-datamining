@@ -139,7 +139,7 @@ function D(e) {
   return (0, r.jsx)(c.nn4, {
     id: a,
     children: P.intl.format(P.t.TM0XDY, {
-      name: f.ZP.getName(n, i, t)
+      name: g.ZP.getName(n, i, t)
     })
   })
 }
@@ -189,8 +189,8 @@ function A(e) {
     guildId: a,
     channelId: u,
     widgetType: d,
-    applicationId: g
-  } = e, f = (0, s.Dt)(), b = (0, s.Dt)(), {
+    applicationId: f
+  } = e, g = (0, s.Dt)(), b = (0, s.Dt)(), {
     trackUserProfileEditAction: h
   } = (0, p.KZ)(), [y, v] = i.useState("idle"), [O, j] = i.useState(null != t ? t : ""), x = i.useRef(null), _ = i.useRef(null), I = P.intl.string(P.t.xKSfBT), S = null != t && "" !== t.trim(), E = i.useCallback(() => {
     h({
@@ -200,12 +200,12 @@ function A(e) {
   }, [d, h]), T = i.useCallback(() => {
     let e = O.trim(),
       n = e !== (null != t ? t : "").trim();
-    (0, m.Bu)(d, g, "" !== e ? e : true), v("completed"), n && h({
+    (0, m.Bu)(d, f, "" !== e ? e : true), v("completed"), n && h({
       action: "COMMENTARY_EDITED",
       widgetEdited: d,
-      gameId: g
+      gameId: f
     })
-  }, [d, g, O, t, h]), C = i.useCallback(e => {
+  }, [d, f, O, t, h]), C = i.useCallback(e => {
     j(e)
   }, []);
   return i.useEffect(() => {
@@ -219,10 +219,10 @@ function A(e) {
     className: w.textAreaContainer,
     children: [(0, r.jsx)(c.nn4, {
       tag: "label",
-      htmlFor: f,
+      htmlFor: g,
       children: P.intl.string(P.t.JxKXeT)
     }), (0, r.jsx)(c.Kx8, {
-      id: f,
+      id: g,
       value: O,
       placeholder: I,
       onChange: C,
@@ -274,7 +274,7 @@ function Z(e) {
     widgetType: s,
     disableInteraction: u = false,
     index: d,
-    onRemoveGame: f,
+    onRemoveGame: g,
     coverRef: p,
     className: P
   } = e, {
@@ -288,11 +288,11 @@ function Z(e) {
   } = (0, _.Z)(D), B = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, M = g.default.getCurrentUser(), U = (null == M ? true : M.id) === t.id, F = 1 === (0, m.Gv)(s), W = !u && U, H = W && (0, m.vI)(s), z = W && !F, {
+  }, M = f.default.getCurrentUser(), U = (null == M ? true : M.id) === t.id, F = 1 === (0, m.Gv)(s), W = !u && U, H = W && (0, m.vI)(s), z = W && !F, {
     registerDragHandleRef: K
   } = (0, h.C)(), V = i.useRef(null);
   if (L) return (0, r.jsx)(v.i, {});
-  let q = () => (0, r.jsx)(y.Z, {
+  let Y = () => (0, r.jsx)(y.Z, {
       coverRef: p,
       className: null == R || u ? true : I.hoverActiveEffect,
       imageSrc: R,
@@ -302,19 +302,19 @@ function Z(e) {
       disableInteraction: u,
       hideTooltip: true
     }),
-    Y = () => (0, r.jsxs)("div", {
+    q = () => (0, r.jsxs)("div", {
       className: l()(w.card, P),
       children: [z ? (0, r.jsxs)("div", {
         ref: V,
         className: w.dragHandleContainer,
-        children: [q(), (0, r.jsx)(b.e_, {
+        children: [Y(), (0, r.jsx)(b.e_, {
           buttonRef: K(o.applicationId),
           className: w.dragHandle,
           focusProps: {
             ringTarget: V
           }
         })]
-      }) : q(), (0, r.jsxs)("div", {
+      }) : Y(), (0, r.jsxs)("div", {
         className: w.details,
         children: [u ? (0, r.jsx)(c.Heading, E(S({}, B), {
           children: G
@@ -351,13 +351,13 @@ function Z(e) {
         game: o,
         widgetType: s,
         className: w.removeGameButton,
-        onRemove: () => null == f ? true : f(o.applicationId)
+        onRemove: () => null == g ? true : g(o.applicationId)
       })]
     });
   return z ? (0, r.jsx)(T, {
     index: null != d ? d : 0,
     widgetType: s,
     game: o,
-    children: Y()
-  }) : Y()
+    children: q()
+  }) : q()
 }

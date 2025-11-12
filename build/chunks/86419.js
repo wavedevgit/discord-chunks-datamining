@@ -2,22 +2,23 @@
 /** chunk id: 86419, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $b: () => G,
+  $b: () => B,
   Bu: () => j,
   ES: () => k,
-  Eq: () => U,
+  Eq: () => G,
   Gv: () => S,
   Hy: () => y,
+  IM: () => U,
   M8: () => I,
   RZ: () => M,
-  X6: () => B,
-  kQ: () => F,
+  X6: () => Z,
+  kQ: () => V,
   mR: () => b,
   n$: () => L,
   np: () => C,
-  ou: () => Y,
+  ou: () => W,
   qH: () => D,
-  tk: () => Z,
+  tk: () => F,
   vI: () => v,
   ww: () => O,
   y8: () => x
@@ -215,7 +216,16 @@ function k(e, t) {
   c.Z.setPendingWidgets(_), a.Z.getDetectableGamesSupplemental([t.applicationId])
 }
 
-function U(e, t, n) {
+function U(e, t) {
+  if (e === t) return;
+  let n = R();
+  if (e < 0 || e >= n.length || t < 0 || t >= n.length) return;
+  let r = [...n],
+    [i] = r.splice(e, 1);
+  r.splice(t, 0, i), c.Z.setPendingWidgets(r)
+}
+
+function G(e, t, n) {
   let r = P(e);
   if (null == r || null == r.games || t === n) return;
   let i = [...r.games];
@@ -228,7 +238,7 @@ function U(e, t, n) {
   c.Z.setPendingWidgets(o)
 }
 
-function G(e, t) {
+function B(e, t) {
   let n = P(e);
   if (null == n) return;
   let r = (null != n.games ? n.games : []).filter(e => e.applicationId !== t),
@@ -237,7 +247,7 @@ function G(e, t) {
     })));
   c.Z.setPendingWidgets(i)
 }
-async function B() {
+async function Z() {
   let e = Chunk224724.Z.getPendingWidgets();
   if (null !== module) try {
     await Chunk592183.Z.savePendingWidgets(module)
@@ -245,7 +255,7 @@ async function B() {
     console.error("Failed to save sample widgets:", module)
   }
 }
-async function Z() {
+async function F() {
   try {
     await Chunk592183.Z.savePendingWidgets([])
   } catch (e) {
@@ -253,25 +263,25 @@ async function Z() {
   }
 }
 
-function F(e) {
+function V(e) {
   let t = S(e.type);
   return e.games.length >= t
 }
 
-function V(e) {
+function H(e) {
   return null == e || "" === e || Array.isArray(e) && 0 === e.length ? null : e
 }
 
-function H(e, t, n) {
-  if (e.applicationId !== t.applicationId || v(n) && V(e.comment) !== V(t.comment)) returnfalse;
+function Y(e, t, n) {
+  if (e.applicationId !== t.applicationId || v(n) && H(e.comment) !== H(t.comment)) returnfalse;
   if (I(n)) {
-    let n = V(e.tags),
-      r = V(t.tags);
+    let n = H(e.tags),
+      r = H(t.tags);
     if (null === n != (null === r) || null !== n && null !== r && (n.length !== r.length || !n.every((e, t) => e === r[t]))) returnfalse
   }
   returntrue
 }
 
-function Y(e, t, n) {
-  return e.length === t.length && e.every((e, r) => H(e, t[r], n))
+function W(e, t, n) {
+  return e.length === t.length && e.every((e, r) => Y(e, t[r], n))
 }

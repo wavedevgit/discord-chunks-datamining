@@ -17,7 +17,7 @@ function o(e) {
       channelId: u,
       disableInteraction: d
     } = e,
-    g = function(e, t) {
+    f = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -53,7 +53,7 @@ function o(e) {
     userId: o.id,
     widget: c,
     disableInteraction: d
-  }, g), n = n = {
+  }, f), n = n = {
     children: c.games.length > 0 ? (0, r.jsx)(l.Z, {
       user: o,
       widgetType: c.type,

@@ -35,9 +35,9 @@ function u(e) {
     })
   }, []), d = i.useCallback(e => t => {
     null != t ? c.current.set(e, t) : c.current.delete(e)
-  }, []), g = i.useCallback(e => t => {
+  }, []), f = i.useCallback(e => t => {
     null != t ? l.current.set(e, t) : l.current.delete(e)
-  }, []), f = i.useCallback(e => {
+  }, []), g = i.useCallback(e => {
     a.Z.keyboardModeEnabled && requestAnimationFrame(() => {
       let t = c.current.get(e);
       null == t || t.focus()
@@ -60,10 +60,10 @@ function u(e) {
     })
   }, [n, u]), m = i.useMemo(() => ({
     registerDragHandleRef: d,
-    registerItemRef: g,
-    manageFocusOnReorder: f,
+    registerItemRef: f,
+    manageFocusOnReorder: g,
     manageFocusOnDelete: p
-  }), [d, g, f, p]);
+  }), [d, f, g, p]);
   return (0, r.jsx)(o.Provider, {
     value: m,
     children: t

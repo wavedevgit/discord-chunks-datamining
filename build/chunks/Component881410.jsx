@@ -76,7 +76,7 @@ function h(e) {
   } = (0, u.KZ)(), w = (0, l.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)), S = i.useCallback(e => {
     (0, d.ES)(t, {
       applicationId: e
-    }), o.uvj.announce(g.intl.string(g.t.q0U3DE)), I({
+    }), o.uvj.announce(f.intl.string(f.t.q0U3DE)), I({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: t
@@ -93,9 +93,9 @@ function h(e) {
       numCharacters: e.trim().length,
       numResults: C(e).length
     }), x(e), _.current = e
-  }, [j, I, t, C]), k = i.useMemo(() => "" !== j.trim() && w ? g.intl.format(g.t.jhiTsN, {
+  }, [j, I, t, C]), k = i.useMemo(() => "" !== j.trim() && w ? f.intl.format(f.t.jhiTsN, {
     searchTerm: j.trim()
-  }) : g.intl.string(g.t.QwSXv8), [j, w]);
+  }) : f.intl.string(f.t.QwSXv8), [j, w]);
   return (0, r.jsx)(o.yRy, m(p({}, v), {
     onRequestOpen: () => {
       I({
@@ -116,8 +116,8 @@ function h(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(o.DBG, {
-        className: f.gameSearchCombobox,
-        placeholder: g.intl.string(g.t["5h0QOP"]),
+        className: g.gameSearchCombobox,
+        placeholder: f.intl.string(f.t["5h0QOP"]),
         autoFocus: true,
         value: O,
         onChange: e => {
@@ -160,7 +160,7 @@ function y(e) {
       variant: "secondary",
       size: "sm",
       icon: o.qJs,
-      text: g.intl.string(g.t.SgTOtX),
+      text: f.intl.string(f.t.SgTOtX),
       disabled: t
     }, e))
   }))
@@ -175,8 +175,8 @@ function v(e) {
   }, e), {
     children: e => (0, r.jsx)(o.P3F, m(p({
       innerRef: t,
-      className: f.coverButton,
-      "aria-label": g.intl.string(g.t.SgTOtX)
+      className: g.coverButton,
+      "aria-label": f.intl.string(f.t.SgTOtX)
     }, e), {
       children: (0, r.jsx)(o.svS, {
         color: "currentColor"

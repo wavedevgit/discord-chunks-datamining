@@ -33,20 +33,20 @@ function u(e) {
     games: u,
     onAddGame: d
   } = (0, o.K)(t), {
-    setExpanded: g
+    setExpanded: f
   } = (0, c.g)(), {
-    trackUserProfileEditAction: f
+    trackUserProfileEditAction: g
   } = (0, a.KZ)(), p = i.useCallback((e, n, r) => {
-    d(e), g(true), (0, l.ES)(t, {
+    d(e), f(true), (0, l.ES)(t, {
       applicationId: e,
       gameName: n,
       imageSrc: r
-    }), f({
+    }), g({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: t
     })
-  }, [d, t, f, g]);
+  }, [d, t, g, f]);
   return (0, r.jsx)(s.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

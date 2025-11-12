@@ -1,7 +1,7 @@
 /** Chunk was on 38058 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Q
+  Z: () => J
 }), require("./467055.js"), require("./388685.js"), require("./35282.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -343,13 +343,13 @@ function H(e) {
 
 function z() {
   let e = function() {
-      let e = Chunk647438.useContext(q);
+      let e = Chunk647438.useContext(Y);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
       return module
     }(),
     {
       game: t
-    } = Y(module.widget);
+    } = q(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
     className: Chunk18827.socialProof,
     applicationId: exports.id,
@@ -384,11 +384,11 @@ function V(e, t) {
   let a = t.variables[i];
   return null == a || "unfurled_media" !== a.type ? null : a.media
 }
-let q = Chunk647438.createContext(null);
+let Y = Chunk647438.createContext(null);
 
-function Y(e) {
-  return (0, o.cj)([g.Z, w.Z, P.Z], () => {
-    let t = g.Z.getApplication(e.applicationId);
+function q(e) {
+  return (0, o.cj)([f.Z, w.Z, P.Z], () => {
+    let t = f.Z.getApplication(e.applicationId);
     return {
       application: t,
       game: null != t ? P.Z.getGameByApplication(t) : null,
@@ -418,7 +418,7 @@ function X(e) {
   })
 }
 
-function J(e) {
+function Q(e) {
   return (0, r.jsxs)(s.Kqy, {
     direction: "horizontal",
     gap: 24,
@@ -450,20 +450,20 @@ function J(e) {
     })]
   })
 }
-let Q = Object.assign(function(e) {
+let J = Object.assign(function(e) {
   let {
     user: t,
     widget: n,
     cta: a,
     subtle: u = false
   } = e, {
-    application: g,
+    application: f,
     game: m,
     config: b
-  } = Y(n), h = null == g ? true : g.getIconURL(16), y = (0, x.O)(t.id).data, v = null == y ? true : y.find(e => e.application_id === n.applicationId), j = (0, p.Z)({
+  } = q(n), h = null == f ? true : f.getIconURL(16), y = (0, x.O)(t.id).data, v = null == y ? true : y.find(e => e.application_id === n.applicationId), j = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == m ? true : m.id,
-    source: f.m1.UserProfile,
+    source: g.m1.UserProfile,
     sourceUserId: t.id,
     trackEntryPointImpression: true
   }), {
@@ -471,7 +471,7 @@ let Q = Object.assign(function(e) {
     hasAlreadyLinked: w,
     canStartAuthorization: E,
     startAuthorization: N
-  } = (0, d.F)(g), Z = null == a && P && !w && E, G = (0, r.jsxs)(r.Fragment, {
+  } = (0, d.F)(f), Z = null == a && P && !w && E, G = (0, r.jsxs)(r.Fragment, {
     children: [null != h ? (0, r.jsx)("img", {
       className: C.appIcon,
       src: h,
@@ -482,7 +482,7 @@ let Q = Object.assign(function(e) {
       className: C.appIconPlaceholder
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
-      children: (null == g ? true : g.name) != null ? g.name : (0, r.jsx)("div", {
+      children: (null == f ? true : f.name) != null ? f.name : (0, r.jsx)("div", {
         className: C.textPlaceholder
       })
     })]
@@ -569,13 +569,13 @@ let Q = Object.assign(function(e) {
     widget: n,
     className: l()(C.widgetContainer, u && C.subtle),
     headerTitle: L,
-    dragHandleAdditionalMenuItems: null != m ? (0, r.jsx)(s.sNh, {
+    additionalManageWidgetMenuItems: null != m ? (0, r.jsx)(s.sNh, {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: s.iWm,
       action: j
     }) : null,
-    children: [(0, r.jsx)(q.Provider, {
+    children: [(0, r.jsx)(Y.Provider, {
       value: e,
       children: (0, r.jsx)(X, {
         widget: n,
@@ -594,7 +594,7 @@ let Q = Object.assign(function(e) {
           color: "text-secondary",
           children: T.intl.string(T.t.z5K4Uv)
         })]
-      }), Z ? (0, r.jsx)(J, {
+      }), Z ? (0, r.jsx)(Q, {
         heading: T.intl.string(T.t.UDPRLO),
         content: T.intl.string(T.t["OW/2al"]),
         buttons: (0, r.jsx)(s.Button, {
@@ -605,5 +605,5 @@ let Q = Object.assign(function(e) {
     })]
   }))
 }, {
-  Cta: J
+  Cta: Q
 })

@@ -36,22 +36,22 @@ function u(e) {
       }
     }, [l, i, e, o, u])
   }(e);
-  let g = r.useMemo(() => {
+  let f = r.useMemo(() => {
       var t;
       return null != (t = d[e]) ? t : []
     }, [d, e]),
-    f = r.useCallback(t => {
+    g = r.useCallback(t => {
       o(t, e)
     }, [o, e]);
-  (0, s.qU)(g);
-  let p = (0, s.kN)(g),
+  (0, s.qU)(f);
+  let p = (0, s.kN)(f),
     [m, b] = r.useState([]),
-    h = (t = g.map(e => a.Z.isFetching(e)), r.useMemo(() => t.join("\x1f"), [t]));
+    h = (t = f.map(e => a.Z.isFetching(e)), r.useMemo(() => t.join("\x1f"), [t]));
   return r.useEffect(() => {
-    let t = g.filter(e => a.Z.noDataAvailable(e));
+    let t = f.filter(e => a.Z.noDataAvailable(e));
     t.length > 0 && u(t, e)
-  }, [h, g, e, u, p]), r.useEffect(() => {
-    b(g.map(e => {
+  }, [h, f, e, u, p]), r.useEffect(() => {
+    b(f.map(e => {
       let t = p[e];
       return {
         applicationId: e,
@@ -59,9 +59,9 @@ function u(e) {
         imageSrc: null == t ? true : t.coverImageUrl
       }
     }))
-  }, [g, p, e, n, l]), {
+  }, [f, p, e, n, l]), {
     games: m,
-    onAddGame: f
+    onAddGame: g
   }
 }
 
@@ -72,11 +72,11 @@ function d(e, t) {
   r.useEffect(() => {
     !n && e && l.Z.fetchSuggestedGames()
   }, [n, e]);
-  let g = n && !u;
+  let f = n && !u;
   r.useEffect(() => {
     var e, n;
-    if (!g) return;
+    if (!f) return;
     let r = t.map(e => e.games).flat();
     if (!a) d(null != (e = s.suggestedGamesIds) ? e : [], null != (n = s.suggestedWishlistGamesIds) ? n : [], r)
-  }, [g])
+  }, [f])
 }
