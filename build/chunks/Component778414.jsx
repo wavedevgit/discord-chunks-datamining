@@ -157,7 +157,7 @@ function F(e) {
       guildId: n,
       channelId: a,
       index: i
-    }, e.type)), c && (0, r.jsx)(S.Z, {})]
+    }, e instanceof h.q ? "".concat(e.type, "-").concat(e.applicationId) : "".concat(e.type))), c && (0, r.jsx)(S.Z, {})]
   });
   if (f)
     if (d) return (0, r.jsx)(D.Z, {});

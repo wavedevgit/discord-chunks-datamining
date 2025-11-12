@@ -1,9 +1,10 @@
 /** Chunk was on 38058 **/
 /** chunk id: 683881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
   Chunk79116 = require("./79116.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -13,72 +14,88 @@ var Chunk951288 = require("./951288.js"),
   Chunk778414 = require("./778414.jsx"),
   Chunk707804 = require("./707804.js");
 
-function f(e) {
+function g(e) {
   var t;
   let {
     scrollerRef: n
   } = e, {
-    isDragging: f,
-    item: g,
-    sourceClientOffset: p
-  } = (0, i.f)(e => ({
+    isDragging: g,
+    item: p,
+    sourceClientOffset: m
+  } = (0, a.f)(e => ({
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
-  })), m = (0, a.e7)([o.default], () => o.default.getCurrentUser()), b = (0, l.zPA)();
-  if (true !== f || null == p || null == g) return null;
-  let h = null == n || null == (t = n.current) ? true : t.getBoundingClientRect();
-  if (null == h || null == m) return null;
-  let y = function(e, t) {
+  })), b = (0, l.e7)([c.default], () => c.default.getCurrentUser()), h = (0, o.zPA)(), y = i.useMemo(() => {
+    if (null == b || null == p) return null;
     let {
-      id: n,
-      itemType: i,
-      itemPreviewProps: a
-    } = e;
-    if ("WIDGET" === i && (null == a ? true : a.widget) != null) return (0, r.jsx)("div", {
-      className: d.widgetPreview,
-      children: (0, r.jsx)(u.Z, {
-        widget: a.widget,
-        user: t,
+      id: e,
+      itemType: t,
+      itemPreviewProps: n
+    } = p;
+    if ("WIDGET" === t && (null == n ? true : n.widget) != null) return (0, r.jsx)("div", {
+      className: f.widgetPreview,
+      children: (0, r.jsx)(d.Z, {
+        widget: n.widget,
+        user: b,
         disableInteraction: true
       })
     });
-    if ("GAME_COVER" === i && (null == a ? true : a.gameName) != null) {
+    if ("GAME_COVER" === t && (null == n ? true : n.gameName) != null) {
       let {
-        imageSrc: e,
+        imageSrc: t,
         gameName: i
-      } = a;
-      return (0, r.jsx)(c.Z, {
-        className: d.gamePreview,
-        imageSrc: e,
+      } = n;
+      return (0, r.jsx)(s.Z, {
+        className: f.gamePreview,
+        imageSrc: t,
         gameName: i,
-        applicationId: n,
-        userId: null == t ? true : t.id,
+        applicationId: e,
+        userId: null == b ? true : b.id,
         disableInteraction: true
       })
     }
-    if ("GAME_DETAILS_CARD" === i && (null == a ? true : a.game) != null && (null == a ? true : a.widgetType) != null) {
+    if ("GAME_DETAILS_CARD" === t && (null == n ? true : n.game) != null && (null == n ? true : n.widgetType) != null) {
       let {
         game: e,
-        widgetType: n
-      } = a;
-      return (0, r.jsx)(s.Z, {
-        className: d.gameDetailsCardPreview,
-        user: t,
-        widgetType: n,
+        widgetType: t
+      } = n;
+      return (0, r.jsx)(u.Z, {
+        className: f.gameDetailsCardPreview,
+        user: b,
+        widgetType: t,
         game: e,
         disableInteraction: true
       })
     }
     return null
-  }(g, m);
-  if (null == y) return null;
-  let v = p.x - h.left - 60 * !!b,
-    O = p.y - h.top;
+  }, [p, b]), v = i.useRef(null), O = i.useCallback(() => {
+    if (null == n.current) return;
+    let e = n.current.getBoundingClientRect();
+    v.current = {
+      x: e.left,
+      y: e.top
+    }
+  }, [n]);
+  if (i.useEffect(() => {
+      if (!g) {
+        v.current = null;
+        return
+      }
+      null == v.current && O()
+    }, [g, O]), true !== g || null == m || null == y) return null;
+  null == v.current && O();
+  let {
+    x: j,
+    y: x
+  } = null != (t = v.current) ? t : {
+    x: 0,
+    y: 0
+  }, _ = m.x - j - 60 * !!h, P = m.y - x;
   return (0, r.jsx)("div", {
-    className: d.container,
+    className: f.container,
     style: {
-      transform: "translate(".concat(v, "px, ").concat(O, "px)")
+      transform: "translate3d(".concat(_, "px, ").concat(P, "px, 0)")
     },
     children: y
   })

@@ -75,7 +75,6 @@ function p(e) {
     type: m,
     item: h,
     collect: e => ({
-      handlerId: e.getHandlerId(),
       isDragging: e.isDragging()
     }),
     end: g
@@ -96,19 +95,21 @@ function p(e) {
     collect: e => {
       let t = e.getItem(),
         n = null;
-      return null != t && e.isOver() && e.canDrop() && (n = t.index), {
-        handlerId: e.getHandlerId(),
+      return null != t && e.isOver({
+        shallow: true
+      }) && e.canDrop() && (n = t.index), {
         dragSourcePosition: n
       }
     }
   });
-  return v(t), x(n), {
+  return i.useLayoutEffect(() => (v(t), x(n), () => {
+    x(null), v(null)
+  }), [v, t, x, n]), {
     isDragging: y,
     dragSourcePosition: j
   }
 }
-
-function m(e) {
+let m = Chunk647438.memo(function(e) {
   var {
     index: t,
     className: n,
@@ -136,7 +137,7 @@ function m(e) {
     "aria-label": s,
     children: u
   })
-}
+});
 
 function b(e) {
   var t, n, {
