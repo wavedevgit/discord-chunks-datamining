@@ -1,5 +1,6 @@
-/** Chunk was on 89675 **/
-/** chunk id: 56589, original params: e,r,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 56589, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   perkRow: "perkRow_c609c8",
   perkIconContainer: "perkIconContainer_c609c8",

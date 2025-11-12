@@ -2,7 +2,7 @@
 /** chunk id: 760558, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => v
+  default: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,179 +19,181 @@ var Chunk951288 = require("./951288.js"),
   Chunk267642 = require("./267642.js"),
   Chunk395199 = require("./395199.jsx"),
   Chunk719228 = require("./719228.jsx"),
+  Chunk343649 = require("./343649.jsx"),
   Chunk4434 = require("./4434.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk252633 = require("./252633.js");
-let v = e => {
+let I = e => {
   let {
     guildBoostSlots: t,
     selectedGuild: n,
     locationSection: a,
-    transitionState: v,
-    onClose: I
-  } = e, S = (0, h.vx)(_.Z.boostSlots);
+    intent: I,
+    transitionState: S,
+    onClose: T
+  } = e, A = (0, h.vx)(_.Z.boostSlots);
   o()(null != t || null != n, "Must either provide slots or an initial selected guild"), o()(!(null == t ? true : t.some(e => e.isOnCooldown())), "If slots are provided, they must not be on cooldown");
-  let T = [null == t ? "UNUSED_QUANTITY_SELECT" : null, null == n ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
-    [A, C] = (0, l.Wu)([d.Z], () => [d.Z.isModifyingAppliedBoost, d.Z.applyBoostError]),
-    [N, R] = i.useState(T[0]),
-    [P, w] = i.useState(false),
-    [D, x] = i.useState(n),
-    [L, M] = i.useState(null != t ? t : S.slice(0, 1)),
-    j = i.useMemo(() => null == L ? [] : L.map(e => {
+  let C = [null == t ? "UNUSED_QUANTITY_SELECT" : null, null == n ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
+    [N, R] = (0, l.Wu)([d.Z], () => [d.Z.isModifyingAppliedBoost, d.Z.applyBoostError]),
+    [P, w] = i.useState(C[0]),
+    [D, x] = i.useState(false),
+    [L, M] = i.useState(n),
+    [j, k] = i.useState(null != t ? t : A.slice(0, 1)),
+    U = i.useMemo(() => null == j ? [] : j.map(e => {
       let {
         premiumGuildSubscription: t
       } = e;
       return f.Z.getGuild(null == t ? true : t.guildId)
-    }).filter(e => null != e), [L]),
-    k = i.useMemo(() => {
+    }).filter(e => null != e), [j]),
+    G = i.useMemo(() => {
       var e;
-      return (null == L || null == (e = L[0]) ? true : e.premiumGuildSubscription) != null
-    }, [L]),
-    U = () => (I("SUCCESS" === N), p.default.track(b.rMx.MODAL_DISMISSED, {
-      type: b.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
+      return (null == j || null == (e = j[0]) ? true : e.premiumGuildSubscription) != null
+    }, [j]),
+    B = () => (T("SUCCESS" === P), p.default.track(y.rMx.MODAL_DISMISSED, {
+      type: y.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
       location_section: a
     }), Promise.resolve()),
-    G = {
-      UNUSED_QUANTITY_SELECT: () => (o()(null != t || 0 !== S.length, "Cannot provide no slots if there are no other available slots"), (0, r.jsx)(s.Modal, {
-        transitionState: v,
-        onClose: U,
+    Z = {
+      UNUSED_QUANTITY_SELECT: () => (o()(null != t || 0 !== A.length, "Cannot provide no slots if there are no other available slots"), (0, r.jsx)(s.Modal, {
+        transitionState: S,
+        onClose: B,
         size: "md",
-        title: y.intl.string(y.t["9FFrrT"]),
+        title: O.intl.string(O.t["9FFrrT"]),
         actions: [{
           variant: "secondary",
-          text: y.intl.string(y.t["1BPTsK"]),
-          onClick: U
+          text: O.intl.string(O.t["1BPTsK"]),
+          onClick: B
         }, {
           variant: "primary",
-          text: y.intl.string(y.t["/uwYda"]),
-          onClick: () => R("CONFIRM")
+          text: O.intl.string(O.t["/uwYda"]),
+          onClick: () => w("CONFIRM")
         }],
         children: (0, r.jsxs)("div", {
-          className: O.quantitySelectorBody,
+          className: v.quantitySelectorBody,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/normal",
-            className: O.quantitySelectorDescription,
-            children: y.intl.string(y.t.x5qw5U)
+            className: v.quantitySelectorDescription,
+            children: O.intl.string(O.t.x5qw5U)
           }), (0, r.jsxs)("div", {
-            className: O.quantitySelectorWrapper,
+            className: v.quantitySelectorWrapper,
             children: [(0, r.jsx)(c.FiK, {
-              value: L.length,
-              onChange: e => M(S.slice(0, e)),
+              value: j.length,
+              onChange: e => k(A.slice(0, e)),
               minValue: 1,
-              maxValue: S.length
+              maxValue: A.length
             }), (0, r.jsx)(c.Text, {
-              className: O.quantitySelectorLabel,
+              className: v.quantitySelectorLabel,
               variant: "text-md/normal",
-              children: y.intl.string(y.t["Vl8TC+"])
+              children: O.intl.string(O.t["Vl8TC+"])
             })]
           })]
         })
       })),
       GUILD_SELECT: () => (0, r.jsx)(g.default, {
-        onClose: U,
+        onClose: B,
         onSelectGuild: e => {
-          x(e), R("CONFIRM")
+          M(e), w("CONFIRM")
         },
-        transitionState: v,
-        isTransfer: k,
-        selectedSlotGuilds: j
+        transitionState: S,
+        isTransfer: G,
+        selectedSlotGuilds: U
       }),
       CONFIRM() {
-        if (null == D) return null;
-        let e = L.filter(e => (0, h.tl)(e)).length,
-          t = L.length,
-          n = j.length,
-          i = "CONFIRM" === T[0] ? U : () => R(T[T.indexOf(N) - 1]),
+        if (null == L) return null;
+        let e = j.filter(e => (0, h.tl)(e)).length,
+          t = j.length,
+          n = U.length,
+          i = "CONFIRM" === C[0] ? B : () => w(C[C.indexOf(P) - 1]),
           a = async () => {
-            if (w(false), null != D && (null == L ? true : L.length) !== 0) {
-              o()(!L.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
+            if (x(false), null != L && (null == j ? true : j.length) !== 0) {
+              o()(!j.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
               try {
-                await Promise.all(L.map(e => {
+                await Promise.all(j.map(e => {
                   let {
                     premiumGuildSubscription: t
                   } = e;
                   return null != t ? (0, u.dG)(t.guildId, t.id) : Promise.resolve()
-                })), await (0, u.W3)(D.id, L.map(e => {
+                })), await (0, u.W3)(L.id, j.map(e => {
                   let {
                     id: t
                   } = e;
                   return t
-                })), R("SUCCESS")
+                }), I === E.P.PERK), w("SUCCESS")
               } catch (e) {
-                w(true)
+                x(true)
               }
             }
-          }, l = k ? y.intl.string(y.t["PR0n//"]) : y.intl.string(y.t["7KP/fI"]);
+          }, l = G ? O.intl.string(O.t["PR0n//"]) : O.intl.string(O.t["7KP/fI"]);
         return (0, r.jsx)(s.Modal, {
-          transitionState: v,
-          onClose: U,
+          transitionState: S,
+          onClose: B,
           size: "md",
           title: l,
           actions: [{
             variant: "secondary",
-            text: y.intl.string(y.t["ETE/oC"]),
+            text: O.intl.string(O.t["ETE/oC"]),
             onClick: i
           }, {
             variant: "primary",
-            text: k ? y.intl.formatToPlainString(y.t.Oh6mxU, {
+            text: G ? O.intl.formatToPlainString(O.t.Oh6mxU, {
               slotCount: t
-            }) : y.intl.formatToPlainString(y.t.ZU5x5w, {
+            }) : O.intl.formatToPlainString(O.t.ZU5x5w, {
               slotCount: t
             }),
             onClick: a,
-            loading: A,
-            disabled: A
+            loading: N,
+            disabled: N
           }],
-          children: k ? (0, r.jsx)(m.Z.TransferBody, {
-            fromGuilds: j,
-            toGuild: D,
-            blurb: y.intl.formatToPlainString(y.t.SSA2lu, {
+          children: G ? (0, r.jsx)(m.Z.TransferBody, {
+            fromGuilds: U,
+            toGuild: L,
+            blurb: O.intl.formatToPlainString(O.t.SSA2lu, {
               slotCount: t,
               guildCount: n
             }),
-            imageClass: O.transferConfirmImage,
-            error: P ? C : null,
+            imageClass: v.transferConfirmImage,
+            error: D ? R : null,
             slotCount: t,
             canceledCount: e
           }) : (0, r.jsx)(m.Z.ApplyBody, {
-            guild: D,
-            blurb: y.intl.string(y.t.yTlZV0),
-            warning: y.intl.formatToPlainString(y.t.KPnDlu, {
-              days: b.o3l,
+            guild: L,
+            blurb: O.intl.string(O.t.yTlZV0),
+            warning: O.intl.formatToPlainString(O.t.KPnDlu, {
+              days: y.o3l,
               slotCount: t
             }),
-            imageClass: O.confirmImage,
-            error: P ? C : null,
+            imageClass: v.confirmImage,
+            error: D ? R : null,
             slotCount: t,
             canceledCount: e
           })
         })
       },
       SUCCESS() {
-        let e = k ? y.intl.string(y.t["PR0n//"]) : y.intl.string(y.t["7KP/fI"]);
+        let e = G ? O.intl.string(O.t["PR0n//"]) : O.intl.string(O.t["7KP/fI"]);
         return (0, r.jsx)(s.Modal, {
-          transitionState: v,
-          onClose: U,
+          transitionState: S,
+          onClose: B,
           size: "md",
           title: e,
           actions: [],
-          children: (0, r.jsx)(E.R7, {
-            guild: D,
-            isTransfer: k,
-            guildBoostQuantity: L.length,
-            onClose: U,
+          children: (0, r.jsx)(b.R7, {
+            guild: L,
+            isTransfer: G,
+            guildBoostQuantity: j.length,
+            onClose: B,
             didPurchaseOnFractionalPremium: false
           })
         })
       }
     };
   i.useEffect(() => {
-    p.default.track(b.rMx.OPEN_MODAL, {
-      type: b.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
+    p.default.track(y.rMx.OPEN_MODAL, {
+      type: y.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
       location_section: a
     })
   }, [a]);
-  let B = G[N];
-  return null == B ? null : B()
+  let F = Z[P];
+  return null == F ? null : F()
 }

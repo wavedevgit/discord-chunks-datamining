@@ -1,5 +1,5 @@
 /** Chunk was on 76157 **/
-/** chunk id: 803414, original params: e,r,n (module,exports,require) **/
+/** chunk id: 803414, original params: e,r,t (module,exports,require) **/
 module.exports = {
   wrapper: "wrapper__7e023",
   heroImage: "heroImage__7e023",

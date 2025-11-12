@@ -138,7 +138,8 @@ async function v(e) {
           },
           selectedGuild: C,
           locationSection: p.ZY5.PREMIUM_GUILD_USER_MODAL,
-          guildBoostSlots: e
+          guildBoostSlots: e,
+          intent: D
         }))
       }
     }, {

@@ -450,7 +450,7 @@ function eA(e, t, n, r) {
     })) return F.intl.format(F.t["l4S+cQ"], {
     minutes: i,
     onClick: o,
-    gameTitle: U.r.build(e.config).application.name
+    gameTitle: e.config.messages.gameTitle
   });
   if ((0, R.$J)(e)) return s ? F.intl.format(F.t.gbtCpW, {
     onClick: o,
@@ -458,7 +458,7 @@ function eA(e, t, n, r) {
   }) : F.intl.format(F.t.Ajlcd7, {
     minutes: i,
     onClick: o,
-    gameTitle: U.r.build(e.config).application.name
+    gameTitle: e.config.messages.gameTitle
   });
   if (s) return F.intl.format(F.t.Hu8SKW, {
     targetMinutes: i
