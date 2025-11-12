@@ -43,28 +43,28 @@ function g(e) {
     keyboardModeEnabled: O,
     saturation: v,
     desaturateUserColors: I,
-    useForcedColors: S,
-    systemForcedColors: T,
+    useForcedColors: T,
+    systemForcedColors: S,
     useReducedMotion: A,
     alwaysShowLinkDecorations: C,
     hardwareAccelerationEnabled: N,
     highContrastMode: R,
     isPopoutWindow: P,
-    children: w
-  } = e, D = window.CSS.supports("selector(::-webkit-scrollbar)"), x = (0, l.e7)([u.Z], () => u.Z.zoom), L = P ? "" : "--custom-zoom: ".concat(x, ";"), M = "font-size: ".concat(E, "%; --saturation-factor: ").concat(v, "; ").concat(L), j = (0, p.Z)("highlight_mana_buttons"), k = (0, p.Z)("highlight_mana_components"), U = (0, p.Z)("highlight_void_toggleables"), G = (0, p.Z)("highlight_void_buttons"), B = o()((0, d.Z)(), (0, c.QeD)(a), "density-".concat(m), b, {
+    children: D
+  } = e, w = window.CSS.supports("selector(::-webkit-scrollbar)"), x = (0, l.e7)([u.Z], () => u.Z.zoom), L = P ? "" : "--custom-zoom: ".concat(x, ";"), M = "font-size: ".concat(E, "%; --saturation-factor: ").concat(v, "; ").concat(L), j = (0, p.Z)("highlight_mana_buttons"), k = (0, p.Z)("highlight_mana_components"), U = (0, p.Z)("highlight_void_toggleables"), G = (0, p.Z)("highlight_void_buttons"), B = o()((0, d.Z)(), (0, c.QeD)(a), "density-".concat(m), b, {
     "low-saturation": v <= c.AEw,
     "keyboard-mode": O,
     "decorate-links": C,
-    "no-webkit-scrollbar": !D,
-    "has-webkit-scrollbar": D,
+    "no-webkit-scrollbar": !w,
+    "has-webkit-scrollbar": w,
     "mouse-mode": y,
     "reduce-motion": A,
     "full-motion": !A,
     "is-mobile": s.tq,
     "app-focused": g,
     "desaturate-user-colors": I,
-    "disable-forced-colors": !S && "active" === T,
-    "enable-forced-colors": S,
+    "disable-forced-colors": !T && "active" === S,
+    "enable-forced-colors": T,
     "visual-refresh": true,
     "hardware-acceleration-disabled": !N,
     "visual-refresh-chat-input": false,
@@ -83,6 +83,6 @@ function g(e) {
   }), [n, M, B, g]);
   return (0, r.jsx)(h.Provider, {
     value: Z,
-    children: w
+    children: D
   })
 }

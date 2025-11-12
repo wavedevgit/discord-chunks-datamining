@@ -7,11 +7,11 @@ require.d(exports, {
   B6: () => eg,
   Bd: () => eU,
   Fy: () => eN,
-  GI: () => eD,
+  GI: () => ew,
   Gd: () => eW,
   I: () => ek,
   J2: () => W,
-  Jf: () => eS,
+  Jf: () => eT,
   KX: () => eL,
   MP: () => eJ,
   N8: () => e$,
@@ -31,19 +31,19 @@ require.d(exports, {
   iO: () => eC,
   kJ: () => eP,
   ly: () => em,
-  m4: () => e3,
+  m4: () => e2,
   me: () => eB,
   qI: () => eV,
   qb: () => eZ,
   t5: () => eA,
   tP: () => ep,
   tR: () => eu,
-  uA: () => eT,
+  uA: () => eS,
   vf: () => eY,
   wF: () => Y,
   z: () => eO,
   z1: () => eQ,
-  z6: () => ew,
+  z6: () => eD,
   zB: () => ez
 }), require("./388685.js"), require("./642613.js"), require("./539854.js"), require("./953529.js"), require("./314940.js");
 var Chunk647438 = require("./647438.js");
@@ -407,10 +407,10 @@ let ev = 1,
     }, [e, o, a]), n
   };
 
-function eS(e) {
+function eT(e) {
   return r.useMemo(() => (0, R.b7)(e), [e])
 }
-let eT = e => {
+let eS = e => {
   let {
     quest: t,
     questContent: n,
@@ -440,7 +440,7 @@ let eT = e => {
 function eA(e, t, n, r) {
   let {
     targetMinutes: i
-  } = eI(e), a = eS(e), o = eT({
+  } = eI(e), a = eT(e), o = eS({
     quest: e,
     questContent: n,
     sourceQuestContent: r
@@ -549,7 +549,7 @@ function eP(e) {
   }), [e])
 }
 
-function ew() {
+function eD() {
   let {
     fetching: e,
     accounts: t
@@ -578,7 +578,7 @@ function ew() {
     xboxAndPlaystationAccounts: Chunk278074
   }
 }
-let eD = e => {
+let ew = e => {
     let {
       questId: t,
       preview: n,
@@ -608,14 +608,14 @@ let eD = e => {
       quest: t
     } = e, {
       xboxAndPlaystationAccounts: n
-    } = ew(), r = eO(t), i = 0 === n.length;
+    } = eD(), r = eO(t), i = 0 === n.length;
     return (0, R.$J)(t) && i && !r
   },
   eL = () => {
     let {
       xboxAccounts: e,
       playstationAccounts: t
-    } = ew(), n = module.length > 0, r = exports.length > 0, i = require && !Chunk647438 || !require && Chunk647438, a = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_PLAYSTATION), o = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_XBOX), s = Chunk388032.intl.format(Chunk388032.t.beN4DG, {
+    } = eD(), n = module.length > 0, r = exports.length > 0, i = require && !Chunk647438 || !require && Chunk647438, a = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_PLAYSTATION), o = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_XBOX), s = Chunk388032.intl.format(Chunk388032.t.beN4DG, {
       psHelpdeskArticle: Chunk278074,
       xboxHelpdeskArticle: Chunk754700
     }), l = Chunk388032.intl.format(Chunk388032.t.HVS7nh, {
@@ -645,7 +645,7 @@ function ek(e) {
     {
       percentComplete: n
     } = eI(e),
-    r = eS(e),
+    r = eT(e),
     i = null != r ? r.percentComplete : n,
     a = 100 * i,
     o = null != r ? "".concat(null == r ? true : r.progress, "/").concat(null == r ? true : r.target) : (0, I.T3)(t, i, {
@@ -666,7 +666,7 @@ function eU(e, t, n) {
       quest: e,
       taskDetails: a,
       location: G.dr.QUEST_HOME_DESKTOP,
-      questContent: w.jn.QUEST_HOME_DESKTOP,
+      questContent: D.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: t,
       popoutTargetElementRef: n
     }),
@@ -711,32 +711,32 @@ function eB(e, t) {
     selectedPlatform: n
   }).with({
     currentProgressingPlatform: G.cd.CONSOLE
-  }, () => w.LI.CONSOLE).with({
+  }, () => D.LI.CONSOLE).with({
     currentProgressingPlatform: G.cd.DESKTOP
-  }, () => w.LI.DESKTOP).with({
+  }, () => D.LI.DESKTOP).with({
     currentProgressingPlatform: null,
     lastPlatformProgress: G.cd.CONSOLE
-  }, () => w.LI.CONSOLE).with({
+  }, () => D.LI.CONSOLE).with({
     currentProgressingPlatform: null,
     lastPlatformProgress: G.cd.DESKTOP
-  }, () => w.LI.DESKTOP).with({
+  }, () => D.LI.DESKTOP).with({
     currentProgressingPlatform: null,
     lastPlatformProgress: null,
     selectedPlatform: G.cd.CONSOLE
-  }, () => w.LI.CONSOLE).with({
+  }, () => D.LI.CONSOLE).with({
     currentProgressingPlatform: null,
     lastPlatformProgress: null,
     selectedPlatform: G.cd.DESKTOP
-  }, () => w.LI.DESKTOP).with({
+  }, () => D.LI.DESKTOP).with({
     currentProgressingPlatform: null,
     lastPlatformProgress: null,
     selectedPlatform: null
-  }, () => c && l ? w.LI.SELECT : c ? w.LI.CONSOLE : w.LI.DESKTOP).exhaustive(), [c, l, f, _, n]), s, i]
+  }, () => c && l ? D.LI.SELECT : c ? D.LI.CONSOLE : D.LI.DESKTOP).exhaustive(), [c, l, f, _, n]), s, i]
 }
 
 function eZ(e) {
   var t, n;
-  let r = eS(e),
+  let r = eT(e),
     i = eI(e),
     [a] = eB(e, i),
     s = ep(e),
@@ -745,9 +745,9 @@ function eZ(e) {
     u = null == r,
     d = o.T.DESKTOP.has(i.taskType) && i.percentComplete > 0,
     f = 0 === i.percentComplete,
-    _ = l && !c && !s && u && (d || f && a === w.LI.DESKTOP),
-    p = (0, S.isWeb)() && _ && !(0, R.Gd)(e),
-    h = (0, S.isMac)() && i.taskType === o.X.STREAM_ON_DESKTOP && _,
+    _ = l && !c && !s && u && (d || f && a === D.LI.DESKTOP),
+    p = (0, T.isWeb)() && _ && !(0, R.Gd)(e),
+    h = (0, T.isMac)() && i.taskType === o.X.STREAM_ON_DESKTOP && _,
     m = [];
   return h && m.push(F.intl.string(F.t.MFGxFM)), p && m.push(F.intl.string(F.t.BV6xDm)), m
 }
@@ -790,7 +790,7 @@ function eH(e) {
   let r = (0, c.e7)([m.default], () => m.default.locale),
     i = eI(e),
     [a] = eB(e, i),
-    o = eS(e),
+    o = eT(e),
     s = (null == (t = e.userStatus) ? true : t.completedAt) != null,
     l = null != o ? o.percentComplete : i.percentComplete;
   if (s) return F.intl.string(F.t["ij5E/5"]);
@@ -802,7 +802,7 @@ function eH(e) {
       percent: e
     })
   }
-  return a === w.LI.SELECT ? F.intl.string(F.t.EMrUHQ) : (0, R.$J)(e) ? F.intl.string(F.t.mOrpXG) : F.intl.string(F.t["7e5k7L"])
+  return a === D.LI.SELECT ? F.intl.string(F.t.EMrUHQ) : (0, R.$J)(e) ? F.intl.string(F.t.mOrpXG) : F.intl.string(F.t["7e5k7L"])
 }
 
 function eY(e) {
@@ -815,10 +815,10 @@ function eY(e) {
     popoutTargetElementRef: l,
     onGameSheetOpened: c,
     onGameSheetClosed: u
-  } = e, d = eg(r.useMemo(() => U.r.build(i.config).rewardsExpireAt, [i.config])), f = eI(i), _ = eS(i), p = (null == (t = i.userStatus) ? true : t.completedAt) != null, h = (null == (n = i.userStatus) ? true : n.enrolledAt) != null, m = f.percentComplete > 0, g = eO(i), E = (0, j.DD)({
+  } = e, d = eg(r.useMemo(() => U.r.build(i.config).rewardsExpireAt, [i.config])), f = eI(i), _ = eT(i), p = (null == (t = i.userStatus) ? true : t.completedAt) != null, h = (null == (n = i.userStatus) ? true : n.enrolledAt) != null, m = f.percentComplete > 0, g = eO(i), E = (0, j.DD)({
     quest: i,
     location: G.dr.QUESTS_BAR,
-    questContent: w.jn.QUEST_BAR_V2,
+    questContent: D.jn.QUEST_BAR_V2,
     taskDetails: f,
     sourceQuestContent: o,
     popoutTargetElementRef: l,
@@ -829,7 +829,7 @@ function eY(e) {
     expirationDate: d
   });
   if (a)
-    if (s === w.LI.SELECT) return F.intl.string(F.t.sWUpN8);
+    if (s === D.LI.SELECT) return F.intl.string(F.t.sWUpN8);
     else {
       if (!(0, R.Pb)(i) || !h || m) return E;
       let e = U.r.build(i.config).defaultRewardNameWithArticle;
@@ -865,7 +865,7 @@ function eK(e) {
     i = (0, R._p)(e),
     a = (0, R.f$)(e),
     o = (0, c.e7)([b.default], () => b.default.getCurrentUser()),
-    s = (0, T.I5)(o, Z.PremiumTypes.TIER_2);
+    s = (0, S.I5)(o, Z.PremiumTypes.TIER_2);
   if (null == n) return F.intl.formatToPlainString(F.t.l9uXL8, {
     decorationName: t
   });
@@ -911,7 +911,7 @@ let eq = () => (0, Chunk442837.Wu)([Chunk569984.Z], () => [...Chunk569984.Z.ques
   },
   eQ = e => {
     var t;
-    let n = (null == e ? true : e.userStatus) != null && (0, R.zE)(e.userStatus, w.jn.ACTIVITY_PANEL),
+    let n = (null == e ? true : e.userStatus) != null && (0, R.zE)(e.userStatus, D.jn.ACTIVITY_PANEL),
       r = ep(null != e ? e : null),
       i = (null == e || null == (t = e.userStatus) ? true : t.claimedAt) != null,
       a = (0, c.e7)([P.Z], () => null != P.Z.questEnrollmentBlockedUntil, []);
@@ -960,7 +960,7 @@ function e1(e) {
     }), o.current = t
   }, [n, i])
 }
-let e3 = e => {
+let e2 = e => {
   let t = false,
     n = r.useMemo(() => {
       var e;

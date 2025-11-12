@@ -82,9 +82,9 @@ function b(e) {
   } = e, {
     focusIndex: E,
     isUsingKeyboardNavigation: b
-  } = _, y = g(_, ["focusIndex", "isUsingKeyboardNavigation"]), O = i.useRef(null), v = i.useRef(null), I = i.useRef(null), [S, T] = i.useState(false);
+  } = _, y = g(_, ["focusIndex", "isUsingKeyboardNavigation"]), O = i.useRef(null), v = i.useRef(null), I = i.useRef(null), [T, S] = i.useState(false);
   i.useLayoutEffect(() => {
-    T(true)
+    S(true)
   }, []), i.useLayoutEffect(() => {
     var e;
     a && ((0, u.F)(O), null == (e = I.current) || e.focus())
@@ -137,6 +137,6 @@ function b(e) {
     ref: O,
     children: [(0, r.jsx)("div", {
       ref: v
-    }), n, a && S ? P : null]
+    }), n, a && T ? P : null]
   })
 }

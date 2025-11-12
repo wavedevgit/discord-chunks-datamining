@@ -68,9 +68,9 @@ function P(e, t) {
   }), e
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
-  var n, r, i = D(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -78,7 +78,7 @@ function w(e, t) {
   return i
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -94,9 +94,9 @@ function x(e) {
     N = (0, p.O5)(),
     R = (0, h.aM)(),
     P = (0, g.ly)(e.quest),
-    w = true === e.showShareLink && (0, m.vB)(e.quest.config),
+    D = true === e.showShareLink && (0, m.vB)(e.quest.config),
     {
-      handleComplete: D,
+      handleComplete: w,
       handleProgress: x,
       handleResetDismissibilityClick: L,
       handleResetStatusClick: M,
@@ -106,7 +106,7 @@ function x(e) {
       x(.9 * Math.random() + .03)
     },
     U = i.useCallback(() => {
-      if (e.quest.id === I.V6) return void window.open(f.Z.getArticleURL(S.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
+      if (e.quest.id === I.V6) return void window.open(f.Z.getArticleURL(T.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
       (0, m.nc)(e.quest, {
         content: e.questContent,
         ctaContent: p.jZ.CONTEXT_MENU_OPEN_GAME_LINK,
@@ -115,7 +115,7 @@ function x(e) {
       })
     }, [R, e.quest, e.questContent, e.sourceQuestContent]),
     G = (0, v.yc)({
-      isShareable: w,
+      isShareable: D,
       questId: e.quest.id,
       trackingCtx: i.useMemo(() => ({
         content: e.questContent,
@@ -172,7 +172,7 @@ function x(e) {
       action: j
     }), [j, e.quest.id, null == n ? true : n.id]),
     X = i.useCallback(() => {
-      (0, c.uL)(S.Z5c.QUEST_PREVIEW_TOOL_2(e.quest.id))
+      (0, c.uL)(T.Z5c.QUEST_PREVIEW_TOOL_2(e.quest.id))
     }, [e.quest.id]),
     Q = e.shouldShowDisclosure && e.quest.id !== I.V6;
   return (0, r.jsxs)(o.v2r, {
@@ -180,14 +180,14 @@ function x(e) {
     onSelect: F,
     navId: "quests-entry",
     "aria-label": A.intl.string(A.t.ogxXGq),
-    onClose: null != (t = null == e ? true : e.onClose) ? t : T.dG,
+    onClose: null != (t = null == e ? true : e.onClose) ? t : S.dG,
     children: [(0, r.jsxs)(o.kSQ, {
       children: [(0, r.jsx)(o.sNh, {
         id: "play-game",
         label: P,
         action: U,
         icon: o.zFc
-      }), w && (0, r.jsx)(o.sNh, {
+      }), D && (0, r.jsx)(o.sNh, {
         id: "share-link",
         label: A.intl.string(A.t.RDE0Sc),
         action: G,
@@ -226,7 +226,7 @@ function x(e) {
       }), (0, r.jsx)(o.sNh, {
         id: "complete",
         label: A.intl.string(A.t.jQEfRT),
-        action: D
+        action: w
       }), (0, m.$J)(e.quest) && (0, r.jsxs)(o.sNh, {
         id: "console",
         label: "Console Heartbeat",
@@ -270,7 +270,7 @@ function L(e) {
     questContent: c,
     questContentPosition: d,
     sourceQuestContent: f
-  } = e, _ = w(e, ["children", "onOpen", "onClose", "preventIdle", "quest", "questContent", "questContentPosition", "sourceQuestContent"]), h = (0, p.O5)(), m = i.useRef(null), g = i.useCallback(() => {
+  } = e, _ = D(e, ["children", "onOpen", "onClose", "preventIdle", "quest", "questContent", "questContentPosition", "sourceQuestContent"]), h = (0, p.O5)(), m = i.useRef(null), g = i.useCallback(() => {
     h({
       questId: l.id,
       questContent: c,

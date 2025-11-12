@@ -94,10 +94,10 @@ let E = {
       searchQueryString: r,
       searchQuery: O
     });
-    let S = n.map(e => d(e));
+    let T = n.map(e => d(e));
     return a.Z.dispatch({
       type: "SEARCH_MESSAGES_START",
-      ids: S
+      ids: T
     }), I.fetch(e => {
       let {
         body: n
@@ -128,12 +128,12 @@ let E = {
     }, () => {
       a.Z.dispatch({
         type: "SEARCH_MESSAGES_INDEXING",
-        ids: S
+        ids: T
       })
     }, e => {
       a.Z.dispatch({
         type: "SEARCH_MESSAGES_FAILURE",
-        ids: S,
+        ids: T,
         error: e
       })
     }), true

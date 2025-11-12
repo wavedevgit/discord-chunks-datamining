@@ -2,7 +2,7 @@
 /** chunk id: 863249, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => T
+  ZP: () => S
 }), require("./953529.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -61,13 +61,13 @@ function v(e, t) {
 }
 let I = false;
 
-function S(e) {
+function T(e) {
   i.Z.dispatch({
     type: "USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW",
     guildId: e
   })
 }
-let T = {
+let S = {
   fetchVerificationForm: async (e, t) => {
     let n = null != t ? t : _.Z.getInviteKeyForGuildId(e),
       a = p.default.getCurrentUser(),
@@ -200,7 +200,7 @@ let T = {
         type: "USER_GUILD_JOIN_REQUEST_UPDATE",
         guildId: e,
         request: a
-      }), (0, m.YG)(t.formFields) && n !== I && setTimeout(() => S(e), n), a
+      }), (0, m.YG)(t.formFields) && n !== I && setTimeout(() => T(e), n), a
     } catch (t) {
       let {
         status: e

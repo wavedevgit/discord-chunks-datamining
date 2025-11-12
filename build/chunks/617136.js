@@ -43,7 +43,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,7 +68,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -85,25 +85,25 @@ function P(e) {
   return (null == (t = e.userStatus) ? true : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null == (n = e.userStatus) ? true : n.completedAt) != null ? "COMPLETED" : (null == (r = e.userStatus) ? true : r.enrolledAt) != null ? "ENROLLED" : "NONE"
 }
 
-function w(e) {
+function D(e) {
   var t, n;
   return E.T.getConfig({
     location: "quest_analytics"
   }).use_ad_session_id ? e : null != (n = null == (t = (0, s.Ai)()) ? true : t.uuid) ? n : null
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   var r, i;
   let a = y.r.build(e.config),
     s = (0, o.Gy)(n).uuid;
-  return S({
+  return T({
     quest_id: e.id,
     quest_type: a.questType,
     game_id: a.application.id,
     game_name: a.application.name,
     application_ids: null != (i = null == (r = a.applications) ? true : r.map(e => e.id)) ? i : [],
     client_ad_session_id: s,
-    billing_session_id: w(s)
+    billing_session_id: D(s)
   }, (0, h.qe)(e.id, t))
 }
 
@@ -128,7 +128,7 @@ function L(e) {
   if (null == s || (0, b.X)({
       location: O.dr.QUEST_PREVIEW_TOOL
     }) && d.Z.getLayers().includes(v.S9g.USER_SETTINGS)) return;
-  let c = S({}, D(s, o, a), r);
+  let c = T({}, w(s, o, a), r);
   if (u.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, c), s.preview) return;
   let _ = N.has(n);
   if (i) return l.ZP.trackWithMetadata(n, c, _);
@@ -153,7 +153,7 @@ async function j(e) {
   L({
     questId: t,
     event: v.rMx.QUEST_CONTENT_CLICKED,
-    properties: A(S({}, x(n, o, s), (0, c.Z)()), {
+    properties: A(T({}, x(n, o, s), (0, c.Z)()), {
       cta_name: r,
       quest_status: null != f ? P(f) : null,
       impression_id: l,
@@ -192,8 +192,8 @@ function k(e) {
 function U() {
   let e = (0, Chunk915750.WD)();
   return Chunk647438.useCallback(t => {
-    L(A(S({}, t), {
-      properties: A(S({}, t.properties), {
+    L(A(T({}, t), {
+      properties: A(T({}, t.properties), {
         impression_id: null == e ? true : e.getId()
       })
     }))
@@ -216,7 +216,7 @@ function G() {
       e({
         questId: n,
         event: v.rMx.QUEST_CONTENT_CLICKED,
-        properties: A(S({}, x(r, s, l), (0, c.Z)()), {
+        properties: A(T({}, x(r, s, l), (0, c.Z)()), {
           cta_name: o,
           quest_status: null != f ? P(f) : null,
           click_id: (0, i.Z)(),

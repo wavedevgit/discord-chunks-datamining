@@ -123,8 +123,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
     }
   }, [b, y, O, I]);
   let {
-    x: S,
-    y: T
+    x: T,
+    y: S
   } = i.useMemo(() => {
     var e, t, n, r;
     let i = null == (e = a.current) ? true : e.getSlateEditor();
@@ -157,10 +157,10 @@ let b = Chunk647438.forwardRef(function(e, t) {
     }
   }, [o, _, a]), [A, C] = i.useState(0), [N, R] = i.useState(0);
   if (i.useLayoutEffect(() => {
-      if (null == S || null == T || null == f.current) return;
+      if (null == T || null == S || null == f.current) return;
       let e = f.current.getBoundingClientRect();
       R(e.width / 2), C(e.height + 12)
-    }, [S, T]), null == S || null == T) return null;
+    }, [T, S]), null == T || null == S) return null;
   let P = null == (n = a.current) ? true : n.getSlateEditor();
   return null == P ? null : (0, r.jsx)(u.ZP, {
     children: (0, r.jsxs)("div", {
@@ -168,8 +168,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
       ref: f,
       className: g.toolbar,
       style: {
-        top: T - A,
-        left: S - N
+        top: S - A,
+        left: T - N
       },
       onMouseDown: e => {
         e.stopPropagation()

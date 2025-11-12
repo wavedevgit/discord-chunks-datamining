@@ -30,7 +30,7 @@ let y = (e, t) => {
       subscriptionTier: v
     } = e, {
       analyticsLocations: I
-    } = (0, c.ZP)(l.Z.PREMIUM_MARKETING_FOOTER_CTA), S = (0, f.Nx)(), T = (0, d.rO)(), A = i.useRef(null), [C, N] = i.useState(false);
+    } = (0, c.ZP)(l.Z.PREMIUM_MARKETING_FOOTER_CTA), T = (0, f.Nx)(), S = (0, d.rO)(), A = i.useRef(null), [C, N] = i.useState(false);
     return i.useEffect(() => {
       !a || O || C || null == A.current || A.current.play()
     }, [a, O, C]), (0, r.jsx)(c.Gt, {
@@ -45,7 +45,7 @@ let y = (e, t) => {
           children: h.intl.string(h.t.lEw32m)
         }), (0, r.jsx)(_.PK, {
           subscriptionTier: v,
-          inOfferExperience: S,
+          inOfferExperience: T,
           containerClassName: m.footerCTAContainer,
           isApplicationHome: true,
           isDarkMode: y
@@ -62,8 +62,8 @@ let y = (e, t) => {
             },
             ref: A,
             children: (0, r.jsx)("source", {
-              src: T ? g.Z : b.Z,
-              type: T ? p.m.MP4 : p.m.WEBM
+              src: S ? g.Z : b.Z,
+              type: S ? p.m.MP4 : p.m.WEBM
             })
           })
         }), (0, r.jsx)("div", {

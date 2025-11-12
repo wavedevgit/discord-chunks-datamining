@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Gi: () => A,
-  P0: () => S,
+  P0: () => T,
   UD: () => O,
-  WF: () => T,
+  WF: () => S,
   _5: () => b,
   gT: () => I,
   iZ: () => v,
@@ -54,7 +54,7 @@ let b = function(e) {
 };
 
 function y(e) {
-  return S(u.Z.getChannel(e))
+  return T(u.Z.getChannel(e))
 }
 
 function O(e) {
@@ -69,11 +69,11 @@ function I(e) {
   return null != e && e.isModeratorReportChannel() && e.isForumPost()
 }
 
-function S(e) {
+function T(e) {
   return null != e && (v(e) || I(e))
 }
 
-function T(e) {
+function S(e) {
   if (null == e || !(0, c.U)() || !y(e)) returntrue;
   let {
     loaded: t,

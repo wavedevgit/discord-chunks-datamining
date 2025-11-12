@@ -134,7 +134,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     } : module
   }
   getTypeClass(e, t) {
-    return (0, w.l)(F, e, this.props.type, t)
+    return (0, D.l)(F, e, this.props.type, t)
   }
   isStreamerOnTypeActivityFeed() {
     return (0, Chunk420660.Z)(this.activity) && "ActivityFeed" === this.props.type
@@ -168,7 +168,7 @@ class $ extends(r = Chunk647438.PureComponent) {
         });
         break;
       case B.IIU.PLAYING:
-        t = (0, D.Z)(l);
+        t = (0, w.Z)(l);
         break;
       case B.IIU.COMPETING:
         t = Z.intl.formatToPlainString(Z.t.SQCo6D, {
@@ -188,7 +188,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     return (null == l ? true : l.type) === B.IIU.HANG_STATUS && (t = Z.intl.string(Z.t["74vS/x"])), (0, i.jsxs)("div", {
       className: F.headerContainer,
       children: [(0, i.jsx)(f.Heading, {
-        className: s()((0, w.l)(F, "headerText", e ? "EmptyBody" : "Normal")),
+        className: s()((0, D.l)(F, "headerText", e ? "EmptyBody" : "Normal")),
         variant: a ? "text-xs/semibold" : "eyebrow",
         children: (0, i.jsx)(u.Z, {
           children: t
@@ -348,7 +348,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     }) : (0, C.dS)(e) && (u = e.name)), null == u) ? null : (0, i.jsx)(f.Text, {
       title: c,
       variant: "text-sm/semibold",
-      className: s()((0, w.l)(F, "name", t.bot ? "wrap" : "normal")),
+      className: s()((0, D.l)(F, "name", t.bot ? "wrap" : "normal")),
       children: u
     })
   }
@@ -366,7 +366,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     else if (e.type === B.IIU.HANG_STATUS && null != a) o = Z.intl.formatToPlainString(Z.t.IAZiW2, {
       guildName: a.name
     }), t = () => {
-      (0, T.X)(a.id)
+      (0, S.X)(a.id)
     };
     else if (!(0, L.Z)(e)) {
       if (o = r, s = r, (0, M.Z)(e) && null != r) {
@@ -440,9 +440,9 @@ class $ extends(r = Chunk647438.PureComponent) {
     } = e;
     return null == n ? null : (0, x.Z)(e) ? (0, i.jsx)(X, {
       timestamps: n
-    }) : (0, i.jsx)(S.ZP, {
+    }) : (0, i.jsx)(T.ZP, {
       start: n.start,
-      location: S.ZP.Locations.USER_ACTIVITY,
+      location: T.ZP.Locations.USER_ACTIVITY,
       className: F.playTime,
       isApplicationStreaming: null != t
     })

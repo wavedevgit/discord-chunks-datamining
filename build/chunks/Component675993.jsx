@@ -52,8 +52,8 @@ function P(e) {
   }
   return e
 }
-let w = 2,
-  D = 2e3;
+let D = 2,
+  w = 2e3;
 
 function x(e) {
   let {
@@ -230,13 +230,13 @@ function U(e) {
   return (i.useEffect(() => {
     if (!(0, y.BQ)(a) || !(0, y.ye)(a)) return;
     let e = setTimeout(() => {
-      (null == u || null == m) && b.default.track(T.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
+      (null == u || null == m) && b.default.track(S.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
         application_id: a.id,
         is_primary_entry_point_command_non_null: null != u,
         is_bot_user_id_non_null: null != m,
         show_try_it_out_button: g
       })
-    }, D);
+    }, w);
     return () => clearTimeout(e)
   }, [a, u, m, g]), (0, y.BQ)(a) && (0, y.ye)(a)) ? null != u && null != m ? (0, r.jsxs)(l.ButtonGroup, {
     fullWidth: true,
@@ -245,7 +245,7 @@ function U(e) {
       application: a,
       sectionName: o,
       primaryEntryPointCommand: u
-    }), g && null != m ? (0, r.jsx)(S.Z, {
+    }), g && null != m ? (0, r.jsx)(T.Z, {
       botUserId: m,
       applicationId: a.id,
       analyticsLocations: E
@@ -275,7 +275,7 @@ function G(e) {
       let e = c * u;
       return {
         key: 1,
-        minHeightOverride: Math.min(e, w * c),
+        minHeightOverride: Math.min(e, D * c),
         maxHeightOverride: e
       }
     }, [u, c]),
@@ -297,13 +297,13 @@ function G(e) {
         ref: s,
         className: N.markup,
         variant: "text-sm/medium",
-        lineClamp: h ? true : w,
+        lineClamp: h ? true : D,
         style: {
           maxHeight: h ? true : d.minHeightOverride
         },
         children: o
       })
-    }), null != u && u > w ? (0, r.jsxs)(l.P3F, {
+    }), null != u && u > D ? (0, r.jsxs)(l.P3F, {
       className: C.expandableDescriptionClickable,
       onClick: () => a(e => !e),
       children: [(0, r.jsx)(l.Text, {

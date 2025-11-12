@@ -80,8 +80,8 @@ let h = {
   O = p(Chunk428595.Z.INLINE_REPLY_RULES, [(0, Chunk691424.Z)(h)]),
   v = p(Chunk428595.Z.GUILD_VERIFICATION_FORM_RULES, [(0, Chunk691424.Z)(h)]),
   I = p(Chunk428595.Z.GUILD_EVENT_RULES, [(0, Chunk691424.Z)(h)]),
-  S = p(Chunk428595.Z.AUTO_MODERATION_SYSTEM_MESSAGE_RULES, [(0, Chunk691424.Z)(h)]),
-  T = i().omit(p(Chunk428595.Z.RULES, [(0, Chunk691424.Z)(h)]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "link", "url", "autolink", "list", "heading", "subtext"),
+  T = p(Chunk428595.Z.AUTO_MODERATION_SYSTEM_MESSAGE_RULES, [(0, Chunk691424.Z)(h)]),
+  S = i().omit(p(Chunk428595.Z.RULES, [(0, Chunk691424.Z)(h)]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "link", "url", "autolink", "list", "heading", "subtext"),
   A = {
     text: Chunk428595.Z.RULES.text
   },
@@ -91,7 +91,7 @@ let h = {
     defaultReactRuleOptions: h,
     defaultRules: m,
     guildEventRules: I,
-    notifCenterV2MessagePreviewRules: T,
+    notifCenterV2MessagePreviewRules: S,
     lockscreenWidgetMessageRules: A,
     astParserFor: Chunk25209._p,
     reactParserFor: Chunk25209.w4,
@@ -104,11 +104,11 @@ let h = {
     parseInlineReply: Chunk25209.w4(O),
     parseGuildVerificationFormRule: Chunk25209.w4(v),
     parseGuildEventDescription: Chunk25209.w4(I),
-    parseAutoModerationSystemMessage: Chunk25209.w4(S),
+    parseAutoModerationSystemMessage: Chunk25209.w4(T),
     parseForumPostGuidelines: Chunk25209.w4(g),
     parseToAST: Chunk25209._p(m),
     parseTopicToAST: Chunk25209._p(E),
     parseEmbedTitleToAST: Chunk25209._p(y),
     parseInlineReplyToAST: Chunk25209._p(O),
-    parseAutoModerationSystemMessageToAST: Chunk25209._p(S)
+    parseAutoModerationSystemMessageToAST: Chunk25209._p(T)
   }

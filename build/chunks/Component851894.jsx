@@ -131,7 +131,7 @@ function B(e) {
   }), {
     pendingDisplayNameStyles: q
   } = (0, h.mD)(M, null == a ? true : a.id);
-  return (i.useEffect(() => () => c.Z.wait(T.W3), []), i.useEffect(() => {
+  return (i.useEffect(() => () => c.Z.wait(S.W3), []), i.useEffect(() => {
     null != V && f.ZP.trackWithMetadata(P.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
       destination_pane: P.jXE.SETTINGS_CUSTOMIZE_PROFILE,
@@ -141,20 +141,20 @@ function B(e) {
     value: x,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: w.intl.format(w.t["/PTB2E"], {
+      children: D.intl.format(D.t["/PTB2E"], {
         helpCenterLink: I.Z.getArticleURL(P.BhN.GUILD_PROFILES)
       })
     }), null != a ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(R.Z, {
         guildId: a.id,
         onChange: e => {
-          null != e && (0, T.HP)(e)
+          null != e && (0, S.HP)(e)
         }
       }), (0, r.jsx)(m.Z, {
         profilePreviewTitle: (0, r.jsx)(l.Heading, {
           variant: "heading-md/medium",
-          className: D.profilePreviewTitle,
-          children: w.intl.formatToPlainString(w.t.Tc0slG, {
+          className: w.profilePreviewTitle,
+          children: D.intl.formatToPlainString(D.t.Tc0slG, {
             guildName: null == a ? true : a.name
           })
         }),
@@ -163,7 +163,7 @@ function B(e) {
           pendingDisplayNameStyles: q,
           user: M,
           guild: a,
-          canUsePremiumCustomization: S.ZP.canUsePremiumProfileCustomization(M),
+          canUsePremiumCustomization: T.ZP.canUsePremiumProfileCustomization(M),
           onUpsellClick: G
         })),
         nameplatePreview: (0, r.jsx)(p.Z, j(L({}, W), {
@@ -171,7 +171,7 @@ function B(e) {
           user: M,
           guildId: null == a ? true : a.id,
           nameplate: z,
-          className: null == z ? D.nameplatePreviewPlaceholder : true,
+          className: null == z ? w.nameplatePreviewPlaceholder : true,
           isHighlighted: true
         })),
         children: (0, r.jsx)(N.Z, {})

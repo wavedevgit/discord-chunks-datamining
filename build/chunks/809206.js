@@ -6,18 +6,18 @@ require.d(exports, {
   I5: () => O,
   Mn: () => b,
   NI: () => A,
-  OU: () => D,
+  OU: () => w,
   P6: () => P,
   S2: () => E,
   V3: () => y,
   W0: () => v,
   W3: () => R,
-  ZB: () => S,
+  ZB: () => T,
   Zy: () => m,
   b9: () => C,
   e1: () => I,
-  iR: () => w,
-  s4: () => T,
+  iR: () => D,
+  s4: () => S,
   si: () => N,
   ss: () => g
 });
@@ -147,9 +147,9 @@ function b(e) {
       new_password: g
     }, e);
     true !== m && (f.avatar_decoration_sku_id = null != (o = null == m ? true : m.skuId) ? o : null), true !== O && (f.nameplate_sku_id = null != (l = null == O ? true : O.skuId) ? l : null), true !== v && (f.primary_guild_id = v), null != I ? (f.display_name_font_id = I.fontId, f.display_name_effect_id = I.effectId, f.display_name_colors = I.colors) : null === I && (f.display_name_font_id = null, f.display_name_effect_id = null, f.display_name_colors = null);
-    let S = i.K.get(u.JkL),
-      T = (0, d.xJ)();
-    null != T && null != S && (f.push_provider = T, f.push_token = S);
+    let T = i.K.get(u.JkL),
+      S = (0, d.xJ)();
+    null != S && null != T && (f.push_provider = S, f.push_token = T);
     let A = i.K.get(u.scU);
     return null != d.mv && null != A && (f.push_voip_provider = d.mv, f.push_voip_token = A), E(f)
   }, {
@@ -205,14 +205,14 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_COLLECTIBLES_ITEM",
     item: e
   })
 }
 
-function T(e) {
+function S(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_SET_PENDING_PRIMARY_GUILD_ID",
     primaryGuildId: e
@@ -250,13 +250,13 @@ function P() {
   })
 }
 
-function w() {
+function D() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED"
   })
 }
 
-function D() {
+function w() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES"
   })

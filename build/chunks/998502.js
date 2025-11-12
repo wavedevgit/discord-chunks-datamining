@@ -60,16 +60,16 @@ function v(e, t) {
   }), e
 }
 let I = window.DiscordNative,
-  S = new Set(["jpg", "jpeg", "jfif", "png"]),
-  T = new Set(["jpg", "jpeg", "jfif", "png", "webp", "gif", "tiff", "bmp", "avif"]),
+  T = new Set(["jpg", "jpeg", "jfif", "png"]),
+  S = new Set(["jpg", "jpeg", "jfif", "png", "webp", "gif", "tiff", "bmp", "avif"]),
   A = e => e.startsWith("image/"),
   C = 5,
   N = null,
   R = null,
   P = null,
-  w = {};
+  D = {};
 null != I && (N = I.remoteApp.getVersion().split(".").map(e => parseInt(e)), P = null == (r = (i = I.remoteApp).getModuleVersions) ? true : r.call(i), R = null == (a = (o = I.remoteApp).getBuildNumber) ? true : a.call(o));
-let D = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]),
+let w = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]),
   x = false,
   L = "lastImageSaveDirectory",
   M = /[<>:"/\\|?*@]/g,
@@ -113,7 +113,7 @@ var H = function(e) {
 function W(e) {
   var t, n, r, i, a, o, s, l, c;
   return {
-    id: w[null != (t = e.id) ? t : ""],
+    id: D[null != (t = e.id) ? t : ""],
     nativeProcessObserverId: parseInt(null != (n = e.id) ? n : "", 10),
     name: null != (r = e.gameName) ? r : e.name,
     origGameName: e.origGameName,
@@ -156,7 +156,7 @@ function z(e) {
 }
 let q = {
     requireModule: e => I.nativeModules.requireModule(e),
-    ensureModule: e => h.isPlatformEmbedded ? __OVERLAY__ && D.has(e) ? Promise.resolve() : I.nativeModules.ensureModule(e) : Promise.reject(Error("not embedded")),
+    ensureModule: e => h.isPlatformEmbedded ? __OVERLAY__ && w.has(e) ? Promise.resolve() : I.nativeModules.ensureModule(e) : Promise.reject(Error("not embedded")),
     get canBootstrapNewUpdater() {
       return I.nativeModules.canBootstrapNewUpdater || false
     },
@@ -186,12 +186,12 @@ let q = {
     },
     setObservedGamesCallback(e, t, n) {
       try {
-        w = {};
+        D = {};
         let r = 0,
           i = this.getDiscordUtils();
         (t && null != i.setObservedGamesCallback2 ? i.setObservedGamesCallback2 : i.setObservedGamesCallback)(e.map(e => {
           let t = ++r;
-          return null != e.id && (w[t] = e.id), v(y({}, e), {
+          return null != e.id && (D[t] = e.id), v(y({}, e), {
             cmdline: e.cmdLine,
             id: t
           })
@@ -323,7 +323,7 @@ let q = {
       l()(h.isPlatformEmbedded, "Copy image method called outside native app"), l()("function" == typeof I.clipboard.copyImage, "Copy image not supported");
       let n = await V(e),
         r = K(e, t),
-        i = null != r && S.has(r) ? "image.".concat(r) : e;
+        i = null != r && T.has(r) ? "image.".concat(r) : e;
       I.clipboard.copyImage(E.from(n), i)
     },
     async copyImageBlob(e, t) {
@@ -333,7 +333,7 @@ let q = {
     canSaveImage(e, t) {
       if (null == e || !h.isPlatformEmbedded) returnfalse;
       let n = K(e, t);
-      return null == n || T.has(n)
+      return null == n || S.has(n)
     },
     async saveImage(e, t, n) {
       var r, i, a;
@@ -407,7 +407,7 @@ let q = {
       if (!Chunk358085.isPlatformEmbedded || "function" != typeof I.clipboard.copyImage) returnfalse;
       if (null != module) {
         let t = K(module, true);
-        if (null != exports && !S.has(exports)) returnfalse
+        if (null != exports && !T.has(exports)) returnfalse
       }
       returntrue
     },

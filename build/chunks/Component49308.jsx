@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e) {
+function S(e) {
   let {
     handleClose: t,
     analyticsLocations: n
@@ -63,19 +63,19 @@ function T(e) {
   o()(null != l, "Expected selectedSkuId"), o()(null != c, "Expected application");
   let I = a[l];
   o()(null != I, "Expected sku");
-  let S = null != d || null != f || null != _,
-    T = h.length > 0 ? v.intl.formatToPlainString(v.t.VuV3Td, {
+  let T = null != d || null != f || null != _,
+    S = h.length > 0 ? v.intl.formatToPlainString(v.t.VuV3Td, {
       discountOfferAmount: h[0].discount.amount
     }) : true;
   return (i.useEffect(() => {
-    null == g || S || O.current || (O.current = true, (0, p.Z)({
+    null == g || T || O.current || (O.current = true, (0, p.Z)({
       product: g,
-      overrideTitle: T,
+      overrideTitle: S,
       analyticsLocations: n,
       onCloseCallback: t,
       purchaseType: y.o8.FIAT
     }))
-  }, [g, n, t, S, T]), S) ? (0, r.jsx)(E.C3, {
+  }, [g, n, t, T, S]), T) ? (0, r.jsx)(E.C3, {
     children: (0, r.jsx)(b.Z, {})
   }) : null
 }
@@ -117,5 +117,5 @@ function A(e) {
       sprites: (0, _.vK)(null == C ? true : C.categorySkuId),
       colors: null == N ? true : N.map(e => e.toHexString())
     })]
-  }) : (0, r.jsx)(T, S({}, e))
+  }) : (0, r.jsx)(S, T({}, e))
 }

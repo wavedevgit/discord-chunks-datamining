@@ -60,15 +60,15 @@ function y(e, t) {
 let O = "default",
   v = [],
   I = [],
-  S = [],
-  T = 0,
+  T = [],
+  S = 0,
   A = null,
   C = null,
   N = {},
   R = null,
   P = [],
-  w = null,
-  D = {},
+  D = null,
+  w = {},
   x = new Map,
   L = {
     clipsEnabled: false,
@@ -151,10 +151,10 @@ function B(e) {
     streamKey: n,
     thumbnail: r
   } = e;
-  if (T += 1, M.hasTakenDecoupledClip = M.hasTakenDecoupledClip || t === p.X9.DECOUPLED, null != n && null != r) {
+  if (S += 1, M.hasTakenDecoupledClip = M.hasTakenDecoupledClip || t === p.X9.DECOUPLED, null != n && null != r) {
     var i;
     let e = Date.now();
-    w = null != w ? w : e, D[n] = [...null != (i = D[n]) ? i : [], {
+    D = null != D ? D : e, w[n] = [...null != (i = w[n]) ? i : [], {
       timestamp: e,
       thumbnail: r
     }]
@@ -166,11 +166,11 @@ function Z(e) {
     streamKey: t,
     timestamp: n
   } = e;
-  w === n && (w = null), null == n ? D[t] = [] : D[t] = D[t].filter(e => e.timestamp !== n)
+  D === n && (D = null), null == n ? w[t] = [] : w[t] = w[t].filter(e => e.timestamp !== n)
 }
 
 function F() {
-  T = Math.max(T - 1, 0)
+  S = Math.max(S - 1, 0)
 }
 
 function V(e) {
@@ -178,14 +178,14 @@ function V(e) {
   let {
     clip: r
   } = e;
-  T = Math.max(T - 1, 0), C = y(E({
+  S = Math.max(S - 1, 0), C = y(E({
     applicationName: r.applicationName,
     ended: false
   }, C), {
     newClipIds: [...null != (t = null == C ? true : C.newClipIds) ? t : [], r.id]
   }), M = y(E({}, M), {
     newClipIds: [...null != (n = M.newClipIds) ? n : [], r.id]
-  }), S = S.filter(e => {
+  }), T = T.filter(e => {
     let {
       id: t
     } = e;
@@ -197,14 +197,14 @@ function H(e) {
   let {
     clip: t
   } = e;
-  S = [t, ...S]
+  T = [t, ...T]
 }
 
 function Y(e) {
   let {
     clipId: t
   } = e;
-  S = S.filter(e => {
+  T = T.filter(e => {
     let {
       id: n
     } = e;
@@ -269,7 +269,7 @@ function Q(e) {
   let {
     streamKey: t
   } = e;
-  if (w = null, D[t] = [], null == C || (0, l.my)(t).ownerId !== c.default.getId()) returnfalse;
+  if (D = null, w[t] = [], null == C || (0, l.my)(t).ownerId !== c.default.getId()) returnfalse;
   C = 0 === C.newClipIds.length ? null : y(E({}, C), {
     ended: true
   })
@@ -371,7 +371,7 @@ class ec extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return I
   }
   getPendingClips() {
-    return S
+    return T
   }
   getUserAgnosticState() {
     return M
@@ -386,14 +386,14 @@ class ec extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return A === e
   }
   getActiveAnimation() {
-    return w
+    return D
   }
   getStreamClipAnimations(e) {
     var t;
-    return null != (t = D[e]) ? t : v
+    return null != (t = w[e]) ? t : v
   }
   hasAnyClipAnimations() {
-    return Object.values(D).some(e => e.length > 0)
+    return Object.values(w).some(e => e.length > 0)
   }
   getHardwareClassification() {
     return M.hardwareClassification
@@ -405,7 +405,7 @@ class ec extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return M.hardwareClassificationVersion
   }
   getIsAtMaxSaveClipOperations() {
-    return T >= Chunk356659.Kw
+    return S >= Chunk356659.Kw
   }
   getLastClipsError() {
     return R

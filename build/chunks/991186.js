@@ -5,8 +5,8 @@ require.d(exports, {
   FM: () => A,
   Wx: () => I,
   ZP: () => R,
-  Zh: () => S,
-  jt: () => T,
+  Zh: () => T,
+  jt: () => S,
   xj: () => y
 }), require("./388685.js");
 var Chunk191336 = require("./191336.js"),
@@ -75,12 +75,12 @@ let I = () => {
       isNewOverlayUser: true
     })
   },
-  S = () => {
+  T = () => {
     v({
       isUsingDefaultOverlayKeybind: true
     })
   },
-  T = e => {
+  S = e => {
     v({
       overrideIsNewOverlayUser: e
     })

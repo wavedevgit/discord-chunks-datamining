@@ -53,7 +53,7 @@ function P(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,8 +64,8 @@ function w(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -77,7 +77,7 @@ function x(e) {
     highlightAddPaymentMethodButton: a,
     dropdownClassName: s,
     analyticsLocation: R,
-    currentInvoicePreview: w,
+    currentInvoicePreview: D,
     disabled: x = false
   } = e, M = (0, c.e7)([E.Z], () => E.Z.hidePersonalInformation), [j, k] = (0, c.Wu)([b.Z], () => [b.Z.paymentSources, b.Z.hasFetchedPaymentSources]), U = (0, g.V)((0, I.yb)(t)), {
     analyticsLocations: G
@@ -86,7 +86,7 @@ function x(e) {
     null == e ? await f.fG(t, n, r, G, R) : await f.tq(t, e, n, r, G, R), F(false), H(n)
   }, W = async (e, n, r) => {
     F(true);
-    let i = await (0, S.hz)({
+    let i = await (0, T.hz)({
         subscriptionId: t.id,
         paymentSourceId: null == e ? true : e.id,
         renewal: true,
@@ -98,7 +98,7 @@ function x(e) {
         amount: i.subtotal,
         currency: i.currency
       };
-    w.currency !== i.currency || w.currency === i.currency && w.total !== i.total ? await L(i, () => {
+    D.currency !== i.currency || D.currency === i.currency && D.total !== i.total ? await L(i, () => {
       r(e, n, a)
     }, () => {
       F(false)
@@ -107,7 +107,7 @@ function x(e) {
     let n = y.Z.get(t.planIdForCurrencies);
     l()(null != e, "paymentSource not specified for change"), l()(null != n, "Unable to fetch plan");
     let r = (0, v.DE)(n.id, e.id, false);
-    return r.length > 0 ? r[0] : T.pKx.USD
+    return r.length > 0 ? r[0] : S.pKx.USD
   }, z = e => {
     null != e && W(e, K(e), Y)
   }, q = e => {
@@ -115,14 +115,14 @@ function x(e) {
       W(e, K(e), Y)
     }), "function" == typeof n && n(e.id)
   }, X = () => {
-    (0, u.ZDy)(async () => e => (0, r.jsx)(_.default, D(P({}, e), {
+    (0, u.ZDy)(async () => e => (0, r.jsx)(_.default, w(P({}, e), {
       onAddPaymentSource: q,
       analyticsLocation: R
     })), {
       onCloseCallback: () => {
         (0, d.fw)()
       },
-      onCloseRequest: T.dG4
+      onCloseRequest: S.dG4
     })
   }, Q = () => {
     let e = t.paymentSourceId;

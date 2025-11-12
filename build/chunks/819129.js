@@ -77,29 +77,29 @@ function u(e) {
     [y, O] = (0, r.useState)(E),
     [v, I] = (0, r.useState)(false);
   E !== y && (O(E), I(false));
-  let S = (0, r.useMemo)(() => _(v ? [] : b), [v, b]),
-    T = (0, r.useRef)(o),
+  let T = (0, r.useMemo)(() => _(v ? [] : b), [v, b]),
+    S = (0, r.useRef)(o),
     [A, C] = (0, r.useState)(o),
     N = (0, r.useRef)(o),
     R = () => {
       if (!P) return;
-      w(false);
-      let e = g || c || T.current;
+      D(false);
+      let e = g || c || S.current;
       p(e, N.current) || (N.current = e, C(e))
     },
-    [P, w] = (0, r.useState)(false);
+    [P, D] = (0, r.useState)(false);
   return (0, r.useEffect)(R), {
-    realtimeValidation: m || S || g || c || o,
-    displayValidation: "native" === h ? m || S || A : m || S || g || c || A,
+    realtimeValidation: m || T || g || c || o,
+    displayValidation: "native" === h ? m || T || A : m || T || g || c || A,
     updateValidation(e) {
-      "aria" !== h || p(A, e) ? T.current = e : C(e)
+      "aria" !== h || p(A, e) ? S.current = e : C(e)
     },
     resetValidation() {
       let e = o;
-      p(e, N.current) || (N.current = e, C(e)), "native" === h && w(false), I(true)
+      p(e, N.current) || (N.current = e, C(e)), "native" === h && D(false), I(true)
     },
     commitValidation() {
-      "native" === h && w(true), I(true)
+      "native" === h && D(true), I(true)
     }
   }
 }

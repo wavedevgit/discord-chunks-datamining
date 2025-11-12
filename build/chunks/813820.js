@@ -93,7 +93,7 @@ class E extends Chunk495852.C {
           a.safetyState = et.internalBinaryRead(e, e.uint32(), n, a.safetyState);
           break;
         case 13:
-          a.displayNameStyles = T.internalBinaryRead(e, e.uint32(), n, a.displayNameStyles);
+          a.displayNameStyles = S.internalBinaryRead(e, e.uint32(), n, a.displayNameStyles);
           break;
         default:
           let o = n.readUnknownField;
@@ -105,7 +105,7 @@ class E extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "0" !== e.id && t.tag(1, r.TD.Varint).uint64(e.id), "" !== e.username && t.tag(2, r.TD.LengthDelimited).string(e.username), "" !== e.discriminator && t.tag(3, r.TD.LengthDelimited).string(e.discriminator), e.avatar && s.Gm.internalBinaryWrite(e.avatar, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), false !== e.bot && t.tag(5, r.TD.Varint).bool(e.bot), "0" !== e.publicFlags && t.tag(6, r.TD.Varint).uint64(e.publicFlags), e.globalName && s.Gm.internalBinaryWrite(e.globalName, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.avatarDecorationData && O.internalBinaryWrite(e.avatarDecorationData, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.primaryGuild && R.internalBinaryWrite(e.primaryGuild, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.collectibles && C.internalBinaryWrite(e.collectibles, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.displayNameStyles && T.internalBinaryWrite(e.displayNameStyles, t.tag(13, r.TD.LengthDelimited).fork(), n).join();
+    "0" !== e.id && t.tag(1, r.TD.Varint).uint64(e.id), "" !== e.username && t.tag(2, r.TD.LengthDelimited).string(e.username), "" !== e.discriminator && t.tag(3, r.TD.LengthDelimited).string(e.discriminator), e.avatar && s.Gm.internalBinaryWrite(e.avatar, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), false !== e.bot && t.tag(5, r.TD.Varint).bool(e.bot), "0" !== e.publicFlags && t.tag(6, r.TD.Varint).uint64(e.publicFlags), e.globalName && s.Gm.internalBinaryWrite(e.globalName, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.avatarDecorationData && O.internalBinaryWrite(e.avatarDecorationData, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.primaryGuild && R.internalBinaryWrite(e.primaryGuild, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.collectibles && C.internalBinaryWrite(e.collectibles, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.displayNameStyles && S.internalBinaryWrite(e.displayNameStyles, t.tag(13, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -169,7 +169,7 @@ class E extends Chunk495852.C {
       no: 13,
       name: "display_name_styles",
       kind: "message",
-      T: () => T
+      T: () => S
     }])
   }
 }
@@ -413,7 +413,7 @@ class v extends Chunk495852.C {
   }
 }
 let I = new v;
-class S extends Chunk495852.C {
+class T extends Chunk495852.C {
   create(e) {
     let t = {
       fontId: 0,
@@ -480,7 +480,7 @@ class S extends Chunk495852.C {
     }])
   }
 }
-let T = new S;
+let S = new T;
 class A extends Chunk495852.C {
   create(e) {
     let t = {};
@@ -634,8 +634,8 @@ class P extends Chunk495852.C {
     }])
   }
 }
-let w = new P;
-class D extends Chunk495852.C {
+let D = new P;
+class w extends Chunk495852.C {
   create(e) {
     let t = {
       linkedUsers: {},
@@ -669,7 +669,7 @@ class D extends Chunk495852.C {
           a.primaryGuild = R.internalBinaryRead(e, e.uint32(), n, a.primaryGuild);
           break;
         case 6:
-          a.crossPlatformRestriction = w.internalBinaryRead(e, e.uint32(), n, a.crossPlatformRestriction);
+          a.crossPlatformRestriction = D.internalBinaryRead(e, e.uint32(), n, a.crossPlatformRestriction);
           break;
         case 7:
           a.collectibles = C.internalBinaryRead(e, e.uint32(), n, a.collectibles);
@@ -681,7 +681,7 @@ class D extends Chunk495852.C {
           a.premiumState = er.internalBinaryRead(e, e.uint32(), n, a.premiumState);
           break;
         case 10:
-          a.displayNameStyles = T.internalBinaryRead(e, e.uint32(), n, a.displayNameStyles);
+          a.displayNameStyles = S.internalBinaryRead(e, e.uint32(), n, a.displayNameStyles);
           break;
         default:
           let o = n.readUnknownField;
@@ -753,7 +753,7 @@ class D extends Chunk495852.C {
     for (let i of Object.keys(e.linkedUsers)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), L.internalBinaryWrite(e.linkedUsers[i], t, n), t.join().join();
     for (let i of Object.keys(e.safetyFeatureLimits)) t.tag(2, r.TD.LengthDelimited).fork().tag(1, r.TD.Varint).uint32(parseInt(i)), t.tag(2, r.TD.LengthDelimited).fork(), U.internalBinaryWrite(e.safetyFeatureLimits[i], t, n), t.join().join();
     for (let i of Object.keys(e.safetyFlags)) t.tag(3, r.TD.LengthDelimited).fork().tag(1, r.TD.Varint).uint32(parseInt(i)), t.tag(2, r.TD.LengthDelimited).fork(), B.internalBinaryWrite(e.safetyFlags[i], t, n), t.join().join();
-    e.quest && V.internalBinaryWrite(e.quest, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.primaryGuild && R.internalBinaryWrite(e.primaryGuild, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.crossPlatformRestriction && w.internalBinaryWrite(e.crossPlatformRestriction, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.collectibles && C.internalBinaryWrite(e.collectibles, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.premiumState && er.internalBinaryWrite(e.premiumState, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.displayNameStyles && T.internalBinaryWrite(e.displayNameStyles, t.tag(10, r.TD.LengthDelimited).fork(), n).join();
+    e.quest && V.internalBinaryWrite(e.quest, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.primaryGuild && R.internalBinaryWrite(e.primaryGuild, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.crossPlatformRestriction && D.internalBinaryWrite(e.crossPlatformRestriction, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.collectibles && C.internalBinaryWrite(e.collectibles, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.premiumState && er.internalBinaryWrite(e.premiumState, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.displayNameStyles && S.internalBinaryWrite(e.displayNameStyles, t.tag(10, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -799,7 +799,7 @@ class D extends Chunk495852.C {
       no: 6,
       name: "cross_platform_restriction",
       kind: "message",
-      T: () => w
+      T: () => D
     }, {
       no: 7,
       name: "collectibles",
@@ -819,11 +819,11 @@ class D extends Chunk495852.C {
       no: 10,
       name: "display_name_styles",
       kind: "message",
-      T: () => T
+      T: () => S
     }])
   }
 }
-new D;
+new w;
 class x extends Chunk495852.C {
   create(e) {
     let t = {

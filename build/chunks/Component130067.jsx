@@ -35,7 +35,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   }
   return e
 }
-let T = 2e3,
+let S = 2e3,
   A = false;
 class C extends Chunk647438.PureComponent {
   componentDidMount() {
@@ -195,7 +195,7 @@ class C extends Chunk647438.PureComponent {
         isMicTesting: t
       } = this.state;
       if (t && e <= A) {
-        this._silenceTimeout.isStarted() || this._silenceTimeout.start(T, () => {
+        this._silenceTimeout.isStarted() || this._silenceTimeout.start(S, () => {
           this.setState({
             isDetectingInput: false
           })
@@ -262,7 +262,7 @@ function N(e) {
     ref: m,
     width: b
   } = (0, h.ZP)();
-  return (0, r.jsx)(C, S({
+  return (0, r.jsx)(C, T({
     isVoiceConnected: p,
     inputVolume: u,
     outputVolume: d,

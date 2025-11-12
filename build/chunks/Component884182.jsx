@@ -2,7 +2,7 @@
 /** chunk id: 884182, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -78,13 +78,13 @@ function I(e) {
   } = e;
   null != i && l()(1 === t.length, "footer only gets applied to single items");
   let a = t.length;
-  if (1 === a) return (0, r.jsx)(S, {
+  if (1 === a) return (0, r.jsx)(T, {
     itemsForLayout: t,
     isSingleImage: true,
     footer: i,
     maxWidth: n
   });
-  if (2 === a) return (0, r.jsx)(T, {
+  if (2 === a) return (0, r.jsx)(S, {
     itemsForLayout: t,
     maxWidth: n
   });
@@ -98,10 +98,10 @@ function I(e) {
   });
   let o = a % 3;
   return (0, r.jsxs)(r.Fragment, {
-    children: [1 === o && (0, r.jsx)(S, {
+    children: [1 === o && (0, r.jsx)(T, {
       itemsForLayout: t.slice(0, o),
       maxWidth: n
-    }), 2 === o && (0, r.jsx)(T, {
+    }), 2 === o && (0, r.jsx)(S, {
       itemsForLayout: t.slice(0, o),
       maxWidth: n
     }), 0 === o ? (0, r.jsx)(N, {
@@ -114,7 +114,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     itemsForLayout: t,
     maxWidth: n,
@@ -127,7 +127,7 @@ function S(e) {
       [h.oneByOneGridMosaic]: !i,
       [h.hasFooter]: null != a
     }),
-    children: (0, r.jsx)(w, {
+    children: (0, r.jsx)(D, {
       props: s,
       useFullWidth: !i,
       isSingleItem: true,
@@ -137,7 +137,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     itemsForLayout: t,
     maxWidth: n
@@ -146,7 +146,7 @@ function T(e) {
     className: h.oneByTwoGrid,
     children: t.map(e => (0, r.jsx)("div", {
       className: h.oneByTwoGridItem,
-      children: (0, r.jsx)(w, {
+      children: (0, r.jsx)(D, {
         props: e,
         maxWidth: i,
         maxHeight: i
@@ -164,7 +164,7 @@ function A(e) {
     className: o()(h.oneByTwoGrid, h.oneByTwoLayoutThreeGrid),
     children: [(0, r.jsx)("div", {
       className: h.oneByTwoSoloItem,
-      children: (0, r.jsx)(w, {
+      children: (0, r.jsx)(D, {
         props: t[0],
         maxWidth: i
       })
@@ -174,7 +174,7 @@ function A(e) {
         className: h.twoByOneGrid,
         children: t.splice(1).map(e => (0, r.jsx)("div", {
           className: h.twoByOneGridItem,
-          children: (0, r.jsx)(w, {
+          children: (0, r.jsx)(D, {
             props: e,
             maxWidth: a,
             maxHeight: O
@@ -192,7 +192,7 @@ function C(e) {
   } = e, i = Math.round((n - y) / 2);
   return (0, r.jsx)("div", {
     className: h.twoByTwoGrid,
-    children: t.map(e => (0, r.jsx)(w, {
+    children: t.map(e => (0, r.jsx)(D, {
       props: e,
       maxWidth: i,
       maxHeight: O,
@@ -208,7 +208,7 @@ function N(e) {
   } = e, i = Math.round((n - 2 * y) / 3);
   return (0, r.jsx)("div", {
     className: h.threeByThreeGrid,
-    children: t.map(e => (0, r.jsx)(w, {
+    children: t.map(e => (0, r.jsx)(D, {
       props: e,
       maxWidth: i,
       maxHeight: i,
@@ -225,7 +225,7 @@ let R = e => ({
     className: o()(e, h.lazyImg)
   });
 
-function w(e) {
+function D(e) {
   let {
     props: t,
     maxWidth: n = p.mT,
@@ -249,7 +249,7 @@ function w(e) {
     }))
   })
 }
-let D = function(e) {
+let w = function(e) {
   let {
     items: t,
     isInAppComponentsV2: n = false
@@ -286,7 +286,7 @@ let D = function(e) {
       className: h.nonVisualMediaItemContainer,
       children: s.map(e => (0, r.jsx)("div", {
         className: h.nonVisualMediaItem,
-        children: (0, r.jsx)(w, {
+        children: (0, r.jsx)(D, {
           props: e
         })
       }, e.item.uniqueId))

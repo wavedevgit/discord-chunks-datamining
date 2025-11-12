@@ -59,15 +59,15 @@ let _ = "mp4",
   O = "fixed_width.mp4",
   v = "fixed_width_small.mp4",
   I = "downsized_small.mp4",
-  S = "original.mp4",
-  T = m,
-  A = j(T) ? Chunk377108.EO.VIDEO : Chunk377108.EO.IMAGE,
+  T = "original.mp4",
+  S = m,
+  A = j(S) ? Chunk377108.EO.VIDEO : Chunk377108.EO.IMAGE,
   C = null,
   N = "",
   R = "",
   P = [],
-  w = [],
   D = [],
+  w = [],
   x = [];
 
 function L(e) {
@@ -75,7 +75,7 @@ function L(e) {
 }
 
 function M(e) {
-  "" === (N = e.query) && (R = "", P = [], D = [])
+  "" === (N = e.query) && (R = "", P = [], w = [])
 }
 
 function j(e) {
@@ -85,7 +85,7 @@ function j(e) {
     case O:
     case v:
     case I:
-    case S:
+    case T:
     case _:
     case p:
     case h:
@@ -135,7 +135,7 @@ function G(e) {
 
 function B(e) {
   let t = e.trendingCategories;
-  w = [...null != e.trendingGIFPreview ? [{
+  D = [...null != e.trendingGIFPreview ? [{
     type: s.wI2.TRENDING_GIFS,
     name: l.intl.string(l.t.H6zNFz),
     src: k(e.trendingGIFPreview.src),
@@ -151,7 +151,7 @@ function Z(e) {
   let {
     items: t
   } = e;
-  D = t
+  w = t
 }
 
 function F(e) {
@@ -174,13 +174,13 @@ class V extends(r = Chunk442837.ZP.Store) {
     return P
   }
   getTrendingCategories() {
-    return w
+    return D
   }
   getSelectedFormat() {
-    return T
+    return S
   }
   getSuggestions() {
-    return D
+    return w
   }
   getTrendingSearchTerms() {
     return x

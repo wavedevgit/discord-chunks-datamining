@@ -2,7 +2,7 @@
 /** chunk id: 892567, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,23 +25,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk7284 = require("./7284.js"),
   Chunk492333 = require("./492333.js");
 let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
-  S = Chunk647438.memo(function(e) {
+  T = Chunk647438.memo(function(e) {
     var t;
     let {
       userName: n,
       displayNameStyles: a,
       effectDisplayType: s = b.F.STATIC,
-      inProfile: S = false,
+      inProfile: T = false,
       textClassName: A,
       loop: C = false,
       shouldWrap: N = false,
       boldFontOpacity: R = 1,
       shouldUnderlineOnHover: P = false
-    } = e, w = (0, O.j)({
+    } = e, D = (0, O.j)({
       displayNameStyles: a,
-      inProfile: S
+      inProfile: T
     }), {
-      useReducedMotion: D,
+      useReducedMotion: w,
       saturation: x
     } = (0, d.cj)([p.Z], () => ({
       useReducedMotion: p.Z.useReducedMotion,
@@ -58,18 +58,18 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       ratio: U.minContrastRatio,
       saturationFactor: x
     }).hex()) : [], [a, M, k, U.minContrastRatio, x, j]);
-    if (!M || !S && !L || null == a) return n;
+    if (!M || !T && !L || null == a) return n;
     let F = (0, y.K)(k, Z, {
         shouldWrap: N,
         fontOpacity: I.includes(a.fontId) ? R : 1
       }),
-      V = T(k);
+      V = S(k);
     return (0, r.jsxs)("div", {
-      className: l()(v.container, w, A, {
+      className: l()(v.container, D, A, {
         [v.showEffect]: s !== b.F.PLAIN,
-        [v.animated]: s === b.F.ANIMATED && !D,
+        [v.animated]: s === b.F.ANIMATED && !w,
         [v.loop]: C,
-        [v.inProfile]: S
+        [v.inProfile]: T
       }),
       style: F,
       children: [(0, r.jsx)("span", {
@@ -89,7 +89,7 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
     })
   });
 
-function T(e) {
+function S(e) {
   switch (e) {
     case c.m.GRADIENT:
     case c.m.GLOW:

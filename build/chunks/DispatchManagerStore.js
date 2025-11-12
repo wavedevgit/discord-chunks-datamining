@@ -32,25 +32,25 @@ let y = [Chunk186901.ff.AUTHENTICATION_FAILED, Chunk186901.ff.NOT_ENTITLED],
   O = "DispatchManagerStore",
   v = [],
   I = [],
-  S = false,
-  T = null,
+  T = false,
+  S = null,
   A = null,
   C = false,
   N = new Map,
   R = false,
   P = null;
 
-function w() {
+function D() {
   let e = {
     queue: v,
-    paused: S,
+    paused: T,
     userActions: Array.from(N)
   };
   Chunk433517.K.set(O, module)
 }
 
-function D(e, t) {
-  return null != T && T.applicationId === e && T.branchId === t || null != A && A.applicationId === e && A.branchId === t
+function w(e, t) {
+  return null != S && S.applicationId === e && S.branchId === t || null != A && A.applicationId === e && A.branchId === t
 }
 
 function x() {
@@ -63,7 +63,7 @@ function x() {
       applicationId: r,
       branchId: i
     } = (0, Chunk780570.CP)(exports);
-    if (!D(r, Chunk392711)) {
+    if (!w(r, Chunk392711)) {
       let e = Chunk314897.default.getToken(),
         t = Chunk314897.default.getId();
       if (null == module) throw Error("missing user token");
@@ -86,7 +86,7 @@ function M(e, t, n, r) {
     o = I.indexOf(i);
   false !== o && I.splice(o, 1);
   let s = L(e, t);
-  0 !== s && (n ? false === s && (v.push(a), x()) : (s > 0 && v.splice(s, 1), v.unshift(a), x())), !n && S && p.Z.resume(), w()
+  0 !== s && (n ? false === s && (v.push(a), x()) : (s > 0 && v.splice(s, 1), v.unshift(a), x())), !n && T && p.Z.resume(), D()
 }
 
 function j(e, t) {
@@ -94,7 +94,7 @@ function j(e, t) {
     r = I.indexOf(n);
   false !== r && I.splice(r, 1);
   let i = L(e, t);
-  false !== i && (v.splice(i, 1), w()), x()
+  false !== i && (v.splice(i, 1), D()), x()
 }
 
 function k(e) {
@@ -140,7 +140,7 @@ function F(e) {
     branchId: n
   } = e, r = L(t, n);
   if (r < 1) returnfalse;
-  v.splice(0, 0, v.splice(r, 1)[0]), x(), S && p.Z.resume(), w()
+  v.splice(0, 0, v.splice(r, 1)[0]), x(), T && p.Z.resume(), D()
 }
 
 function V(e) {
@@ -155,9 +155,9 @@ function H(e) {
   let {
     state: t
   } = e;
-  !C && (C = true, x(), S || p.Z.resume());
-  let n = S;
-  S = t.paused, T = t.currentTask, A = t.nextTask;
+  !C && (C = true, x(), T || p.Z.resume());
+  let n = T;
+  T = t.paused, S = t.currentTask, A = t.nextTask;
   let r = false;
   v = v.filter(e => {
     let {
@@ -180,7 +180,7 @@ function H(e) {
       return r = true, false
     }
     returntrue
-  }), x(), (r || n !== S) && w()
+  }), x(), (r || n !== T) && D()
 }
 
 function Y() {
@@ -215,7 +215,7 @@ function W(e) {
 function K() {
   for (let e of Chunk594190.ZP.getRunningDiscordApplicationIds()) Chunk51025.al(module, module);
   let e = Chunk594190.ZP.getVisibleGame();
-  return S || null == module || module.pid === P || Chunk51025.wO(), P = null == module ? null : module.pid, false
+  return T || null == module || module.pid === P || Chunk51025.wO(), P = null == module ? null : module.pid, false
 }
 
 function z() {
@@ -240,7 +240,7 @@ class Q extends(r = Chunk442837.ZP.Store) {
       paused: null,
       userActions: null
     };
-    null != exports.queue && (v = X(exports.queue)), null != exports.paused && (S = exports.paused), null != exports.userActions && (N = new Map(Array.from(exports.userActions))), this.waitFor(Chunk417363.Z, Chunk594190.ZP), this.syncWith([Chunk594190.ZP], K), this.waitFor(Chunk173747.Z, Chunk314897.default, Chunk417363.Z)
+    null != exports.queue && (v = X(exports.queue)), null != exports.paused && (T = exports.paused), null != exports.userActions && (N = new Map(Array.from(exports.userActions))), this.waitFor(Chunk417363.Z, Chunk594190.ZP), this.syncWith([Chunk594190.ZP], K), this.waitFor(Chunk173747.Z, Chunk314897.default, Chunk417363.Z)
   }
   get activeItems() {
     return v.map(e => {
@@ -254,7 +254,7 @@ class Q extends(r = Chunk442837.ZP.Store) {
     return I.map(Chunk780570.CP)
   }
   get paused() {
-    return S
+    return T
   }
   getQueuePosition(e, t) {
     return L(e, t)

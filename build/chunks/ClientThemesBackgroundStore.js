@@ -25,7 +25,7 @@ var a, Chunk442837 = require("./442837.js"),
   Chunk469115 = require("./469115.js"),
   Chunk874893 = require("./874893.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -58,7 +58,7 @@ let A = true,
   P = e => {
     r = true
   },
-  w = e => {
+  D = e => {
     let {
       channelId: t,
       guildId: n
@@ -68,7 +68,7 @@ let A = true,
     null != i && (0, m.zi)(i.type) && (C = true)
   };
 
-function D() {
+function w() {
   A && (r = true), C = false
 }
 let x = () => {
@@ -124,7 +124,7 @@ class j extends(a = Chunk442837.ZP.PersistedStore) {
     return i
   }
   constructor(...e) {
-    super(...e), T(this, "migrations", [e => {
+    super(...e), S(this, "migrations", [e => {
       var t;
       return {
         gradientPresetId: null == e || null == (t = e.gradientPreset) ? true : t.id
@@ -132,14 +132,14 @@ class j extends(a = Chunk442837.ZP.PersistedStore) {
     }])
   }
 }
-T(j, "displayName", "ClientThemesBackgroundStore"), T(j, "persistKey", "ClientThemesBackgroundStore");
+S(j, "displayName", "ClientThemesBackgroundStore"), S(j, "persistKey", "ClientThemesBackgroundStore");
 let k = new j(Chunk570140.Z, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: N,
   UPDATE_MOBILE_PENDING_THEME_INDEX: R,
   RESET_PREVIEW_CLIENT_THEME: P,
-  CLIENT_THEMES_EDITOR_CLOSE: D,
-  CHANNEL_SELECT: w,
-  LOGOUT: D,
+  CLIENT_THEMES_EDITOR_CLOSE: w,
+  CHANNEL_SELECT: D,
+  LOGOUT: w,
   CACHE_LOADED: M,
   CONNECTION_OPEN: M,
   OVERLAY_INITIALIZE: M,

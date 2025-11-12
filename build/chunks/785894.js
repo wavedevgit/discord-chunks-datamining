@@ -102,7 +102,7 @@ function v(e, t) {
   return r.displayName = t.name, r
 }
 
-function I(e, t, n = S) {
+function I(e, t, n = T) {
   let r = ({
       node: e
     }) => t(e.props, e.props.ref, e),
@@ -116,19 +116,19 @@ function I(e, t, n = S) {
   return i.displayName = t.name, i
 }
 
-function S(e) {
+function T(e) {
   return (0, a.H)({
     ...e,
     addIdAndValue: true
   })
 }
-let T = (0, Chunk647438.createContext)(null);
+let S = (0, Chunk647438.createContext)(null);
 
 function A(e) {
-  let t = (0, c.useContext)(T),
+  let t = (0, c.useContext)(S),
     n = ((null == t ? true : t.dependencies) || []).concat(e.dependencies),
     r = e.idScope || (null == t ? true : t.idScope),
-    i = S({
+    i = T({
       ...e,
       idScope: r,
       dependencies: n
@@ -136,7 +136,7 @@ function A(e) {
   return (0, c.useContext)(_) && (i = c.createElement(C, null, i)), t = (0, c.useMemo)(() => ({
     dependencies: n,
     idScope: r
-  }), [r, ...n]), c.createElement(T.Provider, {
+  }), [r, ...n]), c.createElement(S.Provider, {
     value: t
   }, i)
 }

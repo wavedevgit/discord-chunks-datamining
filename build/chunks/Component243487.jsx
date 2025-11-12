@@ -142,24 +142,24 @@ let K = Chunk647438.memo(function(e) {
     anchorLeft: g,
     avatarSizeMode: b,
     maxDisplayedVoiceStates: y = M.At
-  } = e, O = (0, P.ee)(() => W(o), [o]), [v, I] = o, S = I.length > 0 && null != n && null != a && (!d || f), T = (0, s.Wu)([E.Z], () => Array.from(O).map(e => E.Z.getStreamForUser(e, _)).filter(C.lm).map(e => e.ownerId), [_, O]);
+  } = e, O = (0, P.ee)(() => W(o), [o]), [v, I] = o, T = I.length > 0 && null != n && null != a && (!d || f), S = (0, s.Wu)([E.Z], () => Array.from(O).map(e => E.Z.getStreamForUser(e, _)).filter(C.lm).map(e => e.ownerId), [_, O]);
   i.useEffect(() => {
-    S && (0, P.zi)(j.Odu.VOICE_V3, {
+    T && (0, P.zi)(j.Odu.VOICE_V3, {
       locked: A.default.isInstanceLocked(),
       shownUserIds: Array.from(O),
-      liveUserIds: T,
+      liveUserIds: S,
       contentInventoryIds: []
     })
-  }, [O, T, S]);
-  let N = () => d || !p ? null : (0, r.jsx)(w.E, {
+  }, [O, S, T]);
+  let N = () => d || !p ? null : (0, r.jsx)(D.E, {
       emptyText: U.intl.string(U.t.hEh0l1),
       icon: l.gj8
     }),
     R = y !== M.Og ? I.slice(0, y) : I,
-    D = y !== M.Og ? I.slice(y) : [],
-    x = v.get(D[0]),
+    w = y !== M.Og ? I.slice(y) : [],
+    x = v.get(w[0]),
     B = u === j.OYC.ALWAYS && y !== M.Og;
-  return S ? (0, r.jsxs)("div", {
+  return T ? (0, r.jsxs)("div", {
     className: G.voiceUserContainer,
     children: [R.map(e => {
       let i = v.get(e);
@@ -176,7 +176,7 @@ let K = Chunk647438.memo(function(e) {
         displayUserMode: u,
         locked: d
       }, e)
-    }), B && 1 === D.length && null != x && (0, r.jsx)(L.ZP, {
+    }), B && 1 === w.length && null != x && (0, r.jsx)(L.ZP, {
       sortedVoiceState: x,
       channel: a,
       widgetId: t,
@@ -188,8 +188,8 @@ let K = Chunk647438.memo(function(e) {
       displayNameMode: c,
       displayUserMode: u,
       locked: d
-    }, D[0]), B && D.length > 1 && (0, r.jsx)(Y, {
-      hiddenVoiceStates: D,
+    }, w[0]), B && w.length > 1 && (0, r.jsx)(Y, {
+      hiddenVoiceStates: w,
       voiceStateMap: v,
       size: (0, L.px)(b),
       locked: d,
@@ -200,16 +200,16 @@ let K = Chunk647438.memo(function(e) {
 
 function z(e, t) {
   let n = (0, s.e7)([O.Z, y.Z], () => y.Z.getChannel(O.Z.getVoiceChannelId())),
-    [r] = (0, s.e7)([T.ZP, h.Z, O.Z, y.Z], () => {
+    [r] = (0, s.e7)([S.ZP, h.Z, O.Z, y.Z], () => {
       let e = y.Z.getChannel(O.Z.getVoiceChannelId());
       return null == e ? [
         [], false
-      ] : e.isGuildStageVoice() ? [h.Z.getMutableParticipants(e.id, m.pV.SPEAKER), h.Z.getParticipantsVersion(e.id)] : [T.ZP.getVoiceStatesForChannel(e), T.ZP.getVoiceStateVersion(e.getGuildId())]
+      ] : e.isGuildStageVoice() ? [h.Z.getMutableParticipants(e.id, m.pV.SPEAKER), h.Z.getParticipantsVersion(e.id)] : [S.ZP.getVoiceStatesForChannel(e), S.ZP.getVoiceStateVersion(e.getGuildId())]
     }, [], N.Q),
     a = (0, g.Es)(null == n ? true : n.id, r),
     o = i.useMemo(() => new Map(a.map(e => [e.user.id, e])), [a]),
     l = (0, s.e7)([b.default], () => b.default.getId());
-  return [o, (0, s.Wu)([S.Z, O.Z, v.Z, p.Z], () => {
+  return [o, (0, s.Wu)([T.Z, O.Z, v.Z, p.Z], () => {
     let n = Array.from(new Set(a.map(e => {
       let {
         user: t
@@ -225,7 +225,7 @@ function z(e, t) {
           checkSoundboardSounds: false,
           checkIsMuted: true,
           context: e
-        }, [S.Z, O.Z, v.Z, p.Z]),
+        }, [T.Z, O.Z, v.Z, p.Z]),
         i = t === l;
       (n || i) && r.set(t, {
         isSpeaking: n,
@@ -253,13 +253,13 @@ function q(e) {
   var t;
   let {
     isSettingsPreview: n
-  } = e, i = (0, s.e7)([O.Z, y.Z], () => y.Z.getChannel(O.Z.getVoiceChannelId())), a = (0, f.ZP)(i), o = z(k.Yn.DEFAULT, e.maxDisplayedVoiceStates), l = (0, s.e7)([E.Z], () => E.Z.getStreamerActiveStreamMetadata()), c = (0, x.II)(), d = (0, u.q)(null == c ? true : c.id), p = (0, s.cj)([E.Z, A.default, D.Z], () => {
+  } = e, i = (0, s.e7)([O.Z, y.Z], () => y.Z.getChannel(O.Z.getVoiceChannelId())), a = (0, f.ZP)(i), o = z(k.Yn.DEFAULT, e.maxDisplayedVoiceStates), l = (0, s.e7)([E.Z], () => E.Z.getStreamerActiveStreamMetadata()), c = (0, x.II)(), d = (0, u.q)(null == c ? true : c.id), p = (0, s.cj)([E.Z, A.default, w.Z], () => {
     let e = E.Z.getCurrentUserActiveStream();
     return {
       displayUserMode: A.default.getDisplayUserMode(),
       displayNameMode: A.default.getDisplayNameMode(),
       avatarSizeMode: A.default.getAvatarSizeMode(),
-      streamApplication: (null == l ? true : l.pid) === D.Z.getTargetPID() ? (0, _.Z)(c) : null,
+      streamApplication: (null == l ? true : l.pid) === w.Z.getTargetPID() ? (0, _.Z)(c) : null,
       stream: e
     }
   });

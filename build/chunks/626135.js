@@ -72,13 +72,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -101,8 +101,8 @@ let C = {
   N = Chunk647438.createContext(C),
   R = {},
   P = 1e3,
-  w = 1e4,
-  D = 6e4,
+  D = 1e4,
+  w = 6e4,
   x = 12e4,
   L = 3e5,
   M = 9e5,
@@ -157,7 +157,7 @@ let V = {
     throttleKeys: e => [e.server]
   },
   [Chunk981631.rMx.ACTIVITY_UPDATED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.application_id],
     deduplicate: true
   },
@@ -193,7 +193,7 @@ let V = {
     }
   },
   [Chunk981631.rMx.QUICKSWITCHER_OPENED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.CHAT_INPUT_COMPONENT_VIEWED]: {
@@ -243,11 +243,11 @@ let V = {
     throttleKeys: e => [e.banner_type, e.channel_id]
   },
   [Chunk981631.rMx.PREMIUM_UPSELL_VIEWED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.type]
   },
   [Chunk981631.rMx.FORUM_CHANNEL_SEARCHED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.FORUM_CHANNEL_SCROLLED]: {
@@ -255,11 +255,11 @@ let V = {
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.user_id]
   },
   [Chunk981631.rMx.MEDIA_VIEWER_SESSION_COMPLETED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.SUMMARIES_UNREAD_BAR_VIEWED]: {
@@ -287,7 +287,7 @@ let V = {
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
@@ -329,11 +329,11 @@ let V = {
     throttleKeys: e => [e.channel_id, e.message_id]
   },
   [Chunk981631.rMx.OPEN_MODAL]: e => e.type === g.jXE.MEDIA_VIEWER ? {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.type]
   } : true,
   [Chunk981631.rMx.MODERATOR_QUEUE_ACTION]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.NOTIFICATION_PERMISSION_STATUS]: {
@@ -411,13 +411,13 @@ function X(e) {
     let {
       location: e
     } = a;
-    a = v({}, T(a, ["location"]), H(e))
+    a = v({}, S(a, ["location"]), H(e))
   }
   if (null != a.source) {
     let {
       source: e
     } = a;
-    a = v({}, T(a, ["source"]), Y(e))
+    a = v({}, S(a, ["source"]), Y(e))
   }
   a.client_performance_cpu = h.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = h.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = h.Z.getCPUCoreCount(), a.accessibility_features = W(), a.rendered_locale = y.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - G) / P);
   let o = h.Z.getProcessUptime();
@@ -495,7 +495,7 @@ function el(e, t) {
 function ec() {
   return (0, Chunk772848.Z)()
 }
-let eu = S(v({}, Chunk990547), {
+let eu = T(v({}, Chunk990547), {
   getCampaignParams: Chunk990547.getCampaignParams,
   setSystemAccessibilityFeatures: K,
   expandEventProperties: X,

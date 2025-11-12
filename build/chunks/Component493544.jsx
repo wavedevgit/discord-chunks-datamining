@@ -4,7 +4,7 @@
 require.d(exports, {
   ID: () => I,
   NM: () => A,
-  Xi: () => T,
+  Xi: () => S,
   ZP: () => P,
   bT: () => C
 });
@@ -83,8 +83,8 @@ let I = {
     DIVIDER: "DIVIDER",
     CUSTOM: "CUSTOM"
   },
-  S = Chunk647438.createContext(null);
-class T extends(r = Chunk647438.PureComponent) {
+  T = Chunk647438.createContext(null);
+class S extends(r = Chunk647438.PureComponent) {
   renderContent() {
     let e = this.props,
       {
@@ -122,7 +122,7 @@ function A(e) {
     })
   })
 }
-g(T, "defaultProps", {
+g(S, "defaultProps", {
   paddingTop: 60,
   paddingBottom: 60
 });
@@ -179,7 +179,7 @@ let P = function(e) {
     mobileSidebarOpen: b,
     toggleSidebar: y,
     hideSidebar: O = false
-  } = e, v = a.useRef(null), I = a.useRef(null), T = (0, _.Z)(o), A = (0, f.Yzy)(O, {
+  } = e, v = a.useRef(null), I = a.useRef(null), S = (0, _.Z)(o), A = (0, f.Yzy)(O, {
     from: {
       position: "absolute",
       opacity: 0
@@ -193,17 +193,17 @@ let P = function(e) {
     v.current = e, null != E && (E.current = e)
   }, [E]);
   a.useLayoutEffect(() => {
-    null != v.current && T !== o && v.current.scrollTo({
+    null != v.current && S !== o && v.current.scrollTo({
       to: 0
     })
-  }, [o, T, v]);
+  }, [o, S, v]);
   let P = (0, i.jsx)(R, {
     isMobile: u.tq,
     mobileSidebarOpen: b,
     closeAction: p
   });
 
-  function w() {
+  function D() {
     return null == r ? null : (0, i.jsx)(f.oXn, {
       className: s()(m.noticeRegion, {
         [m.noticeRegionHiddenSidebar]: O
@@ -212,7 +212,7 @@ let P = function(e) {
     }, o)
   }
 
-  function D() {
+  function w() {
     let e = null != y && null != p && b,
       t = u.tq && (0, i.jsxs)("div", {
         className: s()(m.mobileContentHeader, {
@@ -225,7 +225,7 @@ let P = function(e) {
     if ("custom" === g) return (0, i.jsxs)(d.W, {
       component: "div",
       className: m.contentRegion,
-      children: [t, n, !u.tq && P, w()]
+      children: [t, n, !u.tq && P, D()]
     });
     if ("scrollableCustom" === g) return (0, i.jsxs)(d.W, {
       component: "div",
@@ -233,7 +233,7 @@ let P = function(e) {
       children: [t, (0, i.jsxs)(f.yWw, {
         className: s()(m.contentRegionScroller, O ? m.contentRegionHiddenSidebar : m.contentRegionShownSidebar),
         ref: C,
-        children: [(0, i.jsx)(S.Provider, {
+        children: [(0, i.jsx)(T.Provider, {
           value: v.current,
           children: (0, i.jsx)("div", {
             ref: I,
@@ -244,7 +244,7 @@ let P = function(e) {
             })
           })
         }), !u.tq && P]
-      }), w()]
+      }), D()]
     });
     let r = N[null != g ? g : "default"];
     return (0, i.jsxs)(d.W, {
@@ -257,7 +257,7 @@ let P = function(e) {
         children: [t, (0, i.jsxs)(f.yWw, {
           className: s()(m.contentRegionScroller, O ? m.contentRegionHiddenSidebar : m.contentRegionShownSidebar),
           ref: C,
-          children: [(0, i.jsx)(S.Provider, {
+          children: [(0, i.jsx)(T.Provider, {
             value: v.current,
             children: (0, i.jsx)(f.njP.Panel, {
               id: o,
@@ -275,7 +275,7 @@ let P = function(e) {
             })
           }), !u.tq && P]
         })]
-      }), w()]
+      }), D()]
     })
   }
 
@@ -307,7 +307,7 @@ let P = function(e) {
     children: A((e, t) => (0, i.jsxs)(l.animated.div, {
       style: e,
       className: m.standardSidebarView,
-      children: [!t && x(), D()]
+      children: [!t && x(), w()]
     }))
   })
 }

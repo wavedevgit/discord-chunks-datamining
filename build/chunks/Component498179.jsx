@@ -77,9 +77,9 @@ function h(e) {
     className: b,
     hover: O,
     innerClassName: v
-  }, S = (0, i.e7)([o.Z], () => o.Z.getActiveLibraryApplication(t.id)), T = null != S ? S.sku.id : null, A = null != T ? T : t.primarySkuId, C = (0, i.e7)([s.Z], () => null != A && !s.Z.didFetchingSkuFail(A));
-  return null != S && (0, l.Je)(S) ? (0, r.jsx)(u.Z, p(f({}, I), {
-    libraryApplication: S,
+  }, T = (0, i.e7)([o.Z], () => o.Z.getActiveLibraryApplication(t.id)), S = null != T ? T.sku.id : null, A = null != S ? S : t.primarySkuId, C = (0, i.e7)([s.Z], () => null != A && !s.Z.didFetchingSkuFail(A));
+  return null != T && (0, l.Je)(T) ? (0, r.jsx)(u.Z, p(f({}, I), {
+    libraryApplication: T,
     source: y
   })) : C ? (0, r.jsx)("div", {
     children: "deprecated!"

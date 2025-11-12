@@ -60,8 +60,8 @@ let y = new Chunk710845.Z("Games"),
   O = {},
   v = 0,
   I = null,
-  S = 250,
-  T = 12e4,
+  T = 250,
+  S = 12e4,
   A = 36e5;
 
 function C() {
@@ -108,26 +108,26 @@ async function P(e) {
   throw Error("could not find launchable")
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 0;
   if (e()) return void t();
   setTimeout(() => {
-    r * S <= T ? w(e, t, n, r + 1) : n()
-  }, S)
+    r * T <= S ? D(e, t, n, r + 1) : n()
+  }, T)
 }
 
-function D(e) {
+function w(e) {
   return y.info("launch", e), new Promise((t, n) => {
     null == _.Z.safeParseWithQuery(e.launchTarget) ? n(Error("Failed to parse launch target. ".concat(e.launchTarget))) : (window.open(e.launchTarget), t([]))
   })
 }
 let x = {
-  waitSubscribed: (e, t) => new Promise((n, r) => w(() => o.Z.isSubscribed(e, t), n, r)),
+  waitSubscribed: (e, t) => new Promise((n, r) => D(() => o.Z.isSubscribed(e, t), n, r)),
   waitConnected(e) {
-    return new Promise(w.bind(this, () => l.Z.isConnected(e)))
+    return new Promise(D.bind(this, () => l.Z.isConnected(e)))
   },
   isLaunchable: e => P(N(e)).then(e => null != e).catch(() => false),
-  launch: e => P(N(e)).then(D),
+  launch: e => P(N(e)).then(w),
   launchDispatchApplication(e, t, n, i, o) {
     let {
       launchOptions: l,
@@ -175,7 +175,7 @@ let x = {
     })
   },
   isGameLaunchable: e => P(R(e)).then(e => null != e).catch(() => false),
-  launchGame: e => l.Z.isConnected(e) ? Promise.resolve() : P(R(e)).then(D),
+  launchGame: e => l.Z.isConnected(e) ? Promise.resolve() : P(R(e)).then(w),
   isProtocolRegistered: e => C().then(t => {
     var n, r;
     return null != (r = null == (n = t.isProtocolSchemeRegistered) ? true : n.call(t, e)) && r

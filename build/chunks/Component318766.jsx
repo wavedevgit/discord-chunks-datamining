@@ -35,7 +35,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,7 +60,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -71,7 +71,7 @@ let C = 20,
     tension: 800,
     friction: 24
   },
-  w = () => {
+  D = () => {
     let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk345857.premiumTooltipContainer,
@@ -91,7 +91,7 @@ let C = 20,
     })
   };
 
-function D(e) {
+function w(e) {
   return {
     "--custom-emoji-sprite-size": "".concat(N, "px"),
     "--custom-emoji-sprite-row": Math.floor(e / C),
@@ -104,12 +104,12 @@ let x = function(e) {
     className: n,
     renderButtonContents: a,
     active: I,
-    onClick: T,
+    onClick: S,
     "aria-controls": C,
     focusProps: N,
     ref: x,
     allowKeybindHint: L
-  } = e, [M, j] = i.useState(false), [k, U] = i.useState(50), G = M || I, B = (0, E.l)(v, "emojiButton", G ? "Hovered" : "Normal"), Z = D(k), F = i.useCallback(() => {
+  } = e, [M, j] = i.useState(false), [k, U] = i.useState(50), G = M || I, B = (0, E.l)(v, "emojiButton", G ? "Hovered" : "Normal"), Z = w(k), F = i.useCallback(() => {
     if (G) return;
     let e = Math.floor(Math.random() * R);
     j(true), U(e), (0, m.x)(y.qR.EmojiButtonMouseEntered)
@@ -136,7 +136,7 @@ let x = function(e) {
     onFocus: H,
     onClick: t => {
       var n;
-      null == T || T(t), null == (n = e.onClick) || n.call(e)
+      null == S || S(t), null == (n = e.onClick) || n.call(e)
     },
     "aria-label": O.intl.string(O.t["59QgaD"]),
     "aria-controls": C,
@@ -155,7 +155,7 @@ let x = function(e) {
         } = e;
         return (0, r.jsxs)(s.animated.div, {
           className: v.spriteContainer,
-          style: A(S({}, Z), {
+          style: A(T({}, Z), {
             transform: t.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
           }),
           children: [(0, r.jsx)("div", {
@@ -172,7 +172,7 @@ let x = function(e) {
   return q ? (0, r.jsx)(d.aML, {
     "data-migration-pending": true,
     targetElementRef: J,
-    text: () => (0, r.jsx)(w, {}),
+    text: () => (0, r.jsx)(D, {}),
     "aria-label": O.intl.formatToMarkdownString(O.t["/7R4q4"], {}),
     position: "top",
     shouldShow: true,

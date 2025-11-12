@@ -4,9 +4,9 @@
 require.d(exports, {
   AT: () => E,
   DQ: () => A,
-  Hz: () => w,
+  Hz: () => D,
   LD: () => C,
-  MD: () => T,
+  MD: () => S,
   SI: () => P,
   UJ: () => R,
   X6: () => I,
@@ -52,7 +52,7 @@ let g = false,
   },
   O = e => {
     let t = E();
-    return null == e ? m.qn.NONE : w(t.map(t => U(t.getUserSettingsWithDefaults()[e]) ? t.harmType : null).filter(_.lm))
+    return null == e ? m.qn.NONE : D(t.map(t => U(t.getUserSettingsWithDefaults()[e]) ? t.harmType : null).filter(_.lm))
   };
 
 function v(e) {
@@ -77,7 +77,7 @@ function I(e, t) {
   returnfalse
 }
 
-function S(e) {
+function T(e) {
   return (Array.isArray(e) ? e : [e]).flatMap(e => {
     switch (e.type) {
       case i.re.MEDIA_GALLERY:
@@ -88,14 +88,14 @@ function S(e) {
         return e.file;
       case i.re.SECTION:
       case i.re.ACTION_ROW:
-        return e.components.flatMap(S);
+        return e.components.flatMap(T);
       default:
         return []
     }
   }).map(e => "proxy_url" in e ? (0, s.ym)(e) : e)
 }
 
-function T(e, t) {
+function S(e, t) {
   var n, r;
   let i = null != t ? t : b(e);
   if (i === m.qn.NONE) returnfalse;
@@ -105,14 +105,14 @@ function T(e, t) {
     }, i))) || (null == (r = e.embeds) ? true : r.some(e => R({
       type: p.l.Embed,
       media: e
-    }, i))) || null != e.components && S(e.components).some(e => R({
+    }, i))) || null != e.components && T(e.components).some(e => R({
       type: p.l.GenericMedia,
       media: e
     }, i))) returntrue;
   let a = null;
   if ("messageSnapshots" in e ? a = e.messageSnapshots : "message_snapshots" in e && (a = e.message_snapshots), null == a || 0 === a.length) returnfalse;
   for (let e of a)
-    if (T(e.message, i)) returntrue;
+    if (S(e.message, i)) returntrue;
   returnfalse
 }
 
@@ -139,19 +139,19 @@ function A(e) {
 
 function C(e, t) {
   if (t === m.qn.NONE) return [];
-  let n = D(t);
+  let n = w(t);
   return 0 === n.length ? [] : n.filter(t => P(t, e)).map(e => m.Fj[e].obscureReason)
 }
 
 function N(e, t) {
   if (t === m.qn.NONE) returnfalse;
-  let n = D(t);
+  let n = w(t);
   return 0 !== n.length && n.filter(t => P(t, e)).length > 0
 }
 
 function R(e, t) {
   if (t === m.qn.NONE || a.ZP.get("explicit_media_redaction_ignore_pending_scan")) returnfalse;
-  let n = D(t);
+  let n = w(t);
   if (0 === n.length) returnfalse;
   switch (e.type) {
     case p.l.Embed:
@@ -182,7 +182,7 @@ function P(e, t) {
   }
 }
 
-function w(e) {
+function D(e) {
   let t = m.qn.NONE;
   for (let n of e) switch (n) {
     case m._.EXPLICIT:
@@ -197,7 +197,7 @@ function w(e) {
   return t
 }
 
-function D(e) {
+function w(e) {
   if (e === m.qn.NONE) return [];
   let t = [];
   for (let n of E())(e & n.bitmask) > 0 && t.push(n.harmType);

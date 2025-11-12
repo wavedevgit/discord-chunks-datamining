@@ -41,7 +41,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function w(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,7 +66,7 @@ function D(e, t) {
 }
 
 function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -76,9 +76,9 @@ function L(e) {
   let {
     application: a,
     context: P,
-    className: D,
+    className: w,
     sectionName: L
-  } = e, M = i.useRef(null), j = (0, s.e7)([I.Z], () => I.Z.entrypoint()), k = (0, S.L1)(a), U = (0, _.Eb)(k), G = (0, d.R)(a.id), B = (0, s.e7)([g.Z], () => {
+  } = e, M = i.useRef(null), j = (0, s.e7)([I.Z], () => I.Z.entrypoint()), k = (0, T.L1)(a), U = (0, _.Eb)(k), G = (0, d.R)(a.id), B = (0, s.e7)([g.Z], () => {
     var e;
     return null != (e = g.Z.getGuildId()) ? e : true
   }, []), Z = {
@@ -89,7 +89,7 @@ function L(e) {
   }, F = E.default.getCurrentUser(), V = (0, p.Z)({
     id: a.id,
     label: N.intl.string(N.t["+NP/b2"])
-  }), H = (0, T.P)({
+  }), H = (0, S.P)({
     application: a
   }), Y = (0, O.yE)(null != (t = a.flags) ? t : 0, C.udG.EMBEDDED), W = "channel" === P.type ? P.channel : true;
   return (0, r.jsxs)("div", {
@@ -99,7 +99,7 @@ function L(e) {
         let e = Y ? (0, f.H)({
           applicationId: a.id,
           referrerId: null == F ? true : F.id
-        }) : (0, f.J)(w({
+        }) : (0, f.J)(D({
           id: a.id
         }, k));
         (0, y.JG)(e, () => (0, l.showToast)((0, l.createToast)(N.intl.string(N.t["L/PwZf"]), l.ToastType.SUCCESS))), b.default.track(C.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
@@ -107,7 +107,7 @@ function L(e) {
           source: j
         })
       },
-      className: o()(R.clickable, D),
+      className: o()(R.clickable, w),
       "aria-label": N.intl.string(N.t.WqhZss),
       children: (0, r.jsx)(l.xPt, {
         size: "sm",
@@ -146,7 +146,7 @@ function L(e) {
               id: "add-app",
               label: N.intl.string(N.t.NgXl3C),
               action: () => {
-                null == k.customInstallUrl && (0, c.yw)(C.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, Z), (0, v.L)(x(w({}, k), {
+                null == k.customInstallUrl && (0, c.yw)(C.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, Z), (0, v.L)(x(D({}, k), {
                   oauth2Callback: e => {
                     let {
                       location: t
@@ -177,11 +177,11 @@ function L(e) {
       },
       align: "right",
       position: "bottom",
-      children: e => (0, r.jsx)(l.P3F, x(w({
+      children: e => (0, r.jsx)(l.P3F, x(D({
         innerRef: M
       }, e), {
         onClick: e.onClick,
-        className: o()(R.clickable, D),
+        className: o()(R.clickable, w),
         "aria-label": N.intl.string(N.t["UKOtz+"]),
         children: (0, r.jsx)(l.xhG, {
           size: "sm",

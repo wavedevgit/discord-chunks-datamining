@@ -2,7 +2,7 @@
 /** chunk id: 310423, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./467055.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -73,7 +73,7 @@ let C = {
   };
 
 function R(e) {
-  return (0, r.jsx)(l.Text, A(S({}, C), {
+  return (0, r.jsx)(l.Text, A(T({}, C), {
     color: "header-primary",
     children: e
   }))
@@ -85,24 +85,24 @@ function P(e) {
       option: g,
       channel: v,
       guild: I,
-      messageId: T,
-      parentOptionKey: w,
-      commandOptionSpec: D,
+      messageId: S,
+      parentOptionKey: D,
+      commandOptionSpec: w,
       sourceAnalyticsLocations: x
     } = e,
-    L = null != w ? w + " " + g.name : g.name;
+    L = null != D ? D + " " + g.name : g.name;
   if (g.type === c.jw.SUB_COMMAND || g.type === c.jw.SUB_COMMAND_GROUP) {
     let e = [(0, r.jsxs)(i.Fragment, {
-        children: [" ", (0, r.jsx)(l.Text, A(S({}, C), {
-          children: null != (n = null == D ? true : D.name_localized) ? n : g.name
+        children: [" ", (0, r.jsx)(l.Text, A(T({}, C), {
+          children: null != (n = null == w ? true : w.name_localized) ? n : g.name
         }))]
       }, L)],
-      s = Object.fromEntries(null == (t = null != (a = null == D ? true : D.options) ? a : []) ? true : t.map(e => [e.name, e]));
+      s = Object.fromEntries(null == (t = null != (a = null == w ? true : w.options) ? a : []) ? true : t.map(e => [e.name, e]));
     for (let t of null != (o = g.options) ? o : []) e = e.concat(P({
       option: t,
       channel: v,
       guild: I,
-      messageId: T,
+      messageId: S,
       parentOptionKey: L,
       commandOptionSpec: s[t.name],
       sourceAnalyticsLocations: x
@@ -116,12 +116,12 @@ function P(e) {
         t = E.default.getUser(e);
       if (null != t) {
         let e = (0, b.ij)(t, v);
-        f = (0, r.jsxs)(_.Z, A(S({}, N), {
+        f = (0, r.jsxs)(_.Z, A(T({}, N), {
           onClick: () => (0, p.openUserProfileModal)({
             userId: t.id,
             guildId: v.guild_id,
             channelId: v.id,
-            messageId: T,
+            messageId: S,
             sourceAnalyticsLocations: x
           }),
           children: [y.ME, e.nick]
@@ -132,7 +132,7 @@ function P(e) {
     case c.jw.CHANNEL: {
       let e = g.value.toString(),
         t = h.Z.getChannel(e);
-      null != t && (f = (0, r.jsxs)(_.Z, A(S({}, N), {
+      null != t && (f = (0, r.jsxs)(_.Z, A(T({}, N), {
         children: [y.zy, t.name]
       })));
       break
@@ -140,7 +140,7 @@ function P(e) {
     case c.jw.ROLE: {
       let e = g.value.toString(),
         t = null != I ? m.Z.getRole(I.id, e) : true;
-      null != t && (f = (0, r.jsxs)(_.Z, A(S({}, N), {
+      null != t && (f = (0, r.jsxs)(_.Z, A(T({}, N), {
         children: [y.ME, t.name]
       })));
       break
@@ -155,7 +155,7 @@ function P(e) {
         let t = E.default.getUser(e);
         if (null != t) {
           let e = (0, b.ij)(t, v);
-          f = (0, r.jsxs)(_.Z, A(S({}, N), {
+          f = (0, r.jsxs)(_.Z, A(T({}, N), {
             onClick: () => (0, p.openUserProfileModal)({
               userId: t.id,
               guildId: v.guild_id,
@@ -171,18 +171,18 @@ function P(e) {
       f = R(O.intl.string(O.t.nONJVc));
       break;
     default: {
-      let e = null == D || null == (s = D.choices) ? true : s.find(e => e.value === g.value);
+      let e = null == w || null == (s = w.choices) ? true : s.find(e => e.value === g.value);
       null != e && (M = null != (u = e.name_localized) ? u : e.name)
     }
   }
   return null == f && (f = R(null == M ? true : M.toString())), [(0, r.jsxs)(i.Fragment, {
-    children: [(0, r.jsxs)(l.Text, A(S({}, C), {
-      children: [" ", null != (d = null == D ? true : D.name_localized) ? d : g.name, ": "]
+    children: [(0, r.jsxs)(l.Text, A(T({}, C), {
+      children: [" ", null != (d = null == w ? true : w.name_localized) ? d : g.name, ": "]
     })), f]
   }, L)]
 }
 
-function w(e) {
+function D(e) {
   var t, n, a, o, _, p;
   let h, {
       channel: m,
@@ -196,7 +196,7 @@ function w(e) {
       onCopy: O,
       copyRef: I
     } = (0, d.Z)(m, null == b || null == (t = b.application_command) ? true : t.id),
-    T = (0, s.e7)([g.Z], () => g.Z.getGuild(m.guild_id), [m.guild_id]);
+    S = (0, s.e7)([g.Z], () => g.Z.getGuild(m.guild_id), [m.guild_id]);
   if (i.useEffect(() => {
       (null == b || b.type === c.yU.CHAT && true === b.application_command) && f.OG(m.id, E)
     }, [m.id, E, b]), null == b) h = (0, r.jsx)(l.$jN, {
@@ -209,14 +209,14 @@ function w(e) {
     for (let n of null != (_ = b.options) ? _ : []) e = e.concat(P({
       option: n,
       channel: m,
-      guild: T,
+      guild: S,
       messageId: E,
       parentOptionKey: null,
       commandOptionSpec: t[n.name],
       sourceAnalyticsLocations: y
     }));
     h = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(l.Text, A(S({}, C), {
+      children: [(0, r.jsxs)(l.Text, A(T({}, C), {
         children: ["/", null != (p = null == (a = b.application_command) ? true : a.name_localized) ? p : b.name]
       })), e]
     })
@@ -238,4 +238,4 @@ function w(e) {
     })]
   })
 }
-let D = Chunk647438.memo(w)
+let w = Chunk647438.memo(D)

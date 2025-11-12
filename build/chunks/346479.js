@@ -2,7 +2,7 @@
 /** chunk id: 346479, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./997841.js");
 var Chunk697988 = require("./697988.js"),
   Chunk544891 = require("./544891.js"),
@@ -39,7 +39,7 @@ function I(e, t) {
   }), t))
 }
 
-function S(e, t) {
+function T(e, t) {
   a.Z.dispatch({
     type: "THREAD_MEMBER_LOCAL_UPDATE",
     id: e.id,
@@ -48,7 +48,7 @@ function S(e, t) {
     isJoining: t
   })
 }
-let T = {
+let S = {
   archiveThread(e, t) {
     let n = {
       archived: true
@@ -104,7 +104,7 @@ let T = {
     invitable: t
   }),
   async joinThread(e, t) {
-    e.isForumPost() && S(e, true);
+    e.isForumPost() && T(e, true);
     try {
       return await i.tn.post({
         url: y.ANM.THREAD_MEMBER(e.id),
@@ -125,7 +125,7 @@ let T = {
         title: v.intl.string(v.t.j2d6Km),
         body: v.intl.string(v.t.fEptJP)
       });
-      e.isForumPost() && S(e, false)
+      e.isForumPost() && T(e, false)
     }
   },
   async addMember(e, t, n) {
@@ -151,7 +151,7 @@ let T = {
       })
     }
   },
-  leaveThread: (e, t) => (e.isForumPost() && S(e, false), i.tn.del({
+  leaveThread: (e, t) => (e.isForumPost() && T(e, false), i.tn.del({
     url: y.ANM.THREAD_MEMBER(e.id),
     query: {
       location: t

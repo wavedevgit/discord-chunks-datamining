@@ -78,7 +78,7 @@ function ea(e) {
     setSearchQuery: o,
     setScroller: s,
     isScrollCloseToBottom: l
-  } = e, c = (0, _.e7)([m.Z], () => m.Z.getIsEnabled(), []), u = n === x._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, k.Yn)(n), f = !(0, k.Yn)(n), h = n === x._b.TEXT, [E, b] = ep(true), [y, O] = ep(u), [v, I] = ep(d), [S, T] = ep(f), A = E && y && v && S, C = (d || u) && !A, N = f && c;
+  } = e, c = (0, _.e7)([m.Z], () => m.Z.getIsEnabled(), []), u = n === x._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, k.Yn)(n), f = !(0, k.Yn)(n), h = n === x._b.TEXT, [E, b] = ep(true), [y, O] = ep(u), [v, I] = ep(d), [T, S] = ep(f), A = E && y && v && T, C = (d || u) && !A, N = f && c;
   i.useEffect(() => {
     var e;
     let n = "channel" === t.type ? null == (e = t.channel) ? true : e.guild_id : true;
@@ -119,7 +119,7 @@ function ea(e) {
           onEmptyState: I
         }), f && (0, r.jsx)(eu, {
           context: t,
-          onEmptyState: T
+          onEmptyState: S
         }), A && (0, r.jsx)(F.A, {
           type: x.LG.HOME_EMPTY,
           textContent: n === x._b.TEXT ? q.intl.string(q.t.iKZctW) : q.intl.string(q.t.RL7Ncg)
@@ -150,7 +150,7 @@ function es(e) {
   } = e, s = i.useRef(null), [l, c] = i.useState(false), u = i.useMemo(() => o().debounce(e => {
     (0, O.yw)(K.rMx.APP_LAUNCHER_SEARCH_QUERY_TYPED, {
       query: e,
-      source: D.Z.entrypoint(),
+      source: w.Z.entrypoint(),
       location: I.Vh.APP_LAUNCHER_HOME
     })
   }, 400, {
@@ -158,7 +158,7 @@ function es(e) {
     trailing: true
   }), []), d = i.useCallback(() => n(""), [n]), f = i.useCallback(() => {
     c(true), (0, O.yw)(K.rMx.APP_LAUNCHER_SEARCH_FOCUSED, {
-      source: D.Z.entrypoint(),
+      source: w.Z.entrypoint(),
       location: I.Vh.APP_LAUNCHER_HOME
     })
   }, []), _ = i.useCallback(() => {
@@ -199,7 +199,7 @@ function el(e) {
     } = e;
     return t.id
   }) : [], [t, n]);
-  (0, S.Z)(r)
+  (0, T.Z)(r)
 }
 
 function ec(e) {
@@ -461,7 +461,7 @@ function e_(e) {
           application: e.application,
           installOnDemand: s(e.application)
         }
-      }).filter(w.lm);
+      }).filter(D.lm);
       return (0, P.yE)(a.flags, l.b.APPENDS_REMAINING_ACTIVITIES) && e.push(...o.map(e => {
         let {
           application: t
@@ -640,7 +640,7 @@ function eE(e) {
     handleViewMore: () => {
       (0, O.yw)(K.rMx.APP_LAUNCHER_SECTION_VIEW_MORE, {
         section_name: o,
-        source: D.Z.entrypoint(),
+        source: w.Z.entrypoint(),
         num: r.length
       }), l({
         type: U.gc.LIST,

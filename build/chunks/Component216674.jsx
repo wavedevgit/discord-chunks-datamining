@@ -64,7 +64,7 @@ let f = {
   g = "``";
 
 function E() {
-  let [e, t] = Chunk647438.useState(m(p)), [n, c] = Chunk647438.useState(p), [_, E] = Chunk647438.useState(m(h)), [b, y] = Chunk647438.useState(h), [O, v] = Chunk647438.useState(null), [I, S] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk29594.DS, {
+  let [e, t] = Chunk647438.useState(m(p)), [n, c] = Chunk647438.useState(p), [_, E] = Chunk647438.useState(m(h)), [b, y] = Chunk647438.useState(h), [O, v] = Chunk647438.useState(null), [I, T] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk29594.DS, {
     errorLabel: f.CONFIGURABLE,
     elementOptions: p,
     children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
@@ -73,11 +73,11 @@ function E() {
       },
       options: h
     })
-  })), T = () => {
+  })), S = () => {
     try {
       let t = JSON.parse(module),
         n = JSON.parse(_);
-      S(null), S((0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      T(null), T((0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
           variant: "text-md/normal",
           className: Chunk328310.labelSpacing,
@@ -149,7 +149,7 @@ function E() {
         variant: "primary",
         size: "sm",
         text: "Apply Changes",
-        onClick: T
+        onClick: S
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",

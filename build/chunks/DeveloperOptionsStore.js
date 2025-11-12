@@ -2,7 +2,7 @@
 /** chunk id: 857192, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => T
+  default: () => S
 }), require("./997841.js");
 var r, Chunk261470 = require("./261470.js"),
   Chunk213919 = require("./213919.js"),
@@ -115,7 +115,7 @@ function I(e) {
     isStaff: r.toString()
   })
 }
-class S extends(r = Chunk442837.ZP.Store) {
+class T extends(r = Chunk442837.ZP.Store) {
   initialize() {
     let e = Chunk433517.K.get(g);
     null != module && (b = h({}, E, module))
@@ -178,8 +178,8 @@ class S extends(r = Chunk442837.ZP.Store) {
     return Object.keys(b).map(e => b[e]), Object.keys(b).filter(e => b[e]).join(",")
   }
 }
-p(S, "displayName", "DeveloperOptionsStore");
-let T = new S(Chunk570140.Z, {
+p(T, "displayName", "DeveloperOptionsStore");
+let S = new T(Chunk570140.Z, {
   LOGOUT: v,
   CONNECTION_OPEN: I,
   DEVELOPER_OPTIONS_UPDATE_SETTINGS: O

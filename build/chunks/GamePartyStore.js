@@ -2,7 +2,7 @@
 /** chunk id: 831506, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -121,7 +121,7 @@ function I(e) {
   return n
 }
 
-function S(e) {
+function T(e) {
   let {
     updates: t
   } = e;
@@ -136,7 +136,7 @@ function S(e) {
   }).some(e => e)
 }
 
-function T(e) {
+function S(e) {
   let {
     guildId: t,
     members: n
@@ -188,7 +188,7 @@ function P(e) {
     null != n && n.add(t.id)
   }
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.syncWith([Chunk885110.Z], N), this.waitFor(Chunk314897.default, Chunk699516.Z, Chunk885110.Z)
   }
@@ -202,14 +202,14 @@ class w extends(r = Chunk442837.ZP.Store) {
     return h
   }
 }
-f(w, "displayName", "GamePartyStore");
-let D = new w(Chunk570140.Z, {
+f(D, "displayName", "GamePartyStore");
+let w = new D(Chunk570140.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: y,
   OVERLAY_INITIALIZE: O,
   GUILD_CREATE: v,
   PRESENCES_REPLACE: I,
-  PRESENCE_UPDATES: S,
-  THREAD_MEMBER_LIST_UPDATE: T,
+  PRESENCE_UPDATES: T,
+  THREAD_MEMBER_LIST_UPDATE: S,
   THREAD_MEMBERS_UPDATE: A,
   RELATIONSHIP_ADD: R,
   RELATIONSHIP_UPDATE: R,

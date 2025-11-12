@@ -46,9 +46,9 @@ function m(e) {
     targetBorderColor: b,
     targetColor: g,
     animationDelay: u
-  }, S = i.useRef(I);
+  }, T = i.useRef(I);
   return i.useEffect(() => {
-    S.current = I
+    T.current = I
   }), i.useEffect(() => {
     let {
       startColor: e,
@@ -57,7 +57,7 @@ function m(e) {
       targetBorderColor: r,
       targetColor: i,
       animationDelay: a
-    } = S.current, {
+    } = T.current, {
       useReducedMotion: o
     } = d.Z, s = o ? 0 : p, c = a + p + h;
     v({

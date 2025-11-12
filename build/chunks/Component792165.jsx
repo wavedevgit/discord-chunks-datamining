@@ -33,7 +33,7 @@ function O(e) {
     markAsDismissed: n
   } = e, O = (0, i.e7)([f.default], () => f.default.getCurrentUser()), v = y(null == O ? true : O.premiumType), I = _.ZP.canUseCustomCallSounds(O);
 
-  function S() {
+  function T() {
     (0, d.openUserSettings)(u.n.VOICE_AND_VIDEO_PANEL, {
       section: p.oAB.VOICE,
       subsection: g.GA
@@ -67,7 +67,7 @@ function O(e) {
       variant: "text-sm/normal",
       children: v
     }), I ? (0, r.jsx)(s.Button, {
-      onClick: S,
+      onClick: T,
       text: E.intl.string(E.t.RzWDqY),
       fullWidth: true
     }) : (0, r.jsx)(l.Z, {

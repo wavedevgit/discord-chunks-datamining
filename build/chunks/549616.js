@@ -86,15 +86,15 @@ class h extends Chunk803358.Z {
       hero_banner_animated_url: O,
       hero_rive_url: v,
       hero_logo_url: I,
-      catalog_banner_url: S,
-      catalog_banner_animated_url: T,
+      catalog_banner_url: T,
+      catalog_banner_animated_url: S,
       featured_block_url: A,
       logo_url: C,
       pdp_bg_url: N,
       mobile_banner_url: R,
       mobile_bg_url: P
-    } = e, w = f(e, ["products", "logo", "hero_ranking", "pdp_bg", "mobile_bg", "mobile_banner", "catalog_banner_asset", "hero_banner_asset", "featured_block", "hero_logo", "hero_logo_display_config", "hero_banner_display_config", "hero_banner_url", "hero_banner_animated_url", "hero_rive_url", "hero_logo_url", "catalog_banner_url", "catalog_banner_animated_url", "featured_block_url", "logo_url", "pdp_bg_url", "mobile_banner_url", "mobile_bg_url"]);
-    return new h(d(c({}, super.fromServer(w)), {
+    } = e, D = f(e, ["products", "logo", "hero_ranking", "pdp_bg", "mobile_bg", "mobile_banner", "catalog_banner_asset", "hero_banner_asset", "featured_block", "hero_logo", "hero_logo_display_config", "hero_banner_display_config", "hero_banner_url", "hero_banner_animated_url", "hero_rive_url", "hero_logo_url", "catalog_banner_url", "catalog_banner_animated_url", "featured_block_url", "logo_url", "pdp_bg_url", "mobile_banner_url", "mobile_bg_url"]);
+    return new h(d(c({}, super.fromServer(D)), {
       products: t.reduce((e, t) => {
         let n = o.Z.fromServer(t);
         return (p(n.type) || 0 !== n.items.length) && e.push(n), e
@@ -114,8 +114,8 @@ class h extends Chunk803358.Z {
       heroBannerAnimatedUrl: O,
       heroRiveUrl: v,
       heroLogoUrl: I,
-      catalogBannerUrl: S,
-      catalogBannerAnimatedUrl: T,
+      catalogBannerUrl: T,
+      catalogBannerAnimatedUrl: S,
       featuredBlockUrl: A,
       logoUrl: C,
       pdpBgUrl: N,

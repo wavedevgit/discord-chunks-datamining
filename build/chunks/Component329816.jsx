@@ -97,21 +97,21 @@ let X = (0, Chunk663993.Un)({
               children: [(0, r.jsx)(W.Co, {}), (0, r.jsx)(Y.ZP, {}), (0, r.jsx)(c.OUJ, {}), (0, r.jsx)(L.Wu, {
                 appContext: z.IlC.APP,
                 renderWindow: window,
-                children: (0, r.jsxs)(w.yP, {
+                children: (0, r.jsxs)(D.yP, {
                   children: [null != a ? (0, r.jsx)(J, {}) : null, (0, r.jsxs)("div", {
                     className: o()(q.appAsidePanelWrapper, d && q.mobileAppAsidePanelWrapper),
                     children: [(0, r.jsx)(A.K, {}), (0, r.jsx)("div", {
                       className: q.notAppAsidePanel,
                       "data-app-not-dev-tools": true,
-                      children: (0, r.jsx)(T.m, {
+                      children: (0, r.jsx)(S.m, {
                         children: (0, r.jsx)(x.OR, {
                           children: (0, r.jsx)(b.Z.Provider, {
                             value: y.Z,
-                            children: (0, r.jsxs)(S.p, {
+                            children: (0, r.jsxs)(T.p, {
                               children: [(0, r.jsx)("div", {
                                 className: o()(d ? q.mobileApp : q.app),
                                 children: t
-                              }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(f.nKe, {}), (0, r.jsx)(U.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(f.Ixi, {
+                              }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(f.nKe, {}), (0, r.jsx)(U.Z, {}), (0, r.jsx)(w.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(D.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(f.Ixi, {
                                 appContext: z.IlC.APP
                               }), (0, r.jsx)(O.Z, {}), (0, r.jsx)(M.Z, {}), (0, r.jsx)(X, {}), (0, r.jsx)(Q, {})]
                             })

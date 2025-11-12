@@ -6,12 +6,12 @@ require.d(exports, {
   G6: () => el,
   Gj: () => eI,
   W5: () => ey,
-  a_: () => eS,
+  a_: () => eT,
   cG: () => es,
   gC: () => ev,
   kv: () => ep,
   mW: () => ef,
-  nJ: () => eT,
+  nJ: () => eS,
   pu: () => eE,
   sN: () => eg,
   tg: () => eO,
@@ -129,7 +129,7 @@ async function el(e) {
   try {
     R.Z.getWindowOpen(ee.KJ3.ACTIVITY_POPOUT) && (0, P.xv)(ee.KJ3.ACTIVITY_POPOUT);
     let e = A.Z.getConnectedFrame();
-    null != e && T.Z.stopFrame({
+    null != e && S.Z.stopFrame({
       applicationId: e.applicationId
     }), s.Z.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_START",
@@ -146,7 +146,7 @@ async function el(e) {
         referrerId: g
       }
     });
-    let t = await eS(a, null != r ? r : true);
+    let t = await eT(a, null != r ? r : true);
     s.Z.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_SET_PROXY_TICKET",
       applicationId: a,
@@ -213,7 +213,7 @@ async function el(e) {
       channelId: null != r ? r : null,
       guildId: null != v ? v : null,
       isStart: o,
-      error: t instanceof I.Z || t instanceof _.Z || t instanceof S.Z ? t : new _.Z(t),
+      error: t instanceof I.Z || t instanceof _.Z || t instanceof T.Z ? t : new _.Z(t),
       locationKind: e
     }), false
   }
@@ -328,7 +328,7 @@ async function eu(e) {
               message: n,
               code: e
             }
-          })) : null != o && o in S.Z.ReasonCodes ? c(new S.Z(o)) : c(new S.Z(S.Z.ReasonCodes.UNKNOWN))
+          })) : null != o && o in T.Z.ReasonCodes ? c(new T.Z(o)) : c(new T.Z(T.Z.ReasonCodes.UNKNOWN))
         }
       })
     })
@@ -374,7 +374,7 @@ async function ed(e) {
   });
   if (p !== z.jy.CAN_LAUNCH) {
     let e = 4;
-    return p === z.jy.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION ? (e = 5, (0, w.w)()) : p === z.jy.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS && (e = 6, l.Z.show({
+    return p === z.jy.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION ? (e = 5, (0, D.w)()) : p === z.jy.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS && (e = 6, l.Z.show({
       title: ei.intl.string(ei.t["IOy+I5"]),
       body: ei.intl.string(ei.t.UXoQTp),
       hideActionSheet: false
@@ -479,7 +479,7 @@ async function e_() {
         rejectWithError: true
       }),
       t = module.body.applications,
-      n = exports.map(e => D.ZP.createFromServer(e));
+      n = exports.map(e => w.ZP.createFromServer(e));
     Chunk570140.Z.dispatch({
       type: "DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS",
       applications: require,
@@ -583,7 +583,7 @@ async function em(e) {
       applications: c
     }), {
       activityConfigs: l,
-      applications: c.map(e => D.ZP.createFromServer(e))
+      applications: c.map(e => w.ZP.createFromServer(e))
     }
   } catch (e) {
     return s.Z.dispatch({
@@ -665,7 +665,7 @@ function eI() {
     type: "ACTIVITY_POPOUT_WINDOW_OPEN"
   })
 }
-async function eS(e, t) {
+async function eT(e, t) {
   let n = {};
   return null != t && (n.channel_id = t), (await a.tn.post({
     url: ee.ANM.APPLICATION_PROXY_TICKET(e),
@@ -673,14 +673,14 @@ async function eS(e, t) {
     rejectWithError: true
   })).body.ticket
 }
-async function eT(e, t) {
+async function eS(e, t) {
   s.Z.dispatch({
     type: "EMBEDDED_ACTIVITY_SET_PROXY_TICKET_REFRESHING",
     applicationId: e,
     refreshing: true
   });
   try {
-    let n = await eS(e, null != t ? t : true);
+    let n = await eT(e, null != t ? t : true);
     s.Z.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_SET_PROXY_TICKET",
       applicationId: e,
@@ -703,7 +703,7 @@ async function eT(e, t) {
       channelId: t,
       guildId: a,
       locationKind: o,
-      error: l instanceof I.Z || l instanceof _.Z || l instanceof S.Z ? l : new _.Z(l)
+      error: l instanceof I.Z || l instanceof _.Z || l instanceof T.Z ? l : new _.Z(l)
     }), false
   } finally {
     s.Z.dispatch({

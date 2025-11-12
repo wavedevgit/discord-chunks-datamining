@@ -69,22 +69,22 @@ function v(e) {
     queryParams: E,
     allowPopups: y = false,
     referrerPolicy: v = "origin"
-  } = e, I = (0, f.sU)({}), S = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), A = (0, _.Z)(T, g, null == I ? window : I), C = O(b({}, E), {
-    frame_id: S,
+  } = e, I = (0, f.sU)({}), T = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), S = i.useRef(null), A = (0, _.Z)(S, g, null == I ? window : I), C = O(b({}, E), {
+    frame_id: T,
     platform: h.S4.DESKTOP
-  }), [N, R] = i.useState(false), P = u.Z.theme, w = b({}, a);
+  }), [N, R] = i.useState(false), P = u.Z.theme, D = b({}, a);
 
-  function D(e) {
+  function w(e) {
     var n;
-    null == o || o(e.target), T.current = e.target, A(true), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, C], null != t ? t : "")
+    null == o || o(e.target), S.current = e.target, A(true), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, C], null != t ? t : "")
   }
-  return P === m.BRd.LIGHT ? w.colorScheme = "light" : w.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
-    id: S
+  return P === m.BRd.LIGHT ? D.colorScheme = "light" : D.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
+    id: T
   }), () => {
     d.S.dispatch(m.CkL.IFRAME_UNMOUNT, {
-      id: S
+      id: T
     })
-  }), [S]), i.useEffect(() => {
+  }), [T]), i.useEffect(() => {
     let e = e => {
       let {
         resizing: t
@@ -94,11 +94,11 @@ function v(e) {
     return d.S.subscribe(m.CkL.MANUAL_IFRAME_RESIZING, e), () => {
       d.S.unsubscribe(m.CkL.MANUAL_IFRAME_RESIZING, e)
     }
-  }, []), N && (w.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
-    style: w,
+  }, []), N && (D.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
+    style: D,
     allow: "autoplay; encrypted-media",
     referrerPolicy: v,
-    onLoad: D,
+    onLoad: w,
     sandbox: (0, p.Z)({
       allowPopups: y
     }),

@@ -111,8 +111,8 @@ let H = Object.freeze({
       themeName: n,
       analyticsLocations: r
     } = e;
-    S.default.track(P.rMx.CLIENT_THEME_UPDATED, {
-      feature_name: w.QP.CLIENT_THEME,
+    T.default.track(P.rMx.CLIENT_THEME_UPDATED, {
+      feature_name: D.QP.CLIENT_THEME,
       theme_name: n,
       is_persisted: t,
       location_stack: r
@@ -154,7 +154,7 @@ let H = Object.freeze({
       isPreview: o,
       isCoachmark: s
     } = e;
-    if ((null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === w.Si.TIER_2 && o) return null;
+    if ((null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === D.Si.TIER_2 && o) return null;
     let l = (0, a.EQ)({
       type: i,
       isPreview: o,
@@ -188,10 +188,10 @@ let H = Object.freeze({
       isCoachmark: s
     } = e, {
       type: l
-    } = i.useContext(Y), [c] = (0, o.Wu)([A.Z], () => [A.Z.isPreview]), u = (null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === w.Si.TIER_2;
+    } = i.useContext(Y), [c] = (0, o.Wu)([A.Z], () => [A.Z.isPreview]), u = (null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === D.Si.TIER_2;
     return "EDITOR" === l && c && u ? (0, r.jsx)(E.ZP, {
-      type: w.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
-      subscriptionTier: w.Si.TIER_2,
+      type: D.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+      subscriptionTier: D.Si.TIER_2,
       children: M.intl.format(M.t.G8yQXi, {
         onPremiumClick: () => m.z
       })
@@ -226,15 +226,15 @@ let H = Object.freeze({
     i.useEffect(() => {
       (y === R.XV.length - 2 && "EDITOR" === a || g === s.Us.EASTER_EGG) && b(true)
     }, [y, a, g]);
-    let S = (e, t) => {
-        if ((0, T.zO)(e.id), W({
+    let T = (e, t) => {
+        if ((0, S.zO)(e.id), W({
             isPersisted: !m,
             analyticsLocations: h,
             themeName: s.Us[e.id]
           }), m && "SETTINGS" === a ? P(e) : (0, u.ZI)({
             backgroundGradientPresetId: e.id,
             theme: e.theme,
-            useSystemTheme: m ? D.KW.OFF : true
+            useSystemTheme: m ? w.KW.OFF : true
           }, l), null != t) {
           if (E && b(false), t <= y || 0 === t) return void O(0);
           O(e => e + 1)
@@ -244,9 +244,9 @@ let H = Object.freeze({
         await (0, u.ZI)({
           backgroundGradientPresetId: e.id,
           theme: e.theme,
-          useSystemTheme: m ? D.KW.OFF : true
+          useSystemTheme: m ? w.KW.OFF : true
         }, x.fy.SLOW_USER_ACTION), (0, p.XO)(p.wh.CLIENT_THEMES), (0, I.default)()
-      }, w = () => {
+      }, D = () => {
         if (!E) return null;
         let e = R.qt[s.Us.EASTER_EGG];
         if (null == e) return null;
@@ -261,7 +261,7 @@ let H = Object.freeze({
           children: [(0, r.jsx)(N.DR, {
             preset: e,
             isSelected: g === s.Us.EASTER_EGG,
-            onSelect: () => S(e)
+            onSelect: () => T(e)
           }), (0, r.jsx)(c.Fmz, {
             importData: t,
             shouldAnimate: !v,
@@ -285,12 +285,12 @@ let H = Object.freeze({
       }).map((e, n) => (0, r.jsx)(N.DR, {
         preset: e,
         isSelected: g === e.id,
-        onSelect: () => S(e, n),
+        onSelect: () => T(e, n),
         disabled: t,
         tabIndex: 0 !== n || t ? true : 0,
         showBadge: false,
         showLockedBadge: false
-      }, e.id)), w()]
+      }, e.id)), D()]
     })
   },
   Q = e => {
@@ -326,8 +326,8 @@ let H = Object.freeze({
       delay: a
     } = i.useContext(Y), {
       analyticsLocations: s
-    } = (0, _.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, o.Wu)([y.Z, O.ZP, A.Z], () => [y.Z.theme, null == A.Z.gradientPreset && null == v.L1.getSetting().customUserThemeSettings, O.ZP.useSystemTheme === D.KW.ON]), p = e => {
-      (0, T.xs)(), W({
+    } = (0, _.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, o.Wu)([y.Z, O.ZP, A.Z], () => [y.Z.theme, null == A.Z.gradientPreset && null == v.L1.getSetting().customUserThemeSettings, O.ZP.useSystemTheme === w.KW.ON]), p = e => {
+      (0, S.xs)(), W({
         isPersisted: true,
         analyticsLocations: s,
         themeName: "default ".concat(e)

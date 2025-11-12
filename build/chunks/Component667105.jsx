@@ -198,15 +198,15 @@ function F(e) {
     sourceQuestContent: O
   }), I = (0, b._s)({
     quest: n
-  }), S = (0, b.Rf)(n), C = i.useCallback(() => {
+  }), T = (0, b.Rf)(n), C = i.useCallback(() => {
     (0, d.$)()
   }, []), R = i.useCallback(() => {
     (0, f.Y)({
-      pageType: w.ZY5.GLOBAL_DISCOVERY_QUESTS,
-      sectionType: w.jXE.QUEST_TILE_CTA,
-      ctaObject: w.qAy.CTA_TO_ORBS_SHOP
+      pageType: D.ZY5.GLOBAL_DISCOVERY_QUESTS,
+      sectionType: D.jXE.QUEST_TILE_CTA,
+      ctaObject: D.qAy.CTA_TO_ORBS_SHOP
     }), (0, u.mK)({
-      tab: D.AW.ORBS,
+      tab: w.AW.ORBS,
       analyticsLocations: [],
       analyticsSource: c.Z.QUEST_HOME_PAGE
     })
@@ -306,7 +306,7 @@ function F(e) {
           }
         };
         if (p) return {
-          text: (0, E.F9)(S),
+          text: (0, E.F9)(T),
           tooltipText: x.intl.string(x.t.hsbwjv),
           onClick: () => (0, N.openVideoQuestModal)({
             quest: n,
@@ -339,7 +339,7 @@ function F(e) {
           tooltipText: null,
           onClick: v
         };
-        if ((0, T.i)("useCtaConfig")) return {
+        if ((0, S.i)("useCtaConfig")) return {
           tooltipText: null,
           onClick: v,
           text: (0, E.wj)(n.config) ? x.intl.string(x.t.bAGFz3) : x.intl.string(x.t.vTgCWx)
@@ -364,7 +364,7 @@ function F(e) {
           text: x.intl.string(x.t.bAGFz3)
         })
     }
-  }, [r, p, I, _, v, a, n, o, s, l, L, S, C, R, y, j, O, B, G])
+  }, [r, p, I, _, v, a, n, o, s, l, L, T, C, R, y, j, O, B, G])
 }
 
 function V() {
@@ -384,7 +384,7 @@ function H(e) {
   let {
     location: n,
     quest: r
-  } = e, i = (0, S.Z)({
+  } = e, i = (0, T.Z)({
     location: n
   }), a = (0, b.tP)(r), s = (0, I.b)({
     location: n

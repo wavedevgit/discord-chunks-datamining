@@ -95,15 +95,15 @@ function y(e) {
     onDoubleClick: O,
     isActive: v,
     onMouseEnter: I,
-    onMouseLeave: S,
-    onFocus: T,
+    onMouseLeave: T,
+    onFocus: S,
     onBlur: A,
     pulse: C,
     sparkle: N,
     notification: R,
     "aria-label": P,
-    "aria-expanded": w,
-    "aria-haspopup": D,
+    "aria-expanded": D,
+    "aria-haspopup": w,
     "aria-controls": x,
     noHover: L
   } = e, M = (0, l.Yzy)(null != g, m(p({}, b), {
@@ -128,8 +128,8 @@ function y(e) {
   return (0, r.jsxs)(l.P3F, {
     innerRef: t,
     "aria-label": P,
-    "aria-expanded": w,
-    "aria-haspopup": D,
+    "aria-expanded": D,
+    "aria-haspopup": w,
     "aria-controls": x,
     "aria-disabled": i,
     className: o()(n, f.button, {
@@ -141,8 +141,8 @@ function y(e) {
     onClick: i ? true : y,
     onDoubleClick: i ? true : O,
     onMouseEnter: I,
-    onMouseLeave: S,
-    onFocus: T,
+    onMouseLeave: T,
+    onFocus: S,
     onBlur: A,
     focusProps: {
       offset: {

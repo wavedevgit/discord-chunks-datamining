@@ -57,10 +57,10 @@ function f(e) {
     enabled: b,
     autoFocusElement: y,
     useVirtualFocus: O
-  } = e, v = r.useRef(b), I = u(c(t, f, _)), [S, T] = r.useState(false), [A, C] = r.useState(false), [N, R] = r.useState(false), [P] = r.useState(() => new o.$o(e => {
+  } = e, v = r.useRef(b), I = u(c(t, f, _)), [T, S] = r.useState(false), [A, C] = r.useState(false), [N, R] = r.useState(false), [P] = r.useState(() => new o.$o(e => {
     let [t, n] = e.split(",").map(Number);
     return () => {
-      T(true), g({
+      S(true), g({
         type: i.s.SET_FOCUSED_POSITION,
         x: t,
         y: n
@@ -68,17 +68,17 @@ function f(e) {
     }
   }));
   r.useEffect(() => () => P.clean(), [P]);
-  let w = r.useCallback(e => {
+  let D = r.useCallback(e => {
       if (!v.current || !y) returnfalse;
       e.focus()
     }, [y]),
-    D = r.useCallback((e, n) => {
+    w = r.useCallback((e, n) => {
       let r = c(t, e, n);
       (null != h ? h(e, n, r) : Promise.resolve()).then(() => {
         let e = u(r);
-        null != e ? (w(e), C(false)) : requestAnimationFrame(() => C(true))
+        null != e ? (D(e), C(false)) : requestAnimationFrame(() => C(true))
       })
-    }, [t, h, w]),
+    }, [t, h, D]),
     x = r.useCallback(function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
         [n, r] = null != m ? m(f, _) : [f, _];
@@ -88,25 +88,25 @@ function f(e) {
           y: r
         }), !e)) return void R(true);
       let a = u(c(t, n, r));
-      null != a && (R(true), w(a))
-    }, [g, f, _, m, t, w]),
+      null != a && (R(true), D(a))
+    }, [g, f, _, m, t, D]),
     [L, M] = r.useState(false);
   r.useEffect(() => {
-    if (!L || !S) return;
+    if (!L || !T) return;
     M(false);
     let e = u(c(t, f, _));
-    if (null != e) return void w(e);
-    T(false);
+    if (null != e) return void D(e);
+    S(false);
     let n = u(c(t));
-    null != n && w(n)
-  }, [t, L, S, w, f, _]);
+    null != n && D(n)
+  }, [t, L, T, D, f, _]);
   let j = r.useCallback(e => {
     v.current && null == e && M(true)
   }, []);
   r.useEffect(() => {
-    S && A && null != I && (w(I), C(false))
+    T && A && null != I && (D(I), C(false))
   }, [A, I]), r.useEffect(() => {
-    S && (N || D(f, _), R(false))
+    T && (N || w(f, _), R(false))
   }, [f, _]);
   let k = r.useCallback(e => {
       if (!v.current) return;
@@ -135,11 +135,11 @@ function f(e) {
           }), null != p ? p(f, _, e) : null != I && I.click()
       }
     }, [x, g, y, I, p, f, _]),
-    U = r.useCallback(e => e.currentTarget !== e.target ? (S || (T(true), R(true)), false) : S ? (x(false), false) : void(E && null != I ? D(f, _) : x(true)), [S, E, I, x, D, f, _]),
+    U = r.useCallback(e => e.currentTarget !== e.target ? (T || (S(true), R(true)), false) : T ? (x(false), false) : void(E && null != I ? w(f, _) : x(true)), [T, E, I, x, w, f, _]),
     G = r.useCallback(e => {
       if (e.target !== e.currentTarget) {
         if (e.currentTarget.contains(e.relatedTarget)) returnfalse;
-        T(false)
+        S(false)
       }
     }, []),
     B = r.useMemo(() => Math.max(...n), [n]),
@@ -147,12 +147,12 @@ function f(e) {
       role: "grid",
       "aria-rowcount": n.length,
       "aria-colcount": B,
-      tabIndex: S && E ? false : 0,
+      tabIndex: T && E ? false : 0,
       "data-ref-id": t,
       onKeyDown: k,
       onFocus: U,
       onBlur: G
-    }), [n.length, B, S, E, t, k, U, G]),
+    }), [n.length, B, T, E, t, k, U, G]),
     F = r.useCallback((e, n) => {
       let r = {
         role: "gridcell",

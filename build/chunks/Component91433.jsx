@@ -31,9 +31,9 @@ function E(e) {
   } = e, {
     themeType: O
   } = (0, p.z)(), v = O === h.l.MODAL_V2, I = f.ZP.getName(n, a, t), {
-    trackUserProfileAction: S
+    trackUserProfileAction: T
   } = (0, _.KZ)(), {
-    newestAnalyticsLocation: T
+    newestAnalyticsLocation: S
   } = (0, l.ZP)(), {
     acceptFriendRequest: A,
     cancelFriendRequest: C
@@ -41,17 +41,17 @@ function E(e) {
     userId: t.id,
     applicationId: E,
     isGameRelationship: b,
-    location: T
+    location: S
   }), N = i.useCallback(() => {
-    A(), S({
+    A(), T({
       action: b ? "ACCEPT_GAME_FRIEND_REQUEST" : "ACCEPT_FRIEND_REQUEST"
     })
-  }, [A, b, S]), R = i.useCallback(() => {
-    C(), S({
+  }, [A, b, T]), R = i.useCallback(() => {
+    C(), T({
       action: b ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
     })
-  }, [C, b, S]), P = null != E, w = (0, c.q)(E);
-  return P && null == w ? null : (0, r.jsxs)("div", {
+  }, [C, b, T]), P = null != E, D = (0, c.q)(E);
+  return P && null == D ? null : (0, r.jsxs)("div", {
     className: o()(g.container, y),
     children: [P ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
@@ -59,10 +59,10 @@ function E(e) {
         username: I,
         applicationIcon: () => (0, r.jsx)(u.Z, {
           className: g.gameIcon,
-          game: w,
+          game: D,
           size: u.A.XXSMALL
-        }, null == w ? true : w.id),
-        applicationName: null == w ? true : w.name
+        }, null == D ? true : D.id),
+        applicationName: null == D ? true : D.name
       })
     }) : (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",

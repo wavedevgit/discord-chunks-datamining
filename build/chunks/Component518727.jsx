@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   P: () => I,
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,17 +26,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk293914 = require("./293914.js"),
   Chunk503019 = require("./503019.js");
 let I = 1e3,
-  S = e => {
+  T = e => {
     let {
       children: t,
       isConfirmationStep: n
-    } = e, a = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [I, S] = (0, i.useState)("entry"), T = (0, i.useRef)(null), A = (0, i.useRef)(null), C = (0, i.useCallback)(() => {
-      if ("entry" === I && (S("idle"), null != T.current)) {
+    } = e, a = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [I, T] = (0, i.useState)("entry"), S = (0, i.useRef)(null), A = (0, i.useRef)(null), C = (0, i.useCallback)(() => {
+      if ("entry" === I && (T("idle"), null != S.current)) {
         var e;
-        null == (e = T.current) || e.play()
+        null == (e = S.current) || e.play()
       }
     }, [I]), N = (0, i.useCallback)(() => {
-      if ("exit" !== I && (S("exit"), null != A.current)) {
+      if ("exit" !== I && (T("exit"), null != A.current)) {
         var e;
         null == (e = A.current) || e.play()
       }
@@ -44,13 +44,13 @@ let I = 1e3,
       isGift: R
     } = (0, h.wD)(), {
       wasTier2PremiumBeforePurchase: P,
-      selectedSkuId: w,
-      purchaseState: D
+      selectedSkuId: D,
+      purchaseState: w
     } = (0, m.JL)(), [x, L] = (0, i.useState)(false);
     (0, i.useEffect)(() => {
-      D === g.A.PURCHASING && L(true)
-    }, [D]);
-    let M = (0, f.P)(R, !!P, w),
+      w === g.A.PURCHASING && L(true)
+    }, [w]);
+    let M = (0, f.P)(R, !!P, D),
       {
         mediaUrls: j,
         isSuccess: k
@@ -98,7 +98,7 @@ let I = 1e3,
             })
           })
         }), (0, r.jsx)(d.Z, {
-          ref: T,
+          ref: S,
           playsInline: true,
           muted: true,
           loop: true,

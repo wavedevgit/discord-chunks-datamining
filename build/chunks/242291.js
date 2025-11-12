@@ -44,7 +44,7 @@ function A() {
 }
 
 function C(e, t) {
-  return (null == t ? true : t.guild_id) == null || _.Z.can(S.Plq.USE_EXTERNAL_SOUNDS, t) || e.guildId === I.X8 || e.guildId === (null == t ? true : t.guild_id)
+  return (null == t ? true : t.guild_id) == null || _.Z.can(T.Plq.USE_EXTERNAL_SOUNDS, t) || e.guildId === I.X8 || e.guildId === (null == t ? true : t.guild_id)
 }
 
 function N(e, t, n) {
@@ -66,11 +66,11 @@ function P(e, t, n, r) {
   (0, E.XE)(t, e, y.YQ.SOUNDBOARD), (0, d.kq)(t, e, __OVERLAY__, n, r)
 }
 
-function w(e, t) {
+function D(e, t) {
   (0, E.XE)(t, e, y.YQ.JOINED_VOICE_CHANNEL), (0, d.vy)(t, e, __OVERLAY__)
 }
 
-function D() {
+function w() {
   var e, t;
   return Object.values(null != (t = null == (e = Chunk581883.Z.settings.guilds) ? true : module.guilds) ? exports : {}).some(e => null != e.joinSound)
 }
@@ -84,7 +84,7 @@ async function x(e) {
     a = b.Z.getSound(i, r.soundId);
   if (null != a) {
     if (!C(a, n) || !N(t, a, n, true) || !R(n)) return null;
-    w(a, n.id)
+    D(a, n.id)
   }
 }
 
@@ -92,7 +92,7 @@ function L(e) {
   let {
     isSoundboardButtonDisabled: t = false
   } = e, n = (0, r.e7)([p.default], () => p.default.getCurrentUser()), a = [];
-  if (!t && !D()) {
+  if (!t && !w()) {
     let e = (0, g.Fc)(n);
     (m.ZP.canUseCustomCallSounds(n) || e) && a.push(i.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL)
   }
@@ -136,7 +136,7 @@ function k(e) {
     soundSource: i,
     location: a
   } = e;
-  h.default.track(S.rMx.USER_CUSTOM_CALL_SOUND_SETTING_UPDATED, {
+  h.default.track(T.rMx.USER_CUSTOM_CALL_SOUND_SETTING_UPDATED, {
     location_stack: a,
     guild_id: "" === t ? 0 : Number(t),
     change_type: n,
@@ -149,7 +149,7 @@ function U(e) {
   let {
     location: t
   } = e;
-  h.default.track(S.rMx.USER_CUSTOM_CALL_SOUND_SETTING_GUILD_REMOVED, {
+  h.default.track(T.rMx.USER_CUSTOM_CALL_SOUND_SETTING_GUILD_REMOVED, {
     location_stack: t
   })
 }
@@ -159,9 +159,9 @@ function G(e) {
     sound: t,
     location: n
   } = e;
-  a.ZP.trackWithMetadata(S.rMx.EXPRESSION_FAVORITED, {
+  a.ZP.trackWithMetadata(T.rMx.EXPRESSION_FAVORITED, {
     location: n,
-    expression_type: T.X1.SOUNDBOARD,
+    expression_type: S.X1.SOUNDBOARD,
     expression_id: t.soundId,
     expression_name: t.name,
     expression_guild_id: t.guildId

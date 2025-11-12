@@ -29,7 +29,7 @@ function g(e) {
     O = (0, a.e7)([c.default], () => c.default.getId()),
     v = _.ZP.useName(E),
     I = O === E.id,
-    S = (0, a.e7)([u.Z, d.Z], () => {
+    T = (0, a.e7)([u.Z, d.Z], () => {
       let e = u.Z.getChannel(y);
       if (null == e) returnfalse;
       if (e.isPrivate()) returntrue;
@@ -41,7 +41,7 @@ function g(e) {
       return d.Z.can(p.Plq.SEND_MESSAGES, e)
     });
 
-  function T() {
+  function S() {
     let {
       id: e
     } = E, t = "@".concat(_.ZP.getUserTag(E, {
@@ -52,10 +52,10 @@ function g(e) {
       rawText: n
     }), null != y && o.Z.startTyping(y)
   }
-  return I ? (t = h.intl.string(h.t["F/OLvL"]), g = h.intl.string(h.t.C89OLE)) : (g = h.intl.string(h.t.YVub5y), b ? t = h.intl.string(h.t["57nBty"]) : null != v && S ? (t = h.intl.formatToPlainString(h.t["9Akp1s"], {
+  return I ? (t = h.intl.string(h.t["F/OLvL"]), g = h.intl.string(h.t.C89OLE)) : (g = h.intl.string(h.t.YVub5y), b ? t = h.intl.string(h.t["57nBty"]) : null != v && T ? (t = h.intl.formatToPlainString(h.t["9Akp1s"], {
     username: v
   }), n = (0, r.jsx)(i.zxk, {
-    onClick: T,
+    onClick: S,
     text: h.intl.string(h.t.P8tvKG)
   })) : t = h.intl.string(h.t["SMJr+a"])), (0, r.jsxs)(s.Z, {
     children: [(0, r.jsx)(s.Z.Header, {

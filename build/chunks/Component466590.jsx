@@ -83,8 +83,8 @@ function O(e) {
       },
       size: v = "md",
       onStepChange: I,
-      onRequestClose: S,
-      popoverRef: T,
+      onRequestClose: T,
+      popoverRef: S,
       shouldShow: A
     } = e,
     C = b(e, ["steps", "caretConfig", "size", "onStepChange", "onRequestClose", "popoverRef", "shouldShow"]);
@@ -95,29 +95,29 @@ function O(e) {
     null == I || I(N)
   }, [N, I]);
   let P = y[N],
-    w = N + 1 === y.length,
-    D = i.useCallback(() => {
+    D = N + 1 === y.length,
+    w = i.useCallback(() => {
       var e;
-      null == P || null == (e = P.onCta) || e.call(P), w ? null == S || S() : R(e => e + 1)
-    }, [P, w, S]),
+      null == P || null == (e = P.onCta) || e.call(P), D ? null == T || T() : R(e => e + 1)
+    }, [P, D, T]),
     x = i.useCallback(() => {
-      null == S || S()
-    }, [S]),
+      null == T || T()
+    }, [T]),
     L = i.useCallback(() => {
-      null == S || S()
-    }, [S]);
+      null == T || T()
+    }, [T]);
   if (!A || null == P) return null;
   let M = m({
-    text: null != (a = null == (t = P.action) ? true : t.text) ? a : w ? _.intl.string(_.t.i4jeWR) : _.intl.string(_.t.PDTjLN),
+    text: null != (a = null == (t = P.action) ? true : t.text) ? a : D ? _.intl.string(_.t.i4jeWR) : _.intl.string(_.t.PDTjLN),
     variant: null != (h = null == (n = P.action) ? true : n.variant) ? h : "primary",
-    onClick: D
+    onClick: w
   }, P.action);
   return (0, r.jsx)(c.m, E(m({}, C), {
     shouldShow: A,
     onRequestClose: x,
     gradientColor: P.gradientColor,
     children: (0, r.jsxs)("div", {
-      ref: T,
+      ref: S,
       children: [(0, r.jsx)(d.u, {
         onClick: L,
         variant: null != P.gradientColor ? "color-mix" : true

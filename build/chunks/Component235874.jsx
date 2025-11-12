@@ -116,7 +116,7 @@ class y extends(r = Chunk647438.Component) {
       autoInvert: O = true,
       nudgeAlignIntoViewport: v = true,
       spacing: I = 8,
-      clickTrap: S = false
+      clickTrap: T = false
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk930295.H, {
       ref: this.ref,
@@ -141,7 +141,7 @@ class y extends(r = Chunk647438.Component) {
       scrollBehavior: h,
       useMouseEnter: m,
       layerContext: E,
-      clickTrap: S,
+      clickTrap: T,
       children: module
     })
   }

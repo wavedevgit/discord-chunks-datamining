@@ -57,17 +57,17 @@ function O(e) {
       v = (0, _.hf)(f, y.metadataItem)
   }
   let I = (0, d.FI)(f[E.PC.CREATED_AT], h),
-    S = null,
-    T = b.intl.string(b.t.wzzjk9);
-  return (null == v || 0 === v.length) && null == I && (S = (0, r.jsx)(s.Text, {
+    T = null,
+    S = b.intl.string(b.t.wzzjk9);
+  return (null == v || 0 === v.length) && null == I && (T = (0, r.jsx)(s.Text, {
     variant: "text-xs/normal",
     color: "header-secondary",
     children: b.intl.format(b.t.Up2ni7, {
       helpdeskUrl: m.Z.getArticleURL(g.BhN.CONNECTION_DETAILS)
     })
-  }, "label"), T = b.intl.string(b.t["LVh3/5"])), o && (T = b.intl.string(b.t.i4jeWR)), (0, r.jsxs)("div", {
+  }, "label"), S = b.intl.string(b.t["LVh3/5"])), o && (S = b.intl.string(b.t.i4jeWR)), (0, r.jsxs)("div", {
     className: y.metadataContainer,
-    children: [S, null == v ? true : v.map((e, t) => (0, r.jsxs)(r.Fragment, {
+    children: [T, null == v ? true : v.map((e, t) => (0, r.jsxs)(r.Fragment, {
       children: [e, t < v.length - 1 ? (0, r.jsx)("span", {
         className: y.dot
       }) : null]
@@ -88,7 +88,7 @@ function O(e) {
         disabled: o,
         "aria-label": b.intl.string(b.t.sCkLYH),
         onClick: O,
-        text: T
+        text: S
       }, "refresh-button")
     })]
   })

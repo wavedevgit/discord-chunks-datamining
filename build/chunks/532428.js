@@ -72,13 +72,13 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function D() {
+function w() {
   return new Set(l().months().map(e => e.toLowerCase()))
 }
 
@@ -137,7 +137,7 @@ function K(e) {
 function z(e, t) {
   let n, r, i = e.getFullMatch().trim().toLowerCase(),
     a = U()[i];
-  return null != a ? [n, r] = a() : D().has(i) ? [n, r] = k(i, "MMMM", "month") : x().has(i) ? [n, r] = k(i, "dddd", "day") : L().has(i) ? [n, r] = k(i, "YYYY", "year") : [n, r] = k(i, A.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), true)
+  return null != a ? [n, r] = a() : w().has(i) ? [n, r] = k(i, "MMMM", "month") : x().has(i) ? [n, r] = k(i, "dddd", "day") : L().has(i) ? [n, r] = k(i, "YYYY", "year") : [n, r] = k(i, A.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), true)
 }
 
 function q(e, t, n) {
@@ -200,7 +200,7 @@ function $(e) {
 }
 
 function ee() {
-  return [...Array.from(D()), ...Array.from(x()), ...Array.from(L()), ...Object.keys(U())]
+  return [...Array.from(w()), ...Array.from(x()), ...Array.from(L()), ...Object.keys(U())]
 }
 
 function et() {
@@ -208,7 +208,7 @@ function et() {
 }
 
 function en(e, t, n) {
-  return er(e, t, ee()).map(e => w(R({}, e), {
+  return er(e, t, ee()).map(e => D(R({}, e), {
     group: n,
     key: "".concat(n, "-").concat(e.text)
   }))
@@ -278,12 +278,12 @@ function ea(e) {
           return i(t)
         }), O.Z.getRecentMessageAuthorIds(n.guildId).forEach(e => i(m.default.getUser(e))), e.slice(0, r)
       }
-      o = g.ZP.queryGuildUsers(w(R({}, a), {
+      o = g.ZP.queryGuildUsers(D(R({}, a), {
         guildId: n.guildId
       }));
       break;
     case A.aib.CHANNEL:
-      o = g.ZP.queryChannelUsers(w(R({}, a), {
+      o = g.ZP.queryChannelUsers(D(R({}, a), {
         channelId: n.channelId
       }));
       break;
@@ -291,11 +291,11 @@ function ea(e) {
       let s = ei(null != i ? i : []);
       if (null != s && s.length > 0) {
         let e = m.default.getCurrentUser();
-        null != e && s.push(e), o = g.ZP.queryUsers(w(R({}, a), {
+        null != e && s.push(e), o = g.ZP.queryUsers(D(R({}, a), {
           users: s,
           boosters: (0, g.Cq)(c.h8.USER)
         }))
-      } else o = g.ZP.queryAllUsers(w(R({}, a), {
+      } else o = g.ZP.queryAllUsers(D(R({}, a), {
         boosters: (0, g.Cq)(c.h8.USER)
       }));
       break;
@@ -599,7 +599,7 @@ function ef(e) {
       getAutocompletions: ec
     },
     [A.dCx.ANSWER_IN]: {
-      regex: T.e,
+      regex: S.e,
       mutable: true,
       follows: [A.dCx.FILTER_IN],
       componentType: "ANSWER",
@@ -634,7 +634,7 @@ function ef(e) {
       regex: W(C.intl.string(C.t.us8IQi)),
       componentType: "FILTER",
       key: Y(C.intl.string(C.t.us8IQi)),
-      validator: () => (0, S.Z)({
+      validator: () => (0, T.Z)({
         location: "SearchTokens"
       }),
       plainText: C.intl.string(C.t.us8IQi),

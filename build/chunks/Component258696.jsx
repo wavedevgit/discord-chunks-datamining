@@ -103,18 +103,18 @@ function j(e) {
       }, "confetti")
     }), !ee && (null == (y = N.stickers) ? true : y.button) != null && null == V && B && X.push({
       key: "sticker",
-      node: (0, r.jsx)(w.Z, {
+      node: (0, r.jsx)(D.Z, {
         disabled: R,
         type: N
       }, "sticker")
     }), X.push({
       key: "upload",
-      node: (0, r.jsx)(D.z, {
+      node: (0, r.jsx)(w.z, {
         disabled: R,
         inputType: N,
         channel: j
       }, "upload")
-    }), N !== S.Ie.NORMAL || et || X.push({
+    }), N !== T.Ie.NORMAL || et || X.push({
       key: "spacer",
       node: (0, r.jsx)("div", {
         className: L.spacer
@@ -123,7 +123,7 @@ function j(e) {
     let e = K && null != q ? q : x.X1.EMOJI;
     X.push({
       key: "emoji",
-      node: (0, r.jsx)(T.Z, {
+      node: (0, r.jsx)(S.Z, {
         disabled: R,
         type: N,
         pickerView: e

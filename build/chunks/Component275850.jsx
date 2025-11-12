@@ -106,7 +106,7 @@ function I(e, t) {
   throw Error("Invalid Payment Source")
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   if (t.value === O) return (0, r.jsx)("div", {
     className: g.paymentSourceLabel,
     children: t.label
@@ -134,7 +134,7 @@ function S(e, t, n) {
   })
 }
 
-function T(e, t) {
+function S(e, t) {
   let n = null;
   return e && null != t && !t.canRedeemTrial() ? n = m.intl.string(m.t.SvheW9) : e && null != t && t.hasFlag(h.Cw.NEW) && (n = m.intl.format(m.t.d7ZLKA, {
     helpDeskArticle: _.Z.getArticleURL(p.BhN.PAYMENT_AUTHORIZATION_CHARGE)
@@ -178,7 +178,7 @@ function A(e) {
       value: e.value,
       label: e.label
     }
-  }), w = i.useMemo(() => new Map(a.map(e => [e.id, e])), [a]), D = T(h, i.useMemo(() => a.find(e => e.id === n), [a, n]));
+  }), D = i.useMemo(() => new Map(a.map(e => [e.id, e])), [a]), w = S(h, i.useMemo(() => a.find(e => e.id === n), [a, n]));
   if (null == n && null != C && C.length > 0) {
     let e = a.filter(e => C.includes(e.paymentGateway));
     n = 0 === e.length ? O : e[0].id
@@ -196,7 +196,7 @@ function A(e) {
       onChange: R,
       isDisabled: E,
       className: o()({
-        [g.paymentSourceHasWarning]: null != D
+        [g.paymentSourceHasWarning]: null != w
       }, b),
       optionClassName: y,
       placeholder: m.intl.string(m.t["8lqkf8"]),
@@ -204,10 +204,10 @@ function A(e) {
         let [t] = e;
         return A ? (0, r.jsx)(c.$jN, {
           type: c.RAz.SPINNING_CIRCLE
-        }) : S(null == t.value ? true : w.get(t.value), t, d)
+        }) : T(null == t.value ? true : D.get(t.value), t, d)
       },
-      renderOptionLabel: e => S(null == e.value ? true : w.get(e.value), e, d)
-    }), null != D ? (0, r.jsxs)("div", {
+      renderOptionLabel: e => T(null == e.value ? true : D.get(e.value), e, d)
+    }), null != w ? (0, r.jsxs)("div", {
       className: g.paymentSourceWarning,
       children: [(0, r.jsx)(c.Mgn, {
         size: "custom",
@@ -217,7 +217,7 @@ function A(e) {
         color: s.Z.unsafe_rawColors.YELLOW_300.css
       }), (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
-        children: D
+        children: w
       })]
     }) : null]
   })

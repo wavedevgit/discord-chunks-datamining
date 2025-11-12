@@ -52,15 +52,15 @@ function _(e) {
     pendingThemeColors: O,
     pendingPronouns: v,
     pendingBio: I,
-    tryItOutThemeColors: S,
-    tryItOutAvatar: T,
+    tryItOutThemeColors: T,
+    tryItOutAvatar: S,
     tryItOutBanner: A,
     tryItOutProfileEffect: C,
     tryItOutAvatarDecoration: N,
     tryItOutDisplayNameStyles: R
   } = (0, a.cj)([l.Z], () => f({}, l.Z.getAllPending(), l.Z.getAllTryItOut())), P = (0, s.SD)({
     userId: d.id,
-    image: null != T ? T : m
+    image: null != S ? S : m
   });
   return (0, r.jsx)(c.Z, {
     containerClassName: p,
@@ -70,10 +70,10 @@ function _(e) {
     pendingBanner: null != (t = null != A ? A : g) ? t : n(466045),
     pendingDisplayNameStyles: null != R ? R : y,
     pendingAvatar: P,
-    pendingThemeColors: null != S ? S : O,
+    pendingThemeColors: null != T ? T : O,
     pendingAvatarDecoration: true !== N ? N : E,
     pendingProfileEffect: true !== C ? C : b,
-    avatarClassName: null != T || null != m || h.enabled ? true : u.spinningAvatar,
+    avatarClassName: null != S || null != m || h.enabled ? true : u.spinningAvatar,
     canUsePremiumCustomization: true,
     isTryItOut: true,
     disabledInputs: _,

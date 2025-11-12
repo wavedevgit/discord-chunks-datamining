@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk399235 = require("./399235.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,14 +42,14 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -78,7 +78,7 @@ let M = Array(6).fill(0).map((e, t) => t),
   G = 5;
 
 function B(e) {
-  return (0, r.jsx)(Z, D({}, e))
+  return (0, r.jsx)(Z, w({}, e))
 }
 
 function Z(e) {
@@ -114,7 +114,7 @@ function Z(e) {
     l && b === _.M.FETCHED && O()
   }, [O, b, l]);
   let v = null == b || b === _.M.FETCHING,
-    S = i.useMemo(() => {
+    T = i.useMemo(() => {
       let e = m.map(e => ({
           application: e,
           installOnDemand: true
@@ -130,8 +130,8 @@ function Z(e) {
         installOnDemand: true
       }))]
     }, [y, m]),
-    T = S.length > 0,
-    A = f && !T && !v;
+    S = T.length > 0,
+    A = f && !S && !v;
   return d ? (0, r.jsx)(W, {}) : A ? (0, r.jsx)(I.A, {
     type: g.LG.SEARCH_EMPTY,
     searchQuery: n,
@@ -141,9 +141,9 @@ function Z(e) {
       context: t,
       commandResults: p,
       query: n
-    }), (T || v) && (0, r.jsx)(H, {
+    }), (S || v) && (0, r.jsx)(H, {
       context: t,
-      applicationResults: S,
+      applicationResults: T,
       includePlaceholder: v,
       query: n,
       searchesBots: u
@@ -157,15 +157,15 @@ function F(e) {
     context: a,
     commandResults: o,
     query: s
-  } = e, _ = o.length > U, E = i.useMemo(() => _ ? o.slice(0, U) : o, [o, _]), [b, y] = i.useState(false), v = null != (t = (0, l.Z)(b)) ? t : b, I = i.useCallback(() => y(e => !e), []), A = (null != (n = (0, l.Z)(s)) ? n : s)[0] !== s[0], w = b && !A;
+  } = e, _ = o.length > U, E = i.useMemo(() => _ ? o.slice(0, U) : o, [o, _]), [b, y] = i.useState(false), v = null != (t = (0, l.Z)(b)) ? t : b, I = i.useCallback(() => y(e => !e), []), A = (null != (n = (0, l.Z)(s)) ? n : s)[0] !== s[0], D = b && !A;
   i.useLayoutEffect(() => y(false), [A]);
   let {
-    ref: D,
+    ref: w,
     isTransitioning: x,
     onTransitionEnd: L
   } = (0, O.Z)({
     key: s,
-    isExpanded: w,
+    isExpanded: D,
     durationMs: 200,
     maxAnimationHeight: C.K7
   });
@@ -176,17 +176,17 @@ function F(e) {
       num: o.length
     })
   }, [o.length, v, b]);
-  let M = w || x,
-    j = w ? S.Z.buttonTypes.VIEW_LESS : S.Z.buttonTypes.VIEW_MORE,
+  let M = D || x,
+    j = D ? T.Z.buttonTypes.VIEW_LESS : T.Z.buttonTypes.VIEW_MORE,
     k = M ? o : E;
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(S.Z, {
+    children: [(0, r.jsx)(T.Z, {
       title: R.intl.string(R.t["0hKkS+"]),
       buttonType: j,
       onClickViewButton: _ ? I : true
     }), (0, r.jsx)("div", {
       className: P.sectionContentContainer,
-      ref: D,
+      ref: w,
       onTransitionEnd: L,
       children: k.map((e, t) => {
         let {
@@ -194,7 +194,7 @@ function F(e) {
           application: i,
           section: o
         } = e;
-        return (0, r.jsx)(T.Z, {
+        return (0, r.jsx)(S.Z, {
           command: n,
           application: i,
           query: s,
@@ -239,7 +239,7 @@ function V(e) {
     ref: e => {
       t.current = e
     },
-    children: (0, r.jsx)(b.kA, L(D({}, e), {
+    children: (0, r.jsx)(b.kA, L(w({}, e), {
       tracksImpression: false,
       enableVideoBanner: true
     }))
@@ -255,7 +255,7 @@ function H(e) {
     searchesBots: o
   } = e;
   return o ? (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(S.Z, {
+    children: [(0, r.jsx)(T.Z, {
       title: R.intl.string(R.t.PHjkRE)
     }), (0, r.jsxs)("div", {
       className: P.sectionContentContainer,
@@ -276,7 +276,7 @@ function H(e) {
       }), i && j.map(e => (0, r.jsx)(A.Z, {}, e))]
     })]
   }) : (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(S.Z, {
+    children: [(0, r.jsx)(T.Z, {
       title: R.intl.string(R.t.shUONg)
     }), (0, r.jsxs)("div", {
       className: P.sectionActivitiesContentContainer,
@@ -306,7 +306,7 @@ function Y(e) {
   let {
     onClickAppCard: t
   } = (0, b.cG)(e);
-  return (0, r.jsx)(T.Z, {
+  return (0, r.jsx)(S.Z, {
     application: e.application,
     onClick: t,
     query: e.query,

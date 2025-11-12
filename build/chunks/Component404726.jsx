@@ -28,25 +28,25 @@ function d(e) {
     ref: O,
     artboardProperties: v,
     dataBinding: I,
-    touchScrollEnabled: S = true,
-    dynamicDataBinding: T,
+    touchScrollEnabled: T = true,
+    dynamicDataBinding: S,
     listenOnDocumentBody: A,
     eventCapture: C
-  } = e, N = i.useContext(l.S), R = (0, s.C)(), P = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : R, [w, D] = i.useState(true), x = i.useRef(null), {
+  } = e, N = i.useContext(l.S), R = (0, s.C)(), P = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : R, [D, w] = i.useState(true), x = i.useRef(null), {
     rive: L,
     RiveComponent: M
   } = (0, o.useRive)({
     eventTarget: null == E ? true : E.current,
     buffer: d,
     autoplay: _,
-    stateMachines: w,
+    stateMachines: D,
     artboard: b,
     useOffscreenRenderer: true,
     layout: new o.Layout({
       fit: null != h ? u.M[h] : o.Fit.Cover,
       alignment: null != m ? u.Y[m] : o.Alignment.Center
     }),
-    isTouchScrollEnabled: S,
+    isTouchScrollEnabled: T,
     listenOnDocumentBody: A,
     eventCapture: C
   });
@@ -59,7 +59,7 @@ function d(e) {
     artboard: b,
     artboardProperties: v,
     dataBinding: I,
-    dynamicDataBinding: T
+    dynamicDataBinding: S
   }), i.useEffect(() => {
     if (null != L && "short-loop" === y && N.reducedMotion.enabled) {
       let e = () => {
@@ -79,13 +79,13 @@ function d(e) {
       L.resizeDrawingSurfaceToCanvas()
     }, 100))
   }, [L, h]), i.useEffect(() => {
-    null != L && null == w && (D(L.stateMachineNames), L.reset({
+    null != L && null == D && (w(L.stateMachineNames), L.reset({
       stateMachines: L.stateMachineNames,
       autoplay: _,
       artboard: b,
       autoBind: true
     }), L.setupRiveListeners())
-  }, [L, _, w, b]);
+  }, [L, _, D, b]);
   let j = i.useRef(0);
   i.useEffect(() => {
     if (null == L) return;
@@ -138,12 +138,12 @@ function f(e) {
           v = y ? u.value : u;
         switch (O) {
           case "color":
-            let [I, S, T, A] = v.resolve({
+            let [I, T, S, A] = v.resolve({
               theme: f,
               saturation: p,
               highContrastModeEnabled: h
             }).rgba();
-            null == (o = t.viewModelInstance) || null == (a = o.color(r)) || a.rgba(I, S, T, 255 * A);
+            null == (o = t.viewModelInstance) || null == (a = o.color(r)) || a.rgba(I, T, S, 255 * A);
             break;
           case "number":
             let C = null == (s = t.viewModelInstance) ? true : s.number(r);

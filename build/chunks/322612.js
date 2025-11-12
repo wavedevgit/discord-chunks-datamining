@@ -27,9 +27,9 @@ function O(e, t, n) {
   let O = (0, m.useRef)(""),
     {
       locale: I,
-      direction: S
+      direction: T
     } = (0, g.j)(),
-    T = (0, i.J)(),
+    S = (0, i.J)(),
     {
       ariaLabel: A,
       ariaLabelledBy: C,
@@ -37,19 +37,19 @@ function O(e, t, n) {
       focusManager: R
     } = r.Lh.get(t),
     P = e.isPlaceholder ? "" : e.text,
-    w = (0, m.useMemo)(() => t.dateFormatter.resolvedOptions(), [t.dateFormatter]),
-    D = (0, E.a)({
+    D = (0, m.useMemo)(() => t.dateFormatter.resolvedOptions(), [t.dateFormatter]),
+    w = (0, E.a)({
       month: "long",
-      timeZone: w.timeZone
+      timeZone: D.timeZone
     }),
     x = (0, E.a)({
       hour: "numeric",
-      hour12: w.hour12,
-      timeZone: w.timeZone
+      hour12: D.hour12,
+      timeZone: D.timeZone
     });
   if ("month" !== e.type || e.isPlaceholder) "hour" !== e.type || e.isPlaceholder || (P = x.format(t.dateValue));
   else {
-    let e = D.format(t.dateValue);
+    let e = w.format(t.dateValue);
     P = e !== P ? `${P} \u{2013} ${e}` : e
   }
   let {
@@ -218,7 +218,7 @@ function O(e, t, n) {
   e === (0, m.useMemo)(() => t.segments.find(e => e.isEditable), [t.segments]) || t.isInvalid || (N = true);
   let q = (0, f.Me)(),
     X = !t.isDisabled && !t.isReadOnly && e.isEditable,
-    Q = "literal" === e.type ? "" : T.of(e.type),
+    Q = "literal" === e.type ? "" : S.of(e.type),
     J = (0, _.b)({
       "aria-label": `${Q}${A?`, ${A}`:""}${C?", ":""}`,
       "aria-labelledby": C
@@ -231,9 +231,9 @@ function O(e, t, n) {
   let $ = {
     caretColor: "transparent"
   };
-  if ("rtl" === S) {
+  if ("rtl" === T) {
     $.unicodeBidi = "embed";
-    let t = w[e.type];
+    let t = D[e.type];
     ("numeric" === t || "2-digit" === t) && ($.direction = "ltr")
   }
   return {

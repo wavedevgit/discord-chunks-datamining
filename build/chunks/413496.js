@@ -23,14 +23,14 @@ var Chunk507604 = require("./507604.js"),
   Chunk751736 = require("./751736.js"),
   Chunk923646 = require("./923646.js"),
   Chunk204954 = require("./204954.js"),
-  T = Chunk751736("match"),
+  S = Chunk751736("match"),
   A = Chunk127849.RegExp,
   C = A.prototype,
   N = Chunk127849.SyntaxError,
   R = Chunk46015(C.exec),
   P = Chunk46015("".charAt),
-  w = Chunk46015("".replace),
-  D = Chunk46015("".indexOf),
+  D = Chunk46015("".replace),
+  w = Chunk46015("".indexOf),
   x = Chunk46015("".slice),
   L = /^\?<[^\s\d!#%&*+<=>@^][^\s!#%&*+<=>@^]*>/,
   M = /a/g,
@@ -39,7 +39,7 @@ var Chunk507604 = require("./507604.js"),
   U = Chunk751954.MISSED_STICKY,
   G = Chunk751954.UNSUPPORTED_Y,
   B = Chunk507604 && (!k || U || Chunk923646 || Chunk204954 || Chunk621523(function() {
-    return j[T] = false, A(M) !== M || A(j) === j || "/a/i" !== String(A(M, "i"))
+    return j[S] = false, A(M) !== M || A(j) === j || "/a/i" !== String(A(M, "i"))
   })),
   Z = function(e) {
     for (var t, n = e.length, r = 0, i = "", a = false; r <= n; r++) {
@@ -80,7 +80,7 @@ if (Chunk275717("RegExp", B)) {
         g = [],
         E = e;
       if (!u && h && m && e.constructor === V) return e;
-      if ((h || d(C, e)) && (e = e.source, m && (t = p(E))), e = true === e ? "" : _(e), t = true === t ? "" : _(t), E = e, I && "dotAll" in M && (r = !!t && D(t, "s") > false) && (t = w(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > false) && G && (t = w(t, /y/g, "")), S && (e = (a = F(e))[0], g = a[1]), o = s(A(e, t), u ? this : C, V), (r || i || g.length) && (c = y(o), r && (c.dotAll = true, c.raw = V(Z(e), n)), i && (c.sticky = true), g.length && (c.groups = g)), e !== E) try {
+      if ((h || d(C, e)) && (e = e.source, m && (t = p(E))), e = true === e ? "" : _(e), t = true === t ? "" : _(t), E = e, I && "dotAll" in M && (r = !!t && w(t, "s") > false) && (t = D(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && w(t, "y") > false) && G && (t = D(t, /y/g, "")), T && (e = (a = F(e))[0], g = a[1]), o = s(A(e, t), u ? this : C, V), (r || i || g.length) && (c = y(o), r && (c.dotAll = true, c.raw = V(Z(e), n)), i && (c.sticky = true), g.length && (c.groups = g)), e !== E) try {
         l(o, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
       return o

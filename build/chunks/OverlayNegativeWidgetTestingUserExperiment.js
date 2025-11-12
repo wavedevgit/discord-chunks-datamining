@@ -2,7 +2,7 @@
 /** chunk id: 32300, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F3: () => w,
+  F3: () => D,
   NW: () => d,
   OV: () => l,
   RD: () => y,
@@ -21,7 +21,7 @@ require.d(exports, {
   lj: () => v,
   mB: () => E,
   o4: () => c,
-  tU: () => T,
+  tU: () => S,
   td: () => h
 });
 var Chunk348327 = require("./348327.js"),
@@ -234,7 +234,7 @@ function I(e) {
     location: e
   })
 }
-let S = (0, Chunk818083.B)({
+let T = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-10_overlay_v3_one_click_go_live",
   label: "Overlay V3 One Click Go Live",
@@ -259,9 +259,9 @@ let S = (0, Chunk818083.B)({
   }]
 });
 
-function T(e) {
+function S(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return S.getCurrentConfig({
+  return T.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
@@ -383,6 +383,6 @@ function P(e) {
   })
 }
 
-function w() {
-  v("OVERLAY_INITIALIZED"), T("OVERLAY_INITIALIZED"), P("OVERLAY_INITIALIZED")
+function D() {
+  v("OVERLAY_INITIALIZED"), S("OVERLAY_INITIALIZED"), P("OVERLAY_INITIALIZED")
 }

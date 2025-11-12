@@ -32,22 +32,22 @@ function g(e, t, n) {
     allowNsfw: g,
     computedPermissions: v,
     userId: I,
-    roleIds: S,
-    isImpersonating: T,
+    roleIds: T,
+    isImpersonating: S,
     hasBaseAccessPermissions: A
   } = t, {
     applicationAllowedForUser: C,
     applicationAllowedForChannel: N,
     isGuildInstalled: R,
     isUserInstalled: P,
-    commandBotId: w
+    commandBotId: D
   } = n;
   if (!m.includes(e.type)) return 2;
   if (e.nsfw && !g) return 1;
-  let D = null != l ? (0, _.Vh)(l, w) : true;
+  let w = null != l ? (0, _.Vh)(l, D) : true;
   if (null != e.contexts) {
-    if (null != D && !e.contexts.includes(D)) return 4
-  } else if (e.inputType === d.iw.BOT && (false === e.dmPermission && D === s.D.BOT_DM || D === s.D.PRIVATE_CHANNEL)) return 4;
+    if (null != w && !e.contexts.includes(w)) return 4
+  } else if (e.inputType === d.iw.BOT && (false === e.dmPermission && w === s.D.BOT_DM || w === s.D.PRIVATE_CHANNEL)) return 4;
   if (null != e.predicate && l instanceof c.Sf) {
     let t = u.Z.getGuild(l.guild_id);
     if (!e.predicate({
@@ -64,7 +64,7 @@ function g(e, t, n) {
     let t = y(e.permissions, l, x);
     if (b(t) || !E(t) && b(N)) return 6
   }
-  let L = O(e.permissions, x, I, S, T);
+  let L = O(e.permissions, x, I, T, S);
   if (E(L)) return 0;
   if (b(L) || b(C)) return 7;
   if (null != e.defaultMemberPermissions && !(!o.fS(e.defaultMemberPermissions, f.BO) && o.e$(v, e.defaultMemberPermissions))) return 7;

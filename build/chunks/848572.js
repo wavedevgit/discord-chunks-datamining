@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   GG: () => y,
-  Rw: () => S,
-  SI: () => T,
+  Rw: () => T,
+  SI: () => S,
   Vq: () => g,
   a1: () => b,
   kG: () => E,
@@ -117,9 +117,9 @@ let O = () => {
       status: "upcoming"
     })
   },
-  S = () => {
+  T = () => {
     let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-      t = T(null == module ? true : module.id),
+      t = S(null == module ? true : module.id),
       n = v(),
       r = I();
     return null != exports ? m(p({}, exports), {
@@ -127,7 +127,7 @@ let O = () => {
       status: "earned"
     }) : null != Chunk913527 ? Chunk913527 : null
   },
-  T = e => {
+  S = e => {
     let t = (0, d.l)(e);
     return null == t ? null : f.vK[t]
   }

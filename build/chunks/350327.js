@@ -3,18 +3,18 @@
 "use strict";
 require.d(exports, {
   CM: () => A,
-  Cf: () => S,
-  ID: () => T,
+  Cf: () => T,
+  ID: () => S,
   Ju: () => P,
   Ls: () => y,
   Xz: () => R,
   Z: () => b,
   c_: () => N,
-  f4: () => w,
+  f4: () => D,
   g_: () => I,
   ho: () => v,
   pG: () => O,
-  rf: () => D,
+  rf: () => w,
   uV: () => M,
   x3: () => x,
   z5: () => C
@@ -128,14 +128,14 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_BIO",
     bio: e
   })
 }
 
-function T(e) {
+function S(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS",
     pronouns: e
@@ -177,14 +177,14 @@ function P(e) {
   }), E(h.QP.PROFILE_EFFECT)
 }
 
-function w(e) {
+function D(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER",
     banner: e
   }), E(h.QP.PROFILE_BANNER)
 }
 
-function D(e) {
+function w(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS",
     themeColors: e

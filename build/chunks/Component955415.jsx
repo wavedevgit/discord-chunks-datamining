@@ -122,7 +122,7 @@ let y = e => {
       })]
     })
   },
-  S = e => {
+  T = e => {
     let {
       membersOnline: t,
       members: n
@@ -152,7 +152,7 @@ let y = e => {
       children: i
     })
   },
-  T = e => {
+  S = e => {
     let {
       channel: t,
       guild: n
@@ -229,5 +229,5 @@ let y = e => {
       })
     })
   };
-A.Header = y, A.Body = O, A.Icon = v, A.Info = I, A.Data = S, A.Channel = T, A.GuildSplash = C, A.GuildName = N, A.GuildTemplateName = R, y.displayName = "InviteButton.Header", O.displayName = "InviteButton.Body", v.displayName = "InviteButton.Icon", I.displayName = "InviteButton.Info", S.displayName = "InviteButton.Data", T.displayName = "InviteButton.Channel", C.displayName = "InviteButton.GuildSplash", N.displayName = "InviteButton.GuildName", R.displayName = "InviteButton.GuildTemplateName";
+A.Header = y, A.Body = O, A.Icon = v, A.Info = I, A.Data = T, A.Channel = S, A.GuildSplash = C, A.GuildName = N, A.GuildTemplateName = R, y.displayName = "InviteButton.Header", O.displayName = "InviteButton.Body", v.displayName = "InviteButton.Icon", I.displayName = "InviteButton.Info", T.displayName = "InviteButton.Data", S.displayName = "InviteButton.Channel", C.displayName = "InviteButton.GuildSplash", N.displayName = "InviteButton.GuildName", R.displayName = "InviteButton.GuildTemplateName";
 let P = A

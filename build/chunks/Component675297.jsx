@@ -2,7 +2,7 @@
 /** chunk id: 675297, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => S
+  H: () => T
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -47,37 +47,37 @@ function v(e) {
 }
 let I = 600;
 
-function S(e) {
+function T(e) {
   let {
     guildProductListing: t,
     guildId: n,
     location: O,
-    shouldShowFullDescriptionButton: S = true,
-    hideRoleTag: T = false,
+    shouldShowFullDescriptionButton: T = true,
+    hideRoleTag: S = false,
     lineClamp: A = 1,
     cardWidth: C,
     cardHeight: N,
     thumbnailHeight: R,
     descriptionTextVariant: P = "text-sm/normal",
-    showOpaqueBackground: w = false
-  } = e, D = (0, i.e7)([u.Z], () => u.Z.getGuild(n), [n]), x = (0, i.e7)([c.Z], () => {
+    showOpaqueBackground: D = false
+  } = e, w = (0, i.e7)([u.Z], () => u.Z.getGuild(n), [n]), x = (0, i.e7)([c.Z], () => {
     var e;
     return c.Z.getRole(n, null != (e = null == t ? true : t.role_id) ? e : y.lds)
-  }), L = (0, o.U)(t, I), M = (0, m.C)(t), j = (0, f.SO)(D), {
+  }), L = (0, o.U)(t, I), M = (0, m.C)(t), j = (0, f.SO)(w), {
     shouldHideGuildPurchaseEntryPoints: k
   } = (0, l.uP)(n), U = (0, m.k)(t), G = (0, E.Z)({
     guildId: n,
     guildProductListingId: t.id,
     sourceAnalyticsLocations: O
   });
-  if (null == D || k) return null;
+  if (null == w || k) return null;
   let B = () => (0, b.e)({
       guildId: n,
       guildProductListingId: t.id,
       analyticsLocation: O
     }),
     Z = () => {
-      p.h(D.id, t.id)
+      p.h(w.id, t.id)
     },
     F = () => {
       (0, s.x)({
@@ -111,12 +111,12 @@ function S(e) {
     role: x,
     ctaComponent: (0, r.jsx)(a.zxk, v({}, G)),
     productType: M,
-    shouldShowFullDescriptionButton: S,
+    shouldShowFullDescriptionButton: T,
     onShowFullDescription: B,
     onTapCard: B,
     actionMenu: H,
-    showOpaqueBackground: w,
-    hideRoleTag: T,
+    showOpaqueBackground: D,
+    hideRoleTag: S,
     lineClamp: A,
     cardWidth: C,
     cardHeight: N,

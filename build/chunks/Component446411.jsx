@@ -121,12 +121,12 @@ function et(e) {
     autoMute: O,
     volume: v,
     onPlay: I,
-    onPause: S,
-    onEnded: T,
+    onPause: T,
+    onEnded: S,
     onControlsHide: C,
     onControlsShow: R,
     onVolumeChange: P,
-    onMute: D,
+    onMute: w,
     href: x,
     placeholder: M,
     placeholderVersion: j,
@@ -142,7 +142,7 @@ function et(e) {
     height: W
   } = u;
   null != d && (Y = d.width, W = d.height);
-  let K = (0, w.Tj)({
+  let K = (0, D.Tj)({
     width: Y,
     height: W,
     maxWidth: l,
@@ -161,7 +161,7 @@ function et(e) {
       height: W,
       responsive: p,
       autoPlay: y,
-      onEnded: T,
+      onEnded: S,
       naturalWidth: d.width,
       naturalHeight: d.height,
       onVolumeChange: P,
@@ -169,8 +169,8 @@ function et(e) {
       autoMute: O,
       volume: v,
       onPlay: I,
-      onPause: S,
-      onMute: D,
+      onPause: T,
+      onMute: w,
       onControlsHide: C,
       onControlsShow: R,
       sourceMetadata: U
@@ -608,7 +608,7 @@ class er extends(r = Chunk647438.PureComponent) {
         animated: false,
         srcIsAnimated: Chunk647438.srcIsAnimated
       }),
-      S = {
+      T = {
         containerClassName: s()(Chunk715697, {
           [Chunk781452.embedMedia]: !Chunk120356,
           [Chunk781452.embedImage]: !Chunk120356,
@@ -633,14 +633,14 @@ class er extends(r = Chunk647438.PureComponent) {
         srcIsAnimated: Chunk647438.srcIsAnimated,
         mosaicStyleAlt: true
       },
-      T = null != (t = null == (e = Chunk647438.url.split(".").pop()) ? true : module.split("?")[0]) ? exports : "";
-    return "jpg" === Chunk592125 && (T = "jpeg"), (0, Chunk951288.jsx)(Chunk947849.h.Consumer, {
+      S = null != (t = null == (e = Chunk647438.url.split(".").pop()) ? true : module.split("?")[0]) ? exports : "";
+    return "jpg" === Chunk592125 && (S = "jpeg"), (0, Chunk951288.jsx)(Chunk947849.h.Consumer, {
       children: e => (0, i.jsx)(j.G.Consumer, {
         children: t => {
           let {
             disableAnimations: r
           } = t;
-          return u(Y(V({}, S), {
+          return u(Y(V({}, T), {
             autoPlay: f && !r && !n,
             renderAccessory: I ? e : null,
             handlePreloadImage: v[y],
@@ -884,7 +884,7 @@ class er extends(r = Chunk647438.PureComponent) {
     if (null == l) return;
     let {
       width: c
-    } = (0, w.Tj)({
+    } = (0, D.Tj)({
       width: l.width,
       height: l.height,
       maxWidth: o,
@@ -896,7 +896,7 @@ class er extends(r = Chunk647438.PureComponent) {
       var u, d, f, _;
       let {
         width: e
-      } = (0, w.Tj)({
+      } = (0, D.Tj)({
         width: null != (d = null != (u = null == r ? true : r.width) ? u : null == a ? true : a.width) ? d : 0,
         height: null != (_ = null != (f = null == r ? true : r.height) ? f : null == a ? true : a.height) ? _ : 0,
         maxWidth: o,
@@ -973,7 +973,7 @@ class er extends(r = Chunk647438.PureComponent) {
           minHeight: r
         } = null != (t = this.getMinSize()) ? t : {}, {
           width: i
-        } = (0, w.Tj)({
+        } = (0, D.Tj)({
           width: e.width,
           height: e.height,
           maxWidth: l,
@@ -985,7 +985,7 @@ class er extends(r = Chunk647438.PureComponent) {
       }
     }
     let f = J / (c.Z.fontScale / 100),
-      _ = (null != s ? (0, D.TZ)(s) : 0) >= f,
+      _ = (null != s ? (0, w.TZ)(s) : 0) >= f,
       p = (null != (n = null == s ? true : s.split("\n").length) ? n : 0) >= Q,
       h = _ || p;
     return {

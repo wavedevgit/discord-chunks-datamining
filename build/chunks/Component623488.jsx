@@ -87,15 +87,15 @@ function h(e) {
     actionMenu: O,
     showOpaqueBackground: v = false,
     hideRoleTag: I = false,
-    lineClamp: S = 1,
-    cardWidth: T = 332,
+    lineClamp: T = 1,
+    cardWidth: S = 332,
     cardHeight: A,
     thumbnailHeight: C = 187,
     descriptionTextVariant: N = "text-sm/normal",
     isDraft: R = false
-  } = e, P = (0, s.hQ)(), w = e => {
+  } = e, P = (0, s.hQ)(), D = e => {
     e.stopPropagation()
-  }, D = (0, r.jsxs)(r.Fragment, {
+  }, w = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_, {
       showDraftBadge: R,
       hidePurchaseToUnlockBadge: true,
@@ -121,7 +121,7 @@ function h(e) {
           children: (0, r.jsx)(l.Z, {
             variant: N,
             color: "text-muted",
-            lineClamp: S,
+            lineClamp: T,
             text: i
           })
         }), g && (0, r.jsx)(p, {
@@ -149,7 +149,7 @@ function h(e) {
         children: b
       }), (0, r.jsx)("div", {
         className: f.productActionButton,
-        onClick: w,
+        onClick: D,
         children: m
       })]
     })]
@@ -157,10 +157,10 @@ function h(e) {
   return null == y ? (0, r.jsx)("article", {
     className: a()(f.productCard, v ? f.opaqueBackground : f.solidBackground),
     "aria-labelledby": P,
-    children: D
+    children: w
   }) : (0, r.jsx)("div", {
     style: {
-      width: T,
+      width: S,
       height: A
     },
     children: (0, r.jsx)(o.kL8, {
@@ -170,7 +170,7 @@ function h(e) {
       }),
       className: a()(f.productCard, v ? f.opaqueBackground : f.solidBackground, f.cardClickableContainer),
       onClick: y,
-      children: D
+      children: w
     })
   })
 }

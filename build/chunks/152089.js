@@ -35,8 +35,8 @@ function f(e, t) {
     emojiIntention: O,
     editorRef: v,
     onSendMessage: I,
-    onSendSticker: S,
-    setValue: T,
+    onSendSticker: T,
+    setValue: S,
     isEditorIdle: A,
     currentFullWord: C
   } = e, {
@@ -58,7 +58,7 @@ function f(e, t) {
     chatInputType: y,
     emojiIntention: O,
     sendMessage: I,
-    sendSticker: S,
+    sendSticker: T,
     currentFullWord: C,
     isEditorIdle: A,
     currentAutocompleteType: null != (r = null == N ? true : N.type) ? r : null,
@@ -68,7 +68,7 @@ function f(e, t) {
       null == (n = v.current) || n.insertAutocomplete(e, null != t ? t : e, r)
     },
     replaceText: (e, t) => {
-      T(e, null != t ? t : (0, s.JM)(e))
+      S(e, null != t ? t : (0, s.JM)(e))
     },
     insertAutocompleteInput: e => {
       var t;

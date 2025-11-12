@@ -58,8 +58,8 @@ function P(e) {
     user: n,
     guildId: N,
     channelId: P,
-    messageId: w,
-    roleId: D,
+    messageId: D,
+    roleId: w,
     openedAt: x,
     setPopoutRef: L,
     closePopout: M,
@@ -73,8 +73,8 @@ function P(e) {
     userId: n.id,
     guildId: N,
     channelId: P,
-    messageId: w,
-    roleId: D
+    messageId: D,
+    roleId: w
   }), F = i.useRef(null), V = (0, u.X)(F);
   i.useEffect(() => {
     null == L || L(null == F ? true : F.current)
@@ -120,8 +120,8 @@ function P(e) {
         }), (0, r.jsxs)(O.Z, {
           user: n,
           displayProfile: G,
-          themeType: T.l.POPOUT,
-          children: [(0, r.jsx)(S.Z, {
+          themeType: S.l.POPOUT,
+          children: [(0, r.jsx)(T.Z, {
             children: (0, r.jsx)(I.Z, {
               user: n,
               viewProfileItem: W()
@@ -132,13 +132,13 @@ function P(e) {
               user: n,
               displayProfile: G,
               guildId: N,
-              themeType: T.l.POPOUT
+              themeType: S.l.POPOUT
             }), (0, r.jsx)(g.Z, {
               user: n,
               displayProfile: G,
               guildId: N,
               channelId: P,
-              themeType: T.l.POPOUT,
+              themeType: S.l.POPOUT,
               onOpenProfile: Y ? H : true
             })]
           }), (0, r.jsxs)(a.Ttm, {
@@ -151,7 +151,7 @@ function P(e) {
               onOpenProfile: Y ? H : true,
               tags: (0, r.jsx)(E.Z, {
                 displayProfile: G,
-                themeType: T.l.POPOUT,
+                themeType: S.l.POPOUT,
                 onClose: M
               })
             }), (0, r.jsx)(y.Z, {

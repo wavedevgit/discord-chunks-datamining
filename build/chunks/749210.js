@@ -34,7 +34,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk723359 = require("./723359.js"),
   Chunk388032 = require("./388032.jsx");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,14 +43,14 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -133,8 +133,8 @@ let F = {
         lurkLocation: E
       } = f,
       I = null != (t = f.lurker) && t,
-      S = v.default.getCurrentUser();
-    if (null != (r = null == S ? true : S.hasFlag(N.xW$.QUARANTINED)) && r) return (0, _.default)(), new Promise((e, t) => t(Error()));
+      T = v.default.getCurrentUser();
+    if (null != (r = null == T ? true : T.hasFlag(N.xW$.QUARANTINED)) && r) return (0, _.default)(), new Promise((e, t) => t(Error()));
     if ((0, c.hO)(e)) return (0, l.mN)(R.L0.JOIN_LARGE_GUILD_UNDERAGE), new Promise((e, t) => t(Error()));
     o.Z.wait(() => o.Z.dispatch({
       type: "GUILD_JOIN",
@@ -187,7 +187,7 @@ let F = {
     } catch (t) {
       if ((null == (i = t.body) ? true : i.code) === N.evJ.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED && (0, l.mN)(R.L0.JOIN_LARGE_GUILD_UNDERAGE), (null == (s = t.body) ? true : s.code) === N.evJ.TOO_MANY_USER_GUILDS) {
         let e = v.default.getCurrentUser();
-        T.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? k(N.tHP) : k(N.DZw)
+        S.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? k(N.tHP) : k(N.DZw)
       }
       throw (null == (u = t.body) ? true : u.code) === N.evJ.GUILD_AT_CAPACITY && G(), I && (null == (d = t.body) ? true : d.code) === N.evJ.UNKNOWN_GUILD && U(e), t
     }
@@ -196,7 +196,7 @@ let F = {
   async transitionToGuildSync(e, t, n, r) {
     let i = Z((await B(e)).id, n),
       a = t;
-    (null == t ? true : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (a = L(D({}, t), {
+    (null == t ? true : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (a = L(w({}, t), {
       welcomeModalChannelId: null != i ? i : true
     })), (0, d.Z)(N.Z5c.CHANNEL(e, i, r), a), await new Promise(setImmediate)
   },
@@ -327,7 +327,7 @@ let F = {
         secondary_color: null,
         tertiary_color: null
       },
-      permissions: S.Hn
+      permissions: T.Hn
     };
     try {
       let t = await a.tn.post({
@@ -352,7 +352,7 @@ let F = {
       unicodeEmoji: i
     } = n, o = M(n, ["icon", "unicodeEmoji"]), s = null === r || (null == r ? true : r.startsWith("data:")) ? r : true, l = await a.tn.patch({
       url: N.ANM.GUILD_ROLE(e, t),
-      body: L(D({}, o), {
+      body: L(w({}, o), {
         icon: s,
         unicode_emoji: i
       }),

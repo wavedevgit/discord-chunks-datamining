@@ -42,9 +42,9 @@ function R() {
     R = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     {
       subsection: P,
-      setSubsection: w
+      setSubsection: D
     } = (0, Chunk785145.Z)(),
-    D = Chunk839469.R.useField("hasSearchResults"),
+    w = Chunk839469.R.useField("hasSearchResults"),
     x = Chunk839469.R.useField("searchResults");
 
   function L(t) {
@@ -56,7 +56,7 @@ function R() {
         }), y.S.dispatch(I.CkL.EMPHASIZE_NOTICE);
         return
       }
-      t === T.NB.GUILD && null == e && null != a && (0, d.Fq)(a), w(t)
+      t === S.NB.GUILD && null == e && null != a && (0, d.Fq)(a), D(t)
     }
   }
   Chunk647438.useEffect(() => {
@@ -66,7 +66,7 @@ function R() {
   }, [null == Chunk120356 ? true : Chunk120356.id, R]);
   let M = true,
     j = true;
-  return D && 1 === x.length && (x.includes(Chunk726985.s6.PROFILE_SERVER_PROFILES) ? (L(Chunk526761.NB.GUILD), j = false) : x.includes(Chunk726985.s6.PROFILE_USER_PROFILE) && (L(Chunk526761.NB.USER_PROFILE), M = false)), (0, Chunk951288.jsxs)(Chunk10298.N, {
+  return w && 1 === x.length && (x.includes(Chunk726985.s6.PROFILE_SERVER_PROFILES) ? (L(Chunk526761.NB.GUILD), j = false) : x.includes(Chunk726985.s6.PROFILE_USER_PROFILE) && (L(Chunk526761.NB.USER_PROFILE), M = false)), (0, Chunk951288.jsxs)(Chunk10298.N, {
     header: Chunk388032.intl.string(Chunk388032.t["vi7f+q"]),
     children: [(0, Chunk951288.jsxs)(Chunk481060.njP, {
       className: Chunk455734.tabBar,

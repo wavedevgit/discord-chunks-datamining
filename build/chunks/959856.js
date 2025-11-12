@@ -52,45 +52,45 @@ class N extends Chunk47770.Z {
   }
   supports(e) {
     switch (e) {
-      case S.AN.AUDIO_INPUT_DEVICE:
+      case T.AN.AUDIO_INPUT_DEVICE:
         return E.S5;
-      case S.AN.AUDIO_OUTPUT_DEVICE:
+      case T.AN.AUDIO_OUTPUT_DEVICE:
         return E.ZA;
-      case S.AN.VIDEO:
-        return T.U8;
-      case S.AN.DESKTOP_CAPTURE:
+      case T.AN.VIDEO:
+        return S.U8;
+      case T.AN.DESKTOP_CAPTURE:
         var t;
         return (null == (t = navigator.mediaDevices) ? true : t.getDisplayMedia) != null;
-      case S.AN.VOICE_PROCESSING:
+      case T.AN.VOICE_PROCESSING:
         return "Chrome" === o().name;
-      case S.AN.NATIVE_PING:
-      case S.AN.DIAGNOSTICS:
-        return T.Fo;
-      case S.AN.DESKTOP_CAPTURE_APPLICATIONS:
-      case S.AN.LOOPBACK:
-      case S.AN.NOISE_SUPPRESSION:
-      case S.AN.AUTOMATIC_GAIN_CONTROL:
+      case T.AN.NATIVE_PING:
+      case T.AN.DIAGNOSTICS:
+        return S.Fo;
+      case T.AN.DESKTOP_CAPTURE_APPLICATIONS:
+      case T.AN.LOOPBACK:
+      case T.AN.NOISE_SUPPRESSION:
+      case T.AN.AUTOMATIC_GAIN_CONTROL:
         return "Safari" !== o().name;
-      case S.AN.NOISE_CANCELLATION:
+      case T.AN.NOISE_CANCELLATION:
         return c()();
-      case S.AN.QOS:
-      case S.AN.ATTENUATION:
-      case S.AN.AUTOMATIC_VAD:
-      case S.AN.LEGACY_AUDIO_SUBSYSTEM:
-      case S.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM:
-      case S.AN.AUTOMATIC_AUDIO_SUBSYSTEM:
-      case S.AN.AUDIO_SUBSYSTEM_DEFERRED_SWITCH:
-      case S.AN.DEBUG_LOGGING:
-      case S.AN.VOICE_PANNING:
-      case S.AN.AUTO_ENABLE:
-      case S.AN.DESKTOP_CAPTURE_FORMAT:
-      case S.AN.VIDEO_HOOK:
-      case S.AN.OPEN_H264:
-      case S.AN.AEC_DUMP:
-      case S.AN.DISABLE_VIDEO:
-      case S.AN.CONNECTION_REPLAY:
-      case S.AN.SIMULCAST:
-      case S.AN.SCREEN_CAPTURE_KIT:
+      case T.AN.QOS:
+      case T.AN.ATTENUATION:
+      case T.AN.AUTOMATIC_VAD:
+      case T.AN.LEGACY_AUDIO_SUBSYSTEM:
+      case T.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM:
+      case T.AN.AUTOMATIC_AUDIO_SUBSYSTEM:
+      case T.AN.AUDIO_SUBSYSTEM_DEFERRED_SWITCH:
+      case T.AN.DEBUG_LOGGING:
+      case T.AN.VOICE_PANNING:
+      case T.AN.AUTO_ENABLE:
+      case T.AN.DESKTOP_CAPTURE_FORMAT:
+      case T.AN.VIDEO_HOOK:
+      case T.AN.OPEN_H264:
+      case T.AN.AEC_DUMP:
+      case T.AN.DISABLE_VIDEO:
+      case T.AN.CONNECTION_REPLAY:
+      case T.AN.SIMULCAST:
+      case T.AN.SCREEN_CAPTURE_KIT:
       default:
         returnfalse
     }
@@ -114,7 +114,7 @@ class N extends Chunk47770.Z {
       dave: this.dave,
       transientKeys: this.transientKeys
     }, u = (0, m.Q)(c);
-    return u.streamUserId = s, u.setOutputVolume(this.outputVolume), u.setSinkId(this.sinkId), u.once(d.S.Destroy, e => this.connections.delete(e)), u.on(d.S.Silence, e => this.emit(f.aB.Silence, e)), u.on(d.S.DesktopSourceEnd, this.handleDesktopSourceEnd), u.on(d.S.AudioPermission, this.handleAudioPermission), u.on(d.S.VideoPermission, this.handleVideoPermission), this.interacted && u.interact(), e === S.Yn.DEFAULT && (u.setAudioSource(this.sourceId), this.enabled && u.input.enableAudioInput()), this.connections.add(u), this.emit(f.aB.Connection, u), u
+    return u.streamUserId = s, u.setOutputVolume(this.outputVolume), u.setSinkId(this.sinkId), u.once(d.S.Destroy, e => this.connections.delete(e)), u.on(d.S.Silence, e => this.emit(f.aB.Silence, e)), u.on(d.S.DesktopSourceEnd, this.handleDesktopSourceEnd), u.on(d.S.AudioPermission, this.handleAudioPermission), u.on(d.S.VideoPermission, this.handleVideoPermission), this.interacted && u.interact(), e === T.Yn.DEFAULT && (u.setAudioSource(this.sourceId), this.enabled && u.input.enableAudioInput()), this.connections.add(u), this.emit(f.aB.Connection, u), u
   }
   findConnection(e) {
     return Array.from(this.connections).find(t => null == e || t.context === e)
@@ -158,7 +158,7 @@ class N extends Chunk47770.Z {
   setAudioInputDevice(e) {
     var t, n;
     let r = this.sourceId;
-    this.sourceId = e, this.eachConnection(t => t.setAudioSource(e), S.Yn.DEFAULT), null == (t = this.voiceActivityInput) || t.setSource(e), null == (n = this.loopback) || n.setAudioSource(e), this.emit(f.aB.SelectedDeviceChange, S.h7.AUDIO_INPUT, r, e)
+    this.sourceId = e, this.eachConnection(t => t.setAudioSource(e), T.Yn.DEFAULT), null == (t = this.voiceActivityInput) || t.setSource(e), null == (n = this.loopback) || n.setAudioSource(e), this.emit(f.aB.SelectedDeviceChange, T.h7.AUDIO_INPUT, r, e)
   }
   getAudioOutputDevices() {
     return (0, Chunk740197.HS)()
@@ -166,13 +166,13 @@ class N extends Chunk47770.Z {
   setAudioOutputDevice(e) {
     var t;
     let n = this.sinkId;
-    this.sinkId = e, this.connections.forEach(t => t.setSinkId(e)), null == (t = this.loopback) || t.setAudioSink(e), this.emit(f.aB.SelectedDeviceChange, S.h7.AUDIO_OUTPUT, n, e)
+    this.sinkId = e, this.connections.forEach(t => t.setSinkId(e)), null == (t = this.loopback) || t.setAudioSink(e), this.emit(f.aB.SelectedDeviceChange, T.h7.AUDIO_OUTPUT, n, e)
   }
   getVideoInputDevices() {
     return (0, Chunk740197.l0)()
   }
   setVideoInputDevice(e) {
-    this.videoInputDeviceId = e, this.eachConnection(t => t.setVideoSource(e), S.Yn.DEFAULT)
+    this.videoInputDeviceId = e, this.eachConnection(t => t.setVideoSource(e), T.Yn.DEFAULT)
   }
   getVideoInputDeviceId() {
     return this.videoInputDeviceId
@@ -216,7 +216,7 @@ class N extends Chunk47770.Z {
   setGoLiveSource(e, t) {
     if (null == e) this.eachConnection(e => e.setDesktopInput(null), t);
     else if (null != e.desktopDescription && null != this.findConnection(t)) {
-      i()(t === S.Yn.STREAM, "Go live context is not STREAM");
+      i()(t === T.Yn.STREAM, "Go live context is not STREAM");
       let n = false,
         r = this.pendingDesktopInputs[e.desktopDescription.id];
       null != r && this.eachConnection(e => {

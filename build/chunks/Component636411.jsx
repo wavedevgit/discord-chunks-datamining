@@ -27,7 +27,7 @@ function y(e) {
   var t, n;
   let {
     onDismiss: i
-  } = e, y = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), O = m.intl.string(m.t.eikz43), v = (0, d.N)(), I = (0, u.N)(), S = (null == v ? true : v.subscription_trial) != null || null != I, T = {
+  } = e, y = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), O = m.intl.string(m.t.eikz43), v = (0, d.N)(), I = (0, u.N)(), T = (null == v ? true : v.subscription_trial) != null || null != I, S = {
     object: p.qAy.BUTTON_CTA,
     section: p.jXE.SUPER_REACTION_PICKER
   };
@@ -47,7 +47,7 @@ function y(e) {
         className: g.contentFill,
         children: (0, r.jsx)(c.Z, {
           className: a()(g.banner, {
-            [g.hasTrialOffer]: S
+            [g.hasTrialOffer]: T
           }),
           src: E,
           loop: true,
@@ -55,11 +55,11 @@ function y(e) {
           muted: true,
           controls: true
         })
-      }), S ? (0, r.jsx)(_.ZP, {
+      }), T ? (0, r.jsx)(_.ZP, {
         type: h.cd.BURST_REACTION_QUICK_ACTION_UPSELL,
         subscriptionTier: null != (n = null == v || null == (t = v.subscription_trial) ? true : t.sku_id) ? n : h.Si.TIER_2,
         headingText: m.intl.string(m.t.Wfl5zp),
-        analyticsLocationObject: T,
+        analyticsLocationObject: S,
         discountOffer: I,
         trialOffer: v,
         children: O

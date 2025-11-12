@@ -106,7 +106,7 @@ function $(e) {
   }, [l.username]);
   let b = !l.isClaimed(),
     O = _ && !l.hasUniqueUsername() && !l.hasVerifiedEmailOrPhone() || b,
-    S = O ? Y.intl.string(Y.t["7Ngnyr"]) : true;
+    T = O ? Y.intl.string(Y.t["7Ngnyr"]) : true;
   return (0, r.jsxs)("div", {
     className: o()(W.field, s),
     children: [(0, r.jsx)("div", {
@@ -157,7 +157,7 @@ function $(e) {
         })
       })
     }), (0, r.jsx)(d.u, {
-      text: S,
+      text: T,
       children: (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: W.fieldButton,
@@ -363,7 +363,7 @@ function er(e) {
   }
 
   function _() {
-    (0, f.h7j)(e => (0, r.jsx)(w.Z, X(z({}, e), {
+    (0, f.h7j)(e => (0, r.jsx)(D.Z, X(z({}, e), {
       title: Y.intl.string(Y.t["3CTiKi"]),
       children: a.hasFlag(F.xW$.MFA_SMS) ? Y.intl.string(Y.t.jrhJyo) : true,
       actionText: Y.intl.string(Y.t.N86XcP),

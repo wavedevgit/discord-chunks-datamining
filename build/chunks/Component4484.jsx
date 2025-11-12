@@ -80,7 +80,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
     "aria-describedby": eE,
     "aria-labelledby": eb,
     "aria-autocomplete": ey
-  } = e, eO = i.useRef(null), ev = i.useRef(null), eI = i.useRef(true), eS = i.useRef(true), eT = B || Z, eA = i.useCallback((e, t, n) => {
+  } = e, eO = i.useRef(null), ev = i.useRef(null), eI = i.useRef(true), eT = i.useRef(true), eS = B || Z, eA = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -114,15 +114,15 @@ let k = Chunk647438.forwardRef(function(e, t) {
         (0, R.L)(e, k.id, null, true)
       }), l)
       if ("parent" === t) try {
-        eS.current = false, e.onChange()
+        eT.current = false, e.onChange()
       } finally {
-        eS.current = true
+        eT.current = true
       } else e.onChange()
   }, [k.id, k.guild_id, es]), eC = i.useCallback(() => {
     eI.current = false
   }, []), eN = i.useCallback(() => {
     eI.current = true
-  }, []), eR = (0, S.Z)({
+  }, []), eR = (0, T.Z)({
     channel: k,
     chatInputType: a,
     canUseCommands: ea,
@@ -137,7 +137,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
       values: n,
       results: r
     }
-  }, [k.guild_id, k.id, eR]), ew = i.useCallback(() => {
+  }, [k.guild_id, k.id, eR]), eD = i.useCallback(() => {
     let e, t = b.bN.getNodesOfType(eR, ["gameMentionInput", "timestampMentionInput"]),
       n = null != t ? [...t] : null,
       r = ea ? c.Z.getActiveCommand(k.id) : null,
@@ -176,9 +176,9 @@ let k = Chunk647438.forwardRef(function(e, t) {
       ignoreTrailingEmptyNodes: true
     }), r, e)
   }, [k.id, eR, ee, eP, ea]);
-  (0, T.Z)(t, eR, k, ew), (0, N.Z)(eR, eO, K);
+  (0, S.Z)(t, eR, k, eD), (0, N.Z)(eR, eO, K);
   let {
-    handleKeyDown: eD,
+    handleKeyDown: ew,
     handleKeyUp: ex
   } = (0, A.Z)({
     editor: eR,
@@ -189,18 +189,18 @@ let k = Chunk647438.forwardRef(function(e, t) {
     onTab: J,
     onEnter: $,
     allowNewLines: ec,
-    submit: ew,
+    submit: eD,
     hideAutocomplete: en,
     moveSelection: er
   }), {
     handlePaste: eL,
     handleGlobalPaste: eM
-  } = (0, C.Z)(eR, eT, W), ej = i.useCallback(e => {
+  } = (0, C.Z)(eR, eS, W), ej = i.useCallback(e => {
     null == et || et()
   }, [et]), ek = i.useCallback(e => {
-    e !== ev.current ? eS.current && (null == Y || Y(null, (0, g.sk)(e, {
+    e !== ev.current ? eT.current && (null == Y || Y(null, (0, g.sk)(e, {
       mode: "raw"
-    }), e)) : eS.current && et()
+    }), e)) : eT.current && et()
   }, [et, Y]);
   i.useLayoutEffect(() => {
     eI.current && (ev.current = n, eA(eR, "parent", {
@@ -219,10 +219,10 @@ let k = Chunk647438.forwardRef(function(e, t) {
       currentAutocompleteType: ed
     })], [eR, k, eu, ed]),
     eG = i.useCallback(e => {
-      let t = (0, w.Z)(eR, e, k.id);
+      let t = (0, D.Z)(eR, e, k.id);
       return null == t && (t = (0, x.Z)(eR, e)), null == t && (t = (0, L.Z)(eR, e)), t
     }, [k.id, eR]),
-    eB = i.useCallback(e => (0, D.Z)(e), []);
+    eB = i.useCallback(e => (0, w.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.d9, {
       event: M.CkL.GLOBAL_CLIPBOARD_PASTE,
@@ -237,7 +237,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
         guildId: k.guild_id,
         className: o()(j.slateTextArea, H),
         placeholder: F,
-        readOnly: eT,
+        readOnly: eS,
         spellCheck: ei,
         autoFocus: !es,
         canFocus: !B,
@@ -246,7 +246,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
         onBlur: q,
         onClick: ej,
         onPaste: eL,
-        onKeyDown: eD,
+        onKeyDown: ew,
         onKeyUp: ex,
         decorate: eU,
         renderExtraElement: eG,

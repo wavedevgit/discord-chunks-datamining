@@ -65,8 +65,8 @@ let O = {
   },
   v = O,
   I = false,
-  S = false,
-  T = {},
+  T = false,
+  S = {},
   A = null,
   C = false,
   N = 864e5,
@@ -74,14 +74,14 @@ let O = {
 var P = function(e) {
   return e.IS_OWNER = "is_owner", e.IS_ADMIN = "is_admin", e.IS_COMMUNITY = "is_community", e.GUILD_SIZE = "guild_size", e.IS_HUB = "is_hub", e.IS_VIEWING = "is_viewing", e.GUILD_PERMISSIONS = "guild_permissions", e.GUILD_SIZE_ALL = "guild_size_all", e
 }(P || {});
-let w = new Set(Object.values(P));
+let D = new Set(Object.values(P));
 
-function D() {
+function w() {
   return null == v.lastFetched || Date.now() - v.lastFetched >= N
 }
 
 function x() {
-  !C && (D() || null != v.surveyOverride) && (C = true, (0, Chunk491428.wk)(v.surveyOverride, true))
+  !C && (w() || null != v.surveyOverride) && (C = true, (0, Chunk491428.wk)(v.surveyOverride, true))
 }
 
 function L(e) {
@@ -96,7 +96,7 @@ function M(e) {
   } = e;
   if (0 === t.length) returntrue;
   for (let e of t)
-    if (!w.has(e)) returnfalse;
+    if (!D.has(e)) returnfalse;
   let i = t.includes("guild_size_all"),
     a = true;
   for (let s of f.Z.getGuildsArray()) {
@@ -124,7 +124,7 @@ function M(e) {
       c = (null == l ? true : l.id) === s.ownerId,
       u = _.Z.can(m.Plq.ADMINISTRATOR, s);
     if (t.includes("is_owner") && !c || t.includes("is_admin") && !u) continue;
-    null == (T = null != T ? T : {})[e.key] && (T[e.key] = e);
+    null == (S = null != S ? S : {})[e.key] && (S[e.key] = e);
     let f = p.Z.getGuildId(),
       g = null != f && f === s.id;
     if ((!t.includes("is_viewing") || g) && !i) returntrue
@@ -166,14 +166,14 @@ function B() {
 }
 
 function Z() {
-  S = true
+  T = true
 }
 
 function F(e) {
   let {
     key: t
   } = e;
-  v.hiddenSurveys[t] = true, A = null, T = null != T ? T : {}, delete T[t]
+  v.hiddenSurveys[t] = true, A = null, S = null != S ? S : {}, delete S[t]
 }
 
 function V() {
@@ -185,7 +185,7 @@ function H(e) {
 }
 
 function Y() {
-  let e = Object.values(T = null != T ? T : {})[0];
+  let e = Object.values(S = null != S ? S : {})[0];
   return null != module && L(module) ? void U({
     type: "SURVEY_FETCHED",
     survey: module
@@ -208,7 +208,7 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
     return v
   }
   getCurrentSurvey() {
-    return D() ? null : A
+    return w() ? null : A
   }
   getSurveyOverride() {
     return v.surveyOverride

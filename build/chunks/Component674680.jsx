@@ -64,9 +64,9 @@ function b(e) {
       rarity: I
     } = y,
     {
-      color: S
+      color: T
     } = (0, c.F7)(I),
-    T = (0, i.wj)(b) ? p : h,
+    S = (0, i.wj)(b) ? p : h,
     A = (O.size - O.offset - 2 * O.stroke) * m,
     C = O.size - O.stroke,
     N = {
@@ -92,7 +92,7 @@ function b(e) {
       className: d.trophyIconContainer,
       children: (0, r.jsx)(a.rm8, {
         size: "custom",
-        color: u ? S : (0, s.Lq)(T.trophy),
+        color: u ? T : (0, s.Lq)(S.trophy),
         width: A,
         height: A
       })
@@ -101,7 +101,7 @@ function b(e) {
       style: R,
       children: (0, r.jsx)(a.mBM, _({
         size: "custom",
-        color: (0, s.Lq)(T.locked)
+        color: (0, s.Lq)(S.locked)
       }, N))
     }), u && I === c.EP.LEGENDARY && (0, r.jsx)("div", {
       className: d.lockContainer,

@@ -71,7 +71,7 @@ let I = e => {
       children: m.intl.string(m.t["F+x38C"])
     })
   },
-  S = e => {
+  T = e => {
     let {
       className: t,
       isSingleMosaicItem: n,
@@ -92,7 +92,7 @@ let I = e => {
       })
     })
   },
-  T = e => {
+  S = e => {
     let {
       reason: t = p.wk.SPOILER,
       className: n,
@@ -106,12 +106,12 @@ let I = e => {
       case p.wk.EXPLICIT_CONTENT:
       case p.wk.GORE_CONTENT:
       case p.wk.SELF_HARM_CONTENT:
-        return (0, r.jsx)(S, {
+        return (0, r.jsx)(T, {
           isSingleMosaicItem: i,
           className: n
         });
       case p.wk.POTENTIAL_EXPLICIT_CONTENT:
-        return (0, r.jsx)(S, {
+        return (0, r.jsx)(T, {
           isSingleMosaicItem: i,
           className: n,
           obscureOnly: true
@@ -190,7 +190,7 @@ class N extends Chunk647438.PureComponent {
           }),
           role: E ? "presentation" : "button",
           tabIndex: E ? false : 0,
-          children: [E || t ? null : (0, r.jsx)(T, {
+          children: [E || t ? null : (0, r.jsx)(S, {
             reason: s,
             isSingleMosaicItem: c
           }), (0, r.jsx)("div", {
@@ -214,7 +214,7 @@ class N extends Chunk647438.PureComponent {
           }),
           role: E ? "presentation" : "button",
           tabIndex: E ? false : 0,
-          children: [E || t ? null : (0, r.jsx)(T, {
+          children: [E || t ? null : (0, r.jsx)(S, {
             reason: s,
             isSingleMosaicItem: c
           }), (0, r.jsx)("div", {
@@ -254,7 +254,7 @@ class N extends Chunk647438.PureComponent {
           }),
           role: h ? "presentation" : "button",
           tabIndex: h ? false : 0,
-          children: [h ? null : (0, r.jsx)(T, {
+          children: [h ? null : (0, r.jsx)(S, {
             reason: s,
             isSingleMosaicItem: i
           }), (0, r.jsx)("div", {
@@ -277,7 +277,7 @@ class N extends Chunk647438.PureComponent {
           style: n,
           role: h ? "presentation" : "button",
           tabIndex: h ? false : 0,
-          children: [h ? null : (0, r.jsx)(T, {
+          children: [h ? null : (0, r.jsx)(S, {
             reason: s,
             className: g.embed
           }), (0, r.jsx)("div", {

@@ -2,13 +2,13 @@
 /** chunk id: 430561, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  GY: () => w,
+  GY: () => D,
   PI: () => I,
-  RT: () => D,
+  RT: () => w,
   XM: () => R,
-  bc: () => S,
+  bc: () => T,
   ls: () => P,
-  xZ: () => T
+  xZ: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -44,9 +44,9 @@ function I(e) {
     })
   })
 }
-let S = 7e3;
+let T = 7e3;
 
-function T(e, t) {
+function S(e, t) {
   return C((0, s.e7)([p.Z], () => p.Z.getWidget(e), [e]), t)
 }
 let A = (e, t) => Date.now() - e < t;
@@ -131,7 +131,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     widgetId: t,
     showAllStreams: n
@@ -154,7 +154,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     id: t,
     pinned: n

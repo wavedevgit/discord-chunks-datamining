@@ -140,15 +140,15 @@ function v(e) {
     submitting: m = false,
     type: v = "button",
     style: I,
-    wrapperClassName: S,
-    className: T,
+    wrapperClassName: T,
+    className: S,
     innerClassName: A,
     onClick: C,
     onDoubleClick: N,
     onMouseDown: R,
     onMouseUp: P,
-    onMouseEnter: w,
-    onMouseLeave: D,
+    onMouseEnter: D,
+    onMouseLeave: w,
     onKeyDown: x,
     children: L,
     rel: M,
@@ -159,8 +159,8 @@ function v(e) {
     submittingFinishedLabel: B
   } = e, Z = h(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
   let F = _ || m,
-    V = F && (null != w || null != D),
-    H = V ? null : S,
+    V = F && (null != D || null != w),
+    H = V ? null : T,
     Y = y(k, t),
     W = i.useRef(false);
   i.useEffect(() => {
@@ -176,14 +176,14 @@ function v(e) {
       onDoubleClick: F ? e => e.preventDefault() : N,
       onMouseUp: _ ? true : P,
       onMouseDown: _ ? true : R,
-      onMouseEnter: w,
-      onMouseLeave: D,
+      onMouseEnter: D,
+      onMouseLeave: w,
       onKeyDown: _ ? true : x,
       type: v,
       disabled: _,
       style: I,
       rel: M,
-      className: o()(T, O({
+      className: o()(S, O({
         look: t,
         color: n,
         size: a,
@@ -203,13 +203,13 @@ function v(e) {
     }))
   }));
   return V ? (0, r.jsxs)("span", {
-    className: o()(u.disabledButtonWrapper, S, a, {
+    className: o()(u.disabledButtonWrapper, T, a, {
       [u.grow]: d,
       [u.fullWidth]: s
     }),
     children: [K, (0, r.jsx)("span", {
-      onMouseEnter: w,
-      onMouseLeave: D,
+      onMouseEnter: D,
+      onMouseLeave: w,
       className: u.disabledButtonOverlay
     })]
   }) : K
@@ -229,15 +229,15 @@ v.Looks = g, v.Colors = E, v.Sizes = b, v.Link = function(e) {
     onMouseDown: O,
     onMouseUp: v,
     children: I,
-    rel: S
-  } = e, T = h(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
-  return (0, r.jsx)(s.rU, p(f({}, T), {
+    rel: T
+  } = e, S = h(e, ["look", "color", "size", "fullWidth", "grow", "style", "className", "innerClassName", "to", "onClick", "onMouseDown", "onMouseUp", "children", "rel"]);
+  return (0, r.jsx)(s.rU, p(f({}, S), {
     to: m,
     onClick: y,
     onMouseUp: v,
     onMouseDown: O,
     style: c,
-    rel: S,
+    rel: T,
     className: o()(d, u.button, t, n, i, {
       [u.fullWidth]: a,
       [u.grow]: l

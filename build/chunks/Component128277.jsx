@@ -53,7 +53,7 @@ function P(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,8 +64,8 @@ function w(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -76,7 +76,7 @@ function x(e) {
     currentUser: n,
     activity: a,
     className: R,
-    onClose: w
+    onClose: D
   } = e, x = (0, p.Dt)(), L = (0, p.Dt)(), {
     themeType: M
   } = (0, b.z)(), j = (0, _.Z)({
@@ -127,14 +127,14 @@ function x(e) {
         start: t,
         end: n
       } = e;
-      return null == t || null == n ? null : (0, r.jsx)(S.Z, {
+      return null == t || null == n ? null : (0, r.jsx)(T.Z, {
         start: t,
         end: n
       })
     },
     Y = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: N.actions,
-      children: (0, r.jsx)(T.Z, {
+      children: (0, r.jsx)(S.Z, {
         user: t,
         activity: a,
         onAction: Z
@@ -146,9 +146,9 @@ function x(e) {
       ref: F,
       className: o()(N.card, R),
       onAction: Z,
-      onClose: w,
+      onClose: D,
       "aria-labelledby": U ? "".concat(L, " ").concat(x) : x,
-      children: [(0, r.jsx)(v.Z, D(P({
+      children: [(0, r.jsx)(v.Z, w(P({
         textId: L
       }, k), {
         contextMenu: (0, r.jsx)(A.Z, {
@@ -156,7 +156,7 @@ function x(e) {
           user: t,
           activity: a,
           entry: j,
-          onClose: w
+          onClose: D
         })
       })), (0, r.jsx)("div", {
         className: N.body,

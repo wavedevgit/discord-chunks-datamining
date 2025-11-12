@@ -25,28 +25,28 @@ function u(e) {
     [y, O] = (0, c.useState)(null),
     [v, I] = (0, c.useState)(null);
   if (d && (y = d, "hour" in d && (v = d)), p && !(h in p)) throw Error("Invalid granularity " + h + " for value " + p.toString());
-  let S = (null == d ? true : d.calendar.identifier) === "gregory" && "BC" === d.era,
-    T = (0, c.useMemo)(() => ({
+  let T = (null == d ? true : d.calendar.identifier) === "gregory" && "BC" === d.era,
+    S = (0, c.useMemo)(() => ({
       granularity: h,
       timeZone: m,
       hideTimeZone: e.hideTimeZone,
       hourCycle: e.hourCycle,
       shouldForceLeadingZeros: e.shouldForceLeadingZeros,
-      showEra: S
-    }), [h, e.hourCycle, e.shouldForceLeadingZeros, m, e.hideTimeZone, S]),
+      showEra: T
+    }), [h, e.hourCycle, e.shouldForceLeadingZeros, m, e.hideTimeZone, T]),
     {
       minValue: A,
       maxValue: C,
       isDateUnavailable: N
     } = e,
-    R = (0, c.useMemo)(() => (0, r.p2)(d, A, C, N, T), [d, A, C, N, T]),
+    R = (0, c.useMemo)(() => (0, r.p2)(d, A, C, N, S), [d, A, C, N, S]),
     P = (0, o.Q3)({
       ...e,
       value: d,
       builtinValidation: R
     }),
-    w = P.displayValidation.isInvalid,
-    D = e.validationState || (w ? "invalid" : null),
+    D = P.displayValidation.isInvalid,
+    w = e.validationState || (D ? "invalid" : null),
     x = (e, t) => {
       f("timeZone" in t ? t.set((0, i.WG)(e)) : (0, i.IO)(e, t)), O(null), I(null), P.commitValidation()
     },
@@ -72,16 +72,16 @@ function u(e) {
     setOpen(t) {
       !t && !d && y && E && x(y, v || (0, r.zu)(e.defaultValue || e.placeholderValue)), u.setOpen(t)
     },
-    validationState: D,
-    isInvalid: w,
+    validationState: w,
+    isInvalid: D,
     formatValue(e, t) {
       if (!g) return "";
-      let n = (0, r.oE)(t, T);
+      let n = (0, r.oE)(t, S);
       return new(0, a.C)(e, n).format(g)
     },
     getDateFormatter(e, t) {
       let n = {
-          ...T,
+          ...S,
           ...t
         },
         i = (0, r.oE)({}, n);

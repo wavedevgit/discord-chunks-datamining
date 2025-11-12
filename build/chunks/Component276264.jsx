@@ -137,7 +137,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       user: t
     } = e;
     if (null == t || !t.bot) return null;
-    let n = D.Hb.BOT;
+    let n = w.Hb.BOT;
     return (0, r.jsx)(h.Z, {
       className: M.botTag,
       type: n,
@@ -219,7 +219,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       handleSetTypingRef: _,
       typingRef: p,
       currentUser: h
-    } = e, m = a === w.Skl.OFFLINE, g = n ? c.Xo$ : c.qEK, E = (0, u.Z)(i) ? w.Skl.STREAMING : a;
+    } = e, m = a === D.Skl.OFFLINE, g = n ? c.Xo$ : c.qEK, E = (0, u.Z)(i) ? D.Skl.STREAMING : a;
     return E = m ? true : E, (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(g, G(k({}, o), {
         size: c.EFr.SIZE_32,
@@ -231,7 +231,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         statusTooltip: true,
         avatarDecoration: f,
         typingIndicatorRef: _
-      })), (0, r.jsx)(S.Z, {
+      })), (0, r.jsx)(T.Z, {
         confettiSpawnRef: p,
         shouldFire: d && null != h && t.id !== h.id,
         confettiLocation: x.Hn.MEMBER_USER
@@ -260,7 +260,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         let {
           type: t
         } = e;
-        return t === w.IIU.CUSTOM_STATUS
+        return t === D.IIU.CUSTOM_STATUS
       }),
       user: c,
       channel: u
@@ -293,9 +293,9 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       activities: O,
       applicationStream: v,
       status: I,
-      shouldAnimateStatus: S = false,
+      shouldAnimateStatus: T = false,
       isMobile: R,
-      premiumSince: D,
+      premiumSince: w,
       channel: x,
       guildId: L,
       className: j,
@@ -334,23 +334,23 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       size: c.EFr.SIZE_32,
       animateOnHover: !(t || ef),
       guildId: L
-    }), eS = null != eo ? eo : {}, {
-      onFocus: eT
-    } = eS, eA = B(eS, ["onFocus"]), eC = (0, T.X7)(L, el, null != a ? a : null), [eN, eR] = i.useState(false);
+    }), eT = null != eo ? eo : {}, {
+      onFocus: eS
+    } = eT, eA = B(eT, ["onFocus"]), eC = (0, S.X7)(L, el, null != a ? a : null), [eN, eR] = i.useState(false);
     i.useEffect(() => {
       t && eR(false)
     }, [t]);
     let eP = (0, A.fN)(O),
-      ew = (0, A.Wi)(eP, v, el) && t && !eN,
-      eD = i.useCallback(() => {
+      eD = (0, A.Wi)(eP, v, el) && t && !eN,
+      ew = i.useCallback(() => {
         e_(true)
       }, []),
       ex = i.useCallback(() => {
         e_(false)
       }, []),
       eL = i.useCallback(() => {
-        eh(true), null == eT || eT()
-      }, [eT]),
+        eh(true), null == eS || eS()
+      }, [eS]),
       eM = i.useCallback(() => {
         eh(false)
       }, []),
@@ -372,7 +372,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       targetElementRef: ed,
       renderPopout: ek,
       position: "bottom",
-      shouldShow: ew,
+      shouldShow: eD,
       nudgeAlignIntoViewport: false,
       useRawTargetDimensions: true,
       animation: c.yRy.Animation.NONE,
@@ -381,15 +381,15 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         ref: ed,
         selected: t,
         className: o()(M.member, j, {
-          [M.offline]: I === w.Skl.OFFLINE && !t,
-          [M.flatBottom]: ew
+          [M.offline]: I === D.Skl.OFFLINE && !t,
+          [M.flatBottom]: eD
         }),
         innerClassName: M.memberInner,
         onClick: Q,
         onKeyDown: W,
         onMouseDown: Y,
         onContextMenu: J,
-        onMouseEnter: eD,
+        onMouseEnter: ew,
         onMouseLeave: ex,
         onBlur: eM,
         hovered: ef,
@@ -423,7 +423,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         }),
         avatar: (0, r.jsx)(q, {
           user: b,
-          shouldAnimateStatus: S,
+          shouldAnimateStatus: T,
           activities: O,
           status: I,
           eventHandlers: eI,
@@ -453,7 +453,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           isOwner: u,
           lostPermissionTooltipText: p,
           ownerTooltipText: f,
-          premiumSince: D,
+          premiumSince: w,
           onClickPremiumGuildIcon: $
         }),
         "aria-controls": ee,

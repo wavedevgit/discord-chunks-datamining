@@ -47,15 +47,15 @@ function I(e) {
   }
   return e
 }
-let S = 26,
-  T = 15 * Chunk70956.Z.Millis.MINUTE,
+let T = 26,
+  S = 15 * Chunk70956.Z.Millis.MINUTE,
   A = Chunk70956.Z.Millis.SECOND,
   C = "LAST_CLIENT_HEARTBEAT_SESSION",
   N = "user",
   R = new Chunk710845.Z("SessionHeartbeatScheduler"),
   P = null,
-  w = null,
-  D = 0,
+  D = null,
+  w = 0,
   x = 0,
   L = {
     state: "uninitialized"
@@ -66,7 +66,7 @@ let S = 26,
 
 function U() {
   if (null != P) return;
-  let e = 0 === x ? 0 : T - (performance.now() - x);
+  let e = 0 === x ? 0 : S - (performance.now() - x);
   Chunk960048.Z.addBreadcrumb({
     message: "Received Last Heartbeat Event Timestamp. Time Until Next Heartbeat: ".concat(module / 1e3, " seconds. Scheduling Heartbeat")
   }), P = {
@@ -76,7 +76,7 @@ function U() {
         type: "interval",
         id: setInterval(() => {
           F()
-        }, T)
+        }, S)
       }
     }, module)
   }
@@ -129,15 +129,15 @@ async function F() {
   });
   let r = I({
     client_heartbeat_initialization_timestamp: exports.createdAtTimestamp,
-    client_heartbeat_version: S
+    client_heartbeat_version: T
   }, (0, Chunk343420.O)(), Z());
   Chunk626135.default.track(Chunk981631.rMx.CLIENT_HEARTBEAT, Chunk772848), x = performance.now(), (0, Chunk188471.Z)()
 }
 
 function V() {
-  if (!(null != k && (0, Chunk733879.y)()) || performance.now() - x <= T) return;
+  if (!(null != k && (0, Chunk733879.y)()) || performance.now() - x <= S) return;
   let e = {
-    client_heartbeat_version: S
+    client_heartbeat_version: T
   };
   Chunk626135.default.track(Chunk981631.rMx.CLIENT_HEARTBEAT_SKIPPED, module)
 }
@@ -148,7 +148,7 @@ function Y() {
   let e = [];
   return null != k && (j && module.push("foregrounded"), M !== Chunk981631.hes.DISCONNECTED && M !== Chunk981631.hes.RTC_DISCONNECTED && module.push("rtc_connected")), {
     active: module.length > 0,
-    ver: S,
+    ver: T,
     reasons: module
   }
 }
@@ -162,18 +162,18 @@ function K() {
 }
 
 function z() {
-  null == w && (w = {
+  null == D && (D = {
     id: setInterval(() => {
       V()
-    }, T),
+    }, S),
     type: "interval"
   })
 }
 
 function q(e) {
   let t = performance.now();
-  if (!(t - D < A)) try {
-    o.K.set(C, e), D = t
+  if (!(t - w < A)) try {
+    o.K.set(C, e), w = t
   } catch (e) {
     m.Z.captureException(e)
   }
@@ -252,7 +252,7 @@ async function eo() {
         createdAtTimestamp: module,
         lastUsedTimestamp: module,
         version: Chunk686325.EI
-      }, D = 0), require.lastUsedTimestamp = module, q(require)) : null != require && (0, Chunk686325.qK)(require) && (n = null), L = {
+      }, w = 0), require.lastUsedTimestamp = module, q(require)) : null != require && (0, Chunk686325.qK)(require) && (n = null), L = {
         state: "loaded",
         session: require
       }, null != require && Chunk442837 !== require.uuid && exports) {

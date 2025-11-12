@@ -28,8 +28,8 @@ function v(e) {
   var t, n, v;
   let {
     application: I,
-    customId: S,
-    customLink: T,
+    customId: T,
+    customLink: S,
     referrerId: A,
     message: C
   } = e, N = null == I || null == (t = I.bot) ? true : t.id, R = (0, c.ms)({
@@ -38,13 +38,13 @@ function v(e) {
     },
     applicationId: I.id,
     botUserId: null == I || null == (n = I.bot) ? true : n.id
-  }), P = null != I && (0, l.ye)(I), w = null != N && P && R, {
-    analyticsLocations: D
+  }), P = null != I && (0, l.ye)(I), D = null != N && P && R, {
+    analyticsLocations: w
   } = (0, o.ZP)(a.Z.ACTIVITY_CUSTOM_LINK), x = (0, i.e7)([h.Z], () => h.Z.getChannelId()), L = (0, y.KF)(x), M = (0, i.e7)([E.ZP], () => {
     if (null == x) return;
     let e = E.ZP.getEmbeddedActivitiesForChannel(x).filter(e => e.applicationId === I.id);
     return e.length > 0 ? e[0].compositeInstanceId : true
-  }), j = (0, i.e7)([E.ZP], () => E.ZP.getCurrentEmbeddedActivity()), k = (0, b.Z)(), U = L === y.jy.CAN_LAUNCH, G = null != M && (null == j ? true : j.compositeInstanceId) === M, B = null != S ? S : T.customId, Z = [];
+  }), j = (0, i.e7)([E.ZP], () => E.ZP.getCurrentEmbeddedActivity()), k = (0, b.Z)(), U = L === y.jy.CAN_LAUNCH, G = null != M && (null == j ? true : j.compositeInstanceId) === M, B = null != T ? T : S.customId, Z = [];
   U && Z.push({
     label: null == M ? O.intl.string(O.t.RscU7I) : G ? O.intl.string(O.t.DPfdsq) : O.intl.string(O.t.sqe0hj),
     trackingArea: f.j_.PLAY,
@@ -56,18 +56,18 @@ function v(e) {
         embeddedActivitiesManager: k,
         customId: B,
         referrerId: A,
-        analyticsLocations: D
+        analyticsLocations: w
       })
     },
     disabled: G
-  }), w && !U && Z.push({
+  }), D && !U && Z.push({
     label: O.intl.string(O.t.JeK1Wg),
     trackingArea: f.j_.PLAY,
     onClick() {
       (0, s.W)({
         appId: I.id,
         botId: N,
-        analyticsLocations: D,
+        analyticsLocations: w,
         customId: B,
         referrerId: A
       })
@@ -84,10 +84,10 @@ function v(e) {
       bot: I.bot
     }),
     info: (0, r.jsx)("div", {
-      children: T.description
+      children: S.description
     }),
-    staticBannerSrc: T.getAssetURL(),
-    title: T.title,
+    staticBannerSrc: S.getAssetURL(),
+    title: S.title,
     trackingConfig: {
       id: I.id,
       linkType: u.U.CUSTOM_ACTIVITY_LINK,

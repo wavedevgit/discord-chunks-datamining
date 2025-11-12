@@ -33,17 +33,17 @@ let p = 0x7fffffff,
   v = {},
   I = new Set;
 
-function S(e) {
+function T(e) {
   let t = u.Z.createFromServer(e),
     n = t.code;
   if (m.has(n)) m.set(n, m.get(n).merge(t));
   else if (m.set(n, t), null != t.expiresAt) {
     let e = new s.V7;
-    h[n] = e, T(n)
+    h[n] = e, S(n)
   }
 }
 
-function T(e) {
+function S(e) {
   let t = m.get(e);
   if (null == t || null == t.expiresAt) return;
   let n = t.expiresAt.valueOf() - a()().valueOf();
@@ -51,7 +51,7 @@ function T(e) {
   else {
     let t = h[e];
     if (null == t) return;
-    t.start(Math.min(p, n), () => T(e))
+    t.start(Math.min(p, n), () => S(e))
   }
 }
 
@@ -88,17 +88,17 @@ function P(e) {
   let {
     giftCode: t
   } = e;
-  return g = g.filter(e => e !== t.code), b.includes(t.code) || (b = [...b, t.code]), S(t)
+  return g = g.filter(e => e !== t.code), b.includes(t.code) || (b = [...b, t.code]), T(t)
 }
 
-function w(e) {
+function D(e) {
   let {
     code: t
   } = e;
   g = g.filter(e => e !== t), b.includes(t) || (b = [...b, t])
 }
 
-function D(e) {
+function w(e) {
   let {
     code: t
   } = e;
@@ -118,7 +118,7 @@ function L(e) {
   let {
     giftCode: t
   } = e;
-  S(t)
+  T(t)
 }
 
 function M(e) {
@@ -151,7 +151,7 @@ function U(e) {
     skuId: n,
     subscriptionPlanId: r
   } = e;
-  t.forEach(S);
+  t.forEach(T);
   let i = (0, d.Bg)(n, r);
   O[i] = Date.now(), y.delete(i)
 }
@@ -293,11 +293,11 @@ let q = new z(Chunk570140.Z, {
     CHANNEL_SELECT: N,
     GIFT_CODE_RESOLVE: R,
     GIFT_CODE_RESOLVE_SUCCESS: P,
-    GIFT_CODE_RESOLVE_FAILURE: w,
+    GIFT_CODE_RESOLVE_FAILURE: D,
     GIFT_CODE_REDEEM: x,
     GIFT_CODE_REDEEM_SUCCESS: G,
     GIFT_CODE_REDEEM_FAILURE: B,
-    GIFT_CODE_REVOKE_SUCCESS: D,
+    GIFT_CODE_REVOKE_SUCCESS: w,
     GIFT_CODE_CREATE_SUCCESS: L,
     GIFT_CODES_FETCH: j,
     GIFT_CODES_FETCH_SUCCESS: U,

@@ -71,8 +71,8 @@ function E(e) {
     onClose: E,
     dismissable: true
   }), [O, E]), I = (0, d.Ll)(), {
-    theme: S
-  } = (0, u.TCT)(), T = (0, c.hvB)(n, a);
+    theme: T
+  } = (0, u.TCT)(), S = (0, c.hvB)(n, a);
   return (0, r.jsx)(c.tCf.Provider, {
     value: v,
     children: (0, r.jsx)(u.VqE, g(h({
@@ -92,11 +92,11 @@ function E(e) {
             children: e => (0, r.jsx)(s.animated.div, {
               "data-mana-component": "layer-modal",
               className: o()(_.container, f.modal, e),
-              style: T,
+              style: S,
               children: (0, r.jsx)("div", {
                 className: f.modalContent,
                 children: (0, r.jsx)(u.f6W, {
-                  theme: S,
+                  theme: T,
                   children: e => (0, r.jsx)("div", {
                     className: o()(e, f.modalContentInner),
                     children: y

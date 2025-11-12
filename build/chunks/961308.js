@@ -58,14 +58,14 @@ class m extends Chunk727916.Z {
     n.start.assign("hour", a), n.start.assign("minute", m), g >= 0 ? n.start.assign("meridiem", g) : a < 12 ? n.start.imply("meridiem", 0) : n.start.imply("meridiem", 1);
     let I = o.exec(e.text.substring(n.index + n.text.length));
     if (!I) return n.text.match(/^\d+$/) ? null : n;
-    let S = new Date(r.getTime());
+    let T = new Date(r.getTime());
     if (n.end = e.createParsingComponents(), I[s]) {
       let t = I[s];
-      "明" == t || "聽" == t ? e.refDate.getHours() > 1 && S.setDate(S.getDate() + 1) : "昨" == t || "尋" == t || "琴" == t ? S.setDate(S.getDate() - 1) : "前" == t ? S.setDate(S.getDate() - 2) : "大前" == t ? S.setDate(S.getDate() - 3) : "後" == t ? S.setDate(S.getDate() + 2) : "大後" == t && S.setDate(S.getDate() + 3), n.end.assign("day", S.getDate()), n.end.assign("month", S.getMonth() + 1), n.end.assign("year", S.getFullYear())
+      "明" == t || "聽" == t ? e.refDate.getHours() > 1 && T.setDate(T.getDate() + 1) : "昨" == t || "尋" == t || "琴" == t ? T.setDate(T.getDate() - 1) : "前" == t ? T.setDate(T.getDate() - 2) : "大前" == t ? T.setDate(T.getDate() - 3) : "後" == t ? T.setDate(T.getDate() + 2) : "大後" == t && T.setDate(T.getDate() + 3), n.end.assign("day", T.getDate()), n.end.assign("month", T.getMonth() + 1), n.end.assign("year", T.getFullYear())
     } else if (I[u]) {
       let e = I[u];
-      "明" == e || "聽" == e ? S.setDate(S.getDate() + 1) : "昨" == e || "尋" == e || "琴" == e ? S.setDate(S.getDate() - 1) : "前" == e ? S.setDate(S.getDate() - 2) : "大前" == e ? S.setDate(S.getDate() - 3) : "後" == e ? S.setDate(S.getDate() + 2) : "大後" == e && S.setDate(S.getDate() + 3), n.end.assign("day", S.getDate()), n.end.assign("month", S.getMonth() + 1), n.end.assign("year", S.getFullYear())
-    } else n.end.imply("day", S.getDate()), n.end.imply("month", S.getMonth() + 1), n.end.imply("year", S.getFullYear());
+      "明" == e || "聽" == e ? T.setDate(T.getDate() + 1) : "昨" == e || "尋" == e || "琴" == e ? T.setDate(T.getDate() - 1) : "前" == e ? T.setDate(T.getDate() - 2) : "大前" == e ? T.setDate(T.getDate() - 3) : "後" == e ? T.setDate(T.getDate() + 2) : "大後" == e && T.setDate(T.getDate() + 3), n.end.assign("day", T.getDate()), n.end.assign("month", T.getMonth() + 1), n.end.assign("year", T.getFullYear())
+    } else n.end.imply("day", T.getDate()), n.end.imply("month", T.getMonth() + 1), n.end.imply("year", T.getFullYear());
     if (a = 0, m = 0, g = false, I[p]) {
       let e = parseInt(I[p]);
       if (isNaN(e) && (e = (0, i.zU)(I[p])), e >= 60) return null;

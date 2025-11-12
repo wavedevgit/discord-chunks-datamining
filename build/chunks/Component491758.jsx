@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk556865 = require("./556865.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -72,8 +72,8 @@ function R() {
     remindersEnabled: t,
     decoupledClipsEnabled: n,
     clipsLength: a,
-    clipsQuality: T
-  } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()), C = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()), R = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)), P = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_SCREENSHOT, true)), w = Chunk435064.Z.isDecoupledGameClippingEnabled(), D = (0, Chunk779618.Z)(Chunk131951.Z), {
+    clipsQuality: S
+  } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()), C = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()), R = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)), P = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_SCREENSHOT, true)), D = Chunk435064.Z.isDecoupledGameClippingEnabled(), w = (0, Chunk779618.Z)(Chunk131951.Z), {
     showClipsHeaderEntrypoint: x
   } = Chunk924557.NV.useExperiment({
     location: "clips_recording_settings"
@@ -162,7 +162,7 @@ function R() {
         clipsEnabled: e,
         trackAnalytics: true
       })
-    }), w && D && (0, Chunk951288.jsx)(Chunk951288.Fragment, {
+    }), D && w && (0, Chunk951288.jsx)(Chunk951288.Fragment, {
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.yXvykv),
         description: Chunk388032.intl.string(Chunk388032.t.YP3ujk),
@@ -186,20 +186,20 @@ function R() {
     }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
       onChange: e => b.yi({
         resolution: e,
-        frameRate: T.frameRate
+        frameRate: S.frameRate
       }),
       label: Chunk388032.intl.string(Chunk388032.t.aFudZJ),
       description: Chunk388032.intl.string(Chunk388032.t.nIrkW5),
-      value: T.resolution,
+      value: S.resolution,
       options: k
     }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
       onChange: e => b.yi({
-        resolution: T.resolution,
+        resolution: S.resolution,
         frameRate: e
       }),
       label: Chunk388032.intl.string(Chunk388032.t["2wScL1"]),
       description: Chunk388032.intl.string(Chunk388032.t["Rf9+fy"]),
-      value: T.frameRate,
+      value: S.frameRate,
       options: U
     }), (0, Chunk951288.jsx)(Chunk481060.gNt, {
       label: Chunk388032.intl.string(Chunk388032.t.pf54EU),

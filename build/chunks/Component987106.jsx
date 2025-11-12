@@ -2,7 +2,7 @@
 /** chunk id: 987106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -75,7 +75,7 @@ function I(e) {
   }
 }
 
-function S(e) {
+function T(e) {
   let {
     url: t,
     onSelect: n
@@ -95,7 +95,7 @@ function S(e) {
   }) : null
 }
 
-function T(e) {
+function S(e) {
   let t, {
       label: n,
       style: i,
@@ -105,16 +105,16 @@ function T(e) {
       skuId: O
     } = e,
     {
-      executeStateUpdate: T,
+      executeStateUpdate: S,
       visualState: A,
       isDisabled: C
     } = (0, h.Ee)(e),
     N = (0, f.s)(O),
     R = null != O && i === d.ZJ.PREMIUM,
     P = R && (null == N ? true : N.disabled),
-    w = R ? null == N ? true : N.label : n,
-    D = null != g,
-    x = null != w && w.length > 0,
+    D = R ? null == N ? true : N.label : n,
+    w = null != g,
+    x = null != D && D.length > 0,
     L = i === d.ZJ.LINK && null != b && b.length > 0,
     M = A === m.gH.LOADING || R && null == N;
   return t = L ? () => {
@@ -122,14 +122,14 @@ function T(e) {
       href: null != b ? b : "",
       shouldConfirm: true
     })
-  } : R ? null != N && false === N.disabled ? N.onClick : o.noop : () => T(), (0, r.jsxs)(s.zx, {
+  } : R ? null != N && false === N.disabled ? N.onClick : o.noop : () => S(), (0, r.jsxs)(s.zx, {
     "data-migration-pending": true,
     color: I(i),
     size: s.zx.Sizes.SMALL,
     disabled: _ || A === m.gH.DISABLED || C || P,
     onClick: t,
     onContextMenu: e => {
-      L && (0, c.vq)(e, e => (0, r.jsx)(S, v(y({}, e), {
+      L && (0, c.vq)(e, e => (0, r.jsx)(T, v(y({}, e), {
         url: b
       })))
     },
@@ -146,7 +146,7 @@ function T(e) {
           size: "xs",
           color: "white"
         })
-      }) : null, D ? (0, r.jsx)(u.Z, {
+      }) : null, w ? (0, r.jsx)(u.Z, {
         className: a()({
           [E.textEmoji]: x
         }),
@@ -156,7 +156,7 @@ function T(e) {
         animated: g.animated
       }) : null, x ? (0, r.jsx)("div", {
         className: E.label,
-        children: w
+        children: D
       }) : null, L ? (0, r.jsx)(l.rgF, {
         size: "xs",
         color: "currentColor",

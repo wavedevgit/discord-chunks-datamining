@@ -95,18 +95,18 @@ function p(e) {
     } = await Promise.all([n.e("84992"), n.e("16"), n.e("54400")]).then(n.bind(n, 7305));
     return n => {
       var {
-        onClose: S
-      } = n, T = f(n, ["onClose"]);
+        onClose: T
+      } = n, S = f(n, ["onClose"]);
       return (0, r.jsx)(e, {
         activeSubscription: l,
         stepConfigs: s,
         skuIDs: [I],
         children: (0, r.jsx)(o.c1, {
           children: (0, r.jsx)(a.KB, {
-            children: (0, r.jsx)(i, d(c({}, T), {
+            children: (0, r.jsx)(i, d(c({}, S), {
               initialPlanId: t,
               onClose: e => {
-                S(), null == p || p(e)
+                T(), null == p || p(e)
               },
               analyticsLocations: g,
               analyticsObject: h,

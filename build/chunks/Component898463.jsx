@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => x,
-  r: () => D
+  r: () => w
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk635085 = require("./635085.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -188,7 +188,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     file: t,
     alt: n,
@@ -227,7 +227,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   var t;
   let {
     upload: n,
@@ -240,7 +240,7 @@ function D(e) {
     spoiler: n.spoiler,
     size: a,
     onMouseEnter: s
-  }) : !l && n.isVideo && n.item.platform === d.ow.WEB ? (0, r.jsx)(w, {
+  }) : !l && n.isVideo && n.item.platform === d.ow.WEB ? (0, r.jsx)(D, {
     file: n.item.file,
     size: a,
     alt: n.description,
@@ -274,12 +274,12 @@ function x(e) {
     size: h = O.q.MEDIUM,
     canEdit: m = true,
     hideFileName: E = false,
-    clip: S
-  } = e, A = null != S, N = (h = A ? O.q.CLIP : h) === O.q.SMALL, R = (0, s.e7)([g.Z], () => {
+    clip: T
+  } = e, A = null != T, N = (h = A ? O.q.CLIP : h) === O.q.SMALL, R = (0, s.e7)([g.Z], () => {
     var e;
     return null == (e = g.Z.getChannel(t)) ? true : e.guild_id
   }), P = e => {
-    e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, C(T({}, e), {
+    e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, C(S({}, e), {
       draftType: n,
       upload: a,
       channelId: t,
@@ -358,7 +358,7 @@ function x(e) {
     className: o()({
       [I.attachmentItemSmall]: N
     }),
-    children: [(0, r.jsx)(D, {
+    children: [(0, r.jsx)(w, {
       upload: a,
       size: h
     }), !E && !A && (0, r.jsx)("div", {
@@ -372,10 +372,10 @@ function x(e) {
     }), A && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(f.Z, {
         className: I.clipsFooter,
-        createdAt: b.default.extractTimestamp(S.id),
-        participantIds: S.users,
-        applicationId: S.applicationId,
-        title: S.name,
+        createdAt: b.default.extractTimestamp(T.id),
+        participantIds: T.users,
+        applicationId: T.applicationId,
+        title: T.name,
         guildId: R
       }), (0, r.jsx)(l.IGR, {
         color: _.Z.BG_BRAND,

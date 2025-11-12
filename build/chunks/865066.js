@@ -4,7 +4,7 @@
 require.d(exports, {
   O9: () => y,
   OK: () => P,
-  Yz: () => T,
+  Yz: () => S,
   aL: () => E,
   hi: () => O,
   s2: () => v,
@@ -76,16 +76,16 @@ function I(e, t, n) {
   }))
 }
 
-function S(e) {
+function T(e) {
   c.isPlatformEmbedded && (d.ZP.InputEventServiceSetStatusCallback(t => {
     I("input-service", t, e)
   }), d.ZP.InputEventServiceSetAllowed(true), d.ZP.ToolServiceSetStatusCallback(t => {
     I("tool-service", t, e)
   }), d.ZP.ToolServiceSetAllowed(true))
 }
-async function T(e) {
+async function S(e) {
   if (c.isPlatformEmbedded && E()) try {
-    await d.ZP.DoesSystemServiceHaveUpdate() && await d.ZP.UpdateSystemService(), S(e)
+    await d.ZP.DoesSystemServiceHaveUpdate() && await d.ZP.UpdateSystemService(), T(e)
   } catch (e) {
     throw u.Z.captureMessage("Error during system service initialization", {
       extra: {
@@ -129,7 +129,7 @@ async function R(e) {
     await d.ZP.InstallSystemService(), m.info("System service installed."), l.default.track(p.rMx.SYSTEM_SERVICE_INSTALL_ATTEMPTED, {
       success: true,
       source: e
-    }), N((0, i.createToast)(h.intl.string(h.t.kQnWby), i.ToastType.SUCCESS), t), S("after-install")
+    }), N((0, i.createToast)(h.intl.string(h.t.kQnWby), i.ToastType.SUCCESS), t), T("after-install")
   } catch (r) {
     let n = C(r);
     if (null == n && r instanceof Error) {

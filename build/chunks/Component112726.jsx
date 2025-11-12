@@ -96,7 +96,7 @@ let v = [{
     variant: "text-sm/normal",
     children: "Purchase button is disabled for this story"
   }),
-  S = e => {
+  T = e => {
     let {
       skuId: t,
       isGift: n,
@@ -139,7 +139,7 @@ let v = [{
       }), (0, r.jsx)(I, {})]
     })
   },
-  T = e => {
+  S = e => {
     let {
       skuId: t,
       isGift: n,
@@ -155,17 +155,17 @@ let v = [{
       skuId: t,
       isGift: n,
       applicationId: h.CL
-    }), E = u.ZP.isPremiumSku(t), b = E ? h.mn[t] : true, [y, O] = i.useState(b), S = i.useRef(false);
+    }), E = u.ZP.isPremiumSku(t), b = E ? h.mn[t] : true, [y, O] = i.useState(b), T = i.useRef(false);
     i.useEffect(() => {
-      S.current || null == b || (S.current = true, O(b))
+      T.current || null == b || (T.current = true, O(b))
     }, [b, y]);
     let {
-      isLoadedForPremiumSKUs: T,
+      isLoadedForPremiumSKUs: S,
       selectedPlan: A
     } = (0, d.rC)({
       subscriptionPlanId: y
     });
-    return !_ && null != m && T && E && null != A ? (0, r.jsxs)("div", {
+    return !_ && null != m && S && E && null != A ? (0, r.jsxs)("div", {
       className: g.verticalContainerCentered,
       children: [(0, r.jsx)(d.Vy, {
         stepConfigs: v,
@@ -205,7 +205,7 @@ let v = [{
     stories: [{
       name: "Collectibles Review Step",
       id: "collectibles-checkout-review-step",
-      component: S,
+      component: T,
       controls: b({
         skuId: {
           label: "SKU ID",
@@ -217,7 +217,7 @@ let v = [{
     }, {
       name: "Premium Review Step",
       id: "premium-checkout-review-step",
-      component: T,
+      component: S,
       controls: b({
         skuId: {
           label: "SKU ID",

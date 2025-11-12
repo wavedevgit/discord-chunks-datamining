@@ -35,7 +35,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
     username: t.username,
     activity: e.extra.activity_name
   }),
-  w = (e, t, n) => {
+  D = (e, t, n) => {
     let r = R.t["bES+y2"],
       i = b.ZP.getName(t.guild_id, t.id, n),
       a = e.extra.activity_name;
@@ -44,7 +44,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
       userName: i
     }).replaceAll("*", "")
   },
-  D = e => {
+  w = e => {
     let {
       entry: t,
       channel: n,
@@ -78,7 +78,7 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
     } = (0, C.n)(n), {
       primaryColor: B,
       secondaryColor: Z
-    } = (0, S.Z)(null == M ? true : M.src), F = (0, a.e7)([g.default], () => g.default.locale), {
+    } = (0, T.Z)(null == M ? true : M.src), F = (0, a.e7)([g.default], () => g.default.locale), {
       displayParticipants: V,
       participant1: H,
       participant2: Y,
@@ -89,12 +89,12 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
       })
     }, z = i.useCallback(e => {
       if ((null == M ? true : M.src) == null || null == t || null == j) return;
-      let r = W > 0 ? D({
+      let r = W > 0 ? w({
         entry: n,
         channel: t,
         users: [H, Y],
         countOthers: W
-      }) : w(n, t, j);
+      }) : D(n, t, j);
       return (0, I.C4)({
         entry: n,
         applicationImageSrc: null == M ? true : M.src,
@@ -117,8 +117,8 @@ let P = (e, t) => R.intl.formatToPlainString(R.t.tAwI1k, {
       autoTrackExposure: true
     });
     if (null == j) return null;
-    let J = (0, r.jsx)(T.PZ, {
-        location: T.Gt.POPOUT,
+    let J = (0, r.jsx)(S.PZ, {
+        location: S.Gt.POPOUT,
         entry: n
       }),
       $ = (0, r.jsx)(A.wG, {

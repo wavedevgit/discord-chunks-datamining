@@ -60,7 +60,7 @@ function v(e, t) {
   }), e
 }
 let I = new Chunk710845.Z("MarkdownToSlate"),
-  S = {
+  T = {
     link: {
       type: "skip"
     },
@@ -229,12 +229,12 @@ let I = new Chunk710845.Z("MarkdownToSlate"),
       after: ""
     }
   },
-  T = new Set(["*", "_", "\\"]),
+  S = new Set(["*", "_", "\\"]),
   A = {},
   C = {};
 for (let e in Chunk428595.Z.RULES) {
-  if (!(module in S)) throw Error("Slate: Unknown markdown rule: ".concat(module, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
-  let t = S[module];
+  if (!(module in T)) throw Error("Slate: Unknown markdown rule: ".concat(module, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
+  let t = T[module];
   "skip" !== exports.type && (A[module] = N(Chunk428595.Z.RULES[module])), "skip" !== exports.type && "inlineObject" !== exports.type && (C[module] = N("text" === module ? Chunk594199.ZP : Chunk428595.Z.RULES[module]))
 }
 
@@ -299,10 +299,10 @@ let P = {
       }
     }
   },
-  w = /(-# +)/,
-  D = (0, Chunk364458.Z)([A, P]),
+  D = /(-# +)/,
+  w = (0, Chunk364458.Z)([A, P]),
   x = (0, Chunk364458.Z)([C, P]),
-  L = Chunk25209._p(D),
+  L = Chunk25209._p(w),
   M = Chunk25209._p(x),
   j = {
     max: 1 / 0,
@@ -547,10 +547,10 @@ function V(e, t, n, r) {
     after: "_"
   };
   if ("subtext" === t) return {
-    before: w.exec(r.input)[1],
+    before: D.exec(r.input)[1],
     after: ""
   };
-  let i = S["link" === t ? "url" : t];
+  let i = T["link" === t ? "url" : t];
   if ("inlineStyle" === i.type) return i;
   throw Error("Slate: rule must be an inlineStyle")
 }
@@ -613,13 +613,13 @@ function K(e, t) {
 }
 
 function z(e, t, n) {
-  if (t.split("").some(e => T.has(e))) return I.error(e), n;
+  if (t.split("").some(e => S.has(e))) return I.error(e), n;
   throw Error(e)
 }
 
 function q(e, t, n, r) {
   for (; n < r;)
-    if (T.has(t[n])) n = Y(e, t, t[n], n, "syntaxBefore"), n = K(t, n);
+    if (S.has(t[n])) n = Y(e, t, t[n], n, "syntaxBefore"), n = K(t, n);
     else break;
   return n
 }

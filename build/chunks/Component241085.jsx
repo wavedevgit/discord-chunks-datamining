@@ -91,7 +91,7 @@ function P(e) {
   })
 }
 
-function w() {
+function D() {
   return (0, Chunk951288.jsxs)("div", {
     className: o()(Chunk975279.mainWrapper, Chunk975279.mainBody),
     children: [(0, Chunk951288.jsx)(Chunk481060.owK, {
@@ -109,7 +109,7 @@ function w() {
   })
 }
 
-function D(e) {
+function w(e) {
   var t;
   let {
     upload: n,
@@ -149,7 +149,7 @@ function x(e) {
   let {
     minValues: n,
     maxValues: a
-  } = e, s = i.useRef(null), u = i.useRef(null), [h, m] = i.useState(false), g = (0, T.CJ)();
+  } = e, s = i.useRef(null), u = i.useRef(null), [h, m] = i.useState(false), g = (0, S.CJ)();
   l()(null != g, "FileUploadActionComponent must be used within a ComponentStateContextProvider");
   let E = g.channelId;
   l()(null != E, "FileUploadActionComponent must be used inside a channel");
@@ -178,7 +178,7 @@ function x(e) {
           maxValues: a
         })
       });
-      if ((0, S.Bf)(e, j.guild_id)) return (0, I.G)(j, e);
+      if ((0, T.Bf)(e, j.guild_id)) return (0, I.G)(j, e);
       let n = e.map(e => {
         let n = (0, A.VD)(O),
           r = {
@@ -213,7 +213,7 @@ function x(e) {
     return null == e || e.addEventListener("dragover", k), null == e || e.addEventListener("dragleave", U), null == e || e.addEventListener("drop", B), () => {
       null == e || e.removeEventListener("dragover", k), null == e || e.removeEventListener("dragleave", U), null == e || e.removeEventListener("drop", B)
     }
-  }, [k, U, B]), 1 === a && 1 === L.length) ? (0, r.jsx)(D, {
+  }, [k, U, B]), 1 === a && 1 === L.length) ? (0, r.jsx)(w, {
     upload: L[0],
     handleRemoveFile: F,
     singleFileInput: true
@@ -223,7 +223,7 @@ function x(e) {
       [R.dropping]: h,
       [R.error]: null != M
     }),
-    children: [v.length >= a ? (0, r.jsx)(w, {}) : (0, r.jsx)(P, {
+    children: [v.length >= a ? (0, r.jsx)(D, {}) : (0, r.jsx)(P, {
       dropping: h,
       fileInputRef: s,
       minValues: n,
@@ -231,7 +231,7 @@ function x(e) {
       guildId: j.guild_id
     }), L.length > 0 && (0, r.jsx)("div", {
       className: R.files,
-      children: L.map(e => (0, r.jsx)(D, {
+      children: L.map(e => (0, r.jsx)(w, {
         upload: e,
         handleRemoveFile: F
       }, e.id))

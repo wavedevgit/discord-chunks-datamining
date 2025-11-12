@@ -120,7 +120,7 @@ function eg(e) {
     partyStatusElement: p,
     presenceActivity: g,
     guildId: E
-  } = e, y = (0, X.g)(u, g), O = (0, D.Lz)(g, f.author, "Invite Embed"), v = !(0, ee.Z)(g, f, l.id), I = [], S = i.useMemo(() => {
+  } = e, y = (0, X.g)(u, g), O = (0, w.Lz)(g, f.author, "Invite Embed"), v = !(0, ee.Z)(g, f, l.id), I = [], T = i.useMemo(() => {
     let e = [];
     if (!y) {
       var t;
@@ -135,8 +135,8 @@ function eg(e) {
       })
     }
     return e
-  }, [y, O]), T = i.useMemo(() => {
-    if (null != g) return () => (0, w.aG)(g)
+  }, [y, O]), S = i.useMemo(() => {
+    if (null != g) return () => (0, D.aG)(g)
   }, [g]), A = (0, Y.dQ)(l.name, null == (t = f.activity) ? true : t.type, v);
   if (v) {
     let e = (0, r.jsx)(c.Text, {
@@ -152,7 +152,7 @@ function eg(e) {
       iconSrc: x.r9.getWhiteIconURL(),
       info: e,
       actions: I,
-      onClickContent: T,
+      onClickContent: S,
       trackingConfig: {
         id: l.id,
         linkType: el.U.RICH_PRESENCE_INVITE,
@@ -200,8 +200,8 @@ function eg(e) {
       title: e,
       iconSrc: null != (s = (0, z.Z)(g, l.id)) ? s : true,
       info: u,
-      actions: S,
-      onClickContent: T,
+      actions: T,
+      onClickContent: S,
       trackingConfig: {
         id: l.id,
         linkType: el.U.RICH_PRESENCE_INVITE,
@@ -218,7 +218,7 @@ function eg(e) {
 function eE(e, t) {
   let n = (0, P.h)(e);
   return {
-    openGameProfileModal: (0, T.Z)({
+    openGameProfileModal: (0, S.Z)({
       location: "Rich Presence Activity Invite Embed",
       applicationId: null != n ? n : true,
       source: I.m1.Embed,
@@ -328,30 +328,30 @@ function eO(e) {
   var t, n, s, g, v;
   let {
     analyticsLocations: I,
-    application: T,
+    application: S,
     channel: A,
     currentUserId: C,
     currentUserPresenceActivity: N,
     hideParty: R,
     message: P,
-    onView: w,
-    partyStatusElement: D,
+    onView: D,
+    partyStatusElement: w,
     presenceActivity: x
-  } = e, L = (0, O.A)(T), M = (0, p.ye)(T), {
+  } = e, L = (0, O.A)(S), M = (0, p.ye)(S), {
     bot: j
-  } = T, U = F.ZP.getApplicationIconURL({
-    id: T.id,
-    icon: T.icon,
+  } = S, U = F.ZP.getApplicationIconURL({
+    id: S.id,
+    icon: S.icon,
     bot: j
   }), G = null != (g = (0, ei.v)({
     messageId: P.id,
     presenceActivity: x,
-    application: T
-  })) ? g : true, B = h.u.ACTIVITY, V = !(0, ee.Z)(x, P, T.id), H = (0, q.H)(P), {
+    application: S
+  })) ? g : true, B = h.u.ACTIVITY, V = !(0, ee.Z)(x, P, S.id), H = (0, q.H)(P), {
     openGameProfileModal: z,
     launchableAppId: Q
-  } = eE(T.id, P.author.id), J = !!Q, en = (0, er.Z)({
-    application: T,
+  } = eE(S.id, P.author.id), J = !!Q, en = (0, er.Z)({
+    application: S,
     analyticsLocations: I
   }), ea = i.useMemo(() => null == en ? null : {
     label: eu.intl.string(eu.t["jaYS/h"]),
@@ -366,11 +366,11 @@ function eO(e) {
     currentUserPresenceActivity: N,
     currentUserId: C,
     message: P,
-    application: T,
+    application: S,
     isEmbeddedApplication: M,
     isFrameApplication: L,
     isGameLaunchable: J
-  }), ef = em(x, N, P, T), ep = (0, X.g)(N, x), eh = (0, K.L)(x, P, T, C), eg = (0, l.e7)([Z.Z], () => null != x && null != x.application_id && Z.Z.getState(x.application_id, es.mFx.JOIN) === es.OcF.LOADING), eO = i.useMemo(() => eo ? {
+  }), ef = em(x, N, P, S), ep = (0, X.g)(N, x), eh = (0, K.L)(x, P, S, C), eg = (0, l.e7)([Z.Z], () => null != x && null != x.application_id && Z.Z.getState(x.application_id, es.mFx.JOIN) === es.OcF.LOADING), eO = i.useMemo(() => eo ? {
     label: eu.intl.string(eu.t.VJlc0S),
     trackingArea: m.j_.JOIN,
     submitting: eg,
@@ -433,13 +433,13 @@ function eO(e) {
         embedded: M
       })
     }
-  } : null != ea ? ea : true, [M, J, Q, ea]), eI = (0, E.G)(T), eS = i.useMemo(() => null != z ? z : null != eI && M ? eI : true, [M, z, eI]), eT = (0, l.e7)([k.Z], () => k.Z.getMessages(A.id)), eA = i.useMemo(() => {
+  } : null != ea ? ea : true, [M, J, Q, ea]), eI = (0, E.G)(S), eT = i.useMemo(() => null != z ? z : null != eI && M ? eI : true, [M, z, eI]), eS = (0, l.e7)([k.Z], () => k.Z.getMessages(A.id)), eA = i.useMemo(() => {
     let e = [];
-    return V || null == eO ? V && null != ev && (eT.hasAnyAfter(P.id, e => {
+    return V || null == eO ? V && null != ev && (eS.hasAnyAfter(P.id, e => {
       var t;
-      return null != e.activity && (null == (t = e.application) ? true : t.id) === T.id && e.activity.type === es.mFx.JOIN && !(0, ee.Z)(x, e, T.id)
+      return null != e.activity && (null == (t = e.application) ? true : t.id) === S.id && e.activity.type === es.mFx.JOIN && !(0, ee.Z)(x, e, S.id)
     }, e_) || e.push(ev)) : e.push(eO), e
-  }, [ev, V, eO, P.id, T.id, x, eT]), eC = i.useMemo(() => eA.some(e => e.trackingArea === m.j_.CLOUD_PLAY), [eA]);
+  }, [ev, V, eO, P.id, S.id, x, eS]), eC = i.useMemo(() => eA.some(e => e.trackingArea === m.j_.CLOUD_PLAY), [eA]);
   (0, _.Z)({
     name: a.ImpressionNames.CLOUD_PLAY_CTA,
     type: a.ImpressionTypes.VIEW,
@@ -449,8 +449,8 @@ function eO(e) {
   }, {
     disableTrack: !eC
   });
-  let eN = (0, Y.dQ)(T.name, null == (t = P.activity) ? true : t.type, V),
-    eR = (0, S.N)(T.id).some(e => (0, y.ig)(e) === o.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
+  let eN = (0, Y.dQ)(S.name, null == (t = P.activity) ? true : t.type, V),
+    eR = (0, T.N)(S.id).some(e => (0, y.ig)(e) === o.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.YqE, {
         size: "xxs",
         color: "currentColor"
@@ -467,22 +467,22 @@ function eO(e) {
         className: ed.description,
         color: "none",
         lineClamp: 3,
-        children: (0, Y.wR)(P, T, A, C, e)
+        children: (0, Y.wR)(P, S, A, C, e)
       });
     return eA.length > 0 ? (0, r.jsx)(h.W, {
       header: eN,
-      title: T.name,
+      title: S.name,
       staticBannerSrc: eA.length > 0 ? G : true,
-      onClickBanner: eS,
+      onClickBanner: eT,
       bannerAspectRatio: B,
       iconSrc: null != U ? U : true,
       info: t,
       actions: eA,
-      onClickContent: eS,
+      onClickContent: eT,
       trackingConfig: {
-        id: T.id,
+        id: S.id,
         linkType: el.U.RICH_PRESENCE_INVITE,
-        onView: w,
+        onView: D,
         referrerId: P.author.id,
         guildId: A.guild_id,
         channelId: P.channel_id,
@@ -491,21 +491,21 @@ function eO(e) {
       }
     }) : (0, r.jsx)(ey, {
       message: P,
-      application: T,
+      application: S,
       channel: A,
       currentUserId: C,
-      viewAction: eS
+      viewAction: eT
     })
   }
-  let ew = null != (v = null == x || null == (n = x.timestamps) ? true : n.start) ? v : null == x ? true : x.created_at,
-    eD = null != ew ? (0, r.jsxs)("div", {
+  let eD = null != (v = null == x || null == (n = x.timestamps) ? true : n.start) ? v : null == x ? true : x.created_at,
+    ew = null != eD ? (0, r.jsxs)("div", {
       className: ed.timestampContainer,
       children: [(0, r.jsx)(c.iWm, {
         size: "xxs",
         color: "currentColor"
       }), (0, r.jsx)(b.x3, {
         entry: {
-          start: ew,
+          start: eD,
           end: null == x || null == (s = x.timestamps) ? true : s.end
         },
         textColor: "currentColor",
@@ -518,26 +518,26 @@ function eO(e) {
       className: ed.tagline,
       color: "none",
       lineClamp: 2,
-      children: [H ? (0, Y.$v)(P, T, A, C, V) : eD, H ? null : eR]
+      children: [H ? (0, Y.$v)(P, S, A, C, V) : ew, H ? null : eR]
     }),
     eL = (0, r.jsxs)("div", {
       className: ed.info,
-      children: [ex, R || H ? null : D]
+      children: [ex, R || H ? null : w]
     });
   return (0, r.jsx)(h.W, {
     header: eN,
-    title: T.name,
+    title: S.name,
     staticBannerSrc: G,
-    onClickBanner: eS,
+    onClickBanner: eT,
     bannerAspectRatio: B,
     iconSrc: null != U ? U : true,
     info: eL,
     actions: eA,
-    onClickContent: eS,
+    onClickContent: eT,
     trackingConfig: {
-      id: T.id,
+      id: S.id,
       linkType: el.U.RICH_PRESENCE_INVITE,
-      onView: w,
+      onView: D,
       referrerId: P.author.id,
       guildId: A.guild_id,
       channelId: P.channel_id,

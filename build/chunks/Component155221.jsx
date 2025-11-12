@@ -42,7 +42,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function w(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,7 +67,7 @@ function D(e, t) {
 }
 
 function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -333,7 +333,7 @@ class ei extends Chunk647438.Component {
         }
       }), (0, Chunk951288.jsx)(Chunk843611.l_, {
         from: Chunk981631.Z5c.CONNECT_AUTHORIZE,
-        to: x(w({}, location), {
+        to: x(D({}, location), {
           pathname: Chunk981631.Z5c.OAUTH2_AUTHORIZE
         })
       }), (0, Chunk951288.jsx)(Chunk843611.AW, {
@@ -376,7 +376,7 @@ function ea() {
 
 function eo(e) {
   let t = ea();
-  return (0, r.jsx)(ei, x(w({}, e), {
+  return (0, r.jsx)(ei, x(D({}, e), {
     skipsSettingDefaultPageTitle: t
   }))
 }

@@ -59,15 +59,15 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = 200,
-  T = 200,
+let T = 200,
+  S = 200,
   A = +Chunk70956.Z.Millis.MINUTE,
   C = {},
   N = "content",
   R = "file://",
   P = false,
-  w = 0,
   D = 0,
+  w = 0,
   x = 0,
   L = [],
   M = [],
@@ -209,7 +209,7 @@ function H(e) {
   M = (M = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...M]).slice(0, T)
+  }, ...M]).slice(0, S)
 }
 
 function Y(e) {
@@ -218,7 +218,7 @@ function Y(e) {
   L = (L = [{
     bytes: e,
     timestamp: t
-  }, ...L]).slice(0, T).filter(e => {
+  }, ...L]).slice(0, S).filter(e => {
     let {
       timestamp: t
     } = e;
@@ -230,11 +230,11 @@ function W(e) {
   j = (j = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...j]).slice(0, T)
+  }, ...j]).slice(0, S)
 }
-let K = a().throttle(H, S),
-  z = a().throttle(Y, S),
-  q = a().throttle(W, S);
+let K = a().throttle(H, T),
+  z = a().throttle(Y, T),
+  q = a().throttle(W, T);
 
 function X(e, t, n) {
   let r = n(C[t]),
@@ -256,9 +256,9 @@ function Q(e) {
       let o = (0, p.Tu)(e, t);
       if (n[o] = B(r[e][t]), null != C[o]) {
         let e = X(n, o, Z);
-        e > 0 && K(w += e);
+        e > 0 && K(D += e);
         let r = X(n, o, F);
-        r > 0 && q(D += r);
+        r > 0 && q(w += r);
         let s = X(n, o, V);
         if (s > 0 && z(x += s), i === t) {
           let e = n[o];

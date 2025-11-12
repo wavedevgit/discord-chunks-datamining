@@ -68,18 +68,18 @@ function O(e) {
     entry: O,
     onSelect: v,
     disableGameProfileLinks: I
-  } = e, S = i.useRef(null), T = i.useContext(_.Ir), A = (0, d.Z)({
+  } = e, T = i.useRef(null), S = i.useContext(_.Ir), A = (0, d.Z)({
     userId: n.id,
     guildId: m,
     channelId: null == E ? true : E.id,
-    onAction: T
+    onAction: S
   }), C = (0, l.Z)({
     id: n.id,
     label: p.intl.string(p.t["/AXYnE"])
   }), N = "application_id" in O.extra ? O.extra.application_id : null, R = (0, l.Z)({
     id: N,
     label: p.intl.string(p.t["FfCL+6"])
-  }), P = (0, f.dX)(O), w = (0, u.Z)({
+  }), P = (0, f.dX)(O), D = (0, u.Z)({
     location: "ContentPopoutContextMenu",
     applicationId: P && true !== I ? null == (t = O.extra) ? true : t.application_id : true,
     source: c.m1.ActivityCardContextMenu,
@@ -87,7 +87,7 @@ function O(e) {
     sourceUserId: O.author_id
   });
   return (0, r.jsx)(o.yRy, {
-    targetElementRef: S,
+    targetElementRef: T,
     align: "top",
     position: "right",
     disablePointerEvents: false,
@@ -104,11 +104,11 @@ function O(e) {
         onSelect: v,
         children: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(o.kSQ, {
-            children: [A, null != w && (0, r.jsx)(o.sNh, {
+            children: [A, null != D && (0, r.jsx)(o.sNh, {
               id: "game-profile",
               label: p.intl.string(p.t.f7aVGn),
               action: e => {
-                w(e), null == T || T()
+                D(e), null == S || S()
               }
             })]
           }), (0, r.jsxs)(o.kSQ, {
@@ -121,7 +121,7 @@ function O(e) {
       asContainer: true,
       text: p.intl.string(p.t["UKOtz+"]),
       children: (0, r.jsx)(o.P3F, b(g({
-        innerRef: S,
+        innerRef: T,
         className: h.menuIcon
       }, e), {
         children: (0, r.jsx)(o.xhG, {

@@ -2,8 +2,8 @@
 /** chunk id: 436444, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => S,
-  Z: () => T
+  P: () => T,
+  Z: () => S
 }), require("./415506.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -74,26 +74,26 @@ function I(e) {
       throw Error("Unsupported Boosting tier: ".concat(e))
   }
 }
-let S = {
+let T = {
     [Chunk981631.Eu4.NONE]: 0,
     [Chunk981631.Eu4.TIER_1]: 1 / 3,
     [Chunk981631.Eu4.TIER_2]: 2 / 3,
     [Chunk981631.Eu4.TIER_3]: 1
   },
-  T = function(e) {
+  S = function(e) {
     let {
       children: t,
       confettiTriggerRef: n,
       guild: i,
       isProgressBarAnimationComplete: b,
       setConfettiCount: O,
-      setShouldFireConfetti: T,
+      setShouldFireConfetti: S,
       tier: A,
       tierMarkerAnimationPosition: C,
       totalAvailableBoostsCount: N
     } = e, {
       analyticsLocations: R
-    } = (0, l.ZP)(), P = (0, c.Z)(), w = p.oCV[A], D = w - N, x = A <= C || b, L = x && A <= i.premiumTier, M = x && A < i.premiumTier, j = x && A === i.premiumTier, k = i.premiumTier < A && N >= w, {
+    } = (0, l.ZP)(), P = (0, c.Z)(), D = p.oCV[A], w = D - N, x = A <= C || b, L = x && A <= i.premiumTier, M = x && A < i.premiumTier, j = x && A === i.premiumTier, k = i.premiumTier < A && N >= D, {
       scaleFactor: U
     } = (0, s.q_F)({
       from: {
@@ -132,7 +132,7 @@ let S = {
           object: p.qAy.SUBSCRIBE_TO_TIER_BUTTON,
           objectType: I(A)
         },
-        numberOfBoostsToAdd: D,
+        numberOfBoostsToAdd: w,
         guild: i
       }))
     }
@@ -152,7 +152,7 @@ let S = {
           useLevels: false
         })
       }) : m.intl.formatToPlainString(m.t.r6NN6Q, {
-        numBoostsRequired: D,
+        numBoostsRequired: w,
         tierName: (0, d.nW)(A, {
           useLevels: false
         })
@@ -166,7 +166,7 @@ let S = {
           [E.progressBarMarkerCurrent]: j
         }),
         style: {
-          left: "".concat(100 * S[A], "%")
+          left: "".concat(100 * T[A], "%")
         }
       }, e, V), {
         children: [!L && (0, r.jsx)("div", {
@@ -174,7 +174,7 @@ let S = {
         }), L && A === p.Eu4.TIER_3 ? (0, r.jsx)(_.m, {
           confettiTriggerRef: n,
           setConfettiCount: O,
-          setShouldFireConfetti: T,
+          setShouldFireConfetti: S,
           children: G
         }) : G, (0, r.jsxs)(s.Text, {
           className: E.progressBarMarkerLabel,

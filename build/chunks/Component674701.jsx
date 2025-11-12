@@ -53,7 +53,7 @@ function L(e) {
     giftIntentSecondaryAction: G
   } = e, B = (0, l.e7)([y.default], () => y.default.getCurrentUser()), {
     analyticsLocations: Z
-  } = (0, h.ZP)(), F = (0, l.e7)([T.Z], () => T.Z.getFriendAnniversaryYears(a.id));
+  } = (0, h.ZP)(), F = (0, l.e7)([S.Z], () => S.Z.getFriendAnniversaryYears(a.id));
   i.useEffect(() => {
     (0, m.h)({
       name: s.ImpressionNames.GIFT_INTENT_CARD,
@@ -61,27 +61,27 @@ function L(e) {
       properties: {
         gift_intent_type: t,
         type: n,
-        num_friend_anniversaries: T.Z.getFriendAnniversaries().length
+        num_friend_anniversaries: S.Z.getFriendAnniversaries().length
       }
     })
   }, [t, n]);
-  let V = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.BWJvAK, {
+  let V = () => t === C.hX.FRIEND_ANNIVERSARY ? D.intl.formatToPlainString(D.t.BWJvAK, {
       friendUserName: v.ZP.getName(a)
     }) : (0, I.Ou)(t),
-    H = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.S3fdq7, {
+    H = () => t === C.hX.FRIEND_ANNIVERSARY ? D.intl.formatToPlainString(D.t.S3fdq7, {
       numberOfYears: F
     }) : (0, I.Ou)(t),
     Y = () => {
       switch (G) {
         case C.X2.VIEW_ALL:
-          return w.intl.string(w.t.WkxniM);
+          return D.intl.string(D.t.WkxniM);
         case C.X2.SEND_MESSAGE:
-          return w.intl.string(w.t.I61IsE);
+          return D.intl.string(D.t.I61IsE);
         default:
           return
       }
     },
-    W = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t["L2s/N3"], {
+    W = () => t === C.hX.FRIEND_ANNIVERSARY ? D.intl.formatToPlainString(D.t["L2s/N3"], {
       numberOfYears: F
     }) : (0, I.Ou)(t),
     K = e => {
@@ -108,42 +108,42 @@ function L(e) {
         cta_type: G
       }), G === C.X2.VIEW_ALL ? _.Z.transitionToSection(N.pJs.ALL, {
         explicit: true
-      }) : G === C.X2.SEND_MESSAGE && ((0, S.PV)(a.id), f.Z.openPrivateChannel({
+      }) : G === C.X2.SEND_MESSAGE && ((0, T.PV)(a.id), f.Z.openPrivateChannel({
         recipientIds: a.id
       }).then(() => {
         setTimeout(() => {
           (0, E.PG)(R.X1.GIF, g.Ie.NORMAL), setTimeout(() => {
-            (0, E.ql)(w.intl.string(w.t.jrtJi4), true)
+            (0, E.ql)(D.intl.string(D.t.jrtJi4), true)
           }, 50)
         }, 100)
       }))
     },
     q = "coachmark" === n,
-    X = q ? D.innerContentCoachmark : D.innerContent,
-    Q = q ? D.recipientUserAvatarCoachmark : D.recipientUserAvatar,
-    J = q ? D.currentUserAvatarCoachmark : D.currentUserAvatar,
+    X = q ? w.innerContentCoachmark : w.innerContent,
+    Q = q ? w.recipientUserAvatarCoachmark : w.recipientUserAvatar,
+    J = q ? w.currentUserAvatarCoachmark : w.currentUserAvatar,
     $ = q ? "header-primary" : "always-white",
-    ee = q ? D.subHeaderTextCoachmark : D.subHeaderText,
+    ee = q ? w.subHeaderTextCoachmark : w.subHeaderText,
     et = q ? u.zx.Colors.BRAND : u.zx.Colors.WHITE,
     en = q ? c.Z.colors.WHITE : c.Z.colors.BG_BRAND,
-    er = q ? D.buttonTextPrimaryCoachmark : D.buttonTextPrimary,
-    ei = q ? D.buttonSecondaryCoachmark : D.buttonSecondary,
-    ea = q ? D.buttonTextSecondaryCoachmark : D.buttonTextSecondary;
+    er = q ? w.buttonTextPrimaryCoachmark : w.buttonTextPrimary,
+    ei = q ? w.buttonSecondaryCoachmark : w.buttonSecondary,
+    ea = q ? w.buttonTextSecondaryCoachmark : w.buttonTextSecondary;
   return (0, r.jsx)("div", {
-    className: o()(D.content, {
-      [D.outerGlow]: U,
-      [D.contentCoachmark]: q
+    className: o()(w.content, {
+      [w.outerGlow]: U,
+      [w.contentCoachmark]: q
     }),
     onMouseEnter: x,
     onMouseLeave: L,
     children: (0, r.jsxs)("div", {
       className: o()(X, {
-        [D.innerGlow]: U
+        [w.innerGlow]: U
       }),
       children: [(0, r.jsxs)("div", {
-        className: D.subContent,
+        className: w.subContent,
         children: [(0, r.jsxs)("div", {
-          className: D.avatars,
+          className: w.avatars,
           children: [(0, r.jsx)(p.Z, {
             className: Q,
             user: a,
@@ -156,7 +156,7 @@ function L(e) {
             size: P.EF.SIZE_24
           })]
         }), (0, r.jsxs)("div", {
-          className: D.textContainer,
+          className: w.textContainer,
           children: [(0, r.jsx)(d.Text, {
             variant: "text-md/medium",
             color: $,
@@ -169,30 +169,30 @@ function L(e) {
           })]
         })]
       }), (0, r.jsxs)("div", {
-        className: D.buttonContainer,
+        className: w.buttonContainer,
         children: [null != G && (0, r.jsx)(u.zx, {
           "data-migration-pending": true,
-          className: o()(D.button, ei),
+          className: o()(w.button, ei),
           onClick: z,
           size: u.zx.Sizes.MEDIUM,
           color: u.zx.Colors.CUSTOM,
           look: u.zx.Looks.OUTLINED,
           children: (0, r.jsx)("div", {
-            className: D.buttonContentContainer,
+            className: w.buttonContentContainer,
             children: (0, r.jsx)(d.Text, {
               variant: "text-sm/medium",
-              className: o()(D.buttonText, ea),
+              className: o()(w.buttonText, ea),
               children: Y()
             })
           })
         }), (0, r.jsx)(u.zx, {
           "data-migration-pending": true,
-          className: D.button,
+          className: w.button,
           onClick: K,
           size: u.zx.Sizes.MEDIUM,
           color: et,
           children: (0, r.jsxs)("div", {
-            className: D.buttonContentContainer,
+            className: w.buttonContentContainer,
             children: [(0, r.jsx)(d.OgN, {
               color: en,
               size: "custom",
@@ -200,15 +200,15 @@ function L(e) {
               height: "14"
             }), (0, r.jsx)(d.Text, {
               variant: "text-sm/medium",
-              className: o()(D.buttonText, er),
-              children: w.intl.string(w.t["wg/30i"])
+              className: o()(w.buttonText, er),
+              children: D.intl.string(D.t["wg/30i"])
             })]
           })
         })]
       }), null != M && (0, r.jsx)("div", {
-        className: o()(D.connector, {
-          [D.leftPopoutConnector]: "left" === M,
-          [D.rightPopoutConnector]: "right" === M
+        className: o()(w.connector, {
+          [w.leftPopoutConnector]: "left" === M,
+          [w.rightPopoutConnector]: "right" === M
         })
       })]
     })

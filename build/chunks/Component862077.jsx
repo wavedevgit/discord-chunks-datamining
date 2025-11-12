@@ -2,7 +2,7 @@
 /** chunk id: 862077, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -46,35 +46,35 @@ function I(e) {
   return e
 }
 
-function S(e) {
+function T(e) {
   let {
     user: t,
     guildId: n,
     setPopoutRef: v,
-    channelId: S,
-    messageId: T,
+    channelId: T,
+    messageId: S,
     roleId: A,
     openedAt: C,
     onHide: N,
     newAnalyticsLocations: R = [],
     disableAutoFocus: P = false
-  } = e, w = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
-    analyticsLocations: D
-  } = (0, l.ZP)([...R, w ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), x = (0, d.ZB)({
+  } = e, D = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
+    analyticsLocations: w
+  } = (0, l.ZP)([...R, D ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), x = (0, d.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
-    channelId: S,
-    messageId: T,
+    channelId: T,
+    messageId: S,
     roleId: A
   }), L = i.useRef(null), M = (0, _.ZP)(t.id, n);
   i.useEffect(() => {
     null == v || v(null == L ? true : L.current)
   }, [L, v]);
-  let j = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+  let j = D ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
     k = P ? "div" : o.VqE;
   return (0, r.jsx)(l.Gt, {
-    value: D,
+    value: w,
     children: (0, r.jsx)(d.Mt, {
       value: x,
       openedAt: C,
@@ -107,18 +107,18 @@ function S(e) {
                   children: b.intl.string(b.t.b33pLD)
                 }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
-                  children: b.intl.format(w ? b.t["8F+WNz"] : b.t["/cZp5s"], {
-                    username: u.ZP.getName(n, S, t)
+                  children: b.intl.format(D ? b.t["8F+WNz"] : b.t["/cZp5s"], {
+                    username: u.ZP.getName(n, T, t)
                   })
                 })]
               }), (0, r.jsxs)(o.Kqy, {
                 align: "center",
                 children: [(0, r.jsx)(g.Z, {
-                  isBlocked: w,
+                  isBlocked: D,
                   onClick: () => {
                     N(), (0, f.pQ)(I({
                       action: j,
-                      analyticsLocations: D
+                      analyticsLocations: w
                     }, x))
                   }
                 }), (0, r.jsx)(m.Z, {
@@ -126,7 +126,7 @@ function S(e) {
                   onClick: () => {
                     N(), (0, f.pQ)(I({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                      analyticsLocations: D
+                      analyticsLocations: w
                     }, x))
                   }
                 })]

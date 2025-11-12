@@ -2,7 +2,7 @@
 /** chunk id: 782658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,11 +34,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk723359 = require("./723359.js");
 
-function D(e) {
+function w(e) {
   let {
     code: t,
     message: n,
-    getAcceptInviteContext: D
+    getAcceptInviteContext: w
   } = e, {
     invite: x,
     inviteError: L
@@ -68,7 +68,7 @@ function D(e) {
     F = () => {
       if (null == U && (null == x ? true : x.guild) != null) {
         let e = y.Qs(x.guild);
-        if ((0, c.bN)() && (0, c.Yt)(e)) return void(0, l.mN)(w.L0.NSFW_SERVER_INVITE_EMBED)
+        if ((0, c.bN)() && (0, c.Yt)(e)) return void(0, l.mN)(D.L0.NSFW_SERVER_INVITE_EMBED)
       }(0, h.yU)() ? (0, m.Z)({
         analyticsSource: {
           page: P.ZY5.INVITE_EMBED
@@ -80,10 +80,10 @@ function D(e) {
         analyticsLocations: k
       }) : o.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: t,
-        context: D("Invite Button Embed")
+        context: w("Invite Button Embed")
       })
     },
-    V = (0, r.jsx)(T.Z, {
+    V = (0, r.jsx)(S.Z, {
       onTransitionToInviteChannel: Z,
       onAcceptInstantInvite: F,
       currentUserId: G,
@@ -112,7 +112,7 @@ function D(e) {
     default:
       switch ((0, p.VR)(j)) {
         case p.wx.GROUP_DM:
-          V = (0, r.jsx)(S.Z, {
+          V = (0, r.jsx)(T.Z, {
             onTransitionToInviteChannel: Z,
             onAcceptInstantInvite: F,
             currentUserId: G,
@@ -124,7 +124,7 @@ function D(e) {
           V = (0, r.jsx)(I.Z, {
             invite: j,
             message: n,
-            getAcceptInviteContext: D
+            getAcceptInviteContext: w
           });
           break;
         default:
@@ -153,7 +153,7 @@ function D(e) {
           if ((0, p.P1)(j)) {
             V = (0, r.jsx)(O.Z, {
               invite: j,
-              getAcceptInviteContext: D,
+              getAcceptInviteContext: w,
               message: n
             });
             break

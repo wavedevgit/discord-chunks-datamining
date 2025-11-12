@@ -201,11 +201,11 @@ function eO(e) {
       premiumType: i,
       onClose: a
     } = e,
-    o = (0, T.ZP)(n.id),
+    o = (0, S.ZP)(n.id),
     s = (0, d.e7)([g.Z], () => g.Z.useReducedMotion),
     l = i === K.PremiumTypes.TIER_1,
     c = () => {
-      a(), (0, D.openUserSettings)(w.n.PROFILE_PANEL, {
+      a(), (0, w.openUserSettings)(D.n.PROFILE_PANEL, {
         section: z.oAB.PROFILE_CUSTOMIZATION
       }), j.default.track(z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
         action: "user_profile_customization"
@@ -288,7 +288,7 @@ function ev(e) {
     let e = Math.max((0, G.k)(f), 1);
     e >= 365 ? (v = Math.floor(e / 365), I = q.t["/ojPfi"]) : (v = e, I = q.t.IItWYo)
   }
-  let S = () => {
+  let T = () => {
       l(), (0, H.k)({
         analyticsLocations: d,
         displayProfile: null
@@ -296,14 +296,14 @@ function ev(e) {
         action: "badges"
       })
     },
-    T = null != (a = ep[p]) ? a : X.badgeGradientBronze;
+    S = null != (a = ep[p]) ? a : X.badgeGradientBronze;
   return (0, r.jsx)(eb, {
     description: q.intl.format(I, {
       time: v
     }),
-    onLearnMore: S,
+    onLearnMore: T,
     renderVisual: () => (0, r.jsxs)(_.$1m, {
-      className: o()(X.badgeGradientWrapper, T),
+      className: o()(X.badgeGradientWrapper, S),
       children: [(0, r.jsx)("img", {
         alt: "",
         src: g,
@@ -338,7 +338,7 @@ function eI(e) {
         className: X.personalizedEmoji,
         alt: "",
         src: e
-      }, "emoji-".concat(t)) : null), l ? null : o.map(e => (0, r.jsx)(S.Z, {
+      }, "emoji-".concat(t)) : null), l ? null : o.map(e => (0, r.jsx)(T.Z, {
         disableAnimation: i,
         sticker: e,
         size: 58,
@@ -352,7 +352,7 @@ function eI(e) {
   })
 }
 
-function eS(e) {
+function eT(e) {
   let {
     premiumType: t,
     onClose: n
@@ -376,7 +376,7 @@ function eS(e) {
     c = null != s && l > 0,
     f = eE().boostItemVisual,
     m = () => {
-      n(), (0, D.openUserSettings)(w.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
+      n(), (0, w.openUserSettings)(D.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
         section: z.oAB.GUILD_BOOSTING
       }), j.default.track(z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
         action: "boosts"
@@ -421,7 +421,7 @@ function eS(e) {
     })
   })
 }
-let eT = () => {
+let eS = () => {
   let e = eE().screenShareItemVisual,
     t = () => {
       window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.STREAM_QUALITY_SETTINGS)), Chunk626135.default.track(Chunk981631.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
@@ -482,7 +482,7 @@ function eR(e) {
           currentUser: t,
           premiumType: n,
           onClose: a
-        }, "profile-item"), (0, r.jsx)(eT, {}, "screen-share-item"), (0, r.jsx)(eS, {
+        }, "profile-item"), (0, r.jsx)(eS, {}, "screen-share-item"), (0, r.jsx)(eT, {
           premiumType: n,
           onClose: a
         }, "boost-item")) : e.push((0, r.jsx)(eO, {
@@ -491,9 +491,9 @@ function eR(e) {
           onClose: a
         }, "profile-item"), (0, r.jsx)(eI, {
           premiumType: n
-        }, "emoji-stickers-item"), (0, r.jsx)(eT, {}, "screen-share-item"), (0, r.jsx)(eA, {
+        }, "emoji-stickers-item"), (0, r.jsx)(eS, {}, "screen-share-item"), (0, r.jsx)(eA, {
           premiumType: n
-        }, "uploads-item"), (0, r.jsx)(eS, {
+        }, "uploads-item"), (0, r.jsx)(eT, {
           premiumType: n,
           onClose: a
         }, "boost-item"));
@@ -503,10 +503,10 @@ function eR(e) {
           currentUser: t,
           premiumType: n,
           onClose: a
-        }, "profile-item"), (0, r.jsx)(eS, {
+        }, "profile-item"), (0, r.jsx)(eT, {
           premiumType: n,
           onClose: a
-        }, "boost-item"), (0, r.jsx)(eT, {}, "screen-share-item")) : e.push((0, r.jsx)(ev, {
+        }, "boost-item"), (0, r.jsx)(eS, {}, "screen-share-item")) : e.push((0, r.jsx)(ev, {
           currentUser: t,
           onClose: a
         }, "badge-item"), (0, r.jsx)(eO, {
@@ -515,10 +515,10 @@ function eR(e) {
           onClose: a
         }, "profile-item"), (0, r.jsx)(eI, {
           premiumType: n
-        }, "emoji-stickers-item"), (0, r.jsx)(eS, {
+        }, "emoji-stickers-item"), (0, r.jsx)(eT, {
           premiumType: n,
           onClose: a
-        }, "boost-item"), (0, r.jsx)(eT, {}, "screen-share-item"), (0, r.jsx)(eA, {
+        }, "boost-item"), (0, r.jsx)(eS, {}, "screen-share-item"), (0, r.jsx)(eA, {
           premiumType: n
         }, "uploads-item"))
     }

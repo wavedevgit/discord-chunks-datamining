@@ -69,55 +69,55 @@ function O(e) {
     bannerAspectRatio: O = 0,
     iconSrc: v,
     actions: I = [],
-    trackingConfig: S,
-    onClickContent: T,
+    trackingConfig: T,
+    onClickContent: S,
     onClickBanner: A
   } = e;
-  S = b(S);
+  T = b(T);
   let {
     primaryColor: C,
     secondaryColor: N
-  } = (0, f.Z)(null != v ? v : h), R = "linear-gradient(45deg, ".concat(C, ", ").concat(N, ")"), P = (0, u.e7)([d.Z], () => d.Z.useReducedMotion), w = i.useRef(false), D = (0, l.O)(e => {
-    if (false === w.current && e) {
+  } = (0, f.Z)(null != v ? v : h), R = "linear-gradient(45deg, ".concat(C, ", ").concat(N, ")"), P = (0, u.e7)([d.Z], () => d.Z.useReducedMotion), D = i.useRef(false), w = (0, l.O)(e => {
+    if (false === D.current && e) {
       var t;
-      null == S || null == (t = S.onView) || t.call(S), (0, p.GF)({
-        appId: S.id,
-        linkType: S.linkType,
-        referrerId: S.referrerId,
-        customId: S.activityCustomId,
-        guildId: S.guildId,
-        channelId: S.channelId,
-        messageId: S.messageId
-      }), w.current = true
+      null == T || null == (t = T.onView) || t.call(T), (0, p.GF)({
+        appId: T.id,
+        linkType: T.linkType,
+        referrerId: T.referrerId,
+        customId: T.activityCustomId,
+        guildId: T.guildId,
+        channelId: T.channelId,
+        messageId: T.messageId
+      }), D.current = true
     }
   }, true), x = null != h, L = null != E && false === P, M = x || L, j = 0 === O ? g.bannerAspectRatioBot : g.bannerAspectRatioActivity, k = i.useRef(null), U = i.useCallback(() => {
     let e = k.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), G = i.useMemo(() => !!L && new URL(E).pathname.endsWith(".gif"), [L, E]), B = i.useMemo(() => {
-    if (null != T) return e => {
-      T(e), (0, p.KX)({
-        applicationId: S.id,
-        linkType: S.linkType,
+    if (null != S) return e => {
+      S(e), (0, p.KX)({
+        applicationId: T.id,
+        linkType: T.linkType,
         area: p.j_.CONTENT,
-        referrerId: S.referrerId,
-        customId: S.activityCustomId,
-        isDeadEnd: S.isDeadEnd
+        referrerId: T.referrerId,
+        customId: T.activityCustomId,
+        isDeadEnd: T.isDeadEnd
       })
     }
-  }, [T, S]), Z = i.useMemo(() => {
+  }, [S, T]), Z = i.useMemo(() => {
     if (null != A) return e => {
       A(e), (0, p.KX)({
-        applicationId: S.id,
-        linkType: S.linkType,
+        applicationId: T.id,
+        linkType: T.linkType,
         area: p.j_.BANNER,
-        referrerId: S.referrerId,
-        customId: S.activityCustomId,
-        isDeadEnd: S.isDeadEnd
+        referrerId: T.referrerId,
+        customId: T.activityCustomId,
+        isDeadEnd: T.isDeadEnd
       })
     }
-  }, [A, S]);
+  }, [A, T]);
   return (0, r.jsxs)("div", {
-    ref: D,
+    ref: w,
     className: g.embed,
     children: [M && (0, r.jsxs)(y, {
       onClick: Z,
@@ -200,11 +200,11 @@ function O(e) {
                 text: n,
                 onClick: e => {
                   a(e), (0, p.KX)({
-                    applicationId: S.id,
-                    linkType: S.linkType,
+                    applicationId: T.id,
+                    linkType: T.linkType,
                     area: u,
-                    referrerId: S.referrerId,
-                    customId: S.activityCustomId,
+                    referrerId: T.referrerId,
+                    customId: T.activityCustomId,
                     isDeadEnd: d
                   })
                 },

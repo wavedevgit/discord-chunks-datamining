@@ -2,7 +2,7 @@
 /** chunk id: 926243, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -95,23 +95,23 @@ let R = (e, t) => "".concat(e, ":").concat(t),
       rowIndex: m,
       size: b,
       surrogateCodePoint: I,
-      allowAnimatedEmoji: T,
+      allowAnimatedEmoji: S,
       selectedItemClassName: N,
       inNitroLockedSection: R
     } = e, P = C(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
-    let w = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : true, [n]),
-      D = () => {
+    let D = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : true, [n]),
+      w = () => {
         let e = (0, E.nY)(n);
-        return ((null == w ? true : w.name) != null && (e = O.intl.formatToPlainString(O.t["nXv4/B"], {
+        return ((null == D ? true : D.name) != null && (e = O.intl.formatToPlainString(O.t["nXv4/B"], {
           names: e,
-          guildName: w.name
+          guildName: D.name
         })), i) ? O.intl.formatToPlainString(O.t["9FI9Z0"], {
           names: e
         }) : e
       },
       x = d && !R;
     return (0, r.jsx)(l.tEY, {
-      children: (0, r.jsx)("button", A(S({}, P), {
+      children: (0, r.jsx)("button", A(T({}, P), {
         className: o()(v.emojiItem, {
           [v.emojiItemLarge]: a,
           [v.emojiItemMedium]: c,
@@ -126,20 +126,20 @@ let R = (e, t) => "".concat(e, ":").concat(t),
         "data-animated": n.animated ? "true" : null,
         ref: t,
         children: (0, r.jsx)(y.Z, {
-          "aria-label": D(),
+          "aria-label": w(),
           columnIndex: h,
           rowIndex: m,
           emoji: n,
           size: b,
           surrogateCodePoint: I,
-          allowAnimatedEmoji: T,
+          allowAnimatedEmoji: S,
           isLocked: x
         })
       }))
     })
   });
 
-function w(e) {
+function D(e) {
   let {
     descriptor: t,
     emojiItemKey: a,
@@ -151,10 +151,10 @@ function w(e) {
     isScrolling: y,
     isUsingKeyboardNavigation: v,
     showEmojiFavoriteTooltip: I,
-    surrogateCodePoint: T,
+    surrogateCodePoint: S,
     selectedItemClassName: N,
-    getEmojiItemProps: w,
-    isMediumSize: D,
+    getEmojiItemProps: D,
+    isMediumSize: w,
     isLargeSize: x,
     pulseItemKey: L,
     allowAnimatedEmoji: M,
@@ -182,19 +182,19 @@ function w(e) {
       let {
         default: e
       } = await n.e("39010").then(n.bind(n, 269254));
-      return t => (0, r.jsx)(e, S({}, t))
+      return t => (0, r.jsx)(e, T({}, t))
     })
   }, $ = function() {
     var e;
     let {
       onMouseEnter: t,
       onMouseLeave: n
-    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, s = null != (e = w(q, f)) ? e : {}, {
+    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, s = null != (e = D(q, f)) ? e : {}, {
       ref: l,
       tabIndex: c,
       onFocus: u
     } = s, d = C(s, ["ref", "tabIndex", "onFocus"]);
-    return (0, i.createElement)("li", A(S({}, d), {
+    return (0, i.createElement)("li", A(T({}, d), {
       key: a,
       ref: Y
     }), Z !== R(q, f) && (0, r.jsx)(P, {
@@ -202,7 +202,7 @@ function w(e) {
       emoji: W,
       isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(W),
       isLargeSize: x,
-      isMediumSize: D,
+      isMediumSize: w,
       isInspected: o,
       isDisabled: z,
       showPulse: L === a,
@@ -224,7 +224,7 @@ function w(e) {
       columnIndex: q,
       rowIndex: f,
       size: K,
-      surrogateCodePoint: T,
+      surrogateCodePoint: S,
       selectedItemClassName: N,
       inNitroLockedSection: B
     }))

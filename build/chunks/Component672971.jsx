@@ -67,9 +67,9 @@ class b extends Chunk647438.Component {
       inReverseTrial: O,
       isDiscount: v,
       subscriptionPlan: I,
-      finePrintClassname: S
+      finePrintClassname: T
     } = this.props, {
-      hasAcceptedEULA: T,
+      hasAcceptedEULA: S,
       hasAcceptedWithdrawalWaiver: A
     } = this.state;
     return (l()(!y || null != I, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), Chunk120356 || null != module && !Chunk647438 || b) ? (0, Chunk951288.jsxs)("div", {
@@ -79,7 +79,7 @@ class b extends Chunk647438.Component {
         className: Chunk209857.formTitle,
         children: Chunk388032.intl.string(Chunk388032.t.Ogvn5o)
       }), null != module && (Chunk120356 || !Chunk647438) ? (0, Chunk951288.jsx)(Chunk481060.Checkbox, {
-        checked: T,
+        checked: S,
         onChange: e => this.setState({
           hasAcceptedEULA: e
         }),
@@ -98,7 +98,7 @@ class b extends Chunk647438.Component {
           }
         })
       }) : null, null == Chunk850840 ? null : (0, Chunk951288.jsx)("div", {
-        className: o()(Chunk209857.finePrint, S),
+        className: o()(Chunk209857.finePrint, T),
         children: Chunk850840
       }), b ? (0, Chunk951288.jsxs)("div", {
         className: Chunk442837,

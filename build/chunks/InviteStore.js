@@ -121,13 +121,13 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   return _.set(e.code, e.error), h(e.code, e => {
     e.state = s.r2o.ERROR
   })
 }
 
-function T(e) {
+function S(e) {
   return h(e.code, e => {
     e.state = s.r2o.APP_OPENING
   })
@@ -169,8 +169,8 @@ let R = new N(Chunk570140.Z, {
   INSTANT_INVITE_CREATE_SUCCESS: E,
   INVITE_ACCEPT: v,
   INVITE_ACCEPT_SUCCESS: I,
-  INVITE_ACCEPT_FAILURE: S,
-  INVITE_APP_OPENING: T,
+  INVITE_ACCEPT_FAILURE: T,
+  INVITE_APP_OPENING: S,
   INVITE_APP_OPENED: A,
   INVITE_APP_NOT_OPENED: C
 })

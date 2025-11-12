@@ -32,21 +32,21 @@ function O(e, t, n) {
 }
 let v = new Set,
   I = {},
-  S = new Set,
-  T = {},
+  T = new Set,
+  S = {},
   A = new Set,
   C = {},
   N = 10 * Chunk70956.Z.Millis.MINUTE,
   R = 6 * Chunk70956.Z.Millis.HOUR,
   P = 10 * Chunk70956.Z.Millis.MINUTE,
-  w = new Chunk846519.V7;
+  D = new Chunk846519.V7;
 
-function D(e) {
-  w.start(e + Math.random() * N, c.o)
+function w(e) {
+  D.start(e + Math.random() * N, c.o)
 }
 
 function x() {
-  return !Chunk695346.bm.getSetting() && (D(R), L())
+  return !Chunk695346.bm.getSetting() && (w(R), L())
 }
 
 function L() {
@@ -103,7 +103,7 @@ function U(e) {
       return t
     }),
     o = i.id;
-  S.delete(n), I[n] = {
+  T.delete(n), I[n] = {
     id: o,
     applicationId: t,
     branchId: n,
@@ -116,14 +116,14 @@ function G(e) {
   let {
     branchId: t
   } = e;
-  v.delete(t), S.add(t)
+  v.delete(t), T.add(t)
 }
 
 function B(e) {
   let {
     buildId: t
   } = e;
-  T.hasOwnProperty(t) || (T[t] = null)
+  S.hasOwnProperty(t) || (S[t] = null)
 }
 
 function Z(e) {
@@ -131,14 +131,14 @@ function Z(e) {
     buildId: t,
     sizeKB: n
   } = e;
-  T[t] = n
+  S[t] = n
 }
 
 function F(e) {
   let {
     buildId: t
   } = e;
-  null == T[t] && delete T[t]
+  null == S[t] && delete S[t]
 }
 
 function V(e) {
@@ -160,15 +160,15 @@ function V(e) {
     }
     C[t] = r
   }
-  D(R)
+  w(R)
 }
 
 function H() {
-  D(P)
+  w(P)
 }
 
 function Y() {
-  w.stop()
+  D.stop()
 }
 
 function W(e) {
@@ -194,16 +194,16 @@ class K extends(r = Chunk442837.ZP.Store) {
     return null == I[t] ? null : I[t].manifestIds
   }
   hasNoBuild(e, t) {
-    return S.has(t)
+    return T.has(t)
   }
   isFetching(e, t) {
     return v.has(t)
   }
   needsToFetchBuildSize(e) {
-    return !T.hasOwnProperty(e)
+    return !S.hasOwnProperty(e)
   }
   getBuildSize(e) {
-    return T[e]
+    return S[e]
   }
 }
 O(K, "displayName", "ApplicationBuildStore");

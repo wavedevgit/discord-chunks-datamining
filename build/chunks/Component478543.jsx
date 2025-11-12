@@ -92,7 +92,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let t, n, r, {
       currentOverrides: i,
       linkMeta: a,
@@ -103,7 +103,7 @@ function S(e) {
     f = ["discord_web"];
   h.isPlatformEmbedded || f.push("discord_marketing", "discord_developers");
   let _ = (0, m.Z)(a, f);
-  if (!_.valid) return T(_.reason);
+  if (!_.valid) return S(_.reason);
   l()(null != a, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
   let {
     discord_web: p,
@@ -130,7 +130,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   return I({
     subHead: E.intl.string(E.t.ODXApH),
     variant: "secondary",
@@ -182,7 +182,7 @@ let C = e => {
       className: b.content,
       children: [(0, r.jsx)(f.Z, {
         className: b.icon
-      }), t ? v() : S({
+      }), t ? v() : T({
         currentOverrides: n,
         linkMeta: a,
         applyBuildOverride: d,

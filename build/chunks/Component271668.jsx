@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk57507 = require("./57507.js"),
   Chunk239840 = require("./239840.js");
-let D = 512,
+let w = 512,
   x = 7,
   L = 56,
   M = 16,
@@ -91,7 +91,7 @@ let D = 512,
       scrollOffset: k,
       searchQuery: ""
     }), er = e => {
-      let t = q.length * (j + M) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? x : 0)) * L - D;
+      let t = q.length * (j + M) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? x : 0)) * L - w;
       Q && e + U > t && ee(), en(e), B(), l.current = e
     }, ei = i.useRef(er);
     i.useEffect(() => {
@@ -179,7 +179,7 @@ let D = 512,
             message: R.intl.format(R.t.WoQXT6, {
               applicationName: i.name
             }),
-            noResultsImageURL: w,
+            noResultsImageURL: D,
             className: P.noSearchResults
           })]
         }, e)
@@ -189,7 +189,7 @@ let D = 512,
         let a = X[t.sectionIndex],
           o = a.data[t.sectionRowIndex],
           s = "".concat(a.section.id, ":").concat(null != (i = null == o ? true : o.id) ? i : e);
-        if (null == o || a.section.id !== o.applicationId && a.section.id !== C.bi.FRECENCY || o.inputType === v.iw.PLACEHOLDER) return (0, r.jsx)(T.Z, {}, s);
+        if (null == o || a.section.id !== o.applicationId && a.section.id !== C.bi.FRECENCY || o.inputType === v.iw.PLACEHOLDER) return (0, r.jsx)(S.Z, {}, s);
         let l = z.find(e => e.id === o.applicationId);
         return (0, r.jsx)(f.ZP.NewCommand, {
           index: e,
@@ -213,7 +213,7 @@ let D = 512,
       className: P.outerWrapper,
       innerClassName: P.wrapper,
       onMouseDown: F,
-      children: [(0, r.jsx)(S.Z, {
+      children: [(0, r.jsx)(T.Z, {
         className: P.rail,
         channel: n,
         sections: z,

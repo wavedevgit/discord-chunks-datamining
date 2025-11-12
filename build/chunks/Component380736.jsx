@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Y: () => C,
-  Z: () => D
+  Z: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -62,9 +62,9 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,7 +72,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -95,14 +95,14 @@ let C = Chunk647438.memo(function(e) {
     hint: O,
     cancelText: v,
     confirmText: I,
-    icon: S,
-    body: T,
+    icon: T,
+    body: S,
     title: C,
     renderFooter: N,
     contentOpacity: R,
     status: P,
-    containerRef: w,
-    className: D,
+    containerRef: D,
+    className: w,
     wrapperClassName: x
   } = e, [L, M] = i.useState(false), j = n || L || P === g._1z.FOCUSED, k = (0, l.e7)([h.Z, p.Z], () => h.Z.isInputLocked(p.Z.getTargetPID()));
   i.useEffect(() => {
@@ -163,14 +163,14 @@ let C = Chunk647438.memo(function(e) {
   }
 
   function W() {
-    return null == S ? null : "string" == typeof S ? (0, r.jsx)(u.qEK, {
-      src: S,
+    return null == T ? null : "string" == typeof T ? (0, r.jsx)(u.qEK, {
+      src: T,
       size: u.EFr.SIZE_40,
       className: b.avatar,
       "aria-hidden": true
     }) : (0, r.jsx)("div", {
       className: b.avatar,
-      children: S
+      children: T
     })
   }
 
@@ -189,11 +189,11 @@ let C = Chunk647438.memo(function(e) {
             variant: "text-sm/semibold",
             lineClamp: 2,
             children: C
-          }), null != T ? (0, r.jsx)(u.Text, {
+          }), null != S ? (0, r.jsx)(u.Text, {
             color: "interactive-normal",
             variant: "text-sm/normal",
             lineClamp: null != t ? t * (j ? 2 : 1) : true,
-            children: T
+            children: S
           }) : null, H(), Y()]
         })]
       }), null != e && (0, r.jsx)(u.P3F, {
@@ -209,14 +209,14 @@ let C = Chunk647438.memo(function(e) {
       className: o()(b.overflowWrapper, x),
       onScroll: A,
       children: (0, r.jsx)(u.P3F, {
-        innerRef: w,
+        innerRef: D,
         ignoreKeyPress: true,
         onMouseOver: Z,
         onMouseLeave: F,
         onClick: y,
         className: o()(b.container, {
           [b.clickable]: null != y
-        }, D),
+        }, w),
         children: K()
       })
     }), V()]
@@ -268,7 +268,7 @@ let P = {
   tension: 300
 };
 
-function w() {
+function D() {
   let [e, t] = Chunk647438.useState(false), [n, r] = Chunk647438.useState(false), a = (0, Chunk481060.q_F)({
     scale: module ? .975 : 1,
     config: P,
@@ -286,7 +286,7 @@ function w() {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     notification: t,
     index: n,
@@ -311,12 +311,12 @@ function D(e) {
     d.Z.updateNotificationStatus(c), null == f || f(e, c)
   }, [c, f]), {
     clickSpring: v,
-    handleMouseClick: T
-  } = w(), A = i.useCallback(e => {
-    null == _ || _(e, c), T()
-  }, [_, c, T]), P = i.useCallback(e => {
+    handleMouseClick: S
+  } = D(), A = i.useCallback(e => {
+    null == _ || _(e, c), S()
+  }, [_, c, S]), P = i.useCallback(e => {
     null == p || p(e, c)
-  }, [p, c]), D = i.useCallback(e => {
+  }, [p, c]), w = i.useCallback(e => {
     null == h || h(e, c)
   }, [h, c]), x = i.useCallback((e, t) => null == g ? true : g(e, c, t), [g, c]), {
     props: {
@@ -329,7 +329,7 @@ function D(e) {
       disableClickableRegions: B = false
     },
     status: Z
-  } = t, F = S(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), V = !o && a, H = 0 === n && !B && !V, {
+  } = t, F = T(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), V = !o && a, H = 0 === n && !B && !V, {
     ref: Y,
     springs: W
   } = (0, m.X4)(t.id, s, l);
@@ -350,7 +350,7 @@ function D(e) {
         onDismissClick: y,
         onNotificationClick: A,
         onConfirmClick: null != p ? P : true,
-        onCancelClick: null != h ? D : true,
+        onCancelClick: null != h ? w : true,
         renderFooter: x,
         expand: false,
         index: n,

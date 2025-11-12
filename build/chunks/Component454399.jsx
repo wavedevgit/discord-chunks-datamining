@@ -84,18 +84,18 @@ function O(e) {
     asContainer: O = false,
     element: v = "span",
     position: I = "top",
-    align: S = "center",
-    spacing: T,
+    align: T = "center",
+    spacing: S,
     caretConfig: A,
     layerContext: C,
     targetElementRef: N,
     anchorRef: R,
     positionKey: P,
-    ariaHidden: w = false
-  } = e, D = b(e, ["children", "title", "body", "asset", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey", "ariaHidden"]);
+    ariaHidden: D = false
+  } = e, w = b(e, ["children", "title", "body", "asset", "asContainer", "element", "position", "align", "spacing", "caretConfig", "layerContext", "targetElementRef", "anchorRef", "positionKey", "ariaHidden"]);
   let x = (0, _.c)(N),
     L = i.useId(),
-    M = w ? true : L,
+    M = D ? true : L,
     j = null != h && ("string" != typeof h || "" !== h),
     k = i.useMemo(() => (0, r.jsxs)("div", {
       className: p.richTooltipContent,
@@ -119,13 +119,13 @@ function O(e) {
       triggerProps: G
     } = (0, d.l)(m({
       targetElementRef: x.targetElementRef
-    }, D)),
+    }, w)),
     B = null != P ? P : "".concat((0, u.Sw)(null != h ? h : ""), "|").concat((0, u.Sw)(g)),
     Z = (0, f.Q)({
       shouldShow: U
     });
   if (O) {
-    let e = w ? G : E(m({}, G), {
+    let e = D ? G : E(m({}, G), {
       onFocus: (0, u.tS)(G.onFocus, e => {
         let t = e.target;
         if (null != t) {
@@ -165,8 +165,8 @@ function O(e) {
       id: L,
       content: k,
       position: I,
-      align: S,
-      spacing: T,
+      align: T,
+      spacing: S,
       caretConfig: A,
       layerContext: null != C ? C : s.nz,
       animationStyle: e,
@@ -175,7 +175,7 @@ function O(e) {
     })
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [t, w || null == k ? null : (0, r.jsx)(a.n, {
+    children: [t, D || null == k ? null : (0, r.jsx)(a.n, {
       id: L,
       children: k
     }), F]

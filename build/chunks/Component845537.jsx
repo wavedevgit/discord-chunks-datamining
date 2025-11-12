@@ -10,8 +10,8 @@ require.d(exports, {
   Vq: () => M,
   Wf: () => U,
   cB: () => L,
-  dy: () => w,
-  wP: () => D
+  dy: () => D,
+  wP: () => w
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -44,7 +44,7 @@ var Chunk592125 = require("./592125.js"),
   Chunk399289 = require("./399289.js"),
   Chunk430864 = require("./430864.js");
 
-function w(e) {
+function D(e) {
   let {
     emoji: t
   } = e;
@@ -61,7 +61,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     emoji: t
   } = e;
@@ -156,7 +156,7 @@ function j(e) {
   } = e, n = (0, o.e7)([b.Z], () => b.Z.getChannel(t)), i = N.intl.string(N.t.zLZPmk).toLowerCase(), a = "text", s = true;
   if (null != n) {
     var l;
-    i = (0, f.YO)(n) ? n.name : N.intl.string(N.t["/YzI63"]), a = (0, f.YO)(n) ? null != (l = (0, T.wl)(n)) ? l : "text" : "locked", s = (0, _.B)(n.type)
+    i = (0, f.YO)(n) ? n.name : N.intl.string(N.t["/YzI63"]), a = (0, f.YO)(n) ? null != (l = (0, S.wl)(n)) ? l : "text" : "locked", s = (0, _.B)(n.type)
   }
   return s ? (0, r.jsx)(m.Z, {
     iconType: a,
@@ -205,7 +205,7 @@ function B(e) {
   } = e, i = (0, o.e7)([y.Z], () => y.Z.getDetectableGame(n)), a = null != i ? (0, r.jsx)("img", {
     alt: "",
     className: R.icon,
-    src: S.ZP.getApplicationIconURL({
+    src: T.ZP.getApplicationIconURL({
       id: i.id,
       icon: i.icon,
       size: 32

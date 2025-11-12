@@ -77,19 +77,19 @@ function I(e, t) {
   }), e
 }
 
-function S(e) {
+function T(e) {
   return {
     description: e ? b.intl.string(b.t["lSgO/q"]) : b.intl.string(b.t.SxY4IW),
     agreement: e ? b.intl.string(b.t.PBG51l) : b.intl.string(b.t["5B+npG"])
   }
 }
-let T = new Date("06/16/2020"),
+let S = new Date("06/16/2020"),
   A = [Chunk981631.V_K.AGE_RESTRICTED, Chunk981631.V_K.EXPLICIT],
   C = new Set([Chunk723359.L0.NSFW_SERVER, Chunk723359.L0.NSFW_SERVER_INVITE, Chunk723359.L0.NSFW_SERVER_INVITE_EMBED]);
 
 function N() {
   let e = Chunk594174.default.getCurrentUser();
-  return null != module && Chunk709054.default.extractTimestamp(module.id) > T.getTime() && null == module.nsfwAllowed
+  return null != module && Chunk709054.default.extractTimestamp(module.id) > S.getTime() && null == module.nsfwAllowed
 }
 
 function R(e) {
@@ -97,16 +97,16 @@ function R(e) {
 }
 
 function P(e) {
-  return null != e && w(f.Z.getGuild(e))
+  return null != e && D(f.Z.getGuild(e))
 }
 
-function w(e) {
+function D(e) {
   let t = (0, a.u)("age_verification_utils"),
     n = (0, o.yo)();
   return t && n && (null == e ? true : e.features.has(E.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD))
 }
 
-function D(e) {
+function w(e) {
   let t = (0, a.z)("age_verification_utils"),
     n = (0, o.Jm)();
   return t && n && (null == e ? true : e.features.has(E.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD))
@@ -152,11 +152,11 @@ function U(e) {
       return (null == (e = _.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
     }),
     l = k(),
-    u = D(e),
+    u = w(e),
     d = b.intl.string(n ? b.t.xi46lg : b.t.ZmwvDc);
   if (l) {
     if (u) {
-      let e = S(t);
+      let e = T(t);
       return I(O({
         title: b.intl.string(b.t.MjQbfi)
       }, e), {
@@ -205,7 +205,7 @@ function G(e) {
     });
   if (e === g.L0.JOIN_LARGE_GUILD_UNDERAGE || e === g.L0.ACCESS_LARGE_GUILD_UNDERAGE) {
     let n = e === g.L0.JOIN_LARGE_GUILD_UNDERAGE ? b.t["u/xsK9"] : b.t.MjQbfi,
-      r = S(t);
+      r = T(t);
     return {
       verifyTitle: b.intl.string(n),
       verifyGateDescription: r.description,

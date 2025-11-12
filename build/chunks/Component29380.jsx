@@ -30,10 +30,10 @@ function y(e) {
     primaryEntryPointCommand: O
   } = e, v = i.useId(), I = i.useCallback(() => {
     d.y(_.ti.ACTIVITY)
-  }, []), S = i.useCallback(() => {
+  }, []), T = i.useCallback(() => {
     f.Z.shouldShowModal() && I()
   }, [I]), {
-    submitting: T,
+    submitting: S,
     wasSubmitting: A
   } = (0, m.Z)({
     applicationId: n.id,
@@ -44,8 +44,8 @@ function y(e) {
     applicationId: n.id,
     context: t
   }), P = i.useMemo(() => (0, h.XZ)(O.displayName), [O.displayName]), {
-    onActivityItemSelected: w,
-    buttonVariant: D,
+    onActivityItemSelected: D,
+    buttonVariant: w,
     buttonText: x
   } = (0, g.P7)({
     context: t,
@@ -55,8 +55,8 @@ function y(e) {
     commandName: P,
     autoDismissOnClick: R === s.JS.LEAVE || (0, c.g)(n),
     launchingComponentId: v,
-    submitting: null != A ? A : T,
-    onConfirmActivityLaunchChecksAlertOpen: S
+    submitting: null != A ? A : S,
+    onConfirmActivityLaunchChecksAlertOpen: T
   }), {
     disabled: L,
     reason: M
@@ -71,11 +71,11 @@ function y(e) {
     children: (0, r.jsx)(o.Button, {
       type: "submit",
       size: "md",
-      variant: D,
+      variant: w,
       disabled: L,
       loading: C,
       onClick: () => {
-        N(true), w(), u.default.track(E.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+        N(true), D(), u.default.track(E.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
           application_id: n.id,
           button_action: _._y.USE_APP_COMMAND
         })

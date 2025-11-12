@@ -2,7 +2,7 @@
 /** chunk id: 695346, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A2: () => e2,
+  A2: () => e3,
   AY: () => ea,
   CM: () => ec,
   CW: () => ek,
@@ -19,17 +19,17 @@ require.d(exports, {
   JN: () => eo,
   JT: () => el,
   JY: () => N,
-  L1: () => ew,
-  NA: () => eT,
+  L1: () => eD,
+  NA: () => eS,
   OW: () => e_,
   Ok: () => eO,
   Ou: () => W,
   P4: () => ey,
   Pe: () => H,
-  QK: () => eD,
+  QK: () => ew,
   QZ: () => P,
   R$: () => O,
-  RS: () => eS,
+  RS: () => eT,
   R_: () => eF,
   Rt: () => e1,
   SE: () => ej,
@@ -42,13 +42,13 @@ require.d(exports, {
   Xc: () => V,
   Xk: () => k,
   Xr: () => eh,
-  YC: () => e3,
+  YC: () => e2,
   Yk: () => ex,
   _O: () => L,
   _j: () => eV,
   bh: () => es,
   bm: () => ef,
-  cC: () => S,
+  cC: () => T,
   cP: () => Y,
   co: () => eE,
   d$: () => F,
@@ -59,7 +59,7 @@ require.d(exports, {
   eo: () => B,
   ev: () => en,
   fq: () => v,
-  fv: () => w,
+  fv: () => D,
   fz: () => A,
   gR: () => J,
   gw: () => eJ,
@@ -83,7 +83,7 @@ require.d(exports, {
   tU: () => ev,
   uL: () => Z,
   uh: () => eX,
-  vF: () => T,
+  vF: () => S,
   x4: () => eI,
   xM: () => ed,
   xq: () => ee,
@@ -131,13 +131,13 @@ let y = (0, Chunk560997.Zc)("textAndImages", "useLegacyChatInput", e => {
   }, e => o.D5.create({
     value: e
   })),
-  S = (0, Chunk560997.Zc)("textAndImages", "renderSpoilers", e => {
+  T = (0, Chunk560997.Zc)("textAndImages", "renderSpoilers", e => {
     var t;
     return null != (t = null == e ? true : e.value) ? t : g.A2N.ON_CLICK
   }, e => o.Gm.create({
     value: e
   })),
-  T = (0, Chunk560997.Zc)("textAndImages", "useThreadSidebar", e => {
+  S = (0, Chunk560997.Zc)("textAndImages", "useThreadSidebar", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -175,11 +175,11 @@ let C = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
   }, e => o.D5.create({
     value: !!e
   })),
-  w = (0, Chunk560997.Zc)("notifications", "focusModeExpiresAtMs", e => null != e ? e : "0", e => e),
-  D = [],
-  x = (0, Chunk560997.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : D, e => e),
-  L = (0, Chunk560997.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : D, e => e),
-  M = (0, Chunk560997.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : D, e => e),
+  D = (0, Chunk560997.Zc)("notifications", "focusModeExpiresAtMs", e => null != e ? e : "0", e => e),
+  w = [],
+  x = (0, Chunk560997.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : w, e => e),
+  L = (0, Chunk560997.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : w, e => e),
+  M = (0, Chunk560997.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : w, e => e),
   j = (0, Chunk560997.Zc)("textAndImages", "viewImageDescriptions", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
@@ -408,13 +408,13 @@ let eg = new Set(Object.values(Chunk981631.Skl)),
   }, e => o.D5.create({
     value: e
   })), "text", "inlineAttachmentMedia"),
-  eS = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "inlineEmbedMedia", e => {
+  eT = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "inlineEmbedMedia", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })), "text", "inlineEmbedMedia"),
-  eT = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "renderEmbeds", e => {
+  eS = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "renderEmbeds", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -472,7 +472,7 @@ let eR = new Set([Chunk85746.Z.ALL, Chunk85746.Z.UNREADS, Chunk85746.Z.NONE]);
   value: e
 }));
 let eP = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
-  ew = (0, Chunk560997.Zc)("appearance", "clientThemeSettings", e => {
+  eD = (0, Chunk560997.Zc)("appearance", "clientThemeSettings", e => {
     var t;
     return {
       backgroundGradientPresetId: null == e || null == (t = e.backgroundGradientPresetId) ? true : t.value,
@@ -496,7 +496,7 @@ let eP = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
   }), {
     comparator: Chunk392711.isEqual
   }),
-  eD = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "gifAutoPlay", e => {
+  ew = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "gifAutoPlay", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -664,8 +664,8 @@ let e$ = (0, Chunk560997.Zc)("appearance", "timestampHourCycle", e => null != e 
 (0, Chunk560997.Zc)("appearance", "launchPadMode", e => null != e ? e : a.l1.LAUNCH_PAD_DISABLED, e => e), (0, Chunk560997.Zc)("appearance", "swipeRightToLeftMode", e => null != e ? e : a.n9.SWIPE_RIGHT_TO_LEFT_UNSET, e => e);
 let e0 = (0, Chunk560997.Zc)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e),
   e1 = (0, Chunk560997.Zc)("safetySettings", "ignoreProfileSpeedbumpDisabled", e => null != e && e, e => e),
-  e3 = (0, Chunk560997.Zc)("appearance", "uiDensity", e => e === a.Pi.UNSET_UI_DENSITY ? a.Pi.DEFAULT : null != e ? e : a.Pi.DEFAULT, e => e),
-  e2 = (0, Chunk560997.Zc)("inAppFeedbackSettings", "inAppFeedbackStates", e => (0, r.mapValues)(null != e ? e : {}, e => (0, r.mapValues)(e, e => (null == e ? true : e.value) != null ? Number(e.value) : true)), e => (0, r.mapValues)(e, e => (0, r.mapValues)(e, e => o.wA.create({
+  e2 = (0, Chunk560997.Zc)("appearance", "uiDensity", e => e === a.Pi.UNSET_UI_DENSITY ? a.Pi.DEFAULT : null != e ? e : a.Pi.DEFAULT, e => e),
+  e3 = (0, Chunk560997.Zc)("inAppFeedbackSettings", "inAppFeedbackStates", e => (0, r.mapValues)(null != e ? e : {}, e => (0, r.mapValues)(e, e => (null == e ? true : e.value) != null ? Number(e.value) : true)), e => (0, r.mapValues)(e, e => (0, r.mapValues)(e, e => o.wA.create({
     value: null != e ? String(e) : true
   }))), {
     delay: Chunk526761.fy.AUTOMATED

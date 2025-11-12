@@ -4,9 +4,9 @@
 let r;
 require.d(exports, {
   $k: () => O,
-  CA: () => D,
+  CA: () => w,
   F8: () => $,
-  JM: () => w,
+  JM: () => D,
   NZ: () => M,
   ZP: () => et,
   aN: () => L,
@@ -76,8 +76,8 @@ r.DEFAULT_GROUP_DM_AVATARS;
 let O = r.canUseWebp(),
   v = 5,
   I = 360,
-  S = 1096,
-  T = (0, Chunk358085.isAndroid)();
+  T = 1096,
+  S = (0, Chunk358085.isAndroid)();
 
 function A(e) {
   let t, {
@@ -107,7 +107,7 @@ function C(e) {
     animated: n,
     size: r,
     forcePNG: i = false
-  } = e, a = O ? "webp" : "png", o = O ? "webp" : "gif", s = i ? "png" : n ? o : a, c = O && n ? "&animated=true" : "", u = "size=".concat((0, l.oO)(r * (0, l.x_)(), T));
+  } = e, a = O ? "webp" : "png", o = O ? "webp" : "gif", s = i ? "png" : n ? o : a, c = O && n ? "&animated=true" : "", u = "size=".concat((0, l.oO)(r * (0, l.x_)(), S));
   return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/emojis/").concat(t, ".").concat(s) + "?".concat(u).concat(c) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.EMOJI(t, s)
 }
 
@@ -152,7 +152,7 @@ function P(e) {
   return null != (t = R(e, n, r, i, a)) ? t : N(e.id, e.discriminator, e.isProvisional)
 }
 
-function w(e) {
+function D(e) {
   let t, {
       guildId: n,
       userId: r,
@@ -172,13 +172,13 @@ function w(e) {
   return "webp" === u && a && X(i) && (_.animated = true), t += "?".concat(o.stringify(_))
 }
 
-function D(e) {
+function w(e) {
   let {
     userId: t,
     avatar: n,
     guildId: r
   } = e, i = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return null == n ? null : w({
+  return null == n ? null : D({
     userId: t,
     avatar: n,
     guildId: r,
@@ -188,7 +188,7 @@ function D(e) {
 
 function x(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    r = D(e, n);
+    r = w(e, n);
   return null != r ? ee(r) : t.getAvatarSource(e.guildId, n)
 }
 
@@ -287,7 +287,7 @@ function B(e) {
     homeHeader: r
   } = e;
   if (null == r) return null;
-  let i = (0, l.oO)(S * (0, l.x_)()),
+  let i = (0, l.oO)(T * (0, l.x_)()),
     a = window.GLOBAL_ENV.CDN_HOST;
   return (null != a ? "https://".concat(a, "/home-headers/").concat(n, "/").concat(r, ".png") : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_HOME_HEADER(n, r)) + "?size=".concat(i)
 }
@@ -473,8 +473,8 @@ function ee(e) {
 let et = {
   getUserAvatarURL: P,
   getDefaultAvatarURL: N,
-  getGuildMemberAvatarURL: D,
-  getGuildMemberAvatarURLSimple: w,
+  getGuildMemberAvatarURL: w,
+  getGuildMemberAvatarURLSimple: D,
   getGuildMemberAvatarSource: x,
   getGuildMemberBannerURL: j,
   getUserBannerURL: L,

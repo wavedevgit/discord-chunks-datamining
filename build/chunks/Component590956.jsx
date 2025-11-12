@@ -2,7 +2,7 @@
 /** chunk id: 590956, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => S,
+  Y: () => T,
   c: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -83,7 +83,7 @@ let I = e => {
       position: a,
       shouldShow: !g,
       onTooltipShow: () => {
-        s && T({
+        s && S({
           emojiNode: n,
           isCustomEmoji: false
         })
@@ -103,7 +103,7 @@ let I = e => {
       }))
     }));
     if (!s) return I();
-    let S = e => (0, r.jsx)(_.Az, v(y({}, e), {
+    let T = e => (0, r.jsx)(_.Az, v(y({}, e), {
       node: n
     }));
     return (0, r.jsx)(l.yRy, {
@@ -115,12 +115,12 @@ let I = e => {
       onRequestClose: () => {
         b(false)
       },
-      renderPopout: S,
+      renderPopout: T,
       targetElementRef: f,
       children: I
     })
   },
-  S = e => {
+  T = e => {
     let {
       node: t,
       isInteracting: n,
@@ -128,7 +128,7 @@ let I = e => {
       enableClick: u = true,
       channelId: g,
       messageId: b
-    } = e, [O, I] = i.useState(String(Date.now())), [S, A] = i.useState(false), [C, N] = i.useState(false), R = i.useRef(null), P = function() {
+    } = e, [O, I] = i.useState(String(Date.now())), [T, A] = i.useState(false), [C, N] = i.useState(false), R = i.useRef(null), P = function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
       return (0, r.jsx)(c.Z, v(y({}, e), {
         emojiName: t.name,
@@ -139,17 +139,17 @@ let I = e => {
         channelId: g,
         messageId: b
       }))
-    }, w = (0, s.Z)(), D = e => (0, r.jsx)(l.aML, v(y({
+    }, D = (0, s.Z)(), w = e => (0, r.jsx)(l.aML, v(y({
       text: (0, p.Y)(t.name, u),
       "aria-label": t.name
     }, p.b_), {
       position: a,
       shouldShow: !C,
       onTooltipShow: () => {
-        A(true), u && (T({
+        A(true), u && (S({
           emojiNode: t,
           isCustomEmoji: true,
-          nonce: w
+          nonce: D
         }), (0, d.x)(m.qR.CustomEmojiTooltipShown))
       },
       children: n => (0, r.jsx)(l.P3F, v(y({}, e), {
@@ -163,8 +163,8 @@ let I = e => {
           A(false), N(true), null == e || null == (n = e.onClick) || n.call(e, t)
         } : true,
         onMouseLeave: () => {
-          S && (f.default.track(h.rMx.CLOSE_POPOUT, {
-            nonce: w
+          T && (f.default.track(h.rMx.CLOSE_POPOUT, {
+            nonce: D
           }), A(false))
         },
         tag: "span",
@@ -175,18 +175,18 @@ let I = e => {
         children: P(n)
       }))
     }));
-    if (!u) return D();
+    if (!u) return w();
     let x = e => (0, r.jsx)(_.vk, v(y({}, e), {
       node: t,
       refreshPositionKey: () => I(String(Date.now())),
-      nonce: w
+      nonce: D
     }));
     return (0, r.jsx)(l.yRy, {
       animation: l.yRy.Animation.FADE,
       align: "center",
       onRequestClose: () => {
         f.default.track(h.rMx.CLOSE_POPOUT, {
-          nonce: w
+          nonce: D
         }), A(false), N(false)
       },
       autoInvert: true,
@@ -195,10 +195,10 @@ let I = e => {
       renderPopout: x,
       positionKey: O,
       targetElementRef: R,
-      children: D
+      children: w
     })
   },
-  T = e => {
+  S = e => {
     let {
       emojiNode: t,
       isCustomEmoji: n,

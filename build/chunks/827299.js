@@ -134,7 +134,7 @@ function g(e, t) {
       b = (0, s.e7)(_, () => null == c ? true : c(...u), [u]),
       y = h(e => null == c ? e.error : null),
       I = null != b ? b : y,
-      S = (0, s.e7)(_, () => a(...u), [u], f);
+      T = (0, s.e7)(_, () => a(...u), [u], f);
     return (0, r.useEffect)(() => {
       v({
         queryId: p,
@@ -142,7 +142,7 @@ function g(e, t) {
         useStoreState: h
       })
     }, [p, u, h]), {
-      data: S,
+      data: T,
       error: I,
       isLoading: E,
       refetch: (0, r.useCallback)(() => {

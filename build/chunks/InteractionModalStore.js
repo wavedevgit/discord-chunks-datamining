@@ -75,23 +75,23 @@ function I(e) {
   return null != t && t === r && (i = 2, true)
 }
 
-function S(e) {
+function T(e) {
   let {
     nonce: t
   } = e;
   return null != t && t === r && (i = 1, true)
 }
-class T extends(l = Chunk442837.ZP.Store) {
+class S extends(l = Chunk442837.ZP.Store) {
   getModalState(e) {
     return e !== r ? null : i
   }
 }
-g(T, "displayName", "InteractionModalStore");
-let A = new T(Chunk570140.Z, {
+g(S, "displayName", "InteractionModalStore");
+let A = new S(Chunk570140.Z, {
   LOGOUT: b,
   INTERACTION_MODAL_CREATE: O,
   INTERACTION_IFRAME_MODAL_CREATE: v,
   INTERACTION_QUEUE: y,
   INTERACTION_SUCCESS: I,
-  INTERACTION_FAILURE: S
+  INTERACTION_FAILURE: T
 })

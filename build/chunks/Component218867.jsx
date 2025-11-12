@@ -34,13 +34,13 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
     sectionHeaderHeight: O,
     sectionFooterHeight: v,
     listHeaderHeight: I,
-    stickyHeaders: S = false,
-    className: T,
+    stickyHeaders: T = false,
+    className: S,
     hideScrollbar: A = false,
     fade: C = false,
     initialScrollTop: N = 0,
     role: R = "list"
-  } = e, [P, w] = i.useState(false), [D, x] = i.useState(false), L = i.useRef(null), M = i.useRef(0), j = i.useRef(false);
+  } = e, [P, D] = i.useState(false), [w, x] = i.useState(false), L = i.useRef(null), M = i.useRef(0), j = i.useRef(false);
   (0, l.Ng)(() => {
     var e;
     let t = null == (e = L.current) ? true : e.getScrollerNode();
@@ -119,14 +119,14 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
       offsetHeight: r,
       scrollTop: i
     } = t;
-    x(r), w(i), null == a || a({
+    x(r), D(i), null == a || a({
       width: n,
       height: r
     })
   }, [a]);
   i.useLayoutEffect(() => {
-    false === D && K()
-  }, [D, K]), i.useEffect(() => {
+    false === w && K()
+  }, [w, K]), i.useEffect(() => {
     var e;
     let t = null == (e = L.current) ? true : e.getScrollerNode(),
       n = u(L);
@@ -142,7 +142,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
       let {
         scrollTop: e
       } = t;
-      M.current = e, null == n || n(e), w(e)
+      M.current = e, null == n || n(e), D(e)
     }))
   }, [n]);
   i.useImperativeHandle(t, () => ({
@@ -173,16 +173,16 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
             top: s,
             bottom: l
           }
-        } = i, c = G(o), u = s - (S ? c : 0) - r <= M.current, d = l + r >= M.current + D;
+        } = i, c = G(o), u = s - (T ? c : 0) - r <= M.current, d = l + r >= M.current + w;
         if (u) {
           let i = M.current + c - s,
-            a = S ? M.current - i : s;
+            a = T ? M.current - i : s;
           null == (t = L.current) || t.scrollTo({
             to: 0 === e ? 0 : a - r,
             animate: n
           })
         } else if (d) {
-          let e = l - (M.current + D);
+          let e = l - (M.current + w);
           null == (a = L.current) || a.scrollTo({
             to: M.current + e + r,
             animate: n
@@ -207,7 +207,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
       })
     },
     getListDimensions: () => ({
-      height: D,
+      height: w,
       totalHeight: H
     }),
     getSectionDescriptors: () => F.current,
@@ -222,17 +222,17 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
         node: e
       })
     }
-  }), [G, S, H, D]);
+  }), [G, T, H, w]);
   let {
     visibleItems: q,
     listOffset: X
   } = i.useMemo(() => {
-    if (false === D || false === P) return {
+    if (false === w || false === P) return {
       visibleItems: null,
       listOffset: 0
     };
     let e = P,
-      t = P + D,
+      t = P + w,
       n = 0,
       r = d[0],
       i = [],
@@ -258,11 +258,11 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
           E = 0,
           b = s,
           y = b + u >= e && b <= t;
-        for (null != p && (S || y) && l.push(p(a)), y || S || (r += u); g + u + d < c - m;) {
+        for (null != p && (T || y) && l.push(p(a)), y || T || (r += u); g + u + d < c - m;) {
           let i = U(a, E, n),
             o = s + g + u,
             c = o + i;
-          if (c <= e) r = c - (S ? u : 0);
+          if (c <= e) r = c - (T ? u : 0);
           else if (c > e && o < t) l.push(f(n, {
             sectionIndex: a,
             sectionRowIndex: E
@@ -279,7 +279,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
       visibleItems: i,
       listOffset: r
     }
-  }, [U, B, G, Z, d, f, _, h, p, P, W, S, m, k, D]), Q = i.useMemo(() => {
+  }, [U, B, G, Z, d, f, _, h, p, P, W, T, m, k, w]), Q = i.useMemo(() => {
     var e, t, n;
     return {
       top: X,
@@ -292,7 +292,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
   }), [H]), $ = A ? s.xVE : s.h21;
   return (0, r.jsxs)($, {
     fade: C,
-    className: o()(c.scroller, T),
+    className: o()(c.scroller, S),
     ref: L,
     onScroll: z,
     children: [(0, r.jsx)("div", {

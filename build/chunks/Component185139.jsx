@@ -32,19 +32,19 @@ function O(e) {
     overrideKey: O,
     paymentError: v,
     header: I,
-    footer: S,
-    isGift: T = false,
+    footer: T,
+    isGift: S = false,
     giftMessage: A = E.intl.string(E.t["DrgnS+"]),
     hideBreadcrumbs: C = false,
     isLoading: N = false,
     purchaseError: R,
     purchaseErrorBlockRef: P,
-    planError: w,
-    onScroll: D,
+    planError: D,
+    onScroll: w,
     scrollerClassName: x,
     hasCurrencies: L = false
   } = e, M = null;
-  null != v && null == (0, p.ly)(v) ? M = v : null != R ? M = R : null != w && (M = w);
+  null != v && null == (0, p.ly)(v) ? M = v : null != R ? M = R : null != D && (M = D);
   let j = null != M ? M.message : "";
   null != M && M instanceof d.HF && (M.code === f.SM.CARD_DECLINED && L && (j += " ".concat(E.intl.string(E.t.iWvwQS))), M.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (j = E.intl.string(E.t.ypuSd8)), M.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (j = E.intl.string(E.t.mXMmWE)));
   let {
@@ -67,7 +67,7 @@ function O(e) {
     stripe: k,
     children: [I, (0, r.jsxs)("div", {
       className: s()("paymentModalContent", b.content),
-      children: [T && n !== p.h8.CONFIRM ? (0, r.jsx)(u.Z, {
+      children: [S && n !== p.h8.CONFIRM ? (0, r.jsx)(u.Z, {
         className: b.paymentNote,
         iconSize: u.Z.Sizes.SMALL,
         icon: c.OgN,
@@ -103,12 +103,12 @@ function O(e) {
           steps: t,
           sideMargin: 20,
           children: (0, r.jsx)(c.h21, {
-            onScroll: D,
+            onScroll: w,
             className: s()(b.scroller, x),
             children: o
           })
         })]
       })]
-    }), S]
+    }), T]
   })
 }

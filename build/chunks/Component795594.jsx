@@ -247,10 +247,10 @@ let ef = e => {
       disclosures: d,
       locale: _,
       id: h
-    } = e, E = a.id, O = i.useMemo(() => D.ZP.createFromServer(a), [a]), v = (0, G.yE)(O.flags, ee.udG.EMBEDDED), I = (0, p.e7)([K.Z], () => {
+    } = e, E = a.id, O = i.useMemo(() => w.ZP.createFromServer(a), [a]), v = (0, G.yE)(O.flags, ee.udG.EMBEDDED), I = (0, p.e7)([K.Z], () => {
       var e, t, n, r;
       return null == (r = K.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[E]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
-    }, [E]), C = T.w.useExperiment({
+    }, [E]), C = S.w.useExperiment({
       location: "oauth2_authorize"
     }), x = a.bot, M = (0, p.e7)([L.Z], () => L.Z.getDMFromUserId(null == x ? true : x.id)), {
       appDMChannelMuteConfig: j,
@@ -263,7 +263,7 @@ let ef = e => {
       dmChannelMuted: k.ZP.isChannelMuted(null, M)
     }), [V, H] = i.useState(false), [X, Q] = i.useState(false), eo = () => {
       let e = [];
-      for (let n of t) e.push(...(0, w.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(en.intl.string(en.t.Ls2XRq));
+      for (let n of t) e.push(...(0, D.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(en.intl.string(en.t.Ls2XRq));
       if (e.length > 0 || null != d && d.length > 0) return (0, r.jsx)(g.zF9, {
         className: er.appDetailsSection,
         isExpanded: X,
@@ -409,7 +409,7 @@ let ef = e => {
             allowMobilePush: e
           })
         })
-      }, W.fy.INFREQUENT_USER_ACTION), S.ZP.trackWithMetadata(ee.rMx.NOTIFICATION_SETTINGS_UPDATED, {
+      }, W.fy.INFREQUENT_USER_ACTION), T.ZP.trackWithMetadata(ee.rMx.NOTIFICATION_SETTINGS_UPDATED, {
         update_type: et.I.AUTHORIZED_APP_DM_PUSH_NOTIFICATION,
         application_id: a.id,
         label: e ? Z.ZB.Unmuted : Z.ZB.Muted
@@ -562,7 +562,7 @@ let ef = e => {
         let e = Chunk191336.trim().toLowerCase();
         return "" === module || null == require ? require : require.length < 100 ? require.filter(t => l()(e, t.application.name.toLowerCase())) : require.filter(t => t.application.name.toLowerCase().includes(e))
       }, [require, Chunk191336]),
-      S = () => null == require || null == Chunk87051 || exports !== Chunk881998.FetchState.FETCHED ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
+      T = () => null == require || null == Chunk87051 || exports !== Chunk881998.FetchState.FETCHED ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
         className: Chunk197571.marginTop20,
         type: Chunk481060.$jN.Type.SPINNING_CIRCLE
       }) : 0 === require.length ? Chunk493683(Chunk388032.intl.string(Chunk388032.t.CpPv5l), Chunk388032.intl.string(Chunk388032.t["E+SM6T"])) : 0 === Chunk87051.length ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {

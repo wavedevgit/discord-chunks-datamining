@@ -25,50 +25,50 @@ var Chunk951288 = require("./951288.js"),
   Chunk54602 = require("./54602.js");
 
 function v(e) {
-  var t, n, v, I, S, T, A, C;
+  var t, n, v, I, T, S, A, C;
   let {
     guildId: N,
     skuId: R,
     channel: P
-  } = e, w = (0, o.e7)([d.Z], () => d.Z.isFetchingForSKU(R)), D = (0, o.e7)([u.Z], () => u.Z.get(R)), x = null == D ? true : D.applicationId;
+  } = e, D = (0, o.e7)([d.Z], () => d.Z.isFetchingForSKU(R)), w = (0, o.e7)([u.Z], () => u.Z.get(R)), x = null == w ? true : w.applicationId;
   (0, l.p2)();
   let L = (0, o.e7)([c.default], () => P.isDM() && null != P.recipients && 0 !== P.recipients.length ? c.default.getUser(P.recipients[0]) : null),
     {
       primaryIconAsset: M,
       primaryIconLabel: j
-    } = i.useMemo(() => (0, _.FE)(D, x), [D, x]);
+    } = i.useMemo(() => (0, _.FE)(w, x), [w, x]);
   i.useEffect(() => {
     null == N || null == R || d.Z.isFetchingForSKU(R) || (0, p.y)(N, R)
   }, [N, R]);
   let k = i.useCallback(e => {
-      e.stopPropagation(), (null == D ? true : D.applicationId) != null && null != N && (0, h.g)({
+      e.stopPropagation(), (null == w ? true : w.applicationId) != null && null != N && (0, h.g)({
         skuId: R,
-        applicationId: D.applicationId,
+        applicationId: w.applicationId,
         guildId: N,
         isStorefront: false
       })
-    }, [R, null == D ? true : D.applicationId, N]),
+    }, [R, null == w ? true : w.applicationId, N]),
     U = i.useCallback(() => {
-      null != D && (0, m.P)(D, {
+      null != w && (0, m.P)(w, {
         isGift: false
       })
-    }, [D]),
+    }, [w]),
     G = i.useCallback(() => {
-      null != D && (0, m.P)(D, {
+      null != w && (0, m.P)(w, {
         isGift: true,
         giftRecipient: null != L ? L : true
       })
-    }, [D, L]);
-  return w && null == D ? (0, r.jsx)("div", {
+    }, [w, L]);
+  return D && null == w ? (0, r.jsx)("div", {
     className: O.container,
     children: (0, r.jsx)(s.$jN, {
       className: O.spinner
     })
-  }) : null == D ? null : (0, r.jsxs)("div", {
+  }) : null == w ? null : (0, r.jsxs)("div", {
     className: O.container,
     children: [(0, r.jsx)(E.C, {
       className: O.card,
-      applicationId: D.applicationId,
+      applicationId: w.applicationId,
       skuId: R,
       variant: E.Z.EMBEDDED,
       onClick: k
@@ -79,7 +79,7 @@ function v(e) {
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/bold",
           lineClamp: 1,
-          children: D.name
+          children: w.name
         }), (0, r.jsxs)("div", {
           className: O.detailsDescription,
           children: [null != M && (0, r.jsx)("img", {
@@ -89,7 +89,7 @@ function v(e) {
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/semibold",
             lineClamp: 1,
-            children: (0, f.T4)(null != (S = null == (t = D.price) ? true : t.amount) ? S : 0, null != (T = null == (n = D.price) ? true : n.currency) ? T : b.pK.USD)
+            children: (0, f.T4)(null != (T = null == (t = w.price) ? true : t.amount) ? T : 0, null != (S = null == (n = w.price) ? true : n.currency) ? S : b.pK.USD)
           })]
         })]
       }), (0, r.jsxs)(a.hE2, {
@@ -104,7 +104,7 @@ function v(e) {
           variant: "primary",
           onClick: U,
           text: y.intl.format(y.t.Xp5WTn, {
-            price: (0, f.T4)(null != (A = null == (v = D.price) ? true : v.amount) ? A : 0, null != (C = null == (I = D.price) ? true : I.currency) ? C : b.pK.USD)
+            price: (0, f.T4)(null != (A = null == (v = w.price) ? true : v.amount) ? A : 0, null != (C = null == (I = w.price) ? true : I.currency) ? C : b.pK.USD)
           }),
           fullWidth: true
         }), (0, r.jsx)(g.Z, {

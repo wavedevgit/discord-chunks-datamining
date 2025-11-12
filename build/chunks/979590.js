@@ -176,13 +176,13 @@
     return n.r = s(0, o(255, n.r - a(-(t / 100 * 255)))), n.g = s(0, o(255, n.g - a(-(t / 100 * 255)))), n.b = s(0, o(255, n.b - a(-(t / 100 * 255)))), c(n)
   }
 
-  function S(e, t) {
+  function T(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
     return n.l -= t / 100, n.l = k(n.l), c(n)
   }
 
-  function T(e, t) {
+  function S(e, t) {
     var n = c(e).toHsl(),
       r = (n.h + t) % 360;
     return n.h = r < 0 ? 360 + r : r, c(n)
@@ -248,7 +248,7 @@
     return a
   }
 
-  function w(e, t) {
+  function D(e, t) {
     t = t || 6;
     for (var n = c(e).toHsv(), r = n.h, i = n.s, a = n.v, o = [], s = 1 / t; t--;) o.push(c({
       h: r,
@@ -387,7 +387,7 @@
       return this._applyModification(I, arguments)
     },
     darken: function() {
-      return this._applyModification(S, arguments)
+      return this._applyModification(T, arguments)
     },
     desaturate: function() {
       return this._applyModification(b, arguments)
@@ -399,7 +399,7 @@
       return this._applyModification(O, arguments)
     },
     spin: function() {
-      return this._applyModification(T, arguments)
+      return this._applyModification(S, arguments)
     },
     _applyCombination: function(e, t) {
       return e.apply(null, [this].concat([].slice.call(t)))
@@ -411,7 +411,7 @@
       return this._applyCombination(A, arguments)
     },
     monochromatic: function() {
-      return this._applyCombination(w, arguments)
+      return this._applyCombination(D, arguments)
     },
     splitcomplement: function() {
       return this._applyCombination(R, arguments)
@@ -476,7 +476,7 @@
       size: o
     }) || !i ? s : (n.includeFallbackColors = false, c.mostReadable(e, ["#fff", "#000"], n))
   };
-  var D = c.names = {
+  var w = c.names = {
       aliceblue: "f0f8ff",
       antiquewhite: "faebd7",
       aqua: "0ff",
@@ -627,7 +627,7 @@
       yellow: "ff0",
       yellowgreen: "9acd32"
     },
-    x = c.hexNames = L(D);
+    x = c.hexNames = L(w);
 
   function L(e) {
     var t = {};
@@ -702,7 +702,7 @@
   function K(e) {
     e = e.replace(n, "").replace(r, "").toLowerCase();
     var t, i = false;
-    if (D[e]) e = D[e], i = true;
+    if (w[e]) e = w[e], i = true;
     else if ("transparent" == e) return {
       r: 0,
       g: 0,

@@ -5,13 +5,13 @@ require.d(exports, {
   D$: () => P,
   N4: () => j,
   UI: () => R,
-  Uu: () => T,
-  cS: () => w,
+  Uu: () => S,
+  cS: () => D,
   cZ: () => k,
   e1: () => B,
   eQ: () => N,
   fw: () => C,
-  uY: () => D,
+  uY: () => w,
   x9: () => L
 }), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./781311.js");
 var Chunk392711 = require("./392711.js"),
@@ -66,13 +66,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T() {
+function S() {
   return {
     text: true,
     image: true,
@@ -100,16 +100,16 @@ function R(e) {
 }
 
 function P(e, t) {
-  return 0 === e.length && null == t.find(e => w(e))
+  return 0 === e.length && null == t.find(e => D(e))
 }
 
-function w(e) {
+function D(e) {
   var t;
   let n = null == (t = e.text) ? true : t.trim();
   return null != n && n.length > 0
 }
 
-function D(e) {
+function w(e) {
   var t;
   let n = null == (t = e.text) ? true : t.trim();
   return null != e.image && (null == n || 0 === n.length)
@@ -125,19 +125,19 @@ function L(e) {
   let n = null == e || null == (t = e.answers) ? true : t.map((e, t) => {
       var n, r;
       let i = null == (n = e.poll_media) ? true : n.emoji,
-        a = S(v({}, e.poll_media), {
+        a = T(v({}, e.poll_media), {
           emoji: null != i ? {
             id: i.id,
             name: null != (r = i.name) ? r : ""
           } : true
         });
-      return S(v({}, e), {
+      return T(v({}, e), {
         answer_id: t + 1,
         poll_media: a
       })
     }),
     r = (null == e ? true : e.duration) != null ? x(e.duration) : "0";
-  return S(v({}, e), {
+  return T(v({}, e), {
     expiry: r,
     answers: n
   })

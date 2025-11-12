@@ -60,14 +60,14 @@ function y() {
       });
       (0, l.Jr)(e)
     },
-    S = [{
+    T = [{
       value: Chunk524437.Q4.BLUR,
       label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
     }, {
       value: Chunk524437.Q4.BLOCK,
       label: Chunk388032.intl.string(Chunk388032.t["D/157Y"])
     }],
-    T = [{
+    S = [{
       value: Chunk524437.Q4.BLUR,
       label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
     }],
@@ -75,7 +75,7 @@ function y() {
       value: Chunk524437.Q4.SHOW,
       label: Chunk388032.intl.string(Chunk388032.t["5k5OFp"])
     };
-  exports && (S.unshift(A), T.unshift(A));
+  exports && (T.unshift(A), S.unshift(A));
   let C = {
     isDisabled: E,
     tooltipText: require ? Chunk388032.intl.string(Chunk602698.default["6Af/cw"]) : true
@@ -89,14 +89,14 @@ function y() {
       onChange: e => I({
         goreContentFriendDm: e
       }),
-      options: S
+      options: T
     }, C)), (0, Chunk951288.jsx)(Chunk947707.Z, b({
       title: Chunk388032.intl.string(Chunk388032.t["Yh+HX1"]),
       value: v,
       onChange: e => I({
         goreContentNonFriendDm: e
       }),
-      options: S
+      options: T
     }, C)), (0, Chunk951288.jsx)(Chunk947707.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["FP+a42"]),
       value: y,
@@ -104,7 +104,7 @@ function y() {
         goreContentGuilds: e
       }),
       isDisabled: !exports || E,
-      options: T,
+      options: S,
       tooltipText: require ? Chunk388032.intl.string(Chunk602698.default["6Af/cw"]) : true
     })]
   })

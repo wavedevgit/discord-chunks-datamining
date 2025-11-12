@@ -43,10 +43,10 @@ function l(e) {
       var e;
       null == (e = E.current) || e.stop(), g(false), null == u || u()
     }, [u]),
-    S = r.useCallback(() => {
+    T = r.useCallback(() => {
       _ && I()
     }, [I, _]),
-    T = r.useCallback(e => {
+    S = r.useCallback(e => {
       null == h.current && (h.current = e.currentTarget), b.current = false, v()
     }, [v, h]),
     A = r.useCallback(e => {
@@ -57,13 +57,13 @@ function l(e) {
       null == (e = E.current) || e.stop(), I()
     }, [I]),
     N = r.useMemo(() => ({
-      onMouseEnter: T,
+      onMouseEnter: S,
       onMouseLeave: C,
       onFocus: A,
       onBlur: I,
       onContextMenu: I,
-      onClick: S
-    }), [T, C, A, I, S]);
+      onClick: T
+    }), [S, C, A, I, T]);
   return r.useEffect(() => {
     var e, t;
     if (!O) return;

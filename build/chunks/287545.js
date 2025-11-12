@@ -172,14 +172,14 @@ function Q(e) {
   if (o && null != A && A.isPrivate() && a && null == b && s.Z.selectParticipant(A.id, null), null == b) return;
   let R = E.Z.getMediaSessionId(),
     P = c.compositeInstanceId,
-    w = null == R && (null == A ? true : A.isVocal()) === true && (null == A ? true : A.isPrivate()) === false;
-  if (null == P || w) return;
-  let D = (0, i.Z)(),
+    D = null == R && (null == A ? true : A.isVocal()) === true && (null == A ? true : A.isPrivate()) === false;
+  if (null == P || D) return;
+  let w = (0, i.Z)(),
     x = "location" in c ? 2 : 1,
     M = y.default.getCurrentUser();
   if (null == M) return;
   let j = C.ZP.getShelfActivities(I),
-    k = T.Z.getState().shelfOrder,
+    k = S.Z.getState().shelfOrder,
     G = (0, N.Z)({
       applicationId: r,
       activityConfigs: j
@@ -192,14 +192,14 @@ function Q(e) {
     W = null != R ? [R] : [],
     K = {
       activitySessionId: P,
-      activityUserSessionId: D,
+      activityUserSessionId: w,
       launchId: c.launchId,
       mediaSessionIds: W,
       activitiesInfraVersion: x
     };
   F[r] = K;
   let z = V[r];
-  (0, S.Ew)(b.nonce) || b.nonce === (null == z ? true : z.nonce) || (z = true), O.default.track(U.rMx.ACTIVITY_SESSION_JOINED, {
+  (0, T.Ew)(b.nonce) || b.nonce === (null == z ? true : z.nonce) || (z = true), O.default.track(U.rMx.ACTIVITY_SESSION_JOINED, {
     channel_id: v,
     guild_id: I,
     media_session_id: W[0],
@@ -213,7 +213,7 @@ function Q(e) {
     release_phase: Z,
     shelf_rank: null == G || null == (t = G.activity) ? true : t.shelf_rank,
     shelf_sorted_rank: B > 0 ? B : null,
-    activity_user_session_id: D,
+    activity_user_session_id: w,
     channel_type: null == A ? true : A.type,
     source: null == z ? true : z.source,
     command_context_type: null != A ? (0, d.Vh)(A, r) : null,
@@ -228,7 +228,7 @@ function Q(e) {
     application_id: r,
     instance_id: c.launchId,
     initial_media_session_id: W[0],
-    activity_user_session_id: D,
+    activity_user_session_id: w,
     raw_thermal_state: H,
     is_activity_start: o,
     shelf_rank: null == G || null == (n = G.activity) ? true : n.shelf_rank,
@@ -369,7 +369,7 @@ class $ extends Chunk317770.Z {
       let u = C.ZP.getSelfEmbeddedActivityForChannel(i);
       if ((null == u ? true : u.applicationId) === a) return;
       let d = await f.ZP.fetchApplication(a);
-      if (!(0, D.a)()) return void this.showLaunchErrorModal(G.intl.string(G.t.UXoQTp));
+      if (!(0, w.a)()) return void this.showLaunchErrorModal(G.intl.string(G.t.UXoQTp));
       if (!(0, j.Z)(null == d || null == (t = d.embedded_activity_config) ? true : t.supported_platforms)) return void this.showLaunchErrorModal(G.intl.string(G.t.uGDCcw));
       let _ = null != (n = null == c ? true : c.getGuildId()) ? n : true,
         {
@@ -401,7 +401,7 @@ class $ extends Chunk317770.Z {
         inputApplication: null,
         analyticsLocations: o,
         inviterUserId: l
-      }) : await (0, w.Z)({
+      }) : await (0, D.Z)({
         targetApplicationId: a,
         channelId: i,
         analyticsLocations: o,

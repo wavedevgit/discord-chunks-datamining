@@ -2,7 +2,7 @@
 /** chunk id: 490173, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -76,9 +76,9 @@ let I = e => {
     disableClickTrap: y = false
   } = e, O = i.useRef(null), I = i.useMemo(() => ({
     current: u
-  }), [u]), S = i.useRef(n);
+  }), [u]), T = i.useRef(n);
   i.useEffect(() => {
-    S.current = n
+    T.current = n
   }), i.useEffect(() => {
     var e, t, n;
     let r = null == (e = O.current) ? true : e.elementRef.current;
@@ -87,19 +87,19 @@ let I = e => {
       var t;
       let n = e.target,
         r = null == (t = O.current) ? true : t.elementRef.current;
-      null != r && (0, c.ty$)(r, n) || (v(), S.current())
+      null != r && (0, c.ty$)(r, n) || (v(), T.current())
     };
     return null == (t = r.ownerDocument) || t.addEventListener("click", i, true), null == (n = r.ownerDocument) || n.addEventListener("contextmenu", i, true), () => {
       var e, t;
       null == (e = r.ownerDocument) || e.removeEventListener("click", i, true), null == (t = r.ownerDocument) || t.removeEventListener("contextmenu", i, true)
     }
   }, []);
-  let T = i.useRef(s);
+  let S = i.useRef(s);
   i.useEffect(() => {
-    T.current = s
+    S.current = s
   }), i.useEffect(() => () => {
     var e;
-    return null == (e = T.current) ? true : e.call(T)
+    return null == (e = S.current) ? true : e.call(S)
   }, []), i.useLayoutEffect(() => {
     var e;
     null == (e = O.current) || e.updatePosition()
@@ -118,7 +118,7 @@ let I = e => {
   return (0, l.E)("ContextMenu") ? (0, r.jsx)(o.pS, {
     open: true,
     onOpenChange: e => {
-      e ? C() : (N(), v(), S.current())
+      e ? C() : (N(), v(), T.current())
     },
     overrideTargetRect: p,
     placement: (0, o.a_)(null != h ? h : "right", null != m ? m : "top"),
@@ -146,7 +146,7 @@ let I = e => {
     children: t
   })
 };
-class S extends Chunk647438.PureComponent {
+class T extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       renderLazy: e,
@@ -234,7 +234,7 @@ class S extends Chunk647438.PureComponent {
   }
 }
 
-function T() {
+function S() {
   let {
     contextMenu: e,
     version: t,
@@ -247,7 +247,7 @@ function T() {
     appContext: o,
     renderWindow: l
   } = Chunk647438.useContext(Chunk728285.ZP);
-  return (0, Chunk951288.jsx)(S, O(b({
+  return (0, Chunk951288.jsx)(T, O(b({
     appContext: Chunk762328,
     renderWindow: Chunk682973
   }, module), {

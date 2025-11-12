@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 569984, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, S, T, A, C;
+let r, i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, T, S, A, C;
 require.d(exports, {
   Z: () => ez
 }), require("./388685.js");
@@ -63,7 +63,7 @@ let Y = 6 * Chunk70956.Z.Millis.HOUR,
   q = 1e3;
 
 function X() {
-  r = false, i = false, a = new Map, o = false, s = new Map, l = new Map, c = new Map, u = 0, d = 0, f = new Set, _ = new Set, p = new Set, h = new Set, m = new Set, W = new Map, E = new Map, b = new Map, y = new Map, O = null, v = new Map, g = new Set, I = new Map, S = new Map, eH(), T = null, C = new Map, z = new Map, A = new Map
+  r = false, i = false, a = new Map, o = false, s = new Map, l = new Map, c = new Map, u = 0, d = 0, f = new Set, _ = new Set, p = new Set, h = new Set, m = new Set, W = new Map, E = new Map, b = new Map, y = new Map, O = null, v = new Map, g = new Set, I = new Map, T = new Map, eH(), S = null, C = new Map, z = new Map, A = new Map
 }
 
 function Q(e, t) {
@@ -104,7 +104,7 @@ function et(e) {
   let {
     entitlements: n
   } = e, r = null == (t = n.items[0].tenantMetadata) ? true : t.questRewards.reward;
-  return (null == r ? true : r.tag) !== w.w.REWARD_CODE ? null : r.rewardCode
+  return (null == r ? true : r.tag) !== D.w.REWARD_CODE ? null : r.rewardCode
 }
 
 function en(e, t) {
@@ -151,7 +151,7 @@ function eo(e) {
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (l = new Map, n)) l.set(e.id, e);
   for (let e of null == C ? true : C.values()) s.has(e.id) || (s.set(e.id, e), a.set(e.id, (0, M.zi)(e)));
-  S = a, eV(), T = null != i ? new Date(i) : null
+  T = a, eV(), S = null != i ? new Date(i) : null
 }
 
 function es() {
@@ -276,14 +276,14 @@ function eI(e) {
   r.delete(t), p = r, ee(t, n)
 }
 
-function eS(e) {
+function eT(e) {
   let {
     questId: t
   } = e, n = new Set(p);
   n.delete(t), p = n
 }
 
-function eT(e) {
+function eS(e) {
   let {
     questId: t
   } = e, n = new Set(_);
@@ -326,14 +326,14 @@ function eP(e) {
   }), eN(t.questId)
 }
 
-function ew(e) {
+function eD(e) {
   let {
     questId: t
   } = e;
   eN(t)
 }
 
-function eD(e) {
+function ew(e) {
   let {
     streamKey: t
   } = e;
@@ -354,7 +354,7 @@ function ex(e) {
   let i = s.get(t.quest_id);
   if (null != i) {
     let e = (0, M.zi)(i);
-    S.get(t.quest_id) !== e && (S = new Map(S).set(t.quest_id, e))
+    T.get(t.quest_id) !== e && (T = new Map(T).set(t.quest_id, e))
   }
   0 === Object.keys(r.progress).length && W.has(r.questId) && (n.log("Removing optimistic progress for ".concat(r.questId)), W.delete(r.questId))
 }
@@ -369,7 +369,7 @@ function eL(e) {
   let n = s.get(t.questId);
   if (null != n) {
     let e = (0, M.zi)(n);
-    S.get(t.questId) !== e && (S = new Map(S).set(t.questId, e))
+    T.get(t.questId) !== e && (T = new Map(T).set(t.questId, e))
   }
 }
 
@@ -454,10 +454,10 @@ function eZ(e) {
 
 function eF() {
   let e = false,
-    t = new Map(S);
+    t = new Map(T);
   s.forEach((n, r) => {
     true !== t.get(r) && ((0, M.zi)(n) ? (t.set(r, true), e = true) : t.has(r) || t.set(r, false))
-  }), module && (S = exports, eK.emitChange())
+  }), module && (T = exports, eK.emitChange())
 }
 
 function eV() {
@@ -474,7 +474,7 @@ function eY(e) {
   let {
     quest_enrollment_blocked_until: t
   } = e;
-  T = null != t ? new Date(t) : null
+  S = null != t ? new Date(t) : null
 }
 X();
 class eW extends(N = Chunk442837.ZP.Store) {
@@ -516,7 +516,7 @@ class eW extends(N = Chunk442837.ZP.Store) {
     return I
   }
   get questEnrollmentBlockedUntil() {
-    return T
+    return S
   }
   get questAdDecisionByPlacement() {
     return A
@@ -560,11 +560,11 @@ class eW extends(N = Chunk442837.ZP.Store) {
     return null == (n = W.get(e)) ? true : n.get(t)
   }
   getExpiredQuestsMap() {
-    return S
+    return T
   }
   isQuestExpired(e) {
     var t;
-    return null != (t = S.get(e)) && t
+    return null != (t = T.get(e)) && t
   }
   getQuestLoadedViaPreview(e) {
     return C.get(e)
@@ -592,16 +592,16 @@ let eK = new eW(Chunk570140.Z, {
     QUESTS_ENROLL_FAILURE: eO,
     QUESTS_FETCH_REWARD_CODE_BEGIN: ev,
     QUESTS_FETCH_REWARD_CODE_SUCCESS: eI,
-    QUESTS_FETCH_REWARD_CODE_FAILURE: eS,
-    QUESTS_CLAIM_REWARD_BEGIN: eT,
+    QUESTS_FETCH_REWARD_CODE_FAILURE: eT,
+    QUESTS_CLAIM_REWARD_BEGIN: eS,
     QUESTS_CLAIM_REWARD_SUCCESS: eA,
     QUESTS_CLAIM_REWARD_FAILURE: eC,
     QUESTS_DISMISS_CONTENT_BEGIN: eR,
     QUESTS_DISMISS_CONTENT_SUCCESS: eP,
-    QUESTS_DISMISS_CONTENT_FAILURE: ew,
+    QUESTS_DISMISS_CONTENT_FAILURE: eD,
     QUESTS_USER_STATUS_UPDATE: ex,
     STREAM_CLOSE: eg,
-    QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: eD,
+    QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: ew,
     QUESTS_PREVIEW_UPDATE_SUCCESS: eL,
     QUESTS_DELIVERY_OVERRIDE: eM,
     QUESTS_SELECT_TASK_PLATFORM: ej,

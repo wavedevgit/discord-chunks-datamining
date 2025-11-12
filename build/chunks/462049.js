@@ -30,8 +30,8 @@ function g(e, t) {
     } = E(e, t);
   if (p < r) return;
   let m = e.getUint32(t + n);
-  if (m === o) return w(e, h, p);
-  if (m === s) return D(e, t, h, p);
+  if (m === o) return D(e, h, p);
+  if (m === s) return w(e, t, h, p);
   if (m === f) return x(e, t, h, p);
   if (m === _) return L(e, h, p);
   let g = e.getUint8(h);
@@ -76,7 +76,7 @@ function v(e) {
   if (r.Z.USE_EXIF || r.Z.USE_XMP || r.Z.USE_ICC) {
     let t = {},
       n = I(e);
-    return n ? (r.Z.USE_EXIF && (t.tiffHeaderOffset = S(e, n)), r.Z.USE_XMP && (t.xmpChunks = N(n)), r.Z.USE_ICC && (t.iccChunks = P(n)), t.hasAppMarkers = true !== t.tiffHeaderOffset || true !== t.xmpChunks || true !== t.iccChunks, t) : {
+    return n ? (r.Z.USE_EXIF && (t.tiffHeaderOffset = T(e, n)), r.Z.USE_XMP && (t.xmpChunks = N(n)), r.Z.USE_ICC && (t.iccChunks = P(n)), t.hasAppMarkers = true !== t.tiffHeaderOffset || true !== t.xmpChunks || true !== t.iccChunks, t) : {
       hasAppMarkers: false
     }
   }
@@ -95,9 +95,9 @@ function I(e) {
   }
 }
 
-function S(e, t) {
+function T(e, t) {
   try {
-    let n = T(t).itemId,
+    let n = S(t).itemId,
       r = A(t, n),
       i = r.baseOffset + r.extents[0].extentOffset;
     return C(e, i)
@@ -106,7 +106,7 @@ function S(e, t) {
   }
 }
 
-function T(e) {
+function S(e) {
   return e.subBoxes.find(e => "iinf" === e.type).itemInfos.find(e => e.itemType === p)
 }
 
@@ -143,7 +143,7 @@ function P(e) {
   } catch (e) {}
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   let r = 4;
   return {
     type: "ftyp",
@@ -152,7 +152,7 @@ function w(e, t, n) {
   }
 }
 
-function D(e, t, n, r) {
+function w(e, t, n, r) {
   return {
     type: "iprp",
     subBoxes: k(e, n, r - (n - t)),

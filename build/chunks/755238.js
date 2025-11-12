@@ -28,9 +28,9 @@ function h(e, t, n) {
     onRowAction: O,
     onCellAction: v,
     escapeKeyBehavior: I = "clearSelection",
-    shouldSelectOnPressUp: S
+    shouldSelectOnPressUp: T
   } = e, {
-    selectionManager: T
+    selectionManager: S
   } = t;
   e["aria-label"] || e["aria-labelledby"] || console.warn("An aria-label or aria-labelledby prop is required for accessibility.");
   let A = (0, d.X)({
@@ -54,36 +54,36 @@ function h(e, t, n) {
       collectionProps: P
     } = (0, p.g)({
       ref: n,
-      selectionManager: T,
+      selectionManager: S,
       keyboardDelegate: R,
       isVirtualized: h,
       scrollRef: b,
       disallowTypeAhead: m,
       escapeKeyBehavior: I
     }),
-    w = (0, s.Me)(e.id);
+    D = (0, s.Me)(e.id);
   i.B.set(t, {
     keyboardDelegate: R,
     actions: {
       onRowAction: O,
       onCellAction: v
     },
-    shouldSelectOnPressUp: S
+    shouldSelectOnPressUp: T
   });
-  let D = (0, o.j)({
-      selectionManager: T,
+  let w = (0, o.j)({
+      selectionManager: S,
       hasItemActions: !!(O || v)
     }),
     x = (0, l.z)(e, {
       labelable: true
     }),
     L = (0, u.useCallback)(e => {
-      if (T.isFocused) {
-        e.currentTarget.contains(e.target) || T.setFocused(false);
+      if (S.isFocused) {
+        e.currentTarget.contains(e.target) || S.setFocused(false);
         return
       }
-      e.currentTarget.contains(e.target) && T.setFocused(true)
-    }, [T]),
+      e.currentTarget.contains(e.target) && S.setFocused(true)
+    }, [S]),
     M = (0, u.useMemo)(() => ({
       onBlur: P.onBlur,
       onFocus: L
@@ -93,11 +93,11 @@ function h(e, t, n) {
     }),
     k = (0, c.d)(x, {
       role: "grid",
-      id: w,
-      "aria-multiselectable": "multiple" === T.selectionMode ? "true" : true
+      id: D,
+      "aria-multiselectable": "multiple" === S.selectionMode ? "true" : true
     }, t.isKeyboardNavigationDisabled ? M : P, 0 === t.collection.size && {
       tabIndex: j ? false : 0
-    } || true, D);
+    } || true, w);
   return h && (k["aria-rowcount"] = t.collection.size, k["aria-colcount"] = t.collection.columnCount), (0, a.B)({
     getRowText: y
   }, t), {

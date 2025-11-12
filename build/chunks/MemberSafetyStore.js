@@ -50,7 +50,7 @@ function I(e) {
   O(t.id, n.isInitialized)
 }
 
-function S(e) {
+function T(e) {
   let {
     guild: {
       id: t
@@ -59,7 +59,7 @@ function S(e) {
   O(t)
 }
 
-function T() {
+function S() {
   returnfalse
 }
 
@@ -100,7 +100,7 @@ function P(e) {
   return "GUILD_ROLE_DELETE" === e.type && (t = n.removeRoleFromSearchState(e.roleId)), n.rebuildAllMembers() || t
 }
 
-function w(e) {
+function D(e) {
   let {
     guildId: t,
     userId: n
@@ -108,7 +108,7 @@ function w(e) {
   return y(t).updateMembersByMemberIds([n])
 }
 
-function D(e) {
+function w(e) {
   let {
     guildId: t,
     members: n
@@ -405,18 +405,18 @@ let J = new Q(Chunk570140.Z, {
   CACHE_LOADED: Z,
   PASSIVE_UPDATE_V2: V,
   GUILD_CREATE: I,
-  GUILD_DELETE: S,
+  GUILD_DELETE: T,
   GUILD_MEMBERS_CHUNK_BATCH: C,
-  GUILD_MEMBER_ADD: T,
-  GUILD_MEMBER_UPDATE: T,
+  GUILD_MEMBER_ADD: S,
+  GUILD_MEMBER_UPDATE: S,
   GUILD_MEMBER_UPDATE_LOCAL: N,
   GUILD_MEMBER_REMOVE: R,
   GUILD_ROLE_UPDATE: P,
   GUILD_ROLE_DELETE: P,
   GUILD_MEMBER_PROFILE_UPDATE: j,
-  GUILD_ROLE_MEMBER_REMOVE: w,
-  GUILD_ROLE_MEMBER_ADD: w,
-  THREAD_MEMBER_LIST_UPDATE: D,
+  GUILD_ROLE_MEMBER_REMOVE: D,
+  GUILD_ROLE_MEMBER_ADD: D,
+  THREAD_MEMBER_LIST_UPDATE: w,
   THREAD_MEMBERS_UPDATE: x,
   LOAD_ARCHIVED_THREADS_SUCCESS: L,
   LOAD_FORUM_POSTS: M,

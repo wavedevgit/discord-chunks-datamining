@@ -30,13 +30,13 @@ function E(e) {
     appContext: y
   } = e, {
     newestAnalyticsLocation: O
-  } = (0, o.ZP)(), v = (0, i.e7)([f.default], () => f.default.getId() === (null == t ? true : t.id)), I = (0, l.m)(null != n ? n : null), S = (0, i.e7)([_.Z], () => null != E ? E : _.Z.getChannelId(n, true), [E, n]);
+  } = (0, o.ZP)(), v = (0, i.e7)([f.default], () => f.default.getId() === (null == t ? true : t.id)), I = (0, l.m)(null != n ? n : null), T = (0, i.e7)([_.Z], () => null != E ? E : _.Z.getChannelId(n, true), [E, n]);
   return null == n || !I || v ? null : (0, r.jsx)(p.f6, {
     action: "PRESS_MOD_VIEW",
     icon: a.HI3,
     tooltipText: g.intl.string(g.t.kj3tz2),
     onClick: () => {
-      c.Z.close(), null != S && (0, d.Kh)(S), (0, u.i)(y), (0, s.r)(n, t.id, null != S ? S : h.oC.MEMBER_SAFETY, {
+      c.Z.close(), null != T && (0, d.Kh)(T), (0, u.i)(y), (0, s.r)(n, t.id, null != T ? T : h.oC.MEMBER_SAFETY, {
         modViewPanel: m.k.INFO,
         sourceLocation: O
       }), null == b || b()

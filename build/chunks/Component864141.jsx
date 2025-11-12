@@ -41,18 +41,18 @@ function N(e) {
   } = e, {
     themeType: P
   } = (0, g.z)(), {
-    analyticsLocations: w
-  } = (0, u.ZP)(c.Z.USER_PROFILE_VOICE_ACTIVITY_CARD), D = (0, h.Z)({
+    analyticsLocations: D
+  } = (0, u.ZP)(c.Z.USER_PROFILE_VOICE_ACTIVITY_CARD), w = (0, h.Z)({
     display: "voice",
     activity: {
       type: "VOICE"
     },
     voiceChannelId: i.id,
     user: t,
-    analyticsLocations: w
+    analyticsLocations: D
   }), x = (0, m.Z)({
     userId: t.id,
-    onAction: D
+    onAction: w
   }), L = (0, o.e7)([f.Z], () => f.Z.getGuild(i.guild_id)), M = (0, p.Z)(i), j = (0, d.ZP)(i), {
     channelStatusEnabled: k
   } = (0, _.D)({
@@ -70,22 +70,22 @@ function N(e) {
     className: C.actions,
     children: (0, r.jsx)(I.Z, {
       channel: i,
-      onAction: D,
+      onAction: w,
       onClose: R
     })
   }), B = i.isDM() || i.isGroupDM() ? A.intl.string(A.t["9FaEzi"]) : i.isGuildStageVoice() ? A.intl.string(A.t.QygGCN) : A.intl.string(A.t.msxteM);
   return (0, r.jsx)(u.Gt, {
-    value: w,
+    value: D,
     children: (0, r.jsxs)(E.Z, {
       ref: x,
       className: a()(C.card, N),
-      onAction: D,
+      onAction: w,
       onClose: R,
       "aria-label": "".concat(B, ", ").concat(j),
       children: [(0, r.jsx)(b.Z, {
         text: B,
         tags: U(),
-        contextMenu: (0, r.jsx)(S.Z, {
+        contextMenu: (0, r.jsx)(T.Z, {
           display: "voice",
           user: t,
           onClose: R
@@ -102,16 +102,16 @@ function N(e) {
             children: [(0, r.jsx)(y.Z, {
               channel: i,
               guild: L,
-              onAction: D,
+              onAction: w,
               onClose: R
             }), k && i.isGuildVoice() && (0, r.jsx)(v.Z, {
               voiceChannel: i,
-              onAction: D,
+              onAction: w,
               onClose: R
-            }), P === T.l.MODAL_V2 && G()]
-          }), P === T.l.MODAL && G()]
+            }), P === S.l.MODAL_V2 && G()]
+          }), P === S.l.MODAL && G()]
         })
-      }), P !== T.l.MODAL && P !== T.l.MODAL_V2 && G()]
+      }), P !== S.l.MODAL && P !== S.l.MODAL_V2 && G()]
     })
   })
 }

@@ -65,13 +65,13 @@ async function I(e, t) {
     channelId: b,
     analyticsLocations: O,
     messageReference: I
-  } = t, S = l.Z.getChannel(b);
-  if (null != S) {
+  } = t, T = l.Z.getChannel(b);
+  if (null != T) {
     if (null != I) {
       let e = u.Z.getMessage(I.channel_id, I.message_id);
       null != e && (0, s.fE)({
         message: e,
-        channel: S,
+        channel: T,
         shouldMention: false,
         showMentionToggle: false
       })
@@ -80,9 +80,9 @@ async function I(e, t) {
       let t = [],
         n = [];
       for (let r of e) {
-        var T;
+        var S;
         let e = await (0, m.rO)(r),
-          i = null != (T = r.name) ? T : (0, g.yl)(f.default.extractTimestamp(r.id)),
+          i = null != (S = r.name) ? S : (0, g.yl)(f.default.extractTimestamp(r.id)),
           a = (0, h.Z)(i);
         if (r.type === p.NJ.CLIP || r.type === p.NJ.VOICE_CLIP) {
           let i = "".concat("" !== a ? a : "clip", ".mp4");
@@ -99,13 +99,13 @@ async function I(e, t) {
         }
         d.default.track(E.rMx.CLIP_SHARED, {
           location_stack: O,
-          guild_id: S.guild_id,
-          channel_id: S.id,
-          channel_type: S.type,
+          guild_id: T.guild_id,
+          channel_id: T.id,
+          channel_type: T.type,
           application_id: r.applicationId,
           clip_id: r.id
         })
-      }(0, _.d)(t, S, c.d.ChannelMessage, {
+      }(0, _.d)(t, T, c.d.ChannelMessage, {
         filesMetadata: n,
         origin: "unknown:clip_share"
       }), i.pT()

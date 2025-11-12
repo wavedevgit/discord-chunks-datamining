@@ -60,9 +60,9 @@ function v(e, t) {
   }), e
 }
 let I = 104,
-  S = 16;
+  T = 16;
 
-function T(e) {
+function S(e) {
   var t, n, a;
   let {
     file: s
@@ -90,7 +90,7 @@ function T(e) {
     })
   }, []);
   let m = (0, u.Z)(h),
-    g = Math.max(16, (S + I - (null != (t = null == m ? true : m.width) ? t : 0)) / 2);
+    g = Math.max(16, (T + I - (null != (t = null == m ? true : m.width) ? t : 0)) / 2);
   return (0, r.jsx)("img", {
     ref: h,
     src: l,
@@ -112,7 +112,7 @@ function T(e) {
 class A extends Chunk647438.Component {
   render() {
     var e;
-    return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk951288.jsx)(T, {
+    return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk951288.jsx)(S, {
       file: this.props.upload.item.file
     }) : (0, Chunk951288.jsx)("div", {
       className: o()(Chunk374450.fileIcon, {

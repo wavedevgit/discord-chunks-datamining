@@ -31,8 +31,8 @@ function O(e) {
     className: O,
     sectionTitle: v,
     forcedDivider: I = false,
-    withTutorial: S = false,
-    showBorder: T = false,
+    withTutorial: T = false,
+    showBorder: S = false,
     isTryItOut: A = false
   } = e, {
     analyticsLocations: C
@@ -41,11 +41,11 @@ function O(e) {
     guildId: null == n ? true : n.id
   }), {
     pendingProfileEffect: P,
-    errors: w
+    errors: D
   } = (0, p.sY)({
     guildId: null == n ? true : n.id,
     isTryItOut: A
-  }), D = i.useCallback(() => {
+  }), w = i.useCallback(() => {
     (0, u.H)({
       analyticsLocations: C,
       guild: n,
@@ -64,22 +64,22 @@ function O(e) {
   function L() {
     A ? (0, d.Ju)(null) : (0, p.UK)(null, null == n ? true : n.id)
   }
-  let M = S ? l.gtL : s.zx;
+  let M = T ? l.gtL : s.zx;
   return (0, r.jsx)(h.Z, {
     forcedDivider: I,
     borderType: m.Y.PREMIUM,
     hasBackground: true,
     title: v,
-    showBorder: T,
-    errors: w,
+    showBorder: S,
+    errors: D,
     className: O,
     children: (0, r.jsxs)("div", {
       className: y.buttonsContainer,
       children: [(0, r.jsx)(M, {
         size: s.zx.Sizes.SMALL,
-        onClick: D,
+        onClick: w,
         className: o()({
-          [y.buttonHighlighted]: S
+          [y.buttonHighlighted]: T
         }),
         children: b.intl.string(b.t["/dRfCf"])
       }), x && (0, r.jsx)("div", {

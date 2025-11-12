@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk164161 = require("./164161.js");
-let D = () => {
+let w = () => {
     var e, t, n;
     let i = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk74538.ZP.isPremium(Chunk594174.default.getCurrentUser())),
       a = (0, Chunk639119.N)(),
@@ -53,25 +53,25 @@ let D = () => {
     let {
       markAsDismissed: t
     } = e, n = () => {
-      null == t || t(N.L.DISMISS), (0, h.Ll)(), (0, S.O)()
+      null == t || t(N.L.DISMISS), (0, h.Ll)(), (0, T.O)()
     };
     return (0, r.jsxs)("div", {
-      className: w.editorHeader,
+      className: D.editorHeader,
       children: [(0, r.jsx)(u.P3F, {
-        className: w.closeCircleButton,
+        className: D.closeCircleButton,
         onClick: () => n(),
         children: (0, r.jsx)(u.k$p, {
           size: "md",
           color: "currentColor",
-          className: w.closeCircle
+          className: D.closeCircle
         })
       }), (0, r.jsxs)("div", {
-        className: w.title,
+        className: D.title,
         children: [(0, r.jsx)(u.Heading, {
           variant: "heading-lg/extrabold",
           children: P.intl.string(P.t["hb/wE0"])
         }), (0, r.jsx)(E.Z, {
-          className: w.premiumIcon
+          className: D.premiumIcon
         })]
       })]
     })
@@ -80,14 +80,14 @@ let D = () => {
     let {
       isCoachmark: t,
       markAsDismissed: n
-    } = e, i = (0, s.e7)([T.Z], () => T.Z.isUpsellPreview), a = () => {
-      null == n || n(N.L.DISMISS), (0, h.Ll)(), (0, S.O)(), t || (0, y.openUserSettings)(b.n.APPEARANCE_PANEL, {
+    } = e, i = (0, s.e7)([S.Z], () => S.Z.isUpsellPreview), a = () => {
+      null == n || n(N.L.DISMISS), (0, h.Ll)(), (0, T.O)(), t || (0, y.openUserSettings)(b.n.APPEARANCE_PANEL, {
         section: C.oAB.APPEARANCE
       })
     };
     return (0, r.jsxs)("div", {
-      className: w.editorFooter,
-      children: [i && (0, r.jsx)(D, {}), (0, r.jsx)(l.zxk, {
+      className: D.editorFooter,
+      children: [i && (0, r.jsx)(w, {}), (0, r.jsx)(l.zxk, {
         onClick: a,
         variant: "secondary",
         fullWidth: true,
@@ -105,8 +105,8 @@ function M(e) {
   } = (0, p.ZP)(_.Z.APP_ICON_EDITOR), l = (0, s.e7)([O.default], () => O.default.getCurrentUser()), {
     isUpsellPreview: c,
     shouldEditorAnimate: m
-  } = (0, s.cj)([T.Z, f.Z], () => ({
-    isUpsellPreview: T.Z.isUpsellPreview,
+  } = (0, s.cj)([S.Z, f.Z], () => ({
+    isUpsellPreview: S.Z.isUpsellPreview,
     shouldEditorAnimate: t && !f.Z.useReducedMotion
   })), g = h.oq.getState().activePanel === h.wh.APP_ICON;
   i.useEffect(() => {
@@ -115,22 +115,22 @@ function M(e) {
       location_stack: a
     })
   }, [c, a]);
-  let E = (0, d.Z)(null, c ? S.O : C.dG4);
+  let E = (0, d.Z)(null, c ? T.O : C.dG4);
   return (i.useEffect(() => {
-    if (c && !g) return S.O
+    if (c && !g) return T.O
   }, [c, g]), null == l) ? null : (0, r.jsx)(p.Gt, {
     value: a,
     children: (0, r.jsx)("div", {
       ref: E,
-      className: o()(w.editor, m ? w.editorAnimate : null),
+      className: o()(D.editor, m ? D.editorAnimate : null),
       "data-app-right-panel": true,
       children: (0, r.jsxs)(u.y5t, {
         children: [(0, r.jsx)(x, {
           markAsDismissed: n
         }), (0, r.jsx)(u.Ttm, {
-          className: w.editorBody,
+          className: D.editorBody,
           children: (0, r.jsx)(A.Z, {
-            className: w.selectionGroup,
+            className: D.selectionGroup,
             isEditor: true
           })
         }), (0, r.jsx)(L, {

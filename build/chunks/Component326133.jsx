@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk918559 = require("./918559.js"),
   Chunk671982 = require("./671982.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -83,12 +83,12 @@ function R(e, t) {
   return i
 }
 let P = 490,
-  w = 490,
-  D = 245,
+  D = 490,
+  w = 245,
   x = 200,
   L = 120,
   M = Chunk647438.forwardRef(function(e, t) {
-    var n, a, S, A, R, M, j, k, U;
+    var n, a, T, A, R, M, j, k, U;
     let {
       channel: G,
       type: B,
@@ -99,7 +99,7 @@ let P = 490,
     } = e, Y = (0, h.Dt)(), W = (0, l.e7)([E.Z], () => {
       var e;
       return null != (e = E.Z.getGuild(G.guild_id)) ? e : null
-    }, [G.guild_id]), K = i.useRef(null), [z, q, X] = (0, O.Z)(C(T({}, e), {
+    }, [G.guild_id]), K = i.useRef(null), [z, q, X] = (0, O.Z)(C(S({}, e), {
       guild: W
     }), t, K), Q = (null == (n = B.autocomplete) ? true : n.forceChatLayer) ? g.ZP : m.ZP, J = (0, _.DJ)(z.selectedIndex);
     (0, p.KR)(Y, z.isVisible, J);
@@ -134,10 +134,10 @@ let P = 490,
         [I.autocompletePopout]: null != $,
         [I.bottom]: null == $ && "bottom" === e.position,
         [I.autocompleteTop]: ee,
-        [I.minimal]: (null == (S = z.query) ? true : S.type) === b.eq.MENTION_SUGGESTIONS
+        [I.minimal]: (null == (T = z.query) ? true : T.type) === b.eq.MENTION_SUGGESTIONS
       },
       ei = P;
-    null != $ && (ei = (null == (M = B.autocomplete) ? true : M.small) ? x : (null == (j = z.query) ? true : j.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
+    null != $ && (ei = (null == (M = B.autocomplete) ? true : M.small) ? x : (null == (j = z.query) ? true : j.type) === b.eq.EMOJIS_AND_STICKERS ? D : w);
     let ea = Math.max(Z, null != (k = null == V || null == (A = V.current) ? true : A.clientHeight) ? k : 0),
       eo = Math.min(.5 * window.innerHeight, ea);
     ei = Math.min(window.innerHeight - L - eo - (null != H ? H : 0), ei);
@@ -153,7 +153,7 @@ let P = 490,
             var {
               ref: t
             } = e, n = N(e, ["ref"]);
-            return (0, r.jsx)(c.h21, C(T({
+            return (0, r.jsx)(c.h21, C(S({
               id: Y,
               ref: e => {
                 var n;

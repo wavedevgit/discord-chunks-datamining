@@ -38,10 +38,10 @@ let y = null,
   O = false,
   v = false,
   I = {},
-  S = (e, t) => {
+  T = (e, t) => {
     I[e] = t
   },
-  T = e => {
+  S = e => {
     delete I[e]
   },
   A = () => {
@@ -65,9 +65,9 @@ let y = null,
       if (o.Z.isFocused() && h.error("Main window is reported as focused when it should not be!"), n || r) {
         y = n ? "OverlayGameFocused" : "OverlayWindowFocused";
         let r = t.requestAnimationFrame(t => {
-          T(r), e(t)
+          S(r), e(t)
         });
-        return S(r, e), r
+        return T(r, e), r
       }
     } catch (e) {
       h.error("RAF redirect failed, falling back to original. Cause:", e), (0, l.D1)(e, d.default.getOverlayMethod(f.Z.getTargetPID()))
@@ -91,14 +91,14 @@ function P() {
   }), A()
 }
 
-function w(e) {
+function D(e) {
   if (e === v) return;
   let t = !e && v;
   v = e, t && P()
 }
-class D extends Chunk147913.Z {
+class w extends Chunk147913.Z {
   _initialize() {
-    w(R())
+    D(R())
   }
   _terminate() {
     window.requestAnimationFrame = m
@@ -119,7 +119,7 @@ class D extends Chunk147913.Z {
     }
   }
   handleWindowStateChage() {
-    w(R())
+    D(R())
   }
   handleOverlayRenderDebugMode(e) {
     let {
@@ -137,4 +137,4 @@ class D extends Chunk147913.Z {
     })
   }
 }
-let x = new D
+let x = new w

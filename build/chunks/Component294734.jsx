@@ -2,7 +2,7 @@
 /** chunk id: 294734, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -80,7 +80,7 @@ function P(e) {
     message: n,
     snapshot: a,
     index: s
-  } = e, l = i.useMemo(() => (0, S.Z)(n, a), [n, a]), c = h.RS.useSetting(), u = h.NA.useSetting(), E = c && u, b = (0, o.e7)([g.Z], () => g.Z.isDeveloper), y = (0, d.A)((null != (t = l.editedTimestamp) ? t : l.timestamp).valueOf()), {
+  } = e, l = i.useMemo(() => (0, T.Z)(n, a), [n, a]), c = h.RS.useSetting(), u = h.NA.useSetting(), E = c && u, b = (0, o.e7)([g.Z], () => g.Z.isDeveloper), y = (0, d.A)((null != (t = l.editedTimestamp) ? t : l.timestamp).valueOf()), {
     content: O,
     hasSpoilerEmbeds: v
   } = (0, _.Z)(l, {
@@ -92,7 +92,7 @@ function P(e) {
     allowLinks: true,
     allowDevLinks: b,
     previewLinkTarget: true
-  }), I = (0, o.e7)([m.Z], () => m.Z.getChannel(n.channel_id)), T = h.jU.useSetting();
+  }), I = (0, o.e7)([m.Z], () => m.Z.getChannel(n.channel_id)), S = h.jU.useSetting();
   return null == I ? null : (0, r.jsxs)("div", {
     className: C.container,
     children: [(0, r.jsx)("div", {
@@ -102,12 +102,12 @@ function P(e) {
       children: [(0, r.jsx)(N, {}), (0, r.jsx)(f.ZP, {
         message: l,
         content: O,
-        compact: T
+        compact: S
       }), (0, p.Z)({
         channelMessageProps: {
           message: l,
           channel: I,
-          compact: T
+          compact: S
         },
         hasSpoilerEmbeds: v,
         isInteracting: false,
@@ -122,7 +122,7 @@ function P(e) {
   }, s)
 }
 
-function w(e) {
+function D(e) {
   let {
     message: t
   } = e;

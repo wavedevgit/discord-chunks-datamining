@@ -26,13 +26,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk589826 = require("./589826.js");
 let I = Chunk647438.lazy(() => require.e("89792").then(require.bind(require, 711635)));
 
-function S(e) {
+function T(e) {
   let t = (b.TC.indexOf(e) + 1) % b.TC.length,
     n = b.TC[t];
   (0, u.C)(n, d.Ir.VOICE_MESSAGE)
 }
 
-function T(e) {
+function S(e) {
   let {
     played: t,
     duration: n,
@@ -87,8 +87,8 @@ let N = Chunk647438.memo(function(e) {
       onVolumeShow: N,
       onVolumeHide: R,
       onPlay: P,
-      onPause: w,
-      onError: D,
+      onPause: D,
+      onError: w,
       playbackCacheKey: x
     } = e,
     L = i.useRef(null),
@@ -133,8 +133,8 @@ let N = Chunk647438.memo(function(e) {
       let e = L.current;
       if (null == e) return;
       let t = e.error;
-      null == D || D(t)
-    }, [D]),
+      null == w || w(t)
+    }, [w]),
     eu = i.useCallback(e => {
       let t = (0, g.A)(e, 1);
       H(0 === t), ee(t), null == _ || _(t)
@@ -159,7 +159,7 @@ let N = Chunk647438.memo(function(e) {
     em = {
       played: q,
       currentTime: G,
-      onPause: w,
+      onPause: D,
       onPlay: P
     },
     eg = i.useRef(em);
@@ -261,13 +261,13 @@ let N = Chunk647438.memo(function(e) {
       onDrag: ep,
       onDragStart: ef,
       onDragEnd: e_
-    }), (0, r.jsx)(T, {
+    }), (0, r.jsx)(S, {
       played: k,
       currentTime: G,
       duration: Z
     }), (0, r.jsx)(l.P3F, {
       className: v.playbackRateContainer,
-      onClick: () => S(j),
+      onClick: () => T(j),
       "aria-label": ey,
       children: (0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",

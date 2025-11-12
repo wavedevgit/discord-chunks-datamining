@@ -38,28 +38,28 @@ let g = (e, t, n, r) => {
         isTrial: O,
         isOrbCheckout: v,
         isEmbeddedIAP: I,
-        renewalInvoice: S,
-        paymentSourceType: T,
+        renewalInvoice: T,
+        paymentSourceType: S,
         hide: A,
         purchaseType: C,
         productLine: N,
         proratedAmount: R,
         basePrice: P,
-        currentSubscription: w,
-        skuId: D,
+        currentSubscription: D,
+        skuId: w,
         applicationName: x
       } = e,
       L = (0, i.e7)([o.Z], () => o.Z.inReverseTrial());
     if (A) return null;
     let M = null == e.planGroup ? [] : e.planGroup;
-    if (null != S) {
-      let e = c.ZP.getIntervalForInvoice(S);
-      t = e.intervalType, n = e.intervalCount, s = (0, u.og)((0, u.T4)(S.total, S.currency), t, n), E = (0, u.og)((0, u.T4)(S.subtotal, S.currency), t, n)
+    if (null != T) {
+      let e = c.ZP.getIntervalForInvoice(T);
+      t = e.intervalType, n = e.intervalCount, s = (0, u.og)((0, u.T4)(T.total, T.currency), t, n), E = (0, u.og)((0, u.T4)(T.subtotal, T.currency), t, n)
     } else null != b && (t = b.interval, n = b.intervalCount);
     let j = (0, a.K)({
         purchaseType: C || f.GZQ.SUBSCRIPTION,
         plan: b,
-        premiumSubscription: null == w ? null : w,
+        premiumSubscription: null == D ? null : D,
         productLine: N,
         isGift: !!y,
         planGroup: M,
@@ -81,9 +81,9 @@ let g = (e, t, n, r) => {
         paidURL: f.EYA.PAID_TERMS
       });
       let e = "";
-      e = D === _.Vt.ORB_PROFILE_BADGE ? h.intl.string(h.t.APcKRo) : D === _.Vt.FRACTIONAL_PREMIUM ? h.intl.string(h.t.FhJ74j) : h.intl.string(h.t["Sxed/G"]), Array.isArray(G) ? G = [...G, " ".concat(e)] : G += " ".concat(e)
+      e = w === _.Vt.ORB_PROFILE_BADGE ? h.intl.string(h.t.APcKRo) : w === _.Vt.FRACTIONAL_PREMIUM ? h.intl.string(h.t.FhJ74j) : h.intl.string(h.t["Sxed/G"]), Array.isArray(G) ? G = [...G, " ".concat(e)] : G += " ".concat(e)
     } else if (I)
-      if (null != s && (null == S ? true : S.subscriptionPeriodEnd) != null) G = h.intl.format(h.t["2VPTay"], {
+      if (null != s && (null == T ? true : T.subscriptionPeriodEnd) != null) G = h.intl.format(h.t["2VPTay"], {
         subtotalRate: E
       });
       else switch (t) {
@@ -139,18 +139,18 @@ let g = (e, t, n, r) => {
           productLine: N,
           purchaseType: f.GZQ.SUBSCRIPTION,
           plan: b,
-          premiumSubscription: null == w ? null : w,
+          premiumSubscription: null == D ? null : D,
           isGift: false,
           planGroup: M,
           isPrepaidPaymentSource: false
         });
-        O || (e = g(P, t, n, b.id)), G = (null == w ? true : w.isPausedAllowsResumeButNotUpdates) ? h.intl.format(h.t.B6oNwB, {
+        O || (e = g(P, t, n, b.id)), G = (null == D ? true : D.isPausedAllowsResumeButNotUpdates) ? h.intl.format(h.t.B6oNwB, {
           primaryText: r,
           rate: e,
           paidURL: f.EYA.PAID_TERMS,
           contactLink: f.EYA.CONTACT,
           helpdeskArticle: l.Z.getArticleURL(f.BhN.BILLING)
-        }) : null != w && (0, d.GY)(w, b.id, M) ? h.intl.format(h.t.LyBQUW, {
+        }) : null != D && (0, d.GY)(D, b.id, M) ? h.intl.format(h.t.LyBQUW, {
           primaryText: r,
           rate: e,
           paidURL: f.EYA.PAID_TERMS,
@@ -191,10 +191,10 @@ let g = (e, t, n, r) => {
         })]
       }), "" !== G && (0, r.jsx)("div", {
         children: G
-      }), T === f.HeQ.PAYSAFE_CARD && (0, r.jsx)("div", {
+      }), S === f.HeQ.PAYSAFE_CARD && (0, r.jsx)("div", {
         className: m.paymentSourceNoticeCopy,
         children: h.intl.string(h.t.kj9VLI)
-      }), T === f.HeQ.SOFORT && (0, r.jsxs)("div", {
+      }), S === f.HeQ.SOFORT && (0, r.jsxs)("div", {
         className: m.paymentSourceNoticeCopy,
         children: [h.intl.string(h.t["UYy1/h"]), " "]
       })]

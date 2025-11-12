@@ -165,7 +165,7 @@ function J(e) {
     containerStyle: p,
     look: h
   } = e, m = i.useCallback(e => {
-    if ((0, D.BQ)(t)) {
+    if ((0, w.BQ)(t)) {
       let n = t instanceof A.ZP ? t : A.ZP.createFromServer(t);
       (0, u.vq)(e, e => (0, r.jsx)(j.Z, Y({
         application: n
@@ -174,17 +174,17 @@ function J(e) {
   }, [t]), {
     name: g,
     description: E
-  } = i.useMemo(() => (0, D.sl)(t, {
+  } = i.useMemo(() => (0, w.sl)(t, {
     fakeAppIconURL: F
   }), [t]), {
     trackItemImpressionRef: b
   } = (0, M.Z)({
     applicationId: t.id,
-    applicationFlags: (0, D.BQ)(t) ? t.flags : true,
+    applicationFlags: (0, w.BQ)(t) ? t.flags : true,
     sectionName: s,
     sectionPosition: l,
     sectionOverallPosition: d,
-    promotionalLabel: (0, D.dF)(t)
+    promotionalLabel: (0, w.dF)(t)
   }), y = i.useMemo(() => {
     let e = _ ? Z.containerDisabled : Z.container;
     return o()(e, {
@@ -220,7 +220,7 @@ function $(e) {
   } = e, {
     name: s,
     iconURL: c
-  } = i.useMemo(() => (0, D.sl)(t, {
+  } = i.useMemo(() => (0, w.sl)(t, {
     fakeAppIconURL: F
   }), [t]);
   return (0, r.jsx)(l.u, {
@@ -251,15 +251,15 @@ function ee(e) {
     iconURL: m,
     name: g,
     description: E
-  } = i.useMemo(() => (0, D.sl)(t, {
+  } = i.useMemo(() => (0, w.sl)(t, {
     fakeAppIconURL: F
-  }), [t]), b = i.useMemo(() => null == E ? null : (0, L.ae)(E), [E]), y = (0, I.ZP)(m, ""), [v, S] = i.useState(false), T = i.useCallback(() => {
-    true === l && S(true)
-  }, [l]), A = h || (0, D.lf)(t), C = "large_banner" === n || "medium_banner" === n, R = i.useCallback(() => S(false), []), P = (0, s.e7)([p.Z, N.Z], () => p.Z.inDevModeForApplication(t.id) || N.Z.inTestModeForApplication(t.id), [t.id]), w = (0, D.WA)(t);
+  }), [t]), b = i.useMemo(() => null == E ? null : (0, L.ae)(E), [E]), y = (0, I.ZP)(m, ""), [v, T] = i.useState(false), S = i.useCallback(() => {
+    true === l && T(true)
+  }, [l]), A = h || (0, w.lf)(t), C = "large_banner" === n || "medium_banner" === n, R = i.useCallback(() => T(false), []), P = (0, s.e7)([p.Z, N.Z], () => p.Z.inDevModeForApplication(t.id) || N.Z.inTestModeForApplication(t.id), [t.id]), D = (0, w.WA)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [C ? (0, r.jsxs)("div", {
-      onMouseEnter: T,
-      onFocus: T,
+      onMouseEnter: S,
+      onFocus: S,
       onMouseLeave: R,
       onBlur: R,
       className: o()(Z.bannerImageContainer, {
@@ -275,7 +275,7 @@ function ee(e) {
           disableFadeIn: u,
           overrideImageUrl: _
         })
-      }), P || A || w !== d.ww.NONE ? (0, r.jsxs)("div", {
+      }), P || A || D !== d.ww.NONE ? (0, r.jsxs)("div", {
         className: Z.bannerUpperRightContainer,
         children: [A && (0, r.jsx)("div", {
           className: Z.promotedLabelWrapperBanner,
@@ -284,8 +284,8 @@ function ee(e) {
             color: "header-primary",
             children: B.intl.string(B.t["/eVltv"])
           })
-        }), P && (0, r.jsx)(et, {}), w !== d.ww.NONE && (0, r.jsx)(O.Z, {
-          labelType: w
+        }), P && (0, r.jsx)(et, {}), D !== d.ww.NONE && (0, r.jsx)(O.Z, {
+          labelType: D
         })]
       }) : null, (0, r.jsx)("div", {
         className: Z.bannerImageChildContainer,
@@ -351,8 +351,8 @@ function en(e) {
     application: t
   } = e, n = C.default.getCurrentUser();
   if (!(null == n ? true : n.isStaff()) && !(null == n ? true : n.isStaffPersonal())) return null;
-  let i = (0, D.yJ)(t);
-  if (null == i || !(0, D.BQ)(t)) return null;
+  let i = (0, w.yJ)(t);
+  if (null == i || !(0, w.BQ)(t)) return null;
   let a = (0, E.fD)(t, i);
   return null == a ? null : (0, r.jsx)(l.u, {
     __unsupportedReactNodeAsText: a,
@@ -374,13 +374,13 @@ function er(e) {
   } = e;
   if (null != s) return (0, r.jsx)("img", {
     src: s,
-    alt: (0, D.BQ)(t) ? t.name : "",
+    alt: (0, w.BQ)(t) ? t.name : "",
     className: o()(Z.bannerImage, {
       [Z.disableFadeIn]: a
     })
   });
-  if ((0, D.BQ)(t)) {
-    if ((0, D.ye)(t)) return (0, r.jsx)(ei, {
+  if ((0, w.BQ)(t)) {
+    if ((0, w.ye)(t)) return (0, r.jsx)(ei, {
       application: t,
       showVideo: i,
       disableFadeIn: a
@@ -407,7 +407,7 @@ function ei(e) {
     size: 600,
     names: ["embedded_cover"]
   }), l = i.useMemo(() => {
-    let e = (0, D.yJ)(t);
+    let e = (0, w.yJ)(t);
     return null != e && null != e.activity_preview_video_asset_id ? (0, g.Z)(t.id, e.activity_preview_video_asset_id) : null
   }, [t]), [c, u] = i.useState(n);
   i.useEffect(() => {
@@ -424,7 +424,7 @@ function ei(e) {
           [Z.videoFadeOut]: !n
         }),
         onAnimationEnd: () => n ? null : u(false),
-        children: (0, r.jsx)(S.Z, {
+        children: (0, r.jsx)(T.Z, {
           src: l,
           mediaLayoutType: G.hV.MOSAIC,
           loop: true,
@@ -498,8 +498,8 @@ function es(e) {
         application_id: t.id,
         section_name: n,
         search_results_position: r,
-        source: w.Z.entrypoint(),
-        promotional_label: (0, D.dF)(t),
+        source: D.Z.entrypoint(),
+        promotional_label: (0, w.dF)(t),
         location: s,
         query: a,
         num_friends_who_play: c.length
@@ -531,9 +531,9 @@ function ec(e) {
     isOneClickCTA: l,
     fetchesApplication: u = true
   } = e, d = z(e, ["context", "application", "location", "sectionName", "isOneClickCTA", "fetchesApplication"]);
-  if (!(0, D.BQ)(n)) throw Error("PerformActivityActionAppCard was passed the Built-in App, which is not supported.");
+  if (!(0, w.BQ)(n)) throw Error("PerformActivityActionAppCard was passed the Built-in App, which is not supported.");
   let f = i.useId(),
-    [_, p, m] = (0, s.Wu)([h.ZP, T.Z], () => [h.ZP.isLaunchingActivity(), h.ZP.getLaunchState(n.id, "channel" === t.type ? t.channel.id : true), T.Z.isLaunchingFrame(n.id)]),
+    [_, p, m] = (0, s.Wu)([h.ZP, S.Z], () => [h.ZP.isLaunchingActivity(), h.ZP.getLaunchState(n.id, "channel" === t.type ? t.channel.id : true), S.Z.isLaunchingFrame(n.id)]),
     g = null != p && p.isLaunching && p.componentId === f || m,
     {
       onActivityItemSelected: b,

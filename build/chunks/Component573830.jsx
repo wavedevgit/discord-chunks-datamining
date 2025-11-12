@@ -2,7 +2,7 @@
 /** chunk id: 573830, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => w
+  J: () => D
 }), require("./388685.js"), require("./583741.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -60,8 +60,8 @@ let y = "M4.10585 5.3837L5.37864 4.11091L11.884 10.61632L10.6112 11.88912L4.1058
   O = "M10.61632 4.11091L11.88912 5.3837L5.3837 11.88912L4.11091 10.61632L10.61632 4.11091Z",
   v = "M5.25333 8.80104L5.25333 7.17346L10.85336 7.17346L10.85336 8.80104L5.25333 8.80104Z",
   I = "M10.84656 7.17346L10.84656 8.80104L5.24954 8.80104L5.24954 7.17346L10.84656 7.17346Z",
-  S = "M6.31649 11.88304L5.0437 10.61032L11.44792 4.20604L12.72072 5.47883L6.31649 11.88304Z",
-  T = "M3.26914 8.87224L4.54194 7.59943L7.5588 10.61632L6.28601 11.88912L3.26914 8.87224Z",
+  T = "M6.31649 11.88304L5.0437 10.61032L11.44792 4.20604L12.72072 5.47883L6.31649 11.88304Z",
+  S = "M3.26914 8.87224L4.54194 7.59943L7.5588 10.61632L6.28601 11.88912L3.26914 8.87224Z",
   A = [0, .1, .4, .6, .9, 1],
   C = [0, .1, .9, 1],
   N = [0, .1, .2, .5, .7, 1],
@@ -82,14 +82,14 @@ function P(e, t, n) {
         fill: i,
         d: e.to({
           range: C,
-          output: [y, v, v, S],
+          output: [y, v, v, T],
           extrapolate: "clamp"
         })
       }), (0, r.jsx)(s.animated.path, {
         fill: i,
         d: e.to({
           range: C,
-          output: [O, I, I, T],
+          output: [O, I, I, S],
           extrapolate: "clamp"
         })
       })]
@@ -97,7 +97,7 @@ function P(e, t, n) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     checked: t,
     disabled: n,
@@ -107,10 +107,10 @@ function w(e) {
     hasIcon: O = false,
     describedBy: v,
     labelledBy: I,
-    innerRef: S
+    innerRef: T
   } = e, {
-    reducedMotion: T
-  } = i.useContext(f.S), w = i.useRef(null), D = i.useRef(null), x = null != S ? S : D, L = (0, l.l)({
+    reducedMotion: S
+  } = i.useContext(f.S), D = i.useRef(null), w = i.useRef(null), x = null != T ? T : w, L = (0, l.l)({
     isSelected: t,
     onChange: E,
     isDisabled: n
@@ -133,7 +133,7 @@ function w(e) {
     opacity: et
   } = (0, u.q)({
     config: {
-      duration: T.enabled ? 200 : 300
+      duration: S.enabled ? 200 : 300
     },
     opacity: n ? .5 : 1,
     state: k ? t ? R[R.length - 2] : N[1] : +!!t
@@ -148,14 +148,14 @@ function w(e) {
     })
   };
   return (0, r.jsx)(_.tE, b(g({}, y), {
-    ringTarget: w,
+    ringTarget: D,
     focusTarget: x,
     within: true,
     offset: false,
     children: (0, r.jsxs)("label", b(g({}, j), {
       className: h.container,
       children: [(0, r.jsx)(s.animated.div, b(g({}, U), {
-        ref: w,
+        ref: D,
         className: h.switchIndicator,
         "data-size": "md",
         "data-mana-component": "switch",
@@ -178,7 +178,7 @@ function w(e) {
           viewBox: "0 0 24 24",
           preserveAspectRatio: "xMidYMin meet",
           style: {
-            left: ee.to(T.enabled ? {
+            left: ee.to(S.enabled ? {
               range: C,
               output: [1, 1, 24, 24]
             } : {
@@ -192,11 +192,11 @@ function w(e) {
               range: C,
               output: [J, J, $, $]
             }),
-            x: T.enabled ? 4 : en([4, 4, 2.5, 1, 2.5, 4]),
-            y: T.enabled ? 4 : en([4, 7, 2.5, 7, 2.5, 4]),
-            width: T.enabled ? 16 : en([16, 16, 19, 22, 19, 16]),
-            height: T.enabled ? 16 : en([16, 10, 19, 10, 19, 16]),
-            rx: T.enabled ? 8 : en([8, 5, 9.5, 5, 9.5, 8])
+            x: S.enabled ? 4 : en([4, 4, 2.5, 1, 2.5, 4]),
+            y: S.enabled ? 4 : en([4, 7, 2.5, 7, 2.5, 4]),
+            width: S.enabled ? 16 : en([16, 16, 19, 22, 19, 16]),
+            height: S.enabled ? 16 : en([16, 10, 19, 10, 19, 16]),
+            rx: S.enabled ? 8 : en([8, 5, 9.5, 5, 9.5, 8])
           }), O && P(ee, X, Q)]
         })
       })), (0, r.jsx)(p.n, {

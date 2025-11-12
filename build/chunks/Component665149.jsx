@@ -4,7 +4,7 @@
 require.d(exports, {
   JO: () => v,
   ZP: () => C,
-  iz: () => S
+  iz: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -131,15 +131,15 @@ let y = 24,
       onClick: O,
       onContextMenu: v,
       tooltip: I = null,
-      tooltipColor: S,
-      tooltipPosition: T = "bottom",
+      tooltipColor: T,
+      tooltipPosition: S = "bottom",
       tooltipAlign: A,
       tooltipDisabled: C,
       tooltipSpacing: N,
       hideOnClick: R = true,
       role: P,
-      "aria-label": w,
-      "aria-hidden": D,
+      "aria-label": D,
+      "aria-hidden": w,
       "aria-checked": x,
       "aria-expanded": L,
       "aria-haspopup": M,
@@ -155,12 +155,12 @@ let y = 24,
       className: o()(i, _.icon),
       colorClass: null != m ? m : true,
       color: null != p ? p : "currentColor"
-    }, k)), G = w;
+    }, k)), G = D;
     return null == G && "string" == typeof I && (G = I), (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
       text: I,
-      color: S,
-      position: T,
+      color: T,
+      position: S,
       align: A,
       hideOnClick: R,
       shouldShow: !C,
@@ -170,7 +170,7 @@ let y = 24,
           onMouseEnter: g,
           onMouseLeave: y,
           onFocus: I,
-          onBlur: S
+          onBlur: T
         } = e;
         return null == O ? (0, r.jsx)("div", {
           ref: t,
@@ -186,11 +186,11 @@ let y = 24,
             className: o()(i, _.icon),
             colorClass: null != m ? m : true,
             color: null != p ? p : "currentColor",
-            "aria-hidden": D,
+            "aria-hidden": w,
             onMouseEnter: g,
             onMouseLeave: y,
             onFocus: I,
-            onBlur: S
+            onBlur: T
           }, k))
         }) : (0, r.jsxs)(c.P3F, {
           innerRef: t,
@@ -200,7 +200,7 @@ let y = 24,
           onMouseEnter: g,
           onMouseLeave: y,
           onFocus: I,
-          onBlur: S,
+          onBlur: T,
           className: o()(n, {
             [_.iconWrapper]: true,
             [_.clickable]: !l && null != O,
@@ -209,7 +209,7 @@ let y = 24,
           }),
           role: P,
           "aria-label": G,
-          "aria-hidden": D,
+          "aria-hidden": w,
           "aria-checked": x,
           "aria-haspopup": M,
           "aria-expanded": L,
@@ -236,7 +236,7 @@ let y = 24,
       ref: t
     }))
   }),
-  S = e => {
+  T = e => {
     let {
       className: t
     } = e;
@@ -245,7 +245,7 @@ let y = 24,
     })
   };
 
-function T(e) {
+function S(e) {
   let {
     direction: t = "right",
     className: n
@@ -308,5 +308,5 @@ let A = e => {
     })
   })
 };
-A.Icon = v, A.ChannelIcon = I, A.Title = O, A.Divider = S, A.Caret = T;
+A.Icon = v, A.ChannelIcon = I, A.Title = O, A.Divider = T, A.Caret = S;
 let C = A

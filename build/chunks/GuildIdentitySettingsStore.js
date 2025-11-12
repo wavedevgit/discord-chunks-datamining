@@ -25,11 +25,11 @@ function I(e) {
   _ = e.guild, O = b.QZA.OPEN, v = {}, p = e.source
 }
 
-function S() {
+function T() {
   O = Chunk981631.QZA.CLOSED, v = {}, p = true
 }
 
-function T() {
+function S() {
   O = Chunk981631.QZA.SUBMITTING, v = {}
 }
 
@@ -61,14 +61,14 @@ function P(e) {
   t.type === m.Z.AVATAR_DECORATION ? i = t.value : t.type === m.Z.PROFILE_EFFECT ? o = t.value : t.type === m.Z.NAMEPLATE && (a = t.value)
 }
 
-function w(e) {
+function D(e) {
   let {
     banner: t
   } = e;
   s = t
 }
 
-function D(e) {
+function w(e) {
   let {
     bio: t
   } = e;
@@ -120,7 +120,7 @@ function B() {
 }
 
 function Z() {
-  k(), S()
+  k(), T()
 }
 class F extends(h = Chunk442837.ZP.Store) {
   getFormState() {
@@ -194,14 +194,14 @@ let V = new F(Chunk570140.Z, {
   GUILD_IDENTITY_SETTINGS_INIT: I,
   GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: Z,
   GUILD_IDENTITY_SETTINGS_SET_GUILD: A,
-  GUILD_IDENTITY_SETTINGS_SUBMIT: T,
+  GUILD_IDENTITY_SETTINGS_SUBMIT: S,
   GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: C,
   USER_PROFILE_UPDATE_FAILURE: N,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: R,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_COLLECTIBLES_ITEM: P,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES: j,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: w,
-  GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: D,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: D,
+  GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: w,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: x,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: L,
   GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: M,

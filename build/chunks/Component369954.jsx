@@ -2,7 +2,7 @@
 /** chunk id: 369954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => T
+  J: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -90,7 +90,7 @@ let v = e => {
       })]
     })
   },
-  S = () => {
+  T = () => {
     let e = (0, Chunk780985.cz)(),
       t = (0, Chunk780985.$r)(),
       {
@@ -127,11 +127,11 @@ let v = e => {
       })]
     })
   },
-  T = () => {
+  S = () => {
     let e = (0, Chunk981312.U)(),
       t = (0, Chunk631885.ZM)();
     return (0, Chunk277537.PO)("settings-controls") && 0 !== exports.length ? (0, Chunk951288.jsx)("div", {
       className: Chunk271650.container,
-      children: module ? (0, Chunk951288.jsx)(I, {}) : (0, Chunk951288.jsx)(S, {})
+      children: module ? (0, Chunk951288.jsx)(I, {}) : (0, Chunk951288.jsx)(T, {})
     }) : null
   }

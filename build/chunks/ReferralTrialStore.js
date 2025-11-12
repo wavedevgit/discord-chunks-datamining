@@ -32,13 +32,13 @@ let f = 5,
   O = null,
   v = [],
   I = false,
-  S = 0,
-  T = false,
+  T = 0,
+  S = false,
   A = false,
   C = null;
 
 function N() {
-  _ = null, p = new Set, m = false, g = new Set, E = new Set, b = new Map, y = 0, O = null, v = [], I = false, S = 0, T = false, A = false, C = null, h = new Map
+  _ = null, p = new Set, m = false, g = new Set, E = new Set, b = new Map, y = 0, O = null, v = [], I = false, T = 0, S = false, A = false, C = null, h = new Map
 }
 let R = () => true;
 
@@ -47,7 +47,7 @@ function P(e) {
   C = null, m = true
 }
 
-function w(e) {
+function D(e) {
   let {
     referrals_remaining: t,
     sent_user_ids: n,
@@ -55,14 +55,14 @@ function w(e) {
     recipient_status: i,
     has_eligible_friends: a
   } = e;
-  T = true === c.Z.getCurrentConfig({
+  S = true === c.Z.getCurrentConfig({
     location: "handleReferralsRemainingFetchSuccess"
   }).enabled || null == r && a, A = a, m = false, _ = t, p = new Set(n), C = r, h = i
 }
 
-function D(e) {
+function w(e) {
   let {} = e;
-  T = false, A = false, C = null, m = false, y += 1, O = Date.now() + 1e3 * Math.pow(2, y)
+  S = false, A = false, C = null, m = false, y += 1, O = Date.now() + 1e3 * Math.pow(2, y)
 }
 
 function x(e) {
@@ -133,7 +133,7 @@ function V(e) {
     users: t,
     nextIndex: n
   } = e;
-  I = false, v = t, S = n
+  I = false, v = t, T = n
 }
 
 function H() {
@@ -168,10 +168,10 @@ class Y extends(r = Chunk442837.ZP.Store) {
     return I
   }
   getNextIndexOfEligibleUsers() {
-    return S
+    return T
   }
   getIsEligibleToSendReferrals() {
-    return T
+    return S
   }
   getHasEligibleFriends() {
     return A
@@ -190,8 +190,8 @@ d(Y, "displayName", "ReferralTrialStore");
 let W = new Y(Chunk570140.Z, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: B,
   BILLING_REFERRALS_REMAINING_FETCH_START: P,
-  BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: w,
-  BILLING_REFERRALS_REMAINING_FETCH_FAIL: D,
+  BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: D,
+  BILLING_REFERRALS_REMAINING_FETCH_FAIL: w,
   BILLING_CREATE_REFERRAL_SUCCESS: x,
   CREATE_REFERRALS_SUCCESS: L,
   BILLING_REFERRAL_RESOLVE_SUCCESS: j,

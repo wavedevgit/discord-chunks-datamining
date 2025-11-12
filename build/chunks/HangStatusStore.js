@@ -4,7 +4,7 @@
 let r, i, a, o;
 require.d(exports, {
   Z: () => U,
-  o: () => T
+  o: () => S
 }), require("./388685.js"), require("./539854.js");
 var s, Chunk348327 = require("./348327.js"),
   c = require.n(Chunk348327),
@@ -53,12 +53,12 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = 6,
+let S = 6,
   A = 7,
   C = N();
 
@@ -103,7 +103,7 @@ function P(e) {
   }
 }
 
-function w(e) {
+function D(e) {
   let {
     status: t,
     emoji: n,
@@ -128,7 +128,7 @@ function w(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     applicationId: t,
     saveAsDefault: n
@@ -159,7 +159,7 @@ function L(e) {
     status: t,
     emoji: n
   };
-  return false === a && i.length < T ? (i.push(o), r = true) : a >= 0 && (i.splice(a, 1), r = true), !!r && (C.favoritedStatuses = i, true)
+  return false === a && i.length < S ? (i.push(o), r = true) : a >= 0 && (i.splice(a, 1), r = true), !!r && (C.favoritedStatuses = i, true)
 }
 
 function M() {
@@ -218,10 +218,10 @@ class k extends(s = Chunk442837.ZP.PersistedStore) {
 }
 O(k, "displayName", "HangStatusStore"), O(k, "persistKey", "HangStatusStore"), O(k, "migrations", [e => {
   if (null != e.currentDefaultStatus && null == e.currentDefaultStatus.gameActivityHangStatus) {
-    let t = S(v({}, e.currentDefaultStatus), {
+    let t = T(v({}, e.currentDefaultStatus), {
       gameActivityHangStatus: null
     });
-    return S(v({}, e), {
+    return T(v({}, e), {
       currentDefaultStatus: t
     })
   }
@@ -230,8 +230,8 @@ O(k, "displayName", "HangStatusStore"), O(k, "persistKey", "HangStatusStore"), O
 let U = new k(Chunk570140.Z, {
   LOGOUT: R,
   UPDATE_HANG_STATUS: P,
-  UPDATE_HANG_STATUS_CUSTOM: w,
-  UPDATE_HANG_STATUS_GAME_ACTIVITY: D,
+  UPDATE_HANG_STATUS_CUSTOM: D,
+  UPDATE_HANG_STATUS_GAME_ACTIVITY: w,
   DELETE_INVALID_HANG_STATUSES: j,
   CLEAR_HANG_STATUS: x,
   UPDATE_FAVORITE_HANG_STATUS: L,

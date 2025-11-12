@@ -33,18 +33,18 @@ async function O(e) {
       analyticsLocations: O,
       componentId: v,
       sectionName: I,
-      source: S,
-      inviterUserId: T,
+      source: T,
+      inviterUserId: S,
       customId: A,
       referrerId: C
     } = e,
     N = (0, h.Z)(),
     R = i.Z.getChannel(l),
     P = null == R ? true : R.getGuildId(),
-    w = null == P || "" === P,
-    D = o.default.getCurrentUser();
-  if (null == D) returnfalse;
-  if (null == R || w && !R.isPrivate() || null == l) return Promise.resolve(false);
+    D = null == P || "" === P,
+    w = o.default.getCurrentUser();
+  if (null == w) returnfalse;
+  if (null == R || D && !R.isPrivate() || null == l) return Promise.resolve(false);
   let x = u.ZP.getCurrentEmbeddedActivity();
   if ((null == x ? true : x.applicationId) != null && (t = r.Z.getApplication(null == x ? true : x.applicationId)), a.Z.getVoiceChannelId() === l && null != x && x.applicationId === n && (0, _.p)(x.location) === a.Z.getVoiceChannelId()) return (0, E.Z)(P, x.location), Promise.resolve(true);
   let L = await (0, p.Z)(n, l);
@@ -54,7 +54,7 @@ async function O(e) {
       channel: R,
       currentEmbeddedApplication: t,
       embeddedActivitiesManager: N,
-      user: D
+      user: w
     })) returnfalse;
   if (null != R) {
     let e = (0, m.Z)(R.id),
@@ -75,8 +75,8 @@ async function O(e) {
     locationObject: y,
     componentId: v,
     sectionName: I,
-    source: S,
-    inviterUserId: T,
+    source: T,
+    inviterUserId: S,
     customId: A,
     referrerId: C
   })

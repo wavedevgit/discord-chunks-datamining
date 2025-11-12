@@ -9,8 +9,8 @@ require.r(exports), require.d(exports, {
   ReferenceWithTimezone: () => Chunk86465.X2,
   Weekday: () => Chunk894186.OG,
   casual: () => y,
-  createCasualConfiguration: () => S,
-  createConfiguration: () => T,
+  createCasualConfiguration: () => T,
+  createConfiguration: () => S,
   parse: () => v,
   parseDate: () => I,
   strict: () => O
@@ -32,8 +32,8 @@ var Chunk170799 = require("./170799.js"),
   Chunk894186 = require("./894186.js"),
   Chunk659124 = require("./659124.js"),
   Chunk291618 = require("./291618.js");
-let y = new Chunk201129.k(S()),
-  O = new Chunk201129.k(T(true));
+let y = new Chunk201129.k(T()),
+  O = new Chunk201129.k(S(true));
 
 function v(e, t, n) {
   return y.parse(e, t, n)
@@ -43,12 +43,12 @@ function I(e, t, n) {
   return y.parseDate(e, t, n)
 }
 
-function S() {
-  let e = T(false);
+function T() {
+  let e = S(false);
   return module.parsers.unshift(new Chunk890346.Z), module.parsers.unshift(new Chunk583044.Z), module.parsers.unshift(new Chunk445957.Z), module.parsers.unshift(new Chunk959809.Z), module.parsers.unshift(new Chunk291618.Z), module
 }
 
-function T(e = true) {
+function S(e = true) {
   return (0, u.l)({
     parsers: [new E.Z(true), new r.Z, new i.Z, new _.Z, new o.Z(e), new s.Z],
     refiners: [new c.Z, new l.Z]

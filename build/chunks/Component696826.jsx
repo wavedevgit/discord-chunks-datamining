@@ -2,7 +2,7 @@
 /** chunk id: 696826, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dk: () => S,
+  Dk: () => T,
   QF: () => O,
   Sk: () => Chunk981631.Skl,
   W5: () => N,
@@ -106,7 +106,7 @@ function I(e, t, n) {
   return "".concat(.5625 * e + n, "px ").concat(.75 * e + t, "px")
 }
 
-function S(e) {
+function T(e) {
   let {
     size: t,
     status: n,
@@ -176,7 +176,7 @@ function S(e) {
   }
 }
 
-function T(e) {
+function S(e) {
   return "-".concat(.216506 * e, ",-").concat(.25 * e, " ").concat(.216506 * e, ",0 -").concat(.216506 * e, ",").concat(.25 * e)
 }
 
@@ -217,7 +217,7 @@ function A(e, t, n) {
       ry: p,
       fill: "black"
     }), (0, r.jsx)(o.animated.polygon, {
-      points: T(t),
+      points: S(t),
       fill: "black",
       transform: h,
       style: {

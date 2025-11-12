@@ -89,7 +89,7 @@ var m = {
     }
     return null
   },
-  S = function(e) {
+  T = function(e) {
     var t = I(e, m.TITLE),
       n = I(e, "titleTemplate");
     if (Array.isArray(t) && (t = t.join("")), n && t) return n.replace(/%s/g, function() {
@@ -98,7 +98,7 @@ var m = {
     var r = I(e, "defaultTitle");
     return t || r || true
   },
-  T = function(e) {
+  S = function(e) {
     return I(e, "onChangeClientState") || function() {}
   },
   A = function(e, t) {
@@ -162,7 +162,7 @@ var m = {
   P = function(e) {
     return Array.isArray(e) ? e.join("") : e
   },
-  w = function(e, t) {
+  D = function(e, t) {
     return Array.isArray(e) ? e.reduce(function(e, n) {
       return ! function(e, t) {
         for (var n = Object.keys(e), r = 0; r < n.length; r += 1)
@@ -176,7 +176,7 @@ var m = {
       default: e
     }
   },
-  D = function(e, t) {
+  w = function(e, t) {
     var n;
     return f({}, e, ((n = {})[t] = true, n))
   },
@@ -280,9 +280,9 @@ var m = {
         var t = e.linkTags,
           n = e.scriptTags,
           r = e.encode,
-          i = w(e.metaTags, b),
-          a = w(t, g),
-          o = w(n, E);
+          i = D(e.metaTags, b),
+          a = D(t, g),
+          o = D(n, E);
         return {
           priorityMethods: {
             toComponent: function() {
@@ -473,10 +473,10 @@ var W = function(e, t) {
           linkTags: N(m.LINK, ["rel", "href"], e),
           metaTags: N(m.META, ["name", "charset", "http-equiv", "property", "itemprop"], e),
           noscriptTags: N(m.NOSCRIPT, ["innerHTML"], e),
-          onChangeClientState: T(e),
+          onChangeClientState: S(e),
           scriptTags: N(m.SCRIPT, ["src", "innerHTML"], e),
           styleTags: N(m.STYLE, ["cssText"], e),
-          title: S(e),
+          title: T(e),
           titleAttributes: A("titleAttributes", e),
           prioritizeSeoTags: R(e, "prioritizeSeoTags")
         };
@@ -503,7 +503,7 @@ var Q = ["children"],
     _(t, e);
     var n = t.prototype;
     return n.shouldComponentUpdate = function(e) {
-      return !s()(D(this.props, "helmetData"), D(e, "helmetData"))
+      return !s()(w(this.props, "helmetData"), w(e, "helmetData"))
     }, n.mapNestedChildrenToProps = function(e, t) {
       if (!t) return null;
       switch (e.type) {

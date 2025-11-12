@@ -2,7 +2,7 @@
 /** chunk id: 709093, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -72,7 +72,7 @@ function I(e) {
     })]
   })
 }
-let S = function(e) {
+let T = function(e) {
   var t, n, i;
   let {
     hideCloseButton: u = false,
@@ -80,16 +80,16 @@ let S = function(e) {
     onClose: g,
     upgradeToPremiumType: E,
     isEligibleForTrial: b = false,
-    showTrialBadge: S = false,
-    showDiscountBadge: T = false
+    showTrialBadge: T = false,
+    showDiscountBadge: S = false
   } = e, A = E === _.PremiumTypes.TIER_2, C = (0, c.Fv)(b), N = (0, d.N)(), R = null == N || null == (t = N.discount) ? true : t.amount, P = A ? O : y, {
-    step: w,
-    breadcrumbs: D,
+    step: D,
+    breadcrumbs: w,
     startedPaymentFlowWithPaymentSourcesRef: x,
     isDisplayingWowMomentConfirmation: L
   } = (0, s.JL)();
-  if (null == D || 0 === D.length) return null;
-  let M = D.flatMap(e => {
+  if (null == w || 0 === w.length) return null;
+  let M = w.flatMap(e => {
     let t = e.useBreadcrumbLabel(b),
       n = e.sectionHeaderText;
     return null != t ? {
@@ -103,10 +103,10 @@ let S = function(e) {
       let t = e.id !== l.h8.ADD_PAYMENT_STEPS,
         n = e.id === l.h8.ADD_PAYMENT_STEPS && !x.current;
       return !b || b && (t || n)
-    })).find(e => e.id === w),
+    })).find(e => e.id === D),
     k = null != (i = null == j || null == (n = j.sectionHeaderText) ? true : n.call(j)) ? i : null == j ? true : j.label,
-    U = null != k && null != w,
-    G = C && U && w === l.h8.REVIEW,
+    U = null != k && null != D,
+    G = C && U && D === l.h8.REVIEW,
     B = A ? "nitro-pink" : "nitro-green",
     Z = A ? p.intl.string(p.t.lG6a5x) : p.intl.string(p.t["t9uG/o"]);
   return L ? (0, r.jsx)("div", {
@@ -142,12 +142,12 @@ let S = function(e) {
           children: Z
         })
       })]
-    }), (S || T) && (0, r.jsx)(f.Z, {
+    }), (T || S) && (0, r.jsx)(f.Z, {
       discountAmount: R
     }), U && (0, r.jsx)(v, {
       isOneStepCheckout: C,
       headerText: k,
-      step: w,
+      step: D,
       filteredBreadcrumbs: M
     }), G && (0, r.jsx)("div", {
       className: h.bodyGradientContainer,

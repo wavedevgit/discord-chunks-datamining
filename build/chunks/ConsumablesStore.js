@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -46,10 +46,10 @@ let u = new Map,
   I = e => {
     f.delete(e.skuId), p.set(e.skuId, e.entitlement), null != e.numPotions && h.set(e.skuId, e.numPotions)
   },
-  S = e => {
+  T = e => {
     _.add(e.skuId), f.delete(e.skuId)
   },
-  T = e => {
+  S = e => {
     f.add(e.skuId)
   },
   A = e => {
@@ -105,15 +105,15 @@ class P extends(i = Chunk442837.ZP.Store) {
   }
 }
 c(P, "displayName", "ConsumablesStore");
-let w = new P(Chunk570140.Z, {
+let D = new P(Chunk570140.Z, {
   CONSUMABLES_PRICE_FETCH_STARTED: E,
   CONSUMABLES_PRICE_FETCH_SUCCEEDED: b,
   CONSUMABLES_PRICE_FETCH_FAILED: y,
   CONSUMABLES_CLEAR_ERROR: O,
   CONSUMABLES_ENTITLEMENT_FETCH_COMPLETED: I,
   SKU_PURCHASE_SUCCESS: v,
-  CONSUMABLES_ENTITLEMENT_FETCH_FAILED: S,
-  CONSUMABLES_ENTITLEMENT_FETCH_STARTED: T,
+  CONSUMABLES_ENTITLEMENT_FETCH_FAILED: T,
+  CONSUMABLES_ENTITLEMENT_FETCH_STARTED: S,
   SET_PREVIOUS_GO_LIVE_SETTINGS: A,
   CLEAR_CONSUMED_ENTITLEMENT: C,
   POTIONS_TRIGGER_MESSAGE_CONFETTI: N,

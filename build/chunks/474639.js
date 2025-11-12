@@ -2,7 +2,7 @@
 /** chunk id: 474639, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./35282.js"), require("./388685.js");
 var Chunk46973 = require("./46973.js"),
   Chunk570140 = require("./570140.js"),
@@ -26,7 +26,7 @@ var Chunk46973 = require("./46973.js"),
   Chunk981631 = require("./981631.js"),
   Chunk70722 = require("./70722.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class T extends Chunk147913.Z {
+class S extends Chunk147913.Z {
   handleRTCConnectionState(e) {
     let {
       context: t,
@@ -214,7 +214,7 @@ class T extends Chunk147913.Z {
   handleMessageCreate(e) {}
   handleRemoteClipTrigger(e) {}
   constructor(...e) {
-    super(...e), S(this, "actions", {
+    super(...e), T(this, "actions", {
       POST_CONNECTION_OPEN: e => this.handlePostConnectionOpen(),
       RTC_CONNECTION_FLAGS: e => this.handleRTCConnectionFlags(e),
       RTC_CONNECTION_USERS_MERGED: e => this.handleRTCUsersUpdate(e),

@@ -51,7 +51,7 @@ function j(e) {
   } = e, {
     name: E,
     bot: O
-  } = n = (0, P.O)(n), v = null == O ? true : O.id, I = (0, p.ye)(n), T = S.ZP.getApplicationIconURL({
+  } = n = (0, P.O)(n), v = null == O ? true : O.id, I = (0, p.ye)(n), S = T.ZP.getApplicationIconURL({
     id: n.id,
     icon: n.icon,
     bot: O
@@ -59,7 +59,7 @@ function j(e) {
     staticBannerSrc: N,
     videoBannerSrc: x,
     bannerAspectRatio: M
-  } = (0, w.E)(n), j = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
+  } = (0, D.E)(n), j = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
     analyticsLocations: G
   } = (0, f.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: B,
@@ -72,7 +72,7 @@ function j(e) {
     },
     applicationId: n.id,
     botUserId: null == O ? true : O.id
-  }), W = null != v && I && Y, K = V && I, z = (0, D.G)(n), q = (0, D.z)(n), X = i.useMemo(() => {
+  }), W = null != v && I && Y, K = V && I, z = (0, w.G)(n), q = (0, w.z)(n), X = i.useMemo(() => {
     let e = [];
     return I ? (K && e.push({
       label: null == Z ? L.intl.string(L.t.RscU7I) : F ? L.intl.string(L.t.DPfdsq) : L.intl.string(L.t.sqe0hj),
@@ -113,7 +113,7 @@ function j(e) {
     videoBannerSrc: x,
     onClickBanner: z,
     bannerAspectRatio: M,
-    iconSrc: T,
+    iconSrc: S,
     info: Q,
     actions: X,
     onClickContent: z,
@@ -134,7 +134,7 @@ function k(e) {
   var t, n, o;
   let {
     app: c
-  } = e, u = (0, T.Eb)({
+  } = e, u = (0, S.Eb)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig

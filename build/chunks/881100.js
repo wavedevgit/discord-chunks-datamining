@@ -91,13 +91,13 @@ let G = (e, t, n) => (0, i.wj)(e) ? t : n,
       customAppIcons: {
         title: _.intl.string(_.t.OuItFi),
         description: _.intl.string(_.t.mPyrE6),
-        imageSource: w,
+        imageSource: D,
         imageClassName: t.customAppIconImage
       },
       emoji: {
         title: _.intl.string(_.t["R2IV/Q"]),
         description: _.intl.string(_.t.R5Xag2),
-        imageSource: D,
+        imageSource: w,
         imageClassName: t.emojiImage
       },
       guildProfile: {
@@ -134,25 +134,25 @@ let G = (e, t, n) => (0, i.wj)(e) ? t : n,
       soundboard: {
         title: _.intl.string(_.t["lGcW+c"]),
         description: _.intl.string(_.t["/fDyO+"]),
-        imageSource: G(i, I, S),
+        imageSource: G(i, I, T),
         imageClassName: t.soundboardImage
       },
       stickers: {
         title: _.intl.string(_.t["1c+xwT"]),
         description: _.intl.string(_.t.hJG8ZN),
-        imageSource: G(i, T, j),
+        imageSource: G(i, S, j),
         imageClassName: t.stickersImage
       },
       stickersBurst: {
         title: _.intl.string(_.t.tzdIwI),
         description: _.intl.string(_.t.hJG8ZN),
-        imageSource: G(i, T, j),
+        imageSource: G(i, S, j),
         imageClassName: t.stickersImage
       },
       stickersPremiumPerk: {
         title: _.intl.string(_.t.tzdIwI),
         description: _.intl.string(_.t.FXlU24),
-        imageSource: G(i, T, j),
+        imageSource: G(i, S, j),
         imageClassName: t.stickersImage
       },
       streaming: {

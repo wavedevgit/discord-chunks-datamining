@@ -89,17 +89,17 @@ function I(e) {
   let {
     application: t
   } = e;
-  T(t)
-}
-
-function S(e) {
-  let {
-    application: t
-  } = e;
-  T(t)
+  S(t)
 }
 
 function T(e) {
+  let {
+    application: t
+  } = e;
+  S(t)
+}
+
+function S(e) {
   b(o.ZP.createFromServer(e))
 }
 
@@ -157,7 +157,7 @@ function P(e) {
   for (let e of t) b(o.ZP.createFromServer(e))
 }
 
-function w(e) {
+function D(e) {
   let {
     userProfile: t
   } = e, {
@@ -170,7 +170,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     botUserId: t
   } = e, n = g.botUserIdToAppUsage[t];
@@ -352,7 +352,7 @@ let K = new W(Chunk570140.Z, {
   LOGOUT: y,
   OVERLAY_INITIALIZE: O,
   APPLICATION_FETCH: v,
-  APPLICATION_FETCH_SUCCESS: S,
+  APPLICATION_FETCH_SUCCESS: T,
   APPLICATION_FETCH_FAIL: C,
   APPLICATIONS_FETCH: N,
   APPLICATIONS_FETCH_SUCCESS: P,
@@ -369,8 +369,8 @@ let K = new W(Chunk570140.Z, {
   LIBRARY_FETCH_SUCCESS: R,
   STORE_LISTING_FETCH_SUCCESS: B,
   LOAD_MESSAGES_SUCCESS: Z,
-  USER_PROFILE_FETCH_SUCCESS: w,
-  APP_DM_OPEN: D,
+  USER_PROFILE_FETCH_SUCCESS: D,
+  APP_DM_OPEN: w,
   USER_AUTHORIZED_APPS_UPDATE: H,
   LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: Y,
   OAUTH2_TOKEN_CREATE: V

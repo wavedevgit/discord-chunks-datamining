@@ -91,13 +91,13 @@ function I(e) {
       rows: R = 3,
       inputRef: P
     } = e,
-    w = b(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "inputRef"]);
+    D = b(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "inputRef"]);
   let {
-    fieldProps: D,
+    fieldProps: w,
     props: x
-  } = (0, s.XF_)(w), {
+  } = (0, s.XF_)(D), {
     disabled: L
-  } = D, M = (0, d.U)("UserSettingsDesignSystems"), j = (0, u.m)({
+  } = w, M = (0, d.U)("UserSettingsDesignSystems"), j = (0, u.m)({
     validateOn: "change",
     error: y,
     value: n,
@@ -118,14 +118,14 @@ function I(e) {
     value: n,
     maxLength: N && null != g ? g : true
   }) : null;
-  return (0, r.jsx)(s.gNt, E(m({}, D), {
+  return (0, r.jsx)(s.gNt, E(m({}, w), {
     trailingContent: G,
     errorMessage: j.hasError && null != (t = j.errorMessage) ? t : true,
     children: (0, r.jsxs)(s.UPk, {
       validation: j,
       disabled: L,
       children: [(0, r.jsx)(s.tEY, {
-        children: (0, r.jsx)(S, E(m({
+        children: (0, r.jsx)(T, E(m({
           autosize: f,
           className: o()(_.textArea, p.scrollbarDefault),
           style: {
@@ -144,7 +144,7 @@ function I(e) {
           ref: P
         }))
       }), M ? null : (0, r.jsxs)(r.Fragment, {
-        children: [C ? (0, r.jsx)(T, {
+        children: [C ? (0, r.jsx)(S, {
           value: n,
           maxLength: g,
           hasError: j.hasError
@@ -157,7 +157,7 @@ function I(e) {
   }))
 }
 
-function S(e) {
+function T(e) {
   var {
     "aria-labelledby": t,
     autosize: n
@@ -174,7 +174,7 @@ function S(e) {
   }))
 }
 
-function T(e) {
+function S(e) {
   var t;
   let {
     value: n,

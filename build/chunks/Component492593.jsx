@@ -84,8 +84,8 @@ let O = function(e) {
     childrenRepliedMessage: O,
     childrenExecutedCommand: v,
     childrenHeader: I,
-    childrenSystemMessage: S,
-    childrenButtons: T,
+    childrenSystemMessage: T,
+    childrenButtons: S,
     childrenMessageContent: A,
     childrenAccessories: C,
     messageRef: N,
@@ -96,8 +96,8 @@ let O = function(e) {
       }
     },
     hasThread: P,
-    isSystemMessage: w,
-    hasReply: D,
+    isSystemMessage: D,
+    hasReply: w,
     author: x,
     onMouseEnter: L,
     onMouseLeave: M
@@ -131,8 +131,8 @@ let O = function(e) {
             [p.cozy]: !n,
             [p.zalgo]: h,
             [p.hasThread]: P,
-            [p.isSystemMessage]: w,
-            [p.hasReply]: D
+            [p.isSystemMessage]: D,
+            [p.hasReply]: w
           }),
           ref: N
         }, j), {
@@ -141,10 +141,10 @@ let O = function(e) {
           onMouseLeave: F,
           children: [O, v, (0, r.jsxs)("div", {
             className: p.contents,
-            children: [S, I, null == S && A]
-          }), C, null != T ? (0, r.jsx)("div", {
+            children: [T, I, null == T && A]
+          }), C, null != S ? (0, r.jsx)("div", {
             className: p.buttonContainer,
-            children: T
+            children: S
           }) : null]
         }))
       }))

@@ -60,10 +60,10 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = () => [Chunk388032.intl.string(Chunk388032.t["EgWTY+"]), Chunk388032.intl.string(Chunk388032.t.umBn5f), Chunk388032.intl.string(Chunk388032.t.dG1wD1), Chunk388032.intl.string(Chunk388032.t.SesI4S), Chunk388032.intl.string(Chunk388032.t.RnMLvl)],
-  T = () => {
+let T = () => [Chunk388032.intl.string(Chunk388032.t["EgWTY+"]), Chunk388032.intl.string(Chunk388032.t.umBn5f), Chunk388032.intl.string(Chunk388032.t.dG1wD1), Chunk388032.intl.string(Chunk388032.t.SesI4S), Chunk388032.intl.string(Chunk388032.t.RnMLvl)],
+  S = () => {
     var e;
-    return null != (e = l().sample(S())) ? module : Chunk388032.intl.string(Chunk388032.t["EgWTY+"])
+    return null != (e = l().sample(T())) ? module : Chunk388032.intl.string(Chunk388032.t["EgWTY+"])
   },
   A = (e, t) => {
     let [n, r] = (0, _.US)([c.z.HALLOWEEN_APP_ICONS_TRICK_ICON_WEB_BADGE]), [i, a] = (0, _.US)([c.z.HALLOWEEN_APP_ICONS_TREAT_ICON_WEB_BADGE]);
@@ -79,7 +79,7 @@ function C(e) {
     tabIndex: l,
     children: c,
     locked: _ = false
-  } = e, [h, g] = i.useState((0, m.aW)(t).name), E = t === p.Ru.PIRATE, [y, v] = A(t, s), S = i.useCallback(() => {
+  } = e, [h, g] = i.useState((0, m.aW)(t).name), E = t === p.Ru.PIRATE, [y, v] = A(t, s), T = i.useCallback(() => {
     s || (y && v(), null == a || a(t))
   }, [s, y, v, a, t]), C = (0, u.jm)({
     label: h,
@@ -87,7 +87,7 @@ function C(e) {
   });
   return (0, r.jsx)(d.aML, {
     text: h,
-    onTooltipShow: () => E && g(T()),
+    onTooltipShow: () => E && g(S()),
     children: e => (0, r.jsxs)("div", {
       className: b.appIconSelectionContainer,
       children: [(0, r.jsx)(d.P3F, I(O({}, e, C), {
@@ -95,7 +95,7 @@ function C(e) {
         className: o()(b.appIconSelection, {
           [b.selected]: s
         }, n),
-        onClick: S,
+        onClick: T,
         children: c
       })), s && (0, r.jsx)(f.oK, {}), y && (0, r.jsx)("div", {
         className: b.redCircle

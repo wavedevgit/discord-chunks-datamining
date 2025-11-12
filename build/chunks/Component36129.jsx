@@ -37,11 +37,11 @@ let A = e => e.map(e => "#".concat(e)),
       setAll: i
     } = (0, b.Ig)();
     return (0, O.b)("Share Client Theme Widget") && true !== n ? (0, r.jsxs)("div", {
-      className: T.container,
+      className: S.container,
       children: [(0, r.jsx)(R, {
         message: t
       }), (0, r.jsx)(u.zxk, {
-        text: S.intl.string(S.t.SKNnqq),
+        text: T.intl.string(T.t.SKNnqq),
         fullWidth: true,
         variant: "primary",
         onClick: () => {
@@ -59,7 +59,7 @@ let A = e => e.map(e => "#".concat(e)),
   N = (e, t, n) => e.split(" ").map((e, a) => "__USERNAME__" !== e ? (0, r.jsxs)(i.Fragment, {
     children: [e, " "]
   }, a) : (0, r.jsxs)("span", {
-    className: T.avatarContainer,
+    className: S.avatarContainer,
     children: [(0, r.jsx)(c.qE, {
       "aria-label": n,
       src: t.getAvatarURL(null, 20),
@@ -88,24 +88,24 @@ let A = e => e.map(e => "#".concat(e)),
       return true === n ? "" : (0, E.yz)(A(n.colors), null != (e = n.gradient_angle) ? e : 0)
     }, [n]);
     return true === n ? null : (0, r.jsxs)("div", {
-      className: T.themePreviewContainer,
+      className: S.themePreviewContainer,
       ref: p,
       children: [(0, r.jsx)("div", {
-        className: T.colorPreview,
+        className: S.colorPreview,
         style: {
           background: "".concat(m)
         }
       }), (0, r.jsxs)("div", {
-        className: T.sharedByContainer,
+        className: S.sharedByContainer,
         children: [(0, r.jsxs)(d.Heading, {
           variant: "heading-md/semibold",
-          className: T.sharedTitle,
-          children: [S.intl.string(I.default.KSBBpC), " ", (0, r.jsx)(l.SrA, {})]
+          className: S.sharedTitle,
+          children: [T.intl.string(I.default.KSBBpC), " ", (0, r.jsx)(l.SrA, {})]
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          className: T.sharedBy,
-          children: N("".concat(S.intl.format(I.default.fQPSEf, {
+          className: S.sharedBy,
+          children: N("".concat(T.intl.format(I.default.fQPSEf, {
             username: "__USERNAME__"
           })), t.author, c.nick)
         })]

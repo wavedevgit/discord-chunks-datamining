@@ -10,7 +10,7 @@ require.d(exports, {
   fD: () => h,
   mG: () => y,
   pU: () => f,
-  r4: () => T
+  r4: () => S
 }), require("./35282.js"), require("./853839.js"), require("./570086.js"), require("./479048.js"), require("./413496.js"), require("./433524.js"), require("./388685.js");
 var Chunk973361 = require("./973361.js"),
   Chunk729594 = require("./729594.js"),
@@ -89,15 +89,15 @@ function O(e) {
 }
 let v = "s",
   I = new Set(["canary.discord.com", "ptb.discord.com", "discord.com", "canary.discordapp.com", "ptb.discordapp.com", "discordapp.com"]),
-  S = new Set(["/__development/link", "/__development/link/"]);
+  T = new Set(["/__development/link", "/__development/link/"]);
 
-function T(e) {
+function S(e) {
   if (y(e)) return {
     payload: null,
     url: e
   };
   let t = s.Z.safeParseWithQuery(e);
-  if (null == t || !I.has(t.hostname) || !(v in t.query) || !S.has(t.pathname)) return null;
+  if (null == t || !I.has(t.hostname) || !(v in t.query) || !T.has(t.pathname)) return null;
   for (let e in t.query) e !== v && delete t.query[e];
   return {
     payload: t.query[v],

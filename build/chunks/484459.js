@@ -26,38 +26,38 @@ function h(e, t) {
     withMutualFriends: O = false,
     dispatchWait: v = false,
     waitForRefetch: I = true,
-    guildId: S,
-    channelId: T,
+    guildId: T,
+    channelId: S,
     joinRequestId: A,
     abortSignal: C
   } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-  if ("" === e || f.Z.isFetchingProfile(e, S)) return Promise.resolve();
+  if ("" === e || f.Z.isFetchingProfile(e, T)) return Promise.resolve();
   let N = f.Z.getUserProfile(e),
     R = Date.now() - (null != (g = null == N ? true : N.fetchEndedAt) ? g : 0) >= p;
   if (((null == N || null == (n = N.fetchError) ? true : n.status) === 404 || (null == N || null == (h = N.fetchError) ? true : h.status) === 429) && !R) return Promise.resolve();
-  let P = f.Z.getGuildMemberProfile(e, S),
-    w = f.Z.getMutualGuilds(e),
-    D = f.Z.getMutualFriends(e),
+  let P = f.Z.getGuildMemberProfile(e, T),
+    D = f.Z.getMutualGuilds(e),
+    w = f.Z.getMutualFriends(e),
     x = f.Z.getMutualFriendsCount(e),
-    L = null == D && O,
+    L = null == w && O,
     M = null == x && y,
-    j = null == w && b || L || M,
-    k = null == S ? null == N : null == P,
+    j = null == D && b || L || M,
+    k = null == T ? null == N : null == P,
     U = !k && (R || j);
   if (!k && !U) return Promise.resolve();
-  let G = null != S ? null == P ? true : P.profileEffect : null == N ? true : N.profileEffect;
+  let G = null != T ? null == P ? true : P.profileEffect : null == N ? true : N.profileEffect;
   null != G && ((0, s.c)("maybeFetchUserProfile") ? (0, o.lW)(G.skuId) : (0, c.t)()), null != t && (0, a.vM)(t);
   let B = {
     type: E,
     withMutualGuilds: b,
     withMutualFriends: O,
     withMutualFriendsCount: y,
-    guildId: S,
+    guildId: T,
     joinRequestId: A,
     abortSignal: C,
-    connectionsRoleId: null == S || null == (m = (0, l.Ur)({
-      guildMember: d.ZP.getMember(S, e),
-      channel: u.Z.getChannel(T)
+    connectionsRoleId: null == T || null == (m = (0, l.Ur)({
+      guildMember: d.ZP.getMember(T, e),
+      channel: u.Z.getChannel(S)
     })) ? true : m.id
   };
   if (v) return r.Z.wait(() => (0, i.In)(e, B, _.Z)), Promise.resolve();

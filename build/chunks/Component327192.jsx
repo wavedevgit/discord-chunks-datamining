@@ -112,8 +112,8 @@ let z = e => {
     className: V.integrationWrapper,
     children: [(0, r.jsxs)("div", {
       className: V.integration,
-      children: [(0, r.jsx)(T.Z, {
-        size: T.Z.Sizes.SMALL,
+      children: [(0, r.jsx)(S.Z, {
+        size: S.Z.Sizes.SMALL,
         guild: a.guild,
         className: V.guildIcon
       }), (0, r.jsxs)("div", {
@@ -146,9 +146,9 @@ function q(e) {
     account: n,
     theme: a,
     locale: l
-  } = e, [c, p] = i.useState(n.friendSync), [m, g] = i.useState(n.visibility), [E, S] = i.useState(n.metadataVisibility), [T, C] = i.useState(n.showActivity), [N, R] = i.useState(null), [P, D] = i.useState(null), [j, Z] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), X = b.Z.get(q);
+  } = e, [c, p] = i.useState(n.friendSync), [m, g] = i.useState(n.visibility), [E, T] = i.useState(n.metadataVisibility), [S, C] = i.useState(n.showActivity), [N, R] = i.useState(null), [P, w] = i.useState(null), [j, Z] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), X = b.Z.get(q);
   i.useEffect(() => {
-    p(n.friendSync), g(n.visibility), S(n.metadataVisibility), C(n.showActivity)
+    p(n.friendSync), g(n.visibility), T(n.metadataVisibility), C(n.showActivity)
   }, [n]);
   let Q = {
       inProgressVisibility: N,
@@ -263,7 +263,7 @@ function q(e) {
         variant: "text-xs/normal",
         className: V.connectionMetadataUpsellDescription,
         children: F.intl.format(F.t.Up2ni7, {
-          helpdeskUrl: w.Z.getArticleURL(G.BhN.CONNECTION_DETAILS)
+          helpdeskUrl: D.Z.getArticleURL(G.BhN.CONNECTION_DETAILS)
         })
       }, "label")], s = F.intl.string(F.t["LVh3/5"]);
     return o && (s = F.intl.string(F.t.i4jeWR)), i.push((0, r.jsx)("div", {
@@ -300,7 +300,7 @@ function q(e) {
       label: F.intl.format(F.t["6u6J0q"], {
         platform: e.name
       }),
-      checked: T,
+      checked: S,
       onChange: eu
     })), (null == (t = b.Z.get(n.type)) ? true : t.hasMetadata) === true && (o = (0, r.jsx)(_.rsf, {
       label: F.intl.string(F.t.FYKGsL),
@@ -390,13 +390,13 @@ function q(e) {
       verified: t
     } = n, r = +!!e;
     if (e && !t) {
-      D(r), (0, v.Z)({
+      w(r), (0, v.Z)({
         platformType: n.type,
         location: "User Settings"
       });
       return
     }
-    S(r), h.Z.setMetadataVisibility(n.type, n.id, r)
+    T(r), h.Z.setMetadataVisibility(n.type, n.id, r)
   }
 
   function ec(e) {
@@ -414,7 +414,7 @@ function q(e) {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
     } = J.current;
-    null != e && (g(e), h.Z.setVisibility(n.type, n.id, e), R(null)), null != t && (S(t), h.Z.setMetadataVisibility(n.type, n.id, t), D(null))
+    null != e && (g(e), h.Z.setVisibility(n.type, n.id, e), R(null)), null != t && (T(t), h.Z.setMetadataVisibility(n.type, n.id, t), w(null))
   }, [n]);
   let ed = (0, x.wy)("ConnectedAccount");
   return (0, r.jsxs)("div", {

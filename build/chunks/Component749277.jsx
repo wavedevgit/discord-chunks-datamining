@@ -54,7 +54,7 @@ function P(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,8 +65,8 @@ function w(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -74,7 +74,7 @@ let x = e => {
   let {
     dismissibleContent: t,
     noticeType: R
-  } = e, w = (0, i.e7)([b.default], () => b.default.getCurrentUser()), x = (0, i.e7)([E.Z], () => E.Z.getGuildId());
+  } = e, D = (0, i.e7)([b.default], () => b.default.getCurrentUser()), x = (0, i.e7)([E.Z], () => E.Z.getGuildId());
   return (0, r.jsx)(v.ZP, {
     contentTypes: [t],
     groupName: I.R.NOTICE_BAR,
@@ -122,7 +122,7 @@ let x = e => {
               className: N.platformIcon
             }), C.intl.string(C.t["5NUVHH"]), (0, r.jsx)(o.NoS, {
               onClick: () => (0, u.Z)({
-                platformType: S.ABu.SPOTIFY,
+                platformType: T.ABu.SPOTIFY,
                 location: "Notice Bar"
               }),
               noticeType: R,
@@ -137,10 +137,10 @@ let x = e => {
             }), (0, r.jsx)("img", {
               alt: "",
               className: N.platformIcon,
-              src: l.Z.get(S.ABu.PLAYSTATION).icon.whiteSVG
+              src: l.Z.get(T.ABu.PLAYSTATION).icon.whiteSVG
             }), C.intl.string(C.t.WHWgoY), (0, r.jsx)(o.EyT, {
               onClick: () => (0, u.Z)({
-                platformType: S.ABu.PLAYSTATION,
+                platformType: T.ABu.PLAYSTATION,
                 location: "Notice Bar"
               }),
               children: C.intl.string(C.t.S0W8Z5)
@@ -166,7 +166,7 @@ let x = e => {
                     let {
                       RegisterWebAuthnCredentialModal: e
                     } = await Promise.resolve().then(n.bind(n, 778764));
-                    return n => (0, r.jsx)(e, D(P({}, n), {
+                    return n => (0, r.jsx)(e, w(P({}, n), {
                       ticket: t,
                       challenge: i,
                       showAccountSettingsButton: true
@@ -192,17 +192,17 @@ let x = e => {
               className: N.premiumAction,
               noticeType: R,
               onClick: () => {
-                O.default.track(S.rMx.PREMIUM_PROMOTION_OPENED, {
-                  location_section: S.jXE.NOTIFICATION_BAR,
-                  location_object: S.qAy.BUTTON_CTA
+                O.default.track(T.rMx.PREMIUM_PROMOTION_OPENED, {
+                  location_section: T.jXE.NOTIFICATION_BAR,
+                  location_object: T.qAy.BUTTON_CTA
                 }), (0, g.openUserSettings)(m.n.NITRO_PANEL, {
-                  section: S.oAB.PREMIUM
+                  section: T.oAB.PREMIUM
                 })
               },
               children: C.intl.string(C.t["8JC5e/"])
             }), (0, r.jsx)(o.RyX, {
               onClick: () => {
-                i(I.L.UNKNOWN), (0, s.mB)(S.xW$.PREMIUM_PROMO_DISMISSED, true)
+                i(I.L.UNKNOWN), (0, s.mB)(T.xW$.PREMIUM_PROMO_DISMISSED, true)
               },
               noticeType: R
             })]
@@ -227,7 +227,7 @@ let x = e => {
               noticeType: R,
               onClick: () => {
                 i(I.L.UNKNOWN), (0, g.openUserSettings)(m.n.NITRO_PANEL, {
-                  section: S.oAB.PREMIUM
+                  section: T.oAB.PREMIUM
                 })
               },
               children: C.intl.string(C.t.pyYSiO)
@@ -242,7 +242,7 @@ let x = e => {
             }), C.intl.string(C.t["7490vQ"]), (0, r.jsx)(o.NoS, {
               noticeType: R,
               onClick: () => {
-                (0, h.uL)(S.Z5c.SETTINGS("account"))
+                (0, h.uL)(T.Z5c.SETTINGS("account"))
               },
               children: C.intl.string(C.t.Vm8akB)
             })]
@@ -257,7 +257,7 @@ let x = e => {
             }), C.intl.string(C.t.pJ4hJE), (0, r.jsx)(o.NoS, {
               noticeType: R,
               onClick: () => {
-                i(I.L.PRIMARY), (0, h.uL)(1 === E.length ? S.Z5c.GUILD_SETTINGS(E[0], "role-subscriptions") : S.Z5c.PICK_GUILD_SETTINGS("role-subscriptions", true, "server-subscriptions-finish-setting-up"))
+                i(I.L.PRIMARY), (0, h.uL)(1 === E.length ? T.Z5c.GUILD_SETTINGS(E[0], "role-subscriptions") : T.Z5c.PICK_GUILD_SETTINGS("role-subscriptions", true, "server-subscriptions-finish-setting-up"))
               },
               children: C.intl.string(C.t["74s74F"])
             })]
@@ -269,7 +269,7 @@ let x = e => {
               onClick: () => i(I.L.UNKNOWN),
               noticeType: R
             }), C.intl.format(C.t.pdYZyg, {}), (0, r.jsx)(o.NoS, {
-              onClick: () => (0, _.Z)(T.Kq.NOTICE),
+              onClick: () => (0, _.Z)(S.Kq.NOTICE),
               noticeType: R,
               children: C.intl.string(C.t.LhlgY9)
             })]
@@ -285,7 +285,7 @@ let x = e => {
                 (0, f.Z)({
                   subscriptionTier: A.Si.TIER_2,
                   analyticsLocations: [c.Z.CHECKOUT_RECOVERY_NAGBAR],
-                  analyticsLocation: S.Sbl.CHECKOUT_RECOVERY_NAGBAR,
+                  analyticsLocation: T.Sbl.CHECKOUT_RECOVERY_NAGBAR,
                   onClose: () => i(I.L.UNKNOWN)
                 })
               },
@@ -298,12 +298,12 @@ let x = e => {
             color: o.DM8.BRAND,
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(I.L.USER_DISMISS),
-              noticeType: S.kVF.REPORT_TO_MOD_EXIT_SURVEY
+              noticeType: T.kVF.REPORT_TO_MOD_EXIT_SURVEY
             }), C.intl.string(C.t.sw22sn), (0, r.jsx)(o.NoS, {
               onClick: () => {
-                window.open("https://discord.sjc1.qualtrics.com/jfe/form/SV_9zz09xNJ3Qvyb78?user_id=".concat(null == w ? true : w.id, "&guild_id=").concat(x), "_blank"), i(I.L.TAKE_ACTION)
+                window.open("https://discord.sjc1.qualtrics.com/jfe/form/SV_9zz09xNJ3Qvyb78?user_id=".concat(null == D ? true : D.id, "&guild_id=").concat(x), "_blank"), i(I.L.TAKE_ACTION)
               },
-              noticeType: S.kVF.REPORT_TO_MOD_EXIT_SURVEY,
+              noticeType: T.kVF.REPORT_TO_MOD_EXIT_SURVEY,
               children: C.intl.string(C.t.rulMOX)
             })]
           })

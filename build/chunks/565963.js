@@ -34,21 +34,21 @@ function a(e, t) {
     O = b + e.clientWidth,
     v = y + e.clientHeight,
     I = parseInt(d, 10) || 0,
-    S = parseInt(_, 10) || 0,
-    T = parseInt(f, 10) || 0,
+    T = parseInt(_, 10) || 0,
+    S = parseInt(f, 10) || 0,
     A = parseInt(p, 10) || 0,
     C = parseInt(h, 10) || 0,
     N = parseInt(g, 10) || 0,
     R = parseInt(m, 10) || 0,
     P = n - (parseInt(E, 10) || 0),
-    w = n + i + R,
-    D = r - C,
+    D = n + i + R,
+    w = r - C,
     x = r + a + N,
     L = s + parseInt(u, 10) + A,
-    M = O - T,
+    M = O - S,
     j = l + parseInt(c, 10) + I,
-    k = v - S;
-  (P > L || w < M) && (P <= s + A ? s = P - parseInt(u, 10) - A : w > O - T && (s += w - O + T)), (D > j || x < k) && (D <= y + I ? l = D - parseInt(c, 10) - I : x > v - S && (l += x - v + S)), e.scrollTo({
+    k = v - T;
+  (P > L || D < M) && (P <= s + A ? s = P - parseInt(u, 10) - A : D > O - S && (s += D - O + S)), (w > j || x < k) && (w <= y + I ? l = w - parseInt(c, 10) - I : x > v - T && (l += x - v + T)), e.scrollTo({
     left: s,
     top: l
   })

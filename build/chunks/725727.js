@@ -45,18 +45,18 @@ function g() {
         return n.id === e.promotion.id
       }) ? t : [...t, e])
     }, []),
-    S = Chunk74538.ZP.isPremiumExactly(exports, Chunk474936.PremiumTypes.TIER_2),
-    T = Chunk163684.g.useExperiment({
+    T = Chunk74538.ZP.isPremiumExactly(exports, Chunk474936.PremiumTypes.TIER_2),
+    S = Chunk163684.g.useExperiment({
       location: "useOutboundPromotions"
     }, {
       autoTrackExposure: false,
-      disable: S
-    }).enabled || S;
+      disable: T
+    }).enabled || T;
   Chunk647438.useEffect(() => {
     Chunk570140.Z.wait(() => {
-      T && (null == module || E) && Chunk748770.ZP.fetchActivePromotions()
+      S && (null == module || E) && Chunk748770.ZP.fetchActivePromotions()
     })
-  }, [module, T, E]), Chunk647438.useEffect(() => {
+  }, [module, S, E]), Chunk647438.useEffect(() => {
     Chunk570140.Z.wait(() => {
       (0, Chunk518638.t8)().then(e => {
         v(e), y(true)
@@ -79,7 +79,7 @@ function g() {
       return t
     }));
   return {
-    promotionsLoaded: b && (!T || null != module || E),
+    promotionsLoaded: b && (!S || null != module || E),
     activeOutboundPromotions: C,
     claimedEndedOutboundPromotions: O.filter(e => {
       let {

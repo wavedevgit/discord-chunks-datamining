@@ -73,13 +73,13 @@ function v(e) {
 }
 let I = e => g.get(e);
 
-function S(e, {
+function T(e, {
   blocked: t
 } = {}) {
   let n = indexedDB.deleteDatabase(e);
   return t && (n.onblocked = e => t(e.oldVersion, e)), v(n).then(() => {})
 }
-let T = ["get", "getKey", "getAll", "getAllKeys", "count"],
+let S = ["get", "getKey", "getAll", "getAllKeys", "count"],
   A = ["put", "add", "delete", "clear"],
   C = new Map;
 
@@ -89,7 +89,7 @@ function N(e, t) {
   let n = t.replace(/FromIndex$/, ""),
     r = t !== n,
     i = A.includes(n);
-  if (!(n in (r ? IDBIndex : IDBObjectStore).prototype) || !i && !T.includes(n)) return;
+  if (!(n in (r ? IDBIndex : IDBObjectStore).prototype) || !i && !S.includes(n)) return;
   let a = async function(e, ...t) {
     let a = this.transaction(e, i ? "readwrite" : "readonly"),
       o = a.store;
@@ -104,14 +104,14 @@ b(e => ({
 }));
 let R = ["continue", "continuePrimaryKey", "advance"],
   P = {},
-  w = new WeakMap,
   D = new WeakMap,
+  w = new WeakMap,
   x = {
     get(e, t) {
       if (!R.includes(t)) return e[t];
       let n = P[t];
       return n || (n = P[t] = function(...e) {
-        w.set(this, D.get(this)[t](...e))
+        D.set(this, w.get(this)[t](...e))
       }), n
     }
   };
@@ -119,7 +119,7 @@ async function* L(...e) {
   let t = this;
   if (t instanceof IDBCursor || (t = await t.openCursor(...e)), !t) return;
   let n = new Proxy(t, x);
-  for (D.set(n, t), g.set(n, I(t)); t;) yield n, t = await (w.get(n) || t.continue()), w.delete(n)
+  for (w.set(n, t), g.set(n, I(t)); t;) yield n, t = await (D.get(n) || t.continue()), D.delete(n)
 }
 
 function M(e, t) {
@@ -411,7 +411,7 @@ let ep = (e, t) => {
       })
     }))
   };
-(async () => ec() && Promise.allSettled([S("replayStorage"), S("sprig.replay")]))();
+(async () => ec() && Promise.allSettled([T("replayStorage"), T("sprig.replay")]))();
 let ev = new class {
     openDB() {
       return function(e, t, {
@@ -452,7 +452,7 @@ let ev = new class {
     }
     async deleteDB() {
       try {
-        await S("sprigReplay")
+        await T("sprigReplay")
       } catch {}
     }
     async bulkAdd(e, t) {
@@ -554,26 +554,26 @@ let ev = new class {
     }
   },
   eI = [],
-  eS, eT, eA, eC, eN, eR, eP = [],
-  ew = false,
-  eD = 0,
+  eT, eS, eA, eC, eN, eR, eP = [],
+  eD = false,
+  ew = 0,
   ex = false,
   eL = false,
   eM = [],
   ej = false,
-  ek = () => ex && !ew && Date.now() <= eA,
+  ek = () => ex && !eD && Date.now() <= eA,
   eU = ({
     apiUrl: e,
     config: t,
     triggerSnapshot: n,
     forceInit: r = false
   }) => {
-    ex && !r || (l.a.isStorageAvailable ? (eP = [], eM.splice(0), eI.splice(0), eD = 0, eN = n, eT = e, eS = {
+    ex && !r || (l.a.isStorageAvailable ? (eP = [], eM.splice(0), eI.splice(0), ew = 0, eN = n, eS = e, eT = {
       responseGroupUuid: t.responseGroupUuid,
       surveyId: t.surveyId,
       userAgent: t.userAgent,
       sdkVersion: t.sdkVersion
-    }, eC = t.maxDurationSeconds, eH(), ex || (eR = window.setInterval(eF, 500)), ex = true) : ew = true)
+    }, eC = t.maxDurationSeconds, eH(), ex || (eR = window.setInterval(eF, 500)), ex = true) : eD = true)
   },
   eG = [_.Drag, _.Input, _.MediaInteraction, _.MouseInteraction, _.MouseMove, _.Scroll, _.Selection, _.TouchMove],
   eB = e => e.type === f.Custom || e.type === f.IncrementalSnapshot && eG.includes(e.data.source),
@@ -587,14 +587,14 @@ let ev = new class {
     if (eP.length || ej) return;
     ej = true;
     let e = await ez();
-    if (!module) return void(ew = true);
+    if (!module) return void(eD = true);
     eM.splice(0, module.length).forEach(t => t(e.shift())), module.forEach(e => eP.push(e)), ej = false
   }, eH = () => {
     let e = Chunk555256.a.getItem("sprig.alwayson.info");
     if (module) {
       Chunk555256.b.info("Read stored session state", module);
       let t = JSON.parse(module);
-      ew = exports.disabled, eS = exports.metadata, eP = exports.uploadUrls, eD = exports.currentIndex, eA = exports.expirationTimestamp, exports.pendingEventTimestamp && (Chunk555256.b.info(`Uploading with pending timestamp: ${exports.pendingEventTimestamp}`), eY(exports.pendingEventTimestamp))
+      eD = exports.disabled, eT = exports.metadata, eP = exports.uploadUrls, ew = exports.currentIndex, eA = exports.expirationTimestamp, exports.pendingEventTimestamp && (Chunk555256.b.info(`Uploading with pending timestamp: ${exports.pendingEventTimestamp}`), eY(exports.pendingEventTimestamp))
     } else eA = 1e3 * eC + Date.now()
   }, eY = async e => {
     let t = Date.now(),
@@ -609,7 +609,7 @@ let ev = new class {
       if (!n.ok) throw Error(`Error ${t}`);
       return n
     } catch {
-      ew = true
+      eD = true
     }
   }, eK = async (e, t) => {
     if (!ek() || !e) return;
@@ -629,13 +629,13 @@ let ev = new class {
     let {
       surveyId: e,
       responseGroupUuid: t
-    } = eS, n = {
+    } = eT, n = {
       responseGroupUuid: exports,
       surveyId: module,
-      index: eD + 1
+      index: ew + 1
     };
     Chunk555256.b.info("Fetching always-on upload urls", require);
-    let r = await eW(() => (0, Chunk555256.s)(`${eT}/sdk/1/replayUrls`, {
+    let r = await eW(() => (0, Chunk555256.s)(`${eS}/sdk/1/replayUrls`, {
       method: "POST",
       body: JSON.stringify(require),
       headers: (0, Chunk555256.g)(window.UserLeap)
@@ -655,15 +655,15 @@ let ev = new class {
   }, eX = e => {
     var t, n, r;
     let i = e.length ? e[e.length - 1].timestamp : Date.now(),
-      a = eD,
+      a = ew,
       o = (null == (n = null == (t = window.UserLeap) ? true : t.config) ? true : n.customMetadata) ?? (null == (r = window.__cfg) ? true : r.customMetadata);
-    eD++, e.push({
+    ew++, e.push({
       timestamp: i,
       type: f.Custom,
       data: {
         tag: "Sprig_Meta",
         payload: {
-          ...eS,
+          ...eT,
           index: a,
           visitorId: window.UserLeap.visitorId ?? "",
           timestamp: i,
@@ -685,10 +685,10 @@ window.addEventListener("beforeunload", async () => {
     let e;
     eI.length && (e = eI[0].timestamp);
     let t = {
-      disabled: ew,
-      metadata: eS,
+      disabled: eD,
+      metadata: eT,
       uploadUrls: eP,
-      currentIndex: eD,
+      currentIndex: ew,
       pendingEventTimestamp: module,
       expirationTimestamp: eA
     };
@@ -714,7 +714,7 @@ let eJ = async (e, t) => {
       r = l.P[t];
     r || (r = (0, l.r)(t)), r.report(e / 1e3)
   }
-}, e0 = 5e3, e1 = 6e4, e3 = 0, e2, e4 = false, e8 = [], e5 = e => {
+}, e0 = 5e3, e1 = 6e4, e2 = 0, e3, e4 = false, e8 = [], e5 = e => {
   var t, n, r, i;
   if (null != (t = e.event) && t.includes("Sprig_Scroll")) {
     let t = null == (i = null == (r = null == (n = JSON.parse(e.event)) ? true : n.data) ? true : r.payload) ? true : i.xPath;
@@ -752,14 +752,14 @@ let eJ = async (e, t) => {
 }, te = false, tt = async (e = false) => {
   if (!te) try {
     te = true;
-    let t = parseInt(e2 ?? "0");
+    let t = parseInt(e3 ?? "0");
     if (0 === t) return;
     let n = await ev.getPendingCaptures({
         beforePresent: true,
         isBeforeType: e
       }),
       r = await ev.openDB();
-    await Promise.all(n.map(async e => (await r.delete("pendingCaptures", e.uuid), tl(e.captureParams, e.canUpload)))), e2 = (t - n.length).toString(), l.a.setItem("sprig.pendingCount", e2)
+    await Promise.all(n.map(async e => (await r.delete("pendingCaptures", e.uuid), tl(e.captureParams, e.canUpload)))), e3 = (t - n.length).toString(), l.a.setItem("sprig.pendingCount", e3)
   } finally {
     te = false
   }
@@ -955,7 +955,7 @@ let eJ = async (e, t) => {
     }
   }, "Error in scheduling/capturing replay")
 }, tc = async () => {
-  parseInt(e2 ?? "0") || Chunk555256.a.removeItem("sprig.isCapturingHeatmap"), Chunk555256.a.getItem("sprig.teardownAfterCapture") && (em(), tu(), Chunk555256.a.removeItem("sprig.teardownAfterCapture"))
+  parseInt(e3 ?? "0") || Chunk555256.a.removeItem("sprig.isCapturingHeatmap"), Chunk555256.a.getItem("sprig.teardownAfterCapture") && (em(), tu(), Chunk555256.a.removeItem("sprig.teardownAfterCapture"))
 }, tu = async () => ef() ? Chunk555256.b.debug("ReplayDisabled-ClearData") : Promise.all([ev.deleteBySessionId("events", eu), ev.deleteBySessionId("pendingCaptures", eu)]).catch(e => {
   eb("Error clearing user replay data", e)
 }), td = async e => {
@@ -967,9 +967,9 @@ let eJ = async (e, t) => {
   if (null != i && i.length) return void l.b.info("PendingCaptureExists", {
     surveyId: n
   });
-  t && (eO(), l.a.setItem("sprig.isCapturingHeatmap", "true"), e3 = Date.now(), el.inactivityInterval || (el.inactivityInterval = window.setInterval(() => {
+  t && (eO(), l.a.setItem("sprig.isCapturingHeatmap", "true"), e2 = Date.now(), el.inactivityInterval || (el.inactivityInterval = window.setInterval(() => {
     var e;
-    e = e3, Date.now() - e >= 3e4 && ey(() => ev.markPendingHeatmapsReady(), "Error in heatmap inactivity")
+    e = e2, Date.now() - e >= 3e4 && ey(() => ev.markPendingHeatmapsReady(), "Error in heatmap inactivity")
   }, 1e3)));
   let a = {
     ...e,
@@ -979,7 +979,7 @@ let eJ = async (e, t) => {
   };
   "beforeAndAfter" === e.replayParams.replayDurationType && (a.replayParams.replayDurationSeconds *= 2), a.replayParams.replayDurationType = "before";
   let o = e.triggerTimestamp + 1e3 * e.replayParams.replayDurationSeconds;
-  a.triggerTimestamp = o, e2 = (parseInt(e2 ?? "0") + 1).toString(), l.a.setItem("sprig.pendingCount", e2), await (await ev.openDB()).add("pendingCaptures", {
+  a.triggerTimestamp = o, e3 = (parseInt(e3 ?? "0") + 1).toString(), l.a.setItem("sprig.pendingCount", e3), await (await ev.openDB()).add("pendingCaptures", {
     canUpload: false,
     captureParams: a,
     sessionId: eu,
@@ -1046,7 +1046,7 @@ let eJ = async (e, t) => {
         triggerSnapshot: () => {
           eO()
         }
-      }), e2 = l.a.getItem("sprig.pendingCount"), el.isRecording) return;
+      }), e3 = l.a.getItem("sprig.pendingCount"), el.isRecording) return;
     if (r && l.a.setItem("sprig.teardownAfterCapture", "true"), ef()) return l.b.debug("ReplayDisabled");
     if (await (async () => {
         var e;
@@ -1104,7 +1104,7 @@ let eJ = async (e, t) => {
         };
       el.stopRecording = s({
         emit: (e, t) => {
-          if (e.type === f.Custom && (e3 = Date.now()), ef() || e_()) return;
+          if (e.type === f.Custom && (e2 = Date.now()), ef() || e_()) return;
           if (t && e.type === f.Meta) u = performance.now();
           else if (t && u && e.type === f.FullSnapshot) {
             let e = performance.now() - u;

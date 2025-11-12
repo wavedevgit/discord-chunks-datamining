@@ -31,14 +31,14 @@ function p(e) {
     pendingBadges: O,
     pendingDisplayNameStyles: v,
     isTryItOut: I,
-    hideBioSection: S,
-    shouldOpenBadgeTooltip: T
+    hideBioSection: T,
+    shouldOpenBadgeTooltip: S
   } = e, A = (0, i.e7)([c.ZP], () => null == p ? null : c.ZP.getMember(p.id, t.id)), C = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), N = null == n ? true : n.getPreviewBio(E), R = null != b ? b : null == n ? true : n.pronouns, P = (0, d.Ly)({
     pendingNickname: m,
     pendingGlobalName: g,
     user: t,
     guildMember: A
-  }), w = () => {
+  }), D = () => {
     if (null != A && null !== h && (null != A.avatar || null != h)) return (0, r.jsx)(l.Z, {
       user: t,
       nickname: P
@@ -50,7 +50,7 @@ function p(e) {
     children: [(0, r.jsx)(o.Z, {
       user: t,
       guildId: null == p ? true : p.id,
-      usernameIcon: w(),
+      usernameIcon: D(),
       nickname: P,
       pendingDisplayNameStyles: v,
       pronouns: R,
@@ -60,9 +60,9 @@ function p(e) {
         themeType: f.l.POPOUT,
         pendingLegacyUsernameDisabled: y,
         pendingBadges: O,
-        shouldOpenBadgeTooltip: T
+        shouldOpenBadgeTooltip: S
       })
-    }), !S && null != N && "" !== N && (0, r.jsx)(s.Z, {
+    }), !T && null != N && "" !== N && (0, r.jsx)(s.Z, {
       user: t,
       bio: N,
       hidePersonalInformation: C,

@@ -30,7 +30,7 @@ function _(e, t, n) {
     actions: {
       onCellAction: v
     }
-  } = r.B.get(t), I = (0, u.useRef)(null), S = () => {
+  } = r.B.get(t), I = (0, u.useRef)(null), T = () => {
     if (n.current) {
       let e = (0, o.QL)(n.current);
       if ("child" === g) {
@@ -40,14 +40,14 @@ function _(e, t, n) {
       }(null == I.current || h.key === I.current) && n.current.contains(document.activeElement) || (0, i.e)(n.current)
     }
   }, {
-    itemProps: T,
+    itemProps: S,
     isPressed: A
   } = (0, f.C)({
     selectionManager: t.selectionManager,
     key: h.key,
     ref: n,
     isVirtualized: m,
-    focus: S,
+    focus: T,
     shouldSelectOnPressUp: E,
     onAction: v ? () => v(h.key) : b,
     isDisabled: 0 === t.collection.size
@@ -102,9 +102,9 @@ function _(e, t, n) {
       return
     }
     requestAnimationFrame(() => {
-      "child" === g && document.activeElement === n.current && S()
+      "child" === g && document.activeElement === n.current && T()
     })
-  }, R = (0, c.d)(T, {
+  }, R = (0, c.d)(S, {
     role: "gridcell",
     onKeyDownCapture: C,
     "aria-colspan": h.colSpan,

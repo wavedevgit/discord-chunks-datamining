@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk797342 = require("./797342.js"),
   Chunk206583 = require("./206583.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,14 +46,14 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -105,27 +105,27 @@ let B = e => {
     } = e, n = M(e, ["entry"]);
     switch (t.content_type) {
       case l.s.PLAYED_GAME:
-        return (0, r.jsx)(E.Z, L(D({}, n), {
+        return (0, r.jsx)(E.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.WATCHED_MEDIA:
-        return (0, r.jsx)(C.Z, L(D({}, n), {
+        return (0, r.jsx)(C.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.TOP_GAME:
-        return (0, r.jsx)(T.ZP, L(D({}, n), {
+        return (0, r.jsx)(S.ZP, L(w({}, n), {
           entry: t
         }));
       case l.s.TOP_ARTIST:
-        return (0, r.jsx)(I.ZP, L(D({}, n), {
+        return (0, r.jsx)(I.ZP, L(w({}, n), {
           entry: t
         }));
       case l.s.LISTENED_SESSION:
-        return (0, r.jsx)(O.ZP, L(D({}, n), {
+        return (0, r.jsx)(O.ZP, L(w({}, n), {
           entry: t
         }));
       case l.s.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(m.Z, L(D({}, n), {
+        return (0, r.jsx)(m.Z, L(w({}, n), {
           entry: t
         }));
       default:
@@ -148,7 +148,7 @@ let B = e => {
     var {
       closePopout: t
     } = e, n = M(e, ["closePopout"]);
-    return (0, r.jsx)(V, D({
+    return (0, r.jsx)(V, w({
       onReaction: (e, r) => {
         n.trackRankingItemInteraction(e, {
           destinationChannelId: r.id,
@@ -170,27 +170,27 @@ let B = e => {
     } = e, n = M(e, ["entry"]);
     switch (t.content_type) {
       case l.s.PLAYED_GAME:
-        return (0, r.jsx)(b.Z, L(D({}, n), {
+        return (0, r.jsx)(b.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.WATCHED_MEDIA:
-        return (0, r.jsx)(N.Z, L(D({}, n), {
+        return (0, r.jsx)(N.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.TOP_GAME:
-        return (0, r.jsx)(A.Z, L(D({}, n), {
+        return (0, r.jsx)(A.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.TOP_ARTIST:
-        return (0, r.jsx)(S.Z, L(D({}, n), {
+        return (0, r.jsx)(T.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.LISTENED_SESSION:
-        return (0, r.jsx)(v.Z, L(D({}, n), {
+        return (0, r.jsx)(v.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.LAUNCHED_ACTIVITY:
-        return (0, r.jsx)(g.ZP, L(D({}, n), {
+        return (0, r.jsx)(g.ZP, L(w({}, n), {
           entry: t
         }));
       default:
@@ -211,18 +211,18 @@ let B = e => {
       v = null == (t = p.default.getCurrentUser()) ? true : t.isStaff(),
       {
         isRich: I,
-        appName: S
+        appName: T
       } = (0, R.n)(_.entry),
-      T = i.useMemo(() => ({
+      S = i.useMemo(() => ({
         entry: _.entry,
         channelId: _.channel.id,
         guildId: _.channel.guild_id,
         requestId: _.requestId,
-        richPresenceName: I ? S : true
-      }), [S, _.channel.guild_id, _.channel.id, _.entry, _.requestId, I]),
+        richPresenceName: I ? T : true
+      }), [T, _.channel.guild_id, _.channel.id, _.entry, _.requestId, I]),
       A = i.useRef(false),
       [C, N] = i.useState(false),
-      [w, x] = i.useState(false),
+      [D, x] = i.useState(false),
       j = (0, c.e7)([f.Z], () => f.Z.keyboardModeEnabled);
     i.useEffect(() => {
       C && j && x(true)
@@ -245,8 +245,8 @@ let B = e => {
       }, []),
       V = i.useCallback(function(e) {
         let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-        (0, h.L)(e, D({}, T, t))
-      }, [T]),
+        (0, h.L)(e, w({}, S, t))
+      }, [S]),
       Y = i.useMemo(() => o().throttle(e => {
         (0, h.L)(P.xP.CARD_POPOUT_OPEN, e)
       }, U, {
@@ -259,13 +259,13 @@ let B = e => {
         }, 100)
       };
     return (0, r.jsxs)(r.Fragment, {
-      children: [b && (0, r.jsx)(Z, L(D({}, _), {
+      children: [b && (0, r.jsx)(Z, L(w({}, _), {
         targetElementRef: m
       })), (0, r.jsx)("div", {
         ref: l,
         onMouseEnter: () => {
           A.current = true, setTimeout(() => {
-            A.current && N(true), Y(T)
+            A.current && N(true), Y(S)
           }, 100)
         },
         onMouseLeave: W,
@@ -277,7 +277,7 @@ let B = e => {
             } = e;
             return (0, r.jsx)(H.Provider, {
               value: W,
-              children: (0, r.jsx)(F, D({
+              children: (0, r.jsx)(F, w({
                 closePopout: t,
                 updatePopoutPosition: G,
                 trackRankingItemInteraction: V
@@ -287,16 +287,16 @@ let B = e => {
           position: "left",
           shouldShow: C,
           positionKey: g,
-          onRequestOpen: () => Y(T),
+          onRequestOpen: () => Y(S),
           onRequestClose: () => {
-            w && W()
+            D && W()
           },
           spacing: 8,
           children: (e, t) => {
             let {
               isShown: n
             } = t;
-            return (0, r.jsx)(u.P3F, L(D({}, e, O), {
+            return (0, r.jsx)(u.P3F, L(w({}, e, O), {
               innerRef: m,
               focusProps: {
                 offset: {
@@ -310,7 +310,7 @@ let B = e => {
                 C || N(true)
               },
               onContextMenu: k,
-              children: (0, r.jsx)(B, L(D({}, _), {
+              children: (0, r.jsx)(B, L(w({}, _), {
                 selected: n,
                 hovered: A.current
               }))

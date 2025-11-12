@@ -28,8 +28,8 @@ function y(e) {
     invite: n,
     message: y,
     getAcceptInviteContext: O
-  } = e, v = (0, o.e7)([_.default], () => _.default.getId()), I = (null == (t = n.inviter) ? true : t.id) === v, S = n.state === g.r2o.ACCEPTING, {
-    analyticsLocations: T
+  } = e, v = (0, o.e7)([_.default], () => _.default.getId()), I = (null == (t = n.inviter) ? true : t.id) === v, T = n.state === g.r2o.ACCEPTING, {
+    analyticsLocations: S
   } = (0, u.ZP)(c.Z.INVITE_EMBED), A = (0, o.e7)([h.Z], () => {
     var e;
     return null != n.inviter && h.Z.isFriend(null == (e = n.inviter) ? true : e.id)
@@ -42,31 +42,31 @@ function y(e) {
       action: e,
       inviter_id: y.author.id,
       invite_message_id: y.id
-    }, T)
-  }, [n, y, T]), N = i.useCallback(() => {
+    }, S)
+  }, [n, y, S]), N = i.useCallback(() => {
     (0, l.r$)({
       invite: n,
       action: "accept",
       inviter_id: y.author.id,
       invite_message_id: y.id
-    }, T);
+    }, S);
     let e = O("Invite Button Embed");
     l.ZP.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })
-  }, [n, y, T, O]);
+  }, [n, y, S, O]);
   if (null == n.inviter) return null;
   let R = A ? C : N,
     P = E.intl.string(E.t.ib7Ng1),
-    w = "active";
-  A ? (P = E.intl.string(E.t.xhxnPn), w = "secondary") : I && (P = E.intl.string(E.t.ib7Ng1), w = "secondary");
-  let D = I ? E.intl.string(E.t.eQyu1F) : E.intl.string(E.t.PYJHW6),
+    D = "active";
+  A ? (P = E.intl.string(E.t.xhxnPn), D = "secondary") : I && (P = E.intl.string(E.t.ib7Ng1), D = "secondary");
+  let w = I ? E.intl.string(E.t.eQyu1F) : E.intl.string(E.t.PYJHW6),
     x = null != n.inviter ? "".concat(n.inviter.username) : "",
     L = null != n.inviter ? m.ZP.getUserTag(n.inviter) : "";
   return (0, r.jsxs)(d.Z, {
     children: [(0, r.jsx)(d.Z.Header, {
-      text: D
+      text: w
     }), (0, r.jsxs)(d.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: b.headerLine,
@@ -81,9 +81,9 @@ function y(e) {
       }), (0, r.jsx)(a.zxk, {
         onClick: R,
         text: P,
-        loading: S,
+        loading: T,
         disabled: I,
-        variant: w
+        variant: D
       })]
     })]
   })

@@ -2,7 +2,7 @@
 /** chunk id: 173790, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,20 +25,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk30787 = require("./30787.js"),
   Chunk413097 = require("./413097.js");
 let I = 2048,
-  S = 84;
+  T = 84;
 
-function T(e) {
+function S(e) {
   var t;
   let {
     context: n,
     application: l,
     sectionName: c
-  } = e, I = "channel" === n.type ? n.channel : true, T = (0, a.e7)([f.Z], () => f.Z.entrypoint()), C = null != (t = (0, d.q)(l.id === b.bi.BUILT_IN ? null : l.id)) ? t : l, N = (0, p.ye)(C) ? A : E.Z, R = i.useRef(null), [P, w] = i.useState(false), {
-    iconURL: D,
+  } = e, I = "channel" === n.type ? n.channel : true, S = (0, a.e7)([f.Z], () => f.Z.entrypoint()), C = null != (t = (0, d.q)(l.id === b.bi.BUILT_IN ? null : l.id)) ? t : l, N = (0, p.ye)(C) ? A : E.Z, R = i.useRef(null), [P, D] = i.useState(false), {
+    iconURL: w,
     name: x
   } = i.useMemo(() => (0, p.sl)(C, {
     fakeAppIconURL: v,
-    size: S
+    size: T
   }), [C]), L = (0, u.PL)(true, true), M = (0, u.LD)(null == I ? true : I.guild_id, true), j = i.useMemo(() => (0, u.If)(n, C.id), [L, M, n, C.id]), k = !j.isGuildInstalled && !j.isUserInstalled;
   return i.useEffect(() => {
     k && u.ZP.queryInstallOnDemandApp(C.id, null == I ? true : I.id)
@@ -54,11 +54,11 @@ function T(e) {
       application: C,
       context: n,
       name: x,
-      iconURL: D,
+      iconURL: w,
       scrollerRef: R,
       sectionName: c
-    }), null != D && (0, r.jsx)(h.Z, {
-      src: D,
+    }), null != w && (0, r.jsx)(h.Z, {
+      src: w,
       className: O.appIcon
     }), (0, r.jsx)(o.Z, {
       size: 54
@@ -67,12 +67,12 @@ function T(e) {
       application: C,
       sectionName: c,
       hasCommands: P
-    }), T === _._b.TEXT ? (0, r.jsx)(m.Z, {
+    }), S === _._b.TEXT ? (0, r.jsx)(m.Z, {
       context: n,
       application: C,
       sectionName: c,
       installOnDemand: k,
-      setHasCommands: w
+      setHasCommands: D
     }) : null]
   })
 }

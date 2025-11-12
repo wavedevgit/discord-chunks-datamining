@@ -53,7 +53,7 @@ function f(e, t, n) {
     } = _(t, n);
     e._raw = (e._raw || "") + a;
     let o = m(i);
-    return (0, r.wB)(e, T(g(o, true))), true
+    return (0, r.wB)(e, S(g(o, true))), true
   } catch (e) {
     returnfalse
   }
@@ -128,18 +128,18 @@ function v(e) {
 
 function I(e) {
   return {
-    attributes: S(e),
+    attributes: T(e),
     value: g(e)
   }
 }
 
-function S(e) {
+function T(e) {
   let t = {};
   for (let n = 0; n < e.attributes.length; n++) t[e.attributes[n].nodeName] = decodeURIComponent(escape(e.attributes[n].value));
   return t
 }
 
-function T(e) {
+function S(e) {
   let t = {};
   if ("string" == typeof e) return e;
   for (let n in e) {
@@ -177,10 +177,10 @@ function R(e) {
 
 function P(e, t) {
   if (Array.isArray(e)) {
-    let n = w(e);
+    let n = D(e);
     return t && "function" == typeof i.Z[t] ? i.Z[t](e, n) : n
   }
-  if ("object" == typeof e) return D(e);
+  if ("object" == typeof e) return w(e);
   try {
     if (t && "function" == typeof i.Z[t]) return i.Z[t](e);
     return decodeURIComponent(escape(e))
@@ -189,11 +189,11 @@ function P(e, t) {
   }
 }
 
-function w(e) {
+function D(e) {
   return e.map(e => true !== e.value ? P(e.value) : P(e)).join(", ")
 }
 
-function D(e) {
+function w(e) {
   let t = [];
   for (let n in e) t.push(`${x(n)}: ${P(e[n].value)}`);
   return t.join("; ")
@@ -313,7 +313,7 @@ function Q(e) {
 }
 
 function J(e, t) {
-  let n = $(e) || T(e.value);
+  let n = $(e) || S(e.value);
   return {
     value: n,
     attributes: Z(e),

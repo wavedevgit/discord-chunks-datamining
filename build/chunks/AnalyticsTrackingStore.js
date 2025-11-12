@@ -60,15 +60,15 @@ let m = "x-science-test",
   O = 36e5,
   v = b,
   I = y,
-  S = O,
-  T = g,
+  T = O,
+  S = g,
   A = 0,
   C = 0,
   N = 0,
   R = 0,
   P = 0,
-  w = null,
-  D = 0,
+  D = null,
+  w = 0,
   x = Number.MAX_SAFE_INTEGER,
   L = 0,
   M = 0,
@@ -78,7 +78,7 @@ let m = "x-science-test",
   G = null;
 
 function B() {
-  C = 0, N = 0, R = 0, D = 0, x = Number.MAX_SAFE_INTEGER, L = 0, M = 0, w = Date.now(), P = A
+  C = 0, N = 0, R = 0, w = 0, x = Number.MAX_SAFE_INTEGER, L = 0, M = 0, D = Date.now(), P = A
 }
 
 function Z(e) {
@@ -128,14 +128,14 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         shouldFlushOnNextTick: t = false
       } = e;
       null == W && Q() && (W = t ? setTimeout($, 0) : z($, {
-        timeout: T
+        timeout: S
       }))
     }
 
     function $() {
       if (W = null, !Q()) return Promise.resolve();
       let e = Y.slice();
-      Y = [], D = Z(D);
+      Y = [], w = Z(w);
       let t = e.length;
       x = Math.min(x, t), L = Math.max(L, t), M = Z(M, t);
       let n = ee(e);
@@ -189,13 +189,13 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           rpc_failure_count: R,
           first_seen_event_sequence_number: P,
           last_seen_event_sequence_number: A,
-          telemetry_period_start_timestamp: w,
+          telemetry_period_start_timestamp: D,
           telemetry_period_end_timestamp: Date.now(),
           event_queue_rejection_count: C,
-          event_queue_batch_count: D,
+          event_queue_batch_count: w,
           event_queue_batch_min_size: x === Number.MAX_SAFE_INTEGER ? 0 : x,
           event_queue_batch_max_size: L,
-          event_queue_batch_avg_size: D > 0 ? M / D : 0,
+          event_queue_batch_avg_size: w > 0 ? M / w : 0,
           science_request_id: G,
           science_response: U,
           launch_signature: q()
@@ -234,14 +234,14 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         type: "timeout",
         id: setTimeout(() => {
           et(), e()
-        }, Math.floor(Math.random() * (S - I) + I))
+        }, Math.floor(Math.random() * (T - I) + I))
       }
     }
 
     function ei() {
       if (!en()) return
     }
-    T = null != y ? y : g, H.handleConnectionOpen = function(e) {
+    S = null != y ? y : g, H.handleConnectionOpen = function(e) {
       let {
         analyticsToken: t,
         user: n

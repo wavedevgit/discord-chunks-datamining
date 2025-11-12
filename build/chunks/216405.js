@@ -33,45 +33,45 @@ let y = 10,
   O = 20,
   v = 10,
   I = new Chunk579092.Yd("AutoQualityStreamingManager"),
-  S = 0;
-class T extends Chunk147913.Z {
+  T = 0;
+class S extends Chunk147913.Z {
   handleStats() {
     var e, t, n, r;
-    if ((S += 1) % v != 0) return;
+    if ((T += 1) % v != 0) return;
     let o = Chunk199902.Z.getCurrentUserActiveStream();
     if (null == Chunk147913) return;
     let h = Chunk959457.Z.getRTCConnection((0, Chunk569545.V9)(Chunk147913)),
       b = Chunk131951.Z.getGoLiveSource();
     if (null == Chunk580991 || null == b || !Chunk580991.hasActiveRemoteWants()) return;
-    let T = Chunk361291.Z.getState();
-    if (T.preset !== Chunk37113.ApplicationStreamPresets.PRESET_AUTO) return;
+    let S = Chunk361291.Z.getState();
+    if (S.preset !== Chunk37113.ApplicationStreamPresets.PRESET_AUTO) return;
     if ((null == (e = Chunk199902.Z.getStreamerActiveStreamMetadata()) ? true : module.id) != null) return void I.info("Skipping auto quality checker for game stream.");
     let A = Chunk450109.Z.getAccumulatedPerformanceStats(Chunk580991.getMediaEngineConnectionId(), Chunk147913.ownerId, "long"),
       C = (null != (t = Chunk580991.analyticsContext.getDuration()) ? exports : 30) >= 30 * Chunk70956.Z.Millis.SECOND ? 30 : 15;
     if (null == A || A.numDatapoints < C) return;
     let N = Chunk594174.default.getCurrentUser(),
       R = Chunk430824.Z.getGuild(Chunk147913.guildId),
-      [P, w] = null != (n = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_DOCUMENTS, N, null == R ? true : R.premiumTier)) ? require : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE, Chunk37113.ApplicationStreamFPS.FPS_5],
-      [D, x] = null != (r = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_VIDEO, N, null == R ? true : R.premiumTier)) ? Chunk579092 : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_720, Chunk37113.ApplicationStreamFPS.FPS_30],
+      [P, D] = null != (n = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_DOCUMENTS, N, null == R ? true : R.premiumTier)) ? require : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE, Chunk37113.ApplicationStreamFPS.FPS_5],
+      [w, x] = null != (r = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_VIDEO, N, null == R ? true : R.premiumTier)) ? Chunk579092 : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_720, Chunk37113.ApplicationStreamFPS.FPS_30],
       L = null;
-    if (A.entropy < y && (T.resolution !== P || T.fps !== w) ? (I.info("Low entropy average, switching to screenshare preset."), L = {
+    if (A.entropy < y && (S.resolution !== P || S.fps !== D) ? (I.info("Low entropy average, switching to screenshare preset."), L = {
         qualityOptions: {
           preset: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
           resolution: P,
-          frameRate: w
+          frameRate: D
         },
         context: Chunk46973.Yn.STREAM
-      }) : A.entropy > O && (T.resolution !== D || T.fps !== x) && (I.info("High entropy average, switching to video preset."), L = {
+      }) : A.entropy > O && (S.resolution !== w || S.fps !== x) && (I.info("High entropy average, switching to video preset."), L = {
         qualityOptions: {
           preset: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
-          resolution: D,
+          resolution: w,
           frameRate: x
         },
         context: Chunk46973.Yn.STREAM
       }), null != L) {
       if (null != b.desktopSource) L.desktopSettings = {
         sourceId: b.desktopSource.id,
-        sound: T.soundshareEnabled
+        sound: S.soundshareEnabled
       };
       else {
         if (null == b.cameraSource) return;
@@ -93,4 +93,4 @@ class T extends Chunk147913.Z {
     })
   }
 }
-let A = new T
+let A = new S

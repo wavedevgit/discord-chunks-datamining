@@ -32,7 +32,7 @@ function b(e) {
     isTryItOut: v = false
   } = e, {
     analyticsLocations: I
-  } = (0, c.ZP)(), S = (0, f.Z)("enable_avatar_decoration_uploads"), T = (0, h.i3)({
+  } = (0, c.ZP)(), T = (0, f.Z)("enable_avatar_decoration_uploads"), S = (0, h.i3)({
     user: t,
     guildId: null == n ? true : n.id
   }), {
@@ -45,12 +45,12 @@ function b(e) {
     analyticsLocations: I,
     guild: n,
     isTryItOut: v
-  }), [I, n, v]), R = v || true !== A ? null != A : null != T;
+  }), [I, n, v]), R = v || true !== A ? null != A : null != S;
 
   function P() {
     v ? (0, p.Xz)(null) : (0, h.PO)(null, null == n ? true : n.id)
   }
-  let w = y ? l.gtL : s.zx;
+  let D = y ? l.gtL : s.zx;
   return (0, r.jsxs)(m.Z, {
     className: a,
     forcedDivider: b,
@@ -59,7 +59,7 @@ function b(e) {
     errors: C,
     children: [(0, r.jsxs)("div", {
       className: E.buttonsContainer,
-      children: [(0, r.jsx)(w, {
+      children: [(0, r.jsx)(D, {
         size: s.zx.Sizes.SMALL,
         onClick: N,
         className: o()({
@@ -76,7 +76,7 @@ function b(e) {
           onClick: P
         })
       })]
-    }), t.isStaff() && S && (0, r.jsx)(O, {
+    }), t.isStaff() && T && (0, r.jsx)(O, {
       user: t
     })]
   })

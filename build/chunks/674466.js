@@ -104,7 +104,7 @@ class y {
     return null == e || (f.bytes = e.bytesReceived, f.framesCodec = e.framesDecoded, f.framesCodecError = null != (n = e.framesDecodeErrors) ? n : null, f.framesNetwork = e.framesReceived, f.packets = e.packetsReceived, f.packetsLost = e.packetsLost, f.framesDropped = e.framesDropped, f.resolution = null != e.resolution ? e.resolution.height : 0, f.minorResolution = null != e.resolution ? Math.min(e.resolution.height, e.resolution.width) : 0, f.majorResolution = null != e.resolution ? Math.max(e.resolution.height, e.resolution.width) : 0, f.timestamp = t, f.nackCount = e.nackCount, f.pliCount = e.pliCount, f.decoder = E(e.decoderImplementationName), f.codecType = b(e.codec.name), f.qpSum = 0, f.freezeCount = e.freezeCount, f.pauseCount = e.pauseCount, f.totalFreezesDuration = e.totalFreezesDuration, f.totalPausesDuration = e.totalPausesDuration, f.totalFramesDuration = e.totalFramesDuration, f.keyframes = null != (r = e.keyFramesDecoded) ? r : null, f.passthroughCount = null != (i = e.passthroughCount) ? i : 0, f.cryptorSuccessCount = null != (a = e.decryptSuccessCount) ? a : 0, f.cryptorFailureCount = null != (o = e.decryptFailureCount) ? o : 0, f.cryptorDuration = null != (s = e.decryptDuration) ? s : 0, f.cryptorAttempts = null != (l = e.decryptAttempts) ? l : 0, f.cryptorMissingKeyCount = null != (c = e.decryptMissingKeyCount) ? c : 0, f.cryptorInvalidNonceCount = null != (u = e.decryptInvalidNonceCount) ? u : 0, f.localWant = null != (d = e.sinkWantLocalAsInt) ? d : 0), f
   }
   static parseOutboundStats(e, t) {
-    var n, r, i, a, o, s, l, c, u, d, f, _, p, h, m, E, O, v, I, S, T, A, C, N, R;
+    var n, r, i, a, o, s, l, c, u, d, f, _, p, h, m, E, O, v, I, T, S, A, C, N, R;
     let P = new y;
     return null == e ? P : {
       bytes: e.bytesSent,
@@ -143,8 +143,8 @@ class y {
       framesDroppedCongestionWindow: null != (O = e.framesDroppedCongestionWindow) ? O : null,
       framesDroppedEncoder: null != (v = e.framesDroppedEncoder) ? v : null,
       passthroughCount: null != (I = e.passthroughCount) ? I : 0,
-      cryptorSuccessCount: null != (S = e.encryptSuccessCount) ? S : 0,
-      cryptorFailureCount: null != (T = e.encryptFailureCount) ? T : 0,
+      cryptorSuccessCount: null != (T = e.encryptSuccessCount) ? T : 0,
+      cryptorFailureCount: null != (S = e.encryptFailureCount) ? S : 0,
       cryptorDuration: null != (A = e.encryptDuration) ? A : 0,
       cryptorAttempts: null != (C = e.encryptAttempts) ? C : 0,
       cryptorMaxAttempts: null != (N = e.encryptMaxAttempts) ? N : 0,
@@ -222,12 +222,12 @@ class O {
     });
     let v = (o - O) / 1e3,
       I = (i - b) * 8 / v,
-      S = (a - y) / v;
+      T = (a - y) / v;
     s.forEach(e => {
       I <= e && (this.bitrateBuckets[e] += E)
     }), l.forEach(e => {
-      S <= e && (this.fpsBuckets[e] += E)
-    }), this.resolutionHistogram.addSample(u), this.bitrateHistogram.addSample(I), this.fpsHistogram.addSample(S), this.localWantHistogram.addSample(m), this.statsWindow.shift()
+      T <= e && (this.fpsBuckets[e] += E)
+    }), this.resolutionHistogram.addSample(u), this.bitrateHistogram.addSample(I), this.fpsHistogram.addSample(T), this.localWantHistogram.addSample(m), this.statsWindow.shift()
   }
   addSystemResources() {
     this.systemResources.takeSample()

@@ -96,14 +96,14 @@ function I(e) {
   })).keyBy("threadId").value()
 }
 
-function S(e) {
+function T(e) {
   let {
     guild: t
   } = e;
   E(t.id), b(t)
 }
 
-function T(e) {
+function S(e) {
   let {
     guild: t
   } = e;
@@ -176,7 +176,7 @@ function P(e) {
   }, O(e.id)
 }
 
-function w(e) {
+function D(e) {
   let {
     id: t,
     userId: n,
@@ -196,7 +196,7 @@ function w(e) {
   } : delete h[t]
 }
 
-function D(e) {
+function w(e) {
   var t, n;
   let r = false;
   return (null == (t = e.removedMemberIds) ? true : t.includes(u.default.getId())) && e.id in h && (h = f({}, h), delete h[e.id], r = true), null == (n = e.addedMembers) || n.forEach(t => {
@@ -243,8 +243,8 @@ d(x, "displayName", "JoinedThreadsStore");
 let L = new x(Chunk570140.Z, {
     CONNECTION_OPEN: v,
     OVERLAY_INITIALIZE: I,
-    GUILD_CREATE: S,
-    GUILD_DELETE: T,
+    GUILD_CREATE: T,
+    GUILD_DELETE: S,
     THREAD_CREATE: A,
     THREAD_LIST_SYNC: C,
     SEARCH_MESSAGES_SUCCESS: N,
@@ -253,7 +253,7 @@ let L = new x(Chunk570140.Z, {
     LOAD_ARCHIVED_THREADS_SUCCESS: C,
     THREAD_DELETE: R,
     THREAD_MEMBER_UPDATE: P,
-    THREAD_MEMBER_LOCAL_UPDATE: w,
-    THREAD_MEMBERS_UPDATE: D
+    THREAD_MEMBER_LOCAL_UPDATE: D,
+    THREAD_MEMBERS_UPDATE: w
   }),
   M = L

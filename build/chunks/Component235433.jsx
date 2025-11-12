@@ -31,8 +31,8 @@ function v(e) {
     className: v
   } = e, I = u.JH.useExperiment({
     location: "DisplayNameStylesSection"
-  }).enabled, S = p.ZP.canUsePremiumProfileCustomization(t), {
-    analyticsLocations: T
+  }).enabled, T = p.ZP.canUsePremiumProfileCustomization(t), {
+    analyticsLocations: S
   } = (0, l.ZP)(), {
     userDisplayNameStyles: A,
     guildDisplayNameStyles: C,
@@ -40,12 +40,12 @@ function v(e) {
     pendingErrors: R
   } = (0, h.mD)(t, n), P = [];
   I && P.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
-  let [w, D] = (0, c.US)(P), x = w === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, L = (0, i.useCallback)(() => {
-    D(E.L.TAKE_ACTION), _.default.track(g.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.I)({
-      analyticsLocations: T,
+  let [D, w] = (0, c.US)(P), x = D === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, L = (0, i.useCallback)(() => {
+    w(E.L.TAKE_ACTION), _.default.track(g.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.I)({
+      analyticsLocations: S,
       guildId: n
     })
-  }, [T, D, n]), M = (0, i.useCallback)(() => {
+  }, [S, w, n]), M = (0, i.useCallback)(() => {
     (0, s.NI)(null), _.default.track(g.rMx.DISPLAY_NAME_STYLES_REMOVED)
   }, []), j = (0, i.useCallback)(() => {
     (0, f.N_)(null)
@@ -59,7 +59,7 @@ function v(e) {
       className: O.newBadge
     }) : true,
     className: v,
-    showPremiumIcon: S,
+    showPremiumIcon: T,
     errors: R,
     children: (0, r.jsxs)("div", {
       className: O.buttonsContainer,

@@ -49,7 +49,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,8 +60,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -175,7 +175,7 @@ function R(e) {
     renderPopout: e => (0, r.jsx)(u.P3F, {
       onClick: e => e.stopPropagation(),
       onMouseOver: e => e.stopPropagation(),
-      children: t(T(I({}, e), {
+      children: t(S(I({}, e), {
         refreshPosition: m
       }))
     }),
@@ -197,7 +197,7 @@ function R(e) {
       text: a,
       position: "top",
       shouldShow: E,
-      children: ["(", (0, r.jsx)(u.P3F, T(I({}, e), {
+      children: ["(", (0, r.jsx)(u.P3F, S(I({}, e), {
         innerRef: g,
         "aria-label": a,
         onClick: h,

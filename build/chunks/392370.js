@@ -54,7 +54,7 @@ function I(e) {
   }
 }
 
-function S(e) {
+function T(e) {
   var t, n;
   let {
     context: i,
@@ -84,7 +84,7 @@ function S(e) {
   }, [i, a, s.fetchState.fetching, null == (t = s.result) ? true : t.sections, l.fetchState.fetching, null == (n = l.result) ? true : n.sections])
 }
 
-function T(e) {
+function S(e) {
   let t = (0, _.k)("channel" === e.type ? e.channel : true, [c.yU.CHAT, c.yU.PRIMARY_ENTRY_POINT]);
   return n => {
     let {
@@ -136,12 +136,12 @@ function P(e) {
   }
 }
 
-function w(e, t) {
+function D(e, t) {
   let n = h.Z.getScoreWithoutLoadingLatest(e.id);
   return h.Z.getScoreWithoutLoadingLatest(t.id) - n
 }
 
-function D(e, t) {
+function w(e, t) {
   let n = (0, y.$d)(e),
     r = (0, y.$d)(t);
   return (0, f.un)(n, r)
@@ -275,7 +275,7 @@ function V(e) {
     commands: d,
     commandSectionMap: f,
     loading: _
-  } = S({
+  } = T({
     context: t,
     includeBuiltIn: true
   }), {
@@ -334,9 +334,9 @@ function V(e) {
     } else l && (e = p);
     return (0, E.N)(e, {
       limit: o,
-      filterPredicates: [T(t)],
+      filterPredicates: [S(t)],
       bucketPredicates: A(n),
-      sortComparers: [w, D]
+      sortComparers: [D, w]
     })
   }, [l, c, o, t, n, p, h]), y = g.length > 0, O = b.length > 0, C = !y && !O;
   return {

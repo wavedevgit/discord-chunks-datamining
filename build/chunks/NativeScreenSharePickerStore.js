@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  UB: () => D,
+  UB: () => w,
   Uc: () => I,
   ZP: () => H,
   kE: () => x
@@ -37,8 +37,8 @@ function v(e, t, n) {
 var I = function(e) {
   return e[e.Present = 0] = "Present", e[e.Update = 1] = "Update", e[e.Cancel = 2] = "Cancel", e[e.Error = 3] = "Error", e
 }({});
-let S = false,
-  T = 0,
+let T = false,
+  S = 0,
   A = 0,
   C = false,
   N = {};
@@ -51,29 +51,29 @@ function P() {
   return Chunk131951.Z.getUseSystemScreensharePicker()
 }
 
-function w() {
-  let e = P() && (A > 0 || S && 0 === T);
+function D() {
+  let e = P() && (A > 0 || T && 0 === S);
   if (module !== C) {
     var t, n;
     C = module, null == (n = Chunk131951.Z.getMediaEngine()) || null == (t = require.setNativeDesktopVideoSourcePickerActive) || exports.call(require, C)
   }
 }
 
-function D() {
-  return (0, Chunk647438.useEffect)(() => (T++, w(), () => {
-    0 == --T && w()
+function w() {
+  return (0, Chunk647438.useEffect)(() => (S++, D(), () => {
+    0 == --S && D()
   }), [])
 }
 
 function x() {
-  return (0, Chunk647438.useEffect)(() => (A++, w(), () => {
-    --A, w()
+  return (0, Chunk647438.useEffect)(() => (A++, D(), () => {
+    --A, D()
   }), [])
 }
 
 function L() {
   let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId());
-  return S = null != module && (0, Chunk74299.Z)(Chunk131951.Z) && (0, Chunk102172.JL)(module, Chunk430824.Z, Chunk496675.Z, false), w(), false
+  return T = null != module && (0, Chunk74299.Z)(Chunk131951.Z) && (0, Chunk102172.JL)(module, Chunk430824.Z, Chunk496675.Z, false), D(), false
 }
 
 function M() {
@@ -133,7 +133,7 @@ function G(e) {
   } = e;
   if (N = {
       lastPickerAction: 1
-    }, r = n, 0 === T && !t) {
+    }, r = n, 0 === S && !t) {
     let e = u.Z.getChannel(p.Z.getVoiceChannelId());
     null != e && (0, m.Z)(f.Z) && (0, h.JL)(e, d.Z, _.Z, false) && (0, l.WH)(e.getGuildId(), e.id, k())
   }

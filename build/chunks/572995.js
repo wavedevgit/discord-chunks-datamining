@@ -124,8 +124,8 @@ let ef = (e, t) => ec({
       assetUrl: e ? V.Z : Y.Z
     },
     emojis: {
-      thumbnail: D.Z,
-      assetUrl: e ? w.Z : x.Z
+      thumbnail: w.Z,
+      assetUrl: e ? D.Z : x.Z
     },
     noLimits: {
       thumbnail: M.Z,
@@ -137,11 +137,11 @@ let ef = (e, t) => ec({
       assetUrl: e ? $.ZP : et.ZP
     },
     showYourStyle: {
-      thumbnail: T,
+      thumbnail: S,
       assetUrl: e ? ei.Z : ea.Z
     },
     yourSpace: {
-      thumbnail: S,
+      thumbnail: T,
       assetUrl: e ? eo.Z : es.Z
     },
     emojis: {
@@ -163,14 +163,14 @@ let ef = (e, t) => ec({
       location: "useBentoBoxes"
     }).enabled, I = Chunk340625.Z.useExperiment({
       location: "useBentoBoxes"
-    }), S = (0, Chunk647438.useCallback)(() => {
+    }), T = (0, Chunk647438.useCallback)(() => {
       (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
         section: Chunk981631.oAB.PROFILE_CUSTOMIZATION,
         analyticsLocations: module
       }, () => (0, Chunk829716.I)({
         analyticsLocations: module
       }))
-    }, [module]), T = () => {
+    }, [module]), S = () => {
       {
         letChunk518596 = require("./518596.jsx");
         exports(Chunk313789.n.APPEARANCE_PANEL, {
@@ -196,7 +196,7 @@ let ef = (e, t) => ec({
       }),
       previewImage: Chunk184071.referralProgram.thumbnail,
       videoUrl: Chunk184071.referralProgram.assetUrl
-    }, w = {
+    }, D = {
       name: "customThemes",
       title: Chunk388032.intl.string(Chunk531421.default.XokIHM),
       description: Chunk388032.intl.string(Chunk531421.default["7esQMC"]),
@@ -206,7 +206,7 @@ let ef = (e, t) => ec({
         (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME)
       },
       videoUrl: Chunk184071.customThemes.assetUrl
-    }, D = {
+    }, w = {
       name: "displayNameStyles",
       title: Chunk388032.intl.string(Chunk352609.default.ABtBDQ),
       description: Chunk388032.intl.string(Chunk352609.default.MFNXZh),

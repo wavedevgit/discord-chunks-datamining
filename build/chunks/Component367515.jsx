@@ -82,7 +82,7 @@ function v(e) {
         otherUser: t
       }))
     })
-  }, [y, t]), S = i.useCallback(() => {
+  }, [y, t]), T = i.useCallback(() => {
     o()(true !== y, "User must be logged in to decline a link request"), (0, l.ZDy)(async () => {
       let {
         default: e
@@ -106,7 +106,7 @@ function v(e) {
       children: a ? (0, r.jsx)(f.Z, {
         icon: l.Dio,
         tooltip: m.intl.string(h.default.e5iHmZ),
-        onClick: S
+        onClick: T
       }) : (0, r.jsxs)(r.Fragment, {
         children: [E ? null : (0, r.jsx)(f.Z, {
           icon: l.dz2,

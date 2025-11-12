@@ -8,7 +8,7 @@ require.d(exports, {
   Kd: () => k,
   UR: () => v,
   d2: () => j,
-  dU: () => S,
+  dU: () => T,
   m3: () => G
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./415506.js"), require("./539854.js"), require("./781311.js");
 var Chunk921738 = require("./921738.js"),
@@ -72,7 +72,7 @@ function O(e) {
 }
 
 function v(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : S();
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T();
   return t === d.Cg.BROWSER ? i()(e) : m[e]
 }
 
@@ -89,11 +89,11 @@ function I(e, t, n) {
   return "\\" === t && "`" === r ? t : null == a ? O(null != r ? r : t) : O(a.key)
 }
 
-function S() {
+function T() {
   return (0, Chunk358085.isLinux)() ? Chunk295907.Cg.LINUX : (0, Chunk358085.isMac)() ? Chunk295907.Cg.MACOS : (0, Chunk358085.isWindows)() ? Chunk295907.Cg.WINDOWS : __OVERLAY__ ? Chunk295907.Cg.WINDOWS : Chunk295907.Cg.BROWSER
 }
 
-function T(e) {
+function S(e) {
   let t, [, n, r] = e;
   switch (r) {
     case d.Cg.LINUX:
@@ -118,14 +118,14 @@ function T(e) {
 }
 
 function A(e) {
-  let [, t, n] = e, r = T(e);
+  let [, t, n] = e, r = S(e);
   if (null != r) return I(t, r, n);
   let i = (0, u._v)(t);
   return null != i ? I(i.keyCode, i.key, n) : null
 }
 
 function C(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : S(),
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(),
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.Mo.KEYBOARD_KEY,
     r = R(e, t, n);
   if (null != r) return r;
@@ -139,7 +139,7 @@ function N(e) {
 }
 
 function R(e) {
-  let t, n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : S(),
+  let t, n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(),
     r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.Mo.KEYBOARD_KEY;
   if (null == e) return null;
   let a = r === d.Mo.KEYBOARD_KEY || r === d.Mo.KEYBOARD_MODIFIER_KEY;
@@ -196,12 +196,12 @@ let P = [
     ["TAB", "⇥"],
     ["SPACE", "␣"]
   ],
-  w = e => {
+  D = e => {
     for (let [t, n] of P)
       if (t === e.toUpperCase()) return n;
     return e
   },
-  D = e => {
+  w = e => {
     for (let [t, n] of P)
       if (n === e.toUpperCase()) return t.toLowerCase();
     return e
@@ -241,10 +241,10 @@ function j(e) {
 }
 
 function k(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : S(),
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(),
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.Mo.KEYBOARD_KEY;
   return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, s.Z.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {
-    let i = C(D(r), t, n);
+    let i = C(w(r), t, n);
     return null != i && e.push([n, i, t]), e
   }, [])
 }
@@ -252,14 +252,14 @@ function k(e) {
 function U(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     r = e.map(e => {
-      let [t, n, r] = e, i = "number" == typeof r ? r : S();
+      let [t, n, r] = e, i = "number" == typeof r ? r : T();
       if (t === d.Mo.KEYBOARD_KEY || t === d.Mo.KEYBOARD_MODIFIER_KEY) {
         var a;
         return null != (a = A(null != i ? [t, n, i] : [t, n])) ? a : "UNK".concat(n)
       }
       return t === d.Mo.MOUSE_BUTTON ? "mouse".concat(n) : t === d.Mo.GAMEPAD_BUTTON ? "gamepad".concat(n) : "dev".concat(t, ",").concat(n)
     }).filter(l.lm);
-  return t ? (false !== n.g.navigator.appVersion.indexOf("Mac OS X") ? r.map(w) : r).join(" + ").toUpperCase() : r.join("+")
+  return t ? (false !== n.g.navigator.appVersion.indexOf("Mac OS X") ? r.map(D) : r).join(" + ").toUpperCase() : r.join("+")
 }
 
 function G(e, t) {

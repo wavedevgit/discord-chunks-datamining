@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -146,12 +146,12 @@ let C = e => {
       children: (0, h.XX)(t)
     })
   },
-  w = () => (0, Chunk951288.jsx)(Chunk481060.Text, {
+  D = () => (0, Chunk951288.jsx)(Chunk481060.Text, {
     variant: "text-xs/bold",
     className: Chunk712243.newBadge,
     children: Chunk388032.intl.string(Chunk388032.t.QKMRC4)
   }),
-  D = e => {
+  w = e => {
     let {
       classification: t
     } = e, {
@@ -167,7 +167,7 @@ let C = e => {
           children: e
         })
       };
-      return (0, h.FB)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === _.wO.OWNER ? O.intl.format(O.t.Lb0HVv, A(S({}, a), {
+      return (0, h.FB)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === _.wO.OWNER ? O.intl.format(O.t.Lb0HVv, A(T({}, a), {
         guildName: null == t || null == (n = t.guild_metadata) ? true : n.name
       })) : O.intl.format(O.t.rmpEPD, {
         guildName: null == t || null == (i = t.guild_metadata) ? true : i.name,
@@ -179,7 +179,7 @@ let C = e => {
         let {
           default: e
         } = await n.e("18831").then(n.bind(n, 41164));
-        return t => (0, r.jsx)(e, S({
+        return t => (0, r.jsx)(e, T({
           classificationId: a,
           source: b.s.StandingTab
         }, t))
@@ -192,7 +192,7 @@ let C = e => {
       }),
       children: (0, r.jsxs)("div", {
         className: v.descriptionContainer,
-        children: [u ? (0, r.jsx)(w, {}) : (0, r.jsx)(P, {
+        children: [u ? (0, r.jsx)(D, {}) : (0, r.jsx)(P, {
           timestamp: c
         }), (0, r.jsx)(l.Heading, {
           variant: "heading-lg/normal",
@@ -231,7 +231,7 @@ let C = e => {
             height: "1px",
             width: "100%"
           }
-        }), h.length > 0 && h.map(e => (0, r.jsx)(D, {
+        }), h.length > 0 && h.map(e => (0, r.jsx)(w, {
           classification: e
         }, e.id)), h.length < n.length && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.njP.Separator, {

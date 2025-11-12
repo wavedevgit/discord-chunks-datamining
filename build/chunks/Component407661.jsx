@@ -25,19 +25,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk204427 = require("./204427.js");
 let I = 2,
-  S = 10;
+  T = 10;
 
-function T(e, t) {
+function S(e, t) {
   let n = e.id,
     r = t.id;
   return (0, s.e7)([E.Z], () => {
     let e = r;
-    for (let t = 0; t < S; t++) {
+    for (let t = 0; t < T; t++) {
       let r = E.Z.getMessage(n, e);
       if ((null == r ? true : r.type) !== y.uaV.REPLY || null == r.messageReference) return t;
       e = r.messageReference.message_id
     }
-    return S
+    return T
   }, [n, r])
 }
 
@@ -75,7 +75,7 @@ function A(e) {
       className: v.text,
       variant: "text-sm/normal",
       children: O.intl.format(O.t.B3V0FM, {
-        count: Math.min(S, a + 1)
+        count: Math.min(T, a + 1)
       })
     }), (0, r.jsx)(c.Text, {
       color: "text-link",
@@ -98,14 +98,14 @@ function C(e) {
   } = t, {
     guildId: g,
     nick: E,
-    colorString: S,
+    colorString: T,
     colorStrings: C,
     colorRoleName: N,
     authorId: R,
     displayNameStyles: P
-  } = (0, f.ZP)(a), w = (0, _.X7)(g, R, C), D = (0, d.j)({
+  } = (0, f.ZP)(a), D = (0, _.X7)(g, R, C), w = (0, d.j)({
     displayNameStyles: P
-  }), x = T(i, a), L = (0, m.NE)(i, a), M = n.showThreadPromptOnReply && x >= I && L, j = () => (0, h.uL)(y.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
+  }), x = S(i, a), L = (0, m.NE)(i, a), M = n.showThreadPromptOnReply && x >= I && L, j = () => (0, h.uL)(y.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
   function k(e) {
     e.stopPropagation(), (0, p.qx)(i.id, !s)
@@ -138,10 +138,10 @@ function C(e) {
               userHook: (e, t) => (0, r.jsx)(c.PUh, {
                 className: v.name,
                 name: E,
-                colorString: S,
-                colorStrings: w,
+                colorString: T,
+                colorStrings: D,
                 roleName: N,
-                displayNameStylesFont: D
+                displayNameStylesFont: w
               }, t)
             })
           })

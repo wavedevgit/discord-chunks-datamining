@@ -63,13 +63,13 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function D(e) {
+function w(e) {
   let {
     guildBoostSlot: t,
     isCancellable: n,
@@ -78,7 +78,7 @@ function D(e) {
     premiumSubscription: s,
     useReducedMotion: d,
     fractionalState: f
-  } = e, _ = i.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), p = (0, b.tl)(t), h = (null == s ? true : s.isPaused) === true && f === T.a$.NONE, m = A.intl.string(A.t.mOWsF1);
+  } = e, _ = i.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), p = (0, b.tl)(t), h = (null == s ? true : s.isPaused) === true && f === S.a$.NONE, m = A.intl.string(A.t.mOWsF1);
   return (0, r.jsxs)("li", {
     className: C.unappliedGuildBoostSlot,
     children: [(0, r.jsxs)("div", {
@@ -110,7 +110,7 @@ function D(e) {
         "aria-label": m.toString(),
         children: e => (0, r.jsx)("div", {
           className: C.unappliedGuildBoostSlotCta,
-          children: (0, r.jsx)(c.Avr, w(R({}, e), {
+          children: (0, r.jsx)(c.Avr, D(R({}, e), {
             variant: "primary",
             text: A.intl.string(A.t.twFU3R),
             onClick: () => a(t),
@@ -124,7 +124,7 @@ function D(e) {
         "aria-label": m.toString(),
         children: e => (0, r.jsx)("div", {
           className: C.unappliedGuildBoostSlotCta,
-          children: (0, r.jsx)(c.Avr, w(R({}, e), {
+          children: (0, r.jsx)(c.Avr, D(R({}, e), {
             variant: "primary",
             text: A.intl.string(A.t["2glQNp"]),
             onClick: () => o(t),
@@ -138,20 +138,20 @@ function D(e) {
 }
 
 function x(e) {
-  (0, u.ZDy)(async () => t => (0, r.jsx)(_.default, w(R({}, t), {
+  (0, u.ZDy)(async () => t => (0, r.jsx)(_.default, D(R({}, t), {
     guildBoostSlots: [e],
-    locationSection: S.jXE.SETTINGS_PREMIUM
+    locationSection: T.jXE.SETTINGS_PREMIUM
   })))
 }
 
 function L(e) {
-  (0, u.ZDy)(async () => t => (0, r.jsx)(p.default, w(R({}, t), {
+  (0, u.ZDy)(async () => t => (0, r.jsx)(p.default, D(R({}, t), {
     guildBoostSlot: e
   })))
 }
 
 function M(e) {
-  (0, u.ZDy)(async () => t => (0, r.jsx)(h.default, w(R({}, t), {
+  (0, u.ZDy)(async () => t => (0, r.jsx)(h.default, D(R({}, t), {
     guildBoostSlotId: e.id
   })))
 }
@@ -166,8 +166,8 @@ let j = function(e) {
     } = (0, f.Z)(),
     v = (0, s.e7)([d.Z], () => d.Z.useReducedMotion),
     I = (0, s.e7)([g.default], () => g.default.getCurrentUser()),
-    S = h === T.a$.FP_SUB_PAUSED,
-    N = p && !S,
+    T = h === S.a$.FP_SUB_PAUSED,
+    N = p && !T,
     {
       appliedGuildBoostSlots: P,
       unappliedGuildBoostSlots: j,
@@ -228,7 +228,7 @@ let j = function(e) {
   } else n = G ? A.intl.string(A.t["8pcUZi"]) : A.intl.formatToPlainString(A.t.Kaw82o, {
     numUnappliedGuildBoostSlots: K
   });
-  return a = p && h === T.a$.NONE ? A.intl.string(A.t.mOWsF1) : A.intl.string(A.t.xr4m5B), (0, r.jsx)("div", {
+  return a = p && h === S.a$.NONE ? A.intl.string(A.t.mOWsF1) : A.intl.string(A.t.xr4m5B), (0, r.jsx)("div", {
     className: C.wrapper,
     children: (0, r.jsxs)("div", {
       className: o()(C.content, [C.headerWithoutSpecialHeader]),
@@ -258,7 +258,7 @@ let j = function(e) {
             shouldShow: null == W || N,
             text: a,
             "aria-label": a.toString(),
-            children: e => (0, r.jsx)(u.Button, w(R({
+            children: e => (0, r.jsx)(u.Button, D(R({
               variant: "primary",
               text: A.intl.string(A.t.BMx1iy)
             }, e), {
@@ -269,7 +269,7 @@ let j = function(e) {
         })]
       }), (!V || U) && (0, r.jsx)("ul", {
         className: C.unappliedBoostSlots,
-        children: j.map(e => (0, r.jsx)(D, {
+        children: j.map(e => (0, r.jsx)(w, {
           guildBoostSlot: e,
           isCancellable: F,
           onCancel: L,

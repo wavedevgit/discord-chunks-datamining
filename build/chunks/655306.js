@@ -37,8 +37,8 @@ let b = 100,
   },
   v = 100,
   I = 3,
-  S = 30 * Chunk70956.Z.Millis.SECOND,
-  T = 120 * Chunk70956.Z.Millis.SECOND,
+  T = 30 * Chunk70956.Z.Millis.SECOND,
+  S = 120 * Chunk70956.Z.Millis.SECOND,
   A = false !== (0, Chunk526167.hY)();
 var C = function(e) {
   return e.UserSSRCUpdate = "user-ssrc-update", e.Update = "update", e
@@ -144,7 +144,7 @@ class N extends Chunk47770.Z {
     return module
   }
   getOffscreenTimeoutMs() {
-    return this.isStageChannel ? T : S
+    return this.isStageChannel ? S : T
   }
   getSimulcastOverrideQuality(e) {
     return this.simulcastDebugOverrides.has(e) ? this.simulcastDebugOverrides.get(e) : g.Z.NO_OVERRIDE

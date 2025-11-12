@@ -222,7 +222,7 @@ function ey(e) {
     guildProductListingId: a
   } = e, o = (0, O.hO)(r, a, {
     requireCurrentGuild: false
-  }), s = (0, f.e7)([v.Z], () => v.Z.getGuildProductFetchState(a) === v.M.FETCHING), l = null == o ? true : o.role_id, c = (0, f.e7)([k.Z], () => null != l ? k.Z.getRole(r, l) : true, [r, l]), u = (0, T.Z)({
+  }), s = (0, f.e7)([v.Z], () => v.Z.getGuildProductFetchState(a) === v.M.FETCHING), l = null == o ? true : o.role_id, c = (0, f.e7)([k.Z], () => null != l ? k.Z.getRole(r, l) : true, [r, l]), u = (0, S.Z)({
     guildId: r,
     productId: a
   }), d = (null != (n = null == o || null == (t = o.attachments) ? true : t.length) ? n : 0) > 0, h = null != c;
@@ -246,7 +246,7 @@ function ey(e) {
         color: "header-secondary",
         className: et.guildProductBenefitLabel,
         children: ee.intl.string(ee.t.gWBNet)
-      }), (0, i.jsx)(S.Z, {
+      }), (0, i.jsx)(T.Z, {
         role: c
       })]
     })]
@@ -865,8 +865,8 @@ function ev(e) {
   }, [d, _]);
   let v = (0, f.e7)([U.Z], () => U.Z.getGuild(null == h ? true : h.guildId)),
     I = c ? h : true,
-    S = r.subscription,
-    T = (0, f.e7)([Z.Z], () => null != S && S.type !== Q.NYc.PREMIUM ? Z.Z.get(S.items[0].planId) : null),
+    T = r.subscription,
+    S = (0, f.e7)([Z.Z], () => null != T && T.type !== Q.NYc.PREMIUM ? Z.Z.get(T.items[0].planId) : null),
     A = (0, f.e7)([G.default], () => {
       var e, t, n, i;
       let a = r.isGift ? null == (e = r.entitlements) ? true : e.find(e => {
@@ -885,7 +885,7 @@ function ev(e) {
     compactMode: s,
     className: l,
     payment: r,
-    plan: T,
+    plan: S,
     claimedGiftUser: A,
     hasLinkedToApplication: b
   })

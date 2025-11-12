@@ -63,12 +63,12 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = (0, Chunk509442.animated)(Chunk481060.CJ0),
+let w = (0, Chunk509442.animated)(Chunk481060.CJ0),
   x = e => {
     var t;
     let {
@@ -89,7 +89,7 @@ let D = (0, Chunk509442.animated)(Chunk481060.CJ0),
     } = (0, d.ZP)(), [F, V] = i.useState(null), [H, Y] = i.useState(null), W = (0, _.Z)(e => {
       let t = e.target;
       V(t.offsetWidth), Y(t.scrollWidth)
-    }), K = (0, f.y)(W), z = (0, I.uq)(N), q = N === m.jn.QUESTS_EMBED, X = (0, h.t5)(a, S.dr.QUESTS_CARD, N, G), Q = (null == (t = a.userStatus) ? true : t.completedAt) != null, J = (0, p.O5)(), $ = (0, h.B6)(a.config.expiresAt), ee = (0, h.B6)(g.r.build(a.config).rewardsExpireAt), et = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), en = e => {
+    }), K = (0, f.y)(W), z = (0, I.uq)(N), q = N === m.jn.QUESTS_EMBED, X = (0, h.t5)(a, T.dr.QUESTS_CARD, N, G), Q = (null == (t = a.userStatus) ? true : t.completedAt) != null, J = (0, p.O5)(), $ = (0, h.B6)(a.config.expiresAt), ee = (0, h.B6)(g.r.build(a.config).rewardsExpireAt), et = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), en = e => {
       e.stopPropagation(), e.currentTarget.blur(), U(), J({
         questId: a.id,
         questContent: N,
@@ -103,7 +103,7 @@ let D = (0, Chunk509442.animated)(Chunk481060.CJ0),
       gameTileSize: b.fF.MEDIUM,
       quest: a,
       separatorSpacing: b.US.MEDIUM,
-      theme: T.BR.DARK,
+      theme: S.BR.DARK,
       withGameTile: !q || null == a.config.cosponsorMetadata
     });
     return (0, r.jsxs)("div", {
@@ -158,7 +158,7 @@ let D = (0, Chunk509442.animated)(Chunk481060.CJ0),
                   quest: a,
                   questContent: N,
                   className: C.headerCollapsedRewardTile,
-                  location: S.dr.QUESTS_CARD,
+                  location: T.dr.QUESTS_CARD,
                   sourceQuestContent: G
                 })
               }), (0, r.jsxs)("div", {
@@ -247,7 +247,7 @@ let D = (0, Chunk509442.animated)(Chunk481060.CJ0),
                 visibility: L || M ? "inherit" : "hidden"
               },
               "aria-hidden": !L && !M,
-              children: (0, r.jsx)(u.P3F, w(R({}, e), {
+              children: (0, r.jsx)(u.P3F, D(R({}, e), {
                 className: C.iconWrapper,
                 "aria-label": A.intl.string(A.t.DEoVWZ),
                 children: (0, r.jsx)(u.xhG, {
@@ -260,7 +260,7 @@ let D = (0, Chunk509442.animated)(Chunk481060.CJ0),
             onClick: en,
             className: C.iconWrapper,
             "aria-label": M ? A.intl.string(A.t.iTcuma) : A.intl.string(A.t.dcl9MQ),
-            children: (0, r.jsx)(D, {
+            children: (0, r.jsx)(w, {
               style: {
                 rotate: x.to({
                   range: [0, 1],

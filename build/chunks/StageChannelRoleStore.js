@@ -59,14 +59,14 @@ function I(e, t) {
   } : y
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   null == b[t] && (b[t] = {});
   let r = I(e, t, n);
   return b[t][e] = r, r
 }
 
-function T(e, t) {
+function S(e, t) {
   var n;
   if (null == t) returnfalse;
   let r = l.Z.getChannel(t);
@@ -109,7 +109,7 @@ function P(e) {
   return null != n && null != t && A(n.id, t)
 }
 
-function w(e) {
+function D(e) {
   let {
     voiceStates: t
   } = e;
@@ -118,11 +118,11 @@ function w(e) {
       userId: n,
       channelId: r
     } = t;
-    return T(n, r) || e
+    return S(n, r) || e
   }, false)
 }
 
-function D(e) {
+function w(e) {
   return C(e.guildId)
 }
 
@@ -160,9 +160,9 @@ class M extends(r = Chunk442837.ZP.Store) {
     if (null == e || null == t || e === (null == (n = f.default.getCurrentUser()) ? true : n.id) && (0, g.NE)()) return y;
     let a = null == (r = b[t]) ? true : r[e];
     if (null != a)
-      if (i && null == a.moderator) return S(e, t, true);
+      if (i && null == a.moderator) return T(e, t, true);
       else return a;
-    return S(e, t, i)
+    return T(e, t, i)
   }
 }
 E(M, "displayName", "StageChannelRoleStore");
@@ -172,8 +172,8 @@ let j = new M(Chunk570140.Z, {
   GUILD_MEMBER_REMOVE: P,
   GUILD_MEMBER_UPDATE: P,
   GUILD_ROLE_UPDATE: R,
-  PASSIVE_UPDATE_V2: D,
-  VOICE_STATE_UPDATES: w,
+  PASSIVE_UPDATE_V2: w,
+  VOICE_STATE_UPDATES: D,
   GUILD_CREATE: L,
   GUILD_DELETE: L
 })

@@ -65,7 +65,7 @@ function N() {
     } = o;
     return a()(n).map(n => {
       var c;
-      if (!n.isPrivate() && !E.Z.can(T.Pl.VIEW_CHANNEL, n)) return null;
+      if (!n.isPrivate() && !E.Z.can(S.Pl.VIEW_CHANNEL, n)) return null;
       let u = null != r && (r.id === n.id || i === n.id),
         f = null != r && r.isThread() && r.parent_id === n.id,
         p = null != (c = u || f || !s ? d.Z.getActiveJoinedRelevantThreadsForParent(n.guild_id, n.id) : d.Z.getActiveJoinedUnreadThreadsForParent(n.guild_id, n.id)) ? c : {},
@@ -110,7 +110,7 @@ function N() {
       let {
         id: n,
         order: r
-      } = e, i = l.Z.getCategoryRecord(n), a = null != (t = u[n]) ? t : [], o = O.ZP.isChannelMuted(S._, n), s = p.Z.isCollapsed(n), c = null;
+      } = e, i = l.Z.getCategoryRecord(n), a = null != (t = u[n]) ? t : [], o = O.ZP.isChannelMuted(T._, n), s = p.Z.isCollapsed(n), c = null;
       return {
         isMuted: o,
         isCollapsed: s,

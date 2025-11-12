@@ -29,7 +29,7 @@ function p(e) {
     value: b,
     labelType: y = "primary",
     usageVariant: O = "single"
-  } = e, v = (0, i.useRef)(null), I = (0, i.useRef)(null), S = (0, i.useRef)(null), [T, A] = (0, i.useState)(true), C = (0, i.useRef)(false), N = null != m && "" !== m, R = null != n && "" !== n, P = null != E ? E : null;
+  } = e, v = (0, i.useRef)(null), I = (0, i.useRef)(null), T = (0, i.useRef)(null), [S, A] = (0, i.useState)(true), C = (0, i.useRef)(false), N = null != m && "" !== m, R = null != n && "" !== n, P = null != E ? E : null;
   (0, i.useEffect)(() => {
     if (!C.current) {
       C.current = true;
@@ -37,23 +37,23 @@ function p(e) {
     }
     A(t ? "animateIn" : "animateOut")
   }, [t]);
-  let w = e => {
+  let D = e => {
     null != a && a(e)
   };
   return (0, r.jsx)(c.tE, {
     focusTarget: I,
-    ringTarget: S,
+    ringTarget: T,
     children: (0, r.jsx)(s.XZ, {
-      ref: S,
+      ref: T,
       inputRef: I,
       "aria-hidden": h || true,
       "aria-labelledby": g,
       isSelected: t,
-      onChange: w,
+      onChange: D,
       isDisabled: p,
       isReadOnly: h,
       "data-mana-component": "checkbox",
-      className: o()(_.checkboxOption, "string" == typeof T && _[T], "indicator" !== O && _.spacing),
+      className: o()(_.checkboxOption, "string" == typeof S && _[S], "indicator" !== O && _.spacing),
       value: String(b),
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {

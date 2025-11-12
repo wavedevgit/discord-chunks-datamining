@@ -76,12 +76,12 @@ function I(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let S = {
+let T = {
     xs: "text-xs/medium",
     sm: "text-sm/medium",
     md: "text-md/medium"
   },
-  T = {
+  S = {
     xs: "xxs",
     sm: "xs",
     md: "refresh_sm"
@@ -101,11 +101,11 @@ function C(e) {
       icon: E,
       iconPosition: y = "start",
       iconOpticalOffsetMargin: I = 0,
-      fullWidth: T = false,
+      fullWidth: S = false,
       focusProps: A,
       loading: C,
-      loadingStartedLabel: w,
-      loadingFinishedLabel: D,
+      loadingStartedLabel: D,
+      loadingFinishedLabel: w,
       rounded: x = false,
       type: L = "button",
       rel: M,
@@ -125,7 +125,7 @@ function C(e) {
     z = v(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "fullWidth", "focusProps", "loading", "loadingStartedLabel", "loadingFinishedLabel", "rounded", "type", "rel", "onClick", "onDoubleClick", "onMouseEnter", "onMouseLeave", "onMouseUp", "onMouseDown", "onKeyDown", "disabled", "minWidth", "className", "style", "buttonRef"]);
   let q = (0, u.M)(),
     X = null != (t = null == q ? true : q.size) ? t : p,
-    Q = null != (n = null == q ? true : q.fullWidth) ? n : T,
+    Q = null != (n = null == q ? true : q.fullWidth) ? n : S,
     J = null != h,
     $ = i.useRef(null),
     ee = null != K ? K : $,
@@ -146,15 +146,15 @@ function C(e) {
     eo = (0, s.a)(ei),
     es = i.useRef(false);
   i.useEffect(() => {
-    true === C && (es.current = true, l.u.announce(null != w ? w : ea.BUTTON_LOADING_STARTED_LABEL)), false === C && true === es.current && (l.u.announce(null != D ? D : ea.BUTTON_LOADING_FINISHED_LABEL), es.current = false)
-  }, [C, w, D, ea.BUTTON_LOADING_STARTED_LABEL, ea.BUTTON_LOADING_FINISHED_LABEL]);
+    true === C && (es.current = true, l.u.announce(null != D ? D : ea.BUTTON_LOADING_STARTED_LABEL)), false === C && true === es.current && (l.u.announce(null != w ? w : ea.BUTTON_LOADING_FINISHED_LABEL), es.current = false)
+  }, [C, D, w, ea.BUTTON_LOADING_STARTED_LABEL, ea.BUTTON_LOADING_FINISHED_LABEL]);
   let el = (0, r.jsxs)("div", {
       className: o()(g.buttonChildren, {
         [g.loading]: C
       }),
       children: [null != et && "start" === y && et, J && (0, r.jsx)(m.x, {
         tag: "span",
-        variant: S[X],
+        variant: T[X],
         color: "none",
         lineClamp: 1,
         children: h
@@ -321,7 +321,7 @@ function P(e) {
     c = (0, r.jsx)(e, {
       color: "currentColor",
       style: u(),
-      size: T[o],
+      size: S[o],
       className: g.icon
     })
   } else if (null != t) {
@@ -330,8 +330,8 @@ function P(e) {
       c = (0, r.jsx)(e, O(b({}, t.riveProps), {
         eventTargetRef: s,
         style: {
-          width: f.Z[T[o]],
-          height: f.Z[T[o]]
+          width: f.Z[S[o]],
+          height: f.Z[S[o]]
         }
       }))
     } else if ("sticker" === t.type) {

@@ -19,15 +19,15 @@ var r, i, a, Chunk848120 = require("./848120.js"),
   Chunk744569 = require("./744569.js"),
   Chunk199838 = require("./199838.js"),
   I = Chunk199838.enforce,
-  S = Chunk199838.get,
-  T = Chunk127849.Int8Array,
-  A = T && T.prototype,
+  T = Chunk199838.get,
+  S = Chunk127849.Int8Array,
+  A = S && S.prototype,
   C = Chunk127849.Uint8ClampedArray,
   N = C && C.prototype,
-  R = T && Chunk961050(T),
+  R = S && Chunk961050(S),
   P = A && Chunk961050(A),
-  w = Object.prototype,
-  D = Chunk127849.TypeError,
+  D = Object.prototype,
+  w = Chunk127849.TypeError,
   x = Chunk751736("toStringTag"),
   L = Chunk744569("TYPED_ARRAY_TAG"),
   M = "TypedArrayConstructor",
@@ -56,7 +56,7 @@ var r, i, a, Chunk848120 = require("./848120.js"),
   Z = function(e) {
     var t = E(e);
     if (u(t)) {
-      var n = S(t);
+      var n = T(t);
       return n && d(n, M) ? n[M] : Z(t)
     }
   },
@@ -67,11 +67,11 @@ var r, i, a, Chunk848120 = require("./848120.js"),
   },
   V = function(e) {
     if (F(e)) return e;
-    throw new D("Target is not a typed array")
+    throw new w("Target is not a typed array")
   },
   H = function(e) {
     if (c(e) && (!b || g(R, e))) return e;
-    throw new D(_(e) + " is not a typed array constructor")
+    throw new w(_(e) + " is not a typed array constructor")
   },
   Y = function(e, t, n, r) {
     if (s) {
@@ -109,10 +109,10 @@ var r, i, a, Chunk848120 = require("./848120.js"),
 for (r in U)(a = (i = Chunk127849[r]) && i.prototype) ? I(a)[M] = i : j = false;
 for (r in G)(a = (i = Chunk127849[r]) && i.prototype) && (I(a)[M] = i);
 if ((!j || !Chunk880181(R) || R === Function.prototype) && (R = function() {
-    throw new D("Incorrect invocation")
+    throw new w("Incorrect invocation")
   }, j))
   for (r in U) Chunk127849[r] && Chunk769827(Chunk127849[r], R);
-if ((!j || !P || P === w) && (P = R.prototype, j))
+if ((!j || !P || P === D) && (P = R.prototype, j))
   for (r in U) Chunk127849[r] && Chunk769827(Chunk127849[r].prototype, P);
 if (j && Chunk961050(N) !== P && Chunk769827(N, P), Chunk507604 && !Chunk77025(P, x))
   for (r in k = true, Chunk573078(P, x, {

@@ -37,7 +37,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,7 +62,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -105,13 +105,13 @@ let P = e => {
   return !!(!n || r || i || (null == t ? true : t.isLockedThread()) || (null == t ? true : t.isArchivedThread()) && !s) || !!o
 };
 
-function w(e, t) {
+function D(e, t) {
   var n, r;
   let a = i.useContext(j),
     o = i.useCallback(t => {
       var n;
       let r = (0, v.Z)(e, t, null != a.modal ? "modal" : "message");
-      return null == (n = a.setValidationErrors) || n.call(a, t => A(S({}, t), {
+      return null == (n = a.setValidationErrors) || n.call(a, t => A(T({}, t), {
         [e.id]: r
       })), null == r
     }, [e, a]);
@@ -128,7 +128,7 @@ function w(e, t) {
   }
 }
 
-function D(e, t, n, r) {
+function w(e, t, n, r) {
   var o;
   let s = (0, a.e7)([O.Z], () => O.Z.getInteractionComponentState(e.id, n.id)),
     l = (0, a.e7)([u.ZP], () => u.ZP.getInteraction(e), [e]),
@@ -136,7 +136,7 @@ function D(e, t, n, r) {
     {
       error: d,
       validate: _
-    } = w(n, s),
+    } = D(n, s),
     p = null != (o = e.applicationId) ? o : e.author.id;
   return {
     state: s,
@@ -166,7 +166,7 @@ function x(e, t, n) {
     {
       error: s,
       validate: c
-    } = w(t, r),
+    } = D(t, r),
     u = i.useCallback(n => null == n || (o.Z.dispatch({
       type: "SET_INTERACTION_COMPONENT_STATE",
       rootContainerId: e.customId,
@@ -209,7 +209,7 @@ function k(e) {
     shouldDisableInteractiveComponents: u = false
   } = e, d = i.useMemo(() => {
     if (null != n) return {
-      useComponentState: D.bind(null, n, u),
+      useComponentState: w.bind(null, n, u),
       channelId: n.channel_id,
       containerId: n.id,
       message: n,

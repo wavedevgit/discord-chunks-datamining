@@ -31,8 +31,8 @@ let b = Chunk647438.memo(function(e) {
   } = e, {
     firstProfileEffect: v,
     firstAvatarDecoration: I,
-    firstNameplate: S
-  } = (0, f.Rj)(t), T = (0, p.O1)(I), A = (0, c.ZP)(), C = (0, s.ap)(A), N = i.useMemo(() => (0, _.L)(t), [t]), R = i.useMemo(() => null != S ? l.EFr.SIZE_96 : l.EFr.SIZE_120, [S]), P = i.useMemo(() => C ? E : g, [C]);
+    firstNameplate: T
+  } = (0, f.Rj)(t), S = (0, p.O1)(I), A = (0, c.ZP)(), C = (0, s.ap)(A), N = i.useMemo(() => (0, _.L)(t), [t]), R = i.useMemo(() => null != T ? l.EFr.SIZE_96 : l.EFr.SIZE_120, [T]), P = i.useMemo(() => C ? E : g, [C]);
   return (0, r.jsxs)("div", {
     className: o()(m.container, N ? m.threeItemBundle : null, O),
     children: [(0, r.jsx)("div", {
@@ -47,7 +47,7 @@ let b = Chunk647438.memo(function(e) {
     }), (0, r.jsx)("div", {
       className: o()(m.avatarDecorationPreview, y ? m.avatarDecorationPreviewCollectedModal : null, N ? m.avatarDecorationDropShadow : null),
       children: (0, r.jsx)(h.R, {
-        item: T,
+        item: S,
         user: b,
         avatarSize: R,
         isPurchased: n,
@@ -59,12 +59,12 @@ let b = Chunk647438.memo(function(e) {
       className: o()(m.nameplatePreview, y ? m.nameplatePreviewCollectedModal : null),
       children: (0, r.jsx)(u.Z, {
         user: b,
-        nameplate: S,
+        nameplate: T,
         isHighlighted: a,
         isPurchased: n,
         nameplatePreviewSize: "default",
         showPlaceholderUser: !a,
-        pendingAvatarDecoration: T
+        pendingAvatarDecoration: S
       })
     })]
   })

@@ -79,7 +79,7 @@ function G(e) {
       } = e;
       return (t === (null == B ? true : B.application_id) || t === (null == Z ? true : Z.applicationId)) && (0, f.p)(n) === ee
     })),
-    er = (0, i.e7)([D.Z], () => null != B && null != B.application_id && D.Z.getState(B.application_id, j.mFx.JOIN) === j.OcF.LOADING),
+    er = (0, i.e7)([w.Z], () => null != B && null != B.application_id && w.Z.getState(B.application_id, j.mFx.JOIN) === j.OcF.LOADING),
     ei = (0, b.q)(X),
     ea = (0, y.A)(ei),
     eo = (0, p.s5)({
@@ -88,7 +88,7 @@ function G(e) {
       channelId: ee,
       application: ei
     }),
-    es = (0, i.e7)([v.Z, T.Z, S.Z, N.Z, R.Z, w.Z, C.Z], () => null != Z ? eo === p.Fw.CAN_JOIN : (0, d.Z)({
+    es = (0, i.e7)([v.Z, S.Z, T.Z, N.Z, R.Z, D.Z, C.Z], () => null != Z ? eo === p.Fw.CAN_JOIN : (0, d.Z)({
       user: F,
       activity: B,
       application: ei,
@@ -96,11 +96,11 @@ function G(e) {
       currentUser: J,
       isEmbedded: Q,
       ChannelStore: v.Z,
-      GuildStore: T.Z,
-      GuildMemberCountStore: S.Z,
+      GuildStore: S.Z,
+      GuildMemberCountStore: T.Z,
       RelationshipStore: N.Z,
       SelectedChannelStore: R.Z,
-      VoiceStateStore: w.Z,
+      VoiceStateStore: D.Z,
       PermissionStore: C.Z
     })),
     el = (0, i.e7)([c.ZP], () => {

@@ -2,7 +2,7 @@
 /** chunk id: 644646, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk858191 = require("./858191.js");
 
-function S(e) {
+function T(e) {
   let {
     appFocused: t,
     location: n
@@ -42,27 +42,27 @@ function S(e) {
     shinePaused: !t
   }) : null
 }
-let T = function(e) {
+let S = function(e) {
   let t, {
       className: n,
       quest: a,
       autoplay: h = true,
-      learnMoreStyle: T = null,
+      learnMoreStyle: S = null,
       learnMoreFontSize: A,
       sourceQuestContent: C,
       lazyLoad: N = false,
       style: R,
       showShine: P = true,
-      location: w
+      location: D
     } = e,
-    D = (0, _.O5)(),
+    w = (0, _.O5)(),
     x = (0, l.e7)([f.Z], () => f.Z.isFocused()),
     L = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
     M = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD), [a]),
     j = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD_IMAGE), [a]),
     k = i.useCallback(t => {
       var n;
-      (0, s.kK)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), D({
+      (0, s.kK)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), w({
         questId: a.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
@@ -72,7 +72,7 @@ let T = function(e) {
         fromContent: e.questContent,
         questId: a.id
       }), null == (n = e.onClick) || n.call(e, t)
-    }, [D, a.id, e, C]),
+    }, [w, a.id, e, C]),
     U = i.useRef(null),
     G = i.useRef(h),
     B = (0, p.Bg)(a.config);
@@ -134,7 +134,7 @@ let T = function(e) {
       src: M.url,
       onLoad: e.onLoadComplete
     })
-  }), null == T ? (0, r.jsx)("div", {
+  }), null == S ? (0, r.jsx)("div", {
     className: o()(I.questRewardTile, n),
     style: R,
     children: t
@@ -142,10 +142,10 @@ let T = function(e) {
     className: o()(I.questRewardTileInteractive, I.questRewardTile, I.rewardHighlight, n),
     onClick: k,
     style: R,
-    children: [t, P && !L && (0, r.jsx)(S, {
+    children: [t, P && !L && (0, r.jsx)(T, {
       appFocused: x,
-      location: w
-    }), "text" === T && (0, r.jsx)(c.Text, {
+      location: D
+    }), "text" === S && (0, r.jsx)(c.Text, {
       color: "always-white",
       variant: "text-xs/normal",
       className: I.questRewardTileDetailsLearnMore,
@@ -153,7 +153,7 @@ let T = function(e) {
         fontSize: A
       },
       children: v.intl.format(v.t.DYAleT, {})
-    }), "icon" === T && (0, r.jsx)("div", {
+    }), "icon" === S && (0, r.jsx)("div", {
       className: I.questRewardTileDetailsLearnMore,
       children: (0, r.jsx)(c.d3s, {
         size: "xxs",

@@ -34,40 +34,40 @@ function E(e, t, n) {
     sensitivity: "base"
   }), {
     direction: I
-  } = (0, p.j)(), S = t.selectionManager.disabledBehavior, T = (0, m.useMemo)(() => E || new(0, a.x)({
+  } = (0, p.j)(), T = t.selectionManager.disabledBehavior, S = (0, m.useMemo)(() => E || new(0, a.x)({
     collection: t.collection,
     disabledKeys: t.disabledKeys,
-    disabledBehavior: S,
+    disabledBehavior: T,
     ref: n,
     direction: I,
     collator: v,
     layoutDelegate: y,
     layout: O
-  }), [E, t.collection, t.disabledKeys, S, n, I, v, y, O]), A = (0, l.Me)(e.id);
+  }), [E, t.collection, t.disabledKeys, T, n, I, v, y, O]), A = (0, l.Me)(e.id);
   r._e.set(t, A);
   let {
     gridProps: C
   } = (0, s.N)({
     ...e,
     id: A,
-    keyboardDelegate: T
+    keyboardDelegate: S
   }, t, n);
   b && (C["aria-rowcount"] = t.collection.size + t.collection.headerRows.length), (0, f.OV)() && "expandedKeys" in t && (C.role = "treegrid");
   let {
     column: N,
     direction: R
-  } = t.sortDescriptor || {}, P = (0, h.q)(g(i.Z), "@react-aria/table"), w = (0, m.useMemo)(() => {
+  } = t.sortDescriptor || {}, P = (0, h.q)(g(i.Z), "@react-aria/table"), D = (0, m.useMemo)(() => {
     var e, n;
     let r = null != (n = null == (e = t.collection.columns.find(e => e.key === N)) ? true : e.textValue) ? n : "";
     return R && N ? P.format(`${R}Sort`, {
       columnName: r
     }) : true
-  }, [R, N, t.collection.columns]), D = (0, c.P)(w);
+  }, [R, N, t.collection.columns]), w = (0, c.P)(D);
   return (0, u.r)(() => {
-    w && (0, o.xQ)(w, "assertive", 500)
-  }, [w]), {
-    gridProps: (0, d.d)(C, D, {
-      "aria-describedby": [D["aria-describedby"], C["aria-describedby"]].filter(Boolean).join(" ")
+    D && (0, o.xQ)(D, "assertive", 500)
+  }, [D]), {
+    gridProps: (0, d.d)(C, w, {
+      "aria-describedby": [w["aria-describedby"], C["aria-describedby"]].filter(Boolean).join(" ")
     })
   }
 }

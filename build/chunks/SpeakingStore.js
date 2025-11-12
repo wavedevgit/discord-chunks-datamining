@@ -58,7 +58,7 @@ function I(e, t) {
   returnfalse
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   var r, i;
   let a = y(e),
     o = a.get(t),
@@ -77,7 +77,7 @@ function S(e, t, n) {
   returntrue
 }
 
-function T(e) {
+function S(e) {
   let {
     user: t,
     sessionId: n
@@ -99,7 +99,7 @@ function A(e) {
       context: e
     }) ? l.Z.setCanHavePriority(n, true) : (l.Z.setCanHavePriority(n, false), r &= ~f.Dg.PRIORITY)
   }
-  return (r & f.Dg.HIDDEN) === f.Dg.HIDDEN && (r = 0), S(t, n, r)
+  return (r & f.Dg.HIDDEN) === f.Dg.HIDDEN && (r = 0), T(t, n, r)
 }
 
 function C(e) {
@@ -179,8 +179,8 @@ class R extends(r = Chunk442837.ZP.Store) {
 }
 _(R, "displayName", "SpeakingStore");
 let P = new R(Chunk570140.Z, {
-  CONNECTION_OPEN: T,
-  OVERLAY_INITIALIZE: T,
+  CONNECTION_OPEN: S,
+  OVERLAY_INITIALIZE: S,
   SPEAKING: A,
   VOICE_STATE_UPDATES: C,
   PUSH_TO_TALK_STATE_CHANGE: N

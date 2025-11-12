@@ -55,7 +55,7 @@ function P(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,8 +66,8 @@ function w(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -218,9 +218,9 @@ function H(e) {
     renderItem: g,
     getProTip: E,
     scrollerClassName: b,
-    className: S,
-    listName: T
-  } = e, R = i.useRef(null), w = (0, p.Z)(T, R), L = (0, u.e7)([y.ZP], () => y.ZP.hasNotice()), B = (0, u.e7)([O.Z], () => O.Z.windowSize());
+    className: T,
+    listName: S
+  } = e, R = i.useRef(null), D = (0, p.Z)(S, R), L = (0, u.e7)([y.ZP], () => y.ZP.hasNotice()), B = (0, u.e7)([O.Z], () => O.Z.windowSize());
   i.useEffect(() => {
     v.default.track(A.rMx.OPEN_POPOUT, {
       type: t
@@ -293,7 +293,7 @@ function H(e) {
   L && (K.maxHeight -= k);
   let z = null != d && a;
   return (0, r.jsx)("div", {
-    className: o()(S, N.messagesPopoutWrap),
+    className: o()(T, N.messagesPopoutWrap),
     style: K,
     onClick: G,
     onDoubleClick: G,
@@ -305,13 +305,13 @@ function H(e) {
         onScroll: z ? Z : true,
         ref: R,
         children: [(0, r.jsx)(c.bG, {
-          navigator: w,
+          navigator: D,
           children: (0, r.jsx)(c.SJ, {
             children: e => {
               var {
                 ref: t
               } = e, n = x(e, ["ref"]);
-              return (0, r.jsx)("div", D(P({
+              return (0, r.jsx)("div", w(P({
                 ref: t
               }, n), {
                 children: F
@@ -349,7 +349,7 @@ function Y(e) {
   });
 
   function P(e, n) {
-    if ((0, S.Z)(e) && !R) {
+    if ((0, T.Z)(e) && !R) {
       let {
         id: r,
         channel_id: i
@@ -358,7 +358,7 @@ function Y(e) {
     }
   }
 
-  function w(e) {
+  function D(e) {
     let {
       message: t,
       channel: n
@@ -368,7 +368,7 @@ function Y(e) {
     let i = [];
     return null == n ? [] : (i.push((0, r.jsxs)("div", {
       className: N.messageGroupWrapper,
-      children: [(0, r.jsx)(T.Z, {
+      children: [(0, r.jsx)(S.Z, {
         className: N.messageGroupCozy,
         message: t,
         channel: n
@@ -385,14 +385,14 @@ function Y(e) {
   i.useEffect(() => {
     n(a)
   }, [a, n]);
-  let D = i.useMemo(() => null == o ? true : o.map(e => ({
+  let w = i.useMemo(() => null == o ? true : o.map(e => ({
     message: e,
     channel: a
   })), [o, a]);
   return (0, r.jsx)(H, {
     className: v,
     scrollerClassName: O,
-    items: D,
+    items: w,
     loading: l,
     analyticsName: t,
     renderEmptyState: h,
@@ -400,7 +400,7 @@ function Y(e) {
     hasMore: s,
     loadMore: c,
     getProTip: y,
-    renderItem: w,
+    renderItem: D,
     listName: C,
     "aria-label": e["aria-label"]
   })

@@ -59,13 +59,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -88,8 +88,8 @@ var C = function(e) {
 let N = e => 0 === e.type || 3 === e.type,
   R = e => 1 === e.type,
   P = e => N(e) ? e.message.nonce : R(e) ? e.message.messageId : e.message.data.id,
-  w = [+Chunk70956.Z.Millis.MINUTE, 5 * Chunk70956.Z.Millis.MINUTE];
-class D extends Chunk651655.Z {
+  D = [+Chunk70956.Z.Millis.MINUTE, 5 * Chunk70956.Z.Millis.MINUTE];
+class w extends Chunk651655.Z {
   isFull() {
     return this.queue.length >= this.maxSize
   }
@@ -125,7 +125,7 @@ class D extends Chunk651655.Z {
     return this.queue.push(...n), this.logger.log("Cancel pending send requests", t.length), t
   }
   startQueueMetricTimers(e) {
-    let t = w.map(e => setTimeout(() => {
+    let t = D.map(e => setTimeout(() => {
       (0, s.yw)(b.rMx.SEND_MESSAGE_QUEUED, {
         queued_duration_ms: e
       })
@@ -153,7 +153,7 @@ class D extends Chunk651655.Z {
     let {
       channelId: r,
       analyticsLocation: i
-    } = e, o = T(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
+    } = e, o = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
       location: s
     } : true, f = (0, u.d)(), p = v({
       mobile_network_type: _.Z.getType()
@@ -173,7 +173,7 @@ class D extends Chunk651655.Z {
     }
     let h = this.createResponseHandler(e.nonce, t),
       m = new AbortController;
-    this.startQueueMetricTimers(e.nonce), a.tn.post(S(v({
+    this.startQueueMetricTimers(e.nonce), a.tn.post(T(v({
       url: b.ANM.MESSAGES(r),
       body: p,
       context: l,
@@ -191,7 +191,7 @@ class D extends Chunk651655.Z {
     let {
       channelId: r,
       analyticsLocation: i
-    } = e, o = T(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
+    } = e, o = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
       location: s
     } : true, f = (0, u.d)(), p = v({
       mobile_network_type: _.Z.getType()
@@ -211,7 +211,7 @@ class D extends Chunk651655.Z {
     }
     let h = this.createResponseHandler(e.nonce, t),
       m = new AbortController;
-    this.startQueueMetricTimers(e.nonce), a.tn.post(S(v({
+    this.startQueueMetricTimers(e.nonce), a.tn.post(T(v({
       url: b.ANM.MESSAGES_ANNOUNCEMENT(r),
       body: p,
       context: l,
@@ -271,7 +271,7 @@ class D extends Chunk651655.Z {
         channelId: n,
         messageId: r,
         isCrossposted: i
-      } = e, o = T(e, ["channelId", "messageId", "isCrossposted"]);
+      } = e, o = S(e, ["channelId", "messageId", "isCrossposted"]);
       let s = new AbortController,
         l = this.createResponseHandler(r, t),
         c = {
@@ -289,4 +289,4 @@ class D extends Chunk651655.Z {
     }
   }
 }
-let x = new D
+let x = new w

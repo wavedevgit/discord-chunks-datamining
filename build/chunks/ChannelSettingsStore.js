@@ -28,7 +28,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,7 +53,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,8 +61,8 @@ let C = Chunk981631.QZA.CLOSED,
   N = {},
   R = {},
   P = false,
-  w = false,
-  D = null,
+  D = false,
+  w = null,
   x = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
 
 function L(e) {
@@ -82,7 +82,7 @@ function L(e) {
 function M(e) {
   let t = O.Z.getChannel(e.channelId);
   if (null == t) return k();
-  C = v.QZA.OPEN, o = a = t, D = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != o && (o = o.set("nsfw", o.isNSFW())), s = O.Z.getChannel(o.parent_id), l = o.getGuildId();
+  C = v.QZA.OPEN, o = a = t, w = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != o && (o = o.set("nsfw", o.isNSFW())), s = O.Z.getChannel(o.parent_id), l = o.getGuildId();
   let n = o.isModeratorReportChannel() ? v.CoT.PERMISSIONS : v.CoT.OVERVIEW;
   return N = {}, j({
     type: "CHANNEL_SETTINGS_SET_SECTION",
@@ -105,7 +105,7 @@ function j(e) {
 }
 
 function k() {
-  w = false, C = Chunk981631.QZA.CLOSED, r = null, o = a = null, s = null, R = {}
+  D = false, C = Chunk981631.QZA.CLOSED, r = null, o = a = null, s = null, R = {}
 }
 
 function U() {
@@ -154,16 +154,16 @@ function F(e) {
     defaultForumLayout: O,
     defaultTagSetting: v,
     iconEmoji: I,
-    themeColor: T
+    themeColor: S
   } = e;
   if (null == o) returnfalse;
-  null != t && (o = o.set("name", t)), null != r && (o = o.set("topic", r)), null != i && (o = o.set("bitrate", i)), null != a && (o = o.set("userLimit", a)), null != s && (o = o.set("nsfw", s)), null != l && (o = o.set("flags", l)), null != c && (o = o.set("rateLimitPerUser", c)), null != u && (o = o.set("defaultThreadRateLimitPerUser", u)), null != d && (o = o.set("threadMetadata", A(S({}, o.threadMetadata), {
+  null != t && (o = o.set("name", t)), null != r && (o = o.set("topic", r)), null != i && (o = o.set("bitrate", i)), null != a && (o = o.set("userLimit", a)), null != s && (o = o.set("nsfw", s)), null != l && (o = o.set("flags", l)), null != c && (o = o.set("rateLimitPerUser", c)), null != u && (o = o.set("defaultThreadRateLimitPerUser", u)), null != d && (o = o.set("threadMetadata", A(T({}, o.threadMetadata), {
     autoArchiveDuration: d
-  }))), null != f && (o = o.set("threadMetadata", A(S({}, o.threadMetadata), {
+  }))), null != f && (o = o.set("threadMetadata", A(T({}, o.threadMetadata), {
     locked: f
-  }))), null != _ && (o = o.set("threadMetadata", A(S({}, o.threadMetadata), {
+  }))), null != _ && (o = o.set("threadMetadata", A(T({}, o.threadMetadata), {
     invitable: _
-  }))), null != p && (o = o.set("defaultAutoArchiveDuration", p)), null != h && (o = o.set("template", h)), null != n && (o = o.set("type", n)), true !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), true !== m && (o = o.set("defaultReactionEmoji", m)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), true !== I && (o = o.set("iconEmoji", I)), null != T && (o = o.set("themeColor", T)), Z()
+  }))), null != p && (o = o.set("defaultAutoArchiveDuration", p)), null != h && (o = o.set("template", h)), null != n && (o = o.set("type", n)), true !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), true !== m && (o = o.set("defaultReactionEmoji", m)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), true !== I && (o = o.set("iconEmoji", I)), null != S && (o = o.set("themeColor", S)), Z()
 }
 
 function V(e) {
@@ -189,11 +189,11 @@ function H(e) {
 }
 
 function Y(e) {
-  R = S({}, R), delete R[e.code]
+  R = T({}, R), delete R[e.code]
 }
 
 function W(e) {
-  R = A(S({}, R), {
+  R = A(T({}, R), {
     [e.invite.code]: V(e.invite)
   })
 }
@@ -243,7 +243,7 @@ class J extends(c = Chunk442837.ZP.Store) {
     return o !== a
   }
   isOpen() {
-    return w
+    return D
   }
   getSection() {
     return r
@@ -276,7 +276,7 @@ class J extends(c = Chunk442837.ZP.Store) {
       invites: R,
       selectedOverwriteId: l,
       hasChanges: this.hasChanges(),
-      analyticsLocation: D
+      analyticsLocation: w
     }
   }
 }

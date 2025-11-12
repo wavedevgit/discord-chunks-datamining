@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $7l: () => Chunk334431.$7,
-  $92: () => e3,
+  $92: () => e2,
   $Ab: () => x,
   $R1: () => Chunk231338.$R,
   $VG: () => Chunk231338.$V,
@@ -21,7 +21,7 @@ require.d(exports, {
   AzA: () => rm,
   B1h: () => Chunk231338.B1,
   B9o: () => tf,
-  BFP: () => t2,
+  BFP: () => t3,
   BRd: () => Chunk231338.BR,
   BVn: () => rV,
   BZL: () => Chunk231338.BZ,
@@ -35,12 +35,12 @@ require.d(exports, {
   Cyb: () => Chunk231338.Cy,
   DJE: () => re,
   DJj: () => eM,
-  DZw: () => ew,
-  E07: () => tT,
+  DZw: () => eD,
+  E07: () => tS,
   EKQ: () => Chunk231338.EK,
   EOG: () => n1,
   ETv: () => Chunk231338.ET,
-  EYA: () => tS,
+  EYA: () => tT,
   EkH: () => v,
   Etm: () => Chunk231338.Et,
   Eu4: () => ns,
@@ -60,7 +60,7 @@ require.d(exports, {
   HGf: () => n5,
   HN8: () => eF,
   HeQ: () => Chunk231338.He,
-  Hqc: () => nT,
+  Hqc: () => nS,
   IE4: () => F,
   IIU: () => e6,
   IWh: () => rN,
@@ -93,8 +93,8 @@ require.d(exports, {
   McO: () => rY,
   NYc: () => Chunk231338.NY,
   NYg: () => nV,
-  N_j: () => n3,
-  NgX: () => S,
+  N_j: () => n2,
+  NgX: () => T,
   O0b: () => n_,
   O0n: () => es,
   O42: () => Chunk334431.O4,
@@ -107,7 +107,7 @@ require.d(exports, {
   OYC: () => $,
   OcF: () => e9,
   Odu: () => ee,
-  PEY: () => e2,
+  PEY: () => e3,
   PNu: () => ej,
   POd: () => rf,
   PRK: () => e0,
@@ -119,7 +119,7 @@ require.d(exports, {
   PsQ: () => tW,
   PyE: () => Chunk231338.Py,
   QCD: () => n$,
-  QIO: () => tD,
+  QIO: () => tw,
   QKv: () => V,
   QL: () => Chunk231338.QL,
   QR$: () => r_,
@@ -135,7 +135,7 @@ require.d(exports, {
   S7T: () => Chunk231338.S7,
   S9g: () => nN,
   SOq: () => n8,
-  SRg: () => nS,
+  SRg: () => nT,
   STv: () => eE,
   SaU: () => tZ,
   Sap: () => ni,
@@ -151,10 +151,10 @@ require.d(exports, {
   TzF: () => nJ,
   U66: () => Chunk231338.U6,
   ULH: () => P,
-  UWR: () => t3,
+  UWR: () => t2,
   Ucd: () => rU,
   Uk1: () => Chunk231338.Uk,
-  UkZ: () => rw,
+  UkZ: () => rD,
   Usc: () => Y,
   Uvt: () => Chunk388123.U,
   V$x: () => Chunk275726.V,
@@ -171,8 +171,8 @@ require.d(exports, {
   X5t: () => Chunk231338.X5,
   X6Q: () => Chunk231338.X6,
   X7u: () => Chunk231338.X7,
-  XAJ: () => eS,
-  XKF: () => n2,
+  XAJ: () => eT,
+  XKF: () => n3,
   XmY: () => e1,
   Xyh: () => e4,
   YeM: () => ec,
@@ -186,14 +186,14 @@ require.d(exports, {
   Zuq: () => Chunk231338.Zu,
   _1z: () => er,
   _8R: () => rj,
-  _s_: () => T,
+  _s_: () => S,
   _vf: () => ei,
   a5g: () => tz,
   aIL: () => ev,
   aIt: () => rc,
   aO5: () => Chunk231338.aO,
   aZC: () => tJ,
-  aib: () => tw,
+  aib: () => tD,
   ane: () => nk,
   apO: () => rr,
   b2L: () => na,
@@ -214,7 +214,7 @@ require.d(exports, {
   eHb: () => nQ,
   eRX: () => nt,
   eWB: () => ta,
-  ecB: () => nD,
+  ecB: () => nw,
   eez: () => t_,
   en1: () => eB,
   epS: () => ru,
@@ -243,8 +243,8 @@ require.d(exports, {
   j3N: () => ek,
   j8d: () => Chunk231338.j8,
   jXE: () => tU,
-  jm8: () => rS,
-  jwA: () => nw,
+  jm8: () => rT,
+  jwA: () => nD,
   kEZ: () => U,
   kGb: () => rd,
   kNB: () => rl,
@@ -269,7 +269,7 @@ require.d(exports, {
   p3w: () => tm,
   p6O: () => t5,
   pAY: () => th,
-  pJs: () => w,
+  pJs: () => D,
   pKx: () => Chunk231338.pK,
   pM4: () => M,
   pNK: () => A,
@@ -282,7 +282,7 @@ require.d(exports, {
   qWG: () => rL,
   qc2: () => rs,
   qhL: () => tn,
-  qrD: () => D,
+  qrD: () => w,
   r2o: () => k,
   rMx: () => nb,
   rnv: () => tA,
@@ -293,10 +293,10 @@ require.d(exports, {
   sFg: () => el,
   sHY: () => ra,
   scU: () => tv,
-  si2: () => rT,
+  si2: () => rS,
   t4x: () => tY,
   tG9: () => eZ,
-  tHP: () => eD,
+  tHP: () => ew,
   tPV: () => eK,
   tPk: () => Chunk231338.tP,
   t_t: () => et,
@@ -331,7 +331,7 @@ require.d(exports, {
   yXt: () => Chunk231338.yX,
   yYS: () => Chunk231338.yY,
   yb: () => W,
-  ylB: () => rD,
+  ylB: () => rw,
   yqN: () => ng,
   ys_: () => e8,
   z7k: () => tI,
@@ -371,10 +371,10 @@ var Chunk106351 = require("./106351.js"),
   I = function(e) {
     return e.UNASSIGNED = "UNASSIGNED", e.PUSH_TO_TALK = "PUSH_TO_TALK", e.PUSH_TO_TALK_PRIORITY = "PUSH_TO_TALK_PRIORITY", e.PUSH_TO_MUTE = "PUSH_TO_MUTE", e.TOGGLE_MUTE = "TOGGLE_MUTE", e.TOGGLE_DEAFEN = "TOGGLE_DEAFEN", e.TOGGLE_CAMERA = "TOGGLE_CAMERA", e.TOGGLE_OVERLAY = "TOGGLE_OVERLAY", e.TOGGLE_VOICE_MODE = "TOGGLE_VOICE_MODE", e.TOGGLE_OVERLAY_INPUT_LOCK = "TOGGLE_OVERLAY_INPUT_LOCK", e.TOGGLE_STREAMER_MODE = "TOGGLE_STREAMER_MODE", e.TOGGLE_PRIORITY_SPEAKER = "TOGGLE_PRIORITY_SPEAKER", e.TOGGLE_GO_LIVE_STREAMING = "TOGGLE_GO_LIVE_STREAMING", e.NAVIGATE_BACK = "NAVIGATE_BACK", e.NAVIGATE_FORWARD = "NAVIGATE_FORWARD", e.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET = "OVERLAY_ACTIVATE_REGION_TEXT_WIDGET", e.SOUNDBOARD = "SOUNDBOARD", e.SOUNDBOARD_HOLD = "SOUNDBOARD_HOLD", e.SAVE_CLIP = "SAVE_CLIP", e.SAVE_SCREENSHOT = "SAVE_SCREENSHOT", e.SWITCH_TO_VOICE_CHANNEL = "SWITCH_TO_VOICE_CHANNEL", e.DISCONNECT_FROM_VOICE_CHANNEL = "DISCONNECT_FROM_VOICE_CHANNEL", e.VAD_PRIORITY = "VAD_PRIORITY", e
   }({}),
-  S = function(e) {
+  T = function(e) {
     return e.ALL_SERVERS = "ALL_SERVERS", e.THIS_SERVER = "THIS_SERVER", e
   }({}),
-  T = function(e) {
+  S = function(e) {
     return e.TRANSPORT = "TRANSPORT", e.OUTBOUND = "OUTBOUND", e.SCREENSHARE = "SCREENSHARE", e.INBOUND = "INBOUND", e.STREAMS_OUTBOUND = "STREAMS_OUTBOUND", e.STREAMS_INBOUND = "STREAMS_INBOUND", e.CAMERA = "CAMERA", e.CLIPS = "CLIPS", e
   }({}),
   A = function(e) {
@@ -392,10 +392,10 @@ var Chunk106351 = require("./106351.js"),
   P = function(e) {
     return e.NONE = "NONE", e.MEMBERS = "MEMBERS", e.SEARCH = "SEARCH", e.SIDEBAR_CHAT = "SIDEBAR_CHAT", e.PROFILE = "PROFILE", e.SUMMARIES = "SUMMARIES", e
   }({}),
-  w = function(e) {
+  D = function(e) {
     return e.ADD_FRIEND = "ADD_FRIEND", e.ALL = "ALL", e.ONLINE = "ONLINE", e.PENDING = "PENDING", e.PENDING_IGNORED = "PENDING_IGNORED", e.SPAM = "SPAM", e.SUGGESTIONS = "SUGGESTIONS", e
   }({}),
-  D = function(e) {
+  w = function(e) {
     return e.NEVER = "NEVER", e.ALL = "ALL", e
   }({}),
   x = function(e) {
@@ -523,8 +523,8 @@ let em = "@me",
   eO = "null",
   ev = "0",
   eI = "null",
-  eS = "1096190356233670716",
-  eT = Object.freeze({
+  eT = "1096190356233670716",
+  eS = Object.freeze({
     USER: e => "/users/".concat(e),
     USER_RELATIONSHIPS: function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : em;
@@ -1494,7 +1494,7 @@ let em = "@me",
     QUEST_PREVIEW_TOOL_2: e => "/quest-home?tab=preview_tool&quest_id=".concat(e),
     ICYMI: "/icymi"
   }),
-  eC = (0, Chunk860911.Ft)(eT),
+  eC = (0, Chunk860911.Ft)(eS),
   eN = (0, Chunk860911.Ft)(eA, [":", "?", "@"]);
 var eR = function(e) {
     return e[e.INSTANCE = 1] = "INSTANCE", e[e.JOIN = 2] = "JOIN", e[e.SYNC = 16] = "SYNC", e[e.PLAY = 32] = "PLAY", e[e.PARTY_PRIVACY_FRIENDS = 64] = "PARTY_PRIVACY_FRIENDS", e[e.PARTY_PRIVACY_VOICE_CHANNEL = 128] = "PARTY_PRIVACY_VOICE_CHANNEL", e[e.EMBEDDED = 256] = "EMBEDDED", e[e.CONTEXTLESS = 512] = "CONTEXTLESS", e[e.SUPPORTS_GATEWAY_ACTIVITY_ACTION_JOIN = 1024] = "SUPPORTS_GATEWAY_ACTIVITY_ACTION_JOIN", e
@@ -1502,8 +1502,8 @@ var eR = function(e) {
   eP = function(e) {
     return e[e.ALL_MESSAGES = 0] = "ALL_MESSAGES", e[e.ONLY_MENTIONS = 1] = "ONLY_MENTIONS", e[e.NO_MESSAGES = 2] = "NO_MESSAGES", e[e.NULL = 3] = "NULL", e
   }({});
-let ew = 100,
-  eD = 200,
+let eD = 100,
+  ew = 200,
   ex = 50,
   eL = 50,
   eM = 25,
@@ -1527,8 +1527,8 @@ let ew = 100,
   e$ = 0xa00000,
   e0 = 524288e3,
   e1 = e => "||".concat(e, "||"),
-  e3 = /^\|\|([\s\S]+?)\|\|/,
-  e2 = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
+  e2 = /^\|\|([\s\S]+?)\|\|/,
+  e3 = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
   e4 = /^\d{17,19}$/;
 var e8 = function(e) {
     return e.MESSAGE = "MESSAGE", e.MESSAGE_GROUP_BLOCKED = "MESSAGE_GROUP_BLOCKED", e.MESSAGE_GROUP_IGNORED = "MESSAGE_GROUP_IGNORED", e.MESSAGE_GROUP_SPAMMER = "MESSAGE_GROUP_SPAMMER", e.THREAD_STARTER_MESSAGE = "THREAD_STARTER_MESSAGE", e.DIVIDER = "DIVIDER", e.JUMP_TARGET = "JUMP_TARGET", e.FORUM_POST_ACTION_BAR = "FORUM_POST_ACTION_BAR", e.MESSAGE_GROUP = "MESSAGE_GROUP", e.DIVIDER_TIME_STAMP = "DIVIDER_TIME_STAMP", e.DIVIDER_NEW_MESSAGES = "DIVIDER_NEW_MESSAGES", e
@@ -1569,7 +1569,7 @@ let te = 128,
   tO = "DEVICE_TOKEN",
   tv = "DEVICE_VOIP_TOKEN",
   tI = "first_run_date_key",
-  tS = Object.freeze({
+  tT = Object.freeze({
     API_DOCS: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/developers/docs/intro"),
     API_DOCS_GAME_AND_SERVER_MANAGEMENT: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/developers/docs/game-and-server-management/alpha-and-beta-testing"),
     API_DOCS_APPLICATION_SKUS_INDEX: e => "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/developers/applications/").concat(e, "/skus"),
@@ -1607,7 +1607,7 @@ let te = 128,
     SAFETY_CENTER: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/safetycenter"),
     VOICE_FILTERS_BLOG: "https://discord.com/blog/voice-filters"
   }),
-  tT = Object.freeze({
+  tS = Object.freeze({
     DEVELOPER_PORTAL: "/developers",
     DEVELOPER_PORTAL_GUILD_ANALYTICS: e => "/developers/servers/".concat(e),
     DEVELOPER_PORTAL_TEAMS: "/developers/teams",
@@ -1618,10 +1618,10 @@ let te = 128,
   tN = /^FILTER_/,
   tR = /^ANSWER_/,
   tP = 32;
-var tw = function(e) {
+var tD = function(e) {
     return e.GUILD = "GUILD", e.FAVORITES = "FAVORITES", e.CHANNEL = "CHANNEL", e.GUILD_CHANNEL = "GUILD_CHANNEL", e.CHAT_SIDEBAR = "CHAT_SIDEBAR", e.GIF = "GIF", e.GUILD_DISCOVERY = "GUILD_DISCOVERY", e.GUILD_DISCOVERY_TAG = "GUILD_DISCOVERY_TAG", e.GUILD_DISCOVERY_TOPIC = "GUILD_DISCOVERY_TOPIC", e.STICKER = "STICKER", e.STICKER_SHOP = "STICKER_SHOP", e.INSTANT_INVITE = "INSTANT_INVITE", e.EMOJI = "EMOJI", e.EMOJI_REACTION = "EMOJI_REACTION", e.EMOJI_AUTO_SUGGESTION = "EMOJI_AUTO_SUGGESTION", e.DMS = "DMS", e.THREAD = "THREAD", e.SOUNDBOARD = "SOUNDBOARD", e
   }({}),
-  tD = function(e) {
+  tw = function(e) {
     return e.NEWEST = "newest", e.OLDEST = "oldest", e.MOST_RELEVANT = "most_relevant", e
   }({}),
   tx = function(e) {
@@ -1800,10 +1800,10 @@ var t$ = function(e) {
   t1 = function(e) {
     return e[e.PRIVATE = 0] = "PRIVATE", e[e.PUBLIC = 1] = "PUBLIC", e
   }({});
-let t3 = Object.freeze({
+let t2 = Object.freeze({
     GAME_INVITE_FRAGMENT: "/_discord/join?secret="
   }),
-  t2 = new Set(["facebook", "contacts"]),
+  t3 = new Set(["facebook", "contacts"]),
   t4 = new Set(["spotify", "xbox", "playstation", "playstation-stg", "crunchyroll"]),
   t8 = Object.freeze({
     DESKTOP: "".concat(location.protocol).concat(window.GLOBAL_ENV.API_ENDPOINT, "/download"),
@@ -1893,7 +1893,7 @@ var nE = function(e) {
   nI = function(e) {
     return e.MFA_WARNING = "MFA_WARNING", e.INVITE = "INVITE", e.QUICKSWITCHER = "QUICKSWITCHER", e.GUILD_BOOSTING = "PREMIUM_GUILD_SUBSCRIPTIONS", e.GUILD_BOOSTING_GRACE_PERIOD = "PREMIUM_GUILD_GRACE_PERIOD", e.PUBLIC_UPSELL = "PUBLIC_UPSELL", e.MAX_MEMBER_COUNT_100 = "MAX_MEMBER_COUNT_100", e.MAX_MEMBER_COUNT_250 = "MAX_MEMBER_COUNT_250", e.MAX_MEMBER_COUNT = "MAX_MEMBER_COUNT", e.STAGE_CHANNEL_EVENT = "STAGE_CHANNEL_EVENT", e.HUB_LINK = "HUB_LINK", e.GUILD_BANNER = "GUILD_BANNER", e.CHANNEL_OPT_IN = "CHANNEL_OPT_IN", e.ROLE_SUBSCRIPTION_MWEB_PURCHASE = "ROLE_SUBSCRIPTION_MWEB_PURCHASE", e.COMMANDS_MIGRATION = "COMMANDS_MIGRATION", e.APPLICATION_SUBSCRIPTION_EXPIRATION = "APPLICATION_SUBSCRIPTION_EXPIRATION", e.HUB_STUDY_ROOM = "HUB_STUDY_ROOM", e.GUILD_ONBOARDING_UPSELL = "GUILD_ONBOARDING_UPSELL", e.CLIPS_EDUCATION = "CLIPS_EDUCATION", e.LINKED_ROLES_ADMIN = "LINKED_ROLES_ADMIN", e.SUMMARIES = "SUMMARIES", e.SUMMARIES_ENABLED = "SUMMARIES_ENABLED", e.CLAN_ADMIN_UPSELL = "CLAN_ADMIN_UPSELL", e
   }({});
-let nS = Object.freeze({
+let nT = Object.freeze({
     STORAGE_MANIFEST: (e, t) => "".concat(e, "/storage/").concat(t, "/MANIFEST"),
     INSTALL_DIR: e => "".concat(e, "/content"),
     ROOT_PATTERN: ["**/*"],
@@ -1905,7 +1905,7 @@ let nS = Object.freeze({
       linux: "linux"
     }
   }),
-  nT = 864e5;
+  nS = 864e5;
 var nA = function(e) {
     return e.NORMAL = "normal", e.MINIMUM = "minimum", e.NO_CHAT = "no-chat", e.FULL_SCREEN = "full-screen", e
   }({}),
@@ -2000,10 +2000,10 @@ let nR = Object.freeze({
 var nP = function(e) {
     return e.ALL = "ALL", e.CREATE = "CREATE", e.UPDATE = "UPDATE", e.DELETE = "DELETE", e
   }({}),
-  nw = function(e) {
+  nD = function(e) {
     return e.USER = "1", e.ROLE = "0", e
   }({}),
-  nD = function(e) {
+  nw = function(e) {
     return e[e.ROLE = 1] = "ROLE", e[e.USER = 2] = "USER", e[e.CHANNEL = 3] = "CHANNEL", e
   }({}),
   nx = function(e) {
@@ -2085,8 +2085,8 @@ let n1 = Object.freeze({
     nvidia_gdn_app: "NVIDIA Cloud Gaming Application",
     roblox: "Roblox"
   }),
-  n3 = 6016,
-  n2 = 3384;
+  n2 = 6016,
+  n3 = 3384;
 var n4 = function(e) {
     return e.USAGE_STATISTICS = "usage_statistics", e.PERSONALIZATION = "personalization", e
   }({}),
@@ -2167,10 +2167,10 @@ var rv = function(e) {
   rI = function(e) {
     return e.LOADED = "loaded", e.UNLOADED = "unloaded", e
   }({}),
-  rS = function(e) {
+  rT = function(e) {
     return e.CONNECTING = "CONNECTING", e.ACTIVE = "ACTIVE", e.RECONNECTING = "RECONNECTING", e.ENDED = "ENDED", e.PAUSED = "PAUSED", e.FAILED = "FAILED", e
   }({}),
-  rT = function(e) {
+  rS = function(e) {
     return e.USER_REQUESTED = "user_requested", e.STREAM_FULL = "stream_full", e.UNAUTHORIZED = "unauthorized", e.SAFETY_GUILD_RATE_LIMITED = "safety_guild_rate_limited", e
   }({}),
   rA = function(e) {
@@ -2186,10 +2186,10 @@ var rv = function(e) {
     return e.UNKNOWN = "unknown", e.SLOW_TWO_G = "slow-2g", e.TWO_G = "2g", e.THREE_G = "3g", e.FOUR_G = "4g", e.FIVE_G = "5g", e
   }({});
 let rP = "discodoEasterEgg";
-var rw = function(e) {
+var rD = function(e) {
     return e.INITIAL = "initial", e.ENTER = "enter", e.UPDATE = "update", e.LEAVE = "leave", e
   }({}),
-  rD = function(e) {
+  rw = function(e) {
     return e[e.INCOMING = 1] = "INCOMING", e[e.CHANNEL_FOLLOWER = 2] = "CHANNEL_FOLLOWER", e
   }({}),
   rx = function(e) {

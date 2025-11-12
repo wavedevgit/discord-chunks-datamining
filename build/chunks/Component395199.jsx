@@ -199,7 +199,7 @@ let v = e => {
     onConfirm: y,
     onCancel: v,
     error: I
-  } = e, S = O(h, m, g, y, v), T = () => f && null != p ? (0, r.jsx)(b, {
+  } = e, T = O(h, m, g, y, v), S = () => f && null != p ? (0, r.jsx)(b, {
     imageClass: null != o ? o : "",
     blurb: a,
     fromGuilds: _,
@@ -223,9 +223,9 @@ let v = e => {
     children: [(0, r.jsx)(s.xBx, {
       title: i
     }), (0, r.jsx)(s.fef, {
-      children: T()
+      children: S()
     }), (0, r.jsx)(s.Go$, {
-      actions: S,
+      actions: T,
       actionsFullWidth: false
     })]
   })

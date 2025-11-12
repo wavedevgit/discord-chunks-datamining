@@ -75,7 +75,7 @@ function L(e) {
     invoicePreview: ec,
     inReverseTrial: eu,
     premiumBrandRefreshBackgroundClassName: ed
-  } = (0, S.JL)(), {
+  } = (0, T.JL)(), {
     isGift: ef,
     selectedGiftStyle: e_,
     customGiftMessage: ep,
@@ -88,16 +88,16 @@ function L(e) {
   let ev = null == Q ? true : Q.id,
     eI = (0, A.sE)(Z, J.paymentSourceId, ev),
     {
-      analyticsLocations: eS
+      analyticsLocations: eT
     } = (0, d.ZP)(),
-    eT = (0, N.m)(er, en),
+    eS = (0, N.m)(er, en),
     [eA, eC] = i.useState(eI),
     [eN, eR] = i.useState(false),
     {
       hasEntitlements: eP
     } = (0, E.H)(ev, ef),
-    ew = (0, v.Ap)(J.paymentSourceId),
-    eD = eP || eI,
+    eD = (0, v.Ap)(J.paymentSourceId),
+    ew = eP || eI,
     ex = (0, m.U)(),
     eL = (0, c.e7)([C.Z], () => C.Z.currentOrderId),
     eM = null,
@@ -112,7 +112,7 @@ function L(e) {
   let eU = (0, _.Iw)(et === P.GZQ.ONE_TIME ? f.Z.getProduct(ei) : true),
     eG = null !== eU,
     eB = async () => {
-      await (0, T.H)({
+      await (0, S.H)({
         setPurchaseState: n,
         setHasAcceptedTerms: $,
         setIsSubmitting: eC,
@@ -122,13 +122,13 @@ function L(e) {
         isGift: ef,
         baseAnalyticsData: G,
         analyticsLocation: V,
-        analyticsLocations: eS,
+        analyticsLocations: eT,
         flowStartTime: B,
         subscriptionPlan: Q,
         planGroup: F,
         trialId: Z,
         priceOptions: J,
-        paymentSource: eT,
+        paymentSource: eS,
         isPrepaidPaymentPastDue: ex,
         openInvoiceId: Y,
         premiumSubscription: t,
@@ -149,7 +149,7 @@ function L(e) {
       makePurchase: eB,
       onNext: s,
       onPurchaseError: U,
-      paymentSource: eT,
+      paymentSource: eS,
       paymentSourceId: en,
       purchaseTokenAuthState: H,
       setPurchaseState: n
@@ -168,12 +168,12 @@ function L(e) {
     "data-migration-pending": true,
     align: p.Z.Align.CENTER,
     className: o()({
-      [D.modalFooterDiscount]: eG
-    }, ed, D.modalFooter),
+      [w.modalFooterDiscount]: eG
+    }, ed, w.modalFooter),
     children: [eG && (0, r.jsx)("img", {
       src: x.Z,
       alt: "",
-      className: D.discountFooterBackground
+      className: w.discountFooterBackground
     }), (0, r.jsx)(b.Z, {
       legalTermsNodeRef: L,
       invoiceError: j,
@@ -184,29 +184,29 @@ function L(e) {
       premiumSubscription: t,
       isGift: ef,
       planGroup: F,
-      isPrepaid: ew,
+      isPrepaid: eD,
       isTrial: q,
       makePurchase: eB,
-      needsPaymentSource: null == eT && !eD,
+      needsPaymentSource: null == eS && !ew,
       onNext: s,
       inReverseTrial: eu,
       onPaymentSourceAdd: X
     }), (0, r.jsx)(R.Z, {
-      iconClassName: eG ? D.discountColor : null,
-      textClassName: eG ? D.discountColor : null
+      iconClassName: eG ? w.discountColor : null,
+      textClassName: eG ? w.discountColor : null
     }), eH ? (0, r.jsx)("div", {
-      className: D.back,
+      className: w.back,
       children: (0, r.jsx)(g.Z, {
         onClick: a,
         className: o()({
-          [D.discountColor]: eG
+          [w.discountColor]: eG
         })
       })
     }) : null, eG && !eH && (0, r.jsx)(u.Text, {
       variant: "text-xs/semibold",
-      className: D.discountFooterText,
+      className: w.discountFooterText,
       lineClamp: 2,
-      children: w.intl.formatToPlainString(w.t.IhKBNX, {
+      children: D.intl.formatToPlainString(D.t.IhKBNX, {
         discountOfferAmount: eU
       })
     })]

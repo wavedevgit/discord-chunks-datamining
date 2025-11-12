@@ -30,7 +30,7 @@ function m(e) {
     location: "NicknameSection"
   }).enabled;
 
-  function S(e) {
+  function T(e) {
     (0, d.wi)(e, m)
   }
   return (0, r.jsxs)(l.Z, {
@@ -40,7 +40,7 @@ function m(e) {
       value: null != y ? y : "",
       placeholder: g,
       maxLength: f.l$U,
-      onChange: S,
+      onChange: T,
       disabled: !O,
       helperText: O ? true : p.intl.string(p.t.gzjxQi)
     }), !O && (0, r.jsx)(a.Text, {

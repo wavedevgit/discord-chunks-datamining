@@ -33,7 +33,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,7 +58,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -102,7 +102,7 @@ class R extends(r = Chunk647438.PureComponent) {
         className: Chunk719221.sectionHeader,
         variant: "text-sm/normal",
         children: Chunk388032.intl.string(Chunk388032.t["50Auo2"])
-      }), (0, Chunk951288.jsx)(Chunk464179.ZP, A(S({}, module), {
+      }), (0, Chunk951288.jsx)(Chunk464179.ZP, A(T({}, module), {
         mode: Chunk464179.ZP.Modes.EDIT,
         layout: r,
         onBillingAddressChange: this.handleAddressUpdate,
@@ -150,7 +150,7 @@ class R extends(r = Chunk647438.PureComponent) {
             children: [require ? (0, Chunk951288.jsx)(Chunk481060.aML, {
               "data-migration-pending": true,
               text: Chunk388032.intl.string(Chunk388032.t["v6/z28"]),
-              children: e => (0, i.jsx)("div", S({
+              children: e => (0, i.jsx)("div", T({
                 "aria-hidden": true,
                 className: v.disabledTooltipTarget
               }, e))
@@ -261,7 +261,7 @@ class R extends(r = Chunk647438.PureComponent) {
       this.setState({
         billingAddress: e,
         billingAddressValid: t,
-        dirtyFields: A(S({}, this.state.dirtyFields), {
+        dirtyFields: A(T({}, this.state.dirtyFields), {
           billingAddress: n
         })
       })
@@ -277,7 +277,7 @@ class R extends(r = Chunk647438.PureComponent) {
     }), I(this, "handleFieldChange", (e, t) => {
       null != t && this.setState({
         [t]: e,
-        dirtyFields: A(S({}, this.state.dirtyFields), {
+        dirtyFields: A(T({}, this.state.dirtyFields), {
           [t]: true
         })
       })

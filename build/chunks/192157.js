@@ -2,13 +2,13 @@
 /** chunk id: 192157, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  GB: () => T,
+  GB: () => S,
   casual: () => I,
   createCasualConfiguration: () => N,
   createConfiguration: () => R,
   parse: () => A,
   parseDate: () => C,
-  strict: () => S
+  strict: () => T
 });
 var Chunk857376 = require("./857376.js"),
   Chunk604099 = require("./604099.js"),
@@ -31,8 +31,8 @@ var Chunk857376 = require("./857376.js"),
   Chunk264126 = require("./264126.js"),
   Chunk283468 = require("./283468.js");
 let I = new Chunk201129.k(N(false)),
-  S = new Chunk201129.k(R(true, false)),
-  T = new Chunk201129.k(R(false, true));
+  T = new Chunk201129.k(R(true, false)),
+  S = new Chunk201129.k(R(false, true));
 
 function A(e, t, n) {
   return I.parse(e, t, n)

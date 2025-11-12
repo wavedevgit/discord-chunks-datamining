@@ -4,8 +4,8 @@
 require.d(exports, {
   B6: () => I,
   ZP: () => v,
-  nY: () => T,
-  qc: () => S
+  nY: () => S,
+  qc: () => T
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./539854.js");
 var Chunk738774 = require("./738774.js"),
   Chunk906411 = require("./906411.js"),
@@ -133,7 +133,7 @@ async function I(e) {
   return await u.Z.getEmojiColors(e)
 }
 
-function S(e) {
+function T(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 32,
     {
       id: n,
@@ -147,6 +147,6 @@ function S(e) {
   }) : u.Z.getURL(r)
 }
 
-function T(e) {
+function S(e) {
   return "allNamesString" in e ? e.allNamesString : ":".concat(e.name, ":")
 }

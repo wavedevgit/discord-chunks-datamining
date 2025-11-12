@@ -67,13 +67,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -109,13 +109,13 @@ function P(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
   var {
     startTime: r
-  } = n, i = T(n, ["startTime"]);
+  } = n, i = S(n, ["startTime"]);
   let a = {
       offset: 0,
       limit: null,
       totalResults: e.length
     },
-    o = (0, h._)(_.Z.getAnalyticsID(), t, S(v({}, a, i), {
+    o = (0, h._)(_.Z.getAnalyticsID(), t, T(v({}, a, i), {
       results: e.length
     })),
     s = null == r ? {} : {
@@ -124,7 +124,7 @@ function P(e, t) {
   c.ZP.trackWithMetadata(E.rMx.SEARCH_RESULT_VIEWED, v({}, o, s))
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   let r = Date.now();
   R(t), o.tn.get({
     url: E.ANM.GIFS_SEARCH,
@@ -152,7 +152,7 @@ function w(e, t, n) {
     query: e
   }))
 }
-let D = i().debounce(w, C);
+let w = i().debounce(D, C);
 
 function x(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
@@ -160,7 +160,7 @@ function x(e, t) {
   "" === e ? M() : (l.Z.dispatch({
     type: "GIF_PICKER_QUERY",
     query: e
-  }), n ? w(e, t, r) : D(e, t, r))
+  }), n ? D(e, t, r) : w(e, t, r))
 }
 
 function L(e) {
@@ -207,7 +207,7 @@ function j(e) {
     results: a,
     totalResults: s
   });
-  c.ZP.trackWithMetadata(E.rMx.SEARCH_RESULT_SELECTED, S(v({}, d), {
+  c.ZP.trackWithMetadata(E.rMx.SEARCH_RESULT_SELECTED, T(v({}, d), {
     index_num: n,
     source_object: "GIF Picker",
     query: l
@@ -299,7 +299,7 @@ function Z(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     var n;
     let r = null != (n = i().max(Object.values(t.gifs).map(e => e.order))) ? n : 0;
-    if (t.gifs[B(e.url)] = S(v({}, e), {
+    if (t.gifs[B(e.url)] = T(v({}, e), {
         order: r + 1
       }), s.wK.toBinary(t).length > b.vY) return g.Z.show({
       title: y.intl.string(y.t["+XYXtZ"]),

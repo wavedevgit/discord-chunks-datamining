@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => j,
-  wU: () => D
+  wU: () => w
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
@@ -76,7 +76,7 @@ function y(e, t) {
 let O = 7,
   v = 1e3,
   I = new Set,
-  S = new Chunk759174.h(function(e) {
+  T = new Chunk759174.h(function(e) {
     let {
       userId: t,
       channelId: n
@@ -90,7 +90,7 @@ let O = 7,
     return "".concat(n, "-").concat(t)
   });
 
-function T(e) {
+function S(e) {
   return null != e && (e.value > 0 || (null == e ? true : e.multiplier) > 1)
 }
 let A = new Chunk759174.h(function(e) {
@@ -123,14 +123,14 @@ let A = new Chunk759174.h(function(e) {
 function N(e) {
   var t, n, r, i, a, s;
   let l = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    c = S.get(C(e)),
+    c = T.get(C(e)),
     u = E(m({}, c, e), {
       value: null != (n = null != (t = e.value) ? t : null == c ? true : c.value) ? n : 0,
       multiplier: Math.min(null != (i = null != (r = e.multiplier) ? r : null == c ? true : c.multiplier) ? i : 1, O),
       decayInterval: null != (a = null == c ? true : c.decayInterval) ? a : new o.Xp
     });
-  S.set(C(e), u), l && (null == (s = u.decayInterval) || s.start(v, () => {
-    let e = S.get(C(u));
+  T.set(C(e), u), l && (null == (s = u.decayInterval) || s.start(v, () => {
+    let e = T.get(C(u));
     if (null != e) {
       let n = u.multiplier !== e.multiplier && u.value !== e.value;
       if (e.value <= 0 || n) {
@@ -158,7 +158,7 @@ function P(e) {
   N(n)
 }
 
-function w(e) {
+function D(e) {
   let {
     comboMessage: t
   } = e;
@@ -166,7 +166,7 @@ function w(e) {
   R(t)
 }
 
-function D(e, t, n, r) {
+function w(e, t, n, r) {
   return !(e !== t || null == n || r.has(n)) && (r.add(n), true)
 }
 
@@ -182,8 +182,8 @@ function x(e) {
   } = e;
   if (!d.Z.isEnabled()) returnfalse;
   let s = l.default.getId();
-  if (!D(null == a ? true : a.id, s, o, I)) returnfalse;
-  let c = S.get(C({
+  if (!w(null == a ? true : a.id, s, o, I)) returnfalse;
+  let c = T.get(C({
     userId: null != (t = null == a ? true : a.id) ? t : "???",
     channelId: r
   }));
@@ -201,21 +201,21 @@ class L extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk314897.default, Chunk351780.Z, Chunk944486.Z)
   }
   getComboScore(e, t) {
-    let n = S.get(C({
+    let n = T.get(C({
       userId: e,
       channelId: t
     }));
     return null == n ? 0 : (0, f.Eo)(n)
   }
   getUserCombo(e, t) {
-    return S.get(C({
+    return T.get(C({
       userId: e,
       channelId: t
     }))
   }
   isComboing(e, t) {
     let n = this.getUserCombo(e, t);
-    return null != n && n.value >= d.Z.combosRequiredCount && T(n)
+    return null != n && n.value >= d.Z.combosRequiredCount && S(n)
   }
   getMessageCombo(e) {
     var t;
@@ -234,7 +234,7 @@ class L extends(r = Chunk442837.ZP.Store) {
 h(L, "displayName", "PoggermodeStore");
 let M = new L(Chunk570140.Z, {
     POGGERMODE_UPDATE_COMBO: P,
-    POGGERMODE_UPDATE_MESSAGE_COMBO: w,
+    POGGERMODE_UPDATE_MESSAGE_COMBO: D,
     MESSAGE_CREATE: x
   }),
   j = M

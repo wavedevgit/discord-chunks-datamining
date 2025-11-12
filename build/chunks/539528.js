@@ -132,9 +132,9 @@ function v(e) {
   return true === e.state && false === navigator.userAgent.indexOf("CriOS")
 }
 var I = "popstate",
-  S = "hashchange";
+  T = "hashchange";
 
-function T() {
+function S() {
   try {
     return window.history.state || {}
   } catch (e) {
@@ -170,25 +170,25 @@ function A(e) {
   }
   var P = m();
 
-  function w(e) {
+  function D(e) {
     (0, r.Z)(X, e), X.length = t.length, P.notifyListeners(X.location, X.action)
   }
 
-  function D(e) {
+  function w(e) {
     v(e) || M(N(e.state))
   }
 
   function x() {
-    M(N(T()))
+    M(N(S()))
   }
   var L = false;
 
   function M(e) {
-    if (L) L = false, w();
+    if (L) L = false, D();
     else {
       var t = "POP";
       P.confirmTransitionTo(e, t, h, function(n) {
-        n ? w({
+        n ? D({
           action: t,
           location: e
         }) : j(e)
@@ -205,7 +205,7 @@ function A(e) {
     var i = n - r;
     i && (L = true, F(i))
   }
-  var k = N(T()),
+  var k = N(S()),
     U = [k.key];
 
   function G(e) {
@@ -228,7 +228,7 @@ function A(e) {
           else {
             var l = U.indexOf(X.location.key),
               u = U.slice(0, l + 1);
-            u.push(a.key), U = u, w({
+            u.push(a.key), U = u, D({
               action: i,
               location: a
             })
@@ -253,7 +253,7 @@ function A(e) {
             }, null, r), c) window.location.replace(r);
           else {
             var l = U.indexOf(X.location.key);
-            false !== l && (U[l] = a.key), w({
+            false !== l && (U[l] = a.key), D({
               action: i,
               location: a
             })
@@ -277,7 +277,7 @@ function A(e) {
   var Y = 0;
 
   function W(e) {
-    1 === (Y += e) && 1 === e ? (window.addEventListener(I, D), i && window.addEventListener(S, x)) : 0 === Y && (window.removeEventListener(I, D), i && window.removeEventListener(S, x))
+    1 === (Y += e) && 1 === e ? (window.addEventListener(I, w), i && window.addEventListener(T, x)) : 0 === Y && (window.removeEventListener(I, w), i && window.removeEventListener(T, x))
   }
   var K = false;
 
@@ -343,11 +343,11 @@ function P() {
   return false === exports ? "" : module.substring(exports + 1)
 }
 
-function w(e) {
+function D(e) {
   window.location.hash = e
 }
 
-function D(e) {
+function w(e) {
   window.location.replace(R(window.location.href) + "#" + e)
 }
 
@@ -371,10 +371,10 @@ function x(e) {
   }
   var I = m();
 
-  function S(e) {
+  function T(e) {
     (0, r.Z)(J, e), J.length = t.length, I.notifyListeners(J.location, J.action)
   }
-  var T = false,
+  var S = false,
     A = null;
 
   function x(e, t) {
@@ -384,21 +384,21 @@ function x(e) {
   function L() {
     var e = P(),
       t = b(e);
-    if (e !== t) D(t);
+    if (e !== t) w(t);
     else {
       var n = v(),
         r = J.location;
-      if (!T && x(r, n) || A === _(n)) return;
+      if (!S && x(r, n) || A === _(n)) return;
       A = null, M(n)
     }
   }
 
   function M(e) {
-    if (T) T = false, S();
+    if (S) S = false, T();
     else {
       var t = "POP";
       I.confirmTransitionTo(e, t, a, function(n) {
-        n ? S({
+        n ? T({
           action: t,
           location: e
         }) : j(e)
@@ -413,11 +413,11 @@ function x(e) {
     var r = B.lastIndexOf(_(e));
     false === r && (r = 0);
     var i = n - r;
-    i && (T = true, H(i))
+    i && (S = true, H(i))
   }
   var k = P(),
     U = b(k);
-  k !== U && D(U);
+  k !== U && w(U);
   var G = v(),
     B = [_(G)];
 
@@ -436,14 +436,14 @@ function x(e) {
           i = b(f + t),
           a = P() !== i;
         if (a) {
-          A = t, w(i);
+          A = t, D(i);
           var o = B.lastIndexOf(_(J.location)),
             s = B.slice(0, o + 1);
-          s.push(t), B = s, S({
+          s.push(t), B = s, T({
             action: n,
             location: r
           })
-        } else S()
+        } else T()
       }
     })
   }
@@ -456,9 +456,9 @@ function x(e) {
         var t = _(r),
           i = b(f + t),
           a = P() !== i;
-        a && (A = t, D(i));
+        a && (A = t, w(i));
         var o = B.indexOf(_(J.location));
-        false !== o && (B[o] = t), S({
+        false !== o && (B[o] = t), T({
           action: n,
           location: r
         })
@@ -595,12 +595,12 @@ function M(e) {
     O(1)
   }
 
-  function S(e) {
+  function T(e) {
     var t = C.index + e;
     return t >= 0 && t < C.entries.length
   }
 
-  function T(e) {
+  function S(e) {
     return true === e && (e = false), u.setPrompt(e)
   }
 
@@ -619,8 +619,8 @@ function M(e) {
     go: O,
     goBack: v,
     goForward: I,
-    canGo: S,
-    block: T,
+    canGo: T,
+    block: S,
     listen: A
   };
   return C

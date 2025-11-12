@@ -53,7 +53,7 @@ function P(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,8 +64,8 @@ function w(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -80,13 +80,13 @@ let x = 10,
 function B(e) {
   var t;
   let n = {
-      [T.S7.PACKAGE_ACTION_ADVENTURE]: C.t.PYFVdf,
-      [T.S7.PACKAGE_RPG_MMO]: C.t.rFQo2F,
-      [T.S7.PACKAGE_RACING_SPORTS]: C.t.zDRa6g,
-      [T.S7.PACKAGE_SANDBOX_CREATIVE]: C.t.vz9U2Q,
-      [T.S7.PACKAGE_FAMILY_FRIENDLY]: C.t.IOiAE0,
-      [T.S7.PACKAGE_HOLIDAY_SEASON]: C.t.cJPqvD,
-      [T.S7.PACKAGE_NEW_YEARS]: C.t.S0w2mv
+      [S.S7.PACKAGE_ACTION_ADVENTURE]: C.t.PYFVdf,
+      [S.S7.PACKAGE_RPG_MMO]: C.t.rFQo2F,
+      [S.S7.PACKAGE_RACING_SPORTS]: C.t.zDRa6g,
+      [S.S7.PACKAGE_SANDBOX_CREATIVE]: C.t.vz9U2Q,
+      [S.S7.PACKAGE_FAMILY_FRIENDLY]: C.t.IOiAE0,
+      [S.S7.PACKAGE_HOLIDAY_SEASON]: C.t.cJPqvD,
+      [S.S7.PACKAGE_NEW_YEARS]: C.t.S0w2mv
     },
     r = e.config.features.find(e => e in n),
     i = null != (t = null != r ? n[r] : null) ? t : C.t["D+DkEH"];
@@ -160,7 +160,7 @@ let Z = e => {
       }, {
         onCloseCallback: _
       }), u()
-    }, S = i.useCallback(e => {
+    }, T = i.useCallback(e => {
       if (null == b.current || E) return;
       let t = b.current.getBoundingClientRect(),
         n = e.clientX - t.left,
@@ -170,7 +170,7 @@ let Z = e => {
         o = -((r - a) / a * M),
         s = (n - i) / i * M;
       b.current.style.transform = "rotateX(".concat(o, "deg) rotateY(").concat(s, "deg)")
-    }, [E]), T = i.useCallback(() => {
+    }, [E]), S = i.useCallback(() => {
       null == b.current || E || (b.current.style.transform = "rotateX(0deg) rotateY(0deg)")
     }, [E]);
     return (0, r.jsx)(s.u, {
@@ -178,8 +178,8 @@ let Z = e => {
       children: (0, r.jsx)(c.P3F, {
         className: N.gameClickable,
         onClick: I,
-        onMouseMove: S,
-        onMouseLeave: T,
+        onMouseMove: T,
+        onMouseLeave: S,
         children: (0, r.jsx)("div", {
           ref: b,
           className: N.coverArtContainer,
@@ -244,7 +244,7 @@ function H(e) {
   if (i.useEffect(() => {
       E && (b.default.track(A.rMx.QUEST_GAME_SHEET_ERROR, {
         quest_id: t.id,
-        error_type: S.n.FETCH_FAILED
+        error_type: T.n.FETCH_FAILED
       }), s(), (0, c.ZDy)(async () => {
         let {
           default: e
@@ -309,9 +309,9 @@ function Y(e) {
   }, I = () => {
     if (_) return o.F;
     null == l || l()
-  }, S = () => {
-    p(true)
   }, T = () => {
+    p(true)
+  }, S = () => {
     p(false)
   };
   return (0, r.jsx)(c.yRy, {
@@ -327,8 +327,8 @@ function Y(e) {
         onClose: t,
         sourceQuestContent: d,
         impressionRef: f,
-        onGameProfileModalOpen: S,
-        onGameProfileModalClose: T
+        onGameProfileModalOpen: T,
+        onGameProfileModalClose: S
       })
     },
     onRequestOpen: v,
@@ -346,7 +346,7 @@ let W = function(e) {
     questOrQuests: e.quest,
     questContent: O.jn.SPONSORED_QUEST_SHEET,
     sourceQuestContent: e.sourceQuestContent,
-    children: t => (0, r.jsx)(Y, D(P({}, e), {
+    children: t => (0, r.jsx)(Y, w(P({}, e), {
       impressionRef: t
     }))
   })

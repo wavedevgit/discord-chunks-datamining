@@ -61,8 +61,8 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = [Chunk314910.ZP, Chunk429142.ZP];
-class T extends Chunk647438.PureComponent {
+let T = [Chunk314910.ZP, Chunk429142.ZP];
+class S extends Chunk647438.PureComponent {
   render() {
     let {
       render: e,
@@ -170,10 +170,10 @@ function R() {
     _ = Chunk647438.useCallback(t => {
       (0, m.Mr)(t, e)
     }, [module]),
-    p = S.map(e => t.some(t => t.Layer === e || null == t.Layer && e === f.ZP));
+    p = T.map(e => t.some(t => t.Layer === e || null == t.Layer && e === f.ZP));
   return (0, Chunk951288.jsxs)(Chunk215569.W, {
     component: Chunk647438.Fragment,
-    children: [S.map((e, n) => {
+    children: [T.map((e, n) => {
       var i;
       let a = l().findLast(t, t => t.Layer === e || null == t.Layer && e === f.ZP),
         o = null != (i = null == a ? true : a.backdropStyle) ? i : c.fCB.DARK;
@@ -200,7 +200,7 @@ function R() {
         isVisible: l,
         dismissable: c
       } = e;
-      return (0, r.jsx)(T, {
+      return (0, r.jsx)(S, {
         modalKey: i,
         LayerComponent: null != a ? a : f.ZP,
         isVisible: l,

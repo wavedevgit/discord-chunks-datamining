@@ -66,10 +66,10 @@ let d = e => {
     onMouseLeave: O,
     buttonProps: v,
     "aria-label": I,
-    "aria-describedby": S,
-    ref: T,
+    "aria-describedby": T,
+    ref: S,
     buttonRef: A
-  } = e, C = i.useRef(null), N = null != T ? T : C;
+  } = e, C = i.useRef(null), N = null != S ? S : C;
   return (0, r.jsxs)(t, {
     ref: N,
     className: s,
@@ -88,7 +88,7 @@ let d = e => {
       }, d),
       className: o.focusTarget,
       "aria-label": I,
-      "aria-describedby": S,
+      "aria-describedby": T,
       onClick: e => {
         e.stopPropagation(), null == f || f(e)
       },

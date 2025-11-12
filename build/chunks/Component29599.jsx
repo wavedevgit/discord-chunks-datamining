@@ -103,8 +103,8 @@ function G(e) {
     endDate: I,
     onClickDetails: E
   }));
-  let S = v ? x.intl.string(x.t["2cHUti"]) : x.intl.string(x.t.O13yhz),
-    T = i.useCallback(() => h(false), []),
+  let T = v ? x.intl.string(x.t["2cHUti"]) : x.intl.string(x.t.O13yhz),
+    S = i.useCallback(() => h(false), []),
     {
       outboundTitle: A,
       outboundTermsAndConditions: C
@@ -135,7 +135,7 @@ function G(e) {
             })]
           })]
         }), !l && (0, r.jsx)(u.Button, {
-          text: S,
+          text: T,
           onClick: () => h(true),
           disabled: l,
           size: "sm"
@@ -150,12 +150,12 @@ function G(e) {
       })]
     }), f && (0, r.jsx)(u.u_l, {
       renderModal: e => (0, r.jsx)(b.Z, U(j({}, e), {
-        onClose: T,
+        onClose: S,
         onClaim: s,
         code: a,
         outboundPromotion: n
       })),
-      onCloseRequest: T
+      onCloseRequest: S
     })]
   })
 }
@@ -168,7 +168,7 @@ let B = function() {
       return null == t
     }),
     a = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk74538.ZP.isPremiumExactly(Chunk594174.default.getCurrentUser(), Chunk474936.PremiumTypes.TIER_2)),
-    s = l().groupBy(exports, e => (0, T.Bg)(e.skuId, e.subscriptionPlanId, e.giftStyle)),
+    s = l().groupBy(exports, e => (0, S.Bg)(e.skuId, e.subscriptionPlanId, e.giftStyle)),
     [_, p] = Chunk647438.useState(false);
   Chunk647438.useEffect(() => {
     Chunk570140.Z.wait(() => {
@@ -196,13 +196,13 @@ let B = function() {
 
   function Z() {
     var e;
-    let t = require.find(e => e.giftCodeBatchId === D.m8 && !e.consumed),
-      i = null != (e = require.filter(e => e.giftCodeBatchId === D.rX && !e.consumed)) ? module : [],
+    let t = require.find(e => e.giftCodeBatchId === w.m8 && !e.consumed),
+      i = null != (e = require.filter(e => e.giftCodeBatchId === w.rX && !e.consumed)) ? module : [],
       [s, c] = l().partition(Chunk647438, e => {
         let {
           subscriptionPlanId: t
         } = e;
-        return t === D.Xh.PREMIUM_YEAR_TIER_2
+        return t === w.Xh.PREMIUM_YEAR_TIER_2
       }),
       d = (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
@@ -315,7 +315,7 @@ let B = function() {
             skuId: t,
             subscriptionPlanId: n,
             giftStyle: i
-          } = (0, T.Z0)(e);
+          } = (0, S.Z0)(e);
           return (0, r.jsx)(N.Z, {
             className: L.skuCard,
             skuId: t,

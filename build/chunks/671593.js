@@ -40,15 +40,15 @@ function p(e, t) {
   });
   let [b, y] = (0, f.useState)(false), O = e.isDisabled || t.isNextVisibleRangeInvalid();
   O && b && (y(false), t.setFocused(true));
-  let [v, I] = (0, f.useState)(false), S = e.isDisabled || t.isPreviousVisibleRangeInvalid();
-  S && v && (I(false), t.setFocused(true));
-  let T = (0, c.b)({
+  let [v, I] = (0, f.useState)(false), T = e.isDisabled || t.isPreviousVisibleRangeInvalid();
+  T && v && (I(false), t.setFocused(true));
+  let S = (0, c.b)({
     id: e.id,
     "aria-label": [e["aria-label"], m].filter(Boolean).join(", "),
     "aria-labelledby": e["aria-labelledby"]
   });
   return {
-    calendarProps: (0, u.d)(p, T, {
+    calendarProps: (0, u.d)(p, S, {
       role: "application",
       "aria-details": e["aria-details"] || true,
       "aria-describedby": e["aria-describedby"] || true
@@ -62,7 +62,7 @@ function p(e, t) {
     prevButtonProps: {
       onPress: () => t.focusPreviousPage(),
       "aria-label": n.format("previous"),
-      isDisabled: S,
+      isDisabled: T,
       onFocusChange: I
     },
     errorMessageProps: {

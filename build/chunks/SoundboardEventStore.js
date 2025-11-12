@@ -59,10 +59,10 @@ function v(e, t) {
   }), e
 }
 let I = [],
-  S = new(s())({
+  T = new(s())({
     max: Chunk710111.zb
   }),
-  T = new Chunk704907.Z({
+  S = new Chunk704907.Z({
     computeBonus: () => 100,
     lookupKey: e => p.Z.getSoundById(e),
     afterCompute: () => {},
@@ -91,14 +91,14 @@ function C(e) {
 }
 
 function N(e) {
-  S.set(e, e)
+  T.set(e, e)
 }
 
 function R(e) {
-  T.track(e), I.push({
+  S.track(e), I.push({
     key: e,
     timestamp: Date.now()
-  }), T.compute()
+  }), S.compute()
 }
 
 function P(e) {
@@ -107,17 +107,17 @@ function P(e) {
   returnfalse
 }
 
-function w(e) {
+function D(e) {
   return a().mapValues(e, e => v(y({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   }))
 }
 
-function D() {
+function w() {
   var e;
   if (!M()) return;
   let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) ? true : module.playedSounds;
-  T.overwriteHistory(w(null != exports ? exports : {}), I)
+  S.overwriteHistory(D(null != exports ? exports : {}), I)
 }
 
 function x(e) {
@@ -142,11 +142,11 @@ function M() {
 }
 class j extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(p.Z, d.Z, f.default), (null == e ? true : e.recentlyHeardCache) != null && S.load(e.recentlyHeardCache), (null == e ? true : e.playedEventsPendingFlush) != null && (I = e.playedEventsPendingFlush), this.syncWith([d.Z], D)
+    this.waitFor(p.Z, d.Z, f.default), (null == e ? true : e.recentlyHeardCache) != null && T.load(e.recentlyHeardCache), (null == e ? true : e.playedEventsPendingFlush) != null && (I = e.playedEventsPendingFlush), this.syncWith([d.Z], w)
   }
   getState() {
     return {
-      recentlyHeardCache: S.dump(),
+      recentlyHeardCache: T.dump(),
       playedEventsPendingFlush: I
     }
   }
@@ -154,13 +154,13 @@ class j extends(r = Chunk442837.ZP.PersistedStore) {
     return I.length > 0
   }
   get playedSoundHistory() {
-    return T.usageHistory
+    return S.usageHistory
   }
   get recentlyHeardSoundIds() {
-    return S.values()
+    return T.values()
   }
   get frecentlyPlayedSounds() {
-    return T.frequently
+    return S.frequently
   }
 }
 b(j, "displayName", "SoundboardEventStore"), b(j, "persistKey", "SoundboardEventStore");

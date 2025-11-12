@@ -32,8 +32,8 @@ function b() {
     O = Chunk695346.cC.useSetting(),
     v = Chunk695346.vF.useSetting(),
     I = Chunk695346.H1.useSetting(),
-    S = Chunk695346.ev.useSetting(),
-    T = Chunk695346.x4.useSetting(),
+    T = Chunk695346.ev.useSetting(),
+    S = Chunk695346.x4.useSetting(),
     A = Chunk695346.RS.useSetting(),
     C = Chunk695346.NA.useSetting(),
     N = Chunk695346.nc.useSetting(),
@@ -41,9 +41,9 @@ function b() {
     P = (0, Chunk945577.xy)({
       location: "UserSettingsTextImages"
     }),
-    w = null != (e = Chunk695346.rR.useSetting()) ? module : P,
+    D = null != (e = Chunk695346.rR.useSetting()) ? module : P,
     {
-      analyticsLocations: D
+      analyticsLocations: w
     } = (0, Chunk906732.ZP)(Chunk100527.Z.TEXT_AND_IMAGES),
     x = Chunk647438.useCallback(e => {
       let t = 1 === e;
@@ -86,7 +86,7 @@ function b() {
           }), (0, Chunk951288.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_INLINE_MEDIA_UPLOADS,
             children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-              checked: T,
+              checked: S,
               description: Chunk388032.intl.formatToPlainString(Chunk388032.t.qjjvqO, {
                 maxSize: 10
               }),
@@ -130,7 +130,7 @@ function b() {
           }), (0, Chunk951288.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_EMOJI_EMOTICONS,
             children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-              checked: S,
+              checked: T,
               description: Chunk454585.Z.parse(Chunk388032.intl.string(Chunk388032.t["20dvuQ"])),
               onChange: Chunk695346.ev.updateSetting,
               label: Chunk388032.intl.string(Chunk388032.t["79qal8"])
@@ -152,7 +152,7 @@ function b() {
                   location: {
                     section: g.jXE.SETTINGS_TEXT_AND_IMAGES
                   },
-                  location_stack: D
+                  location_stack: w
                 }), p.fq.updateSetting(e)
               },
               label: Chunk388032.intl.string(Chunk388032.t["29xPVZ"])
@@ -237,7 +237,7 @@ function b() {
               value: 1
             }],
             onChange: x,
-            value: +!!w
+            value: +!!D
           })
         })]
       }), (0, Chunk951288.jsxs)(Chunk921801.F, {

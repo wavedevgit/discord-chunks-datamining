@@ -61,9 +61,9 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,7 +71,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -90,11 +90,11 @@ let A = Chunk647438.forwardRef((e, t) => {
     alt: b,
     width: y,
     height: v,
-    maxWidth: T = y,
+    maxWidth: S = y,
     maxHeight: A = v,
     minWidth: P = 0,
-    minHeight: w = 0,
-    mediaLayoutType: D,
+    minHeight: D = 0,
+    mediaLayoutType: w,
     limitResponsiveWidth: x = true,
     accessory: L,
     zoomable: M = true,
@@ -120,17 +120,17 @@ let A = Chunk647438.forwardRef((e, t) => {
     dataSafeSrc: Z,
     useFullWidth: F = false,
     srcIsAnimated: V
-  } = e, H = S(e, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth", "srcIsAnimated"]);
+  } = e, H = T(e, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth", "srcIsAnimated"]);
   let Y = i.useRef(null),
     W = i.useRef(null);
   if (1 === y && 1 === v) return null;
   let K = (0, d.Tj)({
       width: y,
       height: v,
-      maxWidth: T,
+      maxWidth: S,
       maxHeight: A,
       minWidth: P,
-      minHeight: w
+      minHeight: D
     }),
     z = 0 !== K.width ? K.width / K.height : 1;
   "" !== f && c !== p.zo9.ERROR ? n = k({
@@ -138,17 +138,17 @@ let A = Chunk647438.forwardRef((e, t) => {
     size: K,
     alt: b,
     className: s,
-    mediaLayoutType: D
+    mediaLayoutType: w
   }) : c !== p.zo9.LOADING && (n = (0, r.jsx)(C, {
     size: K,
-    mediaLayoutType: D,
+    mediaLayoutType: w,
     alt: b
   })), n = (0, r.jsx)(_.N, {
     readyState: c,
     aspectRatio: z,
     placeholder: h,
     placeholderVersion: E,
-    placeholderStyle: R(K, D),
+    placeholderStyle: R(K, w),
     children: n
   });
   let q = null != U ? U() : null;
@@ -162,7 +162,7 @@ let A = Chunk647438.forwardRef((e, t) => {
         [g.imageWrapperBackground]: c !== p.zo9.READY,
         [g.clickable]: null != G
       }, a),
-      style: N(K, x, F, D)
+      style: N(K, x, F, w)
     }, H), {
       children: [null != j && (0, r.jsx)("a", {
         tabIndex: false,
@@ -230,7 +230,7 @@ function R(e, t) {
         display: "block", objectFit: "cover", minWidth: "100%", minHeight: "100%", maxWidth: 1 === (0, f.Z)() ? "calc(100% + 1px)" : "100%"
       };
     case h.hV.RESPONSIVE:
-      return w(e);
+      return D(e);
     default:
       return e
   }
@@ -243,7 +243,7 @@ function P(e, t) {
         width: "100%", height: "100%", aspectRatio: "".concat(e.width, " / ").concat(e.height), display: "flex", maxHeight: "inherit"
       };
     case h.hV.RESPONSIVE:
-      return I(O({}, w(e)), {
+      return I(O({}, D(e)), {
         display: "flex"
       });
     default:
@@ -251,7 +251,7 @@ function P(e, t) {
   }
 }
 
-function w(e) {
+function D(e) {
   let {
     width: t,
     height: n

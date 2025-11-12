@@ -39,8 +39,8 @@ function P(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let w = "seenQSTutorial",
-  D = 5,
+let D = "seenQSTutorial",
+  w = 5,
   x = 7,
   L = 3,
   M = 100,
@@ -139,7 +139,7 @@ function X() {
   if (null != require) {
     let e = Chunk984933.ZP.getSelectableChannelIds(require).filter(e => {
       let t = m.Z.getChannel(e);
-      return !(null == t || e === r || Y.includes(e) || a.has(e) || T.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && T.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
+      return !(null == t || e === r || Y.includes(e) || a.has(e) || S.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && S.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
     }).map(e => q(e)).filter(e => e);
     Object.values(Chunk601070.Z.getActiveJoinedUnreadThreadsForGuild(require)).forEach(t => {
       for (let n in t) {
@@ -160,7 +160,7 @@ function X() {
 function Q(e, t) {
   switch (B) {
     case u.h8.USER: {
-      let t = y.Z.getGuild(S.Z.getGuildId());
+      let t = y.Z.getGuild(T.Z.getGuildId());
       e.unshift((0, u.o6)(null != t ? R.intl.formatToPlainString(R.t.FREzQs, {
         name: t.name
       }) : R.intl.string(R.t.XFYW1o))), Z = e;
@@ -194,8 +194,8 @@ function J(e) {
   let {
     query: n,
     queryMode: i
-  } = e, a = n.trim(), o = null != (t = S.Z.getGuildId()) ? t : true, s = new Set(["user:".concat(h.default.getId())]);
-  null != o && s.add("guild:".concat(o)), W = Date.now(), r = null != r ? r : new u.ZP(et, j, null != i ? M : D, {
+  } = e, a = n.trim(), o = null != (t = T.Z.getGuildId()) ? t : true, s = new Set(["user:".concat(h.default.getId())]);
+  null != o && s.add("guild:".concat(o)), W = Date.now(), r = null != r ? r : new u.ZP(et, j, null != i ? M : w, {
     frecencyBoosters: true,
     blacklist: s,
     allowSnowflake: true
@@ -236,8 +236,8 @@ function er(e) {
   } = e, o = i.trim();
   if (null == r) returnfalse;
   if (B !== a) {
-    r.setResultTypes(null != a ? [a] : j), r.setLimit(null != a ? M : D);
-    let e = null != (t = S.Z.getGuildId()) ? t : true;
+    r.setResultTypes(null != a ? [a] : j), r.setLimit(null != a ? M : w);
+    let e = null != (t = T.Z.getGuildId()) ? t : true;
     a === u.h8.USER && null != e ? r.setOptions({
       userFilters: {
         guild: e,
@@ -251,7 +251,7 @@ function er(e) {
     }, true)
   }
   if ((B = a) === u.h8.USER) {
-    let e = null != (n = S.Z.getGuildId()) ? n : null;
+    let e = null != (n = T.Z.getGuildId()) ? n : null;
     r.search(o, e)
   } else r.search(o, true)
 }
@@ -262,12 +262,12 @@ function ei(e) {
 
 function ea() {
   if (U) returnfalse;
-  U = true, Chunk433517.K.set(w, true)
+  U = true, Chunk433517.K.set(D, true)
 }
 class eo extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(_.Z, h.default, m.Z, g.Z, E.ZP, b.ZP, y.Z, O.Z, v.ZP, I.Z, S.Z, p.Z, T.ZP), this.syncWith([p.Z], () => true), U = l.K.get(w) || false, Y = null != (t = null == e ? true : e.channelHistory) ? t : []
+    this.waitFor(_.Z, h.default, m.Z, g.Z, E.ZP, b.ZP, y.Z, O.Z, v.ZP, I.Z, T.Z, p.Z, S.ZP), this.syncWith([p.Z], () => true), U = l.K.get(D) || false, Y = null != (t = null == e ? true : e.channelHistory) ? t : []
   }
   getState() {
     return {

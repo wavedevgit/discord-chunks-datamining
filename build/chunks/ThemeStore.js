@@ -59,14 +59,14 @@ let y = 0,
   O = Chunk874893.K2,
   v = (0, Chunk541049.Z)(),
   I = O[v],
-  S = null;
+  T = null;
 
-function T() {
-  return __OVERLAY__ || null == S ? (0, Chunk765287.Z)(v, O, I) : S
+function S() {
+  return __OVERLAY__ || null == T ? (0, Chunk765287.Z)(v, O, I) : T
 }
 
 function A() {
-  let e = T();
+  let e = S();
   return module !== I && (I = module, (0, Chunk49214.Z)(I), true)
 }
 class C extends(r = Chunk442837.ZP.PersistedStore) {
@@ -98,30 +98,30 @@ function N() {
 }
 
 function R() {
-  return (0, Chunk780384.ap)(T())
+  return (0, Chunk780384.ap)(S())
 }
 
 function P(e) {
-  return S = null, !e.isSwitchingAccount && I !== h.BRd.DARK && (I = h.BRd.DARK, (0, u.Z)(I), A())
+  return T = null, !e.isSwitchingAccount && I !== h.BRd.DARK && (I = h.BRd.DARK, (0, u.Z)(I), A())
 }
 
-function w(e) {
+function D(e) {
   let {
     systemTheme: t
   } = e;
   return v = t, A()
 }
 
-function D(e) {
+function w(e) {
   return O = g({}, O, e.preferences), A()
 }
 
 function x(e) {
-  return S = e.theme, A()
+  return T = e.theme, A()
 }
 
 function L() {
-  return S = null, A()
+  return T = null, A()
 }
 
 function M() {
@@ -142,9 +142,9 @@ let j = new C(Chunk570140.Z, {
   UNSYNCED_USER_SETTINGS_UPDATE: A,
   USER_SETTINGS_PROTO_UPDATE: A,
   RESET_PREVIEW_CLIENT_THEME: A,
-  SYSTEM_THEME_CHANGE: w,
+  SYSTEM_THEME_CHANGE: D,
   ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: R,
-  UPDATE_THEME_PREFERENCES: D,
+  UPDATE_THEME_PREFERENCES: w,
   SET_THEME_OVERRIDE: x,
   CLEAR_THEME_OVERRIDE: L,
   REFRESH_THEME: M

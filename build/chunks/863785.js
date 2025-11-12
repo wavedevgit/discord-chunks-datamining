@@ -80,29 +80,29 @@ function f(e) {
     isPositioned: false
   }), [y, O] = i.useState(o);
   l(y, o) || O(o);
-  let [v, I] = i.useState(null), [S, T] = i.useState(null), A = i.useCallback(e => {
+  let [v, I] = i.useState(null), [T, S] = i.useState(null), A = i.useCallback(e => {
     e !== P.current && (P.current = e, I(e))
   }, []), C = i.useCallback(e => {
-    e !== w.current && (w.current = e, T(e))
-  }, []), N = _ || v, R = p || S, P = i.useRef(null), w = i.useRef(null), D = i.useRef(E), x = null != m, L = d(m), M = d(f), j = d(g), k = i.useCallback(() => {
-    if (!P.current || !w.current) return;
+    e !== D.current && (D.current = e, S(e))
+  }, []), N = _ || v, R = p || T, P = i.useRef(null), D = i.useRef(null), w = i.useRef(E), x = null != m, L = d(m), M = d(f), j = d(g), k = i.useCallback(() => {
+    if (!P.current || !D.current) return;
     let e = {
       placement: t,
       strategy: n,
       middleware: y
     };
-    M.current && (e.platform = M.current), (0, r.oo)(P.current, w.current, e).then(e => {
+    M.current && (e.platform = M.current), (0, r.oo)(P.current, D.current, e).then(e => {
       let t = {
         ...e,
         isPositioned: false !== j.current
       };
-      U.current && !l(D.current, t) && (D.current = t, a.flushSync(() => {
+      U.current && !l(w.current, t) && (w.current = t, a.flushSync(() => {
         b(t)
       }))
     })
   }, [y, t, n, M, j]);
   s(() => {
-    false === g && D.current.isPositioned && (D.current.isPositioned = false, b(e => ({
+    false === g && w.current.isPositioned && (w.current.isPositioned = false, b(e => ({
       ...e,
       isPositioned: false
     })))
@@ -111,14 +111,14 @@ function f(e) {
   s(() => (U.current = true, () => {
     U.current = false
   }), []), s(() => {
-    if (N && (P.current = N), R && (w.current = R), N && R) {
+    if (N && (P.current = N), R && (D.current = R), N && R) {
       if (L.current) return L.current(N, R, k);
       k()
     }
   }, [N, R, k, L, x]);
   let G = i.useMemo(() => ({
       reference: P,
-      floating: w,
+      floating: D,
       setReference: A,
       setFloating: C
     }), [A, C]),

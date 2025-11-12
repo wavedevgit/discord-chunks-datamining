@@ -56,10 +56,10 @@ function E(e, t) {
   }), e
 }
 let b = () => {
-    let [e, t] = Chunk647438.useState(Chunk474936.PremiumTypes.TIER_0), [n, h] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [g, b] = Chunk647438.useState(null), [O, v] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [I, S] = Chunk647438.useState([]), [T, A] = Chunk647438.useState(() => {
+    let [e, t] = Chunk647438.useState(Chunk474936.PremiumTypes.TIER_0), [n, h] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [g, b] = Chunk647438.useState(null), [O, v] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [I, T] = Chunk647438.useState([]), [S, A] = Chunk647438.useState(() => {
       let e = new Date;
       return module.setMonth(module.getMonth() + 1), module
-    }), [C, N] = Chunk647438.useState(null), [R, P] = Chunk647438.useState(false), [w, D] = Chunk647438.useState(false), [x, L] = Chunk647438.useState(false);
+    }), [C, N] = Chunk647438.useState(null), [R, P] = Chunk647438.useState(false), [D, w] = Chunk647438.useState(false), [x, L] = Chunk647438.useState(false);
     (0, Chunk647438.useEffect)(() => {
       (0, Chunk821849.Y2)()
     }, []), (0, Chunk647438.useEffect)(() => {
@@ -79,7 +79,7 @@ let b = () => {
     }, [O]), (0, Chunk647438.useEffect)(() => {
       switch (module) {
         case Chunk474936.PremiumTypes.TIER_0:
-          S([{
+          T([{
             label: "Nitro Basic Monthly",
             value: Chunk474936.Xh.PREMIUM_MONTH_TIER_0
           }, {
@@ -88,7 +88,7 @@ let b = () => {
           }]), v(Chunk474936.Xh.PREMIUM_MONTH_TIER_0);
           break;
         case Chunk474936.PremiumTypes.TIER_1:
-          S([{
+          T([{
             label: "Nitro Classic Monthly",
             value: Chunk474936.Xh.PREMIUM_MONTH_TIER_1
           }, {
@@ -97,7 +97,7 @@ let b = () => {
           }]), v(Chunk474936.Xh.PREMIUM_MONTH_TIER_1);
           break;
         case Chunk474936.PremiumTypes.TIER_2:
-          S([{
+          T([{
             label: "Nitro Monthly",
             value: Chunk474936.Xh.PREMIUM_MONTH_TIER_2
           }, {
@@ -128,10 +128,10 @@ let b = () => {
         tax: 0,
         taxInclusive: true,
         subscriptionPeriodStart: new Date,
-        subscriptionPeriodEnd: T,
+        subscriptionPeriodEnd: S,
         status: Chunk981631.hUK.PAID
       })), require !== Chunk45474.R.PREVIEW && null !== C && N(null)
-    }, [require, g, T, O, C]);
+    }, [require, g, S, O, C]);
     let M = Chunk647438.useCallback(async () => {
       L(true), await (0, Chunk481060.ZDy)(async () => t => (0, r.jsx)(u.x, E(m({}, t), {
         onClose: () => {
@@ -146,7 +146,7 @@ let b = () => {
           intervalCount: 1
         },
         errorOnCancel: R,
-        errorOnRedeem: w,
+        errorOnRedeem: D,
         setActiveStep: e => {
           h(e), t.onClose()
         },
@@ -159,7 +159,7 @@ let b = () => {
           createdAt: new Date,
           canceledAt: null,
           currentPeriodStart: new Date,
-          currentPeriodEnd: T,
+          currentPeriodEnd: S,
           status: d.O0b.ACTIVE,
           paymentSourceId: null,
           paymentGateway: null,
@@ -174,7 +174,7 @@ let b = () => {
           pauseReason: f.Id.UNKNOWN
         }
       })))
-    }, [module, g, O, C, R, w, require, T]);
+    }, [module, g, O, C, R, D, require, S]);
     return (0, Chunk647438.useEffect)(() => {
       x && M()
     }, [require, x, M]), (0, Chunk951288.jsxs)(Chunk29594.pg, {
@@ -250,9 +250,9 @@ let b = () => {
         })
       }), (0, Chunk951288.jsx)(Chunk29594.BZ, {
         children: (0, Chunk951288.jsx)(Chunk481060.Checkbox, {
-          checked: w,
+          checked: D,
           onChange: () => {
-            D(!w)
+            w(!D)
           },
           label: "Error on Redeem Offer"
         })

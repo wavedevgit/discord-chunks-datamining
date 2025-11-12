@@ -60,9 +60,9 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -70,7 +70,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -82,8 +82,8 @@ let A = new Chunk710845.Z("PopoutWindowStore"),
   N = {},
   R = {},
   P = {},
-  w = {},
-  D = new Set,
+  D = {},
+  w = new Set,
   x = "app-mount",
   L = () => $.emitChange(),
   M = s().debounce(L, 150),
@@ -118,7 +118,7 @@ function G(e) {
   let t = R[e];
   a()(null != t, "Popout window was null during unmount"), t.removeEventListener("focus", L), t.removeEventListener("blur", L), t.removeEventListener("resize", M);
   let n = P[e];
-  a()(null != n, "Window root was null while unmounting"), n.unmount(), delete R[e], delete N[e], delete w[e], delete P[e]
+  a()(null != n, "Window root was null while unmounting"), n.unmount(), delete R[e], delete N[e], delete D[e], delete P[e]
 }
 
 function B(e, t, r) {
@@ -137,7 +137,7 @@ function Z(e, t) {
 
 function F(e) {
   let t = R[e],
-    n = w[e];
+    n = D[e];
   if (null == t) return void A.warn("Failed to open window", e);
   let r = t.document;
   (0, g.uF)(r, L), t.addEventListener("focus", L), t.addEventListener("blur", L), t.addEventListener("resize", M), j ? k(e, t) : Z(e, t);
@@ -161,7 +161,7 @@ function V(e) {
     defaultWidth: s,
     defaultHeight: l,
     defaultAlwaysOnTop: c = false
-  } = n, u = S(n, ["defaultWidth", "defaultHeight", "defaultAlwaysOnTop"]), d = I(O({}, u), {
+  } = n, u = T(n, ["defaultWidth", "defaultHeight", "defaultAlwaysOnTop"]), d = I(O({}, u), {
     width: null != s ? s : u.width,
     height: null != l ? l : u.height
   }), p = c, g = C[t];
@@ -199,11 +199,11 @@ function V(e) {
       }
     }), e
   }
-  i ? A.verbose("Opening out of process overlay window", t) : null == v || v.focus(), R[t] = v, w[t] = r, h.isPlatformEmbedded && (m.ZP.setAlwaysOnTop(t, p), N[t] = p, m.ZP.isAlwaysOnTop(t).then(e => N[t] = e)), D.add(t)
+  i ? A.verbose("Opening out of process overlay window", t) : null == v || v.focus(), R[t] = v, D[t] = r, h.isPlatformEmbedded && (m.ZP.setAlwaysOnTop(t, p), N[t] = p, m.ZP.isAlwaysOnTop(t).then(e => N[t] = e)), w.add(t)
 }
 
 function H(e) {
-  D.has(e) && (F(e), D.delete(e), $.emitChange())
+  w.has(e) && (F(e), w.delete(e), $.emitChange())
 }
 
 function Y(e) {
@@ -298,7 +298,7 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
     return C
   }
   isWindowFullyInitialized(e) {
-    return null != R[e] && null != P[e] && null != w[e]
+    return null != R[e] && null != P[e] && null != D[e]
   }
   isWindowFullScreen(e) {
     var t, n;

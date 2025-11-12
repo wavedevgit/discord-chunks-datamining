@@ -184,19 +184,19 @@ class P extends(r = Chunk647438.Component) {
         renderCustomActions: o
       } = this.props;
       if (null != o) return (0, i.jsx)("div", {
-        className: T.tileActions,
+        className: S.tileActions,
         children: o()
       });
       if (null == n) return null;
       let s = null != n && n.primarySkuId === r,
         c = null != a && a.hasFlag(I.eHb.HIDDEN);
       return (0, i.jsxs)("div", {
-        className: T.tileActions,
+        className: S.tileActions,
         children: [!s || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {
           application: n,
           customDisabledColor: l.zx.Colors.PRIMARY,
           size: l.zx.Sizes.SMALL,
-          className: T.actionButton,
+          className: S.actionButton,
           source: I.Sbl.MESSAGE_EMBED,
           onClick: this.handleActionButtonClick
         }), t && !c || e.premium ? null : (0, i.jsx)(f.Z, {
@@ -211,9 +211,9 @@ class P extends(r = Chunk647438.Component) {
 A(P, "defaultProps", {
   renderFallback: Chunk981631.dG4
 });
-let w = [Chunk55563.Z, Chunk558314.Z, Chunk283595.Z, Chunk551428.Z];
+let D = [Chunk55563.Z, Chunk558314.Z, Chunk283595.Z, Chunk551428.Z];
 
-function D(e) {
+function w(e) {
   let {
     skuId: t
   } = e, n = y.Z.get(t), r = null != n ? g.Z.getApplication(n.applicationId) : null;
@@ -227,5 +227,5 @@ function D(e) {
   }
 }
 let x = (0, Chunk112724.Z)((0, Chunk730749.Z)(P)),
-  L = Chunk442837.ZP.connectStores(w, D)(x),
-  M = (0, Chunk730749.Z)(Chunk442837.ZP.connectStores(w, D)(P))
+  L = Chunk442837.ZP.connectStores(D, w)(x),
+  M = (0, Chunk730749.Z)(Chunk442837.ZP.connectStores(D, w)(P))

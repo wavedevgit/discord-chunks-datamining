@@ -62,10 +62,10 @@ function O(e, t) {
   let {
     disabled: n,
     type: a
-  } = e, [g, b] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), O = false, v = g === p.X1.STICKER, I = false, S = i.useCallback(() => {
+  } = e, [g, b] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), O = false, v = g === p.X1.STICKER, I = false, T = i.useCallback(() => {
     (0, d.RO)(p.X1.STICKER, a)
   }, [a]), {
-    Component: T,
+    Component: S,
     events: A,
     play: C
   } = (0, l.z)(), N = (0, f.v)(u.U);
@@ -80,7 +80,7 @@ function O(e, t) {
         className: o()(m.button, m.stickerButton)
       }, A), {
         onClick: () => {
-          S(), C()
+          T(), C()
         },
         isActive: v,
         "aria-label": h.intl.string(h.t.rZpidU),
@@ -89,7 +89,7 @@ function O(e, t) {
         "aria-controls": b,
         sparkle: O,
         notification: I ? _.j.UPDATE : null,
-        children: (0, r.jsx)(T, {
+        children: (0, r.jsx)(S, {
           size: "refresh_sm",
           color: "currentColor"
         })

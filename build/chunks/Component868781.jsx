@@ -2,7 +2,7 @@
 /** chunk id: 868781, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -73,7 +73,7 @@ function v(e) {
     location: "PresenceActivityStatus"
   }), {
     analyticsLocations: I
-  } = (0, l.ZP)(), S = i.useCallback(() => {
+  } = (0, l.ZP)(), T = i.useCallback(() => {
     (0, p.A)({
       analyticsLocations: I,
       activityType: t.type,
@@ -82,7 +82,7 @@ function v(e) {
   }, [I, t.application_id, t.type]);
   if (u && d) return null;
   let {
-    text: T,
+    text: S,
     tooltip: A
   } = (0, _.Z)(t, y || v), C = O(t, b), N = d && !g && null != A;
   return (0, r.jsxs)(r.Fragment, {
@@ -90,13 +90,13 @@ function v(e) {
       icon: C,
       tooltipText: N ? A : true,
       className: s,
-      onTooltipShow: N ? S : true
+      onTooltipShow: N ? T : true
     }), !d && (0, r.jsx)(m.Z, {
       variant: n,
       className: a,
       canTruncate: E,
       hideTooltip: g,
-      children: T
+      children: S
     })]
   })
 }
@@ -144,7 +144,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   return (0, d.b)({
     location: "VoiceActivityStatusExperimentWrapper"
   }) ? (0, r.jsx)(I, y({}, e)) : (0, r.jsx)(v, y({}, e))

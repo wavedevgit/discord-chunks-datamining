@@ -2,7 +2,7 @@
 /** chunk id: 539907, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => D,
+  j: () => w,
   t: () => I
 }), require("./388685.js"), require("./415506.js");
 var r, Chunk951288 = require("./951288.js"),
@@ -75,9 +75,9 @@ function I(e, t) {
   }
   returnfalse
 }
-let S = 12;
+let T = 12;
 
-function T(e) {
+function S(e) {
   let {
     positionKey: t,
     position: n,
@@ -155,12 +155,12 @@ function P(e) {
   return null != n ? n : (c()(null != t.current, "Invalid ref"), t.current.getBoundingClientRect())
 }
 
-function w(e, t) {
+function D(e, t) {
   let n = P(e),
     r = P(t);
   return n.top === r.top && n.left === r.left
 }
-class D extends(r = Chunk647438.Component) {
+class w extends(r = Chunk647438.Component) {
   formatDimension(e) {
     return this.props.useRawTargetDimensions ? e : Math.ceil(e)
   }
@@ -170,8 +170,8 @@ class D extends(r = Chunk647438.Component) {
     } = this.props;
     if (!r) return e;
     let i = n.offsetWidth,
-      a = e + t.offsetWidth - i + S;
-    return a > 0 ? Math.max(S, e - a) : Math.max(S, e)
+      a = e + t.offsetWidth - i + T;
+    return a > 0 ? Math.max(T, e - a) : Math.max(T, e)
   }
   nudgeRightAlignment(e, t, n) {
     let {
@@ -179,7 +179,7 @@ class D extends(r = Chunk647438.Component) {
     } = this.props;
     if (!r) return 0;
     let i = t.offsetWidth;
-    return Math.min(n.offsetWidth - e - i - S, 0)
+    return Math.min(n.offsetWidth - e - i - T, 0)
   }
   getHorizontalAlignmentStyle(e, t, n, r) {
     let {
@@ -228,16 +228,16 @@ class D extends(r = Chunk647438.Component) {
     if (!r) return e;
     if (e < 0) return 0;
     let i = t.getBoundingClientRect().height,
-      a = e + i - n.offsetHeight + S;
-    return a > 0 ? Math.max(S, e - a) : e
+      a = e + i - n.offsetHeight + T;
+    return a > 0 ? Math.max(T, e - a) : e
   }
   nudgeBottomAlignment(e, t, n) {
     let {
       nudgeAlignIntoViewport: r
     } = this.props, i = n.offsetHeight, a = i - e;
     if (!r) return a;
-    let o = a + t.offsetHeight - i + S;
-    return o > 0 ? Math.max(S, a - o) : a
+    let o = a + t.offsetHeight - i + T;
+    return o > 0 ? Math.max(T, a - o) : a
   }
   getVerticalAlignmentStyle(e, t, n, r) {
     let {
@@ -306,7 +306,7 @@ class D extends(r = Chunk647438.Component) {
         });
       case "overlap_horizontal":
         return this.getVerticalAlignmentStyle(s, t, n, {
-          [r]: S
+          [r]: T
         });
       case "center":
         return this.getVerticalAlignmentStyle(s, t, n, {
@@ -375,7 +375,7 @@ class D extends(r = Chunk647438.Component) {
     c()(null != Chunk951288, "Missing elementRef"), null != require.current && O.set(Chunk951288, require.current), Chunk585483.S.subscribe(Chunk981631.CkL.LAYER_POP_START, this.handleLayerPopStart), Chunk585483.S.subscribe(Chunk981631.CkL.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == Chunk951288 || null == (t = Chunk951288.ownerDocument) || null == (e = exports.defaultView) || module.addEventListener("resize", this.handleLayerPopComplete), null == r || r()
   }
   componentDidUpdate(e, t) {
-    if (T(e) === T(this.props) && w(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
+    if (S(e) === S(this.props) && D(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
       var n, r;
       null == (n = (r = this.props).onPositionChange) || n.call(r, this.state.position)
     }
@@ -457,7 +457,7 @@ class D extends(r = Chunk647438.Component) {
     })
   }
 }
-g(D, "defaultProps", {
+g(w, "defaultProps", {
   nudgeAlignIntoViewport: false,
   spacing: 0,
   autoInvert: false,

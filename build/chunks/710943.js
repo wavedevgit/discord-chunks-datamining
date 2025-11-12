@@ -33,7 +33,7 @@ function E(e, t, n) {
       selectedDateDescription: v
     } = r.Lh.get(t),
     I = (0, p.q)(g(i.Z), "@react-aria/calendar"),
-    S = (0, h.a)({
+    T = (0, h.a)({
       weekday: "long",
       day: "numeric",
       month: "long",
@@ -41,23 +41,23 @@ function E(e, t, n) {
       era: (0, r.tN)(b),
       timeZone: t.timeZone
     }),
-    T = t.isSelected(b),
+    S = t.isSelected(b),
     A = t.isCellFocused(b) && !e.isOutsideMonth;
   y = y || t.isCellDisabled(b);
   let C = t.isCellUnavailable(b),
     N = !y && !C,
     R = t.isValueInvalid && !!("highlightedRange" in t ? !t.anchorDate && t.highlightedRange && b.compare(t.highlightedRange.start) >= 0 && 0 >= b.compare(t.highlightedRange.end) : t.value && (0, a.KC)(t.value, b));
-  R && (T = true), b = (0, o.v)(b, a.N9);
+  R && (S = true), b = (0, o.v)(b, a.N9);
   let P = (0, m.useMemo)(() => b.toDate(t.timeZone), [b, t.timeZone]),
-    w = (0, a.zk)(b, t.timeZone),
-    D = (0, m.useMemo)(() => {
+    D = (0, a.zk)(b, t.timeZone),
+    w = (0, m.useMemo)(() => {
       let e = "";
-      return "highlightedRange" in t && t.value && !t.anchorDate && ((0, a.KC)(b, t.value.start) || (0, a.KC)(b, t.value.end)) && (e = v + ", "), e += S.format(P), w ? e = I.format(T ? "todayDateSelected" : "todayDate", {
+      return "highlightedRange" in t && t.value && !t.anchorDate && ((0, a.KC)(b, t.value.start) || (0, a.KC)(b, t.value.end)) && (e = v + ", "), e += T.format(P), D ? e = I.format(S ? "todayDateSelected" : "todayDate", {
         date: e
-      }) : T && (e = I.format("dateSelected", {
+      }) : S && (e = I.format("dateSelected", {
         date: e
       })), t.minValue && (0, a.KC)(b, t.minValue) ? e += ", " + I.format("minimumDate") : t.maxValue && (0, a.KC)(b, t.maxValue) && (e += ", " + I.format("maximumDate")), e
-    }, [S, P, I, T, w, b, t, v]),
+    }, [T, P, I, S, D, b, t, v]),
     x = "";
   "anchorDate" in t && A && !t.isReadOnly && N && (x = t.anchorDate ? I.format("finishRangeSelectionPrompt") : I.format("startRangeSelectionPrompt"));
   let L = (0, s.P)(x),
@@ -126,7 +126,7 @@ function E(e, t, n) {
     cellProps: {
       role: "gridcell",
       "aria-disabled": !N || true,
-      "aria-selected": T || true,
+      "aria-selected": S || true,
       "aria-invalid": R || true
     },
     buttonProps: (0, d.d)(U, {
@@ -136,7 +136,7 @@ function E(e, t, n) {
       tabIndex: E,
       role: "button",
       "aria-disabled": !N || true,
-      "aria-label": D,
+      "aria-label": w,
       "aria-invalid": R || true,
       "aria-describedby": [R ? O : true, L["aria-describedby"]].filter(Boolean).join(" ") || true,
       onPointerEnter(e) {
@@ -151,7 +151,7 @@ function E(e, t, n) {
     }),
     isPressed: G,
     isFocused: A,
-    isSelected: T,
+    isSelected: S,
     isDisabled: y,
     isUnavailable: C,
     isOutsideVisibleRange: 0 > b.compare(t.visibleRange.start) || b.compare(t.visibleRange.end) > 0,

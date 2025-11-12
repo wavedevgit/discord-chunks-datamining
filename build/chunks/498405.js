@@ -103,12 +103,12 @@ function m(e) {
   }, [n]);
   let {
     focusPath: I
-  } = y, [S, T] = r.useState(false), [A, C] = r.useState(E), [{
+  } = y, [T, S] = r.useState(false), [A, C] = r.useState(E), [{
     onItemFocusMemoizer: N,
     onItemMouseEnterMemoizer: R
   }] = r.useState(() => ({
     onItemFocusMemoizer: new o.$o(e => () => {
-      T(true), O({
+      S(true), O({
         type: i.B.SET_FOCUS_PATH,
         path: e.split(d)
       })
@@ -141,25 +141,25 @@ function m(e) {
         let i = p(null != (r = e.target.ownerDocument) ? r : document, _(t, I));
         null == i || i.click()
     }
-  }, [v, t, I, c, g]), w = r.useCallback(() => {
-    S || T(true)
-  }, [S]), D = r.useCallback(e => {
-    e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && S && T(false)
-  }, [S]), x = r.useCallback(() => {
+  }, [v, t, I, c, g]), D = r.useCallback(() => {
+    T || S(true)
+  }, [T]), w = r.useCallback(e => {
+    e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && T && S(false)
+  }, [T]), x = r.useCallback(() => {
     O({
       type: i.B.SET_FOCUS_PATH,
       path: []
-    }), T(false)
+    }), S(false)
   }, []), L = r.useCallback(e => e.every((e, t) => I[t] === e), [I]), M = r.useCallback(() => ({
     role: "menu",
     id: t,
     tabIndex: false,
     onKeyDown: P,
-    onFocus: w,
-    onBlur: D,
+    onFocus: D,
+    onBlur: w,
     onMouseLeave: x,
     "aria-activedescendant": I.length > 0 ? (0, o.qR)(t, I.join(d)) : true
-  }), [t, P, w, D, x, I]), j = r.useCallback(e => {
+  }), [t, P, D, w, x, I]), j = r.useCallback(e => {
     let {
       path: n
     } = e;

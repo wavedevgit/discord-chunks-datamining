@@ -2,7 +2,7 @@
 /** chunk id: 593545, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -72,7 +72,7 @@ function I(e) {
   }
 }
 
-function S(e, t) {
+function T(e, t) {
   let [n, r] = i.useState(false), [a, o] = i.useState(null), [s, l] = i.useState(1);
   return i.useEffect(() => {
     let n = 5e4;
@@ -101,7 +101,7 @@ function S(e, t) {
   }
 }
 
-function T(e) {
+function S(e) {
   let {
     text: t,
     language: i
@@ -245,7 +245,7 @@ function R(e) {
     children: (0, r.jsx)(u.P3F, {
       className: g.openFullPreviewSection,
       onClick: () => {
-        (0, u.h7j)(t => (0, r.jsx)(w, y({}, e, t)))
+        (0, u.h7j)(t => (0, r.jsx)(D, y({}, e, t)))
       },
       children: (0, r.jsx)(u.bJT, {
         size: "xs",
@@ -274,9 +274,9 @@ function P(e) {
   }) : I += " " + m.intl.formatToPlainString(m.t["1+gGcK"], {
     formattedBytes: (0, h.IC)(p)
   }));
-  let S = (null == b ? true : b.slice(0, O).join("\n")) + I,
-    P = (0, f.nM)(S),
-    w = l || O < y;
+  let T = (null == b ? true : b.slice(0, O).join("\n")) + I,
+    P = (0, f.nM)(T),
+    D = l || O < y;
   return (0, r.jsxs)("div", {
     className: o()(E, g.container),
     children: [(0, r.jsx)("div", {
@@ -285,7 +285,7 @@ function P(e) {
       }),
       children: null == s ? (0, r.jsx)(u.$jN, {
         className: g.spinner
-      }) : (0, r.jsx)(T, {
+      }) : (0, r.jsx)(S, {
         text: P,
         language: d
       })
@@ -293,7 +293,7 @@ function P(e) {
       color: "header-secondary",
       className: g.footer,
       variant: "text-sm/normal",
-      children: [w ? (0, r.jsxs)(r.Fragment, {
+      children: [D ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(A, {
           expanded: l,
           setExpanded: c,
@@ -322,7 +322,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     url: t,
     fileName: n,
@@ -346,7 +346,7 @@ function w(e) {
         className: g.modalTextContainer,
         children: null == l ? (0, r.jsx)(u.$jN, {
           className: g.spinner
-        }) : (0, r.jsx)(T, {
+        }) : (0, r.jsx)(S, {
           text: p,
           language: f
         })
@@ -369,7 +369,7 @@ function w(e) {
     })
   })
 }
-let D = Chunk647438.memo(function(e) {
+let w = Chunk647438.memo(function(e) {
   let {
     url: t,
     fileName: n,
@@ -382,7 +382,7 @@ let D = Chunk647438.memo(function(e) {
     fileContents: m,
     bytesLeft: E,
     hadError: b
-  } = S(t, s);
+  } = T(t, s);
   return b ? (0, r.jsx)(d.Z, {
     url: t,
     fileName: n,

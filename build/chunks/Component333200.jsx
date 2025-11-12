@@ -86,16 +86,16 @@ function p(e) {
     required: O,
     onQueryChange: v,
     onKeyDown: I,
-    onFocus: S,
-    onBlur: T
+    onFocus: T,
+    onBlur: S
   } = b, {
     isOpen: A,
     setIsOpen: C,
     refs: N,
     floatingStyles: R,
     getFloatingProps: P,
-    getReferenceProps: w,
-    transitionStyles: D
+    getReferenceProps: D,
+    transitionStyles: w
   } = (0, o.C)();
   return (0, r.jsxs)(i.uz, d(c({}, b), {
     isCollapsible: true,
@@ -113,16 +113,16 @@ function p(e) {
       errorMessage: h,
       successMessage: m,
       wrapTags: g,
-      onBlur: T,
+      onBlur: S,
       onQueryChange: v,
-      onFocus: S,
+      onFocus: T,
       onKeyDown: I,
       showChevronButton: true,
       ref: N.setReference
-    }, w())), A && (0, r.jsx)("div", d(c({
+    }, D())), A && (0, r.jsx)("div", d(c({
       ref: N.setFloating,
       className: s.selectDropdown,
-      style: c({}, R, D)
+      style: c({}, R, w)
     }, P()), {
       children: (0, r.jsx)(i.px, {
         renderListItem: e => (0, r.jsx)(a.W, c({}, e)),

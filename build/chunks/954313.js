@@ -17,7 +17,7 @@ require.d(exports, {
   ib: () => R,
   lh: () => J,
   mF: () => q,
-  ub: () => D,
+  ub: () => w,
   v1: () => k,
   x6: () => j,
   zi: () => X
@@ -43,8 +43,8 @@ let p = 365,
   O = [Chunk859334.Ci.SU.weekday, Chunk859334.Ci.MO.weekday, Chunk859334.Ci.TU.weekday, Chunk859334.Ci.WE.weekday, Chunk859334.Ci.TH.weekday],
   v = [Chunk859334.Ci.TU.weekday, Chunk859334.Ci.WE.weekday, Chunk859334.Ci.TH.weekday, Chunk859334.Ci.FR.weekday, Chunk859334.Ci.SA.weekday],
   I = [Chunk859334.Ci.SA.weekday, Chunk859334.Ci.SU.weekday],
-  S = [Chunk859334.Ci.FR.weekday, Chunk859334.Ci.SA.weekday],
-  T = [Chunk859334.Ci.SU.weekday, Chunk859334.Ci.MO.weekday],
+  T = [Chunk859334.Ci.FR.weekday, Chunk859334.Ci.SA.weekday],
+  S = [Chunk859334.Ci.SU.weekday, Chunk859334.Ci.MO.weekday],
   A = [Chunk859334.Ci.SU.weekday, Chunk859334.Ci.MO.weekday, Chunk859334.Ci.TU.weekday, Chunk859334.Ci.WE.weekday, Chunk859334.Ci.TH.weekday, Chunk859334.Ci.FR.weekday, Chunk859334.Ci.SA.weekday],
   C = new Set([0, 6]);
 
@@ -95,18 +95,18 @@ let R = () => {
     return module.minutes() >= 30 && (t += 1), module.hour(exports).minutes(0).seconds(0)
   },
   P = (e, t) => (0, l.vc)(e, e.get("years") === t.get("years") ? m : g),
-  w = (e, t) => {
+  D = (e, t) => {
     let n = (0, l.wY)(e.toDate(), t.toDate());
     return n > 1 || n < 0 ? P(e, t) : (0, l.vc)(e, e.localeData().calendar(n < 1 ? "sameDay" : "nextDay", e, t))
   };
 
-function D(e, t, n) {
+function w(e, t, n) {
   null == n && (n = a()());
   let r = a()(e),
     i = null != t && "" !== t ? a()(t) : true,
     o = null != t && r.isSame(i, "day");
   return {
-    startDateTimeString: w(r, n),
+    startDateTimeString: D(r, n),
     endDateTimeString: null != i ? o ? i.format(E) : P(i, n) : true,
     currentOrPastEvent: r <= n,
     upcomingEvent: r <= a()().add(1, "hour"),
@@ -224,7 +224,7 @@ function W(e) {
 function K(e) {
   let t = x(e.toDate().getDay()),
     n = x(e.toDate().getUTCDay());
-  return n.weekday - t.weekday > 0 ? T : n.weekday - t.weekday < 0 ? S : I
+  return n.weekday - t.weekday > 0 ? S : n.weekday - t.weekday < 0 ? T : I
 }
 
 function z(e, t) {

@@ -72,7 +72,7 @@ function m(e) {
           text: null, onClick: null
         }
     }
-  }, [n, y, O, u, s, f, b]), S = i.useCallback(async e => {
+  }, [n, y, O, u, s, f, b]), T = i.useCallback(async e => {
     e.stopPropagation(), E(true);
     try {
       await (null == I ? true : I())
@@ -86,7 +86,7 @@ function m(e) {
     text: v,
     fullWidth: true,
     loading: g || o,
-    onClick: S
+    onClick: T
   })
 }
 

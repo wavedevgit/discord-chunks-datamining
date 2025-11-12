@@ -32,7 +32,7 @@ var r, Chunk348327 = require("./348327.js"),
   Chunk797258 = require("./797258.js"),
   Chunk981631 = require("./981631.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,14 +41,14 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -81,7 +81,7 @@ function k() {
   let i = Chunk406066.Z.getActivities();
   require.push(...Chunk348327);
   let o = Chunk272053.Z.getStream();
-  null != Chunk392711 && require.push(D({
+  null != Chunk392711 && require.push(w({
     type: Chunk981631.IIU.STREAMING
   }, Chunk392711));
   let l = new Set;
@@ -96,7 +96,7 @@ function k() {
     v = Chunk317381 || Chunk212517 && !Chunk812206;
   if (null != Chunk570140 && null != Chunk570140.name && !Chunk581883) {
     let t = Chunk77498.Z.getGameByName(Chunk570140.name);
-    require.push(D({
+    require.push(w({
       type: Chunk981631.IIU.PLAYING,
       name: Chunk570140.name,
       application_id: null != (e = Chunk570140.id) ? module : null == exports ? true : exports.id,
@@ -106,11 +106,11 @@ function k() {
     }, (0, Chunk509003.LK)(Chunk570140)))
   }
   let I = Chunk768419.Z.getActivity();
-  null != Chunk630388 && require.push(D({
+  null != Chunk630388 && require.push(w({
     type: Chunk981631.IIU.LISTENING
   }, Chunk630388));
-  let w = Chunk106301.Z.getCurrentHangStatus();
-  if (null != w) {
+  let D = Chunk106301.Z.getCurrentHangStatus();
+  if (null != D) {
     let e = Chunk106301.Z.getCustomHangStatus(),
       {
         defaultStatusVariant: r
@@ -121,7 +121,7 @@ function k() {
     require.push({
       type: Chunk981631.IIU.HANG_STATUS,
       name: "Hang Status",
-      state: "".concat(w, ":").concat(r),
+      state: "".concat(D, ":").concat(r),
       details: null == module ? true : module.status,
       emoji: null == module ? true : module.emoji
     })
@@ -155,7 +155,7 @@ function Z(e) {
   let {
     localActivities: t
   } = e;
-  j = D({}, t), k()
+  j = w({}, t), k()
 }
 
 function F() {
@@ -165,7 +165,7 @@ function F() {
     var n, r;
     let l = null != (n = Chunk392711.flags) ? require : 0,
       c = (0, Chunk212517.S)(Chunk392711, (0, Chunk630388.yE)(null != (r = null == Chunk392711 ? true : Chunk392711.flags) ? r : 0, Chunk981631.xjy.INSTANCE), Chunk392711.platform === Chunk981631.M7m.EMBEDDED, (0, Chunk212517.D)(Chunk392711), s);
-    Chunk570140 !== Chunk442837 ? (module[Chunk348327] = [a, L(D({}, Chunk392711), {
+    Chunk570140 !== Chunk442837 ? (module[Chunk348327] = [a, L(w({}, Chunk392711), {
       flags: Chunk570140
     }), s], t = true) : module[Chunk348327] = [a, Chunk392711, s]
   }
@@ -203,7 +203,7 @@ class H extends(r = Chunk442837.ZP.Store) {
     return null
   }
 }
-w(H, "displayName", "LocalActivityStore");
+D(H, "displayName", "LocalActivityStore");
 let Y = new H(Chunk570140.Z, {
   ROBLOX_SUBGAME_UPDATE: k,
   ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: k,

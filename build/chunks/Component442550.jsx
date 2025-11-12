@@ -25,8 +25,8 @@ function _(e) {
     fallbackSrc: h,
     "aria-hidden": m,
     showTooltip: g = false
-  } = e, E = (0, u.ZP)(), b = "".concat(n, "px"), [y, O] = i.useState(false), [v, I] = i.useState(false), S = null == h || v;
-  if (null == t || y && S) return (0, r.jsx)(c.IMN, {
+  } = e, E = (0, u.ZP)(), b = "".concat(n, "px"), [y, O] = i.useState(false), [v, I] = i.useState(false), T = null == h || v;
+  if (null == t || y && T) return (0, r.jsx)(c.IMN, {
     size: "custom",
     width: "100%",
     height: "100%",
@@ -36,7 +36,7 @@ function _(e) {
     },
     className: o()(f.contentImage, _)
   });
-  let T = "height" === a ? {
+  let S = "height" === a ? {
     maxWidth: b,
     height: b
   } : {
@@ -48,7 +48,7 @@ function _(e) {
     __unsupportedReactNodeAsText: p,
     shouldShow: g,
     children: (0, r.jsx)("img", {
-      style: T,
+      style: S,
       className: o()(f.contentImage, _),
       src: y && null != h ? h : t,
       "aria-hidden": m,

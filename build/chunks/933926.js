@@ -34,8 +34,8 @@ function b(e, t, n) {
       validationDetails: I
     } = t.displayValidation,
     {
-      labelProps: S,
-      fieldProps: T,
+      labelProps: T,
+      fieldProps: S,
       descriptionProps: A,
       errorMessageProps: C
     } = (0, d.U)({
@@ -60,28 +60,28 @@ function b(e, t, n) {
       onFocusWithinChange: e.onFocusChange
     }),
     P = (0, p.q)(h(r.Z), "@react-aria/datepicker"),
-    w = "hour" === t.maxGranularity ? "selectedTimeDescription" : "selectedDateDescription",
-    D = "hour" === t.maxGranularity ? "time" : "date",
-    x = t.value ? P.format(w, {
-      [D]: t.formatValue({
+    D = "hour" === t.maxGranularity ? "selectedTimeDescription" : "selectedDateDescription",
+    w = "hour" === t.maxGranularity ? "time" : "date",
+    x = t.value ? P.format(D, {
+      [w]: t.formatValue({
         month: "long"
       })
     }) : "",
     L = (0, o.P)(x),
-    M = "presentation" === e[g] ? T["aria-describedby"] : [L["aria-describedby"], T["aria-describedby"]].filter(Boolean).join(" ") || true,
+    M = "presentation" === e[g] ? S["aria-describedby"] : [L["aria-describedby"], S["aria-describedby"]].filter(Boolean).join(" ") || true,
     j = e[E],
     k = (0, u.useMemo)(() => j || (0, a.E7)(n), [j, n]),
     U = (0, i.H)(t, n, "presentation" === e[g]);
   m.set(t, {
     ariaLabel: e["aria-label"],
-    ariaLabelledBy: [S.id, e["aria-labelledby"]].filter(Boolean).join(" ") || true,
+    ariaLabelledBy: [T.id, e["aria-labelledby"]].filter(Boolean).join(" ") || true,
     ariaDescribedBy: M,
     focusManager: k
   });
   let G = (0, u.useRef)(e.autoFocus);
   y = "presentation" === e[g] ? {
     role: "presentation"
-  } : (0, s.d)(T, {
+  } : (0, s.d)(S, {
     role: "group",
     "aria-disabled": e.isDisabled || true,
     "aria-describedby": M
@@ -104,7 +104,7 @@ function b(e, t, n) {
   let Z = (0, c.z)(e);
   return {
     labelProps: {
-      ...S,
+      ...T,
       onClick: () => {
         k.focusFirst()
       }

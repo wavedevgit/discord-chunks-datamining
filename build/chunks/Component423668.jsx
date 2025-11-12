@@ -29,7 +29,7 @@ let l = {
         showDisabledItems: m,
         showColoredItems: g,
         dangerItemColor: E
-      } = e, [b, y] = i.useState(true), [O, v] = i.useState(false), [I, S] = i.useState("text"), [T, A] = i.useState("cozy"), [C, N] = i.useState(true), R = e => (0, r.jsxs)(o.v2r, {
+      } = e, [b, y] = i.useState(true), [O, v] = i.useState(false), [I, T] = i.useState("text"), [S, A] = i.useState("cozy"), [C, N] = i.useState(true), R = e => (0, r.jsxs)(o.v2r, {
         navId: "menu-story",
         "aria-label": "Story Menu",
         variant: t,
@@ -128,13 +128,13 @@ let l = {
               group: "channel-type",
               label: "Text Channel",
               checked: "text" === I,
-              action: () => S("text")
+              action: () => T("text")
             }), (0, r.jsx)(o.k5B, {
               id: "radio-voice",
               group: "channel-type",
               label: "Voice Channel",
               checked: "voice" === I,
-              action: () => S("voice")
+              action: () => T("voice")
             })]
           }), (0, r.jsx)(o.Clw, {}), (0, r.jsxs)(o.kSQ, {
             label: "View Mode",
@@ -142,13 +142,13 @@ let l = {
               id: "radio-cozy",
               group: "view-mode",
               label: "Cozy",
-              checked: "cozy" === T,
+              checked: "cozy" === S,
               action: () => A("cozy")
             }), (0, r.jsx)(o.k5B, {
               id: "radio-compact",
               group: "view-mode",
               label: "Compact",
-              checked: "compact" === T,
+              checked: "compact" === S,
               action: () => A("compact")
             })]
           })]

@@ -4,7 +4,7 @@
 require.d(exports, {
   Bm: () => P,
   P7: () => R,
-  X: () => w,
+  X: () => D,
   ae: () => N
 });
 var Chunk647438 = require("./647438.js"),
@@ -29,7 +29,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,7 +38,7 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,7 +49,7 @@ function T(e, t) {
   return n
 }
 let A = function(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
   }(function(e) {
@@ -59,7 +59,7 @@ let A = function(e, t) {
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        S(e, t, n[t])
+        T(e, t, n[t])
       })
     }
     return e
@@ -87,8 +87,8 @@ function R(e) {
     launchingComponentId: h,
     submitting: m = false,
     fetchesApplication: g = true,
-    onConfirmActivityLaunchChecksAlertOpen: S
-  } = e, T = (0, l.O)(), A = (0, c.Qv)({
+    onConfirmActivityLaunchChecksAlertOpen: T
+  } = e, S = (0, l.O)(), A = (0, c.Qv)({
     context: t,
     applicationId: n.id,
     fetchesApplication: g
@@ -100,7 +100,7 @@ function R(e) {
     botUserIdForAppDM: R,
     embeddedActivitiesManager: u.Z,
     context: t,
-    locationObject: T.location,
+    locationObject: S.location,
     onActivityItemSelectedProp: e => {
       let {
         applicationId: t
@@ -118,13 +118,13 @@ function R(e) {
     sectionName: a,
     source: N,
     fetchesApplication: g,
-    onConfirmActivityLaunchChecksAlertOpen: S
-  }), w = "primary", D = null != s ? s : I.intl.string(I.t.zKX8Nu);
-  return C === c.JS.JOIN ? (w = "active", D = I.intl.string(I.t.d9PsMj)) : C !== c.JS.LEAVE || m || (w = "critical-primary", D = I.intl.string(I.t["Hi1/aQ"])), {
+    onConfirmActivityLaunchChecksAlertOpen: T
+  }), D = "primary", w = null != s ? s : I.intl.string(I.t.zKX8Nu);
+  return C === c.JS.JOIN ? (D = "active", w = I.intl.string(I.t.d9PsMj)) : C !== c.JS.LEAVE || m || (D = "critical-primary", w = I.intl.string(I.t["Hi1/aQ"])), {
     onActivityItemSelected: P,
     activityAction: C,
-    buttonVariant: w,
-    buttonText: D
+    buttonVariant: D,
+    buttonText: w
   }
 }
 
@@ -144,7 +144,7 @@ function P(e, t) {
   }, [e, t, n, a])
 }
 
-function w(e) {
+function D(e) {
   g.S.dispatchToLastSubscribed(v.CkL.OPEN_APP_LAUNCHER, {
     applicationId: e
   })

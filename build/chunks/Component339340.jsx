@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   a: () => v,
-  default: () => S
+  default: () => T
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,20 +27,20 @@ var Chunk951288 = require("./951288.js"),
 let v = "VoiceChannelStatusModal",
   I = 500;
 
-function S(e) {
+function T(e) {
   let {
     channel: t,
     transitionState: n,
-    sourceAnalyticsLocations: S,
-    onClose: T
-  } = e, A = (0, o.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = (0, o.e7)([h.Z], () => h.Z.getMediaSessionId()), [N, R] = i.useState(null != A ? A : ""), [P, w] = i.useState(false), [D, x] = i.useState(null), L = (0, o.e7)([m.default], () => m.default.getCurrentUser()), M = N.length > I;
+    sourceAnalyticsLocations: T,
+    onClose: S
+  } = e, A = (0, o.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = (0, o.e7)([h.Z], () => h.Z.getMediaSessionId()), [N, R] = i.useState(null != A ? A : ""), [P, D] = i.useState(false), [w, x] = i.useState(null), L = (0, o.e7)([m.default], () => m.default.getCurrentUser()), M = N.length > I;
   i.useEffect(() => {
     g.default.track(E.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
       guild_id: t.guild_id,
-      location_stack: S
+      location_stack: T
     })
-  }, [t.guild_id, S]);
+  }, [t.guild_id, T]);
   let j = e => {
       x(new s.Hx(e, e.status).getAnyErrorMessage())
     },
@@ -52,7 +52,7 @@ function S(e) {
         let {
           errorMessage: e
         } = c.Z.validateMessage(n, L, t.id);
-        return x(e), w(false), {
+        return x(e), D(false), {
           hasErrors: true
         }
       }
@@ -61,7 +61,7 @@ function S(e) {
       }
     },
     U = async e => {
-      N === A && T(), null == e || e.preventDefault(), x(null), w(true);
+      N === A && S(), null == e || e.preventDefault(), x(null), D(true);
       let n = N.length,
         r = N.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = p.ZP.parse(t, N),
@@ -77,12 +77,12 @@ function S(e) {
             media_session_id: C,
             raw_length: n,
             text_length: r,
-            location_stack: S
-          }), T()) : j(e)
+            location_stack: T
+          }), S()) : j(e)
         } catch (e) {
           j(e)
         }
-        w(false)
+        D(false)
       }
     }, [G, B] = i.useState((0, f.JM)(N)), Z = (e, t, n) => {
       R(t), B(n)
@@ -91,7 +91,7 @@ function S(e) {
       shouldRefocus: true
     })), V = (0, r.jsx)(a.gNt, {
       label: b.intl.string(b.t.Fq5lwN),
-      errorMessage: D,
+      errorMessage: w,
       children: (0, r.jsx)(_.ZP, {
         innerClassName: y.textArea,
         textValue: N,
@@ -115,7 +115,7 @@ function S(e) {
     });
   return (0, r.jsx)(a.ExpressiveModal, {
     transitionState: n,
-    onClose: T,
+    onClose: S,
     graphic: {
       type: "image",
       src: O
@@ -125,7 +125,7 @@ function S(e) {
     actions: [{
       variant: "secondary",
       text: b.intl.string(b.t["ETE/oC"]),
-      onClick: T
+      onClick: S
     }, {
       variant: "primary",
       loading: P,

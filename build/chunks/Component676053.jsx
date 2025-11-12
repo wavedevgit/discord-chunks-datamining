@@ -84,18 +84,18 @@ function I(e) {
     previewUrl: b = g,
     disableMediaViewer: v = false,
     action: I,
-    caretConfig: S = {
+    caretConfig: T = {
       position: "bottom",
       align: "center"
     },
-    badge: T,
+    badge: S,
     textLink: A,
     onWatchVideo: C,
     onRequestClose: N,
     popoverRef: R
   } = e, P = O(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
-  let w = i.useRef(null),
-    D = (0, a.j1L)(b),
+  let D = i.useRef(null),
+    w = (0, a.j1L)(b),
     x = i.useCallback(() => ({
       type: "VIDEO",
       url: g,
@@ -106,13 +106,13 @@ function I(e) {
       className: m.media
     }), [g, t]),
     L = i.useCallback(() => {
-      null !== w.current && w.current.pause(), null == N || N()
+      null !== D.current && D.current.pause(), null == N || N()
     }, [N]),
     M = i.useCallback(() => {
-      null !== w.current && w.current.pause(), null == N || N()
+      null !== D.current && D.current.pause(), null == N || N()
     }, [N]),
     j = i.useCallback(() => {
-      null !== w.current && w.current.pause();
+      null !== D.current && D.current.pause();
       let e = x();
       (0, l.K)({
         items: [e],
@@ -121,12 +121,12 @@ function I(e) {
         shouldHideMediaOptions: true
       }), null == N || N(), null == C || C()
     }, [x, C, N]),
-    k = D ? (0, r.jsx)(a.zsu, {
+    k = w ? (0, r.jsx)(a.zsu, {
       type: "image",
       src: b
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.Z, {
-        ref: w,
+        ref: D,
         src: b,
         width: 232,
         height: 131,
@@ -154,14 +154,14 @@ function I(e) {
       children: [(0, r.jsx)(_.N, {
         onClick: M
       }), (0, r.jsx)(d.$, {
-        caretConfig: S
+        caretConfig: T
       }), (0, r.jsx)("div", {
         className: m.assetContainer,
         children: k
       }), (0, r.jsx)(f.Y, {
         title: t,
         body: n,
-        badge: T,
+        badge: S,
         textLink: A
       }), null != I ? (0, r.jsx)(u.k, {
         actions: [I]

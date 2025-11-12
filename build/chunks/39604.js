@@ -313,7 +313,7 @@ async function Q(e) {
     n.clip_save_time_ms = t.clipSaveTimeMs, n.clip_size_bytes = t.clipSizeBytes, null != t.viewerDecodeFps && (n.decode_fps_during_clip = t.viewerDecodeFps, n.encode_fps_during_clip = t.viewerEncodeFps, n.target_fps = null), I.default.track(L.rMx.CLIP_SAVED, n);
     let r = "";
     try {
-      r = await (0, D.R)(s.Z.clips.getClipProtocolURLFromPath(c), 0)
+      r = await (0, w.R)(s.Z.clips.getClipProtocolURLFromPath(c), 0)
     } catch (e) {
       x.jF.warn("Failed to generate clip thumbnail:", e)
     }
@@ -347,11 +347,11 @@ async function J(e) {
   let p = A.Z.getSettings().clipsEnabled && null != m.Z.getCurrentUserActiveStream(),
     h = l && A.Z.getSettings().decoupledClipsEnabled && (null == (t = c.ZP.getVisibleGame()) ? true : t.windowHandle) != null && b.Z.hasClipsSource(),
     E = null != e && null != m.Z.getActiveStreamForStreamKey(e) && f,
-    O = (0, T.n7)() && A.Z.getSettings().clipsEnabled && null == m.Z.getCurrentUserActiveStream() && null != y.Z.getChannelId();
+    O = (0, S.n7)() && A.Z.getSettings().clipsEnabled && null == m.Z.getCurrentUserActiveStream() && null != y.Z.getChannelId();
   if (!p && !h && !E && !O) return;
   let I = m.Z.getCurrentUserActiveStream(),
-    S = null != I ? (0, u.V9)(I) : true,
-    C = null != e ? e : S,
+    T = null != I ? (0, u.V9)(I) : true,
+    C = null != e ? e : T,
     N = (() => {
       let e = null != C ? (0, u.my)(C).ownerId : true;
       return e === g.default.getId() ? x.X9.STREAMER : null != e ? x.X9.VIEWER : h ? x.X9.DECOUPLED : x.X9.VOICE
@@ -365,7 +365,7 @@ async function J(e) {
       if (null != n) try {
         let e = (0, i.zS)(),
           t = await e.getNextVideoOutputFrame(n);
-        return (0, D.W)(t)
+        return (0, w.W)(t)
       } catch (e) {
         return
       }
@@ -378,7 +378,7 @@ async function J(e) {
     clipMethod: n
   });
   let P = "manual" === n ? (0, _.GN)("clip_save", .5) : null,
-    w = performance.now();
+    D = performance.now();
   try {
     if ("auto" === n) {
       let e = A.Z.getSettings().maxAutoClips,
@@ -401,13 +401,13 @@ async function J(e) {
     a.Z.dispatch({
       type: "CLIPS_SAVE_CLIP",
       clip: e
-    }), "manual" === n && (0, T.NS)() && X(e)
+    }), "manual" === n && (0, S.NS)() && X(e)
   } catch (e) {
     x.jF.error("Clip Failed to Save", e), null == P || P.stop(), (0, _.GN)("clip_error", .5), a.Z.dispatch({
       type: "CLIPS_SAVE_CLIP_ERROR"
     })
   }
-  x.jF.info("".concat(A.Z.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - w), "ms"))
+  x.jF.info("".concat(A.Z.getSettings().clipsLength / 1e3, "s clip save took ").concat(Math.round(performance.now() - D), "ms"))
 }
 async function $(e, t) {
   let n, r;
@@ -492,7 +492,7 @@ function ei() {
 }
 async function ea(e) {
   var t;
-  if (!(0, S.isDesktop)() || (null == (t = s.Z.clips) ? true : t.loadClipsDirectory) == null) return;
+  if (!(0, T.isDesktop)() || (null == (t = s.Z.clips) ? true : t.loadClipsDirectory) == null) return;
   let n = await s.Z.clips.loadClipsDirectory(e),
     r = [];
   for (let e of n) {
@@ -508,7 +508,7 @@ async function ea(e) {
 }
 async function eo(e) {
   var t;
-  (0, S.isDesktop)() && (null == (t = s.Z.clips) ? true : t.deleteClip) != null && (await s.Z.clips.deleteClip(e), a.Z.dispatch({
+  (0, T.isDesktop)() && (null == (t = s.Z.clips) ? true : t.deleteClip) != null && (await s.Z.clips.deleteClip(e), a.Z.dispatch({
     type: "CLIPS_DELETE_CLIP",
     filepath: e
   }))
@@ -523,7 +523,7 @@ async function es(e) {
       voiceAudio: true,
       soundboardAudio: true
     });
-  return e.type === C.NJ.SCREENSHOT ? r : (0, w.Z)(r)
+  return e.type === C.NJ.SCREENSHOT ? r : (0, D.Z)(r)
 }
 
 function el(e) {

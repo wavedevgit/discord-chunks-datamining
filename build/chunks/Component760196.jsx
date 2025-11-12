@@ -35,7 +35,7 @@ function E(e) {
   } = (0, a.cj)([o.Z], () => ({
     activeCommandOption: o.Z.getActiveOption(t.id),
     activeCommandOptionStates: o.Z.getOptionStates(t.id)
-  })), S = (0, c.e)(t), T = (0, f.LN)(t.id);
+  })), T = (0, c.e)(t), S = (0, f.LN)(t.id);
   return i.useMemo(() => {
     let e = [],
       i = [];
@@ -51,7 +51,7 @@ function E(e) {
     })), null != b && e.push((0, r.jsx)(m.Z, {
       reply: b,
       chatInputType: n
-    })), S && e.push((0, r.jsx)(c.V, {})), T && e.push((0, r.jsx)(_.Z, {
+    })), T && e.push((0, r.jsx)(c.V, {})), S && e.push((0, r.jsx)(_.Z, {
       channel: t
     })), null != y && e.push((0, r.jsx)(p.y, {
       pendingScheduledMessage: y
@@ -59,7 +59,7 @@ function E(e) {
       stacked: e,
       floating: i
     }
-  }, [E, v, I, t, b, S, n, T, y, O])
+  }, [E, v, I, t, b, T, n, S, y, O])
 }
 
 function b(e) {

@@ -55,14 +55,14 @@ function I() {
   !__OVERLAY__ && Chunk987650.iP && (p.verbose("Maybe Enable Overlay"), v(Chunk454991.v.oopEnabled), (0, Chunk145597.setOutOfProcessSupport)(true))
 }
 
-function S(e) {
+function T(e) {
   let {
     oopEnabled: t
   } = e;
   v(t)
 }
 
-function T() {
+function S() {
   return O(), false
 }
 
@@ -104,8 +104,8 @@ _(N, "displayName", "Overlay-v3-Native-Module-Store");
 let R = new N(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
     CONNECTION_OPEN: C,
     EXPERIMENT_OVERRIDE_BUCKET: I,
-    OVERLAY_SET_ENABLED: S,
-    OVERLAY_V3_LOAD_NATIVE_MODULE: T,
+    OVERLAY_SET_ENABLED: T,
+    OVERLAY_V3_LOAD_NATIVE_MODULE: S,
     OVERLAY_CRASHED: A
   }),
   P = R

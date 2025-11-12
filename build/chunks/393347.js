@@ -199,21 +199,21 @@ let l = function(e) {
           }
         };
         let I = [b[(0, r.k3)(O)], b[v[0]], b[v[1]]],
-          S = [...(null == (i = c.autoPlacement) ? true : i.overflows) || [], {
+          T = [...(null == (i = c.autoPlacement) ? true : i.overflows) || [], {
             placement: O,
             overflows: I
           }],
-          T = E[y + 1];
-        if (T) return {
+          S = E[y + 1];
+        if (S) return {
           data: {
             index: y + 1,
-            overflows: S
+            overflows: T
           },
           reset: {
-            placement: T
+            placement: S
           }
         };
-        let A = S.map(e => {
+        let A = T.map(e => {
             let t = (0, r.hp)(e.placement);
             return [e.placement, t && _ ? e.overflows.slice(0, 2).reduce((e, t) => e + t, 0) : e.overflows[0], e.overflows]
           }).sort((e, t) => e[1] - t[1]),
@@ -221,7 +221,7 @@ let l = function(e) {
         return C !== u ? {
           data: {
             index: y + 1,
-            overflows: S
+            overflows: T
           },
           reset: {
             placement: C
@@ -255,38 +255,38 @@ let l = function(e) {
         if (null != (n = u.arrow) && n.alignmentOffset) return {};
         let v = (0, r.k3)(c),
           I = (0, r.Qq)(f),
-          S = (0, r.k3)(f) === f,
-          T = await (null == _.isRTL ? true : _.isRTL(p.floating)),
-          A = g || (S || !y ? [(0, r.pw)(f)] : (0, r.gy)(f)),
+          T = (0, r.k3)(f) === f,
+          S = await (null == _.isRTL ? true : _.isRTL(p.floating)),
+          A = g || (T || !y ? [(0, r.pw)(f)] : (0, r.gy)(f)),
           C = "none" !== b;
-        !g && C && A.push(...(0, r.KX)(f, y, b, T));
+        !g && C && A.push(...(0, r.KX)(f, y, b, S));
         let N = [f, ...A],
           R = await o(t, O),
           P = [],
-          w = (null == (i = u.flip) ? true : i.overflows) || [];
+          D = (null == (i = u.flip) ? true : i.overflows) || [];
         if (h && P.push(R[v]), m) {
-          let e = (0, r.i8)(c, d, T);
+          let e = (0, r.i8)(c, d, S);
           P.push(R[e[0]], R[e[1]])
         }
-        if (w = [...w, {
+        if (D = [...D, {
             placement: c,
             overflows: P
           }], !P.every(e => e <= 0)) {
           let e = ((null == (a = u.flip) ? true : a.index) || 0) + 1,
             t = N[e];
-          if (t && ("alignment" !== m || I === (0, r.Qq)(t) || w.every(e => (0, r.Qq)(e.placement) !== I || e.overflows[0] > 0))) return {
+          if (t && ("alignment" !== m || I === (0, r.Qq)(t) || D.every(e => (0, r.Qq)(e.placement) !== I || e.overflows[0] > 0))) return {
             data: {
               index: e,
-              overflows: w
+              overflows: D
             },
             reset: {
               placement: t
             }
           };
-          let n = null == (s = w.filter(e => e.overflows[0] <= 0).sort((e, t) => e.overflows[1] - t.overflows[1])[0]) ? true : s.placement;
+          let n = null == (s = D.filter(e => e.overflows[0] <= 0).sort((e, t) => e.overflows[1] - t.overflows[1])[0]) ? true : s.placement;
           if (!n) switch (E) {
             case "bestFit": {
-              let e = null == (l = w.filter(e => {
+              let e = null == (l = D.filter(e => {
                 if (C) {
                   let t = (0, r.Qq)(e.placement);
                   return t === I || "y" === t
@@ -562,20 +562,20 @@ let m = function(e) {
           O = E - p.left - p.right,
           v = (0, r.VV)(b - p[a], y),
           I = (0, r.VV)(E - p[s], O),
-          S = !t.middlewareData.shift,
-          T = v,
+          T = !t.middlewareData.shift,
+          S = v,
           A = I;
-        if (null != (n = t.middlewareData.shift) && n.enabled.x && (A = O), null != (i = t.middlewareData.shift) && i.enabled.y && (T = y), S && !m) {
+        if (null != (n = t.middlewareData.shift) && n.enabled.x && (A = O), null != (i = t.middlewareData.shift) && i.enabled.y && (S = y), T && !m) {
           let e = (0, r.Fp)(p.left, 0),
             t = (0, r.Fp)(p.right, 0),
             n = (0, r.Fp)(p.top, 0),
             i = (0, r.Fp)(p.bottom, 0);
-          g ? A = E - 2 * (0 !== e || 0 !== t ? e + t : (0, r.Fp)(p.left, p.right)) : T = b - 2 * (0 !== n || 0 !== i ? n + i : (0, r.Fp)(p.top, p.bottom))
+          g ? A = E - 2 * (0 !== e || 0 !== t ? e + t : (0, r.Fp)(p.left, p.right)) : S = b - 2 * (0 !== n || 0 !== i ? n + i : (0, r.Fp)(p.top, p.bottom))
         }
         await f({
           ...t,
           availableWidth: A,
-          availableHeight: T
+          availableHeight: S
         });
         let C = await u.getDimensions(d.floating);
         return E !== C.width || b !== C.height ? {

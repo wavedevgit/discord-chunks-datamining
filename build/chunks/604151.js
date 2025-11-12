@@ -49,10 +49,10 @@ let O = function(e, t) {
       lockVoiceStateForResume: v = false
     } = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {},
     I = f.Z.getChannel(e),
-    S = g.Z.getCurrentClientVoiceChannelId(null != t ? t : null) === e,
-    T = null != I ? p.Z.getCheck(I.guild_id) : null;
-  if (!(null != t && (0, s.n)(t)) && (null == T || T.canChat || (0, l.jU)(I))) {
-    if (null != I && !S) {
+    T = g.Z.getCurrentClientVoiceChannelId(null != t ? t : null) === e,
+    S = null != I ? p.Z.getCheck(I.guild_id) : null;
+  if (!(null != t && (0, s.n)(t)) && (null == S || S.canChat || (0, l.jU)(I))) {
+    if (null != I && !T) {
       let e = (0, E.rY)(I, g.Z, _.Z);
       if (e && I.isGuildStageVoice() && (0, c.xJ)(I.id)) return void(0, i.ZD)(async () => {
         let {

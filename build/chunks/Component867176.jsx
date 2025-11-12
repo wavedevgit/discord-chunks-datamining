@@ -57,13 +57,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -97,14 +97,14 @@ function N(e) {
     pendingBanner: O,
     children: v,
     className: I,
-    avatarSize: S,
-    avatarOffsetX: T,
+    avatarSize: T,
+    avatarOffsetX: S,
     avatarOffsetY: A,
     bannerWidth: N,
     bannerHeight: R,
     themePadding: P,
-    pendingAccentColor: w,
-    animateOnHoverOrFocusOnly: D = false
+    pendingAccentColor: D,
+    animateOnHoverOrFocusOnly: w = false
   } = e, x = (0, _.Dt)(), [L, M] = i.useState(false), j = (0, l.e7)([m.Z], () => m.Z.isFocused()), k = h.QK.getSetting(), {
     bannerSrc: U,
     status: G
@@ -112,8 +112,8 @@ function N(e) {
     displayProfile: a,
     pendingBanner: O,
     size: N,
-    canAnimate: D || !k ? L : j
-  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), Z = n.getAvatarURL(b, (0, u.pxk)(S)), F = (0, s._i)((0, d.ZP)(Z, B, false)), V = (0, f.Z)(null != (t = null != w ? w : null == a ? true : a.primaryColor) ? t : F).hex, H = C(S), Y = H + T - P, W = R - A - P;
+    canAnimate: w || !k ? L : j
+  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), Z = n.getAvatarURL(b, (0, u.pxk)(T)), F = (0, s._i)((0, d.ZP)(Z, B, false)), V = (0, f.Z)(null != (t = null != D ? D : null == a ? true : a.primaryColor) ? t : F).hex, H = C(T), Y = H + S - P, W = R - A - P;
   return (0, r.jsxs)("svg", {
     className: y.mask,
     viewBox: "0 0 ".concat(N, " ").concat(R),
@@ -165,10 +165,10 @@ function R(e) {
     themeType: t,
     displayProfile: n,
     canUsePremiumProfileCustomization: i = false
-  } = e, a = T(e, ["themeType", "displayProfile", "canUsePremiumProfileCustomization"]);
+  } = e, a = S(e, ["themeType", "displayProfile", "canUsePremiumProfileCustomization"]);
   let o = b.q[t],
     s = i || (null == n ? true : n.canUsePremiumProfileCustomization) || false;
-  return (0, r.jsx)(N, S(v({}, a, o), {
+  return (0, r.jsx)(N, T(v({}, a, o), {
     displayProfile: n,
     themePadding: s ? o.themePadding : 0
   }))

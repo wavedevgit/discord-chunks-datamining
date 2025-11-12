@@ -54,14 +54,14 @@ function Z(e) {
   } = e, {
     themeType: V,
     theme: H
-  } = (0, C.z)(), Y = (0, o.e7)([O.Z], () => O.Z.getGuild(null == i ? true : i.guildId)), W = (0, o.e7)([y.Z], () => y.Z.getChannel(null == i ? true : i.channelId)), K = (0, o.Wu)([S.ZP], () => null != W ? S.ZP.getVoiceStatesForChannel(W).map(e => {
+  } = (0, C.z)(), Y = (0, o.e7)([O.Z], () => O.Z.getGuild(null == i ? true : i.guildId)), W = (0, o.e7)([y.Z], () => y.Z.getChannel(null == i ? true : i.channelId)), K = (0, o.Wu)([T.ZP], () => null != W ? T.ZP.getVoiceStatesForChannel(W).map(e => {
     let {
       user: t
     } = e;
     return t
   }) : []), z = (0, o.e7)([I.Z], () => I.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
     analyticsLocations: q
-  } = (0, m.ZP)(h.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), X = (0, T.Z)({
+  } = (0, m.ZP)(h.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), X = (0, S.Z)({
     display: "live",
     voiceChannelId: null == W ? true : W.id,
     user: t,
@@ -137,7 +137,7 @@ function Z(e) {
         users: K,
         guildId: Y.id,
         channelId: W.id,
-        maxUsers: w.W,
+        maxUsers: D.W,
         size: l.EFr.SIZE_16,
         onClickOverflow: e => {
           null == e || e.stopPropagation(), null == X || X({
@@ -150,7 +150,7 @@ function Z(e) {
         "aria-label": j.intl.string(j.t["jNqDh/"])
       }), V === M.l.MODAL_V2 && ec()]
     }),
-    el = () => V === M.l.MODAL || V === M.l.MODAL_V2 ? null : (0, r.jsx)(w.Z, {
+    el = () => V === M.l.MODAL || V === M.l.MODAL_V2 ? null : (0, r.jsx)(D.Z, {
       user: t,
       guild: Y,
       channel: W,
@@ -159,7 +159,7 @@ function Z(e) {
     }),
     ec = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: k.actions,
-      children: (0, r.jsx)(D.Z, {
+      children: (0, r.jsx)(w.Z, {
         channel: W,
         onAction: X,
         onClose: F

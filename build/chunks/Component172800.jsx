@@ -63,13 +63,13 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -124,8 +124,8 @@ let L = e => {
   i.useEffect(() => h.kJ.subscribe(e => e.inspectedExpressionPosition, e => ec(e)), []), i.useEffect(() => {
     E.DZ.loadIfNecessary()
   }, []);
-  let e_ = a === S.Su.LARGE,
-    ep = a === S.Su.MEDIUM,
+  let e_ = a === T.Su.LARGE,
+    ep = a === T.Su.MEDIUM,
     eh = e => {
       let t = "".concat(e.rowIndex, "c").concat(e.columnIndex),
         n = function() {
@@ -144,10 +144,10 @@ let L = e => {
             ref: m,
             tabIndex: g,
             onFocus: E
-          } = h, b = D(h, ["ref", "tabIndex", "onFocus"]), y = el.rowIndex === _ && el.columnIndex === p, O = () => {
+          } = h, b = w(h, ["ref", "tabIndex", "onFocus"]), y = el.rowIndex === _ && el.columnIndex === p, O = () => {
             k.current || U.current || x(e)
           };
-          return (0, i.createElement)("li", w(R({}, b), {
+          return (0, i.createElement)("li", D(R({}, b), {
             key: t
           }), (0, r.jsx)(l.tEY, {
             children: (0, r.jsx)("button", {
@@ -179,7 +179,7 @@ let L = e => {
             t.stopPropagation(), k.current || U.current || (N(e, {
               isFinalSelection: true,
               toggleFavorite: false
-            }), (0, f.D)(e.guildId), e.sectionCollapsedToThreeRows || q(), y.default.track(T.rMx.EMOJI_PICKER_THREE_ROW_COLLAPSE_TOGGLED, {
+            }), (0, f.D)(e.guildId), e.sectionCollapsedToThreeRows || q(), y.default.track(S.rMx.EMOJI_PICKER_THREE_ROW_COLLAPSE_TOGGLED, {
               collapsed: e.sectionCollapsedToThreeRows,
               guild_id: e.guildId
             }))
@@ -201,7 +201,7 @@ let L = e => {
             t.stopPropagation(), k.current || U.current || (N(e, {
               isFinalSelection: true,
               toggleFavorite: false
-            }), m.Z.open(e.guildId, T.pNK.EMOJI, T.jXE.EMOJI_PICKER_POPOUT))
+            }), m.Z.open(e.guildId, S.pNK.EMOJI, S.jXE.EMOJI_PICKER_POPOUT))
           };
           return n({
             handleSelect: t,
@@ -250,7 +250,7 @@ let L = e => {
           return
       }
     },
-    em = e => (0, r.jsx)("ul", w(R({}, j(G)), {
+    em = e => (0, r.jsx)("ul", D(R({}, j(G)), {
       className: o()(C.emojiListRow, {
         [C.emojiListRowLargeSize]: e_,
         [C.emojiListRowMediumSize]: ep
@@ -258,7 +258,7 @@ let L = e => {
       ref: ef,
       children: e.map(eh)
     }));
-  if (V === S.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
+  if (V === T.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
     className: C.emojiListRow,
     ref: ef,
     children: (0, r.jsx)(g.Z, {
@@ -266,15 +266,15 @@ let L = e => {
       onSelectSoundmoji: P
     })
   });
-  if (V !== S.En.TOP_GUILD_EMOJI) return em(t);
+  if (V !== T.En.TOP_GUILD_EMOJI) return em(t);
   let eg = t.filter(e => {
       if (X && e.type === v.ld.CREATE_EMOJI) returntrue;
       let t = e;
-      return t.subCategory === S.t0.TOP_GUILD_EMOJI || t.subCategory === S.t0.NEWLY_ADDED_EMOJI && t.emoji.type === _.B.GUILD && !p.Z.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)
+      return t.subCategory === T.t0.TOP_GUILD_EMOJI || t.subCategory === T.t0.NEWLY_ADDED_EMOJI && t.emoji.type === _.B.GUILD && !p.Z.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)
     }),
     eE = t.filter(e => {
       let t = e;
-      return t.subCategory === S.t0.NEWLY_ADDED_EMOJI && t.emoji.type === _.B.GUILD && p.Z.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)
+      return t.subCategory === T.t0.NEWLY_ADDED_EMOJI && t.emoji.type === _.B.GUILD && p.Z.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)
     });
   return 0 === eE.length ? em(t) : (0, r.jsxs)("div", {
     className: C.topEmojiSectionContainer,

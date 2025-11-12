@@ -5,7 +5,7 @@ require.d(exports, {
   Yr: () => P,
   ZP: () => x,
   gN: () => R,
-  sI: () => w
+  sI: () => D
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   Chunk759174 = require("./759174.js"),
@@ -29,7 +29,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,14 +38,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -90,11 +90,11 @@ function P(e) {
       return (null == (t = e.voiceState) ? true : t.selfVideo) ? r = "\x03" : (null == (n = e.voiceState) ? true : n.selfStream) && (r = "\x04"), "".concat(r).concat((0, y.Z)(e.userNick, e.user))
   }
 }
-var w = function(e) {
+var D = function(e) {
   return e.VIDEO = "VIDEO", e.STREAM = "STREAM", e.FILTERED = "FILTERED", e.SPEAKING = "SPEAKING", e.ACTIVITY = "ACTIVITY", e.NOT_POPPED_OUT = "NOT_POPPED_OUT", e
 }({});
 
-function D(e) {
+function w(e) {
   return u.default.getId() === e && p.Z.isCurrentUserPTTLatched()
 }
 class x {
@@ -145,9 +145,9 @@ class x {
           userId: e,
           checkIsMuted: true
         });
-        return t && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, C(T({}, n), {
+        return t && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, C(S({}, n), {
           speaking: t,
-          latched: D(e),
+          latched: w(e),
           lastSpoke: this.lastSpoke[e],
           soundsharing: p.Z.isSoundSharing(e)
         })), true
@@ -157,7 +157,7 @@ class x {
   }
   updateParticipantQuality(e, t, n) {
     var r, i;
-    return null != (i = null == (r = this.participants[e]) ? true : r.reduce((e, r) => r.type === O.fO.STREAM ? (this.participantByIndex.set(r.id, C(T({}, r), {
+    return null != (i = null == (r = this.participants[e]) ? true : r.reduce((e, r) => r.type === O.fO.STREAM ? (this.participantByIndex.set(r.id, C(S({}, r), {
       maxResolution: t,
       maxFrameRate: n
     })), true) : e, false)) && i
@@ -194,32 +194,32 @@ class x {
   _getParticipantsForUser(e) {
     var t, n, r, i, o, d;
     let b, y, v = [],
-      S = h.default.getUser(e);
-    if (null == S) return v;
+      T = h.default.getUser(e);
+    if (null == T) return v;
     let A = g.Z.getVoiceStateForChannel(this.channelId, e),
       N = g.Z.getVoicePlatformForChannel(this.channelId, e),
       R = f.Z.getChannel(this.channelId),
       P = null == R ? true : R.getGuildId(),
-      w = null != (r = (null == (n = this.call) || null == (t = n.ringing) ? true : t.includes(e)) || this.guildRingingUsers.has(e)) && r;
-    (null != A || w) && (b = C(T({
+      D = null != (r = (null == (n = this.call) || null == (t = n.ringing) ? true : t.includes(e)) || this.guildRingingUsers.has(e)) && r;
+    (null != A || D) && (b = C(S({
       type: O.fO.USER
     }, m.Z.getUserStreamData(e, P)), {
-      user: S,
-      id: S.id,
+      user: T,
+      id: T.id,
       voiceState: A,
       voicePlatform: N,
       speaking: (0, a.O)({
         userId: e,
         checkIsMuted: true
       }),
-      latched: D(e),
+      latched: w(e),
       lastSpoke: null != (i = this.lastSpoke[e]) ? i : 0,
       soundsharing: p.Z.isSoundSharing(e),
-      ringing: w,
-      userNick: E.ZP.getName(P, this.channelId, S),
-      userAvatarDecoration: (0, s.o)(S, P),
-      localVideoDisabled: _.Z.isLocalVideoDisabled(S.id),
-      isPoppedOut: this.poppedOutParticipants.has(S.id)
+      ringing: D,
+      userNick: E.ZP.getName(P, this.channelId, T),
+      userAvatarDecoration: (0, s.o)(T, P),
+      localVideoDisabled: _.Z.isLocalVideoDisabled(T.id),
+      isPoppedOut: this.poppedOutParticipants.has(T.id)
     }), v.push(b));
     let x = null != (o = c.Z.getStreamForUser(e, P)) ? o : c.Z.getActiveStreamForUser(e, P);
     if (null != x && x.channelId === this.channelId) {
@@ -227,15 +227,15 @@ class x {
         n = this.getParticipant(t),
         r = x.ownerId === u.default.getId() && c.Z.isSelfStreamHidden(this.channelId),
         i = (null == n ? true : n.type) === O.fO.STREAM ? {
-          maxResolution: null != n.maxResolution ? T({}, n.maxResolution) : true,
+          maxResolution: null != n.maxResolution ? S({}, n.maxResolution) : true,
           maxFrameRate: n.maxFrameRate
         } : null;
-      y = C(T({}, m.Z.getUserStreamData(e, P, I.Yn.STREAM), i), {
+      y = C(S({}, m.Z.getUserStreamData(e, P, I.Yn.STREAM), i), {
         type: r ? O.fO.HIDDEN_STREAM : O.fO.STREAM,
         id: t,
         userVideo: null != (d = null == A ? true : A.selfVideo) && d,
-        user: S,
-        userNick: E.ZP.getName(P, this.channelId, S),
+        user: T,
+        userNick: E.ZP.getName(P, this.channelId, T),
         stream: x,
         isPoppedOut: this.poppedOutParticipants.has(t)
       }), v.push(y)
@@ -243,7 +243,7 @@ class x {
     return v
   }
   constructor(e) {
-    S(this, "channelId", true), S(this, "call", true), S(this, "participants", {}), S(this, "lastSpoke", {}), S(this, "guildRingingUsers", new Set), S(this, "poppedOutParticipants", new Set), S(this, "participantByIndex", new i.h(e => {
+    T(this, "channelId", true), T(this, "call", true), T(this, "participants", {}), T(this, "lastSpoke", {}), T(this, "guildRingingUsers", new Set), T(this, "poppedOutParticipants", new Set), T(this, "participantByIndex", new i.h(e => {
       var t;
       let n = [];
       if (e.type === O.fO.USER && e.speaking && n.push("SPEAKING"), e.type === O.fO.USER && (null == (t = e.voiceState) ? true : t.selfVideo)) n.push("VIDEO"), e.localVideoDisabled || e.isPoppedOut || n.push("FILTERED");

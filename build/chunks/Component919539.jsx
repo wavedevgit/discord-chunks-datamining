@@ -33,9 +33,9 @@ function C(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, C = (0, m.c_)(), N = (0, p.q)(), R = h.h2.useSetting().includes(n), P = (0, l.LN)(), w = h.mX.useSetting(), D = h.zA.useSetting().includes(n), x = i.useCallback(e => {
+  } = e, C = (0, m.c_)(), N = (0, p.q)(), R = h.h2.useSetting().includes(n), P = (0, l.LN)(), D = h.mX.useSetting(), w = h.zA.useSetting().includes(n), x = i.useCallback(e => {
     let r = (0, f.gl)();
-    e ? r.delete(n) : r.add(n), h.zA.updateSetting(Array.from(r)), u.default.track(S.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    e ? r.delete(n) : r.add(n), h.zA.updateSetting(Array.from(r)), u.default.track(T.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: y.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
       ingress: t,
       guild_id: n
@@ -43,7 +43,7 @@ function C(e) {
   }, [t, n]);
 
   function L(e, t) {
-    u.default.track(S.rMx.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
+    u.default.track(T.rMx.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
       default_guilds_restricted: e,
       applied_to_existing_guilds: t
     })
@@ -64,10 +64,10 @@ function C(e) {
         h.mX.updateSetting(e), L(e, false)
       };
     (0, b.V)({
-      header: T.intl.string(T.t.yAfu1p),
-      body: T.intl.string(T.t.Ry2z74),
-      confirmText: T.intl.string(T.t.gm1Vej),
-      cancelText: T.intl.string(T.t.p89ACt),
+      header: S.intl.string(S.t.yAfu1p),
+      body: S.intl.string(S.t.Ry2z74),
+      confirmText: S.intl.string(S.t.gm1Vej),
+      cancelText: S.intl.string(S.t.p89ACt),
       confirmButtonColor: a.zx.Colors.BRAND,
       onConfirm: n,
       onCancel: t
@@ -77,23 +77,23 @@ function C(e) {
     setting: v.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: O.FY.MESSAGE_REQUESTS_V2,
     children: n === I.T ? (0, r.jsx)(E.ZP, {
-      title: T.intl.string(T.t["3o2ojh"]),
-      value: !N && !w,
+      title: S.intl.string(S.t["3o2ojh"]),
+      value: !N && !D,
       onChange: e => M(e, false),
       disabled: N || P,
-      tooltipText: P ? T.intl.string(A.default["6Af/cw"]) : true,
-      note: T.intl.format(T.t.wkm9a3, {
-        helpdeskArticle: d.Z.getArticleURL(S.BhN.MESSAGE_REQUESTS)
+      tooltipText: P ? S.intl.string(A.default["6Af/cw"]) : true,
+      note: S.intl.format(S.t.wkm9a3, {
+        helpdeskArticle: d.Z.getArticleURL(T.BhN.MESSAGE_REQUESTS)
       })
     }) : (0, r.jsx)(E.ZP, {
-      title: T.intl.string(T.t["3o2ojh"]),
-      value: !R && !D,
+      title: S.intl.string(S.t["3o2ojh"]),
+      value: !R && !w,
       onChange: e => M(e, true),
       disabled: R,
-      note: C ? T.intl.format(T.t.WpnWLc, {
-        helpdeskArticle: d.Z.getArticleURL(S.BhN.MESSAGE_REQUESTS)
-      }) : T.intl.format(T.t.wkm9a3, {
-        helpdeskArticle: d.Z.getArticleURL(S.BhN.MESSAGE_REQUESTS)
+      note: C ? S.intl.format(S.t.WpnWLc, {
+        helpdeskArticle: d.Z.getArticleURL(T.BhN.MESSAGE_REQUESTS)
+      }) : S.intl.format(S.t.wkm9a3, {
+        helpdeskArticle: d.Z.getArticleURL(T.BhN.MESSAGE_REQUESTS)
       })
     })
   })

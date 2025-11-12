@@ -32,8 +32,8 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let S = null,
-  T = new Map,
+let T = null,
+  S = new Map,
   A = new Map,
   C = 10,
   N = 3;
@@ -61,7 +61,7 @@ function P(e) {
   return _.Z.hidePersonalInformation || (t.push(O.dCx.FILTER_FROM), t.push(O.dCx.FILTER_MENTIONS)), (0, E.R6)(e) && t.push(O.dCx.FILTER_IN), t
 }
 
-function w(e) {
+function D(e) {
   var t;
   let n = (0, E.Tm)(e),
     r = null != (t = A.get(n)) ? t : {
@@ -71,7 +71,7 @@ function w(e) {
   return A.set(n, r), r
 }
 
-function D(e) {
+function w(e) {
   return {
     searchContext: e,
     query: "",
@@ -95,7 +95,7 @@ function x(e) {
     cursorScope: a,
     autocompletes: o
   } = e;
-  return w(t), {
+  return D(t), {
     searchContext: t,
     query: n,
     mode: r,
@@ -109,7 +109,7 @@ function L(e) {
   let {
     id: t
   } = e, n = A.get(t);
-  null != n && (n.context.destroy(), n.results = [], A.delete(t)), T.delete(t), S = null
+  null != n && (n.context.destroy(), n.results = [], A.delete(t)), S.delete(t), T = null
 }
 
 function M(e) {
@@ -124,7 +124,7 @@ function j(e) {
 function k(e, t) {
   let {
     results: n
-  } = t, r = (0, E.Tm)(e), i = A.get(r), a = T.get(r);
+  } = t, r = (0, E.Tm)(e), i = A.get(r), a = S.get(r);
   if (null == i || null == a || !j(a.mode)) return;
   i.results = U(n, a.mode.type === O.Sap.FILTER ? C : N);
   let {
@@ -140,7 +140,7 @@ function k(e, t) {
     cursorScope: c,
     autocompletes: u
   });
-  T.set(r, d), en.emitChange()
+  S.set(r, d), en.emitChange()
 }
 
 function U(e) {
@@ -160,7 +160,7 @@ function U(e) {
 }
 
 function G(e) {
-  a()(S, e) || (S = e, (0, E.WU)())
+  a()(T, e) || (T = e, (0, E.WU)())
 }
 
 function B(e) {
@@ -180,12 +180,12 @@ function Z(e) {
   let a = (0, E.cl)(r),
     o = (0, E.qc)(i, r),
     s = (0, E.Tm)(n),
-    l = T.get(s),
+    l = S.get(s),
     c = true;
   if (null != l && a === l.query && (null == l.mode || l.mode.filter === o.filter)) t = l.autocompletes, c = false;
   else if (j(o)) {
     var u, d;
-    let e = w(n),
+    let e = D(n),
       i = o.token,
       a = null == i || null == (u = i.getFullMatch()) ? true : u.trim();
     if (null != a && a.length > 0) {
@@ -210,7 +210,7 @@ function Z(e) {
     cursorScope: i,
     autocompletes: t
   });
-  return T.set(s, f), c
+  return S.set(s, f), c
 }
 
 function F(e) {
@@ -226,7 +226,7 @@ function F(e) {
   let c = null,
     u = null != (n = null == a || null == (t = a.getFullMatch()) ? true : t.trim()) ? n : "",
     d = 0 === u.length;
-  if ((0, E.b7)(o) && M(i) && !d) c = w(o).results;
+  if ((0, E.b7)(o) && M(i) && !d) c = D(o).results;
   else {
     let e = null == (r = y.ZP[i]) ? true : r.getAutocompletions;
     c = null != e ? e({
@@ -365,7 +365,7 @@ function z() {
 }
 
 function q(e) {
-  let t = T.get(e);
+  let t = S.get(e);
   if (null == t) return;
   let {
     searchContext: n,
@@ -386,7 +386,7 @@ function q(e) {
     cursorScope: o,
     autocompletes: l
   });
-  T.set(e, c)
+  S.set(e, c)
 }
 
 function X(e) {
@@ -397,12 +397,12 @@ function X(e) {
 }
 
 function Q() {
-  for (let e of T.keys()) q(module)
+  for (let e of S.keys()) q(module)
 }
 
 function J(e) {
   let t = (0, E.Tm)(e),
-    n = T.get(t);
+    n = S.get(t);
   if (null == n) returnfalse;
   let {
     query: r,
@@ -417,15 +417,15 @@ function J(e) {
     cursorScope: o,
     autocompletes: K(e, i, a)
   });
-  T.set(t, s)
+  S.set(t, s)
 }
 
 function $() {
-  return null != S && J(S)
+  return null != T && J(T)
 }
 
 function ee() {
-  return null != S && J(S)
+  return null != T && J(T)
 }
 class et extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -434,10 +434,10 @@ class et extends(r = Chunk442837.ZP.Store) {
   getState(e) {
     var t;
     let n = (0, E.Tm)(e);
-    return null != (t = T.get(n)) ? t : D(e)
+    return null != (t = S.get(n)) ? t : w(e)
   }
   getSelectedSearchContext() {
-    return S
+    return T
   }
 }
 I(et, "displayName", "SearchAutocompleteStore");

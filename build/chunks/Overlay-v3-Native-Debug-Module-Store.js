@@ -33,11 +33,11 @@ let g = new Chunk579092.Yd("OverlayV3NativeClickZoneStore"),
   v = {},
   I = false;
 
-function S(e) {
+function T(e) {
   return !a()(e, y)
 }
 
-function T(e) {
+function S(e) {
   let t = setTimeout(() => {
     R(t)
   }, E);
@@ -59,8 +59,8 @@ function A(e, t) {
   if (null == b) return void g.error("Overlay module not found");
   let r = null != (n = null == b ? true : b.getLastAssociatedPID()) ? n : u.UNSET_PID;
   try {
-    let n = T(e);
-    S(e) && (0, d.bs)(r, "capture_zones_set", {
+    let n = S(e);
+    T(e) && (0, d.bs)(r, "capture_zones_set", {
       source: t,
       capture_zones: n,
       rawZones: e
@@ -88,18 +88,18 @@ function R(e) {
 function P(e, t) {
   if (!f.Z.isOverlayEnabled) {
     if (0 === y.length) return;
-    w("overlay_disabled");
+    D("overlay_disabled");
     return
   }
   A(e, t), y = e, O = [...e]
 }
 
-function w(e) {
+function D(e) {
   for (let e of Object.values(v)) null != e && clearTimeout(e);
   v = {}, y = [], O = [], A([], e)
 }
 
-function D() {
+function w() {
   0 !== y.length && (O = [...y], y = [], A([], "store_click_zones"))
 }
 
@@ -125,7 +125,7 @@ function L(e, t, n, r) {
 }
 
 function M(e) {
-  return w("crashed"), true
+  return D("crashed"), true
 }
 
 function j(e) {
@@ -136,7 +136,7 @@ function j(e) {
 }
 
 function k() {
-  return w("refresh_host_window"), true
+  return D("refresh_host_window"), true
 }
 
 function U() {
@@ -151,7 +151,7 @@ function B(e) {
   let {
     pid: t
   } = e;
-  return 0 === t ? D() : x(), true
+  return 0 === t ? w() : x(), true
 }
 class Z extends(r = Chunk442837.ZP.Store) {
   initialize() {

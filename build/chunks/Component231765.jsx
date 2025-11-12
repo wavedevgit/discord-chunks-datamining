@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -72,8 +72,8 @@ let C = {
   N = (0, Chunk392711.range)(0, 11),
   R = (0, Chunk392711.range)(0, 2.25, .25),
   P = (0, Chunk392711.range)(1, 11),
-  w = (0, Chunk392711.range)(1, 26),
-  D = () => [{
+  D = (0, Chunk392711.range)(1, 26),
+  w = () => [{
     location: Chunk524484.Hn.CHAT_INPUT,
     title: Chunk388032.intl.string(Chunk388032.t.elTtyz),
     description: Chunk388032.intl.string(Chunk388032.t.HtKfMi)
@@ -115,7 +115,7 @@ function L(e) {
     description: e.description,
     checked: i[e.location],
     disabled: t,
-    onChange: t => a(A(S({}, i), {
+    onChange: t => a(A(T({}, i), {
       [e.location]: t
     }))
   }, e.location));
@@ -145,7 +145,7 @@ function j(e) {
     },
     updateSettings: i
   } = e, a = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), s = e => {
-    e || (0, p.T)(h.hn.DISABLE_POGGERMODE), e && (!n || a) ? (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, A(S({
+    e || (0, p.T)(h.hn.DISABLE_POGGERMODE), e && (!n || a) ? (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, A(T({
       header: a ? O.intl.string(O.t["FxT+p0"]) : O.intl.string(O.t.TAZ4F9),
       confirmText: O.intl.string(O.t.JFfins),
       cancelText: O.intl.string(O.t["ETE/oC"]),
@@ -221,10 +221,10 @@ function k(e) {
         children: O.intl.string(O.t.xoldVn)
       }), (0, r.jsx)(l.iRW, {
         disabled: c,
-        markers: w,
+        markers: D,
         stickToMarkers: true,
-        minValue: w[0],
-        maxValue: w[w.length - 1],
+        minValue: D[0],
+        maxValue: D[D.length - 1],
         initialValue: a,
         onValueChange: e => s({
           confettiSize: e
@@ -233,7 +233,7 @@ function k(e) {
       })]
     }), (0, r.jsx)(L, {
       disabled: c,
-      locations: D(),
+      locations: w(),
       settingsLocations: o,
       onChange: e => s({
         confettiEnabledLocations: e

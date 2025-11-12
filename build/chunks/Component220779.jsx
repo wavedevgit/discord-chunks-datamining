@@ -2,7 +2,7 @@
 /** chunk id: 220779, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A7: () => T,
+  A7: () => S,
   dE: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -61,12 +61,12 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = (0, Chunk131704.createChannelRecord)({
+let T = (0, Chunk131704.createChannelRecord)({
   id: "1",
   type: Chunk981631.d4z.DM
 });
 
-function T(e) {
+function S(e) {
   let {
     placeholder: t,
     onEnter: n,
@@ -77,7 +77,7 @@ function T(e) {
     onFocus: _,
     channel: p,
     className: h
-  } = e, [g, E] = i.useState(""), [y, v] = i.useState((0, d.JM)("")), T = () => {
+  } = e, [g, E] = i.useState(""), [y, v] = i.useState((0, d.JM)("")), S = () => {
     E(""), v((0, d.JM)(""))
   }, A = u.Ie.ATOMIC_REACTOR_REPLY_INPUT, C = i.useRef(null), N = () => {
     if (null == C.current) return "top";
@@ -93,7 +93,7 @@ function T(e) {
     showRemainingCharsAfterCount: false,
     allowNewLines: false,
     maxCharacterCount: m.z,
-    channel: null != p ? p : S,
+    channel: null != p ? p : T,
     onChange: (e, t, n) => {
       E(t), v(n)
     },
@@ -111,7 +111,7 @@ function T(e) {
       return t.length > m.z ? Promise.resolve({
         shouldClear: false,
         shouldRefocus: true
-      }) : (n(t), T(), Promise.resolve({
+      }) : (n(t), S(), Promise.resolve({
         shouldClear: true,
         shouldRefocus: false
       }))
@@ -158,7 +158,7 @@ let A = (e, t) => {
           ref: d,
           children: (0, r.jsx)(p.$, {
             messageId: g.lds,
-            channel: S,
+            channel: T,
             closePopout: () => {
               u(false)
             },

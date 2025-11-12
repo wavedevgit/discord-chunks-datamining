@@ -2,7 +2,7 @@
 /** chunk id: 390966, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  z: () => S
+  z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -147,7 +147,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     startTime: t,
     status: n,
@@ -155,14 +155,14 @@ function S(e) {
     className: s,
     endTime: u,
     liveText: p,
-    textVariant: S = "text-sm/semibold",
-    isNew: T,
+    textVariant: T = "text-sm/semibold",
+    isNew: S,
     recurrenceRule: A,
     guildEventId: C,
     recurrenceId: N
-  } = e, R = (0, d.dQu)(c.Z.colors.TEXT_BRAND).hex(), P = (0, d.dQu)(c.Z.colors.TEXT_FEEDBACK_POSITIVE).hex(), w = (0, d.dQu)(c.Z.colors.TEXT_DANGER).hex();
+  } = e, R = (0, d.dQu)(c.Z.colors.TEXT_BRAND).hex(), P = (0, d.dQu)(c.Z.colors.TEXT_FEEDBACK_POSITIVE).hex(), D = (0, d.dQu)(c.Z.colors.TEXT_DANGER).hex();
   null == p && (p = a === h.WX.EXTERNAL ? m.intl.string(m.t.IyZxjH) : m.intl.string(m.t["X2K3/4"]));
-  let D = (0, f.Z)(N, C),
+  let w = (0, f.Z)(N, C),
     [{
       startDateTimeString: x,
       endDateTimeString: L,
@@ -182,7 +182,7 @@ function S(e) {
     start: x,
     end: L
   }));
-  let B = i.useMemo(() => n === h.p1.CANCELED || (null == D ? true : D.is_canceled) ? 5 : n === h.p1.ACTIVE ? 3 : h.$I.has(n) ? 4 : M ? 2 : +!!j, [n, null == D ? true : D.is_canceled, M, j]),
+  let B = i.useMemo(() => n === h.p1.CANCELED || (null == w ? true : w.is_canceled) ? 5 : n === h.p1.ACTIVE ? 3 : h.$I.has(n) ? 4 : M ? 2 : +!!j, [n, null == w ? true : w.is_canceled, M, j]),
     Z = y(B, G, p, L, k),
     {
       Icon: F,
@@ -193,10 +193,10 @@ function S(e) {
       timeStatus: B,
       textBrand: R,
       textPositive: P,
-      textDanger: w,
+      textDanger: D,
       endDateTimeString: L,
       startDateTimeString: x
-    }), [B, R, P, w, L, x]),
+    }), [B, R, P, D, L, x]),
     W = null;
   if (null != A) {
     let e = (0, _.Ho)(A);
@@ -211,7 +211,7 @@ function S(e) {
       [g.isRecurring]: null != W
     }),
     tooltipText: Y,
-    children: [T && n === h.p1.SCHEDULED ? (0, r.jsx)(v, {}) : (0, r.jsx)(F, {
+    children: [S && n === h.p1.SCHEDULED ? (0, r.jsx)(v, {}) : (0, r.jsx)(F, {
       color: V,
       size: "custom",
       width: E,
@@ -220,7 +220,7 @@ function S(e) {
       className: g.eventStatusLabel,
       children: [(0, r.jsx)(d.Text, {
         color: H,
-        variant: S,
+        variant: T,
         children: Z
       }), null != W && (0, r.jsx)(d.Text, {
         color: "header-secondary",

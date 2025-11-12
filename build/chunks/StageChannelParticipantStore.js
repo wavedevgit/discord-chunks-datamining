@@ -26,7 +26,7 @@ var r, Chunk348327 = require("./348327.js"),
   Chunk88751 = require("./88751.js"),
   Chunk427679 = require("./427679.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,7 +44,7 @@ function P(e) {
   return null != (t = e.getGuildId()) ? t : A
 }
 
-function w(e) {
+function D(e) {
   return C.values(null != e ? e : true, true).map(e => {
     let {
       id: t
@@ -53,7 +53,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   N.has(e) || (N.add(e), s()(p.Z.getMutableGuildChannelsForGuild(e)).values().forEach(e => {
     M(e) && C.set(e.id, e)
   }))
@@ -63,7 +63,7 @@ function x(e) {
   let t = R[e];
   if (null != t) return t;
   let n = p.Z.getChannel(e);
-  return null != n && n.isGuildStageVoice() && (D(n.guild_id), M(n)) ? L(e) : null
+  return null != n && n.isGuildStageVoice() && (w(n.guild_id), M(n)) ? L(e) : null
 }
 
 function L(e) {
@@ -81,7 +81,7 @@ function j(e, t) {
 }
 
 function k(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : w();
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : D();
   return t.reduce((t, n) => {
     let r = L(n);
     return e(r) ? (j(n, r), true) : t
@@ -89,7 +89,7 @@ function k(e) {
 }
 
 function U(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : w();
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : D();
   return k(t => t.updateParticipant(e), t)
 }
 
@@ -134,7 +134,7 @@ function H(e) {
 
 function Y(e) {
   let t = false;
-  for (let n of w(e.guildId)) t = L(n).rebuild() || t;
+  for (let n of D(e.guildId)) t = L(n).rebuild() || t;
   return t
 }
 
@@ -203,7 +203,7 @@ function $(e) {
   let {
     guildId: t
   } = e;
-  if (N.has(t)) return k(e => e.rebuild(), w(t))
+  if (N.has(t)) return k(e => e.rebuild(), D(t))
 }
 let ee = [];
 class et extends(r = Chunk442837.ZP.Store) {
@@ -231,7 +231,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return null != (r = null == (n = x(e)) ? true : n.size(t)) ? r : 0
   }
   getChannels(e) {
-    return D(null != e ? e : A), C.values(null != e ? e : A)
+    return w(null != e ? e : A), C.values(null != e ? e : A)
   }
   getChannelsVersion() {
     return C.version
@@ -241,7 +241,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return null != (r = null == (n = x(e)) ? true : n.getParticipant(t)) ? r : null
   }
 }
-T(et, "displayName", "StageChannelParticipantStore");
+S(et, "displayName", "StageChannelParticipantStore");
 let en = new et(Chunk570140.Z, {
   CONNECTION_OPEN: Z,
   OVERLAY_INITIALIZE: Z,

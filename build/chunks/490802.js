@@ -47,22 +47,22 @@ function h(e) {
     isDisabled: O = false,
     isReadOnly: v = false,
     isRequired: I = false,
-    minValue: S,
-    maxValue: T,
+    minValue: T,
+    maxValue: S,
     isDateUnavailable: A
   } = e, C = e.value || e.defaultValue || e.placeholderValue || null, [N, R] = (0, r.iZ)(C, e.granularity), P = R || "UTC";
   if (C && !(N in C)) throw Error("Invalid granularity " + N + " for value " + C.toString());
-  let w = (0, d.useMemo)(() => new(0, a.C)(h), [h]),
-    D = (0, d.useMemo)(() => g(w.resolvedOptions().calendar), [g, w]),
+  let D = (0, d.useMemo)(() => new(0, a.C)(h), [h]),
+    w = (0, d.useMemo)(() => g(D.resolvedOptions().calendar), [g, D]),
     [x, L] = (0, u.z)(e.value, null != (t = e.defaultValue) ? t : null, e.onChange),
     [M] = (0, d.useState)(x),
     j = (0, d.useMemo)(() => {
       var e;
-      return null != (e = (0, r.Ai)(x, D)) ? e : null
-    }, [x, D]),
-    [k, U] = (0, d.useState)(() => (0, r.OJ)(e.placeholderValue, N, D, R)),
+      return null != (e = (0, r.Ai)(x, w)) ? e : null
+    }, [x, w]),
+    [k, U] = (0, d.useState)(() => (0, r.OJ)(e.placeholderValue, N, w, R)),
     G = j || k,
-    B = "gregory" === D.identifier && "BC" === G.era,
+    B = "gregory" === w.identifier && "BC" === G.era,
     Z = (0, d.useMemo)(() => {
       var t;
       return {
@@ -83,23 +83,23 @@ function h(e) {
       ...Y
     } : {}),
     z = (0, d.useRef)(null),
-    q = (0, d.useRef)(D);
+    q = (0, d.useRef)(w);
   (0, d.useEffect)(() => {
-    (0, o.jv)(D, q.current) || (q.current = D, U(t => Object.keys(W).length > 0 ? (0, s.Mw)(t, D) : (0, r.OJ)(e.placeholderValue, N, D, R)))
-  }, [D, N, W, R, e.placeholderValue]), x && Object.keys(W).length < Object.keys(Y).length && K(W = {
+    (0, o.jv)(w, q.current) || (q.current = w, U(t => Object.keys(W).length > 0 ? (0, s.Mw)(t, w) : (0, r.OJ)(e.placeholderValue, N, w, R)))
+  }, [w, N, W, R, e.placeholderValue]), x && Object.keys(W).length < Object.keys(Y).length && K(W = {
     ...Y
-  }), null == x && Object.keys(W).length === Object.keys(Y).length && (K(W = {}), U((0, r.OJ)(e.placeholderValue, N, D, R)));
+  }), null == x && Object.keys(W).length === Object.keys(Y).length && (K(W = {}), U((0, r.OJ)(e.placeholderValue, N, w, R)));
   let X = j && Object.keys(W).length >= Object.keys(Y).length ? j : k,
     Q = t => {
       if (e.isDisabled || e.isReadOnly) return;
       let n = Object.keys(W),
         i = Object.keys(Y);
-      null == t ? (L(null), U((0, r.OJ)(e.placeholderValue, N, D, R)), K({})) : 0 === n.length && null == z.current || n.length >= i.length || n.length === i.length - 1 && Y.dayPeriod && !W.dayPeriod && "dayPeriod" !== z.current ? (0 === n.length && K(W = {
+      null == t ? (L(null), U((0, r.OJ)(e.placeholderValue, N, w, R)), K({})) : 0 === n.length && null == z.current || n.length >= i.length || n.length === i.length - 1 && Y.dayPeriod && !W.dayPeriod && "dayPeriod" !== z.current ? (0 === n.length && K(W = {
         ...Y
       }), L(t = (0, s.Mw)(t, (null == C ? true : C.calendar) || new(0, l.IQ)))) : U(t), z.current = null
     },
     J = (0, d.useMemo)(() => X.toDate(P), [X, P]),
-    $ = (0, d.useMemo)(() => m(J, W, V, H, X, D, h, N), [J, W, V, H, X, D, h, N]);
+    $ = (0, d.useMemo)(() => m(J, W, V, H, X, w, h, N), [J, W, V, H, X, w, h, N]);
   Y.era && W.year && !W.era ? (W.era = true, K({
     ...W
   })) : !Y.era && W.era && (delete W.era, K({
@@ -119,7 +119,7 @@ function h(e) {
         (t.length >= n.length || t.length === n.length - 1 && Y.dayPeriod && !W.dayPeriod) && Q(X)
       }
     },
-    en = (0, d.useMemo)(() => (0, r.p2)(x, S, T, A, Z), [x, S, T, A, Z]),
+    en = (0, d.useMemo)(() => (0, r.p2)(x, T, S, A, Z), [x, T, S, A, Z]),
     er = (0, c.Q3)({
       ...e,
       value: x,
@@ -132,7 +132,7 @@ function h(e) {
     value: j,
     defaultValue: null != (n = e.defaultValue) ? n : M,
     dateValue: J,
-    calendar: D,
+    calendar: w,
     setValue: Q,
     segments: $,
     dateFormatter: V,
@@ -170,7 +170,7 @@ function h(e) {
       delete W[t], z.current = t, K({
         ...W
       });
-      let n = (0, r.OJ)(e.placeholderValue, N, D, R),
+      let n = (0, r.OJ)(e.placeholderValue, N, w, R),
         i = X;
       if ("dayPeriod" === t && "hour" in X && "hour" in n) {
         let e = X.hour >= 12,

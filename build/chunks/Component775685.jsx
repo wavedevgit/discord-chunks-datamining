@@ -60,7 +60,7 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = Chunk647438.forwardRef(function(e, t) {
+let T = Chunk647438.forwardRef(function(e, t) {
   let {
     type: n
   } = e, {
@@ -69,20 +69,20 @@ let S = Chunk647438.forwardRef(function(e, t) {
     location: "ChannelAppLauncherButton"
   }), y = (0, l.e7)([f.Z], () => f.Z.shouldShowPopup() && f.Z.activeViewType() === n), {
     Component: v,
-    events: S,
-    play: T
+    events: T,
+    play: S
   } = (0, p.Z)("ChannelAppLauncherButton"), A = i.useContext(m.ZP);
   i.useEffect(() => {
     let e = () => {
-      S.onMouseEnter()
+      T.onMouseEnter()
     };
     return A.on("command-sentinel-typed", e), () => {
       A.off("command-sentinel-typed", e)
     }
-  }, [A, S]);
+  }, [A, T]);
   let C = i.useCallback(() => {
-      y ? d.y(_.ti.DISMISSED) : (d._(_._b.TEXT, n), u.ux()), T()
-    }, [y, n, T]),
+      y ? d.y(_.ti.DISMISSED) : (d._(_._b.TEXT, n), u.ux()), S()
+    }, [y, n, S]),
     N = (0, r.jsx)(v, {
       size: "refresh_sm",
       color: "currentColor"
@@ -110,19 +110,19 @@ let S = Chunk647438.forwardRef(function(e, t) {
             right: false
           }
         }
-      }, S), {
+      }, T), {
         children: N
       }))
     })
   })
 });
 
-function T(e) {
+function S(e) {
   let {
     type: t
   } = e;
-  return (0, r.jsx)(S, {
+  return (0, r.jsx)(T, {
     type: t
   })
 }
-let A = Chunk647438.memo(T)
+let A = Chunk647438.memo(S)

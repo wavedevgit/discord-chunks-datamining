@@ -2,7 +2,7 @@
 /** chunk id: 790527, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,25 +49,25 @@ function P(e, t) {
   return i
 }
 
-function w(e) {
+function D(e) {
   switch (e) {
-    case S.cd.ANIMATED_AVATAR_MODAL_UPSELL:
-    case S.cd.ANIMATED_BANNER_MODAL_UPSELL:
-    case S.cd.PROFILE_EFFECT_MODAL_UPSELL:
-    case S.cd.AVATAR_DECORATION_MODAL_UPSELL:
-    case S.cd.FOR_LATER_MODAL_UPSELL:
-    case S.cd.VOICE_FILTERS_UPSELL:
-    case S.cd.RECENT_AVATARS_ROADBLOCK_UPSELL:
+    case T.cd.ANIMATED_AVATAR_MODAL_UPSELL:
+    case T.cd.ANIMATED_BANNER_MODAL_UPSELL:
+    case T.cd.PROFILE_EFFECT_MODAL_UPSELL:
+    case T.cd.AVATAR_DECORATION_MODAL_UPSELL:
+    case T.cd.FOR_LATER_MODAL_UPSELL:
+    case T.cd.VOICE_FILTERS_UPSELL:
+    case T.cd.RECENT_AVATARS_ROADBLOCK_UPSELL:
       returntrue;
     default:
       returnfalse
   }
 }
 
-function D(e) {
+function w(e) {
   var t, n, a, {
       title: P,
-      type: D,
+      type: w,
       guildBoostProps: x,
       analyticsSource: L,
       analyticsLocation: M,
@@ -91,7 +91,7 @@ function D(e) {
       showNewBadge: $ = false,
       showBetaBadge: ee = false,
       enableArtBoxShadow: et = true,
-      subscriptionTier: en = S.Si.TIER_2,
+      subscriptionTier: en = T.Si.TIER_2,
       isLoading: er = false,
       hideBackButton: ei,
       backButtonText: ea,
@@ -118,7 +118,7 @@ function D(e) {
       analyticsLocations: ey,
       analyticsSource: L,
       guildBoostProps: x,
-      type: D
+      type: w
     },
     ev = i.useRef(eO);
   i.useEffect(() => {
@@ -132,13 +132,13 @@ function D(e) {
       guildBoostProps: r,
       type: i
     } = ev.current;
-    em ? h.default.track(T.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
+    em ? h.default.track(S.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
       type: "".concat(i, " - Tier ").concat(null == r ? true : r.boostedGuildTier),
       guild_id: null == r ? true : r.guild.id,
       channel_id: null == r ? true : r.channelId,
       location: e,
       location_stack: t
-    }) : h.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
+    }) : h.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
       type: i,
       source: n,
       location: e,
@@ -147,11 +147,11 @@ function D(e) {
     })
   }, [em, en, er]);
   let eI = (0, s.e7)([g.Z], () => g.Z.affinities),
-    eS = eI.length > 1 && w(D),
-    eT = (0, s.e7)([g.Z], () => g.Z.hasFetched);
+    eT = eI.length > 1 && D(w),
+    eS = (0, s.e7)([g.Z], () => g.Z.hasFetched);
   i.useEffect(() => {
-    eT || u.MH()
-  }, [eT]);
+    eS || u.MH()
+  }, [eS]);
   let eA = () => {
       if (em) return (0, r.jsx)(p.Z, {
         analyticsLocation: M,
@@ -210,8 +210,8 @@ function D(e) {
       className: o()(eo ? C.enhancedContent : C.content, !eb && B),
       children: er ? (0, r.jsx)(c.$jN, {}) : eb ? (0, r.jsx)(v.ZP, {
         onClose: W,
-        type: D,
-        subscriptionTier: null != (a = null == eg || null == (n = eg.subscription_trial) ? true : n.sku_id) ? a : S.Si.TIER_2,
+        type: w,
+        subscriptionTier: null != (a = null == eg || null == (n = eg.subscription_trial) ? true : n.sku_id) ? a : T.Si.TIER_2,
         headingText: P,
         context: k,
         analyticsLocationObject: M,
@@ -230,7 +230,7 @@ function D(e) {
             children: [P, ee ? (0, r.jsx)(_.Z, {
               className: C.betaTag
             }) : null]
-          }), eS ? (0, r.jsx)(I.Z, {
+          }), eT ? (0, r.jsx)(I.Z, {
             affinities: eI
           }) : true, eu, (0, r.jsx)(c.Text, {
             variant: e_ ? "text-sm/normal" : "text-md/normal",

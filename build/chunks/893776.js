@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => w,
+  Z: () => D,
   c: () => N
 }), require("./415506.js"), require("./358797.js"), require("./457542.js");
 var Chunk990547 = require("./990547.js"),
@@ -57,12 +57,12 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = new Chunk710845.Z("AuthenticationActionCreators"),
+let S = new Chunk710845.Z("AuthenticationActionCreators"),
   A = 5e3,
   C = null;
 var N = function(e) {
@@ -75,7 +75,7 @@ function R(e) {
   }, e);
   l.Z.dispatch(t).catch(e => {
     var t;
-    throw T.error("Error while dispatching LOGOUT", e), null == (t = window.DiscordErrors) || t.softCrash(e), e
+    throw S.error("Error while dispatching LOGOUT", e), null == (t = window.DiscordErrors) || t.softCrash(e), e
   })
 }
 
@@ -93,7 +93,7 @@ function P(e) {
     }]
   })
 }
-let w = {
+let D = {
   startSession(e) {
     l.Z.wait(() => {
       l.Z.dispatch({
@@ -115,7 +115,7 @@ let w = {
     return l.Z.dispatch({
       type: "LOGIN",
       isPasswordAttempt: true
-    }), g.Z.post(S(v({
+    }), g.Z.post(T(v({
       url: b.ANM.LOGIN,
       body: {
         login: t,
@@ -365,7 +365,7 @@ let w = {
     var t;
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : b.Z5c.DEFAULT_LOGGED_OUT,
       r = arguments.length > 2 ? arguments[2] : true;
-    return g.Z.post(S(v({
+    return g.Z.post(T(v({
       url: b.ANM.LOGOUT,
       body: {
         provider: (0, y.xJ)(),
@@ -393,7 +393,7 @@ let w = {
   switchAccountToken(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
       n = h.default.getToken();
-    return T.log("Switching accounts", {
+    return S.log("Switching accounts", {
       wasLoggedIn: null != n,
       tokenHasChanged: e !== n
     }), R({
@@ -401,7 +401,7 @@ let w = {
       goHomeAfterSwitching: t
     }), this.loginToken(e, true).then(() => {
       let t = e === h.default.getToken();
-      return T.log("Switched accounts finished", {
+      return S.log("Switched accounts finished", {
         isCorrectToken: t
       }), t
     })

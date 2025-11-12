@@ -2,10 +2,10 @@
 /** chunk id: 675478, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BU: () => D,
+  BU: () => w,
   Cd: () => j,
   DZ: () => R,
-  PS: () => w,
+  PS: () => D,
   T6: () => A,
   Z1: () => G,
   aj: () => P,
@@ -57,18 +57,18 @@ function v(e) {
   return e
 }
 let I = 5e3,
-  S = "UserSettingsProtoLastWriteTimes",
-  T = Date.now();
+  T = "UserSettingsProtoLastWriteTimes",
+  S = Date.now();
 
 function A() {}
 Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
-  T = Date.now()
+  S = Date.now()
 }), Chunk570140.Z.subscribe("CONNECTION_CLOSED", () => {
-  T = Date.now()
+  S = Date.now()
 }), "undefined" != typeof document && (document.addEventListener("mousedown", () => {
-  T = 0
+  S = 0
 }), document.addEventListener("keydown", () => {
-  T = 0
+  S = 0
 }));
 class C {
   getEditInfo() {
@@ -134,8 +134,8 @@ class C {
   }
   saveLastSendTime() {
     var e;
-    let t = null != (e = Chunk433517.K.get(S)) ? module : {};
-    exports[this.type] = Date.now(), Chunk433517.K.set(S, exports)
+    let t = null != (e = Chunk433517.K.get(T)) ? module : {};
+    exports[this.type] = Date.now(), Chunk433517.K.set(T, exports)
   }
   loadIfUncached(e, t) {
     m.Z.hasLoaded(e) && true !== t || this.loadIfNecessary(t)
@@ -284,12 +284,12 @@ let N = new C(Chunk524437.o8, Chunk526761.yP.PRELOADED_USER_SETTINGS),
     [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: R
   };
 
-function w(e, t, n) {
+function D(e, t, n) {
   return N.updateAsync("guilds", n => (0, E.u0)(n, e, t), n)
 }
 
-function D(e, t, n, r) {
-  return w(e, e => (0, E.uL)(e, t, n), r)
+function w(e, t, n, r) {
+  return D(e, e => (0, E.uL)(e, t, n), r)
 }
 
 function x(e) {
@@ -316,7 +316,7 @@ async function j(e, t) {
   }, b.fy.INFREQUENT_USER_ACTION)
 }
 async function k(e, t, n) {
-  return await w(t, t => {
+  return await D(t, t => {
     t.guildDismissibleContentStates[e] = v({}, t.guildDismissibleContentStates[e], n)
   }, b.fy.INFREQUENT_USER_ACTION)
 }

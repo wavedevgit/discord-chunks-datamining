@@ -60,12 +60,12 @@ function g(e) {
     description: I
   } = i.useMemo(() => (0, l.sl)(h, {
     fakeAppIconURL: p
-  }), [h]), S = i.useMemo(() => {
+  }), [h]), T = i.useMemo(() => {
     var e;
     let t = null != (e = null == n ? true : n.displayDescription) ? e : I;
     return null == t ? null : (0, c.ae)(t, true)
   }, [I, null == n ? true : n.displayDescription]), {
-    trackSearchResultsItemImpressionRef: T
+    trackSearchResultsItemImpressionRef: S
   } = (0, f.Z)({
     applicationId: h.id,
     commandId: null == n ? true : n.id,
@@ -75,7 +75,7 @@ function g(e) {
   return (0, r.jsx)(a.P3F, {
     className: _.clickable,
     innerRef: e => {
-      T.current = e
+      S.current = e
     },
     onClick: g,
     onContextMenu: y,
@@ -97,7 +97,7 @@ function g(e) {
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
-          children: S
+          children: T
         })]
       }), null != n ? (0, r.jsx)(a.Text, {
         className: _.cmdAppName,

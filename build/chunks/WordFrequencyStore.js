@@ -2,7 +2,7 @@
 /** chunk id: 389458, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./642613.js"), require("./368063.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -69,7 +69,7 @@ function I(e) {
   O(m, d), t && P.emitChange()
 }
 
-function S() {
+function T() {
   let e = Chunk240458.V.getCurrentConfig({
       location: "WordFrequencyStore"
     }, {
@@ -81,8 +81,8 @@ function S() {
   return module || exports
 }
 
-function T(e) {
-  return !!S() && (requestIdleCallback(() => {
+function S(e) {
+  return !!T() && (requestIdleCallback(() => {
     I(e)
   }), false)
 }
@@ -90,13 +90,13 @@ let A = e => {
     let {
       messages: t
     } = e;
-    return T(t)
+    return S(t)
   },
   C = e => {
     let {
       message: t
     } = e;
-    return T([t])
+    return S([t])
   },
   N = e => {
     h = o.t.createEstimate(f, _), m.clear(), g = 0
@@ -141,4 +141,4 @@ let P = new R(Chunk570140.Z, {
     MESSAGE_CREATE: C,
     DEV_TOOLS_WORD_FREQUENCY_RESET: N
   }),
-  w = P
+  D = P

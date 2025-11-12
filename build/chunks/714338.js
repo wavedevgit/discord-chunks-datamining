@@ -2,7 +2,7 @@
 /** chunk id: 714338, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./781311.js");
 var Chunk879443 = require("./879443.js"),
   i = require.n(Chunk879443),
@@ -41,7 +41,7 @@ function I(e, t) {
   }), t(n, r))
 }
 
-function S(e) {
+function T(e) {
   for (let [t, n] of Object.entries(e)) {
     if (null == n) continue;
     let e = b();
@@ -56,7 +56,7 @@ function S(e) {
     null != n.keypress && i.call(p, r, I(t, n.keypress), "keypress")
   }
 }(0, Chunk358085.isDesktop)() && new(i())(document.documentElement).bind("backspace", e => e.preventDefault());
-let T = {
+let S = {
   combokeys: p,
   modKey: h,
   altKey: m,
@@ -74,10 +74,10 @@ let T = {
     d = e
   },
   enable() {
-    _ || (_ = true, this.checkDupes(d), S(d))
+    _ || (_ = true, this.checkDupes(d), T(d))
   },
   enableTemp(e) {
-    f.push(d), d = e, S(e), _ = true
+    f.push(d), d = e, T(e), _ = true
   },
   disableTemp() {
     let e = f.pop();

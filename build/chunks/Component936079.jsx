@@ -2,7 +2,7 @@
 /** chunk id: 936079, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -41,7 +41,7 @@ function v() {
 let I = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
   focused: Chunk451478.Z.isFocused()
 }))(Chunk151851.Z);
-class S extends Chunk647438.PureComponent {
+class T extends Chunk647438.PureComponent {
   getPlatform() {
     var e;
     let t = null == (e = o().os) ? true : module.family;

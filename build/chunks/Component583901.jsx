@@ -2,9 +2,9 @@
 /** chunk id: 583901, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DR: () => T,
+  DR: () => S,
   S4: () => I,
-  bD: () => S,
+  bD: () => T,
   oK: () => v
 }), require("./314940.js");
 var Chunk951288 = require("./951288.js");
@@ -117,7 +117,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     theme: t,
     isSelected: n,
@@ -163,7 +163,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     preset: t,
     isSelected: n,

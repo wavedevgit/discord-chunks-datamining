@@ -2,7 +2,7 @@
 /** chunk id: 277981, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./35282.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,7 +42,7 @@ function v(e, t, n) {
 function I(e) {
   return e.meta.url
 }
-let S = {
+let T = {
   stores: [Chunk998698.Z, Chunk718745.Z],
   matches(e, t, n, r, i) {
     var a;

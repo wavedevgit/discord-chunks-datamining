@@ -22,8 +22,8 @@ var Chunk636881 = require("./636881.js"),
   O = Math.min,
   v = Chunk46015([].concat),
   I = Chunk46015([].push),
-  S = Chunk46015("".indexOf),
-  T = Chunk46015("".slice),
+  T = Chunk46015("".indexOf),
+  S = Chunk46015("".slice),
   A = function(e) {
     return true === e ? e : String(e)
   },
@@ -42,7 +42,7 @@ Chunk518187("replace", function(e, t, n) {
   }, function(e, i) {
     var o = l(this),
       s = _(e);
-    if ("string" == typeof i && false === S(i, a) && false === S(i, "$<")) {
+    if ("string" == typeof i && false === T(i, a) && false === T(i, "$<")) {
       var u = n(t, o, s, i);
       if (u.done) return u.value
     }
@@ -50,20 +50,20 @@ Chunk518187("replace", function(e, t, n) {
     p || (i = _(i));
     var m = o.global;
     m && (P = o.unicode, o.lastIndex = 0);
-    for (var b = []; null !== (D = E(o, s)) && (I(b, D), m);) {
+    for (var b = []; null !== (w = E(o, s)) && (I(b, w), m);) {
       ;
-      "" === _(D[0]) && (o.lastIndex = h(s, f(o.lastIndex), P))
+      "" === _(w[0]) && (o.lastIndex = h(s, f(o.lastIndex), P))
     }
     for (var C = "", N = 0, R = 0; R < b.length; R++) {
-      for (var P, w, D = b[R], x = _(D[0]), L = y(O(d(D.index), s.length), 0), M = [], j = 1; j < D.length; j++) I(M, A(D[j]));
-      var k = D.groups;
+      for (var P, D, w = b[R], x = _(w[0]), L = y(O(d(w.index), s.length), 0), M = [], j = 1; j < w.length; j++) I(M, A(w[j]));
+      var k = w.groups;
       if (p) {
         var U = v([x], M, L, s);
-        true !== k && I(U, k), w = _(r(i, true, U))
-      } else w = g(x, s, L, M, k, i);
-      L >= N && (C += T(s, N, L) + w, N = L + x.length)
+        true !== k && I(U, k), D = _(r(i, true, U))
+      } else D = g(x, s, L, M, k, i);
+      L >= N && (C += S(s, N, L) + D, N = L + x.length)
     }
-    return C + T(s, N)
+    return C + S(s, N)
   }]
 }, !!Chunk621523(function() {
   var e = /./;

@@ -61,9 +61,9 @@ function I(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let S = 16;
+let T = 16;
 
-function T() {
+function S() {
   return (0, Chunk951288.jsx)("svg", {
     width: "24",
     height: "24",
@@ -84,7 +84,7 @@ function A(e) {
     hasNoVotes: n,
     victorEmoji: i
   } = e;
-  if (n) t = (0, r.jsx)(T, {});
+  if (n) t = (0, r.jsx)(S, {});
   else if (null != i) {
     let e = "" !== i.name ? i.name : i.displayName;
     t = (0, r.jsx)(u.Z, {
@@ -144,7 +144,7 @@ function N(e) {
             scaleFontToUserSetting: true,
             children: o
           }), (0, r.jsx)(m.ZY, {
-            size: S,
+            size: T,
             className: b.victorIcon,
             isVictor: true,
             isExpired: true
@@ -215,7 +215,7 @@ function P(e) {
     channelId: a.id,
     guildId: a.guild_id,
     messageId: n.id
-  }), I = n.messageReference, S = i.useCallback(() => {
+  }), I = n.messageReference, T = i.useCallback(() => {
     null != I && c.Z.jumpToMessage({
       channelId: I.channel_id,
       messageId: I.message_id,
@@ -234,12 +234,12 @@ function P(e) {
         username: O.nick,
         usernameHook: v(O),
         title: y,
-        titleOnClick: S
+        titleOnClick: T
       })
     }), (0, r.jsx)(R, {
       className: b.embed,
       data: m,
-      onClickPollLink: u ? true : S
+      onClickPollLink: u ? true : T
     })]
   })
 }

@@ -41,7 +41,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function w(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,7 +66,7 @@ function D(e, t) {
 }
 
 function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -164,7 +164,7 @@ function G(e) {
     hotspotLocation: y
   } = e, v = (0, d.O)(), {
     analyticsLocations: I
-  } = (0, p.ZP)(_.Z.VIDEO_BACKGROUND_IMAGE_OPTION), T = (0, s.e7)([g.Z], () => null != y && g.Z.hasHotspot(y)), A = b ? (0, r.jsx)(h.Z, {
+  } = (0, p.ZP)(_.Z.VIDEO_BACKGROUND_IMAGE_OPTION), S = (0, s.e7)([g.Z], () => null != y && g.Z.hasHotspot(y)), A = b ? (0, r.jsx)(h.Z, {
     className: R.backgroundImageOption,
     src: i,
     loop: true,
@@ -177,7 +177,7 @@ function G(e) {
   });
 
   function P() {
-    null != y && T && (m.Kw(y), E.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
+    null != y && S && (m.Kw(y), E.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
       type: C.cd.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
       location: v.location,
       location_stack: I
@@ -192,7 +192,7 @@ function G(e) {
       let {
         default: e
       } = await n.e("99414").then(n.bind(n, 187658));
-      return n => (0, r.jsx)(e, x(w({}, n), {
+      return n => (0, r.jsx)(e, x(D({}, n), {
         backgroundOption: t,
         optionIsInUse: a
       }))
@@ -210,7 +210,7 @@ function G(e) {
         size: "xxs",
         color: "currentColor"
       })
-    }) : null, T && (0, r.jsx)(c.IGR, {
+    }) : null, S && (0, r.jsx)(c.IGR, {
       text: N.intl.string(N.t.y2b7CA),
       className: R.newTextBadge
     })]
@@ -236,10 +236,10 @@ function Z(e) {
     onClick: t,
     tooltipText: n,
     disabled: i = false
-  } = e, a = (0, s.e7)([g.Z], () => g.Z.hasHotspot(T.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
+  } = e, a = (0, s.e7)([g.Z], () => g.Z.hasHotspot(S.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
 
   function o() {
-    m.Kw(T.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
+    m.Kw(S.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
   }
   let l = a ? N.intl.string(N.t["5TUJOv"]) : n;
   return (0, r.jsxs)(c.jSM, {
@@ -282,7 +282,7 @@ function F(e) {
     analyticsLocations: i
   } = (0, p.ZP)(_.Z.VIDEO_BACKGROUND_CUSTOM_UPSELL);
   return (0, f.ZP)(() => {
-    E.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
+    E.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
       type: C.cd.VIDEO_BACKGROUNDS_INLINE,
       location: n.location,
       location_stack: i
@@ -306,7 +306,7 @@ function V(e) {
       let {
         default: e
       } = await Promise.all([n.e("91689"), n.e("89289"), n.e("53488")]).then(n.bind(n, 28130));
-      return n => (0, r.jsx)(e, w({
+      return n => (0, r.jsx)(e, D({
         maxFileSizeBytes: I.SJ,
         onComplete: e => {
           let {

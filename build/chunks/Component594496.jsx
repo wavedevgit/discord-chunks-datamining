@@ -43,8 +43,8 @@ function j(e) {
   var t, n, i, j;
   let {
     guild: k
-  } = e, U = (0, o.e7)([T.default], () => {
-    let e = T.default.getCurrentUser();
+  } = e, U = (0, o.e7)([S.default], () => {
+    let e = S.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
   }), G = (0, d.m)(x.PremiumTypes.TIER_2), {
     pendingAvatar: B,
@@ -80,7 +80,7 @@ function j(e) {
   }), q = null != k ? k : K;
   a()(null != q, "guild should not be null");
   let X = (0, u.gS)(q.id),
-    Q = (0, o.e7)([S.ZP], () => null == q.id ? null : S.ZP.getMember(q.id, U.id)),
+    Q = (0, o.e7)([T.ZP], () => null == q.id ? null : T.ZP.getMember(q.id, U.id)),
     J = (0, o.e7)([I.Z], () => I.Z.getGuildMemberProfile(U.id, q.id)),
     $ = c.JH.useExperiment({
       location: "GuildIdentityCustomizationSections"
@@ -99,7 +99,7 @@ function j(e) {
     el = e => eo(e, null == Q ? true : Q.avatar, N.I5);
   return (0, r.jsxs)("div", {
     className: M.sectionsContainer,
-    children: [(0, r.jsx)(w.Z, {
+    children: [(0, r.jsx)(D.Z, {
       errors: null != (i = null == W ? true : W.nick) ? i : null == X ? true : X.nick,
       username: C.ZP.getName(U),
       pendingNick: Z,
@@ -114,7 +114,7 @@ function j(e) {
       },
       pendingPronouns: H,
       currentPronouns: ea
-    }, "pronouns"), (0, r.jsxs)(D.Z, {
+    }, "pronouns"), (0, r.jsxs)(w.Z, {
       user: U,
       showOverlay: !ee,
       children: [(0, r.jsx)(h.Z, {

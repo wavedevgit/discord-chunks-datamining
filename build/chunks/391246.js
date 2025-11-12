@@ -29,8 +29,8 @@ var Chunk127849 = require("./127849.js"),
   N = "ArrayBuffer",
   R = "DataView",
   P = "prototype",
-  w = "Wrong length",
-  D = "Wrong index",
+  D = "Wrong length",
+  w = "Wrong index",
   x = Chunk199838.getterFor(N),
   L = Chunk199838.getterFor(R),
   M = Chunk199838.set,
@@ -76,7 +76,7 @@ var Chunk127849 = require("./127849.js"),
     var i = L(e),
       a = h(n),
       o = !!r;
-    if (a + t > i.byteLength) throw new V(D);
+    if (a + t > i.byteLength) throw new V(w);
     var s = i.bytes,
       l = a + i.byteOffset,
       c = O(s, l, l + t);
@@ -87,7 +87,7 @@ var Chunk127849 = require("./127849.js"),
       s = h(n),
       l = r(+i),
       c = !!a;
-    if (s + t > o.byteLength) throw new V(D);
+    if (s + t > o.byteLength) throw new V(w);
     for (var u = o.bytes, d = s + o.byteOffset, f = 0; f < t; f++) u[d + f] = l[c ? f : t - f - 1]
   };
 if (Chunk848120) {
@@ -127,7 +127,7 @@ if (Chunk848120) {
     i = r.byteLength,
     o = _(t);
   if (o < 0 || o > i) throw new V("Wrong offset");
-  if (n = true === n ? i - o : p(n), o + n > i) throw new V(w);
+  if (n = true === n ? i - o : p(n), o + n > i) throw new V(D);
   M(this, {
     type: R,
     buffer: e,

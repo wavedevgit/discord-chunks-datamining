@@ -71,9 +71,9 @@ let E = Chunk647438.memo(function(e) {
       isEdited: O = false,
       application: v,
       tooltipPosition: I
-    } = e, S = i.useMemo(() => g(_), [_]), T = i.useMemo(() => (0, l.Hg)(S), [S]), A = i.useMemo(() => null != p ? (0, l.vc)(S, p) : a ? (0, l.vc)(S, "LT") : (0, l.Y4)(S, true), [S, p, a]), C = i.useMemo(() => a ? (0, u.Z)(A) : null, [a, A]), N = i.useMemo(() => O ? d.intl.formatToPlainString(d.t.CDzOFd, {
-      timeFormatted: T
-    }) : T, [O, T]);
+    } = e, T = i.useMemo(() => g(_), [_]), S = i.useMemo(() => (0, l.Hg)(T), [T]), A = i.useMemo(() => null != p ? (0, l.vc)(T, p) : a ? (0, l.vc)(T, "LT") : (0, l.Y4)(T, true), [T, p, a]), C = i.useMemo(() => a ? (0, u.Z)(A) : null, [a, A]), N = i.useMemo(() => O ? d.intl.formatToPlainString(d.t.CDzOFd, {
+      timeFormatted: S
+    }) : S, [O, S]);
     return (0, r.jsx)("span", {
       className: o()(n, C, {
         [f.timestamp]: true,
@@ -83,13 +83,13 @@ let E = Chunk647438.memo(function(e) {
       }),
       children: null == v ? (0, r.jsx)(s.u, {
         asContainer: true,
-        __unsupportedReactNodeAsText: (0, l.vc)(S, "LLLL"),
+        __unsupportedReactNodeAsText: (0, l.vc)(T, "LLLL"),
         "aria-label": N,
         position: I,
         delay: 750,
         children: (0, r.jsx)(b, {
           timeFormatted: A,
-          timestamp: S,
+          timestamp: T,
           id: y,
           compact: a,
           children: t
@@ -99,7 +99,7 @@ let E = Chunk647438.memo(function(e) {
         compact: a,
         children: (0, r.jsx)(b, {
           timeFormatted: A,
-          timestamp: S,
+          timestamp: T,
           id: y,
           compact: a,
           children: t

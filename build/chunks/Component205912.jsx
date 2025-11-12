@@ -2,7 +2,7 @@
 /** chunk id: 205912, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => S
+  M: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -77,7 +77,7 @@ function I(e, t) {
   return i
 }
 
-function S(e) {
+function T(e) {
   var {
     value: t,
     onChange: n,
@@ -85,8 +85,8 @@ function S(e) {
     maxValue: E,
     placeholderValue: y,
     granularity: I = "day",
-    hourCycle: S,
-    hideTimeZone: T = false
+    hourCycle: T,
+    hideTimeZone: S = false
   } = e, A = v(e, ["value", "onChange", "minValue", "maxValue", "placeholderValue", "granularity", "hourCycle", "hideTimeZone"]);
   let {
     i18n: C
@@ -95,8 +95,8 @@ function S(e) {
   } = (0, _.X)(A), {
     disabled: R,
     errorMessage: P,
-    required: w = false
-  } = N, D = {
+    required: D = false
+  } = N, w = {
     hasError: null != P && "" !== P
   }, {
     refs: x,
@@ -132,7 +132,7 @@ function S(e) {
   return (0, r.jsx)(_.g, O(b({}, N), {
     children: e => (0, r.jsx)(h.U, O(b({
       className: g.inputField,
-      validation: D,
+      validation: w,
       ref: x.setReference
     }, G()), {
       children: (0, r.jsxs)(o.Mt, {
@@ -144,13 +144,13 @@ function S(e) {
         value: t,
         onChange: F,
         isDisabled: R,
-        isRequired: w,
+        isRequired: D,
         minValue: i,
         maxValue: E,
         placeholderValue: y,
         granularity: I,
-        hourCycle: S,
-        hideTimeZone: T,
+        hourCycle: T,
+        hideTimeZone: S,
         "data-mana-component": "date-picker",
         className: g.datePicker,
         children: [(0, r.jsxs)(s.Z, {

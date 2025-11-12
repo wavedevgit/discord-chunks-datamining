@@ -9,7 +9,7 @@ require.d(exports, {
   J4: () => h,
   JL: () => g,
   Ln: () => d,
-  Om: () => S,
+  Om: () => T,
   P0: () => p,
   PI: () => O,
   Vb: () => A,
@@ -17,7 +17,7 @@ require.d(exports, {
   gG: () => m,
   hf: () => R,
   u7: () => N,
-  uf: () => T,
+  uf: () => S,
   w8: () => E,
   z3: () => v,
   zW: () => _
@@ -89,10 +89,10 @@ let f = "manual",
       control_name: "base_theme"
     })
   },
-  S = () => {
+  T = () => {
     f = "surprise_me", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_SURPRISE_BUTTON_CLICKED, {})
   },
-  T = () => {
+  S = () => {
     f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEME_RESET_BUTTON_CLICKED, {})
   },
   A = () => {

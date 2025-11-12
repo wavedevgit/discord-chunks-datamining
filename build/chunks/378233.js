@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   B0: () => N,
-  Hc: () => w,
-  J8: () => D,
+  Hc: () => D,
+  J8: () => w,
   Q6: () => C,
   V9: () => M,
   WD: () => P,
   Zt: () => I,
-  Zv: () => T,
+  Zv: () => S,
   _V: () => A,
   cv: () => L,
   gM: () => U,
@@ -39,7 +39,7 @@ let {
     if (null != t) return t
   }
   return e.stickers[0]
-}, S = e => {
+}, T = e => {
   switch (e) {
     case d.u3.PNG:
       return s.$k ? d.og.WEBP : d.og.PNG;
@@ -52,7 +52,7 @@ let {
     default:
       throw Error("Unexpected format type: ".concat(e))
   }
-}, T = e => {
+}, S = e => {
   switch (e) {
     case "application/json":
       return d.u3.LOTTIE;
@@ -66,7 +66,7 @@ let {
     default:
       throw Error("Unexpected file type: ".concat(e))
   }
-}, A = e => null == e ? null : "".concat(e.name, ".").concat(S(e.format_type)), C = function(e) {
+}, A = e => null == e ? null : "".concat(e.name, ".").concat(T(e.format_type)), C = function(e) {
   let {
     isPreview: t = false,
     size: n = f.lE
@@ -74,7 +74,7 @@ let {
   if (null == e.format_type) return null;
   let i = e.format_type;
   e.format_type === d.u3.GIF && t && (i = d.u3.PNG);
-  let a = S(i),
+  let a = T(i),
     o = _.ANM.STICKER_ASSET(e.id, a),
     s = a === d.og.WEBP ? "&quality=lossless" : "";
   if ("development" !== m) {
@@ -90,7 +90,7 @@ let {
   name: e.name,
   stickers: e.stickers,
   previewSticker: I(e)
-}), P = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, w = (e, t, n, r) => {
+}), P = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, D = (e, t, n, r) => {
   if (o.Z.getUploadCount(n, r) > 0) returntrue;
   let i = c.Z.getStickerPreview(n, r);
   if (null != i && i.length > 0) returntrue;
@@ -103,7 +103,7 @@ let {
     default:
       returnfalse
   }
-}, D = e => e.type === d.n0.GUILD, x = e => e.type === d.n0.STANDARD, L = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], M = e => {
+}, w = e => e.type === d.n0.GUILD, x = e => e.type === d.n0.STANDARD, L = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], M = e => {
   if (null === e) returnfalse;
   let t = e.guild_id;
   return true !== a.Z.getGuild(t)

@@ -33,13 +33,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk119835 = require("./119835.js"),
   Chunk951948 = require("./951948.js");
 
-function w(e, t) {
+function D(e, t) {
   return N.intl.formatToPlainString(N.t.h2yWWX, {
     username: t.username,
     activity: e
   })
 }
-let D = (e, t, n) => {
+let w = (e, t, n) => {
   let {
     artist: r,
     media: i
@@ -56,7 +56,7 @@ function x(e) {
     activity: t
   } = e, n = t.timestamps, {
     now: a
-  } = (0, S.tS)(), {
+  } = (0, T.tS)(), {
     durationTimestamp: o,
     seekBarStyles: s
   } = i.useMemo(() => {
@@ -80,7 +80,7 @@ function x(e) {
   }, [t, a]);
   return null == s ? null : (0, r.jsxs)("div", {
     className: R.listeningTimeline,
-    children: [(0, r.jsx)(S.x3, {
+    children: [(0, r.jsx)(T.x3, {
       entry: n
     }), (0, r.jsx)("div", {
       className: R.seekBarContainer,
@@ -100,7 +100,7 @@ function x(e) {
 
 function L(e) {
   var t;
-  let n, m, S, {
+  let n, m, T, {
       channel: R,
       entry: L,
       closePopout: M,
@@ -137,7 +137,7 @@ function L(e) {
         channel: R,
         mediaImageSrc: null == U ? true : U.src,
         artist: Z,
-        description: D({
+        description: w({
           artist: Z,
           media: F
         }, R, V),
@@ -153,7 +153,7 @@ function L(e) {
   if (B.media.provider === a.p.SPOTIFY) {
     m = () => {
       (0, c.aG)(G)
-    }, S = () => {
+    }, T = () => {
       (0, c.Z5)(G, V.id)
     }, n = () => {
       var e;
@@ -182,10 +182,10 @@ function L(e) {
     }
   }
   let Q = (0, r.jsx)(I.wG, {
-    onClickThumbnail: S,
+    onClickThumbnail: T,
     channel: R,
     entry: L,
-    headerIcons: B.media.provider === a.p.SPOTIFY ? (0, r.jsx)(T.Z, {
+    headerIcons: B.media.provider === a.p.SPOTIFY ? (0, r.jsx)(S.Z, {
       onClick: n,
       "aria-label": N.intl.string(N.t.rRffNz),
       Icon: h.Z
@@ -207,7 +207,7 @@ function L(e) {
         user: V,
         channel: R,
         generateReactionImage: z,
-        reactionImageAltText: w(Z, V),
+        reactionImageAltText: D(Z, V),
         entry: L,
         buttons: X
       })

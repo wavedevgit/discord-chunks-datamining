@@ -35,9 +35,9 @@ function O() {
       autoThreshold: Chunk131951.Z.getModeOptions().autoThreshold
     })),
     I = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode()),
-    S = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isEnabled());
+    T = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isEnabled());
 
-  function T(e, t) {
+  function S(e, t) {
     n(e), _((t & h.Dg.VOICE) === h.Dg.VOICE)
   }
 
@@ -50,9 +50,9 @@ function O() {
   return Chunk647438.useEffect(() => {
     let e = new Chunk846519.V7;
     return module.start(1e3, () => {
-      Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceActivity, T), module.stop()
+      Chunk131951.Z.getMediaEngine().on(Chunk46973.aB.VoiceActivity, S), module.stop()
     }), () => {
-      Chunk131951.Z.getMediaEngine().removeListener(Chunk46973.aB.VoiceActivity, T), module.stop()
+      Chunk131951.Z.getMediaEngine().removeListener(Chunk46973.aB.VoiceActivity, S), module.stop()
     }
   }, []), e = v ? (0, Chunk951288.jsxs)("section", {
     className: Chunk192294.inputSensitivityToggle,
@@ -94,7 +94,7 @@ function O() {
       })
     })
   }), (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [module, !S && (0, Chunk951288.jsx)(Chunk481060.Wn, {
+    children: [module, !T && (0, Chunk951288.jsx)(Chunk481060.Wn, {
       messageType: Chunk481060.QYI.WARNING,
       className: Chunk197571.marginBottom8,
       children: Chunk388032.intl.format(Chunk388032.t["O13I+O"], {

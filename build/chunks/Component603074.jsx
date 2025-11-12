@@ -31,8 +31,8 @@ function p(e) {
     inExpressionPicker: O,
     soundButtonOverlay: v,
     listPadding: I,
-    renderHeader: S,
-    defaultSoundsOnly: T
+    renderHeader: T,
+    defaultSoundsOnly: S
   } = e, {
     fetching: A,
     maybeFetchData: C
@@ -62,8 +62,8 @@ function p(e) {
         gridNotice: y,
         soundButtonOverlay: v,
         listPadding: I,
-        renderHeader: S,
-        defaultSoundsOnly: T,
+        renderHeader: T,
+        defaultSoundsOnly: S,
         inExpressionPicker: O,
         analyticsSource: m
       })

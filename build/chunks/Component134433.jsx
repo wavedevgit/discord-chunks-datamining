@@ -26,10 +26,10 @@ function m(e) {
     forcedIconColor: i,
     className: l,
     iconClassName: m
-  } = e, [g, E] = (0, s.Wu)([u.Z], () => [u.Z.desaturateUserColors, u.Z.saturation]), b = (0, c.dQu)(_).hex(), y = null != t ? t : b, O = (0, o.ho)((0, o._i)(y), false, g ? E : null), v = (0, c.dQu)(p).hex(), I = (0, c.dQu)(h).hex(), S = null != i ? i : (0, d.B)({
+  } = e, [g, E] = (0, s.Wu)([u.Z], () => [u.Z.desaturateUserColors, u.Z.saturation]), b = (0, c.dQu)(_).hex(), y = null != t ? t : b, O = (0, o.ho)((0, o._i)(y), false, g ? E : null), v = (0, c.dQu)(p).hex(), I = (0, c.dQu)(h).hex(), T = null != i ? i : (0, d.B)({
     backgroundColor: y,
     colors: [v, I]
-  }), T = n / 8;
+  }), S = n / 8;
   return (0, r.jsx)("div", {
     style: {
       background: O,
@@ -41,12 +41,12 @@ function m(e) {
     className: l,
     children: (0, r.jsx)(c.xPt, {
       size: "custom",
-      color: S,
+      color: T,
       className: a()(f.linkIcon, m),
-      width: n - 2 * T,
-      height: n - 2 * T,
+      width: n - 2 * S,
+      height: n - 2 * S,
       style: {
-        margin: T
+        margin: S
       }
     })
   })

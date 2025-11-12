@@ -147,14 +147,14 @@ class I extends(r = Chunk647438.PureComponent) {
       className: O,
       children: v,
       barStyles: I,
-      fillStyles: T,
+      fillStyles: S,
       mini: A,
       hideBubble: C,
       defaultValue: N,
       orientation: R,
       onValueRender: P,
-      renderMarker: w,
-      getAriaValueText: D,
+      renderMarker: D,
+      getAriaValueText: w,
       barClassName: x,
       grabberClassName: L,
       grabberStyles: M = {},
@@ -181,7 +181,7 @@ class I extends(r = Chunk647438.PureComponent) {
           style: {
             left: "".concat(e, "%")
           },
-          children: null != w ? w(n) : (0, i.jsxs)(i.Fragment, {
+          children: null != D ? D(n) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
               className: h.markValue,
               children: o
@@ -192,9 +192,9 @@ class I extends(r = Chunk647438.PureComponent) {
         }, t)
       }) : null,
       Y = null != P ? P(exports) : "".concat(F.toFixed(0), "%"),
-      W = null != (e = null == D ? true : D(exports)) ? module : true;
+      W = null != (e = null == w ? true : w(exports)) ? module : true;
     return (0, Chunk951288.jsx)(Chunk793030.gNt, b(g({}, Z), {
-      children: e => (0, i.jsx)(S, {
+      children: e => (0, i.jsx)(T, {
         active: n,
         keyboardFocused: r && p.Z.keyboardModeEnabled,
         children: a => {
@@ -243,7 +243,7 @@ class I extends(r = Chunk647438.PureComponent) {
                 style: I,
                 children: (0, i.jsx)("div", {
                   className: h.barFill,
-                  style: b(g({}, T), {
+                  style: b(g({}, S), {
                     width: V
                   })
                 })
@@ -466,7 +466,7 @@ class I extends(r = Chunk647438.PureComponent) {
   }
 }
 
-function S(e) {
+function T(e) {
   let {
     active: t,
     keyboardFocused: n,

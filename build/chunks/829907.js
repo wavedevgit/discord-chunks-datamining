@@ -9,10 +9,10 @@ require.d(exports, {
   PD: () => R,
   P_: () => E,
   aW: () => _,
-  hj: () => S,
+  hj: () => T,
   hs: () => h,
   qT: () => P,
-  qc: () => T,
+  qc: () => S,
   sS: () => g
 }), require("./388685.js");
 var Chunk593472 = require("./593472.js"),
@@ -96,7 +96,7 @@ let y = {
   O = new Set(["762434991303950386", "1402418239342120960", "1124351860376096858"]),
   v = 16,
   I = true;
-async function S(e) {
+async function T(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : v,
     r = await m(e, n),
@@ -108,7 +108,7 @@ async function S(e) {
   return null != l ? l(e, i, r) : r
 }
 
-function T(e) {
+function S(e) {
   var t;
   let n = null == (t = o.Z.getGameByName(e.name)) ? true : t.id;
   return null != n && O.has(n)
@@ -116,7 +116,7 @@ function T(e) {
 
 function A(e) {
   let t = a.ZP.getGameOrTransformedSubgameForPID(e);
-  return null != t && null != t.name && T(t)
+  return null != t && null != t.name && S(t)
 }
 let C = new Set([Chunk593472.Jx.UNKNOWN, Chunk593472.Jx.FULLSCREEN]);
 

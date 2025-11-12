@@ -30,14 +30,14 @@ let I = e => {
     selectedGuild: n,
     locationSection: a,
     intent: I,
-    transitionState: S,
-    onClose: T
+    transitionState: T,
+    onClose: S
   } = e, A = (0, h.vx)(_.Z.boostSlots);
   o()(null != t || null != n, "Must either provide slots or an initial selected guild"), o()(!(null == t ? true : t.some(e => e.isOnCooldown())), "If slots are provided, they must not be on cooldown");
   let C = [null == t ? "UNUSED_QUANTITY_SELECT" : null, null == n ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
     [N, R] = (0, l.Wu)([d.Z], () => [d.Z.isModifyingAppliedBoost, d.Z.applyBoostError]),
-    [P, w] = i.useState(C[0]),
-    [D, x] = i.useState(false),
+    [P, D] = i.useState(C[0]),
+    [w, x] = i.useState(false),
     [L, M] = i.useState(n),
     [j, k] = i.useState(null != t ? t : A.slice(0, 1)),
     U = i.useMemo(() => null == j ? [] : j.map(e => {
@@ -50,13 +50,13 @@ let I = e => {
       var e;
       return (null == j || null == (e = j[0]) ? true : e.premiumGuildSubscription) != null
     }, [j]),
-    B = () => (T("SUCCESS" === P), p.default.track(y.rMx.MODAL_DISMISSED, {
+    B = () => (S("SUCCESS" === P), p.default.track(y.rMx.MODAL_DISMISSED, {
       type: y.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
       location_section: a
     }), Promise.resolve()),
     Z = {
       UNUSED_QUANTITY_SELECT: () => (o()(null != t || 0 !== A.length, "Cannot provide no slots if there are no other available slots"), (0, r.jsx)(s.Modal, {
-        transitionState: S,
+        transitionState: T,
         onClose: B,
         size: "md",
         title: O.intl.string(O.t["9FFrrT"]),
@@ -67,7 +67,7 @@ let I = e => {
         }, {
           variant: "primary",
           text: O.intl.string(O.t["/uwYda"]),
-          onClick: () => w("CONFIRM")
+          onClick: () => D("CONFIRM")
         }],
         children: (0, r.jsxs)("div", {
           className: v.quantitySelectorBody,
@@ -93,9 +93,9 @@ let I = e => {
       GUILD_SELECT: () => (0, r.jsx)(g.default, {
         onClose: B,
         onSelectGuild: e => {
-          M(e), w("CONFIRM")
+          M(e), D("CONFIRM")
         },
-        transitionState: S,
+        transitionState: T,
         isTransfer: G,
         selectedSlotGuilds: U
       }),
@@ -104,7 +104,7 @@ let I = e => {
         let e = j.filter(e => (0, h.tl)(e)).length,
           t = j.length,
           n = U.length,
-          i = "CONFIRM" === C[0] ? B : () => w(C[C.indexOf(P) - 1]),
+          i = "CONFIRM" === C[0] ? B : () => D(C[C.indexOf(P) - 1]),
           a = async () => {
             if (x(false), null != L && (null == j ? true : j.length) !== 0) {
               o()(!j.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
@@ -119,14 +119,14 @@ let I = e => {
                     id: t
                   } = e;
                   return t
-                }), I === E.P.PERK), w("SUCCESS")
+                }), I === E.P.PERK), D("SUCCESS")
               } catch (e) {
                 x(true)
               }
             }
           }, l = G ? O.intl.string(O.t["PR0n//"]) : O.intl.string(O.t["7KP/fI"]);
         return (0, r.jsx)(s.Modal, {
-          transitionState: S,
+          transitionState: T,
           onClose: B,
           size: "md",
           title: l,
@@ -153,7 +153,7 @@ let I = e => {
               guildCount: n
             }),
             imageClass: v.transferConfirmImage,
-            error: D ? R : null,
+            error: w ? R : null,
             slotCount: t,
             canceledCount: e
           }) : (0, r.jsx)(m.Z.ApplyBody, {
@@ -164,7 +164,7 @@ let I = e => {
               slotCount: t
             }),
             imageClass: v.confirmImage,
-            error: D ? R : null,
+            error: w ? R : null,
             slotCount: t,
             canceledCount: e
           })
@@ -173,7 +173,7 @@ let I = e => {
       SUCCESS() {
         let e = G ? O.intl.string(O.t["PR0n//"]) : O.intl.string(O.t["7KP/fI"]);
         return (0, r.jsx)(s.Modal, {
-          transitionState: S,
+          transitionState: T,
           onClose: B,
           size: "md",
           title: e,

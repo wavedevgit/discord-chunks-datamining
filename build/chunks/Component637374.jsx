@@ -343,7 +343,7 @@ class z extends Chunk647438.Component {
         }
       })
     }), F(this, "handleVerificationClick", e => {
-      e.stopPropagation(), e.preventDefault(), (0, T.openUserSettings)(S.n.ACCOUNT_PANEL, {
+      e.stopPropagation(), e.preventDefault(), (0, S.openUserSettings)(T.n.ACCOUNT_PANEL, {
         section: U.oAB.ACCOUNT
       })
     }), F(this, "handleAccept", e => {
@@ -354,7 +354,7 @@ class z extends Chunk647438.Component {
         type: i,
         giftInfo: a
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), D.default.track(U.rMx.OPEN_MODAL, {
+      e.preventDefault(), e.stopPropagation(), w.default.track(U.rMx.OPEN_MODAL, {
         type: "gift_accept",
         location: Y(V({}, this.analyticsLocation), {
           object: U.qAy.BUTTON_CTA
@@ -378,7 +378,7 @@ class z extends Chunk647438.Component {
         applicationId: r.id,
         guildId: r.guildId,
         isStorefront: false
-      })) : null != t && t.isSubscription && (e.preventDefault(), (0, T.openUserSettings)(S.n.NITRO_PANEL, {
+      })) : null != t && t.isSubscription && (e.preventDefault(), (0, S.openUserSettings)(T.n.NITRO_PANEL, {
         section: U.oAB.PREMIUM
       }))
     }), F(this, "handleClaimPromotion", e => {
@@ -404,7 +404,7 @@ class z extends Chunk647438.Component {
         });
       return (0, r.jsxs)("div", {
         className: i,
-        children: [n && (0, r.jsx)(w.Z, {
+        children: [n && (0, r.jsx)(D.Z, {
           className: Z.headerIcon
         }), null != e.giftStyle && (0, r.jsx)(y.Z, {
           defaultAnimationState: e.redeemed ? E.SR.LOOP : E.SR.IDLE,

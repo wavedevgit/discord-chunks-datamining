@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Tk: () => P,
-  ZP: () => w,
+  ZP: () => D,
   ef: () => A,
   r8: () => R
 }), require("./388685.js"), require("./314940.js");
@@ -29,7 +29,7 @@ var Chunk278074 = require("./278074.js"),
   Chunk562293 = require("./562293.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let T = {
+let S = {
   channelId: Chunk981631.lds,
   selectedAnswerIds: new Set,
   submitting: false,
@@ -112,26 +112,26 @@ function P(e, t) {
       submitting: E,
       editing: b,
       showResults: y
-    } = null != (i = null != t ? t : (0, g.fU)(e.getChannelId(), e.id)) ? i : T,
+    } = null != (i = null != t ? t : (0, g.fU)(e.getChannelId(), e.id)) ? i : S,
     O = e.reactions,
-    S = true;
+    T = true;
   if (!R(e)) {
     let t = f.Z.getMessage(e.channel_id, e.id);
-    S = !e.isSearchHit && null != t, O = null != (a = null == t ? true : t.reactions) ? a : O
+    T = !e.isSearchHit && null != t, O = null != (a = null == t ? true : t.reactions) ? a : O
   }
   let A = m.size > 0,
     C = O.some(e => true === e.me_vote),
     N = !b && C,
     P = N || h || y,
-    w = _ && S && (!C || b || P),
-    D = null == (r = u.Z.getChannel(e.getChannelId())) || null == (n = r.getGuildId) ? true : n.call(r),
-    x = null != D ? d.ZP.getSelfMember(D) : null,
+    D = _ && T && (!C || b || P),
+    w = null == (r = u.Z.getChannel(e.getChannelId())) || null == (n = r.getGuildId) ? true : n.call(r),
+    x = null != w ? d.ZP.getSelfMember(w) : null,
     L = (0, l.EY)(x),
     M = (0, c.b)(x),
     j = !E && A && !N && _ && !L && !M;
   return {
     poll: s,
-    canTapAnswers: w,
+    canTapAnswers: D,
     canRemoveVote: N && _ && !h,
     canShowVoteCounts: P,
     canSubmitVote: j,
@@ -141,7 +141,7 @@ function P(e, t) {
     hasVoteRecorded: C,
     isEditingVote: b,
     isExpired: h,
-    isInteractive: S,
+    isInteractive: T,
     isSent: _,
     reactions: O,
     selectedAnswerIds: m,
@@ -151,7 +151,7 @@ function P(e, t) {
   }
 }
 
-function w(e, t) {
+function D(e, t) {
   var n, o;
   let {
     animateEmoji: s = false,
@@ -168,16 +168,16 @@ function w(e, t) {
     g = (0, y.E)(f, h),
     v = d.answers,
     I = d.layout_type,
-    T = P(e, t, {
+    S = P(e, t, {
       formattedExpirationLabel: c
     });
-  if (null == T) return;
+  if (null == S) return;
   let {
     canTapAnswers: R,
-    canRemoveVote: w,
-    canShowVoteCounts: D,
+    canRemoveVote: D,
+    canShowVoteCounts: w,
     canSubmitVote: x,
-    expirationLabel: L = S.intl.string(S.t["e+J3JZ"]),
+    expirationLabel: L = T.intl.string(T.t["e+J3JZ"]),
     hasSelectedAnswer: M,
     hasVoted: j,
     isEditingVote: k,
@@ -188,7 +188,7 @@ function w(e, t) {
     submitting: F,
     tapShouldOpenVotersModal: V,
     showResults: H
-  } = T, Y = (0, E.cZ)(B), W = S.intl.formatToPlainString(S.t.XRkuof, {
+  } = S, Y = (0, E.cZ)(B), W = T.intl.formatToPlainString(T.t.XRkuof, {
     count: Y
   }), K = Math.max(...v.map(e => {
     var t, n;
@@ -227,7 +227,7 @@ function w(e, t) {
       style: h,
       shouldAnimateTransition: F && !p,
       votesPercentage: Math.round(100 * u),
-      votes: (0, r.EQ)(I).with(i.C.IMAGE_ONLY_ANSWERS, () => "(".concat(c.toLocaleString(), ")")).otherwise(() => S.intl.formatToPlainString(S.t.XRkuof, {
+      votes: (0, r.EQ)(I).with(i.C.IMAGE_ONLY_ANSWERS, () => "(".concat(c.toLocaleString(), ")")).otherwise(() => T.intl.formatToPlainString(T.t.XRkuof, {
         count: c
       }))
     }
@@ -236,7 +236,7 @@ function w(e, t) {
     canSubmitVote: x,
     hasVoted: j,
     isEditingVote: k,
-    canRemoveVote: w,
+    canRemoveVote: D,
     isInteractive: G,
     showResults: H
   }).with({
@@ -246,14 +246,14 @@ function w(e, t) {
   }, () => true).with({
     isEditingVote: true
   }, () => ({
-    label: S.intl.string(S.t.JwkNU4),
+    label: T.intl.string(T.t.JwkNU4),
     presentation: "button",
     enabled: M,
     type: "submit"
   })).with({
     canRemoveVote: true
   }, () => ({
-    label: S.intl.string(S.t.XhQEh8),
+    label: T.intl.string(T.t.XhQEh8),
     presentation: "secondaryButton",
     enabled: true,
     type: "remove"
@@ -261,16 +261,16 @@ function w(e, t) {
     hasVoted: false,
     showResults: true
   }, () => ({
-    label: S.intl.string(S.t.gNj6In),
+    label: T.intl.string(T.t.gNj6In),
     presentation: "secondaryButton",
     enabled: true,
     type: "showVotes"
   })).otherwise(() => ({
-    label: S.intl.string(S.t.JwkNU4),
+    label: T.intl.string(T.t.JwkNU4),
     presentation: "button",
     enabled: x,
     type: "submit"
-  })), X = (0, m.isIOS)() ? S.intl.string(S.t["PVATM/"]) : S.intl.string(S.t.cHfFql), Q = (0, r.EQ)({
+  })), X = (0, m.isIOS)() ? T.intl.string(T.t["PVATM/"]) : T.intl.string(T.t.cHfFql), Q = (0, r.EQ)({
     isExpired: U,
     isInteractive: G,
     isEditingVote: k
@@ -278,13 +278,13 @@ function w(e, t) {
     isInteractive: false,
     isExpired: false
   }, () => ({
-    label: S.intl.string(S.t.trrip0),
+    label: T.intl.string(T.t.trrip0),
     presentation: "text",
     enabled: false
   })).with({
     isEditingVote: true
   }, () => ({
-    label: S.intl.string(S.t["ETE/oC"]),
+    label: T.intl.string(T.t["ETE/oC"]),
     presentation: "textButton",
     enabled: true,
     type: "cancel"
@@ -296,7 +296,7 @@ function w(e, t) {
     enabled: true,
     type: "showVoterDetails"
   })), J = !G || U || j || H ? true : {
-    label: S.intl.string(S.t["/KHAUF"]),
+    label: T.intl.string(T.t["/KHAUF"]),
     presentation: "textButton",
     enabled: true,
     type: "showVotes"
@@ -310,7 +310,7 @@ function w(e, t) {
     isExpired: true
   }, () => true).with({
     canSelectMultipleAnswers: true
-  }, () => S.intl.string(S.t.yCXvxa)).otherwise(() => S.intl.string(S.t["9Y2wKO"]));
+  }, () => T.intl.string(T.t.yCXvxa)).otherwise(() => T.intl.string(T.t["9Y2wKO"]));
   return {
     question: d.question,
     promptLabel: ee,
@@ -340,7 +340,7 @@ function w(e, t) {
     canTapAnswers: R,
     canSelectMultipleAnswers: $,
     hasSelectedAnswer: M,
-    canShowVoteCounts: D,
+    canShowVoteCounts: w,
     hasVoted: j,
     isExpired: U,
     myAvatarUrl: g,

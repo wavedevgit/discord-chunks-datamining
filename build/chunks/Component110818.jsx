@@ -192,7 +192,7 @@ let I = {
     END: 375
   }
 };
-class S extends Chunk647438.PureComponent {
+class T extends Chunk647438.PureComponent {
   getStyle(e) {
     let {
       animation: t
@@ -227,7 +227,7 @@ class S extends Chunk647438.PureComponent {
     })
   }
 }
-let T = Object.freeze({
+let S = Object.freeze({
     IDLE_ENTRY: {
       toValue: 1,
       duration: 1500
@@ -289,23 +289,23 @@ class C extends(a = Chunk647438.PureComponent) {
     })]).start()
   }
   animateIdleEntry() {
-    this.animateEntry(T.IDLE_ENTRY)
+    this.animateEntry(S.IDLE_ENTRY)
   }
   animateError() {
-    this.animateEntry(T.ERROR)
+    this.animateEntry(S.ERROR)
   }
   animateIdleLoop() {
     this.animateIdleLoopBackground(), this.animateIdleLoopForeground()
   }
   animateBoostStart() {
     Chunk748780.Z.parallel([Chunk748780.Z.timing(this.foregroundAnimation.y, {
-      toValue: T.BOOST_START.toValue,
-      duration: T.BOOST_START.duration,
-      delay: T.BOOST_START.delay
+      toValue: S.BOOST_START.toValue,
+      duration: S.BOOST_START.duration,
+      delay: S.BOOST_START.delay
     }), Chunk748780.Z.timing(this.backgroundAnimation.y, {
-      toValue: T.BOOST_START.toValue,
-      duration: T.BOOST_START.duration * A,
-      delay: T.BOOST_START.delay
+      toValue: S.BOOST_START.toValue,
+      duration: S.BOOST_START.duration * A,
+      delay: S.BOOST_START.delay
     })]).start()
   }
   render() {
@@ -325,10 +325,10 @@ class C extends(a = Chunk647438.PureComponent) {
           className: Chunk298185.tier2Foreground
         })]
       }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(S, {
+        children: [(0, Chunk951288.jsx)(T, {
           className: Chunk298185.tier2Background,
           animation: this.backgroundAnimation
-        }), (0, Chunk951288.jsx)(S, {
+        }), (0, Chunk951288.jsx)(T, {
           className: Chunk298185.tier2Foreground,
           animation: this.foregroundAnimation
         })]
@@ -353,15 +353,15 @@ class C extends(a = Chunk647438.PureComponent) {
       y: 0
     })), h(this, "didUnmount", false), h(this, "animateIdleLoopBackground", () => {
       this.didUnmount || (this.backgroundAnimation.x.setValue(0), f.Z.timing(this.backgroundAnimation.x, {
-        toValue: T.IDLE_LOOP.toValue,
-        duration: T.IDLE_LOOP.duration * A,
+        toValue: S.IDLE_LOOP.toValue,
+        duration: S.IDLE_LOOP.duration * A,
         easing: f.Z.Easing.linear
       }).start(this.animateIdleLoopBackground))
     }), h(this, "animateIdleLoopForeground", () => {
       this.didUnmount || (this.foregroundAnimation.x.setValue(0), f.Z.timing(this.foregroundAnimation.x, {
-        toValue: T.IDLE_LOOP.toValue,
-        duration: T.IDLE_LOOP.duration,
-        easing: T.IDLE_LOOP.easing
+        toValue: S.IDLE_LOOP.toValue,
+        duration: S.IDLE_LOOP.duration,
+        easing: S.IDLE_LOOP.easing
       }).start(this.animateIdleLoopForeground))
     }), h(this, "handleScenePlay", e => {
       switch (e) {
@@ -413,7 +413,7 @@ let R = {
     WHITE: "#ebf0f7",
     PINK: "#fa6ef6"
   }),
-  w = [{
+  D = [{
     left: 29,
     top: 100,
     color: P.WHITE
@@ -438,7 +438,7 @@ let R = {
     top: 97,
     color: P.PINK
   }],
-  D = Object.freeze({
+  w = Object.freeze({
     SCALE_INITIAL: 0,
     SCALE_MIDDLE: 1,
     SCALE_END: 0,
@@ -459,13 +459,13 @@ let R = {
 function x(e) {
   let {
     animate: t
-  } = e, [n, r] = l.useState(0), i = (0, _.bYB)(w.length, w.map((e, i) => {
-    let a = i > 0 ? D.DELAY_STAGGER * i + Math.random() * (D.DELAY_MAX - D.DELAY_MIN) + D.DELAY_MIN : 0,
-      o = Math.random() * (D.SIZE_MAX - D.SIZE_MIN) + D.SIZE_MIN;
+  } = e, [n, r] = l.useState(0), i = (0, _.bYB)(D.length, D.map((e, i) => {
+    let a = i > 0 ? w.DELAY_STAGGER * i + Math.random() * (w.DELAY_MAX - w.DELAY_MIN) + w.DELAY_MIN : 0,
+      o = Math.random() * (w.SIZE_MAX - w.SIZE_MIN) + w.SIZE_MIN;
     return {
       from: {
-        scale: D.SCALE_INITIAL,
-        rotate: D.ROTATE_INITIAL,
+        scale: w.SCALE_INITIAL,
+        rotate: w.ROTATE_INITIAL,
         top: e.top,
         left: e.left,
         width: o,
@@ -473,34 +473,34 @@ function x(e) {
       },
       to: async e => {
         t ? (await e({
-          scale: D.SCALE_MIDDLE,
-          rotate: D.ROTATE_MIDDLE,
+          scale: w.SCALE_MIDDLE,
+          rotate: w.ROTATE_MIDDLE,
           delay: a,
           config: {
-            duration: D.DURATION_MIDDLE,
-            easing: D.EASING_MIDDLE
+            duration: w.DURATION_MIDDLE,
+            easing: w.EASING_MIDDLE
           }
         }), await e({
-          scale: D.SCALE_END,
-          rotate: D.ROTATE_END,
+          scale: w.SCALE_END,
+          rotate: w.ROTATE_END,
           config: {
-            duration: D.DURATION_END,
-            easing: D.EASING_END
+            duration: w.DURATION_END,
+            easing: w.EASING_END
           }
         }), await e({
-          scale: D.SCALE_INITIAL,
-          rotate: D.ROTATE_INITIAL,
+          scale: w.SCALE_INITIAL,
+          rotate: w.ROTATE_INITIAL,
           immediate: true
-        }), i === w.length - 1 && r(n + 1)) : await e({
-          scale: D.SCALE_INITIAL,
-          rotate: D.ROTATE_INITIAL
+        }), i === D.length - 1 && r(n + 1)) : await e({
+          scale: w.SCALE_INITIAL,
+          rotate: w.ROTATE_INITIAL
         })
       }
     }
   }));
   return (0, s.jsx)(s.Fragment, {
     children: i.map((e, t) => {
-      let n = w[t];
+      let n = D[t];
       return (0, s.jsx)(d.animated.svg, {
         style: e,
         className: p.guildStar,

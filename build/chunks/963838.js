@@ -53,7 +53,7 @@ let L = {
   U = i().memoize(e => new Promise(t => {
     let n = new Image;
     n.src = e, n.crossOrigin = "Anonymous", n.onload = () => {
-      let r = D.v * (0, N.x_)();
+      let r = w.v * (0, N.x_)();
       if (n.width === r && n.height === r) t(e);
       else {
         var i;
@@ -64,7 +64,7 @@ let L = {
   })),
   G = (e, t) => {
     let n = k[e];
-    if (null != t && e === D.q.PREMIUM) {
+    if (null != t && e === w.q.PREMIUM) {
       let e = t.end + 1;
       return Math.floor(Math.random() * (t.start - e) + e)
     }
@@ -72,7 +72,7 @@ let L = {
   };
 
 function B(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : D.v;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : w.v;
   if (null != e.id) {
     var n;
     return P.ZP.getEmojiURL({
@@ -83,7 +83,7 @@ function B(e) {
   }
   let r = C.ZP.convertSurrogateToName(e.name, false),
     i = C.ZP.getByName(r);
-  return null != i ? w.ZP.getURL(i.surrogates) : ""
+  return null != i ? D.ZP.getURL(i.surrogates) : ""
 }
 
 function Z(e, t) {

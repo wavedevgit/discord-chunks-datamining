@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   LU: () => E,
-  ZP: () => S
+  ZP: () => T
 }), require("./388685.js"), require("./35282.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -127,7 +127,7 @@ class I extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 f(I, "displayName", "ApplicationCommandFrecencyStore"), f(I, "persistKey", "ApplicationCommandFrecencyV2");
-let S = new I(Chunk570140.Z, {
+let T = new I(Chunk570140.Z, {
   APPLICATION_COMMAND_USED: O,
   USER_SETTINGS_PROTO_UPDATE: y
 })

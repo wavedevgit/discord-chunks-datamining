@@ -162,13 +162,13 @@ function z(e) {
     disabled: n = false
   } = e, {
     analyticsLocations: a
-  } = (0, h.ZP)(), s = (0, l.e7)([T.Z], () => T.Z.isFavoriteSound(t.soundId), [t.soundId]), c = i.useCallback(e => {
-    e.stopPropagation(), e.currentTarget.blur(), s ? (0, S.hs)(t.soundId) : ((0, C.lF)({
+  } = (0, h.ZP)(), s = (0, l.e7)([S.Z], () => S.Z.isFavoriteSound(t.soundId), [t.soundId]), c = i.useCallback(e => {
+    e.stopPropagation(), e.currentTarget.blur(), s ? (0, T.hs)(t.soundId) : ((0, C.lF)({
       sound: t,
       location: U(j({}, a), {
         object: P.qAy.SOUNDBOARD_SOUND
       })
-    }), (0, S.TB)(t.soundId))
+    }), (0, T.TB)(t.soundId))
   }, [s, t, a]);
   return (0, r.jsx)(W, {
     disabled: n,
@@ -204,8 +204,8 @@ function q(e, t) {
 }
 let X = Chunk647438.forwardRef(function(e, t) {
   var n, a, u, h, O, I, {
-      sound: S,
-      channel: T,
+      sound: T,
+      channel: S,
       containerClassName: P,
       className: M,
       focused: k,
@@ -230,13 +230,13 @@ let X = Chunk647438.forwardRef(function(e, t) {
     name: eu,
     emojiId: ed,
     emojiName: ef
-  } = S, e_ = (0, l.e7)([v.default], () => v.default.getCurrentUser()), ep = (0, R.z)(S, null == T ? true : T.guild_id), {
+  } = T, e_ = (0, l.e7)([v.default], () => v.default.getCurrentUser()), ep = (0, R.z)(T, null == S ? true : S.guild_id), {
     playSoundboardSound: eh,
     previewSound: em,
     isPlayingSound: eg
-  } = (0, N.Z)(S, null != (u = null == T ? true : T.id) ? u : null, null != (h = eo ? y.AY.getSetting() : null == (n = y.kU.getSetting()) ? true : n.volume) ? h : 100, !eo && (null == T ? true : T.isVocal()) ? D.w.VOICE : D.w.DEFAULT), {
+  } = (0, N.Z)(T, null != (u = null == S ? true : S.id) ? u : null, null != (h = eo ? y.AY.getSetting() : null == (n = y.kU.getSetting()) ? true : n.volume) ? h : 100, !eo && (null == S ? true : S.isVocal()) ? w.w.VOICE : w.w.DEFAULT), {
     createMultipleConfettiAt: eE
-  } = i.useContext(m.h), eb = i.useRef(null), ey = q(S.soundId, eb.current), eO = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), ev = i.useRef(F), eI = i.useRef(new c.Xp), eS = S.soundId === Z, eT = "sound-".concat(S.soundId), eA = (0, s.JA)(eT), eC = null != ed || null != ef, eN = !(0, C.Nq)(e_, S, T) && !eo, eR = B || X && !eN, eP = null != (O = g.Wq.useStore().bottomPosition) ? O : 0, ew = (null != (I = null == (a = eb.current) ? true : a.getBoundingClientRect().bottom) ? I : 0) + 50 > eP ? "top" : "bottom", [eD, ex] = i.useState(false), eL = i.useCallback(() => {
+  } = i.useContext(m.h), eb = i.useRef(null), ey = q(T.soundId, eb.current), eO = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), ev = i.useRef(F), eI = i.useRef(new c.Xp), eT = T.soundId === Z, eS = "sound-".concat(T.soundId), eA = (0, s.JA)(eS), eC = null != ed || null != ef, eN = !(0, C.Nq)(e_, T, S) && !eo, eR = B || X && !eN, eP = null != (O = g.Wq.useStore().bottomPosition) ? O : 0, eD = (null != (I = null == (a = eb.current) ? true : a.getBoundingClientRect().bottom) ? I : 0) + 50 > eP ? "top" : "bottom", [ew, ex] = i.useState(false), eL = i.useCallback(() => {
     ex(true)
   }, []), eM = i.useCallback(() => {
     ex(false)
@@ -247,8 +247,8 @@ let X = Chunk647438.forwardRef(function(e, t) {
   }
 
   function eU(e) {
-    if (eS && !eO && (ev.current = Math.min(ev.current + H, V), Math.random() < ev.current && eE(ey.x, ey.y, true, true, {
-        sprite: w.vv
+    if (eT && !eO && (ev.current = Math.min(ev.current + H, V), Math.random() < ev.current && eE(ey.x, ey.y, true, true, {
+        sprite: D.vv
       })), null != $) return void $(e);
     ek()
   }
@@ -256,7 +256,7 @@ let X = Chunk647438.forwardRef(function(e, t) {
       onMouseEnter: eL,
       onMouseLeave: eM,
       children: K({
-        sound: S,
+        sound: T,
         previewSound: em,
         disabled: eN && !B
       })
@@ -276,7 +276,7 @@ let X = Chunk647438.forwardRef(function(e, t) {
       onMouseEnter: eL,
       onMouseLeave: eM,
       children: (0, r.jsx)(z, {
-        sound: S,
+        sound: T,
         disabled: !W && !B
       })
     }),
@@ -299,8 +299,8 @@ let X = Chunk647438.forwardRef(function(e, t) {
       }), (0, r.jsx)("div", {
         className: L.buttonOverlayActions,
         children: et === A.Pb.SOUNDMOJI ? (0, r.jsx)(E.ZP, {
-          sound: S,
-          channel: T,
+          sound: T,
+          channel: S,
           setTooltipShowing: ex
         }) : (0, r.jsxs)(r.Fragment, {
           children: [eR && eG, eB(), eR && eZ]
@@ -341,29 +341,29 @@ let X = Chunk647438.forwardRef(function(e, t) {
   }
   i.useEffect(() => {
     let e = eI.current;
-    return eS && e.start(Y, () => {
+    return eT && e.start(Y, () => {
       ev.current = Math.max(ev.current - H, F)
     }), () => e.stop()
-  }, [eS]);
+  }, [eT]);
   let eH = (0, b.a)(eb.current);
   return (0, r.jsxs)("li", {
     ref: t,
     className: o()(L.soundButtonWrapper, P),
     onMouseEnter: J,
     children: [(0, r.jsx)(d.u, {
-      "aria-label": null != el ? S.name : true,
-      __unsupportedReactNodeAsText: null != el ? el : S.name,
-      position: ew,
-      shouldShow: !eD,
+      "aria-label": null != el ? T.name : true,
+      __unsupportedReactNodeAsText: null != el ? el : T.name,
+      position: eD,
+      shouldShow: !ew,
       delay: 500,
       children: (0, r.jsxs)(f.kL8, U(j({}, ec), {
         buttonProps: U(j({}, eA), {
-          id: eT,
+          id: eS,
           role: "button"
         }),
         "aria-label": x.intl.formatToPlainString(x.t.tuMUJ2, {
-          emojiName: S.emojiName,
-          soundName: S.name
+          emojiName: T.emojiName,
+          soundName: T.name
         }),
         className: o()(L.soundButton, {
           [L.animated]: ei,
@@ -399,13 +399,13 @@ let X = Chunk647438.forwardRef(function(e, t) {
           })]
         }), eV()]
       }))
-    }), !S.available && (0, r.jsx)(d.u, {
+    }), !T.available && (0, r.jsx)(d.u, {
       text: x.intl.string(x.t.MDOXJR),
       children: (0, r.jsx)("div", {
         className: L.unavailableTooltip
       })
     }), true === eo && (0, r.jsx)(b.Z, {
-      sound: S,
+      sound: T,
       containerDimensions: eH,
       ref: es
     })]

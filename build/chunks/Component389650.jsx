@@ -330,7 +330,7 @@ class Y extends Chunk647438.PureComponent {
     let {
       enableClips: e,
       enableScreenshotKeybind: t
-    } = this.props, n = l()(this.props.keybinds).reject(e => e.managed && ![D.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, D.kg4.SAVE_CLIP, D.kg4.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === D.kg4.SAVE_CLIP || t.action === D.kg4.SAVE_SCREENSHOT)).reject(e => !t && e.action === D.kg4.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === D.kg4.SOUNDBOARD || e.action === D.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => true === e.managed ? false : 0).value(), a = V();
+    } = this.props, n = l()(this.props.keybinds).reject(e => e.managed && ![w.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, w.kg4.SAVE_CLIP, w.kg4.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === w.kg4.SAVE_CLIP || t.action === w.kg4.SAVE_SCREENSHOT)).reject(e => !t && e.action === w.kg4.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === w.kg4.SOUNDBOARD || e.action === w.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => true === e.managed ? false : 0).value(), a = V();
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk273313.Z, {
         title: Chunk388032.intl.string(Chunk388032.t.T9DA2K),

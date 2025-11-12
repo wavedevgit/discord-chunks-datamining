@@ -28,8 +28,8 @@ function d(e, t, n) {
   } = e, O = e.isDisabled || t.isDisabled, v = t.selectedValue === d, I = e => {
     e.stopPropagation(), t.setSelectedValue(d)
   }, {
-    pressProps: S,
-    isPressed: T
+    pressProps: T,
+    isPressed: S
   } = (0, l.r)({
     onPressStart: h,
     onPressEnd: m,
@@ -56,12 +56,12 @@ function d(e, t, n) {
     focusableProps: N
   } = (0, c.kc)((0, i.d)(e, {
     onFocus: () => t.setLastFocusedValue(d)
-  }), n), R = (0, i.d)(S, N), P = (0, a.z)(e, {
+  }), n), R = (0, i.d)(T, N), P = (0, a.z)(e, {
     labelable: true
-  }), w = false;
-  null != t.selectedValue ? t.selectedValue === d && (w = 0) : (t.lastFocusedValue === d || null == t.lastFocusedValue) && (w = 0), O && (w = true);
+  }), D = false;
+  null != t.selectedValue ? t.selectedValue === d && (D = 0) : (t.lastFocusedValue === d || null == t.lastFocusedValue) && (D = 0), O && (D = true);
   let {
-    name: D,
+    name: w,
     form: x,
     descriptionId: L,
     errorMessageId: M,
@@ -77,9 +77,9 @@ function d(e, t, n) {
     inputProps: (0, i.d)(P, {
       ...R,
       type: "radio",
-      name: D,
+      name: w,
       form: x,
-      tabIndex: w,
+      tabIndex: D,
       disabled: O,
       required: t.isRequired && "native" === j,
       checked: v,
@@ -89,6 +89,6 @@ function d(e, t, n) {
     }),
     isDisabled: O,
     isSelected: v,
-    isPressed: T || C
+    isPressed: S || C
   }
 }

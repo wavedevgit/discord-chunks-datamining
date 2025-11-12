@@ -38,10 +38,10 @@ let R = (e, t) => {
       offerExpiresAt: R
     } = e, {
       analyticsLocations: P
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), w = (0, p.Nx)(), D = (0, v.$)(), x = (0, h.Z)(), L = null != x, M = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), D = (0, p.Nx)(), w = (0, v.$)(), x = (0, h.Z)(), L = null != x, M = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
       visibilityPercentageRef: j,
       visibilityPercentage: k
-    } = (0, S.E)(!M), U = (0, l.e7)([_.Z], () => _.Z.affinities), G = !L && U.length > 0, B = (0, m.H)(s.I.MARKETING_PAGE_BANNER);
+    } = (0, T.E)(!M), U = (0, l.e7)([_.Z], () => _.Z.affinities), G = !L && U.length > 0, B = (0, m.H)(s.I.MARKETING_PAGE_BANNER);
     return (0, r.jsx)(f.Gt, {
       value: P,
       children: (0, r.jsx)("div", {
@@ -54,12 +54,12 @@ let R = (e, t) => {
             className: N.contentContainer,
             children: [(0, r.jsx)(A.Z, {
               containerVisibilityPercentage: k
-            }), w && (null != R ? (0, r.jsx)(y.Z, {
+            }), D && (null != R ? (0, r.jsx)(y.Z, {
               expiresAt: R,
               className: N.heroOfferCountdown
             }) : (0, r.jsx)("div", {
               className: N.offerPillContainer,
-              children: (0, r.jsx)(T.Z, {
+              children: (0, r.jsx)(S.Z, {
                 enablePremiumBrandRefresh: true
               })
             })), (0, r.jsx)("div", {
@@ -87,13 +87,13 @@ let R = (e, t) => {
                   enablePremiumBrandRefresh: true
                 })
               }), (0, r.jsxs)("div", {
-                className: w ? N.singleButtonContainer : N.twoButtonContainer,
+                className: D ? N.singleButtonContainer : N.twoButtonContainer,
                 children: [(0, r.jsx)(b.Z, {
                   size: "md",
-                  fullWidth: w,
+                  fullWidth: D,
                   hasActivePromotion: !!a,
                   subscriptionTier: i
-                }), !w && (0, r.jsx)(E.Z, {
+                }), !D && (0, r.jsx)(E.Z, {
                   variant: "secondary",
                   size: "md"
                 })]
@@ -103,7 +103,7 @@ let R = (e, t) => {
                   color: "text-tertiary",
                   variant: "text-xs/medium",
                   children: C.intl.format(C.t.kt9wxs, {
-                    cheapestMonthlyPrice: D
+                    cheapestMonthlyPrice: w
                   })
                 })
               }), null != B && "marketingPageBanner" === B.properties.properties.oneofKind && (0, r.jsx)(g.u, {

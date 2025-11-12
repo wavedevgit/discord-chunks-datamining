@@ -127,7 +127,7 @@ function I(e) {
   return v(e), null
 }
 
-function S() {
+function T() {
   let [e, t] = p(e => {
     let {
       flashQueue: t
@@ -154,7 +154,7 @@ function S() {
   }, [exports]), require ? s : module
 }
 
-function T() {
+function S() {
   Chunk647438.useEffect(() => {
     function e() {
       O()
@@ -171,8 +171,8 @@ function A() {
   let {
     skipsSettingDefaultPageTitle: e
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-  T();
-  let t = S();
+  S();
+  let t = T();
   Chunk647438.useEffect(() => {
     let n = exports === d.base;
     module && require || (document.title = exports)

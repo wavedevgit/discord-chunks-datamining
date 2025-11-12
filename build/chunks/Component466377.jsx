@@ -9,7 +9,7 @@ require.d(exports, {
   hz: () => x,
   mz: () => L,
   ol: () => M,
-  xB: () => w
+  xB: () => D
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -63,13 +63,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -113,7 +113,7 @@ function P(e) {
       animation: A = "default",
       parentComponent: C
     } = e,
-    R = T(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]);
+    R = S(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]);
   let P = n === g.Dv.ENTERING || n === g.Dv.ENTERED;
   i.useContext(h.Z)({
     type: l.ImpressionTypes.PAGE,
@@ -123,10 +123,10 @@ function P(e) {
     }
   });
   let {
-    reducedMotion: w
-  } = i.useContext(d.Sfi), D = (0, d.q_F)({
+    reducedMotion: D
+  } = i.useContext(d.Sfi), w = (0, d.q_F)({
     opacity: +!!P,
-    transform: P || w.enabled || "subtle" === A ? "scale(1)" : "scale(0.7)",
+    transform: P || D.enabled || "subtle" === A ? "scale(1)" : "scale(0.7)",
     config: {
       duration: 200,
       easing: c.Z.Easing.out(c.Z.Easing.quad),
@@ -139,7 +139,7 @@ function P(e) {
   }), [k, M]);
   return (0, r.jsx)(g.zM.Provider, {
     value: U,
-    children: (0, r.jsx)(_.V, S(v({
+    children: (0, r.jsx)(_.V, T(v({
       className: y.focusLock,
       role: f,
       returnRef: I,
@@ -152,7 +152,7 @@ function P(e) {
           [y.rootWithShadow]: !b
         }),
         ref: x,
-        style: D,
+        style: w,
         children: (0, r.jsx)(d.JcV, {
           containerRef: x,
           children: a
@@ -162,7 +162,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   var t, n, a, s, l;
   let {
     headerId: c,
@@ -183,7 +183,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   switch (null != e ? e : "thin") {
     case "auto":
       return d.yWw;
@@ -200,8 +200,8 @@ function x(e) {
     children: n,
     scrollerRef: i,
     scrollbarType: a
-  } = e, s = T(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = D(a);
-  return (0, r.jsx)(l, S(v({
+  } = e, s = S(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = w(a);
+  return (0, r.jsx)(l, T(v({
     "data-migration-pending": true,
     className: o()(y.content, t),
     ref: i
@@ -257,7 +257,7 @@ function j(e) {
   var {
     className: t,
     scrollerRef: n
-  } = e, i = T(e, ["className", "scrollerRef"]);
+  } = e, i = S(e, ["className", "scrollerRef"]);
   return (0, r.jsx)(d.Tvr, v({
     className: t,
     ref: n

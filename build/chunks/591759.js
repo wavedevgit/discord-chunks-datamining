@@ -2,7 +2,7 @@
 /** chunk id: 591759, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk628735 = require("./628735.js"),
   i = require.n(Chunk628735),
@@ -29,13 +29,13 @@ function I(e, t) {
   return null != e && null != t && e !== t
 }
 
-function S(e) {
+function T(e) {
   return v.has(e.toLowerCase())
 }
 
-function T(e) {
+function S(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return null != e && (d.test(e) || t && S(e))
+  return null != e && (d.test(e) || t && T(e))
 }
 
 function A(e) {
@@ -63,35 +63,35 @@ function P(e) {
   if (null != e) {
     var n;
     let r = null == (n = c.Z.toURLSafe(e)) ? true : n.hostname;
-    if (null != r && T(r, t)) returntrue
+    if (null != r && S(r, t)) returntrue
   }
   returnfalse
 }
 
-function w(e) {
+function D(e) {
   return null != e && A(s.parse(e).protocol)
 }
-let D = {
+let w = {
   URL_REGEX: O,
   makeUrl: function(e, t) {
     let n = (null != t ? t : (0, l.Hc)()) ? window.GLOBAL_ENV.INVITE_HOST : location.host;
     return "".concat(location.protocol, "//").concat(n).concat(e)
   },
   isOriginalContentTypeDifferent: I,
-  isDiscordHostname: T,
+  isDiscordHostname: S,
   isDiscordLocalhost: function(e, t) {
     return null != e && null != t && window.location.host === e
   },
   isDiscordProtocol: A,
   isDiscordUrl: P,
-  isDiscordUri: w,
+  isDiscordUri: D,
   isDiscordCdnUrl: function(e) {
     return null != e && s.parse(e).hostname === window.GLOBAL_ENV.CDN_HOST
   },
   isDiscordDirectAssetUrl: C,
   isDiscordProxiedAssetUrl: N,
   isDiscordAssetUrl: R,
-  isDiscordUrlOrUri: e => P(e) || w(e),
+  isDiscordUrlOrUri: e => P(e) || D(e),
   isAppRoute: e => {
     let t = e.toLowerCase();
     return t.startsWith("/channels/") || t.startsWith(u.Z5c.APPLICATION_STORE) || t.startsWith(u.Z5c.APPLICATION_LIBRARY) || t.startsWith(u.Z5c.MESSAGE_REQUESTS) || t.startsWith(u.Z5c.FAMILY_CENTER) || t.startsWith(u.Z5c.ACTIVITIES) || t.startsWith(u.Z5c.COLLECTIBLES_SHOP) || t.startsWith("/feature/boost") || t.startsWith(u.Z5c.ACTIVITY)

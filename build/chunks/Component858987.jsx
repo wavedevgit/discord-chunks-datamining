@@ -100,16 +100,16 @@ function I(e) {
     premiumSubscription: g,
     isGift: b,
     planGroup: I,
-    isPrepaid: S,
-    isTrial: T,
+    isPrepaid: T,
+    isTrial: S,
     makePurchase: A,
     needsPaymentSource: C,
     inReverseTrial: N,
     onNext: R,
     onPaymentSourceAdd: P
   } = e, {
-    application: w,
-    selectedPlan: D,
+    application: D,
+    selectedPlan: w,
     hasAcceptedTerms: x,
     purchaseType: L,
     paymentSourceId: M,
@@ -118,11 +118,11 @@ function I(e) {
     hasPaymentSources: U
   } = (0, c.JL)(), G = O({
     purchaseType: L,
-    plan: D,
+    plan: w,
     premiumSubscription: g,
     isGift: b,
     planGroup: I,
-    isPrepaidPaymentSource: S,
+    isPrepaidPaymentSource: T,
     inReverseTrial: N,
     paymentSourceId: M,
     hasPaymentSources: U
@@ -158,7 +158,7 @@ function I(e) {
       disabled: true
     }))
   });
-  if ((0, u.yE)(null != (t = null == w ? true : w.flags) ? t : 0, p.udG.EMBEDDED) && k === s.O.LOADING) return (0, r.jsx)(o.aML, {
+  if ((0, u.yE)(null != (t = null == D ? true : D.flags) ? t : 0, p.udG.EMBEDDED) && k === s.O.LOADING) return (0, r.jsx)(o.aML, {
     "data-migration-pending": true,
     text: m.intl.string(m.t.cjA5tj),
     children: e => (0, r.jsx)(o.Button, y(E({
@@ -170,7 +170,7 @@ function I(e) {
       disabled: true
     }))
   });
-  if (T) return (0, r.jsx)(o.Button, {
+  if (S) return (0, r.jsx)(o.Button, {
     variant: "expressive",
     "data-testid": x ? "purchase" : "submitButton",
     text: G,

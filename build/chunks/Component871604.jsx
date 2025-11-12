@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -71,35 +71,35 @@ function R(e) {
   var {
     user: t,
     closePopout: n
-  } = e, T = C(e, ["user", "closePopout"]);
+  } = e, S = C(e, ["user", "closePopout"]);
   let N = i.useRef(null),
     R = (0, a.e7)([y.Z], () => {
       var e;
       return null == (e = y.Z.getUserProfile(t.id)) ? true : e.application
     }),
     P = (0, a.e7)([h.Z, p.Z], () => p.Z.getChannel(h.Z.getChannelId())),
-    w = (0, s.Z)(P),
-    D = t.id,
+    D = (0, s.Z)(P),
+    w = t.id,
     x = i.useCallback(() => {
       if (null != R)
-        if (w) {
+        if (D) {
           let e = h.Z.getCurrentlySelectedChannelId(),
             t = p.Z.getChannel(e),
             r = null != _.ZP.getSidebarState(e) || (null == t ? true : t.isGuildVocal()) ? f.Ie.SIDEBAR : f.Ie.NORMAL;
           l._(c._b.TEXT, r, {
             applicationId: R.id
-          }), (0, o.Mr3)((0, O.z)(D, null == P ? true : P.guild_id)), null == n || n(), m.default.track(I.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
+          }), (0, o.Mr3)((0, O.z)(w, null == P ? true : P.guild_id)), null == n || n(), m.default.track(I.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
             application_id: R.id
           })
         } else(0, b.L)(A({
           applicationId: R.id
         }, R))
-    }, [R, w, D, null == P ? true : P.guild_id, n]),
-    L = w ? S.intl.string(S.t["Cia+A8"]) : S.intl.string(S.t.NgXl3C);
+    }, [R, D, w, null == P ? true : P.guild_id, n]),
+    L = D ? T.intl.string(T.t["Cia+A8"]) : T.intl.string(T.t.NgXl3C);
   if (null == R || !(0, d.Eb)(R)) return null;
   let {
     customInstallUrl: M
-  } = R, j = null == M || E.Z.isDiscordUrl(M) ? o.qJs : o.Gr1, k = w ? true : j;
+  } = R, j = null == M || E.Z.isDiscordUrl(M) ? o.qJs : o.Gr1, k = D ? true : j;
   return g.wS ? (0, r.jsx)(o.yRy, {
     targetElementRef: N,
     renderPopout: e => {
@@ -109,12 +109,12 @@ function R(e) {
       return (0, r.jsx)(o.v2r, {
         navId: "user-bot-profile-add-app",
         onClose: t,
-        "aria-label": S.intl.string(S.t.dbkxVm),
+        "aria-label": T.intl.string(T.t.dbkxVm),
         onSelect: true,
         children: (0, r.jsx)(o.kSQ, {
           children: (0, r.jsx)(o.sNh, {
             id: "copy",
-            label: S.intl.string(S.t.XWDihq),
+            label: T.intl.string(T.t.XWDihq),
             action: () => (0, g.JG)((0, u.J)(R))
           })
         })
@@ -131,7 +131,7 @@ function R(e) {
         icon: k,
         onContextMenu: t,
         onClick: x
-      }, n, T))
+      }, n, S))
     }
   }) : (0, r.jsx)(v.O1, A({
     action: "PRESS_ADD_APP",
@@ -139,5 +139,5 @@ function R(e) {
     icon: k,
     onClick: x,
     variant: "primary"
-  }, T))
+  }, S))
 }

@@ -46,9 +46,9 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -56,7 +56,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -71,7 +71,7 @@ function C(e) {
   var {
     positionTargetRef: t,
     align: n
-  } = e, i = S(e, ["positionTargetRef", "align"]);
+  } = e, i = T(e, ["positionTargetRef", "align"]);
   return (0, r.jsx)("span", {
     style: g.u$,
     children: (0, r.jsx)(c.W5, {
@@ -111,7 +111,7 @@ function R(e) {
   } = e, _ = i.useRef(null), {
     renderWindow: y,
     windowDispatch: O
-  } = i.useContext(u.ZP), v = null != c, I = (0, o.Jw)(null != c ? c : ""), S = i.useCallback(e => {
+  } = i.useContext(u.ZP), v = null != c, I = (0, o.Jw)(null != c ? c : ""), T = i.useCallback(e => {
     var t;
     if (!v && (0, o.$s)() || v && !(I && n) || d.Z.isOpen() || e.defaultPrevented) return;
     let {
@@ -131,12 +131,12 @@ function R(e) {
     let i = null == (t = (0, a.uB)(e)) ? true : t.activeElement;
     (null == i || "BODY" === i.tagName) && f.S.dispatchToLastSubscribed(E.CkL.TEXTAREA_FOCUS)
   }, [n, I, v]);
-  i.useLayoutEffect(() => (y.addEventListener("mousedown", S), y.addEventListener("contextmenu", S), O.subscribe(E.CkL.POPOUT_CLOSE, N), () => {
-    y.removeEventListener("mousedown", S), y.removeEventListener("contextmenu", S), O.unsubscribe(E.CkL.POPOUT_CLOSE, N)
-  }), [S, y, O]), (0, s.Tbt)(_), i.useEffect(() => {
+  i.useLayoutEffect(() => (y.addEventListener("mousedown", T), y.addEventListener("contextmenu", T), O.subscribe(E.CkL.POPOUT_CLOSE, N), () => {
+    y.removeEventListener("mousedown", T), y.removeEventListener("contextmenu", T), O.unsubscribe(E.CkL.POPOUT_CLOSE, N)
+  }), [T, y, O]), (0, s.Tbt)(_), i.useEffect(() => {
     (!v && (0, o.$s)() || v && !I) && N()
   }, [I, v]);
-  let T = (0, m.Z)();
+  let S = (0, m.Z)();
   return (0, r.jsx)(h.Z, {
     ref: _,
     context: {
@@ -144,7 +144,7 @@ function R(e) {
       type: "channel"
     },
     entrypoint: p._b.TEXT,
-    initHistory: T
+    initHistory: S
   })
 }
 let P = Chunk647438.memo(C)

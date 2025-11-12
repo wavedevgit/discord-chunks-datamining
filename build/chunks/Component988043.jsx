@@ -2,7 +2,7 @@
 /** chunk id: 988043, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,11 +26,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk602698 = require("./602698.js");
 
-function S(e) {
+function T(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, E = (0, _.c_)(), S = d.h2.useSetting().includes(n), T = (0, u.q)(), A = (0, f.r)(), C = (0, o.LN)(), N = i.useCallback(e => {
+  } = e, E = (0, _.c_)(), T = d.h2.useSetting().includes(n), S = (0, u.q)(), A = (0, f.r)(), C = (0, o.LN)(), N = i.useCallback(e => {
     let r = (0, c.YK)();
     e ? r.delete(n) : r.add(n), d.h2.updateSetting(Array.from(r)), l.default.track(O.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: g.Y.DIRECT_MESSAGES_TOGGLE,
@@ -46,9 +46,9 @@ function S(e) {
     })
   }
   let P = e => {
-      w(!e)
+      D(!e)
     },
-    w = e => {
+    D = e => {
       let t = () => {
           d.gR.updateSetting(e), d.h2.updateSetting(e ? s.Z.getGuildIds() : []), R(e, true)
         },
@@ -65,31 +65,31 @@ function S(e) {
         onCancel: t
       })
     },
-    D = A ? v.intl.string(v.t.PMsfcH) : v.intl.string(v.t.RAQUSN);
+    w = A ? v.intl.string(v.t.PMsfcH) : v.intl.string(v.t.RAQUSN);
   return (0, r.jsx)(p.U, {
     setting: b.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
     children: n === y.T ? (0, r.jsx)(h.ZP, {
-      title: D,
+      title: w,
       note: A ? v.intl.string(v.t.XXGmuB) : v.intl.string(v.t.wbYDfT),
-      value: !T,
+      value: !S,
       onChange: P,
       disabled: C,
       tooltipText: C ? v.intl.string(I.default["6Af/cw"]) : true
     }) : (0, r.jsx)(h.ZP, {
-      title: D,
+      title: w,
       note: E ? v.intl.string(v.t.V0ka0Q) : A ? v.intl.string(v.t.F9WY3f) : v.intl.string(v.t.G7c3Xo),
-      value: !S,
+      value: !T,
       onChange: N
     })
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     ingress: t = E.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, _.is)();
-  return (0, r.jsx)(S, {
+  return (0, r.jsx)(T, {
     ingress: t,
     guildId: null != n ? n : i
   })

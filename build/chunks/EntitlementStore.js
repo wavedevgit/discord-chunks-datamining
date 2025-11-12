@@ -32,15 +32,15 @@ let m = {},
   O = false,
   v = false,
   I = new Set,
-  S = new Set,
-  T = {};
+  T = new Set,
+  S = {};
 
 function A() {
-  m = {}, E = {}, b = {}, y = false, O = false, v = false, I = new Set, S = new Set
+  m = {}, E = {}, b = {}, y = false, O = false, v = false, I = new Set, T = new Set
 }
 
 function C(e) {
-  m[e.id] = c.Z.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == b[e.application_id] && (b[e.application_id] = new Set), null != e.subscription_id && (null == T[e.subscription_id] && (T[e.subscription_id] = new Set), T[e.subscription_id].add(e.id)), b[e.application_id].add(e.id), E[e.sku_id].add(e.id)
+  m[e.id] = c.Z.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == b[e.application_id] && (b[e.application_id] = new Set), null != e.subscription_id && (null == S[e.subscription_id] && (S[e.subscription_id] = new Set), S[e.subscription_id].add(e.id)), b[e.application_id].add(e.id), E[e.sku_id].add(e.id)
 }
 
 function N(e) {
@@ -53,7 +53,7 @@ function R(e) {
   null != t && t.delete(e.id);
   let n = E[e.sku_id];
   if (null != n && n.delete(e.id), null != e.subscription_id) {
-    let t = T[e.subscription_id];
+    let t = S[e.subscription_id];
     null != t && t.delete(e.id)
   }
 }
@@ -65,15 +65,15 @@ function P(e) {
   I.add(t)
 }
 
-function w(e) {
+function D(e) {
   let {
     applicationId: t,
     entitlements: n
   } = e;
-  for (let e of (I.delete(t), S.add(t), n)) true !== e.consumed && C(e)
+  for (let e of (I.delete(t), T.add(t), n)) true !== e.consumed && C(e)
 }
 
-function D(e) {
+function w(e) {
   let {
     entitlements: t
   } = e;
@@ -158,7 +158,7 @@ class Z extends(r = Chunk442837.yh) {
     return I
   }
   get applicationIdsFetched() {
-    return S
+    return T
   }
   isFetchingForApplication(e) {
     return this.fetchingAllEntitlements || null != e && this.applicationIdsFetching.has(e)
@@ -167,7 +167,7 @@ class Z extends(r = Chunk442837.yh) {
     return this.fetchedAllEntitlements || null != e && this.applicationIdsFetched.has(e)
   }
   getForSubscription(e) {
-    let t = T[e];
+    let t = S[e];
     if (null == t) return null;
     let n = new Set;
     for (let e of t) n.add(m[e]);
@@ -181,12 +181,12 @@ class Z extends(r = Chunk442837.yh) {
         let n = m[t];
         if (null != n && n.isValid(e, f.Z, r)) returntrue
       }
-    if (S.has(n)) returnfalse;
+    if (T.has(n)) returnfalse;
     let a = null != r ? u.Z.getLibraryApplication(n, r) : u.Z.getActiveLibraryApplication(n);
     return !!(null != a && a.sku.id === t && (0, d.Je)(a)) || null
   }
   hasFetchedForApplicationIds(e) {
-    return e.every(e => S.has(e))
+    return e.every(e => T.has(e))
   }
   getReverseTrialEntitlement(e) {
     let t = new Date,
@@ -231,9 +231,9 @@ class Z extends(r = Chunk442837.yh) {
 h(Z, "displayName", "EntitlementStore");
 let F = new Z(Chunk570140.Z, {
   ENTITLEMENT_FETCH_APPLICATION_START: P,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: w,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: D,
   ENTITLEMENT_FETCH_APPLICATION_FAIL: x,
-  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: D,
+  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: w,
   SKU_PURCHASE_SUCCESS: k,
   VIRTUAL_CURRENCY_REDEEM_SUCCESS: k,
   LIBRARY_FETCH_SUCCESS: U,

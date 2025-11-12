@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Ah: () => O,
-  CB: () => w,
+  CB: () => D,
   aU: () => C,
-  cp: () => D,
+  cp: () => w,
   eL: () => R,
   vg: () => P,
   zy: () => N
@@ -96,7 +96,7 @@ function I(e) {
   return v(e, c.x4.useSetting())
 }
 
-function S(e, t) {
+function T(e, t) {
   var n, r;
   let i = c.RS.useSetting(),
     a = c.NA.useSetting();
@@ -129,7 +129,7 @@ function S(e, t) {
   }).filter(p.lm) : []
 }
 
-function T(e) {
+function S(e) {
   let t = c.RS.useSetting();
   if (null == e) return [];
   let n = e.components;
@@ -181,25 +181,25 @@ function C(e, t) {
 
 function N(e, t) {
   let n = I(e);
-  return [...n, ...S(e, t), ...T(e)]
+  return [...n, ...T(e, t), ...S(e)]
 }
 
 function R(e, t) {
   var n, r, i;
   let a = I(e),
-    o = S(e, t),
-    s = T(e);
+    o = T(e, t),
+    s = S(e);
   return null != (i = null != (r = null != (n = a[0]) ? n : o[0]) ? r : s[0]) ? i : null
 }
 
 function P(e, t) {
   let n = I(e),
-    r = S(e, t),
-    i = T(e);
+    r = T(e, t),
+    i = S(e);
   return null == n[0] && null == i[0] && null != r[0]
 }
 
-function w(e, t) {
+function D(e, t) {
   var n;
   let r = u.Z.getChannel(t);
   if (null == r) returnfalse;
@@ -207,7 +207,7 @@ function w(e, t) {
   return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && r.isForumPost() && r.ownerId === (null == (n = f.default.getCurrentUser()) ? true : n.id) && 0 === l.Z.getCount(r.id) && (0 === i.attachments.length || null == i.attachments.find(e => E(e) || b(e)))
 }
 
-function D(e) {
+function w(e) {
   return e.reduce((e, t) => ({
     containsVideo: e.containsVideo || t.isVideo,
     containsGif: e.containsGif || (0, s.d$)(t.src)

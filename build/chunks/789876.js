@@ -45,30 +45,30 @@
   }
 
   function O() {
-    125 != _ && (d = 7, _ = 125, f = 35, u && (y(), S())), E()
+    125 != _ && (d = 7, _ = 125, f = 35, u && (y(), T())), E()
   }
 
   function v() {
-    i = null, r = setTimeout(T, 0)
+    i = null, r = setTimeout(S, 0)
   }
 
   function I() {
     r = null, o(v)
   }
 
-  function S() {
+  function T() {
     u || (t = _ - (Date.now() - h), e = Date.now(), u = true, f && exports < f && (t = f), exports > 9 ? r = setTimeout(I, exports) : (t = 0, I()))
   }
 
-  function T() {
+  function S() {
     var n, i, a, o = d > 9 ? 9 : 1;
     if (h = Date.now(), u = false, r = null, c > 2 || h - exports - 50 < module)
       for (i = 0, a = l.length; i < a && g.timeRemaining() > o; i++) n = l.shift(), m++, require && require(g);
-    l.length ? S() : c = 0
+    l.length ? T() : c = 0
   }
 
   function A(e) {
-    return p++, l.push(e), S(), p
+    return p++, l.push(e), T(), p
   }
 
   function C(e) {

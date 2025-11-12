@@ -50,11 +50,11 @@ function j(e) {
     giftRecipient: p,
     giftMessageError: g,
     isSendingMessage: y
-  } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), T = (0, c.e7)([S.Z], () => S.Z.enabled), j = _ || null != l && null != p, U = (null == a ? true : a.productLine) === w.POd.COLLECTIBLES, G = (0, E.Z)(), {
+  } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), j = _ || null != l && null != p, U = (null == a ? true : a.productLine) === D.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
   } = (0, P.wD)(), Z = null == G ? true : G.giftPurchaseConfirmation, F = (0, b.tK)(null == B ? true : B.skuId), V = (0, b.a5)(s) && null != F && null != Z, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
     let e;
-    return null != g ? x.intl.string(x.t.qB8aya) : null == s ? null : (e = s.interval === D.rV.MONTH ? j ? V ? Z.monthGiftText : x.t["4ZJ+7Z"] : x.t["P+z55d"] : j ? V ? Z.yearGiftText : x.t.p0pZXP : x.t.bXqk3o, x.intl.format(e, {
+    return null != g ? x.intl.string(x.t.qB8aya) : null == s ? null : (e = s.interval === w.rV.MONTH ? j ? V ? Z.monthGiftText : x.t["4ZJ+7Z"] : x.t["P+z55d"] : j ? V ? Z.yearGiftText : x.t.p0pZXP : x.t.bXqk3o, x.intl.format(e, {
       skuName: (0, N.aq)(s.id),
       intervalCount: s.intervalCount
     }))
@@ -83,7 +83,7 @@ function j(e) {
       children: [null != t && (0, r.jsx)(f.gNt, {
         label: x.intl.string(x.t["/dG4NA"]),
         children: (0, r.jsx)(f.kO8, {
-          hideMessage: T ? x.intl.string(x.t["0RLn47"]) : null,
+          hideMessage: S ? x.intl.string(x.t["0RLn47"]) : null,
           value: (0, C.Nz)(t),
           mode: O,
           text: e,
@@ -172,9 +172,9 @@ let k = e => {
   } = (0, c.cj)([O.Z], () => ({
     userAffinities: O.Z.getUserAffinitiesMap(),
     isLoading: O.Z.isFetching()
-  })), S = Array.from(b.keys()).sort((e, t) => O.Z.compare(e, t)), A = (0, c.e7)([I.Z], () => I.Z.getFriendIDs()), C = l().difference(A, S), N = [...S, ...C], P = (0, c.e7)([T.default], () => T.default.filter(e => N.includes(e.id) && !e.bot), [N]);
+  })), T = Array.from(b.keys()).sort((e, t) => O.Z.compare(e, t)), A = (0, c.e7)([I.Z], () => I.Z.getFriendIDs()), C = l().difference(A, T), N = [...T, ...C], P = (0, c.e7)([S.default], () => S.default.filter(e => N.includes(e.id) && !e.bot), [N]);
   if (null == P || 0 === P.length) return null;
-  let w = l().sortBy(P, e => N.indexOf(e.id));
+  let D = l().sortBy(P, e => N.indexOf(e.id));
   return (0, r.jsxs)("div", {
     className: L.giftRecipientSection,
     children: [(0, r.jsxs)("div", {
@@ -195,7 +195,7 @@ let k = e => {
         onChange: e => {
           o(e), d(false)
         },
-        options: w.map(e => ({
+        options: D.map(e => ({
           value: e,
           label: "".concat(R.ZP.getUserTag(e))
         }))

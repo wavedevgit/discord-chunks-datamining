@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -70,15 +70,15 @@ let C = e => {
     price: a,
     onSelect: s,
     shouldDisplayHeader: I = false,
-    className: T,
+    className: S,
     previewHeaderClassName: C,
     hideProfilePreview: N = false
   } = e, {
     product: R
   } = (0, m.T)(t, true), {
     giftRecipient: P,
-    giftRecipientError: w
-  } = (0, f.wD)(), D = (0, u.e7)([h.default], () => h.default.getCurrentUser()), x = (0, y.kd)(R), L = i.useRef(null);
+    giftRecipientError: D
+  } = (0, f.wD)(), w = (0, u.e7)([h.default], () => h.default.getCurrentUser()), x = (0, y.kd)(R), L = i.useRef(null);
   if (null == R) return null;
   let [M] = R.items;
   l()(null != M, "Product item should not be empty");
@@ -95,12 +95,12 @@ let C = e => {
           return null
       }
     },
-    k = null != P && P.id !== (null == D ? true : D.id) && R.type !== c.Z.BUNDLE && M.type !== c.Z.NAMEPLATE && !N,
+    k = null != P && P.id !== (null == w ? true : w.id) && R.type !== c.Z.BUNDLE && M.type !== c.Z.NAMEPLATE && !N,
     U = () => {
       null != t && null != s && s(t)
     };
   return (0, r.jsxs)("div", {
-    className: T,
+    className: S,
     children: [I && (0, r.jsx)("div", {
       className: o()(v.previewTitleContainer, C),
       children: (0, r.jsx)(d.gNt, {
@@ -108,7 +108,7 @@ let C = e => {
         children: k && (0, r.jsx)(d.yRy, {
           targetElementRef: L,
           preload: () => (0, p.Z)(P.id, P.getAvatarURL(null, 80)),
-          renderPopout: e => (0, r.jsx)(_.Z, A(S({}, e), {
+          renderPopout: e => (0, r.jsx)(_.Z, A(T({}, e), {
             user: P,
             pendingAvatar: P.getAvatarURL(null, (0, d.pxk)(d.EFr.SIZE_80)),
             pendingAvatarDecoration: (0, g.M)(M) ? M : null,
@@ -119,7 +119,7 @@ let C = e => {
           })),
           align: "center",
           position: "right",
-          children: e => (0, r.jsx)(d.P3F, A(S({}, e), {
+          children: e => (0, r.jsx)(d.P3F, A(T({}, e), {
             className: v.previewLink,
             innerRef: L,
             children: (0, r.jsx)(d.Text, {
@@ -134,8 +134,8 @@ let C = e => {
       tag: "div",
       onClick: U,
       className: o()(v.previewContainer, {
-        [v.previewContainerSelected]: n && null == w,
-        [v.previewContainerError]: n && null != w
+        [v.previewContainerSelected]: n && null == D,
+        [v.previewContainerError]: n && null != D
       }),
       children: [(0, r.jsxs)("div", {
         className: v.giftInfoContainer,
@@ -156,12 +156,12 @@ let C = e => {
           variant: "text-md/semibold",
           children: a
         })]
-      }), n && null != w && (0, r.jsx)("div", {
+      }), n && null != D && (0, r.jsx)("div", {
         className: v.recipientError,
         children: (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "status-danger",
-          children: w
+          children: D
         })
       })]
     })]

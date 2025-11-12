@@ -25,16 +25,16 @@ var Chunk512722 = require("./512722.js"),
   Chunk70722 = require("./70722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
-let S = 3e5,
-  T = 6e4,
+let T = 3e5,
+  S = 6e4,
   A = {},
   C = new Chunk846519.V7,
   N = false,
   R = window.document.createElement("canvas"),
   P = 512,
-  w = 288;
-R.width = 512, R.height = w;
-let D = R.getContext("2d");
+  D = 288;
+R.width = 512, R.height = D;
+let w = R.getContext("2d");
 
 function x() {
   C.stop(), null != r && (Chunk649754.Z.removeSink(r, A), r = null)
@@ -49,7 +49,7 @@ let L = s().debounce((e, t, n, r) => {
 }, 500);
 
 function M(e) {
-  let t = Math.min(P / e.width, w / e.height),
+  let t = Math.min(P / e.width, D / e.height),
     n = e.width * t,
     r = e.height * t;
   R.width = n, R.height = r;
@@ -58,7 +58,7 @@ function M(e) {
   i.width = e.width, i.height = e.height;
   let o = new ImageData(e.data, e.width, e.height);
   return null == a || a.putImageData(o, 0, 0), new Promise(t => {
-    null == D || D.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r), t()
+    null == w || w.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r), t()
   })
 }
 async function j(e, t) {
@@ -89,10 +89,10 @@ async function j(e, t) {
       rejectWithError: false
     })
   } catch (t) {
-    new p.Z("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", t), r === e && C.start(T, n);
+    new p.Z("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", t), r === e && C.start(S, n);
     return
   }
-  r === e && (N ? C.start(T, n) : C.start(S, n))
+  r === e && (N ? C.start(S, n) : C.start(T, n))
 }
 
 function k(e, t) {
@@ -111,7 +111,7 @@ function U(e, t) {
     width: r,
     height: i
   } = n.getVideoTracks()[0].getSettings(), a = document.createElement("video"), o = document.createElement("canvas");
-  a.width = o.width = null != r ? r : P, a.height = o.height = null != i ? i : w, a.srcObject = n, a.play();
+  a.width = o.width = null != r ? r : P, a.height = o.height = null != i ? i : D, a.srcObject = n, a.play();
   let s = o.getContext("2d");
   return new Promise((e, n) => {
     a.ontimeupdate = () => {

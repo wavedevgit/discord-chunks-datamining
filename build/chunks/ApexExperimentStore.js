@@ -96,15 +96,15 @@ let O = [Chunk341691.Cm.User],
     guild: {}
   },
   I = {},
-  S = {},
   T = {},
+  S = {},
   A = {},
   C = new Set,
   N = new Set,
   R = "apexTrackedExposures",
   P = 2,
-  w = 6048e5,
-  D = {},
+  D = 6048e5,
+  w = {},
   x = {};
 
 function L(e) {
@@ -113,22 +113,22 @@ function L(e) {
 }
 class M extends(r = Chunk442837.ZP.PersistedStore) {
   loadStoredState(e, t) {
-    for (let n in null != e && 1 === e.version && (S = e.clientOverrides, v = e.evaluatedExperiments), T = {}, t) {
+    for (let n in null != e && 1 === e.version && (T = e.clientOverrides, v = e.evaluatedExperiments), S = {}, t) {
       let e = L(n),
         r = t[n];
-      T[n] = {
+      S[n] = {
         hashedName: e,
         variantId: r,
         isOverride: true
       }
     }
-    D = this.loadTrackedExposures()
+    w = this.loadTrackedExposures()
   }
   getState() {
     return {
       version: 1,
       evaluatedExperiments: v,
-      clientOverrides: S
+      clientOverrides: T
     }
   }
   setExperimentAssignments(e) {
@@ -159,7 +159,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     returntrue
   }
   createOverride(e, t) {
-    S = p(f({}, S), {
+    T = p(f({}, T), {
       [e]: {
         hashedName: L(e),
         variantId: t,
@@ -170,8 +170,8 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
   deleteOverride(e) {
     let {
       [e]: t
-    } = S;
-    S = h(S, [e].map(E))
+    } = T;
+    T = h(T, [e].map(E))
   }
   setExperimentsMetadata(e) {
     A = f({}, A, Object.fromEntries(e.map(e => [e.name, e])))
@@ -180,23 +180,23 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     return A
   }
   getClientOverrides() {
-    return S
+    return T
   }
   getExperimentClientOverride(e) {
-    return S[e]
+    return T[e]
   }
   handleLogout(e) {
     e || this.clearAllServerAssignments(), l.K.remove(R), this.clearAllTrackedExposures()
   }
   registerExperiment(e) {
-    I[e.name] = e, null != T[e.name] && this.trackExposureSuppression(e.name, "cookie_override")
+    I[e.name] = e, null != S[e.name] && this.trackExposureSuppression(e.name, "cookie_override")
   }
   getRegisteredExperiments() {
     return I
   }
   getAssignment(e, t, n) {
     var r;
-    let i = null != (r = S[n]) ? r : T[n];
+    let i = null != (r = T[n]) ? r : S[n];
     return null != i ? i : this.getServerAssignment(e, t, n)
   }
   getServerAssignment(e, t, n) {
@@ -210,7 +210,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getEvaluationAndAssignment(e, t, n) {
     var r;
-    let i = null != (r = S[n]) ? r : T[n];
+    let i = null != (r = T[n]) ? r : S[n];
     if (null != i) return [true, i];
     let a = v[e][t];
     return null == a ? [true, true] : [a.evaluationId, a.assignments[L(n)]]
@@ -225,7 +225,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
       tracked_variation_id: a
     }, {
       flush: true
-    }), D[o] = Date.now(), this.saveTrackedExposures(D))
+    }), w[o] = Date.now(), this.saveTrackedExposures(w))
   }
   trackCommonTriggerPointExposures(e) {
     for (let t of this.evaluationIds("user")) {
@@ -236,7 +236,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
         unit_type: "user"
       }, {
         flush: true
-      }), D[n] = Date.now(), this.saveTrackedExposures(D))
+      }), w[n] = Date.now(), this.saveTrackedExposures(w))
     }
   }
   trackExposureSuppression(e, t) {
@@ -253,8 +253,8 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     return Object.values(v[e]).map(e => e.evaluationId).filter(e => null != e)
   }
   shouldTrackExposure(e) {
-    let t = D[e];
-    return null == t || Date.now() - t > w
+    let t = w[e];
+    return null == t || Date.now() - t > D
   }
   loadTrackedExposures() {
     let e = Chunk433517.K.get(R);
@@ -262,7 +262,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     let t = module.exposures,
       n = Date.now(),
       r = false;
-    for (let e in exports) require - exports[module] > w && (delete exports[module], r = true);
+    for (let e in exports) require - exports[module] > D && (delete exports[module], r = true);
     return r && this.saveTrackedExposures(exports), exports
   }
   saveTrackedExposures(e) {
@@ -290,10 +290,10 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
   clearAllOverrides() {
-    S = {}, T = {}
+    T = {}, S = {}
   }
   clearAllTrackedExposures() {
-    D = {}
+    w = {}
   }
   getHash(e) {
     return L(e)

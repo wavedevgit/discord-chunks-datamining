@@ -102,7 +102,7 @@ let J = 32,
     let {
       node: t
     } = e;
-    (0, S.u)({
+    (0, T.u)({
       emojiId: t.emojiId,
       currentGuildId: M.Z.getGuildId()
     });
@@ -160,8 +160,8 @@ let J = 32,
         alt: "",
         className: K.guildIcon
       }), " :"]
-    }) : (0, r.jsx)(T.Z, {
-      size: T.Z.Sizes.SMALL,
+    }) : (0, r.jsx)(S.Z, {
+      size: S.Z.Sizes.SMALL,
       className: K.guildIconNotClickable,
       guild: t
     }), m = () => f ? (0, r.jsx)(_.P3F, {
@@ -273,13 +273,13 @@ let J = 32,
       sourceType: d,
       expressionSourceApplication: y,
       expressionSourceGuild: v,
-      joinedEmojiSourceGuildRecord: T,
+      joinedEmojiSourceGuildRecord: S,
       closePopout: A,
       onToggleShowMoreEmojis: P,
       guildEmoji: x,
       demoMode: L = false,
       nonce: U
-    } = e, G = (0, l.e7)([j.default], () => j.default.getCurrentUser()), z = (0, l.e7)([M.Z], () => M.Z.getGuildId()), q = B.ZP.isPremium(G), X = null != z && (z === (null == v ? true : v.id) || z === (null == T ? true : T.id)), Q = null != T, J = null != (t = null == v ? true : v.isDiscoverable()) && t;
+    } = e, G = (0, l.e7)([j.default], () => j.default.getCurrentUser()), z = (0, l.e7)([M.Z], () => M.Z.getGuildId()), q = B.ZP.isPremium(G), X = null != z && (z === (null == v ? true : v.id) || z === (null == S ? true : S.id)), Q = null != S, J = null != (t = null == v ? true : v.isDiscoverable()) && t;
     L && (q = true, J = true, Q = false, X = false);
     let $ = ee(),
       {
@@ -326,12 +326,12 @@ let J = 32,
           A(), k.default.track(V.rMx.PREMIUM_PROMOTION_OPENED, {
             location_page: $.page,
             location_section: $.section
-          }), (0, w.z)()
+          }), (0, D.z)()
         }
       }),
       eu = Q && er && !eo && (q && et || !q),
       ed = ec.emojiDescription,
-      ef = (0, S.u)({
+      ef = (0, T.u)({
         emojiId: c.emojiId,
         currentGuildId: el,
         popoutData: ec,
@@ -350,10 +350,10 @@ let J = 32,
             await p.Z.joinGuild(e), p.Z.transitionToGuildSync(e)
           } catch (e) {}
         }, t = () => {
-          A(), (null == T ? true : T.id) != null && p.Z.transitionToGuildSync(T.id, {
+          A(), (null == S ? true : S.id) != null && p.Z.transitionToGuildSync(S.id, {
             sourceLocationStack: [m.Z.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL]
           }, H.oC.ROLE_SUBSCRIPTIONS)
-        }, n = !Q && J, i = () => ep ? (0, r.jsx)(D.Z, {
+        }, n = !Q && J, i = () => ep ? (0, r.jsx)(w.Z, {
           className: K.ctaButton,
           subscriptionTier: Y.Si.TIER_2,
           size: f.zx.Sizes.SMALL,
@@ -443,7 +443,7 @@ let J = 32,
             color: "text-secondary",
             children: Q ? W.intl.string(W.t.ohTzZH) : W.intl.string(W.t["eLfh+a"])
           }), (0, r.jsx)(en, {
-            expressionSourceGuild: null != v ? v : I.JO.createFromGuildRecord(T),
+            expressionSourceGuild: null != v ? v : I.JO.createFromGuildRecord(S),
             hasJoinedExpressionSourceGuild: Q,
             isDisplayingJoinGuildButtonInPopout: e_
           }), n && (0, r.jsxs)(r.Fragment, {
@@ -485,7 +485,7 @@ let J = 32,
       type: f,
       description: p
     } = o, m = () => f === Z.$.GET_PREMIUM ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(D.Z, {
+      children: [(0, r.jsx)(w.Z, {
         subscriptionTier: Y.Si.TIER_2,
         textOptions: {
           textOverride: o.text

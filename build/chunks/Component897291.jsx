@@ -2,7 +2,7 @@
 /** chunk id: 897291, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -68,8 +68,8 @@ function I(e) {
     analyticsLocations: b
   } = (0, c.ZP)(l.Z.GIFT_BUTTON), O = (0, p.Ft)(i), {
     Component: I,
-    events: S,
-    play: T
+    events: T,
+    play: S
   } = (0, a.$)(), {
     enabled: A
   } = d.G.useExperiment({
@@ -125,9 +125,9 @@ function I(e) {
       "aria-label": g.intl.string(g.t.Z1RnTk),
       "aria-haspopup": "dialog",
       onClick: () => {
-        R(), T()
+        R(), S()
       }
-    }, S), {
+    }, T), {
       children: (0, r.jsx)(I, {
         size: "refresh_sm",
         color: "currentColor"
@@ -135,4 +135,4 @@ function I(e) {
     }))
   })
 }
-let S = Chunk647438.memo(I)
+let T = Chunk647438.memo(I)

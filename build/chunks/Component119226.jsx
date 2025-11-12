@@ -2,7 +2,7 @@
 /** chunk id: 119226, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./314940.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -78,7 +78,7 @@ function C(e) {
   });
   return (0, r.jsx)("div", {
     className: y.giftMainAnimationWrapper,
-    children: (0, r.jsx)(A, T(I({}, i), {
+    children: (0, r.jsx)(A, S(I({}, i), {
       avatarDecoration: n,
       src: a,
       className: y.avatar,
@@ -160,7 +160,7 @@ let P = e => {
   }) : l
 };
 
-function w(e) {
+function D(e) {
   let {
     sku: t
   } = e;

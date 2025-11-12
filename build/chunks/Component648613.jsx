@@ -84,14 +84,14 @@ function I(e) {
     postSuccessGuild: b,
     onSubscribeModalClose: v,
     premiumModalAnalyticsLocation: I,
-    applicationId: S,
-    giftMessage: T,
+    applicationId: T,
+    giftMessage: S,
     confirmationFooter: A,
     paymentModalBanner: C,
     isGift: N,
     children: R
-  } = e, P = (0, i.e7)([f.default], () => f.default.getCurrentUser()), w = (0, i.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()), {
-    analyticsLocations: D
+  } = e, P = (0, i.e7)([f.default], () => f.default.getCurrentUser()), D = (0, i.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()), {
+    analyticsLocations: w
   } = (0, o.ZP)(), x = (0, p.N)(), L = !N && null != x && null != g && h.nG[x.trial_id].skus.includes(g);
   return R({
     onClick: e => {
@@ -99,7 +99,7 @@ function I(e) {
       if (e.preventDefault(), null == P) return void(0, c.uL)(m.Z5c.LOGIN, {
         source: "premium_subscribe_button"
       });
-      if (null == t || t(e), (null == w ? true : w.status) === m.O0b.ACCOUNT_HOLD) {
+      if (null == t || t(e), (null == D ? true : D.status) === m.O0b.ACCOUNT_HOLD) {
         (0, s.A3)(), (0, d.openUserSettings)(u.n.NITRO_PANEL, {
           section: m.oAB.PREMIUM
         }), null == v || v(false);
@@ -137,7 +137,7 @@ function I(e) {
         isGift: N,
         initialPlanId: null,
         subscriptionTier: g,
-        analyticsLocations: D,
+        analyticsLocations: w,
         analyticsObject: E({
           object: m.qAy.BUTTON_CTA,
           objectType: f
@@ -145,8 +145,8 @@ function I(e) {
         trialId: o,
         postSuccessGuild: b,
         onClose: v,
-        applicationId: S,
-        giftMessage: T,
+        applicationId: T,
+        giftMessage: S,
         confirmationFooter: A,
         paymentModalBanner: C
       })

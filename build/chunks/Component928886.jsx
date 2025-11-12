@@ -35,21 +35,21 @@ function I(e) {
     referralTrialOfferId: a,
     handleClose: I
   } = e, {
-    selectedSkuId: S,
-    step: T,
+    selectedSkuId: T,
+    step: S,
     selectedPlan: A,
     purchaseState: C,
     purchaseType: N,
     selectedSku: R,
     enablePremiumBrandRefresh: P,
-    isDisplayingWowMomentConfirmation: w
+    isDisplayingWowMomentConfirmation: D
   } = (0, m.JL)(), {
-    isGift: D,
+    isGift: w,
     selectedGiftStyle: x,
     giftRecipient: L
-  } = (0, h.wD)(), M = (null == R ? true : R.productLine) === E.POd.COLLECTIBLES, j = (null == R ? true : R.productLine) === E.POd.SOCIAL_LAYER_GAME_ITEM, k = D && (0, p.pO)(L) && T === g.h8.CONFIRM && null != x && !M && !j, U = null != n && null != T, G = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], B = null != T && !G.includes(T) && null != S, Z = (0, u.N)(a), F = !D && null != Z && null != S && b.nG[Z.trial_id].skus.includes(S), V = (0, c.N)(), H = null == V || null == (t = V.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === S), Y = !D && null != V && null != S && H;
+  } = (0, h.wD)(), M = (null == R ? true : R.productLine) === E.POd.COLLECTIBLES, j = (null == R ? true : R.productLine) === E.POd.SOCIAL_LAYER_GAME_ITEM, k = w && (0, p.pO)(L) && S === g.h8.CONFIRM && null != x && !M && !j, U = null != n && null != S, G = [g.h8.SKU_SELECT, g.h8.SELECT_FREE_SKU], B = null != S && !G.includes(S) && null != T, Z = (0, u.N)(a), F = !w && null != Z && null != T && b.nG[Z.trial_id].skus.includes(T), V = (0, c.N)(), H = null == V || null == (t = V.discount) ? true : t.plan_ids.some(e => b.GP[e].skuId === T), Y = !w && null != V && null != T && H;
   return i.useMemo(() => {
-    if (null == T) return;
+    if (null == S) return;
     let e = null;
     return k ? e = (0, r.jsxs)("div", {
       className: O.container,
@@ -62,21 +62,21 @@ function I(e) {
         className: O.closeButton,
         "data-migration-pending": true
       })]
-    }) : U ? e = n(null != A ? A : null, I, T) : N === y.GZ.ONE_TIME ? e = (0, r.jsx)(_.t, {
-      step: T,
+    }) : U ? e = n(null != A ? A : null, I, S) : N === y.GZ.ONE_TIME ? e = (0, r.jsx)(_.t, {
+      step: S,
       onClose: I
-    }) : B && (o()(v(S, b.y7), "invalid sku id: ".concat(S)), e = (0, r.jsx)(f.Z, {
-      currentStep: null != T ? T : true,
+    }) : B && (o()(v(T, b.y7), "invalid sku id: ".concat(T)), e = (0, r.jsx)(f.Z, {
+      currentStep: null != S ? S : true,
       purchaseState: C,
-      premiumType: b.y7[S],
+      premiumType: b.y7[T],
       onClose: I,
       showTrialBadge: F,
       showDiscountBadge: Y,
-      isGift: D,
+      isGift: w,
       giftRecipient: L,
       isEligibleForTrial: F,
       enablePremiumBrandRefresh: P,
-      isDisplayingWowMomentConfirmation: w
+      isDisplayingWowMomentConfirmation: D
     })), e
-  }, [x, I, C, n, A, S, T, F, Y, k, B, U, N, D, L, P, w])
+  }, [x, I, C, n, A, T, S, F, Y, k, B, U, N, w, L, P, D])
 }

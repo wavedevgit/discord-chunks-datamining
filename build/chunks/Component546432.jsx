@@ -70,9 +70,9 @@ function P(e, t) {
   }), e
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
-  var n, r, i = D(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -80,7 +80,7 @@ function w(e, t) {
   return i
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -124,14 +124,14 @@ let k = e => {
   });
   let m = [];
   null != a && m.push((0, r.jsx)(s.u, {
-    text: S.intl.string(S.t["/XT3ij"]),
+    text: T.intl.string(T.t["/XT3ij"]),
     children: (0, r.jsx)(l.P3F, {
-      className: o()(A.hoverButton, T.removeMosaicItemHoverButton),
+      className: o()(A.hoverButton, S.removeMosaicItemHoverButton),
       focusProps: {
         offset: 2
       },
       onClick: a,
-      "aria-label": S.intl.string(S.t["0+xZH0"]),
+      "aria-label": T.intl.string(T.t["0+xZH0"]),
       children: (0, r.jsx)(l.XHJ, {
         size: "custom",
         color: "currentColor",
@@ -140,12 +140,12 @@ let k = e => {
       })
     })
   }, "remove")), d && m.push((0, r.jsx)(s.u, {
-    text: S.intl.string(S.t["1WjMbC"]),
+    text: T.intl.string(T.t["1WjMbC"]),
     children: (0, r.jsx)(u.Z, {
       target: "_blank",
       rel: "noreferrer noopener",
       className: A.hoverButton,
-      iconClassName: T.downloadHoverButtonIcon,
+      iconClassName: S.downloadHoverButtonIcon,
       focusProps: {
         offset: 2
       },
@@ -186,8 +186,8 @@ function U(e) {
     renderVisualPlaceholderComponent: N,
     className: R,
     imgContainerClassName: P,
-    imgClassName: w,
-    focusable: D,
+    imgClassName: D,
+    focusable: w,
     hiddenSpoilers: x,
     mediaLayoutType: L,
     maxWidth: M,
@@ -237,14 +237,14 @@ function U(e) {
         })
       }
       return s && (0, r.jsx)(l.P3F, {
-        className: W ? T.spoilerRemoveMosaicItemButton : T.removeMosaicItemButton,
+        className: W ? S.spoilerRemoveMosaicItemButton : S.removeMosaicItemButton,
         focusProps: {
           offset: {
             bottom: 4
           }
         },
         onClick: () => c(n),
-        "aria-label": S.intl.string(S.t["0+xZH0"]),
+        "aria-label": T.intl.string(T.t["0+xZH0"]),
         children: (0, r.jsx)(l.Dio, {
           size: "xs",
           color: "currentColor"
@@ -279,8 +279,8 @@ function U(e) {
           renderAdjacentContent: ei,
           containerClassName: R,
           className: P,
-          imageClassName: w,
-          shouldLink: D,
+          imageClassName: D,
+          shouldLink: w,
           hiddenSpoilers: x,
           responsive: true,
           mediaLayoutType: L,
@@ -304,9 +304,9 @@ function U(e) {
         naturalWidth: H,
         naturalHeight: Y,
         className: o()(R, {
-          [T.hasFooter]: U
+          [S.hasFooter]: U
         }),
-        playable: D,
+        playable: w,
         responsive: true,
         mediaLayoutType: L,
         maxWidth: M,
@@ -316,7 +316,7 @@ function U(e) {
         onControlsShow: Z,
         onControlsHide: F,
         downloadable: !$,
-        mediaPlayerClassName: U ? T.hasFooter : true
+        mediaPlayerClassName: U ? S.hasFooter : true
       });
     case "VISUAL_PLACEHOLDER":
       if (null == N) return null;
@@ -324,7 +324,7 @@ function U(e) {
         item: n,
         message: t,
         className: P,
-        imageClassName: w,
+        imageClassName: D,
         maxWidth: M,
         maxHeight: j,
         mediaLayoutType: L,
@@ -335,7 +335,7 @@ function U(e) {
         item: n,
         message: t,
         className: R,
-        playable: D,
+        playable: w,
         mimeType: ee,
         renderAdjacentContent: ei,
         onVolumeShow: () => X(true),
@@ -398,12 +398,12 @@ let B = function(e) {
     isSingleMosaicItem: u,
     footer: p,
     displayGridItem: h
-  } = e, g = w(e, ["className", "item", "message", "getObscureReason", "useFullWidth", "mediaLayoutType", "isSingleMosaicItem", "footer", "displayGridItem"]);
+  } = e, g = D(e, ["className", "item", "message", "getObscureReason", "useFullWidth", "mediaLayoutType", "isSingleMosaicItem", "footer", "displayGridItem"]);
   let {
     width: E,
     height: b,
     type: y
-  } = n, I = s(n, (0, _.v)(a)), [S, A] = i.useState(null != I), C = (0, d.JO)(I), R = c === v.hV.MOSAIC, D = !R && (null != E && E < x || null != b && b < L), j = M(y), k = (0, O.R_)(y), B = u && null != I && (0, d.yf)(E, b), [Z, F] = i.useState(false), V = () => {
+  } = n, I = s(n, (0, _.v)(a)), [T, A] = i.useState(null != I), C = (0, d.JO)(I), R = c === v.hV.MOSAIC, w = !R && (null != E && E < x || null != b && b < L), j = M(y), k = (0, O.R_)(y), B = u && null != I && (0, d.yf)(E, b), [Z, F] = i.useState(false), V = () => {
     F(true)
   }, H = () => {
     F(false)
@@ -414,12 +414,12 @@ let B = function(e) {
       message: a,
       getObscureReason: s,
       hiddenSpoilers: e,
-      className: o()(t, T.mosaicItemContent, {
-        [T.obscured]: S && !D,
-        [T.hiddenSpoiler]: S && I === f.wk.SPOILER,
-        [T.hiddenExplicit]: S && null != I && f.Xh.has(I),
-        [T.hiddenMosaicItem]: S && e,
-        [T.inline]: S && D
+      className: o()(t, S.mosaicItemContent, {
+        [S.obscured]: T && !w,
+        [S.hiddenSpoiler]: T && I === f.wk.SPOILER,
+        [S.hiddenExplicit]: T && null != I && f.Xh.has(I),
+        [S.hiddenMosaicItem]: T && e,
+        [S.inline]: T && w
       }),
       focusable: !e,
       mediaLayoutType: c,
@@ -428,7 +428,7 @@ let B = function(e) {
       isVisualMediaType: k,
       onVideoControlsShow: V,
       onVideoControlsHide: H,
-      forcePlaceholder: C && S
+      forcePlaceholder: C && T
     }))
   };
   return (0, r.jsxs)("div", {
@@ -436,22 +436,22 @@ let B = function(e) {
       minWidth: 0,
       width: "".concat(g.maxWidth, "px")
     } : true,
-    className: o()(T.mosaicItem, {
-      [T.mosaicItemNoJustify]: j,
-      [T.mosaicItemFullWidth]: l,
-      [T.mosaicItemMediaMosaic]: R,
-      [T.hideOverflow]: R && k,
-      [T.mosaicItemWithFooter]: null != p
+    className: o()(S.mosaicItem, {
+      [S.mosaicItemNoJustify]: j,
+      [S.mosaicItemFullWidth]: l,
+      [S.mosaicItemMediaMosaic]: R,
+      [S.hideOverflow]: R && k,
+      [S.mosaicItemWithFooter]: null != p
     }),
     children: [null != I ? (0, r.jsx)(m.ZP, {
       type: m.ZP.Types.ATTACHMENT,
-      inline: D,
+      inline: w,
       reason: I,
       isSingleMosaicItem: u,
-      obscured: S,
+      obscured: T,
       containerStyles: G(n, j, c),
       obscurityControlClassName: o()({
-        [T.obscureVideoSpacing]: "VIDEO" === y && u && !S && Z
+        [S.obscureVideoSpacing]: "VIDEO" === y && u && !T && Z
       }),
       onToggleObscurity: () => A(e => !e),
       children: e => Y(e)

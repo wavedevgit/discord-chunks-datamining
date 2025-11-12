@@ -106,7 +106,7 @@ let v = {
     })
   });
 
-function S(e) {
+function T(e) {
   let {
     style: t
   } = e;
@@ -115,7 +115,7 @@ function S(e) {
     style: t
   })
 }
-let T = Chunk647438.forwardRef(function(e, t) {
+let S = Chunk647438.forwardRef(function(e, t) {
   var {
     children: n,
     id: r
@@ -322,4 +322,4 @@ class R extends(i = Chunk647438.Component) {
     })
   }
 }
-m(R, "Header", I), m(R, "Item", N), m(R, "Separator", S), m(R, "Panel", T)
+m(R, "Header", I), m(R, "Item", N), m(R, "Separator", T), m(R, "Panel", S)

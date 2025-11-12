@@ -2,7 +2,7 @@
 /** chunk id: 434624, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => S
+  l: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -87,17 +87,17 @@ let v = Chunk647438.memo(function(e) {
       burst_colors: O,
       readOnly: v,
       isLurking: I,
-      isGuest: S,
-      isPendingMember: T,
+      isGuest: T,
+      isPendingMember: S,
       type: A,
       emojiSize: C
     } = e,
     N = A === f.O.BURST,
     R = (0, _.y4)(E, b, A),
     P = (0, d.v)(N && null != O ? O : []),
-    w = i ? h : p,
-    D = N ? y : g,
-    x = (0, u.y)(D, _.aO),
+    D = i ? h : p,
+    w = N ? y : g,
+    x = (0, u.y)(w, _.aO),
     L = {};
   if (N && null != P) {
     var M;
@@ -114,23 +114,23 @@ let v = Chunk647438.memo(function(e) {
     borderColor: n
   };
   return (0, r.jsxs)("div", {
-    className: o()(w.reaction, w.reactionInner, m, {
-      [w.reactionMe]: R,
-      [w.reactionReadOnly]: v && !I && !T && !S
+    className: o()(D.reaction, D.reactionInner, m, {
+      [D.reactionMe]: R,
+      [D.reactionReadOnly]: v && !I && !S && !T
     }),
     style: L,
     children: [(0, r.jsx)(c.Z, {
       className: o()({
-        [w.hideEmoji]: a
+        [D.hideEmoji]: a
       }),
       emojiId: s.id,
       emojiName: s.name,
       size: C,
       animated: N && s.animated
     }), (0, r.jsx)("div", {
-      className: w.reactionCount,
+      className: D.reactionCount,
       style: j,
-      children: D
+      children: w
     })]
   })
 });
@@ -139,7 +139,7 @@ function I(e) {
   var t;
   return "".concat(e.type === f.O.BURST ? "burst:" : "").concat(null != (t = e.emoji.id) ? t : 0, ":").concat(e.emoji.name)
 }
-let S = Chunk647438.memo(function(e) {
+let T = Chunk647438.memo(function(e) {
   var {
     showImmediate: t,
     reactions: n

@@ -46,7 +46,7 @@ let E = function(e) {
     withGameTile: y = true,
     logotypeStyle: O,
     onLoadComplete: v
-  } = e, I = (0, l.wj)(E) ? _.BRd.DARK : _.BRd.LIGHT, S = (0, u.Gd)(h.id, I), T = b && null != h.config.cosponsorMetadata && null != S;
+  } = e, I = (0, l.wj)(E) ? _.BRd.DARK : _.BRd.LIGHT, T = (0, u.Gd)(h.id, I), S = b && null != h.config.cosponsorMetadata && null != T;
   return (0, r.jsxs)("div", {
     className: a()(p.partnerBranding, t),
     children: [y && (0, r.jsx)(f.Fl, {
@@ -68,14 +68,14 @@ let E = function(e) {
       children: e => (0, r.jsx)(o.animated.img, {
         ref: e,
         className: a()(p.partnerBrandingLogotype, n, {
-          [p.partnerBrandingLogotypeWithCosponsor]: T
+          [p.partnerBrandingLogotypeWithCosponsor]: S
         }),
         style: O,
         alt: h.config.messages.gameTitle,
         src: (0, d.fh)(h, d.eC.LOGO_TYPE, I).url,
         onLoad: v
       })
-    }), T && (0, r.jsxs)(r.Fragment, {
+    }), S && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: p.cosponsorBrandSeparatorWrapper,
         style: {
@@ -94,7 +94,7 @@ let E = function(e) {
             className: a()(p.partnerBrandingLogotype, p.partnerBrandingLogotypeWithCosponsor, n),
             style: O,
             alt: null != (i = null == (t = h.config.cosponsorMetadata) ? true : t.name) ? i : "",
-            src: S.url,
+            src: T.url,
             onLoad: v
           })
         }

@@ -64,28 +64,28 @@ function j(e) {
     handleItemSelect: n
   } = e, i = (0, O.gU)(), a = (0, y.Z)();
   return t === N.dG.CONTENT_AND_SOCIAL || t === N.dG.DATA_AND_PRIVACY ? null : (0, r.jsxs)(c.njP, {
-    className: D.settingsTabBar,
-    "aria-label": w.intl.string(P.default.RZqaJn),
+    className: w.settingsTabBar,
+    "aria-label": D.intl.string(P.default.RZqaJn),
     selectedItem: t,
     type: "top",
     look: "brand",
     onItemSelect: n,
     children: [(0, r.jsx)(c.njP.Item, {
-      className: D.settingsTabBarItem,
+      className: w.settingsTabBarItem,
       id: N.dG.ACTIVITY,
-      children: w.intl.string(P.default.bdBmqy)
+      children: D.intl.string(P.default.bdBmqy)
     }), (0, r.jsxs)(c.njP.Item, {
-      className: D.settingsTabBarItem,
+      className: w.settingsTabBarItem,
       id: N.dG.REQUESTS,
-      "aria-label": w.intl.string(P.default["gVWG+6"]),
-      children: [w.intl.string(P.default["gVWG+6"]), i > 0 ? (0, r.jsx)(c.mAB, {
-        className: D.badge,
+      "aria-label": D.intl.string(P.default["gVWG+6"]),
+      children: [D.intl.string(P.default["gVWG+6"]), i > 0 ? (0, r.jsx)(c.mAB, {
+        className: w.badge,
         count: i
       }) : null]
     }), a ? (0, r.jsx)(c.njP.Item, {
-      className: D.settingsTabBarItem,
+      className: w.settingsTabBarItem,
       id: N.dG.SETTINGS,
-      children: w.intl.string(w.t["3D5yo/"])
+      children: D.intl.string(D.t["3D5yo/"])
     }) : null]
   })
 }
@@ -99,7 +99,7 @@ function k(e) {
   return (0, r.jsx)(c.f6W, {
     theme: t,
     children: e => (0, r.jsxs)(h.Z, {
-      className: o()(e, D.sidebarTabBar),
+      className: o()(e, w.sidebarTabBar),
       scrollable: s.tq,
       role: "navigation",
       "aria-labelledby": a,
@@ -109,22 +109,22 @@ function k(e) {
         "aria-hidden": true
       }), (0, r.jsx)(h.Z.Title, {
         id: a,
-        children: w.intl.string(P.default.RZqaJn)
+        children: D.intl.string(P.default.RZqaJn)
       }), (0, r.jsx)(h.Z.Divider, {}), (0, r.jsxs)(c.njP, {
-        "aria-label": w.intl.string(P.default.RZqaJn),
+        "aria-label": D.intl.string(P.default.RZqaJn),
         selectedItem: n,
         type: "top-pill",
         onItemSelect: i,
         children: [(0, r.jsx)(c.njP.Item, {
           id: N.dG.ACTIVITY,
-          className: D.item,
-          children: w.intl.string(P.default.bdBmqy)
+          className: w.item,
+          children: D.intl.string(P.default.bdBmqy)
         }), (0, r.jsxs)(c.njP.Item, {
           id: N.dG.REQUESTS,
-          className: D.item,
-          "aria-label": w.intl.string(P.default["gVWG+6"]),
-          children: [w.intl.string(P.default["gVWG+6"]), l > 0 ? (0, r.jsx)(c.mAB, {
-            className: D.badge,
+          className: w.item,
+          "aria-label": D.intl.string(P.default["gVWG+6"]),
+          children: [D.intl.string(P.default["gVWG+6"]), l > 0 ? (0, r.jsx)(c.mAB, {
+            className: w.badge,
             count: l
           }) : null]
         })]
@@ -188,11 +188,11 @@ function G() {
     let e = Chunk695346.Ex.getSetting();
     require && exports && true === module && Chunk695346.Ex.updateSetting(true)
   }, [require, exports]);
-  let S = e => {
+  let T = e => {
     v(e)
   };
   if (Chunk273879) return null;
-  let T = Chunk631885 !== Chunk292352.dG.SETTINGS ? Chunk631885 : Chunk292352.dG.ACTIVITY,
+  let S = Chunk631885 !== Chunk292352.dG.SETTINGS ? Chunk631885 : Chunk292352.dG.ACTIVITY,
     A = L[Chunk731934];
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: module,

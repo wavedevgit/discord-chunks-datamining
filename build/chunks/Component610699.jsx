@@ -174,14 +174,14 @@ function F(e) {
   l()(E === x.Iq.EMBEDDED_APPLICATION && null != b, "invalid application invite");
   let y = i.useCallback(() => {
       var e;
-      C.default.track(w.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
+      C.default.track(D.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
         application_id: b.id,
         invite_inviter_id: null == (e = s.inviter) ? true : e.id
       })
     }, [null == (t = s.inviter) ? true : t.id, b.id]),
-    v = (0, c.e7)([S.Z], () => null != s.guild ? S.Z.getGuild(s.guild.id) : null, [s]),
+    v = (0, c.e7)([T.Z], () => null != s.guild ? T.Z.getGuild(s.guild.id) : null, [s]),
     N = (0, O.Z)([b.id])[0],
-    D = (0, c.e7)([_.ZP], () => {
+    w = (0, c.e7)([_.ZP], () => {
       var e;
       return (null == s ? true : s.channel) != null && (null == (e = _.ZP.getSelfEmbeddedActivityForChannel(s.channel.id)) ? true : e.applicationId) === b.id
     }),
@@ -195,7 +195,7 @@ function F(e) {
       })
     }),
     j = I.Z.getChannel(null == (n = s.channel) ? true : n.id),
-    k = (0, c.e7)([T.Z], () => null != j && T.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, j), [j]),
+    k = (0, c.e7)([S.Z], () => null != j && S.Z.can(D.Plq.USE_EMBEDDED_ACTIVITIES, j), [j]),
     {
       analyticsLocations: U
     } = (0, h.ZP)(p.Z.INVITE_EMBED),
@@ -213,14 +213,14 @@ function F(e) {
         analyticsLocations: U
       })
     }, [s, u, U, d]),
-    F = s.state === w.r2o.ACCEPTING,
+    F = s.state === D.r2o.ACCEPTING,
     H = null != v;
   if (null == v) {
     if (null == s.guild) return (0, r.jsx)(P.Z, {});
     v = (0, R.Qs)(s.guild)
   }
-  a = H ? D ? L.intl.string(L.t.DPfdsq) : M ? L.intl.string(L.t.sqe0hj) : L.intl.string(L.t.RscU7I) : L.intl.string(L.t["2BP08E"]);
-  let Y = H && !k || H && D;
+  a = H ? w ? L.intl.string(L.t.DPfdsq) : M ? L.intl.string(L.t.sqe0hj) : L.intl.string(L.t.RscU7I) : L.intl.string(L.t["2BP08E"]);
+  let Y = H && !k || H && w;
   return (k || (o = L.intl.string(L.t.hHGrWz)), null == s.code || "" === s.code || null == N) ? null : (0, r.jsx)(h.Gt, {
     value: U,
     children: (0, r.jsx)(V, {
@@ -262,10 +262,10 @@ function V(e) {
     onView: v
   } = e, {
     bot: I,
-    icon: S
-  } = t, T = N.ZP.getApplicationIconURL({
+    icon: T
+  } = t, S = N.ZP.getApplicationIconURL({
     id: t.id,
-    icon: S,
+    icon: T,
     bot: I
   }), A = (0, y.G)(t), C = (0, b.E)(t), R = n.length, P = i.useMemo(() => [{
     label: _,
@@ -278,7 +278,7 @@ function V(e) {
   return (0, r.jsx)(m.W, G(k({
     header: t.name,
     title: L.intl.string(L.t["7vb6nw"]),
-    iconSrc: T
+    iconSrc: S
   }, C), {
     onClickBanner: A,
     info: (0, r.jsxs)("div", {
@@ -304,7 +304,7 @@ function V(e) {
     onClickContent: A,
     trackingConfig: {
       id: t.id,
-      linkType: D.U.ACTIVITY_INVITE,
+      linkType: w.U.ACTIVITY_INVITE,
       onView: v,
       guildId: s.id,
       channelId: null == o ? true : o.id,

@@ -33,19 +33,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk182279 = require("./182279.js");
-let w = (e, t) => n => {
+let D = (e, t) => n => {
     n.stopPropagation(), u.default.selectVoiceChannel(e.channel_id, false), null == t || t(n)
   },
-  D = (e, t) => n => {
+  w = (e, t) => n => {
     let r = p.Z.getChannel(e.channel_id);
     null != r && (n.stopPropagation(), (0, _.Cq)(r), null == t || t(n))
   },
   x = (e, t) => {
     switch (null == e ? true : e.entity_type) {
       case N.WX.STAGE_INSTANCE:
-        return D(e, t);
+        return w(e, t);
       case N.WX.VOICE:
-        return w(e, t)
+        return D(e, t)
     }
     return () => {}
   },
@@ -183,10 +183,10 @@ let w = (e, t) => n => {
       }),
       children: (0, r.jsxs)(l.P3F, {
         onClick: b,
-        children: [null != n.image && (0, r.jsx)(S.Z, {
+        children: [null != n.image && (0, r.jsx)(T.Z, {
           source: (0, I.Z)(n),
           className: P.banner
-        }), (0, r.jsx)(T.ZP, {
+        }), (0, r.jsx)(S.ZP, {
           name: n.name,
           description: null != (t = n.description) ? t : true,
           descriptionClassName: P.eventDescription,

@@ -2,7 +2,7 @@
 /** chunk id: 549635, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dt: () => S,
+  Dt: () => T,
   ZP: () => A,
   ze: () => I
 }), require("./997841.js");
@@ -89,12 +89,12 @@ function I(e, t) {
   })
 }
 
-function S(e) {
+function T(e) {
   let t = _.Z.toURLSafe(e);
   return null == t ? null : (t.searchParams.append("format", "webp"), t.toString())
 }
 
-function T(e) {
+function S(e) {
   let t, {
       media: n,
       obscured: i = false,
@@ -109,7 +109,7 @@ function T(e) {
       proxyUrl: b,
       alt: v,
       type: I,
-      maxWidth: T,
+      maxWidth: S,
       maxHeight: A
     } = n,
     N = O(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
@@ -117,12 +117,12 @@ function T(e) {
       zoomed: R
     } = (0, p.Y)(),
     P = C(R, g, b, n.contentType, n.originalContentType),
-    w = null != d && 0 !== d && null != _ && 0 !== _;
-  if ("VIDEO" === I && w && null != b) {
-    var D;
-    let e = S(b);
+    D = null != d && 0 !== d && null != _ && 0 !== _;
+  if ("VIDEO" === I && D && null != b) {
+    var w;
+    let e = T(b);
     if (null == e) return null;
-    let t = null != (D = n.renderLinkComponent) ? D : c.iT;
+    let t = null != (w = n.renderLinkComponent) ? w : c.iT;
     return (0, r.jsx)(s.Z, y(E({}, N), {
       src: P,
       width: d,
@@ -143,7 +143,7 @@ function T(e) {
       disableArrowKeySeek: true
     }))
   }
-  return "IMAGE" === I && (t = w ? (0, r.jsx)(o.ZP, y(E({}, N), {
+  return "IMAGE" === I && (t = D ? (0, r.jsx)(o.ZP, y(E({}, N), {
     src: P,
     width: d,
     height: _,
@@ -169,7 +169,7 @@ function T(e) {
     children: t
   }) : null
 }
-let A = Chunk647438.memo(T);
+let A = Chunk647438.memo(S);
 
 function C(e, t, n, r, i) {
   return e && _.Z.isDiscordAssetUrl(t, r, i) ? (0, l.s$)(t, r, i) : (0, u.q)({

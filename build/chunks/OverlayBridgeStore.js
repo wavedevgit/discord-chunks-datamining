@@ -5,7 +5,7 @@ let r;
 require.r(exports), require.d(exports, {
   OverlayPIDStatus: () => W,
   default: () => e1,
-  getOverlayURL: () => eS
+  getOverlayURL: () => eT
 }), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./853839.js"), require("./570086.js"), require("./479048.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./358797.js"), require("./415506.js"), require("./49124.js");
 var i, Chunk807864 = require("./807864.js"),
   Chunk442837 = require("./442837.js"),
@@ -200,7 +200,7 @@ function em() {
         for (let l of (el.log("transitionOverlayPIDStatus: Uploaded minidumps", e), e)) {
           var t, n, r, i, a, o, s;
           if (null == l) continue;
-          let e = null != l.processName ? D.Z.getGameByExecutable(l.processName) : null;
+          let e = null != l.processName ? w.Z.getGameByExecutable(l.processName) : null;
           L.default.track(B.rMx.OVERLAY_HOOK_CRASHED, {
             process_name: null == l ? true : l.processName,
             game_name: null != (t = null == e ? true : e.name) ? t : null,
@@ -228,11 +228,11 @@ async function eE(e) {
     if (k.ZP.supportsFeature(B.eRX.CREATE_HOST_ON_ATTACH))
       if (q.size > 0) {
         e_ = "reconcile.getOverlayURL";
-        let t = await eS();
+        let t = await eT();
         e_ = "reconcile.createHostProcess", e.createHostProcess(t, eC, eA)
       } else e_ = "reconcile.destroyHostProcess", e.destroyHostProcess(), eI((0, U.getPID)());
     else if (Q) {
-      let t = await eS();
+      let t = await eT();
       e.createHostProcess(t, eC, eA)
     } else e.destroyHostProcess(), eI((0, U.getPID)())
   } catch (t) {
@@ -301,7 +301,7 @@ async function eO(e) {
     el.verbose("updateIntendedOverlayPIDs: retrying failed overlay pid ".concat(n)), await r(n), i = true
   }
   for (let t of null != (n = e.added) ? n : []) {
-    let n = T.default.getTrackedGameByPid(t);
+    let n = S.default.getTrackedGameByPid(t);
     if (null == n) {
       el.error("updateIntendedOverlayPIDs: Tracked game not found for pid=".concat(t));
       continue
@@ -339,14 +339,14 @@ let ev = eh("updateIntendedOverlayPIDs", e => (el.info("updateIntendedOverlayPID
     C.Z.isOverlayV3EnabledForPID(e) || (0, U.setPID)(U.UNSET_PID)
   });
 
-function eS() {
+function eT() {
   return new Promise(e => {
     e0.addConditionalChangeListener(() => {
       if (null != r) return e(r), false
     })
   })
 }
-let eT = eh("setOverlayEnabled", async e => {
+let eS = eh("setOverlayEnabled", async e => {
   if (!(0, U.supportsLegacy)()) return;
   if (Q === e) return void el.verbose("setOverlayEnabled: no change", {
     newOverlayEnabled: e
@@ -364,7 +364,7 @@ function eA(e) {
 function eC(e, t, n) {
   var r;
   let i = null == (r = b.ZP.getGameForPID(e)) ? true : r.name,
-    a = D.Z.getGameByName(i),
+    a = w.Z.getGameByName(i),
     o = V({
       game_name: i,
       game_id: null == a ? null : a.id,
@@ -401,9 +401,9 @@ function eR(e) {
 function eP(e) {
   switch (es && el.info("[app data received]", e), e.type) {
     case B.BmY.CONNECT:
-      let t = w.default.getToken();
+      let t = D.default.getToken();
       if (null == t) break;
-      (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), Z.bv), Promise.all([(0, S.Z)(t, e.pid), o.ZP.PersistedStore.getAllStates()]).then(t => {
+      (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), Z.bv), Promise.all([(0, T.Z)(t, e.pid), o.ZP.PersistedStore.getAllStates()]).then(t => {
         let [n, r] = t, {
           pid: i,
           token: a
@@ -432,7 +432,7 @@ function eP(e) {
       (0, y.K)(e.payload)
   }
 }
-async function ew(e, t) {
+async function eD(e, t) {
   let n = await (0, G.K)();
   if (null == n) return void el.error("setInputLocked: overlay module failed loaded");
   let r = null != t ? t : $;
@@ -447,8 +447,8 @@ async function ew(e, t) {
   }
 }
 
-function eD(e, t) {
-  e ? setTimeout(() => ew(e, t), 200) : ew(e, t)
+function ew(e, t) {
+  e ? setTimeout(() => eD(e, t), 200) : eD(e, t)
 }
 let ex = null;
 
@@ -459,8 +459,8 @@ function eL(e) {
   } = e, r = q.get(n);
   if ((ee.has(n) && ev(true), null != r && null != K[n]) && (t || "READY" === r || "CRASHED" === r)) {
     if (t ? en.delete(n) : en.add(n), eo.clear(), null != ex && (clearTimeout(ex), ex = null, t)) return;
-    t ? eD(t, n) : ex = setTimeout(() => {
-      eD(t, n), ex = null
+    t ? ew(t, n) : ex = setTimeout(() => {
+      ew(t, n), ex = null
     }, 100)
   }
 }
@@ -469,11 +469,11 @@ function eM(e) {
   let {
     region: t
   } = e;
-  eo.add(t), eD(false, $)
+  eo.add(t), ew(false, $)
 }
 
 function ej() {
-  eo.clear(), eD(true, $)
+  eo.clear(), ew(true, $)
 }
 
 function ek(e) {
@@ -482,7 +482,7 @@ function ek(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "f4ca614b0dcbf0633bbd48c258c26a1f1a995561"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "b947fc3861f4daf0e59225a69d43789f912a7dd7"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {
@@ -533,7 +533,7 @@ function eH(e) {
   let {
     legacyEnabled: t
   } = e;
-  return eT(t), false
+  return eS(t), false
 }
 
 function eY(e) {
@@ -597,7 +597,7 @@ function eq(e) {
 }
 
 function eX() {
-  Chunk353926.Z.hasLoadedExperiments && !z && (z = true, eT(Chunk454991.v.legacyEnabled))
+  Chunk353926.Z.hasLoadedExperiments && !z && (z = true, eS(Chunk454991.v.legacyEnabled))
 }
 
 function eQ() {
@@ -616,7 +616,7 @@ class e$ extends(i = Chunk442837.ZP.Store) {
     return null != module && this.isInputLocked(module)
   }
   isInputLocked(e) {
-    return T.default.isOverlayOOPEnabledForPid(e) ? N.Z.isInputLocked(e) : !en.has(e)
+    return S.default.isOverlayOOPEnabledForPid(e) ? N.Z.isInputLocked(e) : !en.has(e)
   }
   DEV_isInputLockedV3(e) {
     return N.Z.isInputLocked(e)

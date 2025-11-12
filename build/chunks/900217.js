@@ -30,16 +30,16 @@ module.exports = function(e, t) {
       O = e._latestEditorState,
       v = u(l(m)),
       I = i.decode(v),
-      S = I.blockKey,
-      T = I.decoratorKey,
+      T = I.blockKey,
+      S = I.decoratorKey,
       A = I.leafKey,
-      C = O.getBlockTree(S).getIn([T, "leaves", A]),
+      C = O.getBlockTree(T).getIn([S, "leaves", A]),
       N = C.start,
       R = C.end,
       P = O.getCurrentContent(),
-      w = P.getBlockForKey(S),
-      D = w.getText().slice(N, R);
-    if (y.endsWith(f) && (y = y.slice(0, false)), y === D) {
+      D = P.getBlockForKey(T),
+      w = D.getText().slice(N, R);
+    if (y.endsWith(f) && (y = y.slice(0, false)), y === w) {
       var x = t.nativeEvent.inputType;
       if (x) {
         var L = _(x, O);
@@ -53,15 +53,15 @@ module.exports = function(e, t) {
         focusOffset: R,
         isBackward: false
       }),
-      k = w.getEntityAt(N),
+      k = D.getEntityAt(N),
       U = s(k) ? P.getEntity(k) : null,
       G = null != U ? U.getMutability() : null,
       B = "MUTABLE" === G,
       Z = B ? "spellcheck-change" : "apply-entity",
-      F = r.replaceText(P, j, y, w.getInlineStyleAt(N), B ? w.getEntityAt(N) : null);
+      F = r.replaceText(P, j, y, D.getInlineStyleAt(N), B ? D.getEntityAt(N) : null);
     if (d) n = h.anchorOffset, p = (c = N + Math.min(n, o = h.focusOffset)) + Math.abs(n - o), n = c, o = p;
     else {
-      var V = y.length - D.length;
+      var V = y.length - w.length;
       c = M.getStartOffset(), p = M.getEndOffset(), n = g ? p + V : c, o = p + V
     }
     var H = F.merge({

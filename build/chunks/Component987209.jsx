@@ -32,9 +32,9 @@ function y(e) {
     children: E
   } = e, {
     selectedSkuId: b
-  } = (0, d.JL)(), [y, O] = i.useState(n), [v, I] = i.useState(), [S, T] = i.useState(false), A = (0, u.pO)(y), C = m;
+  } = (0, d.JL)(), [y, O] = i.useState(n), [v, I] = i.useState(), [T, S] = i.useState(false), A = (0, u.pO)(y), C = m;
   A && (C = null != f ? f : h);
-  let [N, R] = i.useState(C), P = (0, l.iE)(), w = (0, l.yX)(), [D, x] = i.useState(), [L, M] = i.useState(t && (0, u.MY)(y) === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? p.intl.string(p.t.ZkOo1U) : c), [j, k] = i.useState(true), [U, G] = i.useState(true), B = (0, u.E5)(b, t), [Z, F] = i.useState(false), [V, H] = i.useState(false), [Y, W] = i.useState(), K = i.useCallback(e => {
+  let [N, R] = i.useState(C), P = (0, l.iE)(), D = (0, l.yX)(), [w, x] = i.useState(), [L, M] = i.useState(t && (0, u.MY)(y) === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? p.intl.string(p.t.ZkOo1U) : c), [j, k] = i.useState(true), [U, G] = i.useState(true), B = (0, u.E5)(b, t), [Z, F] = i.useState(false), [V, H] = i.useState(false), [Y, W] = i.useState(), K = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
     } = e;
@@ -53,8 +53,8 @@ function y(e) {
       setGiftRecipient: O,
       giftRecipientError: v,
       setGiftRecipientError: I,
-      validatingGiftRecipient: S,
-      setValidatingGiftRecipient: T,
+      validatingGiftRecipient: T,
+      setValidatingGiftRecipient: S,
       soundEffect: j,
       setSoundEffect: k,
       emojiConfetti: U,
@@ -70,8 +70,8 @@ function y(e) {
       recommendedGiftSkuIds: z,
       giftingOrigin: _,
       claimableRewards: P,
-      claimableVariants: w,
-      selectedGiftingPromotionReward: D,
+      claimableVariants: D,
+      selectedGiftingPromotionReward: w,
       setSelectedGiftingPromotionReward: x
     },
     children: E

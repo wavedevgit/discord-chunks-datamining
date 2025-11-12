@@ -34,16 +34,16 @@ let d = {},
   O = false,
   v = null,
   I = Chunk800530.bK.DIDNT_VIOLATE_POLICY,
-  S = "",
   T = "",
+  S = "",
   A = "",
   C = 0,
   N = null,
   R = false,
   P = Chunk800530.oE.NONE,
-  w = null;
+  D = null;
 
-function D(e) {
+function w(e) {
   p = true
 }
 
@@ -56,7 +56,7 @@ function x(e) {
     username: o,
     appealEligibility: s
   } = e;
-  d = a()(t, "id"), _ = n, E = r, b = i, p = false, h = true, m = null, T = o, y = s
+  d = a()(t, "id"), _ = n, E = r, b = i, p = false, h = true, m = null, S = o, y = s
 }
 
 function L(e) {
@@ -78,7 +78,7 @@ function j(e) {
     username: i,
     isAppealEligible: a
   } = e;
-  d[t.id] = t, f[t.id] = l.OY.SUCCESS, _ = n, p = false, m = null, E = r, b = a, h = true, T = i
+  d[t.id] = t, f[t.id] = l.OY.SUCCESS, _ = n, p = false, m = null, E = r, b = a, h = true, S = i
 }
 
 function k(e) {
@@ -97,7 +97,7 @@ function U(e) {
 }
 
 function G() {
-  g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, S = ""
+  g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, T = ""
 }
 
 function B(e) {
@@ -111,7 +111,7 @@ function Z(e) {
   let {
     userInput: t
   } = e;
-  S = t
+  T = t
 }
 
 function F(e) {
@@ -168,32 +168,32 @@ function q(e) {
 
 function X(e) {
   let {} = e;
-  P = c.oE.LOADING, w = null
+  P = c.oE.LOADING, D = null
 }
 
 function Q(e) {
   let {} = e;
-  P = c.oE.LOADING, w = null, C += 1
+  P = c.oE.LOADING, D = null, C += 1
 }
 
 function J(e) {
   let {
     success: t
   } = e;
-  P = t ? c.oE.SUCCESS : C < c.o6 ? c.oE.LOADING : c.oE.FAILURE, w = null
+  P = t ? c.oE.SUCCESS : C < c.o6 ? c.oE.LOADING : c.oE.FAILURE, D = null
 }
 
 function $(e) {
   let {
     error: t
   } = e;
-  P = c.oE.ERROR, w = t
+  P = c.oE.ERROR, D = t
 }
 
 function ee() {
   p = false, d = {}, _ = {
     state: Chunk531441.Sn.ALL_GOOD
-  }, g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, S = "", y = []
+  }, g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, T = "", y = []
 }
 class et extends(r = Chunk442837.ZP.Store) {
   isFetching() {
@@ -233,7 +233,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return I
   }
   getFreeTextAppealReason() {
-    return S
+    return T
   }
   getIsSubmitting() {
     return O
@@ -242,7 +242,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return v
   }
   getUsername() {
-    return T
+    return S
   }
   getAgeVerificationWebviewUrl() {
     return A
@@ -257,7 +257,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return P
   }
   getAgeCheckError() {
-    return w
+    return D
   }
   getAgeCheckAttempts() {
     return C
@@ -265,7 +265,7 @@ class et extends(r = Chunk442837.ZP.Store) {
 }
 u(et, "displayName", "SafetyHubStore");
 let en = new et(Chunk570140.Z, {
-  SAFETY_HUB_FETCH_START: D,
+  SAFETY_HUB_FETCH_START: w,
   SAFETY_HUB_FETCH_SUCCESS: x,
   SAFETY_HUB_FETCH_FAILURE: L,
   SAFETY_HUB_FETCH_CLASSIFICATION_START: M,

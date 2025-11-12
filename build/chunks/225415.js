@@ -45,14 +45,14 @@ function I(e) {
   }
 }
 
-function S(e) {
+function T(e) {
   i.Z.fetchMessages({
     channelId: e,
     limit: b.AQB
   })
 }
 
-function T(e) {
+function S(e) {
   let t = _.Z.getChannel(e);
   ((null == t ? true : t.type) === b.d4z.GUILD_FORUM || (null == t ? true : t.type) === b.d4z.GUILD_MEDIA) && (0, c.EB)(t)
 }
@@ -75,7 +75,7 @@ class A extends Chunk147913.Z {
               channelId: r
             } = n, i = _.Z.getChannel(r);
             (null == i ? true : i.nsfw) && (s.Z.clear(r), r === e && (t = true))
-          }), t && null != e && (S(e), T(e))
+          }), t && null != e && (T(e), S(e))
         }
       } catch (e) {
         v.warn("Error clearing cache and refetching messages", e)

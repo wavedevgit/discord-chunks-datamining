@@ -3,17 +3,17 @@
 "use strict";
 require.d(exports, {
   O1: () => eA,
-  Sg: () => eS,
+  Sg: () => eT,
   TE: () => ex,
   ZP: () => eB,
   aT: () => ek,
-  ae: () => eT,
+  ae: () => eS,
   bL: () => eI,
   hJ: () => eN,
   iV: () => eL,
   jx: () => eP,
-  oR: () => eD,
-  qz: () => ew,
+  oR: () => ew,
+  qz: () => eD,
   vB: () => eU,
   x2: () => eR
 }), require("./388685.js"), require("./415506.js"), require("./781311.js");
@@ -142,7 +142,7 @@ function eI(e, t, a, o, s) {
     let y = null != (E = null == (g = k.Z.getStickerPreview(s, t.drafts.type)) ? true : g.map(e => e.id)) ? E : [],
       O = null != (b = W.Z.getUploads(s, t.drafts.type)) ? b : [],
       v = (0, j.q5)(s);
-    if (null == d && !_ && !m && (0, w.CB)(O, s)) {
+    if (null == d && !_ && !m && (0, D.CB)(O, s)) {
       c(false), (0, p.ZDy)(async () => {
         let {
           default: e
@@ -182,14 +182,14 @@ function eI(e, t, a, o, s) {
   }
 }
 
-function eS(e, t, n) {
+function eT(e, t, n) {
   return i.useCallback(r => {
     var i, a;
     t === ee.Ie.CREATE_FORUM_POST || t === ee.Ie.CREATE_ANNOUNCEMENT_POST ? null == (a = n.current) || a.insertGIF(r) : e(r.url, true, true, true), (0, R._Q)(), null == (i = n.current) || i.focus()
   }, [n, e, t])
 }
 
-function eT(e) {
+function eS(e) {
   return i.useCallback(t => {
     let {
       emoji: n,
@@ -296,13 +296,13 @@ function eP() {
   }
 }
 
-function ew(e) {
+function eD(e) {
   let t = i.useRef(null);
   if (null != e && "function" == typeof e) throw Error("Only Ref objects are supported");
   return null == e ? t : e
 }
 
-function eD(e) {
+function ew(e) {
   let [t, n] = i.useState(0);
   return {
     editorHeight: t,
@@ -314,7 +314,7 @@ function eD(e) {
 
 function ex(e, t, n, r) {
   let i = e.getGuildId(),
-    a = (0, _.e7)([D.Z], () => null != i && D.Z.isLurking(i), [i]),
+    a = (0, _.e7)([w.Z], () => null != i && w.Z.isLurking(i), [i]),
     o = (0, _.e7)([F.ZP, K.default], () => {
       var e, t;
       let n = K.default.getCurrentUser();
@@ -422,8 +422,8 @@ function eG(e, t) {
     className: O,
     innerClassName: C,
     editorClassName: R,
-    id: w,
-    required: D,
+    id: D,
+    required: w,
     disabled: x,
     placeholder: j,
     accessibilityLabel: k,
@@ -462,15 +462,15 @@ function eG(e, t) {
   c()(null != G, "chat input type must be set");
   let {
     analyticsLocations: eq
-  } = (0, b.ZP)(E.Z.CHANNEL_TEXT_AREA), eX = ew(t), eQ = i.useRef(null), eJ = i.useRef(null), e$ = i.useRef(null), e0 = i.useRef(null), e1 = i.useRef(null);
+  } = (0, b.ZP)(E.Z.CHANNEL_TEXT_AREA), eX = eD(t), eQ = i.useRef(null), eJ = i.useRef(null), e$ = i.useRef(null), e0 = i.useRef(null), e1 = i.useRef(null);
   null == eZ || eZ(e$.current);
-  let e3 = (0, y.Z)(U),
-    [e2, e4] = i.useState(!e3);
+  let e2 = (0, y.Z)(U),
+    [e3, e4] = i.useState(!e2);
   (0, m.PM)(eX, e => {
     let {
       width: t
     } = e;
-    return e4(!e3 && (null == t || t > eb))
+    return e4(!e2 && (null == t || t > eb))
   });
   let {
     activeCommand: e8,
@@ -513,8 +513,8 @@ function eG(e, t) {
       handleMaybeShowAutocomplete: tg,
       handleHideAutocomplete: tE
     } = eP(),
-    tb = eS(tp, G, e$),
-    ty = eT(e$),
+    tb = eT(tp, G, e$),
+    ty = eS(e$),
     tO = eA({
       editorRef: e$,
       disabled: e9,
@@ -529,9 +529,9 @@ function eG(e, t) {
       return null == e1 || null == (e = e1.current) ? true : e.hide()
     }, []),
     {
-      editorHeight: tS,
-      handleResize: tT
-    } = eD(z),
+      editorHeight: tT,
+      handleResize: tS
+    } = ew(z),
     {
       handleTab: tA,
       handleEnter: tC,
@@ -540,9 +540,9 @@ function eG(e, t) {
     {
       expressionPickerView: tR,
       shouldHideExpressionPicker: tP,
-      handleOuterClick: tw
+      handleOuterClick: tD
     } = eL(G, e$),
-    tD = ej(tc, e$),
+    tw = ej(tc, e$),
     tx = ek(f),
     {
       currentAutocompleteType: tL,
@@ -553,7 +553,7 @@ function eG(e, t) {
     } = $.n.useConfig({
       location: "ChannelAppLauncher"
     }),
-    tk = (0, T.Z)({
+    tk = (0, S.Z)({
       type: G
     });
   (0, J.S)(tc, U.guild_id, U.id);
@@ -569,7 +569,7 @@ function eG(e, t) {
       activeCommand: e8,
       pendingReply: W,
       pendingScheduledMessage: eK,
-      selectedAutocompleteInputType: tD
+      selectedAutocompleteInputType: tw
     }),
     tH = 0 === f.trim().length,
     tY = G.layout === ee.gy.INLINE,
@@ -589,7 +589,7 @@ function eG(e, t) {
       channel: U,
       handleSubmit: th,
       isEmpty: tH,
-      showAllButtons: e2
+      showAllButtons: e3
     }),
     tX = tZ ? (0, r.jsx)(es.Z, {
       type: G,
@@ -647,20 +647,20 @@ function eG(e, t) {
               [ep.sansAttachButtonCreatePost]: G === ee.Ie.CREATE_FORUM_POST || G === ee.Ie.FORWARD_MESSAGE_INPUT,
               [ep.sansAttachButtonUserProfileReply]: G === ee.Ie.USER_PROFILE_REPLY
             }),
-            onMouseDown: tw,
+            onMouseDown: tD,
             children: [tz, tj && tK, tB, (0, r.jsx)(p.tEY, {
               ringTarget: eX,
               ringClassName: ep.focusRing,
               children: (0, r.jsx)(et.Z, {
                 ref: e$,
-                id: w,
+                id: D,
                 focused: B,
                 useSlate: ti,
                 textValue: f,
                 richValue: h,
                 disabled: e9,
                 placeholder: j,
-                required: D,
+                required: w,
                 accessibilityLabel: k,
                 isPreviewing: (e6 || e7) && tn,
                 channel: U,
@@ -671,7 +671,7 @@ function eG(e, t) {
                 allowNewLines: eO,
                 "aria-describedby": eG,
                 onChange: tf,
-                onResize: tT,
+                onResize: tS,
                 onBlur: q,
                 onFocus: X,
                 onKeyDown: er,
@@ -698,7 +698,7 @@ function eG(e, t) {
               })
             }), tq, !tj && tK]
           })]
-        }), ta ? null : (0, r.jsx)(S.Z, {
+        }), ta ? null : (0, r.jsx)(T.Z, {
           ref: eQ,
           channel: U,
           canOnlyUseTextCommands: tU
@@ -722,13 +722,13 @@ function eG(e, t) {
           onSendSticker: tO,
           onVisibilityChange: tM,
           editorScrollerRef: e0,
-          editorHeight: tS,
+          editorHeight: tT,
           barsHeight: 40 * tV.floating.length,
           setValue: (e, t) => null == tf ? true : tf(null, e, t),
           position: eF
         }), (0, r.jsx)(M.Z, {
           textValue: f,
-          editorHeight: tS,
+          editorHeight: tT,
           channelId: U.id
         }), tX, eV]
       }), (0, r.jsx)(p.pdY, {

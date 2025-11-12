@@ -2,7 +2,7 @@
 /** chunk id: 810097, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => T,
+  ZP: () => S,
   _1: () => O,
   jd: () => v
 });
@@ -66,13 +66,13 @@ let O = 2700,
     [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t.TKdBC8),
     [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.bSe71F)
   },
-  S = {
+  T = {
     [Chunk228168.n_.AVATAR]: () => Chunk388032.intl.string(Chunk388032.t.xvN0fV),
     [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t["C/vzS7"]),
     [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.ObfsSj)
   };
 
-function T(e) {
+function S(e) {
   let {
     user: t,
     sourceType: n,
@@ -81,13 +81,13 @@ function T(e) {
     interactionSourceId: b,
     targetRef: O,
     onAction: v,
-    renderMoreButtonPopout: T
+    renderMoreButtonPopout: S
   } = e, A = i.useRef(null), C = (0, s.e7)([d.default], () => d.default.getId() === t.id), N = (0, f.Z)(t.id), {
     onInteraction: R,
     onInteractionPopoutTargetRefChange: P
   } = (0, _.Xo)();
   if (t.bot || C || !N) return null;
-  let w = () => {
+  let D = () => {
       P(O), n === p.n_.AVATAR ? v({
         action: "PRESS_REACT_AVATAR"
       }) : n === p.n_.STATUS ? v({
@@ -100,7 +100,7 @@ function T(e) {
         interactionSourceId: b
       })
     },
-    D = () => {
+    w = () => {
       P(O), n === p.n_.AVATAR ? v({
         action: "PRESS_REPLY_AVATAR"
       }) : n === p.n_.STATUS ? v({
@@ -128,7 +128,7 @@ function T(e) {
       delay: 0,
       "aria-label": false,
       children: (0, r.jsx)(u.zx, {
-        onClick: w,
+        onClick: D,
         className: m.button,
         "aria-label": I[n](),
         "aria-haspopup": "dialog",
@@ -144,16 +144,16 @@ function T(e) {
       delay: 0,
       "aria-label": false,
       children: (0, r.jsx)(u.zx, {
-        onClick: D,
+        onClick: w,
         className: m.button,
-        "aria-label": S[n](),
+        "aria-label": T[n](),
         "aria-haspopup": "dialog",
         children: (0, r.jsx)(c.n$P, {
           size: "xs",
           className: m.icon
         })
       })
-    }), null == T ? true : T(e => {
+    }), null == S ? true : S(e => {
       let t = () => {
         var t;
         P(A), null == (t = e.onClick) || t.call(e)

@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk724913 = require("./724913.js"),
   Chunk430864 = require("./430864.js");
 
-function D(e) {
+function w(e) {
   let {
     width: t = 12,
     height: n = 8,
@@ -115,7 +115,7 @@ function M(e, t, n) {
     })
   }) : (0, r.jsx)("div", {
     className: P.replyBadge,
-    children: (0, r.jsx)(D, {
+    children: (0, r.jsx)(w, {
       className: P.replyIcon
     })
   });
@@ -160,7 +160,7 @@ function j(e, t) {
     onContextMenu: l,
     onPopoutRequestClose: c
   } = e, u = (null == a ? true : a.state) === g.Y.LOADED ? a.message : true;
-  return null == u || u.type === N.uaV.USER_JOIN || u.type === N.uaV.ROLE_SUBSCRIPTION_PURCHASE || u.type === N.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || u.type === N.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || u.type === N.uaV.GUILD_GAMING_STATS_PROMPT || u.type === N.uaV.POLL_RESULT ? null : (0, r.jsx)(T.Z, {
+  return null == u || u.type === N.uaV.USER_JOIN || u.type === N.uaV.ROLE_SUBSCRIPTION_PURCHASE || u.type === N.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || u.type === N.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || u.type === N.uaV.GUILD_GAMING_STATS_PROMPT || u.type === N.uaV.POLL_RESULT ? null : (0, r.jsx)(S.Z, {
     message: u,
     channel: i,
     compact: true,
@@ -241,10 +241,10 @@ function U(e, t, n, i, a, s) {
       iconSize: v
     } = s,
     I = null == t || "" === t || Array.isArray(t) && 0 === t.length,
-    T = (0, b.cv)(E).length > 0,
+    S = (0, b.cv)(E).length > 0,
     A = null != E.interaction,
     C = E.hasFlag(N.iLy.IS_VOICE_MESSAGE),
-    D = E.isPoll(),
+    w = E.isPoll(),
     x = E.type === N.uaV.POLL_RESULT;
   if ((0, _.Z)(e) && (g = (0, r.jsx)(h.Z, {
       size: "custom",
@@ -259,26 +259,26 @@ function U(e, t, n, i, a, s) {
     rendered: t
   });
   else if (I)
-    if (D) {
+    if (w) {
       var L, M;
       u = (0, r.jsx)("div", {
-        className: o()(P.repliedTextContent, w.markup),
+        className: o()(P.repliedTextContent, D.markup),
         children: null == E || null == (M = E.poll) || null == (L = M.question) ? true : L.text
       })
-    } else x ? l = (0, m.N4)(E) : T ? l = R.intl.string(R.t.kHdYCW) : A ? l = R.intl.string(R.t["E+6SSY"]) : C ? l = R.intl.string(R.t.XC3A52) : E.hasFlag(N.iLy.IS_COMPONENTS_V2) ? l = R.intl.string(R.t.Xxat6S) : (l = R.intl.string(R.t["6hGo0c"]), d = (0, r.jsx)(c.XBm, {
+    } else x ? l = (0, m.N4)(E) : S ? l = R.intl.string(R.t.kHdYCW) : A ? l = R.intl.string(R.t["E+6SSY"]) : C ? l = R.intl.string(R.t.XC3A52) : E.hasFlag(N.iLy.IS_COMPONENTS_V2) ? l = R.intl.string(R.t.Xxat6S) : (l = R.intl.string(R.t["6hGo0c"]), d = (0, r.jsx)(c.XBm, {
       size: "custom",
       color: "currentColor",
       className: y,
       width: v,
       height: v
     }));
-  else u = (0, r.jsx)(S.ZP, {
+  else u = (0, r.jsx)(T.ZP, {
     message: E,
     content: t,
     className: a,
     compact: true
   });
-  return T ? d = (0, r.jsx)(c.B7q, {
+  return S ? d = (0, r.jsx)(c.B7q, {
     size: "custom",
     color: "currentColor",
     className: y,
@@ -326,15 +326,15 @@ function G(e) {
     b = M(e, m, s.type),
     y = j(e, m),
     v = k(e, p, E),
-    S = i.useMemo(() => e.compact ? (0, A.Z)((0, O.vc)(l()(), "LT")) : null, [e.compact]);
+    T = i.useMemo(() => e.compact ? (0, A.Z)((0, O.vc)(l()(), "LT")) : null, [e.compact]);
   null != n && null != a && (t = R.intl.formatToPlainString(R.t.RhbQ2K, {
     author: null == a ? true : a.nick,
     repliedAuthor: null == n ? true : n.nick
   }));
-  let T = s.type === N.uaV.CONTEXT_MENU_COMMAND;
+  let S = s.type === N.uaV.CONTEXT_MENU_COMMAND;
   return (0, r.jsxs)("div", {
     id: (0, I.Gq)(s),
-    className: o()(P.repliedMessage, S, T ? P.contextCommandMessage : {
+    className: o()(P.repliedMessage, T, S ? P.contextCommandMessage : {
       [P.messageSpine]: !f && _
     }),
     "aria-label": t,

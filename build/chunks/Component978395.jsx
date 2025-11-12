@@ -74,19 +74,19 @@ function M(e) {
       pronouns: null == M ? true : M.pronouns,
       tags: (0, r.jsx)(p.Z, {
         displayProfile: M,
-        themeType: D.l.POPOUT,
+        themeType: w.l.POPOUT,
         onClose: B
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(g.Z, {
           userId: t.id
-        }), !Y && (0, r.jsx)(S.Z, {
+        }), !Y && (0, r.jsx)(T.Z, {
           userId: t.id,
           isVisible: k,
           onOpenProfile: U
         })]
       })
-    }), F === w.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
+    }), F === D.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
       children: (0, r.jsx)(E.Z, {
         user: t,
         guildId: null == j ? true : j.id,
@@ -125,7 +125,7 @@ function M(e) {
       bio: null == M ? true : M.bio,
       hidePersonalInformation: Y,
       onClose: B
-    }), X && (0, r.jsx)(T.Z, {
+    }), X && (0, r.jsx)(S.Z, {
       widgets: null == M ? true : M.widgets,
       onClick: () => {
         null == U || U({

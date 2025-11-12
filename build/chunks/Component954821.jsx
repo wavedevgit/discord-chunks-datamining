@@ -70,10 +70,10 @@ let b = "MMMM Do, YYYY",
       cancelSubscription: O,
       error: v,
       submitting: I
-    } = y(E), S = async () => {
+    } = y(E), T = async () => {
       await O(a.id) && c()
-    }, T = i.role_benefits.benefits.filter(e => e.ref_type === p.Qs.CHANNEL), A = i.role_benefits.benefits.filter(e => e.ref_type === p.Qs.INTANGIBLE), C = o()(a.currentPeriodEnd).format(b), N = h.intl.formatToPlainString(h.t.KsMRP5, {
-      numChannels: T.length,
+    }, S = i.role_benefits.benefits.filter(e => e.ref_type === p.Qs.CHANNEL), A = i.role_benefits.benefits.filter(e => e.ref_type === p.Qs.INTANGIBLE), C = o()(a.currentPeriodEnd).format(b), N = h.intl.formatToPlainString(h.t.KsMRP5, {
+      numChannels: S.length,
       numAdditionalBenefits: A.length,
       subscriptionEndDate: C
     });
@@ -87,7 +87,7 @@ let b = "MMMM Do, YYYY",
       }, {
         variant: "critical-primary",
         text: h.intl.string(h.t.F6lUDF),
-        onClick: S,
+        onClick: T,
         loading: I
       }],
       title: h.intl.string(h.t.O6l5tM),

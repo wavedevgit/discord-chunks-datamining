@@ -9,8 +9,8 @@ require.d(exports, {
   V4: () => Y,
   _B: () => N,
   dI: () => M,
-  do: () => D,
-  f: () => w,
+  do: () => w,
+  f: () => D,
   mW: () => P,
   uB: () => H
 }), require("./781311.js"), require("./35282.js");
@@ -37,7 +37,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk493090 = require("./493090.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,14 +46,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -91,7 +91,7 @@ function N(e) {
       selectedIndex: s
     })
   };
-  return (0, r.jsx)(l.P3F, C(T({
+  return (0, r.jsx)(l.P3F, C(S({
     className: I.itemContainer,
     onClick: u
   }, (0, m.lR)({
@@ -141,7 +141,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let t = (0, p.nl)(e);
   return (0, r.jsxs)("div", {
     className: I.channelNameContainer,
@@ -157,7 +157,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     searchContext: t
   } = e;
@@ -427,7 +427,7 @@ function V(e) {
           variant: "text-sm/medium",
           color: "text-primary",
           children: null != (a = h.ZP[y.dCx.FILTER_IN].key) ? a : ""
-        }), w(t)]
+        }), D(t)]
       }),
       ariaLabel: t.name
     }

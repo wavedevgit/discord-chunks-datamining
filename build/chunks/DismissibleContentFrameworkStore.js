@@ -130,10 +130,10 @@ function I(e) {
   m.lastDCDismissed = null != t ? t : null
 }
 
-function S() {
+function T() {
   m.dailyCapPeriodStart = null, m.numberOfDCsShownToday = 0, m.dismissibleContentSeenDuringSession = new Set, m.seenForGuildId = new Map, m.lastDCDismissed = null
 }
-class T extends(r = Chunk442837.ZP.PersistedStore) {
+class S extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n, r;
@@ -166,13 +166,13 @@ class T extends(r = Chunk442837.ZP.PersistedStore) {
     return n.setHours(0, 0, 0, 0), null != m.dailyCapPeriodStart && m.dailyCapPeriodStart < n.getTime() && (m.numberOfDCsShownToday = 0, m.dailyCapPeriodStart = null), m.numberOfDCsShownToday >= h
   }
 }
-u(T, "displayName", "DismissibleContentFrameworkStore"), u(T, "persistKey", "DismissibleContentFrameworkStore"), u(T, "migrations", [e => d({}, e)]);
-let A = new T(Chunk570140.Z, {
+u(S, "displayName", "DismissibleContentFrameworkStore"), u(S, "persistKey", "DismissibleContentFrameworkStore"), u(S, "migrations", [e => d({}, e)]);
+let A = new S(Chunk570140.Z, {
   LOGOUT: g,
   DCF_DAILY_CAP_OVERRIDE: E,
   DCF_NEW_USER_MIN_AGE_REQUIRED_OVERRIDE: b,
   DCF_HANDLE_DC_SHOWN: O,
   DCF_HANDLE_DC_DISMISSED: v,
   DCF_OVERRIDE_LAST_DC_DISMISSED: I,
-  DCF_RESET: S
+  DCF_RESET: T
 })

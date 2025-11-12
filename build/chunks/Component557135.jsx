@@ -58,8 +58,8 @@ let v = {
       needSubscriptionToAccess: b,
       locked: v = false,
       routeDirectlyToChannel: I = false,
-      bypassChangeModal: S,
-      bypassBlockedWarningModal: T,
+      bypassChangeModal: T,
+      bypassBlockedWarningModal: S,
       bypassGuildIdCheck: A = false
     } = e;
     t.isThread() && (await d.Z.unarchiveThreadIfNecessary(t.id), u.Z.hasJoined(t.id) || await d.Z.joinThread(t, "Join Voice"));
@@ -67,8 +67,8 @@ let v = {
       N = p.Z.getVoiceStateForSession(f.default.getId(), C),
       R = (null == N ? true : N.channelId) === t.id || _.Z.getChannelId() === p.Z.getCurrentClientVoiceChannelId(t.guild_id),
       P = c.Z.getBlockedUsersForVoiceChannel(t.id),
-      w = c.Z.getIgnoredUsersForVoiceChannel(t.id);
-    return ((0, l.Fd)(new Set([...P, ...w])) && (T = true), T || v || s || !(P.size > 0) && !(w.size > 0)) ? !S && !v && (0, m._)(t) ? new Promise(e => {
+      D = c.Z.getIgnoredUsersForVoiceChannel(t.id);
+    return ((0, l.Fd)(new Set([...P, ...D])) && (S = true), S || v || s || !(P.size > 0) && !(D.size > 0)) ? !T && !v && (0, m._)(t) ? new Promise(e => {
       (0, i.ZDy)(async () => {
         let {
           default: i
@@ -98,7 +98,7 @@ let v = {
           return (0, r.jsx)(i, {
             channelId: t.id,
             blockedUserIds: P,
-            ignoredUserIds: w,
+            ignoredUserIds: D,
             transitionState: o,
             onClose: a,
             onJoin: () => e(this.handleVoiceConnect({
@@ -118,7 +118,7 @@ let v = {
             action: E.q.DISMISS,
             channel_id: t.id,
             blocked_user_ids: Array.from(P),
-            ignored_user_ids: Array.from(w),
+            ignored_user_ids: Array.from(D),
             warning_surface: E.fz.PRE_JOIN_MODAL
           })
         }

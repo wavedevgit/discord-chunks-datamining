@@ -30,10 +30,10 @@ function y(e) {
     skuId: O,
     onComplete: v,
     disableGuildSelector: I
-  } = e, S = (0, o.e7)([p.Z], () => null != O ? p.Z.get(O) : true, [O]), T = (0, o.e7)([h.Z], () => null != O ? h.Z.getForSKU(O) : true, [O]), A = null == (t = (0, o.Wu)([_.Z], () => null != O ? _.Z.getForSKU(O) : [], [O])[0]) ? true : t.id, C = (0, o.e7)([p.Z], () => null != O ? p.Z.getParentSKU(O) : true, [O]), N = null == C ? true : C.bundledSkuIds, R = (0, o.Wu)([_.Z], () => {
+  } = e, T = (0, o.e7)([p.Z], () => null != O ? p.Z.get(O) : true, [O]), S = (0, o.e7)([h.Z], () => null != O ? h.Z.getForSKU(O) : true, [O]), A = null == (t = (0, o.Wu)([_.Z], () => null != O ? _.Z.getForSKU(O) : [], [O])[0]) ? true : t.id, C = (0, o.e7)([p.Z], () => null != O ? p.Z.getParentSKU(O) : true, [O]), N = null == C ? true : C.bundledSkuIds, R = (0, o.Wu)([_.Z], () => {
     var e;
     return null != (e = null == N ? true : N.flatMap(_.Z.getForSKU)) ? e : []
-  }, [N]), P = r.useMemo(() => R.map(e => e.id), [R]), w = (0, E.KK)(null != (n = null == S ? true : S.flags) ? n : 0), D = (0, o.e7)([g.Z], () => null != i && false !== w && g.Z.getEntitlementsForGuild(i, true).some(e => e.skuId === O), [w, O, i]), x = null == S ? true : S.applicationId, L = (null == T ? true : T.published) === true && (null == S ? true : S.isAvailable()) === true, {
+  }, [N]), P = r.useMemo(() => R.map(e => e.id), [R]), D = (0, E.KK)(null != (n = null == T ? true : T.flags) ? n : 0), w = (0, o.e7)([g.Z], () => null != i && false !== D && g.Z.getEntitlementsForGuild(i, true).some(e => e.skuId === O), [D, O, i]), x = null == T ? true : T.applicationId, L = (null == S ? true : S.published) === true && (null == T ? true : T.isAvailable()) === true, {
     app: M
   } = (0, d.Rt)(x), {
     analyticsLocations: j
@@ -44,16 +44,16 @@ function y(e) {
   });
   null == i && (F = true);
   let V = (0, f.Z)(),
-    H = null != U && (0, E.Jf)(U, S),
+    H = null != U && (0, E.Jf)(U, T),
     Y = r.useMemo(() => {
       if (!F || null == M || null == O) return u.rf.LOADING;
       if (!L) return u.rf.UNAVAILABLE;
-      if (!w) {
+      if (!D) {
         if ((null == G ? true : G.skuId) === O) return u.rf.SUBSCRIBED;
         if ((null == Z ? true : Z.skuId) === O && false === H) return u.rf.UPCOMING_PLAN
       }
       return u.rf.AVAILABLE
-    }, [null == G ? true : G.skuId, L, M, F, H, w, null == Z ? true : Z.skuId, O]);
+    }, [null == G ? true : G.skuId, L, M, F, H, D, null == Z ? true : Z.skuId, O]);
   return r.useEffect(() => {
     L && null != O && V && (_.Z.isFetchingForSKU(O) || _.Z.isLoadedForSKU(O) || s.Z.wait(() => {
       (0, l.GZ)(O)
@@ -62,7 +62,7 @@ function y(e) {
     openModal: r.useCallback(() => {
       a()(null != M, "No application"), a()(null != O, "No SKU ID"), a()(L, "Cannot purchase this unpublished plan"), (0, b.H)({
         subscriptionPlanId: A,
-        sku: S,
+        sku: T,
         subscriptionGroupPlanIds: P,
         initialSubscribeForGuild: i,
         disableGuildSelector: I,
@@ -71,8 +71,8 @@ function y(e) {
       }).then(() => {
         null == v || v()
       })
-    }, [M, O, L, A, S, P, i, I, j, y, v]),
+    }, [M, O, L, A, T, P, i, I, j, y, v]),
     subscriptionPurchaseButtonState: Y,
-    isGuildSubscribed: D
+    isGuildSubscribed: w
   }
 }

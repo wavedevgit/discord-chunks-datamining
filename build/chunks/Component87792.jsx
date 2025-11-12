@@ -95,11 +95,11 @@ function Z(e) {
     isMoreLoading: y
   } = (0, g.G)({
     onError: a
-  }), v = (0, p.E2)(n).get(t), [I, C] = i.useState(w.iB), N = i.useCallback(() => {
-    C(e => e + w.iB), b(t)
+  }), v = (0, p.E2)(n).get(t), [I, C] = i.useState(D.iB), N = i.useCallback(() => {
+    C(e => e + D.iB), b(t)
   }, [t, b]);
   l()(v, "No text for action type: ".concat(t));
-  let R = t === w.MY.PURCHASES && null != m ? v.sectionHeader(m) : v.sectionHeader(d),
+  let R = t === D.MY.PURCHASES && null != m ? v.sectionHeader(m) : v.sectionHeader(d),
     P = i.useCallback(e => {
       let {
         row: t
@@ -112,12 +112,12 @@ function Z(e) {
           subText: t
         }, n.event_id)
       }
-      if ((0, p.f0)(n)) return (0, r.jsx)(S.Z, {
+      if ((0, p.f0)(n)) return (0, r.jsx)(T.Z, {
         guildId: n.entity_id
       }, n.event_id);
       if ((0, p.m4)(n)) {
         let e = _.Z.getPurchaseInfo(n.entity_id);
-        return null == e ? null : (0, r.jsx)(T.Z, {
+        return null == e ? null : (0, r.jsx)(S.Z, {
           skuId: e.sku_id,
           subscriptionPlanId: e.subscription_plan_id,
           total: e.total,
@@ -126,7 +126,7 @@ function Z(e) {
       }
       return null
     }, [c, v.timestampFormatter]),
-    D = i.useCallback(() => (0, r.jsxs)(r.Fragment, {
+    w = i.useCallback(() => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.Text, {
         className: M.sectionHeader,
         variant: "text-md/semibold",
@@ -142,7 +142,7 @@ function Z(e) {
   let j = c.slice(0, I);
   return (0, r.jsxs)("div", {
     className: M.actionSection,
-    children: [D(), (0, r.jsx)("div", {
+    children: [w(), (0, r.jsx)("div", {
       className: M.actions,
       style: {
         maxHeight: j.length * G
@@ -164,7 +164,7 @@ function Z(e) {
         className: M.loadMore,
         variant: "text-sm/bold",
         children: L.intl.format(x.default["7dMmJY"], {
-          pageSize: Math.max(1, Math.min(d - j.length, w.iB))
+          pageSize: Math.max(1, Math.min(d - j.length, D.iB))
         })
       })
     }) : null]
@@ -225,8 +225,8 @@ let H = () => {
         selectTeenUser: n
       } = (0, Chunk985002.G)({}),
       a = e => {
-        n(e), d.default.track(D.rMx.FAMILY_CENTER_ACTION, {
-          action: w.YC.SelectTeen
+        n(e), d.default.track(w.rMx.FAMILY_CENTER_ACTION, {
+          action: D.YC.SelectTeen
         })
       },
       o = module.map(e => ({

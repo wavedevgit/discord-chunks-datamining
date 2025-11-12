@@ -32,9 +32,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk997267 = require("./997267.js");
-let w = (e, t, n) => (0, A.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
+let D = (e, t, n) => (0, A.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
 
-function D(e) {
+function w(e) {
   let {
     containerSize: t,
     onClick: n,
@@ -114,7 +114,7 @@ function L(e) {
     questContent: o,
     questContentPosition: c,
     sourceQuestContent: f
-  } = e, _ = i >= g.OH.COMPLETED, p = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), h = (0, s.e7)([E.Z], () => E.Z.isEnrolling(n.id)), b = (0, m.q8)(n), y = (0, m.Vl)(n), O = (0, T.Ks)({
+  } = e, _ = i >= g.OH.COMPLETED, p = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), h = (0, s.e7)([E.Z], () => E.Z.isEnrolling(n.id)), b = (0, m.q8)(n), y = (0, m.Vl)(n), O = (0, S.Ks)({
     progressState: i,
     quest: n,
     questContent: o,
@@ -180,7 +180,7 @@ let j = e => {
     isQuestExpired: _,
     isExpanded: p,
     isAnimating: y,
-    contentPosition: T,
+    contentPosition: S,
     sourceQuestContent: A
   } = e, N = (0, g._Q)(n), M = (0, g.B6)(null == (t = n.userStatus) ? true : t.completedAt, {
     year: "numeric",
@@ -193,13 +193,13 @@ let j = e => {
     questContent: b.jn.QUESTS_EMBED,
     sourceQuestContent: A
   }), Y = (0, s.e7)([E.Z], () => null != E.Z.questEnrollmentBlockedUntil, []), W = () => {
-    (0, S.navigateToQuestHome)({
+    (0, T.navigateToQuestHome)({
       fromContent: a,
       questId: n.id
     }), Z({
       questId: n.id,
       questContent: a,
-      questContentPosition: T,
+      questContentPosition: S,
       questContentCTA: h.jZ.LEARN_MORE,
       sourceQuestContent: A
     })
@@ -236,14 +236,14 @@ let j = e => {
             location: C.dr.QUESTS_CARD,
             quest: n,
             questContent: a,
-            questContentPosition: T,
+            questContentPosition: S,
             sourceQuestContent: A
           })]
         })
       }), (0, r.jsxs)("div", {
         className: P.taskDetails,
         children: [(0, r.jsx)(u.Text, {
-          variant: w(a, c, j),
+          variant: D(a, c, j),
           className: P.taskInstructions,
           children: _ ? R.intl.formatToPlainString(R.t["ge+AJp"], {
             questName: n.config.messages.questName
@@ -270,7 +270,7 @@ let j = e => {
           text: R.intl.string(R.t.V293qn)
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
-          onClick: () => (0, S.openQuestMinorEnrollmentBlockModal)(n, a, A),
+          onClick: () => (0, T.openQuestMinorEnrollmentBlockModal)(n, a, A),
           text: R.intl.string(R.t.vY9GgG)
         })]
       }) : (0, r.jsxs)(u.ButtonGroup, {
@@ -278,7 +278,7 @@ let j = e => {
         align: "center",
         justify: "end",
         fullWidth: "lg" !== c,
-        children: [(0, r.jsx)(D, {
+        children: [(0, r.jsx)(w, {
           containerSize: c,
           onClick: W,
           text: R.intl.string(R.t.LLLLPD)

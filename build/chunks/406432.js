@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   CO: () => c,
-  NU: () => S,
-  X2: () => T,
+  NU: () => T,
+  X2: () => S,
   cb: () => v,
   d$: () => f,
   tw: () => u
@@ -42,5 +42,5 @@ let o = (e, t) => {
   I = e => null != e && (0, a.W)() && i.Z.getConfig({
     location: "isWebPlayerVideoFile"
   }).enabled && m.test(e),
-  S = e => null != e && (y.test(e) || I(e)),
-  T = e => s(e, "video")
+  T = e => null != e && (y.test(e) || I(e)),
+  S = e => s(e, "video")

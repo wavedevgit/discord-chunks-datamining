@@ -40,7 +40,7 @@ function P(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let w = o().throttle(() => {
+let D = o().throttle(() => {
     Chunk797614.Z.increment({
       name: Chunk286379.V.APP_CRASHED,
       tags: ["reason:".concat(Chunk818405.v.UNHANDLED_JS_ERROR), "level:".concat(Chunk587158.c.FATAL)]
@@ -48,7 +48,7 @@ let w = o().throttle(() => {
   }, 100, {
     trailing: false
   }),
-  D = 10 * Chunk70956.Z.Millis.SECOND;
+  w = 10 * Chunk70956.Z.Millis.SECOND;
 
 function x(e) {
   var t, n;
@@ -59,7 +59,7 @@ function x(e) {
     onDisable: c,
     onCrashDisabled: u
   } = e, _ = i.useMemo(() => new s.SpringValue(1), []), m = i.useRef(null), [g, y] = i.useState(false), [O, v] = i.useState(false), I = (0, d.e7)([E.default], () => E.default.getCurrentUser());
-  (0, h.ZP)(() => (m.current = setTimeout(P, D), p.Z.track(C.rMx.NOTIFICATION_VIEWED, {
+  (0, h.ZP)(() => (m.current = setTimeout(P, w), p.Z.track(C.rMx.NOTIFICATION_VIEWED, {
     notif_type: A.n0.OverlayCrashed
   }), () => {
     null != m.current && clearTimeout(m.current)
@@ -67,7 +67,7 @@ function x(e) {
   let P = i.useCallback(() => {
       _.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == o || o(), null == u || u()
     }, [_, o, u]),
-    w = i.useCallback(e => {
+    D = i.useCallback(e => {
       O || (v(true), null == o || o(), p.Z.track(C.rMx.NOTIFICATION_CLICKED, {
         notif_type: A.n0.OverlayCrashed,
         action_type: "reload"
@@ -79,7 +79,7 @@ function x(e) {
     L = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
-    M = (0, d.e7)([S.Z], () => S.Z.getFocusedRunningGame()),
+    M = (0, d.e7)([T.Z], () => T.Z.getFocusedRunningGame()),
     j = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
@@ -105,7 +105,7 @@ function x(e) {
     }) : null,
     k = g ? null : N.intl.string(N.t.oEJEFq),
     U = null != (t = null == I ? true : I.isStaff()) && t || null != (n = null == I ? true : I.isStaffPersonal()) && n;
-  return (0, r.jsx)(T.Y, {
+  return (0, r.jsx)(S.Y, {
     title: N.intl.string(N.t.U38qZj),
     body: j,
     hint: U ? k : true,
@@ -117,7 +117,7 @@ function x(e) {
       className: R.notificationIcon
     }),
     onNotificationClick: x,
-    onConfirmClick: w,
+    onConfirmClick: D,
     onCancelClick: null != M ? L : true,
     onDismissClick: o,
     expand: true,
@@ -138,7 +138,7 @@ class L extends Chunk647438.PureComponent {
       error: e,
       info: t
     });
-    let r = S.Z.getTargetPID();
+    let r = T.Z.getTargetPID();
     p.Z.setOverlayCrashed(r, e), p.Z.setInputLocked(true, r);
     let i = (0, O.V6)(e, v.gl.OutOfProcess, {
       extra: {
@@ -153,7 +153,7 @@ class L extends Chunk647438.PureComponent {
       error_stack: e.stack,
       sentry_issue_id: i,
       error_level: "fatal"
-    }), w(), this.pid = r
+    }), D(), this.pid = r
   }
   render() {
     let {

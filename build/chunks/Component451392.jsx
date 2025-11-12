@@ -33,18 +33,18 @@ function E(e) {
     showPremiumIcon: O = true,
     showResetThemeButton: v = false,
     forcedDivider: I
-  } = e, S = (0, d.ZP)(t.id, b), {
-    primaryColor: T,
+  } = e, T = (0, d.ZP)(t.id, b), {
+    primaryColor: S,
     secondaryColor: A
   } = (0, f.Z)({
     user: t,
-    displayProfile: S,
+    displayProfile: T,
     pendingThemeColors: i,
     isPreview: true
   }), C = _.ZP.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(b, 80), R = (0, c.dQu)(l.Z.unsafe_rawColors.PRIMARY_530).hex(), P = (0, u.Cf)(N, R, false);
-  if (null == T || null == A) return null;
-  let w = e => {
-    o(s()(e, null == S ? true : S.themeColors) ? true : e)
+  if (null == S || null == A) return null;
+  let D = e => {
+    o(s()(e, null == T ? true : T.themeColors) ? true : e)
   };
   return (0, r.jsx)(h.Z, {
     title: m.intl.string(m.t.DMeO2X),
@@ -57,8 +57,8 @@ function E(e) {
       children: [(0, r.jsx)("div", {
         className: g.sparkleContainer,
         children: (0, r.jsx)(p.Z, {
-          onChange: e => w([e, A]),
-          color: T,
+          onChange: e => D([e, A]),
+          color: S,
           suggestedColors: P,
           showEyeDropper: true,
           label: (0, r.jsx)(c.Text, {
@@ -72,7 +72,7 @@ function E(e) {
       }), (0, r.jsx)("div", {
         className: g.sparkleContainer,
         children: (0, r.jsx)(p.Z, {
-          onChange: e => w([T, e]),
+          onChange: e => D([S, e]),
           color: A,
           suggestedColors: P,
           showEyeDropper: true,
@@ -91,7 +91,7 @@ function E(e) {
           variant: "secondary",
           size: "sm",
           text: m.intl.string(m.t["L+GmoR"]),
-          onClick: () => w([null, null])
+          onClick: () => D([null, null])
         })
       })]
     })

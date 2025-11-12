@@ -62,15 +62,15 @@ function v(e, t) {
   return i
 }
 let I = new Chunk710845.Z("PaymentRequest"),
-  S = Object.values({
+  T = Object.values({
     applePay: "applePay",
     googlePay: "googlePay",
     link: "link",
     browserCard: "browserCard"
   });
-class T extends Chunk647438.Component {
+class S extends Chunk647438.Component {
   componentDidMount() {
-    (0, Chunk358085.isDesktop)() || (this.disableWallets = S.filter(e => e !== this.paymentRequestWallet).sort(), (0, Chunk622999.d2)().then(e => {
+    (0, Chunk358085.isDesktop)() || (this.disableWallets = T.filter(e => e !== this.paymentRequestWallet).sort(), (0, Chunk622999.d2)().then(e => {
       this.initPaymentRequest(e)
     }))
   }
@@ -235,7 +235,7 @@ class T extends Chunk647438.Component {
     })
   }
 }
-class A extends T {
+class A extends S {
   validatePaymentRequest() {
     let {
       paymentRequest: e,
@@ -285,7 +285,7 @@ class A extends T {
     super(...e), b(this, "state", y({}, this.initialState)), b(this, "paymentRequestWallet", "googlePay"), b(this, "paymentRequestWalletName", "Google Pay")
   }
 }
-class C extends T {
+class C extends S {
   validatePaymentRequest() {
     let {
       paymentRequest: e,

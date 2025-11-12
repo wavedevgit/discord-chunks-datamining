@@ -24,7 +24,7 @@ function _(e) {
     imageSize: m,
     onLoadComplete: g,
     assetRef: E
-  } = e, b = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), y = null == p || p.asset.isAnimated ? null : p.asset.url, O = null != h && h.asset.isAnimated ? h.asset.url : null, v = null == m ? true : m.width, I = null == m ? true : m.height, S = i.useMemo(() => {
+  } = e, b = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), y = null == p || p.asset.isAnimated ? null : p.asset.url, O = null != h && h.asset.isAnimated ? h.asset.url : null, v = null == m ? true : m.width, I = null == m ? true : m.height, T = i.useMemo(() => {
     let e = null != v && null != I ? (0, u.nK)(v, I) : null;
     return null != y ? (0, u.sN)(y, {
       format: "webp",
@@ -32,21 +32,21 @@ function _(e) {
       height: null == e ? true : e.height
     }) : null != O ? (0, u.f0)(O, null != e ? e : true) : null
   }, [y, O, v, I]);
-  if (null == S) return null;
-  let T = !b && null != h && null != O && _;
+  if (null == T) return null;
+  let S = !b && null != h && null != O && _;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       alt: null != (t = null == p ? true : p.alt) ? t : d.intl.string(d.t.P84bAD),
       className: null != (n = null == p ? true : p.className) ? n : f.image,
-      src: S,
+      src: T,
       onLoad: g,
-      ref: T ? true : E
-    }), T && _ && (0, r.jsx)(c.Z, {
+      ref: S ? true : E
+    }), S && _ && (0, r.jsx)(c.Z, {
       autoPlay: true,
       loop: true,
       muted: true,
       preload: "auto",
-      poster: S,
+      poster: T,
       playsInline: true,
       className: o()(h.className, f.video, {
         [f.hidden]: !_

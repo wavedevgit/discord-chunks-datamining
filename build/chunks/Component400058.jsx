@@ -41,7 +41,7 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function w(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,7 +66,7 @@ function D(e, t) {
 }
 
 function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -89,13 +89,13 @@ let M = {
     name: "Checkout Test Panel",
     id: "checkout-test-panel",
     component: () => {
-      let [e, t] = Chunk647438.useState(Chunk474936.Si.TIER_2), [n, E] = Chunk647438.useState(null), b = (0, Chunk442837.Wu)([Chunk430824.Z], () => Chunk430824.Z.getGuildsArray()), [P] = (0, Chunk442837.Wu)([Chunk78839.Z], () => [Chunk78839.Z.getPremiumSubscription()]), D = Chunk305342.map(e => ({
+      let [e, t] = Chunk647438.useState(Chunk474936.Si.TIER_2), [n, E] = Chunk647438.useState(null), b = (0, Chunk442837.Wu)([Chunk430824.Z], () => Chunk430824.Z.getGuildsArray()), [P] = (0, Chunk442837.Wu)([Chunk78839.Z], () => [Chunk78839.Z.getPremiumSubscription()]), w = Chunk305342.map(e => ({
         value: e,
         label: e.name
-      })), [M, j] = Chunk647438.useState(D.length > 0 ? D[0].value : null), [k, U] = Chunk647438.useState(""), [G, B] = Chunk647438.useState({
+      })), [M, j] = Chunk647438.useState(w.length > 0 ? w[0].value : null), [k, U] = Chunk647438.useState(""), [G, B] = Chunk647438.useState({
         plan_id: Chunk474936.Xh.PREMIUM_MONTH_TIER_2,
         gift: "true"
-      }), Z = "true" !== G.gift && null != P, [F, V] = Chunk647438.useState(D.length > 0 ? D[0].value : null), {
+      }), Z = "true" !== G.gift && null != P, [F, V] = Chunk647438.useState(w.length > 0 ? w[0].value : null), {
         analyticsLocations: H
       } = (0, Chunk906732.ZP)(Chunk100527.Z.PAYMENT_FLOW_TEST_PAGE), [Y, W] = Chunk647438.useState(""), [K, z] = Chunk647438.useState(Chunk981631.lds), {
         balance: q,
@@ -175,7 +175,7 @@ let M = {
               children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
                 label: "Boost",
                 value: M,
-                options: D,
+                options: w,
                 onChange: e => j(e)
               }), null != M ? (0, Chunk951288.jsx)(Chunk678558.Z, {
                 guild: M,
@@ -202,7 +202,7 @@ let M = {
                   "data-migration-pending": true,
                   text: "Need Promotion Code",
                   shouldShow: k.length < 1,
-                  children: e => (0, r.jsx)(c.Button, x(w({
+                  children: e => (0, r.jsx)(c.Button, x(D({
                     variant: "primary",
                     text: "Open Link",
                     disabled: k.length < 1
@@ -228,7 +228,7 @@ let M = {
                   value: Chunk474936.Xh.PREMIUM_MONTH_TIER_0,
                   label: "Nitro Basic"
                 }],
-                onChange: e => B(t => x(w({}, t), {
+                onChange: e => B(t => x(D({}, t), {
                   plan_id: e
                 }))
               }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
@@ -241,7 +241,7 @@ let M = {
                   value: "false",
                   label: "Not Gift"
                 }],
-                onChange: e => B(t => x(w({}, t), {
+                onChange: e => B(t => x(D({}, t), {
                   gift: e
                 }))
               })]
@@ -249,13 +249,13 @@ let M = {
               "data-migration-pending": true,
               text: "Already subscribed",
               shouldShow: Z,
-              children: e => (0, r.jsx)(c.Button, x(w({
+              children: e => (0, r.jsx)(c.Button, x(D({
                 variant: "primary",
                 text: "Open Link"
               }, e), {
                 disabled: Z,
                 onClick: () => {
-                  window.open(C.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + a.stringify(w({}, G)))
+                  window.open(C.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + a.stringify(D({}, G)))
                 }
               }))
             }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
@@ -301,7 +301,7 @@ let M = {
               children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
                 label: "Premium Server Subscription For",
                 value: F,
-                options: D,
+                options: w,
                 onChange: e => V(e)
               }), (0, Chunk951288.jsx)(Chunk481060.Text, {
                 variant: "text-md/semibold",

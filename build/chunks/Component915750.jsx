@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk5881 = require("./5881.js"),
   Chunk981631 = require("./981631.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,7 +47,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -56,9 +56,9 @@ let C = 100,
   N = 60,
   R = 1,
   P = .5,
-  w = new Set;
+  D = new Set;
 
-function D(e, t) {
+function w(e, t) {
   return "".concat(e, "_").concat(t)
 }
 class x {
@@ -132,7 +132,7 @@ class x {
     sourceQuestContent: f
   }) {
     var p = this;
-    T(this, "id", true), T(this, "quests", true), T(this, "questContent", true), T(this, "triggeredByStatusChange", true), T(this, "trackGuildAndChannelMetadata", true), T(this, "questContentPosition", true), T(this, "questContentRowIndex", true), T(this, "sourceQuestContent", true), T(this, "heartbeatTimeoutId", true), T(this, "lastBeatTime", true), T(this, "minViewTimeReachedTimeoutId", true), T(this, "minViewTimeSeconds", true), T(this, "minViewportPercentage", true), T(this, "isQuestEnrollmentBlocked", true), T(this, "isRunning", false), T(this, "onMinViewTimeReached", () => {
+    S(this, "id", true), S(this, "quests", true), S(this, "questContent", true), S(this, "triggeredByStatusChange", true), S(this, "trackGuildAndChannelMetadata", true), S(this, "questContentPosition", true), S(this, "questContentRowIndex", true), S(this, "sourceQuestContent", true), S(this, "heartbeatTimeoutId", true), S(this, "lastBeatTime", true), S(this, "minViewTimeReachedTimeoutId", true), S(this, "minViewTimeSeconds", true), S(this, "minViewportPercentage", true), S(this, "isQuestEnrollmentBlocked", true), S(this, "isRunning", false), S(this, "onMinViewTimeReached", () => {
       this.quests.forEach(e => {
         (0, I.T)().info("".concat(e.config.messages.questName, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, b._b)(this.questContent)), {
           impressionId: this.id
@@ -140,14 +140,14 @@ class x {
         let t = false,
           n = (0, y.Zp)(this.questContent);
         if (null != n) {
-          let r = D(e.id, n);
-          (t = !w.has(r) && (0, y.VB)(this.questContent)) && w.add(r)
+          let r = w(e.id, n);
+          (t = !D.has(r) && (0, y.VB)(this.questContent)) && D.add(r)
         }
         let r = (0, y.jY)(this.questContent);
         (0, u.S)((0, b._b)(this.questContent)).then(n => {
           (0, b.dA)({
             questId: e.id,
-            event: S.rMx.QUEST_CONTENT_VIEWED,
+            event: T.rMx.QUEST_CONTENT_VIEWED,
             trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
             properties: A({
               min_view_time_seconds: this.minViewTimeSeconds,
@@ -162,7 +162,7 @@ class x {
           })
         })
       })
-    }), T(this, "beat", function() {
+    }), S(this, "beat", function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       p.quests.forEach(t => {
         if (null != p.lastBeatTime) {
@@ -171,7 +171,7 @@ class x {
             impressionId: p.id
           }), (0, b.dA)({
             questId: t.id,
-            event: S.rMx.QUEST_CONTENT_VIEW_TIME,
+            event: T.rMx.QUEST_CONTENT_VIEW_TIME,
             properties: A({
               is_termination_beat: e,
               viewed_time_ms: n,
@@ -182,11 +182,11 @@ class x {
           })
         }
       }), p.lastBeatTime = Date.now()
-    }), T(this, "commonProperties", e => A({
+    }), S(this, "commonProperties", e => A({
       impression_id: this.id,
       is_quest_enrollment_blocked: this.isQuestEnrollmentBlocked,
       quest_status: (0, b.uk)(e)
-    }, (0, b.mH)(this.questContent, this.questContentPosition, this.questContentRowIndex))), T(this, "clone", e => {
+    }, (0, b.mH)(this.questContent, this.questContentPosition, this.questContentRowIndex))), S(this, "clone", e => {
       let {
         triggeredByStatusChange: t
       } = e;
@@ -200,7 +200,7 @@ class x {
         isQuestEnrollmentBlocked: this.isQuestEnrollmentBlocked,
         sourceQuestContent: this.sourceQuestContent
       })
-    }), T(this, "start", () => {
+    }), S(this, "start", () => {
       this.stop(false), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * N), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds);
       let e = (0, y.jY)(this.questContent);
       this.quests.forEach(t => {
@@ -208,7 +208,7 @@ class x {
           impressionId: this.id
         }), (0, b.dA)({
           questId: t.id,
-          event: S.rMx.QUEST_CONTENT_LOADED,
+          event: T.rMx.QUEST_CONTENT_LOADED,
           properties: A({
             triggered_by_status_change: this.triggeredByStatusChange,
             metadata_raw: null != e ? e : null
@@ -220,7 +220,7 @@ class x {
         name: o.V.QUEST_CONTENT_IMPRESSION,
         tags: ["quest_content:".concat((0, b._b)(this.questContent))]
       }), this.isRunning = true
-    }), T(this, "stop", function() {
+    }), S(this, "stop", function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
       e && p.beat(true), p.lastBeatTime = true, clearInterval(p.heartbeatTimeoutId), clearTimeout(p.minViewTimeReachedTimeoutId), p.isRunning = false
     }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = P, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = f

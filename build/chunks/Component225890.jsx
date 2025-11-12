@@ -41,7 +41,7 @@ function E(e) {
     }
   }, [n, E]);
 
-  function S() {
+  function T() {
     if ((0, s.n)(n)) return void(0, o.hk)(n);
     (null == v ? true : v.isGuildStageVoice()) ? (0, l.Cq)(v) : (null == v ? true : v.isGuildVoice()) && h.Z.joinVoiceEvent(v.guild_id, v.id)
   }
@@ -53,7 +53,7 @@ function E(e) {
     guildScheduledEvent: y,
     isMember: I,
     onAcceptInstantInvite: g.dG,
-    onTransitionToInviteChannel: S,
+    onTransitionToInviteChannel: T,
     recurrenceId: b
   })
 }

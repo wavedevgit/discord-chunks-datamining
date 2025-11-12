@@ -179,10 +179,10 @@ function G(e) {
     onClick: d,
     disabled: s,
     variant: "secondary",
-    "aria-label": w.intl.formatToPlainString(w.t.UXw6W2, {
+    "aria-label": D.intl.formatToPlainString(D.t.UXw6W2, {
       commandName: n.untranslatedName
     }),
-    text: w.intl.string(w.t.TXNS7S),
+    text: D.intl.string(D.t.TXNS7S),
     icon: l.U,
     iconPosition: "end",
     size: "md"
@@ -250,14 +250,14 @@ function Z(e) {
     setSortOrder: g,
     commands: E,
     canSort: b
-  } = (0, T.Z)({
+  } = (0, S.Z)({
     sectionId: a.id,
     commandsByActiveSection: u
   });
   i.useEffect(() => {
     c(a.id)
   }, [a.id, c]);
-  let y = (0, S.Z)({
+  let y = (0, T.Z)({
     context: n,
     commands: E,
     limit: L
@@ -270,13 +270,13 @@ function Z(e) {
       context: n,
       section: p,
       commands: y,
-      headerName: w.intl.string(w.t.acSE0h),
+      headerName: D.intl.string(D.t.acSE0h),
       sectionName: o
     }), (0, r.jsx)(B, {
       context: n,
       section: p,
       commands: _ ? j : E,
-      headerName: w.intl.string(w.t.DUU9L3),
+      headerName: D.intl.string(D.t.DUU9L3),
       sectionName: o,
       children: b && (0, r.jsx)(N.Z, {
         sortOrder: m,

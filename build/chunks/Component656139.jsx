@@ -41,11 +41,11 @@ let A = e => {
     } = (0, O.q)({
       searchQuery: v,
       selectedUsers: _
-    }), [w, D] = i.useState(false), x = A.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), L = () => (0, r.jsx)(d.Z, {
-      className: T.searchbar,
+    }), [D, w] = i.useState(false), x = A.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), L = () => (0, r.jsx)(d.Z, {
+      className: S.searchbar,
       size: d.Z.Sizes.MEDIUM,
       tags: [..._.values()].map(e => g.ZP.getName(e)),
-      placeholder: 0 === _.size ? S.intl.string(S.t.Kd5RaI) : "",
+      placeholder: 0 === _.size ? T.intl.string(T.t.Kd5RaI) : "",
       query: h,
       onRemoveTag: e => {
         p(t => {
@@ -61,19 +61,19 @@ let A = e => {
           eligibleRecipients: a
         } = e,
         s = v.length > 0 && 0 === a.size;
-      return i = true === s ? S.intl.string(S.t.wpSqAW) : _.size <= 1 ? S.intl.string(S.t.ItpQxk) : S.intl.format(S.t.iW2stn, {
+      return i = true === s ? T.intl.string(T.t.wpSqAW) : _.size <= 1 ? T.intl.string(T.t.ItpQxk) : T.intl.format(T.t.iW2stn, {
         nTrials: _.size
       }), (0, r.jsx)("div", {
-        className: o()(T.footer, T.footerSeparator),
+        className: o()(S.footer, S.footerSeparator),
         children: (0, r.jsx)(c.Button, {
           variant: "primary",
-          disabled: 0 === _.size && !s || w,
+          disabled: 0 === _.size && !s || D,
           text: i,
           size: "md",
           fullWidth: true,
           onClick: async () => {
             if (s) return void t();
-            D(true), await n([..._.values()]), D(false)
+            w(true), await n([..._.values()]), w(false)
           }
         })
       })
@@ -95,24 +95,24 @@ let A = e => {
         isUserDisabled: e => null !== a && 0 !== a && [..._.values()].filter(e => !P.has(e.id)).length >= a && !_.has(e.id) && !P.has(e.id),
         searchQuery: v,
         emptySearchContent: {
-          header: S.intl.string(S.t["8+ywHD"]),
-          body: S.intl.string(S.t.CgQmY2)
+          header: T.intl.string(T.t["8+ywHD"]),
+          body: T.intl.string(T.t.CgQmY2)
         },
-        className: T.list
+        className: S.list
       })
     };
     return null === a ? (0, r.jsx)(c.$jN, {}) : N ? (0, r.jsx)(s.Modal, {
       transitionState: s.Dvm.ENTERED,
       size: "sm",
-      title: S.intl.string(S.t.lcuio4),
-      subtitle: S.intl.string(S.t["x09+CD"]),
+      title: T.intl.string(T.t.lcuio4),
+      subtitle: T.intl.string(T.t["x09+CD"]),
       onClose: t,
       actions: []
     }) : false === u ? (0, r.jsx)(s.Modal, {
       transitionState: s.Dvm.ENTERED,
       size: "sm",
-      title: S.intl.string(S.t["2YigPp"]),
-      subtitle: S.intl.format(S.t.OOCbz8, {
+      title: T.intl.string(T.t["2YigPp"]),
+      subtitle: T.intl.format(T.t.OOCbz8, {
         helpdeskArticle: m.Z.getArticleURL(I.BhN.REFERRAL_PROGRAM)
       }),
       onClose: t,
@@ -120,8 +120,8 @@ let A = e => {
     }) : (0, r.jsx)(s.Modal, {
       size: "md",
       transitionState: s.Dvm.ENTERED,
-      title: S.intl.string(S.t["2dVCLl"]),
-      subtitle: S.intl.string(S.t.DXgoi2),
+      title: T.intl.string(T.t["2dVCLl"]),
+      subtitle: T.intl.string(T.t.DXgoi2),
       onClose: t,
       input: L(),
       actions: [],
@@ -150,10 +150,10 @@ let A = e => {
     }, [a]);
     let g = () => {
       let e;
-      return e = _.size <= 1 ? S.intl.string(S.t.ItpQxk) : S.intl.format(S.t.iW2stn, {
+      return e = _.size <= 1 ? T.intl.string(T.t.ItpQxk) : T.intl.format(T.t.iW2stn, {
         nTrials: _.size
       }), (0, r.jsx)("div", {
-        className: o()(T.footer, T.footerSeparator),
+        className: o()(S.footer, S.footerSeparator),
         children: (0, r.jsx)(c.Button, {
           variant: "primary",
           disabled: 0 === _.size || h,
@@ -169,8 +169,8 @@ let A = e => {
     return (0, r.jsx)(s.Modal, {
       size: "md",
       transitionState: s.Dvm.ENTERED,
-      title: S.intl.string(S.t.rKmy8I),
-      subtitle: S.intl.string(S.t.VDlF6o),
+      title: T.intl.string(T.t.rKmy8I),
+      subtitle: T.intl.string(T.t.VDlF6o),
       onClose: t,
       actions: [],
       actionBarInput: g(),
@@ -184,7 +184,7 @@ let A = e => {
             return t ? r.set(e.id, e) : r.delete(e.id), r
           })
         },
-        className: T.list
+        className: S.list
       })
     })
   };

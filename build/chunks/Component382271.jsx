@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function S(e) {
   }
   return e
 }
-let T = (e, t) => {
+let S = (e, t) => {
     (0, _.default)(), d.Z.openPrivateChannel({
       recipientIds: e
     }), t()
@@ -65,7 +65,7 @@ let T = (e, t) => {
     }), l = m.ZP.getName(t), c = n === g.Fz.FAIL;
     return (0, r.jsxs)("div", {
       className: O.trialRecipientRow,
-      children: [(0, r.jsx)(u.qEK, S({
+      children: [(0, r.jsx)(u.qEK, T({
         imageClassName: o()({
           [O.erroredAvatar]: c
         }),
@@ -96,7 +96,7 @@ let T = (e, t) => {
         size: "sm",
         text: y.intl.string(y.t["g33r/P"]),
         icon: u.kBi,
-        onClick: () => T(t.id, i)
+        onClick: () => S(t.id, i)
       })]
     })
   },
