@@ -1,7 +1,7 @@
 /** Chunk was on 78825 **/
 /** chunk id: 680942, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,17 +18,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-let x = e => {
+let h = e => {
   let {
     product: n,
     primary: t,
-    selectedVariantIndex: x,
-    returnRef: h,
+    selectedVariantIndex: h,
+    returnRef: x,
     onSuccess: j,
     tooltipDelay: y
   } = e, {
     analyticsLocations: O
-  } = (0, u.ZP)(), P = l.useRef(null), S = (0, v.sp)(), C = (0, f.Z)();
+  } = (0, c.ZP)(), P = l.useRef(null), C = (0, v.sp)(), S = (0, p.Z)();
   return (0, r.jsx)(o.u, {
     text: m.intl.string(m.t["JCFN/y"]),
     delay: y,
@@ -40,23 +40,23 @@ let x = e => {
       size: "md",
       onClick: e => {
         e.stopPropagation(), d.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == S ? true : S.sessionId,
+          collectibles_shop_session_id: null == C ? true : C.sessionId,
           sku_id: n.skuId,
-          page_section: null == S ? true : S.pageSection,
-          page_category: null == S ? true : S.pageCategory,
+          page_section: null == C ? true : C.pageSection,
+          page_category: null == C ? true : C.pageCategory,
           tile_type: i.Z[n.type],
-          tile_position: String(null == S ? true : S.tilePosition),
+          tile_position: String(null == C ? true : C.tilePosition),
           cta_name: "gift button",
-          page_type: C || "home"
-        }), (0, c.Z)({
-          skuId: (0, p.S)({
+          page_type: S || "home"
+        }), (0, u.Z)({
+          skuId: (0, f.S)({
             product: n,
-            selectedVariantIndex: x
+            selectedVariantIndex: h
           }),
           isGift: true,
           giftingOrigin: g.Wt.SHOP_PAGE,
           analyticsLocations: O,
-          returnRef: h,
+          returnRef: x,
           variantsReturnStyle: a.v.VARIANTS_GROUP,
           onClose: null != j ? e => {
             e && j()

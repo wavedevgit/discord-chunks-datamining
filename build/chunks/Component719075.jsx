@@ -43,20 +43,25 @@ let v = e => {
     return h ? (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "text-tertiary",
+      lineClamp: 1,
       children: _.intl.string(_.t.wu4gyV)
     }) : E ? (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "text-tertiary",
+      lineClamp: 1,
       children: _.intl.string(_.t.BEjTij)
     }) : v && !T ? (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "text-tertiary",
+      lineClamp: 1,
       children: _.intl.string(_.t["6cfuDj"])
     }) : O ? (0, r.jsx)(s.Text, {
       variant: "text-md/bold",
+      lineClamp: 1,
       children: _.intl.string(_.t.nBtvYB)
     }) : x ? (0, r.jsx)(s.Text, {
       variant: "text-md/bold",
+      lineClamp: 1,
       children: _.intl.string(_.t.rt69oo)
     }) : 0 === j.length ? null : (0, r.jsx)(g.F, {
       price: j[0],

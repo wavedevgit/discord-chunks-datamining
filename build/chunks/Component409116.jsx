@@ -1,7 +1,7 @@
 /** Chunk was on 78825 **/
 /** chunk id: 409116, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  F: () => f
+  F: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,21 +14,21 @@ var Chunk120356 = require("./120356.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk239051 = require("./239051.js");
-let f = e => {
+let p = e => {
     let {
       price: n,
       nitroIconType: t,
       nitroIconSize: l = "md",
       className: i,
       discountOfferAmount: a,
-      discount: o = u.f_,
+      discount: o = c.f_,
       variant: s = "text-md/semibold"
     } = e;
-    return n.currency === c.pK.DISCORD_ORB ? (0, r.jsx)(b, {
+    return n.currency === u.pK.DISCORD_ORB ? (0, r.jsx)(b, {
       orbAmount: n.amount,
       className: i,
       variant: s
-    }) : (0, r.jsx)(p, {
+    }) : (0, r.jsx)(f, {
       price: n,
       nitroIconType: t,
       nitroIconSize: l,
@@ -38,75 +38,78 @@ let f = e => {
       variant: s
     })
   },
-  p = e => {
+  f = e => {
     let {
       price: {
         amount: n,
         currency: t
       },
       nitroIconType: l,
-      nitroIconSize: c = "md",
-      className: f,
-      discountOfferAmount: p,
-      discount: b = u.f_,
+      nitroIconSize: u = "md",
+      className: p,
+      discountOfferAmount: f,
+      discount: b = c.f_,
       variant: g = "heading-md/semibold"
-    } = e, m = null != p, x = (0, s.qr)(n, t), h = b !== u.f_ && b.discountPercentage >= 5 && !m ? (0, r.jsxs)(r.Fragment, {
+    } = e, m = null != f, h = (0, s.qr)(n, t), x = b !== c.f_ && b.discountPercentage >= 5 && !m ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.nn4, {
         children: d.intl.format(d.t.niC6DK, {
-          price: x,
+          price: h,
           discountPercentage: b.discountPercentage
         })
       }), (0, r.jsx)("span", {
         "aria-hidden": true,
-        children: x
-      }), (0, r.jsxs)(o.Text, {
-        variant: g,
-        color: "text-feedback-positive",
+        children: h
+      }), (0, r.jsx)("span", {
         className: v.discount,
         "aria-hidden": true,
-        children: ["(-", b.discountPercentage, "%)"]
+        children: " (-".concat(b.discountPercentage, "%)")
       })]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.nn4, {
         children: d.intl.format(d.t["6C36MF"], {
-          price: x
+          price: h
         })
       }), (0, r.jsx)("span", {
         "aria-hidden": true,
         className: i()({
           [v.priceStrikethrough]: m
-        }, f),
-        children: x
+        }, p),
+        children: h
       })]
     });
-    return (0, r.jsxs)(o.Text, {
-      variant: g,
+    return (0, r.jsxs)("div", {
       className: i()({
         [v.discountBackgroundColor]: m
-      }, v.container, f),
+      }, v.container, p),
       children: ["tooltip" === l ? (0, r.jsx)(a.u, {
         text: d.intl.string(d.t.MPFyJ5),
         "aria-label": d.intl.string(d.t.X3Ekj8),
         children: (0, r.jsx)(o.SrA, {
-          size: c,
+          size: u,
           color: "currentColor",
           className: v.icon
         })
       }) : "default" === l ? (0, r.jsx)(o.SrA, {
-        size: c,
+        size: u,
         color: "currentColor",
         className: v.icon
-      }) : null, h, m && (0, r.jsxs)(o.Text, {
+      }) : null, (0, r.jsx)(o.Text, {
+        variant: g,
+        color: "currentColor",
+        lineClamp: 1,
+        children: x
+      }), m && (0, r.jsxs)(o.Text, {
         variant: g,
         className: v.discountPill,
+        lineClamp: 1,
         children: [(0, r.jsx)(o.nn4, {
           children: d.intl.format(d.t.rItDbx, {
-            discountOfferAmount: p
+            discountOfferAmount: f
           })
         }), (0, r.jsx)("span", {
           "aria-hidden": true,
           children: d.intl.formatToPlainString(d.t.AYcXGW, {
-            discountOfferAmount: p
+            discountOfferAmount: f
           })
         })]
       })]
@@ -118,20 +121,24 @@ let f = e => {
       className: t,
       variant: l = "text-md/semibold"
     } = e;
-    return (0, r.jsxs)(o.Text, {
-      variant: l,
+    return (0, r.jsxs)("div", {
       className: i()(v.container, t),
-      children: [(0, r.jsx)(o.nn4, {
-        children: d.intl.format(d.t["a/Y8PK"], {
-          orbAmount: n
-        })
-      }), (0, r.jsx)(o.aQr, {
+      children: [(0, r.jsx)(o.aQr, {
         color: "currentColor",
         size: "sm",
         className: v.icon
-      }), (0, r.jsx)("span", {
-        "aria-hidden": true,
-        children: n
+      }), (0, r.jsxs)(o.Text, {
+        variant: l,
+        color: "currentColor",
+        lineClamp: 1,
+        children: [(0, r.jsx)(o.nn4, {
+          children: d.intl.format(d.t["a/Y8PK"], {
+            orbAmount: n
+          })
+        }), (0, r.jsx)("span", {
+          "aria-hidden": true,
+          children: n
+        })]
       })]
     })
   }

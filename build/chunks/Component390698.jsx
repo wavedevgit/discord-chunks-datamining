@@ -1,7 +1,7 @@
 /** Chunk was on 78825 **/
 /** chunk id: 390698, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  U: () => c
+  U: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,7 +11,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk863577 = require("./863577.js");
-let c = e => {
+let u = e => {
   let {
     className: n,
     isPartiallyPurchased: t
@@ -21,13 +21,13 @@ let c = e => {
     align: "left",
     text: s.intl.string(s.t.y1VWkZ),
     children: (0, r.jsxs)("div", {
-      className: i()(u.partialOwnStateContainer, n),
+      className: i()(c.partialOwnStateContainer, n),
       children: [(0, r.jsx)("span", {
-        className: u.iconWrapper,
+        className: c.iconWrapper,
         children: (0, r.jsx)(o.d3s, {
           size: "md",
           color: "currentColor",
-          className: u.infoIcon
+          className: c.infoIcon
         })
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/semibold",
