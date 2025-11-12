@@ -120,6 +120,7 @@ function I(e) {
           onMouseLeave: T
         } = e, A = O(e, ["onClick", "onContextMenu", "onMouseEnter", "onMouseLeave"]);
         return (0, r.jsxs)(l.zx, y(E({
+          "data-migration-pending": true,
           look: null != w ? w : l.zx.Looks.BLANK,
           size: null != x ? x : l.zx.Sizes.NONE,
           color: L,
