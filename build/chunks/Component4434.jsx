@@ -204,7 +204,7 @@ function ed(e) {
     } : K.ZP.getPrice(L.id, em, false, I),
     eb = s * eE.amount,
     ey = (0, u.e7)([V.Z], () => V.Z.inReverseTrial() && K.ZP.hasBoostDiscount(M, U.fractionalState) && null != p),
-    eO = K.ZP.hasBoostDiscount(M, U.fractionalState) && null != p && K.ZP.getPremiumType(p.planId) === J.PremiumTypes.TIER_2 ? ee.intl.format(ee.t.hf6YOY, {
+    eO = K.ZP.hasBoostDiscount(M, U.fractionalState) && null != p && K.ZP.isPremiumAtLeast(K.ZP.getPremiumType(p.planId), J.PremiumTypes.TIER_1) ? ee.intl.format(ee.t.hf6YOY, {
       planName: K.ZP.getDisplayPremiumType(p.planId)
     }) : ee.intl.format(eh ? ee.t.ba1L74 : ee.t.fkffDT, {
       onPremiumSubscriptionClick: m,

@@ -1,7 +1,7 @@
 /** Chunk was on 47863 **/
 /** chunk id: 173044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,9 +10,10 @@ var Chunk755721 = require("./755721.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk436774 = require("./436774.jsx"),
-  Chunk104494 = require("./104494.js"),
+  Chunk622909 = require("./622909.js"),
   Chunk639119 = require("./639119.js"),
   Chunk767714 = require("./767714.jsx"),
+  Chunk230916 = require("./230916.js"),
   Chunk74538 = require("./74538.js"),
   Chunk156582 = require("./156582.jsx"),
   Chunk474936 = require("./474936.js"),
@@ -20,49 +21,49 @@ var Chunk755721 = require("./755721.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk312518 = require("./312518.js");
 
-function x(e) {
-  var t, n, x;
+function v(e) {
+  var t, n, v;
   let {
-    onClose: v
+    onClose: j
   } = e, {
-    analyticsLocations: j
-  } = (0, s.ZP)(o.Z.GO_LIVE_MODAL_V2), b = (0, d.N)(), S = (0, c.Ng)(), y = (null == b || null == (t = b.subscription_trial) ? true : t.sku_id) === h.Si.TIER_2 || (0, c.Wp)(S, h.Si.TIER_2), C = _.intl.string(m.default["+f+cqk"]);
-  return y && (null != b ? C = (0, f.Rt)({
-    intervalType: null == b || null == (n = b.subscription_trial) ? true : n.interval,
-    intervalCount: null == b || null == (x = b.subscription_trial) ? true : x.interval_count
-  }) : null != S && (C = _.intl.formatToPlainString(_.t.bkQ4bH, {
-    percent: S.discount.amount
+    analyticsLocations: b
+  } = (0, s.ZP)(o.Z.GO_LIVE_MODAL_V2), S = (0, d.N)(), y = (0, c.N)(), C = (null == S || null == (t = S.subscription_trial) ? true : t.sku_id) === m.Si.TIER_2 || (0, f.Wp)(y, m.Si.TIER_2), O = g.intl.string(_.default["+f+cqk"]);
+  return C && (null != S ? O = (0, p.Rt)({
+    intervalType: null == S || null == (n = S.subscription_trial) ? true : n.interval,
+    intervalCount: null == S || null == (v = S.subscription_trial) ? true : v.interval_count
+  }) : null != y && (O = g.intl.formatToPlainString(g.t.bkQ4bH, {
+    percent: y.discount.amount
   }))), (0, r.jsxs)("div", {
-    className: g.root,
+    className: x.root,
     children: [(0, r.jsxs)(l.Text, {
-      className: g.infoText,
+      className: x.infoText,
       variant: "text-xs/normal",
       color: "always-white",
       children: [(0, r.jsx)(l.mBM, {
         size: "xxs",
         color: "currentColor"
-      }), _.intl.format(_.t.sLJ3EV, {
+      }), g.intl.format(g.t.sLJ3EV, {
         onNitroClick: function() {
-          (0, p.E)({
-            analyticsLocation: j[0],
-            onClose: v
+          (0, h.E)({
+            analyticsLocation: b[0],
+            onClose: j
           })
         }
       })]
     }), (0, r.jsx)(u.Z, {
-      className: g.ctaButton,
-      iconClassName: g.premiumIcon,
+      className: x.ctaButton,
+      iconClassName: x.premiumIcon,
       size: i.zx.Sizes.TINY,
       color: i.zx.Colors.BRAND_INVERTED,
-      subscriptionTier: h.Si.TIER_2,
-      buttonShineClassName: g.premiumShine,
+      subscriptionTier: m.Si.TIER_2,
+      buttonShineClassName: x.premiumShine,
       iconColor: a.JX.PREMIUM_TIER_2,
       onClick: () => {
-        v()
+        j()
       },
       textOptions: {
-        subscribeText: C,
-        textClassName: g.ctaButtonText
+        subscribeText: O,
+        textClassName: x.ctaButtonText
       }
     })]
   })
