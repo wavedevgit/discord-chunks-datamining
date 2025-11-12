@@ -27,9 +27,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk587065 = require("./587065.js"),
   Chunk162190 = require("./162190.js"),
   Chunk986841 = require("./986841.js"),
+  Chunk47695 = require("./47695.js"),
   Chunk329871 = require("./329871.jsx"),
   Chunk110381 = require("./110381.jsx"),
-  Chunk619733 = require("./619733.js"),
   Chunk921944 = require("./921944.js"),
   Chunk269794 = require("./269794.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -65,7 +65,7 @@ function G(e) {
   }, [n, t.id]);
   return (0, r.jsx)(u.Button, {
     fullWidth: true,
-    text: R.intl.string(w.default.TMzy7d),
+    text: Z.intl.string(w.default.TMzy7d),
     variant: "secondary",
     loading: i,
     onClick: s
@@ -75,7 +75,7 @@ function G(e) {
 function A(e) {
   return (0, r.jsx)(u.Button, k({
     fullWidth: true,
-    text: R.intl.string(w.default.tkbVdf),
+    text: Z.intl.string(w.default.tkbVdf),
     variant: "secondary",
     icon: u.Gr1,
     iconPosition: "end"
@@ -85,7 +85,7 @@ function A(e) {
 function D(e) {
   return (0, r.jsx)(u.Button, k({
     fullWidth: true,
-    text: R.intl.string(w.default["fQCcM/"]),
+    text: Z.intl.string(w.default["fQCcM/"]),
     variant: "primary"
   }, e))
 }
@@ -93,7 +93,7 @@ function D(e) {
 function M(e) {
   return (0, r.jsx)(u.Button, k({
     fullWidth: true,
-    text: R.intl.string(w.default.gWMqnI),
+    text: Z.intl.string(w.default.gWMqnI),
     variant: "primary",
     icon: u.Gr1,
     iconPosition: "end"
@@ -110,7 +110,7 @@ function B(e) {
   }, [n]);
   return (0, r.jsx)(u.Button, {
     fullWidth: true,
-    text: R.intl.string(w.default.BLEx3k),
+    text: Z.intl.string(w.default.BLEx3k),
     variant: "secondary",
     loading: t,
     onClick: l
@@ -120,14 +120,14 @@ function B(e) {
 function V(e) {
   let {
     instance: n
-  } = e;
+  } = e, t = (0, N.Z)(n.providerType, n.gameServerPanelUrl);
   return (0, r.jsx)(u.Button, {
     fullWidth: true,
-    text: R.intl.string(w.default.bBkeMs),
+    text: Z.intl.string(w.default.bBkeMs),
     variant: "secondary",
     onClick: () => {
-      (0, v.q)({
-        href: P.uz[n.providerType]
+      null != t && (0, v.q)({
+        href: t
       })
     }
   })
@@ -137,31 +137,31 @@ function W(e) {
   let {
     guildId: n,
     instance: t
-  } = e, i = (0, N.Z)(t), [p, P] = (0, g.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), k = p !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, W = (0, o.e7)([x.Z], () => x.Z.getDetectableGame(t.gameId)), L = a.useCallback(() => {
+  } = e, i = (0, S.Z)(t), [p, k] = (0, g.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), W = p !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, L = (0, o.e7)([x.Z], () => x.Z.getDetectableGame(t.gameId)), U = (0, N.Z)(t.providerType, t.gameServerPanelUrl), z = a.useCallback(() => {
     var e;
-    (0, j.wz)(n, t.gameId, null != (e = null == W ? true : W.name) ? e : "", t.id), k || null == t.providerType ? (0, S.Z)(n, t) : (0, E.Z)({
+    (0, j.wz)(n, t.gameId, null != (e = null == L ? true : L.name) ? e : "", t.id), W || null == t.providerType ? (0, P.Z)(n, t) : (0, E.Z)({
       provider: t.providerType,
       onAccept: () => {
-        P(T.L.TAKE_ACTION), (0, S.Z)(n, t)
+        k(T.L.TAKE_ACTION), (0, P.Z)(n, t)
       }
     })
-  }, [t, k, P, n, null == W ? true : W.name]), {
-    handleCopyServerIp: z,
-    animateCopyIcon: U
-  } = (0, O.Z)(n, t.id, m.Z.GAME_SERVER_GAME, null != i ? i : ""), F = (0, I.Z)(t.gameId, "cover"), K = (0, b.Z)(n), q = a.useCallback(() => {
+  }, [t, W, k, n, null == L ? true : L.name]), {
+    handleCopyServerIp: F,
+    animateCopyIcon: K
+  } = (0, O.Z)(n, t.id, m.Z.GAME_SERVER_GAME, null != i ? i : ""), q = (0, I.Z)(t.gameId, "cover"), H = (0, b.Z)(n), X = a.useCallback(() => {
     var e;
     (0, j.$M)(n, t.id), (0, v.q)({
       href: null != (e = t.gameServerPanelUrl) ? e : ""
     })
-  }, [t.gameServerPanelUrl, n, t.id]), H = a.useMemo(() => {
+  }, [t.gameServerPanelUrl, n, t.id]), Y = a.useMemo(() => {
     switch (t.status) {
       case s.V.SLEEPING:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(G, {
             guildId: n,
             instance: t
-          }), K && (0, r.jsx)(A, {
-            onClick: q,
+          }), H && (0, r.jsx)(A, {
+            onClick: X,
             disabled: null == t.gameServerPanelUrl
           })]
         });
@@ -170,35 +170,35 @@ function W(e) {
       case s.V.STARTING:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(D, {
-            onClick: L
-          }), K && (0, r.jsx)(A, {
-            onClick: q,
+            onClick: z
+          }), H && (0, r.jsx)(A, {
+            onClick: X,
             disabled: null == t.gameServerPanelUrl
           })]
         });
       case s.V.STARTUP_FAILED:
       case s.V.MISSING_STOCK:
-        return K ? (0, r.jsx)(M, {
-          onClick: q
+        return H ? (0, r.jsx)(M, {
+          onClick: X
         }) : (0, r.jsx)(D, {
-          onClick: L,
+          onClick: z,
           disabled: true
         });
       case s.V.DELETED:
-        return K ? (0, r.jsx)(A, {
-          onClick: q,
+        return H ? (0, r.jsx)(A, {
+          onClick: X,
           disabled: null == t.gameServerPanelUrl
         }) : (0, r.jsx)(D, {
-          onClick: L,
+          onClick: z,
           disabled: true
         });
       case s.V.PROVIDER_ERRORED:
         return (0, r.jsxs)(r.Fragment, {
-          children: [K ? (0, r.jsx)(V, {
+          children: [H && null != U ? (0, r.jsx)(V, {
             guildId: n,
             instance: t
           }) : (0, r.jsx)(D, {
-            onClick: L,
+            onClick: z,
             disabled: true
           }), (0, r.jsx)(B, {
             guildId: n,
@@ -208,79 +208,79 @@ function W(e) {
       default:
         return null
     }
-  }, [t, L, K, q, n]), X = a.useMemo(() => {
+  }, [t, z, H, X, n, U]), J = a.useMemo(() => {
     if (null == t.gameConfig) return null;
     let e = [t.gameConfig.type, t.gameConfig.version].filter(_.lm).join(" ");
     return "" === e ? null : e
-  }, [t.gameConfig]), Y = a.useMemo(() => {
+  }, [t.gameConfig]), Q = a.useMemo(() => {
     switch (t.status) {
       case s.V.STARTING:
-        if (null == t.gameServerPanelUrl) return R.intl.string(w.default["1A3US2"]);
+        if (null == t.gameServerPanelUrl) return Z.intl.string(w.default["1A3US2"]);
         return null;
       case s.V.STARTUP_FAILED:
-        return R.intl.string(K ? w.default.Mdoc98 : w.default.osZiRl);
+        return Z.intl.string(H ? w.default.Mdoc98 : w.default.osZiRl);
       case s.V.MISSING_STOCK:
-        return R.intl.string(K ? w.default.YCakvM : w.default.osZiRl);
+        return Z.intl.string(H ? w.default.YCakvM : w.default.osZiRl);
       case s.V.PROVIDER_ERRORED:
-        return R.intl.string(K ? w.default.NRyCeY : w.default.osZiRl);
+        return Z.intl.string(H ? w.default.NRyCeY : w.default.osZiRl);
       default:
         return null
     }
-  }, [t.status, t.gameServerPanelUrl, K]);
+  }, [t.status, t.gameServerPanelUrl, H]);
   return (0, r.jsxs)(C.Z, {
-    actions: H,
+    actions: Y,
     children: [(0, r.jsxs)("div", {
-      className: Z.serverDetailsContainer,
+      className: R.serverDetailsContainer,
       children: [(0, r.jsxs)("div", {
-        className: Z.serverHeader,
+        className: R.serverHeader,
         children: [(0, r.jsx)("img", {
-          src: null != F ? F : "",
+          src: null != q ? q : "",
           alt: "",
-          className: Z.gameImage
+          className: R.gameImage
         }), (0, r.jsxs)("div", {
-          className: Z.serverInfo,
+          className: R.serverInfo,
           children: [(0, r.jsx)(u.Heading, {
             variant: "heading-md/medium",
             children: t.name
           }), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "text-tertiary",
-            children: [null == W ? true : W.name, X].filter(_.lm).join(" • ")
+            children: [null == L ? true : L.name, J].filter(_.lm).join(" • ")
           })]
         })]
       }), (0, r.jsx)("div", {
         children: (0, r.jsxs)("div", {
-          className: Z.detailsGrid,
+          className: R.detailsGrid,
           children: [(0, r.jsxs)("div", {
-            className: Z.detailItem,
+            className: R.detailItem,
             children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
-              children: R.intl.string(w.default.bDdi7n)
+              children: Z.intl.string(w.default.bDdi7n)
             }), (0, r.jsx)(u.Text, {
               variant: "text-sm/medium",
               children: "".concat(null != t.onlineConnectionsCount && t.onlineConnectionsCount >= 0 ? t.onlineConnectionsCount : "—", " / ").concat(null != t.maxConnectionsCount && t.maxConnectionsCount >= 0 ? t.maxConnectionsCount : "—")
             })]
           }), (0, r.jsxs)("div", {
-            className: Z.detailItem,
+            className: R.detailItem,
             children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
-              children: R.intl.string(w.default["7phwMG"])
+              children: Z.intl.string(w.default["7phwMG"])
             }), (0, r.jsx)("div", {
-              className: Z.serverIpContainer,
+              className: R.serverIpContainer,
               children: null == i ? (0, r.jsx)(u.Text, {
                 variant: "text-sm/medium",
                 children: "—"
-              }) : k ? (0, r.jsxs)(r.Fragment, {
+              }) : W ? (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(u.Text, {
                   variant: "text-sm/medium",
                   children: i
                 }), (0, r.jsx)(u.P3F, {
-                  className: Z.copyButton,
-                  "aria-label": R.intl.string(R.t.OpuAlK),
-                  onClick: z,
-                  children: U ? (0, r.jsx)(u.dz2, {
+                  className: R.copyButton,
+                  "aria-label": Z.intl.string(Z.t.OpuAlK),
+                  onClick: F,
+                  children: K ? (0, r.jsx)(u.dz2, {
                     size: "sm"
                   }) : (0, r.jsx)(u.TIy, {
                     size: "sm"
@@ -291,65 +291,65 @@ function W(e) {
                   (0, E.Z)({
                     provider: t.providerType,
                     onAccept: () => {
-                      P(T.L.TAKE_ACTION), z()
+                      k(T.L.TAKE_ACTION), F()
                     }
                   })
                 },
-                children: R.intl.string(w.default["f+F7H3"])
+                children: Z.intl.string(w.default["f+F7H3"])
               })
             })]
           }), (0, r.jsxs)("div", {
-            className: Z.detailItem,
+            className: R.detailItem,
             children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
-              children: R.intl.string(w.default["n+ZX7y"])
+              children: Z.intl.string(w.default["n+ZX7y"])
             }), (0, r.jsxs)("div", {
-              className: Z.statusContainer,
+              className: R.statusContainer,
               children: [t.status === s.V.STARTING ? (0, r.jsx)(u.$jN, {
                 type: u.RAz.SPINNING_CIRCLE_SIMPLE,
-                className: Z.statusLoading
+                className: R.statusLoading
               }) : (0, r.jsx)("span", {
-                className: l()(Z.statusIndicator, null != t.status && Z[t.status])
+                className: l()(R.statusIndicator, null != t.status && R[t.status])
               }), (0, r.jsx)(u.Text, {
                 variant: "text-sm/medium",
                 children: function(e) {
                   switch (e) {
                     case s.V.STARTING:
-                      return R.intl.string(w.default.SgjaXI);
+                      return Z.intl.string(w.default.SgjaXI);
                     case s.V.STARTUP_FAILED:
-                      return R.intl.string(w.default["7C9Z3s"]);
+                      return Z.intl.string(w.default["7C9Z3s"]);
                     case s.V.OFFLINE:
-                      return R.intl.string(w.default["Ys/RrB"]);
+                      return Z.intl.string(w.default["Ys/RrB"]);
                     case s.V.ONLINE:
-                      return R.intl.string(w.default["60kAzo"]);
+                      return Z.intl.string(w.default["60kAzo"]);
                     case s.V.DELETED:
-                      return R.intl.string(w.default.Z1NZwX);
+                      return Z.intl.string(w.default.Z1NZwX);
                     case s.V.MISSING_STOCK:
-                      return R.intl.string(w.default["+a5G2l"]);
+                      return Z.intl.string(w.default["+a5G2l"]);
                     case s.V.SLEEPING:
-                      return R.intl.string(w.default.y0z8ZO);
+                      return Z.intl.string(w.default.y0z8ZO);
                     case s.V.PROVIDER_ERRORED:
-                      return R.intl.string(w.default["6g/oji"]);
+                      return Z.intl.string(w.default["6g/oji"]);
                     default:
                       return "—"
                   }
                 }(t.status)
-              }), null != Y && (0, r.jsx)(d.u, {
+              }), null != Q && (0, r.jsx)(d.u, {
                 position: "top",
-                text: Y,
+                text: Q,
                 children: (0, r.jsx)(u.idN, {
-                  className: Z.statusTooltipIcon,
+                  className: R.statusTooltipIcon,
                   size: "xs"
                 })
               })]
             })]
           }), (0, r.jsxs)("div", {
-            className: Z.detailItem,
+            className: R.detailItem,
             children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
-              children: R.intl.string(w.default.mJlz3T)
+              children: Z.intl.string(w.default.mJlz3T)
             }), (0, r.jsx)(u.Text, {
               variant: "text-sm/medium",
               children: null != t.regionName ? t.regionName : "—"
@@ -357,16 +357,16 @@ function W(e) {
           })]
         })
       })]
-    }), K && (0, r.jsx)("div", {
-      className: Z.overflowMenu,
+    }), H && (0, r.jsx)("div", {
+      className: R.overflowMenu,
       children: (0, r.jsx)(y.Z, {
         guildId: n,
         instance: t
       })
     }), (0, r.jsx)("div", {
-      className: Z.imageBackground,
+      className: R.imageBackground,
       children: (0, r.jsx)(h.b, {
-        imageUrl: null != F ? F : ""
+        imageUrl: null != q ? q : ""
       })
     })]
   })

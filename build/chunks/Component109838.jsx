@@ -37,9 +37,9 @@ function y(e) {
       guildId: n,
       instance: e
     }, "".concat(e.gameId, "-").concat(t))), [null == y ? true : y.instances, n]),
-    [I, N] = a.useState(false);
+    [I, S] = a.useState(false);
   return a.useEffect(() => {
-    (null == O || O.length > 0) && N(true)
+    (null == O || O.length > 0) && S(true)
   }, [O]), (0, r.jsxs)("div", {
     className: C.container,
     children: [(0, r.jsxs)(c.ZP, {

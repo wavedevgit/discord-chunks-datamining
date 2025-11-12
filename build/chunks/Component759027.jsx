@@ -69,11 +69,11 @@ let _ = {
   }];
 
 function S(e) {
-  var t, n, i, s, f, S, E;
+  var t, n, r, s, f, S, E;
   let {
     subscription: T,
     onUpdated: O
-  } = e, [N, P] = r.useState(false), [I, w] = r.useState(false), [k, R] = r.useState(false), [A, Z] = r.useState(false), [D, L] = r.useState(null), M = e => (null == e && (e = T.status), e in _) ? _[e] : "Unknown status ".concat(e), U = e => {
+  } = e, [N, P] = i.useState(false), [I, w] = i.useState(false), [k, R] = i.useState(false), [A, Z] = i.useState(false), [D, L] = i.useState(null), M = e => (null == e && (e = T.status), e in _) ? _[e] : "Unknown status ".concat(e), U = e => {
     let t = new Date(e);
     return p.default.fromTimestamp(t.getTime())
   }, F = async e => {
@@ -81,7 +81,7 @@ function S(e) {
       status: t = T.status,
       premiumStreakStart: n,
       endedAt: a
-    } = e, r = function(e) {
+    } = e, i = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           a = Object.keys(n);
@@ -107,7 +107,7 @@ function S(e) {
     } : null);
     await c.tn.patch({
       url: "/debug/subscriptions/".concat(T.id),
-      body: r,
+      body: i,
       rejectWithError: false
     }), O()
   }, B = async () => {
@@ -132,7 +132,7 @@ function S(e) {
   }, {
     id: "status",
     label: "Status: ".concat(M())
-  }], W = T.hasActiveTrial, K = (null == (i = T.metadata) ? true : i.active_discount_id) != null;
+  }], W = T.hasActiveTrial, K = (null == (r = T.metadata) ? true : r.active_discount_id) != null;
   return W && H.push({
     id: "trial",
     label: "Has Trial"

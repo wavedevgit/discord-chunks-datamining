@@ -1,7 +1,7 @@
 /** Chunk was on 62934 **/
 /** chunk id: 941762, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,12 +10,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk100527 = require("./100527.js"),
   Chunk49012 = require("./49012.js"),
   Chunk639777 = require("./639777.js"),
+  Chunk47695 = require("./47695.js"),
   Chunk735276 = require("./735276.jsx"),
   Chunk619733 = require("./619733.js"),
   Chunk269794 = require("./269794.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk799070 = require("./799070.js");
-let x = {
+let _ = {
   steps: {
     [Chunk619733.EK.SERVER_SETTINGS]: {
       onBack: {
@@ -28,13 +29,13 @@ let x = {
   }
 };
 
-function _(e) {
+function v(e) {
   let {
     guildId: n,
     instance: t
-  } = e, _ = a.useRef(null);
+  } = e, m = a.useRef(null), v = (0, d.Z)(t.providerType, t.gameServerPanelUrl);
   return (0, c.Z)(n) ? (0, r.jsx)(i.yRy, {
-    targetElementRef: _,
+    targetElementRef: m,
     align: "top",
     position: "right",
     animationPosition: "bottom",
@@ -48,26 +49,26 @@ function _(e) {
         onClose: () => {
           (0, l.Zy)(), a()
         },
-        "aria-label": g.intl.string(m.default["yb+ork"]),
+        "aria-label": f.intl.string(g.default["yb+ork"]),
         onSelect: true,
         children: (0, r.jsxs)(i.kSQ, {
-          children: [null != t.providerType && (0, r.jsx)(i.sNh, {
+          children: [null != v && (0, r.jsx)(i.sNh, {
             id: "get-support",
             icon: i.kBi,
-            label: g.intl.string(m.default.bBkeMs),
+            label: f.intl.string(g.default.bBkeMs),
             action: () => {
               (0, o.q)({
-                href: u.uz[t.providerType]
+                href: v
               })
             }
           }), (0, r.jsx)(i.sNh, {
             id: "settings",
             icon: i.ewm,
-            label: g.intl.string(m.default["feUiM/"]),
+            label: f.intl.string(g.default["feUiM/"]),
             action: () => {
-              (0, d.Z)({
+              (0, u.Z)({
                 guildId: n,
-                stepConfig: x,
+                stepConfig: _,
                 initialGameServerInstance: t,
                 analyticsLocation: s.Z.GAME_SERVER_PAGE
               })
@@ -96,10 +97,10 @@ function _(e) {
         }
         return e
       }({
-        "aria-label": g.intl.string(g.t["UKOtz+"]),
-        className: f.clickable
+        "aria-label": f.intl.string(f.t["UKOtz+"]),
+        className: x.clickable
       }, e), t = t = {
-        innerRef: _,
+        innerRef: m,
         children: (0, r.jsx)(i.xhG, {
           color: "currentColor",
           size: "sm"

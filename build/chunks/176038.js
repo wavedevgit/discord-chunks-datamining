@@ -40,7 +40,7 @@ async function E() {
   try {
     if (exports) {
       let t, a = [...module, null],
-        r = S(Chunk647438);
+        i = S(Chunk647438);
       if (null != Chunk524437) {
         var n;
         let e = Chunk469115.qt[Chunk524437];
@@ -66,7 +66,7 @@ async function T() {
     t = (0, Chunk884697.Ad)(module),
     n = (0, Chunk884697.jT)(module),
     a = exports.length > 0,
-    r = require.length > 0;
+    i = require.length > 0;
   if (Chunk647438 || Chunk524437) try {
     if (Chunk647438) {
       let e = S([...exports, null]);
@@ -95,7 +95,7 @@ function O() {
 
 function N() {
   Chunk647438.useEffect(() => {
-    var e, t, n, a, r;
+    var e, t, n, a, i;
     let b = Chunk594174.default.getCurrentUser(),
       v = Chunk695346.L1.getSetting(),
       j = Chunk1870.Z.purchases,
@@ -106,7 +106,7 @@ function N() {
       E = null == Chunk74538 || null == (e = Chunk74538.avatarDecoration) ? true : module.skuId,
       T = null == Chunk74538 || null == (n = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
       O = null != E && null != (a = Chunk959517.find(e => e.skuId === E)) ? Chunk647438 : null,
-      N = null != T && null != (r = y.find(e => e.skuId === T)) ? Chunk524437 : null,
+      N = null != T && null != (i = y.find(e => e.skuId === T)) ? Chunk524437 : null,
       P = Chunk607070.Z.fontSize,
       I = Chunk607070.Z.messageGroupSpacing,
       w = Chunk695346.YC.getSetting();

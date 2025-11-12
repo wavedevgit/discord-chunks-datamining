@@ -63,7 +63,7 @@ let y = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), i = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = r.useState(true), T = r.useRef({}), [O, N] = r.useState(false), [P, I] = r.useState(false), [w, k] = r.useState([]), [R, A] = r.useState(y), Z = r.useRef([]), [D, L] = r.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, h.n6)(), r = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = i.useState(true), T = i.useRef({}), [O, N] = i.useState(false), [P, I] = i.useState(false), [w, k] = i.useState([]), [R, A] = i.useState(y), Z = i.useRef([]), [D, L] = i.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = i.useMemo(() => ({
       id: C,
       skuId: C,
       title: C,
@@ -84,7 +84,7 @@ let y = {
         }))
       })
     };
-    r.useEffect(() => {
+    i.useEffect(() => {
       let e = t.config.effects;
       e.length > 0 && k([...e].map(e => {
         if (null != e.base64) {
@@ -93,7 +93,7 @@ let y = {
         }
         return e
       }))
-    }, [t.config.effects]), r.useEffect(() => {
+    }, [t.config.effects]), i.useEffect(() => {
       let e = t.config.stillFrames;
       null != e && Object.entries(e).forEach(e => {
         let [t, n] = e;
@@ -109,10 +109,10 @@ let y = {
         effect: t,
         upsertConfig: n
       },
-      z = r.useRef(G);
-    return (r.useEffect(() => {
+      z = i.useRef(G);
+    return (i.useEffect(() => {
       z.current = G
-    }), r.useEffect(() => {
+    }), i.useEffect(() => {
       let {
         effect: e,
         upsertConfig: t
@@ -125,11 +125,11 @@ let y = {
           stillFrames: R
         }
       })
-    }, [w, R, D]), r.useEffect(() => () => {
+    }, [w, R, D]), i.useEffect(() => () => {
       Z.current.forEach(e => {
         URL.revokeObjectURL(e)
       }), Z.current = []
-    }, []), null == i) ? (0, a.jsx)("div", {}) : (0, a.jsxs)("div", {
+    }, []), null == r) ? (0, a.jsx)("div", {}) : (0, a.jsxs)("div", {
       className: f.root,
       children: [(0, a.jsxs)("div", {
         style: {
@@ -361,7 +361,7 @@ let y = {
             children: P && (0, a.jsxs)("div", {
               className: l()(f.userProfilePreview, f.preview),
               children: [(0, a.jsx)(m.Z, {
-                user: i,
+                user: r,
                 pendingAvatar: true,
                 pendingProfileEffect: null,
                 canUsePremiumCustomization: true,
@@ -425,8 +425,8 @@ let y = {
                   onChange: e => {
                     k(n => {
                       let a = [...n],
-                        r = n[t];
-                      return r.start = +e.target.value, a[t] = r, a
+                        i = n[t];
+                      return i.start = +e.target.value, a[t] = i, a
                     })
                   },
                   contentEditable: true
@@ -443,8 +443,8 @@ let y = {
                   onChange: e => {
                     k(n => {
                       let a = [...n],
-                        r = n[t];
-                      return r.duration = +e.target.value, a[t] = r, a
+                        i = n[t];
+                      return i.duration = +e.target.value, a[t] = i, a
                     })
                   },
                   contentEditable: true
@@ -464,8 +464,8 @@ let y = {
                   onChange: e => {
                     k(n => {
                       let a = [...n],
-                        r = n[t];
-                      return r.loop = e.target.checked, a[t] = r, a
+                        i = n[t];
+                      return i.loop = e.target.checked, a[t] = i, a
                     })
                   }
                 })]
@@ -482,8 +482,8 @@ let y = {
                     onChange: e => {
                       k(n => {
                         let a = [...n],
-                          r = n[t];
-                        return r.loopDelay = +e.target.value, a[t] = r, a
+                          i = n[t];
+                        return i.loopDelay = +e.target.value, a[t] = i, a
                       })
                     },
                     contentEditable: true
@@ -502,14 +502,14 @@ let y = {
                   let n = F(e);
                   null != n && (0, x.i0)(n, e => {
                     k(a => {
-                      let r = [...a],
-                        i = a[t];
-                      if (null == i) return a;
-                      let l = j({}, i);
+                      let i = [...a],
+                        r = a[t];
+                      if (null == r) return a;
+                      let l = j({}, r);
                       return null == l.randomizedSources && (l.randomizedSources = []), l.randomizedSources.push({
                         src: e,
                         filename: n.name
-                      }), r[t] = l, r
+                      }), i[t] = l, i
                     })
                   })
                 })(e, t),

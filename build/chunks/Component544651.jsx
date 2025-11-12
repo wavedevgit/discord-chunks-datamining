@@ -15,22 +15,22 @@ function o(e) {
     initExpanded: n,
     highlight: o,
     children: c
-  } = e, [d, u] = r.useState(n), m = r.useCallback(() => {
+  } = e, [d, u] = i.useState(n), m = i.useCallback(() => {
     u(!d)
   }, [d]), p = o ? "status-warning" : "text-default";
   return null == c ? (0, a.jsx)("div", {
     className: s.settingNode,
-    children: (0, a.jsx)(i.Text, {
+    children: (0, a.jsx)(r.Text, {
       variant: "text-md/normal",
       color: p,
       children: t
     })
   }) : (0, a.jsxs)("div", {
     className: s.settingNode,
-    children: [(0, a.jsxs)(i.P3F, {
+    children: [(0, a.jsxs)(r.P3F, {
       className: s.headerBar,
       onClick: m,
-      children: [(0, a.jsx)(i.Text, {
+      children: [(0, a.jsx)(r.Text, {
         variant: "text-md/bold",
         color: p,
         children: t

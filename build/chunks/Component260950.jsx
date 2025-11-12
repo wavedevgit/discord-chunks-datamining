@@ -58,7 +58,7 @@ let y = async () => (await Chunk544891.tn.get({
 function S() {
   let e = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
     t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    [n, i] = Chunk647438.useState("511651880837840896"),
+    [n, r] = Chunk647438.useState("511651880837840896"),
     [p, v] = Chunk647438.useState([]),
     [S, E] = Chunk647438.useState(false),
     T = Chunk647438.useCallback(async () => {

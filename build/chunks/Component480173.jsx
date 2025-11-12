@@ -26,12 +26,12 @@ function p() {
 function h(e) {
   let {
     levelUpData: t
-  } = e, n = r.useRef(null), i = r.useCallback(() => {
+  } = e, n = i.useRef(null), r = i.useCallback(() => {
     o.Z.setState({
       shouldRenderTenureLevelUp: false
     })
   }, []);
-  return r.useEffect(() => i, [i]), (0, a.jsx)(l.EqS, {
+  return i.useEffect(() => r, [r]), (0, a.jsx)(l.EqS, {
     containerRef: n,
     children: (0, a.jsxs)("div", {
       className: u.wrapper,
@@ -62,7 +62,7 @@ function h(e) {
               icon: l.Dio,
               variant: "secondary",
               size: "sm",
-              onClick: i,
+              onClick: r,
               "aria-label": d.intl.string(d.t.cpT0Cq)
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
@@ -76,7 +76,7 @@ function h(e) {
             }), t))
           }
         })
-      }), (0, a.jsx)(r.Suspense, {
+      }), (0, a.jsx)(i.Suspense, {
         fallback: null,
         children: (0, a.jsx)(m, {
           levelUpData: t

@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
 let s = e => {
   let {
     config: t
-  } = e, n = r.useMemo(() => (0, i.cloneDeep)(t), [t]), s = r.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), o = r.useMemo(() => {
+  } = e, n = i.useMemo(() => (0, r.cloneDeep)(t), [t]), s = i.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), o = i.useMemo(() => {
     if (s) {
       var e;
       let a = 1 === (e = n.effects.reduce((e, t) => {

@@ -22,16 +22,16 @@ function m() {
         id: l
       } = t,
       s = a.getToken(l);
-    if (null == s || "" === s) return void i.Z.dispatch({
+    if (null == s || "" === s) return void r.Z.dispatch({
       type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE",
       userId: l
     });
-    i.Z.dispatch({
+    r.Z.dispatch({
       type: "MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST",
       userId: l
     });
     try {
-      n = await r.tn.get({
+      n = await i.tn.get({
         url: d.ANM.ME,
         headers: {
           authorization: s
@@ -41,16 +41,16 @@ function m() {
       })
     } catch (t) {
       let e = (null == t ? true : t.status) === 401 || (null == t ? true : t.status) === 403;
-      i.Z.dispatch({
+      r.Z.dispatch({
         type: e ? "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE" : "MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS",
         userId: l
       });
       return
     }
-    i.Z.dispatch({
+    r.Z.dispatch({
       type: e === l ? "CURRENT_USER_UPDATE" : "USER_UPDATE",
       user: n.body
-    }), i.Z.dispatch({
+    }), r.Z.dispatch({
       type: "MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS",
       userId: l
     })
@@ -62,14 +62,14 @@ function p(e, t) {
     switchSynchronously: t
   });
   let n = a.getToken(e);
-  return null == n ? (u.log("Switching accounts failed because there was no token"), i.Z.dispatch({
+  return null == n ? (u.log("Switching accounts failed because there was no token"), r.Z.dispatch({
     type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE",
     userId: e
   }), Promise.resolve()) : l.Z.switchAccountToken(n, t)
 }
 
 function h(e) {
-  i.Z.dispatch({
+  r.Z.dispatch({
     type: "MULTI_ACCOUNT_REMOVE_ACCOUNT",
     userId: e
   })

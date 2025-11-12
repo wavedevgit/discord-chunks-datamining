@@ -56,7 +56,7 @@ let I = [{
 function w(e) {
   let {
     actionLog: t
-  } = e, n = r.useMemo(() => t.traces.map(e => ({
+  } = e, n = i.useMemo(() => t.traces.map(e => ({
     key: e.name,
     trace: e
   })), [t]);
@@ -75,7 +75,7 @@ let k = [{
     var t;
     let {
       actionLog: n
-    } = e, r = d()(n.createdAt);
+    } = e, i = d()(n.createdAt);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)(y.E, {
         className: O.actionProperties,
@@ -83,8 +83,8 @@ let k = [{
           name: "Created at",
           children: (0, a.jsx)("time", {
             dateTime: null == (t = n.createdAt) ? true : t.toISOString(),
-            title: (0, j.vc)(r, "LLLL"),
-            children: (0, j.Y4)(r)
+            title: (0, j.vc)(i, "LLLL"),
+            children: (0, j.Y4)(i)
           })
         }), (0, a.jsxs)(y.Z9, {
           name: "Total Time",
@@ -116,7 +116,7 @@ function R(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, i = r.useMemo(() => t.error ? [...k, {
+  } = e, r = i.useMemo(() => t.error ? [...k, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(b.Z, {
@@ -152,8 +152,8 @@ function R(e) {
     TabBar: s,
     renderSelectedTab: o
   } = (0, E.ZP)({
-    tabs: i
-  }, [i]);
+    tabs: r
+  }, [r]);
   return (0, a.jsxs)(C.Z, {
     className: O.subPanel,
     minHeight: 100,
@@ -234,9 +234,9 @@ let A = [{
 function D() {
   let e = Chunk647438.useRef(null),
     [t, n] = Chunk647438.useState(""),
-    i = function(e) {
-      let [t, n] = r.useState(e.logs);
-      return r.useEffect(() => {
+    r = function(e) {
+      let [t, n] = i.useState(e.logs);
+      return i.useEffect(() => {
         let t = o()(() => {
           n([...e.logs])
         }, 500);

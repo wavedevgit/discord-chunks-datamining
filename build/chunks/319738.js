@@ -20,12 +20,12 @@ function p(e, t) {
   var n;
   let a = d.Z.getUser(t);
   if (null == a) throw Error("User not found");
-  let r = null == (n = d.Z.getPool(e)) ? true : n.password;
-  if (null == r) throw Error("Pool password not found");
+  let i = null == (n = d.Z.getPool(e)) ? true : n.password;
+  if (null == i) throw Error("Pool password not found");
   if (null == a.email) throw Error("User email not found");
-  return i.Z.login({
+  return r.Z.login({
     login: a.email,
-    password: r,
+    password: i,
     isMultiAccount: true,
     source: "generated_test_user"
   }).catch(() => (l.Z.showFailedToast(m.wQ.GENERIC_ERROR), null))
@@ -44,19 +44,19 @@ async function h(e, t) {
     } = e;
     if (!n) return void l.Z.showFailedToast(m.wQ.GENERIC_ERROR);
     let {
-      generated_pool: i,
+      generated_pool: r,
       users: o
     } = a;
-    r.Z.dispatch({
+    i.Z.dispatch({
       type: "GENERATED_POOL_BY_ID_FETCH_SUCCESS",
-      pool: c.w.fromServer(i).setPassword(t),
+      pool: c.w.fromServer(r).setPassword(t),
       users: o.map(e => new s.Z(e))
     })
   }).catch(() => (l.Z.showFailedToast(m.wQ.GENERIC_ERROR), null))
 }
 
 function x(e) {
-  r.Z.dispatch({
+  i.Z.dispatch({
     type: "GENERATED_POOL_REMOVE_FROM_LIST",
     poolId: e
   })

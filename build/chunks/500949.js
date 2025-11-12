@@ -11,7 +11,7 @@ require.d(exports, {
   KB: () => eu,
   S2: () => H,
   W6: () => ea,
-  XM: () => er,
+  XM: () => ei,
   YC: () => ep,
   YE: () => el,
   h9: () => es,
@@ -24,7 +24,7 @@ require.d(exports, {
   uF: () => em,
   zn: () => Q
 }), require("./467055.js"), require("./388685.js"), require("./35282.js"), require("./539854.js");
-var a, r, Chunk647438 = require("./647438.js"),
+var a, i, Chunk647438 = require("./647438.js"),
   Chunk216397 = require("./216397.js"),
   Chunk764160 = require("./764160.js"),
   Chunk808131 = require("./808131.js"),
@@ -125,11 +125,11 @@ let {
 } = Chunk521904.V, V = z, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
 
 function W(e, t) {
-  let [n, a] = i.useState(() => {
+  let [n, a] = r.useState(() => {
     let n = D.K.get(e);
     return null != n ? n : t
   });
-  return i.useEffect(() => {
+  return r.useEffect(() => {
     D.K.set(e, n)
   }, [e, n]), [n, a]
 }
@@ -146,11 +146,11 @@ function K(e) {
   }
 }
 
-function q(e, t, n, a, r) {
+function q(e, t, n, a, i) {
   return {
     name: t,
     colors: F(U({}, e.colors), {
-      [r]: {
+      [i]: {
         color: n,
         opacity: a
       }
@@ -174,14 +174,14 @@ var X = ((a = {}).TOKENS = "Tokens", a.PALETTES = "Palettes", a);
 
 function Q() {
   return function(e, t) {
-    let [n, a] = W("".concat(e, "-states"), [t]), [r, l] = W("".concat(e, "-index"), 0), s = n[r], o = i.useCallback(e => {
+    let [n, a] = W("".concat(e, "-states"), [t]), [i, l] = W("".concat(e, "-index"), 0), s = n[i], o = r.useCallback(e => {
       a(["function" == typeof e ? e(s) : e, ...n].slice(0, 20)), l(0)
-    }, [l, a, n, s]), c = i.useCallback(() => {
-      l(Math.min(n.length - 1, r + 1))
-    }, [r, l, n.length]), d = i.useCallback(() => {
-      l(Math.max(0, r - 1))
-    }, [r, l]);
-    return [s, o, c, d, r < n.length - 1, r > 0]
+    }, [l, a, n, s]), c = r.useCallback(() => {
+      l(Math.min(n.length - 1, i + 1))
+    }, [i, l, n.length]), d = r.useCallback(() => {
+      l(Math.max(0, i - 1))
+    }, [i, l]);
+    return [s, o, c, d, i < n.length - 1, i > 0]
   }("color-override-9-24-2024", {
     semanticColorOverrides: {},
     rawColorOverrides: {},
@@ -195,32 +195,32 @@ let $ = [100, 130, 160, 200, 230, 260, 300, 330, 345, 360, 400, 430, 460, 500, 5
 function et(e) {
   return "plum" === e ? ee : $
 }
-var en = ((r = {}).LINEAR = "Linear", r.EASE_IN = "Ease In", r.EASE_OUT = "Ease Out", r.EASE_IN_OUT = "Ease In Out", r);
+var en = ((i = {}).LINEAR = "Linear", i.EASE_IN = "Ease In", i.EASE_OUT = "Ease Out", i.EASE_IN_OUT = "Ease In Out", i);
 
 function ea(e, t) {
   let n = et(t),
     a = Object.keys(e).map(e => parseInt(e.split("-")[1])),
-    r = Math.max(...a) / (n.length - 1),
-    i = {};
+    i = Math.max(...a) / (n.length - 1),
+    r = {};
   return n.forEach((e, n) => {
-    let l = Math.round(n * r),
+    let l = Math.round(n * i),
       s = a.reduce((e, t) => Math.abs(t - l) < Math.abs(e - l) ? t : e);
-    i["".concat(t, "-").concat(s)] = "".concat(t, "-").concat(e)
-  }), i
+    r["".concat(t, "-").concat(s)] = "".concat(t, "-").concat(e)
+  }), r
 }
 
-function er(e) {
+function ei(e) {
   let {
     name: t,
     base: n,
     steps: a = 26,
-    darkness: r,
-    lightness: i,
+    darkness: i,
+    lightness: r,
     easingStrength: s = 1
-  } = e, o = B[e.colorSpace], c = (0, A.Z)(n, o), d = (0, Z.CD)(c, "white", 1 - r, {
+  } = e, o = B[e.colorSpace], c = (0, A.Z)(n, o), d = (0, Z.CD)(c, "white", 1 - i, {
     space: o,
     outputSpace: l.Z
-  }), u = (0, Z.CD)(c, "black", 1 - i, {
+  }), u = (0, Z.CD)(c, "black", 1 - r, {
     space: o,
     outputSpace: l.Z
   }), m = Math.floor(a / 2), p = a - m, h = (0, Z.w6)(d, c, {
@@ -246,56 +246,56 @@ function er(e) {
   return Object.fromEntries(g.map((e, n) => ["".concat(t, "-").concat(n), e]))
 }
 
-function ei(e, t, n) {
+function er(e, t, n) {
   n(n => null == n.scales.find(t => t.name === e) ? n : F(U({}, n), {
     scales: n.scales.map(n => n.name === e ? t(n) : n)
   }))
 }
 
 function el(e, t, n) {
-  ei(e, e => F(U({}, e), {
+  er(e, e => F(U({}, e), {
     darkness: t
   }), n)
 }
 
 function es(e, t, n) {
-  ei(e, e => F(U({}, e), {
+  er(e, e => F(U({}, e), {
     lightness: t
   }), n)
 }
 
 function eo(e, t, n) {
-  ei(e, e => F(U({}, e), {
+  er(e, e => F(U({}, e), {
     base: t
   }), n)
 }
 
 function ec(e, t, n) {
-  ei(e, e => F(U({}, e), {
+  er(e, e => F(U({}, e), {
     colorSpace: t
   }), n)
 }
 
 function ed(e, t, n) {
-  ei(e, e => F(U({}, e), {
+  er(e, e => F(U({}, e), {
     easingStrength: t
   }), n)
 }
 
 function eu(e, t, n) {
-  ei(e, e => F(U({}, e), {
+  er(e, e => F(U({}, e), {
     showColumnarPalettePreview: t
   }), n)
 }
 
 function em(e, t, n) {
-  ei(e, e => F(U({}, e), {
+  er(e, e => F(U({}, e), {
     useP3ColorSpace: t
   }), n)
 }
 
 function ep(e, t, n) {
-  ei(e, e => F(U({}, e), {
+  er(e, e => F(U({}, e), {
     steps: t
   }), n)
 }

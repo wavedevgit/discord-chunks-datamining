@@ -9,10 +9,9 @@ require.d(exports, {
   Sg: () => m,
   TG: () => o,
   YX: () => u,
-  Z4: () => f,
-  nd: () => g,
-  tq: () => p,
-  uz: () => x
+  Z4: () => g,
+  nd: () => x,
+  tq: () => p
 });
 var a, Chunk763600 = require("./763600.js"),
   Chunk48541 = require("./48541.js"),
@@ -45,11 +44,9 @@ let s = {
   u = 10,
   m = 32,
   p = 1e3,
-  h = "production" === window.GLOBAL_ENV.PROJECT_ENV ? "1425215263548117002" : "staging" === window.GLOBAL_ENV.PROJECT_ENV ? "1415044199572832256" : "1415025086791942144",
-  x = {
-    [Chunk763600.Z.SHOCKBYTE]: window.GLOBAL_ENV.RELEASE_CHANNEL === Chunk48541.C.STAGING ? "https://purple-prod.shockbyte.dev/support" : "https://discord.shockbyte.com/support"
-  },
-  g = {
+  h = "production" === window.GLOBAL_ENV.PROJECT_ENV ? "1425215263548117002" : "staging" === window.GLOBAL_ENV.PROJECT_ENV ? "1415044199572832256" : "1415025086791942144";
+Chunk763600.Z.SHOCKBYTE, window.GLOBAL_ENV.RELEASE_CHANNEL, Chunk48541.C.STAGING;
+let x = {
     [Chunk763600.Z.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy"
   },
-  f = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t)
+  g = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t)

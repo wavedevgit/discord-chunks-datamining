@@ -55,8 +55,8 @@ let T = function(e) {
     onComplete: j,
     dismissable: T,
     classificationId: O
-  } = e, [N, P] = r.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = r.useRef(N), [w, k] = (0, c.US)([N], true, true), R = r.useMemo(() => (0, i.Z)(), []), A = r.useRef(false), Z = (0, m.GE)();
-  r.useEffect(() => {
+  } = e, [N, P] = i.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = i.useRef(N), [w, k] = (0, c.US)([N], true, true), R = i.useMemo(() => (0, r.Z)(), []), A = i.useRef(false), Z = (0, m.GE)();
+  i.useEffect(() => {
     I.current = w
   }, [w]);
   let {
@@ -71,14 +71,14 @@ let T = function(e) {
     },
     classificationId: O
   });
-  return r.useLayoutEffect(() => () => {
+  return i.useLayoutEffect(() => () => {
     if (A.current) return;
     let e = I.current;
     null != e && (A.current = true, p.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
-  }, []), r.useEffect(() => {
+  }, []), i.useEffect(() => {
     (0, g.lA)(R, g.d_.EXPRESSIVE_PRIMARY, n)
   }, [R, n]), (0, a.jsx)(l.ExpressiveModal, {
     transitionState: t,
@@ -145,14 +145,14 @@ let T = function(e) {
           let {
             title: t,
             description: n,
-            onClick: r
+            onClick: i
           } = e;
           return (0, a.jsx)(d.JZ, {
             variant: "clickable",
             title: t,
             description: n,
             buttonDisabled: D,
-            onButtonPress: () => r(R)
+            onButtonPress: () => i(R)
           }, t)
         })
       })]

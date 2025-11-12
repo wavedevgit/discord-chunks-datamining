@@ -64,9 +64,9 @@ function I(e) {
   let {
     name: t,
     children: n,
-    copyValue: i
-  } = e, [l, s] = r.useState(false);
-  return r.useEffect(() => {
+    copyValue: r
+  } = e, [l, s] = i.useState(false);
+  return i.useEffect(() => {
     if (l) {
       let e = setTimeout(() => s(false), 1e3);
       return () => clearTimeout(e)
@@ -81,7 +81,7 @@ function I(e) {
     }), (0, a.jsx)(u.P3F, {
       tag: "span",
       className: T.copyPropertyButton,
-      onClick: () => (0, f.JG)(JSON.stringify(i), () => s(true)),
+      onClick: () => (0, f.JG)(JSON.stringify(r), () => s(true)),
       children: l ? (0, a.jsx)(u.kmB, {
         color: "currentColor",
         size: "sm"
@@ -102,12 +102,12 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
         loggedEvent: {
           event: t,
           properties: n,
-          timestamp: r,
-          fingerprint: i
+          timestamp: i,
+          fingerprint: r
         },
         onClose: s,
         filteredEvents: c
-      } = e, d = g.default.getUser(i), h = o()(r);
+      } = e, d = g.default.getUser(r), h = o()(i);
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(p.ZP, {
@@ -149,8 +149,8 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
                 return e
               }({
                 event: t,
-                timestamp: r,
-                fingerprint: i,
+                timestamp: i,
+                fingerprint: r,
                 user: null == d ? true : d.id
               }, n), (e, t) => true === t ? null : t, 2))
             }
@@ -163,9 +163,9 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
           className: T.commonProperties,
           children: [(0, a.jsx)(_.Z9, {
             name: "Timestamp (local)",
-            copyValue: r.toISOString(),
+            copyValue: i.toISOString(),
             children: (0, a.jsxs)("time", {
-              dateTime: r.toISOString(),
+              dateTime: i.toISOString(),
               title: (0, b.vc)(h, "LLLL"),
               children: ["(", o().locale(), ") ", (0, b.Y4)(h)]
             })
@@ -177,49 +177,49 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
             })
           }), (0, a.jsx)(_.Z9, {
             name: "Fingerprint",
-            copyValue: i,
+            copyValue: r,
             children: (0, a.jsx)("code", {
-              children: i
+              children: r
             })
           })]
         }), (0, a.jsx)(P, {
           children: Object.entries(n).map(e => {
-            let [n, r] = e, i = w.has(n) ? ((e, t, n) => {
+            let [n, i] = e, r = w.has(n) ? ((e, t, n) => {
               let a = e.filter(e => e.event === t);
               if (0 === a.length) return {
                 average: null,
                 count: 0
               };
-              let r = null,
-                i = 0;
+              let i = null,
+                r = 0;
               for (let e of a) {
                 let t = e.properties[n];
-                "number" == typeof t && (i += 1, null == r ? r = t : r += t)
+                "number" == typeof t && (r += 1, null == i ? i = t : i += t)
               }
               return {
-                average: null !== r ? r / a.length : null,
-                count: i
+                average: null !== i ? i / a.length : null,
+                count: r
               }
             })(c, t, n) : null;
             return (0, a.jsxs)("div", {
               children: [(0, a.jsx)(I, {
                 name: "".concat(n, ":"),
                 copyValue: {
-                  [n]: r || null
+                  [n]: i || null
                 },
-                children: null != r ? (0, a.jsx)("code", {
-                  children: JSON.stringify(r)
+                children: null != i ? (0, a.jsx)("code", {
+                  children: JSON.stringify(i)
                 }) : (0, a.jsx)("code", {
                   className: T.emptyProperty,
                   children: "null"
                 })
-              }, n), null !== i && null !== i.average && (0, a.jsx)(I, {
+              }, n), null !== r && null !== r.average && (0, a.jsx)(I, {
                 name: "".concat(n, "_avg:"),
                 copyValue: {
-                  [n]: r || null
+                  [n]: i || null
                 },
                 children: (0, a.jsxs)("code", {
-                  children: [i.average.toFixed(3), " (", i.count, ")"]
+                  children: [r.average.toFixed(3), " (", r.count, ")"]
                 })
               }, "".concat(n, "_avg"))]
             }, "".concat(n, "_container"))
@@ -269,7 +269,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
 function Z() {
   let e = Chunk647438.useRef(null),
     [t, n] = Chunk647438.useState(""),
-    i = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.loggedEventsVersion),
+    r = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.loggedEventsVersion),
     [s, o] = Chunk647438.useState(() => Object.keys(R)),
     [m, p] = Chunk647438.useState(Chunk120816.Z.loggedEvents),
     h = Chunk647438.useCallback(e => {

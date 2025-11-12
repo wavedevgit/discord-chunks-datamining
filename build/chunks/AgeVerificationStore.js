@@ -3,11 +3,11 @@
 require.d(exports, {
   Z: () => d
 });
-var a, r, Chunk442837 = require("./442837.js"),
+var a, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 let s = null,
   o = false;
-class c extends(r = Chunk442837.ZP.Store) {
+class c extends(i = Chunk442837.ZP.Store) {
   get loading() {
     return o
   }
