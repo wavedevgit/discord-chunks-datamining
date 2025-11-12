@@ -18,41 +18,41 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk258910 = require("./258910.js");
 
-function h(e) {
+function C(e) {
   let {
     quest: t,
     rewardName: n,
-    location: a,
+    location: i,
     sourceQuestContent: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: C.contentContainer,
+    className: h.contentContainer,
     children: [(0, r.jsx)("div", {
-      className: C.rewardTileContainer,
+      className: h.rewardTileContainer,
       children: (0, r.jsx)(u.Z, {
         autoplay: true,
-        className: C.rewardTile,
+        className: h.rewardTile,
         learnMoreStyle: null,
         quest: t,
-        questContent: a,
+        questContent: i,
         location: p.dr.INGAME_REWARD_MODAL,
         sourceQuestContent: o
       })
     }), (0, r.jsxs)("div", {
-      className: C.copyContainer,
-      children: [(0, r.jsx)(i.Heading, {
+      className: h.copyContainer,
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        className: C.heading,
+        className: h.heading,
         children: x.intl.string(x.t["0/Yz+Y"])
-      }), (0, r.jsx)(i.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
         children: x.intl.format(x.t["v1u/zq"], {
           rewardName: n
         })
       })]
-    }), (0, r.jsx)(i.Button, {
+    }), (0, r.jsx)(a.Button, {
       variant: "secondary",
       size: "sm",
       text: x.intl.string(x.t.OD6Tvf),
@@ -65,19 +65,19 @@ function h(e) {
 function g(e) {
   var t, n;
   let {
-    initialQuest: i,
+    initialQuest: a,
     onClose: u,
     transitionState: x,
-    location: C,
+    location: h,
     sourceQuestContent: g
-  } = e, _ = null != (n = (0, l.B4)(i.id)) ? n : i, j = a.useMemo(() => (0, s.K)(_.config), [_]), v = (null == (t = _.userStatus) ? true : t.claimedAt) != null, y = !_.preview && !v, [N, b] = a.useState(y ? "loading" : "claimed");
-  a.useEffect(() => {
+  } = e, _ = null != (n = (0, l.B4)(a.id)) ? n : a, j = i.useMemo(() => (0, s.K)(_.config), [_]), v = (null == (t = _.userStatus) ? true : t.claimedAt) != null, y = !_.preview && !v, [N, b] = i.useState(y ? "loading" : "claimed");
+  i.useEffect(() => {
     if (y) {
       let e = d.r.build(_.config),
         t = e.rewardPlatforms.length > 0 ? e.rewardPlatforms[0] : c.y$.CROSS_PLATFORM;
-      (0, o.QB)(_.id, t, C).then(() => b("claimed")).catch(() => b("error"))
+      (0, o.QB)(_.id, t, h).then(() => b("claimed")).catch(() => b("error"))
     }
-  }, [_, C, y]);
+  }, [_, h, y]);
   let w = "error" === N || null == j;
   return (0, r.jsx)(m.Z, {
     onClose: u,
@@ -89,10 +89,10 @@ function g(e) {
     rewardContentHasError: w,
     rewardContent: w ? null : (0, r.jsx)(f.Z, {
       rewardName: j.messages.name,
-      children: (0, r.jsx)(h, {
+      children: (0, r.jsx)(C, {
         quest: _,
         rewardName: j.messages.name,
-        location: C,
+        location: h,
         sourceQuestContent: g
       })
     })

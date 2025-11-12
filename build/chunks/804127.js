@@ -84,7 +84,7 @@ function c(e) {
     selectedPlatformType: C,
     redemptionLink: f,
     sourceQuestContent: h
-  } = e, j = (0, o.O5)(), y = l(e);
+  } = e, j = (0, o.O5)(), x = l(e);
   return r.useCallback(() => {
     var e;
     p && null != C ? (n(c.id, C, d), j({
@@ -99,6 +99,6 @@ function c(e) {
       questContentCTA: u,
       questContentPosition: m,
       sourceQuestContent: h
-    })) : (null != f && y(), s())
-  }, [n, a, i, s, c.id, null == (t = c.userStatus) ? true : t.claimedAt, d, u, m, p, C, j, f, h, y])
+    })) : (null != f && x(), s())
+  }, [n, a, i, s, c.id, null == (t = c.userStatus) ? true : t.claimedAt, d, u, m, p, C, j, f, h, x])
 }
