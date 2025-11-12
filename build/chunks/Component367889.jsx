@@ -18,7 +18,7 @@ let T = (0, Chunk509613.x1)(Chunk313789.n.SUBSCRIPTIONS_PANE, {
     buildLayout: () => [],
     render: Chunk813732.Z
   }),
-  O = (0, Chunk509613.wf)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
+  I = (0, Chunk509613.wf)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.trSpHX),
     buildLayout: () => [T]
   }),
@@ -26,7 +26,7 @@ let T = (0, Chunk509613.x1)(Chunk313789.n.SUBSCRIPTIONS_PANE, {
     icon: Chunk657707.XOf,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.trSpHX),
     getLegacySearchKey: () => Chunk726985.s6.SUBSCRIPTIONS,
-    buildLayout: () => [O],
+    buildLayout: () => [I],
     trailing: {
       type: Chunk28682.PU.STRONGLY_DISCOURAGED_CUSTOM,
       useDecoration: () => (0, Chunk160913.U)() ? (0, Chunk951288.jsx)(Chunk793030.Mgn, {

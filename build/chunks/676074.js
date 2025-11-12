@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 676074, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => I
 });
 var Chunk442837 = require("./442837.js"),
   Chunk223245 = require("./223245.js"),
@@ -75,7 +75,8 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       enableContentProtection: t
     })
   }),
-  O = (0, Chunk509613.Uc)(Chunk313789.n.STREAMER_MODE_OPTIONS_LIST, {
+  I = (0, Chunk509613.Uc)(Chunk313789.n.STREAMER_MODE_OPTIONS_LIST, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.UtW8R6),
+    variant: "separators",
     buildLayout: () => [c, E, d, S, T]
   })

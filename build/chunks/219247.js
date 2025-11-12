@@ -23,7 +23,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.CLIPS_ENABLE_DECOUPLED_CLIPPING, {
       e = Chunk435064.Z.isDecoupledGameClippingEnabled();
     return module && exports
   },
-  setValue: t => u._Q({
+  setValue: t => r._Q({
     enabled: t,
     trackAnalytics: true
   })

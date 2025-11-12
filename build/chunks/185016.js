@@ -17,6 +17,6 @@ let o = (0, Chunk509613.qs)(Chunk313789.n.STREAMING_SHOW_STREAM_PREVIEWS, {
     return null != (t = Chunk695346.I0.useSetting()) && module
   },
   setValue: function(t) {
-    (0, s.Z)("stream_previews_disabled", t, r.I0.getSetting(), [i.Z.USER_SETTINGS_VOICE_AND_VIDEO]), r.I0.updateSetting(t)
+    (0, s.Z)("stream_previews_disabled", t, u.I0.getSetting(), [i.Z.USER_SETTINGS_VOICE_AND_VIDEO]), u.I0.updateSetting(t)
   }
 })

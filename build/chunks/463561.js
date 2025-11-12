@@ -43,8 +43,8 @@ let E = (0, Chunk509613.Em)(Chunk313789.n.CLIPS_RESOLUTION, {
   setValue: t => {
     let {
       clipsQuality: e
-    } = r.Z.getSettings();
-    u.yi({
+    } = u.Z.getSettings();
+    r.yi({
       resolution: t,
       frameRate: e.frameRate
     })

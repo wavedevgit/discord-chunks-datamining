@@ -1,12 +1,12 @@
 /** Chunk was on 9452 **/
 /** chunk id: 90794, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => r
 });
 var Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
-let u = (0, Chunk509613.k4)(Chunk313789.n.SOUNDBOARD_CATEGORY, {
+let r = (0, Chunk509613.k4)(Chunk313789.n.SOUNDBOARD_CATEGORY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.ABjMWI),
   buildLayout: () => []
 })

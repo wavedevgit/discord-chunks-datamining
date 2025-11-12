@@ -83,5 +83,5 @@ let a = [{
       count: e
     }),
     ContextProvider: Chunk299426.u,
-    buildLayout: () => a.map(t => (0, u.j)(t))
+    buildLayout: () => a.map(t => (0, r.j)(t))
   })

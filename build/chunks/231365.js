@@ -21,7 +21,7 @@ let E = (0, Chunk509613.qs)(Chunk313789.n.STREAMING_STREAM_ATTENUATION, {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getSidechainCompression())
   },
   setValue: function(t) {
-    let e = [r.Z.USER_SETTINGS_VOICE_AND_VIDEO];
+    let e = [u.Z.USER_SETTINGS_VOICE_AND_VIDEO];
     l.Z.setSidechainCompression(t, {
       analyticsLocations: e
     })

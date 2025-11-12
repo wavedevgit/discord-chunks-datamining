@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx");
 let T = "".concat(Chunk63063.Z.getArticleURL(Chunk981631.BhN.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
 
-function O() {
+function I() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk823087.Z, {}), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
@@ -27,7 +27,7 @@ function O() {
   })
 }
 let g = (0, Chunk509613.ON)(Chunk313789.n.VOICE_MICROPHONE_TEST_SETTING, {
-  render: () => (0, Chunk951288.jsx)(O, {}),
+  render: () => (0, Chunk951288.jsx)(I, {}),
   usePredicate: function() {
     return (0, Chunk399606.e7)([Chunk131951.Z], () => Chunk131951.Z.supports(Chunk65154.AN.LOOPBACK))
   },

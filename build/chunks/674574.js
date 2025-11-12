@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 674574, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  e_: () => O
+  e_: () => I
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -20,7 +20,7 @@ let S = (0, Chunk509613.x1)(Chunk313789.n.NOTIFICATIONS_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu0),
     buildLayout: () => [S]
   }),
-  O = (0, Chunk509613.m7)(Chunk313789.n.NOTIFICATIONS_SIDEBAR_ITEM, {
+  I = (0, Chunk509613.m7)(Chunk313789.n.NOTIFICATIONS_SIDEBAR_ITEM, {
     icon: Chunk657707.Dkj,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu0),
     usePredicate: () => (0, Chunk526665.gj)("NotificationsPanel"),

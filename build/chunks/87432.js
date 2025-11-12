@@ -1,27 +1,27 @@
 /** Chunk was on 9452 **/
 /** chunk id: 87432, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => function t(e, n, u) {
+  Z: () => function t(e, n, r) {
     var s, a, o, c, E, d;
     let S = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
     if (!n.has(e.key)) return null;
-    if (!(0, i.Lk)(e)) return u.register(e, null == (c = S.panel) ? true : c.key, null == (E = S.category) ? true : E.key, null == (d = S.accordion) ? true : d.key), e;
+    if (!(0, i.Lk)(e)) return r.register(e, null == (c = S.panel) ? true : c.key, null == (E = S.category) ? true : E.key, null == (d = S.accordion) ? true : d.key), e;
     let T = S;
-    e.type === i.Jq.SIDEBAR_ITEM && (T = r(l({}, S), {
+    e.type === i.Jq.SIDEBAR_ITEM && (T = u(l({}, S), {
       panel: e.layout[0]
-    })), e.type === i.Jq.PANEL && (T = r(l({}, S), {
+    })), e.type === i.Jq.PANEL && (T = u(l({}, S), {
       panel: e
-    })), e.type === i.Jq.CATEGORY && (T = r(l({}, S), {
+    })), e.type === i.Jq.CATEGORY && (T = u(l({}, S), {
       category: e
-    })), e.type === i.Jq.ACCORDION && (T = r(l({}, S), {
+    })), e.type === i.Jq.ACCORDION && (T = u(l({}, S), {
       accordion: e
     }));
-    let O = e.layout.map(e => t(e, n, u, T)).filter(t => null != t);
-    if (0 === O.length && !("render" in e || e.type === i.Jq.SIDEBAR_ITEM && "onClick" in e)) return null;
-    let g = r(l({}, e), {
-      layout: O
+    let I = e.layout.map(e => t(e, n, r, T)).filter(t => null != t);
+    if (0 === I.length && !("render" in e || e.type === i.Jq.SIDEBAR_ITEM && "onClick" in e)) return null;
+    let g = u(l({}, e), {
+      layout: I
     });
-    return u.register(g, null == (s = T.panel) ? true : s.key, null == (a = T.category) ? true : a.key, null == (o = T.accordion) ? true : o.key), g
+    return r.register(g, null == (s = T.panel) ? true : s.key, null == (a = T.category) ? true : a.key, null == (o = T.accordion) ? true : o.key), g
   }
 });
 var Chunk28682 = require("./28682.js");
@@ -45,7 +45,7 @@ function l(t) {
   return t
 }
 
-function r(t, e) {
+function u(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {

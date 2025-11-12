@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk53179 = require("./53179.js");
 
-function O() {
+function I() {
   let t = (0, Chunk442837.e7)([Chunk131951.Z], () => {
     let {
       shortcut: t
@@ -30,7 +30,7 @@ function O() {
       className: Chunk53179.keybindContainer,
       children: (0, Chunk951288.jsx)(Chunk825209.Z, {
         defaultValue: module,
-        onChange: t => u.Z.setMode(d.pM4.PUSH_TO_TALK, {
+        onChange: t => r.Z.setMode(d.pM4.PUSH_TO_TALK, {
           shortcut: t
         })
       })
@@ -39,6 +39,6 @@ function O() {
 }
 let g = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
   usePredicate: Chunk595373.p,
-  render: () => (0, Chunk951288.jsx)(O, {}),
+  render: () => (0, Chunk951288.jsx)(I, {}),
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)]
 })
