@@ -2,7 +2,8 @@
 /** chunk id: 594914, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => s
+  P: () => s,
+  b: () => l
 });
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js");
@@ -49,5 +50,16 @@ function s(e, t) {
     }, n))
   }, {
     modalKey: "slayers-payment-modal"
+  })
+}
+
+function l() {
+  (0, Chunk481060.ZDy)(async () => {
+    let {
+      default: e
+    } = await Promise.all([require.e("92275"), require.e("21854")]).then(require.bind(require, 211912));
+    return t => (0, r.jsx)(e, o({}, t))
+  }, {
+    modalKey: "slayer-storefront-announcement-modal"
   })
 }

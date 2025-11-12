@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk654544 = require("./654544.jsx"),
   Chunk778567 = require("./778567.jsx"),
   Chunk228168 = require("./228168.js"),
-  Chunk132724 = require("./132724.js"),
+  Chunk582113 = require("./582113.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk10094 = require("./10094.js");
 
@@ -39,7 +39,7 @@ function E(e) {
     title: w.intl.string(w.t["i/yzHs"]),
     handleOpenCollectiblesShop: n,
     handleOpenGameShop: i,
-    socialLayerStorefrontApplicationId: I.s
+    socialLayerStorefrontApplicationId: I.t9
   }) : (0, r.jsx)(s.Button, {
     variant: "secondary",
     size: "sm",
@@ -63,7 +63,7 @@ function T(e) {
       title: w.intl.string(w.t.SDUwM0),
       handleOpenCollectiblesShop: i,
       handleOpenGameShop: a,
-      socialLayerStorefrontApplicationId: I.s
+      socialLayerStorefrontApplicationId: I.t9
     }) : (0, r.jsx)(s.Button, {
       variant: "secondary",
       size: "sm",
@@ -118,7 +118,7 @@ function C(e) {
     })
   }, [D]), M = i.useCallback(() => {
     (0, o.pT)(), (0, p.Z)({
-      guildId: I.A
+      guildId: I.ON
     })
   }, []);
   return null != G ? null : null == R || 0 === R.items.length ? (0, r.jsx)(O.F, {

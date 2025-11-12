@@ -135,7 +135,7 @@ let L = (0, Chunk663993.Un)({
     name: "ViewsWithOAuth2"
   }),
   W = (0, Chunk663993.Un)({
-    createPromise: () => require.e("57047").then(require.bind(require, 549652)),
+    createPromise: () => Promise.all([require.e("92275"), require.e("57047")]).then(require.bind(require, 549652)),
     webpackId: 549652,
     name: "BrowserHandoff"
   }),

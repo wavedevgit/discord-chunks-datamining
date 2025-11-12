@@ -528,6 +528,12 @@ let i = {
     inlineRequire: () => require("./268194.js").Z,
     neverLoadBeforeConnectionOpen: true,
     hasStoreChangeListeners: true
+  },
+  SocialLayerStorefrontAnnouncementManager: {
+    actions: ["POST_CONNECTION_OPEN"],
+    inlineRequire: () => require("./696011.js").Z,
+    neverLoadBeforeConnectionOpen: true,
+    hasStoreChangeListeners: true
   }
 };
 (0, Chunk132454.j)(i)

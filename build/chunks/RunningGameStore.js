@@ -803,6 +803,9 @@ class e5 extends(i = Chunk442837.ZP.Store) {
   getCandidateGames() {
     return ee.filter(e => e.hidden || null == e.id).filter(e => true === eo.gameOverrides[eA(e)])
   }
+  isGamesSeenLoaded() {
+    return 0 === K.length
+  }
   getGamesSeen(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
       n = eB();

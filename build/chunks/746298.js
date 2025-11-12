@@ -3,13 +3,13 @@
 require.d(exports, {
   Z: () => i
 }), require("./388685.js");
-let r = new Set(["1409663649038995658"]);
+var Chunk582113 = require("./582113.js");
 
 function i(e) {
   var t, n, i;
   if (null == e) return null;
-  if (r.has(e.id)) return null != (t = e.guildId) ? t : null;
+  if (r.Nx.has(e.id)) return null != (t = e.guildId) ? t : null;
   for (let t of null != (n = e.linkedGames) ? n : [])
-    if (null != t.application && r.has(t.application.id)) return null != (i = t.application.guildId) ? i : null;
+    if (null != t.application && r.Nx.has(t.application.id)) return null != (i = t.application.guildId) ? i : null;
   return null
 }
