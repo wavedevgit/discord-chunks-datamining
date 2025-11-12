@@ -12,5 +12,7 @@ module.exports = {
   preview: "preview_bab2bc",
   previewTrick: "previewTrick_bab2bc",
   previewTreat: "previewTreat_bab2bc",
-  productName: "productName_bab2bc"
+  productName: "productName_bab2bc",
+  avatarPreview: "avatarPreview_bab2bc",
+  nameplatePreview: "nameplatePreview_bab2bc"
 }

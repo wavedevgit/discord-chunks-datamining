@@ -29,6 +29,7 @@ let g = {
     skuId: Chunk242433.d.SEASONAL_GIFTING_2025_STARFALL_TIDES_SKU_ID,
     assetId: "nameplates/nameplates_v2/starfall_tides/",
     type: Chunk979554.Z.NAMEPLATE,
+    palette: "sky",
     name: () => Chunk388032.intl.string(Chunk388032.t.OzB7sI),
     a11yLabel: () => Chunk388032.intl.string(Chunk388032.t.WX49A3)
   },

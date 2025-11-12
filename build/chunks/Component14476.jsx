@@ -14,65 +14,88 @@ var Chunk951288 = require("./951288.js"),
   Chunk104505 = require("./104505.js"),
   Chunk699758 = require("./699758.js"),
   Chunk616066 = require("./616066.jsx"),
+  Chunk396728 = require("./396728.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk632939 = require("./632939.js");
 let x = e => {
-  let {
-    skuId: t,
-    assetId: n,
-    user: l,
-    claimed: x,
-    onSelect: m,
-    productName: _,
-    a11yLabel: j,
-    selectedSkuId: g,
-    category: b
-  } = e, y = i.useRef(null), {
-    isHoveringOrFocusing: L
-  } = (0, c.Z)(y), v = !x && L, S = (0, d.ZP)(), O = (0, s.wj)(S), E = {
-    type: o.Z.AVATAR_DECORATION,
-    label: j,
-    asset: n
-  };
-  return (0, r.jsx)(C.tEY, {
-    children: (0, r.jsxs)(C.kL8, {
-      ref: y,
-      "aria-label": null != _ ? _ : "",
+  let t, n, {
+      skuId: l,
+      assetId: x,
+      user: _,
+      claimed: j,
+      onSelect: g,
+      productName: b,
+      a11yLabel: y,
+      selectedSkuId: v,
+      category: L,
+      type: S,
+      palette: O
+    } = e,
+    P = i.useRef(null),
+    {
+      isHoveringOrFocusing: E
+    } = (0, c.Z)(P),
+    w = !j && E,
+    I = (0, C.ZP)(),
+    M = (0, o.wj)(I);
+  return S === s.Z.AVATAR_DECORATION ? (t = {
+    type: s.Z.AVATAR_DECORATION,
+    label: y,
+    asset: x
+  }, n = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(p.R, {
+      item: t,
+      user: _,
+      isHighlighted: w,
+      avatarSize: d.EFr.SIZE_96,
+      isPurchased: j
+    }), j && (0, r.jsx)(d.dz2, {
+      size: "custom",
+      width: 48,
+      height: 48,
+      color: d.TVs.colors.WHITE,
+      className: f.claimedIcon
+    })]
+  })) : S === s.Z.NAMEPLATE && (t = {
+    type: s.Z.NAMEPLATE,
+    label: y,
+    asset: x,
+    palette: null != O ? O : "none"
+  }, n = (0, r.jsx)(h.Z, {
+    nameplate: t,
+    user: _,
+    isHighlighted: w,
+    isPurchased: j,
+    size: "small"
+  })), (0, r.jsx)(d.tEY, {
+    children: (0, r.jsxs)(d.kL8, {
+      ref: P,
+      "aria-label": null != b ? b : "",
       onClick: () => {
-        null == t || null == m || x || m(t)
+        null == l || null == g || j || g(l)
       },
-      className: a()(O ? h.shopCardDark : h.shopCard, {
-        [h.shopCardAnimation]: !x,
-        [O ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: v,
-        [h.shopCardSelected]: g === t
+      className: a()(M ? f.shopCardDark : f.shopCard, {
+        [f.shopCardAnimation]: !j,
+        [M ? f.shopCardDarkHighlighted : f.shopCardHighlighted]: w,
+        [f.shopCardSelected]: v === l
       }),
-      children: [(0, r.jsxs)("div", {
-        className: a()(h.preview, {
-          [h.previewTrick]: b === u.KN.Trick,
-          [h.previewTreat]: b === u.KN.Treat,
-          [h.shopCardClaimed]: x
+      children: [(0, r.jsx)("div", {
+        className: a()(f.preview, {
+          [f.avatarPreview]: S === s.Z.AVATAR_DECORATION,
+          [f.nameplatePreview]: S === s.Z.NAMEPLATE,
+          [f.previewTrick]: L === u.KN.Trick,
+          [f.previewTreat]: L === u.KN.Treat,
+          [f.shopCardClaimed]: j
         }),
-        children: [(0, r.jsx)(p.R, {
-          item: E,
-          user: l,
-          isHighlighted: v,
-          avatarSize: C.EFr.SIZE_96,
-          isPurchased: x
-        }), x && (0, r.jsx)(C.dz2, {
-          size: "custom",
-          width: 48,
-          height: 48,
-          color: C.TVs.colors.WHITE,
-          className: h.claimedIcon
-        })]
+        children: null != t && n
       }), (0, r.jsxs)("div", {
-        className: h.productName,
-        children: [(0, r.jsx)(C.Heading, {
-          variant: "text-md/bold",
-          children: _
-        }), (0, r.jsx)(C.Text, {
-          variant: "text-md/normal",
-          children: x ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)
+        className: f.productName,
+        children: [(0, r.jsx)(d.Heading, {
+          variant: "heading-md/extrabold",
+          children: b
+        }), (0, r.jsx)(d.Text, {
+          variant: "text-sm/normal",
+          children: j ? m.intl.string(m.t["6cfuDj"]) : m.intl.string(m.t.QQsaCc)
         })]
       })]
     })

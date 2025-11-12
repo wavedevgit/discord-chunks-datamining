@@ -32,6 +32,7 @@ var Chunk951288 = require("./951288.js"),
 let N = {
     xlarge: Chunk481060.EFr.SIZE_48,
     large: Chunk481060.EFr.SIZE_40,
+    small: Chunk481060.EFr.SIZE_24,
     default: Chunk481060.EFr.SIZE_32
   },
   R = Chunk647438.memo(function(e) {
@@ -80,6 +81,7 @@ let N = {
       children: (0, r.jsxs)(c.Rny, {
         className: o()(P, T.nameplatePreview, {
           [T.nameplatePurchased]: B && !D,
+          [T.small]: "small" === G,
           [T.large]: "large" === G,
           [T.xlarge]: "xlarge" === G,
           [T.inheritWidth]: null != F

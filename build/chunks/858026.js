@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 858026, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk647438 = require("./647438.js"),
   Chunk699758 = require("./699758.js");
@@ -38,28 +38,28 @@ function a(e, t) {
   }), e
 }
 
-function o(e) {
+function s(e) {
   var t;
   let {
     claimableVariants: n,
-    defaultSelection: o,
-    selectedGiftingPromotionReward: s,
-    setSelectedGiftingPromotionReward: C,
-    hasUserMadeSelection: d
-  } = e, c = null != n && n.length > 0, [u, p] = r.useState(null != (t = null == o ? true : o.defaultCategory) ? t : i.KN.Trick), f = r.useRef(u), h = r.useMemo(() => c ? n.flatMap(e => e.variants.length < i.mo ? [] : a(l({}, e.variants[u]), {
+    defaultSelection: s,
+    selectedGiftingPromotionReward: o,
+    setSelectedGiftingPromotionReward: d,
+    hasUserMadeSelection: C
+  } = e, c = null != n && n.length > 0, [u, p] = r.useState(null != (t = null == s ? true : s.defaultCategory) ? t : i.KN.Trick), h = r.useRef(u), m = r.useMemo(() => c ? n.flatMap(e => e.variants.length < i.mo ? [] : a(l({}, e.variants[u]), {
     name: e.name
-  })) : [], [n, u, c]), x = r.useMemo(() => null != s && h.some(e => e.skuId === s.skuId), [h, s]);
+  })) : [], [n, u, c]), f = r.useMemo(() => null != o && m.some(e => e.skuId === o.skuId), [m, o]);
   if (r.useEffect(() => {
-      c && ((null == o ? true : o.defaultCategory) == null || d || p(o.defaultCategory))
-    }, [null == o ? true : o.defaultCategory, d, c]), r.useEffect(() => {
-      c && (f.current === u || x || C(true), f.current = u)
-    }, [u, x, C, c]), !c) return null;
-  let m = n.length > 1;
-  return a(l({}, m && {
+      c && ((null == s ? true : s.defaultCategory) == null || C || p(s.defaultCategory))
+    }, [null == s ? true : s.defaultCategory, C, c]), r.useEffect(() => {
+      c && (h.current === u || f || d(true), h.current = u)
+    }, [u, f, d, c]), !c) return null;
+  let x = n.length > 1;
+  return a(l({}, x && {
     selectedCategory: u
-  }, m && {
+  }, x && {
     setSelectedCategory: p
   }), {
-    shouldRenderCategoryControl: m
+    shouldRenderCategoryControl: x
   })
 }

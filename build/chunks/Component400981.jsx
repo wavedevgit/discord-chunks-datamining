@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 400981, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -19,20 +19,20 @@ var Chunk442837 = require("./442837.js"),
   Chunk215023 = require("./215023.js"),
   Chunk473936 = require("./473936.js");
 
-function m(e) {
+function x(e) {
   let {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
-    selectedGiftingPromotionReward: m
-  } = e, _ = (0, i.e7)([p.default], () => p.default.getCurrentUser()), j = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), {
+    selectedGiftingPromotionReward: x
+  } = e, _ = (0, i.e7)([p.default], () => p.default.getCurrentUser()), j = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), {
     analyticsLocations: g
-  } = (0, s.ZP)(), b = a.EFr.SIZE_32, y = (0, C.Z)(null == m ? true : m.assetId, b, !j), L = (0, u.Z)(), v = null == L ? true : L.giftPurchaseConfirmation;
-  return null == n || null == v ? null : (0, r.jsx)(f.O3, {
+  } = (0, o.ZP)(), b = a.EFr.SIZE_32, y = (0, d.Z)(null == x ? true : x.assetId, b, !j), v = (0, u.Z)(), L = null == v ? true : v.giftPurchaseConfirmation;
+  return null == n || null == L ? null : (0, r.jsx)(h.O3, {
     children: (0, r.jsx)(a.mzw, {
       align: c.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
-        className: x.promotionalFooter,
+        className: f.promotionalFooter,
         children: [(0, r.jsx)(a.Xo$, {
           "aria-label": null == _ ? true : _.username,
           size: b,
@@ -40,13 +40,13 @@ function m(e) {
           avatarDecoration: y
         }), (0, r.jsx)(l.zxk, {
           variant: "primary",
-          text: v.collectRewardButtonText(),
+          text: L.collectRewardButtonText(),
           onClick: () => {
-            t(), (0, d.Z)({
+            t(), (0, C.Z)({
               product: n,
               shouldShowPromotionalExperience: true,
               analyticsLocations: g,
-              purchaseType: h.o8.PROMOTIONAL
+              purchaseType: m.o8.PROMOTIONAL
             })
           }
         })]
