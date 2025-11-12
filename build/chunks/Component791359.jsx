@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 791359, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,6 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk570140 = require("./570140.js"),
   Chunk365113 = require("./365113.js"),
   Chunk509212 = require("./509212.js"),
+  Chunk113434 = require("./113434.js"),
   Chunk569984 = require("./569984.js"),
   Chunk93127 = require("./93127.js"),
   Chunk752048 = require("./752048.js"),
@@ -31,17 +32,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk559909 = require("./559909.js");
-let A = 15 * Chunk70956.Z.Millis.MINUTE,
-  Z = (0, Chunk525296.Z)(function(e) {
+let Z = 15 * Chunk70956.Z.Millis.MINUTE,
+  w = (0, Chunk525296.Z)(function(e) {
     let {
       party: t,
       onUserContextMenu: n,
       onChannelContextMenu: l,
       quest: a
-    } = e, s = i.useRef(null), c = (0, r.jsx)(I.Z, {
+    } = e, s = i.useRef(null), c = (0, r.jsx)(C.Z, {
       party: t,
       onUserContextMenu: n
-    }), d = (0, r.jsx)(v.Z, {
+    }), d = (0, r.jsx)(I.Z, {
       party: t,
       onChannelContextMenu: l,
       quest: a
@@ -50,21 +51,21 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
       applicationStreams: h,
       currentActivities: g,
       voiceChannels: m
-    } = t, _ = f.length, b = h.length, O = g.length, y = m.length > 0, T = p.o.useConfig({
+    } = t, _ = f.length, b = h.length, E = g.length, y = m.length > 0, v = p.o.useConfig({
       location: "itemcard"
-    }).demureActivityCards, j = i.useCallback(() => {
+    }).demureActivityCards, N = i.useCallback(() => {
       let e = g.filter(e => {
         var t, n;
-        return (null == (t = e.game) ? true : t.name) != null && (0, E.isGameApplicationType)(null == (n = e.game) ? true : n.type)
+        return (null == (t = e.game) ? true : t.name) != null && (0, O.isGameApplicationType)(null == (n = e.game) ? true : n.type)
       }).map(e => e.game.name);
-      E.default.track(N.rMx.NOW_PLAYING_CARD_HOVERED, {
+      O.default.track(j.rMx.NOW_PLAYING_CARD_HOVERED, {
         num_users: _,
         num_streams: b,
-        num_activities: O,
+        num_activities: E,
         in_voice_channel: y,
         games_detected: e
       })
-    }, [_, b, O, y, g]), P = i.useMemo(() => o()(j, A), [j]);
+    }, [_, b, E, y, g]), P = i.useMemo(() => o()(N, Z), [N]);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: s,
       position: "left",
@@ -72,7 +73,7 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
         let {
           closePopout: n
         } = e;
-        return (0, r.jsx)(S.Z, {
+        return (0, r.jsx)(T.Z, {
           party: t,
           close: n
         })
@@ -83,7 +84,7 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
         let {
           isShown: l
         } = t;
-        return (0, r.jsx)(C.Z, (n = function(e) {
+        return (0, r.jsx)(S.Z, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -104,9 +105,9 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
           ref: s,
           onMouseEnter: P,
           "aria-haspopup": "menu",
-          className: x.itemCard,
+          className: A.itemCard,
           active: l,
-          flat: T,
+          flat: v,
           children: (0, r.jsxs)("div", {
             children: [c, d]
           })
@@ -123,9 +124,9 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
       }
     }) : null
   }),
-  w = a().throttle(() => Chunk93127._(), 3e5);
+  L = a().throttle(() => Chunk93127._(), 3e5);
 
-function L() {
+function R() {
   let {
     nowPlayingCards: e,
     loaded: t,
@@ -138,11 +139,11 @@ function L() {
     needsRefresh: Chunk752048.Z.shouldFetch(),
     fetching: Chunk752048.Z.isFetching(),
     currentUser: Chunk594174.default.getCurrentUser()
-  })), s = (0, Chunk442837.e7)([Chunk569984.Z], () => Chunk569984.Z.quests);
+  })), s = (0, Chunk442837.e7)([Chunk569984.Z], () => Chunk569984.Z.quests), o = (0, Chunk113434.Fy)(Array.from(Chunk954955.values()));
   Chunk647438.useEffect(() => (Chunk570140.Z.wait(() => Chunk225559.L()), () => Chunk570140.Z.wait(() => Chunk225559.v())), [null == a ? true : a.id]), Chunk647438.useEffect(() => {
-    require && !Chunk392711 && w()
+    require && !Chunk392711 && L()
   }, [require, Chunk392711]);
-  let o = Chunk647438.useMemo(() => {
+  let p = Chunk647438.useMemo(() => {
       let t = new Map,
         n = new Set,
         r = (0, Chunk509212.NI)(Chunk954955, Chunk46140.l$);
@@ -155,15 +156,15 @@ function L() {
         null == a || n.has(a.id) || (t.set(i.party.id, a), n.add(a.id))
       });
       return exports
-    }, [module, Chunk954955]),
-    p = null;
-  return exports ? p = module.length > 0 ? module.map(e => {
+    }, [module, Chunk954955, o]),
+    m = null;
+  return exports ? m = module.length > 0 ? module.map(e => {
     let {
       party: t
     } = e;
-    return (0, r.jsx)(Z, {
+    return (0, r.jsx)(w, {
       party: t,
-      quest: o.get(t.id)
+      quest: p.get(t.id)
     }, t.id)
   }) : (0, Chunk951288.jsxs)("div", {
     className: Chunk559909.emptyCard,
