@@ -50,5 +50,5 @@ function c(e, t) {
       activityText: null
     } : null
   }
-  return o(e, t, disableFormatting)
+  return o(e, t)
 }

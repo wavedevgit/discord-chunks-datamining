@@ -10,7 +10,6 @@ module.exports = {
   memberListHeader: "memberListHeader_d6b206",
   memberListItemText: "memberListItemText_d6b206",
   viewersIcon: "viewersIcon_d6b206",
-  viewersTooltipItem: "viewersTooltipItem_d6b206",
   memberListItem: "memberListItem_d6b206",
   popoutDisabled: "popoutDisabled_d6b206"
 }

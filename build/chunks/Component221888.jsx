@@ -2,7 +2,7 @@
 /** chunk id: 221888, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,6 +12,7 @@ var Chunk951288 = require("./951288.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk410575 = require("./410575.jsx"),
@@ -26,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk238377 = require("./238377.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,20 +36,20 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,21 +60,21 @@ function A(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = 150;
+let R = 150;
 
-function R(e, t) {
+function P(e, t) {
   switch (e) {
-    case y.fO.ACTIVITY:
-      return v.intl.formatToPlainString(v.t.TCM94S, {
+    case O.fO.ACTIVITY:
+      return I.intl.formatToPlainString(I.t.TCM94S, {
         numUsers: t
       });
-    case y.fO.STREAM:
-      return v.intl.formatToPlainString(v.t.BR7Tno, {
+    case O.fO.STREAM:
+      return I.intl.formatToPlainString(I.t.BR7Tno, {
         numViewers: t
       });
     default:
@@ -81,7 +82,7 @@ function R(e, t) {
   }
 }
 
-function P(e) {
+function D(e) {
   let {
     users: t,
     disableInteraction: n,
@@ -89,26 +90,26 @@ function P(e) {
     participantType: a,
     channelId: s,
     handleUserContextMenu: l
-  } = e, c = R(a, t.length);
-  return (0, r.jsx)(d.VqE, {
+  } = e, c = P(a, t.length);
+  return (0, r.jsx)(f.VqE, {
     "aria-label": c,
-    className: I.popoutWrapper,
-    children: (0, r.jsxs)(d.Ttm, {
-      className: I.scroller,
-      children: [(0, r.jsx)(d.Heading, {
+    className: T.popoutWrapper,
+    children: (0, r.jsxs)(f.Ttm, {
+      className: T.scroller,
+      children: [(0, r.jsx)(f.Heading, {
         variant: "heading-deprecated-12/semibold",
-        className: I.memberListHeader,
+        className: T.memberListHeader,
         children: c
       }), (0, r.jsx)("div", {
-        children: t.map(e => (0, r.jsx)(h.Z, {
+        children: t.map(e => (0, r.jsx)(m.Z, {
           user: e,
           guildId: null != i ? i : true,
           channelId: s,
-          nick: b.ZP.getNickname(i, s, e),
-          className: o()(I.memberListItem, {
-            [I.popoutDisabled]: n
+          nick: y.ZP.getNickname(i, s, e),
+          className: o()(T.memberListItem, {
+            [T.popoutDisabled]: n
           }),
-          textClassName: I.memberListItemText,
+          textClassName: T.memberListItemText,
           disablePopout: n,
           onContextMenu: t => n ? null : l(t, e)
         }, e.id))
@@ -117,7 +118,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     users: t,
     guildId: n,
@@ -125,19 +126,21 @@ function D(e) {
     maxVisibleUsers: a = 3,
     className: s,
     participantType: l
-  } = e, c = R(l, t.length), u = t.length < a ? t.map(e => (0, r.jsx)("div", {
-    className: I.viewersTooltipItem,
-    children: b.ZP.getName(n, i, e)
-  }, e.id)) : c;
-  return (0, r.jsx)(d.jSM, {
+  } = e, c = P(l, t.length), u = t.length < a ? I.intl.format(I.t["A+bT9O"], {
+    users: t.length,
+    user1: y.ZP.getName(n, i, t[0]),
+    user2: y.ZP.getName(n, i, t[1]),
+    commaSeparatedUsers: t.slice(0, t.length - 1).map(e => y.ZP.getName(n, i, e)).join(", "),
+    lastUser: y.ZP.getName(n, i, t[t.length - 1])
+  }) : c;
+  return (0, r.jsx)(d.u, {
     text: u,
-    "aria-label": c,
     children: (0, r.jsxs)("div", {
-      className: o()(I.viewers, s),
-      children: [(0, r.jsx)(d.tEF, {
+      className: o()(T.viewers, s),
+      children: [(0, r.jsx)(f.tEF, {
         size: "xs",
         color: "currentColor",
-        className: I.viewersIcon
+        className: T.viewersIcon
       }), (0, r.jsx)("span", {
         "aria-hidden": "true",
         children: t.length
@@ -145,27 +148,27 @@ function D(e) {
     })
   })
 }
-let w = [];
+let x = [];
 
-function x(e) {
+function L(e) {
   let {
     channelId: t,
     guildId: a,
     participant: s,
-    className: h,
-    compact: b = false,
-    disableInteraction: v = false,
-    maxVisibleUsers: T = 3
-  } = e, A = i.useRef(null), R = (0, p.Z)(), [x, L] = i.useState(false), M = i.useRef(new u.sW(N, () => L(false))), j = (0, c.Wu)([m.Z, g.default], () => {
-    if (s.type === y.fO.STREAM) {
-      let e = m.Z.getViewerIds(s.id);
-      return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : w
+    className: d,
+    compact: m = false,
+    disableInteraction: y = false,
+    maxVisibleUsers: I = 3
+  } = e, S = i.useRef(null), C = (0, h.Z)(), [P, L] = i.useState(false), M = i.useRef(new u.sW(R, () => L(false))), j = (0, c.Wu)([g.Z, E.default], () => {
+    if (s.type === O.fO.STREAM) {
+      let e = g.Z.getViewerIds(s.id);
+      return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(b.lm) : x
     }
-    return s.type === y.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : w
+    return s.type === O.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => E.default.getUser(e.userId)).filter(b.lm) : x
   }, [s]);
   i.useEffect(() => {
-    R && (M.current.cancel(), L(false))
-  }, [R]);
+    C && (M.current.cancel(), L(false))
+  }, [C]);
   let k = i.useCallback(() => {
       M.current.cancel(), L(true)
     }, []),
@@ -173,11 +176,11 @@ function x(e) {
       M.current.delay()
     }, []),
     G = i.useCallback((e, t) => {
-      k(), (0, f.jW)(e, async () => {
+      k(), (0, _.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-        return n => (0, r.jsx)(e, C(S({}, n), {
+        return n => (0, r.jsx)(e, N(A({}, n), {
           user: t
         }))
       }, {
@@ -185,43 +188,43 @@ function x(e) {
       })
     }, [U, k]);
   if (0 === j.length) return null;
-  if (b) return (0, r.jsx)(D, {
-    maxVisibleUsers: T,
+  if (m) return (0, r.jsx)(w, {
+    maxVisibleUsers: I,
     users: j,
     guildId: a,
     channelId: t,
-    className: h,
+    className: d,
     participantType: s.type
   });
-  let B = l()(j).take(T).map(e => (0, r.jsx)(d.qEK, {
+  let B = l()(j).take(I).map(e => (0, r.jsx)(f.qEK, {
     src: e.getAvatarURL(a, 24),
     "aria-label": e.username,
-    size: d.EFr.SIZE_24,
-    className: I.viewer
+    size: f.EFr.SIZE_24,
+    className: T.viewer
   }, e.id)).value();
-  return j.length > T && (B[B.length - 1] = (0, r.jsxs)("div", {
-    className: I.overflow,
-    children: ["+", j.length - T + 1]
-  }, "overflow")), (0, r.jsx)(_.Z, {
-    section: O.jXE.STREAM_VIEWER_POPOUT,
+  return j.length > I && (B[B.length - 1] = (0, r.jsxs)("div", {
+    className: T.overflow,
+    children: ["+", j.length - I + 1]
+  }, "overflow")), (0, r.jsx)(p.Z, {
+    section: v.jXE.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {
       onMouseEnter: k,
       onMouseLeave: U,
-      children: (0, r.jsx)(d.yRy, {
-        targetElementRef: A,
-        renderPopout: () => (0, r.jsx)(P, {
+      children: (0, r.jsx)(f.yRy, {
+        targetElementRef: S,
+        renderPopout: () => (0, r.jsx)(D, {
           participantType: s.type,
           handleUserContextMenu: G,
           guildId: a,
           channelId: t,
           users: j,
-          disableInteraction: v
+          disableInteraction: y
         }),
-        shouldShow: x && !R,
+        shouldShow: P && !C,
         position: "top",
         children: () => (0, r.jsx)("div", {
-          ref: A,
-          className: o()(I.viewers, h),
+          ref: S,
+          className: o()(T.viewers, d),
           children: B
         })
       })
