@@ -10,6 +10,7 @@ module.exports = {
   categorySectionLast: "categorySectionLast_c656ac",
   categorySectionNitroDivider: "categorySectionNitroDivider_c656ac",
   categorySectionNitroLocked: "categorySectionNitroLocked_c656ac",
+  brandRefresh: "brandRefresh_c656ac",
   header: "header_c656ac",
   inactiveNitroHeader: "inactiveNitroHeader_c656ac",
   activeNitroHeader: "activeNitroHeader_c656ac",

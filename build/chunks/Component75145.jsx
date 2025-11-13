@@ -68,7 +68,8 @@ let E = function(e) {
   let {
     glowOpacity: t,
     className: n,
-    colorOpacity: i = h
+    colorOpacity: i = h,
+    enableBrandRefresh: a = false
   } = e;
   return (0, r.jsxs)("div", {
     className: o()(p.nitroTopDividerContainer, n),
@@ -76,27 +77,35 @@ let E = function(e) {
       className: p.nitroTopDividerUpper
     }), (0, r.jsx)("div", {
       style: {
-        opacity: t
+        opacity: a ? 0 : t
       },
       className: p.nitroTopDividerShadow
     }), (0, r.jsxs)("div", {
       className: p.nitroTopDividerLockContainer,
       children: [(0, r.jsx)("div", {
-        className: p.nitroTopDividerLockBorder
+        className: o()(p.nitroTopDividerLockBorder, {
+          [p.brandRefresh]: a
+        })
       }), (0, r.jsx)("div", {
-        className: p.nitroTopDividerLockCircle,
+        className: o()(p.nitroTopDividerLockCircle, {
+          [p.brandRefresh]: a
+        }),
         children: (0, r.jsx)(c.mBM, {
           size: "xs",
           color: "white"
         })
       }), (0, r.jsx)("div", {
-        className: p.nitroTopDividerLockBorderReversed
+        className: o()(p.nitroTopDividerLockBorderReversed, {
+          [p.brandRefresh]: a
+        })
       })]
     }), (0, r.jsx)("div", {
       style: {
-        opacity: i
+        opacity: a ? 1 : i
       },
-      className: p.nitroTopDividerLower
+      className: o()(p.nitroTopDividerLower, {
+        [p.brandRefresh]: a
+      })
     })]
   })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 603074, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,60 +12,64 @@ var Chunk951288 = require("./951288.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk28546 = require("./28546.js"),
+  Chunk597276 = require("./597276.js"),
   Chunk895421 = require("./895421.js"),
   Chunk526617 = require("./526617.jsx"),
   Chunk767354 = require("./767354.js");
 
-function p(e) {
+function h(e) {
   let {
     guildId: t,
     channel: n,
     containerWidth: a,
-    onClose: p,
-    onSelect: h,
-    analyticsSource: m,
-    suppressPlaySound: g,
-    shouldValidateSelectedSound: E,
-    shouldShowUpsell: b = true,
-    gridNotice: y,
-    inExpressionPicker: O,
-    soundButtonOverlay: v,
-    listPadding: I,
-    renderHeader: T,
-    defaultSoundsOnly: S
+    onClose: h,
+    onSelect: m,
+    analyticsSource: g,
+    suppressPlaySound: E,
+    shouldValidateSelectedSound: b,
+    shouldShowUpsell: y = true,
+    gridNotice: O,
+    inExpressionPicker: v,
+    soundButtonOverlay: I,
+    listPadding: T,
+    renderHeader: S,
+    defaultSoundsOnly: A
   } = e, {
-    fetching: A,
-    maybeFetchData: C
-  } = (0, d.Z)(), {
-    analyticsLocations: N
+    fetching: C,
+    maybeFetchData: N
+  } = (0, f.Z)(), R = (0, d.Z)({
+    location: "SoundboardSoundPicker"
+  }), {
+    analyticsLocations: P
   } = (0, c.ZP)(l.Z.SOUNDBOARD_POPOUT);
   return i.useEffect(() => {
-    C()
-  }, [C]), i.useEffect(() => {
-    O || (0, u.ql)("")
-  }, [O]), (0, r.jsx)(c.Gt, {
-    value: N,
+    N()
+  }, [N]), i.useEffect(() => {
+    v || (0, u.ql)("")
+  }, [v]), (0, r.jsx)(c.Gt, {
+    value: P,
     children: (0, r.jsx)(s.VqE, {
-      className: o()(_.picker, {
-        [_.fetching]: A,
-        [_.inExpressionPicker]: O
+      className: o()(p.picker, {
+        [p.fetching]: C,
+        [p.inExpressionPicker]: v
       }),
-      children: A ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(f.Z, {
+      children: C ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(_.Z, {
         guildId: t,
         channel: n,
-        onClose: p,
-        onSelect: h,
-        shouldValidateSelectedSound: E,
+        onClose: h,
+        onSelect: m,
+        shouldValidateSelectedSound: b,
         containerWidth: a,
-        suppressPlaySound: g,
-        shouldShowUpsell: b,
-        gridNotice: y,
-        soundButtonOverlay: v,
-        listPadding: I,
-        renderHeader: T,
-        defaultSoundsOnly: S,
-        inExpressionPicker: O,
-        analyticsSource: m
+        suppressPlaySound: E,
+        shouldShowUpsell: y,
+        gridNotice: O,
+        soundButtonOverlay: I,
+        listPadding: T,
+        renderHeader: S,
+        defaultSoundsOnly: A,
+        inExpressionPicker: v,
+        analyticsSource: g,
+        enablePickerUpsellPremiumBrandRefresh: R
       })
     })
   })

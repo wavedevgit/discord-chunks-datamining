@@ -10,6 +10,7 @@ module.exports = {
   glowAnimation: "glowAnimation_b3fb5f",
   nitroTopDividerLockContainer: "nitroTopDividerLockContainer_b3fb5f",
   nitroTopDividerLockBorder: "nitroTopDividerLockBorder_b3fb5f",
+  brandRefresh: "brandRefresh_b3fb5f",
   nitroTopDividerLockCircle: "nitroTopDividerLockCircle_b3fb5f",
   nitroTopDividerLockBorderReversed: "nitroTopDividerLockBorderReversed_b3fb5f",
   nitroTopDividerLower: "nitroTopDividerLower_b3fb5f",
