@@ -13,7 +13,7 @@ let s = "1290718710658629658";
 function l(e) {
   let t = [{
     key: "NOT_INTERESTED",
-    text: (0, a.q8)(e) ? o.intl.string(o.t["tgi+nm"]) : o.intl.formatToPlainString(o.t.AZRWVY, {
+    text: (0, a.q8)(e) ? o.intl.string(o.t.wHRWkE) : o.intl.formatToPlainString(o.t.AZRWVY, {
       entityName: e.config.messages.gameTitle
     })
   }, {
