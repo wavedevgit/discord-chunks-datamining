@@ -250,7 +250,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         onboardingEnabled: module.features.has(Chunk981631.GuildFeatures.GUILD_ONBOARDING),
         guild: module
       }) : null, (0, Chunk951288.jsx)(Chunk481060.VcW, {
-        layout: "horizontal",
+        layout: "horizontal-responsive",
         label: Chunk388032.intl.string(Chunk388032.t["otcXP/"]),
         description: Chunk388032.intl.string(Chunk388032.t.BtwmYB),
         value: module.rulesChannelId,
@@ -262,7 +262,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         },
         isDisabled: !exports
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.VcW, {
-        layout: "horizontal",
+        layout: "horizontal-responsive",
         label: Chunk388032.intl.string(Chunk388032.t.vAyDGU),
         description: Chunk388032.intl.string(Chunk388032.t.ZFeonu),
         value: module.publicUpdatesChannelId,
@@ -274,7 +274,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         },
         isDisabled: !require
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.VcW, {
-        layout: "horizontal",
+        layout: "horizontal-responsive",
         label: Chunk388032.intl.string(Chunk388032.t.sMkYE8),
         description: Chunk388032.intl.string(Chunk388032.t.htioQo),
         value: module.safetyAlertsChannelId,
@@ -286,7 +286,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         },
         isDisabled: !exports
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.VcW, {
-        layout: "horizontal",
+        layout: "horizontal-responsive",
         label: Chunk388032.intl.string(Chunk388032.t.pO60fy),
         description: Chunk388032.intl.string(Chunk388032.t.aIR73T),
         value: module.preferredLocale,

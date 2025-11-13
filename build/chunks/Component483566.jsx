@@ -69,7 +69,8 @@ function m(e) {
     id: c,
     errorMessage: u,
     successMessage: d,
-    layout: f
+    layout: f,
+    layoutConfig: p
   } = e;
   return {
     fieldProps: {
@@ -84,9 +85,10 @@ function m(e) {
       id: c,
       errorMessage: u,
       successMessage: d,
-      layout: f
+      layout: f,
+      layoutConfig: p
     },
-    props: _(e, ["label", "hideLabel", "badge", "icon", "required", "disabled", "description", "helperText", "id", "errorMessage", "successMessage", "layout"])
+    props: _(e, ["label", "hideLabel", "badge", "icon", "required", "disabled", "description", "helperText", "id", "errorMessage", "successMessage", "layout", "layoutConfig"])
   }
 }
 
@@ -101,33 +103,35 @@ function g(e) {
     children: _,
     errorMessage: p,
     successMessage: m,
-    trailingContent: g,
-    role: b,
-    layout: y = "vertical",
+    role: g,
+    layout: b = "vertical",
+    layoutConfig: y,
     badge: O,
     icon: v = null,
     interactiveLabel: I = false,
-    ref: T
-  } = e, S = h(e), {
-    labelId: A,
-    controlId: C,
-    errorMessageId: N,
-    describedById: R,
-    helperTextId: P,
-    descriptionId: D
-  } = S, w = "group" === b || "radiogroup" === b, x = w ? "span" : "label", L = w ? "fieldset" : "div", M = w ? (0, r.jsx)("legend", {
-    id: A,
+    auxiliaryContentPosition: T = "under-control",
+    trailingAuxiliaryContent: S,
+    ref: A
+  } = e, C = h(e), {
+    labelId: N,
+    controlId: R,
+    errorMessageId: P,
+    describedById: D,
+    helperTextId: w,
+    descriptionId: x
+  } = C, L = null == y ? true : y.horizontalControlColumnWidth, M = "group" === g || "radiogroup" === g, j = M ? "span" : "label", k = M ? "fieldset" : "div", U = M ? (0, r.jsx)("legend", {
+    id: N,
     children: (0, r.jsx)(s.n, {
       children: t
     })
-  }) : null, j = null != t && "" !== t, k = null != l && "" !== l, U = j ? (0, r.jsxs)(u.x, {
-    "aria-hidden": w,
+  }) : null, G = null != t && "" !== t, B = null != l && "" !== l, Z = G ? (0, r.jsxs)(u.x, {
+    "aria-hidden": M,
     "data-interactive": I,
-    id: A,
-    tag: x,
+    id: N,
+    tag: j,
     variant: "text-md/medium",
     color: "text-primary",
-    htmlFor: C,
+    htmlFor: R,
     className: f.label,
     children: [null != v ? (0, r.jsx)(v, {
       "aria-hidden": true,
@@ -145,38 +149,41 @@ function g(e) {
         type: O
       })
     }) : null]
-  }) : null;
+  }) : null, F = (0, r.jsx)(E, {
+    successMessage: m,
+    errorMessage: p,
+    helperText: c,
+    trailing: S,
+    helperTextId: w,
+    errorMessageId: P
+  });
   return (0, r.jsx)(d.z.Provider, {
-    value: S,
-    children: (0, r.jsxs)(L, {
-      role: b,
-      ref: T,
+    value: C,
+    children: (0, r.jsxs)(k, {
+      role: g,
+      ref: A,
       className: f.container,
-      "data-layout": y,
+      "data-layout": b,
+      style: null != L ? {
+        "--custom-field-horizontal-control-width": L
+      } : true,
       "data-disabled": a,
-      "aria-describedby": w ? R : true,
-      disabled: w ? a : true,
-      children: [M, j && n ? (0, r.jsx)(s.n, {
-        children: U
-      }) : null, j && !n || k ? (0, r.jsxs)("div", {
+      "aria-describedby": M ? D : true,
+      disabled: M ? a : true,
+      children: [U, G && n ? (0, r.jsx)(s.n, {
+        children: Z
+      }) : null, G && !n || B ? (0, r.jsxs)("div", {
         className: f.labelContainer,
-        children: [n ? null : U, k && (0, r.jsx)(u.x, {
+        children: [n ? null : Z, B && (0, r.jsx)(u.x, {
           variant: "text-sm/normal",
           color: "text-secondary",
           className: f.description,
-          id: D,
+          id: x,
           children: l
-        })]
+        }), "under-label" === T ? F : null]
       }) : null, (0, r.jsxs)("div", {
         className: f.control,
-        children: ["function" == typeof _ ? _(S) : _, (0, r.jsx)(E, {
-          successMessage: m,
-          errorMessage: p,
-          helperText: c,
-          trailingContent: g,
-          helperTextId: P,
-          errorMessageId: N
-        })]
+        children: ["function" == typeof _ ? _(C) : _, "under-control" === T ? F : null]
       })]
     })
   })
@@ -187,22 +194,11 @@ function E(e) {
     successMessage: t,
     errorMessage: n,
     helperText: i,
-    trailingContent: o,
+    trailing: o,
     helperTextId: s,
     errorMessageId: d
   } = e, _ = (0, r.jsx)("div", {}), p = null != o;
-  return (null != t && "" !== t ? (p = true, _ = (0, r.jsxs)("div", {
-    className: f.statusMessageContainer,
-    children: [(0, r.jsx)(l.o, {
-      size: "xs",
-      color: a.Z.colors.TEXT_FEEDBACK_POSITIVE
-    }), (0, r.jsx)(u.x, {
-      variant: "text-xs/normal",
-      color: "text-feedback-positive",
-      id: s,
-      children: t
-    })]
-  })) : null != n && "" !== n ? (p = true, _ = (0, r.jsxs)("div", {
+  return (null != n && "" !== n ? (p = true, _ = (0, r.jsxs)("div", {
     className: f.statusMessageContainer,
     children: [(0, r.jsx)(c.M, {
       size: "xs",
@@ -212,6 +208,17 @@ function E(e) {
       color: "text-feedback-critical",
       id: d,
       children: n
+    })]
+  })) : null != t && "" !== t ? (p = true, _ = (0, r.jsxs)("div", {
+    className: f.statusMessageContainer,
+    children: [(0, r.jsx)(l.o, {
+      size: "xs",
+      color: a.Z.colors.TEXT_FEEDBACK_POSITIVE
+    }), (0, r.jsx)(u.x, {
+      variant: "text-xs/normal",
+      color: "text-feedback-positive",
+      id: s,
+      children: t
     })]
   })) : null != i && (p = true, _ = (0, r.jsx)(u.x, {
     variant: "text-xs/normal",

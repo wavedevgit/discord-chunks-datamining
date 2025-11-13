@@ -310,8 +310,7 @@ function G(e) {
     label: O.intl.string(O.t.wVS5Sd),
     children: [(0, r.jsx)(l.rsf, {
       label: O.intl.string(O.t.N004zO),
-      description: O.intl.string(O.t.Qq5W3v),
-      helperText: u ? O.intl.string(O.t.GckHGw) : true,
+      description: u ? O.intl.string(O.t.GckHGw) : O.intl.string(O.t.Qq5W3v),
       checked: n && !u,
       disabled: !t || u,
       onChange: e => s({

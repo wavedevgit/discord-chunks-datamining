@@ -515,19 +515,15 @@ function z(e) {
       }
       return null
     }),
-    M = (0, N.nP)({
+    M = (0, N.k)({
       location: "Search"
     }),
-    U = (0, N.KS)({
+    U = (0, C.UX)({
       location: "Search"
     }),
-    F = M || U,
-    V = (0, C.UX)({
-      location: "Search"
-    }),
-    H = i.useMemo(() => t.type === B.aib.DMS ? Z.intl.string(Z.t.m7OrlR) : t.type === B.aib.CHANNEL && V || F ? Z.intl.formatToPlainString(Z.t.LDZtFO, {
+    F = i.useMemo(() => t.type === B.aib.DMS ? Z.intl.string(Z.t.m7OrlR) : t.type === B.aib.CHANNEL && U || M ? Z.intl.formatToPlainString(Z.t.LDZtFO, {
       name: L
-    }) : Z.intl.string(Z.t["5h0QOP"]), [t.type, V, F, L]);
+    }) : Z.intl.string(Z.t["5h0QOP"]), [t.type, U, M, L]);
   return (0, r.jsx)(K, {
     className: n,
     searchContext: t,
@@ -537,8 +533,8 @@ function z(e) {
     keyboardModeEnabled: o,
     onSearch: D,
     isSearchActive: I,
-    placeholder: H,
-    isSearchFiltersRedesignEnabled: F
+    placeholder: F,
+    isSearchFiltersRedesignEnabled: M
   })
 }
 

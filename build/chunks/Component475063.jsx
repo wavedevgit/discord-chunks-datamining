@@ -119,7 +119,7 @@ function I(e) {
     maxLength: N && null != g ? g : true
   }) : null;
   return (0, r.jsx)(s.gNt, E(m({}, w), {
-    trailingContent: G,
+    trailingAuxiliaryContent: G,
     errorMessage: j.hasError && null != (t = j.errorMessage) ? t : true,
     children: (0, r.jsxs)(s.UPk, {
       validation: j,

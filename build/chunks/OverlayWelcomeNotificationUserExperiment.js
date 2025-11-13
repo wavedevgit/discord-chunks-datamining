@@ -2,7 +2,8 @@
 /** chunk id: 32300, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F3: () => D,
+  F3: () => x,
+  KK: () => w,
   NW: () => d,
   OV: () => l,
   RD: () => y,
@@ -382,7 +383,31 @@ function P(e) {
     autoTrackExposure: t
   })
 }
+let D = (0, Chunk818083.B)({
+  id: "2025-11_overlay_welcome_notification",
+  label: "Overlay Welcome Notification",
+  kind: "user",
+  defaultConfig: {
+    enabled: false
+  },
+  treatments: [{
+    id: 1,
+    label: "Modular Experience",
+    config: {
+      enabled: true
+    }
+  }]
+});
 
-function D() {
-  v("OVERLAY_INITIALIZED"), S("OVERLAY_INITIALIZED"), P("OVERLAY_INITIALIZED")
+function w(e) {
+  let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
+  return D.getCurrentConfig({
+    location: e
+  }, {
+    autoTrackExposure: t
+  })
+}
+
+function x() {
+  v("OVERLAY_INITIALIZED"), S("OVERLAY_INITIALIZED"), P("OVERLAY_INITIALIZED"), w("OVERLAY_INITIALIZED")
 }

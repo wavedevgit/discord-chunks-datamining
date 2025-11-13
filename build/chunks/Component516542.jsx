@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 516542, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,23 +20,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk959517 = require("./959517.js"),
   Chunk572985 = require("./572985.js");
 
-function E(e) {
+function v(e) {
   let {
     id: t,
     replyToMessageId: n,
-    channel: E,
-    onSend: v
-  } = e, S = (0, f.Z)(), {
-    placeholder: b,
-    accessibilityLabel: x
-  } = (0, u.Z)({
-    channel: E
-  }), [j, I] = r.useState(() => (0, d.H2)()), {
+    channel: v,
+    onSend: E
+  } = e, b = (0, f.Z)(), {
+    placeholder: _,
+    accessibilityLabel: S
+  } = (0, c.Z)({
+    channel: v
+  }), [x, I] = r.useState(() => (0, d.H2)()), {
     textValue: C,
-    richValue: Z
-  } = j, [N, w] = r.useState(false), T = r.useCallback(() => w(true), []), _ = r.useCallback(() => w(false), []);
+    richValue: j
+  } = x, [N, Z] = r.useState(false), w = r.useCallback(() => Z(true), []), T = r.useCallback(() => Z(false), []);
   (0, s.ZP)(() => {
-    (0, a.ack)(E.id, {
+    (0, a.ack)(v.id, {
       section: g.jXE.OVERLAY,
       object: g.qAy.ACK_INLINE_REPLY,
       objectType: g.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
@@ -51,26 +51,26 @@ function E(e) {
     A = r.useCallback(e => {
       "Escape" === e.key && o.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
-    D = r.useCallback(() => (C.length > S || (l.Z.sendMessage(E.id, h.ZP.parse(E, C), false, {
+    D = r.useCallback(() => (C.length > b || (l.Z.sendMessage(v.id, p.ZP.parse(v, C), false, {
       location: y.dy.OVERLAY
-    }), o.Z.setInputLocked(true, m.Z.getTargetPID()), o.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(C)), Promise.resolve({
+    }), o.Z.setInputLocked(true, m.Z.getTargetPID()), o.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == E || E(C)), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
-    })), [C, S, E, t, v]);
+    })), [C, b, v, t, E]);
   return (0, i.jsx)("div", {
     className: O.container,
-    children: (0, i.jsx)(p.ZP, {
+    children: (0, i.jsx)(h.ZP, {
       innerClassName: O.textArea,
       onChange: P,
-      placeholder: b,
-      accessibilityLabel: x,
-      channel: E,
+      placeholder: _,
+      accessibilityLabel: S,
+      channel: v,
       textValue: C,
-      richValue: Z,
-      type: c.Ie.OVERLAY_INLINE_REPLY,
+      richValue: j,
+      type: u.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: false,
-      onBlur: _,
-      onFocus: T,
+      onBlur: T,
+      onFocus: w,
       focused: N,
       onSubmit: D,
       onKeyDown: A,

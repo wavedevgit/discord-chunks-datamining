@@ -19,42 +19,42 @@ function d(e) {
   } = e, n = (0, o.e7)([s.Z], () => s.Z.getVoiceChannelId()), r = (0, o.e7)([a.Z], () => a.Z.getChannel(n)), d = null != r;
   return (0, i.jsxs)("div", {
     className: l()({
-      [c.panelContainer]: true,
-      [c.locked]: t
+      [u.panelContainer]: true,
+      [u.locked]: t
     }),
     children: [(0, i.jsxs)("div", {
-      className: c.panelRow,
+      className: u.panelRow,
       children: [(0, i.jsxs)("div", {
-        className: c.buttonSection,
-        children: [(0, i.jsx)(u.Ox, {
+        className: u.buttonSection,
+        children: [(0, i.jsx)(c.Ox, {
           voiceChannel: r,
           locked: t
-        }), (0, i.jsx)(u.SE, {
+        }), (0, i.jsx)(c.SE, {
           voiceChannel: r,
           locked: t
-        }), (0, i.jsx)(u.N3, {
+        }), (0, i.jsx)(c.N3, {
           voiceChannel: r,
           locked: t
         })]
       }), (0, i.jsxs)("div", {
-        className: c.buttonSection,
-        children: [(0, i.jsx)(u.sm, {
+        className: u.buttonSection,
+        children: [(0, i.jsx)(c.sm, {
           voiceChannel: r,
           locked: t
-        }), (0, i.jsx)(u.aG, {
+        }), (0, i.jsx)(c.aG, {
           voiceChannel: r,
           locked: t
         })]
       }), (0, i.jsx)("div", {
-        className: l()(c.buttonSection, d && c.inCall),
-        children: (0, i.jsx)(u.c_, {
+        className: l()(u.buttonSection, d && u.inCall),
+        children: (0, i.jsx)(c.c_, {
           voiceChannel: r,
           locked: t
         })
       })]
     }), d && (0, i.jsx)("div", {
-      className: c.panelRow,
-      children: (0, i.jsx)(u.L, {
+      className: u.panelRow,
+      children: (0, i.jsx)(c.L, {
         voiceChannel: r,
         locked: t
       })

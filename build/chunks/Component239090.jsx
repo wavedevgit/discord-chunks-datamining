@@ -18,20 +18,18 @@ let o = {
         hasIcon: n,
         label: o,
         description: s,
-        helperText: l,
-        required: c,
-        errorMessage: u
-      } = e, [d, f] = i.useState(false);
+        required: l,
+        errorMessage: c
+      } = e, [u, d] = i.useState(false);
       return (0, r.jsx)(a.kcT, {
         label: o,
         description: s,
-        helperText: l,
-        required: c,
-        errorMessage: u,
+        required: l,
+        errorMessage: c,
         hasIcon: n,
-        onChange: f,
+        onChange: d,
         disabled: t,
-        checked: d
+        checked: u
       })
     },
     controls: {
@@ -49,11 +47,6 @@ let o = {
         type: "text",
         label: "Description",
         defaultValue: "Make links to websites, help articles, and other pages stand out more by underlining them."
-      },
-      helperText: {
-        type: "text",
-        label: "Helper Text",
-        defaultValue: ""
       },
       required: {
         type: "boolean",

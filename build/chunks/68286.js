@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 68286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Bz: () => Z,
+  Bz: () => j,
   Dl: () => N,
   bt: () => y,
   wD: () => C
@@ -55,7 +55,7 @@ function g(e, t) {
 }
 let y = 256,
   O = (e, t) => 2 * e + 2 * t,
-  E = e => {
+  v = e => {
     let {
       width: t,
       height: n
@@ -67,14 +67,14 @@ let y = 256,
     }
   };
 
-function v(e, t, n, i) {
+function E(e, t, n, i) {
   let r = arguments.length > 4 && true !== arguments[4] ? arguments[4] : y,
     l = {
       width: r,
-      height: (0, p.MH)(r)
+      height: (0, h.MH)(r)
     },
     o = Math.max(1, e),
-    a = (0, p.bj)(e, t),
+    a = (0, h.bj)(e, t),
     s = O(n, t);
   return i ? {
     width: l.width + s,
@@ -85,17 +85,17 @@ function v(e, t, n, i) {
   }
 }
 
-function S(e, t, n, i) {
+function b(e, t, n, i) {
   let r = O(e, t);
-  return i ? n.width - r : (0, p.eJ)(n.height - r)
+  return i ? n.width - r : (0, h.eJ)(n.height - r)
 }
 
-function b(e) {
+function _(e) {
   return e.height > e.width
 }
-let x = 180 / 1080;
+let S = 180 / 1080;
 
-function j(e) {
+function x(e) {
   let {
     layout: t,
     tileCount: n,
@@ -103,8 +103,8 @@ function j(e) {
     padding: r,
     previousContainerSize: l,
     widgetMinMaxSizes: o
-  } = e, a = t === h.C5.VERTICAL, s = S(i, r, l, a), u = v(n, r, i, a, s);
-  return (0, p.Se)(u, {
+  } = e, a = t === p.C5.VERTICAL, s = b(i, r, l, a), c = E(n, r, i, a, s);
+  return (0, h.Se)(c, {
     containerOffset: O(i, r),
     gapSize: r,
     tileCount: n,
@@ -124,23 +124,23 @@ function I(e) {
     minSize: o,
     containerSpecs: a,
     defaultSize: s
-  } = e, u = g(e, ["widgetId", "size", "borderWidth", "padding", "minSize", "containerSpecs", "defaultSize"]);
-  let c = e => C(m({
+  } = e, c = g(e, ["widgetId", "size", "borderWidth", "padding", "minSize", "containerSpecs", "defaultSize"]);
+  let u = e => C(m({
       operation: d.B.RESIZE_NORTH,
       computedSize: e,
       originSize: e,
       borderWidth: i,
       padding: r,
       containerSpecs: a
-    }, u)),
-    p = {
+    }, c)),
+    h = {
       widgetId: t,
       size: m({
         fixed: n.fixed
-      }, c(n)),
-      minSize: m({}, c(o))
+      }, u(n)),
+      minSize: m({}, u(o))
     };
-  null != s && (p.defaultSize = m({}, c(s))), (0, l.nv)(m({}, p))
+  null != s && (h.defaultSize = m({}, u(s))), (0, l.nv)(m({}, h))
 }
 let C = e => {
   let {
@@ -150,54 +150,54 @@ let C = e => {
     borderWidth: r,
     padding: l,
     containerSpecs: o
-  } = e, a = O(r, l), s = Math.max(1, i.width), u = Math.max(1, i.height), c = {
+  } = e, a = O(r, l), s = Math.max(1, i.width), c = Math.max(1, i.height), u = {
     width: s,
-    height: u
-  }, h = b(c), f = function(e, t, n) {
-    let i = b(n),
-      r = S(e, t, n, i),
-      l = (0, p.MH)(r);
+    height: c
+  }, p = _(u), f = function(e, t, n) {
+    let i = _(n),
+      r = b(e, t, n, i),
+      l = (0, h.MH)(r);
     return i ? Math.floor(n.height / l) : Math.floor(n.width / r)
-  }(r, l, c), m = (0, p.f8)({
+  }(r, l, u), m = (0, h.f8)({
     width: s,
-    height: u,
+    height: c,
     containerOffset: a,
     gapSize: l,
     tileCount: f,
-    isVertical: h
-  }), g = (0, p.bj)(f, l), y = (() => {
+    isVertical: p
+  }), g = (0, h.bj)(f, l), y = (() => {
     switch (t) {
       case d.B.RESIZE_NORTH:
       case d.B.RESIZE_SOUTH:
         return {
           height: n.height, width: (e => {
-            let t = h ? e - g : e,
-              n = (0, p.GB)(t - a, m.horizontalRatio);
-            return h || (n += g), n + a
+            let t = p ? e - g : e,
+              n = (0, h.GB)(t - a, m.horizontalRatio);
+            return p || (n += g), n + a
           })(n.height)
         };
       default:
         return {
           width: n.width, height: (e => {
-            let t = h ? e : e - g,
-              n = (0, p.E5)(t - a, m.verticalRatio);
-            return h && (n += g), n + a
+            let t = p ? e : e - g,
+              n = (0, h.E5)(t - a, m.verticalRatio);
+            return p && (n += g), n + a
           })(n.width)
         }
     }
   })();
-  return (0, p.Se)(y, {
+  return (0, h.Se)(y, {
     containerOffset: a,
     gapSize: l,
     tileCount: f,
-    isVertical: h
+    isVertical: p
   }, {
     maxWidth: .75 * o.maxX,
     maxHeight: .75 * o.maxY
   })
 };
 
-function Z(e) {
+function j(e) {
   let {
     tileCount: t,
     padding: n,
@@ -209,12 +209,12 @@ function Z(e) {
     height: d
   } = {
     width: "number" == typeof a.width ? a.width : y,
-    height: "number" == typeof a.height ? a.height : (0, p.MH)(y)
+    height: "number" == typeof a.height ? a.height : (0, h.MH)(y)
   }, {
-    width: h = s,
+    width: p = s,
     height: m = d,
     ref: g
-  } = (0, o.ZP)(), E = (0, f.Z)(), b = (0, c.ZY)(E), j = (0, r.e7)([u.Z], () => u.Z.windowSize(b), [b]), I = function(e) {
+  } = (0, o.ZP)(), v = (0, f.Z)(), _ = (0, u.ZY)(v), x = (0, r.e7)([c.Z], () => c.Z.windowSize(_), [_]), I = function(e) {
     let {
       tileCount: t,
       padding: n,
@@ -222,34 +222,34 @@ function Z(e) {
       windowWidth: r,
       windowHeight: l,
       isVertical: o
-    } = e, a = v(t, n, i, o), s = {
+    } = e, a = E(t, n, i, o), s = {
       maxX: null != r ? r : 2 * a.width / .75,
       maxY: null != l ? l : 2 * a.height / .75,
       minX: 0,
       minY: 0
-    }, u = {
+    }, c = {
       width: .75 * s.maxX,
       height: .75 * s.maxY
-    }, c = (null != l ? l : 0) * x;
-    return c = Math.max(a.height, c), c = Math.min(u.height, c), {
+    }, u = (null != l ? l : 0) * S;
+    return u = Math.max(a.height, u), u = Math.min(c.height, u), {
       minSize: a,
-      defaultSize: v(t, n, i, o, (0, p.eJ)(c)),
-      maxSize: u,
+      defaultSize: E(t, n, i, o, (0, h.eJ)(u)),
+      maxSize: c,
       containerSpecs: s
     }
   }({
     tileCount: t,
     padding: n,
     borderWidth: i,
-    windowWidth: j.width,
-    windowHeight: j.height,
+    windowWidth: x.width,
+    windowHeight: x.height,
     isVertical: l
-  }), C = O(i, n), Z = S(i, n, {
-    width: h + C,
+  }), C = O(i, n), j = b(i, n, {
+    width: p + C,
     height: m + C
-  }, l), N = (0, p.MH)(Z);
+  }, l), N = (0, h.MH)(j);
   return {
-    tileWidth: Z,
+    tileWidth: j,
     tileHeight: N,
     widgetWidth: s,
     widgetHeight: d,
@@ -266,8 +266,8 @@ function N(e) {
   } = e, l = i.useRef(r);
   l.current = r;
   let o = (0, s.Z)(n),
-    u = t.length,
-    c = r.widgetMinMaxSizes.maxSize.width * r.widgetMinMaxSizes.maxSize.height;
+    c = t.length,
+    u = r.widgetMinMaxSizes.maxSize.width * r.widgetMinMaxSizes.maxSize.height;
   (0, a.Ng)(() => {
     let e = l.current,
       {
@@ -278,21 +278,21 @@ function N(e) {
         padding: o,
         widget: a,
         borderWidth: s,
-        locked: c
+        locked: u
       } = e,
       d = g(e, ["id", "widgetMinMaxSizes", "containerSize", "layout", "padding", "widget", "borderWidth", "locked"]);
     null != a && I(m({
       widgetId: t,
-      size: E(j({
+      size: v(x({
         layout: r,
-        tileCount: Math.max(1, u),
+        tileCount: Math.max(1, c),
         borderWidth: s,
         padding: o,
         previousContainerSize: n.defaultSize,
         widgetMinMaxSizes: n
       })),
       defaultSize: n.defaultSize,
-      minSize: E(n.minSize),
+      minSize: v(n.minSize),
       containerSpecs: n.containerSpecs,
       padding: o,
       borderWidth: s,
@@ -308,17 +308,17 @@ function N(e) {
         padding: o,
         widget: a,
         borderWidth: s,
-        locked: c
+        locked: u
       } = e,
       d = g(e, ["id", "widgetMinMaxSizes", "containerSize", "layout", "padding", "widget", "borderWidth", "locked"]);
     if (null != a) {
-      if (0 === u) {
-        if (c) return;
+      if (0 === c) {
+        if (u) return;
         I(m({
           widgetId: t,
-          size: E(n.defaultSize),
+          size: v(n.defaultSize),
           defaultSize: n.defaultSize,
-          minSize: E(n.minSize),
+          minSize: v(n.minSize),
           padding: o,
           borderWidth: s,
           widget: a,
@@ -328,22 +328,22 @@ function N(e) {
       }
       I(m({
         widgetId: t,
-        size: E(j({
+        size: v(x({
           layout: r,
-          tileCount: u,
+          tileCount: c,
           borderWidth: s,
           padding: o,
           previousContainerSize: i,
           widgetMinMaxSizes: n
         })),
-        minSize: E(n.minSize),
+        minSize: v(n.minSize),
         containerSpecs: n.containerSpecs,
         padding: o,
         borderWidth: s,
         widget: a
       }, d))
     }
-  }, [u, c]), i.useLayoutEffect(() => {
+  }, [c, u]), i.useLayoutEffect(() => {
     if (l.current.participants <= 1) return;
     let e = l.current,
       {
@@ -352,11 +352,11 @@ function N(e) {
         containerSize: r,
         padding: a,
         borderWidth: s,
-        participants: u,
-        widget: c
+        participants: c,
+        widget: u
       } = e,
       d = g(e, ["id", "widgetMinMaxSizes", "containerSize", "padding", "borderWidth", "participants", "widget"]);
-    if (null == c || o === n) return;
+    if (null == u || o === n) return;
     let f = function(e) {
       let {
         oldLayout: t,
@@ -366,12 +366,12 @@ function N(e) {
         padding: l,
         previousContainerSize: o,
         widgetMinMaxSizes: a
-      } = e, s = S(r, l, o, t === h.C5.VERTICAL), u = v(i, l, r, n === h.C5.VERTICAL, s);
-      return (0, p.Se)(u, {
+      } = e, s = b(r, l, o, t === p.C5.VERTICAL), c = E(i, l, r, n === p.C5.VERTICAL, s);
+      return (0, h.Se)(c, {
         containerOffset: O(r, l),
         gapSize: l,
         tileCount: i,
-        isVertical: n === h.C5.VERTICAL
+        isVertical: n === p.C5.VERTICAL
       }, {
         maxWidth: a.maxSize.width,
         maxHeight: a.maxSize.height
@@ -379,7 +379,7 @@ function N(e) {
     }({
       oldLayout: null != o ? o : n,
       newLayout: n,
-      tileCount: u,
+      tileCount: c,
       borderWidth: s,
       padding: a,
       previousContainerSize: r,
@@ -387,12 +387,12 @@ function N(e) {
     });
     I(m({
       widgetId: t,
-      size: E(f),
-      minSize: E(i.minSize),
+      size: v(f),
+      minSize: v(i.minSize),
       containerSpecs: i.containerSpecs,
       padding: a,
       borderWidth: s,
-      widget: c
+      widget: u
     }, d))
   }, [n, o]), (0, a.zq)(() => {
     let e = l.current,
@@ -405,9 +405,9 @@ function N(e) {
       o = g(e, ["id", "widgetMinMaxSizes", "widget", "padding"]);
     null != i && I(m({
       widgetId: t,
-      size: E(n.defaultSize),
+      size: v(n.defaultSize),
       defaultSize: n.defaultSize,
-      minSize: E(n.minSize),
+      minSize: v(n.minSize),
       containerSpecs: n.containerSpecs,
       padding: r,
       widget: i

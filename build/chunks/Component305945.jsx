@@ -140,6 +140,10 @@ function R(e) {
   return (0, r.jsx)(_.g, E(m({}, y), {
     disabled: a,
     layout: "horizontal",
+    layoutConfig: {
+      horizontalControlColumnWidth: "auto"
+    },
+    auxiliaryContentPosition: "under-label",
     children: e => (0, r.jsx)(f.tE, E(m({}, h), {
       within: true,
       offset: false,

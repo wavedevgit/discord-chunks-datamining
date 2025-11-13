@@ -100,18 +100,18 @@ let en = 5 * Chunk70956.Z.Millis.SECOND,
   }),
   ea = [],
   es = false,
-  eu = [],
-  ec = {};
+  ec = [],
+  eu = {};
 
 function ed(e, t, n) {
-  null == ec[e] && (ec[e] = {}), ec[e][t] = n
+  null == eu[e] && (eu[e] = {}), eu[e][t] = n
 }
-let ep = 30 * Chunk70956.Z.Millis.MINUTE,
-  eh = 2 * Chunk70956.Z.Millis.MINUTE;
+let eh = 30 * Chunk70956.Z.Millis.MINUTE,
+  ep = 2 * Chunk70956.Z.Millis.MINUTE;
 
 function ef() {
   if (es && null == ea.find(e => e.status === J._1z.FOCUSED))
-    for (let e of (es = false, ea = [...ea, ...eu], eu = [], ea.length > 40 && (ea.length = 40), ea)) module.timer.start()
+    for (let e of (es = false, ea = [...ea, ...ec], ec = [], ea.length > 40 && (ea.length = 40), ea)) module.timer.start()
 }
 
 function em() {
@@ -161,7 +161,7 @@ function eO(e, t) {
           start() {
             let r = arguments.length > 0 && true !== arguments[0] ? arguments[0] : t,
               l = r ? J._1z.TIMED_OUT : J._1z.DISMISSED;
-            false === i && (i = setTimeout(() => u.Z.updateNotificationStatus(e, l), null != n ? n : en))
+            false === i && (i = setTimeout(() => c.Z.updateNotificationStatus(e, l), null != n ? n : en))
           },
           stop() {
             clearTimeout(i), i = false
@@ -175,7 +175,7 @@ function eO(e, t) {
         }
       })
     }, n),
-    a = es ? eu : [...ea],
+    a = es ? ec : [...ea],
     s = a.findIndex(e => e.priority <= n.priority);
   if (false === s ? a.push(l) : a.splice(s, 0, l), a.length > 40) {
     let e = a.pop();
@@ -184,21 +184,21 @@ function eO(e, t) {
   return es || (ea = a, l.timer.start()), i
 }
 
-function eE(e) {
+function ev(e) {
   var t;
-  let n = b.Z.getUserGame(e);
+  let n = _.Z.getUserGame(e);
   if (null == n) return null;
-  let i = null == (t = b.Z.getNowPlaying(n.gameId)[e]) ? true : t.activity;
+  let i = null == (t = _.Z.getNowPlaying(n.gameId)[e]) ? true : t.activity;
   return null == i || i.type !== J.IIU.PLAYING ? null : i
 }
 
-function ev() {
+function eE() {
   if (!(0, Chunk32300.Yo)("OverlayNotificationStore") || Chunk624864.Z.isNotificationDisabled(Chunk987650.n0.NowPlayingNotification)) returnfalse;
   let e = Chunk649974.Z.usersPlaying,
     t = new Set,
     n = function() {
       let e = [];
-      for (let t in ec) module.push(...Object.keys(ec[exports]).map(e => e));
+      for (let t in eu) module.push(...Object.keys(eu[exports]).map(e => e));
       return module
     }(),
     i = false;
@@ -207,27 +207,27 @@ function ev() {
     if (!I.Z.isFriend(e)) returnfalse;
     let i = t.gameId;
     if (null == i) returnfalse;
-    let r = eE(e);
+    let r = ev(e);
     if (null == r || ! function(e) {
         var t;
         let n = (null == (t = e.timestamps) ? true : t.start) != null ? e.timestamps.start : e.created_at;
-        return null != n && Date.now() - n < eh
+        return null != n && Date.now() - n < ep
       }(r)) returnfalse;
     let l = C.Z.getVoiceChannelId(),
-      o = null == (n = T.Z.getDiscoverableVoiceStateForUser(e)) ? true : n.channelId;
+      o = null == (n = w.Z.getDiscoverableVoiceStateForUser(e)) ? true : n.channelId;
     if (null != l && null != o && l === o) returnfalse;
-    let a = (0, V.pL)();
+    let a = (0, z.pL)();
     if (null == a || a.id !== i) returnfalse;
     if (! function(e, t) {
         var n, i;
-        let r = null === (n = null == (i = ec[e]) ? true : i[t]) || true === n ? true : n.lastSentTimestamp;
-        return null == r || Date.now() - r > ep
+        let r = null === (n = null == (i = eu[e]) ? true : i[t]) || true === n ? true : n.lastSentTimestamp;
+        return null == r || Date.now() - r > eh
       }(i, e)) return ed(i, e, {
       userId: e,
       gameId: i,
       lastSentTimestamp: Date.now()
     }), false;
-    let s = (0, H.Z)(e, i, r);
+    let s = (0, B.Z)(e, i, r);
     return null != s && (ed(i, e, {
       userId: e,
       gameId: i,
@@ -242,31 +242,31 @@ function ev() {
   let l = Chunk610394.Z.isOverlayV3EnabledForPID(Chunk610394.Z.getTargetPID()) || null != Chunk610394.Z.getFocusedPID();
   for (let e of Chunk512722)
     if (! function(e) {
-        let t = x.Z.getActivities(e);
+        let t = S.Z.getActivities(e);
         if (0 === t.length) returnfalse;
-        let n = (0, V.pL)();
+        let n = (0, z.pL)();
         return null != n && null != t.find(e => e.application_id === n.id)
       }(module) && !l) {
-      for (let t in ec) {
-        let n = ec[exports][module];
+      for (let t in eu) {
+        let n = eu[exports][module];
         null != require && (require.lastSentTimestamp = null)
       }
       i = true
     } return i
 }
 
-function eS(e) {
+function eb(e) {
   let {
     channelId: t,
     ringing: n
   } = e, i = ey(t);
   if (!n.includes(O.default.getId())) return eg(i);
   if (null != i) returnfalse;
-  let r = E.Z.getChannel(t);
+  let r = v.Z.getChannel(t);
   if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !g.Z.getCurrentConfig({
       guildId: e.guildId,
       location: "OverlayV3StartRinging"
-    }).enabled || Z.Z.getStatus() === J.Skl.DND || m.QZ.getSetting()) returnfalse;
+    }).enabled || j.Z.getStatus() === J.Skl.DND || m.QZ.getSetting()) returnfalse;
   let l = ea.find(e => e.type === M.kL.TEXT && e.channelId === t && e.messageType === J.uaV.CALL);
   null != l && eg(l.id), eO((0, F.Z)(r), {
     priority: M.Tu.HIGH,
@@ -275,28 +275,28 @@ function eS(e) {
     channelId: r.id
   })
 }
-let eb = {};
+let e_ = {};
 
-function ex(e, t) {
+function eS(e, t) {
   return "".concat(e, "-").concat(t)
 }
-class ej extends(i = Chunk442837.ZP.Store) {
+class ex extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk199902.Z, Chunk314897.default, Chunk358221.Z, Chunk592125.Z, Chunk435064.Z, Chunk375954.Z, Chunk292959.Z, Chunk649974.Z, Chunk371651.default, Chunk624864.Z, Chunk610394.Z, Chunk158776.Z, Chunk19780.Z, Chunk699516.Z, Chunk944486.Z, Chunk885110.Z, Chunk246946.Z, Chunk594174.default, Chunk979651.Z), this.syncWith([Chunk649974.Z], ev),
+    this.waitFor(Chunk199902.Z, Chunk314897.default, Chunk358221.Z, Chunk592125.Z, Chunk435064.Z, Chunk375954.Z, Chunk292959.Z, Chunk649974.Z, Chunk371651.default, Chunk624864.Z, Chunk610394.Z, Chunk158776.Z, Chunk19780.Z, Chunk699516.Z, Chunk944486.Z, Chunk885110.Z, Chunk246946.Z, Chunk594174.default, Chunk979651.Z), this.syncWith([Chunk649974.Z], eE),
       function() {
         let e = Chunk944486.Z.getVoiceChannelId(),
           t = Chunk314897.default.getId(),
           n = Chunk19780.Z.getMediaSessionId();
         if (null != module && null != require)
-          for (let i of Chunk358221.Z.getStreamParticipants(module)) i.user.id !== exports && (eb[ex(i.user.id, require)] = Date.now())
+          for (let i of Chunk358221.Z.getStreamParticipants(module)) i.user.id !== exports && (e_[eS(i.user.id, require)] = Date.now())
       }()
   }
   getNotifications() {
     return ea
   }
 }
-$(ej, "displayName", "OverlayNotificationsStore");
-let eI = new ej(Chunk570140.Z, {
+$(ex, "displayName", "OverlayNotificationsStore");
+let eI = new ex(Chunk570140.Z, {
   OVERLAY_UPDATE_NOTIFICATION_STATUS: function(e) {
     let {
       notificationId: t,
@@ -311,8 +311,8 @@ let eI = new ej(Chunk570140.Z, {
     } = e;
     em(0);
     let i = null != (t = L.Z.getFocusedPID()) ? t : A.UNSET_PID;
-    if (R.default.hasChangedRenderMode(i)) return;
-    let r = (0, K.Z)((0, V.pL)(), n);
+    if (k.default.hasChangedRenderMode(i)) return;
+    let r = (0, K.Z)((0, z.pL)(), n);
     null != r && eO(r, {
       priority: M.Tu.URGENT,
       type: M.kL.NUDGE,
@@ -338,36 +338,36 @@ let eI = new ej(Chunk570140.Z, {
     let {
       channelId: r,
       message: o
-    } = e, a = E.Z.getChannel(r), s = w.default.getUser(null == (t = o.author) ? true : t.id);
+    } = e, a = v.Z.getChannel(r), s = Z.default.getUser(null == (t = o.author) ? true : t.id);
     if (null == a || null == s) returnfalse;
     if ([J.mFx.JOIN, J.mFx.JOIN_REQUEST, J.mFx.STREAM_REQUEST].includes(null == (n = o.activity) ? true : n.type)) {
-      if (!(0, h.eF)(o, r, true, true)) returnfalse;
+      if (!(0, p.eF)(o, r, true, true)) returnfalse;
       let e = function(e, t, n) {
         var i;
         let r, o;
         if (l()(null != t.activity, "received null message activity"), n.id === O.default.getId()) returnfalse;
-        let a = (0, V.pL)(),
+        let a = (0, z.pL)(),
           s = null != (i = null == a ? true : a.altId) ? i : null == a ? true : a.id;
         if (null == a || null == s) returnfalse;
         switch (t.activity.type) {
           case J.mFx.JOIN:
-            if (null == (r = x.Z.getApplicationActivity(n.id, s)) || null == r.party || r.party.id !== t.activity.party_id) returnfalse;
-            o = (0, z.Z)(e, t, n, a, r);
+            if (null == (r = S.Z.getApplicationActivity(n.id, s)) || null == r.party || r.party.id !== t.activity.party_id) returnfalse;
+            o = (0, V.Z)(e, t, n, a, r);
             break;
           case J.mFx.JOIN_REQUEST:
-            if (null == (r = Z.Z.getApplicationActivity(s)) || null == r.party || r.party.id !== t.activity.party_id) returnfalse;
-            o = (0, B.Z)(e, n, a, r);
+            if (null == (r = j.Z.getApplicationActivity(s)) || null == r.party || r.party.id !== t.activity.party_id) returnfalse;
+            o = (0, H.Z)(e, n, a, r);
             break;
           case J.mFx.STREAM_REQUEST:
             let {
-              enableRequestToStreamOverlayNotification: u
+              enableRequestToStreamOverlayNotification: c
             } = f.A.getCurrentConfig({
               guildId: e.guild_id,
               location: "showActivityNotification"
             }, {
               autoTrackExposure: false
             });
-            if (!u || null == (r = Z.Z.getApplicationActivity(s)) || r.application_id !== s) returnfalse;
+            if (!c || null == (r = j.Z.getApplicationActivity(s)) || r.application_id !== s) returnfalse;
             o = (0, Y.Z)(e, n, a, r)
         }
         if (null == o) returnfalse;
@@ -378,17 +378,17 @@ let eI = new ej(Chunk570140.Z, {
           duration: el,
           uniqueKey: "activity-".concat(t.activity.type, "-").concat(n.id, "-").concat(e.id, "-").concat(s)
         });
-        let c = new Set;
+        let u = new Set;
         return ea.filter(e => null != e.uniqueKey).sort((e, t) => t.timestamp - e.timestamp).forEach(e => {
-          null != e.uniqueKey && (c.has(e.uniqueKey) ? eg(e.id, J._1z.DISMISSED) : c.add(e.uniqueKey))
+          null != e.uniqueKey && (u.has(e.uniqueKey) ? eg(e.id, J._1z.DISMISSED) : u.add(e.uniqueKey))
         }), true
       }(a, o, s);
       if (false !== e) return e
     }
-    if (k.Z.isNotificationDisabled(X.n0.TextChat) || N.Z.disableNotifications || !(0, h.eF)(o, r)) returnfalse;
-    let u = !S.Z.isSoundDisabled(_.Ay),
-      c = null != (i = v.Z.getMessage(r, o.id)) ? i : (0, p.e5)(o),
-      d = (0, Q.Z)(a, c, s, u);
+    if (R.Z.isNotificationDisabled(X.n0.TextChat) || N.Z.disableNotifications || !(0, p.eF)(o, r)) returnfalse;
+    let c = !b.Z.isSoundDisabled(T.Ay),
+      u = null != (i = E.Z.getMessage(r, o.id)) ? i : (0, h.e5)(o),
+      d = (0, Q.Z)(a, u, s, c);
     if (null == d) returnfalse;
     eO(d, {
       type: M.kL.TEXT,
@@ -408,15 +408,15 @@ let eI = new ej(Chunk570140.Z, {
     }(t)
   },
   MESSAGE_ACK: function() {},
-  CALL_CREATE: eS,
-  CALL_UPDATE: eS,
+  CALL_CREATE: eb,
+  CALL_UPDATE: eb,
   CALL_DELETE: function(e) {
     let {
       channelId: t
     } = e;
     eg(ey(t))
   },
-  GUILD_RING_START: eS,
+  GUILD_RING_START: eb,
   GUILD_RING_STOP: function(e) {
     let {
       channelId: t,
@@ -435,7 +435,7 @@ let eI = new ej(Chunk570140.Z, {
         user: i,
         applicationId: r
       } = e,
-      l = (0, V.pL)();
+      l = (0, z.pL)();
     return null != l && (null == l ? true : l.id) != null && (l.id === r || l.altId === r) && (n === J.mFx.JOIN && (t = (0, U.Z)(i, l)), null != t && void eO(t, {
       priority: M.Tu.URGENT,
       type: M.kL.GENERIC
@@ -455,10 +455,10 @@ let eI = new ej(Chunk570140.Z, {
     let {
       voiceStates: t
     } = e;
-    if (k.Z.isNotificationDisabled(X.n0.StreamWatchNudge)) returnfalse;
+    if (R.Z.isNotificationDisabled(X.n0.StreamWatchNudge)) returnfalse;
     let n = C.Z.getVoiceChannelId(),
       i = O.default.getId(),
-      r = j.Z.getMediaSessionId();
+      r = x.Z.getMediaSessionId();
     if (null != n && null != r)
       for (let e of t) {
         let {
@@ -473,10 +473,10 @@ let eI = new ej(Chunk570140.Z, {
             enabled: e
           } = (0, D.lj)("OverlayV3StreamWatchNudge");
           if (!e) return;
-          let n = ex(t, r);
-          if (null != eb[n]) continue;
-          eb[n] = Date.now();
-          let i = (0, G.Z)(t, o, null != (l = eE(t)) ? l : true);
+          let n = eS(t, r);
+          if (null != e_[n]) continue;
+          e_[n] = Date.now();
+          let i = (0, G.Z)(t, o, null != (l = ev(t)) ? l : true);
           if (null == i) continue;
           eO(i, {
             priority: M.Tu.NORMAL,

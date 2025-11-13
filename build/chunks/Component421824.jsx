@@ -23,7 +23,7 @@ function m() {
   let {
     trackView: e,
     trackClick: t
-  } = (0, Chunk620954.R)(Chunk987650.n0.ClipsReminderNotification, {
+  } = (0, Chunk620954.Rg)(Chunk987650.n0.ClipsReminderNotification, {
     notif_type: Chunk987650.n0.ClipsReminderNotification
   }), n = Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP), m = Chunk435064.Z.getSettings().clipsEnabled;
   if (null == require || !m) return null;
@@ -31,7 +31,7 @@ function m() {
   return {
     title: Chunk388032.intl.format(Chunk388032.t.S5uhCN, {
       keybind: g,
-      keybindHook: (e, t) => (0, i.jsx)(u.t, {
+      keybindHook: (e, t) => (0, i.jsx)(c.t, {
         keybind: g.split("+")
       }, t)
     }),
@@ -52,8 +52,8 @@ function g(e) {
   let {
     trackView: t,
     trackClick: n
-  } = (0, d.R)(p.n0.ClipsNotification, {
-    notif_type: p.n0.ClipsNotification
+  } = (0, d.Rg)(h.n0.ClipsNotification, {
+    notif_type: h.n0.ClipsNotification
   });
   return {
     title: e,

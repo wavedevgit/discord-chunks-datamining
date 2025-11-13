@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 444982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk239091 = require("./239091.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -42,7 +42,7 @@ function b(e) {
   return e
 }
 
-function x(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = {
+let x = {
   [Chunk981631.Odu.VIDEO]: {
     renderWidget(e) {
       let {
@@ -65,7 +65,7 @@ let j = {
         borderWidth: o,
         showEmpty: a
       } = e;
-      return (0, p.js)(t) ? (0, i.jsx)(m.Z, {
+      return (0, h.js)(t) ? (0, i.jsx)(m.Z, {
         id: t.id,
         locked: n,
         widget: t,
@@ -82,11 +82,11 @@ let j = {
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(y.ls, {
         onClick: t => {
-          (0, p.js)(e) && (0, r.jW)(t, async () => {
+          (0, h.js)(e) && (0, r.jW)(t, async () => {
             let {
               default: t
             } = await n.e("26775").then(n.bind(n, 740579));
-            return n => (0, i.jsx)(t, x(b({}, n), {
+            return n => (0, i.jsx)(t, S(_({}, n), {
               widget: e
             }))
           })
@@ -107,13 +107,13 @@ let j = {
         locked: l,
         showEmpty: o
       } = e;
-      return (0, p.Aw)(n) ? (0, i.jsx)(g.ZP, {
+      return (0, h.Aw)(n) ? (0, i.jsx)(g.ZP, {
         anchorLeft: r,
         id: n.id,
         locked: l,
         pinned: n.pinned,
-        widget: v.Odu.VOICE_V3,
-        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : E.At,
+        widget: E.Odu.VOICE_V3,
+        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : v.At,
         isPreviewingInGame: false,
         showEmpty: o
       }) : null
@@ -128,7 +128,7 @@ let j = {
             let {
               default: e
             } = await n.e("32382").then(n.bind(n, 955280));
-            return t => (0, i.jsx)(e, b({}, t))
+            return t => (0, i.jsx)(e, _({}, t))
           })
         }
       }), (0, i.jsx)(y.RT, {
@@ -159,7 +159,7 @@ let j = {
             let {
               default: e
             } = await n.e("38813").then(n.bind(n, 541501));
-            return t => (0, i.jsx)(e, b({}, t))
+            return t => (0, i.jsx)(e, _({}, t))
           })
         }
       }), (0, i.jsx)(y.RT, {
@@ -175,7 +175,7 @@ let j = {
         locked: n,
         anchorLeft: r
       } = e;
-      return (0, i.jsx)(h.Z, {
+      return (0, i.jsx)(p.Z, {
         id: t.id,
         anchorLeft: r,
         locked: n,
@@ -200,11 +200,11 @@ let j = {
         dragStart: o,
         anchorTop: a,
         anchorLeft: s,
-        showEmpty: u,
+        showEmpty: c,
         padding: d,
-        borderWidth: h
+        borderWidth: p
       } = e;
-      return (0, p.ZL)(n) ? (0, i.jsx)(c.Z, {
+      return (0, h.ZL)(n) ? (0, i.jsx)(u.Z, {
         id: n.id,
         locked: r,
         pinned: n.pinned,
@@ -217,24 +217,24 @@ let j = {
         dragStart: o,
         horizontal: null != (t = n.meta.horizontal) && t,
         padding: d,
-        borderWidth: h,
-        showEmpty: u
+        borderWidth: p,
+        showEmpty: c
       }) : null
     },
     renderTitle: e => (0, i.jsx)(y.XM, {
       widgetId: e.id,
-      children: S.intl.string(S.t["386XRo"])
+      children: b.intl.string(b.t["386XRo"])
     }),
     renderButtons(e) {
       var t;
-      return (0, p.ZL)(e) ? (0, i.jsxs)(i.Fragment, {
+      return (0, h.ZL)(e) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(y.ls, {
           onClick: t => {
-            (0, p.ZL)(e) && (0, r.jW)(t, async () => {
+            (0, h.ZL)(e) && (0, r.jW)(t, async () => {
               let {
                 default: t
               } = await n.e("34684").then(n.bind(n, 68738));
-              return n => (0, i.jsx)(t, x(b({}, n), {
+              return n => (0, i.jsx)(t, S(_({}, n), {
                 widget: e
               }))
             })
@@ -283,7 +283,7 @@ let j = {
             let {
               default: e
             } = await n.e("94706").then(n.bind(n, 168133));
-            return t => (0, i.jsx)(e, b({}, t))
+            return t => (0, i.jsx)(e, _({}, t))
           })
         }
       }), (0, i.jsx)(y.RT, {
@@ -312,7 +312,7 @@ let j = {
       let {
         locked: t
       } = e;
-      return (0, i.jsx)(u.Z, {
+      return (0, i.jsx)(c.Z, {
         locked: t
       })
     },

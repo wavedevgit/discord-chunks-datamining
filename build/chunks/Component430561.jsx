@@ -76,7 +76,7 @@ function R(e) {
   let {
     children: t,
     widgetId: n
-  } = e, i = (0, s.e7)([p.Z], () => p.Z.getWidget(n), [n]), a = C(i, N), o = () => (0, E.Q)((0, b.P)(), O.t["1XA04X"], O.intl.string(O.t.uZZGzf), {
+  } = e, i = (0, s.e7)([p.Z], () => p.Z.getWidget(n), [n]), a = C(i, N), o = () => (0, E.QR)((0, b.Pb)(), O.t["1XA04X"], O.intl.string(O.t.uZZGzf), {
     useFlexboxLayout: true,
     highlightAdminWarningIfElevated: false,
     keybindClassName: v.keybind

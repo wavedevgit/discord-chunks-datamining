@@ -328,9 +328,8 @@ class Q extends Chunk647438.PureComponent {
           setting: Chunk726985.s6.NOTIFICATIONS_ENABLE_DESKTOP,
           children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t["/0WCll"]),
-            description: Chunk388032.intl.string(Chunk388032.t.wF9ih3),
             checked: module !== Chunk981631.qrD.NEVER && !Chunk433517,
-            helperText: Chunk433517 ? Chunk388032.intl.string(Chunk388032.t.cIRG0s) : true,
+            description: Chunk433517 ? Chunk388032.intl.string(Chunk388032.t.cIRG0s) : Chunk388032.intl.string(Chunk388032.t.wF9ih3),
             onChange: this.handleDesktopChange,
             disabled: Chunk433517
           })

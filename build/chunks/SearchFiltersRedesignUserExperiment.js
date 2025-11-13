@@ -2,14 +2,14 @@
 /** chunk id: 28964, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  KS: () => l,
-  nP: () => s
+  g: () => l,
+  k: () => s
 });
 var Chunk818083 = require("./818083.js"),
   Chunk154579 = require("./154579.js");
 let a = {
-    isNoTopFiltersRedesignEnabled: false,
-    isSuggestTopFiltersRedesignEnabled: false
+    isEnabled: false,
+    isHasFilterElevated: false
   },
   o = (0, Chunk818083.B)({
     kind: "user",
@@ -18,17 +18,17 @@ let a = {
     defaultConfig: a,
     treatments: [{
       id: 1,
-      label: "No top filters",
+      label: "Top Filters",
       config: {
-        isNoTopFiltersRedesignEnabled: true,
-        isSuggestTopFiltersRedesignEnabled: false
+        isEnabled: true,
+        isHasFilterElevated: false
       }
     }, {
       id: 2,
-      label: "Suggest top filters",
+      label: "Top Filters (has: before mentions:)",
       config: {
-        isNoTopFiltersRedesignEnabled: false,
-        isSuggestTopFiltersRedesignEnabled: true
+        isEnabled: true,
+        isHasFilterElevated: true
       }
     }]
   });
@@ -41,7 +41,7 @@ function s(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    isNoTopFiltersRedesignEnabled: a
+    isEnabled: a
   } = o.useExperiment({
     location: t
   }, {
@@ -59,7 +59,7 @@ function l(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    isSuggestTopFiltersRedesignEnabled: a
+    isHasFilterElevated: a
   } = o.useExperiment({
     location: t
   }, {

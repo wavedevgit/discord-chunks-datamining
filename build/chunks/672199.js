@@ -24,47 +24,47 @@ function g(e, t, n, g) {
       username: "",
       game: n.name
     }),
-    E = t.getAvatarURL(e.guild_id, 80),
+    v = t.getAvatarURL(e.guild_id, 80),
     {
-      trackView: v,
-      trackClick: S
-    } = (0, c.R)(d.n0.RequestToStream, {
+      trackView: E,
+      trackClick: b
+    } = (0, u.Rg)(d.n0.RequestToStream, {
       notif_type: d.n0.RequestToStream,
       notif_user_id: t.id,
-      activity_type: p.mFx.STREAM_REQUEST,
+      activity_type: h.mFx.STREAM_REQUEST,
       activity_name: g.name
     });
   return {
-    icon: E,
+    icon: v,
     title: y,
     body: O,
     confirmText: f.intl.string(m.default.UGbmBp),
     cancelText: f.intl.string(f.t["tpXzJ+"]),
     onNotificationShow: () => {
-      v()
+      E()
     },
     onConfirmClick: (e, t) => {
       let n = a.Z.getState().preset;
-      if (n === h.ApplicationStreamPresets.PRESET_DOCUMENTS) {
+      if (n === p.ApplicationStreamPresets.PRESET_DOCUMENTS) {
         let {
           allowAutoQuality: e
         } = (0, l.IK)({
           location: "requestToStreamNotification"
         });
-        n = e ? h.ApplicationStreamPresets.PRESET_AUTO : h.ApplicationStreamPresets.PRESET_VIDEO
-      }(0, o.Z)(u.Z.getTargetPID(), {
+        n = e ? p.ApplicationStreamPresets.PRESET_AUTO : p.ApplicationStreamPresets.PRESET_VIDEO
+      }(0, o.Z)(c.Z.getTargetPID(), {
         preset: n
-      }), S("request-to-stream"), i.Z.updateNotificationStatus(t)
+      }), b("request-to-stream"), i.Z.updateNotificationStatus(t)
     },
     onCancelClick: (t, n) => {
       (0, r.ack)(e.id, {
-        section: p.jXE.OVERLAY,
-        object: p.qAy.ACK_DECLINE_REQUEST_TO_STREAM,
-        objectType: p.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
-      }, true, true), i.Z.updateNotificationStatus(n), S("decline")
+        section: h.jXE.OVERLAY,
+        object: h.qAy.ACK_DECLINE_REQUEST_TO_STREAM,
+        objectType: h.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
+      }, true, true), i.Z.updateNotificationStatus(n), b("decline")
     },
     onDismissClick: () => {
-      S("dismiss")
+      b("dismiss")
     }
   }
 }

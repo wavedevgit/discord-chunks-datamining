@@ -2,12 +2,13 @@
 /** chunk id: 349504, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607802 = require("./607802.js"),
+  Chunk28964 = require("./28964.js"),
   Chunk247902 = require("./247902.js"),
   Chunk532428 = require("./532428.js"),
   Chunk637879 = require("./637879.jsx"),
@@ -20,79 +21,81 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk493090 = require("./493090.js");
 
-function E(e) {
+function b(e) {
   let {
     setSearchQuery: t,
     searchContext: n,
-    mode: E
-  } = e, b = (0, s.N)(n);
+    mode: b
+  } = e, y = (0, l.N)(n), O = (0, s.g)({
+    location: "usePopularAutocompleteFilters"
+  }), v = i.useMemo(() => ({
+    type: m.dCx.FILTER_MENTIONS,
+    isEligible: y.has(m.dCx.FILTER_MENTIONS),
+    icon: a.lOy,
+    label: g.intl.string(g.t.fpKv9Y)
+  }), [y]), I = i.useMemo(() => ({
+    type: m.dCx.FILTER_HAS,
+    isEligible: y.has(m.dCx.FILTER_HAS),
+    icon: a.Ujz,
+    label: g.intl.string(g.t.IhIpc7)
+  }), [y]);
   return i.useMemo(() => {
     let e = [{
-      type: h.dCx.FILTER_FROM,
-      isEligible: b.has(h.dCx.FILTER_FROM),
+      type: m.dCx.FILTER_FROM,
+      isEligible: y.has(m.dCx.FILTER_FROM),
       icon: a.tBG,
-      label: m.intl.string(m.t.ktr6z5)
+      label: g.intl.string(g.t.ktr6z5)
     }, {
-      type: h.dCx.FILTER_IN,
-      isEligible: b.has(h.dCx.FILTER_IN),
+      type: m.dCx.FILTER_IN,
+      isEligible: y.has(m.dCx.FILTER_IN),
       icon: a.VL1,
-      label: m.intl.string(m.t.VMjDvS)
-    }, {
-      type: h.dCx.FILTER_MENTIONS,
-      isEligible: b.has(h.dCx.FILTER_MENTIONS),
-      icon: a.lOy,
-      label: m.intl.string(m.t.fpKv9Y)
-    }, {
-      type: h.dCx.FILTER_HAS,
-      isEligible: b.has(h.dCx.FILTER_HAS),
-      icon: a.Ujz,
-      label: m.intl.string(m.t.IhIpc7)
-    }];
+      label: g.intl.string(g.t.VMjDvS)
+    }, O ? I : v, O ? v : I];
     return e.filter(e => e.isEligible).map(i => {
       let {
         icon: a,
         label: s,
-        type: h
+        type: l
       } = i, m = r => {
         var i, a;
         let {
           selectedIndex: s,
-          searchAutocompleteSelectAction: c
-        } = r, u = null != (a = null == (i = l.ZP[h]) ? true : i.key) ? a : "", d = (0, o.Tm)(n);
-        (0, p.bh)({
+          searchAutocompleteSelectAction: u
+        } = r, d = null != (a = null == (i = c.ZP[l]) ? true : i.key) ? a : "", f = (0, o.Tm)(n);
+        (0, h.bh)({
           searchContext: n,
-          searchQuery: _.Z.getSearchResultsQuery(d),
-          searchQueryString: f.Z.getSearchInputText(n),
-          searchTokenType: h,
-          searchAutocompleteGroup: h,
-          searchAutocompleteMode: E,
+          searchQuery: p.Z.getSearchResultsQuery(f),
+          searchQueryString: _.Z.getSearchInputText(n),
+          searchTokenType: l,
+          searchAutocompleteGroup: l,
+          searchAutocompleteMode: b,
           searchAutocompleteResultIndex: s - 1,
           searchAutocompleteTotalResults: e.length,
           isSearchFilterPrefix: true,
           isSearchFilterAnswer: false,
           isSearchFilterComplete: false,
           isInFilterForSelectedChannel: false,
-          searchAutocompleteSelectAction: c
+          searchAutocompleteSelectAction: u
         }), t({
-          query: "".concat(u, " "),
+          query: "".concat(d, " "),
           performSearch: false,
           replace: false
         })
       };
-      return (0, d.fC)(u.i.ROW, {
+      return (0, f.fC)(d.i.ROW, {
         icon: (0, r.jsx)(a, {
           size: "sm",
           color: "currentColor",
-          className: g.itemIcon
+          className: E.itemIcon
         }),
-        label: (0, r.jsx)(c.Q0, {
+        label: (0, r.jsx)(u.Q0, {
           label: s
         }),
-        sublabel: (0, r.jsx)(c.mW, {
-          searchTokenType: h
+        sublabel: (0, r.jsx)(u.mW, {
+          searchTokenType: l
         }),
         onSelect: m
       })
     })
-  }, [b, n, E, t])
+  }, [y, n, b, t, I, v, O])
 }

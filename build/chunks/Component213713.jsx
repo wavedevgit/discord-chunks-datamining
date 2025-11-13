@@ -210,7 +210,7 @@ function A() {
             "Enter" === e.key && (R === e.currentTarget.value ? null == L || L(e) : A(e.currentTarget.value))
           },
           error: R.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : R + " - try by id", ".") : true,
-          successMessage: null != L ? "Game profile found" : true
+          helperText: null != L ? "Game profile found" : true
         }), (0, Chunk951288.jsx)("ul", {
           children: U.map(e => (0, a.jsx)("li", {
             children: (0, a.jsx)(Z, {

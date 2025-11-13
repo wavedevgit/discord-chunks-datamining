@@ -230,7 +230,7 @@ function T(e) {
   }) : null;
   return (0, r.jsx)(s.gNt, E(m({}, k), {
     errorMessage: U.hasError && null != (t = U.errorMessage) ? t : true,
-    trailingContent: X,
+    trailingAuxiliaryContent: X,
     children: (0, r.jsxs)(s.UPk, {
       ref: W,
       disabled: n,

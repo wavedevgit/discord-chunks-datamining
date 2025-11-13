@@ -2,7 +2,7 @@
 /** chunk id: 673221, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => R
+  P: () => P
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,7 +10,6 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk61247 = require("./61247.js"),
   Chunk483566 = require("./483566.jsx"),
-  Chunk590154 = require("./590154.js"),
   Chunk635041 = require("./635041.jsx"),
   Chunk448814 = require("./448814.jsx"),
   Chunk793030 = require("./793030.js"),
@@ -25,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk680765 = require("./680765.js");
 
-function I(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +33,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,244 +57,269 @@ function S(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = 24,
-  N = 36;
 
-function R(e) {
-  let {
-    fieldProps: t,
-    props: n
-  } = (0, l.X)(e), {
-    id: i,
-    required: a,
-    label: o
-  } = t;
-  return (0, r.jsx)(l.g, A(T({}, t), {
-    "data-mana-component": "select",
-    children: (0, r.jsx)(P, A(T({}, n), {
-      id: i,
-      required: a,
-      label: o
-    }))
-  }))
+function A(e, t) {
+  if (null == e) return {};
+  var n, r, i = C(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
 }
 
+function C(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let N = 24,
+  R = 36;
+
 function P(e) {
-  let {
+  var {
     selectionMode: t,
-    id: n,
-    required: a,
-    disabled: l,
-    readOnly: _,
-    autoFocus: I,
-    clearable: S,
-    fullWidth: R,
-    closeOnSelect: P = true,
-    shouldFocusWrap: x,
-    placeholder: L = O.intl.string(y.default["A+pfVR"]),
-    label: M,
-    name: j,
-    form: k,
-    autoComplete: U,
-    maxOptionsVisible: G = 5,
-    options: B,
-    formatOption: Z,
-    onSelectionChange: F,
-    value: V,
-    wrapTags: H = false
-  } = e, Y = i.useRef(null), {
-    isOpen: W,
-    setIsOpen: K,
-    refs: z,
-    floatingStyles: q,
-    getReferenceProps: X,
-    getFloatingProps: Q,
-    transitionStyles: J
-  } = (0, E.C)(), $ = i.useId(), {
-    options: ee,
-    loading: et
-  } = (0, g.U)({
-    active: W,
-    options: B,
-    renderOption: Z
-  }), en = i.useContext(c.z), er = i.useRef(null), ei = i.useRef(null), ea = null != P ? P : "multiple" !== t, eo = Array.isArray(V) ? V.length > 0 : null != V, es = l || _, {
-    measuredWidth: el,
-    itemsForMeasurement: ec
-  } = D(ee, t), eu = i.useCallback(() => {
-    es || K(!W)
-  }, [es, K, W]), ed = i.useCallback(() => {
-    var e;
-    K(false), null == (e = er.current) || e.focus()
-  }, [K]), ef = i.useCallback(() => {
-    var e;
-    "multiple" === t ? F([]) : F(null), null == (e = er.current) || e.focus()
-  }, [F, t]);
-  i.useEffect(() => {
-    if (I) {
+    readOnly: n,
+    autoFocus: a,
+    clearable: f,
+    fullWidth: v,
+    closeOnSelect: T = true,
+    shouldFocusWrap: C,
+    placeholder: P = y.intl.string(b.default["A+pfVR"]),
+    name: x,
+    form: L,
+    autoComplete: M,
+    maxOptionsVisible: j = 5,
+    options: k,
+    formatOption: U,
+    onSelectionChange: G,
+    value: B,
+    wrapTags: Z = false
+  } = e, F = A(e, ["selectionMode", "readOnly", "autoFocus", "clearable", "fullWidth", "closeOnSelect", "shouldFocusWrap", "placeholder", "name", "form", "autoComplete", "maxOptionsVisible", "options", "formatOption", "onSelectionChange", "value", "wrapTags"]);
+  let V = i.useRef(null),
+    {
+      fieldProps: H
+    } = (0, l.X)(F),
+    {
+      id: Y,
+      required: W,
+      label: K,
+      disabled: z
+    } = H,
+    {
+      isOpen: q,
+      setIsOpen: X,
+      refs: Q,
+      floatingStyles: J,
+      getReferenceProps: $,
+      getFloatingProps: ee,
+      transitionStyles: et
+    } = (0, g.C)(),
+    en = i.useId(),
+    {
+      options: er,
+      loading: ei
+    } = (0, m.U)({
+      active: q,
+      options: k,
+      renderOption: U
+    }),
+    ea = i.useRef(null),
+    eo = i.useRef(null),
+    es = null != T ? T : "multiple" !== t,
+    el = Array.isArray(B) ? B.length > 0 : null != B,
+    ec = z || n,
+    {
+      measuredWidth: eu,
+      itemsForMeasurement: ed
+    } = D(er, t),
+    ef = i.useCallback(() => {
+      ec || X(!q)
+    }, [ec, X, q]),
+    e_ = i.useCallback(() => {
       var e;
-      null == (e = er.current) || e.focus()
+      X(false), null == (e = ea.current) || e.focus()
+    }, [X]),
+    ep = i.useCallback(() => {
+      var e;
+      "multiple" === t ? G([]) : G(null), null == (e = ea.current) || e.focus()
+    }, [G, t]);
+  i.useEffect(() => {
+    if (a) {
+      var e;
+      null == (e = ea.current) || e.focus()
     }
-  }, [I]);
-  let e_ = i.useCallback(e => {
+  }, [a]);
+  let eh = i.useCallback(e => {
       var t, n, r, i, a, o;
-      if (!es) switch (e.key) {
+      if (!ec) switch (e.key) {
         case "ArrowDown":
-          e.preventDefault(), K(true);
+          e.preventDefault(), X(true);
           break;
         case "ArrowLeft":
-          e.preventDefault(), null == (n = Y.current) || null == (t = n.firstChild) || t.focus();
+          e.preventDefault(), null == (n = V.current) || null == (t = n.firstChild) || t.focus();
           break;
         case "ArrowRight":
-          e.preventDefault(), null == (i = Y.current) || null == (r = i.lastChild) || r.focus();
+          e.preventDefault(), null == (i = V.current) || null == (r = i.lastChild) || r.focus();
           break;
         case "Backspace":
-          eo && (e.preventDefault(), null == (o = Y.current) || null == (a = o.lastChild) || a.focus());
+          el && (e.preventDefault(), null == (o = V.current) || null == (a = o.lastChild) || a.focus());
           break;
         case "Escape":
-          eo && S && (e.preventDefault(), e.stopPropagation(), ef())
+          el && f && (e.preventDefault(), e.stopPropagation(), ep())
       }
-    }, [ef, eo, S, K, es]),
-    ep = i.useMemo(() => {
-      let e = Array.isArray(V) ? V : [V];
-      return ee.filter(t => (0, b._s)(t.value, e))
-    }, [V, ee]),
-    eh = i.useMemo(() => {
-      if (!R) return "".concat(Math.max(null != el ? el : 200, 200) * ("multiple" === t ? 1.5 : 1) + !!S * C + N + 8, "px")
-    }, [R, el, t, S]),
-    em = i.useCallback(e => {
-      if (es) return;
+    }, [ep, el, f, X, ec]),
+    em = i.useMemo(() => {
+      let e = Array.isArray(B) ? B : [B];
+      return er.filter(t => (0, E._s)(t.value, e))
+    }, [B, er]),
+    eg = i.useMemo(() => {
+      if (!v) return "".concat(Math.max(null != eu ? eu : 200, 200) * ("multiple" === t ? 1.5 : 1) + !!f * N + R + 12, "px")
+    }, [v, eu, t, f]),
+    eE = i.useCallback(e => {
+      if (ec) return;
       let n = Array.from(e);
-      if ("multiple" === t && n.length < 1) F([]);
-      else if ("multiple" === t) F(n.map(e => e.value));
+      if ("multiple" === t && n.length < 1) G([]);
+      else if ("multiple" === t) G(n.map(e => e.value));
       else {
         var r, i;
-        F(null != (i = null == (r = n[0]) ? true : r.value) ? i : null)
+        G(null != (i = null == (r = n[0]) ? true : r.value) ? i : null)
       }
-      ea && W && ed()
-    }, [es, t, F, ea, ed, W]),
-    eg = "multiple" === t && ep.length > 0,
-    eE = i.useRef(null);
+      es && q && e_()
+    }, [ec, t, G, es, e_, q]),
+    eb = "multiple" === t && em.length > 0,
+    ey = i.useRef(null);
   i.useEffect(() => {
-    clearTimeout(eE.current), eg && !H && (eE.current = setTimeout(() => {
+    clearTimeout(ey.current), eb && !Z && (ey.current = setTimeout(() => {
       var e, t;
-      null == (t = Y.current) || null == (e = t.lastElementChild) || e.scrollIntoView({
+      null == (t = V.current) || null == (e = t.lastElementChild) || e.scrollIntoView({
         behavior: "smooth",
         inline: "end",
         block: "end"
       })
     }, 10))
-  }, [ep, eg, H]);
-  let eb = (0, s.Z)(ei, z.setReference),
-    ey = i.useCallback(e => {
-      if (es) return;
+  }, [em, eb, Z]);
+  let eO = (0, s.Z)(eo, Q.setReference),
+    ev = i.useCallback(e => {
+      if (ec) return;
       let t = Array.from(e)[0],
-        n = ep.filter(e => e.id !== t);
-      if (em(n), 0 === n.length) {
+        n = em.filter(e => e.id !== t);
+      if (eE(n), 0 === n.length) {
         var r;
-        null == (r = er.current) || r.focus()
+        null == (r = ea.current) || r.focus()
       }
-    }, [em, ep, es]),
-    eO = i.useRef(null);
-  return i.useEffect(() => (!et && W && (eO.current = setTimeout(() => {
+    }, [eE, em, ec]),
+    eI = i.useRef(null);
+  return i.useEffect(() => (!ei && q && (eI.current = setTimeout(() => {
     var e;
-    return null == (e = document.getElementById((0, b.cA)($, 0))) ? true : e.focus()
+    return null == (e = document.getElementById((0, E.cA)(en, 0))) ? true : e.focus()
   }, 10)), () => {
-    null != eO.current && clearTimeout(eO.current)
-  }), [et, $, W]), (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(m.q, A(T({
-      ref: eb,
-      disabled: l,
-      readOnly: _,
-      loading: et,
-      clearable: S,
-      fullWidth: R,
-      isOpen: W,
-      isInert: es,
-      hasValue: eo,
-      hasError: (null == en ? true : en.errorMessageId) != null,
-      width: eh,
-      handleToggle: eu,
-      handleClear: ef
-    }, X()), {
-      children: (0, r.jsxs)(f.kL8, {
-        "aria-label": M,
-        buttonRef: er,
-        buttonProps: A(T({}, null != n ? {
-          id: n
-        } : {}), {
-          style: {
-            marginLeft: false
-          }
-        }),
-        focusProps: {
-          ringTarget: ei
-        },
-        className: o()(v.selectButton, {
-          [v.wrapTags]: H,
-          [v.multiSelect]: "multiple" === t
-        }),
-        onClick: eu,
-        onKeyDown: e_,
-        "aria-expanded": W,
-        "aria-busy": et,
-        "aria-haspopup": "listbox",
-        "aria-controls": $,
-        "aria-describedby": null == en ? true : en.describedById,
-        "aria-errormessage": null == en ? true : en.errorMessageId,
-        "aria-invalid": (null == en ? true : en.errorMessageId) != null,
-        children: [(0, r.jsxs)(u.n, {
-          children: [M, ", "]
-        }), (0, r.jsx)(w, {
-          tagGroupRef: Y,
-          placeholder: L,
-          selectionMode: t,
-          selectedItems: ep,
-          onRemove: ey
-        })]
-      })
-    })), (0, r.jsx)(p.M, {
-      name: j,
-      form: k,
-      disabled: es,
-      autoComplete: U,
-      selectionMode: t,
-      selectedItems: ep,
-      onSelectionChange: em,
-      listItems: ee
-    }), !R && ec, !es && W && (0, r.jsx)("div", A(T({
-      ref: z.setFloating,
-      className: v.selectDropdown
-    }, Q()), {
-      style: T({}, q, J),
-      children: (0, r.jsx)(f.VqE, {
-        children: (0, r.jsx)(d.w, {
-          id: $,
-          required: a,
-          items: ee,
-          selectionMode: t,
-          selectedItems: ep,
-          onSelectionChange: em,
-          shouldFocusWrap: x,
-          renderListItem: e => (0, r.jsx)(h.W, T({}, e)),
-          maxVisibleItems: G,
-          loading: et,
-          typeahead: true
+    null != eI.current && clearTimeout(eI.current)
+  }), [ei, en, q]), (0, r.jsx)(l.g, S(I({}, H), {
+    "data-mana-component": "select",
+    layoutConfig: {
+      horizontalControlColumnWidth: "min(".concat(eg, ", 50%)")
+    },
+    children: e => (0, r.jsxs)("div", {
+      style: {
+        width: v ? "100%" : "min(".concat(eg, ", 100%)")
+      },
+      children: [(0, r.jsx)(h.q, S(I({
+        ref: eO,
+        disabled: z,
+        readOnly: n,
+        loading: ei,
+        clearable: f,
+        fullWidth: v,
+        isOpen: q,
+        isInert: ec,
+        hasValue: el,
+        hasError: (null == e ? true : e.errorMessageId) != null,
+        handleToggle: ef,
+        handleClear: ep
+      }, $()), {
+        children: (0, r.jsxs)(d.kL8, {
+          "aria-label": K,
+          buttonRef: ea,
+          buttonProps: S(I({}, null != Y ? {
+            id: Y
+          } : {}), {
+            style: {
+              marginLeft: false
+            }
+          }),
+          focusProps: {
+            ringTarget: eo
+          },
+          className: o()(O.selectButton, {
+            [O.wrapTags]: Z,
+            [O.multiSelect]: "multiple" === t
+          }),
+          onClick: ef,
+          onKeyDown: eh,
+          "aria-expanded": q,
+          "aria-busy": ei,
+          "aria-haspopup": "listbox",
+          "aria-controls": en,
+          "aria-describedby": null == e ? true : e.describedById,
+          "aria-errormessage": null == e ? true : e.errorMessageId,
+          "aria-invalid": (null == e ? true : e.errorMessageId) != null,
+          children: [(0, r.jsxs)(c.n, {
+            children: [K, ", "]
+          }), (0, r.jsx)(w, {
+            tagGroupRef: V,
+            placeholder: P,
+            selectionMode: t,
+            selectedItems: em,
+            onRemove: ev
+          })]
         })
-      })
-    }))]
-  })
+      })), (0, r.jsx)(_.M, {
+        name: x,
+        form: L,
+        disabled: ec,
+        autoComplete: M,
+        selectionMode: t,
+        selectedItems: em,
+        onSelectionChange: eE,
+        listItems: er
+      }), !v && ed, !ec && q && (0, r.jsx)("div", S(I({
+        ref: Q.setFloating,
+        className: O.selectDropdown
+      }, ee()), {
+        style: I({}, J, et),
+        children: (0, r.jsx)(d.VqE, {
+          children: (0, r.jsx)(u.w, {
+            id: en,
+            required: W,
+            items: er,
+            selectionMode: t,
+            selectedItems: em,
+            onSelectionChange: eE,
+            shouldFocusWrap: C,
+            renderListItem: e => (0, r.jsx)(p.W, I({}, e)),
+            maxVisibleItems: j,
+            loading: ei,
+            typeahead: true
+          })
+        })
+      }))]
+    })
+  }))
 }
 
 function D(e, t) {
   let {
     ref: n,
     width: a
-  } = (0, _.ZP)(), o = i.useId();
+  } = (0, f.ZP)(), o = i.useId();
   return {
     measuredWidth: a,
     itemsForMeasurement: i.useMemo(() => (0, r.jsx)("div", {
@@ -307,7 +331,7 @@ function D(e, t) {
         width: "max-content"
       },
       "aria-hidden": "true",
-      children: (0, r.jsx)(d.w, {
+      children: (0, r.jsx)(u.w, {
         id: "measurement-".concat(o),
         required: false,
         items: e,
@@ -315,7 +339,7 @@ function D(e, t) {
         selectedItems: [],
         onSelectionChange: () => {},
         shouldFocusWrap: false,
-        renderListItem: e => (0, r.jsx)(h.W, T({}, e))
+        renderListItem: e => (0, r.jsx)(p.W, I({}, e))
       })
     }), [e, t, o, n])
   }
@@ -330,20 +354,20 @@ function w(e) {
     tagGroupRef: o
   } = e;
   return null == i || 0 === i.length ? (0, r.jsx)("div", {
-    className: v.placeholder,
-    children: (0, r.jsx)(f.xvT, {
+    className: O.placeholder,
+    children: (0, r.jsx)(d.xvT, {
       variant: "text-md/normal",
       color: "currentColor",
       lineClamp: 1,
       children: t
     })
-  }) : "multiple" === n ? (0, r.jsx)(f.QSK, {
+  }) : "multiple" === n ? (0, r.jsx)(d.QSK, {
     listRef: o,
-    label: O.intl.string(y.default.VMNfsY),
+    label: y.intl.string(b.default.VMNfsY),
     items: i,
     layout: "inline",
     onRemove: a
-  }) : (0, r.jsx)(h.W, A(T({}, i[0]), {
+  }) : (0, r.jsx)(p.W, S(I({}, i[0]), {
     inInput: true
   }))
 }

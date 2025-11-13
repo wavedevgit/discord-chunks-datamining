@@ -172,6 +172,9 @@ let r = {
       }
     },
     select: {
+      MAX_WIDTH: {
+        resolve: () => 248
+      },
       OPTION_HEIGHT: {
         resolve: () => 40
       }

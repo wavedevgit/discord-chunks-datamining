@@ -2,8 +2,9 @@
 /** chunk id: 620954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => m,
-  R: () => h
+  Pb: () => g,
+  Rg: () => h,
+  wq: () => m
 }), require("./35282.js");
 var Chunk13245 = require("./13245.js"),
   Chunk556296 = require("./556296.js"),
@@ -76,5 +77,9 @@ function h(e, t) {
 
 function m() {
   let e = Chunk556296.ZP.getOverlayKeybind();
-  return null != module ? (0, Chunk13140.BB)(module.shortcut, true).split(" + ") : ["???"]
+  return null != module ? (0, Chunk13140.BB)(module.shortcut, true) : "???"
+}
+
+function g() {
+  return m().split(" + ")
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 27278 **/
 /** chunk id: 701011, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk427509 = require("./427509.js");
 
-function v() {
+function O() {
   let {
     embeddedActivity: e,
     channelId: n,
@@ -33,20 +33,20 @@ function v() {
       channelId: exports,
       guildId: require
     }
-  }), v = Chunk647438.useRef(null), g = (0, Chunk110924.Z)(module);
+  }), O = Chunk647438.useRef(null), j = (0, Chunk110924.Z)(module);
   Chunk647438.useEffect(() => {
-    null != module ? clearTimeout(v.current) : null != g && null == module && (v.current = window.setTimeout(() => {
+    null != module ? clearTimeout(O.current) : null != j && null == module && (O.current = window.setTimeout(() => {
       (0, Chunk788983.xv)(Chunk981631.KJ3.ACTIVITY_POPOUT)
     }, 5e3))
-  }, [module, g]);
-  let C = (0, Chunk442837.e7)([Chunk812206.Z], () => {
+  }, [module, j]);
+  let x = (0, Chunk442837.e7)([Chunk812206.Z], () => {
       let n = null == module ? true : module.applicationId;
       return null == exports ? true : Chunk812206.Z.getApplication(exports)
     }),
-    x = (0, Chunk426419.P)();
+    P = (0, Chunk426419.P)();
   return (0, Chunk951288.jsx)("div", {
     className: Chunk427509.container,
-    children: null == module || null == C ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
+    children: null == module || null == x ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
       className: Chunk427509.iframe
     }) : (0, Chunk951288.jsx)("div", {
       className: Chunk427509.loadedContentContainer,
@@ -55,7 +55,7 @@ function v() {
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk427509.headerContainer,
           children: (0, Chunk951288.jsx)(Chunk325749.Z, {
-            applicationId: C.id,
+            applicationId: x.id,
             channelId: exports
           })
         }), (0, Chunk951288.jsx)("div", {
@@ -64,9 +64,9 @@ function v() {
             channelId: exports,
             guildId: require,
             embeddedActivity: module,
-            application: C
+            application: x
           })
-        }), x ? (0, Chunk951288.jsx)(Chunk554370.Z, {
+        }), P ? (0, Chunk951288.jsx)(Chunk554370.Z, {
           isEmbeddedActivity: true
         }) : null]
       })

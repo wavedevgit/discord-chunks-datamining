@@ -2,7 +2,8 @@
 /** chunk id: 618373, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q: () => m
+  Ae: () => g,
+  QR: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -25,7 +26,7 @@ function m(e, t, n) {
     useFlexboxLayout: a,
     keybindClassName: o
   } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
-  return (0, r.jsx)(g, {
+  return (0, r.jsx)(E, {
     keybind: e,
     message: t,
     messageWithoutKeybind: n,
@@ -34,8 +35,18 @@ function m(e, t, n) {
     keybindClassName: o
   })
 }
+let g = (e, t) => (0, r.jsx)(r.Fragment, {
+  children: p.intl.format(t, {
+    keybind: e,
+    keybindHook: (t, n) => (0, r.jsx)(a.M2$, {
+      shortcut: e,
+      className: h.keyCombo,
+      keyClassName: h.keyComboKey
+    }, n)
+  })
+});
 
-function g(e) {
+function E(e) {
   let {
     keybind: t,
     message: n,

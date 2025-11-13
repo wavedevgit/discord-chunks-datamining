@@ -151,6 +151,9 @@ let f = {
         }, {
           label: "Horizontal",
           value: "horizontal"
+        }, {
+          label: "Horizontal (Responsive)",
+          value: "horizontal-responsive"
         }]
       },
       badge: {

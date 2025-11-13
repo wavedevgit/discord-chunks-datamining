@@ -26,10 +26,9 @@ function u(e) {
     hasValue: h,
     hasError: m,
     showChevronButton: g = true,
-    width: E,
-    children: b,
-    handleToggle: y,
-    handleClear: O
+    children: E,
+    handleToggle: b,
+    handleClear: y
   } = e;
   return (0, r.jsxs)(o.UPk, {
     ref: t,
@@ -40,9 +39,6 @@ function u(e) {
       [c.isFocused]: _,
       [c.isInert]: p
     }),
-    style: u ? true : {
-      width: "min(".concat(E, ", 100%)")
-    },
     "data-mana-component": "select-input-field",
     disabled: n,
     readOnly: i,
@@ -53,15 +49,15 @@ function u(e) {
     "aria-busy": s,
     children: [(0, r.jsx)("div", {
       className: c.selectFieldContent,
-      children: b
+      children: E
     }), (0, r.jsx)(d, {
       show: true === l && !p && true === h,
       iconSize: g ? "xs" : "sm",
-      onClick: O
+      onClick: y
     }), (0, r.jsx)(f, {
       show: g,
       isOpen: _,
-      onClick: y
+      onClick: b
     })]
   })
 }

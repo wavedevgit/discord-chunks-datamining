@@ -15,7 +15,7 @@ function o(e) {
   } = e, [n, o] = (0, i.Wu)([l.qc], () => [l.qc.hasHotspot(t, true), l.qc.getHotspotOverride(t)]);
   return (0, a.jsx)(r.q4e, {
     label: t,
-    successMessage: n ? "Active" : true,
+    helperText: n ? "Active" : true,
     errorMessage: n ? "Inactive" : true,
     className: s.overrideSelect,
     value: o,

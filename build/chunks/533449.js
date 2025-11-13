@@ -1,5 +1,5 @@
-/** Chunk was on 27278 **/
-/** chunk id: 533449, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 50751 **/
+/** chunk id: 533449, original params: e,t,n (module,exports,require) **/
 module.exports = {
   panelGroup: "panelGroup__2f37f",
   rightAligned: "rightAligned__2f37f",
