@@ -2,8 +2,8 @@
 /** chunk id: 38900, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  K: () => p,
-  Z: () => g
+  K: () => g,
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk887353 = require("./887353.js"),
   Chunk198501 = require("./198501.js"),
   Chunk300179 = require("./300179.js");
-let p = () => (0, Chunk951288.jsx)("div", {
+let g = () => (0, Chunk951288.jsx)("div", {
     className: i()(Chunk198501.skeleton, Chunk300179.shopCard),
     children: (0, Chunk951288.jsxs)("div", {
       className: Chunk198501.cardBody,
@@ -30,7 +30,7 @@ let p = () => (0, Chunk951288.jsx)("div", {
       })]
     })
   }),
-  g = () => {
+  p = () => {
     let e = Chunk128922.Z.useConfig({
       location: "ShopSkeleton"
     }).showCardsV2;
@@ -41,15 +41,15 @@ let p = () => (0, Chunk951288.jsx)("div", {
       }).map((t, n) => (0, r.jsxs)("div", {
         className: c.cardsContainer,
         children: [e ? (0, r.jsx)("div", {
-          className: i()(o.catalogBanner, u.bannerSkeletonV2)
+          className: i()(s.catalogBanner, u.bannerSkeletonV2)
         }) : (0, r.jsx)("div", {
-          className: i()(u.skeleton, u.bannerSkeleton, o.catalogBanner),
+          className: i()(u.skeleton, u.bannerSkeleton, s.catalogBanner),
           children: (0, r.jsx)("div", {
             className: u.bannerBody
           })
         }), Array.from({
           length: 12
-        }, (t, n) => e ? (0, r.jsx)(a.Z, {}, n) : (0, r.jsx)(p, {}, n))]
+        }, (t, n) => e ? (0, r.jsx)(o.Z, {}, n) : (0, r.jsx)(g, {}, n))]
       }, n))
     })
   }

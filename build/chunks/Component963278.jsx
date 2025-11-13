@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -26,17 +26,17 @@ let v = e => {
     shelf: t,
     handleTransition: n,
     tab: i
-  } = e, v = (0, a.e7)([c.default], () => c.default.getCurrentUser()), E = (0, a.e7)([d.Z], () => d.Z.getCategory(t.categorySkuId)), x = p.Z.useConfig({
+  } = e, v = (0, o.e7)([c.default], () => c.default.getCurrentUser()), x = (0, o.e7)([d.Z], () => d.Z.getCategory(t.categorySkuId)), E = g.Z.useConfig({
     location: "ShelfBlock"
-  }).showCardsV2, O = (0, u.sp)(), S = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), y = (0, g.l)(S).slice(0, 4);
+  }).showCardsV2, S = (0, u.sp)(), O = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), y = (0, p.l)(O).slice(0, 4);
   return null == v ? null : (0, r.jsxs)("div", {
-    className: s()(b.shelfBlockContainer, b.centeredSection),
+    className: a()(b.shelfBlockContainer, b.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: b.blockHeader,
-      children: [(0, r.jsx)(o.Heading, {
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(o.Button, {
+      }), (0, r.jsx)(s.Button, {
         variant: "secondary",
         text: _.intl.formatToPlainString(_.t.bc9RBE, {
           category_name: t.name
@@ -46,7 +46,7 @@ let v = e => {
             sourceButton: "shelf block see all",
             categorySkuId: t.categorySkuId,
             isInternalShopDeeplink: true,
-            isOrbsExclusive: null == E ? true : E.isOrbsExclusive
+            isOrbsExclusive: null == x ? true : x.isOrbsExclusive
           })
         }
       })]
@@ -56,24 +56,24 @@ let v = e => {
         children: y.map((e, n) => {
           let l = d.Z.getCategoryForProduct(e.skuId);
           if (null == l || null == e) return null;
-          let s = e.skuId;
+          let a = e.skuId;
           return (0, r.jsx)(u.k0, {
             newValue: {
               tilePosition: n,
               pageSection: t.name,
               categoryPosition: 2
             },
-            children: x ? (0, r.jsx)(h.Z, {
-              skuId: s,
+            children: E ? (0, r.jsx)(h.Z, {
+              skuId: a,
               prioritizedCurrency: i === m.AW.ORBS ? C.tA.ORBS : true,
-              onClickAnalytics: (0, C.wO)(e, i, O)
-            }, s) : (0, r.jsx)(f.Z, {
+              onClickAnalytics: (0, C.wO)(e, i, S)
+            }, a) : (0, r.jsx)(f.Z, {
               product: e,
               category: l,
               user: v,
               tab: i
-            }, s)
-          }, s)
+            }, a)
+          }, a)
         })
       })
     })]

@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk876917 = require("./876917.jsx"),
   Chunk597688 = require("./597688.js"),
   Chunk616066 = require("./616066.jsx"),
   Chunk215023 = require("./215023.js"),
   Chunk980800 = require("./980800.js");
-let g = {
+let p = {
     x: 160,
     y: 160
   },
@@ -22,73 +22,73 @@ let g = {
     left: 0,
     top: 20,
     rotation: false,
-    size: g,
+    size: p,
     skuId: "1212569433839636530"
   }, {
     left: 110,
     top: 48,
     rotation: false,
-    size: g,
+    size: p,
     skuId: "1144308439720394944"
   }, {
     left: 230,
     top: 12,
     rotation: 8,
-    size: g,
+    size: p,
     skuId: "1228251144065777765"
   }, {
     left: 354,
     top: 44,
     rotation: false,
-    size: g,
+    size: p,
     skuId: "1343751620965564426"
   }, {
     left: 470,
     top: 52,
     rotation: 12,
-    size: g,
+    size: p,
     skuId: "1157407831348228141"
   }, {
     left: 600,
     top: 28,
     rotation: false,
-    size: g,
+    size: p,
     skuId: "1197344326133502032"
   }, {
     left: 740,
     top: 12,
     rotation: false,
-    size: g,
+    size: p,
     skuId: "1232071712695386162"
   }, {
     left: 870,
     top: 40,
     rotation: false,
-    size: g,
+    size: p,
     skuId: "1220513977683935373"
   }, {
     left: 1010,
     top: 30,
     rotation: 15,
-    size: g,
+    size: p,
     skuId: "1144046002110738634"
   }, {
     left: 1140,
     top: 52,
     rotation: false,
-    size: g,
+    size: p,
     skuId: "1271174324375519273"
   }, {
     left: 1270,
     top: 32,
     rotation: 25,
-    size: g,
+    size: p,
     skuId: "1237653964582031400"
   }, {
     left: 1400,
     top: 33,
     rotation: false,
-    size: g,
+    size: p,
     skuId: "1217625794382401577"
   }],
   h = e => {
@@ -96,7 +96,7 @@ let g = {
       peaking: t,
       transitioning: n,
       style: i
-    } = e, g = window.innerHeight, [h, C] = l.useState(false), m = f.map(e => {
+    } = e, p = window.innerHeight, [h, C] = l.useState(false), m = f.map(e => {
       let {
         skuId: t
       } = e;
@@ -108,23 +108,23 @@ let g = {
       }, d.lb)
     }, [n]), (0, r.jsx)("div", {
       style: i,
-      className: s()(p.jumbleWrapper, {
-        [p.peaking]: t,
-        [p.transitioned]: h
+      className: a()(g.jumbleWrapper, {
+        [g.peaking]: t,
+        [g.transitioned]: h
       }),
       children: f.map((e, t) => {
         var l, i;
         let {
-          top: s,
+          top: a,
           left: c,
           rotation: f,
           size: h,
           skuId: C
-        } = e, _ = null == (l = m[t]) ? true : l.items[0], b = null == (i = m[t]) ? true : i.type, v = b === a.Z.AVATAR_DECORATION ? 384 : 512;
+        } = e, _ = null == (l = m[t]) ? true : l.items[0], b = null == (i = m[t]) ? true : i.type, v = b === o.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, r.jsxs)("div", {
-          className: p.asset,
+          className: g.asset,
           style: {
-            top: n ? -g - v : s,
+            top: n ? -p - v : a,
             left: n ? "".concat(c - 75 - 350 * Math.random()) : c,
             transform: "rotate(".concat(f, "deg)"),
             height: h.y,
@@ -132,9 +132,9 @@ let g = {
             transitionDelay: "".concat(Math.random() / 3, "s"),
             transitionDuration: "".concat(d.lb - 200 * Math.random(), "ms")
           },
-          children: [null != _ && b === a.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
+          children: [null != _ && b === o.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
             item: _
-          }), null != _ && b === a.Z.PROFILE_EFFECT && (0, r.jsx)(o.Z, {
+          }), null != _ && b === o.Z.PROFILE_EFFECT && (0, r.jsx)(s.Z, {
             skuId: _.skuId,
             isPurchased: false,
             isHighlighted: true

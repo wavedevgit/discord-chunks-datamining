@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk607802 = require("./607802.js"),
   Chunk637879 = require("./637879.jsx"),
   Chunk794137 = require("./794137.js"),
-  Chunk611004 = require("./611004.js"),
+  Chunk611004 = require("./611004.jsx"),
   Chunk448842 = require("./448842.jsx"),
   Chunk817190 = require("./817190.js"),
   Chunk315322 = require("./315322.js"),
@@ -115,10 +115,32 @@ let C = Chunk647438.forwardRef(function(e, t) {
       t > m.length - 1 ? t = 0 : t < 0 && (t = m.length - 1), _(t)
     }, O = e => {
       y(c + e)
-    };
+    }, v = i.useRef({
+      itemsData: [],
+      selectedIndex: false,
+      modeType: o.mode.type
+    });
     return i.useEffect(() => {
-      o.mode.type === I.Sap.FILTER ? _(0) : _(false)
-    }, [o.mode.type, _]), i.useImperativeHandle(t, () => ({
+      let {
+        itemsData: e,
+        selectedIndex: t,
+        modeType: n
+      } = v.current, r = o.mode.type;
+      if (r !== n) r === I.Sap.FILTER ? _(0) : _(false);
+      else if (t >= 0 && (t === c || e.length !== m.length)) {
+        let n = e[t],
+          r = null == n ? true : n.data.resultText;
+        if (null != r) {
+          let e = m.findIndex(e => e.data.resultText === r);
+          false !== e ? _(e) : t >= m.length && _(Math.max(0, m.length - 1))
+        } else t >= m.length && _(Math.max(0, m.length - 1))
+      }
+      v.current = {
+        itemsData: m,
+        selectedIndex: c,
+        modeType: r
+      }
+    }, [m, c, o.mode.type, _]), i.useImperativeHandle(t, () => ({
       selectedIndex: c,
       focusNextOption: () => {
         O(1)

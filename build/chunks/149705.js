@@ -2,7 +2,7 @@
 /** chunk id: 149705, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  a: () => a
+  a: () => o
 });
 var Chunk191336 = require("./191336.js");
 
@@ -37,7 +37,7 @@ function i(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let s = {
+let a = {
     skus: [],
     currentPage: 0,
     totalCount: 0,
@@ -45,7 +45,7 @@ let s = {
     searchError: null,
     isFetchingResults: false
   },
-  a = (0, Chunk191336.U)(e => i(l({}, s), {
+  o = (0, Chunk191336.U)(e => i(l({}, a), {
     onSetResponse: t => {
       let n = Math.floor(t.pageOffset / t.pageLimit) + 1;
       e(i(l({}, t), {
@@ -53,7 +53,7 @@ let s = {
       }))
     },
     setSearchError: t => {
-      e(i(l({}, s), {
+      e(i(l({}, a), {
         searchError: t
       }))
     },
@@ -68,6 +68,6 @@ let s = {
       })
     },
     clear: () => {
-      e(l({}, s))
+      e(l({}, a))
     }
   }))

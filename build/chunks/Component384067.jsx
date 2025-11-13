@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -24,12 +24,12 @@ let m = e => {
     wideBannerBlock: m,
     handleTransition: _,
     tab: b
-  } = e, v = u.Z.getCategoryByStoreListingId(m.categoryStoreListingId), E = l.useRef(null), x = l.useRef(null), [O, S] = l.useState();
+  } = e, v = u.Z.getCategoryByStoreListingId(m.categoryStoreListingId), x = l.useRef(null), E = l.useRef(null), [S, O] = l.useState();
   l.useEffect(() => {
-    let e = x.current;
+    let e = E.current;
     if (null == e) return;
     let t = () => {
-      e.naturalWidth > 0 && e.naturalHeight > 0 && S(1080 * (e.naturalHeight / e.naturalWidth))
+      e.naturalWidth > 0 && e.naturalHeight > 0 && O(1080 * (e.naturalHeight / e.naturalWidth))
     };
     return e.complete ? t() : e.onload = t, () => {
       e.onload = null
@@ -41,48 +41,48 @@ let m = e => {
     } = (0, d.E)(y, "home", "marketing wide banner"),
     {
       bannerURL: k
-    } = (0, p.UI)(m);
+    } = (0, g.UI)(m);
   if (null == k) return null;
-  let I = b === g.AW.ORBS;
-  return (0, r.jsx)(a.$, {
-    innerRef: E,
+  let I = b === p.AW.ORBS;
+  return (0, r.jsx)(o.$, {
+    innerRef: x,
     onChange: j,
     threshold: 0,
     children: (0, r.jsxs)("div", {
-      ref: E,
-      className: s()(C.row, C.between, C.bannerBlockContainer, C.centeredSection, {
+      ref: x,
+      className: a()(C.row, C.between, C.bannerBlockContainer, C.centeredSection, {
         [C.extraRounded]: I
       }),
       children: [(0, r.jsx)("div", {
-        className: s()(C.wideBannerBackgroundImg, {
+        className: a()(C.wideBannerBackgroundImg, {
           [C.extraRounded]: I
         }),
         children: (0, r.jsx)("img", {
-          ref: x,
+          ref: E,
           src: k,
           alt: m.title,
-          className: s()(C.wideBannerArt, {
+          className: a()(C.wideBannerArt, {
             [C.wideBannerArtOrbs]: I
           }),
           style: {
-            height: null != O ? "".concat(O, "px") : "auto"
+            height: null != S ? "".concat(S, "px") : "auto"
           }
         })
       }), (0, r.jsx)("div", {
         className: C.wideBannerContentContainer,
         style: {
-          maxHeight: null != O ? "".concat(O, "px") : "auto"
+          maxHeight: null != S ? "".concat(S, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
           className: C.wideBannerTextContainer,
-          children: [(0, r.jsx)(o.Heading, {
+          children: [(0, r.jsx)(s.Heading, {
             style: {
               color: null != (n = m.bannerTextColor) ? n : "var(--header-primary)"
             },
             className: I ? C.wideBannerOrbsHeading : true,
             variant: I ? "heading-xl/bold" : "heading-lg/semibold",
             children: m.title
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(s.Text, {
             style: {
               color: null != (i = m.bannerTextColor) ? i : "var(--text-muted)"
             },
@@ -95,7 +95,7 @@ let m = e => {
         })
       }), true !== m.disableCta && (0, r.jsx)("div", {
         className: C.wideBannerBlockButton,
-        children: (0, r.jsx)(o.Button, {
+        children: (0, r.jsx)(s.Button, {
           variant: "overlay-primary",
           onClick: () => {
             _({

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
@@ -29,11 +29,11 @@ let _ = Chunk647438.memo(function(e) {
     firstProfileEffect: _,
     firstAvatarDecoration: b,
     firstNameplate: v
-  } = (0, p.Rj)(t), E = (0, g.O1)(b), x = (0, c.ZP)(), O = (0, a.ap)(x), S = null != v && null != b && null != _, y = S ? o.EFr.SIZE_72 : o.EFr.SIZE_80;
+  } = (0, g.Rj)(t), x = (0, p.O1)(b), E = (0, c.ZP)(), S = (0, o.ap)(E), O = null != v && null != b && null != _, y = O ? s.EFr.SIZE_72 : s.EFr.SIZE_80;
   return (0, r.jsxs)("div", {
-    className: s()(h.container, {
-      [h.twoItemBundle]: !S,
-      [h.threeItemBundle]: S
+    className: a()(h.container, {
+      [h.twoItemBundle]: !O,
+      [h.threeItemBundle]: O
     }),
     children: [null != _ && (0, r.jsx)("div", {
       className: h.profileEffectShopPreview,
@@ -43,7 +43,7 @@ let _ = Chunk647438.memo(function(e) {
         isPurchased: n,
         removeSetHeight: true
       })
-    }), S && (0, r.jsx)("div", {
+    }), O && (0, r.jsx)("div", {
       className: h.nameplatePreview,
       children: (0, r.jsx)(u.Z, {
         user: i,
@@ -51,17 +51,17 @@ let _ = Chunk647438.memo(function(e) {
         isHighlighted: l,
         isPurchased: n,
         showPlaceholderUser: !l,
-        pendingAvatarDecoration: E
+        pendingAvatarDecoration: x
       })
-    }), null != E && (0, r.jsx)("div", {
+    }), null != x && (0, r.jsx)("div", {
       className: h.avatarDecorationPreview,
       children: (0, r.jsx)(f.R, {
-        item: E,
+        item: x,
         user: i,
         avatarSize: y,
         isPurchased: n,
         isHighlighted: l,
-        avatarPlaceholderSrc: O ? m : C,
+        avatarPlaceholderSrc: S ? m : C,
         className: h.avatar
       })
     })]

@@ -72,25 +72,21 @@ function p(e) {
 function y(e) {
   let {
     categories: t
-  } = e, [n, o] = l.useState(t[0].key), [i, a] = (0, d.q_F)(() => ({
-    y: 0,
+  } = e, [n, o] = l.useState(t[0].key), i = l.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]), a = (0, d.q_F)({
+    y: 36 * i,
     config: {
       mass: .1,
       friction: 20,
       tension: 300
     }
-  }));
-  return l.useEffect(() => {
-    a({
-      y: 36 * Math.max(t.findIndex(e => e.key === n), 0)
-    })
-  }, [t, n, a]), (0, r.jsxs)("div", {
+  });
+  return (0, r.jsxs)("div", {
     className: b.subnav,
     children: [(0, r.jsx)("div", {
       className: b.track,
       children: (0, r.jsx)(s.animated.div, {
         className: b.thumb,
-        style: i
+        style: a
       })
     }), (0, r.jsx)("ul", {
       children: t.map(e => (0, r.jsx)(p, {

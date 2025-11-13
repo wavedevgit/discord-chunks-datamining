@@ -2,7 +2,7 @@
 /** chunk id: 92589, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -32,32 +32,32 @@ function d(e) {
   }
   return e
 }
-let p = e => {
+let g = e => {
   let {
     immersiveBannerBlock: t,
     onVisibilityChange: n
-  } = e, p = (0, l.O)(e => {
+  } = e, g = (0, l.O)(e => {
     null == n || n(e)
   }, .33, null != n), {
-    bannerUrl: g,
+    bannerUrl: p,
     bannerAnimatedUrl: f
-  } = (0, a._M)(t), h = null != t.textColor ? {
+  } = (0, o._M)(t), h = null != t.textColor ? {
     color: t.textColor
   } : true, C = null != t.body && "" !== t.body, m = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
   return (0, r.jsxs)("div", {
-    ref: p,
+    ref: g,
     className: u.immersiveBannerBlock,
     children: [(0, r.jsx)("div", {
       className: u.banner,
-      children: null != g && (0, r.jsx)(o.Z, {
-        bannerStatic: g,
+      children: null != p && (0, r.jsx)(s.Z, {
+        bannerStatic: p,
         bannerAnimated: f
       })
     }), (0, r.jsx)("div", {
       className: u.immersiveBannerContent,
       children: (0, r.jsxs)("div", {
         className: u.immersiveBannerTextContainer,
-        children: [null != t.endTime ? (0, r.jsx)(s.R, {
+        children: [null != t.endTime ? (0, r.jsx)(a.R, {
           endDate: t.endTime,
           size: "lg"
         }) : null, (0, r.jsx)(i.Heading, {

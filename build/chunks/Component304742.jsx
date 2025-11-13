@@ -2,23 +2,23 @@
 /** chunk id: 304742, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk811847 = require("./811847.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk219588 = require("./219588.js");
 
-function p(e) {
+function g(e) {
   let {
     handleTransition: t,
     onClose: n
-  } = e, i = (0, o.B)("CollectiblesIndexPageContextMenu"), p = l.useMemo(() => [{
+  } = e, i = (0, s.B)("CollectiblesIndexPageContextMenu"), g = l.useMemo(() => [{
     label: u.intl.string(u.t.dRZYNE),
     value: c.AW.AVATAR_DECORATIONS
   }, {
@@ -35,18 +35,18 @@ function p(e) {
     value: c.AW.CATALOG
   }], []);
   return (0, r.jsx)("div", {
-    className: s()({
+    className: a()({
       [d.customCursors]: i
     }),
-    children: (0, r.jsx)(a.v2r, {
+    children: (0, r.jsx)(o.v2r, {
       navId: "collectibles-index-page-menu",
-      className: s()({
+      className: a()({
         [d.customCursors]: i
       }),
       onClose: n,
       "aria-label": u.intl.string(u.t.xFcotU),
       onSelect: () => {},
-      children: p.map(e => (0, r.jsx)(a.sNh, {
+      children: g.map(e => (0, r.jsx)(o.sNh, {
         id: e.value,
         label: e.label,
         action: () => {

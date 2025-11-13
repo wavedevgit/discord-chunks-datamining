@@ -43,18 +43,18 @@ function R(e) {
     isFetchingCategories: n,
     scrollerRef: R,
     tab: Z
-  } = e, w = (0, p.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
+  } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
     noCache: D,
     includeUnpublished: M
-  } = (0, x.Z)(), F = (0, s.e7)([u.default], () => u.default.getCurrentUser()), W = (0, s.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, a.ap)(z), [K, Y, q] = l.useMemo(() => {
+  } = (0, E.Z)(), F = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, o.ap)(z), [K, Y, q] = l.useMemo(() => {
     switch (Z) {
-      case O.AW.AVATAR_DECORATIONS:
+      case S.AW.AVATAR_DECORATIONS:
         return [y.intl.string(y.t.dRZYNE), G ? L.Z : T.Z, i.Z.AVATAR_DECORATION];
-      case O.AW.PROFILE_EFFECTS:
+      case S.AW.PROFILE_EFFECTS:
         return [y.intl.string(y.t["1cNjtx"]), G ? N.Z : A.Z, i.Z.PROFILE_EFFECT];
-      case O.AW.NAMEPLATES:
+      case S.AW.NAMEPLATES:
         return [y.intl.string(y.t.V68Fqz), G ? P.Z : B.Z, i.Z.NAMEPLATE];
-      case O.AW.BUNDLES:
+      case S.AW.BUNDLES:
         return [y.intl.string(y.t.FYFpps), G ? I.Z : k.Z, i.Z.BUNDLE]
     }
   }, [Z, G]), J = (0, h.a)(), Q = l.useMemo(() => J(W.filter(e => {
@@ -87,21 +87,21 @@ function R(e) {
         backgroundImage: "url(".concat(Y, ")")
       },
       className: j.bannerContainer,
-      children: (0, r.jsx)(o.Heading, {
+      children: (0, r.jsx)(s.Heading, {
         variant: "heading-xxl/extrabold",
         children: K
       })
     }), (0, r.jsx)("div", {
       className: j.products,
       children: X.slice(40 * (V - 1), 40 * V).map((e, t) => {
-        let n = g.Z.getCategory(e.categorySkuId);
-        return null == n ? null : (0, r.jsx)(p.k0, {
+        let n = p.Z.getCategory(e.categorySkuId);
+        return null == n ? null : (0, r.jsx)(g.k0, {
           newValue: {
             tilePosition: t
           },
           children: $ ? (0, r.jsx)(v.Z, {
             skuId: e.skuId,
-            onClickAnalytics: (0, E.wO)(e, Z, w)
+            onClickAnalytics: (0, x.wO)(e, Z, w)
           }, e.skuId) : (0, r.jsx)(b.Z, {
             product: e,
             user: F,
@@ -113,13 +113,13 @@ function R(e) {
     }), X.length > 40 && (0, r.jsx)("div", {
       className: j.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(o.DsT, {
+        children: (0, r.jsx)(s.DsT, {
           currentPage: V,
           totalCount: X.length,
           pageSize: 40,
           onPageChange: e => {
             var t;
-            d.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            d.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == w ? true : w.sessionId,
               page_section: null == w ? true : w.pageSection,
               page_category: null == w ? true : w.pageCategory,

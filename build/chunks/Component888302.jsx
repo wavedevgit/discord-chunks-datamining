@@ -19,7 +19,7 @@ function u() {
   } = (0, Chunk501431.S)(e => e), {
     totalCount: n,
     isFetchingResults: u
-  } = (0, Chunk149705.a)(), d = (0, Chunk501431.S)(e => e.hasFilters()), p = Chunk647438.useCallback(() => {
+  } = (0, Chunk149705.a)(), d = (0, Chunk501431.S)(e => e.hasFilters()), g = Chunk647438.useCallback(() => {
     if (!d) return "";
     if (u) return Chunk388032.intl.string(Chunk388032.t["/FaMSE"]);
     if ("" !== exports) {
@@ -43,6 +43,6 @@ function u() {
   }, [module, require, d, exports, u]);
   return (0, Chunk951288.jsx)(Chunk481060.Heading, {
     variant: "heading-lg/semibold",
-    children: p()
+    children: g()
   })
 }

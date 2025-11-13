@@ -71,6 +71,9 @@ class v extends(o = Chunk442837.ZP.Store) {
   getPurchase(e) {
     return null != e ? f.get(e) : true
   }
+  getPurchases(e) {
+    return null != e ? e.map(e => f.get(e)).filter(e => null != e) : true
+  }
 }
 u(v, "displayName", "CollectiblesPurchaseStore");
 let I = new v(Chunk570140.Z, {

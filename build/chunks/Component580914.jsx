@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
   Chunk636977 = require("./636977.js"),
   Chunk685816 = require("./685816.js"),
@@ -62,7 +62,7 @@ let M = (0, Chunk884697.IC)(90),
       heroBlock: V,
       tab: U,
       onVisibilityChange: z
-    } = e, G = (0, a.O)(e => {
+    } = e, G = (0, o.O)(e => {
       null == z || z(e)
     }, .1, null != z), K = l.useRef(null), Y = (0, N.B)("HeroBlock"), q = (0, u.e7)([C.default], () => C.default.getCurrentUser()), J = (0, B.Z)(), Q = (0, _.sp)(), X = l.useMemo(() => {
       var e, t;
@@ -91,27 +91,27 @@ let M = (0, Chunk884697.IC)(90),
       heroBannerStatic: en,
       heroBannerAnimated: er,
       heroBannerRive: el
-    } = (0, L.hr)(X), ei = null != (t = null == $ ? true : $.responsive) && t, es = null == $ ? true : $.backgroundStyle, ea = null != el, eo = (0, u.e7)([b.Z], () => b.Z.products), ec = l.useMemo(() => n ? [] : eo.size > 0 ? J(X.rankedSkuIds) : [], [n, J, X.rankedSkuIds, eo]), eu = l.useMemo(() => !n && 0 !== X.rankedSkuIds.length && !(ec.length > 0) && X.rankedSkuIds.every(e => {
+    } = (0, L.hr)(X), ei = null != (t = null == $ ? true : $.responsive) && t, ea = null == $ ? true : $.backgroundStyle, eo = null != el, es = (0, u.e7)([b.Z], () => b.Z.products), ec = l.useMemo(() => n ? [] : es.size > 0 ? J(X.rankedSkuIds) : [], [n, J, X.rankedSkuIds, es]), eu = l.useMemo(() => !n && 0 !== X.rankedSkuIds.length && !(ec.length > 0) && X.rankedSkuIds.every(e => {
       var t;
       return (null == (t = b.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
     }), [n, X.rankedSkuIds, ec.length]), {
       cardContainerRef: ed,
-      totalCards: ep
+      totalCards: eg
     } = (e => {
-      let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), i = (0, g.Z)(() => {
-        (null == s ? true : s.current) != null && n(Math.max(1, Math.floor((s.current.offsetWidth + r) / (246 + r))))
-      }), s = (0, p.y)(i, [r, e], {
+      let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), i = (0, p.Z)(() => {
+        (null == a ? true : a.current) != null && n(Math.max(1, Math.floor((a.current.offsetWidth + r) / (246 + r))))
+      }), a = (0, g.y)(i, [r, e], {
         fireOnMount: true,
         fireOnDepsChange: true,
         enabled: e
       });
       return {
         cardContainerRef: l.useCallback(t => {
-          s.current = t, null != t && e && i()
-        }, [i, s, e]),
+          a.current = t, null != t && e && i()
+        }, [i, a, e]),
         totalCards: e ? t : true
       }
-    })(U !== Z.AW.ORBS), eg = (0, O.a)()(ec), ef = (0, S.l)(eg).slice(0, ep), eh = (0, P.St)(ef), eC = U === Z.AW.ORBS ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T), em = (0, x.FF)("CollectiblesContent"), e_ = null != W && W.isOrbsExclusive, eb = E.Z.useConfig({
+    })(U !== Z.AW.ORBS), ep = (0, S.a)()(ec), ef = (0, O.l)(ep).slice(0, eg), eh = (0, P.St)(ef), eC = U === Z.AW.ORBS ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T), em = (0, E.FF)("CollectiblesContent"), e_ = null != W && W.isOrbsExclusive, eb = x.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, ev = () => {
       U === Z.AW.ORBS ? ((0, h.Y)({
@@ -119,7 +119,7 @@ let M = (0, Chunk884697.IC)(90),
         sectionType: w.jXE.ORBS_SHOP_HERO_BLOCK,
         ctaObject: w.qAy.CTA_TO_QUEST_HOME
       }), (0, f.navigateToQuestHome)({
-        fromContent: o.j.ORBS_SHOP_HERO_CTA
+        fromContent: s.j.ORBS_SHOP_HERO_CTA
       })) : (i({
         sourceButton: "shop latest category hero",
         categorySkuId: !em || e_ ? X.categorySkuId : true,
@@ -137,17 +137,17 @@ let M = (0, Chunk884697.IC)(90),
     return null != q && (n || X !== F) ? (0, r.jsxs)("div", {
       ref: G,
       className: D.heroBlock,
-      children: [ea ? (0, A.gT)({
+      children: [eo ? (0, A.gT)({
         isCustomCursorEnabled: Y,
         className: D.riveEventOverlay,
         riveEventTargetRef: K
       }) : null, (0, r.jsx)("div", {
-        className: s()(D.banner, {
-          [D.rivBanner]: ea,
+        className: a()(D.banner, {
+          [D.rivBanner]: eo,
           [D.responsive]: ei
         }),
-        style: null != es ? {
-          background: es
+        style: null != ea ? {
+          background: ea
         } : true,
         children: null != en && (0, r.jsx)(R.Z, {
           bannerStatic: en,
@@ -158,7 +158,7 @@ let M = (0, Chunk884697.IC)(90),
         })
       }), (0, r.jsxs)("div", {
         className: D.heroBlockContent,
-        children: [ea ? (0, r.jsx)("div", {
+        children: [eo ? (0, r.jsx)("div", {
           className: D.rivBannerButtonContainer,
           children: !n && (0, r.jsx)(d.Button, {
             variant: "overlay-primary",
@@ -166,7 +166,7 @@ let M = (0, Chunk884697.IC)(90),
             text: eC
           })
         }) : (0, r.jsxs)("div", {
-          className: s()(D.heroHeaderContainer, {
+          className: a()(D.heroHeaderContainer, {
             [D.responsive]: ei
           }),
           children: [n ? (0, r.jsx)("div", {
@@ -207,13 +207,13 @@ let M = (0, Chunk884697.IC)(90),
             })
           })]
         }), (0, r.jsx)("div", {
-          className: s()({
+          className: a()({
             [D.row]: U === Z.AW.HOME,
             [D.feed]: U === Z.AW.ORBS
           }),
           ref: ed,
           children: n || eu ? (0, r.jsx)(r.Fragment, {
-            children: [...Array(null != ep ? ep : 4)].map((e, t) => eb ? (0, r.jsx)(T.Z, {}, t) : (0, r.jsx)(y.K, {}, t))
+            children: [...Array(null != eg ? eg : 4)].map((e, t) => eb ? (0, r.jsx)(T.Z, {}, t) : (0, r.jsx)(y.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: eh.map((e, t) => {
               let n = b.Z.getCategoryForProduct(e.skuId);
