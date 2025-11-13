@@ -13,23 +13,26 @@ let l = (0, Chunk818083.B)({
   defaultConfig: {
     enabled: false,
     backButtonBadge: false,
-    animateBetweenServers: false
+    animateBetweenServers: false,
+    profileButton: false
   },
   treatments: [{
     id: 1,
-    label: "You Bar",
-    config: {
-      enabled: true,
-      backButtonBadge: false,
-      animateBetweenServers: false
-    }
-  }, {
-    id: 2,
-    label: "You Bar with badged back button",
+    label: "You Bar no profile button",
     config: {
       enabled: true,
       backButtonBadge: true,
-      animateBetweenServers: false
+      animateBetweenServers: false,
+      profileButton: false
+    }
+  }, {
+    id: 2,
+    label: "You Bar profile button",
+    config: {
+      enabled: true,
+      backButtonBadge: true,
+      animateBetweenServers: false,
+      profileButton: true
     }
   }, {
     id: 3,
@@ -37,7 +40,8 @@ let l = (0, Chunk818083.B)({
     config: {
       enabled: true,
       backButtonBadge: true,
-      animateBetweenServers: true
+      animateBetweenServers: true,
+      profileButton: false
     }
   }]
 })
